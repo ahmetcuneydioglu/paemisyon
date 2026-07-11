@@ -1,0 +1,41 @@
+name: paemisyon
+description: "Paemisyon — polis eğitim platformu (mobil istemci)."
+publish_to: "none"
+version: 0.0.1+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+# Kilitli kararlar (Doc 3/5): Flutter + Riverpod + go_router + Dio.
+# freezed/drift gibi codegen'li paketler ilgili sprintlerde eklenir (aşağıda not).
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management + DI (Doc 3): Riverpod v2
+  flutter_riverpod: ^2.6.1
+
+  # Routing
+  go_router: ^14.6.2
+
+  # Network
+  dio: ^5.7.0
+
+  # Güvenli/yerel depolama (kimlik token'ı Sprint 1'de kullanılacak)
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.3
+
+  cupertino_icons: ^1.0.8
+
+  # ── Sonraki sprintlerde eklenecek (codegen gerektirir) ──
+  # freezed_annotation + json_annotation   → model katmanı (Sprint 2)
+  # drift + sqlite3_flutter_libs           → offline (Sprint 5)
+  # firebase_* / google_mobile_ads         → V1+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

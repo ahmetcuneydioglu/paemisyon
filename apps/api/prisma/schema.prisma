@@ -1,0 +1,331 @@
+// Paemisyon — Prisma şeması
+// Kaynak: docs/06-database-design.md
+// İlke: içerik sürümlenir (silinmez), iş verisi ilişkiseldir, modül-agnostik çekirdek.
+// Not: UUID için Postgres gen_random_uuid() (v4). İleride UUIDv7 uzantısına geçilebilir.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL") // Supabase pooler (uygulama sorguları)
+  directUrl = env("DIRECT_URL")   // doğrudan bağlantı (migration için)
+}
+
+// ─────────────────────────────────────────────
+// Enums
+// ─────────────────────────────────────────────
+
+enum UserStatus {
+  active
+  suspended
+  deleted
+}
+
+enum AuthProvider {
+  email
+  apple
+  google
+}
+
+enum ContentStatus {
+  draft
+  in_review
+  published
+  archived
+}
+
+enum Difficulty {
+  easy
+  medium
+  hard
+}
+
+enum PlanPeriod {
+  none
+  monthly
+  yearly
+}
+
+enum SubscriptionStatus {
+  active
+  expired
+  grace
+  cancelled
+  refunded
+}
+
+enum PaymentProvider {
+  apple
+  google
+  manual
+}
+
+enum LegacySource {
+  ios_firebase
+  web_mysql
+}
+
+// ─────────────────────────────────────────────
+// Identity & Access
+// ─────────────────────────────────────────────
+
+model User {
+  id                    String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email                 String     @unique
+  emailVerifiedAt       DateTime?  @map("email_verified_at")
+  displayName           String     @map("display_name")
+  avatarUrl             String?    @map("avatar_url")
+  status                UserStatus @default(active)
+  onboardingCompletedAt DateTime?  @map("onboarding_completed_at")
+  createdAt             DateTime   @default(now()) @map("created_at")
+  updatedAt             DateTime   @updatedAt @map("updated_at")
+  deletedAt             DateTime?  @map("deleted_at")
+
+  authIdentities AuthIdentity[]
+  roles          UserRole[]
+  entitlement    Entitlement?
+  subscriptions  Subscription[]
+  dailyUsage     DailyUsage[]
+
+  @@map("users")
+}
+
+model AuthIdentity {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId      String       @map("user_id") @db.Uuid
+  provider    AuthProvider
+  providerUid String       @map("provider_uid")
+  createdAt   DateTime     @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerUid])
+  @@index([userId])
+  @@map("auth_identities")
+}
+
+model Role {
+  id    String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key   String     @unique // admin | editor | user
+  name  String
+  users UserRole[]
+
+  @@map("roles")
+}
+
+model UserRole {
+  userId String @map("user_id") @db.Uuid
+  roleId String @map("role_id") @db.Uuid
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, roleId])
+  @@map("user_roles")
+}
+
+// ─────────────────────────────────────────────
+// Content (sürümlü) — Modül → Ders → Konu → Soru
+// ─────────────────────────────────────────────
+
+model Module {
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key         String    @unique // paem, pomem, pmyo...
+  name        String
+  description String?
+  icon        String?
+  sortOrder   Int       @default(0) @map("sort_order")
+  isActive    Boolean   @default(true) @map("is_active")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  courses Course[]
+
+  @@map("modules")
+}
+
+model Course {
+  id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  moduleId  String    @map("module_id") @db.Uuid
+  name      String
+  sortOrder Int       @default(0) @map("sort_order")
+  createdAt DateTime  @default(now()) @map("created_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  module Module  @relation(fields: [moduleId], references: [id])
+  topics Topic[]
+
+  @@index([moduleId])
+  @@map("courses")
+}
+
+model Topic {
+  id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  courseId  String    @map("course_id") @db.Uuid
+  name      String
+  sortOrder Int       @default(0) @map("sort_order")
+  isPremium Boolean   @default(false) @map("is_premium")
+  createdAt DateTime  @default(now()) @map("created_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  course    Course     @relation(fields: [courseId], references: [id])
+  questions Question[]
+
+  @@index([courseId])
+  @@map("topics")
+}
+
+// Kararlı KİMLİK — içerik burada değil, sürümlerde.
+model Question {
+  id               String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  topicId          String    @map("topic_id") @db.Uuid
+  currentVersionId String?   @unique @map("current_version_id") @db.Uuid
+  createdAt        DateTime  @default(now()) @map("created_at")
+  deletedAt        DateTime? @map("deleted_at")
+
+  topic          Topic             @relation(fields: [topicId], references: [id])
+  versions       QuestionVersion[] @relation("QuestionVersions")
+  currentVersion QuestionVersion?  @relation("CurrentVersion", fields: [currentVersionId], references: [id])
+
+  @@index([topicId])
+  @@map("questions")
+}
+
+// İçerik burada — DEĞİŞMEZ sürümler.
+model QuestionVersion {
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  questionId  String        @map("question_id") @db.Uuid
+  versionNo   Int           @map("version_no")
+  stem        String
+  explanation String?
+  difficulty  Difficulty    @default(medium)
+  mediaUrl    String?       @map("media_url")
+  status      ContentStatus @default(draft)
+  authoredBy  String?       @map("authored_by") @db.Uuid
+  reviewedBy  String?       @map("reviewed_by") @db.Uuid
+  publishedAt DateTime?     @map("published_at")
+  archivedAt  DateTime?     @map("archived_at")
+  createdAt   DateTime      @default(now()) @map("created_at")
+
+  question         Question         @relation("QuestionVersions", fields: [questionId], references: [id])
+  currentOfQuestion Question?       @relation("CurrentVersion")
+  options          QuestionOption[]
+  legalReferences  LegalReference[]
+
+  @@unique([questionId, versionNo])
+  @@index([questionId, status])
+  @@map("question_versions")
+}
+
+model QuestionOption {
+  id                String  @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  questionVersionId String  @map("question_version_id") @db.Uuid
+  label             String // A, B, C, D, E
+  text              String
+  isCorrect         Boolean @default(false) @map("is_correct")
+  sortOrder         Int     @default(0) @map("sort_order")
+
+  questionVersion QuestionVersion @relation(fields: [questionVersionId], references: [id], onDelete: Cascade)
+
+  @@index([questionVersionId])
+  @@map("question_options")
+}
+
+model LegalReference {
+  id                String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  questionVersionId String    @map("question_version_id") @db.Uuid
+  citation          String // örn. "2559 sayılı PVSK md. 4/A"
+  url               String?
+  effectiveDate     DateTime? @map("effective_date") @db.Date
+
+  questionVersion QuestionVersion @relation(fields: [questionVersionId], references: [id], onDelete: Cascade)
+
+  @@index([questionVersionId])
+  @@map("legal_references")
+}
+
+// ─────────────────────────────────────────────
+// Subscription & Monetization
+// ─────────────────────────────────────────────
+
+model Plan {
+  id                 String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key                String     @unique // free | monthly | yearly
+  name               String
+  price              Decimal?   @db.Decimal(10, 2)
+  currency           String     @default("TRY")
+  period             PlanPeriod @default(none)
+  dailyQuestionLimit Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
+  storeProductIdIos  String?    @map("store_product_id_ios")
+  storeProductIdAndroid String? @map("store_product_id_android")
+  isActive           Boolean    @default(true) @map("is_active")
+
+  subscriptions Subscription[]
+
+  @@map("plans")
+}
+
+model Subscription {
+  id                    String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId                String             @map("user_id") @db.Uuid
+  planId                String             @map("plan_id") @db.Uuid
+  provider              PaymentProvider
+  status                SubscriptionStatus
+  originalTransactionId String             @map("original_transaction_id")
+  currentPeriodEnd      DateTime?          @map("current_period_end")
+  autoRenew             Boolean            @default(true) @map("auto_renew")
+  createdAt             DateTime           @default(now()) @map("created_at")
+  updatedAt             DateTime           @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id])
+  plan Plan @relation(fields: [planId], references: [id])
+
+  @@index([userId, status])
+  @@map("subscriptions")
+}
+
+// Türetilmiş erişim — hızlı kontrol (SubscriptionGuard buradan okur).
+model Entitlement {
+  userId              String    @id @map("user_id") @db.Uuid
+  isPremium           Boolean   @default(false) @map("is_premium")
+  validUntil          DateTime? @map("valid_until")
+  sourceSubscriptionId String?  @map("source_subscription_id") @db.Uuid
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("entitlements")
+}
+
+// Freemium günlük limit — sunucu-taraflı sayaç.
+model DailyUsage {
+  userId            String   @map("user_id") @db.Uuid
+  usageDate         DateTime @map("usage_date") @db.Date
+  questionsAnswered Int      @default(0) @map("questions_answered")
+  dailyLimit        Int      @map("daily_limit")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, usageDate])
+  @@map("daily_usage")
+}
+
+// ─────────────────────────────────────────────
+// Migration (kullanıcı göçü — paem705 kaynak)
+// ─────────────────────────────────────────────
+
+model LegacyUserMap {
+  id                    String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  newUserId             String       @map("new_user_id") @db.Uuid
+  legacySource          LegacySource @map("legacy_source")
+  legacyId              String       @map("legacy_id")
+  legacyEmail           String       @map("legacy_email")
+  migratedAt            DateTime     @default(now()) @map("migrated_at")
+  passwordResetRequired Boolean      @default(true) @map("password_reset_required")
+
+  @@index([newUserId])
+  @@index([legacyEmail])
+  @@map("legacy_user_map")
+}

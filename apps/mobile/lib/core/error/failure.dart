@@ -1,0 +1,18 @@
+/// Domain katmanı hata tipleri. Dış dünya exception'ları buraya eşlenir (Doc 3 §5.4).
+/// Kullanıcıya gösterilen mesajlar Türkçe ve moral bozmayan.
+sealed class Failure {
+  final String message;
+  const Failure(this.message);
+}
+
+class NetworkFailure extends Failure {
+  const NetworkFailure([super.message = 'İnternet bağlantını kontrol et.']);
+}
+
+class ServerFailure extends Failure {
+  const ServerFailure([super.message = 'Bir şeyler ters gitti, tekrar dene.']);
+}
+
+class UnknownFailure extends Failure {
+  const UnknownFailure([super.message = 'Beklenmeyen bir hata oluştu.']);
+}

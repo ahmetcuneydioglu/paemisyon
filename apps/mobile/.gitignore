@@ -1,0 +1,18 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+*.iml
+.idea/
+.DS_Store
+
+# Platform (flutter create ile üretilecek)
+# ios/, android/ üretildiğinde bunlar korunur; hassas dosyalar aşağıda
+ios/Flutter/flutter_export_environment.sh
+**/GoogleService-Info.plist
+**/google-services.json
+*.env
