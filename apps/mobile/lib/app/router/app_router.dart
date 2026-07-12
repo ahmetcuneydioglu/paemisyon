@@ -11,9 +11,11 @@ import '../../features/catalog/presentation/courses_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
+import '../../features/progress/presentation/progress_screen.dart';
 import '../../features/quiz/domain/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
 import '../../features/quiz/presentation/result_screen.dart';
+import '../../features/review/presentation/review_screen.dart';
 
 /// Auth state stream'ini router'ın dinleyebileceği bir Listenable'a çevirir.
 class GoRouterRefreshStream extends ChangeNotifier {
@@ -89,7 +91,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) =>
             ResultScreen(result: state.extra as QuizResult),
       ),
-      // Sonraki rotalar: /onboarding, /profile, /review ... (Doc 11/12)
+      GoRoute(
+          path: '/progress',
+          builder: (context, state) => const ProgressScreen()),
+      GoRoute(
+          path: '/review', builder: (context, state) => const ReviewScreen()),
+      // Sonraki rotalar: /onboarding, /profile ... (Doc 11/12)
     ],
   );
 });

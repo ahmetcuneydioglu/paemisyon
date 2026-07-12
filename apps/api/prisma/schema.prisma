@@ -96,12 +96,17 @@ model User {
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
 
-  authIdentities AuthIdentity[]
-  roles          UserRole[]
-  entitlement    Entitlement?
-  subscriptions  Subscription[]
-  dailyUsage     DailyUsage[]
-  quizSessions   QuizSession[]
+  authIdentities    AuthIdentity[]
+  roles             UserRole[]
+  entitlement       Entitlement?
+  subscriptions     Subscription[]
+  dailyUsage        DailyUsage[]
+  quizSessions      QuizSession[]
+  topicProgress     UserTopicProgress[]
+  stats             UserStats?
+  streak            Streak?
+  bookmarks         Bookmark[]
+  wrongAnswers      WrongAnswer[]
 
   @@map("users")
 }
@@ -184,9 +189,10 @@ model Topic {
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  course       Course        @relation(fields: [courseId], references: [id])
+  course       Course              @relation(fields: [courseId], references: [id])
   questions    Question[]
   quizSessions QuizSession[]
+  userProgress UserTopicProgress[]
 
   @@index([courseId])
   @@map("topics")
@@ -369,6 +375,72 @@ model QuizAnswer {
   @@unique([sessionId, questionId])
   @@index([sessionId])
   @@map("quiz_answers")
+}
+
+// ─────────────────────────────────────────────
+// Progress & Review (Doc 6 §4.4)
+// ─────────────────────────────────────────────
+
+model UserTopicProgress {
+  userId         String   @map("user_id") @db.Uuid
+  topicId        String   @map("topic_id") @db.Uuid
+  solvedCount    Int      @default(0) @map("solved_count")
+  correctCount   Int      @default(0) @map("correct_count")
+  mastery        Decimal  @default(0) @db.Decimal(4, 3) // 0-1, zayıf konu tespiti
+  lastActivityAt DateTime @default(now()) @map("last_activity_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id])
+
+  @@id([userId, topicId])
+  @@map("user_topic_progress")
+}
+
+model UserStats {
+  userId        String   @id @map("user_id") @db.Uuid
+  totalSolved   Int      @default(0) @map("total_solved")
+  totalCorrect  Int      @default(0) @map("total_correct")
+  totalSessions Int      @default(0) @map("total_sessions")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_stats")
+}
+
+model Streak {
+  userId         String    @id @map("user_id") @db.Uuid
+  currentStreak  Int       @default(0) @map("current_streak")
+  longestStreak  Int       @default(0) @map("longest_streak")
+  lastActiveDate DateTime? @map("last_active_date") @db.Date
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("streaks")
+}
+
+model Bookmark {
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+  @@map("bookmarks")
+}
+
+model WrongAnswer {
+  userId      String    @map("user_id") @db.Uuid
+  questionId  String    @map("question_id") @db.Uuid
+  lastWrongAt DateTime  @default(now()) @map("last_wrong_at")
+  wrongCount  Int       @default(1) @map("wrong_count")
+  resolvedAt  DateTime? @map("resolved_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+  @@map("wrong_answers")
 }
 
 // ─────────────────────────────────────────────

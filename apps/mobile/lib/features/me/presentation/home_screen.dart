@@ -82,6 +82,24 @@ class _ProfileCard extends StatelessWidget {
                 label: 'Kategorilere göz at',
                 onPressed: () => context.push('/catalog'),
               ),
+              const SizedBox(height: AppSpacing.sm),
+              Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () => context.push('/progress'),
+                      child: const Text('İlerlemem'),
+                    ),
+                  ),
+                  const SizedBox(width: AppSpacing.sm),
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed: () => context.push('/review'),
+                      child: const Text('Tekrar'),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

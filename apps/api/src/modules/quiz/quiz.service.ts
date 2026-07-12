@@ -1,5 +1,6 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { ProgressService } from '../progress/progress.service';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 
@@ -9,7 +10,10 @@ import { SubmitAnswerDto } from './dto/submit-answer.dto';
  */
 @Injectable()
 export class QuizService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly progress: ProgressService,
+  ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
   async startSession(userId: string, dto: StartSessionDto) {
@@ -147,6 +151,18 @@ export class QuizService {
         score,
         durationSeconds,
       },
+    });
+
+    // İlerleme/istatistik/streak/yanlışlar güncelle (Doc 6/7).
+    await this.progress.recordSessionCompletion(userId, {
+      topicId: session.topicId,
+      correctCount,
+      wrongCount,
+      answers: session.answers.map((a) => ({
+        questionId: a.questionId,
+        isCorrect: a.isCorrect,
+        selectedOptionId: a.selectedOptionId,
+      })),
     });
 
     return {

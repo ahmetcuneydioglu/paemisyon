@@ -6,7 +6,9 @@ import { PrismaModule } from './infra/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
+import { ProgressModule } from './modules/progress/progress.module';
 import { QuizModule } from './modules/quiz/quiz.module';
+import { ReviewModule } from './modules/review/review.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -19,8 +21,10 @@ import { UsersModule } from './modules/users/users.module';
     AuthModule,
     CatalogModule,
     QuizModule,
+    ProgressModule,
+    ReviewModule,
     // Feature modülleri (sprint sırasına göre eklenecek — Doc 13):
-    // ProgressModule, SubscriptionModule...
+    // SubscriptionModule...
     HealthModule,
     UsersModule,
   ],
