@@ -165,6 +165,23 @@ model Module {
   @@map("modules")
 }
 
+/// Admin/editor işlemlerinin izi (Doc 9 §6) — kim, neyi, ne zaman.
+/// Eski sistemdeki "ekip_loglar" fikrinin sağlıklı hali; panel salt-okur gösterir.
+model AuditLog {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  actorId    String   @map("actor_id") @db.Uuid
+  actorEmail String   @map("actor_email")
+  action     String // örn: question.create, question.approve, user.suspend
+  entityType String   @map("entity_type") // question | course | topic | user | plan...
+  entityId   String?  @map("entity_id")
+  detail     Json?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([entityType, entityId])
+  @@index([actorId, createdAt])
+  @@map("audit_logs")
+}
+
 model Course {
   id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   moduleId  String    @map("module_id") @db.Uuid

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Panel açık temada sabittir (iç araç, okunabilirlik önce). */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}

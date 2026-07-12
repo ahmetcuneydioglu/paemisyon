@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
+import { AdminModule } from './modules/admin/admin.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { BillingModule } from './modules/billing/billing.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
@@ -25,6 +26,7 @@ import { UsersModule } from './modules/users/users.module';
     ProgressModule,
     ReviewModule,
     BillingModule,
+    AdminModule,
     HealthModule,
     UsersModule,
   ],
