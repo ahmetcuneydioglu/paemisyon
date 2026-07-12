@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/offline/answer_queue.dart';
+import '../../../core/offline/sync_service.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
@@ -65,19 +67,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Future<void> _submit() async {
     if (_busy) return;
     setState(() => _busy = true);
+    final selected = _selected;
+    final timeSpent = DateTime.now().difference(_qStart).inMilliseconds;
     try {
       final fb = await ref.read(quizRepositoryProvider).answer(
             _session!.sessionId,
             questionId: _q.questionId,
             versionId: _q.versionId,
-            selectedOptionId: _selected,
-            timeSpentMs: DateTime.now().difference(_qStart).inMilliseconds,
+            selectedOptionId: selected,
+            timeSpentMs: timeSpent,
           );
       if (_isPractice) {
         setState(() => _feedback = fb); // geri bildirimi göster
       } else {
         await _advance(); // exam: geri bildirim yok, ilerle
       }
+    } on NetworkFailure {
+      await _queueOffline(selected, timeSpent); // çevrimdışı → kuyruğa al, ilerle
     } on Failure catch (f) {
       _snack(f.message);
     } catch (_) {
@@ -85,6 +91,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
+  }
+
+  /// Çevrimdışıyken cevabı yerel kuyruğa alır ve ilerler (Doc 3 §5.1).
+  /// Bağlantı gelince otomatik senkronlanır; practice'te açıklama gösterilmez.
+  Future<void> _queueOffline(String? selected, int timeSpent) async {
+    final queue = ref.read(answerQueueProvider);
+    await queue.enqueue(QueuedAnswer(
+      sessionId: _session!.sessionId,
+      questionId: _q.questionId,
+      versionId: _q.versionId,
+      selectedOptionId: selected,
+      timeSpentMs: timeSpent,
+      createdAt: DateTime.now().millisecondsSinceEpoch,
+    ));
+    ref.read(pendingAnswerCountProvider.notifier).state = await queue.count();
+    _snack('Çevrimdışısın — cevabın kaydedildi, bağlantı gelince gönderilecek.');
+    await _advance();
   }
 
   Future<void> _advance() async {
@@ -103,9 +126,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Future<void> _finish() async {
     setState(() => _busy = true);
     try {
+      // Çevrimdışıyken biriken cevaplar varsa önce onları gönder — skor doğru olsun.
+      await ref.read(syncServiceProvider).flush();
       final result =
           await ref.read(quizRepositoryProvider).complete(_session!.sessionId);
       if (mounted) context.pushReplacement('/quiz/result', extra: result);
+    } on NetworkFailure {
+      _snack(
+          'Bağlantı yok — cevapların kaydedildi. Testi bitirmek için internet gerekli.');
     } on Failure catch (f) {
       _snack(f.message);
     } finally {

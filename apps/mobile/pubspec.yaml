@@ -28,6 +28,10 @@ dependencies:
   flutter_secure_storage: ^9.2.2
   shared_preferences: ^2.3.3
 
+  # Offline (Sprint 5): bağlantı durumu. Kalıcı kuyruk shared_preferences ile.
+  # (Tam offline soru-bankası cache'i için Drift ileride eklenecek.)
+  connectivity_plus: ^6.1.0
+
   cupertino_icons: ^1.0.8
 
   # ── Sonraki sprintlerde eklenecek (codegen gerektirir) ──
