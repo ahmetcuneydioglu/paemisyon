@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { ForbiddenException, Injectable, UnauthorizedException } from '@nestjs/common';
 import type { JWTPayload } from 'jose';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { isEntitlementActive } from '../billing/entitlement.util';
@@ -24,6 +24,7 @@ export class UserSyncService {
       where: { id },
       include: { roles: { include: { role: true } }, entitlement: true },
     });
+    if (existing) this.enforceStatus(existing.status);
     if (existing && existing.roles.length > 0 && existing.entitlement) {
       return {
         id,
@@ -69,5 +70,21 @@ export class UserSyncService {
       }));
 
     return { id, email: user.email, roles, isPremium: isEntitlementActive(entitlement) };
+  }
+
+  /** Askıya alınan/silinen hesap API'ye giremez (Doc 8/9). Supabase token'ı geçerli olsa bile. */
+  private enforceStatus(status: string) {
+    if (status === 'suspended') {
+      throw new ForbiddenException({
+        code: 'ACCOUNT_SUSPENDED',
+        message: 'Hesabın askıya alındı. Destek ile iletişime geç.',
+      });
+    }
+    if (status === 'deleted') {
+      throw new UnauthorizedException({
+        code: 'ACCOUNT_DELETED',
+        message: 'Bu hesap silinmiş.',
+      });
+    }
   }
 }

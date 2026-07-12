@@ -6,26 +6,35 @@ import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
-import '../../auth/data/auth_repository.dart';
 import '../data/me_repository.dart';
 import '../domain/dashboard_data.dart';
 
 /// Home / Dashboard (Sprint 7, Doc 12 §4): selamlama + streak + günlük ilerleme +
 /// genel istatistik + hızlı erişim. Tek istek: GET /me/dashboard.
+/// Onboarding tamamlanmamışsa hedef seçimine yönlendirir (Doc 11 §2).
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final dash = ref.watch(dashboardProvider);
+
+    // İlk giriş: hedef sınav seçilmemişse onboarding'e götür.
+    ref.listen(dashboardProvider, (prev, next) {
+      final d = next.valueOrNull;
+      if (d != null && !d.onboardingCompleted) {
+        context.go('/onboarding');
+      }
+    });
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Paemisyon'),
         actions: [
           IconButton(
-            tooltip: 'Çıkış yap',
-            icon: const Icon(Icons.logout_rounded),
-            onPressed: () => ref.read(authRepositoryProvider).signOut(),
+            tooltip: 'Profil & Ayarlar',
+            icon: const Icon(Icons.person_rounded),
+            onPressed: () => context.push('/profile'),
           ),
         ],
       ),
@@ -92,8 +101,12 @@ class _Dashboard extends StatelessWidget {
                     style: theme.textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 2),
-                  Text('Bugün de bir adım ileri.',
-                      style: theme.textTheme.bodyMedium),
+                  Text(
+                    data.preferredModuleName != null
+                        ? 'Hedef: ${data.preferredModuleName} · Bugün de bir adım ileri.'
+                        : 'Bugün de bir adım ileri.',
+                    style: theme.textTheme.bodyMedium,
+                  ),
                 ],
               ),
             ),

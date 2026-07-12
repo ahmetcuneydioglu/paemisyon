@@ -1,4 +1,10 @@
-import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+  CanActivate,
+  ExecutionContext,
+  HttpException,
+  Injectable,
+  UnauthorizedException,
+} from '@nestjs/common';
 import type { Request } from 'express';
 import { SupabaseTokenService } from '../supabase-token.service';
 import { UserSyncService } from '../user-sync.service';
@@ -28,7 +34,9 @@ export class JwtAuthGuard implements CanActivate {
       request.user = await this.userSync.ensureUser(claims);
       return true;
     } catch (err) {
-      if (err instanceof UnauthorizedException) throw err;
+      // Bilinçli fırlatılan HTTP hataları (ör. ACCOUNT_SUSPENDED 403) aynen geçer;
+      // yalnızca beklenmeyen doğrulama hataları genel 401'e sarılır.
+      if (err instanceof HttpException) throw err;
       throw new UnauthorizedException('Oturum geçersiz veya süresi dolmuş.');
     }
   }

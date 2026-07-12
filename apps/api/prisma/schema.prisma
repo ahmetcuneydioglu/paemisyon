@@ -92,6 +92,8 @@ model User {
   avatarUrl             String?    @map("avatar_url")
   status                UserStatus @default(active)
   onboardingCompletedAt DateTime?  @map("onboarding_completed_at")
+  // Hedef sınav (onboarding'de seçilir; Home/katalog varsayılanı — Doc 11 §2).
+  preferredModuleId     String?    @map("preferred_module_id") @db.Uuid
   createdAt             DateTime   @default(now()) @map("created_at")
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
@@ -107,6 +109,7 @@ model User {
   streak            Streak?
   bookmarks         Bookmark[]
   wrongAnswers      WrongAnswer[]
+  preferredModule   Module?             @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -160,7 +163,8 @@ model Module {
   createdAt   DateTime  @default(now()) @map("created_at")
   updatedAt   DateTime  @updatedAt @map("updated_at")
 
-  courses Course[]
+  courses        Course[]
+  preferredUsers User[]
 
   @@map("modules")
 }

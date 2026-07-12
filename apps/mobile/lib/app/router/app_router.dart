@@ -12,6 +12,8 @@ import '../../features/catalog/presentation/courses_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
+import '../../features/me/presentation/onboarding_screen.dart';
+import '../../features/me/presentation/profile_screen.dart';
 import '../../features/progress/presentation/progress_screen.dart';
 import '../../features/quiz/domain/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
@@ -99,7 +101,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           path: '/review', builder: (context, state) => const ReviewScreen()),
       GoRoute(
           path: '/paywall', builder: (context, state) => const PaywallScreen()),
-      // Sonraki rotalar: /onboarding, /profile ... (Doc 11/12)
+      GoRoute(
+          path: '/onboarding',
+          builder: (context, state) => const OnboardingScreen()),
+      GoRoute(
+          path: '/profile', builder: (context, state) => const ProfileScreen()),
     ],
   );
 });

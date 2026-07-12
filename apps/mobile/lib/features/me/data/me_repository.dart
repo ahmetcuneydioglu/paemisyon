@@ -29,6 +29,30 @@ class MeRepository {
     });
   }
 
+  /// Onboarding: hedef sınav seçimini kaydeder (idempotent — profilden de değiştirilir).
+  Future<void> completeOnboarding(String moduleId) async {
+    return _guard(() async {
+      await _dio.post<Map<String, dynamic>>(
+        '/me/onboarding',
+        data: {'moduleId': moduleId},
+      );
+    });
+  }
+
+  Future<void> updateDisplayName(String displayName) async {
+    return _guard(() async {
+      await _dio
+          .patch<Map<String, dynamic>>('/me', data: {'displayName': displayName});
+    });
+  }
+
+  /// KVKK hesap silme — geri alınamaz. Başarıda arayan oturumu kapatmalı.
+  Future<void> deleteAccount() async {
+    return _guard(() async {
+      await _dio.delete<Map<String, dynamic>>('/me');
+    });
+  }
+
   Future<T> _guard<T>(Future<T> Function() run) async {
     try {
       return await run();

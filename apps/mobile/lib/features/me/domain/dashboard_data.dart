@@ -1,6 +1,8 @@
 /// GET /me/dashboard yanıtı (Doc 12 §4) — home ekranının tek veri kaynağı.
 class DashboardData {
   final String? displayName;
+  final bool onboardingCompleted;
+  final String? preferredModuleName;
   final bool isPremium;
   final int currentStreak;
   final int longestStreak;
@@ -14,6 +16,8 @@ class DashboardData {
 
   const DashboardData({
     this.displayName,
+    required this.onboardingCompleted,
+    this.preferredModuleName,
     required this.isPremium,
     required this.currentStreak,
     required this.longestStreak,
@@ -30,6 +34,9 @@ class DashboardData {
     final stats = j['stats'] as Map<String, dynamic>? ?? const {};
     return DashboardData(
       displayName: j['displayName'] as String?,
+      onboardingCompleted: j['onboardingCompleted'] as bool? ?? true,
+      preferredModuleName:
+          (j['preferredModule'] as Map<String, dynamic>?)?['name'] as String?,
       isPremium: j['isPremium'] as bool? ?? false,
       currentStreak: streak['current'] as int? ?? 0,
       longestStreak: streak['longest'] as int? ?? 0,
