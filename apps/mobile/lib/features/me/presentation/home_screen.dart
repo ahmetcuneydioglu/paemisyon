@@ -122,13 +122,19 @@ class _Dashboard extends StatelessWidget {
         const SizedBox(height: AppSpacing.lg),
 
         // ── Günlük ilerleme + streak ──
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Expanded(child: _TodayCard(data: data)),
-            const SizedBox(width: AppSpacing.md),
-            _StreakCard(current: data.currentStreak, longest: data.longestStreak),
-          ],
+        // NOT: ListView çocukları sonsuz yükseklik alır; Row'da doğrudan
+        // CrossAxisAlignment.stretch kullanmak layout'u çökertir (telefonda
+        // görülen "boş ekran" hatası). Eş boy kart için IntrinsicHeight doğru araç.
+        IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(child: _TodayCard(data: data)),
+              const SizedBox(width: AppSpacing.md),
+              _StreakCard(
+                  current: data.currentStreak, longest: data.longestStreak),
+            ],
+          ),
         ),
         const SizedBox(height: AppSpacing.md),
 
