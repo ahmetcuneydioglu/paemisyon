@@ -221,6 +221,89 @@ export class AdminQuestionsService {
     return { archived: true };
   }
 
+  // ── Onay kuyruğu özeti: konu bazında bekleyen sayıları (panel için) ──
+  async reviewSummary() {
+    const groups = await this.prisma.questionVersion.groupBy({
+      by: ['questionId'],
+      where: { status: 'in_review', question: { deletedAt: null } },
+    });
+    const questionIds = groups.map((g) => g.questionId);
+    const questions = await this.prisma.question.findMany({
+      where: { id: { in: questionIds } },
+      select: {
+        topicId: true,
+        topic: { select: { name: true, course: { select: { name: true } } } },
+      },
+    });
+    const byTopic = new Map<string, { topicId: string; topicName: string; courseName: string; count: number }>();
+    for (const q of questions) {
+      const cur = byTopic.get(q.topicId) ?? {
+        topicId: q.topicId,
+        topicName: q.topic.name,
+        courseName: q.topic.course.name,
+        count: 0,
+      };
+      cur.count++;
+      byTopic.set(q.topicId, cur);
+    }
+    return [...byTopic.values()].sort((a, b) => b.count - a.count);
+  }
+
+  // ── Toplu onay (Doc 9 §4.1 "toplu işlem"): bir konudaki TÜM in_review sorular ──
+  // YALNIZCA admin çağırır (controller'da). Yayın kontrolü tek tek uygulanır:
+  // tam bir doğru şıkkı olmayan soru atlanır ve raporlanır — sessiz geçiş yok.
+  async bulkApprove(actor: AuthenticatedUser, topicId: string) {
+    const topic = await this.prisma.topic.findFirst({
+      where: { id: topicId, deletedAt: null },
+      select: { name: true },
+    });
+    if (!topic) throw new NotFoundException('Konu bulunamadı.');
+
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { status: 'in_review', question: { topicId, deletedAt: null } },
+      include: { options: { select: { isCorrect: true } } },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    let approved = 0;
+    const skipped: { questionId: string; reason: string }[] = [];
+    const CHUNK = 25;
+    for (let i = 0; i < versions.length; i += CHUNK) {
+      const chunk = versions.slice(i, i + CHUNK);
+      await this.prisma.$transaction(
+        async (tx) => {
+          for (const v of chunk) {
+            if (v.options.filter((o) => o.isCorrect).length !== 1) {
+              skipped.push({ questionId: v.questionId, reason: 'Tam bir doğru şık işaretli değil.' });
+              continue;
+            }
+            await tx.questionVersion.updateMany({
+              where: { questionId: v.questionId, status: 'published' },
+              data: { status: 'archived', archivedAt: new Date() },
+            });
+            await tx.questionVersion.update({
+              where: { id: v.id },
+              data: { status: 'published', publishedAt: new Date(), reviewedBy: actor.id },
+            });
+            await tx.question.update({
+              where: { id: v.questionId },
+              data: { currentVersionId: v.id },
+            });
+            approved++;
+          }
+        },
+        { timeout: 120_000, maxWait: 30_000 },
+      );
+    }
+
+    await this.audit.log(actor, 'question.bulk_approve', 'topic', topicId, {
+      topicName: topic.name,
+      approved,
+      skipped: skipped.length,
+    });
+    return { topicId, topicName: topic.name, approved, skipped };
+  }
+
   // ── Toplu içe aktarma (Doc 9 §4.4) ──
   // KURAL: içe aktarılan sorular ASLA doğrudan yayına çıkmaz — in_review kuyruğuna
   // düşer (eski sistemin doğrudan-yayın hatası bilinçli olarak tekrarlanmaz).

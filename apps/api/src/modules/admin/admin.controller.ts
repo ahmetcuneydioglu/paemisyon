@@ -170,6 +170,23 @@ export class AdminController {
     return this.questions.submitForReview(actor, id);
   }
 
+  // Onay kuyruğu özeti: konu bazında bekleyen sayılar (panel kartları).
+  @Get('review/summary')
+  @Roles('admin', 'editor')
+  reviewSummary() {
+    return this.questions.reviewSummary();
+  }
+
+  // Toplu onay — YALNIZCA admin (Doc 9 §4.1). Konudaki tüm in_review sorular.
+  @Post('questions/bulk-approve')
+  @Roles('admin')
+  bulkApprove(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body('topicId', ParseUUIDPipe) topicId: string,
+  ) {
+    return this.questions.bulkApprove(actor, topicId);
+  }
+
   // Onay/ret YALNIZCA admin — mevzuat güvencesi (Doc 9 §4.3).
   @Post('questions/:id/approve')
   @Roles('admin')
