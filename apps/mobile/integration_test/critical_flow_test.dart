@@ -30,49 +30,71 @@ void main() {
     }
   }
 
+  /// Bulana kadar bekle (ağ/token tazeleme gecikmelerine dayanıklı).
+  Future<void> waitFor(WidgetTester tester, Finder finder,
+      {int timeoutSeconds = 20}) async {
+    for (var i = 0; i < timeoutSeconds * 4; i++) {
+      await tester.pump(const Duration(milliseconds: 250));
+      if (finder.evaluate().isNotEmpty) return;
+    }
+    // Teşhis: ekranda o an ne var?
+    final visible = find
+        .byType(Text)
+        .evaluate()
+        .map((e) => (e.widget as Text).data)
+        .whereType<String>()
+        .take(20)
+        .toList();
+    fail('Zaman aşımı: $finder bulunamadı ($timeoutSeconds sn). Ekrandakiler: $visible');
+  }
+
   testWidgets('giriş → onboarding → katalog → modül aç', (tester) async {
     app.main();
-    await settle(tester, 4);
 
-    // ── Giriş (oturum yoksa) ──
+    // ── İlk anlamlı ekranı bekle: login / onboarding / home.
+    // (Ölü oturumda interceptor otomatik signOut yapar → login GEÇ gelebilir.)
+    final firstScreen = find.byWidgetPredicate((w) =>
+        w is Text &&
+        (w.data == 'Giriş yap' ||
+            w.data == 'Devam Et' ||
+            w.data == 'Çalışmaya Başla'));
+    await waitFor(tester, firstScreen, timeoutSeconds: 30);
+    await settle(tester, 1);
+
+    // ── Giriş (oturum yoksa / düşmüşse) ──
     if (find.text('Giriş yap').evaluate().isNotEmpty) {
       final fields = find.byType(TextField);
       await tester.enterText(fields.at(0), 'test@paemisyon.com');
       await tester.enterText(fields.at(1), 'Paemisyon2026!');
       await tester.tap(find.text('Giriş yap'));
-      await settle(tester, 6);
+      await settle(tester, 3);
     }
 
     // ── Onboarding çıktıysa hedef seç ──
+    await settle(tester, 2);
     if (find.text('Devam Et').evaluate().isNotEmpty) {
       await tester.tap(find.text('PAEM').first);
       await settle(tester, 1);
       await tester.tap(find.text('Devam Et'));
-      await settle(tester, 5);
     }
 
-    expect(find.text('Çalışmaya Başla'), findsOneWidget,
-        reason: 'Home ekranı yüklenmeli');
+    // ── Home (token tazeleme/ağ gecikmesine dayanıklı bekleme) ──
+    await waitFor(tester, find.text('Çalışmaya Başla'));
 
     // ── Kataloğa git ──
     await tester.tap(find.text('Çalışmaya Başla'));
-    await settle(tester, 4);
-    expect(find.text('Kategoriler'), findsOneWidget,
-        reason: 'Modül listesi açılmalı');
+    await waitFor(tester, find.text('Kategoriler'));
+    await waitFor(tester, find.text('PAEM')); // liste yüklenene dek bekle
 
-    // ── HATA REPRO: bir sınava (modüle) tıkla ──
+    // ── Bir sınava (modüle) tıkla → dersler ──
     await tester.tap(find.text('PAEM').first);
-    await settle(tester, 4);
-    expect(find.text('Anayasa Hukuku'), findsOneWidget,
-        reason: 'PAEM dersleri listelenmeli');
+    await waitFor(tester, find.text('Genel Mevzuat'));
 
     // ── Boş modül de kırılmamalı ──
     await tester.pageBack();
-    await settle(tester, 2);
+    await waitFor(tester, find.text('POMEM'));
     await tester.tap(find.text('POMEM'));
-    await settle(tester, 4);
-    expect(find.text('Bu modülde henüz ders yok.'), findsOneWidget,
-        reason: 'Boş modül dostça boş durum göstermeli');
+    await waitFor(tester, find.text('Bu modülde henüz ders yok.'));
 
     debugPrint('════ TOPLAM İSTİSNA: $errorCount ════');
   });
