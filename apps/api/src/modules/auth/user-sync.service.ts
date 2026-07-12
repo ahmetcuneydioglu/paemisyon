@@ -17,24 +17,37 @@ export class UserSyncService {
     if (!id) {
       throw new Error('Token "sub" (kullanıcı id) içermiyor.');
     }
+
+    // HIZLI YOL (yaygın durum): mevcut, rolü+entitlement'ı olan kullanıcı → TEK sorgu.
+    const existing = await this.prisma.user.findUnique({
+      where: { id },
+      include: { roles: { include: { role: true } }, entitlement: true },
+    });
+    if (existing && existing.roles.length > 0 && existing.entitlement) {
+      return {
+        id,
+        email: existing.email,
+        roles: existing.roles.map((r) => r.role.key),
+        isPremium: existing.entitlement.isPremium,
+      };
+    }
+
+    // YAVAŞ YOL (ilk giriş / eksik backfill): oluştur + rol + entitlement.
     const email = (claims.email as string | undefined) ?? '';
     const emailVerified = claims.email_verified === true;
 
-    // Kullanıcıyı oluştur/getir (profil her istekte ezilmez).
-    const user = await this.prisma.user.upsert({
-      where: { id },
-      update: {},
-      create: {
-        id,
-        email,
-        displayName: email.includes('@') ? email.split('@')[0] : 'Kullanıcı',
-        emailVerifiedAt: emailVerified ? new Date() : null,
-      },
-      include: { roles: { include: { role: true } }, entitlement: true },
-    });
+    const user =
+      existing ??
+      (await this.prisma.user.create({
+        data: {
+          id,
+          email,
+          displayName: email.includes('@') ? email.split('@')[0] : 'Kullanıcı',
+          emailVerifiedAt: emailVerified ? new Date() : null,
+        },
+      }));
 
-    // Varsayılan 'user' rolü (idempotent).
-    let roles = user.roles.map((r) => r.role.key);
+    let roles = existing?.roles.map((r) => r.role.key) ?? [];
     if (roles.length === 0) {
       const userRole = await this.prisma.role.findUnique({ where: { key: 'user' } });
       if (userRole) {
@@ -46,12 +59,13 @@ export class UserSyncService {
       }
     }
 
-    // Entitlement (idempotent). Premium kararı burada okunur (SubscriptionGuard).
-    const entitlement = await this.prisma.entitlement.upsert({
-      where: { userId: id },
-      update: {},
-      create: { userId: id, isPremium: false },
-    });
+    const entitlement =
+      existing?.entitlement ??
+      (await this.prisma.entitlement.upsert({
+        where: { userId: id },
+        update: {},
+        create: { userId: id, isPremium: false },
+      }));
 
     return { id, email: user.email, roles, isPremium: entitlement.isPremium };
   }
