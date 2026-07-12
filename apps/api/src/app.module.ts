@@ -6,6 +6,7 @@ import { PrismaModule } from './infra/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
+import { QuizModule } from './modules/quiz/quiz.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -17,8 +18,9 @@ import { UsersModule } from './modules/users/users.module';
     PrismaModule,
     AuthModule,
     CatalogModule,
+    QuizModule,
     // Feature modülleri (sprint sırasına göre eklenecek — Doc 13):
-    // QuizModule, ProgressModule, SubscriptionModule...
+    // ProgressModule, SubscriptionModule...
     HealthModule,
     UsersModule,
   ],

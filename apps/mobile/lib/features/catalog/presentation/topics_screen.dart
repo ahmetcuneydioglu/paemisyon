@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -42,16 +43,21 @@ class TopicsScreen extends ConsumerWidget {
                           ? const Icon(Icons.lock_rounded, size: 18)
                           : const Icon(Icons.chevron_right_rounded),
                       onTap: () {
-                        // Quiz Sprint 3'te. Şimdilik bilgi.
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              t.isPremium
-                                  ? '"${t.name}" premium (Sprint 6). Quiz motoru Sprint 3.'
-                                  : '"${t.name}" — quiz motoru Sprint 3.',
+                        if (t.isPremium) {
+                          // Premium içerik → paywall (Sprint 6). Şimdilik bilgi.
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                  '"${t.name}" premium içeriktir (Premium — Sprint 6).'),
                             ),
-                          ),
-                        );
+                          );
+                        } else {
+                          context.push('/quiz', extra: {
+                            'topicId': t.id,
+                            'topicName': t.name,
+                            'mode': 'practice',
+                          });
+                        }
                       },
                     ),
                   );

@@ -67,6 +67,19 @@ enum LegacySource {
   web_mysql
 }
 
+enum QuizMode {
+  practice
+  exam
+  daily
+  review
+}
+
+enum QuizSessionStatus {
+  in_progress
+  completed
+  abandoned
+}
+
 // ─────────────────────────────────────────────
 // Identity & Access
 // ─────────────────────────────────────────────
@@ -88,6 +101,7 @@ model User {
   entitlement    Entitlement?
   subscriptions  Subscription[]
   dailyUsage     DailyUsage[]
+  quizSessions   QuizSession[]
 
   @@map("users")
 }
@@ -170,8 +184,9 @@ model Topic {
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  course    Course     @relation(fields: [courseId], references: [id])
-  questions Question[]
+  course       Course        @relation(fields: [courseId], references: [id])
+  questions    Question[]
+  quizSessions QuizSession[]
 
   @@index([courseId])
   @@map("topics")
@@ -310,6 +325,50 @@ model DailyUsage {
 
   @@id([userId, usageDate])
   @@map("daily_usage")
+}
+
+// ─────────────────────────────────────────────
+// Learning — Quiz oturumları (Doc 6 §4.3)
+// ─────────────────────────────────────────────
+
+model QuizSession {
+  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId          String            @map("user_id") @db.Uuid
+  mode            QuizMode
+  topicId         String?           @map("topic_id") @db.Uuid
+  status          QuizSessionStatus @default(in_progress)
+  totalQuestions  Int               @map("total_questions")
+  correctCount    Int               @default(0) @map("correct_count")
+  wrongCount      Int               @default(0) @map("wrong_count")
+  blankCount      Int               @default(0) @map("blank_count")
+  score           Decimal?          @db.Decimal(5, 2)
+  durationSeconds Int?              @map("duration_seconds")
+  startedAt       DateTime          @default(now()) @map("started_at")
+  completedAt     DateTime?         @map("completed_at")
+
+  user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic   Topic?       @relation(fields: [topicId], references: [id])
+  answers QuizAnswer[]
+
+  @@index([userId])
+  @@map("quiz_sessions")
+}
+
+model QuizAnswer {
+  id                String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sessionId         String   @map("session_id") @db.Uuid
+  questionId        String   @map("question_id") @db.Uuid
+  questionVersionId String   @map("question_version_id") @db.Uuid // çözülen tam sürüm sabitlenir (Doc 6 §5)
+  selectedOptionId  String?  @map("selected_option_id") @db.Uuid // boş = null
+  isCorrect         Boolean? @map("is_correct")
+  answeredAt        DateTime @default(now()) @map("answered_at")
+  timeSpentMs       Int?     @map("time_spent_ms")
+
+  session QuizSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, questionId])
+  @@index([sessionId])
+  @@map("quiz_answers")
 }
 
 // ─────────────────────────────────────────────

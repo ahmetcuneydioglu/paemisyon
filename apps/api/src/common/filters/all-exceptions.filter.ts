@@ -37,6 +37,8 @@ export class AllExceptionsFilter implements ExceptionFilter {
         const body = res as Record<string, unknown>;
         message = (body.message as string) ?? message;
         details = body.details ?? (Array.isArray(body.message) ? body.message : null);
+        // Endpoint özel bir kod verdiyse onu kullan (örn. DAILY_LIMIT_REACHED)
+        if (typeof body.code === 'string') code = body.code;
       }
     }
 

@@ -11,6 +11,9 @@ import '../../features/catalog/presentation/courses_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
+import '../../features/quiz/domain/quiz_models.dart';
+import '../../features/quiz/presentation/quiz_screen.dart';
+import '../../features/quiz/presentation/result_screen.dart';
 
 /// Auth state stream'ini router'ın dinleyebileceği bir Listenable'a çevirir.
 class GoRouterRefreshStream extends ChangeNotifier {
@@ -70,7 +73,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           courseName: state.extra as String? ?? 'Konular',
         ),
       ),
-      // Sonraki rotalar: /onboarding, /quiz, /result, /profile ... (Doc 11/12)
+      GoRoute(
+        path: '/quiz',
+        builder: (context, state) {
+          final args = state.extra as Map<String, dynamic>;
+          return QuizScreen(
+            topicId: args['topicId'] as String,
+            topicName: args['topicName'] as String,
+            mode: args['mode'] as String,
+          );
+        },
+      ),
+      GoRoute(
+        path: '/quiz/result',
+        builder: (context, state) =>
+            ResultScreen(result: state.extra as QuizResult),
+      ),
+      // Sonraki rotalar: /onboarding, /profile, /review ... (Doc 11/12)
     ],
   );
 });

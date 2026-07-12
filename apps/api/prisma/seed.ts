@@ -76,7 +76,60 @@ async function main() {
     }
   }
 
-  console.log('Seed tamam: roller, planlar, modüller (+ örnek içerik) eklendi.');
+  // Örnek sorular (DEV) — quiz motorunu denemek için. "Temel Kavramlar" boşsa ekle.
+  const firstTopic = await prisma.topic.findFirst({ where: { name: 'Temel Kavramlar' } });
+  if (firstTopic) {
+    const qCount = await prisma.question.count({ where: { topicId: firstTopic.id } });
+    if (qCount === 0) {
+      const samples = [
+        {
+          stem: '1982 Anayasası’na göre Türkiye Cumhuriyeti’nin nitelikleri arasında aşağıdakilerden hangisi YER ALMAZ?',
+          options: ['Demokratik', 'Laik', 'Sosyal', 'Federal'],
+          correct: 3,
+          explanation: 'Türkiye Cumhuriyeti üniter bir devlettir; "federal" bir niteliği değildir.',
+        },
+        {
+          stem: 'Anayasa’ya göre egemenlik kayıtsız şartsız kime aittir?',
+          options: ['Millete', 'Cumhurbaşkanına', 'TBMM’ye', 'Hükümete'],
+          correct: 0,
+          explanation: 'Egemenlik kayıtsız şartsız Milletindir (Anayasa md. 6).',
+        },
+        {
+          stem: 'Aşağıdakilerden hangisi bir temel hak ve hürriyet DEĞİLDİR?',
+          options: ['Yaşama hakkı', 'Kişi dokunulmazlığı', 'Seçme ve seçilme hakkı', 'Vergi toplama'],
+          correct: 3,
+          explanation: 'Vergi toplama bir devlet yetkisidir; temel hak ve hürriyet değildir.',
+        },
+      ];
+      for (const s of samples) {
+        const q = await prisma.question.create({ data: { topicId: firstTopic.id } });
+        const v = await prisma.questionVersion.create({
+          data: {
+            questionId: q.id,
+            versionNo: 1,
+            stem: s.stem,
+            explanation: s.explanation,
+            difficulty: 'medium',
+            status: 'published',
+            publishedAt: new Date(),
+          },
+        });
+        await prisma.questionOption.createMany({
+          data: s.options.map((text, i) => ({
+            questionVersionId: v.id,
+            label: String.fromCharCode(65 + i),
+            text,
+            isCorrect: i === s.correct,
+            sortOrder: i + 1,
+          })),
+        });
+        await prisma.question.update({ where: { id: q.id }, data: { currentVersionId: v.id } });
+      }
+      console.log('Örnek sorular eklendi (dev): 3 soru.');
+    }
+  }
+
+  console.log('Seed tamam: roller, planlar, modüller (+ örnek içerik + sorular) eklendi.');
 }
 
 main()
