@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/primary_button.dart';
 import '../../auth/data/auth_repository.dart';
 import '../data/me_repository.dart';
 import '../domain/me_profile.dart';
@@ -75,6 +77,11 @@ class _ProfileCard extends StatelessWidget {
               Text(profile.email),
               Text('Roller: ${profile.roles.join(", ")}'),
               Text('Premium: ${profile.isPremium ? "evet" : "hayır"}'),
+              const SizedBox(height: AppSpacing.lg),
+              PrimaryButton(
+                label: 'Kategorilere göz at',
+                onPressed: () => context.push('/catalog'),
+              ),
             ],
           ),
         ),

@@ -7,6 +7,9 @@ import 'package:go_router/go_router.dart';
 import '../../features/auth/data/auth_repository.dart';
 import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/register_screen.dart';
+import '../../features/catalog/presentation/courses_screen.dart';
+import '../../features/catalog/presentation/modules_screen.dart';
+import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 
 /// Auth state stream'ini router'ın dinleyebileceği bir Listenable'a çevirir.
@@ -51,7 +54,23 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
           path: '/auth/register',
           builder: (context, state) => const RegisterScreen()),
-      // Sonraki rotalar: /onboarding, /catalog, /quiz, /profile ... (Doc 11/12)
+      GoRoute(
+          path: '/catalog', builder: (context, state) => const ModulesScreen()),
+      GoRoute(
+        path: '/catalog/module/:id',
+        builder: (context, state) => CoursesScreen(
+          moduleId: state.pathParameters['id']!,
+          moduleName: state.extra as String? ?? 'Dersler',
+        ),
+      ),
+      GoRoute(
+        path: '/catalog/course/:id',
+        builder: (context, state) => TopicsScreen(
+          courseId: state.pathParameters['id']!,
+          courseName: state.extra as String? ?? 'Konular',
+        ),
+      ),
+      // Sonraki rotalar: /onboarding, /quiz, /result, /profile ... (Doc 11/12)
     ],
   );
 });

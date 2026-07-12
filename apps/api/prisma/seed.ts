@@ -48,7 +48,35 @@ async function main() {
     });
   }
 
-  console.log('Seed tamam: roller, planlar, modüller eklendi.');
+  // Örnek içerik (DEV) — katalog gezinmesini denemek için. PAEM boşsa ekle.
+  // Gerçek içerik editoryal üretilir (Doc 2); bu yalnızca iskelet doğrulaması.
+  const paem = await prisma.module.findUnique({ where: { key: 'paem' } });
+  if (paem) {
+    const courseCount = await prisma.course.count({ where: { moduleId: paem.id } });
+    if (courseCount === 0) {
+      const sample = [
+        { name: 'Anayasa Hukuku', topics: ['Temel Kavramlar', 'Temel Hak ve Hürriyetler', 'Yasama'] },
+        { name: 'Türkçe', topics: ['Ses Bilgisi', 'Anlatım Bozuklukları'] },
+        { name: 'Genel Kültür', topics: ['Tarih', 'Coğrafya'] },
+      ];
+      for (let ci = 0; ci < sample.length; ci++) {
+        const course = await prisma.course.create({
+          data: { moduleId: paem.id, name: sample[ci].name, sortOrder: ci + 1 },
+        });
+        await prisma.topic.createMany({
+          data: sample[ci].topics.map((name, ti) => ({
+            courseId: course.id,
+            name,
+            sortOrder: ti + 1,
+            isPremium: ti >= 2, // örnek: 3. konu premium
+          })),
+        });
+      }
+      console.log('Örnek PAEM içeriği eklendi (dev).');
+    }
+  }
+
+  console.log('Seed tamam: roller, planlar, modüller (+ örnek içerik) eklendi.');
 }
 
 main()
