@@ -11,16 +11,16 @@ class AppConfig {
     defaultValue: 'http://localhost:3000/api/v1',
   );
 
-  /// Supabase proje URL'i (public).
+  /// Supabase proje URL'i (public). Frankfurt (eu-central-1) projesi.
   static const String supabaseUrl = String.fromEnvironment(
     'SUPABASE_URL',
-    defaultValue: 'https://yanbnekypmtkcnpirpfs.supabase.co',
+    defaultValue: 'https://yhkiuzevyqdqtofrmroj.supabase.co',
   );
 
   /// Supabase anon/publishable anahtarı (public — istemcide bulunması normaldir).
   static const String supabaseAnonKey = String.fromEnvironment(
     'SUPABASE_ANON_KEY',
     defaultValue:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlhbmJuZWt5cG10a2NucGlycGZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3OTU1MDQsImV4cCI6MjA5OTM3MTUwNH0.XqXvd87qJ9Wn_EpT2vYE1-iUCsMCa2DrfOEg8yaE4Q8',
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inloa2l1emV2eXFkcXRvZnJtcm9qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM4NjU0OTAsImV4cCI6MjA5OTQ0MTQ5MH0.Znv7XODkWl3cA2hcLce2tY5nlOfBp6WEWevRdDbkRDw',
   );
 }
