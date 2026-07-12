@@ -26,7 +26,8 @@ async function main() {
       key: 'free',
       name: 'Ücretsiz',
       period: PlanPeriod.none,
-      dailyQuestionLimit: 15,
+      // TODO(LANSMAN): geliştirme için 1000 — yayına çıkmadan önce 15'e çek!
+      dailyQuestionLimit: 1000,
       price: null as string | null,
       storeProductIdIos: null as string | null,
     },
