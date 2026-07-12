@@ -9,4 +9,4 @@ linter:
   rules:
     prefer_const_constructors: true
     prefer_final_locals: true
-    require_trailing_commas: true
+    # require_trailing_commas: dart format ile çakışıyor, kaldırıldı.

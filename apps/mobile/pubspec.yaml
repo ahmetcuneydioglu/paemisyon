@@ -21,6 +21,9 @@ dependencies:
   # Network
   dio: ^5.7.0
 
+  # Kimlik (Doc 8): Supabase Auth — YALNIZCA auth için. Veri hep NestJS API'den.
+  supabase_flutter: ^2.8.0
+
   # Güvenli/yerel depolama (kimlik token'ı Sprint 1'de kullanılacak)
   flutter_secure_storage: ^9.2.2
   shared_preferences: ^2.3.3

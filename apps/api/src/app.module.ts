@@ -3,7 +3,9 @@ import { ConfigModule } from '@nestjs/config';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
+import { AuthModule } from './modules/auth/auth.module';
 import { HealthModule } from './modules/health/health.module';
+import { UsersModule } from './modules/users/users.module';
 
 @Module({
   imports: [
@@ -12,9 +14,11 @@ import { HealthModule } from './modules/health/health.module';
       validate: validateEnv,
     }),
     PrismaModule,
+    AuthModule,
     // Feature modülleri (sprint sırasına göre eklenecek — Doc 13):
-    // AuthModule, CatalogModule, QuizModule, ProgressModule, SubscriptionModule...
+    // CatalogModule, QuizModule, ProgressModule, SubscriptionModule...
     HealthModule,
+    UsersModule,
   ],
 })
 export class AppModule implements NestModule {

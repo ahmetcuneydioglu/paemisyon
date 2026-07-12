@@ -1,10 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../config/app_config.dart';
 
-/// Tek Dio örneği (Doc 3 §3.1). Interceptor'lar buradan eklenir.
-/// Auth token yenileme interceptor'ı Sprint 1'de (Doc 8) eklenecek.
+/// Tek Dio örneği (Doc 3 §3.1).
+/// Auth interceptor: her isteğe mevcut Supabase access token'ını Bearer olarak ekler.
+/// Böylece NestJS API isteği doğrular (Doc 8). supabase_flutter token'ı arka planda yeniler.
 final dioProvider = Provider<Dio>((ref) {
   final dio = Dio(
     BaseOptions(
@@ -15,7 +17,18 @@ final dioProvider = Provider<Dio>((ref) {
     ),
   );
 
-  // Geliştirmede istek/yanıt logu (production'da kapatılır).
+  dio.interceptors.add(
+    InterceptorsWrapper(
+      onRequest: (options, handler) {
+        final token = Supabase.instance.client.auth.currentSession?.accessToken;
+        if (token != null) {
+          options.headers['Authorization'] = 'Bearer $token';
+        }
+        handler.next(options);
+      },
+    ),
+  );
+
   assert(() {
     dio.interceptors.add(
       LogInterceptor(requestHeader: false, responseBody: false),
