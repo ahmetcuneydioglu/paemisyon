@@ -44,6 +44,17 @@ class EnvironmentVariables {
   @IsString()
   @IsOptional()
   SUPABASE_SERVICE_ROLE_KEY?: string;
+
+  // Billing (Doc 15). Bundle ID production'da işlem doğrulaması için kullanılır.
+  @IsString()
+  @IsOptional()
+  BILLING_BUNDLE_ID?: string;
+
+  // YALNIZCA dev: Xcode yerel StoreKit işlemlerini (Apple köküne zincirlenemez) kabul et.
+  // Production'da ASLA 'true' olmamalı.
+  @IsString()
+  @IsOptional()
+  BILLING_TRUST_LOCAL_STOREKIT?: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {

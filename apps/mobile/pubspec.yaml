@@ -32,6 +32,10 @@ dependencies:
   # (Tam offline soru-bankası cache'i için Drift ileride eklenecek.)
   connectivity_plus: ^6.1.0
 
+  # Abonelik/IAP (Sprint 6): StoreKit 2 (iOS) / Play Billing (Android).
+  # Doğrulama SUNUCUDA — istemci imzalı işlemi (JWS) backend'e /billing/verify'a yollar.
+  in_app_purchase: ^3.2.0
+
   cupertino_icons: ^1.0.8
 
   # ── Sonraki sprintlerde eklenecek (codegen gerektirir) ──

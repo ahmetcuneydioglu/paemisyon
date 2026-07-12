@@ -18,18 +18,55 @@ async function main() {
     await prisma.role.upsert({ where: { key: r.key }, update: { name: r.name }, create: r });
   }
 
-  // Planlar (Doc 16). Fiyatlar iş kararı bekliyor → şimdilik null.
+  // Planlar (Doc 16). Fiyatlar başlangıç değeri — App Store Connect ürün fiyatı asıldır.
+  // storeProductId'ler App Store Connect'te bire bir aynı olmalı (Doc 15).
   // Freemium günlük limit: başlangıç 15 (öneri 10-20; admin'den ayarlanabilir).
   const plans = [
-    { key: 'free', name: 'Ücretsiz', period: PlanPeriod.none, dailyQuestionLimit: 15 },
-    { key: 'monthly', name: 'Premium Aylık', period: PlanPeriod.monthly, dailyQuestionLimit: null },
-    { key: 'yearly', name: 'Premium Yıllık', period: PlanPeriod.yearly, dailyQuestionLimit: null },
+    {
+      key: 'free',
+      name: 'Ücretsiz',
+      period: PlanPeriod.none,
+      dailyQuestionLimit: 15,
+      price: null as string | null,
+      storeProductIdIos: null as string | null,
+    },
+    {
+      key: 'monthly',
+      name: 'Premium Aylık',
+      period: PlanPeriod.monthly,
+      dailyQuestionLimit: null,
+      price: '149.99',
+      storeProductIdIos: 'com.paemisyon.premium.monthly',
+    },
+    {
+      key: 'yearly',
+      name: 'Premium Yıllık',
+      period: PlanPeriod.yearly,
+      dailyQuestionLimit: null,
+      price: '999.99',
+      storeProductIdIos: 'com.paemisyon.premium.yearly',
+    },
   ];
   for (const p of plans) {
     await prisma.plan.upsert({
       where: { key: p.key },
-      update: { name: p.name, period: p.period, dailyQuestionLimit: p.dailyQuestionLimit },
-      create: { ...p, currency: 'TRY', isActive: true },
+      update: {
+        name: p.name,
+        period: p.period,
+        dailyQuestionLimit: p.dailyQuestionLimit,
+        price: p.price,
+        storeProductIdIos: p.storeProductIdIos,
+      },
+      create: {
+        key: p.key,
+        name: p.name,
+        period: p.period,
+        dailyQuestionLimit: p.dailyQuestionLimit,
+        price: p.price,
+        storeProductIdIos: p.storeProductIdIos,
+        currency: 'TRY',
+        isActive: true,
+      },
     });
   }
 

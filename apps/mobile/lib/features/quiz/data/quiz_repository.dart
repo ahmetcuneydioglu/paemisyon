@@ -58,10 +58,14 @@ class QuizRepository {
           e.type == DioExceptionType.connectionTimeout) {
         throw const NetworkFailure();
       }
-      // Backend'in verdiği anlamlı mesajı göster (örn. günlük limit).
-      final msg = (e.response?.data is Map)
-          ? ((e.response?.data as Map)['error']?['message'] as String?)
+      // Backend'in verdiği anlamlı mesajı/kodu göster (örn. günlük limit).
+      final err = (e.response?.data is Map)
+          ? (e.response?.data as Map)['error'] as Map?
           : null;
+      final msg = err?['message'] as String?;
+      if (err?['code'] == 'DAILY_LIMIT_REACHED') {
+        throw DailyLimitFailure(msg ?? 'Günlük ücretsiz soru hakkın doldu.');
+      }
       throw ServerFailure(msg ?? 'Bir şeyler ters gitti, tekrar dene.');
     }
   }

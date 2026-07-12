@@ -1,6 +1,7 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { ProgressService } from '../progress/progress.service';
+import { isEntitlementActive } from '../billing/entitlement.util';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 
@@ -194,7 +195,7 @@ export class QuizService {
 
   private async enforceDailyLimit(userId: string) {
     const entitlement = await this.prisma.entitlement.findUnique({ where: { userId } });
-    if (entitlement?.isPremium) return; // premium = sınırsız
+    if (isEntitlementActive(entitlement)) return; // premium (süresi geçerli) = sınırsız
 
     const freePlan = await this.prisma.plan.findUnique({ where: { key: 'free' } });
     const limit = freePlan?.dailyQuestionLimit ?? 15;

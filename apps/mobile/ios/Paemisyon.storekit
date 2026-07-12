@@ -1,0 +1,69 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : []
+  },
+  "identifier" : "PAEMISYON_STOREKIT",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "",
+    "_lastSynchronizedDate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "20871001",
+      "localizations" : [],
+      "name" : "Paemisyon Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "149.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "20871002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Sınırsız soru ve tüm içerik",
+              "displayName" : "Premium Aylık",
+              "locale" : "tr_TR"
+            }
+          ],
+          "productID" : "com.paemisyon.premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium Aylık",
+          "subscriptionGroupID" : "20871001",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "999.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "20871003",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Yıllık — en avantajlı",
+              "displayName" : "Premium Yıllık",
+              "locale" : "tr_TR"
+            }
+          ],
+          "productID" : "com.paemisyon.premium.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Premium Yıllık",
+          "subscriptionGroupID" : "20871001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

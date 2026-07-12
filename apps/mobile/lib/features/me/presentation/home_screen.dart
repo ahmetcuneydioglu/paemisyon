@@ -76,7 +76,19 @@ class _ProfileCard extends StatelessWidget {
               const SizedBox(height: AppSpacing.sm),
               Text(profile.email),
               Text('Roller: ${profile.roles.join(", ")}'),
-              Text('Premium: ${profile.isPremium ? "evet" : "hayır"}'),
+              const SizedBox(height: AppSpacing.sm),
+              if (profile.isPremium)
+                Chip(
+                  avatar: Icon(Icons.workspace_premium_rounded,
+                      size: 18, color: scheme.primary),
+                  label: const Text('Premium etkin'),
+                )
+              else
+                OutlinedButton.icon(
+                  onPressed: () => context.push('/paywall'),
+                  icon: const Icon(Icons.workspace_premium_rounded),
+                  label: const Text("Premium'a Geç"),
+                ),
               const SizedBox(height: AppSpacing.lg),
               PrimaryButton(
                 label: 'Kategorilere göz at',

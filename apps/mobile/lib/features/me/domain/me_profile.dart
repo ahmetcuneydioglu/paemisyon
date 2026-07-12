@@ -5,6 +5,7 @@ class MeProfile {
   final String? displayName;
   final List<String> roles;
   final bool isPremium;
+  final DateTime? validUntil;
 
   const MeProfile({
     required this.id,
@@ -12,6 +13,7 @@ class MeProfile {
     this.displayName,
     required this.roles,
     required this.isPremium,
+    this.validUntil,
   });
 
   factory MeProfile.fromJson(Map<String, dynamic> json) {
@@ -21,6 +23,9 @@ class MeProfile {
       displayName: json['displayName'] as String?,
       roles: (json['roles'] as List<dynamic>?)?.cast<String>() ?? const [],
       isPremium: json['isPremium'] as bool? ?? false,
+      validUntil: json['validUntil'] != null
+          ? DateTime.tryParse(json['validUntil'] as String)
+          : null,
     );
   }
 }

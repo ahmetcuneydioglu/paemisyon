@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import type { JWTPayload } from 'jose';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { isEntitlementActive } from '../billing/entitlement.util';
 import type { AuthenticatedUser } from './auth.types';
 
 /**
@@ -28,7 +29,7 @@ export class UserSyncService {
         id,
         email: existing.email,
         roles: existing.roles.map((r) => r.role.key),
-        isPremium: existing.entitlement.isPremium,
+        isPremium: isEntitlementActive(existing.entitlement),
       };
     }
 
@@ -67,6 +68,6 @@ export class UserSyncService {
         create: { userId: id, isPremium: false },
       }));
 
-    return { id, email: user.email, roles, isPremium: entitlement.isPremium };
+    return { id, email: user.email, roles, isPremium: isEntitlementActive(entitlement) };
   }
 }

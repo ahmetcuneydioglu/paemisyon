@@ -13,6 +13,12 @@ class ServerFailure extends Failure {
   const ServerFailure([super.message = 'Bir şeyler ters gitti, tekrar dene.']);
 }
 
+/// Freemium günlük soru hakkı doldu (backend: DAILY_LIMIT_REACHED).
+/// İstemci bunu yakalayıp paywall'a yönlendirir (Doc 15).
+class DailyLimitFailure extends Failure {
+  const DailyLimitFailure([super.message = 'Günlük ücretsiz soru hakkın doldu.']);
+}
+
 class UnknownFailure extends Failure {
   const UnknownFailure([super.message = 'Beklenmeyen bir hata oluştu.']);
 }

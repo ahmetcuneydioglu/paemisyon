@@ -84,6 +84,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       }
     } on NetworkFailure {
       await _queueOffline(selected, timeSpent); // çevrimdışı → kuyruğa al, ilerle
+    } on DailyLimitFailure catch (f) {
+      _showPaywall(f.message); // freemium limit → premium teklifi
     } on Failure catch (f) {
       _snack(f.message);
     } catch (_) {
@@ -91,6 +93,27 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
+  }
+
+  Future<void> _showPaywall(String message) async {
+    if (!mounted) return;
+    final go = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        icon: const Icon(Icons.workspace_premium_rounded),
+        title: const Text('Günlük hakkın doldu'),
+        content: Text(message),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: const Text('Sonra')),
+          FilledButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: const Text("Premium'a Geç")),
+        ],
+      ),
+    );
+    if (go == true && mounted) context.push('/paywall');
   }
 
   /// Çevrimdışıyken cevabı yerel kuyruğa alır ve ilerler (Doc 3 §5.1).

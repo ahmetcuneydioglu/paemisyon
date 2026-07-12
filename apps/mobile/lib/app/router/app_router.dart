@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../../features/auth/data/auth_repository.dart';
 import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/register_screen.dart';
+import '../../features/billing/presentation/paywall_screen.dart';
 import '../../features/catalog/presentation/courses_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
@@ -96,6 +97,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           builder: (context, state) => const ProgressScreen()),
       GoRoute(
           path: '/review', builder: (context, state) => const ReviewScreen()),
+      GoRoute(
+          path: '/paywall', builder: (context, state) => const PaywallScreen()),
       // Sonraki rotalar: /onboarding, /profile ... (Doc 11/12)
     ],
   );

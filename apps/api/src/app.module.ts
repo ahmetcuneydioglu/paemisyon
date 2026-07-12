@@ -4,6 +4,7 @@ import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { BillingModule } from './modules/billing/billing.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
 import { ProgressModule } from './modules/progress/progress.module';
@@ -23,8 +24,7 @@ import { UsersModule } from './modules/users/users.module';
     QuizModule,
     ProgressModule,
     ReviewModule,
-    // Feature modülleri (sprint sırasına göre eklenecek — Doc 13):
-    // SubscriptionModule...
+    BillingModule,
     HealthModule,
     UsersModule,
   ],
