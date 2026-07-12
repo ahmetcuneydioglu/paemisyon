@@ -13,6 +13,7 @@ const ACTION_TR: Record<string, string> = {
   'question.approve': 'Soruyu onayladı',
   'question.reject': 'Soruyu reddetti',
   'question.archive': 'Soruyu arşivledi',
+  'question.import': 'Toplu soru aktardı',
   'course.create': 'Ders oluşturdu',
   'course.update': 'Ders düzenledi',
   'course.delete': 'Ders sildi',
