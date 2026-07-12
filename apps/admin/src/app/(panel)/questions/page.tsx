@@ -39,12 +39,20 @@ export default function QuestionsPage() {
         title="Sorular"
         subtitle="Sürümlü soru bankası — düzenleme yayındakini bozmaz"
         action={
-          <Link
-            href="/questions/new"
-            className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700"
-          >
-            + Yeni Soru
-          </Link>
+          <div className="flex gap-2">
+            <Link
+              href="/questions/import"
+              className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50"
+            >
+              ⬆ İçe Aktar
+            </Link>
+            <Link
+              href="/questions/new"
+              className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700"
+            >
+              + Yeni Soru
+            </Link>
+          </div>
         }
       />
 

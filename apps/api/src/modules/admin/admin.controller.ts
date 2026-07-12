@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   Body,
   Controller,
   Delete,
@@ -8,8 +9,11 @@ import {
   Patch,
   Post,
   Query,
+  UploadedFile,
   UseGuards,
+  UseInterceptors,
 } from '@nestjs/common';
+import { FileInterceptor } from '@nestjs/platform-express';
 import type { ContentStatus } from '@prisma/client';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
@@ -135,6 +139,29 @@ export class AdminController {
     @Body() dto: UpsertQuestionDto,
   ) {
     return this.questions.update(actor, id, dto);
+  }
+
+  // Toplu içe aktarma (Doc 9 §4.4): CSV/XLSX → in_review kuyruğu. dryRun=1 önizleme.
+  @Post('questions/import')
+  @Roles('admin', 'editor')
+  @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 2 * 1024 * 1024 } }))
+  importQuestions(
+    @CurrentUser() actor: AuthenticatedUser,
+    @UploadedFile() file: Express.Multer.File | undefined,
+    @Query('topicId', ParseUUIDPipe) topicId: string,
+    @Query('dryRun') dryRun?: string,
+    @Query('skipErrors') skipErrors?: string,
+  ) {
+    if (!file?.buffer?.length) {
+      throw new BadRequestException('Dosya yüklenmedi (CSV veya XLSX bekleniyor).');
+    }
+    return this.questions.import(actor, {
+      topicId,
+      file: file.buffer,
+      filename: file.originalname ?? 'import.csv',
+      dryRun: dryRun === '1' || dryRun === 'true',
+      skipErrors: skipErrors === '1' || skipErrors === 'true',
+    });
   }
 
   @Post('questions/:id/submit')

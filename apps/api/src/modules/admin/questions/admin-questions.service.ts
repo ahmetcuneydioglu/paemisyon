@@ -4,6 +4,9 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertQuestionDto } from '../dto/upsert-question.dto';
+import { parseImportFile, type ParseReport } from './import-parser';
+
+const IMPORT_MAX_ROWS = 500;
 
 /**
  * Soru yönetimi + editoryal onay (Doc 9 §4 — panelin kalbi).
@@ -216,6 +219,71 @@ export class AdminQuestionsService {
     });
     await this.audit.log(actor, 'question.archive', 'question', id);
     return { archived: true };
+  }
+
+  // ── Toplu içe aktarma (Doc 9 §4.4) ──
+  // KURAL: içe aktarılan sorular ASLA doğrudan yayına çıkmaz — in_review kuyruğuna
+  // düşer (eski sistemin doğrudan-yayın hatası bilinçli olarak tekrarlanmaz).
+  async import(
+    actor: AuthenticatedUser,
+    params: { topicId: string; file: Buffer; filename: string; dryRun: boolean; skipErrors: boolean },
+  ): Promise<ParseReport & { imported: number; dryRun: boolean }> {
+    const topic = await this.prisma.topic.findFirst({
+      where: { id: params.topicId, deletedAt: null },
+    });
+    if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
+
+    const report = await parseImportFile(params.file, params.filename);
+    if (report.totalRows > IMPORT_MAX_ROWS) {
+      throw new BadRequestException(
+        `Dosya en fazla ${IMPORT_MAX_ROWS} satır içerebilir (${report.totalRows} bulundu). Dosyayı bölerek yükle.`,
+      );
+    }
+
+    if (params.dryRun) {
+      return { ...report, imported: 0, dryRun: true };
+    }
+    if (report.errors.length > 0 && !params.skipErrors) {
+      // Varsayılan: hata varsa HİÇBİR şey aktarılmaz (yarım aktarım + tekrar
+      // yüklemede mükerrer kayıt karmaşası olmasın). skipErrors bilinçli tercihtir.
+      return { ...report, imported: 0, dryRun: false };
+    }
+    if (report.valid.length === 0) {
+      return { ...report, imported: 0, dryRun: false };
+    }
+
+    await this.prisma.$transaction(async (tx) => {
+      for (const row of report.valid) {
+        const q = await tx.question.create({ data: { topicId: params.topicId } });
+        await tx.questionVersion.create({
+          data: {
+            questionId: q.id,
+            versionNo: 1,
+            stem: row.stem,
+            explanation: row.explanation,
+            difficulty: row.difficulty as Difficulty,
+            status: 'in_review', // onay kuyruğuna düşer — doğrudan yayın YOK
+            authoredBy: actor.id,
+            options: {
+              create: row.options.map((o, i) => ({
+                label: o.label,
+                text: o.text,
+                isCorrect: o.isCorrect,
+                sortOrder: i,
+              })),
+            },
+          },
+        });
+      }
+    });
+
+    await this.audit.log(actor, 'question.import', 'topic', params.topicId, {
+      filename: params.filename,
+      imported: report.valid.length,
+      errorCount: report.errors.length,
+      topicName: topic.name,
+    });
+    return { ...report, imported: report.valid.length, dryRun: false };
   }
 
   // ── Yardımcılar ──
