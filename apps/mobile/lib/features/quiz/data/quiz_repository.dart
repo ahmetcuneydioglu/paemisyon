@@ -10,14 +10,34 @@ class QuizRepository {
   final Dio _dio;
   const QuizRepository(this._dio);
 
-  Future<StartedSession> start(String mode, String topicId,
-      {int count = 10}) async {
+  /// Oturum başlat: konu (alıştırma/konu denemesi) VEYA ders (deneme sınavı).
+  Future<StartedSession> start({
+    required String mode,
+    String? topicId,
+    String? courseId,
+    int count = 10,
+  }) async {
     return _guard(() async {
       final r = await _dio.post<Map<String, dynamic>>(
         '/quiz/sessions',
-        data: {'mode': mode, 'topicId': topicId, 'questionCount': count},
+        data: {
+          'mode': mode,
+          if (topicId != null) 'topicId': topicId,
+          if (courseId != null) 'courseId': courseId,
+          'questionCount': count,
+        },
       );
       return StartedSession.fromJson(r.data!['data'] as Map<String, dynamic>);
+    });
+  }
+
+  /// Soru hata bildirimi — panelde kalite kuyruğuna düşer.
+  Future<void> reportQuestion(String questionId, String message) async {
+    return _guard(() async {
+      await _dio.post<Map<String, dynamic>>(
+        '/questions/$questionId/report',
+        data: {'message': message},
+      );
     });
   }
 
@@ -65,6 +85,9 @@ class QuizRepository {
       final msg = err?['message'] as String?;
       if (err?['code'] == 'DAILY_LIMIT_REACHED') {
         throw DailyLimitFailure(msg ?? 'Günlük ücretsiz soru hakkın doldu.');
+      }
+      if (err?['code'] == 'EXAM_TIME_OVER') {
+        throw ExamTimeOverFailure(msg ?? 'Sınav süresi doldu.');
       }
       throw ServerFailure(msg ?? 'Bir şeyler ters gitti, tekrar dene.');
     }

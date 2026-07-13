@@ -25,6 +25,7 @@ import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
 import { AuditService } from './audit.service';
+import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
 import { UpsertCourseDto, UpsertTopicDto } from './dto/catalog.dto';
 
@@ -42,6 +43,7 @@ export class AdminController {
     private readonly questions: AdminQuestionsService,
     private readonly users: AdminUsersService,
     private readonly audit: AuditService,
+    private readonly reports: ReportsService,
   ) {}
 
   // ── Dashboard ──
@@ -242,6 +244,29 @@ export class AdminController {
     @Body('validUntil') validUntil?: string,
   ) {
     return this.users.setPremium(actor, id, isPremium, validUntil);
+  }
+
+  // ── Soru hata bildirimleri (içerik işi → admin + editor) ──
+  @Get('reports')
+  @Roles('admin', 'editor')
+  listReports(
+    @Query('status') status?: 'open' | 'resolved' | 'dismissed',
+    @Query('page') page?: string,
+  ) {
+    return this.reports.adminList(status ?? 'open', page ? Number(page) : 1);
+  }
+
+  @Post('reports/:id/status')
+  @Roles('admin', 'editor')
+  setReportStatus(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body('status') status: 'resolved' | 'dismissed',
+  ) {
+    if (status !== 'resolved' && status !== 'dismissed') {
+      throw new BadRequestException("status 'resolved' veya 'dismissed' olmalı.");
+    }
+    return this.reports.setStatus(actor, id, status);
   }
 
   // ── Audit log (yalnızca admin) ──

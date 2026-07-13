@@ -109,6 +109,7 @@ model User {
   streak            Streak?
   bookmarks         Bookmark[]
   wrongAnswers      WrongAnswer[]
+  questionReports   QuestionReport[]
   preferredModule   Module?             @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
@@ -194,8 +195,9 @@ model Course {
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  module Module  @relation(fields: [moduleId], references: [id])
-  topics Topic[]
+  module       Module        @relation(fields: [moduleId], references: [id])
+  topics       Topic[]
+  quizSessions QuizSession[]
 
   @@index([moduleId])
   @@map("courses")
@@ -228,6 +230,7 @@ model Question {
   deletedAt        DateTime? @map("deleted_at")
 
   topic          Topic             @relation(fields: [topicId], references: [id])
+  reports        QuestionReport[]
   versions       QuestionVersion[] @relation("QuestionVersions")
   currentVersion QuestionVersion?  @relation("CurrentVersion", fields: [currentVersionId], references: [id])
 
@@ -363,6 +366,8 @@ model QuizSession {
   userId          String            @map("user_id") @db.Uuid
   mode            QuizMode
   topicId         String?           @map("topic_id") @db.Uuid
+  // Deneme sınavı kapsamı: ders geneli (konular karışık) — topicId yerine.
+  courseId        String?           @map("course_id") @db.Uuid
   status          QuizSessionStatus @default(in_progress)
   totalQuestions  Int               @map("total_questions")
   correctCount    Int               @default(0) @map("correct_count")
@@ -370,15 +375,44 @@ model QuizSession {
   blankCount      Int               @default(0) @map("blank_count")
   score           Decimal?          @db.Decimal(5, 2)
   durationSeconds Int?              @map("duration_seconds")
+  // Deneme sınavı süresi (sn) — exam modunda dolu; sunucu aşımı reddeder.
+  plannedDurationSeconds Int?       @map("planned_duration_seconds")
   startedAt       DateTime          @default(now()) @map("started_at")
   completedAt     DateTime?         @map("completed_at")
 
   user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   topic   Topic?       @relation(fields: [topicId], references: [id])
+  course  Course?      @relation(fields: [courseId], references: [id])
   answers QuizAnswer[]
 
   @@index([userId])
   @@map("quiz_sessions")
+}
+
+/// Kullanıcı soru hata bildirimi (eski sistemdeki question_reports'un sağlıklı hali).
+/// Panelde kuyruğa düşer; içerik kalite döngüsünün kullanıcı ayağı.
+model QuestionReport {
+  id         String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  questionId String       @map("question_id") @db.Uuid
+  userId     String       @map("user_id") @db.Uuid
+  message    String
+  status     ReportStatus @default(open)
+  resolvedBy String?      @map("resolved_by") @db.Uuid
+  createdAt  DateTime     @default(now()) @map("created_at")
+  resolvedAt DateTime?    @map("resolved_at")
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([questionId])
+  @@map("question_reports")
+}
+
+enum ReportStatus {
+  open
+  resolved
+  dismissed
 }
 
 model QuizAnswer {

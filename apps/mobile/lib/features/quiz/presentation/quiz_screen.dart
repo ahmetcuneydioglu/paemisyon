@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,20 +11,26 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/primary_button.dart';
+import '../../review/data/review_repository.dart';
 import '../data/quiz_repository.dart';
 import '../domain/quiz_models.dart';
 
-/// Tek quiz motoru (Doc 10 §2.5) — practice + exam modları.
-/// Değerlendirme sunucuda; exam'de doğru cevap istemciye hiç gelmez.
+/// Tek quiz motoru (Doc 10 §2.5) — alıştırma + deneme (süreli) modları.
+/// Değerlendirme sunucuda; deneme modunda doğru cevap istemciye hiç gelmez,
+/// süre de SUNUCUDA denetlenir (buradaki sayaç yalnızca gösterge).
 class QuizScreen extends ConsumerStatefulWidget {
-  final String topicId;
+  final String? topicId;
+  final String? courseId; // ders geneli deneme
   final String topicName;
   final String mode; // 'practice' | 'exam'
+  final int questionCount;
   const QuizScreen({
     super.key,
-    required this.topicId,
+    this.topicId,
+    this.courseId,
     required this.topicName,
     required this.mode,
+    this.questionCount = 10,
   });
 
   @override
@@ -38,6 +46,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   bool _busy = false;
   DateTime _qStart = DateTime.now();
 
+  // Deneme sayacı (gösterge — asıl denetim sunucuda).
+  Timer? _timer;
+  int _remainingSeconds = 0;
+
+  // Bu oturumda favorilenen sorular (yıldız durumu).
+  final Set<String> _bookmarked = {};
+
   bool get _isPractice => widget.mode == 'practice';
 
   @override
@@ -46,19 +61,44 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     _load();
   }
 
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
   Future<void> _load() async {
     setState(() => _loadError = null);
     try {
-      final s = await ref
-          .read(quizRepositoryProvider)
-          .start(widget.mode, widget.topicId);
+      final s = await ref.read(quizRepositoryProvider).start(
+            mode: widget.mode,
+            topicId: widget.topicId,
+            courseId: widget.courseId,
+            count: widget.questionCount,
+          );
       setState(() {
         _session = s;
         _qStart = DateTime.now();
       });
+      if (s.plannedDurationSeconds != null) {
+        _startTimer(s.plannedDurationSeconds!);
+      }
     } catch (e) {
       setState(() => _loadError = e);
     }
+  }
+
+  void _startTimer(int seconds) {
+    _remainingSeconds = seconds;
+    _timer = Timer.periodic(const Duration(seconds: 1), (t) {
+      if (!mounted) return;
+      setState(() => _remainingSeconds--);
+      if (_remainingSeconds <= 0) {
+        t.cancel();
+        _snack('Süre doldu — sınav sonlandırılıyor.');
+        _finish();
+      }
+    });
   }
 
   QuizQuestion get _q => _session!.questions[_index];
@@ -80,10 +120,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       if (_isPractice) {
         setState(() => _feedback = fb); // geri bildirimi göster
       } else {
-        await _advance(); // exam: geri bildirim yok, ilerle
+        await _advance(); // deneme: geri bildirim yok, ilerle
       }
     } on NetworkFailure {
       await _queueOffline(selected, timeSpent); // çevrimdışı → kuyruğa al, ilerle
+    } on ExamTimeOverFailure {
+      _snack('Sınav süresi doldu — kalan sorular boş sayılır.');
+      await _finish();
     } on DailyLimitFailure catch (f) {
       _showPaywall(f.message); // freemium limit → premium teklifi
     } on Failure catch (f) {
@@ -93,6 +136,22 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
+  }
+
+  /// Çevrimdışıyken cevabı yerel kuyruğa alır ve ilerler (Doc 3 §5.1).
+  Future<void> _queueOffline(String? selected, int timeSpent) async {
+    final queue = ref.read(answerQueueProvider);
+    await queue.enqueue(QueuedAnswer(
+      sessionId: _session!.sessionId,
+      questionId: _q.questionId,
+      versionId: _q.versionId,
+      selectedOptionId: selected,
+      timeSpentMs: timeSpent,
+      createdAt: DateTime.now().millisecondsSinceEpoch,
+    ));
+    ref.read(pendingAnswerCountProvider.notifier).state = await queue.count();
+    _snack('Çevrimdışısın — cevabın kaydedildi, bağlantı gelince gönderilecek.');
+    await _advance();
   }
 
   Future<void> _showPaywall(String message) async {
@@ -116,23 +175,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     if (go == true && mounted) context.push('/paywall');
   }
 
-  /// Çevrimdışıyken cevabı yerel kuyruğa alır ve ilerler (Doc 3 §5.1).
-  /// Bağlantı gelince otomatik senkronlanır; practice'te açıklama gösterilmez.
-  Future<void> _queueOffline(String? selected, int timeSpent) async {
-    final queue = ref.read(answerQueueProvider);
-    await queue.enqueue(QueuedAnswer(
-      sessionId: _session!.sessionId,
-      questionId: _q.questionId,
-      versionId: _q.versionId,
-      selectedOptionId: selected,
-      timeSpentMs: timeSpent,
-      createdAt: DateTime.now().millisecondsSinceEpoch,
-    ));
-    ref.read(pendingAnswerCountProvider.notifier).state = await queue.count();
-    _snack('Çevrimdışısın — cevabın kaydedildi, bağlantı gelince gönderilecek.');
-    await _advance();
-  }
-
   Future<void> _advance() async {
     if (_isLast) {
       await _finish();
@@ -147,6 +189,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   }
 
   Future<void> _finish() async {
+    if (_busy && _timer == null) return;
+    _timer?.cancel();
+    _timer = null;
     setState(() => _busy = true);
     try {
       // Çevrimdışıyken biriken cevaplar varsa önce onları gönder — skor doğru olsun.
@@ -164,10 +209,72 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
+  // ── Favori (yıldız) ──
+  Future<void> _toggleBookmark() async {
+    final id = _q.questionId;
+    final wasBookmarked = _bookmarked.contains(id);
+    setState(() {
+      wasBookmarked ? _bookmarked.remove(id) : _bookmarked.add(id);
+    });
+    try {
+      final repo = ref.read(reviewRepositoryProvider);
+      wasBookmarked ? await repo.removeBookmark(id) : await repo.addBookmark(id);
+    } catch (_) {
+      // Geri al + bilgilendir.
+      setState(() {
+        wasBookmarked ? _bookmarked.add(id) : _bookmarked.remove(id);
+      });
+      _snack('Favori kaydedilemedi, tekrar dene.');
+    }
+  }
+
+  // ── Hata bildir ──
+  Future<void> _reportQuestion() async {
+    final controller = TextEditingController();
+    final message = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Soru hatası bildir'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          maxLines: 3,
+          maxLength: 500,
+          decoration: const InputDecoration(
+            hintText: 'Sorun ne? (örn. cevap anahtarı hatalı, yazım hatası…)',
+          ),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx), child: const Text('Vazgeç')),
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+            child: const Text('Gönder'),
+          ),
+        ],
+      ),
+    );
+    if (message == null || message.length < 5) return;
+    try {
+      await ref
+          .read(quizRepositoryProvider)
+          .reportQuestion(_q.questionId, message);
+      _snack('Teşekkürler! Bildirimin editör ekibine iletildi. 🙏');
+    } on Failure catch (f) {
+      _snack(f.message);
+    }
+  }
+
   void _snack(String m) {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(m)));
     }
+  }
+
+  String get _timerText {
+    final m = (_remainingSeconds ~/ 60).toString().padLeft(2, '0');
+    final s = (_remainingSeconds % 60).toString().padLeft(2, '0');
+    return '$m:$s';
   }
 
   @override
@@ -205,6 +312,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
 
     final total = _session!.questions.length;
+    final timerLow = _remainingSeconds > 0 && _remainingSeconds <= 60;
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -213,8 +321,42 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         title: LinearProgressIndicator(value: (_index + 1) / total),
         centerTitle: false,
         actions: [
+          if (_timer != null)
+            Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpacing.sm, vertical: 4),
+                decoration: BoxDecoration(
+                  color: timerLow
+                      ? Theme.of(context).colorScheme.errorContainer
+                      : Theme.of(context).colorScheme.surfaceContainerHighest,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  '⏱ $_timerText',
+                  style: TextStyle(
+                    fontFeatures: const [FontFeature.tabularFigures()],
+                    color: timerLow
+                        ? Theme.of(context).colorScheme.onErrorContainer
+                        : null,
+                  ),
+                ),
+              ),
+            ),
+          IconButton(
+            tooltip: 'Favorilere ekle',
+            icon: Icon(_bookmarked.contains(_q.questionId)
+                ? Icons.star_rounded
+                : Icons.star_border_rounded),
+            onPressed: _toggleBookmark,
+          ),
+          IconButton(
+            tooltip: 'Hata bildir',
+            icon: const Icon(Icons.flag_outlined),
+            onPressed: _reportQuestion,
+          ),
           Padding(
-            padding: const EdgeInsets.only(right: AppSpacing.md),
+            padding: const EdgeInsets.only(right: AppSpacing.sm),
             child: Center(child: Text('${_index + 1}/$total')),
           ),
         ],

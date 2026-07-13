@@ -41,17 +41,40 @@ class QuizQuestion {
 class StartedSession {
   final String sessionId;
   final String mode;
+
+  /// Deneme sınavı süresi (sn) — exam modunda dolu; sayaç bundan çalışır.
+  final int? plannedDurationSeconds;
   final List<QuizQuestion> questions;
 
-  const StartedSession(
-      {required this.sessionId, required this.mode, required this.questions});
+  const StartedSession({
+    required this.sessionId,
+    required this.mode,
+    this.plannedDurationSeconds,
+    required this.questions,
+  });
 
   factory StartedSession.fromJson(Map<String, dynamic> j) => StartedSession(
         sessionId: j['sessionId'] as String,
         mode: j['mode'] as String,
+        plannedDurationSeconds: j['plannedDurationSeconds'] as int?,
         questions: (j['questions'] as List<dynamic>)
             .map((e) => QuizQuestion.fromJson(e as Map<String, dynamic>))
             .toList(),
+      );
+}
+
+/// Deneme karnesinde konu bazlı kırılım satırı.
+class TopicScore {
+  final String topicName;
+  final int correct;
+  final int total;
+  const TopicScore(
+      {required this.topicName, required this.correct, required this.total});
+
+  factory TopicScore.fromJson(Map<String, dynamic> j) => TopicScore(
+        topicName: j['topicName'] as String,
+        correct: j['correct'] as int,
+        total: j['total'] as int,
       );
 }
 
@@ -84,6 +107,10 @@ class QuizResult {
   final int blankCount;
   final double score;
   final int durationSeconds;
+  final String? mode;
+
+  /// Ders denemesinde konu bazlı karne (null = konu oturumu).
+  final List<TopicScore>? topicBreakdown;
 
   const QuizResult({
     required this.totalQuestions,
@@ -92,6 +119,8 @@ class QuizResult {
     required this.blankCount,
     required this.score,
     required this.durationSeconds,
+    this.mode,
+    this.topicBreakdown,
   });
 
   factory QuizResult.fromJson(Map<String, dynamic> j) => QuizResult(
@@ -101,5 +130,9 @@ class QuizResult {
         blankCount: j['blankCount'] as int,
         score: (j['score'] as num).toDouble(),
         durationSeconds: j['durationSeconds'] as int,
+        mode: j['mode'] as String?,
+        topicBreakdown: (j['topicBreakdown'] as List<dynamic>?)
+            ?.map((e) => TopicScore.fromJson(e as Map<String, dynamic>))
+            .toList(),
       );
 }

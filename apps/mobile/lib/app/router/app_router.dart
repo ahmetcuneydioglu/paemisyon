@@ -83,9 +83,11 @@ final appRouterProvider = Provider<GoRouter>((ref) {
         builder: (context, state) {
           final args = state.extra as Map<String, dynamic>;
           return QuizScreen(
-            topicId: args['topicId'] as String,
+            topicId: args['topicId'] as String?,
+            courseId: args['courseId'] as String?,
             topicName: args['topicName'] as String,
             mode: args['mode'] as String,
+            questionCount: args['count'] as int? ?? 10,
           );
         },
       ),

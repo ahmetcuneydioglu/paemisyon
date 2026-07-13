@@ -19,6 +19,11 @@ class DailyLimitFailure extends Failure {
   const DailyLimitFailure([super.message = 'Günlük ücretsiz soru hakkın doldu.']);
 }
 
+/// Deneme sınavı süresi doldu (backend: EXAM_TIME_OVER) → oturum otomatik biter.
+class ExamTimeOverFailure extends Failure {
+  const ExamTimeOverFailure([super.message = 'Sınav süresi doldu.']);
+}
+
 class UnknownFailure extends Failure {
   const UnknownFailure([super.message = 'Beklenmeyen bir hata oluştu.']);
 }

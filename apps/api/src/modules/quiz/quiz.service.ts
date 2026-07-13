@@ -17,15 +17,62 @@ export class QuizService {
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
+  /** Sınav süresi: soru başına 75 sn (polis sınavı temposu). */
+  private static readonly EXAM_SECONDS_PER_QUESTION = 75;
+  /** Süre aşımı toleransı (ağ gecikmesi için). */
+  private static readonly EXAM_GRACE_SECONDS = 30;
+
   async startSession(userId: string, dto: StartSessionDto) {
     const count = dto.questionCount ?? 10;
 
+    // Kapsam: tam olarak biri — konu VEYA ders (ders = deneme sınavı).
+    if ((dto.topicId == null) === (dto.courseId == null)) {
+      throw new BadRequestException('topicId veya courseId alanlarından tam olarak biri verilmeli.');
+    }
+    if (dto.courseId != null && dto.mode !== 'exam') {
+      throw new BadRequestException('Ders geneli oturum yalnızca deneme (exam) modunda başlatılabilir.');
+    }
+
+    // Premium kapısı SUNUCUDA (Doc 8): premium konuya erişim entitlement ister.
+    const entitlement = await this.prisma.entitlement.findUnique({ where: { userId } });
+    const isPremiumUser = isEntitlementActive(entitlement);
+
+    let poolWhere;
+    if (dto.topicId != null) {
+      const topic = await this.prisma.topic.findFirst({
+        where: { id: dto.topicId, deletedAt: null },
+        select: { isPremium: true },
+      });
+      if (!topic) throw new NotFoundException('Konu bulunamadı.');
+      if (topic.isPremium && !isPremiumUser) {
+        throw new ForbiddenException({
+          code: 'PREMIUM_REQUIRED',
+          message: 'Bu konu premium içeriktir.',
+        });
+      }
+      poolWhere = { topicId: dto.topicId, deletedAt: null, currentVersionId: { not: null } };
+    } else {
+      // Ders denemesi: dersin konularından karışık havuz; free kullanıcıya
+      // premium konuların soruları dahil edilmez (sızdırma yok).
+      poolWhere = {
+        deletedAt: null,
+        currentVersionId: { not: null },
+        topic: {
+          courseId: dto.courseId!,
+          deletedAt: null,
+          ...(isPremiumUser ? {} : { isPremium: false }),
+        },
+      };
+    }
+
     const pool = await this.prisma.question.findMany({
-      where: { topicId: dto.topicId, deletedAt: null, currentVersionId: { not: null } },
+      where: poolWhere,
       select: { id: true, currentVersionId: true },
     });
     if (pool.length === 0) {
-      throw new NotFoundException('Bu konuda yayında soru yok.');
+      throw new NotFoundException(
+        dto.topicId != null ? 'Bu konuda yayında soru yok.' : 'Bu derste yayında soru yok.',
+      );
     }
 
     const chosen = this.shuffle(pool).slice(0, count);
@@ -44,8 +91,19 @@ export class QuizService {
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
 
+    // Deneme sınavında planlı süre — sunucu aşımı reddeder (submitAnswer).
+    const plannedDurationSeconds =
+      dto.mode === 'exam' ? chosen.length * QuizService.EXAM_SECONDS_PER_QUESTION : null;
+
     const session = await this.prisma.quizSession.create({
-      data: { userId, mode: dto.mode, topicId: dto.topicId, totalQuestions: chosen.length },
+      data: {
+        userId,
+        mode: dto.mode,
+        topicId: dto.topicId ?? null,
+        courseId: dto.courseId ?? null,
+        totalQuestions: chosen.length,
+        plannedDurationSeconds,
+      },
     });
 
     const questions = chosen.map((q) => {
@@ -59,7 +117,12 @@ export class QuizService {
       };
     });
 
-    return { sessionId: session.id, mode: session.mode, questions };
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      plannedDurationSeconds,
+      questions,
+    };
   }
 
   /** Tek cevap gönder (idempotent). Sunucu değerlendirir; freemium limiti sunucuda. */
@@ -68,6 +131,18 @@ export class QuizService {
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
     if (session.status !== 'in_progress') {
       throw new BadRequestException('Oturum tamamlanmış.');
+    }
+    // Deneme sınavında süre SUNUCUDA denetlenir — istemci saati manipüle edilemez.
+    if (session.plannedDurationSeconds != null) {
+      const deadline =
+        session.startedAt.getTime() +
+        (session.plannedDurationSeconds + QuizService.EXAM_GRACE_SECONDS) * 1000;
+      if (Date.now() > deadline) {
+        throw new ForbiddenException({
+          code: 'EXAM_TIME_OVER',
+          message: 'Sınav süresi doldu. Kalan sorular boş sayılır.',
+        });
+      }
     }
 
     const existing = await this.prisma.quizAnswer.findUnique({
@@ -166,14 +241,39 @@ export class QuizService {
       })),
     });
 
+    // Ders denemesi karnesi: konu bazında doğru/toplam kırılımı (Doc 12 §7).
+    let topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null =
+      null;
+    if (session.courseId != null && session.answers.length > 0) {
+      const qids = session.answers.map((a) => a.questionId);
+      const qTopics = await this.prisma.question.findMany({
+        where: { id: { in: qids } },
+        select: { id: true, topic: { select: { id: true, name: true } } },
+      });
+      const topicOf = new Map(qTopics.map((q) => [q.id, q.topic]));
+      const acc = new Map<string, { topicId: string; topicName: string; correct: number; total: number }>();
+      for (const a of session.answers) {
+        const t = topicOf.get(a.questionId);
+        if (!t) continue;
+        const cur = acc.get(t.id) ?? { topicId: t.id, topicName: t.name, correct: 0, total: 0 };
+        cur.total++;
+        if (a.isCorrect === true) cur.correct++;
+        acc.set(t.id, cur);
+      }
+      topicBreakdown = [...acc.values()].sort((a, b) => b.total - a.total);
+    }
+
     return {
       sessionId,
+      mode: session.mode,
       totalQuestions: session.totalQuestions,
       correctCount,
       wrongCount,
       blankCount,
       score: Math.round(score * 100) / 100,
       durationSeconds,
+      plannedDurationSeconds: session.plannedDurationSeconds,
+      topicBreakdown,
     };
   }
 

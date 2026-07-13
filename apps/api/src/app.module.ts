@@ -10,6 +10,7 @@ import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
 import { ProgressModule } from './modules/progress/progress.module';
 import { QuizModule } from './modules/quiz/quiz.module';
+import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
 import { UsersModule } from './modules/users/users.module';
 
@@ -25,6 +26,7 @@ import { UsersModule } from './modules/users/users.module';
     QuizModule,
     ProgressModule,
     ReviewModule,
+    ReportsModule,
     BillingModule,
     AdminModule,
     HealthModule,

@@ -67,7 +67,45 @@ class ResultScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodySmall,
               ),
-              const Spacer(),
+              // ── Deneme karnesi: konu bazlı kırılım (ders denemesinde) ──
+              if (result.topicBreakdown != null &&
+                  result.topicBreakdown!.isNotEmpty) ...[
+                const SizedBox(height: AppSpacing.md),
+                Expanded(
+                  child: Card(
+                    child: ListView(
+                      padding: const EdgeInsets.all(AppSpacing.sm),
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(AppSpacing.sm),
+                          child: Text('Konu Karnesi',
+                              style: Theme.of(context).textTheme.titleSmall),
+                        ),
+                        ...result.topicBreakdown!.map(
+                          (t) => ListTile(
+                            dense: true,
+                            title: Text(t.topicName,
+                                maxLines: 1, overflow: TextOverflow.ellipsis),
+                            trailing: Text(
+                              '${t.correct}/${t.total}',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: t.correct == t.total
+                                    ? scheme.primary
+                                    : t.correct * 2 >= t.total
+                                        ? null
+                                        : scheme.error,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.md),
+              ] else
+                const Spacer(),
               PrimaryButton(
                   label: 'Ana sayfaya dön', onPressed: () => context.go('/')),
             ],

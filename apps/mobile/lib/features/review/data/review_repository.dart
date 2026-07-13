@@ -27,6 +27,14 @@ class ReviewRepository {
   Future<List<ReviewItem>> getWrongAnswers() => _list('/review/wrong-answers');
   Future<List<ReviewItem>> getBookmarks() => _list('/review/bookmarks');
 
+  Future<void> addBookmark(String questionId) async {
+    await _dio.post<Map<String, dynamic>>('/review/bookmarks/$questionId');
+  }
+
+  Future<void> removeBookmark(String questionId) async {
+    await _dio.delete<Map<String, dynamic>>('/review/bookmarks/$questionId');
+  }
+
   Future<List<ReviewItem>> _list(String path) async {
     try {
       final r = await _dio.get<Map<String, dynamic>>(path);
