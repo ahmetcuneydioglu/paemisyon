@@ -14,7 +14,7 @@ export class QuizController {
 
   @Post('sessions')
   start(@CurrentUser() user: AuthenticatedUser, @Body() dto: StartSessionDto) {
-    return this.quiz.startSession(user.id, dto);
+    return this.quiz.startSession(user, dto);
   }
 
   @Post('sessions/:id/answers')
@@ -23,7 +23,7 @@ export class QuizController {
     @Param('id', ParseUUIDPipe) id: string,
     @Body() dto: SubmitAnswerDto,
   ) {
-    return this.quiz.submitAnswer(user.id, id, dto);
+    return this.quiz.submitAnswer(user, id, dto);
   }
 
   @Post('sessions/:id/complete')

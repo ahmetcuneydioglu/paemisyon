@@ -3,6 +3,7 @@ import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
+import { UserSyncService } from '../../auth/user-sync.service';
 
 /**
  * Kullanıcı yönetimi (Doc 9 §5). Parola YOK (Supabase Auth'ta). Admin yalnızca:
@@ -13,6 +14,7 @@ export class AdminUsersService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly userSync: UserSyncService,
   ) {}
 
   async list(params: { search?: string; page?: number; pageSize?: number }) {
@@ -100,6 +102,7 @@ export class AdminUsersService {
     const u = await this.prisma.user.findFirst({ where: { id, deletedAt: null } });
     if (!u) throw new NotFoundException('Kullanıcı bulunamadı.');
     await this.prisma.user.update({ where: { id }, data: { status } });
+    this.userSync.invalidate(id); // guard cache — anında yansısın
     await this.audit.log(actor, `user.${status === 'suspended' ? 'suspend' : 'activate'}`, 'user', id, {
       email: u.email,
     });
@@ -120,6 +123,7 @@ export class AdminUsersService {
       update: { isPremium, validUntil: isPremium ? until : null, sourceSubscriptionId: null },
       create: { userId: id, isPremium, validUntil: isPremium ? until : null },
     });
+    this.userSync.invalidate(id); // guard cache — anında yansısın
     await this.audit.log(actor, isPremium ? 'user.grant_premium' : 'user.revoke_premium', 'user', id, {
       email: u.email,
       validUntil: until?.toISOString() ?? null,

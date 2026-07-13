@@ -1,13 +1,17 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { UserSyncService } from '../auth/user-sync.service';
 
 /**
  * Kullanıcı işlemleri: onboarding tamamlama + KVKK hesap silme (Doc 11, Doc 13 S7).
  */
 @Injectable()
 export class UsersService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly userSync: UserSyncService,
+  ) {}
 
   /** Onboarding: hedef sınav seç + tamamlandı işaretle (idempotent). */
   async completeOnboarding(userId: string, moduleId: string) {
@@ -55,6 +59,8 @@ export class UsersService {
       where: { userId: user.id },
       data: { isPremium: false, validUntil: null, sourceSubscriptionId: null },
     });
+
+    this.userSync.invalidate(user.id); // guard cache — silme anında yansısın
 
     // Supabase Auth tarafındaki kimliği sil (varsa service_role anahtarı).
     const supabaseUrl = process.env.SUPABASE_URL;

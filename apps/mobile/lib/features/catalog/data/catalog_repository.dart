@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -39,16 +41,27 @@ final catalogRepositoryProvider = Provider<CatalogRepository>(
   (ref) => CatalogRepository(ref.watch(dioProvider)),
 );
 
-final modulesProvider = FutureProvider.autoDispose<List<ModuleItem>>(
-  (ref) => ref.watch(catalogRepositoryProvider).getModules(),
-);
+/// Katalog nadiren değişir → 5 dk bellekte tut. Ekranlar arası gezinme
+/// yeniden istek atmaz (algılanan hız); süre dolunca kendiliğinden tazelenir.
+void _cacheFor(Ref ref, Duration duration) {
+  final link = ref.keepAlive();
+  final timer = Timer(duration, link.close);
+  ref.onDispose(timer.cancel);
+}
+
+final modulesProvider = FutureProvider.autoDispose<List<ModuleItem>>((ref) {
+  _cacheFor(ref, const Duration(minutes: 5));
+  return ref.watch(catalogRepositoryProvider).getModules();
+});
 
 final coursesProvider =
-    FutureProvider.autoDispose.family<List<CourseItem>, String>(
-  (ref, moduleId) => ref.watch(catalogRepositoryProvider).getCourses(moduleId),
-);
+    FutureProvider.autoDispose.family<List<CourseItem>, String>((ref, moduleId) {
+  _cacheFor(ref, const Duration(minutes: 5));
+  return ref.watch(catalogRepositoryProvider).getCourses(moduleId);
+});
 
 final topicsProvider =
-    FutureProvider.autoDispose.family<List<TopicItem>, String>(
-  (ref, courseId) => ref.watch(catalogRepositoryProvider).getTopics(courseId),
-);
+    FutureProvider.autoDispose.family<List<TopicItem>, String>((ref, courseId) {
+  _cacheFor(ref, const Duration(minutes: 5));
+  return ref.watch(catalogRepositoryProvider).getTopics(courseId);
+});

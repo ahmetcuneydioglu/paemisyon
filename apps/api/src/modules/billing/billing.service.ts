@@ -1,6 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { AppleVerifier } from './apple-verifier.service';
+import { UserSyncService } from '../auth/user-sync.service';
 
 /**
  * Abonelik doğrulama + entitlement (Doc 15). İstemci StoreKit'ten imzalı işlemi gönderir;
@@ -12,6 +13,7 @@ export class BillingService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly apple: AppleVerifier,
+    private readonly userSync: UserSyncService,
   ) {}
 
   /** Paywall için satın alınabilir planlar (ücretsiz hariç). */
@@ -93,6 +95,7 @@ export class BillingService {
       },
     });
 
+    this.userSync.invalidate(userId); // guard cache — premium anında yansısın
     return {
       isPremium: active,
       validUntil: tx.expiresDate,

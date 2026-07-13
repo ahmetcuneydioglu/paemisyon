@@ -13,10 +13,29 @@ import type { AuthenticatedUser } from './auth.types';
 export class UserSyncService {
   constructor(private readonly prisma: PrismaService) {}
 
+  /**
+   * Kısa ömürlü bellek önbelleği: her istekte DB'ye gitmemek için (Frankfurt
+   * RTT ~50ms × ilişki başına sorgu). Rol/premium/durum değişiklikleri en geç
+   * TTL kadar gecikir; kritik yollar (askıya alma, KVKK silme, premium) cache'i
+   * anında düşürür (invalidate).
+   */
+  private static readonly CACHE_TTL_MS = 60_000;
+  private readonly cache = new Map<string, { user: AuthenticatedUser; expiresAt: number }>();
+
+  /** Kullanıcıyla ilgili yetki verisi değiştiğinde çağır (anında yansısın). */
+  invalidate(userId: string) {
+    this.cache.delete(userId);
+  }
+
   async ensureUser(claims: JWTPayload): Promise<AuthenticatedUser> {
     const id = claims.sub;
     if (!id) {
       throw new Error('Token "sub" (kullanıcı id) içermiyor.');
+    }
+
+    const cached = this.cache.get(id);
+    if (cached && cached.expiresAt > Date.now()) {
+      return cached.user;
     }
 
     // HIZLI YOL (yaygın durum): mevcut, rolü+entitlement'ı olan kullanıcı → TEK sorgu.
@@ -26,12 +45,14 @@ export class UserSyncService {
     });
     if (existing) this.enforceStatus(existing.status);
     if (existing && existing.roles.length > 0 && existing.entitlement) {
-      return {
+      const user: AuthenticatedUser = {
         id,
         email: existing.email,
         roles: existing.roles.map((r) => r.role.key),
         isPremium: isEntitlementActive(existing.entitlement),
       };
+      this.cache.set(id, { user, expiresAt: Date.now() + UserSyncService.CACHE_TTL_MS });
+      return user;
     }
 
     // YAVAŞ YOL (ilk giriş / eksik backfill): oluştur + rol + entitlement.

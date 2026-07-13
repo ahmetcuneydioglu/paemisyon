@@ -1,7 +1,7 @@
 import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { ProgressService } from '../progress/progress.service';
-import { isEntitlementActive } from '../billing/entitlement.util';
+import type { AuthenticatedUser } from '../auth/auth.types';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 
@@ -22,7 +22,8 @@ export class QuizService {
   /** Süre aşımı toleransı (ağ gecikmesi için). */
   private static readonly EXAM_GRACE_SECONDS = 30;
 
-  async startSession(userId: string, dto: StartSessionDto) {
+  async startSession(user: AuthenticatedUser, dto: StartSessionDto) {
+    const userId = user.id;
     const count = dto.questionCount ?? 10;
 
     // Kapsam: tam olarak biri — konu VEYA ders (ders = deneme sınavı).
@@ -33,9 +34,8 @@ export class QuizService {
       throw new BadRequestException('Ders geneli oturum yalnızca deneme (exam) modunda başlatılabilir.');
     }
 
-    // Premium kapısı SUNUCUDA (Doc 8): premium konuya erişim entitlement ister.
-    const entitlement = await this.prisma.entitlement.findUnique({ where: { userId } });
-    const isPremiumUser = isEntitlementActive(entitlement);
+    // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
+    const isPremiumUser = user.isPremium;
 
     let poolWhere;
     if (dto.topicId != null) {
@@ -126,8 +126,19 @@ export class QuizService {
   }
 
   /** Tek cevap gönder (idempotent). Sunucu değerlendirir; freemium limiti sunucuda. */
-  async submitAnswer(userId: string, sessionId: string, dto: SubmitAnswerDto) {
-    const session = await this.prisma.quizSession.findFirst({ where: { id: sessionId, userId } });
+  async submitAnswer(user: AuthenticatedUser, sessionId: string, dto: SubmitAnswerDto) {
+    const userId = user.id;
+    // Bağımsız üç okuma tek gidiş-dönüşte (Frankfurt RTT ~50ms — sayı önemli).
+    const [session, existing, correct] = await Promise.all([
+      this.prisma.quizSession.findFirst({ where: { id: sessionId, userId } }),
+      this.prisma.quizAnswer.findUnique({
+        where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
+      }),
+      this.prisma.questionOption.findFirst({
+        where: { questionVersionId: dto.questionVersionId, isCorrect: true },
+        select: { id: true },
+      }),
+    ]);
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
     if (session.status !== 'in_progress') {
       throw new BadRequestException('Oturum tamamlanmış.');
@@ -145,19 +156,10 @@ export class QuizService {
       }
     }
 
-    const existing = await this.prisma.quizAnswer.findUnique({
-      where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
-    });
     // Yeni soru → freemium günlük limit (re-answer sayılmaz).
     if (!existing) {
-      await this.enforceDailyLimit(userId);
+      await this.enforceDailyLimit(user);
     }
-
-    // Doğru cevabı SUNUCUDA bul.
-    const correct = await this.prisma.questionOption.findFirst({
-      where: { questionVersionId: dto.questionVersionId, isCorrect: true },
-      select: { id: true },
-    });
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
 
     await this.prisma.quizAnswer.upsert({
@@ -293,33 +295,40 @@ export class QuizService {
     return session;
   }
 
-  private async enforceDailyLimit(userId: string) {
-    const entitlement = await this.prisma.entitlement.findUnique({ where: { userId } });
-    if (isEntitlementActive(entitlement)) return; // premium (süresi geçerli) = sınırsız
+  /** Ücretsiz plan limiti — 60 sn bellek önbelleği (admin değişikliği ≤60 sn'de yansır). */
+  private planLimitCache: { limit: number; expiresAt: number } | null = null;
 
+  private async freeDailyLimit(): Promise<number> {
+    if (this.planLimitCache && this.planLimitCache.expiresAt > Date.now()) {
+      return this.planLimitCache.limit;
+    }
     const freePlan = await this.prisma.plan.findUnique({ where: { key: 'free' } });
     const limit = freePlan?.dailyQuestionLimit ?? 15;
+    this.planLimitCache = { limit, expiresAt: Date.now() + 60_000 };
+    return limit;
+  }
 
+  private async enforceDailyLimit(user: AuthenticatedUser) {
+    if (user.isPremium) return; // guard hesapladı — sınırsız
+
+    const limit = await this.freeDailyLimit(); // çoğunlukla bellek, 0 sorgu
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
 
-    const usage = await this.prisma.dailyUsage.upsert({
-      where: { userId_usageDate: { userId, usageDate: today } },
-      update: {},
-      create: { userId, usageDate: today, questionsAnswered: 0, dailyLimit: limit },
-    });
-
-    if (usage.questionsAnswered >= limit) {
+    // TEK atomik sorgu: satır yoksa aç, limiti aşmadıysa artır; aşıldıysa satır dönmez.
+    const rows = await this.prisma.$queryRaw<{ questions_answered: number }[]>`
+      INSERT INTO daily_usage (user_id, usage_date, questions_answered, daily_limit)
+      VALUES (${user.id}::uuid, ${today}::date, 1, ${limit})
+      ON CONFLICT (user_id, usage_date) DO UPDATE
+        SET questions_answered = daily_usage.questions_answered + 1
+        WHERE daily_usage.questions_answered < ${limit}
+      RETURNING questions_answered`;
+    if (rows.length === 0) {
       throw new ForbiddenException({
         code: 'DAILY_LIMIT_REACHED',
         message: `Bugünkü ücretsiz soru hakkın (${limit}) doldu. Sınırsız için Premium'a geç.`,
       });
     }
-
-    await this.prisma.dailyUsage.update({
-      where: { userId_usageDate: { userId, usageDate: today } },
-      data: { questionsAnswered: { increment: 1 } },
-    });
   }
 
   private shuffle<T>(arr: T[]): T[] {
