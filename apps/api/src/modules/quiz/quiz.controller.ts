@@ -31,6 +31,12 @@ export class QuizController {
     return this.quiz.completeSession(user.id, id);
   }
 
+  /// Günün sorusu durumu — Home kartı.
+  @Get('daily/status')
+  dailyStatus(@CurrentUser() user: AuthenticatedUser) {
+    return this.quiz.getDailyStatus(user.id);
+  }
+
   @Get('sessions/:id')
   get(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
     return this.quiz.getSession(user.id, id);

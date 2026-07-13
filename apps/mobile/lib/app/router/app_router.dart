@@ -14,6 +14,7 @@ import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
 import '../../features/me/presentation/profile_screen.dart';
+import '../../features/progress/presentation/leaderboard_screen.dart';
 import '../../features/progress/presentation/progress_screen.dart';
 import '../../features/quiz/domain/quiz_models.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
@@ -99,6 +100,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
           path: '/progress',
           builder: (context, state) => const ProgressScreen()),
+      GoRoute(
+          path: '/leaderboard',
+          builder: (context, state) => const LeaderboardScreen()),
       GoRoute(
           path: '/review', builder: (context, state) => const ReviewScreen()),
       GoRoute(

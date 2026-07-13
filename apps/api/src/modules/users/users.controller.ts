@@ -57,7 +57,7 @@ export class UsersController {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
 
-    const [profile, stats, streak, usage, freePlan] = await Promise.all([
+    const [profile, stats, streak, usage, freePlan, dailySession] = await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
         select: {
@@ -72,6 +72,11 @@ export class UsersController {
         where: { userId_usageDate: { userId: user.id, usageDate: today } },
       }),
       this.prisma.plan.findUnique({ where: { key: 'free' } }),
+      this.prisma.quizSession.findFirst({
+        where: { userId: user.id, mode: 'daily', startedAt: { gte: today } },
+        orderBy: { startedAt: 'desc' },
+        select: { status: true },
+      }),
     ]);
 
     const accuracy =
@@ -93,6 +98,7 @@ export class UsersController {
         // premium'da limit yok (null) — UI sınırsız gösterir.
         dailyLimit: user.isPremium ? null : (freePlan?.dailyQuestionLimit ?? 15),
       },
+      daily: { playedToday: dailySession?.status === 'completed' },
       stats: {
         totalSolved: stats?.totalSolved ?? 0,
         totalSessions: stats?.totalSessions ?? 0,

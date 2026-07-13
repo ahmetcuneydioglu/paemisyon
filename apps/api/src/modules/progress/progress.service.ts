@@ -103,6 +103,56 @@ export class ProgressService {
     });
   }
 
+  /**
+   * Liderlik tablosu (Doc 13 V1 — moral bozmayan tasarim Doc 12):
+   * puan = donem icinde tamamlanan oturumlardaki toplam dogru sayisi.
+   * Ilk 20 + kullanicinin kendi sirasi (listede olmasa da) doner.
+   */
+  async getLeaderboard(userId: string, period: 'daily' | 'monthly') {
+    const from = new Date();
+    from.setUTCHours(0, 0, 0, 0);
+    if (period === 'monthly') from.setUTCDate(1);
+
+    const top = await this.prisma.$queryRaw<
+      { user_id: string; display_name: string; points: number }[]
+    >`
+      SELECT qs.user_id, u.display_name, SUM(qs.correct_count)::int AS points
+      FROM quiz_sessions qs
+      JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
+      WHERE qs.status = 'completed' AND qs.started_at >= ${from}
+      GROUP BY qs.user_id, u.display_name
+      HAVING SUM(qs.correct_count) > 0
+      ORDER BY points DESC, MAX(qs.completed_at) ASC
+      LIMIT 20`;
+
+    const mineRow = await this.prisma.$queryRaw<{ points: number }[]>`
+      SELECT COALESCE(SUM(correct_count), 0)::int AS points
+      FROM quiz_sessions
+      WHERE user_id = ${userId}::uuid AND status = 'completed' AND started_at >= ${from}`;
+    const myPoints = mineRow[0]?.points ?? 0;
+
+    const rankRow = await this.prisma.$queryRaw<{ rank: number }[]>`
+      SELECT COUNT(*)::int + 1 AS rank FROM (
+        SELECT qs.user_id
+        FROM quiz_sessions qs
+        JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
+        WHERE qs.status = 'completed' AND qs.started_at >= ${from}
+        GROUP BY qs.user_id
+        HAVING SUM(qs.correct_count) > ${myPoints}
+      ) better`;
+
+    return {
+      period,
+      top: top.map((r, i) => ({
+        rank: i + 1,
+        displayName: r.display_name,
+        points: r.points,
+        isMe: r.user_id === userId,
+      })),
+      me: { rank: myPoints > 0 ? (rankRow[0]?.rank ?? null) : null, points: myPoints },
+    };
+  }
+
   async getSummary(userId: string) {
     const [stats, streak] = await Promise.all([
       this.prisma.userStats.findUnique({ where: { userId } }),

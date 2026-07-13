@@ -91,6 +91,7 @@ void main() {
     await waitFor(tester, find.text('Genel Mevzuat'));
 
     // ── Boş modül de kırılmamalı ──
+    await settle(tester, 1); // geçiş animasyonu bitsin (cache ile anında yükleniyor)
     await tester.pageBack();
     await waitFor(tester, find.text('POMEM'));
     await tester.tap(find.text('POMEM'));

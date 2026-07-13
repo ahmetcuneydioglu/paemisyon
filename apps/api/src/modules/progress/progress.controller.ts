@@ -1,4 +1,4 @@
-import { Controller, Get, UseGuards } from '@nestjs/common';
+import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -9,6 +9,14 @@ import { ProgressService } from './progress.service';
 @UseGuards(JwtAuthGuard)
 export class ProgressController {
   constructor(private readonly progress: ProgressService) {}
+
+  @Get('leaderboard')
+  leaderboard(
+    @CurrentUser() user: AuthenticatedUser,
+    @Query('period') period?: string,
+  ) {
+    return this.progress.getLeaderboard(user.id, period === 'monthly' ? 'monthly' : 'daily');
+  }
 
   @Get('summary')
   summary(@CurrentUser() user: AuthenticatedUser) {

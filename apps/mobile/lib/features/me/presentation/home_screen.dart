@@ -156,6 +156,32 @@ class _Dashboard extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
+        // ── Günün Sorusu (Doc 13 V1) ──
+        Card(
+          color: data.dailyPlayedToday
+              ? null
+              : theme.colorScheme.tertiaryContainer,
+          child: ListTile(
+            leading: Text(data.dailyPlayedToday ? '✅' : '☀️',
+                style: const TextStyle(fontSize: 24)),
+            title: const Text('Günün Sorusu'),
+            subtitle: Text(data.dailyPlayedToday
+                ? 'Bugünkünü çözdün — yarın yenisi seni bekliyor!'
+                : 'Her gün 1 soru · serini koru'),
+            trailing: data.dailyPlayedToday
+                ? null
+                : const Icon(Icons.chevron_right_rounded),
+            onTap: data.dailyPlayedToday
+                ? null
+                : () => context.push('/quiz', extra: {
+                      'topicName': 'Günün Sorusu',
+                      'mode': 'daily',
+                      'count': 1,
+                    }),
+          ),
+        ),
+        const SizedBox(height: AppSpacing.md),
+
         // ── Ana aksiyon ──
         FilledButton.icon(
           style: FilledButton.styleFrom(
@@ -182,6 +208,14 @@ class _Dashboard extends StatelessWidget {
                 icon: Icons.refresh_rounded,
                 label: 'Tekrar',
                 onTap: () => context.push('/review'),
+              ),
+            ),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+              child: _QuickAction(
+                icon: Icons.emoji_events_rounded,
+                label: 'Sıralama',
+                onTap: () => context.push('/leaderboard'),
               ),
             ),
           ],

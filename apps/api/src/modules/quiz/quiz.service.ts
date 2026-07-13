@@ -1,4 +1,10 @@
-import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
+import {
+  BadRequestException,
+  ConflictException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -25,6 +31,14 @@ export class QuizService {
   async startSession(user: AuthenticatedUser, dto: StartSessionDto) {
     const userId = user.id;
     const count = dto.questionCount ?? 10;
+
+    // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
+    if (dto.mode === 'daily') {
+      if (dto.topicId != null || dto.courseId != null) {
+        throw new BadRequestException('Günün sorusu kapsam almaz (topicId/courseId verilmez).');
+      }
+      return this.startDailySession(userId);
+    }
 
     // Kapsam: tam olarak biri — konu VEYA ders (ders = deneme sınavı).
     if ((dto.topicId == null) === (dto.courseId == null)) {
@@ -122,6 +136,126 @@ export class QuizService {
       mode: session.mode,
       plannedDurationSeconds,
       questions,
+    };
+  }
+
+  // ── Günün Sorusu (Doc 13 V1 — eski daily_quiz'in modern hali) ──
+  // Herkes için aynı soru (tarih+modülden deterministik), günde 1 hak, seri sayar.
+  private async startDailySession(userId: string) {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+
+    const existing = await this.prisma.quizSession.findFirst({
+      where: { userId, mode: 'daily', startedAt: { gte: today } },
+      orderBy: { startedAt: 'desc' },
+    });
+    if (existing?.status === 'completed') {
+      throw new ConflictException({
+        code: 'DAILY_ALREADY_PLAYED',
+        message: 'Günün sorusunu bugün zaten çözdün. Yarın yenisi seni bekliyor! 🌅',
+      });
+    }
+
+    const question = await this.pickDailyQuestion(userId);
+    // Yarım kalan oturum → aynı oturum + aynı (deterministik) soru geri verilir.
+    const session =
+      existing ??
+      (await this.prisma.quizSession.create({
+        data: { userId, mode: 'daily', totalQuestions: 1 },
+      }));
+    return {
+      sessionId: session.id,
+      mode: 'daily' as const,
+      plannedDurationSeconds: null,
+      questions: [question],
+    };
+  }
+
+  private async pickDailyQuestion(userId: string) {
+    // Kullanıcının hedef modülü (yoksa ilk aktif modül).
+    const u = await this.prisma.user.findUnique({
+      where: { id: userId },
+      select: { preferredModuleId: true },
+    });
+    let moduleId = u?.preferredModuleId ?? null;
+    if (!moduleId) {
+      const m = await this.prisma.module.findFirst({
+        where: { isActive: true },
+        orderBy: { sortOrder: 'asc' },
+      });
+      if (!m) throw new NotFoundException('Aktif modül bulunamadı.');
+      moduleId = m.id;
+    }
+
+    // Havuz: modülün premium OLMAYAN konularındaki yayında sorular (herkese açık).
+    const poolFor = (mid: string | null) =>
+      this.prisma.question.findMany({
+        where: {
+          deletedAt: null,
+          currentVersionId: { not: null },
+          topic: {
+            deletedAt: null,
+            isPremium: false,
+            course: { deletedAt: null, ...(mid ? { moduleId: mid } : {}) },
+          },
+        },
+        select: { id: true, currentVersionId: true },
+        orderBy: { id: 'asc' }, // deterministik sıra
+      });
+
+    let pool = await poolFor(moduleId);
+    if (pool.length === 0) {
+      // Hedef modül henüz boş (içerik onay bekliyor olabilir) → tüm modüllerden seç.
+      pool = await poolFor(null);
+      moduleId = 'all';
+    }
+    if (pool.length === 0) {
+      throw new NotFoundException('Günün sorusu için henüz yayında soru yok.');
+    }
+
+    const dateKey = new Date().toISOString().slice(0, 10);
+    const picked = pool[QuizService.hashString(`${dateKey}:${moduleId}`) % pool.length];
+    const v = await this.prisma.questionVersion.findUnique({
+      where: { id: picked.currentVersionId! },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        options: {
+          select: { id: true, label: true, text: true },
+          orderBy: { sortOrder: 'asc' },
+        },
+      },
+    });
+    return {
+      questionId: v!.questionId,
+      versionId: v!.id,
+      stem: v!.stem,
+      mediaUrl: v!.mediaUrl,
+      options: v!.options,
+    };
+  }
+
+  /** djb2 — kriptografik değil; gün içi sabit seçim için yeterli. */
+  private static hashString(s: string): number {
+    let h = 5381;
+    for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+    return h;
+  }
+
+  /** Günün sorusu durumu (Home kartı): bugün oynandı mı, doğru muydu? */
+  async getDailyStatus(userId: string) {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    const session = await this.prisma.quizSession.findFirst({
+      where: { userId, mode: 'daily', startedAt: { gte: today } },
+      orderBy: { startedAt: 'desc' },
+      select: { status: true, correctCount: true },
+    });
+    return {
+      playedToday: session?.status === 'completed',
+      correct: session?.status === 'completed' ? session.correctCount > 0 : null,
     };
   }
 

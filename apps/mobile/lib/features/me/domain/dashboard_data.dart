@@ -10,6 +10,9 @@ class DashboardData {
 
   /// null = sınırsız (premium).
   final int? dailyLimit;
+
+  /// Günün sorusu bugün çözüldü mü (Home kartı).
+  final bool dailyPlayedToday;
   final int totalSolved;
   final int totalSessions;
   final int accuracy; // 0-100
@@ -23,6 +26,7 @@ class DashboardData {
     required this.longestStreak,
     required this.answeredToday,
     this.dailyLimit,
+    this.dailyPlayedToday = false,
     required this.totalSolved,
     required this.totalSessions,
     required this.accuracy,
@@ -42,6 +46,8 @@ class DashboardData {
       longestStreak: streak['longest'] as int? ?? 0,
       answeredToday: today['answered'] as int? ?? 0,
       dailyLimit: today['dailyLimit'] as int?,
+      dailyPlayedToday:
+          (j['daily'] as Map<String, dynamic>?)?['playedToday'] as bool? ?? false,
       totalSolved: stats['totalSolved'] as int? ?? 0,
       totalSessions: stats['totalSessions'] as int? ?? 0,
       accuracy: stats['accuracy'] as int? ?? 0,
