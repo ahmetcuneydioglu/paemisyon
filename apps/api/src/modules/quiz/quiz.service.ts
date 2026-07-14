@@ -331,6 +331,20 @@ export class QuizService {
     if (session.mode === 'exam') {
       return { recorded: true };
     }
+    // deneme: pencere açıkken anahtar SIZDIRILMAZ — yalnız liveAnswerReveal
+    // açık denemelerde practice-gibi anlık geri bildirim (Doc 18 karar 5,
+    // varsayılan KAPALI; eski sistemin anahtar-sızdırma açığı taşınmaz).
+    if (session.mode === 'deneme') {
+      const exam = session.examId
+        ? await this.prisma.exam.findUnique({
+            where: { id: session.examId },
+            select: { liveAnswerReveal: true },
+          })
+        : null;
+      if (!exam?.liveAnswerReveal) {
+        return { recorded: true };
+      }
+    }
 
     // practice: anlık geri bildirim + açıklama.
     const version = await this.prisma.questionVersion.findUnique({
