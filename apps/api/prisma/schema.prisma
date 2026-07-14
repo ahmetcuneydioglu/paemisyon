@@ -95,23 +95,27 @@ model User {
   onboardingCompletedAt DateTime?  @map("onboarding_completed_at")
   // Hedef sınav (onboarding'de seçilir; Home/katalog varsayılanı — Doc 11 §2).
   preferredModuleId     String?    @map("preferred_module_id") @db.Uuid
+  // Günlük soru hedefi (koç hero halkası — Doc 19 §3.2). Kullanıcı ayarlayabilir.
+  dailyGoal             Int        @default(20) @map("daily_goal")
   createdAt             DateTime   @default(now()) @map("created_at")
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
 
-  authIdentities  AuthIdentity[]
-  roles           UserRole[]
-  entitlement     Entitlement?
-  subscriptions   Subscription[]
-  dailyUsage      DailyUsage[]
-  quizSessions    QuizSession[]
-  topicProgress   UserTopicProgress[]
-  stats           UserStats?
-  streak          Streak?
-  bookmarks       Bookmark[]
-  wrongAnswers    WrongAnswer[]
-  questionReports QuestionReport[]
-  preferredModule Module?             @relation(fields: [preferredModuleId], references: [id])
+  authIdentities   AuthIdentity[]
+  roles            UserRole[]
+  entitlement      Entitlement?
+  subscriptions    Subscription[]
+  dailyUsage       DailyUsage[]
+  quizSessions     QuizSession[]
+  topicProgress    UserTopicProgress[]
+  stats            UserStats?
+  streak           Streak?
+  bookmarks        Bookmark[]
+  wrongAnswers     WrongAnswer[]
+  questionReports  QuestionReport[]
+  badges           UserBadge[]
+  masterySnapshots TopicMasterySnapshot[]
+  preferredModule  Module?                @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -213,10 +217,11 @@ model Topic {
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  course       Course              @relation(fields: [courseId], references: [id])
-  questions    Question[]
-  quizSessions QuizSession[]
-  userProgress UserTopicProgress[]
+  course           Course                 @relation(fields: [courseId], references: [id])
+  questions        Question[]
+  quizSessions     QuizSession[]
+  userProgress     UserTopicProgress[]
+  masterySnapshots TopicMasterySnapshot[]
 
   @@index([courseId])
   @@map("topics")
@@ -546,6 +551,61 @@ model WrongAnswer {
 
   @@id([userId, questionId])
   @@map("wrong_answers")
+}
+
+// ─────────────────────────────────────────────
+// Gamification + Kişisel Koç (Doc 19)
+// ─────────────────────────────────────────────
+
+/// Rozet kataloğu — seed ile yüklenir; kazanım kuralı kind+threshold ile
+/// deterministiktir (örn. streak/7 = "7 Gün Seri").
+model Badge {
+  key         String    @id // streak_7, solved_100, first_exam…
+  name        String
+  description String
+  kind        BadgeKind
+  threshold   Int // eşik: gün / soru / deneme sayısı / % doğruluk
+  sortOrder   Int       @default(0) @map("sort_order")
+
+  earners UserBadge[]
+
+  @@map("badges")
+}
+
+enum BadgeKind {
+  streak // currentStreak >= threshold
+  solved // totalSolved >= threshold
+  exam // tamamlanan deneme sayısı >= threshold
+  accuracy // doğruluk %'si >= threshold (min 100 soru sonrası)
+}
+
+model UserBadge {
+  userId   String   @map("user_id") @db.Uuid
+  badgeKey String   @map("badge_key")
+  earnedAt DateTime @default(now()) @map("earned_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeKey], references: [key])
+
+  @@id([userId, badgeKey])
+  @@map("user_badges")
+}
+
+/// Haftalık konu ustalığı fotoğrafı — trend kartları ("bu hafta %12 arttı")
+/// ve ileride AI koç analizleri için (Doc 19 §2.1). weekStart = Pazartesi.
+model TopicMasterySnapshot {
+  userId    String   @map("user_id") @db.Uuid
+  topicId   String   @map("topic_id") @db.Uuid
+  weekStart DateTime @map("week_start") @db.Date
+  mastery   Decimal  @db.Decimal(4, 3)
+  solved    Int      @default(0)
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id])
+
+  @@id([userId, topicId, weekStart])
+  @@index([userId, weekStart])
+  @@map("topic_mastery_snapshots")
 }
 
 // ─────────────────────────────────────────────

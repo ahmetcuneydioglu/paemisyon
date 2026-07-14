@@ -1,4 +1,4 @@
-import { PrismaClient, PlanPeriod } from '@prisma/client';
+import { PrismaClient, PlanPeriod, BadgeKind } from '@prisma/client';
 
 /**
  * Başlangıç verisi (Doc 6 §8): roller, planlar, modüller.
@@ -167,7 +167,30 @@ async function main() {
     }
   }
 
-  console.log('Seed tamam: roller, planlar, modüller (+ örnek içerik + sorular) eklendi.');
+  // Rozet kataloğu (Doc 19 §3.2) — kazanım kuralı kind+threshold ile deterministik.
+  // Metinler yetişkin ve profesyonel (Duolingo kalitesi, çocukça değil).
+  const badges = [
+    { key: 'first_session', name: 'İlk Adım', description: 'İlk quiz oturumunu tamamla', kind: BadgeKind.solved, threshold: 1, sortOrder: 1 },
+    { key: 'solved_100', name: '100 Soru', description: '100 soru çöz', kind: BadgeKind.solved, threshold: 100, sortOrder: 2 },
+    { key: 'solved_500', name: '500 Soru', description: '500 soru çöz', kind: BadgeKind.solved, threshold: 500, sortOrder: 3 },
+    { key: 'solved_1000', name: '1000 Soru', description: '1000 soru çöz', kind: BadgeKind.solved, threshold: 1000, sortOrder: 4 },
+    { key: 'streak_3', name: '3 Gün Seri', description: '3 gün üst üste çalış', kind: BadgeKind.streak, threshold: 3, sortOrder: 5 },
+    { key: 'streak_7', name: '7 Gün Seri', description: '7 gün üst üste çalış', kind: BadgeKind.streak, threshold: 7, sortOrder: 6 },
+    { key: 'streak_30', name: '30 Gün Seri', description: '30 gün üst üste çalış', kind: BadgeKind.streak, threshold: 30, sortOrder: 7 },
+    { key: 'first_exam', name: 'İlk Deneme', description: 'İlk canlı denemeni tamamla', kind: BadgeKind.exam, threshold: 1, sortOrder: 8 },
+    { key: 'exam_5', name: 'Deneme Ustası', description: '5 canlı deneme tamamla', kind: BadgeKind.exam, threshold: 5, sortOrder: 9 },
+    { key: 'accuracy_70', name: 'Keskin Nişancı', description: '100+ soruda %70 doğruluğa ulaş', kind: BadgeKind.accuracy, threshold: 70, sortOrder: 10 },
+  ];
+  for (const b of badges) {
+    await prisma.badge.upsert({
+      where: { key: b.key },
+      update: { name: b.name, description: b.description, kind: b.kind, threshold: b.threshold, sortOrder: b.sortOrder },
+      create: b,
+    });
+  }
+  console.log(`Rozet kataloğu: ${badges.length} rozet.`);
+
+  console.log('Seed tamam: roller, planlar, modüller, rozetler (+ örnek içerik + sorular) eklendi.');
 }
 
 main()
