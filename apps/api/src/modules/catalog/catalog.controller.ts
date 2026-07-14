@@ -1,5 +1,7 @@
 import { Controller, Get, Param, ParseUUIDPipe, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { CurrentUser } from '../auth/decorators/current-user.decorator';
+import type { AuthenticatedUser } from '../auth/auth.types';
 import { CatalogService } from './catalog.service';
 
 /// GET /api/v1/catalog/* — içerik keşfi (Doc 7 §4.3). Kimlik zorunlu.
@@ -9,8 +11,8 @@ export class CatalogController {
   constructor(private readonly catalog: CatalogService) {}
 
   @Get('modules')
-  modules() {
-    return this.catalog.getModules();
+  modules(@CurrentUser() user: AuthenticatedUser) {
+    return this.catalog.getModules(user.id);
   }
 
   @Get('modules/:id/courses')

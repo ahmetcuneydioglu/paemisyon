@@ -71,18 +71,37 @@ async function main() {
     });
   }
 
-  // Modüller (Doc 2). İlk modül PAEM; platform çok-modüllü.
+  // Modüller (Doc 2 + Doc 20 hedef seçimi): platform çok-modüllü; şimdilik
+  // yalnız PAEM + Misyon yayında. POMEM/PMYO kaldırıldı (isActive=false —
+  // veri silinmez, katalog uçları isActive filtreler; ileride açılabilir).
   const modules = [
-    { key: 'paem', name: 'PAEM', sortOrder: 1 },
-    { key: 'pomem', name: 'POMEM', sortOrder: 2 },
-    { key: 'pmyo', name: 'PMYO', sortOrder: 3 },
-    { key: 'misyon', name: 'Misyon', sortOrder: 4 },
+    {
+      key: 'paem',
+      name: 'PAEM',
+      description: 'Polis Amirleri Eğitim Merkezi · Komiser yardımcılığı hazırlığı',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      key: 'misyon',
+      name: 'Misyon',
+      description: 'Misyon koruma sınavı hazırlığı',
+      sortOrder: 2,
+      isActive: true,
+    },
+    { key: 'pomem', name: 'POMEM', description: null, sortOrder: 3, isActive: false },
+    { key: 'pmyo', name: 'PMYO', description: null, sortOrder: 4, isActive: false },
   ];
   for (const m of modules) {
     await prisma.module.upsert({
       where: { key: m.key },
-      update: { name: m.name, sortOrder: m.sortOrder },
-      create: { ...m, isActive: true },
+      update: {
+        name: m.name,
+        description: m.description,
+        sortOrder: m.sortOrder,
+        isActive: m.isActive,
+      },
+      create: { ...m },
     });
   }
 

@@ -71,10 +71,17 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           path: '/catalog', builder: (context, state) => const ModulesScreen()),
       GoRoute(
         path: '/catalog/module/:id',
-        builder: (context, state) => CoursesScreen(
-          moduleId: state.pathParameters['id']!,
-          moduleName: state.extra as String? ?? 'Dersler',
-        ),
+        builder: (context, state) {
+          // extra: {name, key} (Doc 20 hedef kartı) — eski String biçimi de desteklenir.
+          final extra = state.extra;
+          final map = extra is Map<String, dynamic> ? extra : const {};
+          return CoursesScreen(
+            moduleId: state.pathParameters['id']!,
+            moduleName:
+                (map['name'] as String?) ?? (extra as String?) ?? 'Dersler',
+            moduleKey: map['key'] as String?,
+          );
+        },
       ),
       GoRoute(
         path: '/catalog/course/:id',
