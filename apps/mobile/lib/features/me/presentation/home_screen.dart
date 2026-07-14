@@ -182,6 +182,18 @@ class _Dashboard extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.md),
 
+        // ── Denemeler (Doc 18): randevulu canlı deneme sınavları ──
+        Card(
+          child: ListTile(
+            leading: const Text('📝', style: TextStyle(fontSize: 24)),
+            title: const Text('Denemeler'),
+            subtitle: const Text('Canlı deneme sınavları · sıralamana bak'),
+            trailing: const Icon(Icons.chevron_right_rounded),
+            onTap: () => context.push('/denemeler'),
+          ),
+        ),
+        const SizedBox(height: AppSpacing.md),
+
         // ── Ana aksiyon ──
         FilledButton.icon(
           style: FilledButton.styleFrom(

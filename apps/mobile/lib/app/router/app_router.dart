@@ -9,6 +9,10 @@ import '../../features/auth/presentation/login_screen.dart';
 import '../../features/auth/presentation/register_screen.dart';
 import '../../features/billing/presentation/paywall_screen.dart';
 import '../../features/catalog/presentation/courses_screen.dart';
+import '../../features/exams/presentation/exam_leaderboard_screen.dart';
+import '../../features/exams/presentation/exam_result_screen.dart';
+import '../../features/exams/presentation/exam_runner_screen.dart';
+import '../../features/exams/presentation/exams_list_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
@@ -105,6 +109,25 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           builder: (context, state) => const LeaderboardScreen()),
       GoRoute(
           path: '/review', builder: (context, state) => const ReviewScreen()),
+      // ── Denemeler (Doc 18): ortak /exams API ──
+      GoRoute(
+          path: '/denemeler',
+          builder: (context, state) => const ExamsListScreen()),
+      GoRoute(
+        path: '/denemeler/sonuc/:attemptId',
+        builder: (context, state) =>
+            ExamResultScreen(attemptId: state.pathParameters['attemptId']!),
+      ),
+      GoRoute(
+        path: '/denemeler/:id/siralama',
+        builder: (context, state) =>
+            ExamLeaderboardScreen(examId: state.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/denemeler/:id',
+        builder: (context, state) =>
+            ExamRunnerScreen(examId: state.pathParameters['id']!),
+      ),
       GoRoute(
           path: '/paywall', builder: (context, state) => const PaywallScreen()),
       GoRoute(
