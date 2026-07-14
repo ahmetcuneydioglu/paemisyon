@@ -174,31 +174,87 @@ class _SectionHeader extends StatelessWidget {
       );
 }
 
+// ── Wireframe paleti: açık temada 50 zemin + 600 metin, koyu temada
+// 800 zemin + 100/200 metin (onaylı widget ile birebir). ──
+
+class _Pal {
+  final Color accent; // CTA + ilerleme çubuğu (her iki temada canlı mavi)
+  final Color accentText; // sayaç
+  final Color heroBg;
+  final Color heroBorder;
+  final Color liveBg, liveFg; // Canlı / Katıldın (teal)
+  final Color warnBg, warnFg; // Yakında (amber)
+  final Color proBg, proFg; // Premium (mor)
+
+  const _Pal._({
+    required this.accent,
+    required this.accentText,
+    required this.heroBg,
+    required this.heroBorder,
+    required this.liveBg,
+    required this.liveFg,
+    required this.warnBg,
+    required this.warnFg,
+    required this.proBg,
+    required this.proFg,
+  });
+
+  factory _Pal.of(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return dark
+        ? const _Pal._(
+            accent: AppColors.blue400,
+            accentText: AppColors.blue200,
+            heroBg: AppColors.blue800,
+            heroBorder: AppColors.blue600,
+            liveBg: AppColors.teal800,
+            liveFg: AppColors.teal200,
+            warnBg: AppColors.amber800,
+            warnFg: AppColors.amber100,
+            proBg: AppColors.purple800,
+            proFg: AppColors.purple100,
+          )
+        : const _Pal._(
+            accent: AppColors.blue400,
+            accentText: AppColors.blue600,
+            heroBg: AppColors.blue50,
+            heroBorder: AppColors.blue200,
+            liveBg: AppColors.teal50,
+            liveFg: AppColors.teal600,
+            warnBg: AppColors.amber50,
+            warnFg: AppColors.amber600,
+            proBg: AppColors.purple50,
+            proFg: AppColors.purple600,
+          );
+  }
+}
+
 // ── Rozet sistemi: durumlar buton yerine rozetle anlatılır ──
 
 class _Badge extends StatelessWidget {
   final String label;
-  final Color color;
-  final bool dot;
-  const _Badge(this.label, {required this.color, this.dot = false});
+  final Color bg;
+  final Color fg;
+  final Color? dotColor;
+  const _Badge(this.label, {required this.bg, required this.fg, this.dotColor});
 
   @override
   Widget build(BuildContext context) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.14),
+          color: bg,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            if (dot) ...[
-              _PulseDot(color: color),
+            if (dotColor != null) ...[
+              _PulseDot(color: dotColor!),
               const SizedBox(width: 5),
             ],
             Text(label,
                 style: TextStyle(
-                    fontSize: 11, fontWeight: FontWeight.w600, color: color)),
+                    fontSize: 11, fontWeight: FontWeight.w600, color: fg)),
           ],
         ),
       );
@@ -398,7 +454,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
   @override
   Widget build(BuildContext context) {
     final exam = widget.exam;
-    final scheme = Theme.of(context).colorScheme;
+    final pal = _Pal.of(context);
     final total = exam.endAt.difference(exam.startAt);
     final remainingFrac = total.inSeconds == 0
         ? 0.0
@@ -418,8 +474,8 @@ class _HeroExamCardState extends State<_HeroExamCard> {
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
         padding: const EdgeInsets.all(AppSpacing.md),
         decoration: BoxDecoration(
-          color: scheme.primaryContainer.withValues(alpha: 0.45),
-          border: Border.all(color: scheme.primary.withValues(alpha: 0.35)),
+          color: pal.heroBg,
+          border: Border.all(color: pal.heroBorder),
           borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
         ),
         child: Column(
@@ -427,10 +483,11 @@ class _HeroExamCardState extends State<_HeroExamCard> {
           children: [
             Row(
               children: [
-                const _Badge('Canlı', color: AppColors.success, dot: true),
+                _Badge('Canlı',
+                    bg: pal.liveBg, fg: pal.liveFg, dotColor: AppColors.teal400),
                 if (exam.isPremium) ...[
                   const SizedBox(width: AppSpacing.xs),
-                  _Badge('Premium', color: scheme.tertiary),
+                  _Badge('Premium', bg: pal.proBg, fg: pal.proFg),
                 ],
                 const Spacer(),
                 Text(
@@ -439,7 +496,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
                     fontFeatures: const [FontFeature.tabularFigures()],
                     fontSize: 15,
                     fontWeight: FontWeight.w700,
-                    color: scheme.primary,
+                    color: pal.accentText,
                   ),
                 ),
               ],
@@ -455,7 +512,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
             const SizedBox(height: AppSpacing.xs),
             _MetaRow(exam: exam),
             const SizedBox(height: AppSpacing.sm + 2),
-            _AnimatedBar(value: remainingFrac, color: scheme.primary),
+            _AnimatedBar(value: remainingFrac, color: pal.accent),
             const SizedBox(height: AppSpacing.xs),
             Text('Bitiş ${_hm(exam.endAt)}',
                 style: Theme.of(context).textTheme.bodySmall),
@@ -464,6 +521,8 @@ class _HeroExamCardState extends State<_HeroExamCard> {
               style: FilledButton.styleFrom(
                 minimumSize: const Size.fromHeight(44),
                 visualDensity: VisualDensity.compact,
+                backgroundColor: pal.accent,
+                foregroundColor: Colors.white,
               ),
               onPressed: () => widget.onOpen(ctaPath),
               child: Text(ctaLabel),
@@ -484,6 +543,7 @@ class _UpcomingRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final pal = _Pal.of(context);
     final l = exam.startAt.toLocal();
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.sm),
@@ -532,10 +592,10 @@ class _UpcomingRow extends StatelessWidget {
           ),
           const SizedBox(width: AppSpacing.xs),
           if (exam.isPremium) ...[
-            _Badge('Premium', color: scheme.tertiary),
+            _Badge('Premium', bg: pal.proBg, fg: pal.proFg),
             const SizedBox(width: AppSpacing.xs),
           ],
-          const _Badge('Yakında', color: AppColors.warning),
+          _Badge('Yakında', bg: pal.warnBg, fg: pal.warnFg),
         ],
       ),
     );
@@ -553,6 +613,7 @@ class _PastRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final pal = _Pal.of(context);
     final attended = exam.myAttempt != null;
     final l = exam.startAt.toLocal();
 
@@ -593,8 +654,10 @@ class _PastRow extends StatelessWidget {
             ),
             const SizedBox(width: AppSpacing.xs),
             attended
-                ? const _Badge('Katıldın', color: AppColors.success)
-                : _Badge('Sona erdi', color: scheme.onSurfaceVariant),
+                ? _Badge('Katıldın', bg: pal.liveBg, fg: pal.liveFg)
+                : _Badge('Sona erdi',
+                    bg: scheme.onSurfaceVariant.withValues(alpha: 0.12),
+                    fg: scheme.onSurfaceVariant),
             const SizedBox(width: AppSpacing.xs),
             Icon(Icons.chevron_right_rounded,
                 size: 20, color: scheme.onSurfaceVariant),
