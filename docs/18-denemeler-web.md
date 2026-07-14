@@ -1,6 +1,7 @@
 # Doc 18 — "Denemeler" Web Uygulaması: Analiz ve Yeniden İnşa Planı
 
-> **Durum:** Onaya sunuldu · **Sürüm:** 0.1 · **Tarih:** 2026-07-14
+> **Durum:** ONAYLANDI (2026-07-14) · **Sürüm:** 1.0 · **Tarih:** 2026-07-14
+> **Onaylı kararlar:** (1) 8 fazlı plan uygulanacak · (2) kredi yerine deneme başına premium bayrağı · (3) puan = NET (doğru − yanlış/4), sıralama net + eşitlikte süre · (4) eski deneme/sonuç verisi taşınmayacak · (5) canlı cevap gösterimi opsiyonel, varsayılan KAPALI
 > **Girdi:** Eski Harmedya sitesi (`paemisyoncom/`) tam kod analizi + `paemmisy_mvc.sql` şeması + mevcut platform (Doc 1-17).
 > **Kapsam:** Son kullanıcıya açık, tarayıcıdan deneme sınavı çözülen web uygulaması. **Admin paneli DEĞİL.**
 > **Kural:** Onay gelmeden kod/migration/route değişikliği YOK.
