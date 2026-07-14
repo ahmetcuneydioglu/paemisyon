@@ -69,6 +69,7 @@ export class ExamsService {
       durationMinutes: e.durationMinutes,
       questionCount: e._count.questions,
       isPremium: e.isPremium,
+      questionsOpenAfterEnd: e.questionsOpenAfterEnd,
       state: this.stateOf(e, now),
       participantCount: statOf.get(e.id)?._count._all ?? 0,
       avgScore: statOf.get(e.id)?._avg.score != null
