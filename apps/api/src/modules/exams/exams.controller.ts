@@ -35,6 +35,12 @@ export class ExamsController {
     return this.exams.getAttempt(user, attemptId);
   }
 
+  @Get('leaderboard/global')
+  @UseGuards(OptionalJwtGuard)
+  globalLeaderboard(@CurrentUser() user?: AuthenticatedUser) {
+    return this.exams.globalLeaderboard(user);
+  }
+
   @Get(':id')
   @UseGuards(OptionalJwtGuard)
   detail(@Param('id', ParseUUIDPipe) id: string, @CurrentUser() user?: AuthenticatedUser) {

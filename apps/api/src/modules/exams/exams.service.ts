@@ -275,6 +275,32 @@ export class ExamsService {
     };
   }
 
+  // ── Genel liderlik (eski lider-tablosu): tüm denemelerin ortalaması ──
+  async globalLeaderboard(user?: AuthenticatedUser) {
+    const rows = await this.prisma.$queryRaw<
+      { user_id: string; display_name: string; avg_score: number; attempts: number; total_correct: number }[]
+    >`
+      SELECT qs.user_id, u.display_name,
+             AVG(qs.score)::float AS avg_score,
+             COUNT(*)::int AS attempts,
+             SUM(qs.correct_count)::int AS total_correct
+      FROM quiz_sessions qs
+      JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
+      WHERE qs.mode = 'deneme' AND qs.status = 'completed'
+      GROUP BY qs.user_id, u.display_name
+      ORDER BY avg_score DESC, attempts DESC`;
+    const ranked = rows.map((r, i) => ({
+      rank: i + 1,
+      displayName: r.display_name,
+      avgScore: Math.round(r.avg_score * 100) / 100,
+      attempts: r.attempts,
+      totalCorrect: r.total_correct,
+      isMe: user ? r.user_id === user.id : false,
+    }));
+    const me = ranked.find((x) => x.isMe) ?? null;
+    return { top: ranked.slice(0, 100), me, participantCount: ranked.length };
+  }
+
   // ── Sınav sonrası serbest soru görüntüleme (eski /sorular; cevapsız) ──
   async browseQuestions(examId: string) {
     const exam = await this.prisma.exam.findFirst({
