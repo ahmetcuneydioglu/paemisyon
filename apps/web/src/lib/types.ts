@@ -82,3 +82,13 @@ export interface ExamListItem {
   avgScore: number | null;
   myAttempt: { id: string; status: "in_progress" | "completed" | "abandoned" } | null;
 }
+
+export interface PublicCatalogModule {
+  id: string;
+  name: string;
+  courses: {
+    id: string;
+    name: string;
+    topics: { id: string; name: string }[];
+  }[];
+}

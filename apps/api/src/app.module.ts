@@ -1,5 +1,7 @@
 import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { APP_GUARD } from '@nestjs/core';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
@@ -10,6 +12,7 @@ import { ExamsModule } from './modules/exams/exams.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
 import { ProgressModule } from './modules/progress/progress.module';
+import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
@@ -21,6 +24,10 @@ import { UsersModule } from './modules/users/users.module';
       isGlobal: true,
       validate: validateEnv,
     }),
+    // Genel istek hız sınırı (Doc 18 §güvenlik): IP başına 300/dk (normal
+    // kullanım + sınav akışı için rahat); hassas uçlar @Throttle ile daha sıkı
+    // (örn. soru öner 5/dk).
+    ThrottlerModule.forRoot([{ ttl: 60_000, limit: 300 }]),
     PrismaModule,
     AuthModule,
     CatalogModule,
@@ -30,10 +37,12 @@ import { UsersModule } from './modules/users/users.module';
     ReportsModule,
     BillingModule,
     ExamsModule,
+    QuestionsModule,
     AdminModule,
     HealthModule,
     UsersModule,
   ],
+  providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
