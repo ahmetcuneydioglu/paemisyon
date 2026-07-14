@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
+import { QuestionColumns } from "./question-columns";
 
 export interface StartPayload {
   sessionId: string;
@@ -124,9 +125,6 @@ export function ExamRunner({ start }: { start: StartPayload }) {
     return `${hh}:${mm}:${ss}`;
   }, [timeLeft]);
 
-  const half = Math.ceil(total / 2);
-  const columns = [start.questions.slice(0, half), start.questions.slice(half)];
-
   return (
     <div className="pb-28">
       <h1 className="head3 pt-8">
@@ -134,40 +132,32 @@ export function ExamRunner({ start }: { start: StartPayload }) {
         {start.title}
       </h1>
 
-      <div className="exam-panel mx-auto mt-6 max-w-6xl px-4 py-6">
-        <div className="exam-columns grid grid-cols-1 gap-x-16 md:grid-cols-2">
-          {columns.map((col, ci) => (
-            <ol key={ci}>
-              {col.map((q) => (
-                <li key={q.questionId} id={`soru-${q.order}`} className="question-block">
-                  <p>
-                    <b>{q.order}.</b> {q.stem}
-                  </p>
-                  <div role="radiogroup" aria-label={`Soru ${q.order}`}>
-                    {q.options.map((o) => (
-                      <button
-                        key={o.id}
-                        type="button"
-                        role="radio"
-                        aria-checked={answers[q.questionId] === o.id}
-                        className="option-bar"
-                        onClick={() => saveAnswer(q.questionId, q.versionId, o.id)}
-                      >
-                        <b>{o.label}.</b> {o.text}
-                      </button>
-                    ))}
-                  </div>
-                  {saveState[q.questionId] === "failed" && (
-                    <p className="mt-1 text-[12px] font-semibold text-(--color-red)">
-                      Cevap kaydedilemedi — tekrar seçmeyi dene.
-                    </p>
-                  )}
-                </li>
+      <QuestionColumns
+        questions={start.questions}
+        renderQuestion={(q) => (
+          <>
+            <div role="radiogroup" aria-label={`Soru ${q.order}`}>
+              {q.options.map((o) => (
+                <button
+                  key={o.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={answers[q.questionId] === o.id}
+                  className="option-bar"
+                  onClick={() => saveAnswer(q.questionId, q.versionId, o.id)}
+                >
+                  <b>{o.label}.</b> {o.text}
+                </button>
               ))}
-            </ol>
-          ))}
-        </div>
-      </div>
+            </div>
+            {saveState[q.questionId] === "failed" && (
+              <p className="mt-1 text-[12px] font-semibold text-(--color-red)">
+                Cevap kaydedilemedi — tekrar seçmeyi dene.
+              </p>
+            )}
+          </>
+        )}
+      />
 
       {/* ── Sabit alt bar (eski #exam .bottom) ── */}
       <div className="exam-bottom">
