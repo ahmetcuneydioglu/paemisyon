@@ -2,6 +2,7 @@ import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { ScheduleModule } from '@nestjs/schedule';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
@@ -29,6 +30,7 @@ import { UsersModule } from './modules/users/users.module';
     // kullanım + sınav akışı için rahat); hassas uçlar @Throttle ile daha sıkı
     // (örn. soru öner 5/dk).
     ThrottlerModule.forRoot([{ ttl: 60_000, limit: 300 }]),
+    ScheduleModule.forRoot(), // haftalık mastery fotoğrafı (Doc 19)
     PrismaModule,
     AuthModule,
     CatalogModule,

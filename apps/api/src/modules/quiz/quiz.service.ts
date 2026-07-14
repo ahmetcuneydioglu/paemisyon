@@ -6,6 +6,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { StartSessionDto } from './dto/start-session.dto';
@@ -20,6 +21,7 @@ export class QuizService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly progress: ProgressService,
+    private readonly badges: BadgeService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -381,6 +383,7 @@ export class QuizService {
         durationSeconds: session.durationSeconds ?? 0,
         plannedDurationSeconds: session.plannedDurationSeconds,
         topicBreakdown: null,
+        earnedBadges: [],
       };
     }
 
@@ -427,6 +430,15 @@ export class QuizService {
       })),
     });
 
+    // Rozet kontrolü (Doc 19): stats/streak TAZEyken. Hata oturumu bozmasın —
+    // rozet bir sonraki tamamlamada telafi edilir (checkAndAward idempotent).
+    let earnedBadges: Awaited<ReturnType<BadgeService['checkAndAward']>> = [];
+    try {
+      earnedBadges = await this.badges.checkAndAward(userId);
+    } catch {
+      /* sessiz: kutlama kaçar ama sonuç kaybolmaz */
+    }
+
     // Ders denemesi karnesi: konu bazında doğru/toplam kırılımı (Doc 12 §7).
     let topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null =
       null;
@@ -460,6 +472,8 @@ export class QuizService {
       durationSeconds,
       plannedDurationSeconds: session.plannedDurationSeconds,
       topicBreakdown,
+      // Yeni kazanılan rozetler — istemci kutlama gösterir (Doc 19).
+      earnedBadges,
     };
   }
 
