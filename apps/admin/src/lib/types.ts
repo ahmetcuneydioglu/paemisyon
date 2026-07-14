@@ -91,6 +91,60 @@ export interface AdminUser {
   createdAt: string;
 }
 
+export interface AdminExamListItem {
+  id: string;
+  title: string;
+  startAt: string;
+  durationMinutes: number;
+  isPremium: boolean;
+  status: ContentStatus;
+  questionCount: number;
+  attemptCount: number;
+}
+
+export interface AdminExamQuestion {
+  order: number;
+  questionId: string;
+  stem: string;
+  pinnedVersionNo: number;
+  topicName: string;
+  courseName: string;
+}
+
+export interface AdminExamDetail {
+  id: string;
+  title: string;
+  description: string | null;
+  startAt: string;
+  durationMinutes: number;
+  isPremium: boolean;
+  liveAnswerReveal: boolean;
+  questionsOpenAfterEnd: boolean;
+  status: ContentStatus;
+  attemptCount: number;
+  questions: AdminExamQuestion[];
+}
+
+export interface ExamResults {
+  summary: {
+    completed: number;
+    inProgress: number;
+    avgScore: number | null;
+    maxScore: number | null;
+  };
+  participants: {
+    rank: number;
+    displayName: string;
+    email: string;
+    score: number;
+    correctCount: number;
+    wrongCount: number;
+    blankCount: number;
+    durationSeconds: number | null;
+    completedAt: string | null;
+  }[];
+}
+
 export interface AuditEntry {
   id: string;
   actorEmail: string;

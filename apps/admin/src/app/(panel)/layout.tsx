@@ -11,6 +11,7 @@ const NAV = [
   { href: '/questions', label: 'Sorular', icon: '❓' },
   { href: '/review', label: 'Onay Kuyruğu', icon: '✅' },
   { href: '/reports', label: 'Soru Bildirimleri', icon: '🚩' },
+  { href: '/exams', label: 'Denemeler', icon: '📝' },
   { href: '/catalog', label: 'İçerik Ağacı', icon: '🗂️' },
   { href: '/users', label: 'Kullanıcılar', icon: '👥', adminOnly: true },
   { href: '/audit', label: 'İşlem Kayıtları', icon: '📜', adminOnly: true },
