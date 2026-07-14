@@ -221,7 +221,7 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
                 const SizedBox(width: 4),
                 Text(_timeText,
                     style: TextStyle(
-                        fontFeatures: const [],
+                        fontFeatures: const [FontFeature.tabularFigures()],
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: low ? Colors.red : null)),

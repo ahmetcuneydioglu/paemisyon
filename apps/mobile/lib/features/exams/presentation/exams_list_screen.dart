@@ -103,7 +103,7 @@ class _ExamCard extends StatelessWidget {
             ),
             const SizedBox(height: AppSpacing.xs),
             Text(
-              '${_date(exam.startAt)} · $_range · ${exam.questionCount} soru · ${exam.durationMinutes} dk',
+              '${_date(exam.startAt)} · ${_range()} · ${exam.questionCount} soru · ${exam.durationMinutes} dk',
               style: theme.textTheme.bodySmall,
             ),
             Text(

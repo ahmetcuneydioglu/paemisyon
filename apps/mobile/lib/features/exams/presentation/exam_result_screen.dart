@@ -160,7 +160,8 @@ class _ReviewTile extends StatelessWidget {
             ...q.options.map((o) {
               final chosen = q.selectedOptionId == o.id;
               Color? bg;
-              Color fg = Colors.black87;
+              // Vurgusuz şıklar tema metin rengini alır (dark mode okunur kalır).
+              Color fg = Theme.of(context).colorScheme.onSurface;
               if (o.isCorrect) {
                 bg = Colors.green;
                 fg = Colors.white;
