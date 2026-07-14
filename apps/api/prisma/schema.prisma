@@ -10,7 +10,7 @@ generator client {
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL") // Supabase pooler (uygulama sorguları)
-  directUrl = env("DIRECT_URL")   // doğrudan bağlantı (migration için)
+  directUrl = env("DIRECT_URL") // doğrudan bağlantı (migration için)
 }
 
 // ─────────────────────────────────────────────
@@ -72,6 +72,7 @@ enum QuizMode {
   exam
   daily
   review
+  deneme // randevulu canlı deneme (Doc 18)
 }
 
 enum QuizSessionStatus {
@@ -98,19 +99,19 @@ model User {
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
 
-  authIdentities    AuthIdentity[]
-  roles             UserRole[]
-  entitlement       Entitlement?
-  subscriptions     Subscription[]
-  dailyUsage        DailyUsage[]
-  quizSessions      QuizSession[]
-  topicProgress     UserTopicProgress[]
-  stats             UserStats?
-  streak            Streak?
-  bookmarks         Bookmark[]
-  wrongAnswers      WrongAnswer[]
-  questionReports   QuestionReport[]
-  preferredModule   Module?             @relation(fields: [preferredModuleId], references: [id])
+  authIdentities  AuthIdentity[]
+  roles           UserRole[]
+  entitlement     Entitlement?
+  subscriptions   Subscription[]
+  dailyUsage      DailyUsage[]
+  quizSessions    QuizSession[]
+  topicProgress   UserTopicProgress[]
+  stats           UserStats?
+  streak          Streak?
+  bookmarks       Bookmark[]
+  wrongAnswers    WrongAnswer[]
+  questionReports QuestionReport[]
+  preferredModule Module?             @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -154,15 +155,15 @@ model UserRole {
 // ─────────────────────────────────────────────
 
 model Module {
-  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key         String    @unique // paem, pomem, pmyo...
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key         String   @unique // paem, pomem, pmyo...
   name        String
   description String?
   icon        String?
-  sortOrder   Int       @default(0) @map("sort_order")
-  isActive    Boolean   @default(true) @map("is_active")
-  createdAt   DateTime  @default(now()) @map("created_at")
-  updatedAt   DateTime  @updatedAt @map("updated_at")
+  sortOrder   Int      @default(0) @map("sort_order")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
 
   courses        Course[]
   preferredUsers User[]
@@ -233,6 +234,7 @@ model Question {
   reports        QuestionReport[]
   versions       QuestionVersion[] @relation("QuestionVersions")
   currentVersion QuestionVersion?  @relation("CurrentVersion", fields: [currentVersionId], references: [id])
+  examQuestions  ExamQuestion[]
 
   @@index([topicId])
   @@map("questions")
@@ -254,10 +256,11 @@ model QuestionVersion {
   archivedAt  DateTime?     @map("archived_at")
   createdAt   DateTime      @default(now()) @map("created_at")
 
-  question         Question         @relation("QuestionVersions", fields: [questionId], references: [id])
-  currentOfQuestion Question?       @relation("CurrentVersion")
-  options          QuestionOption[]
-  legalReferences  LegalReference[]
+  question          Question         @relation("QuestionVersions", fields: [questionId], references: [id])
+  currentOfQuestion Question?        @relation("CurrentVersion")
+  options           QuestionOption[]
+  legalReferences   LegalReference[]
+  examQuestions     ExamQuestion[]
 
   @@unique([questionId, versionNo])
   @@index([questionId, status])
@@ -296,16 +299,16 @@ model LegalReference {
 // ─────────────────────────────────────────────
 
 model Plan {
-  id                 String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key                String     @unique // free | monthly | yearly
-  name               String
-  price              Decimal?   @db.Decimal(10, 2)
-  currency           String     @default("TRY")
-  period             PlanPeriod @default(none)
-  dailyQuestionLimit Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
-  storeProductIdIos  String?    @map("store_product_id_ios")
-  storeProductIdAndroid String? @map("store_product_id_android")
-  isActive           Boolean    @default(true) @map("is_active")
+  id                    String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key                   String     @unique // free | monthly | yearly
+  name                  String
+  price                 Decimal?   @db.Decimal(10, 2)
+  currency              String     @default("TRY")
+  period                PlanPeriod @default(none)
+  dailyQuestionLimit    Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
+  storeProductIdIos     String?    @map("store_product_id_ios")
+  storeProductIdAndroid String?    @map("store_product_id_android")
+  isActive              Boolean    @default(true) @map("is_active")
 
   subscriptions Subscription[]
 
@@ -333,11 +336,11 @@ model Subscription {
 
 // Türetilmiş erişim — hızlı kontrol (SubscriptionGuard buradan okur).
 model Entitlement {
-  userId              String    @id @map("user_id") @db.Uuid
-  isPremium           Boolean   @default(false) @map("is_premium")
-  validUntil          DateTime? @map("valid_until")
-  sourceSubscriptionId String?  @map("source_subscription_id") @db.Uuid
-  updatedAt           DateTime  @updatedAt @map("updated_at")
+  userId               String    @id @map("user_id") @db.Uuid
+  isPremium            Boolean   @default(false) @map("is_premium")
+  validUntil           DateTime? @map("valid_until")
+  sourceSubscriptionId String?   @map("source_subscription_id") @db.Uuid
+  updatedAt            DateTime  @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -361,31 +364,78 @@ model DailyUsage {
 // Learning — Quiz oturumları (Doc 6 §4.3)
 // ─────────────────────────────────────────────
 
+/// Randevulu canlı deneme (Doc 18) — eski ekip_sinav'ın modern karşılığı.
+/// Küresel zaman penceresi: startAt..startAt+durationMinutes (herkese aynı).
+model Exam {
+  id                    String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  title                 String
+  description           String?
+  startAt               DateTime      @map("start_at")
+  durationMinutes       Int           @map("duration_minutes")
+  isPremium             Boolean       @default(false) @map("is_premium") // eski kredi yerine (Doc 18 karar 2)
+  liveAnswerReveal      Boolean       @default(false) @map("live_answer_reveal") // varsayılan KAPALI (karar 5)
+  questionsOpenAfterEnd Boolean       @default(true) @map("questions_open_after_end")
+  status                ContentStatus @default(draft)
+  sortOrder             Int           @default(0) @map("sort_order")
+  createdBy             String?       @map("created_by") @db.Uuid
+  createdAt             DateTime      @default(now()) @map("created_at")
+  updatedAt             DateTime      @updatedAt @map("updated_at")
+  deletedAt             DateTime?     @map("deleted_at")
+
+  questions ExamQuestion[]
+  sessions  QuizSession[]
+
+  @@index([status, startAt])
+  @@map("exams")
+}
+
+/// Denemenin sabit soru seti. questionVersionId YAYIN ANINDA sabitlenir —
+/// soru sonradan güncellense bile deneme ve geçmiş sonuçlar bozulmaz (Doc 18 §6).
+model ExamQuestion {
+  examId            String @map("exam_id") @db.Uuid
+  questionId        String @map("question_id") @db.Uuid
+  questionVersionId String @map("question_version_id") @db.Uuid
+  sortOrder         Int    @map("sort_order")
+
+  exam            Exam            @relation(fields: [examId], references: [id], onDelete: Cascade)
+  question        Question        @relation(fields: [questionId], references: [id])
+  questionVersion QuestionVersion @relation(fields: [questionVersionId], references: [id])
+
+  @@id([examId, questionId])
+  @@map("exam_questions")
+}
+
 model QuizSession {
-  id              String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  userId          String            @map("user_id") @db.Uuid
-  mode            QuizMode
-  topicId         String?           @map("topic_id") @db.Uuid
+  id                     String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId                 String            @map("user_id") @db.Uuid
+  mode                   QuizMode
+  topicId                String?           @map("topic_id") @db.Uuid
   // Deneme sınavı kapsamı: ders geneli (konular karışık) — topicId yerine.
-  courseId        String?           @map("course_id") @db.Uuid
-  status          QuizSessionStatus @default(in_progress)
-  totalQuestions  Int               @map("total_questions")
-  correctCount    Int               @default(0) @map("correct_count")
-  wrongCount      Int               @default(0) @map("wrong_count")
-  blankCount      Int               @default(0) @map("blank_count")
-  score           Decimal?          @db.Decimal(5, 2)
-  durationSeconds Int?              @map("duration_seconds")
+  courseId               String?           @map("course_id") @db.Uuid
+  // Randevulu deneme (Doc 18): katılım = bu oturum. (userId, examId) tekildir.
+  examId                 String?           @map("exam_id") @db.Uuid
+  status                 QuizSessionStatus @default(in_progress)
+  totalQuestions         Int               @map("total_questions")
+  correctCount           Int               @default(0) @map("correct_count")
+  wrongCount             Int               @default(0) @map("wrong_count")
+  blankCount             Int               @default(0) @map("blank_count")
+  score                  Decimal?          @db.Decimal(5, 2)
+  durationSeconds        Int?              @map("duration_seconds")
   // Deneme sınavı süresi (sn) — exam modunda dolu; sunucu aşımı reddeder.
-  plannedDurationSeconds Int?       @map("planned_duration_seconds")
-  startedAt       DateTime          @default(now()) @map("started_at")
-  completedAt     DateTime?         @map("completed_at")
+  plannedDurationSeconds Int?              @map("planned_duration_seconds")
+  startedAt              DateTime          @default(now()) @map("started_at")
+  completedAt            DateTime?         @map("completed_at")
 
   user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   topic   Topic?       @relation(fields: [topicId], references: [id])
   course  Course?      @relation(fields: [courseId], references: [id])
+  exam    Exam?        @relation(fields: [examId], references: [id])
   answers QuizAnswer[]
 
+  // NULL examId'ler Postgres'te tekilliğe takılmaz → yalnız denemelerde 1 katılım.
+  @@unique([userId, examId])
   @@index([userId])
+  @@index([examId, status])
   @@map("quiz_sessions")
 }
 

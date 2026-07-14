@@ -7,5 +7,6 @@ import { QuizService } from './quiz.service';
   imports: [ProgressModule],
   controllers: [QuizController],
   providers: [QuizService],
+  exports: [QuizService], // ExamsModule denemelerde aynı motoru kullanır (Doc 18)
 })
 export class QuizModule {}

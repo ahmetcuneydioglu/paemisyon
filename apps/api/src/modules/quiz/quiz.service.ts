@@ -353,13 +353,36 @@ export class QuizService {
     });
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
 
+    // İDEMPOTENT: bitmiş oturuma ikinci çağrı istatistikleri ÇİFT SAYMAZ —
+    // saklanan sonuç aynen döner (deneme finalize yarışları için kritik, Doc 18).
+    if (session.status === 'completed') {
+      return {
+        sessionId,
+        mode: session.mode,
+        totalQuestions: session.totalQuestions,
+        correctCount: session.correctCount,
+        wrongCount: session.wrongCount,
+        blankCount: session.blankCount,
+        score: session.score != null ? Number(session.score) : 0,
+        durationSeconds: session.durationSeconds ?? 0,
+        plannedDurationSeconds: session.plannedDurationSeconds,
+        topicBreakdown: null,
+      };
+    }
+
     const correctCount = session.answers.filter((a) => a.isCorrect === true).length;
     const wrongCount = session.answers.filter(
       (a) => a.isCorrect === false && a.selectedOptionId != null,
     ).length;
     const blankCount = session.totalQuestions - correctCount - wrongCount;
+    // Puan: deneme = NET (doğru − yanlış/4, polis sınavı kuralı — Doc 18 karar 3);
+    // diğer modlar = yüzde (mevcut davranış).
     const score =
-      session.totalQuestions > 0 ? (correctCount / session.totalQuestions) * 100 : 0;
+      session.mode === 'deneme'
+        ? correctCount - wrongCount / 4
+        : session.totalQuestions > 0
+          ? (correctCount / session.totalQuestions) * 100
+          : 0;
     const durationSeconds = Math.max(
       0,
       Math.round((Date.now() - session.startedAt.getTime()) / 1000),
