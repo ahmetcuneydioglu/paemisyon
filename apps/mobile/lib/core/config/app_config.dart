@@ -5,10 +5,13 @@
 class AppConfig {
   const AppConfig._();
 
-  /// Backend API kök adresi. Fiziksel cihazda LAN IP'sini --dart-define ile ver.
+  /// Backend API kök adresi.
+  /// Varsayılan: Mac'in Bonjour (.local) adı — IP değişse de SABİT kalır, hem
+  /// fiziksel cihazda hem simülatörde çalışır (aynı Wi-Fi'da). Böylece geliştirmede
+  /// --dart-define gerekmez. Prod build'de gerçek URL --dart-define ile verilir.
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'http://localhost:3000/api/v1',
+    defaultValue: 'http://AHMETCND-MacBook-Pro.local:3000/api/v1',
   );
 
   /// Supabase proje URL'i (public). Frankfurt (eu-central-1) projesi.
