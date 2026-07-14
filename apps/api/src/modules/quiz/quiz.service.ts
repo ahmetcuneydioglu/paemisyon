@@ -139,8 +139,13 @@ export class QuizService {
     };
   }
 
-  // ── Günün Sorusu (Doc 13 V1 — eski daily_quiz'in modern hali) ──
-  // Herkes için aynı soru (tarih+modülden deterministik), günde 1 hak, seri sayar.
+  // ── Günün Quizi (Doc 13 V1 — eski daily_quiz'in modern hali) ──
+  // 10 karışık soru, PAEM → Genel Mevzuat'tan; günde 1 hak; herkese aynı set
+  // (tarih tohumlu deterministik seçim → adil liderlik). Seri sayar.
+  private static readonly DAILY_QUESTION_COUNT = 10;
+  private static readonly DAILY_COURSE_NAME = 'Genel Mevzuat';
+  private static readonly DAILY_MODULE_KEY = 'paem';
+
   private async startDailySession(userId: string) {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
@@ -152,96 +157,104 @@ export class QuizService {
     if (existing?.status === 'completed') {
       throw new ConflictException({
         code: 'DAILY_ALREADY_PLAYED',
-        message: 'Günün sorusunu bugün zaten çözdün. Yarın yenisi seni bekliyor! 🌅',
+        message: 'Günün quizini bugün zaten çözdün. Yarın yenisi seni bekliyor! 🌅',
       });
     }
 
-    const question = await this.pickDailyQuestion(userId);
-    // Yarım kalan oturum → aynı oturum + aynı (deterministik) soru geri verilir.
+    const questions = await this.pickDailyQuestions();
+    // Yarım kalan oturum → aynı oturum + aynı (deterministik) sorularla devam.
     const session =
       existing ??
       (await this.prisma.quizSession.create({
-        data: { userId, mode: 'daily', totalQuestions: 1 },
+        data: { userId, mode: 'daily', totalQuestions: questions.length },
       }));
     return {
       sessionId: session.id,
       mode: 'daily' as const,
       plannedDurationSeconds: null,
-      questions: [question],
+      questions,
     };
   }
 
-  private async pickDailyQuestion(userId: string) {
-    // Kullanıcının hedef modülü (yoksa ilk aktif modül).
-    const u = await this.prisma.user.findUnique({
-      where: { id: userId },
-      select: { preferredModuleId: true },
-    });
-    let moduleId = u?.preferredModuleId ?? null;
-    if (!moduleId) {
-      const m = await this.prisma.module.findFirst({
-        where: { isActive: true },
-        orderBy: { sortOrder: 'asc' },
-      });
-      if (!m) throw new NotFoundException('Aktif modül bulunamadı.');
-      moduleId = m.id;
-    }
-
-    // Havuz: modülün premium OLMAYAN konularındaki yayında sorular (herkese açık).
-    const poolFor = (mid: string | null) =>
-      this.prisma.question.findMany({
-        where: {
+  private async pickDailyQuestions() {
+    // Havuz: PAEM → Genel Mevzuat dersindeki yayında, premium OLMAYAN sorular.
+    const pool = await this.prisma.question.findMany({
+      where: {
+        deletedAt: null,
+        currentVersionId: { not: null },
+        topic: {
           deletedAt: null,
-          currentVersionId: { not: null },
-          topic: {
+          isPremium: false,
+          course: {
+            name: QuizService.DAILY_COURSE_NAME,
             deletedAt: null,
-            isPremium: false,
-            course: { deletedAt: null, ...(mid ? { moduleId: mid } : {}) },
+            module: { key: QuizService.DAILY_MODULE_KEY },
           },
         },
-        select: { id: true, currentVersionId: true },
-        orderBy: { id: 'asc' }, // deterministik sıra
-      });
-
-    let pool = await poolFor(moduleId);
+      },
+      select: { id: true, currentVersionId: true },
+      orderBy: { id: 'asc' }, // deterministik taban sıra
+    });
     if (pool.length === 0) {
-      // Hedef modül henüz boş (içerik onay bekliyor olabilir) → tüm modüllerden seç.
-      pool = await poolFor(null);
-      moduleId = 'all';
-    }
-    if (pool.length === 0) {
-      throw new NotFoundException('Günün sorusu için henüz yayında soru yok.');
+      throw new NotFoundException(
+        "Günün quizi için PAEM Genel Mevzuat'ta yayında soru yok. Panelden onaylaman gerekebilir.",
+      );
     }
 
+    // Tarih tohumlu örneklem — herkes o gün aynı 10 soruyu görür (adil liderlik).
     const dateKey = new Date().toISOString().slice(0, 10);
-    const picked = pool[QuizService.hashString(`${dateKey}:${moduleId}`) % pool.length];
-    const v = await this.prisma.questionVersion.findUnique({
-      where: { id: picked.currentVersionId! },
+    const seed = QuizService.hashString(dateKey);
+    const chosen = QuizService.seededSample(pool, QuizService.DAILY_QUESTION_COUNT, seed);
+
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
       select: {
         id: true,
         questionId: true,
         stem: true,
         mediaUrl: true,
         options: {
-          select: { id: true, label: true, text: true },
+          select: { id: true, label: true, text: true }, // is_correct/explanation YOK
           orderBy: { sortOrder: 'asc' },
         },
       },
     });
-    return {
-      questionId: v!.questionId,
-      versionId: v!.id,
-      stem: v!.stem,
-      mediaUrl: v!.mediaUrl,
-      options: v!.options,
-    };
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    // chosen sırasını koru (deterministik).
+    return chosen.map((q) => {
+      const v = byId.get(q.currentVersionId!)!;
+      return {
+        questionId: v.questionId,
+        versionId: v.id,
+        stem: v.stem,
+        mediaUrl: v.mediaUrl,
+        options: v.options,
+      };
+    });
   }
 
-  /** djb2 — kriptografik değil; gün içi sabit seçim için yeterli. */
+  /** djb2 — kriptografik değil; gün içi sabit tohum için yeterli. */
   private static hashString(s: string): number {
     let h = 5381;
     for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
     return h;
+  }
+
+  /** Tohumlu (deterministik) örneklem — Fisher-Yates + mulberry32 PRNG. */
+  private static seededSample<T>(arr: readonly T[], n: number, seed: number): T[] {
+    const a = [...arr];
+    let s = seed >>> 0;
+    const rand = () => {
+      s = (s + 0x6d2b79f5) | 0;
+      let t = Math.imul(s ^ (s >>> 15), 1 | s);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(rand() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a.slice(0, Math.min(n, a.length));
   }
 
   /** Günün sorusu durumu (Home kartı): bugün oynandı mı, doğru muydu? */

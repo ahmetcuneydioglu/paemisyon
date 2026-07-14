@@ -156,27 +156,27 @@ class _Dashboard extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
-        // ── Günün Sorusu (Doc 13 V1) ──
+        // ── Günün Quizi (Doc 13 V1): 10 karışık soru, Genel Mevzuat ──
         Card(
           color: data.dailyPlayedToday
               ? null
               : theme.colorScheme.tertiaryContainer,
           child: ListTile(
-            leading: Text(data.dailyPlayedToday ? '✅' : '☀️',
+            leading: Text(data.dailyPlayedToday ? '✅' : '🎯',
                 style: const TextStyle(fontSize: 24)),
-            title: const Text('Günün Sorusu'),
+            title: const Text('Günün Quizi'),
             subtitle: Text(data.dailyPlayedToday
                 ? 'Bugünkünü çözdün — yarın yenisi seni bekliyor!'
-                : 'Her gün 1 soru · serini koru'),
+                : '10 karışık soru · Genel Mevzuat · serini koru'),
             trailing: data.dailyPlayedToday
                 ? null
                 : const Icon(Icons.chevron_right_rounded),
             onTap: data.dailyPlayedToday
                 ? null
                 : () => context.push('/quiz', extra: {
-                      'topicName': 'Günün Sorusu',
+                      'topicName': 'Günün Quizi',
                       'mode': 'daily',
-                      'count': 1,
+                      'count': 10,
                     }),
           ),
         ),

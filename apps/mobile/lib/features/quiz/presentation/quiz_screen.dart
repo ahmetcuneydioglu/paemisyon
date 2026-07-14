@@ -53,7 +53,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   // Bu oturumda favorilenen sorular (yıldız durumu).
   final Set<String> _bookmarked = {};
 
-  bool get _isPractice => widget.mode == 'practice';
+  // Günün quizi de öğrenme akışı: practice gibi anlık geri bildirim gösterir.
+  bool get _isPractice =>
+      widget.mode == 'practice' || widget.mode == 'daily';
 
   @override
   void initState() {
