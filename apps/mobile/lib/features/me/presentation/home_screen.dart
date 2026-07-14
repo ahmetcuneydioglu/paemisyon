@@ -3,28 +3,28 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
-import '../data/me_repository.dart';
-import '../domain/dashboard_data.dart';
+import '../../../shared/widgets/micro_interactions.dart';
+import '../../coach/data/coach_repository.dart';
+import '../../coach/domain/coach_models.dart';
 
-/// Home / Dashboard (Sprint 7, Doc 12 §4): selamlama + streak + günlük ilerleme +
-/// genel istatistik + hızlı erişim. Tek istek: GET /me/dashboard.
-/// Onboarding tamamlanmamışsa hedef seçimine yönlendirir (Doc 11 §2).
+/// Kişisel Koç ana ekranı (Doc 19 §4). Dashboard DEĞİL: "bugün benim için
+/// ne var?" sorusunun cevabı. Kartlar SUNUCUDAN gelir; bu ekran hiçbir kural
+/// bilmez — yalnız çizer ve dokunuşu yönlendirir. Tek istek: GET /me/coach.
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final dash = ref.watch(dashboardProvider);
+    final brief = ref.watch(coachBriefProvider);
 
-    // İlk giriş: hedef sınav seçilmemişse onboarding'e götür.
-    ref.listen(dashboardProvider, (prev, next) {
-      final d = next.valueOrNull;
-      if (d != null && !d.onboardingCompleted) {
-        context.go('/onboarding');
-      }
+    // İlk giriş: hedef sınav seçilmemişse onboarding'e götür (Doc 11 §2).
+    ref.listen(coachBriefProvider, (prev, next) {
+      final b = next.valueOrNull;
+      if (b != null && !b.onboardingCompleted) context.go('/onboarding');
     });
 
     return Scaffold(
@@ -38,38 +38,40 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
-      body: dash.when(
+      body: brief.when(
         loading: () => const Padding(
           padding: EdgeInsets.all(AppSpacing.lg),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              LoadingSkeleton(height: 28, width: 180),
+              LoadingSkeleton(height: 28, width: 200),
               SizedBox(height: AppSpacing.md),
-              LoadingSkeleton(height: 96),
+              LoadingSkeleton(height: 130),
               SizedBox(height: AppSpacing.md),
-              LoadingSkeleton(height: 96),
-              SizedBox(height: AppSpacing.md),
-              LoadingSkeleton(height: 56),
+              LoadingSkeleton(height: 72),
+              SizedBox(height: AppSpacing.sm),
+              LoadingSkeleton(height: 72),
+              SizedBox(height: AppSpacing.sm),
+              LoadingSkeleton(height: 72),
             ],
           ),
         ),
         error: (err, _) => ErrorStateView(
-          message: err is Failure ? err.message : 'Dashboard yüklenemedi.',
-          onRetry: () => ref.invalidate(dashboardProvider),
+          message: err is Failure ? err.message : 'Koç ekranı yüklenemedi.',
+          onRetry: () => ref.invalidate(coachBriefProvider),
         ),
-        data: (d) => RefreshIndicator(
-          onRefresh: () async => ref.invalidate(dashboardProvider),
-          child: _Dashboard(data: d),
+        data: (b) => RefreshIndicator(
+          onRefresh: () async => ref.invalidate(coachBriefProvider),
+          child: _CoachBody(brief: b),
         ),
       ),
     );
   }
 }
 
-class _Dashboard extends StatelessWidget {
-  final DashboardData data;
-  const _Dashboard({required this.data});
+class _CoachBody extends ConsumerWidget {
+  final CoachBrief brief;
+  const _CoachBody({required this.brief});
 
   String get _greeting {
     final h = DateTime.now().hour;
@@ -80,284 +82,494 @@ class _Dashboard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final name = (data.displayName?.trim().isNotEmpty ?? false)
-        ? data.displayName!.trim()
+    final pal = AccentPalette.of(context);
+    final name = (brief.displayName?.trim().isNotEmpty ?? false)
+        ? brief.displayName!.trim()
         : null;
 
-    return ListView(
-      padding: const EdgeInsets.all(AppSpacing.lg),
-      children: [
-        // ── Selamlama ──
-        Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    name != null ? '$_greeting, $name' : _greeting,
-                    style: theme.textTheme.headlineSmall,
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    data.preferredModuleName != null
-                        ? 'Hedef: ${data.preferredModuleName} · Bugün de bir adım ileri.'
-                        : 'Bugün de bir adım ileri.',
-                    style: theme.textTheme.bodyMedium,
-                  ),
-                ],
-              ),
-            ),
-            if (data.isPremium)
-              Chip(
-                avatar: Icon(Icons.workspace_premium_rounded,
-                    size: 18, color: theme.colorScheme.primary),
-                label: const Text('Premium'),
-                visualDensity: VisualDensity.compact,
-              ),
-          ],
-        ),
-        const SizedBox(height: AppSpacing.lg),
+    // Kart/CTA dokunuşu: rotaya git, dönünce brief'i tazele (yaşayan ekran).
+    Future<void> open(String type, String route,
+        [Map<String, dynamic> meta = const {}]) async {
+      switch (type) {
+        case 'daily_quiz':
+          await context.push('/quiz', extra: {
+            'topicName': 'Günün Quizi',
+            'mode': 'daily',
+            'count': meta['count'] as int? ?? 10,
+          });
+        case 'weak_topic':
+          await context.push('/quiz', extra: {
+            'topicId': meta['topicId'] as String?,
+            'topicName': meta['topicName'] as String? ?? 'Güçlendirme',
+            'mode': 'practice',
+            'count': 10,
+          });
+        default:
+          await context.push(route);
+      }
+      ref.invalidate(coachBriefProvider);
+    }
 
-        // ── Günlük ilerleme + streak ──
-        // NOT: ListView çocukları sonsuz yükseklik alır; Row'da doğrudan
-        // CrossAxisAlignment.stretch kullanmak layout'u çökertir (telefonda
-        // görülen "boş ekran" hatası). Eş boy kart için IntrinsicHeight doğru araç.
-        IntrinsicHeight(
+    var i = 0;
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(
+          AppSpacing.md, AppSpacing.xs, AppSpacing.md, AppSpacing.xl),
+      children: [
+        // ── Selam + seri chip'i ──
+        StaggeredReveal(
+          index: i++,
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(child: _TodayCard(data: data)),
-              const SizedBox(width: AppSpacing.md),
-              _StreakCard(
-                  current: data.currentStreak, longest: data.longestStreak),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name != null ? '$_greeting, $name' : _greeting,
+                      style: theme.textTheme.headlineSmall,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    if (brief.preferredModuleName != null) ...[
+                      const SizedBox(height: 2),
+                      Text('Hedef: ${brief.preferredModuleName}',
+                          style: theme.textTheme.bodySmall),
+                    ],
+                  ],
+                ),
+              ),
+              _StreakChip(
+                current: brief.streakCurrent,
+                atRisk: brief.streakAtRisk,
+                pal: pal,
+              ),
             ],
           ),
         ),
         const SizedBox(height: AppSpacing.md),
 
-        // ── Genel istatistik ──
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(
-                vertical: AppSpacing.md, horizontal: AppSpacing.sm),
-            child: Row(
-              children: [
-                _Stat(label: 'Çözülen', value: '${data.totalSolved}'),
-                _divider(context),
-                _Stat(label: 'Doğruluk', value: '%${data.accuracy}'),
-                _divider(context),
-                _Stat(label: 'Oturum', value: '${data.totalSessions}'),
-              ],
+        // ── Bugün hero'su: hedef halkası + tek birincil CTA ──
+        StaggeredReveal(
+          index: i++,
+          child: _TodayHero(
+            brief: brief,
+            pal: pal,
+            onPrimary: () => open(
+              brief.primaryActionType,
+              brief.primaryAction.route,
+              brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
             ),
           ),
         ),
-        const SizedBox(height: AppSpacing.lg),
+        const SizedBox(height: AppSpacing.sm),
 
-        // ── Günün Quizi (Doc 13 V1): 10 karışık soru, Genel Mevzuat ──
-        Card(
-          color: data.dailyPlayedToday
-              ? null
-              : theme.colorScheme.tertiaryContainer,
-          child: ListTile(
-            leading: Text(data.dailyPlayedToday ? '✅' : '🎯',
-                style: const TextStyle(fontSize: 24)),
-            title: const Text('Günün Quizi'),
-            subtitle: Text(data.dailyPlayedToday
-                ? 'Bugünkünü çözdün — yarın yenisi seni bekliyor!'
-                : '10 karışık soru · Genel Mevzuat · serini koru'),
-            trailing: data.dailyPlayedToday
-                ? null
-                : const Icon(Icons.chevron_right_rounded),
-            onTap: data.dailyPlayedToday
-                ? null
-                : () => context.push('/quiz', extra: {
-                      'topicName': 'Günün Quizi',
-                      'mode': 'daily',
-                      'count': 10,
-                    }),
+        // ── Koç kartları: "bugün senin için" ──
+        StaggeredReveal(index: i++, child: const _SectionHeader('BUGÜN SENİN İÇİN')),
+        for (final card in brief.cards)
+          StaggeredReveal(
+            index: i++,
+            child: _CoachCardTile(
+              card: card,
+              pal: pal,
+              onTap: card.cta != null || card.type == 'daily_quiz'
+                  ? () => open(card.type, card.cta?.route ?? '/catalog', card.meta)
+                  : null,
+            ),
           ),
-        ),
+
+        // ── Rozet rafı: sıradaki rozet ilerlemesi ──
+        if (brief.nextBadge != null) ...[
+          const SizedBox(height: AppSpacing.xs),
+          StaggeredReveal(
+            index: i++,
+            child: _NextBadgeTile(badge: brief.nextBadge!, pal: pal),
+          ),
+        ],
         const SizedBox(height: AppSpacing.md),
 
-        // ── Denemeler (Doc 18): randevulu canlı deneme sınavları ──
-        Card(
-          child: ListTile(
-            leading: const Text('📝', style: TextStyle(fontSize: 24)),
-            title: const Text('Denemeler'),
-            subtitle: const Text('Canlı deneme sınavları · sıralamana bak'),
-            trailing: const Icon(Icons.chevron_right_rounded),
-            onTap: () => context.push('/denemeler'),
-          ),
-        ),
-        const SizedBox(height: AppSpacing.md),
-
-        // ── Ana aksiyon ──
-        FilledButton.icon(
-          style: FilledButton.styleFrom(
-              padding: const EdgeInsets.symmetric(vertical: AppSpacing.md)),
-          onPressed: () => context.push('/catalog'),
-          icon: const Icon(Icons.play_arrow_rounded),
-          label: const Text('Çalışmaya Başla'),
+        // ── Kompakt istatistik şeridi (detay → İlerlemem) ──
+        StaggeredReveal(
+          index: i++,
+          child: _StatsStrip(brief: brief),
         ),
         const SizedBox(height: AppSpacing.md),
 
         // ── Hızlı erişim ──
-        Row(
-          children: [
-            Expanded(
-              child: _QuickAction(
+        StaggeredReveal(
+          index: i++,
+          child: Row(
+            children: [
+              _QuickAction(
+                icon: Icons.menu_book_rounded,
+                label: 'Çalış',
+                onTap: () => open('default', '/catalog'),
+              ),
+              const SizedBox(width: AppSpacing.sm),
+              _QuickAction(
+                icon: Icons.edit_note_rounded,
+                label: 'Denemeler',
+                onTap: () => open('default', '/denemeler'),
+              ),
+              const SizedBox(width: AppSpacing.sm),
+              _QuickAction(
                 icon: Icons.insights_rounded,
                 label: 'İlerlemem',
-                onTap: () => context.push('/progress'),
+                onTap: () => open('default', '/progress'),
               ),
-            ),
-            const SizedBox(width: AppSpacing.sm),
-            Expanded(
-              child: _QuickAction(
-                icon: Icons.refresh_rounded,
-                label: 'Tekrar',
-                onTap: () => context.push('/review'),
-              ),
-            ),
-            const SizedBox(width: AppSpacing.sm),
-            Expanded(
-              child: _QuickAction(
+              const SizedBox(width: AppSpacing.sm),
+              _QuickAction(
                 icon: Icons.emoji_events_rounded,
                 label: 'Sıralama',
-                onTap: () => context.push('/leaderboard'),
+                onTap: () => open('default', '/leaderboard'),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
 
         // ── Premium CTA (yalnızca free) ──
-        if (!data.isPremium) ...[
-          const SizedBox(height: AppSpacing.lg),
-          Card(
-            color: theme.colorScheme.primaryContainer,
-            child: ListTile(
-              leading: Icon(Icons.workspace_premium_rounded,
-                  color: theme.colorScheme.onPrimaryContainer),
-              title: const Text('Sınırsız soru için Premium'),
-              subtitle: const Text('Günlük sınırı kaldır, tüm içeriğe eriş.'),
-              trailing: const Icon(Icons.chevron_right_rounded),
-              onTap: () => context.push('/paywall'),
+        if (!brief.isPremium) ...[
+          const SizedBox(height: AppSpacing.md),
+          StaggeredReveal(
+            index: i++,
+            child: PressableScale(
+              onTap: () => open('default', '/paywall'),
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+                decoration: BoxDecoration(
+                  color: pal.proBg,
+                  borderRadius: BorderRadius.circular(AppSpacing.radius),
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.workspace_premium_rounded, color: pal.proFg),
+                    const SizedBox(width: AppSpacing.sm),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Sınırsız soru için Premium',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: pal.proFg)),
+                          Text('Günlük sınırı kaldır, tüm içeriğe eriş.',
+                              style:
+                                  TextStyle(fontSize: 12, color: pal.proFg)),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.chevron_right_rounded, color: pal.proFg),
+                  ],
+                ),
+              ),
             ),
           ),
         ],
       ],
     );
   }
-
-  Widget _divider(BuildContext context) => Container(
-        width: 1,
-        height: 32,
-        color: Theme.of(context).colorScheme.outlineVariant,
-      );
 }
 
-/// Bugünkü soru kullanımı: free'de limit bar'ı, premium'da sınırsız rozeti.
-class _TodayCard extends StatelessWidget {
-  final DashboardData data;
-  const _TodayCard({required this.data});
+// ── Seri chip'i ──
 
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final limit = data.dailyLimit;
-    final progress =
-        limit == null ? null : (data.answeredToday / limit).clamp(0.0, 1.0);
-
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Bugün', style: theme.textTheme.labelMedium),
-            const SizedBox(height: AppSpacing.xs),
-            Text(
-              limit == null
-                  ? '${data.answeredToday} soru'
-                  : '${data.answeredToday} / $limit soru',
-              style: theme.textTheme.titleMedium,
-            ),
-            const SizedBox(height: AppSpacing.sm),
-            if (progress != null)
-              ClipRRect(
-                borderRadius: BorderRadius.circular(4),
-                child: LinearProgressIndicator(value: progress, minHeight: 6),
-              )
-            else
-              Row(
-                children: [
-                  Icon(Icons.all_inclusive_rounded,
-                      size: 16, color: theme.colorScheme.primary),
-                  const SizedBox(width: 4),
-                  Text('Sınırsız', style: theme.textTheme.bodySmall),
-                ],
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _StreakCard extends StatelessWidget {
+class _StreakChip extends StatelessWidget {
   final int current;
-  final int longest;
-  const _StreakCard({required this.current, required this.longest});
+  final bool atRisk;
+  final AccentPalette pal;
+  const _StreakChip(
+      {required this.current, required this.atRisk, required this.pal});
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Seri', style: theme.textTheme.labelMedium),
-            const SizedBox(height: AppSpacing.xs),
-            Row(
-              children: [
-                const Text('🔥', style: TextStyle(fontSize: 20)),
-                const SizedBox(width: 4),
-                Text('$current gün', style: theme.textTheme.titleMedium),
-              ],
-            ),
-            const SizedBox(height: AppSpacing.sm),
-            Text('Rekor: $longest', style: theme.textTheme.bodySmall),
-          ],
-        ),
+    if (current <= 0) return const SizedBox.shrink();
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: pal.warnBg,
+        borderRadius: BorderRadius.circular(20),
       ),
-    );
-  }
-}
-
-class _Stat extends StatelessWidget {
-  final String label;
-  final String value;
-  const _Stat({required this.label, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Expanded(
-      child: Column(
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Text(value, style: theme.textTheme.titleLarge),
-          const SizedBox(height: 2),
-          Text(label, style: theme.textTheme.bodySmall),
+          Icon(
+            atRisk
+                ? Icons.local_fire_department_outlined
+                : Icons.local_fire_department_rounded,
+            size: 16,
+            color: pal.warnFg,
+          ),
+          const SizedBox(width: 4),
+          Text('$current gün',
+              style: TextStyle(
+                  fontSize: 13, fontWeight: FontWeight.w700, color: pal.warnFg)),
         ],
       ),
     );
   }
 }
+
+// ── Bugün hero'su ──
+
+class _TodayHero extends StatelessWidget {
+  final CoachBrief brief;
+  final AccentPalette pal;
+  final VoidCallback onPrimary;
+  const _TodayHero(
+      {required this.brief, required this.pal, required this.onPrimary});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final remaining = brief.goal - brief.answered;
+    final headline = remaining > 0
+        ? 'Bugünkü hedefine $remaining soru kaldı'
+        : 'Bugünkü hedefini tamamladın 🎉';
+
+    return Container(
+      padding: const EdgeInsets.all(AppSpacing.md),
+      decoration: BoxDecoration(
+        color: pal.heroBg,
+        border: Border.all(color: pal.heroBorder),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+      ),
+      child: Row(
+        children: [
+          AnimatedGoalRing(
+            value: brief.goal > 0 ? brief.answered / brief.goal : 0,
+            color: pal.accent,
+            center: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('${brief.answered}/${brief.goal}',
+                    style: theme.textTheme.titleSmall
+                        ?.copyWith(fontWeight: FontWeight.w700, height: 1.1)),
+                Text('soru', style: theme.textTheme.labelSmall),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(headline,
+                    style: theme.textTheme.titleSmall
+                        ?.copyWith(fontWeight: FontWeight.w600)),
+                const SizedBox(height: 2),
+                Text(
+                  'Bu hafta ${brief.weeklyActiveDays}/${brief.weeklyGoalDays} aktif gün',
+                  style: theme.textTheme.bodySmall,
+                ),
+                const SizedBox(height: AppSpacing.sm),
+                FilledButton(
+                  style: FilledButton.styleFrom(
+                    minimumSize: const Size.fromHeight(40),
+                    visualDensity: VisualDensity.compact,
+                    backgroundColor: pal.accent,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: onPrimary,
+                  child: Text(brief.primaryAction.label),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Bölüm başlığı ──
+
+class _SectionHeader extends StatelessWidget {
+  final String label;
+  const _SectionHeader(this.label);
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.fromLTRB(
+            AppSpacing.xs, AppSpacing.md, AppSpacing.xs, AppSpacing.sm),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.8,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+      );
+}
+
+// ── Koç kartı: ikon + başlık + gövde + hafif CTA ──
+
+class _CoachCardTile extends StatelessWidget {
+  final CoachCard card;
+  final AccentPalette pal;
+  final VoidCallback? onTap;
+  const _CoachCardTile({required this.card, required this.pal, this.onTap});
+
+  (IconData, Color) _visual(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return switch (card.type) {
+      'exam_live' => (Icons.sensors_rounded, pal.liveFg),
+      'exam_in_progress' => (Icons.play_circle_outline_rounded, pal.accentText),
+      'exam_today' => (Icons.event_available_rounded, pal.accentText),
+      'new_exam' => (Icons.fiber_new_rounded, pal.accentText),
+      'streak_risk' => (Icons.local_fire_department_rounded, pal.warnFg),
+      'goal_remaining' => (Icons.flag_rounded, pal.accentText),
+      'quick_review' => (Icons.refresh_rounded, pal.liveFg),
+      'weak_topic' => (Icons.trending_down_rounded, pal.warnFg),
+      'course_trend' => (Icons.trending_up_rounded, pal.liveFg),
+      'daily_quiz' => (Icons.today_rounded, pal.accentText),
+      'badge_near' => (Icons.military_tech_rounded, pal.proFg),
+      'comeback' => (Icons.waving_hand_rounded, pal.warnFg),
+      _ => (Icons.auto_awesome_rounded, scheme.onSurfaceVariant),
+    };
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final (icon, color) = _visual(context);
+
+    return PressableScale(
+      onTap: onTap,
+      child: Container(
+        margin: const EdgeInsets.only(bottom: AppSpacing.sm),
+        padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+        decoration: BoxDecoration(
+          border: Border.all(color: theme.colorScheme.outlineVariant),
+          borderRadius: BorderRadius.circular(AppSpacing.radius),
+        ),
+        child: Row(
+          children: [
+            Icon(icon, size: 22, color: color),
+            const SizedBox(width: AppSpacing.sm + 2),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(card.title,
+                      style: theme.textTheme.bodyMedium
+                          ?.copyWith(fontWeight: FontWeight.w600)),
+                  if (card.body != null && card.body!.isNotEmpty) ...[
+                    const SizedBox(height: 1),
+                    Text(card.body!,
+                        style: theme.textTheme.bodySmall,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis),
+                  ],
+                ],
+              ),
+            ),
+            if (card.cta != null) ...[
+              const SizedBox(width: AppSpacing.xs),
+              Text(card.cta!.label,
+                  style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: pal.accentText)),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── Rozet rafı ──
+
+class _NextBadgeTile extends StatelessWidget {
+  final NextBadge badge;
+  final AccentPalette pal;
+  const _NextBadgeTile({required this.badge, required this.pal});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+      decoration: BoxDecoration(
+        border: Border.all(color: theme.colorScheme.outlineVariant),
+        borderRadius: BorderRadius.circular(AppSpacing.radius),
+      ),
+      child: Row(
+        children: [
+          Icon(Icons.military_tech_rounded, size: 22, color: pal.proFg),
+          const SizedBox(width: AppSpacing.sm + 2),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('${badge.name} rozeti · ${badge.progress}/${badge.target}',
+                    style: theme.textTheme.bodyMedium
+                        ?.copyWith(fontWeight: FontWeight.w600)),
+                const SizedBox(height: 6),
+                AnimatedFillBar(
+                  value: badge.target > 0 ? badge.progress / badge.target : 0,
+                  color: pal.proFg,
+                  height: 4,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Kompakt istatistik şeridi ──
+
+class _StatsStrip extends StatelessWidget {
+  final CoachBrief brief;
+  const _StatsStrip({required this.brief});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    Widget cell(String value, String label, {bool divider = true}) => Expanded(
+          child: Container(
+            decoration: divider
+                ? BoxDecoration(
+                    border: Border(
+                        right:
+                            BorderSide(color: theme.colorScheme.outlineVariant)))
+                : null,
+            child: Column(
+              children: [
+                Text(value, style: theme.textTheme.titleMedium),
+                const SizedBox(height: 2),
+                Text(label, style: theme.textTheme.bodySmall),
+              ],
+            ),
+          ),
+        );
+
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm + 2),
+      decoration: BoxDecoration(
+        border: Border.all(color: theme.colorScheme.outlineVariant),
+        borderRadius: BorderRadius.circular(AppSpacing.radius),
+      ),
+      child: Row(
+        children: [
+          cell('${brief.totalSolved}', 'Çözülen'),
+          cell('%${brief.accuracy}', 'Doğruluk'),
+          cell('${brief.totalSessions}', 'Oturum', divider: false),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Hızlı erişim ──
 
 class _QuickAction extends StatelessWidget {
   final IconData icon;
@@ -368,17 +580,24 @@ class _QuickAction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: InkWell(
+    final theme = Theme.of(context);
+    return Expanded(
+      child: PressableScale(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm + 4),
+          decoration: BoxDecoration(
+            border: Border.all(color: theme.colorScheme.outlineVariant),
+            borderRadius: BorderRadius.circular(AppSpacing.radius),
+          ),
           child: Column(
             children: [
-              Icon(icon, color: Theme.of(context).colorScheme.primary),
+              Icon(icon, color: theme.colorScheme.primary, size: 22),
               const SizedBox(height: AppSpacing.xs),
-              Text(label),
+              Text(label,
+                  style: const TextStyle(fontSize: 12),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis),
             ],
           ),
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../domain/quiz_models.dart';
@@ -67,6 +68,45 @@ class ResultScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodySmall,
               ),
+              // ── Rozet kutlaması (Doc 19): bu oturumla kazanılanlar ──
+              if (result.earnedBadges.isNotEmpty) ...[
+                const SizedBox(height: AppSpacing.md),
+                for (final b in result.earnedBadges)
+                  Container(
+                    margin: const EdgeInsets.only(bottom: AppSpacing.xs),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpacing.md, vertical: AppSpacing.sm),
+                    decoration: BoxDecoration(
+                      color: AccentPalette.of(context).proBg,
+                      borderRadius: BorderRadius.circular(AppSpacing.radius),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.military_tech_rounded,
+                            color: AccentPalette.of(context).proFg),
+                        const SizedBox(width: AppSpacing.sm),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Yeni rozet: ${b.name}',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      color:
+                                          AccentPalette.of(context).proFg)),
+                              if (b.description.isNotEmpty)
+                                Text(b.description,
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color:
+                                            AccentPalette.of(context).proFg)),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
               // ── Deneme karnesi: konu bazlı kırılım (ders denemesinde) ──
               if (result.topicBreakdown != null &&
                   result.topicBreakdown!.isNotEmpty) ...[

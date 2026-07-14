@@ -18,7 +18,14 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
   return {
     now: new Date('2026-07-14T10:00:00Z'),
     trHour: 13,
-    user: { id: 'u1', displayName: 'Test', dailyGoal: 20, isPremium: false },
+    user: {
+      id: 'u1',
+      displayName: 'Test',
+      dailyGoal: 20,
+      isPremium: false,
+      onboardingCompleted: true,
+      preferredModuleName: null,
+    },
     streak: { current: 0, longest: 0, activeYesterday: false },
     answeredToday: 0,
     stats: { totalSolved: 0, totalCorrect: 0, totalSessions: 0 },

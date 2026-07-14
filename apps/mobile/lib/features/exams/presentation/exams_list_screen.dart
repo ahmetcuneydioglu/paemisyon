@@ -5,11 +5,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/micro_interactions.dart';
 import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
 
@@ -102,7 +104,7 @@ class _Sections extends ConsumerWidget {
       if (active.isNotEmpty) ...[
         const _SectionHeader('CANLI'),
         for (final e in active)
-          _Staggered(
+          StaggeredReveal(
             index: i++,
             child: _HeroExamCard(
               exam: e,
@@ -114,12 +116,12 @@ class _Sections extends ConsumerWidget {
       if (upcoming.isNotEmpty) ...[
         const _SectionHeader('YAKLAŞAN'),
         for (final e in upcoming)
-          _Staggered(index: i++, child: _UpcomingRow(exam: e)),
+          StaggeredReveal(index: i++, child: _UpcomingRow(exam: e)),
       ],
       if (ended.isNotEmpty) ...[
         const _SectionHeader('GEÇMİŞ'),
         for (final e in ended)
-          _Staggered(
+          StaggeredReveal(
             index: i++,
             child: _PastRow(exam: e, result: mine[e.id], onOpen: go),
           ),
@@ -174,61 +176,6 @@ class _SectionHeader extends StatelessWidget {
       );
 }
 
-// ── Wireframe paleti: açık temada 50 zemin + 600 metin, koyu temada
-// 800 zemin + 100/200 metin (onaylı widget ile birebir). ──
-
-class _Pal {
-  final Color accent; // CTA + ilerleme çubuğu (her iki temada canlı mavi)
-  final Color accentText; // sayaç
-  final Color heroBg;
-  final Color heroBorder;
-  final Color liveBg, liveFg; // Canlı / Katıldın (teal)
-  final Color warnBg, warnFg; // Yakında (amber)
-  final Color proBg, proFg; // Premium (mor)
-
-  const _Pal._({
-    required this.accent,
-    required this.accentText,
-    required this.heroBg,
-    required this.heroBorder,
-    required this.liveBg,
-    required this.liveFg,
-    required this.warnBg,
-    required this.warnFg,
-    required this.proBg,
-    required this.proFg,
-  });
-
-  factory _Pal.of(BuildContext context) {
-    final dark = Theme.of(context).brightness == Brightness.dark;
-    return dark
-        ? const _Pal._(
-            accent: AppColors.blue400,
-            accentText: AppColors.blue200,
-            heroBg: AppColors.blue800,
-            heroBorder: AppColors.blue600,
-            liveBg: AppColors.teal800,
-            liveFg: AppColors.teal200,
-            warnBg: AppColors.amber800,
-            warnFg: AppColors.amber100,
-            proBg: AppColors.purple800,
-            proFg: AppColors.purple100,
-          )
-        : const _Pal._(
-            accent: AppColors.blue400,
-            accentText: AppColors.blue600,
-            heroBg: AppColors.blue50,
-            heroBorder: AppColors.blue200,
-            liveBg: AppColors.teal50,
-            liveFg: AppColors.teal600,
-            warnBg: AppColors.amber50,
-            warnFg: AppColors.amber600,
-            proBg: AppColors.purple50,
-            proFg: AppColors.purple600,
-          );
-  }
-}
-
 // ── Rozet sistemi: durumlar buton yerine rozetle anlatılır ──
 
 class _Badge extends StatelessWidget {
@@ -249,136 +196,13 @@ class _Badge extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             if (dotColor != null) ...[
-              _PulseDot(color: dotColor!),
+              PulseDot(color: dotColor!),
               const SizedBox(width: 5),
             ],
             Text(label,
                 style: TextStyle(
                     fontSize: 11, fontWeight: FontWeight.w600, color: fg)),
           ],
-        ),
-      );
-}
-
-/// Canlı rozetindeki nefes alan nokta.
-class _PulseDot extends StatefulWidget {
-  final Color color;
-  const _PulseDot({required this.color});
-
-  @override
-  State<_PulseDot> createState() => _PulseDotState();
-}
-
-class _PulseDotState extends State<_PulseDot>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _c = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 900))
-    ..repeat(reverse: true);
-
-  @override
-  void dispose() {
-    _c.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) => FadeTransition(
-        opacity: Tween(begin: 0.35, end: 1.0)
-            .animate(CurvedAnimation(parent: _c, curve: Curves.easeInOut)),
-        child: Container(
-          width: 7,
-          height: 7,
-          decoration:
-              BoxDecoration(color: widget.color, shape: BoxShape.circle),
-        ),
-      );
-}
-
-// ── Mikro animasyonlar ──
-
-/// Kademeli giriş: sırasına göre gecikmeli fade + yukarı kayma.
-class _Staggered extends StatefulWidget {
-  final int index;
-  final Widget child;
-  const _Staggered({required this.index, required this.child});
-
-  @override
-  State<_Staggered> createState() => _StaggeredState();
-}
-
-class _StaggeredState extends State<_Staggered> {
-  bool _visible = false;
-
-  @override
-  void initState() {
-    super.initState();
-    Future.delayed(Duration(milliseconds: 40 * widget.index.clamp(0, 10)), () {
-      if (mounted) setState(() => _visible = true);
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) => AnimatedSlide(
-        offset: _visible ? Offset.zero : const Offset(0, 0.04),
-        duration: const Duration(milliseconds: 280),
-        curve: Curves.easeOutCubic,
-        child: AnimatedOpacity(
-          opacity: _visible ? 1 : 0,
-          duration: const Duration(milliseconds: 280),
-          child: widget.child,
-        ),
-      );
-}
-
-/// Basınca hafifçe küçülen kart sarmalayıcısı (premium dokunuş hissi).
-class _Pressable extends StatefulWidget {
-  final Widget child;
-  final VoidCallback? onTap;
-  const _Pressable({required this.child, this.onTap});
-
-  @override
-  State<_Pressable> createState() => _PressableState();
-}
-
-class _PressableState extends State<_Pressable> {
-  bool _down = false;
-
-  @override
-  Widget build(BuildContext context) => GestureDetector(
-        onTapDown: widget.onTap == null
-            ? null
-            : (_) => setState(() => _down = true),
-        onTapUp: (_) => setState(() => _down = false),
-        onTapCancel: () => setState(() => _down = false),
-        onTap: widget.onTap,
-        child: AnimatedScale(
-          scale: _down ? 0.98 : 1,
-          duration: const Duration(milliseconds: 110),
-          curve: Curves.easeOut,
-          child: widget.child,
-        ),
-      );
-}
-
-/// Açılışta yumuşakça dolan ilerleme çubuğu.
-class _AnimatedBar extends StatelessWidget {
-  final double value; // 0..1
-  final Color color;
-  const _AnimatedBar({required this.value, required this.color});
-
-  @override
-  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
-        tween: Tween(begin: 0, end: value.clamp(0.0, 1.0)),
-        duration: const Duration(milliseconds: 700),
-        curve: Curves.easeOutCubic,
-        builder: (context, v, _) => ClipRRect(
-          borderRadius: BorderRadius.circular(3),
-          child: LinearProgressIndicator(
-            value: v,
-            minHeight: 5,
-            color: color,
-            backgroundColor: color.withValues(alpha: 0.15),
-          ),
         ),
       );
 }
@@ -454,7 +278,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
   @override
   Widget build(BuildContext context) {
     final exam = widget.exam;
-    final pal = _Pal.of(context);
+    final pal = AccentPalette.of(context);
     final total = exam.endAt.difference(exam.startAt);
     final remainingFrac = total.inSeconds == 0
         ? 0.0
@@ -468,7 +292,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
             '/denemeler/${exam.id}',
           );
 
-    return _Pressable(
+    return PressableScale(
       onTap: () => widget.onOpen(ctaPath),
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
@@ -512,7 +336,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
             const SizedBox(height: AppSpacing.xs),
             _MetaRow(exam: exam),
             const SizedBox(height: AppSpacing.sm + 2),
-            _AnimatedBar(value: remainingFrac, color: pal.accent),
+            AnimatedFillBar(value: remainingFrac, color: pal.accent),
             const SizedBox(height: AppSpacing.xs),
             Text('Bitiş ${_hm(exam.endAt)}',
                 style: Theme.of(context).textTheme.bodySmall),
@@ -543,7 +367,7 @@ class _UpcomingRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final pal = _Pal.of(context);
+    final pal = AccentPalette.of(context);
     final l = exam.startAt.toLocal();
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.sm),
@@ -613,7 +437,7 @@ class _PastRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final pal = _Pal.of(context);
+    final pal = AccentPalette.of(context);
     final attended = exam.myAttempt != null;
     final l = exam.startAt.toLocal();
 
@@ -624,7 +448,7 @@ class _PastRow extends StatelessWidget {
 
     final subtitle = _subtitle(context, l);
 
-    return _Pressable(
+    return PressableScale(
       onTap: () => onOpen(path),
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),

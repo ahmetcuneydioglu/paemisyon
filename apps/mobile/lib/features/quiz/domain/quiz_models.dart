@@ -100,6 +100,24 @@ class AnswerFeedback {
       );
 }
 
+/// Oturum bitince yeni kazanılan rozet (Doc 19) — sonuç ekranında kutlanır.
+class EarnedBadge {
+  final String key;
+  final String name;
+  final String description;
+  const EarnedBadge({
+    required this.key,
+    required this.name,
+    required this.description,
+  });
+
+  factory EarnedBadge.fromJson(Map<String, dynamic> j) => EarnedBadge(
+        key: j['key'] as String,
+        name: j['name'] as String,
+        description: j['description'] as String? ?? '',
+      );
+}
+
 class QuizResult {
   final int totalQuestions;
   final int correctCount;
@@ -112,6 +130,9 @@ class QuizResult {
   /// Ders denemesinde konu bazlı karne (null = konu oturumu).
   final List<TopicScore>? topicBreakdown;
 
+  /// Bu tamamlamayla kazanılan rozetler (Doc 19) — boş olabilir.
+  final List<EarnedBadge> earnedBadges;
+
   const QuizResult({
     required this.totalQuestions,
     required this.correctCount,
@@ -121,6 +142,7 @@ class QuizResult {
     required this.durationSeconds,
     this.mode,
     this.topicBreakdown,
+    this.earnedBadges = const [],
   });
 
   factory QuizResult.fromJson(Map<String, dynamic> j) => QuizResult(
@@ -133,6 +155,9 @@ class QuizResult {
         mode: j['mode'] as String?,
         topicBreakdown: (j['topicBreakdown'] as List<dynamic>?)
             ?.map((e) => TopicScore.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        earnedBadges: (j['earnedBadges'] as List<dynamic>? ?? const [])
+            .map((e) => EarnedBadge.fromJson(e as Map<String, dynamic>))
             .toList(),
       );
 }

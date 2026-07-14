@@ -44,6 +44,8 @@ export class CoachService {
       greeting: {
         displayName: ctx.user.displayName,
         isPremium: ctx.user.isPremium,
+        onboardingCompleted: ctx.user.onboardingCompleted,
+        preferredModuleName: ctx.user.preferredModuleName,
       },
       today: {
         goal: ctx.user.dailyGoal,
@@ -58,6 +60,14 @@ export class CoachService {
       },
       primaryAction,
       cards,
+      stats: {
+        totalSolved: ctx.stats.totalSolved,
+        accuracy:
+          ctx.stats.totalSolved > 0
+            ? Math.round((ctx.stats.totalCorrect / ctx.stats.totalSolved) * 100)
+            : 0,
+        totalSessions: ctx.stats.totalSessions,
+      },
       gamification: {
         nextBadge: ctx.nextBadge,
         records: {
@@ -98,7 +108,12 @@ export class CoachService {
     ] = await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
-        select: { displayName: true, dailyGoal: true },
+        select: {
+          displayName: true,
+          dailyGoal: true,
+          onboardingCompletedAt: true,
+          preferredModule: { select: { name: true } },
+        },
       }),
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
       this.prisma.dailyUsage.findUnique({
@@ -247,6 +262,8 @@ export class CoachService {
         displayName: profile?.displayName ?? null,
         dailyGoal: profile?.dailyGoal ?? 20,
         isPremium: user.isPremium,
+        onboardingCompleted: profile?.onboardingCompletedAt != null,
+        preferredModuleName: profile?.preferredModule?.name ?? null,
       },
       streak: {
         current: streak?.currentStreak ?? 0,

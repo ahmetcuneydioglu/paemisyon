@@ -48,6 +48,8 @@ export interface CoachContext {
     displayName: string | null;
     dailyGoal: number;
     isPremium: boolean;
+    onboardingCompleted: boolean;
+    preferredModuleName: string | null;
   };
   streak: {
     current: number;
@@ -99,7 +101,12 @@ export type CoachRule = (ctx: CoachContext) => CoachCard | null;
 
 /** GET /me/coach yanıtı (Doc 19 §3). */
 export interface CoachBrief {
-  greeting: { displayName: string | null; isPremium: boolean };
+  greeting: {
+    displayName: string | null;
+    isPremium: boolean;
+    onboardingCompleted: boolean;
+    preferredModuleName: string | null;
+  };
   today: {
     goal: number;
     answered: number;
@@ -107,6 +114,8 @@ export interface CoachBrief {
   };
   primaryAction: CoachCta & { type: CoachCardType | 'default' };
   cards: CoachCard[];
+  /** Kompakt istatistik şeridi (Doc 19 §4/5) — ayrı dashboard çağrısı gerekmesin. */
+  stats: { totalSolved: number; accuracy: number; totalSessions: number };
   gamification: {
     nextBadge: CoachContext['nextBadge'];
     records: {
