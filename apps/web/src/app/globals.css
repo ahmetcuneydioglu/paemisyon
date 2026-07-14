@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   Paemisyon Denemeler — tasarım token'ları
+   Kaynak: eski tema styles.css (Doc 18 §4 sadakat planı).
+   Renk/tipografi/buton dili birebir korunur.
+───────────────────────────────────────────────────────────── */
+@theme {
+  --color-navy: #173f71;        /* birincil: buton, thead, başlık bandı */
+  --color-navy-dark: #052c5c;   /* nav bar, head2 bandı */
+  --color-navy-deep: #082243;   /* puan kutusu */
+  --color-green: #60b500;       /* doğru / başlat */
+  --color-green-btn2: #6b9b26;
+  --color-red: #ce3d3d;         /* yanlış / bitir */
+  --color-yellow: #ffcb08;      /* sayaç pili / boş */
+  --color-orange: #de8822;      /* btn2 turuncu */
+  --color-blue-blank: #5792ff;  /* boş cevap metni */
+  --color-grey-bg: #f7f7f7;     /* zemin / zebra */
+  --color-border: #e8e8e8;
+  --color-border-soft: #efeeee;
+  --color-text: #444444;
+
+  --font-heading: var(--font-rubik);
+  --font-body: var(--font-open-sans);
+
+  --shadow-card: 0px 5px 14px 0px rgba(24, 23, 28, 0.05);
+}
+
+/* Icomoon — eski sitenin ikon fontu, birebir aynı glifler */
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon/icomoon.woff") format("woff"),
+       url("/fonts/icomoon/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-test:before { content: "\e900"; }
+.icon-calendar:before { content: "\e901"; }
+.icon-null:before { content: "\e902"; }
+.icon-information:before { content: "\e903"; }
+.icon-email:before { content: "\e904"; }
+.icon-fast-forward:before { content: "\e905"; }
+.icon-lock:before { content: "\e906"; }
+.icon-call:before { content: "\e907"; }
+.icon-down-arrow:before { content: "\e908"; }
+.icon-photo:before { content: "\e909"; }
+.icon-instagram:before { content: "\e90a"; }
+.icon-user:before { content: "\e90b"; }
+.icon-enter:before { content: "\e90c"; }
+.icon-question:before { content: "\e90d"; }
+.icon-menu:before { content: "\e90e"; }
+.icon-timer:before { content: "\e90f"; }
+.icon-add-user:before { content: "\e910"; }
+.icon-x:before { content: "\e911"; }
+
+/* ── Taban ── */
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  background: #fff;
+}
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+/* ── Eski tasarım dilinin çekirdek desenleri ── */
+
+/* Tam genişlik lacivert başlık bandı (eski .head2) */
+.head2 {
+  background: var(--color-navy-dark);
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+/* İkonlu büyük ortalanmış başlık (eski .head3) */
+.head3 {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text);
+}
+.head3 i {
+  display: block;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--color-navy);
+}
+
+/* Kart (eski .content) */
+.card-content {
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  padding: 30px 70px;
+}
+@media (max-width: 768px) { .card-content { padding: 20px 15px; } }
+
+/* Köşesiz, hover'da renk tersine dönen butonlar (eski .btn) */
+.btn-old {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  transition: background .15s, color .15s;
+}
+.btn-old-navy  { background: var(--color-navy);  border: 3px solid var(--color-navy); }
+.btn-old-navy:hover  { background: transparent; color: var(--color-navy); }
+.btn-old-green { background: var(--color-green); border: 3px solid var(--color-green); }
+.btn-old-green:hover { background: transparent; color: var(--color-green); }
+.btn-old-red   { background: var(--color-red);   border: 3px solid var(--color-red); }
+.btn-old-red:hover   { background: transparent; color: var(--color-red); }
+
+/* Tablo aksiyon butonları (eski .btn2) */
+.btn2 {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  padding: 3px 20px;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: border-radius .2s, box-shadow .2s;
+}
+.btn2:hover { border-radius: 5px; box-shadow: 0 0 5px rgba(24,23,28,.5); }
+.btn2-orange { background: var(--color-orange); }
+.btn2-green  { background: var(--color-green-btn2); }
+.btn2-red    { background: var(--color-red); }
+.btn2[aria-disabled="true"] { opacity: .85; cursor: default; }
+.btn2[aria-disabled="true"]:hover { border-radius: 0; box-shadow: none; }
+
+/* Deneme listesi tablosu (eski #exams table) */
+.exam-table { width: 100%; border-collapse: collapse; }
+.exam-table thead th {
+  background: var(--color-navy);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 12px;
+  text-align: left;
+}
+.exam-table tbody td { padding: 10px 12px; font-size: 14px; color: var(--color-text); }
+.exam-table tbody tr:nth-child(odd) { background: var(--color-grey-bg); }
+.exam-table tbody td:last-child { text-align: right; }
+
+/* Mobil: tablo → blok düzeni (eski davranış + data-label düzeltmesi) */
+@media (max-width: 768px) {
+  .exam-table thead { display: none; }
+  .exam-table tbody tr { display: block; padding: 10px 0; border-bottom: 1px solid var(--color-border); }
+  .exam-table tbody td { display: block; text-align: left !important; padding: 4px 12px; }
+  .exam-table tbody td[data-label]:before {
+    content: attr(data-label) ": ";
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
+
+/* Sarı sayaç pili (eski #exam .bottom timer) */
+.timer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-yellow);
+  color: #000;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 26px;
+  padding: 6px 18px;
+}
