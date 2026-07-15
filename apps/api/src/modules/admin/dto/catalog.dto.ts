@@ -1,5 +1,13 @@
 import { Type } from 'class-transformer';
-import { IsBoolean, IsInt, IsOptional, IsString, IsUUID, MinLength } from 'class-validator';
+import {
+  IsArray,
+  IsBoolean,
+  IsInt,
+  IsOptional,
+  IsString,
+  IsUUID,
+  MinLength,
+} from 'class-validator';
 
 export class UpsertCourseDto {
   @IsUUID()
@@ -31,4 +39,11 @@ export class UpsertTopicDto {
   @IsOptional()
   @IsBoolean()
   isPremium?: boolean;
+
+  /// İçe aktarmada otomatik konu eşleme desenleri (Doc 20). Örn.
+  /// ["657 sayılı", "Devlet Memurları Kanunu"]. Büyük/küçük harf duyarsız eşleşir.
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  matchKeywords?: string[];
 }

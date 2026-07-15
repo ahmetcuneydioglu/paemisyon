@@ -209,13 +209,17 @@ model Course {
 }
 
 model Topic {
-  id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  courseId  String    @map("course_id") @db.Uuid
-  name      String
-  sortOrder Int       @default(0) @map("sort_order")
-  isPremium Boolean   @default(false) @map("is_premium")
-  createdAt DateTime  @default(now()) @map("created_at")
-  deletedAt DateTime? @map("deleted_at")
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  courseId      String    @map("course_id") @db.Uuid
+  name          String
+  sortOrder     Int       @default(0) @map("sort_order")
+  isPremium     Boolean   @default(false) @map("is_premium")
+  // Toplu içe aktarmada soruyu bu konuya otomatik eşleyen desenler (Doc 20).
+  // Örn. "657 Devlet Memurları Kanunu" → ["657 sayılı", "Devlet Memurları Kanunu"].
+  // Taksonomi = eşleme tablosu: admin konuyu düzenleyerek yönetir.
+  matchKeywords String[]  @map("match_keywords")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  deletedAt     DateTime? @map("deleted_at")
 
   course           Course                 @relation(fields: [courseId], references: [id])
   questions        Question[]

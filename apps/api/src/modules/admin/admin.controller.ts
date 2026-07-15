@@ -174,29 +174,61 @@ export class AdminController {
     return this.questions.update(actor, id, dto);
   }
 
-  // Toplu içe aktarma (Doc 9 §4.4): CSV/XLSX/PDF (resmî kitapçık) →
-  // in_review kuyruğu. dryRun=1 önizleme; source= kaynak etiketi.
+  // Toplu içe aktarma (Doc 9 §4.4 + Doc 20): CSV/XLSX/PDF → in_review kuyruğu.
+  // Sorular satır başına konuya atanır (moduleId kapsamında). dryRun=1 →
+  // önizleme + konu önerisi (yazmaz). Gerçek aktarımda `assignments` (multipart
+  // metin alanı, JSON: rowNo→topicId) tüm geçerli satırları kapsamalı.
   @Post('questions/import')
   @Roles('admin', 'editor')
   @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 10 * 1024 * 1024 } }))
   importQuestions(
     @CurrentUser() actor: AuthenticatedUser,
     @UploadedFile() file: Express.Multer.File | undefined,
-    @Query('topicId', ParseUUIDPipe) topicId: string,
+    @Query('moduleId', ParseUUIDPipe) moduleId: string,
     @Query('dryRun') dryRun?: string,
     @Query('skipErrors') skipErrors?: string,
     @Query('source') source?: string,
+    @Body('assignments') assignments?: string,
   ) {
     if (!file?.buffer?.length) {
       throw new BadRequestException('Dosya yüklenmedi (CSV, XLSX veya PDF bekleniyor).');
     }
+    const filename = file.originalname ?? 'import.csv';
+    if (dryRun === '1' || dryRun === 'true') {
+      return this.questions.previewImport({ moduleId, file: file.buffer, filename });
+    }
+    let parsed: Record<number, string> = {};
+    if (assignments) {
+      try {
+        parsed = JSON.parse(assignments) as Record<number, string>;
+      } catch {
+        throw new BadRequestException('Konu atamaları (assignments) çözümlenemedi.');
+      }
+    }
     return this.questions.import(actor, {
-      topicId,
+      moduleId,
       file: file.buffer,
-      filename: file.originalname ?? 'import.csv',
-      dryRun: dryRun === '1' || dryRun === 'true',
+      filename,
+      assignments: parsed,
       skipErrors: skipErrors === '1' || skipErrors === 'true',
       sourceLabel: source,
+    });
+  }
+
+  // Toplu konu değiştir (Doc 20 §3): sınıflandırma düzeltmesi / soru taşıma.
+  @Post('questions/bulk-set-topic')
+  @Roles('admin', 'editor')
+  bulkSetTopic(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body() body: { questionIds?: string[]; topicId?: string },
+  ) {
+    if (!Array.isArray(body.questionIds) || body.questionIds.length === 0) {
+      throw new BadRequestException('En az bir soru seçilmeli (questionIds).');
+    }
+    if (!body.topicId) throw new BadRequestException('Hedef konu gerekli (topicId).');
+    return this.questions.bulkSetTopic(actor, {
+      questionIds: body.questionIds,
+      topicId: body.topicId,
     });
   }
 

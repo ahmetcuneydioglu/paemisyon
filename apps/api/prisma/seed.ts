@@ -105,6 +105,95 @@ async function main() {
     });
   }
 
+  // ── PAEM mevzuat taksonomisi (Doc 20) — per-kanun konular + eşleme desenleri.
+  // Toplu içe aktarmada soruları otomatik sınıflandırır. BAŞLANGIÇ ağacı:
+  // admin katalog panelinden genişletir/düzeltir. Idempotent (ada göre upsert).
+  const paemModule = await prisma.module.findUnique({ where: { key: 'paem' } });
+  if (paemModule) {
+    // [ders, sıra, [konu, [keyword...]]]
+    const taxonomy: { course: string; topics: { name: string; kw: string[] }[] }[] = [
+      {
+        course: 'Anayasa ve İnkılap Tarihi',
+        topics: [
+          { name: 'T.C. Anayasası', kw: ['T.C. Anayasası', 'Anayasa’ya göre', 'Anayasası’na göre'] },
+          { name: 'Atatürk İlkeleri ve İnkılap Tarihi', kw: ['Atatürk', 'İnkılap', 'Mondros', 'Kurtuluş Savaşı', 'tam bağımsızlık', 'Kabotaj'] },
+        ],
+      },
+      {
+        course: 'İdare Hukuku ve Mahalli İdareler',
+        topics: [
+          { name: '5302 İl Özel İdaresi Kanunu', kw: ['5302 sayılı', 'İl Özel İdaresi'] },
+          { name: '5393 Belediye Kanunu', kw: ['5393 sayılı', 'Belediye Kanunu'] },
+          { name: '5442 İl İdaresi Kanunu', kw: ['5442 sayılı', 'İl İdaresi Kanunu'] },
+          { name: '2576 Bölge İdare Mahkemeleri Kanunu', kw: ['2576 sayılı'] },
+          { name: '2577 İdari Yargılama Usulü Kanunu (İYUK)', kw: ['2577 sayılı', 'İdari Yargılama Usulü'] },
+        ],
+      },
+      {
+        course: 'Memur ve Kamu Mevzuatı',
+        topics: [
+          { name: '657 Devlet Memurları Kanunu', kw: ['657 sayılı', 'Devlet Memurları Kanunu'] },
+          { name: '5018 Kamu Mali Yönetimi Kanunu', kw: ['5018 sayılı', 'Kamu Malî Yönetimi', 'Kamu Mali Yönetimi'] },
+          { name: 'Cumhurbaşkanlığı Teşkilatı (1 sayılı KHK)', kw: ['1 sayılı Cumhurbaşkanlığı', 'Cumhurbaşkanlığı Teşkilatı'] },
+          { name: 'Halkla İlişkiler', kw: ['halkla ilişkiler'] },
+          { name: 'Etik', kw: ['etik davranış', 'etik ilke'] },
+        ],
+      },
+      {
+        course: 'Adli ve İdari Yazı İşleri Mevzuatı',
+        topics: [
+          { name: '5235 Adli Yargı İlk Derece Mahkemeleri Kanunu', kw: ['5235 sayılı'] },
+          { name: '5070 Elektronik İmza Kanunu', kw: ['5070 sayılı', 'Elektronik İmza'] },
+          { name: 'Resmî Yazışmalar Yönetmeliği', kw: ['Resmî Yazışmalarda Uygulanacak', 'Resmî Yazışmalar'] },
+          { name: '7201 Tebligat Kanunu', kw: ['7201 sayılı', 'Tebligat Kanunu'] },
+          { name: 'Tebligat Yönetmelikleri', kw: ['Tebligat Yönetmeliği', 'Elektronik Tebligat'] },
+          { name: '4982 Bilgi Edinme Hakkı Kanunu', kw: ['4982 sayılı', 'Bilgi Edinme'] },
+          { name: '3071 Dilekçe Hakkı Kanunu', kw: ['3071 sayılı', 'Dilekçe Hakkı'] },
+          { name: '492 Harçlar Kanunu', kw: ['492 sayılı', 'Harçlar Kanunu'] },
+          { name: 'Yazı İşleri Yönetmelikleri', kw: ['Yazı İşleri Hizmetlerinin Yürütülmesi', 'Yazı İşleri Müdürlüğü'] },
+          { name: 'SEGBİS ve Ses-Görüntü Yönetmelikleri', kw: ['SEGBİS', 'Ses ve Görüntü'] },
+          { name: 'Disiplin ve Görevde Yükselme Yönetmelikleri', kw: ['Disiplin Yönetmeliği', 'Görevde Yükselme', 'Atama ve Nakil'] },
+        ],
+      },
+      {
+        course: 'Genel Yetenek ve Genel Kültür',
+        topics: [
+          { name: 'Türkçe / Dil Bilgisi', kw: ['yazım', 'noktalama', 'anlatım bozukluğu', 'sözcük türü'] },
+        ],
+      },
+    ];
+
+    for (let ci = 0; ci < taxonomy.length; ci++) {
+      const c = taxonomy[ci];
+      let course = await prisma.course.findFirst({
+        where: { moduleId: paemModule.id, name: c.course, deletedAt: null },
+      });
+      course ??= await prisma.course.create({
+        data: { moduleId: paemModule.id, name: c.course, sortOrder: ci + 1 },
+      });
+      for (let ti = 0; ti < c.topics.length; ti++) {
+        const t = c.topics[ti];
+        const existing = await prisma.topic.findFirst({
+          where: { courseId: course.id, name: t.name, deletedAt: null },
+        });
+        if (existing) {
+          // Keyword'leri güncelle (admin elle değiştirdiyse ezmemek için yalnız boşsa).
+          if (existing.matchKeywords.length === 0) {
+            await prisma.topic.update({
+              where: { id: existing.id },
+              data: { matchKeywords: t.kw },
+            });
+          }
+        } else {
+          await prisma.topic.create({
+            data: { courseId: course.id, name: t.name, sortOrder: ti + 1, matchKeywords: t.kw },
+          });
+        }
+      }
+    }
+    console.log(`PAEM mevzuat taksonomisi: ${taxonomy.length} ders.`);
+  }
+
   // Örnek içerik (DEV) — katalog gezinmesini denemek için. PAEM boşsa ekle.
   // Gerçek içerik editoryal üretilir (Doc 2); bu yalnızca iskelet doğrulaması.
   const paem = await prisma.module.findUnique({ where: { key: 'paem' } });

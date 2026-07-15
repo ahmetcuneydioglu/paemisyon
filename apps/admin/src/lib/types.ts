@@ -22,6 +22,7 @@ export interface CatalogTopic {
   name: string;
   sortOrder: number;
   isPremium: boolean;
+  matchKeywords: string[];
   questionCount: number;
 }
 export interface CatalogCourse {

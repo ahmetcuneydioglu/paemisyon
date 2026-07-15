@@ -4,6 +4,17 @@ import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertCourseDto, UpsertTopicDto } from '../dto/catalog.dto';
 
+/** Keyword listesini normalize eder: kırp, boşları at, tekilleştir. */
+function cleanKeywords(raw?: string[]): string[] {
+  if (!raw) return [];
+  const seen = new Set<string>();
+  for (const k of raw) {
+    const t = k.trim();
+    if (t.length > 0) seen.add(t);
+  }
+  return [...seen];
+}
+
 /** İçerik ağacı yönetimi: Modül → Ders → Konu (Doc 9 §3). */
 @Injectable()
 export class AdminCatalogService {
@@ -44,6 +55,7 @@ export class AdminCatalogService {
           name: t.name,
           sortOrder: t.sortOrder,
           isPremium: t.isPremium,
+          matchKeywords: t.matchKeywords,
           questionCount: t._count.questions,
         })),
       })),
@@ -82,6 +94,7 @@ export class AdminCatalogService {
         name: dto.name,
         sortOrder: dto.sortOrder ?? 0,
         isPremium: dto.isPremium ?? false,
+        matchKeywords: cleanKeywords(dto.matchKeywords),
       },
     });
     await this.audit.log(actor, 'topic.create', 'topic', topic.id, { name: dto.name });
@@ -97,6 +110,10 @@ export class AdminCatalogService {
         name: dto.name,
         sortOrder: dto.sortOrder ?? 0,
         isPremium: dto.isPremium ?? false,
+        // Yalnız gönderilince güncelle — ad/premium değişimi keyword'leri silmesin.
+        ...(dto.matchKeywords !== undefined
+          ? { matchKeywords: cleanKeywords(dto.matchKeywords) }
+          : {}),
       },
     });
     await this.audit.log(actor, 'topic.update', 'topic', id, { name: dto.name });

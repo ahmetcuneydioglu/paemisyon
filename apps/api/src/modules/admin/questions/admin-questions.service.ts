@@ -4,7 +4,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertQuestionDto } from '../dto/upsert-question.dto';
-import { parseImportFile, type ParseReport } from './import-parser';
+import { parseImportFile, suggestTopic, type RowError } from './import-parser';
 
 const IMPORT_MAX_ROWS = 500;
 
@@ -115,7 +115,20 @@ export class AdminQuestionsService {
     if (!q) throw new NotFoundException('Soru bulunamadı.');
     const latest = q.versions[0];
 
+    // Konu değiştirilebilir (Doc 20): panel dropdown'ı önceden sessizce yok
+    // sayılıyordu. Yeni hedef konu geçerli olmalı.
+    const topicChanged = dto.topicId !== q.topicId;
+    if (topicChanged) {
+      const topic = await this.prisma.topic.findFirst({
+        where: { id: dto.topicId, deletedAt: null },
+      });
+      if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
+    }
+
     await this.prisma.$transaction(async (tx) => {
+      if (topicChanged) {
+        await tx.question.update({ where: { id }, data: { topicId: dto.topicId } });
+      }
       if (latest && (latest.status === 'draft' || latest.status === 'in_review')) {
         // Taslak/incelemedeki sürüm yerinde güncellenir (sürüm şişmesin).
         await tx.questionOption.deleteMany({ where: { questionVersionId: latest.id } });
@@ -307,23 +320,13 @@ export class AdminQuestionsService {
   // ── Toplu içe aktarma (Doc 9 §4.4) ──
   // KURAL: içe aktarılan sorular ASLA doğrudan yayına çıkmaz — in_review kuyruğuna
   // düşer (eski sistemin doğrudan-yayın hatası bilinçli olarak tekrarlanmaz).
-  async import(
-    actor: AuthenticatedUser,
-    params: {
-      topicId: string;
-      file: Buffer;
-      filename: string;
-      dryRun: boolean;
-      skipErrors: boolean;
-      /// Kaynak etiketi (örn. "30 Kasım 2025 Adalet Bakanlığı GYS").
-      /// Boşsa PDF'ten saptanan öneri kullanılır; CSV'de yoksa null kalır.
-      sourceLabel?: string;
-    },
-  ): Promise<ParseReport & { imported: number; dryRun: boolean }> {
-    const topic = await this.prisma.topic.findFirst({
-      where: { id: params.topicId, deletedAt: null },
-    });
-    if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
+  // ── Toplu içe aktarma: ÖNİZLEME (parse + satır başına konu önerisi) ──
+  // Sorular tek konuya değil, satır başına konuya atanır (Doc 20). moduleId
+  // kapsamındaki konular matchKeywords'e göre önerilir; admin sınıflandırma
+  // ekranında onaylar/düzeltir. Hiçbir şey yazılmaz.
+  async previewImport(params: { moduleId: string; file: Buffer; filename: string }) {
+    const module = await this.prisma.module.findFirst({ where: { id: params.moduleId } });
+    if (!module) throw new BadRequestException('Hedef modül bulunamadı.');
 
     const report = await parseImportFile(params.file, params.filename);
     if (report.totalRows > IMPORT_MAX_ROWS) {
@@ -332,22 +335,74 @@ export class AdminQuestionsService {
       );
     }
 
-    if (params.dryRun) {
-      return { ...report, imported: 0, dryRun: true };
+    const topics = await this.moduleTopics(params.moduleId);
+    const valid = report.valid.map((row) => {
+      const s = suggestTopic(row.stem, topics);
+      return {
+        ...row,
+        suggestedTopicId: s?.id ?? null,
+        suggestedTopicName: s?.name ?? null,
+        matchedKeyword: s?.matchedKeyword ?? null,
+      };
+    });
+
+    return {
+      totalRows: report.totalRows,
+      valid,
+      errors: report.errors,
+      detectedSource: report.detectedSource ?? null,
+      // Sınıflandırma dropdown'ları için (ayrı istek gerekmesin).
+      moduleTopics: topics.map((t) => ({ id: t.id, name: t.name, courseName: t.courseName })),
+    };
+  }
+
+  // ── Toplu içe aktarma: UYGULA (satır→konu eşlemesiyle) ──
+  // assignments TÜM geçerli satırları kapsamalı; her konu bu modülde olmalı.
+  async import(
+    actor: AuthenticatedUser,
+    params: {
+      moduleId: string;
+      file: Buffer;
+      filename: string;
+      /// rowNo -> topicId (admin'in onayladığı sınıflandırma).
+      assignments: Record<number, string>;
+      skipErrors: boolean;
+      /// Kaynak etiketi; boşsa PDF'ten saptanan öneri kullanılır.
+      sourceLabel?: string;
+    },
+  ): Promise<{ imported: number; errors: RowError[]; skipped: number }> {
+    const topics = await this.moduleTopics(params.moduleId);
+    const topicIds = new Set(topics.map((t) => t.id));
+
+    const report = await parseImportFile(params.file, params.filename);
+    if (report.valid.length === 0) {
+      throw new BadRequestException('Aktarılacak geçerli soru yok.');
     }
     if (report.errors.length > 0 && !params.skipErrors) {
-      // Varsayılan: hata varsa HİÇBİR şey aktarılmaz (yarım aktarım + tekrar
-      // yüklemede mükerrer kayıt karmaşası olmasın). skipErrors bilinçli tercihtir.
-      return { ...report, imported: 0, dryRun: false };
+      throw new BadRequestException(
+        `${report.errors.length} hatalı satır var. Düzeltip yeniden yükle ya da hatalıları atla.`,
+      );
     }
-    if (report.valid.length === 0) {
-      return { ...report, imported: 0, dryRun: false };
+
+    // Her geçerli satır bir konuya atanmış ve konu bu modülde olmalı.
+    const unassigned = report.valid.filter((r) => !params.assignments[r.rowNo]);
+    if (unassigned.length > 0) {
+      throw new BadRequestException(
+        `${unassigned.length} soru sınıflandırılmadı. Tüm sorulara konu atanmalı.`,
+      );
+    }
+    for (const r of report.valid) {
+      if (!topicIds.has(params.assignments[r.rowNo])) {
+        throw new BadRequestException(`Geçersiz konu ataması (soru ${r.rowNo}).`);
+      }
     }
 
     const sourceLabel = params.sourceLabel?.trim() || report.detectedSource || null;
     await this.prisma.$transaction(async (tx) => {
       for (const row of report.valid) {
-        const q = await tx.question.create({ data: { topicId: params.topicId } });
+        const q = await tx.question.create({
+          data: { topicId: params.assignments[row.rowNo] },
+        });
         await tx.questionVersion.create({
           data: {
             questionId: q.id,
@@ -371,14 +426,60 @@ export class AdminQuestionsService {
       }
     });
 
-    await this.audit.log(actor, 'question.import', 'topic', params.topicId, {
+    // Konu bazında dağılımı audit'e yaz (hangi konuya kaç soru).
+    const byTopic: Record<string, number> = {};
+    for (const r of report.valid) {
+      const name = topics.find((t) => t.id === params.assignments[r.rowNo])!.name;
+      byTopic[name] = (byTopic[name] ?? 0) + 1;
+    }
+    await this.audit.log(actor, 'question.import', 'module', params.moduleId, {
       filename: params.filename,
       imported: report.valid.length,
       errorCount: report.errors.length,
-      topicName: topic.name,
+      byTopic,
       sourceLabel,
     });
-    return { ...report, imported: report.valid.length, dryRun: false };
+    return { imported: report.valid.length, errors: report.errors, skipped: report.errors.length };
+  }
+
+  // Modül kapsamındaki konular + keyword'ler + ders adı (öneri/atama için).
+  private async moduleTopics(moduleId: string) {
+    const topics = await this.prisma.topic.findMany({
+      where: { deletedAt: null, course: { moduleId, deletedAt: null } },
+      select: {
+        id: true,
+        name: true,
+        matchKeywords: true,
+        course: { select: { name: true } },
+      },
+      orderBy: [{ course: { sortOrder: 'asc' } }, { sortOrder: 'asc' }],
+    });
+    return topics.map((t) => ({
+      id: t.id,
+      name: t.name,
+      matchKeywords: t.matchKeywords,
+      courseName: t.course.name,
+    }));
+  }
+
+  // ── Konu değiştir (toplu): sınıflandırma düzeltmesi (Doc 20 §3) ──
+  async bulkSetTopic(
+    actor: AuthenticatedUser,
+    params: { questionIds: string[]; topicId: string },
+  ): Promise<{ updated: number }> {
+    const topic = await this.prisma.topic.findFirst({
+      where: { id: params.topicId, deletedAt: null },
+    });
+    if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
+    const result = await this.prisma.question.updateMany({
+      where: { id: { in: params.questionIds }, deletedAt: null },
+      data: { topicId: params.topicId },
+    });
+    await this.audit.log(actor, 'question.bulk_set_topic', 'topic', params.topicId, {
+      count: result.count,
+      topicName: topic.name,
+    });
+    return { updated: result.count };
   }
 
   // ── Yardımcılar ──

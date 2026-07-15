@@ -44,10 +44,22 @@ export default function CatalogPage() {
   });
 
   const updateTopic = useMutation({
-    mutationFn: (body: { id: string; courseId: string; name: string; isPremium: boolean }) =>
+    mutationFn: (body: {
+      id: string;
+      courseId: string;
+      name: string;
+      isPremium: boolean;
+      matchKeywords?: string[];
+    }) =>
       api(`/admin/catalog/topics/${body.id}`, {
         method: 'PATCH',
-        body: { courseId: body.courseId, name: body.name, isPremium: body.isPremium },
+        body: {
+          courseId: body.courseId,
+          name: body.name,
+          isPremium: body.isPremium,
+          // undefined bırak → backend keyword'leri korur (ad/premium değişiminde).
+          ...(body.matchKeywords !== undefined ? { matchKeywords: body.matchKeywords } : {}),
+        },
       }),
     onSuccess: invalidate,
   });
@@ -109,42 +121,80 @@ export default function CatalogPage() {
                     {open && c.topics.length > 0 && (
                       <ul className="divide-y divide-slate-50 border-t border-slate-100">
                         {c.topics.map((t) => (
-                          <li key={t.id} className="flex items-center justify-between px-4 py-2 pl-10 text-sm">
-                            <div className="flex items-center gap-2">
-                              <span>{t.name}</span>
-                              <span className="text-xs text-slate-400">{t.questionCount} soru</span>
-                              {t.isPremium && (
-                                <span className="rounded-full bg-violet-100 px-2 py-0.5 text-xs font-medium text-violet-700">
-                                  Premium
-                                </span>
-                              )}
-                            </div>
-                            <div className="flex gap-3 text-xs">
-                              <button
-                                onClick={() =>
-                                  updateTopic.mutate({
-                                    id: t.id,
-                                    courseId: c.id,
-                                    name: t.name,
-                                    isPremium: !t.isPremium,
-                                  })
-                                }
-                                className="text-slate-500 hover:underline"
-                              >
-                                {t.isPremium ? 'Ücretsiz yap' : 'Premium yap'}
-                              </button>
-                              <button
-                                onClick={() => {
-                                  const name = window.prompt('Konu adı:', t.name);
-                                  if (name && name !== t.name) {
-                                    updateTopic.mutate({ id: t.id, courseId: c.id, name, isPremium: t.isPremium });
+                          <li key={t.id} className="px-4 py-2 pl-10 text-sm">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <span>{t.name}</span>
+                                <span className="text-xs text-slate-400">{t.questionCount} soru</span>
+                                {t.isPremium && (
+                                  <span className="rounded-full bg-violet-100 px-2 py-0.5 text-xs font-medium text-violet-700">
+                                    Premium
+                                  </span>
+                                )}
+                              </div>
+                              <div className="flex gap-3 text-xs">
+                                <button
+                                  onClick={() => {
+                                    const cur = t.matchKeywords.join(', ');
+                                    const input = window.prompt(
+                                      'İçe aktarma eşleşme desenleri (virgülle ayır):\nÖrn. 657 sayılı, Devlet Memurları Kanunu',
+                                      cur,
+                                    );
+                                    if (input !== null) {
+                                      updateTopic.mutate({
+                                        id: t.id,
+                                        courseId: c.id,
+                                        name: t.name,
+                                        isPremium: t.isPremium,
+                                        matchKeywords: input
+                                          .split(',')
+                                          .map((s) => s.trim())
+                                          .filter(Boolean),
+                                      });
+                                    }
+                                  }}
+                                  className="text-indigo-600 hover:underline"
+                                >
+                                  Eşleşme
+                                </button>
+                                <button
+                                  onClick={() =>
+                                    updateTopic.mutate({
+                                      id: t.id,
+                                      courseId: c.id,
+                                      name: t.name,
+                                      isPremium: !t.isPremium,
+                                    })
                                   }
-                                }}
-                                className="text-slate-500 hover:underline"
-                              >
-                                Yeniden adlandır
-                              </button>
+                                  className="text-slate-500 hover:underline"
+                                >
+                                  {t.isPremium ? 'Ücretsiz yap' : 'Premium yap'}
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    const name = window.prompt('Konu adı:', t.name);
+                                    if (name && name !== t.name) {
+                                      updateTopic.mutate({ id: t.id, courseId: c.id, name, isPremium: t.isPremium });
+                                    }
+                                  }}
+                                  className="text-slate-500 hover:underline"
+                                >
+                                  Yeniden adlandır
+                                </button>
+                              </div>
                             </div>
+                            {t.matchKeywords.length > 0 && (
+                              <div className="mt-1 flex flex-wrap gap-1">
+                                {t.matchKeywords.map((k) => (
+                                  <span
+                                    key={k}
+                                    className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500"
+                                  >
+                                    {k}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
                           </li>
                         ))}
                       </ul>

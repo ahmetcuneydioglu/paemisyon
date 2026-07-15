@@ -32,6 +32,48 @@ export interface ParseReport {
   detectedSource?: string | null;
 }
 
+/** Konu + eşleşme desenleri — suggestTopic girdisi (Doc 20). */
+export interface TopicKeywordEntry {
+  id: string;
+  name: string;
+  matchKeywords: string[];
+}
+
+export interface TopicSuggestion {
+  id: string;
+  name: string;
+  matchedKeyword: string;
+}
+
+/** TR-duyarlı küçük harf — "İYUK" ve "657 SAYILI" tutarlı eşleşsin. */
+function trLower(s: string): string {
+  return s.toLocaleLowerCase('tr-TR');
+}
+
+/**
+ * Soru kökünü konuların matchKeywords'lerine göre eşler (Doc 20 §2).
+ * TÜM kökü tarar — kanun adı boşluk-doldurmalı soruda kökün sonunda geçebilir.
+ * Birden çok eşleşmede EN UZUN keyword kazanır (en özgül konu). Yoksa null.
+ * Saf fonksiyon: DB yok, birim test edilebilir.
+ */
+export function suggestTopic(
+  stem: string,
+  topics: TopicKeywordEntry[],
+): TopicSuggestion | null {
+  const hay = trLower(stem);
+  let best: TopicSuggestion | null = null;
+  for (const t of topics) {
+    for (const kw of t.matchKeywords) {
+      const needle = trLower(kw.trim());
+      if (needle.length === 0) continue;
+      if (hay.includes(needle) && (best === null || needle.length > trLower(best.matchedKeyword).length)) {
+        best = { id: t.id, name: t.name, matchedKeyword: kw };
+      }
+    }
+  }
+  return best;
+}
+
 const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'] as const;
 
 const DIFFICULTY_MAP: Record<string, 'easy' | 'medium' | 'hard'> = {
