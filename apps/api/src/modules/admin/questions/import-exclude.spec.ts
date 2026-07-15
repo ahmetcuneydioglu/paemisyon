@@ -11,7 +11,9 @@ function csv(): Buffer {
   return Buffer.from(lines.join('\n'), 'utf8');
 }
 
-/** import()'in dokunduğu yüzeyi taklit eder; yazılan soru köklerini toplar. */
+/** import()'in dokunduğu yüzeyi taklit eder; yazılan soru köklerini toplar.
+ *  Yazma yolu 3 toplu createMany'dir (satır-başına create transaction 5 sn
+ *  sınırını aşıyordu — canlıda yaşanan hata). */
 function makeService() {
   const writtenStems: string[] = [];
   const prisma = {
@@ -23,12 +25,14 @@ function makeService() {
     },
     $transaction: async (cb: (tx: unknown) => Promise<void>) =>
       cb({
-        question: { create: jest.fn().mockResolvedValue({ id: 'q' }) },
+        question: { createMany: jest.fn().mockResolvedValue({ count: 0 }) },
         questionVersion: {
-          create: jest.fn(async (arg: { data: { stem: string } }) => {
-            writtenStems.push(arg.data.stem);
+          createMany: jest.fn(async (arg: { data: { stem: string }[] }) => {
+            writtenStems.push(...arg.data.map((d) => d.stem));
+            return { count: arg.data.length };
           }),
         },
+        questionOption: { createMany: jest.fn().mockResolvedValue({ count: 0 }) },
       }),
   };
   const audit = { log: jest.fn().mockResolvedValue(undefined) };

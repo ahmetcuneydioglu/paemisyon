@@ -1,3 +1,4 @@
+import { randomUUID } from 'crypto';
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import type { ContentStatus, Difficulty, Prisma } from '@prisma/client';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
@@ -411,32 +412,45 @@ export class AdminQuestionsService {
     }
 
     const sourceLabel = params.sourceLabel?.trim() || report.detectedSource || null;
+    // ID'ler istemcide üretilir → satır başına create yerine 3 toplu INSERT.
+    // (Satır başına 2 sorgu, 80 soruda uzak DB gecikmesiyle Prisma'nın 5 sn
+    // transaction sınırını aşıyordu — canlıda yaşandı.)
+    const rowsToInsert = toWrite.map((row) => ({
+      row,
+      questionId: randomUUID(),
+      versionId: randomUUID(),
+    }));
     await this.prisma.$transaction(async (tx) => {
-      for (const row of toWrite) {
-        const q = await tx.question.create({
-          data: { topicId: params.assignments[row.rowNo] },
-        });
-        await tx.questionVersion.create({
-          data: {
-            questionId: q.id,
-            versionNo: 1,
-            stem: row.stem,
-            explanation: row.explanation,
-            sourceLabel,
-            difficulty: row.difficulty as Difficulty,
-            status: 'in_review', // onay kuyruğuna düşer — doğrudan yayın YOK
-            authoredBy: actor.id,
-            options: {
-              create: row.options.map((o, i) => ({
-                label: o.label,
-                text: o.text,
-                isCorrect: o.isCorrect,
-                sortOrder: i,
-              })),
-            },
-          },
-        });
-      }
+      await tx.question.createMany({
+        data: rowsToInsert.map((r) => ({
+          id: r.questionId,
+          topicId: params.assignments[r.row.rowNo],
+        })),
+      });
+      await tx.questionVersion.createMany({
+        data: rowsToInsert.map((r) => ({
+          id: r.versionId,
+          questionId: r.questionId,
+          versionNo: 1,
+          stem: r.row.stem,
+          explanation: r.row.explanation,
+          sourceLabel,
+          difficulty: r.row.difficulty as Difficulty,
+          status: 'in_review' as const, // onay kuyruğuna düşer — doğrudan yayın YOK
+          authoredBy: actor.id,
+        })),
+      });
+      await tx.questionOption.createMany({
+        data: rowsToInsert.flatMap((r) =>
+          r.row.options.map((o, i) => ({
+            questionVersionId: r.versionId,
+            label: o.label,
+            text: o.text,
+            isCorrect: o.isCorrect,
+            sortOrder: i,
+          })),
+        ),
+      });
     });
 
     // Konu bazında dağılımı audit'e yaz (hangi konuya kaç soru).
