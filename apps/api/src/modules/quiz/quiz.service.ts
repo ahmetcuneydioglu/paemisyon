@@ -144,11 +144,10 @@ export class QuizService {
   }
 
   // ── Günün Quizi (Doc 13 V1 — eski daily_quiz'in modern hali) ──
-  // 10 karışık soru, PAEM → Genel Mevzuat'tan; günde 1 hak; herkese aynı set
-  // (tarih tohumlu deterministik seçim → adil liderlik). Seri sayar.
+  // 10 karışık soru, PAEM MÜFREDATININ tamamından (Doc 21: bölümlere bağlı
+  // dersler); günde 1 hak; herkese aynı set (tarih tohumlu → adil liderlik).
   private static readonly DAILY_QUESTION_COUNT = 10;
-  private static readonly DAILY_COURSE_NAME = 'Genel Mevzuat';
-  private static readonly DAILY_MODULE_KEY = 'paem';
+  private static readonly DAILY_EXAM_KEY = 'paem';
 
   private async startDailySession(userId: string) {
     const today = new Date();
@@ -181,7 +180,8 @@ export class QuizService {
   }
 
   private async pickDailyQuestions() {
-    // Havuz: PAEM → Genel Mevzuat dersindeki yayında, premium OLMAYAN sorular.
+    // Havuz: PAEM müfredatına (bölümler→dersler) bağlı, yayında, premium
+    // OLMAYAN sorular (Doc 21 — ders adı hardcode'u kaldırıldı).
     const pool = await this.prisma.question.findMany({
       where: {
         deletedAt: null,
@@ -190,9 +190,15 @@ export class QuizService {
           deletedAt: null,
           isPremium: false,
           course: {
-            name: QuizService.DAILY_COURSE_NAME,
             deletedAt: null,
-            examType: { key: QuizService.DAILY_MODULE_KEY },
+            sections: {
+              some: {
+                section: {
+                  deletedAt: null,
+                  examType: { key: QuizService.DAILY_EXAM_KEY },
+                },
+              },
+            },
           },
         },
       },
@@ -201,7 +207,7 @@ export class QuizService {
     });
     if (pool.length === 0) {
       throw new NotFoundException(
-        "Günün quizi için PAEM Genel Mevzuat'ta yayında soru yok. Panelden onaylaman gerekebilir.",
+        'Günün quizi için PAEM müfredatında yayında soru yok. Panelden onaylaman gerekebilir.',
       );
     }
 

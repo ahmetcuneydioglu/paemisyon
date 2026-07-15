@@ -23,43 +23,78 @@ export class AdminCatalogService {
     private readonly audit: AuditService,
   ) {}
 
-  /** Tam ağaç — panel solunda tek istekte gösterilir. Soru sayıları dahil. */
+  /** Tam ağaç — panel solunda tek istekte gösterilir. Soru sayıları dahil.
+   *  Doc 21 köprüsü: dersler artık MÜFREDAT bölümleri üzerinden gelir; yanıt
+   *  şekli korunur (courses[].topics[]) — panel UI'ı bozulmadan çalışır.
+   *  Alt konular "Konu › Alt Konu" olarak düzleştirilir (tam yeniden tasarım
+   *  Doc 21 §8'de ayrı iş). */
   async tree() {
-    const modules = await this.prisma.examType.findMany({
+    const topicSelect = {
+      where: { deletedAt: null },
+      orderBy: { sortOrder: 'asc' },
+      include: { _count: { select: { questions: { where: { deletedAt: null } } } } },
+    } as const;
+
+    const examTypes = await this.prisma.examType.findMany({
       orderBy: { sortOrder: 'asc' },
       include: {
-        courses: {
+        sections: {
           where: { deletedAt: null },
           orderBy: { sortOrder: 'asc' },
           include: {
-            topics: {
-              where: { deletedAt: null },
+            courses: {
               orderBy: { sortOrder: 'asc' },
-              include: { _count: { select: { questions: { where: { deletedAt: null } } } } },
+              include: {
+                course: {
+                  include: {
+                    topics: { ...topicSelect, include: { ...topicSelect.include, parent: { select: { name: true } } } },
+                  },
+                },
+              },
             },
           },
         },
       },
     });
-    return modules.map((m) => ({
-      id: m.id,
-      key: m.key,
-      name: m.name,
-      isActive: m.isActive,
-      courses: m.courses.map((c) => ({
-        id: c.id,
-        name: c.name,
-        sortOrder: c.sortOrder,
-        topics: c.topics.map((t) => ({
-          id: t.id,
-          name: t.name,
-          sortOrder: t.sortOrder,
-          isPremium: t.isPremium,
-          matchKeywords: t.matchKeywords,
-          questionCount: t._count.questions,
-        })),
-      })),
-    }));
+
+    return examTypes.map((m) => {
+      const seen = new Set<string>();
+      const courses: {
+        id: string;
+        name: string;
+        sortOrder: number;
+        topics: {
+          id: string;
+          name: string;
+          sortOrder: number;
+          isPremium: boolean;
+          matchKeywords: string[];
+          questionCount: number;
+        }[];
+      }[] = [];
+      let order = 0;
+      for (const s of m.sections) {
+        for (const sc of s.courses) {
+          const c = sc.course;
+          if (c.deletedAt || seen.has(c.id)) continue;
+          seen.add(c.id);
+          courses.push({
+            id: c.id,
+            name: c.name,
+            sortOrder: ++order,
+            topics: c.topics.map((t) => ({
+              id: t.id,
+              name: t.parent ? `${t.parent.name} › ${t.name}` : t.name,
+              sortOrder: t.sortOrder,
+              isPremium: t.isPremium,
+              matchKeywords: t.matchKeywords,
+              questionCount: t._count.questions,
+            })),
+          });
+        }
+      }
+      return { id: m.id, key: m.key, name: m.name, isActive: m.isActive, courses };
+    });
   }
 
   async createCourse(actor: AuthenticatedUser, dto: UpsertCourseDto) {

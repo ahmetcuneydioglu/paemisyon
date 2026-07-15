@@ -500,21 +500,32 @@ export class AdminQuestionsService {
     };
   }
 
-  // Modül kapsamındaki konular + keyword'ler + ders adı (öneri/atama için).
+  // Sınav türü kapsamındaki konular + keyword'ler + ders adı (öneri/atama).
+  // Doc 21: dersler küresel — kapsam MÜFREDAT bölümleri üzerinden belirlenir.
+  // Alt konular "Konu › Alt Konu" olarak düzleştirilir (dropdown okunurluğu).
   private async moduleTopics(moduleId: string) {
     const topics = await this.prisma.topic.findMany({
-      where: { deletedAt: null, course: { moduleId, deletedAt: null } },
+      where: {
+        deletedAt: null,
+        course: {
+          deletedAt: null,
+          sections: {
+            some: { section: { examTypeId: moduleId, deletedAt: null } },
+          },
+        },
+      },
       select: {
         id: true,
         name: true,
         matchKeywords: true,
+        parent: { select: { name: true } },
         course: { select: { name: true } },
       },
       orderBy: [{ course: { sortOrder: 'asc' } }, { sortOrder: 'asc' }],
     });
     return topics.map((t) => ({
       id: t.id,
-      name: t.name,
+      name: t.parent ? `${t.parent.name} › ${t.name}` : t.name,
       matchKeywords: t.matchKeywords,
       courseName: t.course.name,
     }));
