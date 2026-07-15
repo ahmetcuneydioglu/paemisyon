@@ -1,3 +1,4 @@
+import { createHash } from 'crypto';
 import * as iconv from 'iconv-lite';
 import * as Papa from 'papaparse';
 import * as ExcelJS from 'exceljs';
@@ -48,6 +49,34 @@ export interface TopicSuggestion {
 /** TR-duyarlı küçük harf — "İYUK" ve "657 SAYILI" tutarlı eşleşsin. */
 function trLower(s: string): string {
   return s.toLocaleLowerCase('tr-TR');
+}
+
+/**
+ * İçerik eşleşmesi için metin normalizasyonu (Doc 20 EK 2). TR küçük harf +
+ * tipografik birleştirme (kıvrık tırnak → düz, en/em-dash → tire, yumuşak tire
+ * sil) + whitespace sıkıştırma. PDF çıkarımı gürültüsünü yener; noktalama
+ * SİLİNMEZ (aşırı birleşmeyi önlemek için).
+ */
+function normalizeForHash(s: string): string {
+  return trLower(s)
+    .replace(/[‘’‛ʼ′]/g, "'") // ' ' ‛ ʼ ′ → '
+    .replace(/[“”″]/g, '"') // " " ″ → "
+    .replace(/[–—−]/g, '-') // – — − → -
+    .replace(/­/g, '') // yumuşak tire
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Soru içerik parmak izi (Doc 20 EK 2) — tekrar tespiti için sha256.
+ * Kök + ŞIK METİNLERİNİN SIRALI birleşimi; doğru cevap harfi ve şık sırası/
+ * etiketleri DIŞLANIR. Böylece MEB A/B kitapçığındaki aynı soru (şıkları
+ * karışık, doğru cevabı farklı harf) AYNI parmak izini üretir. Saf fonksiyon.
+ */
+export function questionFingerprint(stem: string, optionTexts: string[]): string {
+  const normStem = normalizeForHash(stem);
+  const normOpts = optionTexts.map(normalizeForHash).sort();
+  return createHash('sha256').update(normStem + '\n' + normOpts.join('\n')).digest('hex');
 }
 
 /**

@@ -261,6 +261,9 @@ model QuestionVersion {
   // Soru kaynağı (örn. "30 Kasım 2025 Adalet Bakanlığı GYS — Zabıt Kâtibi").
   // Kullanıcıya gösterimi app_settings.show_question_source ile açılır/kapanır.
   sourceLabel String?       @map("source_label")
+  // İçerik parmak izi (Doc 20 EK 2) — tekrar (mükerrer soru) tespiti.
+  // sha256(normalize(kök) + sıralı şık metinleri). İçe aktarımda yazılır.
+  contentHash String?       @map("content_hash")
   status      ContentStatus @default(draft)
   authoredBy  String?       @map("authored_by") @db.Uuid
   reviewedBy  String?       @map("reviewed_by") @db.Uuid
@@ -276,6 +279,7 @@ model QuestionVersion {
 
   @@unique([questionId, versionNo])
   @@index([questionId, status])
+  @@index([contentHash])
   @@map("question_versions")
 }
 

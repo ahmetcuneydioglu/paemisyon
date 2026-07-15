@@ -5,7 +5,12 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertQuestionDto } from '../dto/upsert-question.dto';
-import { parseImportFile, suggestTopic, type RowError } from './import-parser';
+import {
+  parseImportFile,
+  questionFingerprint,
+  suggestTopic,
+  type RowError,
+} from './import-parser';
 
 const IMPORT_MAX_ROWS = 500;
 
@@ -337,13 +342,31 @@ export class AdminQuestionsService {
     }
 
     const topics = await this.moduleTopics(params.moduleId);
-    const valid = report.valid.map((row) => {
+
+    // Tekrar (mükerrer) tespiti (Doc 20 EK 2): parmak izi hesapla, bankaya ve
+    // aynı dosyaya (batch) karşı kontrol et.
+    const fingerprints = report.valid.map((row) =>
+      questionFingerprint(row.stem, row.options.map((o) => o.text)),
+    );
+    const bankLocation = await this.duplicateLocations(fingerprints);
+    const seenInBatch = new Map<string, number>(); // hash -> ilk rowNo
+
+    const valid = report.valid.map((row, i) => {
       const s = suggestTopic(row.stem, topics);
+      const hash = fingerprints[i];
+      let duplicate: { scope: 'bank' | 'batch'; where: string } | null = null;
+      if (bankLocation.has(hash)) {
+        duplicate = { scope: 'bank', where: bankLocation.get(hash)! };
+      } else if (seenInBatch.has(hash)) {
+        duplicate = { scope: 'batch', where: `bu dosyada #${seenInBatch.get(hash)} ile aynı` };
+      }
+      if (!seenInBatch.has(hash)) seenInBatch.set(hash, row.rowNo);
       return {
         ...row,
         suggestedTopicId: s?.id ?? null,
         suggestedTopicName: s?.name ?? null,
         matchedKeyword: s?.matchedKeyword ?? null,
+        duplicate,
       };
     });
 
@@ -419,6 +442,7 @@ export class AdminQuestionsService {
       row,
       questionId: randomUUID(),
       versionId: randomUUID(),
+      contentHash: questionFingerprint(row.stem, row.options.map((o) => o.text)),
     }));
     await this.prisma.$transaction(async (tx) => {
       await tx.question.createMany({
@@ -435,6 +459,7 @@ export class AdminQuestionsService {
           stem: r.row.stem,
           explanation: r.row.explanation,
           sourceLabel,
+          contentHash: r.contentHash,
           difficulty: r.row.difficulty as Difficulty,
           status: 'in_review' as const, // onay kuyruğuna düşer — doğrudan yayın YOK
           authoredBy: actor.id,
@@ -493,6 +518,27 @@ export class AdminQuestionsService {
       matchKeywords: t.matchKeywords,
       courseName: t.course.name,
     }));
+  }
+
+  // Bankada bu parmak izlerine sahip (silinmemiş) soruların konumu (Doc 20 EK 2).
+  // hash → "Ders / Konu" (kullanıcıya nerede olduğunu göstermek için).
+  private async duplicateLocations(hashes: string[]): Promise<Map<string, string>> {
+    const uniq = [...new Set(hashes.filter(Boolean))];
+    if (uniq.length === 0) return new Map();
+    const rows = await this.prisma.questionVersion.findMany({
+      where: { contentHash: { in: uniq }, question: { deletedAt: null } },
+      select: {
+        contentHash: true,
+        question: { select: { topic: { select: { name: true, course: { select: { name: true } } } } } },
+      },
+    });
+    const map = new Map<string, string>();
+    for (const r of rows) {
+      if (r.contentHash && !map.has(r.contentHash)) {
+        map.set(r.contentHash, `${r.question.topic.course.name} / ${r.question.topic.name}`);
+      }
+    }
+    return map;
   }
 
   // ── Konu değiştir (toplu): sınıflandırma düzeltmesi (Doc 20 §3) ──

@@ -19,6 +19,8 @@ interface PreviewRow {
   suggestedTopicId: string | null;
   suggestedTopicName: string | null;
   matchedKeyword: string | null;
+  // Tekrar (mükerrer) tespiti (Doc 20 EK 2): bankada/dosyada zaten var mı.
+  duplicate: { scope: 'bank' | 'batch'; where: string } | null;
 }
 interface ModuleTopic {
   id: string;
@@ -127,7 +129,8 @@ export default function ImportPage() {
       const init: Record<number, string> = {};
       for (const row of r.valid) if (row.suggestedTopicId) init[row.rowNo] = row.suggestedTopicId;
       setAssignments(init);
-      setExcluded(new Set());
+      // Tekrarlar varsayılan olarak çıkarılır (kullanıcı geri alabilir).
+      setExcluded(new Set(r.valid.filter((row) => row.duplicate).map((row) => row.rowNo)));
       if (r.detectedSource) setSource((cur) => cur || r.detectedSource!);
     },
   });
@@ -186,6 +189,7 @@ export default function ImportPage() {
   const keptCount = rows.filter((r) => !excluded.has(r.rowNo) && assignments[r.rowNo]).length;
   const excludedCount = rows.filter((r) => excluded.has(r.rowNo)).length;
   const undecidedCount = rows.filter((r) => !excluded.has(r.rowNo) && !assignments[r.rowNo]).length;
+  const duplicateCount = rows.filter((r) => r.duplicate).length;
   const canImport =
     !!preview &&
     undecidedCount === 0 &&
@@ -286,6 +290,11 @@ export default function ImportPage() {
             {undecidedCount > 0 && (
               <span className="rounded-full bg-amber-100 px-3 py-1 font-medium text-amber-800">
                 ⚠ {undecidedCount} bekliyor
+              </span>
+            )}
+            {duplicateCount > 0 && (
+              <span className="rounded-full bg-rose-100 px-3 py-1 font-medium text-rose-700">
+                ⚠ {duplicateCount} tekrar (otomatik çıkarıldı)
               </span>
             )}
             {preview.errors.length > 0 && (
@@ -524,7 +533,19 @@ function ClassifyList({
                   <span className={`min-w-0 flex-1 truncate text-sm ${isExcluded ? 'line-through' : ''}`}>
                     {r.stem}
                   </span>
-                  {!isExcluded && r.matchedKeyword && (
+                  {r.duplicate && (
+                    <span
+                      className="shrink-0 rounded-full bg-rose-100 px-2 py-0.5 text-[11px] text-rose-700"
+                      title={
+                        r.duplicate.scope === 'bank'
+                          ? `Bankada zaten var: ${r.duplicate.where}`
+                          : r.duplicate.where
+                      }
+                    >
+                      ⚠ zaten var
+                    </span>
+                  )}
+                  {!isExcluded && !r.duplicate && r.matchedKeyword && (
                     <span className="shrink-0 rounded-full bg-indigo-50 px-2 py-0.5 text-[11px] text-indigo-600">
                       {r.matchedKeyword}
                     </span>
