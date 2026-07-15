@@ -28,6 +28,8 @@ export interface ParseReport {
   totalRows: number;
   valid: ParsedQuestionRow[];
   errors: RowError[];
+  /** PDF kitapçıktan otomatik saptanan kaynak etiketi (panel önerisi). */
+  detectedSource?: string | null;
 }
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'] as const;
@@ -197,8 +199,160 @@ export function mapRows(rows: string[][]): ParseReport {
   return { totalRows: dataRows.length, valid, errors };
 }
 
-/** Dosya (csv/xlsx) → doğrulanmış rapor. */
+// ─────────────────────────────────────────────
+// MEB/ÖDSGM soru kitapçığı PDF'i (resmî sınav kitapçığı formatı)
+// ─────────────────────────────────────────────
+
+const ODSGM_HEADER = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ';
+const KEY_TITLE = 'CEVAP ANAHTARI';
+const QNUM_RE = /^(\d{1,3})\.\s+/;
+const OPTION_RE = /^([A-E])\)\s*/;
+const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
+
+/** Satır sonu tirelerini onarır ("sayıl-\nmamıştır" → "sayılmamıştır"). */
+export function dehyphenate(text: string): string {
+  return text
+    .replace(/-\s*\n\s*/g, '')
+    .replace(/\s*\n\s*/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+interface BookletQuestion {
+  no: number;
+  stem: string;
+  options: Map<string, string>;
+}
+
+/**
+ * Resmî kitapçık PDF'ini rapora çevirir (Doc 9 §4.4 genişletmesi).
+ * Kurallar Python prototipinde gerçek kitapçıkla doğrulandı:
+ * - Yalnız ÖDSGM üstbilgili sayfalar soru sayfasıdır (kapak talimatlarındaki
+ *   "1. Adaylar..." maddeleri soru sanılmaz — ilk denemede yakalanan hata).
+ * - Cevap anahtarı son sayfalardaki "CEVAP ANAHTARI" bölümünden eşlenir.
+ * - Soru başı, BEKLENEN sıra numarasıyla doğrulanır (gövdedeki "5. madde"
+ *   gibi metinler yeni soru başlatamaz).
+ * Görsel/tablolu sorular (şıkları metinden çıkmayan) hata satırı olur —
+ * skipErrors ile atlanıp kalanlar aktarılabilir.
+ */
+export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
+  // pdf-parse'ı tembel yükle — CSV/XLSX yolu PDF motorunu hiç ödemesin.
+  const { PDFParse } = await import('pdf-parse');
+  const parser = new PDFParse({ data: new Uint8Array(buffer) });
+  const result = await parser.getText();
+
+  const questionLines: string[] = [];
+  const answerKey = new Map<number, string>();
+  const sourceLines: string[] = [];
+  let inKey = false;
+
+  for (const page of result.pages) {
+    const text = page.text ?? '';
+    const pageHasKey = text.includes(KEY_TITLE);
+    if (!inKey && !pageHasKey && !text.includes(ODSGM_HEADER)) continue;
+
+    for (const raw of text.split('\n')) {
+      let line = raw.trim();
+      if (!line) continue;
+      if (line.includes(KEY_TITLE)) {
+        inKey = true;
+        continue;
+      }
+      if (inKey || pageHasKey) {
+        const km = KEY_LINE_RE.exec(line);
+        if (km) {
+          inKey = true;
+          answerKey.set(Number(km[1]), km[2]);
+        } else if (!inKey) {
+          // Anahtar sayfasının başlık satırları → kaynak etiketi adayı
+          // (örn. "30 KASIM 2025 TARİHİNDE YAPILAN ... SINAVI").
+          sourceLines.push(line);
+        }
+        continue;
+      }
+      // Sayfa üstbilgileri: kurum adı, kitapçık adı, yalnız sayfa numarası.
+      if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
+      line = line
+        .replace(/\s*TEST BİTTİ\..*$/, '')
+        .replace(/\s*CEVAPLARINIZI KONTROL EDİNİZ\..*$/, '');
+      if (line) questionLines.push(line);
+    }
+  }
+
+  // ── Satırları soru bloklarına böl ──
+  const questions: BookletQuestion[] = [];
+  let current: BookletQuestion | null = null;
+  let part: string | null = null; // 'stem' | 'A'..'E'
+  let expectedNo = 1;
+  for (const line of questionLines) {
+    const qm = QNUM_RE.exec(line);
+    if (qm && Number(qm[1]) === expectedNo) {
+      if (current) questions.push(current);
+      current = { no: expectedNo, stem: line.replace(QNUM_RE, ''), options: new Map() };
+      part = 'stem';
+      expectedNo++;
+      continue;
+    }
+    if (!current) continue;
+    const om = OPTION_RE.exec(line);
+    if (om) {
+      part = om[1];
+      current.options.set(part, line.replace(OPTION_RE, ''));
+      continue;
+    }
+    if (part === 'stem') current.stem += '\n' + line;
+    else if (part) current.options.set(part, current.options.get(part)! + '\n' + line);
+  }
+  if (current) questions.push(current);
+
+  // ── Rapora dönüştür (rowNo = kitapçıktaki soru numarası) ──
+  const valid: ParsedQuestionRow[] = [];
+  const errors: RowError[] = [];
+  for (const q of questions) {
+    const opts = [...q.options.entries()]
+      .map(([label, text]) => ({ label, text: dehyphenate(text) }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+    const correct = answerKey.get(q.no);
+    if (!correct) {
+      errors.push({ rowNo: q.no, message: `Soru ${q.no}: cevap anahtarında karşılığı yok.` });
+      continue;
+    }
+    const expectedLabels = OPTION_LABELS.slice(0, opts.length);
+    if (opts.length < 4 || !opts.every((o, i) => o.label === expectedLabels[i])) {
+      errors.push({
+        rowNo: q.no,
+        message: `Soru ${q.no}: şıklar metinden tam çıkarılamadı (görsel/tablo içerebilir) — elle ekle.`,
+      });
+      continue;
+    }
+    if (!opts.some((o) => o.label === correct)) {
+      errors.push({ rowNo: q.no, message: `Soru ${q.no}: doğru şık '${correct}' dolu şıklar arasında yok.` });
+      continue;
+    }
+    valid.push({
+      rowNo: q.no,
+      stem: dehyphenate(q.stem),
+      explanation: null, // kaynak metinden açıklama KOPYALANMAZ — editoryal yazılır
+      difficulty: 'medium',
+      options: opts.map((o) => ({ ...o, isCorrect: o.label === correct })),
+    });
+  }
+
+  // Kaynak önerisi: "... TARİHİNDE YAPILAN <kurum> <sınav>" satırları.
+  const detectedSource =
+    sourceLines.length > 0
+      ? dehyphenate(sourceLines.join(' ')).replace(/\s*SORU KİTAPÇIĞI.*$/i, '').trim() || null
+      : null;
+
+  return { totalRows: questions.length, valid, errors, detectedSource };
+}
+
+/** Dosya (csv/xlsx/pdf) → doğrulanmış rapor. */
 export async function parseImportFile(buffer: Buffer, filename: string): Promise<ParseReport> {
+  const isPdf =
+    filename.toLowerCase().endsWith('.pdf') ||
+    (buffer.length >= 4 && buffer.subarray(0, 4).toString('latin1') === '%PDF');
+  if (isPdf) return parseBookletPdf(buffer);
   const isXlsx =
     filename.toLowerCase().endsWith('.xlsx') ||
     (buffer.length >= 2 && buffer[0] === 0x50 && buffer[1] === 0x4b); // PK zip imzası

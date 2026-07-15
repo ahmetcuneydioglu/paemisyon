@@ -6,6 +6,7 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { validateEnv } from './config/env.validation';
 import { TraceIdMiddleware } from './common/middleware/trace-id.middleware';
 import { PrismaModule } from './infra/prisma/prisma.module';
+import { SettingsModule } from './infra/settings/settings.module';
 import { AdminModule } from './modules/admin/admin.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { BillingModule } from './modules/billing/billing.module';
@@ -32,6 +33,7 @@ import { UsersModule } from './modules/users/users.module';
     ThrottlerModule.forRoot([{ ttl: 60_000, limit: 300 }]),
     ScheduleModule.forRoot(), // haftalık mastery fotoğrafı (Doc 19)
     PrismaModule,
+    SettingsModule,
     AuthModule,
     CatalogModule,
     QuizModule,

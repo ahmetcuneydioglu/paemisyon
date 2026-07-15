@@ -15,6 +15,8 @@ interface ImportReport {
   errors: { rowNo: number; message: string }[];
   imported: number;
   dryRun: boolean;
+  /** PDF kitapçıktan otomatik saptanan kaynak (öneri — düzenlenebilir). */
+  detectedSource?: string | null;
 }
 
 /** Şablon CSV'si (UTF-8 BOM + ; ayraç — TR Excel'de sorunsuz açılır). */
@@ -38,6 +40,7 @@ async function uploadImport(params: {
   file: File;
   dryRun: boolean;
   skipErrors: boolean;
+  source?: string;
 }): Promise<ImportReport> {
   const { data } = await supabase().auth.getSession();
   const form = new FormData();
@@ -47,6 +50,7 @@ async function uploadImport(params: {
     dryRun: params.dryRun ? '1' : '0',
     skipErrors: params.skipErrors ? '1' : '0',
   });
+  if (params.source?.trim()) qs.set('source', params.source.trim());
   const res = await fetch(`${config.apiBaseUrl}/admin/questions/import?${qs}`, {
     method: 'POST',
     headers: { Authorization: `Bearer ${data.session?.access_token ?? ''}` },
@@ -62,6 +66,7 @@ export default function ImportPage() {
   const [file, setFile] = useState<File | null>(null);
   const [report, setReport] = useState<ImportReport | null>(null);
   const [skipErrors, setSkipErrors] = useState(false);
+  const [source, setSource] = useState('');
   const [done, setDone] = useState<number | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -72,11 +77,15 @@ export default function ImportPage() {
 
   const preview = useMutation({
     mutationFn: (f: File) => uploadImport({ topicId, file: f, dryRun: true, skipErrors: false }),
-    onSuccess: setReport,
+    onSuccess: (r) => {
+      setReport(r);
+      // PDF kitapçıktan saptanan kaynak — alan boşsa öneri olarak doldur.
+      if (r.detectedSource) setSource((cur) => cur || r.detectedSource!);
+    },
   });
 
   const doImport = useMutation({
-    mutationFn: () => uploadImport({ topicId, file: file!, dryRun: false, skipErrors }),
+    mutationFn: () => uploadImport({ topicId, file: file!, dryRun: false, skipErrors, source }),
     onSuccess: (r) => {
       setReport(r);
       setDone(r.imported);
@@ -96,7 +105,7 @@ export default function ImportPage() {
     <>
       <PageHeader
         title="Toplu Soru İçe Aktarma"
-        subtitle="CSV veya Excel (.xlsx) — aktarılan sorular doğrudan yayına ÇIKMAZ, onay kuyruğuna düşer"
+        subtitle="CSV, Excel (.xlsx) veya resmî sınav kitapçığı PDF'i — aktarılan sorular doğrudan yayına ÇIKMAZ, onay kuyruğuna düşer"
         action={
           <button onClick={downloadTemplate} className="rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">
             📄 Şablonu indir
@@ -132,16 +141,32 @@ export default function ImportPage() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium">Dosya (.csv / .xlsx)</label>
+            <label className="block text-sm font-medium">Dosya (.csv / .xlsx / .pdf)</label>
             <input
               ref={fileRef}
               type="file"
-              accept=".csv,.xlsx"
+              accept=".csv,.xlsx,.pdf"
               onChange={(e) => onFileChange(e.target.files?.[0] ?? null)}
               className="mt-1 block w-full text-sm file:mr-3 file:rounded-lg file:border-0 file:bg-indigo-50 file:px-4 file:py-2 file:text-sm file:font-medium file:text-indigo-700 hover:file:bg-indigo-100"
             />
             <p className="mt-1 text-xs text-slate-400">
-              Sütunlar: soru, A, B, C, D, (E), dogru, (aciklama), (zorluk: kolay/orta/zor). En fazla 500 satır, 2MB.
+              CSV/Excel sütunları: soru, A, B, C, D, (E), dogru, (aciklama), (zorluk). PDF: MEB/ÖDSGM
+              kitapçık formatı — sorular ve cevap anahtarı otomatik ayrıştırılır. En fazla 500 soru.
+            </p>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium">Kaynak etiketi (opsiyonel)</label>
+            <input
+              type="text"
+              value={source}
+              onChange={(e) => setSource(e.target.value)}
+              placeholder="30 Kasım 2025 Adalet Bakanlığı GYS — Zabıt Kâtibi"
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+            />
+            <p className="mt-1 text-xs text-slate-400">
+              Sorunun geldiği sınav/yıl. PDF yüklersen kitapçıktan otomatik önerilir. Kullanıcıya
+              gösterimi Sorular sayfasındaki anahtardan açılıp kapanır.
             </p>
           </div>
         </div>

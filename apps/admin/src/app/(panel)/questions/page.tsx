@@ -1,11 +1,44 @@
 'use client';
 
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
 import { api } from '@/lib/api';
 import type { CatalogModule, ContentStatus, Paged, QuestionListItem } from '@/lib/types';
+
+/** Kaynak etiketi gösterim anahtarı — kullanıcı uygulamalarında "Kaynak: ..."
+ *  satırını açar/kapar (~1 dk içinde yansır; SettingsService önbelleği). */
+function SourceToggle() {
+  const qc = useQueryClient();
+  const settings = useQuery({
+    queryKey: ['admin-settings'],
+    queryFn: () => api<{ showQuestionSource: boolean }>('/admin/settings'),
+  });
+  const update = useMutation({
+    mutationFn: (v: boolean) =>
+      api<{ showQuestionSource: boolean }>('/admin/settings', {
+        method: 'PATCH',
+        body: { showQuestionSource: v },
+      }),
+    onSuccess: (r) => qc.setQueryData(['admin-settings'], r),
+  });
+  const on = settings.data?.showQuestionSource ?? true;
+  return (
+    <label
+      className="flex cursor-pointer items-center gap-2 rounded-lg border border-slate-300 px-3 py-2 text-sm hover:bg-slate-50"
+      title="Açıkken kullanıcılar cevap incelemesinde sorunun kaynağını (örn. hangi sınavdan geldiğini) görür."
+    >
+      <input
+        type="checkbox"
+        checked={on}
+        disabled={settings.isLoading || update.isPending}
+        onChange={(e) => update.mutate(e.target.checked)}
+      />
+      Kaynak etiketini kullanıcıya göster
+    </label>
+  );
+}
 
 /** Soru listesi (Doc 9 §4.1): filtre (durum/konu/arama) + sayfalama. */
 export default function QuestionsPage() {
@@ -40,6 +73,7 @@ export default function QuestionsPage() {
         subtitle="Sürümlü soru bankası — düzenleme yayındakini bozmaz"
         action={
           <div className="flex gap-2">
+            <SourceToggle />
             <Link
               href="/questions/import"
               className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50"

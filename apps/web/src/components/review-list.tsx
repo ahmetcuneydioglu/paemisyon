@@ -61,6 +61,11 @@ export function ReviewList({
                   <strong>Açıklama:</strong> {q.explanation}
                 </div>
               )}
+              {showAnswers && q.source && (
+                <p className="mt-1 text-[12px] text-(--color-grey-text,inherit) opacity-70">
+                  Kaynak: {q.source}
+                </p>
+              )}
             </>
           );
         }}

@@ -254,6 +254,9 @@ model QuestionVersion {
   explanation String?
   difficulty  Difficulty    @default(medium)
   mediaUrl    String?       @map("media_url")
+  // Soru kaynağı (örn. "30 Kasım 2025 Adalet Bakanlığı GYS — Zabıt Kâtibi").
+  // Kullanıcıya gösterimi app_settings.show_question_source ile açılır/kapanır.
+  sourceLabel String?       @map("source_label")
   status      ContentStatus @default(draft)
   authoredBy  String?       @map("authored_by") @db.Uuid
   reviewedBy  String?       @map("reviewed_by") @db.Uuid
@@ -551,6 +554,16 @@ model WrongAnswer {
 
   @@id([userId, questionId])
   @@map("wrong_answers")
+}
+
+/// Uygulama ayarları (anahtar-değer) — admin panelden yönetilir.
+/// Örn. show_question_source: kaynak etiketi kullanıcıya gösterilsin mi.
+model AppSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("app_settings")
 }
 
 // ─────────────────────────────────────────────

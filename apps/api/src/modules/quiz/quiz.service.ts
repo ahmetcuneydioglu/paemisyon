@@ -6,6 +6,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -22,6 +23,7 @@ export class QuizService {
     private readonly prisma: PrismaService,
     private readonly progress: ProgressService,
     private readonly badges: BadgeService,
+    private readonly settings: SettingsService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -348,16 +350,24 @@ export class QuizService {
       }
     }
 
-    // practice: anlık geri bildirim + açıklama.
-    const version = await this.prisma.questionVersion.findUnique({
-      where: { id: dto.questionVersionId },
-      select: { explanation: true, legalReferences: { select: { citation: true }, take: 1 } },
-    });
+    // practice: anlık geri bildirim + açıklama (+ kaynak, ayar açıksa).
+    const [version, showSource] = await Promise.all([
+      this.prisma.questionVersion.findUnique({
+        where: { id: dto.questionVersionId },
+        select: {
+          explanation: true,
+          sourceLabel: true,
+          legalReferences: { select: { citation: true }, take: 1 },
+        },
+      }),
+      this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
+    ]);
     return {
       isCorrect,
       correctOptionId: correct?.id ?? null,
       explanation: version?.explanation ?? null,
       legalReference: version?.legalReferences[0]?.citation ?? null,
+      source: showSource ? (version?.sourceLabel ?? null) : null,
     };
   }
 

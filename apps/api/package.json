@@ -33,6 +33,7 @@
     "iconv-lite": "^0.7.3",
     "jose": "^5.10.0",
     "papaparse": "^5.5.4",
+    "pdf-parse": "^2.4.5",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
@@ -45,6 +46,7 @@
     "@types/multer": "^2.2.0",
     "@types/node": "^22.10.5",
     "@types/papaparse": "^5.5.2",
+    "@types/pdf-parse": "^1.1.5",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
     "@typescript-eslint/parser": "^8.19.1",
     "bcryptjs": "^2.4.3",

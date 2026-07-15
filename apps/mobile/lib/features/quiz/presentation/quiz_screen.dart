@@ -381,6 +381,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   ),
                 ),
               ],
+              if (_feedback?.source != null) ...[
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  'Kaynak: ${_feedback!.source!}',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
               const SizedBox(height: AppSpacing.lg),
               _bottomButton(),
             ],

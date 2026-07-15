@@ -86,17 +86,23 @@ class AnswerFeedback {
   final String? explanation;
   final String? legalReference;
 
+  /// Soru kaynağı (örn. "30 Kasım 2025 Adalet Bakanlığı GYS") — sunucu,
+  /// panel ayarı kapalıysa null gönderir (istemci kural bilmez).
+  final String? source;
+
   const AnswerFeedback(
       {this.isCorrect,
       this.correctOptionId,
       this.explanation,
-      this.legalReference});
+      this.legalReference,
+      this.source});
 
   factory AnswerFeedback.fromJson(Map<String, dynamic> j) => AnswerFeedback(
         isCorrect: j['isCorrect'] as bool?,
         correctOptionId: j['correctOptionId'] as String?,
         explanation: j['explanation'] as String?,
         legalReference: j['legalReference'] as String?,
+        source: j['source'] as String?,
       );
 }
 

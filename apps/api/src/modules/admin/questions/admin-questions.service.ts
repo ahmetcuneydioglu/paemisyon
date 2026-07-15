@@ -309,7 +309,16 @@ export class AdminQuestionsService {
   // düşer (eski sistemin doğrudan-yayın hatası bilinçli olarak tekrarlanmaz).
   async import(
     actor: AuthenticatedUser,
-    params: { topicId: string; file: Buffer; filename: string; dryRun: boolean; skipErrors: boolean },
+    params: {
+      topicId: string;
+      file: Buffer;
+      filename: string;
+      dryRun: boolean;
+      skipErrors: boolean;
+      /// Kaynak etiketi (örn. "30 Kasım 2025 Adalet Bakanlığı GYS").
+      /// Boşsa PDF'ten saptanan öneri kullanılır; CSV'de yoksa null kalır.
+      sourceLabel?: string;
+    },
   ): Promise<ParseReport & { imported: number; dryRun: boolean }> {
     const topic = await this.prisma.topic.findFirst({
       where: { id: params.topicId, deletedAt: null },
@@ -335,6 +344,7 @@ export class AdminQuestionsService {
       return { ...report, imported: 0, dryRun: false };
     }
 
+    const sourceLabel = params.sourceLabel?.trim() || report.detectedSource || null;
     await this.prisma.$transaction(async (tx) => {
       for (const row of report.valid) {
         const q = await tx.question.create({ data: { topicId: params.topicId } });
@@ -344,6 +354,7 @@ export class AdminQuestionsService {
             versionNo: 1,
             stem: row.stem,
             explanation: row.explanation,
+            sourceLabel,
             difficulty: row.difficulty as Difficulty,
             status: 'in_review', // onay kuyruğuna düşer — doğrudan yayın YOK
             authoredBy: actor.id,
@@ -365,6 +376,7 @@ export class AdminQuestionsService {
       imported: report.valid.length,
       errorCount: report.errors.length,
       topicName: topic.name,
+      sourceLabel,
     });
     return { ...report, imported: report.valid.length, dryRun: false };
   }

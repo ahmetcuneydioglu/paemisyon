@@ -15,6 +15,8 @@ export interface ReviewQuestion {
   stem: string;
   mediaUrl: string | null;
   explanation?: string | null;
+  /** Soru kaynağı — panel ayarı kapalıysa sunucu null gönderir. */
+  source?: string | null;
   options: ReviewOption[];
   selectedOptionId?: string | null;
 }

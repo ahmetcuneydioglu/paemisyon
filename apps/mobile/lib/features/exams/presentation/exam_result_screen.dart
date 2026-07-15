@@ -204,6 +204,12 @@ class _ReviewTile extends StatelessWidget {
                 child: Text('Açıklama: ${q.explanation}',
                     style: Theme.of(context).textTheme.bodySmall),
               ),
+            if (q.source != null && q.source!.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(top: AppSpacing.xs),
+                child: Text('Kaynak: ${q.source}',
+                    style: Theme.of(context).textTheme.bodySmall),
+              ),
           ],
         ),
       ),

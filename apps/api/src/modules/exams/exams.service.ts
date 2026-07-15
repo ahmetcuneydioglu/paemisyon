@@ -5,6 +5,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { QuizService } from '../quiz/quiz.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 
@@ -20,6 +21,7 @@ export class ExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
+    private readonly settings: SettingsService,
   ) {}
 
   private endAt(exam: { startAt: Date; durationMinutes: number }): Date {
@@ -213,8 +215,10 @@ export class ExamsService {
       select: { questionId: true, selectedOptionId: true, isCorrect: true },
     });
     const answerOf = new Map(answers.map((a) => [a.questionId, a]));
+    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
     const review = (await this.examQuestions(session.examId!, { withAnswers: true })).map((q) => ({
       ...q,
+      source: showSource ? q.source : null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
     }));
 
@@ -353,6 +357,7 @@ export class ExamsService {
             stem: true,
             mediaUrl: true,
             explanation: opts.withAnswers,
+            sourceLabel: opts.withAnswers,
             options: {
               orderBy: { sortOrder: 'asc' },
               select: { id: true, label: true, text: true, isCorrect: opts.withAnswers },
@@ -368,6 +373,9 @@ export class ExamsService {
       stem: r.questionVersion.stem,
       mediaUrl: r.questionVersion.mediaUrl,
       explanation: opts.withAnswers ? (r.questionVersion as { explanation?: string | null }).explanation ?? null : undefined,
+      source: opts.withAnswers
+        ? ((r.questionVersion as { sourceLabel?: string | null }).sourceLabel ?? null)
+        : undefined,
       options: r.questionVersion.options,
     }));
   }

@@ -116,6 +116,9 @@ class ReviewQuestion {
   final String questionId;
   final String stem;
   final String? explanation;
+
+  /// Soru kaynağı — panel ayarı kapalıysa sunucu null gönderir.
+  final String? source;
   final List<ReviewOption> options;
   final String? selectedOptionId;
 
@@ -124,6 +127,7 @@ class ReviewQuestion {
     required this.questionId,
     required this.stem,
     this.explanation,
+    this.source,
     required this.options,
     this.selectedOptionId,
   });
@@ -133,6 +137,7 @@ class ReviewQuestion {
         questionId: j['questionId'] as String,
         stem: j['stem'] as String,
         explanation: j['explanation'] as String?,
+        source: j['source'] as String?,
         options: (j['options'] as List<dynamic>)
             .map((e) => ReviewOption.fromJson(e as Map<String, dynamic>))
             .toList(),

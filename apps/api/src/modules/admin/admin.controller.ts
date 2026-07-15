@@ -25,6 +25,7 @@ import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
 import { AuditService } from './audit.service';
+import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
 import { UpsertCourseDto, UpsertTopicDto } from './dto/catalog.dto';
@@ -44,7 +45,37 @@ export class AdminController {
     private readonly users: AdminUsersService,
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
+    private readonly settings: SettingsService,
   ) {}
+
+  // ── Uygulama ayarları ──
+  @Get('settings')
+  @Roles('admin')
+  async getSettings() {
+    return {
+      showQuestionSource: await this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
+    };
+  }
+
+  /// Kaynak etiketi gösterimini aç/kapa (Doc 9). Değişiklik ~1 dk içinde
+  /// tüm istemcilere yansır (SettingsService önbelleği).
+  @Patch('settings')
+  @Roles('admin')
+  async updateSettings(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body() body: { showQuestionSource?: boolean },
+  ) {
+    if (typeof body.showQuestionSource === 'boolean') {
+      await this.settings.set(
+        SETTING_KEYS.showQuestionSource,
+        String(body.showQuestionSource),
+      );
+      await this.audit.log(actor, 'settings.update', 'setting', SETTING_KEYS.showQuestionSource, {
+        value: body.showQuestionSource,
+      });
+    }
+    return this.getSettings();
+  }
 
   // ── Dashboard ──
   @Get('dashboard')
@@ -143,19 +174,21 @@ export class AdminController {
     return this.questions.update(actor, id, dto);
   }
 
-  // Toplu içe aktarma (Doc 9 §4.4): CSV/XLSX → in_review kuyruğu. dryRun=1 önizleme.
+  // Toplu içe aktarma (Doc 9 §4.4): CSV/XLSX/PDF (resmî kitapçık) →
+  // in_review kuyruğu. dryRun=1 önizleme; source= kaynak etiketi.
   @Post('questions/import')
   @Roles('admin', 'editor')
-  @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 2 * 1024 * 1024 } }))
+  @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 10 * 1024 * 1024 } }))
   importQuestions(
     @CurrentUser() actor: AuthenticatedUser,
     @UploadedFile() file: Express.Multer.File | undefined,
     @Query('topicId', ParseUUIDPipe) topicId: string,
     @Query('dryRun') dryRun?: string,
     @Query('skipErrors') skipErrors?: string,
+    @Query('source') source?: string,
   ) {
     if (!file?.buffer?.length) {
-      throw new BadRequestException('Dosya yüklenmedi (CSV veya XLSX bekleniyor).');
+      throw new BadRequestException('Dosya yüklenmedi (CSV, XLSX veya PDF bekleniyor).');
     }
     return this.questions.import(actor, {
       topicId,
@@ -163,6 +196,7 @@ export class AdminController {
       filename: file.originalname ?? 'import.csv',
       dryRun: dryRun === '1' || dryRun === 'true',
       skipErrors: skipErrors === '1' || skipErrors === 'true',
+      sourceLabel: source,
     });
   }
 

@@ -209,6 +209,13 @@ async function main() {
   }
   console.log(`Rozet kataloğu: ${badges.length} rozet.`);
 
+  // Uygulama ayarları — varsayılanlar (panelden değiştirilir).
+  await prisma.appSetting.upsert({
+    where: { key: 'show_question_source' },
+    update: {},
+    create: { key: 'show_question_source', value: 'true' },
+  });
+
   console.log('Seed tamam: roller, planlar, modüller, rozetler (+ örnek içerik + sorular) eklendi.');
 }
 
