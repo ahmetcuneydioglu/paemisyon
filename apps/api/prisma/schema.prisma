@@ -115,7 +115,7 @@ model User {
   questionReports  QuestionReport[]
   badges           UserBadge[]
   masterySnapshots TopicMasterySnapshot[]
-  preferredModule  Module?                @relation(fields: [preferredModuleId], references: [id])
+  preferredModule  ExamType?              @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -158,9 +158,12 @@ model UserRole {
 // Content (sürümlü) — Modül → Ders → Konu → Soru
 // ─────────────────────────────────────────────
 
-model Module {
+/// Sınav Türü (Doc 21) — PAEM, Misyon, ileride Başkomiserlik…
+/// Yeni sınav türü eklemek = SATIR eklemek (şema değişikliği değil).
+/// Tablo adı geriye uyum için "modules" kaldı (veri migration'ı gerektirmez).
+model ExamType {
   id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key         String   @unique // paem, pomem, pmyo...
+  key         String   @unique // paem, misyon, pomem...
   name        String
   description String?
   icon        String?
@@ -169,10 +172,46 @@ model Module {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
+  sections       ExamSection[]
+  // GEÇİCİ (Faz D'de kalkar): dersler artık küresel havuz, bölümler üzerinden bağlanır.
   courses        Course[]
   preferredUsers User[]
 
   @@map("modules")
+}
+
+/// Müfredat bölümü (Doc 21 §2): sınav türünde KULLANICIYA GÖRÜNEN ders başlığı.
+/// İçerik dersi (Course) küreseldir; bölüm başlık + ağırlık + sırayı taşır.
+/// Örn. Misyon "Anayasa ve İdare Hukuku" (%10) → 2 içerik dersine bağlanır.
+model ExamSection {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  examTypeId    String    @map("exam_type_id") @db.Uuid
+  name          String
+  /// Sınavdaki ağırlık (PAEM Genel Kültür %30…) — deneme üretimi bunu kullanır.
+  weightPercent Int       @default(0) @map("weight_percent")
+  sortOrder     Int       @default(0) @map("sort_order")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  deletedAt     DateTime? @map("deleted_at")
+
+  examType ExamType            @relation(fields: [examTypeId], references: [id])
+  courses  ExamSectionCourse[]
+
+  @@index([examTypeId])
+  @@map("exam_sections")
+}
+
+/// Bölüm ↔ içerik dersi bağlantısı (N:N) — veri tekrarı olmadan paylaşım.
+model ExamSectionCourse {
+  sectionId String @map("section_id") @db.Uuid
+  courseId  String @map("course_id") @db.Uuid
+  sortOrder Int    @default(0) @map("sort_order")
+
+  section ExamSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  course  Course      @relation(fields: [courseId], references: [id])
+
+  @@id([sectionId, courseId])
+  @@index([courseId])
+  @@map("exam_section_courses")
 }
 
 /// Admin/editor işlemlerinin izi (Doc 9 §6) — kim, neyi, ne zaman.
@@ -192,15 +231,19 @@ model AuditLog {
   @@map("audit_logs")
 }
 
+/// İçerik dersi (Doc 21) — KÜRESEL havuz: sınav türüne gömülü değil; müfredat
+/// bölümleri (ExamSection) üzerinden bir veya birden çok sınava bağlanır.
 model Course {
   id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  moduleId  String    @map("module_id") @db.Uuid
+  // GEÇİCİ (Faz D'de drop): eski doğrudan bağ — geçiş boyunca dolu kalır.
+  moduleId  String?   @map("module_id") @db.Uuid
   name      String
   sortOrder Int       @default(0) @map("sort_order")
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  module       Module        @relation(fields: [moduleId], references: [id])
+  examType     ExamType?           @relation(fields: [moduleId], references: [id])
+  sections     ExamSectionCourse[]
   topics       Topic[]
   quizSessions QuizSession[]
 
@@ -208,9 +251,14 @@ model Course {
   @@map("courses")
 }
 
+/// Konu — SELF-REFERENCING AĞAÇ (Doc 21): parentId null = Konu, dolu = Alt
+/// Konu. Derinlik esnek; ileri seviye eklemek şema değişikliği gerektirmez.
+/// Sorular herhangi bir düğüme (tipik yaprak) bağlanır; mastery/koç/snapshot/
+/// matchKeywords topicId bazlı olduğundan hiçbiri etkilenmez.
 model Topic {
   id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   courseId      String    @map("course_id") @db.Uuid
+  parentId      String?   @map("parent_id") @db.Uuid
   name          String
   sortOrder     Int       @default(0) @map("sort_order")
   isPremium     Boolean   @default(false) @map("is_premium")
@@ -222,12 +270,15 @@ model Topic {
   deletedAt     DateTime? @map("deleted_at")
 
   course           Course                 @relation(fields: [courseId], references: [id])
+  parent           Topic?                 @relation("TopicTree", fields: [parentId], references: [id])
+  children         Topic[]                @relation("TopicTree")
   questions        Question[]
   quizSessions     QuizSession[]
   userProgress     UserTopicProgress[]
   masterySnapshots TopicMasterySnapshot[]
 
   @@index([courseId])
+  @@index([parentId])
   @@map("topics")
 }
 

@@ -93,7 +93,7 @@ async function main() {
     { key: 'pmyo', name: 'PMYO', description: null, sortOrder: 4, isActive: false },
   ];
   for (const m of modules) {
-    await prisma.module.upsert({
+    await prisma.examType.upsert({
       where: { key: m.key },
       update: {
         name: m.name,
@@ -108,7 +108,7 @@ async function main() {
   // ── PAEM mevzuat taksonomisi (Doc 20) — per-kanun konular + eşleme desenleri.
   // Toplu içe aktarmada soruları otomatik sınıflandırır. BAŞLANGIÇ ağacı:
   // admin katalog panelinden genişletir/düzeltir. Idempotent (ada göre upsert).
-  const paemModule = await prisma.module.findUnique({ where: { key: 'paem' } });
+  const paemModule = await prisma.examType.findUnique({ where: { key: 'paem' } });
   if (paemModule) {
     // [ders, sıra, [konu, [keyword...]]]
     const taxonomy: { course: string; topics: { name: string; kw: string[] }[] }[] = [
@@ -196,7 +196,7 @@ async function main() {
 
   // Örnek içerik (DEV) — katalog gezinmesini denemek için. PAEM boşsa ekle.
   // Gerçek içerik editoryal üretilir (Doc 2); bu yalnızca iskelet doğrulaması.
-  const paem = await prisma.module.findUnique({ where: { key: 'paem' } });
+  const paem = await prisma.examType.findUnique({ where: { key: 'paem' } });
   if (paem) {
     const courseCount = await prisma.course.count({ where: { moduleId: paem.id } });
     if (courseCount === 0) {

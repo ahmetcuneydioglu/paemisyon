@@ -15,7 +15,7 @@ export class UsersService {
 
   /** Onboarding: hedef sınav seç + tamamlandı işaretle (idempotent). */
   async completeOnboarding(userId: string, moduleId: string) {
-    const module = await this.prisma.module.findFirst({
+    const module = await this.prisma.examType.findFirst({
       where: { id: moduleId, isActive: true },
     });
     if (!module) throw new BadRequestException('Geçersiz modül.');

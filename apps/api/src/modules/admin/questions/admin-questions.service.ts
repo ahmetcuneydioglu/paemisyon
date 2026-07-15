@@ -331,7 +331,7 @@ export class AdminQuestionsService {
   // kapsamındaki konular matchKeywords'e göre önerilir; admin sınıflandırma
   // ekranında onaylar/düzeltir. Hiçbir şey yazılmaz.
   async previewImport(params: { moduleId: string; file: Buffer; filename: string }) {
-    const module = await this.prisma.module.findFirst({ where: { id: params.moduleId } });
+    const module = await this.prisma.examType.findFirst({ where: { id: params.moduleId } });
     if (!module) throw new BadRequestException('Hedef modül bulunamadı.');
 
     const report = await parseImportFile(params.file, params.filename);

@@ -123,7 +123,7 @@ async function main() {
   // ── Ağacı kur (idempotent) ──
   const topicIdOf = new Map<string, string>(); // legacy sub id → yeni topic id
   for (const p of plan.values()) {
-    const module = await prisma.module.findUnique({ where: { key: p.moduleKey } });
+    const module = await prisma.examType.findUnique({ where: { key: p.moduleKey } });
     if (!module) throw new Error(`Modül yok: ${p.moduleKey} — önce seed çalıştır.`);
     let course = await prisma.course.findFirst({
       where: { moduleId: module.id, name: p.courseName, deletedAt: null },

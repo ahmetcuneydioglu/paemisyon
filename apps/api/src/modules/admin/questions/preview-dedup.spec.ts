@@ -17,7 +17,7 @@ describe('previewImport — tekrar tespiti (Doc 20 EK 2)', () => {
     // Bankada "Benzersiz soru?" zaten varmış gibi davran (rowNo 2 → bank dup).
     const bankHash = questionFingerprint('Benzersiz soru?', ['a', 'b', 'c', 'd']);
     const prisma = {
-      module: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
+      examType: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
       topic: { findMany: jest.fn().mockResolvedValue([]) },
       questionVersion: {
         findMany: jest.fn().mockResolvedValue([
@@ -42,7 +42,7 @@ describe('previewImport — tekrar tespiti (Doc 20 EK 2)', () => {
 
   it('banka boşsa yalnız batch tekrarları işaretlenir', async () => {
     const prisma = {
-      module: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
+      examType: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
       topic: { findMany: jest.fn().mockResolvedValue([]) },
       questionVersion: { findMany: jest.fn().mockResolvedValue([]) },
     };

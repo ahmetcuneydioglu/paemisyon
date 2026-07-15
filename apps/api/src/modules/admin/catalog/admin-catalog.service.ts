@@ -25,7 +25,7 @@ export class AdminCatalogService {
 
   /** Tam ağaç — panel solunda tek istekte gösterilir. Soru sayıları dahil. */
   async tree() {
-    const modules = await this.prisma.module.findMany({
+    const modules = await this.prisma.examType.findMany({
       orderBy: { sortOrder: 'asc' },
       include: {
         courses: {

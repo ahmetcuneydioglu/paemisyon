@@ -192,7 +192,7 @@ export class QuizService {
           course: {
             name: QuizService.DAILY_COURSE_NAME,
             deletedAt: null,
-            module: { key: QuizService.DAILY_MODULE_KEY },
+            examType: { key: QuizService.DAILY_MODULE_KEY },
           },
         },
       },

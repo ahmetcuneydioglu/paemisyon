@@ -17,7 +17,7 @@ function csv(): Buffer {
 function makeService() {
   const writtenStems: string[] = [];
   const prisma = {
-    module: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
+    examType: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
     topic: {
       findMany: jest.fn().mockResolvedValue([
         { id: 'T1', name: 'Konu 1', matchKeywords: [], course: { name: 'Ders' } },

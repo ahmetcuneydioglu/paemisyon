@@ -10,7 +10,7 @@ export class CatalogService {
   /// yayında soru sayısı, kullanıcının o alandaki çözüm/doğruluğu, hedef işareti.
   async getModules(userId: string) {
     const [modules, user, counts, progress] = await Promise.all([
-      this.prisma.module.findMany({
+      this.prisma.examType.findMany({
         where: { isActive: true },
         orderBy: { sortOrder: 'asc' },
         select: { id: true, key: true, name: true, description: true, icon: true, sortOrder: true },

@@ -17,7 +17,7 @@ export class QuestionsService {
 
   /** Web için hedef seçtirmek: modül→ders→konu ağacı (premium bilgisi dahil). */
   async publicCatalog() {
-    const modules = await this.prisma.module.findMany({
+    const modules = await this.prisma.examType.findMany({
       where: { isActive: true },
       orderBy: { sortOrder: 'asc' },
       select: {
