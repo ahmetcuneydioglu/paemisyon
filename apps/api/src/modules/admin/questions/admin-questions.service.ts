@@ -366,11 +366,13 @@ export class AdminQuestionsService {
       filename: string;
       /// rowNo -> topicId (admin'in onayladığı sınıflandırma).
       assignments: Record<number, string>;
+      /// Aktarımdan çıkarılan sorular (rowNo) — DB'ye HİÇ yazılmaz (Doc 20 ek).
+      excluded?: number[];
       skipErrors: boolean;
       /// Kaynak etiketi; boşsa PDF'ten saptanan öneri kullanılır.
       sourceLabel?: string;
     },
-  ): Promise<{ imported: number; errors: RowError[]; skipped: number }> {
+  ): Promise<{ imported: number; errors: RowError[]; skipped: number; excluded: number }> {
     const topics = await this.moduleTopics(params.moduleId);
     const topicIds = new Set(topics.map((t) => t.id));
 
@@ -384,14 +386,25 @@ export class AdminQuestionsService {
       );
     }
 
-    // Her geçerli satır bir konuya atanmış ve konu bu modülde olmalı.
-    const unassigned = report.valid.filter((r) => !params.assignments[r.rowNo]);
-    if (unassigned.length > 0) {
+    // Her geçerli satır KARAR verilmiş olmalı: konuya atanmış VEYA çıkarılmış.
+    // Çıkarma önceliklidir (atanmış ama çıkarılmışsa yazılmaz).
+    const excludedSet = new Set(params.excluded ?? []);
+    const undecided = report.valid.filter(
+      (r) => !params.assignments[r.rowNo] && !excludedSet.has(r.rowNo),
+    );
+    if (undecided.length > 0) {
       throw new BadRequestException(
-        `${unassigned.length} soru sınıflandırılmadı. Tüm sorulara konu atanmalı.`,
+        `${undecided.length} soru ne sınıflandırıldı ne çıkarıldı. Her soruya konu ata ya da çıkar.`,
       );
     }
-    for (const r of report.valid) {
+    // Yazılacaklar: konuya atanmış ve çıkarılmamış olanlar.
+    const toWrite = report.valid.filter(
+      (r) => params.assignments[r.rowNo] && !excludedSet.has(r.rowNo),
+    );
+    if (toWrite.length === 0) {
+      throw new BadRequestException('Aktarılacak soru kalmadı (hepsi çıkarıldı).');
+    }
+    for (const r of toWrite) {
       if (!topicIds.has(params.assignments[r.rowNo])) {
         throw new BadRequestException(`Geçersiz konu ataması (soru ${r.rowNo}).`);
       }
@@ -399,7 +412,7 @@ export class AdminQuestionsService {
 
     const sourceLabel = params.sourceLabel?.trim() || report.detectedSource || null;
     await this.prisma.$transaction(async (tx) => {
-      for (const row of report.valid) {
+      for (const row of toWrite) {
         const q = await tx.question.create({
           data: { topicId: params.assignments[row.rowNo] },
         });
@@ -428,18 +441,24 @@ export class AdminQuestionsService {
 
     // Konu bazında dağılımı audit'e yaz (hangi konuya kaç soru).
     const byTopic: Record<string, number> = {};
-    for (const r of report.valid) {
+    for (const r of toWrite) {
       const name = topics.find((t) => t.id === params.assignments[r.rowNo])!.name;
       byTopic[name] = (byTopic[name] ?? 0) + 1;
     }
     await this.audit.log(actor, 'question.import', 'module', params.moduleId, {
       filename: params.filename,
-      imported: report.valid.length,
+      imported: toWrite.length,
+      excludedCount: excludedSet.size,
       errorCount: report.errors.length,
       byTopic,
       sourceLabel,
     });
-    return { imported: report.valid.length, errors: report.errors, skipped: report.errors.length };
+    return {
+      imported: toWrite.length,
+      errors: report.errors,
+      skipped: report.errors.length,
+      excluded: excludedSet.size,
+    };
   }
 
   // Modül kapsamındaki konular + keyword'ler + ders adı (öneri/atama için).

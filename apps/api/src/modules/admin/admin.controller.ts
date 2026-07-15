@@ -189,6 +189,7 @@ export class AdminController {
     @Query('skipErrors') skipErrors?: string,
     @Query('source') source?: string,
     @Body('assignments') assignments?: string,
+    @Body('excluded') excluded?: string,
   ) {
     if (!file?.buffer?.length) {
       throw new BadRequestException('Dosya yüklenmedi (CSV, XLSX veya PDF bekleniyor).');
@@ -205,11 +206,20 @@ export class AdminController {
         throw new BadRequestException('Konu atamaları (assignments) çözümlenemedi.');
       }
     }
+    let excludedRows: number[] = [];
+    if (excluded) {
+      try {
+        excludedRows = JSON.parse(excluded) as number[];
+      } catch {
+        throw new BadRequestException('Çıkarılan sorular (excluded) çözümlenemedi.');
+      }
+    }
     return this.questions.import(actor, {
       moduleId,
       file: file.buffer,
       filename,
       assignments: parsed,
+      excluded: excludedRows,
       skipErrors: skipErrors === '1' || skipErrors === 'true',
       sourceLabel: source,
     });

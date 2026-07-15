@@ -10,6 +10,7 @@ import { api } from '@/lib/api';
 import type { CatalogModule } from '@/lib/types';
 
 const UNASSIGNED = '__none__';
+const EXCLUDE = '__exclude__'; // TopicSelect'te "bu soruyu alma" sentinel'i
 
 interface PreviewRow {
   rowNo: number;
@@ -34,6 +35,7 @@ interface PreviewReport {
 interface ImportResult {
   imported: number;
   skipped: number;
+  excluded: number;
   errors: { rowNo: number; message: string }[];
 }
 
@@ -75,12 +77,14 @@ async function importUpload(params: {
   moduleId: string;
   file: File;
   assignments: Record<number, string>;
+  excluded: number[];
   source: string;
   skipErrors: boolean;
 }): Promise<ImportResult> {
   const form = new FormData();
   form.append('file', params.file);
   form.append('assignments', JSON.stringify(params.assignments));
+  form.append('excluded', JSON.stringify(params.excluded));
   const qs = new URLSearchParams({
     moduleId: params.moduleId,
     skipErrors: params.skipErrors ? '1' : '0',
@@ -100,7 +104,11 @@ export default function ImportPage() {
   const [moduleId, setModuleId] = useState('');
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<PreviewReport | null>(null);
+  // assignments = konu önerileri/atamaları (excluded'ın ALTINDA korunur);
+  // excluded = aktarımdan çıkarılanlar (öncelikli). Bir satır hem atanmış hem
+  // çıkarılmış olabilir → çıkarılmış sayılır (aktarılmaz).
   const [assignments, setAssignments] = useState<Record<number, string>>({});
+  const [excluded, setExcluded] = useState<Set<number>>(new Set());
   const [source, setSource] = useState('');
   const [skipErrors, setSkipErrors] = useState(false);
   const [done, setDone] = useState<ImportResult | null>(null);
@@ -119,12 +127,14 @@ export default function ImportPage() {
       const init: Record<number, string> = {};
       for (const row of r.valid) if (row.suggestedTopicId) init[row.rowNo] = row.suggestedTopicId;
       setAssignments(init);
+      setExcluded(new Set());
       if (r.detectedSource) setSource((cur) => cur || r.detectedSource!);
     },
   });
 
   const importMut = useMutation({
-    mutationFn: () => importUpload({ moduleId, file: file!, assignments, source, skipErrors }),
+    mutationFn: () =>
+      importUpload({ moduleId, file: file!, assignments, excluded: [...excluded], source, skipErrors }),
     onSuccess: setDone,
   });
 
@@ -132,6 +142,7 @@ export default function ImportPage() {
     setFile(f);
     setPreview(null);
     setAssignments({});
+    setExcluded(new Set());
     setDone(null);
     if (f && moduleId) previewMut.mutate(f);
   }
@@ -142,11 +153,43 @@ export default function ImportPage() {
     return m;
   }, [preview]);
 
-  const unassignedCount = preview ? preview.valid.filter((r) => !assignments[r.rowNo]).length : 0;
+  // Bir satırın kararı: excluded (öncelikli) > assigned > undecided.
+  function decisionValue(rowNo: number): string {
+    if (excluded.has(rowNo)) return EXCLUDE;
+    return assignments[rowNo] ?? '';
+  }
+  function setDecision(rowNo: number, value: string) {
+    setExcluded((cur) => {
+      const next = new Set(cur);
+      if (value === EXCLUDE) next.add(rowNo);
+      else next.delete(rowNo);
+      return next;
+    });
+    if (value !== EXCLUDE) {
+      setAssignments((cur) => {
+        const next = { ...cur };
+        if (value) next[rowNo] = value;
+        else delete next[rowNo];
+        return next;
+      });
+    }
+  }
+  function excludeRows(rowNos: number[], on: boolean) {
+    setExcluded((cur) => {
+      const next = new Set(cur);
+      for (const n of rowNos) (on ? next.add(n) : next.delete(n));
+      return next;
+    });
+  }
+
+  const rows = preview?.valid ?? [];
+  const keptCount = rows.filter((r) => !excluded.has(r.rowNo) && assignments[r.rowNo]).length;
+  const excludedCount = rows.filter((r) => excluded.has(r.rowNo)).length;
+  const undecidedCount = rows.filter((r) => !excluded.has(r.rowNo) && !assignments[r.rowNo]).length;
   const canImport =
     !!preview &&
-    preview.valid.length > 0 &&
-    unassignedCount === 0 &&
+    undecidedCount === 0 &&
+    keptCount > 0 &&
     (preview.errors.length === 0 || skipErrors) &&
     done == null;
 
@@ -154,7 +197,7 @@ export default function ImportPage() {
     <>
       <PageHeader
         title="Toplu Soru İçe Aktarma"
-        subtitle="CSV, Excel veya resmî sınav kitapçığı PDF'i — sorular konuya göre sınıflandırılıp onay kuyruğuna düşer"
+        subtitle="CSV, Excel veya resmî sınav kitapçığı PDF'i — sorular konuya sınıflandırılır, istenmeyenler çıkarılır, kalanı onay kuyruğuna düşer"
         action={
           <button onClick={downloadTemplate} className="rounded-lg border border-slate-300 px-4 py-2 text-sm hover:bg-slate-50">
             📄 Şablonu indir
@@ -184,7 +227,7 @@ export default function ImportPage() {
               ))}
             </select>
             <p className="mt-1 text-xs text-slate-400">
-              Sorular bu modülün konularına sınıflandırılır. Konu eşleşme desenlerini İçerik Ağacı’ndan yönetebilirsin.
+              Sorular bu modülün konularına sınıflandırılır. Eşleşme desenlerini İçerik Ağacı’ndan yönetebilirsin.
             </p>
           </div>
 
@@ -230,50 +273,72 @@ export default function ImportPage() {
 
       {preview && done == null && (
         <div className="mt-6 max-w-4xl space-y-4">
-          <div className="flex flex-wrap gap-3 text-sm">
+          {/* Sayaçlar + toplu çıkar/geri al */}
+          <div className="flex flex-wrap items-center gap-3 text-sm">
             <span className="rounded-full bg-emerald-100 px-3 py-1 font-medium text-emerald-800">
-              ✓ {preview.valid.length} soru
+              ✓ {keptCount} aktarılacak
             </span>
-            <span
-              className={`rounded-full px-3 py-1 font-medium ${
-                unassignedCount > 0 ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-500'
-              }`}
-            >
-              {unassignedCount > 0 ? `⚠ ${unassignedCount} konu atanmadı` : '✓ hepsi sınıflandırıldı'}
-            </span>
-            {preview.errors.length > 0 && (
-              <span className="rounded-full bg-red-100 px-3 py-1 font-medium text-red-700">
-                ✕ {preview.errors.length} hatalı (görsel/tablo olabilir)
+            {excludedCount > 0 && (
+              <span className="rounded-full bg-slate-200 px-3 py-1 font-medium text-slate-600">
+                ⊘ {excludedCount} çıkarıldı
               </span>
             )}
+            {undecidedCount > 0 && (
+              <span className="rounded-full bg-amber-100 px-3 py-1 font-medium text-amber-800">
+                ⚠ {undecidedCount} bekliyor
+              </span>
+            )}
+            {preview.errors.length > 0 && (
+              <span className="rounded-full bg-red-100 px-3 py-1 font-medium text-red-700">
+                ✕ {preview.errors.length} hatalı
+              </span>
+            )}
+            <div className="ml-auto flex gap-2">
+              <button
+                onClick={() => excludeRows(rows.map((r) => r.rowNo), true)}
+                className="rounded-lg border border-slate-300 px-3 py-1 text-xs hover:bg-slate-50"
+              >
+                Tümünü çıkar
+              </button>
+              <button
+                onClick={() => setExcluded(new Set())}
+                className="rounded-lg border border-slate-300 px-3 py-1 text-xs hover:bg-slate-50"
+              >
+                Tümünü geri al
+              </button>
+            </div>
           </div>
+          <p className="text-xs text-slate-400">
+            İpucu: bu modüle ait olmayan blokları “Bu bloğu çıkar” ile ele; çıkarılan sorular veritabanına hiç yazılmaz.
+            Polis kısmı azınlıksa “Tümünü çıkar” deyip istediklerini geri alabilirsin.
+          </p>
 
           <RangeAssign
             topics={preview.moduleTopics}
-            onAssign={(from, to, topicId) =>
-              setAssignments((cur) => {
-                const next = { ...cur };
-                for (const r of preview.valid) {
-                  if (r.rowNo >= from && r.rowNo <= to) next[r.rowNo] = topicId;
-                }
-                return next;
-              })
-            }
+            onAssign={(from, to, target) => {
+              const inRange = preview.valid.filter((r) => r.rowNo >= from && r.rowNo <= to).map((r) => r.rowNo);
+              if (target === EXCLUDE) excludeRows(inRange, true);
+              else {
+                excludeRows(inRange, false);
+                setAssignments((cur) => {
+                  const next = { ...cur };
+                  for (const n of inRange) next[n] = target;
+                  return next;
+                });
+              }
+            }}
           />
 
           <ClassifyList
             rows={preview.valid}
             topics={preview.moduleTopics}
+            excluded={excluded}
             assignments={assignments}
             topicName={topicName}
-            onChange={(rowNo, topicId) =>
-              setAssignments((cur) => {
-                const next = { ...cur };
-                if (topicId) next[rowNo] = topicId;
-                else delete next[rowNo];
-                return next;
-              })
-            }
+            decisionValue={decisionValue}
+            onDecision={setDecision}
+            onExcludeGroup={(rowNos) => excludeRows(rowNos, true)}
+            onRestoreGroup={(rowNos) => excludeRows(rowNos, false)}
           />
 
           {preview.errors.length > 0 && (
@@ -297,12 +362,13 @@ export default function ImportPage() {
               onClick={() => importMut.mutate()}
               className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
             >
-              {importMut.isPending
-                ? 'Aktarılıyor…'
-                : `${preview.valid.length} soruyu onay kuyruğuna aktar`}
+              {importMut.isPending ? 'Aktarılıyor…' : `${keptCount} soruyu onay kuyruğuna aktar`}
             </button>
-            {unassignedCount > 0 && (
-              <span className="text-sm text-amber-700">Önce tüm sorulara konu ata.</span>
+            {undecidedCount > 0 && (
+              <span className="text-sm text-amber-700">Bekleyen sorulara konu ata ya da çıkar.</span>
+            )}
+            {keptCount === 0 && undecidedCount === 0 && (
+              <span className="text-sm text-slate-500">Aktarılacak soru kalmadı.</span>
             )}
             {preview.errors.length > 0 && (
               <label className="flex items-center gap-2 text-sm text-slate-600">
@@ -317,6 +383,7 @@ export default function ImportPage() {
       {done && (
         <div className="mt-6 max-w-3xl rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800">
           ✅ {done.imported} soru onay kuyruğuna aktarıldı
+          {done.excluded > 0 ? `, ${done.excluded} soru çıkarıldı (alınmadı)` : ''}
           {done.skipped > 0 ? `, ${done.skipped} hatalı satır atlandı` : ''}.{' '}
           <Link href="/review" className="font-medium underline">
             Onay kuyruğuna git →
@@ -327,23 +394,23 @@ export default function ImportPage() {
   );
 }
 
-/** Ardışık soru aralığını tek konuya atar (MEB kitapçıklarında konular bloklu). */
+/** Ardışık soru aralığını tek konuya atar VEYA çıkarır (kitapçıklarda konular bloklu). */
 function RangeAssign({
   topics,
   onAssign,
 }: {
   topics: ModuleTopic[];
-  onAssign: (from: number, to: number, topicId: string) => void;
+  onAssign: (from: number, to: number, target: string) => void;
 }) {
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
-  const [topicId, setTopicId] = useState('');
-  const ready = from !== '' && to !== '' && topicId !== '';
+  const [target, setTarget] = useState('');
+  const ready = from !== '' && to !== '' && target !== '';
   return (
     <Card className="bg-slate-50">
       <div className="flex flex-wrap items-end gap-3">
         <div>
-          <label className="block text-xs font-medium text-slate-500">Aralık ata: baştan</label>
+          <label className="block text-xs font-medium text-slate-500">Aralık: baştan</label>
           <input
             type="number"
             value={from}
@@ -363,45 +430,58 @@ function RangeAssign({
           />
         </div>
         <div className="min-w-52 flex-1">
-          <label className="block text-xs font-medium text-slate-500">konu</label>
-          <TopicSelect topics={topics} value={topicId} onChange={setTopicId} />
+          <label className="block text-xs font-medium text-slate-500">konu / işlem</label>
+          <TopicSelect topics={topics} value={target} onChange={setTarget} withExclude />
         </div>
         <button
           disabled={!ready}
-          onClick={() => onAssign(Number(from), Number(to), topicId)}
+          onClick={() => onAssign(Number(from), Number(to), target)}
           className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-50 disabled:opacity-50"
         >
-          Ata
+          Uygula
         </button>
       </div>
     </Card>
   );
 }
 
-/** Konuya göre gruplu sınıflandırma listesi. Atanmamışlar en üstte, sarı. */
+/** Karara göre gruplu liste: bekleyen (sarı, üstte) → konular → alınmayacak (altta, soluk). */
 function ClassifyList({
   rows,
   topics,
+  excluded,
   assignments,
   topicName,
-  onChange,
+  decisionValue,
+  onDecision,
+  onExcludeGroup,
+  onRestoreGroup,
 }: {
   rows: PreviewRow[];
   topics: ModuleTopic[];
+  excluded: Set<number>;
   assignments: Record<number, string>;
   topicName: Map<string, string>;
-  onChange: (rowNo: number, topicId: string) => void;
+  decisionValue: (rowNo: number) => string;
+  onDecision: (rowNo: number, value: string) => void;
+  onExcludeGroup: (rowNos: number[]) => void;
+  onRestoreGroup: (rowNos: number[]) => void;
 }) {
   const groups = new Map<string, PreviewRow[]>();
   for (const r of rows) {
-    const key = assignments[r.rowNo] ?? UNASSIGNED;
+    let key: string;
+    if (excluded.has(r.rowNo)) key = EXCLUDE;
+    else if (assignments[r.rowNo]) key = assignments[r.rowNo];
+    else key = UNASSIGNED;
     const arr = groups.get(key) ?? [];
     arr.push(r);
     groups.set(key, arr);
   }
+  const topicKeys = [...groups.keys()].filter((k) => k !== UNASSIGNED && k !== EXCLUDE);
   const orderedKeys = [
     ...(groups.has(UNASSIGNED) ? [UNASSIGNED] : []),
-    ...[...groups.keys()].filter((k) => k !== UNASSIGNED),
+    ...topicKeys,
+    ...(groups.has(EXCLUDE) ? [EXCLUDE] : []),
   ];
 
   return (
@@ -409,25 +489,42 @@ function ClassifyList({
       {orderedKeys.map((key) => {
         const rs = groups.get(key)!;
         const rng = `${rs[0].rowNo}–${rs[rs.length - 1].rowNo}`;
+        const rowNos = rs.map((r) => r.rowNo);
         const isUnassigned = key === UNASSIGNED;
+        const isExcluded = key === EXCLUDE;
+        const headerCls = isUnassigned
+          ? 'border-amber-100 bg-amber-50 text-amber-800'
+          : isExcluded
+            ? 'border-slate-100 bg-slate-100 text-slate-500'
+            : 'border-slate-100';
         return (
-          <Card key={key} className={`p-0 ${isUnassigned ? 'border-amber-300' : ''}`}>
-            <div
-              className={`flex items-center justify-between border-b px-4 py-2 text-sm font-medium ${
-                isUnassigned ? 'border-amber-100 bg-amber-50 text-amber-800' : 'border-slate-100'
-              }`}
-            >
+          <Card
+            key={key}
+            className={`p-0 ${isUnassigned ? 'border-amber-300' : ''} ${isExcluded ? 'opacity-70' : ''}`}
+          >
+            <div className={`flex items-center justify-between border-b px-4 py-2 text-sm font-medium ${headerCls}`}>
               <span>
-                {isUnassigned ? '⚠ Konu atanmadı' : topicName.get(key)} · {rs.length} soru{' '}
-                <span className="font-normal opacity-70">(#{rng})</span>
+                {isUnassigned ? '⚠ Konu atanmadı' : isExcluded ? '⊘ Alınmayacak' : topicName.get(key)} ·{' '}
+                {rs.length} soru <span className="font-normal opacity-70">(#{rng})</span>
               </span>
+              {isExcluded ? (
+                <button onClick={() => onRestoreGroup(rowNos)} className="text-xs text-indigo-600 hover:underline">
+                  Bu bloğu geri al
+                </button>
+              ) : (
+                <button onClick={() => onExcludeGroup(rowNos)} className="text-xs text-slate-500 hover:underline">
+                  Bu bloğu çıkar
+                </button>
+              )}
             </div>
             <ul className="divide-y divide-slate-50">
               {rs.map((r) => (
                 <li key={r.rowNo} className="flex items-center gap-3 px-4 py-2">
                   <span className="font-mono text-xs text-slate-400">#{r.rowNo}</span>
-                  <span className="min-w-0 flex-1 truncate text-sm">{r.stem}</span>
-                  {r.matchedKeyword && (
+                  <span className={`min-w-0 flex-1 truncate text-sm ${isExcluded ? 'line-through' : ''}`}>
+                    {r.stem}
+                  </span>
+                  {!isExcluded && r.matchedKeyword && (
                     <span className="shrink-0 rounded-full bg-indigo-50 px-2 py-0.5 text-[11px] text-indigo-600">
                       {r.matchedKeyword}
                     </span>
@@ -435,8 +532,9 @@ function ClassifyList({
                   <div className="w-56 shrink-0">
                     <TopicSelect
                       topics={topics}
-                      value={assignments[r.rowNo] ?? ''}
-                      onChange={(v) => onChange(r.rowNo, v)}
+                      value={decisionValue(r.rowNo)}
+                      onChange={(v) => onDecision(r.rowNo, v)}
+                      withExclude
                     />
                   </div>
                 </li>
@@ -449,15 +547,17 @@ function ClassifyList({
   );
 }
 
-/** Konu dropdown'ı — derse göre gruplu (optgroup). */
+/** Konu dropdown'ı — derse göre gruplu (optgroup) + opsiyonel "bu soruyu alma". */
 function TopicSelect({
   topics,
   value,
   onChange,
+  withExclude = false,
 }: {
   topics: ModuleTopic[];
   value: string;
   onChange: (v: string) => void;
+  withExclude?: boolean;
 }) {
   const byCourse = new Map<string, ModuleTopic[]>();
   for (const t of topics) {
@@ -472,6 +572,7 @@ function TopicSelect({
       className="w-full rounded-lg border border-slate-300 px-2 py-1.5 text-sm"
     >
       <option value="">Konu seç…</option>
+      {withExclude && <option value={EXCLUDE}>⊘ Bu soruyu alma (çıkar)</option>}
       {[...byCourse.entries()].map(([course, ts]) => (
         <optgroup key={course} label={course}>
           {ts.map((t) => (
