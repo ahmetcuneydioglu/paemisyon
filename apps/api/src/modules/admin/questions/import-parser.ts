@@ -306,6 +306,33 @@ interface BookletQuestion {
  * Görsel/tablolu sorular (şıkları metinden çıkmayan) hata satırı olur —
  * skipErrors ile atlanıp kalanlar aktarılabilir.
  */
+/** Regex özel karakterlerini kaçır (kitapçık adı deseni için). */
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Kitapçık adını ilk ÖDSGM'li sayfanın üstbilgisinden saptar
+ * (örn. "ZABIT KÂTİBİ A"). İlk 3 satırdan kurum adı ve sayfa numarası
+ * olmayanı seçer; sonuna yapışmış sayfa numarası varsa kırpar.
+ */
+function detectBookletTitle(pageTexts: string[]): string | null {
+  const page = pageTexts.find((t) => t.includes(ODSGM_HEADER));
+  if (!page) return null;
+  const lines = page
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .slice(0, 3);
+  for (const line of lines) {
+    if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
+    const title = line.replace(/\s*\d{1,3}$/, '').trim();
+    // Makul bir başlık olmalı — soru metni sanılmasın (kısa, soru numarasız).
+    if (title.length >= 3 && title.length <= 60 && !QNUM_RE.test(title)) return title;
+  }
+  return null;
+}
+
 export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   // pdf-parse'ı tembel yükle — CSV/XLSX yolu PDF motorunu hiç ödemesin.
   const { PDFParse } = await import('pdf-parse');
@@ -316,6 +343,16 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   const answerKey = new Map<number, string>();
   const sourceLines: string[] = [];
   let inKey = false;
+
+  // Kitapçık adı ("ZABIT KÂTİBİ A" gibi) HER sayfanın üstbilgisinde tekrar
+  // eder ve pdf-parse bunu bazen içerik satırına YAPIŞTIRIR ("...konabilir.
+  // ZABIT KÂTİBİ A") — satır-bazlı filtre yakalayamaz; soru metnine sızıp
+  // hem içeriği kirletir hem parmak izini bozar (canlıda yakalanan hata).
+  // İlk ÖDSGM'li sayfanın üstbilgisinden adı sapta, her yerden sök.
+  const bookletTitle = detectBookletTitle(result.pages.map((p) => p.text ?? ''));
+  const titleRe = bookletTitle
+    ? new RegExp(`\\s*${escapeRegExp(bookletTitle)}(?:\\s*\\d{1,3})?`, 'g')
+    : null;
 
   for (const page of result.pages) {
     const text = page.text ?? '';
@@ -341,8 +378,10 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
         }
         continue;
       }
-      // Sayfa üstbilgileri: kurum adı, kitapçık adı, yalnız sayfa numarası.
-      if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
+      // Kitapçık adını (yapışık geldiği yerler dahil) sök, SONRA üstbilgi
+      // denetimleri: kurum adı, yalnız sayfa numarası.
+      if (titleRe) line = line.replace(titleRe, ' ').replace(/\s{2,}/g, ' ').trim();
+      if (!line || line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
       line = line
         .replace(/\s*TEST BİTTİ\..*$/, '')
         .replace(/\s*CEVAPLARINIZI KONTROL EDİNİZ\..*$/, '');
