@@ -98,25 +98,67 @@ export class CatalogService {
     return out;
   }
 
-  /// Ders konuları — AĞAÇ (Doc 21): üst seviye konular + iç içe alt konular.
-  /// Düz alanlar korunur (geriye uyum); children additive.
-  async getTopics(courseId: string) {
-    const topics = await this.prisma.topic.findMany({
-      where: { courseId, deletedAt: null, parentId: null },
-      orderBy: { sortOrder: 'asc' },
-      select: {
-        id: true,
-        name: true,
-        sortOrder: true,
-        isPremium: true,
-        children: {
-          where: { deletedAt: null },
-          orderBy: { sortOrder: 'asc' },
-          select: { id: true, name: true, sortOrder: true, isPremium: true },
+  /// Ders konuları — AĞAÇ (Doc 21) + KİŞİSEL KATMAN (Doc 25 wireframe 05):
+  /// konu başına kullanıcının hakimiyeti + ders özeti (öğrenme merkezi).
+  async getTopics(courseId: string, userId: string) {
+    const [topics, progress, wrongCount] = await Promise.all([
+      this.prisma.topic.findMany({
+        where: { courseId, deletedAt: null, parentId: null },
+        orderBy: { sortOrder: 'asc' },
+        select: {
+          id: true,
+          name: true,
+          sortOrder: true,
+          isPremium: true,
+          children: {
+            where: { deletedAt: null },
+            orderBy: { sortOrder: 'asc' },
+            select: { id: true, name: true, sortOrder: true, isPremium: true },
+          },
         },
+      }),
+      this.prisma.userTopicProgress.findMany({
+        where: { userId, topic: { courseId, deletedAt: null } },
+        select: { topicId: true, solvedCount: true, correctCount: true, mastery: true },
+      }),
+      // WrongAnswer'da question ilişkisi yok (composite id) — join raw ile.
+      this.prisma.$queryRaw<{ cnt: number }[]>`
+        SELECT COUNT(*)::int AS cnt
+        FROM wrong_answers wa
+        JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
+        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+        WHERE wa.user_id = ${userId}::uuid
+          AND wa.resolved_at IS NULL
+          AND t.course_id = ${courseId}::uuid`,
+    ]);
+    const wrongCountValue = wrongCount[0]?.cnt ?? 0;
+
+    const progressOf = new Map(progress.map((p) => [p.topicId, p]));
+    const withProgress = <T extends { id: string }>(t: T) => {
+      const p = progressOf.get(t.id);
+      return {
+        ...t,
+        solvedCount: p?.solvedCount ?? 0,
+        /** 0-100; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
+        mastery:
+          p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,
+      };
+    };
+
+    const totalSolved = progress.reduce((s, p) => s + p.solvedCount, 0);
+    const totalCorrect = progress.reduce((s, p) => s + p.correctCount, 0);
+    return {
+      topics: topics.map((t) => ({
+        ...withProgress(t),
+        children: t.children.map(withProgress),
+      })),
+      summary: {
+        solvedCount: totalSolved,
+        /** Ders hakimiyeti: doğru/çözülen (0-100); çözüm yoksa null. */
+        mastery: totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : null,
+        unresolvedWrongCount: wrongCountValue,
       },
-    });
-    return topics;
+    };
   }
 
   async getTopic(id: string) {

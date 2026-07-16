@@ -4,13 +4,18 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/mastery_bar.dart';
 import '../data/catalog_repository.dart';
 import '../domain/catalog_models.dart';
 
-/// Bir dersin konuları + ders geneli deneme sınavı girişi (Doc 12 §4c-5).
+/// Ders detay — ÖĞRENME MERKEZİ (Doc 25 wireframe 05): dersin tek yaşayan
+/// mekânı. Kişisel katman en üstte (hakimiyet + açık yanlışlar), konular
+/// hakimiyet çubuklarıyla, "bu dersten seans" tek dokunuş.
 class TopicsScreen extends ConsumerWidget {
   final String courseId;
   final String courseName;
@@ -28,83 +33,146 @@ class TopicsScreen extends ConsumerWidget {
           message: err is Failure ? err.message : 'Yüklenemedi.',
           onRetry: () => ref.invalidate(topicsProvider(courseId)),
         ),
-        data: (list) => list.isEmpty
+        data: (course) => course.topics.isEmpty
             ? const EmptyStateView(message: 'Bu derste henüz konu yok.')
-            : ListView(
-                padding: const EdgeInsets.all(AppSpacing.lg),
-                children: [
-                  // ── Ders geneli deneme sınavı (konular karışık, süreli) ──
-                  Card(
-                    color: Theme.of(context).colorScheme.primaryContainer,
-                    child: ListTile(
-                      leading: Icon(Icons.timer_rounded,
-                          color:
-                              Theme.of(context).colorScheme.onPrimaryContainer),
-                      title: const Text('Deneme Sınavı'),
-                      subtitle:
-                          const Text('20 soru · süreli · sonuçlar sınav sonunda'),
-                      trailing: const Icon(Icons.chevron_right_rounded),
-                      onTap: () => context.push('/quiz', extra: {
-                        'courseId': courseId,
-                        'topicName': '$courseName Denemesi',
-                        'mode': 'exam',
-                        'count': 20,
-                      }),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpacing.lg),
-                  ...list.map((t) => Padding(
-                        padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-                        child: _topicCard(context, t),
-                      )),
-                ],
+            : RefreshIndicator(
+                onRefresh: () async => ref.invalidate(topicsProvider(courseId)),
+                child: _Body(
+                    courseId: courseId, courseName: courseName, course: course),
               ),
       ),
     );
   }
+}
 
-  /// Konu kartı: alt konusu varsa açılır liste (yapraklar tıklanır), yoksa
-  /// doğrudan tıklanabilir (Doc 21 ağaç).
-  Widget _topicCard(BuildContext context, TopicItem t) {
-    if (t.children.isEmpty) {
-      return Card(
-        child: ListTile(
-          title: Text(t.name),
-          trailing: t.isPremium
-              ? const Icon(Icons.lock_rounded, size: 18)
-              : const Icon(Icons.chevron_right_rounded),
-          onTap: () => t.isPremium
-              ? context.push('/paywall')
-              : _showModeSheet(context, t.id, t.name),
+class _Body extends ConsumerWidget {
+  final String courseId;
+  final String courseName;
+  final CourseTopics course;
+  const _Body(
+      {required this.courseId, required this.courseName, required this.course});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final tokens = context.tokens;
+    return ListView(
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      children: [
+        // ── Kişisel katman: senin durumun (wireframe 05 not 1) ──
+        Container(
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          decoration: BoxDecoration(
+            color: Color.alphaBlend(
+                tokens.brand.withValues(alpha: 0.06), tokens.surface),
+            border: Border.all(color: tokens.brand, width: 1.5),
+            borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Hakimiyetin',
+                      style: AppTypography.label
+                          .copyWith(color: tokens.inkSoft)),
+                  Text(
+                    course.mastery != null ? '%${course.mastery}' : 'yeni ders',
+                    style: AppTypography.heading.copyWith(color: tokens.ink),
+                  ),
+                ],
+              ),
+              if (course.mastery != null) ...[
+                const SizedBox(height: AppSpacing.sm),
+                MasteryBar(value: course.mastery! / 100, showLabel: false),
+              ],
+              const SizedBox(height: AppSpacing.xs),
+              Text(
+                course.solvedCount > 0
+                    ? '${course.solvedCount} soru çözdün'
+                        '${course.unresolvedWrongCount > 0 ? ' · ${course.unresolvedWrongCount} açık yanlışın var' : ''}'
+                    : 'Bu derste henüz soru çözmedin — ilk seansla harita başlar.',
+                style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+              ),
+              const SizedBox(height: AppSpacing.md),
+              FilledButton(
+                onPressed: () => _startCourseSession(context, ref),
+                child: const Text('Bu dersten seans başlat'),
+              ),
+            ],
+          ),
         ),
-      );
-    }
+        const SizedBox(height: AppSpacing.md),
+
+        // ── Ders geneli deneme (süreli) — ikincil eylem ──
+        OutlinedButton.icon(
+          onPressed: () => context.push('/quiz', extra: {
+            'courseId': courseId,
+            'topicName': '$courseName Denemesi',
+            'mode': 'exam',
+            'count': 20,
+          }),
+          style: OutlinedButton.styleFrom(
+            foregroundColor: tokens.ink,
+            side: BorderSide(color: tokens.ink, width: 1.5),
+            minimumSize: const Size.fromHeight(AppSpacing.minTouchTarget + 4),
+          ),
+          icon: const Icon(Icons.timer_rounded, size: 18),
+          label: const Text('Ders denemesi — 20 soru, süreli'),
+        ),
+        const SizedBox(height: AppSpacing.lg),
+
+        Text('KONULAR',
+            style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
+        const SizedBox(height: AppSpacing.sm),
+        ...course.topics.map((t) => Padding(
+              padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+              child: _topicCard(context, t),
+            )),
+      ],
+    );
+  }
+
+  /// "Bu dersten seans": ders geneli alıştırma — Odak'ın ders kapısı (Doc 25 §5).
+  void _startCourseSession(BuildContext context, WidgetRef ref) {
+    context.push('/quiz', extra: {
+      'courseId': courseId,
+      'topicName': courseName,
+      'mode': 'practice',
+      'count': 10,
+    }).then((_) {
+      if (context.mounted) ref.invalidate(topicsProvider(courseId));
+    });
+  }
+
+  /// Konu kartı: hakimiyet çubuklu satır; alt konusu varsa açılır liste.
+  Widget _topicCard(BuildContext context, TopicItem t) {
+    if (t.children.isEmpty) return _TopicRow(topic: t, onTap: _rowTap(context, t));
     return Card(
       clipBehavior: Clip.antiAlias,
       child: ExpansionTile(
-        title: Text(t.name),
+        title: Text(t.name, style: AppTypography.body),
         subtitle: Text('${t.children.length} alt konu',
-            style: Theme.of(context).textTheme.bodySmall),
+            style: AppTypography.caption
+                .copyWith(color: context.tokens.inkSoft)),
         childrenPadding: const EdgeInsets.only(bottom: AppSpacing.xs),
         children: [
           for (final c in t.children)
-            ListTile(
-              contentPadding: const EdgeInsets.only(left: AppSpacing.xxl, right: AppSpacing.lg),
-              title: Text(c.name),
-              trailing: c.isPremium
-                  ? const Icon(Icons.lock_rounded, size: 18)
-                  : const Icon(Icons.chevron_right_rounded),
-              onTap: () => c.isPremium
-                  ? context.push('/paywall')
-                  : _showModeSheet(context, c.id, c.name),
+            Padding(
+              padding: const EdgeInsets.only(left: AppSpacing.lg),
+              child: _TopicRow(topic: c, onTap: _rowTap(context, c)),
             ),
         ],
       ),
     );
   }
 
-  /// Konuya dokununca mod seçimi: alıştırma (anında geri bildirim) /
-  /// konu denemesi (süreli, cevaplar sonda).
+  VoidCallback _rowTap(BuildContext context, TopicItem t) =>
+      () => t.isPremium
+          ? context.push('/paywall')
+          : _showModeSheet(context, t.id, t.name);
+
+  /// Konuya dokununca mod seçimi: alıştırma / konu denemesi.
   void _showModeSheet(BuildContext context, String topicId, String topicName) {
     showModalBottomSheet<void>(
       context: context,
@@ -155,13 +223,68 @@ class TopicsScreen extends ConsumerWidget {
   }
 }
 
+/// Konu satırı: ad + hakimiyet çubuğu (çözüm yoksa "yeni" rozeti).
+class _TopicRow extends StatelessWidget {
+  final TopicItem topic;
+  final VoidCallback onTap;
+  const _TopicRow({required this.topic, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Card(
+      margin: EdgeInsets.zero,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+        child: Container(
+          constraints:
+              const BoxConstraints(minHeight: AppSpacing.minTouchTarget),
+          padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(topic.name,
+                    style: AppTypography.body.copyWith(color: tokens.ink)),
+              ),
+              const SizedBox(width: AppSpacing.md),
+              if (topic.isPremium)
+                Icon(Icons.lock_rounded, size: 18, color: tokens.inkSoft)
+              else if (topic.mastery != null)
+                SizedBox(
+                  width: 96,
+                  child: MasteryBar(value: topic.mastery! / 100),
+                )
+              else
+                Text('yeni',
+                    style:
+                        AppTypography.caption.copyWith(color: tokens.inkSoft)),
+              Icon(Icons.chevron_right_rounded,
+                  size: 18, color: tokens.inkSoft),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _Skeleton extends StatelessWidget {
   const _Skeleton();
   @override
-  Widget build(BuildContext context) => ListView.separated(
+  Widget build(BuildContext context) => ListView(
         padding: const EdgeInsets.all(AppSpacing.lg),
-        itemCount: 5,
-        separatorBuilder: (_, __) => const SizedBox(height: AppSpacing.sm),
-        itemBuilder: (_, __) => const LoadingSkeleton(height: 56),
+        children: const [
+          LoadingSkeleton(height: 150),
+          SizedBox(height: AppSpacing.md),
+          LoadingSkeleton(height: 48),
+          SizedBox(height: AppSpacing.lg),
+          LoadingSkeleton(height: 56),
+          SizedBox(height: AppSpacing.sm),
+          LoadingSkeleton(height: 56),
+          SizedBox(height: AppSpacing.sm),
+          LoadingSkeleton(height: 56),
+        ],
       );
 }

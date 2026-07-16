@@ -67,11 +67,17 @@ class TopicItem {
   /// Alt konular (Doc 21 ağaç). Eski API'de yok; boş olabilir.
   final List<TopicItem> children;
 
+  /// Kişisel katman (Doc 25 wireframe 05): 0-100; hiç çözüm yoksa null.
+  final int? mastery;
+  final int solvedCount;
+
   const TopicItem({
     required this.id,
     required this.name,
     required this.isPremium,
     this.children = const [],
+    this.mastery,
+    this.solvedCount = 0,
   });
 
   factory TopicItem.fromJson(Map<String, dynamic> j) => TopicItem(
@@ -81,5 +87,36 @@ class TopicItem {
         children: (j['children'] as List<dynamic>? ?? const [])
             .map((e) => TopicItem.fromJson(e as Map<String, dynamic>))
             .toList(),
+        mastery: j['mastery'] as int?,
+        solvedCount: j['solvedCount'] as int? ?? 0,
       );
+}
+
+/// Ders öğrenme merkezi yanıtı: konu ağacı + kişisel özet (Doc 25 wireframe 05).
+class CourseTopics {
+  final List<TopicItem> topics;
+  final int solvedCount;
+
+  /// 0-100; ders hiç çalışılmadıysa null.
+  final int? mastery;
+  final int unresolvedWrongCount;
+
+  const CourseTopics({
+    required this.topics,
+    required this.solvedCount,
+    required this.mastery,
+    required this.unresolvedWrongCount,
+  });
+
+  factory CourseTopics.fromJson(Map<String, dynamic> j) {
+    final summary = (j['summary'] as Map<String, dynamic>?) ?? const {};
+    return CourseTopics(
+      topics: (j['topics'] as List<dynamic>? ?? const [])
+          .map((e) => TopicItem.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      solvedCount: summary['solvedCount'] as int? ?? 0,
+      mastery: summary['mastery'] as int?,
+      unresolvedWrongCount: summary['unresolvedWrongCount'] as int? ?? 0,
+    );
+  }
 }

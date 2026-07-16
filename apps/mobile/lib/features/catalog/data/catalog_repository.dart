@@ -33,8 +33,21 @@ class CatalogRepository {
   Future<List<CourseItem>> getCourses(String moduleId) =>
       _list('/catalog/modules/$moduleId/courses', CourseItem.fromJson);
 
-  Future<List<TopicItem>> getTopics(String courseId) =>
-      _list('/catalog/courses/$courseId/topics', TopicItem.fromJson);
+  /// Ders öğrenme merkezi: konu ağacı + kişisel özet (Doc 25 wireframe 05).
+  Future<CourseTopics> getTopics(String courseId) async {
+    try {
+      final res = await _dio
+          .get<Map<String, dynamic>>('/catalog/courses/$courseId/topics');
+      return CourseTopics.fromJson(
+          (res.data?['data'] as Map<String, dynamic>?) ?? const {});
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.connectionTimeout) {
+        throw const NetworkFailure();
+      }
+      throw const ServerFailure();
+    }
+  }
 }
 
 final catalogRepositoryProvider = Provider<CatalogRepository>(
@@ -61,7 +74,8 @@ final coursesProvider =
 });
 
 final topicsProvider =
-    FutureProvider.autoDispose.family<List<TopicItem>, String>((ref, courseId) {
-  _cacheFor(ref, const Duration(minutes: 5));
+    FutureProvider.autoDispose.family<CourseTopics, String>((ref, courseId) {
+  // Kişisel katman (hakimiyet) içerir — kısa önbellek: seans sonrası tazelensin.
+  _cacheFor(ref, const Duration(minutes: 1));
   return ref.watch(catalogRepositoryProvider).getTopics(courseId);
 });

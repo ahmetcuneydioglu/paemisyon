@@ -21,8 +21,11 @@ export class CatalogController {
   }
 
   @Get('courses/:id/topics')
-  topics(@Param('id', ParseUUIDPipe) id: string) {
-    return this.catalog.getTopics(id);
+  topics(
+    @Param('id', ParseUUIDPipe) id: string,
+    @CurrentUser() user: AuthenticatedUser,
+  ) {
+    return this.catalog.getTopics(id, user.id);
   }
 
   @Get('topics/:id')
