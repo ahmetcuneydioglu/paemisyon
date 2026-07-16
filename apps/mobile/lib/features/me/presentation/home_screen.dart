@@ -8,8 +8,10 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/focus_sheet.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
@@ -163,7 +165,7 @@ class _CoachBody extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
-        // ── Bugün hero'su: hedef halkası + tek birincil CTA ──
+        // ── Bugün hero'su: hedef halkası + Bugün Çalış + Odak ucu (Doc 25 §5) ──
         StaggeredReveal(
           index: i++,
           child: _TodayHero(
@@ -174,6 +176,35 @@ class _CoachBody extends ConsumerWidget {
               brief.primaryAction.route,
               brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
             ),
+            onFocusTap: () async {
+              // "Nereye bakılacağını kullanıcı, neye bakılacağını koç seçer."
+              final choice = await showFocusSheet(
+                context,
+                selectedId: 'coach',
+                options: const [
+                  FocusOption(
+                      id: 'coach', label: 'Koç seçsin', subtitle: 'önerilen'),
+                  FocusOption(
+                      id: 'course',
+                      label: 'Ders / konu seç',
+                      drillsDown: true),
+                  FocusOption(id: 'wrongs', label: 'Sadece yanlışlarım'),
+                ],
+              );
+              if (choice == null || !context.mounted) return;
+              switch (choice) {
+                case 'course':
+                  await open('default', '/catalog');
+                case 'wrongs':
+                  await open('default', '/review');
+                default: // coach → günün birincil eylemi
+                  await open(
+                    brief.primaryActionType,
+                    brief.primaryAction.route,
+                    brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
+                  );
+              }
+            },
           ),
         ),
         const SizedBox(height: AppSpacing.sm),
@@ -325,8 +356,12 @@ class _TodayHero extends StatelessWidget {
   final CoachBrief brief;
   final AccentPalette pal;
   final VoidCallback onPrimary;
+  final VoidCallback onFocusTap;
   const _TodayHero(
-      {required this.brief, required this.pal, required this.onPrimary});
+      {required this.brief,
+      required this.pal,
+      required this.onPrimary,
+      required this.onFocusTap});
 
   @override
   Widget build(BuildContext context) {
@@ -372,15 +407,11 @@ class _TodayHero extends StatelessWidget {
                   style: theme.textTheme.bodySmall,
                 ),
                 const SizedBox(height: AppSpacing.sm),
-                FilledButton(
-                  style: FilledButton.styleFrom(
-                    minimumSize: const Size.fromHeight(40),
-                    visualDensity: VisualDensity.compact,
-                    backgroundColor: pal.accent,
-                    foregroundColor: Colors.white,
-                  ),
+                SessionButton(
+                  label: brief.primaryAction.label,
                   onPressed: onPrimary,
-                  child: Text(brief.primaryAction.label),
+                  focusLabel: 'Odak: Koç seçiyor',
+                  onFocusTap: onFocusTap,
                 ),
               ],
             ),

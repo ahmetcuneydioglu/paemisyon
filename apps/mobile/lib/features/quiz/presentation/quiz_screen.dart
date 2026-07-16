@@ -8,8 +8,11 @@ import '../../../core/error/failure.dart';
 import '../../../core/offline/answer_queue.dart';
 import '../../../core/offline/sync_service.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../../review/data/review_repository.dart';
 import '../data/quiz_repository.dart';
@@ -369,23 +372,21 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(_q.stem, style: Theme.of(context).textTheme.titleMedium),
+              Text(_q.stem, style: AppTypography.heading),
               const SizedBox(height: AppSpacing.xl),
               ..._q.options.map(_optionTile),
-              if (_feedback?.explanation != null) ...[
+              // Açıklama cevaptan hemen sonra AYNI ekranda (Doc 26 §4 #6).
+              if (_feedback != null &&
+                  (_feedback!.explanation != null ||
+                      _feedback!.legalReference != null)) ...[
                 const SizedBox(height: AppSpacing.lg),
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(AppSpacing.lg),
-                    child: Text('Açıklama: ${_feedback!.explanation!}'),
-                  ),
-                ),
-              ],
-              if (_feedback?.source != null) ...[
-                const SizedBox(height: AppSpacing.xs),
-                Text(
-                  'Kaynak: ${_feedback!.source!}',
-                  style: Theme.of(context).textTheme.bodySmall,
+                ExplanationBox(
+                  explanation: [
+                    if (_feedback!.explanation != null) _feedback!.explanation!,
+                    if (_feedback!.legalReference != null)
+                      'Dayanak: ${_feedback!.legalReference!}',
+                  ].join('\n\n'),
+                  source: _feedback!.source,
                 ),
               ],
               const SizedBox(height: AppSpacing.xl),
@@ -398,27 +399,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   }
 
   Widget _optionTile(QuizOption o) {
-    final scheme = Theme.of(context).colorScheme;
     final answered = _feedback != null; // practice'te cevaptan sonra
-    Color? bg;
+    // Durum eşlemesi (Doc 26 §4 #5): renk + ikon birlikte; anında, animasyonsuz.
+    final OptionRowState state;
     if (answered) {
       if (o.id == _feedback!.correctOptionId) {
-        bg = scheme.primaryContainer; // doğru → vurgulu
+        state = OptionRowState.correct;
       } else if (o.id == _selected) {
-        bg = scheme.errorContainer; // seçilen yanlış
+        state = OptionRowState.wrongPick;
+      } else {
+        state = OptionRowState.dimmed;
       }
-    } else if (o.id == _selected) {
-      bg = scheme.secondaryContainer; // seçili
+    } else {
+      state = o.id == _selected ? OptionRowState.selected : OptionRowState.idle;
     }
 
     return Padding(
       padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-      child: Card(
-        color: bg,
-        child: ListTile(
-          title: Text('${o.label}) ${o.text}'),
-          onTap: answered ? null : () => setState(() => _selected = o.id),
-        ),
+      child: OptionRow(
+        label: o.label,
+        text: o.text,
+        state: state,
+        onTap: answered ? null : () => setState(() => _selected = o.id),
       ),
     );
   }
