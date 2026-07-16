@@ -41,7 +41,7 @@ export class UsersController {
     @CurrentUser() user: AuthenticatedUser,
     @Body() dto: CompleteOnboardingDto,
   ) {
-    return this.users.completeOnboarding(user.id, dto.moduleId);
+    return this.users.completeOnboarding(user.id, dto);
   }
 
   /// KVKK hesap silme (App Store zorunluluğu). Geri alınamaz.

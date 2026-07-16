@@ -586,6 +586,10 @@ model Streak {
   currentStreak  Int       @default(0) @map("current_streak")
   longestStreak  Int       @default(0) @map("longest_streak")
   lastActiveDate DateTime? @map("last_active_date") @db.Date
+  // Seri sigortası (Doc 24 §7.2, Doc 26 §5): kaçan TEK gün affedilir.
+  // Haftalık hak: free 1, premium 3. Hafta = Pzt başlangıçlı UTC (snapshot konv.).
+  freezeWeekStart DateTime? @map("freeze_week_start") @db.Date
+  freezesUsed     Int       @default(0) @map("freezes_used")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 

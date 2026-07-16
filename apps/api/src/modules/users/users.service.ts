@@ -13,18 +13,28 @@ export class UsersService {
     private readonly userSync: UserSyncService,
   ) {}
 
-  /** Onboarding: hedef sınav seç + tamamlandı işaretle (idempotent). */
-  async completeOnboarding(userId: string, moduleId: string) {
+  /** Onboarding (Doc 24 Gün 0 — 3 soru): sınav + tarih + günlük hedef; idempotent. */
+  async completeOnboarding(
+    userId: string,
+    dto: { moduleId: string; targetExamDate?: string | null; dailyGoal?: number },
+  ) {
     const module = await this.prisma.examType.findFirst({
-      where: { id: moduleId, isActive: true },
+      where: { id: dto.moduleId, isActive: true },
     });
     if (!module) throw new BadRequestException('Geçersiz modül.');
 
     const user = await this.prisma.user.update({
       where: { id: userId },
       data: {
-        preferredModuleId: moduleId,
+        preferredModuleId: dto.moduleId,
         onboardingCompletedAt: new Date(), // tekrar çağrılırsa tarih tazelenir, sorun değil
+        dailyGoal: dto.dailyGoal,
+        targetExamDate:
+          dto.targetExamDate === undefined
+            ? undefined
+            : dto.targetExamDate === null
+              ? null
+              : new Date(`${dto.targetExamDate}T00:00:00.000Z`),
       },
       select: { preferredModuleId: true, onboardingCompletedAt: true },
     });

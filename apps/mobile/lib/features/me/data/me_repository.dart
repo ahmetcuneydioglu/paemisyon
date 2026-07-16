@@ -29,12 +29,22 @@ class MeRepository {
     });
   }
 
-  /// Onboarding: hedef sınav seçimini kaydeder (idempotent — profilden de değiştirilir).
-  Future<void> completeOnboarding(String moduleId) async {
+  /// Onboarding (Doc 24 Gün 0): sınav + tarih + günlük hedef (idempotent).
+  Future<void> completeOnboarding(
+    String moduleId, {
+    DateTime? targetExamDate,
+    int? dailyGoal,
+  }) async {
     return _guard(() async {
       await _dio.post<Map<String, dynamic>>(
         '/me/onboarding',
-        data: {'moduleId': moduleId},
+        data: {
+          'moduleId': moduleId,
+          if (targetExamDate != null)
+            'targetExamDate':
+                targetExamDate.toIso8601String().substring(0, 10),
+          if (dailyGoal != null) 'dailyGoal': dailyGoal,
+        },
       );
     });
   }

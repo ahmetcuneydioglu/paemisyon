@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { freezesLeft } from '../progress/streak.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import { coachRules, motivationRule } from './rules';
 
@@ -65,6 +66,7 @@ export class CoachService {
           // Bayrak saatten bağımsız (UI ince uyarı gösterebilir);
           // kart (streak_risk) yalnız akşam tetiklenir.
           atRisk: ctx.streak.activeYesterday && ctx.answeredToday === 0,
+          freezesLeft: ctx.streak.freezesLeft,
         },
       },
       primaryAction,
@@ -303,6 +305,7 @@ export class CoachService {
         current: streak?.currentStreak ?? 0,
         longest: streak?.longestStreak ?? 0,
         activeYesterday: daysSince === 1,
+        freezesLeft: freezesLeft(streak, now, user.isPremium ? 3 : 1),
       },
       answeredToday: todayUsage?.questionsAnswered ?? 0,
       stats: {

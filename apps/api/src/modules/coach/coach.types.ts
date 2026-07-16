@@ -73,6 +73,8 @@ export interface CoachContext {
     longest: number;
     /** Dün aktif miydi? (seri riski: dün aktif + bugün 0 soru) */
     activeYesterday: boolean;
+    /** Bu hafta kalan seri sigortası hakkı (free 1, premium 3 — Doc 24 §7.2). */
+    freezesLeft: number;
   };
   answeredToday: number;
   stats: { totalSolved: number; totalCorrect: number; totalSessions: number };
@@ -131,7 +133,7 @@ export interface CoachBrief {
   today: {
     goal: number;
     answered: number;
-    streak: { current: number; longest: number; atRisk: boolean };
+    streak: { current: number; longest: number; atRisk: boolean; freezesLeft: number };
   };
   primaryAction: CoachCta & { type: CoachCardType | 'default' };
   /** Durum makinesi etiketi (Doc 25 §3) — istemci sahne kurulumu için. */

@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { computeStreakUpdate } from './streak.logic';
 
 type SessionForProgress = {
   topicId: string | null;
@@ -40,49 +41,81 @@ export class ProgressService {
         },
       });
 
-      if (session.topicId) {
-        const existing = await tx.userTopicProgress.findUnique({
-          where: { userId_topicId: { userId, topicId: session.topicId } },
-        });
-        const newSolved = (existing?.solvedCount ?? 0) + solved;
-        const newCorrect = (existing?.correctCount ?? 0) + session.correctCount;
-        const mastery = newSolved > 0 ? newCorrect / newSolved : 0;
-        await tx.userTopicProgress.upsert({
-          where: { userId_topicId: { userId, topicId: session.topicId } },
-          update: {
-            solvedCount: newSolved,
-            correctCount: newCorrect,
-            mastery,
-            lastActivityAt: new Date(),
-          },
-          create: {
-            userId,
-            topicId: session.topicId,
-            solvedCount: solved,
-            correctCount: session.correctCount,
-            mastery,
-            lastActivityAt: new Date(),
-          },
-        });
+      // Konu ilerlemesi CEVAP bazında yazılır (karışık ders/koç seansları da
+      // mastery biriktirir — eskiden yalnız tek-konulu oturumlar yazıyordu).
+      const answered = session.answers.filter(
+        (a) => a.isCorrect != null && a.selectedOptionId != null,
+      );
+      if (answered.length > 0) {
+        const topicOf = new Map(
+          (
+            await tx.question.findMany({
+              where: { id: { in: answered.map((a) => a.questionId) } },
+              select: { id: true, topicId: true },
+            })
+          ).map((q) => [q.id, q.topicId]),
+        );
+        const byTopic = new Map<string, { solved: number; correct: number }>();
+        for (const a of answered) {
+          const topicId = topicOf.get(a.questionId);
+          if (!topicId) continue;
+          const b = byTopic.get(topicId) ?? { solved: 0, correct: 0 };
+          b.solved += 1;
+          if (a.isCorrect === true) b.correct += 1;
+          byTopic.set(topicId, b);
+        }
+        for (const [topicId, b] of byTopic) {
+          const existing = await tx.userTopicProgress.findUnique({
+            where: { userId_topicId: { userId, topicId } },
+          });
+          const newSolved = (existing?.solvedCount ?? 0) + b.solved;
+          const newCorrect = (existing?.correctCount ?? 0) + b.correct;
+          const mastery = newSolved > 0 ? newCorrect / newSolved : 0;
+          await tx.userTopicProgress.upsert({
+            where: { userId_topicId: { userId, topicId } },
+            update: {
+              solvedCount: newSolved,
+              correctCount: newCorrect,
+              mastery,
+              lastActivityAt: new Date(),
+            },
+            create: {
+              userId,
+              topicId,
+              solvedCount: b.solved,
+              correctCount: b.correct,
+              mastery,
+              lastActivityAt: new Date(),
+            },
+          });
+        }
       }
 
-      // Streak
+      // Streak + seri sigortası (Doc 24 §7.2, saf mantık: streak.logic.ts) —
+      // vardiyalı çalışan bir gece nöbetiyle seriyi yakmasın.
       const streak = await tx.streak.findUnique({ where: { userId } });
-      const last = streak?.lastActiveDate ? startOfUtcDay(streak.lastActiveDate) : null;
-      let current = streak?.currentStreak ?? 0;
-      if (!last) {
-        current = 1;
-      } else {
-        const diffDays = Math.round((today.getTime() - last.getTime()) / 86_400_000);
-        if (diffDays === 1) current += 1;
-        else if (diffDays > 1) current = 1; // boşluk → sıfırla
-        // diffDays === 0 → aynı gün, değişmez
-      }
-      const longest = Math.max(streak?.longestStreak ?? 0, current);
+      const entitlement = await tx.entitlement.findUnique({ where: { userId } });
+      const isPremium =
+        entitlement?.isPremium === true &&
+        (entitlement.validUntil == null || entitlement.validUntil > new Date());
+      const update = computeStreakUpdate(streak, today, isPremium ? 3 : 1);
       await tx.streak.upsert({
         where: { userId },
-        update: { currentStreak: current, longestStreak: longest, lastActiveDate: today },
-        create: { userId, currentStreak: current, longestStreak: longest, lastActiveDate: today },
+        update: {
+          currentStreak: update.currentStreak,
+          longestStreak: update.longestStreak,
+          lastActiveDate: today,
+          freezeWeekStart: update.freezeWeekStart,
+          freezesUsed: update.freezesUsed,
+        },
+        create: {
+          userId,
+          currentStreak: update.currentStreak,
+          longestStreak: update.longestStreak,
+          lastActiveDate: today,
+          freezeWeekStart: update.freezeWeekStart,
+          freezesUsed: update.freezesUsed,
+        },
       });
 
       // Yanlışlarım / çözüldü
@@ -179,12 +212,14 @@ export class ProgressService {
         solvedCount: true,
         correctCount: true,
         mastery: true,
-        topic: { select: { name: true } },
+        topic: { select: { name: true, course: { select: { name: true } } } },
       },
     });
     return rows.map((r) => ({
       topicId: r.topicId,
       topicName: r.topic.name,
+      // Konu haritası ders bazında gruplanır (Doc 25 Performans bölgesi).
+      courseName: r.topic.course.name,
       solvedCount: r.solvedCount,
       correctCount: r.correctCount,
       mastery: Math.round(Number(r.mastery) * 100),

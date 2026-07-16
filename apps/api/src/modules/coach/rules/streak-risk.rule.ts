@@ -12,7 +12,11 @@ export const streakRiskRule: CoachRule = (ctx) => {
     type: 'streak_risk',
     priority: 85,
     title: `${ctx.streak.current} günlük serin bu gece bozuluyor`,
-    body: '5 soru yeter — 3 dakika.',
+    body:
+      ctx.streak.freezesLeft > 0
+        ? '5 soru yeter — 3 dakika. Olmazsa sigortan devrede: seri yarın da yaşar.'
+        : '5 soru yeter — 3 dakika. Bu hafta sigortan kalmadı.',
     cta: { label: 'Mini seans (5 soru)', route: '/catalog' },
+    meta: { freezesLeft: ctx.streak.freezesLeft },
   };
 };

@@ -32,10 +32,14 @@ class ProgressSummary {
 
 class TopicProgressItem {
   final String topicId, topicName;
+
+  /// Konu haritası ders bazında gruplanır (Doc 25 Performans bölgesi).
+  final String courseName;
   final int solvedCount, correctCount, mastery;
   const TopicProgressItem({
     required this.topicId,
     required this.topicName,
+    required this.courseName,
     required this.solvedCount,
     required this.correctCount,
     required this.mastery,
@@ -44,6 +48,7 @@ class TopicProgressItem {
       TopicProgressItem(
         topicId: j['topicId'] as String,
         topicName: j['topicName'] as String,
+        courseName: j['courseName'] as String? ?? 'Diğer',
         solvedCount: j['solvedCount'] as int,
         correctCount: j['correctCount'] as int,
         mastery: j['mastery'] as int,

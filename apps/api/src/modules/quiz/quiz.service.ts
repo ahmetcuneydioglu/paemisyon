@@ -44,12 +44,14 @@ export class QuizService {
       return this.startDailySession(userId);
     }
 
-    // Kapsam: tam olarak biri — konu VEYA ders (ders = deneme sınavı).
-    if ((dto.topicId == null) === (dto.courseId == null)) {
-      throw new BadRequestException('topicId veya courseId alanlarından tam olarak biri verilmeli.');
+    // Kapsam kuralları (Doc 25 §5 — Odak modeli):
+    // exam: konu VEYA ders zorunlu (süre havuza göre kurulur).
+    // practice: konu / ders / KAPSAMSIZ (karışık — İlk Devriye ve koç seansı).
+    if (dto.topicId != null && dto.courseId != null) {
+      throw new BadRequestException('topicId ve courseId birlikte verilemez.');
     }
-    if (dto.courseId != null && dto.mode !== 'exam') {
-      throw new BadRequestException('Ders geneli oturum yalnızca deneme (exam) modunda başlatılabilir.');
+    if (dto.mode === 'exam' && dto.topicId == null && dto.courseId == null) {
+      throw new BadRequestException('Deneme için topicId veya courseId verilmeli.');
     }
 
     // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
@@ -69,16 +71,31 @@ export class QuizService {
         });
       }
       poolWhere = { topicId: dto.topicId, deletedAt: null, currentVersionId: { not: null } };
-    } else {
-      // Ders denemesi: dersin konularından karışık havuz; free kullanıcıya
+    } else if (dto.courseId != null) {
+      // Ders geneli: dersin konularından karışık havuz; free kullanıcıya
       // premium konuların soruları dahil edilmez (sızdırma yok).
       poolWhere = {
         deletedAt: null,
         currentVersionId: { not: null },
         topic: {
-          courseId: dto.courseId!,
+          courseId: dto.courseId,
           deletedAt: null,
           ...(isPremiumUser ? {} : { isPremium: false }),
+        },
+      };
+    } else {
+      // Kapsamsız karışık (İlk Devriye / koç seansı): tüm MÜFREDAT havuzu —
+      // yalnız bir sınav bölümüne bağlı derslerin konuları (Doc 21).
+      poolWhere = {
+        deletedAt: null,
+        currentVersionId: { not: null },
+        topic: {
+          deletedAt: null,
+          ...(isPremiumUser ? {} : { isPremium: false }),
+          course: {
+            deletedAt: null,
+            sections: { some: { section: { deletedAt: null } } },
+          },
         },
       };
     }
@@ -89,7 +106,11 @@ export class QuizService {
     });
     if (pool.length === 0) {
       throw new NotFoundException(
-        dto.topicId != null ? 'Bu konuda yayında soru yok.' : 'Bu derste yayında soru yok.',
+        dto.topicId != null
+          ? 'Bu konuda yayında soru yok.'
+          : dto.courseId != null
+            ? 'Bu derste yayında soru yok.'
+            : 'Yayında soru yok.',
       );
     }
 
@@ -455,10 +476,11 @@ export class QuizService {
       /* sessiz: kutlama kaçar ama sonuç kaybolmaz */
     }
 
-    // Ders denemesi karnesi: konu bazında doğru/toplam kırılımı (Doc 12 §7).
+    // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç seansı,
+    // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
     let topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null =
       null;
-    if (session.courseId != null && session.answers.length > 0) {
+    if (session.topicId == null && session.answers.length > 0) {
       const qids = session.answers.map((a) => a.questionId);
       const qTopics = await this.prisma.question.findMany({
         where: { id: { in: qids } },

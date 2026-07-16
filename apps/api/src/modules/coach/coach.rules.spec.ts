@@ -30,7 +30,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
       onboardingCompleted: true,
       preferredModuleName: null,
     },
-    streak: { current: 0, longest: 0, activeYesterday: false },
+    streak: { current: 0, longest: 0, activeYesterday: false, freezesLeft: 1 },
     answeredToday: 0,
     stats: { totalSolved: 0, totalCorrect: 0, totalSessions: 0 },
     unresolvedWrongCount: 0,
@@ -114,7 +114,7 @@ describe('exam_today (kural 3)', () => {
 
 describe('streak_risk (kural 4)', () => {
   const risky = {
-    streak: { current: 7, longest: 10, activeYesterday: true },
+    streak: { current: 7, longest: 10, activeYesterday: true, freezesLeft: 1 },
     answeredToday: 0,
     trHour: 19,
   };
@@ -126,7 +126,7 @@ describe('streak_risk (kural 4)', () => {
     expect(streakRiskRule(ctx({ ...risky, trHour: 17 }))).toBeNull();
     expect(streakRiskRule(ctx({ ...risky, answeredToday: 3 }))).toBeNull();
     expect(
-      streakRiskRule(ctx({ ...risky, streak: { current: 0, longest: 0, activeYesterday: true } })),
+      streakRiskRule(ctx({ ...risky, streak: { current: 0, longest: 0, activeYesterday: true, freezesLeft: 1 } })),
     ).toBeNull();
   });
 });
@@ -231,7 +231,7 @@ describe('comeback (kural 12)', () => {
 
 describe('motivation (kural 13)', () => {
   it('metin veriye göre deterministik: seri > hedef > varsayılan', () => {
-    expect(motivationRule(ctx({ streak: { current: 5, longest: 5, activeYesterday: true } }))?.title)
+    expect(motivationRule(ctx({ streak: { current: 5, longest: 5, activeYesterday: true, freezesLeft: 1 } }))?.title)
       .toBe('5 gündür üst üste çalışıyorsun');
     expect(motivationRule(ctx({ answeredToday: 25 }))?.title).toBe('Bugünkü hedefini tamamladın');
     expect(motivationRule(ctx())?.title).toBe('Bugün de bir adım ileri');
