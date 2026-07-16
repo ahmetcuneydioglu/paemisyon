@@ -67,6 +67,7 @@ export default function QuestionDetailPage() {
     stem: latest.stem,
     explanation: latest.explanation ?? '',
     difficulty: latest.difficulty,
+    articleNo: d.articleNo ?? '',
     options: latest.options.map((o) => ({ label: o.label, text: o.text, isCorrect: o.isCorrect })),
   };
 

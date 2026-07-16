@@ -104,7 +104,15 @@ export class AdminQuestionsService {
   async create(actor: AuthenticatedUser, dto: UpsertQuestionDto) {
     this.validateOptions(dto);
     const question = await this.prisma.$transaction(async (tx) => {
-      const q = await tx.question.create({ data: { topicId: dto.topicId } });
+      const q = await tx.question.create({
+        data: {
+          topicId: dto.topicId,
+          // Madde Atlası: elle verilmediyse kökten otomatik tespit.
+          articleNo: dto.articleNo !== undefined
+            ? dto.articleNo.trim() || null
+            : detectArticleNo(dto.stem),
+        },
+      });
       await this.createVersion(tx, q.id, 1, actor.id, dto);
       return q;
     });
@@ -132,9 +140,19 @@ export class AdminQuestionsService {
       if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
     }
 
+    // Madde etiketi (Doc 25 §4): gönderildiyse güncelle ('' = temizle).
+    const articleNo =
+      dto.articleNo !== undefined ? dto.articleNo.trim() || null : undefined;
+
     await this.prisma.$transaction(async (tx) => {
-      if (topicChanged) {
-        await tx.question.update({ where: { id }, data: { topicId: dto.topicId } });
+      if (topicChanged || articleNo !== undefined) {
+        await tx.question.update({
+          where: { id },
+          data: {
+            topicId: topicChanged ? dto.topicId : undefined,
+            articleNo,
+          },
+        });
       }
       if (latest && (latest.status === 'draft' || latest.status === 'in_review')) {
         // Taslak/incelemedeki sürüm yerinde güncellenir (sürüm şişmesin).

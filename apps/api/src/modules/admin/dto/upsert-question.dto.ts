@@ -43,6 +43,15 @@ export class UpsertQuestionDto {
   @IsIn(['easy', 'medium', 'hard'])
   difficulty?: 'easy' | 'medium' | 'hard';
 
+  /**
+   * Madde Atlası (Doc 25 §4): "16", "4/A", "Ek 6", "Geçici 2".
+   * undefined = dokunma (update) / otomatik tespit (create); '' = temizle.
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(16)
+  articleNo?: string;
+
   @IsArray()
   @ArrayMinSize(2)
   @ArrayMaxSize(5)

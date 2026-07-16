@@ -10,6 +10,8 @@ export interface QuestionFormValue {
   stem: string;
   explanation: string;
   difficulty: Difficulty;
+  /** Madde Atlası (Doc 25 §4): "16", "4/A", "Ek 6"… Boş = madde yok. */
+  articleNo: string;
   options: QuestionOption[];
 }
 
@@ -21,6 +23,7 @@ export function emptyQuestion(): QuestionFormValue {
     stem: '',
     explanation: '',
     difficulty: 'medium',
+    articleNo: '',
     options: [
       { label: 'A', text: '', isCorrect: true },
       { label: 'B', text: '', isCorrect: false },
@@ -172,17 +175,30 @@ export function QuestionForm({
         />
       </div>
 
-      <div>
-        <label className="block text-sm font-medium">Zorluk</label>
-        <select
-          value={v.difficulty}
-          onChange={(e) => set({ difficulty: e.target.value as Difficulty })}
-          className="mt-1 rounded-lg border border-slate-300 px-3 py-2 text-sm"
-        >
-          <option value="easy">Kolay</option>
-          <option value="medium">Orta</option>
-          <option value="hard">Zor</option>
-        </select>
+      <div className="flex gap-4">
+        <div>
+          <label className="block text-sm font-medium">Zorluk</label>
+          <select
+            value={v.difficulty}
+            onChange={(e) => set({ difficulty: e.target.value as Difficulty })}
+            className="mt-1 rounded-lg border border-slate-300 px-3 py-2 text-sm"
+          >
+            <option value="easy">Kolay</option>
+            <option value="medium">Orta</option>
+            <option value="hard">Zor</option>
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm font-medium">Kanun maddesi</label>
+          <input
+            value={v.articleNo}
+            onChange={(e) => set({ articleNo: e.target.value })}
+            maxLength={16}
+            className="mt-1 w-36 rounded-lg border border-slate-300 px-3 py-2 text-sm"
+            placeholder="örn. 16, 4/A, Ek 6"
+            title="Madde Atlası: sorunun bağlı olduğu madde. Boş bırakılırsa kökten otomatik tespit edilir."
+          />
+        </div>
       </div>
 
       <button

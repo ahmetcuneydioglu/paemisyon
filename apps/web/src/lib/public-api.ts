@@ -44,6 +44,8 @@ export interface LawDetail extends LawSummary {
     explanation: string | null;
     source: string | null;
   } | null;
+  /** Madde Isı Haritası (Doc 25 §4): madde → çıkmış soru sayısı, çoktan aza. */
+  articles: { no: string; questionCount: number }[];
   related: { slug: string; name: string; questionCount: number }[];
 }
 

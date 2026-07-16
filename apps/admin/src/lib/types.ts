@@ -113,6 +113,8 @@ export interface QuestionVersion {
 export interface QuestionDetail {
   id: string;
   topicId: string;
+  /** Madde Atlası (Doc 25 §4): "16", "4/A", "Ek 6"… */
+  articleNo: string | null;
   currentVersionId: string | null;
   topic: { id: string; name: string; course: { id: string; name: string } };
   versions: QuestionVersion[];

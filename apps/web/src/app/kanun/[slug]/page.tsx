@@ -97,6 +97,48 @@ export default async function KanunPage({ params }: { params: Params }) {
         )}
       </div>
 
+      {/* Madde Isı Haritası (Doc 25 §4) — hangi maddeden kaç soru çıkmış */}
+      {law.articles.length > 0 && (
+        <section className="mb-8 rounded-xl border border-gray-200 bg-white p-6">
+          <h2 className="font-heading mb-1 text-lg font-bold text-(--color-navy)">
+            En çok soru çıkan maddeler
+          </h2>
+          <p className="mb-4 text-sm text-gray-500">
+            Kaynaklı çıkmış sorulardan üretilen dağılım — hangi maddeye
+            yoğunlaşman gerektiğini gösterir.
+          </p>
+          <ul className="space-y-2">
+            {law.articles.slice(0, 10).map((a) => {
+              const max = law.articles[0].questionCount;
+              const ratio = max > 0 ? a.questionCount / max : 0;
+              return (
+                <li key={a.no} className="flex items-center gap-3 text-sm">
+                  <span className="w-14 shrink-0 font-mono font-medium">m.{a.no}</span>
+                  <span className="h-2.5 flex-1 overflow-hidden rounded bg-gray-100">
+                    <span
+                      className="block h-full rounded"
+                      style={{
+                        width: `${Math.max(8, ratio * 100)}%`,
+                        background:
+                          ratio >= 0.6 ? "var(--tk-accent-atlas)" : "color-mix(in srgb, var(--tk-accent-atlas) 40%, transparent)",
+                      }}
+                    />
+                  </span>
+                  <span className="w-8 shrink-0 text-right text-gray-500">
+                    {a.questionCount}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+          {law.articles.length > 10 && (
+            <p className="mt-3 text-xs text-gray-400">
+              + {law.articles.length - 10} madde daha — tamamı uygulamada.
+            </p>
+          )}
+        </section>
+      )}
+
       {/* Örnek çıkmış soru */}
       {q ? (
         <section className="mb-8 rounded-xl border border-gray-200 bg-white p-6">
