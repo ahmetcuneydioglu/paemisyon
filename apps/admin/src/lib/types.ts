@@ -39,6 +39,43 @@ export interface CatalogModule {
   courses: CatalogCourse[];
 }
 
+// ── Müfredat yönetim ağacı (Doc 21) ──
+export interface CurriculumTopic {
+  id: string;
+  name: string;
+  sortOrder: number;
+  isPremium: boolean;
+  matchKeywords: string[];
+  questionCount: number;
+  children: CurriculumTopic[];
+}
+export interface CurriculumCourse {
+  id: string;
+  name: string;
+  questionCount: number;
+  usedByExamTypeIds: string[];
+  topics: CurriculumTopic[];
+}
+export interface CurriculumSection {
+  id: string;
+  name: string;
+  weightPercent: number;
+  sortOrder: number;
+  courses: CurriculumCourse[];
+}
+export interface CurriculumExamType {
+  id: string;
+  key: string;
+  name: string;
+  isActive: boolean;
+  sections: CurriculumSection[];
+  weightTotal: number;
+}
+export interface Curriculum {
+  examTypes: CurriculumExamType[];
+  coursePool: CurriculumCourse[];
+}
+
 export interface QuestionListItem {
   id: string;
   topicId: string;
