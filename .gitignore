@@ -4,6 +4,8 @@ paem701.sql
 paem705.sql
 paemmisy_mvc.sql
 *.sql
+# Prisma migration SQL'leri kaynak koddur — dump kuralından muaf:
+!apps/api/prisma/migrations/**/*.sql
 .DS_Store
 paemisyoncom/app/Backup/
 
