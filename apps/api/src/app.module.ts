@@ -15,6 +15,7 @@ import { ExamsModule } from './modules/exams/exams.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
 import { ProgressModule } from './modules/progress/progress.module';
+import { PublicModule } from './modules/public/public.module';
 import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
@@ -44,6 +45,7 @@ import { UsersModule } from './modules/users/users.module';
     CoachModule,
     ExamsModule,
     QuestionsModule,
+    PublicModule,
     AdminModule,
     HealthModule,
     UsersModule,
