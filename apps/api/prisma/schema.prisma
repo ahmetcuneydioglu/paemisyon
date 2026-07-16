@@ -173,8 +173,6 @@ model ExamType {
   updatedAt   DateTime @updatedAt @map("updated_at")
 
   sections       ExamSection[]
-  // GEÇİCİ (Faz D'de kalkar): dersler artık küresel havuz, bölümler üzerinden bağlanır.
-  courses        Course[]
   preferredUsers User[]
 
   @@map("modules")
@@ -235,19 +233,15 @@ model AuditLog {
 /// bölümleri (ExamSection) üzerinden bir veya birden çok sınava bağlanır.
 model Course {
   id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  // GEÇİCİ (Faz D'de drop): eski doğrudan bağ — geçiş boyunca dolu kalır.
-  moduleId  String?   @map("module_id") @db.Uuid
   name      String
   sortOrder Int       @default(0) @map("sort_order")
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")
 
-  examType     ExamType?           @relation(fields: [moduleId], references: [id])
   sections     ExamSectionCourse[]
   topics       Topic[]
   quizSessions QuizSession[]
 
-  @@index([moduleId])
   @@map("courses")
 }
 

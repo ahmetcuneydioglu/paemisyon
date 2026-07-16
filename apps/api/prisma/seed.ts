@@ -105,175 +105,10 @@ async function main() {
     });
   }
 
-  // ── PAEM mevzuat taksonomisi (Doc 20) — per-kanun konular + eşleme desenleri.
-  // Toplu içe aktarmada soruları otomatik sınıflandırır. BAŞLANGIÇ ağacı:
-  // admin katalog panelinden genişletir/düzeltir. Idempotent (ada göre upsert).
-  const paemModule = await prisma.examType.findUnique({ where: { key: 'paem' } });
-  if (paemModule) {
-    // [ders, sıra, [konu, [keyword...]]]
-    const taxonomy: { course: string; topics: { name: string; kw: string[] }[] }[] = [
-      {
-        course: 'Anayasa ve İnkılap Tarihi',
-        topics: [
-          { name: 'T.C. Anayasası', kw: ['T.C. Anayasası', 'Anayasa’ya göre', 'Anayasası’na göre'] },
-          { name: 'Atatürk İlkeleri ve İnkılap Tarihi', kw: ['Atatürk', 'İnkılap', 'Mondros', 'Kurtuluş Savaşı', 'tam bağımsızlık', 'Kabotaj'] },
-        ],
-      },
-      {
-        course: 'İdare Hukuku ve Mahalli İdareler',
-        topics: [
-          { name: '5302 İl Özel İdaresi Kanunu', kw: ['5302 sayılı', 'İl Özel İdaresi'] },
-          { name: '5393 Belediye Kanunu', kw: ['5393 sayılı', 'Belediye Kanunu'] },
-          { name: '5442 İl İdaresi Kanunu', kw: ['5442 sayılı', 'İl İdaresi Kanunu'] },
-          { name: '2576 Bölge İdare Mahkemeleri Kanunu', kw: ['2576 sayılı'] },
-          { name: '2577 İdari Yargılama Usulü Kanunu (İYUK)', kw: ['2577 sayılı', 'İdari Yargılama Usulü'] },
-        ],
-      },
-      {
-        course: 'Memur ve Kamu Mevzuatı',
-        topics: [
-          { name: '657 Devlet Memurları Kanunu', kw: ['657 sayılı', 'Devlet Memurları Kanunu'] },
-          { name: '5018 Kamu Mali Yönetimi Kanunu', kw: ['5018 sayılı', 'Kamu Malî Yönetimi', 'Kamu Mali Yönetimi'] },
-          { name: 'Cumhurbaşkanlığı Teşkilatı (1 sayılı KHK)', kw: ['1 sayılı Cumhurbaşkanlığı', 'Cumhurbaşkanlığı Teşkilatı'] },
-          { name: 'Halkla İlişkiler', kw: ['halkla ilişkiler'] },
-          { name: 'Etik', kw: ['etik davranış', 'etik ilke'] },
-        ],
-      },
-      {
-        course: 'Adli ve İdari Yazı İşleri Mevzuatı',
-        topics: [
-          { name: '5235 Adli Yargı İlk Derece Mahkemeleri Kanunu', kw: ['5235 sayılı'] },
-          { name: '5070 Elektronik İmza Kanunu', kw: ['5070 sayılı', 'Elektronik İmza'] },
-          { name: 'Resmî Yazışmalar Yönetmeliği', kw: ['Resmî Yazışmalarda Uygulanacak', 'Resmî Yazışmalar'] },
-          { name: '7201 Tebligat Kanunu', kw: ['7201 sayılı', 'Tebligat Kanunu'] },
-          { name: 'Tebligat Yönetmelikleri', kw: ['Tebligat Yönetmeliği', 'Elektronik Tebligat'] },
-          { name: '4982 Bilgi Edinme Hakkı Kanunu', kw: ['4982 sayılı', 'Bilgi Edinme'] },
-          { name: '3071 Dilekçe Hakkı Kanunu', kw: ['3071 sayılı', 'Dilekçe Hakkı'] },
-          { name: '492 Harçlar Kanunu', kw: ['492 sayılı', 'Harçlar Kanunu'] },
-          { name: 'Yazı İşleri Yönetmelikleri', kw: ['Yazı İşleri Hizmetlerinin Yürütülmesi', 'Yazı İşleri Müdürlüğü'] },
-          { name: 'SEGBİS ve Ses-Görüntü Yönetmelikleri', kw: ['SEGBİS', 'Ses ve Görüntü'] },
-          { name: 'Disiplin ve Görevde Yükselme Yönetmelikleri', kw: ['Disiplin Yönetmeliği', 'Görevde Yükselme', 'Atama ve Nakil'] },
-        ],
-      },
-      {
-        course: 'Genel Yetenek ve Genel Kültür',
-        topics: [
-          { name: 'Türkçe / Dil Bilgisi', kw: ['yazım', 'noktalama', 'anlatım bozukluğu', 'sözcük türü'] },
-        ],
-      },
-    ];
-
-    for (let ci = 0; ci < taxonomy.length; ci++) {
-      const c = taxonomy[ci];
-      let course = await prisma.course.findFirst({
-        where: { moduleId: paemModule.id, name: c.course, deletedAt: null },
-      });
-      course ??= await prisma.course.create({
-        data: { moduleId: paemModule.id, name: c.course, sortOrder: ci + 1 },
-      });
-      for (let ti = 0; ti < c.topics.length; ti++) {
-        const t = c.topics[ti];
-        const existing = await prisma.topic.findFirst({
-          where: { courseId: course.id, name: t.name, deletedAt: null },
-        });
-        if (existing) {
-          // Keyword'leri güncelle (admin elle değiştirdiyse ezmemek için yalnız boşsa).
-          if (existing.matchKeywords.length === 0) {
-            await prisma.topic.update({
-              where: { id: existing.id },
-              data: { matchKeywords: t.kw },
-            });
-          }
-        } else {
-          await prisma.topic.create({
-            data: { courseId: course.id, name: t.name, sortOrder: ti + 1, matchKeywords: t.kw },
-          });
-        }
-      }
-    }
-    console.log(`PAEM mevzuat taksonomisi: ${taxonomy.length} ders.`);
-  }
-
-  // Örnek içerik (DEV) — katalog gezinmesini denemek için. PAEM boşsa ekle.
-  // Gerçek içerik editoryal üretilir (Doc 2); bu yalnızca iskelet doğrulaması.
-  const paem = await prisma.examType.findUnique({ where: { key: 'paem' } });
-  if (paem) {
-    const courseCount = await prisma.course.count({ where: { moduleId: paem.id } });
-    if (courseCount === 0) {
-      const sample = [
-        { name: 'Anayasa Hukuku', topics: ['Temel Kavramlar', 'Temel Hak ve Hürriyetler', 'Yasama'] },
-        { name: 'Türkçe', topics: ['Ses Bilgisi', 'Anlatım Bozuklukları'] },
-        { name: 'Genel Kültür', topics: ['Tarih', 'Coğrafya'] },
-      ];
-      for (let ci = 0; ci < sample.length; ci++) {
-        const course = await prisma.course.create({
-          data: { moduleId: paem.id, name: sample[ci].name, sortOrder: ci + 1 },
-        });
-        await prisma.topic.createMany({
-          data: sample[ci].topics.map((name, ti) => ({
-            courseId: course.id,
-            name,
-            sortOrder: ti + 1,
-            isPremium: ti >= 2, // örnek: 3. konu premium
-          })),
-        });
-      }
-      console.log('Örnek PAEM içeriği eklendi (dev).');
-    }
-  }
-
-  // Örnek sorular (DEV) — quiz motorunu denemek için. "Temel Kavramlar" boşsa ekle.
-  const firstTopic = await prisma.topic.findFirst({ where: { name: 'Temel Kavramlar' } });
-  if (firstTopic) {
-    const qCount = await prisma.question.count({ where: { topicId: firstTopic.id } });
-    if (qCount === 0) {
-      const samples = [
-        {
-          stem: '1982 Anayasası’na göre Türkiye Cumhuriyeti’nin nitelikleri arasında aşağıdakilerden hangisi YER ALMAZ?',
-          options: ['Demokratik', 'Laik', 'Sosyal', 'Federal'],
-          correct: 3,
-          explanation: 'Türkiye Cumhuriyeti üniter bir devlettir; "federal" bir niteliği değildir.',
-        },
-        {
-          stem: 'Anayasa’ya göre egemenlik kayıtsız şartsız kime aittir?',
-          options: ['Millete', 'Cumhurbaşkanına', 'TBMM’ye', 'Hükümete'],
-          correct: 0,
-          explanation: 'Egemenlik kayıtsız şartsız Milletindir (Anayasa md. 6).',
-        },
-        {
-          stem: 'Aşağıdakilerden hangisi bir temel hak ve hürriyet DEĞİLDİR?',
-          options: ['Yaşama hakkı', 'Kişi dokunulmazlığı', 'Seçme ve seçilme hakkı', 'Vergi toplama'],
-          correct: 3,
-          explanation: 'Vergi toplama bir devlet yetkisidir; temel hak ve hürriyet değildir.',
-        },
-      ];
-      for (const s of samples) {
-        const q = await prisma.question.create({ data: { topicId: firstTopic.id } });
-        const v = await prisma.questionVersion.create({
-          data: {
-            questionId: q.id,
-            versionNo: 1,
-            stem: s.stem,
-            explanation: s.explanation,
-            difficulty: 'medium',
-            status: 'published',
-            publishedAt: new Date(),
-          },
-        });
-        await prisma.questionOption.createMany({
-          data: s.options.map((text, i) => ({
-            questionVersionId: v.id,
-            label: String.fromCharCode(65 + i),
-            text,
-            isCorrect: i === s.correct,
-            sortOrder: i + 1,
-          })),
-        });
-        await prisma.question.update({ where: { id: q.id }, data: { currentVersionId: v.id } });
-      }
-      console.log('Örnek sorular eklendi (dev): 3 soru.');
-    }
-  }
+  // NOT (Doc 21): Ders/konu/soru İÇERİĞİ artık seed'de ÜRETİLMEZ. İçerik
+  // migrate-content-tree.ts + admin İçerik Ağacı paneli + gerçek PDF/CSV
+  // içe aktarımlarıyla yönetilir. (Eski Doc 20 taksonomisi ve dev örnek içerik
+  // blokları kaldırıldı; tekrar çalıştırıldığında silinmiş dersleri diriltmesin.)
 
   // Rozet kataloğu (Doc 19 §3.2) — kazanım kuralı kind+threshold ile deterministik.
   // Metinler yetişkin ve profesyonel (Duolingo kalitesi, çocukça değil).
@@ -305,7 +140,7 @@ async function main() {
     create: { key: 'show_question_source', value: 'true' },
   });
 
-  console.log('Seed tamam: roller, planlar, modüller, rozetler (+ örnek içerik + sorular) eklendi.');
+  console.log('Seed tamam: roller, planlar, sınav türleri, rozetler, ayarlar. (İçerik seed edilmez — Doc 21.)');
 }
 
 main()
