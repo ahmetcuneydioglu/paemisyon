@@ -5,9 +5,12 @@ import 'package:go_router/go_router.dart';
 import '../../../core/error/failure.dart';
 import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../../../shared/widgets/streak_badge.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
 
@@ -140,10 +143,20 @@ class _CoachBody extends ConsumerWidget {
                   ],
                 ),
               ),
-              _StreakChip(
-                current: brief.streakCurrent,
-                atRisk: brief.streakAtRisk,
-                pal: pal,
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  if (brief.streakCurrent > 0)
+                    StreakBadge(
+                      days: brief.streakCurrent,
+                      atRisk: brief.streakAtRisk,
+                    ),
+                  // Sınav geri sayımı (Doc 25 §3: exam_mode/taper pili).
+                  if (brief.daysToExam != null) ...[
+                    const SizedBox(height: AppSpacing.xs),
+                    _ExamCountdownPill(days: brief.daysToExam!),
+                  ],
+                ],
               ),
             ],
           ),
@@ -272,39 +285,35 @@ class _CoachBody extends ConsumerWidget {
   }
 }
 
-// ── Seri chip'i ──
+// ── Sınav geri sayım pili (Doc 25 §3) ──
 
-class _StreakChip extends StatelessWidget {
-  final int current;
-  final bool atRisk;
-  final AccentPalette pal;
-  const _StreakChip(
-      {required this.current, required this.atRisk, required this.pal});
+class _ExamCountdownPill extends StatelessWidget {
+  final int days;
+  const _ExamCountdownPill({required this.days});
 
   @override
   Widget build(BuildContext context) {
-    if (current <= 0) return const SizedBox.shrink();
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: pal.warnBg,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            atRisk
-                ? Icons.local_fire_department_outlined
-                : Icons.local_fire_department_rounded,
-            size: 16,
-            color: pal.warnFg,
-          ),
-          const SizedBox(width: 4),
-          Text('$current gün',
-              style: TextStyle(
-                  fontSize: 13, fontWeight: FontWeight.w700, color: pal.warnFg)),
-        ],
+    final tokens = context.tokens;
+    final label = days == 0 ? 'Bugün sınav günü' : 'Sınava $days gün';
+    return Semantics(
+      label: label,
+      excludeSemantics: true,
+      child: Container(
+        padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.md, vertical: AppSpacing.xs + 2),
+        decoration: BoxDecoration(
+          color: tokens.brand.withValues(alpha: 0.10),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusFull),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.event_rounded, size: 13, color: tokens.brand),
+            const SizedBox(width: AppSpacing.xs),
+            Text(label,
+                style: AppTypography.label.copyWith(color: tokens.brand)),
+          ],
+        ),
       ),
     );
   }
@@ -427,6 +436,9 @@ class _CoachCardTile extends StatelessWidget {
       'daily_quiz' => (Icons.today_rounded, pal.accentText),
       'badge_near' => (Icons.military_tech_rounded, pal.proFg),
       'comeback' => (Icons.waving_hand_rounded, pal.warnFg),
+      'exam_mode' => (Icons.shield_moon_rounded, pal.accentText),
+      'taper' => (Icons.self_improvement_rounded, pal.liveFg),
+      'slump_watch' => (Icons.spa_rounded, pal.warnFg),
       _ => (Icons.auto_awesome_rounded, scheme.onSurfaceVariant),
     };
   }

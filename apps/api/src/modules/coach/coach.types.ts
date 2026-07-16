@@ -19,7 +19,24 @@ export type CoachCardType =
   | 'badge_near'
   | 'new_exam'
   | 'comeback'
+  | 'exam_mode'
+  | 'taper'
+  | 'slump_watch'
   | 'motivation';
+
+/**
+ * Koç durum makinesi (Doc 25 §3): ana ekranın hangi "durumda" olduğu.
+ * İstemci sahneyi buna göre kurar (geri sayım pili, kart bastırma vs.);
+ * kural bilgisi yine sunucudadır — bu yalnız türetilmiş bir etikettir.
+ */
+export type CoachMode =
+  | 'comeback'
+  | 'taper'
+  | 'exam_day'
+  | 'exam_mode'
+  | 'streak_risk'
+  | 'slump_watch'
+  | 'normal';
 
 export interface CoachCta {
   label: string;
@@ -94,6 +111,10 @@ export interface CoachContext {
   courseTrend: { courseName: string; deltaPct: number } | null;
   /** Son aktiviteden bu yana geçen tam gün; hiç aktivite yoksa null. */
   daysSinceLastActivity: number | null;
+  /** Hedef sınava kalan TR takvim günü; tarih yoksa veya geçtiyse null. */
+  daysToExam: number | null;
+  /** Tempo sinyali (Doc 24 §1/90. gün): son 7 gün vs önceki 7 gün soru hacmi. */
+  volume: { last7: number; prev7: number };
 }
 
 /** Kural: saf fonksiyon — tetiklenmezse null. Yenisini eklemek = yeni dosya. */
@@ -113,6 +134,10 @@ export interface CoachBrief {
     streak: { current: number; longest: number; atRisk: boolean };
   };
   primaryAction: CoachCta & { type: CoachCardType | 'default' };
+  /** Durum makinesi etiketi (Doc 25 §3) — istemci sahne kurulumu için. */
+  mode: CoachMode;
+  /** Hedef sınava kalan gün (exam_mode/taper pili); ayarlı değilse null. */
+  daysToExam: number | null;
   cards: CoachCard[];
   /** Kompakt istatistik şeridi (Doc 19 §4/5) — ayrı dashboard çağrısı gerekmesin. */
   stats: { totalSolved: number; accuracy: number; totalSessions: number };

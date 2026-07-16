@@ -74,6 +74,13 @@ class CoachBrief {
 
   final CoachCta primaryAction;
   final String primaryActionType;
+
+  /// Durum makinesi etiketi (Doc 25 §3): normal / streak_risk / exam_day /
+  /// exam_mode / taper / slump_watch / comeback. Sahne kurulumu için ipucu.
+  final String mode;
+
+  /// Hedef sınava kalan gün (geri sayım pili); ayarlı değilse null.
+  final int? daysToExam;
   final List<CoachCard> cards;
 
   final int totalSolved;
@@ -96,6 +103,8 @@ class CoachBrief {
     required this.streakAtRisk,
     required this.primaryAction,
     required this.primaryActionType,
+    this.mode = 'normal',
+    this.daysToExam,
     required this.cards,
     required this.totalSolved,
     required this.accuracy,
@@ -125,6 +134,8 @@ class CoachBrief {
       streakAtRisk: streak['atRisk'] as bool? ?? false,
       primaryAction: CoachCta.fromJson(primary),
       primaryActionType: primary['type'] as String? ?? 'default',
+      mode: j['mode'] as String? ?? 'normal',
+      daysToExam: j['daysToExam'] as int?,
       cards: (j['cards'] as List<dynamic>? ?? const [])
           .map((e) => CoachCard.fromJson(e as Map<String, dynamic>))
           .toList(),

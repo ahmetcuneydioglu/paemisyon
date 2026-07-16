@@ -111,12 +111,25 @@ export class UsersController {
   async update(@CurrentUser() user: AuthenticatedUser, @Body() dto: UpdateProfileDto) {
     const updated = await this.prisma.user.update({
       where: { id: user.id },
-      data: { displayName: dto.displayName, avatarUrl: dto.avatarUrl },
+      data: {
+        displayName: dto.displayName,
+        avatarUrl: dto.avatarUrl,
+        dailyGoal: dto.dailyGoal,
+        // undefined = dokunma; null = temizle; "YYYY-MM-DD" = ayarla (@db.Date).
+        targetExamDate:
+          dto.targetExamDate === undefined
+            ? undefined
+            : dto.targetExamDate === null
+              ? null
+              : new Date(`${dto.targetExamDate}T00:00:00.000Z`),
+      },
     });
     return {
       id: updated.id,
       displayName: updated.displayName,
       avatarUrl: updated.avatarUrl,
+      dailyGoal: updated.dailyGoal,
+      targetExamDate: updated.targetExamDate?.toISOString().slice(0, 10) ?? null,
     };
   }
 }

@@ -1,6 +1,10 @@
 import { CoachContext } from './coach.types';
+import { deriveMode } from './coach.service';
 import { badgeNearRule } from './rules/badge-near.rule';
 import { comebackRule } from './rules/comeback.rule';
+import { examModeRule } from './rules/exam-mode.rule';
+import { slumpWatchRule } from './rules/slump-watch.rule';
+import { taperRule } from './rules/taper.rule';
 import { courseTrendRule } from './rules/course-trend.rule';
 import { dailyQuizRule } from './rules/daily-quiz.rule';
 import { examInProgressRule } from './rules/exam-in-progress.rule';
@@ -44,6 +48,8 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     maxDailyQuestions: 0,
     courseTrend: null,
     daysSinceLastActivity: 0,
+    daysToExam: null,
+    volume: { last7: 0, prev7: 0 },
     ...over,
   };
 }
@@ -206,9 +212,16 @@ describe('new_exam (kural 11)', () => {
 });
 
 describe('comeback (kural 12)', () => {
-  it('3+ gün aradan sonra tetiklenir', () => {
-    const c = comebackRule(ctx({ daysSinceLastActivity: 4 }));
-    expect(c?.body).toContain('4 gün');
+  it('3+ gün aradan sonra birikim diliyle tetiklenir (suçlama yok — Doc 26)', () => {
+    const c = comebackRule(
+      ctx({
+        daysSinceLastActivity: 4,
+        stats: { totalSolved: 2847, totalCorrect: 2000, totalSessions: 90 },
+      }),
+    );
+    expect(c?.title).toContain('Hoş geldin');
+    expect(c?.body).toContain('2.847');
+    expect(c?.body).not.toContain('özledik');
   });
   it('aktif kullanıcıda ve hiç aktivitesi olmayanda sessiz', () => {
     expect(comebackRule(ctx({ daysSinceLastActivity: 1 }))).toBeNull();
@@ -222,5 +235,79 @@ describe('motivation (kural 13)', () => {
       .toBe('5 gündür üst üste çalışıyorsun');
     expect(motivationRule(ctx({ answeredToday: 25 }))?.title).toBe('Bugünkü hedefini tamamladın');
     expect(motivationRule(ctx())?.title).toBe('Bugün de bir adım ileri');
+  });
+});
+
+// ── Doc 25 §3 durum makinesi kuralları ──
+
+describe('exam_mode (sınava ≤30 gün)', () => {
+  it('4-30 gün aralığında tetiklenir; yanlış varsa yanlış turuna yönlendirir', () => {
+    const c = examModeRule(ctx({ daysToExam: 23, unresolvedWrongCount: 12 }));
+    expect(c?.priority).toBe(84);
+    expect(c?.title).toContain('23 gün');
+    expect(c?.cta?.route).toBe('/review');
+    expect(c?.cta?.label).toContain('12');
+  });
+  it('yanlış yoksa denemelere yönlendirir', () => {
+    expect(examModeRule(ctx({ daysToExam: 10 }))?.cta?.route).toBe('/denemeler');
+  });
+  it('tarih yoksa, uzaksa veya taper penceresindeyse sessiz', () => {
+    expect(examModeRule(ctx())).toBeNull();
+    expect(examModeRule(ctx({ daysToExam: 31 }))).toBeNull();
+    expect(examModeRule(ctx({ daysToExam: 3 }))).toBeNull();
+  });
+});
+
+describe('taper (sınava ≤3 gün)', () => {
+  it('güven diliyle tetiklenir, çözülen soruyu TR formatında söyler', () => {
+    const c = taperRule(
+      ctx({
+        daysToExam: 2,
+        stats: { totalSolved: 11400, totalCorrect: 8000, totalSessions: 300 },
+      }),
+    );
+    expect(c?.priority).toBe(97);
+    expect(c?.title).toBe('Hazırsın.');
+    expect(c?.body).toContain('11.400');
+    expect(c?.cta).toBeDefined();
+  });
+  it('sınav günü CTA yok — ürün susmayı bilir', () => {
+    const c = taperRule(ctx({ daysToExam: 0 }));
+    expect(c?.title).toContain('sınav günü');
+    expect(c?.cta).toBeUndefined();
+  });
+  it('4+ gün kala sessiz', () => {
+    expect(taperRule(ctx({ daysToExam: 4 }))).toBeNull();
+  });
+});
+
+describe('slump_watch (tempo düşüşü)', () => {
+  it('son 7 gün önceki 7 günün yarısının altındaysa tetiklenir', () => {
+    const c = slumpWatchRule(ctx({ volume: { last7: 20, prev7: 80 } }));
+    expect(c?.priority).toBe(80);
+    expect(c?.body).toContain('10 soru');
+    expect(c?.meta?.suggestedCount).toBe(10);
+  });
+  it('önceki hafta hacim azsa (yeni kullanıcı) yanlış alarm vermez', () => {
+    expect(slumpWatchRule(ctx({ volume: { last7: 0, prev7: 39 } }))).toBeNull();
+  });
+  it('tempo korunuyorsa veya sınav yaklaşmışsa sessiz', () => {
+    expect(slumpWatchRule(ctx({ volume: { last7: 45, prev7: 80 } }))).toBeNull();
+    expect(
+      slumpWatchRule(ctx({ volume: { last7: 10, prev7: 80 }, daysToExam: 20 })),
+    ).toBeNull();
+  });
+});
+
+describe('deriveMode (durum makinesi etiketi — Doc 25 §3)', () => {
+  const card = (type: string) => ({ type, priority: 50, title: 't' }) as any;
+  it('öncelik sırası: comeback > taper > exam_day > streak_risk > exam_mode > slump_watch', () => {
+    expect(deriveMode(ctx(), [card('comeback'), card('taper')])).toBe('comeback');
+    expect(deriveMode(ctx(), [card('taper'), card('exam_live')])).toBe('taper');
+    expect(deriveMode(ctx(), [card('exam_today'), card('streak_risk')])).toBe('exam_day');
+    expect(deriveMode(ctx(), [card('streak_risk'), card('exam_mode')])).toBe('streak_risk');
+    expect(deriveMode(ctx(), [card('exam_mode'), card('slump_watch')])).toBe('exam_mode');
+    expect(deriveMode(ctx(), [card('slump_watch')])).toBe('slump_watch');
+    expect(deriveMode(ctx(), [card('goal_remaining')])).toBe('normal');
   });
 });

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { CoachBrief, CoachCard, CoachContext } from './coach.types';
+import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import { coachRules, motivationRule } from './rules';
 
 /** Haftalık aktif gün hedefi (v1 sabit; ileride kullanıcı ayarı olabilir). */
@@ -27,13 +27,22 @@ export class CoachService {
     // Geri dönüş kartı TEK BAŞINA gösterilir (Doc 19 kural 12):
     // uzun aradan dönen kullanıcıyı görev listesiyle boğma.
     const comeback = cards.find((c) => c.type === 'comeback');
+    const taper = cards.find((c) => c.type === 'taper');
     if (comeback) {
       cards = [comeback];
+    } else if (taper) {
+      // Taper (Doc 24 §1/son 3 gün): görev listesi bastırılır — yalnız sakin
+      // güven mesajı + (varsa) canlı/bugünkü deneme kartı kalır.
+      cards = cards.filter(
+        (c) => c.type === 'taper' || c.type === 'exam_live' || c.type === 'exam_today',
+      );
     } else if (cards.length === 0) {
       cards = [motivationRule(ctx)!]; // motivasyon her zaman kart döndürür
     } else {
       cards = cards.slice(0, 4);
     }
+
+    const mode = deriveMode(ctx, cards);
 
     const top = cards[0];
     const primaryAction: CoachBrief['primaryAction'] = top?.cta
@@ -59,6 +68,8 @@ export class CoachService {
         },
       },
       primaryAction,
+      mode,
+      daysToExam: ctx.daysToExam,
       cards,
       stats: {
         totalSolved: ctx.stats.totalSolved,
@@ -105,6 +116,7 @@ export class CoachService {
       weeklyActive,
       maxDaily,
       snapshots,
+      recentUsage,
     ] = await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
@@ -112,6 +124,7 @@ export class CoachService {
           displayName: true,
           dailyGoal: true,
           onboardingCompletedAt: true,
+          targetExamDate: true,
           preferredModule: { select: { name: true } },
         },
       }),
@@ -171,6 +184,14 @@ export class CoachService {
       this.prisma.topicMasterySnapshot.findMany({
         where: { userId: user.id, weekStart: { in: [weekStart, prevWeekStart] } },
         include: { topic: { select: { course: { select: { name: true } } } } },
+      }),
+      // Tempo sinyali (slump_watch): son 14 günün günlük soru hacmi.
+      this.prisma.dailyUsage.findMany({
+        where: {
+          userId: user.id,
+          usageDate: { gte: new Date(todayUtc.getTime() - 14 * 86_400_000) },
+        },
+        select: { usageDate: true, questionsAnswered: true },
       }),
     ]);
 
@@ -253,6 +274,19 @@ export class CoachService {
       ? Math.floor((todayUtc.getTime() - startOfUtcDay(lastActive).getTime()) / 86_400_000)
       : null;
 
+    // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
+    const examDate = profile?.targetExamDate ?? null;
+    const daysToExam = examDate ? trDayDiff(now, examDate) : null;
+
+    // ── Tempo: son 7 gün vs önceki 7 gün soru hacmi (slump_watch) ──
+    const sevenDaysAgo = todayUtc.getTime() - 7 * 86_400_000;
+    let last7 = 0;
+    let prev7 = 0;
+    for (const u of recentUsage) {
+      if (u.usageDate.getTime() >= sevenDaysAgo) last7 += u.questionsAnswered;
+      else prev7 += u.questionsAnswered;
+    }
+
     return {
       now,
       // Türkiye saati sabit UTC+3 (2016'dan beri DST yok).
@@ -315,8 +349,26 @@ export class CoachService {
       maxDailyQuestions: maxDaily._max.questionsAnswered ?? 0,
       courseTrend,
       daysSinceLastActivity: daysSince,
+      daysToExam: daysToExam != null && daysToExam >= 0 ? daysToExam : null,
+      volume: { last7, prev7 },
     };
   }
+}
+
+/**
+ * Durum makinesi etiketi (Doc 25 §3). Öncelik: comeback > taper > exam_day >
+ * streak_risk > exam_mode > slump_watch > normal. Kart bilgisinden türetilir —
+ * istemci kural bilmez, sahneyi bu etikete göre kurar. (Test için export.)
+ */
+export function deriveMode(ctx: CoachContext, cards: CoachCard[]): CoachMode {
+  const has = (t: CoachCard['type']) => cards.some((c) => c.type === t);
+  if (has('comeback')) return 'comeback';
+  if (has('taper')) return 'taper';
+  if (has('exam_live') || has('exam_in_progress') || has('exam_today')) return 'exam_day';
+  if (has('streak_risk')) return 'streak_risk';
+  if (has('exam_mode')) return 'exam_mode';
+  if (has('slump_watch')) return 'slump_watch';
+  return 'normal';
 }
 
 // ── Tarih yardımcıları (UTC gün konvansiyonu — dashboard ile aynı) ──
@@ -337,4 +389,11 @@ function startOfUtcWeek(d: Date): Date {
 /** Türkiye günü anahtarı (UTC+3 sabit) — "bugün başlayacak" karşılaştırması. */
 function trDayKey(d: Date): string {
   return new Date(d.getTime() + 3 * 3_600_000).toISOString().slice(0, 10);
+}
+
+/** İki an arasındaki TR takvim günü farkı (target - now, tam gün). */
+function trDayDiff(now: Date, target: Date): number {
+  const day = (d: Date) =>
+    Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
+  return day(target) - day(now);
 }

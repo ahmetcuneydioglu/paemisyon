@@ -97,6 +97,8 @@ model User {
   preferredModuleId     String?    @map("preferred_module_id") @db.Uuid
   // Günlük soru hedefi (koç hero halkası — Doc 19 §3.2). Kullanıcı ayarlayabilir.
   dailyGoal             Int        @default(20) @map("daily_goal")
+  // Hedef sınav tarihi (Doc 25 §3 durum makinesi: exam_mode/taper). Kullanıcı ayarlar.
+  targetExamDate        DateTime?  @map("target_exam_date") @db.Date
   createdAt             DateTime   @default(now()) @map("created_at")
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")

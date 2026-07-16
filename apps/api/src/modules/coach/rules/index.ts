@@ -1,6 +1,9 @@
 import { CoachRule } from '../coach.types';
 import { badgeNearRule } from './badge-near.rule';
 import { comebackRule } from './comeback.rule';
+import { examModeRule } from './exam-mode.rule';
+import { slumpWatchRule } from './slump-watch.rule';
+import { taperRule } from './taper.rule';
 import { courseTrendRule } from './course-trend.rule';
 import { dailyQuizRule } from './daily-quiz.rule';
 import { examInProgressRule } from './exam-in-progress.rule';
@@ -29,4 +32,7 @@ export const coachRules: CoachRule[] = [
   badgeNearRule,
   newExamRule,
   comebackRule,
+  examModeRule,
+  taperRule,
+  slumpWatchRule,
 ];
