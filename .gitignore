@@ -6,3 +6,10 @@ paemmisy_mvc.sql
 *.sql
 .DS_Store
 paemisyoncom/app/Backup/
+
+# Eski sistem projeleri — diskte referans için durur, repoya girmez
+/paemisyonIOS705/
+/paemisyoncom/
+
+# macOS çöpü (her yerde)
+**/.DS_Store
