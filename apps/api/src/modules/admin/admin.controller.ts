@@ -28,7 +28,13 @@ import { AuditService } from './audit.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
-import { UpsertCourseDto, UpsertTopicDto } from './dto/catalog.dto';
+import {
+  AttachCourseDto,
+  ReorderDto,
+  UpsertCourseDto,
+  UpsertSectionDto,
+  UpsertTopicDto,
+} from './dto/catalog.dto';
 
 /**
  * /api/v1/admin — panel API'si (Doc 9). RBAC (Doc 8):
@@ -89,6 +95,63 @@ export class AdminController {
   @Roles('admin', 'editor')
   tree() {
     return this.catalog.tree();
+  }
+
+  // Müfredat yönetim ağacı (Doc 21): Sınav Türü → Bölüm → Ders → Konu ağacı.
+  @Get('catalog/curriculum')
+  @Roles('admin', 'editor')
+  curriculum() {
+    return this.catalog.curriculum();
+  }
+
+  // ── Bölüm (ExamSection) ──
+  @Post('catalog/sections')
+  @Roles('admin', 'editor')
+  createSection(@CurrentUser() actor: AuthenticatedUser, @Body() dto: UpsertSectionDto) {
+    return this.catalog.createSection(actor, dto);
+  }
+
+  @Patch('catalog/sections/:id')
+  @Roles('admin', 'editor')
+  updateSection(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: UpsertSectionDto,
+  ) {
+    return this.catalog.updateSection(actor, id, dto);
+  }
+
+  @Delete('catalog/sections/:id')
+  @Roles('admin')
+  deleteSection(@CurrentUser() actor: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
+    return this.catalog.deleteSection(actor, id);
+  }
+
+  @Post('catalog/sections/:id/courses')
+  @Roles('admin', 'editor')
+  attachCourse(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: AttachCourseDto,
+  ) {
+    return this.catalog.attachCourse(actor, id, dto);
+  }
+
+  @Delete('catalog/sections/:id/courses/:courseId')
+  @Roles('admin', 'editor')
+  detachCourse(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Param('courseId', ParseUUIDPipe) courseId: string,
+  ) {
+    return this.catalog.detachCourse(actor, id, courseId);
+  }
+
+  // Sıralama (sürükle-bırak): { entity, ids[] }
+  @Patch('catalog/reorder')
+  @Roles('admin', 'editor')
+  reorder(@CurrentUser() actor: AuthenticatedUser, @Body() dto: ReorderDto) {
+    return this.catalog.reorder(actor, dto);
   }
 
   @Post('catalog/courses')
