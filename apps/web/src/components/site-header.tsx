@@ -6,7 +6,10 @@ import { MobileMenu } from "./mobile-menu";
 
 const NAV = [
   { href: "/denemeler", label: "Denemeler", icon: "icon-test" },
-  { href: "/lider-tablosu", label: "Genel Lider Tablosu", icon: "icon-user" },
+  { href: "/kanunlar", label: "Kanunlar", icon: "icon-information" },
+  { href: "/paem", label: "PAEM", icon: "icon-enter" },
+  { href: "/misyon", label: "Misyon", icon: "icon-enter" },
+  { href: "/lider-tablosu", label: "Lider Tablosu", icon: "icon-user" },
   { href: "/soru-oner", label: "Soru Öner", icon: "icon-question" },
   { href: "/profil/denemelerim", label: "Denemelerim", icon: "icon-calendar" },
 ];
@@ -64,7 +67,7 @@ export async function SiteHeader() {
               <li key={n.href}>
                 <Link
                   href={n.href}
-                  className="font-heading flex items-center gap-2 px-5 py-5 text-[17px] font-medium text-white hover:bg-(--color-navy-deep)"
+                  className="font-heading flex items-center gap-2 px-4 py-5 text-[16px] font-medium text-white hover:bg-(--color-navy-deep)"
                 >
                   <i className={`${n.icon} text-[15px]`} aria-hidden />
                   {n.label}
