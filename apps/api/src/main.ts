@@ -21,7 +21,13 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ResponseEnvelopeInterceptor());
   app.useGlobalFilters(new AllExceptionsFilter());
 
-  app.enableCors();
+  // CORS: prod'da yalnız izinli origin'ler (CORS_ORIGINS, virgülle ayrılmış);
+  // env yoksa (dev) tüm origin'lere izin ver.
+  const corsOrigins = config.get<string>('CORS_ORIGINS');
+  app.enableCors({
+    origin: corsOrigins ? corsOrigins.split(',').map((o) => o.trim()) : true,
+    credentials: true,
+  });
 
   const port = config.get<number>('PORT', 3000);
   await app.listen(port);
