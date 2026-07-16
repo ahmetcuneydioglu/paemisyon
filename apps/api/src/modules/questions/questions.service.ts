@@ -15,30 +15,64 @@ export class QuestionsService {
 
   constructor(private readonly prisma: PrismaService) {}
 
-  /** Web için hedef seçtirmek: modül→ders→konu ağacı (premium bilgisi dahil). */
+  /** Web için hedef seçtirmek: sınav→ders→konu ağacı (Doc 21: MÜFREDAT üzerinden;
+   *  dersler küresel olduğundan bölümler aracılığıyla bağlanır). Yanıt şekli
+   *  korunur ({id,name,courses:[{id,name,topics:[{id,name}]}]}). */
   async publicCatalog() {
-    const modules = await this.prisma.examType.findMany({
+    const examTypes = await this.prisma.examType.findMany({
       where: { isActive: true },
       orderBy: { sortOrder: 'asc' },
       select: {
         id: true,
         name: true,
-        courses: {
+        sections: {
           where: { deletedAt: null },
           orderBy: { sortOrder: 'asc' },
           select: {
-            id: true,
-            name: true,
-            topics: {
-              where: { deletedAt: null },
+            courses: {
               orderBy: { sortOrder: 'asc' },
-              select: { id: true, name: true },
+              select: {
+                course: {
+                  select: {
+                    id: true,
+                    name: true,
+                    deletedAt: true,
+                    topics: {
+                      where: { deletedAt: null },
+                      orderBy: [{ parentId: 'asc' }, { sortOrder: 'asc' }],
+                      select: { id: true, name: true, parentId: true },
+                    },
+                  },
+                },
+              },
             },
           },
         },
       },
     });
-    return modules;
+
+    return examTypes.map((e) => {
+      const seen = new Set<string>();
+      const courses: { id: string; name: string; topics: { id: string; name: string }[] }[] = [];
+      for (const s of e.sections) {
+        for (const sc of s.courses) {
+          const c = sc.course;
+          if (c.deletedAt || seen.has(c.id)) continue;
+          seen.add(c.id);
+          // Alt konular "Konu › Alt Konu" olarak düzleştirilir (soru öner formu düz liste).
+          const byId = new Map(c.topics.map((t) => [t.id, t.name]));
+          courses.push({
+            id: c.id,
+            name: c.name,
+            topics: c.topics.map((t) => ({
+              id: t.id,
+              name: t.parentId ? `${byId.get(t.parentId) ?? ''} › ${t.name}` : t.name,
+            })),
+          });
+        }
+      }
+      return { id: e.id, name: e.name, courses };
+    });
   }
 
   async suggest(user: AuthenticatedUser, dto: SuggestQuestionDto) {

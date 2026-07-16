@@ -82,13 +82,22 @@ class CoursesScreen extends ConsumerWidget {
                           const SizedBox(height: AppSpacing.sm),
                       itemBuilder: (context, i) {
                         final c = list[i];
+                        // Bölüm başlığı dersten farklıysa alt satırda göster
+                        // (Doc 21: örn. "Anayasa ve İdare Hukuku" bölümü).
+                        final showSection =
+                            c.sectionName != null && c.sectionName != c.name;
                         return StaggeredReveal(
                           index: i,
                           child: Card(
                             child: ListTile(
                               title: Text(c.name),
-                              trailing:
-                                  const Icon(Icons.chevron_right_rounded),
+                              subtitle: showSection
+                                  ? Text(c.sectionName!)
+                                  : null,
+                              trailing: c.weightPercent != null &&
+                                      c.weightPercent! > 0
+                                  ? _WeightBadge(percent: c.weightPercent!)
+                                  : const Icon(Icons.chevron_right_rounded),
                               onTap: () => context.push(
                                   '/catalog/course/${c.id}',
                                   extra: c.name),
@@ -101,6 +110,29 @@ class CoursesScreen extends ConsumerWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Dersin sınavdaki ağırlık yüzdesi (Doc 21) — "% N" rozeti.
+class _WeightBadge extends StatelessWidget {
+  final int percent;
+  const _WeightBadge({required this.percent});
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      decoration: BoxDecoration(
+        color: scheme.secondaryContainer,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text('%$percent',
+          style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+              color: scheme.onSecondaryContainer)),
     );
   }
 }

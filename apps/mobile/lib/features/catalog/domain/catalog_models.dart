@@ -39,10 +39,24 @@ class CourseItem {
   final String id;
   final String name;
 
-  const CourseItem({required this.id, required this.name});
+  /// Müfredat bağlamı (Doc 21) — dersin sınavda göründüğü bölüm başlığı ve
+  /// ağırlığı. Eski API'de yok; null olabilir.
+  final String? sectionName;
+  final int? weightPercent;
 
-  factory CourseItem.fromJson(Map<String, dynamic> j) =>
-      CourseItem(id: j['id'] as String, name: j['name'] as String);
+  const CourseItem({
+    required this.id,
+    required this.name,
+    this.sectionName,
+    this.weightPercent,
+  });
+
+  factory CourseItem.fromJson(Map<String, dynamic> j) => CourseItem(
+        id: j['id'] as String,
+        name: j['name'] as String,
+        sectionName: j['sectionName'] as String?,
+        weightPercent: j['weightPercent'] as int?,
+      );
 }
 
 class TopicItem {
@@ -50,12 +64,22 @@ class TopicItem {
   final String name;
   final bool isPremium;
 
-  const TopicItem(
-      {required this.id, required this.name, required this.isPremium});
+  /// Alt konular (Doc 21 ağaç). Eski API'de yok; boş olabilir.
+  final List<TopicItem> children;
+
+  const TopicItem({
+    required this.id,
+    required this.name,
+    required this.isPremium,
+    this.children = const [],
+  });
 
   factory TopicItem.fromJson(Map<String, dynamic> j) => TopicItem(
         id: j['id'] as String,
         name: j['name'] as String,
         isPremium: j['isPremium'] as bool? ?? false,
+        children: (j['children'] as List<dynamic>? ?? const [])
+            .map((e) => TopicItem.fromJson(e as Map<String, dynamic>))
+            .toList(),
       );
 }

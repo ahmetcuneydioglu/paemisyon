@@ -8,6 +8,7 @@ import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../data/catalog_repository.dart';
+import '../domain/catalog_models.dart';
 
 /// Bir dersin konuları + ders geneli deneme sınavı girişi (Doc 12 §4c-5).
 class TopicsScreen extends ConsumerWidget {
@@ -52,28 +53,52 @@ class TopicsScreen extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: AppSpacing.md),
-                  ...list.map(
-                    (t) => Padding(
-                      padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-                      child: Card(
-                        child: ListTile(
-                          title: Text(t.name),
-                          trailing: t.isPremium
-                              ? const Icon(Icons.lock_rounded, size: 18)
-                              : const Icon(Icons.chevron_right_rounded),
-                          onTap: () {
-                            if (t.isPremium) {
-                              context.push('/paywall');
-                            } else {
-                              _showModeSheet(context, t.id, t.name);
-                            }
-                          },
-                        ),
-                      ),
-                    ),
-                  ),
+                  ...list.map((t) => Padding(
+                        padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+                        child: _topicCard(context, t),
+                      )),
                 ],
               ),
+      ),
+    );
+  }
+
+  /// Konu kartı: alt konusu varsa açılır liste (yapraklar tıklanır), yoksa
+  /// doğrudan tıklanabilir (Doc 21 ağaç).
+  Widget _topicCard(BuildContext context, TopicItem t) {
+    if (t.children.isEmpty) {
+      return Card(
+        child: ListTile(
+          title: Text(t.name),
+          trailing: t.isPremium
+              ? const Icon(Icons.lock_rounded, size: 18)
+              : const Icon(Icons.chevron_right_rounded),
+          onTap: () => t.isPremium
+              ? context.push('/paywall')
+              : _showModeSheet(context, t.id, t.name),
+        ),
+      );
+    }
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: ExpansionTile(
+        title: Text(t.name),
+        subtitle: Text('${t.children.length} alt konu',
+            style: Theme.of(context).textTheme.bodySmall),
+        childrenPadding: const EdgeInsets.only(bottom: AppSpacing.xs),
+        children: [
+          for (final c in t.children)
+            ListTile(
+              contentPadding: const EdgeInsets.only(left: AppSpacing.xl, right: AppSpacing.md),
+              title: Text(c.name),
+              trailing: c.isPremium
+                  ? const Icon(Icons.lock_rounded, size: 18)
+                  : const Icon(Icons.chevron_right_rounded),
+              onTap: () => c.isPremium
+                  ? context.push('/paywall')
+                  : _showModeSheet(context, c.id, c.name),
+            ),
+        ],
       ),
     );
   }
