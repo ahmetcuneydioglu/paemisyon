@@ -311,10 +311,14 @@ Her faz ayrı commit; her fazda jest + tsc + gerçek veri doğrulaması.
 ✅ **iOS** — Dersler (bölüm+ağırlık rozeti), Konular (alt konu ağacı). (`dc51028`)
 ✅ **Web** — publicCatalog müfredata bağlandı. (`dc51028`)
 
-⏳ **Faz D (contract)** — `courses.module_id` DROP. BİLİNÇLİ ERTELENDİ: canlı
-   panelde uçtan uca doğrulanmadan yapılmaz. Kolon şu an nullable ve zararsız
-   (kimse okumamalı). Doğrulama sonrası: seed'in eski Doc 20 taksonomi bloğu
-   (module_id ile ders yaratıyor) temizlenir + kolon düşürülür.
+✅ **Faz D (contract)** — `courses.module_id` DROP; seed'in eski taksonomi/dev
+   içerik blokları temizlendi; tükenmiş migration script'leri silindi. Dersler
+   tamamen küresel; bağ yalnız müfredat bölümleri üzerinden. (`24ef398`)
+✅ **Orphan temizliği** — faydasız 6 dev/göç dersi sorularıyla soft-delete;
+   havuz 12, orphan yok, 813 aktif soru. (`6e916a3`)
+
+**DOC 21 KAPANDI.** Sınav Türü → Bölüm → Ders → Konu → Alt Konu → Soru
+mimarisi API/admin/iOS/web'de canlı. Yeni sınav türü = veri satırı (migration yok).
 ⏳ **Sürükle-bırak sıralama** — şu an ▲▼ butonları (bağımlılıksız); istenirse
    @dnd-kit ile yükseltilir.
 ⏳ **Havuzdaki bölümsüz dersler** — Memur/Adli Yazı İşleri/Türkçe(dev)/A.Ö.F/
