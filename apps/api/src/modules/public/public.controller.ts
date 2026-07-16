@@ -30,6 +30,12 @@ export class PublicController {
     return this.service.lawBySlug(slug);
   }
 
+  /** Madde detayı (Doc 25 §4). :no madde slug'ıdır: "16", "4-a", "ek-6". */
+  @Get('laws/:slug/articles/:no')
+  article(@Param('slug') slug: string, @Param('no') no: string) {
+    return this.service.articleDetail(slug, no);
+  }
+
   @Get('exam-types/:key')
   examTypeGuide(@Param('key') key: string) {
     return this.service.examTypeGuide(key);

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { publicApi, type LawDetail, type LawSummary } from "@/lib/public-api";
+import { articleSlug, publicApi, type LawDetail, type LawSummary } from "@/lib/public-api";
 import { config } from "@/lib/config";
 
 export const revalidate = 3600;
@@ -112,21 +112,26 @@ export default async function KanunPage({ params }: { params: Params }) {
               const max = law.articles[0].questionCount;
               const ratio = max > 0 ? a.questionCount / max : 0;
               return (
-                <li key={a.no} className="flex items-center gap-3 text-sm">
-                  <span className="w-14 shrink-0 font-mono font-medium">m.{a.no}</span>
-                  <span className="h-2.5 flex-1 overflow-hidden rounded bg-gray-100">
-                    <span
-                      className="block h-full rounded"
-                      style={{
-                        width: `${Math.max(8, ratio * 100)}%`,
-                        background:
-                          ratio >= 0.6 ? "var(--tk-accent-atlas)" : "color-mix(in srgb, var(--tk-accent-atlas) 40%, transparent)",
-                      }}
-                    />
-                  </span>
-                  <span className="w-8 shrink-0 text-right text-gray-500">
-                    {a.questionCount}
-                  </span>
+                <li key={a.no}>
+                  <Link
+                    href={`/kanun/${slug}/madde/${articleSlug(a.no)}`}
+                    className="flex items-center gap-3 rounded px-1 py-0.5 text-sm transition hover:bg-gray-50"
+                  >
+                    <span className="w-14 shrink-0 font-mono font-medium">m.{a.no}</span>
+                    <span className="h-2.5 flex-1 overflow-hidden rounded bg-gray-100">
+                      <span
+                        className="block h-full rounded"
+                        style={{
+                          width: `${Math.max(8, ratio * 100)}%`,
+                          background:
+                            ratio >= 0.6 ? "var(--tk-accent-atlas)" : "color-mix(in srgb, var(--tk-accent-atlas) 40%, transparent)",
+                        }}
+                      />
+                    </span>
+                    <span className="w-8 shrink-0 text-right text-gray-500">
+                      {a.questionCount}
+                    </span>
+                  </Link>
                 </li>
               );
             })}

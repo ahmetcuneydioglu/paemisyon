@@ -222,6 +222,77 @@ export class PublicService {
     };
   }
 
+  /**
+   * Madde detayı (Doc 25 §4 — Madde Atlası). Cevap anahtarı SIZMAZ:
+   * kökler kısaltılmış teaser olarak döner (SEO içeriği + funnel).
+   * Resmî madde metni V2 (kanun metni içerik hattı ayrı iş).
+   */
+  async articleDetail(lawSlug: string, articleSlug_: string) {
+    const topics = await this.lawTopics();
+    const topic = topics.find((t) => slugify(t.name) === lawSlug);
+    if (!topic) throw new NotFoundException('Kanun sayfası bulunamadı.');
+
+    // Kanunun etiketli maddeleri (komşu gezinme + slug çözümü tek sorguda).
+    const groups = await this.prisma.question.groupBy({
+      by: ['articleNo'],
+      where: { topicId: topic.id, deletedAt: null, articleNo: { not: null } },
+      _count: { _all: true },
+    });
+    const all = groups
+      .map((g) => ({ no: g.articleNo!, questionCount: g._count._all }))
+      .sort((a, b) => articleOrder(a.no) - articleOrder(b.no));
+    const idx = all.findIndex((a) => articleSlug(a.no) === articleSlug_);
+    if (idx < 0) throw new NotFoundException('Madde bulunamadı.');
+    const current = all[idx];
+
+    // Bu maddenin soruları: kaynak dağılımı + ≤2 kısaltılmış kök önizlemesi.
+    const questions = await this.prisma.question.findMany({
+      where: {
+        topicId: topic.id,
+        deletedAt: null,
+        articleNo: current.no,
+        currentVersionId: { not: null },
+      },
+      orderBy: { createdAt: 'asc' },
+      select: { currentVersion: { select: { stem: true, sourceLabel: true } } },
+    });
+    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    const bySource = new Map<string, number>();
+    for (const q of questions) {
+      const s = q.currentVersion?.sourceLabel;
+      if (s) bySource.set(s, (bySource.get(s) ?? 0) + 1);
+    }
+
+    return {
+      lawSlug,
+      lawName: topic.name,
+      courseName: topic.course.name,
+      no: current.no,
+      slug: articleSlug(current.no),
+      questionCount: current.questionCount,
+      exams: this.examContexts(topic.course.sections),
+      /** Hangi sınavda kaç kez soruldu (kaynak etiketi dağılımı). */
+      sources: showSource
+        ? [...bySource.entries()].map(([source, count]) => ({ source, count }))
+        : [],
+      /** SEO teaser'ları — cevap/şık YOK, kök 160 karakterde kesilir. */
+      previews: questions.slice(0, 2).map((q) => truncate(q.currentVersion!.stem, 160)),
+      neighbors: {
+        prev: idx > 0 ? { no: all[idx - 1].no, slug: articleSlug(all[idx - 1].no) } : null,
+        next:
+          idx < all.length - 1
+            ? { no: all[idx + 1].no, slug: articleSlug(all[idx + 1].no) }
+            : null,
+      },
+      /** Kanunun tüm etiketli maddeleri (sayfa içi hızlı gezinme). */
+      siblings: all.map((a) => ({
+        no: a.no,
+        slug: articleSlug(a.no),
+        questionCount: a.questionCount,
+      })),
+    };
+  }
+
   // ── Sınav rehberi (SEO) ───────────────────────────────────────
   async examTypeGuide(key: string) {
     const examType = await this.prisma.examType.findFirst({
@@ -320,4 +391,16 @@ export class PublicService {
 function articleOrder(no: string): number {
   const n = parseInt(no, 10);
   return Number.isNaN(n) ? 10_000 : n;
+}
+
+/** Madde slug'ı: "4/A" → "4-a", "Ek 6" → "ek-6" (URL-güvenli, tersinir eşleşme). */
+export function articleSlug(no: string): string {
+  return no.toLocaleLowerCase('tr-TR').replace(/[\s/]+/g, '-');
+}
+
+/** Kök teaser'ı: kelime sınırında kes, tek satıra indir. */
+function truncate(s: string, max: number): string {
+  const flat = s.replace(/\s+/g, ' ').trim();
+  if (flat.length <= max) return flat;
+  return `${flat.slice(0, max).replace(/\s+\S*$/, '')}…`;
 }

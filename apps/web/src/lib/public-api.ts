@@ -66,6 +66,28 @@ export interface ExamGuide {
   }[];
 }
 
+/** Madde slug'ı — backend articleSlug ile birebir: "4/A" → "4-a", "Ek 6" → "ek-6". */
+export function articleSlug(no: string): string {
+  return no.toLocaleLowerCase("tr-TR").replace(/[\s/]+/g, "-");
+}
+
+export interface LawArticleDetail {
+  lawSlug: string;
+  lawName: string;
+  courseName: string;
+  no: string;
+  slug: string;
+  questionCount: number;
+  exams: ExamContext[];
+  sources: { source: string; count: number }[];
+  previews: string[];
+  neighbors: {
+    prev: { no: string; slug: string } | null;
+    next: { no: string; slug: string } | null;
+  };
+  siblings: { no: string; slug: string; questionCount: number }[];
+}
+
 // ── Koç (girişli ana sayfa) — /me/coach yanıtının web'de kullanılan kısmı ──
 export interface CoachBrief {
   greeting: { displayName: string | null; isPremium: boolean };
