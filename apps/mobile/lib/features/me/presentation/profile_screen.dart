@@ -22,10 +22,10 @@ class ProfileScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Profil & Ayarlar')),
       body: me.when(
         loading: () => const Padding(
-          padding: EdgeInsets.all(AppSpacing.lg),
+          padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(children: [
             LoadingSkeleton(height: 80),
-            SizedBox(height: AppSpacing.md),
+            SizedBox(height: AppSpacing.lg),
             LoadingSkeleton(height: 200),
           ]),
         ),
@@ -47,7 +47,7 @@ class _ProfileBody extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     return ListView(
-      padding: const EdgeInsets.all(AppSpacing.lg),
+      padding: const EdgeInsets.all(AppSpacing.xl),
       children: [
         // ── Kimlik kartı ──
         Card(
@@ -68,7 +68,7 @@ class _ProfileBody extends ConsumerWidget {
             ),
           ),
         ),
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.lg),
 
         // ── Abonelik ──
         Card(
@@ -88,7 +88,7 @@ class _ProfileBody extends ConsumerWidget {
             onTap: profile.isPremium ? null : () => context.push('/paywall'),
           ),
         ),
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.lg),
 
         // ── Hedef sınav ──
         Card(
@@ -100,7 +100,7 @@ class _ProfileBody extends ConsumerWidget {
             onTap: () => context.push('/onboarding'),
           ),
         ),
-        const SizedBox(height: AppSpacing.lg),
+        const SizedBox(height: AppSpacing.xl),
 
         // ── Çıkış ──
         OutlinedButton.icon(
@@ -108,7 +108,7 @@ class _ProfileBody extends ConsumerWidget {
           label: const Text('Çıkış yap'),
           onPressed: () => ref.read(authRepositoryProvider).signOut(),
         ),
-        const SizedBox(height: AppSpacing.lg),
+        const SizedBox(height: AppSpacing.xl),
 
         // ── KVKK hesap silme ──
         Text('Tehlikeli bölge', style: theme.textTheme.labelMedium),

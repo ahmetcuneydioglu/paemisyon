@@ -40,14 +40,14 @@ class HomeScreen extends ConsumerWidget {
       ),
       body: brief.when(
         loading: () => const Padding(
-          padding: EdgeInsets.all(AppSpacing.lg),
+          padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               LoadingSkeleton(height: 28, width: 200),
-              SizedBox(height: AppSpacing.md),
+              SizedBox(height: AppSpacing.lg),
               LoadingSkeleton(height: 130),
-              SizedBox(height: AppSpacing.md),
+              SizedBox(height: AppSpacing.lg),
               LoadingSkeleton(height: 72),
               SizedBox(height: AppSpacing.sm),
               LoadingSkeleton(height: 72),
@@ -115,7 +115,7 @@ class _CoachBody extends ConsumerWidget {
     var i = 0;
     return ListView(
       padding: const EdgeInsets.fromLTRB(
-          AppSpacing.md, AppSpacing.xs, AppSpacing.md, AppSpacing.xl),
+          AppSpacing.lg, AppSpacing.xs, AppSpacing.lg, AppSpacing.xxl),
       children: [
         // ── Selam + seri chip'i ──
         StaggeredReveal(
@@ -148,7 +148,7 @@ class _CoachBody extends ConsumerWidget {
             ],
           ),
         ),
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.lg),
 
         // ── Bugün hero'su: hedef halkası + tek birincil CTA ──
         StaggeredReveal(
@@ -187,14 +187,14 @@ class _CoachBody extends ConsumerWidget {
             child: _NextBadgeTile(badge: brief.nextBadge!, pal: pal),
           ),
         ],
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.lg),
 
         // ── Kompakt istatistik şeridi (detay → İlerlemem) ──
         StaggeredReveal(
           index: i++,
           child: _StatsStrip(brief: brief),
         ),
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.lg),
 
         // ── Hızlı erişim ──
         StaggeredReveal(
@@ -230,17 +230,17 @@ class _CoachBody extends ConsumerWidget {
 
         // ── Premium CTA (yalnızca free) ──
         if (!brief.isPremium) ...[
-          const SizedBox(height: AppSpacing.md),
+          const SizedBox(height: AppSpacing.lg),
           StaggeredReveal(
             index: i++,
             child: PressableScale(
               onTap: () => open('default', '/paywall'),
               child: Container(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+                    horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
                 decoration: BoxDecoration(
                   color: pal.proBg,
-                  borderRadius: BorderRadius.circular(AppSpacing.radius),
+                  borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
                 ),
                 child: Row(
                   children: [
@@ -328,7 +328,7 @@ class _TodayHero extends StatelessWidget {
         : 'Bugünkü hedefini tamamladın 🎉';
 
     return Container(
-      padding: const EdgeInsets.all(AppSpacing.md),
+      padding: const EdgeInsets.all(AppSpacing.lg),
       decoration: BoxDecoration(
         color: pal.heroBg,
         border: Border.all(color: pal.heroBorder),
@@ -349,7 +349,7 @@ class _TodayHero extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: AppSpacing.md),
+          const SizedBox(width: AppSpacing.lg),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -391,7 +391,7 @@ class _SectionHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.fromLTRB(
-            AppSpacing.xs, AppSpacing.md, AppSpacing.xs, AppSpacing.sm),
+            AppSpacing.xs, AppSpacing.lg, AppSpacing.xs, AppSpacing.sm),
         child: Text(
           label,
           style: TextStyle(
@@ -441,10 +441,10 @@ class _CoachCardTile extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
         padding: const EdgeInsets.symmetric(
-            horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+            horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
         decoration: BoxDecoration(
           border: Border.all(color: theme.colorScheme.outlineVariant),
-          borderRadius: BorderRadius.circular(AppSpacing.radius),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
         ),
         child: Row(
           children: [
@@ -494,10 +494,10 @@ class _NextBadgeTile extends StatelessWidget {
     final theme = Theme.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(
-          horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+          horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
       decoration: BoxDecoration(
         border: Border.all(color: theme.colorScheme.outlineVariant),
-        borderRadius: BorderRadius.circular(AppSpacing.radius),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
       ),
       child: Row(
         children: [
@@ -556,7 +556,7 @@ class _StatsStrip extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm + 2),
       decoration: BoxDecoration(
         border: Border.all(color: theme.colorScheme.outlineVariant),
-        borderRadius: BorderRadius.circular(AppSpacing.radius),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
       ),
       child: Row(
         children: [
@@ -588,7 +588,7 @@ class _QuickAction extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm + 4),
           decoration: BoxDecoration(
             border: Border.all(color: theme.colorScheme.outlineVariant),
-            borderRadius: BorderRadius.circular(AppSpacing.radius),
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           ),
           child: Column(
             children: [

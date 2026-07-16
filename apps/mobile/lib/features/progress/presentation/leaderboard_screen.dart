@@ -42,7 +42,7 @@ class _Board extends ConsumerWidget {
     final data = ref.watch(leaderboardProvider(period));
     return data.when(
       loading: () => ListView(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: const [
           LoadingSkeleton(height: 56),
           SizedBox(height: AppSpacing.sm),
@@ -65,7 +65,7 @@ class _Board extends ConsumerWidget {
                         'Henüz kimse puan almadı.\nİlk sırayı kapma şansı — soru çözmeye başla!',
                   )
                 : ListView.separated(
-                    padding: const EdgeInsets.all(AppSpacing.md),
+                    padding: const EdgeInsets.all(AppSpacing.lg),
                     itemCount: board.top.length,
                     separatorBuilder: (_, __) =>
                         const SizedBox(height: AppSpacing.xs),
@@ -77,9 +77,9 @@ class _Board extends ConsumerWidget {
           SafeArea(
             top: false,
             child: Container(
-              margin: const EdgeInsets.all(AppSpacing.md),
+              margin: const EdgeInsets.all(AppSpacing.lg),
               padding: const EdgeInsets.symmetric(
-                  horizontal: AppSpacing.md, vertical: AppSpacing.sm),
+                  horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primaryContainer,
                 borderRadius: BorderRadius.circular(12),

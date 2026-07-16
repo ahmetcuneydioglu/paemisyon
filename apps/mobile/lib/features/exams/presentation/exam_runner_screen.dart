@@ -176,10 +176,10 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
       return Scaffold(
         appBar: AppBar(title: const Text('Deneme')),
         body: const Padding(
-          padding: EdgeInsets.all(AppSpacing.lg),
+          padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(children: [
             LoadingSkeleton(height: 24, width: 160),
-            SizedBox(height: AppSpacing.md),
+            SizedBox(height: AppSpacing.lg),
             LoadingSkeleton(height: 200),
           ]),
         ),
@@ -203,13 +203,13 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
         ),
         body: ListView.builder(
           padding: const EdgeInsets.fromLTRB(
-              AppSpacing.md, AppSpacing.md, AppSpacing.md, 120),
+              AppSpacing.lg, AppSpacing.lg, AppSpacing.lg, 120),
           itemCount: exam.questions.length,
           itemBuilder: (context, i) => _questionTile(exam.questions[i], i + 1),
         ),
         bottomSheet: Container(
-          padding: EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.sm,
-              AppSpacing.md, AppSpacing.sm + MediaQuery.paddingOf(context).bottom),
+          padding: EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.sm,
+              AppSpacing.lg, AppSpacing.sm + MediaQuery.paddingOf(context).bottom),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.surface,
             border: Border(top: BorderSide(color: Theme.of(context).dividerColor)),
@@ -263,9 +263,9 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
     final selected = _answers[q.questionId];
     final scheme = Theme.of(context).colorScheme;
     return Card(
-      margin: const EdgeInsets.only(bottom: AppSpacing.md),
+      margin: const EdgeInsets.only(bottom: AppSpacing.lg),
       child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

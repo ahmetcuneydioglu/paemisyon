@@ -24,7 +24,7 @@ class ProgressScreen extends ConsumerWidget {
           ref.invalidate(topicProgressProvider);
         },
         child: ListView(
-          padding: const EdgeInsets.all(AppSpacing.md),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           children: [
             summary.when(
               loading: () => const LoadingSkeleton(height: 120),
@@ -34,7 +34,7 @@ class ProgressScreen extends ConsumerWidget {
               ),
               data: (s) => _SummaryCard(summary: s),
             ),
-            const SizedBox(height: AppSpacing.lg),
+            const SizedBox(height: AppSpacing.xl),
             Text('Konu ilerlemesi',
                 style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: AppSpacing.sm),
@@ -58,7 +58,7 @@ class ProgressScreen extends ConsumerWidget {
   Widget _topicTile(TopicProgressItem t) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -94,7 +94,7 @@ class _SummaryCard extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
+        padding: const EdgeInsets.all(AppSpacing.xl),
         child: Column(
           children: [
             Row(

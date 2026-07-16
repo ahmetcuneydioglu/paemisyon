@@ -45,10 +45,10 @@ class ExamsListScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Denemeler')),
       body: data.when(
         loading: () => ListView(
-          padding: const EdgeInsets.all(AppSpacing.md),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           children: const [
             LoadingSkeleton(height: 180),
-            SizedBox(height: AppSpacing.md),
+            SizedBox(height: AppSpacing.lg),
             LoadingSkeleton(height: 64),
             SizedBox(height: AppSpacing.sm),
             LoadingSkeleton(height: 64),
@@ -130,7 +130,7 @@ class _Sections extends ConsumerWidget {
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(
-          AppSpacing.md, AppSpacing.xs, AppSpacing.md, AppSpacing.xl),
+          AppSpacing.lg, AppSpacing.xs, AppSpacing.lg, AppSpacing.xxl),
       children: children,
     );
   }
@@ -163,7 +163,7 @@ class _SectionHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Padding(
         padding: const EdgeInsets.fromLTRB(
-            AppSpacing.xs, AppSpacing.md, AppSpacing.xs, AppSpacing.sm),
+            AppSpacing.xs, AppSpacing.lg, AppSpacing.xs, AppSpacing.sm),
         child: Text(
           label,
           style: TextStyle(
@@ -296,7 +296,7 @@ class _HeroExamCardState extends State<_HeroExamCard> {
       onTap: () => widget.onOpen(ctaPath),
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         decoration: BoxDecoration(
           color: pal.heroBg,
           border: Border.all(color: pal.heroBorder),
@@ -372,10 +372,10 @@ class _UpcomingRow extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.sm),
       padding: const EdgeInsets.symmetric(
-          horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+          horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
       decoration: BoxDecoration(
         border: Border.all(color: scheme.outlineVariant),
-        borderRadius: BorderRadius.circular(AppSpacing.radius),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
       ),
       child: Row(
         children: [
@@ -453,10 +453,10 @@ class _PastRow extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
         padding: const EdgeInsets.symmetric(
-            horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+            horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
         decoration: BoxDecoration(
           border: Border.all(color: scheme.outlineVariant),
-          borderRadius: BorderRadius.circular(AppSpacing.radius),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
         ),
         child: Row(
           children: [

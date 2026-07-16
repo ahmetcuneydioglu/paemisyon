@@ -296,14 +296,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       return Scaffold(
         appBar: AppBar(title: Text(widget.topicName)),
         body: const Padding(
-          padding: EdgeInsets.all(AppSpacing.lg),
+          padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               LoadingSkeleton(height: 20, width: 120),
-              SizedBox(height: AppSpacing.md),
+              SizedBox(height: AppSpacing.lg),
               LoadingSkeleton(height: 60),
-              SizedBox(height: AppSpacing.md),
+              SizedBox(height: AppSpacing.lg),
               LoadingSkeleton(height: 48),
               SizedBox(height: AppSpacing.sm),
               LoadingSkeleton(height: 48),
@@ -365,18 +365,18 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(AppSpacing.lg),
+          padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(_q.stem, style: Theme.of(context).textTheme.titleMedium),
-              const SizedBox(height: AppSpacing.lg),
+              const SizedBox(height: AppSpacing.xl),
               ..._q.options.map(_optionTile),
               if (_feedback?.explanation != null) ...[
-                const SizedBox(height: AppSpacing.md),
+                const SizedBox(height: AppSpacing.lg),
                 Card(
                   child: Padding(
-                    padding: const EdgeInsets.all(AppSpacing.md),
+                    padding: const EdgeInsets.all(AppSpacing.lg),
                     child: Text('Açıklama: ${_feedback!.explanation!}'),
                   ),
                 ),
@@ -388,7 +388,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
-              const SizedBox(height: AppSpacing.lg),
+              const SizedBox(height: AppSpacing.xl),
               _bottomButton(),
             ],
           ),

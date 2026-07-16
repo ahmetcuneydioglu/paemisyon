@@ -46,7 +46,7 @@ class CoursesScreen extends ConsumerWidget {
           // Hedef kartından uçan kimlik bloğu (aynı Hero tag'i).
           Padding(
             padding: const EdgeInsets.fromLTRB(
-                AppSpacing.md, AppSpacing.xs, AppSpacing.md, AppSpacing.sm),
+                AppSpacing.lg, AppSpacing.xs, AppSpacing.lg, AppSpacing.sm),
             child: Hero(
               tag: 'module-$moduleId',
               child: Material(
@@ -76,7 +76,7 @@ class CoursesScreen extends ConsumerWidget {
               data: (list) => list.isEmpty
                   ? const EmptyStateView(message: 'Bu modülde henüz ders yok.')
                   : ListView.separated(
-                      padding: const EdgeInsets.all(AppSpacing.md),
+                      padding: const EdgeInsets.all(AppSpacing.lg),
                       itemCount: list.length,
                       separatorBuilder: (_, __) =>
                           const SizedBox(height: AppSpacing.sm),
@@ -141,7 +141,7 @@ class _Skeleton extends StatelessWidget {
   const _Skeleton();
   @override
   Widget build(BuildContext context) => ListView.separated(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         itemCount: 4,
         separatorBuilder: (_, __) => const SizedBox(height: AppSpacing.sm),
         itemBuilder: (_, __) => const LoadingSkeleton(height: 56),

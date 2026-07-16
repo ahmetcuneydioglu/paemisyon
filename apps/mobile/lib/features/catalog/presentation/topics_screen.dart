@@ -31,7 +31,7 @@ class TopicsScreen extends ConsumerWidget {
         data: (list) => list.isEmpty
             ? const EmptyStateView(message: 'Bu derste henüz konu yok.')
             : ListView(
-                padding: const EdgeInsets.all(AppSpacing.md),
+                padding: const EdgeInsets.all(AppSpacing.lg),
                 children: [
                   // ── Ders geneli deneme sınavı (konular karışık, süreli) ──
                   Card(
@@ -52,7 +52,7 @@ class TopicsScreen extends ConsumerWidget {
                       }),
                     ),
                   ),
-                  const SizedBox(height: AppSpacing.md),
+                  const SizedBox(height: AppSpacing.lg),
                   ...list.map((t) => Padding(
                         padding: const EdgeInsets.only(bottom: AppSpacing.sm),
                         child: _topicCard(context, t),
@@ -89,7 +89,7 @@ class TopicsScreen extends ConsumerWidget {
         children: [
           for (final c in t.children)
             ListTile(
-              contentPadding: const EdgeInsets.only(left: AppSpacing.xl, right: AppSpacing.md),
+              contentPadding: const EdgeInsets.only(left: AppSpacing.xxl, right: AppSpacing.lg),
               title: Text(c.name),
               trailing: c.isPremium
                   ? const Icon(Icons.lock_rounded, size: 18)
@@ -114,7 +114,7 @@ class TopicsScreen extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
               child: Text(topicName,
                   style: Theme.of(ctx).textTheme.titleMedium,
                   maxLines: 1,
@@ -159,7 +159,7 @@ class _Skeleton extends StatelessWidget {
   const _Skeleton();
   @override
   Widget build(BuildContext context) => ListView.separated(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         itemCount: 5,
         separatorBuilder: (_, __) => const SizedBox(height: AppSpacing.sm),
         itemBuilder: (_, __) => const LoadingSkeleton(height: 56),

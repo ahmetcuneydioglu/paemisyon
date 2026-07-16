@@ -44,7 +44,7 @@ class _ReviewList extends ConsumerWidget {
     final data = ref.watch(provider);
     return data.when(
       loading: () => ListView(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: const [
           LoadingSkeleton(height: 56),
           SizedBox(height: AppSpacing.sm),
@@ -65,7 +65,7 @@ class _ReviewList extends ConsumerWidget {
                   : 'Henüz favori sorun yok.',
             )
           : ListView.separated(
-              padding: const EdgeInsets.all(AppSpacing.md),
+              padding: const EdgeInsets.all(AppSpacing.lg),
               itemCount: list.length,
               separatorBuilder: (_, __) =>
                   const SizedBox(height: AppSpacing.sm),

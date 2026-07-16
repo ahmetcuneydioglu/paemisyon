@@ -53,18 +53,18 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
+          padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: AppSpacing.lg),
+              const SizedBox(height: AppSpacing.xl),
               Text('Hoş geldin! 👋', style: theme.textTheme.headlineMedium),
               const SizedBox(height: AppSpacing.xs),
               Text(
                 'Hangi sınava hazırlanıyorsun? Ana ekranını hedefine göre düzenleyelim.',
                 style: theme.textTheme.bodyLarge,
               ),
-              const SizedBox(height: AppSpacing.lg),
+              const SizedBox(height: AppSpacing.xl),
               Expanded(
                 child: modules.when(
                   loading: () => const Column(children: [
@@ -91,7 +91,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                             : null,
                         child: ListTile(
                           contentPadding: const EdgeInsets.symmetric(
-                              horizontal: AppSpacing.md,
+                              horizontal: AppSpacing.lg,
                               vertical: AppSpacing.xs),
                           leading: Icon(
                             selected
@@ -113,7 +113,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: AppSpacing.md),
+              const SizedBox(height: AppSpacing.lg),
               PrimaryButton(
                 label: 'Devam Et',
                 loading: _busy,

@@ -157,10 +157,10 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
           ? ErrorStateView(message: _loadError!, onRetry: _load)
           : _plans == null
               ? const Padding(
-                  padding: EdgeInsets.all(AppSpacing.lg),
+                  padding: EdgeInsets.all(AppSpacing.xl),
                   child: Column(children: [
                     LoadingSkeleton(height: 96),
-                    SizedBox(height: AppSpacing.md),
+                    SizedBox(height: AppSpacing.lg),
                     LoadingSkeleton(height: 96),
                   ]),
                 )
@@ -170,7 +170,7 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
 
   Widget _content() {
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(AppSpacing.lg),
+      padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -181,17 +181,17 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             'Premium ile günlük soru sınırı kalkar, tüm premium konular açılır.',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
-          const SizedBox(height: AppSpacing.lg),
+          const SizedBox(height: AppSpacing.xl),
           if (!_iapAvailable)
             Padding(
-              padding: const EdgeInsets.only(bottom: AppSpacing.md),
+              padding: const EdgeInsets.only(bottom: AppSpacing.lg),
               child: Text(
                 'Mağaza şu an kullanılamıyor. Cihazda App Store hesabı / StoreKit yapılandırması gerekli.',
                 style: TextStyle(color: Theme.of(context).colorScheme.error),
               ),
             ),
           ..._plans!.map(_planCard),
-          const SizedBox(height: AppSpacing.lg),
+          const SizedBox(height: AppSpacing.xl),
           Text(
             'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.',
             style: Theme.of(context).textTheme.bodySmall,
@@ -216,10 +216,10 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     final anyBusy = _buyingKey != null;
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpacing.md),
+      padding: const EdgeInsets.only(bottom: AppSpacing.lg),
       child: Card(
         child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.md),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           child: Row(
             children: [
               Expanded(
@@ -239,7 +239,7 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                   ],
                 ),
               ),
-              const SizedBox(width: AppSpacing.md),
+              const SizedBox(width: AppSpacing.lg),
               FilledButton(
                 onPressed:
                     (!inStore || anyBusy) ? null : () => _buy(plan),

@@ -21,7 +21,7 @@ class ExamLeaderboardScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Sınav Sıralaması')),
       body: data.when(
         loading: () => const Padding(
-          padding: EdgeInsets.all(AppSpacing.md),
+          padding: EdgeInsets.all(AppSpacing.lg),
           child: Column(children: [
             LoadingSkeleton(height: 56),
             SizedBox(height: AppSpacing.sm),
@@ -50,7 +50,7 @@ class ExamLeaderboardScreen extends ConsumerWidget {
             children: [
               Expanded(
                 child: ListView.separated(
-                  padding: const EdgeInsets.all(AppSpacing.md),
+                  padding: const EdgeInsets.all(AppSpacing.lg),
                   itemCount: lb.top.length,
                   separatorBuilder: (_, __) => const SizedBox(height: AppSpacing.xs),
                   itemBuilder: (context, i) => _RankTile(row: lb.top[i]),
@@ -112,8 +112,8 @@ class _MyRank extends StatelessWidget {
     return SafeArea(
       top: false,
       child: Container(
-        margin: const EdgeInsets.all(AppSpacing.md),
-        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: AppSpacing.sm),
+        margin: const EdgeInsets.all(AppSpacing.lg),
+        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
         decoration: BoxDecoration(
           color: scheme.primaryContainer,
           borderRadius: BorderRadius.circular(12),

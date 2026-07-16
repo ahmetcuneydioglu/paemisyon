@@ -26,11 +26,11 @@ class ModulesScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Hedefini Seç')),
       body: modules.when(
         loading: () => const Padding(
-          padding: EdgeInsets.all(AppSpacing.md),
+          padding: EdgeInsets.all(AppSpacing.lg),
           child: Column(
             children: [
               Expanded(child: LoadingSkeleton(height: double.infinity)),
-              SizedBox(height: AppSpacing.md),
+              SizedBox(height: AppSpacing.lg),
               Expanded(child: LoadingSkeleton(height: double.infinity)),
             ],
           ),
@@ -63,7 +63,7 @@ class _GoalCards extends StatelessWidget {
 
     final header = Padding(
       padding: const EdgeInsets.fromLTRB(
-          AppSpacing.xs, AppSpacing.xs, AppSpacing.xs, AppSpacing.md),
+          AppSpacing.xs, AppSpacing.xs, AppSpacing.xs, AppSpacing.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -84,12 +84,12 @@ class _GoalCards extends StatelessWidget {
 
     if (!fillsScreen) {
       return ListView(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
           header,
           for (final c in cards) ...[
             SizedBox(height: 180, child: c),
-            const SizedBox(height: AppSpacing.md),
+            const SizedBox(height: AppSpacing.lg),
           ],
         ],
       );
@@ -97,13 +97,13 @@ class _GoalCards extends StatelessWidget {
 
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             header,
             for (final (i, c) in cards.indexed) ...[
-              if (i > 0) const SizedBox(height: AppSpacing.md),
+              if (i > 0) const SizedBox(height: AppSpacing.lg),
               Expanded(child: c),
             ],
           ],
@@ -162,7 +162,7 @@ class _GoalCard extends StatelessWidget {
         extra: {'name': module.name, 'key': module.key},
       ),
       child: Container(
-        padding: const EdgeInsets.all(AppSpacing.md + 4),
+        padding: const EdgeInsets.all(AppSpacing.lg + 4),
         decoration: BoxDecoration(
           color: id.bg,
           border: Border.all(color: id.border),

@@ -26,6 +26,57 @@
   --shadow-card: 0px 5px 14px 0px rgba(24, 23, 28, 0.05);
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Yeni tasarım dili token'ları (Doc 26 §3) — kaynak:
+   packages/tokens/design-tokens.json. YENİ ekranlar (koç, seans,
+   atlas, performans) bunları kullanır; yukarıdaki eski palet
+   "Denemeler mirası"dır ve kademeli emekli edilir.
+───────────────────────────────────────────────────────────── */
+:root {
+  --tk-brand: #1b3a6b;
+  --tk-surface: #ffffff;
+  --tk-surface-alt: #f4f6f9;
+  --tk-ink: #1a1c22;
+  --tk-ink-soft: #5b6070;
+  --tk-line: #e4e7ec;
+  --tk-success: #2e7d5b;
+  --tk-warning: #b98900;
+  --tk-danger: #c0392b;
+  --tk-accent-session: #378add;
+  --tk-accent-live: #1d9e75;
+  --tk-accent-streak: #854f0b;
+  --tk-accent-atlas: #534ab7;
+  --tk-radius-sm: 8px;
+  --tk-radius-md: 12px;
+  --tk-radius-lg: 20px;
+  --tk-motion-quick: 150ms;
+  --tk-motion-standard: 250ms;
+  --tk-ease-standard: cubic-bezier(0.65, 0, 0.35, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tk-brand: #85b7eb;
+    --tk-surface: #15171c;
+    --tk-surface-alt: #1d2027;
+    --tk-ink: #eceef2;
+    --tk-ink-soft: #9ba1af;
+    --tk-line: #2c3038;
+    --tk-success: #5dcaa5;
+    --tk-warning: #fac775;
+    --tk-danger: #e08578;
+    --tk-accent-session: #85b7eb;
+    --tk-accent-live: #5dcaa5;
+    --tk-accent-streak: #fac775;
+    --tk-accent-atlas: #cecbf6;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --tk-motion-quick: 0ms;
+    --tk-motion-standard: 0ms;
+  }
+}
+
 /* Icomoon — eski sitenin ikon fontu, birebir aynı glifler */
 @font-face {
   font-family: "icomoon";

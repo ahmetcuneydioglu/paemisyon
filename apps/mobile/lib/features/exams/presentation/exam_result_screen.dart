@@ -22,10 +22,10 @@ class ExamResultScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Sınav Sonucu')),
       body: result.when(
         loading: () => const Padding(
-          padding: EdgeInsets.all(AppSpacing.lg),
+          padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(children: [
             LoadingSkeleton(height: 90),
-            SizedBox(height: AppSpacing.md),
+            SizedBox(height: AppSpacing.lg),
             LoadingSkeleton(height: 200),
           ]),
         ),
@@ -50,7 +50,7 @@ class _Body extends StatelessWidget {
       children: [
         _Tiles(result: result),
         Padding(
-          padding: const EdgeInsets.all(AppSpacing.md),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           child: Row(
             children: [
               Expanded(
@@ -73,12 +73,12 @@ class _Body extends StatelessWidget {
         const Divider(),
         Padding(
           padding: const EdgeInsets.fromLTRB(
-              AppSpacing.md, AppSpacing.sm, AppSpacing.md, 0),
+              AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, 0),
           child: Text('Cevap İncelemesi',
               style: Theme.of(context).textTheme.titleMedium),
         ),
         ...result.review.map((q) => _ReviewTile(q: q)),
-        const SizedBox(height: AppSpacing.lg),
+        const SizedBox(height: AppSpacing.xl),
       ],
     );
   }
@@ -103,7 +103,7 @@ class _Tiles extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
+            padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
             child: Text(result.examTitle,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
@@ -116,7 +116,7 @@ class _Tiles extends StatelessWidget {
                 .map((t) => Expanded(
                       child: Container(
                         color: t.$3,
-                        padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
+                        padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
                         child: Column(
                           children: [
                             Text(t.$2,
@@ -148,9 +148,9 @@ class _ReviewTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final blank = q.selectedOptionId == null;
     return Card(
-      margin: const EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.sm, AppSpacing.md, 0),
+      margin: const EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, 0),
       child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.md),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

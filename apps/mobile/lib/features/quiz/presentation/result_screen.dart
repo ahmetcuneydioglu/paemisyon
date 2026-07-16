@@ -21,13 +21,13 @@ class ResultScreen extends StatelessWidget {
           AppBar(title: const Text('Sonuç'), automaticallyImplyLeading: false),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
+          padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: AppSpacing.xl),
+              const SizedBox(height: AppSpacing.xxl),
               Icon(Icons.emoji_events_rounded, size: 56, color: scheme.primary),
-              const SizedBox(height: AppSpacing.md),
+              const SizedBox(height: AppSpacing.lg),
               Text(
                 'Oturum tamamlandı 🎉',
                 textAlign: TextAlign.center,
@@ -39,10 +39,10 @@ class ResultScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              const SizedBox(height: AppSpacing.lg),
+              const SizedBox(height: AppSpacing.xl),
               Card(
                 child: Padding(
-                  padding: const EdgeInsets.all(AppSpacing.lg),
+                  padding: const EdgeInsets.all(AppSpacing.xl),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -70,15 +70,15 @@ class ResultScreen extends StatelessWidget {
               ),
               // ── Rozet kutlaması (Doc 19): bu oturumla kazanılanlar ──
               if (result.earnedBadges.isNotEmpty) ...[
-                const SizedBox(height: AppSpacing.md),
+                const SizedBox(height: AppSpacing.lg),
                 for (final b in result.earnedBadges)
                   Container(
                     margin: const EdgeInsets.only(bottom: AppSpacing.xs),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpacing.md, vertical: AppSpacing.sm),
+                        horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
                     decoration: BoxDecoration(
                       color: AccentPalette.of(context).proBg,
-                      borderRadius: BorderRadius.circular(AppSpacing.radius),
+                      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
                     ),
                     child: Row(
                       children: [
@@ -110,7 +110,7 @@ class ResultScreen extends StatelessWidget {
               // ── Deneme karnesi: konu bazlı kırılım (ders denemesinde) ──
               if (result.topicBreakdown != null &&
                   result.topicBreakdown!.isNotEmpty) ...[
-                const SizedBox(height: AppSpacing.md),
+                const SizedBox(height: AppSpacing.lg),
                 Expanded(
                   child: Card(
                     child: ListView(
@@ -143,7 +143,7 @@ class ResultScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: AppSpacing.md),
+                const SizedBox(height: AppSpacing.lg),
               ] else
                 const Spacer(),
               PrimaryButton(

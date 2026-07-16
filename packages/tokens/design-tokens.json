@@ -1,0 +1,34 @@
+{
+  "$description": "Paemisyon tasarım token'ları — TEK KAYNAK (Doc 26 §3). Flutter (apps/mobile/lib/core/theme/*) ve web (apps/web globals.css) bu dosyayla elle eşit tutulur; değer değişikliği üç yerde birden yapılır.",
+  "color": {
+    "brand": { "light": "#1B3A6B", "dark": "#85B7EB" },
+    "surface": { "light": "#FFFFFF", "dark": "#15171C" },
+    "surfaceAlt": { "light": "#F4F6F9", "dark": "#1D2027" },
+    "ink": { "light": "#1A1C22", "dark": "#ECEEF2" },
+    "inkSoft": { "light": "#5B6070", "dark": "#9BA1AF" },
+    "line": { "light": "#E4E7EC", "dark": "#2C3038" },
+    "success": { "light": "#2E7D5B", "dark": "#5DCAA5" },
+    "warning": { "light": "#B98900", "dark": "#FAC775" },
+    "danger": { "light": "#C0392B", "dark": "#E08578" },
+    "accentSession": { "light": "#378ADD", "dark": "#85B7EB" },
+    "accentLive": { "light": "#1D9E75", "dark": "#5DCAA5" },
+    "accentStreak": { "light": "#854F0B", "dark": "#FAC775" },
+    "accentAtlas": { "light": "#534AB7", "dark": "#CECBF6" }
+  },
+  "typography": {
+    "display": { "size": 32, "weight": 800, "tracking": -0.5, "lineHeight": 1.15 },
+    "title": { "size": 22, "weight": 700, "tracking": -0.2, "lineHeight": 1.2 },
+    "heading": { "size": 17, "weight": 600, "lineHeight": 1.35 },
+    "body": { "size": 15, "weight": 400, "lineHeight": 1.45 },
+    "label": { "size": 13, "weight": 600, "lineHeight": 1.2 },
+    "caption": { "size": 11, "weight": 500, "tracking": 0.66, "lineHeight": 1.2, "transform": "uppercase" }
+  },
+  "spacing": { "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "xxl": 32, "xxxl": 48 },
+  "radius": { "sm": 8, "md": 12, "lg": 20, "full": 999 },
+  "motion": {
+    "quick": { "ms": 150, "easing": "ease-out" },
+    "standard": { "ms": 250, "easing": "cubic-bezier(0.65, 0, 0.35, 1)" },
+    "celebrate": { "ms": 600, "easing": "spring" }
+  },
+  "a11y": { "minTouchTarget": 44, "minContrastText": 4.5, "minContrastLarge": 3.0 }
+}
