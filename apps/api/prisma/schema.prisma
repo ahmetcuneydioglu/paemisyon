@@ -282,6 +282,10 @@ model Topic {
 model Question {
   id               String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   topicId          String    @map("topic_id") @db.Uuid
+  // Madde Atlası (Doc 25 §4): sorunun bağlı olduğu kanun maddesi ("16", "4/A",
+  // "Ek 1", "Geçici 2"). Kanun = topic; madde bu etiketle çözülür. Import'ta
+  // otomatik tespit edilir (detectArticleNo), elle düzeltilebilir.
+  articleNo        String?   @map("article_no")
   currentVersionId String?   @unique @map("current_version_id") @db.Uuid
   createdAt        DateTime  @default(now()) @map("created_at")
   deletedAt        DateTime? @map("deleted_at")
@@ -293,6 +297,7 @@ model Question {
   examQuestions  ExamQuestion[]
 
   @@index([topicId])
+  @@index([topicId, articleNo])
   @@map("questions")
 }
 

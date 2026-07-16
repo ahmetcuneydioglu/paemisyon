@@ -185,6 +185,18 @@ export class PublicService {
     });
     const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
 
+    // ── Madde Isı Haritası (Doc 25 §4 — Türkiye'de eşi olmayan veri):
+    // bu kanunda hangi maddeden kaç soru çıkmış. Sayısal maddeler numaraya
+    // göre, Ek/Geçici sona sıralanır.
+    const articleGroups = await this.prisma.question.groupBy({
+      by: ['articleNo'],
+      where: { topicId: topic.id, deletedAt: null, articleNo: { not: null } },
+      _count: { _all: true },
+    });
+    const articles = articleGroups
+      .map((g) => ({ no: g.articleNo!, questionCount: g._count._all }))
+      .sort((a, b) => b.questionCount - a.questionCount || articleOrder(a.no) - articleOrder(b.no));
+
     // İlgili kanunlar: aynı dersten, kendisi hariç (iç bağlantı örgüsü).
     const related = topics
       .filter((t) => t.course.name === topic.course.name && t.id !== topic.id)
@@ -205,6 +217,7 @@ export class PublicService {
             source: showSource ? sample.currentVersion.sourceLabel : null,
           }
         : null,
+      articles,
       related,
     };
   }
@@ -301,4 +314,10 @@ export class PublicService {
         weightPercent: s.section.weightPercent,
       }));
   }
+}
+
+/** Madde sıralama anahtarı: sayısal maddeler önce, Ek/Geçici sona. */
+function articleOrder(no: string): number {
+  const n = parseInt(no, 10);
+  return Number.isNaN(n) ? 10_000 : n;
 }

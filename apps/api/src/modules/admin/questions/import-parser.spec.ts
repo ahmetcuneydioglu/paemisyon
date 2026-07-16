@@ -1,5 +1,5 @@
 import * as iconv from 'iconv-lite';
-import { decodeText, mapRows, normalizeHeader, parseCsv, parseImportFile } from './import-parser';
+import { decodeText, mapRows, normalizeHeader, parseCsv, detectArticleNo, parseImportFile } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
 
@@ -94,5 +94,35 @@ describe('parseImportFile', () => {
     const r = await parseImportFile(csv('Geçerli bir soru mu?;evet;hayır;;;;A;;orta'), 'sorular.csv');
     expect(r.valid).toHaveLength(1);
     expect(r.totalRows).toBe(1);
+  });
+});
+
+// ── Madde Atlası: madde tespiti (Doc 25 §4) ──
+
+describe('detectArticleNo', () => {
+  const cases: [string, string | null][] = [
+    // Gerçek kök kalıpları
+    ["2559 sayılı PVSK'nın 16'ncı maddesine göre zor kullanma...", '16'],
+    ['Polis Vazife ve Salâhiyet Kanunu madde 16 uyarınca...', '16'],
+    ["Anayasa'nın 19. maddesi kişi hürriyetini düzenler.", '19'],
+    ['657 sayılı Kanunun 125 inci maddesinde sayılan cezalar...', '125'],
+    ['PVSK m.16 kapsamında aşağıdakilerden hangisi...', '16'],
+    ['İlgili düzenleme md. 48 hükmündedir.', '48'],
+    // Harf ekli madde ↔ fıkra ayrımı
+    ["PVSK'nın 4/A maddesi durdurma yetkisini düzenler.", '4/A'],
+    ['Kanunun 16/2 maddesine göre...', '16'], // bölü-rakam = fıkra, atılır
+    ['madde 4/a uyarınca...', '4/A'], // harf büyütülür
+    // Ek / geçici maddeler
+    ['5442 sayılı Kanunun ek madde 6 hükmü...', 'Ek 6'],
+    ['Ek 1 inci madde kapsamında...', 'Ek 1'],
+    ['Anılan kanunun geçici madde 2 düzenlemesi...', 'Geçici 2'],
+    // Birden çok madde: İLK geçen kazanır
+    ['Kanunun 5. maddesi ile 13. maddesi birlikte...', '5'],
+    // Madde yok
+    ['Aşağıdaki dağlardan hangisi Kuzey Anadolu Dağları içinde yer almaz?', null],
+    ['1982 Anayasası hangi yılda kabul edilmiştir?', null],
+  ];
+  it.each(cases)('%s → %s', (stem, expected) => {
+    expect(detectArticleNo(stem)).toBe(expected);
   });
 });

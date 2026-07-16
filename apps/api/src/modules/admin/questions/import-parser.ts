@@ -80,6 +80,68 @@ export function questionFingerprint(stem: string, optionTexts: string[]): string
 }
 
 /**
+ * Soru kökünden kanun maddesi numarası çıkarır (Madde Atlası — Doc 25 §4).
+ * Saf fonksiyon; kanun bilgisi konudan gelir, burada YALNIZ madde aranır.
+ *
+ * Yakalanan kalıplar (gerçek MEB/ÖDSGM kökleri):
+ *  - "... Kanunu'nun 16'ncı maddesine göre", "16 ncı madde", "16. maddesi"
+ *  - "madde 16", "Madde 4/A"
+ *  - "m.16", "md. 16", "PVSK m. 16/2"
+ *  - "ek madde 6" → "Ek 6", "geçici madde 2" → "Geçici 2", "Ek 1 inci madde"
+ *
+ * Normalizasyon: harf ekleri büyütülür ("4/a" → "4/A"); fıkra atılır
+ * ("16/2" → "16" — bölü SONRASI rakamsa fıkradır, harfse ayrı maddedir).
+ * Birden çok madde geçiyorsa İLK geçen kazanır (kök tipik tek maddeye dayanır).
+ */
+export function detectArticleNo(stem: string): string | null {
+  const text = stem.replace(/[’‘‛ʼ′]/g, "'");
+  // Sıra: özgülden genele. Her desen (no, tip) yakalar; ilk konum kazanır.
+  const patterns: { re: RegExp; kind?: 'ek' | 'gecici' }[] = [
+    // "ek madde 6" / "geçici madde 2" / "ek 1 inci madde"
+    { re: /\bek\s+madde\s+(\d+[A-Za-zÇĞİÖŞÜçğıöşü]?)/giu, kind: 'ek' },
+    { re: /\bgeçici\s+madde\s+(\d+)/giu, kind: 'gecici' },
+    { re: /\bek\s+(\d+)\s*(?:'?\s*[iıuü]nc[iıuü])?\.?\s*madde/giu, kind: 'ek' },
+    { re: /\bgeçici\s+(\d+)\s*(?:'?\s*[iıuü]nc[iıuü])?\.?\s*madde/giu, kind: 'gecici' },
+    // "madde 16", "Madde 4/A"
+    { re: /\bmadde\s+(\d+(?:\/[0-9A-Za-zÇĞİÖŞÜçğıöşü]+)?)/giu },
+    // "16'ncı maddesi", "16 ncı madde", "16. madde", "16 üncü madde"
+    {
+      re: /\b(\d+(?:\/[0-9A-Za-zÇĞİÖŞÜçğıöşü]+)?)\s*(?:'?\s*(?:[iıuü]?nc[iıuü]))?\.?\s*madde/giu,
+    },
+    // "m.16", "md. 16"
+    { re: /\bmd?\.\s*(\d+(?:\/[0-9A-Za-zÇĞİÖŞÜçğıöşü]+)?)/giu },
+  ];
+
+  let best: { index: number; value: string } | null = null;
+  for (const { re, kind } of patterns) {
+    for (const m of text.matchAll(re)) {
+      const value = normalizeArticle(m[1], kind);
+      if (value == null) continue;
+      if (best === null || m.index! < best.index) {
+        best = { index: m.index!, value };
+      }
+    }
+  }
+  return best?.value ?? null;
+}
+
+function normalizeArticle(raw: string, kind?: 'ek' | 'gecici'): string | null {
+  let v = raw.trim();
+  const slash = v.indexOf('/');
+  if (slash >= 0) {
+    const suffix = v.slice(slash + 1);
+    // Bölü sonrası rakam = fıkra → at; harf = ayrı madde (4/A) → büyüt.
+    v = /^\d+$/.test(suffix)
+      ? v.slice(0, slash)
+      : `${v.slice(0, slash)}/${suffix.toLocaleUpperCase('tr-TR')}`;
+  }
+  if (!/^\d/.test(v)) return null;
+  if (kind === 'ek') return `Ek ${v}`;
+  if (kind === 'gecici') return `Geçici ${v}`;
+  return v;
+}
+
+/**
  * Soru kökünü konuların matchKeywords'lerine göre eşler (Doc 20 §2).
  * TÜM kökü tarar — kanun adı boşluk-doldurmalı soruda kökün sonunda geçebilir.
  * Birden çok eşleşmede EN UZUN keyword kazanır (en özgül konu). Yoksa null.

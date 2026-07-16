@@ -19,6 +19,8 @@ interface PreviewRow {
   suggestedTopicId: string | null;
   suggestedTopicName: string | null;
   matchedKeyword: string | null;
+  // Madde Atlası (Doc 25 §4): kökten tespit edilen madde no ("16", "4/A"…).
+  suggestedArticleNo: string | null;
   // Tekrar (mükerrer) tespiti (Doc 20 EK 2): bankada/dosyada zaten var mı.
   duplicate: { scope: 'bank' | 'batch'; where: string } | null;
 }
@@ -548,6 +550,14 @@ function ClassifyList({
                   {!isExcluded && !r.duplicate && r.matchedKeyword && (
                     <span className="shrink-0 rounded-full bg-indigo-50 px-2 py-0.5 text-[11px] text-indigo-600">
                       {r.matchedKeyword}
+                    </span>
+                  )}
+                  {!isExcluded && !r.duplicate && r.suggestedArticleNo && (
+                    <span
+                      className="shrink-0 rounded-full bg-violet-50 px-2 py-0.5 text-[11px] text-violet-700"
+                      title="Kökten tespit edilen kanun maddesi (Madde Atlası)"
+                    >
+                      m.{r.suggestedArticleNo}
                     </span>
                   )}
                   <div className="w-56 shrink-0">

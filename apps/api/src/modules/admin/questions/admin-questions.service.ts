@@ -6,6 +6,7 @@ import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertQuestionDto } from '../dto/upsert-question.dto';
 import {
+  detectArticleNo,
   parseImportFile,
   questionFingerprint,
   suggestTopic,
@@ -366,6 +367,8 @@ export class AdminQuestionsService {
         suggestedTopicId: s?.id ?? null,
         suggestedTopicName: s?.name ?? null,
         matchedKeyword: s?.matchedKeyword ?? null,
+        // Madde Atlası (Doc 25 §4): kökten madde tespiti — import'ta yazılır.
+        suggestedArticleNo: detectArticleNo(row.stem),
         duplicate,
       };
     });
@@ -449,6 +452,8 @@ export class AdminQuestionsService {
         data: rowsToInsert.map((r) => ({
           id: r.questionId,
           topicId: params.assignments[r.row.rowNo],
+          // Madde Atlası: otomatik tespit (null olabilir; elle düzeltilebilir).
+          articleNo: detectArticleNo(r.row.stem),
         })),
       });
       await tx.questionVersion.createMany({
