@@ -102,8 +102,16 @@ export class AiExplainService {
       remainingToday = await this.consumeDailyQuota(user.id);
     }
 
-    // 5) Üret + önbelleğe yaz.
-    const text = await this.generate(version, chosen.id);
+    // 5) Üret + önbelleğe yaz. Üretim BAŞARISIZSA rezerve edilen hak İADE
+    // edilir — kullanıcı sağlayıcı hatası yüzünden hak kaybetmez (canlıda
+    // yaşandı: 3 başarısız deneme 3 hak yemişti).
+    let text: string;
+    try {
+      text = await this.generate(version, chosen.id);
+    } catch (e) {
+      if (!user.isPremium) await this.refundDailyQuota(user.id);
+      throw e;
+    }
     await this.prisma.aiExplanation.upsert({
       where: {
         questionVersionId_chosenOptionId: {
@@ -142,6 +150,16 @@ export class AiExplainService {
       return FREE_DAILY_AI_LIMIT - created[0].ai_explanations_used;
     }
     return FREE_DAILY_AI_LIMIT - rows[0].ai_explanations_used;
+  }
+
+  /** Başarısız üretimde rezerve edilen hakkı geri ver (0'ın altına inmez). */
+  private async refundDailyQuota(userId: string): Promise<void> {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    await this.prisma.$executeRaw`
+      UPDATE daily_usage
+      SET ai_explanations_used = GREATEST(ai_explanations_used - 1, 0)
+      WHERE user_id = ${userId}::uuid AND usage_date = ${today}`;
   }
 
   private async generate(
@@ -202,7 +220,7 @@ export class AiExplainService {
     } catch (e) {
       this.logger.error(`AI açıklama üretilemedi: ${String(e)}`);
       throw new ServiceUnavailableException(
-        'AI açıklama şu an üretilemiyor — birazdan tekrar dene.',
+        'AI açıklama şu an üretilemiyor — birazdan tekrar dene. (Hakkın düşmedi.)',
       );
     }
   }
