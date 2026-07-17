@@ -48,6 +48,22 @@ class CatalogRepository {
       throw const ServerFailure();
     }
   }
+
+  /// Madde Atlası — fetih haritası (Doc 25 §4).
+  Future<TopicAtlas> getAtlas(String topicId) async {
+    try {
+      final res = await _dio
+          .get<Map<String, dynamic>>('/catalog/topics/$topicId/atlas');
+      return TopicAtlas.fromJson(
+          (res.data?['data'] as Map<String, dynamic>?) ?? const {});
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.connectionTimeout) {
+        throw const NetworkFailure();
+      }
+      throw const ServerFailure();
+    }
+  }
 }
 
 final catalogRepositoryProvider = Provider<CatalogRepository>(
@@ -78,4 +94,11 @@ final topicsProvider =
   // Kişisel katman (hakimiyet) içerir — kısa önbellek: seans sonrası tazelensin.
   _cacheFor(ref, const Duration(minutes: 1));
   return ref.watch(catalogRepositoryProvider).getTopics(courseId);
+});
+
+final atlasProvider =
+    FutureProvider.autoDispose.family<TopicAtlas, String>((ref, topicId) {
+  // Fetih durumu seans sonrası değişir — kısa önbellek.
+  _cacheFor(ref, const Duration(minutes: 1));
+  return ref.watch(catalogRepositoryProvider).getAtlas(topicId);
 });

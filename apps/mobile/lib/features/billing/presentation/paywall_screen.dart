@@ -7,6 +7,8 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../me/data/me_repository.dart';
@@ -169,19 +171,39 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   }
 
   Widget _content() {
+    final tokens = context.tokens;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Sınırsız soru, tüm içerik',
-              style: Theme.of(context).textTheme.headlineSmall),
+          // Doc 24 §11: premium "daha çok soru" değil, KOÇUN TAM BEYNİ.
+          Text('Koçunun tam beynini aç',
+              style: AppTypography.title.copyWith(color: tokens.ink)),
           const SizedBox(height: AppSpacing.xs),
           Text(
-            'Premium ile günlük soru sınırı kalkar, tüm premium konular açılır.',
-            style: Theme.of(context).textTheme.bodyMedium,
+            'Ücretsiz katman gerçek antrenman verir; Premium, seni tanıyan '
+            'antrenörün tamamıdır.',
+            style: AppTypography.body.copyWith(color: tokens.inkSoft),
           ),
-          const SizedBox(height: AppSpacing.xl),
+          const SizedBox(height: AppSpacing.lg),
+          _valueRow(Icons.all_inclusive_rounded,
+              'Sınırsız soru', 'Koç seni hiçbir gün durdurmaz.'),
+          _valueRow(Icons.psychology_rounded, 'Süresiz tekrar hafızası',
+              'Yanlışların asla unutulmaz — tam akıllı tekrar motoru.'),
+          _valueRow(Icons.auto_awesome_rounded, 'Sınırsız AI açıklaması',
+              '"Neden bu şık değil?" — istediğin kadar sor.'),
+          _valueRow(Icons.shield_rounded, 'Haftada 3 seri sigortası',
+              'Vardiya dostu: nöbet gecesi serini yakmaz.'),
+          _valueRow(Icons.lock_open_rounded, 'Tüm premium konular',
+              'Müfredatın tamamı, kilitsiz.'),
+          const SizedBox(height: AppSpacing.sm),
+          Text(
+            'Bir dershanenin günlük çayı parasına — seni tanıyan antrenör.',
+            style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: AppSpacing.lg),
           if (!_iapAvailable)
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.lg),
@@ -196,6 +218,32 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.',
             style: Theme.of(context).textTheme.bodySmall,
             textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _valueRow(IconData icon, String title, String sub) {
+    final tokens = context.tokens;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.md),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, size: 22, color: tokens.brand),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title,
+                    style: AppTypography.label.copyWith(color: tokens.ink)),
+                Text(sub,
+                    style:
+                        AppTypography.caption.copyWith(color: tokens.inkSoft)),
+              ],
+            ),
           ),
         ],
       ),

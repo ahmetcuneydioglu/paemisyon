@@ -1,4 +1,4 @@
-import { IsIn, IsInt, IsOptional, IsUUID, Max, Min } from 'class-validator';
+import { IsIn, IsInt, IsOptional, IsString, IsUUID, Max, MaxLength, Min } from 'class-validator';
 
 export class StartSessionDto {
   @IsIn(['practice', 'exam', 'daily']) // review sonraki dilimde
@@ -13,6 +13,12 @@ export class StartSessionDto {
   @IsOptional()
   @IsUUID()
   courseId?: string;
+
+  /// Madde Atlası (Doc 25 §4): topicId ile birlikte — havuzu tek maddeye daraltır.
+  @IsOptional()
+  @IsString()
+  @MaxLength(16)
+  articleNo?: string;
 
   @IsOptional()
   @IsInt()

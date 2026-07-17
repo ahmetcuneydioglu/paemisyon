@@ -15,6 +15,7 @@ class QuizRepository {
     required String mode,
     String? topicId,
     String? courseId,
+    String? articleNo,
     int count = 10,
   }) async {
     return _guard(() async {
@@ -24,6 +25,8 @@ class QuizRepository {
           'mode': mode,
           if (topicId != null) 'topicId': topicId,
           if (courseId != null) 'courseId': courseId,
+          // Madde Atlası (Doc 25 §4): maddeden seans.
+          if (articleNo != null) 'articleNo': articleNo,
           'questionCount': count,
         },
       );

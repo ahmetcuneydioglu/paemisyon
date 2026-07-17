@@ -14,6 +14,7 @@ import '../../features/exams/presentation/exam_result_screen.dart';
 import '../../features/exams/presentation/exam_runner_screen.dart';
 import '../../features/exams/presentation/exams_list_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
+import '../../features/catalog/presentation/atlas_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
@@ -97,9 +98,21 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           return QuizScreen(
             topicId: args['topicId'] as String?,
             courseId: args['courseId'] as String?,
+            articleNo: args['articleNo'] as String?,
             topicName: args['topicName'] as String,
             mode: args['mode'] as String,
             questionCount: args['count'] as int? ?? 10,
+          );
+        },
+      ),
+      // Madde Atlası — fetih haritası (Doc 25 §4).
+      GoRoute(
+        path: '/atlas',
+        builder: (context, state) {
+          final args = state.extra as Map<String, dynamic>;
+          return AtlasScreen(
+            topicId: args['topicId'] as String,
+            topicName: args['topicName'] as String? ?? 'Kanun',
           );
         },
       ),

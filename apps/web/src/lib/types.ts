@@ -30,6 +30,15 @@ export interface AttemptResult {
   score: number | null;
   durationSeconds: number | null;
   completedAt: string | null;
+  /** Derin analiz (wireframe 08): konu kırılımı — en çok kaybettiren üstte. */
+  topicBreakdown?: {
+    topicId: string;
+    topicName: string;
+    correct: number;
+    wrong: number;
+    blank: number;
+    total: number;
+  }[];
   review: ReviewQuestion[];
 }
 export interface RankRow {

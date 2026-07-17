@@ -172,8 +172,12 @@ class _Body extends ConsumerWidget {
           ? context.push('/paywall')
           : _showModeSheet(context, t.id, t.name);
 
-  /// Konuya dokununca mod seçimi: alıştırma / konu denemesi.
+  /// Konuya dokununca mod seçimi: alıştırma / konu denemesi (+ kanunlarda Atlas).
   void _showModeSheet(BuildContext context, String topicId, String topicName) {
+    // Kanun/yönetmelik konusu mu? (public.service LAW_NAME_RE ile aynı desen)
+    final isLaw =
+        RegExp('sayılı|kanun|yönetmeli|khk|mevzuat', caseSensitive: false)
+            .hasMatch(topicName);
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
@@ -189,6 +193,20 @@ class _Body extends ConsumerWidget {
                   overflow: TextOverflow.ellipsis),
             ),
             const SizedBox(height: AppSpacing.sm),
+            if (isLaw)
+              ListTile(
+                leading: const Icon(Icons.map_rounded),
+                title: const Text('Madde Atlası'),
+                subtitle:
+                    const Text('Fetih haritası — kanunu madde madde temizle'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  context.push('/atlas', extra: {
+                    'topicId': topicId,
+                    'topicName': topicName,
+                  });
+                },
+              ),
             ListTile(
               leading: const Icon(Icons.school_rounded),
               title: const Text('Alıştırma'),

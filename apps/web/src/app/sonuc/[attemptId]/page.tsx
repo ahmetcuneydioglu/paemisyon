@@ -45,9 +45,75 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
     throw e;
   }
 
+  const breakdown = result.topicBreakdown ?? [];
+  const losers = breakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 3);
+  const lostTotal = breakdown.reduce((s, t) => s + t.wrong + t.blank, 0);
+  const lostInTop3 = losers.reduce((s, t) => s + t.wrong + t.blank, 0);
+
   return (
     <div>
       <ResultTiles result={result} />
+
+      {/* Derin analiz (wireframe 08): ilk kart KONTROL EDİLEBİLİRLİK verir —
+          sıralama değil, "kaybın nereden ve kapatılabilir" bilgisi. */}
+      {losers.length > 0 && (
+        <div className="mx-auto max-w-3xl px-4 pt-6">
+          <div className="rounded-xl border border-gray-200 bg-white p-5">
+            <p className="mb-1 text-sm font-bold text-(--color-navy)">Koç</p>
+            <p className="mb-4 text-sm text-gray-600">
+              {lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
+                ? `Kaybının %${Math.round((lostInTop3 / lostTotal) * 100)}'i ${losers.length} konudan — hepsi kapatılabilir:`
+                : "Kaybın konulara dağılmış — en çok kaybettirenler:"}
+            </p>
+            <ul className="space-y-2">
+              {losers.map((t) => (
+                <li
+                  key={t.topicId}
+                  className="flex items-center justify-between gap-3 border-b border-dashed border-gray-200 pb-2 text-sm last:border-0 last:pb-0"
+                >
+                  <span className="min-w-0 flex-1 truncate">{t.topicName}</span>
+                  <span className="shrink-0 text-gray-500">
+                    {t.wrong > 0 && `${t.wrong} yanlış`}
+                    {t.wrong > 0 && t.blank > 0 && " · "}
+                    {t.blank > 0 && `${t.blank} boş`}
+                    <span className="text-gray-400"> / {t.total}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-xs text-gray-400">
+              Bu konuların kapatma seansları uygulamada seni bekliyor — yanlışların
+              tekrar kuyruğuna eklendi.
+            </p>
+          </div>
+
+          {/* Tam konu kırılımı */}
+          {breakdown.length > losers.length && (
+            <details className="mt-3 rounded-xl border border-gray-200 bg-white p-5 text-sm">
+              <summary className="cursor-pointer font-bold text-(--color-navy)">
+                Tüm konu kırılımı ({breakdown.length} konu)
+              </summary>
+              <ul className="mt-3 space-y-1.5">
+                {breakdown.map((t) => (
+                  <li key={t.topicId} className="flex items-center gap-3">
+                    <span className="min-w-0 flex-1 truncate">{t.topicName}</span>
+                    <span className="h-2 w-28 shrink-0 overflow-hidden rounded bg-gray-100">
+                      <span
+                        className="block h-full rounded bg-(--color-green)"
+                        style={{ width: `${(t.correct / Math.max(1, t.total)) * 100}%` }}
+                      />
+                    </span>
+                    <span className="w-12 shrink-0 text-right text-gray-500">
+                      {t.correct}/{t.total}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      )}
+
       <div className="mx-auto max-w-3xl px-4 pt-6 text-center">
         <div className="flex flex-wrap justify-center gap-2">
           <Link href={`/siralama/${result.exam.id}`} className="btn-old btn-old-navy">

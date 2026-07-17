@@ -71,7 +71,13 @@ export class QuizService {
           message: 'Bu konu premium içeriktir.',
         });
       }
-      poolWhere = { topicId: dto.topicId, deletedAt: null, currentVersionId: { not: null } };
+      poolWhere = {
+        topicId: dto.topicId,
+        deletedAt: null,
+        currentVersionId: { not: null },
+        // Madde Atlası: maddeden seans — havuz tek maddeye daralır.
+        ...(dto.articleNo ? { articleNo: dto.articleNo } : {}),
+      };
     } else if (dto.courseId != null) {
       // Ders geneli: dersin konularından karışık havuz; free kullanıcıya
       // premium konuların soruları dahil edilmez (sızdırma yok).

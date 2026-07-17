@@ -25,6 +25,7 @@ import '../domain/quiz_models.dart';
 class QuizScreen extends ConsumerStatefulWidget {
   final String? topicId;
   final String? courseId; // ders geneli deneme
+  final String? articleNo; // Madde Atlası: maddeden seans (Doc 25 §4)
   final String topicName;
   final String mode; // 'practice' | 'exam'
   final int questionCount;
@@ -32,6 +33,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     super.key,
     this.topicId,
     this.courseId,
+    this.articleNo,
     required this.topicName,
     required this.mode,
     this.questionCount = 10,
@@ -83,6 +85,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             mode: widget.mode,
             topicId: widget.topicId,
             courseId: widget.courseId,
+            articleNo: widget.articleNo,
             count: widget.questionCount,
           );
       setState(() {
@@ -163,21 +166,25 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     await _advance();
   }
 
+  /// Kibar duvar (Doc 25 akış H): flow cezalandırılmaz, koç çerçevesi kullanılır.
   Future<void> _showPaywall(String message) async {
     if (!mounted) return;
     final go = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
         icon: const Icon(Icons.workspace_premium_rounded),
-        title: const Text('Günlük hakkın doldu'),
-        content: Text(message),
+        title: const Text('Koç seni durdurmak istemiyor'),
+        content: Text(
+          'Bugünkü ücretsiz hakkın doldu — tam ısınmışken. '
+          'Premium ile koç seni hiçbir gün durdurmaz.\n\n$message',
+        ),
         actions: [
           TextButton(
               onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Sonra')),
+              child: const Text('Yarın devam ederim')),
           FilledButton(
               onPressed: () => Navigator.pop(ctx, true),
-              child: const Text("Premium'a Geç")),
+              child: const Text('Premium ile sürdür')),
         ],
       ),
     );

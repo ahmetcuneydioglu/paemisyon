@@ -32,4 +32,14 @@ export class CatalogController {
   topic(@Param('id', ParseUUIDPipe) id: string) {
     return this.catalog.getTopic(id);
   }
+
+  /// Madde Atlası — fetih haritası (Doc 25 §4): konunun etiketli maddeleri +
+  /// kullanıcının madde bazlı fetih durumu.
+  @Get('topics/:id/atlas')
+  atlas(
+    @Param('id', ParseUUIDPipe) id: string,
+    @CurrentUser() user: AuthenticatedUser,
+  ) {
+    return this.catalog.getTopicAtlas(id, user.id);
+  }
 }

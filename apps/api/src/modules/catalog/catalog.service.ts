@@ -161,6 +161,54 @@ export class CatalogService {
     };
   }
 
+  /**
+   * Madde Atlası — fetih haritası (Doc 25 §4, Doc 24 §10 fikir 2).
+   * Fetih tanımı: maddenin TÜM yayındaki soruları en az bir kez DOĞRU
+   * cevaplanmış. Kısmi ilerleme de döner (clearedCount/questionCount).
+   */
+  async getTopicAtlas(topicId: string, userId: string) {
+    const topic = await this.prisma.topic.findFirst({
+      where: { id: topicId, deletedAt: null },
+      select: { id: true, name: true },
+    });
+    if (!topic) throw new NotFoundException('Konu bulunamadı.');
+
+    const rows = await this.prisma.$queryRaw<
+      { article_no: string; cnt: number; cleared: number }[]
+    >`
+      SELECT q.article_no,
+             COUNT(DISTINCT q.id)::int AS cnt,
+             COUNT(DISTINCT CASE WHEN ca.question_id IS NOT NULL THEN q.id END)::int AS cleared
+      FROM questions q
+      LEFT JOIN (
+        SELECT DISTINCT qa.question_id
+        FROM quiz_answers qa
+        JOIN quiz_sessions qs ON qs.id = qa.session_id AND qs.user_id = ${userId}::uuid
+        WHERE qa.is_correct = true
+      ) ca ON ca.question_id = q.id
+      WHERE q.topic_id = ${topicId}::uuid
+        AND q.deleted_at IS NULL
+        AND q.current_version_id IS NOT NULL
+        AND q.article_no IS NOT NULL
+      GROUP BY q.article_no`;
+
+    const articles = rows
+      .map((r) => ({
+        no: r.article_no,
+        questionCount: r.cnt,
+        clearedCount: r.cleared,
+        conquered: r.cleared >= r.cnt,
+      }))
+      .sort((a, b) => atlasOrder(a.no) - atlasOrder(b.no));
+
+    return {
+      topicId: topic.id,
+      topicName: topic.name,
+      articles,
+      conqueredCount: articles.filter((a) => a.conquered).length,
+    };
+  }
+
   async getTopic(id: string) {
     const topic = await this.prisma.topic.findFirst({
       where: { id, deletedAt: null },
@@ -174,4 +222,10 @@ export class CatalogService {
     });
     return { ...topic, questionCount };
   }
+}
+
+/** Madde sıralama anahtarı: sayısal maddeler numaraya göre, Ek/Geçici sona. */
+function atlasOrder(no: string): number {
+  const n = parseInt(no, 10);
+  return Number.isNaN(n) ? 10_000 : n;
 }

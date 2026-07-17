@@ -92,6 +92,53 @@ class TopicItem {
       );
 }
 
+/// Madde Atlası (Doc 25 §4): konunun etiketli maddeleri + fetih durumu.
+class TopicAtlas {
+  final String topicId;
+  final String topicName;
+  final List<AtlasArticle> articles;
+  final int conqueredCount;
+
+  const TopicAtlas({
+    required this.topicId,
+    required this.topicName,
+    required this.articles,
+    required this.conqueredCount,
+  });
+
+  factory TopicAtlas.fromJson(Map<String, dynamic> j) => TopicAtlas(
+        topicId: j['topicId'] as String,
+        topicName: j['topicName'] as String,
+        articles: (j['articles'] as List<dynamic>? ?? const [])
+            .map((e) => AtlasArticle.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        conqueredCount: j['conqueredCount'] as int? ?? 0,
+      );
+}
+
+class AtlasArticle {
+  final String no;
+  final int questionCount;
+  final int clearedCount;
+
+  /// Fetih: maddenin TÜM soruları en az bir kez doğru cevaplandı.
+  final bool conquered;
+
+  const AtlasArticle({
+    required this.no,
+    required this.questionCount,
+    required this.clearedCount,
+    required this.conquered,
+  });
+
+  factory AtlasArticle.fromJson(Map<String, dynamic> j) => AtlasArticle(
+        no: j['no'] as String,
+        questionCount: j['questionCount'] as int? ?? 0,
+        clearedCount: j['clearedCount'] as int? ?? 0,
+        conquered: j['conquered'] as bool? ?? false,
+      );
+}
+
 /// Ders öğrenme merkezi yanıtı: konu ağacı + kişisel özet (Doc 25 wireframe 05).
 class CourseTopics {
   final List<TopicItem> topics;

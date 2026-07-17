@@ -222,6 +222,37 @@ export class ExamsService {
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
     }));
 
+    // Derin analiz (Doc 25 wireframe 08): konu bazlı kırılım — "kaybın nereden?"
+    // İlk kart kontrol edilebilirlik verir: en çok kaybettiren konular üstte.
+    const topicOf = new Map(
+      (
+        await this.prisma.question.findMany({
+          where: { id: { in: review.map((q) => q.questionId) } },
+          select: { id: true, topic: { select: { id: true, name: true } } },
+        })
+      ).map((q) => [q.id, q.topic]),
+    );
+    const byTopic = new Map<
+      string,
+      { topicId: string; topicName: string; correct: number; wrong: number; blank: number; total: number }
+    >();
+    for (const q of review) {
+      const topic = topicOf.get(q.questionId);
+      if (!topic) continue;
+      const b =
+        byTopic.get(topic.id) ??
+        { topicId: topic.id, topicName: topic.name, correct: 0, wrong: 0, blank: 0, total: 0 };
+      const a = answerOf.get(q.questionId);
+      b.total++;
+      if (a?.isCorrect === true) b.correct++;
+      else if (a?.selectedOptionId != null) b.wrong++;
+      else b.blank++;
+      byTopic.set(topic.id, b);
+    }
+    const topicBreakdown = [...byTopic.values()].sort(
+      (a, b) => b.wrong + b.blank - (a.wrong + a.blank) || b.total - a.total,
+    );
+
     return {
       attemptId: session.id,
       exam: {
@@ -237,6 +268,7 @@ export class ExamsService {
       score: fresh.score != null ? Number(fresh.score) : null, // NET (doğru − yanlış/4)
       durationSeconds: fresh.durationSeconds,
       completedAt: fresh.completedAt,
+      topicBreakdown,
       review,
     };
   }
