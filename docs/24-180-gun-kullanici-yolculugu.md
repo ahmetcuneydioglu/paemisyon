@@ -492,7 +492,9 @@ Her adım kendi planı ve onayıyla gelir; bu doküman yol haritasıdır, sözle
 | 3 | Onboarding: İlk Devriye | ✅ | 3 soru (sınav/tarih/süre) + 10 soruluk karışık teşhis + konu karnesi |
 | 4 | Seri sigortası | ✅ | haftada 1 (premium 3), yalnız TAM 1 gün boşluk; streak.logic saf+11 test |
 | 4b | Bildirim disiplini | ⏳ | cihaz doğrulaması gerektirir — hazır görev çipi açıldı (yerel v1); sunucu push ayrı iş |
-| 5 | Madde Atlası v1 | ✅ | etiketleme+tespit+backfill+ısı haritası+madde sayfası; fetih haritası mobil UI sonraki |
+| 5 | Madde Atlası v1 | ✅ | etiketleme+tespit+backfill+ısı haritası+madde sayfası; fetih haritası mobil (AtlasScreen: fetih çipleri + maddeden seans) |
 | 6 | Rütbe sistemi | ✅ | 8 rütbe, puan=çözülen+15×aktif gün; RankInsignia Bugün'de |
 | 7 | AI Faz 2: yanlış açıklaması | ✅ | önbellek-önce, free günde 3; ANTHROPIC_API_KEY Railway'e girilince canlı |
-| 7b | Premium paketleme | ⏳ | AI limiti + sigorta farkı kodda; paywall ekran metinleri Doc 24 §11 tablosuna göre ayrı iş |
+| 7b | Premium paketleme | ✅ | paywall 'koçun tam beyni' değer listesi + limit diyaloğu 'koç seni durdurmak istemiyor' (Doc 25 akış H) |
+| — | Deneme derin analizi (wireframe 08) | ✅ | attempt sonucuna topicBreakdown; web'de koç kartı 'kaybın %X'i 3 konudan' + tam kırılım |
+| — | Lansman engeli: free limit | ✅ | prod plans.free.dailyQuestionLimit 1000 → 15 (17 Tem) |
