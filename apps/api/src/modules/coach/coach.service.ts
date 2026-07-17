@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft } from '../progress/streak.logic';
+import { computeRank, rankScore } from './rank.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import { coachRules, motivationRule } from './rules';
 
@@ -83,6 +84,7 @@ export class CoachService {
       },
       gamification: {
         nextBadge: ctx.nextBadge,
+        rank: computeRank(rankScore(ctx.stats.totalSolved, ctx.activeDaysTotal)),
         records: {
           bestNet: ctx.exams.bestNet,
           longestStreak: ctx.streak.longest,
@@ -116,6 +118,7 @@ export class CoachService {
       badgeCatalog,
       earnedBadges,
       weeklyActive,
+      activeDaysTotal,
       maxDaily,
       snapshots,
       recentUsage,
@@ -178,6 +181,10 @@ export class CoachService {
           usageDate: { gte: weekStart },
           questionsAnswered: { gt: 0 },
         },
+      }),
+      // Toplam aktif gün (rütbe puanı — Doc 24 §5).
+      this.prisma.dailyUsage.count({
+        where: { userId: user.id, questionsAnswered: { gt: 0 } },
       }),
       this.prisma.dailyUsage.aggregate({
         where: { userId: user.id },
@@ -349,6 +356,7 @@ export class CoachService {
       dailyQuizPlayed: dailySession?.status === 'completed',
       nextBadge,
       weekly: { activeDays: weeklyActive, goalDays: WEEKLY_GOAL_DAYS },
+      activeDaysTotal,
       maxDailyQuestions: maxDaily._max.questionsAnswered ?? 0,
       courseTrend,
       daysSinceLastActivity: daysSince,

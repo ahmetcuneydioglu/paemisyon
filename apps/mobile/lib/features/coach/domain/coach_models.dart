@@ -40,6 +40,55 @@ class CoachCard {
       );
 }
 
+/// Rütbe (Doc 24 §5): meslek diliyle ilerleme — puan = çözülen + 15×aktif gün.
+class RankInfo {
+  final int level;
+  final String name;
+  final int score;
+  final int minScore;
+  final RankNext? next;
+
+  const RankInfo({
+    required this.level,
+    required this.name,
+    required this.score,
+    required this.minScore,
+    this.next,
+  });
+
+  /// Sonraki rütbeye ilerleme (0-1); son rütbede 1.
+  double get progressToNext {
+    if (next == null) return 1;
+    final span = next!.minScore - minScore;
+    if (span <= 0) return 1;
+    return ((score - minScore) / span).clamp(0.0, 1.0);
+  }
+
+  factory RankInfo.fromJson(Map<String, dynamic> j) => RankInfo(
+        level: j['level'] as int? ?? 1,
+        name: j['name'] as String? ?? 'Aday',
+        score: j['score'] as int? ?? 0,
+        minScore: j['minScore'] as int? ?? 0,
+        next: j['next'] != null
+            ? RankNext.fromJson(j['next'] as Map<String, dynamic>)
+            : null,
+      );
+}
+
+class RankNext {
+  final int level;
+  final String name;
+  final int minScore;
+  const RankNext(
+      {required this.level, required this.name, required this.minScore});
+
+  factory RankNext.fromJson(Map<String, dynamic> j) => RankNext(
+        level: j['level'] as int,
+        name: j['name'] as String,
+        minScore: j['minScore'] as int,
+      );
+}
+
 class NextBadge {
   final String key;
   final String name;
@@ -88,6 +137,7 @@ class CoachBrief {
   final int totalSessions;
 
   final NextBadge? nextBadge;
+  final RankInfo? rank;
   final int weeklyActiveDays;
   final int weeklyGoalDays;
 
@@ -110,6 +160,7 @@ class CoachBrief {
     required this.accuracy,
     required this.totalSessions,
     required this.nextBadge,
+    this.rank,
     required this.weeklyActiveDays,
     required this.weeklyGoalDays,
   });
@@ -144,6 +195,9 @@ class CoachBrief {
       totalSessions: stats['totalSessions'] as int? ?? 0,
       nextBadge: gami['nextBadge'] != null
           ? NextBadge.fromJson(gami['nextBadge'] as Map<String, dynamic>)
+          : null,
+      rank: gami['rank'] != null
+          ? RankInfo.fromJson(gami['rank'] as Map<String, dynamic>)
           : null,
       weeklyActiveDays: weekly['activeDays'] as int? ?? 0,
       weeklyGoalDays: weekly['goalDays'] as int? ?? 5,

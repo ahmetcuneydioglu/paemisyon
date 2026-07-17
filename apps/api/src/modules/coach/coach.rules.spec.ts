@@ -48,6 +48,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     maxDailyQuestions: 0,
     courseTrend: null,
     daysSinceLastActivity: 0,
+    activeDaysTotal: 0,
     daysToExam: null,
     volume: { last7: 0, prev7: 0 },
     ...over,

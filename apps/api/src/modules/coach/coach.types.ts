@@ -108,6 +108,8 @@ export interface CoachContext {
   /** Kazanılmamış rozetlerden tamamlanmaya en yakın olanı. */
   nextBadge: { key: string; name: string; progress: number; target: number } | null;
   weekly: { activeDays: number; goalDays: number };
+  /** Toplam aktif gün (rütbe puanı — Doc 24 §5: süreklilik primi). */
+  activeDaysTotal: number;
   maxDailyQuestions: number;
   /** Haftalık snapshot karşılaştırması (±%10 eşiği kuralda). */
   courseTrend: { courseName: string; deltaPct: number } | null;
@@ -145,6 +147,14 @@ export interface CoachBrief {
   stats: { totalSolved: number; accuracy: number; totalSessions: number };
   gamification: {
     nextBadge: CoachContext['nextBadge'];
+    /** Rütbe (Doc 24 §5): meslek diliyle ilerleme. */
+    rank: {
+      level: number;
+      name: string;
+      score: number;
+      minScore: number;
+      next: { level: number; name: string; minScore: number } | null;
+    };
     records: {
       bestNet: number | null;
       longestStreak: number;

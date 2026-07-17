@@ -11,6 +11,7 @@ import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/focus_sheet.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../../../shared/widgets/rank_insignia.dart';
 import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
 import '../../coach/data/coach_repository.dart';
@@ -222,6 +223,24 @@ class _CoachBody extends ConsumerWidget {
                   : null,
             ),
           ),
+
+        // ── Rütbe arması (Doc 24 §5): meslek diliyle ilerleme ──
+        if (brief.rank != null) ...[
+          const SizedBox(height: AppSpacing.xs),
+          StaggeredReveal(
+            index: i++,
+            child: RankInsignia(
+              level: brief.rank!.level,
+              name: brief.rank!.name,
+              score: brief.rank!.score,
+              progressToNext: brief.rank!.progressToNext,
+              nextName: brief.rank!.next?.name,
+              pointsToNext: brief.rank!.next != null
+                  ? brief.rank!.next!.minScore - brief.rank!.score
+                  : null,
+            ),
+          ),
+        ],
 
         // ── Rozet rafı: sıradaki rozet ilerlemesi ──
         if (brief.nextBadge != null) ...[
