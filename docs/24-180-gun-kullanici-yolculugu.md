@@ -480,3 +480,19 @@ kazandığında, 'Paemisyon'suz olmazdı' desin."**
 7. **AI Faz 2** (yanlış açıklaması, önbellekli) + premium paketleme.
 
 Her adım kendi planı ve onayıyla gelir; bu doküman yol haritasıdır, sözleşme değil.
+
+---
+
+## 15. Uygulama durumu (17 Tem 2026 — gece koşusu sonrası)
+
+| # | Adım (§14) | Durum | Not |
+|---|---|---|---|
+| 1 | Koç durum makinesi genişletme | ✅ | exam_mode/taper/slump_watch/comeback + mode alanı; 3 yeni kural testli |
+| 2 | "Bugün Çalış" karışım motoru | ✅ | session-mix.logic (saf+testli): %40 zayıf+%25 yanlış+%35 yeni; sınav modunda tersine; hero doğrudan koç seansı açar |
+| 3 | Onboarding: İlk Devriye | ✅ | 3 soru (sınav/tarih/süre) + 10 soruluk karışık teşhis + konu karnesi |
+| 4 | Seri sigortası | ✅ | haftada 1 (premium 3), yalnız TAM 1 gün boşluk; streak.logic saf+11 test |
+| 4b | Bildirim disiplini | ⏳ | cihaz doğrulaması gerektirir — hazır görev çipi açıldı (yerel v1); sunucu push ayrı iş |
+| 5 | Madde Atlası v1 | ✅ | etiketleme+tespit+backfill+ısı haritası+madde sayfası; fetih haritası mobil UI sonraki |
+| 6 | Rütbe sistemi | ✅ | 8 rütbe, puan=çözülen+15×aktif gün; RankInsignia Bugün'de |
+| 7 | AI Faz 2: yanlış açıklaması | ✅ | önbellek-önce, free günde 3; ANTHROPIC_API_KEY Railway'e girilince canlı |
+| 7b | Premium paketleme | ⏳ | AI limiti + sigorta farkı kodda; paywall ekran metinleri Doc 24 §11 tablosuna göre ayrı iş |
