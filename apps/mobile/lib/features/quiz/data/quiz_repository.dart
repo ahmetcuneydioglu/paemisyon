@@ -62,6 +62,20 @@ class QuizRepository {
     });
   }
 
+  /// AI yanlış açıklaması (Doc 24 §4 Faz 2) — önbellekliyse hak düşmez.
+  Future<AiExplanation> aiExplain({
+    required String versionId,
+    required String chosenOptionId,
+  }) async {
+    return _guard(() async {
+      final r = await _dio.post<Map<String, dynamic>>(
+        '/ai/explain',
+        data: {'versionId': versionId, 'chosenOptionId': chosenOptionId},
+      );
+      return AiExplanation.fromJson(r.data!['data'] as Map<String, dynamic>);
+    });
+  }
+
   Future<QuizResult> complete(String sessionId) async {
     return _guard(() async {
       final r = await _dio
@@ -83,8 +97,9 @@ class QuizRepository {
           ? (e.response?.data as Map)['error'] as Map?
           : null;
       final msg = err?['message'] as String?;
-      if (err?['code'] == 'DAILY_LIMIT_REACHED') {
-        throw DailyLimitFailure(msg ?? 'Günlük ücretsiz soru hakkın doldu.');
+      if (err?['code'] == 'DAILY_LIMIT_REACHED' ||
+          err?['code'] == 'AI_LIMIT_REACHED') {
+        throw DailyLimitFailure(msg ?? 'Günlük ücretsiz hakkın doldu.');
       }
       if (err?['code'] == 'EXAM_TIME_OVER') {
         throw ExamTimeOverFailure(msg ?? 'Sınav süresi doldu.');

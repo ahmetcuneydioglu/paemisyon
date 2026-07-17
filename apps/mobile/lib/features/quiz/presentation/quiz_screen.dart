@@ -8,6 +8,7 @@ import '../../../core/error/failure.dart';
 import '../../../core/offline/answer_queue.dart';
 import '../../../core/offline/sync_service.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/explanation_box.dart';
@@ -46,6 +47,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   int _index = 0;
   String? _selected;
   AnswerFeedback? _feedback; // practice geri bildirimi
+  // AI koç açıklaması (Doc 24 §4 Faz 2) — soru başına istekle gelir.
+  AiExplanation? _ai;
+  bool _aiBusy = false;
   bool _busy = false;
   DateTime _qStart = DateTime.now();
 
@@ -189,8 +193,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       _index++;
       _selected = null;
       _feedback = null;
+      _ai = null;
       _qStart = DateTime.now();
     });
+  }
+
+  /// "Koça sor: Neden?" — AI çeldirici analizi (önbellekliyse hak düşmez).
+  Future<void> _askCoach() async {
+    if (_aiBusy || _selected == null) return;
+    setState(() => _aiBusy = true);
+    try {
+      final ai = await ref.read(quizRepositoryProvider).aiExplain(
+            versionId: _q.versionId,
+            chosenOptionId: _selected!,
+          );
+      if (mounted) setState(() => _ai = ai);
+    } on DailyLimitFailure catch (f) {
+      _showPaywall(f.message);
+    } on Failure catch (f) {
+      _snack(f.message);
+    } finally {
+      if (mounted) setState(() => _aiBusy = false);
+    }
   }
 
   Future<void> _finish() async {
@@ -389,6 +413,25 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                   source: _feedback!.source,
                 ),
               ],
+              // AI koç: yanlış cevapta çeldirici analizi (Doc 24 §4 Faz 2).
+              if (_feedback != null && _feedback!.isCorrect == false) ...[
+                const SizedBox(height: AppSpacing.sm),
+                if (_ai == null)
+                  OutlinedButton.icon(
+                    onPressed: _aiBusy ? null : _askCoach,
+                    icon: _aiBusy
+                        ? const SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : const Icon(Icons.psychology_rounded, size: 18),
+                    label: Text(
+                        _aiBusy ? 'Koç düşünüyor…' : 'Koça sor: Neden yanlış?'),
+                  )
+                else
+                  _CoachExplanation(ai: _ai!),
+              ],
               const SizedBox(height: AppSpacing.xl),
               _bottomButton(),
             ],
@@ -440,5 +483,48 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
     return PrimaryButton(
         label: _isLast ? 'Bitir' : 'İleri', loading: _busy, onPressed: _submit);
+  }
+}
+
+/// AI koç açıklama kutusu — atlas accent'iyle, kaynak satırı gibi alçakgönüllü.
+class _CoachExplanation extends StatelessWidget {
+  final AiExplanation ai;
+  const _CoachExplanation({required this.ai});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: tokens.accentAtlas.withValues(alpha: 0.08),
+        border: Border.all(color: tokens.accentAtlas.withValues(alpha: 0.35)),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.psychology_rounded,
+                  size: 18, color: tokens.accentAtlas),
+              const SizedBox(width: AppSpacing.xs),
+              Text('KOÇ',
+                  style: AppTypography.caption
+                      .copyWith(color: tokens.accentAtlas)),
+              const Spacer(),
+              if (ai.remainingToday != null)
+                Text('bugün ${ai.remainingToday} hak kaldı',
+                    style: AppTypography.caption
+                        .copyWith(color: tokens.inkSoft)),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.sm),
+          Text(ai.text,
+              style: AppTypography.body.copyWith(color: tokens.ink)),
+        ],
+      ),
+    );
   }
 }

@@ -421,6 +421,8 @@ model DailyUsage {
   usageDate         DateTime @map("usage_date") @db.Date
   questionsAnswered Int      @default(0) @map("questions_answered")
   dailyLimit        Int      @map("daily_limit")
+  // AI açıklama hakkı (Doc 24 §11: free günde 3, premium sınırsız).
+  aiExplanationsUsed Int     @default(0) @map("ai_explanations_used")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -618,6 +620,21 @@ model WrongAnswer {
 
   @@id([userId, questionId])
   @@map("wrong_answers")
+}
+
+/// AI açıklama önbelleği (Doc 24 §4 Faz 2): aynı soru+şık için BİR KEZ üretilir,
+/// herkese servis edilir — maliyet soru başına tek seferdir. İçerik sürüme
+/// bağlıdır (soru düzenlenirse yeni sürüm = yeni önbellek satırı).
+model AiExplanation {
+  questionVersionId String   @map("question_version_id") @db.Uuid
+  /// Kullanıcının seçtiği şık — çeldirici analizi şıkka özeldir.
+  chosenOptionId    String   @map("chosen_option_id") @db.Uuid
+  text              String
+  model             String
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  @@id([questionVersionId, chosenOptionId])
+  @@map("ai_explanations")
 }
 
 /// Uygulama ayarları (anahtar-değer) — admin panelden yönetilir.

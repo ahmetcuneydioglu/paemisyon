@@ -167,3 +167,21 @@ class QuizResult {
             .toList(),
       );
 }
+
+/// AI koç açıklaması (Doc 24 §4 Faz 2).
+class AiExplanation {
+  final String text;
+  final bool cached;
+
+  /// Free kullanıcıda bugün kalan hak; premium/önbellekte null.
+  final int? remainingToday;
+
+  const AiExplanation(
+      {required this.text, required this.cached, this.remainingToday});
+
+  factory AiExplanation.fromJson(Map<String, dynamic> j) => AiExplanation(
+        text: j['text'] as String,
+        cached: j['cached'] as bool? ?? false,
+        remainingToday: j['remainingToday'] as int?,
+      );
+}
