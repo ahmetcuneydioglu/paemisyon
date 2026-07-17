@@ -95,6 +95,22 @@ class _CoachBody extends ConsumerWidget {
         ? brief.displayName!.trim()
         : null;
 
+    // "Bugün Çalış" = KOÇ SEANSI (Doc 25 §5): kapsamsız practice —
+    // karışımı sunucu kurar (%40 zayıf + %25 yanlış + %35 yeni; sınav
+    // modunda tersine). Deneme günü hero denemeye götürür.
+    Future<void> openCoachSession() async {
+      final remaining = brief.goal - brief.answered;
+      final count = brief.mode == 'streak_risk'
+          ? 5 // mini seans: seri kurtarmaya 5 soru yeter
+          : remaining.clamp(5, 20);
+      await context.push('/quiz', extra: {
+        'topicName': 'Koç Seansı',
+        'mode': 'practice',
+        'count': count,
+      });
+      ref.invalidate(coachBriefProvider);
+    }
+
     // Kart/CTA dokunuşu: rotaya git, dönünce brief'i tazele (yaşayan ekran).
     Future<void> open(String type, String route,
         [Map<String, dynamic> meta = const {}]) async {
@@ -172,11 +188,13 @@ class _CoachBody extends ConsumerWidget {
           child: _TodayHero(
             brief: brief,
             pal: pal,
-            onPrimary: () => open(
-              brief.primaryActionType,
-              brief.primaryAction.route,
-              brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
-            ),
+            onPrimary: () => brief.mode == 'exam_day'
+                ? open(
+                    brief.primaryActionType,
+                    brief.primaryAction.route,
+                    brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
+                  )
+                : openCoachSession(),
             onFocusTap: () async {
               // "Nereye bakılacağını kullanıcı, neye bakılacağını koç seçer."
               final choice = await showFocusSheet(
@@ -198,12 +216,8 @@ class _CoachBody extends ConsumerWidget {
                   await open('default', '/catalog');
                 case 'wrongs':
                   await open('default', '/review');
-                default: // coach → günün birincil eylemi
-                  await open(
-                    brief.primaryActionType,
-                    brief.primaryAction.route,
-                    brief.cards.isNotEmpty ? brief.cards.first.meta : const {},
-                  );
+                default: // koç seçsin → karışım motorlu koç seansı
+                  await openCoachSession();
               }
             },
           ),

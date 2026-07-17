@@ -10,6 +10,7 @@ import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.ser
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { mixQuota, pickMix } from './session-mix.logic';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 
@@ -102,7 +103,7 @@ export class QuizService {
 
     const pool = await this.prisma.question.findMany({
       where: poolWhere,
-      select: { id: true, currentVersionId: true },
+      select: { id: true, currentVersionId: true, topicId: true },
     });
     if (pool.length === 0) {
       throw new NotFoundException(
@@ -114,7 +115,12 @@ export class QuizService {
       );
     }
 
-    const chosen = this.shuffle(pool).slice(0, count);
+    // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
+    // Kapsamlı oturumlar (konu/ders) eskisi gibi rastgeledir.
+    const chosen =
+      dto.mode === 'practice' && dto.topicId == null && dto.courseId == null
+        ? await this.pickCoachMix(userId, pool, count)
+        : this.shuffle(pool).slice(0, count);
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
       select: {
@@ -575,4 +581,68 @@ export class QuizService {
     }
     return a;
   }
+
+  /**
+   * Koç seansı karışımı (Doc 24 §9, Doc 25 §5 — saf mantık session-mix.logic).
+   * Kullanıcı verisi 3 sorguyla toplanır; sınava ≤30 gün kala reçete tersine
+   * döner (yeni konu durur, yanlış turu ağırlaşır).
+   */
+  private async pickCoachMix(
+    userId: string,
+    pool: { id: string; currentVersionId: string | null; topicId: string }[],
+    count: number,
+  ): Promise<{ id: string; currentVersionId: string | null; topicId: string }[]> {
+    const [wrongs, progress, profile] = await Promise.all([
+      this.prisma.wrongAnswer.findMany({
+        where: { userId, resolvedAt: null },
+        orderBy: { lastWrongAt: 'desc' },
+        take: 100,
+        select: { questionId: true },
+      }),
+      this.prisma.userTopicProgress.findMany({
+        where: { userId },
+        select: { topicId: true, solvedCount: true, mastery: true },
+      }),
+      this.prisma.user.findUnique({
+        where: { id: userId },
+        select: { targetExamDate: true },
+      }),
+    ]);
+
+    const examMode =
+      profile?.targetExamDate != null &&
+      trDayDiffQuiz(new Date(), profile.targetExamDate) <= 30 &&
+      trDayDiffQuiz(new Date(), profile.targetExamDate) >= 0;
+
+    // Zayıf: yeterli veri (≥5 çözüm) + mastery < 0.6, en zayıf 5 konu.
+    const weakTopicIds = new Set(
+      progress
+        .filter((p) => p.solvedCount >= 5 && Number(p.mastery) < 0.6)
+        .sort((a, b) => Number(a.mastery) - Number(b.mastery))
+        .slice(0, 5)
+        .map((p) => p.topicId),
+    );
+    // Çok çalışılmış: ≥15 çözüm — "yeni" dilimi bunlardan kaçınır.
+    const heavyTopicIds = new Set(
+      progress.filter((p) => p.solvedCount >= 15).map((p) => p.topicId),
+    );
+
+    return pickMix(
+      count,
+      {
+        pool,
+        wrongIds: new Set(wrongs.map((w) => w.questionId)),
+        weakTopicIds,
+        heavyTopicIds,
+      },
+      mixQuota(count, examMode),
+      (a) => this.shuffle(a),
+    );
+  }
+}
+
+/** TR takvim günü farkı (coach.service ile aynı konvansiyon). */
+function trDayDiffQuiz(now: Date, target: Date): number {
+  const day = (d: Date) => Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
+  return day(target) - day(now);
 }
