@@ -16,6 +16,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/hesaplayici/paem-puan`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/denemeler`, changeFrequency: "daily", priority: 0.8 },
     { url: `${base}/lider-tablosu`, changeFrequency: "daily", priority: 0.5 },
+    { url: `${base}/sss`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${base}/gizlilik`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/kosullar`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const lawPages: MetadataRoute.Sitemap = laws.map((l) => ({
