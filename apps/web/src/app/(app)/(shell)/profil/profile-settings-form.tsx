@@ -31,6 +31,14 @@ export function ProfileSettingsForm({
   } | null>(null);
   const [deleteText, setDeleteText] = useState("");
   const [deleteBusy, setDeleteBusy] = useState(false);
+  const [logoutBusy, setLogoutBusy] = useState(false);
+
+  async function logout() {
+    setLogoutBusy(true);
+    await supabaseBrowser().auth.signOut();
+    router.replace("/giris");
+    router.refresh();
+  }
 
   async function save(formData: FormData) {
     setBusy(true);
@@ -209,6 +217,25 @@ export function ProfileSettingsForm({
             {passwordMessage && <Status value={passwordMessage} />}
           </div>
         </form>
+      </Card>
+
+      <Card>
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <CardTitle>Oturum</CardTitle>
+            <p className="mt-1 text-[13px] text-ink-soft">
+              Bu cihazdaki oturumunu kapat. Hesabın ve ilerlemen korunur.
+            </p>
+          </div>
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={logout}
+            disabled={logoutBusy}
+          >
+            {logoutBusy ? "Çıkış yapılıyor…" : "Çıkış yap"}
+          </Button>
+        </div>
       </Card>
 
       <Card className="border-danger/30">

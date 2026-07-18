@@ -6,6 +6,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { RankInsignia } from "@/components/ui/rank-insignia";
 import { formatDate } from "@/lib/format";
+import { signOut } from "@/app/(auth)/actions";
 
 export const metadata: Metadata = { title: "Profil", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -258,6 +259,15 @@ export default async function ProfilePage() {
                 </ButtonLink>
               )}
             </div>
+            {/* Çıkış — app kabuğunda tek çıkış yolu (mobil + masaüstü) */}
+            <form action={signOut} className="mt-3 border-t border-line pt-3">
+              <button
+                type="submit"
+                className="tk-interactive min-h-11 text-[13px] font-bold text-danger hover:underline"
+              >
+                Çıkış yap →
+              </button>
+            </form>
           </Card>
         </div>
       </div>

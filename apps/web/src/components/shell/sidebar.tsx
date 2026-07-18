@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CMDK_EVENT } from "./command-palette";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { signOut } from "@/app/(auth)/actions";
 
 interface NavChild {
   href: string;
@@ -151,6 +152,19 @@ export function Sidebar() {
           <span className="max-lg:hidden">Yardım · SSS</span>
           <span className="hidden max-lg:inline">?</span>
         </Link>
+        {/* Çıkış — her sayfada erişilebilir (daraltılmış rayda ikon) */}
+        <form action={signOut}>
+          <button
+            type="submit"
+            title="Çıkış yap"
+            className="tk-interactive tk-caption block w-full text-left hover:text-danger max-lg:text-center"
+          >
+            <span className="max-lg:hidden">Çıkış yap</span>
+            <span className="hidden max-lg:inline" aria-hidden>
+              ⏻
+            </span>
+          </button>
+        </form>
       </div>
     </aside>
   );
