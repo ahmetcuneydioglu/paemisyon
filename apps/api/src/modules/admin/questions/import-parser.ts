@@ -544,7 +544,7 @@ function escapeRegExp(s: string): string {
  * (örn. "ZABIT KÂTİBİ A"). İlk 3 satırdan kurum adı ve sayfa numarası
  * olmayanı seçer; sonuna yapışmış sayfa numarası varsa kırpar.
  */
-function detectBookletTitle(pageTexts: string[]): string | null {
+export function detectBookletTitle(pageTexts: string[]): string | null {
   const page = pageTexts.find((t) => t.includes(ODSGM_HEADER));
   if (!page) return null;
   const lines = page
@@ -555,10 +555,32 @@ function detectBookletTitle(pageTexts: string[]): string | null {
   for (const line of lines) {
     if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
     const title = line.replace(/\s*\d{1,3}$/, '').trim();
-    // Makul bir başlık olmalı — soru metni sanılmasın (kısa, soru numarasız).
-    if (title.length >= 3 && title.length <= 60 && !QNUM_RE.test(title)) return title;
+    // Bazı resmî başlıklar sıra sayısıyla başlar ("8. DÖNEM ... A").
+    // Bu nedenle yalnız QNUM_RE ile elemek, başlığı soru sanıp her sayfanın
+    // son E şıkkına sızdırır. Kitapçık türü harfi + başlık sinyalini
+    // birlikte arayarak gerçek soru satırlarını dışlarız.
+    const hasBookletType = /\s[A-E]$/u.test(title);
+    const hasHeadingSignal =
+      !QNUM_RE.test(title) || /\b(?:DÖNEM|EĞİTİMİ|SINAVI|KİTAPÇIĞI|TESTİ)\b/iu.test(title);
+    if (title.length >= 3 && title.length <= 60 && hasBookletType && hasHeadingSignal) {
+      return title;
+    }
   }
   return null;
+}
+
+/** Kitapçık başlığını tab/boşluk farklarına toleranslı biçimde söker. */
+export function stripBookletTitle(text: string, title: string): string {
+  const flexibleTitle = title
+    .trim()
+    .split(/\s+/)
+    .map(escapeRegExp)
+    .join('\\s+');
+  const titleRe = new RegExp(`\\s*${flexibleTitle}(?:\\s*\\d{1,3})?`, 'gu');
+  const cleaned = text.replace(titleRe, ' ');
+  // Başlık yoksa satırı byte-düzeyinde koru: iki+ boşluk, PDF'de yan yana
+  // basılan "A) ...   B) ..." şıklarının anlamlı ayıracıdır.
+  return cleaned === text ? text : cleaned.replace(/\s{2,}/g, ' ').trim();
 }
 
 export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
@@ -578,9 +600,6 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   // hem içeriği kirletir hem parmak izini bozar (canlıda yakalanan hata).
   // İlk ÖDSGM'li sayfanın üstbilgisinden adı sapta, her yerden sök.
   const bookletTitle = detectBookletTitle(result.pages.map((p) => p.text ?? ''));
-  const titleRe = bookletTitle
-    ? new RegExp(`\\s*${escapeRegExp(bookletTitle)}(?:\\s*\\d{1,3})?`, 'g')
-    : null;
 
   for (const page of result.pages) {
     const text = page.text ?? '';
@@ -608,7 +627,7 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       }
       // Kitapçık adını (yapışık geldiği yerler dahil) sök, SONRA üstbilgi
       // denetimleri: kurum adı, yalnız sayfa numarası.
-      if (titleRe) line = line.replace(titleRe, ' ').replace(/\s{2,}/g, ' ').trim();
+      if (bookletTitle) line = stripBookletTitle(line, bookletTitle);
       if (!line || line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
       line = line
         .replace(/\s*TEST BİTTİ\..*$/, '')

@@ -7,13 +7,12 @@
  * Çalıştırma: npx ts-node scripts/clean-booklet-title-pollution.ts "ZABIT KÂTİBİ A"
  */
 import { PrismaClient } from '@prisma/client';
-import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
+import {
+  questionFingerprint,
+  stripBookletTitle,
+} from '../src/modules/admin/questions/import-parser';
 
 const title = process.argv[2] ?? 'ZABIT KÂTİBİ A';
-
-function esc(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
 
 async function main() {
   const url =
@@ -21,8 +20,7 @@ async function main() {
     (process.env.DATABASE_URL!.includes('?') ? '&' : '?') +
     'connection_limit=1';
   const prisma = new PrismaClient({ datasources: { db: { url } } });
-  const re = new RegExp(`\\s*${esc(title)}(?:\\s*\\d{1,3})?`, 'g');
-  const clean = (s: string) => s.replace(re, ' ').replace(/\s{2,}/g, ' ').trim();
+  const clean = (s: string) => stripBookletTitle(s, title);
 
   const versions = await prisma.questionVersion.findMany({
     where: {

@@ -8,6 +8,8 @@ import {
   parseImportFile,
   parseBookletOptionLine,
   detectBookletSections,
+  detectBookletTitle,
+  stripBookletTitle,
 } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
@@ -127,6 +129,32 @@ describe('parseBookletOptionLine', () => {
 
   it('şıksız devam satırını seçenek sanmaz', () => {
     expect(parseBookletOptionLine('seçenek metninin devamı')).toEqual([]);
+  });
+});
+
+describe('kitapçık üstbilgisi temizleme', () => {
+  const ods = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ GENEL MÜDÜRLÜĞÜ';
+
+  it('sıra sayısıyla başlayan resmî kitapçık başlığını saptar', () => {
+    const page = `2\n8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ \tA\n${ods}\n1. Soru`;
+    expect(detectBookletTitle([page])).toBe('8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ \tA');
+  });
+
+  it('başlığı şık sonundan tab/boşluk farkına rağmen söker', () => {
+    const title = '8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ \tA';
+    expect(stripBookletTitle(
+      'Belediye Başkanı 8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ A',
+      title,
+    )).toBe('Belediye Başkanı');
+  });
+
+  it('başlık yoksa yan yana şıkları ayıran boşlukları korur', () => {
+    const line = 'A) Ocak   B) Mart';
+    expect(stripBookletTitle(line, '8. DÖNEM EĞİTİMİ A')).toBe(line);
+  });
+
+  it('ilk satırlardaki olağan soru metnini kitapçık başlığı sanmaz', () => {
+    expect(detectBookletTitle([`1\n${ods}\n1. Aşağıdakilerden hangisi A`])).toBeNull();
   });
 });
 
