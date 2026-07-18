@@ -89,11 +89,13 @@
     --tk-accent-atlas: #cecbf6;
   }
 }
-/* Koyu temada gövde zemini de tema-duyarlı olur (aksi halde beyaz sızar). */
-:root[data-theme="dark"] body {
-  background: var(--tk-surface-alt);
-  color: var(--tk-ink);
-}
+/* Koyu tema YALNIZ tk-scope alt ağaçlarına uygulanır; her tk-scope kabuğu kendi
+   zemin/metin rengini kurar (.tk-scope). Gövdeye global koyu renk BASMAYIZ:
+   miras (eski palet) sayfalar bg-white kartlar + koyu metin kullanır; global
+   açık metin bunları beyaz üstünde okunmaz (silik) yapardı — bildirilen hata buydu.
+   Böylece miras/public sayfalar açık temada okunur kalır; tk-scope kabuklar
+   (landing, app) tam ekran olduğundan kendi koyu zeminlerini kaplar. */
+
 @media (prefers-reduced-motion: reduce) {
   :root {
     --tk-motion-quick: 0ms;
