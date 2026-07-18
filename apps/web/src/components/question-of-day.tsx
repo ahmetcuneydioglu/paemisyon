@@ -77,7 +77,10 @@ export function QuestionOfDayCard({ question, loggedIn }: { question: QuestionOf
           {result.source && <p className="mt-1 text-xs text-white/60">Kaynak: {result.source}</p>}
           {!loggedIn && (
             <div className="mt-3 flex flex-wrap items-center gap-3">
-              <Link href="/kayit" className="btn2 btn2-green">
+              <Link
+                href="/kayit"
+                className="rounded-sm bg-white px-4 py-2 font-heading text-[13px] font-bold text-(--tk-brand)"
+              >
                 Ücretsiz kayıt ol, serini başlat
               </Link>
               <span className="text-xs text-white/60">Her gün 1 soru + günde 15 ücretsiz soru</span>

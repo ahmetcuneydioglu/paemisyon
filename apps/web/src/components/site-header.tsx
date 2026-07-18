@@ -1,88 +1,66 @@
-import Image from "next/image";
 import Link from "next/link";
 import { supabaseServer } from "@/lib/supabase/server";
 import { signOut } from "@/app/(auth)/actions";
-import { MobileMenu } from "./mobile-menu";
+import { SiteNav } from "./site-nav";
+import { ButtonLink } from "@/components/ui/button";
 
 const NAV = [
-  { href: "/denemeler", label: "Denemeler", icon: "icon-test" },
-  { href: "/kanunlar", label: "Kanunlar", icon: "icon-information" },
-  { href: "/paem", label: "PAEM", icon: "icon-enter" },
-  { href: "/misyon", label: "Misyon", icon: "icon-enter" },
-  { href: "/lider-tablosu", label: "Lider Tablosu", icon: "icon-user" },
-  { href: "/soru-oner", label: "Soru Öner", icon: "icon-question" },
-  { href: "/profil/denemelerim", label: "Denemelerim", icon: "icon-calendar" },
+  { href: "/kanunlar", label: "Kanunlar" },
+  { href: "/paem", label: "PAEM" },
+  { href: "/misyon", label: "Misyon" },
+  { href: "/denemeler", label: "Denemeler" },
+  { href: "/gunun-sorusu", label: "Günün Sorusu" },
+  { href: "/premium", label: "Premium" },
 ];
 
 /**
- * İki katlı başlık — eski header.php birebir (Doc 18 §4.1):
- * üst açık gri bar (logo + mağaza rozetleri + giriş/üye alanı),
- * alt lacivert nav (#052c5c, beyaz Rubik linkler). Mobilde ayrı bar + menü.
+ * Public üst nav (Doc 27 L1 Kapı, wireframe 01): tek katlı, sticky, token dilinde.
+ * Girişli kullanıcıya tek CTA: uygulamaya (Bugün) dönüş — public sayfalar
+ * vitrindir, çalışma alanı sidebar kabuğundadır.
  */
 export async function SiteHeader() {
   const supabase = await supabaseServer();
   const { data } = await supabase.auth.getUser();
   const user = data.user;
 
+  const authArea = user ? (
+    <div className="flex items-center gap-2">
+      <ButtonLink href="/bugun" size="sm">
+        Uygulamaya dön
+      </ButtonLink>
+      <form action={signOut}>
+        <button
+          type="submit"
+          className="tk-interactive cursor-pointer rounded-sm px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink"
+        >
+          Çıkış
+        </button>
+      </form>
+    </div>
+  ) : (
+    <div className="flex items-center gap-2">
+      <ButtonLink href="/giris" variant="ghost" size="sm">
+        Giriş
+      </ButtonLink>
+      <ButtonLink href="/kayit" size="sm">
+        Kayıt ol
+      </ButtonLink>
+    </div>
+  );
+
   return (
-    <header>
-      {/* Üst bar */}
-      <div className="hidden bg-(--color-grey-bg) md:block">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link href="/">
-            <Image src="/img/logo.png" alt="Paemisyon" width={170} height={48} priority />
-          </Link>
-          <div className="flex items-center gap-3">
-            <a href="https://apps.apple.com" target="_blank" rel="noreferrer">
-              <Image src="/img/appStore.png" alt="App Store" width={110} height={34} />
-            </a>
-            <a href="https://play.google.com" target="_blank" rel="noreferrer">
-              <Image src="/img/playStore.png" alt="Google Play" width={110} height={34} />
-            </a>
-            {user ? (
-              <div className="ml-4 flex items-center gap-3">
-                <span className="font-heading text-sm font-bold text-(--color-navy)">
-                  <i className="icon-user mr-1" aria-hidden />
-                  {(user.user_metadata?.display_name as string) ?? user.email}
-                </span>
-                <form action={signOut}>
-                  <button className="btn2 btn2-red" type="submit">Çıkış</button>
-                </form>
-              </div>
-            ) : (
-              <div className="ml-4 flex items-center gap-2">
-                <Link href="/giris" className="btn2 btn2-green">Giriş Yap</Link>
-                <Link href="/kayit" className="btn2 btn2-orange">Kayıt Ol</Link>
-              </div>
-            )}
-          </div>
-        </div>
+    <header className="tk-scope sticky top-0 z-30 border-b border-line bg-surface/95 font-body backdrop-blur">
+      <div className="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
+        <Link
+          href="/"
+          className="font-heading text-[17px] font-bold tracking-tight text-brand"
+          aria-label="Paemisyon ana sayfa"
+        >
+          PAEMİSYON
+        </Link>
+        <SiteNav items={NAV} authArea={authArea} />
+        <div className="hidden md:block">{authArea}</div>
       </div>
-
-      {/* Lacivert nav */}
-      <nav className="hidden bg-(--color-navy-dark) md:block">
-        <div className="mx-auto max-w-6xl px-4">
-          <ul className="flex">
-            {NAV.map((n) => (
-              <li key={n.href}>
-                <Link
-                  href={n.href}
-                  className="font-heading flex items-center gap-2 px-4 py-5 text-[16px] font-medium text-white hover:bg-(--color-navy-deep)"
-                >
-                  <i className={`${n.icon} text-[15px]`} aria-hidden />
-                  {n.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
-
-      {/* Mobil bar */}
-      <MobileMenu
-        nav={NAV.map(({ href, label }) => ({ href, label }))}
-        loggedIn={!!user}
-      />
     </header>
   );
 }

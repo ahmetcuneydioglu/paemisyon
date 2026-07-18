@@ -65,8 +65,10 @@ export function ExamTable({
 
 /** Eski 3-durumlu buton mantığı + kendi katılım durumun (Doc 18 §3). */
 function ExamActions({ exam, loggedIn }: { exam: ExamListItem; loggedIn: boolean }) {
-  const startedLongAgo =
-    Date.now() - new Date(exam.startAt).getTime() > 30 * 60_000; // eski "Devam Ediyor" eşiği
+  // Sunucu bileşeni + force-dynamic sayfa: istek anının saatini okumak kasıtlı
+  // (eski "Devam Ediyor" eşiği). İstemci saf-render kuralı burada geçerli değil.
+  // eslint-disable-next-line react-hooks/purity
+  const startedLongAgo = Date.now() - new Date(exam.startAt).getTime() > 30 * 60_000;
 
   if (exam.state === "upcoming") {
     return (

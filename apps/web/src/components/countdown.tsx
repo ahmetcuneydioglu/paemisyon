@@ -12,16 +12,20 @@ export function Countdown({ target }: { target: string }) {
 
   useEffect(() => {
     const compute = () => Math.max(0, new Date(target).getTime() - Date.now());
-    setLeft(compute());
-    const t = setInterval(() => {
+    const tick = () => {
       const ms = compute();
       setLeft(ms);
       if (ms <= 0) {
         clearInterval(t);
         router.refresh();
       }
-    }, 1000);
-    return () => clearInterval(t);
+    };
+    const t0 = setTimeout(tick, 0); // ilk değer sonraki tick'te (senkron setState yasağı)
+    const t = setInterval(tick, 1000);
+    return () => {
+      clearTimeout(t0);
+      clearInterval(t);
+    };
   }, [target, router]);
 
   if (left === null) return null;
