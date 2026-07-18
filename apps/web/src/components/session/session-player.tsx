@@ -90,6 +90,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   // "M ile aç" — ilgili maddeyi sağ panelde göster (seanstan çıkmadan, Doc 27 §3.6).
   const [maddeOpen, setMaddeOpen] = useState(false);
+  // Hata bildir (wireframe 08) — seanstan ÇIKMADAN yerinde bildirim; /questions/:id/report'a yazar.
+  const [reportOpen, setReportOpen] = useState(false);
+  const [reportText, setReportText] = useState("");
+  const [reportState, setReportState] = useState<
+    "idle" | "busy" | "done" | "already" | "error"
+  >("idle");
   const questionShownAt = useRef(0);
   const startedRef = useRef(false);
 
@@ -160,6 +166,22 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       .catch(fail);
   }, [scope]);
 
+  // Favori durumunu tohumla — önceden yıldızlanmış sorular bu seansta da ★ görünsün.
+  // (Aksi halde bookmarks boş başlar ve favorideki soru "☆ Favorile" görünürdü.)
+  useEffect(() => {
+    let alive = true;
+    apiClient<{ questionId: string }[]>("/review/bookmarks")
+      .then((rows) => {
+        if (!alive) return;
+        const ids = rows.map((r) => r.questionId);
+        setBookmarks((s) => new Set([...s, ...ids]));
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
+
   const data = phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
   const question = data?.questions[index] ?? null;
   const currentFeedback = question ? feedback[question.questionId] : undefined;
@@ -217,6 +239,9 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     } else {
       setIndex((i) => i + 1);
       setMaddeOpen(false); // sonraki soruda inspector kapanır
+      setReportOpen(false); // hata bildir paneli de kapanır
+      setReportText("");
+      setReportState("idle");
       questionShownAt.current = Date.now();
     }
   }, [data, currentFeedback, isLast, complete]);
@@ -242,6 +267,26 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       });
     },
     [bookmarks],
+  );
+
+  // ── Hata bildir — mevcut soruyu /questions/:id/report'a bildirir; seanstan çıkmaz ──
+  const submitReport = useCallback(
+    async (questionId: string) => {
+      const msg = reportText.trim();
+      if (msg.length < 5) return;
+      setReportState("busy");
+      try {
+        const res = await apiClient<{ alreadyReported: boolean }>(
+          `/questions/${questionId}/report`,
+          { method: "POST", body: { message: msg } },
+        );
+        setReportState(res.alreadyReported ? "already" : "done");
+        setReportText("");
+      } catch {
+        setReportState("error");
+      }
+    },
+    [reportText],
   );
 
   // ── Klavye (Doc 27 §2.2): 1-4/A-D şık · Enter sonraki · Esc çıkış ──
@@ -445,14 +490,75 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                     ⚖ İlgili madde: {fb.relatedArticle.no} (M)
                   </button>
                 )}
-                <Link
-                  href="/soru-oner"
-                  target="_blank"
-                  className="tk-caption rounded-full border border-line px-2.5 py-1 hover:text-ink"
+                <button
+                  type="button"
+                  onClick={() => {
+                    setReportOpen((v) => !v);
+                    if (!reportOpen) setReportState("idle");
+                  }}
+                  aria-expanded={reportOpen}
+                  className={[
+                    "tk-caption rounded-full border px-2.5 py-1",
+                    reportOpen
+                      ? "border-danger/60 bg-danger/10 text-danger"
+                      : "border-line hover:text-ink",
+                  ].join(" ")}
                 >
                   ⚑ Hata bildir
-                </Link>
+                </button>
               </div>
+              {/* Yerinde hata bildir paneli — seanstan çıkmadan (Doc 27 §3.6) */}
+              {reportOpen && (
+                <div className="rounded-sm border border-danger/30 bg-danger/5 p-3">
+                  {reportState === "done" || reportState === "already" ? (
+                    <p className="text-[13px] font-semibold text-success" role="status">
+                      {reportState === "already"
+                        ? "Bu soruyu zaten bildirmiştin — teşekkürler."
+                        : "Bildirimin alındı. Editör ekibi inceleyecek, teşekkürler."}
+                    </p>
+                  ) : (
+                    <>
+                      <label
+                        htmlFor="report-message"
+                        className="text-[13px] font-semibold text-ink"
+                      >
+                        Bu soruda ne yanlış?
+                      </label>
+                      <textarea
+                        id="report-message"
+                        value={reportText}
+                        onChange={(e) => setReportText(e.target.value)}
+                        rows={2}
+                        maxLength={500}
+                        placeholder="ör. cevap anahtarı yanlış, yazım hatası, şık eksik…"
+                        className="mt-1 w-full rounded-sm border border-line bg-surface px-2.5 py-1.5 text-[13px] text-ink outline-none focus:border-danger"
+                      />
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        <Button
+                          size="sm"
+                          variant="danger"
+                          onClick={() => submitReport(question!.questionId)}
+                          disabled={reportText.trim().length < 5 || reportState === "busy"}
+                        >
+                          {reportState === "busy" ? "Gönderiliyor…" : "Bildir"}
+                        </Button>
+                        <button
+                          type="button"
+                          onClick={() => setReportOpen(false)}
+                          className="tk-caption text-ink-soft hover:text-ink"
+                        >
+                          Vazgeç
+                        </button>
+                        {reportState === "error" && (
+                          <span className="text-[12px] font-semibold text-danger">
+                            Gönderilemedi, tekrar dene.
+                          </span>
+                        )}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
               <div className="flex justify-end">
                 <Button size="lg" onClick={next} disabled={phase.kind === "finishing"}>
                   {isLast ? "Seansı bitir" : "Sonraki soru"}
