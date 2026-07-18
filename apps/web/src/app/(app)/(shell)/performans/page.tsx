@@ -30,11 +30,18 @@ interface TopicProgressRow {
  * tek bakışta durum + net trendi + en zayıf 3 konu → konu haritasına derinleşme.
  */
 export default async function PerformansPage() {
-  const [summary, topics, attempts] = await Promise.all([
+  const [summary, topics, attempts, activity] = await Promise.all([
     api<Summary>("/progress/summary"),
     api<TopicProgressRow[]>("/progress/topics").catch(() => [] as TopicProgressRow[]),
     api<MyAttempt[]>("/exams/attempts/mine").catch(() => [] as MyAttempt[]),
+    api<{ date: string; questionsAnswered: number }[]>("/progress/activity?days=84").catch(
+      () => [] as { date: string; questionsAnswered: number }[],
+    ),
   ]);
+  const maxDay = activity.reduce((m, d) => Math.max(m, d.questionsAnswered), 0);
+  // 84 günü haftalara böl (7'lik sütunlar) — GitHub katkı ısı takvimi hissi.
+  const weeks: { date: string; questionsAnswered: number }[][] = [];
+  for (let i = 0; i < activity.length; i += 7) weeks.push(activity.slice(i, i + 7));
 
   const completed = attempts
     .filter((a) => a.status === "completed" && a.score != null)
@@ -70,6 +77,40 @@ export default async function PerformansPage() {
             </Card>
           ))}
         </div>
+
+        {/* Son 12 hafta aktivite ısısı (wireframe 12) — GitHub katkı hissi */}
+        {maxDay > 0 && (
+          <Card className="mb-5">
+            <CardTitle>Son 12 hafta — çalışma ısısı</CardTitle>
+            <div className="mt-3 flex gap-1 overflow-x-auto pb-1" aria-hidden>
+              {weeks.map((week, wi) => (
+                <div key={wi} className="flex flex-col gap-1">
+                  {week.map((d) => {
+                    const ratio = d.questionsAnswered / maxDay;
+                    const level =
+                      d.questionsAnswered === 0
+                        ? "bg-line"
+                        : ratio < 0.34
+                          ? "bg-success/30"
+                          : ratio < 0.67
+                            ? "bg-success/60"
+                            : "bg-success";
+                    return (
+                      <div
+                        key={d.date}
+                        title={`${d.date}: ${d.questionsAnswered} soru`}
+                        className={["size-3 rounded-[3px]", level].join(" ")}
+                      />
+                    );
+                  })}
+                </div>
+              ))}
+            </div>
+            <p className="tk-caption mt-2">
+              her kutu bir gün · koyu = daha çok soru · {activity.filter((d) => d.questionsAnswered > 0).length}/84 aktif gün
+            </p>
+          </Card>
+        )}
 
         {completed.length >= 2 && (
           <Card className="mb-5">

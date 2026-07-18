@@ -1,8 +1,24 @@
-import { IsIn, IsInt, IsOptional, IsString, IsUUID, Max, MaxLength, Min } from 'class-validator';
+import {
+  IsBoolean,
+  IsIn,
+  IsInt,
+  IsOptional,
+  IsString,
+  IsUUID,
+  Max,
+  MaxLength,
+  Min,
+} from 'class-validator';
 
 export class StartSessionDto {
   @IsIn(['practice', 'exam', 'daily', 'review'])
   mode!: 'practice' | 'exam' | 'daily' | 'review';
+
+  /// Favori (yer imi) reçetesi: havuz = kullanıcının favorileri (Doc 25 §2).
+  /// Yalnız practice modunda, kapsamsız (topic/course verilmez).
+  @IsOptional()
+  @IsBoolean()
+  fromBookmarks?: boolean;
 
   /// Konu çalışması (alıştırma veya konu denemesi). courseId ile birlikte VERİLMEZ.
   @IsOptional()

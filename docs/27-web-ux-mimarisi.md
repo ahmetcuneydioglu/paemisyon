@@ -55,9 +55,16 @@
 > bildir" ucu · deneme oynatıcıda boş-soru-başına süre önerisi · deneme analizinde
 > "geçen denemeden ±X net" kıyası · landing SSS bloğu. KALAN eksikler API/veri
 > bekliyor — B (API eki gerek): ders detay sekmeli çıkmış sorular + trend
-> kolonları, kanun mini denemesi, deneme süre şeridi, aktivite ısısı (12 hafta)
-> + haftalık rapor, favoriler reçetesi; C (veri/içerik): madde etiketi
-> backfill'i, kanun metni içerik hattı, deneme bölüm yapısı.
+> kolonları, kanun mini denemesi, deneme bölüm kırılımı, haftalık rapor;
+> C (veri/içerik): madde etiketi backfill'i, kanun metni içerik hattı,
+> deneme bölüm yapısı.
+> **B dilimi 2 TAMAM (18 Tem 2026):** (1) Bugün "Haftalık fotoğraf" kartı —
+> coachBrief.weeklyPhoto (courseTrend'in tam listesi, |Δ| azalan). (2) Favorilerim
+> — /kutuphane/favoriler sayfası + Kütüphane kapısı + sidebar alt-öğe + Odak
+> "Favorilerim"; favori reçetesi quiz motoruna fromBookmarks bayrağıyla (enum yok);
+> seans içi F ile eklenen sorular buraya düşer. (3) Performans "Son 12 hafta
+> çalışma ısısı" — /progress/activity?days=84 (GitHub katkı ızgarası). Süre şeridi
+> zaten önceki dilimde eklendi (getAttempt timing[] + TimingStrip).
 > **B dilimi 1-2-3 TAMAM (18 Tem 2026):** (1) Devam eden seans çapası —
 > quiz_sessions.question_order kolonu (migration), GET /quiz/active-session +
 > /quiz/sessions/:id/resume; web: Bugün'de "⏸ devam" kartı + koç rayında pil +

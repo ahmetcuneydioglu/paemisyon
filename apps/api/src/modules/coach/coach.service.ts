@@ -92,6 +92,8 @@ export class CoachService {
         },
         weekly: ctx.weekly,
       },
+      // Haftalık fotoğraf (Doc 27 wireframe 02) — Bugün sağ kolonu.
+      weeklyPhoto: ctx.weeklyPhoto,
     };
   }
 
@@ -266,16 +268,21 @@ export class CoachService {
       byCourseWeek.set(name, bucket);
     }
     let courseTrend: CoachContext['courseTrend'] = null;
+    // Haftalık fotoğraf (Doc 27 wireframe 02): sıfır olmayan tüm ders değişimleri,
+    // mutlak değere göre azalan — Bugün'de "Anayasa %12 ↑, CMK %4 ↓" kartı.
+    const weeklyPhoto: { courseName: string; deltaPct: number }[] = [];
     for (const [courseName, w] of byCourseWeek) {
       if (w.cur.length === 0 || w.prev.length === 0) continue;
       const avg = (a: number[]) => a.reduce((x, y) => x + y, 0) / a.length;
       const prev = avg(w.prev);
       if (prev <= 0) continue;
       const deltaPct = Math.round(((avg(w.cur) - prev) / prev) * 100);
+      if (deltaPct !== 0) weeklyPhoto.push({ courseName, deltaPct });
       if (!courseTrend || Math.abs(deltaPct) > Math.abs(courseTrend.deltaPct)) {
         courseTrend = { courseName, deltaPct };
       }
     }
+    weeklyPhoto.sort((a, b) => Math.abs(b.deltaPct) - Math.abs(a.deltaPct));
 
     // ── Aktivite günleri (streak.lastActiveDate = @db.Date, UTC gün) ──
     const lastActive = streak?.lastActiveDate ?? null;
@@ -359,6 +366,7 @@ export class CoachService {
       activeDaysTotal,
       maxDailyQuestions: maxDaily._max.questionsAnswered ?? 0,
       courseTrend,
+      weeklyPhoto,
       daysSinceLastActivity: daysSince,
       daysToExam: daysToExam != null && daysToExam >= 0 ? daysToExam : null,
       volume: { last7, prev7 },

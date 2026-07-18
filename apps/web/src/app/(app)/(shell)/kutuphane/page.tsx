@@ -96,8 +96,8 @@ export default async function KutuphanePage({
           )}
         </div>
 
-        {/* Kütüphane kapıları: Mevzuat (taç) + Yanlışlarım (hafıza) */}
-        <div className="mb-5 grid gap-3 lg:grid-cols-2">
+        {/* Kütüphane kapıları: Mevzuat (taç) + Yanlışlarım + Favorilerim */}
+        <div className="mb-5 grid gap-3 lg:grid-cols-3">
           <Link
             href="/kanunlar"
             className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-atlas/40 bg-atlas/5 p-4 hover:border-atlas"
@@ -127,6 +127,18 @@ export default async function KutuphanePage({
               </span>
             </span>
             <span aria-hidden className="text-danger">→</span>
+          </Link>
+          <Link
+            href="/kutuphane/favoriler"
+            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-streak/40 bg-streak/5 p-4 hover:border-streak"
+          >
+            <span>
+              <span className="font-heading text-[15px] font-bold text-ink">★ Favorilerim</span>
+              <span className="mt-0.5 block text-[13px] text-ink-soft">
+                Yıldızladığın sorular — toplu çöz.
+              </span>
+            </span>
+            <span aria-hidden className="text-streak">→</span>
           </Link>
         </div>
 

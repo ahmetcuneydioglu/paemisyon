@@ -157,6 +157,34 @@ export default async function BugunPage() {
             </Card>
           )}
 
+          {/* Haftalık fotoğraf (wireframe 02): ders bazlı mastery değişimi */}
+          {brief.weeklyPhoto && brief.weeklyPhoto.length > 0 && (
+            <Card>
+              <CardTitle className="text-[13px]">Haftalık fotoğraf</CardTitle>
+              <ul className="mt-2 space-y-1">
+                {brief.weeklyPhoto.slice(0, 4).map((c) => (
+                  <li key={c.courseName} className="flex items-center justify-between gap-2 text-[13px]">
+                    <span className="min-w-0 truncate text-ink-soft">{c.courseName}</span>
+                    <span
+                      className={[
+                        "tabular shrink-0 font-bold",
+                        c.deltaPct > 0 ? "text-success" : "text-danger",
+                      ].join(" ")}
+                    >
+                      %{Math.abs(c.deltaPct)} {c.deltaPct > 0 ? "↑" : "↓"}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/performans/konu-haritasi"
+                className="tk-caption mt-2 inline-block text-brand hover:underline"
+              >
+                Konu haritasında incele →
+              </Link>
+            </Card>
+          )}
+
           {gamification.nextBadge && (
             <Card>
               <CardTitle className="text-[13px]">🎖 Sıradaki rozet</CardTitle>

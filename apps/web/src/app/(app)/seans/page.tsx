@@ -22,7 +22,12 @@ export default async function SeansPage({
         topicId: one(p.topicId),
         courseId: one(p.courseId),
         articleNo: one(p.articleNo),
-        mode: one(p.mode) === "review" ? "review" : undefined,
+        mode:
+          one(p.mode) === "review"
+            ? "review"
+            : one(p.mode) === "favorites"
+              ? "favorites"
+              : undefined,
         resumeId: one(p.resume),
         label: one(p.scope),
         questionCount: Number.isFinite(count) ? Math.min(50, Math.max(1, count)) : undefined,

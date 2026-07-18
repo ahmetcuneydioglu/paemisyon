@@ -28,10 +28,11 @@ export class ProgressController {
     return this.progress.getTopicProgress(user.id);
   }
 
-  /// Son 14 günün günlük soru hacmi — Bugün "nöbet çizelgesi" şeridi (Doc 27).
+  /// Günlük soru hacmi — Bugün nöbet çizelgesi (14) + Performans ısı takvimi (84).
   @Get('activity')
-  activity(@CurrentUser() user: AuthenticatedUser) {
-    return this.progress.getActivity(user.id);
+  activity(@CurrentUser() user: AuthenticatedUser, @Query('days') days?: string) {
+    const n = Number.parseInt(days ?? '', 10);
+    return this.progress.getActivity(user.id, Number.isFinite(n) ? Math.min(120, Math.max(1, n)) : 14);
   }
 
   @Get('history')

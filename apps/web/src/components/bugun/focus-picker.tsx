@@ -191,6 +191,15 @@ export function FocusPicker() {
                   </span>
                 </span>
               </button>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() =>
+                  start(new URLSearchParams({ mode: "favorites", scope: "Favorilerim" }))
+                }
+              >
+                Favorilerim
+              </button>
               <p className="px-3 pb-2 pt-1.5 text-[12px] leading-relaxed text-ink-soft">
                 Odak bugünlük geçerli; kapsam içindeki soruları yine koç karıştırır.
               </p>

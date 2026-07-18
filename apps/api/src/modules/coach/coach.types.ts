@@ -113,6 +113,8 @@ export interface CoachContext {
   maxDailyQuestions: number;
   /** Haftalık snapshot karşılaştırması (±%10 eşiği kuralda). */
   courseTrend: { courseName: string; deltaPct: number } | null;
+  /** Haftalık fotoğraf (Doc 27 wireframe 02): tüm ders değişimleri, |Δ| azalan. */
+  weeklyPhoto: { courseName: string; deltaPct: number }[];
   /** Son aktiviteden bu yana geçen tam gün; hiç aktivite yoksa null. */
   daysSinceLastActivity: number | null;
   /** Hedef sınava kalan TR takvim günü; tarih yoksa veya geçtiyse null. */
@@ -162,4 +164,6 @@ export interface CoachBrief {
     };
     weekly: { activeDays: number; goalDays: number };
   };
+  /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi. */
+  weeklyPhoto: { courseName: string; deltaPct: number }[];
 }

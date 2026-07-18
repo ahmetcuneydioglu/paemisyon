@@ -28,6 +28,7 @@ const nav: NavItem[] = [
       { href: "/kutuphane", label: "Dersler" },
       { href: "/kanunlar", label: "Mevzuat" },
       { href: "/kutuphane/yanlislar", label: "Yanlışlarım" },
+      { href: "/kutuphane/favoriler", label: "Favorilerim" },
       { href: "/seans?mode=review&scope=Yanl%C4%B1%C5%9F+tekrar%C4%B1", label: "Akıllı Tekrar" },
     ],
   },

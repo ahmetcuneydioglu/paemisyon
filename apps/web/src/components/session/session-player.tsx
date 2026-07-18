@@ -47,8 +47,8 @@ export interface SessionScope {
   topicId?: string;
   courseId?: string;
   articleNo?: string;
-  /** 'review' = yanlış tekrarı reçetesi (Doc 24 §11); varsayılan practice. */
-  mode?: "practice" | "review";
+  /** 'review' = yanlış tekrarı · 'favorites' = favori reçetesi; varsayılan practice. */
+  mode?: "practice" | "review" | "favorites";
   /** Yarım oturumu kaldığı yerden aç (Doc 27 §2.4). */
   resumeId?: string;
   /** Üst şeritte gösterilen insan-okur kapsam etiketi. */
@@ -140,10 +140,13 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         .catch(fail);
       return;
     }
+    // Favori reçetesi practice + fromBookmarks olarak gider (ayrı enum yok).
+    const isFav = scope.mode === "favorites";
     apiClient<StartResponse>("/quiz/sessions", {
       method: "POST",
       body: {
-        mode: scope.mode ?? "practice",
+        mode: isFav ? "practice" : (scope.mode ?? "practice"),
+        ...(isFav ? { fromBookmarks: true } : {}),
         ...(scope.topicId ? { topicId: scope.topicId } : {}),
         ...(scope.courseId ? { courseId: scope.courseId } : {}),
         ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
@@ -352,7 +355,9 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         scope.label ??
         (scope.mode === "review"
           ? "Yanlış tekrarı — en eski yanlışların önce"
-          : "Koç seansı — zayıf konuların, yanlışların ve yeni sorular")
+          : scope.mode === "favorites"
+            ? "Favorilerim — yıldızladığın sorular"
+            : "Koç seansı — zayıf konuların, yanlışların ve yeni sorular")
       }
       right={
         <span className="tabular rounded-full border border-line px-3 py-1 text-[13px] font-bold text-ink">

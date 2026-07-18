@@ -47,6 +47,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     weekly: { activeDays: 0, goalDays: 5 },
     maxDailyQuestions: 0,
     courseTrend: null,
+    weeklyPhoto: [],
     daysSinceLastActivity: 0,
     activeDaysTotal: 0,
     daysToExam: null,

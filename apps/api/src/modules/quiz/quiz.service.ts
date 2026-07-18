@@ -61,6 +61,9 @@ export class QuizService {
     if (dto.mode === 'review' && (dto.topicId != null || dto.courseId != null)) {
       throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
     }
+    if (dto.fromBookmarks && (dto.mode !== 'practice' || dto.topicId != null || dto.courseId != null)) {
+      throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
+    }
 
     // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
     const isPremiumUser = user.isPremium;
@@ -139,6 +142,30 @@ export class QuizService {
       );
       if (pool.length === 0) {
         throw new NotFoundException('Tekrar edilecek yanlışın yok — kuyruk temiz. 🎉');
+      }
+      chosen = pool.slice(0, count);
+    } else if (dto.fromBookmarks) {
+      // Favori reçetesi (Doc 25 §2): havuz = kullanıcının yer imleri, en yeni önce.
+      const marks = await this.prisma.bookmark.findMany({
+        where: { userId },
+        orderBy: { createdAt: 'desc' },
+        select: { questionId: true },
+      });
+      const questions = await this.prisma.question.findMany({
+        where: {
+          id: { in: marks.map((m) => m.questionId) },
+          deletedAt: null,
+          currentVersionId: { not: null },
+          ...(isPremiumUser ? {} : { topic: { isPremium: false } }),
+        },
+        select: { id: true, currentVersionId: true, topicId: true },
+      });
+      const orderOf = new Map(marks.map((m, i) => [m.questionId, i]));
+      const pool = [...questions].sort(
+        (a, b) => (orderOf.get(a.id) ?? 0) - (orderOf.get(b.id) ?? 0),
+      );
+      if (pool.length === 0) {
+        throw new NotFoundException('Favorine eklediğin çözülebilir soru yok.');
       }
       chosen = pool.slice(0, count);
     } else {

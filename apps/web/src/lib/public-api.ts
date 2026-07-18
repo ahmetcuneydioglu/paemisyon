@@ -147,4 +147,6 @@ export interface CoachBrief {
     records: { bestNet: number | null; longestStreak: number; maxDailyQuestions: number };
     weekly: { activeDays: number; goalDays: number };
   };
+  /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi (%). */
+  weeklyPhoto?: { courseName: string; deltaPct: number }[];
 }
