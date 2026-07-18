@@ -3,6 +3,7 @@ import { supabaseServer } from "@/lib/supabase/server";
 import { signOut } from "@/app/(auth)/actions";
 import { SiteNav } from "./site-nav";
 import { ButtonLink } from "@/components/ui/button";
+import { ThemeToggle } from "./theme-toggle";
 
 const NAV = [
   { href: "/kanunlar", label: "Kanunlar" },
@@ -59,7 +60,10 @@ export async function SiteHeader() {
           PAEMİSYON
         </Link>
         <SiteNav items={NAV} authArea={authArea} />
-        <div className="hidden md:block">{authArea}</div>
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle compact />
+          {authArea}
+        </div>
       </div>
     </header>
   );

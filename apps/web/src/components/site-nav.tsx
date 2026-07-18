@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { ThemeToggle } from "./theme-toggle";
 
 export interface NavItem {
   href: string;
@@ -69,7 +70,10 @@ export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React
                 {n.label}
               </Link>
             ))}
-            <div className="mt-1 border-t border-line p-2">{authArea}</div>
+            <div className="mt-1 flex items-center justify-between gap-2 border-t border-line p-2">
+              {authArea}
+              <ThemeToggle compact />
+            </div>
           </nav>
         </div>
       )}

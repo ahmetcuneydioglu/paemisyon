@@ -42,7 +42,10 @@ export function QuestionOfDayCard({ question, loggedIn }: { question: QuestionOf
     <div className="mx-auto max-w-2xl rounded-xl border border-white/20 bg-white/10 p-6 text-left backdrop-blur">
       <div className="mb-3 flex items-center justify-between text-sm text-white/70">
         <span>🎯 Günün Sorusu</span>
-        <span>{question.topic}</span>
+        <span>
+          {/* "Ders / Konu" aynıysa tek göster (tekrar önleme). */}
+          {[...new Set(question.topic.split(" / "))].join(" / ")}
+        </span>
       </div>
       <p className="mb-4 font-medium text-white">{question.stem}</p>
       <div className="space-y-2" role="radiogroup" aria-label="Günün sorusu şıkları">

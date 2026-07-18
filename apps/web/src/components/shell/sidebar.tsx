@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CMDK_EVENT } from "./command-palette";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 interface NavChild {
   href: string;
@@ -132,6 +133,9 @@ export function Sidebar() {
         })}
       </nav>
       <div className="mt-auto space-y-2 border-t border-line px-5 py-4 max-lg:px-2">
+        <div className="mb-1 max-lg:hidden">
+          <ThemeToggle />
+        </div>
         <Link
           href="/premium"
           className="tk-caption block text-brand hover:underline max-lg:text-center"

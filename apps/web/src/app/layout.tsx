@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans, Rubik } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { themeInitScript } from "@/lib/theme";
 
 const rubik = Rubik({
   subsets: ["latin", "latin-ext"],
@@ -26,8 +28,15 @@ export const metadata: Metadata = {
  */
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="tr" className={`${rubik.variable} ${openSans.variable}`}>
-      <body className="min-h-screen">{children}</body>
+    <html lang="tr" className={`${rubik.variable} ${openSans.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Boya öncesi tema — flash yok (gündüz/gece otomatik veya kayıtlı seçim). */}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="min-h-screen">
+        <ThemeProvider />
+        {children}
+      </body>
     </html>
   );
 }

@@ -53,8 +53,27 @@
   --tk-motion-standard: 250ms;
   --tk-ease-standard: cubic-bezier(0.65, 0, 0.35, 1);
 }
+/* Koyu tema token'ları. Tema ThemeProvider tarafından <html data-theme> ile
+   sürülür (gündüz/gece otomatik + manuel geçiş, Doc 26 dark-mode kuralı).
+   Media query yalnız JS öncesi / JS'siz taban çizgisidir. */
+:root[data-theme="dark"],
+:root[data-theme="dark"] .tk-scope {
+  --tk-brand: #85b7eb;
+  --tk-surface: #15171c;
+  --tk-surface-alt: #1d2027;
+  --tk-ink: #eceef2;
+  --tk-ink-soft: #9ba1af;
+  --tk-line: #2c3038;
+  --tk-success: #5dcaa5;
+  --tk-warning: #fac775;
+  --tk-danger: #e08578;
+  --tk-accent-session: #85b7eb;
+  --tk-accent-live: #5dcaa5;
+  --tk-accent-streak: #fac775;
+  --tk-accent-atlas: #cecbf6;
+}
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     --tk-brand: #85b7eb;
     --tk-surface: #15171c;
     --tk-surface-alt: #1d2027;
@@ -69,6 +88,11 @@
     --tk-accent-streak: #fac775;
     --tk-accent-atlas: #cecbf6;
   }
+}
+/* Koyu temada gövde zemini de tema-duyarlı olur (aksi halde beyaz sızar). */
+:root[data-theme="dark"] body {
+  background: var(--tk-surface-alt);
+  color: var(--tk-ink);
 }
 @media (prefers-reduced-motion: reduce) {
   :root {
