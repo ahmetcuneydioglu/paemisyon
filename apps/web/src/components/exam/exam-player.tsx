@@ -50,6 +50,8 @@ export function ExamPlayer({ start }: { start: StartPayload }) {
   const [finishing, setFinishing] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
   const finishingRef = useRef(false);
+  // Soru görüntülenme anı — süre yönetimi verisi (timeSpentMs) için.
+  const shownAtRef = useRef(0); // ilk değer index-effect'inde atanır (saf render)
 
   const total = start.questions.length;
   const q = start.questions[index];
@@ -105,7 +107,12 @@ export function ExamPlayer({ start }: { start: StartPayload }) {
       try {
         await apiClient(`/quiz/sessions/${start.sessionId}/answers`, {
           method: "POST",
-          body: { questionId, questionVersionId: versionId, selectedOptionId: optionId },
+          body: {
+            questionId,
+            questionVersionId: versionId,
+            selectedOptionId: optionId,
+            timeSpentMs: Date.now() - shownAtRef.current,
+          },
         });
         setSaveState((p) => ({ ...p, [questionId]: "saved" }));
       } catch (e) {
@@ -128,6 +135,11 @@ export function ExamPlayer({ start }: { start: StartPayload }) {
     }
     fn();
   }
+
+  // Soru değişince süre sayacı yeniden başlar (revisit'te üzerine yazılır).
+  useEffect(() => {
+    shownAtRef.current = Date.now();
+  }, [index]);
 
   const toggleFlag = useCallback((questionId: string) => {
     setFlags((p) => {

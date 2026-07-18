@@ -5,6 +5,7 @@ import type { AttemptResult, MyAttempt } from "@/lib/types";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { ReviewList } from "@/components/review-list";
+import { TimingStrip } from "@/components/exam/timing-strip";
 
 export const metadata: Metadata = { title: "Sınav Sonucu", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -185,6 +186,9 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
           </p>
         </Card>
       </div>
+
+      {/* Süre yönetimi şeridi (wireframe 11): soru sırasına göre harcanan süre */}
+      <TimingStrip timing={result.timing ?? []} />
 
       {/* Cevap incelemesi (miras bileşen — işlevsel; görsel tazeleme W4) */}
       <h2 className="mb-2 mt-8 font-heading text-lg font-bold text-ink">Cevap incelemesi</h2>

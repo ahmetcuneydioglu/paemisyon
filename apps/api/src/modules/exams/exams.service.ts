@@ -212,7 +212,7 @@ export class ExamsService {
     });
     const answers = await this.prisma.quizAnswer.findMany({
       where: { sessionId: session.id },
-      select: { questionId: true, selectedOptionId: true, isCorrect: true },
+      select: { questionId: true, selectedOptionId: true, isCorrect: true, timeSpentMs: true },
     });
     const answerOf = new Map(answers.map((a) => [a.questionId, a]));
     const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
@@ -253,6 +253,22 @@ export class ExamsService {
       (a, b) => b.wrong + b.blank - (a.wrong + a.blank) || b.total - a.total,
     );
 
+    // Süre yönetimi şeridi (Doc 27 wireframe 11): soru sırasına göre harcanan
+    // süre. timeSpentMs istemciden gelir; yoksa null (eski denemeler).
+    const timing = review.map((q) => {
+      const a = answerOf.get(q.questionId);
+      return {
+        order: q.order,
+        timeSpentMs: a?.timeSpentMs ?? null,
+        status:
+          a?.isCorrect === true
+            ? ('correct' as const)
+            : a?.selectedOptionId != null
+              ? ('wrong' as const)
+              : ('blank' as const),
+      };
+    });
+
     return {
       attemptId: session.id,
       exam: {
@@ -269,6 +285,7 @@ export class ExamsService {
       durationSeconds: fresh.durationSeconds,
       completedAt: fresh.completedAt,
       topicBreakdown,
+      timing,
       review,
     };
   }

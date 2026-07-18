@@ -30,6 +30,8 @@ export interface AttemptResult {
   score: number | null;
   durationSeconds: number | null;
   completedAt: string | null;
+  /** Süre yönetimi şeridi (wireframe 11): soru sırasına göre harcanan süre. */
+  timing?: { order: number; timeSpentMs: number | null; status: "correct" | "wrong" | "blank" }[];
   /** Derin analiz (wireframe 08): konu kırılımı — en çok kaybettiren üstte. */
   topicBreakdown?: {
     topicId: string;
