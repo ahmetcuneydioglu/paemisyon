@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CMDK_EVENT } from "./command-palette";
 
 const nav = [
   { href: "/bugun", label: "Bugün", icon: "◉", also: [] as string[] },
@@ -28,6 +29,20 @@ export function Sidebar() {
         <span className="max-lg:hidden">PAEMİSYON</span>
         <span className="hidden max-lg:inline">P</span>
       </Link>
+      <button
+        type="button"
+        onClick={() => window.dispatchEvent(new CustomEvent(CMDK_EVENT))}
+        className="tk-interactive mx-3 mb-2 flex cursor-pointer items-center justify-between rounded-sm border border-line px-2.5 py-1.5 text-[13px] text-ink-soft hover:border-ink-soft hover:text-ink max-lg:mx-2 max-lg:justify-center"
+        aria-label="Ara — komut paleti"
+      >
+        <span className="max-lg:hidden">Ara…</span>
+        <kbd className="tk-caption max-lg:hidden" aria-hidden>
+          ⌘K
+        </kbd>
+        <span className="hidden max-lg:inline" aria-hidden>
+          ⌕
+        </span>
+      </button>
       <nav className="flex flex-col gap-0.5 px-3 max-lg:px-2" aria-label="Ana bölgeler">
         {nav.map((item) => {
           const active = [item.href, ...item.also].some(

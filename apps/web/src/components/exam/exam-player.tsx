@@ -142,6 +142,8 @@ export function ExamPlayer({ start }: { start: StartPayload }) {
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if (finishOpen || e.metaKey || e.ctrlKey || e.altKey) return;
+      const tag = (e.target as HTMLElement | null)?.tagName;
+      if (tag === "TEXTAREA" || tag === "INPUT" || tag === "SELECT") return;
       if (e.key === "ArrowRight") setIndex((i) => Math.min(total - 1, i + 1));
       else if (e.key === "ArrowLeft") setIndex((i) => Math.max(0, i - 1));
       else if (e.key === "Escape") setFinishOpen(true);
@@ -287,6 +289,14 @@ export function ExamPlayer({ start }: { start: StartPayload }) {
               <p className="tabular mt-2 text-[12px] text-ink-soft">
                 dolu {answeredCount} · ⚑ {flaggedCount} · boş {total - answeredCount}
               </p>
+              {/* Süre yönetimi önerisi (wireframe 10): sakin, sayısal, panik yok */}
+              {timeLeft !== null && total - answeredCount > 0 && (
+                <p className="tabular mt-1 text-[12px] text-ink-soft">
+                  kalan öneri: boş soru başına ~
+                  {Math.max(1, Math.floor(timeLeft / 1000 / (total - answeredCount)))}
+                  sn
+                </p>
+              )}
             </Card>
             <Button variant="danger" className="w-full" onClick={() => setFinishOpen(true)}>
               Sınavı bitir

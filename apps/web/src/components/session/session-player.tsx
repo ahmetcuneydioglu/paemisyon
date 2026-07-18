@@ -71,6 +71,8 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   );
   const [submitting, setSubmitting] = useState(false);
   const [exitAsk, setExitAsk] = useState(false);
+  // Oturum içi not (wireframe 08): kaydedilmez, seansla yaşar.
+  const [note, setNote] = useState("");
   const questionShownAt = useRef(0);
   const startedRef = useRef(false);
 
@@ -167,6 +169,9 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     function onKey(e: KeyboardEvent) {
       if (phase.kind !== "playing" || exitAsk) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
+      // Not alanı vb. form elemanlarında yazarken kısayollar devreye girmez.
+      const tag = (e.target as HTMLElement | null)?.tagName;
+      if (tag === "TEXTAREA" || tag === "INPUT" || tag === "SELECT") return;
       const q = phase.data.questions[index];
       if (!q) return;
       if (e.key === "Escape") {
@@ -297,6 +302,15 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                 legalReference={fb.legalReference}
               />
               <div className="flex justify-end">
+                <Link
+                  href="/soru-oner"
+                  target="_blank"
+                  className="tk-caption rounded-full border border-line px-2.5 py-1 hover:text-ink"
+                >
+                  ⚑ Soruda hata bildir
+                </Link>
+              </div>
+              <div className="flex justify-end">
                 <Button size="lg" onClick={next} disabled={phase.kind === "finishing"}>
                   {isLast ? "Seansı bitir" : "Sonraki soru"}
                   <kbd className="rounded border border-current/30 px-1.5 text-[11px]" aria-hidden>
@@ -334,6 +348,18 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
               })}
             </div>
             <p className="tabular mt-2 text-[12px] text-ink-soft">{answeredCount} cevaplandı</p>
+          </Card>
+          <Card className="mt-3">
+            <CardTitle className="text-[13px]">Not</CardTitle>
+            <textarea
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              onKeyDown={(e) => e.stopPropagation()}
+              placeholder="Oturum içi karalama — kaydedilmez"
+              rows={3}
+              aria-label="Oturum içi not"
+              className="mt-1.5 w-full resize-y rounded-sm border border-line bg-surface-alt p-2 text-[13px] text-ink outline-none placeholder:text-ink-soft focus:border-brand"
+            />
           </Card>
           <p className="tk-caption mt-3 leading-relaxed">
             1–4 şık · ⏎ sonraki · Esc çıkış

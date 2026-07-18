@@ -48,6 +48,17 @@
 > exam-table dahil temizlendi). Kalan bilinçli miras: deneme cevap incelemesi
 > (ReviewList) + hesaplayıcı/rehber/profil sayfa gövdeleri — yeni kabuk altında
 > çalışıyorlar, tam re-skin sonraki iterasyona.
+> **Wireframe kapanışı (18 Tem 2026, A listesi):** ⌘K komut paleti (kanun/ders/
+> sayfa/eylem araması, sidebar tetiği, L3'te kapalı) · Bugün sağ kolonuna canlı/
+> sıradaki deneme geri sayımı + rütbe ilerleme kartı (CoachBrief.rank) · Odak'a
+> "Kanun seç…" · koç rayı gizle/hatırla (RailToggle) · seans not alanı + "hata
+> bildir" ucu · deneme oynatıcıda boş-soru-başına süre önerisi · deneme analizinde
+> "geçen denemeden ±X net" kıyası · landing SSS bloğu. KALAN eksikler API/veri
+> bekliyor — B (API eki gerek): nöbet çizelgesi, devam-eden-seans çapası,
+> yanlışlarım/akıllı tekrar/favoriler reçeteleri, ders detay sekmeli çıkmış
+> sorular + trend kolonları, kanun mini denemesi, deneme süre şeridi, aktivite
+> ısısı + haftalık rapor; C (veri/içerik): madde etiketi backfill'i, kanun metni
+> içerik hattı, deneme bölüm yapısı.
 > Kapsam: SADECE paemisyon.com web platformu. Mobil uygulamaya dokunulmaz;
 > mobil UX, mobil navigasyon ve mobil wireframe bu dokümanın konusu DEĞİLDİR.
 > Girdi: Doc 23 (Konsept C), Doc 24 (yolculuk), Doc 25 (IA), Doc 26 (tasarım dili).

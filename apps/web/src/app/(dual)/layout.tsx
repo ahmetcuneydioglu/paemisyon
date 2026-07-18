@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Sidebar } from "@/components/shell/sidebar";
+import { CommandPalette } from "@/components/shell/command-palette";
 import { supabaseServer } from "@/lib/supabase/server";
 
 /**
@@ -26,6 +27,7 @@ export default async function DualLayout({ children }: Readonly<{ children: Reac
     <div className="tk-scope flex min-h-screen font-body">
       <Sidebar />
       <main className="min-w-0 flex-1">{children}</main>
+      <CommandPalette />
     </div>
   );
 }

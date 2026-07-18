@@ -118,6 +118,14 @@ export interface CoachBrief {
   stats?: { totalSolved: number; accuracy: number; totalSessions: number };
   gamification: {
     nextBadge: { key: string; name: string; progress: number; target: number } | null;
+    /** Rütbe sistemi (Doc 24 §5) — sunucuda hesaplanır (rank.logic). */
+    rank?: {
+      level: number;
+      name: string;
+      score: number;
+      minScore: number;
+      next: { level: number; name: string; minScore: number } | null;
+    };
     records: { bestNet: number | null; longestStreak: number; maxDailyQuestions: number };
     weekly: { activeDays: number; goalDays: number };
   };

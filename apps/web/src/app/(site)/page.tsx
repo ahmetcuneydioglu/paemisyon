@@ -220,6 +220,41 @@ export default async function HomePage() {
         ))}
       </section>
 
+      {/* ── SSS'den üç soru (wireframe 01 kapanışı) ── */}
+      <section className="border-t border-line bg-surface-alt px-4 py-10">
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="font-heading text-xl font-bold text-ink">Merak edilenler</h2>
+            <Link href="/sss" className="text-[13px] font-bold text-brand hover:underline">
+              Tüm SSS →
+            </Link>
+          </div>
+          <div className="space-y-2">
+            {[
+              {
+                q: "Sorular gerçekten çıkmış sorular mı?",
+                a: "Evet — bankamızın varlık nedeni bu. Sorular resmî geçmiş sınav kitapçıklarından derlenir ve her sorunun üzerinde kaynağı yazar. Yapay zekâya soru ürettirmeyiz; AI yalnızca açıklamada yardımcı olur.",
+              },
+              {
+                q: "Ücretsiz hesapla neler yapabilirim?",
+                a: "Günde 15 soru, günün sorusu, canlı denemelere katılım, seri ve rozetler — ücretsiz katman gerçek antrenman verir, vitrin değildir.",
+              },
+              {
+                q: "Premium ne sunar?",
+                a: "Koçun tam beynini: sınırsız soru, süresiz tekrar hafızası, sınırsız AI açıklaması ve haftada 3 seri sigortası.",
+              },
+            ].map((f) => (
+              <details key={f.q} className="rounded-md border border-line bg-surface p-4">
+                <summary className="cursor-pointer font-heading text-[15px] font-bold text-ink">
+                  {f.q}
+                </summary>
+                <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Kapanış: güven + premium + kayıt ── */}
       <section className="border-t border-line px-4 py-10 text-center">
         <p className="text-[14px] text-ink-soft">

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { api } from "@/lib/api";
 import type { CoachBrief } from "@/lib/public-api";
+import type { ExamListItem } from "@/lib/types";
+import { Countdown } from "@/components/countdown";
+import { formatDate, formatTime } from "@/lib/format";
 import { webRoute } from "@/lib/routes";
 import { Card, CardTitle } from "@/components/ui/card";
 import { CoachCard } from "@/components/ui/coach-card";
@@ -18,10 +21,27 @@ export const dynamic = "force-dynamic";
  * Sahne koçundur: hero = durum makinesinin kartı (/me/coach), yanı günün özeti.
  */
 export default async function BugunPage() {
-  const brief = await api<CoachBrief>("/me/coach");
+  const [brief, exams] = await Promise.all([
+    api<CoachBrief>("/me/coach"),
+    api<ExamListItem[]>("/exams").catch(() => [] as ExamListItem[]),
+  ]);
   const { today, gamification, greeting } = brief;
   // Hero = durum makinesinin en öncelikli kartı (Doc 25 Karar 3); kalanlar destek.
   const [hero, ...cards] = brief.cards;
+  const rank = gamification.rank;
+  const rankPct =
+    rank?.next != null
+      ? Math.min(
+          100,
+          Math.round(
+            ((rank.score - rank.minScore) / Math.max(1, rank.next.minScore - rank.minScore)) * 100,
+          ),
+        )
+      : 100;
+  const nextExam = [...exams]
+    .filter((e) => e.state === "upcoming")
+    .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
+  const liveExam = exams.find((e) => e.state === "active");
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-6">
@@ -92,16 +112,69 @@ export default async function BugunPage() {
             </Card>
           )}
 
-          <Card>
-            <CardTitle className="text-[13px]">Bu hafta</CardTitle>
-            <p className="tabular mt-1 text-[13px] text-ink-soft">
-              {gamification.weekly.activeDays}/{gamification.weekly.goalDays} aktif gün
-            </p>
-          </Card>
+          {/* Sıradaki canlı deneme (wireframe 02 sağ kolon) */}
+          {(liveExam || nextExam) && (
+            <Card className={liveExam ? "border-live/50" : undefined}>
+              <CardTitle className="text-[13px]">
+                {liveExam ? "● Canlı deneme sürüyor" : "🏆 Sıradaki canlı deneme"}
+              </CardTitle>
+              {liveExam ? (
+                <>
+                  <p className="mt-1 text-[13px] text-ink-soft">{liveExam.title}</p>
+                  <Link
+                    href="/denemeler"
+                    className="mt-2 inline-block text-[13px] font-bold text-live hover:underline"
+                  >
+                    Hemen katıl →
+                  </Link>
+                </>
+              ) : (
+                nextExam && (
+                  <>
+                    <p className="mt-1 text-[13px] text-ink-soft">
+                      {nextExam.title} · {formatDate(nextExam.startAt)}{" "}
+                      {formatTime(nextExam.startAt)}
+                    </p>
+                    <div className="mt-2 text-[13px] font-bold text-ink">
+                      <Countdown target={nextExam.startAt} />
+                    </div>
+                  </>
+                )
+              )}
+            </Card>
+          )}
+
+          {/* Rütbe ilerlemesi (Doc 24 §5) */}
+          {rank && (
+            <Card>
+              <CardTitle className="text-[13px]">Rütbe: {rank.name}</CardTitle>
+              {rank.next ? (
+                <>
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-line">
+                    <div
+                      className="h-full rounded-full bg-streak"
+                      style={{ width: `${rankPct}%` }}
+                    />
+                  </div>
+                  <p className="tabular mt-1 text-[11px] text-ink-soft">
+                    {rank.next.name} rütbesine {Math.max(0, rank.next.minScore - rank.score)} puan
+                  </p>
+                </>
+              ) : (
+                <p className="mt-1 text-[13px] text-ink-soft">En yüksek rütbedesin.</p>
+              )}
+            </Card>
+          )}
 
           <Card>
             <CardTitle className="text-[13px]">Rekorların</CardTitle>
             <dl className="tabular mt-2 space-y-1.5 text-[13px] text-ink-soft">
+              <div className="flex justify-between">
+                <dt>Bu hafta</dt>
+                <dd className="font-bold text-ink">
+                  {gamification.weekly.activeDays}/{gamification.weekly.goalDays} aktif gün
+                </dd>
+              </div>
               <div className="flex justify-between">
                 <dt>En iyi net</dt>
                 <dd className="font-bold text-ink">{gamification.records.bestNet ?? "—"}</dd>

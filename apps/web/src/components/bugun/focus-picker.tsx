@@ -3,10 +3,17 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { apiClient } from "@/lib/api-client";
+import { config } from "@/lib/config";
 
 interface Module {
   id: string;
   name: string;
+}
+interface Law {
+  slug: string;
+  topicId: string;
+  name: string;
+  questionCount: number;
 }
 interface Course {
   id: string;
@@ -25,7 +32,8 @@ type Step =
   | { kind: "root" }
   | { kind: "modules"; wantTopic: boolean }
   | { kind: "courses"; moduleId: string; wantTopic: boolean; items?: Course[] }
-  | { kind: "topics"; courseId: string; courseName: string; items?: TopicNode[] };
+  | { kind: "topics"; courseId: string; courseName: string; items?: TopicNode[] }
+  | { kind: "laws"; items?: Law[] };
 
 /**
  * Odak seçici (Doc 25 §5, wireframe 03): "Konuyu sen seç, soruları ben seçeyim."
@@ -102,6 +110,20 @@ export function FocusPicker() {
     }
   }
 
+  async function enterLaws() {
+    setError(null);
+    setStep({ kind: "laws" });
+    try {
+      const res = await fetch(`${config.apiBaseUrl}/public/laws`);
+      const json = (await res.json()) as { data?: Law[] };
+      const items = (json.data ?? []).filter((l) => l.questionCount > 0);
+      setStep({ kind: "laws", items });
+    } catch {
+      setError("Kanunlar yüklenemedi. Tekrar dene.");
+      setStep({ kind: "root" });
+    }
+  }
+
   function start(params: URLSearchParams) {
     setOpen(false);
     router.push(`/seans${params.size ? `?${params}` : ""}`);
@@ -152,6 +174,9 @@ export function FocusPicker() {
               <button type="button" className={itemCls} onClick={() => void enterModules(true)}>
                 Konu seç… <span aria-hidden>›</span>
               </button>
+              <button type="button" className={itemCls} onClick={() => void enterLaws()}>
+                Kanun seç… <span aria-hidden>›</span>
+              </button>
               <p className="px-3 pb-2 pt-1.5 text-[12px] leading-relaxed text-ink-soft">
                 Odak bugünlük geçerli; kapsam içindeki soruları yine koç karıştırır.
               </p>
@@ -191,6 +216,28 @@ export function FocusPicker() {
                   <span className="tk-caption shrink-0">%{c.weightPercent}</span>
                 </button>
               ))}
+            </div>
+          )}
+
+          {step.kind === "laws" && (
+            <div className="flex max-h-80 flex-col overflow-y-auto">
+              {!step.items && <p className="px-3 py-2 text-[13px] text-ink-soft">Yükleniyor…</p>}
+              {step.items?.map((l) => (
+                <button
+                  key={l.slug}
+                  type="button"
+                  className={itemCls}
+                  onClick={() => start(new URLSearchParams({ topicId: l.topicId, scope: l.name }))}
+                >
+                  <span className="min-w-0 truncate">{l.name}</span>
+                  <span className="tk-caption shrink-0">{l.questionCount} soru</span>
+                </button>
+              ))}
+              {step.items?.length === 0 && (
+                <p className="px-3 py-2 text-[13px] text-ink-soft">
+                  Henüz sorusu olan kanun yok.
+                </p>
+              )}
             </div>
           )}
 

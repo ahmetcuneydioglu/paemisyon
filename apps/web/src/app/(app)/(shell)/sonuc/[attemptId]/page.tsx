@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { api, ApiError } from "@/lib/api";
-import type { AttemptResult } from "@/lib/types";
+import type { AttemptResult, MyAttempt } from "@/lib/types";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { ReviewList } from "@/components/review-list";
@@ -43,6 +43,16 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
     throw e;
   }
 
+  // Kıyas önce kendinle (Doc 24 §2): bir önceki tamamlanmış denemeyle net farkı.
+  const mine = await api<MyAttempt[]>("/exams/attempts/mine").catch(() => [] as MyAttempt[]);
+  const completedMine = mine
+    .filter((a) => a.status === "completed" && a.score != null)
+    .sort((a, b) => +new Date(a.startedAt) - +new Date(b.startedAt));
+  const myIndex = completedMine.findIndex((a) => a.attemptId === attemptId);
+  const prev = myIndex > 0 ? completedMine[myIndex - 1] : null;
+  const delta =
+    prev != null && result.score != null ? result.score - Number(prev.score) : null;
+
   const breakdown = result.topicBreakdown ?? [];
   const losers = breakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 3);
   const lostTotal = breakdown.reduce((s, t) => s + t.wrong + t.blank, 0);
@@ -69,6 +79,20 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
               {result.score != null ? result.score.toFixed(2) : "—"}
             </p>
             <p className="tk-caption mt-1">NET (doğru − yanlış/4)</p>
+            {delta != null && (
+              <p
+                className={[
+                  "tabular mt-1.5 text-[13px] font-bold",
+                  delta > 0 ? "text-success" : delta < 0 ? "text-warning" : "text-ink-soft",
+                ].join(" ")}
+              >
+                geçen denemeden {delta > 0 ? "+" : ""}
+                {delta.toFixed(2).replace(/\.?0+$/, "")} net
+              </p>
+            )}
+            {myIndex === 0 && (
+              <p className="tk-caption mt-1.5">ilk denemen — kıyas çizgin buradan başlıyor</p>
+            )}
             <div className="mt-4 grid grid-cols-3 gap-2 text-[13px]">
               <div className="rounded-sm bg-success/10 py-2">
                 <p className="tabular font-bold text-success">{result.correctCount}</p>
