@@ -1,0 +1,524 @@
+"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { apiClient, ApiClientError } from "@/lib/api-client";
+import { OptionRow, type OptionState } from "@/components/ui/option-row";
+import { ExplanationBox } from "@/components/ui/explanation-box";
+import { Button, ButtonLink } from "@/components/ui/button";
+import { Card, CardTitle } from "@/components/ui/card";
+
+// ── API sözleşmeleri (quiz.service ile birebir) ──
+interface SessionQuestion {
+  questionId: string;
+  versionId: string;
+  stem: string;
+  mediaUrl: string | null;
+  options: { id: string; label: string; text: string }[];
+}
+interface StartResponse {
+  sessionId: string;
+  mode: string;
+  plannedDurationSeconds: number | null;
+  questions: SessionQuestion[];
+}
+interface AnswerFeedback {
+  isCorrect: boolean;
+  correctOptionId: string | null;
+  explanation: string | null;
+  legalReference: string | null;
+  source: string | null;
+}
+interface CompleteResponse {
+  totalQuestions: number;
+  correctCount: number;
+  wrongCount: number;
+  blankCount: number;
+  score: number;
+  durationSeconds: number;
+  topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null;
+  earnedBadges: { key: string; name: string }[];
+}
+
+export interface SessionScope {
+  topicId?: string;
+  courseId?: string;
+  articleNo?: string;
+  /** Üst şeritte gösterilen insan-okur kapsam etiketi. */
+  label?: string;
+  questionCount?: number;
+}
+
+type Phase =
+  | { kind: "loading" }
+  | { kind: "error"; code: string; message: string }
+  | { kind: "playing"; data: StartResponse }
+  | { kind: "finishing"; data: StartResponse }
+  | { kind: "done"; result: CompleteResponse };
+
+/**
+ * Seans Oynatıcı — TEK çalışma odası (Doc 25 Karar 1, Doc 27 §3.6, wireframe 08).
+ * L3 Odak: kabuk yok; klavye birincil giriş (1-4 şık, Enter sonraki, Esc çıkış).
+ * Değerlendirme SUNUCUDA; istemci yalnız gösterir.
+ */
+export function SessionPlayer({ scope }: { scope: SessionScope }) {
+  const router = useRouter();
+  const [phase, setPhase] = useState<Phase>({ kind: "loading" });
+  const [index, setIndex] = useState(0);
+  const [feedback, setFeedback] = useState<Record<string, AnswerFeedback & { selected: string }>>(
+    {},
+  );
+  const [submitting, setSubmitting] = useState(false);
+  const [exitAsk, setExitAsk] = useState(false);
+  const questionShownAt = useRef(0);
+  const startedRef = useRef(false);
+
+  // ── Seans başlat ──
+  useEffect(() => {
+    if (startedRef.current) return; // StrictMode çift çağrısına karşı
+    startedRef.current = true;
+    apiClient<StartResponse>("/quiz/sessions", {
+      method: "POST",
+      body: {
+        mode: "practice",
+        ...(scope.topicId ? { topicId: scope.topicId } : {}),
+        ...(scope.courseId ? { courseId: scope.courseId } : {}),
+        ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
+        questionCount: scope.questionCount ?? 10,
+      },
+    })
+      .then((data) => {
+        questionShownAt.current = Date.now();
+        setPhase({ kind: "playing", data });
+      })
+      .catch((e: unknown) => {
+        const err = e instanceof ApiClientError ? e : null;
+        setPhase({
+          kind: "error",
+          code: err?.code ?? "UNKNOWN",
+          message: err?.message ?? "Seans başlatılamadı.",
+        });
+      });
+  }, [scope]);
+
+  const data = phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
+  const question = data?.questions[index] ?? null;
+  const currentFeedback = question ? feedback[question.questionId] : undefined;
+  const answeredCount = data ? Object.keys(feedback).length : 0;
+  const isLast = data != null && index === data.questions.length - 1;
+
+  // ── Cevap gönder (tıklama veya klavye) ──
+  const submit = useCallback(
+    async (optionId: string) => {
+      if (!data || !question || currentFeedback || submitting) return;
+      setSubmitting(true);
+      try {
+        const fb = await apiClient<AnswerFeedback>(`/quiz/sessions/${data.sessionId}/answers`, {
+          method: "POST",
+          body: {
+            questionId: question.questionId,
+            questionVersionId: question.versionId,
+            selectedOptionId: optionId,
+            timeSpentMs: Date.now() - questionShownAt.current,
+          },
+        });
+        setFeedback((f) => ({ ...f, [question.questionId]: { ...fb, selected: optionId } }));
+      } catch (e: unknown) {
+        const err = e instanceof ApiClientError ? e : null;
+        if (err?.code === "DAILY_LIMIT_REACHED") {
+          setPhase({ kind: "error", code: err.code, message: err.message });
+        }
+        // Diğer hatalar: sessiz bırakma yok — şık tekrar tıklanabilir kalır.
+      } finally {
+        setSubmitting(false);
+      }
+    },
+    [data, question, currentFeedback, submitting],
+  );
+
+  // ── Bitir ──
+  const complete = useCallback(async () => {
+    if (!data) return;
+    setPhase({ kind: "finishing", data });
+    try {
+      const result = await apiClient<CompleteResponse>(
+        `/quiz/sessions/${data.sessionId}/complete`,
+        { method: "POST" },
+      );
+      setPhase({ kind: "done", result });
+    } catch {
+      setPhase({ kind: "playing", data });
+    }
+  }, [data]);
+
+  const next = useCallback(() => {
+    if (!data || !currentFeedback) return;
+    if (isLast) {
+      void complete();
+    } else {
+      setIndex((i) => i + 1);
+      questionShownAt.current = Date.now();
+    }
+  }, [data, currentFeedback, isLast, complete]);
+
+  // ── Klavye (Doc 27 §2.2): 1-4/A-D şık · Enter sonraki · Esc çıkış ──
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (phase.kind !== "playing" || exitAsk) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const q = phase.data.questions[index];
+      if (!q) return;
+      if (e.key === "Escape") {
+        setExitAsk(true);
+        return;
+      }
+      if (e.key === "Enter") {
+        e.preventDefault();
+        next();
+        return;
+      }
+      if (feedback[q.questionId]) return;
+      const num = Number.parseInt(e.key, 10);
+      let opt: { id: string } | undefined;
+      if (num >= 1 && num <= q.options.length) opt = q.options[num - 1];
+      else {
+        const letter = e.key.toLocaleUpperCase("tr-TR");
+        opt = q.options.find((o) => o.label.toLocaleUpperCase("tr-TR") === letter);
+      }
+      if (opt) void submit(opt.id);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [phase, index, feedback, exitAsk, next, submit]);
+
+  // ═══ Görünümler ═══
+
+  if (phase.kind === "loading") {
+    return (
+      <FocusFrame label={scope.label ?? "Koç seansı"}>
+        <div className="mx-auto max-w-2xl space-y-3 py-10" aria-busy>
+          <div className="h-5 w-2/3 animate-pulse rounded-sm bg-line" />
+          {[0, 1, 2, 3].map((i) => (
+            <div key={i} className="h-12 animate-pulse rounded-sm bg-line" />
+          ))}
+        </div>
+      </FocusFrame>
+    );
+  }
+
+  if (phase.kind === "error") {
+    const isLimit = phase.code === "DAILY_LIMIT_REACHED";
+    return (
+      <FocusFrame label={scope.label ?? "Koç seansı"}>
+        <div className="mx-auto max-w-md py-16 text-center">
+          {/* Limit duvarı — Doc 25 akış H: "koç seni durdurmak istemiyor" çerçevesi */}
+          <p className="text-3xl" aria-hidden>
+            {isLimit ? "🎯" : "⚠️"}
+          </p>
+          <h1 className="mt-3 font-heading text-lg font-bold text-ink">
+            {isLimit ? "Bugünlük antrenman doldu" : "Bir sorun çıktı"}
+          </h1>
+          <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
+            {isLimit
+              ? "Koç seni durdurmak istemiyor — ama ücretsiz günlük hak burada bitiyor. Premium'la sınır kalkar; emeğin ve haritan seni bekliyor."
+              : phase.message}
+          </p>
+          <div className="mt-6 flex justify-center gap-3">
+            <ButtonLink href="/bugun" variant={isLimit ? "secondary" : "primary"}>
+              Bugün&apos;e dön
+            </ButtonLink>
+            {isLimit && <ButtonLink href="/sss">Premium&apos;u incele</ButtonLink>}
+          </div>
+        </div>
+      </FocusFrame>
+    );
+  }
+
+  if (phase.kind === "done") {
+    return <SessionResult result={phase.result} scopeLabel={scope.label} />;
+  }
+
+  // playing / finishing
+  const fb = currentFeedback;
+
+  return (
+    <FocusFrame
+      label={scope.label ?? "Koç seansı — zayıf konuların, yanlışların ve yeni sorular"}
+      right={
+        <span className="tabular rounded-full border border-line px-3 py-1 text-[13px] font-bold text-ink">
+          {Math.min(index + 1, data!.questions.length)} / {data!.questions.length}
+        </span>
+      }
+      onExit={() => setExitAsk(true)}
+    >
+      <div className="mx-auto grid max-w-5xl gap-8 px-6 lg:grid-cols-[1fr_220px]">
+        {/* Soru alanı (≤65ch) */}
+        <div className="max-w-[65ch]">
+          <p className="tk-caption">Soru {index + 1}</p>
+          <p className="mt-2 text-[17px] leading-relaxed text-ink">{question!.stem}</p>
+          {question!.mediaUrl && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={question!.mediaUrl}
+              alt="Soru görseli"
+              className="mt-3 max-h-72 rounded-md border border-line"
+            />
+          )}
+
+          <div className="mt-5 space-y-2">
+            {question!.options.map((o, i) => {
+              let state: OptionState = "idle";
+              if (fb) {
+                if (o.id === fb.correctOptionId) state = "correct";
+                else if (o.id === fb.selected) state = "wrong";
+                else state = "dim";
+              }
+              return (
+                <OptionRow
+                  key={o.id}
+                  label={o.label}
+                  text={o.text}
+                  state={state}
+                  keyHint={String(i + 1)}
+                  disabled={!!fb || submitting}
+                  onSelect={() => void submit(o.id)}
+                />
+              );
+            })}
+          </div>
+
+          {fb && (
+            <div className="mt-4 space-y-4">
+              <ExplanationBox
+                isCorrect={fb.isCorrect}
+                explanation={fb.explanation}
+                source={fb.source}
+                legalReference={fb.legalReference}
+              />
+              <div className="flex justify-end">
+                <Button size="lg" onClick={next} disabled={phase.kind === "finishing"}>
+                  {isLast ? "Seansı bitir" : "Sonraki soru"}
+                  <kbd className="rounded border border-current/30 px-1.5 text-[11px]" aria-hidden>
+                    ⏎
+                  </kbd>
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Yardımcı panel: seans akışı + kısayollar */}
+        <aside className="max-lg:hidden">
+          <Card>
+            <CardTitle className="text-[13px]">Seans akışı</CardTitle>
+            <div className="mt-2 grid grid-cols-5 gap-1.5" aria-hidden>
+              {data!.questions.map((q, i) => {
+                const f = feedback[q.questionId];
+                return (
+                  <span
+                    key={q.questionId}
+                    className={[
+                      "grid aspect-square place-items-center rounded text-[11px] font-bold",
+                      i === index ? "ring-2 ring-brand" : "",
+                      f
+                        ? f.isCorrect
+                          ? "bg-success/20 text-success"
+                          : "bg-danger/20 text-danger"
+                        : "bg-line text-ink-soft",
+                    ].join(" ")}
+                  >
+                    {f ? (f.isCorrect ? "✓" : "✗") : i + 1}
+                  </span>
+                );
+              })}
+            </div>
+            <p className="tabular mt-2 text-[12px] text-ink-soft">{answeredCount} cevaplandı</p>
+          </Card>
+          <p className="tk-caption mt-3 leading-relaxed">
+            1–4 şık · ⏎ sonraki · Esc çıkış
+          </p>
+        </aside>
+      </div>
+
+      {/* Çıkış diyaloğu — ilerleme kaybolmaz (cevaplar sunucuda) */}
+      {exitAsk && (
+        <div
+          role="alertdialog"
+          aria-modal="true"
+          aria-label="Seanstan çık"
+          className="fixed inset-0 z-50 grid place-items-center bg-ink/40 p-4"
+        >
+          <Card className="w-full max-w-sm p-6">
+            <CardTitle>Seanstan çıkıyor musun?</CardTitle>
+            <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+              Cevapların kaydedildi; hedefe sayılması için seansın tamamlanması gerekir.
+            </p>
+            <div className="mt-5 flex justify-end gap-2">
+              <Button variant="ghost" onClick={() => setExitAsk(false)}>
+                Devam et
+              </Button>
+              {answeredCount > 0 && (
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    setExitAsk(false);
+                    void complete();
+                  }}
+                >
+                  Bitir ve sonucu gör
+                </Button>
+              )}
+              <Button variant="danger" onClick={() => router.push("/bugun")}>
+                Çık
+              </Button>
+            </div>
+          </Card>
+        </div>
+      )}
+    </FocusFrame>
+  );
+}
+
+/** L3 odak çerçevesi: ince üst şerit (çıkış · bağlam · sağ uç), kabuk yok. */
+function FocusFrame({
+  label,
+  right,
+  onExit,
+  children,
+}: {
+  label: string;
+  right?: React.ReactNode;
+  onExit?: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-20 flex items-center gap-4 border-b border-line bg-surface px-4 py-2.5">
+        {onExit ? (
+          <button
+            type="button"
+            onClick={onExit}
+            aria-label="Seanstan çık"
+            className="tk-interactive grid size-8 cursor-pointer place-items-center rounded-sm text-ink-soft hover:bg-line/40 hover:text-ink"
+          >
+            ✕
+          </button>
+        ) : (
+          <Link
+            href="/bugun"
+            aria-label="Bugün'e dön"
+            className="tk-interactive grid size-8 place-items-center rounded-sm text-ink-soft hover:bg-line/40 hover:text-ink"
+          >
+            ✕
+          </Link>
+        )}
+        {/* Reçete şeffaflığı — tek satır (Doc 24 §9) */}
+        <p className="tk-caption min-w-0 flex-1 truncate normal-case tracking-normal">{label}</p>
+        {right}
+      </header>
+      <div className="py-8">{children}</div>
+    </div>
+  );
+}
+
+/** Seans Sonucu (Doc 27 §3.7, wireframe 09): skor + kırılım + tek eve dönüş çapası. */
+function SessionResult({
+  result,
+  scopeLabel,
+}: {
+  result: CompleteResponse;
+  scopeLabel?: string;
+}) {
+  const pct =
+    result.totalQuestions > 0
+      ? Math.round((result.correctCount / result.totalQuestions) * 100)
+      : 0;
+  const minutes = Math.max(1, Math.round(result.durationSeconds / 60));
+  const weakest = result.topicBreakdown
+    ?.filter((t) => t.total >= 2)
+    .sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
+
+  return (
+    <FocusFrame label={scopeLabel ?? "Seans sonucu"}>
+      <div className="mx-auto grid max-w-4xl gap-4 px-6 lg:grid-cols-2">
+        <div className="space-y-4">
+          <Card className="p-6 text-center">
+            <p className="tk-caption">
+              {scopeLabel ?? "Koç seansı"} · {minutes} dk
+            </p>
+            <p className="tabular mt-2 font-heading text-5xl font-bold text-ink">
+              {result.correctCount}
+              <span className="text-2xl text-ink-soft">/{result.totalQuestions}</span>
+            </p>
+            <p className="tabular mt-1 text-[14px] text-ink-soft">doğruluk %{pct}</p>
+            {result.earnedBadges.length > 0 && (
+              <p className="mt-3 rounded-md bg-streak/10 px-3 py-2 text-[14px] font-bold text-streak">
+                🎖 Yeni rozet: {result.earnedBadges.map((b) => b.name).join(", ")}
+              </p>
+            )}
+          </Card>
+
+          {/* Koç yorumu — rakam konuşur (Doc 26 dil kuralı 1) */}
+          <Card className="border-brand/30">
+            <CardTitle className="text-[13px] text-brand">Koç</CardTitle>
+            <p className="mt-1 text-[15px] leading-relaxed text-ink">
+              {result.wrongCount > 0
+                ? `${result.wrongCount} yanlışını yanlış havuzuna ekledim — tekrarında karşına çıkacaklar.`
+                : "Tam isabet. Yarın yeni sorularla devam."}
+              {weakest && weakest.correct / weakest.total < 0.6 && (
+                <> En çok {weakest.topicName} zorladı ({weakest.correct}/{weakest.total}).</>
+              )}
+            </p>
+          </Card>
+
+          <div className="flex flex-wrap gap-3">
+            <ButtonLink href="/bugun" size="lg">
+              Bugün&apos;e dön
+            </ButtonLink>
+            <ButtonLink href="/seans" variant="secondary" size="lg">
+              Yeni seans
+            </ButtonLink>
+          </div>
+        </div>
+
+        <Card>
+          <CardTitle className="text-[13px]">Konu kırılımı</CardTitle>
+          {result.topicBreakdown && result.topicBreakdown.length > 0 ? (
+            <table className="mt-2 w-full text-[14px]">
+              <thead>
+                <tr className="tk-caption border-b border-line text-left">
+                  <th className="py-1.5 font-semibold">Konu</th>
+                  <th className="py-1.5 text-right font-semibold">Doğru</th>
+                </tr>
+              </thead>
+              <tbody>
+                {result.topicBreakdown.map((t) => {
+                  const ratio = t.total > 0 ? t.correct / t.total : 0;
+                  return (
+                    <tr key={t.topicId} className="border-b border-line last:border-0">
+                      <td className="py-2 pr-2 text-ink">{t.topicName}</td>
+                      <td
+                        className={[
+                          "tabular py-2 text-right font-bold",
+                          ratio < 0.4 ? "text-danger" : ratio < 0.6 ? "text-warning" : "text-success",
+                        ].join(" ")}
+                      >
+                        {t.correct}/{t.total}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          ) : (
+            <p className="mt-2 text-[14px] text-ink-soft">
+              Tek konuluk seans — kırılım yok. Doğru {result.correctCount}, yanlış{" "}
+              {result.wrongCount}, boş {result.blankCount}.
+            </p>
+          )}
+        </Card>
+      </div>
+    </FocusFrame>
+  );
+}

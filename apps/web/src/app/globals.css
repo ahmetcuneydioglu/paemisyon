@@ -77,6 +77,61 @@
   }
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Token → Tailwind köprüsü (Doc 26 §3 → Doc 27 W1).
+   Yeni ekranlar yalnız bu adları kullanır: bg-surface, text-ink,
+   border-line, text-brand, bg-session… Ham hex YASAK.
+───────────────────────────────────────────────────────────── */
+@theme inline {
+  --color-brand: var(--tk-brand);
+  --color-surface: var(--tk-surface);
+  --color-surface-alt: var(--tk-surface-alt);
+  --color-ink: var(--tk-ink);
+  --color-ink-soft: var(--tk-ink-soft);
+  --color-line: var(--tk-line);
+  --color-success: var(--tk-success);
+  --color-warning: var(--tk-warning);
+  --color-danger: var(--tk-danger);
+  --color-session: var(--tk-accent-session);
+  --color-live: var(--tk-accent-live);
+  --color-streak: var(--tk-accent-streak);
+  --color-atlas: var(--tk-accent-atlas);
+  --radius-sm: var(--tk-radius-sm);
+  --radius-md: var(--tk-radius-md);
+  --radius-lg: var(--tk-radius-lg);
+}
+
+/* Yeni ekran taban yüzeyi: app kabuğu koyu temada da doğru zemini alır. */
+.tk-scope {
+  background: var(--tk-surface-alt);
+  color: var(--tk-ink);
+  font-size: 15px;
+}
+.tk-scope :focus-visible {
+  outline: 2px solid var(--tk-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.tk-scope .tabular { font-variant-numeric: tabular-nums; }
+
+/* caption stili (Doc 26 tipografi: 11/500 UPPERCASE %6 tracking) */
+.tk-caption {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tk-ink-soft);
+}
+
+/* Kart geçişleri — quick geri bildirim (Doc 26 §3.4) */
+.tk-interactive {
+  transition:
+    background-color var(--tk-motion-quick) ease-out,
+    border-color var(--tk-motion-quick) ease-out,
+    color var(--tk-motion-quick) ease-out,
+    transform var(--tk-motion-quick) ease-out;
+}
+
 /* Icomoon — eski sitenin ikon fontu, birebir aynı glifler */
 @font-face {
   font-family: "icomoon";

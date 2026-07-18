@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Rubik } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/site-header";
-import { SiteFooter } from "@/components/site-footer";
 
 const rubik = Rubik({
   subsets: ["latin", "latin-ext"],
@@ -21,14 +19,15 @@ export const metadata: Metadata = {
     "Polislik sınavlarına gerçek sınav formatında online deneme: canlı denemeler, sıralama ve soru incelemesi.",
 };
 
+/**
+ * Kök layout yalnız font + global stil taşır. Sayfa kabuğu route gruplarında:
+ * (site) = public üst nav + footer · (app) = girişli sol sidebar kabuğu (Doc 27 L2)
+ * (auth) = ortalanmış tek kolon.
+ */
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="tr" className={`${rubik.variable} ${openSans.variable}`}>
-      <body className="flex min-h-screen flex-col">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
-      </body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }

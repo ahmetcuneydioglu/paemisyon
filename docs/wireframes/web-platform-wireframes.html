@@ -1,0 +1,752 @@
+<meta charset="utf-8">
+<title>Paemisyon — Web Platform Wireframe Seti (paemisyon.com)</title>
+<style>
+  :root {
+    --paper: #f6f6f4; --ink: #22242a; --ink-soft: #5c5f68; --line: #c8cad0;
+    --fill: #e8e9ec; --fill-strong: #d5d7dc; --frame-bg: #fdfdfc;
+    --accent: #2456a6; --accent-soft: #e3eaf6; --good: #3d7a4e;
+    --warn: #a07514; --bad: #a3372a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17181c; --ink: #e8e9ec; --ink-soft: #9a9da6; --line: #3a3d45;
+      --fill: #24262c; --fill-strong: #33363e; --frame-bg: #1d1f24;
+      --accent: #7ea3dd; --accent-soft: #253248; --good: #7fb98e;
+      --warn: #d9b36a; --bad: #d98a7e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #17181c; --ink: #e8e9ec; --ink-soft: #9a9da6; --line: #3a3d45;
+    --fill: #24262c; --fill-strong: #33363e; --frame-bg: #1d1f24;
+    --accent: #7ea3dd; --accent-soft: #253248; --good: #7fb98e;
+    --warn: #d9b36a; --bad: #d98a7e;
+  }
+  :root[data-theme="light"] {
+    --paper: #f6f6f4; --ink: #22242a; --ink-soft: #5c5f68; --line: #c8cad0;
+    --fill: #e8e9ec; --fill-strong: #d5d7dc; --frame-bg: #fdfdfc;
+    --accent: #2456a6; --accent-soft: #e3eaf6; --good: #3d7a4e;
+    --warn: #a07514; --bad: #a3372a;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.45; margin: 0; padding: 2.5rem 1.25rem 5rem;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  header.doc h1 { font-size: 1.7rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
+  header.doc p.sub { color: var(--ink-soft); margin: 0 0 1.2rem; max-width: 70ch; }
+  .meta { font-family: ui-monospace, Menlo, monospace; font-size: .72rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .08em; }
+  nav.toc { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0 0; }
+  nav.toc a { font-size: .78rem; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-radius: 999px; padding: .28rem .7rem; background: var(--frame-bg); }
+  nav.toc a:hover { border-color: var(--accent); color: var(--accent); }
+
+  section.screen { margin-top: 3.2rem; }
+  section.screen > h2 { font-size: 1.15rem; margin: 0 0 .15rem; }
+  section.screen > p.desc { color: var(--ink-soft); font-size: .86rem; margin: 0 0 .9rem; max-width: 78ch; }
+  .tag { display: inline-block; font-family: ui-monospace, Menlo, monospace; font-size: .65rem; text-transform: uppercase; letter-spacing: .07em; border: 1px solid var(--line); border-radius: 4px; padding: .1rem .4rem; color: var(--ink-soft); margin-left: .4rem; vertical-align: 2px; }
+
+  /* ==== frame = desktop viewport ==== */
+  .frame {
+    background: var(--frame-bg); border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden; font-size: .72rem; box-shadow: 0 1px 3px rgb(0 0 0 / .06);
+  }
+  .frame .chrome { display: flex; gap: .35rem; align-items: center; padding: .45rem .7rem; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-family: ui-monospace, Menlo, monospace; font-size: .62rem; }
+  .frame .chrome i { width: .55rem; height: .55rem; border-radius: 50%; background: var(--fill-strong); display: inline-block; }
+  .frame .chrome .url { margin-left: .5rem; border: 1px solid var(--line); border-radius: 999px; padding: .1rem .8rem; background: var(--fill); }
+
+  /* generic building blocks */
+  .box { background: var(--fill); border: 1px solid var(--line); border-radius: 6px; padding: .45rem .55rem; color: var(--ink-soft); }
+  .box.strong { background: var(--fill-strong); }
+  .box.ghost { background: transparent; border-style: dashed; }
+  .box.cta { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 650; text-align: center; }
+  .box.hero-cta { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; text-align: center; padding: .7rem; font-size: .82rem; }
+  .k { color: var(--ink); font-weight: 650; }
+  .cap { font-family: ui-monospace, Menlo, monospace; font-size: .58rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-soft); }
+  .good { color: var(--good); } .warn { color: var(--warn); } .bad { color: var(--bad); } .acc { color: var(--accent); }
+  .bar { height: .45rem; border-radius: 999px; background: var(--fill-strong); overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--accent); }
+  .pill { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: .06rem .5rem; font-size: .62rem; background: var(--frame-bg); color: var(--ink-soft); }
+  .pill.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .row { display: flex; gap: .5rem; align-items: center; }
+  .row.between { justify-content: space-between; }
+  .stack { display: flex; flex-direction: column; gap: .5rem; }
+  hr.thin { border: 0; border-top: 1px solid var(--line); margin: .5rem 0; }
+
+  /* app shell (L2) */
+  .shell { display: grid; grid-template-columns: 150px 1fr 200px; min-height: 540px; }
+  .shell.no-rail { grid-template-columns: 150px 1fr; }
+  .side { border-right: 1px solid var(--line); padding: .6rem .5rem; display: flex; flex-direction: column; gap: .18rem; background: var(--fill); }
+  .side .logo { font-weight: 800; color: var(--ink); padding: .2rem .45rem .6rem; letter-spacing: -.01em; }
+  .side a { display: block; padding: .32rem .45rem; border-radius: 6px; color: var(--ink-soft); text-decoration: none; }
+  .side a.on { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  .side .sub { padding-left: 1.1rem; font-size: .68rem; }
+  .side .foot { margin-top: auto; border-top: 1px solid var(--line); padding-top: .5rem; color: var(--ink-soft); }
+  .main { padding: .8rem .9rem 1rem; min-width: 0; }
+  .topstrip { display: flex; align-items: center; gap: .6rem; border-bottom: 1px solid var(--line); padding: 0 .9rem .5rem; margin: .7rem 0 0; color: var(--ink-soft); }
+  .topstrip .search { flex: 1; max-width: 260px; border: 1px solid var(--line); border-radius: 6px; padding: .22rem .6rem; background: var(--frame-bg); }
+  .rail { border-left: 1px solid var(--line); padding: .7rem .6rem; background: var(--fill); display: flex; flex-direction: column; gap: .55rem; }
+  .rail h4 { margin: 0; font-size: .66rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-soft); }
+  .card { background: var(--frame-bg); border: 1px solid var(--line); border-radius: 8px; padding: .55rem .6rem; }
+  .card h5 { margin: 0 0 .25rem; font-size: .72rem; color: var(--ink); }
+  .card p { margin: 0; color: var(--ink-soft); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; }
+
+  table.wf { width: 100%; border-collapse: collapse; font-size: .68rem; }
+  table.wf th { text-align: left; font-family: ui-monospace, Menlo, monospace; font-size: .58rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding: .3rem .4rem; }
+  table.wf td { border-bottom: 1px solid var(--line); padding: .34rem .4rem; color: var(--ink-soft); }
+  table.wf td:first-child { color: var(--ink); }
+
+  /* annotations */
+  .notes { margin: .7rem 0 0; padding: 0; list-style: none; font-size: .8rem; color: var(--ink-soft); }
+  .notes li { margin: .25rem 0; padding-left: 1.4rem; position: relative; }
+  .notes li b.n { position: absolute; left: 0; top: .05rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: .6rem; display: flex; align-items: center; justify-content: center; }
+  .ann { display: inline-flex; width: .95rem; height: .95rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: .58rem; align-items: center; justify-content: center; font-weight: 700; vertical-align: text-top; }
+
+  .heat { display: flex; align-items: center; gap: .35rem; }
+  .heat i { display: block; height: .5rem; background: var(--accent); border-radius: 3px; }
+  .cells { display: grid; grid-template-columns: repeat(19, 1fr); gap: 3px; }
+  .cells i { aspect-ratio: 1; border-radius: 3px; background: var(--fill-strong); }
+  .cells i.c { background: var(--good); opacity: .75; }
+  .cells i.x { background: var(--bad); opacity: .7; }
+  .cells i.h { outline: 2px solid var(--accent); }
+
+  .qmap { display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; }
+  .qmap i { aspect-ratio: 1; border-radius: 3px; background: var(--fill-strong); font-size: .5rem; display: flex; align-items: center; justify-content: center; color: var(--ink-soft); }
+  .qmap i.d { background: var(--accent); opacity: .8; color: #fff; }
+  .qmap i.f { background: var(--warn); opacity: .75; color: #fff; }
+  .qmap i.cur { outline: 2px solid var(--accent); }
+
+  .opt { border: 1px solid var(--line); border-radius: 8px; padding: .5rem .6rem; display: flex; gap: .5rem; align-items: center; color: var(--ink-soft); background: var(--frame-bg); }
+  .opt .key { font-family: ui-monospace, Menlo, monospace; border: 1px solid var(--line); border-radius: 4px; padding: 0 .32rem; font-size: .6rem; }
+  .opt.sel { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+  .opt.ok { border-color: var(--good); color: var(--good); }
+  .opt.no { border-color: var(--bad); color: var(--bad); }
+
+  footer.doc { margin-top: 4rem; border-top: 1px solid var(--line); padding-top: 1rem; color: var(--ink-soft); font-size: .8rem; }
+</style>
+
+<div class="wrap">
+<header class="doc">
+  <p class="meta">Doc 27 eki · yalnız paemisyon.com (web) · masaüstü ≥1280px · gri kutu = içerik yeri, metinler temsili</p>
+  <h1>Paemisyon — Web Platform Wireframe Seti</h1>
+  <p class="sub">12 ekran, 4 layout şablonu (L1 Kapı · L2 Çalışma Alanı · L3 Odak · L4 Okuma).
+  Mobil uygulama bu setin kapsamı dışındadır. Mavi numaralar <span class="ann">1</span> her ekranın altındaki karar notlarına bağlıdır.</p>
+  <nav class="toc">
+    <a href="#w01">01 Landing</a><a href="#w02">02 Bugün</a><a href="#w03">03 Odak popover</a>
+    <a href="#w04">04 Kütüphane</a><a href="#w05">05 Ders detay</a><a href="#w06">06 Kanun detay</a>
+    <a href="#w07">07 Madde detay</a><a href="#w08">08 Seans Oynatıcı</a><a href="#w09">09 Seans Sonucu</a>
+    <a href="#w10">10 Deneme Oynatıcı</a><a href="#w11">11 Deneme Analizi</a><a href="#w12">12 Performans</a>
+  </nav>
+</header>
+
+<!-- ============ 01 LANDING ============ -->
+<section class="screen" id="w01">
+  <h2>01 · Landing — girişsiz ana sayfa <span class="tag">L1 Kapı</span><span class="tag">SSG</span></h2>
+  <p class="desc">Tek hedef: 60 saniyede değer. Hero pazarlama sloganı değil, çözülebilir gerçek çıkmış sorudur.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com</span></div>
+    <div style="padding:.7rem 1.4rem 1.2rem; max-width:980px; margin:0 auto;">
+      <div class="row between" style="padding:.3rem 0 .8rem; border-bottom:1px solid var(--line);">
+        <span class="k">PAEMİSYON</span>
+        <span class="row" style="gap:.9rem; color:var(--ink-soft);">Kanunlar · Sınavlar · Çıkmış Sorular · Denemeler</span>
+        <span class="row"><span class="pill">Giriş</span><span class="pill on">Kayıt ol</span></span>
+      </div>
+      <div class="grid2" style="grid-template-columns: 1.2fr .8fr; margin-top:.9rem;">
+        <div class="stack">
+          <span class="cap">Günün sorusu · kaynak: 2025 Adalet Bakanlığı GYS <span class="ann">1</span></span>
+          <div class="box" style="background:var(--frame-bg); padding:.7rem;">
+            <span class="k">PVSK m.16'ya göre zor kullanma yetkisi… (gerçek soru kökü)</span>
+            <div class="stack" style="margin-top:.5rem;">
+              <div class="opt"><span class="key">A</span> şık metni</div>
+              <div class="opt sel"><span class="key">B</span> şık metni — tıklandı</div>
+              <div class="opt"><span class="key">C</span> şık metni</div>
+              <div class="opt"><span class="key">D</span> şık metni</div>
+            </div>
+            <div class="box ghost" style="margin-top:.5rem;">✓ anında sonuç + açıklama + kaynak etiketi <span class="ann">2</span></div>
+          </div>
+          <div class="box hero-cta">Serini başlat — ilerlemen kaydedilsin</div>
+        </div>
+        <div class="stack">
+          <div class="card"><h5>866+ kaynaklı çıkmış soru</h5><p>AI üretimi yok; her sorunun kaynağı görünür <span class="ann">3</span></p></div>
+          <div class="card"><h5>Madde Isı Haritası</h5><p>"PVSK'da soruların %52'si 5 maddeden" — Türkiye'de tek</p></div>
+          <div class="card"><h5>Canlı deneme · Çarşamba 20.00</h5><p>Geri sayım: 2g 4s 12dk · Türkiye sıralaması <span class="ann">4</span></p></div>
+        </div>
+      </div>
+      <hr class="thin" style="margin:1rem 0;">
+      <span class="cap">Kanun kütüphanesi (SEO vitrini) <span class="ann">5</span></span>
+      <div class="grid3" style="margin-top:.4rem;">
+        <div class="box">2559 PVSK · 118 soru</div><div class="box">5271 CMK · 96 soru</div><div class="box">7068 Disiplin · 74 soru</div>
+        <div class="box">2911 Toplantı-Gösteri · 61</div><div class="box">6136 Ateşli Silahlar · 48</div><div class="box ghost">30 kanunun tümü →</div>
+      </div>
+      <div class="grid2" style="margin-top:.8rem;">
+        <div class="box strong"><span class="k">PAEM rehberi</span><br>format · %ağırlıklar · dersler</div>
+        <div class="box strong"><span class="k">Misyon rehberi</span><br>mevzuat ağırlıklı yol haritası</div>
+      </div>
+      <div class="row" style="margin-top:.9rem; gap:.6rem;">
+        <div class="box ghost" style="flex:1;">fiyat özeti — ücretsiz katmanın gerçek değeri önde <span class="ann">6</span></div>
+        <div class="box ghost" style="flex:1;">SSS'den 3 soru + footer (yasal · iletişim)</div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Hero = etkileşimli günün sorusu. Kayıtsız çözülür; güven ("bunlar gerçek sorular") ilk 60 saniyede kurulur (Doc 24 gün 0).</li>
+    <li><b class="n">2</b>Cevap anında açıklama + kaynak etiketi açılır; tek CTA kayıt gerekçesini söyler: "serin kaydedilsin".</li>
+    <li><b class="n">3</b>Kanıt blokları rakam konuşur, sıfat susmaz kuralı (Doc 26): sayı + doğrulanabilir iddia.</li>
+    <li><b class="n">4</b>Canlı deneme geri sayımı gerçek zamanlıdır — "yaşayan platform" hissinin girişsiz kanıtı.</li>
+    <li><b class="n">5</b>Kanun kartları public kanun sayfalarına (L4 vitrin derinliği) bağlanır; iç bağlantı örgüsü Doc 23 SEO omurgası.</li>
+    <li><b class="n">6</b>Fiyat landing'de özet; tam sayfa /premium. Karanlık desen yok: ücretsiz katmanın değeri açıkça yazılır.</li>
+  </ul>
+</section>
+
+<!-- ============ 02 BUGÜN ============ -->
+<section class="screen" id="w02">
+  <h2>02 · Bugün — girişli ana sayfa <span class="tag">L2 Çalışma Alanı</span><span class="tag">durum: normal</span></h2>
+  <p class="desc">Koçun sahnesi, web genişliğinde: sol sahne (hero + destek kartları), sağ günün özeti. Bu sayfada ayrıca koç rayı yok — sahnenin kendisi koç.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/bugun</span></div>
+    <div class="shell no-rail">
+      <div class="side">
+        <div class="logo">PAEMİSYON</div>
+        <a class="on">● Bugün</a>
+        <a>Kütüphane</a>
+        <a>Denemeler</a>
+        <a>Performans</a>
+        <a>Ben</a>
+        <div class="foot"><span class="pill">Premium'a geç</span><br><br>⚙ Ayarlar</div>
+      </div>
+      <div style="min-width:0;">
+        <div class="topstrip">
+          <span class="search">⌘K — ara veya git… <span class="ann">1</span></span>
+          <span style="margin-left:auto;">🔥 12 gün · sigorta 1/1</span>
+          <span class="pill">Ahmet · Kıdemli</span>
+        </div>
+        <div class="main" style="display:grid; grid-template-columns: 1.9fr 1fr; gap:.8rem;">
+          <div class="stack">
+            <div class="card" style="border-color:var(--accent); padding:.8rem;">
+              <span class="cap acc">Koç · Salı</span>
+              <h5 style="font-size:.85rem; margin:.2rem 0;">2911'de 3 haftadır %40'tasın. Bugünkü seansın ağırlığı orada — hazır mısın? <span class="ann">2</span></h5>
+              <div class="box hero-cta" style="margin-top:.5rem;">Bugün Çalış — 20 soru</div>
+              <p style="margin-top:.35rem; text-align:center;">Odak: Koç seçiyor ▾ <span class="ann">3</span></p>
+            </div>
+            <div class="grid2">
+              <div class="card"><h5>🔁 Yanlış tekrarı</h5><p>Salı'nın 4 yanlışından 5 dk'lık tekrar hazır → başlat</p></div>
+              <div class="card"><h5>🏆 Pazar 10.00 canlı deneme</h5><p>Kayıt oldun mu? Geri sayım 4g 18s → katıl</p></div>
+              <div class="card"><h5>Zayıf konu: 2911 Toplantı-Gösteri</h5><p>%38 doğruluk · 10 soruluk kapatma seansı →</p></div>
+              <div class="card"><h5>Rütbe: Kıdemli → Ekip Amiri</h5><p>340 puan kaldı · <span style="display:inline-block;width:60%;vertical-align:middle;" class="bar"><i style="width:72%"></i></span></p></div>
+            </div>
+            <div class="card">
+              <span class="cap">Son 7 gün — nöbet çizelgesi <span class="ann">4</span></span>
+              <div class="row" style="margin-top:.4rem; gap:4px;">
+                <div class="box strong" style="flex:1;text-align:center;">Pzt<br>24</div><div class="box strong" style="flex:1;text-align:center;">Sal<br>18</div>
+                <div class="box ghost" style="flex:1;text-align:center;">Çar<br>—</div><div class="box strong" style="flex:1;text-align:center;">Per<br>31</div>
+                <div class="box strong" style="flex:1;text-align:center;">Cum<br>12</div><div class="box strong" style="flex:1;text-align:center;">Cmt<br>40</div>
+                <div class="box" style="flex:1;text-align:center;outline:2px solid var(--accent);">Bugün<br>8</div>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="card" style="text-align:center;">
+              <span class="cap">Günlük hedef</span>
+              <div style="font-size:1.5rem; font-weight:800; margin:.3rem 0;" class="k">8<span style="color:var(--ink-soft);font-size:.9rem;">/20</span></div>
+              <div class="bar"><i style="width:40%"></i></div>
+            </div>
+            <div class="card"><h5>Haftalık fotoğraf</h5><p class="good">Anayasa %12 ↑</p><p class="bad">CMK %4 ↓</p><p>→ Performans'ta incele <span class="ann">5</span></p></div>
+            <div class="card"><h5>Devam eden seans</h5><p>CMK reçetesi · 6/15 soruda kaldın → devam et <span class="ann">6</span></p></div>
+            <div class="card"><h5>Sıradaki canlı deneme</h5><p>Pazar 10.00 · 1.204 kayıtlı</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>⌘K komut paleti globaldir: kanun/madde ("pvsk 16"), konu, sayfa, eylem araması — koç ışınlamasının kullanıcı elindeki karşılığı.</li>
+    <li><b class="n">2</b>Hero, durum makinesinin sahnesidir (normal / streak_risk / exam_mode / comeback…). Metin sunucudan (`/me/coach`), ton Doc 26 tablosundan.</li>
+    <li><b class="n">3</b>Odak ucu sessizdir; tıklanınca popover (ekran 03). Varsayılan her sabah "Koç seçiyor"a döner.</li>
+    <li><b class="n">4</b>Aktivite şeridi meslek diliyle "nöbet çizelgesi" — kayıp dili yok, boş gün suçlanmaz (— ile gösterilir).</li>
+    <li><b class="n">5</b>Sağ kolon salt-okunur özettir; her kart ilgili bölgeye tek tıkla götürür. Kart sayısı tavanı: 4.</li>
+    <li><b class="n">6</b>Yarım kalan iş çapası (Doc 25 §7 emniyet 3) Bugün'de kart, diğer sayfalarda üst şeritte ince pil olarak yaşar.</li>
+  </ul>
+</section>
+
+<!-- ============ 03 ODAK POPOVER ============ -->
+<section class="screen" id="w03">
+  <h2>03 · Odak seçici — popover <span class="tag">L2 üstü katman</span></h2>
+  <p class="desc">"Konuyu sen seç, soruları ben seçeyim" (Doc 25 §5). Web'de sheet değil, hero'ya bağlı popover.</p>
+  <div class="frame" style="max-width:520px;">
+    <div style="padding:.8rem;">
+      <span class="cap">Bugünkü seansın kapsamı</span>
+      <div class="stack" style="margin-top:.5rem;">
+        <div class="opt sel"><span class="key">●</span> Koç seçsin <span style="margin-left:auto;" class="cap">varsayılan</span></div>
+        <div class="opt"><span class="key">○</span> Ders seç… <span style="margin-left:auto;">Anayasa ▾</span></div>
+        <div class="opt"><span class="key">○</span> Konu seç…</div>
+        <div class="opt"><span class="key">○</span> Kanun / Madde seç… <span class="ann">1</span></div>
+        <div class="opt"><span class="key">○</span> Sadece yanlışlarım</div>
+      </div>
+      <p style="color:var(--ink-soft); margin:.6rem 0 0;">Odak bugünlük geçerli; yarın sabah "Koç seçiyor"a döner. Kapsam içinde soruları yine koç karıştırır. <span class="ann">2</span></p>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Kanun/Madde seçimi ⌘K'daki aynı arama bileşenini kullanır — iki ayrı arama inşa edilmez.</li>
+    <li><b class="n">2</b>Geçicilik notu görünür yazılır: kalıcı manuel mod yok (koçun veri çarkı korunur). 3 gün aynı odak → koç "plana bağlayayım mı?" diye sorar.</li>
+  </ul>
+</section>
+
+<!-- ============ 04 KÜTÜPHANE ============ -->
+<section class="screen" id="w04">
+  <h2>04 · Kütüphane ana <span class="tag">L2 Çalışma Alanı</span><span class="tag">koç rayı açık</span></h2>
+  <p class="desc">Kapsam haritası: ders kartları + mevzuat rafına geçiş. Koç rayı ilk kez burada görünür — çalışma sayfalarının sağ refakatçisi.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/kutuphane</span></div>
+    <div class="shell">
+      <div class="side">
+        <div class="logo">PAEMİSYON</div>
+        <a>Bugün</a>
+        <a class="on">● Kütüphane</a>
+        <a class="sub on" style="background:transparent;">— Dersler</a>
+        <a class="sub">— Mevzuat (Atlas)</a>
+        <a class="sub">— Yanlışlarım · 47</a>
+        <a class="sub">— Akıllı Tekrar · 12</a>
+        <a class="sub">— Favoriler</a>
+        <a>Denemeler</a>
+        <a>Performans</a>
+        <a>Ben</a>
+        <div class="foot">⚙ Ayarlar</div>
+      </div>
+      <div style="min-width:0;">
+        <div class="topstrip"><span class="search">⌘K</span><span class="pill on">Dersler</span><span class="pill">Mevzuat</span><span style="margin-left:auto;">🔥 12</span></div>
+        <div class="main">
+          <span class="cap">PAEM müfredatı · ağırlığa göre sıralı <span class="ann">1</span></span>
+          <div class="grid3" style="margin-top:.5rem;">
+            <div class="card"><h5>Anayasa Hukuku <span class="pill">%15</span></h5><p>14 konu · 128 soru</p><div class="bar" style="margin-top:.3rem;"><i style="width:64%; background:var(--good);"></i></div><p class="cap" style="margin-top:.2rem;">benim: %64 · son: dün</p></div>
+            <div class="card"><h5>Ceza Muhakemesi <span class="pill">%12</span></h5><p>11 konu · 96 soru</p><div class="bar" style="margin-top:.3rem;"><i style="width:41%; background:var(--warn);"></i></div><p class="cap" style="margin-top:.2rem;">benim: %41 ↓ · koç işaretledi <span class="ann">2</span></p></div>
+            <div class="card"><h5>Polis Mevzuatı <span class="pill">%20</span></h5><p>8 kanun · armadaki taç → Atlas</p><div class="bar" style="margin-top:.3rem;"><i style="width:57%;"></i></div><p class="cap" style="margin-top:.2rem;">benim: %57</p></div>
+            <div class="card"><h5>Ceza Hukuku <span class="pill">%10</span></h5><p>9 konu · 88 soru</p><div class="bar" style="margin-top:.3rem;"><i style="width:72%; background:var(--good);"></i></div></div>
+            <div class="card"><h5>İdare Hukuku <span class="pill">%8</span></h5><p>7 konu · 64 soru</p><div class="bar" style="margin-top:.3rem;"><i style="width:33%; background:var(--bad);"></i></div></div>
+            <div class="box ghost" style="display:flex;align-items:center;justify-content:center;">+ 7 ders</div>
+          </div>
+        </div>
+      </div>
+      <div class="rail">
+        <h4>Koç <span class="ann">3</span></h4>
+        <div class="card"><h5>CMK'da 3 haftadır düşüş</h5><p>Bu sayfadan CMK kapatma seansı başlat →</p></div>
+        <div class="card" style="text-align:center;"><span class="cap">Bugünkü hedef</span><div class="bar" style="margin:.3rem 0;"><i style="width:40%"></i></div><p>8/20 soru</p></div>
+        <span class="cap" style="text-align:center;">rayı gizle ⌄</span>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Sıralama müfredat ağırlığına göre (exam_sections'tan canlı) — kullanıcı "neye ne kadar sorumluyum"u kartların dizilişinden okur.</li>
+    <li><b class="n">2</b>Koçun işaretlediği ders kartı sessiz vurgu alır; kart tıklanınca ders detayına (05) gider, [çalış] doğrudan L3 açar.</li>
+    <li><b class="n">3</b>Koç rayı: en fazla 2 kart + hedef durumu. Bağlama duyarlı (Kütüphane'deyken içerik önerisi önde). Kapatılabilir, durumu hatırlanır.</li>
+  </ul>
+</section>
+
+<!-- ============ 05 DERS DETAY ============ -->
+<section class="screen" id="w05">
+  <h2>05 · Ders detay — öğrenme merkezi <span class="tag">L2</span><span class="tag">aynı URL iki derinlik</span></h2>
+  <p class="desc">Dersin tek yaşayan mekânı: konular tablosu + benim durumum + çıkmış sorular. Girişsiz ziyaretçi aynı sayfanın vitrin derinliğini görür (SEO).</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/paem/ceza-muhakemesi</span></div>
+    <div class="shell">
+      <div class="side"><div class="logo">P</div><a>Bugün</a><a class="on">● Kütüphane</a><a>Denemeler</a><a>Performans</a><a>Ben</a></div>
+      <div style="min-width:0;">
+        <div class="topstrip"><span class="cap">Kütüphane › Dersler › Ceza Muhakemesi <span class="ann">1</span></span><span style="margin-left:auto;" class="pill">devam eden seans · 6/15 ▸</span></div>
+        <div class="main">
+          <div class="row between">
+            <div><h5 style="font-size:.95rem; margin:0;" class="k">Ceza Muhakemesi Hukuku <span class="pill">%12 ağırlık</span></h5>
+            <p style="color:var(--ink-soft); margin:.2rem 0 0;">Koç: "3 haftadır düşüştesin — bu hafta 2 kapatma seansı öneririm." <span class="ann">2</span></p></div>
+            <div class="box cta">Bu dersten seans başlat</div>
+          </div>
+          <div class="row" style="margin:.7rem 0 .5rem; gap:.4rem;">
+            <span class="pill on">Konular</span><span class="pill">Benim durumum</span><span class="pill">Çıkmış sorular · 96</span>
+          </div>
+          <table class="wf">
+            <tr><th>Konu</th><th>Soru</th><th>Doğruluğum</th><th>Trend</th><th>Son çalışma</th><th></th></tr>
+            <tr><td>Koruma Tedbirleri</td><td>24</td><td class="bad">%38</td><td class="bad">↓</td><td>4 gün önce</td><td><span class="pill on">çalış</span></td></tr>
+            <tr><td>İfade ve Sorgu</td><td>18</td><td class="warn">%55</td><td>→</td><td>dün</td><td><span class="pill">çalış</span></td></tr>
+            <tr><td>Soruşturma Evresi</td><td>21</td><td class="good">%71</td><td class="good">↑</td><td>2 gün önce</td><td><span class="pill">çalış</span></td></tr>
+            <tr><td>Kovuşturma Evresi</td><td>16</td><td class="good">%68</td><td>→</td><td>geçen hafta</td><td><span class="pill">çalış</span></td></tr>
+            <tr><td>Kanun Yolları</td><td>17</td><td>—</td><td>—</td><td>hiç <span class="ann">3</span></td><td><span class="pill">başla</span></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="rail">
+        <h4>Koç</h4>
+        <div class="card"><h5>Bu dersteki 11 yanlışın</h5><p>7 dk'lık tekrar seansı hazır →</p></div>
+        <div class="card"><h5>Koruma Tedbirleri</h5><p>En zayıf konun — 10 soruluk kapatma →</p></div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Breadcrumb 3+ seviyede belirir; URL public rehber ile aynıdır (`/paem/ceza-muhakemesi`) — ayrı "app" URL'i yok.</li>
+    <li><b class="n">2</b>Ders hero'sunda koçun bu derse dair TEK cümlesi (Doc 26: tek mesaj, tek eylem) + tek CTA.</li>
+    <li><b class="n">3</b>Hiç çalışılmamış konu "—" ile dürüst gösterilir; boş durum da tasarlanır (placeholder yasak — Doc 26 EmptyState).</li>
+  </ul>
+</section>
+
+<!-- ============ 06 KANUN DETAY ============ -->
+<section class="screen" id="w06">
+  <h2>06 · Kanun detay — Isı + Fetih Haritası <span class="tag">L4 Okuma</span><span class="tag">web'in tacı</span></h2>
+  <p class="desc">Üç pano: madde ağacı · kanun paneli (ısı sıralaması + fetih ızgarası) · inspector (benim kanun durumum).</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/kanun/2559-pvsk</span></div>
+    <div style="display:grid; grid-template-columns: 56px 190px 1fr 210px; min-height:520px;">
+      <div class="side" style="padding:.6rem .3rem; align-items:center;"><div class="logo">P</div><a title="Bugün">●</a><a class="on">▤</a><a>◧</a><a>◔</a><a>☺</a></div>
+      <div style="border-right:1px solid var(--line); padding:.6rem .5rem; overflow:hidden;">
+        <span class="cap">PVSK · 74 madde <span class="ann">1</span></span>
+        <div class="stack" style="margin-top:.5rem; gap:.25rem;">
+          <div class="row between"><span class="good">✓ m.1 Genel</span><span class="heat"><i style="width:8px"></i></span></div>
+          <div class="row between"><span class="good">✓ m.2 Görev</span><span class="heat"><i style="width:22px"></i></span></div>
+          <div class="row between"><span class="bad">✗ m.4/A Durdurma</span><span class="heat"><i style="width:34px"></i></span></div>
+          <div class="row between"><span class="bad">✗ m.5 Parmak izi</span><span class="heat"><i style="width:14px"></i></span></div>
+          <div class="row between" style="outline:2px solid var(--accent); border-radius:4px; padding:0 .2rem;"><span class="k">m.16 Zor kullanma</span><span class="heat"><i style="width:40px"></i></span></div>
+          <div class="row between"><span>○ m.17 Yakalama</span><span class="heat"><i style="width:26px"></i></span></div>
+          <div class="row between"><span>○ m.20 Konuta girme</span><span class="heat"><i style="width:18px"></i></span></div>
+          <div class="box ghost" style="text-align:center;">… 67 madde</div>
+        </div>
+      </div>
+      <div style="padding:.8rem 1rem; min-width:0;">
+        <span class="cap">Kütüphane › Mevzuat › 2559 PVSK</span>
+        <h5 style="font-size:.95rem; margin:.2rem 0;" class="k">Polis Vazife ve Salâhiyet Kanunu</h5>
+        <div class="card" style="margin-top:.5rem;">
+          <h5>Isı haritası: soruların %52'si şu 5 maddeden <span class="ann">2</span></h5>
+          <div class="stack" style="margin-top:.4rem; gap:.3rem;">
+            <div class="row"><span style="width:90px;">m.16 zor kull.</span><div class="bar" style="flex:1;"><i style="width:88%"></i></div><span>31 soru</span></div>
+            <div class="row"><span style="width:90px;">m.4/A durdurma</span><div class="bar" style="flex:1;"><i style="width:64%"></i></div><span>22</span></div>
+            <div class="row"><span style="width:90px;">m.17 yakalama</span><div class="bar" style="flex:1;"><i style="width:48%"></i></div><span>17</span></div>
+            <div class="row"><span style="width:90px;">m.20 konut</span><div class="bar" style="flex:1;"><i style="width:34%"></i></div><span>12</span></div>
+            <div class="row"><span style="width:90px;">m.5 parmak izi</span><div class="bar" style="flex:1;"><i style="width:22%"></i></div><span>8</span></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:.6rem;">
+          <h5>Fetih haritası — 21/74 madde temizlendi <span class="ann">3</span></h5>
+          <div class="cells" style="margin-top:.4rem;">
+            <i class="c"></i><i class="c"></i><i class="x"></i><i class="c"></i><i></i><i class="c"></i><i></i><i class="x"></i><i></i><i class="c"></i><i></i><i></i><i class="h"></i><i></i><i class="c"></i><i></i><i></i><i class="c"></i><i></i>
+            <i></i><i class="c"></i><i></i><i></i><i class="x"></i><i></i><i class="c"></i><i></i><i></i><i class="c"></i><i></i><i class="c"></i><i></i><i></i><i class="c"></i><i></i><i></i><i></i><i class="c"></i>
+          </div>
+          <p class="cap" style="margin-top:.3rem;">✓ yeşil: çalışıldı · kırmızı: yanlışım var · gri: hiç görmedim</p>
+        </div>
+        <div class="row" style="margin-top:.6rem;">
+          <div class="box cta" style="flex:1;">Bu kanundan 15 soruluk seans</div>
+          <div class="box" style="flex:1; text-align:center;">Kanun mini denemesi (premium)</div>
+        </div>
+      </div>
+      <div class="rail">
+        <h4>Benim PVSK durumum <span class="ann">4</span></h4>
+        <div class="card"><p>Doğruluk: <span class="k">%61</span> · 84 soru çözüldü</p></div>
+        <div class="card"><p>Fetih: 21/74 · "PVSK Fatihi" rozetine 53 madde</p></div>
+        <div class="card"><h5>Koç</h5><p>m.16'yı 3 kez yanlışladın — önce maddeyi oku →</p></div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Ağaç panosunda her madde satırı: fetih işareti + ısı çubuğu. Uzun kanunlarda ağaç içi filtre ("yalnız soru çıkanlar").</li>
+    <li><b class="n">2</b>Isı bloğu girişsiz ziyaretçiye de görünür (SEO'nun en paylaşılabilir verisi); satıra tıklayınca madde detayına iner.</li>
+    <li><b class="n">3</b>Fetih ızgarası yalnız girişli katmanda; hücreye tıklamak maddeyi açar. Girişsizde yerine "kayıt ol, haritan burada birikecek" vitrini.</li>
+    <li><b class="n">4</b>Inspector kanun genelinin özetidir; madde seçilince (ekran 07) madde künyesine dönüşür.</li>
+  </ul>
+</section>
+
+<!-- ============ 07 MADDE DETAY ============ -->
+<section class="screen" id="w07">
+  <h2>07 · Madde detay — Atlas'ın kalbi <span class="tag">L4 Okuma</span></h2>
+  <p class="desc">Resmî metin ⇄ AI sadeleştirme sekmeli okuma alanı; inspector madde künyesi + "bu maddeden soru çöz" köprüsü. Döngünün ANLA durağı.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/kanun/2559-pvsk/madde/16</span></div>
+    <div style="display:grid; grid-template-columns: 56px 190px 1fr 210px; min-height:500px;">
+      <div class="side" style="padding:.6rem .3rem; align-items:center;"><div class="logo">P</div><a>●</a><a class="on">▤</a><a>◧</a><a>◔</a><a>☺</a></div>
+      <div style="border-right:1px solid var(--line); padding:.6rem .5rem;">
+        <span class="cap">PVSK maddeleri</span>
+        <div class="stack" style="margin-top:.5rem; gap:.25rem;">
+          <div>… m.15</div>
+          <div class="box strong" style="padding:.25rem .4rem;"><span class="k">m.16 Zor kullanma</span></div>
+          <div>m.17 Yakalama …</div>
+        </div>
+      </div>
+      <div style="padding:.8rem 1.1rem; min-width:0;">
+        <span class="cap">Kütüphane › Mevzuat › PVSK › m.16</span>
+        <div class="row" style="margin:.4rem 0 .6rem;">
+          <span class="pill on">Resmî metin</span><span class="pill">Polis diliyle (AI) <span class="ann">1</span></span><span class="pill">Saha senaryosu</span>
+        </div>
+        <div class="card" style="padding:.9rem; font-size:.78rem; line-height:1.7;">
+          <h5 style="font-size:.85rem;">Madde 16 — Zor ve silah kullanma</h5>
+          <p style="color:var(--ink);">Polis, görevini yaparken direnişle karşılaşması halinde, bu direnişi kırmak amacıyla ve kıracak ölçüde zor kullanmaya yetkilidir… <i>(resmî metin, ≤65ch okuma kolonu)</i> <span class="ann">2</span></p>
+          <div class="box ghost" style="margin-top:.5rem;">fıkra fıkra devam… önemli ibareler soru bağıyla işaretli</div>
+        </div>
+        <div class="row between" style="margin-top:.6rem;">
+          <span class="pill">← m.15</span>
+          <span class="cap">okuma ilerlemesi korunur</span>
+          <span class="pill">m.17 →</span>
+        </div>
+      </div>
+      <div class="rail">
+        <h4>m.16 künyesi <span class="ann">3</span></h4>
+        <div class="card"><p><span class="k">31 kez</span> soruldu · son: 2025 GYS</p><p>PAEM 18 · Misyon 13</p></div>
+        <div class="card"><p>Benim geçmişim: <span class="bad">3 yanlış</span>, 5 doğru</p><p>Tekrar kuyruğunda: yarın 🔁</p></div>
+        <div class="box hero-cta">Bu maddeden 6 soru çöz <span class="ann">4</span></div>
+        <div class="card"><h5>İlgili maddeler</h5><p>m.17 yakalama · TCK m.25 meşru müdafaa</p></div>
+        <div class="box ghost" style="text-align:center;">seansına dön ▸ <span class="ann">5</span></div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>AI sadeleştirme tek sefer üretilir, önbellekten herkese servis (Doc 24 §4). Sekme etiketi dürüst: "(AI)" ibaresi hep görünür.</li>
+    <li><b class="n">2</b>Okuma tipografisi web'in mobilde olmayan lüksü: büyük punto, 65ch kolon, satır aralığı 1.7 — kanun okuma L4'ün varlık nedeni.</li>
+    <li><b class="n">3</b>Künye = ısı verisi + kişisel geçmiş + tekrar durumu. Girişsizde yalnız ısı verisi + kayıt daveti.</li>
+    <li><b class="n">4</b>Madde reçeteli seans (L3) açılır; dönüşte buraya değil sonuç ekranına gider — döngü ileri akar.</li>
+    <li><b class="n">5</b>Yanlış açıklamasından ("ilgili madde") gelen kullanıcı için çapa: seansı kaybettirmeden mevzuata bakıp dönebilir.</li>
+  </ul>
+</section>
+
+<!-- ============ 08 SEANS OYNATICI ============ -->
+<section class="screen" id="w08">
+  <h2>08 · Seans Oynatıcı <span class="tag">L3 Odak</span><span class="tag">klavye birincil</span></h2>
+  <p class="desc">Tek oda, tüm reçeteler (Doc 25 Karar 1). Sidebar ve ray gizli; klavye kısayolları birincil giriş yöntemi.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/seans</span></div>
+    <div style="min-height:480px;">
+      <div class="topstrip" style="margin-top:.5rem;">
+        <span>✕</span>
+        <span class="cap">Bugün: CMK ağırlıklı — 3 haftadır düşüş + Salı'nın 4 yanlışı <span class="ann">1</span></span>
+        <span style="margin-left:auto;" class="pill">7 / 15</span>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 230px; gap:1rem; padding:1.2rem 2rem;">
+        <div style="max-width:620px; margin:0 auto; width:100%;">
+          <span class="cap">Soru 7 · CMK Koruma Tedbirleri · <span class="acc">kaynak: 2024 PAEM</span> <span class="ann">2</span></span>
+          <p style="font-size:.9rem; color:var(--ink); line-height:1.6; margin:.5rem 0 .8rem;">Gecikmesinde sakınca bulunan hâllerde arama kararını… (soru kökü, ≤65ch)</p>
+          <div class="stack">
+            <div class="opt"><span class="key">1</span> şık A metni</div>
+            <div class="opt ok"><span class="key">2</span> şık B metni — doğru ✓</div>
+            <div class="opt no"><span class="key">3</span> şık C metni — senin cevabın ✗</div>
+            <div class="opt" style="opacity:.55;"><span class="key">4</span> şık D metni</div>
+          </div>
+          <div class="card" style="margin-top:.7rem; border-color:var(--accent);">
+            <h5>Açıklama <span class="ann">3</span></h5>
+            <p>Çünkü CMK m.119'a göre… çeldirici C'nin çekiciliği şu: … </p>
+            <p style="margin-top:.3rem;"><span class="pill on">İlgili madde: CMK m.119 — M ile aç</span> <span class="pill">⭐ favorile (F)</span> <span class="pill">hata bildir</span></p>
+          </div>
+          <div class="box hero-cta" style="margin-top:.7rem; max-width:280px; margin-left:auto; margin-right:auto;">Sonraki soru — Enter ⏎</div>
+        </div>
+        <div class="stack">
+          <div class="card"><h5>Seans akışı</h5>
+            <div class="qmap" style="margin-top:.3rem; grid-template-columns:repeat(5,1fr);">
+              <i class="d">✓</i><i class="d">✓</i><i class="f">✗</i><i class="d">✓</i><i class="d">✓</i><i class="f">✗</i><i class="cur">7</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="card"><h5>Not (oturum içi)</h5><div class="box ghost" style="min-height:3rem;"></div></div>
+          <div class="card"><span class="cap">klavye: 1-4 şık · ⏎ sonraki · F favori · M madde · Esc çıkış <span class="ann">4</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Reçete şeffaflığı tek satır üst şeritte (kara kutu yok — Doc 24 §9). Çıkış ✕ diyaloğa sorar; ilerleme kaybolmaz.</li>
+    <li><b class="n">2</b>Kaynak etiketi HER soruda görünür (SourceTag) — bankanın varlık nedeni.</li>
+    <li><b class="n">3</b>Doğru/yanlış renk + ikon + metinle anında verilir (animasyon bekletmez). "M" ilgili maddeyi sağ panelde inspector olarak açar — seanstan çıkmadan mevzuat bağı.</li>
+    <li><b class="n">4</b>Kısayol hatırlatıcısı ilk seanslarda görünür, sonra tek satır cap'e küçülür.</li>
+  </ul>
+</section>
+
+<!-- ============ 09 SEANS SONUCU ============ -->
+<section class="screen" id="w09">
+  <h2>09 · Seans Sonucu <span class="tag">L3 kapanış</span></h2>
+  <p class="desc">Skor + koç yorumu + konu kırılımı aynı ekranda (web genişliği); tek birincil çıkış: Bugün'e dön.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/seans/sonuc</span></div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; padding:1.2rem 2rem; min-height:380px;">
+      <div class="stack">
+        <div class="card" style="text-align:center; padding:1rem;">
+          <span class="cap">CMK ağırlıklı seans · 12 dk</span>
+          <div style="font-size:2rem; font-weight:800;" class="k">11<span style="font-size:1rem; color:var(--ink-soft);">/15</span></div>
+          <p class="good">doğruluk %73 — son 5 CMK seansının en iyisi <span class="ann">1</span></p>
+        </div>
+        <div class="card" style="border-color:var(--accent);">
+          <h5>Koç</h5>
+          <p>"4 yanlışın 3'ü Koruma Tedbirleri'nden. Yarına tekrar kurdum; istersen şimdi maddeleri oku." <span class="ann">2</span></p>
+        </div>
+        <div class="box hero-cta">Bugün'e dön</div>
+        <div class="row"><div class="box" style="flex:1;text-align:center;">Yanlışları şimdi tekrar et</div><div class="box" style="flex:1;text-align:center;">İlgili maddeleri oku (CMK m.119, m.134)</div></div>
+      </div>
+      <div class="card">
+        <h5>Konu kırılımı <span class="ann">3</span></h5>
+        <table class="wf" style="margin-top:.3rem;">
+          <tr><th>Konu</th><th>D/Y</th><th>Doğruluk</th></tr>
+          <tr><td>Koruma Tedbirleri</td><td>3/3</td><td class="bad">%50</td></tr>
+          <tr><td>İfade ve Sorgu</td><td>4/1</td><td class="good">%80</td></tr>
+          <tr><td>Soruşturma Evresi</td><td>4/0</td><td class="good">%100</td></tr>
+        </table>
+        <hr class="thin">
+        <p class="cap">günlük hedef: 15/20 → kalan 5 soru için mini seans önerisi</p>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Kıyas her zaman kullanıcının kendisiyle ("son 5 seansın en iyisi") — Doc 24 ilke: "geçen haftaki senden iyisin".</li>
+    <li><b class="n">2</b>Sistemin hafızası kanıtlanır: "yarına tekrar kurdum". Bu cümle retention'ın çekirdek kancası.</li>
+    <li><b class="n">3</b>Kırılım tablosu webde hemen burada — mobildeki gibi ayrı sayfaya itilmez; kırmızı satır tıklanınca kapatma seansı önerilir.</li>
+  </ul>
+</section>
+
+<!-- ============ 10 DENEME OYNATICI ============ -->
+<section class="screen" id="w10">
+  <h2>10 · Deneme Oynatıcı — optik form paneli <span class="tag">L3 deneme varyantı</span><span class="tag">webin birincil işi</span></h2>
+  <p class="desc">Gerçek sınav provası: bölüm sekmeleri, 120 soruluk harita, sakin süre. Tek istisna oda (Doc 25 Karar 1 istisnası).</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/sinav/canli-deneme-12</span></div>
+    <div style="min-height:480px;">
+      <div class="topstrip" style="margin-top:.5rem;">
+        <span class="cap">Canlı Deneme #12 · Türkiye geneli</span>
+        <span class="pill on">Genel Kültür</span><span class="pill">Mevzuat</span><span class="pill">Meslek</span>
+        <span style="margin-left:auto; font-weight:800;" class="k">⏱ 84:12 <span class="ann">1</span></span>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 250px; gap:1rem; padding:1rem 2rem;">
+        <div style="max-width:600px; margin:0 auto; width:100%;">
+          <span class="cap">Soru 34 / 120 · <span class="acc">kaynak etiketi sınav bitince görünür <span class="ann">2</span></span></span>
+          <p style="font-size:.9rem; color:var(--ink); line-height:1.6; margin:.5rem 0 .8rem;">Soru kökü… (süre baskısı altında sade ekran; açıklama YOK)</p>
+          <div class="stack">
+            <div class="opt"><span class="key">1</span> A</div>
+            <div class="opt sel"><span class="key">2</span> B — işaretlendi</div>
+            <div class="opt"><span class="key">3</span> C</div>
+            <div class="opt"><span class="key">4</span> D</div>
+          </div>
+          <div class="row between" style="margin-top:.8rem;">
+            <span class="pill">← önceki</span>
+            <span class="pill warn">⚑ emin değilim <span class="ann">3</span></span>
+            <span class="pill on">sonraki →</span>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <h5>Optik form — Mevzuat 21–60 <span class="ann">4</span></h5>
+            <div class="qmap" style="margin-top:.4rem;">
+              <i class="d"></i><i class="d"></i><i class="d"></i><i class="f"></i><i class="d"></i><i class="d"></i><i></i><i class="d"></i><i class="d"></i><i class="d"></i>
+              <i class="d"></i><i class="f"></i><i class="d"></i><i class="cur">34</i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="cap" style="margin-top:.3rem;">dolu 28 · bayraklı 3 · boş 9</p>
+          </div>
+          <div class="card"><p class="cap">bölüm süreleri: GK 22dk ✓ · Mevzuat 31dk (şu an) · kalan öneri: soru başına 42sn</p></div>
+          <div class="box ghost" style="text-align:center;">sınavı bitir</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Süre büyük ama sakin; son 10 dk `warning` rengine döner, asla yanıp sönmez (kaygı üretme yasağı).</li>
+    <li><b class="n">2</b>Deneme sırasında açıklama/kaynak gizli (prova gerçekliği); bitince analiz ekranında hepsi açılır.</li>
+    <li><b class="n">3</b>"Emin değilim" bayrağı gerçek sınav taktiğinin provası; haritada sarı görünür, bitirmeden önce "3 bayraklın var" hatırlatması.</li>
+    <li><b class="n">4</b>Optik form paneli = webin mobile karşı en büyük avantajı; klavye ←/→ ve G (haritaya git) ile tam gezinme.</li>
+  </ul>
+</section>
+
+<!-- ============ 11 DENEME ANALİZİ ============ -->
+<section class="screen" id="w11">
+  <h2>11 · Deneme Sonucu + Derin Analiz <span class="tag">L2</span><span class="tag">analiz gücü</span></h2>
+  <p class="desc">Net + sıralama + bölüm kırılımı + kaybettiren konular tablosu + süre yönetimi. Şok değil yol haritası.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/denemeler/12/analiz</span></div>
+    <div class="shell no-rail">
+      <div class="side"><div class="logo">P</div><a>Bugün</a><a>Kütüphane</a><a class="on">● Denemeler</a><a>Performans</a><a>Ben</a></div>
+      <div style="min-width:0;">
+        <div class="topstrip"><span class="cap">Denemeler › Canlı Deneme #12 › Analiz</span><span style="margin-left:auto;" class="row"><span class="pill on">Analiz</span><span class="pill">Sıralama</span><span class="pill">Cevap anahtarı</span></span></div>
+        <div class="main" style="display:grid; grid-template-columns: 1fr 1.4fr; gap:.8rem;">
+          <div class="stack">
+            <div class="card" style="text-align:center; padding:.9rem;">
+              <span class="cap">NET</span>
+              <div style="font-size:2rem; font-weight:800;" class="k">78,25</div>
+              <p>Türkiye: <span class="k">184 / 1.204</span> · <span class="good">geçen denemeden +6,5 net</span> <span class="ann">1</span></p>
+            </div>
+            <div class="card" style="border-color:var(--accent);">
+              <h5>Koç</h5>
+              <p>"Kaybının %61'i 3 konudan. Sıralamaya değil şu tabloya bak — kapatılabilir kayıplar bunlar." <span class="ann">2</span></p>
+            </div>
+            <div class="card">
+              <h5>Bölüm kırılımı</h5>
+              <table class="wf"><tr><th>Bölüm</th><th>D</th><th>Y</th><th>Net</th><th>Ort. süre</th></tr>
+              <tr><td>Genel Kültür</td><td>28</td><td>6</td><td>26,5</td><td>38sn</td></tr>
+              <tr><td>Mevzuat</td><td>31</td><td>9</td><td>28,75</td><td class="warn">61sn <span class="ann">3</span></td></tr>
+              <tr><td>Meslek</td><td>25</td><td>8</td><td>23,0</td><td>44sn</td></tr></table>
+            </div>
+          </div>
+          <div class="card">
+            <h5>En çok kaybettiren konular / maddeler <span class="ann">4</span></h5>
+            <table class="wf" style="margin-top:.3rem;">
+              <tr><th>Konu · madde</th><th>Yanlış</th><th>Kayıp net</th><th></th></tr>
+              <tr><td>CMK Koruma Tedbirleri</td><td>4</td><td class="bad">−5,0</td><td><span class="pill on">10 soruluk kapatma</span></td></tr>
+              <tr><td>PVSK m.16 zor kullanma</td><td>3</td><td class="bad">−3,75</td><td><span class="pill">maddeyi oku + 4 soru</span></td></tr>
+              <tr><td>2911 m.23-24 dağılma</td><td>2</td><td class="warn">−2,5</td><td><span class="pill">kapatma seansı</span></td></tr>
+              <tr><td>Anayasa temel haklar</td><td>2</td><td class="warn">−2,5</td><td><span class="pill">kapatma seansı</span></td></tr>
+            </table>
+            <hr class="thin">
+            <h5>Süre yönetimi şeridi</h5>
+            <div class="box ghost">120 sorunun zaman çizgisi — Mevzuat bölümünde soru başına süre grafiği; m.16 tipi olay örgüsü sorularında yavaşlama işaretli <span class="ann">5</span></div>
+            <hr class="thin">
+            <p class="cap">madde kırılımı + tüm cevap anahtarı: premium derinlik 🔒 <span class="ann">6</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Kıyas önce kendisiyle (+6,5 net), sıralama ikinci. Kötü sonuçta ilk kart ASLA sıralama değildir (Doc 24 §7.5 tampon).</li>
+    <li><b class="n">2</b>Koç yorumu kontrol edilebilirlik verir: "kapatılabilir kayıplar" çerçevesi.</li>
+    <li><b class="n">3</b>Süre kolonunda sapma işaretlenir — süre yönetimi geri bildirimi sınav modunun temel antrenmanı.</li>
+    <li><b class="n">4</b>Her kayıp satırı eyleme bağlanır (tek tık kapatma seansı / madde okuma) — analiz rapor değil, yol haritası.</li>
+    <li><b class="n">5</b>Zaman çizgisi V2 olabilir; yer şimdi ayrılır, boş durumu tasarlanır.</li>
+    <li><b class="n">6</b>Premium kilidi derin katmanda (madde kırılımı) — ücretsiz analiz gerçek değer vermeye devam eder.</li>
+  </ul>
+</section>
+
+<!-- ============ 12 PERFORMANS ============ -->
+<section class="screen" id="w12">
+  <h2>12 · Performans — Konu Haritası <span class="tag">L2</span><span class="tag">genişleyebilir tablo</span></h2>
+  <p class="desc">Ders → konu → madde kırılımlı mastery tablosu; filtreler ve kırmızıdan tek tık seans. Webin analiz platformu yüzü.</p>
+  <div class="frame">
+    <div class="chrome"><i></i><i></i><i></i><span class="url">paemisyon.com/performans/konu-haritasi</span></div>
+    <div class="shell no-rail">
+      <div class="side"><div class="logo">P</div><a>Bugün</a><a>Kütüphane</a><a>Denemeler</a><a class="on">● Performans</a><a class="sub">— Genel bakış</a><a class="sub on" style="background:transparent;">— Konu haritası</a><a class="sub">— Haftalık raporlar</a><a class="sub">— Rekorlar</a><a>Ben</a></div>
+      <div style="min-width:0;">
+        <div class="topstrip">
+          <span class="pill">Ders: tümü ▾</span><span class="pill on">Yalnız zayıflar (&lt;%60)</span><span class="pill">Son 4 hafta ▾</span> <span class="ann">1</span>
+          <span style="margin-left:auto;" class="cap">294 konu · 1.240 madde izleniyor</span>
+        </div>
+        <div class="main">
+          <div class="grid4" style="margin-bottom:.7rem;">
+            <div class="card" style="text-align:center;"><span class="cap">Toplam soru</span><div class="k" style="font-size:1.1rem;">2.847</div></div>
+            <div class="card" style="text-align:center;"><span class="cap">Doğruluk (4 hf)</span><div class="k" style="font-size:1.1rem;">%64 <span class="good" style="font-size:.7rem;">↑2</span></div></div>
+            <div class="card" style="text-align:center;"><span class="cap">Seri</span><div class="k" style="font-size:1.1rem;">🔥 12</div></div>
+            <div class="card" style="text-align:center;"><span class="cap">Deneme net trendi</span><div class="k" style="font-size:1.1rem;">71 → 78</div></div>
+          </div>
+          <table class="wf">
+            <tr><th></th><th>Ders / konu / madde</th><th>Doğruluk</th><th>Soru</th><th>Trend</th><th>Son</th><th></th></tr>
+            <tr><td>▾</td><td class="k">Ceza Muhakemesi</td><td class="warn">%41</td><td>96</td><td class="bad">↓</td><td>dün</td><td></td></tr>
+            <tr><td></td><td style="padding-left:1.4rem;">Koruma Tedbirleri</td><td class="bad">%38</td><td>24</td><td class="bad">↓</td><td>4g</td><td><span class="pill on">kapat <span class="ann">2</span></span></td></tr>
+            <tr><td></td><td style="padding-left:1.4rem;">İfade ve Sorgu</td><td class="warn">%55</td><td>18</td><td>→</td><td>dün</td><td><span class="pill">kapat</span></td></tr>
+            <tr><td>▾</td><td class="k">Polis Mevzuatı (madde kırılımlı) <span class="ann">3</span></td><td class="warn">%57</td><td>212</td><td>→</td><td>bugün</td><td></td></tr>
+            <tr><td></td><td style="padding-left:1.4rem;">PVSK › m.16</td><td class="bad">%40</td><td>8</td><td>→</td><td>bugün</td><td><span class="pill">madde+4</span></td></tr>
+            <tr><td></td><td style="padding-left:1.4rem;">2911 › m.23-24</td><td class="bad">%33</td><td>6</td><td class="bad">↓</td><td>3g</td><td><span class="pill">madde+4</span></td></tr>
+            <tr><td>▸</td><td class="k">İdare Hukuku</td><td class="bad">%33</td><td>64</td><td>→</td><td>2 hf</td><td></td></tr>
+          </table>
+          <p class="cap" style="margin-top:.5rem;">satır → ilgili ders/madde sayfası · doğruluk hücresi renk eşiği: kırmızı &lt;%40 · sarı &lt;%60 · yeşil ≥%60 (renk + ok + sayı birlikte <span class="ann">4</span>)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="notes">
+    <li><b class="n">1</b>Filtre çubuğu webe özgü: ders, eşik, zaman aralığı. "Yalnız zayıflar" açılışta öntanımlı DEĞİL — önce dürüst genel fotoğraf.</li>
+    <li><b class="n">2</b>Kırmızı hücreden tek tık kapatma seansı (Doc 25 kapı 3): analiz her zaman eyleme bağlanır.</li>
+    <li><b class="n">3</b>Madde satırları yalnız kanun derslerinde açılır; madde hassasiyetli tekrar premium derinliğidir.</li>
+    <li><b class="n">4</b>Renk tek başına anlam taşımaz (a11y): renk + trend oku + sayı her hücrede birlikte.</li>
+  </ul>
+</section>
+
+<footer class="doc">
+  <p><b>Kapsam dışı ekranlar (bu sete bilinçli alınmadı):</b> Onboarding/İlk Devriye (mobil setiyle aynı akış, webde L1 ortalı kolon), Premium sayfası (Doc 24 §11 tablosunun sayfalaşmış hali), Profil/Ayarlar (standart form kalıpları), Deneme lobisi (mevcut canlı akış korunuyor). Bunlar kod fazında şablonlardan türetilir; ayrıca wireframe gerektiren karar içermiyorlar.</p>
+  <p><b>Sonraki adım:</b> Doc 27 §6 onay soruları → onay sonrası W1 fazı (kabuk + Bugün + Seans Oynatıcı web).</p>
+</footer>
+</div>

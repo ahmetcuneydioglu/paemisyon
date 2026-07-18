@@ -14,7 +14,7 @@ export async function signIn(_prev: AuthState, formData: FormData): Promise<Auth
   const supabase = await supabaseServer();
   const { error } = await supabase.auth.signInWithPassword({ email, password });
   if (error) return { error: "E-posta veya şifre hatalı." };
-  redirect("/denemeler");
+  redirect("/bugun");
 }
 
 export async function signUp(_prev: AuthState, formData: FormData): Promise<AuthState> {
@@ -31,7 +31,7 @@ export async function signUp(_prev: AuthState, formData: FormData): Promise<Auth
     options: { data: { display_name: name } },
   });
   if (error) return { error: "Kayıt başarısız: " + error.message };
-  redirect("/denemeler");
+  redirect("/bugun");
 }
 
 export async function signOut() {
