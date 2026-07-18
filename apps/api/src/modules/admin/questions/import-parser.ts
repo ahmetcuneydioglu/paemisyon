@@ -447,6 +447,8 @@ const ODSGM_HEADER = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ';
 const KEY_TITLE = 'CEVAP ANAHTARI';
 const QNUM_RE = /^(\d{1,3})\.\s+/;
 const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
+const CODE_QNUM_RE = /^\((\d{3,12})\)\s*$/;
+const CODE_KEY_LINE_RE = /^\((\d{3,12})\)\s*([A-E])\s*$/;
 
 interface OptionSegment {
   label: string;
@@ -461,7 +463,13 @@ interface OptionSegment {
  * gereksiz bölünmeyi sınırlar.
  */
 export function parseBookletOptionLine(line: string): OptionSegment[] {
-  const marker = /(?:^|\t+| {2,})([A-E])\)\s*/g;
+  // Satır zaten bir şıkla başlıyorsa PDF motorunun tek boşluğa indirdiği
+  // devam işaretlerini de kabul et ("C) Kırk beş D) Altmış"). Şıkla
+  // başlamayan olağan metinde ise yanlış pozitifleri önlemek için eski
+  // tab/iki+ boşluk eşiği korunur.
+  const marker = /^[A-E]\)\s*/.test(line)
+    ? /(?:^|\s+)([A-E])\)\s*/g
+    : /(?:^|\t+| {2,})([A-E])\)\s*/g;
   const matches = [...line.matchAll(marker)];
   if (matches.length === 0) return [];
 
@@ -519,8 +527,21 @@ export function dehyphenate(text: string): string {
 
 interface BookletQuestion {
   no: number;
+  /** Cevap anahtarındaki kimlik: klasik kitapçıkta "1", e-sınavda "130383". */
+  answerKeyId: string;
   stem: string;
   options: Map<string, string>;
+}
+
+export function parseBookletAnswerKeyLine(
+  line: string,
+): { id: string; answer: string } | null {
+  const match = KEY_LINE_RE.exec(line) ?? CODE_KEY_LINE_RE.exec(line);
+  return match ? { id: match[1], answer: match[2] } : null;
+}
+
+export function parseBookletQuestionCode(line: string): string | null {
+  return CODE_QNUM_RE.exec(line)?.[1] ?? null;
 }
 
 /**
@@ -545,16 +566,27 @@ function escapeRegExp(s: string): string {
  * olmayanı seçer; sonuna yapışmış sayfa numarası varsa kırpar.
  */
 export function detectBookletTitle(pageTexts: string[]): string | null {
-  const page = pageTexts.find((t) => t.includes(ODSGM_HEADER));
-  if (!page) return null;
-  const lines = page
-    .split('\n')
-    .map((l) => l.trim())
-    .filter(Boolean)
-    .slice(0, 3);
-  for (const line of lines) {
-    if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
-    const title = line.replace(/\s*\d{1,3}$/, '').trim();
+  const candidates: string[] = [];
+  for (const page of pageTexts.filter((text) => text.includes(ODSGM_HEADER))) {
+    const lines = page
+      .split('\n')
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .slice(0, 3);
+    for (const line of lines) {
+      if (line.includes(ODSGM_HEADER) || /^\d{1,3}$/.test(line)) continue;
+      const title = line.replace(/\s*\d{1,3}$/, '').trim();
+      if (title.length >= 3 && title.length <= 80) candidates.push(title);
+    }
+  }
+
+  const frequency = new Map<string, number>();
+  for (const title of candidates) {
+    const key = title.replace(/\s+/g, ' ');
+    frequency.set(key, (frequency.get(key) ?? 0) + 1);
+  }
+
+  for (const title of candidates) {
     // Bazı resmî başlıklar sıra sayısıyla başlar ("8. DÖNEM ... A").
     // Bu nedenle yalnız QNUM_RE ile elemek, başlığı soru sanıp her sayfanın
     // son E şıkkına sızdırır. Kitapçık türü harfi + başlık sinyalini
@@ -562,7 +594,10 @@ export function detectBookletTitle(pageTexts: string[]): string | null {
     const hasBookletType = /\s[A-E]$/u.test(title);
     const hasHeadingSignal =
       !QNUM_RE.test(title) || /\b(?:DÖNEM|EĞİTİMİ|SINAVI|KİTAPÇIĞI|TESTİ)\b/iu.test(title);
-    if (title.length >= 3 && title.length <= 60 && hasBookletType && hasHeadingSignal) {
+    // E-sınav kitapçıklarında A/B türü olmayabilir. İlk satırlarda iki+
+    // soru sayfasında aynen tekrarlanan metin de güvenli kitapçık başlığıdır.
+    const isRepeatedHeader = (frequency.get(title.replace(/\s+/g, ' ')) ?? 0) >= 2;
+    if ((hasBookletType && hasHeadingSignal) || isRepeatedHeader) {
       return title;
     }
   }
@@ -590,7 +625,7 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   const result = await parser.getText();
 
   const questionLines: string[] = [];
-  const answerKey = new Map<number, string>();
+  const answerKey = new Map<string, string>();
   const sourceLines: string[] = [];
   let inKey = false;
 
@@ -614,10 +649,10 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
         continue;
       }
       if (inKey || pageHasKey) {
-        const km = KEY_LINE_RE.exec(line);
-        if (km) {
+        const keyEntry = parseBookletAnswerKeyLine(line);
+        if (keyEntry) {
           inKey = true;
-          answerKey.set(Number(km[1]), km[2]);
+          answerKey.set(keyEntry.id, keyEntry.answer);
         } else if (!inKey) {
           // Anahtar sayfasının başlık satırları → kaynak etiketi adayı
           // (örn. "30 KASIM 2025 TARİHİNDE YAPILAN ... SINAVI").
@@ -642,10 +677,28 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   let part: string | null = null; // 'stem' | 'A'..'E'
   let expectedNo = 1;
   for (const line of questionLines) {
+    const questionCode = parseBookletQuestionCode(line);
+    if (questionCode && answerKey.has(questionCode)) {
+      if (current) questions.push(current);
+      current = {
+        no: expectedNo,
+        answerKeyId: questionCode,
+        stem: '',
+        options: new Map(),
+      };
+      part = 'stem';
+      expectedNo++;
+      continue;
+    }
     const qm = QNUM_RE.exec(line);
     if (qm && Number(qm[1]) === expectedNo) {
       if (current) questions.push(current);
-      current = { no: expectedNo, stem: line.replace(QNUM_RE, ''), options: new Map() };
+      current = {
+        no: expectedNo,
+        answerKeyId: qm[1],
+        stem: line.replace(QNUM_RE, ''),
+        options: new Map(),
+      };
       part = 'stem';
       expectedNo++;
       continue;
@@ -671,7 +724,7 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     const opts = [...q.options.entries()]
       .map(([label, text]) => ({ label, text: dehyphenate(text) }))
       .sort((a, b) => a.label.localeCompare(b.label));
-    const correct = answerKey.get(q.no);
+    const correct = answerKey.get(q.answerKeyId);
     if (!correct) {
       errors.push({ rowNo: q.no, message: `Soru ${q.no}: cevap anahtarında karşılığı yok.` });
       continue;

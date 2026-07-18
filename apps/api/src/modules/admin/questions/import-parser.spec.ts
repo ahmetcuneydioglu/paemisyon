@@ -10,6 +10,8 @@ import {
   detectBookletSections,
   detectBookletTitle,
   stripBookletTitle,
+  parseBookletAnswerKeyLine,
+  parseBookletQuestionCode,
 } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
@@ -127,6 +129,15 @@ describe('parseBookletOptionLine', () => {
     expect(parseBookletOptionLine('E) Kasım')).toEqual([{ label: 'E', text: 'Kasım' }]);
   });
 
+  it('şıkla başlayan satırda tek boşluğa inmiş devam şıklarını ayırır', () => {
+    expect(parseBookletOptionLine('A) On\tB) On beş\tC) Kırk beş D) Altmış')).toEqual([
+      { label: 'A', text: 'On' },
+      { label: 'B', text: 'On beş' },
+      { label: 'C', text: 'Kırk beş' },
+      { label: 'D', text: 'Altmış' },
+    ]);
+  });
+
   it('şıksız devam satırını seçenek sanmaz', () => {
     expect(parseBookletOptionLine('seçenek metninin devamı')).toEqual([]);
   });
@@ -155,6 +166,26 @@ describe('kitapçık üstbilgisi temizleme', () => {
 
   it('ilk satırlardaki olağan soru metnini kitapçık başlığı sanmaz', () => {
     expect(detectBookletTitle([`1\n${ods}\n1. Aşağıdakilerden hangisi A`])).toBeNull();
+  });
+
+  it('kitapçık türü harfi olmayan tekrarlı e-sınav üstbilgisini saptar', () => {
+    const header = 'Emlak/Millî Emlak Müdür ve Müdür Yardımcılığı';
+    expect(detectBookletTitle([
+      `${header}\n2\n${ods}\n(130383)`,
+      `${header}\n3\n${ods}\n(130387)`,
+    ])).toBe(header);
+  });
+});
+
+describe('kurum soru kodlu e-sınav işaretleri', () => {
+  it('parantezli soru kodunu ayrıştırır', () => {
+    expect(parseBookletQuestionCode('(130383)')).toBe('130383');
+    expect(parseBookletQuestionCode('130383')).toBeNull();
+  });
+
+  it('klasik ve kurum kodlu cevap anahtarı satırlarını birlikte destekler', () => {
+    expect(parseBookletAnswerKeyLine('1. C')).toEqual({ id: '1', answer: 'C' });
+    expect(parseBookletAnswerKeyLine('(130383) A')).toEqual({ id: '130383', answer: 'A' });
   });
 });
 
