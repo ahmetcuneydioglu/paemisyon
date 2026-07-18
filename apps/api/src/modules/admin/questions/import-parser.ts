@@ -31,6 +31,15 @@ export interface ParseReport {
   errors: RowError[];
   /** PDF kitapçıktan otomatik saptanan kaynak etiketi (panel önerisi). */
   detectedSource?: string | null;
+  /** Kitapçık kapağındaki konu sırası ve soru aralıkları. */
+  detectedSections?: DetectedSectionRange[];
+}
+
+export interface DetectedSectionRange {
+  name: string;
+  questionCount: number;
+  startRow: number;
+  endRow: number;
 }
 
 /** Konu + eşleşme desenleri — suggestTopic girdisi (Doc 20). */
@@ -184,6 +193,70 @@ export function suggestTopic(
   if (!best) return null;
   const { score: _score, ...suggestion } = best;
   return suggestion;
+}
+
+/**
+ * Kitapçık kapağından gelen bölüm adını modüldeki güvenli varsayılan konuya
+ * eşler. Açık konu adı önceliklidir; ders tek konuluysa o konu kullanılır.
+ * Çok kanunlu "Polis Mevzuatı" gibi derslerde genel bir konu uydurulmaz.
+ */
+export function suggestTopicFromSection(
+  sectionName: string,
+  topics: TopicKeywordEntry[],
+): TopicSuggestion | null {
+  const section = normalizeForMatch(sectionName);
+  if (!section) return null;
+
+  const courseTopics = topics.filter((topic) => {
+    if (!topic.courseName) return false;
+    const course = normalizeForMatch(topic.courseName);
+    return course === section || course.includes(section) || section.includes(course);
+  });
+  if (courseTopics.length === 0) return null;
+
+  const byKeywordRichness = (a: TopicKeywordEntry, b: TopicKeywordEntry) =>
+    b.matchKeywords.length - a.matchKeywords.length;
+  const exact = courseTopics
+    .filter((topic) => normalizeForMatch(topic.name) === section)
+    .sort(byKeywordRichness)[0];
+  const contained = courseTopics
+    .filter((topic) => {
+      const name = normalizeForMatch(topic.name);
+      return name.length >= 5 && (section.includes(name) || name.includes(section));
+    })
+    .sort((a, b) => {
+      const lengthDiff = Math.abs(normalizeForMatch(a.name).length - section.length)
+        - Math.abs(normalizeForMatch(b.name).length - section.length);
+      return lengthDiff || byKeywordRichness(a, b);
+    })[0];
+  const target = exact ?? contained ?? (courseTopics.length === 1 ? courseTopics[0] : null);
+  return target
+    ? { id: target.id, name: target.name, matchedKeyword: `Bölüm planı: ${sectionName}` }
+    : null;
+}
+
+/**
+ * Resmî bölüm planı varsa onu ders sınırı kabul eder. Keyword aynı ders içinde
+ * daha özel bir konu bulduysa korunur; başka derse taşıyorsa bölüm hedefi kazanır
+ * (örn. Genel Kültür aralığındaki Atatürk sözü İnkılap'a kaçmamalı).
+ */
+export function suggestTopicForRow(
+  stem: string,
+  sectionName: string | null,
+  topics: TopicKeywordEntry[],
+): TopicSuggestion | null {
+  const keywordSuggestion = suggestTopic(stem, topics);
+  const sectionSuggestion = sectionName
+    ? suggestTopicFromSection(sectionName, topics)
+    : null;
+  if (!sectionSuggestion) return keywordSuggestion;
+  if (!keywordSuggestion) return sectionSuggestion;
+
+  const keywordCourse = topics.find((topic) => topic.id === keywordSuggestion.id)?.courseName;
+  const sectionCourse = topics.find((topic) => topic.id === sectionSuggestion.id)?.courseName;
+  return keywordCourse && sectionCourse && keywordCourse === sectionCourse
+    ? keywordSuggestion
+    : sectionSuggestion;
 }
 
 /** Sınıflandırma eşleşmesi: noktalama biçimi semantiği değiştirmez. */
@@ -400,6 +473,41 @@ export function parseBookletOptionLine(line: string): OptionSegment[] {
   }));
 }
 
+/**
+ * Kapaktaki "KONULAR / SORU SAYISI" tablosunu ardışık soru aralıklarına
+ * dönüştürür. Toplam, ayrıştırılan soru sayısıyla uyuşmuyorsa güvenlik için
+ * sonuç kullanılmaz.
+ */
+export function detectBookletSections(
+  pageTexts: string[],
+  totalRows: number,
+): DetectedSectionRange[] {
+  const cover = pageTexts.find((text) => text.includes('KONULAR') && text.includes('SORU SAYISI'));
+  if (!cover) return [];
+  const lines = cover.split('\n').map((line) => line.trim()).filter(Boolean);
+  const headerIndex = lines.findIndex((line) => line.includes('KONULAR') && line.includes('SORU SAYISI'));
+  if (headerIndex === -1) return [];
+
+  const found: { name: string; questionCount: number }[] = [];
+  for (const line of lines.slice(headerIndex + 1)) {
+    const match = /^(.+?)\s+(\d{1,3})$/.exec(line);
+    if (!match || /^\d+$/.test(match[1].trim())) continue;
+    const questionCount = Number(match[2]);
+    if (questionCount <= 0 || questionCount > totalRows) continue;
+    found.push({ name: match[1].trim(), questionCount });
+  }
+  if (found.length === 0 || found.reduce((sum, row) => sum + row.questionCount, 0) !== totalRows) {
+    return [];
+  }
+
+  let startRow = 1;
+  return found.map((row) => {
+    const range = { ...row, startRow, endRow: startRow + row.questionCount - 1 };
+    startRow = range.endRow + 1;
+    return range;
+  });
+}
+
 /** Satır sonu tirelerini onarır ("sayıl-\nmamıştır" → "sayılmamıştır"). */
 export function dehyphenate(text: string): string {
   return text
@@ -577,7 +685,12 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       ? dehyphenate(sourceLines.join(' ')).replace(/\s*SORU KİTAPÇIĞI.*$/i, '').trim() || null
       : null;
 
-  return { totalRows: questions.length, valid, errors, detectedSource };
+  const detectedSections = detectBookletSections(
+    result.pages.map((page) => page.text ?? ''),
+    questions.length,
+  );
+
+  return { totalRows: questions.length, valid, errors, detectedSource, detectedSections };
 }
 
 /** Dosya (csv/xlsx/pdf) → doğrulanmış rapor. */

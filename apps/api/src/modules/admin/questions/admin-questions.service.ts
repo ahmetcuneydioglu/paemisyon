@@ -9,7 +9,7 @@ import {
   detectArticleNo,
   parseImportFile,
   questionFingerprint,
-  suggestTopic,
+  suggestTopicForRow,
   type RowError,
 } from './import-parser';
 
@@ -371,7 +371,12 @@ export class AdminQuestionsService {
     const seenInBatch = new Map<string, number>(); // hash -> ilk rowNo
 
     const valid = report.valid.map((row, i) => {
-      const s = suggestTopic(row.stem, topics);
+      // Resmî kitapçık planı ders sınırını belirler; soru kökündeki
+      // açık mevzuat/konu anahtarı aynı ders içinde daha özel konuyu seçer.
+      const section = report.detectedSections?.find(
+        (range) => row.rowNo >= range.startRow && row.rowNo <= range.endRow,
+      );
+      const s = suggestTopicForRow(row.stem, section?.name ?? null, topics);
       const hash = fingerprints[i];
       let duplicate: { scope: 'bank' | 'batch'; where: string } | null = null;
       if (bankLocation.has(hash)) {
@@ -396,6 +401,7 @@ export class AdminQuestionsService {
       valid,
       errors: report.errors,
       detectedSource: report.detectedSource ?? null,
+      detectedSections: report.detectedSections ?? [],
       // Sınıflandırma dropdown'ları için (ayrı istek gerekmesin).
       moduleTopics: topics.map((t) => ({ id: t.id, name: t.name, courseName: t.courseName })),
     };

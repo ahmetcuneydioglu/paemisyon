@@ -7,6 +7,7 @@ import {
   detectArticleNo,
   parseImportFile,
   parseBookletOptionLine,
+  detectBookletSections,
 } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
@@ -126,6 +127,38 @@ describe('parseBookletOptionLine', () => {
 
   it('şıksız devam satırını seçenek sanmaz', () => {
     expect(parseBookletOptionLine('seçenek metninin devamı')).toEqual([]);
+  });
+});
+
+describe('detectBookletSections', () => {
+  const cover = `
+KONULAR \tSORU SAYISI \tTOPLAM SORU SAYISI
+Polis Meslek Mevzuatı \t30
+100 \t120
+Ceza Muhakemesi Hukuku \t10
+Ceza Hukuku \t10
+Anayasa Hukuku \t10
+İdare Hukuku \t10
+Atatürk İlkeleri ve İnkılap Tarihi \t10
+İnsan Hakları \t10
+Genel Kültür \t10`;
+
+  it('kapak konu tablosunu ardışık soru aralıklarına çevirir', () => {
+    const sections = detectBookletSections([cover], 100);
+    expect(sections).toHaveLength(8);
+    expect(sections[0]).toEqual({
+      name: 'Polis Meslek Mevzuatı', questionCount: 30, startRow: 1, endRow: 30,
+    });
+    expect(sections[4]).toEqual({
+      name: 'İdare Hukuku', questionCount: 10, startRow: 61, endRow: 70,
+    });
+    expect(sections[7]).toEqual({
+      name: 'Genel Kültür', questionCount: 10, startRow: 91, endRow: 100,
+    });
+  });
+
+  it('bölüm toplamı soru sayısıyla uyuşmazsa planı reddeder', () => {
+    expect(detectBookletSections([cover], 99)).toEqual([]);
   });
 });
 

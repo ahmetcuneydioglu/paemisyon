@@ -1,4 +1,9 @@
-import { suggestTopic, type TopicKeywordEntry } from './import-parser';
+import {
+  suggestTopic,
+  suggestTopicForRow,
+  suggestTopicFromSection,
+  type TopicKeywordEntry,
+} from './import-parser';
 
 /** Gerçek Zabıt Kâtibi kitapçığındaki mevzuatlardan temsili konu seti. */
 const TOPICS: TopicKeywordEntry[] = [
@@ -93,5 +98,52 @@ describe('suggestTopic (Doc 20 keyword sınıflandırma)', () => {
       matchKeywords: ['Erzurum Kongresi', 'Misak-ı Millî', 'Lozan Antlaşması'],
     }];
     expect(suggestTopic("Erzurum Kongresi'nde alınan kararlardan biri…", topics)?.id).toBe('inkilap');
+  });
+});
+
+describe('suggestTopicFromSection (kitapçık bölüm planı)', () => {
+  const topics: TopicKeywordEntry[] = [
+    { id: 'idare', name: 'İdare Hukuku', courseName: 'İdare Hukuku', matchKeywords: [] },
+    { id: 'genel', name: 'Genel Kültür', courseName: 'Genel Kültür ve Analitik Düşünme', matchKeywords: [] },
+    { id: 'turkce', name: 'Türkçe / Dil Bilgisi', courseName: 'Genel Kültür ve Analitik Düşünme', matchKeywords: ['yazım'] },
+    { id: 'cmk', name: 'C.M.K', courseName: 'Ceza Muhakemesi Hukuku', matchKeywords: ['5271'] },
+    { id: 'polis-1', name: 'PVSK', courseName: 'Polis Mevzuatı', matchKeywords: ['2559'] },
+    { id: 'polis-2', name: 'Disiplin', courseName: 'Polis Mevzuatı', matchKeywords: ['7068'] },
+  ];
+
+  it('İdare Hukuku bölümünü aynı adlı genel konuya atar', () => {
+    expect(suggestTopicFromSection('İdare Hukuku', topics)?.id).toBe('idare');
+  });
+
+  it('Genel Kültür bölümünü geniş adlı ders içindeki aynı konuya atar', () => {
+    expect(suggestTopicFromSection('Genel Kültür', topics)?.id).toBe('genel');
+  });
+
+  it('tek konulu dersi o konuya atar', () => {
+    expect(suggestTopicFromSection('Ceza Muhakemesi Hukuku', topics)?.id).toBe('cmk');
+  });
+
+  it('çok konulu ve genel hedefi olmayan Polis Mevzuatında tahmin yapmaz', () => {
+    expect(suggestTopicFromSection('Polis Mevzuatı', topics)).toBeNull();
+  });
+});
+
+describe('suggestTopicForRow (bölüm sınırı + keyword inceltme)', () => {
+  const topics: TopicKeywordEntry[] = [
+    { id: 'genel', name: 'Genel Kültür', courseName: 'Genel Kültür ve Analitik Düşünme', matchKeywords: [] },
+    { id: 'inkilap', name: 'Atatürk İlkeleri ve İnkılap Tarihi', courseName: 'Atatürk İlkeleri ve İnkılap Tarihi', matchKeywords: ['Atatürk'] },
+    { id: 'anayasa-genel', name: 'Anayasa', courseName: 'Anayasa Hukuku', matchKeywords: [] },
+    { id: 'anayasa-tc', name: 'T.C. Anayasası', courseName: 'Anayasa Hukuku', matchKeywords: ['T.C. Anayasası'] },
+  ];
+
+  it('başka ders keywordü bölüm planını ezemez', () => {
+    const s = suggestTopicForRow("Atatürk'ün bu sözünde boş bırakılan yerlere…", 'Genel Kültür', topics);
+    expect(s?.id).toBe('genel');
+    expect(s?.matchedKeyword).toBe('Bölüm planı: Genel Kültür');
+  });
+
+  it('aynı ders içindeki özel keyword genel bölüm hedefini inceltir', () => {
+    const s = suggestTopicForRow("T.C. Anayasası'na göre aşağıdakilerden hangisi…", 'Anayasa Hukuku', topics);
+    expect(s?.id).toBe('anayasa-tc');
   });
 });
