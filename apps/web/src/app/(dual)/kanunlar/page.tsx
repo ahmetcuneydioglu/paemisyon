@@ -25,42 +25,44 @@ export default async function KanunlarPage() {
   const groups = [...byCourse.entries()].sort((a, b) => b[1].length - a[1].length);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
-      <h1 className="font-heading mb-1 text-2xl font-bold text-(--color-navy)">
-        📚 Kanun Kütüphanesi
-      </h1>
-      <p className="mb-8 text-gray-600">
-        Polis sınavlarında sorumlu olduğun {laws.length} kanun ve yönetmelik. Her sayfada: hangi
-        sınavda hangi ağırlıkla çıkıyor, örnek çıkmış soru ve ilgili mevzuat.
-      </p>
+    <div className="tk-scope bg-surface-alt">
+      <div className="mx-auto max-w-6xl px-4 py-8 text-ink">
+        <h1 className="mb-1 font-heading text-2xl font-bold text-brand">
+          📚 Kanun Kütüphanesi
+        </h1>
+        <p className="mb-8 text-ink-soft">
+          Polis sınavlarında sorumlu olduğun {laws.length} kanun ve yönetmelik. Her sayfada: hangi
+          sınavda hangi ağırlıkla çıkıyor, örnek çıkmış soru ve ilgili mevzuat.
+        </p>
 
-      {groups.map(([course, items]) => (
-        <section key={course} className="mb-8">
-          <h2 className="font-heading mb-3 border-b border-gray-200 pb-2 text-lg font-bold text-(--color-navy)">
-            {course}
-          </h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {items
-              .sort((a, b) => b.questionCount - a.questionCount)
-              .map((l) => (
-                <Link
-                  key={l.slug}
-                  href={`/kanun/${l.slug}`}
-                  className="rounded-lg border border-gray-200 bg-white p-4 transition hover:border-(--color-navy) hover:shadow-sm"
-                >
-                  <p className="mb-1 text-sm font-medium">{l.name}</p>
-                  <p className="text-xs text-gray-500">
-                    {l.questionCount > 0 ? `${l.questionCount} çıkmış soru · ` : ""}
-                    {l.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(" · ") ||
-                      "müfredat konusu"}
-                  </p>
-                </Link>
-              ))}
-          </div>
-        </section>
-      ))}
+        {groups.map(([course, items]) => (
+          <section key={course} className="mb-8">
+            <h2 className="mb-3 border-b border-line pb-2 font-heading text-lg font-bold text-ink">
+              {course}
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {items
+                .sort((a, b) => b.questionCount - a.questionCount)
+                .map((l) => (
+                  <Link
+                    key={l.slug}
+                    href={`/kanun/${l.slug}`}
+                    className="tk-interactive rounded-md border border-line bg-surface p-4 text-ink hover:border-brand hover:shadow-card"
+                  >
+                    <p className="mb-1 text-sm font-medium">{l.name}</p>
+                    <p className="text-xs text-ink-soft">
+                      {l.questionCount > 0 ? `${l.questionCount} çıkmış soru · ` : ""}
+                      {l.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(" · ") ||
+                        "müfredat konusu"}
+                    </p>
+                  </Link>
+                ))}
+            </div>
+          </section>
+        ))}
 
-      {laws.length === 0 && <p className="text-gray-500">Kütüphane hazırlanıyor.</p>}
+        {laws.length === 0 && <p className="text-ink-soft">Kütüphane hazırlanıyor.</p>}
+      </div>
     </div>
   );
 }
