@@ -1,5 +1,13 @@
 import * as iconv from 'iconv-lite';
-import { decodeText, mapRows, normalizeHeader, parseCsv, detectArticleNo, parseImportFile } from './import-parser';
+import {
+  decodeText,
+  mapRows,
+  normalizeHeader,
+  parseCsv,
+  detectArticleNo,
+  parseImportFile,
+  parseBookletOptionLine,
+} from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
 
@@ -94,6 +102,30 @@ describe('parseImportFile', () => {
     const r = await parseImportFile(csv('Geçerli bir soru mu?;evet;hayır;;;;A;;orta'), 'sorular.csv');
     expect(r.valid).toHaveLength(1);
     expect(r.totalRows).toBe(1);
+  });
+});
+
+describe('parseBookletOptionLine', () => {
+  it('tab ile aynı satıra basılan iki şıkkı ayrı çıkarır', () => {
+    expect(parseBookletOptionLine('A) Ocak\tB) Mart')).toEqual([
+      { label: 'A', text: 'Ocak' },
+      { label: 'B', text: 'Mart' },
+    ]);
+  });
+
+  it('birden fazla boşlukla yan yana basılan şıkları ayrı çıkarır', () => {
+    expect(parseBookletOptionLine('C) Mayıs   D) Eylül')).toEqual([
+      { label: 'C', text: 'Mayıs' },
+      { label: 'D', text: 'Eylül' },
+    ]);
+  });
+
+  it('tek şıklı normal satırı değiştirmeden çıkarır', () => {
+    expect(parseBookletOptionLine('E) Kasım')).toEqual([{ label: 'E', text: 'Kasım' }]);
+  });
+
+  it('şıksız devam satırını seçenek sanmaz', () => {
+    expect(parseBookletOptionLine('seçenek metninin devamı')).toEqual([]);
   });
 });
 

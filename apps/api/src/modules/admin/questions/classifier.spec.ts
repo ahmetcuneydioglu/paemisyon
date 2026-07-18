@@ -56,4 +56,42 @@ describe('suggestTopic (Doc 20 keyword sınıflandırma)', () => {
     const topics: TopicKeywordEntry[] = [{ id: 'x', name: 'X', matchKeywords: [] }];
     expect(suggestTopic('herhangi bir metin', topics)).toBeNull();
   });
+
+  it('5271 sayılı Ceza Muhakemesi Kanunu → DB adı C.M.K olsa da eşleşir', () => {
+    const topics: TopicKeywordEntry[] = [{
+      id: 'cmk',
+      name: 'C.M.K',
+      courseName: 'Ceza Muhakemesi Hukuku',
+      matchKeywords: ['5271 sayılı', 'Ceza Muhakemesi Kanunu', 'CMK'],
+    }];
+    const s = suggestTopic("5271 sayılı Ceza Muhakemesi Kanunu'na göre hâkimin reddi…", topics);
+    expect(s?.id).toBe('cmk');
+    expect(s?.matchedKeyword).toBe('Ceza Muhakemesi Kanunu');
+  });
+
+  it('C.M.K ve CMK noktalama farkını yok sayar', () => {
+    const topics: TopicKeywordEntry[] = [{ id: 'cmk', name: 'C.M.K', matchKeywords: [] }];
+    expect(suggestTopic('CMK kapsamında koruma tedbirleri…', topics)?.id).toBe('cmk');
+  });
+
+  it('keyword boşsa ders adı güvenli fallback olur', () => {
+    const topics: TopicKeywordEntry[] = [{
+      id: 'inkilap',
+      name: 'İnkilap Tarihi',
+      courseName: 'Atatürk İlkeleri ve İnkılap Tarihi',
+      matchKeywords: [],
+    }];
+    expect(
+      suggestTopic("Atatürk İlkeleri ve İnkılap Tarihi kapsamında aşağıdakilerden hangisi…", topics)?.id,
+    ).toBe('inkilap');
+  });
+
+  it('İnkılap Tarihi ayırt edici olay anahtarından eşleşir', () => {
+    const topics: TopicKeywordEntry[] = [{
+      id: 'inkilap',
+      name: 'Atatürk İlkeleri ve İnkılap Tarihi',
+      matchKeywords: ['Erzurum Kongresi', 'Misak-ı Millî', 'Lozan Antlaşması'],
+    }];
+    expect(suggestTopic("Erzurum Kongresi'nde alınan kararlardan biri…", topics)?.id).toBe('inkilap');
+  });
 });

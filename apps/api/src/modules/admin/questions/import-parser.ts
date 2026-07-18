@@ -38,6 +38,8 @@ export interface TopicKeywordEntry {
   id: string;
   name: string;
   matchKeywords: string[];
+  /** Keyword yoksa güvenli ad fallback'i için ders adı. */
+  courseName?: string;
 }
 
 export interface TopicSuggestion {
@@ -151,18 +153,50 @@ export function suggestTopic(
   stem: string,
   topics: TopicKeywordEntry[],
 ): TopicSuggestion | null {
-  const hay = trLower(stem);
-  let best: TopicSuggestion | null = null;
+  const hay = normalizeForMatch(stem);
+  const compactHay = compactForAcronym(hay);
+  let best: (TopicSuggestion & { score: number }) | null = null;
   for (const t of topics) {
-    for (const kw of t.matchKeywords) {
-      const needle = trLower(kw.trim());
+    // Veritabanındaki açık anahtarlar önceliklidir. Eski/göç edilmiş konularda
+    // liste boş olabildiği için konu ve ders adı daha düşük öncelikli fallback'tir.
+    const candidates = [
+      ...t.matchKeywords.map((value) => ({ value, explicit: true })),
+      { value: t.name, explicit: false },
+      ...(t.courseName ? [{ value: t.courseName, explicit: false }] : []),
+    ];
+    for (const { value, explicit } of candidates) {
+      const needle = normalizeForMatch(value);
       if (needle.length === 0) continue;
-      if (hay.includes(needle) && (best === null || needle.length > trLower(best.matchedKeyword).length)) {
-        best = { id: t.id, name: t.name, matchedKeyword: kw };
+      // C.M.K / CMK gibi kısa kısaltmalarda nokta ve boşlukları tamamen yok say.
+      const compactNeedle = compactForAcronym(needle);
+      const acronymMatch = compactNeedle.length >= 2 && compactNeedle.length <= 6
+        && compactHay.includes(compactNeedle);
+      if (!hay.includes(needle) && !acronymMatch) continue;
+
+      // Uzun/özgül eşleşme kazanır; eşitlikte açık DB keyword'ü ad fallback'inden
+      // üstündür. Bu, genel ders adlarının özel kanun anahtarını ezmesini önler.
+      const score = compactNeedle.length * 2 + (explicit ? 1 : 0);
+      if (best === null || score > best.score) {
+        best = { id: t.id, name: t.name, matchedKeyword: value, score };
       }
     }
   }
-  return best;
+  if (!best) return null;
+  const { score: _score, ...suggestion } = best;
+  return suggestion;
+}
+
+/** Sınıflandırma eşleşmesi: noktalama biçimi semantiği değiştirmez. */
+function normalizeForMatch(s: string): string {
+  return trLower(s)
+    .replace(/[‘’‛ʼ′]/g, "'")
+    .replace(/[\p{P}\p{S}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function compactForAcronym(s: string): string {
+  return s.replace(/\s+/g, '');
 }
 
 const OPTION_LABELS = ['A', 'B', 'C', 'D', 'E'] as const;
@@ -339,8 +373,32 @@ export function mapRows(rows: string[][]): ParseReport {
 const ODSGM_HEADER = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ';
 const KEY_TITLE = 'CEVAP ANAHTARI';
 const QNUM_RE = /^(\d{1,3})\.\s+/;
-const OPTION_RE = /^([A-E])\)\s*/;
 const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
+
+interface OptionSegment {
+  label: string;
+  text: string;
+}
+
+/**
+ * PDF motoru kısa şıkları aynı satırda döndürebilir:
+ *   "A) Ocak\tB) Mart" veya "C) Mayıs   D) Eylül"
+ * Satır başındaki ve tab/iki+ boşlukla ayrılan tüm şıkları çıkarır. Tek boşluğu
+ * ayraç saymayarak seçenek metnindeki olağan "B)" benzeri kullanımlara karşı
+ * gereksiz bölünmeyi sınırlar.
+ */
+export function parseBookletOptionLine(line: string): OptionSegment[] {
+  const marker = /(?:^|\t+| {2,})([A-E])\)\s*/g;
+  const matches = [...line.matchAll(marker)];
+  if (matches.length === 0) return [];
+
+  return matches.map((match, index) => ({
+    label: match[1],
+    text: line
+      .slice(match.index! + match[0].length, matches[index + 1]?.index ?? line.length)
+      .trim(),
+  }));
+}
 
 /** Satır sonu tirelerini onarır ("sayıl-\nmamıştır" → "sayılmamıştır"). */
 export function dehyphenate(text: string): string {
@@ -466,10 +524,12 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       continue;
     }
     if (!current) continue;
-    const om = OPTION_RE.exec(line);
-    if (om) {
-      part = om[1];
-      current.options.set(part, line.replace(OPTION_RE, ''));
+    const optionSegments = parseBookletOptionLine(line);
+    if (optionSegments.length > 0) {
+      for (const option of optionSegments) {
+        part = option.label;
+        current.options.set(option.label, option.text);
+      }
       continue;
     }
     if (part === 'stem') current.stem += '\n' + line;
@@ -491,9 +551,10 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     }
     const expectedLabels = OPTION_LABELS.slice(0, opts.length);
     if (opts.length < 4 || !opts.every((o, i) => o.label === expectedLabels[i])) {
+      const found = opts.length > 0 ? opts.map((o) => o.label).join('/') : 'hiçbiri';
       errors.push({
         rowNo: q.no,
-        message: `Soru ${q.no}: şıklar metinden tam çıkarılamadı (görsel/tablo içerebilir) — elle ekle.`,
+        message: `Soru ${q.no}: şıklar metinden tam çıkarılamadı (bulunan: ${found}; PDF yerleşimi, görsel veya tablo kaynaklı olabilir) — elle ekle.`,
       });
       continue;
     }
