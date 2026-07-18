@@ -139,11 +139,11 @@ Konular · Yabancı Dil
 |---|---|---|
 | İnsan Hakları | 10 | İnsan Hakları *(PAEM ile ORTAK)* |
 | Anayasa ve İdare Hukuku | 10 | Anayasa Hukuku + İdare Hukuku *(2 ders → 1 başlık)* |
-| Polisi İlgilendiren Mevzuat | 20 | Polis Mevzuatı *(PAEM ile ORTAK — öneri, bkz. §2.5)* |
+| Polisi İlgilendiren Mevzuat | 20 | Polis Mevzuatı + Ceza Muhakemesi Hukuku + Ceza Hukuku *(PAEM ile ORTAK)* |
 | Atatürk İlkeleri ve İnkılap Tarihi | 10 | Atatürk İlkeleri ve İnkılap Tarihi *(ORTAK)* |
 | Protokol Bilgisi | 10 | Protokol Bilgisi |
 | Silah Bilgisi | 20 | Silah Bilgisi |
-| Güncel ve Kültürel Konular | 10 | Güncel ve Kültürel Konular |
+| Güncel ve Kültürel Konular | 10 | Genel Kültür ve Analitik Düşünme + Güncel ve Kültürel Konular *(PAEM ortak havuzu dahil)* |
 | Yabancı Dil | 10 | Yabancı Dil |
 
 ### 2.4 "Polis Mevzuatı" dersinin alt konuları (tekilleştirilmiş, kanun no önekli)
@@ -175,12 +175,13 @@ Her birine `matchKeywords` seed'lenir ("2559", "PVSK", "Polis Vazife"…) →
 PDF içe aktarma sınıflandırması bu ağaçta aynen çalışır. Eski sistemden göçen
 "Polis Mevzuatı" dersinin 30 konusu bu listeye eşlenir (örtüşme yüksek).
 
-### 2.5 Öneri / karar noktası
+### 2.5 Ortak ders kararı
 
-PAEM "Polis Meslek Mevzuatı" ile Misyon "Polisi İlgilendiren Mevzuat"ın AYNI
-içerik dersini ("Polis Mevzuatı") paylaşması önerilir — iki sınav da aynı
-kanunlardan sorar; fark başlık ve ağırlıkta (%10 vs %20). Ayrı içerik
-isteniyorsa iki ayrı ders açılır (mimari ikisini de destekler).
+PAEM ve Misyon aynı temel ders havuzunu paylaşır; Misyon'a ayrıca Protokol
+Bilgisi, Silah Bilgisi, Güncel ve Kültürel Konular ile Yabancı Dil eklenir.
+Misyon sunumunda CMK ve Ceza Hukuku "Polisi İlgilendiren Mevzuat", ortak
+Genel Kültür havuzu ise "Güncel ve Kültürel Konular" bölümü altında yer alır.
+Böylece soru ve konu kayıtları kopyalanmadan iki sınavda da kullanılır.
 
 ---
 
