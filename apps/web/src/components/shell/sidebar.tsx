@@ -2,128 +2,89 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CMDK_EVENT } from "./command-palette";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { signOut } from "@/app/(auth)/actions";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { CMDK_EVENT } from "./command-palette";
+import { NavigationIcon } from "./navigation-icon";
+import { APP_NAV_ITEMS, isNavItemActive } from "./navigation";
 
-interface NavChild {
-  href: string;
-  label: string;
-}
-interface NavItem {
-  href: string;
-  label: string;
-  icon: string;
-  also: string[];
-  children?: NavChild[];
-}
-
-const nav: NavItem[] = [
-  { href: "/bugun", label: "Bugün", icon: "◉", also: [] },
-  // Mevzuat sayfaları (aynı URL iki derinlik) Kütüphane bölgesine aittir.
-  {
-    href: "/kutuphane",
-    label: "Kütüphane",
-    icon: "▤",
-    also: ["/kanunlar", "/kanun"],
-    children: [
-      { href: "/kutuphane", label: "Dersler" },
-      { href: "/kanunlar", label: "Mevzuat" },
-      { href: "/kutuphane/yanlislar", label: "Yanlışlarım" },
-      { href: "/kutuphane/favoriler", label: "Favorilerim" },
-      { href: "/seans?mode=review&scope=Yanl%C4%B1%C5%9F+tekrar%C4%B1", label: "Akıllı Tekrar" },
-    ],
-  },
-  {
-    href: "/denemeler",
-    label: "Denemeler",
-    icon: "◧",
-    also: ["/sinav", "/sonuc", "/siralama"],
-  },
-  {
-    href: "/performans",
-    label: "Performans",
-    icon: "◔",
-    also: [],
-    children: [
-      { href: "/performans", label: "Genel bakış" },
-      { href: "/performans/konu-haritasi", label: "Konu haritası" },
-    ],
-  },
-  { href: "/profil", label: "Ben", icon: "☺", also: [] },
-];
-
-/**
- * Girişli uygulama kabuğunun sol navigasyonu (Doc 27 L2). 5 bölge modeli;
- * Performans W3'te eklenir. Kütüphane/Denemeler/Ben şimdilik mevcut (site)
- * sayfalarına gider — W2/W3'te kabuğa taşınırlar.
- */
+/** Tablet: etiketli navigasyon rayı · geniş ekran: tam sidebar ve alt ağaç. */
 export function Sidebar() {
   const pathname = usePathname();
+
   return (
-    <aside className="flex w-56 shrink-0 flex-col border-r border-line bg-surface max-lg:w-16">
+    <aside className="sticky top-0 hidden h-dvh w-24 shrink-0 flex-col border-r border-line bg-surface md:flex min-[1200px]:w-56">
       <Link
         href="/bugun"
-        className="px-5 py-5 font-heading text-[15px] font-bold tracking-tight text-brand max-lg:px-0 max-lg:text-center"
+        aria-label="Paemisyon ana sayfa"
+        className="flex h-16 items-center justify-center font-heading font-bold tracking-tight text-brand min-[1200px]:justify-start min-[1200px]:px-5 min-[1200px]:text-[15px]"
       >
-        <span className="max-lg:hidden">PAEMİSYON</span>
-        <span className="hidden max-lg:inline">P</span>
+        <span className="flex size-9 items-center justify-center rounded-md bg-brand/10 text-lg min-[1200px]:hidden">
+          P
+        </span>
+        <span className="hidden min-[1200px]:inline">PAEMİSYON</span>
       </Link>
+
       <button
         type="button"
         onClick={() => window.dispatchEvent(new CustomEvent(CMDK_EVENT))}
-        className="tk-interactive mx-3 mb-2 flex cursor-pointer items-center justify-between rounded-sm border border-line px-2.5 py-1.5 text-[13px] text-ink-soft hover:border-ink-soft hover:text-ink max-lg:mx-2 max-lg:justify-center"
+        className="tk-interactive mx-2 mb-3 flex min-h-12 cursor-pointer flex-col items-center justify-center gap-1 rounded-md border border-line px-1 text-[11px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink min-[1200px]:mx-3 min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:gap-2 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-[13px] min-[1200px]:font-normal"
         aria-label="Ara — komut paleti"
       >
-        <span className="max-lg:hidden">Ara…</span>
-        <kbd className="tk-caption max-lg:hidden" aria-hidden>
+        <NavigationIcon name="search" className="size-5 shrink-0" />
+        <span className="min-[1200px]:flex-1 min-[1200px]:text-left">Ara</span>
+        <kbd className="tk-caption hidden min-[1200px]:inline" aria-hidden>
           ⌘K
         </kbd>
-        <span className="hidden max-lg:inline" aria-hidden>
-          ⌕
-        </span>
       </button>
-      <nav className="flex flex-col gap-0.5 px-3 max-lg:px-2" aria-label="Ana bölgeler">
-        {nav.map((item) => {
-          const active = [item.href, ...item.also].some(
-            (p) => pathname === p || pathname.startsWith(p + "/"),
-          );
+
+      <nav
+        className="flex flex-col gap-1 px-2 min-[1200px]:px-3"
+        aria-label="Ana bölgeler"
+      >
+        {APP_NAV_ITEMS.map((item) => {
+          const active = isNavItemActive(item, pathname);
           return (
             <div key={item.href}>
               <Link
                 href={item.href}
                 aria-current={active ? "page" : undefined}
+                title={item.label}
                 className={[
-                  "tk-interactive flex items-center gap-2.5 rounded-sm px-2.5 py-2 text-[14px] max-lg:justify-center max-lg:px-0",
+                  "tk-interactive relative flex min-h-14 flex-col items-center justify-center gap-1 rounded-md px-1 text-[11px] font-semibold min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2.5 min-[1200px]:text-[14px]",
                   active
-                    ? "bg-brand/10 font-bold text-brand"
+                    ? "bg-brand/10 text-brand"
                     : "text-ink-soft hover:bg-line/40 hover:text-ink",
                 ].join(" ")}
               >
-                <span aria-hidden className="w-4 text-center">
-                  {item.icon}
-                </span>
-                <span className="max-lg:hidden">{item.label}</span>
+                {active && (
+                  <span className="absolute left-0 top-1/2 h-7 w-0.5 -translate-y-1/2 rounded-full bg-brand" />
+                )}
+                <NavigationIcon
+                  name={item.icon}
+                  className="size-[22px] shrink-0"
+                />
+                <span>{item.label}</span>
               </Link>
-              {/* Aktif bölgenin alt öğeleri (Doc 27 §1) — daraltılmış rayda gizli */}
+
               {active && item.children && (
-                <div className="mb-1 ml-6 mt-0.5 flex flex-col gap-0.5 border-l border-line pl-2 max-lg:hidden">
-                  {item.children.map((c) => {
-                    // Sorgu içeren alt öğe (Akıllı Tekrar) hiçbir zaman "aktif" işaretlenmez.
-                    const cActive = !c.href.includes("?") && pathname === c.href;
+                <div className="mt-0.5 mb-1 ml-6 hidden flex-col gap-0.5 border-l border-line pl-2 min-[1200px]:flex">
+                  {item.children.map((child) => {
+                    const childActive =
+                      !child.href.includes("?") && pathname === child.href;
                     return (
                       <Link
-                        key={c.href}
-                        href={c.href}
-                        aria-current={cActive ? "page" : undefined}
+                        key={child.href}
+                        href={child.href}
+                        aria-current={childActive ? "page" : undefined}
                         className={[
-                          "tk-interactive rounded-sm px-2 py-1 text-[13px]",
-                          cActive
+                          "tk-interactive rounded-sm px-2 py-1.5 text-[13px]",
+                          childActive
                             ? "font-bold text-brand"
                             : "text-ink-soft hover:bg-line/40 hover:text-ink",
                         ].join(" ")}
                       >
-                        {c.label}
+                        {child.label}
                       </Link>
                     );
                   })}
@@ -133,39 +94,45 @@ export function Sidebar() {
           );
         })}
       </nav>
-      <div className="mt-auto space-y-2 border-t border-line px-5 py-4 max-lg:px-2">
-        <div className="mb-1 max-lg:hidden">
+
+      <div className="mt-auto space-y-1 border-t border-line px-2 py-3 min-[1200px]:px-3">
+        <div className="mb-2 hidden min-[1200px]:block">
           <ThemeToggle />
         </div>
-        <Link
-          href="/premium"
-          className="tk-caption block text-brand hover:underline max-lg:text-center"
-        >
-          <span className="max-lg:hidden">Premium&apos;a geç</span>
-          <span className="hidden max-lg:inline">★</span>
-        </Link>
-        <Link
-          href="/sss"
-          className="tk-caption block hover:text-ink max-lg:text-center"
-          title="Yardım ve SSS"
-        >
-          <span className="max-lg:hidden">Yardım · SSS</span>
-          <span className="hidden max-lg:inline">?</span>
-        </Link>
-        {/* Çıkış — her sayfada erişilebilir (daraltılmış rayda ikon) */}
+        <UtilityLink href="/premium" icon="premium" label="Premium" />
+        <UtilityLink href="/sss" icon="help" label="Yardım ve SSS" />
         <form action={signOut}>
           <button
             type="submit"
             title="Çıkış yap"
-            className="tk-interactive tk-caption block w-full text-left hover:text-danger max-lg:text-center"
+            className="tk-interactive flex min-h-12 w-full flex-col items-center justify-center gap-1 rounded-md text-[10px] font-semibold text-ink-soft hover:bg-danger/5 hover:text-danger min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-[13px]"
           >
-            <span className="max-lg:hidden">Çıkış yap</span>
-            <span className="hidden max-lg:inline" aria-hidden>
-              ⏻
-            </span>
+            <NavigationIcon name="logout" className="size-5 shrink-0" />
+            <span>Çıkış</span>
           </button>
         </form>
       </div>
     </aside>
+  );
+}
+
+function UtilityLink({
+  href,
+  icon,
+  label,
+}: {
+  href: string;
+  icon: "premium" | "help";
+  label: string;
+}) {
+  return (
+    <Link
+      href={href}
+      title={label}
+      className="tk-interactive flex min-h-12 flex-col items-center justify-center gap-1 rounded-md text-center text-[10px] font-semibold text-ink-soft hover:bg-line/40 hover:text-ink min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-left min-[1200px]:text-[13px]"
+    >
+      <NavigationIcon name={icon} className="size-5 shrink-0" />
+      <span>{label}</span>
+    </Link>
   );
 }

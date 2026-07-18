@@ -1,7 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { Sidebar } from "@/components/shell/sidebar";
-import { CommandPalette } from "@/components/shell/command-palette";
+import { AppShell } from "@/components/shell/app-shell";
 import { supabaseServer } from "@/lib/supabase/server";
 
 /**
@@ -10,7 +9,9 @@ import { supabaseServer } from "@/lib/supabase/server";
  * girişli kullanıcıya çalışma alanı (sidebar kabuğu) olarak açılır.
  * Ayrı "app" URL'i yoktur.
  */
-export default async function DualLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function DualLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   const { data } = await (await supabaseServer()).auth.getUser();
 
   if (!data.user) {
@@ -24,10 +25,8 @@ export default async function DualLayout({ children }: Readonly<{ children: Reac
   }
 
   return (
-    <div className="tk-scope flex min-h-screen font-body">
-      <Sidebar />
-      <main className="min-w-0 flex-1">{children}</main>
-      <CommandPalette />
+    <div className="tk-scope min-h-screen font-body">
+      <AppShell>{children}</AppShell>
     </div>
   );
 }
