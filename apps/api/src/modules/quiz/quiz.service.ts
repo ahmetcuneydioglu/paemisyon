@@ -13,6 +13,10 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { mixQuota, pickMix } from './session-mix.logic';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
+import { articleSlug, slugify } from '../public/public.service';
+
+/** Kanun konusu tespiti (public.service ile aynı desen). */
+const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
 
 /**
  * Quiz motoru (Doc 10 §2.5). Çekirdek ilke: değerlendirme ve skorlama SUNUCUDA;
@@ -429,7 +433,7 @@ export class QuizService {
     }
 
     // practice: anlık geri bildirim + açıklama (+ kaynak, ayar açıksa).
-    const [version, showSource] = await Promise.all([
+    const [version, question, showSource] = await Promise.all([
       this.prisma.questionVersion.findUnique({
         where: { id: dto.questionVersionId },
         select: {
@@ -438,13 +442,30 @@ export class QuizService {
           legalReferences: { select: { citation: true }, take: 1 },
         },
       }),
+      // Seans içi madde bağı (Doc 27 §3.6 "M ile aç"): soru bir kanun
+      // konusundan ve madde etiketliyse Atlas'taki sayfasına yapısal köprü.
+      this.prisma.question.findUnique({
+        where: { id: dto.questionId },
+        select: { articleNo: true, topic: { select: { name: true } } },
+      }),
       this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
     ]);
+
+    let relatedArticle: { lawSlug: string; no: string; slug: string } | null = null;
+    if (question?.articleNo && question.topic && LAW_NAME_RE.test(question.topic.name)) {
+      relatedArticle = {
+        lawSlug: slugify(question.topic.name),
+        no: question.articleNo,
+        slug: articleSlug(question.articleNo),
+      };
+    }
+
     return {
       isCorrect,
       correctOptionId: correct?.id ?? null,
       explanation: version?.explanation ?? null,
       legalReference: version?.legalReferences[0]?.citation ?? null,
+      relatedArticle,
       source: showSource ? (version?.sourceLabel ?? null) : null,
     };
   }

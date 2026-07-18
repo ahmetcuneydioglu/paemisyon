@@ -28,6 +28,8 @@ interface AnswerFeedback {
   correctOptionId: string | null;
   explanation: string | null;
   legalReference: string | null;
+  /** Yapısal madde bağı — "M ile aç" inspector'ı + link için (Doc 27 §3.6). */
+  relatedArticle: { lawSlug: string; no: string; slug: string } | null;
   source: string | null;
 }
 interface CompleteResponse {
@@ -84,6 +86,10 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const [exitAsk, setExitAsk] = useState(false);
   // Oturum içi not (wireframe 08): kaydedilmez, seansla yaşar.
   const [note, setNote] = useState("");
+  // Favoriler (F) — bookmark API'sine yazılır; oturum içi anlık durum.
+  const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
+  // "M ile aç" — ilgili maddeyi sağ panelde göster (seanstan çıkmadan, Doc 27 §3.6).
+  const [maddeOpen, setMaddeOpen] = useState(false);
   const questionShownAt = useRef(0);
   const startedRef = useRef(false);
 
@@ -112,6 +118,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
               correctOptionId: a.isCorrect === true ? a.selectedOptionId : null,
               explanation: null,
               legalReference: null,
+              relatedArticle: null,
               source: null,
               selected: a.selectedOptionId,
             };
@@ -206,9 +213,33 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       void complete();
     } else {
       setIndex((i) => i + 1);
+      setMaddeOpen(false); // sonraki soruda inspector kapanır
       questionShownAt.current = Date.now();
     }
   }, [data, currentFeedback, isLast, complete]);
+
+  // ── Favorile (F) — bookmark API'sine yazar (Doc 26 #7, wireframe 08) ──
+  const toggleBookmark = useCallback(
+    (questionId: string) => {
+      const has = bookmarks.has(questionId);
+      // İyimser güncelleme; hata olursa geri al.
+      setBookmarks((s) => {
+        const n = new Set(s);
+        if (has) n.delete(questionId);
+        else n.add(questionId);
+        return n;
+      });
+      apiClient(`/review/bookmarks/${questionId}`, { method: has ? "DELETE" : "POST" }).catch(() => {
+        setBookmarks((s) => {
+          const n = new Set(s);
+          if (has) n.add(questionId);
+          else n.delete(questionId);
+          return n;
+        });
+      });
+    },
+    [bookmarks],
+  );
 
   // ── Klavye (Doc 27 §2.2): 1-4/A-D şık · Enter sonraki · Esc çıkış ──
   useEffect(() => {
@@ -229,6 +260,16 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         next();
         return;
       }
+      const low = e.key.toLocaleLowerCase("tr-TR");
+      if (low === "f") {
+        toggleBookmark(q.questionId);
+        return;
+      }
+      // M — ilgili maddeyi sağ panelde aç (yalnız cevaplanmış + madde bağı varsa).
+      if (low === "m" && feedback[q.questionId]?.relatedArticle) {
+        setMaddeOpen((v) => !v);
+        return;
+      }
       if (feedback[q.questionId]) return;
       const num = Number.parseInt(e.key, 10);
       let opt: { id: string } | undefined;
@@ -241,7 +282,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [phase, index, feedback, exitAsk, next, submit]);
+  }, [phase, index, feedback, exitAsk, next, submit, toggleBookmark]);
 
   // ═══ Görünümler ═══
 
@@ -287,7 +328,19 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   }
 
   if (phase.kind === "done") {
-    return <SessionResult result={phase.result} scopeLabel={scope.label} />;
+    // Bu seansta karşılaşılan tekil maddeler (İlgili maddeleri oku için).
+    const seenArticles = new Map<string, { lawSlug: string; no: string; slug: string }>();
+    for (const f of Object.values(feedback)) {
+      if (f.relatedArticle) seenArticles.set(`${f.relatedArticle.lawSlug}/${f.relatedArticle.slug}`, f.relatedArticle);
+    }
+    return (
+      <SessionResult
+        result={phase.result}
+        scopeLabel={scope.label}
+        isReview={scope.mode === "review"}
+        articles={[...seenArticles.values()]}
+      />
+    );
   }
 
   // playing / finishing
@@ -351,14 +404,48 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                 explanation={fb.explanation}
                 source={fb.source}
                 legalReference={fb.legalReference}
+                lawHref={
+                  fb.relatedArticle
+                    ? `/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`
+                    : null
+                }
               />
-              <div className="flex justify-end">
+              {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir (wireframe 08) */}
+              <div className="flex flex-wrap items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => toggleBookmark(question!.questionId)}
+                  aria-pressed={bookmarks.has(question!.questionId)}
+                  className={[
+                    "tk-caption rounded-full border px-2.5 py-1",
+                    bookmarks.has(question!.questionId)
+                      ? "border-streak/60 bg-streak/10 text-streak"
+                      : "border-line hover:text-ink",
+                  ].join(" ")}
+                >
+                  {bookmarks.has(question!.questionId) ? "★ Favoride" : "☆ Favorile (F)"}
+                </button>
+                {fb.relatedArticle && (
+                  <button
+                    type="button"
+                    onClick={() => setMaddeOpen((v) => !v)}
+                    aria-pressed={maddeOpen}
+                    className={[
+                      "tk-caption rounded-full border px-2.5 py-1",
+                      maddeOpen
+                        ? "border-atlas/60 bg-atlas/10 text-atlas"
+                        : "border-line hover:text-ink",
+                    ].join(" ")}
+                  >
+                    ⚖ İlgili madde: {fb.relatedArticle.no} (M)
+                  </button>
+                )}
                 <Link
                   href="/soru-oner"
                   target="_blank"
                   className="tk-caption rounded-full border border-line px-2.5 py-1 hover:text-ink"
                 >
-                  ⚑ Soruda hata bildir
+                  ⚑ Hata bildir
                 </Link>
               </div>
               <div className="flex justify-end">
@@ -400,6 +487,36 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
             </div>
             <p className="tabular mt-2 text-[12px] text-ink-soft">{answeredCount} cevaplandı</p>
           </Card>
+
+          {/* İlgili madde inspector'ı — M ile açılır, seanstan çıkmadan (Doc 27 §3.6) */}
+          {maddeOpen && fb?.relatedArticle && (
+            <Card className="mt-3 border-atlas/40">
+              <div className="flex items-start justify-between gap-2">
+                <CardTitle className="text-[13px] text-atlas">
+                  İlgili madde · {fb.relatedArticle.no}
+                </CardTitle>
+                <button
+                  type="button"
+                  onClick={() => setMaddeOpen(false)}
+                  aria-label="Kapat"
+                  className="tk-caption hover:text-ink"
+                >
+                  ✕
+                </button>
+              </div>
+              {fb.legalReference && (
+                <p className="mt-1 text-[13px] text-ink-soft">{fb.legalReference}</p>
+              )}
+              <Link
+                href={`/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`}
+                target="_blank"
+                className="mt-2 inline-block text-[13px] font-bold text-atlas hover:underline"
+              >
+                Maddeyi Atlas&apos;ta aç →
+              </Link>
+            </Card>
+          )}
+
           <Card className="mt-3">
             <CardTitle className="text-[13px]">Not</CardTitle>
             <textarea
@@ -413,7 +530,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
             />
           </Card>
           <p className="tk-caption mt-3 leading-relaxed">
-            1–4 şık · ⏎ sonraki · Esc çıkış
+            1–4 şık · ⏎ sonraki · F favori · M madde · Esc çıkış
           </p>
         </aside>
       </div>
@@ -503,9 +620,13 @@ function FocusFrame({
 function SessionResult({
   result,
   scopeLabel,
+  isReview,
+  articles,
 }: {
   result: CompleteResponse;
   scopeLabel?: string;
+  isReview: boolean;
+  articles: { lawSlug: string; no: string; slug: string }[];
 }) {
   const pct =
     result.totalQuestions > 0
@@ -553,10 +674,38 @@ function SessionResult({
             <ButtonLink href="/bugun" size="lg">
               Bugün&apos;e dön
             </ButtonLink>
-            <ButtonLink href="/seans" variant="secondary" size="lg">
+            {/* Yanlış varsa (ve zaten tekrar seansı değilse) doğrudan review'a köprü */}
+            {result.wrongCount > 0 && !isReview && (
+              <ButtonLink
+                href={`/seans?mode=review&scope=${encodeURIComponent("Yanlış tekrarı")}`}
+                variant="secondary"
+                size="lg"
+              >
+                Yanlışları şimdi tekrar et
+              </ButtonLink>
+            )}
+            <ButtonLink href="/seans" variant="ghost" size="lg">
               Yeni seans
             </ButtonLink>
           </div>
+
+          {/* İlgili maddeleri oku (wireframe 09): bu seansta geçen mevzuat maddeleri */}
+          {articles.length > 0 && (
+            <Card>
+              <CardTitle className="text-[13px]">İlgili maddeleri oku</CardTitle>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {articles.slice(0, 6).map((a) => (
+                  <Link
+                    key={`${a.lawSlug}/${a.slug}`}
+                    href={`/kanun/${a.lawSlug}/madde/${a.slug}`}
+                    className="tk-caption rounded-full border border-atlas/40 bg-atlas/5 px-2.5 py-1 text-atlas hover:border-atlas"
+                  >
+                    ⚖ madde {a.no}
+                  </Link>
+                ))}
+              </div>
+            </Card>
+          )}
         </div>
 
         <Card>

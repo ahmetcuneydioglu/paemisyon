@@ -255,7 +255,34 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── Kapanış: güven + premium + kayıt ── */}
+      {/* ── Fiyat özeti (wireframe 01 not 6): ücretsiz katmanın değeri önde ── */}
+      <section className="border-t border-line px-4 py-10">
+        <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-2">
+          <div className="rounded-md border border-line bg-surface p-5">
+            <p className="tk-caption">Ücretsiz</p>
+            <p className="mt-1 font-heading text-[17px] font-bold text-ink">Sonsuza dek 0 ₺</p>
+            <ul className="mt-2 space-y-1 text-[13px] text-ink-soft">
+              <li>Günde 15 soru + günün sorusu</li>
+              <li>Canlı denemeler ve sıralama</li>
+              <li>Seri, rozetler, temel koç</li>
+            </ul>
+          </div>
+          <div className="rounded-md border border-brand/40 bg-brand/5 p-5">
+            <p className="tk-caption text-brand">Premium</p>
+            <p className="mt-1 font-heading text-[17px] font-bold text-ink">Koçun tam beyni</p>
+            <ul className="mt-2 space-y-1 text-[13px] text-ink-soft">
+              <li>Sınırsız soru + süresiz tekrar hafızası</li>
+              <li>Sınırsız AI açıklaması</li>
+              <li>Haftada 3 seri sigortası</li>
+            </ul>
+            <Link href="/premium" className="mt-3 inline-block text-[13px] font-bold text-brand hover:underline">
+              Fiyatları gör →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Kapanış: güven + kayıt ── */}
       <section className="border-t border-line px-4 py-10 text-center">
         <p className="text-[14px] text-ink-soft">
           <b className="text-ink">

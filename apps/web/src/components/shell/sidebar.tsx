@@ -4,14 +4,51 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CMDK_EVENT } from "./command-palette";
 
-const nav = [
-  { href: "/bugun", label: "Bugün", icon: "◉", also: [] as string[] },
+interface NavChild {
+  href: string;
+  label: string;
+}
+interface NavItem {
+  href: string;
+  label: string;
+  icon: string;
+  also: string[];
+  children?: NavChild[];
+}
+
+const nav: NavItem[] = [
+  { href: "/bugun", label: "Bugün", icon: "◉", also: [] },
   // Mevzuat sayfaları (aynı URL iki derinlik) Kütüphane bölgesine aittir.
-  { href: "/kutuphane", label: "Kütüphane", icon: "▤", also: ["/kanunlar", "/kanun"] },
-  { href: "/denemeler", label: "Denemeler", icon: "◧", also: ["/sinav", "/sonuc", "/siralama"] },
-  { href: "/performans", label: "Performans", icon: "◔", also: [] },
+  {
+    href: "/kutuphane",
+    label: "Kütüphane",
+    icon: "▤",
+    also: ["/kanunlar", "/kanun"],
+    children: [
+      { href: "/kutuphane", label: "Dersler" },
+      { href: "/kanunlar", label: "Mevzuat" },
+      { href: "/kutuphane/yanlislar", label: "Yanlışlarım" },
+      { href: "/seans?mode=review&scope=Yanl%C4%B1%C5%9F+tekrar%C4%B1", label: "Akıllı Tekrar" },
+    ],
+  },
+  {
+    href: "/denemeler",
+    label: "Denemeler",
+    icon: "◧",
+    also: ["/sinav", "/sonuc", "/siralama"],
+  },
+  {
+    href: "/performans",
+    label: "Performans",
+    icon: "◔",
+    also: [],
+    children: [
+      { href: "/performans", label: "Genel bakış" },
+      { href: "/performans/konu-haritasi", label: "Konu haritası" },
+    ],
+  },
   { href: "/profil", label: "Ben", icon: "☺", also: [] },
-] as const;
+];
 
 /**
  * Girişli uygulama kabuğunun sol navigasyonu (Doc 27 L2). 5 bölge modeli;
@@ -49,22 +86,47 @@ export function Sidebar() {
             (p) => pathname === p || pathname.startsWith(p + "/"),
           );
           return (
-            <Link
-              key={item.href}
-              href={item.href}
-              aria-current={active ? "page" : undefined}
-              className={[
-                "tk-interactive flex items-center gap-2.5 rounded-sm px-2.5 py-2 text-[14px] max-lg:justify-center max-lg:px-0",
-                active
-                  ? "bg-brand/10 font-bold text-brand"
-                  : "text-ink-soft hover:bg-line/40 hover:text-ink",
-              ].join(" ")}
-            >
-              <span aria-hidden className="w-4 text-center">
-                {item.icon}
-              </span>
-              <span className="max-lg:hidden">{item.label}</span>
-            </Link>
+            <div key={item.href}>
+              <Link
+                href={item.href}
+                aria-current={active ? "page" : undefined}
+                className={[
+                  "tk-interactive flex items-center gap-2.5 rounded-sm px-2.5 py-2 text-[14px] max-lg:justify-center max-lg:px-0",
+                  active
+                    ? "bg-brand/10 font-bold text-brand"
+                    : "text-ink-soft hover:bg-line/40 hover:text-ink",
+                ].join(" ")}
+              >
+                <span aria-hidden className="w-4 text-center">
+                  {item.icon}
+                </span>
+                <span className="max-lg:hidden">{item.label}</span>
+              </Link>
+              {/* Aktif bölgenin alt öğeleri (Doc 27 §1) — daraltılmış rayda gizli */}
+              {active && item.children && (
+                <div className="mb-1 ml-6 mt-0.5 flex flex-col gap-0.5 border-l border-line pl-2 max-lg:hidden">
+                  {item.children.map((c) => {
+                    // Sorgu içeren alt öğe (Akıllı Tekrar) hiçbir zaman "aktif" işaretlenmez.
+                    const cActive = !c.href.includes("?") && pathname === c.href;
+                    return (
+                      <Link
+                        key={c.href}
+                        href={c.href}
+                        aria-current={cActive ? "page" : undefined}
+                        className={[
+                          "tk-interactive rounded-sm px-2 py-1 text-[13px]",
+                          cActive
+                            ? "font-bold text-brand"
+                            : "text-ink-soft hover:bg-line/40 hover:text-ink",
+                        ].join(" ")}
+                      >
+                        {c.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           );
         })}
       </nav>
