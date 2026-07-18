@@ -85,4 +85,41 @@ describe('UserSyncService.ensureUser', () => {
       expect.objectContaining({ where: { userId: 'user-1' } }),
     );
   });
+
+  it('aynı kullanıcı için eşzamanlı istekleri tek veritabanı okumasında birleştirir', async () => {
+    const existing = {
+      id: 'user-1',
+      email: 'aday@example.com',
+      emailVerifiedAt: new Date(),
+      status: 'active',
+      roles: [{ role: { key: 'user' } }],
+      entitlement: { isPremium: false, validUntil: null },
+    };
+    const prisma = {
+      user: {
+        findUnique: jest
+          .fn()
+          .mockImplementation(
+            () => new Promise((resolve) => setTimeout(() => resolve(existing), 5)),
+          ),
+        update: jest.fn(),
+      },
+    };
+    const service = new UserSyncService(prisma as never);
+    const claims = {
+      sub: 'user-1',
+      email: 'aday@example.com',
+      email_verified: true,
+    } as JWTPayload;
+
+    const [first, second, third] = await Promise.all([
+      service.ensureUser(claims),
+      service.ensureUser(claims),
+      service.ensureUser(claims),
+    ]);
+
+    expect(first).toEqual(second);
+    expect(second).toEqual(third);
+    expect(prisma.user.findUnique).toHaveBeenCalledTimes(1);
+  });
 });

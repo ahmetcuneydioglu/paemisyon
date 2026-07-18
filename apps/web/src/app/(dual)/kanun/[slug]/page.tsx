@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { articleSlug, publicApi, type LawDetail, type TopicAtlas } from "@/lib/public-api";
 import { config } from "@/lib/config";
 import { api } from "@/lib/api";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { LawWorkspace } from "@/components/atlas/law-workspace";
 
 // Aynı URL iki derinlik (Doc 27): kabuk ve içerik oturuma göre değişir —
@@ -41,8 +41,8 @@ export default async function KanunPage({ params }: { params: Params }) {
   if (!law) notFound();
 
   // Girişli derinlik: aynı URL, çalışma alanı (Doc 27 §3.4).
-  const { data: auth } = await (await supabaseServer()).auth.getUser();
-  if (auth.user) {
+  const user = await getCurrentUser();
+  if (user) {
     const atlas = await api<TopicAtlas>(`/catalog/topics/${law.topicId}/atlas`).catch(() => null);
     return <LawWorkspace law={law} atlas={atlas} />;
   }

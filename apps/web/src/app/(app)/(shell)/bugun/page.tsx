@@ -23,7 +23,9 @@ export const dynamic = "force-dynamic";
 export default async function BugunPage() {
   const [brief, exams, active, activity] = await Promise.all([
     api<CoachBrief>("/me/coach"),
-    api<ExamListItem[]>("/exams").catch(() => [] as ExamListItem[]),
+    api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
+      () => [] as ExamListItem[],
+    ),
     api<ActiveSession | null>("/quiz/active-session").catch(() => null),
     api<ActivityDay[]>("/progress/activity").catch(() => [] as ActivityDay[]),
   ]);

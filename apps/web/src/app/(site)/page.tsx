@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { api } from "@/lib/api";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamListItem } from "@/lib/types";
 import { publicApi, type LawSummary, type QuestionOfDay } from "@/lib/public-api";
 import { Countdown } from "@/components/countdown";
@@ -26,11 +26,13 @@ export const dynamic = "force-dynamic";
  * Girişli kullanıcının evi uygulama kabuğu: / → /bugun.
  */
 export default async function HomePage() {
-  const { data: auth } = await (await supabaseServer()).auth.getUser();
-  if (auth.user) redirect("/bugun");
+  const user = await getCurrentUser();
+  if (user) redirect("/bugun");
 
   const [exams, qotd, laws] = await Promise.all([
-    api<ExamListItem[]>("/exams", { auth: false }).catch(() => [] as ExamListItem[]),
+    api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
+      () => [] as ExamListItem[],
+    ),
     publicApi<QuestionOfDay>("/public/question-of-day", 600).catch(() => null),
     publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]),
   ]);

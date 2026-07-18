@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { publicApi, type LawArticleDetail, type TopicAtlas } from "@/lib/public-api";
 import { config } from "@/lib/config";
 import { api } from "@/lib/api";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { ArticleWorkspace } from "@/components/atlas/article-workspace";
 
 // Aynı URL iki derinlik (Doc 27) — kabuk oturuma göre değişir.
@@ -41,8 +41,8 @@ export default async function MaddePage({ params }: { params: Params }) {
   if (!a) notFound();
 
   // Girişli derinlik: L4 madde çalışma alanı (Doc 27 §3.5).
-  const { data: auth } = await (await supabaseServer()).auth.getUser();
-  if (auth.user) {
+  const user = await getCurrentUser();
+  if (user) {
     const atlas = await api<TopicAtlas>(`/catalog/topics/${a.topicId}/atlas`).catch(() => null);
     return <ArticleWorkspace article={a} atlas={atlas} />;
   }

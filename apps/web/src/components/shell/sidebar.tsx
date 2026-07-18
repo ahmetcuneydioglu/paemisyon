@@ -7,6 +7,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { CMDK_EVENT } from "./command-palette";
 import { NavigationIcon } from "./navigation-icon";
 import { APP_NAV_ITEMS, isNavItemActive } from "./navigation";
+import { LinkPendingIndicator } from "@/components/ui/link-pending-indicator";
 
 /** Tablet: etiketli navigasyon rayı · geniş ekran: tam sidebar ve alt ağaç. */
 export function Sidebar() {
@@ -65,6 +66,7 @@ export function Sidebar() {
                   className="size-[22px] shrink-0"
                 />
                 <span>{item.label}</span>
+                <LinkPendingIndicator />
               </Link>
 
               {active && item.children && (
@@ -78,13 +80,14 @@ export function Sidebar() {
                         href={child.href}
                         aria-current={childActive ? "page" : undefined}
                         className={[
-                          "tk-interactive rounded-sm px-2 py-1.5 text-[13px]",
+                          "tk-interactive relative rounded-sm px-2 py-1.5 text-[13px]",
                           childActive
                             ? "font-bold text-brand"
                             : "text-ink-soft hover:bg-line/40 hover:text-ink",
                         ].join(" ")}
                       >
                         {child.label}
+                        <LinkPendingIndicator />
                       </Link>
                     );
                   })}
@@ -129,10 +132,11 @@ function UtilityLink({
     <Link
       href={href}
       title={label}
-      className="tk-interactive flex min-h-12 flex-col items-center justify-center gap-1 rounded-md text-center text-[10px] font-semibold text-ink-soft hover:bg-line/40 hover:text-ink min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-left min-[1200px]:text-[13px]"
+      className="tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-md text-center text-[10px] font-semibold text-ink-soft hover:bg-line/40 hover:text-ink min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-left min-[1200px]:text-[13px]"
     >
       <NavigationIcon name={icon} className="size-5 shrink-0" />
       <span>{label}</span>
+      <LinkPendingIndicator />
     </Link>
   );
 }

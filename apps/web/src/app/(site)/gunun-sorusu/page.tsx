@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { publicApi, type QuestionOfDay } from "@/lib/public-api";
 import { QuestionOfDayCard } from "@/components/question-of-day";
 
@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 
 /** Günün sorusu tam sayfası (Doc 23) — paylaşılabilir günlük URL, alışkanlık kancası. */
 export default async function GununSorusuPage() {
-  const [{ data: auth }, qotd] = await Promise.all([
-    (await supabaseServer()).auth.getUser(),
+  const [user, qotd] = await Promise.all([
+    getCurrentUser(),
     publicApi<QuestionOfDay>("/public/question-of-day", 600).catch(() => null),
   ]);
 
@@ -28,7 +28,7 @@ export default async function GununSorusuPage() {
           Her gün müfredattan 1 kaynaklı çıkmış soru. Yarın yenisi burada.
         </p>
         {qotd ? (
-          <QuestionOfDayCard question={qotd} loggedIn={!!auth.user} />
+          <QuestionOfDayCard question={qotd} loggedIn={!!user} />
         ) : (
           <p className="text-white/70">
             Günün sorusu şu an yüklenemedi —{" "}

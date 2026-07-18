@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { supabaseServer } from "@/lib/supabase/server";
 import { signOut } from "@/app/(auth)/actions";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { SiteNav } from "./site-nav";
 import { ButtonLink } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
@@ -20,9 +20,7 @@ const NAV = [
  * vitrindir, çalışma alanı sidebar kabuğundadır.
  */
 export async function SiteHeader() {
-  const supabase = await supabaseServer();
-  const { data } = await supabase.auth.getUser();
-  const user = data.user;
+  const user = await getCurrentUser();
 
   const authArea = user ? (
     <div className="flex items-center gap-2">

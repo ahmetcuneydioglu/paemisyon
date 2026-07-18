@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { AuthForm } from "../auth-form";
 
 export const metadata: Metadata = {
@@ -9,8 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function KayitPage() {
-  const supabase = await supabaseServer();
-  const { data } = await supabase.auth.getUser();
-  if (data.user) redirect("/bugun");
+  const user = await getCurrentUser();
+  if (user) redirect("/bugun");
   return <AuthForm mode="kayit" />;
 }

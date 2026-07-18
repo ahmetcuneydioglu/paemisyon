@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { CMDK_EVENT } from "./command-palette";
 import { NavigationIcon } from "./navigation-icon";
 import { activeNavItem, APP_NAV_ITEMS, isNavItemActive } from "./navigation";
+import { LinkPendingIndicator } from "@/components/ui/link-pending-indicator";
 
 export function MobileAppHeader() {
   const pathname = usePathname();
@@ -54,7 +55,7 @@ export function MobileBottomNavigation() {
               href={item.href}
               aria-current={active ? "page" : undefined}
               className={[
-                "tk-interactive flex min-h-[58px] min-w-0 flex-col items-center justify-center gap-0.5 px-0.5 text-[10px] font-semibold",
+                "tk-interactive relative flex min-h-[58px] min-w-0 flex-col items-center justify-center gap-0.5 px-0.5 text-[10px] font-semibold",
                 active ? "text-brand" : "text-ink-soft active:bg-line/50",
               ].join(" ")}
             >
@@ -71,6 +72,7 @@ export function MobileBottomNavigation() {
                 />
               </span>
               <span className="max-w-full truncate">{item.label}</span>
+              <LinkPendingIndicator />
             </Link>
           );
         })}

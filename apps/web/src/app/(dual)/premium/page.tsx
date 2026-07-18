@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { api } from "@/lib/api";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 
@@ -46,13 +46,13 @@ const periodLabel: Record<string, string> = {
  * Web ödeme henüz yok — satın alma dürüstçe iOS uygulamasına yönlendirilir.
  */
 export default async function PremiumPage() {
-  const { data: auth } = await (await supabaseServer()).auth.getUser();
-  const plans = auth.user
+  const user = await getCurrentUser();
+  const plans = user
     ? await api<Plan[]>("/billing/plans").catch(() => [] as Plan[])
     : [];
 
   return (
-    <div className={auth.user ? "" : "tk-scope font-body"}>
+    <div className={user ? "" : "tk-scope font-body"}>
       <div className="mx-auto max-w-4xl px-6 py-10">
         <div className="text-center">
           <span className="tk-caption text-brand">Premium</span>
@@ -106,7 +106,7 @@ export default async function PremiumPage() {
         )}
 
         <div className="mt-8 text-center">
-          {auth.user ? (
+          {user ? (
             <>
               <p className="text-[14px] leading-relaxed text-ink-soft">
                 Satın alma şimdilik iOS uygulamasından yapılıyor; aboneliğin bu hesapla her

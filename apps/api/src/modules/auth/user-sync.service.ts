@@ -44,6 +44,7 @@ export class UserSyncService {
    */
   private static readonly CACHE_TTL_MS = 60_000;
   private readonly cache = new Map<string, { user: AuthenticatedUser; expiresAt: number }>();
+  private readonly inFlight = new Map<string, Promise<AuthenticatedUser>>();
 
   /** Kullanıcıyla ilgili yetki verisi değiştiğinde çağır (anında yansısın). */
   invalidate(userId: string) {
@@ -61,6 +62,19 @@ export class UserSyncService {
       return cached.user;
     }
 
+    // Bir sayfa aynı anda birden çok korumalı uç çağırabilir. Cache henüz
+    // dolmamışken hepsinin aynı kullanıcı/rol sorgusunu başlatmasını önle.
+    const pending = this.inFlight.get(id);
+    if (pending) return pending;
+
+    const request = this.loadUser(id, claims).finally(() => {
+      if (this.inFlight.get(id) === request) this.inFlight.delete(id);
+    });
+    this.inFlight.set(id, request);
+    return request;
+  }
+
+  private async loadUser(id: string, claims: JWTPayload): Promise<AuthenticatedUser> {
     // HIZLI YOL (yaygın durum): mevcut, rolü+entitlement'ı olan kullanıcı → TEK sorgu.
     const existing = await this.prisma.user.findUnique({
       where: { id },

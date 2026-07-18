@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { api } from "@/lib/api";
-import { supabaseServer } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamListItem, MyAttempt } from "@/lib/types";
 import { ExamTable } from "@/components/exam-table";
 import { ExamCenter } from "@/components/exam/exam-center";
@@ -19,15 +19,31 @@ export const dynamic = "force-dynamic";
  * girişsiz → miras tablo (SEO), girişli → takvim + geri sayım + gelişim çizgim.
  */
 export default async function DenemelerPage() {
-  const [exams, { data: auth }] = await Promise.all([
-    api<ExamListItem[]>("/exams").catch(() => [] as ExamListItem[]),
-    (await supabaseServer()).auth.getUser(),
+  const [publicExams, user] = await Promise.all([
+    api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
+      () => [] as ExamListItem[],
+    ),
+    getCurrentUser(),
   ]);
 
-  if (auth.user) {
+  if (user) {
     const attempts = await api<MyAttempt[]>("/exams/attempts/mine").catch(
       () => [] as MyAttempt[],
     );
+    const attemptByExam = new Map(
+      attempts
+        .filter((attempt) => attempt.exam)
+        .map((attempt) => [attempt.exam!.id, attempt] as const),
+    );
+    const exams = publicExams.map((exam) => {
+      const attempt = attemptByExam.get(exam.id);
+      return {
+        ...exam,
+        myAttempt: attempt
+          ? { id: attempt.attemptId, status: attempt.status }
+          : null,
+      };
+    });
     return <ExamCenter exams={exams} attempts={attempts} />;
   }
 
@@ -35,7 +51,7 @@ export default async function DenemelerPage() {
     <div>
       <h2 className="head2">Sınavlar</h2>
       <div className="mx-auto max-w-6xl px-4 py-8">
-        <ExamTable exams={exams} loggedIn={false} />
+        <ExamTable exams={publicExams} loggedIn={false} />
       </div>
     </div>
   );
