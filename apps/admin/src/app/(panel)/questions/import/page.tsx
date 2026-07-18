@@ -33,6 +33,7 @@ interface PreviewReport {
   totalRows: number;
   valid: PreviewRow[];
   errors: { rowNo: number; message: string }[];
+  autoExcluded?: { rowNo: number; message: string }[];
   detectedSource: string | null;
   moduleTopics: ModuleTopic[];
 }
@@ -192,6 +193,7 @@ export default function ImportPage() {
   const excludedCount = rows.filter((r) => excluded.has(r.rowNo)).length;
   const undecidedCount = rows.filter((r) => !excluded.has(r.rowNo) && !assignments[r.rowNo]).length;
   const duplicateCount = rows.filter((r) => r.duplicate).length;
+  const autoExcluded = preview?.autoExcluded ?? [];
   const canImport =
     !!preview &&
     undecidedCount === 0 &&
@@ -299,6 +301,11 @@ export default function ImportPage() {
                 ⚠ {duplicateCount} tekrar (otomatik çıkarıldı)
               </span>
             )}
+            {autoExcluded.length > 0 && (
+              <span className="rounded-full bg-sky-100 px-3 py-1 font-medium text-sky-800">
+                ∑ {autoExcluded.length} matematik otomatik elendi
+              </span>
+            )}
             {preview.errors.length > 0 && (
               <span className="rounded-full bg-red-100 px-3 py-1 font-medium text-red-700">
                 ✕ {preview.errors.length} hatalı
@@ -323,6 +330,17 @@ export default function ImportPage() {
             İpucu: bu modüle ait olmayan blokları “Bu bloğu çıkar” ile ele; çıkarılan sorular veritabanına hiç yazılmaz.
             Polis kısmı azınlıksa “Tümünü çıkar” deyip istediklerini geri alabilirsin.
           </p>
+
+          {autoExcluded.length > 0 && (
+            <Card className="border-sky-200 bg-sky-50">
+              <p className="text-sm font-medium text-sky-900">
+                Matematik kapsam dışı: {formatRowRanges(autoExcluded.map((row) => row.rowNo))}
+              </p>
+              <p className="mt-1 text-xs text-sky-700">
+                Bu sorular hata veya bekleyen olarak sayılmaz ve veritabanına hiç yazılmaz.
+              </p>
+            </Card>
+          )}
 
           <RangeAssign
             topics={preview.moduleTopics}
@@ -403,6 +421,21 @@ export default function ImportPage() {
       )}
     </>
   );
+}
+
+function formatRowRanges(rowNos: number[]): string {
+  const sorted = [...new Set(rowNos)].sort((a, b) => a - b);
+  const ranges: string[] = [];
+  for (let index = 0; index < sorted.length;) {
+    const start = sorted[index];
+    let end = start;
+    while (index + 1 < sorted.length && sorted[index + 1] === end + 1) {
+      end = sorted[++index];
+    }
+    ranges.push(start === end ? `#${start}` : `#${start}–${end}`);
+    index++;
+  }
+  return ranges.join(', ');
 }
 
 /** Ardışık soru aralığını tek konuya atar VEYA çıkarır (kitapçıklarda konular bloklu). */

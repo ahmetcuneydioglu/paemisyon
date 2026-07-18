@@ -400,6 +400,7 @@ export class AdminQuestionsService {
       totalRows: report.totalRows,
       valid,
       errors: report.errors,
+      autoExcluded: report.autoExcluded ?? [],
       detectedSource: report.detectedSource ?? null,
       detectedSections: report.detectedSections ?? [],
       // Sınıflandırma dropdown'ları için (ayrı istek gerekmesin).
@@ -516,7 +517,8 @@ export class AdminQuestionsService {
     await this.audit.log(actor, 'question.import', 'module', params.moduleId, {
       filename: params.filename,
       imported: toWrite.length,
-      excludedCount: excludedSet.size,
+      excludedCount: excludedSet.size + (report.autoExcluded?.length ?? 0),
+      autoExcludedCount: report.autoExcluded?.length ?? 0,
       errorCount: report.errors.length,
       byTopic,
       sourceLabel,
@@ -525,7 +527,7 @@ export class AdminQuestionsService {
       imported: toWrite.length,
       errors: report.errors,
       skipped: report.errors.length,
-      excluded: excludedSet.size,
+      excluded: excludedSet.size + (report.autoExcluded?.length ?? 0),
     };
   }
 

@@ -12,6 +12,8 @@ import {
   stripBookletTitle,
   parseBookletAnswerKeyLine,
   parseBookletQuestionCode,
+  parseBookletQuestionNumberLine,
+  detectMathQuestionRows,
 } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
@@ -186,6 +188,31 @@ describe('kurum soru kodlu e-sınav işaretleri', () => {
   it('klasik ve kurum kodlu cevap anahtarı satırlarını birlikte destekler', () => {
     expect(parseBookletAnswerKeyLine('1. C')).toEqual({ id: '1', answer: 'C' });
     expect(parseBookletAnswerKeyLine('(130383) A')).toEqual({ id: '130383', answer: 'A' });
+  });
+});
+
+describe('klasik soru numarası ve matematik kapsam filtresi', () => {
+  it('metni aynı satırda olmayan soru numarasını kabul eder', () => {
+    expect(parseBookletQuestionNumberLine('26.')).toEqual({ id: '26', stem: '' });
+    expect(parseBookletQuestionNumberLine('27. İşlemin sonucu kaçtır?')).toEqual({
+      id: '27', stem: 'İşlemin sonucu kaçtır?',
+    });
+  });
+
+  it('yoğun matematik bloğunu eler, tekil demografi oranını korur', () => {
+    const rows = [
+      { rowNo: 1, text: 'Aşağıdaki cümlelerin hangisinde yazım yanlışı vardır?' },
+      { rowNo: 2, text: 'Bir paragrafın giriş cümlesi hangisidir?' },
+      { rowNo: 3, text: '9 / (1 + 1/2) işleminin sonucu kaçtır? A) 1 B) 2' },
+      { rowNo: 4, text: 'K, L ve M birer rakam olmak üzere işlemin sonucu kaçtır?' },
+      { rowNo: 5, text: 'x + 4 = 12 denklemini sağlayan x kaçtır?' },
+      { rowNo: 6, text: 'A ve B kümelerinin Venn şeması verilmiştir.' },
+      { rowNo: 7, text: 'Satış fiyatına %20 zam yapılan ürün kaç liradır?' },
+      { rowNo: 8, text: 'Üçgenin bir açısı 40 derece ise diğer açı kaçtır?' },
+      { rowNo: 9, text: 'Orta Asya\'da kurulan ilk Türk devleti hangisidir?' },
+      { rowNo: 10, text: 'Tabloda 0-14 yaş grubunun genel nüfusa oranı verilmiştir.' },
+    ];
+    expect(detectMathQuestionRows(rows)).toEqual([3, 4, 5, 6, 7, 8]);
   });
 });
 

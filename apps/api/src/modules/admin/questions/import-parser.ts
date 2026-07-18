@@ -29,6 +29,8 @@ export interface ParseReport {
   totalRows: number;
   valid: ParsedQuestionRow[];
   errors: RowError[];
+  /** Kapsam dışı olduğu kesin saptanıp DB'ye hiç yazılmayacak satırlar. */
+  autoExcluded?: RowError[];
   /** PDF kitapçıktan otomatik saptanan kaynak etiketi (panel önerisi). */
   detectedSource?: string | null;
   /** Kitapçık kapağındaki konu sırası ve soru aralıkları. */
@@ -446,6 +448,7 @@ export function mapRows(rows: string[][]): ParseReport {
 const ODSGM_HEADER = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ';
 const KEY_TITLE = 'CEVAP ANAHTARI';
 const QNUM_RE = /^(\d{1,3})\.\s+/;
+const QUESTION_NUMBER_LINE_RE = /^(\d{1,3})\.(?:\s+(.*))?$/;
 const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
 const CODE_QNUM_RE = /^\((\d{3,12})\)\s*$/;
 const CODE_KEY_LINE_RE = /^\((\d{3,12})\)\s*([A-E])\s*$/;
@@ -533,6 +536,13 @@ interface BookletQuestion {
   options: Map<string, string>;
 }
 
+export function parseBookletQuestionNumberLine(
+  line: string,
+): { id: string; stem: string } | null {
+  const match = QUESTION_NUMBER_LINE_RE.exec(line);
+  return match ? { id: match[1], stem: match[2] ?? '' } : null;
+}
+
 export function parseBookletAnswerKeyLine(
   line: string,
 ): { id: string; answer: string } | null {
@@ -542,6 +552,60 @@ export function parseBookletAnswerKeyLine(
 
 export function parseBookletQuestionCode(line: string): string | null {
   return CODE_QNUM_RE.exec(line)?.[1] ?? null;
+}
+
+/**
+ * Matematik sinyali. Tek bir yüzde/oran sözcüğü (demografi gibi) karar
+ * verdirmez; formül sembolleri ve ayırt edici terimler birlikte puanlanır.
+ */
+export function mathQuestionScore(text: string): number {
+  const value = trLower(dehyphenate(text));
+  let score = 0;
+  const strongPatterns = [
+    /işlemin sonucu|işlemi|denklem|eşitliğini|eşitsizlik|fonksiyon/u,
+    /küme|rakam|tam sayı|asal sayı|kesir|cebir/u,
+    /venn|geometri|üçgen|dörtgen|yamuk|çember|eş kare/u,
+    /satış fiyatı|alış fiyatı|kaç yaş|km\/sa|kilometre|hızla/u,
+    /grafik|merkez açısı|açı.*derece/u,
+  ];
+  for (const pattern of strongPatterns) if (pattern.test(value)) score += 2;
+  if (/[=+\u00d7÷√∩∪∈≤≥$]/u.test(value)) score += 2;
+  if (/%/u.test(value)) score += 1;
+  if (score > 0 && (value.match(/\b\d+(?:[.,]\d+)?\b/g) ?? []).length >= 4) score += 1;
+  if (score > 0 && (value.match(/\b[abcxyzklm]\b/g) ?? []).length >= 3) score += 1;
+  if (score > 0 && /kaçtır/u.test(value)) score += 1;
+  return score;
+}
+
+/**
+ * Yüksek güvenli tekil matematik sorularını ve yoğun matematik bloklarını
+ * bulur. Blok kuralı, Genel Kültür'deki tekil tablo/yüzde sorularının
+ * yanlışlıkla elenmesini önler.
+ */
+export function detectMathQuestionRows(
+  rows: { rowNo: number; text: string }[],
+): number[] {
+  const scored = rows.map((row) => ({ ...row, score: mathQuestionScore(row.text) }));
+  const excluded = new Set<number>();
+  const anchorIndexes = scored
+    .map((row, index) => ({ index, score: row.score }))
+    .filter((row) => row.score >= 2)
+    .map((row) => row.index);
+
+  const groups: number[][] = [];
+  for (const index of anchorIndexes) {
+    const group = groups.at(-1);
+    if (!group || index - group.at(-1)! > 2) groups.push([index]);
+    else group.push(index);
+  }
+  for (const group of groups) {
+    const start = group[0];
+    const end = group.at(-1)!;
+    const span = end - start + 1;
+    if (span < 5 || group.length / span < 0.5) continue;
+    for (let index = start; index <= end; index++) excluded.add(scored[index].rowNo);
+  }
+  return [...excluded].sort((a, b) => a - b);
 }
 
 /**
@@ -690,13 +754,17 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       expectedNo++;
       continue;
     }
-    const qm = QNUM_RE.exec(line);
-    if (qm && Number(qm[1]) === expectedNo) {
+    const numberedQuestion = parseBookletQuestionNumberLine(line);
+    if (
+      numberedQuestion
+      && Number(numberedQuestion.id) === expectedNo
+      && answerKey.has(numberedQuestion.id)
+    ) {
       if (current) questions.push(current);
       current = {
         no: expectedNo,
-        answerKeyId: qm[1],
-        stem: line.replace(QNUM_RE, ''),
+        answerKeyId: numberedQuestion.id,
+        stem: numberedQuestion.stem,
         options: new Map(),
       };
       part = 'stem';
@@ -720,7 +788,19 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   // ── Rapora dönüştür (rowNo = kitapçıktaki soru numarası) ──
   const valid: ParsedQuestionRow[] = [];
   const errors: RowError[] = [];
+  const mathRows = new Set(detectMathQuestionRows(questions.map((question) => ({
+    rowNo: question.no,
+    text: [question.stem, ...question.options.values()].join('\n'),
+  }))));
+  const autoExcluded: RowError[] = [];
   for (const q of questions) {
+    if (mathRows.has(q.no)) {
+      autoExcluded.push({
+        rowNo: q.no,
+        message: `Soru ${q.no}: matematik kapsam dışı — otomatik olarak elendi.`,
+      });
+      continue;
+    }
     const opts = [...q.options.entries()]
       .map(([label, text]) => ({ label, text: dehyphenate(text) }))
       .sort((a, b) => a.label.localeCompare(b.label));
@@ -762,7 +842,14 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     questions.length,
   );
 
-  return { totalRows: questions.length, valid, errors, detectedSource, detectedSections };
+  return {
+    totalRows: questions.length,
+    valid,
+    errors,
+    autoExcluded,
+    detectedSource,
+    detectedSections,
+  };
 }
 
 /** Dosya (csv/xlsx/pdf) → doğrulanmış rapor. */
