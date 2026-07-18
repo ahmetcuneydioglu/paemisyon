@@ -46,6 +46,9 @@ async function bootstrap() {
   app.enableCors({
     origin: corsOrigins ? withWwwVariants(corsOrigins.split(',').map((o) => o.trim())) : true,
     credentials: true,
+    // Quiz cevapları Authorization + JSON nedeniyle preflight üretir. Sonucu
+    // tarayıcıda önbellekle; her şıkta fazladan API gidiş-dönüşü yapma.
+    maxAge: 86_400,
   });
 
   const port = config.get<number>('PORT', 3000);

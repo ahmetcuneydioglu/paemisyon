@@ -61,7 +61,10 @@ export class QuizService {
     if (dto.mode === 'review' && (dto.topicId != null || dto.courseId != null)) {
       throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
     }
-    if (dto.fromBookmarks && (dto.mode !== 'practice' || dto.topicId != null || dto.courseId != null)) {
+    if (
+      dto.fromBookmarks &&
+      (dto.mode !== 'practice' || dto.topicId != null || dto.courseId != null)
+    ) {
       throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
     }
 
@@ -388,20 +391,57 @@ export class QuizService {
   /** Tek cevap gönder (idempotent). Sunucu değerlendirir; freemium limiti sunucuda. */
   async submitAnswer(user: AuthenticatedUser, sessionId: string, dto: SubmitAnswerDto) {
     const userId = user.id;
-    // Bağımsız üç okuma tek gidiş-dönüşte (Frankfurt RTT ~50ms — sayı önemli).
-    const [session, existing, correct] = await Promise.all([
-      this.prisma.quizSession.findFirst({ where: { id: sessionId, userId } }),
+    // Cevap doğrulama + açıklama verisini ilk paralel okuma grubunda hazırla.
+    // Eskiden kayıt tamamlandıktan sonra version/question/settings için ikinci
+    // bir okuma turu daha yapılıyordu; şık geri bildiriminin kritik yolundaydı.
+    const [session, existing, version, showSource] = await Promise.all([
+      this.prisma.quizSession.findFirst({
+        where: { id: sessionId, userId },
+        select: {
+          status: true,
+          mode: true,
+          startedAt: true,
+          plannedDurationSeconds: true,
+          exam: { select: { liveAnswerReveal: true } },
+        },
+      }),
       this.prisma.quizAnswer.findUnique({
         where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
       }),
-      this.prisma.questionOption.findFirst({
-        where: { questionVersionId: dto.questionVersionId, isCorrect: true },
-        select: { id: true },
+      this.prisma.questionVersion.findFirst({
+        where: { id: dto.questionVersionId, questionId: dto.questionId },
+        select: {
+          explanation: true,
+          sourceLabel: true,
+          legalReferences: { select: { citation: true }, take: 1 },
+          question: {
+            select: { articleNo: true, topic: { select: { name: true } } },
+          },
+          options: {
+            where: {
+              OR: [
+                { isCorrect: true },
+                ...(dto.selectedOptionId ? [{ id: dto.selectedOptionId }] : []),
+              ],
+            },
+            select: { id: true, isCorrect: true },
+          },
+        },
       }),
+      this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
     ]);
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
     if (session.status !== 'in_progress') {
       throw new BadRequestException('Oturum tamamlanmış.');
+    }
+    if (!version) {
+      throw new BadRequestException('Soru bu oturumdaki sürümle eşleşmiyor.');
+    }
+    if (
+      dto.selectedOptionId != null &&
+      !version.options.some((option) => option.id === dto.selectedOptionId)
+    ) {
+      throw new BadRequestException('Seçilen şık bu soruya ait değil.');
     }
     // Deneme sınavında süre SUNUCUDA denetlenir — istemci saati manipüle edilemez.
     if (session.plannedDurationSeconds != null) {
@@ -420,6 +460,7 @@ export class QuizService {
     if (!existing) {
       await this.enforceDailyLimit(user);
     }
+    const correct = version.options.find((option) => option.isCorrect);
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
 
     await this.prisma.quizAnswer.upsert({
@@ -448,36 +489,13 @@ export class QuizService {
     // açık denemelerde practice-gibi anlık geri bildirim (Doc 18 karar 5,
     // varsayılan KAPALI; eski sistemin anahtar-sızdırma açığı taşınmaz).
     if (session.mode === 'deneme') {
-      const exam = session.examId
-        ? await this.prisma.exam.findUnique({
-            where: { id: session.examId },
-            select: { liveAnswerReveal: true },
-          })
-        : null;
-      if (!exam?.liveAnswerReveal) {
+      if (!session.exam?.liveAnswerReveal) {
         return { recorded: true };
       }
     }
 
-    // practice: anlık geri bildirim + açıklama (+ kaynak, ayar açıksa).
-    const [version, question, showSource] = await Promise.all([
-      this.prisma.questionVersion.findUnique({
-        where: { id: dto.questionVersionId },
-        select: {
-          explanation: true,
-          sourceLabel: true,
-          legalReferences: { select: { citation: true }, take: 1 },
-        },
-      }),
-      // Seans içi madde bağı (Doc 27 §3.6 "M ile aç"): soru bir kanun
-      // konusundan ve madde etiketliyse Atlas'taki sayfasına yapısal köprü.
-      this.prisma.question.findUnique({
-        where: { id: dto.questionId },
-        select: { articleNo: true, topic: { select: { name: true } } },
-      }),
-      this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
-    ]);
-
+    // practice: ilk okuma grubunda hazırlanan anlık geri bildirim + açıklama.
+    const question = version.question;
     let relatedArticle: { lawSlug: string; no: string; slug: string } | null = null;
     if (question?.articleNo && question.topic && LAW_NAME_RE.test(question.topic.name)) {
       relatedArticle = {
@@ -577,8 +595,8 @@ export class QuizService {
 
     // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç seansı,
     // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
-    let topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null =
-      null;
+    let topicBreakdown:
+      { topicId: string; topicName: string; correct: number; total: number }[] | null = null;
     if (session.topicId == null && session.answers.length > 0) {
       const qids = session.answers.map((a) => a.questionId);
       const qTopics = await this.prisma.question.findMany({
@@ -586,7 +604,10 @@ export class QuizService {
         select: { id: true, topic: { select: { id: true, name: true } } },
       });
       const topicOf = new Map(qTopics.map((q) => [q.id, q.topic]));
-      const acc = new Map<string, { topicId: string; topicName: string; correct: number; total: number }>();
+      const acc = new Map<
+        string,
+        { topicId: string; topicName: string; correct: number; total: number }
+      >();
       for (const a of session.answers) {
         const t = topicOf.get(a.questionId);
         if (!t) continue;

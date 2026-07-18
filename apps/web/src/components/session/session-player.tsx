@@ -82,7 +82,11 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const [feedback, setFeedback] = useState<Record<string, AnswerFeedback & { selected: string }>>(
     {},
   );
-  const [submitting, setSubmitting] = useState(false);
+  const [pendingAnswer, setPendingAnswer] = useState<{
+    questionId: string;
+    optionId: string;
+  } | null>(null);
+  const [answerError, setAnswerError] = useState<string | null>(null);
   const [exitAsk, setExitAsk] = useState(false);
   // Oturum içi not (wireframe 08): kaydedilmez, seansla yaşar.
   const [note, setNote] = useState("");
@@ -98,6 +102,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   >("idle");
   const questionShownAt = useRef(0);
   const startedRef = useRef(false);
+  const answerInFlight = useRef(false);
 
   // ── Seans başlat ──
   useEffect(() => {
@@ -191,8 +196,10 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   // ── Cevap gönder (tıklama veya klavye) ──
   const submit = useCallback(
     async (optionId: string) => {
-      if (!data || !question || currentFeedback || submitting) return;
-      setSubmitting(true);
+      if (!data || !question || currentFeedback || answerInFlight.current) return;
+      answerInFlight.current = true;
+      setAnswerError(null);
+      setPendingAnswer({ questionId: question.questionId, optionId });
       try {
         const fb = await apiClient<AnswerFeedback>(`/quiz/sessions/${data.sessionId}/answers`, {
           method: "POST",
@@ -208,13 +215,15 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         const err = e instanceof ApiClientError ? e : null;
         if (err?.code === "DAILY_LIMIT_REACHED") {
           setPhase({ kind: "error", code: err.code, message: err.message });
+        } else {
+          setAnswerError(err?.message ?? "Cevap kaydedilemedi. Tekrar deneyebilirsin.");
         }
-        // Diğer hatalar: sessiz bırakma yok — şık tekrar tıklanabilir kalır.
       } finally {
-        setSubmitting(false);
+        answerInFlight.current = false;
+        setPendingAnswer(null);
       }
     },
-    [data, question, currentFeedback, submitting],
+    [data, question, currentFeedback],
   );
 
   // ── Bitir ──
@@ -242,6 +251,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       setReportOpen(false); // hata bildir paneli de kapanır
       setReportText("");
       setReportState("idle");
+      setAnswerError(null);
       questionShownAt.current = Date.now();
     }
   }, [data, currentFeedback, isLast, complete]);
@@ -432,6 +442,8 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                 if (o.id === fb.correctOptionId) state = "correct";
                 else if (o.id === fb.selected) state = "wrong";
                 else state = "dim";
+              } else if (pendingAnswer?.questionId === question!.questionId) {
+                state = o.id === pendingAnswer.optionId ? "selected" : "dim";
               }
               return (
                 <OptionRow
@@ -440,12 +452,23 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                   text={o.text}
                   state={state}
                   keyHint={String(i + 1)}
-                  disabled={!!fb || submitting}
+                  disabled={!!fb || pendingAnswer != null}
                   onSelect={() => void submit(o.id)}
                 />
               );
             })}
           </div>
+
+          {pendingAnswer?.questionId === question!.questionId && (
+            <p className="mt-2 text-[13px] font-medium text-session" role="status" aria-live="polite">
+              Cevabın kontrol ediliyor…
+            </p>
+          )}
+          {answerError && (
+            <p className="mt-2 text-[13px] font-medium text-danger" role="alert">
+              {answerError}
+            </p>
+          )}
 
           {fb && (
             <div className="mt-4 space-y-4">
