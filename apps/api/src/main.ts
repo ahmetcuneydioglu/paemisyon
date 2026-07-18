@@ -5,6 +5,23 @@ import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { ResponseEnvelopeInterceptor } from './common/interceptors/response-envelope.interceptor';
 
+/** Her origin için www↔apex karşılığını da üretir (CORS eşleşmesi için). */
+function withWwwVariants(origins: string[]): string[] {
+  const set = new Set<string>();
+  for (const o of origins) {
+    if (!o) continue;
+    set.add(o);
+    try {
+      const u = new URL(o);
+      const host = u.host.startsWith('www.') ? u.host.slice(4) : `www.${u.host}`;
+      set.add(`${u.protocol}//${host}`);
+    } catch {
+      /* geçersiz origin — olduğu gibi bırak */
+    }
+  }
+  return [...set];
+}
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get(ConfigService);
@@ -22,10 +39,12 @@ async function bootstrap() {
   app.useGlobalFilters(new AllExceptionsFilter());
 
   // CORS: prod'da yalnız izinli origin'ler (CORS_ORIGINS, virgülle ayrılmış);
-  // env yoksa (dev) tüm origin'lere izin ver.
+  // env yoksa (dev) tüm origin'lere izin ver. Her origin'in www↔apex karşılığı
+  // OTOMATİK eklenir: site www.paemisyon.com'dan sunulup env'de yalnız apex
+  // yazsa (veya tersi) tarayıcı istekleri CORS'a takılmasın (Doc 22 canlıya alma).
   const corsOrigins = config.get<string>('CORS_ORIGINS');
   app.enableCors({
-    origin: corsOrigins ? corsOrigins.split(',').map((o) => o.trim()) : true,
+    origin: corsOrigins ? withWwwVariants(corsOrigins.split(',').map((o) => o.trim())) : true,
     credentials: true,
   });
 
