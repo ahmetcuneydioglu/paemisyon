@@ -122,6 +122,7 @@ export class PublicService {
         name: true,
         course: {
           select: {
+            id: true,
             name: true,
             sections: {
               select: {
@@ -154,6 +155,7 @@ export class PublicService {
       slug: slugify(t.name),
       /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
       topicId: t.id,
+      courseId: t.course.id,
       name: t.name,
       courseName: t.course.name,
       questionCount: t._count.questions,
@@ -208,6 +210,7 @@ export class PublicService {
     return {
       slug,
       topicId: topic.id,
+      courseId: topic.course.id,
       name: topic.name,
       courseName: topic.course.name,
       questionCount: topic._count.questions,

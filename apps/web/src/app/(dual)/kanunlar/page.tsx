@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MixedLawSessionCard } from "@/components/atlas/mixed-law-session-card";
 import { publicApi, type LawSummary } from "@/lib/public-api";
 
 export const metadata: Metadata = {
@@ -35,11 +36,25 @@ export default async function KanunlarPage() {
           sınavda hangi ağırlıkla çıkıyor, örnek çıkmış soru ve ilgili mevzuat.
         </p>
 
-        {groups.map(([course, items]) => (
+        {groups.map(([course, items]) => {
+          const isPoliceLaw = course.toLocaleLowerCase("tr-TR").includes("polis mevzuat");
+          const questionCount = items.reduce((sum, item) => sum + item.questionCount, 0);
+          const courseId = items[0]?.courseId;
+
+          return (
           <section key={course} className="mb-8">
-            <h2 className="mb-3 border-b border-line pb-2 font-heading text-lg font-bold text-ink">
-              {course}
-            </h2>
+            <div className="mb-3 flex items-center justify-between gap-3 border-b border-line pb-2">
+              <h2 className="font-heading text-lg font-bold text-ink">{course}</h2>
+              <span className="tk-caption shrink-0">{items.length} mevzuat</span>
+            </div>
+            {isPoliceLaw && courseId && questionCount > 0 && (
+              <MixedLawSessionCard
+                courseId={courseId}
+                courseName={course}
+                lawCount={items.length}
+                questionCount={questionCount}
+              />
+            )}
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {items
                 .sort((a, b) => b.questionCount - a.questionCount)
@@ -59,7 +74,8 @@ export default async function KanunlarPage() {
                 ))}
             </div>
           </section>
-        ))}
+          );
+        })}
 
         {laws.length === 0 && <p className="text-ink-soft">Kütüphane hazırlanıyor.</p>}
       </div>

@@ -1,4 +1,4 @@
-import { mixQuota, pickMix, type MixPools } from './session-mix.logic';
+import { mixQuota, pickMix, pickTopicBalanced, type MixPools } from './session-mix.logic';
 
 /** Deterministik "shuffle": sırayı korur — testler öngörülebilir. */
 const identity = <T>(a: T[]): T[] => a;
@@ -64,5 +64,31 @@ describe('pickMix', () => {
     };
     const out = pickMix(3, allHeavy, { wrong: 1, weak: 1, fresh: 1 }, identity);
     expect(out).toHaveLength(3);
+  });
+});
+
+describe('pickTopicBalanced', () => {
+  it('büyük konunun havuz ağırlığından etkilenmeden ilk turda farklı konular seçer', () => {
+    const pool = [
+      q('a1', 'tA'), q('a2', 'tA'), q('a3', 'tA'), q('a4', 'tA'),
+      q('b1', 'tB'),
+      q('c1', 'tC'),
+    ];
+
+    const out = pickTopicBalanced(pool, 3, identity);
+
+    expect(out.map((x) => x.id)).toEqual(['a1', 'b1', 'c1']);
+    expect(new Set(out.map((x) => x.topicId)).size).toBe(3);
+  });
+
+  it('konular tükendiğinde ikinci tura geçer ve havuz kadar doldurur', () => {
+    const pool = [q('a1', 'tA'), q('a2', 'tA'), q('a3', 'tA'), q('b1', 'tB')];
+
+    expect(pickTopicBalanced(pool, 3, identity).map((x) => x.id)).toEqual([
+      'a1',
+      'b1',
+      'a2',
+    ]);
+    expect(pickTopicBalanced(pool, 10, identity)).toHaveLength(4);
   });
 });

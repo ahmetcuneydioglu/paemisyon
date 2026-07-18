@@ -10,7 +10,7 @@ import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.ser
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { mixQuota, pickMix } from './session-mix.logic';
+import { mixQuota, pickMix, pickTopicBalanced } from './session-mix.logic';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -187,11 +187,14 @@ export class QuizService {
       }
 
       // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
-      // Kapsamlı oturumlar (konu/ders) eskisi gibi rastgeledir.
+      // Ders kapsamı = konular arasında dengeli tur; tek konu havuzu baskılamaz.
+      // Tek konu ve deneme oturumları rastgele seçime devam eder.
       chosen =
         dto.mode === 'practice' && dto.topicId == null && dto.courseId == null
           ? await this.pickCoachMix(userId, pool, count)
-          : this.shuffle(pool).slice(0, count);
+          : dto.mode === 'practice' && dto.courseId != null
+            ? pickTopicBalanced(pool, count, (items) => this.shuffle(items))
+            : this.shuffle(pool).slice(0, count);
     }
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },

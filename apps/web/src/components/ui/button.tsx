@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost" | "danger";
+type Variant = "primary" | "secondary" | "ghost" | "danger" | "atlas";
 type Size = "md" | "lg" | "sm";
 
 const base =
@@ -14,6 +14,7 @@ const variants: Record<Variant, string> = {
     "border border-line bg-surface text-ink hover:border-ink-soft active:scale-[0.99]",
   ghost: "text-ink-soft hover:bg-line/40 hover:text-ink",
   danger: "border border-danger/40 bg-surface text-danger hover:bg-danger/10",
+  atlas: "bg-atlas text-surface hover:opacity-90 active:scale-[0.99]",
 };
 
 const sizes: Record<Size, string> = {

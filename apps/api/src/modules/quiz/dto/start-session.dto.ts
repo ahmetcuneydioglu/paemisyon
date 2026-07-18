@@ -25,7 +25,7 @@ export class StartSessionDto {
   @IsUUID()
   topicId?: string;
 
-  /// Ders geneli deneme sınavı (konular karışık). Yalnızca exam modunda.
+  /// Ders geneli çalışma veya deneme (konular karışık ve dengeli).
   @IsOptional()
   @IsUUID()
   courseId?: string;

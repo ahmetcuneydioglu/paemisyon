@@ -30,6 +30,8 @@ export interface LawSummary {
   slug: string;
   /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
   topicId: string;
+  /** Aynı dersteki mevzuatlardan karışık seans başlatmak için ders kimliği. */
+  courseId?: string;
   name: string;
   courseName: string;
   questionCount: number;

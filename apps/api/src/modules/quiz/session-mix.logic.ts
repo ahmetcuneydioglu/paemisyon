@@ -75,3 +75,40 @@ export function pickMix<T extends { id: string; topicId: string }>(
 
   return chosen;
 }
+
+/**
+ * Ders kapsamındaki karışık seansı konu bazında dengeler. Büyük soru bankasına
+ * sahip tek bir konunun oturumu ele geçirmesini önler; her turda her konudan en
+ * fazla bir soru alır, sonra hâlâ sorusu olan konularla yeni tura geçer.
+ */
+export function pickTopicBalanced<T extends { id: string; topicId: string }>(
+  pool: T[],
+  count: number,
+  shuffle: <U>(a: U[]) => U[],
+): T[] {
+  const groups = new Map<string, T[]>();
+  for (const question of shuffle([...pool])) {
+    const group = groups.get(question.topicId) ?? [];
+    group.push(question);
+    groups.set(question.topicId, group);
+  }
+
+  const topics = shuffle([...groups.keys()]);
+  const chosen: T[] = [];
+  let round = 0;
+
+  while (chosen.length < count) {
+    let added = false;
+    for (const topicId of topics) {
+      const question = groups.get(topicId)?.[round];
+      if (!question) continue;
+      chosen.push(question);
+      added = true;
+      if (chosen.length >= count) break;
+    }
+    if (!added) break;
+    round++;
+  }
+
+  return chosen;
+}
