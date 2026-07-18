@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { articleSlug, publicApi, type LawDetail, type LawSummary } from "@/lib/public-api";
+import { articleSlug, publicApi, type LawDetail, type TopicAtlas } from "@/lib/public-api";
 import { config } from "@/lib/config";
+import { api } from "@/lib/api";
+import { supabaseServer } from "@/lib/supabase/server";
+import { LawWorkspace } from "@/components/atlas/law-workspace";
 
-export const revalidate = 3600;
-export const dynamicParams = true;
+// Aynı URL iki derinlik (Doc 27): kabuk ve içerik oturuma göre değişir —
+// sayfa dinamik, public VERİ fetch-level ISR ile önbellekli kalır.
+export const dynamic = "force-dynamic";
 
 type Params = Promise<{ slug: string }>;
-
-export async function generateStaticParams() {
-  const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]);
-  return laws.map((l) => ({ slug: l.slug }));
-}
 
 async function getLaw(slug: string): Promise<LawDetail | null> {
   return publicApi<LawDetail>(`/public/laws/${slug}`, 3600).catch(() => null);
@@ -40,6 +39,13 @@ export default async function KanunPage({ params }: { params: Params }) {
   const { slug } = await params;
   const law = await getLaw(slug);
   if (!law) notFound();
+
+  // Girişli derinlik: aynı URL, çalışma alanı (Doc 27 §3.4).
+  const { data: auth } = await (await supabaseServer()).auth.getUser();
+  if (auth.user) {
+    const atlas = await api<TopicAtlas>(`/catalog/topics/${law.topicId}/atlas`).catch(() => null);
+    return <LawWorkspace law={law} atlas={atlas} />;
+  }
 
   const q = law.sampleQuestion;
   const correct = q?.options.find((o) => o.isCorrect);

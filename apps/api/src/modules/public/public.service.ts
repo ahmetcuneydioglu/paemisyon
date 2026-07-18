@@ -152,6 +152,8 @@ export class PublicService {
     const topics = await this.lawTopics();
     return topics.map((t) => ({
       slug: slugify(t.name),
+      /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
+      topicId: t.id,
       name: t.name,
       courseName: t.course.name,
       questionCount: t._count.questions,
@@ -205,6 +207,7 @@ export class PublicService {
 
     return {
       slug,
+      topicId: topic.id,
       name: topic.name,
       courseName: topic.course.name,
       questionCount: topic._count.questions,
@@ -265,6 +268,7 @@ export class PublicService {
 
     return {
       lawSlug,
+      topicId: topic.id,
       lawName: topic.name,
       courseName: topic.course.name,
       no: current.no,

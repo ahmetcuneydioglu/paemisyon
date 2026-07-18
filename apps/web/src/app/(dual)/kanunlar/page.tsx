@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/kanunlar" },
 };
 
-export const revalidate = 3600;
+// Kabuk oturuma göre değişir (Doc 27 aynı URL iki derinlik); veri fetch-ISR'lı.
+export const dynamic = "force-dynamic";
 
 /** Kanun kütüphanesi (Doc 23): tüm mevzuat, derse göre gruplu — SEO iç bağlantı merkezi. */
 export default async function KanunlarPage() {

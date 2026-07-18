@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { publicApi, type LawArticleDetail } from "@/lib/public-api";
+import { publicApi, type LawArticleDetail, type TopicAtlas } from "@/lib/public-api";
 import { config } from "@/lib/config";
+import { api } from "@/lib/api";
+import { supabaseServer } from "@/lib/supabase/server";
+import { ArticleWorkspace } from "@/components/atlas/article-workspace";
 
-export const revalidate = 3600;
+// Aynı URL iki derinlik (Doc 27) — kabuk oturuma göre değişir.
+export const dynamic = "force-dynamic";
 
 type Params = Promise<{ slug: string; no: string }>;
 
@@ -35,6 +39,13 @@ export default async function MaddePage({ params }: { params: Params }) {
   const { slug, no } = await params;
   const a = await getArticle(slug, no);
   if (!a) notFound();
+
+  // Girişli derinlik: L4 madde çalışma alanı (Doc 27 §3.5).
+  const { data: auth } = await (await supabaseServer()).auth.getUser();
+  if (auth.user) {
+    const atlas = await api<TopicAtlas>(`/catalog/topics/${a.topicId}/atlas`).catch(() => null);
+    return <ArticleWorkspace article={a} atlas={atlas} />;
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",

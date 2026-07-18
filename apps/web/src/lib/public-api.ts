@@ -24,6 +24,8 @@ export interface QuestionOfDay {
 
 export interface LawSummary {
   slug: string;
+  /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
+  topicId: string;
   name: string;
   courseName: string;
   questionCount: number;
@@ -73,6 +75,7 @@ export function articleSlug(no: string): string {
 
 export interface LawArticleDetail {
   lawSlug: string;
+  topicId: string;
   lawName: string;
   courseName: string;
   no: string;
@@ -86,6 +89,14 @@ export interface LawArticleDetail {
     next: { no: string; slug: string } | null;
   };
   siblings: { no: string; slug: string; questionCount: number }[];
+}
+
+// ── Madde Atlası (girişli): /catalog/topics/:id/atlas — fetih haritası ──
+export interface TopicAtlas {
+  topicId: string;
+  topicName: string;
+  articles: { no: string; questionCount: number; clearedCount: number; conquered: boolean }[];
+  conqueredCount: number;
 }
 
 // ── Koç (girişli ana sayfa) — /me/coach yanıtının web'de kullanılan kısmı ──
