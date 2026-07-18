@@ -31,6 +31,18 @@ export class QuizController {
     return this.quiz.completeSession(user.id, id);
   }
 
+  /// Devam eden seans çapası (Doc 27 §2.4) — Bugün kartı + koç rayı pili.
+  @Get('active-session')
+  active(@CurrentUser() user: AuthenticatedUser) {
+    return this.quiz.getActiveSession(user.id);
+  }
+
+  /// Yarım oturumu kaldığı yerden aç (aynı set + verilen cevaplar).
+  @Get('sessions/:id/resume')
+  resume(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
+    return this.quiz.resumeSession(user.id, id);
+  }
+
   /// Günün sorusu durumu — Home kartı.
   @Get('daily/status')
   dailyStatus(@CurrentUser() user: AuthenticatedUser) {

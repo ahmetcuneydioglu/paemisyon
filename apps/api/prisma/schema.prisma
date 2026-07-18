@@ -493,6 +493,8 @@ model QuizSession {
   durationSeconds        Int?              @map("duration_seconds")
   // Deneme sınavı süresi (sn) — exam modunda dolu; sunucu aşımı reddeder.
   plannedDurationSeconds Int?              @map("planned_duration_seconds")
+  // Seçilen soruların sürüm id sırası (JSON dizi) — devam/kaldığı yerden (Doc 27).
+  questionOrder          Json?             @map("question_order")
   startedAt              DateTime          @default(now()) @map("started_at")
   completedAt            DateTime?         @map("completed_at")
 

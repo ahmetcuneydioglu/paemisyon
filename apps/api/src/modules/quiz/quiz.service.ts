@@ -54,6 +54,9 @@ export class QuizService {
     if (dto.mode === 'exam' && dto.topicId == null && dto.courseId == null) {
       throw new BadRequestException('Deneme için topicId veya courseId verilmeli.');
     }
+    if (dto.mode === 'review' && (dto.topicId != null || dto.courseId != null)) {
+      throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
+    }
 
     // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
     const isPremiumUser = user.isPremium;
@@ -107,26 +110,55 @@ export class QuizService {
       };
     }
 
-    const pool = await this.prisma.question.findMany({
-      where: poolWhere,
-      select: { id: true, currentVersionId: true, topicId: true },
-    });
-    if (pool.length === 0) {
-      throw new NotFoundException(
-        dto.topicId != null
-          ? 'Bu konuda yayında soru yok.'
-          : dto.courseId != null
-            ? 'Bu derste yayında soru yok.'
-            : 'Yayında soru yok.',
+    let chosen: { id: string; currentVersionId: string | null; topicId: string }[];
+    if (dto.mode === 'review') {
+      // Yanlış tekrarı reçetesi (Doc 24 §11): free = son 7 günün yanlışları,
+      // premium = süresiz tekrar hafızası. En eski yanlış önce (unutma eğrisi).
+      const since = isPremiumUser ? undefined : new Date(Date.now() - 7 * 86_400_000);
+      const wrongs = await this.prisma.wrongAnswer.findMany({
+        where: { userId, resolvedAt: null, ...(since ? { lastWrongAt: { gte: since } } : {}) },
+        orderBy: { lastWrongAt: 'asc' },
+        select: { questionId: true },
+      });
+      const questions = await this.prisma.question.findMany({
+        where: {
+          id: { in: wrongs.map((w) => w.questionId) },
+          deletedAt: null,
+          currentVersionId: { not: null },
+          ...(isPremiumUser ? {} : { topic: { isPremium: false } }),
+        },
+        select: { id: true, currentVersionId: true, topicId: true },
+      });
+      const orderOf = new Map(wrongs.map((w, i) => [w.questionId, i]));
+      const pool = [...questions].sort(
+        (a, b) => (orderOf.get(a.id) ?? 0) - (orderOf.get(b.id) ?? 0),
       );
-    }
+      if (pool.length === 0) {
+        throw new NotFoundException('Tekrar edilecek yanlışın yok — kuyruk temiz. 🎉');
+      }
+      chosen = pool.slice(0, count);
+    } else {
+      const pool = await this.prisma.question.findMany({
+        where: poolWhere,
+        select: { id: true, currentVersionId: true, topicId: true },
+      });
+      if (pool.length === 0) {
+        throw new NotFoundException(
+          dto.topicId != null
+            ? 'Bu konuda yayında soru yok.'
+            : dto.courseId != null
+              ? 'Bu derste yayında soru yok.'
+              : 'Yayında soru yok.',
+        );
+      }
 
-    // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
-    // Kapsamlı oturumlar (konu/ders) eskisi gibi rastgeledir.
-    const chosen =
-      dto.mode === 'practice' && dto.topicId == null && dto.courseId == null
-        ? await this.pickCoachMix(userId, pool, count)
-        : this.shuffle(pool).slice(0, count);
+      // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
+      // Kapsamlı oturumlar (konu/ders) eskisi gibi rastgeledir.
+      chosen =
+        dto.mode === 'practice' && dto.topicId == null && dto.courseId == null
+          ? await this.pickCoachMix(userId, pool, count)
+          : this.shuffle(pool).slice(0, count);
+    }
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
       select: {
@@ -154,6 +186,8 @@ export class QuizService {
         courseId: dto.courseId ?? null,
         totalQuestions: chosen.length,
         plannedDurationSeconds,
+        // Devam için soru sırası (Doc 27 §2.4): sürüm id dizisi.
+        questionOrder: chosen.map((q) => q.currentVersionId!),
       },
     });
 
@@ -202,7 +236,12 @@ export class QuizService {
     const session =
       existing ??
       (await this.prisma.quizSession.create({
-        data: { userId, mode: 'daily', totalQuestions: questions.length },
+        data: {
+          userId,
+          mode: 'daily',
+          totalQuestions: questions.length,
+          questionOrder: questions.map((q) => q.versionId),
+        },
       }));
     return {
       sessionId: session.id,
@@ -524,6 +563,92 @@ export class QuizService {
       topicBreakdown,
       // Yeni kazanılan rozetler — istemci kutlama gösterir (Doc 19).
       earnedBadges,
+    };
+  }
+
+  /**
+   * Devam eden seans çapası (Doc 27 §2.4, Doc 25 §7 emniyet 3): kullanıcının
+   * en son yarım kalan çalışma oturumu. Deneme (randevulu) hariç — onun kendi
+   * devam akışı var (exams/start).
+   */
+  async getActiveSession(userId: string) {
+    const session = await this.prisma.quizSession.findFirst({
+      where: { userId, status: 'in_progress', mode: { in: ['practice', 'review', 'daily'] } },
+      orderBy: { startedAt: 'desc' },
+      select: {
+        id: true,
+        mode: true,
+        totalQuestions: true,
+        startedAt: true,
+        questionOrder: true,
+        topic: { select: { name: true } },
+        course: { select: { name: true } },
+        _count: { select: { answers: true } },
+      },
+    });
+    if (!session) return null;
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      totalQuestions: session.totalQuestions,
+      answeredCount: session._count.answers,
+      startedAt: session.startedAt,
+      scopeName: session.topic?.name ?? session.course?.name ?? null,
+      // Eski oturumlarda soru sırası yok → gerçek devam mümkün değil; istemci
+      // 'bitir ve sonucu gör' yolunu sunar.
+      resumable: Array.isArray(session.questionOrder) && session.questionOrder.length > 0,
+    };
+  }
+
+  /** Yarım oturumu kaldığı yerden aç: aynı soru seti + verilen cevaplar. */
+  async resumeSession(userId: string, sessionId: string) {
+    const session = await this.prisma.quizSession.findFirst({
+      where: { id: sessionId, userId },
+      select: {
+        id: true,
+        mode: true,
+        status: true,
+        questionOrder: true,
+        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+      },
+    });
+    if (!session) throw new NotFoundException('Oturum bulunamadı.');
+    if (session.status !== 'in_progress') {
+      throw new BadRequestException('Oturum tamamlanmış — devam edilemez.');
+    }
+    const order = session.questionOrder;
+    if (!Array.isArray(order) || order.length === 0) {
+      throw new BadRequestException('Bu oturumun soru sırası kayıtlı değil (eski oturum).');
+    }
+    const versionIds = order as string[];
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: versionIds } },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        options: {
+          select: { id: true, label: true, text: true }, // anahtar SIZMAZ
+          orderBy: { sortOrder: 'asc' },
+        },
+      },
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      questions: versionIds
+        .map((vid) => byId.get(vid))
+        .filter((v): v is NonNullable<typeof v> => v != null)
+        .map((v) => ({
+          questionId: v.questionId,
+          versionId: v.id,
+          stem: v.stem,
+          mediaUrl: v.mediaUrl,
+          options: v.options,
+        })),
+      givenAnswers: session.answers,
     };
   }
 

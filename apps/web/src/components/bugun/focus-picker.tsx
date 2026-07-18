@@ -177,6 +177,20 @@ export function FocusPicker() {
               <button type="button" className={itemCls} onClick={() => void enterLaws()}>
                 Kanun seç… <span aria-hidden>›</span>
               </button>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() =>
+                  start(new URLSearchParams({ mode: "review", scope: "Yanlış tekrarı" }))
+                }
+              >
+                <span>
+                  Sadece yanlışlarım
+                  <span className="block text-[12px] text-ink-soft">
+                    En eski yanlışların önce — doğru çözersen kuyruktan düşer
+                  </span>
+                </span>
+              </button>
               <p className="px-3 pb-2 pt-1.5 text-[12px] leading-relaxed text-ink-soft">
                 Odak bugünlük geçerli; kapsam içindeki soruları yine koç karıştırır.
               </p>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { api } from "@/lib/api";
-import type { CoachBrief } from "@/lib/public-api";
+import type { ActiveSession, ActivityDay, CoachBrief } from "@/lib/public-api";
 import type { ExamListItem } from "@/lib/types";
 import { Countdown } from "@/components/countdown";
 import { formatDate, formatTime } from "@/lib/format";
@@ -21,9 +21,11 @@ export const dynamic = "force-dynamic";
  * Sahne koçundur: hero = durum makinesinin kartı (/me/coach), yanı günün özeti.
  */
 export default async function BugunPage() {
-  const [brief, exams] = await Promise.all([
+  const [brief, exams, active, activity] = await Promise.all([
     api<CoachBrief>("/me/coach"),
     api<ExamListItem[]>("/exams").catch(() => [] as ExamListItem[]),
+    api<ActiveSession | null>("/quiz/active-session").catch(() => null),
+    api<ActivityDay[]>("/progress/activity").catch(() => [] as ActivityDay[]),
   ]);
   const { today, gamification, greeting } = brief;
   // Hero = durum makinesinin en öncelikli kartı (Doc 25 Karar 3); kalanlar destek.
@@ -42,6 +44,8 @@ export default async function BugunPage() {
     .filter((e) => e.state === "upcoming")
     .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
   const liveExam = exams.find((e) => e.state === "active");
+  const week = activity.slice(-7);
+  const dayShort = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-6">
@@ -86,6 +90,42 @@ export default async function BugunPage() {
               ))}
             </div>
           )}
+
+          {/* Son 7 gün — nöbet çizelgesi (wireframe 02): boş gün suçlanmaz */}
+          {week.length === 7 && (
+            <Card>
+              <CardTitle className="text-[13px]">Son 7 gün — nöbet çizelgesi</CardTitle>
+              <div className="mt-3 flex gap-2">
+                {week.map((d, i) => {
+                  const isToday = i === week.length - 1;
+                  const dow = dayShort[new Date(d.date + "T00:00:00Z").getUTCDay()];
+                  return (
+                    <div
+                      key={d.date}
+                      className={[
+                        "flex-1 rounded-sm border py-2 text-center",
+                        isToday
+                          ? "border-brand"
+                          : d.questionsAnswered > 0
+                            ? "border-line bg-session/10"
+                            : "border-dashed border-line",
+                      ].join(" ")}
+                    >
+                      <p className="tk-caption">{isToday ? "Bugün" : dow}</p>
+                      <p
+                        className={[
+                          "tabular mt-0.5 text-[14px] font-bold",
+                          d.questionsAnswered > 0 ? "text-ink" : "text-ink-soft",
+                        ].join(" ")}
+                      >
+                        {d.questionsAnswered > 0 ? d.questionsAnswered : "—"}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </Card>
+          )}
         </div>
 
         {/* Sağ kolon (4 kolon): günün özeti — salt okunur, en fazla 4 kart */}
@@ -93,6 +133,29 @@ export default async function BugunPage() {
           <Card>
             <GoalProgress answered={today.answered} goal={today.goal} />
           </Card>
+
+          {/* Devam eden seans çapası (Doc 25 §7 emniyet 3): kayıp iş = kayıp güven */}
+          {active && (
+            <Card className="border-warning/50">
+              <CardTitle className="text-[13px]">⏸ Devam eden seans</CardTitle>
+              <p className="tabular mt-1 text-[13px] text-ink-soft">
+                {active.scopeName ?? (active.mode === "review" ? "Yanlış tekrarı" : "Koç seansı")}{" "}
+                · {active.answeredCount}/{active.totalQuestions} soruda kaldın
+              </p>
+              {active.resumable ? (
+                <Link
+                  href={`/seans?resume=${active.sessionId}${active.scopeName ? `&scope=${encodeURIComponent(active.scopeName)}` : ""}`}
+                  className="mt-2 inline-block text-[13px] font-bold text-brand hover:underline"
+                >
+                  Kaldığın yerden devam et →
+                </Link>
+              ) : (
+                <p className="tk-caption mt-2">
+                  Eski sürümden yarım oturum — yeni seans başlatman yeterli.
+                </p>
+              )}
+            </Card>
+          )}
 
           {gamification.nextBadge && (
             <Card>

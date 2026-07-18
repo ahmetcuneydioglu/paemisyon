@@ -226,6 +226,23 @@ export class ProgressService {
     }));
   }
 
+  /** Son 14 günün günlük soru hacmi (daily_usage) — boş günler 0 ile doldurulur. */
+  async getActivity(userId: string, days = 14) {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    const from = new Date(today.getTime() - (days - 1) * 86_400_000);
+    const rows = await this.prisma.dailyUsage.findMany({
+      where: { userId, usageDate: { gte: from } },
+      select: { usageDate: true, questionsAnswered: true },
+    });
+    const byDay = new Map(rows.map((r) => [r.usageDate.toISOString().slice(0, 10), r.questionsAnswered]));
+    return Array.from({ length: days }, (_, i) => {
+      const d = new Date(from.getTime() + i * 86_400_000);
+      const key = d.toISOString().slice(0, 10);
+      return { date: key, questionsAnswered: byDay.get(key) ?? 0 };
+    });
+  }
+
   async getHistory(userId: string, limit = 20) {
     return this.prisma.quizSession.findMany({
       where: { userId, status: 'completed' },

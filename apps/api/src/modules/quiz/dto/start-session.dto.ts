@@ -1,8 +1,8 @@
 import { IsIn, IsInt, IsOptional, IsString, IsUUID, Max, MaxLength, Min } from 'class-validator';
 
 export class StartSessionDto {
-  @IsIn(['practice', 'exam', 'daily']) // review sonraki dilimde
-  mode!: 'practice' | 'exam' | 'daily';
+  @IsIn(['practice', 'exam', 'daily', 'review'])
+  mode!: 'practice' | 'exam' | 'daily' | 'review';
 
   /// Konu çalışması (alıştırma veya konu denemesi). courseId ile birlikte VERİLMEZ.
   @IsOptional()

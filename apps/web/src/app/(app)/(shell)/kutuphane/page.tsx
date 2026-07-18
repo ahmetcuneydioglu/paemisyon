@@ -42,9 +42,12 @@ export default async function KutuphanePage({
   const sp = await searchParams;
   const wanted = Array.isArray(sp.sinav) ? sp.sinav[0] : sp.sinav;
 
-  const [modules, progress] = await Promise.all([
+  const [modules, progress, wrongs] = await Promise.all([
     api<Module[]>("/catalog/modules"),
     api<TopicProgressRow[]>("/progress/topics").catch(() => [] as TopicProgressRow[]),
+    api<{ questionId: string }[]>("/review/wrong-answers").catch(
+      () => [] as { questionId: string }[],
+    ),
   ]);
   const current =
     modules.find((m) => m.key === wanted) ??
@@ -93,21 +96,39 @@ export default async function KutuphanePage({
           )}
         </div>
 
-        {/* Mevzuat — kütüphanenin tacı (Doc 25 §1), kendi kapısıyla */}
-        <Link
-          href="/kanunlar"
-          className="tk-interactive mb-5 flex items-center justify-between gap-3 rounded-md border border-atlas/40 bg-atlas/5 p-4 hover:border-atlas"
-        >
-          <span>
-            <span className="font-heading text-[15px] font-bold text-ink">
-              ⚖️ Mevzuat — Madde Atlası
+        {/* Kütüphane kapıları: Mevzuat (taç) + Yanlışlarım (hafıza) */}
+        <div className="mb-5 grid gap-3 lg:grid-cols-2">
+          <Link
+            href="/kanunlar"
+            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-atlas/40 bg-atlas/5 p-4 hover:border-atlas"
+          >
+            <span>
+              <span className="font-heading text-[15px] font-bold text-ink">
+                ⚖️ Mevzuat — Madde Atlası
+              </span>
+              <span className="mt-0.5 block text-[13px] text-ink-soft">
+                Kanun kanun ısı haritası ve fetih ilerlemen.
+              </span>
             </span>
-            <span className="mt-0.5 block text-[13px] text-ink-soft">
-              Kanun kanun ısı haritası ve fetih ilerlemen — hangi maddeden ne çıkıyor.
+            <span aria-hidden className="text-atlas">→</span>
+          </Link>
+          <Link
+            href="/kutuphane/yanlislar"
+            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-danger/30 bg-danger/5 p-4 hover:border-danger/60"
+          >
+            <span>
+              <span className="font-heading text-[15px] font-bold text-ink">
+                🔁 Yanlışlarım
+              </span>
+              <span className="mt-0.5 block text-[13px] text-ink-soft">
+                {wrongs.length > 0
+                  ? `${wrongs.length} soru kuyrukta — doğru çözünce düşer.`
+                  : "Kuyruk temiz — sistem yanlışlarını unutmaz."}
+              </span>
             </span>
-          </span>
-          <span aria-hidden className="text-atlas">→</span>
-        </Link>
+            <span aria-hidden className="text-danger">→</span>
+          </Link>
+        </div>
 
         <p className="tk-caption mb-3">
           {current?.name} müfredatı · bölüm ağırlığına göre

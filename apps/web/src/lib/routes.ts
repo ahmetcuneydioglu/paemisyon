@@ -4,7 +4,8 @@
  */
 export function webRoute(route: string): string {
   if (route.startsWith("/denemeler")) return route;
-  if (route === "/quiz" || route === "/review") return "/seans";
+  if (route === "/quiz") return "/seans";
+  if (route === "/review") return "/seans?mode=review&scope=Yanl%C4%B1%C5%9F%20tekrar%C4%B1";
   if (route === "/catalog") return "/kanunlar";
   return route;
 }

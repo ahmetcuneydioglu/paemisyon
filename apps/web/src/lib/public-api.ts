@@ -99,6 +99,24 @@ export interface TopicAtlas {
   conqueredCount: number;
 }
 
+// ── Devam eden seans çapası (Doc 27 §2.4): /quiz/active-session ──
+export interface ActiveSession {
+  sessionId: string;
+  mode: string;
+  totalQuestions: number;
+  answeredCount: number;
+  startedAt: string;
+  scopeName: string | null;
+  /** Eski (soru sırası kayıtsız) oturumlarda false — gerçek devam mümkün değil. */
+  resumable: boolean;
+}
+
+// ── Nöbet çizelgesi (Doc 27 W3/B): /progress/activity ──
+export interface ActivityDay {
+  date: string; // YYYY-MM-DD (UTC)
+  questionsAnswered: number;
+}
+
 // ── Koç (girişli ana sayfa) — /me/coach yanıtının web'de kullanılan kısmı ──
 export interface CoachBrief {
   greeting: { displayName: string | null; isPremium: boolean };

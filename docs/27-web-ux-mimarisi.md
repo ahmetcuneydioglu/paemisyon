@@ -54,11 +54,19 @@
 > "Kanun seç…" · koç rayı gizle/hatırla (RailToggle) · seans not alanı + "hata
 > bildir" ucu · deneme oynatıcıda boş-soru-başına süre önerisi · deneme analizinde
 > "geçen denemeden ±X net" kıyası · landing SSS bloğu. KALAN eksikler API/veri
-> bekliyor — B (API eki gerek): nöbet çizelgesi, devam-eden-seans çapası,
-> yanlışlarım/akıllı tekrar/favoriler reçeteleri, ders detay sekmeli çıkmış
-> sorular + trend kolonları, kanun mini denemesi, deneme süre şeridi, aktivite
-> ısısı + haftalık rapor; C (veri/içerik): madde etiketi backfill'i, kanun metni
-> içerik hattı, deneme bölüm yapısı.
+> bekliyor — B (API eki gerek): ders detay sekmeli çıkmış sorular + trend
+> kolonları, kanun mini denemesi, deneme süre şeridi, aktivite ısısı (12 hafta)
+> + haftalık rapor, favoriler reçetesi; C (veri/içerik): madde etiketi
+> backfill'i, kanun metni içerik hattı, deneme bölüm yapısı.
+> **B dilimi 1-2-3 TAMAM (18 Tem 2026):** (1) Devam eden seans çapası —
+> quiz_sessions.question_order kolonu (migration), GET /quiz/active-session +
+> /quiz/sessions/:id/resume; web: Bugün'de "⏸ devam" kartı + koç rayında pil +
+> oynatıcıda kaldığı sorudan açılma (cevaplar ✓/✗ ekilir, anahtar sızmaz).
+> (2) Yanlış tekrarı reçetesi — quiz mode 'review' (free: son 7 gün, premium:
+> süresiz; en eski önce; doğru çözülen kuyruktan düşer); web: Odak'ta "Sadece
+> yanlışlarım", /kutuphane/yanlislar kuyruk sayfası + Kütüphane kapısı, koç
+> /review kartları artık gerçek hedefe gider. (3) Nöbet çizelgesi — GET
+> /progress/activity (14 gün); Bugün'de son 7 gün şeridi.
 > Kapsam: SADECE paemisyon.com web platformu. Mobil uygulamaya dokunulmaz;
 > mobil UX, mobil navigasyon ve mobil wireframe bu dokümanın konusu DEĞİLDİR.
 > Girdi: Doc 23 (Konsept C), Doc 24 (yolculuk), Doc 25 (IA), Doc 26 (tasarım dili).

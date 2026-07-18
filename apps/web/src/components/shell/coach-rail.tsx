@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { api } from "@/lib/api";
-import type { CoachBrief } from "@/lib/public-api";
+import type { ActiveSession, CoachBrief } from "@/lib/public-api";
 import { webRoute } from "@/lib/routes";
 import { Card } from "@/components/ui/card";
 import { GoalProgress } from "@/components/ui/goal-progress";
@@ -12,7 +12,10 @@ import { RailToggle } from "./rail-toggle";
  * Veri alınamazsa ray sessizce kaybolur — çalışma sayfasını asla bloklamaz.
  */
 export async function CoachRail() {
-  const brief = await api<CoachBrief>("/me/coach").catch(() => null);
+  const [brief, active] = await Promise.all([
+    api<CoachBrief>("/me/coach").catch(() => null),
+    api<ActiveSession | null>("/quiz/active-session").catch(() => null),
+  ]);
   if (!brief) return null;
   const cards = brief.cards.slice(0, 2);
 
@@ -21,6 +24,18 @@ export async function CoachRail() {
       <aside aria-label="Koç">
         <div className="sticky top-6 space-y-3">
           <h4 className="tk-caption">Koç</h4>
+          {/* Devam eden seans pili (Doc 25 §7 emniyet 3) — her L2 sayfasında görünür */}
+          {active?.resumable && (
+            <Link
+              href={`/seans?resume=${active.sessionId}${active.scopeName ? `&scope=${encodeURIComponent(active.scopeName)}` : ""}`}
+              className="tk-interactive flex items-center justify-between gap-2 rounded-full border border-warning/50 bg-warning/10 px-3 py-1.5 text-[12px] font-bold text-ink hover:border-warning"
+            >
+              <span className="tabular min-w-0 truncate">
+                ⏸ {active.answeredCount}/{active.totalQuestions} — kaldığın yerden devam
+              </span>
+              <span aria-hidden>→</span>
+            </Link>
+          )}
           {cards.map((c) => (
             <Card key={c.type + c.title}>
               <p className="font-heading text-[14px] font-bold leading-snug text-ink">{c.title}</p>

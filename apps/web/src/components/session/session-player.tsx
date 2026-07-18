@@ -45,9 +45,20 @@ export interface SessionScope {
   topicId?: string;
   courseId?: string;
   articleNo?: string;
+  /** 'review' = yanlış tekrarı reçetesi (Doc 24 §11); varsayılan practice. */
+  mode?: "practice" | "review";
+  /** Yarım oturumu kaldığı yerden aç (Doc 27 §2.4). */
+  resumeId?: string;
   /** Üst şeritte gösterilen insan-okur kapsam etiketi. */
   label?: string;
   questionCount?: number;
+}
+
+interface ResumeResponse {
+  sessionId: string;
+  mode: string;
+  questions: SessionQuestion[];
+  givenAnswers: { questionId: string; selectedOptionId: string | null; isCorrect: boolean | null }[];
 }
 
 type Phase =
@@ -80,10 +91,52 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   useEffect(() => {
     if (startedRef.current) return; // StrictMode çift çağrısına karşı
     startedRef.current = true;
+    const fail = (e: unknown) => {
+      const err = e instanceof ApiClientError ? e : null;
+      setPhase({
+        kind: "error",
+        code: err?.code ?? "UNKNOWN",
+        message: err?.message ?? "Seans başlatılamadı.",
+      });
+    };
+    if (scope.resumeId) {
+      // Kaldığı yerden devam: aynı set + verilen cevaplar (Doc 27 §2.4).
+      apiClient<ResumeResponse>(`/quiz/sessions/${scope.resumeId}/resume`)
+        .then((res) => {
+          const seeded: Record<string, AnswerFeedback & { selected: string }> = {};
+          for (const a of res.givenAnswers) {
+            if (a.selectedOptionId == null) continue;
+            seeded[a.questionId] = {
+              isCorrect: a.isCorrect === true,
+              // Açıklama/anahtar tekrar SIZDIRILMAZ; doğruysa seçilen = doğru.
+              correctOptionId: a.isCorrect === true ? a.selectedOptionId : null,
+              explanation: null,
+              legalReference: null,
+              source: null,
+              selected: a.selectedOptionId,
+            };
+          }
+          setFeedback(seeded);
+          const firstUnanswered = res.questions.findIndex((q) => !seeded[q.questionId]);
+          setIndex(firstUnanswered >= 0 ? firstUnanswered : res.questions.length - 1);
+          questionShownAt.current = Date.now();
+          setPhase({
+            kind: "playing",
+            data: {
+              sessionId: res.sessionId,
+              mode: res.mode,
+              plannedDurationSeconds: null,
+              questions: res.questions,
+            },
+          });
+        })
+        .catch(fail);
+      return;
+    }
     apiClient<StartResponse>("/quiz/sessions", {
       method: "POST",
       body: {
-        mode: "practice",
+        mode: scope.mode ?? "practice",
         ...(scope.topicId ? { topicId: scope.topicId } : {}),
         ...(scope.courseId ? { courseId: scope.courseId } : {}),
         ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
@@ -94,14 +147,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         questionShownAt.current = Date.now();
         setPhase({ kind: "playing", data });
       })
-      .catch((e: unknown) => {
-        const err = e instanceof ApiClientError ? e : null;
-        setPhase({
-          kind: "error",
-          code: err?.code ?? "UNKNOWN",
-          message: err?.message ?? "Seans başlatılamadı.",
-        });
-      });
+      .catch(fail);
   }, [scope]);
 
   const data = phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
@@ -249,7 +295,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
 
   return (
     <FocusFrame
-      label={scope.label ?? "Koç seansı — zayıf konuların, yanlışların ve yeni sorular"}
+      label={
+        scope.label ??
+        (scope.mode === "review"
+          ? "Yanlış tekrarı — en eski yanlışların önce"
+          : "Koç seansı — zayıf konuların, yanlışların ve yeni sorular")
+      }
       right={
         <span className="tabular rounded-full border border-line px-3 py-1 text-[13px] font-bold text-ink">
           {Math.min(index + 1, data!.questions.length)} / {data!.questions.length}
