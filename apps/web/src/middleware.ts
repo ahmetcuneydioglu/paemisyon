@@ -8,17 +8,47 @@ import { config as appConfig } from "./lib/config";
  */
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({ request });
-  const supabase = createServerClient(appConfig.supabaseUrl, appConfig.supabaseAnonKey, {
-    cookies: {
-      getAll: () => request.cookies.getAll(),
-      setAll: (list) => {
-        list.forEach(({ name, value }) => request.cookies.set(name, value));
-        response = NextResponse.next({ request });
-        list.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
+  const supabase = createServerClient(
+    appConfig.supabaseUrl,
+    appConfig.supabaseAnonKey,
+    {
+      cookies: {
+        getAll: () => request.cookies.getAll(),
+        setAll: (list) => {
+          list.forEach(({ name, value }) => request.cookies.set(name, value));
+          response = NextResponse.next({ request });
+          list.forEach(({ name, value, options }) =>
+            response.cookies.set(name, value, options),
+          );
+        },
       },
     },
-  });
-  await supabase.auth.getUser();
+  );
+  const { data } = await supabase.auth.getUser();
+  const protectedPrefixes = [
+    "/bugun",
+    "/kutuphane",
+    "/performans",
+    "/profil",
+    "/seans",
+    "/sinav",
+    "/sonuc",
+  ];
+  const isProtected = protectedPrefixes.some(
+    (prefix) =>
+      request.nextUrl.pathname === prefix ||
+      request.nextUrl.pathname.startsWith(`${prefix}/`),
+  );
+  if (isProtected && !data.user) {
+    const login = request.nextUrl.clone();
+    login.pathname = "/giris";
+    login.search = "";
+    login.searchParams.set(
+      "next",
+      `${request.nextUrl.pathname}${request.nextUrl.search}`,
+    );
+    return NextResponse.redirect(login);
+  }
   return response;
 }
 

@@ -16,16 +16,30 @@ interface Item {
 }
 
 const STATIC_ITEMS: Item[] = [
-  { group: "Eylemler", label: "Bugün Çalış — koç seansı başlat", href: "/seans" },
+  {
+    group: "Eylemler",
+    label: "Bugün Çalış — koç seansı başlat",
+    href: "/seans",
+  },
   { group: "Eylemler", label: "Günün sorusunu çöz", href: "/gunun-sorusu" },
   { group: "Sayfalar", label: "Bugün", href: "/bugun" },
   { group: "Sayfalar", label: "Kütüphane", href: "/kutuphane" },
   { group: "Sayfalar", label: "Mevzuat — Madde Atlası", href: "/kanunlar" },
   { group: "Sayfalar", label: "Denemeler", href: "/denemeler" },
   { group: "Sayfalar", label: "Performans", href: "/performans" },
-  { group: "Sayfalar", label: "Konu haritası", href: "/performans/konu-haritasi" },
+  {
+    group: "Sayfalar",
+    label: "Konu haritası",
+    href: "/performans/konu-haritasi",
+  },
   { group: "Sayfalar", label: "Premium", href: "/premium" },
-  { group: "Sayfalar", label: "Profil — denemelerim", href: "/profil/denemelerim" },
+  { group: "Sayfalar", label: "Profil", href: "/profil" },
+  {
+    group: "Sayfalar",
+    label: "Profil — denemelerim",
+    href: "/profil/denemelerim",
+  },
+  { group: "Sayfalar", label: "Profil — ayarlar", href: "/profil/ayarlar" },
 ];
 
 /** TR duyarlı arama anahtarı. */
@@ -87,10 +101,13 @@ export function CommandPalette() {
         /* kanunlar yüklenemedi — statik indeksle devam */
       }
       try {
-        const modules = await apiClient<{ id: string; name: string }[]>("/catalog/modules");
+        const modules =
+          await apiClient<{ id: string; name: string }[]>("/catalog/modules");
         const courseLists = await Promise.all(
           modules.map((m) =>
-            apiClient<{ id: string; name: string }[]>(`/catalog/modules/${m.id}/courses`)
+            apiClient<{ id: string; name: string }[]>(
+              `/catalog/modules/${m.id}/courses`,
+            )
               .then((cs) => cs.map((c) => ({ ...c, moduleName: m.name })))
               .catch(() => []),
           ),
@@ -187,9 +204,17 @@ export function CommandPalette() {
           aria-label="Ara"
           className="w-full border-b border-line bg-transparent px-4 py-3.5 text-[15px] text-ink outline-none placeholder:text-ink-soft"
         />
-        <ul role="listbox" aria-label="Sonuçlar" className="max-h-80 overflow-y-auto p-1.5">
+        <ul
+          role="listbox"
+          aria-label="Sonuçlar"
+          className="max-h-80 overflow-y-auto p-1.5"
+        >
           {results.map((r, i) => (
-            <li key={r.href + r.label} role="option" aria-selected={i === cursor}>
+            <li
+              key={r.href + r.label}
+              role="option"
+              aria-selected={i === cursor}
+            >
               <button
                 type="button"
                 onClick={() => go(r)}
@@ -201,7 +226,9 @@ export function CommandPalette() {
               >
                 <span className="tk-caption w-16 shrink-0">{r.group}</span>
                 <span className="min-w-0 flex-1 truncate">{r.label}</span>
-                {r.hint && <span className="tk-caption shrink-0">{r.hint}</span>}
+                {r.hint && (
+                  <span className="tk-caption shrink-0">{r.hint}</span>
+                )}
               </button>
             </li>
           ))}

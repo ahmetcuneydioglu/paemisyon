@@ -41,8 +41,7 @@ class MeRepository {
         data: {
           'moduleId': moduleId,
           if (targetExamDate != null)
-            'targetExamDate':
-                targetExamDate.toIso8601String().substring(0, 10),
+            'targetExamDate': targetExamDate.toIso8601String().substring(0, 10),
           if (dailyGoal != null) 'dailyGoal': dailyGoal,
         },
       );
@@ -51,8 +50,27 @@ class MeRepository {
 
   Future<void> updateDisplayName(String displayName) async {
     return _guard(() async {
-      await _dio
-          .patch<Map<String, dynamic>>('/me', data: {'displayName': displayName});
+      await _dio.patch<Map<String, dynamic>>('/me',
+          data: {'displayName': displayName});
+    });
+  }
+
+  Future<void> updateProfile({
+    required String displayName,
+    required String preferredModuleId,
+    required int dailyGoal,
+    DateTime? targetExamDate,
+  }) async {
+    return _guard(() async {
+      await _dio.patch<Map<String, dynamic>>(
+        '/me',
+        data: {
+          'displayName': displayName.trim(),
+          'preferredModuleId': preferredModuleId,
+          'dailyGoal': dailyGoal,
+          'targetExamDate': targetExamDate?.toIso8601String().substring(0, 10),
+        },
+      );
     });
   }
 
@@ -71,7 +89,12 @@ class MeRepository {
           e.type == DioExceptionType.connectionTimeout) {
         throw const NetworkFailure();
       }
-      throw const ServerFailure();
+      final response = e.response?.data;
+      final error = response is Map<String, dynamic>
+          ? response['error'] as Map<String, dynamic>?
+          : null;
+      final message = error?['message'] as String?;
+      throw ServerFailure(message ?? 'Bir şeyler ters gitti, tekrar dene.');
     }
   }
 }

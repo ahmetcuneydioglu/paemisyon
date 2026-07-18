@@ -6,12 +6,14 @@ import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
-import '../../auth/data/auth_repository.dart';
+import '../../../shared/widgets/rank_insignia.dart';
+import '../../coach/data/coach_repository.dart';
+import '../../coach/domain/coach_models.dart';
 import '../data/me_repository.dart';
 import '../domain/me_profile.dart';
 
-/// Profil & Ayarlar (Doc 13 S7): isim, hedef sınav, abonelik, çıkış,
-/// KVKK hesap silme (App Store zorunluluğu — geri alınamaz).
+/// Kullanıcının kimliği, çalışma özeti ve ilerleme vitrini.
+/// Düzenlenebilir hesap alanları ayrı ayarlar ekranında tutulur.
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
 
@@ -19,21 +21,30 @@ class ProfileScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final me = ref.watch(meProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Profil & Ayarlar')),
+      appBar: AppBar(
+        title: const Text('Profil'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings_rounded),
+            tooltip: 'Profil ayarları',
+            onPressed: () => context.push('/profile/settings'),
+          ),
+        ],
+      ),
       body: me.when(
         loading: () => const Padding(
           padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(children: [
-            LoadingSkeleton(height: 80),
+            LoadingSkeleton(height: 112),
             SizedBox(height: AppSpacing.lg),
-            LoadingSkeleton(height: 200),
+            LoadingSkeleton(height: 190),
           ]),
         ),
-        error: (e, _) => ErrorStateView(
-          message: e is Failure ? e.message : 'Profil yüklenemedi.',
+        error: (error, _) => ErrorStateView(
+          message: error is Failure ? error.message : 'Profil yüklenemedi.',
           onRetry: () => ref.invalidate(meProvider),
         ),
-        data: (p) => _ProfileBody(profile: p),
+        data: (profile) => _ProfileBody(profile: profile),
       ),
     );
   }
@@ -46,189 +57,263 @@ class _ProfileBody extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    return ListView(
-      padding: const EdgeInsets.all(AppSpacing.xl),
-      children: [
-        // ── Kimlik kartı ──
-        Card(
-          child: ListTile(
-            leading: CircleAvatar(
-              child: Text(
-                (profile.displayName?.isNotEmpty ?? false)
-                    ? profile.displayName![0].toUpperCase()
-                    : '?',
+    final brief = ref.watch(coachBriefProvider);
+
+    return RefreshIndicator(
+      onRefresh: () async {
+        ref.invalidate(meProvider);
+        ref.invalidate(coachBriefProvider);
+      },
+      child: ListView(
+        physics: const AlwaysScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(AppSpacing.xl),
+        children: [
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 28,
+                    child: Text(
+                      (profile.displayName?.trim().isNotEmpty ?? false)
+                          ? profile.displayName!.trim()[0].toUpperCase()
+                          : '?',
+                      style: theme.textTheme.titleLarge,
+                    ),
+                  ),
+                  const SizedBox(width: AppSpacing.lg),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(profile.displayName ?? 'Kullanıcı',
+                            style: theme.textTheme.titleMedium),
+                        const SizedBox(height: AppSpacing.xs),
+                        Text(profile.email,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: theme.textTheme.bodySmall),
+                        const SizedBox(height: AppSpacing.xs),
+                        Row(children: [
+                          Icon(
+                            profile.emailVerified
+                                ? Icons.verified_rounded
+                                : Icons.info_outline_rounded,
+                            size: 16,
+                            color: profile.emailVerified
+                                ? theme.colorScheme.primary
+                                : theme.colorScheme.error,
+                          ),
+                          const SizedBox(width: AppSpacing.xs),
+                          Text(
+                            profile.emailVerified
+                                ? 'E-posta doğrulandı'
+                                : 'E-posta doğrulanmadı',
+                            style: theme.textTheme.labelSmall,
+                          ),
+                        ]),
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.edit_rounded),
+                    tooltip: 'Profili düzenle',
+                    onPressed: () => context.push('/profile/settings'),
+                  ),
+                ],
               ),
             ),
-            title: Text(profile.displayName ?? 'Kullanıcı'),
-            subtitle: Text(profile.email),
-            trailing: IconButton(
-              icon: const Icon(Icons.edit_rounded),
-              tooltip: 'İsmi düzenle',
-              onPressed: () => _editName(context, ref),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          _PlanCard(profile: profile),
+          const SizedBox(height: AppSpacing.lg),
+          brief.when(
+            loading: () => const LoadingSkeleton(height: 176),
+            error: (_, __) => Card(
+              child: ListTile(
+                leading: const Icon(Icons.refresh_rounded),
+                title: const Text('İlerleme özeti yüklenemedi'),
+                subtitle: const Text('Yeniden denemek için dokun.'),
+                onTap: () => ref.invalidate(coachBriefProvider),
+              ),
             ),
+            data: (value) => _ProgressSummary(brief: value),
           ),
-        ),
-        const SizedBox(height: AppSpacing.lg),
-
-        // ── Abonelik ──
-        Card(
-          child: ListTile(
-            leading: Icon(Icons.workspace_premium_rounded,
-                color: profile.isPremium
-                    ? theme.colorScheme.primary
-                    : theme.colorScheme.outline),
-            title: Text(profile.isPremium ? 'Premium' : 'Ücretsiz plan'),
-            subtitle: Text(profile.isPremium
-                ? (profile.validUntil != null
-                    ? 'Bitiş: ${_date(profile.validUntil!)}'
-                    : 'Süresiz')
-                : 'Günlük soru sınırı geçerli'),
-            trailing:
-                profile.isPremium ? null : const Icon(Icons.chevron_right_rounded),
-            onTap: profile.isPremium ? null : () => context.push('/paywall'),
-          ),
-        ),
-        const SizedBox(height: AppSpacing.lg),
-
-        // ── Hedef sınav ──
-        Card(
-          child: ListTile(
-            leading: const Icon(Icons.flag_rounded),
-            title: const Text('Hedef sınav'),
-            subtitle: Text(profile.preferredModuleName ?? 'Seçilmedi'),
-            trailing: const Icon(Icons.chevron_right_rounded),
-            onTap: () => context.push('/onboarding'),
-          ),
-        ),
-        const SizedBox(height: AppSpacing.xl),
-
-        // ── Çıkış ──
-        OutlinedButton.icon(
-          icon: const Icon(Icons.logout_rounded),
-          label: const Text('Çıkış yap'),
-          onPressed: () => ref.read(authRepositoryProvider).signOut(),
-        ),
-        const SizedBox(height: AppSpacing.xl),
-
-        // ── KVKK hesap silme ──
-        Text('Tehlikeli bölge', style: theme.textTheme.labelMedium),
-        const SizedBox(height: AppSpacing.xs),
-        OutlinedButton.icon(
-          style: OutlinedButton.styleFrom(
-            foregroundColor: theme.colorScheme.error,
-            side: BorderSide(color: theme.colorScheme.error.withValues(alpha: 0.5)),
-          ),
-          icon: const Icon(Icons.delete_forever_rounded),
-          label: const Text('Hesabımı kalıcı olarak sil'),
-          onPressed: () => _confirmDelete(context, ref),
-        ),
-        const SizedBox(height: AppSpacing.xs),
-        Text(
-          'Hesabın ve kişisel verilerin KVKK kapsamında kalıcı olarak silinir. Bu işlem geri alınamaz.',
-          style: theme.textTheme.bodySmall,
-        ),
-      ],
-    );
-  }
-
-  String _date(DateTime d) =>
-      '${d.day.toString().padLeft(2, '0')}.${d.month.toString().padLeft(2, '0')}.${d.year}';
-
-  Future<void> _editName(BuildContext context, WidgetRef ref) async {
-    final controller = TextEditingController(text: profile.displayName ?? '');
-    final name = await showDialog<String>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('İsmini düzenle'),
-        content: TextField(
-          controller: controller,
-          autofocus: true,
-          maxLength: 50,
-          decoration: const InputDecoration(labelText: 'Görünen isim'),
-        ),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx), child: const Text('Vazgeç')),
-          FilledButton(
-            onPressed: () => Navigator.pop(ctx, controller.text.trim()),
-            child: const Text('Kaydet'),
+          const SizedBox(height: AppSpacing.lg),
+          Text('Hızlı erişim', style: theme.textTheme.titleMedium),
+          const SizedBox(height: AppSpacing.sm),
+          Card(
+            child: Column(children: [
+              _Shortcut(
+                icon: Icons.insights_rounded,
+                title: 'İlerlemem',
+                subtitle: 'Başarı oranı, seri ve konu performansı',
+                onTap: () => context.push('/progress'),
+              ),
+              const Divider(height: 1),
+              _Shortcut(
+                icon: Icons.assignment_rounded,
+                title: 'Denemelerim',
+                subtitle: 'Deneme sınavları ve sonuçlar',
+                onTap: () => context.push('/denemeler'),
+              ),
+              const Divider(height: 1),
+              _Shortcut(
+                icon: Icons.settings_rounded,
+                title: 'Hesap ve çalışma ayarları',
+                subtitle: 'Hedef, günlük plan, şifre ve hesap işlemleri',
+                onTap: () => context.push('/profile/settings'),
+              ),
+            ]),
           ),
         ],
       ),
     );
-    if (name == null || name.isEmpty || name == profile.displayName) return;
-    try {
-      await ref.read(meRepositoryProvider).updateDisplayName(name);
-      ref.invalidate(meProvider);
-      ref.invalidate(dashboardProvider);
-    } on Failure catch (f) {
-      if (context.mounted) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text(f.message)));
-      }
-    }
-  }
-
-  /// Çift onay: önce uyarı, sonra "SİL" yazarak teyit (yanlışlıkla silme imkânsız).
-  Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {
-    final first = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        icon: const Icon(Icons.warning_amber_rounded),
-        title: const Text('Hesabını silmek üzeresin'),
-        content: const Text(
-            'Tüm ilerlemen, istatistiklerin ve aboneliğin kalıcı olarak silinir. '
-            'Bu işlem geri alınamaz.'),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Vazgeç')),
-          FilledButton(
-            style: FilledButton.styleFrom(
-                backgroundColor: Theme.of(ctx).colorScheme.error),
-            onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Devam et'),
-          ),
-        ],
-      ),
-    );
-    if (first != true || !context.mounted) return;
-
-    final controller = TextEditingController();
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Onay için SİL yaz'),
-        content: TextField(
-          controller: controller,
-          autofocus: true,
-          decoration: const InputDecoration(hintText: 'SİL'),
-        ),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: const Text('Vazgeç')),
-          FilledButton(
-            style: FilledButton.styleFrom(
-                backgroundColor: Theme.of(ctx).colorScheme.error),
-            onPressed: () =>
-                Navigator.pop(ctx, controller.text.trim().toUpperCase() == 'SİL'),
-            child: const Text('Hesabı Sil'),
-          ),
-        ],
-      ),
-    );
-    if (confirmed != true || !context.mounted) return;
-
-    try {
-      await ref.read(meRepositoryProvider).deleteAccount();
-      // Yerel oturumu kapat → router login'e atar.
-      await ref.read(authRepositoryProvider).signOut();
-    } on Failure catch (f) {
-      if (context.mounted) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text(f.message)));
-      }
-    }
   }
 }
+
+class _PlanCard extends StatelessWidget {
+  final MeProfile profile;
+  const _PlanCard({required this.profile});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.lg),
+        child: Row(children: [
+          Icon(
+            profile.isPremium
+                ? Icons.workspace_premium_rounded
+                : Icons.shield_outlined,
+            color: profile.isPremium
+                ? theme.colorScheme.primary
+                : theme.colorScheme.outline,
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(profile.isPremium ? 'Premium plan' : 'Ücretsiz plan',
+                    style: theme.textTheme.titleSmall),
+                Text(
+                  profile.isPremium
+                      ? (profile.validUntil == null
+                          ? 'Süresiz erişim'
+                          : '${_date(profile.validUntil!)} tarihine kadar')
+                      : 'Günlük kullanım sınırları geçerli',
+                  style: theme.textTheme.bodySmall,
+                ),
+              ],
+            ),
+          ),
+          if (!profile.isPremium)
+            TextButton(
+              onPressed: () => context.push('/paywall'),
+              child: const Text('Yükselt'),
+            ),
+        ]),
+      ),
+    );
+  }
+}
+
+class _ProgressSummary extends StatelessWidget {
+  final CoachBrief brief;
+  const _ProgressSummary({required this.brief});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [
+      if (brief.rank != null)
+        RankInsignia(
+          level: brief.rank!.level,
+          name: brief.rank!.name,
+          score: brief.rank!.score,
+          progressToNext: brief.rank!.progressToNext,
+          nextName: brief.rank!.next?.name,
+          pointsToNext: brief.rank!.next == null
+              ? null
+              : brief.rank!.next!.minScore - brief.rank!.score,
+          onTap: () => context.push('/leaderboard'),
+        ),
+      if (brief.rank != null) const SizedBox(height: AppSpacing.md),
+      Card(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
+          child: Row(children: [
+            _Metric(value: '${brief.totalSolved}', label: 'Çözülen'),
+            _Metric(value: '%${brief.accuracy}', label: 'Başarı'),
+            _Metric(value: '${brief.streakCurrent}', label: 'Günlük seri'),
+          ]),
+        ),
+      ),
+      if (brief.nextBadge != null) ...[
+        const SizedBox(height: AppSpacing.md),
+        Card(
+          child: ListTile(
+            leading: const Icon(Icons.military_tech_rounded),
+            title: Text('${brief.nextBadge!.name} rozeti'),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.sm),
+              child: LinearProgressIndicator(
+                value: brief.nextBadge!.target == 0
+                    ? 0
+                    : brief.nextBadge!.progress / brief.nextBadge!.target,
+              ),
+            ),
+            trailing:
+                Text('${brief.nextBadge!.progress}/${brief.nextBadge!.target}'),
+          ),
+        ),
+      ],
+    ]);
+  }
+}
+
+class _Metric extends StatelessWidget {
+  final String value;
+  final String label;
+  const _Metric({required this.value, required this.label});
+
+  @override
+  Widget build(BuildContext context) => Expanded(
+        child: Semantics(
+          label: '$label: $value',
+          child: Column(children: [
+            Text(value, style: Theme.of(context).textTheme.titleLarge),
+            const SizedBox(height: AppSpacing.xs),
+            Text(label, style: Theme.of(context).textTheme.bodySmall),
+          ]),
+        ),
+      );
+}
+
+class _Shortcut extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+  const _Shortcut({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) => ListTile(
+        minVerticalPadding: AppSpacing.md,
+        leading: Icon(icon),
+        title: Text(title),
+        subtitle: Text(subtitle),
+        trailing: const Icon(Icons.chevron_right_rounded),
+        onTap: onTap,
+      );
+}
+
+String _date(DateTime date) =>
+    '${date.day.toString().padLeft(2, '0')}.${date.month.toString().padLeft(2, '0')}.${date.year}';

@@ -2,6 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { UserSyncService } from '../auth/user-sync.service';
+import { UpdateProfileDto } from './dto/update-profile.dto';
 
 /**
  * Kullanıcı işlemleri: onboarding tamamlama + KVKK hesap silme (Doc 11, Doc 13 S7).
@@ -42,6 +43,42 @@ export class UsersService {
       onboardingCompleted: true,
       preferredModuleId: user.preferredModuleId,
       preferredModuleName: module.name,
+    };
+  }
+
+  /** Profil/çalışma tercihleri — hedef sınav değişikliği aktif katalogla doğrulanır. */
+  async updateProfile(userId: string, dto: UpdateProfileDto) {
+    if (dto.preferredModuleId !== undefined) {
+      const module = await this.prisma.examType.findFirst({
+        where: { id: dto.preferredModuleId, isActive: true },
+        select: { id: true },
+      });
+      if (!module) throw new BadRequestException('Geçersiz hedef sınav.');
+    }
+
+    const updated = await this.prisma.user.update({
+      where: { id: userId },
+      data: {
+        displayName: dto.displayName?.trim(),
+        avatarUrl: dto.avatarUrl,
+        preferredModuleId: dto.preferredModuleId,
+        dailyGoal: dto.dailyGoal,
+        targetExamDate:
+          dto.targetExamDate === undefined
+            ? undefined
+            : dto.targetExamDate === null
+              ? null
+              : new Date(`${dto.targetExamDate}T00:00:00.000Z`),
+      },
+      include: { preferredModule: { select: { id: true, name: true } } },
+    });
+    return {
+      id: updated.id,
+      displayName: updated.displayName,
+      avatarUrl: updated.avatarUrl,
+      preferredModule: updated.preferredModule,
+      dailyGoal: updated.dailyGoal,
+      targetExamDate: updated.targetExamDate?.toISOString().slice(0, 10) ?? null,
     };
   }
 

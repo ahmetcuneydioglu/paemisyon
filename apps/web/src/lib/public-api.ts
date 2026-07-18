@@ -4,12 +4,16 @@ import { config } from "./config";
  * Public (auth'suz) API çağrısı — SEO katmanı (Doc 23). ISR ile önbelleklenir:
  * sayfalar statik üretilir, `revalidate` süresinde arka planda tazelenir.
  */
-export async function publicApi<T>(path: string, revalidateSeconds = 3600): Promise<T> {
+export async function publicApi<T>(
+  path: string,
+  revalidateSeconds = 3600,
+): Promise<T> {
   const res = await fetch(`${config.apiBaseUrl}${path}`, {
     next: { revalidate: revalidateSeconds },
   });
   const json = (await res.json().catch(() => null)) as { data?: T } | null;
-  if (!res.ok || !json?.data) throw new Error(`Public API hatası: ${path} (${res.status})`);
+  if (!res.ok || !json?.data)
+    throw new Error(`Public API hatası: ${path} (${res.status})`);
   return json.data;
 }
 
@@ -95,7 +99,12 @@ export interface LawArticleDetail {
 export interface TopicAtlas {
   topicId: string;
   topicName: string;
-  articles: { no: string; questionCount: number; clearedCount: number; conquered: boolean }[];
+  articles: {
+    no: string;
+    questionCount: number;
+    clearedCount: number;
+    conquered: boolean;
+  }[];
   conqueredCount: number;
 }
 
@@ -117,9 +126,38 @@ export interface ActivityDay {
   questionsAnswered: number;
 }
 
+export interface MeProfile {
+  id: string;
+  email: string;
+  displayName: string | null;
+  avatarUrl: string | null;
+  emailVerified: boolean;
+  onboardingCompleted: boolean;
+  preferredModule: { id: string; name: string } | null;
+  dailyGoal: number;
+  targetExamDate: string | null;
+  memberSince: string | null;
+  roles: string[];
+  isPremium: boolean;
+  validUntil: string | null;
+}
+
+export interface BadgeCatalog {
+  earnedCount: number;
+  totalCount: number;
+  items: {
+    key: string;
+    name: string;
+    description: string;
+    earned: boolean;
+    earnedAt: string | null;
+  }[];
+}
+
 // ── Koç (girişli ana sayfa) — /me/coach yanıtının web'de kullanılan kısmı ──
 export interface CoachBrief {
   greeting: { displayName: string | null; isPremium: boolean };
+  daysToExam: number | null;
   today: {
     goal: number;
     answered: number;
@@ -135,7 +173,12 @@ export interface CoachBrief {
   }[];
   stats?: { totalSolved: number; accuracy: number; totalSessions: number };
   gamification: {
-    nextBadge: { key: string; name: string; progress: number; target: number } | null;
+    nextBadge: {
+      key: string;
+      name: string;
+      progress: number;
+      target: number;
+    } | null;
     /** Rütbe sistemi (Doc 24 §5) — sunucuda hesaplanır (rank.logic). */
     rank?: {
       level: number;
@@ -144,7 +187,11 @@ export interface CoachBrief {
       minScore: number;
       next: { level: number; name: string; minScore: number } | null;
     };
-    records: { bestNet: number | null; longestStreak: number; maxDailyQuestions: number };
+    records: {
+      bestNet: number | null;
+      longestStreak: number;
+      maxDailyQuestions: number;
+    };
     weekly: { activeDays: number; goalDays: number };
   };
   /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi (%). */

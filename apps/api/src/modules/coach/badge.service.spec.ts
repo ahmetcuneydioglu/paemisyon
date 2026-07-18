@@ -9,11 +9,46 @@ function prismaMock(opts: {
   examCount?: number;
 }) {
   const catalog = [
-    { key: 'first_session', name: 'İlk Adım', description: 'd', kind: 'solved', threshold: 1, sortOrder: 1 },
-    { key: 'solved_100', name: '100 Soru', description: 'd', kind: 'solved', threshold: 100, sortOrder: 2 },
-    { key: 'streak_7', name: '7 Gün Seri', description: 'd', kind: 'streak', threshold: 7, sortOrder: 6 },
-    { key: 'first_exam', name: 'İlk Deneme', description: 'd', kind: 'exam', threshold: 1, sortOrder: 8 },
-    { key: 'accuracy_70', name: 'Keskin Nişancı', description: 'd', kind: 'accuracy', threshold: 70, sortOrder: 10 },
+    {
+      key: 'first_session',
+      name: 'İlk Adım',
+      description: 'd',
+      kind: 'solved',
+      threshold: 1,
+      sortOrder: 1,
+    },
+    {
+      key: 'solved_100',
+      name: '100 Soru',
+      description: 'd',
+      kind: 'solved',
+      threshold: 100,
+      sortOrder: 2,
+    },
+    {
+      key: 'streak_7',
+      name: '7 Gün Seri',
+      description: 'd',
+      kind: 'streak',
+      threshold: 7,
+      sortOrder: 6,
+    },
+    {
+      key: 'first_exam',
+      name: 'İlk Deneme',
+      description: 'd',
+      kind: 'exam',
+      threshold: 1,
+      sortOrder: 8,
+    },
+    {
+      key: 'accuracy_70',
+      name: 'Keskin Nişancı',
+      description: 'd',
+      kind: 'accuracy',
+      threshold: 70,
+      sortOrder: 10,
+    },
   ];
   const createMany = jest.fn().mockResolvedValue({ count: 0 });
   return {
@@ -32,9 +67,7 @@ function prismaMock(opts: {
         }),
       },
       streak: {
-        findUnique: jest
-          .fn()
-          .mockResolvedValue({ longestStreak: opts.longestStreak ?? 0 }),
+        findUnique: jest.fn().mockResolvedValue({ longestStreak: opts.longestStreak ?? 0 }),
       },
       quizSession: { count: jest.fn().mockResolvedValue(opts.examCount ?? 0) },
     },
@@ -52,9 +85,7 @@ describe('BadgeService.checkAndAward', () => {
     });
     const earned = await new BadgeService(prisma as never).checkAndAward('u1');
     expect(earned.map((b) => b.key)).toEqual(['first_session', 'solved_100', 'first_exam']);
-    expect(createMany).toHaveBeenCalledWith(
-      expect.objectContaining({ skipDuplicates: true }),
-    );
+    expect(createMany).toHaveBeenCalledWith(expect.objectContaining({ skipDuplicates: true }));
   });
 
   it('zaten kazanılmışları atlar; hepsi kazanılmışsa yazma yapmaz', async () => {
@@ -79,5 +110,35 @@ describe('BadgeService.checkAndAward', () => {
     const { prisma } = prismaMock({ longestStreak: 8, totalSolved: 1 });
     const earned = await new BadgeService(prisma as never).checkAndAward('u1');
     expect(earned.map((b) => b.key)).toContain('streak_7');
+  });
+});
+
+describe('BadgeService.listForUser', () => {
+  it('kazanılan ve kilitli rozetleri tek profil kataloğunda döndürür', async () => {
+    const earnedAt = new Date('2026-07-18T00:00:00.000Z');
+    const prisma = {
+      badge: {
+        findMany: jest.fn().mockResolvedValue([
+          { key: 'first_session', name: 'İlk Adım', description: 'd' },
+          { key: 'solved_100', name: '100 Soru', description: 'd' },
+        ]),
+      },
+      userBadge: {
+        findMany: jest.fn().mockResolvedValue([{ badgeKey: 'first_session', earnedAt }]),
+      },
+    };
+
+    const result = await new BadgeService(prisma as never).listForUser('u1');
+
+    expect(result.earnedCount).toBe(1);
+    expect(result.totalCount).toBe(2);
+    expect(result.items).toEqual([
+      expect.objectContaining({
+        key: 'first_session',
+        earned: true,
+        earnedAt: earnedAt.toISOString(),
+      }),
+      expect.objectContaining({ key: 'solved_100', earned: false, earnedAt: null }),
+    ]);
   });
 });

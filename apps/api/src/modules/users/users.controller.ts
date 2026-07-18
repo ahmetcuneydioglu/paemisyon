@@ -27,8 +27,12 @@ export class UsersController {
       email: user.email,
       displayName: profile?.displayName,
       avatarUrl: profile?.avatarUrl,
+      emailVerified: profile?.emailVerifiedAt != null,
       onboardingCompleted: profile?.onboardingCompletedAt != null,
       preferredModule: profile?.preferredModule ?? null,
+      dailyGoal: profile?.dailyGoal ?? 20,
+      targetExamDate: profile?.targetExamDate?.toISOString().slice(0, 10) ?? null,
+      memberSince: profile?.createdAt?.toISOString() ?? null,
       roles: user.roles,
       isPremium: user.isPremium,
       validUntil: profile?.entitlement?.validUntil ?? null,
@@ -37,10 +41,7 @@ export class UsersController {
 
   /// Onboarding: hedef sınav seçimi (Doc 11 §2). İdempotent.
   @Post('onboarding')
-  completeOnboarding(
-    @CurrentUser() user: AuthenticatedUser,
-    @Body() dto: CompleteOnboardingDto,
-  ) {
+  completeOnboarding(@CurrentUser() user: AuthenticatedUser, @Body() dto: CompleteOnboardingDto) {
     return this.users.completeOnboarding(user.id, dto);
   }
 
@@ -108,28 +109,7 @@ export class UsersController {
   }
 
   @Patch()
-  async update(@CurrentUser() user: AuthenticatedUser, @Body() dto: UpdateProfileDto) {
-    const updated = await this.prisma.user.update({
-      where: { id: user.id },
-      data: {
-        displayName: dto.displayName,
-        avatarUrl: dto.avatarUrl,
-        dailyGoal: dto.dailyGoal,
-        // undefined = dokunma; null = temizle; "YYYY-MM-DD" = ayarla (@db.Date).
-        targetExamDate:
-          dto.targetExamDate === undefined
-            ? undefined
-            : dto.targetExamDate === null
-              ? null
-              : new Date(`${dto.targetExamDate}T00:00:00.000Z`),
-      },
-    });
-    return {
-      id: updated.id,
-      displayName: updated.displayName,
-      avatarUrl: updated.avatarUrl,
-      dailyGoal: updated.dailyGoal,
-      targetExamDate: updated.targetExamDate?.toISOString().slice(0, 10) ?? null,
-    };
+  update(@CurrentUser() user: AuthenticatedUser, @Body() dto: UpdateProfileDto) {
+    return this.users.updateProfile(user.id, dto);
   }
 }

@@ -22,6 +22,29 @@ export class BadgeService {
 
   constructor(private readonly prisma: PrismaService) {}
 
+  /** Profil vitrini: kazanılan ve kilitli rozetleri katalog sırasıyla döndürür. */
+  async listForUser(userId: string) {
+    const [catalog, earnedRows] = await Promise.all([
+      this.prisma.badge.findMany({ orderBy: { sortOrder: 'asc' } }),
+      this.prisma.userBadge.findMany({
+        where: { userId },
+        select: { badgeKey: true, earnedAt: true },
+      }),
+    ]);
+    const earnedAt = new Map(earnedRows.map((row) => [row.badgeKey, row.earnedAt]));
+    return {
+      earnedCount: earnedRows.length,
+      totalCount: catalog.length,
+      items: catalog.map((badge) => ({
+        key: badge.key,
+        name: badge.name,
+        description: badge.description,
+        earned: earnedAt.has(badge.key),
+        earnedAt: earnedAt.get(badge.key)?.toISOString() ?? null,
+      })),
+    };
+  }
+
   /** Hak edilmiş ama verilmemiş rozetleri verir; YENİ verilenleri döner. */
   async checkAndAward(userId: string): Promise<EarnedBadge[]> {
     const [catalog, earnedRows, stats, streak, examCount] = await Promise.all([
@@ -40,9 +63,7 @@ export class BadgeService {
     const earned = new Set(earnedRows.map((r) => r.badgeKey));
     const totalSolved = stats?.totalSolved ?? 0;
     const accuracyPct =
-      totalSolved > 0
-        ? Math.round(((stats?.totalCorrect ?? 0) / totalSolved) * 100)
-        : 0;
+      totalSolved > 0 ? Math.round(((stats?.totalCorrect ?? 0) / totalSolved) * 100) : 0;
 
     const progressOf = (kind: string): number => {
       switch (kind) {
@@ -70,9 +91,7 @@ export class BadgeService {
       data: newlyEarned.map((b) => ({ userId, badgeKey: b.key })),
       skipDuplicates: true, // eşzamanlı iki complete yarışında güvenli
     });
-    this.logger.log(
-      `Rozet verildi: user=${userId} → ${newlyEarned.map((b) => b.key).join(', ')}`,
-    );
+    this.logger.log(`Rozet verildi: user=${userId} → ${newlyEarned.map((b) => b.key).join(', ')}`);
     return newlyEarned.map((b) => ({
       key: b.key,
       name: b.name,

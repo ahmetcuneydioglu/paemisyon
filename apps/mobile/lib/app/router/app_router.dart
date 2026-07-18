@@ -19,6 +19,7 @@ import '../../features/catalog/presentation/topics_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
 import '../../features/me/presentation/profile_screen.dart';
+import '../../features/me/presentation/profile_settings_screen.dart';
 import '../../features/progress/presentation/leaderboard_screen.dart';
 import '../../features/progress/presentation/progress_screen.dart';
 import '../../features/quiz/domain/quiz_models.dart';
@@ -155,6 +156,9 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           builder: (context, state) => const OnboardingScreen()),
       GoRoute(
           path: '/profile', builder: (context, state) => const ProfileScreen()),
+      GoRoute(
+          path: '/profile/settings',
+          builder: (context, state) => const ProfileSettingsScreen()),
     ],
   );
 });

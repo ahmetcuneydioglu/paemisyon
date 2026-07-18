@@ -14,6 +14,12 @@ class AppConfig {
     defaultValue: 'http://AHMETCND-MacBook-Pro.local:3000/api/v1',
   );
 
+  /// E-posta doğrulama / şifre yenileme bağlantılarının açıldığı web kökü.
+  static const String webBaseUrl = String.fromEnvironment(
+    'WEB_BASE_URL',
+    defaultValue: 'https://paemisyon.com',
+  );
+
   /// Supabase proje URL'i (public). Frankfurt (eu-central-1) projesi.
   static const String supabaseUrl = String.fromEnvironment(
     'SUPABASE_URL',

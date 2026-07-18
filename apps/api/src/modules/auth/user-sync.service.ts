@@ -4,6 +4,29 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { isEntitlementActive } from '../billing/entitlement.util';
 import type { AuthenticatedUser } from './auth.types';
 
+/** Supabase metadata adını güvenli biçimde al; yoksa e-posta yerel kısmına düş. */
+export function displayNameFromClaims(claims: JWTPayload, email: string): string {
+  const metadata = claims.user_metadata;
+  const raw =
+    metadata && typeof metadata === 'object' && 'display_name' in metadata
+      ? (metadata as { display_name?: unknown }).display_name
+      : null;
+  if (typeof raw === 'string' && raw.trim().length >= 2) return raw.trim().slice(0, 128);
+  return email.includes('@') ? email.split('@')[0].slice(0, 128) : 'Kullanıcı';
+}
+
+/** Supabase yeni tokenlarda doğrulamayı user_metadata içinde taşır; eski tokenları da kabul et. */
+export function emailVerifiedFromClaims(claims: JWTPayload): boolean {
+  if (claims.email_verified === true) return true;
+  const metadata = claims.user_metadata;
+  return Boolean(
+    metadata &&
+    typeof metadata === 'object' &&
+    'email_verified' in metadata &&
+    (metadata as { email_verified?: unknown }).email_verified === true,
+  );
+}
+
 /**
  * Lazy provisioning (Doc 8): Supabase'de doğrulanmış bir kullanıcı ilk kez API'ye
  * geldiğinde uygulama `users` satırını oluşturur, varsayılan 'user' rolü + entitlement atar.
@@ -45,9 +68,22 @@ export class UserSyncService {
     });
     if (existing) this.enforceStatus(existing.status);
     if (existing && existing.roles.length > 0 && existing.entitlement) {
+      const claimEmail = (claims.email as string | undefined) ?? existing.email;
+      const verifiedNow = emailVerifiedFromClaims(claims);
+      if ((verifiedNow && existing.emailVerifiedAt == null) || claimEmail !== existing.email) {
+        await this.prisma.user.update({
+          where: { id },
+          data: {
+            ...(verifiedNow && existing.emailVerifiedAt == null
+              ? { emailVerifiedAt: new Date() }
+              : {}),
+            ...(claimEmail !== existing.email ? { email: claimEmail } : {}),
+          },
+        });
+      }
       const user: AuthenticatedUser = {
         id,
-        email: existing.email,
+        email: claimEmail,
         roles: existing.roles.map((r) => r.role.key),
         isPremium: isEntitlementActive(existing.entitlement),
       };
@@ -55,42 +91,57 @@ export class UserSyncService {
       return user;
     }
 
-    // YAVAŞ YOL (ilk giriş / eksik backfill): oluştur + rol + entitlement.
+    // YAVAŞ YOL (ilk giriş / eksik backfill): tek transaction + upsert.
+    // Aynı kullanıcı için eşzamanlı ilk istekler unique ihlaline düşmez.
     const email = (claims.email as string | undefined) ?? '';
-    const emailVerified = claims.email_verified === true;
-
-    const user =
-      existing ??
-      (await this.prisma.user.create({
-        data: {
+    const emailVerified = emailVerifiedFromClaims(claims);
+    const provisioned = await this.prisma.$transaction(async (tx) => {
+      const user = await tx.user.upsert({
+        where: { id },
+        update: {
+          ...(emailVerified ? { emailVerifiedAt: new Date() } : {}),
+        },
+        create: {
           id,
           email,
-          displayName: email.includes('@') ? email.split('@')[0] : 'Kullanıcı',
+          displayName: displayNameFromClaims(claims, email),
           emailVerifiedAt: emailVerified ? new Date() : null,
         },
-      }));
+      });
+      this.enforceStatus(user.status);
 
-    let roles = existing?.roles.map((r) => r.role.key) ?? [];
-    if (roles.length === 0) {
-      const userRole = await this.prisma.role.findUnique({ where: { key: 'user' } });
-      if (userRole) {
-        await this.prisma.userRole.createMany({
+      let roleLinks = await tx.userRole.findMany({
+        where: { userId: id },
+        include: { role: true },
+      });
+      if (roleLinks.length === 0) {
+        const userRole = await tx.role.findUnique({ where: { key: 'user' } });
+        if (!userRole) throw new Error('Varsayılan kullanıcı rolü bulunamadı.');
+        await tx.userRole.createMany({
           data: [{ userId: id, roleId: userRole.id }],
           skipDuplicates: true,
         });
-        roles = ['user'];
+        roleLinks = [{ userId: id, roleId: userRole.id, role: userRole }];
       }
-    }
 
-    const entitlement =
-      existing?.entitlement ??
-      (await this.prisma.entitlement.upsert({
+      const entitlement = await tx.entitlement.upsert({
         where: { userId: id },
         update: {},
         create: { userId: id, isPremium: false },
-      }));
+      });
+      return {
+        id,
+        email: user.email,
+        roles: roleLinks.map((link) => link.role.key),
+        isPremium: isEntitlementActive(entitlement),
+      } satisfies AuthenticatedUser;
+    });
 
-    return { id, email: user.email, roles, isPremium: isEntitlementActive(entitlement) };
+    this.cache.set(id, {
+      user: provisioned,
+      expiresAt: Date.now() + UserSyncService.CACHE_TTL_MS,
+    });
+    return provisioned;
   }
 
   /** Askıya alınan/silinen hesap API'ye giremez (Doc 8/9). Supabase token'ı geçerli olsa bile. */

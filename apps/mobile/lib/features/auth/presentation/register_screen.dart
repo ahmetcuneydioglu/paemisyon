@@ -15,6 +15,7 @@ class RegisterScreen extends ConsumerStatefulWidget {
 }
 
 class _RegisterScreenState extends ConsumerState<RegisterScreen> {
+  final _name = TextEditingController();
   final _email = TextEditingController();
   final _password = TextEditingController();
   bool _loading = false;
@@ -23,12 +24,21 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
 
   @override
   void dispose() {
+    _name.dispose();
     _email.dispose();
     _password.dispose();
     super.dispose();
   }
 
   Future<void> _submit() async {
+    if (_name.text.trim().length < 2) {
+      setState(() => _error = 'Ad soyad en az 2 karakter olmalı.');
+      return;
+    }
+    if (_password.text.length < 8) {
+      setState(() => _error = 'Şifre en az 8 karakter olmalı.');
+      return;
+    }
     setState(() {
       _loading = true;
       _error = null;
@@ -37,7 +47,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     try {
       final res = await ref
           .read(authRepositoryProvider)
-          .signUp(_email.text.trim(), _password.text);
+          .signUp(_email.text.trim(), _password.text, _name.text.trim());
       if (res.session == null) {
         // E-posta onayı açık → oturum yok. Kullanıcıyı bilgilendir.
         setState(() => _info =
@@ -71,6 +81,16 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               ),
               const SizedBox(height: AppSpacing.xxl),
               TextField(
+                controller: _name,
+                textCapitalization: TextCapitalization.words,
+                autofillHints: const [AutofillHints.name],
+                decoration: const InputDecoration(
+                  labelText: 'Ad soyad',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: AppSpacing.lg),
+              TextField(
                 controller: _email,
                 keyboardType: TextInputType.emailAddress,
                 autocorrect: false,
@@ -84,7 +104,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 controller: _password,
                 obscureText: true,
                 decoration: const InputDecoration(
-                  labelText: 'Şifre (en az 6 karakter)',
+                  labelText: 'Şifre (en az 8 karakter)',
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -101,6 +121,26 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   _info!,
                   style:
                       TextStyle(color: Theme.of(context).colorScheme.primary),
+                ),
+                TextButton(
+                  onPressed: _loading
+                      ? null
+                      : () async {
+                          try {
+                            await ref
+                                .read(authRepositoryProvider)
+                                .resendConfirmation(_email.text.trim());
+                            if (!context.mounted) return;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  content: Text(
+                                      'Doğrulama e-postası yeniden gönderildi.')),
+                            );
+                          } on AuthException catch (e) {
+                            if (mounted) setState(() => _error = e.message);
+                          }
+                        },
+                  child: const Text('E-postayı yeniden gönder'),
                 ),
               ],
               const SizedBox(height: AppSpacing.xl),

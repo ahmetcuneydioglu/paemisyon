@@ -2,6 +2,7 @@ import { Controller, Get, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { BadgeService } from './badge.service';
 import { CoachService } from './coach.service';
 
 /// GET /api/v1/me/coach — Home'un tek isteği (Doc 19 §3). Kimlik zorunlu.
@@ -9,10 +10,18 @@ import { CoachService } from './coach.service';
 @Controller('me')
 @UseGuards(JwtAuthGuard)
 export class CoachController {
-  constructor(private readonly coach: CoachService) {}
+  constructor(
+    private readonly coach: CoachService,
+    private readonly badgeService: BadgeService,
+  ) {}
 
   @Get('coach')
   brief(@CurrentUser() user: AuthenticatedUser) {
     return this.coach.brief(user);
+  }
+
+  @Get('badges')
+  badges(@CurrentUser() user: AuthenticatedUser) {
+    return this.badgeService.listForUser(user.id);
   }
 }
