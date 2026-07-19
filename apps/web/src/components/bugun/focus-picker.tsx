@@ -102,8 +102,11 @@ export function FocusPicker() {
     setError(null);
     setStep({ kind: "topics", courseId, courseName });
     try {
-      const items = await apiClient<TopicNode[]>(`/catalog/courses/${courseId}/topics`);
-      setStep({ kind: "topics", courseId, courseName, items });
+      // Uç { topics, summary } döner (öğrenme merkezi ile ortak) — diziyi içinden al.
+      const res = await apiClient<{ topics: TopicNode[] }>(
+        `/catalog/courses/${courseId}/topics`,
+      );
+      setStep({ kind: "topics", courseId, courseName, items: res.topics });
     } catch {
       setError("Konular yüklenemedi. Tekrar dene.");
       setStep({ kind: "root" });
