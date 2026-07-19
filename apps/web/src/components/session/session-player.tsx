@@ -427,10 +427,15 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
           <p className="tk-caption">Soru {index + 1}</p>
           <p className="mt-2 text-[17px] leading-relaxed text-ink">{question!.stem}</p>
           {question!.mediaUrl && (
+            // Soru medyası keyfi bir saklı URL'dir (bilinmeyen host) — next/image
+            // optimizer'ını her host'a açmak güvenlik anti-pattern'i olurdu; bunun
+            // yerine ham <img> sertleştirilir (lazy + async decode, CLS güvenli).
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={question!.mediaUrl}
               alt="Soru görseli"
+              loading="lazy"
+              decoding="async"
               className="mt-3 max-h-72 rounded-md border border-line"
             />
           )}
