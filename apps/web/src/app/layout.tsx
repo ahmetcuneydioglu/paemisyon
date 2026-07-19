@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   title: { default: "Paemisyon Denemeler", template: "%s | Paemisyon" },
   description:
     "Polislik sınavlarına gerçek sınav formatında online deneme: canlı denemeler, sıralama ve soru incelemesi.",
+  // Google Search Console domain sahiplik doğrulaması (OAuth branding için).
+  verification: { google: "NrX9PAjwHQT2TerDTUmQlMQIBySd5NZ_x3i5lQhlhCE" },
 };
 
 /**
