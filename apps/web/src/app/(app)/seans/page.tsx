@@ -16,8 +16,22 @@ export default async function SeansPage({
   const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
   const count = Number.parseInt(one(p.count) ?? "", 10);
 
+  // Query seti değişince oynatıcı REMOUNT olur → taze seans başlar. Aksi halde
+  // aynı /seans'a gitmek (ör. done ekranından "Yeni seans") remount tetiklemez
+  // ve startedRef guard'ı yüzünden hiçbir şey açılmaz. `n` nonce'u bunu çözer.
+  const sessionKey = [
+    one(p.topicId),
+    one(p.courseId),
+    one(p.articleNo),
+    one(p.mode),
+    one(p.resume),
+    one(p.count),
+    one(p.n),
+  ].join("|");
+
   return (
     <SessionPlayer
+      key={sessionKey}
       scope={{
         topicId: one(p.topicId),
         courseId: one(p.courseId),

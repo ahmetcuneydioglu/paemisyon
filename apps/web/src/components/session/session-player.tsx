@@ -767,6 +767,7 @@ function SessionResult({
   isReview: boolean;
   articles: { lawSlug: string; no: string; slug: string }[];
 }) {
+  const router = useRouter();
   const pct =
     result.totalQuestions > 0
       ? Math.round((result.correctCount / result.totalQuestions) * 100)
@@ -823,9 +824,15 @@ function SessionResult({
                 Yanlışları şimdi tekrar et
               </ButtonLink>
             )}
-            <ButtonLink href="/seans" variant="ghost" size="lg">
+            {/* Değişen `n` nonce'u → yeni URL + yeni key → oynatıcı remount →
+                sunucudan taze (shuffle'lı) koç seansı. Aynı /seans'a Link no-op olurdu. */}
+            <Button
+              variant="ghost"
+              size="lg"
+              onClick={() => router.push(`/seans?n=${Date.now()}`)}
+            >
               Yeni seans
-            </ButtonLink>
+            </Button>
           </div>
 
           {/* İlgili maddeleri oku (wireframe 09): bu seansta geçen mevzuat maddeleri */}
