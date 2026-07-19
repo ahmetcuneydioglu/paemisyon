@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { publicApi, type LawArticleDetail, type TopicAtlas } from "@/lib/public-api";
+import { publicApi, type LawArticleDetail } from "@/lib/public-api";
 import { config } from "@/lib/config";
-import { api } from "@/lib/api";
-import { getCurrentUser } from "@/lib/auth/current-user";
-import { ArticleWorkspace } from "@/components/atlas/article-workspace";
-
-// Aynı URL iki derinlik (Doc 27) — kabuk oturuma göre değişir.
-export const dynamic = "force-dynamic";
 
 type Params = Promise<{ slug: string; no: string }>;
 
@@ -30,22 +24,14 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 }
 
 /**
- * Madde detay sayfası (Doc 25 §4, wireframe 07'nin v1'i).
- * Resmî metin + AI sadeleştirme V2 (kanun metni içerik hattı ayrı iş) —
- * v1 mevcut gerçek veriyle değerli: sınav geçmişi + teaser kökler + gezinme.
- * Cevap anahtarı SIZMAZ; kökler sunucuda kısaltılır.
+ * Madde detay sayfası — ANON/SEO sürümü (public kabuk). İstek durumu OKUNMAZ.
+ * Girişli kullanıcı middleware ile /calisma/kanun/[slug]/madde/[no] app kabuğuna
+ * (ArticleWorkspace) rewrite'lanır; URL değişmez (Doc 27 §3.5). Cevap anahtarı SIZMAZ.
  */
 export default async function MaddePage({ params }: { params: Params }) {
   const { slug, no } = await params;
   const a = await getArticle(slug, no);
   if (!a) notFound();
-
-  // Girişli derinlik: L4 madde çalışma alanı (Doc 27 §3.5).
-  const user = await getCurrentUser();
-  if (user) {
-    const atlas = await api<TopicAtlas>(`/catalog/topics/${a.topicId}/atlas`).catch(() => null);
-    return <ArticleWorkspace article={a} atlas={atlas} />;
-  }
 
   const jsonLd = {
     "@context": "https://schema.org",
