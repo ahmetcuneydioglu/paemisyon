@@ -11,6 +11,7 @@ import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { mixQuota, pickMix, pickTopicBalanced } from './session-mix.logic';
+import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -250,9 +251,7 @@ export class QuizService {
   // ── Günün Quizi (Doc 13 V1 — eski daily_quiz'in modern hali) ──
   // 10 karışık soru, PAEM MÜFREDATININ tamamından (Doc 21: bölümlere bağlı
   // dersler); günde 1 hak; herkese aynı set (tarih tohumlu → adil liderlik).
-  private static readonly DAILY_QUESTION_COUNT = 10;
-  private static readonly DAILY_EXAM_KEY = 'paem';
-
+  // Seçim mantığı common/daily-select.logic'te — public "Günün Quizi" ile ortak.
   private async startDailySession(userId: string) {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
@@ -292,25 +291,7 @@ export class QuizService {
     // Havuz: PAEM müfredatına (bölümler→dersler) bağlı, yayında, premium
     // OLMAYAN sorular (Doc 21 — ders adı hardcode'u kaldırıldı).
     const pool = await this.prisma.question.findMany({
-      where: {
-        deletedAt: null,
-        currentVersionId: { not: null },
-        topic: {
-          deletedAt: null,
-          isPremium: false,
-          course: {
-            deletedAt: null,
-            sections: {
-              some: {
-                section: {
-                  deletedAt: null,
-                  examType: { key: QuizService.DAILY_EXAM_KEY },
-                },
-              },
-            },
-          },
-        },
-      },
+      where: dailyQuestionPoolWhere(),
       select: { id: true, currentVersionId: true },
       orderBy: { id: 'asc' }, // deterministik taban sıra
     });
@@ -322,8 +303,7 @@ export class QuizService {
 
     // Tarih tohumlu örneklem — herkes o gün aynı 10 soruyu görür (adil liderlik).
     const dateKey = new Date().toISOString().slice(0, 10);
-    const seed = QuizService.hashString(dateKey);
-    const chosen = QuizService.seededSample(pool, QuizService.DAILY_QUESTION_COUNT, seed);
+    const chosen = pickDailyIds(pool, dateKey);
 
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
@@ -350,30 +330,6 @@ export class QuizService {
         options: v.options,
       };
     });
-  }
-
-  /** djb2 — kriptografik değil; gün içi sabit tohum için yeterli. */
-  private static hashString(s: string): number {
-    let h = 5381;
-    for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
-    return h;
-  }
-
-  /** Tohumlu (deterministik) örneklem — Fisher-Yates + mulberry32 PRNG. */
-  private static seededSample<T>(arr: readonly T[], n: number, seed: number): T[] {
-    const a = [...arr];
-    let s = seed >>> 0;
-    const rand = () => {
-      s = (s + 0x6d2b79f5) | 0;
-      let t = Math.imul(s ^ (s >>> 15), 1 | s);
-      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-    };
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(rand() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a.slice(0, Math.min(n, a.length));
   }
 
   /** Günün sorusu durumu (Home kartı): bugün oynandı mı, doğru muydu? */

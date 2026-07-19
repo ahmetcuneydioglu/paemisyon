@@ -27,6 +27,19 @@ export class PublicController {
     return this.service.revealQuestionOfDay(body.versionId ?? '', body.optionId ?? '');
   }
 
+  // Günün Quizi — girişsiz funnel: 10 cevapsız soru + tek-tek reveal (bugünün 10'u).
+  @Get('daily-quiz')
+  @Header('Cache-Control', CACHE_QOTD)
+  dailyQuiz() {
+    return this.service.dailyQuiz();
+  }
+
+  @Post('daily-quiz/reveal')
+  @Throttle({ default: { ttl: 60_000, limit: 30 } })
+  revealDaily(@Body() body: { versionId?: string; optionId?: string }) {
+    return this.service.revealDailyQuiz(body.versionId ?? '', body.optionId ?? '');
+  }
+
   @Get('laws')
   @Header('Cache-Control', CACHE_SLOW)
   laws() {

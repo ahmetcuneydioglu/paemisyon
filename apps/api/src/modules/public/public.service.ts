@@ -1,12 +1,28 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
+import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 
 /** TR-duyarlı URL slug'ı: "2559 Sayılı Polis Vazife..." → "2559-sayili-polis-vazife..." */
 export function slugify(s: string): string {
   const map: Record<string, string> = {
-    ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u',
-    Ç: 'c', Ğ: 'g', İ: 'i', I: 'i', Ö: 'o', Ş: 's', Ü: 'u', â: 'a', Â: 'a', î: 'i', û: 'u',
+    ç: 'c',
+    ğ: 'g',
+    ı: 'i',
+    ö: 'o',
+    ş: 's',
+    ü: 'u',
+    Ç: 'c',
+    Ğ: 'g',
+    İ: 'i',
+    I: 'i',
+    Ö: 'o',
+    Ş: 's',
+    Ü: 'u',
+    â: 'a',
+    Â: 'a',
+    î: 'i',
+    û: 'u',
   };
   return s
     .split('')
@@ -22,9 +38,10 @@ const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
 
 /**
  * Public (auth'suz) içerik uçları — paemisyon.com SEO katmanı (Doc 23).
- * KURAL: cevap anahtarı yalnız iki bilinçli istisnayla dışarı çıkar:
- * günün sorusu reveal'ı (tek soru, funnel) ve kanun sayfası örnek sorusu
- * (SEO için tam içerik — sabit tek soru). Banka geneli asla sızmaz.
+ * KURAL: cevap anahtarı yalnız bilinçli, SINIRLI istisnalarla dışarı çıkar:
+ * (1) günün sorusu reveal'ı (tek soru, funnel), (2) kanun sayfası örnek sorusu
+ * (SEO için tam içerik — sabit tek soru), (3) günün quizi reveal'ı (yalnız bugünkü
+ * 10 deterministik soru, tek-tek, throttle'lı funnel). Banka geneli asla sızmaz.
  */
 @Injectable()
 export class PublicService {
@@ -94,6 +111,82 @@ export class PublicService {
     const todayId = await this.questionOfDayId();
     const version = await this.prisma.questionVersion.findFirst({
       where: { id: versionId, questionId: todayId }, // yalnız bugünkü soru açılabilir
+      select: {
+        explanation: true,
+        sourceLabel: true,
+        options: { select: { id: true, isCorrect: true } },
+      },
+    });
+    if (!version) throw new BadRequestException('Geçersiz soru.');
+    const chosen = version.options.find((o) => o.id === optionId);
+    if (!chosen) throw new BadRequestException('Geçersiz şık.');
+    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    return {
+      isCorrect: chosen.isCorrect,
+      correctOptionId: version.options.find((o) => o.isCorrect)?.id ?? null,
+      explanation: version.explanation,
+      source: showSource ? version.sourceLabel : null,
+    };
+  }
+
+  // ── Günün Quizi (girişsiz funnel) ─────────────────────────────
+  // Girişli `daily` seansıyla AYNI 10 gün-tohumlu soru (common/daily-select.logic).
+  // Liste cevapsız; cevap tek-tek revealDailyQuiz ile (yalnız bugünün 10'u).
+  private dailyQuizCache: { key: string; ids: string[] } | null = null;
+  private async dailyQuizIds(): Promise<string[]> {
+    const dateKey = new Date().toISOString().slice(0, 10);
+    if (this.dailyQuizCache?.key === dateKey) return this.dailyQuizCache.ids;
+    const pool = await this.prisma.question.findMany({
+      where: dailyQuestionPoolWhere(),
+      select: { id: true, currentVersionId: true },
+      orderBy: { id: 'asc' },
+    });
+    if (pool.length === 0) throw new NotFoundException('Günün quizi için yayında soru yok.');
+    const ids = pickDailyIds(pool, dateKey).map((q) => q.id);
+    this.dailyQuizCache = { key: dateKey, ids };
+    return ids;
+  }
+
+  async dailyQuiz() {
+    const ids = await this.dailyQuizIds();
+    const questions = await this.prisma.question.findMany({
+      where: { id: { in: ids } },
+      select: {
+        id: true,
+        currentVersion: {
+          select: {
+            id: true,
+            stem: true,
+            options: {
+              orderBy: { sortOrder: 'asc' },
+              select: { id: true, label: true, text: true }, // doğru cevap YOK
+            },
+          },
+        },
+        topic: { select: { name: true, course: { select: { name: true } } } },
+      },
+    });
+    const byId = new Map(questions.map((q) => [q.id, q]));
+    // Deterministik sırayı koru (ids sırası).
+    const ordered = ids.map((id) => byId.get(id)).filter((q) => q != null);
+    return {
+      date: new Date().toISOString().slice(0, 10),
+      count: ordered.length,
+      questions: ordered.map((q) => ({
+        questionId: q!.id,
+        versionId: q!.currentVersion!.id,
+        stem: q!.currentVersion!.stem,
+        topic: `${q!.topic.course.name} / ${q!.topic.name}`,
+        options: q!.currentVersion!.options,
+      })),
+    };
+  }
+
+  /** Cevap — yalnız bugünün 10 quiz sorusundan biri için (funnel istisnası). */
+  async revealDailyQuiz(versionId: string, optionId: string) {
+    const ids = await this.dailyQuizIds();
+    const version = await this.prisma.questionVersion.findFirst({
+      where: { id: versionId, questionId: { in: ids } }, // yalnız bugünün 10'u
       select: {
         explanation: true,
         sourceLabel: true,
@@ -310,9 +403,7 @@ export class PublicService {
       neighbors: {
         prev: idx > 0 ? { no: all[idx - 1].no, slug: articleSlug(all[idx - 1].no) } : null,
         next:
-          idx < all.length - 1
-            ? { no: all[idx + 1].no, slug: articleSlug(all[idx + 1].no) }
-            : null,
+          idx < all.length - 1 ? { no: all[idx + 1].no, slug: articleSlug(all[idx + 1].no) } : null,
       },
       /** Kanunun tüm etiketli maddeleri (sayfa içi hızlı gezinme). */
       siblings: all.map((a) => ({
