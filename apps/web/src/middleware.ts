@@ -51,6 +51,20 @@ export async function middleware(request: NextRequest) {
     return redirectResponse;
   }
 
+  // Girişli kullanıcının evi uygulama kabuğu: landing yerine /bugun.
+  // Bu yönlendirme sayfadan buraya taşındı ki landing (/) statik/ISR olarak
+  // edge cache'inden servis edilebilsin (Doc 27 §3.1 — en yüksek trafikli sayfa).
+  if (data.user && request.nextUrl.pathname === "/") {
+    const home = request.nextUrl.clone();
+    home.pathname = "/bugun";
+    home.search = "";
+    const redirectResponse = NextResponse.redirect(home);
+    refreshedCookies.forEach(({ name, value, options }) =>
+      redirectResponse.cookies.set(name, value, options),
+    );
+    return redirectResponse;
+  }
+
   // Server Component'ler aynı doğrulanmış kullanıcıyı ikinci kez Supabase'den
   // istemez. Dışarıdan gönderilebilecek aynı adlı başlık her istekte ezilir.
   const requestHeaders = new Headers(request.headers);

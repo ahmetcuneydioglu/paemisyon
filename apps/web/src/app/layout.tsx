@@ -6,7 +6,8 @@ import { themeInitScript } from "@/lib/theme";
 
 const rubik = Rubik({
   subsets: ["latin", "latin-ext"],
-  weight: ["500", "700"],
+  // Yalnız 700 kullanılıyor (font-heading her yerde font-bold ile eşleşir).
+  weight: ["700"],
   variable: "--font-rubik",
 });
 const openSans = Open_Sans({

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { api } from "@/lib/api";
-import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamListItem } from "@/lib/types";
 import { publicApi, type LawSummary, type QuestionOfDay } from "@/lib/public-api";
 import { Countdown } from "@/components/countdown";
@@ -17,18 +15,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export const dynamic = "force-dynamic";
-
 /**
  * Landing (Doc 27 §3.1, wireframe 01): tek hedef — 60 saniyede değer.
  * Hero pazarlama sloganı değil, ÇÖZÜLEBİLİR gerçek çıkmış sorudur; kanıt
  * blokları sıfat değil rakam konuşur; her bölüm bir iç bağlantı kapısıdır.
- * Girişli kullanıcının evi uygulama kabuğu: / → /bugun.
+ *
+ * STATİK/ISR: bu sayfa istek durumunu (cookie/header) OKUMAZ, böylece edge
+ * cache'inden servis edilir. Girişli kullanıcıyı /bugun'e yönlendirme işi
+ * middleware'e taşındı — fetch'lerin per-request revalidate'i CDN cache'ini sürer.
  */
 export default async function HomePage() {
-  const user = await getCurrentUser();
-  if (user) redirect("/bugun");
-
   const [exams, qotd, laws] = await Promise.all([
     api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
       () => [] as ExamListItem[],

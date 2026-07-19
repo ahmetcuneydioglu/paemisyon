@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getCurrentUser } from "@/lib/auth/current-user";
 import { publicApi, type QuestionOfDay } from "@/lib/public-api";
 import { QuestionOfDayCard } from "@/components/question-of-day";
 
@@ -11,14 +10,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gunun-sorusu" },
 };
 
-export const dynamic = "force-dynamic";
-
-/** Günün sorusu tam sayfası (Doc 23) — paylaşılabilir günlük URL, alışkanlık kancası. */
+/**
+ * Günün sorusu tam sayfası (Doc 23) — paylaşılabilir günlük URL, alışkanlık kancası.
+ * STATİK/ISR: istek durumu okunmaz; giriş durumu kartta istemcide sezilir (CTA için).
+ */
 export default async function GununSorusuPage() {
-  const [user, qotd] = await Promise.all([
-    getCurrentUser(),
-    publicApi<QuestionOfDay>("/public/question-of-day", 600).catch(() => null),
-  ]);
+  const qotd = await publicApi<QuestionOfDay>("/public/question-of-day", 600).catch(
+    () => null,
+  );
 
   return (
     <div className="bg-(--color-navy-dark) px-4 py-12">
@@ -28,7 +27,7 @@ export default async function GununSorusuPage() {
           Her gün müfredattan 1 kaynaklı çıkmış soru. Yarın yenisi burada.
         </p>
         {qotd ? (
-          <QuestionOfDayCard question={qotd} loggedIn={!!user} />
+          <QuestionOfDayCard question={qotd} />
         ) : (
           <p className="text-white/70">
             Günün sorusu şu an yüklenemedi —{" "}

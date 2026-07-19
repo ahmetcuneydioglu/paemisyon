@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { signOut } from "@/app/(auth)/actions";
-import { getCurrentUser } from "@/lib/auth/current-user";
 import { SiteNav } from "./site-nav";
-import { ButtonLink } from "@/components/ui/button";
+import { HeaderAuthArea } from "./header-auth-area";
 import { ThemeToggle } from "./theme-toggle";
 
 const NAV = [
@@ -16,36 +14,11 @@ const NAV = [
 
 /**
  * Public üst nav (Doc 27 L1 Kapı, wireframe 01): tek katlı, sticky, token dilinde.
- * Girişli kullanıcıya tek CTA: uygulamaya (Bugün) dönüş — public sayfalar
- * vitrindir, çalışma alanı sidebar kabuğundadır.
+ * Giriş alanı istemcide çözülür (HeaderAuthArea) — böylece bu bileşen istek
+ * durumu okumaz ve tüm public sayfalar statik/ISR kalır.
  */
-export async function SiteHeader() {
-  const user = await getCurrentUser();
-
-  const authArea = user ? (
-    <div className="flex items-center gap-2">
-      <ButtonLink href="/bugun" size="sm">
-        Uygulamaya dön
-      </ButtonLink>
-      <form action={signOut}>
-        <button
-          type="submit"
-          className="tk-interactive cursor-pointer rounded-sm px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink"
-        >
-          Çıkış
-        </button>
-      </form>
-    </div>
-  ) : (
-    <div className="flex items-center gap-2">
-      <ButtonLink href="/giris" variant="ghost" size="sm">
-        Giriş
-      </ButtonLink>
-      <ButtonLink href="/kayit" size="sm">
-        Kayıt ol
-      </ButtonLink>
-    </div>
-  );
+export function SiteHeader() {
+  const authArea = <HeaderAuthArea />;
 
   return (
     <header className="tk-scope sticky top-0 z-30 border-b border-line bg-surface/95 font-body backdrop-blur">

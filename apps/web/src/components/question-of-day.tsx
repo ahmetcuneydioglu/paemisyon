@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { config } from "@/lib/config";
 import type { QuestionOfDay } from "@/lib/public-api";
 
@@ -16,10 +16,28 @@ interface RevealResult {
  * Günün Sorusu (Doc 23) — girişsiz ana sayfanın kancası: soru SAYFADA
  * çözülür, cevap seçilince sunucudan açıklama gelir, ardından kayıt CTA'sı.
  */
-export function QuestionOfDayCard({ question, loggedIn }: { question: QuestionOfDay; loggedIn: boolean }) {
+export function QuestionOfDayCard({
+  question,
+  loggedIn,
+}: {
+  question: QuestionOfDay;
+  /** Belirtilmezse (statik/ISR sayfa) giriş durumu istemcide çerezden sezilir. */
+  loggedIn?: boolean;
+}) {
   const [chosen, setChosen] = useState<string | null>(null);
   const [result, setResult] = useState<RevealResult | null>(null);
   const [busy, setBusy] = useState(false);
+  // Sayfa statikse loggedIn gelmez; Supabase oturum çerezinin varlığından sez.
+  const [detectedLogin, setDetectedLogin] = useState(false);
+  useEffect(() => {
+    if (loggedIn !== undefined) return;
+    const id = setTimeout(
+      () => setDetectedLogin(document.cookie.includes("-auth-token")),
+      0,
+    );
+    return () => clearTimeout(id);
+  }, [loggedIn]);
+  const isLoggedIn = loggedIn ?? detectedLogin;
 
   async function pick(optionId: string) {
     if (result || busy) return;
@@ -78,7 +96,7 @@ export function QuestionOfDayCard({ question, loggedIn }: { question: QuestionOf
           </p>
           {result.explanation && <p className="text-white/85">Açıklama: {result.explanation}</p>}
           {result.source && <p className="mt-1 text-xs text-white/60">Kaynak: {result.source}</p>}
-          {!loggedIn && (
+          {!isLoggedIn && (
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <Link
                 href="/kayit"
