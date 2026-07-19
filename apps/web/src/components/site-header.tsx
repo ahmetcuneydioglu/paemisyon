@@ -8,7 +8,7 @@ const NAV = [
   { href: "/paem", label: "PAEM" },
   { href: "/misyon", label: "Misyon" },
   { href: "/denemeler", label: "Denemeler" },
-  { href: "/gunun-sorusu", label: "Günün Sorusu" },
+  { href: "/gunun-sorusu", label: "Günün Quizi" },
   { href: "/premium", label: "Premium" },
 ];
 

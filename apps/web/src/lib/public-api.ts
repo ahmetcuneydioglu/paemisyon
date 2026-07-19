@@ -26,6 +26,19 @@ export interface QuestionOfDay {
   options: { id: string; label: string; text: string }[];
 }
 
+export interface DailyQuizQuestion {
+  questionId: string;
+  versionId: string;
+  stem: string;
+  topic: string;
+  options: { id: string; label: string; text: string }[];
+}
+export interface DailyQuiz {
+  date: string;
+  count: number;
+  questions: DailyQuizQuestion[];
+}
+
 export interface LawSummary {
   slug: string;
   /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */

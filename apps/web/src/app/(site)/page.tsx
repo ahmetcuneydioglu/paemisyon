@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { api } from "@/lib/api";
 import type { ExamListItem } from "@/lib/types";
-import { publicApi, type LawSummary, type QuestionOfDay } from "@/lib/public-api";
+import { publicApi, type DailyQuiz, type LawSummary } from "@/lib/public-api";
 import { Countdown } from "@/components/countdown";
-import { QuestionOfDayCard } from "@/components/question-of-day";
+import { DailyQuizCard } from "@/components/daily-quiz";
 import { formatDate, formatTime } from "@/lib/format";
 import { config } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: { absolute: "Paemisyon — Polis Sınavlarına Hazırlığın Merkezi | PAEM, Misyon" },
   description:
-    "PAEM ve Misyon Koruma sınavlarına kaynaklı çıkmış sorular, canlı denemeler, kanun kanun konu çalışması ve kişisel koçla hazırlan. Günün sorusunu şimdi çöz.",
+    "PAEM ve Misyon Koruma sınavlarına kaynaklı çıkmış sorular, canlı denemeler, kanun kanun konu çalışması ve kişisel koçla hazırlan. Günün 10 soruluk quizini şimdi çöz.",
   alternates: { canonical: "/" },
 };
 
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
  * middleware'e taşındı — fetch'lerin per-request revalidate'i CDN cache'ini sürer.
  */
 export default async function HomePage() {
-  const [exams, qotd, laws] = await Promise.all([
+  const [exams, dailyQuiz, laws] = await Promise.all([
     api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
       () => [] as ExamListItem[],
     ),
-    publicApi<QuestionOfDay>("/public/question-of-day", 600).catch(() => null),
+    publicApi<DailyQuiz>("/public/daily-quiz", 600).catch(() => null),
     publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]),
   ]);
 
@@ -40,15 +40,14 @@ export default async function HomePage() {
   const topLaws = [...laws].sort((a, b) => b.questionCount - a.questionCount).slice(0, 8);
   const totalLawQuestions = laws.reduce((s, l) => s + l.questionCount, 0);
 
-  // Quiz şeması (Doc 23 SEO omurgası) — cevap anahtarı SIZMAZ (yalnız soru).
-  const jsonLd = qotd
+  // Quiz şeması (Doc 23 SEO omurgası) — cevap anahtarı SIZMAZ (yalnız sorular).
+  const jsonLd = dailyQuiz
     ? {
         "@context": "https://schema.org",
         "@type": "Quiz",
-        name: "Günün Sorusu — polis sınavı çıkmış soru",
-        about: qotd.topic,
+        name: "Günün Quizi — 10 polis sınavı çıkmış soru",
         url: config.siteUrl,
-        hasPart: [{ "@type": "Question", name: qotd.stem }],
+        hasPart: dailyQuiz.questions.map((q) => ({ "@type": "Question", name: q.stem })),
       }
     : null;
 
@@ -86,10 +85,10 @@ export default async function HomePage() {
             Polis sınavlarına hazırlığın merkezi
           </h1>
           <p className="mb-8 mt-2 text-white/75">
-            PAEM · Misyon — kaynaklı çıkmış sorular, canlı denemeler, kişisel koç.
+            PAEM · Misyon — bugünün 10 soruluk quizini şimdi çöz, sonra koçunla devam et.
           </p>
-          {qotd ? (
-            <QuestionOfDayCard question={qotd} loggedIn={false} />
+          {dailyQuiz && dailyQuiz.count > 0 ? (
+            <DailyQuizCard quiz={dailyQuiz} loggedIn={false} />
           ) : (
             <Link
               href="/denemeler"

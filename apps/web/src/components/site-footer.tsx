@@ -5,7 +5,7 @@ const GROUPS: { title: string; links: { href: string; label: string; external?: 
     title: "Çalış",
     links: [
       { href: "/kanunlar", label: "Kanun Kütüphanesi" },
-      { href: "/gunun-sorusu", label: "Günün Sorusu" },
+      { href: "/gunun-sorusu", label: "Günün Quizi" },
       { href: "/denemeler", label: "Canlı Denemeler" },
       { href: "/hesaplayici/paem-puan", label: "Puan Hesaplayıcı" },
     ],
