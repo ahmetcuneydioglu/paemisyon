@@ -1,6 +1,12 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Header, Param, Post } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
 import { PublicService } from './public.service';
+
+// Public içerik yavaş değişir (admin-güdümlü). s-maxage aracı cache'lerin
+// (CDN/proxy) yükü emmesini sağlar; stale-while-revalidate kesintisiz tazeler.
+const CACHE_SLOW = 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400';
+// Günün sorusu gün içinde sabit — tarayıcıda da kısa süre tutulabilir.
+const CACHE_QOTD = 'public, max-age=120, s-maxage=1800, stale-while-revalidate=86400';
 
 /// GET /api/v1/public/* — auth'suz SEO/funnel uçları (Doc 23).
 /// Web'in public katmanı (ISR) bunları tüketir; kimlik gerektirmez.
@@ -9,6 +15,7 @@ export class PublicController {
   constructor(private readonly service: PublicService) {}
 
   @Get('question-of-day')
+  @Header('Cache-Control', CACHE_QOTD)
   questionOfDay() {
     return this.service.questionOfDay();
   }
@@ -21,22 +28,26 @@ export class PublicController {
   }
 
   @Get('laws')
+  @Header('Cache-Control', CACHE_SLOW)
   laws() {
     return this.service.laws();
   }
 
   @Get('laws/:slug')
+  @Header('Cache-Control', CACHE_SLOW)
   law(@Param('slug') slug: string) {
     return this.service.lawBySlug(slug);
   }
 
   /** Madde detayı (Doc 25 §4). :no madde slug'ıdır: "16", "4-a", "ek-6". */
   @Get('laws/:slug/articles/:no')
+  @Header('Cache-Control', CACHE_SLOW)
   article(@Param('slug') slug: string, @Param('no') no: string) {
     return this.service.articleDetail(slug, no);
   }
 
   @Get('exam-types/:key')
+  @Header('Cache-Control', CACHE_SLOW)
   examTypeGuide(@Param('key') key: string) {
     return this.service.examTypeGuide(key);
   }

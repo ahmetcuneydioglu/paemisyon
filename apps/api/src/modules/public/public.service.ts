@@ -35,7 +35,12 @@ export class PublicService {
 
   // ── Günün Sorusu ──────────────────────────────────────────────
   // Tarih tohumlu deterministik: herkes aynı soruyu görür (paylaşılabilir).
+  // Sonuç gün boyunca sabit olduğundan tüm-banka taramasını günde bir kez öder
+  // (Railway kalıcı süreç → in-memory memo istekler arası yaşar).
+  private qotdCache: { key: string; id: string } | null = null;
   private async questionOfDayId(): Promise<string> {
+    const dateKey = new Date().toISOString().slice(0, 10) + ':qotd';
+    if (this.qotdCache?.key === dateKey) return this.qotdCache.id;
     const pool = await this.prisma.question.findMany({
       where: {
         deletedAt: null,
@@ -50,10 +55,11 @@ export class PublicService {
       orderBy: { id: 'asc' },
     });
     if (pool.length === 0) throw new NotFoundException('Yayında soru yok.');
-    const dateKey = new Date().toISOString().slice(0, 10) + ':qotd';
     let h = 0;
     for (const c of dateKey) h = (h * 31 + c.charCodeAt(0)) | 0;
-    return pool[Math.abs(h) % pool.length].id;
+    const id = pool[Math.abs(h) % pool.length].id;
+    this.qotdCache = { key: dateKey, id };
+    return id;
   }
 
   async questionOfDay() {
@@ -107,11 +113,12 @@ export class PublicService {
   }
 
   // ── Kanun kütüphanesi (SEO) ───────────────────────────────────
-  private async lawTopics() {
+  // Konu satırları (sayımsız). Konu tablosu küçük; asıl maliyet soru sayımıydı
+  // — o yüzden ÖNCE kanun konularına daralt, sayımı ayrı tek groupBy'da yap.
+  private async lawTopicRows() {
     const topics = await this.prisma.topic.findMany({
       where: {
         deletedAt: null,
-        name: { mode: 'insensitive', contains: '' }, // tüm konular; desen aşağıda
         course: {
           deletedAt: null,
           sections: { some: { section: { deletedAt: null } } },
@@ -138,15 +145,31 @@ export class PublicService {
             },
           },
         },
-        _count: {
-          select: {
-            questions: { where: { deletedAt: null, currentVersionId: { not: null } } },
-          },
-        },
       },
       orderBy: [{ sortOrder: 'asc' }],
     });
     return topics.filter((t) => LAW_NAME_RE.test(t.name));
+  }
+
+  /**
+   * Kanun konuları + soru sayıları. Eskiden her konu için korele bir _count
+   * (N alt-sorgu, tüm banka) çalışıyordu; artık yalnız kanun konularının
+   * id'leriyle TEK groupBy — sayım tüm-tablo yerine daraltılmış aralık taraması.
+   */
+  private async lawTopics() {
+    const topics = await this.lawTopicRows();
+    if (topics.length === 0) return [];
+    const counts = await this.prisma.question.groupBy({
+      by: ['topicId'],
+      where: {
+        topicId: { in: topics.map((t) => t.id) },
+        deletedAt: null,
+        currentVersionId: { not: null },
+      },
+      _count: { _all: true },
+    });
+    const countByTopic = new Map(counts.map((c) => [c.topicId, c._count._all]));
+    return topics.map((t) => ({ ...t, questionCount: countByTopic.get(t.id) ?? 0 }));
   }
 
   async laws() {
@@ -158,7 +181,7 @@ export class PublicService {
       courseId: t.course.id,
       name: t.name,
       courseName: t.course.name,
-      questionCount: t._count.questions,
+      questionCount: t.questionCount,
       exams: this.examContexts(t.course.sections),
     }));
   }
@@ -205,7 +228,7 @@ export class PublicService {
     const related = topics
       .filter((t) => t.course.name === topic.course.name && t.id !== topic.id)
       .slice(0, 6)
-      .map((t) => ({ slug: slugify(t.name), name: t.name, questionCount: t._count.questions }));
+      .map((t) => ({ slug: slugify(t.name), name: t.name, questionCount: t.questionCount }));
 
     return {
       slug,
@@ -213,7 +236,7 @@ export class PublicService {
       courseId: topic.course.id,
       name: topic.name,
       courseName: topic.course.name,
-      questionCount: topic._count.questions,
+      questionCount: topic.questionCount,
       exams: this.examContexts(topic.course.sections),
       sampleQuestion: sample?.currentVersion
         ? {
@@ -234,7 +257,7 @@ export class PublicService {
    * Resmî madde metni V2 (kanun metni içerik hattı ayrı iş).
    */
   async articleDetail(lawSlug: string, articleSlug_: string) {
-    const topics = await this.lawTopics();
+    const topics = await this.lawTopicRows(); // sayım gerekmez → ucuz yol
     const topic = topics.find((t) => slugify(t.name) === lawSlug);
     if (!topic) throw new NotFoundException('Kanun sayfası bulunamadı.');
 
