@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useActionState, useState } from "react";
 import { resendConfirmation, signIn, signUp, type AuthState } from "./actions";
 import { Button } from "@/components/ui/button";
+import { AuthDivider } from "@/components/auth/auth-divider";
+import { SocialLoginButtons } from "@/components/auth/social-login-buttons";
 
 /** Giriş/Kayıt formu — eski popup'ın sayfa hali; ikonlu alanlar, eski buton dili. */
 export function AuthForm({
@@ -90,10 +92,8 @@ export function AuthForm({
             : "PAEM ve Misyon hazırlığın aynı hesapta, her cihazda."}
         </p>
       </div>
-      <form
-        action={action}
-        className="space-y-4 rounded-lg border border-line bg-surface p-6 shadow-sm"
-      >
+      <div className="space-y-5 rounded-lg border border-line bg-surface p-6 shadow-sm">
+      <form action={action} className="space-y-4">
         <input type="hidden" name="next" value={next} />
         {!isLogin && (
           <Field name="name" type="text" label="Ad soyad" autoComplete="name" />
@@ -150,6 +150,11 @@ export function AuthForm({
         <Button type="submit" disabled={pending} size="lg" className="w-full">
           {pending ? "Bekleyin…" : isLogin ? "Giriş Yap" : "Kayıt Ol"}
         </Button>
+      </form>
+
+        <AuthDivider />
+        <SocialLoginButtons next={next} />
+
         <p className="text-center text-[13px] text-ink-soft">
           {isLogin ? (
             <>
@@ -186,7 +191,7 @@ export function AuthForm({
             ’nı kabul edersin.
           </p>
         )}
-      </form>
+      </div>
     </div>
   );
 }

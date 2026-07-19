@@ -3,12 +3,28 @@ import { NextRequest, NextResponse } from "next/server";
 import { safeNext } from "@/lib/auth";
 import { supabaseServer } from "@/lib/supabase/server";
 
-/** Supabase PKCE kodunu veya SSR token_hash'ini cookie oturumuna çevirir. */
+/**
+ * Supabase PKCE kodunu (e-posta onayı VE Google/Apple OAuth) veya SSR
+ * token_hash'ini cookie oturumuna çevirir. Tüm sağlayıcılar aynı callback'i
+ * kullanır — akış tek merkezde.
+ */
 export async function GET(request: NextRequest) {
-  const code = request.nextUrl.searchParams.get("code");
-  const tokenHash = request.nextUrl.searchParams.get("token_hash");
-  const type = request.nextUrl.searchParams.get("type") as EmailOtpType | null;
-  const next = safeNext(request.nextUrl.searchParams.get("next"));
+  const params = request.nextUrl.searchParams;
+  const code = params.get("code");
+  const tokenHash = params.get("token_hash");
+  const type = params.get("type") as EmailOtpType | null;
+  const next = safeNext(params.get("next"));
+
+  // Sağlayıcı hatayla döndüyse (kullanıcı iptal etti / yetki reddi): iptalde
+  // sessizce giriş sayfasına, gerçek hatada hata sayfasına. Ham mesaj sızmaz.
+  const providerError = params.get("error");
+  if (providerError) {
+    const cancelled = /access_denied|cancel/i.test(providerError);
+    return NextResponse.redirect(
+      new URL(cancelled ? "/giris" : "/auth-hatasi", request.url),
+    );
+  }
+
   const supabase = await supabaseServer();
 
   let error: unknown = null;
