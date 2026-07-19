@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 /**
  * Ortak 2 sütunlu soru düzeni — eski #exam ekranı (Doc 18 §4.1).
  * Hem sınav çözme (exam-runner) hem sonuç incelemesi (review-list) BİREBİR
- * aynı yerleşimi kullanır: examShadow panel + orta dikey ayraç, soldan sağa
+ * aynı yerleşimi kullanır: .exam-panel (CSS kağıt gölgesi) + orta dikey ayraç, soldan sağa
  * yarı yarıya bölünmüş sorular. Şık/altbilgi render'ı çağırana bırakılır.
  */
 export function QuestionColumns<
