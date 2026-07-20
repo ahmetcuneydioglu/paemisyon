@@ -290,15 +290,23 @@ export class AdminQuestionsService {
   // ── Toplu onay (Doc 9 §4.1 "toplu işlem"): bir konudaki TÜM in_review sorular ──
   // YALNIZCA admin çağırır (controller'da). Yayın kontrolü tek tek uygulanır:
   // tam bir doğru şıkkı olmayan soru atlanır ve raporlanır — sessiz geçiş yok.
-  async bulkApprove(actor: AuthenticatedUser, topicId: string) {
-    const topic = await this.prisma.topic.findFirst({
-      where: { id: topicId, deletedAt: null },
-      select: { name: true },
-    });
-    if (!topic) throw new NotFoundException('Konu bulunamadı.');
+  async bulkApprove(actor: AuthenticatedUser, topicId?: string) {
+    // topicId verilmezse TÜM onay kuyruğu (tüm konular) onaylanır.
+    let topicName = 'Tüm kuyruk';
+    if (topicId) {
+      const topic = await this.prisma.topic.findFirst({
+        where: { id: topicId, deletedAt: null },
+        select: { name: true },
+      });
+      if (!topic) throw new NotFoundException('Konu bulunamadı.');
+      topicName = topic.name;
+    }
 
     const versions = await this.prisma.questionVersion.findMany({
-      where: { status: 'in_review', question: { topicId, deletedAt: null } },
+      where: {
+        status: 'in_review',
+        question: { deletedAt: null, ...(topicId ? { topicId } : {}) },
+      },
       include: { options: { select: { isCorrect: true } } },
       orderBy: { createdAt: 'asc' },
     });
@@ -334,12 +342,12 @@ export class AdminQuestionsService {
       );
     }
 
-    await this.audit.log(actor, 'question.bulk_approve', 'topic', topicId, {
-      topicName: topic.name,
+    await this.audit.log(actor, 'question.bulk_approve', 'topic', topicId ?? 'all', {
+      topicName,
       approved,
       skipped: skipped.length,
     });
-    return { topicId, topicName: topic.name, approved, skipped };
+    return { topicId: topicId ?? null, topicName, approved, skipped };
   }
 
   // ── Toplu içe aktarma (Doc 9 §4.4) ──

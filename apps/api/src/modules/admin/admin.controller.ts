@@ -323,7 +323,8 @@ export class AdminController {
   @Roles('admin')
   bulkApprove(
     @CurrentUser() actor: AuthenticatedUser,
-    @Body('topicId', ParseUUIDPipe) topicId: string,
+    // topicId opsiyonel: verilirse o konu, verilmezse TÜM kuyruk onaylanır.
+    @Body('topicId', new ParseUUIDPipe({ optional: true })) topicId?: string,
   ) {
     return this.questions.bulkApprove(actor, topicId);
   }

@@ -64,6 +64,26 @@ export default function ReviewQueuePage() {
     },
   });
 
+  // Tüm kuyruk (tüm konular) tek tıkla — topicId'siz bulk-approve.
+  const bulkAll = useMutation({
+    mutationFn: () =>
+      api<BulkApproveResult>('/admin/questions/bulk-approve', {
+        method: 'POST',
+        body: {},
+      }),
+    onSuccess: (r) => {
+      qc.invalidateQueries({ queryKey: ['review-summary'] });
+      qc.invalidateQueries({ queryKey: ['review-queue'] });
+      qc.invalidateQueries({ queryKey: ['questions'] });
+      qc.invalidateQueries({ queryKey: ['dashboard'] });
+      setNotice(
+        `✅ Tüm kuyruk: ${r.approved} soru yayınlandı${
+          r.skipped.length > 0 ? `, ${r.skipped.length} soru atlandı (doğru şık eksik)` : ''
+        }.`,
+      );
+    },
+  });
+
   function confirmBulk(t: ReviewTopicSummary) {
     const ok = window.confirm(
       `"${t.courseName} / ${t.topicName}" konusundaki ${t.count} sorunun TAMAMI yayına alınacak.\n\n` +
@@ -72,11 +92,31 @@ export default function ReviewQueuePage() {
     if (ok) bulk.mutate(t.topicId);
   }
 
+  const totalCount = summary.data?.reduce((sum, t) => sum + t.count, 0) ?? 0;
+  function confirmBulkAll() {
+    const ok = window.confirm(
+      `Onay kuyruğundaki TÜM ${totalCount} soru (tüm konular) yayına alınacak.\n\n` +
+        'Bu işlem soruları uygulamada anında görünür yapar. Devam edilsin mi?',
+    );
+    if (ok) bulkAll.mutate();
+  }
+
   return (
     <>
       <PageHeader
         title="Onay Kuyruğu"
         subtitle="İncelemede bekleyen sorular — onaylanmadan yayına çıkmaz"
+        action={
+          isAdmin && totalCount > 0 ? (
+            <button
+              onClick={confirmBulkAll}
+              disabled={bulkAll.isPending || bulk.isPending}
+              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
+            >
+              {bulkAll.isPending ? 'Yayınlanıyor…' : `Tümünü Onayla (${totalCount})`}
+            </button>
+          ) : undefined
+        }
       />
 
       {notice && (
@@ -84,9 +124,9 @@ export default function ReviewQueuePage() {
           {notice}
         </div>
       )}
-      {bulk.isError && (
+      {(bulk.isError || bulkAll.isError) && (
         <div className="mb-4">
-          <ErrorBox error={bulk.error} />
+          <ErrorBox error={bulk.error ?? bulkAll.error} />
         </div>
       )}
 
@@ -118,7 +158,7 @@ export default function ReviewQueuePage() {
                 {isAdmin && (
                   <button
                     onClick={() => confirmBulk(t)}
-                    disabled={bulk.isPending}
+                    disabled={bulk.isPending || bulkAll.isPending}
                     className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-emerald-700 disabled:opacity-50"
                   >
                     {bulk.isPending && bulk.variables === t.topicId
