@@ -450,6 +450,9 @@ const KEY_TITLE = 'CEVAP ANAHTARI';
 const QNUM_RE = /^(\d{1,3})\.\s+/;
 const QUESTION_NUMBER_LINE_RE = /^(\d{1,3})\.(?:\s+(.*))?$/;
 const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
+// İptal edilmiş soru anahtarı (gerçek kitapçık): "71. B - İPTAL" / "75. A - İPTAL"
+// / "71. İPTAL". Harf opsiyonel; sonra iptal ibaresi gelir.
+const KEY_CANCELLED_RE = /^(\d{1,3})\.\s*[A-E]?\s*[-–—]?\s*(?:İPTAL|IPTAL|iptal|İptal)\b/u;
 const CODE_QNUM_RE = /^\((\d{3,12})\)\s*$/;
 const CODE_KEY_LINE_RE = /^\((\d{3,12})\)\s*([A-E])\s*$/;
 
@@ -545,9 +548,11 @@ export function parseBookletQuestionNumberLine(
 
 export function parseBookletAnswerKeyLine(
   line: string,
-): { id: string; answer: string } | null {
+): { id: string; answer: string | null; cancelled: boolean } | null {
+  const cancelled = KEY_CANCELLED_RE.exec(line);
+  if (cancelled) return { id: cancelled[1], answer: null, cancelled: true };
   const match = KEY_LINE_RE.exec(line) ?? CODE_KEY_LINE_RE.exec(line);
-  return match ? { id: match[1], answer: match[2] } : null;
+  return match ? { id: match[1], answer: match[2], cancelled: false } : null;
 }
 
 export function parseBookletQuestionCode(line: string): string | null {
@@ -690,6 +695,9 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
 
   const questionLines: string[] = [];
   const answerKey = new Map<string, string>();
+  // İptal edilmiş soru numaraları (cevap anahtarında "İPTAL"). Bloğu başlatmaya
+  // SAYILIR (expectedNo ilerlesin), ama bankaya yazılmaz — "elendi" raporlanır.
+  const cancelledIds = new Set<string>();
   const sourceLines: string[] = [];
   let inKey = false;
 
@@ -716,7 +724,8 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
         const keyEntry = parseBookletAnswerKeyLine(line);
         if (keyEntry) {
           inKey = true;
-          answerKey.set(keyEntry.id, keyEntry.answer);
+          if (keyEntry.cancelled) cancelledIds.add(keyEntry.id);
+          else answerKey.set(keyEntry.id, keyEntry.answer!);
         } else if (!inKey) {
           // Anahtar sayfasının başlık satırları → kaynak etiketi adayı
           // (örn. "30 KASIM 2025 TARİHİNDE YAPILAN ... SINAVI").
@@ -742,7 +751,7 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   let expectedNo = 1;
   for (const line of questionLines) {
     const questionCode = parseBookletQuestionCode(line);
-    if (questionCode && answerKey.has(questionCode)) {
+    if (questionCode && (answerKey.has(questionCode) || cancelledIds.has(questionCode))) {
       if (current) questions.push(current);
       current = {
         no: expectedNo,
@@ -758,7 +767,7 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     if (
       numberedQuestion
       && Number(numberedQuestion.id) === expectedNo
-      && answerKey.has(numberedQuestion.id)
+      && (answerKey.has(numberedQuestion.id) || cancelledIds.has(numberedQuestion.id))
     ) {
       if (current) questions.push(current);
       current = {
@@ -794,6 +803,13 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   }))));
   const autoExcluded: RowError[] = [];
   for (const q of questions) {
+    if (cancelledIds.has(q.answerKeyId)) {
+      autoExcluded.push({
+        rowNo: q.no,
+        message: `Soru ${q.no}: sınavda İPTAL edildi — bankaya alınmadı.`,
+      });
+      continue;
+    }
     if (mathRows.has(q.no)) {
       autoExcluded.push({
         rowNo: q.no,
@@ -830,6 +846,24 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       options: opts.map((o) => ({ ...o, isCorrect: o.label === correct })),
     });
   }
+
+  // Sessiz kayıp önleme (banka güveni): cevap anahtarında olup metin bloğu
+  // çıkmayan (klasik numaralı) sorular HATA olarak raporlanır — izsiz kaybolmaz.
+  const accounted = new Set<number>([
+    ...valid.map((v) => v.rowNo),
+    ...errors.map((e) => e.rowNo),
+    ...autoExcluded.map((a) => a.rowNo),
+  ]);
+  for (const id of answerKey.keys()) {
+    const no = Number(id);
+    if (Number.isInteger(no) && no > 0 && no <= 500 && !accounted.has(no)) {
+      errors.push({
+        rowNo: no,
+        message: `Soru ${no}: kitapçıktan ayrıştırılamadı (cevap anahtarında var, metin bloğu bulunamadı) — elle ekle.`,
+      });
+    }
+  }
+  errors.sort((a, b) => a.rowNo - b.rowNo);
 
   // Kaynak önerisi: "... TARİHİNDE YAPILAN <kurum> <sınav>" satırları.
   const detectedSource =

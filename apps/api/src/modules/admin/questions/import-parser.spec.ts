@@ -186,8 +186,30 @@ describe('kurum soru kodlu e-sınav işaretleri', () => {
   });
 
   it('klasik ve kurum kodlu cevap anahtarı satırlarını birlikte destekler', () => {
-    expect(parseBookletAnswerKeyLine('1. C')).toEqual({ id: '1', answer: 'C' });
-    expect(parseBookletAnswerKeyLine('(130383) A')).toEqual({ id: '130383', answer: 'A' });
+    expect(parseBookletAnswerKeyLine('1. C')).toEqual({ id: '1', answer: 'C', cancelled: false });
+    expect(parseBookletAnswerKeyLine('(130383) A')).toEqual({
+      id: '130383',
+      answer: 'A',
+      cancelled: false,
+    });
+  });
+
+  it('iptal edilmiş soru anahtarını (İPTAL) tanır — soru düşmesin', () => {
+    expect(parseBookletAnswerKeyLine('71. B - İPTAL')).toEqual({
+      id: '71',
+      answer: null,
+      cancelled: true,
+    });
+    expect(parseBookletAnswerKeyLine('75. A - İPTAL')).toEqual({
+      id: '75',
+      answer: null,
+      cancelled: true,
+    });
+    expect(parseBookletAnswerKeyLine('12. İPTAL')).toEqual({
+      id: '12',
+      answer: null,
+      cancelled: true,
+    });
   });
 });
 

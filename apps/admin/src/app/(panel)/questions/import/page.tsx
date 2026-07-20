@@ -303,7 +303,7 @@ export default function ImportPage() {
             )}
             {autoExcluded.length > 0 && (
               <span className="rounded-full bg-sky-100 px-3 py-1 font-medium text-sky-800">
-                ∑ {autoExcluded.length} matematik otomatik elendi
+                ∑ {autoExcluded.length} otomatik elendi (matematik/iptal)
               </span>
             )}
             {preview.errors.length > 0 && (
@@ -334,8 +334,13 @@ export default function ImportPage() {
           {autoExcluded.length > 0 && (
             <Card className="border-sky-200 bg-sky-50">
               <p className="text-sm font-medium text-sky-900">
-                Matematik kapsam dışı: {formatRowRanges(autoExcluded.map((row) => row.rowNo))}
+                Otomatik elenen sorular (matematik / iptal):
               </p>
+              <ul className="mt-1 space-y-0.5 text-xs text-sky-800">
+                {autoExcluded.map((row) => (
+                  <li key={row.rowNo}>{row.message}</li>
+                ))}
+              </ul>
               <p className="mt-1 text-xs text-sky-700">
                 Bu sorular hata veya bekleyen olarak sayılmaz ve veritabanına hiç yazılmaz.
               </p>
@@ -421,21 +426,6 @@ export default function ImportPage() {
       )}
     </>
   );
-}
-
-function formatRowRanges(rowNos: number[]): string {
-  const sorted = [...new Set(rowNos)].sort((a, b) => a - b);
-  const ranges: string[] = [];
-  for (let index = 0; index < sorted.length;) {
-    const start = sorted[index];
-    let end = start;
-    while (index + 1 < sorted.length && sorted[index + 1] === end + 1) {
-      end = sorted[++index];
-    }
-    ranges.push(start === end ? `#${start}` : `#${start}–${end}`);
-    index++;
-  }
-  return ranges.join(', ');
 }
 
 /** Ardışık soru aralığını tek konuya atar VEYA çıkarır (kitapçıklarda konular bloklu). */
