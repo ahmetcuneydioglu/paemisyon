@@ -9,6 +9,12 @@ import { ExplanationBox } from "@/components/ui/explanation-box";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
 
+/** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
+function fmtVerifiedDate(iso: string): string {
+  const d = iso.slice(0, 10).split("-");
+  return d.length === 3 ? `${d[2]}.${d[1]}.${d[0]}` : iso;
+}
+
 // ── API sözleşmeleri (quiz.service ile birebir) ──
 interface SessionQuestion {
   questionId: string;
@@ -28,8 +34,20 @@ interface AnswerFeedback {
   correctOptionId: string | null;
   explanation: string | null;
   legalReference: string | null;
-  /** Yapısal madde bağı — "M ile aç" inspector'ı + link için (Doc 27 §3.6). */
-  relatedArticle: { lawSlug: string; no: string; slug: string } | null;
+  /** Yapısal madde bağı — "M ile aç" inspector'ı + link için (Doc 27 §3.6).
+   *  text: yayınlanmış resmî madde metni (Doc 25 §4); girilmemişse null. */
+  relatedArticle: {
+    lawSlug: string;
+    no: string;
+    slug: string;
+    text: {
+      body: string;
+      source: string;
+      sourceUrl: string | null;
+      effectiveInfo: string | null;
+      verifiedAt: string | null;
+    } | null;
+  } | null;
   source: string | null;
 }
 interface CompleteResponse {
@@ -488,6 +506,39 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                     : null
                 }
               />
+              {/* İlgili maddenin resmî metni (Doc 25 §4) — açıklamanın hemen altında,
+                  yayınlanmışsa otomatik; birebir metin + kaynak künyesi. */}
+              {fb.relatedArticle?.text && (
+                <Card className="border-atlas/40">
+                  <CardTitle className="text-[13px] text-atlas">
+                    İlgili madde · {fb.relatedArticle.no}
+                  </CardTitle>
+                  <div className="mt-2 whitespace-pre-line text-[14px] leading-relaxed text-ink">
+                    {fb.relatedArticle.text.body}
+                  </div>
+                  <p className="tk-caption mt-2">
+                    Kaynak:{" "}
+                    {fb.relatedArticle.text.sourceUrl ? (
+                      <a
+                        href={fb.relatedArticle.text.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-ink"
+                      >
+                        {fb.relatedArticle.text.source}
+                      </a>
+                    ) : (
+                      fb.relatedArticle.text.source
+                    )}
+                    {fb.relatedArticle.text.effectiveInfo ? (
+                      <> · {fb.relatedArticle.text.effectiveInfo}</>
+                    ) : null}
+                    {fb.relatedArticle.text.verifiedAt ? (
+                      <> · {fmtVerifiedDate(fb.relatedArticle.text.verifiedAt)} itibarıyla</>
+                    ) : null}
+                  </p>
+                </Card>
+              )}
               {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir (wireframe 08) */}
               <div className="flex flex-wrap items-center justify-end gap-2">
                 <button

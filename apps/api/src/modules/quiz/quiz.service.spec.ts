@@ -31,12 +31,19 @@ function setup(selectedOptionExists = true) {
         explanation: 'Açıklama',
         sourceLabel: 'Kaynak',
         legalReferences: [{ citation: 'm. 1' }],
-        question: { articleNo: '1', topic: { name: 'Örnek Kanun' } },
+        question: {
+          articleNo: '1',
+          topic: { id: '00000000-0000-0000-0000-0000000000aa', name: 'Örnek Kanun' },
+        },
         options: [
           { id: correctId, isCorrect: true },
           ...(selectedOptionExists ? [{ id: selectedId, isCorrect: false }] : []),
         ],
       }),
+    },
+    // İlgili madde metni (Doc 25 §4) — varsayılan: yayınlanmış metin yok.
+    lawArticle: {
+      findFirst: jest.fn().mockResolvedValue(null),
     },
   };
   const settings = { getBool: jest.fn().mockResolvedValue(true) };
@@ -69,6 +76,51 @@ describe('QuizService.submitAnswer', () => {
         source: 'Kaynak',
       }),
     );
+  });
+
+  it('yayınlanmış madde metnini relatedArticle.text ile döndürür (açıklama yanında)', async () => {
+    const { service, prisma, selectedId } = setup();
+    prisma.lawArticle.findFirst.mockResolvedValue({
+      text: 'Madde 1 – resmî metin.',
+      sourceName: 'mevzuat.gov.tr',
+      sourceUrl: 'https://www.mevzuat.gov.tr/x',
+      effectiveInfo: '5/7/2022 işlenmiş',
+      lastVerifiedAt: new Date('2026-07-21T00:00:00Z'),
+    });
+
+    const result = (await service.submitAnswer(
+      premiumUser,
+      '00000000-0000-0000-0000-000000000006',
+      {
+        questionId: '00000000-0000-0000-0000-000000000002',
+        questionVersionId: '00000000-0000-0000-0000-000000000003',
+        selectedOptionId: selectedId,
+      },
+    )) as { relatedArticle: { text: { body: string; source: string } | null } };
+
+    // Yalnız YAYINLANMIŞ metin sorgulanır.
+    expect(prisma.lawArticle.findFirst).toHaveBeenCalledWith(
+      expect.objectContaining({
+        where: expect.objectContaining({ status: 'published', articleNo: '1' }),
+      }),
+    );
+    expect(result.relatedArticle.text?.body).toBe('Madde 1 – resmî metin.');
+    expect(result.relatedArticle.text?.source).toBe('mevzuat.gov.tr');
+  });
+
+  it('metin yoksa relatedArticle.text null olur (künye yine döner)', async () => {
+    const { service, selectedId } = setup(); // lawArticle.findFirst → null
+    const result = (await service.submitAnswer(
+      premiumUser,
+      '00000000-0000-0000-0000-000000000006',
+      {
+        questionId: '00000000-0000-0000-0000-000000000002',
+        questionVersionId: '00000000-0000-0000-0000-000000000003',
+        selectedOptionId: selectedId,
+      },
+    )) as { relatedArticle: { no: string; text: unknown } };
+    expect(result.relatedArticle.no).toBe('1');
+    expect(result.relatedArticle.text).toBeNull();
   });
 
   it('başka bir soruya ait şıkkı kaydetmez', async () => {
