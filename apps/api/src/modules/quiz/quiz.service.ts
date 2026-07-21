@@ -375,7 +375,7 @@ export class QuizService {
           sourceLabel: true,
           legalReferences: { select: { citation: true }, take: 1 },
           question: {
-            select: { articleNo: true, topic: { select: { name: true } } },
+            select: { articleNo: true, topic: { select: { id: true, name: true } } },
           },
           options: {
             where: {
@@ -456,12 +456,50 @@ export class QuizService {
 
     // practice: ilk okuma grubunda hazırlanan anlık geri bildirim + açıklama.
     const question = version.question;
-    let relatedArticle: { lawSlug: string; no: string; slug: string } | null = null;
+    let relatedArticle: {
+      lawSlug: string;
+      no: string;
+      slug: string;
+      /** Yayınlanmış resmî madde metni (Doc 25 §4) — çözdükten sonra açıklama
+       *  yanında gösterilir. Metin yoksa (girilmemiş/taslak) null. */
+      text: {
+        body: string;
+        source: string;
+        sourceUrl: string | null;
+        effectiveInfo: string | null;
+        verifiedAt: string | null;
+      } | null;
+    } | null = null;
     if (question?.articleNo && question.topic && LAW_NAME_RE.test(question.topic.name)) {
+      // Yalnız YAYINLANMIŞ metin sızar (admin doğrulamış); taslak gelmez.
+      const law = await this.prisma.lawArticle.findFirst({
+        where: {
+          topicId: question.topic.id,
+          articleNo: question.articleNo,
+          status: 'published',
+          deletedAt: null,
+        },
+        select: {
+          text: true,
+          sourceName: true,
+          sourceUrl: true,
+          effectiveInfo: true,
+          lastVerifiedAt: true,
+        },
+      });
       relatedArticle = {
         lawSlug: slugify(question.topic.name),
         no: question.articleNo,
         slug: articleSlug(question.articleNo),
+        text: law
+          ? {
+              body: law.text,
+              source: law.sourceName,
+              sourceUrl: law.sourceUrl,
+              effectiveInfo: law.effectiveInfo,
+              verifiedAt: law.lastVerifiedAt?.toISOString() ?? null,
+            }
+          : null,
       };
     }
 
