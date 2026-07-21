@@ -1,4 +1,28 @@
-import { parseLawText } from './law-text-parser';
+import { parseLawText, canonicalArticleNo } from './law-text-parser';
+
+describe('canonicalArticleNo', () => {
+  it('elle girilen çeşitli biçimleri kanonikleştirir', () => {
+    expect(canonicalArticleNo('78')).toBe('78');
+    expect(canonicalArticleNo('  16 ')).toBe('16');
+    expect(canonicalArticleNo('4/a')).toBe('4/A');
+    expect(canonicalArticleNo('16/2')).toBe('16'); // fıkra düşer
+    expect(canonicalArticleNo('madde 84')).toBe('84');
+    expect(canonicalArticleNo('ek 6')).toBe('Ek 6');
+    expect(canonicalArticleNo('EK MADDE 6')).toBe('Ek 6');
+    expect(canonicalArticleNo('geçici 2')).toBe('Geçici 2');
+    expect(canonicalArticleNo('Geçici Madde 2')).toBe('Geçici 2');
+  });
+  it('kanonik girdi idempotenttir', () => {
+    expect(canonicalArticleNo('Ek 6')).toBe('Ek 6');
+    expect(canonicalArticleNo('Geçici 2')).toBe('Geçici 2');
+    expect(canonicalArticleNo('4/A')).toBe('4/A');
+  });
+  it('geçersiz girdi null döner', () => {
+    expect(canonicalArticleNo('')).toBeNull();
+    expect(canonicalArticleNo('   ')).toBeNull();
+    expect(canonicalArticleNo('abc')).toBeNull();
+  });
+});
 
 describe('parseLawText', () => {
   it('temel: maddeleri böler, başlık etiketini gövdeden düşer', () => {

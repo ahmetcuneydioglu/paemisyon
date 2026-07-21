@@ -3,6 +3,10 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
+import { canonicalArticleNo } from './law-text-parser';
+
+/** Kanun sayfası sayılacak konu adı deseni (public tarafla aynı — Doc 23). */
+const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
 
 /**
  * Resmî madde metni yönetimi (Doc 25 §4 adım 3). Kanun = Topic; madde =
@@ -69,6 +73,28 @@ export class AdminLawArticlesService {
     );
   }
 
+  /**
+   * TÜM kanun-benzeri konular (soru etiketi şartı YOK) — panelde "madde no ile
+   * ekle" için herhangi bir kanunu seçebilmek. İsimle aranır; kanun deseni
+   * (LAW_NAME_RE) süzer. Kapsama sayısı yok (worklist ayrı) — sade seçici.
+   */
+  async allLaws(search?: string) {
+    const q = search?.trim();
+    const topics = await this.prisma.topic.findMany({
+      where: {
+        deletedAt: null,
+        ...(q ? { name: { contains: q, mode: 'insensitive' } } : {}),
+      },
+      select: { id: true, name: true, course: { select: { name: true } } },
+      orderBy: { name: 'asc' },
+      take: 200,
+    });
+    return topics
+      .filter((t) => LAW_NAME_RE.test(t.name))
+      .slice(0, 50)
+      .map((t) => ({ topicId: t.id, name: t.name, courseName: t.course.name }));
+  }
+
   /** Bir kanunun maddeleri: etiketli sorular ∪ girilmiş metinler (birleşik). */
   async articles(topicId: string) {
     const topic = await this.prisma.topic.findUnique({
@@ -133,10 +159,15 @@ export class AdminLawArticlesService {
     });
     if (!topic || topic.deletedAt) throw new NotFoundException('Kanun bulunamadı.');
 
-    const articleNo = dto.articleNo.trim();
+    // Elle girilen madde no kanonikleşir ("ek 6"→"Ek 6") → Question.articleNo
+    // ile hizalı; böylece Atlas'ta soru grubu ve seans metni eşleşir.
+    const articleNo = canonicalArticleNo(dto.articleNo);
     const text = dto.text.trim();
-    if (!articleNo || !text) {
-      throw new BadRequestException('Madde numarası ve metin gerekli.');
+    if (!articleNo) {
+      throw new BadRequestException('Geçersiz madde numarası (ör. 78, 4/A, Ek 6, Geçici 2).');
+    }
+    if (!text) {
+      throw new BadRequestException('Madde metni gerekli.');
     }
     const sourceName = dto.sourceName?.trim() || undefined; // boşsa şema varsayılanı
     const sourceUrl = dto.sourceUrl?.trim() || null;
@@ -163,7 +194,7 @@ export class AdminLawArticlesService {
         lastVerifiedAt: null,
         deletedAt: null,
       },
-      select: { id: true, status: true },
+      select: { id: true, status: true, articleNo: true },
     });
     await this.audit.log(actor, 'law_article.upsert', 'law_article', row.id, {
       topicId: dto.topicId,

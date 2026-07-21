@@ -57,6 +57,28 @@ function matchHeading(line: string): HeadingMatch | null {
   return { kind, rawNo: m[2], rest };
 }
 
+/**
+ * Kullanıcının elle girdiği madde numarasını kanonik biçime çevirir
+ * ("78"→"78", "4/a"→"4/A", "ek 6"/"ek madde 6"→"Ek 6", "geçici 2"→"Geçici 2").
+ * Question.articleNo ile aynı biçim — panelden elle madde eklerken kullanılır.
+ * Geçersizse (rakamla başlamıyorsa) null. İdempotent: kanonik girdi aynen döner.
+ */
+export function canonicalArticleNo(raw: string): string | null {
+  const s = raw.trim().toLocaleLowerCase('tr-TR');
+  if (!s) return null;
+  let kind: Kind = 'madde';
+  let rest = s;
+  const ekGecici = s.match(/^(ek|geçici)\s+(?:madde\s+)?(.+)$/);
+  if (ekGecici) {
+    kind = ekGecici[1] === 'ek' ? 'ek' : 'gecici';
+    rest = ekGecici[2].trim();
+  } else {
+    const madde = s.match(/^madde\s+(.+)$/);
+    if (madde) rest = madde[1].trim();
+  }
+  return canonical(kind, rest);
+}
+
 /** Ham numarayı kanonik biçime çevirir (normalizeArticle ile hizalı). */
 function canonical(kind: Kind, rawNo: string): string | null {
   let v = rawNo.trim();

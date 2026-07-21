@@ -45,9 +45,35 @@ interface ArticlesResponse {
  * kaynak her zaman görünür. İçe aktarma script'i (import-law-articles) taslakları
  * doldurur; burada doğrulanıp yayınlanır.
  */
+interface LawLite {
+  topicId: string;
+  name: string;
+  courseName: string;
+}
+
+/** Etiketli olmayan/yeni madde için sentetik satır (editör metinsiz açılır). */
+function syntheticArticle(articleNo: string): ArticleRow {
+  return {
+    articleNo,
+    questionCount: 0,
+    id: null,
+    status: null,
+    hasText: false,
+    text: null,
+    sourceName: null,
+    sourceUrl: null,
+    effectiveInfo: null,
+    lastVerifiedAt: null,
+    updatedAt: null,
+  };
+}
+
 export default function LawArticlesPage() {
   const [topicId, setTopicId] = useState<string | null>(null);
   const [selectedNo, setSelectedNo] = useState<string | null>(null);
+  const [manualNo, setManualNo] = useState<string | null>(null);
+  const [manualInput, setManualInput] = useState('');
+  const [lawSearch, setLawSearch] = useState('');
 
   const me = useQuery({ queryKey: ['me'], queryFn: () => api<{ roles: string[] }>('/me') });
   const isAdmin = me.data?.roles.includes('admin') ?? false;
@@ -57,13 +83,44 @@ export default function LawArticlesPage() {
     queryFn: () => api<LawSummary[]>('/admin/law-articles/laws'),
   });
 
+  const searching = lawSearch.trim().length >= 2;
+  const allLaws = useQuery({
+    queryKey: ['law-articles', 'all-laws', lawSearch.trim()],
+    queryFn: () =>
+      api<LawLite[]>(`/admin/law-articles/all-laws?search=${encodeURIComponent(lawSearch.trim())}`),
+    enabled: searching,
+  });
+
   const articles = useQuery({
     queryKey: ['law-articles', topicId],
     queryFn: () => api<ArticlesResponse>(`/admin/law-articles?topicId=${topicId}`),
     enabled: topicId != null,
   });
 
-  const selected = articles.data?.articles.find((a) => a.articleNo === selectedNo) ?? null;
+  // Seçim: elle girilen madde (sentetik) öncelikli; yoksa listeden seçili.
+  const selected =
+    manualNo != null
+      ? (articles.data?.articles.find((a) => a.articleNo === manualNo) ?? syntheticArticle(manualNo))
+      : (articles.data?.articles.find((a) => a.articleNo === selectedNo) ?? null);
+
+  const pickLaw = (id: string) => {
+    setTopicId(id);
+    setSelectedNo(null);
+    setManualNo(null);
+  };
+  const addManual = () => {
+    const raw = manualInput.trim();
+    if (!raw) return;
+    const inList = articles.data?.articles.find((a) => a.articleNo === raw);
+    if (inList) {
+      setSelectedNo(raw);
+      setManualNo(null);
+    } else {
+      setManualNo(raw);
+      setSelectedNo(null);
+    }
+    setManualInput('');
+  };
 
   return (
     <>
@@ -73,9 +130,46 @@ export default function LawArticlesPage() {
       />
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-[280px_1fr]">
-        {/* Sol: kanun listesi + kapsama */}
-        <Card className="max-h-[50vh] overflow-y-auto p-0 md:max-h-[75vh]">
-          {laws.isPending ? (
+        {/* Sol: kanun arama + worklist (etiketli) / tüm kanunlar (arama) */}
+        <Card className="max-h-[55vh] overflow-y-auto p-0 md:max-h-[78vh]">
+          <div className="sticky top-0 border-b border-slate-100 bg-white p-2">
+            <input
+              value={lawSearch}
+              onChange={(e) => setLawSearch(e.target.value)}
+              placeholder="Kanun ara (tüm kanunlar)…"
+              className="w-full rounded-lg border border-slate-300 px-3 py-1.5 text-sm outline-none focus:border-indigo-500"
+            />
+          </div>
+
+          {searching ? (
+            allLaws.isPending ? (
+              <div className="p-5">
+                <Spinner />
+              </div>
+            ) : allLaws.isError ? (
+              <div className="p-5">
+                <ErrorBox error={allLaws.error} onRetry={() => allLaws.refetch()} />
+              </div>
+            ) : allLaws.data.length === 0 ? (
+              <p className="p-5 text-sm text-slate-500">Eşleşen kanun yok.</p>
+            ) : (
+              <ul className="divide-y divide-slate-50">
+                {allLaws.data.map((l) => (
+                  <li key={l.topicId}>
+                    <button
+                      onClick={() => pickLaw(l.topicId)}
+                      className={`w-full px-4 py-2.5 text-left text-sm hover:bg-slate-50 ${
+                        l.topicId === topicId ? 'bg-indigo-50' : ''
+                      }`}
+                    >
+                      <div className="font-medium text-slate-800">{l.name}</div>
+                      <div className="text-xs text-slate-500">{l.courseName}</div>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )
+          ) : laws.isPending ? (
             <div className="p-5">
               <Spinner />
             </div>
@@ -85,7 +179,7 @@ export default function LawArticlesPage() {
             </div>
           ) : laws.data.length === 0 ? (
             <p className="p-5 text-sm text-slate-500">
-              Henüz madde etiketli soru yok. Önce sorulara madde numarası atanmalı.
+              Soru etiketli kanun yok. Yukarıdan arayarak herhangi bir kanunu seçebilirsin.
             </p>
           ) : (
             <ul className="divide-y divide-slate-50">
@@ -94,10 +188,7 @@ export default function LawArticlesPage() {
                 return (
                   <li key={l.topicId}>
                     <button
-                      onClick={() => {
-                        setTopicId(l.topicId);
-                        setSelectedNo(null);
-                      }}
+                      onClick={() => pickLaw(l.topicId)}
                       className={`w-full px-4 py-3 text-left text-sm hover:bg-slate-50 ${
                         active ? 'bg-indigo-50' : ''
                       }`}
@@ -140,15 +231,40 @@ export default function LawArticlesPage() {
             <ErrorBox error={articles.error} onRetry={() => articles.refetch()} />
           ) : (
             <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
-              {/* Madde listesi */}
-              <Card className="max-h-[40vh] overflow-y-auto p-0 md:max-h-[75vh]">
+              {/* Madde listesi + "madde no ile ekle" */}
+              <Card className="max-h-[45vh] overflow-y-auto p-0 md:max-h-[78vh]">
+                <div className="sticky top-0 border-b border-slate-100 bg-white p-2">
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      addManual();
+                    }}
+                    className="flex gap-1.5"
+                  >
+                    <input
+                      value={manualInput}
+                      onChange={(e) => setManualInput(e.target.value)}
+                      placeholder="Madde no (78, Ek 6…)"
+                      className="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-sm outline-none focus:border-indigo-500"
+                    />
+                    <button
+                      type="submit"
+                      className="shrink-0 rounded-lg bg-slate-800 px-3 py-1.5 text-sm font-medium text-white hover:bg-slate-700"
+                    >
+                      Ekle
+                    </button>
+                  </form>
+                </div>
                 <ul className="divide-y divide-slate-50">
                   {articles.data.articles.map((a) => {
-                    const active = a.articleNo === selectedNo;
+                    const active = manualNo == null && a.articleNo === selectedNo;
                     return (
                       <li key={a.articleNo}>
                         <button
-                          onClick={() => setSelectedNo(a.articleNo)}
+                          onClick={() => {
+                            setSelectedNo(a.articleNo);
+                            setManualNo(null);
+                          }}
                           className={`flex w-full items-center justify-between px-3 py-2 text-left text-sm hover:bg-slate-50 ${
                             active ? 'bg-indigo-50' : ''
                           }`}
@@ -178,7 +294,15 @@ export default function LawArticlesPage() {
                   topicId={topicId}
                   article={selected}
                   isAdmin={isAdmin}
-                  onDeleted={() => setSelectedNo(null)}
+                  onSaved={(no) => {
+                    // Kaydedilen kanonik madde no'yu seç (elle girilen ham no yerine).
+                    setSelectedNo(no);
+                    setManualNo(null);
+                  }}
+                  onDeleted={() => {
+                    setSelectedNo(null);
+                    setManualNo(null);
+                  }}
                 />
               )}
             </div>
@@ -198,11 +322,13 @@ function ArticleEditor({
   topicId,
   article,
   isAdmin,
+  onSaved,
   onDeleted,
 }: {
   topicId: string;
   article: ArticleRow;
   isAdmin: boolean;
+  onSaved: (articleNo: string) => void;
   onDeleted: () => void;
 }) {
   const qc = useQueryClient();
@@ -215,7 +341,7 @@ function ArticleEditor({
 
   const save = useMutation({
     mutationFn: () =>
-      api('/admin/law-articles', {
+      api<{ id: string; status: string; articleNo: string }>('/admin/law-articles', {
         method: 'PATCH',
         body: {
           topicId,
@@ -226,7 +352,10 @@ function ArticleEditor({
           effectiveInfo: effectiveInfo || undefined,
         },
       }),
-    onSuccess: invalidate,
+    onSuccess: (res) => {
+      onSaved(res.articleNo);
+      invalidate();
+    },
   });
   const publish = useMutation({
     mutationFn: (id: string) => api(`/admin/law-articles/${id}/publish`, { method: 'POST' }),
