@@ -6,6 +6,12 @@ import { ButtonLink } from "@/components/ui/button";
 import { SourceTag } from "@/components/ui/source-tag";
 import { HeatBar } from "@/components/ui/heat-bar";
 
+/** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
+function formatVerifiedDate(iso: string): string {
+  const d = iso.slice(0, 10).split("-");
+  return d.length === 3 ? `${d[2]}.${d[1]}.${d[0]}` : iso;
+}
+
 /**
  * Madde detay — girişli derinlik (Doc 27 §3.5, wireframe 07): Atlas'ın kalbi.
  * Makale: madde künyesi + çıkmış soru önizlemeleri (resmî metin, kanun metni
@@ -72,6 +78,34 @@ export function ArticleWorkspace({
       <h1 className="font-heading text-xl font-bold text-ink">
         {article.lawName} — Madde {article.no}
       </h1>
+
+      {article.text && (
+        <Card>
+          <CardTitle>Resmî madde metni</CardTitle>
+          <div className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-ink">
+            {article.text.body}
+          </div>
+          <p className="tk-caption mt-3">
+            Kaynak:{" "}
+            {article.text.sourceUrl ? (
+              <a
+                href={article.text.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-ink"
+              >
+                {article.text.source}
+              </a>
+            ) : (
+              article.text.source
+            )}
+            {article.text.effectiveInfo ? <> · {article.text.effectiveInfo}</> : null}
+            {article.text.verifiedAt ? (
+              <> · {formatVerifiedDate(article.text.verifiedAt)} itibarıyla doğrulandı</>
+            ) : null}
+          </p>
+        </Card>
+      )}
 
       <Card>
         <CardTitle>Madde künyesi</CardTitle>

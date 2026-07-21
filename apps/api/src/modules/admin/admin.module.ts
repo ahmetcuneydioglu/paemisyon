@@ -5,6 +5,7 @@ import { AdminDashboardService } from './dashboard/admin-dashboard.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
+import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AdminExamsController } from './exams/admin-exams.controller';
 import { AdminExamsService } from './exams/admin-exams.service';
 import { ReportsModule } from '../reports/reports.module';
@@ -22,6 +23,7 @@ import { ReportsModule } from '../reports/reports.module';
     AdminCatalogService,
     AdminQuestionsService,
     AdminUsersService,
+    AdminLawArticlesService,
     AdminExamsService,
   ],
 })

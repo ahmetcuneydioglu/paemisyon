@@ -273,10 +273,49 @@ model Topic {
   quizSessions     QuizSession[]
   userProgress     UserTopicProgress[]
   masterySnapshots TopicMasterySnapshot[]
+  lawArticles      LawArticle[]
 
   @@index([courseId])
   @@index([parentId])
   @@map("topics")
+}
+
+/// Resmî madde metni (Doc 25 §4 adım 3 — "kanun metni içerik hattı").
+/// Kanun = Topic; madde = Question.articleNo etiketiyle AYNI kanonik biçim
+/// ("16", "4/A", "Ek 6", "Geçici 2"). Böylece Madde Atlası'nda soru grubu ile
+/// metin tek anahtarda (topicId, articleNo) buluşur.
+///
+/// İLKE (anayasa): metin AI ile ÜRETİLMEZ/ÖZETLENMEZ — birebir resmî metin;
+/// kaynak (mevzuat.gov.tr) ve doğrulama tarihi her zaman görünür. Doğrulanmadan
+/// (status=published) istemciye SIZMAZ; import taslak (draft) yazar, admin yayınlar.
+model LawArticle {
+  id        String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  topicId   String @map("topic_id") @db.Uuid
+  articleNo String @map("article_no")
+  /// Birebir resmî madde metni (fıkralar korunur; \n ile satırlar).
+  text      String
+
+  /// Kaynak künyesi — istemcide görünür (güven vaadi).
+  sourceName String  @default("mevzuat.gov.tr") @map("source_name")
+  sourceUrl  String? @map("source_url")
+  /// Yürürlük/işlenme notu (ör. "5/7/2022 tarihli değişiklik işlenmiş metin").
+  effectiveInfo String? @map("effective_info")
+  /// İçeriğin resmî kaynağa göre son doğrulandığı an (istemcide "… itibarıyla").
+  lastVerifiedAt DateTime? @map("last_verified_at")
+
+  status ContentStatus @default(draft)
+
+  createdBy String?   @map("created_by") @db.Uuid
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  // Kanun başına madde tekil; import upsert bu anahtara dayanır.
+  @@unique([topicId, articleNo])
+  @@index([topicId, status])
+  @@map("law_articles")
 }
 
 // Kararlı KİMLİK — içerik burada değil, sürümlerde.

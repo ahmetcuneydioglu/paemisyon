@@ -227,7 +227,14 @@ export class PublicService {
     const plans = await this.prisma.plan.findMany({
       where: { isActive: true },
       orderBy: { price: 'asc' },
-      select: { key: true, name: true, price: true, currency: true, period: true, dailyQuestionLimit: true },
+      select: {
+        key: true,
+        name: true,
+        price: true,
+        currency: true,
+        period: true,
+        dailyQuestionLimit: true,
+      },
     });
     const free = plans.find((p) => p.key === 'free');
     const data: PublicPricing = {
@@ -426,6 +433,24 @@ export class PublicService {
       if (s) bySource.set(s, (bySource.get(s) ?? 0) + 1);
     }
 
+    // Resmî madde metni (Doc 25 §4 adım 3): YALNIZ yayınlanmış (admin doğrulamış)
+    // metin istemciye gider. Taslak/incelemedeki metin sızmaz.
+    const lawArticle = await this.prisma.lawArticle.findFirst({
+      where: {
+        topicId: topic.id,
+        articleNo: current.no,
+        status: 'published',
+        deletedAt: null,
+      },
+      select: {
+        text: true,
+        sourceName: true,
+        sourceUrl: true,
+        effectiveInfo: true,
+        lastVerifiedAt: true,
+      },
+    });
+
     return {
       lawSlug,
       topicId: topic.id,
@@ -434,6 +459,16 @@ export class PublicService {
       no: current.no,
       slug: articleSlug(current.no),
       questionCount: current.questionCount,
+      /** Resmî madde metni (yayınlanmışsa) — Atlas'ın makale panosuna gelir. */
+      text: lawArticle
+        ? {
+            body: lawArticle.text,
+            source: lawArticle.sourceName,
+            sourceUrl: lawArticle.sourceUrl,
+            effectiveInfo: lawArticle.effectiveInfo,
+            verifiedAt: lawArticle.lastVerifiedAt?.toISOString() ?? null,
+          }
+        : null,
       exams: this.examContexts(topic.course.sections),
       /** Hangi sınavda kaç kez soruldu (kaynak etiketi dağılımı). */
       sources: showSource
