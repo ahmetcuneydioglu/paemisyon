@@ -112,4 +112,30 @@ describe('parseLawText', () => {
     expect(parseLawText('')).toEqual([]);
     expect(parseLawText('   \n\n  ')).toEqual([]);
   });
+
+  it('maddenin sonundaki bölüm başlığını (sonraki maddeye ait) kırpar', () => {
+    const raw = [
+      'Madde 126 – Türkiye, merkezi idare kuruluşu bakımından illere ayrılır.',
+      'İllerin idaresi yetki genişliği esasına dayanır.',
+      '2. Mahalli idareler',
+      'Madde 127 – Mahalli idareler; il, belediye veya köy halkının ortak ihtiyaçlarını karşılar.',
+    ].join('\n');
+    const out = parseLawText(raw);
+    const m126 = out.find((a) => a.articleNo === '126')!;
+    expect(m126.text).not.toContain('Mahalli idareler');
+    expect(m126.text.endsWith('dayanır.')).toBe(true);
+    // Başlık sonraki maddeye ait; onun gövdesinde korunur.
+    expect(out.find((a) => a.articleNo === '127')!.text).toContain('Mahalli idareler; il');
+  });
+
+  it('nokta ile biten gerçek gövde öğelerini (A) …) başlık sanıp kırpmaz', () => {
+    const raw = [
+      'Madde 5 – Şu hüküm geçerlidir.',
+      'A) Birinci hal.',
+      'B) İkinci hal.',
+      'Madde 6 – Sonraki madde.',
+    ].join('\n');
+    const out = parseLawText(raw);
+    expect(out.find((a) => a.articleNo === '5')!.text).toContain('B) İkinci hal.');
+  });
 });
