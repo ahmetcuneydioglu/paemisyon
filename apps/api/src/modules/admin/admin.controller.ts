@@ -381,6 +381,37 @@ export class AdminController {
     return this.lawArticles.upsert(actor, dto);
   }
 
+  // Toplu içe aktarma: mevzuat.gov.tr resmî PDF'i yükle → tüm maddeler otomatik.
+  // dryRun=1 önizleme (yazmaz). all=1 tüm maddeler (soru etiketi şartsız).
+  // publish=1 doğrudan yayınla (YALNIZ admin — serviste denetlenir).
+  @Post('law-articles/import')
+  @Roles('admin', 'editor')
+  @UseInterceptors(FileInterceptor('file', { limits: { fileSize: 20 * 1024 * 1024 } }))
+  importLawPdf(
+    @CurrentUser() actor: AuthenticatedUser,
+    @UploadedFile() file: Express.Multer.File | undefined,
+    @Query('topicId', ParseUUIDPipe) topicId: string,
+    @Query('dryRun') dryRun?: string,
+    @Query('all') all?: string,
+    @Query('publish') publish?: string,
+    @Body('sourceUrl') sourceUrl?: string,
+    @Body('effectiveInfo') effectiveInfo?: string,
+  ) {
+    if (!file?.buffer?.length) {
+      throw new BadRequestException('Dosya yüklenmedi (mevzuat.gov.tr PDF bekleniyor).');
+    }
+    const isTrue = (v?: string) => v === '1' || v === 'true';
+    return this.lawArticles.importPdf(actor, topicId, {
+      buffer: file.buffer,
+      filename: file.originalname ?? 'law.pdf',
+      all: isTrue(all),
+      publish: isTrue(publish),
+      dryRun: isTrue(dryRun),
+      sourceUrl,
+      effectiveInfo,
+    });
+  }
+
   // Yayın YALNIZCA admin — mevzuat güvencesi (soru onayıyla aynı ilke).
   @Post('law-articles/:id/publish')
   @Roles('admin')

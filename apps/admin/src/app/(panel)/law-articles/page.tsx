@@ -4,6 +4,50 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
+import { config } from '@/lib/config';
+import { supabase } from '@/lib/supabase';
+
+/** Toplu PDF içe aktarma raporu (API importPdf yanıtı). */
+interface ImportReport {
+  lawName: string;
+  parsedCount: number;
+  duplicates: string[];
+  taggedCount: number;
+  toWriteCount: number;
+  skippedPublished: string[];
+  missing: string[];
+  written: number;
+  published: boolean;
+  dryRun: boolean;
+}
+
+/** Multipart PDF yükleme (api() JSON gövde gönderdiği için ayrı fetch). */
+async function uploadLawPdf(
+  topicId: string,
+  file: File,
+  opts: { all: boolean; publish: boolean; dryRun: boolean; sourceUrl: string },
+): Promise<ImportReport> {
+  const form = new FormData();
+  form.append('file', file);
+  if (opts.sourceUrl.trim()) form.append('sourceUrl', opts.sourceUrl.trim());
+  const qs = new URLSearchParams({
+    topicId,
+    all: opts.all ? '1' : '0',
+    publish: opts.publish ? '1' : '0',
+    dryRun: opts.dryRun ? '1' : '0',
+  });
+  const { data } = await supabase().auth.getSession();
+  const res = await fetch(`${config.apiBaseUrl}/admin/law-articles/import?${qs}`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${data.session?.access_token ?? ''}` },
+    body: form,
+  });
+  const json = (await res.json().catch(() => null)) as
+    | { data?: ImportReport; error?: { message?: string } }
+    | null;
+  if (!res.ok) throw new Error(json?.error?.message ?? `İçe aktarma başarısız (${res.status}).`);
+  return json!.data as ImportReport;
+}
 
 /** Kanun (topic) kapsama özeti — worklist. */
 interface LawSummary {
@@ -223,14 +267,17 @@ export default function LawArticlesPage() {
         <div>
           {topicId == null ? (
             <Card>
-              <p className="text-sm text-slate-500">Soldan bir kanun seç.</p>
+              <p className="text-sm text-slate-500">Soldan bir kanun seç veya arayarak bul.</p>
             </Card>
-          ) : articles.isPending ? (
-            <Spinner />
-          ) : articles.isError ? (
-            <ErrorBox error={articles.error} onRetry={() => articles.refetch()} />
           ) : (
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
+            <div className="space-y-4">
+              <LawImport topicId={topicId} isAdmin={isAdmin} />
+              {articles.isPending ? (
+                <Spinner />
+              ) : articles.isError ? (
+                <ErrorBox error={articles.error} onRetry={() => articles.refetch()} />
+              ) : (
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
               {/* Madde listesi + "madde no ile ekle" */}
               <Card className="max-h-[45vh] overflow-y-auto p-0 md:max-h-[78vh]">
                 <div className="sticky top-0 border-b border-slate-100 bg-white p-2">
@@ -305,11 +352,127 @@ export default function LawArticlesPage() {
                   }}
                 />
               )}
+                </div>
+              )}
             </div>
           )}
         </div>
       </div>
     </>
+  );
+}
+
+/**
+ * Toplu PDF içe aktarma — mevzuat.gov.tr resmî PDF'i yükle, tüm maddeler otomatik
+ * bölünüp kaydedilsin (CLI'sız). Önizle (dryRun) → İçe aktar. Yayın yalnız admin.
+ */
+function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) {
+  const qc = useQueryClient();
+  const [file, setFile] = useState<File | null>(null);
+  const [all, setAll] = useState(true);
+  const [publish, setPublish] = useState(false);
+  const [sourceUrl, setSourceUrl] = useState('');
+  const [report, setReport] = useState<ImportReport | null>(null);
+
+  const run = useMutation({
+    mutationFn: (dryRun: boolean) => {
+      if (!file) throw new Error('Önce bir PDF seç.');
+      return uploadLawPdf(topicId, file, { all, publish, dryRun, sourceUrl });
+    },
+    onSuccess: (data) => {
+      setReport(data);
+      if (!data.dryRun) qc.invalidateQueries({ queryKey: ['law-articles'] });
+    },
+  });
+
+  return (
+    <Card>
+      <h3 className="font-semibold text-slate-800">PDF ile toplu içe aktar</h3>
+      <p className="mt-1 text-xs text-slate-500">
+        mevzuat.gov.tr&apos;den kanunun PDF&apos;ini indir (MevzuatMetin/…pdf) ve yükle — tüm
+        maddeler otomatik bölünüp kaydedilir. Metin birebir resmî; kaynak görünür.
+      </p>
+      <input
+        type="file"
+        accept="application/pdf,.pdf,.txt"
+        onChange={(e) => {
+          setFile(e.target.files?.[0] ?? null);
+          setReport(null);
+        }}
+        className="mt-3 block text-sm"
+      />
+      <input
+        value={sourceUrl}
+        onChange={(e) => setSourceUrl(e.target.value)}
+        placeholder="Kaynak URL (mevzuat.gov.tr sayfası) — isteğe bağlı"
+        className="mt-2 w-full rounded-lg border border-slate-300 px-3 py-1.5 text-sm outline-none focus:border-indigo-500"
+      />
+      <div className="mt-2 flex flex-wrap gap-4 text-sm">
+        <label className="flex items-center gap-1.5">
+          <input type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} />
+          Tüm maddeler (soru etiketi şartsız)
+        </label>
+        {isAdmin && (
+          <label className="flex items-center gap-1.5">
+            <input
+              type="checkbox"
+              checked={publish}
+              onChange={(e) => setPublish(e.target.checked)}
+            />
+            Doğrudan yayınla
+          </label>
+        )}
+      </div>
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <button
+          onClick={() => run.mutate(true)}
+          disabled={!file || run.isPending}
+          className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-40"
+        >
+          Önizle (yazmaz)
+        </button>
+        <button
+          onClick={() => run.mutate(false)}
+          disabled={!file || run.isPending}
+          className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-40"
+        >
+          {run.isPending ? 'İşleniyor…' : publish ? 'İçe aktar + yayınla' : 'İçe aktar (taslak)'}
+        </button>
+      </div>
+      {run.isError && (
+        <div className="mt-3">
+          <ErrorBox error={run.error} />
+        </div>
+      )}
+      {report && (
+        <div className="mt-3 rounded-lg bg-slate-50 p-3 text-sm text-slate-700">
+          <div className="font-medium">
+            {report.dryRun
+              ? 'Önizleme'
+              : report.written > 0
+                ? `${report.written} madde ${report.published ? 'YAYINLANDI' : 'taslak yazıldı'}`
+                : 'Yazılacak madde yok'}
+          </div>
+          <ul className="mt-1 space-y-0.5 text-xs text-slate-500">
+            <li>Çözümlenen madde: {report.parsedCount}</li>
+            <li>
+              Yazılacak: {report.toWriteCount}
+              {report.dryRun ? '' : ` · yazıldı: ${report.written}`}
+            </li>
+            {report.duplicates.length > 0 && (
+              <li>Mükerrer/artık (atlandı): {report.duplicates.join(', ')}</li>
+            )}
+            {report.skippedPublished.length > 0 && (
+              <li>Yayınlanmış (ezilmedi): {report.skippedPublished.join(', ')}</li>
+            )}
+            {!all && <li>Soru etiketli madde: {report.taggedCount}</li>}
+          </ul>
+          {report.dryRun && (
+            <p className="mt-1 text-xs text-slate-400">Sayı doğruysa “İçe aktar” ile yaz.</p>
+          )}
+        </div>
+      )}
+    </Card>
   );
 }
 

@@ -1,9 +1,30 @@
-import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
-import { canonicalArticleNo } from './law-text-parser';
+import { canonicalArticleNo, parseLawText } from './law-text-parser';
+import { extractPdfLawText } from './pdf-law-text';
+
+/** Panelden PDF/metin toplu içe aktarma seçenekleri. */
+export interface ImportLawOptions {
+  buffer: Buffer;
+  filename: string;
+  /** true: PDF'teki TÜM maddeler; false: yalnız soru etiketli maddeler. */
+  all: boolean;
+  /** true: doğrudan yayınla (yalnız admin); false: taslak. */
+  publish: boolean;
+  /** true: yazma, yalnız rapor döndür. */
+  dryRun: boolean;
+  sourceName?: string;
+  sourceUrl?: string;
+  effectiveInfo?: string;
+}
 
 /** Kanun sayfası sayılacak konu adı deseni (public tarafla aynı — Doc 23). */
 const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
@@ -201,6 +222,126 @@ export class AdminLawArticlesService {
       articleNo,
     });
     return row;
+  }
+
+  /**
+   * PDF/metin toplu içe aktarma (panelden — CLI'sız). mevzuat.gov.tr resmî PDF'i
+   * yüklenir → metne çevrilir → madde madde bölünür → LawArticle'a yazılır.
+   * dryRun ile önce rapor; --all mantığıyla tüm maddeler veya yalnız etiketliler.
+   * Yayın yalnız admin (soru onayıyla aynı ilke).
+   */
+  async importPdf(actor: AuthenticatedUser, topicId: string, opts: ImportLawOptions) {
+    if (opts.publish && !actor.roles.includes('admin')) {
+      throw new ForbiddenException('Yayın yetkisi admin’dedir; taslak olarak içe aktarabilirsin.');
+    }
+    const topic = await this.prisma.topic.findUnique({
+      where: { id: topicId },
+      select: { id: true, name: true, deletedAt: true },
+    });
+    if (!topic || topic.deletedAt) throw new NotFoundException('Kanun bulunamadı.');
+
+    const isPdf = opts.filename.toLowerCase().endsWith('.pdf');
+    const raw = isPdf ? await extractPdfLawText(opts.buffer) : opts.buffer.toString('utf8');
+    const parsedRaw = parseLawText(raw);
+    if (parsedRaw.length === 0) {
+      throw new BadRequestException(
+        'Dosyadan hiç madde çözümlenemedi (satır başında "Madde N –" bekleniyor). PDF resmî konsolide metin mi?',
+      );
+    }
+
+    // Mükerrer/artık madde no: İLK gövde kazanır (dipnot artıkları gerçek maddeyi
+    // ezmesin) — 2559 testinde kanıtlandı.
+    const seen = new Set<string>();
+    const parsed: typeof parsedRaw = [];
+    const duplicates: string[] = [];
+    for (const a of parsedRaw) {
+      if (seen.has(a.articleNo)) {
+        duplicates.push(a.articleNo);
+        continue;
+      }
+      seen.add(a.articleNo);
+      parsed.push(a);
+    }
+
+    const taggedRows = await this.prisma.question.groupBy({
+      by: ['articleNo'],
+      where: { topicId: topic.id, deletedAt: null, articleNo: { not: null } },
+    });
+    const tagged = new Set(taggedRows.map((r) => r.articleNo!));
+
+    const existingRows = await this.prisma.lawArticle.findMany({
+      where: { topicId: topic.id, deletedAt: null },
+      select: { articleNo: true, status: true },
+    });
+    const existing = new Map(existingRows.map((r) => [r.articleNo, r.status]));
+
+    const candidates = opts.all ? parsed : parsed.filter((a) => tagged.has(a.articleNo));
+    const toWrite: typeof parsed = [];
+    const skippedLocked: string[] = [];
+    for (const a of candidates) {
+      const st = existing.get(a.articleNo);
+      // Yayınlanmışı ezme — panelden önce yayından al, sonra yeniden yükle.
+      if (st === 'published') {
+        skippedLocked.push(a.articleNo);
+        continue;
+      }
+      toWrite.push(a);
+    }
+    const parsedNos = new Set(parsed.map((a) => a.articleNo));
+    const missing = [...tagged].filter((no) => !parsedNos.has(no));
+
+    const report = {
+      lawName: topic.name,
+      parsedCount: parsed.length,
+      duplicates,
+      taggedCount: tagged.size,
+      toWriteCount: toWrite.length,
+      skippedPublished: skippedLocked,
+      missing,
+    };
+
+    if (opts.dryRun) {
+      return { ...report, written: 0, published: false, dryRun: true };
+    }
+
+    const sourceName = opts.sourceName?.trim() || undefined;
+    const sourceUrl = opts.sourceUrl?.trim() || null;
+    const effectiveInfo = opts.effectiveInfo?.trim() || null;
+    const statusData = opts.publish
+      ? ({ status: 'published', lastVerifiedAt: new Date() } as const)
+      : ({ status: 'draft', lastVerifiedAt: null } as const);
+
+    let written = 0;
+    for (const a of toWrite) {
+      await this.prisma.lawArticle.upsert({
+        where: { topicId_articleNo: { topicId: topic.id, articleNo: a.articleNo } },
+        create: {
+          topicId: topic.id,
+          articleNo: a.articleNo,
+          text: a.text,
+          sourceName,
+          sourceUrl,
+          effectiveInfo,
+          createdBy: actor.id,
+          ...statusData,
+        },
+        update: {
+          text: a.text,
+          sourceName,
+          sourceUrl,
+          effectiveInfo,
+          deletedAt: null,
+          ...statusData,
+        },
+      });
+      written += 1;
+    }
+    await this.audit.log(actor, 'law_article.import', 'law_article', topic.id, {
+      written,
+      publish: opts.publish,
+      all: opts.all,
+    });
+    return { ...report, written, published: opts.publish, dryRun: false };
   }
 
   /** Yayınla — YALNIZ admin. Doğrulandı damgası (lastVerifiedAt) atılır. */
