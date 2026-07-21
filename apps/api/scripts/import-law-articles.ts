@@ -45,6 +45,29 @@ function withConnLimit(url: string): string {
 }
 
 async function main() {
+  // --list-laws <arama>: kanunun topicId'sini bulmak için (import öncesi yardımcı).
+  const listSearch = argVal('--list-laws');
+  if (listSearch != null) {
+    const prisma = new PrismaClient({
+      datasources: { db: { url: withConnLimit(process.env.DATABASE_URL!) } },
+    });
+    try {
+      const topics = await prisma.topic.findMany({
+        where: { deletedAt: null, name: { contains: listSearch, mode: 'insensitive' } },
+        select: { id: true, name: true },
+        orderBy: { name: 'asc' },
+        take: 40,
+      });
+      if (topics.length === 0) {
+        console.log(`"${listSearch}" ile eşleşen kanun/konu yok.`);
+      }
+      for (const t of topics) console.log(`${t.id}  ${t.name}`);
+    } finally {
+      await prisma.$disconnect();
+    }
+    return;
+  }
+
   const topicId = argVal('--topic-id');
   const file = argVal('--file');
   const sourceUrl = argVal('--source-url') ?? null;
@@ -53,7 +76,8 @@ async function main() {
 
   if (!topicId || !file) {
     console.error(
-      'Kullanım: --topic-id <uuid> --file <path(.pdf|.txt)> [--source-url URL] [--effective-info "…"] [--all] [--force] [--apply] [--publish]',
+      'Kullanım: --topic-id <uuid> --file <path(.pdf|.txt)> [--source-url URL] [--effective-info "…"] [--all] [--force] [--apply] [--publish]\n' +
+        '  topicId bulmak için: --list-laws "2559"  (eşleşen konuların id + adını yazar)',
     );
     process.exit(1);
   }
