@@ -62,6 +62,8 @@ export interface LawSummary {
   name: string;
   courseName: string;
   questionCount: number;
+  /** Yayınlanmış madde metni var mı — "Kanunu oku" için (Doc 25 §4 okuma katmanı). */
+  readable?: boolean;
   exams: ExamContext[];
 }
 
@@ -79,9 +81,23 @@ export interface LawDetail extends LawSummary {
     explanation: string | null;
     source: string | null;
   } | null;
-  /** Madde Isı Haritası (Doc 25 §4): madde → çıkmış soru sayısı, çoktan aza. */
-  articles: { no: string; questionCount: number }[];
+  /** Madde Isı Haritası (Doc 25 §4): madde → çıkmış soru sayısı, çoktan aza.
+   *  hasText: o maddenin yayınlanmış resmî metni var mı (okuma katmanı). */
+  articles: { no: string; slug: string; questionCount: number; hasText: boolean }[];
   related: { slug: string; name: string; questionCount: number }[];
+}
+
+/** Kanunu oku (Doc 25 §4 okuma katmanı): tüm yayınlanmış maddeler, sırayla. */
+export interface LawReading {
+  slug: string;
+  lawName: string;
+  courseName: string;
+  articleCount: number;
+  source: string;
+  sourceUrl: string | null;
+  effectiveInfo: string | null;
+  verifiedAt: string | null;
+  articles: { no: string; slug: string; text: string }[];
 }
 
 export interface ExamGuide {

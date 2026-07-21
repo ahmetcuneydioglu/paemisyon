@@ -315,6 +315,19 @@ export class PublicService {
 
   async laws() {
     const topics = await this.lawTopics();
+    // Yayınlanmış metni olan kanunlar (okunabilir rozeti için) — tek groupBy.
+    const readableRows =
+      topics.length > 0
+        ? await this.prisma.lawArticle.groupBy({
+            by: ['topicId'],
+            where: {
+              topicId: { in: topics.map((t) => t.id) },
+              status: 'published',
+              deletedAt: null,
+            },
+          })
+        : [];
+    const readableIds = new Set(readableRows.map((r) => r.topicId));
     return topics.map((t) => ({
       slug: slugify(t.name),
       /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
@@ -323,6 +336,8 @@ export class PublicService {
       name: t.name,
       courseName: t.course.name,
       questionCount: t.questionCount,
+      /** Yayınlanmış madde metni var mı — "okunabilir" rozeti. */
+      readable: readableIds.has(t.id),
       exams: this.examContexts(t.course.sections),
     }));
   }
@@ -356,14 +371,31 @@ export class PublicService {
     // ── Madde Isı Haritası (Doc 25 §4 — Türkiye'de eşi olmayan veri):
     // bu kanunda hangi maddeden kaç soru çıkmış. Sayısal maddeler numaraya
     // göre, Ek/Geçici sona sıralanır.
-    const articleGroups = await this.prisma.question.groupBy({
-      by: ['articleNo'],
-      where: { topicId: topic.id, deletedAt: null, articleNo: { not: null } },
-      _count: { _all: true },
-    });
-    const articles = articleGroups
-      .map((g) => ({ no: g.articleNo!, questionCount: g._count._all }))
+    const [articleGroups, textArticles] = await Promise.all([
+      this.prisma.question.groupBy({
+        by: ['articleNo'],
+        where: { topicId: topic.id, deletedAt: null, articleNo: { not: null } },
+        _count: { _all: true },
+      }),
+      // Yayınlanmış resmî metni olan maddeler (Doc 25 §4) — sorusuz maddeler de
+      // listelensin ki kanun okunabilsin.
+      this.prisma.lawArticle.findMany({
+        where: { topicId: topic.id, status: 'published', deletedAt: null },
+        select: { articleNo: true },
+      }),
+    ]);
+    const textNos = new Set(textArticles.map((r) => r.articleNo));
+    const countMap = new Map(articleGroups.map((g) => [g.articleNo!, g._count._all]));
+    const allNos = new Set<string>([...countMap.keys(), ...textNos]);
+    const articles = [...allNos]
+      .map((no) => ({
+        no,
+        slug: articleSlug(no),
+        questionCount: countMap.get(no) ?? 0,
+        hasText: textNos.has(no),
+      }))
       .sort((a, b) => b.questionCount - a.questionCount || articleOrder(a.no) - articleOrder(b.no));
+    const readable = textNos.size > 0;
 
     // İlgili kanunlar: aynı dersten, kendisi hariç (iç bağlantı örgüsü).
     const related = topics
@@ -378,6 +410,8 @@ export class PublicService {
       name: topic.name,
       courseName: topic.course.name,
       questionCount: topic.questionCount,
+      /** En az bir yayınlanmış madde metni var mı — "Kanunu oku" düğmesi için. */
+      readable,
       exams: this.examContexts(topic.course.sections),
       sampleQuestion: sample?.currentVersion
         ? {
@@ -389,6 +423,52 @@ export class PublicService {
         : null,
       articles,
       related,
+    };
+  }
+
+  /**
+   * Kanunu oku (Doc 25 §4 — okuma katmanı): kanunun TÜM yayınlanmış maddeleri,
+   * madde sırasıyla, birebir resmî metin. Herkese açık (kanun metni kamuya açık;
+   * cevap/soru sızmaz). Yalnız yayınlanmış (admin doğrulamış) metin döner.
+   */
+  async lawReading(slug: string) {
+    const topics = await this.lawTopicRows();
+    const topic = topics.find((t) => slugify(t.name) === slug);
+    if (!topic) throw new NotFoundException('Kanun sayfası bulunamadı.');
+
+    const rows = await this.prisma.lawArticle.findMany({
+      where: { topicId: topic.id, status: 'published', deletedAt: null },
+      select: {
+        articleNo: true,
+        text: true,
+        sourceName: true,
+        sourceUrl: true,
+        effectiveInfo: true,
+        lastVerifiedAt: true,
+      },
+    });
+    if (rows.length === 0) {
+      throw new NotFoundException('Bu kanunun yayınlanmış metni yok.');
+    }
+    const articles = rows
+      .map((r) => ({ no: r.articleNo, slug: articleSlug(r.articleNo), text: r.text }))
+      .sort((a, b) => articleOrder(a.no) - articleOrder(b.no));
+    // Kaynak künyesi kanun genelinde tekdir (aynı içe aktarma) — ilk satır yeter.
+    const src = rows[0];
+    const lastVerified = rows
+      .map((r) => r.lastVerifiedAt)
+      .filter((d): d is Date => d != null)
+      .sort((a, b) => b.getTime() - a.getTime())[0];
+    return {
+      slug,
+      lawName: topic.name,
+      courseName: topic.course.name,
+      articleCount: articles.length,
+      source: src.sourceName,
+      sourceUrl: src.sourceUrl,
+      effectiveInfo: src.effectiveInfo,
+      verifiedAt: lastVerified?.toISOString() ?? null,
+      articles,
     };
   }
 

@@ -77,7 +77,11 @@ export async function middleware(request: NextRequest) {
   // sayfası, girişli kullanıcıya app kabuğunda çalışma alanı. Anon URL statik
   // kalsın diye girişli istek /calisma/*'a REWRITE'lanır — URL /kanun* kalır.
   const p = request.nextUrl.pathname;
-  const isLawPublicPage = p === "/kanunlar" || p.startsWith("/kanun/");
+  // "Kanunu oku" (Doc 25 §4) sayfasının app-kabuğu eşi henüz yok → rewrite'tan
+  // hariç tut; girişli kullanıcı da anon (site) okuma sayfasını görür (Faz 2'de
+  // /calisma/.../oku eklenince bu istisna kalkar).
+  const isLawPublicPage =
+    (p === "/kanunlar" || p.startsWith("/kanun/")) && !p.endsWith("/oku");
   if (data.user && isLawPublicPage) {
     const rewrite = request.nextUrl.clone();
     rewrite.pathname = `/calisma${p}`;
