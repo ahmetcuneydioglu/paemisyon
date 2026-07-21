@@ -2,29 +2,36 @@
  * Resmî madde metni içe aktarma (Doc 25 §4 adım 3 — "kanun metni içerik hattı").
  *
  * KAYNAK: mevzuat.gov.tr'den ALINAN birebir konsolide metin. Site otomatik
- * erişime kapalı olduğundan metni İNSAN indirir (tarayıcıdan .doc→.txt / kopyala)
- * ve bu script yerel dosyayı madde madde bölüp yazar — kazıma YOK, AI üretimi YOK.
+ * erişime kapalı olduğundan İNSAN indirir. İki girdi biçimi:
+ *   · PDF (önerilen): https://www.mevzuat.gov.tr/MevzuatMetin/{Tür}.{Tertip}.{No}.pdf
+ *     (ör. 2559 sayılı Kanun → 1.5.2559.pdf) — script PDF'i metne çevirir.
+ *   · .txt (kopyala-yapıştır).
+ * Script yerel dosyayı madde madde bölüp yazar — kazıma YOK, AI üretimi YOK.
  *
  * Güvenlik:
- *  - Yazılan kayıtlar TASLAK (status=draft); admin doğrulayıp yayınlar. İstemciye
- *    yalnız yayınlanmış metin gider.
+ *  - Varsayılan TASLAK (status=draft); admin doğrulayıp yayınlar. --publish ile
+ *    doğrudan YAYINLA (resmî PDF'e güvenerek; önce dry-run + göz kontrolü önerilir).
  *  - Zaten yayınlanmış/incelemedeki madde EZİLMEZ (--force olmadıkça).
  *  - Yalnız soru etiketi olan maddeleri yazar (Atlas'ın kapsamı); --all ile hepsi.
  *  - dry-run varsayılan; DB penceresi kuralı: connection_limit=1.
  *
- * Çalıştırma (apps/api içinden):
- *   npx ts-node scripts/import-law-articles.ts --topic-id <uuid> --file 657.txt \
- *     --source-url "https://www.mevzuat.gov.tr/..." --effective-info "5/7/2022 işlenmiş"
- *   # ...üstteki dry-run; yazmak için sona --apply ekle.
+ * Çalıştırma (apps/api içinden, DATABASE_URL ortamda olmalı):
+ *   npx ts-node scripts/import-law-articles.ts --topic-id <uuid> --file 2559.pdf \
+ *     --source-url "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2559&MevzuatTur=1&MevzuatTertip=5"
+ *   # ...üstteki dry-run; yazmak için --apply, doğrudan yayınlamak için --publish ekle.
  */
 import { readFileSync } from 'fs';
 import { PrismaClient } from '@prisma/client';
 import { parseLawText } from '../src/modules/admin/law-articles/law-text-parser';
+import { extractPdfLawText } from '../src/modules/admin/law-articles/pdf-law-text';
 
 const argv = process.argv.slice(2);
 const APPLY = argv.includes('--apply');
 const ALL = argv.includes('--all');
 const FORCE = argv.includes('--force');
+// --publish: taslak yerine doğrudan YAYINLA (resmî PDF'e güveniyoruz). Yine de
+// önce dry-run + göz kontrolü önerilir; yanlış metin canlıya gitmesin.
+const PUBLISH = argv.includes('--publish');
 
 function argVal(flag: string): string | undefined {
   const i = argv.indexOf(flag);
@@ -46,12 +53,14 @@ async function main() {
 
   if (!topicId || !file) {
     console.error(
-      'Kullanım: --topic-id <uuid> --file <path> [--source-url URL] [--effective-info "…"] [--all] [--force] [--apply]',
+      'Kullanım: --topic-id <uuid> --file <path(.pdf|.txt)> [--source-url URL] [--effective-info "…"] [--all] [--force] [--apply] [--publish]',
     );
     process.exit(1);
   }
 
-  const raw = readFileSync(file, 'utf8');
+  // PDF (mevzuat.gov.tr'den indirilen) → metne çevir; değilse UTF-8 metin oku.
+  const isPdf = file.toLowerCase().endsWith('.pdf');
+  const raw = isPdf ? await extractPdfLawText(readFileSync(file)) : readFileSync(file, 'utf8');
   const parsed = parseLawText(raw);
   if (parsed.length === 0) {
     console.error(
@@ -124,6 +133,10 @@ async function main() {
       return;
     }
 
+    const statusData = PUBLISH
+      ? { status: 'published' as const, lastVerifiedAt: new Date() }
+      : { status: 'draft' as const, lastVerifiedAt: null };
+
     let written = 0;
     for (const a of toWrite) {
       await prisma.lawArticle.upsert({
@@ -135,16 +148,17 @@ async function main() {
           sourceName,
           sourceUrl,
           effectiveInfo,
-          status: 'draft',
+          ...statusData,
         },
-        // Yalnız taslağı tazeler; yayınlanmışa buraya --force ile düşülür.
-        update: { text: a.text, sourceName, sourceUrl, effectiveInfo, status: 'draft' },
+        update: { text: a.text, sourceName, sourceUrl, effectiveInfo, ...statusData },
       });
       written += 1;
       if (written % 25 === 0) console.log(`  yazıldı: ${written}/${toWrite.length}`);
     }
     console.log(
-      `İçe aktarma tamam — ${written} taslak madde. Admin panelinden doğrulayıp yayınla.`,
+      PUBLISH
+        ? `İçe aktarma tamam — ${written} madde YAYINLANDI (canlıda görünür).`
+        : `İçe aktarma tamam — ${written} taslak madde. Admin panelinden doğrulayıp yayınla.`,
     );
   } finally {
     await prisma.$disconnect();
