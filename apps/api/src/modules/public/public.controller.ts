@@ -59,6 +59,13 @@ export class PublicController {
     return this.service.lawBySlug(slug);
   }
 
+  /** Kanunu oku: tüm yayınlanmış maddeler, sırayla, tam metin (okuma katmanı). */
+  @Get('laws/:slug/read')
+  @Header('Cache-Control', CACHE_SLOW)
+  lawReading(@Param('slug') slug: string) {
+    return this.service.lawReading(slug);
+  }
+
   /** Madde detayı (Doc 25 §4). :no madde slug'ıdır: "16", "4-a", "ek-6". */
   @Get('laws/:slug/articles/:no')
   @Header('Cache-Control', CACHE_SLOW)

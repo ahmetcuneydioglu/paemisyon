@@ -61,6 +61,11 @@ export function LawLibrary({ laws }: { laws: LawSummary[] }) {
                         {l.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(" · ") ||
                           "müfredat konusu"}
                       </p>
+                      {l.readable && (
+                        <span className="mt-2 inline-block rounded bg-brand/10 px-1.5 py-0.5 text-[11px] font-medium text-brand">
+                          📖 Tam metin
+                        </span>
+                      )}
                     </Link>
                   ))}
               </div>

@@ -103,6 +103,18 @@ export default async function KanunPage({ params }: { params: Params }) {
         )}
       </div>
 
+      {/* Kanunu oku (Doc 25 §4 okuma katmanı) — yayınlanmış tam metin varsa */}
+      {law.readable && (
+        <div className="mb-8">
+          <Link
+            href={`/kanun/${slug}/oku`}
+            className="inline-flex items-center gap-2 rounded-lg bg-(--color-navy) px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
+          >
+            📖 Kanunun güncel tam metnini oku
+          </Link>
+        </div>
+      )}
+
       {/* Madde Isı Haritası (Doc 25 §4) — hangi maddeden kaç soru çıkmış */}
       {law.articles.length > 0 && (
         <section className="mb-8 rounded-xl border border-gray-200 bg-white p-6">
