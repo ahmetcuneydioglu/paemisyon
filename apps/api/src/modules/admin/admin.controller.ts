@@ -360,6 +360,13 @@ export class AdminController {
     return this.lawArticles.laws();
   }
 
+  // Tüm kanunlar (soru etiketi şartı yok) — "madde no ile ekle" için seçici.
+  @Get('law-articles/all-laws')
+  @Roles('admin', 'editor')
+  lawArticleAllLaws(@Query('search') search?: string) {
+    return this.lawArticles.allLaws(search);
+  }
+
   // Bir kanunun maddeleri (etiketli sorular ∪ girilmiş metinler).
   @Get('law-articles')
   @Roles('admin', 'editor')
