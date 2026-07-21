@@ -147,7 +147,7 @@ export default function QuestionsPage() {
       ) : (
         <>
           <Card className="p-0">
-            <table className="w-full text-sm">
+            <div className="overflow-x-auto"><table className="w-full min-w-[560px] text-sm">
               <thead>
                 <tr className="border-b border-slate-100 text-left text-xs text-slate-500">
                   <th className="px-5 py-3 font-medium">Soru</th>
@@ -186,7 +186,7 @@ export default function QuestionsPage() {
                   </tr>
                 )}
               </tbody>
-            </table>
+            </table></div>
           </Card>
 
           <div className="mt-4 flex items-center justify-between text-sm text-slate-500">

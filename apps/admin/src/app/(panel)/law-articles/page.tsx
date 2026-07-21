@@ -72,9 +72,9 @@ export default function LawArticlesPage() {
         subtitle="Resmî kanun madde metinleri — birebir metin, kaynak görünür; yayın yalnız admin"
       />
 
-      <div className="grid grid-cols-[300px_1fr] gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-[280px_1fr]">
         {/* Sol: kanun listesi + kapsama */}
-        <Card className="max-h-[75vh] overflow-y-auto p-0">
+        <Card className="max-h-[50vh] overflow-y-auto p-0 md:max-h-[75vh]">
           {laws.isPending ? (
             <div className="p-5">
               <Spinner />
@@ -139,9 +139,9 @@ export default function LawArticlesPage() {
           ) : articles.isError ? (
             <ErrorBox error={articles.error} onRetry={() => articles.refetch()} />
           ) : (
-            <div className="grid grid-cols-[220px_1fr] gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
               {/* Madde listesi */}
-              <Card className="max-h-[75vh] overflow-y-auto p-0">
+              <Card className="max-h-[40vh] overflow-y-auto p-0 md:max-h-[75vh]">
                 <ul className="divide-y divide-slate-50">
                   {articles.data.articles.map((a) => {
                     const active = a.articleNo === selectedNo;
