@@ -22,6 +22,9 @@ export type CoachCardType =
   | 'exam_mode'
   | 'taper'
   | 'slump_watch'
+  | 'onboarding'
+  | 'post_exam'
+  | 'aftermath'
   | 'motivation';
 
 /**
@@ -31,8 +34,11 @@ export type CoachCardType =
  */
 export type CoachMode =
   | 'comeback'
+  | 'aftermath'
   | 'taper'
   | 'exam_day'
+  | 'onboarding'
+  | 'post_exam'
   | 'exam_mode'
   | 'streak_risk'
   | 'slump_watch'
@@ -119,6 +125,13 @@ export interface CoachContext {
   daysSinceLastActivity: number | null;
   /** Hedef sınava kalan TR takvim günü; tarih yoksa veya geçtiyse null. */
   daysToExam: number | null;
+  /** Hedef sınavın üzerinden geçen TR takvim günü (0=bugün); geçmediyse null. */
+  daysSinceExam: number | null;
+  /**
+   * Son 48 saatte tamamlanmış randevulu deneme (post_exam durumu — Doc 25 §3).
+   * Deneme bitince exam_live susar; bu kart "sonucunu incele" davetini üretir.
+   */
+  recentDeneme: { examId: string | null; title: string; wrongCount: number } | null;
   /** Tempo sinyali (Doc 24 §1/90. gün): son 7 gün vs önceki 7 gün soru hacmi. */
   volume: { last7: number; prev7: number };
 }
