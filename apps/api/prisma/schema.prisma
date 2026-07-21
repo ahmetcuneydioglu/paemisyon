@@ -45,6 +45,7 @@ enum Difficulty {
 enum PlanPeriod {
   none
   monthly
+  quarterly // 3 aylık — web'in tek satılabilir planı (manuel ödeme)
   yearly
 }
 

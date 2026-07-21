@@ -9,6 +9,7 @@ import {
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 
 /** Free kullanıcının günlük AI açıklama hakkı (Doc 24 §11). Premium sınırsız. */
 const FREE_DAILY_AI_LIMIT = 3;
@@ -138,7 +139,7 @@ export class AiExplainService {
       // Satır yoksa (bugün hiç soru çözülmemiş olabilir) oluşturmayı dene.
       const created = await this.prisma.$queryRaw<{ ai_explanations_used: number }[]>`
         INSERT INTO daily_usage (user_id, usage_date, questions_answered, daily_limit, ai_explanations_used)
-        VALUES (${userId}::uuid, ${today}, 0, 15, 1)
+        VALUES (${userId}::uuid, ${today}, 0, ${FREE_DAILY_LIMIT_FALLBACK}, 1)
         ON CONFLICT (user_id, usage_date) DO NOTHING
         RETURNING ai_explanations_used`;
       if (created.length === 0) {

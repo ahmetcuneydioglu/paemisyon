@@ -126,8 +126,11 @@ export interface AdminUser {
   displayName: string;
   status: 'active' | 'suspended' | 'deleted';
   roles: string[];
+  /** Premium GERÇEKTEN aktif mi — süre kontrolü dahil, sunucuda hesaplanır. */
   isPremium: boolean;
   validUntil: string | null;
+  /** Premium verilmiş ama süresi dolmuş (yenileme adayı). */
+  premiumExpired: boolean;
   createdAt: string;
 }
 

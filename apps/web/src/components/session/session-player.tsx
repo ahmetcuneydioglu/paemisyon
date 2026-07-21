@@ -378,7 +378,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
             <ButtonLink href="/bugun" variant={isLimit ? "secondary" : "primary"}>
               Bugün&apos;e dön
             </ButtonLink>
-            {isLimit && <ButtonLink href="/sss">Premium&apos;u incele</ButtonLink>}
+            {isLimit && <ButtonLink href="/premium">Premium&apos;u incele</ButtonLink>}
           </div>
         </div>
       </FocusFrame>

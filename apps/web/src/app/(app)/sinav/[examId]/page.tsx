@@ -47,8 +47,16 @@ function ExamBlocked({ code, message }: { code: string; message: string }) {
         </p>
         <CardTitle className="mt-3 text-[17px]">{title}</CardTitle>
         <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{message}</p>
-        <div className="mt-6">
-          <ButtonLink href="/denemeler">Denemelere dön</ButtonLink>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <ButtonLink
+            href="/denemeler"
+            variant={code === "PREMIUM_REQUIRED" ? "secondary" : "primary"}
+          >
+            Denemelere dön
+          </ButtonLink>
+          {code === "PREMIUM_REQUIRED" && (
+            <ButtonLink href="/premium">Premium&apos;u incele</ButtonLink>
+          )}
         </div>
       </Card>
     </div>

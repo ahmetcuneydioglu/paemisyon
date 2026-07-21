@@ -1,4 +1,5 @@
 import { PrismaClient, PlanPeriod, BadgeKind } from '@prisma/client';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../src/common/plan.constants';
 
 /**
  * Başlangıç verisi (Doc 6 §8): roller, planlar, modüller.
@@ -18,34 +19,30 @@ async function main() {
     await prisma.role.upsert({ where: { key: r.key }, update: { name: r.name }, create: r });
   }
 
-  // Planlar (Doc 16). Fiyatlar başlangıç değeri — App Store Connect ürün fiyatı asıldır.
-  // storeProductId'ler App Store Connect'te bire bir aynı olmalı (Doc 15).
-  // Freemium günlük limit: başlangıç 15 (öneri 10-20; admin'den ayarlanabilir).
+  // Planlar (Doc 16). Web'in TEK satılabilir planı 3 aylık; ödeme mağazadan değil,
+  // Telegram/Instagram üzerinden manuel yürür — bu yüzden storeProductId YOK.
+  //
+  // DİKKAT: aşağıdaki upsert.update bloğu dailyQuestionLimit'i de yazar, yani bu
+  // dosya prod'da yeniden çalıştırılırsa canlı limiti EZER. Buradaki değer canlı
+  // değerle (30) aynı tutulmalı; limiti değiştirmenin doğru yolu:
+  //   npx ts-node scripts/set-free-daily-limit.ts <yeniLimit>
+  // ve bu satırı da aynı sayıya çekmek.
   const plans = [
     {
       key: 'free',
       name: 'Ücretsiz',
       period: PlanPeriod.none,
-      // TODO(LANSMAN): geliştirme için 1000 — yayına çıkmadan önce 15'e çek!
-      dailyQuestionLimit: 1000,
+      dailyQuestionLimit: FREE_DAILY_LIMIT_FALLBACK,
       price: null as string | null,
       storeProductIdIos: null as string | null,
     },
     {
-      key: 'monthly',
-      name: 'Premium Aylık',
-      period: PlanPeriod.monthly,
-      dailyQuestionLimit: null,
-      price: '149.99',
-      storeProductIdIos: 'com.paemisyon.premium.monthly',
-    },
-    {
-      key: 'yearly',
-      name: 'Premium Yıllık',
-      period: PlanPeriod.yearly,
-      dailyQuestionLimit: null,
-      price: '999.99',
-      storeProductIdIos: 'com.paemisyon.premium.yearly',
+      key: 'quarterly',
+      name: '3 Aylık Premium',
+      period: PlanPeriod.quarterly,
+      dailyQuestionLimit: null, // premium = sınırsız
+      price: '499.99',
+      storeProductIdIos: null,
     },
   ];
   for (const p of plans) {

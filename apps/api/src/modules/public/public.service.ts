@@ -2,6 +2,14 @@ import { BadRequestException, Injectable, NotFoundException } from '@nestjs/comm
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+
+/** Pazarlama sayfalarının tükettiği fiyat bilgisi (kimlik gerektirmez). */
+export interface PublicPricing {
+  /** Ücretsiz katmanın günlük soru hakkı — metinler bu sayıyı gömmez, buradan okur. */
+  freeDailyLimit: number;
+  plans: { key: string; name: string; price: string; currency: string; period: string }[];
+}
 
 /** TR-duyarlı URL slug'ı: "2559 Sayılı Polis Vazife..." → "2559-sayili-polis-vazife..." */
 export function slugify(s: string): string {
@@ -203,6 +211,39 @@ export class PublicService {
       explanation: version.explanation,
       source: showSource ? version.sourceLabel : null,
     };
+  }
+
+  // ── Fiyatlandırma (girişsiz funnel) ───────────────────────────
+  // Fiyat ve ücretsiz limit TEK KAYNAKTAN (plans tablosu) gelir; pazarlama
+  // metinleri sayıyı hardcode etmez (Doc 27: kural sunucuda yaşar). Girişsiz
+  // ziyaretçi de görmeli — /billing/plans kimlik istediği için burada açılır.
+  // Satın alma linki YOK: ödeme Telegram/Instagram üzerinden manuel yürür.
+  private pricingCache: { data: PublicPricing; expiresAt: number } | null = null;
+
+  async pricing(): Promise<PublicPricing> {
+    if (this.pricingCache && this.pricingCache.expiresAt > Date.now()) {
+      return this.pricingCache.data;
+    }
+    const plans = await this.prisma.plan.findMany({
+      where: { isActive: true },
+      orderBy: { price: 'asc' },
+      select: { key: true, name: true, price: true, currency: true, period: true, dailyQuestionLimit: true },
+    });
+    const free = plans.find((p) => p.key === 'free');
+    const data: PublicPricing = {
+      freeDailyLimit: free?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK,
+      plans: plans
+        .filter((p) => p.key !== 'free' && p.price != null)
+        .map((p) => ({
+          key: p.key,
+          name: p.name,
+          price: p.price!.toString(),
+          currency: p.currency,
+          period: p.period,
+        })),
+    };
+    this.pricingCache = { data, expiresAt: Date.now() + 300_000 };
+    return data;
   }
 
   // ── Kanun kütüphanesi (SEO) ───────────────────────────────────

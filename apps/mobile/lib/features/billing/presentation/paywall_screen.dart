@@ -254,11 +254,12 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     final pd = _products[plan.storeProductIdIos];
     final priceText = pd?.price ??
         (plan.price != null ? '${plan.price} ${plan.currency}' : '—');
-    final periodText = plan.period == 'yearly'
-        ? '/yıl'
-        : plan.period == 'monthly'
-            ? '/ay'
-            : '';
+    final periodText = switch (plan.period) {
+      'yearly' => '/yıl',
+      'quarterly' => '/3 ay',
+      'monthly' => '/ay',
+      _ => '',
+    };
     final inStore = pd != null;
     final busy = _buyingKey == plan.key;
     final anyBusy = _buyingKey != null;

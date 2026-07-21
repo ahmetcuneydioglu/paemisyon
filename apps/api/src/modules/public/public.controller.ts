@@ -40,6 +40,13 @@ export class PublicController {
     return this.service.revealDailyQuiz(body.versionId ?? '', body.optionId ?? '');
   }
 
+  /** Fiyat + ücretsiz limit — pazarlama sayfaları sayıyı gömmesin diye (Doc 27). */
+  @Get('pricing')
+  @Header('Cache-Control', CACHE_SLOW)
+  pricing() {
+    return this.service.pricing();
+  }
+
   @Get('laws')
   @Header('Cache-Control', CACHE_SLOW)
   laws() {

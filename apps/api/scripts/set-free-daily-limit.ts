@@ -1,11 +1,15 @@
 /**
- * Lansman engeli (Doc 22): free planın günlük soru limiti geliştirme
- * kolaylığı için 1000'di — canlıda 15 olmalı. Tek satırlık güvenli UPDATE.
- * Çalıştırma: npx ts-node scripts/set-free-daily-limit.ts [limit=15]
+ * Free planın günlük soru limitini ayarlar — limitin TEK doğruluk kaynağı budur
+ * (kodda kalan sayılar yalnız plan satırı okunamazsa devreye giren emniyet ağı).
+ * Çalıştırma: npx ts-node scripts/set-free-daily-limit.ts [limit=30]
+ *
+ * Limiti kalıcı değiştirirken src/common/plan.constants.ts ve prisma/seed.ts
+ * içindeki fallback de aynı sayıya çekilmeli.
  */
 import { PrismaClient } from '@prisma/client';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../src/common/plan.constants';
 
-const LIMIT = Number(process.argv[2] ?? 15);
+const LIMIT = Number(process.argv[2] ?? FREE_DAILY_LIMIT_FALLBACK);
 
 async function main() {
   const url = process.env.DATABASE_URL!;

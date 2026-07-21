@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactChannels } from "@/components/contact-channels";
 
 const GROUPS: { title: string; links: { href: string; label: string; external?: boolean }[] }[] = [
   {
@@ -41,16 +42,7 @@ export function SiteFooter() {
             Polis sınavlarına hazırlığın merkezi: kaynaklı çıkmış sorular, canlı denemeler,
             kişisel koç.
           </p>
-          <div className="mt-3 flex gap-2">
-            <a
-              href="https://apps.apple.com"
-              target="_blank"
-              rel="noreferrer"
-              className="tk-caption rounded-sm border border-line px-2.5 py-1.5 hover:text-ink"
-            >
-               App Store&apos;dan indir
-            </a>
-          </div>
+          <ContactChannels variant="inline" className="mt-3" />
         </div>
         {GROUPS.map((g) => (
           <nav key={g.title} aria-label={g.title}>

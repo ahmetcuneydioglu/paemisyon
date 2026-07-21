@@ -4,6 +4,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UserSyncService } from '../../auth/user-sync.service';
+import { isEntitlementActive } from '../../billing/entitlement.util';
 
 /**
  * Kullanıcı yönetimi (Doc 9 §5). Parola YOK (Supabase Auth'ta). Admin yalnızca:
@@ -53,8 +54,15 @@ export class AdminUsersService {
         displayName: u.displayName,
         status: u.status,
         roles: u.roles.map((r) => r.role.key),
-        isPremium: u.entitlement?.isPremium ?? false,
+        // Entitlement kuralı SUNUCUDA yaşar: bayrak tek başına yetmez, süresi
+        // geçmiş grant premium DEĞİLDİR (guard'ın kullandığı kuralın aynısı).
+        // Ham bayrak dönseydi admin listesi süresi dolmuş kullanıcıyı "⭐ aktif"
+        // gösterir ve yenileme butonu "geri al"a dönerdi.
+        isPremium: isEntitlementActive(u.entitlement),
         validUntil: u.entitlement?.validUntil ?? null,
+        // Süresi dolmuş grant'i "hiç premium olmamış"tan ayırmak için (yenileme akışı).
+        premiumExpired:
+          (u.entitlement?.isPremium ?? false) && !isEntitlementActive(u.entitlement),
         createdAt: u.createdAt,
       })),
       total,

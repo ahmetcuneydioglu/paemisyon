@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { publicApi, type DailyQuiz } from "@/lib/public-api";
 import { DailyQuizCard } from "@/components/daily-quiz";
+import { getPricing } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Günün Quizi — 10 Çıkmış Polis Sınavı Sorusu",
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
  * STATİK/ISR: istek durumu okunmaz; giriş durumu kartta istemcide sezilir (CTA için).
  */
 export default async function GununQuiziPage() {
-  const quiz = await publicApi<DailyQuiz>("/public/daily-quiz", 600).catch(() => null);
+  const [quiz, pricing] = await Promise.all([
+    publicApi<DailyQuiz>("/public/daily-quiz", 600).catch(() => null),
+    getPricing(),
+  ]);
 
   return (
     <div className="bg-(--color-navy-dark) px-4 py-12">
@@ -25,7 +29,7 @@ export default async function GununQuiziPage() {
           Her gün müfredattan 10 kaynaklı çıkmış soru. Yarın yenisi burada.
         </p>
         {quiz && quiz.count > 0 ? (
-          <DailyQuizCard quiz={quiz} />
+          <DailyQuizCard quiz={quiz} freeDailyLimit={pricing.freeDailyLimit} />
         ) : (
           <p className="text-white/70">
             Günün quizi şu an yüklenemedi —{" "}

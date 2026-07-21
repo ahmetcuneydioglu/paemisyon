@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CONTACT_HANDLE } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Kullanım Koşulları",
@@ -14,7 +15,7 @@ export default function KosullarPage() {
       <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
         Kullanım Koşulları
       </h1>
-      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 17 Temmuz 2026</p>
+      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 21 Temmuz 2026</p>
 
       <div className="space-y-8 text-[15px] leading-relaxed text-gray-700">
         <section>
@@ -72,17 +73,25 @@ export default function KosullarPage() {
           </h2>
           <ul className="list-disc space-y-1 pl-5">
             <li>
-              Premium abonelik satın alımları <strong>Apple App Store</strong>{" "}
-              üzerinden yapılır ve Apple&apos;ın satış koşullarına tabidir.
+              Premium, <strong>3 aylık tek paket</strong> olarak sunulur. Uygulama
+              içi satın alma yoktur: talebinizi Telegram veya Instagram hesabımız
+              (<strong>{CONTACT_HANDLE}</strong>) üzerinden iletirsiniz, ödeme
+              bilgileri size bu kanaldan bildirilir ve ödemeniz teyit edildiğinde
+              Premium erişiminiz hesabınıza tanımlanır.
             </li>
             <li>
-              Abonelik, dönem sonunda <strong>otomatik yenilenir</strong>; iptal
-              işlemi App Store hesap ayarlarından, dönem bitiminden en az 24 saat
-              önce yapılmalıdır.
+              Abonelik <strong>otomatik yenilenmez</strong>; sizden yinelenen bir
+              tahsilat yapılmaz ve iptal etmeniz gereken bir abonelik oluşmaz. 3
+              aylık süre dolduğunda hesabınız ücretsiz katmana döner.
             </li>
             <li>
-              İade talepleri Apple&apos;ın iade politikasına göre App Store
-              üzerinden değerlendirilir.
+              Ödemeyi Platform doğrudan tahsil ettiği için{" "}
+              <strong>iade talepleri de doğrudan Platform&apos;a</strong> iletilir.
+              Talebinizi aynı iletişim kanallarından veya{" "}
+              <a href="mailto:destek@paemisyon.com" className="underline">
+                destek@paemisyon.com
+              </a>{" "}
+              adresinden iletebilirsiniz; mevzuattan doğan haklarınız saklıdır.
             </li>
             <li>
               Ücretsiz katmanın kapsamı (günlük soru hakkı vb.) ve Premium

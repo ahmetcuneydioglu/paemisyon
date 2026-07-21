@@ -39,6 +39,20 @@ export interface DailyQuiz {
   questions: DailyQuizQuestion[];
 }
 
+/** Fiyat + ücretsiz limit (/public/pricing) — metinler sayıyı gömmez, buradan okur. */
+export interface PublicPlan {
+  key: string;
+  name: string;
+  /** Decimal string, ör. "499.99" */
+  price: string;
+  currency: string;
+  period: string;
+}
+export interface PublicPricing {
+  freeDailyLimit: number;
+  plans: PublicPlan[];
+}
+
 export interface LawSummary {
   slug: string;
   /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */

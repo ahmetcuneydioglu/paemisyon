@@ -18,7 +18,7 @@ export default function GizlilikPage() {
       <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
         Gizlilik Politikası ve KVKK Aydınlatma Metni
       </h1>
-      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 17 Temmuz 2026</p>
+      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 21 Temmuz 2026</p>
 
       <div className="space-y-8 text-[15px] leading-relaxed text-gray-700">
         <section>
@@ -54,10 +54,13 @@ export default function GizlilikPage() {
               ve tarayıcı bilgisi (hata ayıklama ve güvenlik logları).
             </li>
             <li>
-              <strong>Ödeme:</strong> Premium abonelik ödemeleri{" "}
-              <strong>Apple App Store</strong> üzerinden gerçekleşir; kredi kartı
-              bilgileriniz Platform&apos;a hiçbir zaman ulaşmaz. Bize yalnızca
-              aboneliğin geçerlilik durumu iletilir.
+              <strong>Ödeme ve iletişim:</strong> Premium talebinizi Telegram veya
+              Instagram üzerinden ilettiğinizde, o platformdaki kullanıcı adınız ve
+              bize yazdığınız mesaj içeriği (ödemeyi eşleştirmek için ilettiğiniz
+              hesap e-postanız ve dekont dahil) tarafımıza ulaşır. Bu veriler yalnızca
+              ödemeyi doğrulamak ve Premium erişimini hesabınıza tanımlamak için
+              kullanılır. <strong>Kart bilgilerinizi bizimle paylaşmayın</strong>;
+              Platform kart verisi talep etmez, işlemez ve saklamaz.
             </li>
           </ul>
         </section>
@@ -107,7 +110,9 @@ export default function GizlilikPage() {
               <strong>Vercel</strong> (web sitesi barındırma),
             </li>
             <li>
-              <strong>Apple</strong> (abonelik işlemleri),
+              <strong>Telegram</strong> ve <strong>Meta/Instagram</strong> (Premium
+              talebi ve ödeme koordinasyonu için bu kanallardan yazdığınızda; yalnız
+              sizin başlattığınız yazışma kapsamında),
             </li>
             <li>
               <strong>Anthropic</strong> (yapay zekâ soru açıklamaları — bu hizmete

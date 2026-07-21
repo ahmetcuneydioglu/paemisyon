@@ -38,7 +38,15 @@ export function ExamCenter({
         {/* Hero: canlı > sıradaki > sakin boşluk */}
         {active ? (
           <Card className="mb-5 border-live/50 p-6">
-            <span className="tk-caption text-live">● Canlı — şu an devam ediyor</span>
+            {/* Nokta rengi durum sinyali (metin değil, 3:1 yeterli); METİN ink-soft
+                kalır — açık temada --tk-accent-live 11px için 3.39:1 ile AA'yı
+                geçmiyor. Renk tek başına anlam taşımıyor: "Canlı" yazısı da var. */}
+            <span className="tk-caption">
+              <span aria-hidden className="text-live">
+                ●
+              </span>{" "}
+              Canlı — şu an devam ediyor
+            </span>
             <p className="mt-1 font-heading text-lg font-bold text-ink">{active.title}</p>
             <p className="mt-0.5 text-[13px] text-ink-soft">
               {active.questionCount} soru · {active.durationMinutes} dk ·{" "}

@@ -20,10 +20,13 @@ interface RevealResult {
 export function DailyQuizCard({
   quiz,
   loggedIn,
+  freeDailyLimit,
 }: {
   quiz: DailyQuiz;
   /** Belirtilmezse (statik sayfa) giriş durumu istemcide çerezden sezilir. */
   loggedIn?: boolean;
+  /** Ücretsiz günlük hak — sunucudan gelir, metne gömülmez. */
+  freeDailyLimit: number;
 }) {
   const [index, setIndex] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
@@ -87,7 +90,7 @@ export function DailyQuizCard({
             href="/bugun"
             className="mt-5 inline-block rounded-sm bg-white px-6 py-3 font-heading text-[15px] font-bold text-brand"
           >
-            Uygulamada devam et →
+            Bugün&apos;e devam et →
           </Link>
         ) : (
           <div className="mt-5 flex flex-col items-center gap-3">
@@ -95,7 +98,7 @@ export function DailyQuizCard({
               href="/kayit"
               className="rounded-sm bg-white px-6 py-3 font-heading text-[15px] font-bold text-brand"
             >
-              Ücretsiz kaydol — günde 15 soru + koç + seri
+              Ücretsiz kaydol — günde {freeDailyLimit} soru + koç + seri
             </Link>
             <span className="text-xs text-white/70">
               Zaten üye misin?{" "}

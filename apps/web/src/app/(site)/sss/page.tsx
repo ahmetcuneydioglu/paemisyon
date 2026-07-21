@@ -1,25 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CONTACT } from "@/lib/contact";
+import { formatPrice, getPricing, periodLabel, primaryPlan } from "@/lib/pricing";
 
 export const metadata: Metadata = {
   title: "Sık Sorulan Sorular",
   description:
-    "Paemisyon hakkında merak edilenler: sorular gerçek mi, Premium ne sunar, seri ve sigorta nasıl çalışır, hesap nasıl silinir?",
+    "Paemisyon hakkında merak edilenler: sorular gerçek mi, Premium ne sunar ve nasıl alınır, seri ve sigorta nasıl çalışır, hesap nasıl silinir?",
   alternates: { canonical: "/sss" },
 };
 
-const FAQS: { q: string; a: React.ReactNode }[] = [
+/** Fiyat ve günlük limit sunucudan gelir — metne gömülmez (Doc 27). */
+function buildFaqs(freeLimit: number, priceText: string | null): { q: string; a: React.ReactNode }[] {
+  return [
   {
     q: "Sorular gerçekten çıkmış sorular mı?",
     a: "Evet — bankamızın varlık nedeni bu. Sorular resmî kurumlarca kamuya açıklanmış geçmiş sınav kitapçıklarından derlenir ve her sorunun üzerinde kaynağı (hangi yıl, hangi sınav) yazar. Yapay zekâya soru ÜRETTİRMEYİZ; yapay zekâ yalnızca mevcut soruların açıklamasında yardımcı olur.",
   },
   {
     q: "Ücretsiz hesapla neler yapabilirim?",
-    a: "Günde 15 soru çözebilir, canlı denemelere katılabilir, kişisel koçunu ve ilerleme haritanı kullanabilirsin. Ücretsiz katman gerçek bir antrenman verir — tavsiye edilebilir kalması bizim ilkemiz.",
+    a: `Günde ${freeLimit} soru çözebilir, canlı denemelere katılabilir, kişisel koçunu ve ilerleme haritanı kullanabilirsin. Ücretsiz katman gerçek bir antrenman verir — tavsiye edilebilir kalması bizim ilkemiz.`,
   },
   {
     q: "Premium ne sunar?",
     a: "Sınırsız soru, süresiz akıllı tekrar hafızası, sınırsız yapay zekâ açıklaması ('Koça sor: neden yanlış?'), haftada 3 seri sigortası ve tüm premium konular. Kısacası: koçunun tam beyni.",
+  },
+  {
+    q: "Premium'a nasıl geçerim?",
+    a:
+      `Premium ${priceText ? `${priceText} olarak sunulur` : "tek paket olarak sunulur"} ve uygulama içi satın alma ile değil, doğrudan bizimle yapılır: ` +
+      `Telegram (${CONTACT.telegram.handle}) veya Instagram (${CONTACT.instagram.handle}) üzerinden bize yazarsın, ödeme bilgilerini paylaşırız, ` +
+      "ödemen ulaştığında hesabını elimizle premium yaparız. Aynı hesapla giriş yaptığın her yerde geçerli olur.",
   },
   {
     q: "Seri (streak) ve sigorta nasıl çalışır?",
@@ -34,8 +45,8 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     a: "Kanun konularında soruların hangi maddeden çıktığını gösteren haritamız: en çok soru çıkan maddeleri görür, maddeye dokunup o maddenin sorularını çözer, kanunu madde madde 'fethedersin'.",
   },
   {
-    q: "Aboneliğimi nasıl iptal ederim?",
-    a: "Abonelikler Apple App Store üzerinden yönetilir: iPhone'da Ayarlar → Ad Soyad → Abonelikler → Paemisyon → İptal. Dönem sonuna kadar Premium hakların devam eder.",
+    q: "Premium süresi bitince ne olur?",
+    a: "Otomatik yenileme yoktur — kartından tekrar çekim yapılmaz, iptal etmen gereken bir abonelik de yoktur. Süre dolduğunda hesabın ücretsiz katmana döner; çözdüğün sorular, serin, istatistiklerin ve rozetlerin durur. Devam etmek istersen bize tekrar yazman yeterli.",
   },
   {
     q: "Hesabımı ve verilerimi nasıl silerim?",
@@ -45,9 +56,19 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "Paemisyon resmî bir kurum mu?",
     a: "Hayır. Paemisyon bağımsız bir hazırlık platformudur; EGM, Polis Akademisi veya MEB ile bağlantısı yoktur. Sınav başvurusu ve resmî duyurular için tek kaynak ilgili kurumlardır.",
   },
-];
+  ];
+}
 
-export default function SssPage() {
+export default async function SssPage() {
+  const pricing = await getPricing();
+  const plan = primaryPlan(pricing);
+  // Düz metin cümlede (ve FAQPage JSON-LD'sinde) okunacağı için "/" gösterimi
+  // yerine tam Türkçe kuruluş: "3 ay için 499,99 TL".
+  const FAQS = buildFaqs(
+    pricing.freeDailyLimit,
+    plan ? `${periodLabel(plan.period)} için ${formatPrice(plan.price, plan.currency)}` : null,
+  );
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -84,6 +105,24 @@ export default function SssPage() {
 
       <div className="mt-8 rounded-xl bg-(--color-grey-bg) p-5 text-sm text-gray-600">
         Cevabını bulamadın mı? Bize yaz:{" "}
+        <a
+          href={CONTACT.telegram.href}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-(--color-navy) underline"
+        >
+          Telegram {CONTACT.telegram.handle}
+        </a>{" "}
+        ·{" "}
+        <a
+          href={CONTACT.instagram.href}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-(--color-navy) underline"
+        >
+          Instagram {CONTACT.instagram.handle}
+        </a>{" "}
+        ·{" "}
         <a href="mailto:destek@paemisyon.com" className="font-medium text-(--color-navy) underline">
           destek@paemisyon.com
         </a>{" "}

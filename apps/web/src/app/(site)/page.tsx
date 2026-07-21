@@ -3,6 +3,7 @@ import Link from "next/link";
 import { api } from "@/lib/api";
 import type { ExamListItem } from "@/lib/types";
 import { publicApi, type DailyQuiz, type LawSummary } from "@/lib/public-api";
+import { getPricing, formatPrice, periodLabel, primaryPlan } from "@/lib/pricing";
 import { Countdown } from "@/components/countdown";
 import { DailyQuizCard } from "@/components/daily-quiz";
 import { formatDate, formatTime } from "@/lib/format";
@@ -25,13 +26,16 @@ export const metadata: Metadata = {
  * middleware'e taşındı — fetch'lerin per-request revalidate'i CDN cache'ini sürer.
  */
 export default async function HomePage() {
-  const [exams, dailyQuiz, laws] = await Promise.all([
+  const [exams, dailyQuiz, laws, pricing] = await Promise.all([
     api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
       () => [] as ExamListItem[],
     ),
     publicApi<DailyQuiz>("/public/daily-quiz", 600).catch(() => null),
     publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]),
+    getPricing(),
   ]);
+  const freeLimit = pricing.freeDailyLimit;
+  const premiumPlan = primaryPlan(pricing);
 
   const next = [...exams]
     .filter((e) => e.state === "upcoming")
@@ -88,7 +92,7 @@ export default async function HomePage() {
             PAEM · Misyon — bugünün 10 soruluk quizini şimdi çöz, sonra koçunla devam et.
           </p>
           {dailyQuiz && dailyQuiz.count > 0 ? (
-            <DailyQuizCard quiz={dailyQuiz} loggedIn={false} />
+            <DailyQuizCard quiz={dailyQuiz} loggedIn={false} freeDailyLimit={freeLimit} />
           ) : (
             <Link
               href="/denemeler"
@@ -234,7 +238,7 @@ export default async function HomePage() {
               },
               {
                 q: "Ücretsiz hesapla neler yapabilirim?",
-                a: "Günde 15 soru, günün sorusu, canlı denemelere katılım, seri ve rozetler — ücretsiz katman gerçek antrenman verir, vitrin değildir.",
+                a: `Günde ${freeLimit} soru, günün quizi, canlı denemelere katılım, seri ve rozetler — ücretsiz katman gerçek antrenman verir, vitrin değildir.`,
               },
               {
                 q: "Premium ne sunar?",
@@ -259,21 +263,25 @@ export default async function HomePage() {
             <p className="tk-caption">Ücretsiz</p>
             <p className="mt-1 font-heading text-[17px] font-bold text-ink">Sonsuza dek 0 ₺</p>
             <ul className="mt-2 space-y-1 text-[13px] text-ink-soft">
-              <li>Günde 15 soru + günün sorusu</li>
+              <li>Günde {freeLimit} soru + günün quizi</li>
               <li>Canlı denemeler ve sıralama</li>
               <li>Seri, rozetler, temel koç</li>
             </ul>
           </div>
           <div className="rounded-md border border-brand/40 bg-brand/5 p-5">
             <p className="tk-caption text-brand">Premium</p>
-            <p className="mt-1 font-heading text-[17px] font-bold text-ink">Koçun tam beyni</p>
+            <p className="mt-1 font-heading text-[17px] font-bold text-ink">
+              {premiumPlan
+                ? `${formatPrice(premiumPlan.price, premiumPlan.currency)} / ${periodLabel(premiumPlan.period)}`
+                : "Koçun tam beyni"}
+            </p>
             <ul className="mt-2 space-y-1 text-[13px] text-ink-soft">
               <li>Sınırsız soru + süresiz tekrar hafızası</li>
               <li>Sınırsız AI açıklaması</li>
               <li>Haftada 3 seri sigortası</li>
             </ul>
             <Link href="/premium" className="mt-3 inline-block text-[13px] font-bold text-brand hover:underline">
-              Fiyatları gör →
+              Premium&apos;u incele →
             </Link>
           </div>
         </div>
@@ -285,14 +293,14 @@ export default async function HomePage() {
           <b className="text-ink">
             {totalLawQuestions > 0 ? `${totalLawQuestions}+ kanun sorusu` : "Büyüyen soru bankası"}
           </b>{" "}
-          · kaynaklı çıkmış sorular · mükerrersiz banka · canlı denemeler · iOS uygulaması
+          · kaynaklı çıkmış sorular · mükerrersiz banka · canlı denemeler · her cihazdan erişim
         </p>
         <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/kayit"
             className="rounded-sm bg-brand px-6 py-3 font-heading text-[15px] font-bold text-surface"
           >
-            Ücretsiz başla — günde 15 soru
+            Ücretsiz başla — günde {freeLimit} soru
           </Link>
           <Link href="/premium" className="text-[14px] font-bold text-brand hover:underline">
             Premium&apos;u incele →

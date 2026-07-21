@@ -6,6 +6,46 @@ import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
 import type { AdminUser, Paged } from '@/lib/types';
 
+/** 3 aylık paketin karşılığı. Telegram/Instagram üzerinden ödeme alınınca bu kadar verilir. */
+const DEFAULT_GRANT_DAYS = 90;
+
+/**
+ * Manuel premium verme diyaloğu. Component DIŞINDA: içinde `Date.now()` var ve
+ * component gövdesindeki her çağrı react-hooks/purity tarafından render fazı
+ * sayılıyor (yalnız onClick'ten çağrılsa bile).
+ */
+function promptGrantPremium(
+  email: string,
+  onGrant: (validUntil?: string) => void,
+): void {
+  const input = window.prompt(
+    `${email} için kaç GÜNLÜK premium verilsin?\n\n` +
+      `3 aylık paket = ${DEFAULT_GRANT_DAYS} gün (varsayılan).\n` +
+      'Yalnız sayı gir; süresiz vermek için "suresiz" yaz.',
+    String(DEFAULT_GRANT_DAYS),
+  );
+  if (input === null) return; // vazgeçildi
+
+  const raw = input.trim().toLocaleLowerCase('tr-TR');
+
+  if (raw === 'suresiz' || raw === 'süresiz') {
+    if (!window.confirm(`${email} SÜRESİZ premium olacak. Emin misin?`)) return;
+    onGrant(undefined);
+    return;
+  }
+
+  const days = Number(raw);
+  // Boş/metin/0/negatif girdi sessizce "süresiz"e düşmemeli. Eski hata buydu:
+  // Number('90 gün') → NaN → new Date(NaN).toISOString() RangeError fırlatıyordu
+  // (mutation hiç çağrılmıyor, ErrorBox da görünmüyordu); boş bırakmak ise
+  // 3 aylık ödeme karşılığında ömür boyu premium veriyordu.
+  if (!Number.isFinite(days) || days <= 0) {
+    window.alert(`Geçersiz gün sayısı: "${input}". Yalnız pozitif bir sayı gir (ör. ${DEFAULT_GRANT_DAYS}).`);
+    return;
+  }
+  onGrant(new Date(Date.now() + days * 864e5).toISOString());
+}
+
 /** Kullanıcı yönetimi (Doc 9 §5): arama, askıya alma, manuel premium. Parola YOK. */
 export default function UsersPage() {
   const qc = useQueryClient();
@@ -107,6 +147,10 @@ export default function UsersPage() {
                         <span className="text-xs">
                           ⭐ {u.validUntil ? `→ ${new Date(u.validUntil).toLocaleDateString('tr-TR')}` : 'süresiz'}
                         </span>
+                      ) : u.premiumExpired ? (
+                        <span className="text-xs text-amber-600">
+                          ⌛ süresi doldu ({new Date(u.validUntil!).toLocaleDateString('tr-TR')})
+                        </span>
                       ) : (
                         <span className="text-xs text-slate-400">—</span>
                       )}
@@ -130,22 +174,18 @@ export default function UsersPage() {
                         <button
                           onClick={() => {
                             if (u.isPremium) {
-                              if (window.confirm('Premium geri alınsın mı?')) {
+                              if (window.confirm(`${u.email} için premium geri alınsın mı?`)) {
                                 setPremium.mutate({ id: u.id, isPremium: false });
                               }
                             } else {
-                              const days = window.prompt('Kaç günlük premium? (boş = süresiz)');
-                              if (days === null) return;
-                              const validUntil =
-                                days.trim() === ''
-                                  ? undefined
-                                  : new Date(Date.now() + Number(days) * 864e5).toISOString();
-                              setPremium.mutate({ id: u.id, isPremium: true, validUntil });
+                              promptGrantPremium(u.email, (validUntil) =>
+                                setPremium.mutate({ id: u.id, isPremium: true, validUntil }),
+                              );
                             }
                           }}
                           className="text-violet-600 hover:underline"
                         >
-                          {u.isPremium ? 'Premium al' : 'Premium ver'}
+                          {u.isPremium ? 'Premium al' : u.premiumExpired ? 'Yenile' : 'Premium ver'}
                         </button>
                       </div>
                     </td>

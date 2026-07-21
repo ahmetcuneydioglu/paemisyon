@@ -12,6 +12,7 @@ import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { mixQuota, pickMix, pickTopicBalanced } from './session-mix.logic';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -704,7 +705,7 @@ export class QuizService {
       return this.planLimitCache.limit;
     }
     const freePlan = await this.prisma.plan.findUnique({ where: { key: 'free' } });
-    const limit = freePlan?.dailyQuestionLimit ?? 15;
+    const limit = freePlan?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK;
     this.planLimitCache = { limit, expiresAt: Date.now() + 60_000 };
     return limit;
   }

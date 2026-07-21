@@ -6,6 +6,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
+import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 
 /// GET/PATCH /api/v1/me — profil + entitlement (Doc 7 §4.2). Kimlik zorunlu.
 @Controller('me')
@@ -97,7 +98,7 @@ export class UsersController {
       today: {
         answered: usage?.questionsAnswered ?? 0,
         // premium'da limit yok (null) — UI sınırsız gösterir.
-        dailyLimit: user.isPremium ? null : (freePlan?.dailyQuestionLimit ?? 15),
+        dailyLimit: user.isPremium ? null : (freePlan?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK),
       },
       daily: { playedToday: dailySession?.status === 'completed' },
       stats: {
