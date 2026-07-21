@@ -392,15 +392,25 @@ function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) 
         mevzuat.gov.tr&apos;den kanunun PDF&apos;ini indir (MevzuatMetin/…pdf) ve yükle — tüm
         maddeler otomatik bölünüp kaydedilir. Metin birebir resmî; kaynak görünür.
       </p>
-      <input
-        type="file"
-        accept="application/pdf,.pdf,.txt"
-        onChange={(e) => {
-          setFile(e.target.files?.[0] ?? null);
-          setReport(null);
-        }}
-        className="mt-3 block text-sm"
-      />
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <label className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+          📄 PDF seç
+          <input
+            type="file"
+            accept="application/pdf,.pdf,.txt"
+            onChange={(e) => {
+              setFile(e.target.files?.[0] ?? null);
+              setReport(null);
+            }}
+            className="hidden"
+          />
+        </label>
+        {file ? (
+          <span className="text-sm text-emerald-700">✓ {file.name}</span>
+        ) : (
+          <span className="text-sm text-slate-400">Henüz dosya seçilmedi</span>
+        )}
+      </div>
       <input
         value={sourceUrl}
         onChange={(e) => setSourceUrl(e.target.value)}
@@ -438,6 +448,7 @@ function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) 
         >
           {run.isPending ? 'İşleniyor…' : publish ? 'İçe aktar + yayınla' : 'İçe aktar (taslak)'}
         </button>
+        {!file && <span className="text-xs text-slate-400">Butonlar için önce PDF seç.</span>}
       </div>
       {run.isError && (
         <div className="mt-3">
