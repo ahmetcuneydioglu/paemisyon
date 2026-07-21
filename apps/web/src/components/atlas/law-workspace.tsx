@@ -93,6 +93,13 @@ export function LawWorkspace({
       </nav>
       <h1 className="font-heading text-xl font-bold text-ink">{law.name}</h1>
 
+      {/* Kanunu oku (Doc 25 §4 okuma katmanı) — tam metin varsa, tek giriş. */}
+      {law.readable && (
+        <ButtonLink href={`/kanun/${law.slug}/oku`} variant="secondary" size="lg">
+          📖 Kanunun güncel tam metnini oku
+        </ButtonLink>
+      )}
+
       {top5.length > 0 && (
         <Card>
           <CardTitle>

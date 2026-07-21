@@ -385,14 +385,16 @@ export class PublicService {
       }),
     ]);
     const textNos = new Set(textArticles.map((r) => r.articleNo));
-    const countMap = new Map(articleGroups.map((g) => [g.articleNo!, g._count._all]));
-    const allNos = new Set<string>([...countMap.keys(), ...textNos]);
-    const articles = [...allNos]
-      .map((no) => ({
-        no,
-        slug: articleSlug(no),
-        questionCount: countMap.get(no) ?? 0,
-        hasText: textNos.has(no),
+    // Isı haritası/atlas YALNIZ çıkmış soru etiketli maddeleri gösterir (Doc 25 §4).
+    // İçe aktarılan tam metin maddeleri buraya KATILMAZ — yoksa sorusuz kanunlar
+    // "0 soru" satırlarıyla dolar. Tam metin ayrı "Kanunu oku" akışında sunulur
+    // (`readable` bayrağı + /read ucu).
+    const articles = articleGroups
+      .map((g) => ({
+        no: g.articleNo!,
+        slug: articleSlug(g.articleNo!),
+        questionCount: g._count._all,
+        hasText: textNos.has(g.articleNo!),
       }))
       .sort((a, b) => b.questionCount - a.questionCount || articleOrder(a.no) - articleOrder(b.no));
     const readable = textNos.size > 0;
