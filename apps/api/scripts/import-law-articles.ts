@@ -85,12 +85,29 @@ async function main() {
   // PDF (mevzuat.gov.tr'den indirilen) → metne çevir; değilse UTF-8 metin oku.
   const isPdf = file.toLowerCase().endsWith('.pdf');
   const raw = isPdf ? await extractPdfLawText(readFileSync(file)) : readFileSync(file, 'utf8');
-  const parsed = parseLawText(raw);
-  if (parsed.length === 0) {
+  const parsedRaw = parseLawText(raw);
+  if (parsedRaw.length === 0) {
     console.error(
       'Metinden hiç madde çözümlenemedi — dosya biçimini kontrol et (satır başında "Madde N –").',
     );
     process.exit(1);
+  }
+
+  // Aynı madde no birden çok kez geçebilir: mükerrer "Geçici Madde 1" (farklı
+  // değişiklik kanunlarından) veya belge sonundaki dipnot/atıf artıkları
+  // ("...6", "Ek 6"). Tekil anahtar (topicId, articleNo) tek kayıt tutar; İLK
+  // geçen (gerçek madde, dipnotlardan önce) kazanır — sonraki artık gerçek
+  // metni EZMESİN. Düşülenler raporlanır.
+  const seenNo = new Set<string>();
+  const parsed: typeof parsedRaw = [];
+  const duplicateNos: string[] = [];
+  for (const a of parsedRaw) {
+    if (seenNo.has(a.articleNo)) {
+      duplicateNos.push(a.articleNo);
+      continue;
+    }
+    seenNo.add(a.articleNo);
+    parsed.push(a);
   }
 
   const prisma = new PrismaClient({
@@ -139,6 +156,11 @@ async function main() {
 
     console.log(`Kanun: ${topic.name}`);
     console.log(`Metinden çözümlenen madde: ${parsed.length}`);
+    if (duplicateNos.length) {
+      console.log(
+        `Mükerrer/artık madde no (ilk gövde tutuldu, sonrakiler düşüldü): ${duplicateNos.join(', ')}`,
+      );
+    }
     console.log(`Soru etiketli madde: ${tagged.size}${ALL ? ' (--all: tümü yazılıyor)' : ''}`);
     console.log(`Yazılacak: ${toWrite.length}`);
     if (skippedLocked.length) {
