@@ -19,6 +19,8 @@ export interface ImportLawOptions {
   all: boolean;
   /** true: doğrudan yayınla (yalnız admin); false: taslak. */
   publish: boolean;
+  /** true: yayınlanmış maddeleri de üzerine yaz (yalnız admin). */
+  force: boolean;
   /** true: yazma, yalnız rapor döndür. */
   dryRun: boolean;
   sourceName?: string;
@@ -231,8 +233,10 @@ export class AdminLawArticlesService {
    * Yayın yalnız admin (soru onayıyla aynı ilke).
    */
   async importPdf(actor: AuthenticatedUser, topicId: string, opts: ImportLawOptions) {
-    if (opts.publish && !actor.roles.includes('admin')) {
-      throw new ForbiddenException('Yayın yetkisi admin’dedir; taslak olarak içe aktarabilirsin.');
+    if ((opts.publish || opts.force) && !actor.roles.includes('admin')) {
+      throw new ForbiddenException(
+        'Yayın/üzerine yazma yetkisi admin’dedir; taslak olarak içe aktarabilirsin.',
+      );
     }
     const topic = await this.prisma.topic.findUnique({
       where: { id: topicId },
@@ -280,8 +284,8 @@ export class AdminLawArticlesService {
     const skippedLocked: string[] = [];
     for (const a of candidates) {
       const st = existing.get(a.articleNo);
-      // Yayınlanmışı ezme — panelden önce yayından al, sonra yeniden yükle.
-      if (st === 'published') {
+      // Yayınlanmışı ezme — force ile üzerine yaz (düzeltme/yeniden içe aktarma).
+      if (st === 'published' && !opts.force) {
         skippedLocked.push(a.articleNo);
         continue;
       }

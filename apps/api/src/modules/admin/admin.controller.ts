@@ -394,6 +394,7 @@ export class AdminController {
     @Query('dryRun') dryRun?: string,
     @Query('all') all?: string,
     @Query('publish') publish?: string,
+    @Query('force') force?: string,
     @Body('sourceUrl') sourceUrl?: string,
     @Body('effectiveInfo') effectiveInfo?: string,
   ) {
@@ -406,6 +407,7 @@ export class AdminController {
       filename: file.originalname ?? 'law.pdf',
       all: isTrue(all),
       publish: isTrue(publish),
+      force: isTrue(force),
       dryRun: isTrue(dryRun),
       sourceUrl,
       effectiveInfo,

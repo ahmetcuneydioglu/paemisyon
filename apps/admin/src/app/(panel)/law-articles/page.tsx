@@ -25,7 +25,7 @@ interface ImportReport {
 async function uploadLawPdf(
   topicId: string,
   file: File,
-  opts: { all: boolean; publish: boolean; dryRun: boolean; sourceUrl: string },
+  opts: { all: boolean; publish: boolean; force: boolean; dryRun: boolean; sourceUrl: string },
 ): Promise<ImportReport> {
   const form = new FormData();
   form.append('file', file);
@@ -34,6 +34,7 @@ async function uploadLawPdf(
     topicId,
     all: opts.all ? '1' : '0',
     publish: opts.publish ? '1' : '0',
+    force: opts.force ? '1' : '0',
     dryRun: opts.dryRun ? '1' : '0',
   });
   const { data } = await supabase().auth.getSession();
@@ -371,13 +372,14 @@ function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) 
   const [file, setFile] = useState<File | null>(null);
   const [all, setAll] = useState(true);
   const [publish, setPublish] = useState(false);
+  const [force, setForce] = useState(false);
   const [sourceUrl, setSourceUrl] = useState('');
   const [report, setReport] = useState<ImportReport | null>(null);
 
   const run = useMutation({
     mutationFn: (dryRun: boolean) => {
       if (!file) throw new Error('Önce bir PDF seç.');
-      return uploadLawPdf(topicId, file, { all, publish, dryRun, sourceUrl });
+      return uploadLawPdf(topicId, file, { all, publish, force, dryRun, sourceUrl });
     },
     onSuccess: (data) => {
       setReport(data);
@@ -430,6 +432,12 @@ function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) 
               onChange={(e) => setPublish(e.target.checked)}
             />
             Doğrudan yayınla
+          </label>
+        )}
+        {isAdmin && (
+          <label className="flex items-center gap-1.5">
+            <input type="checkbox" checked={force} onChange={(e) => setForce(e.target.checked)} />
+            Yayınlanmışı da güncelle (üzerine yaz)
           </label>
         )}
       </div>

@@ -96,13 +96,51 @@ function canonical(kind: Kind, rawNo: string): string | null {
   return v;
 }
 
-/** Gövde metnini toparlar: kenar boşlukları at, 3+ boş satırı 2'ye indir. */
+/**
+ * Bir bölüm/alt-başlık satırı mı? ("2. Mahalli idareler", "A. Cumhurbaşkanı",
+ * "II. Yürütme", "1. Nitelikleri"). Türk mevzuatında maddeler bu başlıklar altında
+ * gruplanır; başlık iki madde arasında durur ve parser onu ÖNCEKİ maddenin sonuna
+ * ekler → gövdeye sızar. Ayırt edici: numaralandırıcı (rakam/tek büyük harf/roma) +
+ * ayraç + Büyük harfle başlayan KISA başlık; cümle/madde-içi öğe gibi nokta/iki
+ * nokta ile BİTMEZ ve uzun DEĞİLdir.
+ */
+function isSectionHeading(t: string): boolean {
+  if (t.length > 60) return false; // uzun → gövde cümlesi/öğesi
+  if (/[.:;,]$/.test(t)) return false; // cümle/öğe noktalamasıyla biter → başlık değil
+  if (/\d$/.test(t)) return false; // sonda dipnot rakamı olan gövde satırı → başlık değil
+  // Numaralandırılmış: "2. Mahalli idareler", "A. Cumhurbaşkanı", "II. Yürütme"
+  if (/^([IVXLCDM]{1,4}|[A-ZÇĞİÖŞÜ]|\d{1,2})\s*[.\-–)]\s+\p{Lu}/u.test(t)) return true;
+  // Numaralandırılmamış kısa başlık: Büyük harfle başlar, ≤ 6 kelime, noktalama yok
+  // ("Parmak izi ve fotoğrafların kayda alınması"). Gövde satırları hemen daima
+  // noktayla biter → noktasız kısa Başlık-Biçimi satır güçlü başlık sinyalidir.
+  const words = t.split(/\s+/).filter(Boolean);
+  return words.length <= 6 && /^\p{Lu}/u.test(t);
+}
+
+/** Gövdenin SONUNDAKİ bölüm başlığı satırlarını (ve boşları) kırpar. */
+function stripTrailingHeadings(text: string): string {
+  const lines = text.split('\n');
+  let end = lines.length;
+  while (end > 0) {
+    const t = lines[end - 1].trim();
+    if (t === '' || isSectionHeading(t)) {
+      end -= 1;
+      continue;
+    }
+    break;
+  }
+  return lines.slice(0, end).join('\n').trimEnd();
+}
+
+/** Gövde metnini toparlar: kenar boşlukları at, 3+ boş satırı 2'ye indir,
+ *  sondaki bölüm başlıklarını (sonraki maddeye ait) kırp. */
 function cleanBody(lines: string[]): string {
-  return lines
+  const text = lines
     .join('\n')
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+  return stripTrailingHeadings(text);
 }
 
 /**
