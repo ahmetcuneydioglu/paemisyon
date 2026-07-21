@@ -34,7 +34,7 @@ export default function ExamsPage() {
         <ErrorBox error={q.error} onRetry={() => q.refetch()} />
       ) : (
         <Card className="p-0">
-          <table className="w-full text-sm">
+          <div className="overflow-x-auto"><table className="w-full min-w-[560px] text-sm">
             <thead>
               <tr className="border-b border-slate-100 text-left text-xs text-slate-500">
                 <th className="px-5 py-3 font-medium">Deneme</th>
@@ -83,7 +83,7 @@ export default function ExamsPage() {
                 </tr>
               )}
             </tbody>
-          </table>
+          </table></div>
         </Card>
       )}
     </>

@@ -24,6 +24,7 @@ export default function PanelLayout({ children }: { children: React.ReactNode })
   const router = useRouter();
   const [me, setMe] = useState<{ email: string; roles: string[] } | null>(null);
   const [checking, setChecking] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -66,18 +67,61 @@ export default function PanelLayout({ children }: { children: React.ReactNode })
 
   return (
     <div className="flex min-h-screen">
-      <aside className="flex w-60 shrink-0 flex-col border-r border-slate-200 bg-white">
-        <div className="border-b border-slate-100 px-5 py-4">
-          <div className="text-base font-semibold">Paemisyon</div>
-          <div className="text-xs text-slate-500">Yönetim Paneli</div>
+      {/* Mobil üst çubuk: hamburger + başlık (md ve üstünde gizli). */}
+      <header className="fixed inset-x-0 top-0 z-30 flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3 md:hidden">
+        <button
+          onClick={() => setNavOpen(true)}
+          aria-label="Menüyü aç"
+          className="rounded-lg p-1.5 text-slate-600 hover:bg-slate-100"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+        <span className="text-base font-semibold">Paemisyon</span>
+      </header>
+
+      {/* Mobil çekmece arka planı (açıkken). */}
+      {navOpen && (
+        <button
+          aria-label="Menüyü kapat"
+          onClick={() => setNavOpen(false)}
+          className="fixed inset-0 z-30 bg-black/30 md:hidden"
+        />
+      )}
+
+      {/* Kenar menü: masaüstünde akışta sabit; mobilde soldan kayan çekmece. */}
+      <aside
+        className={`fixed inset-y-0 left-0 z-40 flex w-60 shrink-0 flex-col border-r border-slate-200 bg-white transition-transform duration-200 md:static md:translate-x-0 ${
+          navOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex items-start justify-between border-b border-slate-100 px-5 py-4">
+          <div>
+            <div className="text-base font-semibold">Paemisyon</div>
+            <div className="text-xs text-slate-500">Yönetim Paneli</div>
+          </div>
+          <button
+            onClick={() => setNavOpen(false)}
+            aria-label="Menüyü kapat"
+            className="-mr-1 rounded-lg p-1 text-slate-400 hover:bg-slate-100 md:hidden"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
         </div>
-        <nav className="flex-1 space-y-1 p-3">
+        <nav className="flex-1 space-y-1 overflow-y-auto p-3">
           {NAV.filter((n) => !('adminOnly' in n && n.adminOnly) || isAdmin).map((n) => {
             const active = n.href === '/' ? pathname === '/' : pathname.startsWith(n.href);
             return (
               <Link
                 key={n.href}
                 href={n.href}
+                onClick={() => setNavOpen(false)}
                 className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm ${
                   active
                     ? 'bg-indigo-50 font-medium text-indigo-700'
@@ -104,7 +148,9 @@ export default function PanelLayout({ children }: { children: React.ReactNode })
           </button>
         </div>
       </aside>
-      <main className="min-w-0 flex-1 p-8">{children}</main>
+
+      {/* İçerik: mobilde üst çubuk için pt-16, dar padding; masaüstünde geniş. */}
+      <main className="min-w-0 flex-1 p-4 pt-16 md:p-8">{children}</main>
     </div>
   );
 }
