@@ -114,6 +114,14 @@ export interface LawArticleDetail {
   no: string;
   slug: string;
   questionCount: number;
+  /** Resmî madde metni (yayınlanmışsa) — Doc 25 §4 adım 3. Yoksa null. */
+  text: {
+    body: string;
+    source: string;
+    sourceUrl: string | null;
+    effectiveInfo: string | null;
+    verifiedAt: string | null;
+  } | null;
   exams: ExamContext[];
   sources: { source: string; count: number }[];
   previews: string[];

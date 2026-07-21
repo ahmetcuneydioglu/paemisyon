@@ -24,10 +24,12 @@ import { AdminDashboardService } from './dashboard/admin-dashboard.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
+import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AuditService } from './audit.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { ReportsService } from '../reports/reports.service';
 import { UpsertQuestionDto } from './dto/upsert-question.dto';
+import { UpsertLawArticleDto } from './dto/law-article.dto';
 import {
   AttachCourseDto,
   ReorderDto,
@@ -49,6 +51,7 @@ export class AdminController {
     private readonly catalog: AdminCatalogService,
     private readonly questions: AdminQuestionsService,
     private readonly users: AdminUsersService,
+    private readonly lawArticles: AdminLawArticlesService,
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
     private readonly settings: SettingsService,
@@ -72,10 +75,7 @@ export class AdminController {
     @Body() body: { showQuestionSource?: boolean },
   ) {
     if (typeof body.showQuestionSource === 'boolean') {
-      await this.settings.set(
-        SETTING_KEYS.showQuestionSource,
-        String(body.showQuestionSource),
-      );
+      await this.settings.set(SETTING_KEYS.showQuestionSource, String(body.showQuestionSource));
       await this.audit.log(actor, 'settings.update', 'setting', SETTING_KEYS.showQuestionSource, {
         value: body.showQuestionSource,
       });
@@ -350,6 +350,56 @@ export class AdminController {
   @Roles('admin')
   archiveQuestion(@CurrentUser() actor: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
     return this.questions.archive(actor, id);
+  }
+
+  // ── Resmî madde metni (Madde Atlası içerik hattı — Doc 25 §4 adım 3) ──
+  // Kanun listesi + kapsama (worklist): hangi kanunda kaç madde metni eksik.
+  @Get('law-articles/laws')
+  @Roles('admin', 'editor')
+  lawArticleLaws() {
+    return this.lawArticles.laws();
+  }
+
+  // Bir kanunun maddeleri (etiketli sorular ∪ girilmiş metinler).
+  @Get('law-articles')
+  @Roles('admin', 'editor')
+  lawArticleList(@Query('topicId', ParseUUIDPipe) topicId: string) {
+    return this.lawArticles.articles(topicId);
+  }
+
+  // Metin oluştur/güncelle — (topicId, articleNo) anahtarıyla upsert; taslak.
+  @Patch('law-articles')
+  @Roles('admin', 'editor')
+  upsertLawArticle(@CurrentUser() actor: AuthenticatedUser, @Body() dto: UpsertLawArticleDto) {
+    return this.lawArticles.upsert(actor, dto);
+  }
+
+  // Yayın YALNIZCA admin — mevzuat güvencesi (soru onayıyla aynı ilke).
+  @Post('law-articles/:id/publish')
+  @Roles('admin')
+  publishLawArticle(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    return this.lawArticles.publish(actor, id);
+  }
+
+  @Post('law-articles/:id/unpublish')
+  @Roles('admin')
+  unpublishLawArticle(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    return this.lawArticles.unpublish(actor, id);
+  }
+
+  @Delete('law-articles/:id')
+  @Roles('admin')
+  deleteLawArticle(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    return this.lawArticles.remove(actor, id);
   }
 
   // ── Kullanıcılar (yalnızca admin — editor kullanıcı verisi göremez) ──
