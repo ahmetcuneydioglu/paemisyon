@@ -16,6 +16,9 @@ import { newExamRule } from './rules/new-exam.rule';
 import { quickReviewRule } from './rules/quick-review.rule';
 import { streakRiskRule } from './rules/streak-risk.rule';
 import { weakTopicRule } from './rules/weak-topic.rule';
+import { onboardingRule } from './rules/onboarding.rule';
+import { postExamRule } from './rules/post-exam.rule';
+import { aftermathRule } from './rules/aftermath.rule';
 
 /** Nötr bağlam: hiçbir kural tetiklenmez; testler tek alanı değiştirir. */
 function ctx(over: Partial<CoachContext> = {}): CoachContext {
@@ -51,6 +54,8 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     daysSinceLastActivity: 0,
     activeDaysTotal: 0,
     daysToExam: null,
+    daysSinceExam: null,
+    recentDeneme: null,
     volume: { last7: 0, prev7: 0 },
     ...over,
   };
@@ -128,7 +133,12 @@ describe('streak_risk (kural 4)', () => {
     expect(streakRiskRule(ctx({ ...risky, trHour: 17 }))).toBeNull();
     expect(streakRiskRule(ctx({ ...risky, answeredToday: 3 }))).toBeNull();
     expect(
-      streakRiskRule(ctx({ ...risky, streak: { current: 0, longest: 0, activeYesterday: true, freezesLeft: 1 } })),
+      streakRiskRule(
+        ctx({
+          ...risky,
+          streak: { current: 0, longest: 0, activeYesterday: true, freezesLeft: 1 },
+        }),
+      ),
     ).toBeNull();
   });
 });
@@ -194,12 +204,16 @@ describe('badge_near (kural 10)', () => {
   });
   it('%80 altında sessiz', () => {
     expect(
-      badgeNearRule(ctx({ nextBadge: { key: 'solved_100', name: '100 Soru', progress: 50, target: 100 } })),
+      badgeNearRule(
+        ctx({ nextBadge: { key: 'solved_100', name: '100 Soru', progress: 50, target: 100 } }),
+      ),
     ).toBeNull();
   });
   it('eşik aşıldıysa (hak edilmiş, verilmemiş) "kaldı" demez', () => {
     expect(
-      badgeNearRule(ctx({ nextBadge: { key: 'first_session', name: 'İlk Adım', progress: 1, target: 1 } })),
+      badgeNearRule(
+        ctx({ nextBadge: { key: 'first_session', name: 'İlk Adım', progress: 1, target: 1 } }),
+      ),
     ).toBeNull();
   });
 });
@@ -233,8 +247,11 @@ describe('comeback (kural 12)', () => {
 
 describe('motivation (kural 13)', () => {
   it('metin veriye göre deterministik: seri > hedef > varsayılan', () => {
-    expect(motivationRule(ctx({ streak: { current: 5, longest: 5, activeYesterday: true, freezesLeft: 1 } }))?.title)
-      .toBe('5 gündür üst üste çalışıyorsun');
+    expect(
+      motivationRule(
+        ctx({ streak: { current: 5, longest: 5, activeYesterday: true, freezesLeft: 1 } }),
+      )?.title,
+    ).toBe('5 gündür üst üste çalışıyorsun');
     expect(motivationRule(ctx({ answeredToday: 25 }))?.title).toBe('Bugünkü hedefini tamamladın');
     expect(motivationRule(ctx())?.title).toBe('Bugün de bir adım ileri');
   });
@@ -295,15 +312,80 @@ describe('slump_watch (tempo düşüşü)', () => {
   });
   it('tempo korunuyorsa veya sınav yaklaşmışsa sessiz', () => {
     expect(slumpWatchRule(ctx({ volume: { last7: 45, prev7: 80 } }))).toBeNull();
+    expect(slumpWatchRule(ctx({ volume: { last7: 10, prev7: 80 }, daysToExam: 20 }))).toBeNull();
+  });
+});
+
+describe('onboarding (ilk 3 seans — Doc 24 §3)', () => {
+  it('kurulum eksikse kuruluma yönlendirir', () => {
+    const c = onboardingRule(ctx({ user: { ...ctx().user, onboardingCompleted: false } }));
+    expect(c?.priority).toBe(88);
+    expect(c?.title).toContain('Kurulum');
+    expect(c?.cta?.route).toBe('/onboarding');
+    expect(c?.meta?.step).toBe('setup');
+  });
+  it('kurulum tamam + <3 seansta ilk devriyeye çağırır', () => {
+    const c = onboardingRule(ctx({ stats: { totalSolved: 0, totalCorrect: 0, totalSessions: 1 } }));
+    expect(c?.title).toContain('İlk devriye');
+    expect(c?.cta?.route).toBe('/catalog');
+    expect(c?.meta?.step).toBe('first_sessions');
+  });
+  it('3+ seansta sessiz (kullanıcı artık yeni değil)', () => {
     expect(
-      slumpWatchRule(ctx({ volume: { last7: 10, prev7: 80 }, daysToExam: 20 })),
+      onboardingRule(ctx({ stats: { totalSolved: 40, totalCorrect: 30, totalSessions: 3 } })),
     ).toBeNull();
+  });
+});
+
+describe('post_exam (deneme sonrası — Doc 24 §3)', () => {
+  it('son 48 saatte deneme bittiyse sonucu incelemeye çağırır', () => {
+    const c = postExamRule(
+      ctx({ recentDeneme: { examId: 'e9', title: 'Genel Deneme', wrongCount: 0 } }),
+    );
+    expect(c?.priority).toBe(82);
+    expect(c?.title).toBe('Deneme sonucun hazır');
+    expect(c?.cta?.route).toBe('/denemeler/e9');
+    expect(c?.body).toContain('Genel Deneme');
+  });
+  it('yanlış varsa doğrudan yanlış turuna yönlendirir', () => {
+    const c = postExamRule(
+      ctx({ recentDeneme: { examId: 'e9', title: 'Genel Deneme', wrongCount: 12 } }),
+    );
+    expect(c?.cta?.route).toBe('/review');
+    expect(c?.cta?.label).toContain('12');
+  });
+  it('yakın zamanda deneme yoksa sessiz', () => {
+    expect(postExamRule(ctx())).toBeNull();
+  });
+});
+
+describe('aftermath (sınav geçti — Doc 24 §3)', () => {
+  it('sınav bugün geçtiyse geçmiş olsun der', () => {
+    const c = aftermathRule(ctx({ daysSinceExam: 0 }));
+    expect(c?.priority).toBe(78);
+    expect(c?.title).toContain('bugündü');
+    expect(c?.cta?.route).toBe('/onboarding');
+  });
+  it('14 gün içinde sıradaki hedefe köprü kurar, emeği anar', () => {
+    const c = aftermathRule(
+      ctx({
+        daysSinceExam: 5,
+        stats: { totalSolved: 3200, totalCorrect: 2400, totalSessions: 120 },
+      }),
+    );
+    expect(c?.title).toContain('geçti');
+    expect(c?.body).toContain('3.200');
+    expect(c?.cta?.label).toContain('hedef');
+  });
+  it('sınav geçmediyse veya 14 günden eskiyse sessiz', () => {
+    expect(aftermathRule(ctx())).toBeNull();
+    expect(aftermathRule(ctx({ daysSinceExam: 15 }))).toBeNull();
   });
 });
 
 describe('deriveMode (durum makinesi etiketi — Doc 25 §3)', () => {
   const card = (type: string) => ({ type, priority: 50, title: 't' }) as any;
-  it('öncelik sırası: comeback > taper > exam_day > streak_risk > exam_mode > slump_watch', () => {
+  it('mevcut öncelik: comeback > taper > exam_day > streak_risk > exam_mode > slump_watch', () => {
     expect(deriveMode(ctx(), [card('comeback'), card('taper')])).toBe('comeback');
     expect(deriveMode(ctx(), [card('taper'), card('exam_live')])).toBe('taper');
     expect(deriveMode(ctx(), [card('exam_today'), card('streak_risk')])).toBe('exam_day');
@@ -311,5 +393,14 @@ describe('deriveMode (durum makinesi etiketi — Doc 25 §3)', () => {
     expect(deriveMode(ctx(), [card('exam_mode'), card('slump_watch')])).toBe('exam_mode');
     expect(deriveMode(ctx(), [card('slump_watch')])).toBe('slump_watch');
     expect(deriveMode(ctx(), [card('goal_remaining')])).toBe('normal');
+  });
+  it('yeni durumlar: exam_day > aftermath > onboarding > post_exam > streak_risk', () => {
+    expect(deriveMode(ctx(), [card('exam_live'), card('aftermath')])).toBe('exam_day');
+    expect(deriveMode(ctx(), [card('aftermath'), card('onboarding')])).toBe('aftermath');
+    expect(deriveMode(ctx(), [card('onboarding'), card('post_exam')])).toBe('onboarding');
+    expect(deriveMode(ctx(), [card('post_exam'), card('streak_risk')])).toBe('post_exam');
+    expect(deriveMode(ctx(), [card('aftermath')])).toBe('aftermath');
+    expect(deriveMode(ctx(), [card('onboarding')])).toBe('onboarding');
+    expect(deriveMode(ctx(), [card('post_exam')])).toBe('post_exam');
   });
 });

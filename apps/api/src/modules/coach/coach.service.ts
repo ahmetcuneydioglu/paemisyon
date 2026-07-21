@@ -29,9 +29,20 @@ export class CoachService {
     // Geri dönüş kartı TEK BAŞINA gösterilir (Doc 19 kural 12):
     // uzun aradan dönen kullanıcıyı görev listesiyle boğma.
     const comeback = cards.find((c) => c.type === 'comeback');
+    const aftermath = cards.find((c) => c.type === 'aftermath');
     const taper = cards.find((c) => c.type === 'taper');
     if (comeback) {
       cards = [comeback];
+    } else if (aftermath) {
+      // Sınav sonrası (Doc 24 §3): grind susar — sakin devir mesajı + (varsa)
+      // canlı/bugünkü deneme kartı kalır (yeni bir denemeye çağrı meşru).
+      cards = cards.filter(
+        (c) =>
+          c.type === 'aftermath' ||
+          c.type === 'exam_live' ||
+          c.type === 'exam_in_progress' ||
+          c.type === 'exam_today',
+      );
     } else if (taper) {
       // Taper (Doc 24 §1/son 3 gün): görev listesi bastırılır — yalnız sakin
       // güven mesajı + (varsa) canlı/bugünkü deneme kartı kalır.
@@ -124,6 +135,7 @@ export class CoachService {
       maxDaily,
       snapshots,
       recentUsage,
+      recentDeneme,
     ] = await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
@@ -203,6 +215,17 @@ export class CoachService {
           usageDate: { gte: new Date(todayUtc.getTime() - 14 * 86_400_000) },
         },
         select: { usageDate: true, questionsAnswered: true },
+      }),
+      // Deneme sonrası (post_exam): son 48 saatte tamamlanmış randevulu deneme.
+      this.prisma.quizSession.findFirst({
+        where: {
+          userId: user.id,
+          mode: 'deneme',
+          status: 'completed',
+          completedAt: { gte: twoDaysAgo },
+        },
+        orderBy: { completedAt: 'desc' },
+        select: { examId: true, wrongCount: true, exam: { select: { title: true } } },
       }),
     ]);
 
@@ -354,9 +377,7 @@ export class CoachService {
               durationMinutes: todayUpcoming.durationMinutes,
             }
           : null,
-        newPublished: newPublished
-          ? { id: newPublished.id, title: newPublished.title }
-          : null,
+        newPublished: newPublished ? { id: newPublished.id, title: newPublished.title } : null,
         completedCount: denemeAgg._count._all,
         bestNet: denemeAgg._max.score != null ? Number(denemeAgg._max.score) : null,
       },
@@ -369,6 +390,15 @@ export class CoachService {
       weeklyPhoto,
       daysSinceLastActivity: daysSince,
       daysToExam: daysToExam != null && daysToExam >= 0 ? daysToExam : null,
+      // Sınav geçtiyse (negatif fark) mutlak gün — aftermath penceresi (Doc 24 §3).
+      daysSinceExam: daysToExam != null && daysToExam < 0 ? -daysToExam : null,
+      recentDeneme: recentDeneme
+        ? {
+            examId: recentDeneme.examId,
+            title: recentDeneme.exam?.title ?? 'Deneme',
+            wrongCount: recentDeneme.wrongCount,
+          }
+        : null,
       volume: { last7, prev7 },
     };
   }
@@ -376,14 +406,19 @@ export class CoachService {
 
 /**
  * Durum makinesi etiketi (Doc 25 §3). Öncelik: comeback > taper > exam_day >
- * streak_risk > exam_mode > slump_watch > normal. Kart bilgisinden türetilir —
- * istemci kural bilmez, sahneyi bu etikete göre kurar. (Test için export.)
+ * aftermath > onboarding > post_exam > streak_risk > exam_mode > slump_watch >
+ * normal. Kart bilgisinden türetilir — istemci kural bilmez, sahneyi bu etikete
+ * göre kurar. Not: aftermath/taper/exam_mode aynı anda tetiklenemez — sınav
+ * geçince daysToExam null olur. (Test için export.)
  */
 export function deriveMode(ctx: CoachContext, cards: CoachCard[]): CoachMode {
   const has = (t: CoachCard['type']) => cards.some((c) => c.type === t);
   if (has('comeback')) return 'comeback';
   if (has('taper')) return 'taper';
   if (has('exam_live') || has('exam_in_progress') || has('exam_today')) return 'exam_day';
+  if (has('aftermath')) return 'aftermath';
+  if (has('onboarding')) return 'onboarding';
+  if (has('post_exam')) return 'post_exam';
   if (has('streak_risk')) return 'streak_risk';
   if (has('exam_mode')) return 'exam_mode';
   if (has('slump_watch')) return 'slump_watch';
@@ -412,7 +447,6 @@ function trDayKey(d: Date): string {
 
 /** İki an arasındaki TR takvim günü farkı (target - now, tam gün). */
 function trDayDiff(now: Date, target: Date): number {
-  const day = (d: Date) =>
-    Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
+  const day = (d: Date) => Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
   return day(target) - day(now);
 }

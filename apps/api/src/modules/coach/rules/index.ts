@@ -14,6 +14,9 @@ import { newExamRule } from './new-exam.rule';
 import { quickReviewRule } from './quick-review.rule';
 import { streakRiskRule } from './streak-risk.rule';
 import { weakTopicRule } from './weak-topic.rule';
+import { onboardingRule } from './onboarding.rule';
+import { postExamRule } from './post-exam.rule';
+import { aftermathRule } from './aftermath.rule';
 
 export { motivationRule } from './motivation.rule';
 
@@ -23,7 +26,9 @@ export const coachRules: CoachRule[] = [
   examLiveRule,
   examInProgressRule,
   examTodayRule,
+  onboardingRule,
   streakRiskRule,
+  postExamRule,
   goalRemainingRule,
   quickReviewRule,
   weakTopicRule,
@@ -35,4 +40,5 @@ export const coachRules: CoachRule[] = [
   examModeRule,
   taperRule,
   slumpWatchRule,
+  aftermathRule,
 ];
