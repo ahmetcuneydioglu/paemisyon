@@ -394,3 +394,50 @@ button.option-bar:hover:not(:disabled) { background: #ececec; }
   border-top: 1px solid var(--color-border);
   box-shadow: 0 -4px 12px rgba(24, 23, 28, 0.08);
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Liderlik tablosu animasyonları (Doc 24 §5 gamification).
+   Hepsi prefers-reduced-motion altında devre dışıdır.
+───────────────────────────────────────────────────────────── */
+@keyframes lb-row-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes lb-xp-fill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes lb-halo-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 208, 92, 0.0); }
+  50%      { box-shadow: 0 0 22px 4px rgba(255, 208, 92, 0.45); }
+}
+@keyframes lb-crown-float {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, -3px); }
+}
+@keyframes lb-shimmer-move {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+.lb-row { animation: lb-row-in 320ms var(--tk-ease-standard) both; }
+.lb-xp-fill { transform-origin: left center; animation: lb-xp-fill 900ms var(--tk-ease-standard) both; }
+.lb-halo { animation: lb-halo-pulse 2.6s ease-in-out infinite; }
+.lb-crown { animation: lb-crown-float 2.6s ease-in-out infinite; }
+.lb-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--tk-ink) 6%, transparent) 25%,
+    color-mix(in srgb, var(--tk-ink) 12%, transparent) 37%,
+    color-mix(in srgb, var(--tk-ink) 6%, transparent) 63%
+  );
+  background-size: 200% 100%;
+  animation: lb-shimmer-move 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lb-row, .lb-xp-fill, .lb-halo, .lb-crown, .lb-shimmer {
+    animation: none;
+  }
+  .lb-xp-fill { transform: scaleX(1); }
+}

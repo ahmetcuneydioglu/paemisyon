@@ -69,11 +69,7 @@ describe('computeStreakUpdate — seri sigortası (Doc 24 §7.2)', () => {
   });
 
   it('seri 0 iken sigorta devreye girmez (koruyacak seri yok)', () => {
-    const u = computeStreakUpdate(
-      state({ currentStreak: 0 }),
-      D('2026-07-15'),
-      1,
-    );
+    const u = computeStreakUpdate(state({ currentStreak: 0 }), D('2026-07-15'), 1);
     expect(u.currentStreak).toBe(1);
     expect(u.freezeSpent).toBe(false);
   });

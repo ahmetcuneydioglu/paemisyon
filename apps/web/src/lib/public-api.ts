@@ -100,6 +100,45 @@ export interface LawReading {
   articles: { no: string; slug: string; text: string }[];
 }
 
+// ── Liderlik tablosu (Doc 24 §5 gamification): /progress/leaderboard ──
+export type LeaderboardPeriod = "today" | "week" | "month" | "all";
+
+export interface LeaderboardRow {
+  rank: number;
+  isMe: boolean;
+  displayName: string;
+  avatarUrl: string | null;
+  /** Seçili dönemdeki sıralama metriği (dönem içi doğru cevap). */
+  points: number;
+  /** Ömür-boyu tecrübe puanı (rütbe skoru) — Seviye'yi belirler. */
+  xp: number;
+  level: number;
+  rankName: string;
+  correct: number;
+  accuracy: number;
+  sessions: number;
+  badges: number;
+  lastActive: string | null;
+}
+
+export interface LeaderboardMe extends LeaderboardRow {
+  /** Bir üst sırayı geçmek için gereken puan — üstteki oyuncu yüklüyse. */
+  pointsToNext: number | null;
+  nextName: string | null;
+}
+
+export interface LeaderboardBoard {
+  period: LeaderboardPeriod;
+  stats: {
+    totalUsers: number;
+    todayQuizCount: number;
+    totalXp: number;
+    todaysLeader: string | null;
+  };
+  top: LeaderboardRow[];
+  me: LeaderboardMe | null;
+}
+
 export interface ExamGuide {
   key: string;
   name: string;
