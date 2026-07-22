@@ -43,10 +43,11 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/performans",
     label: "Performans",
     icon: "performance",
-    also: [],
+    also: ["/liderlik"],
     children: [
       { href: "/performans", label: "Genel bakış" },
       { href: "/performans/konu-haritasi", label: "Konu haritası" },
+      { href: "/liderlik", label: "Liderlik" },
     ],
   },
   { href: "/profil", label: "Ben", icon: "profile", also: [] },

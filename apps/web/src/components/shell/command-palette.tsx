@@ -32,6 +32,7 @@ const STATIC_ITEMS: Item[] = [
     label: "Konu haritası",
     href: "/performans/konu-haritasi",
   },
+  { group: "Sayfalar", label: "Liderlik Tablosu — sıralama", href: "/liderlik" },
   { group: "Sayfalar", label: "Premium", href: "/premium" },
   { group: "Sayfalar", label: "Profil", href: "/profil" },
   {
