@@ -46,7 +46,7 @@ export function MobileBottomNavigation() {
       className="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-surface/95 pb-[max(env(safe-area-inset-bottom),6px)] backdrop-blur-md md:hidden"
       aria-label="Ana bölgeler"
     >
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-6">
         {APP_NAV_ITEMS.map((item) => {
           const active = isNavItemActive(item, pathname);
           return (

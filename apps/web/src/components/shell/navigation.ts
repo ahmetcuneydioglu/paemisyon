@@ -1,5 +1,5 @@
 export type NavigationIconName =
-  "today" | "library" | "exam" | "performance" | "profile";
+  "today" | "library" | "exam" | "leaderboard" | "performance" | "profile";
 
 export interface NavChild {
   href: string;
@@ -39,15 +39,15 @@ export const APP_NAV_ITEMS: NavItem[] = [
     icon: "exam",
     also: ["/sinav", "/sonuc", "/siralama"],
   },
+  { href: "/liderlik", label: "Liderlik", icon: "leaderboard", also: [] },
   {
     href: "/performans",
     label: "Performans",
     icon: "performance",
-    also: ["/liderlik"],
+    also: [],
     children: [
       { href: "/performans", label: "Genel bakış" },
       { href: "/performans/konu-haritasi", label: "Konu haritası" },
-      { href: "/liderlik", label: "Liderlik" },
     ],
   },
   { href: "/profil", label: "Ben", icon: "profile", also: [] },
