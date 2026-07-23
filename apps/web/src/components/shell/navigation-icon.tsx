@@ -44,6 +44,13 @@ const iconPaths: Record<NavigationIconName | UtilityIconName, React.ReactNode> =
         <path d="m8 13 2 2 5-5M8 18h8" />
       </>
     ),
+    leaderboard: (
+      <>
+        <path d="M6 9H4.5A1.5 1.5 0 0 1 3 7.5V6h3M18 9h1.5A1.5 1.5 0 0 0 21 7.5V6h-3" />
+        <path d="M6 4h12v5a6 6 0 0 1-12 0z" />
+        <path d="M12 15v3M9 21h6M10 18h4" />
+      </>
+    ),
     performance: (
       <>
         <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
