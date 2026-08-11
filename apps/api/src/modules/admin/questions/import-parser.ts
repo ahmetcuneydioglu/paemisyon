@@ -449,10 +449,19 @@ const ODSGM_HEADER = 'ÖLÇME, DEĞERLENDİRME VE SINAV HİZMETLERİ';
 const KEY_TITLE = 'CEVAP ANAHTARI';
 const QNUM_RE = /^(\d{1,3})\.\s+/;
 const QUESTION_NUMBER_LINE_RE = /^(\d{1,3})\.(?:\s+(.*))?$/;
-const KEY_LINE_RE = /^(\d{1,3})\.\s*([A-E])\s*$/;
+/** Numara ile harf arasındaki ayraç: "1. E", "1 - E", "1) E", "1: E". */
+const KEY_SEP = String.raw`\s*[.\-–—):]\s*`;
+const KEY_ENTRY = String.raw`(\d{1,3})${KEY_SEP}([A-E])`;
+const KEY_LINE_RE = new RegExp(`^${KEY_ENTRY}\\s*$`, 'u');
+/** Sıkışık anahtar satırı: "1-A  2-B  3-C" — satırın TAMAMI çift olmalı. */
+const KEY_MULTI_LINE_RE = new RegExp(`^(?:${KEY_ENTRY}\\s+)+${KEY_ENTRY}\\s*$`, 'u');
+const KEY_ENTRY_G = new RegExp(KEY_ENTRY, 'gu');
 // İptal edilmiş soru anahtarı (gerçek kitapçık): "71. B - İPTAL" / "75. A - İPTAL"
 // / "71. İPTAL". Harf opsiyonel; sonra iptal ibaresi gelir.
-const KEY_CANCELLED_RE = /^(\d{1,3})\.\s*[A-E]?\s*[-–—]?\s*(?:İPTAL|IPTAL|iptal|İptal)\b/u;
+const KEY_CANCELLED_RE = new RegExp(
+  `^(\\d{1,3})${KEY_SEP}[A-E]?\\s*[-–—]?\\s*(?:İPTAL|IPTAL|iptal|İptal)\\b`,
+  'u',
+);
 const CODE_QNUM_RE = /^\((\d{3,12})\)\s*$/;
 const CODE_KEY_LINE_RE = /^\((\d{3,12})\)\s*([A-E])\s*$/;
 
@@ -553,6 +562,58 @@ export function parseBookletAnswerKeyLine(
   if (cancelled) return { id: cancelled[1], answer: null, cancelled: true };
   const match = KEY_LINE_RE.exec(line) ?? CODE_KEY_LINE_RE.exec(line);
   return match ? { id: match[1], answer: match[2], cancelled: false } : null;
+}
+
+/**
+ * Bir anahtar satırındaki TÜM kayıtlar. Tek kayıt ("1 - E") kadar sıkışık
+ * satırı da ("1-A  2-B  3-C") çözer; sıkışık biçimde satırın tamamı
+ * numara+harf çiftlerinden oluşmalıdır (soru metnindeki "1. A" gibi
+ * ifadelerin yanlışlıkla anahtar sayılmasını önler).
+ */
+export function parseBookletAnswerKeyEntries(
+  line: string,
+): { id: string; answer: string | null; cancelled: boolean }[] {
+  const single = parseBookletAnswerKeyLine(line);
+  if (single) return [single];
+  if (!KEY_MULTI_LINE_RE.test(line)) return [];
+  return [...line.matchAll(KEY_ENTRY_G)].map((m) => ({
+    id: m[1],
+    answer: m[2],
+    cancelled: false,
+  }));
+}
+
+/**
+ * Başlıksız cevap anahtarı sayfası: "CEVAP ANAHTARI" başlığı olmayan ama
+ * satırlarının çoğu anahtar kaydı olan sayfa (kullanıcı tarafından derlenmiş
+ * PDF'lerde yaygın). Eşik yüksek tutulur — soru sayfaları tetiklemesin.
+ */
+/**
+ * Resmî kitapçık üstbilgisi (ÖDSGM) taşımayan, elle derlenmiş SORU sayfası:
+ * numaralı soru satırı + en az iki şık satırı. Kapak/yönerge sayfaları elenir.
+ * Bu olmadan yalnız resmî kitapçıklar okunabiliyordu.
+ */
+export function looksLikeQuestionPage(text: string): boolean {
+  const lines = text
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const optionLines = lines.filter((l) => /^[A-E][).]\s*\S/u.test(l)).length;
+  if (optionLines < 2) return false;
+  return lines.some(
+    (l) =>
+      QUESTION_NUMBER_LINE_RE.test(l) || QNUM_RE.test(l) || CODE_QNUM_RE.test(l),
+  );
+}
+
+export function looksLikeAnswerKeyPage(text: string): boolean {
+  const lines = text
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean);
+  if (lines.length < 5) return false;
+  const keyLines = lines.filter((l) => parseBookletAnswerKeyEntries(l).length > 0);
+  return keyLines.length >= 5 && keyLines.length / lines.length >= 0.6;
 }
 
 export function parseBookletQuestionCode(line: string): string | null {
@@ -710,8 +771,16 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
 
   for (const page of result.pages) {
     const text = page.text ?? '';
-    const pageHasKey = text.includes(KEY_TITLE);
-    if (!inKey && !pageHasKey && !text.includes(ODSGM_HEADER)) continue;
+    // Anahtar sayfası: başlıkla ya da (başlık yoksa) satır deseniyle saptanır.
+    const pageHasKey = text.includes(KEY_TITLE) || looksLikeAnswerKeyPage(text);
+    const questionPage = looksLikeQuestionPage(text);
+    // Anahtarı BAŞA koyan derlemelerde soru sayfası gelince anahtar modu biter.
+    if (inKey && questionPage && !pageHasKey) inKey = false;
+    // İşlenecek sayfalar: resmî kitapçık sayfası, anahtar sayfası ya da elle
+    // derlenmiş soru sayfası. Kapak/yönerge sayfaları atlanır.
+    if (!inKey && !pageHasKey && !text.includes(ODSGM_HEADER) && !questionPage) {
+      continue;
+    }
 
     for (const raw of text.split('\n')) {
       let line = raw.trim();
@@ -721,11 +790,13 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
         continue;
       }
       if (inKey || pageHasKey) {
-        const keyEntry = parseBookletAnswerKeyLine(line);
-        if (keyEntry) {
+        const keyEntries = parseBookletAnswerKeyEntries(line);
+        if (keyEntries.length > 0) {
           inKey = true;
-          if (keyEntry.cancelled) cancelledIds.add(keyEntry.id);
-          else answerKey.set(keyEntry.id, keyEntry.answer!);
+          for (const entry of keyEntries) {
+            if (entry.cancelled) cancelledIds.add(entry.id);
+            else answerKey.set(entry.id, entry.answer!);
+          }
         } else if (!inKey) {
           // Anahtar sayfasının başlık satırları → kaynak etiketi adayı
           // (örn. "30 KASIM 2025 TARİHİNDE YAPILAN ... SINAVI").

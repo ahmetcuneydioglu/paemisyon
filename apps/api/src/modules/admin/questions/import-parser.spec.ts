@@ -11,6 +11,9 @@ import {
   detectBookletTitle,
   stripBookletTitle,
   parseBookletAnswerKeyLine,
+  parseBookletAnswerKeyEntries,
+  looksLikeAnswerKeyPage,
+  looksLikeQuestionPage,
   parseBookletQuestionCode,
   parseBookletQuestionNumberLine,
   detectMathQuestionRows,
@@ -210,6 +213,72 @@ describe('kurum soru kodlu e-sınav işaretleri', () => {
       answer: null,
       cancelled: true,
     });
+  });
+
+  it('nokta dışındaki ayraçları da tanır (elle derlenen PDF: "1 - E")', () => {
+    for (const line of ['1 - E', '1-E', '1 – E', '1) E', '1: E', '1.E']) {
+      expect(parseBookletAnswerKeyLine(line)).toEqual({
+        id: '1',
+        answer: 'E',
+        cancelled: false,
+      });
+    }
+    // İptal ibaresi tire ayraçla da yakalanır.
+    expect(parseBookletAnswerKeyLine('71 - B - İPTAL')).toEqual({
+      id: '71',
+      answer: null,
+      cancelled: true,
+    });
+  });
+
+  it('sıkışık anahtar satırındaki tüm kayıtları çıkarır', () => {
+    expect(parseBookletAnswerKeyEntries('1-A  2-B  3-C')).toEqual([
+      { id: '1', answer: 'A', cancelled: false },
+      { id: '2', answer: 'B', cancelled: false },
+      { id: '3', answer: 'C', cancelled: false },
+    ]);
+    // Soru/şık satırları anahtar sayılmaz.
+    expect(parseBookletAnswerKeyEntries('A) Cumhurbaşkanı')).toEqual([]);
+    expect(
+      parseBookletAnswerKeyEntries('3. Aşağıdakilerden hangisi doğrudur?'),
+    ).toEqual([]);
+  });
+
+  it('başlıksız cevap anahtarı sayfasını desenden saptar', () => {
+    const keyPage = ['1 - E', '2 - D', '3 - C', '4 - C', '5 - B', '6 - C'].join('\n');
+    expect(looksLikeAnswerKeyPage(keyPage)).toBe(true);
+
+    const questionPage = [
+      '1. Kamu baş denetçisi aşağıdakilerden hangisi tarafından seçilir?',
+      'A) Cumhurbaşkanı',
+      'B) Yargıtay',
+      'C) Anayasa Mahkemesi',
+      'D) Danıştay',
+      'E) Türkiye Büyük Millet Meclisi',
+    ].join('\n');
+    expect(looksLikeAnswerKeyPage(questionPage)).toBe(false);
+    expect(looksLikeAnswerKeyPage('1 - E\n2 - D')).toBe(false); // çok kısa
+  });
+
+  it('resmî üstbilgisi olmayan soru sayfasını tanır (elle derlenmiş PDF)', () => {
+    const questionPage = [
+      '1. Kamu baş denetçisi aşağıdakilerden hangisi tarafından seçilir?',
+      'A) Cumhurbaşkanı',
+      'B) Yargıtay',
+      'C) Anayasa Mahkemesi',
+      'D) Danıştay',
+      'E) Türkiye Büyük Millet Meclisi',
+    ].join('\n');
+    expect(looksLikeQuestionPage(questionPage)).toBe(true);
+
+    // Kapak / yönerge sayfaları soru sayfası sayılmaz.
+    expect(
+      looksLikeQuestionPage(
+        ['SINAV KİTAPÇIĞI', 'Bu kitapçıkta 20 soru vardır.', 'Süre: 30 dakika'].join('\n'),
+      ),
+    ).toBe(false);
+    // Cevap anahtarı sayfası da soru sayfası değildir.
+    expect(looksLikeQuestionPage('1 - E\n2 - D\n3 - C\n4 - C\n5 - B')).toBe(false);
   });
 });
 
