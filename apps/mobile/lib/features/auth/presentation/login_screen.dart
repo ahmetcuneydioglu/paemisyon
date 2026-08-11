@@ -6,6 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../data/auth_repository.dart';
+import 'social_sign_in_buttons.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -139,6 +140,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 onPressed: _submit,
               ),
               const SizedBox(height: AppSpacing.lg),
+              // Sosyal giriş (Doc 28 P0-①): web'le tek hesap.
+              const SocialSignInButtons(),
+              const SizedBox(height: AppSpacing.sm),
               TextButton(
                 onPressed: () => context.go('/auth/register'),
                 child: const Text('Hesabın yok mu? Kayıt ol'),

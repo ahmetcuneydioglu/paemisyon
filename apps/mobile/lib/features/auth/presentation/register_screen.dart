@@ -6,6 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../data/auth_repository.dart';
+import 'social_sign_in_buttons.dart';
 
 class RegisterScreen extends ConsumerStatefulWidget {
   const RegisterScreen({super.key});
@@ -150,6 +151,9 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 onPressed: _submit,
               ),
               const SizedBox(height: AppSpacing.lg),
+              // Sosyal kayıt (Doc 28 P0-①): e-posta doğrulaması gerekmez.
+              const SocialSignInButtons(),
+              const SizedBox(height: AppSpacing.sm),
               TextButton(
                 onPressed: () => context.go('/auth/login'),
                 child: const Text('Zaten hesabın var mı? Giriş yap'),
