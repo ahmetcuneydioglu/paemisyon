@@ -8,11 +8,13 @@ import '../../../core/network/dio_client.dart';
 class LeaderboardRow {
   final int rank;
   final String displayName;
+  final String? avatarUrl;
   final int points;
   final bool isMe;
   const LeaderboardRow({
     required this.rank,
     required this.displayName,
+    this.avatarUrl,
     required this.points,
     required this.isMe,
   });
@@ -20,6 +22,7 @@ class LeaderboardRow {
   factory LeaderboardRow.fromJson(Map<String, dynamic> j) => LeaderboardRow(
         rank: j['rank'] as int,
         displayName: j['displayName'] as String? ?? 'Kullanıcı',
+        avatarUrl: j['avatarUrl'] as String?,
         points: j['points'] as int? ?? 0,
         isMe: j['isMe'] as bool? ?? false,
       );
@@ -51,12 +54,14 @@ class LeaderboardData {
 class GlobalLeaderboardRow {
   final int rank;
   final String displayName;
+  final String? avatarUrl;
   final double avgScore;
   final int attempts;
   final bool isMe;
   const GlobalLeaderboardRow({
     required this.rank,
     required this.displayName,
+    this.avatarUrl,
     required this.avgScore,
     required this.attempts,
     required this.isMe,
@@ -66,6 +71,7 @@ class GlobalLeaderboardRow {
       GlobalLeaderboardRow(
         rank: j['rank'] as int,
         displayName: j['displayName'] as String? ?? 'Kullanıcı',
+        avatarUrl: j['avatarUrl'] as String?,
         avgScore: (j['avgScore'] as num?)?.toDouble() ?? 0,
         attempts: j['attempts'] as int? ?? 0,
         isMe: j['isMe'] as bool? ?? false,

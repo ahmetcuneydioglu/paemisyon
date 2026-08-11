@@ -12,6 +12,7 @@ import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/primary_button.dart';
+import '../../../shared/widgets/question_media.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
 import '../data/exams_repository.dart';
@@ -282,6 +283,10 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
         children: [
           Text('$order. ${q.stem}',
               style: AppTypography.heading.copyWith(color: tokens.ink)),
+          if (q.mediaUrl != null) ...[
+            const SizedBox(height: AppSpacing.md),
+            QuestionMedia(url: q.mediaUrl!),
+          ],
           const SizedBox(height: AppSpacing.md),
           for (final o in q.options) ...[
             OptionRow(

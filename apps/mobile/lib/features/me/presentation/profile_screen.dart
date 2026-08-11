@@ -75,6 +75,10 @@ class _ProfileBody extends ConsumerWidget {
                 children: [
                   CircleAvatar(
                     radius: 28,
+                    // Sosyal girişten gelen fotoğraf (P2-15); yoksa baş harf.
+                    foregroundImage: profile.avatarUrl != null
+                        ? NetworkImage(profile.avatarUrl!)
+                        : null,
                     child: Text(
                       (profile.displayName?.trim().isNotEmpty ?? false)
                           ? profile.displayName!.trim()[0].toUpperCase()

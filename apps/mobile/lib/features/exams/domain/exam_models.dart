@@ -115,6 +115,7 @@ class ReviewQuestion {
   final int order;
   final String questionId;
   final String stem;
+  final String? mediaUrl;
   final String? explanation;
 
   /// Soru kaynağı — panel ayarı kapalıysa sunucu null gönderir.
@@ -126,6 +127,7 @@ class ReviewQuestion {
     required this.order,
     required this.questionId,
     required this.stem,
+    this.mediaUrl,
     this.explanation,
     this.source,
     required this.options,
@@ -136,6 +138,7 @@ class ReviewQuestion {
         order: j['order'] as int,
         questionId: j['questionId'] as String,
         stem: j['stem'] as String,
+        mediaUrl: j['mediaUrl'] as String?,
         explanation: j['explanation'] as String?,
         source: j['source'] as String?,
         options: (j['options'] as List<dynamic>)

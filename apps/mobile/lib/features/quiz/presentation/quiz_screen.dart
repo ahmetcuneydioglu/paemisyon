@@ -15,6 +15,7 @@ import '../../../shared/widgets/article_card.dart';
 import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
+import '../../../shared/widgets/question_media.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../../review/data/review_repository.dart';
 import '../data/quiz_repository.dart';
@@ -477,6 +478,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(_q.stem, style: AppTypography.heading),
+              if (_q.mediaUrl != null) ...[
+                const SizedBox(height: AppSpacing.md),
+                QuestionMedia(url: _q.mediaUrl!),
+              ],
               const SizedBox(height: AppSpacing.xl),
               ..._q.options.map(_optionTile),
               // Açıklama cevaptan hemen sonra AYNI ekranda (Doc 26 §4 #6).

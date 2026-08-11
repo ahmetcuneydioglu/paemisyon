@@ -15,6 +15,21 @@ export function displayNameFromClaims(claims: JWTPayload, email: string): string
   return email.includes('@') ? email.split('@')[0].slice(0, 128) : 'Kullanıcı';
 }
 
+/**
+ * Sosyal girişten gelen profil fotoğrafı (Google `picture` / genel `avatar_url`).
+ * Yalnız İLK provisioning'de kullanılır — kullanıcının sonradan seçtiği avatar
+ * asla token'la ezilmez.
+ */
+export function avatarUrlFromClaims(claims: JWTPayload): string | null {
+  const metadata = claims.user_metadata;
+  if (!metadata || typeof metadata !== 'object') return null;
+  const m = metadata as { avatar_url?: unknown; picture?: unknown };
+  const raw = m.avatar_url ?? m.picture;
+  if (typeof raw !== 'string') return null;
+  const url = raw.trim();
+  return url.startsWith('https://') && url.length <= 512 ? url : null;
+}
+
 /** Supabase yeni tokenlarda doğrulamayı user_metadata içinde taşır; eski tokenları da kabul et. */
 export function emailVerifiedFromClaims(claims: JWTPayload): boolean {
   if (claims.email_verified === true) return true;
@@ -119,6 +134,7 @@ export class UserSyncService {
           id,
           email,
           displayName: displayNameFromClaims(claims, email),
+          avatarUrl: avatarUrlFromClaims(claims),
           emailVerifiedAt: emailVerified ? new Date() : null,
         },
       });

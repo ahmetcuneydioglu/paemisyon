@@ -73,6 +73,7 @@ class _Board extends ConsumerWidget {
                     itemBuilder: (context, i) => _RankRow(
                       rank: board.top[i].rank,
                       displayName: board.top[i].displayName,
+                      avatarUrl: board.top[i].avatarUrl,
                       isMe: board.top[i].isMe,
                       trailing: '${board.top[i].points} puan',
                     ),
@@ -125,6 +126,7 @@ class _GlobalBoard extends ConsumerWidget {
                     _RankRow(
                       rank: r.rank,
                       displayName: r.displayName,
+                      avatarUrl: r.avatarUrl,
                       isMe: r.isMe,
                       trailing: r.avgScore.toStringAsFixed(2),
                       subtitle: '${r.attempts} deneme',
@@ -203,6 +205,8 @@ class _PodiumCell extends StatelessWidget {
           CircleAvatar(
             radius: 20,
             backgroundColor: row.isMe ? tokens.brand : tokens.surfaceAlt,
+            foregroundImage:
+                row.avatarUrl != null ? NetworkImage(row.avatarUrl!) : null,
             child: Text(initial,
                 style: AppTypography.heading.copyWith(
                     color: row.isMe ? tokens.surface : tokens.ink)),
@@ -249,12 +253,14 @@ class _PodiumCell extends StatelessWidget {
 class _RankRow extends StatelessWidget {
   final int rank;
   final String displayName;
+  final String? avatarUrl;
   final bool isMe;
   final String trailing;
   final String? subtitle;
   const _RankRow({
     required this.rank,
     required this.displayName,
+    this.avatarUrl,
     required this.isMe,
     required this.trailing,
     this.subtitle,
@@ -286,6 +292,19 @@ class _RankRow extends StatelessWidget {
                   : Text('#$rank',
                       style:
                           AppTypography.label.copyWith(color: tokens.inkSoft)),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          CircleAvatar(
+            radius: 14,
+            backgroundColor: tokens.surfaceAlt,
+            foregroundImage:
+                avatarUrl != null ? NetworkImage(avatarUrl!) : null,
+            child: Text(
+              displayName.trim().isNotEmpty
+                  ? displayName.trim()[0].toUpperCase()
+                  : '?',
+              style: AppTypography.label.copyWith(color: tokens.ink),
             ),
           ),
           const SizedBox(width: AppSpacing.sm),

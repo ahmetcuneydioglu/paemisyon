@@ -1,9 +1,39 @@
 import type { JWTPayload } from 'jose';
 import {
+  avatarUrlFromClaims,
   displayNameFromClaims,
   emailVerifiedFromClaims,
   UserSyncService,
 } from './user-sync.service';
+
+describe('avatarUrlFromClaims', () => {
+  it('Google `picture` ve genel `avatar_url` alanlarını okur', () => {
+    expect(
+      avatarUrlFromClaims({
+        user_metadata: { picture: 'https://lh3.googleusercontent.com/a/x' },
+      } as JWTPayload),
+    ).toBe('https://lh3.googleusercontent.com/a/x');
+    expect(
+      avatarUrlFromClaims({
+        user_metadata: { avatar_url: 'https://cdn.example.com/me.png' },
+      } as JWTPayload),
+    ).toBe('https://cdn.example.com/me.png');
+  });
+
+  it('https olmayan, aşırı uzun veya eksik değerlerde null döner', () => {
+    expect(
+      avatarUrlFromClaims({
+        user_metadata: { picture: 'http://insecure.example.com/a.png' },
+      } as JWTPayload),
+    ).toBeNull();
+    expect(
+      avatarUrlFromClaims({
+        user_metadata: { picture: `https://x.com/${'a'.repeat(600)}` },
+      } as JWTPayload),
+    ).toBeNull();
+    expect(avatarUrlFromClaims({} as JWTPayload)).toBeNull();
+  });
+});
 
 describe('displayNameFromClaims', () => {
   it('kayıt metadata adını kırparak kullanır', () => {
