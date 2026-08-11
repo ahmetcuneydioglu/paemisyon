@@ -6,6 +6,7 @@ import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/activity_heat_strip.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/list_row_stat.dart';
@@ -51,7 +52,41 @@ class ProgressScreen extends ConsumerWidget {
               ),
               data: (s) => _SummaryCard(summary: s),
             ),
+            // ── 12 hafta çalışma ısısı (Doc 28 P1-10) ──
             const SizedBox(height: AppSpacing.xl),
+            Consumer(builder: (context, ref, _) {
+              final activity = ref.watch(activityProvider(84)).valueOrNull;
+              if (activity == null || activity.isEmpty) {
+                return const SizedBox.shrink();
+              }
+              final active =
+                  activity.where((d) => d.questionsAnswered > 0).length;
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('SON 12 HAFTA · $active/${activity.length} AKTİF GÜN',
+                      style: AppTypography.caption
+                          .copyWith(color: tokens.inkSoft)),
+                  const SizedBox(height: AppSpacing.sm),
+                  Container(
+                    padding: const EdgeInsets.all(AppSpacing.md),
+                    decoration: BoxDecoration(
+                      color: tokens.surface,
+                      border: Border.all(color: tokens.line),
+                      borderRadius:
+                          BorderRadius.circular(AppSpacing.radiusMd),
+                    ),
+                    child: ActivityHeatStrip(
+                      days: [
+                        for (final d in activity)
+                          (date: d.date, count: d.questionsAnswered),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: AppSpacing.xl),
+                ],
+              );
+            }),
             Text('KONU HARİTASI',
                 style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
             const SizedBox(height: AppSpacing.xs),

@@ -4,6 +4,17 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/error/failure.dart';
 import '../../../core/network/dio_client.dart';
 
+/// Günlük soru hacmi satırı (/progress/activity — Doc 28 P1-10).
+class ActivityDay {
+  final String date; // YYYY-MM-DD (UTC)
+  final int questionsAnswered;
+  const ActivityDay({required this.date, required this.questionsAnswered});
+  factory ActivityDay.fromJson(Map<String, dynamic> j) => ActivityDay(
+        date: j['date'] as String,
+        questionsAnswered: j['questionsAnswered'] as int? ?? 0,
+      );
+}
+
 // İlerleme modelleri (Doc 7 §4.5).
 class ProgressSummary {
   final int totalSolved,
@@ -76,6 +87,18 @@ class ProgressRepository {
     });
   }
 
+  /// Günlük soru hacmi (Doc 28 P1-10): 14 = nöbet çizelgesi, 84 = 12 hafta ısı.
+  Future<List<ActivityDay>> getActivity(int days) async {
+    return _guard(() async {
+      final r = await _dio
+          .get<Map<String, dynamic>>('/progress/activity?days=$days');
+      final list = (r.data!['data'] as List<dynamic>);
+      return list
+          .map((e) => ActivityDay.fromJson(e as Map<String, dynamic>))
+          .toList();
+    });
+  }
+
   Future<T> _guard<T>(Future<T> Function() run) async {
     try {
       return await run();
@@ -98,4 +121,10 @@ final progressSummaryProvider = FutureProvider.autoDispose<ProgressSummary>(
 final topicProgressProvider =
     FutureProvider.autoDispose<List<TopicProgressItem>>(
   (ref) => ref.watch(progressRepositoryProvider).getTopics(),
+);
+
+/// Aktivite (gün bazlı hacim) — 14: Bugün nöbet çizelgesi, 84: 12 hafta ısı.
+final activityProvider =
+    FutureProvider.autoDispose.family<List<ActivityDay>, int>(
+  (ref, days) => ref.watch(progressRepositoryProvider).getActivity(days),
 );

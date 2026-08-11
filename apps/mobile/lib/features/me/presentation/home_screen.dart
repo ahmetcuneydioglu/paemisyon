@@ -7,6 +7,7 @@ import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/activity_heat_strip.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/focus_sheet.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
@@ -16,6 +17,7 @@ import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
+import '../../progress/data/progress_repository.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
 
@@ -297,6 +299,33 @@ class _CoachBody extends ConsumerWidget {
             ),
           ),
         ],
+
+        // ── Nöbet çizelgesi (Doc 28 P1-10): son 7 gün, boş gün suçlanmaz ──
+        Consumer(builder: (context, ref, _) {
+          final activity = ref.watch(activityProvider(14)).valueOrNull;
+          if (activity == null || activity.isEmpty) {
+            return const SizedBox.shrink();
+          }
+          return Padding(
+            padding: const EdgeInsets.only(top: AppSpacing.xs),
+            child: Container(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              decoration: BoxDecoration(
+                color: context.tokens.surface,
+                border: Border.all(color: context.tokens.line),
+                borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              ),
+              child: ActivityHeatStrip(
+                singleRow: true,
+                days: [
+                  for (final d in activity)
+                    (date: d.date, count: d.questionsAnswered),
+                ],
+              ),
+            ),
+          );
+        }),
+        const SizedBox(height: AppSpacing.xs),
 
         // ── Haftalık fotoğraf (Doc 27 B dilimi): ders bazlı mastery değişimi ──
         if (brief.weeklyPhoto.isNotEmpty) ...[
