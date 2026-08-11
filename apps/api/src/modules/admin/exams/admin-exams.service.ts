@@ -3,6 +3,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertExamDto } from '../dto/exam.dto';
+import { allocateQuota, pickQuestions } from './exam-autofill.logic';
 
 /**
  * Deneme yönetimi (Doc 18 §8). Kurallar:
@@ -139,6 +140,103 @@ export class AdminExamsService {
     });
     await this.audit.log(actor, 'exam.set_questions', 'exam', id, { count: unique.length });
     return this.detail(id);
+  }
+
+  /**
+   * Otomatik doldur (Doc 18 §8 devamı): müfredat bölüm ağırlıklarına
+   * (ExamSection.weightPercent) göre kota dağıt, her bölümün derslerinden
+   * YAYINDAKİ sorulardan az-kullanılmış-öncelikli rastgele seç ve taslağın
+   * soru setini bu listeyle DEĞİŞTİR. Sonuç gerçek sınav bölüm sırasındadır;
+   * admin isterse elden düzeltip yayınlar.
+   */
+  async autofill(
+    actor: AuthenticatedUser,
+    id: string,
+    moduleId: string,
+    questionCount: number,
+  ) {
+    const exam = await this.exists(id);
+    if (exam.status !== 'draft') {
+      throw new BadRequestException('Otomatik doldurma yalnız taslak denemede yapılabilir.');
+    }
+
+    const sections = await this.prisma.examSection.findMany({
+      where: { examTypeId: moduleId, deletedAt: null },
+      orderBy: { sortOrder: 'asc' },
+      include: { courses: { select: { courseId: true } } },
+    });
+    if (sections.length === 0) {
+      throw new BadRequestException(
+        'Bu sınav türünde müfredat bölümü tanımlı değil — önce İçerik Ağacı > Müfredat kurulmalı.',
+      );
+    }
+
+    // Bölüm başına aday havuzu: yayında + silinmemiş, kullanım sayısıyla.
+    const pools = await Promise.all(
+      sections.map(async (s) => {
+        const courseIds = s.courses.map((c) => c.courseId);
+        if (courseIds.length === 0) return { section: s, candidates: [] };
+        const rows = await this.prisma.question.findMany({
+          where: {
+            deletedAt: null,
+            currentVersionId: { not: null },
+            topic: { courseId: { in: courseIds } },
+          },
+          select: { id: true, _count: { select: { examQuestions: true } } },
+        });
+        return {
+          section: s,
+          candidates: rows.map((r) => ({
+            questionId: r.id,
+            usageCount: r._count.examQuestions,
+          })),
+        };
+      }),
+    );
+
+    // Aynı soru iki bölümde görünebilir (ders paylaşımı) — ilk bölüm kazanır.
+    const claimed = new Set<string>();
+    for (const p of pools) {
+      p.candidates = p.candidates.filter((c) => {
+        if (claimed.has(c.questionId)) return false;
+        claimed.add(c.questionId);
+        return true;
+      });
+    }
+
+    const quota = allocateQuota(
+      pools.map((p) => ({
+        sectionId: p.section.id,
+        weight: p.section.weightPercent,
+        available: p.candidates.length,
+      })),
+      questionCount,
+    );
+
+    const breakdown: { section: string; count: number; available: number }[] = [];
+    const ids: string[] = [];
+    for (const p of pools) {
+      const n = quota.get(p.section.id) ?? 0;
+      const picked = pickQuestions(p.candidates, n);
+      ids.push(...picked);
+      breakdown.push({
+        section: p.section.name,
+        count: picked.length,
+        available: p.candidates.length,
+      });
+    }
+    if (ids.length === 0) {
+      throw new BadRequestException('Bu sınav türünün derslerinde yayında soru yok.');
+    }
+
+    const detail = await this.setQuestions(actor, id, ids);
+    await this.audit.log(actor, 'exam.autofill', 'exam', id, {
+      moduleId,
+      requested: questionCount,
+      filled: ids.length,
+      breakdown,
+    });
+    return { ...detail, autofill: { requested: questionCount, filled: ids.length, breakdown } };
   }
 
   /** Yayınla: ≥1 soru şartı + sürümleri SABİTLE (Doc 18 §6). */

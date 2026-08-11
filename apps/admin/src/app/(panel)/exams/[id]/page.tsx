@@ -7,7 +7,16 @@ import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/u
 import { ExamForm, type ExamFormValue } from '@/components/exam-form';
 import { ExamQuestionPicker, type PickedQuestion } from '@/components/exam-question-picker';
 import { api } from '@/lib/api';
-import type { AdminExamDetail, ExamResults } from '@/lib/types';
+import type { AdminExamDetail, CatalogModule, ExamResults } from '@/lib/types';
+
+/** Autofill yanıtı: detay + bölüm dağılım raporu. */
+type AutofillResponse = AdminExamDetail & {
+  autofill: {
+    requested: number;
+    filled: number;
+    breakdown: { section: string; count: number; available: number }[];
+  };
+};
 
 /** Deneme detayı: meta + soru seti (taslakta) + yayın aksiyonları + sonuçlar. */
 export default function ExamDetailPage() {
@@ -17,6 +26,9 @@ export default function ExamDetailPage() {
   const [me, setMe] = useState<{ roles: string[] } | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [picked, setPicked] = useState<PickedQuestion[] | null>(null);
+  // Otomatik doldurma (Doc 18 §8 devamı): sınav türü + hedef soru sayısı.
+  const [afModule, setAfModule] = useState('');
+  const [afCount, setAfCount] = useState(100);
 
   useEffect(() => {
     api<{ roles: string[] }>('/me').then(setMe).catch(() => setMe({ roles: [] }));
@@ -52,6 +64,39 @@ export default function ExamDetailPage() {
     onSuccess: () => {
       invalidate();
       setNotice('Kaydedildi.');
+    },
+  });
+
+  const modules = useQuery({
+    queryKey: ['catalog-tree'],
+    queryFn: () => api<CatalogModule[]>('/admin/catalog/tree'),
+  });
+
+  const autofill = useMutation({
+    mutationFn: () =>
+      api<AutofillResponse>(`/admin/exams/${id}/autofill`, {
+        method: 'POST',
+        body: { moduleId: afModule, questionCount: afCount },
+      }),
+    onSuccess: (res) => {
+      invalidate();
+      // Soru seçiciyi sunucudaki yeni setle senkronla.
+      setPicked(
+        res.questions.map((x) => ({
+          questionId: x.questionId,
+          stem: x.stem,
+          topicName: x.topicName,
+        })),
+      );
+      const parts = res.autofill.breakdown
+        .filter((b) => b.count > 0)
+        .map((b) => `${b.section}: ${b.count}`)
+        .join(' · ');
+      setNotice(
+        res.autofill.filled < res.autofill.requested
+          ? `Bankada yeterli soru yok — ${res.autofill.filled}/${res.autofill.requested} dolduruldu. ${parts}`
+          : `${res.autofill.filled} soru müfredat ağırlığına göre dolduruldu. ${parts}`,
+      );
     },
   });
 
@@ -114,9 +159,11 @@ export default function ExamDetailPage() {
           {notice}
         </div>
       )}
-      {(update.isError || saveQuestions.isError || action.isError) && (
+      {(update.isError || saveQuestions.isError || action.isError || autofill.isError) && (
         <div className="mb-4">
-          <ErrorBox error={update.error ?? saveQuestions.error ?? action.error} />
+          <ErrorBox
+            error={update.error ?? saveQuestions.error ?? action.error ?? autofill.error}
+          />
         </div>
       )}
 
@@ -180,6 +227,59 @@ export default function ExamDetailPage() {
       </h2>
       {isDraft ? (
         <>
+          {/* Otomatik doldur: müfredat ağırlıklarına göre rastgele set (Doc 18 §8) */}
+          <Card className="mb-4">
+            <div className="flex flex-wrap items-end gap-3">
+              <div>
+                <label className="mb-1 block text-xs font-medium text-slate-500">
+                  Sınav türü
+                </label>
+                <select
+                  value={afModule}
+                  onChange={(e) => setAfModule(e.target.value)}
+                  className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+                >
+                  <option value="">Seç…</option>
+                  {(modules.data ?? []).map((m) => (
+                    <option key={m.id} value={m.id}>
+                      {m.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-medium text-slate-500">
+                  Soru sayısı
+                </label>
+                <input
+                  type="number"
+                  min={5}
+                  max={200}
+                  value={afCount}
+                  onChange={(e) => setAfCount(Number(e.target.value))}
+                  className="w-24 rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+                />
+              </div>
+              <button
+                onClick={() => {
+                  if (
+                    (picked?.length ?? 0) === 0 ||
+                    window.confirm('Mevcut soru seti otomatik üretilen setle DEĞİŞTİRİLECEK. Devam?')
+                  )
+                    autofill.mutate();
+                }}
+                disabled={!afModule || afCount < 5 || autofill.isPending}
+                className="rounded-lg bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-900 disabled:opacity-50"
+              >
+                {autofill.isPending ? 'Üretiliyor…' : '🎲 Otomatik doldur'}
+              </button>
+              <p className="basis-full text-xs text-slate-400">
+                Müfredat bölüm ağırlıklarına göre (ör. PAEM Genel Kültür %30) yayındaki
+                sorulardan az kullanılmış öncelikli rastgele set üretir; sonra elden
+                düzenleyebilirsin.
+              </p>
+            </div>
+          </Card>
           <ExamQuestionPicker value={picked ?? []} onChange={setPicked} />
           <button
             onClick={() => saveQuestions.mutate((picked ?? []).map((p) => p.questionId))}

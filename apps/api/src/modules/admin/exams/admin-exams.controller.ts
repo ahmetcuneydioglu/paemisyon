@@ -14,7 +14,7 @@ import { Roles } from '../../auth/decorators/roles.decorator';
 import { CurrentUser } from '../../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AdminExamsService } from './admin-exams.service';
-import { SetExamQuestionsDto, UpsertExamDto } from '../dto/exam.dto';
+import { AutofillExamDto, SetExamQuestionsDto, UpsertExamDto } from '../dto/exam.dto';
 
 /**
  * /api/v1/admin/exams — Deneme yönetimi (Doc 18 §8).
@@ -68,6 +68,16 @@ export class AdminExamsController {
     @Body() dto: SetExamQuestionsDto,
   ) {
     return this.exams.setQuestions(actor, id, dto.questionIds);
+  }
+
+  @Post(':id/autofill')
+  @Roles('admin', 'editor')
+  autofill(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: AutofillExamDto,
+  ) {
+    return this.exams.autofill(actor, id, dto.moduleId, dto.questionCount);
   }
 
   @Post(':id/publish')

@@ -52,3 +52,14 @@ export class SetExamQuestionsDto {
   @IsUUID('all', { each: true })
   questionIds!: string[];
 }
+
+/** Otomatik doldurma: sınav türü + hedef soru sayısı (banka yetmezse eldeki kadar). */
+export class AutofillExamDto {
+  @IsUUID()
+  moduleId!: string;
+
+  @IsInt()
+  @Min(5)
+  @Max(200)
+  questionCount!: number;
+}
