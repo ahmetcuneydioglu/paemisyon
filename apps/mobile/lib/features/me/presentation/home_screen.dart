@@ -16,6 +16,8 @@ import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
+import '../../quiz/data/quiz_repository.dart';
+import '../../quiz/domain/quiz_models.dart';
 
 /// Kişisel Koç ana ekranı (Doc 19 §4). Dashboard DEĞİL: "bugün benim için
 /// ne var?" sorusunun cevabı. Kartlar SUNUCUDAN gelir; bu ekran hiçbir kural
@@ -196,6 +198,40 @@ class _CoachBody extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
+        // ── Devam eden seans çapası (Doc 28 P0-②): kayıp iş = kayıp güven ──
+        Consumer(builder: (context, ref, _) {
+          final active = ref.watch(activeSessionProvider).valueOrNull;
+          if (active == null) return const SizedBox.shrink();
+          return Padding(
+            padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+            child: StaggeredReveal(
+              index: i,
+              child: _ActiveSessionCard(
+                active: active,
+                onResume: () async {
+                  if (active.resumable) {
+                    await context.push('/quiz', extra: {
+                      'resumeSessionId': active.sessionId,
+                      'topicName': active.scopeName ?? 'Seans',
+                      'mode': active.mode,
+                    });
+                  } else {
+                    // Eski oturum (soru sırası kayıtsız) — bitir, sonucu gör.
+                    final result = await ref
+                        .read(quizRepositoryProvider)
+                        .complete(active.sessionId);
+                    if (context.mounted) {
+                      await context.push('/quiz/result', extra: result);
+                    }
+                  }
+                  ref.invalidate(activeSessionProvider);
+                  ref.invalidate(coachBriefProvider);
+                },
+              ),
+            ),
+          );
+        }),
+
         // ── Bugün hero'su: hedef halkası + Bugün Çalış + Odak ucu (Doc 25 §5) ──
         StaggeredReveal(
           index: i++,
@@ -371,6 +407,61 @@ class _CoachBody extends ConsumerWidget {
           ),
         ],
       ],
+    );
+  }
+}
+
+// ── Devam eden seans kartı (Doc 28 P0-②) ──
+
+class _ActiveSessionCard extends StatelessWidget {
+  final ActiveSession active;
+  final VoidCallback onResume;
+  const _ActiveSessionCard({required this.active, required this.onResume});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return InkWell(
+      onTap: onResume,
+      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+      child: Container(
+        padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+        decoration: BoxDecoration(
+          color: tokens.accentSession.withValues(alpha: 0.10),
+          border: Border.all(color: tokens.accentSession),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+        ),
+        child: Row(
+          children: [
+            Icon(Icons.pause_circle_rounded,
+                size: 26, color: tokens.accentSession),
+            const SizedBox(width: AppSpacing.md),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Yarım kalan seansın var'
+                    '${active.scopeName != null ? ' · ${active.scopeName}' : ''}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.label.copyWith(color: tokens.ink),
+                  ),
+                  Text(
+                    active.resumable
+                        ? '${active.answeredCount}/${active.totalQuestions} çözüldü — kaldığın yerden devam et'
+                        : '${active.answeredCount}/${active.totalQuestions} çözüldü — bitir, sonucunu gör',
+                    style:
+                        AppTypography.caption.copyWith(color: tokens.inkSoft),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: tokens.inkSoft),
+          ],
+        ),
+      ),
     );
   }
 }

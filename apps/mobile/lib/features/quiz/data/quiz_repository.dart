@@ -38,6 +38,26 @@ class QuizRepository {
     });
   }
 
+  /// Devam eden seans çapası (Doc 28 P0-②) — yoksa null.
+  Future<ActiveSession?> getActiveSession() async {
+    return _guard(() async {
+      final r =
+          await _dio.get<Map<String, dynamic>>('/quiz/active-session');
+      final data = r.data?['data'];
+      if (data == null) return null;
+      return ActiveSession.fromJson(data as Map<String, dynamic>);
+    });
+  }
+
+  /// Yarım seansı kaldığı yerden aç: aynı set + verilen cevaplar.
+  Future<ResumedSession> resume(String sessionId) async {
+    return _guard(() async {
+      final r = await _dio
+          .get<Map<String, dynamic>>('/quiz/sessions/$sessionId/resume');
+      return ResumedSession.fromJson(r.data!['data'] as Map<String, dynamic>);
+    });
+  }
+
   /// Soru hata bildirimi — panelde kalite kuyruğuna düşer.
   Future<void> reportQuestion(String questionId, String message) async {
     return _guard(() async {
@@ -118,4 +138,9 @@ class QuizRepository {
 
 final quizRepositoryProvider = Provider<QuizRepository>(
   (ref) => QuizRepository(ref.watch(dioProvider)),
+);
+
+/// Devam eden seans çapası (Doc 28 P0-②) — Bugün ekranı izler.
+final activeSessionProvider = FutureProvider.autoDispose<ActiveSession?>(
+  (ref) => ref.watch(quizRepositoryProvider).getActiveSession(),
 );

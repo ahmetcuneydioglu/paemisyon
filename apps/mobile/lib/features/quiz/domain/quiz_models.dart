@@ -63,6 +63,52 @@ class StartedSession {
       );
 }
 
+/// Devam eden seans özeti (Doc 28 P0-②) — Bugün'deki çapa kartı.
+class ActiveSession {
+  final String sessionId;
+  final String mode;
+  final int totalQuestions;
+  final int answeredCount;
+  final String? scopeName;
+
+  /// Eski oturumlarda soru sırası kayıtlı değil → gerçek devam mümkün değil;
+  /// istemci "bitir ve sonucu gör" yolunu sunar.
+  final bool resumable;
+
+  const ActiveSession({
+    required this.sessionId,
+    required this.mode,
+    required this.totalQuestions,
+    required this.answeredCount,
+    this.scopeName,
+    required this.resumable,
+  });
+
+  factory ActiveSession.fromJson(Map<String, dynamic> j) => ActiveSession(
+        sessionId: j['sessionId'] as String,
+        mode: j['mode'] as String,
+        totalQuestions: j['totalQuestions'] as int? ?? 0,
+        answeredCount: j['answeredCount'] as int? ?? 0,
+        scopeName: j['scopeName'] as String?,
+        resumable: j['resumable'] as bool? ?? false,
+      );
+}
+
+/// Resume yanıtı: aynı soru seti + verilen cevaplar (anahtar sızmaz).
+class ResumedSession {
+  final StartedSession session;
+  final Set<String> answeredQuestionIds;
+
+  const ResumedSession({required this.session, required this.answeredQuestionIds});
+
+  factory ResumedSession.fromJson(Map<String, dynamic> j) => ResumedSession(
+        session: StartedSession.fromJson(j),
+        answeredQuestionIds: ((j['givenAnswers'] as List<dynamic>? ?? const [])
+                .map((e) => (e as Map<String, dynamic>)['questionId'] as String))
+            .toSet(),
+      );
+}
+
 /// Deneme karnesinde konu bazlı kırılım satırı.
 class TopicScore {
   final String topicName;

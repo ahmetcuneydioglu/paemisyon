@@ -27,6 +27,8 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String? courseId; // ders geneli deneme
   final String? articleNo; // Madde Atlası: maddeden seans (Doc 25 §4)
   final bool fromBookmarks; // Favorilerden seans (Doc 27 B dilimi)
+  /// Doluysa yeni seans BAŞLATILMAZ; yarım seans kaldığı yerden açılır (P0-②).
+  final String? resumeSessionId;
   final String topicName;
   final String mode; // 'practice' | 'exam' | 'daily' | 'review'
   final int questionCount;
@@ -36,6 +38,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.courseId,
     this.articleNo,
     this.fromBookmarks = false,
+    this.resumeSessionId,
     required this.topicName,
     required this.mode,
     this.questionCount = 10,
@@ -85,18 +88,35 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Future<void> _load() async {
     setState(() => _loadError = null);
     try {
-      final s = await ref.read(quizRepositoryProvider).start(
-            mode: widget.mode,
-            topicId: widget.topicId,
-            courseId: widget.courseId,
-            articleNo: widget.articleNo,
-            fromBookmarks: widget.fromBookmarks,
-            count: widget.questionCount,
-          );
+      final repo = ref.read(quizRepositoryProvider);
+      final StartedSession s;
+      var startIndex = 0;
+      if (widget.resumeSessionId != null) {
+        // Yarım seans (P0-②): aynı set, ilk cevapsız sorudan devam.
+        final resumed = await repo.resume(widget.resumeSessionId!);
+        s = resumed.session;
+        startIndex = s.questions
+            .indexWhere((q) => !resumed.answeredQuestionIds.contains(q.questionId));
+      } else {
+        s = await repo.start(
+          mode: widget.mode,
+          topicId: widget.topicId,
+          courseId: widget.courseId,
+          articleNo: widget.articleNo,
+          fromBookmarks: widget.fromBookmarks,
+          count: widget.questionCount,
+        );
+      }
       setState(() {
         _session = s;
+        _index = startIndex < 0 ? s.questions.length - 1 : startIndex;
         _qStart = DateTime.now();
       });
+      if (startIndex < 0) {
+        // Tüm sorular zaten cevaplı — doğrudan bitir, sonucu göster.
+        await _finish();
+        return;
+      }
       if (s.plannedDurationSeconds != null) {
         _startTimer(s.plannedDurationSeconds!);
       }
