@@ -48,7 +48,11 @@ class AppTheme {
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
-          minimumSize: const Size.fromHeight(52), // ≥44pt dokunma hedefi
+          // DİKKAT: Size.fromHeight KULLANMA — genişliği sonsuz yapar ve buton
+          // bir Row'a girdiğinde tüm ekranın layout'unu çökertir (canlı deneme
+          // alt çubuğu donması). Tam genişlik isteyen ekran stretch/Expanded
+          // ile ister; tema yalnız ≥44pt dokunma yüksekliğini garanti eder.
+          minimumSize: const Size(64, 52),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           ),
