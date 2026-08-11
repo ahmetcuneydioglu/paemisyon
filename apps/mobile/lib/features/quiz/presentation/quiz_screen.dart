@@ -11,6 +11,7 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/article_card.dart';
 import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
@@ -326,6 +327,46 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     }
   }
 
+  /// Resmî madde metni sheet'i (Doc 28 P0-④) — ArticleCard ilk kez sahnede.
+  void _showArticleSheet(RelatedArticle article) {
+    final text = article.text!;
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      builder: (ctx) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: 0.7,
+        maxChildSize: 0.95,
+        builder: (ctx, scrollController) => SingleChildScrollView(
+          controller: scrollController,
+          padding: const EdgeInsets.fromLTRB(
+              AppSpacing.lg, 0, AppSpacing.lg, AppSpacing.xl),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ArticleCard(
+                title: 'Madde ${article.no}',
+                officialText: text.body,
+              ),
+              const SizedBox(height: AppSpacing.sm),
+              Text(
+                [
+                  'Kaynak: ${text.source}',
+                  if (text.effectiveInfo != null) text.effectiveInfo!,
+                  if (text.verifiedAt != null)
+                    'Doğrulama: ${text.verifiedAt!.substring(0, 10)}',
+                ].join(' · '),
+                style: AppTypography.caption
+                    .copyWith(color: ctx.tokens.inkSoft),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   void _snack(String m) {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(m)));
@@ -443,6 +484,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                       'Dayanak: ${_feedback!.legalReference!}',
                   ].join('\n\n'),
                   source: _feedback!.source,
+                ),
+              ],
+              // Resmî madde metni köprüsü (Doc 28 P0-④): öğren-dene-yanıl-ANLA.
+              if (_feedback?.relatedArticle?.text != null) ...[
+                const SizedBox(height: AppSpacing.sm),
+                OutlinedButton.icon(
+                  onPressed: () =>
+                      _showArticleSheet(_feedback!.relatedArticle!),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: context.tokens.accentAtlas,
+                    side: BorderSide(color: context.tokens.accentAtlas),
+                    minimumSize:
+                        const Size.fromHeight(AppSpacing.minTouchTarget),
+                  ),
+                  icon: const Icon(Icons.menu_book_rounded, size: 18),
+                  label: Text(
+                      'Madde ${_feedback!.relatedArticle!.no} — resmî metni oku'),
                 ),
               ],
               // AI koç: yanlış cevapta çeldirici analizi (Doc 24 §4 Faz 2).

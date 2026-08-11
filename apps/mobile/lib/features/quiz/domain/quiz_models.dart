@@ -126,6 +126,56 @@ class TopicScore {
 
 /// Cevap yanıtı: practice'te dolu (isCorrect/correctOptionId/explanation),
 /// exam'de yalnızca recorded=true (doğru cevap sızmaz).
+/// İlgili maddenin YAYINLANMIŞ resmî metni + künyesi (Doc 25 §4).
+class RelatedArticleText {
+  final String body;
+  final String source; // örn. "mevzuat.gov.tr"
+  final String? sourceUrl;
+  final String? effectiveInfo;
+  final String? verifiedAt;
+
+  const RelatedArticleText({
+    required this.body,
+    required this.source,
+    this.sourceUrl,
+    this.effectiveInfo,
+    this.verifiedAt,
+  });
+
+  factory RelatedArticleText.fromJson(Map<String, dynamic> j) =>
+      RelatedArticleText(
+        body: j['body'] as String,
+        source: j['source'] as String? ?? 'mevzuat.gov.tr',
+        sourceUrl: j['sourceUrl'] as String?,
+        effectiveInfo: j['effectiveInfo'] as String?,
+        verifiedAt: j['verifiedAt'] as String?,
+      );
+}
+
+/// Cevap geri bildirimindeki madde köprüsü (metin yoksa yalnız künye).
+class RelatedArticle {
+  final String lawSlug;
+  final String no;
+  final String slug;
+  final RelatedArticleText? text;
+
+  const RelatedArticle({
+    required this.lawSlug,
+    required this.no,
+    required this.slug,
+    this.text,
+  });
+
+  factory RelatedArticle.fromJson(Map<String, dynamic> j) => RelatedArticle(
+        lawSlug: j['lawSlug'] as String,
+        no: j['no'] as String,
+        slug: j['slug'] as String,
+        text: j['text'] != null
+            ? RelatedArticleText.fromJson(j['text'] as Map<String, dynamic>)
+            : null,
+      );
+}
+
 class AnswerFeedback {
   final bool? isCorrect;
   final String? correctOptionId;
@@ -136,12 +186,16 @@ class AnswerFeedback {
   /// panel ayarı kapalıysa null gönderir (istemci kural bilmez).
   final String? source;
 
+  /// Sorunun bağlı olduğu kanun maddesi (Doc 28 P0-④) — web'le eş sözleşme.
+  final RelatedArticle? relatedArticle;
+
   const AnswerFeedback(
       {this.isCorrect,
       this.correctOptionId,
       this.explanation,
       this.legalReference,
-      this.source});
+      this.source,
+      this.relatedArticle});
 
   factory AnswerFeedback.fromJson(Map<String, dynamic> j) => AnswerFeedback(
         isCorrect: j['isCorrect'] as bool?,
@@ -149,6 +203,10 @@ class AnswerFeedback {
         explanation: j['explanation'] as String?,
         legalReference: j['legalReference'] as String?,
         source: j['source'] as String?,
+        relatedArticle: j['relatedArticle'] != null
+            ? RelatedArticle.fromJson(
+                j['relatedArticle'] as Map<String, dynamic>)
+            : null,
       );
 }
 
