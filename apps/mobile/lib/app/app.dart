@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/offline/connectivity_provider.dart';
 import '../core/offline/sync_service.dart';
 import '../core/theme/app_theme.dart';
+import '../core/theme/theme_mode_provider.dart';
 import '../shared/widgets/offline_banner.dart';
 import 'router/app_router.dart';
 
@@ -42,6 +43,8 @@ class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
+      // Tema tercihi (Doc 28 P1-11): sistem/açık/koyu — ayarlardan.
+      themeMode: ref.watch(themeModeProvider),
       routerConfig: router,
       builder: (context, child) => Column(
         children: [

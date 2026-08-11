@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/theme_mode_provider.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../auth/data/auth_repository.dart';
@@ -216,6 +218,54 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
             label: Text(_busy ? 'Kaydediliyor…' : 'Değişiklikleri kaydet')),
         const SizedBox(height: AppSpacing.xl),
         const Divider(),
+
+        // ── Görünüm (Doc 28 P1-11): web'in Oto/Açık/Koyu anahtarının eşi ──
+        ListTile(
+          contentPadding: EdgeInsets.zero,
+          leading: const Icon(Icons.brightness_6_rounded),
+          title: const Text('Görünüm'),
+          trailing: Consumer(builder: (context, ref, _) {
+            final mode = ref.watch(themeModeProvider);
+            return SegmentedButton<ThemeMode>(
+              showSelectedIcon: false,
+              style: SegmentedButton.styleFrom(
+                  visualDensity: VisualDensity.compact),
+              segments: const [
+                ButtonSegment(
+                    value: ThemeMode.system, label: Text('Oto')),
+                ButtonSegment(
+                    value: ThemeMode.light, label: Text('Açık')),
+                ButtonSegment(value: ThemeMode.dark, label: Text('Koyu')),
+              ],
+              selected: {mode},
+              onSelectionChanged: (s) =>
+                  ref.read(themeModeProvider.notifier).set(s.first),
+            );
+          }),
+        ),
+        const Divider(),
+
+        // ── Yasal + destek (App Store gereklilikleri — Doc 28 P1-11) ──
+        ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const Icon(Icons.privacy_tip_outlined),
+            title: const Text('Gizlilik Politikası (KVKK)'),
+            trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+            onTap: () => _openWeb('https://paemisyon.com/gizlilik')),
+        ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const Icon(Icons.description_outlined),
+            title: const Text('Kullanım Koşulları'),
+            trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+            onTap: () => _openWeb('https://paemisyon.com/kosullar')),
+        ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const Icon(Icons.help_outline_rounded),
+            title: const Text('SSS ve Destek'),
+            subtitle: const Text('destek@paemisyon.com'),
+            trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+            onTap: () => _openWeb('https://paemisyon.com/sss')),
+        const Divider(),
         ListTile(
             contentPadding: EdgeInsets.zero,
             leading: const Icon(Icons.password_rounded),
@@ -280,4 +330,9 @@ Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {
           .showSnackBar(SnackBar(content: Text(failure.message)));
     }
   }
+}
+
+/// Dış bağlantı aç (yasal sayfalar web'de tek kaynak — kopya metin tutulmaz).
+Future<void> _openWeb(String url) async {
+  await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
 }
