@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/notifications/notification_service.dart';
 import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
@@ -35,6 +36,13 @@ class HomeScreen extends ConsumerWidget {
     ref.listen(coachBriefProvider, (prev, next) {
       final b = next.valueOrNull;
       if (b != null && !b.onboardingCompleted) context.go('/onboarding');
+      // Hatırlatıcı senkronu (P1-7): hedef dolduysa bugünkü bildirim yarına
+      // kayar — koç, işini bitirmiş kullanıcıyı akşam dürtmez.
+      if (b != null && b.goal > 0 && b.answered >= b.goal) {
+        ref
+            .read(reminderSettingsProvider.notifier)
+            .syncWithGoal(goalMetToday: true);
+      }
     });
 
     return Scaffold(

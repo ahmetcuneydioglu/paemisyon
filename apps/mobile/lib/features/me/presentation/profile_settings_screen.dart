@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/notifications/notification_service.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/theme_mode_provider.dart';
 import '../../../shared/widgets/error_state.dart';
@@ -243,6 +244,50 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
             );
           }),
         ),
+        const Divider(),
+
+        // ── Günlük hatırlatıcı (Doc 28 P1-7): varsayılan KAPALI; açarken
+        // sistem izni istenir. Hedef dolduysa o gün bildirim gelmez. ──
+        Consumer(builder: (context, ref, _) {
+          final reminder = ref.watch(reminderSettingsProvider);
+          return Column(children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              secondary: const Icon(Icons.notifications_active_outlined),
+              title: const Text('Günlük hatırlatıcı'),
+              subtitle: const Text(
+                  'Hedefini doldurmadıysan akşam kısa bir hatırlatma gelir.'),
+              value: reminder.enabled,
+              onChanged: (v) async {
+                final ok = await ref
+                    .read(reminderSettingsProvider.notifier)
+                    .setEnabled(v);
+                if (!ok && v && context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text(
+                          'Bildirim izni verilmedi. Ayarlar > Bildirimler\'den açabilirsin.')));
+                }
+              },
+            ),
+            if (reminder.enabled)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: const SizedBox(width: 24),
+                title: const Text('Hatırlatma saati'),
+                subtitle: Text(reminder.time.format(context)),
+                trailing: const Icon(Icons.schedule_rounded),
+                onTap: () async {
+                  final picked = await showTimePicker(
+                      context: context, initialTime: reminder.time);
+                  if (picked != null) {
+                    await ref
+                        .read(reminderSettingsProvider.notifier)
+                        .setTime(picked);
+                  }
+                },
+              ),
+          ]);
+        }),
         const Divider(),
 
         // ── Yasal + destek (App Store gereklilikleri — Doc 28 P1-11) ──
