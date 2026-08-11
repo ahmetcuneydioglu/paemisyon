@@ -574,19 +574,24 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         label: o.label,
         text: o.text,
         state: state,
-        onTap: answered ? null : () => setState(() => _selected = o.id),
+        // Practice: dokunuş = cevap (Doc 26 §3.4 — öğrenme anında gecikme
+        // olmaz; ayrıca "Onayla" ara adımı kaldırıldı). Exam: önce seç,
+        // "İleri" gönderir — boş bırakma hakkı korunur.
+        onTap: answered || _busy
+            ? null
+            : () {
+                setState(() => _selected = o.id);
+                if (_isPractice) _submit();
+              },
       ),
     );
   }
 
   Widget _bottomButton() {
-    // practice: cevaptan önce "Onayla", sonra "Sonraki"/"Bitir".
-    // exam: "İleri" (gönder + ilerle), son soruda "Bitir".
+    // practice: dokunuş cevapladığı için cevaptan ÖNCE buton yok;
+    // sonra "Sonraki"/"Bitir". exam: "İleri" (gönder + ilerle).
     if (_isPractice) {
-      if (_feedback == null) {
-        return PrimaryButton(
-            label: 'Onayla', loading: _busy, onPressed: _submit);
-      }
+      if (_feedback == null) return const SizedBox.shrink();
       return PrimaryButton(
           label: _isLast ? 'Bitir' : 'Sonraki',
           loading: _busy,
