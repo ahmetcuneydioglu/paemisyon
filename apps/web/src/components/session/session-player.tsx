@@ -112,6 +112,16 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   // "M ile aç" — ilgili maddeyi sağ panelde göster (seanstan çıkmadan, Doc 27 §3.6).
   const [maddeOpen, setMaddeOpen] = useState(false);
+  // AI koç (Doc 28 P3-21 — mobildeki "Koça sor" web'e): yanlış cevapta
+  // çeldirici analizi. Soru bazlı durum; önbellekli üretim sunucuda.
+  const [aiState, setAiState] = useState<
+    Record<
+      string,
+      | { status: "busy" }
+      | { status: "done"; text: string; cached: boolean; remainingToday: number | null }
+      | { status: "error"; message: string; limit: boolean }
+    >
+  >({});
   // Hata bildir (wireframe 08) — seanstan ÇIKMADAN yerinde bildirim; /questions/:id/report'a yazar.
   const [reportOpen, setReportOpen] = useState(false);
   const [reportText, setReportText] = useState("");
@@ -295,6 +305,36 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       });
     },
     [bookmarks],
+  );
+
+  // ── AI koç: "Neden yanlış?" — /ai/explain (önbellekli; free 3/gün) ──
+  const askCoach = useCallback(
+    async (q: SessionQuestion, chosenOptionId: string) => {
+      if (aiState[q.questionId]?.status === "busy") return;
+      setAiState((s) => ({ ...s, [q.questionId]: { status: "busy" } }));
+      try {
+        const res = await apiClient<{
+          text: string;
+          cached: boolean;
+          remainingToday: number | null;
+        }>("/ai/explain", {
+          method: "POST",
+          body: { versionId: q.versionId, chosenOptionId },
+        });
+        setAiState((s) => ({ ...s, [q.questionId]: { status: "done", ...res } }));
+      } catch (e: unknown) {
+        const err = e instanceof ApiClientError ? e : null;
+        setAiState((s) => ({
+          ...s,
+          [q.questionId]: {
+            status: "error",
+            limit: err?.code === "AI_LIMIT_REACHED",
+            message: err?.message ?? "Koça şu an ulaşılamadı — tekrar dene.",
+          },
+        }));
+      }
+    },
+    [aiState],
   );
 
   // ── Hata bildir — mevcut soruyu /questions/:id/report'a bildirir; seanstan çıkmaz ──
@@ -539,6 +579,59 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                   </p>
                 </Card>
               )}
+              {/* AI koç (Doc 28 P3-21): yalnız yanlış cevapta — "neden bu çeldirici?" */}
+              {!fb.isCorrect &&
+                (() => {
+                  const ai = aiState[question!.questionId];
+                  if (!ai) {
+                    return (
+                      <button
+                        type="button"
+                        onClick={() => askCoach(question!, fb.selected)}
+                        className="tk-interactive flex w-full items-center gap-2 rounded-md border border-brand/40 bg-brand/5 px-4 py-3 text-left text-[14px] font-bold text-brand hover:border-brand"
+                      >
+                        <span aria-hidden>🧠</span> Koça sor: Neden yanlış?
+                      </button>
+                    );
+                  }
+                  if (ai.status === "busy") {
+                    return (
+                      <p
+                        className="rounded-md border border-brand/30 bg-brand/5 px-4 py-3 text-[14px] text-ink-soft"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Koç düşünüyor…
+                      </p>
+                    );
+                  }
+                  if (ai.status === "error") {
+                    return (
+                      <div className="rounded-md border border-line bg-surface-alt px-4 py-3 text-[14px] text-ink-soft">
+                        {ai.message}
+                        {ai.limit && (
+                          <>
+                            {" "}
+                            <Link href="/premium" className="font-bold text-brand hover:underline">
+                              Premium&apos;la sınırsız →
+                            </Link>
+                          </>
+                        )}
+                      </div>
+                    );
+                  }
+                  return (
+                    <Card className="border-brand/40">
+                      <CardTitle className="text-[13px] text-brand">Koç · çeldirici analizi</CardTitle>
+                      <div className="mt-2 whitespace-pre-line text-[14px] leading-relaxed text-ink">
+                        {ai.text}
+                      </div>
+                      {ai.remainingToday != null && (
+                        <p className="tk-caption mt-2">Bugün kalan koç hakkı: {ai.remainingToday}</p>
+                      )}
+                    </Card>
+                  );
+                })()}
               {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir (wireframe 08) */}
               <div className="flex flex-wrap items-center justify-end gap-2">
                 <button
