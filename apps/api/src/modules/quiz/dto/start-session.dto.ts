@@ -42,9 +42,17 @@ export class StartSessionDto {
   @IsUUID()
   archiveExamId?: string;
 
+  /// Kişisel deneme: kullanıcının HEDEF sınavının müfredat ağırlıklarıyla,
+  /// görmediği soru öncelikli, süreli set. mode=exam ile; sıralamaya girmez.
+  @IsOptional()
+  @IsBoolean()
+  personalExam?: boolean;
+
+  /// Üst sınır 120: kişisel deneme gerçek formatı (100 soru) sığmalı;
+  /// diğer modlarda pratik üst sınır zaten istemci tarafında 10-20'dir.
   @IsOptional()
   @IsInt()
   @Min(1)
-  @Max(50)
+  @Max(120)
   questionCount?: number;
 }

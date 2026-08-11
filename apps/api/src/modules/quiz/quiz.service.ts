@@ -11,6 +11,12 @@ import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { mixQuota, pickMix, pickTopicBalanced } from './session-mix.logic';
+// Ağırlıklı kota + konu-dengeli seçim admin autofill ile ORTAK saf mantık.
+import {
+  allocateQuota,
+  pickSectionQuestions,
+  type CandidateQuestion,
+} from '../admin/exams/exam-autofill.logic';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { StartSessionDto } from './dto/start-session.dto';
@@ -52,6 +58,16 @@ export class QuizService {
         );
       }
       return this.startArchiveExam(user, dto.archiveExamId);
+    }
+
+    // Kişisel deneme: hedef sınavın müfredat ağırlıklarıyla, süreli set.
+    if (dto.personalExam === true) {
+      if (dto.mode !== 'exam' || dto.topicId != null || dto.courseId != null) {
+        throw new BadRequestException(
+          'Kişisel deneme yalnız mode=exam ile ve kapsamsız başlatılır.',
+        );
+      }
+      return this.startPersonalExam(user, dto.questionCount ?? 100);
     }
 
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
@@ -257,6 +273,146 @@ export class QuizService {
       mode: session.mode,
       plannedDurationSeconds,
       questions,
+    };
+  }
+
+  /**
+   * Kişisel deneme (Doc 18 devamı — "bana özel deneme"): randevu beklemeden,
+   * kullanıcının HEDEF sınavının bölüm ağırlıklarına (ExamSection.weightPercent)
+   * göre kurulmuş, süreli, gerçek formatta set. Resmî sıralamaya girmez
+   * (examId yok, mode=exam). Kullanıcının GÖRMEDİĞİ sorular önceliklidir;
+   * free kullanıcıya premium konu soruları dahil edilmez.
+   */
+  private async startPersonalExam(user: AuthenticatedUser, count: number) {
+    const profile = await this.prisma.user.findUnique({
+      where: { id: user.id },
+      select: { preferredModuleId: true },
+    });
+    if (!profile?.preferredModuleId) {
+      throw new BadRequestException(
+        'Kişisel deneme için önce hedef sınavını seç (Profil → Ayarlar).',
+      );
+    }
+
+    const sections = await this.prisma.examSection.findMany({
+      where: { examTypeId: profile.preferredModuleId, deletedAt: null },
+      orderBy: { sortOrder: 'asc' },
+      include: { courses: { select: { courseId: true } } },
+    });
+    if (sections.length === 0) {
+      throw new NotFoundException('Hedef sınavın müfredatı henüz tanımlı değil.');
+    }
+
+    // Kullanıcının daha önce cevapladığı sorular — görmediği soru önceliklidir.
+    const seenRows = await this.prisma.quizAnswer.findMany({
+      where: { session: { userId: user.id } },
+      select: { questionId: true },
+      distinct: ['questionId'],
+    });
+    const seen = new Set(seenRows.map((r) => r.questionId));
+
+    const claimed = new Set<string>();
+    const pools = await Promise.all(
+      sections.map(async (s) => {
+        const courseIds = s.courses.map((c) => c.courseId);
+        if (courseIds.length === 0)
+          return { section: s, candidates: [] as CandidateQuestion[] };
+        const rows = await this.prisma.question.findMany({
+          where: {
+            deletedAt: null,
+            currentVersionId: { not: null },
+            topic: {
+              courseId: { in: courseIds },
+              deletedAt: null,
+              ...(user.isPremium ? {} : { isPremium: false }),
+            },
+          },
+          select: { id: true, topicId: true, currentVersionId: true },
+        });
+        return {
+          section: s,
+          candidates: rows.map((r) => ({
+            questionId: r.id,
+            usageCount: seen.has(r.id) ? 1 : 0,
+            topicId: r.topicId,
+          })),
+          versionOf: new Map(rows.map((r) => [r.id, r.currentVersionId!])),
+        };
+      }),
+    );
+    // Ders paylaşan bölümlerde aynı soru iki kez seçilmesin.
+    for (const p of pools) {
+      p.candidates = p.candidates.filter((c) => {
+        if (claimed.has(c.questionId)) return false;
+        claimed.add(c.questionId);
+        return true;
+      });
+    }
+
+    const quota = allocateQuota(
+      pools.map((p) => ({
+        sectionId: p.section.id,
+        weight: p.section.weightPercent,
+        available: p.candidates.length,
+      })),
+      count,
+    );
+    const chosenIds: { questionId: string; versionId: string }[] = [];
+    for (const p of pools) {
+      const picked = pickSectionQuestions(
+        p.candidates,
+        quota.get(p.section.id) ?? 0,
+      );
+      for (const id of picked) {
+        const v = (p as { versionOf?: Map<string, string> }).versionOf?.get(id);
+        if (v) chosenIds.push({ questionId: id, versionId: v });
+      }
+    }
+    if (chosenIds.length === 0) {
+      throw new NotFoundException('Hedef sınavın derslerinde yayında soru yok.');
+    }
+
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: chosenIds.map((c) => c.versionId) } },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        options: {
+          select: { id: true, label: true, text: true }, // anahtar sızmaz
+          orderBy: { sortOrder: 'asc' },
+        },
+      },
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+
+    const plannedDurationSeconds =
+      chosenIds.length * QuizService.EXAM_SECONDS_PER_QUESTION;
+    const session = await this.prisma.quizSession.create({
+      data: {
+        userId: user.id,
+        mode: 'exam',
+        totalQuestions: chosenIds.length,
+        plannedDurationSeconds,
+        questionOrder: chosenIds.map((c) => c.versionId),
+      },
+    });
+
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      plannedDurationSeconds,
+      questions: chosenIds.map((c) => {
+        const v = byId.get(c.versionId)!;
+        return {
+          questionId: v.questionId,
+          versionId: v.id,
+          stem: v.stem,
+          mediaUrl: v.mediaUrl,
+          options: v.options,
+        };
+      }),
     };
   }
 

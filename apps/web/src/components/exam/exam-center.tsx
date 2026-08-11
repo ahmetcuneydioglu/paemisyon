@@ -88,6 +88,33 @@ export function ExamCenter({
           </Card>
         )}
 
+        {/* Bana özel deneme: randevu beklemeden, müfredat ağırlıklarıyla */}
+        <Card className="mb-5">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="min-w-0">
+              <p className="font-heading text-[15px] font-bold text-ink">
+                ⚡ Bana özel deneme
+              </p>
+              <p className="mt-0.5 text-[13px] text-ink-soft">
+                Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan.
+                Sıralamaya girmez.
+              </p>
+            </div>
+            <div className="flex gap-2">
+              {[25, 50, 100].map((n) => (
+                <ButtonLink
+                  key={n}
+                  href={`/sinav/kisisel?count=${n}`}
+                  variant={n === 100 ? "primary" : "secondary"}
+                  size="sm"
+                >
+                  {n} soru
+                </ButtonLink>
+              ))}
+            </div>
+          </div>
+        </Card>
+
         {/* Yaklaşan takvim */}
         {upcoming.length > 1 && (
           <section className="mb-5">

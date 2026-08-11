@@ -19,6 +19,7 @@ class QuizRepository {
     String? courseId,
     String? articleNo,
     String? archiveExamId,
+    bool personalExam = false,
     bool fromBookmarks = false,
     int count = 10,
   }) async {
@@ -33,6 +34,8 @@ class QuizRepository {
           if (articleNo != null) 'articleNo': articleNo,
           // Arşiv denemesi: biten denemenin sabit seti (süre sunucudan).
           if (archiveExamId != null) 'archiveExamId': archiveExamId,
+          // Kişisel deneme: hedef sınavın müfredat ağırlıklarıyla.
+          if (personalExam) 'personalExam': true,
           if (fromBookmarks) 'fromBookmarks': true,
           'questionCount': count,
         },

@@ -41,6 +41,9 @@ class QuizScreen extends ConsumerStatefulWidget {
 
   /// Arşiv denemesi: biten denemenin sabit seti (mode=exam, süre sunucudan).
   final String? archiveExamId;
+
+  /// Kişisel deneme: hedef sınavın müfredat ağırlıklarıyla (mode=exam).
+  final bool personalExam;
   const QuizScreen({
     super.key,
     this.topicId,
@@ -53,6 +56,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.questionCount = 10,
     this.patrol = false,
     this.archiveExamId,
+    this.personalExam = false,
   });
 
   @override
@@ -115,6 +119,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           courseId: widget.courseId,
           articleNo: widget.articleNo,
           archiveExamId: widget.archiveExamId,
+          personalExam: widget.personalExam,
           fromBookmarks: widget.fromBookmarks,
           count: widget.questionCount,
         );

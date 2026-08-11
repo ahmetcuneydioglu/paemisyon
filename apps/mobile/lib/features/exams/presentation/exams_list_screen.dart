@@ -62,13 +62,7 @@ class ExamsListScreen extends ConsumerWidget {
         ),
         data: (d) {
           final (list, mine) = d;
-          if (list.isEmpty) {
-            return const EmptyStateView(
-              icon: Icons.event_note_rounded,
-              message:
-                  'Şu an yayında deneme yok.\nYenileri eklendiğinde burada görünecek.',
-            );
-          }
+          // Yayında deneme yokken de "bana özel deneme" kapısı açık kalır.
           return RefreshIndicator(
             onRefresh: () async => ref.invalidate(examsScreenDataProvider),
             child: _Sections(list: list, mine: mine),
@@ -101,6 +95,17 @@ class _Sections extends ConsumerWidget {
 
     var i = 0;
     final children = <Widget>[
+      // Bana özel deneme: randevu beklemeden, müfredat ağırlıklarıyla (madde 3).
+      StaggeredReveal(index: i++, child: _PersonalExamCard(onOpen: go)),
+      if (list.isEmpty)
+        const Padding(
+          padding: EdgeInsets.only(top: AppSpacing.xl),
+          child: EmptyStateView(
+            icon: Icons.event_note_rounded,
+            message:
+                'Şu an yayında canlı deneme yok.\nYenileri eklendiğinde burada görünecek.',
+          ),
+        ),
       if (active.isNotEmpty) ...[
         const _SectionHeader('CANLI'),
         for (final e in active)
@@ -363,6 +368,106 @@ class _HeroExamCardState extends State<_HeroExamCard> {
               onPressed: () => widget.onOpen(ctaPath),
               child: Text(ctaLabel),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── BANA ÖZEL: kullanıcı tetiklemeli ağırlıklı deneme (Doc 18 devamı) ──
+
+class _PersonalExamCard extends StatelessWidget {
+  final Future<void> Function(String path, [Object? extra]) onOpen;
+  const _PersonalExamCard({required this.onOpen});
+
+  Future<void> _pickCount(BuildContext context) async {
+    final count = await showModalBottomSheet<int>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text('Kaç soruluk olsun?',
+                    style: Theme.of(ctx)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(fontWeight: FontWeight.w700)),
+              ),
+            ),
+            for (final (n, sub) in [
+              (25, 'Kısa tur · ~30 dk'),
+              (50, 'Yarım format · ~1 saat'),
+              (100, 'Gerçek format · ~2 saat'),
+            ])
+              ListTile(
+                leading: const Icon(Icons.checklist_rounded),
+                title: Text('$n soru'),
+                subtitle: Text(sub),
+                onTap: () => Navigator.pop(ctx, n),
+              ),
+            const SizedBox(height: AppSpacing.sm),
+          ],
+        ),
+      ),
+    );
+    if (count == null || !context.mounted) return;
+    await onOpen('/quiz', {
+      'personalExam': true,
+      'topicName': 'Kişisel Deneme',
+      'mode': 'exam',
+      'count': count,
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final pal = AccentPalette.of(context);
+    return PressableScale(
+      onTap: () => _pickCount(context),
+      child: Container(
+        margin: const EdgeInsets.only(
+            top: AppSpacing.sm, bottom: AppSpacing.xs),
+        padding: const EdgeInsets.all(AppSpacing.lg),
+        decoration: BoxDecoration(
+          border: Border.all(color: Theme.of(context).colorScheme.outlineVariant),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(AppSpacing.sm + 2),
+              decoration: BoxDecoration(
+                color: pal.accent.withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              ),
+              child: Icon(Icons.bolt_rounded, color: pal.accent),
+            ),
+            const SizedBox(width: AppSpacing.md),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Bana özel deneme',
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleSmall
+                          ?.copyWith(fontWeight: FontWeight.w700)),
+                  const SizedBox(height: 2),
+                  Text(
+                    'Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan. Sıralamaya girmez.',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: AppSpacing.xs),
+            Icon(Icons.chevron_right_rounded,
+                color: Theme.of(context).colorScheme.onSurfaceVariant),
           ],
         ),
       ),
