@@ -10,8 +10,8 @@ import 'package:paemisyon/features/exams/presentation/exam_runner_screen.dart';
 import 'package:paemisyon/features/quiz/data/quiz_repository.dart';
 import 'package:paemisyon/features/quiz/domain/quiz_models.dart';
 
-/// Canlı deneme oynatıcısı regresyonu: ekran açılır, şıklar DOKUNULABİLİR,
-/// seçim sunucuya yazılır (kullanıcı raporu: "ekran donuk, soru seçilemiyor").
+/// Canlı deneme oynatıcısı: ekran açılır, şıklar DOKUNULABİLİR (donma
+/// regresyonu), optik form navigatörü soruya atlar, bayrak işaretlenir.
 class _FakeExams extends ExamsRepository {
   _FakeExams() : super(Dio());
 
@@ -36,6 +36,10 @@ class _FakeExams extends ExamsRepository {
         ],
         givenAnswers: const {},
       );
+
+  @override
+  Future<({int active, int completed})> presence(String examId) async =>
+      (active: 7, completed: 0);
 }
 
 class _FakeQuiz extends QuizRepository {
@@ -56,7 +60,15 @@ class _FakeQuiz extends QuizRepository {
 }
 
 void main() {
-  testWidgets('deneme açılır ve şık seçimi çalışır', (tester) async {
+  // Sayaç saniyede bir setState ettiği için pumpAndSettle ASLA dinginleşmez;
+  // animasyonlar açık süre pump'larıyla ilerletilir.
+  Future<void> settle(WidgetTester tester) async {
+    for (var i = 0; i < 6; i++) {
+      await tester.pump(const Duration(milliseconds: 100));
+    }
+  }
+
+  Future<_FakeQuiz> pumpRunner(WidgetTester tester) async {
     final quiz = _FakeQuiz();
     await tester.pumpWidget(ProviderScope(
       overrides: [
@@ -69,12 +81,48 @@ void main() {
       ),
     ));
     await tester.pump(); // start() future
-    await tester.pump(const Duration(seconds: 1)); // sayaç ilk tik
+    await tester.pump(const Duration(seconds: 1)); // sayaç + nabız ilk tik
+    return quiz;
+  }
 
-    expect(find.textContaining('Soru 0 kökü'), findsWidgets);
-    // Şık dokunulabilir mi? (kullanıcı raporu: donuk ekran)
+  testWidgets('deneme açılır, şık seçimi çalışır, ilk cevapta ilerler',
+      (tester) async {
+    final quiz = await pumpRunner(tester);
+    expect(find.textContaining('Soru 0 kökü'), findsOneWidget);
+    expect(find.text('SORU 1 / 3'), findsOneWidget);
+
     await tester.tap(find.text('Şık B').first);
     await tester.pump();
     expect(quiz.answered, contains('q0:q0B'));
+
+    // İlk cevaptan sonra otomatik sonraki soruya geçer (220 ms + animasyon).
+    await settle(tester);
+    expect(find.text('SORU 2 / 3'), findsOneWidget);
+  });
+
+  testWidgets('optik form navigatörü doluluk gösterir ve soruya atlar',
+      (tester) async {
+    await pumpRunner(tester);
+    // 1. soruyu cevapla → sayaç 1/3 olur, otomatik 2. soruya geçer.
+    await tester.tap(find.text('Şık A').first);
+    await settle(tester);
+    expect(find.text('1/3 dolu'), findsOneWidget);
+
+    // Navigatörü aç, 3. soruya atla.
+    await tester.tap(find.text('1/3 dolu'));
+    await settle(tester);
+    expect(find.text('Optik form'), findsOneWidget);
+    expect(find.textContaining('dolu 1 · bayraklı 0 · boş 2'), findsOneWidget);
+    await tester.tap(find.text('3'));
+    await settle(tester);
+    expect(find.text('SORU 3 / 3'), findsOneWidget);
+  });
+
+  testWidgets('bayrak işaretlenir ve sayaçta görünür', (tester) async {
+    await pumpRunner(tester);
+    await tester.tap(find.byTooltip('Emin değilim'));
+    await settle(tester);
+    expect(find.text('emin değilim'), findsOneWidget); // kart rozeti
+    expect(find.text('· ⚑1'), findsOneWidget); // alt kumanda sayacı
   });
 }
