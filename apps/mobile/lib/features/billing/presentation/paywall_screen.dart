@@ -5,18 +5,27 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
+import '../../../core/constants/contact.dart';
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../shared/widgets/contact_channels.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../me/data/me_repository.dart';
 import '../data/billing_repository.dart';
 import '../domain/billing_plan.dart';
 
-/// Premium paywall (Doc 15). Satın alma StoreKit üzerinden başlar; imzalı işlem
-/// (JWS) SUNUCUYA doğrulatılır — istemci "premium'um" diyemez. Başarıda /me tazelenir.
+/// Premium paywall (Doc 15). İki satın alma yolu desteklenir:
+///
+/// - **Mağaza planı** (`storeProductId*` dolu) — StoreKit akışı; imzalı işlem
+///   (JWS) SUNUCUYA doğrulatılır, istemci "premium'um" diyemez.
+/// - **Manuel plan** (`storeProductId*` NULL) — ödeme Telegram/Instagram üzerinden
+///   elle yürür; hesabı ekip açar. Bugün satılan 3 aylık paket bu yoldadır.
+///
+/// Plan mağazaya bağlı değilken "Mağazada bulunamadı" hatası ve ölü buton
+/// GÖSTERİLMEZ: bu bir hata değil, ürünün kasıtlı satış modelidir.
 class PaywallScreen extends ConsumerStatefulWidget {
   const PaywallScreen({super.key});
 
@@ -25,7 +34,8 @@ class PaywallScreen extends ConsumerStatefulWidget {
 }
 
 class _PaywallScreenState extends ConsumerState<PaywallScreen> {
-  final InAppPurchase _iap = InAppPurchase.instance;
+  /// Tembel: mağaza planı yoksa StoreKit/Play hiç uyandırılmaz.
+  InAppPurchase get _iap => InAppPurchase.instance;
   StreamSubscription<List<PurchaseDetails>>? _sub;
 
   List<BillingPlan>? _plans;
@@ -34,13 +44,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   String? _loadError;
   String? _buyingKey; // satın alınmakta olan planın key'i
 
+  /// Mağaza akışına ait UI (geri yükle, mağaza uyarısı) yalnız mağaza planı
+  /// varken anlamlıdır.
+  bool get _hasStorePlans => _plans?.any((p) => p.isStoreManaged) ?? false;
+
   @override
   void initState() {
     super.initState();
-    _sub = _iap.purchaseStream.listen(
-      _onPurchases,
-      onError: (e) => _fail('Mağaza hatası: $e'),
-    );
+    // purchaseStream aboneliği planlar geldikten SONRA, yalnız mağaza planı
+    // varsa kurulur (_load içinde) — manuel akışta mağaza kanalına dokunulmaz.
     _load();
   }
 
@@ -54,12 +66,20 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     setState(() => _loadError = null);
     try {
       final plans = await ref.read(billingRepositoryProvider).getPlans();
-      final available = await _iap.isAvailable();
+      // Mağaza planı yoksa StoreKit'e hiç dokunma: manuel akışta mağaza
+      // erişilemez olması bir sorun değil.
+      final ids =
+          plans.map((p) => p.storeProductId).whereType<String>().toSet();
+      var available = false;
       final products = <String, ProductDetails>{};
-      if (available) {
-        final ids =
-            plans.map((p) => p.storeProductIdIos).whereType<String>().toSet();
-        if (ids.isNotEmpty) {
+      if (ids.isNotEmpty) {
+        // Mağaza akışı var: bekleyen/geri yüklenen işlemleri dinlemeye başla.
+        _sub ??= _iap.purchaseStream.listen(
+          _onPurchases,
+          onError: (e) => _fail('Mağaza hatası: $e'),
+        );
+        available = await _iap.isAvailable();
+        if (available) {
           final resp = await _iap.queryProductDetails(ids);
           for (final pd in resp.productDetails) {
             products[pd.id] = pd;
@@ -81,14 +101,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   }
 
   Future<void> _buy(BillingPlan plan) async {
-    final pd = _products[plan.storeProductIdIos];
+    final pd = _products[plan.storeProductId];
     if (pd == null) {
       _snack('Bu ürün mağazada bulunamadı.');
       return;
     }
     setState(() => _buyingKey = plan.key);
     try {
-      await _iap.buyNonConsumable(purchaseParam: PurchaseParam(productDetails: pd));
+      await _iap.buyNonConsumable(
+          purchaseParam: PurchaseParam(productDetails: pd));
     } catch (e) {
       _fail('Satın alma başlatılamadı: $e');
     }
@@ -119,7 +140,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   Future<void> _verify(PurchaseDetails p) async {
     try {
       final jws = p.verificationData.serverVerificationData;
-      await ref.read(billingRepositoryProvider).verifyPurchase(transactionJws: jws);
+      await ref
+          .read(billingRepositoryProvider)
+          .verifyPurchase(transactionJws: jws);
       ref.invalidate(meProvider); // premium durumu tazelensin
       if (mounted) {
         _snack('Premium etkin! 🎉');
@@ -149,10 +172,12 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
       appBar: AppBar(
         title: const Text('Premium'),
         actions: [
-          TextButton(
-            onPressed: _iapAvailable ? () => _iap.restorePurchases() : null,
-            child: const Text('Geri yükle'),
-          ),
+          // Mağaza planı yokken "geri yükle" anlamsız — hiç gösterme.
+          if (_hasStorePlans)
+            TextButton(
+              onPressed: _iapAvailable ? () => _iap.restorePurchases() : null,
+              child: const Text('Geri yükle'),
+            ),
         ],
       ),
       body: _loadError != null
@@ -187,8 +212,8 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             style: AppTypography.body.copyWith(color: tokens.inkSoft),
           ),
           const SizedBox(height: AppSpacing.lg),
-          _valueRow(Icons.all_inclusive_rounded,
-              'Sınırsız soru', 'Koç seni hiçbir gün durdurmaz.'),
+          _valueRow(Icons.all_inclusive_rounded, 'Sınırsız soru',
+              'Koç seni hiçbir gün durdurmaz.'),
           _valueRow(Icons.psychology_rounded, 'Süresiz tekrar hafızası',
               'Yanlışların asla unutulmaz — tam akıllı tekrar motoru.'),
           _valueRow(Icons.auto_awesome_rounded, 'Sınırsız AI açıklaması',
@@ -204,19 +229,25 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: AppSpacing.lg),
-          if (!_iapAvailable)
+          if (_hasStorePlans && !_iapAvailable)
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.lg),
               child: Text(
                 'Mağaza şu an kullanılamıyor. Cihazda App Store hesabı / StoreKit yapılandırması gerekli.',
-                style: TextStyle(color: Theme.of(context).colorScheme.error),
+                style: TextStyle(color: tokens.danger),
               ),
             ),
-          ..._plans!.map(_planCard),
+          ..._plans!.map(
+            (p) => p.isStoreManaged ? _storePlanCard(p) : _manualPlanSection(p),
+          ),
           const SizedBox(height: AppSpacing.xl),
           Text(
-            'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.',
-            style: Theme.of(context).textTheme.bodySmall,
+            _hasStorePlans
+                ? 'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.'
+                : 'Otomatik yenileme yok, iptal edilecek abonelik yok. Süre bitince '
+                    'hesabın kendiliğinden ücretsiz katmana döner; devam etmek '
+                    'istersen bize yeniden yazarsın.',
+            style: AppTypography.caption.copyWith(color: tokens.inkSoft),
             textAlign: TextAlign.center,
           ),
         ],
@@ -250,16 +281,38 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     );
   }
 
-  Widget _planCard(BillingPlan plan) {
-    final pd = _products[plan.storeProductIdIos];
-    final priceText = pd?.price ??
-        (plan.price != null ? '${plan.price} ${plan.currency}' : '—');
-    final periodText = switch (plan.period) {
-      'yearly' => '/yıl',
-      'quarterly' => '/3 ay',
-      'monthly' => '/ay',
-      _ => '',
-    };
+  /// Fiyat başlığı — her iki akışta ortak.
+  Widget _priceHeader(BillingPlan plan, {required String priceText}) {
+    final tokens = context.tokens;
+    final period = plan.periodLabel;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(plan.name, style: AppTypography.heading.copyWith(color: tokens.ink)),
+        const SizedBox(height: 2),
+        Text.rich(
+          TextSpan(
+            text: priceText,
+            style: AppTypography.title.copyWith(color: tokens.ink),
+            children: [
+              if (period.isNotEmpty)
+                TextSpan(
+                  text: ' / $period',
+                  style: AppTypography.body.copyWith(color: tokens.inkSoft),
+                ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  // ── Mağaza akışı (ileride tekrar kullanılabilir) ──────────────────────────
+
+  Widget _storePlanCard(BillingPlan plan) {
+    final pd = _products[plan.storeProductId];
+    // Mağaza fiyatı yerelleştirilmiş gelir; yoksa backend fiyatına düş.
+    final priceText = pd?.price ?? plan.priceLabel;
     final inStore = pd != null;
     final busy = _buyingKey == plan.key;
     final anyBusy = _buyingKey != null;
@@ -275,23 +328,20 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(plan.name,
-                        style: Theme.of(context).textTheme.titleMedium),
-                    const SizedBox(height: 2),
-                    Text('$priceText$periodText',
-                        style: Theme.of(context).textTheme.bodyLarge),
+                    _priceHeader(plan, priceText: priceText),
                     if (!inStore && _iapAvailable)
-                      Text('Mağazada bulunamadı',
-                          style: TextStyle(
-                              fontSize: 12,
-                              color: Theme.of(context).colorScheme.error)),
+                      Padding(
+                        padding: const EdgeInsets.only(top: AppSpacing.xs),
+                        child: Text('Mağazada bulunamadı',
+                            style: AppTypography.caption
+                                .copyWith(color: context.tokens.danger)),
+                      ),
                   ],
                 ),
               ),
               const SizedBox(width: AppSpacing.lg),
               FilledButton(
-                onPressed:
-                    (!inStore || anyBusy) ? null : () => _buy(plan),
+                onPressed: (!inStore || anyBusy) ? null : () => _buy(plan),
                 child: busy
                     ? const SizedBox(
                         width: 18,
@@ -302,6 +352,138 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  // ── Manuel akış (Telegram/Instagram) ──────────────────────────────────────
+
+  /// Web'deki `/premium` akışının aynısı: fiyat kartı → 3 adım → kanallar.
+  Widget _manualPlanSection(BillingPlan plan) {
+    final tokens = context.tokens;
+    final monthly = plan.monthlyEquivalentLabel;
+    // Hesap e-postası eşleştirme için gerekli; yüklenmemişse satır düşürülür.
+    final email = ref.watch(meProvider).valueOrNull?.email;
+
+    final steps = <({String title, String body})>[
+      (
+        title: 'Bize yaz',
+        body: 'Telegram (${AppContact.telegram.handle}) veya Instagram '
+            '(${AppContact.instagram.handle}) üzerinden mesaj at, '
+            '"${plan.name}" de.',
+      ),
+      (
+        title: 'Ödemeyi yap',
+        body: 'Ödeme bilgilerini mesajda paylaşıyoruz. Ödemeni yapıp dekontu '
+            'gönderiyorsun.',
+      ),
+      (
+        title: 'Hesabın açılır',
+        body: 'Hesabını elimizle premium yapıyoruz. Aynı hesapla giriş yaptığın '
+            'her yerde geçerli olur.',
+      ),
+    ];
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.lg),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpacing.sm, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: tokens.brand.withValues(alpha: 0.12),
+                      borderRadius:
+                          BorderRadius.circular(AppSpacing.radiusFull),
+                    ),
+                    child: Text('TEK PAKET',
+                        style: AppTypography.caption
+                            .copyWith(color: tokens.brand)),
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  _priceHeader(plan, priceText: plan.priceLabel),
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(
+                    monthly != null
+                        ? 'Ayda $monthly — tek seferlik ödeme, otomatik yenileme yok'
+                        : 'Tek seferlik ödeme, otomatik yenileme yok',
+                    style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.xl),
+          Text('Nasıl premium olurum?',
+              style: AppTypography.heading.copyWith(color: tokens.ink)),
+          const SizedBox(height: AppSpacing.xs),
+          Text(
+            'Uygulama içi satın alma yok. Ödemeyi doğrudan bizimle yapıyorsun, '
+            'hesabını elimizle açıyoruz.',
+            style: AppTypography.body.copyWith(color: tokens.inkSoft),
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          for (final (i, s) in steps.indexed) _stepRow(i + 1, s.title, s.body),
+          const SizedBox(height: AppSpacing.sm),
+          const ContactChannels(),
+          if (email != null && email.isNotEmpty) ...[
+            const SizedBox(height: AppSpacing.md),
+            Text(
+              'Yazarken hesap e-postanı da ilet: $email — premiumu bu hesaba '
+              'tanımlıyoruz.',
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _stepRow(int n, String title, String body) {
+    final tokens = context.tokens;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.lg),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Adım numarası dekoratiftir: sıra bilgisi başlık metninde de var.
+          ExcludeSemantics(
+            child: Container(
+              width: 26,
+              height: 26,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: tokens.surfaceAlt,
+                shape: BoxShape.circle,
+                border: Border.all(color: tokens.line),
+              ),
+              child: Text('$n',
+                  style: AppTypography.label.copyWith(color: tokens.brand)),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('$n. adım — $title',
+                    style: AppTypography.label.copyWith(color: tokens.ink)),
+                const SizedBox(height: 2),
+                Text(body,
+                    style:
+                        AppTypography.body.copyWith(color: tokens.inkSoft)),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

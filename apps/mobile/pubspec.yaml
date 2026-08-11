@@ -36,6 +36,10 @@ dependencies:
   # Doğrulama SUNUCUDA — istemci imzalı işlemi (JWS) backend'e /billing/verify'a yollar.
   in_app_purchase: ^3.2.0
 
+  # Manuel premium akışı: Telegram/Instagram'a dış bağlantı. https URL'leri
+  # kullanılır — iOS'ta LSApplicationQueriesSchemes gerekmez (http/https izinli).
+  url_launcher: ^6.3.1
+
   cupertino_icons: ^1.0.8
 
   # ── Sonraki sprintlerde eklenecek (codegen gerektirir) ──

@@ -6,6 +6,7 @@ import '../../core/theme/app_typography.dart';
 import 'article_card.dart';
 import 'coach_card.dart';
 import 'conquest_grid.dart';
+import 'contact_channels.dart';
 import 'empty_state.dart';
 import 'explanation_box.dart';
 import 'focus_sheet.dart';
@@ -103,6 +104,11 @@ class ComponentGallery extends StatelessWidget {
               articleLabel: 'İlgili madde: PVSK m.16',
               onArticleTap: _noop,
             ),
+          ]),
+          _section('ContactChannels — buttons / inline', [
+            const ContactChannels(),
+            const SizedBox(height: AppSpacing.md),
+            const ContactChannels(variant: ContactChannelsVariant.inline),
           ]),
           _section('SessionResultHeader', [
             const SessionResultHeader(

@@ -109,6 +109,36 @@ class NextBadge {
       );
 }
 
+/// Haftalık fotoğraf satırı (Doc 27 B dilimi): ders bazlı mastery değişimi.
+class WeeklyPhotoRow {
+  final String courseName;
+  final int deltaPct;
+  const WeeklyPhotoRow({required this.courseName, required this.deltaPct});
+
+  factory WeeklyPhotoRow.fromJson(Map<String, dynamic> j) => WeeklyPhotoRow(
+        courseName: j['courseName'] as String,
+        deltaPct: j['deltaPct'] as int? ?? 0,
+      );
+}
+
+/// Kişisel rekorlar (gamification.records).
+class CoachRecords {
+  final double? bestNet;
+  final int longestStreak;
+  final int maxDailyQuestions;
+  const CoachRecords({
+    required this.bestNet,
+    required this.longestStreak,
+    required this.maxDailyQuestions,
+  });
+
+  factory CoachRecords.fromJson(Map<String, dynamic> j) => CoachRecords(
+        bestNet: (j['bestNet'] as num?)?.toDouble(),
+        longestStreak: j['longestStreak'] as int? ?? 0,
+        maxDailyQuestions: j['maxDailyQuestions'] as int? ?? 0,
+      );
+}
+
 class CoachBrief {
   final String? displayName;
   final bool isPremium;
@@ -120,6 +150,9 @@ class CoachBrief {
   final int streakCurrent;
   final int streakLongest;
   final bool streakAtRisk;
+
+  /// Bu hafta kalan seri sigortası hakkı (free 1, premium 3 — Doc 24 §7.2).
+  final int freezesLeft;
 
   final CoachCta primaryAction;
   final String primaryActionType;
@@ -138,8 +171,12 @@ class CoachBrief {
 
   final NextBadge? nextBadge;
   final RankInfo? rank;
+  final CoachRecords? records;
   final int weeklyActiveDays;
   final int weeklyGoalDays;
+
+  /// Ders bazlı haftalık mastery değişimi (|Δ| azalan; boşsa kart çizilmez).
+  final List<WeeklyPhotoRow> weeklyPhoto;
 
   const CoachBrief({
     required this.displayName,
@@ -151,6 +188,7 @@ class CoachBrief {
     required this.streakCurrent,
     required this.streakLongest,
     required this.streakAtRisk,
+    this.freezesLeft = 0,
     required this.primaryAction,
     required this.primaryActionType,
     this.mode = 'normal',
@@ -161,8 +199,10 @@ class CoachBrief {
     required this.totalSessions,
     required this.nextBadge,
     this.rank,
+    this.records,
     required this.weeklyActiveDays,
     required this.weeklyGoalDays,
+    this.weeklyPhoto = const [],
   });
 
   factory CoachBrief.fromJson(Map<String, dynamic> j) {
@@ -183,6 +223,7 @@ class CoachBrief {
       streakCurrent: streak['current'] as int? ?? 0,
       streakLongest: streak['longest'] as int? ?? 0,
       streakAtRisk: streak['atRisk'] as bool? ?? false,
+      freezesLeft: streak['freezesLeft'] as int? ?? 0,
       primaryAction: CoachCta.fromJson(primary),
       primaryActionType: primary['type'] as String? ?? 'default',
       mode: j['mode'] as String? ?? 'normal',
@@ -199,8 +240,14 @@ class CoachBrief {
       rank: gami['rank'] != null
           ? RankInfo.fromJson(gami['rank'] as Map<String, dynamic>)
           : null,
+      records: gami['records'] != null
+          ? CoachRecords.fromJson(gami['records'] as Map<String, dynamic>)
+          : null,
       weeklyActiveDays: weekly['activeDays'] as int? ?? 0,
       weeklyGoalDays: weekly['goalDays'] as int? ?? 5,
+      weeklyPhoto: (j['weeklyPhoto'] as List<dynamic>? ?? const [])
+          .map((e) => WeeklyPhotoRow.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
   }
 }

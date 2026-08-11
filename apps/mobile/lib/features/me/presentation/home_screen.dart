@@ -170,6 +170,11 @@ class _CoachBody extends ConsumerWidget {
                       days: brief.streakCurrent,
                       atRisk: brief.streakAtRisk,
                     ),
+                  // Seri sigortası (Doc 24 §7.2): risk anında güven verir.
+                  if (brief.streakAtRisk && brief.freezesLeft > 0) ...[
+                    const SizedBox(height: AppSpacing.xs),
+                    _FreezePill(count: brief.freezesLeft),
+                  ],
                   // Sınav geri sayımı (Doc 25 §3: exam_mode/taper pili).
                   if (brief.daysToExam != null) ...[
                     const SizedBox(height: AppSpacing.xs),
@@ -252,6 +257,18 @@ class _CoachBody extends ConsumerWidget {
               pointsToNext: brief.rank!.next != null
                   ? brief.rank!.next!.minScore - brief.rank!.score
                   : null,
+            ),
+          ),
+        ],
+
+        // ── Haftalık fotoğraf (Doc 27 B dilimi): ders bazlı mastery değişimi ──
+        if (brief.weeklyPhoto.isNotEmpty) ...[
+          const SizedBox(height: AppSpacing.xs),
+          StaggeredReveal(
+            index: i++,
+            child: _WeeklyPhotoCard(
+              rows: brief.weeklyPhoto,
+              onTap: () => open('default', '/progress'),
             ),
           ),
         ],
@@ -345,6 +362,100 @@ class _CoachBody extends ConsumerWidget {
           ),
         ],
       ],
+    );
+  }
+}
+
+// ── Seri sigortası pili (Doc 24 §7.2) ──
+
+class _FreezePill extends StatelessWidget {
+  final int count;
+  const _FreezePill({required this.count});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Semantics(
+      label: '$count seri sigortası hakkın var',
+      excludeSemantics: true,
+      child: Container(
+        padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.sm, vertical: AppSpacing.xs),
+        decoration: BoxDecoration(
+          color: tokens.success.withValues(alpha: 0.12),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusFull),
+        ),
+        child: Text('🛡 sigorta hazır ($count)',
+            style: AppTypography.caption.copyWith(color: tokens.success)),
+      ),
+    );
+  }
+}
+
+// ── Haftalık fotoğraf kartı (Doc 27): ders bazlı Δ listesi ──
+
+class _WeeklyPhotoCard extends StatelessWidget {
+  final List<WeeklyPhotoRow> rows;
+  final VoidCallback onTap;
+  const _WeeklyPhotoCard({required this.rows, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    final shown = rows.take(4).toList();
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+      child: Container(
+        padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+        decoration: BoxDecoration(
+          border: Border.all(color: tokens.line),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          color: tokens.surface,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(Icons.photo_camera_rounded,
+                    size: 18, color: tokens.brand),
+                const SizedBox(width: AppSpacing.sm),
+                Text('HAFTALIK FOTOĞRAF',
+                    style:
+                        AppTypography.caption.copyWith(color: tokens.inkSoft)),
+                const Spacer(),
+                Icon(Icons.chevron_right_rounded,
+                    size: 18, color: tokens.inkSoft),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.sm),
+            for (final r in shown)
+              Padding(
+                padding: const EdgeInsets.only(bottom: AppSpacing.xs),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(r.courseName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body
+                              .copyWith(color: tokens.ink, fontSize: 13)),
+                    ),
+                    Text(
+                      '${r.deltaPct > 0 ? '▲' : '▼'} %${r.deltaPct.abs()}',
+                      style: AppTypography.label.copyWith(
+                        color:
+                            r.deltaPct >= 0 ? tokens.success : tokens.danger,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -503,6 +614,9 @@ class _CoachCardTile extends StatelessWidget {
       'exam_mode' => (Icons.shield_moon_rounded, pal.accentText),
       'taper' => (Icons.self_improvement_rounded, pal.liveFg),
       'slump_watch' => (Icons.spa_rounded, pal.warnFg),
+      'onboarding' => (Icons.flag_rounded, pal.accentText),
+      'post_exam' => (Icons.hourglass_bottom_rounded, pal.accentText),
+      'aftermath' => (Icons.favorite_rounded, pal.liveFg),
       _ => (Icons.auto_awesome_rounded, scheme.onSurfaceVariant),
     };
   }
@@ -634,11 +748,33 @@ class _StatsStrip extends StatelessWidget {
         border: Border.all(color: theme.colorScheme.outlineVariant),
         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
       ),
-      child: Row(
+      child: Column(
         children: [
-          cell('${brief.totalSolved}', 'Çözülen'),
-          cell('%${brief.accuracy}', 'Doğruluk'),
-          cell('${brief.totalSessions}', 'Oturum', divider: false),
+          Row(
+            children: [
+              cell('${brief.totalSolved}', 'Çözülen'),
+              cell('%${brief.accuracy}', 'Doğruluk'),
+              cell('${brief.totalSessions}', 'Oturum', divider: false),
+            ],
+          ),
+          // Rekorlar (gamification.records) — web'le eş bilgi (Doc 28 P0-③).
+          if (brief.records != null) ...[
+            const SizedBox(height: AppSpacing.sm),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+              child: Text(
+                [
+                  if (brief.records!.bestNet != null)
+                    'En iyi net ${brief.records!.bestNet!.toStringAsFixed(2)}',
+                  'en uzun seri ${brief.records!.longestStreak} gün',
+                  'günde en çok ${brief.records!.maxDailyQuestions} soru',
+                ].join(' · '),
+                textAlign: TextAlign.center,
+                style: theme.textTheme.bodySmall,
+              ),
+            ),
+          ],
         ],
       ),
     );
