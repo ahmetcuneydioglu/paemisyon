@@ -114,9 +114,21 @@ class _Sections extends ConsumerWidget {
           ),
       ],
       if (upcoming.isNotEmpty) ...[
-        const _SectionHeader('YAKLAŞAN'),
-        for (final e in upcoming)
-          StaggeredReveal(index: i++, child: _UpcomingRow(exam: e)),
+        // En yakın deneme özel karta çıkar: geri sayım + açıklama (kullanıcı
+        // isteği) — "Yakında" rozeti yerine sahnenin sahibi olur.
+        const _SectionHeader('SIRADAKİ DENEME'),
+        StaggeredReveal(
+          index: i++,
+          child: _NextExamCard(
+            exam: upcoming.first,
+            onStarted: () => ref.invalidate(examsScreenDataProvider),
+          ),
+        ),
+        if (upcoming.length > 1) ...[
+          const _SectionHeader('YAKLAŞAN'),
+          for (final e in upcoming.skip(1))
+            StaggeredReveal(index: i++, child: _UpcomingRow(exam: e)),
+        ],
       ],
       if (ended.isNotEmpty) ...[
         const _SectionHeader('GEÇMİŞ'),
@@ -351,6 +363,177 @@ class _HeroExamCardState extends State<_HeroExamCard> {
               onPressed: () => widget.onOpen(ctaPath),
               child: Text(ctaLabel),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── SIRADAKİ: geri sayımlı hero kart (kullanıcı isteği) ──
+// Başlangıca kalan süre canlı sayılır; süre dolunca liste tazelenir ve
+// deneme Canlı bölümüne (başlat CTA'lı hero karta) geçer.
+
+class _NextExamCard extends StatefulWidget {
+  final ExamListItem exam;
+  final VoidCallback onStarted;
+  const _NextExamCard({required this.exam, required this.onStarted});
+
+  @override
+  State<_NextExamCard> createState() => _NextExamCardState();
+}
+
+class _NextExamCardState extends State<_NextExamCard> {
+  Timer? _timer;
+  Duration _left = Duration.zero;
+
+  @override
+  void initState() {
+    super.initState();
+    _tick();
+    _timer = Timer.periodic(const Duration(seconds: 1), (_) => _tick());
+  }
+
+  void _tick() {
+    final left = widget.exam.startAt.difference(DateTime.now());
+    if (left.isNegative) {
+      _timer?.cancel();
+      widget.onStarted(); // sınav başladı → liste tazelenir, kart Canlı olur
+      return;
+    }
+    setState(() => _left = left);
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  /// Sayaç parçaları: 1 günden uzaksa gün ayrı kutuda gösterilir.
+  List<(String value, String label)> get _units {
+    final days = _left.inDays;
+    final h = _left.inHours % 24;
+    final m = _left.inMinutes % 60;
+    final s = _left.inSeconds % 60;
+    return [
+      if (days > 0) ('$days', 'GÜN'),
+      (_two(days > 0 ? h : _left.inHours), 'SAAT'),
+      (_two(m), 'DAKİKA'),
+      (_two(s), 'SANİYE'),
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final exam = widget.exam;
+    final pal = AccentPalette.of(context);
+    final l = exam.startAt.toLocal();
+    final desc = exam.description?.trim();
+
+    return Semantics(
+      label:
+          '${exam.title}, başlamasına ${_left.inHours} saat ${_left.inMinutes % 60} dakika var',
+      excludeSemantics: true,
+      child: Container(
+        margin: const EdgeInsets.only(bottom: AppSpacing.sm),
+        padding: const EdgeInsets.all(AppSpacing.lg),
+        decoration: BoxDecoration(
+          color: pal.heroBg,
+          border: Border.all(color: pal.heroBorder),
+          borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                _Badge('Sıradaki', bg: pal.warnBg, fg: pal.warnFg),
+                if (exam.isPremium) ...[
+                  const SizedBox(width: AppSpacing.xs),
+                  _Badge('Premium', bg: pal.proBg, fg: pal.proFg),
+                ],
+                const Spacer(),
+                Text(
+                  '${l.day} ${_months[l.month - 1]} · ${_hm(exam.startAt)}',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.sm),
+            Text(exam.title,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontWeight: FontWeight.w600)),
+            if (desc != null && desc.isNotEmpty) ...[
+              const SizedBox(height: AppSpacing.xs),
+              Text(desc,
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.bodySmall),
+            ],
+            const SizedBox(height: AppSpacing.md),
+            // Geri sayım blokları — tabular rakam, birim etiketli.
+            Row(
+              children: [
+                for (final (index, u) in _units.indexed) ...[
+                  if (index > 0)
+                    Padding(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: AppSpacing.xs),
+                      child: Text(':',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              color: pal.accentText)),
+                    ),
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: AppSpacing.sm + 2),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .surface
+                            .withValues(alpha: 0.55),
+                        borderRadius:
+                            BorderRadius.circular(AppSpacing.radiusMd),
+                        border: Border.all(color: pal.heroBorder),
+                      ),
+                      child: Column(
+                        children: [
+                          Text(u.$1,
+                              style: TextStyle(
+                                fontFeatures: const [
+                                  FontFeature.tabularFigures()
+                                ],
+                                fontSize: 22,
+                                fontWeight: FontWeight.w800,
+                                height: 1.1,
+                                color: pal.accentText,
+                              )),
+                          const SizedBox(height: 2),
+                          Text(u.$2,
+                              style: TextStyle(
+                                fontSize: 9,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 0.8,
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .onSurfaceVariant,
+                              )),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: AppSpacing.sm + 2),
+            _MetaRow(exam: exam),
           ],
         ),
       ),
