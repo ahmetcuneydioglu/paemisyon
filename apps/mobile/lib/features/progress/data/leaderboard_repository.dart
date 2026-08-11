@@ -47,6 +47,54 @@ class LeaderboardData {
       );
 }
 
+/// Genel liderlik satırı (Doc 28 P2-13) — deneme ortalaması bazlı.
+class GlobalLeaderboardRow {
+  final int rank;
+  final String displayName;
+  final double avgScore;
+  final int attempts;
+  final bool isMe;
+  const GlobalLeaderboardRow({
+    required this.rank,
+    required this.displayName,
+    required this.avgScore,
+    required this.attempts,
+    required this.isMe,
+  });
+
+  factory GlobalLeaderboardRow.fromJson(Map<String, dynamic> j) =>
+      GlobalLeaderboardRow(
+        rank: j['rank'] as int,
+        displayName: j['displayName'] as String? ?? 'Kullanıcı',
+        avgScore: (j['avgScore'] as num?)?.toDouble() ?? 0,
+        attempts: j['attempts'] as int? ?? 0,
+        isMe: j['isMe'] as bool? ?? false,
+      );
+}
+
+class GlobalLeaderboardData {
+  final List<GlobalLeaderboardRow> top;
+  final GlobalLeaderboardRow? me;
+  final int participantCount;
+  const GlobalLeaderboardData({
+    required this.top,
+    this.me,
+    required this.participantCount,
+  });
+
+  factory GlobalLeaderboardData.fromJson(Map<String, dynamic> j) =>
+      GlobalLeaderboardData(
+        top: (j['top'] as List<dynamic>)
+            .map((e) =>
+                GlobalLeaderboardRow.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        me: j['me'] != null
+            ? GlobalLeaderboardRow.fromJson(j['me'] as Map<String, dynamic>)
+            : null,
+        participantCount: j['participantCount'] as int? ?? 0,
+      );
+}
+
 class LeaderboardRepository {
   final Dio _dio;
   const LeaderboardRepository(this._dio);
@@ -64,6 +112,22 @@ class LeaderboardRepository {
       throw const ServerFailure();
     }
   }
+
+  /// Genel liderlik (Doc 28 P2-13): tamamlanan denemelerin puan ortalaması.
+  Future<GlobalLeaderboardData> global() async {
+    try {
+      final r =
+          await _dio.get<Map<String, dynamic>>('/exams/leaderboard/global');
+      return GlobalLeaderboardData.fromJson(
+          r.data!['data'] as Map<String, dynamic>);
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.connectionTimeout) {
+        throw const NetworkFailure();
+      }
+      throw const ServerFailure();
+    }
+  }
 }
 
 final leaderboardRepositoryProvider = Provider<LeaderboardRepository>(
@@ -73,4 +137,9 @@ final leaderboardRepositoryProvider = Provider<LeaderboardRepository>(
 final leaderboardProvider =
     FutureProvider.autoDispose.family<LeaderboardData, String>(
   (ref, period) => ref.watch(leaderboardRepositoryProvider).get(period),
+);
+
+final globalLeaderboardProvider =
+    FutureProvider.autoDispose<GlobalLeaderboardData>(
+  (ref) => ref.watch(leaderboardRepositoryProvider).global(),
 );
