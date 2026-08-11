@@ -68,6 +68,8 @@ export interface CandidateQuestion {
   questionId: string;
   /** Kaç denemede kullanılmış (ExamQuestion sayısı) — az kullanılan öncelikli. */
   usageCount: number;
+  /** Konu-dengeli bölüm içi seçim için (pickSectionQuestions). */
+  topicId?: string;
 }
 
 /**
@@ -84,4 +86,38 @@ export function pickQuestions(
     .sort((a, b) => a.c.usageCount - b.c.usageCount || a.r - b.r)
     .map((x) => x.c.questionId);
   return shuffled.slice(0, Math.max(0, quota));
+}
+
+/**
+ * Bölüm kotasını bölümün KONULARINA dengeli dağıtarak seçer — saf rastgele
+ * seçim büyük konulara yığılabiliyor (ör. Genel Kültür'ün 30 sorusunun tek
+ * konudan gelmesi "dağılım bozuk" okunur). Konular eşit ağırlıklı pay alır
+ * (küçük konunun artığı büyüklere akar); konu içinde az-kullanılmış öncelik.
+ * Sonuç konu gruplu döner (gerçek kitapçıkta aynı konu ardışıktır).
+ */
+export function pickSectionQuestions(
+  candidates: CandidateQuestion[],
+  quota: number,
+  rand: () => number = Math.random,
+): string[] {
+  const byTopic = new Map<string, CandidateQuestion[]>();
+  for (const c of candidates) {
+    const key = c.topicId ?? '_';
+    byTopic.set(key, [...(byTopic.get(key) ?? []), c]);
+  }
+  if (byTopic.size <= 1) return pickQuestions(candidates, quota, rand);
+
+  const topicQuota = allocateQuota(
+    [...byTopic.entries()].map(([topicId, pool]) => ({
+      sectionId: topicId,
+      weight: 1, // konular eşit pay — müfredat konu ağırlığı tanımlamıyor
+      available: pool.length,
+    })),
+    quota,
+  );
+  const ids: string[] = [];
+  for (const [topicId, pool] of byTopic) {
+    ids.push(...pickQuestions(pool, topicQuota.get(topicId) ?? 0, rand));
+  }
+  return ids;
 }

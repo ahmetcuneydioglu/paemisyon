@@ -3,7 +3,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertExamDto } from '../dto/exam.dto';
-import { allocateQuota, pickQuestions } from './exam-autofill.logic';
+import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
 
 /**
  * Deneme yönetimi (Doc 18 §8). Kurallar:
@@ -182,13 +182,18 @@ export class AdminExamsService {
             currentVersionId: { not: null },
             topic: { courseId: { in: courseIds } },
           },
-          select: { id: true, _count: { select: { examQuestions: true } } },
+          select: {
+            id: true,
+            topicId: true,
+            _count: { select: { examQuestions: true } },
+          },
         });
         return {
           section: s,
           candidates: rows.map((r) => ({
             questionId: r.id,
             usageCount: r._count.examQuestions,
+            topicId: r.topicId,
           })),
         };
       }),
@@ -217,7 +222,8 @@ export class AdminExamsService {
     const ids: string[] = [];
     for (const p of pools) {
       const n = quota.get(p.section.id) ?? 0;
-      const picked = pickQuestions(p.candidates, n);
+      // Bölüm içinde KONU-dengeli seçim — tek konuya yığılma olmaz.
+      const picked = pickSectionQuestions(p.candidates, n);
       ids.push(...picked);
       breakdown.push({
         section: p.section.name,
