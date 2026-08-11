@@ -4,13 +4,18 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/option_row.dart';
 import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
 
-/// Deneme sonucu + inceleme (Doc 18 §2.4). Puan = NET. İnceleme renkleri web ile
-/// aynı: doğru=yeşil, seçilen-yanlış=kırmızı; altında açıklama.
+/// Deneme sonucu + inceleme (Doc 18 §2.4, Doc 28 P1-9). Puan = NET.
+/// İnceleme, seans oynatıcıyla AYNI dili konuşur: OptionRow durumları
+/// (correct/wrongPick/dimmed) + ExplanationBox — ham renk kullanılmaz.
 class ExamResultScreen extends ConsumerWidget {
   final String attemptId;
   const ExamResultScreen({super.key, required this.attemptId});
@@ -24,7 +29,7 @@ class ExamResultScreen extends ConsumerWidget {
         loading: () => const Padding(
           padding: EdgeInsets.all(AppSpacing.xl),
           child: Column(children: [
-            LoadingSkeleton(height: 90),
+            LoadingSkeleton(height: 160),
             SizedBox(height: AppSpacing.lg),
             LoadingSkeleton(height: 200),
           ]),
@@ -46,37 +51,33 @@ class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.zero,
+      padding: const EdgeInsets.all(AppSpacing.lg),
       children: [
-        _Tiles(result: result),
-        Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
-          child: Row(
-            children: [
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: () =>
-                      context.push('/denemeler/${result.examId}/siralama'),
-                  child: const Text('Sıralama'),
-                ),
+        _ScoreCard(result: result),
+        const SizedBox(height: AppSpacing.lg),
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton(
+                onPressed: () =>
+                    context.push('/denemeler/${result.examId}/siralama'),
+                child: const Text('Sıralama'),
               ),
-              const SizedBox(width: AppSpacing.sm),
-              Expanded(
-                child: FilledButton(
-                  onPressed: () => context.go('/denemeler'),
-                  child: const Text('Denemeler'),
-                ),
+            ),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+              child: FilledButton(
+                onPressed: () => context.go('/denemeler'),
+                child: const Text('Denemeler'),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-        const Divider(),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(
-              AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, 0),
-          child: Text('Cevap İncelemesi',
-              style: Theme.of(context).textTheme.titleMedium),
-        ),
+        const SizedBox(height: AppSpacing.xl),
+        Text('Cevap İncelemesi',
+            style: AppTypography.heading
+                .copyWith(color: context.tokens.ink)),
+        const SizedBox(height: AppSpacing.xs),
         ...result.review.map((q) => _ReviewTile(q: q)),
         const SizedBox(height: AppSpacing.xl),
       ],
@@ -84,57 +85,91 @@ class _Body extends StatelessWidget {
   }
 }
 
-class _Tiles extends StatelessWidget {
+/// Sonuç kartı: net puan büyük (display), altında Doğru/Yanlış/Boş rozetleri.
+/// Renkli zemin yerine renkli SAYI — iki temada da kontrast korunur.
+class _ScoreCard extends StatelessWidget {
   final AttemptResult result;
-  const _Tiles({required this.result});
+  const _ScoreCard({required this.result});
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final tiles = [
-      ('Puan (Net)', result.score?.toStringAsFixed(2) ?? '—', scheme.primary),
-      ('Doğru', '${result.correctCount}', Colors.green),
-      ('Yanlış', '${result.wrongCount}', Colors.red),
-      ('Boş', '${result.blankCount}', Colors.amber.shade700),
-    ];
+    final tokens = context.tokens;
     return Container(
-      color: scheme.primary,
-      padding: const EdgeInsets.only(bottom: AppSpacing.xs),
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.xl),
+      decoration: BoxDecoration(
+        color: tokens.surfaceAlt,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        border: Border.all(color: tokens.line),
+      ),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
-            child: Text(result.examTitle,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold)),
-          ),
+          Text(result.examTitle,
+              textAlign: TextAlign.center,
+              style: AppTypography.heading.copyWith(color: tokens.ink)),
+          const SizedBox(height: AppSpacing.md),
+          Text(result.score?.toStringAsFixed(2) ?? '—',
+              style: AppTypography.display.copyWith(color: tokens.brand)),
+          Text('NET PUAN',
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
+          const SizedBox(height: AppSpacing.lg),
           Row(
-            children: tiles
-                .map((t) => Expanded(
-                      child: Container(
-                        color: t.$3,
-                        padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
-                        child: Column(
-                          children: [
-                            Text(t.$2,
-                                style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.bold)),
-                            const SizedBox(height: 2),
-                            Text(t.$1,
-                                style: const TextStyle(
-                                    color: Colors.white, fontSize: 12)),
-                          ],
-                        ),
-                      ),
-                    ))
-                .toList(),
+            children: [
+              _StatCell(
+                  label: 'Doğru',
+                  value: result.correctCount,
+                  color: tokens.success),
+              const SizedBox(width: AppSpacing.sm),
+              _StatCell(
+                  label: 'Yanlış',
+                  value: result.wrongCount,
+                  color: tokens.danger),
+              const SizedBox(width: AppSpacing.sm),
+              _StatCell(
+                  label: 'Boş',
+                  value: result.blankCount,
+                  color: tokens.warning),
+            ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _StatCell extends StatelessWidget {
+  final String label;
+  final int value;
+  final Color color;
+  const _StatCell(
+      {required this.label, required this.value, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Expanded(
+      child: Semantics(
+        label: '$label: $value',
+        excludeSemantics: true,
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
+          decoration: BoxDecoration(
+            color: Color.alphaBlend(
+                color.withValues(alpha: 0.10), tokens.surface),
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+            border: Border.all(color: color.withValues(alpha: 0.35)),
+          ),
+          child: Column(
+            children: [
+              Text('$value',
+                  style: AppTypography.title.copyWith(color: color)),
+              const SizedBox(height: 2),
+              Text(label,
+                  style:
+                      AppTypography.caption.copyWith(color: tokens.inkSoft)),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -146,72 +181,51 @@ class _ReviewTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final tokens = context.tokens;
     final blank = q.selectedOptionId == null;
-    return Card(
-      margin: const EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, 0),
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text('${q.order}. ${q.stem}',
-                style: Theme.of(context).textTheme.titleSmall),
-            const SizedBox(height: AppSpacing.sm),
-            ...q.options.map((o) {
-              final chosen = q.selectedOptionId == o.id;
-              Color? bg;
-              // Vurgusuz şıklar tema metin rengini alır (dark mode okunur kalır).
-              Color fg = Theme.of(context).colorScheme.onSurface;
-              if (o.isCorrect) {
-                bg = Colors.green;
-                fg = Colors.white;
-              } else if (chosen) {
-                bg = Colors.red;
-                fg = Colors.white;
-              }
-              return Container(
-                margin: const EdgeInsets.only(bottom: AppSpacing.xs),
-                padding: const EdgeInsets.all(AppSpacing.sm),
-                decoration: BoxDecoration(
-                  color: bg,
-                  border: Border.all(
-                      color: bg ?? Theme.of(context).colorScheme.outlineVariant),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  children: [
-                    Text('${o.label})  ',
-                        style: TextStyle(fontWeight: FontWeight.bold, color: fg)),
-                    Expanded(child: Text(o.text, style: TextStyle(color: fg))),
-                  ],
-                ),
-              );
-            }),
-            if (blank)
-              const Padding(
-                padding: EdgeInsets.only(top: 2),
-                child: Text('Bu soruyu boş bıraktın.',
-                    style: TextStyle(fontSize: 12, color: Colors.blue, fontWeight: FontWeight.w600)),
-              ),
-            if (q.explanation != null && q.explanation!.isNotEmpty)
-              Container(
-                margin: const EdgeInsets.only(top: AppSpacing.xs),
-                padding: const EdgeInsets.all(AppSpacing.sm),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.surfaceContainerHighest,
-                  border: const Border(left: BorderSide(color: Colors.green, width: 4)),
-                ),
-                child: Text('Açıklama: ${q.explanation}',
-                    style: Theme.of(context).textTheme.bodySmall),
-              ),
-            if (q.source != null && q.source!.isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(top: AppSpacing.xs),
-                child: Text('Kaynak: ${q.source}',
-                    style: Theme.of(context).textTheme.bodySmall),
-              ),
+    return Container(
+      margin: const EdgeInsets.only(top: AppSpacing.md),
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: tokens.surface,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        border: Border.all(color: tokens.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('${q.order}. ${q.stem}',
+              style: AppTypography.heading.copyWith(color: tokens.ink)),
+          const SizedBox(height: AppSpacing.md),
+          for (final o in q.options) ...[
+            OptionRow(
+              label: o.label,
+              text: o.text,
+              state: o.isCorrect
+                  ? OptionRowState.correct
+                  : q.selectedOptionId == o.id
+                      ? OptionRowState.wrongPick
+                      : OptionRowState.dimmed,
+            ),
+            const SizedBox(height: AppSpacing.xs),
           ],
-        ),
+          if (blank)
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.xs),
+              child: Text('Bu soruyu boş bıraktın.',
+                  style: AppTypography.label.copyWith(color: tokens.warning)),
+            ),
+          if (q.explanation != null && q.explanation!.isNotEmpty) ...[
+            const SizedBox(height: AppSpacing.sm),
+            ExplanationBox(explanation: q.explanation!, source: q.source),
+          ] else if (q.source != null && q.source!.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.xs),
+              child: Text('Kaynak: ${q.source}',
+                  style:
+                      AppTypography.caption.copyWith(color: tokens.inkSoft)),
+            ),
+        ],
       ),
     );
   }

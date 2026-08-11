@@ -6,8 +6,11 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
@@ -121,7 +124,8 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Devam Et')),
           FilledButton(
-            style: FilledButton.styleFrom(backgroundColor: Colors.red),
+            style: FilledButton.styleFrom(
+                backgroundColor: context.tokens.danger),
             onPressed: () => Navigator.pop(ctx, true),
             child: const Text('Kaydet ve Bitir'),
           ),
@@ -211,24 +215,27 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
           padding: EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.sm,
               AppSpacing.lg, AppSpacing.sm + MediaQuery.paddingOf(context).bottom),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface,
-            border: Border(top: BorderSide(color: Theme.of(context).dividerColor)),
+            color: context.tokens.surface,
+            border: Border(top: BorderSide(color: context.tokens.line)),
           ),
           child: Row(
             children: [
               Row(children: [
-                Icon(Icons.timer_outlined, size: 18, color: low ? Colors.red : null),
+                Icon(Icons.timer_outlined,
+                    size: 18,
+                    color: low ? context.tokens.danger : context.tokens.ink),
                 const SizedBox(width: 4),
                 Text(_timeText,
-                    style: TextStyle(
+                    style: AppTypography.heading.copyWith(
                         fontFeatures: const [FontFeature.tabularFigures()],
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: low ? Colors.red : null)),
+                        color: low
+                            ? context.tokens.danger
+                            : context.tokens.ink)),
               ]),
               const SizedBox(width: AppSpacing.sm),
               Text('$_answered/${exam.questions.length}',
-                  style: Theme.of(context).textTheme.bodySmall),
+                  style: AppTypography.label
+                      .copyWith(color: context.tokens.inkSoft)),
               const Spacer(),
               PrimaryButton(
                 label: _finishing ? 'Bitiriliyor…' : 'Testi Bitir',
@@ -261,52 +268,40 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
   Widget _questionTile(QuizQuestion q, int order) {
     _qStart.putIfAbsent(q.questionId, () => DateTime.now());
     final selected = _answers[q.questionId];
-    final scheme = Theme.of(context).colorScheme;
-    return Card(
+    final tokens = context.tokens;
+    return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.lg),
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text('$order. ${q.stem}',
-                style: Theme.of(context).textTheme.titleSmall),
-            const SizedBox(height: AppSpacing.sm),
-            ...q.options.map((o) {
-              final chosen = selected == o.id;
-              return Padding(
-                padding: const EdgeInsets.only(bottom: AppSpacing.xs),
-                child: InkWell(
-                  onTap: () => _select(q, o.id),
-                  borderRadius: BorderRadius.circular(8),
-                  child: Container(
-                    padding: const EdgeInsets.all(AppSpacing.sm),
-                    decoration: BoxDecoration(
-                      color: chosen ? scheme.secondaryContainer : null,
-                      border: Border.all(
-                          color: chosen ? scheme.secondary : scheme.outlineVariant),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      children: [
-                        Text('${o.label})  ',
-                            style: const TextStyle(fontWeight: FontWeight.bold)),
-                        Expanded(child: Text(o.text)),
-                        if (chosen) Icon(Icons.check_circle, size: 18, color: scheme.secondary),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }),
-            if (_save[q.questionId] == _SaveState.failed)
-              const Padding(
-                padding: EdgeInsets.only(top: 4),
-                child: Text('Kaydedilemedi — tekrar seç.',
-                    style: TextStyle(fontSize: 12, color: Colors.red)),
-              ),
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: tokens.surface,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        border: Border.all(color: tokens.line),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('$order. ${q.stem}',
+              style: AppTypography.heading.copyWith(color: tokens.ink)),
+          const SizedBox(height: AppSpacing.md),
+          for (final o in q.options) ...[
+            OptionRow(
+              label: o.label,
+              text: o.text,
+              state: selected == o.id
+                  ? OptionRowState.selected
+                  : OptionRowState.idle,
+              onTap: () => _select(q, o.id),
+            ),
+            const SizedBox(height: AppSpacing.xs),
           ],
-        ),
+          if (_save[q.questionId] == _SaveState.failed)
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.xs),
+              child: Text('Kaydedilemedi — tekrar seç.',
+                  style:
+                      AppTypography.label.copyWith(color: tokens.danger)),
+            ),
+        ],
       ),
     );
   }
