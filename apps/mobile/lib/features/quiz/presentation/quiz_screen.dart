@@ -33,6 +33,9 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String topicName;
   final String mode; // 'practice' | 'exam' | 'daily' | 'review'
   final int questionCount;
+
+  /// İlk Devriye (Doc 24 Gün 0): sonuç ekranı skor değil TEŞHİS karnesi olur.
+  final bool patrol;
   const QuizScreen({
     super.key,
     this.topicId,
@@ -43,6 +46,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     required this.topicName,
     required this.mode,
     this.questionCount = 10,
+    this.patrol = false,
   });
 
   @override
@@ -260,7 +264,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       await ref.read(syncServiceProvider).flush();
       final result =
           await ref.read(quizRepositoryProvider).complete(_session!.sessionId);
-      if (mounted) context.pushReplacement('/quiz/result', extra: result);
+      if (mounted) {
+        context.pushReplacement('/quiz/result',
+            extra: {'result': result, 'patrol': widget.patrol});
+      }
     } on NetworkFailure {
       _snack(
           'Bağlantı yok — cevapların kaydedildi. Testi bitirmek için internet gerekli.');

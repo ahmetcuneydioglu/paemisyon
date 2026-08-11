@@ -173,14 +173,22 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             topicName: args['topicName'] as String,
             mode: args['mode'] as String,
             questionCount: args['count'] as int? ?? 10,
+            patrol: args['patrol'] as bool? ?? false,
           );
         },
       ),
       GoRoute(
         path: '/quiz/result',
         parentNavigatorKey: _rootNavigatorKey,
-        builder: (context, state) =>
-            ResultScreen(result: state.extra as QuizResult),
+        builder: (context, state) {
+          final extra = state.extra;
+          if (extra is QuizResult) return ResultScreen(result: extra);
+          final map = extra as Map<String, dynamic>;
+          return ResultScreen(
+            result: map['result'] as QuizResult,
+            patrol: map['patrol'] as bool? ?? false,
+          );
+        },
       ),
       // Madde Atlası — fetih haritası (Doc 25 §4).
       GoRoute(

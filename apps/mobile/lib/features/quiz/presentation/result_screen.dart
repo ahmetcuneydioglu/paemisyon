@@ -12,9 +12,12 @@ import '../domain/quiz_models.dart';
 
 /// Seans Sonucu (Doc 25 §2, wireframe 04): skor değil sonraki adım satar.
 /// Eve dönüş çapası: birincil buton her zaman Bugün'e döner.
+/// [patrol] = İlk Devriye (Doc 24 Gün 0, Doc 28 P2-14): aynı ekran TEŞHİS
+/// çerçevesine döner — "not değil başlangıç noktası"; karne öne çıkar.
 class ResultScreen extends StatelessWidget {
   final QuizResult result;
-  const ResultScreen({super.key, required this.result});
+  final bool patrol;
+  const ResultScreen({super.key, required this.result, this.patrol = false});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +27,9 @@ class ResultScreen extends StatelessWidget {
     final answered = result.correctCount + result.wrongCount;
 
     return Scaffold(
-      appBar:
-          AppBar(title: const Text('Sonuç'), automaticallyImplyLeading: false),
+      appBar: AppBar(
+          title: Text(patrol ? 'İlk Devriye' : 'Sonuç'),
+          automaticallyImplyLeading: false),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.xl),
@@ -35,8 +39,9 @@ class ResultScreen extends StatelessWidget {
               const SizedBox(height: AppSpacing.lg),
               SessionResultHeader(
                 score: '${result.correctCount}/${result.totalQuestions}',
-                subtitle:
-                    '${mins > 0 ? '$mins dk ' : ''}$secs sn · %${result.score.toStringAsFixed(0)} başarı',
+                subtitle: patrol
+                    ? 'Seviye tespiti tamam — bu bir not değil, başlangıç noktan.'
+                    : '${mins > 0 ? '$mins dk ' : ''}$secs sn · %${result.score.toStringAsFixed(0)} başarı',
               ),
               const SizedBox(height: AppSpacing.xl),
 
@@ -120,7 +125,7 @@ class ResultScreen extends StatelessWidget {
                   ),
               ],
 
-              // ── Konu karnesi (ders denemesi) ──
+              // ── Konu karnesi (ders denemesi / İlk Devriye teşhisi) ──
               if (result.topicBreakdown != null &&
                   result.topicBreakdown!.isNotEmpty) ...[
                 const SizedBox(height: AppSpacing.md),
@@ -134,7 +139,7 @@ class ResultScreen extends StatelessWidget {
                     child: ListView(
                       padding: const EdgeInsets.all(AppSpacing.md),
                       children: [
-                        Text('KONU KARNESİ',
+                        Text(patrol ? 'TEŞHİS KARNESİ' : 'KONU KARNESİ',
                             style: AppTypography.caption
                                 .copyWith(color: tokens.inkSoft)),
                         const SizedBox(height: AppSpacing.xs),
@@ -160,7 +165,8 @@ class ResultScreen extends StatelessWidget {
 
               // ── Eve dönüş çapası + yanlış takibi ──
               PrimaryButton(
-                  label: "Bugün'e dön", onPressed: () => context.go('/')),
+                  label: patrol ? 'Planımı gör' : "Bugün'e dön",
+                  onPressed: () => context.go('/')),
               if (result.wrongCount > 0) ...[
                 const SizedBox(height: AppSpacing.sm),
                 OutlinedButton(
@@ -185,6 +191,7 @@ class ResultScreen extends StatelessWidget {
 
   /// Kural tabanlı tek cümle — sıfat değil rakam (Doc 26 §1.1). V2'de AI.
   String _coachLine() {
+    if (patrol) return _patrolLine();
     final wrong = result.wrongCount;
     final pct = result.score.round();
     if (wrong == 0 && result.correctCount > 0) {
@@ -194,6 +201,26 @@ class ResultScreen extends StatelessWidget {
       return '$wrong yanlışını yarınki tekrar kuyruğuna ekledim — kaybolmazlar. Bugünkü isabet: %$pct.';
     }
     return 'Seans tamamlandı. Yarın kaldığın yerden devam.';
+  }
+
+  /// Teşhis dili (Doc 24 Gün 0): en zayıf konu = ilk hedef; suçlama yok.
+  String _patrolLine() {
+    final breakdown = result.topicBreakdown;
+    if (breakdown != null && breakdown.isNotEmpty) {
+      TopicScore? weakest;
+      for (final t in breakdown) {
+        if (t.total == 0) continue;
+        final ratio = t.correct / t.total;
+        final wRatio =
+            weakest == null ? 2.0 : weakest.correct / weakest.total;
+        if (ratio < wRatio) weakest = t;
+      }
+      if (weakest != null && weakest.correct < weakest.total) {
+        return 'Devriye raporu hazır: ilk hedefimiz ${weakest.topicName}. '
+            'Yarından itibaren planını buna göre kuruyorum.';
+      }
+    }
+    return 'Devriye temiz geçti — seviyeni gördüm, planını buna göre kuruyorum.';
   }
 }
 

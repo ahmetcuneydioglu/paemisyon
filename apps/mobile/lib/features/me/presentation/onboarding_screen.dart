@@ -68,6 +68,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           'topicName': 'İlk Devriye',
           'mode': 'practice',
           'count': 10,
+          'patrol': true, // sonuç ekranı teşhis karnesine döner (P2-14)
         });
       } else {
         context.go('/');

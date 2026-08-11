@@ -6,9 +6,10 @@ import 'package:paemisyon/features/quiz/domain/quiz_models.dart';
 import 'package:paemisyon/features/quiz/presentation/result_screen.dart';
 
 void main() {
-  Widget app(QuizResult r, {ThemeData? theme}) => MaterialApp(
+  Widget app(QuizResult r, {ThemeData? theme, bool patrol = false}) =>
+      MaterialApp(
         theme: theme ?? AppTheme.light,
-        home: ResultScreen(result: r),
+        home: ResultScreen(result: r, patrol: patrol),
       );
 
   const withWrongs = QuizResult(
@@ -46,5 +47,28 @@ void main() {
     expect(find.text('10/10'), findsOneWidget);
     expect(find.textContaining('Hatasız seans'), findsOneWidget);
     expect(find.textContaining('Yanlışları incele'), findsNothing);
+  });
+
+  testWidgets('İlk Devriye: teşhis çerçevesi + zayıf konu hedefi (P2-14)',
+      (tester) async {
+    const patrolResult = QuizResult(
+      totalQuestions: 10,
+      correctCount: 6,
+      wrongCount: 4,
+      blankCount: 0,
+      score: 60,
+      durationSeconds: 400,
+      topicBreakdown: [
+        TopicScore(topicName: 'Anayasa', correct: 4, total: 5),
+        TopicScore(topicName: 'PVSK', correct: 2, total: 5),
+      ],
+    );
+    await tester.pumpWidget(app(patrolResult, patrol: true));
+    await tester.pumpAndSettle();
+    expect(find.text('İlk Devriye'), findsOneWidget);
+    expect(find.text('TEŞHİS KARNESİ'), findsOneWidget);
+    // Koç en zayıf konuyu ilk hedef ilan eder; not/skor diliyle konuşmaz.
+    expect(find.textContaining('ilk hedefimiz PVSK'), findsOneWidget);
+    expect(find.text('Planımı gör'), findsOneWidget);
   });
 }
