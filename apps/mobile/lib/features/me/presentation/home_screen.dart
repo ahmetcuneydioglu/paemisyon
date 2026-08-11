@@ -128,6 +128,15 @@ class _CoachBody extends ConsumerWidget {
             'mode': 'practice',
             'count': 10,
           });
+        case 'quick_review':
+        case 'exam_mode' when route == '/review':
+          // Yanlış tekrarı artık gerçek reçeteye gider (Doc 28 P0-⑤):
+          // liste değil, doğrudan review seansı.
+          await context.push('/quiz', extra: {
+            'topicName': 'Yanlış Turu',
+            'mode': 'review',
+            'count': (meta['wrongCount'] as int?)?.clamp(1, 20) ?? 10,
+          });
         default:
           await context.push(route);
       }
@@ -220,7 +229,7 @@ class _CoachBody extends ConsumerWidget {
                 case 'course':
                   await open('default', '/catalog');
                 case 'wrongs':
-                  await open('default', '/review');
+                  await open('quick_review', '/review');
                 default: // koç seçsin → karışım motorlu koç seansı
                   await openCoachSession();
               }

@@ -26,14 +26,16 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String? topicId;
   final String? courseId; // ders geneli deneme
   final String? articleNo; // Madde Atlası: maddeden seans (Doc 25 §4)
+  final bool fromBookmarks; // Favorilerden seans (Doc 27 B dilimi)
   final String topicName;
-  final String mode; // 'practice' | 'exam'
+  final String mode; // 'practice' | 'exam' | 'daily' | 'review'
   final int questionCount;
   const QuizScreen({
     super.key,
     this.topicId,
     this.courseId,
     this.articleNo,
+    this.fromBookmarks = false,
     required this.topicName,
     required this.mode,
     this.questionCount = 10,
@@ -62,9 +64,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   // Bu oturumda favorilenen sorular (yıldız durumu).
   final Set<String> _bookmarked = {};
 
-  // Günün quizi de öğrenme akışı: practice gibi anlık geri bildirim gösterir.
+  // Günün quizi ve yanlış tekrarı da öğrenme akışıdır: anlık geri bildirim.
   bool get _isPractice =>
-      widget.mode == 'practice' || widget.mode == 'daily';
+      widget.mode == 'practice' ||
+      widget.mode == 'daily' ||
+      widget.mode == 'review';
 
   @override
   void initState() {
@@ -86,6 +90,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             topicId: widget.topicId,
             courseId: widget.courseId,
             articleNo: widget.articleNo,
+            fromBookmarks: widget.fromBookmarks,
             count: widget.questionCount,
           );
       setState(() {

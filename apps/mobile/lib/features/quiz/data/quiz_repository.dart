@@ -11,11 +11,14 @@ class QuizRepository {
   const QuizRepository(this._dio);
 
   /// Oturum başlat: konu (alıştırma/konu denemesi) VEYA ders (deneme sınavı).
+  /// mode: practice | exam | daily | review (yanlış tekrarı reçetesi).
+  /// [fromBookmarks]: yalnız kapsamsız practice — havuz favorilerden kurulur.
   Future<StartedSession> start({
     required String mode,
     String? topicId,
     String? courseId,
     String? articleNo,
+    bool fromBookmarks = false,
     int count = 10,
   }) async {
     return _guard(() async {
@@ -27,6 +30,7 @@ class QuizRepository {
           if (courseId != null) 'courseId': courseId,
           // Madde Atlası (Doc 25 §4): maddeden seans.
           if (articleNo != null) 'articleNo': articleNo,
+          if (fromBookmarks) 'fromBookmarks': true,
           'questionCount': count,
         },
       );

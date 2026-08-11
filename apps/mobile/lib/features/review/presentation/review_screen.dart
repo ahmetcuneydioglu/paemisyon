@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/primary_button.dart';
 import '../data/review_repository.dart';
 
-/// Tekrar (Doc 12 §8): Yanlışlarım / Favoriler sekmeleri.
+/// Tekrar (Doc 12 §8 + Doc 28 P0-⑤): Yanlışlarım / Favoriler — artık CANLI:
+/// listeden seans başlar (review reçetesi / fromBookmarks), favoriden çıkarılır.
 class ReviewScreen extends StatelessWidget {
   const ReviewScreen({super.key});
 
@@ -42,6 +47,20 @@ class _ReviewList extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final provider = wrong ? wrongAnswersProvider : bookmarksProvider;
     final data = ref.watch(provider);
+    final tokens = context.tokens;
+
+    Future<void> startSession(int itemCount) async {
+      await context.push('/quiz', extra: {
+        'topicName': wrong ? 'Yanlış Turu' : 'Favorilerim',
+        'mode': wrong ? 'review' : 'practice',
+        if (!wrong) 'fromBookmarks': true,
+        'count': itemCount.clamp(1, 20),
+      });
+      // Seans sonrası kuyruklar değişir (doğru çözülen yanlış düşer).
+      ref.invalidate(wrongAnswersProvider);
+      ref.invalidate(bookmarksProvider);
+    }
+
     return data.when(
       loading: () => ListView(
         padding: const EdgeInsets.all(AppSpacing.lg),
@@ -61,29 +80,78 @@ class _ReviewList extends ConsumerWidget {
                   ? Icons.check_circle_rounded
                   : Icons.bookmark_border_rounded,
               message: wrong
-                  ? 'Henüz yanlışın yok, harika!'
-                  : 'Henüz favori sorun yok.',
+                  ? 'Açık yanlışın yok — kuyruk temiz. Yeni yanlışlar '
+                      'çözüldükçe burada birikir, doğru çözünce düşer.'
+                  : 'Henüz favori sorun yok. Seans içinde ⭐ ile işaretle, '
+                      'burada koleksiyonun olsun.',
             )
-          : ListView.separated(
-              padding: const EdgeInsets.all(AppSpacing.lg),
-              itemCount: list.length,
-              separatorBuilder: (_, __) =>
-                  const SizedBox(height: AppSpacing.sm),
-              itemBuilder: (context, i) {
-                final it = list[i];
-                return Card(
-                  child: ListTile(
-                    title: Text(it.stem ?? '(soru)',
-                        maxLines: 2, overflow: TextOverflow.ellipsis),
-                    subtitle: Text([
-                      if (it.topicName != null) it.topicName!,
-                      if (wrong && it.wrongCount != null)
-                        '${it.wrongCount}x yanlış',
-                    ].join(' · ')),
+          : RefreshIndicator(
+              onRefresh: () async => ref.invalidate(provider),
+              child: ListView(
+                padding: const EdgeInsets.all(AppSpacing.lg),
+                children: [
+                  // ── Birincil eylem: listeden seans (Doc 28 P0-⑤) ──
+                  PrimaryButton(
+                    label: wrong
+                        ? 'Yanlış turunu başlat (${list.length})'
+                        : 'Favorilerden seans (${list.length})',
+                    onPressed: () => startSession(list.length),
                   ),
-                );
-              },
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: AppSpacing.sm),
+                    child: Text(
+                      wrong
+                          ? 'Doğru çözdüğün soru kuyruktan düşer — kaybolmaz, çözülür.'
+                          : 'Yıldızını kaldırmak listeden çıkarır.',
+                      style: AppTypography.caption
+                          .copyWith(color: tokens.inkSoft),
+                    ),
+                  ),
+                  for (final it in list)
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(bottom: AppSpacing.sm),
+                      child: Card(
+                        margin: EdgeInsets.zero,
+                        child: ListTile(
+                          title: Text(it.stem ?? '(soru)',
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis),
+                          subtitle: Text([
+                            if (it.topicName != null) it.topicName!,
+                            if (wrong && it.wrongCount != null)
+                              '${it.wrongCount}x yanlış',
+                          ].join(' · ')),
+                          trailing: wrong
+                              ? null
+                              : IconButton(
+                                  tooltip: 'Favoriden çıkar',
+                                  icon: Icon(Icons.star_rounded,
+                                      color: tokens.accentStreak),
+                                  onPressed: () =>
+                                      _removeBookmark(context, ref, it),
+                                ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
             ),
     );
+  }
+
+  Future<void> _removeBookmark(
+      BuildContext context, WidgetRef ref, ReviewItem it) async {
+    try {
+      await ref.read(reviewRepositoryProvider).removeBookmark(it.questionId);
+      ref.invalidate(bookmarksProvider);
+    } catch (_) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Çıkarılamadı, tekrar dene.')),
+        );
+      }
+    }
   }
 }
