@@ -24,7 +24,17 @@ class ProgressScreen extends ConsumerWidget {
     final summary = ref.watch(progressSummaryProvider);
     final topics = ref.watch(topicProgressProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Performans')),
+      appBar: AppBar(
+        title: const Text('Performans'),
+        actions: [
+          // Sıralama girişi (P1-6): hızlı erişim satırı kalkınca buraya taşındı.
+          IconButton(
+            tooltip: 'Sıralama',
+            icon: const Icon(Icons.emoji_events_rounded),
+            onPressed: () => context.push('/leaderboard'),
+          ),
+        ],
+      ),
       body: RefreshIndicator(
         onRefresh: () async {
           ref.invalidate(progressSummaryProvider);

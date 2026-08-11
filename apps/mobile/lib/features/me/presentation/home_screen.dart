@@ -36,16 +36,8 @@ class HomeScreen extends ConsumerWidget {
     });
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Paemisyon'),
-        actions: [
-          IconButton(
-            tooltip: 'Profil & Ayarlar',
-            icon: const Icon(Icons.person_rounded),
-            onPressed: () => context.push('/profile'),
-          ),
-        ],
-      ),
+      // Profil ikonu kaldırıldı (Doc 28 P1-6): "Ben" artık bottom tab'da.
+      appBar: AppBar(title: const Text('Paemisyon')),
       body: brief.when(
         loading: () => const Padding(
           padding: EdgeInsets.all(AppSpacing.xl),
@@ -335,37 +327,8 @@ class _CoachBody extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
-        // ── Hızlı erişim ──
-        StaggeredReveal(
-          index: i++,
-          child: Row(
-            children: [
-              _QuickAction(
-                icon: Icons.menu_book_rounded,
-                label: 'Çalış',
-                onTap: () => open('default', '/catalog'),
-              ),
-              const SizedBox(width: AppSpacing.sm),
-              _QuickAction(
-                icon: Icons.edit_note_rounded,
-                label: 'Denemeler',
-                onTap: () => open('default', '/denemeler'),
-              ),
-              const SizedBox(width: AppSpacing.sm),
-              _QuickAction(
-                icon: Icons.insights_rounded,
-                label: 'İlerlemem',
-                onTap: () => open('default', '/progress'),
-              ),
-              const SizedBox(width: AppSpacing.sm),
-              _QuickAction(
-                icon: Icons.emoji_events_rounded,
-                label: 'Sıralama',
-                onTap: () => open('default', '/leaderboard'),
-              ),
-            ],
-          ),
-        ),
+        // Hızlı erişim satırı kaldırıldı (Doc 28 P1-6): bölgeler artık
+        // bottom tab'da yaşıyor — Bugün sadeleşti, ekran koça kaldı.
 
         // ── Premium CTA (yalnızca free) ──
         if (!brief.isPremium) ...[
@@ -881,39 +844,3 @@ class _StatsStrip extends StatelessWidget {
   }
 }
 
-// ── Hızlı erişim ──
-
-class _QuickAction extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
-  const _QuickAction(
-      {required this.icon, required this.label, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Expanded(
-      child: PressableScale(
-        onTap: onTap,
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm + 4),
-          decoration: BoxDecoration(
-            border: Border.all(color: theme.colorScheme.outlineVariant),
-            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-          ),
-          child: Column(
-            children: [
-              Icon(icon, color: theme.colorScheme.primary, size: 22),
-              const SizedBox(height: AppSpacing.xs),
-              Text(label,
-                  style: const TextStyle(fontSize: 12),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
