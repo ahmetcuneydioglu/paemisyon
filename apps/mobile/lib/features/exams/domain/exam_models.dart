@@ -168,6 +168,53 @@ class ReviewOption {
       );
 }
 
+/// Konu kırılımı satırı (Doc 27 wireframe 11) — derin analiz.
+class AttemptTopicRow {
+  final String topicId;
+  final String topicName;
+  final int correct;
+  final int wrong;
+  final int blank;
+  final int total;
+
+  const AttemptTopicRow({
+    required this.topicId,
+    required this.topicName,
+    required this.correct,
+    required this.wrong,
+    required this.blank,
+    required this.total,
+  });
+
+  /// Kayıp net = yanlışın kendisi + götürdüğü çeyrekler + boşlar (web ile eş).
+  double get lostNet => wrong * 1.25 + blank;
+
+  factory AttemptTopicRow.fromJson(Map<String, dynamic> j) => AttemptTopicRow(
+        topicId: j['topicId'] as String,
+        topicName: j['topicName'] as String,
+        correct: j['correct'] as int? ?? 0,
+        wrong: j['wrong'] as int? ?? 0,
+        blank: j['blank'] as int? ?? 0,
+        total: j['total'] as int? ?? 0,
+      );
+}
+
+/// Süre yönetimi şeridi verisi: soru sırasına göre harcanan süre + sonuç.
+class AttemptTiming {
+  final int order;
+  final int? timeSpentMs;
+  final String status; // correct | wrong | blank
+
+  const AttemptTiming(
+      {required this.order, this.timeSpentMs, required this.status});
+
+  factory AttemptTiming.fromJson(Map<String, dynamic> j) => AttemptTiming(
+        order: j['order'] as int,
+        timeSpentMs: j['timeSpentMs'] as int?,
+        status: j['status'] as String? ?? 'blank',
+      );
+}
+
 class AttemptResult {
   final String attemptId;
   final String examId;
@@ -178,6 +225,10 @@ class AttemptResult {
   final int blankCount;
   final double? score; // NET
   final int? durationSeconds;
+  final DateTime? startedAt; // /mine özetinde dolu — kıyas sıralaması için
+  final String? status;
+  final List<AttemptTopicRow> topicBreakdown;
+  final List<AttemptTiming> timing;
   final List<ReviewQuestion> review;
 
   const AttemptResult({
@@ -190,6 +241,10 @@ class AttemptResult {
     required this.blankCount,
     this.score,
     this.durationSeconds,
+    this.startedAt,
+    this.status,
+    this.topicBreakdown = const [],
+    this.timing = const [],
     required this.review,
   });
 
@@ -205,6 +260,16 @@ class AttemptResult {
       blankCount: j['blankCount'] as int,
       score: (j['score'] as num?)?.toDouble(),
       durationSeconds: j['durationSeconds'] as int?,
+      startedAt: j['startedAt'] != null
+          ? DateTime.tryParse(j['startedAt'] as String)
+          : null,
+      status: j['status'] as String?,
+      topicBreakdown: (j['topicBreakdown'] as List<dynamic>? ?? const [])
+          .map((e) => AttemptTopicRow.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      timing: (j['timing'] as List<dynamic>? ?? const [])
+          .map((e) => AttemptTiming.fromJson(e as Map<String, dynamic>))
+          .toList(),
       review: (j['review'] as List<dynamic>? ?? const [])
           .map((e) => ReviewQuestion.fromJson(e as Map<String, dynamic>))
           .toList(),

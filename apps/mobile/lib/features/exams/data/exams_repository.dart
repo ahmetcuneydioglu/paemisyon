@@ -74,6 +74,10 @@ class ExamsRepository {
           blankCount: m['blankCount'] as int? ?? 0,
           score: (m['score'] as num?)?.toDouble(),
           durationSeconds: null,
+          startedAt: m['startedAt'] != null
+              ? DateTime.tryParse(m['startedAt'] as String)
+              : null,
+          status: m['status'] as String?,
           review: const [],
         );
       }).toList();
@@ -126,6 +130,21 @@ final examAttemptProvider =
     FutureProvider.autoDispose.family<AttemptResult, String>(
   (ref, attemptId) => ref.watch(examsRepositoryProvider).attempt(attemptId),
 );
+
+/// Önceki denemeyle net kıyası (Doc 24 §2 — önce kendinle kıyas).
+/// null = ilk deneme ya da kıyas verisi alınamadı (sessizce gizlenir).
+final attemptDeltaProvider =
+    FutureProvider.autoDispose.family<double?, String>((ref, attemptId) async {
+  final mine = await ref.watch(examsRepositoryProvider).myAttempts();
+  final completed = mine
+      .where((a) =>
+          a.status == 'completed' && a.score != null && a.startedAt != null)
+      .toList()
+    ..sort((a, b) => a.startedAt!.compareTo(b.startedAt!));
+  final i = completed.indexWhere((a) => a.attemptId == attemptId);
+  if (i <= 0) return null; // ilk deneme — kıyas çizgisi buradan başlar
+  return completed[i].score! - completed[i - 1].score!;
+});
 
 final examLeaderboardProvider =
     FutureProvider.autoDispose.family<ExamLeaderboard, String>(
