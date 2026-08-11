@@ -11,6 +11,7 @@ import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../shared/widgets/micro_interactions.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../../../shared/widgets/question_media.dart';
@@ -42,6 +43,10 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
   Duration _left = Duration.zero;
   bool _finishing = false;
 
+  // Canlı nabız: şu an sınavda olan kişi sayısı (~20 sn'de bir yoklanır).
+  Timer? _presenceTimer;
+  int? _online;
+
   @override
   void initState() {
     super.initState();
@@ -51,7 +56,22 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
   @override
   void dispose() {
     _timer?.cancel();
+    _presenceTimer?.cancel();
     super.dispose();
+  }
+
+  void _startPresence() {
+    Future<void> poll() async {
+      try {
+        final p =
+            await ref.read(examsRepositoryProvider).presence(widget.examId);
+        if (mounted) setState(() => _online = p.active);
+      } catch (_) {/* nabız süsleyicidir — hata sınavı etkilemez */}
+    }
+
+    poll();
+    _presenceTimer =
+        Timer.periodic(const Duration(seconds: 20), (_) => poll());
   }
 
   Future<void> _load() async {
@@ -64,6 +84,7 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
         _answers.addAll(s.givenAnswers);
       });
       _startTimer();
+      _startPresence();
     } on ExamFlowFailure catch (f) {
       if (f.code == 'EXAM_ALREADY_TAKEN' && f.attemptId != null && mounted) {
         context.pushReplacement('/denemeler/sonuc/${f.attemptId}');
@@ -207,6 +228,37 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
             icon: const Icon(Icons.close_rounded),
             onPressed: _confirmLeave,
           ),
+          actions: [
+            // Canlı katılımcı nabzı: şu an sınavda olan kişi sayısı.
+            if (_online != null)
+              Padding(
+                padding: const EdgeInsets.only(right: AppSpacing.lg),
+                child: Semantics(
+                  label: 'Şu an sınavda $_online kişi var',
+                  excludeSemantics: true,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpacing.sm + 2,
+                        vertical: AppSpacing.xs),
+                    decoration: BoxDecoration(
+                      color: context.tokens.accentLive.withValues(alpha: 0.12),
+                      borderRadius:
+                          BorderRadius.circular(AppSpacing.radiusFull),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        PulseDot(color: context.tokens.accentLive),
+                        const SizedBox(width: AppSpacing.xs),
+                        Text('$_online',
+                            style: AppTypography.label.copyWith(
+                                color: context.tokens.accentLive)),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+          ],
         ),
         body: ListView.builder(
           padding: const EdgeInsets.fromLTRB(

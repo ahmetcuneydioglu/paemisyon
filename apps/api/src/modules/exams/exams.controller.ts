@@ -47,6 +47,12 @@ export class ExamsController {
     return this.exams.detail(id, user);
   }
 
+  /** Canlı katılımcı nabzı: şu an sınavda olan (in_progress) kişi sayısı. */
+  @Get(':id/presence')
+  presence(@Param('id', ParseUUIDPipe) id: string) {
+    return this.exams.presence(id);
+  }
+
   @Post(':id/start')
   @UseGuards(JwtAuthGuard)
   start(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {

@@ -88,6 +88,16 @@ export class ExamsService {
     return found;
   }
 
+  /** Canlı nabız: sınavda ŞU AN olan (in_progress) + bitirmiş kişi sayısı.
+   *  Hafif sorgu — oynatıcı ~20 sn'de bir yoklar; kimlik gerektirmez. */
+  async presence(examId: string) {
+    const [active, completed] = await Promise.all([
+      this.prisma.quizSession.count({ where: { examId, status: 'in_progress' } }),
+      this.prisma.quizSession.count({ where: { examId, status: 'completed' } }),
+    ]);
+    return { active, completed };
+  }
+
   // ── Başlat / devam et (Doc 18 §7) ──
   async start(user: AuthenticatedUser, examId: string) {
     const exam = await this.prisma.exam.findFirst({

@@ -30,6 +30,19 @@ class ExamsRepository {
     });
   }
 
+  /// Canlı nabız: şu an sınavda olan kişi sayısı (oynatıcı ~20 sn'de bir yoklar).
+  Future<({int active, int completed})> presence(String examId) async {
+    return _guard(() async {
+      final r =
+          await _dio.get<Map<String, dynamic>>('/exams/$examId/presence');
+      final d = r.data!['data'] as Map<String, dynamic>;
+      return (
+        active: d['active'] as int? ?? 0,
+        completed: d['completed'] as int? ?? 0,
+      );
+    });
+  }
+
   Future<AttemptResult> attempt(String attemptId) async {
     return _guard(() async {
       final r = await _dio.get<Map<String, dynamic>>('/exams/attempts/$attemptId');

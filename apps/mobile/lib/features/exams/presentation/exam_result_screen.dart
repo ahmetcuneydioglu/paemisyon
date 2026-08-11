@@ -11,6 +11,8 @@ import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/question_media.dart';
+import '../../quiz/data/quiz_repository.dart';
+import '../../review/data/review_repository.dart';
 import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
 
@@ -45,12 +47,86 @@ class ExamResultScreen extends ConsumerWidget {
   }
 }
 
-class _Body extends StatelessWidget {
+class _Body extends ConsumerStatefulWidget {
   final AttemptResult result;
   const _Body({required this.result});
 
   @override
+  ConsumerState<_Body> createState() => _BodyState();
+}
+
+class _BodyState extends ConsumerState<_Body> {
+  /// Favori durumu — açılışta sunucudan tohumlanır, dokunuşta iyimser güncellenir.
+  final Set<String> _bookmarked = {};
+
+  @override
+  void initState() {
+    super.initState();
+    ref.read(reviewRepositoryProvider).getBookmarks().then((rows) {
+      if (mounted) {
+        setState(() => _bookmarked.addAll(rows.map((r) => r.questionId)));
+      }
+    }).catchError((_) {/* tohum alınamazsa yıldızlar boş başlar */});
+  }
+
+  Future<void> _toggleBookmark(String questionId) async {
+    final had = _bookmarked.contains(questionId);
+    setState(() => had ? _bookmarked.remove(questionId) : _bookmarked.add(questionId));
+    try {
+      final repo = ref.read(reviewRepositoryProvider);
+      had ? await repo.removeBookmark(questionId) : await repo.addBookmark(questionId);
+    } catch (_) {
+      if (mounted) {
+        setState(() =>
+            had ? _bookmarked.add(questionId) : _bookmarked.remove(questionId));
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Favori kaydedilemedi — tekrar dene.')));
+      }
+    }
+  }
+
+  Future<void> _report(String questionId) async {
+    final controller = TextEditingController();
+    final message = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Bu soruda ne yanlış?'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          maxLines: 3,
+          maxLength: 500,
+          decoration: const InputDecoration(
+              hintText: 'ör. cevap anahtarı yanlış, yazım hatası, şık eksik…'),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx), child: const Text('Vazgeç')),
+          FilledButton(
+              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+              child: const Text('Bildir')),
+        ],
+      ),
+    );
+    controller.dispose();
+    if (message == null || message.length < 5 || !mounted) return;
+    try {
+      await ref.read(quizRepositoryProvider).reportQuestion(questionId, message);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Bildirimin alındı — editör ekibi inceleyecek.')));
+      }
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Bildirim gönderilemedi — tekrar dene.')));
+      }
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final result = widget.result;
     return ListView(
       padding: const EdgeInsets.all(AppSpacing.lg),
       children: [
@@ -79,7 +155,12 @@ class _Body extends StatelessWidget {
             style: AppTypography.heading
                 .copyWith(color: context.tokens.ink)),
         const SizedBox(height: AppSpacing.xs),
-        ...result.review.map((q) => _ReviewTile(q: q)),
+        ...result.review.map((q) => _ReviewTile(
+              q: q,
+              bookmarked: _bookmarked.contains(q.questionId),
+              onBookmark: () => _toggleBookmark(q.questionId),
+              onReport: () => _report(q.questionId),
+            )),
         const SizedBox(height: AppSpacing.xl),
       ],
     );
@@ -178,7 +259,15 @@ class _StatCell extends StatelessWidget {
 
 class _ReviewTile extends StatelessWidget {
   final ReviewQuestion q;
-  const _ReviewTile({required this.q});
+  final bool bookmarked;
+  final VoidCallback onBookmark;
+  final VoidCallback onReport;
+  const _ReviewTile({
+    required this.q,
+    required this.bookmarked,
+    required this.onBookmark,
+    required this.onReport,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -230,6 +319,39 @@ class _ReviewTile extends StatelessWidget {
                   style:
                       AppTypography.caption.copyWith(color: tokens.inkSoft)),
             ),
+          // Aksiyonlar: favorile (tekrar reçetesine girer) + hata bildir.
+          const SizedBox(height: AppSpacing.xs),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              TextButton.icon(
+                onPressed: onBookmark,
+                style: TextButton.styleFrom(
+                  foregroundColor:
+                      bookmarked ? tokens.accentStreak : tokens.inkSoft,
+                  visualDensity: VisualDensity.compact,
+                ),
+                icon: Icon(
+                  bookmarked
+                      ? Icons.star_rounded
+                      : Icons.star_border_rounded,
+                  size: 18,
+                ),
+                label: Text(bookmarked ? 'Favoride' : 'Favorile',
+                    style: AppTypography.label),
+              ),
+              const SizedBox(width: AppSpacing.xs),
+              TextButton.icon(
+                onPressed: onReport,
+                style: TextButton.styleFrom(
+                  foregroundColor: tokens.inkSoft,
+                  visualDensity: VisualDensity.compact,
+                ),
+                icon: const Icon(Icons.flag_outlined, size: 18),
+                label: const Text('Hata bildir', style: AppTypography.label),
+              ),
+            ],
+          ),
         ],
       ),
     );
