@@ -38,7 +38,9 @@ export default async function SorularPage({ params }: { params: Promise<{ examId
       <p className="mx-auto max-w-3xl px-4 pt-4 text-center text-[13px] text-neutral-500">
         Bu ekranda sorular incelemelik olarak gösterilir; doğru cevaplar yer almaz.
       </p>
-      <ReviewList questions={data.questions} showAnswers={false} />
+      <div className="mx-auto max-w-6xl px-4 py-4">
+        <ReviewList questions={data.questions} showAnswers={false} />
+      </div>
     </div>
   );
 }

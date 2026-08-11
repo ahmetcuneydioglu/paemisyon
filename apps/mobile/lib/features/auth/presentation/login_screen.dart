@@ -69,7 +69,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         ],
       ),
     );
-    controller.dispose();
+    // Kapanış animasyonu bitmeden dispose = '_dependents.isEmpty' çökmesi.
+    Future.delayed(const Duration(milliseconds: 400), controller.dispose);
     if (email == null || email.isEmpty || !mounted) return;
     try {
       await ref.read(authRepositoryProvider).requestPasswordReset(email);

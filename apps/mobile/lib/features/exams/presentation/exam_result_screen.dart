@@ -108,7 +108,9 @@ class _BodyState extends ConsumerState<_Body> {
         ],
       ),
     );
-    controller.dispose();
+    // Diyalog kapanış ANİMASYONU bitmeden dispose etme — TextField hâlâ
+    // controller'a bağlıyken '_dependents.isEmpty' assert'iyle çöker.
+    Future.delayed(const Duration(milliseconds: 400), controller.dispose);
     if (message == null || message.length < 5 || !mounted) return;
     try {
       await ref.read(quizRepositoryProvider).reportQuestion(questionId, message);

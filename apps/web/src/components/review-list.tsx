@@ -1,11 +1,12 @@
 import type { ReviewQuestion } from "@/lib/types";
-import { QuestionColumns } from "./question-columns";
+import { OptionRow, type OptionState } from "@/components/ui/option-row";
 
 /**
- * Soru incelemesi — eski sinav-sonuc.php. SINAV EKRANIYLA BİREBİR aynı 2 sütunlu
- * düzen (QuestionColumns): şıklar pasif; doğru=yeşil, seçilen-yanlış=kırmızı bar,
- * altında açıklama. showAnswers=false ise (sınav-sonrası serbest görüntüleme)
- * cevap anahtarı gösterilmez.
+ * Cevap incelemesi — seans/deneme oynatıcısıyla AYNI tasarım dili (tk token
+ * + OptionRow durumları). Eski 2 sütunlu miras düzen (QuestionColumns +
+ * option-bar CSS'i) söküldü: kartlar grid'de bağımsızdır, iç içe geçmez,
+ * mobilde tek sütuna düşer. showAnswers=false ise (sınav-sonrası serbest
+ * görüntüleme) cevap anahtarı ve açıklama gösterilmez.
  */
 export function ReviewList({
   questions,
@@ -15,73 +16,92 @@ export function ReviewList({
   showAnswers: boolean;
 }) {
   return (
-    <div className="pb-8">
+    <div>
       {showAnswers && (
-        <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 px-4 pt-4 text-[13px]">
-          <Legend color="var(--color-green)" label="Doğru cevap" />
-          <Legend color="var(--color-red)" label="Senin yanlış cevabın" />
-          <Legend color="var(--color-yellow)" label="Boş bıraktığın" text="#000" />
+        <div
+          className="mb-4 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-ink-soft"
+          aria-hidden
+        >
+          <Legend className="border-success bg-success/10" label="Doğru cevap" />
+          <Legend className="border-danger bg-danger/10" label="Senin yanlış cevabın" />
+          <Legend className="border-warning bg-warning/10" label="Boş bıraktığın" />
         </div>
       )}
 
-      <QuestionColumns
-        questions={questions}
-        renderQuestion={(q) => {
+      <div className="grid items-start gap-4 lg:grid-cols-2">
+        {questions.map((q) => {
           const blank = q.selectedOptionId == null;
           return (
-            <>
-              <div role="radiogroup" aria-label={`Soru ${q.order} incelemesi`}>
+            <article
+              key={q.questionId}
+              className="rounded-md border border-line bg-surface p-4"
+              aria-label={`Soru ${q.order}`}
+            >
+              <p className="text-[15px] leading-relaxed text-ink">
+                <span className="tabular font-bold">{q.order}.</span> {q.stem}
+              </p>
+              {q.mediaUrl && (
+                // Saklı medya URL'i (bilinmeyen host) — optimizer'a açılmaz.
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={q.mediaUrl}
+                  alt="Soru görseli"
+                  loading="lazy"
+                  decoding="async"
+                  className="mt-2 max-h-64 rounded-sm border border-line"
+                />
+              )}
+
+              <div className="mt-3 space-y-1.5">
                 {q.options.map((o) => {
                   const chosen = q.selectedOptionId === o.id;
-                  let cls = "option-bar option-bar--static";
-                  if (showAnswers && o.isCorrect) cls += " opt-true";
-                  else if (showAnswers && chosen && !o.isCorrect) cls += " opt-false";
-                  else if (chosen) cls += " opt-chosen";
+                  let state: OptionState = "dim";
+                  if (showAnswers) {
+                    if (o.isCorrect) state = "correct";
+                    else if (chosen) state = "wrong";
+                  } else if (chosen) {
+                    state = "selected";
+                  }
                   return (
-                    <div
+                    <OptionRow
                       key={o.id}
-                      className={cls}
-                      role="radio"
-                      aria-checked={chosen}
-                      aria-disabled="true"
-                    >
-                      <b>{o.label}.</b> {o.text}
-                    </div>
+                      label={o.label}
+                      text={o.text}
+                      state={state}
+                      disabled
+                    />
                   );
                 })}
               </div>
 
               {showAnswers && blank && (
-                <p className="mt-1 text-[12px] font-semibold text-(--color-blue-blank)">
+                <p className="mt-2 text-[12px] font-bold text-warning">
                   Bu soruyu boş bıraktın.
                 </p>
               )}
               {showAnswers && q.explanation && (
-                <div className="mt-2 border-l-4 border-(--color-green) bg-(--color-grey-bg) p-3 text-[13px] leading-relaxed">
-                  <strong>Açıklama:</strong> {q.explanation}
+                <div className="mt-3 rounded-sm bg-surface-alt p-3">
+                  <p className="tk-caption">Açıklama</p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-ink">
+                    {q.explanation}
+                  </p>
                 </div>
               )}
               {showAnswers && q.source && (
-                <p className="mt-1 text-[12px] text-(--color-grey-text,inherit) opacity-70">
-                  Kaynak: {q.source}
-                </p>
+                <p className="tk-caption mt-2">Kaynak: {q.source}</p>
               )}
-            </>
+            </article>
           );
-        }}
-      />
+        })}
+      </div>
     </div>
   );
 }
 
-function Legend({ color, label, text = "#fff" }: { color: string; label: string; text?: string }) {
+function Legend({ className, label }: { className: string; label: string }) {
   return (
     <span className="flex items-center gap-1.5">
-      <span
-        className="inline-block h-3.5 w-6 border"
-        style={{ background: color, borderColor: color, color: text }}
-        aria-hidden
-      />
+      <span className={`inline-block h-3.5 w-6 rounded-sm border ${className}`} />
       {label}
     </span>
   );

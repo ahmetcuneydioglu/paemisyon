@@ -140,8 +140,11 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
         ],
       ),
     );
-    first.dispose();
-    second.dispose();
+    // Kapanış animasyonu bitmeden dispose = '_dependents.isEmpty' çökmesi.
+    Future.delayed(const Duration(milliseconds: 400), () {
+      first.dispose();
+      second.dispose();
+    });
     if (password == null || password.isEmpty || !mounted) return;
     try {
       await ref.read(authRepositoryProvider).updatePassword(password);
@@ -364,7 +367,8 @@ Future<void> _confirmDelete(BuildContext context, WidgetRef ref) async {
       ],
     ),
   );
-  controller.dispose();
+  // Kapanış animasyonu bitmeden dispose = '_dependents.isEmpty' çökmesi.
+  Future.delayed(const Duration(milliseconds: 400), controller.dispose);
   if (confirmed != true || !context.mounted) return;
   try {
     await ref.read(meRepositoryProvider).deleteAccount();

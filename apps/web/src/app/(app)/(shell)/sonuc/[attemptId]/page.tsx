@@ -190,11 +190,9 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
       {/* Süre yönetimi şeridi (wireframe 11): soru sırasına göre harcanan süre */}
       <TimingStrip timing={result.timing ?? []} />
 
-      {/* Cevap incelemesi (miras bileşen — işlevsel; görsel tazeleme W4) */}
-      <h2 className="mb-2 mt-8 font-heading text-lg font-bold text-ink">Cevap incelemesi</h2>
-      <Card className="p-0">
-        <ReviewList questions={result.review} showAnswers />
-      </Card>
+      {/* Cevap incelemesi — oynatıcıyla aynı tasarım dili (kartlar kendi kabuğunu taşır) */}
+      <h2 className="mb-3 mt-8 font-heading text-lg font-bold text-ink">Cevap incelemesi</h2>
+      <ReviewList questions={result.review} showAnswers />
     </div>
   );
 }
