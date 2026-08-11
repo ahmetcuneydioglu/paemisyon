@@ -22,6 +22,20 @@ class CoachRepository {
       throw const ServerFailure('Koç ekranı yüklenemedi, tekrar dene.');
     }
   }
+
+  /// Rozet vitrini (Doc 28 P2-12) — kazanılan + kilitli, katalog sırasıyla.
+  Future<BadgeCollection> badges() async {
+    try {
+      final r = await _dio.get<Map<String, dynamic>>('/me/badges');
+      return BadgeCollection.fromJson(r.data!['data'] as Map<String, dynamic>);
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.connectionTimeout) {
+        throw const NetworkFailure();
+      }
+      throw const ServerFailure('Rozetler yüklenemedi, tekrar dene.');
+    }
+  }
 }
 
 final coachRepositoryProvider = Provider<CoachRepository>(
@@ -30,4 +44,8 @@ final coachRepositoryProvider = Provider<CoachRepository>(
 
 final coachBriefProvider = FutureProvider.autoDispose<CoachBrief>(
   (ref) => ref.watch(coachRepositoryProvider).brief(),
+);
+
+final badgesProvider = FutureProvider.autoDispose<BadgeCollection>(
+  (ref) => ref.watch(coachRepositoryProvider).badges(),
 );

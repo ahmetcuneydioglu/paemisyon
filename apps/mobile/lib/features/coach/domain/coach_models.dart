@@ -251,3 +251,51 @@ class CoachBrief {
     );
   }
 }
+
+/// Rozet koleksiyonu (Doc 28 P2-12) — GET /me/badges. Katalog sırası korunur;
+/// kilitli rozetler de listelenir (hedef gösterimi motivasyonun parçası).
+class BadgeCollection {
+  final int earnedCount;
+  final int totalCount;
+  final List<BadgeItem> items;
+
+  const BadgeCollection({
+    required this.earnedCount,
+    required this.totalCount,
+    required this.items,
+  });
+
+  factory BadgeCollection.fromJson(Map<String, dynamic> j) => BadgeCollection(
+        earnedCount: j['earnedCount'] as int? ?? 0,
+        totalCount: j['totalCount'] as int? ?? 0,
+        items: (j['items'] as List<dynamic>? ?? const [])
+            .map((e) => BadgeItem.fromJson(e as Map<String, dynamic>))
+            .toList(),
+      );
+}
+
+class BadgeItem {
+  final String key;
+  final String name;
+  final String description;
+  final bool earned;
+  final DateTime? earnedAt;
+
+  const BadgeItem({
+    required this.key,
+    required this.name,
+    required this.description,
+    required this.earned,
+    this.earnedAt,
+  });
+
+  factory BadgeItem.fromJson(Map<String, dynamic> j) => BadgeItem(
+        key: j['key'] as String,
+        name: j['name'] as String,
+        description: j['description'] as String? ?? '',
+        earned: j['earned'] as bool? ?? false,
+        earnedAt: j['earnedAt'] != null
+            ? DateTime.tryParse(j['earnedAt'] as String)
+            : null,
+      );
+}

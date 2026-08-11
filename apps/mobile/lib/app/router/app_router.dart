@@ -16,6 +16,7 @@ import '../../features/exams/presentation/exam_leaderboard_screen.dart';
 import '../../features/exams/presentation/exam_result_screen.dart';
 import '../../features/exams/presentation/exam_runner_screen.dart';
 import '../../features/exams/presentation/exams_list_screen.dart';
+import '../../features/me/presentation/badges_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
 import '../../features/me/presentation/profile_screen.dart';
@@ -147,6 +148,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     path: 'settings',
                     builder: (context, state) =>
                         const ProfileSettingsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'badges',
+                    builder: (context, state) => const BadgesScreen(),
                   ),
                 ]),
           ]),

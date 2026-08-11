@@ -153,6 +153,13 @@ class _ProfileBody extends ConsumerWidget {
               ),
               const Divider(height: 1),
               _Shortcut(
+                icon: Icons.military_tech_rounded,
+                title: 'Rozetlerim',
+                subtitle: 'Kazandıkların ve sıradaki hedefler',
+                onTap: () => context.push('/profile/badges'),
+              ),
+              const Divider(height: 1),
+              _Shortcut(
                 icon: Icons.assignment_rounded,
                 title: 'Denemelerim',
                 subtitle: 'Deneme sınavları ve sonuçlar',
@@ -267,6 +274,7 @@ class _ProgressSummary extends StatelessWidget {
             ),
             trailing:
                 Text('${brief.nextBadge!.progress}/${brief.nextBadge!.target}'),
+            onTap: () => context.push('/profile/badges'),
           ),
         ),
       ],
