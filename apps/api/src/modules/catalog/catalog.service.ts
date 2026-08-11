@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { LAW_NAME_RE, slugify } from '../public/public.service';
 
 /// İçerik keşif okuması (Doc 7 §4.3): Modül → Ders → Konu.
 @Injectable()
@@ -134,14 +135,19 @@ export class CatalogService {
     const wrongCountValue = wrongCount[0]?.cnt ?? 0;
 
     const progressOf = new Map(progress.map((p) => [p.topicId, p]));
-    const withProgress = <T extends { id: string }>(t: T) => {
+    const withProgress = <T extends { id: string; name: string }>(t: T) => {
       const p = progressOf.get(t.id);
+      const isLaw = LAW_NAME_RE.test(t.name);
       return {
         ...t,
         solvedCount: p?.solvedCount ?? 0,
         /** 0-100; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
         mastery:
           p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,
+        // Kanun/yönetmelik bayrağı SUNUCUDA (Doc 28 P1-8): istemci regex'i
+        // sökülür — Madde Atlası girişi ve web kanun sayfası köprüsü bununla.
+        isLaw,
+        lawSlug: isLaw ? slugify(t.name) : null,
       };
     };
 

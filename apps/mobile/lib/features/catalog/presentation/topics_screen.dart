@@ -104,6 +104,49 @@ class _Body extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.md),
 
+        // ── Karma mevzuat antrenmanı (Doc 28 P1-8): ders yasa ağırlıklıysa ──
+        // courseId+practice sunucuda konu-dengeli karışır (pickTopicBalanced):
+        // büyük kanun seansı ele geçiremez, her kanundan sırayla gelir.
+        if (course.topics.where((t) => t.isLaw).length >= 2) ...[
+          InkWell(
+            onTap: () => _startCourseSession(context, ref),
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+              decoration: BoxDecoration(
+                color: tokens.accentAtlas.withValues(alpha: 0.08),
+                border: Border.all(color: tokens.accentAtlas),
+                borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.shuffle_rounded,
+                      size: 22, color: tokens.accentAtlas),
+                  const SizedBox(width: AppSpacing.md),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Karma mevzuat antrenmanı',
+                            style: AppTypography.label
+                                .copyWith(color: tokens.ink)),
+                        Text(
+                          'Tüm kanunlardan dengeli karışık — sınavdaki gibi.',
+                          style: AppTypography.caption
+                              .copyWith(color: tokens.inkSoft),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.chevron_right_rounded, color: tokens.inkSoft),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
+        ],
+
         // ── Ders geneli deneme (süreli) — ikincil eylem ──
         OutlinedButton.icon(
           onPressed: () => context.push('/quiz', extra: {
@@ -167,17 +210,15 @@ class _Body extends ConsumerWidget {
     );
   }
 
-  VoidCallback _rowTap(BuildContext context, TopicItem t) =>
-      () => t.isPremium
-          ? context.push('/paywall')
-          : _showModeSheet(context, t.id, t.name);
+  VoidCallback _rowTap(BuildContext context, TopicItem t) => () =>
+      t.isPremium ? context.push('/paywall') : _showModeSheet(context, t);
 
   /// Konuya dokununca mod seçimi: alıştırma / konu denemesi (+ kanunlarda Atlas).
-  void _showModeSheet(BuildContext context, String topicId, String topicName) {
-    // Kanun/yönetmelik konusu mu? (public.service LAW_NAME_RE ile aynı desen)
-    final isLaw =
-        RegExp('sayılı|kanun|yönetmeli|khk|mevzuat', caseSensitive: false)
-            .hasMatch(topicName);
+  void _showModeSheet(BuildContext context, TopicItem topic) {
+    final topicId = topic.id;
+    final topicName = topic.name;
+    // Kanun bayrağı SUNUCUDAN gelir (Doc 28 P1-8) — istemci regex'i söküldü.
+    final isLaw = topic.isLaw;
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,

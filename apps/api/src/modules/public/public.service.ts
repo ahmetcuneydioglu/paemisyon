@@ -42,7 +42,8 @@ export function slugify(s: string): string {
 }
 
 /** Kanun/yönetmelik sayfası sayılacak konu adı deseni (Doc 23 SEO katmanı). */
-const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
+/** Kanun/yönetmelik konu adı deseni — catalog da kullanır (istemci kural bilmez). */
+export const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
 
 /**
  * Public (auth'suz) içerik uçları — paemisyon.com SEO katmanı (Doc 23).

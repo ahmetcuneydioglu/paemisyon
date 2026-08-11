@@ -71,6 +71,10 @@ class TopicItem {
   final int? mastery;
   final int solvedCount;
 
+  /// Kanun/yönetmelik bayrağı — SUNUCUDAN (Doc 28 P1-8; istemci kural bilmez).
+  final bool isLaw;
+  final String? lawSlug;
+
   const TopicItem({
     required this.id,
     required this.name,
@@ -78,6 +82,8 @@ class TopicItem {
     this.children = const [],
     this.mastery,
     this.solvedCount = 0,
+    this.isLaw = false,
+    this.lawSlug,
   });
 
   factory TopicItem.fromJson(Map<String, dynamic> j) => TopicItem(
@@ -89,6 +95,8 @@ class TopicItem {
             .toList(),
         mastery: j['mastery'] as int?,
         solvedCount: j['solvedCount'] as int? ?? 0,
+        isLaw: j['isLaw'] as bool? ?? false,
+        lawSlug: j['lawSlug'] as String?,
       );
 }
 
