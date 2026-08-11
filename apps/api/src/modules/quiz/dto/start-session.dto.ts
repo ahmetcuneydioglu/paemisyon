@@ -36,6 +36,12 @@ export class StartSessionDto {
   @MaxLength(16)
   articleNo?: string;
 
+  /// Arşiv denemesi (Doc 18 devamı): BİTEN denemenin sabitlenmiş soru setini
+  /// pratik olarak çöz. mode=exam ile; resmî sıralamaya GİRMEZ, tekrarlanabilir.
+  @IsOptional()
+  @IsUUID()
+  archiveExamId?: string;
+
   @IsOptional()
   @IsInt()
   @Min(1)

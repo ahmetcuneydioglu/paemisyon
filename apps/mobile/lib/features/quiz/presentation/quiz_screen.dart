@@ -38,6 +38,9 @@ class QuizScreen extends ConsumerStatefulWidget {
 
   /// İlk Devriye (Doc 24 Gün 0): sonuç ekranı skor değil TEŞHİS karnesi olur.
   final bool patrol;
+
+  /// Arşiv denemesi: biten denemenin sabit seti (mode=exam, süre sunucudan).
+  final String? archiveExamId;
   const QuizScreen({
     super.key,
     this.topicId,
@@ -49,6 +52,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     required this.mode,
     this.questionCount = 10,
     this.patrol = false,
+    this.archiveExamId,
   });
 
   @override
@@ -110,6 +114,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           topicId: widget.topicId,
           courseId: widget.courseId,
           articleNo: widget.articleNo,
+          archiveExamId: widget.archiveExamId,
           fromBookmarks: widget.fromBookmarks,
           count: widget.questionCount,
         );

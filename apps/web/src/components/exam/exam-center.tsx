@@ -139,16 +139,23 @@ export function ExamCenter({
                       {e.avgScore != null ? Number(e.avgScore).toFixed(1) : "—"}
                     </td>
                     <td className="px-4 py-2.5 text-right">
-                      {e.myAttempt?.status === "completed" ? (
+                      <span className="inline-flex items-center gap-3">
+                        {e.myAttempt?.status === "completed" && (
+                          <Link
+                            href={`/sonuc/${e.myAttempt.id}`}
+                            className="text-[13px] font-bold text-brand hover:underline"
+                          >
+                            sonucum →
+                          </Link>
+                        )}
+                        {/* Arşiv modu: aynı set + süre, sıralamasız pratik */}
                         <Link
-                          href={`/sonuc/${e.myAttempt.id}`}
-                          className="text-[13px] font-bold text-brand hover:underline"
+                          href={`/sinav/arsiv/${e.id}`}
+                          className="text-[13px] font-bold text-ink-soft hover:text-ink hover:underline"
                         >
-                          sonucum →
+                          arşivde çöz →
                         </Link>
-                      ) : (
-                        <span className="tk-caption">katılmadım</span>
-                      )}
+                      </span>
                     </td>
                   </tr>
                 ))}

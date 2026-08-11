@@ -43,6 +43,17 @@ export class QuizService {
     const userId = user.id;
     const count = dto.questionCount ?? 10;
 
+    // Arşiv denemesi (Doc 18 devamı): biten denemenin SABİTLENMİŞ seti,
+    // pratik olarak — resmî sıralamaya girmez, tekrarlanabilir.
+    if (dto.archiveExamId != null) {
+      if (dto.mode !== 'exam' || dto.topicId != null || dto.courseId != null) {
+        throw new BadRequestException(
+          'Arşiv denemesi yalnız mode=exam ile ve kapsamsız başlatılır.',
+        );
+      }
+      return this.startArchiveExam(user, dto.archiveExamId);
+    }
+
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
     if (dto.mode === 'daily') {
       if (dto.topicId != null || dto.courseId != null) {
@@ -246,6 +257,75 @@ export class QuizService {
       mode: session.mode,
       plannedDurationSeconds,
       questions,
+    };
+  }
+
+  /**
+   * Arşiv denemesi oturumu: pencere KAPANMIŞ, yayındaki denemenin yayın
+   * anında sabitlenmiş soru seti — orijinal sırada, planlı süreli (mode=exam).
+   * examId oturuma YAZILMAZ: canlı katılım tekilliği (userId, examId) ve
+   * genel liderlik (mode='deneme') bilerek dışarıda kalır.
+   */
+  private async startArchiveExam(user: AuthenticatedUser, examId: string) {
+    const exam = await this.prisma.exam.findFirst({
+      where: { id: examId, status: 'published', deletedAt: null },
+    });
+    if (!exam) throw new NotFoundException('Deneme bulunamadı.');
+    const endAt = new Date(exam.startAt.getTime() + exam.durationMinutes * 60_000);
+    if (new Date() < endAt) {
+      throw new BadRequestException(
+        'Bu deneme henüz arşivde değil — canlı pencere sürüyor, oradan katıl.',
+      );
+    }
+    if (exam.isPremium && !user.isPremium) {
+      throw new ForbiddenException({
+        code: 'PREMIUM_REQUIRED',
+        message: 'Bu deneme premium üyelere özeldir.',
+      });
+    }
+
+    const rows = await this.prisma.examQuestion.findMany({
+      where: { examId },
+      orderBy: { sortOrder: 'asc' },
+      include: {
+        questionVersion: {
+          select: {
+            id: true,
+            questionId: true,
+            stem: true,
+            mediaUrl: true,
+            options: {
+              select: { id: true, label: true, text: true }, // anahtar sızmaz
+              orderBy: { sortOrder: 'asc' },
+            },
+          },
+        },
+      },
+    });
+    if (rows.length === 0) throw new NotFoundException('Denemenin soru seti boş.');
+
+    const plannedDurationSeconds = exam.durationMinutes * 60;
+    const session = await this.prisma.quizSession.create({
+      data: {
+        userId: user.id,
+        mode: 'exam',
+        totalQuestions: rows.length,
+        plannedDurationSeconds,
+        questionOrder: rows.map((r) => r.questionVersion.id),
+      },
+    });
+
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      plannedDurationSeconds,
+      questions: rows.map((r) => ({
+        questionId: r.questionVersion.questionId,
+        versionId: r.questionVersion.id,
+        stem: r.questionVersion.stem,
+        mediaUrl: r.questionVersion.mediaUrl,
+        options: r.questionVersion.options,
+      })),
     };
   }
 

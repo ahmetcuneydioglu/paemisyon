@@ -174,6 +174,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             mode: args['mode'] as String,
             questionCount: args['count'] as int? ?? 10,
             patrol: args['patrol'] as bool? ?? false,
+            archiveExamId: args['archiveExamId'] as String?,
           );
         },
       ),

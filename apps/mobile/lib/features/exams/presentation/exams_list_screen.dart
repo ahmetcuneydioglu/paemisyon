@@ -94,8 +94,8 @@ class _Sections extends ConsumerWidget {
     final ended = list.where((e) => e.state == ExamState.ended).toList();
 
     // Sonuç/sınav ekranından dönünce liste tazelensin (durum değişmiş olabilir).
-    Future<void> go(String path) async {
-      await context.push(path);
+    Future<void> go(String path, [Object? extra]) async {
+      await context.push(path, extra: extra);
       ref.invalidate(examsScreenDataProvider);
     }
 
@@ -614,8 +614,70 @@ class _UpcomingRow extends StatelessWidget {
 class _PastRow extends StatelessWidget {
   final ExamListItem exam;
   final AttemptResult? result;
-  final Future<void> Function(String path) onOpen;
+  final Future<void> Function(String path, [Object? extra]) onOpen;
   const _PastRow({required this.exam, required this.result, required this.onOpen});
+
+  /// Geçmiş deneme artık ölü değil (arşiv modu): dokunuş seçenek sunar —
+  /// sonuç/sıralama + "Arşivde çöz" (sabit set, süreli, sıralamasız pratik).
+  Future<void> _openSheet(BuildContext context) async {
+    final attended = exam.myAttempt != null;
+    await showModalBottomSheet<void>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                  AppSpacing.lg, AppSpacing.lg, AppSpacing.lg, AppSpacing.xs),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(exam.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(ctx)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(fontWeight: FontWeight.w700)),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.replay_rounded),
+              title: Text(attended ? 'Arşivde tekrar çöz' : 'Arşivde çöz'),
+              subtitle: const Text(
+                  'Aynı sorular, aynı süre — sıralamaya girmez, pratik sayılır.'),
+              onTap: () {
+                Navigator.pop(ctx);
+                onOpen('/quiz', {
+                  'archiveExamId': exam.id,
+                  'topicName': exam.title,
+                  'mode': 'exam',
+                });
+              },
+            ),
+            if (attended)
+              ListTile(
+                leading: const Icon(Icons.assessment_outlined),
+                title: const Text('Sonucum'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  onOpen('/denemeler/sonuc/${exam.myAttempt!.id}');
+                },
+              ),
+            ListTile(
+              leading: const Icon(Icons.emoji_events_outlined),
+              title: const Text('Sıralama'),
+              onTap: () {
+                Navigator.pop(ctx);
+                onOpen('/denemeler/${exam.id}/siralama');
+              },
+            ),
+            const SizedBox(height: AppSpacing.sm),
+          ],
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -624,15 +686,10 @@ class _PastRow extends StatelessWidget {
     final attended = exam.myAttempt != null;
     final l = exam.startAt.toLocal();
 
-    // Katıldıysa → sonucum; katılmadıysa → sıralama.
-    final path = attended
-        ? '/denemeler/sonuc/${exam.myAttempt!.id}'
-        : '/denemeler/${exam.id}/siralama';
-
     final subtitle = _subtitle(context, l);
 
     return PressableScale(
-      onTap: () => onOpen(path),
+      onTap: () => _openSheet(context),
       child: Container(
         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
         padding: const EdgeInsets.symmetric(

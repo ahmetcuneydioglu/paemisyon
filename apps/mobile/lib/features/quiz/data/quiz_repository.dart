@@ -18,6 +18,7 @@ class QuizRepository {
     String? topicId,
     String? courseId,
     String? articleNo,
+    String? archiveExamId,
     bool fromBookmarks = false,
     int count = 10,
   }) async {
@@ -30,6 +31,8 @@ class QuizRepository {
           if (courseId != null) 'courseId': courseId,
           // Madde Atlası (Doc 25 §4): maddeden seans.
           if (articleNo != null) 'articleNo': articleNo,
+          // Arşiv denemesi: biten denemenin sabit seti (süre sunucudan).
+          if (archiveExamId != null) 'archiveExamId': archiveExamId,
           if (fromBookmarks) 'fromBookmarks': true,
           'questionCount': count,
         },
