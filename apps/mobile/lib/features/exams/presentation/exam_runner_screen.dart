@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_haptics.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
@@ -91,6 +92,7 @@ class _ExamRunnerScreenState extends ConsumerState<ExamRunnerScreen> {
   int get _answered => _answers.length;
 
   Future<void> _select(QuizQuestion q, String optionId) async {
+    AppHaptics.select(); // dokunma onayı (P2-18); doğru/yanlış sızdırmaz
     setState(() {
       _answers[q.questionId] = optionId;
       _save[q.questionId] = _SaveState.saving;

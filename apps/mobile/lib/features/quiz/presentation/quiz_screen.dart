@@ -14,6 +14,7 @@ import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/article_card.dart';
 import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../../core/theme/app_haptics.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/question_media.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -161,6 +162,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             timeSpentMs: timeSpent,
           );
       if (_isPractice) {
+        // Haptic (Doc 28 P2-18): doğruda hafif onay, yanlışta orta dokunuş.
+        if (fb.isCorrect == true) {
+          AppHaptics.correct();
+        } else if (fb.isCorrect == false) {
+          AppHaptics.wrong();
+        }
         setState(() => _feedback = fb); // geri bildirimi göster
       } else {
         await _advance(); // deneme: geri bildirim yok, ilerle
@@ -265,6 +272,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       await ref.read(syncServiceProvider).flush();
       final result =
           await ref.read(quizRepositoryProvider).complete(_session!.sessionId);
+      // Rozet kazanımı gerçek dönüm noktasıdır — belirgin haptic (P2-18).
+      if (result.earnedBadges.isNotEmpty) AppHaptics.celebrate();
       if (mounted) {
         context.pushReplacement('/quiz/result',
             extra: {'result': result, 'patrol': widget.patrol});

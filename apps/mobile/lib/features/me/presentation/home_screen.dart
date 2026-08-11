@@ -16,9 +16,11 @@ import '../../../shared/widgets/micro_interactions.dart';
 import '../../../shared/widgets/rank_insignia.dart';
 import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
+import '../../catalog/presentation/focus_drilldown_sheet.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
 import '../../progress/data/progress_repository.dart';
+import '../data/me_repository.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
 
@@ -265,7 +267,22 @@ class _CoachBody extends ConsumerWidget {
               if (choice == null || !context.mounted) return;
               switch (choice) {
                 case 'course':
-                  await open('default', '/catalog');
+                  // Gerçek drill-down (Doc 28 P2-17): katalog ekranına
+                  // fırlatma yok — ders → konu inişi aynı sheet akışında.
+                  final target = await showFocusDrillDown(
+                    context,
+                    moduleId:
+                        ref.read(meProvider).valueOrNull?.preferredModuleId,
+                  );
+                  if (target == null || !context.mounted) return;
+                  await context.push('/quiz', extra: {
+                    'topicId': target.topicId,
+                    'courseId': target.courseId,
+                    'topicName': target.name,
+                    'mode': 'practice',
+                    'count': 10,
+                  });
+                  ref.invalidate(coachBriefProvider);
                 case 'wrongs':
                   await open('quick_review', '/review');
                 default: // koç seçsin → karışım motorlu koç seansı
