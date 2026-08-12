@@ -91,6 +91,7 @@ async function main() {
   console.log('denetlenecek bekleyen soru:', versions.length);
 
   type Row = {
+    questionId: string;
     stem: string;
     topic: string;
     kayitli: string;
@@ -119,6 +120,7 @@ async function main() {
         done++;
         if (done % 50 === 0) console.log(`… ${done}/${versions.length}`);
         const base = {
+          questionId: v.question.id,
           stem: v.stem,
           topic: v.question.topic.name,
           kayitli: stored?.label ?? '?',
@@ -157,14 +159,46 @@ async function main() {
   flagged.sort((a, b) => a.durum.localeCompare(b.durum) * -1 || a.topic.localeCompare(b.topic));
   const wb = new ExcelJS.Workbook();
   const ws = wb.addWorksheet('Denetim');
-  ws.addRow(['durum', 'konu', 'soru', 'kayıtlı', 'kayıtlı şık', 'AI', 'AI şık', 'AI güven']);
+  ws.addRow(['durum', 'konu', 'soru', 'kayıtlı', 'kayıtlı şık', 'AI', 'AI şık', 'AI güven', 'questionId']);
   ws.getRow(1).font = { bold: true };
   ws.views = [{ state: 'frozen', ySplit: 1 }];
   ws.columns.forEach((c, i) => (c.width = i === 2 ? 80 : i === 4 || i === 6 ? 35 : 12));
   for (const r of flagged) {
-    ws.addRow([r.durum, r.topic, r.stem, r.kayitli, r.kayitliMetin, r.ai, r.aiMetin, r.guven]);
+    ws.addRow([r.durum, r.topic, r.stem, r.kayitli, r.kayitliMetin, r.ai, r.aiMetin, r.guven, r.questionId]);
   }
   await wb.xlsx.writeFile(outPath);
+
+  // --bildir: uyuşmazlıkları panel Bildirimler kuyruğuna düşür — onay
+  // kuyruğunda kaybolmasınlar; her biri tıklanabilir iş kaydı olur.
+  if (process.argv.includes('--bildir')) {
+    const admin = await prisma.user.findFirst({
+      where: { roles: { some: { role: { key: 'admin' } } } },
+      select: { id: true },
+    });
+    if (!admin) throw new Error('Bildirim için admin kullanıcı bulunamadı.');
+    let filed = 0;
+    for (const r of flagged.filter((f) => f.durum === 'UYUŞMAZLIK')) {
+      const exists = await prisma.questionReport.findFirst({
+        where: {
+          questionId: r.questionId,
+          status: 'open',
+          message: { startsWith: 'AI cevap denetimi' },
+        },
+      });
+      if (exists) continue;
+      await prisma.questionReport.create({
+        data: {
+          questionId: r.questionId,
+          userId: admin.id,
+          message:
+            `AI cevap denetimi: kayıtlı ${r.kayitli} (${r.kayitliMetin.slice(0, 60)}) — ` +
+            `AI önerisi ${r.ai} (${r.aiMetin.slice(0, 60)}), güven: ${r.guven}`,
+        },
+      });
+      filed++;
+    }
+    console.log('Bildirimler kuyruğuna yazılan:', filed);
+  }
 
   const mismatch = flagged.filter((f) => f.durum === 'UYUŞMAZLIK').length;
   const lowConf = flagged.filter((f) => f.durum === 'DÜŞÜK GÜVEN').length;
