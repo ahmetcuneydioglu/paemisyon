@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -124,6 +125,39 @@ void main() {
 
     // "Geri yükle" mağaza eylemidir — manuel akışta anlamsız.
     expect(find.text('Geri yükle'), findsNothing);
+  });
+
+  testWidgets(
+      'iOS: Apple 3.1.1 — manuel satın alma akışı GİZLİ, premium değeri görünür',
+      (tester) async {
+    tester.view.physicalSize = const Size(1179, 2556);
+    tester.view.devicePixelRatio = 3;
+    addTearDown(tester.view.reset);
+    // iOS derlemesini taklit et. (Override, framework invariant kontrolünden
+    // önce sıfırlanmalı — teardown geç kalır; gövdenin sonunda sıfırlanır.)
+    debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
+
+    await tester.pumpWidget(wrap(const [quarterly]));
+    await settle(tester);
+    expect(tester.takeException(), isNull);
+
+    // Harici satın almaya YÖNLENDİRME hiçbir biçimde görünmemeli.
+    expect(find.textContaining('Nasıl premium olurum?'), findsNothing);
+    expect(find.textContaining('1. adım'), findsNothing);
+    expect(find.byType(ContactChannels), findsNothing);
+    expect(find.textContaining('Telegram'), findsNothing);
+    expect(find.textContaining('Instagram'), findsNothing);
+    expect(find.textContaining('bize yeniden yazarsın'), findsNothing);
+    expect(find.textContaining('çayı parasına'), findsNothing); // fiyat teşviki
+    expect(find.textContaining('499,99'), findsNothing); // fiyat-CTA yok
+
+    // Ama premium DEĞERİ tanıtılır + erişim modeli açıklanır (satış değil).
+    expect(find.text('Koçunun tam beynini aç'), findsOneWidget);
+    expect(find.text('Sınırsız soru'), findsOneWidget);
+    expect(find.textContaining('aynı hesapla giriş yaptığın her yerde'),
+        findsOneWidget);
+
+    debugDefaultTargetPlatformOverride = null;
   });
 
   testWidgets('fiyat TR biçiminde ve dönem etiketiyle gösterilir',

@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, TargetPlatform;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -26,6 +28,12 @@ import '../domain/billing_plan.dart';
 ///
 /// Plan mağazaya bağlı değilken "Mağazada bulunamadı" hatası ve ölü buton
 /// GÖSTERİLMEZ: bu bir hata değil, ürünün kasıtlı satış modelidir.
+///
+/// APPLE 3.1.1: iOS'ta dijital içeriğin harici satın alınmasına YÖNLENDİRME
+/// (Telegram/Instagram, ödeme adımları, "bize yaz", fiyat-CTA) yasaktır. Bu
+/// yüzden iOS derlemesinde manuel satın alma bölümü GİZLENİR; premium yalnız
+/// DEĞERİYLE tanıtılır (çok platformlu servis istisnası: kullanıcı web'den
+/// alıp aynı hesapla uygulamada kullanır). Android/web manuel akışı sürdürür.
 class PaywallScreen extends ConsumerStatefulWidget {
   const PaywallScreen({super.key});
 
@@ -197,6 +205,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
 
   Widget _content() {
     final tokens = context.tokens;
+    // Apple 3.1.1: iOS'ta harici satın almaya yönlendirme yasak. Manuel akış
+    // (Telegram/Instagram + adımlar) ve fiyat imalı teşvik yalnız iOS-dışında.
+    final hideManualPurchase = defaultTargetPlatform == TargetPlatform.iOS;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(
@@ -222,12 +233,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
               'Vardiya dostu: nöbet gecesi serini yakmaz.'),
           _valueRow(Icons.lock_open_rounded, 'Tüm premium konular',
               'Müfredatın tamamı, kilitsiz.'),
-          const SizedBox(height: AppSpacing.sm),
-          Text(
-            'Bir dershanenin günlük çayı parasına — seni tanıyan antrenör.',
-            style: AppTypography.caption.copyWith(color: tokens.inkSoft),
-            textAlign: TextAlign.center,
-          ),
+          // Fiyat imalı teşvik yalnız iOS-dışında (Apple 3.1.1 temkini).
+          if (!hideManualPurchase) ...[
+            const SizedBox(height: AppSpacing.sm),
+            Text(
+              'Bir dershanenin günlük çayı parasına — seni tanıyan antrenör.',
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+              textAlign: TextAlign.center,
+            ),
+          ],
           const SizedBox(height: AppSpacing.lg),
           if (_hasStorePlans && !_iapAvailable)
             Padding(
@@ -237,16 +251,23 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                 style: TextStyle(color: tokens.danger),
               ),
             ),
-          ..._plans!.map(
-            (p) => p.isStoreManaged ? _storePlanCard(p) : _manualPlanSection(p),
-          ),
+          // Mağaza planı her platformda gösterilir; manuel plan iOS'ta gizli.
+          ..._plans!.map((p) {
+            if (p.isStoreManaged) return _storePlanCard(p);
+            if (hideManualPurchase) return const SizedBox.shrink();
+            return _manualPlanSection(p);
+          }),
           const SizedBox(height: AppSpacing.xl),
           Text(
-            _hasStorePlans
-                ? 'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.'
-                : 'Otomatik yenileme yok, iptal edilecek abonelik yok. Süre bitince '
-                    'hesabın kendiliğinden ücretsiz katmana döner; devam etmek '
-                    'istersen bize yeniden yazarsın.',
+            hideManualPurchase
+                // iOS: satın alma yolu/yönlendirme YOK — yalnız erişim modeli.
+                ? 'Premium, hesabına tanımlıdır — aynı hesapla giriş yaptığın '
+                    'her yerde geçerli olur.'
+                : _hasStorePlans
+                    ? 'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.'
+                    : 'Otomatik yenileme yok, iptal edilecek abonelik yok. Süre bitince '
+                        'hesabın kendiliğinden ücretsiz katmana döner; devam etmek '
+                        'istersen bize yeniden yazarsın.',
             style: AppTypography.caption.copyWith(color: tokens.inkSoft),
             textAlign: TextAlign.center,
           ),
