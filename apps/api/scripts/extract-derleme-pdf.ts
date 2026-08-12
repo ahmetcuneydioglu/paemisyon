@@ -306,13 +306,29 @@ async function main() {
       continue;
     }
     dupCount++;
-    prev.answerLetter ??= q.answerLetter;
-    prev.yellowLetter ??= q.yellowLetter;
-    prev.keyLetter ??= q.keyLetter;
+    // ── KRİTİK: kopyalar arasında ŞIK SIRASI farklı olabilir (derlemeler
+    // karıştırır). Cevap HARFLE taşınırsa yanlış şıkka kayar; bu yüzden
+    // sinyal, ŞIK METNİ üzerinden tutulan kopyanın harfine çevrilir.
+    const translate = (letter: string | null): string | null => {
+      if (!letter) return null;
+      const text = q.options.find((o) => o.label === letter)?.text;
+      if (!text) return null;
+      const norm = (t: string) => t.toLocaleLowerCase('tr-TR').replace(/\s+/g, ' ').trim();
+      return prev.options.find((o) => norm(o.text) === norm(text))?.label ?? null;
+    };
+    const tAnswer = translate(q.answerLetter);
+    const tYellow = translate(q.yellowLetter);
+    const tKey = translate(q.keyLetter);
+    prev.answerLetter ??= tAnswer;
+    prev.yellowLetter ??= tYellow;
+    prev.keyLetter ??= tKey;
     if (!prev.explanation && q.explanation) prev.explanation = q.explanation;
-    // Kopyalar arası cevap çelişkisi ayrı işaretlenir (İncele'ye düşer).
-    if (q.answerLetter && prev.answerLetter && q.answerLetter !== prev.answerLetter) {
-      prev.copyConflict = q.answerLetter;
+    // Kopyalar arası cevap çelişkisi (metin bazlı karşılaştırma) İncele'ye düşer.
+    if (tAnswer && prev.answerLetter && tAnswer !== prev.answerLetter) {
+      prev.copyConflict = tAnswer;
+    }
+    if (tYellow && prev.yellowLetter && tYellow !== prev.yellowLetter) {
+      prev.copyConflict = prev.copyConflict ?? tYellow;
     }
   }
 
