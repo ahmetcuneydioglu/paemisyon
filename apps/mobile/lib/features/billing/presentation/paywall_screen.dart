@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/constants/contact.dart';
 import '../../../core/error/failure.dart';
@@ -174,6 +175,20 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     }
   }
 
+  /// Genel destek e-postası (iOS'ta satın alma yerine). launchUrl başarısızsa
+  /// (posta uygulaması yok) kullanıcı sessiz kalmasın diye adres kopyalanabilir
+  /// biçimde snackbar'da gösterilir.
+  Future<void> _openSupport() async {
+    final uri = Uri.parse(AppContact.email.url);
+    try {
+      final ok =
+          await launchUrl(uri, mode: LaunchMode.externalApplication);
+      if (!ok) _snack('E-posta: ${AppContact.email.handle}');
+    } catch (_) {
+      _snack('E-posta: ${AppContact.email.handle}');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -271,6 +286,24 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             style: AppTypography.caption.copyWith(color: tokens.inkSoft),
             textAlign: TextAlign.center,
           ),
+          // iOS: satın alma yönlendirmesi yerine GENEL müşteri desteği (Apple
+          // 3.1.1: destek serbest, satın alma CTA'sı değil). Kullanıcı buradan
+          // premium dahil her konuda ekibe ulaşır. (Android/web'de zaten manuel
+          // akıştaki kanallar var; orada tekrarlanmaz.)
+          if (hideManualPurchase) ...[
+            const SizedBox(height: AppSpacing.lg),
+            Center(
+              child: TextButton.icon(
+                onPressed: _openSupport,
+                icon: Icon(AppContact.email.icon,
+                    size: 18, color: tokens.brand),
+                label: Text(
+                  'Soruların için: ${AppContact.email.handle}',
+                  style: AppTypography.label.copyWith(color: tokens.brand),
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );

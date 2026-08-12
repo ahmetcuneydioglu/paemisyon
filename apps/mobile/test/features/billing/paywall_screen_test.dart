@@ -157,6 +157,11 @@ void main() {
     expect(find.textContaining('aynı hesapla giriş yaptığın her yerde'),
         findsOneWidget);
 
+    // Genel müşteri desteği (Apple 3.1.1 serbest) — satın alma CTA'sı DEĞİL.
+    expect(find.textContaining('destek@paemisyon.com'), findsOneWidget);
+    // "satın al", fiyat, kanal adı gibi yönlendirme yine yok (yukarıda kontrol
+    // edildi); destek satırı bir e-posta, satış değil.
+
     debugDefaultTargetPlatformOverride = null;
   });
 
