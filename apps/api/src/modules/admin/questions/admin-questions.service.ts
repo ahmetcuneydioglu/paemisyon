@@ -50,10 +50,18 @@ export class AdminQuestionsService {
       ...(params.status || params.search ? { versions: { some: versionFilter } } : {}),
     };
 
+    // Sıralama: "Yayında" filtresinde en YENİ YAYINLANAN üstte (yayın anının
+    // vekili: yayındaki sürümün createdAt'i — Question'da publishedAt yok).
+    // Diğer filtrelerde soru oluşturma sırası korunur.
+    const orderBy: Prisma.QuestionOrderByWithRelationInput[] =
+      params.status === 'published'
+        ? [{ currentVersion: { createdAt: 'desc' } }, { createdAt: 'desc' }]
+        : [{ createdAt: 'desc' }];
+
     const [questions, total] = await Promise.all([
       this.prisma.question.findMany({
         where,
-        orderBy: { createdAt: 'desc' },
+        orderBy,
         skip: (page - 1) * pageSize,
         take: pageSize,
         include: {
