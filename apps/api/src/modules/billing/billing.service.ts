@@ -58,6 +58,19 @@ export class BillingService {
     const existing = await this.prisma.subscription.findFirst({
       where: { originalTransactionId: tx.originalTransactionId },
     });
+
+    // GÜVENLİK: bir ödeme yalnız TEK hesaba premium verir. Aynı JWS başka
+    // hesapla doğrulanırsa (Apple aile paylaşımı/hesap değişimi) abonelik yeni
+    // hesaba TAŞINIR — ama eski hesabın bu abonelikten gelen entitlement'ı
+    // İPTAL edilir. Aksi halde 1 ödeme = N hesap premium açığı doğardı.
+    if (existing && existing.userId !== userId) {
+      await this.prisma.entitlement.updateMany({
+        where: { userId: existing.userId, sourceSubscriptionId: existing.id },
+        data: { isPremium: false, sourceSubscriptionId: null },
+      });
+      this.userSync.invalidate(existing.userId);
+    }
+
     const sub = existing
       ? await this.prisma.subscription.update({
           where: { id: existing.id },

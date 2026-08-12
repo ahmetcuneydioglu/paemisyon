@@ -429,7 +429,10 @@ model Subscription {
   planId                String             @map("plan_id") @db.Uuid
   provider              PaymentProvider
   status                SubscriptionStatus
-  originalTransactionId String             @map("original_transaction_id")
+  // GÜVENLİK: bir mağaza işlemi (Apple/Google) yalnız BİR abonelik satırı
+  // üretir. Unique olmadan eşzamanlı iki doğrulama iki satır yaratıp aynı
+  // ödemeyle iki hesaba premium verebiliyordu.
+  originalTransactionId String             @unique @map("original_transaction_id")
   currentPeriodEnd      DateTime?          @map("current_period_end")
   autoRenew             Boolean            @default(true) @map("auto_renew")
   createdAt             DateTime           @default(now()) @map("created_at")

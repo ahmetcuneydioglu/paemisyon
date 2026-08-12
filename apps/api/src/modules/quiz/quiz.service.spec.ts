@@ -9,7 +9,9 @@ const premiumUser: AuthenticatedUser = {
   isPremium: true,
 };
 
-function setup(selectedOptionExists = true) {
+const VERSION_ID = '00000000-0000-0000-0000-000000000003';
+
+function setup(selectedOptionExists = true, questionOrder: string[] | null = [VERSION_ID]) {
   const selectedId = '00000000-0000-0000-0000-000000000004';
   const correctId = '00000000-0000-0000-0000-000000000005';
   const prisma = {
@@ -19,6 +21,8 @@ function setup(selectedOptionExists = true) {
         mode: 'practice',
         startedAt: new Date(),
         plannedDurationSeconds: null,
+        // Soru–oturum üyelik denetimi: sürüm bu sette olmalı (güvenlik).
+        questionOrder,
         exam: null,
       }),
     },
@@ -76,6 +80,28 @@ describe('QuizService.submitAnswer', () => {
         source: 'Kaynak',
       }),
     );
+  });
+
+  it('GÜVENLİK: oturuma ait olmayan sürüm reddedilir (cevap sızıntısı engeli)', async () => {
+    // questionOrder BAŞKA bir sürümü içeriyor; POST edilen versionId yok.
+    const { service } = setup(true, ['00000000-0000-0000-0000-0000000000ff']);
+    await expect(
+      service.submitAnswer(premiumUser, '00000000-0000-0000-0000-000000000006', {
+        questionId: '00000000-0000-0000-0000-000000000002',
+        questionVersionId: VERSION_ID,
+        selectedOptionId: '00000000-0000-0000-0000-000000000004',
+      }),
+    ).rejects.toThrow(BadRequestException);
+  });
+
+  it('GÜVENLİK: questionOrder null olan eski oturum denetimden muaf (kilitlenmez)', async () => {
+    const { service, prisma } = setup(true, null);
+    await service.submitAnswer(premiumUser, '00000000-0000-0000-0000-000000000006', {
+      questionId: '00000000-0000-0000-0000-000000000002',
+      questionVersionId: VERSION_ID,
+      selectedOptionId: '00000000-0000-0000-0000-000000000004',
+    });
+    expect(prisma.quizAnswer.upsert).toHaveBeenCalledTimes(1);
   });
 
   it('yayınlanmış madde metnini relatedArticle.text ile döndürür (açıklama yanında)', async () => {

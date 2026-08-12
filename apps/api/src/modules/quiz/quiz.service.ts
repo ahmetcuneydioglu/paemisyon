@@ -598,6 +598,11 @@ export class QuizService {
           mode: true,
           startedAt: true,
           plannedDurationSeconds: true,
+          // Soru–oturum üyelik denetimi (güvenlik): yalnız bu oturuma
+          // ATANMIŞ sürümler cevaplanabilir. Aksi halde bir practice oturumuna
+          // canlı denemenin versionId'leri POST edilip cevap anahtarı +
+          // açıklama sızdırılabiliyordu (tüm soru bankası dahil).
+          questionOrder: true,
           exam: { select: { liveAnswerReveal: true } },
         },
       }),
@@ -632,6 +637,18 @@ export class QuizService {
     }
     if (!version) {
       throw new BadRequestException('Soru bu oturumdaki sürümle eşleşmiyor.');
+    }
+    // Üyelik denetimi: sürüm gerçekten bu oturumun soru setinde mi? (Güvenlik —
+    // cevap anahtarı sızıntısını kapatır; questionOrder start/resume'da sabit.)
+    // questionOrder null olan ESKİ oturumlar denetimden muaf (kilitlenmesin);
+    // yeni oturumların hepsinde dolu.
+    const order = session.questionOrder;
+    if (
+      Array.isArray(order) &&
+      order.length > 0 &&
+      !(order as string[]).includes(dto.questionVersionId)
+    ) {
+      throw new BadRequestException('Soru bu oturuma ait değil.');
     }
     if (
       dto.selectedOptionId != null &&
@@ -775,10 +792,25 @@ export class QuizService {
       };
     }
 
-    const correctCount = session.answers.filter((a) => a.isCorrect === true).length;
-    const wrongCount = session.answers.filter(
-      (a) => a.isCorrect === false && a.selectedOptionId != null,
-    ).length;
+    // Yalnız oturumun soru setindeki cevaplar sayılır (savunma derinliği —
+    // submitAnswer üyelik denetimiyle birlikte skor/XP/liderlik şişirmesini
+    // engeller; eski/kirli veri de totalQuestions'ı aşamaz). questionOrder
+    // null olan eski oturumlarda tüm cevaplar geçerli sayılır.
+    const order = session.questionOrder;
+    const orderSet =
+      Array.isArray(order) && order.length > 0 ? new Set(order as string[]) : null;
+    const validAnswers = orderSet
+      ? session.answers.filter((a) => orderSet.has(a.questionVersionId))
+      : session.answers;
+    const correctCount = Math.min(
+      validAnswers.filter((a) => a.isCorrect === true).length,
+      session.totalQuestions,
+    );
+    const wrongCount = Math.min(
+      validAnswers.filter((a) => a.isCorrect === false && a.selectedOptionId != null)
+        .length,
+      session.totalQuestions - correctCount,
+    );
     const blankCount = session.totalQuestions - correctCount - wrongCount;
     // Puan: deneme = NET (doğru − yanlış/4, polis sınavı kuralı — Doc 18 karar 3);
     // diğer modlar = yüzde (mevcut davranış).
