@@ -26,6 +26,8 @@ export default function ReviewQueuePage() {
   const [me, setMe] = useState<{ roles: string[] } | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('');
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 50;
 
   useEffect(() => {
     api<{ roles: string[] }>('/me').then(setMe).catch(() => setMe({ roles: [] }));
@@ -38,10 +40,10 @@ export default function ReviewQueuePage() {
   });
 
   const list = useQuery({
-    queryKey: ['review-queue', selectedTopic],
+    queryKey: ['review-queue', selectedTopic, page],
     queryFn: () =>
       api<Paged<QuestionListItem>>(
-        `/admin/questions?status=in_review${selectedTopic ? `&topicId=${selectedTopic}` : ''}`,
+        `/admin/questions?status=in_review&page=${page}&pageSize=${PAGE_SIZE}${selectedTopic ? `&topicId=${selectedTopic}` : ''}`,
       ),
   });
 
@@ -150,7 +152,10 @@ export default function ReviewQueuePage() {
               </div>
               <div className="mt-3 flex gap-2">
                 <button
-                  onClick={() => setSelectedTopic(selectedTopic === t.topicId ? '' : t.topicId)}
+                  onClick={() => {
+                    setSelectedTopic(selectedTopic === t.topicId ? '' : t.topicId);
+                    setPage(1); // filtre değişince baştan başla
+                  }}
                   className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium hover:bg-slate-50"
                 >
                   {selectedTopic === t.topicId ? 'Filtreyi kaldır' : 'Listede göster'}
@@ -172,8 +177,8 @@ export default function ReviewQueuePage() {
         </div>
       )}
 
-      {/* ── Tekil inceleme listesi ── */}
-      {list.data && list.data.items.length > 0 && (
+      {/* ── Tekil inceleme listesi (sayfalı) ── */}
+      {list.data && list.data.total > 0 && (
         <>
           <h2 className="mb-3 text-sm font-semibold text-slate-700">
             Tek tek incele{selectedTopic ? ' (filtreli)' : ''} — {list.data.total} soru
@@ -200,6 +205,28 @@ export default function ReviewQueuePage() {
               ))}
             </ul>
           </Card>
+          {list.data.total > PAGE_SIZE && (
+            <div className="mt-3 flex items-center justify-between text-sm">
+              <button
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page === 1 || list.isFetching}
+                className="rounded-lg border border-slate-300 px-4 py-2 font-medium hover:bg-slate-50 disabled:opacity-40"
+              >
+                ← Önceki
+              </button>
+              <span className="text-slate-500">
+                Sayfa {page} / {Math.ceil(list.data.total / PAGE_SIZE)} ·{' '}
+                {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, list.data.total)} arası
+              </span>
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page >= Math.ceil(list.data.total / PAGE_SIZE) || list.isFetching}
+                className="rounded-lg border border-slate-300 px-4 py-2 font-medium hover:bg-slate-50 disabled:opacity-40"
+              >
+                Sonraki →
+              </button>
+            </div>
+          )}
         </>
       )}
     </>
