@@ -50,6 +50,40 @@ export class ProgressService {
     const solved = session.correctCount + session.wrongCount; // boş hariç
     const today = startOfUtcDay(new Date());
 
+    // PERFORMANS: eskiden konu başına 2 + cevap başına 1 ardışık sorgu vardı;
+    // 100 soruluk bir denemede transaction ~35+ gidiş-dönüşe (Supabase pooler,
+    // ~60ms/RT) şişiyor ve "testi bitir" saniyelerce sürüyordu. Döngüler artık
+    // unnest'li TEK toplu upsert; okumalar tx dışında (havuz bağlantısı kısa
+    // kalır — connection_limit=4 için kritik).
+    const answered = session.answers.filter(
+      (a) => a.isCorrect != null && a.selectedOptionId != null,
+    );
+    const byTopic = new Map<string, { solved: number; correct: number }>();
+    if (answered.length > 0) {
+      const topicOf = new Map(
+        (
+          await this.prisma.question.findMany({
+            where: { id: { in: answered.map((a) => a.questionId) } },
+            select: { id: true, topicId: true },
+          })
+        ).map((q) => [q.id, q.topicId]),
+      );
+      for (const a of answered) {
+        const topicId = topicOf.get(a.questionId);
+        if (!topicId) continue;
+        const b = byTopic.get(topicId) ?? { solved: 0, correct: 0 };
+        b.solved += 1;
+        if (a.isCorrect === true) b.correct += 1;
+        byTopic.set(topicId, b);
+      }
+    }
+    const wrongIds = session.answers
+      .filter((a) => a.isCorrect === false && a.selectedOptionId != null)
+      .map((a) => a.questionId);
+    const correctIds = session.answers
+      .filter((a) => a.isCorrect === true)
+      .map((a) => a.questionId);
+
     await this.prisma.$transaction(async (tx) => {
       await tx.userStats.upsert({
         where: { userId },
@@ -67,53 +101,29 @@ export class ProgressService {
       });
 
       // Konu ilerlemesi CEVAP bazında yazılır (karışık ders/koç seansları da
-      // mastery biriktirir — eskiden yalnız tek-konulu oturumlar yazıyordu).
-      const answered = session.answers.filter(
-        (a) => a.isCorrect != null && a.selectedOptionId != null,
-      );
-      if (answered.length > 0) {
-        const topicOf = new Map(
-          (
-            await tx.question.findMany({
-              where: { id: { in: answered.map((a) => a.questionId) } },
-              select: { id: true, topicId: true },
-            })
-          ).map((q) => [q.id, q.topicId]),
-        );
-        const byTopic = new Map<string, { solved: number; correct: number }>();
-        for (const a of answered) {
-          const topicId = topicOf.get(a.questionId);
-          if (!topicId) continue;
-          const b = byTopic.get(topicId) ?? { solved: 0, correct: 0 };
-          b.solved += 1;
-          if (a.isCorrect === true) b.correct += 1;
-          byTopic.set(topicId, b);
-        }
-        for (const [topicId, b] of byTopic) {
-          const existing = await tx.userTopicProgress.findUnique({
-            where: { userId_topicId: { userId, topicId } },
-          });
-          const newSolved = (existing?.solvedCount ?? 0) + b.solved;
-          const newCorrect = (existing?.correctCount ?? 0) + b.correct;
-          const mastery = newSolved > 0 ? newCorrect / newSolved : 0;
-          await tx.userTopicProgress.upsert({
-            where: { userId_topicId: { userId, topicId } },
-            update: {
-              solvedCount: newSolved,
-              correctCount: newCorrect,
-              mastery,
-              lastActivityAt: new Date(),
-            },
-            create: {
-              userId,
-              topicId,
-              solvedCount: b.solved,
-              correctCount: b.correct,
-              mastery,
-              lastActivityAt: new Date(),
-            },
-          });
-        }
+      // mastery biriktirir). Tüm konular tek toplu upsert'te; mastery her iki
+      // dalda da (insert/update) TOPLAM üzerinden hesaplanır — eski satır-satır
+      // upsert ile birebir aynı sonuç.
+      if (byTopic.size > 0) {
+        const topicIds = [...byTopic.keys()];
+        const solvedArr = topicIds.map((t) => byTopic.get(t)!.solved);
+        const correctArr = topicIds.map((t) => byTopic.get(t)!.correct);
+        await tx.$executeRaw`
+          INSERT INTO user_topic_progress
+            (user_id, topic_id, solved_count, correct_count, mastery, last_activity_at)
+          SELECT ${userId}::uuid, u.t, u.s, u.c,
+                 CASE WHEN u.s > 0 THEN u.c::decimal / u.s ELSE 0 END, now()
+          FROM unnest(${topicIds}::uuid[], ${solvedArr}::int[], ${correctArr}::int[])
+            AS u(t, s, c)
+          ON CONFLICT (user_id, topic_id) DO UPDATE SET
+            solved_count = user_topic_progress.solved_count + EXCLUDED.solved_count,
+            correct_count = user_topic_progress.correct_count + EXCLUDED.correct_count,
+            mastery = CASE
+              WHEN user_topic_progress.solved_count + EXCLUDED.solved_count > 0
+              THEN (user_topic_progress.correct_count + EXCLUDED.correct_count)::decimal
+                   / (user_topic_progress.solved_count + EXCLUDED.solved_count)
+              ELSE 0 END,
+            last_activity_at = now()`;
       }
 
       // Streak + seri sigortası (Doc 24 §7.2, saf mantık: streak.logic.ts) —
@@ -143,20 +153,21 @@ export class ProgressService {
         },
       });
 
-      // Yanlışlarım / çözüldü
-      for (const a of session.answers) {
-        if (a.isCorrect === false && a.selectedOptionId != null) {
-          await tx.wrongAnswer.upsert({
-            where: { userId_questionId: { userId, questionId: a.questionId } },
-            update: { wrongCount: { increment: 1 }, lastWrongAt: new Date(), resolvedAt: null },
-            create: { userId, questionId: a.questionId },
-          });
-        } else if (a.isCorrect === true) {
-          await tx.wrongAnswer.updateMany({
-            where: { userId, questionId: a.questionId, resolvedAt: null },
-            data: { resolvedAt: new Date() },
-          });
-        }
+      // Yanlışlarım / çözüldü — cevap başına döngü yerine 2 toplu sorgu.
+      if (wrongIds.length > 0) {
+        await tx.$executeRaw`
+          INSERT INTO wrong_answers (user_id, question_id)
+          SELECT ${userId}::uuid, u.q FROM unnest(${wrongIds}::uuid[]) AS u(q)
+          ON CONFLICT (user_id, question_id) DO UPDATE SET
+            wrong_count = wrong_answers.wrong_count + 1,
+            last_wrong_at = now(),
+            resolved_at = NULL`;
+      }
+      if (correctIds.length > 0) {
+        await tx.wrongAnswer.updateMany({
+          where: { userId, questionId: { in: correctIds }, resolvedAt: null },
+          data: { resolvedAt: new Date() },
+        });
       }
     });
   }

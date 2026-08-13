@@ -676,39 +676,61 @@ export class QuizService {
     const correct = version.options.find((option) => option.isCorrect);
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
 
-    await this.prisma.quizAnswer.upsert({
-      where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
-      update: {
-        questionVersionId: dto.questionVersionId,
-        selectedOptionId: dto.selectedOptionId ?? null,
-        isCorrect,
-        timeSpentMs: dto.timeSpentMs ?? null,
-      },
-      create: {
-        sessionId,
-        questionId: dto.questionId,
-        questionVersionId: dto.questionVersionId,
-        selectedOptionId: dto.selectedOptionId ?? null,
-        isCorrect,
-        timeSpentMs: dto.timeSpentMs ?? null,
-      },
-    });
+    // Geri bildirim verilecek mi? exam: asla; deneme: yalnız liveAnswerReveal
+    // açık denemelerde (Doc 18 karar 5, varsayılan KAPALI — pencere açıkken
+    // anahtar SIZDIRILMAZ).
+    const givesFeedback =
+      session.mode !== 'exam' &&
+      !(session.mode === 'deneme' && !session.exam?.liveAnswerReveal);
+    const question = version.question;
+    const needsArticle =
+      givesFeedback &&
+      question?.articleNo != null &&
+      question.topic != null &&
+      LAW_NAME_RE.test(question.topic.name);
 
-    // exam modunda doğru cevap SIZDIRILMAZ.
-    if (session.mode === 'exam') {
+    // PERFORMANS: madde metni okuması kayıtla PARALEL — kritik yolda bir
+    // pooler gidiş-dönüşü (~60ms) eksilir. Yalnız YAYINLANMIŞ metin sızar.
+    const [, law] = await Promise.all([
+      this.prisma.quizAnswer.upsert({
+        where: { sessionId_questionId: { sessionId, questionId: dto.questionId } },
+        update: {
+          questionVersionId: dto.questionVersionId,
+          selectedOptionId: dto.selectedOptionId ?? null,
+          isCorrect,
+          timeSpentMs: dto.timeSpentMs ?? null,
+        },
+        create: {
+          sessionId,
+          questionId: dto.questionId,
+          questionVersionId: dto.questionVersionId,
+          selectedOptionId: dto.selectedOptionId ?? null,
+          isCorrect,
+          timeSpentMs: dto.timeSpentMs ?? null,
+        },
+      }),
+      needsArticle
+        ? this.prisma.lawArticle.findFirst({
+            where: {
+              topicId: question!.topic!.id,
+              articleNo: question!.articleNo!,
+              status: 'published',
+              deletedAt: null,
+            },
+            select: {
+              text: true,
+              sourceName: true,
+              sourceUrl: true,
+              effectiveInfo: true,
+              lastVerifiedAt: true,
+            },
+          })
+        : Promise.resolve(null),
+    ]);
+
+    if (!givesFeedback) {
       return { recorded: true };
     }
-    // deneme: pencere açıkken anahtar SIZDIRILMAZ — yalnız liveAnswerReveal
-    // açık denemelerde practice-gibi anlık geri bildirim (Doc 18 karar 5,
-    // varsayılan KAPALI; eski sistemin anahtar-sızdırma açığı taşınmaz).
-    if (session.mode === 'deneme') {
-      if (!session.exam?.liveAnswerReveal) {
-        return { recorded: true };
-      }
-    }
-
-    // practice: ilk okuma grubunda hazırlanan anlık geri bildirim + açıklama.
-    const question = version.question;
     let relatedArticle: {
       lawSlug: string;
       no: string;
@@ -723,27 +745,11 @@ export class QuizService {
         verifiedAt: string | null;
       } | null;
     } | null = null;
-    if (question?.articleNo && question.topic && LAW_NAME_RE.test(question.topic.name)) {
-      // Yalnız YAYINLANMIŞ metin sızar (admin doğrulamış); taslak gelmez.
-      const law = await this.prisma.lawArticle.findFirst({
-        where: {
-          topicId: question.topic.id,
-          articleNo: question.articleNo,
-          status: 'published',
-          deletedAt: null,
-        },
-        select: {
-          text: true,
-          sourceName: true,
-          sourceUrl: true,
-          effectiveInfo: true,
-          lastVerifiedAt: true,
-        },
-      });
+    if (needsArticle) {
       relatedArticle = {
-        lawSlug: slugify(question.topic.name),
-        no: question.articleNo,
-        slug: articleSlug(question.articleNo),
+        lawSlug: slugify(question!.topic!.name),
+        no: question!.articleNo!,
+        slug: articleSlug(question!.articleNo!),
         text: law
           ? {
               body: law.text,
@@ -852,23 +858,27 @@ export class QuizService {
 
     // Rozet kontrolü (Doc 19): stats/streak TAZEyken. Hata oturumu bozmasın —
     // rozet bir sonraki tamamlamada telafi edilir (checkAndAward idempotent).
-    let earnedBadges: Awaited<ReturnType<BadgeService['checkAndAward']>> = [];
-    try {
-      earnedBadges = await this.badges.checkAndAward(userId);
-    } catch {
-      /* sessiz: kutlama kaçar ama sonuç kaybolmaz */
-    }
+    // PERFORMANS: rozet ve konu-karnesi okumaları birbirinden bağımsız —
+    // paralel koşar (kritik yoldan bir gidiş-dönüş daha eksilir).
+    const needsBreakdown = session.topicId == null && session.answers.length > 0;
+    const [earnedBadges, qTopics] = await Promise.all([
+      this.badges.checkAndAward(userId).catch(
+        () => [] as Awaited<ReturnType<BadgeService['checkAndAward']>>,
+        /* sessiz: kutlama kaçar ama sonuç kaybolmaz */
+      ),
+      needsBreakdown
+        ? this.prisma.question.findMany({
+            where: { id: { in: session.answers.map((a) => a.questionId) } },
+            select: { id: true, topic: { select: { id: true, name: true } } },
+          })
+        : Promise.resolve(null),
+    ]);
 
     // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç seansı,
     // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
     let topicBreakdown:
       { topicId: string; topicName: string; correct: number; total: number }[] | null = null;
-    if (session.topicId == null && session.answers.length > 0) {
-      const qids = session.answers.map((a) => a.questionId);
-      const qTopics = await this.prisma.question.findMany({
-        where: { id: { in: qids } },
-        select: { id: true, topic: { select: { id: true, name: true } } },
-      });
+    if (qTopics) {
       const topicOf = new Map(qTopics.map((q) => [q.id, q.topic]));
       const acc = new Map<
         string,
