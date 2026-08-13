@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/brand-mark";
 import { ContactChannels } from "@/components/contact-channels";
 
 const GROUPS: { title: string; links: { href: string; label: string; external?: boolean }[] }[] = [
@@ -37,7 +38,7 @@ export function SiteFooter() {
     <footer className="tk-scope border-t border-line bg-surface font-body">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-heading text-[15px] font-bold text-brand">PAEMİSYON</p>
+          <BrandMark glyphClassName="size-6" textClassName="text-[15px]" />
           <p className="mt-2 max-w-[28ch] text-[13px] leading-relaxed text-ink-soft">
             Polis sınavlarına hazırlığın merkezi: kaynaklı çıkmış sorular, canlı denemeler,
             kişisel koç.

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "@/app/(auth)/actions";
+import { BrandGlyph, BrandMark } from "@/components/brand-mark";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { CMDK_EVENT } from "./command-palette";
 import { NavigationIcon } from "./navigation-icon";
@@ -18,12 +19,14 @@ export function Sidebar() {
       <Link
         href="/bugun"
         aria-label="Paemisyon ana sayfa"
-        className="flex h-16 items-center justify-center font-heading font-bold tracking-tight text-brand min-[1200px]:justify-start min-[1200px]:px-5 min-[1200px]:text-[15px]"
+        className="flex h-16 items-center justify-center min-[1200px]:justify-start min-[1200px]:px-5"
       >
-        <span className="flex size-9 items-center justify-center rounded-md bg-brand/10 text-lg min-[1200px]:hidden">
-          P
-        </span>
-        <span className="hidden min-[1200px]:inline">PAEMİSYON</span>
+        <BrandGlyph className="size-9 min-[1200px]:hidden" />
+        <BrandMark
+          className="hidden min-[1200px]:inline-flex"
+          glyphClassName="size-6"
+          textClassName="text-[15px]"
+        />
       </Link>
 
       <button

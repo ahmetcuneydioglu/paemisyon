@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "./brand-mark";
 import { SiteNav } from "./site-nav";
 import { HeaderAuthArea } from "./header-auth-area";
 import { ThemeToggle } from "./theme-toggle";
@@ -23,12 +24,8 @@ export function SiteHeader() {
   return (
     <header className="tk-scope sticky top-0 z-30 border-b border-line bg-surface/95 font-body backdrop-blur">
       <div className="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
-        <Link
-          href="/"
-          className="font-heading text-[17px] font-bold tracking-tight text-brand"
-          aria-label="Paemisyon ana sayfa"
-        >
-          PAEMİSYON
+        <Link href="/" aria-label="Paemisyon ana sayfa">
+          <BrandMark />
         </Link>
         <SiteNav items={NAV} authArea={authArea} />
         <div className="hidden items-center gap-3 md:flex">
