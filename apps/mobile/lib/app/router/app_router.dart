@@ -16,6 +16,8 @@ import '../../features/exams/presentation/exam_leaderboard_screen.dart';
 import '../../features/exams/presentation/exam_result_screen.dart';
 import '../../features/exams/presentation/exam_runner_screen.dart';
 import '../../features/exams/presentation/exams_list_screen.dart';
+import '../../features/intro/intro_prefs.dart';
+import '../../features/intro/presentation/intro_screen.dart';
 import '../../features/me/presentation/badges_screen.dart';
 import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
@@ -64,8 +66,16 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final loggedIn = auth.currentSession != null;
       final loc = state.matchedLocation;
       final atAuth = loc == '/auth/login' || loc == '/auth/register';
-      if (!loggedIn) return atAuth ? null : '/auth/login';
-      if (atAuth) return '/';
+      final atIntro = loc == '/intro';
+      if (!loggedIn) {
+        // First-launch tanıtımı: yalnız İLK açılış + oturum yokken (bayrak
+        // cihazda kalıcı — mevcut/çıkış yapmış kullanıcı yeniden görmez).
+        // ref.read: bayrak değişimi navigasyonu yeniden kurmaz; tanıtım
+        // çıkışı zaten açık bir context.go ile yapılır.
+        if (!ref.read(introSeenProvider)) return atIntro ? null : '/intro';
+        return atAuth ? null : '/auth/login';
+      }
+      if (atAuth || atIntro) return '/';
       return null;
     },
     routes: [
@@ -219,6 +229,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           path: '/onboarding',
           parentNavigatorKey: _rootNavigatorKey,
           builder: (context, state) => const OnboardingScreen()),
+      GoRoute(
+          path: '/intro',
+          parentNavigatorKey: _rootNavigatorKey,
+          builder: (context, state) => const IntroScreen()),
       GoRoute(
           path: '/auth/login',
           parentNavigatorKey: _rootNavigatorKey,

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'app/app.dart';
 import 'core/config/app_config.dart';
+import 'features/intro/intro_prefs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,5 +18,13 @@ Future<void> main() async {
     anonKey: AppConfig.supabaseAnonKey,
   );
 
-  runApp(const ProviderScope(child: PaemisyonApp()));
+  // First-launch tanıtımı görüldü mü? Router redirect'i senkron okuyabilsin
+  // diye açılışta bir kez okunur (SharedPreferences zaten bellekte tutar).
+  final prefs = await SharedPreferences.getInstance();
+  final introSeen = prefs.getBool(kIntroSeenKey) ?? false;
+
+  runApp(ProviderScope(
+    overrides: [introSeenProvider.overrideWith((ref) => introSeen)],
+    child: const PaemisyonApp(),
+  ));
 }
