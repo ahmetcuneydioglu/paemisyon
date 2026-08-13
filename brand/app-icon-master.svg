@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Nişangâh P · Varyant A (Faz 2 onaylı usta çizim). Tam kanama: köşe
+       yuvarlamayı platform maskesi uygular. Kaynak ızgara 96, ölçek ×10.667. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#27548F"/>
+      <stop offset="0.55" stop-color="#1B3A6B"/>
+      <stop offset="1" stop-color="#122A52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.58" cy="0.40" r="0.75">
+      <stop offset="0" stop-color="#3E6FB5" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#3E6FB5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+  <rect x="305" y="229" width="119.5" height="565" rx="59.7" fill="#FFFFFF"/>
+  <circle cx="601.6" cy="428.8" r="162.1" fill="none" stroke="#FFFFFF" stroke-width="119.5"/>
+  <circle cx="601.6" cy="428.8" r="60.8" fill="#F3A93C"/>
+</svg>
