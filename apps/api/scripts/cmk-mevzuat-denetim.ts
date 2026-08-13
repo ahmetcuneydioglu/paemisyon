@@ -99,13 +99,23 @@ async function extractQuestions(file: string): Promise<Soru[]> {
     /^Cevaplarınızı/i,
     /^\d{1,3}$/, // sayfa numarası
   ];
+  // Test sonu CEVAP ANAHTARI tablosu satırları ("1. C 2. C 3. E …") — soru
+  // sanılıp sonraki kökü kirletiyordu. Satırda ≥4 "No. Harf" çifti varsa ve
+  // gerçek kelime yoksa anahtar satırıdır.
+  const keyPair = /\b\d{1,2}\s*\.\s*(?:[A-E]|İptal|Iptal)\b/gi;
+  function isKeyLine(text: string): boolean {
+    const pairs = text.match(keyPair)?.length ?? 0;
+    if (pairs < 4) return false;
+    const words = text.replace(keyPair, ' ').match(/[a-zçğıöşü]{4,}/gi)?.length ?? 0;
+    return words <= 1; // "İptal" dışında sözcük içermez
+  }
 
   const sorular: Soru[] = [];
   let cur: Soru | null = null;
   let mode: 'stem' | 'options' | 'answer' = 'stem';
 
   for (const { page, text } of allLines) {
-    if (NOISE.some((re) => re.test(text))) continue;
+    if (NOISE.some((re) => re.test(text)) || isKeyLine(text)) continue;
 
     const qStart = /^(\d{1,3})\.\s+(.*)$/.exec(text);
     const optStart = /^([A-E])\)\s*(.*)$/.exec(text);
