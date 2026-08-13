@@ -74,6 +74,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   bool _aiBusy = false;
   bool _busy = false;
   DateTime _qStart = DateTime.now();
+  // Deneme/exam: arka planda süren cevap gönderimleri — _finish hepsini bekler
+  // (skor eksik cevapla hesaplanmasın).
+  final Set<Future<void>> _inflight = {};
+  DateTime _lastAdvanceAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   // Deneme sayacı (gösterge — asıl denetim sunucuda).
   Timer? _timer;
@@ -160,9 +164,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   Future<void> _submit() async {
     if (_busy) return;
-    setState(() => _busy = true);
     final selected = _selected;
     final timeSpent = DateTime.now().difference(_qStart).inMilliseconds;
+
+    // Geri bildirimsiz modlar (deneme/exam): İLERİ ANINDA — cevap arka planda
+    // gönderilir, kullanıcı ağ turunu beklemez. Sunucu yine tek otorite;
+    // _finish tüm arka plan gönderimlerini bekleyip öyle skorlar.
+    if (!_isPractice) {
+      // Hızlı çift dokunma sonraki soruyu yanlışlıkla BOŞ geçmesin.
+      final now = DateTime.now();
+      if (selected == null &&
+          now.difference(_lastAdvanceAt) < const Duration(milliseconds: 400)) {
+        return;
+      }
+      _lastAdvanceAt = now;
+      final send = _sendInBackground(_q, selected, timeSpent);
+      _inflight.add(send);
+      send.whenComplete(() => _inflight.remove(send));
+      await _advance();
+      return;
+    }
+
+    setState(() => _busy = true);
     try {
       final fb = await ref.read(quizRepositoryProvider).answer(
             _session!.sessionId,
@@ -171,17 +194,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             selectedOptionId: selected,
             timeSpentMs: timeSpent,
           );
-      if (_isPractice) {
-        // Haptic (Doc 28 P2-18): doğruda hafif onay, yanlışta orta dokunuş.
-        if (fb.isCorrect == true) {
-          AppHaptics.correct();
-        } else if (fb.isCorrect == false) {
-          AppHaptics.wrong();
-        }
-        setState(() => _feedback = fb); // geri bildirimi göster
-      } else {
-        await _advance(); // deneme: geri bildirim yok, ilerle
+      // Haptic (Doc 28 P2-18): doğruda hafif onay, yanlışta orta dokunuş.
+      if (fb.isCorrect == true) {
+        AppHaptics.correct();
+      } else if (fb.isCorrect == false) {
+        AppHaptics.wrong();
       }
+      setState(() => _feedback = fb); // geri bildirimi göster
     } on NetworkFailure {
       await _queueOffline(selected, timeSpent); // çevrimdışı → kuyruğa al, ilerle
     } on ExamTimeOverFailure {
@@ -195,6 +214,47 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       _snack('Cevap gönderilemedi, tekrar dene.');
     } finally {
       if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  /// Deneme/exam arka plan gönderimi: hata akışları kullanıcıyı DURDURMAZ —
+  /// çevrimdışıysa kuyruğa düşer (flush _finish'te), süre bittiyse sınav
+  /// kapatılır, limit dolduysa kibar duvar gösterilir.
+  Future<void> _sendInBackground(
+      QuizQuestion q, String? selected, int timeSpent) async {
+    try {
+      await ref.read(quizRepositoryProvider).answer(
+            _session!.sessionId,
+            questionId: q.questionId,
+            versionId: q.versionId,
+            selectedOptionId: selected,
+            timeSpentMs: timeSpent,
+          );
+    } on NetworkFailure {
+      final queue = ref.read(answerQueueProvider);
+      await queue.enqueue(QueuedAnswer(
+        sessionId: _session!.sessionId,
+        questionId: q.questionId,
+        versionId: q.versionId,
+        selectedOptionId: selected,
+        timeSpentMs: timeSpent,
+        createdAt: DateTime.now().millisecondsSinceEpoch,
+      ));
+      ref.read(pendingAnswerCountProvider.notifier).state = await queue.count();
+    } on ExamTimeOverFailure {
+      if (mounted) {
+        _snack('Sınav süresi doldu — kalan sorular boş sayılır.');
+        // AWAIT EDİLMEZ: _finish bu gönderimin bitmesini bekliyor — burada
+        // await etmek karşılıklı bekleme (deadlock) yaratırdı.
+        unawaited(_finish());
+      }
+    } on DailyLimitFailure catch (f) {
+      if (mounted) _showPaywall(f.message);
+    } on Failure catch (f) {
+      if (mounted) _snack(f.message);
+    } catch (_) {
+      /* tekil kayıp cevap _finish flush'ıyla telafi edilemezse skor yine
+         sunucudaki kayıtlardan hesaplanır — oturum kilitlenmez */
     }
   }
 
@@ -278,6 +338,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     _timer = null;
     setState(() => _busy = true);
     try {
+      // Arka planda süren cevap gönderimleri bitmeden skorlama yapılmaz.
+      if (_inflight.isNotEmpty) await Future.wait(_inflight.toList());
       // Çevrimdışıyken biriken cevaplar varsa önce onları gönder — skor doğru olsun.
       await ref.read(syncServiceProvider).flush();
       final result =
