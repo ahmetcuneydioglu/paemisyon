@@ -86,6 +86,32 @@ export default function ReviewQueuePage() {
     },
   });
 
+  // Toplu RET: yalnız kuyruktaki (in_review) sürümler draft'a döner —
+  // yayındaki sorulara dokunmaz, soru silmez (geri alınabilir).
+  const bulkRejectAll = useMutation({
+    mutationFn: () =>
+      api<{ rejected: number }>('/admin/questions/bulk-reject', {
+        method: 'POST',
+        body: {},
+      }),
+    onSuccess: (r) => {
+      qc.invalidateQueries({ queryKey: ['review-summary'] });
+      qc.invalidateQueries({ queryKey: ['review-queue'] });
+      qc.invalidateQueries({ queryKey: ['questions'] });
+      qc.invalidateQueries({ queryKey: ['dashboard'] });
+      setNotice(`🚫 Tüm kuyruk reddedildi: ${r.rejected} soru taslağa döndü.`);
+    },
+  });
+
+  function confirmBulkRejectAll() {
+    const ok = window.confirm(
+      `Onay kuyruğundaki TÜM ${totalCount} soru REDDEDİLECEK (taslağa dönecek).\n\n` +
+        'Yayındaki sorulara dokunulmaz, soru silinmez — taslaklar gerekirse ' +
+        'tek tek düzeltilip yeniden kuyruğa gönderilebilir. Devam edilsin mi?',
+    );
+    if (ok) bulkRejectAll.mutate();
+  }
+
   function confirmBulk(t: ReviewTopicSummary) {
     const ok = window.confirm(
       `"${t.courseName} / ${t.topicName}" konusundaki ${t.count} sorunun TAMAMI yayına alınacak.\n\n` +
@@ -110,13 +136,22 @@ export default function ReviewQueuePage() {
         subtitle="İncelemede bekleyen sorular — onaylanmadan yayına çıkmaz"
         action={
           isAdmin && totalCount > 0 ? (
-            <button
-              onClick={confirmBulkAll}
-              disabled={bulkAll.isPending || bulk.isPending}
-              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
-            >
-              {bulkAll.isPending ? 'Yayınlanıyor…' : `Tümünü Onayla (${totalCount})`}
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={confirmBulkRejectAll}
+                disabled={bulkAll.isPending || bulk.isPending || bulkRejectAll.isPending}
+                className="rounded-lg border border-red-300 bg-white px-4 py-2 text-sm font-semibold text-red-600 hover:bg-red-50 disabled:opacity-50"
+              >
+                {bulkRejectAll.isPending ? 'Reddediliyor…' : `Tümünü Reddet (${totalCount})`}
+              </button>
+              <button
+                onClick={confirmBulkAll}
+                disabled={bulkAll.isPending || bulk.isPending || bulkRejectAll.isPending}
+                className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
+              >
+                {bulkAll.isPending ? 'Yayınlanıyor…' : `Tümünü Onayla (${totalCount})`}
+              </button>
+            </div>
           ) : undefined
         }
       />
@@ -126,9 +161,9 @@ export default function ReviewQueuePage() {
           {notice}
         </div>
       )}
-      {(bulk.isError || bulkAll.isError) && (
+      {(bulk.isError || bulkAll.isError || bulkRejectAll.isError) && (
         <div className="mb-4">
-          <ErrorBox error={bulk.error ?? bulkAll.error} />
+          <ErrorBox error={bulk.error ?? bulkAll.error ?? bulkRejectAll.error} />
         </div>
       )}
 

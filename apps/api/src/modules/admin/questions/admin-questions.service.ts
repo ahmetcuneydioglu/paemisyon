@@ -358,6 +358,37 @@ export class AdminQuestionsService {
     return { topicId: topicId ?? null, topicName, approved, skipped };
   }
 
+  /** Toplu RET: YALNIZ onay kuyruğundaki (in_review) sürümler draft'a döner.
+   *  Yayındaki/arşivdeki hiçbir soruya dokunulmaz; soru silinmez — draft
+   *  olarak kalır, istenirse tek tek düzeltilip yeniden kuyruğa gönderilir.
+   *  Tekil reject() ile birebir aynı semantik, tek sorguda. */
+  async bulkReject(actor: AuthenticatedUser, topicId?: string, note?: string) {
+    let topicName = 'Tüm kuyruk';
+    if (topicId) {
+      const topic = await this.prisma.topic.findFirst({
+        where: { id: topicId, deletedAt: null },
+        select: { name: true },
+      });
+      if (!topic) throw new NotFoundException('Konu bulunamadı.');
+      topicName = topic.name;
+    }
+
+    const { count } = await this.prisma.questionVersion.updateMany({
+      where: {
+        status: 'in_review', // güvence: yalnız kuyruktakiler
+        question: { deletedAt: null, ...(topicId ? { topicId } : {}) },
+      },
+      data: { status: 'draft' },
+    });
+
+    await this.audit.log(actor, 'question.bulk_reject', 'topic', topicId ?? 'all', {
+      topicName,
+      rejected: count,
+      note: note ?? null,
+    });
+    return { topicId: topicId ?? null, topicName, rejected: count };
+  }
+
   // ── Toplu içe aktarma (Doc 9 §4.4) ──
   // KURAL: içe aktarılan sorular ASLA doğrudan yayına çıkmaz — in_review kuyruğuna
   // düşer (eski sistemin doğrudan-yayın hatası bilinçli olarak tekrarlanmaz).

@@ -329,6 +329,17 @@ export class AdminController {
     return this.questions.bulkApprove(actor, topicId);
   }
 
+  // Toplu RET — YALNIZCA admin; yalnız in_review sürümler draft'a döner.
+  @Post('questions/bulk-reject')
+  @Roles('admin')
+  bulkReject(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body('topicId', new ParseUUIDPipe({ optional: true })) topicId?: string,
+    @Body('note') note?: string,
+  ) {
+    return this.questions.bulkReject(actor, topicId, note);
+  }
+
   // Onay/ret YALNIZCA admin — mevzuat güvencesi (Doc 9 §4.3).
   @Post('questions/:id/approve')
   @Roles('admin')
