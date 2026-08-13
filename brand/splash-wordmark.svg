@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1360" width="1024" height="1360">
+  <!-- Splash bileşimi: Nişangâh P glifi + PAEMİSYON yazısı (şeffaf zemin;
+       navy zemin platformdan gelir). Yazı görsele gömülüdür — native splash
+       katmanında font bağımlılığı yok. -->
+  <g transform="translate(512 512) translate(-564.2 -500.4)">
+    <rect x="305" y="229" width="119.5" height="565" rx="59.7" fill="#FFFFFF"/>
+    <circle cx="601.6" cy="428.8" r="162.1" fill="none" stroke="#FFFFFF" stroke-width="119.5"/>
+    <circle cx="601.6" cy="428.8" r="60.8" fill="#F3A93C"/>
+  </g>
+  <text x="512" y="1188" text-anchor="middle" fill="#FFFFFF"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="118" font-weight="800" letter-spacing="26">PAEMİSYON</text>
+</svg>
