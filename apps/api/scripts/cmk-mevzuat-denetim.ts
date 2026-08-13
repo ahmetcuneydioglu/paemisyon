@@ -18,7 +18,9 @@ import * as path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import ExcelJS from 'exceljs';
 
-const MODEL = 'claude-opus-4-8';
+// Varsayılan: Sonnet 5 + Batch API (%50 indirim) — Opus canlıya göre ~5x ucuz.
+// --model ile değiştirilebilir; --live batch yerine anlık istek atar.
+const MODEL = process.env.DENETIM_MODEL ?? 'claude-sonnet-5';
 const CONCURRENCY = 4;
 
 const key = process.env.ANTHROPIC_API_KEY;
@@ -254,11 +256,11 @@ interface Hukum {
   gerekce: string;
 }
 
-async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): Promise<Hukum | null> {
+function buildPrompt(soru: Soru, maddeler: string[], law: Map<string, string>): string {
   const lawBlock = maddeler
     .map((k) => `— Madde ${k}: ${law.get(k)}`)
     .join('\n\n');
-  const prompt =
+  return (
     `Sen bir ceza muhakemesi hukuku (5271 sayılı CMK) editörüsün. Aşağıdaki ` +
     `çoktan seçmeli soru bir soru bankasına eklenecek; GÜNCEL kanun metnine göre denetle.\n\n` +
     `GÜNCEL CMK'DAN İLGİLİ OLABİLECEK MADDELER (mevzuat.gov.tr):\n${lawBlock}\n\n` +
@@ -279,8 +281,32 @@ async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): 
     `birden çok savunulabilir cevap dahil).\n` +
     `- TUTARLILIK ŞARTI: hukum=YANLIS ise dogruCevap anahtardan farklı OLMAK ZORUNDA.\n` +
     `- Verilen madde metinleri güncel kaynaktır; kendi bilginle çelişirse METNİ esas al.\n` +
-    `- Soru doktrin/kavram sorusuysa (madde metni birebir gerekmez) bilginle değerlendir.`;
+    `- Soru doktrin/kavram sorusuysa (madde metni birebir gerekmez) bilginle değerlendir.`
+  );
+}
 
+function parseHukum(text: string, soru: Soru): Hukum | null {
+  const m = /\{[\s\S]*\}/.exec(text);
+  if (!m) return null;
+  let parsed: Hukum;
+  try {
+    parsed = JSON.parse(m[0]) as Hukum;
+  } catch {
+    return null;
+  }
+  if (!['DOGRU', 'YANLIS', 'KANUN_DEGISMIS', 'BELIRSIZ'].includes(parsed.hukum)) return null;
+  // Deterministik tutarlılık: "yanlış" diyorsa bulduğu cevap anahtardan
+  // farklı OLMALI; aynıysa bu bir soru-kalitesi itirazıdır → BELIRSIZ
+  // (insan incelemesine düşer, otomatik 'anahtar hatalı' damgası yemez).
+  if (parsed.hukum === 'YANLIS' && parsed.dogruCevap === soru.answer) {
+    parsed.hukum = 'BELIRSIZ';
+    parsed.gerekce = `(AI anahtarla aynı cevabı buldu ama soruda kusur görüyor) ${parsed.gerekce}`;
+  }
+  return parsed;
+}
+
+async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): Promise<Hukum | null> {
+  const prompt = buildPrompt(soru, maddeler, law);
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const res = await anthropic.messages.create({
@@ -292,18 +318,7 @@ async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): 
         .filter((b): b is Anthropic.TextBlock => b.type === 'text')
         .map((b) => b.text)
         .join('');
-      const m = /\{[\s\S]*\}/.exec(text);
-      if (!m) return null;
-      const parsed = JSON.parse(m[0]) as Hukum;
-      if (!['DOGRU', 'YANLIS', 'KANUN_DEGISMIS', 'BELIRSIZ'].includes(parsed.hukum)) return null;
-      // Deterministik tutarlılık: "yanlış" diyorsa bulduğu cevap anahtardan
-      // farklı OLMALI; aynıysa bu bir soru-kalitesi itirazıdır → BELIRSIZ
-      // (insan incelemesine düşer, otomatik 'anahtar hatalı' damgası yemez).
-      if (parsed.hukum === 'YANLIS' && parsed.dogruCevap === soru.answer) {
-        parsed.hukum = 'BELIRSIZ';
-        parsed.gerekce = `(AI anahtarla aynı cevabı buldu ama soruda kusur görüyor) ${parsed.gerekce}`;
-      }
-      return parsed;
+      return parseHukum(text, soru);
     } catch (e: unknown) {
       const status = (e as { status?: number }).status;
       if (status === 429 || status === 529 || (status ?? 0) >= 500) {
@@ -314,6 +329,51 @@ async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): 
     }
   }
   return null;
+}
+
+/** Batch API akışı: tüm istekler tek toplu işte (%50 indirim). Sonuçlar
+ *  genelde dakikalar-saatler içinde; 60 sn'de bir yoklanır. */
+async function judgeBatch(
+  items: { soru: Soru; maddeler: string[] }[],
+  law: Map<string, string>,
+): Promise<Map<string, Hukum | null>> {
+  const keyOf = (s: Soru) => `q${s.page}_${s.no}`;
+  const batch = await anthropic.messages.batches.create({
+    requests: items.map(({ soru, maddeler }) => ({
+      custom_id: keyOf(soru),
+      params: {
+        model: MODEL,
+        max_tokens: 400,
+        messages: [{ role: 'user' as const, content: buildPrompt(soru, maddeler, law) }],
+      },
+    })),
+  });
+  console.log(`   batch oluşturuldu: ${batch.id} (${items.length} istek) — bekleniyor…`);
+
+  let st = batch;
+  while (st.processing_status !== 'ended') {
+    await new Promise((r) => setTimeout(r, 60_000));
+    st = await anthropic.messages.batches.retrieve(batch.id);
+    const c = st.request_counts;
+    console.log(`   … ${c.succeeded} tamam / ${c.errored} hata / ${c.processing} sürüyor`);
+  }
+
+  const bySoru = new Map(items.map((i) => [keyOf(i.soru), i.soru]));
+  const out = new Map<string, Hukum | null>();
+  for await (const result of await anthropic.messages.batches.results(batch.id)) {
+    const soru = bySoru.get(result.custom_id);
+    if (!soru) continue;
+    if (result.result.type === 'succeeded') {
+      const text = result.result.message.content
+        .filter((b): b is Anthropic.TextBlock => b.type === 'text')
+        .map((b) => b.text)
+        .join('');
+      out.set(result.custom_id, parseHukum(text, soru));
+    } else {
+      out.set(result.custom_id, null);
+    }
+  }
+  return out;
 }
 
 // ── main ──
@@ -351,28 +411,48 @@ async function main() {
 
   const hedef = sorular.filter((s) => s.options.length >= 4 && s.answer).slice(0, limit);
   const queue = hedef.filter((s) => !done.has(s.no * 10000 + s.page));
-  console.log(`③ AI denetimi: ${queue.length} soru (model: ${MODEL}, eşzamanlı ${CONCURRENCY})`);
+  const live = process.argv.includes('--live');
+  console.log(
+    `③ AI denetimi: ${queue.length} soru (model: ${MODEL}, ${live ? `canlı, eşzamanlı ${CONCURRENCY}` : 'Batch API — %50 indirimli'})`,
+  );
 
   const out = fs.createWriteStream(progressPath, { flags: 'a' });
-  let processed = 0;
-  await Promise.all(
-    Array.from({ length: CONCURRENCY }, async () => {
-      while (queue.length > 0) {
-        const s = queue.shift()!;
-        const maddeler = relevantArticles(s, law, lawTokens);
-        const h = await judge(s, maddeler, law);
-        const row = {
-          ...s,
-          ...(h ?? { hukum: 'BELIRSIZ' as const, dogruCevap: '?', ilgiliMaddeler: '', gerekce: 'AI yanıtı çözümlenemedi' }),
-          maddeler: maddeler.join(','),
-        };
-        out.write(`${JSON.stringify(row)}\n`);
-        done.set(s.no * 10000 + s.page, row);
-        processed++;
-        if (processed % 20 === 0) console.log(`   … ${processed}/${queue.length + processed}`);
-      }
-    }),
-  );
+  const fallback = {
+    hukum: 'BELIRSIZ' as const,
+    dogruCevap: '?',
+    ilgiliMaddeler: '',
+    gerekce: 'AI yanıtı çözümlenemedi',
+  };
+
+  if (!live && queue.length > 0) {
+    const items = queue.map((soru) => ({
+      soru,
+      maddeler: relevantArticles(soru, law, lawTokens),
+    }));
+    const results = await judgeBatch(items, law);
+    for (const { soru, maddeler } of items) {
+      const h = results.get(`q${soru.page}_${soru.no}`) ?? null;
+      const row = { ...soru, ...(h ?? fallback), maddeler: maddeler.join(',') };
+      out.write(`${JSON.stringify(row)}\n`);
+      done.set(soru.no * 10000 + soru.page, row);
+    }
+  } else if (queue.length > 0) {
+    let processed = 0;
+    await Promise.all(
+      Array.from({ length: CONCURRENCY }, async () => {
+        while (queue.length > 0) {
+          const s = queue.shift()!;
+          const maddeler = relevantArticles(s, law, lawTokens);
+          const h = await judge(s, maddeler, law);
+          const row = { ...s, ...(h ?? fallback), maddeler: maddeler.join(',') };
+          out.write(`${JSON.stringify(row)}\n`);
+          done.set(s.no * 10000 + s.page, row);
+          processed++;
+          if (processed % 20 === 0) console.log(`   … ${processed}/${queue.length + processed}`);
+        }
+      }),
+    );
+  }
   out.close();
 
   // ── Rapor ──
