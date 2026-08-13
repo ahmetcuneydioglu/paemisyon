@@ -268,7 +268,7 @@ function buildPrompt(soru: Soru, maddeler: string[], law: Map<string, string>): 
     soru.options.map((o) => `${o.label}) ${o.text}`).join('\n') +
     `\nKitapçığın cevap anahtarı: ${soru.answer ?? 'YOK'}` +
     (soru.explanation ? `\nKitapçığın açıklaması: ${soru.explanation}` : '') +
-    `\n\nHüküm ver — YALNIZ şu JSON ile yanıtla:\n` +
+    `\n\nHüküm ver — açıklama yazmadan DOĞRUDAN { ile başlayıp YALNIZ şu JSON ile yanıtla:\n` +
     `{"hukum":"DOGRU|YANLIS|KANUN_DEGISMIS|BELIRSIZ","dogruCevap":"A-E veya ?","ilgiliMaddeler":"virgüllü madde noları","gerekce":"1-2 cümle"}\n` +
     `Kurallar:\n` +
     `- Önce soruyu KENDİN çöz: dogruCevap = güncel mevzuata göre senin bulduğun şık.\n` +
@@ -311,7 +311,7 @@ async function judge(soru: Soru, maddeler: string[], law: Map<string, string>): 
     try {
       const res = await anthropic.messages.create({
         model: MODEL,
-        max_tokens: 400,
+        max_tokens: 1500,
         messages: [{ role: 'user', content: prompt }],
       });
       const text = res.content
@@ -343,7 +343,7 @@ async function judgeBatch(
       custom_id: keyOf(soru),
       params: {
         model: MODEL,
-        max_tokens: 400,
+        max_tokens: 1500,
         messages: [{ role: 'user' as const, content: buildPrompt(soru, maddeler, law) }],
       },
     })),
