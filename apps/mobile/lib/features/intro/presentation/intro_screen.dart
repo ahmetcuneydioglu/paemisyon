@@ -415,7 +415,7 @@ class _HeroQuestion extends StatelessWidget {
                   borderRadius: BorderRadius.circular(99),
                   border: Border.all(color: _amber.withValues(alpha: .6)),
                 ),
-                child: Text('2023 · Komiser Yrd.',
+                child: Text('2026 · Komiser Yrd.',
                     style: AppTypography.caption
                         .copyWith(color: _amber, fontWeight: FontWeight.w700)),
               ),
