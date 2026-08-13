@@ -13,7 +13,10 @@ import {
   type RowError,
 } from './import-parser';
 
-const IMPORT_MAX_ROWS = 500;
+// Tek dosyada üst sınır. Yazma yolu satır sayısından bağımsız 3 toplu INSERT
+// olduğundan 1000 güvenli; sınırın amacı yalnız önizleme ekranını ve istek
+// gövdesini makul tutmak.
+const IMPORT_MAX_ROWS = 1000;
 
 /**
  * Soru yönetimi + editoryal onay (Doc 9 §4 — panelin kalbi).
@@ -519,7 +522,8 @@ export class AdminQuestionsService {
       versionId: randomUUID(),
       contentHash: questionFingerprint(row.stem, row.options.map((o) => o.text)),
     }));
-    await this.prisma.$transaction(async (tx) => {
+    await this.prisma.$transaction(
+      async (tx) => {
       await tx.question.createMany({
         data: rowsToInsert.map((r) => ({
           id: r.questionId,
@@ -553,7 +557,11 @@ export class AdminQuestionsService {
           })),
         ),
       });
-    });
+      },
+      // Büyük dosyada (1000 satır ≈ 5000 şık) uzak DB'ye 3 toplu INSERT
+      // varsayılan 5 sn'yi aşabilir — açık sınır.
+      { timeout: 60_000, maxWait: 30_000 },
+    );
 
     // Konu bazında dağılımı audit'e yaz (hangi konuya kaç soru).
     const byTopic: Record<string, number> = {};
