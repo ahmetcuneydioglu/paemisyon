@@ -27,8 +27,16 @@ export class AdminDashboardService {
       this.prisma.entitlement.count({
         where: { isPremium: true, OR: [{ validUntil: null }, { validUntil: { gt: new Date() } }] },
       }),
-      this.prisma.questionVersion.groupBy({ by: ['status'], _count: { _all: true } }),
-      this.prisma.questionVersion.count({ where: { status: 'in_review' } }),
+      // YALNIZ yaşayan soruların sürümleri — silinen soruların hayalet
+      // sürümleri sayaçları şişirmesin (kuyruk/review-summary ile tutarlı).
+      this.prisma.questionVersion.groupBy({
+        by: ['status'],
+        where: { question: { deletedAt: null } },
+        _count: { _all: true },
+      }),
+      this.prisma.questionVersion.count({
+        where: { status: 'in_review', question: { deletedAt: null } },
+      }),
       this.prisma.dailyUsage.count({ where: { usageDate: today } }),
       this.prisma.auditLog.findMany({ orderBy: { createdAt: 'desc' }, take: 8 }),
     ]);
