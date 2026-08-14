@@ -83,6 +83,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   final Set<Future<void>> _inflight = {};
   DateTime _lastAdvanceAt = DateTime.fromMillisecondsSinceEpoch(0);
 
+  // Etkileşimli sayfa kaydırma (drag/peek): parmağı takip eden geçiş.
+  final PageController _pageController = PageController();
+
   // Deneme sayacı (gösterge — asıl denetim sunucuda).
   Timer? _timer;
   int _remainingSeconds = 0;
@@ -105,6 +108,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   @override
   void dispose() {
     _timer?.cancel();
+    _pageController.dispose();
     super.dispose();
   }
 
@@ -143,6 +147,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         await _finish();
         return;
       }
+      if (startIndex > 0) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted && _pageController.hasClients) {
+            _pageController.jumpToPage(startIndex);
+          }
+        });
+      }
       if (s.plannedDurationSeconds != null) {
         _startTimer(s.plannedDurationSeconds!);
       }
@@ -172,9 +183,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final selected = _selected;
     final timeSpent = DateTime.now().difference(_qStart).inMilliseconds;
 
-    // Geri bildirimsiz modlar (deneme/exam): İLERİ ANINDA — cevap arka planda
-    // gönderilir, kullanıcı ağ turunu beklemez. Sunucu yine tek otorite;
-    // _finish tüm arka plan gönderimlerini bekleyip öyle skorlar.
+    // Geri bildirimsiz modlar (deneme/exam): İleri = sayfa geçişi; cevap
+    // gönderimi _onPageChanged/_advance(son)'da yapılır — kullanıcı ağ
+    // turunu beklemez, buton ve kaydırma tek yoldan geçer.
     if (!_isPractice) {
       // Hızlı çift dokunma sonraki soruyu yanlışlıkla BOŞ geçmesin.
       final now = DateTime.now();
@@ -183,9 +194,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         return;
       }
       _lastAdvanceAt = now;
-      final send = _sendInBackground(_q, selected, timeSpent);
-      _inflight.add(send);
-      send.whenComplete(() => _inflight.remove(send));
       await _advance();
       return;
     }
@@ -306,16 +314,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   Future<void> _advance() async {
     if (_isLast) {
+      // Son soru: deneme/exam'de son cevabı gönder (sayfa değişmeyecek).
+      if (!_isPractice) {
+        final send = _sendInBackground(
+            _q, _selected, DateTime.now().difference(_qStart).inMilliseconds);
+        _inflight.add(send);
+        send.whenComplete(() => _inflight.remove(send));
+      }
       await _finish();
       return;
     }
-    setState(() {
-      _index++;
-      _selected = null;
-      _feedback = null;
-      _ai = null;
-      _qStart = DateTime.now();
-    });
+    // Durum sıfırlama + (deneme'de) gönderim _onPageChanged'de — buton ve
+    // kaydırma aynı yoldan geçer, çift gönderim olmaz.
+    await _pageController.nextPage(
+      duration: AppMotion.respect(AppMotion.standard) +
+          const Duration(milliseconds: 1),
+      curve: AppMotion.standardCurve,
+    );
   }
 
   /// "Koça sor: Neden?" — AI çeldirici analizi (önbellekliyse hak düşmez).
@@ -558,119 +573,118 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         ],
       ),
       body: SafeArea(
-        // Reels-vari akış: sola kaydır = Sonraki/İleri (butonla aynı kurallar
-        // — practice'te cevaplamadan atlanmaz). Sağa kaydırma yok: cevaplar
-        // sunucuya işlendiği için geri dönüş desteklenmez.
-        child: GestureDetector(
-          behavior: HitTestBehavior.translucent,
-          onHorizontalDragEnd: _onSwipe,
-          child: AnimatedSwitcher(
-            duration: AppMotion.respect(AppMotion.standard),
-            switchInCurve: AppMotion.standardCurve,
-            switchOutCurve: AppMotion.standardCurve,
-            transitionBuilder: (child, animation) => FadeTransition(
-              opacity: animation,
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(0.12, 0), // sağdan hafif kayarak gelir
-                  end: Offset.zero,
-                ).animate(animation),
-                child: child,
-              ),
-            ),
-            child: SingleChildScrollView(
-              key: ValueKey(_index),
-          padding: const EdgeInsets.all(AppSpacing.xl),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(_q.stem, style: AppTypography.heading),
-              if (_q.mediaUrl != null) ...[
-                const SizedBox(height: AppSpacing.md),
-                QuestionMedia(url: _q.mediaUrl!),
-              ],
-              const SizedBox(height: AppSpacing.xl),
-              ..._q.options.map(_optionTile),
-              // Açıklama cevaptan hemen sonra AYNI ekranda (Doc 26 §4 #6).
-              if (_feedback != null &&
-                  (_feedback!.explanation != null ||
-                      _feedback!.legalReference != null)) ...[
-                const SizedBox(height: AppSpacing.lg),
-                ExplanationBox(
-                  explanation: [
-                    if (_feedback!.explanation != null) _feedback!.explanation!,
-                    if (_feedback!.legalReference != null)
-                      'Dayanak: ${_feedback!.legalReference!}',
-                  ].join('\n\n'),
-                  source: _feedback!.source,
-                ),
-              ],
-              // Resmî madde metni köprüsü (Doc 28 P0-④): öğren-dene-yanıl-ANLA.
-              if (_feedback?.relatedArticle?.text != null) ...[
-                const SizedBox(height: AppSpacing.sm),
-                OutlinedButton.icon(
-                  onPressed: () =>
-                      _showArticleSheet(_feedback!.relatedArticle!),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: context.tokens.accentAtlas,
-                    side: BorderSide(color: context.tokens.accentAtlas),
-                    minimumSize:
-                        const Size.fromHeight(AppSpacing.minTouchTarget),
-                  ),
-                  icon: const Icon(Icons.menu_book_rounded, size: 18),
-                  label: Text(
-                      'Madde ${_feedback!.relatedArticle!.no} — resmî metni oku'),
-                ),
-              ],
-              // AI koç: yanlış cevapta çeldirici analizi (Doc 24 §4 Faz 2).
-              if (_feedback != null && _feedback!.isCorrect == false) ...[
-                const SizedBox(height: AppSpacing.sm),
-                if (_ai == null)
-                  OutlinedButton.icon(
-                    onPressed: _aiBusy ? null : _askCoach,
-                    icon: _aiBusy
-                        ? const SizedBox(
-                            width: 16,
-                            height: 16,
-                            child: CircularProgressIndicator(strokeWidth: 2),
-                          )
-                        : const Icon(Icons.psychology_rounded, size: 18),
-                    label: Text(
-                        _aiBusy ? 'Koç düşünüyor…' : 'Koça sor: Neden yanlış?'),
-                  )
-                else
-                  _CoachExplanation(ai: _ai!),
-              ],
-              const SizedBox(height: AppSpacing.xl),
-              _bottomButton(),
-            ],
-          ),
-            ),
-          ),
+        // Etkileşimli sayfa kaydırma: parmak sürükledikçe SONRAKİ soru
+        // kenardan görünür (peek), bırakınca yerine oturur. Kurallar butonla
+        // aynı: practice'te cevaplamadan sürüklenemez; geriye sürükleme yok
+        // (cevaplar sunucuya işlendi). Gönderim, sayfa DEĞİŞTİĞİNDE yapılır —
+        // buton ve kaydırma tek yoldan geçer.
+        child: PageView.builder(
+          controller: _pageController,
+          physics: (_isPractice && _feedback == null)
+              ? const NeverScrollableScrollPhysics()
+              : _NoBackPagePhysics(currentPage: _index),
+          onPageChanged: _onPageChanged,
+          itemCount: total,
+          itemBuilder: (context, i) => _questionPage(i),
         ),
       ),
     );
   }
 
-  /// Sola kaydırma = Sonraki/İleri (buton kuralları aynen geçerli).
-  void _onSwipe(DragEndDetails d) {
-    final v = d.primaryVelocity ?? 0;
-    if (v > -300) return; // yalnız kararlı SOLA kaydırma
-    if (_busy) return;
-    if (_isPractice) {
-      // Cevaplamadan atlama yok — küçük dokunuşla hatırlat.
-      if (_feedback == null) {
-        AppHaptics.select();
-        return;
-      }
-      _advance();
-    } else {
-      _submit(); // deneme/exam: İleri ile birebir aynı (boş geçme hakkı dahil)
-    }
+  /// Bir sorunun tam sayfası. [i] geçerli sayfa değilse (peek) etkileşimsiz
+  /// ve temiz hâliyle çizilir.
+  Widget _questionPage(int i) {
+    final q = _session!.questions[i];
+    final isCurrent = i == _index;
+    final fb = isCurrent ? _feedback : null;
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(AppSpacing.xl),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(q.stem, style: AppTypography.heading),
+          if (q.mediaUrl != null) ...[
+            const SizedBox(height: AppSpacing.md),
+            QuestionMedia(url: q.mediaUrl!),
+          ],
+          const SizedBox(height: AppSpacing.xl),
+          ...q.options.map((o) => _optionTile(o, isCurrent: isCurrent)),
+          // Açıklama cevaptan hemen sonra AYNI ekranda (Doc 26 §4 #6).
+          if (fb != null &&
+              (fb.explanation != null || fb.legalReference != null)) ...[
+            const SizedBox(height: AppSpacing.lg),
+            ExplanationBox(
+              explanation: [
+                if (fb.explanation != null) fb.explanation!,
+                if (fb.legalReference != null)
+                  'Dayanak: ${fb.legalReference!}',
+              ].join('\n\n'),
+              source: fb.source,
+            ),
+          ],
+          // Resmî madde metni köprüsü (Doc 28 P0-④): öğren-dene-yanıl-ANLA.
+          if (fb?.relatedArticle?.text != null) ...[
+            const SizedBox(height: AppSpacing.sm),
+            OutlinedButton.icon(
+              onPressed: () => _showArticleSheet(fb.relatedArticle!),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: context.tokens.accentAtlas,
+                side: BorderSide(color: context.tokens.accentAtlas),
+                minimumSize: const Size.fromHeight(AppSpacing.minTouchTarget),
+              ),
+              icon: const Icon(Icons.menu_book_rounded, size: 18),
+              label: Text('Madde ${fb!.relatedArticle!.no} — resmî metni oku'),
+            ),
+          ],
+          // AI koç: yanlış cevapta çeldirici analizi (Doc 24 §4 Faz 2).
+          if (fb != null && fb.isCorrect == false) ...[
+            const SizedBox(height: AppSpacing.sm),
+            if (_ai == null)
+              OutlinedButton.icon(
+                onPressed: _aiBusy ? null : _askCoach,
+                icon: _aiBusy
+                    ? const SizedBox(
+                        width: 16,
+                        height: 16,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      )
+                    : const Icon(Icons.psychology_rounded, size: 18),
+                label:
+                    Text(_aiBusy ? 'Koç düşünüyor…' : 'Koça sor: Neden yanlış?'),
+              )
+            else
+              _CoachExplanation(ai: _ai!),
+          ],
+          const SizedBox(height: AppSpacing.xl),
+          if (isCurrent) _bottomButton(),
+        ],
+      ),
+    );
   }
 
-  Widget _optionTile(QuizOption o) {
-    final answered = _feedback != null; // practice'te cevaptan sonra
+  /// Sayfa değişti (kaydırma YA DA buton — tek yol): önceki sorunun durumu
+  /// kapatılır; deneme/exam'de önceki sorunun cevabı arka planda gönderilir.
+  void _onPageChanged(int i) {
+    if (i == _index) return;
+    final prevQ = _session!.questions[_index];
+    final prevSelected = _selected;
+    final timeSpent = DateTime.now().difference(_qStart).inMilliseconds;
+    if (!_isPractice) {
+      final send = _sendInBackground(prevQ, prevSelected, timeSpent);
+      _inflight.add(send);
+      send.whenComplete(() => _inflight.remove(send));
+    }
+    setState(() {
+      _index = i;
+      _selected = null;
+      _feedback = null;
+      _ai = null;
+      _qStart = DateTime.now();
+    });
+  }
+
+  Widget _optionTile(QuizOption o, {required bool isCurrent}) {
+    final answered = isCurrent && _feedback != null; // practice'te cevaptan sonra
     // Durum eşlemesi (Doc 26 §4 #5): renk + ikon birlikte; anında, animasyonsuz.
     final OptionRowState state;
     if (answered) {
@@ -682,7 +696,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         state = OptionRowState.dimmed;
       }
     } else {
-      state = o.id == _selected ? OptionRowState.selected : OptionRowState.idle;
+      state = isCurrent && o.id == _selected
+          ? OptionRowState.selected
+          : OptionRowState.idle;
     }
 
     return Padding(
@@ -694,7 +710,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         // Practice: dokunuş = cevap (Doc 26 §3.4 — öğrenme anında gecikme
         // olmaz; ayrıca "Onayla" ara adımı kaldırıldı). Exam: önce seç,
         // "İleri" gönderir — boş bırakma hakkı korunur.
-        onTap: answered || _busy
+        onTap: !isCurrent || answered || _busy
             ? null
             : () {
                 setState(() => _selected = o.id);
@@ -759,5 +775,24 @@ class _CoachExplanation extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+
+/// Geriye sürüklemeyi engelleyen sayfa fiziği: kullanıcı yalnız İLERİ
+/// sürükleyebilir (cevaplar sunucuya işlendiği için geri dönüş yok).
+class _NoBackPagePhysics extends PageScrollPhysics {
+  const _NoBackPagePhysics({required this.currentPage, super.parent});
+  final int currentPage;
+
+  @override
+  _NoBackPagePhysics applyTo(ScrollPhysics? ancestor) =>
+      _NoBackPagePhysics(currentPage: currentPage, parent: buildParent(ancestor));
+
+  @override
+  double applyBoundaryConditions(ScrollMetrics position, double value) {
+    final minPixels = currentPage * position.viewportDimension;
+    if (value < minPixels) return value - minPixels; // geri sürükleme: direnç
+    return super.applyBoundaryConditions(position, value);
   }
 }
