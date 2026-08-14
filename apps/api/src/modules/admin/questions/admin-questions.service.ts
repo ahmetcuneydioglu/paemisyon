@@ -235,6 +235,26 @@ export class AdminQuestionsService {
     return this.detail(id);
   }
 
+  /** Açıklamayı YERİNDE güncelle (bildirim akışı için hızlı yol). Sürümleme
+   *  kuralının bilinçli istisnası: açıklama, kök/şık/anahtar bütünlüğünü
+   *  etkilemez — kullanıcıların geçmiş cevapları bozulmaz. Audit'e yazılır. */
+  async updateExplanation(actor: AuthenticatedUser, id: string, explanation: string) {
+    const q = await this.prisma.question.findFirst({
+      where: { id, deletedAt: null, currentVersionId: { not: null } },
+      select: { currentVersionId: true },
+    });
+    if (!q) throw new NotFoundException('Soru bulunamadı ya da yayında değil.');
+    const temiz = explanation.trim();
+    await this.prisma.questionVersion.update({
+      where: { id: q.currentVersionId! },
+      data: { explanation: temiz.length > 0 ? temiz : null },
+    });
+    await this.audit.log(actor, 'question.update_explanation', 'question', id, {
+      length: temiz.length,
+    });
+    return { ok: true };
+  }
+
   // ── Reddet: in_review → draft (not audit'e yazılır) ──
   async reject(actor: AuthenticatedUser, id: string, note?: string) {
     const version = await this.latestVersionOrThrow(id);

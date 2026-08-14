@@ -367,6 +367,17 @@ export class AdminController {
     return this.questions.bulkReject(actor, topicId, note);
   }
 
+  // Açıklamayı yerinde güncelle (bildirim akışı) — yalnız admin.
+  @Patch('questions/:id/explanation')
+  @Roles('admin')
+  updateExplanation(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body('explanation') explanation?: string,
+  ) {
+    return this.questions.updateExplanation(actor, id, explanation ?? '');
+  }
+
   // Onay/ret YALNIZCA admin — mevzuat güvencesi (Doc 9 §4.3).
   @Post('questions/:id/approve')
   @Roles('admin')

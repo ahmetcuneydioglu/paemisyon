@@ -19,15 +19,28 @@ class PaemisyonApp extends ConsumerStatefulWidget {
 }
 
 class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
-  /// Bildirim payload'ını rotaya çevirir (Faz 1: günün sorusu derin bağlantısı).
+  /// Bildirim payload'ını rotaya çevirir. Dil: 'daily-quiz' → Günün Quizi;
+  /// `question:<uuid>` → tek soruluk seans (panelden gönderilen push).
+  /// Router redirect'i oturum/tanıtım korumasını kendisi uygular.
   void _openFromNotification(String payload) {
-    if (payload != NotificationService.payloadDailyQuiz) return;
-    // Router redirect'i oturum/tanıtım korumasını kendisi uygular.
-    ref.read(appRouterProvider).push('/quiz', extra: {
-      'topicName': 'Günün Quizi',
-      'mode': 'daily',
-      'count': 10,
-    });
+    final router = ref.read(appRouterProvider);
+    if (payload == NotificationService.payloadDailyQuiz) {
+      router.push('/quiz', extra: {
+        'topicName': 'Günün Quizi',
+        'mode': 'daily',
+        'count': 10,
+      });
+      return;
+    }
+    final single = RegExp(r'^question:([0-9a-fA-F-]{36})$').firstMatch(payload);
+    if (single != null) {
+      router.push('/quiz', extra: {
+        'topicName': 'Günün Sorusu',
+        'mode': 'practice',
+        'questionId': single.group(1),
+        'count': 1,
+      });
+    }
   }
 
   @override

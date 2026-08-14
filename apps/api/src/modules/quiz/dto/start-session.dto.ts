@@ -20,6 +20,12 @@ export class StartSessionDto {
   @IsBoolean()
   fromBookmarks?: boolean;
 
+  /// Tek soruluk bildirim seansı (Faz 2 push derin bağlantısı): verilirse
+  /// diğer kapsam alanları yok sayılır; practice kurallarıyla 1 soru açılır.
+  @IsOptional()
+  @IsUUID()
+  questionId?: string;
+
   /// Konu çalışması (alıştırma veya konu denemesi). courseId ile birlikte VERİLMEZ.
   @IsOptional()
   @IsUUID()

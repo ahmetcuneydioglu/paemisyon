@@ -28,7 +28,9 @@ import '../domain/quiz_models.dart';
 class QuizScreen extends ConsumerStatefulWidget {
   final String? topicId;
   final String? courseId; // ders geneli deneme
-  final String? articleNo; // Madde Atlası: maddeden seans (Doc 25 §4)
+  final String? articleNo;
+  /// Tek soruluk bildirim seansı (push derin bağlantısı).
+  final String? questionId; // Madde Atlası: maddeden seans (Doc 25 §4)
   final bool fromBookmarks; // Favorilerden seans (Doc 27 B dilimi)
   /// Doluysa yeni seans BAŞLATILMAZ; yarım seans kaldığı yerden açılır (P0-②).
   final String? resumeSessionId;
@@ -49,6 +51,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.topicId,
     this.courseId,
     this.articleNo,
+    this.questionId,
     this.fromBookmarks = false,
     this.resumeSessionId,
     required this.topicName,
@@ -122,6 +125,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           topicId: widget.topicId,
           courseId: widget.courseId,
           articleNo: widget.articleNo,
+          questionId: widget.questionId,
           archiveExamId: widget.archiveExamId,
           personalExam: widget.personalExam,
           fromBookmarks: widget.fromBookmarks,

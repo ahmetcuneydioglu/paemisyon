@@ -19,6 +19,7 @@ class QuizRepository {
     String? courseId,
     String? articleNo,
     String? archiveExamId,
+    String? questionId,
     bool personalExam = false,
     bool fromBookmarks = false,
     int count = 10,
@@ -28,6 +29,8 @@ class QuizRepository {
         '/quiz/sessions',
         data: {
           'mode': mode,
+          // Tek soruluk bildirim seansı (push derin bağlantısı).
+          if (questionId != null) 'questionId': questionId,
           if (topicId != null) 'topicId': topicId,
           if (courseId != null) 'courseId': courseId,
           // Madde Atlası (Doc 25 §4): maddeden seans.

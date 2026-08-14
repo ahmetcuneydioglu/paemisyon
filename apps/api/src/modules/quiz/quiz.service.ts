@@ -70,6 +70,13 @@ export class QuizService {
       return this.startPersonalExam(user, dto.questionCount ?? 100);
     }
 
+    // Tek soruluk bildirim seansı (Faz 2): panelden gönderilen push'un
+    // hedefi. Practice kurallarıyla çalışır — cevap SONRASI açıklama görünür,
+    // istatistiklere normal işlenir; anahtar önceden sızmaz.
+    if (dto.questionId != null) {
+      return this.startSingleQuestion(userId, dto.questionId);
+    }
+
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
     if (dto.mode === 'daily') {
       if (dto.topicId != null || dto.courseId != null) {
@@ -531,6 +538,32 @@ export class QuizService {
     return {
       sessionId: session.id,
       mode: 'daily' as const,
+      plannedDurationSeconds: null,
+      questions,
+    };
+  }
+
+  /** Tek soruluk seans (bildirim derin bağlantısı): yayındaki soru practice
+   *  kurallarıyla açılır — çöz → anlık geri bildirim + açıklama. */
+  private async startSingleQuestion(userId: string, questionId: string) {
+    const q = await this.prisma.question.findFirst({
+      where: { id: questionId, deletedAt: null, currentVersionId: { not: null } },
+      select: { id: true, topicId: true, currentVersionId: true },
+    });
+    if (!q) throw new NotFoundException('Soru bulunamadı ya da yayında değil.');
+    const questions = await this.questionsFromVersionIds([q.currentVersionId!]);
+    const session = await this.prisma.quizSession.create({
+      data: {
+        userId,
+        mode: 'practice',
+        topicId: q.topicId,
+        totalQuestions: 1,
+        questionOrder: [q.currentVersionId!],
+      },
+    });
+    return {
+      sessionId: session.id,
+      mode: 'practice' as const,
       plannedDurationSeconds: null,
       questions,
     };

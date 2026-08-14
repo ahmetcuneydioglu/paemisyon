@@ -12,6 +12,18 @@ interface QuestionItem {
   /// Liste ucu kökü latestVersion içinde döndürür (üst düzey stem YOK).
   latestVersion: { stem: string } | null;
 }
+interface QuestionDetail {
+  id: string;
+  topic: { name: string; course: { name: string } };
+  currentVersionId: string | null;
+  versions: {
+    id: string;
+    status: string;
+    stem: string;
+    explanation: string | null;
+    options: { id: string; label: string; text: string; isCorrect: boolean }[];
+  }[];
+}
 interface SendResult {
   ok: boolean;
   sent?: number;
@@ -32,6 +44,8 @@ export default function NotificationsPage() {
   const [route, setRoute] = useState<string>('daily-quiz');
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<QuestionItem | null>(null);
+  const [explanation, setExplanation] = useState('');
+  const [explanationDirty, setExplanationDirty] = useState(false);
   const [result, setResult] = useState<SendResult | null>(null);
 
   // Soru arama: yayındaki sorulardan seç → metin otomatik dolar.
@@ -42,6 +56,26 @@ export default function NotificationsPage() {
         `/admin/questions?status=published&search=${encodeURIComponent(search)}`,
       ),
     enabled: search.trim().length >= 3,
+  });
+
+  // Seçilen sorunun tam hâli (şıklar + doğru + açıklama) — önizleme/düzenleme.
+  const detail = useQuery({
+    queryKey: ['notif-question-detail', selected?.id],
+    queryFn: () => api<QuestionDetail>(`/admin/questions/${selected!.id}`),
+    enabled: selected != null,
+  });
+  const published =
+    detail.data?.versions.find((v) => v.id === detail.data?.currentVersionId) ??
+    detail.data?.versions[0] ??
+    null;
+
+  const saveExplanation = useMutation({
+    mutationFn: () =>
+      api(`/admin/questions/${selected!.id}/explanation`, {
+        method: 'PATCH',
+        body: { explanation },
+      }),
+    onSuccess: () => setExplanationDirty(false),
   });
 
   const send = useMutation({
@@ -57,13 +91,24 @@ export default function NotificationsPage() {
     const teaser = (q.latestVersion?.stem ?? '').replace(/\s+/g, ' ').trim();
     setBody(teaser.length > 140 ? `${teaser.slice(0, 140).trimEnd()}…` : teaser);
     setTitle('Günün Sorusu 🎯');
-    setRoute('daily-quiz');
+    setRoute(`question:${q.id}`);
     setSearch('');
     setSelected(q);
+    setExplanation('');
+    setExplanationDirty(false);
   }
 
-  function confirmSend() {
+  // Detay yüklenince açıklamayı doldur (kullanıcı yazmaya başladıysa ezme).
+  if (published != null && !explanationDirty && explanation !== (published.explanation ?? '')) {
+    setExplanation(published.explanation ?? '');
+  }
+
+  async function confirmSend() {
     if (!title.trim() || !body.trim()) return;
+    if (selected != null && explanationDirty) {
+      // Açıklama düzenlendi → önce soruya KAYDET (banka güncellenir), sonra gönder.
+      await saveExplanation.mutateAsync();
+    }
     const ok = window.confirm(
       `Bu bildirim TÜM kayıtlı cihazlara gönderilecek:\n\n${title}\n${body}\n\nGönderilsin mi?`,
     );
@@ -82,21 +127,62 @@ export default function NotificationsPage() {
         <Card>
           <div className="space-y-4">
             {selected && (
-              <div className="flex items-start justify-between gap-2 rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm">
-                <div>
-                  <span className="mb-0.5 block text-xs font-medium text-blue-500">
-                    Seçilen soru · {selected.courseName} / {selected.topicName}
+              <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm">
+                <div className="mb-2 flex items-start justify-between gap-2">
+                  <span className="text-xs font-medium text-blue-500">
+                    Seçilen soru · {selected.courseName} / {selected.topicName} — dokunan
+                    kullanıcı BU soruyu çözer, ardından açıklama görür
                   </span>
-                  <span className="text-slate-700">
-                    {(selected.latestVersion?.stem ?? '').slice(0, 120)}…
-                  </span>
+                  <button
+                    onClick={() => {
+                      setSelected(null);
+                      setRoute('daily-quiz');
+                    }}
+                    className="shrink-0 text-xs text-slate-400 hover:text-slate-600"
+                  >
+                    Kaldır
+                  </button>
                 </div>
-                <button
-                  onClick={() => setSelected(null)}
-                  className="shrink-0 text-xs text-slate-400 hover:text-slate-600"
-                >
-                  Kaldır
-                </button>
+                {detail.isFetching ? (
+                  <Spinner />
+                ) : published ? (
+                  <>
+                    <p className="mb-2 font-medium text-slate-800">{published.stem}</p>
+                    <ul className="mb-3 space-y-1">
+                      {published.options.map((o) => (
+                        <li
+                          key={o.id}
+                          className={
+                            o.isCorrect
+                              ? 'rounded bg-emerald-100 px-2 py-1 font-medium text-emerald-800'
+                              : 'px-2 py-1 text-slate-600'
+                          }
+                        >
+                          {o.label}) {o.text} {o.isCorrect ? '✓' : ''}
+                        </li>
+                      ))}
+                    </ul>
+                    <label className="mb-1 block text-xs font-medium text-slate-600">
+                      Açıklama {published.explanation ? '' : '— YOK, buradan ekle (soruya da kaydedilir)'}
+                    </label>
+                    <textarea
+                      value={explanation}
+                      onChange={(e) => {
+                        setExplanation(e.target.value);
+                        setExplanationDirty(true);
+                      }}
+                      rows={3}
+                      placeholder="Doğru cevabın kısa, öğretici açıklaması…"
+                      className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm"
+                    />
+                    {explanationDirty && (
+                      <p className="mt-1 text-xs text-amber-600">
+                        Değişti — gönderirken soruya otomatik kaydedilecek.
+                      </p>
+                    )}
+                    {saveExplanation.isError && <ErrorBox error={saveExplanation.error} />}
+                  </>
+                ) : null}
               </div>
             )}
             <div>
