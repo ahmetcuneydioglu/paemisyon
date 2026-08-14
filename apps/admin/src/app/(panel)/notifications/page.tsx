@@ -9,7 +9,8 @@ interface QuestionItem {
   id: string;
   topicName: string;
   courseName: string;
-  stem: string;
+  /// Liste ucu kökü latestVersion içinde döndürür (üst düzey stem YOK).
+  latestVersion: { stem: string } | null;
 }
 interface SendResult {
   ok: boolean;
@@ -52,7 +53,7 @@ export default function NotificationsPage() {
   });
 
   function fillFromQuestion(q: QuestionItem) {
-    const teaser = q.stem.replace(/\s+/g, ' ').trim();
+    const teaser = (q.latestVersion?.stem ?? '').replace(/\s+/g, ' ').trim();
     setBody(teaser.length > 140 ? `${teaser.slice(0, 140).trimEnd()}…` : teaser);
     setTitle('Günün Sorusu 🎯');
     setRoute('daily-quiz');
@@ -165,8 +166,8 @@ export default function NotificationsPage() {
                   <span className="mb-1 block text-xs text-slate-400">
                     {q.courseName} / {q.topicName}
                   </span>
-                  {q.stem.slice(0, 160)}
-                  {q.stem.length > 160 ? '…' : ''}
+                  {(q.latestVersion?.stem ?? '(kök yok)').slice(0, 160)}
+                  {(q.latestVersion?.stem ?? '').length > 160 ? '…' : ''}
                 </button>
               ))}
               {search.trim().length >= 3 &&
