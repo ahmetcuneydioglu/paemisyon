@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/offline/answer_queue.dart';
@@ -86,6 +87,30 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   // Etkileşimli sayfa kaydırma (drag/peek): parmağı takip eden geçiş.
   final PageController _pageController = PageController();
 
+  // Kaydırma ipucu (coach mark): cihazda EN FAZLA 2 kez, kaydırmanın mümkün
+  // olduğu ilk anda görünür; sayfa değişince/4 sn sonra kaybolur.
+  static const _kSwipeHintCount = 'swipe_hint_count_v1';
+  bool _showSwipeHint = false;
+  Timer? _swipeHintTimer;
+
+  Future<void> _maybeShowSwipeHint() async {
+    if (_showSwipeHint) return;
+    final prefs = await SharedPreferences.getInstance();
+    final count = prefs.getInt(_kSwipeHintCount) ?? 0;
+    if (count >= 2 || !mounted || _isLast) return;
+    await prefs.setInt(_kSwipeHintCount, count + 1);
+    if (!mounted) return;
+    setState(() => _showSwipeHint = true);
+    _swipeHintTimer = Timer(const Duration(seconds: 4), () {
+      if (mounted) setState(() => _showSwipeHint = false);
+    });
+  }
+
+  void _hideSwipeHint() {
+    _swipeHintTimer?.cancel();
+    if (_showSwipeHint && mounted) setState(() => _showSwipeHint = false);
+  }
+
   // Deneme sayacı (gösterge — asıl denetim sunucuda).
   Timer? _timer;
   int _remainingSeconds = 0;
@@ -108,6 +133,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   @override
   void dispose() {
     _timer?.cancel();
+    _swipeHintTimer?.cancel();
     _pageController.dispose();
     super.dispose();
   }
@@ -157,6 +183,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       if (s.plannedDurationSeconds != null) {
         _startTimer(s.plannedDurationSeconds!);
       }
+      if (!_isPractice) _maybeShowSwipeHint();
     } catch (e) {
       setState(() => _loadError = e);
     }
@@ -214,6 +241,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         AppHaptics.wrong();
       }
       setState(() => _feedback = fb); // geri bildirimi göster
+      _maybeShowSwipeHint();
     } on NetworkFailure {
       await _queueOffline(selected, timeSpent); // çevrimdışı → kuyruğa al, ilerle
     } on ExamTimeOverFailure {
@@ -578,14 +606,26 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         // aynı: practice'te cevaplamadan sürüklenemez; geriye sürükleme yok
         // (cevaplar sunucuya işlendi). Gönderim, sayfa DEĞİŞTİĞİNDE yapılır —
         // buton ve kaydırma tek yoldan geçer.
-        child: PageView.builder(
-          controller: _pageController,
-          physics: (_isPractice && _feedback == null)
-              ? const NeverScrollableScrollPhysics()
-              : _NoBackPagePhysics(currentPage: _index),
-          onPageChanged: _onPageChanged,
-          itemCount: total,
-          itemBuilder: (context, i) => _questionPage(i),
+        child: Stack(
+          children: [
+            PageView.builder(
+              controller: _pageController,
+              physics: (_isPractice && _feedback == null)
+                  ? const NeverScrollableScrollPhysics()
+                  : _NoBackPagePhysics(currentPage: _index),
+              onPageChanged: _onPageChanged,
+              itemCount: total,
+              itemBuilder: (context, i) => _questionPage(i),
+            ),
+            // Kaydırma ipucu (ilk 2 kullanım) — dokunuşları engellemez.
+            if (_showSwipeHint)
+              const Positioned(
+                left: 0,
+                right: 0,
+                bottom: 96,
+                child: IgnorePointer(child: _SwipeHint()),
+              ),
+          ],
         ),
       ),
     );
@@ -666,6 +706,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   /// kapatılır; deneme/exam'de önceki sorunun cevabı arka planda gönderilir.
   void _onPageChanged(int i) {
     if (i == _index) return;
+    _hideSwipeHint();
     final prevQ = _session!.questions[_index];
     final prevSelected = _selected;
     final timeSpent = DateTime.now().difference(_qStart).inMilliseconds;
@@ -778,6 +819,58 @@ class _CoachExplanation extends StatelessWidget {
   }
 }
 
+
+/// Kaydırma ipucu: sola süzülen ok + etiket (Reduce Motion'da sabit durur).
+class _SwipeHint extends StatefulWidget {
+  const _SwipeHint();
+  @override
+  State<_SwipeHint> createState() => _SwipeHintState();
+}
+
+class _SwipeHintState extends State<_SwipeHint>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+      vsync: this, duration: const Duration(milliseconds: 900))
+    ..repeat(reverse: true);
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    final animate = !AppMotion.reduceMotion;
+    return Center(
+      child: AnimatedBuilder(
+        animation: _c,
+        builder: (context, child) => Transform.translate(
+          offset: Offset(animate ? -8 * _c.value : 0, 0),
+          child: child,
+        ),
+        child: Container(
+          padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
+          decoration: BoxDecoration(
+            color: tokens.ink.withValues(alpha: .82),
+            borderRadius: BorderRadius.circular(99),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.swipe_left_rounded, size: 20, color: tokens.surface),
+              const SizedBox(width: AppSpacing.sm),
+              Text('Kaydırarak sonraki soruya geç',
+                  style: AppTypography.label.copyWith(color: tokens.surface)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 /// Geriye sürüklemeyi engelleyen sayfa fiziği: kullanıcı yalnız İLERİ
 /// sürükleyebilir (cevaplar sunucuya işlendiği için geri dönüş yok).
