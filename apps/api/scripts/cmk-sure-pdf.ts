@@ -146,12 +146,35 @@ function html(qs: Soru[]): string {
   </body></html>`;
 }
 
+/** Aynı seçimi sistemin içe aktarma şablonuna yazar (soru|A-E|dogru|aciklama|zorluk).
+ *  Açıklamaya dayanak madde eklenir — uygulamada öğrenciye görünür. */
+async function writeImportXlsx(secim: Soru[], path: string) {
+  const ExcelJS = (await import('exceljs')).default;
+  const wb = new ExcelJS.Workbook();
+  const ws = wb.addWorksheet('sorular');
+  ws.addRow(['soru', 'A', 'B', 'C', 'D', 'E', 'dogru', 'aciklama', 'zorluk']);
+  for (const q of secim) {
+    ws.addRow([
+      q.stem,
+      ...q.options,
+      'ABCDE'[q.dogruIndex],
+      `${q.aciklama} (Dayanak: CMK m. ${q.madde})`,
+      q.zorluk, // parser kolay/orta/zor'u tanır
+    ]);
+  }
+  ws.getRow(1).font = { bold: true };
+  ws.columns.forEach((c, i) => (c.width = i === 0 ? 70 : i === 7 ? 60 : 22));
+  await wb.xlsx.writeFile(path);
+  console.log(`İçe aktarma XLSX: ${path} (${secim.length} soru)`);
+}
+
 async function main() {
-  const [src, dst] = process.argv.slice(2);
+  const [src, dst, xlsxOut] = process.argv.slice(2);
   const data = JSON.parse(fs.readFileSync(src, 'utf8')) as { onayli: Soru[] };
   const uniq = dedupe(data.onayli);
   console.log(`onaylı: ${data.onayli.length} · mükerrer sonrası: ${uniq.length}`);
   const secim = balance(pick100(uniq));
+  if (xlsxOut) await writeImportXlsx(secim, xlsxOut);
   console.log(
     `seçim: ${secim.length} (kolay ${secim.filter((q) => q.zorluk === 'kolay').length} / orta ${secim.filter((q) => q.zorluk === 'orta').length} / zor ${secim.filter((q) => q.zorluk === 'zor').length})`,
   );
