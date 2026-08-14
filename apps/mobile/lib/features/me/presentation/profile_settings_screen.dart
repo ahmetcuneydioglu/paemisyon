@@ -265,10 +265,22 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
                 final ok = await ref
                     .read(reminderSettingsProvider.notifier)
                     .setEnabled(v);
-                if (!ok && v && context.mounted) {
+                if (!context.mounted) return;
+                if (!ok && v) {
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       content: Text(
                           'Bildirim izni verilmedi. Ayarlar > Bildirimler\'den açabilirsin.')));
+                } else if (ok && v) {
+                  // Kur-doğrulama: kaç bildirim zamanlandı, kullanıcı görsün.
+                  final n = await ref
+                      .read(notificationServiceProvider)
+                      .pendingCount();
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text(
+                            '✅ $n bildirim kuruldu — ilki bugün/yarın saat '
+                            '${ref.read(reminderSettingsProvider).time.format(context)}.')));
+                  }
                 }
               },
             ),
@@ -286,6 +298,28 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
                     await ref
                         .read(reminderSettingsProvider.notifier)
                         .setTime(picked);
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: Text(
+                              '✅ Hatırlatma saati ${picked.format(context)} olarak kuruldu.')));
+                    }
+                  }
+                },
+              ),
+            if (reminder.enabled)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: const SizedBox(width: 24),
+                title: const Text('Test bildirimi gönder'),
+                subtitle:
+                    const Text('5 saniye içinde gelir — kurulumu doğrular.'),
+                trailing: const Icon(Icons.send_rounded),
+                onTap: () async {
+                  await ref.read(notificationServiceProvider).sendTest();
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                        content: Text(
+                            'Test gönderildi — uygulamayı kapatmana gerek yok.')));
                   }
                 },
               ),

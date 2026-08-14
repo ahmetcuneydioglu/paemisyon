@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/notifications/notification_service.dart';
@@ -24,6 +25,65 @@ import '../data/me_repository.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
 
+/// Tek seferlik bildirim daveti — oturum içinde ve cihazda bir kez.
+bool _reminderOfferInFlight = false;
+Future<void> _maybeOfferReminder(BuildContext context, WidgetRef ref) async {
+  if (_reminderOfferInFlight) return;
+  _reminderOfferInFlight = true;
+  const kFlag = 'notif_offer_shown_v1';
+  final prefs = await SharedPreferences.getInstance();
+  if (prefs.getBool(kFlag) == true ||
+      ref.read(reminderSettingsProvider).enabled) {
+    return; // zaten soruldu ya da açık
+  }
+  await prefs.setBool(kFlag, true); // bir kez — reddedene ısrar yok
+  if (!context.mounted) return;
+  final accept = await showModalBottomSheet<bool>(
+    context: context,
+    showDragHandle: true,
+    builder: (ctx) => SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(
+            AppSpacing.xl, 0, AppSpacing.xl, AppSpacing.xl),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          Icon(Icons.notifications_active_rounded,
+              size: 40, color: ctx.tokens.brand),
+          const SizedBox(height: AppSpacing.md),
+          Text('Günün sorusu her akşam cebine gelsin mi?',
+              textAlign: TextAlign.center,
+              style: AppTypography.heading.copyWith(color: ctx.tokens.ink)),
+          const SizedBox(height: AppSpacing.sm),
+          Text(
+            'Her akşam 19.00\'da tek soruluk kısa bir hatırlatma — '
+            'serin kopmasın. Saatini Ayarlar\'dan değiştirebilirsin.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body.copyWith(color: ctx.tokens.inkSoft),
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          SizedBox(
+            width: double.infinity,
+            child: FilledButton(
+                onPressed: () => Navigator.pop(ctx, true),
+                child: const Text('Bildirimleri Aç')),
+          ),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: const Text('Şimdi değil')),
+        ]),
+      ),
+    ),
+  );
+  if (accept == true) {
+    final ok =
+        await ref.read(reminderSettingsProvider.notifier).setEnabled(true);
+    if (!ok && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text(
+              'Bildirim izni verilmedi — Ayarlar > Bildirimler\'den açabilirsin.')));
+    }
+  }
+}
+
 /// Kişisel Koç ana ekranı (Doc 19 §4). Dashboard DEĞİL: "bugün benim için
 /// ne var?" sorusunun cevabı. Kartlar SUNUCUDAN gelir; bu ekran hiçbir kural
 /// bilmez — yalnız çizer ve dokunuşu yönlendirir. Tek istek: GET /me/coach.
@@ -44,6 +104,10 @@ class HomeScreen extends ConsumerWidget {
       if (b != null) {
         ref.read(reminderSettingsProvider.notifier).syncWithGoal(
             goalMetToday: b.goal > 0 && b.answered >= b.goal);
+        // Tek seferlik izin daveti: kullanıcı ayarları keşfetmek zorunda
+        // kalmasın — koç ekrana ilk gelişte nazikçe sorar (reddedilirse bir
+        // daha çıkmaz; ayarlardan her zaman açılabilir).
+        _maybeOfferReminder(context, ref);
       }
     });
 

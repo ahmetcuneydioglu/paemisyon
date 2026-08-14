@@ -39,7 +39,13 @@ class NotificationService {
       final name = await FlutterTimezone.getLocalTimezone();
       tz.setLocalLocation(tz.getLocation(name));
     } catch (_) {
-      // Bilinmeyen kimlik → UTC'de kalır; hatırlatıcı yine kurulur.
+      // Kimlik çözülemedi → UTC'ye DÜŞME (Türkiye'de bildirim 3 saat geç
+      // gelirdi). Cihazın o anki UTC farkından sabit-ofset bölge kur:
+      // Etc/GMT adlandırması ters işaretlidir (UTC+3 → Etc/GMT-3).
+      try {
+        final off = DateTime.now().timeZoneOffset.inHours;
+        tz.setLocalLocation(tz.getLocation('Etc/GMT${off >= 0 ? '-' : '+'}${off.abs()}'));
+      } catch (_) {/* son çare: UTC */}
     }
     await _plugin.initialize(
       const InitializationSettings(
@@ -116,16 +122,7 @@ class NotificationService {
         teaser ??
             'Bugünkü hedefin seni bekliyor — kısa bir seans seriyi korur.',
         at,
-        const NotificationDetails(
-          android: AndroidNotificationDetails(
-            'daily_reminder',
-            'Günlük hatırlatıcı',
-            channelDescription:
-                'Günün sorusu ve çalışma serisi hatırlatıcısı',
-            importance: Importance.defaultImportance,
-          ),
-          iOS: DarwinNotificationDetails(),
-        ),
+        _details,
         // Kesin alarm İZNİ istememek için inexact — dakikası dakikasına şart değil.
         androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         uiLocalNotificationDateInterpretation:
@@ -135,11 +132,48 @@ class NotificationService {
     }
   }
 
+  static const _details = NotificationDetails(
+    android: AndroidNotificationDetails(
+      'daily_reminder',
+      'Günlük hatırlatıcı',
+      channelDescription: 'Günün sorusu ve çalışma serisi hatırlatıcısı',
+      importance: Importance.defaultImportance,
+    ),
+    // iOS: uygulama ÖN PLANDAYKEN de banner göster — kullanıcı saati test
+    // ederken uygulama açıksa bildirim "kaybolmasın".
+    iOS: DarwinNotificationDetails(
+        presentAlert: true, presentBanner: true, presentSound: true),
+  );
+
   Future<void> cancelDaily() async {
     await _ensureInitialized();
     for (var i = 0; i < _scheduleDays; i++) {
       await _plugin.cancel(_idDaily + i);
     }
+  }
+
+  /// Kurulu bekleyen bildirim sayısı (ayarlar ekranı doğrulama geri bildirimi).
+  Future<int> pendingCount() async {
+    await _ensureInitialized();
+    return (await _plugin.pendingNotificationRequests()).length;
+  }
+
+  /// 5 saniye sonra tek seferlik TEST bildirimi — izin/kurulum sorununu
+  /// saniyeler içinde ayrıştırır (gelmiyorsa sorun izinde/sistemde,
+  /// geliyorsa zamanlamada değildir).
+  Future<void> sendTest() async {
+    await _ensureInitialized();
+    await _plugin.zonedSchedule(
+      1999,
+      'Test bildirimi ✅',
+      'Bildirimler çalışıyor — dokununca Günün Sorusu açılır.',
+      tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
+      _details,
+      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
+      payload: payloadDailyQuiz,
+    );
   }
 }
 
