@@ -21,6 +21,12 @@ class NotificationService {
   static const _kHour = 'daily_reminder_hour';
   static const _kMinute = 'daily_reminder_minute';
 
+  /// Kullanıcı bu tarihte ELLE kurulum yaptı (aç/saat değiştir) — o gün
+  /// otomatik senkron bugünkü bildirimi İPTAL EDEMEZ. Aksi hâlde "saati
+  /// kurdum, Bugün'e döndüm, hedefim dolu diye bildirim silindi" tuzağı
+  /// oluşuyordu (yaşandı).
+  static const _kManualDate = 'daily_reminder_manual_date';
+
   /// Bildirime dokunuş yönlendiricisi — app kabuğu router'a bağlar.
   /// (Servis navigasyon bilmez; payload üst katmanda rotaya çevrilir.)
   static void Function(String payload)? onTap;
@@ -49,7 +55,8 @@ class NotificationService {
     }
     await _plugin.initialize(
       const InitializationSettings(
-        android: AndroidInitializationSettings('@mipmap/ic_launcher'),
+        // Durum çubuğu ikonu: beyaz Nişangâh P silueti (brand/notify-icon.svg).
+        android: AndroidInitializationSettings('@drawable/ic_stat_notify'),
         iOS: DarwinInitializationSettings(
           // İzin, kullanıcı ayarı AÇTIĞINDA istenir (requestPermission) —
           // uygulama açılışında sormayız.
@@ -231,13 +238,27 @@ class ReminderSettingsNotifier extends Notifier<ReminderSettings> {
     }
   }
 
+  static String _todayKey() {
+    final n = DateTime.now();
+    return '${n.year}-${n.month}-${n.day}';
+  }
+
+  Future<void> _markManualToday() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(NotificationService._kManualDate, _todayKey());
+  }
+
   /// Bildirim penceresini (5 gün) tazeler — her uygulama açılışında çağrılır.
-  /// [goalMetToday] true ise bugünkü atlanır.
+  /// [goalMetToday] true ise bugünkü atlanır — AMA kullanıcı bugün elle
+  /// kurulum yaptıysa atlanmaz (elle kurulan bildirim silinmez).
   Future<void> refreshQueue({bool goalMetToday = false}) async {
     if (!state.enabled) return;
+    final prefs = await SharedPreferences.getInstance();
+    final manualToday =
+        prefs.getString(NotificationService._kManualDate) == _todayKey();
     final teasers = await _fetchTeasers();
     await _service.scheduleDaily(state.time,
-        skipToday: goalMetToday, teasers: teasers);
+        skipToday: goalMetToday && !manualToday, teasers: teasers);
   }
 
   /// Açarken izin ister; reddedilirse false döner ve ayar kapalı kalır.
@@ -245,6 +266,7 @@ class ReminderSettingsNotifier extends Notifier<ReminderSettings> {
     if (enabled) {
       final granted = await _service.requestPermission();
       if (!granted) return false;
+      await _markManualToday();
       await _service.scheduleDaily(state.time, teasers: await _fetchTeasers());
     } else {
       await _service.cancelDaily();
@@ -261,6 +283,7 @@ class ReminderSettingsNotifier extends Notifier<ReminderSettings> {
     await prefs.setInt(NotificationService._kHour, time.hour);
     await prefs.setInt(NotificationService._kMinute, time.minute);
     if (state.enabled) {
+      await _markManualToday();
       await _service.scheduleDaily(time, teasers: await _fetchTeasers());
     }
   }
