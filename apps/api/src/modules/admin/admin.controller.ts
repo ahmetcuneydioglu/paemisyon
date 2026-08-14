@@ -64,19 +64,21 @@ export class AdminController {
   @Roles('admin')
   async sendPush(
     @CurrentUser() actor: AuthenticatedUser,
-    @Body() body: { title?: string; body?: string; route?: string },
+    @Body() body: { title?: string; body?: string; route?: string; audience?: string },
   ) {
     const title = body.title?.trim();
     const text = body.body?.trim();
     if (!title || !text) {
       throw new BadRequestException('Başlık ve metin zorunlu.');
     }
+    const audience = body.audience === 'inactive-today' ? 'inactive-today' : 'all';
     const result = await this.push.sendToAll({
       title,
       body: text,
       route: body.route?.trim() || undefined,
+      audience,
     });
-    await this.audit.log(actor, 'notification.send', 'push', 'all', {
+    await this.audit.log(actor, 'notification.send', 'push', audience, {
       title,
       route: body.route ?? null,
       ...result,

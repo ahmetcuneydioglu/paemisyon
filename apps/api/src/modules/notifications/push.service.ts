@@ -54,11 +54,30 @@ export class PushService implements OnModuleInit {
   /** Tüm cihazlara bildirim. [data.route] mobilde derin bağlantıya çevrilir.
    *  Metinde {ad} geçerse her kullanıcının adıyla KİŞİSELLEŞTİRİLİR
    *  ("Merhaba Ahmet, günün quizini unutma"). Geçersiz token'lar silinir. */
-  async sendToAll(params: { title: string; body: string; route?: string }) {
+  async sendToAll(params: {
+    title: string;
+    body: string;
+    route?: string;
+    /** 'inactive-today': yalnız BUGÜN hiç soru çözmemiş kullanıcılar
+     *  (seri hatırlatması — işini bitirmiş kullanıcı rahatsız edilmez). */
+    audience?: 'all' | 'inactive-today';
+  }) {
     if (!this.app) {
       return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
     }
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
     const tokens = await this.prisma.pushToken.findMany({
+      where:
+        params.audience === 'inactive-today'
+          ? {
+              user: {
+                quizSessions: {
+                  none: { answers: { some: { answeredAt: { gte: today } } } },
+                },
+              },
+            }
+          : undefined,
       select: { token: true, user: { select: { displayName: true } } },
     });
     if (tokens.length === 0) return { ok: true, sent: 0, failed: 0 };

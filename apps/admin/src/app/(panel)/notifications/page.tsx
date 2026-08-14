@@ -43,11 +43,13 @@ const TEMPLATES = {
     title: 'Günün Quizi hazır 🗓️',
     body: 'Merhaba {ad}! Bugünün 10 sorusu yayında — çöz, sıralamadaki yerini al.',
     route: 'daily-quiz',
+    audience: 'all',
   },
   seriHatirlatma: {
     title: 'Serin seni bekliyor 🔥',
     body: '{ad}, bugün henüz soru çözmedin — kısa bir seans seriyi korur.',
     route: 'daily-quiz',
+    audience: 'inactive-today',
   },
 } as const;
 
@@ -56,6 +58,7 @@ export default function NotificationsPage() {
   const [title, setTitle] = useState('Günün Sorusu 🎯');
   const [body, setBody] = useState('');
   const [route, setRoute] = useState<string>('daily-quiz');
+  const [audience, setAudience] = useState<'all' | 'inactive-today'>('all');
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<QuestionItem | null>(null);
   const [explanation, setExplanation] = useState('');
@@ -96,15 +99,21 @@ export default function NotificationsPage() {
     mutationFn: () =>
       api<SendResult>('/admin/notifications/send', {
         method: 'POST',
-        body: { title, body, route: route || undefined },
+        body: { title, body, route: route || undefined, audience },
       }),
     onSuccess: (r) => setResult(r),
   });
 
-  function applyTemplate(t: { title: string; body: string; route: string }) {
+  function applyTemplate(t: {
+    title: string;
+    body: string;
+    route: string;
+    audience: 'all' | 'inactive-today';
+  }) {
     setTitle(t.title);
     setBody(t.body);
     setRoute(t.route);
+    setAudience(t.audience);
     setSelected(null);
     setSearch('');
   }
@@ -131,8 +140,12 @@ export default function NotificationsPage() {
       // Açıklama düzenlendi → önce soruya KAYDET (banka güncellenir), sonra gönder.
       await saveExplanation.mutateAsync();
     }
+    const kitle =
+      audience === 'inactive-today'
+        ? 'YALNIZ bugün soru çözmemiş kullanıcılara'
+        : 'TÜM kayıtlı cihazlara';
     const ok = window.confirm(
-      `Bu bildirim TÜM kayıtlı cihazlara gönderilecek:\n\n${title}\n${body}\n\nGönderilsin mi?`,
+      `Bu bildirim ${kitle} gönderilecek:\n\n${title}\n${body}\n\nGönderilsin mi?`,
     );
     if (ok) send.mutate();
   }
@@ -251,16 +264,33 @@ export default function NotificationsPage() {
             </div>
             <div>
               <label className="mb-1 block text-sm font-medium">Dokununca açılacak ekran</label>
+              {selected ? (
+                <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-500">
+                  Seçilen soru (tek soruluk seans) — soru kaldırılırsa seçim geri açılır
+                </div>
+              ) : (
+                <select
+                  value={route}
+                  onChange={(e) => setRoute(e.target.value)}
+                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                >
+                  {ROUTES.map((r) => (
+                    <option key={r.value} value={r.value}>
+                      {r.label}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </div>
+            <div>
+              <label className="mb-1 block text-sm font-medium">Kime gidecek</label>
               <select
-                value={route}
-                onChange={(e) => setRoute(e.target.value)}
+                value={audience}
+                onChange={(e) => setAudience(e.target.value as 'all' | 'inactive-today')}
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
               >
-                {ROUTES.map((r) => (
-                  <option key={r.value} value={r.value}>
-                    {r.label}
-                  </option>
-                ))}
+                <option value="all">Herkese</option>
+                <option value="inactive-today">Yalnız bugün soru çözmemiş olanlara</option>
               </select>
             </div>
             <button
