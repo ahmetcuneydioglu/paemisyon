@@ -6,6 +6,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
+import { PushService } from '../notifications/push.service';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 
 /// GET/PATCH /api/v1/me — profil + entitlement (Doc 7 §4.2). Kimlik zorunlu.
@@ -15,7 +16,31 @@ export class UsersController {
   constructor(
     private readonly prisma: PrismaService,
     private readonly users: UsersService,
+    private readonly push: PushService,
   ) {}
+
+  // ── FCM cihaz token'ı (Faz 2 push) — kayıt/geri alma ──
+  @Post('push-token')
+  registerPushToken(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { token?: string; platform?: string },
+  ) {
+    if (!body.token) return { ok: false };
+    return this.push.registerToken(
+      user.id,
+      body.token,
+      body.platform === 'android' ? 'android' : 'ios',
+    );
+  }
+
+  @Delete('push-token')
+  removePushToken(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { token?: string },
+  ) {
+    if (!body.token) return { ok: false };
+    return this.push.removeToken(user.id, body.token);
+  }
 
   @Get()
   async me(@CurrentUser() user: AuthenticatedUser) {

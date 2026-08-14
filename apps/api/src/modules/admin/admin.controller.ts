@@ -19,6 +19,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
+import { PushService } from '../notifications/push.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AdminDashboardService } from './dashboard/admin-dashboard.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
@@ -55,7 +56,33 @@ export class AdminController {
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
     private readonly settings: SettingsService,
+    private readonly push: PushService,
   ) {}
+
+  // ── Push gönderimi (Faz 2) — yalnız admin; denetim kaydına yazılır ──
+  @Post('notifications/send')
+  @Roles('admin')
+  async sendPush(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body() body: { title?: string; body?: string; route?: string },
+  ) {
+    const title = body.title?.trim();
+    const text = body.body?.trim();
+    if (!title || !text) {
+      throw new BadRequestException('Başlık ve metin zorunlu.');
+    }
+    const result = await this.push.sendToAll({
+      title,
+      body: text,
+      route: body.route?.trim() || undefined,
+    });
+    await this.audit.log(actor, 'notification.send', 'push', 'all', {
+      title,
+      route: body.route ?? null,
+      ...result,
+    });
+    return result;
+  }
 
   // ── Uygulama ayarları ──
   @Get('settings')

@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/notifications/notification_service.dart';
+import '../../../core/notifications/push_service.dart';
 import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
@@ -108,6 +109,8 @@ class HomeScreen extends ConsumerWidget {
         // kalmasın — koç ekrana ilk gelişte nazikçe sorar (reddedilirse bir
         // daha çıkmaz; ayarlardan her zaman açılabilir).
         _maybeOfferReminder(context, ref);
+        // FCM token kaydı (Faz 2) — idempotent; yapılandırma yoksa sessiz.
+        ref.read(pushServiceProvider).register();
       }
     });
 

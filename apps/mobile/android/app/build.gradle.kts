@@ -49,3 +49,9 @@ flutter {
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
+
+// FCM (Faz 2): google-services.json Firebase konsolundan indirilip
+// android/app/ altına konunca etkinleşir; yokken build normal çalışır.
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
+}

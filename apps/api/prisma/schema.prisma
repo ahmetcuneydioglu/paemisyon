@@ -118,9 +118,25 @@ model User {
   questionReports  QuestionReport[]
   badges           UserBadge[]
   masterySnapshots TopicMasterySnapshot[]
+  pushTokens       PushToken[]
   preferredModule  ExamType?              @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
+}
+
+/// FCM cihaz token'ı (Faz 2 push). Token cihaza aittir: aynı cihazda hesap
+/// değişirse upsert userId'yi taşır — eski hesaba bu cihazdan push gitmez.
+/// KVKK: hesap silinince cascade ile token da silinir.
+model PushToken {
+  token     String   @id
+  userId    String   @map("user_id") @db.Uuid
+  platform  String // 'ios' | 'android'
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("push_tokens")
 }
 
 model AuthIdentity {

@@ -165,6 +165,17 @@ class NotificationService {
     return (await _plugin.pendingNotificationRequests()).length;
   }
 
+  /// Anında yerel bildirim — ön planda gelen PUSH mesajını kullanıcıya
+  /// göstermek için (Faz 2; iOS ön planda sistem banner'ı basmaz).
+  Future<void> showNow({
+    required String title,
+    required String body,
+    String? payload,
+  }) async {
+    await _ensureInitialized();
+    await _plugin.show(1998, title, body, _details, payload: payload);
+  }
+
   /// 5 saniye sonra tek seferlik TEST bildirimi — izin/kurulum sorununu
   /// saniyeler içinde ayrıştırır (gelmiyorsa sorun izinde/sistemde,
   /// geliyorsa zamanlamada değildir).

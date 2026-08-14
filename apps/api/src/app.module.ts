@@ -17,6 +17,7 @@ import { HealthModule } from './modules/health/health.module';
 import { ProgressModule } from './modules/progress/progress.module';
 import { AiModule } from './modules/ai/ai.module';
 import { PublicModule } from './modules/public/public.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
@@ -51,6 +52,7 @@ import { UsersModule } from './modules/users/users.module';
     AdminModule,
     HealthModule,
     UsersModule,
+    NotificationsModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })

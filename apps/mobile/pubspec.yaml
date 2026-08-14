@@ -32,6 +32,10 @@ dependencies:
   # Güvenli/yerel depolama (kimlik token'ı Sprint 1'de kullanılacak)
   flutter_secure_storage: ^9.2.2
   shared_preferences: ^2.3.3
+  # FCM push (Faz 2) — firebase_options.dart 'flutterfire configure' ile üretilir;
+  # repodaki stub yapılandırma gelene dek push'u sessizce devre dışı bırakır.
+  firebase_core: ^4.4.0
+  firebase_messaging: ^16.1.0
 
   # Offline (Sprint 5): bağlantı durumu. Kalıcı kuyruk shared_preferences ile.
   # (Tam offline soru-bankası cache'i için Drift ileride eklenecek.)

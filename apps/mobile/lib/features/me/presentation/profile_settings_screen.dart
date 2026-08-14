@@ -5,6 +5,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/notifications/notification_service.dart';
+import '../../../core/notifications/push_service.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/theme_mode_provider.dart';
 import '../../../shared/widgets/error_state.dart';
@@ -358,7 +359,11 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
             contentPadding: EdgeInsets.zero,
             leading: const Icon(Icons.logout_rounded),
             title: const Text('Çıkış yap'),
-            onTap: () => ref.read(authRepositoryProvider).signOut()),
+            onTap: () async {
+              // Push token'ı bu cihazdan sök (KVKK) — sonra oturumu kapat.
+              await ref.read(pushServiceProvider).unregister();
+              await ref.read(authRepositoryProvider).signOut();
+            }),
         const Divider(),
         ListTile(
             contentPadding: EdgeInsets.zero,
