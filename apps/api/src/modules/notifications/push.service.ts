@@ -52,25 +52,48 @@ export class PushService implements OnModuleInit {
   }
 
   /** Tüm cihazlara bildirim. [data.route] mobilde derin bağlantıya çevrilir.
-   *  Geçersiz token'lar yanıttan ayıklanıp DB'den silinir. */
+   *  Metinde {ad} geçerse her kullanıcının adıyla KİŞİSELLEŞTİRİLİR
+   *  ("Merhaba Ahmet, günün quizini unutma"). Geçersiz token'lar silinir. */
   async sendToAll(params: { title: string; body: string; route?: string }) {
     if (!this.app) {
       return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
     }
-    const tokens = await this.prisma.pushToken.findMany({ select: { token: true } });
+    const tokens = await this.prisma.pushToken.findMany({
+      select: { token: true, user: { select: { displayName: true } } },
+    });
     if (tokens.length === 0) return { ok: true, sent: 0, failed: 0 };
+
+    const personalize = params.title.includes('{ad}') || params.body.includes('{ad}');
+    const fill = (tpl: string, name: string) => tpl.replaceAll('{ad}', name);
+    const firstName = (dn: string | null | undefined) =>
+      (dn ?? '').trim().split(/\s+/)[0] || 'Aday';
 
     let sent = 0;
     const dead: string[] = [];
-    const CHUNK = 500; // FCM multicast sınırı
+    const CHUNK = 500; // FCM istek sınırı (multicast ve sendEach için aynı)
     for (let i = 0; i < tokens.length; i += CHUNK) {
-      const chunk = tokens.slice(i, i + CHUNK).map((t) => t.token);
-      const res = await getMessaging(this.app).sendEachForMulticast({
-        tokens: chunk,
-        notification: { title: params.title, body: params.body },
-        data: params.route ? { route: params.route } : {},
+      const chunk = tokens.slice(i, i + CHUNK);
+      const data: Record<string, string> = params.route ? { route: params.route } : {};
+      const base = {
+        data,
         apns: { payload: { aps: { sound: 'default' } } },
-      });
+      };
+      const res = personalize
+        ? await getMessaging(this.app).sendEach(
+            chunk.map((t) => ({
+              token: t.token,
+              notification: {
+                title: fill(params.title, firstName(t.user.displayName)),
+                body: fill(params.body, firstName(t.user.displayName)),
+              },
+              ...base,
+            })),
+          )
+        : await getMessaging(this.app).sendEachForMulticast({
+            tokens: chunk.map((t) => t.token),
+            notification: { title: params.title, body: params.body },
+            ...base,
+          });
       res.responses.forEach((r: { success: boolean; error?: { code?: string } }, j: number) => {
         if (r.success) {
           sent++;
@@ -80,7 +103,7 @@ export class PushService implements OnModuleInit {
             code.includes('registration-token-not-registered') ||
             code.includes('invalid-argument')
           ) {
-            dead.push(chunk[j]);
+            dead.push(chunk[j].token);
           }
         }
       });

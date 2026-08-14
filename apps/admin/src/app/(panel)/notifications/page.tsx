@@ -33,9 +33,23 @@ interface SendResult {
 }
 
 const ROUTES = [
-  { value: 'daily-quiz', label: 'Günün Sorusu ekranı (önerilen)' },
+  { value: 'daily-quiz', label: 'Günün Quizi ekranı (10 soru)' },
   { value: '', label: 'Yalnız uygulamayı aç' },
 ] as const;
+
+/// Hazır şablonlar — {ad} her kullanıcının kendi adıyla değişir (sunucuda).
+const TEMPLATES = {
+  gununQuizi: {
+    title: 'Günün Quizi hazır 🗓️',
+    body: 'Merhaba {ad}! Bugünün 10 sorusu yayında — çöz, sıralamadaki yerini al.',
+    route: 'daily-quiz',
+  },
+  seriHatirlatma: {
+    title: 'Serin seni bekliyor 🔥',
+    body: '{ad}, bugün henüz soru çözmedin — kısa bir seans seriyi korur.',
+    route: 'daily-quiz',
+  },
+} as const;
 
 /** Push gönderimi (Faz 2): tüm cihazlara bildirim — istersen bir sorudan doldur. */
 export default function NotificationsPage() {
@@ -87,6 +101,14 @@ export default function NotificationsPage() {
     onSuccess: (r) => setResult(r),
   });
 
+  function applyTemplate(t: { title: string; body: string; route: string }) {
+    setTitle(t.title);
+    setBody(t.body);
+    setRoute(t.route);
+    setSelected(null);
+    setSearch('');
+  }
+
   function fillFromQuestion(q: QuestionItem) {
     const teaser = (q.latestVersion?.stem ?? '').replace(/\s+/g, ' ').trim();
     setBody(teaser.length > 140 ? `${teaser.slice(0, 140).trimEnd()}…` : teaser);
@@ -126,6 +148,27 @@ export default function NotificationsPage() {
         {/* ── Sol: mesaj formu ── */}
         <Card>
           <div className="space-y-4">
+            <div>
+              <label className="mb-1 block text-sm font-medium">Hazır şablon</label>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => applyTemplate(TEMPLATES.gununQuizi)}
+                  className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium hover:border-blue-400 hover:bg-blue-50"
+                >
+                  🗓️ Günün Quizi hatırlatması
+                </button>
+                <button
+                  onClick={() => applyTemplate(TEMPLATES.seriHatirlatma)}
+                  className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium hover:border-blue-400 hover:bg-blue-50"
+                >
+                  🔥 Seri hatırlatması
+                </button>
+              </div>
+              <p className="mt-1 text-xs text-slate-400">
+                Metindeki <code className="rounded bg-slate-100 px-1">{'{ad}'}</code> her
+                kullanıcının kendi adıyla değişir (örn. &quot;Merhaba Ahmet!&quot;).
+              </p>
+            </div>
             {selected && (
               <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm">
                 <div className="mb-2 flex items-start justify-between gap-2">
