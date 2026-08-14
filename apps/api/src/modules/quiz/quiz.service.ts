@@ -504,8 +504,20 @@ export class QuizService {
       });
     }
 
-    const questions = await this.pickDailyQuestions();
-    // Yarım kalan oturum → aynı oturum + aynı (deterministik) sorularla devam.
+    // Yarım kalan oturum → sorular oturumda SAKLANAN sıradan servis edilir.
+    // (Tarih tohumu deterministik olsa da HAVUZ gün içinde değişebilir —
+    // yeni soru yayınlanınca aynı tohum farklı set üretir; taze seçim
+    // yapılsaydı ekrandaki sorular oturumun questionOrder'ıyla çelişir ve
+    // cevaplar üyelik denetimine takılırdı. Canlıda yaşandı.)
+    const existingOrder =
+      existing != null && Array.isArray(existing.questionOrder)
+        ? (existing.questionOrder as string[])
+        : null;
+    const questions =
+      existingOrder != null && existingOrder.length > 0
+        ? await this.questionsFromVersionIds(existingOrder)
+        : await this.pickDailyQuestions();
+
     const session =
       existing ??
       (await this.prisma.quizSession.create({
@@ -522,6 +534,35 @@ export class QuizService {
       plannedDurationSeconds: null,
       questions,
     };
+  }
+
+  /** Saklanan questionOrder'daki sürümleri, sırayı koruyarak soru listesine
+   *  çevirir (resume ile aynı seçim — anahtar SIZMAZ). */
+  private async questionsFromVersionIds(versionIds: string[]) {
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: versionIds } },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        options: {
+          select: { id: true, label: true, text: true },
+          orderBy: { sortOrder: 'asc' },
+        },
+      },
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    return versionIds
+      .map((vid) => byId.get(vid))
+      .filter((v): v is NonNullable<typeof v> => v != null)
+      .map((v) => ({
+        questionId: v.questionId,
+        versionId: v.id,
+        stem: v.stem,
+        mediaUrl: v.mediaUrl,
+        options: v.options,
+      }));
   }
 
   private async pickDailyQuestions() {

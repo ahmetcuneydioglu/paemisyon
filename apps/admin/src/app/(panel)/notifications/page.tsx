@@ -31,6 +31,7 @@ export default function NotificationsPage() {
   const [body, setBody] = useState('');
   const [route, setRoute] = useState<string>('daily-quiz');
   const [search, setSearch] = useState('');
+  const [selected, setSelected] = useState<QuestionItem | null>(null);
   const [result, setResult] = useState<SendResult | null>(null);
 
   // Soru arama: yayındaki sorulardan seç → metin otomatik dolar.
@@ -58,6 +59,7 @@ export default function NotificationsPage() {
     setTitle('Günün Sorusu 🎯');
     setRoute('daily-quiz');
     setSearch('');
+    setSelected(q);
   }
 
   function confirmSend() {
@@ -79,6 +81,24 @@ export default function NotificationsPage() {
         {/* ── Sol: mesaj formu ── */}
         <Card>
           <div className="space-y-4">
+            {selected && (
+              <div className="flex items-start justify-between gap-2 rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm">
+                <div>
+                  <span className="mb-0.5 block text-xs font-medium text-blue-500">
+                    Seçilen soru · {selected.courseName} / {selected.topicName}
+                  </span>
+                  <span className="text-slate-700">
+                    {(selected.latestVersion?.stem ?? '').slice(0, 120)}…
+                  </span>
+                </div>
+                <button
+                  onClick={() => setSelected(null)}
+                  className="shrink-0 text-xs text-slate-400 hover:text-slate-600"
+                >
+                  Kaldır
+                </button>
+              </div>
+            )}
             <div>
               <label className="mb-1 block text-sm font-medium">Başlık</label>
               <input
