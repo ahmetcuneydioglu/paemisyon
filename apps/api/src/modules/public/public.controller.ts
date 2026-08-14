@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Header, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Header, Param, Post, Query } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
 import { PublicService } from './public.service';
 
@@ -32,6 +32,13 @@ export class PublicController {
   @Header('Cache-Control', CACHE_QOTD)
   dailyQuiz() {
     return this.service.dailyQuiz();
+  }
+
+  // Yerel bildirim tanıtımları (mobil Faz 1): önümüzdeki günlerin ilk soru özeti.
+  @Get('daily-quiz/teasers')
+  @Header('Cache-Control', CACHE_QOTD)
+  dailyTeasers(@Query('days') days?: string) {
+    return this.service.dailyTeasers(Number(days) || 5);
   }
 
   @Post('daily-quiz/reveal')

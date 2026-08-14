@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/notifications/notification_service.dart';
 import '../core/offline/connectivity_provider.dart';
 import '../core/offline/sync_service.dart';
 import '../core/theme/app_theme.dart';
@@ -18,13 +19,37 @@ class PaemisyonApp extends ConsumerStatefulWidget {
 }
 
 class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
+  /// Bildirim payload'ını rotaya çevirir (Faz 1: günün sorusu derin bağlantısı).
+  void _openFromNotification(String payload) {
+    if (payload != NotificationService.payloadDailyQuiz) return;
+    // Router redirect'i oturum/tanıtım korumasını kendisi uygular.
+    ref.read(appRouterProvider).push('/quiz', extra: {
+      'topicName': 'Günün Quizi',
+      'mode': 'daily',
+      'count': 10,
+    });
+  }
+
   @override
   void initState() {
     super.initState();
-    // Açılışta bekleyen kuyruğu (varsa) gönder + sayacı başlat.
+    // Bildirime dokunuş → doğrudan soru ekranı (uygulama açık/arka planda).
+    NotificationService.onTap = _openFromNotification;
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Açılışta bekleyen kuyruğu (varsa) gönder + sayacı başlat.
       ref.read(syncServiceProvider).flush();
+      // Bildirime dokunularak SOĞUK açıldıysa aynı derin bağlantı çalışsın.
+      ref
+          .read(notificationServiceProvider)
+          .launchPayload()
+          .then((p) => p != null ? _openFromNotification(p) : null);
     });
+  }
+
+  @override
+  void dispose() {
+    NotificationService.onTap = null;
+    super.dispose();
   }
 
   @override

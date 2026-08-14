@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,16 +7,26 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
+import '../network/dio_client.dart';
+
 /// Yerel bildirim v1 (Doc 28 P1-7): günlük seri hatırlatıcısı.
 /// Tamamen CİHAZDA zamanlanır — push/sunucu altyapısı yok. Varsayılan KAPALI
 /// (Doc 24 §11: izin, değeri görüldükten sonra istenir); ayarlardan açılır.
 /// Hedef o gün dolduysa hatırlatıcı ertesi güne kayar — koç dırdır etmez.
 class NotificationService {
-  static const _idDaily = 1001;
+  static const _idDaily = 1001; // 1001..1001+_scheduleDays-1 → günlük pencere
+  static const _scheduleDays = 5;
 
   static const _kEnabled = 'daily_reminder_enabled';
   static const _kHour = 'daily_reminder_hour';
   static const _kMinute = 'daily_reminder_minute';
+
+  /// Bildirime dokunuş yönlendiricisi — app kabuğu router'a bağlar.
+  /// (Servis navigasyon bilmez; payload üst katmanda rotaya çevrilir.)
+  static void Function(String payload)? onTap;
+
+  /// Günün sorusu payload sabiti (derin bağlantı anahtarı).
+  static const payloadDailyQuiz = 'daily-quiz';
 
   final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
@@ -41,8 +52,21 @@ class NotificationService {
           requestSoundPermission: false,
         ),
       ),
+      // Uygulama açıkken/arka plandayken dokunuş → derin bağlantı.
+      onDidReceiveNotificationResponse: (response) {
+        final p = response.payload;
+        if (p != null && p.isNotEmpty) onTap?.call(p);
+      },
     );
     _initialized = true;
+  }
+
+  /// Uygulama bildirime dokunularak SOĞUK açıldıysa payload'ı döner (bir kez).
+  Future<String?> launchPayload() async {
+    await _ensureInitialized();
+    final details = await _plugin.getNotificationAppLaunchDetails();
+    if (details?.didNotificationLaunchApp != true) return null;
+    return details?.notificationResponse?.payload;
   }
 
   /// Sistem izni ister (iOS izin diyaloğu / Android 13+ runtime izni).
@@ -64,41 +88,58 @@ class NotificationService {
     return false;
   }
 
-  /// Günlük hatırlatıcıyı kurar. [skipToday] true ise ilk bildirim yarına
-  /// atılır (bugünkü hedef zaten dolduysa akşam bildirimi anlamsız).
-  Future<void> scheduleDaily(TimeOfDay time, {bool skipToday = false}) async {
+  /// Günlük bildirimleri kurar: önümüzdeki [_scheduleDays] gün için ayrı ayrı
+  /// zamanlanır — her günün bildirimi o günün "Günün Sorusu" özetini taşır
+  /// ([teasers]: "YYYY-MM-DD" → özet; yoksa genel metin). [skipToday] true ise
+  /// bugünkü atlanır (hedef dolduysa akşam bildirimi anlamsız). Dokunuş
+  /// payload'ı günün sorusuna derin bağlantıdır.
+  Future<void> scheduleDaily(
+    TimeOfDay time, {
+    bool skipToday = false,
+    Map<String, String> teasers = const {},
+  }) async {
     await _ensureInitialized();
+    await cancelDaily(); // eski pencereyi temizle — çift bildirim olmasın
     final now = tz.TZDateTime.now(tz.local);
-    var first = tz.TZDateTime(
-        tz.local, now.year, now.month, now.day, time.hour, time.minute);
-    if (first.isBefore(now) || (skipToday && first.day == now.day)) {
-      first = first.add(const Duration(days: 1));
-    }
-    await _plugin.zonedSchedule(
-      _idDaily,
-      'Nöbet vakti',
-      'Bugünkü hedefin seni bekliyor — kısa bir seans seriyi korur.',
-      first,
-      const NotificationDetails(
-        android: AndroidNotificationDetails(
-          'daily_reminder',
-          'Günlük hatırlatıcı',
-          channelDescription: 'Günlük çalışma serisi hatırlatıcısı',
-          importance: Importance.defaultImportance,
+    for (var i = 0; i < _scheduleDays; i++) {
+      final day = now.add(Duration(days: i));
+      final at = tz.TZDateTime(
+          tz.local, day.year, day.month, day.day, time.hour, time.minute);
+      if (at.isBefore(now)) continue; // bugünün saati geçtiyse o gün yok
+      if (skipToday && i == 0) continue;
+      final key =
+          '${at.year}-${at.month.toString().padLeft(2, '0')}-${at.day.toString().padLeft(2, '0')}';
+      final teaser = teasers[key];
+      await _plugin.zonedSchedule(
+        _idDaily + i,
+        teaser != null ? 'Günün Sorusu 🎯' : 'Nöbet vakti',
+        teaser ??
+            'Bugünkü hedefin seni bekliyor — kısa bir seans seriyi korur.',
+        at,
+        const NotificationDetails(
+          android: AndroidNotificationDetails(
+            'daily_reminder',
+            'Günlük hatırlatıcı',
+            channelDescription:
+                'Günün sorusu ve çalışma serisi hatırlatıcısı',
+            importance: Importance.defaultImportance,
+          ),
+          iOS: DarwinNotificationDetails(),
         ),
-        iOS: DarwinNotificationDetails(),
-      ),
-      // Kesin alarm İZNİ istememek için inexact — dakikası dakikasına şart değil.
-      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-      matchDateTimeComponents: DateTimeComponents.time, // her gün tekrarla
-    );
+        // Kesin alarm İZNİ istememek için inexact — dakikası dakikasına şart değil.
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+        payload: payloadDailyQuiz,
+      );
+    }
   }
 
   Future<void> cancelDaily() async {
     await _ensureInitialized();
-    await _plugin.cancel(_idDaily);
+    for (var i = 0; i < _scheduleDays; i++) {
+      await _plugin.cancel(_idDaily + i);
+    }
   }
 }
 
@@ -137,12 +178,40 @@ class ReminderSettingsNotifier extends Notifier<ReminderSettings> {
     );
   }
 
+  /// Günün Sorusu özetleri (bildirim metinleri) — kamusal uç, en-iyi-çaba:
+  /// ağ yoksa boş döner, bildirimler genel metinle yine kurulur.
+  Future<Map<String, String>> _fetchTeasers() async {
+    try {
+      final res = await ref
+          .read(dioProvider)
+          .get<Map<String, dynamic>>('/public/daily-quiz/teasers',
+              queryParameters: {'days': 5},
+              options: Options(receiveTimeout: const Duration(seconds: 6)));
+      final rows = (res.data?['data'] as List?) ?? const [];
+      return {
+        for (final r in rows.cast<Map<String, dynamic>>())
+          r['date'] as String: r['teaser'] as String,
+      };
+    } catch (_) {
+      return const {};
+    }
+  }
+
+  /// Bildirim penceresini (5 gün) tazeler — her uygulama açılışında çağrılır.
+  /// [goalMetToday] true ise bugünkü atlanır.
+  Future<void> refreshQueue({bool goalMetToday = false}) async {
+    if (!state.enabled) return;
+    final teasers = await _fetchTeasers();
+    await _service.scheduleDaily(state.time,
+        skipToday: goalMetToday, teasers: teasers);
+  }
+
   /// Açarken izin ister; reddedilirse false döner ve ayar kapalı kalır.
   Future<bool> setEnabled(bool enabled) async {
     if (enabled) {
       final granted = await _service.requestPermission();
       if (!granted) return false;
-      await _service.scheduleDaily(state.time);
+      await _service.scheduleDaily(state.time, teasers: await _fetchTeasers());
     } else {
       await _service.cancelDaily();
     }
@@ -157,14 +226,15 @@ class ReminderSettingsNotifier extends Notifier<ReminderSettings> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(NotificationService._kHour, time.hour);
     await prefs.setInt(NotificationService._kMinute, time.minute);
-    if (state.enabled) await _service.scheduleDaily(time);
+    if (state.enabled) {
+      await _service.scheduleDaily(time, teasers: await _fetchTeasers());
+    }
   }
 
-  /// Bugün ekranından çağrılır: hedef dolduysa bugünkü bildirimi yarına kaydır.
-  Future<void> syncWithGoal({required bool goalMetToday}) async {
-    if (!state.enabled || !goalMetToday) return;
-    await _service.scheduleDaily(state.time, skipToday: true);
-  }
+  /// Bugün ekranından çağrılır: pencereyi tazele; hedef dolduysa bugünkü
+  /// bildirim atlanır (koç, işini bitirmiş kullanıcıyı akşam dürtmez).
+  Future<void> syncWithGoal({required bool goalMetToday}) =>
+      refreshQueue(goalMetToday: goalMetToday);
 }
 
 final reminderSettingsProvider =

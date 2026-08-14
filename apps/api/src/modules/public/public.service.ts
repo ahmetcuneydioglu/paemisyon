@@ -156,6 +156,44 @@ export class PublicService {
     return ids;
   }
 
+  /** Yerel bildirim tanıtımları: önümüzdeki N günün İLK sorusunun kök özeti.
+   *  Seçim gün-tohumlu ve deterministik olduğundan gelecek günler önceden
+   *  hesaplanabilir. Yalnız kısa özet sızar — şık/cevap yok; sorular zaten
+   *  ücretsiz havuzdan ve yayında. */
+  private teaserCache: { key: string; rows: { date: string; teaser: string }[] } | null = null;
+  async dailyTeasers(days: number) {
+    const n = Math.min(Math.max(days, 1), 7);
+    const todayKey = new Date().toISOString().slice(0, 10);
+    const cacheKey = `${todayKey}:${n}`;
+    if (this.teaserCache?.key === cacheKey) return this.teaserCache.rows;
+
+    const pool = await this.prisma.question.findMany({
+      where: dailyQuestionPoolWhere(),
+      select: { id: true },
+      orderBy: { id: 'asc' },
+    });
+    if (pool.length === 0) return [];
+    const dates: string[] = [];
+    for (let i = 0; i < n; i++) {
+      dates.push(new Date(Date.now() + i * 864e5).toISOString().slice(0, 10));
+    }
+    const firstIds = dates.map((d) => pickDailyIds(pool, d)[0]!.id);
+    const stems = await this.prisma.question.findMany({
+      where: { id: { in: firstIds } },
+      select: { id: true, currentVersion: { select: { stem: true } } },
+    });
+    const stemOf = new Map(stems.map((q) => [q.id, q.currentVersion?.stem ?? '']));
+    const rows = dates.map((date, i) => {
+      const stem = (stemOf.get(firstIds[i]) ?? '').replace(/\s+/g, ' ').trim();
+      return {
+        date,
+        teaser: stem.length > 96 ? `${stem.slice(0, 96).trimEnd()}…` : stem,
+      };
+    });
+    this.teaserCache = { key: cacheKey, rows };
+    return rows;
+  }
+
   async dailyQuiz() {
     const ids = await this.dailyQuizIds();
     const questions = await this.prisma.question.findMany({
