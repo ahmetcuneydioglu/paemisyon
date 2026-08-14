@@ -15,6 +15,7 @@ import '../../../shared/widgets/article_card.dart';
 import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../core/theme/app_haptics.dart';
+import '../../../core/theme/app_motion.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/question_media.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -557,7 +558,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         ],
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
+        // Reels-vari akış: sola kaydır = Sonraki/İleri (butonla aynı kurallar
+        // — practice'te cevaplamadan atlanmaz). Sağa kaydırma yok: cevaplar
+        // sunucuya işlendiği için geri dönüş desteklenmez.
+        child: GestureDetector(
+          behavior: HitTestBehavior.translucent,
+          onHorizontalDragEnd: _onSwipe,
+          child: AnimatedSwitcher(
+            duration: AppMotion.respect(AppMotion.standard),
+            switchInCurve: AppMotion.standardCurve,
+            switchOutCurve: AppMotion.standardCurve,
+            transitionBuilder: (child, animation) => FadeTransition(
+              opacity: animation,
+              child: SlideTransition(
+                position: Tween<Offset>(
+                  begin: const Offset(0.12, 0), // sağdan hafif kayarak gelir
+                  end: Offset.zero,
+                ).animate(animation),
+                child: child,
+              ),
+            ),
+            child: SingleChildScrollView(
+              key: ValueKey(_index),
           padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -623,9 +645,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               _bottomButton(),
             ],
           ),
+            ),
+          ),
         ),
       ),
     );
+  }
+
+  /// Sola kaydırma = Sonraki/İleri (buton kuralları aynen geçerli).
+  void _onSwipe(DragEndDetails d) {
+    final v = d.primaryVelocity ?? 0;
+    if (v > -300) return; // yalnız kararlı SOLA kaydırma
+    if (_busy) return;
+    if (_isPractice) {
+      // Cevaplamadan atlama yok — küçük dokunuşla hatırlat.
+      if (_feedback == null) {
+        AppHaptics.select();
+        return;
+      }
+      _advance();
+    } else {
+      _submit(); // deneme/exam: İleri ile birebir aynı (boş geçme hakkı dahil)
+    }
   }
 
   Widget _optionTile(QuizOption o) {
