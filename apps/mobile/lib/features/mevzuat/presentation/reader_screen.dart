@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -14,6 +15,8 @@ import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
+import '../../catalog/data/catalog_repository.dart';
+import '../../catalog/domain/catalog_models.dart';
 import '../data/mevzuat_repository.dart';
 import 'toc_sheet.dart';
 
@@ -29,10 +32,15 @@ class ReaderScreen extends ConsumerStatefulWidget {
   ConsumerState<ReaderScreen> createState() => _ReaderScreenState();
 }
 
+/// Okuma boyutu kademeleri (Doc 29 §12) — yalnız okuyucu metnini ölçekler.
+const _kTextScaleKey = 'reading_text_scale_v1';
+const _kScales = [0.9, 1.0, 1.15];
+
 class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final _itemScroll = ItemScrollController();
   final _positions = ItemPositionsListener.create();
   Set<String> _bookmarked = {};
+  int _scaleIndex = 1;
   bool _barVisible = true;
   String? _visibleNo;
   Timer? _progressTimer;
@@ -42,6 +50,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   void initState() {
     super.initState();
     _positions.itemPositions.addListener(_onPositionsChanged);
+    SharedPreferences.getInstance().then((prefs) {
+      final i = prefs.getInt(_kTextScaleKey);
+      if (i != null && mounted) {
+        setState(() => _scaleIndex = i.clamp(0, _kScales.length - 1));
+      }
+    });
     // Kayıtlı maddeleri tohumla (rozetler doğru başlasın).
     Future.microtask(() async {
       try {
@@ -124,6 +138,13 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     if (no != null) _jumpTo(no);
   }
 
+  void _cycleTextScale() {
+    AppHaptics.select();
+    setState(() => _scaleIndex = (_scaleIndex + 1) % _kScales.length);
+    SharedPreferences.getInstance()
+        .then((p) => p.setInt(_kTextScaleKey, _scaleIndex));
+  }
+
   void _jumpTo(String no) {
     final idx = _articles.indexWhere((a) => a.no == no);
     if (idx >= 0 && _itemScroll.isAttached) {
@@ -160,6 +181,14 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
           ),
         ),
         data: (r) {
+          // Hâkimiyet katmanı (Doc 29 P1): girişliyse fetih işaretleri;
+          // hata/anonim durumda sessizce yok sayılır.
+          final atlas = r.topicId != null
+              ? ref.watch(atlasProvider(r.topicId!)).valueOrNull
+              : null;
+          final atlasByNo = <String, AtlasArticle>{
+            if (atlas != null) for (final a in atlas.articles) a.no: a,
+          };
           // İlk açılışta hedef maddeye konumlan (arama/deep-link/devam).
           final initialIndex = widget.initialArticleNo != null
               ? r.articles
@@ -208,6 +237,15 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                                 ],
                               ),
                             ),
+                            IconButton(
+                              tooltip: 'Yazı boyutu',
+                              icon: Text('Aa',
+                                  style: AppTypography.label.copyWith(
+                                    color: tokens.ink,
+                                    fontSize: 13 + 2.0 * _scaleIndex,
+                                  )),
+                              onPressed: _cycleTextScale,
+                            ),
                           ])
                         : const SizedBox.shrink(),
                   ),
@@ -229,6 +267,8 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                                 a.sectionId != null;
                         return _ArticleBlock(
                           article: a,
+                          textScale: _kScales[_scaleIndex],
+                          mastery: atlasByNo[a.no],
                           sectionHeading: sectionChanged
                               ? sectionsById[a.sectionId]?.heading
                               : null,
@@ -312,6 +352,8 @@ class _ReaderHeader extends StatelessWidget {
 /// Tek madde bloğu: belirgin numara + başlık + resmî metin + aksiyon satırı.
 class _ArticleBlock extends StatelessWidget {
   final ReaderArticle article;
+  final double textScale;
+  final AtlasArticle? mastery;
   final String? sectionHeading;
   final bool bookmarked;
   final VoidCallback onBookmark;
@@ -319,6 +361,8 @@ class _ArticleBlock extends StatelessWidget {
   final VoidCallback? onQuiz;
   const _ArticleBlock({
     required this.article,
+    this.textScale = 1.0,
+    this.mastery,
     this.sectionHeading,
     required this.bookmarked,
     required this.onBookmark,
@@ -347,9 +391,28 @@ class _ArticleBlock extends StatelessWidget {
               ),
             ),
           const SizedBox(height: AppSpacing.lg),
-          Text('MADDE ${article.no}',
-              style: AppTypography.heading
-                  .copyWith(color: tokens.brand, letterSpacing: .5)),
+          Row(children: [
+            Text('MADDE ${article.no}',
+                style: AppTypography.heading
+                    .copyWith(color: tokens.brand, letterSpacing: .5)),
+            if (mastery != null && mastery!.clearedCount > 0) ...[
+              const SizedBox(width: AppSpacing.sm),
+              Tooltip(
+                message: mastery!.conquered
+                    ? 'Fethettin — tüm sorularını çözdün'
+                    : '${mastery!.clearedCount}/${mastery!.questionCount} soru temiz',
+                child: Icon(
+                  mastery!.conquered
+                      ? Icons.flag_circle_rounded
+                      : Icons.flag_circle_outlined,
+                  size: 18,
+                  color: mastery!.conquered
+                      ? tokens.success
+                      : tokens.accentStreak,
+                ),
+              ),
+            ],
+          ]),
           if (article.title != null) ...[
             const SizedBox(height: 2),
             Text(article.title!,
@@ -361,8 +424,8 @@ class _ArticleBlock extends StatelessWidget {
           // bilinçli ayrı; uzun mevzuat okuması için nefes payı.
           SelectableText(
             article.text,
-            style: const TextStyle(fontSize: 17, height: 1.6)
-                .copyWith(color: tokens.ink),
+            style: TextStyle(
+                fontSize: 17 * textScale, height: 1.6, color: tokens.ink),
           ),
           const SizedBox(height: AppSpacing.sm),
           // Aksiyon satırı — sessiz, metni bastırmayan.
