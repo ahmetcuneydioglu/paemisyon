@@ -1,5 +1,11 @@
 export type NavigationIconName =
-  "today" | "library" | "exam" | "leaderboard" | "performance" | "profile";
+  | "today"
+  | "library"
+  | "mevzuat"
+  | "exam"
+  | "leaderboard"
+  | "performance"
+  | "profile";
 
 export interface NavChild {
   href: string;
@@ -12,6 +18,8 @@ export interface NavItem {
   icon: NavigationIconName;
   also: string[];
   children?: NavChild[];
+  /** Mobil web alt barında gizle (5-bölge ilkesi korunur; masaüstünde görünür). */
+  desktopOnly?: boolean;
 }
 
 /** Ürünün beş ana bölgesi — web ve mobil navigasyonun tek kaynağı. */
@@ -21,7 +29,7 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/kutuphane",
     label: "Kütüphane",
     icon: "library",
-    also: ["/kanunlar", "/kanun"],
+    also: [],
     children: [
       { href: "/kutuphane", label: "Dersler" },
       { href: "/kanunlar", label: "Mevzuat" },
@@ -32,6 +40,15 @@ export const APP_NAV_ITEMS: NavItem[] = [
         label: "Akıllı Tekrar",
       },
     ],
+  },
+  // Mevzuat Merkezi (Doc 29): platformun temel özelliği — birinci seviye.
+  // Mobil web alt barı 5 bölgede kalır; oradan Kütüphane > Mevzuat çocuğu taşır.
+  {
+    href: "/kanunlar",
+    label: "Mevzuat",
+    icon: "mevzuat",
+    also: ["/kanun"],
+    desktopOnly: true,
   },
   {
     href: "/denemeler",

@@ -31,6 +31,13 @@ const iconPaths: Record<NavigationIconName | UtilityIconName, React.ReactNode> =
         <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42" />
       </>
     ),
+    mevzuat: (
+      <>
+        <path d="M12 3v18M5 21h14" />
+        <path d="M12 5l-6 2 6-2 6 2" />
+        <path d="M6 7l-2.5 6a3 3 0 0 0 5 0zM18 7l-2.5 6a3 3 0 0 0 5 0z" />
+      </>
+    ),
     library: (
       <>
         <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5z" />

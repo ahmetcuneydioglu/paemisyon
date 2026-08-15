@@ -47,7 +47,7 @@ export function MobileBottomNavigation() {
       aria-label="Ana bölgeler"
     >
       <div className="grid grid-cols-6">
-        {APP_NAV_ITEMS.map((item) => {
+        {APP_NAV_ITEMS.filter((i) => !i.desktopOnly).map((item) => {
           const active = isNavItemActive(item, pathname);
           return (
             <Link
