@@ -11,8 +11,47 @@ import type { MevzuatReading } from "@/lib/public-api";
  * (kaydet + devam + quiz köprüsü). Anon /oku sayfasının app-kabuğu eşi —
  * middleware girişli isteği buraya rewrite eder, URL değişmez.
  */
+interface Highlight {
+  id: string;
+  no: string;
+  startOffset: number;
+  endOffset: number;
+  snippet: string;
+}
+
+/** Seçimin, madde metin kabı içindeki karakter aralığı (mark'lar hesaba katılır). */
+function selectionOffsets(container: HTMLElement): { start: number; end: number } | null {
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+  const range = sel.getRangeAt(0);
+  if (!container.contains(range.startContainer) || !container.contains(range.endContainer)) {
+    return null;
+  }
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+  let pos = 0;
+  let start = -1;
+  let end = -1;
+  for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+    const len = node.textContent?.length ?? 0;
+    if (node === range.startContainer) start = pos + range.startOffset;
+    if (node === range.endContainer) end = pos + range.endOffset;
+    pos += len;
+  }
+  return start >= 0 && end > start ? { start, end } : null;
+}
+
 export function LawReader({ law }: { law: MevzuatReading }) {
   const [bookmarked, setBookmarked] = useState<Set<string>>(new Set());
+  const [highlights, setHighlights] = useState<Map<string, Highlight[]>>(new Map());
+  const [notes, setNotes] = useState<Map<string, string>>(new Map());
+  const [noteEditing, setNoteEditing] = useState<string | null>(null);
+  const [noteDraft, setNoteDraft] = useState("");
+  const [pendingSel, setPendingSel] = useState<{
+    no: string;
+    start: number;
+    end: number;
+    snippet: string;
+  } | null>(null);
   const [activeNo, setActiveNo] = useState<string | null>(null);
   const lastSaved = useRef<string | null>(null);
 
@@ -21,7 +60,7 @@ export function LawReader({ law }: { law: MevzuatReading }) {
     [law.sections],
   );
 
-  // Kayıtlı maddeleri tohumla (rozetler doğru başlasın).
+  // Kayıtlı maddeler + işaret/not katmanı.
   useEffect(() => {
     apiClient<{ items: { lawSlug: string; no: string }[] }>("/me/article-bookmarks")
       .then((r) =>
@@ -30,7 +69,110 @@ export function LawReader({ law }: { law: MevzuatReading }) {
         ),
       )
       .catch(() => {});
+    apiClient<{ highlights: Highlight[]; notes: { no: string; text: string }[] }>(
+      `/me/article-annotations?lawSlug=${encodeURIComponent(law.slug)}`,
+    )
+      .then((r) => {
+        const byNo = new Map<string, Highlight[]>();
+        for (const h of r.highlights) {
+          byNo.set(h.no, [...(byNo.get(h.no) ?? []), h]);
+        }
+        setHighlights(byNo);
+        setNotes(new Map(r.notes.map((n) => [n.no, n.text])));
+      })
+      .catch(() => {});
   }, [law.slug]);
+
+  const addHighlight = () => {
+    const p = pendingSel;
+    if (!p) return;
+    setPendingSel(null);
+    window.getSelection()?.removeAllRanges();
+    apiClient<{ ok: boolean; id?: string }>("/me/article-highlights", {
+      method: "POST",
+      body: JSON.stringify({
+        lawSlug: law.slug,
+        no: p.no,
+        startOffset: p.start,
+        endOffset: p.end,
+        snippet: p.snippet,
+      }),
+    })
+      .then((r) => {
+        if (!r.ok || !r.id) return;
+        setHighlights((m) => {
+          const next = new Map(m);
+          next.set(p.no, [
+            ...(next.get(p.no) ?? []),
+            { id: r.id!, no: p.no, startOffset: p.start, endOffset: p.end, snippet: p.snippet },
+          ]);
+          return next;
+        });
+      })
+      .catch(() => {});
+  };
+
+  const removeHighlight = (no: string, id: string) => {
+    setHighlights((m) => {
+      const next = new Map(m);
+      next.set(no, (next.get(no) ?? []).filter((h) => h.id !== id));
+      return next;
+    });
+    apiClient(`/me/article-highlights/${id}`, { method: "DELETE" }).catch(() => {});
+  };
+
+  const saveNote = (no: string) => {
+    const text = noteDraft.trim();
+    setNoteEditing(null);
+    setNotes((m) => {
+      const next = new Map(m);
+      if (text) next.set(no, text);
+      else next.delete(no);
+      return next;
+    });
+    apiClient("/me/article-notes", {
+      method: "PUT",
+      body: JSON.stringify({ lawSlug: law.slug, no, text }),
+    }).catch(() => {});
+  };
+
+  /** Metni işaret aralıklarıyla parçalara böler (çapa doğrulamalı). */
+  const renderText = (a: MevzuatReading["articles"][number]) => {
+    const hs = highlights.get(a.no) ?? [];
+    const ranges: [number, number, string][] = [];
+    for (const h of hs) {
+      let { startOffset: s0, endOffset: e0 } = h;
+      const valid =
+        s0 >= 0 && e0 <= a.text.length && e0 > s0 && a.text.slice(s0, e0) === h.snippet;
+      if (!valid) {
+        const idx = h.snippet ? a.text.indexOf(h.snippet) : -1;
+        if (idx < 0) continue;
+        s0 = idx;
+        e0 = idx + h.snippet.length;
+      }
+      ranges.push([s0, e0, h.id]);
+    }
+    ranges.sort((x, y) => x[0] - y[0]);
+    const parts: React.ReactNode[] = [];
+    let cursor = 0;
+    for (const [s0, e0, id] of ranges) {
+      if (s0 < cursor) continue; // çakışan — ilki kazanır
+      if (s0 > cursor) parts.push(a.text.slice(cursor, s0));
+      parts.push(
+        <mark
+          key={id}
+          title="İşareti kaldırmak için tıkla"
+          onClick={() => removeHighlight(a.no, id)}
+          className="cursor-pointer rounded-sm bg-amber-200/70 px-0.5 dark:bg-amber-500/30"
+        >
+          {a.text.slice(s0, e0)}
+        </mark>,
+      );
+      cursor = e0;
+    }
+    if (cursor < a.text.length) parts.push(a.text.slice(cursor));
+    return parts;
+  };
 
   // Görünür madde takibi → okuma konumu (devam et) — 15 sn'de bir kaydet.
   useEffect(() => {
@@ -153,9 +295,63 @@ export function LawReader({ law }: { law: MevzuatReading }) {
                 <h2 className="tk-heading text-(--tk-brand)">MADDE {a.no}</h2>
                 {a.title && <span className="tk-caption">{a.title}</span>}
               </div>
-              <div className="whitespace-pre-line text-[16px] leading-[1.65] text-(--tk-ink)">
-                {a.text}
+              <div
+                className="whitespace-pre-line text-[16px] leading-[1.65] text-(--tk-ink)"
+                onMouseUp={(e) => {
+                  const offs = selectionOffsets(e.currentTarget);
+                  if (offs) {
+                    setPendingSel({
+                      no: a.no,
+                      start: offs.start,
+                      end: offs.end,
+                      snippet: a.text.slice(offs.start, offs.end),
+                    });
+                  } else if (pendingSel?.no === a.no) {
+                    setPendingSel(null);
+                  }
+                }}
+              >
+                {renderText(a)}
               </div>
+              {notes.get(a.no) != null && noteEditing !== a.no && (
+                <div className="mt-2 border-l-[3px] border-amber-400 bg-amber-50 p-3 dark:bg-amber-500/10">
+                  <p className="mb-1 text-[10px] font-bold tracking-widest text-amber-600">
+                    📝 NOTUM
+                  </p>
+                  <p className="whitespace-pre-line text-sm text-(--tk-ink)">
+                    {notes.get(a.no)}
+                  </p>
+                </div>
+              )}
+              {noteEditing === a.no && (
+                <div className="mt-2">
+                  <textarea
+                    autoFocus
+                    value={noteDraft}
+                    onChange={(e) => setNoteDraft(e.target.value)}
+                    maxLength={2000}
+                    rows={3}
+                    className="w-full rounded border border-(--tk-line) bg-(--tk-surface) p-2 text-sm text-(--tk-ink)"
+                    placeholder='Örn. "Yakalama şartlarını tekrar çalış."'
+                  />
+                  <div className="mt-1 flex justify-end gap-2 text-xs">
+                    <button
+                      type="button"
+                      className="text-(--tk-ink-soft)"
+                      onClick={() => setNoteEditing(null)}
+                    >
+                      Vazgeç
+                    </button>
+                    <button
+                      type="button"
+                      className="font-semibold text-(--tk-brand)"
+                      onClick={() => saveNote(a.no)}
+                    >
+                      Kaydet
+                    </button>
+                  </div>
+                </div>
+              )}
               <div className="mt-2 flex items-center gap-4 text-xs">
                 <button
                   type="button"
@@ -165,6 +361,27 @@ export function LawReader({ law }: { law: MevzuatReading }) {
                   } hover:text-(--tk-brand)`}
                 >
                   {isBookmarked ? "🔖 Kaydedildi" : "📑 Kaydet"}
+                </button>
+                {pendingSel?.no === a.no && (
+                  <button
+                    type="button"
+                    onClick={addHighlight}
+                    className="rounded bg-amber-400/90 px-2 py-0.5 font-semibold text-amber-950"
+                  >
+                    🖍 İşaretle
+                  </button>
+                )}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setNoteDraft(notes.get(a.no) ?? "");
+                    setNoteEditing(noteEditing === a.no ? null : a.no);
+                  }}
+                  className={`font-semibold ${
+                    notes.has(a.no) ? "text-amber-600" : "text-(--tk-ink-soft)"
+                  } hover:text-amber-600`}
+                >
+                  {notes.has(a.no) ? "📝 Notum" : "📝 Not"}
                 </button>
                 {a.questionCount > 0 && (
                   <Link

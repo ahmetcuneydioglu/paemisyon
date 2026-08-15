@@ -40,6 +40,8 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final _itemScroll = ItemScrollController();
   final _positions = ItemPositionsListener.create();
   Set<String> _bookmarked = {};
+  Map<String, List<HighlightItem>> _highlights = {};
+  Map<String, String> _notes = {};
   int _scaleIndex = 1;
   bool _barVisible = true;
   String? _visibleNo;
@@ -56,10 +58,11 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
         setState(() => _scaleIndex = i.clamp(0, _kScales.length - 1));
       }
     });
-    // Kayıtlı maddeleri tohumla (rozetler doğru başlasın).
+    // Kayıtlı maddeler + işaret/not katmanı (rozetler doğru başlasın).
     Future.microtask(() async {
+      final repo = ref.read(mevzuatRepositoryProvider);
       try {
-        final items = await ref.read(mevzuatRepositoryProvider).bookmarks();
+        final items = await repo.bookmarks();
         if (mounted) {
           setState(() => _bookmarked = {
                 for (final b in items.where((b) => b.lawSlug == widget.slug))
@@ -67,6 +70,18 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
               });
         }
       } catch (_) {/* kimliksiz/offline — rozetsiz devam */}
+      try {
+        final ann = await repo.annotations(widget.slug);
+        if (mounted) {
+          setState(() {
+            _highlights = {};
+            for (final h in ann.highlights) {
+              (_highlights[h.no] ??= []).add(h);
+            }
+            _notes = Map.of(ann.notes);
+          });
+        }
+      } catch (_) {/* işaret katmanı opsiyonel */}
     });
     // Konum kaydı: 20 sn'de bir + çıkışta (istek sağanağı yok).
     _progressTimer = Timer.periodic(
@@ -136,6 +151,119 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     final no = await showTocSheet(context,
         sections: detail.sections, toc: detail.toc, currentNo: _visibleNo);
     if (no != null) _jumpTo(no);
+  }
+
+  Future<void> _addHighlight(String no, TextSelection sel, String text) async {
+    final start = sel.start;
+    final end = sel.end;
+    if (start < 0 || end <= start || end > text.length) return;
+    final snippet = text.substring(start, end);
+    AppHaptics.select();
+    try {
+      final id = await ref.read(mevzuatRepositoryProvider).addHighlight(
+            lawSlug: widget.slug,
+            no: no,
+            startOffset: start,
+            endOffset: end,
+            snippet: snippet,
+          );
+      if (id != null && mounted) {
+        setState(() => (_highlights[no] ??= []).add(HighlightItem(
+              id: id,
+              no: no,
+              startOffset: start,
+              endOffset: end,
+              snippet: snippet,
+            )));
+      }
+    } catch (_) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('İşaretlenemedi — tekrar dene.')));
+      }
+    }
+  }
+
+  Future<void> _removeHighlight(String no, HighlightItem h) async {
+    setState(() => _highlights[no]?.removeWhere((x) => x.id == h.id));
+    try {
+      await ref.read(mevzuatRepositoryProvider).removeHighlight(h.id);
+    } catch (_) {
+      if (mounted) setState(() => (_highlights[no] ??= []).add(h));
+    }
+  }
+
+  Future<void> _editNote(String no) async {
+    final controller = TextEditingController(text: _notes[no] ?? '');
+    final saved = await showModalBottomSheet<String>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      builder: (ctx) => Padding(
+        padding: EdgeInsets.only(
+          left: AppSpacing.xl,
+          right: AppSpacing.xl,
+          bottom: AppSpacing.xl + MediaQuery.viewInsetsOf(ctx).bottom,
+        ),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          Text('Madde $no — Notum',
+              style: AppTypography.heading.copyWith(color: ctx.tokens.ink)),
+          const SizedBox(height: AppSpacing.xs),
+          Text('Kişisel notun — resmî metnin parçası değildir.',
+              style:
+                  AppTypography.caption.copyWith(color: ctx.tokens.inkSoft)),
+          const SizedBox(height: AppSpacing.md),
+          TextField(
+            controller: controller,
+            autofocus: true,
+            minLines: 3,
+            maxLines: 8,
+            maxLength: 2000,
+            decoration: const InputDecoration(
+                hintText: 'Örn. "Yakalama şartlarını tekrar çalış."'),
+          ),
+          const SizedBox(height: AppSpacing.sm),
+          Row(children: [
+            if ((_notes[no] ?? '').isNotEmpty)
+              TextButton(
+                onPressed: () => Navigator.pop(ctx, ''),
+                child: const Text('Notu sil'),
+              ),
+            const Spacer(),
+            FilledButton(
+              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+              child: const Text('Kaydet'),
+            ),
+          ]),
+        ]),
+      ),
+    );
+    // Kapanış animasyonu bitmeden dispose çökmesin (login ekranı deseni).
+    Future.delayed(const Duration(milliseconds: 400), controller.dispose);
+    if (saved == null || !mounted) return;
+    final prev = _notes[no];
+    setState(() {
+      if (saved.isEmpty) {
+        _notes.remove(no);
+      } else {
+        _notes[no] = saved;
+      }
+    });
+    try {
+      await ref.read(mevzuatRepositoryProvider).putNote(widget.slug, no, saved);
+    } catch (_) {
+      if (mounted) {
+        setState(() {
+          if (prev == null) {
+            _notes.remove(no);
+          } else {
+            _notes[no] = prev;
+          }
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Not kaydedilemedi — tekrar dene.')));
+      }
+    }
   }
 
   void _cycleTextScale() {
@@ -269,6 +397,13 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                           article: a,
                           textScale: _kScales[_scaleIndex],
                           mastery: atlasByNo[a.no],
+                          highlights: _highlights[a.no] ?? const [],
+                          note: _notes[a.no],
+                          onHighlight: (sel) =>
+                              _addHighlight(a.no, sel, a.text),
+                          onRemoveHighlight: (h) =>
+                              _removeHighlight(a.no, h),
+                          onNote: () => _editNote(a.no),
                           sectionHeading: sectionChanged
                               ? sectionsById[a.sectionId]?.heading
                               : null,
@@ -356,19 +491,80 @@ class _ArticleBlock extends StatelessWidget {
   final AtlasArticle? mastery;
   final String? sectionHeading;
   final bool bookmarked;
+  final List<HighlightItem> highlights;
+  final String? note;
   final VoidCallback onBookmark;
   final VoidCallback onShare;
   final VoidCallback? onQuiz;
+  final ValueChanged<TextSelection> onHighlight;
+  final ValueChanged<HighlightItem> onRemoveHighlight;
+  final VoidCallback onNote;
   const _ArticleBlock({
     required this.article,
     this.textScale = 1.0,
     this.mastery,
     this.sectionHeading,
     required this.bookmarked,
+    this.highlights = const [],
+    this.note,
     required this.onBookmark,
     required this.onShare,
     this.onQuiz,
+    required this.onHighlight,
+    required this.onRemoveHighlight,
+    required this.onNote,
   });
+
+  /// Metni işaret aralıklarına göre span'lere böler. Çapa doğrulanır:
+  /// aralıktaki metin parçayla uyuşmazsa parça aranır; bulunamazsa atlanır
+  /// (metin güncellenmiş olabilir — yanlış yeri boyamaktansa gizle).
+  List<TextSpan> _spans(BuildContext context, TextStyle base) {
+    final text = article.text;
+    final ranges = <(int, int)>[];
+    for (final h in highlights) {
+      var start = h.startOffset;
+      var end = h.endOffset;
+      final valid = start >= 0 &&
+          end <= text.length &&
+          end > start &&
+          text.substring(start, end) == h.snippet;
+      if (!valid) {
+        final idx = h.snippet.isNotEmpty ? text.indexOf(h.snippet) : -1;
+        if (idx < 0) continue;
+        start = idx;
+        end = idx + h.snippet.length;
+      }
+      ranges.add((start, end));
+    }
+    ranges.sort((a, b) => a.$1.compareTo(b.$1));
+    // Çakışan aralıkları birleştir (aynı yeri iki kez boyama).
+    final merged = <(int, int)>[];
+    for (final r in ranges) {
+      if (merged.isNotEmpty && r.$1 <= merged.last.$2) {
+        final last = merged.removeLast();
+        merged.add((last.$1, r.$2 > last.$2 ? r.$2 : last.$2));
+      } else {
+        merged.add(r);
+      }
+    }
+    final hlStyle = base.copyWith(
+      backgroundColor:
+          context.tokens.accentStreak.withValues(alpha: .30),
+    );
+    final spans = <TextSpan>[];
+    var cursor = 0;
+    for (final (start, end) in merged) {
+      if (start > cursor) {
+        spans.add(TextSpan(text: text.substring(cursor, start)));
+      }
+      spans.add(TextSpan(text: text.substring(start, end), style: hlStyle));
+      cursor = end;
+    }
+    if (cursor < text.length) {
+      spans.add(TextSpan(text: text.substring(cursor)));
+    }
+    return spans;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -422,11 +618,58 @@ class _ArticleBlock extends StatelessWidget {
           const SizedBox(height: AppSpacing.sm),
           // Okuma tipografisi (Doc 29 §11): 17px / 1.6 — AppTypography.body'den
           // bilinçli ayrı; uzun mevzuat okuması için nefes payı.
-          SelectableText(
-            article.text,
-            style: TextStyle(
-                fontSize: 17 * textScale, height: 1.6, color: tokens.ink),
-          ),
+          Builder(builder: (context) {
+            final base = TextStyle(
+                fontSize: 17 * textScale, height: 1.6, color: tokens.ink);
+            return SelectableText.rich(
+              TextSpan(style: base, children: _spans(context, base)),
+              contextMenuBuilder: (ctx, editableTextState) {
+                final sel = editableTextState.textEditingValue.selection;
+                return AdaptiveTextSelectionToolbar.buttonItems(
+                  anchors: editableTextState.contextMenuAnchors,
+                  buttonItems: [
+                    if (sel.isValid && !sel.isCollapsed)
+                      ContextMenuButtonItem(
+                        label: '🖍 İşaretle',
+                        onPressed: () {
+                          editableTextState.hideToolbar();
+                          onHighlight(sel);
+                        },
+                      ),
+                    ...editableTextState.contextMenuButtonItems,
+                  ],
+                );
+              },
+            );
+          }),
+          // Kişisel not — resmî metinden GÖRSEL olarak ayrı kart (Doc 29 §37).
+          if (note != null) ...[
+            const SizedBox(height: AppSpacing.sm),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(AppSpacing.md),
+              decoration: BoxDecoration(
+                color: tokens.accentStreak.withValues(alpha: .08),
+                border: Border(
+                    left: BorderSide(
+                        color: tokens.accentStreak, width: 3)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('📝 NOTUM',
+                      style: AppTypography.caption.copyWith(
+                          color: tokens.accentStreak,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: .8)),
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(note!,
+                      style: AppTypography.body
+                          .copyWith(color: tokens.ink, fontSize: 14)),
+                ],
+              ),
+            ),
+          ],
           const SizedBox(height: AppSpacing.sm),
           // Aksiyon satırı — sessiz, metni bastırmayan.
           Row(children: [
@@ -441,10 +684,26 @@ class _ArticleBlock extends StatelessWidget {
             ),
             const SizedBox(width: AppSpacing.lg),
             _action(context,
+                icon: note != null
+                    ? Icons.sticky_note_2_rounded
+                    : Icons.sticky_note_2_outlined,
+                label: note != null ? 'Notum' : 'Not',
+                color: note != null ? tokens.accentStreak : tokens.inkSoft,
+                onTap: onNote),
+            const SizedBox(width: AppSpacing.lg),
+            _action(context,
                 icon: Icons.share_outlined,
                 label: 'Paylaş',
                 color: tokens.inkSoft,
                 onTap: onShare),
+            if (highlights.isNotEmpty) ...[
+              const SizedBox(width: AppSpacing.lg),
+              _action(context,
+                  icon: Icons.border_color_rounded,
+                  label: '${highlights.length}',
+                  color: tokens.accentStreak,
+                  onTap: () => _showHighlightList(context)),
+            ],
             if (onQuiz != null) ...[
               const SizedBox(width: AppSpacing.lg),
               _action(context,
@@ -457,6 +716,46 @@ class _ArticleBlock extends StatelessWidget {
           const SizedBox(height: AppSpacing.lg),
           Divider(color: tokens.line),
         ],
+      ),
+    );
+  }
+
+  void _showHighlightList(BuildContext context) {
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (ctx) => SafeArea(
+        child: ListView(
+          shrinkWrap: true,
+          padding: const EdgeInsets.fromLTRB(
+              AppSpacing.xl, 0, AppSpacing.xl, AppSpacing.xl),
+          children: [
+            Text('Madde ${article.no} — işaretlerin',
+                style:
+                    AppTypography.heading.copyWith(color: ctx.tokens.ink)),
+            const SizedBox(height: AppSpacing.sm),
+            for (final h in highlights)
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                title: Text(
+                  '"${h.snippet}"',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body
+                      .copyWith(color: ctx.tokens.ink, fontSize: 13),
+                ),
+                trailing: IconButton(
+                  tooltip: 'İşareti kaldır',
+                  icon: Icon(Icons.delete_outline_rounded,
+                      size: 20, color: ctx.tokens.danger),
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                    onRemoveHighlight(h);
+                  },
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }

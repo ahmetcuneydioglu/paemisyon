@@ -308,6 +308,50 @@ class ReadingProgressItem {
       );
 }
 
+/// Madde işareti (highlight) — tek renk, karakter aralığı çapalı (Doc 29 §17).
+class HighlightItem {
+  final String id;
+  final String no;
+  final int startOffset;
+  final int endOffset;
+  final String snippet;
+  const HighlightItem({
+    required this.id,
+    required this.no,
+    required this.startOffset,
+    required this.endOffset,
+    required this.snippet,
+  });
+
+  factory HighlightItem.fromJson(Map<String, dynamic> j) => HighlightItem(
+        id: j['id'] as String,
+        no: j['no'] as String,
+        startOffset: j['startOffset'] as int,
+        endOffset: j['endOffset'] as int,
+        snippet: j['snippet'] as String? ?? '',
+      );
+}
+
+/// Kanunun tüm kullanıcı katmanı: işaretler + notlar (tek istek).
+class ArticleAnnotations {
+  final List<HighlightItem> highlights;
+  final Map<String, String> notes; // articleNo → not metni
+  const ArticleAnnotations({required this.highlights, required this.notes});
+
+  static const empty = ArticleAnnotations(highlights: [], notes: {});
+
+  factory ArticleAnnotations.fromJson(Map<String, dynamic> j) =>
+      ArticleAnnotations(
+        highlights: (j['highlights'] as List<dynamic>? ?? [])
+            .map((e) => HighlightItem.fromJson(e as Map<String, dynamic>))
+            .toList(),
+        notes: {
+          for (final n in (j['notes'] as List<dynamic>? ?? []))
+            (n as Map<String, dynamic>)['no'] as String: n['text'] as String,
+        },
+      );
+}
+
 class MevzuatRepository {
   final Dio _dio;
   const MevzuatRepository(this._dio);
@@ -361,6 +405,40 @@ class MevzuatRepository {
       (d) => (d['items'] as List<dynamic>)
           .map((e) => ReadingProgressItem.fromJson(e as Map<String, dynamic>))
           .toList());
+
+  Future<ArticleAnnotations> annotations(String lawSlug) => _get(
+      '/me/article-annotations?lawSlug=${Uri.encodeQueryComponent(lawSlug)}',
+      ArticleAnnotations.fromJson);
+
+  Future<String?> addHighlight({
+    required String lawSlug,
+    required String no,
+    required int startOffset,
+    required int endOffset,
+    required String snippet,
+  }) async {
+    final r = await _dio.post<Map<String, dynamic>>('/me/article-highlights',
+        data: {
+          'lawSlug': lawSlug,
+          'no': no,
+          'startOffset': startOffset,
+          'endOffset': endOffset,
+          'snippet': snippet,
+        });
+    final data = r.data?['data'] as Map<String, dynamic>?;
+    if (data == null || data['ok'] != true) return null;
+    return data['id'] as String?;
+  }
+
+  Future<void> removeHighlight(String id) async {
+    await _dio.delete('/me/article-highlights/$id');
+  }
+
+  /// Boş metin notu siler (sunucu sözleşmesi).
+  Future<void> putNote(String lawSlug, String no, String text) async {
+    await _dio.put('/me/article-notes',
+        data: {'lawSlug': lawSlug, 'no': no, 'text': text});
+  }
 
   /// Sessiz kaydetme — okuma akışını hata snack'iyle bölmeyiz.
   Future<void> saveProgress(String lawSlug, String no) async {

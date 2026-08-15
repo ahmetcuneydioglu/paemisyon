@@ -124,6 +124,8 @@ model User {
   streak           Streak?
   bookmarks        Bookmark[]
   articleBookmarks ArticleBookmark[]
+  articleHighlights ArticleHighlight[]
+  articleNotes     ArticleNote[]
   readingProgress  ReadingProgress[]
   wrongAnswers     WrongAnswer[]
   questionReports  QuestionReport[]
@@ -354,6 +356,8 @@ model LawArticle {
   legislation Legislation?        @relation(fields: [legislationId], references: [id], onDelete: SetNull)
   section     LegislationSection? @relation(fields: [sectionId], references: [id], onDelete: SetNull)
   bookmarks   ArticleBookmark[]
+  highlights  ArticleHighlight[]
+  notes       ArticleNote[]
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
@@ -425,6 +429,40 @@ model ArticleBookmark {
 
   @@id([userId, lawArticleId])
   @@map("article_bookmarks")
+}
+
+/// Madde işaretlemesi (Doc 29 §17 — P2): kullanıcının seçtiği metin parçası.
+/// Çapa: karakter aralığı + parça metni (metin güncellenirse parça ile
+/// yeniden konumlanır; bulunamazsa istemci sessizce gizler).
+model ArticleHighlight {
+  id           String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId       String   @map("user_id") @db.Uuid
+  lawArticleId String   @map("law_article_id") @db.Uuid
+  startOffset  Int      @map("start_offset")
+  endOffset    Int      @map("end_offset")
+  snippet      String
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  user    User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  article LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@index([userId, lawArticleId])
+  @@map("article_highlights")
+}
+
+/// Kişisel madde notu (Doc 29 §18 — P2): madde başına TEK not (upsert).
+/// Resmî metinden veri modelinde de ayrı — asla karışmaz (güven ilkesi).
+model ArticleNote {
+  userId       String   @map("user_id") @db.Uuid
+  lawArticleId String   @map("law_article_id") @db.Uuid
+  text         String
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  user    User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  article LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, lawArticleId])
+  @@map("article_notes")
 }
 
 /// Okuma konumu (Doc 29 §14) — "kaldığın yerden devam" + "son okunanlar".

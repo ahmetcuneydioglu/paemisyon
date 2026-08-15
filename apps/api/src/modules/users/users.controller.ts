@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Patch, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseUUIDPipe, Patch, Post, Put, Query, UseGuards } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
@@ -77,6 +77,125 @@ export class UsersController {
     if (!article) return { ok: false };
     await this.prisma.articleBookmark.deleteMany({
       where: { userId: user.id, lawArticleId: article.id },
+    });
+    return { ok: true };
+  }
+
+  // ── Highlight + kişisel not (Doc 29 §17-18, P2) ──
+
+  /** Kanunun tüm işaret ve notları — okuyucu açılışında tek istek. */
+  @Get('article-annotations')
+  async articleAnnotations(
+    @CurrentUser() user: AuthenticatedUser,
+    @Query('lawSlug') lawSlug?: string,
+  ) {
+    if (!lawSlug) return { highlights: [], notes: [] };
+    const where = {
+      userId: user.id,
+      article: {
+        legislation: { slug: lawSlug, deletedAt: null },
+        deletedAt: null,
+      },
+    };
+    const [highlights, notes] = await Promise.all([
+      this.prisma.articleHighlight.findMany({
+        where,
+        select: {
+          id: true,
+          startOffset: true,
+          endOffset: true,
+          snippet: true,
+          article: { select: { articleNo: true } },
+        },
+      }),
+      this.prisma.articleNote.findMany({
+        where,
+        select: { text: true, article: { select: { articleNo: true } } },
+      }),
+    ]);
+    return {
+      highlights: highlights.map((h) => ({
+        id: h.id,
+        no: h.article.articleNo,
+        startOffset: h.startOffset,
+        endOffset: h.endOffset,
+        snippet: h.snippet,
+      })),
+      notes: notes.map((n) => ({ no: n.article.articleNo, text: n.text })),
+    };
+  }
+
+  @Post('article-highlights')
+  async addHighlight(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body()
+    body: {
+      lawSlug?: string;
+      no?: string;
+      startOffset?: number;
+      endOffset?: number;
+      snippet?: string;
+    },
+  ) {
+    const article = await this.findArticle(body.lawSlug, body.no);
+    const snippet = body.snippet?.trim();
+    if (
+      !article ||
+      !snippet ||
+      typeof body.startOffset !== 'number' ||
+      typeof body.endOffset !== 'number' ||
+      body.endOffset <= body.startOffset
+    ) {
+      return { ok: false };
+    }
+    const row = await this.prisma.articleHighlight.create({
+      data: {
+        userId: user.id,
+        lawArticleId: article.id,
+        startOffset: Math.max(0, Math.floor(body.startOffset)),
+        endOffset: Math.floor(body.endOffset),
+        snippet: snippet.slice(0, 500),
+      },
+    });
+    return { ok: true, id: row.id };
+  }
+
+  @Delete('article-highlights/:id')
+  async removeHighlight(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    await this.prisma.articleHighlight.deleteMany({
+      where: { id, userId: user.id },
+    });
+    return { ok: true };
+  }
+
+  /** Madde notu upsert — boş metin notu siler. */
+  @Put('article-notes')
+  async putNote(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { lawSlug?: string; no?: string; text?: string },
+  ) {
+    const article = await this.findArticle(body.lawSlug, body.no);
+    if (!article) return { ok: false };
+    const text = body.text?.trim() ?? '';
+    if (text.length === 0) {
+      await this.prisma.articleNote.deleteMany({
+        where: { userId: user.id, lawArticleId: article.id },
+      });
+      return { ok: true, deleted: true };
+    }
+    await this.prisma.articleNote.upsert({
+      where: {
+        userId_lawArticleId: { userId: user.id, lawArticleId: article.id },
+      },
+      update: { text: text.slice(0, 2000) },
+      create: {
+        userId: user.id,
+        lawArticleId: article.id,
+        text: text.slice(0, 2000),
+      },
     });
     return { ok: true };
   }
