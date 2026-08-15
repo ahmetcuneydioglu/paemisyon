@@ -16,7 +16,6 @@ import '../../../shared/widgets/focus_sheet.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
 import '../../../shared/widgets/rank_insignia.dart';
-import '../../../shared/widgets/session_button.dart';
 import '../../../shared/widgets/streak_badge.dart';
 import '../../catalog/presentation/focus_drilldown_sheet.dart';
 import '../../coach/data/coach_repository.dart';
@@ -691,57 +690,153 @@ class _TodayHero extends StatelessWidget {
       required this.onPrimary,
       required this.onFocusTap});
 
+  // Marka dünyası (icon/splash/intro ile aynı) — hero tek vitrin kartıdır.
+  static const _navyTop = Color(0xFF27548F);
+  static const _navyMid = Color(0xFF1B3A6B);
+  static const _navyDeep = Color(0xFF122A52);
+  static const _amber = Color(0xFFF3A93C);
+  static const _teal = Color(0xFF2FC493);
+  static const _softInk = Color(0xFF9FB6D6);
+
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final remaining = brief.goal - brief.answered;
-    final headline = remaining > 0
-        ? 'Bugünkü hedefine $remaining soru kaldı'
-        : 'Bugünkü hedefini tamamladın 🎉';
+    final done = brief.goal > 0 && remaining <= 0;
+    final headline = done
+        ? 'Bugünkü hedef tamam 🎉'
+        : 'Hedefe $remaining soru kaldı';
 
     return Container(
-      padding: const EdgeInsets.all(AppSpacing.lg),
+      padding: const EdgeInsets.all(AppSpacing.xl),
       decoration: BoxDecoration(
-        color: pal.heroBg,
-        border: Border.all(color: pal.heroBorder),
-        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg + 4),
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [_navyTop, _navyMid, _navyDeep],
+          stops: [0, .55, 1],
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: _navyDeep.withValues(alpha: .35),
+            blurRadius: 24,
+            offset: const Offset(0, 10),
+          ),
+        ],
       ),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          AnimatedGoalRing(
-            value: brief.goal > 0 ? brief.answered / brief.goal : 0,
-            color: pal.accent,
-            center: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('${brief.answered}/${brief.goal}',
-                    style: theme.textTheme.titleSmall
-                        ?.copyWith(fontWeight: FontWeight.w700, height: 1.1)),
-                Text('soru', style: theme.textTheme.labelSmall),
-              ],
+          Row(
+            children: [
+              AnimatedGoalRing(
+                size: 84,
+                value: brief.goal > 0 ? brief.answered / brief.goal : 0,
+                color: done ? _teal : _amber,
+                center: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('${brief.answered}/${brief.goal}',
+                        style: AppTypography.heading.copyWith(
+                            color: Colors.white, height: 1.05)),
+                    Text('soru',
+                        style:
+                            AppTypography.caption.copyWith(color: _softInk)),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpacing.lg),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(headline,
+                        style: AppTypography.heading
+                            .copyWith(color: Colors.white)),
+                    const SizedBox(height: AppSpacing.sm),
+                    // Haftalık ritim: gün noktaları — "4/5 aktif gün" GÖRSEL.
+                    Row(
+                      children: [
+                        for (var i = 0; i < brief.weeklyGoalDays; i++)
+                          Container(
+                            width: 10,
+                            height: 10,
+                            margin: const EdgeInsets.only(right: 5),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: i < brief.weeklyActiveDays
+                                  ? _teal
+                                  : Colors.transparent,
+                              border: i < brief.weeklyActiveDays
+                                  ? null
+                                  : Border.all(
+                                      color: Colors.white
+                                          .withValues(alpha: .35)),
+                            ),
+                          ),
+                        const SizedBox(width: AppSpacing.xs),
+                        Text(
+                          '${brief.weeklyActiveDays}/${brief.weeklyGoalDays} aktif gün',
+                          style: AppTypography.caption
+                              .copyWith(color: _softInk),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          // Ana eylem: navy üstünde amber — vitrin CTA'sı.
+          SizedBox(
+            height: 52,
+            child: FilledButton(
+              onPressed: onPrimary,
+              style: FilledButton.styleFrom(
+                backgroundColor: _amber,
+                foregroundColor: _navyDeep,
+                textStyle: AppTypography.label
+                    .copyWith(fontSize: 16, fontWeight: FontWeight.w800),
+                shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.circular(AppSpacing.radiusMd + 2)),
+              ),
+              child: Text(brief.primaryAction.label),
             ),
           ),
-          const SizedBox(width: AppSpacing.lg),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(headline,
-                    style: theme.textTheme.titleSmall
-                        ?.copyWith(fontWeight: FontWeight.w600)),
-                const SizedBox(height: 2),
-                Text(
-                  'Bu hafta ${brief.weeklyActiveDays}/${brief.weeklyGoalDays} aktif gün',
-                  style: theme.textTheme.bodySmall,
+          const SizedBox(height: AppSpacing.sm),
+          // Odak ucu: cam rozet — "nereye bakılacağını sen seçersin".
+          Center(
+            child: Semantics(
+              button: true,
+              label: 'Odak: Koç seçiyor — odak seç',
+              child: Material(
+                color: Colors.white.withValues(alpha: .10),
+                borderRadius: BorderRadius.circular(AppSpacing.radiusFull),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(AppSpacing.radiusFull),
+                  onTap: onFocusTap,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpacing.lg, vertical: AppSpacing.sm),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.center_focus_strong_rounded,
+                            size: 16, color: _amber),
+                        const SizedBox(width: AppSpacing.xs),
+                        Text('Odak: Koç seçiyor',
+                            style: AppTypography.caption.copyWith(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600)),
+                        const Icon(Icons.expand_more_rounded,
+                            size: 18, color: _softInk),
+                      ],
+                    ),
+                  ),
                 ),
-                const SizedBox(height: AppSpacing.sm),
-                SessionButton(
-                  label: brief.primaryAction.label,
-                  onPressed: onPrimary,
-                  focusLabel: 'Odak: Koç seçiyor',
-                  onFocusTap: onFocusTap,
-                ),
-              ],
+              ),
             ),
           ),
         ],
