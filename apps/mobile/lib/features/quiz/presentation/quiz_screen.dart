@@ -501,6 +501,21 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 style: AppTypography.caption
                     .copyWith(color: ctx.tokens.inkSoft),
               ),
+              // Mevzuat köprüsü (Doc 29 §15): bağlamıyla oku — önceki/sonraki
+              // maddeler, içindekiler ve kaydetme okuyucuda.
+              const SizedBox(height: AppSpacing.md),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  icon: const Icon(Icons.menu_book_outlined, size: 18),
+                  label: const Text('Kanunda oku'),
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                    context.push(
+                        '/mevzuat/${article.lawSlug}/oku?madde=${Uri.encodeComponent(article.no)}');
+                  },
+                ),
+              ),
             ],
           ),
         ),

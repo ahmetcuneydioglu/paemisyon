@@ -23,6 +23,10 @@ import '../../features/me/presentation/home_screen.dart';
 import '../../features/me/presentation/onboarding_screen.dart';
 import '../../features/me/presentation/profile_screen.dart';
 import '../../features/me/presentation/profile_settings_screen.dart';
+import '../../features/mevzuat/presentation/legislation_detail_screen.dart';
+import '../../features/mevzuat/presentation/mevzuat_home_screen.dart';
+import '../../features/mevzuat/presentation/mevzuat_search_screen.dart';
+import '../../features/mevzuat/presentation/reader_screen.dart';
 import '../../features/progress/presentation/leaderboard_screen.dart';
 import '../../features/progress/presentation/progress_screen.dart';
 import '../../features/quiz/domain/quiz_models.dart';
@@ -117,6 +121,34 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     ),
                   ),
                 ]),
+            // Mevzuat Merkezi (Doc 29) — Kütüphane bölgesinin ikinci kanadı.
+            GoRoute(
+              path: '/mevzuat',
+              builder: (context, state) => const MevzuatHomeScreen(),
+              routes: [
+                GoRoute(
+                  path: 'ara',
+                  builder: (context, state) => const MevzuatSearchScreen(),
+                ),
+                GoRoute(
+                  path: ':slug',
+                  builder: (context, state) => LegislationDetailScreen(
+                      slug: state.pathParameters['slug']!),
+                  routes: [
+                    // Okuyucu tam ekran: metin ekrana hâkim, tab bar yok.
+                    GoRoute(
+                      path: 'oku',
+                      parentNavigatorKey: _rootNavigatorKey,
+                      builder: (context, state) => ReaderScreen(
+                        slug: state.pathParameters['slug']!,
+                        initialArticleNo:
+                            state.uri.queryParameters['madde'],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
             GoRoute(
                 path: '/review',
                 builder: (context, state) => const ReviewScreen()),

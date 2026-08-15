@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/error/failure.dart';
 import '../../../core/theme/accent_palette.dart';
+import '../../../core/theme/app_tokens.dart';
+import '../../../core/theme/app_typography.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
@@ -91,6 +93,7 @@ class _GoalCards extends StatelessWidget {
             SizedBox(height: 180, child: c),
             const SizedBox(height: AppSpacing.lg),
           ],
+          const _MevzuatEntry(),
         ],
       );
     }
@@ -106,12 +109,65 @@ class _GoalCards extends StatelessWidget {
               if (i > 0) const SizedBox(height: AppSpacing.lg),
               Expanded(child: c),
             ],
+            const SizedBox(height: AppSpacing.lg),
+            const _MevzuatEntry(),
           ],
         ),
       ),
     );
   }
 }
+
+/// Mevzuat Merkezi kapısı (Doc 29 §5) — Kütüphane'nin ikinci kanadı.
+class _MevzuatEntry extends StatelessWidget {
+  const _MevzuatEntry();
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Semantics(
+      button: true,
+      label: 'Mevzuat Merkezi — kanunları oku ve ara',
+      child: Material(
+        color: tokens.surface,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          onTap: () => context.push('/mevzuat'),
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+            decoration: BoxDecoration(
+              border: Border.all(color: tokens.accentAtlas.withValues(alpha: .45)),
+              borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              color: tokens.accentAtlas.withValues(alpha: .06),
+            ),
+            child: Row(children: [
+              Icon(Icons.balance_rounded, size: 26, color: tokens.accentAtlas),
+              const SizedBox(width: AppSpacing.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Mevzuat Merkezi',
+                        style: AppTypography.label
+                            .copyWith(color: tokens.ink, fontSize: 15)),
+                    const SizedBox(height: 2),
+                    Text('PVSK, CMK, Anayasa… oku, ara, kaydet.',
+                        style: AppTypography.caption
+                            .copyWith(color: tokens.inkSoft)),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right_rounded, color: tokens.inkSoft),
+            ]),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
 /// Modül kimliği: anahtar → ikon + renk dünyası (PAEM mavi, Misyon teal).
 ({IconData icon, Color bg, Color border, Color fg}) _identityOf(
