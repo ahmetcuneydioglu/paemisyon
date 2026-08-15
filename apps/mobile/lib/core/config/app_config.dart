@@ -29,11 +29,13 @@ class AppConfig {
         '685808602334-vdcfaaajqo8f50po7son57ceginfmgvj.apps.googleusercontent.com',
   );
 
-  /// Google OAuth WEB client ID — Supabase idToken audience'ı bunu bekler
-  /// (Supabase dashboard'daki Google provider'da kayıtlı web client).
-  /// Boşsa Google butonu gizli kalır.
-  static const String googleWebClientId =
-      String.fromEnvironment('GOOGLE_WEB_CLIENT_ID');
+  /// Google OAuth WEB client ID (PUBLIC) — Supabase idToken audience'ı bunu
+  /// bekler; dashboard'daki Google provider'la birebir aynı değer.
+  static const String googleWebClientId = String.fromEnvironment(
+    'GOOGLE_WEB_CLIENT_ID',
+    defaultValue:
+        '685808602334-mt9otaollpn2seef6q6q30gsk1th1gpa.apps.googleusercontent.com',
+  );
 
   static bool get hasGoogleSignIn =>
       googleIosClientId.isNotEmpty && googleWebClientId.isNotEmpty;
