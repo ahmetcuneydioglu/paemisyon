@@ -20,7 +20,7 @@ import '../../../shared/widgets/streak_badge.dart';
 import '../../catalog/presentation/focus_drilldown_sheet.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
-import '../../mevzuat/data/mevzuat_repository.dart';
+import '../../mevzuat/presentation/mevzuat_hero_card.dart';
 import '../../progress/data/leaderboard_repository.dart';
 import '../../progress/data/progress_repository.dart';
 import '../../progress/presentation/leaderboard_preview_card.dart';
@@ -365,6 +365,10 @@ class _CoachBody extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.sm),
 
+        // ── İkiz vitrin (Doc 29): navy ÇÖZ, mor OKU — Mevzuat Merkezi ──
+        StaggeredReveal(index: i++, child: const MevzuatHeroCard()),
+        const SizedBox(height: AppSpacing.sm),
+
         // ── Koç kartları: "bugün senin için" ──
         StaggeredReveal(index: i++, child: const _SectionHeader('BUGÜN SENİN İÇİN')),
         for (final card in brief.cards)
@@ -378,51 +382,6 @@ class _CoachBody extends ConsumerWidget {
                   : null,
             ),
           ),
-
-        // ── Mevzuat: kaldığın yerden devam (Doc 29 P1) — yarım kalan okuma ──
-        Consumer(builder: (context, ref, _) {
-          final reading =
-              ref.watch(readingProgressProvider).valueOrNull ?? const [];
-          if (reading.isEmpty) return const SizedBox.shrink();
-          final r = reading.first;
-          return Padding(
-            padding: const EdgeInsets.only(top: AppSpacing.xs),
-            child: PressableScale(
-              onTap: () => context.push(
-                  '/mevzuat/${r.lawSlug}/oku?madde=${Uri.encodeComponent(r.no)}'),
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.lg, vertical: AppSpacing.sm + 2),
-                decoration: BoxDecoration(
-                  border: Border.all(color: context.tokens.line),
-                  borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-                  color: context.tokens.surface,
-                ),
-                child: Row(children: [
-                  Icon(Icons.auto_stories_rounded,
-                      size: 22, color: context.tokens.accentAtlas),
-                  const SizedBox(width: AppSpacing.sm + 2),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Okumaya devam et',
-                            style: theme.textTheme.bodyMedium
-                                ?.copyWith(fontWeight: FontWeight.w600)),
-                        Text('${r.lawShort} · Madde ${r.no}',
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: theme.textTheme.bodySmall),
-                      ],
-                    ),
-                  ),
-                  Icon(Icons.chevron_right_rounded,
-                      color: context.tokens.inkSoft),
-                ]),
-              ),
-            ),
-          );
-        }),
 
         // ── Rütbe arması (Doc 24 §5): meslek diliyle ilerleme ──
         if (brief.rank != null) ...[
