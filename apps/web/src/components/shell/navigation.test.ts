@@ -5,7 +5,7 @@ describe("uygulama navigasyonu", () => {
   it.each([
     ["/bugun", "Bugün"],
     ["/kutuphane/favoriler", "Kütüphane"],
-    ["/kanun/cmk", "Kütüphane"],
+    ["/kanun/cmk", "Mevzuat"],
     ["/sonuc/attempt-1", "Denemeler"],
     ["/performans/konu-haritasi", "Performans"],
     ["/profil/ayarlar", "Ben"],
