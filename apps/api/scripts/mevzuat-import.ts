@@ -114,8 +114,15 @@ function parseDocument(raw: string): { sections: ParsedSection[]; articles: Pars
           !/[.:;]$/.test(prevLine) &&
           !SECTION_RE.test(prevLine)
         ) {
-          // PDF dipnot numaraları başlığa yapışır: "Kasten yaralama3637".
-          title = prevLine.replace(/\d+$/, '').trim();
+          // PDF dipnot numaraları başlığa yapışır: "Kasten yaralama3637";
+          // Anayasa kenar başlıklarındaki "II." roman ön eki de düşer.
+          title = prevLine
+            .replace(/\d+$/, '')
+            .replace(/^[IVXLC]+\.\s*/, '')
+            .trim();
+          // Dipnot rakamı atılınca cümle olduğu ortaya çıkan satır ("…tabidir.")
+          // başlık DEĞİL, önceki maddenin devam satırıdır.
+          if (/[.:;,]$/.test(title) || title.length < 3) title = null;
           // Önceki maddenin gövdesinin son satırıysa oradan düş.
           const tail = current.lines[current.lines.length - 1];
           if (tail === prevLine) current.lines.pop();
