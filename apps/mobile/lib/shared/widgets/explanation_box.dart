@@ -38,11 +38,14 @@ class ExplanationBox extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('Açıklama',
-              style: AppTypography.label.copyWith(color: tokens.ink)),
-          const SizedBox(height: AppSpacing.xs),
-          Text(explanation,
-              style: AppTypography.body.copyWith(color: tokens.ink)),
+          // Açıklama boş olabilir (yalnız kaynak etiketi taşıyan kutu).
+          if (explanation.trim().isNotEmpty) ...[
+            Text('Açıklama',
+                style: AppTypography.label.copyWith(color: tokens.ink)),
+            const SizedBox(height: AppSpacing.xs),
+            Text(explanation,
+                style: AppTypography.body.copyWith(color: tokens.ink)),
+          ],
           if (articleLabel != null) ...[
             const SizedBox(height: AppSpacing.sm),
             Semantics(

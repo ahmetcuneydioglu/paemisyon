@@ -654,8 +654,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           const SizedBox(height: AppSpacing.xl),
           ...q.options.map((o) => _optionTile(o, isCurrent: isCurrent)),
           // Açıklama cevaptan hemen sonra AYNI ekranda (Doc 26 §4 #6).
+          // Kaynak etiketi TEK BAŞINA da gösterilir (Doc 2: "gerçek, kaynaklı
+          // çıkmış soru" güveni — açıklama yoksa bile kaynak görünür).
           if (fb != null &&
-              (fb.explanation != null || fb.legalReference != null)) ...[
+              (fb.explanation != null ||
+                  fb.legalReference != null ||
+                  fb.source != null)) ...[
             const SizedBox(height: AppSpacing.lg),
             ExplanationBox(
               explanation: [
