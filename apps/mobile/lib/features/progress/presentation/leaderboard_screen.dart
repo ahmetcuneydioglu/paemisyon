@@ -34,7 +34,9 @@ class LeaderboardScreen extends StatelessWidget {
           children: [
             _Board(period: 'daily'),
             _Board(period: 'monthly'),
-            _GlobalBoard(),
+            // Genel = tüm zamanların puanı: soru çözen HERKES listededir.
+            // (Deneme-ortalaması tablosu deneme detayında yaşıyor.)
+            _Board(period: 'all'),
           ],
         ),
       ),
@@ -57,90 +59,49 @@ class _Board extends ConsumerWidget {
         message: e is Failure ? e.message : 'Yüklenemedi.',
         onRetry: () => ref.invalidate(leaderboardProvider(period)),
       ),
-      data: (board) => Column(
-        children: [
-          Expanded(
-            child: board.top.isEmpty
-                ? const EmptyStateView(
-                    icon: Icons.emoji_events_outlined,
-                    message:
-                        'Henüz kimse puan almadı.\nİlk sırayı kapma şansı — soru çözmeye başla!',
-                  )
-                : ListView.separated(
-                    padding: const EdgeInsets.all(AppSpacing.lg),
-                    itemCount: board.top.length,
-                    separatorBuilder: (_, __) =>
-                        const SizedBox(height: AppSpacing.xs),
-                    itemBuilder: (context, i) => _RankRow(
-                      rank: board.top[i].rank,
-                      displayName: board.top[i].displayName,
-                      avatarUrl: board.top[i].avatarUrl,
-                      isMe: board.top[i].isMe,
-                      trailing: '${board.top[i].points} puan',
-                    ),
-                  ),
-          ),
-          _MeBar(
-            text: board.myRank != null
-                ? 'Senin sıran: #${board.myRank} · ${board.myPoints} puan'
-                : 'Henüz puanın yok — bir soru çöz, tabloya gir!',
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-// ── Genel: deneme ortalaması, podyum + sticky ben (Doc 28 P2-13) ──
-
-class _GlobalBoard extends ConsumerWidget {
-  const _GlobalBoard();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final data = ref.watch(globalLeaderboardProvider);
-    return data.when(
-      loading: () => const _BoardSkeleton(),
-      error: (e, _) => ErrorStateView(
-        message: e is Failure ? e.message : 'Yüklenemedi.',
-        onRetry: () => ref.invalidate(globalLeaderboardProvider),
-      ),
       data: (board) {
-        if (board.top.isEmpty) {
-          return const EmptyStateView(
-            icon: Icons.emoji_events_outlined,
-            message:
-                'Genel sıralama, canlı denemelerle oluşur.\nİlk denemene katıl, tabloyu başlat!',
-          );
-        }
-        final podium = board.top.take(3).toList();
+        final top3 = board.top.take(3).toList();
         final rest = board.top.skip(3).toList();
         return Column(
           children: [
             Expanded(
-              child: ListView(
-                padding: const EdgeInsets.all(AppSpacing.lg),
-                children: [
-                  _Podium(rows: podium),
-                  const SizedBox(height: AppSpacing.lg),
-                  for (final r in rest) ...[
-                    _RankRow(
-                      rank: r.rank,
-                      displayName: r.displayName,
-                      avatarUrl: r.avatarUrl,
-                      isMe: r.isMe,
-                      trailing: r.avgScore.toStringAsFixed(2),
-                      subtitle: '${r.attempts} deneme',
+              child: board.top.isEmpty
+                  ? const EmptyStateView(
+                      icon: Icons.emoji_events_outlined,
+                      message:
+                          'Henüz kimse puan almadı.\nİlk sırayı kapma şansı — soru çözmeye başla!',
+                    )
+                  : ListView(
+                      padding: const EdgeInsets.all(AppSpacing.lg),
+                      children: [
+                        _Podium(entries: [
+                          for (final r in top3)
+                            _PodiumEntry(
+                              rank: r.rank,
+                              displayName: r.displayName,
+                              avatarUrl: r.avatarUrl,
+                              isMe: r.isMe,
+                              valueLabel: '${r.points} puan',
+                            ),
+                        ]),
+                        const SizedBox(height: AppSpacing.lg),
+                        for (final r in rest) ...[
+                          _RankRow(
+                            rank: r.rank,
+                            displayName: r.displayName,
+                            avatarUrl: r.avatarUrl,
+                            isMe: r.isMe,
+                            trailing: '${r.points} puan',
+                          ),
+                          const SizedBox(height: AppSpacing.xs),
+                        ],
+                      ],
                     ),
-                    const SizedBox(height: AppSpacing.xs),
-                  ],
-                ],
-              ),
             ),
             _MeBar(
-              text: board.me != null
-                  ? 'Senin sıran: #${board.me!.rank} · ort. ${board.me!.avgScore.toStringAsFixed(2)} net'
-                  : 'Bir canlı denemeye katıl, genel tabloya gir!',
+              text: board.myRank != null
+                  ? 'Senin sıran: #${board.myRank} · ${board.myPoints} puan'
+                  : 'Henüz puanın yok — bir soru çöz, tabloya gir!',
             ),
           ],
         );
@@ -149,11 +110,27 @@ class _GlobalBoard extends ConsumerWidget {
   }
 }
 
+/// Podyum satırı görünüm modeli — puan da net ortalaması da olabilir.
+class _PodiumEntry {
+  final int rank;
+  final String displayName;
+  final String? avatarUrl;
+  final bool isMe;
+  final String valueLabel;
+  const _PodiumEntry({
+    required this.rank,
+    required this.displayName,
+    this.avatarUrl,
+    required this.isMe,
+    required this.valueLabel,
+  });
+}
+
 /// İlk 3 podyumu: 2-1-3 dizilimi, birinci yükseltilmiş; arkada yumuşak
 /// ışıma, sütunlar degrade "kürsü" olarak yükselerek belirir.
 class _Podium extends StatelessWidget {
-  final List<GlobalLeaderboardRow> rows;
-  const _Podium({required this.rows});
+  final List<_PodiumEntry> entries;
+  const _Podium({required this.entries});
 
   // Kürsü paletleri (açık→koyu degrade): altın, buz mavisi, mercan.
   // İki temada da doygun kalır — yüzeye alpha karışımı yapılmaz.
@@ -163,9 +140,9 @@ class _Podium extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final first = rows.isNotEmpty ? rows[0] : null;
-    final second = rows.length > 1 ? rows[1] : null;
-    final third = rows.length > 2 ? rows[2] : null;
+    final first = entries.isNotEmpty ? entries[0] : null;
+    final second = entries.length > 1 ? entries[1] : null;
+    final third = entries.length > 2 ? entries[2] : null;
     return Stack(
       alignment: Alignment.bottomCenter,
       children: [
@@ -220,7 +197,7 @@ class _Podium extends StatelessWidget {
 }
 
 class _PodiumCell extends StatefulWidget {
-  final GlobalLeaderboardRow row;
+  final _PodiumEntry row;
   final double height;
   final ({Color top, Color bottom}) palette;
   final int delayMs;
@@ -259,8 +236,7 @@ class _PodiumCellState extends State<_PodiumCell> {
     final targetH = (_revealed || reduce) ? widget.height : 0.0;
 
     return Semantics(
-      label:
-          '${row.rank}. sıra: ${row.displayName}, ortalama ${row.avgScore.toStringAsFixed(2)} net',
+      label: '${row.rank}. sıra: ${row.displayName}, ${row.valueLabel}',
       excludeSemantics: true,
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -312,7 +288,7 @@ class _PodiumCellState extends State<_PodiumCell> {
                   ),
                 ),
                 Text(
-                  '${row.avgScore.toStringAsFixed(2)} net',
+                  row.valueLabel,
                   style: AppTypography.caption.copyWith(color: tokens.inkSoft),
                 ),
               ],
@@ -416,14 +392,12 @@ class _RankRow extends StatelessWidget {
   final String? avatarUrl;
   final bool isMe;
   final String trailing;
-  final String? subtitle;
   const _RankRow({
     required this.rank,
     required this.displayName,
     this.avatarUrl,
     required this.isMe,
     required this.trailing,
-    this.subtitle,
   });
 
   @override
@@ -480,10 +454,6 @@ class _RankRow extends StatelessWidget {
                       color: tokens.ink,
                       fontWeight: isMe ? FontWeight.w700 : FontWeight.w400),
                 ),
-                if (subtitle != null)
-                  Text(subtitle!,
-                      style: AppTypography.caption
-                          .copyWith(color: tokens.inkSoft)),
               ],
             ),
           ),
