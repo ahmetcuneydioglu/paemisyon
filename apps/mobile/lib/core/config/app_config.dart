@@ -20,14 +20,18 @@ class AppConfig {
     defaultValue: 'https://paemisyon.com',
   );
 
-  /// Google OAuth iOS client ID (public — Doc 28 P0-①). Boşsa Google butonu
-  /// gizlenir. Google Cloud Console → iOS OAuth client'tan alınır ve
-  /// --dart-define=GOOGLE_IOS_CLIENT_ID=... ile verilir.
-  static const String googleIosClientId =
-      String.fromEnvironment('GOOGLE_IOS_CLIENT_ID');
+  /// Google OAuth iOS client ID (PUBLIC kimlik — Supabase anon key gibi
+  /// gömülebilir; Info.plist'teki URL şemasıyla eşleşir). dart-define ile
+  /// üzerine yazılabilir.
+  static const String googleIosClientId = String.fromEnvironment(
+    'GOOGLE_IOS_CLIENT_ID',
+    defaultValue:
+        '685808602334-vdcfaaajqo8f50po7son57ceginfmgvj.apps.googleusercontent.com',
+  );
 
   /// Google OAuth WEB client ID — Supabase idToken audience'ı bunu bekler
   /// (Supabase dashboard'daki Google provider'da kayıtlı web client).
+  /// Boşsa Google butonu gizli kalır.
   static const String googleWebClientId =
       String.fromEnvironment('GOOGLE_WEB_CLIENT_ID');
 
