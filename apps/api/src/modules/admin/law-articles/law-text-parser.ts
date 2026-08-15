@@ -173,3 +173,14 @@ export function parseLawText(raw: string): ParsedArticle[] {
   // Boş gövdeli maddeleri düşür (yalnız başlık, metin yok).
   return out.filter((a) => a.text.length > 0);
 }
+
+/** Deterministik madde sırası: sayısal *100 + harf eki; Ek/Geçici bloğu sona. */
+export function articleSortKey(no: string): number {
+  const m = /^(Ek|Geçici)?\s*(\d+)(?:\/([A-Z]))?/i.exec(no.trim());
+  if (!m) return 9_000_000;
+  const base = parseInt(m[2], 10) * 100 + (m[3] ? m[3].toUpperCase().charCodeAt(0) - 64 : 0);
+  const prefix = (m[1] ?? '').toLocaleLowerCase('tr');
+  if (prefix === 'ek') return 1_000_000 + base;
+  if (prefix === 'geçici') return 2_000_000 + base;
+  return base;
+}

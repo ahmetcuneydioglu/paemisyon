@@ -272,6 +272,7 @@ export default function LawArticlesPage() {
             </Card>
           ) : (
             <div className="space-y-4">
+              <LegislationMetaCard topicId={topicId} isAdmin={isAdmin} />
               <LawImport topicId={topicId} isAdmin={isAdmin} />
               {articles.isPending ? (
                 <Spinner />
@@ -367,6 +368,145 @@ export default function LawArticlesPage() {
  * Toplu PDF içe aktarma — mevzuat.gov.tr resmî PDF'i yükle, tüm maddeler otomatik
  * bölünüp kaydedilsin (CLI'sız). Önizle (dryRun) → İçe aktar. Yayın yalnız admin.
  */
+/** Kanun kimliği (Doc 29 §17): kısaltma/numara/alias/tür/resmî URL —
+ *  Mevzuat Merkezi arama ve listesinin beslendiği alanlar. */
+function LegislationMetaCard({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) {
+  const qc = useQueryClient();
+  const [open, setOpen] = useState(false);
+  const meta = useQuery({
+    queryKey: ["legislation-meta", topicId],
+    queryFn: () =>
+      api<{
+        slug: string;
+        type: string;
+        number: string | null;
+        shortName: string | null;
+        aliases: string[];
+        officialSourceUrl: string | null;
+        effectiveInfo: string | null;
+        status: string;
+      }>(`/admin/legislation?topicId=${topicId}`),
+  });
+  const [form, setForm] = useState<{
+    shortName: string;
+    number: string;
+    aliases: string;
+    type: string;
+    officialSourceUrl: string;
+  } | null>(null);
+  const m = meta.data;
+  const f = form ?? {
+    shortName: m?.shortName ?? "",
+    number: m?.number ?? "",
+    aliases: (m?.aliases ?? []).join(", "),
+    type: m?.type ?? "kanun",
+    officialSourceUrl: m?.officialSourceUrl ?? "",
+  };
+  const save = useMutation({
+    mutationFn: () =>
+      api(`/admin/legislation`, {
+        method: "PATCH",
+        body: JSON.stringify({
+          topicId,
+          shortName: f.shortName || null,
+          number: f.number || null,
+          aliases: f.aliases.split(",").map((x: string) => x.trim()).filter(Boolean),
+          type: f.type,
+          officialSourceUrl: f.officialSourceUrl || null,
+        }),
+      }),
+    onSuccess: () => {
+      setForm(null);
+      qc.invalidateQueries({ queryKey: ["legislation-meta", topicId] });
+    },
+  });
+
+  return (
+    <Card>
+      <button
+        type="button"
+        className="flex w-full items-center justify-between text-left"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className="text-sm font-semibold text-slate-700">
+          ⚖️ Kanun Kimliği{" "}
+          <span className="font-normal text-slate-400">
+            {m ? `· ${m.shortName ?? "kısaltma yok"} · ${m.status === "published" ? "yayında" : "taslak"}` : ""}
+          </span>
+        </span>
+        <span className="text-slate-400">{open ? "▴" : "▾"}</span>
+      </button>
+      {open && m && (
+        <div className="mt-3 grid grid-cols-2 gap-2 text-sm md:grid-cols-3">
+          <label className="block">
+            <span className="text-xs text-slate-500">Kısaltma (PVSK)</span>
+            <input
+              className="mt-0.5 w-full rounded border border-slate-200 px-2 py-1"
+              value={f.shortName}
+              onChange={(e) => setForm({ ...f, shortName: e.target.value })}
+              disabled={!isAdmin}
+            />
+          </label>
+          <label className="block">
+            <span className="text-xs text-slate-500">Numara (2559)</span>
+            <input
+              className="mt-0.5 w-full rounded border border-slate-200 px-2 py-1"
+              value={f.number}
+              onChange={(e) => setForm({ ...f, number: e.target.value })}
+              disabled={!isAdmin}
+            />
+          </label>
+          <label className="block">
+            <span className="text-xs text-slate-500">Tür</span>
+            <select
+              className="mt-0.5 w-full rounded border border-slate-200 px-2 py-1"
+              value={f.type}
+              onChange={(e) => setForm({ ...f, type: e.target.value })}
+              disabled={!isAdmin}
+            >
+              <option value="kanun">Kanun</option>
+              <option value="yonetmelik">Yönetmelik</option>
+              <option value="cbk">CBK</option>
+              <option value="genelge">Genelge</option>
+              <option value="yonerge">Yönerge</option>
+            </select>
+          </label>
+          <label className="col-span-2 block">
+            <span className="text-xs text-slate-500">Arama takma adları (virgülle: pvsk, polis vazife)</span>
+            <input
+              className="mt-0.5 w-full rounded border border-slate-200 px-2 py-1"
+              value={f.aliases}
+              onChange={(e) => setForm({ ...f, aliases: e.target.value })}
+              disabled={!isAdmin}
+            />
+          </label>
+          <label className="block">
+            <span className="text-xs text-slate-500">Resmî kaynak URL</span>
+            <input
+              className="mt-0.5 w-full rounded border border-slate-200 px-2 py-1"
+              value={f.officialSourceUrl}
+              onChange={(e) => setForm({ ...f, officialSourceUrl: e.target.value })}
+              disabled={!isAdmin}
+            />
+          </label>
+          {isAdmin && (
+            <div className="col-span-2 flex items-end justify-end md:col-span-3">
+              <button
+                type="button"
+                onClick={() => save.mutate()}
+                disabled={save.isPending || form == null}
+                className="rounded bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white disabled:opacity-50"
+              >
+                {save.isPending ? "Kaydediliyor…" : "Kimliği kaydet"}
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </Card>
+  );
+}
+
 function LawImport({ topicId, isAdmin }: { topicId: string; isAdmin: boolean }) {
   const qc = useQueryClient();
   const [file, setFile] = useState<File | null>(null);

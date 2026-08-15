@@ -27,6 +27,8 @@ type LegislationRow = {
   aliases: string[];
   topicId: string | null;
   lastVerifiedAt: Date | null;
+  /** Yayınlanmış (okunabilir) madde sayısı — 0 ise okuyucu kapalı. */
+  articleCount: number;
 };
 
 /** TR-duyarlı normalize: küçült + aksan düşür (SQL tr_unaccent ile hizalı). */
@@ -48,18 +50,29 @@ export class MevzuatService {
   // Kimlik listesi küçük (≤~100 satır) ve yavaş değişir — 5 dk process cache.
   private identityCache: { rows: LegislationRow[]; expiresAt: number } | null = null;
 
-  private async publishedLegislation(): Promise<LegislationRow[]> {
+  /** TÜM mevzuat kimlikleri (metinsizler dahil) — liste/arama bunları görür.
+   *  Metin güvenliği okuyucuda: yalnız status=published maddeler döner. */
+  private async allLegislation(): Promise<LegislationRow[]> {
     if (this.identityCache && this.identityCache.expiresAt > Date.now()) {
       return this.identityCache.rows;
     }
-    const rows = await this.prisma.legislation.findMany({
-      where: { status: 'published', deletedAt: null },
+    const raw = await this.prisma.legislation.findMany({
+      where: { deletedAt: null },
       select: {
         id: true, slug: true, type: true, number: true, name: true,
         shortName: true, aliases: true, topicId: true, lastVerifiedAt: true,
+        _count: {
+          select: {
+            articles: { where: { status: 'published', deletedAt: null } },
+          },
+        },
       },
       orderBy: [{ sortOrder: 'asc' }, { name: 'asc' }],
     });
+    const rows = raw.map(({ _count, ...r }) => ({
+      ...r,
+      articleCount: _count.articles,
+    }));
     this.identityCache = { rows, expiresAt: Date.now() + 300_000 };
     return rows;
   }
@@ -75,18 +88,12 @@ export class MevzuatService {
     return new Map(rows.map((r) => [r.topicId, r._count._all]));
   }
 
-  /** GET /public/mevzuat — tür bazlı gruplu liste. */
+  /** GET /public/mevzuat — TÜM mevzuat; metinsizler "readable: false" ile. */
   async list() {
-    const legs = await this.publishedLegislation();
-    const [qCounts, aCounts] = await Promise.all([
-      this.questionCounts(legs.map((l) => l.topicId).filter((x): x is string => x != null)),
-      this.prisma.lawArticle.groupBy({
-        by: ['legislationId'],
-        where: { legislationId: { in: legs.map((l) => l.id) }, status: 'published', deletedAt: null },
-        _count: { _all: true },
-      }),
-    ]);
-    const articleCount = new Map(aCounts.map((r) => [r.legislationId, r._count._all]));
+    const legs = await this.allLegislation();
+    const qCounts = await this.questionCounts(
+      legs.map((l) => l.topicId).filter((x): x is string => x != null),
+    );
     return {
       items: legs.map((l) => ({
         slug: l.slug,
@@ -94,7 +101,8 @@ export class MevzuatService {
         number: l.number,
         name: l.name,
         shortName: l.shortName,
-        articleCount: articleCount.get(l.id) ?? 0,
+        articleCount: l.articleCount,
+        readable: l.articleCount > 0,
         questionCount: l.topicId ? (qCounts.get(l.topicId) ?? 0) : 0,
         lastVerifiedAt: l.lastVerifiedAt?.toISOString() ?? null,
         topicId: l.topicId,
@@ -104,7 +112,7 @@ export class MevzuatService {
 
   private async bySlugOr404(slug: string) {
     const leg = await this.prisma.legislation.findFirst({
-      where: { slug, status: 'published', deletedAt: null },
+      where: { slug, deletedAt: null },
     });
     if (!leg) throw new NotFoundException('Mevzuat bulunamadı.');
     return leg;
@@ -217,7 +225,7 @@ export class MevzuatService {
   async search(rawQ: string) {
     const q = rawQ.trim().slice(0, 80);
     if (q.length < 2) return { legislation: [], articles: [] };
-    const legs = await this.publishedLegislation();
+    const legs = await this.allLegislation();
     const nq = norm(q).replace(/\./g, ''); // "p.v.s.k" → "pvsk"
 
     // 1) Kimlik eşleşmeleri (bellekte — tablo küçük).
@@ -308,6 +316,7 @@ export class MevzuatService {
         number: l.number,
         name: l.name,
         shortName: l.shortName,
+        readable: l.articleCount > 0,
       })),
       articles: [...directArticles, ...ftsArticles],
     };

@@ -88,6 +88,33 @@ export class AdminController {
     return result;
   }
 
+  // ── Mevzuat kimliği (Doc 29 §17): kısaltma/alias/tür/resmî URL ──
+  @Get('legislation')
+  @Roles('admin', 'editor')
+  legislationMeta(@Query('topicId', ParseUUIDPipe) topicId: string) {
+    return this.lawArticles.getLegislationMeta(topicId);
+  }
+
+  @Patch('legislation')
+  @Roles('admin')
+  updateLegislationMeta(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body()
+    body: {
+      topicId?: string;
+      shortName?: string | null;
+      number?: string | null;
+      aliases?: string[];
+      type?: string;
+      officialSourceUrl?: string | null;
+      effectiveInfo?: string | null;
+    },
+  ) {
+    if (!body.topicId) throw new BadRequestException('topicId gerekli.');
+    const { topicId, ...dto } = body;
+    return this.lawArticles.updateLegislationMeta(actor, topicId, dto);
+  }
+
   /** "Seni geçti" dürtmesini elle tetikle (test/teşhis). dryRun=true →
    *  yalnız adayları listeler, göndermez. Gecelik cron 20.30 TR'de otomatik. */
   @Post('notifications/leaderboard-nudge')

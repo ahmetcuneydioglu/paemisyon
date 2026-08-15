@@ -8,7 +8,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
-import { canonicalArticleNo, parseLawText } from './law-text-parser';
+import { articleSortKey, canonicalArticleNo, parseLawText } from './law-text-parser';
 import { extractPdfLawText } from './pdf-law-text';
 
 /** Panelden PDF/metin toplu içe aktarma seçenekleri. */
@@ -175,12 +175,109 @@ export class AdminLawArticlesService {
   }
 
   /** Metin oluştur/güncelle. Düzenleme = yeniden doğrulama → taslağa döner. */
+  /** Konunun legislation kaydını getirir; yoksa taslak olarak yaratır
+   *  (panel importu Mevzuat Merkezi'nden kopmasın — Doc 29 §17). */
+  private async ensureLegislation(topicId: string, topicName: string) {
+    const existing = await this.prisma.legislation.findUnique({ where: { topicId } });
+    if (existing) return existing;
+    const slugify = (x: string) => x
+      .split('')
+      .map((ch) => (({ ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', Ç: 'c', Ğ: 'g', İ: 'i', I: 'i', Ö: 'o', Ş: 's', Ü: 'u', â: 'a', Â: 'a', î: 'i', û: 'u' } as Record<string, string>)[ch] ?? ch))
+      .join('')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+    return this.prisma.legislation.create({
+      data: {
+        slug: slugify(topicName),
+        name: topicName,
+        type: /yönetmeli/i.test(topicName) ? 'yonetmelik' : 'kanun',
+        number: /(\d{3,4})\s*say/i.exec(topicName)?.[1] ?? null,
+        topicId,
+        status: 'draft',
+      },
+    });
+  }
+
+  /** Yayın durumunu kanun düzeyine yansıt (okunur madde varsa published). */
+  private async syncLegislationStatus(topicId: string) {
+    const leg = await this.prisma.legislation.findUnique({ where: { topicId } });
+    if (!leg) return;
+    const publishedCount = await this.prisma.lawArticle.count({
+      where: { legislationId: leg.id, status: 'published', deletedAt: null },
+    });
+    await this.prisma.legislation.update({
+      where: { id: leg.id },
+      data: publishedCount > 0
+        ? { status: 'published', lastVerifiedAt: new Date() }
+        : { status: 'draft' },
+    });
+  }
+
+  /** Kanun kimliği (panel formu): kısaltma/numara/alias/tür/resmî URL. */
+  async getLegislationMeta(topicId: string) {
+    const topic = await this.prisma.topic.findUnique({
+      where: { id: topicId },
+      select: { id: true, name: true, deletedAt: true },
+    });
+    if (!topic || topic.deletedAt) throw new NotFoundException('Kanun bulunamadı.');
+    const leg = await this.ensureLegislation(topicId, topic.name);
+    return {
+      slug: leg.slug,
+      type: leg.type,
+      number: leg.number,
+      shortName: leg.shortName,
+      aliases: leg.aliases,
+      officialSourceUrl: leg.officialSourceUrl,
+      effectiveInfo: leg.effectiveInfo,
+      status: leg.status,
+      lastVerifiedAt: leg.lastVerifiedAt?.toISOString() ?? null,
+    };
+  }
+
+  async updateLegislationMeta(
+    actor: AuthenticatedUser,
+    topicId: string,
+    dto: {
+      shortName?: string | null;
+      number?: string | null;
+      aliases?: string[];
+      type?: string;
+      officialSourceUrl?: string | null;
+      effectiveInfo?: string | null;
+    },
+  ) {
+    const meta = await this.getLegislationMeta(topicId); // ensure + 404
+    const TYPES = ['kanun', 'cbk', 'yonetmelik', 'genelge', 'yonerge'];
+    const data = {
+      ...(dto.shortName !== undefined ? { shortName: dto.shortName?.trim() || null } : {}),
+      ...(dto.number !== undefined ? { number: dto.number?.trim() || null } : {}),
+      ...(dto.aliases !== undefined
+        ? { aliases: dto.aliases.map((a) => a.trim().toLocaleLowerCase('tr')).filter(Boolean) }
+        : {}),
+      ...(dto.type && TYPES.includes(dto.type) ? { type: dto.type as never } : {}),
+      ...(dto.officialSourceUrl !== undefined
+        ? { officialSourceUrl: dto.officialSourceUrl?.trim() || null }
+        : {}),
+      ...(dto.effectiveInfo !== undefined
+        ? { effectiveInfo: dto.effectiveInfo?.trim() || null }
+        : {}),
+    };
+    const row = await this.prisma.legislation.update({
+      where: { slug: meta.slug },
+      data,
+    });
+    await this.audit.log(actor, 'legislation.update', 'legislation', row.id, data);
+    return this.getLegislationMeta(topicId);
+  }
+
   async upsert(actor: AuthenticatedUser, dto: UpsertLawArticleDto) {
     const topic = await this.prisma.topic.findUnique({
       where: { id: dto.topicId },
-      select: { id: true, deletedAt: true },
+      select: { id: true, name: true, deletedAt: true },
     });
     if (!topic || topic.deletedAt) throw new NotFoundException('Kanun bulunamadı.');
+    const legislation = await this.ensureLegislation(topic.id, topic.name);
 
     // Elle girilen madde no kanonikleşir ("ek 6"→"Ek 6") → Question.articleNo
     // ile hizalı; böylece Atlas'ta soru grubu ve seans metni eşleşir.
@@ -207,12 +304,16 @@ export class AdminLawArticlesService {
         effectiveInfo,
         status: 'draft',
         createdBy: actor.id,
+        legislationId: legislation.id,
+        sortKey: articleSortKey(articleNo),
       },
       update: {
         text,
         sourceName,
         sourceUrl,
         effectiveInfo,
+        legislationId: legislation.id,
+        sortKey: articleSortKey(articleNo),
         status: 'draft',
         lastVerifiedAt: null,
         deletedAt: null,
@@ -244,6 +345,7 @@ export class AdminLawArticlesService {
     });
     if (!topic || topic.deletedAt) throw new NotFoundException('Kanun bulunamadı.');
 
+    const legislation = await this.ensureLegislation(topic.id, topic.name);
     const isPdf = opts.filename.toLowerCase().endsWith('.pdf');
     const raw = isPdf ? await extractPdfLawText(opts.buffer) : opts.buffer.toString('utf8');
     const parsedRaw = parseLawText(raw);
@@ -327,9 +429,13 @@ export class AdminLawArticlesService {
           sourceUrl,
           effectiveInfo,
           createdBy: actor.id,
+          legislationId: legislation.id,
+          sortKey: articleSortKey(a.articleNo),
           ...statusData,
         },
         update: {
+          legislationId: legislation.id,
+          sortKey: articleSortKey(a.articleNo),
           text: a.text,
           sourceName,
           sourceUrl,
@@ -354,8 +460,9 @@ export class AdminLawArticlesService {
     const row = await this.prisma.lawArticle.update({
       where: { id },
       data: { status: 'published', lastVerifiedAt: new Date() },
-      select: { id: true, status: true, lastVerifiedAt: true },
+      select: { id: true, topicId: true, status: true, lastVerifiedAt: true },
     });
+    await this.syncLegislationStatus(row.topicId);
     await this.audit.log(actor, 'law_article.publish', 'law_article', id);
     return row;
   }
@@ -366,8 +473,9 @@ export class AdminLawArticlesService {
     const row = await this.prisma.lawArticle.update({
       where: { id },
       data: { status: 'draft', lastVerifiedAt: null },
-      select: { id: true, status: true },
+      select: { id: true, topicId: true, status: true },
     });
+    await this.syncLegislationStatus(row.topicId);
     await this.audit.log(actor, 'law_article.unpublish', 'law_article', id);
     return row;
   }

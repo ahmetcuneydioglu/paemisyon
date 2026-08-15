@@ -20,6 +20,9 @@ class LegislationSummary {
   final int questionCount;
   final String? topicId;
 
+  /// Okunabilir metni var mı — yoksa listede "metin yakında" rozeti.
+  final bool readable;
+
   const LegislationSummary({
     required this.slug,
     required this.type,
@@ -29,6 +32,7 @@ class LegislationSummary {
     required this.articleCount,
     required this.questionCount,
     this.topicId,
+    this.readable = false,
   });
 
   /// Kompakt gösterim adı: "PVSK" yoksa tam ad.
@@ -44,6 +48,7 @@ class LegislationSummary {
         articleCount: j['articleCount'] as int? ?? 0,
         questionCount: j['questionCount'] as int? ?? 0,
         topicId: j['topicId'] as String?,
+        readable: j['readable'] as bool? ?? (j['articleCount'] as int? ?? 0) > 0,
       );
 }
 

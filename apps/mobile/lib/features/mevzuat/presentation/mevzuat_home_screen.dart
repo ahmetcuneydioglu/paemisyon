@@ -42,8 +42,7 @@ class MevzuatHomeScreen extends ConsumerWidget {
           onRetry: () => ref.invalidate(mevzuatListProvider),
         ),
         data: (items) {
-          final published = items.where((l) => l.articleCount > 0).toList();
-          final featured = [...published]
+          final featured = [...items]
             ..sort((a, b) => b.questionCount.compareTo(a.questionCount));
           var i = 0;
           return RefreshIndicator(
@@ -168,22 +167,18 @@ class MevzuatHomeScreen extends ConsumerWidget {
                     children: [
                       _TypeChip(
                         label: 'Kanunlar',
-                        count: published.where((l) => l.type == 'kanun').length,
+                        count: items.where((l) => l.type == 'kanun').length,
                         enabled: true,
-                        onTap: () => _showAll(context, published
-                            .where((l) => l.type == 'kanun')
-                            .toList()),
+                        onTap: () => _showAll(context,
+                            items.where((l) => l.type == 'kanun').toList()),
                       ),
                       _TypeChip(
                         label: 'Yönetmelikler',
-                        count: published
-                            .where((l) => l.type == 'yonetmelik')
-                            .length,
-                        enabled: published
-                            .any((l) => l.type == 'yonetmelik'),
-                        onTap: () => _showAll(context, published
-                            .where((l) => l.type == 'yonetmelik')
-                            .toList()),
+                        count:
+                            items.where((l) => l.type == 'yonetmelik').length,
+                        enabled: items.any((l) => l.type == 'yonetmelik'),
+                        onTap: () => _showAll(context,
+                            items.where((l) => l.type == 'yonetmelik').toList()),
                       ),
                       const _TypeChip(label: 'CBK', count: 0, enabled: false),
                       const _TypeChip(
@@ -363,7 +358,9 @@ class _LegislationTile extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     [
-                      '${item.articleCount} madde',
+                      item.readable
+                          ? '${item.articleCount} madde'
+                          : 'metin yakında',
                       if (item.questionCount > 0)
                         '${item.questionCount} soru çıkmış',
                     ].join(' · '),
