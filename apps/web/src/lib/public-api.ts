@@ -100,6 +100,36 @@ export interface LawReading {
   articles: { no: string; slug: string; text: string }[];
 }
 
+// ── Mevzuat Merkezi (Doc 29): /public/mevzuat/:slug/oku ──
+export interface MevzuatSection {
+  id: string;
+  parentId: string | null;
+  heading: string;
+}
+
+export interface MevzuatReading {
+  slug: string;
+  name: string;
+  shortName: string | null;
+  number: string | null;
+  type: string;
+  topicId: string | null;
+  articleCount: number;
+  source: string;
+  sourceUrl: string | null;
+  effectiveInfo: string | null;
+  verifiedAt: string | null;
+  sections: MevzuatSection[];
+  articles: {
+    no: string;
+    slug: string;
+    title: string | null;
+    text: string;
+    sectionId: string | null;
+    questionCount: number;
+  }[];
+}
+
 // ── Liderlik tablosu (Doc 24 §5 gamification): /progress/leaderboard ──
 export type LeaderboardPeriod = "today" | "week" | "month" | "all";
 

@@ -45,5 +45,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...lawPages, ...articlePages];
+  // Tam metin okuma sayfaları (Doc 29 P1) — en büyük SEO varlığı.
+  const readingPages: MetadataRoute.Sitemap = laws
+    .filter((l) => l.readable)
+    .map((l) => ({
+      url: `${base}/kanun/${l.slug}/oku`,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    }));
+
+  return [...staticPages, ...lawPages, ...readingPages, ...articlePages];
 }

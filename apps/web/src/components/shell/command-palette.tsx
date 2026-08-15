@@ -9,7 +9,7 @@ import { config } from "@/lib/config";
 export const CMDK_EVENT = "paemisyon:cmdk";
 
 interface Item {
-  group: "Eylemler" | "Sayfalar" | "Dersler" | "Kanunlar";
+  group: "Eylemler" | "Sayfalar" | "Dersler" | "Kanunlar" | "Maddeler";
   label: string;
   hint?: string;
   href: string;
@@ -59,8 +59,47 @@ export function CommandPalette() {
   const [query, setQuery] = useState("");
   const [cursor, setCursor] = useState(0);
   const [dynamic, setDynamic] = useState<Item[] | null>(null);
+  const [remote, setRemote] = useState<Item[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const loadingRef = useRef(false);
+
+  // Mevzuat sunucu araması (Doc 29 §28): "cmk 90" paleti maddeye götürür.
+  useEffect(() => {
+    const q = query.trim();
+    if (q.length < 2) {
+      setRemote([]);
+      return;
+    }
+    const t = setTimeout(() => {
+      void fetch(
+        `${config.apiBaseUrl}/public/mevzuat/search?q=${encodeURIComponent(q)}`,
+      )
+        .then((r) => r.json())
+        .then(
+          (json: {
+            data?: {
+              articles?: {
+                lawSlug: string;
+                lawShort: string | null;
+                no: string;
+                slug: string;
+                title: string | null;
+              }[];
+            };
+          }) => {
+            setRemote(
+              (json.data?.articles ?? []).slice(0, 6).map((a) => ({
+                group: "Maddeler" as const,
+                label: `${a.lawShort ?? a.lawSlug} · Madde ${a.no}${a.title ? ` — ${a.title}` : ""}`,
+                href: `/kanun/${a.lawSlug}/oku#m-${a.slug}`,
+              })),
+            );
+          },
+        )
+        .catch(() => setRemote([]));
+    }, 300);
+    return () => clearTimeout(t);
+  }, [query]);
 
   // Açılış: ⌘K / Ctrl+K + sidebar tetiği.
   useEffect(() => {
@@ -150,13 +189,13 @@ export function CommandPalette() {
     const q = norm(query).trim();
     if (!q) return all.slice(0, 9);
     const tokens = q.split(/\s+/);
-    return all
-      .filter((i) => {
-        const hay = norm(i.label + " " + (i.hint ?? ""));
-        return tokens.every((t) => hay.includes(t));
-      })
-      .slice(0, 9);
-  }, [query, dynamic]);
+    const local = all.filter((i) => {
+      const hay = norm(i.label + " " + (i.hint ?? ""));
+      return tokens.every((t) => hay.includes(t));
+    });
+    // Sunucu isabetleri zaten eşleşmiş (tam-metin dahil) — filtreden muaf.
+    return [...remote, ...local].slice(0, 9);
+  }, [query, dynamic, remote]);
 
   const go = useCallback(
     (item: Item | undefined) => {
