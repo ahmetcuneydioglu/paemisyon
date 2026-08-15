@@ -37,6 +37,11 @@ class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
       router.go('/denemeler');
       return;
     }
+    // "Seni geçti" dürtmesi → doğrudan sıralama ekranı.
+    if (payload == 'leaderboard') {
+      router.push('/leaderboard');
+      return;
+    }
     final single = RegExp(r'^question:([0-9a-fA-F-]{36})$').firstMatch(payload);
     if (single != null) {
       router.push('/quiz', extra: {

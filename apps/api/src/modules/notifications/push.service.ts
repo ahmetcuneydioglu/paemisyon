@@ -51,6 +51,44 @@ export class PushService implements OnModuleInit {
     return { ok: true };
   }
 
+  /** Tek kullanıcının TÜM cihazlarına bildirim (kişiye özel metinle).
+   *  Geçersiz token'lar silinir. */
+  async sendToUser(
+    userId: string,
+    params: { title: string; body: string; route?: string },
+  ) {
+    if (!this.app) {
+      return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
+    }
+    const tokens = await this.prisma.pushToken.findMany({
+      where: { userId },
+      select: { token: true },
+    });
+    if (tokens.length === 0) return { ok: true, sent: 0 };
+
+    const res = await getMessaging(this.app).sendEachForMulticast({
+      tokens: tokens.map((t) => t.token),
+      notification: { title: params.title, body: params.body },
+      data: params.route ? { route: params.route } : {},
+      apns: { payload: { aps: { sound: 'default' } } },
+    });
+    const dead: string[] = [];
+    res.responses.forEach((r, j) => {
+      const code = r.error?.code ?? '';
+      if (
+        !r.success &&
+        (code.includes('registration-token-not-registered') ||
+          code.includes('invalid-argument'))
+      ) {
+        dead.push(tokens[j].token);
+      }
+    });
+    if (dead.length > 0) {
+      await this.prisma.pushToken.deleteMany({ where: { token: { in: dead } } });
+    }
+    return { ok: true, sent: res.successCount };
+  }
+
   /** Tüm cihazlara bildirim. [data.route] mobilde derin bağlantıya çevrilir.
    *  Metinde {ad} geçerse her kullanıcının adıyla KİŞİSELLEŞTİRİLİR
    *  ("Merhaba Ahmet, günün quizini unutma"). Geçersiz token'lar silinir. */
