@@ -114,7 +114,8 @@ function parseDocument(raw: string): { sections: ParsedSection[]; articles: Pars
           !/[.:;]$/.test(prevLine) &&
           !SECTION_RE.test(prevLine)
         ) {
-          title = prevLine;
+          // PDF dipnot numaraları başlığa yapışır: "Kasten yaralama3637".
+          title = prevLine.replace(/\d+$/, '').trim();
           // Önceki maddenin gövdesinin son satırıysa oradan düş.
           const tail = current.lines[current.lines.length - 1];
           if (tail === prevLine) current.lines.pop();

@@ -50,8 +50,19 @@ const KNOWN: Record<string, { shortName: string; number?: string; aliases: strin
   '2918': { shortName: 'KTK', number: '2918', aliases: ['ktk', 'trafik kanunu', 'karayolları trafik'] },
 };
 
+// Numarasız adlar için ad → kanun no eşlemesi ("Türk Ceza Kanunu" gibi).
+const NAME_TO_NUMBER: [RegExp, string][] = [
+  [/türk ceza kanunu/i, '5237'],
+  [/ceza muhakemesi/i, '5271'],
+  [/polis vazife/i, '2559'],
+  [/devlet memurları/i, '657'],
+];
+
 function identityOf(name: string): { shortName: string | null; number: string | null; aliases: string[] } {
-  const num = /(\d{3,4})\s*say/i.exec(name)?.[1] ?? null;
+  const num =
+    /(\d{3,4})\s*say/i.exec(name)?.[1] ??
+    NAME_TO_NUMBER.find(([re]) => re.test(name))?.[1] ??
+    null;
   if (num && KNOWN[num]) {
     const k = KNOWN[num];
     return { shortName: k.shortName, number: num, aliases: k.aliases };
@@ -101,9 +112,10 @@ async function main() {
       update: {
         name: t.name,
         topicId: t.id,
-        shortName: idn.shortName,
-        number: idn.number,
-        aliases: idn.aliases,
+        // Tahribatsız: tanınmayan kanunda mevcut (elle girilmiş) kimlik korunur.
+        ...(idn.shortName ? { shortName: idn.shortName } : {}),
+        ...(idn.number ? { number: idn.number } : {}),
+        ...(idn.aliases.length > 0 ? { aliases: idn.aliases } : {}),
       },
       create: {
         slug,
