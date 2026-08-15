@@ -203,7 +203,7 @@ export default function NotificationsPage() {
                   <Spinner />
                 ) : published ? (
                   <>
-                    <p className="mb-2 font-medium text-slate-800">{published.stem}</p>
+                    <p className="mb-2 whitespace-pre-line font-medium text-slate-800">{published.stem}</p>
                     <ul className="mb-3 space-y-1">
                       {published.options.map((o) => (
                         <li

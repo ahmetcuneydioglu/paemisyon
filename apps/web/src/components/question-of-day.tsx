@@ -65,7 +65,7 @@ export function QuestionOfDayCard({
           {[...new Set(question.topic.split(" / "))].join(" / ")}
         </span>
       </div>
-      <p className="mb-4 font-medium text-white">{question.stem}</p>
+      <p className="mb-4 whitespace-pre-line font-medium text-white">{question.stem}</p>
       <div className="space-y-2" role="radiogroup" aria-label="Günün sorusu şıkları">
         {question.options.map((o) => {
           let cls = "border-white/25 bg-white/5 hover:bg-white/15";

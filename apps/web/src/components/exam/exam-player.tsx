@@ -284,7 +284,7 @@ export function ExamPlayer({
           <p className="tk-caption">
             Soru {q.order} / {total}
           </p>
-          <p className="mt-2 text-[17px] leading-relaxed text-ink">{q.stem}</p>
+          <p className="mt-2 whitespace-pre-line text-[17px] leading-relaxed text-ink">{q.stem}</p>
           {q.mediaUrl && (
             // eslint-disable-next-line @next/next/no-img-element
             <img

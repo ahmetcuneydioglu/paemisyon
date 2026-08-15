@@ -37,7 +37,7 @@ export function ReviewList({
               className="rounded-md border border-line bg-surface p-4"
               aria-label={`Soru ${q.order}`}
             >
-              <p className="text-[15px] leading-relaxed text-ink">
+              <p className="whitespace-pre-line text-[15px] leading-relaxed text-ink">
                 <span className="tabular font-bold">{q.order}.</span> {q.stem}
               </p>
               {q.mediaUrl && (

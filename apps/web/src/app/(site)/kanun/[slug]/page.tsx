@@ -168,7 +168,7 @@ export default async function KanunPage({ params }: { params: Params }) {
           <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
             Örnek çıkmış soru
           </h2>
-          <p className="mb-3 font-medium">{q.stem}</p>
+          <p className="mb-3 whitespace-pre-line font-medium">{q.stem}</p>
           <ul className="mb-4 space-y-1.5 text-sm">
             {q.options.map((o) => (
               <li key={o.id}>

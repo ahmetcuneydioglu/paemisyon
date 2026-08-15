@@ -483,7 +483,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         {/* Soru alanı (≤65ch) */}
         <div className="max-w-[65ch]">
           <p className="tk-caption">Soru {index + 1}</p>
-          <p className="mt-2 text-[17px] leading-relaxed text-ink">{question!.stem}</p>
+          <p className="mt-2 whitespace-pre-line text-[17px] leading-relaxed text-ink">{question!.stem}</p>
           {question!.mediaUrl && (
             // Soru medyası keyfi bir saklı URL'dir (bilinmeyen host) — next/image
             // optimizer'ını her host'a açmak güvenlik anti-pattern'i olurdu; bunun

@@ -127,7 +127,7 @@ export function DailyQuizCard({
           style={{ width: `${quiz.count > 0 ? (index / quiz.count) * 100 : 0}%` }}
         />
       </div>
-      <p className="mb-4 font-medium text-white">{q!.stem}</p>
+      <p className="mb-4 whitespace-pre-line font-medium text-white">{q!.stem}</p>
       <div className="space-y-2" role="radiogroup" aria-label="Günün quizi şıkları">
         {q!.options.map((o) => {
           let cls = "border-white/25 bg-white/5 hover:bg-white/15";
