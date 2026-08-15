@@ -36,6 +36,15 @@ enum ContentStatus {
   archived
 }
 
+/// Mevzuat türü (Doc 29 §11) — V1'de yalnız `kanun` dolu; mimari geleceğe açık.
+enum LegislationType {
+  kanun
+  cbk
+  yonetmelik
+  genelge
+  yonerge
+}
+
 enum Difficulty {
   easy
   medium
@@ -114,6 +123,8 @@ model User {
   stats            UserStats?
   streak           Streak?
   bookmarks        Bookmark[]
+  articleBookmarks ArticleBookmark[]
+  readingProgress  ReadingProgress[]
   wrongAnswers     WrongAnswer[]
   questionReports  QuestionReport[]
   badges           UserBadge[]
@@ -290,6 +301,7 @@ model Topic {
   userProgress     UserTopicProgress[]
   masterySnapshots TopicMasterySnapshot[]
   lawArticles      LawArticle[]
+  legislation      Legislation?
 
   @@index([courseId])
   @@index([parentId])
@@ -326,12 +338,109 @@ model LawArticle {
   updatedAt DateTime  @updatedAt @map("updated_at")
   deletedAt DateTime? @map("deleted_at")
 
-  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  // ── Mevzuat Merkezi (Doc 29) ──
+  /// Kanun kimliği — geçiş sonrası tüm maddelerde dolu; topicId quiz köprüsü
+  /// için kalır (soru etiketi (topicId, articleNo) anahtarını kullanır).
+  legislationId String?  @map("legislation_id") @db.Uuid
+  sectionId     String?  @map("section_id") @db.Uuid
+  /// Madde başlığı (ör. "Durdurma ve kimlik sorma") — resmî metinden; yoksa null.
+  title         String?
+  /// Deterministik sıra: articleOrder() kalıcılaştı (sayısal önce, Ek/Geçici sona).
+  sortKey       Int      @default(0) @map("sort_key")
+  /// Tam-metin arama vektörü — migration'da GENERATED ALWAYS (simple + tr_unaccent).
+  search        Unsupported("tsvector")?
+
+  topic       Topic               @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  legislation Legislation?        @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+  section     LegislationSection? @relation(fields: [sectionId], references: [id], onDelete: SetNull)
+  bookmarks   ArticleBookmark[]
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
   @@index([topicId, status])
+  @@index([legislationId, sortKey])
   @@map("law_articles")
+}
+
+/// Mevzuat kimliği (Doc 29 §11) — kanun artık birinci sınıf varlık.
+/// slug KALICIDIR: ad düzeltmeleri URL kırmaz (eski türetilmiş slugify yerine).
+/// topicId opsiyonel 1:1 quiz köprüsü — sorusu olmayan mevzuat da yaşayabilir.
+model Legislation {
+  id                String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug              String          @unique
+  type              LegislationType @default(kanun)
+  /// Resmî numara: "2559", "5271" — CBK/genelgede null olabilir.
+  number            String?
+  name              String
+  /// Yaygın kısaltma: "PVSK", "CMK" — arama ve kompakt gösterim.
+  shortName         String?         @map("short_name")
+  /// Arama takma adları (normalize, küçük harf): ["pvsk","polis vazife"].
+  aliases           String[]        @default([])
+  officialSourceUrl String?         @map("official_source_url")
+  effectiveInfo     String?         @map("effective_info")
+  lastVerifiedAt    DateTime?       @map("last_verified_at")
+  status            ContentStatus   @default(draft)
+  sortOrder         Int             @default(0) @map("sort_order")
+  topicId           String?         @unique @map("topic_id") @db.Uuid
+
+  topic           Topic?               @relation(fields: [topicId], references: [id], onDelete: SetNull)
+  sections        LegislationSection[]
+  articles        LawArticle[]
+  readingProgress ReadingProgress[]
+
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  @@index([type, status, sortOrder])
+  @@map("legislation")
+}
+
+/// Kısım/Bölüm hiyerarşisi — içindekiler bundan doğar. parentId ile
+/// "Kısım > Bölüm" gibi iki (veya daha çok) seviye desteklenir.
+model LegislationSection {
+  id            String  @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  legislationId String  @map("legislation_id") @db.Uuid
+  parentId      String? @map("parent_id") @db.Uuid
+  heading       String
+  sortOrder     Int     @default(0) @map("sort_order")
+
+  legislation Legislation          @relation(fields: [legislationId], references: [id], onDelete: Cascade)
+  parent      LegislationSection?  @relation("SectionTree", fields: [parentId], references: [id])
+  children    LegislationSection[] @relation("SectionTree")
+  articles    LawArticle[]
+
+  @@index([legislationId, sortOrder])
+  @@map("legislation_sections")
+}
+
+/// Madde favorisi (Doc 29 §14) — soru Bookmark'ının madde eşi.
+model ArticleBookmark {
+  userId       String   @map("user_id") @db.Uuid
+  lawArticleId String   @map("law_article_id") @db.Uuid
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  user    User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  article LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, lawArticleId])
+  @@map("article_bookmarks")
+}
+
+/// Okuma konumu (Doc 29 §14) — "kaldığın yerden devam" + "son okunanlar".
+/// Kanun başına tek satır; upsert ile güncellenir (web/mobil senkron).
+model ReadingProgress {
+  userId        String   @map("user_id") @db.Uuid
+  legislationId String   @map("legislation_id") @db.Uuid
+  articleNo     String   @map("article_no")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  legislation Legislation @relation(fields: [legislationId], references: [id], onDelete: Cascade)
+
+  @@id([userId, legislationId])
+  @@index([userId, updatedAt])
+  @@map("reading_progress")
 }
 
 // Kararlı KİMLİK — içerik burada değil, sürümlerde.

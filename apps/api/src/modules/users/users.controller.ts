@@ -19,6 +19,121 @@ export class UsersController {
     private readonly push: PushService,
   ) {}
 
+  // ── Mevzuat Merkezi (Doc 29 §14): madde favorisi + okuma konumu ──
+
+  /** Kaydedilen maddeler — mevzuat ana sayfası "Kaydedilenler" bölgesi. */
+  @Get('article-bookmarks')
+  async articleBookmarks(@CurrentUser() user: AuthenticatedUser) {
+    const rows = await this.prisma.articleBookmark.findMany({
+      where: { userId: user.id },
+      orderBy: { createdAt: 'desc' },
+      include: {
+        article: {
+          select: {
+            id: true,
+            articleNo: true,
+            title: true,
+            legislation: { select: { slug: true, shortName: true, name: true } },
+          },
+        },
+      },
+    });
+    return {
+      items: rows
+        .filter((r) => r.article.legislation != null)
+        .map((r) => ({
+          articleId: r.article.id,
+          no: r.article.articleNo,
+          title: r.article.title,
+          lawSlug: r.article.legislation!.slug,
+          lawShort: r.article.legislation!.shortName ?? r.article.legislation!.name,
+          createdAt: r.createdAt.toISOString(),
+        })),
+    };
+  }
+
+  /** Madde kaydet — (lawSlug, no) ile; istemci madde id bilmek zorunda değil. */
+  @Post('article-bookmarks')
+  async addArticleBookmark(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { lawSlug?: string; no?: string },
+  ) {
+    const article = await this.findArticle(body.lawSlug, body.no);
+    if (!article) return { ok: false };
+    await this.prisma.articleBookmark.upsert({
+      where: { userId_lawArticleId: { userId: user.id, lawArticleId: article.id } },
+      update: {},
+      create: { userId: user.id, lawArticleId: article.id },
+    });
+    return { ok: true };
+  }
+
+  @Delete('article-bookmarks')
+  async removeArticleBookmark(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { lawSlug?: string; no?: string },
+  ) {
+    const article = await this.findArticle(body.lawSlug, body.no);
+    if (!article) return { ok: false };
+    await this.prisma.articleBookmark.deleteMany({
+      where: { userId: user.id, lawArticleId: article.id },
+    });
+    return { ok: true };
+  }
+
+  /** Okuma konumu: kanun başına tek satır upsert (kaldığın yerden devam). */
+  @Post('reading-progress')
+  async saveReadingProgress(
+    @CurrentUser() user: AuthenticatedUser,
+    @Body() body: { lawSlug?: string; no?: string },
+  ) {
+    if (!body.lawSlug || !body.no) return { ok: false };
+    const leg = await this.prisma.legislation.findFirst({
+      where: { slug: body.lawSlug, status: 'published', deletedAt: null },
+      select: { id: true },
+    });
+    if (!leg) return { ok: false };
+    await this.prisma.readingProgress.upsert({
+      where: { userId_legislationId: { userId: user.id, legislationId: leg.id } },
+      update: { articleNo: body.no.slice(0, 16) },
+      create: { userId: user.id, legislationId: leg.id, articleNo: body.no.slice(0, 16) },
+    });
+    return { ok: true };
+  }
+
+  /** Son okunanlar + kaldığın yerden devam (ilk satır en güncel). */
+  @Get('reading-progress')
+  async readingProgress(@CurrentUser() user: AuthenticatedUser) {
+    const rows = await this.prisma.readingProgress.findMany({
+      where: { userId: user.id, legislation: { status: 'published', deletedAt: null } },
+      orderBy: { updatedAt: 'desc' },
+      take: 5,
+      include: { legislation: { select: { slug: true, shortName: true, name: true } } },
+    });
+    return {
+      items: rows.map((r) => ({
+        lawSlug: r.legislation.slug,
+        lawShort: r.legislation.shortName ?? r.legislation.name,
+        lawName: r.legislation.name,
+        no: r.articleNo,
+        updatedAt: r.updatedAt.toISOString(),
+      })),
+    };
+  }
+
+  private findArticle(lawSlug?: string, no?: string) {
+    if (!lawSlug || !no) return null;
+    return this.prisma.lawArticle.findFirst({
+      where: {
+        legislation: { slug: lawSlug, status: 'published', deletedAt: null },
+        articleNo: { equals: no, mode: 'insensitive' },
+        status: 'published',
+        deletedAt: null,
+      },
+      select: { id: true },
+    });
+  }
+
   // ── FCM cihaz token'ı (Faz 2 push) — kayıt/geri alma ──
   @Post('push-token')
   registerPushToken(

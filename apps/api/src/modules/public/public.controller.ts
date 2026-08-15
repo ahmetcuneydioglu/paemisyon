@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Header, Param, Post, Query } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
+import { MevzuatService } from './mevzuat.service';
 import { PublicService } from './public.service';
 
 // Public içerik yavaş değişir (admin-güdümlü). s-maxage aracı cache'lerin
@@ -12,7 +13,36 @@ const CACHE_QOTD = 'public, max-age=120, s-maxage=1800, stale-while-revalidate=8
 /// Web'in public katmanı (ISR) bunları tüketir; kimlik gerektirmez.
 @Controller('public')
 export class PublicController {
-  constructor(private readonly service: PublicService) {}
+  constructor(
+    private readonly service: PublicService,
+    private readonly mevzuat: MevzuatService,
+  ) {}
+
+  // ── Mevzuat Merkezi (Doc 29) ──
+  @Get('mevzuat')
+  @Header('Cache-Control', CACHE_SLOW)
+  mevzuatList() {
+    return this.mevzuat.list();
+  }
+
+  @Get('mevzuat/search')
+  @Throttle({ default: { ttl: 60_000, limit: 60 } })
+  @Header('Cache-Control', 'public, max-age=60, s-maxage=300')
+  mevzuatSearch(@Query('q') q?: string) {
+    return this.mevzuat.search(q ?? '');
+  }
+
+  @Get('mevzuat/:slug')
+  @Header('Cache-Control', CACHE_SLOW)
+  mevzuatDetail(@Param('slug') slug: string) {
+    return this.mevzuat.detail(slug);
+  }
+
+  @Get('mevzuat/:slug/oku')
+  @Header('Cache-Control', CACHE_SLOW)
+  mevzuatReader(@Param('slug') slug: string) {
+    return this.mevzuat.reader(slug);
+  }
 
   @Get('question-of-day')
   @Header('Cache-Control', CACHE_QOTD)
