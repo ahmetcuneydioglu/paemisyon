@@ -179,6 +179,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             courseId: args['courseId'] as String?,
             articleNo: args['articleNo'] as String?,
             questionId: args['questionId'] as String?,
+            source: args['source'] as String?,
             fromBookmarks: args['fromBookmarks'] as bool? ?? false,
             resumeSessionId: args['resumeSessionId'] as String?,
             topicName: args['topicName'] as String,

@@ -82,8 +82,12 @@ export class AdminExamsController {
 
   @Post(':id/publish')
   @Roles('admin')
-  publish(@CurrentUser() actor: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
-    return this.exams.publish(actor, id);
+  publish(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body('announce') announce?: boolean,
+  ) {
+    return this.exams.publish(actor, id, announce === true);
   }
 
   @Post(':id/unpublish')

@@ -19,6 +19,7 @@ export class AdminDashboardService {
       questionTotals,
       pendingReview,
       activeToday,
+      notifSessions7d,
       recentAudit,
     ] = await Promise.all([
       this.prisma.user.count({ where: { deletedAt: null } }),
@@ -38,6 +39,10 @@ export class AdminDashboardService {
         where: { status: 'in_review', question: { deletedAt: null } },
       }),
       this.prisma.dailyUsage.count({ where: { usageDate: today } }),
+      // Bildirim ölçümü: son 7 günde bildirimden açılan seanslar.
+      this.prisma.quizSession.count({
+        where: { source: 'notif', startedAt: { gte: since7d } },
+      }),
       this.prisma.auditLog.findMany({ orderBy: { createdAt: 'desc' }, take: 8 }),
     ]);
 
@@ -46,6 +51,7 @@ export class AdminDashboardService {
 
     return {
       users: { total: totalUsers, new7d: newUsers7d, activeToday },
+      engagement: { notifSessions7d },
       revenue: { activeSubscriptions, premiumUsers },
       content: {
         questionVersions: byStatus, // draft/in_review/published/archived

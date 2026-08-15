@@ -20,6 +20,11 @@ export class StartSessionDto {
   @IsBoolean()
   fromBookmarks?: boolean;
 
+  /// Seansın geliş kanalı (ölçüm) — yalnız 'notif' kabul edilir.
+  @IsOptional()
+  @IsIn(['notif'])
+  source?: string;
+
   /// Tek soruluk bildirim seansı (Faz 2 push derin bağlantısı): verilirse
   /// diğer kapsam alanları yok sayılır; practice kurallarıyla 1 soru açılır.
   @IsOptional()

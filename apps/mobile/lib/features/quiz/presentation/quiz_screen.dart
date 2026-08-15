@@ -33,6 +33,8 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String? articleNo;
   /// Tek soruluk bildirim seansı (push derin bağlantısı).
   final String? questionId; // Madde Atlası: maddeden seans (Doc 25 §4)
+  /// Geliş kanalı ölçümü ('notif' — bildirimden açıldı).
+  final String? source;
   final bool fromBookmarks; // Favorilerden seans (Doc 27 B dilimi)
   /// Doluysa yeni seans BAŞLATILMAZ; yarım seans kaldığı yerden açılır (P0-②).
   final String? resumeSessionId;
@@ -54,6 +56,7 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.courseId,
     this.articleNo,
     this.questionId,
+    this.source,
     this.fromBookmarks = false,
     this.resumeSessionId,
     required this.topicName,
@@ -157,6 +160,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           courseId: widget.courseId,
           articleNo: widget.articleNo,
           questionId: widget.questionId,
+          source: widget.source,
           archiveExamId: widget.archiveExamId,
           personalExam: widget.personalExam,
           fromBookmarks: widget.fromBookmarks,

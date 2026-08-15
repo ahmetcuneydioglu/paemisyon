@@ -29,7 +29,12 @@ class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
         'topicName': 'Günün Quizi',
         'mode': 'daily',
         'count': 10,
+        'source': 'notif',
       });
+      return;
+    }
+    if (payload == 'denemeler') {
+      router.go('/denemeler');
       return;
     }
     final single = RegExp(r'^question:([0-9a-fA-F-]{36})$').firstMatch(payload);
@@ -39,6 +44,7 @@ class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
         'mode': 'practice',
         'questionId': single.group(1),
         'count': 1,
+        'source': 'notif',
       });
     }
   }

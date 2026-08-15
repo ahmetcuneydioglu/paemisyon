@@ -112,16 +112,24 @@ export default function ExamDetailPage() {
     },
   });
 
+  const [announce, setAnnounce] = useState(true);
   const action = useMutation({
     mutationFn: (act: 'publish' | 'unpublish' | 'archive') =>
-      api<unknown>(`/admin/exams/${id}/${act}`, { method: 'POST' }),
+      api<unknown>(`/admin/exams/${id}/${act}`, {
+        method: 'POST',
+        body: act === 'publish' ? { announce } : undefined,
+      }),
     onSuccess: (_, act) => {
       if (act === 'archive') {
         router.replace('/exams');
         return;
       }
       invalidate();
-      setNotice(act === 'publish' ? 'Yayınlandı ✅ — webde görünür.' : 'Taslağa alındı.');
+      setNotice(
+        act === 'publish'
+          ? `Yayınlandı ✅ — webde görünür${announce ? ' ve kayıtlı cihazlara duyuruldu 📣' : ''}.`
+          : 'Taslağa alındı.',
+      );
     },
   });
 
@@ -174,7 +182,9 @@ export default function ExamDetailPage() {
             onClick={() => {
               if (
                 window.confirm(
-                  `"${exam.title}" yayınlanacak: soru sürümleri SABİTLENİR ve deneme webde görünür. Devam?`,
+                  `"${exam.title}" yayınlanacak: soru sürümleri SABİTLENİR ve deneme webde görünür.` +
+                    (announce ? '\n\n📣 Kayıtlı tüm cihazlara duyuru push\'u gidecek.' : '') +
+                    ' Devam?',
                 )
               )
                 action.mutate('publish');
@@ -184,6 +194,16 @@ export default function ExamDetailPage() {
           >
             ✓ Yayınla
           </button>
+        )}
+        {exam.status !== 'published' && isAdmin && (
+          <label className="flex items-center gap-1.5 text-xs text-slate-600">
+            <input
+              type="checkbox"
+              checked={announce}
+              onChange={(e) => setAnnounce(e.target.checked)}
+            />
+            📣 Yayınlarken cihazlara duyur
+          </label>
         )}
         {exam.status === 'published' && isAdmin && (
           <button

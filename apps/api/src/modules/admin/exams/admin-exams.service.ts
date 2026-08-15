@@ -4,6 +4,7 @@ import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertExamDto } from '../dto/exam.dto';
 import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
+import { PushService } from '../../notifications/push.service';
 
 /**
  * Deneme yönetimi (Doc 18 §8). Kurallar:
@@ -17,6 +18,7 @@ export class AdminExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly push: PushService,
   ) {}
 
   async list() {
@@ -246,7 +248,7 @@ export class AdminExamsService {
   }
 
   /** Yayınla: ≥1 soru şartı + sürümleri SABİTLE (Doc 18 §6). */
-  async publish(actor: AuthenticatedUser, id: string) {
+  async publish(actor: AuthenticatedUser, id: string, announce = false) {
     const exam = await this.exists(id);
     if (exam.status === 'published') return this.detail(id); // idempotent
     const rows = await this.prisma.examQuestion.findMany({
@@ -273,6 +275,27 @@ export class AdminExamsService {
       title: exam.title,
       questionCount: rows.length,
     });
+
+    // Duyuru (opsiyonel): kayıtlı tüm cihazlara push — dokunan Denemeler
+    // sekmesine iner. Push yapılandırılmamışsa sessizce atlanır.
+    if (announce) {
+      const saat = new Intl.DateTimeFormat('tr-TR', {
+        day: 'numeric',
+        month: 'long',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Europe/Istanbul',
+      }).format(exam.startAt);
+      const sonuc = await this.push.sendToAll({
+        title: 'Canlı deneme yayında! 🔴',
+        body: `"${exam.title}" — ${saat}'te başlıyor. Türkiye sıralamasında yerini al!`,
+        route: 'denemeler',
+      });
+      await this.audit.log(actor, 'exam.announce', 'exam', id, {
+        title: exam.title,
+        ...sonuc,
+      });
+    }
     return this.detail(id);
   }
 

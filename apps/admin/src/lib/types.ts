@@ -5,6 +5,7 @@ export type Difficulty = 'easy' | 'medium' | 'hard';
 
 export interface DashboardOverview {
   users: { total: number; new7d: number; activeToday: number };
+  engagement?: { notifSessions7d: number };
   revenue: { activeSubscriptions: number; premiumUsers: number };
   content: { questionVersions: Partial<Record<ContentStatus, number>>; pendingReview: number };
   recentActivity: {

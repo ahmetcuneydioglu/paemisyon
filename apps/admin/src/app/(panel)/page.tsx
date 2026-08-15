@@ -39,6 +39,11 @@ export default function DashboardPage() {
   const stats = [
     { label: 'Toplam kullanıcı', value: d.users.total, sub: `+${d.users.new7d} son 7 gün` },
     { label: 'Bugün aktif', value: d.users.activeToday, sub: 'soru çözen' },
+    {
+      label: 'Bildirimden seans',
+      value: d.engagement?.notifSessions7d ?? 0,
+      sub: 'son 7 gün — push/hatırlatıcı dokunuşları',
+    },
     { label: 'Premium üye', value: d.revenue.premiumUsers, sub: `${d.revenue.activeSubscriptions} aktif abonelik` },
     { label: 'Yayındaki soru', value: d.content.questionVersions.published ?? 0, sub: `${d.content.questionVersions.draft ?? 0} taslak` },
   ];

@@ -554,6 +554,8 @@ model QuizSession {
   plannedDurationSeconds Int?              @map("planned_duration_seconds")
   // Seçilen soruların sürüm id sırası (JSON dizi) — devam/kaldığı yerden (Doc 27).
   questionOrder          Json?             @map("question_order")
+  /// Seansın geliş kanalı ("notif" = bildirim derin bağlantısı) — ölçüm.
+  source                 String?
   startedAt              DateTime          @default(now()) @map("started_at")
   completedAt            DateTime?         @map("completed_at")
 

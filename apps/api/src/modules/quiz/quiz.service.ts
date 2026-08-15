@@ -74,7 +74,7 @@ export class QuizService {
     // hedefi. Practice kurallarıyla çalışır — cevap SONRASI açıklama görünür,
     // istatistiklere normal işlenir; anahtar önceden sızmaz.
     if (dto.questionId != null) {
-      return this.startSingleQuestion(userId, dto.questionId);
+      return this.startSingleQuestion(userId, dto.questionId, dto.source);
     }
 
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
@@ -82,7 +82,7 @@ export class QuizService {
       if (dto.topicId != null || dto.courseId != null) {
         throw new BadRequestException('Günün sorusu kapsam almaz (topicId/courseId verilmez).');
       }
-      return this.startDailySession(userId);
+      return this.startDailySession(userId, dto.source);
     }
 
     // Kapsam kuralları (Doc 25 §5 — Odak modeli):
@@ -496,7 +496,7 @@ export class QuizService {
   // 10 karışık soru, PAEM MÜFREDATININ tamamından (Doc 21: bölümlere bağlı
   // dersler); günde 1 hak; herkese aynı set (tarih tohumlu → adil liderlik).
   // Seçim mantığı common/daily-select.logic'te — public "Günün Quizi" ile ortak.
-  private async startDailySession(userId: string) {
+  private async startDailySession(userId: string, source?: string) {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
 
@@ -533,6 +533,7 @@ export class QuizService {
           mode: 'daily',
           totalQuestions: questions.length,
           questionOrder: questions.map((q) => q.versionId),
+          source,
         },
       }));
     return {
@@ -545,7 +546,7 @@ export class QuizService {
 
   /** Tek soruluk seans (bildirim derin bağlantısı): yayındaki soru practice
    *  kurallarıyla açılır — çöz → anlık geri bildirim + açıklama. */
-  private async startSingleQuestion(userId: string, questionId: string) {
+  private async startSingleQuestion(userId: string, questionId: string, source?: string) {
     const q = await this.prisma.question.findFirst({
       where: { id: questionId, deletedAt: null, currentVersionId: { not: null } },
       select: { id: true, topicId: true, currentVersionId: true },
@@ -559,6 +560,7 @@ export class QuizService {
         topicId: q.topicId,
         totalQuestions: 1,
         questionOrder: [q.currentVersionId!],
+        source,
       },
     });
     return {
