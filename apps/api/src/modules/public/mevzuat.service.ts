@@ -309,8 +309,32 @@ export class MevzuatService {
       }));
     }
 
+    // 4) Typo toleransı (Doc 29 P1): hiçbir katman sonuç vermediyse trigram
+    //    benzerliğiyle kanun kimliği dene ("polis vazfe" → PVSK).
+    let fuzzyLegs: LegislationRow[] = [];
+    if (legMatches.length === 0 && directArticles.length === 0 && ftsArticles.length === 0) {
+      // word_similarity: sorgu, adın EN İYİ eşleşen parçasıyla ölçülür —
+      // uzun kanun adı benzerliği sulandırmaz ("polis vazfe" → PVSK).
+      const rows = await this.prisma.$queryRaw<{ slug: string }[]>(Prisma.sql`
+        SELECT slug FROM legislation
+        WHERE deleted_at IS NULL
+          AND word_similarity(
+                tr_unaccent(${q}),
+                tr_unaccent(name || ' ' || COALESCE(short_name, ''))
+              ) > 0.45
+        ORDER BY word_similarity(
+                tr_unaccent(${q}),
+                tr_unaccent(name || ' ' || COALESCE(short_name, ''))
+              ) DESC
+        LIMIT 3`);
+      const bySlug = new Map(legs.map((l) => [l.slug, l]));
+      fuzzyLegs = rows
+        .map((r) => bySlug.get(r.slug))
+        .filter((x): x is LegislationRow => x != null);
+    }
+
     return {
-      legislation: legMatches.map(({ l }) => ({
+      legislation: [...legMatches.map(({ l }) => l), ...fuzzyLegs].map((l) => ({
         slug: l.slug,
         type: l.type,
         number: l.number,
