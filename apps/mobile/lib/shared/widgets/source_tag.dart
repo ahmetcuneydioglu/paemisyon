@@ -18,12 +18,22 @@ class SourceTag extends StatelessWidget {
       excludeSemantics: true,
       child: Row(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.verified_outlined, size: 12, color: tokens.inkSoft),
+          Padding(
+            padding: const EdgeInsets.only(top: 1),
+            child:
+                Icon(Icons.verified_outlined, size: 12, color: tokens.inkSoft),
+          ),
           const SizedBox(width: 4),
-          Text(
-            text.toUpperCase(),
-            style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+          // Uzun etiketler taşmaz: gerekirse 2 satıra sarar, sonra kısaltılır.
+          Flexible(
+            child: Text(
+              text.toUpperCase(),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+            ),
           ),
         ],
       ),

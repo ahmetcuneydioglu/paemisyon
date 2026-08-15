@@ -8,6 +8,7 @@ import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/explanation_box.dart';
+import '../../../shared/widgets/source_tag.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/question_media.dart';
@@ -546,9 +547,7 @@ class _ReviewTile extends StatelessWidget {
           ] else if (q.source != null && q.source!.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: AppSpacing.xs),
-              child: Text('Kaynak: ${q.source}',
-                  style:
-                      AppTypography.caption.copyWith(color: tokens.inkSoft)),
+              child: SourceTag(text: q.source!),
             ),
           // Aksiyonlar: favorile (tekrar reçetesine girer) + hata bildir.
           const SizedBox(height: AppSpacing.xs),
