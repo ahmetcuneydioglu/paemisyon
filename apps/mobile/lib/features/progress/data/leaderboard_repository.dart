@@ -28,25 +28,49 @@ class LeaderboardRow {
       );
 }
 
+/// "Sen" satırı — sunucu kovalamaca bilgisini de verir (bir üstteki kim,
+/// aradaki fark kaç puan). rank == 0 → bu dönemde henüz puan yok.
+class LeaderboardMe {
+  final int rank;
+  final int points;
+  final int? pointsToNext;
+  final String? nextName;
+  const LeaderboardMe({
+    required this.rank,
+    required this.points,
+    this.pointsToNext,
+    this.nextName,
+  });
+
+  factory LeaderboardMe.fromJson(Map<String, dynamic> j) => LeaderboardMe(
+        rank: j['rank'] as int? ?? 0,
+        points: j['points'] as int? ?? 0,
+        pointsToNext: j['pointsToNext'] as int?,
+        nextName: j['nextName'] as String?,
+      );
+}
+
 class LeaderboardData {
   final String period;
   final List<LeaderboardRow> top;
-  final int myPoints;
-  final int? myRank;
+  final LeaderboardMe? me;
   const LeaderboardData({
     required this.period,
     required this.top,
-    required this.myPoints,
-    this.myRank,
+    this.me,
   });
+
+  int get myPoints => me?.points ?? 0;
+  int? get myRank => me == null || me!.rank <= 0 ? null : me!.rank;
 
   factory LeaderboardData.fromJson(Map<String, dynamic> j) => LeaderboardData(
         period: j['period'] as String,
         top: (j['top'] as List<dynamic>)
             .map((e) => LeaderboardRow.fromJson(e as Map<String, dynamic>))
             .toList(),
-        myPoints: (j['me'] as Map<String, dynamic>?)?['points'] as int? ?? 0,
-        myRank: (j['me'] as Map<String, dynamic>?)?['rank'] as int?,
+        me: j['me'] != null
+            ? LeaderboardMe.fromJson(j['me'] as Map<String, dynamic>)
+            : null,
       );
 }
 

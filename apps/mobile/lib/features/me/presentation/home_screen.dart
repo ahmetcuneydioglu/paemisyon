@@ -20,7 +20,9 @@ import '../../../shared/widgets/streak_badge.dart';
 import '../../catalog/presentation/focus_drilldown_sheet.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
+import '../../progress/data/leaderboard_repository.dart';
 import '../../progress/data/progress_repository.dart';
+import '../../progress/presentation/leaderboard_preview_card.dart';
 import '../data/me_repository.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
@@ -139,7 +141,10 @@ class HomeScreen extends ConsumerWidget {
           onRetry: () => ref.invalidate(coachBriefProvider),
         ),
         data: (b) => RefreshIndicator(
-          onRefresh: () async => ref.invalidate(coachBriefProvider),
+          onRefresh: () async {
+            ref.invalidate(coachBriefProvider);
+            ref.invalidate(leaderboardProvider);
+          },
           child: _CoachBody(brief: b),
         ),
       ),
@@ -444,6 +449,19 @@ class _CoachBody extends ConsumerWidget {
         StaggeredReveal(
           index: i++,
           child: _StatsStrip(brief: brief),
+        ),
+
+        // ── Lider tahtası vitrini: günün yarışı + "sen" satırı ──
+        // Alt bölge çapası: üst bölge koçun aksiyon alanı, tarama burada
+        // rekabet duygusuyla biter. Dokununca tam sıralama açılır.
+        StaggeredReveal(
+          index: i++,
+          child: LeaderboardPreviewCard(
+            onTap: () async {
+              await context.push('/leaderboard');
+              ref.invalidate(leaderboardProvider);
+            },
+          ),
         ),
         const SizedBox(height: AppSpacing.lg),
 
