@@ -307,23 +307,6 @@ class _SettingsFormState extends ConsumerState<_SettingsForm> {
                   }
                 },
               ),
-            if (reminder.enabled)
-              ListTile(
-                contentPadding: EdgeInsets.zero,
-                leading: const SizedBox(width: 24),
-                title: const Text('Test bildirimi gönder'),
-                subtitle:
-                    const Text('5 saniye içinde gelir — kurulumu doğrular.'),
-                trailing: const Icon(Icons.send_rounded),
-                onTap: () async {
-                  await ref.read(notificationServiceProvider).sendTest();
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                        content: Text(
-                            'Test gönderildi — uygulamayı kapatmana gerek yok.')));
-                  }
-                },
-              ),
           ]);
         }),
         const Divider(),

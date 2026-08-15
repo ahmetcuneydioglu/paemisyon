@@ -176,23 +176,6 @@ class NotificationService {
     await _plugin.show(1998, title, body, _details, payload: payload);
   }
 
-  /// 5 saniye sonra tek seferlik TEST bildirimi — izin/kurulum sorununu
-  /// saniyeler içinde ayrıştırır (gelmiyorsa sorun izinde/sistemde,
-  /// geliyorsa zamanlamada değildir).
-  Future<void> sendTest() async {
-    await _ensureInitialized();
-    await _plugin.zonedSchedule(
-      1999,
-      'Test bildirimi ✅',
-      'Bildirimler çalışıyor — dokununca Günün Sorusu açılır.',
-      tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
-      _details,
-      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
-      payload: payloadDailyQuiz,
-    );
-  }
 }
 
 final notificationServiceProvider =
