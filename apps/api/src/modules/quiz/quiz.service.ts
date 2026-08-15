@@ -107,6 +107,25 @@ export class QuizService {
     // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
     const isPremiumUser = user.isPremium;
 
+    // HEDEF SINAV KAPSAMI (kullanıcı isteği: PAEM hedefleyene Misyon konusu
+    // gelmesin): kapsamsız koç seansı ve yanlış tekrarı, kullanıcının hedef
+    // sınavının (preferredModule) müfredatıyla sınırlanır. Hedef seçilmemişse
+    // eski davranış (tüm müfredat). Kütüphaneden BİLİNÇLİ konu/ders seçimi
+    // filtrelenmez — kullanıcı ne istediğini biliyor.
+    const needsModuleScope =
+      dto.mode === 'review' || (dto.topicId == null && dto.courseId == null);
+    const preferredModuleId = needsModuleScope
+      ? (
+          await this.prisma.user.findUnique({
+            where: { id: userId },
+            select: { preferredModuleId: true },
+          })
+        )?.preferredModuleId ?? null
+      : null;
+    const moduleSection = preferredModuleId
+      ? { deletedAt: null, examTypeId: preferredModuleId }
+      : { deletedAt: null };
+
     let poolWhere;
     if (dto.topicId != null) {
       const topic = await this.prisma.topic.findFirst({
@@ -150,7 +169,7 @@ export class QuizService {
           ...(isPremiumUser ? {} : { isPremium: false }),
           course: {
             deletedAt: null,
-            sections: { some: { section: { deletedAt: null } } },
+            sections: { some: { section: moduleSection } },
           },
         },
       };
@@ -171,7 +190,12 @@ export class QuizService {
           id: { in: wrongs.map((w) => w.questionId) },
           deletedAt: null,
           currentVersionId: { not: null },
-          ...(isPremiumUser ? {} : { topic: { isPremium: false } }),
+          topic: {
+            ...(isPremiumUser ? {} : { isPremium: false }),
+            ...(preferredModuleId
+              ? { course: { sections: { some: { section: moduleSection } } } }
+              : {}),
+          },
         },
         select: { id: true, currentVersionId: true, topicId: true },
       });
