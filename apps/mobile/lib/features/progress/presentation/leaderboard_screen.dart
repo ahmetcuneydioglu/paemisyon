@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/theme/app_motion.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
@@ -148,51 +149,115 @@ class _GlobalBoard extends ConsumerWidget {
   }
 }
 
-/// İlk 3 podyumu: 2-1-3 dizilimi, birinci yükseltilmiş.
+/// İlk 3 podyumu: 2-1-3 dizilimi, birinci yükseltilmiş; arkada yumuşak
+/// ışıma, sütunlar degrade "kürsü" olarak yükselerek belirir.
 class _Podium extends StatelessWidget {
   final List<GlobalLeaderboardRow> rows;
   const _Podium({required this.rows});
+
+  // Kürsü paletleri (açık→koyu degrade): altın, buz mavisi, mercan.
+  // İki temada da doygun kalır — yüzeye alpha karışımı yapılmaz.
+  static const gold = (top: Color(0xFFFFD976), bottom: Color(0xFFF3A93C));
+  static const silver = (top: Color(0xFFD4E2F6), bottom: Color(0xFF93B4E0));
+  static const bronze = (top: Color(0xFFFFC7A6), bottom: Color(0xFFEF8B5A));
 
   @override
   Widget build(BuildContext context) {
     final first = rows.isNotEmpty ? rows[0] : null;
     final second = rows.length > 1 ? rows[1] : null;
     final third = rows.length > 2 ? rows[2] : null;
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
+    return Stack(
+      alignment: Alignment.bottomCenter,
       children: [
-        Expanded(
-            child: second == null
-                ? const SizedBox.shrink()
-                : _PodiumCell(row: second, height: 96, medal: '🥈')),
-        const SizedBox(width: AppSpacing.sm),
-        Expanded(
-            child: first == null
-                ? const SizedBox.shrink()
-                : _PodiumCell(row: first, height: 124, medal: '🥇')),
-        const SizedBox(width: AppSpacing.sm),
-        Expanded(
-            child: third == null
-                ? const SizedBox.shrink()
-                : _PodiumCell(row: third, height: 80, medal: '🥉')),
+        // Şampiyon ışıması — birincinin arkasında yumuşak altın hale.
+        Positioned.fill(
+          child: IgnorePointer(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: const Alignment(0, -0.55),
+                  radius: 0.9,
+                  colors: [
+                    gold.bottom.withValues(alpha: .18),
+                    gold.bottom.withValues(alpha: 0),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Expanded(
+                child: second == null
+                    ? const SizedBox.shrink()
+                    : _PodiumCell(
+                        row: second,
+                        height: 96,
+                        palette: silver,
+                        delayMs: 120)),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+                child: first == null
+                    ? const SizedBox.shrink()
+                    : _PodiumCell(
+                        row: first, height: 136, palette: gold, delayMs: 0)),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+                child: third == null
+                    ? const SizedBox.shrink()
+                    : _PodiumCell(
+                        row: third,
+                        height: 78,
+                        palette: bronze,
+                        delayMs: 220)),
+          ],
+        ),
       ],
     );
   }
 }
 
-class _PodiumCell extends StatelessWidget {
+class _PodiumCell extends StatefulWidget {
   final GlobalLeaderboardRow row;
   final double height;
-  final String medal;
-  const _PodiumCell(
-      {required this.row, required this.height, required this.medal});
+  final ({Color top, Color bottom}) palette;
+  final int delayMs;
+  const _PodiumCell({
+    required this.row,
+    required this.height,
+    required this.palette,
+    required this.delayMs,
+  });
+
+  @override
+  State<_PodiumCell> createState() => _PodiumCellState();
+}
+
+class _PodiumCellState extends State<_PodiumCell> {
+  bool _revealed = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Kademeli yükselme: 1. hemen, 2. ve 3. kısa gecikmeyle.
+    Future.delayed(Duration(milliseconds: widget.delayMs), () {
+      if (mounted) setState(() => _revealed = true);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final tokens = context.tokens;
+    final row = widget.row;
+    final pal = widget.palette;
     final initial = row.displayName.trim().isNotEmpty
         ? row.displayName.trim()[0].toUpperCase()
         : '?';
+    final reduce = AppMotion.reduceMotion;
+    final targetH = (_revealed || reduce) ? widget.height : 0.0;
+
     return Semantics(
       label:
           '${row.rank}. sıra: ${row.displayName}, ortalama ${row.avgScore.toStringAsFixed(2)} net',
@@ -200,46 +265,141 @@ class _PodiumCell extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(medal, style: const TextStyle(fontSize: 22)),
-          const SizedBox(height: AppSpacing.xs),
-          CircleAvatar(
-            radius: 20,
-            backgroundColor: row.isMe ? tokens.brand : tokens.surfaceAlt,
-            foregroundImage:
-                row.avatarUrl != null ? NetworkImage(row.avatarUrl!) : null,
-            child: Text(initial,
-                style: AppTypography.heading.copyWith(
-                    color: row.isMe ? tokens.surface : tokens.ink)),
+          // Avatar: madalya renkli degrade halka + "sen" vurgusu.
+          AnimatedOpacity(
+            duration: AppMotion.respect(AppMotion.standard),
+            opacity: (_revealed || reduce) ? 1 : 0,
+            child: Column(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [pal.top, pal.bottom],
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: pal.bottom.withValues(alpha: .35),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: CircleAvatar(
+                    radius: row.rank == 1 ? 26 : 21,
+                    backgroundColor: tokens.surface,
+                    foregroundImage: row.avatarUrl != null
+                        ? NetworkImage(row.avatarUrl!)
+                        : null,
+                    child: Text(initial,
+                        style: AppTypography.heading
+                            .copyWith(color: tokens.ink)),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.xs + 2),
+                Text(
+                  row.isMe ? '${row.displayName} (sen)' : row.displayName,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.label.copyWith(
+                    color: tokens.ink,
+                    fontWeight:
+                        row.isMe ? FontWeight.w800 : FontWeight.w600,
+                  ),
+                ),
+                Text(
+                  '${row.avgScore.toStringAsFixed(2)} net',
+                  style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+                ),
+              ],
+            ),
           ),
-          const SizedBox(height: AppSpacing.xs),
-          Text(
-            row.isMe ? '${row.displayName} (sen)' : row.displayName,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            textAlign: TextAlign.center,
-            style: AppTypography.label.copyWith(color: tokens.ink),
-          ),
-          const SizedBox(height: AppSpacing.xs),
-          Container(
-            height: height,
+          const SizedBox(height: AppSpacing.sm),
+          // Kürsü: degrade sütun, üstte cam parlaması, büyük sıra numarası.
+          AnimatedContainer(
+            duration: AppMotion.respect(AppMotion.celebrate),
+            curve: AppMotion.standardCurve,
+            height: targetH,
             width: double.infinity,
             decoration: BoxDecoration(
-              color: Color.alphaBlend(
-                  tokens.accentStreak.withValues(alpha: row.rank == 1 ? 0.30 : 0.15),
-                  tokens.surfaceAlt),
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [pal.top, pal.bottom],
+              ),
               borderRadius: const BorderRadius.vertical(
                   top: Radius.circular(AppSpacing.radiusMd)),
-            ),
-            alignment: Alignment.center,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(row.avgScore.toStringAsFixed(2),
-                    style: AppTypography.heading.copyWith(color: tokens.ink)),
-                Text('NET ORT.',
-                    style: AppTypography.caption
-                        .copyWith(color: tokens.inkSoft, fontSize: 9)),
+              boxShadow: [
+                BoxShadow(
+                  color: pal.bottom.withValues(alpha: .30),
+                  blurRadius: 14,
+                  offset: const Offset(0, 6),
+                ),
               ],
+            ),
+            child: ClipRRect(
+              borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(AppSpacing.radiusMd)),
+              child: Stack(
+                children: [
+                  // Üst kenar parlaması — kürsüye hacim hissi verir.
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 10,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.white.withValues(alpha: .45),
+                            Colors.white.withValues(alpha: 0),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: OverflowBox(
+                      maxHeight: double.infinity,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('✦ ✦ ✦',
+                              style: TextStyle(
+                                  fontSize: 8,
+                                  letterSpacing: 1,
+                                  color:
+                                      Colors.white.withValues(alpha: .75))),
+                          Text(
+                            '${row.rank}',
+                            style: TextStyle(
+                              fontSize: row.rank == 1 ? 40 : 30,
+                              height: 1.05,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white,
+                              shadows: [
+                                Shadow(
+                                  color:
+                                      pal.bottom.withValues(alpha: .6),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
