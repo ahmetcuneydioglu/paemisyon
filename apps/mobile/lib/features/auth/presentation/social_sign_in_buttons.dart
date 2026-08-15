@@ -12,8 +12,9 @@ import '../../../core/theme/app_typography.dart';
 import '../data/auth_repository.dart';
 
 /// Sosyal giriş butonları (Doc 28 P0-①) — giriş VE kayıt ekranlarında aynı.
-/// Web'le TEK hesap: aynı Google/Apple kimliği aynı Supabase kullanıcısıdır.
-/// Apple üstte (HIG — iOS'ta üçüncü taraf girişlerin önünde olmalı).
+/// Marka kurallarına uygun: Apple (HIG: siyah/beyaz, gerçek logo, iOS'ta
+/// üçüncü taraf girişlerin ÖNÜNDE) + Google (resmî renkli G, beyaz zemin).
+/// Web'le TEK hesap: aynı kimlik aynı Supabase kullanıcısıdır.
 class SocialSignInButtons extends ConsumerStatefulWidget {
   const SocialSignInButtons({super.key});
 
@@ -52,91 +53,139 @@ class _SocialSignInButtonsState extends ConsumerState<SocialSignInButtons> {
 
   @override
   Widget build(BuildContext context) {
-    final tokens = context.tokens;
     final repo = ref.read(authRepositoryProvider);
     final showApple = Platform.isIOS;
     final showGoogle = AppConfig.hasGoogleSignIn;
     if (!showApple && !showGoogle) return const SizedBox.shrink();
 
-    Widget button({
-      required String key,
-      required Widget icon,
-      required String label,
-      required Color background,
-      required Color foreground,
-      Color? border,
-      required Future<void> Function() action,
-    }) {
-      final loading = _busy == key;
-      return Padding(
-        padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-        child: SizedBox(
-          height: 48, // ≥44pt dokunma hedefi
-          child: FilledButton.icon(
-            style: FilledButton.styleFrom(
-              backgroundColor: background,
-              foregroundColor: foreground,
-              side: border != null ? BorderSide(color: border) : null,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-              ),
-            ),
-            onPressed: _busy != null ? null : () => _run(key, action),
-            icon: loading
-                ? SizedBox(
-                    width: 18,
-                    height: 18,
-                    child: CircularProgressIndicator(
-                        strokeWidth: 2, color: foreground),
-                  )
-                : icon,
-            label: Text(label, style: AppTypography.label.copyWith(fontSize: 15)),
-          ),
-        ),
-      );
-    }
-
     final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            Expanded(child: Divider(color: tokens.line)),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: AppSpacing.md),
-              child: Text('veya',
-                  style:
-                      AppTypography.caption.copyWith(color: tokens.inkSoft)),
-            ),
-            Expanded(child: Divider(color: tokens.line)),
-          ],
-        ),
-        const SizedBox(height: AppSpacing.md),
         if (showApple)
-          button(
-            key: 'apple',
-            icon: const Icon(Icons.apple, size: 22),
-            label: 'Apple ile devam et',
-            // HIG: Apple butonu siyah/beyaz — temaya göre ters.
+          _SocialButton(
+            loading: _busy == 'apple',
+            disabled: _busy != null,
+            // HIG: koyu temada beyaz buton + siyah logo; açıkta tersi.
             background: isDark ? Colors.white : Colors.black,
             foreground: isDark ? Colors.black : Colors.white,
-            action: repo.signInWithApple,
+            icon: Icon(Icons.apple,
+                size: 24, color: isDark ? Colors.black : Colors.white),
+            label: 'Apple ile devam et',
+            onPressed: () => _run('apple', repo.signInWithApple),
           ),
+        if (showApple && showGoogle) const SizedBox(height: AppSpacing.md),
         if (showGoogle)
-          button(
-            key: 'google',
-            icon: Text('G',
-                style: AppTypography.heading
-                    .copyWith(color: tokens.ink, fontWeight: FontWeight.w800)),
+          _SocialButton(
+            loading: _busy == 'google',
+            disabled: _busy != null,
+            // Google marka kuralı: beyaz zemin + resmî renkli G (her temada).
+            background: Colors.white,
+            foreground: const Color(0xFF1F1F1F),
+            border: isDark ? null : const Color(0xFFDADCE0),
+            icon: Image.asset('assets/icons/google_g.png',
+                width: 20, height: 20),
             label: 'Google ile devam et',
-            background: tokens.surface,
-            foreground: tokens.ink,
-            border: tokens.line,
-            action: repo.signInWithGoogle,
+            onPressed: () => _run('google', repo.signInWithGoogle),
           ),
       ],
     );
+  }
+}
+
+/// Tek tip sosyal buton: 52pt, gerçek logo solda sabit hizada, metin ortada.
+class _SocialButton extends StatelessWidget {
+  const _SocialButton({
+    required this.icon,
+    required this.label,
+    required this.background,
+    required this.foreground,
+    required this.onPressed,
+    required this.loading,
+    required this.disabled,
+    this.border,
+  });
+
+  final Widget icon;
+  final String label;
+  final Color background;
+  final Color foreground;
+  final Color? border;
+  final VoidCallback onPressed;
+  final bool loading;
+  final bool disabled;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: true,
+      label: label,
+      child: SizedBox(
+        height: 52,
+        child: Material(
+          color: background,
+          borderRadius: BorderRadius.circular(AppSpacing.radiusMd + 2),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd + 2),
+            onTap: disabled ? null : onPressed,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppSpacing.radiusMd + 2),
+                border: border != null ? Border.all(color: border!) : null,
+              ),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: loading
+                        ? SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(
+                                strokeWidth: 2, color: foreground),
+                          )
+                        : icon,
+                  ),
+                  Text(
+                    label,
+                    style: AppTypography.label.copyWith(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: disabled
+                          ? foreground.withValues(alpha: .5)
+                          : foreground,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// "ya da" ayracı — auth ekranlarında ortak.
+class AuthDivider extends StatelessWidget {
+  const AuthDivider({super.key, this.label = 'ya da'});
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Row(children: [
+      Expanded(child: Divider(color: tokens.line)),
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
+        child: Text(label,
+            style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
+      ),
+      Expanded(child: Divider(color: tokens.line)),
+    ]);
   }
 }
