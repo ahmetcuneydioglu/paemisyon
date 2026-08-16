@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/theme/app_spacing.dart';
-import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/micro_interactions.dart';
 import '../data/mevzuat_repository.dart';
@@ -17,18 +16,20 @@ import '../data/mevzuat_repository.dart';
 class MevzuatHeroCard extends ConsumerWidget {
   const MevzuatHeroCard({super.key});
 
+  // Sabit marka dünyası (navy hero ile aynı ilke — token DEĞİL): iki temada
+  // da aynı derin menekşe. Navy'nin kardeşi: ÇÖZ mavi, OKU menekşe.
+  static const _violetTop = Color(0xFF4A3F8F);
+  static const _violetMid = Color(0xFF362E6E);
+  static const _violetDeep = Color(0xFF221E4E);
+  static const _lilac = Color(0xFFBFB3F2); // yumuşak metin (softInk eşi)
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final tokens = context.tokens;
     final progress =
         ref.watch(readingProgressProvider).valueOrNull ?? const [];
     final bookmarks =
         ref.watch(articleBookmarksProvider).valueOrNull ?? const [];
     final laws = ref.watch(mevzuatListProvider).valueOrNull ?? const [];
-
-    final base = tokens.accentAtlas;
-    final deep = Color.lerp(base, Colors.black, .38)!;
-    final soft = Colors.white.withValues(alpha: .78);
     final continueItem = progress.isNotEmpty ? progress.first : null;
 
     // Çipler: kaydedilenler öncelikli; yoksa soru sayısına göre öne çıkanlar.
@@ -54,15 +55,16 @@ class MevzuatHeroCard extends ConsumerWidget {
         padding: const EdgeInsets.all(AppSpacing.lg),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppSpacing.radiusLg + 4),
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [base, deep],
+            colors: [_violetTop, _violetMid, _violetDeep],
+            stops: [0, .55, 1],
           ),
           boxShadow: [
             BoxShadow(
-              color: deep.withValues(alpha: .30),
-              blurRadius: 18,
+              color: _violetDeep.withValues(alpha: .35),
+              blurRadius: 20,
               offset: const Offset(0, 8),
             ),
           ],
@@ -71,14 +73,23 @@ class MevzuatHeroCard extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(children: [
-              const Icon(Icons.balance_rounded,
-                  size: 20, color: Colors.white),
-              const SizedBox(width: AppSpacing.sm),
+              Container(
+                width: 30,
+                height: 30,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: .12),
+                  borderRadius: BorderRadius.circular(AppSpacing.radiusSm),
+                ),
+                child: const Icon(Icons.balance_rounded,
+                    size: 17, color: _lilac),
+              ),
+              const SizedBox(width: AppSpacing.sm + 2),
               Text('Mevzuat Merkezi',
                   style: AppTypography.heading
                       .copyWith(color: Colors.white)),
               const Spacer(),
-              Icon(Icons.chevron_right_rounded, color: soft),
+              const Icon(Icons.chevron_right_rounded, color: _lilac),
             ]),
             const SizedBox(height: AppSpacing.md),
             // ── Ana eylem: devam > arama ──
@@ -115,14 +126,21 @@ class MevzuatHeroCard extends ConsumerWidget {
                       button: true,
                       label: c.label,
                       child: Material(
-                        color: Colors.white.withValues(alpha: .14),
+                        color: Colors.white.withValues(alpha: .08),
                         borderRadius:
                             BorderRadius.circular(AppSpacing.radiusFull),
                         child: InkWell(
                           borderRadius:
                               BorderRadius.circular(AppSpacing.radiusFull),
                           onTap: () => context.push(c.route),
-                          child: Padding(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(
+                                  AppSpacing.radiusFull),
+                              border: Border.all(
+                                  color:
+                                      Colors.white.withValues(alpha: .22)),
+                            ),
                             padding: const EdgeInsets.symmetric(
                                 horizontal: AppSpacing.md,
                                 vertical: AppSpacing.xs),
@@ -157,16 +175,21 @@ class MevzuatHeroCard extends ConsumerWidget {
       label: '$title — $subtitle',
       excludeSemantics: true,
       child: Material(
-        color: Colors.white.withValues(alpha: .12),
+        color: Colors.white.withValues(alpha: .10),
         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
         child: InkWell(
           borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           onTap: onTap,
-          child: Padding(
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+              border:
+                  Border.all(color: Colors.white.withValues(alpha: .16)),
+            ),
             padding: const EdgeInsets.symmetric(
-                horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
+                horizontal: AppSpacing.md, vertical: AppSpacing.sm + 4),
             child: Row(children: [
-              Icon(icon, size: 22, color: Colors.white),
+              Icon(icon, size: 22, color: _lilac),
               const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(
@@ -174,18 +197,20 @@ class MevzuatHeroCard extends ConsumerWidget {
                   children: [
                     Text(title,
                         style: AppTypography.label.copyWith(
-                            color: Colors.white, fontSize: 14)),
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700)),
                     const SizedBox(height: 1),
                     Text(subtitle,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: AppTypography.caption.copyWith(
-                            color: Colors.white.withValues(alpha: .75))),
+                        style: AppTypography.caption
+                            .copyWith(color: _lilac)),
                   ],
                 ),
               ),
-              Icon(Icons.arrow_forward_rounded,
-                  size: 18, color: Colors.white.withValues(alpha: .8)),
+              const Icon(Icons.arrow_forward_rounded,
+                  size: 18, color: _lilac),
             ]),
           ),
         ),
