@@ -5,7 +5,23 @@
   },
   "identifier" : "PAEMISYON_STOREKIT",
   "nonRenewingSubscriptions" : [],
-  "products" : [],
+  "products" : [
+    {
+      "displayPrice" : "1699.99",
+      "familyShareable" : false,
+      "internalID" : "20871004",
+      "localizations" : [
+        {
+          "description" : "Tek ödeme, ömür boyu tüm premium özellikler",
+          "displayName" : "Ömürlük Premium",
+          "locale" : "tr_TR"
+        }
+      ],
+      "productID" : "com.paemisyon.premium.lifetime",
+      "referenceName" : "Ömürlük",
+      "type" : "NonConsumable"
+    }
+  ],
   "settings" : {
     "_applicationInternalID" : "",
     "_developerTeamID" : "",
@@ -15,47 +31,26 @@
     {
       "id" : "20871001",
       "localizations" : [],
-      "name" : "Paemisyon Premium",
+      "name" : "Premium",
       "subscriptions" : [
         {
           "adHocOffers" : [],
           "codeOffers" : [],
-          "displayPrice" : "149.99",
+          "displayPrice" : "599.99",
           "familyShareable" : false,
           "groupNumber" : 1,
-          "internalID" : "20871002",
-          "introductoryOffer" : null,
-          "localizations" : [
-            {
-              "description" : "Sınırsız soru ve tüm içerik",
-              "displayName" : "Premium Aylık",
-              "locale" : "tr_TR"
-            }
-          ],
-          "productID" : "com.paemisyon.premium.monthly",
-          "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Premium Aylık",
-          "subscriptionGroupID" : "20871001",
-          "type" : "RecurringSubscription"
-        },
-        {
-          "adHocOffers" : [],
-          "codeOffers" : [],
-          "displayPrice" : "999.99",
-          "familyShareable" : false,
-          "groupNumber" : 2,
           "internalID" : "20871003",
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "Yıllık — en avantajlı",
-              "displayName" : "Premium Yıllık",
+              "description" : "Sınırsız soru, tüm denemeler ve premium özellikler — 1 yıl",
+              "displayName" : "Yıllık Premium",
               "locale" : "tr_TR"
             }
           ],
-          "productID" : "com.paemisyon.premium.yearly",
+          "productID" : "com.paemisyon.premium.annual",
           "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "Premium Yıllık",
+          "referenceName" : "Yıllık Premium",
           "subscriptionGroupID" : "20871001",
           "type" : "RecurringSubscription"
         }

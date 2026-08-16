@@ -1,6 +1,6 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { AppleVerifier } from './apple-verifier.service';
+import { AppleVerifier, VerifiedTransaction } from './apple-verifier.service';
 import { UserSyncService } from '../auth/user-sync.service';
 
 /**
@@ -10,6 +10,8 @@ import { UserSyncService } from '../auth/user-sync.service';
  */
 @Injectable()
 export class BillingService {
+  private readonly logger = new Logger(BillingService.name);
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly apple: AppleVerifier,
@@ -51,7 +53,7 @@ export class BillingService {
       throw new BadRequestException(`Ürün bir plana eşlenmedi: ${tx.productId}`);
     }
 
-    const active = tx.expiresDate == null || tx.expiresDate.getTime() > Date.now();
+    const active = this.isActive(tx);
     const status = active ? 'active' : 'expired';
 
     // Idempotent: aynı originalTransactionId tekrar doğrulanırsa satır çoğaltma.
@@ -115,5 +117,61 @@ export class BillingService {
       plan: plan.key,
       environment: tx.environment,
     };
+  }
+
+  /** Süresiz ürün (ömürlük) hep aktif; iade/geri alma (revocation) her tipte düşürür. */
+  private isActive(tx: VerifiedTransaction): boolean {
+    if (tx.revocationDate != null) return false;
+    return tx.expiresDate == null || tx.expiresDate.getTime() > Date.now();
+  }
+
+  /**
+   * App Store Server Notification v2 (Doc 15): Apple; yenileme, süre dolumu,
+   * iade ve geri almaları buraya bildirir. Olay-bazlı değil DURUM-bazlı işlenir:
+   * bildirimin taşıdığı doğrulanmış işlemden abonelik durumu yeniden hesaplanır —
+   * hangi bildirim tipi gelirse gelsin sonuç işlemin kendisinden türer.
+   */
+  async handleAppleNotification(signedPayload: string) {
+    const note = await this.apple.verifyNotification(signedPayload);
+
+    // ASC "Send Test Notification" ve işlemsiz tipler: doğrulandı, işlem yok.
+    if (!note.signedTransactionInfo) {
+      this.logger.log(`Apple bildirimi (işlemsiz): ${note.notificationType}`);
+      return { ok: true };
+    }
+
+    const tx = await this.apple.verify(note.signedTransactionInfo);
+    const sub = await this.prisma.subscription.findFirst({
+      where: { originalTransactionId: tx.originalTransactionId },
+    });
+    if (!sub) {
+      // Kullanıcı uygulamadan hiç doğrulamadıysa eşleyecek hesap yoktur;
+      // istemci ilk açılışta /billing/verify ile eşleyecek. Sessizce kabul et
+      // (200 dönmezsek Apple aynı bildirimi tekrar tekrar yollar).
+      this.logger.warn(
+        `Apple bildirimi eşleşmedi: ${note.notificationType} tx=${tx.originalTransactionId}`,
+      );
+      return { ok: true };
+    }
+
+    const active = this.isActive(tx);
+    await this.prisma.subscription.update({
+      where: { id: sub.id },
+      data: {
+        status: tx.revocationDate ? 'cancelled' : active ? 'active' : 'expired',
+        currentPeriodEnd: tx.expiresDate,
+      },
+    });
+    // Entitlement yalnız bu abonelikten besleniyorsa güncellenir (manuel/premium
+    // başka kaynaktan verilmişse ona dokunma).
+    await this.prisma.entitlement.updateMany({
+      where: { userId: sub.userId, sourceSubscriptionId: sub.id },
+      data: { isPremium: active, validUntil: tx.expiresDate },
+    });
+    this.userSync.invalidate(sub.userId);
+    this.logger.log(
+      `Apple bildirimi işlendi: ${note.notificationType}/${note.subtype ?? '-'} → ${active ? 'premium' : 'düştü'} (user=${sub.userId})`,
+    );
+    return { ok: true };
   }
 }

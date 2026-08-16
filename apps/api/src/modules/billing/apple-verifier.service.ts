@@ -9,9 +9,19 @@ export interface VerifiedTransaction {
   originalTransactionId: string;
   transactionId: string;
   expiresDate: Date | null;
+  /** İade/geri alma tarihi — doluysa erişim geri çekilmiştir (REFUND/REVOKE). */
+  revocationDate: Date | null;
   environment: string; // Production | Sandbox | Xcode | LocalTesting
   bundleId: string | null;
   type: string | null;
+}
+
+/** App Store Server Notification v2 gövdesi (imza doğrulandıktan sonra). */
+export interface VerifiedNotification {
+  notificationType: string;
+  subtype: string | null;
+  /** İşlem JWS'i — varsa verify() ile ayrıca doğrulanıp işlenir. */
+  signedTransactionInfo: string | null;
 }
 
 /**
@@ -100,14 +110,46 @@ export class AppleVerifier {
   private normalize(p: Record<string, unknown>, env: string): VerifiedTransaction {
     const num = (v: unknown) => (v == null ? null : Number(v));
     const exp = num(p.expiresDate);
+    const revoked = num(p.revocationDate);
     return {
       productId: String(p.productId ?? ''),
       originalTransactionId: String(p.originalTransactionId ?? p.transactionId ?? ''),
       transactionId: String(p.transactionId ?? ''),
       expiresDate: exp ? new Date(exp) : null,
+      revocationDate: revoked ? new Date(revoked) : null,
       environment: env,
       bundleId: p.bundleId ? String(p.bundleId) : null,
       type: p.type ? String(p.type) : null,
+    };
+  }
+
+  /**
+   * App Store Server Notification v2 zarfını (signedPayload JWS) doğrular.
+   * Zarf da işlemlerle aynı Apple zincirine imzalıdır; içindeki
+   * signedTransactionInfo AYRICA verify() ile doğrulanmalıdır.
+   */
+  async verifyNotification(signedPayload: string): Promise<VerifiedNotification> {
+    const { header, payload } = this.decode(signedPayload);
+    const data = (payload.data ?? {}) as Record<string, unknown>;
+    const env = String(data.environment ?? payload.environment ?? '');
+    const isLocal = env === 'Xcode' || env === 'LocalTesting';
+    if (isLocal) {
+      if (!this.trustLocal) {
+        throw new UnauthorizedException('Yerel bildirim kabul edilmiyor.');
+      }
+    } else {
+      await this.verifySignatureAndChain(signedPayload, header);
+    }
+    const bundle = data.bundleId ? String(data.bundleId) : null;
+    if (this.bundleId && bundle && bundle !== this.bundleId) {
+      throw new UnauthorizedException('Bildirim başka bir uygulamaya ait.');
+    }
+    return {
+      notificationType: String(payload.notificationType ?? ''),
+      subtype: payload.subtype ? String(payload.subtype) : null,
+      signedTransactionInfo: data.signedTransactionInfo
+        ? String(data.signedTransactionInfo)
+        : null,
     };
   }
 }

@@ -52,6 +52,7 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   bool _iapAvailable = true;
   String? _loadError;
   String? _buyingKey; // satın alınmakta olan planın key'i
+  String? _selectedKey; // paket seçici — varsayılan yıllık
 
   /// Mağaza akışına ait UI (geri yükle, mağaza uyarısı) yalnız mağaza planı
   /// varken anlamlıdır.
@@ -100,6 +101,13 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
         _plans = plans;
         _products = products;
         _iapAvailable = available;
+        // Varsayılan seçim: yıllık (yoksa ilk mağaza planı).
+        final store = plans.where((p) => p.isStoreManaged).toList();
+        _selectedKey = store.isEmpty
+            ? null
+            : store
+                .firstWhere((p) => p.period == 'yearly', orElse: () => store.first)
+                .key;
       });
     } catch (e) {
       if (mounted) {
@@ -266,26 +274,54 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                 style: TextStyle(color: tokens.danger),
               ),
             ),
-          // Mağaza planı her platformda gösterilir; manuel plan iOS'ta gizli.
-          ..._plans!.map((p) {
-            if (p.isStoreManaged) return _storePlanCard(p);
-            if (hideManualPurchase) return const SizedBox.shrink();
-            return _manualPlanSection(p);
-          }),
+          // Mağaza planları paket seçici olarak; mağazaya bağlı ama bu
+          // platformda ID'si olmayan plan hiç gösterilmez. Manuel plan
+          // (hiçbir mağazaya bağlı olmayan) iOS'ta gizli.
+          if (_hasStorePlans) _packageSelector(),
+          ..._plans!.where((p) => !p.hasStoreBinding).map((p) =>
+              hideManualPurchase ? const SizedBox.shrink() : _manualPlanSection(p)),
           const SizedBox(height: AppSpacing.xl),
-          Text(
-            hideManualPurchase
-                // iOS: satın alma yolu/yönlendirme YOK — yalnız erişim modeli.
-                ? 'Premium, hesabına tanımlıdır — aynı hesapla giriş yaptığın '
-                    'her yerde geçerli olur.'
-                : _hasStorePlans
-                    ? 'Abonelik dönem sonunda otomatik yenilenir; App Store ayarlarından iptal edebilirsin.'
-                    : 'Otomatik yenileme yok, iptal edilecek abonelik yok. Süre bitince '
-                        'hesabın kendiliğinden ücretsiz katmana döner; devam etmek '
-                        'istersen bize yeniden yazarsın.',
-            style: AppTypography.caption.copyWith(color: tokens.inkSoft),
-            textAlign: TextAlign.center,
-          ),
+          if (_hasStorePlans) ...[
+            // Apple abonelik metadata kuralı: otomatik yenileme koşulları +
+            // koşullar/gizlilik bağlantıları paywall'da görünür olmalı.
+            Text(
+              'Yıllık abonelik, dönem bitiminden en az 24 saat önce iptal '
+              'edilmedikçe App Store hesabından otomatik yenilenir. Aboneliği '
+              'App Store > Abonelikler bölümünden istediğin an iptal '
+              'edebilirsin. Ömürlük paket tek seferlik ödemedir, yenilenmez.',
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+              textAlign: TextAlign.center,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  onPressed: () =>
+                      launchUrl(Uri.parse('https://paemisyon.com/kosullar')),
+                  child: const Text('Kullanım Koşulları'),
+                ),
+                Text('·',
+                    style:
+                        AppTypography.caption.copyWith(color: tokens.inkSoft)),
+                TextButton(
+                  onPressed: () =>
+                      launchUrl(Uri.parse('https://paemisyon.com/gizlilik')),
+                  child: const Text('Gizlilik Politikası'),
+                ),
+              ],
+            ),
+          ] else
+            Text(
+              hideManualPurchase
+                  // iOS: satın alma yolu/yönlendirme YOK — yalnız erişim modeli.
+                  ? 'Premium, hesabına tanımlıdır — aynı hesapla giriş yaptığın '
+                      'her yerde geçerli olur.'
+                  : 'Otomatik yenileme yok, iptal edilecek abonelik yok. Süre bitince '
+                      'hesabın kendiliğinden ücretsiz katmana döner; devam etmek '
+                      'istersen bize yeniden yazarsın.',
+              style: AppTypography.caption.copyWith(color: tokens.inkSoft),
+              textAlign: TextAlign.center,
+            ),
           // iOS: satın alma yönlendirmesi yerine GENEL müşteri desteği (Apple
           // 3.1.1: destek serbest, satın alma CTA'sı değil). Kullanıcı buradan
           // premium dahil her konuda ekibe ulaşır. (Android/web'de zaten manuel
@@ -361,49 +397,146 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     );
   }
 
-  // ── Mağaza akışı (ileride tekrar kullanılabilir) ──────────────────────────
+  // ── Mağaza akışı: paket seçici ────────────────────────────────────────────
 
-  Widget _storePlanCard(BillingPlan plan) {
+  /// İki paketli seçici (yıllık ön seçili) + tek CTA + geri yükle.
+  Widget _packageSelector() {
+    final tokens = context.tokens;
+    final store = _plans!.where((p) => p.isStoreManaged).toList();
+    final selected = store.firstWhere(
+      (p) => p.key == _selectedKey,
+      orElse: () => store.first,
+    );
+    final selectedInStore = _products[selected.storeProductId] != null;
+    final busy = _buyingKey != null;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        ...store.map((p) => _packageCard(p, isSelected: p.key == selected.key)),
+        const SizedBox(height: AppSpacing.sm),
+        FilledButton(
+          onPressed: (!selectedInStore || busy) ? null : () => _buy(selected),
+          style: FilledButton.styleFrom(
+            padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
+          ),
+          child: _buyingKey != null
+              ? const SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(strokeWidth: 2))
+              : Text(
+                  selected.isLifetime
+                      ? 'Ömürlük Premium Al'
+                      : 'Yıllık Premium Başlat',
+                  style: AppTypography.label,
+                ),
+        ),
+        if (!selectedInStore && _iapAvailable)
+          Padding(
+            padding: const EdgeInsets.only(top: AppSpacing.xs),
+            child: Text('Bu paket mağazada bulunamadı.',
+                textAlign: TextAlign.center,
+                style: AppTypography.caption.copyWith(color: tokens.danger)),
+          ),
+        TextButton(
+          onPressed: _iapAvailable ? () => _iap.restorePurchases() : null,
+          child: const Text('Satın alımları geri yükle'),
+        ),
+      ],
+    );
+  }
+
+  Widget _packageCard(BillingPlan plan, {required bool isSelected}) {
+    final tokens = context.tokens;
     final pd = _products[plan.storeProductId];
     // Mağaza fiyatı yerelleştirilmiş gelir; yoksa backend fiyatına düş.
     final priceText = pd?.price ?? plan.priceLabel;
-    final inStore = pd != null;
-    final busy = _buyingKey == plan.key;
-    final anyBusy = _buyingKey != null;
+    final monthly = plan.monthlyEquivalentLabel;
+    final badge = plan.isLifetime ? null : 'EN AVANTAJLI';
+    final subtitle = plan.isLifetime
+        ? 'Tek ödeme — ömür boyu premium'
+        : monthly != null
+            ? 'Ayda $monthly\'ye denk gelir'
+            : 'Yılda bir yenilenir';
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpacing.lg),
-      child: Card(
-        child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _priceHeader(plan, priceText: priceText),
-                    if (!inStore && _iapAvailable)
-                      Padding(
-                        padding: const EdgeInsets.only(top: AppSpacing.xs),
-                        child: Text('Mağazada bulunamadı',
-                            style: AppTypography.caption
-                                .copyWith(color: context.tokens.danger)),
+      padding: const EdgeInsets.only(bottom: AppSpacing.md),
+      child: Material(
+        color: isSelected ? tokens.brand.withValues(alpha: 0.06) : tokens.surface,
+        borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+          onTap: () => setState(() => _selectedKey = plan.key),
+          child: Container(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+              border: Border.all(
+                color: isSelected ? tokens.brand : tokens.line,
+                width: isSelected ? 2 : 1,
+              ),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  isSelected
+                      ? Icons.radio_button_checked_rounded
+                      : Icons.radio_button_off_rounded,
+                  color: isSelected ? tokens.brand : tokens.inkSoft,
+                ),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Flexible(
+                            child: Text(plan.name,
+                                style: AppTypography.label
+                                    .copyWith(color: tokens.ink)),
+                          ),
+                          if (badge != null) ...[
+                            const SizedBox(width: AppSpacing.sm),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: AppSpacing.sm, vertical: 2),
+                              decoration: BoxDecoration(
+                                color: tokens.brand,
+                                borderRadius: BorderRadius.circular(
+                                    AppSpacing.radiusFull),
+                              ),
+                              child: Text(badge,
+                                  style: AppTypography.caption.copyWith(
+                                      color: tokens.surface,
+                                      fontWeight: FontWeight.w700)),
+                            ),
+                          ],
+                        ],
                       ),
+                      const SizedBox(height: 2),
+                      Text(subtitle,
+                          style: AppTypography.caption
+                              .copyWith(color: tokens.inkSoft)),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: AppSpacing.md),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(priceText,
+                        style:
+                            AppTypography.heading.copyWith(color: tokens.ink)),
+                    if (!plan.isLifetime)
+                      Text('/ yıl',
+                          style: AppTypography.caption
+                              .copyWith(color: tokens.inkSoft)),
                   ],
                 ),
-              ),
-              const SizedBox(width: AppSpacing.lg),
-              FilledButton(
-                onPressed: (!inStore || anyBusy) ? null : () => _buy(plan),
-                child: busy
-                    ? const SizedBox(
-                        width: 18,
-                        height: 18,
-                        child: CircularProgressIndicator(strokeWidth: 2))
-                    : const Text('Satın Al'),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

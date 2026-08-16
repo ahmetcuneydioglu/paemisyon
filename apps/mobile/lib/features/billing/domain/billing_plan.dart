@@ -44,6 +44,15 @@ class BillingPlan {
   /// Ödeme mağazadan mı yürüyor? false ise manuel akış gösterilir.
   bool get isStoreManaged => storeProductId != null;
 
+  /// Plan HERHANGİ bir mağazaya bağlı mı? Bağlıysa ama bu platformun ID'si
+  /// yoksa (ör. iOS ürünü Android'de) plan hiç gösterilmez — mağaza ürünü
+  /// manuel akışa düşürülmez.
+  bool get hasStoreBinding =>
+      storeProductIdIos != null || storeProductIdAndroid != null;
+
+  /// Ömürlük (tek seferlik, süresiz) paket mi?
+  bool get isLifetime => period == 'lifetime';
+
   /// Dönem → ay sayısı; bilinmeyen dönem null.
   static const Map<String, int> _periodMonths = {
     'monthly': 1,
