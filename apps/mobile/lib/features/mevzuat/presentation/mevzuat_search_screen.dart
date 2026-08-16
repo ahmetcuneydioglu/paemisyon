@@ -212,7 +212,7 @@ class _ArticleHitTile extends StatelessWidget {
                 [
                   if (hit.lawShort != null) hit.lawShort!,
                   'Madde ${hit.no}',
-                  if (hit.title != null) '— ${hit.title}',
+                  if (hit.title != null) hit.title!,
                 ].join(' · '),
                 style: AppTypography.label.copyWith(color: tokens.brand),
               ),
