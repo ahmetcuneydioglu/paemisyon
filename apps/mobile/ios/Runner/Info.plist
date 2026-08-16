@@ -8,6 +8,8 @@
 	<string>685808602334-vdcfaaajqo8f50po7son57ceginfmgvj.apps.googleusercontent.com</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>CFBundleDisplayName</key>
 	<string>Paemisyon</string>
 	<key>CFBundleExecutable</key>
