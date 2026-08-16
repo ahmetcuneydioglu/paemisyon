@@ -38,6 +38,59 @@ export interface ParsedDocument {
   articles: ParsedDocArticle[];
 }
 
+/** TR-duyarlı gevşek normalize (kimlik karşılaştırması için). */
+function looseNorm(s: string): string {
+  const map: Record<string, string> = {
+    ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u',
+  };
+  return s
+    .toLocaleLowerCase('tr-TR')
+    .split('')
+    .map((ch) => map[ch] ?? ch)
+    .join('');
+}
+
+/**
+ * PDF ↔ hedef mevzuat kimlik doğrulaması (Doc 29 güven ilkesi): yanlış
+ * dosyayı yanlış kanunun üzerine yazmayı içe aktarmadan ÖNCE engeller.
+ * mevzuat.gov.tr konsolide metinleri başta "Kanun Numarası : NNNN" taşır;
+ * numarasız mevzuatta (yönetmelik) ad-parça örtüşmesine düşülür.
+ */
+export function verifyLawIdentity(
+  raw: string,
+  target: { number?: string | null; name: string },
+): { ok: boolean; reason?: string } {
+  const head = looseNorm(raw.slice(0, 4000));
+  const numMatch = /kanun\s+numaras[ıi]\s*:?\s*(\d{3,5})/i.exec(head);
+
+  if (target.number) {
+    if (numMatch) {
+      return numMatch[1] === target.number
+        ? { ok: true }
+        : {
+            ok: false,
+            reason: `PDF "Kanun Numarası ${numMatch[1]}" içeriyor, hedef ${target.number}.`,
+          };
+    }
+    // Numara satırı yoksa ada düş (eski tertip PDF'leri farklı başlayabilir).
+  }
+  // Ad-parça örtüşmesi: anlamlı kelimelerin en az yarısı (≥2) başta geçmeli.
+  const stop = new Set(['sayili', 'kanun', 'kanunu', 'hakkinda', 'dair', 'bazi', 've', 'ile']);
+  const tokens = looseNorm(target.name)
+    .replace(/[()]/g, ' ')
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t.length >= 4 && !stop.has(t) && !/^\d+$/.test(t));
+  if (tokens.length === 0) return { ok: true };
+  const hits = tokens.filter((t) => head.includes(t)).length;
+  const needed = Math.max(2, Math.ceil(tokens.length / 2));
+  return hits >= Math.min(needed, tokens.length)
+    ? { ok: true }
+    : {
+        ok: false,
+        reason: `PDF başlangıcı "${target.name}" ile örtüşmüyor (${hits}/${tokens.length} kelime).`,
+      };
+}
+
 export function parseDocument(raw: string): ParsedDocument {
   const lines = raw.split('\n');
   const sections: ParsedSection[] = [];

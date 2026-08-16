@@ -9,7 +9,7 @@ import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
 import { articleSortKey, canonicalArticleNo } from './law-text-parser';
-import { parseDocument } from './law-document-parser';
+import { parseDocument, verifyLawIdentity } from './law-document-parser';
 import { extractPdfLawText } from './pdf-law-text';
 
 /** Panelden PDF/metin toplu içe aktarma seçenekleri. */
@@ -349,6 +349,17 @@ export class AdminLawArticlesService {
     const legislation = await this.ensureLegislation(topic.id, topic.name);
     const isPdf = opts.filename.toLowerCase().endsWith('.pdf');
     const raw = isPdf ? await extractPdfLawText(opts.buffer) : opts.buffer.toString('utf8');
+    // Kimlik kapısı (Doc 29): yanlış PDF yanlış kanunun üzerine YAZILAMAZ
+    // (Anayasa↔PVSK kazasının kökten ilacı). force bile bunu aşamaz.
+    const identity = verifyLawIdentity(raw, {
+      number: legislation.number,
+      name: topic.name,
+    });
+    if (!identity.ok) {
+      throw new BadRequestException(
+        `Bu dosya seçili kanunla uyuşmuyor — ${identity.reason} Doğru PDF'i seçtiğinden emin ol.`,
+      );
+    }
     const doc = parseDocument(raw);
     const parsedRaw = doc.articles;
     if (parsedRaw.length === 0) {
