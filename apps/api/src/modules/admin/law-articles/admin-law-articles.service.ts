@@ -8,7 +8,8 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
-import { articleSortKey, canonicalArticleNo, parseLawText } from './law-text-parser';
+import { articleSortKey, canonicalArticleNo } from './law-text-parser';
+import { parseDocument } from './law-document-parser';
 import { extractPdfLawText } from './pdf-law-text';
 
 /** Panelden PDF/metin toplu içe aktarma seçenekleri. */
@@ -348,7 +349,8 @@ export class AdminLawArticlesService {
     const legislation = await this.ensureLegislation(topic.id, topic.name);
     const isPdf = opts.filename.toLowerCase().endsWith('.pdf');
     const raw = isPdf ? await extractPdfLawText(opts.buffer) : opts.buffer.toString('utf8');
-    const parsedRaw = parseLawText(raw);
+    const doc = parseDocument(raw);
+    const parsedRaw = doc.articles;
     if (parsedRaw.length === 0) {
       throw new BadRequestException(
         'Dosyadan hiç madde çözümlenemedi (satır başında "Madde N –" bekleniyor). PDF resmî konsolide metin mi?',
@@ -399,6 +401,8 @@ export class AdminLawArticlesService {
     const report = {
       lawName: topic.name,
       parsedCount: parsed.length,
+      sectionCount: doc.sections.length,
+      titledCount: parsed.filter((a) => a.title != null).length,
       duplicates,
       taggedCount: tagged.size,
       toWriteCount: toWrite.length,
@@ -417,6 +421,36 @@ export class AdminLawArticlesService {
       ? ({ status: 'published', lastVerifiedAt: new Date() } as const)
       : ({ status: 'draft', lastVerifiedAt: null } as const);
 
+    // Kısım/Bölüm hiyerarşisi: sil-yeniden kur (idempotent; madde FK'ları
+    // SetNull ile korunur). İçindekiler bundan doğar (Doc 29 §9).
+    const sectionIds = new Map<number, string>();
+    if (doc.sections.length > 0) {
+      await this.prisma.lawArticle.updateMany({
+        where: { legislationId: legislation.id },
+        data: { sectionId: null },
+      });
+      await this.prisma.legislationSection.deleteMany({
+        where: { legislationId: legislation.id, parentId: { not: null } },
+      });
+      await this.prisma.legislationSection.deleteMany({
+        where: { legislationId: legislation.id },
+      });
+      for (const sec of doc.sections) {
+        const row = await this.prisma.legislationSection.create({
+          data: {
+            legislationId: legislation.id,
+            heading: sec.heading,
+            sortOrder: sec.order,
+            parentId:
+              sec.parentOrder != null ? sectionIds.get(sec.parentOrder) : null,
+          },
+        });
+        sectionIds.set(sec.order, row.id);
+      }
+    }
+    const sectionIdOf = (a: (typeof toWrite)[number]) =>
+      a.sectionOrder != null ? (sectionIds.get(a.sectionOrder) ?? null) : null;
+
     let written = 0;
     for (const a of toWrite) {
       await this.prisma.lawArticle.upsert({
@@ -425,6 +459,8 @@ export class AdminLawArticlesService {
           topicId: topic.id,
           articleNo: a.articleNo,
           text: a.text,
+          title: a.title,
+          sectionId: sectionIdOf(a),
           sourceName,
           sourceUrl,
           effectiveInfo,
@@ -436,6 +472,8 @@ export class AdminLawArticlesService {
         update: {
           legislationId: legislation.id,
           sortKey: articleSortKey(a.articleNo),
+          title: a.title,
+          sectionId: sectionIdOf(a),
           text: a.text,
           sourceName,
           sourceUrl,

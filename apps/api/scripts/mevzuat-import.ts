@@ -13,7 +13,7 @@
  */
 import { readFileSync } from 'node:fs';
 import { PrismaClient } from '@prisma/client';
-import { canonicalArticleNo } from '../src/modules/admin/law-articles/law-text-parser';
+import { parseDocument } from '../src/modules/admin/law-articles/law-document-parser';
 import { extractPdfLawText } from '../src/modules/admin/law-articles/pdf-law-text';
 
 const prisma = new PrismaClient();
@@ -27,127 +27,6 @@ function articleSortKey(no: string): number {
   if (prefix === 'ek') return 1_000_000 + base;
   if (prefix === 'geçici') return 2_000_000 + base;
   return base;
-}
-
-// "BİRİNCİ KISIM" / "ON YEDİNCİ BÖLÜM" — tamamı büyük harf, 1-3 kelime + tür.
-const SECTION_RE = /^\s*((?:[A-ZÇĞİÖŞÜ]+\s+){1,3})(KISIM|BÖLÜM)\s*$/;
-// Madde başlığı satırı (law-text-parser ile aynı aile).
-const ARTICLE_RE =
-  /^\s*(ek\s+madde|geçici\s+madde|madde)\s+(\d+(?:\/[0-9A-Za-zÇĞİÖŞÜçğıöşü]+)?)\s*(?:[–—\-.]\s*)?(.*)$/;
-
-interface ParsedSection {
-  kind: 'KISIM' | 'BÖLÜM';
-  heading: string; // "BİRİNCİ BÖLÜM — Amaç, Kapsam ve Tanımlar"
-  order: number;
-  parentOrder: number | null; // KISIM sırası (BÖLÜM için)
-}
-interface ParsedArt {
-  no: string;
-  title: string | null;
-  lines: string[];
-  sectionOrder: number | null;
-}
-
-function parseDocument(raw: string): { sections: ParsedSection[]; articles: ParsedArt[] } {
-  const lines = raw.split('\n');
-  const sections: ParsedSection[] = [];
-  const articles: ParsedArt[] = [];
-  let current: ParsedArt | null = null;
-  let currentKisim: number | null = null;
-  let currentSection: number | null = null;
-  let pendingSection: { kind: 'KISIM' | 'BÖLÜM' } | null = null;
-  let prevLine = '';
-
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (line.length === 0) {
-      prevLine = '';
-      continue;
-    }
-
-    // Bölüm başlığının İKİNCİ satırı: "Amaç, Kapsam ve Tanımlar".
-    if (pendingSection) {
-      const s = sections[sections.length - 1];
-      // Alt başlık makul uzunluktaysa başlığa ekle; değilse tek satır kalır.
-      if (line.length <= 90 && !ARTICLE_RE.test(line.toLocaleLowerCase('tr'))) {
-        s.heading = `${s.heading} — ${line}`;
-        pendingSection = null;
-        prevLine = '';
-        continue;
-      }
-      pendingSection = null;
-    }
-
-    const sm = SECTION_RE.exec(line);
-    if (sm) {
-      const kind = sm[2] as 'KISIM' | 'BÖLÜM';
-      const order = sections.length;
-      if (kind === 'KISIM') currentKisim = order;
-      sections.push({
-        kind,
-        heading: `${sm[1].trim()} ${kind}`,
-        order,
-        parentOrder: kind === 'BÖLÜM' ? currentKisim : null,
-      });
-      currentSection = order;
-      pendingSection = { kind };
-      // Başlıktan hemen önce yakalanmış "madde başlığı adayı" bölüme aitmiş —
-      // önceki maddenin gövdesinden zaten düşülmedi; sorun yok.
-      prevLine = '';
-      continue;
-    }
-
-    const am = ARTICLE_RE.exec(line.toLocaleLowerCase('tr'));
-    if (am) {
-      const label = am[1].replace(/\s+/, ' ');
-      const rawNo =
-        label.startsWith('ek') ? `ek ${am[2]}` :
-        label.startsWith('geçici') ? `geçici ${am[2]}` : am[2];
-      const no = canonicalArticleNo(rawNo);
-      if (no) {
-        // Madde başlığı: hemen önceki kısa, noktasız satır (resmî düzen).
-        let title: string | null = null;
-        if (
-          current &&
-          prevLine.length > 0 &&
-          prevLine.length <= 90 &&
-          !/[.:;]$/.test(prevLine) &&
-          !SECTION_RE.test(prevLine)
-        ) {
-          // PDF dipnot numaraları başlığa yapışır: "Kasten yaralama3637";
-          // Anayasa kenar başlıklarındaki "II." roman ön eki de düşer.
-          title = prevLine
-            .replace(/\d+$/, '')
-            .replace(/^[IVXLC]+\.\s*/, '')
-            .trim();
-          // Dipnot rakamı atılınca cümle olduğu ortaya çıkan satır ("…tabidir.")
-          // başlık DEĞİL, önceki maddenin devam satırıdır.
-          if (/[.:;,]$/.test(title) || title.length < 3) title = null;
-          // Önceki maddenin gövdesinin son satırıysa oradan düş.
-          const tail = current.lines[current.lines.length - 1];
-          if (tail === prevLine) current.lines.pop();
-        }
-        if (current) articles.push(current);
-        // Başlık satırının madde metni kuyruğu ("Madde 90- (1) …" kalanı):
-        // orijinal satırdan etiketi düşerek al (büyük/küçük harf korunur).
-        const restStart = line.length - am[3].length;
-        const rest = am[3].length > 0 ? line.slice(restStart) : '';
-        current = {
-          no,
-          title,
-          lines: rest ? [rest] : [],
-          sectionOrder: currentSection,
-        };
-        prevLine = '';
-        continue;
-      }
-    }
-
-    if (current) current.lines.push(line);
-    prevLine = line;
-  }
-  if (current) articles.push(current);
-  return { sections, articles };
 }
 
 function argOf(flag: string): string | null {
@@ -180,8 +59,8 @@ async function main() {
   // Mükerrer madde no: İLK geçen kazanır (dipnot artıkları gerçek metni ezmesin).
   const seen = new Set<string>();
   const unique = articles.filter((a) => {
-    if (seen.has(a.no)) return false;
-    seen.add(a.no);
+    if (seen.has(a.articleNo)) return false;
+    seen.add(a.articleNo);
     return true;
   });
 
@@ -190,7 +69,7 @@ async function main() {
     console.log(`  ${s.parentOrder != null ? '  ' : ''}§ ${s.heading}`);
   }
   for (const a of unique.slice(0, 5)) {
-    console.log(`  m.${a.no}${a.title ? ` — ${a.title}` : ''} | ${a.lines.join(' ').slice(0, 70)}…`);
+    console.log(`  m.${a.articleNo}${a.title ? ` — ${a.title}` : ''} | ${a.text.slice(0, 70)}…`);
   }
   if (!apply) {
     console.log('\n(dry-run — APPLY=1 ile yaz, PUBLISH=1 ile yayınla)');
@@ -223,14 +102,14 @@ async function main() {
 
   let written = 0;
   for (const a of unique) {
-    const text = a.lines.join('\n').trim();
+    const text = a.text;
     if (text.length === 0) continue;
     const data = {
       text,
       title: a.title,
       legislationId: leg.id,
       sectionId: a.sectionOrder != null ? (sectionIds.get(a.sectionOrder) ?? null) : null,
-      sortKey: articleSortKey(a.no),
+      sortKey: articleSortKey(a.articleNo),
       sourceName: 'mevzuat.gov.tr',
       sourceUrl: sourceUrl ?? leg.officialSourceUrl,
       effectiveInfo: effectiveInfo ?? undefined,
@@ -239,9 +118,9 @@ async function main() {
         : {}),
     };
     await prisma.lawArticle.upsert({
-      where: { topicId_articleNo: { topicId: leg.topicId, articleNo: a.no } },
+      where: { topicId_articleNo: { topicId: leg.topicId, articleNo: a.articleNo } },
       update: data,
-      create: { topicId: leg.topicId, articleNo: a.no, ...data },
+      create: { topicId: leg.topicId, articleNo: a.articleNo, ...data },
     });
     written++;
   }
