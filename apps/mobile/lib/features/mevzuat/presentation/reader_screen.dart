@@ -140,8 +140,10 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   }
 
   Future<void> _share(ReaderPayload r, ReaderArticle a) async {
-    // V1 paylaşımı: SEO'lu web sayfası (Doc 29 §14) — alan herkes açabilir.
-    final url = 'https://paemisyon.com/kanun/${r.slug}/madde/${a.slug}';
+    // V1 paylaşımı (Doc 29 §14): TAM METİN sayfası + madde çapası — anonim
+    // dahil herkes açar. (/madde/N sayfası yalnız soru-etiketli maddelerde
+    // var ve metin göstermez; paylaşım hedefi olarak KULLANILMAZ.)
+    final url = 'https://www.paemisyon.com/kanun/${r.slug}/oku#m-${a.slug}';
     final text = '${r.displayShort} Madde ${a.no} — $url';
     try {
       final box = context.findRenderObject() as RenderBox?;
