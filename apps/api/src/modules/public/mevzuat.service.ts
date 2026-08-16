@@ -47,8 +47,15 @@ function norm(s: string): string {
 export class MevzuatService {
   constructor(private readonly prisma: PrismaService) {}
 
-  // Kimlik listesi küçük (≤~100 satır) ve yavaş değişir — 5 dk process cache.
+  // Kimlik listesi küçük (≤~100 satır) — 60 sn process cache; yayınlama
+  // anında bustIdentityCache() ile anında tazelenir (metin-yakında gecikmesi
+  // yaşanmasın).
   private identityCache: { rows: LegislationRow[]; expiresAt: number } | null = null;
+
+  /** Admin yayınla/güncelle sonrası çağrılır — liste anında tazelenir. */
+  bustIdentityCache(): void {
+    this.identityCache = null;
+  }
 
   /** TÜM mevzuat kimlikleri (metinsizler dahil) — liste/arama bunları görür.
    *  Metin güvenliği okuyucuda: yalnız status=published maddeler döner. */
@@ -73,7 +80,7 @@ export class MevzuatService {
       ...r,
       articleCount: _count.articles,
     }));
-    this.identityCache = { rows, expiresAt: Date.now() + 300_000 };
+    this.identityCache = { rows, expiresAt: Date.now() + 60_000 };
     return rows;
   }
 

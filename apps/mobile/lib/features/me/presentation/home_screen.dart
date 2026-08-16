@@ -20,6 +20,7 @@ import '../../../shared/widgets/streak_badge.dart';
 import '../../catalog/presentation/focus_drilldown_sheet.dart';
 import '../../coach/data/coach_repository.dart';
 import '../../coach/domain/coach_models.dart';
+import '../../mevzuat/data/mevzuat_repository.dart';
 import '../../mevzuat/presentation/mevzuat_hero_card.dart';
 import '../../progress/data/leaderboard_repository.dart';
 import '../../progress/data/progress_repository.dart';
@@ -145,6 +146,9 @@ class HomeScreen extends ConsumerWidget {
           onRefresh: () async {
             ref.invalidate(coachBriefProvider);
             ref.invalidate(leaderboardProvider);
+            ref.invalidate(mevzuatListProvider);
+            ref.invalidate(readingProgressProvider);
+            ref.invalidate(articleBookmarksProvider);
           },
           child: _CoachBody(brief: b),
         ),

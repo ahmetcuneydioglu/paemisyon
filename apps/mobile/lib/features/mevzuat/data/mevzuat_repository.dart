@@ -452,11 +452,12 @@ class MevzuatRepository {
 final mevzuatRepositoryProvider =
     Provider<MevzuatRepository>((ref) => MevzuatRepository(ref.watch(dioProvider)));
 
-/// Liste yavaş değişir — 5 dk canlı tut (katalogdaki _cacheFor deseni).
+/// Liste — 2 dk canlı tut (yayınlama sonrası rozet gecikmesi hissedilmesin;
+/// sunucu tarafı da yayında önbelleğini anında patlatır).
 final mevzuatListProvider =
     FutureProvider.autoDispose<List<LegislationSummary>>((ref) {
   final link = ref.keepAlive();
-  final timer = Timer(const Duration(minutes: 5), link.close);
+  final timer = Timer(const Duration(minutes: 2), link.close);
   ref.onDispose(timer.cancel);
   return ref.watch(mevzuatRepositoryProvider).list();
 });

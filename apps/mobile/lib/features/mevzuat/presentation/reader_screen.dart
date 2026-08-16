@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -138,10 +139,27 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     }
   }
 
-  void _share(ReaderPayload r, ReaderArticle a) {
+  Future<void> _share(ReaderPayload r, ReaderArticle a) async {
     // V1 paylaşımı: SEO'lu web sayfası (Doc 29 §14) — alan herkes açabilir.
     final url = 'https://paemisyon.com/kanun/${r.slug}/madde/${a.slug}';
-    Share.share('${r.displayShort} Madde ${a.no} — $url');
+    final text = '${r.displayShort} Madde ${a.no} — $url';
+    try {
+      final box = context.findRenderObject() as RenderBox?;
+      await Share.share(
+        text,
+        // iPad: paylaşım popover'ı çapasız açılmaz — kart merkezine çapala.
+        sharePositionOrigin: box != null
+            ? box.localToGlobal(Offset.zero) & box.size
+            : const Rect.fromLTWH(0, 0, 1, 1),
+      );
+    } catch (_) {
+      // Eklenti/platform aksarsa sessiz kalma: bağlantıyı panoya koy.
+      await Clipboard.setData(ClipboardData(text: text));
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text('Bağlantı panoya kopyalandı.')));
+      }
+    }
   }
 
   Future<void> _openToc(ReaderPayload r) async {

@@ -8,6 +8,7 @@ import { AdminUsersService } from './users/admin-users.service';
 import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AdminExamsController } from './exams/admin-exams.controller';
 import { AdminExamsService } from './exams/admin-exams.service';
+import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 
 /**
@@ -15,7 +16,7 @@ import { ReportsModule } from '../reports/reports.module';
  * burada, panelde değil. RBAC: admin/editor (Doc 8), audit log her işlemde.
  */
 @Module({
-  imports: [ReportsModule],
+  imports: [ReportsModule, PublicModule],
   controllers: [AdminController, AdminExamsController],
   providers: [
     AuditService,

@@ -5,6 +5,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
+import { MevzuatService } from '../../public/mevzuat.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertLawArticleDto } from '../dto/law-article.dto';
@@ -43,6 +44,7 @@ export class AdminLawArticlesService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly mevzuat: MevzuatService,
   ) {}
 
   /** Soru etiketli maddesi olan kanunlar + metin kapsama sayıları (worklist). */
@@ -202,6 +204,7 @@ export class AdminLawArticlesService {
 
   /** Yayın durumunu kanun düzeyine yansıt (okunur madde varsa published). */
   private async syncLegislationStatus(topicId: string) {
+    this.mevzuat.bustIdentityCache();
     const leg = await this.prisma.legislation.findUnique({ where: { topicId } });
     if (!leg) return;
     const publishedCount = await this.prisma.lawArticle.count({
@@ -268,6 +271,7 @@ export class AdminLawArticlesService {
       where: { slug: meta.slug },
       data,
     });
+    this.mevzuat.bustIdentityCache();
     await this.audit.log(actor, 'legislation.update', 'legislation', row.id, data);
     return this.getLegislationMeta(topicId);
   }
