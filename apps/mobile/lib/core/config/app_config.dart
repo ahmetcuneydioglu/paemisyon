@@ -6,12 +6,15 @@ class AppConfig {
   const AppConfig._();
 
   /// Backend API kök adresi.
-  /// Varsayılan: Mac'in Bonjour (.local) adı — IP değişse de SABİT kalır, hem
-  /// fiziksel cihazda hem simülatörde çalışır (aynı Wi-Fi'da). Böylece geliştirmede
-  /// --dart-define gerekmez. Prod build'de gerçek URL --dart-define ile verilir.
+  ///
+  /// Varsayılan ÜRETİMDİR: mağaza/TestFlight derlemesinde `--dart-define`
+  /// unutulursa uygulama sessizce ölmesin. (Eskiden varsayılan geliştirici
+  /// Mac'inin Bonjour adıydı; bayrağı unutulan bir sürüm kullanıcıda hiç
+  /// açılmazdı.) Geliştirmede yerel sunucu için bayrağı AÇIKÇA ver:
+  ///   flutter run --dart-define=API_BASE_URL=http://<mac>.local:3000/api/v1
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'http://AHMETCND-MacBook-Pro.local:3000/api/v1',
+    defaultValue: 'https://api.paemisyon.com/api/v1',
   );
 
   /// E-posta doğrulama / şifre yenileme bağlantılarının açıldığı web kökü.
