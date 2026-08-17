@@ -61,8 +61,12 @@ export class AdminUsersService {
         isPremium: isEntitlementActive(u.entitlement),
         validUntil: u.entitlement?.validUntil ?? null,
         // Süresi dolmuş grant'i "hiç premium olmamış"tan ayırmak için (yenileme akışı).
+        // Bayrağa bakmak YETMEZ: Apple bildirimi süresi biten aboneliği
+        // isPremium=false yapar; o kullanıcı "hiç premium olmamış" gibi
+        // görünürdü. Geçmiş bir validUntil de "süresi doldu" demektir.
         premiumExpired:
-          (u.entitlement?.isPremium ?? false) && !isEntitlementActive(u.entitlement),
+          !isEntitlementActive(u.entitlement) &&
+          ((u.entitlement?.isPremium ?? false) || u.entitlement?.validUntil != null),
         createdAt: u.createdAt,
       })),
       total,

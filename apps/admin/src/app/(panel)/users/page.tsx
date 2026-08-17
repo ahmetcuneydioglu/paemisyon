@@ -113,6 +113,7 @@ export default function UsersPage() {
                   <th className="px-5 py-3 font-medium">Kullanıcı</th>
                   <th className="px-3 py-3 font-medium">Durum</th>
                   <th className="px-3 py-3 font-medium">Premium</th>
+                  <th className="px-3 py-3 font-medium">Premium bitiş</th>
                   <th className="px-3 py-3 font-medium">Kayıt</th>
                   <th className="px-3 py-3 font-medium">İşlem</th>
                 </tr>
@@ -144,15 +145,28 @@ export default function UsersPage() {
                     </td>
                     <td className="px-3 py-3">
                       {u.isPremium ? (
-                        <span className="text-xs">
-                          ⭐ {u.validUntil ? `→ ${new Date(u.validUntil).toLocaleDateString('tr-TR')}` : 'süresiz'}
-                        </span>
+                        <span className="text-xs">⭐ aktif</span>
                       ) : u.premiumExpired ? (
-                        <span className="text-xs text-amber-600">
-                          ⌛ süresi doldu ({new Date(u.validUntil!).toLocaleDateString('tr-TR')})
-                        </span>
+                        <span className="text-xs text-amber-600">⌛ süresi doldu</span>
                       ) : (
                         <span className="text-xs text-slate-400">—</span>
+                      )}
+                    </td>
+                    <td className="px-3 py-3 text-xs text-slate-600">
+                      {u.validUntil ? (
+                        // Saat de gösterilir: sandbox abonelikleri saatlik döner,
+                        // gün bazlı gösterim "bitiş yok" sanılıyordu.
+                        new Date(u.validUntil).toLocaleString('tr-TR', {
+                          day: '2-digit',
+                          month: '2-digit',
+                          year: 'numeric',
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })
+                      ) : u.isPremium ? (
+                        'süresiz'
+                      ) : (
+                        <span className="text-slate-400">—</span>
                       )}
                     </td>
                     <td className="px-3 py-3 text-xs text-slate-500">
@@ -193,7 +207,7 @@ export default function UsersPage() {
                 ))}
                 {q.data.items.length === 0 && (
                   <tr>
-                    <td colSpan={5} className="px-5 py-10 text-center text-slate-500">
+                    <td colSpan={6} className="px-5 py-10 text-center text-slate-500">
                       Kullanıcı bulunamadı.
                     </td>
                   </tr>
