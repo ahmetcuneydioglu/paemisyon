@@ -17,7 +17,18 @@ import '../domain/quiz_models.dart';
 class ResultScreen extends StatelessWidget {
   final QuizResult result;
   final bool patrol;
-  const ResultScreen({super.key, required this.result, this.patrol = false});
+
+  /// Aynı kapsamda YENİ TUR başlatmak için gereken argümanlar (/quiz extra'sı).
+  /// Null ise buton gösterilmez: deneme, tek soruluk push ve İlk Devriye
+  /// tekrarlanabilir değildir.
+  final Map<String, dynamic>? restartArgs;
+
+  const ResultScreen({
+    super.key,
+    required this.result,
+    this.patrol = false,
+    this.restartArgs,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -129,7 +140,10 @@ class ResultScreen extends StatelessWidget {
               if (result.topicBreakdown != null &&
                   result.topicBreakdown!.isNotEmpty) ...[
                 const SizedBox(height: AppSpacing.md),
-                Expanded(
+                // Flexible + shrinkWrap: tek konulu karnede kart içeriğine
+                // sarılır. Expanded'ken kart kalan tüm boşluğu kaplıyor ve
+                // ekranın yarısı bomboş görünüyordu.
+                Flexible(
                   child: Container(
                     decoration: BoxDecoration(
                       color: tokens.surface,
@@ -137,6 +151,7 @@ class ResultScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
                     ),
                     child: ListView(
+                      shrinkWrap: true,
                       padding: const EdgeInsets.all(AppSpacing.md),
                       children: [
                         Text(patrol ? 'TEŞHİS KARNESİ' : 'KONU KARNESİ',
@@ -163,12 +178,18 @@ class ResultScreen extends StatelessWidget {
               ] else
                 const Spacer(),
 
-              // ── Eve dönüş çapası + yanlış takibi ──
-              PrimaryButton(
-                  label: patrol ? 'Planımı gör' : "Bugün'e dön",
-                  onPressed: () => context.go('/')),
-              if (result.wrongCount > 0) ...[
+              // ── Devam etme yolu + eve dönüş çapası ──
+              // Akış burada bitmemeli: aynı kapsamda yeni tur tek dokunuş
+              // uzakta olsun (eskiden en baştan konu seçmek gerekiyordu).
+              if (restartArgs != null) ...[
+                PrimaryButton(
+                  label: '${restartArgs!['count'] ?? 10} soru daha çöz',
+                  onPressed: () =>
+                      context.pushReplacement('/quiz', extra: restartArgs),
+                ),
                 const SizedBox(height: AppSpacing.sm),
+              ],
+              if (result.wrongCount > 0) ...[
                 OutlinedButton(
                   onPressed: () {
                     context.go('/');
@@ -181,7 +202,23 @@ class ResultScreen extends StatelessWidget {
                   ),
                   child: Text('Yanlışları incele (${result.wrongCount})'),
                 ),
+                const SizedBox(height: AppSpacing.sm),
               ],
+              // Eve dönüş çapası (Doc 25 §2) korunur: yeni tur varken ikincil,
+              // yokken tek ve birincil eylem.
+              if (restartArgs == null)
+                PrimaryButton(
+                    label: patrol ? 'Planımı gör' : "Bugün'e dön",
+                    onPressed: () => context.go('/'))
+              else
+                TextButton(
+                  onPressed: () => context.go('/'),
+                  style: TextButton.styleFrom(
+                    minimumSize: const Size.fromHeight(44),
+                  ),
+                  child: Text("Bugün'e dön",
+                      style: AppTypography.label.copyWith(color: tokens.ink)),
+                ),
             ],
           ),
         ),

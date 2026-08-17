@@ -162,3 +162,60 @@ describe('QuizService.submitAnswer', () => {
     expect(prisma.quizAnswer.upsert).not.toHaveBeenCalled();
   });
 });
+
+/**
+ * Tazelik (kullanıcı talebi): "her seferinde farklı sorularla karşılaşması
+ * gerekiyor". Havuz görülmüş/görülmemiş diye ayrılır; banka tükenirse en
+ * ESKİ çözülen geri döner (en son çözülen en son).
+ */
+describe('QuizService.splitBySeen', () => {
+  type Q = { id: string; currentVersionId: string | null; topicId: string };
+  const q = (id: string): Q => ({ id, currentVersionId: `v-${id}`, topicId: 't1' });
+
+  function service(seen: { questionId: string; at: string }[]) {
+    const prisma = {
+      quizAnswer: {
+        groupBy: jest.fn().mockResolvedValue(
+          seen.map((s) => ({ questionId: s.questionId, _max: { answeredAt: new Date(s.at) } })),
+        ),
+      },
+    };
+    return {
+      svc: new QuizService(prisma as never, {} as never, {} as never, {} as never),
+      prisma,
+    };
+  }
+
+  it('hiç çözülmemiş havuzda hepsi taze sayılır', async () => {
+    const { svc, prisma } = service([]);
+    const r = await svc['splitBySeen']('u1', [q('a'), q('b')]);
+
+    expect(r.unseen.map((x) => x.id)).toEqual(['a', 'b']);
+    expect(r.seenOldestFirst).toHaveLength(0);
+    // Boş sonuçta gereksiz sıralama/işlem yapılmaz.
+    expect(prisma.quizAnswer.groupBy).toHaveBeenCalledTimes(1);
+  });
+
+  it('çözülenler ayrılır ve EN ESKİ çözülen başa gelir', async () => {
+    const { svc } = service([
+      { questionId: 'a', at: '2026-08-10T10:00:00Z' }, // daha eski
+      { questionId: 'c', at: '2026-08-16T10:00:00Z' }, // dün
+    ]);
+
+    const r = await svc['splitBySeen']('u1', [q('a'), q('b'), q('c'), q('d')]);
+
+    expect(r.unseen.map((x) => x.id)).toEqual(['b', 'd']);
+    expect(r.seenOldestFirst.map((x) => x.id)).toEqual(['a', 'c']);
+  });
+
+  it('yalnız bu kullanıcının cevapları sayılır', async () => {
+    const { svc, prisma } = service([]);
+    await svc['splitBySeen']('u1', [q('a')]);
+
+    expect(prisma.quizAnswer.groupBy).toHaveBeenCalledWith(
+      expect.objectContaining({
+        where: expect.objectContaining({ session: { userId: 'u1' } }),
+      }),
+    );
+  });
+});

@@ -760,6 +760,9 @@ model QuizAnswer {
 
   @@unique([sessionId, questionId])
   @@index([sessionId])
+  // Tazelik seçimi: "bu kullanıcı bu soruyu çözdü mü" sorgusu question_id
+  // üzerinden tarar — indekssiz her seans başlangıcında tam tablo taraması.
+  @@index([questionId])
   @@map("quiz_answers")
 }
 

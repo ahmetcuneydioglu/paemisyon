@@ -246,15 +246,38 @@ export class QuizService {
         );
       }
 
+      // TAZELİK (kullanıcı talebi): art arda turlarda aynı sorular gelmesin.
+      // Havuz "hiç görülmemiş" ve "görülmüş" diye ayrılır; seçim önce
+      // görülmemişten yapılır. Deneme (exam) hariç: onun seti kendi kuralıyla
+      // kurulur ve tekrar çözülebilir olması kasıtlıdır.
+      const fresh =
+        dto.mode === 'exam' ? null : await this.splitBySeen(userId, pool);
+
       // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
       // Ders kapsamı = konular arasında dengeli tur; tek konu havuzu baskılamaz.
       // Tek konu ve deneme oturumları rastgele seçime devam eder.
-      chosen =
-        dto.mode === 'practice' && dto.topicId == null && dto.courseId == null
-          ? await this.pickCoachMix(userId, pool, count)
-          : dto.mode === 'practice' && dto.courseId != null
-            ? pickTopicBalanced(pool, count, (items) => this.shuffle(items))
-            : this.shuffle(pool).slice(0, count);
+      if (dto.mode === 'practice' && dto.topicId == null && dto.courseId == null) {
+        // Koç seansının "yanlış turu" dilimi görülmüş sorulara muhtaç:
+        // havuzu daraltmak reçeteyi bozar, yalnız yeterli taze varsa daraltılır.
+        const coachPool =
+          fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
+        chosen = await this.pickCoachMix(userId, coachPool, count);
+      } else if (dto.mode === 'practice' && dto.courseId != null) {
+        const balancePool =
+          fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
+        chosen = pickTopicBalanced(balancePool, count, (items) =>
+          this.shuffle(items),
+        );
+      } else if (fresh) {
+        // Önce görülmemişler; yetmezse en ESKİ görülenlerle tamamlanır
+        // (en son çözülen soru en son geri gelir).
+        chosen = this.shuffle(fresh.unseen).slice(0, count);
+        if (chosen.length < count) {
+          chosen = [...chosen, ...fresh.seenOldestFirst.slice(0, count - chosen.length)];
+        }
+      } else {
+        chosen = this.shuffle(pool).slice(0, count);
+      }
     }
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
@@ -1156,6 +1179,38 @@ export class QuizService {
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
+  }
+
+  /**
+   * Havuzu "hiç çözülmemiş" ve "çözülmüş" diye ayırır (tazelik).
+   *
+   * Çözülmüşler EN ESKİ ÇÖZÜLEN ÖNCE sıralanır: banka tükenince geri dönen
+   * sorular en uzun süredir görülmeyenler olur — hem tekrar hissi azalır hem
+   * unutma eğrisine denk gelir. Sadece bu kullanıcının cevapları sayılır.
+   */
+  private async splitBySeen<
+    T extends { id: string; currentVersionId: string | null; topicId: string },
+  >(
+    userId: string,
+    pool: T[],
+  ): Promise<{ unseen: T[]; seenOldestFirst: T[] }> {
+    const seen = await this.prisma.quizAnswer.groupBy({
+      by: ['questionId'],
+      where: { questionId: { in: pool.map((q) => q.id) }, session: { userId } },
+      _max: { answeredAt: true },
+    });
+    if (seen.length === 0) return { unseen: pool, seenOldestFirst: [] };
+
+    const lastSeen = new Map(
+      seen.map((s) => [s.questionId, s._max.answeredAt?.getTime() ?? 0]),
+    );
+    const unseen: T[] = [];
+    const seenItems: T[] = [];
+    for (const q of pool) {
+      (lastSeen.has(q.id) ? seenItems : unseen).push(q);
+    }
+    seenItems.sort((a, b) => (lastSeen.get(a.id) ?? 0) - (lastSeen.get(b.id) ?? 0));
+    return { unseen, seenOldestFirst: seenItems };
   }
 
   /**

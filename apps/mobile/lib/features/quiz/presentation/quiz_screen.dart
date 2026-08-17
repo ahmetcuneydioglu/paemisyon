@@ -399,8 +399,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       // Rozet kazanımı gerçek dönüm noktasıdır — belirgin haptic (P2-18).
       if (result.earnedBadges.isNotEmpty) AppHaptics.celebrate();
       if (mounted) {
-        context.pushReplacement('/quiz/result',
-            extra: {'result': result, 'patrol': widget.patrol});
+        context.pushReplacement('/quiz/result', extra: {
+          'result': result,
+          'patrol': widget.patrol,
+          'restart': _restartArgs(),
+        });
       }
     } on NetworkFailure {
       _snack(
@@ -527,6 +530,28 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(m)));
     }
+  }
+
+  /// Sonuç ekranındaki "yeni tur" için aynı kapsamı üreten /quiz argümanları.
+  /// Tekrarlanabilir OLMAYAN akışlarda null: deneme (sabit set/süre), tek
+  /// soruluk bildirim seansı ve İlk Devriye (tek seferlik teşhis).
+  ///
+  /// `resumeSessionId` KASITEN taşınmaz: yeni tur yeni seans açar, biteni
+  /// yeniden açmaz. Sorular sunucuda görülmemişlerden seçilir.
+  Map<String, dynamic>? _restartArgs() {
+    final repeatable = widget.mode == 'practice' ||
+        widget.mode == 'daily' ||
+        widget.mode == 'review';
+    if (!repeatable || widget.patrol || widget.questionId != null) return null;
+    return {
+      'topicName': widget.topicName,
+      'mode': widget.mode,
+      'count': widget.questionCount,
+      if (widget.topicId != null) 'topicId': widget.topicId,
+      if (widget.courseId != null) 'courseId': widget.courseId,
+      if (widget.articleNo != null) 'articleNo': widget.articleNo,
+      if (widget.fromBookmarks) 'fromBookmarks': true,
+    };
   }
 
   String get _timerText {

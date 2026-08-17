@@ -233,6 +233,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           return ResultScreen(
             result: map['result'] as QuizResult,
             patrol: map['patrol'] as bool? ?? false,
+            restartArgs: map['restart'] as Map<String, dynamic>?,
           );
         },
       ),
