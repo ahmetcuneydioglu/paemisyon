@@ -34,7 +34,7 @@ export function MixedLawSessionCard({
             </h3>
             <p className="mt-1 text-[13px] leading-relaxed text-ink-soft">
               {lawCount} mevzuattaki {questionCount} çıkmış sorudan, kanunlar arasında dengeli bir
-              seans hazırlanır.
+              tur hazırlanır.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export function MixedLawSessionCard({
           size="lg"
           variant="atlas"
           className="w-full shrink-0 sm:w-auto"
-          aria-label={`Tüm ${courseName} konularından ${size} soruluk karışık seans başlat`}
+          aria-label={`Tüm ${courseName} konularından ${size} soruluk karışık tur başlat`}
         >
           <span>Mevzuat karışık çöz</span>
           <span aria-hidden>→</span>

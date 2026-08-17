@@ -30,12 +30,12 @@ class QuizRepository {
         '/quiz/sessions',
         data: {
           'mode': mode,
-          // Tek soruluk bildirim seansı (push derin bağlantısı).
+          // Tek soruluk bildirim turu (push derin bağlantısı).
           if (questionId != null) 'questionId': questionId,
           if (source != null) 'source': source,
           if (topicId != null) 'topicId': topicId,
           if (courseId != null) 'courseId': courseId,
-          // Madde Atlası (Doc 25 §4): maddeden seans.
+          // Madde Atlası (Doc 25 §4): maddeden tur.
           if (articleNo != null) 'articleNo': articleNo,
           // Arşiv denemesi: biten denemenin sabit seti (süre sunucudan).
           if (archiveExamId != null) 'archiveExamId': archiveExamId,
@@ -49,7 +49,7 @@ class QuizRepository {
     });
   }
 
-  /// Devam eden seans çapası (Doc 28 P0-②) — yoksa null.
+  /// Devam eden tur çapası (Doc 28 P0-②) — yoksa null.
   Future<ActiveSession?> getActiveSession() async {
     return _guard(() async {
       final r =
@@ -60,7 +60,7 @@ class QuizRepository {
     });
   }
 
-  /// Yarım seansı kaldığı yerden aç: aynı set + verilen cevaplar.
+  /// Yarım turu kaldığı yerden aç: aynı set + verilen cevaplar.
   Future<ResumedSession> resume(String sessionId) async {
     return _guard(() async {
       final r = await _dio
@@ -151,7 +151,7 @@ final quizRepositoryProvider = Provider<QuizRepository>(
   (ref) => QuizRepository(ref.watch(dioProvider)),
 );
 
-/// Devam eden seans çapası (Doc 28 P0-②) — Bugün ekranı izler.
+/// Devam eden tur çapası (Doc 28 P0-②) — Bugün ekranı izler.
 final activeSessionProvider = FutureProvider.autoDispose<ActiveSession?>(
   (ref) => ref.watch(quizRepositoryProvider).getActiveSession(),
 );

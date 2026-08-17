@@ -1,9 +1,9 @@
 import { CoachRule } from '../coach.types';
 
-/// Onboarding (Doc 24 §3): ilk 3 seans. Yeni kullanıcıyı görev listesiyle değil
+/// Onboarding (Doc 24 §3): ilk 3 tur. Yeni kullanıcıyı görev listesiyle değil
 /// tek net adımla karşıla. İki alt-hâl:
 ///  · kurulum eksik (onboardingCompleted=false) → hedef/modül seçimini tamamla,
-///  · kurulum tamam ama <3 seans → ilk devriyeye çık (küçük ilk zafer).
+///  · kurulum tamam ama <3 tur → ilk devriyeye çık (küçük ilk zafer).
 /// Ton (Doc 26 §1): karşılayıcı, umut veren — suç/aciliyet dili yok.
 /// Priority 88: canlı deneme (90+) yeni kullanıcıyı da çağırabilir, onun altında;
 /// ama günlük görev/motivasyon kartlarının üstünde hero olur.

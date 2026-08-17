@@ -14,7 +14,7 @@ import '../data/catalog_repository.dart';
 import '../domain/catalog_models.dart';
 
 /// Madde Atlası — FETİH HARİTASI (Doc 25 §4, Doc 24 §10 fikir 2):
-/// kanunu madde madde temizleme. Madde çipine dokun → o maddeden seans;
+/// kanunu madde madde temizleme. Madde çipine dokun → o maddeden tur;
 /// maddenin tüm soruları en az bir kez doğru çözülünce madde "fethedilir".
 class AtlasScreen extends ConsumerWidget {
   final String topicId;
@@ -114,7 +114,7 @@ class _Body extends ConsumerWidget {
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                'Maddeye dokun → o maddeden seans. Tüm soruları doğru '
+                'Maddeye dokun → o maddeden tur. Tüm soruları doğru '
                 'çözülen madde fethedilir.',
                 style: AppTypography.caption.copyWith(color: tokens.inkSoft),
               ),

@@ -100,7 +100,7 @@ export class ProgressService {
         },
       });
 
-      // Konu ilerlemesi CEVAP bazında yazılır (karışık ders/koç seansları da
+      // Konu ilerlemesi CEVAP bazında yazılır (karışık ders/koç turları da
       // mastery biriktirir). Tüm konular tek toplu upsert'te; mastery her iki
       // dalda da (insert/update) TOPLAM üzerinden hesaplanır — eski satır-satır
       // upsert ile birebir aynı sonuç.

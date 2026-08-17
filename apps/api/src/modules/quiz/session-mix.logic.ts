@@ -6,7 +6,7 @@
  * yeni konu durur → ~%50 yanlış tekrarı + ~%30 zayıf + ~%20 karışık pekiştirme.
  *
  * "Neye bakılacağını koç seçer": kotalar havuz yetersizse kalan dilimlere
- * devredilir — seans HER ZAMAN istenen sayıda soruyla dolar (havuz yettiğince).
+ * devredilir — tur HER ZAMAN istenen sayıda soruyla dolar (havuz yettiğince).
  */
 
 export interface MixQuota {
@@ -77,7 +77,7 @@ export function pickMix<T extends { id: string; topicId: string }>(
 }
 
 /**
- * Ders kapsamındaki karışık seansı konu bazında dengeler. Büyük soru bankasına
+ * Ders kapsamındaki karışık turu konu bazında dengeler. Büyük soru bankasına
  * sahip tek bir konunun oturumu ele geçirmesini önler; her turda her konudan en
  * fazla bir soru alır, sonra hâlâ sorusu olan konularla yeni tura geçer.
  */

@@ -89,7 +89,7 @@ type Phase =
   | { kind: "done"; result: CompleteResponse };
 
 /**
- * Seans Oynatıcı — TEK çalışma odası (Doc 25 Karar 1, Doc 27 §3.6, wireframe 08).
+ * Tur Oynatıcı — TEK çalışma odası (Doc 25 Karar 1, Doc 27 §3.6, wireframe 08).
  * L3 Odak: kabuk yok; klavye birincil giriş (1-4 şık, Enter sonraki, Esc çıkış).
  * Değerlendirme SUNUCUDA; istemci yalnız gösterir.
  */
@@ -106,11 +106,11 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   } | null>(null);
   const [answerError, setAnswerError] = useState<string | null>(null);
   const [exitAsk, setExitAsk] = useState(false);
-  // Oturum içi not (wireframe 08): kaydedilmez, seansla yaşar.
+  // Oturum içi not (wireframe 08): kaydedilmez, turla yaşar.
   const [note, setNote] = useState("");
   // Favoriler (F) — bookmark API'sine yazılır; oturum içi anlık durum.
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
-  // "M ile aç" — ilgili maddeyi sağ panelde göster (seanstan çıkmadan, Doc 27 §3.6).
+  // "M ile aç" — ilgili maddeyi sağ panelde göster (turdan çıkmadan, Doc 27 §3.6).
   const [maddeOpen, setMaddeOpen] = useState(false);
   // AI koç (Doc 28 P3-21 — mobildeki "Koça sor" web'e): yanlış cevapta
   // çeldirici analizi. Soru bazlı durum; önbellekli üretim sunucuda.
@@ -122,7 +122,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       | { status: "error"; message: string; limit: boolean }
     >
   >({});
-  // Hata bildir (wireframe 08) — seanstan ÇIKMADAN yerinde bildirim; /questions/:id/report'a yazar.
+  // Hata bildir (wireframe 08) — turdan ÇIKMADAN yerinde bildirim; /questions/:id/report'a yazar.
   const [reportOpen, setReportOpen] = useState(false);
   const [reportText, setReportText] = useState("");
   const [reportState, setReportState] = useState<
@@ -132,7 +132,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const startedRef = useRef(false);
   const answerInFlight = useRef(false);
 
-  // ── Seans başlat ──
+  // ── Tur başlat ──
   useEffect(() => {
     if (startedRef.current) return; // StrictMode çift çağrısına karşı
     startedRef.current = true;
@@ -141,7 +141,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       setPhase({
         kind: "error",
         code: err?.code ?? "UNKNOWN",
-        message: err?.message ?? "Seans başlatılamadı.",
+        message: err?.message ?? "Tur başlatılamadı.",
       });
     };
     if (scope.resumeId) {
@@ -199,7 +199,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       .catch(fail);
   }, [scope]);
 
-  // Favori durumunu tohumla — önceden yıldızlanmış sorular bu seansta da ★ görünsün.
+  // Favori durumunu tohumla — önceden yıldızlanmış sorular bu turda da ★ görünsün.
   // (Aksi halde bookmarks boş başlar ve favorideki soru "☆ Favorile" görünürdü.)
   useEffect(() => {
     let alive = true;
@@ -337,7 +337,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     [aiState],
   );
 
-  // ── Hata bildir — mevcut soruyu /questions/:id/report'a bildirir; seanstan çıkmaz ──
+  // ── Hata bildir — mevcut soruyu /questions/:id/report'a bildirir; turdan çıkmaz ──
   const submitReport = useCallback(
     async (questionId: string) => {
       const msg = reportText.trim();
@@ -404,7 +404,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
 
   if (phase.kind === "loading") {
     return (
-      <FocusFrame label={scope.label ?? "Koç seansı"}>
+      <FocusFrame label={scope.label ?? "Koç turu"}>
         <div className="mx-auto max-w-2xl space-y-3 py-10" aria-busy>
           <div className="h-5 w-2/3 animate-pulse rounded-sm bg-line" />
           {[0, 1, 2, 3].map((i) => (
@@ -418,7 +418,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   if (phase.kind === "error") {
     const isLimit = phase.code === "DAILY_LIMIT_REACHED";
     return (
-      <FocusFrame label={scope.label ?? "Koç seansı"}>
+      <FocusFrame label={scope.label ?? "Koç turu"}>
         <div className="mx-auto max-w-md py-16 text-center">
           {/* Limit duvarı — Doc 25 akış H: "koç seni durdurmak istemiyor" çerçevesi */}
           <p className="text-3xl" aria-hidden>
@@ -444,7 +444,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   }
 
   if (phase.kind === "done") {
-    // Bu seansta karşılaşılan tekil maddeler (İlgili maddeleri oku için).
+    // Bu turda karşılaşılan tekil maddeler (İlgili maddeleri oku için).
     const seenArticles = new Map<string, { lawSlug: string; no: string; slug: string }>();
     for (const f of Object.values(feedback)) {
       if (f.relatedArticle) seenArticles.set(`${f.relatedArticle.lawSlug}/${f.relatedArticle.slug}`, f.relatedArticle);
@@ -470,7 +470,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
           ? "Yanlış tekrarı — en eski yanlışların önce"
           : scope.mode === "favorites"
             ? "Favorilerim — yıldızladığın sorular"
-            : "Koç seansı — zayıf konuların, yanlışların ve yeni sorular")
+            : "Koç turu — zayıf konuların, yanlışların ve yeni sorular")
       }
       right={
         <span className="tabular rounded-full border border-line px-3 py-1 text-[13px] font-bold text-ink">
@@ -679,7 +679,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                   ⚑ Hata bildir
                 </button>
               </div>
-              {/* Yerinde hata bildir paneli — seanstan çıkmadan (Doc 27 §3.6) */}
+              {/* Yerinde hata bildir paneli — turdan çıkmadan (Doc 27 §3.6) */}
               {reportOpen && (
                 <div className="rounded-sm border border-danger/30 bg-danger/5 p-3">
                   {reportState === "done" || reportState === "already" ? (
@@ -733,7 +733,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
               )}
               <div className="flex justify-end">
                 <Button size="lg" onClick={next} disabled={phase.kind === "finishing"}>
-                  {isLast ? "Seansı bitir" : "Sonraki soru"}
+                  {isLast ? "Turu bitir" : "Sonraki soru"}
                   <kbd className="rounded border border-current/30 px-1.5 text-[11px]" aria-hidden>
                     ⏎
                   </kbd>
@@ -743,10 +743,10 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
           )}
         </div>
 
-        {/* Yardımcı panel: seans akışı + kısayollar */}
+        {/* Yardımcı panel: tur akışı + kısayollar */}
         <aside className="max-lg:hidden">
           <Card>
-            <CardTitle className="text-[13px]">Seans akışı</CardTitle>
+            <CardTitle className="text-[13px]">Tur akışı</CardTitle>
             <div className="mt-2 grid grid-cols-5 gap-1.5" aria-hidden>
               {data!.questions.map((q, i) => {
                 const f = feedback[q.questionId];
@@ -771,7 +771,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
             <p className="tabular mt-2 text-[12px] text-ink-soft">{answeredCount} cevaplandı</p>
           </Card>
 
-          {/* İlgili madde inspector'ı — M ile açılır, seanstan çıkmadan (Doc 27 §3.6) */}
+          {/* İlgili madde inspector'ı — M ile açılır, turdan çıkmadan (Doc 27 §3.6) */}
           {maddeOpen && fb?.relatedArticle && (
             <Card className="mt-3 border-atlas/40">
               <div className="flex items-start justify-between gap-2">
@@ -823,13 +823,13 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         <div
           role="alertdialog"
           aria-modal="true"
-          aria-label="Seanstan çık"
+          aria-label="Turdan çık"
           className="fixed inset-0 z-50 grid place-items-center bg-ink/40 p-4"
         >
           <Card className="w-full max-w-sm p-6">
-            <CardTitle>Seanstan çıkıyor musun?</CardTitle>
+            <CardTitle>Turdan çıkıyor musun?</CardTitle>
             <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
-              Cevapların kaydedildi; hedefe sayılması için seansın tamamlanması gerekir.
+              Cevapların kaydedildi; hedefe sayılması için turun tamamlanması gerekir.
             </p>
             <div className="mt-5 flex justify-end gap-2">
               <Button variant="ghost" onClick={() => setExitAsk(false)}>
@@ -876,7 +876,7 @@ function FocusFrame({
           <button
             type="button"
             onClick={onExit}
-            aria-label="Seanstan çık"
+            aria-label="Turdan çık"
             className="tk-interactive grid size-8 cursor-pointer place-items-center rounded-sm text-ink-soft hover:bg-line/40 hover:text-ink"
           >
             ✕
@@ -899,7 +899,7 @@ function FocusFrame({
   );
 }
 
-/** Seans Sonucu (Doc 27 §3.7, wireframe 09): skor + kırılım + tek eve dönüş çapası. */
+/** Tur Sonucu (Doc 27 §3.7, wireframe 09): skor + kırılım + tek eve dönüş çapası. */
 function SessionResult({
   result,
   scopeLabel,
@@ -922,12 +922,12 @@ function SessionResult({
     .sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
 
   return (
-    <FocusFrame label={scopeLabel ?? "Seans sonucu"}>
+    <FocusFrame label={scopeLabel ?? "Tur sonucu"}>
       <div className="mx-auto grid max-w-4xl gap-4 px-6 lg:grid-cols-2">
         <div className="space-y-4">
           <Card className="p-6 text-center">
             <p className="tk-caption">
-              {scopeLabel ?? "Koç seansı"} · {minutes} dk
+              {scopeLabel ?? "Koç turu"} · {minutes} dk
             </p>
             <p className="tabular mt-2 font-heading text-5xl font-bold text-ink">
               {result.correctCount}
@@ -958,7 +958,7 @@ function SessionResult({
             <ButtonLink href="/bugun" size="lg">
               Bugün&apos;e dön
             </ButtonLink>
-            {/* Yanlış varsa (ve zaten tekrar seansı değilse) doğrudan review'a köprü */}
+            {/* Yanlış varsa (ve zaten tekrar turu değilse) doğrudan review'a köprü */}
             {result.wrongCount > 0 && !isReview && (
               <ButtonLink
                 href={`/seans?mode=review&scope=${encodeURIComponent("Yanlış tekrarı")}`}
@@ -969,17 +969,17 @@ function SessionResult({
               </ButtonLink>
             )}
             {/* Değişen `n` nonce'u → yeni URL + yeni key → oynatıcı remount →
-                sunucudan taze (shuffle'lı) koç seansı. Aynı /seans'a Link no-op olurdu. */}
+                sunucudan taze (shuffle'lı) koç turu. Aynı /seans'a Link no-op olurdu. */}
             <Button
               variant="ghost"
               size="lg"
               onClick={() => router.push(`/seans?n=${Date.now()}`)}
             >
-              Yeni seans
+              Yeni tur
             </Button>
           </div>
 
-          {/* İlgili maddeleri oku (wireframe 09): bu seansta geçen mevzuat maddeleri */}
+          {/* İlgili maddeleri oku (wireframe 09): bu turda geçen mevzuat maddeleri */}
           {articles.length > 0 && (
             <Card>
               <CardTitle className="text-[13px]">İlgili maddeleri oku</CardTitle>
@@ -1029,7 +1029,7 @@ function SessionResult({
             </table>
           ) : (
             <p className="mt-2 text-[14px] text-ink-soft">
-              Tek konuluk seans — kırılım yok. Doğru {result.correctCount}, yanlış{" "}
+              Tek konuluk tur — kırılım yok. Doğru {result.correctCount}, yanlış{" "}
               {result.wrongCount}, boş {result.blankCount}.
             </p>
           )}

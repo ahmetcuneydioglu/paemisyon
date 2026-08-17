@@ -40,7 +40,7 @@ class ComponentGallery extends StatelessWidget {
               title: 'Serin 3 saat içinde bozuluyor',
               body: '5 soru yeter — 3 dakika.',
               leading: '⚠️',
-              ctaLabel: 'Mini seans (5 soru)',
+              ctaLabel: 'Mini tur (5 soru)',
               onCta: _noop,
             ),
             const SizedBox(height: AppSpacing.sm),
@@ -112,7 +112,7 @@ class ComponentGallery extends StatelessWidget {
           ]),
           _section('SessionResultHeader', [
             const SessionResultHeader(
-                score: '12/15', subtitle: 'CMK odaklı seans · 14 dk'),
+                score: '12/15', subtitle: 'CMK odaklı tur · 14 dk'),
           ]),
           _section('MasteryBar — eşikler', [
             const MasteryBar(value: 0.31),
@@ -174,7 +174,7 @@ class ComponentGallery extends StatelessWidget {
               child: EmptyStateView(
                 icon: Icons.quiz_outlined,
                 message: 'Henüz yanlışın yok — çözdükçe burada birikecek.',
-                actionLabel: 'Seans başlat',
+                actionLabel: 'Tur başlat',
                 onAction: _noop,
               ),
             ),

@@ -15,7 +15,7 @@ import '../domain/catalog_models.dart';
 
 /// Ders detay — ÖĞRENME MERKEZİ (Doc 25 wireframe 05): dersin tek yaşayan
 /// mekânı. Kişisel katman en üstte (hakimiyet + açık yanlışlar), konular
-/// hakimiyet çubuklarıyla, "bu dersten seans" tek dokunuş.
+/// hakimiyet çubuklarıyla, "bu dersten tur" tek dokunuş.
 class TopicsScreen extends ConsumerWidget {
   final String courseId;
   final String courseName;
@@ -91,13 +91,13 @@ class _Body extends ConsumerWidget {
                 course.solvedCount > 0
                     ? '${course.solvedCount} soru çözdün'
                         '${course.unresolvedWrongCount > 0 ? ' · ${course.unresolvedWrongCount} açık yanlışın var' : ''}'
-                    : 'Bu derste henüz soru çözmedin — ilk seansla harita başlar.',
+                    : 'Bu derste henüz soru çözmedin — ilk turla harita başlar.',
                 style: AppTypography.caption.copyWith(color: tokens.inkSoft),
               ),
               const SizedBox(height: AppSpacing.md),
               FilledButton(
                 onPressed: () => _startCourseSession(context, ref),
-                child: const Text('Bu dersten seans başlat'),
+                child: const Text('Bu dersten tur başlat'),
               ),
             ],
           ),
@@ -106,7 +106,7 @@ class _Body extends ConsumerWidget {
 
         // ── Karma mevzuat antrenmanı (Doc 28 P1-8): ders yasa ağırlıklıysa ──
         // courseId+practice sunucuda konu-dengeli karışır (pickTopicBalanced):
-        // büyük kanun seansı ele geçiremez, her kanundan sırayla gelir.
+        // büyük kanun turu ele geçiremez, her kanundan sırayla gelir.
         if (course.topics.where((t) => t.isLaw).length >= 2) ...[
           InkWell(
             onTap: () => _startCourseSession(context, ref),
@@ -176,7 +176,7 @@ class _Body extends ConsumerWidget {
     );
   }
 
-  /// "Bu dersten seans": ders geneli alıştırma — Odak'ın ders kapısı (Doc 25 §5).
+  /// "Bu dersten tur": ders geneli alıştırma — Odak'ın ders kapısı (Doc 25 §5).
   void _startCourseSession(BuildContext context, WidgetRef ref) {
     context.push('/quiz', extra: {
       'courseId': courseId,

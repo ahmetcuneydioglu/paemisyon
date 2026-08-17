@@ -70,7 +70,7 @@ export class QuizService {
       return this.startPersonalExam(user, dto.questionCount ?? 100);
     }
 
-    // Tek soruluk bildirim seansı (Faz 2): panelden gönderilen push'un
+    // Tek soruluk bildirim turu (Faz 2): panelden gönderilen push'un
     // hedefi. Practice kurallarıyla çalışır — cevap SONRASI açıklama görünür,
     // istatistiklere normal işlenir; anahtar önceden sızmaz.
     if (dto.questionId != null) {
@@ -87,7 +87,7 @@ export class QuizService {
 
     // Kapsam kuralları (Doc 25 §5 — Odak modeli):
     // exam: konu VEYA ders zorunlu (süre havuza göre kurulur).
-    // practice: konu / ders / KAPSAMSIZ (karışık — İlk Devriye ve koç seansı).
+    // practice: konu / ders / KAPSAMSIZ (karışık — İlk Devriye ve koç turu).
     if (dto.topicId != null && dto.courseId != null) {
       throw new BadRequestException('topicId ve courseId birlikte verilemez.');
     }
@@ -108,7 +108,7 @@ export class QuizService {
     const isPremiumUser = user.isPremium;
 
     // HEDEF SINAV KAPSAMI (kullanıcı isteği: PAEM hedefleyene Misyon konusu
-    // gelmesin): kapsamsız koç seansı ve yanlış tekrarı, kullanıcının hedef
+    // gelmesin): kapsamsız koç turu ve yanlış tekrarı, kullanıcının hedef
     // sınavının (preferredModule) müfredatıyla sınırlanır. Hedef seçilmemişse
     // eski davranış (tüm müfredat). Kütüphaneden BİLİNÇLİ konu/ders seçimi
     // filtrelenmez — kullanıcı ne istediğini biliyor.
@@ -143,7 +143,7 @@ export class QuizService {
         topicId: dto.topicId,
         deletedAt: null,
         currentVersionId: { not: null },
-        // Madde Atlası: maddeden seans — havuz tek maddeye daralır.
+        // Madde Atlası: maddeden tur — havuz tek maddeye daralır.
         ...(dto.articleNo ? { articleNo: dto.articleNo } : {}),
       };
     } else if (dto.courseId != null) {
@@ -159,7 +159,7 @@ export class QuizService {
         },
       };
     } else {
-      // Kapsamsız karışık (İlk Devriye / koç seansı): tüm MÜFREDAT havuzu —
+      // Kapsamsız karışık (İlk Devriye / koç turu): tüm MÜFREDAT havuzu —
       // yalnız bir sınav bölümüne bağlı derslerin konuları (Doc 21).
       poolWhere = {
         deletedAt: null,
@@ -257,7 +257,7 @@ export class QuizService {
       // Ders kapsamı = konular arasında dengeli tur; tek konu havuzu baskılamaz.
       // Tek konu ve deneme oturumları rastgele seçime devam eder.
       if (dto.mode === 'practice' && dto.topicId == null && dto.courseId == null) {
-        // Koç seansının "yanlış turu" dilimi görülmüş sorulara muhtaç:
+        // Koç turunun "yanlış turu" dilimi görülmüş sorulara muhtaç:
         // havuzu daraltmak reçeteyi bozar, yalnız yeterli taze varsa daraltılır.
         const coachPool =
           fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
@@ -591,7 +591,7 @@ export class QuizService {
     };
   }
 
-  /** Tek soruluk seans (bildirim derin bağlantısı): yayındaki soru practice
+  /** Tek soruluk tur (bildirim derin bağlantısı): yayındaki soru practice
    *  kurallarıyla açılır — çöz → anlık geri bildirim + açıklama. */
   private async startSingleQuestion(userId: string, questionId: string, source?: string) {
     const q = await this.prisma.question.findFirst({
@@ -997,7 +997,7 @@ export class QuizService {
         : Promise.resolve(null),
     ]);
 
-    // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç seansı,
+    // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç turu,
     // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
     let topicBreakdown:
       { topicId: string; topicName: string; correct: number; total: number }[] | null = null;
@@ -1035,7 +1035,7 @@ export class QuizService {
   }
 
   /**
-   * Devam eden seans çapası (Doc 27 §2.4, Doc 25 §7 emniyet 3): kullanıcının
+   * Devam eden tur çapası (Doc 27 §2.4, Doc 25 §7 emniyet 3): kullanıcının
    * en son yarım kalan çalışma oturumu. Deneme (randevulu) hariç — onun kendi
    * devam akışı var (exams/start).
    */
@@ -1214,7 +1214,7 @@ export class QuizService {
   }
 
   /**
-   * Koç seansı karışımı (Doc 24 §9, Doc 25 §5 — saf mantık session-mix.logic).
+   * Koç turu karışımı (Doc 24 §9, Doc 25 §5 — saf mantık session-mix.logic).
    * Kullanıcı verisi 3 sorguyla toplanır; sınava ≤30 gün kala reçete tersine
    * döner (yeni konu durur, yanlış turu ağırlaşır).
    */

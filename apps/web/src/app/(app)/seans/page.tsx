@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SessionPlayer } from "@/components/session/session-player";
 
-export const metadata: Metadata = { title: "Seans", robots: { index: false } };
+export const metadata: Metadata = { title: "Tur", robots: { index: false } };
 
 /**
  * /seans — L3 Odak (Doc 27): kabuksuz tek çalışma odası. Kapsam (Odak modeli)
@@ -16,8 +16,8 @@ export default async function SeansPage({
   const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
   const count = Number.parseInt(one(p.count) ?? "", 10);
 
-  // Query seti değişince oynatıcı REMOUNT olur → taze seans başlar. Aksi halde
-  // aynı /seans'a gitmek (ör. done ekranından "Yeni seans") remount tetiklemez
+  // Query seti değişince oynatıcı REMOUNT olur → taze tur başlar. Aksi halde
+  // aynı /seans'a gitmek (ör. done ekranından "Yeni tur") remount tetiklemez
   // ve startedRef guard'ı yüzünden hiçbir şey açılmaz. `n` nonce'u bunu çözer.
   const sessionKey = [
     one(p.topicId),

@@ -18,7 +18,7 @@ interface WrongRow {
 /**
  * Yanlışlarım (Doc 25 Bölge 2): tüm çözülmemiş yanlışların tek kuyruğu.
  * "Hatalarım kaybolmasın" — doğru çözülen soru kuyruktan kendiliğinden düşer.
- * Free: tekrar seansı son 7 günün yanlışlarından; premium: süresiz hafıza.
+ * Free: tekrar turu son 7 günün yanlışlarından; premium: süresiz hafıza.
  */
 export default async function YanlislarPage() {
   const rows = await api<WrongRow[]>("/review/wrong-answers").catch(() => [] as WrongRow[]);
@@ -57,7 +57,7 @@ export default async function YanlislarPage() {
             <ButtonLink
               href={`/seans?mode=review&count=${Math.min(10, rows.length)}&scope=${encodeURIComponent("Yanlış tekrarı")}`}
             >
-              {Math.min(10, rows.length)} soruluk tekrar seansı
+              {Math.min(10, rows.length)} soruluk tekrar turu
             </ButtonLink>
           )}
         </div>
@@ -94,11 +94,11 @@ export default async function YanlislarPage() {
             <p className="text-2xl" aria-hidden>✨</p>
             <CardTitle className="mt-2">Çözülmemiş yanlışın yok</CardTitle>
             <p className="mx-auto mt-1 max-w-[44ch] text-[14px] text-ink-soft">
-              Seanslarda yanlış yaptığın her soru buraya düşer; doğru çözene kadar seni bekler.
+              Turlarda yanlış yaptığın her soru buraya düşer; doğru çözene kadar seni bekler.
             </p>
             <div className="mt-4">
               <ButtonLink href="/seans" variant="secondary">
-                Koç seansı başlat
+                Koç turu başlat
               </ButtonLink>
             </div>
           </Card>

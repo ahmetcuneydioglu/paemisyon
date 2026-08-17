@@ -13,7 +13,7 @@ describe('mixQuota (Doc 25 §5 reçetesi)', () => {
   it('sınav modunda tersine döner: yanlış ağırlıklı, yeni azalır (Doc 24 §1)', () => {
     expect(mixQuota(20, true)).toEqual({ wrong: 10, weak: 6, fresh: 4 });
   });
-  it('küçük seansta toplam korunur', () => {
+  it('küçük turda toplam korunur', () => {
     const s = mixQuota(5, false);
     expect(s.wrong + s.weak + s.fresh).toBe(5);
   });
@@ -37,7 +37,7 @@ describe('pickMix', () => {
     expect(out.map((x) => x.id)).toEqual(['w1', 'w2', 'z1', 'z2', 'n1', 'n2']);
   });
 
-  it('yanlış havuzu boşsa kota zayıfa devredilir — seans yine dolar', () => {
+  it('yanlış havuzu boşsa kota zayıfa devredilir — tur yine dolar', () => {
     const noWrong: MixPools = { ...pools, wrongIds: new Set() };
     const out = pickMix(6, noWrong, { wrong: 2, weak: 2, fresh: 2 }, identity);
     expect(out).toHaveLength(6);
@@ -55,7 +55,7 @@ describe('pickMix', () => {
     expect(out.map((x) => x.id).sort()).toEqual(['a', 'b']);
   });
 
-  it('her şey heavy ise bile seans dolar (son çare dilimi)', () => {
+  it('her şey heavy ise bile tur dolar (son çare dilimi)', () => {
     const allHeavy: MixPools = {
       pool: [q('h1', 'tH'), q('h2', 'tH'), q('h3', 'tH')],
       wrongIds: new Set(),

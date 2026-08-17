@@ -18,7 +18,7 @@ import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
 
 /// Deneme sonucu + inceleme (Doc 18 §2.4, Doc 28 P1-9). Puan = NET.
-/// İnceleme, seans oynatıcıyla AYNI dili konuşur: OptionRow durumları
+/// İnceleme, tur oynatıcıyla AYNI dili konuşur: OptionRow durumları
 /// (correct/wrongPick/dimmed) + ExplanationBox — ham renk kullanılmaz.
 class ExamResultScreen extends ConsumerWidget {
   final String attemptId;
@@ -289,7 +289,7 @@ class _StatCell extends StatelessWidget {
 }
 
 /// Konu kırılımı (Doc 27 wireframe 11) — "kaybettirenler üstte": her kayıplı
-/// satırdan tek tıkla kapatma seansı. Kayıp net = yanlış×1,25 + boş.
+/// satırdan tek tıkla kapatma turu. Kayıp net = yanlış×1,25 + boş.
 class _TopicBreakdownCard extends StatelessWidget {
   final List<AttemptTopicRow> rows;
   const _TopicBreakdownCard({required this.rows});
@@ -371,7 +371,7 @@ class _TopicBreakdownCard extends StatelessWidget {
           ],
           const SizedBox(height: AppSpacing.xs),
           Text(
-            '"Kapat" o konudan seans başlatır; yanlışların zaten tekrar kuyruğunda.',
+            '"Kapat" o konudan tur başlatır; yanlışların zaten tekrar kuyruğunda.',
             style: AppTypography.caption.copyWith(color: tokens.inkSoft),
           ),
         ],

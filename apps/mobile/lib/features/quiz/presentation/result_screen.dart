@@ -10,7 +10,7 @@ import '../../../shared/widgets/primary_button.dart';
 import '../../../shared/widgets/session_result_header.dart';
 import '../domain/quiz_models.dart';
 
-/// Seans Sonucu (Doc 25 §2, wireframe 04): skor değil sonraki adım satar.
+/// Tur Sonucu (Doc 25 §2, wireframe 04): skor değil sonraki adım satar.
 /// Eve dönüş çapası: birincil buton her zaman Bugün'e döner.
 /// [patrol] = İlk Devriye (Doc 24 Gün 0, Doc 28 P2-14): aynı ekran TEŞHİS
 /// çerçevesine döner — "not değil başlangıç noktası"; karne öne çıkar.
@@ -232,12 +232,12 @@ class ResultScreen extends StatelessWidget {
     final wrong = result.wrongCount;
     final pct = result.score.round();
     if (wrong == 0 && result.correctCount > 0) {
-      return 'Hatasız seans — %$pct. Bu konuda tekrarı hak ettin: yarın kısa bir pekiştirme yeter.';
+      return 'Hatasız tur — %$pct. Bu konuda tekrarı hak ettin: yarın kısa bir pekiştirme yeter.';
     }
     if (wrong > 0) {
       return '$wrong yanlışını yarınki tekrar kuyruğuna ekledim — kaybolmazlar. Bugünkü isabet: %$pct.';
     }
-    return 'Seans tamamlandı. Yarın kaldığın yerden devam.';
+    return 'Tur tamamlandı. Yarın kaldığın yerden devam.';
   }
 
   /// Teşhis dili (Doc 24 Gün 0): en zayıf konu = ilk hedef; suçlama yok.

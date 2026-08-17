@@ -2,7 +2,7 @@ import type { ReviewQuestion } from "@/lib/types";
 import { OptionRow, type OptionState } from "@/components/ui/option-row";
 
 /**
- * Cevap incelemesi — seans/deneme oynatıcısıyla AYNI tasarım dili (tk token
+ * Cevap incelemesi — tur/deneme oynatıcısıyla AYNI tasarım dili (tk token
  * + OptionRow durumları). Eski 2 sütunlu miras düzen (QuestionColumns +
  * option-bar CSS'i) söküldü: kartlar grid'de bağımsızdır, iç içe geçmez,
  * mobilde tek sütuna düşer. showAnswers=false ise (sınav-sonrası serbest

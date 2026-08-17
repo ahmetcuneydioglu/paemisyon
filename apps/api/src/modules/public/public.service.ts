@@ -139,7 +139,7 @@ export class PublicService {
   }
 
   // ── Günün Quizi (girişsiz funnel) ─────────────────────────────
-  // Girişli `daily` seansıyla AYNI 10 gün-tohumlu soru (common/daily-select.logic).
+  // Girişli `daily` turuyla AYNI 10 gün-tohumlu soru (common/daily-select.logic).
   // Liste cevapsız; cevap tek-tek revealDailyQuiz ile (yalnız bugünün 10'u).
   private dailyQuizCache: { key: string; ids: string[] } | null = null;
   private async dailyQuizIds(): Promise<string[]> {
@@ -369,7 +369,7 @@ export class PublicService {
     const readableIds = new Set(readableRows.map((r) => r.topicId));
     return topics.map((t) => ({
       slug: slugify(t.name),
-      /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
+      /** Girişli derinlik (Doc 27 W2): atlas + tur başlatma için konu kimliği. */
       topicId: t.id,
       courseId: t.course.id,
       name: t.name,

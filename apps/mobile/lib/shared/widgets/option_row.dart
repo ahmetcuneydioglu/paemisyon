@@ -5,7 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/theme/app_typography.dart';
 
-/// Şık satırı (Doc 26 §4 #5) — Seans ve Deneme Oynatıcı'nın çekirdeği.
+/// Şık satırı (Doc 26 §4 #5) — Tur ve Deneme Oynatıcı'nın çekirdeği.
 /// Doğru/yanlış renk değişimi ANINDA verilir (Doc 26 §3.4 — öğrenme anında
 /// gecikme olmaz); yalnız dokunma geri bildirimi `quick` animasyonludur.
 /// Renk tek başına anlam taşımaz: durum ikonla da verilir (Doc 26 §5).

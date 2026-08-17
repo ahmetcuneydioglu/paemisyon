@@ -4,7 +4,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/theme/app_typography.dart';
 
-/// Seans/deneme sonucu başlığı (Doc 26 §4 #9): display skor + alt etiket.
+/// Tur/deneme sonucu başlığı (Doc 26 §4 #9): display skor + alt etiket.
 /// Skor sıfat değil rakamla konuşur (ton rehberi §1.1).
 class SessionResultHeader extends StatelessWidget {
   /// "12/15" veya "62,25 net".

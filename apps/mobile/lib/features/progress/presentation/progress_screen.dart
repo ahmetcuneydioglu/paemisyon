@@ -15,7 +15,7 @@ import '../../../shared/widgets/mastery_bar.dart';
 import '../data/progress_repository.dart';
 
 /// Performans (Doc 25 bölge 4): tek bakışta durum + KONU HARİTASI —
-/// ders bazlı gruplu güç/zaaf haritası; satıra dokun → kapatma seansı.
+/// ders bazlı gruplu güç/zaaf haritası; satıra dokun → kapatma turu.
 class ProgressScreen extends ConsumerWidget {
   const ProgressScreen({super.key});
 
@@ -90,7 +90,7 @@ class ProgressScreen extends ConsumerWidget {
             Text('KONU HARİTASI',
                 style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
             const SizedBox(height: AppSpacing.xs),
-            Text('Zayıf konular üstte — dokun, kapatma seansı başlasın.',
+            Text('Zayıf konular üstte — dokun, kapatma turu başlasın.',
                 style: AppTypography.caption.copyWith(color: tokens.inkSoft)),
             const SizedBox(height: AppSpacing.sm),
             topics.when(
@@ -100,7 +100,7 @@ class ProgressScreen extends ConsumerWidget {
                   ? const EmptyStateView(
                       icon: Icons.insights_rounded,
                       message:
-                          'Harita ilk seansla başlar — çözdükçe güç ve zaaf burada belirir.',
+                          'Harita ilk turla başlar — çözdükçe güç ve zaaf burada belirir.',
                     )
                   : _TopicMap(items: list),
             ),

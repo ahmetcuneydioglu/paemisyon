@@ -39,7 +39,7 @@ export class AdminDashboardService {
         where: { status: 'in_review', question: { deletedAt: null } },
       }),
       this.prisma.dailyUsage.count({ where: { usageDate: today } }),
-      // Bildirim ölçümü: son 7 günde bildirimden açılan seanslar.
+      // Bildirim ölçümü: son 7 günde bildirimden açılan turlar.
       this.prisma.quizSession.count({
         where: { source: 'notif', startedAt: { gte: since7d } },
       }),

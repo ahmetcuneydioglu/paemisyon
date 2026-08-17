@@ -201,7 +201,7 @@ export default async function ProfilePage() {
               </div>
             ) : (
               <p className="mt-3 text-[13px] text-ink-soft">
-                İlk seansını tamamladığında vitrinin burada oluşacak.
+                İlk turunu tamamladığında vitrinin burada oluşacak.
               </p>
             )}
           </Card>

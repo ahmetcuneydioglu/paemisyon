@@ -285,7 +285,7 @@ export class AdminLawArticlesService {
     const legislation = await this.ensureLegislation(topic.id, topic.name);
 
     // Elle girilen madde no kanonikleşir ("ek 6"→"Ek 6") → Question.articleNo
-    // ile hizalı; böylece Atlas'ta soru grubu ve seans metni eşleşir.
+    // ile hizalı; böylece Atlas'ta soru grubu ve tur metni eşleşir.
     const articleNo = canonicalArticleNo(dto.articleNo);
     const text = dto.text.trim();
     if (!articleNo) {

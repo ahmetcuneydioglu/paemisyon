@@ -17,7 +17,7 @@ export interface TopicProgressRow {
 /**
  * Konu Haritası — genişleyebilir mastery tablosu (Doc 27 §3.9, wireframe 12).
  * Ders → konu kırılımı; filtreler webe özgü ("yalnız zayıflar" açılışta KAPALI —
- * önce dürüst genel fotoğraf). Kırmızı hücreden tek tık kapatma seansı.
+ * önce dürüst genel fotoğraf). Kırmızı hücreden tek tık kapatma turu.
  */
 export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
   const [onlyWeak, setOnlyWeak] = useState(false);
@@ -157,7 +157,7 @@ export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
           <p className="p-6 text-center text-[14px] text-ink-soft">
             {onlyWeak
               ? "Bu filtrede zayıf konu yok — harita temiz görünüyor."
-              : "Henüz izlenecek konu verisi yok — birkaç seans sonra harita burada oluşur."}
+              : "Henüz izlenecek konu verisi yok — birkaç tur sonra harita burada oluşur."}
           </p>
         )}
       </Card>

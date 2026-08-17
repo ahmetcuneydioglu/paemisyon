@@ -17,7 +17,7 @@ export const slumpWatchRule: CoachRule = (ctx) => {
     priority: 80,
     title: 'Bu hafta yoğunsun galiba — tempo düşmüş',
     body: 'Sorun değil. Bugün 10 soru yeter; sen iste, yine artırırız.',
-    cta: { label: '10 soruluk seans', route: '/quiz' },
+    cta: { label: '10 soruluk tur', route: '/quiz' },
     meta: { suggestedCount: 10, last7, prev7 },
   };
 };

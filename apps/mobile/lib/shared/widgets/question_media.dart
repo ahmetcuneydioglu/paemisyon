@@ -4,7 +4,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../core/theme/app_typography.dart';
 
-/// Soru görseli (Doc 28 P2-16) — kök ile şıklar arasında; seans oynatıcı,
+/// Soru görseli (Doc 28 P2-16) — kök ile şıklar arasında; tur oynatıcı,
 /// deneme oynatıcı ve cevap incelemesi aynı bileşeni kullanır.
 /// Yüklenirken iskelet zemin; kırık URL ekranı bozmaz (sessiz uyarı kutusu).
 class QuestionMedia extends StatelessWidget {

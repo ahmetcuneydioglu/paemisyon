@@ -66,7 +66,7 @@ class _Body extends StatelessWidget {
                   Expanded(
                     child: Text(
                       collection.earnedCount == 0
-                          ? 'İlk rozetin çok yakın — bir seans yeter.'
+                          ? 'İlk rozetin çok yakın — bir tur yeter.'
                           : '${collection.totalCount} rozetin ${collection.earnedCount} tanesi sende.',
                       style: AppTypography.body.copyWith(color: tokens.ink),
                     ),

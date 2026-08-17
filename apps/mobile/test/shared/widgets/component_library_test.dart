@@ -85,7 +85,7 @@ void main() {
 
       await tester.tap(find.text('Sadece yanlışlarım'));
       await tester.pump();
-      await tester.tap(find.text('Seansı başlat'));
+      await tester.tap(find.text('Turu başlat'));
       await tester.pumpAndSettle();
       expect(result, 'wrongs');
     });

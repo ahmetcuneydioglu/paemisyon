@@ -429,7 +429,7 @@ export function LawReader({ law }: { law: MevzuatReading }) {
           href={`/kanun/${law.slug}`}
           className="block text-sm font-semibold text-(--tk-brand) hover:underline"
         >
-          Madde Atlası + kanun seansı →
+          Madde Atlası + kanun turu →
         </Link>
       </div>
       {law.sourceUrl && (

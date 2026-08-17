@@ -16,7 +16,7 @@ export const streakRiskRule: CoachRule = (ctx) => {
       ctx.streak.freezesLeft > 0
         ? '5 soru yeter — 3 dakika. Olmazsa sigortan devrede: seri yarın da yaşar.'
         : '5 soru yeter — 3 dakika. Bu hafta sigortan kalmadı.',
-    cta: { label: 'Mini seans (5 soru)', route: '/catalog' },
+    cta: { label: 'Mini tur (5 soru)', route: '/catalog' },
     meta: { freezesLeft: ctx.streak.freezesLeft },
   };
 };

@@ -139,7 +139,7 @@ class _FocusSheetBodyState extends State<_FocusSheetBody> {
                       borderRadius:
                           BorderRadius.circular(AppSpacing.radiusMd + 2)),
                 ),
-                child: const Text('Seansı başlat'),
+                child: const Text('Turu başlat'),
               ),
             ),
           ],

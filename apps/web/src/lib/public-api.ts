@@ -55,9 +55,9 @@ export interface PublicPricing {
 
 export interface LawSummary {
   slug: string;
-  /** Girişli derinlik (Doc 27 W2): atlas + seans başlatma için konu kimliği. */
+  /** Girişli derinlik (Doc 27 W2): atlas + tur başlatma için konu kimliği. */
   topicId: string;
-  /** Aynı dersteki mevzuatlardan karışık seans başlatmak için ders kimliği. */
+  /** Aynı dersteki mevzuatlardan karışık tur başlatmak için ders kimliği. */
   courseId?: string;
   name: string;
   courseName: string;
@@ -230,7 +230,7 @@ export interface TopicAtlas {
   conqueredCount: number;
 }
 
-// ── Devam eden seans çapası (Doc 27 §2.4): /quiz/active-session ──
+// ── Devam eden tur çapası (Doc 27 §2.4): /quiz/active-session ──
 export interface ActiveSession {
   sessionId: string;
   mode: string;

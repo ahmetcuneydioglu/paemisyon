@@ -46,7 +46,7 @@ async function findCourse(courseId: string): Promise<Course | null> {
 
 /**
  * Ders detay — öğrenme merkezi (Doc 27 §3.3, wireframe 05): dersin tek yaşayan
- * mekânı. Konular tablosu + benim durumum; her satırdan tek tıkla seans
+ * mekânı. Konular tablosu + benim durumum; her satırdan tek tıkla tur
  * (2 dokunuş kuralı — Doc 25 Karar 2).
  */
 export default async function DersPage({ params }: { params: Promise<{ id: string }> }) {
@@ -90,14 +90,14 @@ export default async function DersPage({ params }: { params: Promise<{ id: strin
                   )}
                 </>
               ) : (
-                <>Bu derse henüz başlamadın — ilk seans haritanı başlatır.</>
+                <>Bu derse henüz başlamadın — ilk tur haritanı başlatır.</>
               )}
             </p>
           </div>
           <ButtonLink
             href={`/seans?courseId=${course.id}&count=15&scope=${encodeURIComponent(course.name)}`}
           >
-            Bu dersten seans başlat
+            Bu dersten tur başlat
           </ButtonLink>
         </div>
 

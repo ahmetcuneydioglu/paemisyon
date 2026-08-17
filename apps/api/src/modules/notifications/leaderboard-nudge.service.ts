@@ -45,7 +45,7 @@ export class LeaderboardNudgeService {
     const dayStart = new Date();
     dayStart.setUTCHours(0, 0, 0, 0);
 
-    // Günün puan üreten seansları — zaman çizelgesinin ham maddesi.
+    // Günün puan üreten turları — zaman çizelgesinin ham maddesi.
     const sessions = await this.prisma.quizSession.findMany({
       where: {
         status: 'completed',

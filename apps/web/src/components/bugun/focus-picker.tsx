@@ -37,7 +37,7 @@ type Step =
 
 /**
  * Odak seçici (Doc 25 §5, wireframe 03): "Konuyu sen seç, soruları ben seçeyim."
- * Popover, hero'nun sessiz ucu. Odak geçicidir — yalnız bu seansın kapsamını
+ * Popover, hero'nun sessiz ucu. Odak geçicidir — yalnız bu turun kapsamını
  * belirler; kalıcı mod anahtarı yoktur.
  */
 export function FocusPicker() {
@@ -153,10 +153,10 @@ export function FocusPicker() {
       {open && (
         <div
           role="dialog"
-          aria-label="Bugünkü seansın kapsamı"
+          aria-label="Bugünkü turun kapsamı"
           className="absolute left-0 top-full z-30 mt-2 w-80 rounded-lg border border-line bg-surface p-2 shadow-lg"
         >
-          <p className="tk-caption px-3 pb-1 pt-2">Bugünkü seansın kapsamı</p>
+          <p className="tk-caption px-3 pb-1 pt-2">Bugünkü turun kapsamı</p>
 
           {error && <p className="px-3 py-1 text-[13px] text-danger">{error}</p>}
 

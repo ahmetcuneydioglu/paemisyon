@@ -65,7 +65,7 @@ export default async function BugunPage() {
           <Card className="border-brand/30 p-6">
             <span className="tk-caption text-brand">Koç</span>
             <p className="mt-1.5 font-heading text-lg font-bold leading-snug text-ink">
-              {hero?.title ?? "Bugün senin için bir seans hazır."}
+              {hero?.title ?? "Bugün senin için bir tur hazır."}
             </p>
             {hero?.body && (
               <p className="mt-1 text-[14px] leading-relaxed text-ink-soft">{hero.body}</p>
@@ -136,12 +136,12 @@ export default async function BugunPage() {
             <GoalProgress answered={today.answered} goal={today.goal} />
           </Card>
 
-          {/* Devam eden seans çapası (Doc 25 §7 emniyet 3): kayıp iş = kayıp güven */}
+          {/* Devam eden tur çapası (Doc 25 §7 emniyet 3): kayıp iş = kayıp güven */}
           {active && (
             <Card className="border-warning/50">
-              <CardTitle className="text-[13px]">⏸ Devam eden seans</CardTitle>
+              <CardTitle className="text-[13px]">⏸ Devam eden tur</CardTitle>
               <p className="tabular mt-1 text-[13px] text-ink-soft">
-                {active.scopeName ?? (active.mode === "review" ? "Yanlış tekrarı" : "Koç seansı")}{" "}
+                {active.scopeName ?? (active.mode === "review" ? "Yanlış tekrarı" : "Koç turu")}{" "}
                 · {active.answeredCount}/{active.totalQuestions} soruda kaldın
               </p>
               {active.resumable ? (
@@ -153,7 +153,7 @@ export default async function BugunPage() {
                 </Link>
               ) : (
                 <p className="tk-caption mt-2">
-                  Eski sürümden yarım oturum — yeni seans başlatman yeterli.
+                  Eski sürümden yarım oturum — yeni tur başlatman yeterli.
                 </p>
               )}
             </Card>

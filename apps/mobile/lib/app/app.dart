@@ -21,7 +21,7 @@ class PaemisyonApp extends ConsumerStatefulWidget {
 
 class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
   /// Bildirim payload'ını rotaya çevirir. Dil: 'daily-quiz' → Günün Quizi;
-  /// `question:<uuid>` → tek soruluk seans (panelden gönderilen push).
+  /// `question:<uuid>` → tek soruluk tur (panelden gönderilen push).
   /// Router redirect'i oturum/tanıtım korumasını kendisi uygular.
   void _openFromNotification(String payload) {
     final router = ref.read(appRouterProvider);

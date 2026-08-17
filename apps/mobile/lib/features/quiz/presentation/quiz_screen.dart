@@ -31,12 +31,12 @@ class QuizScreen extends ConsumerStatefulWidget {
   final String? topicId;
   final String? courseId; // ders geneli deneme
   final String? articleNo;
-  /// Tek soruluk bildirim seansı (push derin bağlantısı).
-  final String? questionId; // Madde Atlası: maddeden seans (Doc 25 §4)
+  /// Tek soruluk bildirim turu (push derin bağlantısı).
+  final String? questionId; // Madde Atlası: maddeden tur (Doc 25 §4)
   /// Geliş kanalı ölçümü ('notif' — bildirimden açıldı).
   final String? source;
-  final bool fromBookmarks; // Favorilerden seans (Doc 27 B dilimi)
-  /// Doluysa yeni seans BAŞLATILMAZ; yarım seans kaldığı yerden açılır (P0-②).
+  final bool fromBookmarks; // Favorilerden tur (Doc 27 B dilimi)
+  /// Doluysa yeni tur BAŞLATILMAZ; yarım tur kaldığı yerden açılır (P0-②).
   final String? resumeSessionId;
   final String topicName;
   final String mode; // 'practice' | 'exam' | 'daily' | 'review'
@@ -148,7 +148,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       final StartedSession s;
       var startIndex = 0;
       if (widget.resumeSessionId != null) {
-        // Yarım seans (P0-②): aynı set, ilk cevapsız sorudan devam.
+        // Yarım tur (P0-②): aynı set, ilk cevapsız sorudan devam.
         final resumed = await repo.resume(widget.resumeSessionId!);
         s = resumed.session;
         startIndex = s.questions
@@ -534,9 +534,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   /// Sonuç ekranındaki "yeni tur" için aynı kapsamı üreten /quiz argümanları.
   /// Tekrarlanabilir OLMAYAN akışlarda null: deneme (sabit set/süre), tek
-  /// soruluk bildirim seansı ve İlk Devriye (tek seferlik teşhis).
+  /// soruluk bildirim turu ve İlk Devriye (tek seferlik teşhis).
   ///
-  /// `resumeSessionId` KASITEN taşınmaz: yeni tur yeni seans açar, biteni
+  /// `resumeSessionId` KASITEN taşınmaz: yeni tur yeni tur açar, biteni
   /// yeniden açmaz. Sorular sunucuda görülmemişlerden seçilir.
   Map<String, dynamic>? _restartArgs() {
     final repeatable = widget.mode == 'practice' ||

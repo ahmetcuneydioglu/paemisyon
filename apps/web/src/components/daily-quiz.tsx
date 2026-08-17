@@ -15,7 +15,7 @@ interface RevealResult {
 /**
  * Günün Quizi (Doc 23 funnel) — girişsiz ana sayfanın kancası: 10 kaynaklı çıkmış
  * soru SAYFADA tek tek çözülür (cevap seçilince sunucudan açıklama), sonunda
- * skor + kayıt/giriş duvarı. Girişli `daily` seansıyla AYNI 10 soru.
+ * skor + kayıt/giriş duvarı. Girişli `daily` turuyla AYNI 10 soru.
  */
 export function DailyQuizCard({
   quiz,

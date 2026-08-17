@@ -31,7 +31,7 @@ export class QuizController {
     return this.quiz.completeSession(user.id, id);
   }
 
-  /// Devam eden seans çapası (Doc 27 §2.4) — Bugün kartı + koç rayı pili.
+  /// Devam eden tur çapası (Doc 27 §2.4) — Bugün kartı + koç rayı pili.
   @Get('active-session')
   active(@CurrentUser() user: AuthenticatedUser) {
     return this.quiz.getActiveSession(user.id);

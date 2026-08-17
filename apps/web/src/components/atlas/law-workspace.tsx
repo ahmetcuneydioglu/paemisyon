@@ -166,7 +166,7 @@ export function LawWorkspace({
             href={`/seans?topicId=${law.topicId}&count=${Math.min(15, law.questionCount)}&scope=${encodeURIComponent(law.name)}`}
             size="lg"
           >
-            Bu kanundan {Math.min(15, law.questionCount)} soruluk seans
+            Bu kanundan {Math.min(15, law.questionCount)} soruluk tur
           </ButtonLink>
         </div>
       )}

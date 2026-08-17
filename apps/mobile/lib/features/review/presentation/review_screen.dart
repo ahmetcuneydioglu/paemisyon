@@ -13,7 +13,7 @@ import '../../../shared/widgets/primary_button.dart';
 import '../data/review_repository.dart';
 
 /// Tekrar (Doc 12 §8 + Doc 28 P0-⑤): Yanlışlarım / Favoriler — artık CANLI:
-/// listeden seans başlar (review reçetesi / fromBookmarks), favoriden çıkarılır.
+/// listeden tur başlar (review reçetesi / fromBookmarks), favoriden çıkarılır.
 class ReviewScreen extends StatelessWidget {
   const ReviewScreen({super.key});
 
@@ -56,7 +56,7 @@ class _ReviewList extends ConsumerWidget {
         if (!wrong) 'fromBookmarks': true,
         'count': itemCount.clamp(1, 20),
       });
-      // Seans sonrası kuyruklar değişir (doğru çözülen yanlış düşer).
+      // Tur sonrası kuyruklar değişir (doğru çözülen yanlış düşer).
       ref.invalidate(wrongAnswersProvider);
       ref.invalidate(bookmarksProvider);
     }
@@ -82,7 +82,7 @@ class _ReviewList extends ConsumerWidget {
               message: wrong
                   ? 'Açık yanlışın yok — kuyruk temiz. Yeni yanlışlar '
                       'çözüldükçe burada birikir, doğru çözünce düşer.'
-                  : 'Henüz favori sorun yok. Seans içinde ⭐ ile işaretle, '
+                  : 'Henüz favori sorun yok. Tur içinde ⭐ ile işaretle, '
                       'burada koleksiyonun olsun.',
             )
           : RefreshIndicator(
@@ -90,11 +90,11 @@ class _ReviewList extends ConsumerWidget {
               child: ListView(
                 padding: const EdgeInsets.all(AppSpacing.lg),
                 children: [
-                  // ── Birincil eylem: listeden seans (Doc 28 P0-⑤) ──
+                  // ── Birincil eylem: listeden tur (Doc 28 P0-⑤) ──
                   PrimaryButton(
                     label: wrong
                         ? 'Yanlış turunu başlat (${list.length})'
-                        : 'Favorilerden seans (${list.length})',
+                        : 'Favorilerden tur (${list.length})',
                     onPressed: () => startSession(list.length),
                   ),
                   Padding(

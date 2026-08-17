@@ -8,7 +8,7 @@ class AppTypography {
 
   static const List<FontFeature> _tabular = [FontFeature.tabularFigures()];
 
-  /// Seans sonucu skoru, net — 32/800.
+  /// Tur sonucu skoru, net — 32/800.
   static const TextStyle display = TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.w800,

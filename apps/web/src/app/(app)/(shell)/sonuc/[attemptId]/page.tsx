@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 /**
  * Deneme Sonucu + Derin Analiz (Doc 27 §3.8, wireframe 11). Şok değil yol
  * haritası: önce kendi kıyasın ve kapatılabilir kayıplar, sıralama sonra.
- * Her kayıp satırı eyleme bağlanır — tek tık kapatma seansı (/seans).
+ * Her kayıp satırı eyleme bağlanır — tek tık kapatma turu (/seans).
  */
 export default async function SonucPage({ params }: { params: Promise<{ attemptId: string }> }) {
   const { attemptId } = await params;
@@ -116,7 +116,7 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
               <p className="mt-1 text-[15px] leading-relaxed text-ink">
                 {lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
                   ? `Kaybının %${Math.round((lostInTop3 / lostTotal) * 100)}'i ${losers.length} konudan — sıralamaya değil şu tabloya bak, hepsi kapatılabilir.`
-                  : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma seansı hazır."}
+                  : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma turu hazır."}
               </p>
             </Card>
           )}
@@ -181,7 +181,7 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
             <p className="mt-2 text-[14px] text-ink-soft">Konu kırılımı bu deneme için yok.</p>
           )}
           <p className="tk-caption mt-3">
-            Kayıp net = yanlış×1,25 + boş. &quot;kapat&quot; o konudan akıllı seans başlatır;
+            Kayıp net = yanlış×1,25 + boş. &quot;kapat&quot; o konudan akıllı tur başlatır;
             yanlışların zaten tekrar kuyruğunda.
           </p>
         </Card>

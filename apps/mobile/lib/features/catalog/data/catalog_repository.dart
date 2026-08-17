@@ -91,14 +91,14 @@ final coursesProvider =
 
 final topicsProvider =
     FutureProvider.autoDispose.family<CourseTopics, String>((ref, courseId) {
-  // Kişisel katman (hakimiyet) içerir — kısa önbellek: seans sonrası tazelensin.
+  // Kişisel katman (hakimiyet) içerir — kısa önbellek: tur sonrası tazelensin.
   _cacheFor(ref, const Duration(minutes: 1));
   return ref.watch(catalogRepositoryProvider).getTopics(courseId);
 });
 
 final atlasProvider =
     FutureProvider.autoDispose.family<TopicAtlas, String>((ref, topicId) {
-  // Fetih durumu seans sonrası değişir — kısa önbellek.
+  // Fetih durumu tur sonrası değişir — kısa önbellek.
   _cacheFor(ref, const Duration(minutes: 1));
   return ref.watch(catalogRepositoryProvider).getAtlas(topicId);
 });

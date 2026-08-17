@@ -2,7 +2,7 @@ import { SourceTag } from "./source-tag";
 
 /**
  * Açıklama kutusu (Doc 26 #6): açıklama + kaynak etiketi + madde köprüsü.
- * Yanlış → kavrayış döngüsünün (Doc 25 akış C) seans içindeki durağı.
+ * Yanlış → kavrayış döngüsünün (Doc 25 akış C) tur içindeki durağı.
  */
 export function ExplanationBox({
   isCorrect,

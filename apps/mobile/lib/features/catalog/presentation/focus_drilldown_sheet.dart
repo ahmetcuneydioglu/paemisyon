@@ -19,7 +19,7 @@ class FocusTarget {
 }
 
 /// Odak sheet'inin "Ders / konu seç" dalı (Doc 28 P2-17) — katalog ekranına
-/// fırlatmak yerine AYNI sheet akışında ders → konu inişi; seçim seansı
+/// fırlatmak yerine AYNI sheet akışında ders → konu inişi; seçim turu
 /// başlatır. Sheet kapatılırsa null döner.
 Future<FocusTarget?> showFocusDrillDown(
   BuildContext context, {

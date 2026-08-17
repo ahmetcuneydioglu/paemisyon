@@ -16,7 +16,7 @@ interface BookmarkRow {
 
 /**
  * Favorilerim (Doc 25 Bölge 2): "bunu sonra çözeceğim" el koleksiyonu.
- * Seans içinde F ile yıldızlanan sorular burada; favori reçetesiyle çözülür.
+ * Tur içinde F ile yıldızlanan sorular burada; favori reçetesiyle çözülür.
  */
 export default async function FavorilerPage() {
   const rows = await api<BookmarkRow[]>("/review/bookmarks").catch(() => [] as BookmarkRow[]);
@@ -34,11 +34,11 @@ export default async function FavorilerPage() {
             <p className="mt-1 text-[13px] text-ink-soft">
               {rows.length > 0 ? (
                 <>
-                  <b className="tabular text-ink">{rows.length}</b> yıldızlı soru — seans içinde{" "}
+                  <b className="tabular text-ink">{rows.length}</b> yıldızlı soru — tur içinde{" "}
                   <kbd className="rounded border border-line px-1">F</kbd> ile eklenir.
                 </>
               ) : (
-                <>Henüz favori yok — bir seansta beğendiğin soruyu ☆ ile işaretle.</>
+                <>Henüz favori yok — bir turda beğendiğin soruyu ☆ ile işaretle.</>
               )}
             </p>
           </div>
@@ -46,7 +46,7 @@ export default async function FavorilerPage() {
             <ButtonLink
               href={`/seans?mode=favorites&count=${Math.min(10, rows.length)}&scope=${encodeURIComponent("Favorilerim")}`}
             >
-              {Math.min(10, rows.length)} favoriyle seans
+              {Math.min(10, rows.length)} favoriyle tur
             </ButtonLink>
           )}
         </div>
@@ -79,12 +79,12 @@ export default async function FavorilerPage() {
             <p className="text-2xl" aria-hidden>☆</p>
             <CardTitle className="mt-2">Koleksiyonun boş</CardTitle>
             <p className="mx-auto mt-1 max-w-[44ch] text-[14px] text-ink-soft">
-              Seans sırasında bir soruyu sonra tekrar çözmek istersen ☆ ile favorine ekle;
+              Tur sırasında bir soruyu sonra tekrar çözmek istersen ☆ ile favorine ekle;
               buradan toplu çözersin.
             </p>
             <div className="mt-4">
               <ButtonLink href="/seans" variant="secondary">
-                Koç seansı başlat
+                Koç turu başlat
               </ButtonLink>
             </div>
           </Card>

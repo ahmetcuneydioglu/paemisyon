@@ -16,7 +16,7 @@ function formatVerifiedDate(iso: string): string {
  * Madde detay — girişli derinlik (Doc 27 §3.5, wireframe 07): Atlas'ın kalbi.
  * Makale: madde künyesi + çıkmış soru önizlemeleri (resmî metin, kanun metni
  * içerik hattı kurulunca aynı panoya gelir — Doc 25 §4 adım 3).
- * Inspector: fetih durumu + madde reçeteli seans köprüsü (döngünün DENE kapısı).
+ * Inspector: fetih durumu + madde reçeteli tur köprüsü (döngünün DENE kapısı).
  */
 export function ArticleWorkspace({
   article,
@@ -139,7 +139,7 @@ export function ArticleWorkspace({
             ))}
           </ul>
           <p className="tk-caption mt-3">
-            Tam metin ve cevaplar seans içinde — çözerken açıklama + kaynakla birlikte.
+            Tam metin ve cevaplar tur içinde — çözerken açıklama + kaynakla birlikte.
           </p>
         </Card>
       )}
@@ -189,7 +189,7 @@ export function ArticleWorkspace({
           </p>
         ) : (
           <p className="text-[13px] leading-relaxed text-ink-soft">
-            Bu maddeyi henüz hiç çalışmadın — ilk seansın haritayı başlatır.
+            Bu maddeyi henüz hiç çalışmadın — ilk turun haritayı başlatır.
           </p>
         )}
       </Card>

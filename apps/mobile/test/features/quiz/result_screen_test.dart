@@ -33,7 +33,7 @@ void main() {
     expect(find.text("Bugün'e dön"), findsOneWidget);
   });
 
-  testWidgets('hatasız seansta yanlış CTA yok, kutlama ölçülü', (tester) async {
+  testWidgets('hatasız turda yanlış CTA yok, kutlama ölçülü', (tester) async {
     const perfect = QuizResult(
       totalQuestions: 10,
       correctCount: 10,
@@ -45,7 +45,7 @@ void main() {
     await tester.pumpWidget(app(perfect, theme: AppTheme.dark));
     await tester.pumpAndSettle();
     expect(find.text('10/10'), findsOneWidget);
-    expect(find.textContaining('Hatasız seans'), findsOneWidget);
+    expect(find.textContaining('Hatasız tur'), findsOneWidget);
     expect(find.textContaining('Yanlışları incele'), findsNothing);
   });
 

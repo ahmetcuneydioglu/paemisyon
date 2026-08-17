@@ -24,7 +24,7 @@ export async function CoachRail() {
       <aside aria-label="Koç">
         <div className="sticky top-6 space-y-3">
           <h4 className="tk-caption">Koç</h4>
-          {/* Devam eden seans pili (Doc 25 §7 emniyet 3) — her L2 sayfasında görünür */}
+          {/* Devam eden tur pili (Doc 25 §7 emniyet 3) — her L2 sayfasında görünür */}
           {active?.resumable && (
             <Link
               href={`/seans?resume=${active.sessionId}${active.scopeName ? `&scope=${encodeURIComponent(active.scopeName)}` : ""}`}

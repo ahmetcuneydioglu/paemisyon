@@ -53,7 +53,7 @@ export default async function PerformansPage() {
     { label: "Toplam soru", value: summary.totalSolved },
     { label: "Doğruluk", value: `%${summary.accuracy}` },
     { label: "Seri", value: `🔥 ${summary.currentStreak}` },
-    { label: "Seans", value: summary.totalSessions },
+    { label: "Tur", value: summary.totalSessions },
   ];
 
   return (
@@ -165,7 +165,7 @@ export default async function PerformansPage() {
             </ul>
           ) : (
             <p className="mt-2 text-[14px] text-ink-soft">
-              Zayıflık haritası için biraz daha veri gerekiyor — birkaç seans sonra burada
+              Zayıflık haritası için biraz daha veri gerekiyor — birkaç tur sonra burada
               konu konu güç/zaaf fotoğrafın oluşacak.
             </p>
           )}

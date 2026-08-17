@@ -316,7 +316,7 @@ describe('slump_watch (tempo düşüşü)', () => {
   });
 });
 
-describe('onboarding (ilk 3 seans — Doc 24 §3)', () => {
+describe('onboarding (ilk 3 tur — Doc 24 §3)', () => {
   it('kurulum eksikse kuruluma yönlendirir', () => {
     const c = onboardingRule(ctx({ user: { ...ctx().user, onboardingCompleted: false } }));
     expect(c?.priority).toBe(88);
@@ -324,13 +324,13 @@ describe('onboarding (ilk 3 seans — Doc 24 §3)', () => {
     expect(c?.cta?.route).toBe('/onboarding');
     expect(c?.meta?.step).toBe('setup');
   });
-  it('kurulum tamam + <3 seansta ilk devriyeye çağırır', () => {
+  it('kurulum tamam + <3 turda ilk devriyeye çağırır', () => {
     const c = onboardingRule(ctx({ stats: { totalSolved: 0, totalCorrect: 0, totalSessions: 1 } }));
     expect(c?.title).toContain('İlk devriye');
     expect(c?.cta?.route).toBe('/catalog');
     expect(c?.meta?.step).toBe('first_sessions');
   });
-  it('3+ seansta sessiz (kullanıcı artık yeni değil)', () => {
+  it('3+ turda sessiz (kullanıcı artık yeni değil)', () => {
     expect(
       onboardingRule(ctx({ stats: { totalSolved: 40, totalCorrect: 30, totalSessions: 3 } })),
     ).toBeNull();

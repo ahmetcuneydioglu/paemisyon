@@ -127,7 +127,7 @@ class NotificationService {
         _idDaily + i,
         teaser != null ? 'Günün Sorusu 🎯' : 'Nöbet vakti',
         teaser ??
-            'Bugünkü hedefin seni bekliyor — kısa bir seans seriyi korur.',
+            'Bugünkü hedefin seni bekliyor — kısa bir tur seriyi korur.',
         at,
         _details,
         // Kesin alarm İZNİ istememek için inexact — dakikası dakikasına şart değil.

@@ -183,10 +183,10 @@ class _CoachBody extends ConsumerWidget {
     Future<void> openCoachSession() async {
       final remaining = brief.goal - brief.answered;
       final count = brief.mode == 'streak_risk'
-          ? 5 // mini seans: seri kurtarmaya 5 soru yeter
+          ? 5 // mini tur: seri kurtarmaya 5 soru yeter
           : remaining.clamp(5, 20);
       await context.push('/quiz', extra: {
-        'topicName': 'Koç Seansı',
+        'topicName': 'Koç Turu',
         'mode': 'practice',
         'count': count,
       });
@@ -213,7 +213,7 @@ class _CoachBody extends ConsumerWidget {
         case 'quick_review':
         case 'exam_mode' when route == '/review':
           // Yanlış tekrarı artık gerçek reçeteye gider (Doc 28 P0-⑤):
-          // liste değil, doğrudan review seansı.
+          // liste değil, doğrudan review turu.
           await context.push('/quiz', extra: {
             'topicName': 'Yanlış Turu',
             'mode': 'review',
@@ -278,7 +278,7 @@ class _CoachBody extends ConsumerWidget {
         ),
         const SizedBox(height: AppSpacing.lg),
 
-        // ── Devam eden seans çapası (Doc 28 P0-②): kayıp iş = kayıp güven ──
+        // ── Devam eden tur çapası (Doc 28 P0-②): kayıp iş = kayıp güven ──
         Consumer(builder: (context, ref, _) {
           final active = ref.watch(activeSessionProvider).valueOrNull;
           if (active == null) return const SizedBox.shrink();
@@ -292,7 +292,7 @@ class _CoachBody extends ConsumerWidget {
                   if (active.resumable) {
                     await context.push('/quiz', extra: {
                       'resumeSessionId': active.sessionId,
-                      'topicName': active.scopeName ?? 'Seans',
+                      'topicName': active.scopeName ?? 'Tur',
                       'mode': active.mode,
                     });
                   } else {
@@ -361,7 +361,7 @@ class _CoachBody extends ConsumerWidget {
                   ref.invalidate(coachBriefProvider);
                 case 'wrongs':
                   await open('quick_review', '/review');
-                default: // koç seçsin → karışım motorlu koç seansı
+                default: // koç seçsin → karışım motorlu koç turu
                   await openCoachSession();
               }
             },
@@ -521,7 +521,7 @@ class _CoachBody extends ConsumerWidget {
   }
 }
 
-// ── Devam eden seans kartı (Doc 28 P0-②) ──
+// ── Devam eden tur kartı (Doc 28 P0-②) ──
 
 class _ActiveSessionCard extends StatelessWidget {
   final ActiveSession active;
@@ -552,7 +552,7 @@ class _ActiveSessionCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Yarım kalan seansın var'
+                    'Yarım kalan turun var'
                     '${active.scopeName != null ? ' · ${active.scopeName}' : ''}',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,

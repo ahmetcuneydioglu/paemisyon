@@ -63,7 +63,7 @@ class StartedSession {
       );
 }
 
-/// Devam eden seans özeti (Doc 28 P0-②) — Bugün'deki çapa kartı.
+/// Devam eden tur özeti (Doc 28 P0-②) — Bugün'deki çapa kartı.
 class ActiveSession {
   final String sessionId;
   final String mode;

@@ -3,7 +3,7 @@ import type { Prisma } from '@prisma/client';
 /**
  * Günün Quizi — gün-tohumlu 10-soru seçimi (SAF mantık, birim testli).
  *
- * Hem girişli `daily` seansı (quiz.service) hem girişsiz public "Günün Quizi"
+ * Hem girişli `daily` turu (quiz.service) hem girişsiz public "Günün Quizi"
  * (public.service) BU mantığı kullanır → herkes o gün AYNI 10 soruyu görür
  * (adil liderlik + tek kaynak). NÖTR konum: quiz.service zaten public.service'ten
  * import ettiği için ortak mantık burada durur (import cycle olmaz).

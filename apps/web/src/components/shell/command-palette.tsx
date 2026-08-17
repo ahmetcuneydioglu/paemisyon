@@ -18,7 +18,7 @@ interface Item {
 const STATIC_ITEMS: Item[] = [
   {
     group: "Eylemler",
-    label: "Bugün Çalış — koç seansı başlat",
+    label: "Bugün Çalış — koç turu başlat",
     href: "/seans",
   },
   { group: "Eylemler", label: "Günün sorusunu çöz", href: "/gunun-sorusu" },
