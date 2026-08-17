@@ -33,6 +33,15 @@ class ExamFlowFailure extends Failure {
   const ExamFlowFailure(this.code, super.message, {this.attemptId});
 }
 
+/// Satın alma doğrulanamadı. [permanent] TRUE ise işlem kalıcı olarak
+/// geçersizdir (imza bozuk, ürün hiçbir plana eşlenmiyor) → StoreKit işlemi
+/// kapatılır, yoksa kuyrukta kalıp her açılışta yeniden gelir. FALSE ise hata
+/// geçicidir (ağ, oturum, sunucu) → işlem AÇIK bırakılır ki ödeme kaybolmasın.
+class PurchaseVerifyFailure extends Failure {
+  final bool permanent;
+  const PurchaseVerifyFailure(super.message, {required this.permanent});
+}
+
 class UnknownFailure extends Failure {
   const UnknownFailure([super.message = 'Beklenmeyen bir hata oluştu.']);
 }

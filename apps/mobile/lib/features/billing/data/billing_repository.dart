@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/error/failure.dart';
 import '../../../core/network/dio_client.dart';
 import '../domain/billing_plan.dart';
+import '../domain/verify_result.dart';
 
 /// Billing API (Doc 7/15). Satın alma DOĞRULAMASI sunucuda: istemci imzalı işlemi
 /// (StoreKit JWS) /billing/verify'a yollar, premium kararını backend verir.
@@ -21,18 +22,42 @@ class BillingRepository {
     });
   }
 
-  /// İmzalı işlemi doğrular; başarılıysa backend entitlement'ı günceller.
-  /// Dönen isPremium/validUntil ile arayan /me'yi tazeler.
-  Future<void> verifyPurchase({
+  /// İmzalı işlemi doğrular; premium kararını SUNUCU verir ve sonucu döner.
+  ///
+  /// Hata [PurchaseVerifyFailure] olarak fırlar ve `permanent` bayrağı taşır:
+  /// çağıran bu bayrağa göre StoreKit işlemini kapatır (kalıcı) veya kuyrukta
+  /// bırakıp tekrar dener (geçici). 401/403 GEÇİCİDİR — kullanıcı henüz giriş
+  /// yapmamış olabilir; işlemi kapatmak ödemeyi kaybettirir.
+  Future<VerifyResult> verifyPurchase({
     required String transactionJws,
     String platform = 'apple',
   }) async {
-    return _guard(() async {
-      await _dio.post<Map<String, dynamic>>(
+    try {
+      final r = await _dio.post<Map<String, dynamic>>(
         '/billing/verify',
         data: {'platform': platform, 'transactionJws': transactionJws},
       );
-    });
+      final data = r.data?['data'];
+      return data is Map<String, dynamic>
+          ? VerifyResult.fromJson(data)
+          : const VerifyResult(isPremium: false);
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.connectionTimeout) {
+        throw const PurchaseVerifyFailure(
+          'İnternet bağlantını kontrol et.',
+          permanent: false,
+        );
+      }
+      final code = e.response?.statusCode ?? 0;
+      final msg = (e.response?.data is Map)
+          ? ((e.response?.data as Map)['error']?['message'] as String?)
+          : null;
+      throw PurchaseVerifyFailure(
+        msg ?? 'Satın alma doğrulanamadı.',
+        permanent: code == 400 || code == 422,
+      );
+    }
   }
 
   Future<T> _guard<T>(Future<T> Function() run) async {
@@ -46,7 +71,7 @@ class BillingRepository {
       final msg = (e.response?.data is Map)
           ? ((e.response?.data as Map)['error']?['message'] as String?)
           : null;
-      throw ServerFailure(msg ?? 'Satın alma doğrulanamadı.');
+      throw ServerFailure(msg ?? 'Planlar alınamadı.');
     }
   }
 }

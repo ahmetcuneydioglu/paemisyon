@@ -40,9 +40,12 @@ export class BillingService {
   async verifyApple(userId: string, transactionJws: string) {
     const tx = await this.apple.verify(transactionJws);
 
+    // DİKKAT: `isActive` filtresi YOK. Pasif plan "artık satılmıyor" demektir,
+    // "eski satın almalar geçersiz" demek DEĞİL. Filtreliyken emekliye ayrılan
+    // bir paketin sahibi doğrulama alamıyor, istemci de işlemi kalıcı hatalı
+    // sayıp kapatıyordu — ödenmiş premium buharlaşırdı.
     const plan = await this.prisma.plan.findFirst({
       where: {
-        isActive: true,
         OR: [
           { storeProductIdIos: tx.productId },
           { storeProductIdAndroid: tx.productId },

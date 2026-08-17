@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:paemisyon/core/theme/app_theme.dart';
 import 'package:paemisyon/features/billing/data/billing_repository.dart';
 import 'package:paemisyon/features/billing/domain/billing_plan.dart';
+import 'package:paemisyon/features/billing/domain/verify_result.dart';
 import 'package:paemisyon/features/billing/presentation/paywall_screen.dart';
 import 'package:paemisyon/features/me/data/me_repository.dart';
 import 'package:paemisyon/features/me/domain/me_profile.dart';
@@ -22,10 +23,11 @@ class _FakeBillingRepository implements BillingRepository {
   Future<List<BillingPlan>> getPlans() async => _plans;
 
   @override
-  Future<void> verifyPurchase({
+  Future<VerifyResult> verifyPurchase({
     required String transactionJws,
     String platform = 'apple',
-  }) async {}
+  }) async =>
+      const VerifyResult(isPremium: true);
 
   @override
   dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);

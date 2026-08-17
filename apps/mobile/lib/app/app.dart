@@ -6,6 +6,7 @@ import '../core/offline/connectivity_provider.dart';
 import '../core/offline/sync_service.dart';
 import '../core/theme/app_theme.dart';
 import '../core/theme/theme_mode_provider.dart';
+import '../features/billing/data/purchase_sync_service.dart';
 import '../shared/widgets/offline_banner.dart';
 import 'router/app_router.dart';
 
@@ -62,6 +63,11 @@ class _PaemisyonAppState extends ConsumerState<PaemisyonApp> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // Açılışta bekleyen kuyruğu (varsa) gönder + sayacı başlat.
       ref.read(syncServiceProvider).flush();
+      // Mağaza işlem kuyruğunun tek sahibi (Doc 15): bitirilmemiş işlemler
+      // ekrandan bağımsız, SESSİZCE doğrulanıp kapatılır. Paywall'a bağlı
+      // olduğu sürece ekran kapanınca işlemler kuyrukta kalıyor ve her
+      // açılışta toast yağmuruna dönüşüyordu.
+      ref.read(purchaseSyncServiceProvider).start();
       // Bildirime dokunularak SOĞUK açıldıysa aynı derin bağlantı çalışsın.
       ref
           .read(notificationServiceProvider)

@@ -18,6 +18,7 @@ import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../me/data/me_repository.dart';
 import '../data/billing_repository.dart';
+import '../data/purchase_sync_service.dart';
 import '../domain/billing_plan.dart';
 
 /// Premium paywall (Doc 15). İki satın alma yolu desteklenir:
@@ -45,7 +46,10 @@ class PaywallScreen extends ConsumerStatefulWidget {
 class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   /// Tembel: mağaza planı yoksa StoreKit/Play hiç uyandırılmaz.
   InAppPurchase get _iap => InAppPurchase.instance;
-  StreamSubscription<List<PurchaseDetails>>? _sub;
+
+  /// İşlem kuyruğunu bu ekran DEĞİL, uygulama seviyesindeki servis yönetir
+  /// (bkz. PurchaseSyncService). Ekran yalnız sonucu dinler.
+  StreamSubscription<PurchaseSyncEvent>? _sub;
 
   List<BillingPlan>? _plans;
   Map<String, ProductDetails> _products = {};
@@ -61,8 +65,8 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
   @override
   void initState() {
     super.initState();
-    // purchaseStream aboneliği planlar geldikten SONRA, yalnız mağaza planı
-    // varsa kurulur (_load içinde) — manuel akışta mağaza kanalına dokunulmaz.
+    // Sonuç akışı: satın alma/geri yükleme turları burada tek toast'a düşer.
+    _sub = ref.read(purchaseSyncServiceProvider).events.listen(_onSyncEvent);
     _load();
   }
 
@@ -83,11 +87,6 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
       var available = false;
       final products = <String, ProductDetails>{};
       if (ids.isNotEmpty) {
-        // Mağaza akışı var: bekleyen/geri yüklenen işlemleri dinlemeye başla.
-        _sub ??= _iap.purchaseStream.listen(
-          _onPurchases,
-          onError: (e) => _fail('Mağaza hatası: $e'),
-        );
         available = await _iap.isAvailable();
         if (available) {
           final resp = await _iap.queryProductDetails(ids);
@@ -125,50 +124,40 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     }
     setState(() => _buyingKey = plan.key);
     try {
-      await _iap.buyNonConsumable(
-          purchaseParam: PurchaseParam(productDetails: pd));
+      await ref.read(purchaseSyncServiceProvider).buy(pd);
     } catch (e) {
       _fail('Satın alma başlatılamadı: $e');
     }
   }
 
-  Future<void> _onPurchases(List<PurchaseDetails> purchases) async {
-    for (final p in purchases) {
-      switch (p.status) {
-        case PurchaseStatus.pending:
-          break; // gösterge _buyingKey ile
-        case PurchaseStatus.purchased:
-        case PurchaseStatus.restored:
-          await _verify(p);
-          break;
-        case PurchaseStatus.error:
-          _fail(p.error?.message ?? 'Satın alma başarısız.');
-          break;
-        case PurchaseStatus.canceled:
-          if (mounted) setState(() => _buyingKey = null);
-          break;
-      }
-      if (p.pendingCompletePurchase) {
-        await _iap.completePurchase(p);
-      }
+  Future<void> _restore() async {
+    setState(() => _buyingKey = _selectedKey);
+    try {
+      await ref.read(purchaseSyncServiceProvider).restore();
+    } catch (e) {
+      _fail('Geri yükleme başlatılamadı: $e');
     }
   }
 
-  Future<void> _verify(PurchaseDetails p) async {
-    try {
-      final jws = p.verificationData.serverVerificationData;
-      await ref
-          .read(billingRepositoryProvider)
-          .verifyPurchase(transactionJws: jws);
-      ref.invalidate(meProvider); // premium durumu tazelensin
-      if (mounted) {
-        _snack('Premium etkin! 🎉');
-        context.pop();
-      }
-    } catch (e) {
-      _fail(e is Failure ? e.message : 'Satın alma doğrulanamadı.');
-    } finally {
-      if (mounted) setState(() => _buyingKey = null);
+  /// Kuyruk servisinden gelen TUR sonucu. Kullanıcı başlatmadıysa (açılışta
+  /// kendiliğinden yapılan kuyruk temizliği) hiçbir şey gösterilmez.
+  void _onSyncEvent(PurchaseSyncEvent e) {
+    if (!mounted) return;
+    setState(() => _buyingKey = null);
+    if (e.premiumGranted) {
+      _snack('Premium etkin! 🎉');
+      // Kapatılabiliyorsa kapat: paywall'a derin bağlantıyla doğrudan
+      // gelinmişse geri gidilecek sayfa yoktur, koşulsuz pop çökertir.
+      final router = GoRouter.maybeOf(context);
+      if (router != null && router.canPop()) router.pop();
+      return;
+    }
+    if (!e.userInitiated) return; // sessiz senkron
+    if (e.failed > 0) {
+      _snack(e.error ?? 'Satın alma doğrulanamadı.');
+    } else if (e.verified > 0) {
+      // Doğrulandı ama premium açılmadı: süresi dolmuş/iade edilmiş işlem.
+      _snack('Bu hesapta aktif bir premium bulunamadı.');
     }
   }
 
@@ -206,7 +195,7 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
           // Mağaza planı yokken "geri yükle" anlamsız — hiç gösterme.
           if (_hasStorePlans)
             TextButton(
-              onPressed: _iapAvailable ? () => _iap.restorePurchases() : null,
+              onPressed: _iapAvailable ? _restore : null,
               child: const Text('Geri yükle'),
             ),
         ],
@@ -440,7 +429,7 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                 style: AppTypography.caption.copyWith(color: tokens.danger)),
           ),
         TextButton(
-          onPressed: _iapAvailable ? () => _iap.restorePurchases() : null,
+          onPressed: _iapAvailable ? _restore : null,
           child: const Text('Satın alımları geri yükle'),
         ),
       ],
