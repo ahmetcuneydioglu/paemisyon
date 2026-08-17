@@ -11,7 +11,7 @@ class AppConfig {
   /// unutulursa uygulama sessizce ölmesin. (Eskiden varsayılan geliştirici
   /// Mac'inin Bonjour adıydı; bayrağı unutulan bir sürüm kullanıcıda hiç
   /// açılmazdı.) Geliştirmede yerel sunucu için bayrağı AÇIKÇA ver:
-  ///   flutter run --dart-define=API_BASE_URL=http://<mac>.local:3000/api/v1
+  ///   `flutter run --dart-define=API_BASE_URL=http://MAC-ADI.local:3000/api/v1`
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
     defaultValue: 'https://api.paemisyon.com/api/v1',
