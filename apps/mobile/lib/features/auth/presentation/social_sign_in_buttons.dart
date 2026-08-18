@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
@@ -38,7 +39,11 @@ class _SocialSignInButtonsState extends ConsumerState<SocialSignInButtons> {
       }
     } on AuthException catch (e) {
       _snack(e.message);
-    } catch (_) {
+    } catch (e) {
+      // Teşhis: mağaza/platform istisnaları (ör. Google
+      // PlatformException status:10 DEVELOPER_ERROR) kullanıcıya gösterilmez
+      // ama sebebi bilmeden hata ayıklanamıyor — geliştirmede log'a düşsün.
+      if (kDebugMode) debugPrint('[auth] $key girişi başarısız: $e');
       _snack('Giriş başarısız — tekrar dene.');
     } finally {
       if (mounted) setState(() => _busy = null);

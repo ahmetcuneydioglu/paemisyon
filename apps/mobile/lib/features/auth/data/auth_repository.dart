@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io' show Platform;
 import 'dart:math';
 
 import 'package:crypto/crypto.dart';
@@ -90,7 +91,13 @@ class AuthRepository {
   /// (GOOGLE_IOS_CLIENT_ID / GOOGLE_WEB_CLIENT_ID); boşsa buton gizlenir.
   Future<void> signInWithGoogle() async {
     final googleSignIn = GoogleSignIn(
-      clientId: AppConfig.googleIosClientId,
+      // clientId YALNIZ iOS/macOS'ta verilir. Android'de OAuth istemcisi
+      // paket adı + SHA-1 ile eşleşir; buraya iOS client ID geçilirse hesap
+      // seçici açılır ama kimlik doğrulama tamamlanamaz — kullanıcı "giriş
+      // başarısız" görür. (Android'de gerçek cihazda tespit edildi.)
+      clientId: (Platform.isIOS || Platform.isMacOS)
+          ? AppConfig.googleIosClientId
+          : null,
       // Supabase, idToken audience'ı olarak WEB client ID bekler.
       serverClientId: AppConfig.googleWebClientId,
     );
