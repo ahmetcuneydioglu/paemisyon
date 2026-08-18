@@ -30,12 +30,19 @@ class BillingRepository {
   /// yapmamış olabilir; işlemi kapatmak ödemeyi kaybettirir.
   Future<VerifyResult> verifyPurchase({
     required String transactionJws,
-    String platform = 'apple',
+    required String platform,
+    String? productId,
   }) async {
     try {
       final r = await _dio.post<Map<String, dynamic>>(
         '/billing/verify',
-        data: {'platform': platform, 'transactionJws': transactionJws},
+        data: {
+          'platform': platform,
+          'transactionJws': transactionJws,
+          // Google'da jeton tek başına ürünü söylemez: sunucu abonelik mi
+          // ömürlük mü olduğunu bilmeden doğru Play ucunu sorgulayamaz.
+          if (productId != null) 'productId': productId,
+        },
       );
       final data = r.data?['data'];
       return data is Map<String, dynamic>

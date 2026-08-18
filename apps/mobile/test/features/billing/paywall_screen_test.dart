@@ -25,7 +25,8 @@ class _FakeBillingRepository implements BillingRepository {
   @override
   Future<VerifyResult> verifyPurchase({
     required String transactionJws,
-    String platform = 'apple',
+    required String platform,
+    String? productId,
   }) async =>
       const VerifyResult(isPremium: true);
 
@@ -73,6 +74,8 @@ void main() {
     tester.view.physicalSize = const Size(1179, 2556);
     tester.view.devicePixelRatio = 3;
     addTearDown(tester.view.reset);
+    // Mağaza-dışı platform: manuel akış YALNIZ burada görünür (mobilde yasak).
+    debugDefaultTargetPlatformOverride = TargetPlatform.macOS;
 
     await tester.pumpWidget(wrap(const [quarterly]));
     await settle(tester);
@@ -109,6 +112,9 @@ void main() {
 
     // 5) Eşleştirme için hesap e-postası gösterilir.
     expect(find.textContaining('ahmet@example.com'), findsOneWidget);
+
+    // Override, çerçevenin invariant kontrolünden ÖNCE sıfırlanmalı.
+    debugDefaultTargetPlatformOverride = null;
   });
 
   testWidgets('manuel plan: sözleşme metni otomatik yenilemeyi VAAT ETMEZ',
@@ -116,6 +122,7 @@ void main() {
     tester.view.physicalSize = const Size(1179, 2556);
     tester.view.devicePixelRatio = 3;
     addTearDown(tester.view.reset);
+    debugDefaultTargetPlatformOverride = TargetPlatform.macOS;
 
     await tester.pumpWidget(wrap(const [quarterly]));
     await settle(tester);
@@ -127,6 +134,9 @@ void main() {
 
     // "Geri yükle" mağaza eylemidir — manuel akışta anlamsız.
     expect(find.text('Geri yükle'), findsNothing);
+
+    // Override, çerçevenin invariant kontrolünden ÖNCE sıfırlanmalı.
+    debugDefaultTargetPlatformOverride = null;
   });
 
   testWidgets(
@@ -167,11 +177,37 @@ void main() {
     debugDefaultTargetPlatformOverride = null;
   });
 
+  testWidgets(
+      'ANDROID: Play ödeme politikası — manuel satın alma akışı GİZLİ',
+      (tester) async {
+    tester.view.physicalSize = const Size(1179, 2556);
+    tester.view.devicePixelRatio = 3;
+    addTearDown(tester.view.reset);
+    // Widget testleri varsayılan olarak Android platformunda koşar.
+
+    await tester.pumpWidget(wrap(const [quarterly]));
+    await settle(tester);
+    expect(tester.takeException(), isNull);
+
+    // Google Play de harici ödemeye yönlendirmeyi yasaklar: hiçbir kanal,
+    // adım ya da fiyat-CTA görünmemeli.
+    expect(find.textContaining('Nasıl premium olurum?'), findsNothing);
+    expect(find.byType(ContactChannels), findsNothing);
+    expect(find.textContaining('Telegram'), findsNothing);
+    expect(find.textContaining('499,99'), findsNothing);
+
+    // Değer önerisi ve erişim modeli yine anlatılır.
+    expect(find.text('Koçunun tam beynini aç'), findsOneWidget);
+    expect(find.textContaining('aynı hesapla giriş yaptığın her yerde'),
+        findsOneWidget);
+  });
+
   testWidgets('fiyat TR biçiminde ve dönem etiketiyle gösterilir',
       (tester) async {
     tester.view.physicalSize = const Size(1179, 2556);
     tester.view.devicePixelRatio = 3;
     addTearDown(tester.view.reset);
+    debugDefaultTargetPlatformOverride = TargetPlatform.macOS;
 
     await tester.pumpWidget(wrap(const [quarterly]));
     await settle(tester);
@@ -179,6 +215,9 @@ void main() {
     // "499.99 TRY" değil: "499,99 TL / 3 ay" (web formatPrice ile aynı).
     expect(find.textContaining('499,99 TL'), findsOneWidget);
     expect(find.textContaining('3 ay'), findsWidgets);
+
+    // Override, çerçevenin invariant kontrolünden ÖNCE sıfırlanmalı.
+    debugDefaultTargetPlatformOverride = null;
   });
 
   group('BillingPlan biçimlendirme', () {

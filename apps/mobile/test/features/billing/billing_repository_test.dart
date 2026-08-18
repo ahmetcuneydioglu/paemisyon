@@ -42,7 +42,7 @@ void main() {
           'validUntil': '2027-08-17T10:00:00.000Z',
           'plan': 'yearly',
         }
-      }).verifyPurchase(transactionJws: 'jws');
+      }).verifyPurchase(transactionJws: 'jws', platform: 'apple');
 
       expect(r.isPremium, isTrue);
       expect(r.plan, 'yearly');
@@ -53,7 +53,7 @@ void main() {
       // İstemci eskiden cevaba bakmadan "Premium etkin 🎉" diyordu.
       final r = await _repo(200, {
         'data': {'isPremium': false, 'validUntil': null, 'plan': 'yearly'}
-      }).verifyPurchase(transactionJws: 'jws');
+      }).verifyPurchase(transactionJws: 'jws', platform: 'apple');
 
       expect(r.isPremium, isFalse);
     });
@@ -64,7 +64,7 @@ void main() {
       await expectLater(
         _repo(400, {
           'error': {'message': 'Ürün bir plana eşlenmedi: x'}
-        }).verifyPurchase(transactionJws: 'jws'),
+        }).verifyPurchase(transactionJws: 'jws', platform: 'apple'),
         throwsA(isA<PurchaseVerifyFailure>()
             .having((e) => e.permanent, 'permanent', isTrue)
             .having((e) => e.message, 'message', contains('plana eşlenmedi'))),
@@ -76,7 +76,7 @@ void main() {
       await expectLater(
         _repo(401, {
           'error': {'message': 'Oturum gerekli'}
-        }).verifyPurchase(transactionJws: 'jws'),
+        }).verifyPurchase(transactionJws: 'jws', platform: 'apple'),
         throwsA(isA<PurchaseVerifyFailure>()
             .having((e) => e.permanent, 'permanent', isFalse)),
       );
@@ -86,7 +86,7 @@ void main() {
       await expectLater(
         _repo(500, {
           'error': {'message': 'Sunucu hatası'}
-        }).verifyPurchase(transactionJws: 'jws'),
+        }).verifyPurchase(transactionJws: 'jws', platform: 'apple'),
         throwsA(isA<PurchaseVerifyFailure>()
             .having((e) => e.permanent, 'permanent', isFalse)),
       );

@@ -31,11 +31,12 @@ import '../domain/billing_plan.dart';
 /// Plan mağazaya bağlı değilken "Mağazada bulunamadı" hatası ve ölü buton
 /// GÖSTERİLMEZ: bu bir hata değil, ürünün kasıtlı satış modelidir.
 ///
-/// APPLE 3.1.1: iOS'ta dijital içeriğin harici satın alınmasına YÖNLENDİRME
+/// MAĞAZA POLİTİKASI (Apple 3.1.1 + Google Play Ödeme Politikası): mobil
+/// uygulamada dijital içeriğin harici satın alınmasına YÖNLENDİRME
 /// (Telegram/Instagram, ödeme adımları, "bize yaz", fiyat-CTA) yasaktır. Bu
-/// yüzden iOS derlemesinde manuel satın alma bölümü GİZLENİR; premium yalnız
-/// DEĞERİYLE tanıtılır (çok platformlu servis istisnası: kullanıcı web'den
-/// alıp aynı hesapla uygulamada kullanır). Android/web manuel akışı sürdürür.
+/// yüzden iOS ve Android derlemelerinde manuel satın alma bölümü GİZLENİR;
+/// premium yalnız DEĞERİYLE tanıtılır (çok platformlu servis istisnası:
+/// kullanıcı web'den alıp aynı hesapla uygulamada kullanır). Web sürdürür.
 class PaywallScreen extends ConsumerStatefulWidget {
   const PaywallScreen({super.key});
 
@@ -217,9 +218,12 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
 
   Widget _content() {
     final tokens = context.tokens;
-    // Apple 3.1.1: iOS'ta harici satın almaya yönlendirme yasak. Manuel akış
-    // (Telegram/Instagram + adımlar) ve fiyat imalı teşvik yalnız iOS-dışında.
-    final hideManualPurchase = defaultTargetPlatform == TargetPlatform.iOS;
+    // MAĞAZA POLİTİKALARI: hem Apple 3.1.1 hem Google Play Ödeme Politikası,
+    // uygulama içi dijital içerik için harici ödemeye YÖNLENDİRMEYİ yasaklar.
+    // Bu yüzden manuel akış (Telegram/Instagram + adımlar) ve fiyat imalı
+    // teşvik her iki mağaza uygulamasında da gizlenir; web'de sürer.
+    final hideManualPurchase = defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.android;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(

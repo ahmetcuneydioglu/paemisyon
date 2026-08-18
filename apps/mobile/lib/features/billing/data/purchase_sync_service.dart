@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -134,9 +135,13 @@ class PurchaseSyncService {
       }
 
       try {
-        final r = await _ref
-            .read(billingRepositoryProvider)
-            .verifyPurchase(transactionJws: p.verificationData.serverVerificationData);
+        final r = await _ref.read(billingRepositoryProvider).verifyPurchase(
+              // Her iki mağazada da doğrulama verisi buradan gelir: Apple'da
+              // imzalı işlem (JWS), Play'de satın alma jetonu.
+              transactionJws: p.verificationData.serverVerificationData,
+              platform: Platform.isAndroid ? 'google' : 'apple',
+              productId: p.productID,
+            );
         _verified.add(id);
         verified++;
         if (r.isPremium) granted = true;

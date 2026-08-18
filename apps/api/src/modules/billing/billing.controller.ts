@@ -1,4 +1,4 @@
-import { BadRequestException, Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -18,10 +18,8 @@ export class BillingController {
 
   @Post('verify')
   verify(@CurrentUser() user: AuthenticatedUser, @Body() dto: VerifyPurchaseDto) {
-    if (dto.platform !== 'apple') {
-      // Google Play doğrulaması Android sprintinde eklenecek.
-      throw new BadRequestException('Şu an yalnızca Apple StoreKit destekleniyor.');
-    }
-    return this.billing.verifyApple(user.id, dto.transactionJws);
+    return dto.platform === 'apple'
+      ? this.billing.verifyApple(user.id, dto.transactionJws)
+      : this.billing.verifyGoogle(user.id, dto.transactionJws, dto.productId);
   }
 }

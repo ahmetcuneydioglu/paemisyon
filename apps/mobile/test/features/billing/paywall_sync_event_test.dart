@@ -60,7 +60,8 @@ class _FakeBillingRepository implements BillingRepository {
   @override
   Future<VerifyResult> verifyPurchase({
     required String transactionJws,
-    String platform = 'apple',
+    required String platform,
+    String? productId,
   }) async =>
       const VerifyResult(isPremium: true);
 
@@ -107,6 +108,7 @@ void main() {
       error: 'Ürün bir plana eşlenmedi',
     ));
     await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
 
     expect(find.byType(SnackBar), findsNothing,
         reason: 'arka plan senkronu kullanıcıya toast göstermemeli');
@@ -123,6 +125,7 @@ void main() {
       userInitiated: true,
     ));
     await t.pump();
+    await t.pump(const Duration(milliseconds: 50)); // SnackBar giriş animasyonu
 
     expect(find.text('Premium etkin! 🎉'), findsOneWidget);
     expect(find.byType(SnackBar), findsOneWidget);
@@ -141,6 +144,7 @@ void main() {
       userInitiated: true,
     ));
     await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
 
     expect(find.text('Premium etkin! 🎉'), findsNothing);
     expect(find.text('Bu hesapta aktif bir premium bulunamadı.'), findsOneWidget);
@@ -157,6 +161,7 @@ void main() {
       error: 'Satın alma doğrulanamadı.',
     ));
     await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
 
     expect(find.byType(SnackBar), findsOneWidget);
     expect(find.text('Satın alma doğrulanamadı.'), findsOneWidget);
