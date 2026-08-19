@@ -37,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/sss`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/gizlilik`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/kosullar`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/hesap-sil`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const lawPages: MetadataRoute.Sitemap = laws.map((l) => ({
