@@ -6,6 +6,8 @@
 export const config = {
   apiBaseUrl: process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:3000/api/v1",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://paemisyon.com",
+  /** App Store ürün sayfası (iOS 1.0 — 20 Ağu 2026'da yayında). */
+  appStoreUrl: "https://apps.apple.com/tr/app/paemisyon/id6802087692",
   supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://yhkiuzevyqdqtofrmroj.supabase.co",
   supabaseAnonKey:
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??

@@ -4,6 +4,7 @@ import { api } from "@/lib/api";
 import type { ExamListItem } from "@/lib/types";
 import { publicApi, type DailyQuiz, type LawSummary } from "@/lib/public-api";
 import { getPricing, formatPrice, periodLabel, primaryPlan } from "@/lib/pricing";
+import { AppStoreBadge } from "@/components/app-store-badge";
 import { Countdown } from "@/components/countdown";
 import { DailyQuizCard } from "@/components/daily-quiz";
 import { formatDate, formatTime } from "@/lib/format";
@@ -101,6 +102,21 @@ export default async function HomePage() {
               Denemelere göz at
             </Link>
           )}
+        </div>
+      </section>
+
+      {/* ── Mobil uygulama şeridi: web'den gelen ziyaretçiyi cihaza taşır ── */}
+      <section className="border-b border-line bg-surface-alt px-4 py-5">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-3 text-center sm:flex-row sm:gap-6 sm:text-left">
+          <div>
+            <p className="font-heading text-[15px] font-bold text-ink">
+              Koçun cebinde: iPhone uygulaması yayında
+            </p>
+            <p className="text-[13px] text-ink-soft">
+              Çevrimdışı çalış, mevzuatı ara, tekrar zamanı gelince haberin olsun.
+            </p>
+          </div>
+          <AppStoreBadge className="shrink-0" width={148} />
         </div>
       </section>
 
