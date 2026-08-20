@@ -9,6 +9,7 @@ import { webRoute } from "@/lib/routes";
 import { Card, CardTitle } from "@/components/ui/card";
 import { CoachCard } from "@/components/ui/coach-card";
 import { GoalProgress } from "@/components/ui/goal-progress";
+import { AppStoreBadge } from "@/components/app-store-badge";
 import { StreakBadge } from "@/components/ui/streak-badge";
 import { ButtonLink } from "@/components/ui/button";
 import { FocusPicker } from "@/components/bugun/focus-picker";
@@ -56,7 +57,13 @@ export default async function BugunPage() {
         <h1 className="font-heading text-xl font-bold text-ink">
           {greeting.displayName ? `Merhaba, ${greeting.displayName}` : "Merhaba"}
         </h1>
-        <StreakBadge days={today.streak.current} atRisk={today.streak.atRisk} />
+        <div className="flex items-center gap-3">
+          {/* Girişli kullanıcı da uygulamayı bulabilsin: web'de çalışan aday
+              genelde native sürümü olduğunu bilmiyor. Seri rozetiyle aynı
+              hizada ama daha sessiz (küçük ölçek). */}
+          <AppStoreBadge width={104} />
+          <StreakBadge days={today.streak.current} atRisk={today.streak.atRisk} />
+        </div>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
