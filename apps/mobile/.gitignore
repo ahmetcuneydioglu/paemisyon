@@ -16,3 +16,7 @@ ios/Flutter/flutter_export_environment.sh
 **/GoogleService-Info.plist
 **/google-services.json
 *.env
+
+# Yayın paketleri — sürüm çıktısıdır, depoya girmez (58 MB+).
+*.aab
+*.apk
