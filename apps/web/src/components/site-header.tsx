@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AppStoreBadge } from "./app-store-badge";
 import { BrandMark } from "./brand-mark";
 import { SiteNav } from "./site-nav";
 import { HeaderAuthArea } from "./header-auth-area";
@@ -29,6 +30,8 @@ export function SiteHeader() {
         </Link>
         <SiteNav items={NAV} authArea={authArea} />
         <div className="hidden items-center gap-3 md:flex">
+          {/* Dar md aralığında nav ile çakışmasın diye yalnız lg üstünde. */}
+          <AppStoreBadge className="hidden lg:block" width={108} />
           <ThemeToggle compact />
           {authArea}
         </div>

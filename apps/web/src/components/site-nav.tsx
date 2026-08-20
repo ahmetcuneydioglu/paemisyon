@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { AppStoreBadge } from "./app-store-badge";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ThemeToggle } from "./theme-toggle";
@@ -60,6 +61,15 @@ export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React
 
       {open && (
         <div className="absolute inset-x-0 top-full z-40 border-b border-line bg-surface shadow-lg md:hidden">
+          <div className="flex items-center justify-between gap-3 border-b border-line px-3 py-3">
+            <p className="text-[13px] font-medium leading-snug text-ink">
+              iPhone uygulaması
+              <span className="block text-[12px] font-normal text-ink-soft">
+                Çevrimdışı çalış, mevzuatı ara
+              </span>
+            </p>
+            <AppStoreBadge className="shrink-0" width={120} />
+          </div>
           <nav className="flex flex-col p-2" aria-label="Site (mobil)">
             {items.map((n) => (
               <Link
