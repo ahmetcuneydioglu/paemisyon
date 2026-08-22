@@ -98,9 +98,11 @@ void main() {
     //    ekranın asıl kusuru "buton var ama ölü" olmasıydı.
     final channels = find.byType(ContactChannels);
     expect(channels, findsOneWidget);
+    // FilledButton.icon özel bir alt sınıf döndürür; byType tam tip eşleşmesi
+    // yaptığı için bulamaz — bySubtype gerekir.
     final telegramBtn = tester.widget<FilledButton>(
       find
-          .descendant(of: channels, matching: find.byType(FilledButton))
+          .descendant(of: channels, matching: find.bySubtype<FilledButton>())
           .first,
     );
     expect(telegramBtn.onPressed, isNotNull,
