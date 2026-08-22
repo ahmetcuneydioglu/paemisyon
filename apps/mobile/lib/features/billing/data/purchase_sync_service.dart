@@ -10,6 +10,10 @@ import '../../../core/error/failure.dart';
 import '../../me/data/me_repository.dart';
 import 'billing_repository.dart';
 
+/// Kullanıcının bir teslimat turunu hangi eylemle başlattığı. [none] = açılışta
+/// kendiliğinden gelen kuyruk temizliği (sessiz kalmalı).
+enum PurchaseFlow { none, buy, restore }
+
 /// Bir StoreKit teslimat turunun (batch) SONUCU — ekrana tek toast düşsün diye
 /// işlem başına değil, tur başına üretilir.
 class PurchaseSyncEvent {
@@ -22,21 +26,28 @@ class PurchaseSyncEvent {
   /// Başarısız işlem sayısı.
   final int failed;
 
+  /// Mağazada onay bekleyen (pending) işlem sayısı — sonuç ayrı turda gelir.
+  final int pending;
+
   /// Gösterilecek hata (varsa).
   final String? error;
 
-  /// Kullanıcı bu turu kendisi mi başlattı (Satın Al / Geri Yükle)? Açılışta
-  /// kendiliğinden gelen kuyruk temizliği SESSİZ olmalı — eski hatanın kökü
+  /// Turu başlatan eylem. Kullanıcı başlatmadıysa ([PurchaseFlow.none])
+  /// açılıştaki kuyruk temizliğidir ve SESSİZ kalmalı — eski hatanın kökü
   /// buydu: her açılışta kuyruktaki işlemler toast yağmuruna dönüşüyordu.
-  final bool userInitiated;
+  final PurchaseFlow flow;
 
   const PurchaseSyncEvent({
     required this.premiumGranted,
     required this.verified,
     required this.failed,
-    required this.userInitiated,
+    required this.flow,
+    this.pending = 0,
     this.error,
   });
+
+  /// Kullanıcı bu turu kendisi mi başlattı (Satın Al / Geri Yükle)?
+  bool get userInitiated => flow != PurchaseFlow.none;
 }
 
 /// StoreKit/Play işlem kuyruğunun TEK sahibi (Doc 15).
@@ -61,8 +72,8 @@ class PurchaseSyncService {
   final StreamController<PurchaseSyncEvent> _events =
       StreamController<PurchaseSyncEvent>.broadcast();
 
-  /// Sıradaki turun kullanıcı tarafından başlatılıp başlatılmadığı.
-  bool _userInitiated = false;
+  /// Sıradaki turu başlatan kullanıcı eylemi (varsa).
+  PurchaseFlow _flow = PurchaseFlow.none;
 
   Stream<PurchaseSyncEvent> get events => _events.stream;
 
@@ -75,7 +86,7 @@ class PurchaseSyncService {
           premiumGranted: false,
           verified: 0,
           failed: 1,
-          userInitiated: false,
+          flow: PurchaseFlow.none,
           error: 'Mağaza bağlantısında sorun oluştu.',
         ),
       ),
@@ -85,27 +96,29 @@ class PurchaseSyncService {
   /// Satın alma başlat. Abonelik de ömürlük de `buyNonConsumable` ile alınır
   /// (in_app_purchase: tüketilebilir OLMAYAN her ürün bu yoldan geçer).
   Future<void> buy(ProductDetails product) async {
-    _userInitiated = true;
+    _flow = PurchaseFlow.buy;
     await _iap.buyNonConsumable(purchaseParam: PurchaseParam(productDetails: product));
   }
 
   Future<void> restore() async {
-    _userInitiated = true;
+    _flow = PurchaseFlow.restore;
     await _iap.restorePurchases();
   }
 
   Future<void> _onBatch(List<PurchaseDetails> purchases) async {
-    final initiated = _userInitiated;
-    _userInitiated = false;
+    final flow = _flow;
+    _flow = PurchaseFlow.none;
 
     var granted = false;
     var verified = 0;
     var failed = 0;
+    var pending = 0;
     String? error;
 
     for (final p in purchases) {
       switch (p.status) {
         case PurchaseStatus.pending:
+          pending++;
           continue; // sonuç ayrı bir turda gelir
         case PurchaseStatus.canceled:
           await _finish(p);
@@ -159,12 +172,17 @@ class PurchaseSyncService {
     }
 
     if (granted) _ref.invalidate(meProvider); // premium anında yansısın
-    if (verified > 0 || failed > 0) {
+    // Kullanıcı başlattıysa tur SONUÇSUZ da olsa olay yayınlanır: Play/StoreKit
+    // sayfası iptal edilince ya da geri yüklemede satın alma çıkmayınca batch
+    // "0 doğrulanan, 0 hatalı" biter; olay gitmezse ekran sonsuza dek
+    // "yükleniyor"da takılı kalıyordu.
+    if (verified > 0 || failed > 0 || flow != PurchaseFlow.none) {
       _emit(PurchaseSyncEvent(
         premiumGranted: granted,
         verified: verified,
         failed: failed,
-        userInitiated: initiated,
+        pending: pending,
+        flow: flow,
         error: error,
       ));
     }
