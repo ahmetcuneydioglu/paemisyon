@@ -104,7 +104,7 @@ void main() {
       premiumGranted: false,
       verified: 5,
       failed: 2,
-      userInitiated: false,
+      flow: PurchaseFlow.none,
       error: 'Ürün bir plana eşlenmedi',
     ));
     await t.pump();
@@ -122,7 +122,7 @@ void main() {
       premiumGranted: true,
       verified: 3, // üç işlem doğrulandı ama TEK toast
       failed: 0,
-      userInitiated: true,
+      flow: PurchaseFlow.buy,
     ));
     await t.pump();
     await t.pump(const Duration(milliseconds: 50)); // SnackBar giriş animasyonu
@@ -141,7 +141,7 @@ void main() {
       premiumGranted: false,
       verified: 1,
       failed: 0,
-      userInitiated: true,
+      flow: PurchaseFlow.buy,
     ));
     await t.pump();
     await t.pump(const Duration(milliseconds: 50));
@@ -157,7 +157,7 @@ void main() {
       premiumGranted: false,
       verified: 0,
       failed: 4, // dört işlem patladı ama TEK toast
-      userInitiated: true,
+      flow: PurchaseFlow.buy,
       error: 'Satın alma doğrulanamadı.',
     ));
     await t.pump();
@@ -165,5 +165,59 @@ void main() {
 
     expect(find.byType(SnackBar), findsOneWidget);
     expect(find.text('Satın alma doğrulanamadı.'), findsOneWidget);
+  });
+
+  testWidgets('satın alma iptali (sonuçsuz tur) → toast YOK, sessiz sıfırlama',
+      (t) async {
+    final sync = await pumpPaywall(t);
+
+    // Kullanıcı Play/App Store ödeme sayfasını kapattı: batch boş biter.
+    // Olay yine yayınlanır (yükleniyor durumu sıfırlansın) ama toast çıkmaz.
+    sync.emit(const PurchaseSyncEvent(
+      premiumGranted: false,
+      verified: 0,
+      failed: 0,
+      flow: PurchaseFlow.buy,
+    ));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
+
+    expect(find.byType(SnackBar), findsNothing,
+        reason: 'iptal eden kullanıcıya hata toast\'ı gösterilmez');
+  });
+
+  testWidgets('geri yükleme boş döndü → kullanıcı bilgilendirilir', (t) async {
+    final sync = await pumpPaywall(t);
+
+    sync.emit(const PurchaseSyncEvent(
+      premiumGranted: false,
+      verified: 0,
+      failed: 0,
+      flow: PurchaseFlow.restore,
+    ));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
+
+    expect(find.text('Bu hesapta geri yüklenecek satın alma bulunamadı.'),
+        findsOneWidget);
+  });
+
+  testWidgets('ödeme mağazada onay bekliyor → bekleme mesajı', (t) async {
+    final sync = await pumpPaywall(t);
+
+    sync.emit(const PurchaseSyncEvent(
+      premiumGranted: false,
+      verified: 0,
+      failed: 0,
+      pending: 1,
+      flow: PurchaseFlow.buy,
+    ));
+    await t.pump();
+    await t.pump(const Duration(milliseconds: 50));
+
+    expect(
+        find.text(
+            'Ödemen onay bekliyor — tamamlanınca premium kendiliğinden açılır.'),
+        findsOneWidget);
   });
 }

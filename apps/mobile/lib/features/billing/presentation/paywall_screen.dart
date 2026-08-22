@@ -92,7 +92,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
         if (available) {
           final resp = await _iap.queryProductDetails(ids);
           for (final pd in resp.productDetails) {
-            products[pd.id] = pd;
+            // Android'de bir abonelik, her base plan / teklif (offer)
+            // kombinasyonu için AYNI id ile ayrı ProductDetails üretir. Map'e
+            // körlemesine yazmak "son gelen teklif" gibi rastgele bir seçim
+            // yapar; deterministik olarak EN DÜŞÜK fiyatlı teklif tutulur
+            // (tanıtım fiyatı varsa kullanıcı lehine olan).
+            final cur = products[pd.id];
+            if (cur == null || pd.rawPrice < cur.rawPrice) {
+              products[pd.id] = pd;
+            }
           }
         }
       }
@@ -156,10 +164,19 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     if (!e.userInitiated) return; // sessiz senkron
     if (e.failed > 0) {
       _snack(e.error ?? 'Satın alma doğrulanamadı.');
+    } else if (e.pending > 0) {
+      // Ödeme mağazada onay bekliyor (ör. banka onayı): sonuç ayrı turda gelir.
+      _snack('Ödemen onay bekliyor — tamamlanınca premium kendiliğinden açılır.');
     } else if (e.verified > 0) {
       // Doğrulandı ama premium açılmadı: süresi dolmuş/iade edilmiş işlem.
       _snack('Bu hesapta aktif bir premium bulunamadı.');
+    } else if (e.flow == PurchaseFlow.restore) {
+      // Geri yükleme hiçbir satın alma getirmedi — sessiz kalınırsa kullanıcı
+      // butonun çalışmadığını sanır.
+      _snack('Bu hesapta geri yüklenecek satın alma bulunamadı.');
     }
+    // flow == buy + sonuçsuz tur: kullanıcı mağaza sayfasını iptal etti —
+    // toast gerekmez, yalnız yükleniyor durumu sıfırlanır.
   }
 
   void _fail(String m) {
@@ -224,6 +241,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     // teşvik her iki mağaza uygulamasında da gizlenir; web'de sürer.
     final hideManualPurchase = defaultTargetPlatform == TargetPlatform.iOS ||
         defaultTargetPlatform == TargetPlatform.android;
+    // Mağaza metinleri platforma göre: Android kullanıcısına App Store /
+    // StoreKit'ten söz etmek hem yanlış talimat hem Play politika riskidir.
+    final isAndroid = defaultTargetPlatform == TargetPlatform.android;
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(
@@ -263,7 +283,9 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.lg),
               child: Text(
-                'Mağaza şu an kullanılamıyor. Cihazda App Store hesabı / StoreKit yapılandırması gerekli.',
+                isAndroid
+                    ? 'Mağaza şu an kullanılamıyor. Cihazda Google Play ve oturum açılmış bir Google hesabı gerekli.'
+                    : 'Mağaza şu an kullanılamıyor. Cihazda App Store hesabı / StoreKit yapılandırması gerekli.',
                 style: TextStyle(color: tokens.danger),
               ),
             ),
@@ -275,13 +297,20 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
               hideManualPurchase ? const SizedBox.shrink() : _manualPlanSection(p)),
           const SizedBox(height: AppSpacing.xl),
           if (_hasStorePlans) ...[
-            // Apple abonelik metadata kuralı: otomatik yenileme koşulları +
-            // koşullar/gizlilik bağlantıları paywall'da görünür olmalı.
+            // Mağaza abonelik metadata kuralı (Apple + Google Play): otomatik
+            // yenileme koşulları + koşullar/gizlilik bağlantıları paywall'da
+            // görünür olmalı. Metin, kullanıcının GERÇEK mağazasını söyler.
             Text(
-              'Yıllık abonelik, dönem bitiminden en az 24 saat önce iptal '
-              'edilmedikçe App Store hesabından otomatik yenilenir. Aboneliği '
-              'App Store > Abonelikler bölümünden istediğin an iptal '
-              'edebilirsin. Ömürlük paket tek seferlik ödemedir, yenilenmez.',
+              isAndroid
+                  ? 'Yıllık abonelik, dönem sonunda iptal edilmedikçe Google Play '
+                      'hesabından otomatik yenilenir. Aboneliği Google Play > '
+                      'Ödemeler ve abonelikler > Abonelikler bölümünden istediğin '
+                      'an iptal edebilirsin. Ömürlük paket tek seferlik ödemedir, '
+                      'yenilenmez.'
+                  : 'Yıllık abonelik, dönem bitiminden en az 24 saat önce iptal '
+                      'edilmedikçe App Store hesabından otomatik yenilenir. Aboneliği '
+                      'App Store > Abonelikler bölümünden istediğin an iptal '
+                      'edebilirsin. Ömürlük paket tek seferlik ödemedir, yenilenmez.',
               style: AppTypography.caption.copyWith(color: tokens.inkSoft),
               textAlign: TextAlign.center,
             ),
