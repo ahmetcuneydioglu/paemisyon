@@ -17,6 +17,7 @@ import {
   parseBookletQuestionCode,
   parseBookletQuestionNumberLine,
   detectMathQuestionRows,
+  extractMatrixAnswerKey,
 } from './import-parser';
 
 const HEADER = 'soru;A;B;C;D;E;dogru;aciklama;zorluk';
@@ -54,7 +55,9 @@ describe('parseCsv ayraç', () => {
 
 describe('mapRows doğrulama', () => {
   it('geçerli satırı ayrıştırır: doğru şık işaretli, zorluk eşlenmiş', () => {
-    const r = mapRows(parseCsv(csv('TBMM üye tam sayısı kaçtır?;550;600;500;450;;B;2017 değişikliği;kolay')));
+    const r = mapRows(
+      parseCsv(csv('TBMM üye tam sayısı kaçtır?;550;600;500;450;;B;2017 değişikliği;kolay')),
+    );
     expect(r.errors).toEqual([]);
     expect(r.valid).toHaveLength(1);
     const q = r.valid[0];
@@ -77,10 +80,10 @@ describe('mapRows doğrulama', () => {
     expect(r.valid[0].difficulty).toBe('medium');
   });
 
-  it("dogru harfi dolu şıklardan biri değilse hata", () => {
+  it('dogru harfi dolu şıklardan biri değilse hata', () => {
     const r = mapRows(parseCsv(csv('Soru metni burada?;evet;hayır;;;;C;;')));
     expect(r.valid).toHaveLength(0);
-    expect(r.errors[0].message).toContain("dogru");
+    expect(r.errors[0].message).toContain('dogru');
   });
 
   it('tek şık hata; boş satır sessizce atlanır', () => {
@@ -109,7 +112,10 @@ describe('mapRows doğrulama', () => {
 
 describe('parseImportFile', () => {
   it('csv uzantısıyla uçtan uca çalışır', async () => {
-    const r = await parseImportFile(csv('Geçerli bir soru mu?;evet;hayır;;;;A;;orta'), 'sorular.csv');
+    const r = await parseImportFile(
+      csv('Geçerli bir soru mu?;evet;hayır;;;;A;;orta'),
+      'sorular.csv',
+    );
     expect(r.valid).toHaveLength(1);
     expect(r.totalRows).toBe(1);
   });
@@ -158,10 +164,9 @@ describe('kitapçık üstbilgisi temizleme', () => {
 
   it('başlığı şık sonundan tab/boşluk farkına rağmen söker', () => {
     const title = '8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ \tA';
-    expect(stripBookletTitle(
-      'Belediye Başkanı 8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ A',
-      title,
-    )).toBe('Belediye Başkanı');
+    expect(stripBookletTitle('Belediye Başkanı 8. DÖNEM İLK DERECE AMİRLİK EĞİTİMİ A', title)).toBe(
+      'Belediye Başkanı',
+    );
   });
 
   it('başlık yoksa yan yana şıkları ayıran boşlukları korur', () => {
@@ -175,10 +180,9 @@ describe('kitapçık üstbilgisi temizleme', () => {
 
   it('kitapçık türü harfi olmayan tekrarlı e-sınav üstbilgisini saptar', () => {
     const header = 'Emlak/Millî Emlak Müdür ve Müdür Yardımcılığı';
-    expect(detectBookletTitle([
-      `${header}\n2\n${ods}\n(130383)`,
-      `${header}\n3\n${ods}\n(130387)`,
-    ])).toBe(header);
+    expect(
+      detectBookletTitle([`${header}\n2\n${ods}\n(130383)`, `${header}\n3\n${ods}\n(130387)`]),
+    ).toBe(header);
   });
 });
 
@@ -239,9 +243,7 @@ describe('kurum soru kodlu e-sınav işaretleri', () => {
     ]);
     // Soru/şık satırları anahtar sayılmaz.
     expect(parseBookletAnswerKeyEntries('A) Cumhurbaşkanı')).toEqual([]);
-    expect(
-      parseBookletAnswerKeyEntries('3. Aşağıdakilerden hangisi doğrudur?'),
-    ).toEqual([]);
+    expect(parseBookletAnswerKeyEntries('3. Aşağıdakilerden hangisi doğrudur?')).toEqual([]);
   });
 
   it('başlıksız cevap anahtarı sayfasını desenden saptar', () => {
@@ -282,11 +284,45 @@ describe('kurum soru kodlu e-sınav işaretleri', () => {
   });
 });
 
+describe('extractMatrixAnswerKey', () => {
+  it('tablo biçimli anahtarı (numara satırı + harf satırı) çözer', () => {
+    const lines = [
+      '64. 1982 Anayasası’nda insan haklarının korunmasında',
+      'A) Bireysel başvuru',
+      '1 2 3 4 5 6',
+      'A A D D A C',
+      '7 8 9 10 11 12',
+      'C E E B E D',
+    ];
+    const { entries, consumed } = extractMatrixAnswerKey(lines);
+    expect(entries).toHaveLength(12);
+    expect(entries[0]).toEqual({ id: '1', answer: 'A' });
+    expect(entries[11]).toEqual({ id: '12', answer: 'D' });
+    expect([...consumed].sort((a, b) => a - b)).toEqual([2, 3, 4, 5]);
+  });
+
+  it('sayı/harf adedi uyuşmayan ya da artmayan dizileri anahtar saymaz', () => {
+    // Harf sayısı eksik.
+    expect(extractMatrixAnswerKey(['1 2 3 4 5 6', 'A B C D E']).entries).toHaveLength(0);
+    // Numaralar artan değil (soru metnindeki sayı dizisi).
+    expect(extractMatrixAnswerKey(['12 8 3 44 5 61', 'A B C D E A']).entries).toHaveLength(0);
+    // Kısa diziler (5'ten az) tetiklemez.
+    expect(extractMatrixAnswerKey(['1 2 3', 'A B C']).entries).toHaveLength(0);
+  });
+
+  it('araya boş satır girse de numara-harf çiftini eşler', () => {
+    const { entries } = extractMatrixAnswerKey(['1 2 3 4 5', '', 'A B C D E']);
+    expect(entries).toHaveLength(5);
+    expect(entries[4]).toEqual({ id: '5', answer: 'E' });
+  });
+});
+
 describe('klasik soru numarası ve matematik kapsam filtresi', () => {
   it('metni aynı satırda olmayan soru numarasını kabul eder', () => {
     expect(parseBookletQuestionNumberLine('26.')).toEqual({ id: '26', stem: '' });
     expect(parseBookletQuestionNumberLine('27. İşlemin sonucu kaçtır?')).toEqual({
-      id: '27', stem: 'İşlemin sonucu kaçtır?',
+      id: '27',
+      stem: 'İşlemin sonucu kaçtır?',
     });
   });
 
@@ -300,7 +336,7 @@ describe('klasik soru numarası ve matematik kapsam filtresi', () => {
       { rowNo: 6, text: 'A ve B kümelerinin Venn şeması verilmiştir.' },
       { rowNo: 7, text: 'Satış fiyatına %20 zam yapılan ürün kaç liradır?' },
       { rowNo: 8, text: 'Üçgenin bir açısı 40 derece ise diğer açı kaçtır?' },
-      { rowNo: 9, text: 'Orta Asya\'da kurulan ilk Türk devleti hangisidir?' },
+      { rowNo: 9, text: "Orta Asya'da kurulan ilk Türk devleti hangisidir?" },
       { rowNo: 10, text: 'Tabloda 0-14 yaş grubunun genel nüfusa oranı verilmiştir.' },
     ];
     expect(detectMathQuestionRows(rows)).toEqual([3, 4, 5, 6, 7, 8]);
@@ -324,13 +360,22 @@ Genel Kültür \t10`;
     const sections = detectBookletSections([cover], 100);
     expect(sections).toHaveLength(8);
     expect(sections[0]).toEqual({
-      name: 'Polis Meslek Mevzuatı', questionCount: 30, startRow: 1, endRow: 30,
+      name: 'Polis Meslek Mevzuatı',
+      questionCount: 30,
+      startRow: 1,
+      endRow: 30,
     });
     expect(sections[4]).toEqual({
-      name: 'İdare Hukuku', questionCount: 10, startRow: 61, endRow: 70,
+      name: 'İdare Hukuku',
+      questionCount: 10,
+      startRow: 61,
+      endRow: 70,
     });
     expect(sections[7]).toEqual({
-      name: 'Genel Kültür', questionCount: 10, startRow: 91, endRow: 100,
+      name: 'Genel Kültür',
+      questionCount: 10,
+      startRow: 91,
+      endRow: 100,
     });
   });
 

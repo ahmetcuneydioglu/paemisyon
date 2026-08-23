@@ -89,7 +89,9 @@ function normalizeForHash(s: string): string {
 export function questionFingerprint(stem: string, optionTexts: string[]): string {
   const normStem = normalizeForHash(stem);
   const normOpts = optionTexts.map(normalizeForHash).sort();
-  return createHash('sha256').update(normStem + '\n' + normOpts.join('\n')).digest('hex');
+  return createHash('sha256')
+    .update(normStem + '\n' + normOpts.join('\n'))
+    .digest('hex');
 }
 
 /**
@@ -160,10 +162,7 @@ function normalizeArticle(raw: string, kind?: 'ek' | 'gecici'): string | null {
  * Birden çok eşleşmede EN UZUN keyword kazanır (en özgül konu). Yoksa null.
  * Saf fonksiyon: DB yok, birim test edilebilir.
  */
-export function suggestTopic(
-  stem: string,
-  topics: TopicKeywordEntry[],
-): TopicSuggestion | null {
+export function suggestTopic(stem: string, topics: TopicKeywordEntry[]): TopicSuggestion | null {
   const hay = normalizeForMatch(stem);
   const compactHay = compactForAcronym(hay);
   let best: (TopicSuggestion & { score: number }) | null = null;
@@ -180,8 +179,10 @@ export function suggestTopic(
       if (needle.length === 0) continue;
       // C.M.K / CMK gibi kısa kısaltmalarda nokta ve boşlukları tamamen yok say.
       const compactNeedle = compactForAcronym(needle);
-      const acronymMatch = compactNeedle.length >= 2 && compactNeedle.length <= 6
-        && compactHay.includes(compactNeedle);
+      const acronymMatch =
+        compactNeedle.length >= 2 &&
+        compactNeedle.length <= 6 &&
+        compactHay.includes(compactNeedle);
       if (!hay.includes(needle) && !acronymMatch) continue;
 
       // Uzun/özgül eşleşme kazanır; eşitlikte açık DB keyword'ü ad fallback'inden
@@ -227,8 +228,9 @@ export function suggestTopicFromSection(
       return name.length >= 5 && (section.includes(name) || name.includes(section));
     })
     .sort((a, b) => {
-      const lengthDiff = Math.abs(normalizeForMatch(a.name).length - section.length)
-        - Math.abs(normalizeForMatch(b.name).length - section.length);
+      const lengthDiff =
+        Math.abs(normalizeForMatch(a.name).length - section.length) -
+        Math.abs(normalizeForMatch(b.name).length - section.length);
       return lengthDiff || byKeywordRichness(a, b);
     })[0];
   const target = exact ?? contained ?? (courseTopics.length === 1 ? courseTopics[0] : null);
@@ -248,9 +250,7 @@ export function suggestTopicForRow(
   topics: TopicKeywordEntry[],
 ): TopicSuggestion | null {
   const keywordSuggestion = suggestTopic(stem, topics);
-  const sectionSuggestion = sectionName
-    ? suggestTopicFromSection(sectionName, topics)
-    : null;
+  const sectionSuggestion = sectionName ? suggestTopicFromSection(sectionName, topics) : null;
   if (!sectionSuggestion) return keywordSuggestion;
   if (!keywordSuggestion) return sectionSuggestion;
 
@@ -334,9 +334,13 @@ export async function parseXlsx(buffer: Buffer): Promise<string[][]> {
     // 1-indexed; values dizisinin 0'ı boştur.
     for (let c = 1; c <= row.cellCount; c++) {
       const v = row.getCell(c).value;
-      cells.push(v == null ? '' : typeof v === 'object' && 'richText' in (v as object)
-        ? (v as { richText: { text: string }[] }).richText.map((t) => t.text).join('')
-        : String((v as { result?: unknown }).result ?? v));
+      cells.push(
+        v == null
+          ? ''
+          : typeof v === 'object' && 'richText' in (v as object)
+            ? (v as { richText: { text: string }[] }).richText.map((t) => t.text).join('')
+            : String((v as { result?: unknown }).result ?? v),
+      );
     }
     rows.push(cells);
   });
@@ -350,9 +354,7 @@ export function mapRows(rows: string[][]): ParseReport {
   }
 
   // Başlık satırını bul (ilk 3 satırda "soru" içeren satır).
-  const headerIdx = rows.findIndex(
-    (r, i) => i < 3 && r.some((c) => normalizeHeader(c) === 'soru'),
-  );
+  const headerIdx = rows.findIndex((r, i) => i < 3 && r.some((c) => normalizeHeader(c) === 'soru'));
   if (headerIdx === -1) {
     return {
       totalRows: rows.length,
@@ -361,7 +363,7 @@ export function mapRows(rows: string[][]): ParseReport {
         {
           rowNo: 1,
           message:
-            "Başlık satırı bulunamadı. İlk satır şu sütunları içermeli: soru, A, B, C, D, (E), dogru, (aciklama), (zorluk). Şablonu indirip kullanabilirsin.",
+            'Başlık satırı bulunamadı. İlk satır şu sütunları içermeli: soru, A, B, C, D, (E), dogru, (aciklama), (zorluk). Şablonu indirip kullanabilirsin.',
         },
       ],
     };
@@ -379,7 +381,9 @@ export function mapRows(rows: string[][]): ParseReport {
     return {
       totalRows: rows.length - headerIdx - 1,
       valid: [],
-      errors: [{ rowNo: headerIdx + 1, message: "'dogru' sütunu zorunlu (doğru şıkkın harfi: A-E)." }],
+      errors: [
+        { rowNo: headerIdx + 1, message: "'dogru' sütunu zorunlu (doğru şıkkın harfi: A-E)." },
+      ],
     };
   }
 
@@ -425,7 +429,10 @@ export function mapRows(rows: string[][]): ParseReport {
     const diffRaw = normalizeHeader(cell(difficultyCol));
     const difficulty = DIFFICULTY_MAP[diffRaw];
     if (difficulty === undefined) {
-      errors.push({ rowNo, message: `Zorluk 'kolay/orta/zor' olmalı. Bulunan: '${cell(difficultyCol)}'.` });
+      errors.push({
+        rowNo,
+        message: `Zorluk 'kolay/orta/zor' olmalı. Bulunan: '${cell(difficultyCol)}'.`,
+      });
       return;
     }
 
@@ -507,8 +514,13 @@ export function detectBookletSections(
 ): DetectedSectionRange[] {
   const cover = pageTexts.find((text) => text.includes('KONULAR') && text.includes('SORU SAYISI'));
   if (!cover) return [];
-  const lines = cover.split('\n').map((line) => line.trim()).filter(Boolean);
-  const headerIndex = lines.findIndex((line) => line.includes('KONULAR') && line.includes('SORU SAYISI'));
+  const lines = cover
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const headerIndex = lines.findIndex(
+    (line) => line.includes('KONULAR') && line.includes('SORU SAYISI'),
+  );
   if (headerIndex === -1) return [];
 
   const found: { name: string; questionCount: number }[] = [];
@@ -548,9 +560,7 @@ interface BookletQuestion {
   options: Map<string, string>;
 }
 
-export function parseBookletQuestionNumberLine(
-  line: string,
-): { id: string; stem: string } | null {
+export function parseBookletQuestionNumberLine(line: string): { id: string; stem: string } | null {
   const match = QUESTION_NUMBER_LINE_RE.exec(line);
   return match ? { id: match[1], stem: match[2] ?? '' } : null;
 }
@@ -583,6 +593,49 @@ export function parseBookletAnswerKeyEntries(
   }));
 }
 
+/** Yalnız soru numaralarından oluşan tablo satırı: "1 2 3 … 32". */
+const KEY_MATRIX_NUMBER_ROW_RE = /^\d{1,3}(?:\s+\d{1,3}){4,}$/u;
+/** Yalnız cevap harflerinden oluşan tablo satırı: "A A D … E". */
+const KEY_MATRIX_LETTER_ROW_RE = /^[A-E](?:\s+[A-E]){4,}$/u;
+
+/**
+ * Tablo (matris) biçimli cevap anahtarı: derleme PDF'lerinde anahtar, bir
+ * satır ardışık soru numarası + hemen altında bir satır cevap harfi olarak
+ * basılabilir ("1 2 … 32" / "A A … E"). Numaralar kesin artan ve harf sayısı
+ * numara sayısına eşit olmalı — soru metnindeki sayı dizileri (tablo/istatistik)
+ * bu iki koşulu birlikte sağlayamayacağı için yanlış pozitif üretmez.
+ * Dönüş: bulunan kayıtlar + anahtara harcanan satır indeksleri (soru metnine
+ * sızmasınlar diye çağıran taraf bu satırları atlar).
+ */
+export function extractMatrixAnswerKey(lines: string[]): {
+  entries: { id: string; answer: string }[];
+  consumed: Set<number>;
+} {
+  const entries: { id: string; answer: string }[] = [];
+  const consumed = new Set<number>();
+  for (let i = 0; i < lines.length; i++) {
+    const numberLine = lines[i].trim();
+    if (!KEY_MATRIX_NUMBER_ROW_RE.test(numberLine)) continue;
+    let j = i + 1;
+    while (j < lines.length && !lines[j].trim()) j++;
+    if (j >= lines.length) continue;
+    const letterLine = lines[j].trim();
+    if (!KEY_MATRIX_LETTER_ROW_RE.test(letterLine)) continue;
+    const numbers = numberLine.split(/\s+/u);
+    const letters = letterLine.split(/\s+/u);
+    if (numbers.length !== letters.length) continue;
+    const ascending = numbers.every(
+      (value, index) => index === 0 || Number(value) > Number(numbers[index - 1]),
+    );
+    if (!ascending) continue;
+    numbers.forEach((id, index) => entries.push({ id, answer: letters[index] }));
+    consumed.add(i);
+    consumed.add(j);
+    i = j;
+  }
+  return { entries, consumed };
+}
+
 /**
  * Başlıksız cevap anahtarı sayfası: "CEVAP ANAHTARI" başlığı olmayan ama
  * satırlarının çoğu anahtar kaydı olan sayfa (kullanıcı tarafından derlenmiş
@@ -601,8 +654,7 @@ export function looksLikeQuestionPage(text: string): boolean {
   const optionLines = lines.filter((l) => /^[A-E][).]\s*\S/u.test(l)).length;
   if (optionLines < 2) return false;
   return lines.some(
-    (l) =>
-      QUESTION_NUMBER_LINE_RE.test(l) || QNUM_RE.test(l) || CODE_QNUM_RE.test(l),
+    (l) => QUESTION_NUMBER_LINE_RE.test(l) || QNUM_RE.test(l) || CODE_QNUM_RE.test(l),
   );
 }
 
@@ -648,9 +700,7 @@ export function mathQuestionScore(text: string): number {
  * bulur. Blok kuralı, Genel Kültür'deki tekil tablo/yüzde sorularının
  * yanlışlıkla elenmesini önler.
  */
-export function detectMathQuestionRows(
-  rows: { rowNo: number; text: string }[],
-): number[] {
+export function detectMathQuestionRows(rows: { rowNo: number; text: string }[]): number[] {
   const scored = rows.map((row) => ({ ...row, score: mathQuestionScore(row.text) }));
   const excluded = new Set<number>();
   const anchorIndexes = scored
@@ -736,11 +786,7 @@ export function detectBookletTitle(pageTexts: string[]): string | null {
 
 /** Kitapçık başlığını tab/boşluk farklarına toleranslı biçimde söker. */
 export function stripBookletTitle(text: string, title: string): string {
-  const flexibleTitle = title
-    .trim()
-    .split(/\s+/)
-    .map(escapeRegExp)
-    .join('\\s+');
+  const flexibleTitle = title.trim().split(/\s+/).map(escapeRegExp).join('\\s+');
   const titleRe = new RegExp(`\\s*${flexibleTitle}(?:\\s*\\d{1,3})?`, 'gu');
   const cleaned = text.replace(titleRe, ' ');
   // Başlık yoksa satırı byte-düzeyinde koru: iki+ boşluk, PDF'de yan yana
@@ -776,13 +822,22 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     const questionPage = looksLikeQuestionPage(text);
     // Anahtarı BAŞA koyan derlemelerde soru sayfası gelince anahtar modu biter.
     if (inKey && questionPage && !pageHasKey) inKey = false;
+    const pageLines = text.split('\n');
+    // Tablo biçimli anahtar ("1 2 … 32" / "A A … E") sayfanın herhangi bir
+    // yerinde olabilir: derlemelerde son soru sayfasının altına da, tek başına
+    // ayrı bir sayfaya da basılır — bu yüzden sayfa eleme kararından ÖNCE aranır.
+    const matrixKey = extractMatrixAnswerKey(pageLines);
+    for (const entry of matrixKey.entries) answerKey.set(entry.id, entry.answer);
+
     // İşlenecek sayfalar: resmî kitapçık sayfası, anahtar sayfası ya da elle
     // derlenmiş soru sayfası. Kapak/yönerge sayfaları atlanır.
     if (!inKey && !pageHasKey && !text.includes(ODSGM_HEADER) && !questionPage) {
       continue;
     }
 
-    for (const raw of text.split('\n')) {
+    for (let lineIndex = 0; lineIndex < pageLines.length; lineIndex++) {
+      if (matrixKey.consumed.has(lineIndex)) continue;
+      const raw = pageLines[lineIndex];
       let line = raw.trim();
       if (!line) continue;
       if (line.includes(KEY_TITLE)) {
@@ -836,9 +891,9 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
     }
     const numberedQuestion = parseBookletQuestionNumberLine(line);
     if (
-      numberedQuestion
-      && Number(numberedQuestion.id) === expectedNo
-      && (answerKey.has(numberedQuestion.id) || cancelledIds.has(numberedQuestion.id))
+      numberedQuestion &&
+      Number(numberedQuestion.id) === expectedNo &&
+      (answerKey.has(numberedQuestion.id) || cancelledIds.has(numberedQuestion.id))
     ) {
       if (current) questions.push(current);
       current = {
@@ -868,10 +923,14 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   // ── Rapora dönüştür (rowNo = kitapçıktaki soru numarası) ──
   const valid: ParsedQuestionRow[] = [];
   const errors: RowError[] = [];
-  const mathRows = new Set(detectMathQuestionRows(questions.map((question) => ({
-    rowNo: question.no,
-    text: [question.stem, ...question.options.values()].join('\n'),
-  }))));
+  const mathRows = new Set(
+    detectMathQuestionRows(
+      questions.map((question) => ({
+        rowNo: question.no,
+        text: [question.stem, ...question.options.values()].join('\n'),
+      })),
+    ),
+  );
   const autoExcluded: RowError[] = [];
   for (const q of questions) {
     if (cancelledIds.has(q.answerKeyId)) {
@@ -906,7 +965,10 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
       continue;
     }
     if (!opts.some((o) => o.label === correct)) {
-      errors.push({ rowNo: q.no, message: `Soru ${q.no}: doğru şık '${correct}' dolu şıklar arasında yok.` });
+      errors.push({
+        rowNo: q.no,
+        message: `Soru ${q.no}: doğru şık '${correct}' dolu şıklar arasında yok.`,
+      });
       continue;
     }
     valid.push({
@@ -939,7 +1001,9 @@ export async function parseBookletPdf(buffer: Buffer): Promise<ParseReport> {
   // Kaynak önerisi: "... TARİHİNDE YAPILAN <kurum> <sınav>" satırları.
   const detectedSource =
     sourceLines.length > 0
-      ? dehyphenate(sourceLines.join(' ')).replace(/\s*SORU KİTAPÇIĞI.*$/i, '').trim() || null
+      ? dehyphenate(sourceLines.join(' '))
+          .replace(/\s*SORU KİTAPÇIĞI.*$/i, '')
+          .trim() || null
       : null;
 
   const detectedSections = detectBookletSections(
