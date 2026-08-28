@@ -31,6 +31,27 @@ export class AdminQuestionsService {
     private readonly audit: AuditService,
   ) {}
 
+  // Arama kutusuna yapıştırılan metin UUID ön eki mi? En az 6, en çok 36 karakter
+  // olmak üzere yalnız hex ve tire içeriyorsa kimlik araması sayılır. 6 karakterin
+  // altı, normal metin aramasını bozacak kadar geniştir (ör. "feda" bir kelimedir).
+  private idOnekiMi(s: string): string | null {
+    const t = s.trim().toLowerCase();
+    return /^[0-9a-f]{6,8}(-[0-9a-f-]*)?$/.test(t) && t.length <= 36 ? t : null;
+  }
+
+  // Verilen ön ekle başlayan question.id veya questionVersion.id'lerden soru
+  // kimliklerini döndürür. Ön ek parametre olarak geçirilir (SQL enjeksiyonu yok).
+  private async idOnekindenSoruBul(onek: string): Promise<string[]> {
+    const desen = `${onek}%`;
+    const [sorular, surumler] = await Promise.all([
+      this.prisma.$queryRaw<Array<{ id: string }>>`
+        SELECT id FROM questions WHERE id::text LIKE ${desen} LIMIT 50`,
+      this.prisma.$queryRaw<Array<{ question_id: string }>>`
+        SELECT DISTINCT question_id FROM question_versions WHERE id::text LIKE ${desen} LIMIT 50`,
+    ]);
+    return [...new Set([...sorular.map((r) => r.id), ...surumler.map((r) => r.question_id)])];
+  }
+
   // ── Liste (filtre: durum/konu/arama — Doc 9 §4.1) ──
   async list(params: {
     status?: ContentStatus;
@@ -47,11 +68,23 @@ export class AdminQuestionsService {
     if (params.status) versionFilter.status = params.status;
     if (params.search) versionFilter.stem = { contains: params.search, mode: 'insensitive' };
 
-    const where: Prisma.QuestionWhereInput = {
-      deletedAt: null,
-      ...(params.topicId ? { topicId: params.topicId } : {}),
-      ...(params.status || params.search ? { versions: { some: versionFilter } } : {}),
-    };
+    // Arama metni bir UUID ya da UUID ön eki ise, kök metni yerine KİMLİK araması
+    // yapılır: hem question.id hem questionVersion.id denenir (inceleme raporları
+    // sürüm kimliğinin ön ekini verir). UUID sütunlarında Prisma startsWith
+    // desteklemediğinden ::text LIKE ile ham sorgu kullanılır.
+    const idAramasi = params.search ? this.idOnekiMi(params.search) : null;
+    const idIleBulunan = idAramasi ? await this.idOnekindenSoruBul(idAramasi) : null;
+
+    // Kimlik eşleşmesi varsa durum/konu filtreleri UYGULANMAZ: kullanıcı belirli
+    // bir soruyu aradığında açık bir filtre yüzünden "bulunamadı" görmemelidir.
+    // Eşleşme yoksa (ör. hex'e benzeyen normal bir kelime) metin aramasına düşülür.
+    const where: Prisma.QuestionWhereInput = idIleBulunan?.length
+      ? { deletedAt: null, id: { in: idIleBulunan } }
+      : {
+          deletedAt: null,
+          ...(params.topicId ? { topicId: params.topicId } : {}),
+          ...(params.status || params.search ? { versions: { some: versionFilter } } : {}),
+        };
 
     // Sıralama: "Yayında" filtresinde en YENİ YAYINLANAN üstte (yayın anının
     // vekili: yayındaki sürümün createdAt'i — Question'da publishedAt yok).
