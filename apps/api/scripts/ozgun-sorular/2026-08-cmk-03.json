@@ -1,0 +1,444 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "36",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre ceza mahkemeleri tarafından alınan kararlardan infaz edilecek olanlar aşağıdakilerin hangisine verilir?",
+    "options": [
+      { "label": "A", "text": "Kolluk" },
+      { "label": "B", "text": "Bölge adliye mahkemesi" },
+      { "label": "C", "text": "Cumhuriyet başsavcılığı", "isCorrect": true },
+      { "label": "D", "text": "Sulh ceza hâkimliği" },
+      { "label": "E", "text": "Naip hâkim" }
+    ],
+    "explanation": "CMK m.36/2 açıkça 'İnfaz edilecek kararlar, Cumhuriyet Başsavcılığına verilir' demektedir. Mahkemeler hüküm verir; hükmün infazını takip etme görevi ise Cumhuriyet başsavcılığına aittir. Hapis cezasını içeren kesinleşmiş mahkûmiyet kararları, hangi hükümlü ve hangi cezanın infazına ilişkin olduğu açıkça belirtilerek Cumhuriyet başsavcılığına verilir; başsavcılıkça infaz defterine kaydedilen ilâmdaki cezanın süresi gözetilerek hükümlü hakkında çağrı kâğıdı veya yakalama emri çıkarılır. Her türlü tebligat ve yazışmayı ise mahkeme başkanı veya hâkim yapar (m.36/1).",
+    "difficulty": "easy",
+    "sourceLabel": "2024 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 36",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "60",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre yasal bir sebep olmaksızın tanıklıktan çekinen kişi hakkında uygulanacak disiplin hapsi kararıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Bir dava ve işle ilgili olarak süresi 3 ayı geçemez." },
+      { "label": "B", "text": "İtiraz edilemez.", "isCorrect": true },
+      { "label": "C", "text": "Seçenek yaptırımlara çevrilemez." },
+      { "label": "D", "text": "Tekerrüre esas olmaz." },
+      { "label": "E", "text": "Ertelenemez." }
+    ],
+    "explanation": "CMK m.60/4 uyarınca DİSİPLİN HAPSİ KARARINA İTİRAZ EDİLEBİLİR; bu nedenle B yanlıştır. m.60/1'e göre yasal bir sebep olmaksızın tanıklıktan veya yeminden çekinen tanık hakkında, bundan doğan giderlere hükmedilmekle beraber, dava hakkında hüküm verilinceye kadar ve HER HÂLDE ÜÇ AYI GEÇMEMEK üzere disiplin hapsi verilebilir; kişi yükümlülüğüne uygun davranırsa derhâl serbest bırakılır. Disiplin hapsinin m.2/1-l'deki tanımı gereği bu müeyyide SEÇENEK YAPTIRIMLARA ÇEVRİLEMEZ, önödeme uygulanamaz, TEKERRÜRE ESAS OLMAZ, şartla salıverilme hükümleri uygulanamaz, ERTELENEMEZ ve adlî sicil kayıtlarına geçirilmez.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 2, 60",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "150",
+    "stem": "Ceza muhakemesinde müdafi seçimi ve görevlendirilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Müdafi seçebilecek durumda olmadığını beyan eden 18 yaşından büyük şüpheli veya sanık için istemi aranmaksızın bir müdafi görevlendirilir.", "isCorrect": true },
+      { "label": "B", "text": "Baro tarafından müdafi görevlendirilen hâllerde şüpheli veya sanık sonradan müdafi seçerse baro tarafından görevlendirilen avukatın görevi sona erer." },
+      { "label": "C", "text": "Alt sınırı 5 yıldan fazla hapis cezasını gerektiren suçlardan dolayı yapılan soruşturma ve kovuşturmada şüpheli veya sanığın istemi aranmaksızın bir müdafi görevlendirilir." },
+      { "label": "D", "text": "Müdafi bulunmayan çocuk şüpheli veya sanık için istemi aranmaksızın bir müdafi görevlendirilir." },
+      { "label": "E", "text": "Şüpheli veya sanığın kanuni temsilcisi varsa o da şüpheliye veya sanığa müdafi seçebilir." }
+    ],
+    "explanation": "CMK m.150/1'e göre şüpheli veya sanıktan kendisine bir müdafi seçmesi istenir; müdafi seçebilecek durumda olmadığını beyan ederse İSTEMİ HÂLİNDE bir müdafi görevlendirilir. Yani ergin kişide görevlendirme İSTEME BAĞLIDIR; A bu yüzden yanlıştır. İstem aranmaksızın görevlendirme yalnızca m.150/2'deki müdafii bulunmayan ÇOCUK, KENDİSİNİ SAVUNAMAYACAK DERECEDE MALUL veya SAĞIR VE DİLSİZ kişiler ile m.150/3 uyarınca ALT SINIRI BEŞ YILDAN FAZLA hapis cezasını gerektiren suçlarda söz konusudur. Şüpheli veya sanığın kanunî temsilcisi de müdafi seçebilir (m.149/1); sonradan müdafi seçilmesi hâlinde baro tarafından görevlendirilen avukatın görevi sona erer.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 149, 150",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "172",
+    "stem": "B, evine girerek hırsızlık yaptığından bahisle komşusu K hakkında şikâyette bulunur; ancak Cumhuriyet savcısı, K'nin suçu işlediği konusunda yeterli şüpheye ulaşamadığından kovuşturmaya yer olmadığı kararı verir. Bu karardan sonra elde edilen kamera görüntülerinden hırsızlık suçunun K tarafından işlendiği belirlenir.\nBuna göre K hakkında yapılacak işlemle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Elde edilen yeni delile dayanılarak re'sen kamu davası açılabilir." },
+      { "label": "B", "text": "Elde edilen yeni delile dayanılarak sulh ceza hâkimliğinden alınacak kararla kamu davası açılabilir.", "isCorrect": true },
+      { "label": "C", "text": "Yeni delil olsun veya olmasın K hakkında kamu davası açılamaz." },
+      { "label": "D", "text": "Elde edilen yeni delile dayanılarak ağır ceza mahkemesinden alınacak kararla kamu davası açılabilir." },
+      { "label": "E", "text": "Elde edilen yeni delile dayanılarak asliye ceza hâkimliğinden alınacak kararla kamu davası açılabilir." }
+    ],
+    "explanation": "CMK m.172/2'ye göre kovuşturmaya yer olmadığına dair karar verildikten sonra, kamu davasının açılması için YETERLİ ŞÜPHE OLUŞTURACAK YENİ DELİL ELDE EDİLMEDİKÇE VE BU HUSUSTA SULH CEZA HÂKİMLİĞİNCE BİR KARAR VERİLMEDİKÇE aynı fiilden dolayı kamu davası açılamaz. Olayda kamera görüntüleri yeni delildir; ancak yalnızca yeni delilin varlığı yetmez, savcının re'sen dava açması mümkün olmadığından ayrıca sulh ceza hâkimliği kararı gerekir. Ayrıca suçtan zarar gören, kovuşturmaya yer olmadığına dair kararın tebliğinden itibaren İKİ HAFTA içinde, kararı veren savcının yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki sulh ceza hâkimliğine itiraz edebilir (m.173/1).",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 172, 173",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "196",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre alt sınırı en az kaç yıl ve daha fazla hapis cezasını gerektiren suçlardan dolayı sanığın sorgusu istinabe suretiyle yapılamaz?",
+    "options": [
+      { "label": "A", "text": "3" },
+      { "label": "B", "text": "4" },
+      { "label": "C", "text": "5", "isCorrect": true },
+      { "label": "D", "text": "8" },
+      { "label": "E", "text": "10" }
+    ],
+    "explanation": "CMK m.196/2'ye göre sanık, ALT SINIRI BEŞ YIL VE DAHA FAZLA hapis cezasını gerektiren suçlar HARİÇ olmak üzere istinabe suretiyle sorguya çekilebilir. İstinabe, davaya bakmakla görevli ve yetkili mahkemenin kendi yargı çevresi dışında yapılması gereken bir işlem için o yargı çevresindeki mahkemeye görev vermesidir. Sorgu için belirlenen gün Cumhuriyet savcısı ile sanık ve müdafiine bildirilir; savcı ile müdafiin sorgu sırasında hazır bulunması zorunlu değildir. Sorgusundan önce sanığa, ifadesini esas mahkemesi huzurunda vermek isteyip istemediği sorulur ve sorgu tutanağı duruşmada okunur.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 196",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "153",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre soruşturma evresinde\nI. şüphelinin ifadesini içeren tutanaklar,\nII. bilirkişi raporları,\nIII. iletişimin tespitine dair tutanaklar\nbelgelerinden hangilerinin müdafi tarafından incelenmesi kısıtlanabilir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III", "isCorrect": true },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "II ve III" }
+    ],
+    "explanation": "CMK m.153/2'ye göre müdafiin dosya içeriğini inceleme veya belgelerden örnek alma yetkisi, SORUŞTURMANIN AMACINI TEHLİKEYE DÜŞÜREBİLECEK ise Cumhuriyet savcısının istemi üzerine HÂKİM KARARIYLA ve yalnızca maddede sayılan katalog suçlarda kısıtlanabilir. Ancak m.153/3 uyarınca YAKALANAN KİŞİNİN VEYA ŞÜPHELİNİN İFADESİNİ İÇEREN TUTANAK, BİLİRKİŞİ RAPORLARI ile adı geçenlerin hazır bulunmaya yetkili oldukları diğer adli işlemlere ilişkin tutanaklar hakkında bu kısıtlama UYGULANMAZ. Bu nedenle I ve II kısıtlanamaz; soruşturmanın içeriğini ele veren iletişimin tespitine dair tutanaklar ise kısıtlama kapsamındadır.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 153",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "227",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre mahkeme başkanı aşağıdakilerden hangisinin müzakere sırasında hazır bulunmasına izin verebilir?",
+    "options": [
+      { "label": "A", "text": "Katılan vekili" },
+      { "label": "B", "text": "Katılan" },
+      { "label": "C", "text": "Cumhuriyet savcısı" },
+      { "label": "D", "text": "Sanık müdafii" },
+      { "label": "E", "text": "Mahkemesinde staj yapmakta olan avukat adayı", "isCorrect": true }
+    ],
+    "explanation": "CMK m.227/1'e göre müzakerede ANCAK KARARA VE HÜKME KATILACAK HÂKİMLER bulunur; Cumhuriyet savcısı, müdafi, vekil, sanık ve katılan müzakereye katılamaz. m.227/2 ise mahkeme başkanının, HÂKİM VE SAVCI YARDIMCILARI ile MAHKEMESİNDE STAJ YAPMAKTA OLAN AVUKAT ADAYLARININ müzakere sırasında hazır bulunmalarına izin verebileceğini düzenler. Bu nedenle doğru cevap E'dir. (Fıkra 23 Haziran 2022'de güncellenerek staj yapan hâkim ve savcı adayları ile avukat stajyerleri yerine hâkim ve savcı yardımcıları ile avukat adayları ifadesi getirilmiştir.)",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 227",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "148",
+    "stem": "Aşağıdakilerden hangisi 5271 sayılı Ceza Muhakemesi Kanunu'nda yasak sorgu yöntemleri arasında açıkça sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Kötü davranma" },
+      { "label": "B", "text": "İşkence" },
+      { "label": "C", "text": "İlaç verme" },
+      { "label": "D", "text": "Yorma" },
+      { "label": "E", "text": "Gözetleme", "isCorrect": true }
+    ],
+    "explanation": "CMK m.148/1'de şüpheli ve sanığın beyanının özgür iradesine dayanması gerektiği belirtilerek bunu engelleyici nitelikteki yöntemler sayılmıştır: KÖTÜ DAVRANMA, İŞKENCE, İLÂÇ VERME, YORMA, ALDATMA, CEBİR VEYA TEHDİTTE BULUNMA, bazı araçları kullanma gibi bedensel veya ruhsal müdahaleler. GÖZETLEME bu listede yer almadığından doğru cevap E'dir. Ayrıca kanuna aykırı bir yarar vaat edilemez (m.148/2); yasak usullerle elde edilen ifadeler rıza ile verilmiş olsa da delil olarak değerlendirilemez ve müdafi hazır bulunmaksızın kollukça alınan ifade, hâkim veya mahkeme huzurunda şüpheli veya sanık tarafından doğrulanmadıkça hükme esas alınamaz (m.148/4).",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 148",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "149",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre örgüt faaliyeti çerçevesinde işlenen suçlar bakımından yürütülen kovuşturmalarda, duruşmada hazır bulunabilecek müdafi sayısıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Herhangi bir sınır yoktur." },
+      { "label": "B", "text": "En fazla 3 müdafi hazır bulunabilir.", "isCorrect": true },
+      { "label": "C", "text": "En fazla 4 müdafi hazır bulunabilir." },
+      { "label": "D", "text": "En fazla 5 müdafi hazır bulunabilir." },
+      { "label": "E", "text": "En fazla 7 müdafi hazır bulunabilir." }
+    ],
+    "explanation": "CMK m.149/2'ye göre soruşturma evresinde ifade almada EN ÇOK ÜÇ AVUKAT hazır bulunabilir; ÖRGÜT FAALİYETİ ÇERÇEVESİNDE İŞLENEN SUÇLAR bakımından yürütülen KOVUŞTURMALARDA da duruşmada EN ÇOK ÜÇ AVUKAT hazır bulunabilir. Kural olarak şüpheli veya sanık, soruşturma ve kovuşturmanın her aşamasında bir veya birden fazla müdafiin yardımından yararlanabilir; kanunî temsilcisi varsa o da müdafi seçebilir (m.149/1). Şüpheli veya sanıkla görüşme, ifade alma veya sorgu süresince yanında olma ve hukukî yardımda bulunma hakkı hiçbir şekilde engellenemez, kısıtlanamaz (m.149/3).",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 149",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "163",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre suçüstü hâli ile gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısına erişilemiyorsa bütün soruşturma işlemlerini yapmaya aşağıdakilerden hangisi yetkilidir?",
+    "options": [
+      { "label": "A", "text": "O yerin en büyük mülki amiri" },
+      { "label": "B", "text": "Sulh ceza hâkimi", "isCorrect": true },
+      { "label": "C", "text": "Ağır ceza mahkemesi" },
+      { "label": "D", "text": "Adalet bakanı" },
+      { "label": "E", "text": "Kolluk amiri" }
+    ],
+    "explanation": "CMK m.163/1'e göre suçüstü hâli ile gecikmesinde sakınca bulunan hâllerde, Cumhuriyet savcısına ERİŞİLEMİYORSA veya olay genişliği itibarıyla Cumhuriyet savcısının İŞ GÜCÜNÜ AŞIYORSA, SULH CEZA HÂKİMİ de bütün soruşturma işlemlerini yapabilir. Bu hâlde kolluk âmir ve memurları, sulh ceza hâkimi tarafından emredilen tedbirleri alır ve araştırmaları yerine getirirler (m.163/2). Bu düzenleme, soruşturmanın aksamasını önlemeye yönelik istisnaî bir yetkidir; kural olarak soruşturmayı Cumhuriyet savcısı yürütür.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 163",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "60",
+    "stem": "I. Kolluk amiri\nII. Cumhuriyet savcısı\nIII. Sulh ceza hâkimi\n5271 sayılı Ceza Muhakemesi Kanunu'na göre soruşturma evresinde, yasal bir sebep olmaksızın tanıklıktan çekinen kişi hakkında disiplin hapsi kararı almaya yukarıdakilerden hangileri yetkilidir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III", "isCorrect": true },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "CMK m.60/2'ye göre tanıklıktan veya yeminden sebepsiz çekinme hâlinde disiplin hapsi tedbirini almaya NAİP HÂKİM ve İSTİNABE OLUNAN MAHKEME ile SORUŞTURMA EVRESİNDE SULH CEZA HÂKİMİ yetkilidir. Ne kolluk amirinin ne de Cumhuriyet savcısının böyle bir yetkisi vardır; kişi hürriyetini sınırlayan bu müeyyideye ancak hâkim karar verebilir. Kolluk amirinin gecikmesinde sakınca bulunan hâllerde yapabileceği işlemler yer gösterme, arama ve elkoyma kararı vermekle sınırlıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 60",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "223",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre duruşmanın sona ermesi ve hükümle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Yüklenen suçun işlendiğinin sabit olması hâlinde belli bir cezaya mahkûmiyet yerine veya mahkûmiyetin yanı sıra güvenlik tedbirine hükmolunabilir." },
+      { "label": "B", "text": "Aynı fiil nedeniyle aynı sanık için önceden verilmiş bir hüküm veya açılmış bir dava varsa davanın reddine karar verilir." },
+      { "label": "C", "text": "Adli yargı dışındaki bir yargı merciine yönelik görevsizlik kararı kanun yolu bakımından hüküm sayılır." },
+      { "label": "D", "text": "Derhâl beraat kararı verilebilecek hâllerde durma, düşme veya ceza verilmesine yer olmadığı kararı verilemez." },
+      { "label": "E", "text": "Meşru savunmada sınırın heyecan, korku ve telaş nedeniyle aşılması hâlinde kusurun bulunmaması dolayısıyla beraat kararı verilir.", "isCorrect": true }
+    ],
+    "explanation": "Meşru savunmada sınırın heyecan, korku ve telaş nedeniyle aşılması bir HUKUKA UYGUNLUK sebebi değil, KUSURLULUĞU ETKİLEYEN bir hâldir (TCK m.27/2). CMK m.223/3'e göre bu durumda BERAAT değil, kusurun bulunmaması dolayısıyla CEZA VERİLMESİNE YER OLMADIĞI kararı verilir; bu nedenle E yanlıştır. A, m.223/6; B, m.223/7; C, m.223/10; D ise m.223/9 hükmünün karşılığıdır. Beraat kararı ise yalnızca m.223/2'deki beş hâlde verilir: fiilin kanunda suç olarak tanımlanmamış olması, suçun sanık tarafından işlenmediğinin sabit olması, kast veya taksirin bulunmaması, bir hukuka uygunluk nedeninin bulunması ve suçun sanık tarafından işlendiğinin sabit olmaması.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 223; 5237 sayılı Türk Ceza Kanunu md. 27",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "234",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre mağdur ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Kovuşturma tutanaklarını veya kovuşturma belgelerinin örneklerini ancak vekili aracılığıyla isteyebilir." },
+      { "label": "B", "text": "Duruşmada tanık olarak dinlenirken yeminle ilgili tanıklığa ilişkin hükümler uygulanır." },
+      { "label": "C", "text": "18 yaşını doldurmamışsa soruşturma evresinde zorunlu vekil atanmaz." },
+      { "label": "D", "text": "Davaya katılmış olma koşulu aranmaksızın davayı sonuçlandıran kararlara karşı kanun yoluna başvurabilir." },
+      { "label": "E", "text": "Tebligata esas adresine eksiklik nedeniyle tebligat yapılamaması hâlinde beyanının alınması zorunlu değilse adresinin araştırılması gerekmez.", "isCorrect": true }
+    ],
+    "explanation": "CMK m.234'te mağdur ile şikâyetçinin hakları sayılmıştır. Belirtilen adresin yanlışlığı, eksikliği veya değişikliğinin bildirilmemesi nedeniyle tebligat yapılamaması hâlinde, mağdurun beyanının alınması zorunlu değilse ADRESİNİN AYRICA ARAŞTIRILMASI GEREKMEZ; bu nedenle E doğrudur. A yanlıştır: mağdur tutanak ve belgelerden örnek isteme hakkını bizzat da kullanabilir. B yanlıştır: mağdur tanık olarak dinlenmesi hâlinde YEMİN HARİÇ tanıklığa ilişkin hükümler uygulanır (m.236/1). C yanlıştır: mağdur on sekiz yaşını doldurmamış, sağır veya dilsiz ya da meramını ifade edemeyecek derecede malûl ise vekili yoksa İSTEMİ ARANMAKSIZIN vekil görevlendirilir. D yanlıştır: mağdurun kanun yollarına başvurabilmesi DAVAYA KATILMIŞ OLMA koşuluna bağlıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 234, 236",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "206",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre delillerin ortaya konulması ve tartışılmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Hükümden önce son sözün verildiği aşamada zorunlu müdafiin hazır bulunmaması hükmün açıklanmasına engel teşkil etmez." },
+      { "label": "B", "text": "Ortaya konulması istenilen bir delil kanuna aykırı olarak elde edilmişse reddolunur." },
+      { "label": "C", "text": "Cumhuriyet savcısı ile sanık veya müdafii birlikte rıza gösterse dahi tanıdığın dinlenmesinden veya başka herhangi bir delilin ortaya konulmasından vazgeçilemez.", "isCorrect": true },
+      { "label": "D", "text": "Ortaya konulan delillerle ilgili tartışmada söz, sırasıyla katılana veya vekiline, Cumhuriyet savcısına, sanığa ve müdafiine veya kanuni temsilcisine verilir." },
+      { "label": "E", "text": "Delilin ortaya konulması istemi, bunun veya ispat edilmek istenen olayın geç bildirilmiş olması nedeniyle reddedilemez." }
+    ],
+    "explanation": "CMK m.206/3'e göre CUMHURİYET SAVCISI İLE SANIK VEYA MÜDAFİİ BİRLİKTE RIZA GÖSTERİRLERSE, tanığın dinlenmesinden veya başka herhangi bir delilin ortaya konulmasından VAZGEÇİLEBİLİR; bu nedenle C yanlıştır. Ortaya konulması istenen bir delil yalnızca üç hâlde reddolunur (m.206/2): kanuna aykırı elde edilmişse, ispat edilmek istenen olayın karara etkisi yoksa ve istem sadece davayı uzatmak maksadıyla yapılmışsa. Delilin geç bildirilmiş olması bir ret sebebi değildir; tartışmada söz sırası ise m.216/1'de gösterilmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 206, 216",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "250",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre seri muhakeme usulüyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Soruşturma evresi sonunda Kanun'da sayılan suçlarla ilgili kamu davasının açılmasının ertelenmesine karar verilmediği takdirde uygulanır." },
+      { "label": "B", "text": "Suçun iştirak hâlinde işlenmesi durumunda şüphelilerden biri bu usulü kabul etmezse diğerleri hakkında da uygulanmaz." },
+      { "label": "C", "text": "Bu usul kapsamında yaptırım uygulanması hâlinde ayrıca güvenlik tedbirine hükmolunmaz.", "isCorrect": true },
+      { "label": "D", "text": "Yaş küçüklüğü ve akıl hastalığı ile sağır ve dilsizlik hâllerinde uygulanmaz." },
+      { "label": "E", "text": "Bu usul kapsamına giren bir suçun, kapsama girmeyen başka bir suçla birlikte işlenmiş olması hâlinde uygulanmaz." }
+    ],
+    "explanation": "Seri muhakeme usulünde yaptırım uygulanması, GÜVENLİK TEDBİRLERİNE İLİŞKİN HÜKÜMLERİN UYGULANMASINA ENGEL DEĞİLDİR (Ceza Muhakemesinde Seri Muhakeme Yönetmeliği m.5/9); bu nedenle C yanlıştır. Seri muhakeme, Cumhuriyet savcısının yürüttüğü soruşturma sonunda bazı suçlarda kamu davasının açılmasının ertelenmesine karar verilmediği takdirde, şüphelinin MÜDAFİİ HUZURUNDA bu usulü kabul etmesi şartıyla, savcının suçun cezasına yarı oranında indirim uygulayarak belirlediği yaptırımın mahkemece denetlenerek hüküm kurulması usulüdür. m.250/12 uyarınca bu usul yaş küçüklüğü, akıl hastalığı ile sağır ve dilsizlik hâllerinde ve kapsama girmeyen bir suçla birlikte işlenme hâlinde uygulanmaz; iştirak hâlinde ise tüm şüphelilerin kabulü gerekir. Önödeme ve uzlaştırma kapsamındaki suçlar da seri muhakemeye tâbi değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 250",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "171",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre Cumhuriyet savcısının kamu davası açmada takdir yetkisiyle ilgili aşağıdaki ifadelerden hangisi kural olarak doğrudur?",
+    "options": [
+      { "label": "A", "text": "Cezayı kaldıran şahsi sebep olarak etkin pişmanlık hükümlerinin uygulanmasını gerektiren koşulların varlığı hâlinde Cumhuriyet savcısının iddianame düzenlemesi, iddianamenin iadesi sebebidir." },
+      { "label": "B", "text": "Şahsi cezasızlık sebeplerinin varlığı hâlinde Cumhuriyet savcısı, kovuşturmaya yer olmadığı kararı vermelidir." },
+      { "label": "C", "text": "Cezayı azaltan şahsi sebep olarak etkin pişmanlık hükümlerinin uygulanmasını gerektiren koşulların varlığı hâlinde Cumhuriyet savcısı, kovuşturmaya yer olmadığı kararı verebilir." },
+      { "label": "D", "text": "Şahsi cezasızlık sebeplerinin uygulanmasını gerektiren koşulların varlığı hâlinde Cumhuriyet savcısının iddianame düzenlemesi, iddianamenin iadesi sebebidir." },
+      { "label": "E", "text": "Kamu davasının ertelenmesine karar verilmesi hâlinde erteleme süresi içinde kasıtlı bir suç işlenmediği takdirde Cumhuriyet savcısı, kovuşturmaya yer olmadığı kararı verir.", "isCorrect": true }
+    ],
+    "explanation": "CMK m.171/4'e göre erteleme süresi içinde kasıtlı bir suç işlenmediği takdirde KOVUŞTURMAYA YER OLMADIĞINA karar verilir; erteleme süresi içinde kasıtlı bir suç işlenmesi hâlinde ise kamu davası açılır. Bu nedenle E doğrudur. C yanlıştır: m.171/1 takdir yetkisini CEZAYI KALDIRAN şahsî sebep olarak etkin pişmanlık ile ŞAHSÎ CEZASIZLIK sebebine bağlamıştır; cezayı AZALTAN sebepler bu kapsamda değildir. B ve D yanlıştır çünkü m.171/1'de savcıya bağlayıcı bir zorunluluk değil TAKDİR yetkisi ('verebilir') tanınmıştır; A da aynı nedenle yanlıştır — bu hâllerde iddianame düzenlenmesi bir iade sebebi değildir. Uzlaştırma ve önödeme kapsamındaki suçlar hariç, üst sınırı üç yıl veya daha az süreli hapis cezasını gerektiren suçlarda kamu davasının açılması beş yıl süreyle ertelenebilir (m.171/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 171",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "75",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre şüpheli veya sanık üzerinde iç beden muayenesi yapılabilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Mahkeme, sanık hakkında iç beden muayenesi yapılabilmesine re'sen karar verebilir." },
+      { "label": "B", "text": "Cumhuriyet savcısı, gecikmesinde sakınca bulunan hâllerde şüpheli hakkında iç beden muayenesi yapılabilmesine karar verebilir." },
+      { "label": "C", "text": "Sanık üzerinde iç beden muayenesi yapılabilmesine ilişkin mahkeme kararına itiraz edilemez.", "isCorrect": true },
+      { "label": "D", "text": "İç beden muayenesi yapılabilmesi için müdahalenin, kişinin sağlığına zarar verme tehlikesinin bulunmaması gerekir." },
+      { "label": "E", "text": "Üst sınırı iki yıldan az hapis cezasını gerektiren suçlarda kişi üzerinde iç beden muayenesi yapılamaz." }
+    ],
+    "explanation": "CMK m.75/6'ya göre bu madde gereğince alınacak HÂKİM VEYA MAHKEME KARARLARINA İTİRAZ EDİLEBİLİR; bu nedenle C yanlıştır. m.75/1 uyarınca iç beden muayenesine veya vücuttan kan ya da benzeri biyolojik örnek alınmasına Cumhuriyet savcısının veya mağdurun istemiyle ya da RE'SEN hâkim veya mahkeme, gecikmesinde sakınca bulunan hâllerde CUMHURİYET SAVCISI karar verebilir; savcının kararı yirmi dört saat içinde hâkim onayına sunulur, onaylanmayan kararlar hükümsüz kalır ve elde edilen deliller kullanılamaz. m.75/2 sağlığa zarar verme tehlikesinin bulunmamasını, m.75/5 ise üst sınırı iki yıldan daha az hapis cezasını gerektiren suçlarda iç beden muayenesi yasağını düzenler. Cinsel organlar veya anüs bölgesinde yapılan muayene de iç beden muayenesi sayılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 75",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "174",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre aşağıdakilerden hangisi kural olarak iddianamenin iadesine karar verilecek hâllerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Sonuç kısmında şüphelinin sadece aleyhine olan hususlar değerlendirilip lehine olan hususlar ileri sürülmeksizin iddianame düzenlenmesi" },
+      { "label": "B", "text": "Seri muhakeme usulüne tabi olduğu soruşturma dosyasından açıkça anlaşılan işlerde seri muhakeme usulü uygulanmaksızın iddianame düzenlenmesi" },
+      { "label": "C", "text": "Suçun hukuki nitelendirmesinin yanlış biçimde yapılması suretiyle iddianame düzenlenmesi", "isCorrect": true },
+      { "label": "D", "text": "İddianamede, yüklenen suçu oluşturan olaylar ve suçun delilleriyle ilgisi bulunmayan bilgilere yer verilmesi" },
+      { "label": "E", "text": "Suçun sübutuna doğrudan etki edecek mevcut bir delil toplanmaksızın iddianame düzenlenmesi" }
+    ],
+    "explanation": "CMK m.174/2 açıkça 'SUÇUN HUKUKÎ NİTELENDİRİLMESİ SEBEBİYLE İDDİANAME İADE EDİLEMEZ' demektedir; savcının nitelendirmesi ile mahkemenin nitelendirmesi farklı olsa bile iddianame bu sebeple iade edilmez, zira suç vasfının değişmesi hâlinde sanığa EK SAVUNMA hakkı verilerek hüküm kurulabilir (m.226). Bu nedenle C doğru cevaptır. Diğer seçenekler m.174/1'deki iade sebepleridir: m.170'e aykırı düzenleme (m.170/4 ilgisiz bilgilere yer verilmemesi, m.170/5 lehe hususların da ileri sürülmesi), suçun sübûtuna doğrudan etki edecek mevcut bir delil toplanmadan düzenleme ve önödeme, uzlaştırma ya da seri muhakeme usulü uygulanmaksızın düzenleme. İade kararı en geç on beş gün içinde verilmelidir; süresinde iade edilmeyen iddianame kabul edilmiş sayılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 170, 174, 226",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "148",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre ifade alma ve sorgu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Şüphelinin ve sanığın özgür iradesini engelleyici nitelikte kötü davranma, işkence, yorma, aldatma gibi bedensel veya ruhsal müdahaleler yapılamaz." },
+      { "label": "B", "text": "Yasak usullerle elde edilen ifadeler rızayla verilmiş olsa bile delil olarak değerlendirilemez." },
+      { "label": "C", "text": "Müdafi hazır bulunmaksızın kollukça alınan ifade, hâkim veya mahkeme huzurunda şüpheli veya sanık tarafından doğrulanmadıkça hükme esas alınamaz." },
+      { "label": "D", "text": "Şüpheli veya sanığa kanuna aykırı bir yarar vaat edilemez." },
+      { "label": "E", "text": "Şüphelinin aynı olayla ilgili yeniden ifadesinin alınması ihtiyacı ortaya çıktığında, bu işlem ancak sulh ceza hâkimi tarafından yapılabilir.", "isCorrect": true }
+    ],
+    "explanation": "CMK m.148/5'e göre şüphelinin aynı olayla ilgili olarak yeniden ifadesinin alınması ihtiyacı ortaya çıktığında, bu işlem ancak CUMHURİYET SAVCISI tarafından yapılabilir; sulh ceza hâkimi tarafından değil. Bu nedenle E yanlıştır. Hüküm, kollukça tekrar tekrar ifade alınarak şüpheli üzerinde baskı kurulmasını önlemeye yöneliktir. A ve D, m.148/1 ve /2'deki yasak usuller ile kanuna aykırı yarar vaadi yasağı; B, m.148/3; C ise m.148/4 hükmüdür. Not: hâkim veya mahkeme tarafından dinlenme sorgu, kolluk veya Cumhuriyet savcısı tarafından dinlenme ise ifade almadır (m.2/1-g, h).",
+    "difficulty": "medium",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 2, 148",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "174",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre mahkeme aşağıdaki durumların hangisinde iddianamenin iadesine karar verir?",
+    "options": [
+      { "label": "A", "text": "Cumhuriyet savcısının, iddianamede fiili teşebbüs aşamasında kalan kasten öldürme olarak nitelendirilmesine karşılık mahkemenin kasten yaralama kapsamında değerlendirilmesi gerektiğini düşünmesi" },
+      { "label": "B", "text": "Cumhuriyet savcısının, dolandırıcılık suçunun temel şeklinin iddianame düzenlediği hâlde uzlaşmaya ilişkin hükmü uygulamaması", "isCorrect": true },
+      { "label": "C", "text": "Cumhuriyet savcısının, nitelikli hırsızlık suçunun teşebbüs aşamasında kaldığını belirtmesine rağmen mahkemenin, suçun tamamlandığını düşünmesi" },
+      { "label": "D", "text": "Cumhuriyet savcısının, iddianamede suç ortaklarından birini yardım eden olarak nitelendirmesine rağmen mahkemenin, bu suç ortağının müşterek fail olduğunu düşünmesi" },
+      { "label": "E", "text": "Cumhuriyet savcısının, iddianamede fiili hırsızlık olarak nitelendirmesine rağmen mahkemenin, fiilin yağma suçunu oluşturduğundan bahisle davaya bakmaya ağır ceza mahkemesinin görevli olduğunu düşünmesi" }
+    ],
+    "explanation": "CMK m.174/1-c uyarınca ÖNÖDEMEYE VEYA UZLAŞTIRMAYA ya da seri muhakeme usulüne tâbi olduğu soruşturma dosyasından AÇIKÇA ANLAŞILAN işlerde bu usuller uygulanmaksızın düzenlenen iddianamenin iadesine karar verilir. Dolandırıcılık suçunun TEMEL ŞEKLİ, CMK m.253/1-b'de sayılan uzlaştırma kapsamındaki suçlardandır; savcı uzlaştırma yoluna gitmeden iddianame düzenlemişse iade sebebi doğar, bu nedenle B doğrudur. A, C, D ve E seçeneklerinin tamamı suçun HUKUKÎ NİTELENDİRİLMESİNE ilişkindir ve m.174/2 gereği bu sebeple iddianame iade edilemez; suç vasfının değişmesi hâlinde sanığa ek savunma hakkı verilerek hüküm kurulur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 174, 253",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "223",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre A'nın;\nI. zorunluluk hâli etkisiyle B'ye karşı mala zarar verme suçunu işlemesi,\nII. kendisine karşı haksız saldırıda bulunan B'yi meşru savunma şartları dâhilinde yaralaması,\nIII. kasten öldürme suçundan dolayı gerçekleştirilen yargılaması sonucunda iddia edilen suçu işlediğinin sabit olmaması\nhâllerinden hangilerinde hakkında beraat kararı verilmesi gerekir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III", "isCorrect": true },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Beraat kararı yalnızca CMK m.223/2'deki beş hâlde verilir. Meşru savunma bir HUKUKA UYGUNLUK nedenidir (TCK m.25/1); şartları dâhilinde kalındığında m.223/2-d uyarınca beraat kararı verilir, bu nedenle II doğrudur. Yüklenen suçun sanık tarafından işlendiğinin sabit olmaması da m.223/2-e uyarınca beraat sebebidir; III de doğrudur. Buna karşılık ZORUNLULUK HÂLİ (TCK m.25/2) hukuka uygunluk nedeni değil KUSURLULUĞU ORTADAN KALDIRAN bir sebeptir; bu hâlde m.223/3-b gereği beraat değil CEZA VERİLMESİNE YER OLMADIĞI kararı verilir, bu nedenle I yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 223; 5237 sayılı Türk Ceza Kanunu md. 25",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "171",
+    "stem": "Suça sürüklenen çocuklar hakkında yürütülen soruşturmalarda gözetilecek esaslarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Suça sürüklenen çocuk hakkında yürütülen soruşturma, çocuk bürosunda görevli Cumhuriyet savcısı tarafından bizzat yapılır." },
+      { "label": "B", "text": "Çocukların yetişkinlerle birlikte suç işlemesi hâlinde soruşturma ve kovuşturma kural olarak ayrı yürütülür." },
+      { "label": "C", "text": "15 yaşını doldurmamış çocuklar hakkında gözaltı kararı verilemez.", "isCorrect": true },
+      { "label": "D", "text": "15 yaşını doldurmamış çocuklar hakkında üst sınırı 5 yılı aşmayan hapis cezasını gerektiren fiillerden dolayı tutuklama kararı verilemez." },
+      { "label": "E", "text": "Çocuğa yüklenen suçtan dolayı kamu davasının açılmasının ertelenmesi kararı verilmişse erteleme süresi 3 yıldır." }
+    ],
+    "explanation": "5395 sayılı Çocuk Koruma Kanunu'nda 15 yaşını doldurmamış çocuklar bakımından bir GÖZALTI YASAĞI yoktur; gözaltına alınan çocuklar kolluğun ÇOCUK BİRİMİNDE tutulur, kolluğun çocuk birimi bulunmuyorsa çocuk yetişkinlerden AYRI BİR YERDE tutulur. Bu nedenle C yanlıştır. Yasak, TUTUKLAMAYA ilişkindir: ÇKK m.21/1 uyarınca on beş yaşını doldurmamış çocuklar hakkında üst sınırı beş yılı aşmayan hapis cezasını gerektiren fiillerden dolayı tutuklama kararı verilemez (D doğru). A, ÇKK m.15/1; B, ÇKK m.17/1; E ise ÇKK m.19/1 hükmünün karşılığıdır — çocuklar bakımından kamu davasının açılmasının ertelenmesi süresi ÜÇ YILDIR (yetişkinlerde beş yıl).",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5395 sayılı Çocuk Koruma Kanunu md. 15, 17, 19, 21; 5271 sayılı Ceza Muhakemesi Kanunu md. 171",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "188",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre aşağıdakilerden hangisi yanlış bir ifadedir?",
+    "options": [
+      { "label": "A", "text": "Sanık duruşmadan bağışık tutulmuşsa yokluğunda duruşma yapılabilir." },
+      { "label": "B", "text": "Duruşmada, hükme katılacak hâkimler ve Cumhuriyet savcısının duruşmaya katılması zorunludur." },
+      { "label": "C", "text": "Mahkemece sorgusu yapılmış olan sanık veya bu hususta sanık tarafından yetkili kılındığı hâllerde müdafii isterse, mahkeme sanığı duruşmada hazır bulunmaktan bağışık tutabilir." },
+      { "label": "D", "text": "Müdafiin gelmemesi ya da duruşmadan ayrılması durumunda duruşmaya devam edilemez.", "isCorrect": true },
+      { "label": "E", "text": "Sanık, alt sınırı beş yıl ve daha fazla hapis cezasını gerektiren suçlar hariç olmak üzere, istinabe suretiyle sorguya çekilebilir." }
+    ],
+    "explanation": "CMK m.188/1'in ek cümlesine göre MÜDAFİİN MAZERETSİZ OLARAK DURUŞMAYA GELMEMESİ VEYA DURUŞMAYI TERK ETMESİ HÂLİNDE DURUŞMAYA DEVAM EDİLEBİLİR; bu nedenle D yanlıştır. Aynı fıkra uyarınca duruşmada hükme katılacak hâkimler, Cumhuriyet savcısı ve zabıt kâtibinin, Kanunun zorunlu müdafiliği kabul ettiği hâllerde ise müdafiin hazır bulunması şarttır. C ve A, m.196/1'deki duruşmadan bağışık tutulma; E ise m.196/2'deki istinabe suretiyle sorgu hükmüdür. Zorunlu müdafilik hâlinde müdafi duruşmayı terk ederse hâkim veya mahkeme derhâl başka bir müdafi görevlendirilmesi için gerekli işlemi yapar (m.151/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2021 KPSS HUKUK",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 151, 188, 196",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "251",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre basit yargılama usulü ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Basit yargılama usulü kapsamına giren bir suçun, kapsamına girmeyen başka bir suçla birlikte işlenmesi hâlinde basit yargılama usulüne göre karar verilir.", "isCorrect": true },
+      { "label": "B", "text": "Basit yargılama usulünde mahkumiyet kararı verildiğinde takdirde sonuç ceza 1/4 oranında indirilir." },
+      { "label": "C", "text": "Soruşturma veya kovuşturma yapılmasına izne bağlı veya talebe bağlı olan suçlarda basit yargılama usulü uygulanmaz." },
+      { "label": "D", "text": "Basit yargılama usulünde verilen hükümlere itiraz edilebilir, süresi içerisinde itiraz edilmeyen hükümler kesinleşir." },
+      { "label": "E", "text": "Mahkemece gerekli görülürse basit yargılama usulünde hüküm verilinceye kadar her aşamada duruşma açılarak genel hükümler uyarınca yargılamaya devam edilebilir." }
+    ],
+    "explanation": "CMK m.251/6'ya göre basit yargılama usulü, KAPSAMA GİREN BİR SUÇUN, KAPSAMA GİRMEYEN BAŞKA BİR SUÇLA BİRLİKTE İŞLENMİŞ OLMASI HÂLİNDE UYGULANMAZ; bu nedenle A yanlıştır. Basit yargılama usulü, asliye ceza mahkemesince iddianamenin kabulünden sonra adli para cezasını ve/veya ÜST SINIRI İKİ YIL VEYA DAHA AZ süreli hapis cezasını gerektiren suçlarda uygulanabilir; iddianame taraflara tebliğ edilerek iki hafta içinde yazılı beyan ve savunma istenir, duruşma yapılmaksızın m.223'teki kararlardan birine hükmedilir ve mahkûmiyet hâlinde sonuç ceza DÖRTTE BİR oranında indirilir (m.251/3). Yaş küçüklüğü, akıl hastalığı, sağır ve dilsizlik hâlleri ile izne veya talebe bağlı suçlarda bu usul uygulanmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 251, 252",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "147",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre ifade ve sorguyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Şüpheli veya sanık, susma hakkı kapsamında olduğu için kimliğine ilişkin soruları cevaplandırmakla hükümlü değildir.", "isCorrect": true },
+      { "label": "B", "text": "Şüpheliye veya sanığa, yüklenen suç hakkında açıklamada bulunmamasının kanuni hakkı olduğu söylenir." },
+      { "label": "C", "text": "Müdafi hazır bulunmaksızın kollukça alınan ifade, hâkim veya mahkeme huzurunda şüpheli veya sanık tarafından doğrulanmadıkça hükme esas alınamaz." },
+      { "label": "D", "text": "Şüphelinin aynı olayla ilgili yeniden ifadesinin alınması ihtiyacı doğarsa bu işlem, kural olarak ancak Cumhuriyet savcısı tarafından yapılabilir." },
+      { "label": "E", "text": "Yasak usullerle elde edilen ifadeler, rıza ile verilmiş olsa dahi delil olarak değerlendirilemez." }
+    ],
+    "explanation": "CMK m.147/1-a uyarınca şüpheli veya sanığın KİMLİĞİ SAPTANIR ve şüpheli veya sanık, KİMLİĞİNE İLİŞKİN SORULARI DOĞRU OLARAK CEVAPLANDIRMAKLA YÜKÜMLÜDÜR; susma hakkı yalnızca YÜKLENEN SUÇ HAKKINDA açıklamada bulunmamayı kapsar. Bu nedenle A yanlıştır (kimlik hakkında yanlış bilgi verilmesi ayrıca TCK m.206 kapsamında değerlendirilebilir). B, m.147/1-e; C, m.148/4; D, m.148/5; E ise m.148/3 hükmünün karşılığıdır. İfade alma ve sorguda ayrıca müdafi seçme hakkı hatırlatılır, yüklenen suç anlatılır ve şüpheden kurtulması için somut delillerin toplanmasını isteyebileceği bildirilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 147, 148",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "201",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre aşağıdakilerden hangisi, ağır ceza mahkemesinde bir duruşmada kendisine doğrudan soru yöneltilebilecek kişiler arasında yer alır?",
+    "options": [
+      { "label": "A", "text": "Cumhuriyet savcısı" },
+      { "label": "B", "text": "Tanıklar", "isCorrect": true },
+      { "label": "C", "text": "Müdafi veya vekil sıfatıyla duruşmaya katılan avukatlar" },
+      { "label": "D", "text": "Ağır ceza mahkemesinin başkan dışındaki üyeleri" },
+      { "label": "E", "text": "Ağır ceza mahkemesi başkanı" }
+    ],
+    "explanation": "CMK m.201/1'e göre Cumhuriyet savcısı, müdafi veya vekil sıfatıyla duruşmaya katılan avukat; SANIĞA, KATILANA, TANIKLARA, BİLİRKİŞİLERE ve duruşmaya çağrılmış diğer kişilere duruşma disiplinine uygun olarak DOĞRUDAN soru yöneltebilir. Yani doğrudan soru YÖNELTEBİLECEK olanlar ile kendisine doğrudan soru YÖNELTİLEBİLECEK olanlar farklıdır: savcı, avukatlar ve mahkeme heyeti soru sorar; tanıklar ise soru yöneltilen kişiler arasındadır, bu nedenle B doğrudur. Sanık ve katılan ancak mahkeme başkanı veya hâkim ARACILIĞIYLA soru yöneltebilir; yöneltilen soruya itiraz edildiğinde sorunun yöneltilmesinin gerekip gerekmediğine mahkeme başkanı karar verir.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 201",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  }
+]

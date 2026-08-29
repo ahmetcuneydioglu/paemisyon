@@ -1,0 +1,239 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "25",
+    "stem": "A, bir gün önce kendisini haksız yere döverek kolunu kıran B'ye duyduğu öfkeyle onun evini ateşe verir. Yangın sonrasında diğer mahalle sakinleriyle birlikte yangın söndürme çalışmalarını izlerken kontrolden çıkan yangının oluşturduğu panik sırasında olay yerinden kaçmaya çalışan A, yere düşen C'nin üzerine basarak yaralanmasına sebebiyet verir.\nBuna göre A'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A, C'ye karşı gerçekleştirdiği olayda hata hükümlerinden faydalanır." },
+      { "label": "B", "text": "B'ye karşı işlediği suç bakımından haksız tahrik hükümlerinden yararlanamaz." },
+      { "label": "C", "text": "C'ye karşı işlediği suç bakımından zorunluluk hâli hükümlerinden yararlanamaz.", "isCorrect": true },
+      { "label": "D", "text": "B'ye karşı işlediği suç bakımından meşru savunma hükümlerinden yararlanır." },
+      { "label": "E", "text": "C'ye karşı işlediği suç bakımından haksız tahrik hükümlerinden yararlanır." }
+    ],
+    "explanation": "TCK m.25/2'deki zorunluluk hâlinden yararlanabilmek için tehlikeye BİLEREK SEBEP OLMAMAK gerekir. A, kaçarken içinde bulunduğu tehlikeyi (kontrolden çıkan yangını) kendisi kundaklamayla yaratmıştır; bu nedenle C'ye karşı fiilinde zorunluluk hâlinden yararlanamaz. B'ye karşı kundaklamada ise bir gün önceki haksız dövme fiili nedeniyle haksız tahrik (m.29) uygulanabilir; saldırı sona erdiğinden meşru savunma söz konusu olmaz ve C bakımından bir hata hâli yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 25, 29",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "37",
+    "stem": "A, maaşını geç ödeyen patronu B'yi yaralaması için kardeşi K'ye talimat verir. B'yi yaralamak için yanına giden K, B'yi yaralar ancak o esnada çay vermek için patronun odasına giren ve olaya şahit olan Ç'yi gördüklerini kimseye anlatmaması için tehdit eder. Tehditlere aldırış etmeyen ve patronunun yaralandığını gören Ç, K'yi alıkoyarak derhal kolluk kuvvetlerine haber verir.\nBuna göre;\nI. A, B'nin yaralanmasından azmettiren olarak sorumludur.\nII. A ve K gerçekleşen tehdit suçundan müşterek fail olarak sorumludur.\nIII. K'yi alıkoyması sebebiyle Ç, kişiyi hürriyetinden yoksun kılma suçundan sorumludur.\nifadelerinden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I", "isCorrect": true },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "II ve III" }
+    ],
+    "explanation": "I doğrudur: A, kardeşinde suç işleme kararı oluşturmuştur; kasten yaralamadan azmettiren olarak sorumludur (m.38). II yanlıştır: azmettiren yalnızca azmettirdiği suçtan sorumludur; K'nin kendi kararıyla işlediği tehdit A'nın bilgisi dışındadır ve A'ya yükletilemez. III yanlıştır: suçüstü hâlinde CMK m.90/1 herkese geçici yakalama yetkisi tanır; Ç kanunun verdiği yetkiyi kullandığından fiili hukuka uygundur (TCK m.24) ve kişiyi hürriyetinden yoksun kılma suçu oluşmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 24, 38; 5271 sayılı CMK md. 90",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "73",
+    "stem": "A, evinin camından dışarı baktığında park hâlinde olan arabasının etrafında dolanarak arabaya bir şeyler yapan iki kişiyi görür. A, polisi arayıp üst katında birlikte oturmakta olan C ve D'nin arabayı çalmaya çalıştıklarını söyleyerek şikâyetçi olur. Kamera kayıtlarına bakıldığında suçu işleyenlerin aslında Y ve Z olduğu, arabayı çalmaya çalışmadıkları, sadece sprey boyayla arabanın her yerine resimler çizip boyadıkları anlaşılır. Y ve Z, 9 ay sonra yakalanır ve haklarında mala zarar verme suçundan kamu davası açılır.\nBuna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A, şikâyetçi olurken failler konusunda hataya düştüğünden soruşturma yapılmasına yer olmadığına karar verilir." },
+      { "label": "B", "text": "A'nın şikâyette bulunurken fiil hakkındaki nitelendirmesi yanlış olduğundan yaptığı şikâyet geçerli değildir." },
+      { "label": "C", "text": "A, suçun işlenmesiyle başlayan 6 aylık sürede Y ve Z hakkında şikâyetçi olmadığından kural olarak davanın düşmesine karar verilir." },
+      { "label": "D", "text": "A, arabasına daha fazla zarar vermiş olan Y'den şikâyetçi olup Z hakkında şikâyetten vazgeçebilir." },
+      { "label": "E", "text": "A, duruşmada şikâyetten vazgeçerse hem Y hem de Z için kural olarak davanın düşmesine karar verilir.", "isCorrect": true }
+    ],
+    "explanation": "TCK m.73/1'e göre altı aylık şikâyet süresi, fiili VE FAİLİ bilme veya öğrenme gününden başlar; A failleri bilmediğinden süre işlememiştir, şikâyet geçerlidir ve failin/fiilin yanlış nitelendirilmesi şikâyeti geçersiz kılmaz. m.73/5'e göre iştirak hâlinde suç işlemiş sanıklardan biri hakkındaki şikâyetten vazgeçme DİĞERLERİNİ DE KAPSAR; bu nedenle A duruşmada vazgeçerse şikâyete bağlı mala zarar verme suçundan açılan dava hem Y hem Z için düşer; tek fail seçilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 73, 151",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "40",
+    "stem": "A, C'nin yaralanması için B ile anlaşır ve ona silah verir. B, C'nin iş yeri önünde onun gelmesini beklerken daha önce işlemiş olduğu bir suç nedeniyle hakkında çıkarılan yakalama emrine dayanarak kolluk tarafından yakalanır.\nBuna göre A ve B'nin kasten yaralama suçundan dolayı ceza sorumluluklarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A azmettiren, B ise fail olarak kasten yaralamaya teşebbüsten sorumludurlar." },
+      { "label": "B", "text": "A yardım eden, B ise fail olarak kasten yaralamaya teşebbüsten sorumludurlar." },
+      { "label": "C", "text": "A azmettiren olarak kasten yaralamaya teşebbüsten sorumludur, B'nin ise gönüllü vazgeçme hükümleri gereğince sorumluluğu yoktur." },
+      { "label": "D", "text": "A yardım eden olarak kasten yaralamaya teşebbüsten sorumludur, B'nin ise gönüllü vazgeçme hükümleri gereğince sorumluluğu yoktur." },
+      { "label": "E", "text": "Suçun icrasına başlanmadığı için A ve B'nin sorumlulukları yoktur.", "isCorrect": true }
+    ],
+    "explanation": "Bağlılık kuralı (TCK m.40/3) gereği suç ortaklarının sorumlu tutulabilmesi için suçun en azından TEŞEBBÜS aşamasına varmış olması gerekir. B henüz icra hareketlerine başlamamış (mağduru beklemekte, silah doğrultulmamış), hazırlık aşamasında yakalanmıştır. Suç teşebbüs aşamasına ulaşmadığından ne fail B ne de onu suça yönlendiren A kasten yaralama bakımından cezalandırılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 35, 40",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "29",
+    "stem": "I. Haksız olarak karşı tarafa saldıran C'nin, karşı tarafın kendini korumaya yönelik fiiline sinirlenerek hakaret etmesi\nII. Hakkındaki yakalama emrini ifa eden kolluk görevlilerine B'nin hakaret etmesi\nIII. A'nın annesine taş atan 10 yaşındaki çocuğa, A'nın hakaret etmesi\nIV. D'nin, kendisine haksız yere vuran kişiye sinirlenmesi ve ona hakaret etmesi\nYukarıdaki durumların hangilerinde gerçekleştirilen hakaret suçunda haksız tahrik hükümleri uygulanabilir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve IV" },
+      { "label": "D", "text": "II ve IV" },
+      { "label": "E", "text": "III ve IV", "isCorrect": true }
+    ],
+    "explanation": "Haksız tahrik (TCK m.29) için tahriki oluşturan fiilin HAKSIZ olması gerekir. I'de karşı tarafın kendini koruması (meşru savunma) hukuka uygundur; buna tepki tahrik oluşturmaz. II'de yakalama emrini ifa eden kolluğun fiili kanun hükmünün ifasıdır, haksız değildir. III'te tahrik fiilini gerçekleştirenin kusur yeteneğine sahip olması aranmaz; 10 yaşındaki çocuğun taş atması haksız fiildir ve tahrik oluşturabilir. IV'te haksız darp klasik tahrik hâlidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 24, 25, 29",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre aşağıdaki iştirak hâllerinin hangisinde, işlenen suçtan dolayı verilecek cezada kural olarak artırım uygulanmaz?",
+    "options": [
+      { "label": "A", "text": "Akıl hastası olan kişinin suçun işlenmesinde araç olarak kullanılması" },
+      { "label": "B", "text": "Babanın 25 yaşındaki oğlunu suç işlemeye azmettirmesi" },
+      { "label": "C", "text": "Komşusunun 17 yaşındaki bir çocuğu suç işlemeye azmettirmesi" },
+      { "label": "D", "text": "Torununun 75 yaşındaki dedesini suç işlemeye azmettirmesi" },
+      { "label": "E", "text": "Dayının 22 yaşındaki yeğenini suç işlemeye teşvik etmesi", "isCorrect": true }
+    ],
+    "explanation": "Kusur yeteneği olmayanı araç olarak kullanan dolaylı failin cezası artırılır (m.37/2 son cümle); üst soy-alt soy nüfuzu kullanılarak azmettirmede (baba-oğul, torun-dede) ve çocukların azmettirilmesinde (17 yaş; soy ilişkisi aranmaz) azmettirenin cezası artırılır (m.38/2). Dayı-yeğen ilişkisi üst soy-alt soy kapsamında değildir, yeğen 18 yaşını doldurmuştur ve 'teşvik etme' zaten azmettirme değil YARDIM ETMEdir (m.39/2-a) — cezası artırılmak şöyle dursun, indirilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 37, 38, 39",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Üniversite öğrencisi A ile B, üniversite yemekhanesinde tartışmaya başlıyor ve A, masada duran çatalla B'yi omzundan yaralıyor. B, A'yı önce fakülte dekanına sonra da Cumhuriyet Başsavcılığına şikâyet ediyor. Bunun üzerine A hakkında dekan tarafından disiplin, yetkili Cumhuriyet savcısı tarafından ceza soruşturması açılıyor.\nBuna göre A hakkında yürütülecek soruşturma ve kovuşturmalarla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Bu fiil nedeniyle disiplin cezası vermek ancak ceza mahkemesinin yetkisindedir." },
+      { "label": "B", "text": "Disiplin cezasını gerektiren fiil aynı zamanda suç oluşturduğundan artık disiplin cezası verilemez." },
+      { "label": "C", "text": "İdari makamlar tarafından verilen disiplin cezaları failin adli sicil kaydına işler." },
+      { "label": "D", "text": "Ceza kovuşturması açılması hâlinde disiplin soruşturması resen işlemden kaldırılır." },
+      { "label": "E", "text": "Ceza soruşturması ve kovuşturması ile disiplin soruşturması birbirinden bağımsız olarak yürütülür.", "isCorrect": true }
+    ],
+    "explanation": "Ceza soruşturması-kovuşturması ile disiplin soruşturması, farklı hukuk dallarına ait, birbirinden BAĞIMSIZ süreçlerdir: aynı fiil için ikisi birlikte yürütülebilir, ceza davasının açılması disiplin sürecini durdurmaz ve fiilin suç oluşturması disiplin cezası verilmesini engellemez. Disiplin cezasını vermeye idari makam yetkilidir; idari makamlarca verilen disiplin cezaları adli sicile işlemez (adli sicile yalnızca mahkemelerin kesinleşmiş ceza mahkûmiyetleri kaydedilir).",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS",
+    "citation": "5352 sayılı Adli Sicil Kanunu md. 4; ceza hukuku genel teorisi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5352.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "37",
+    "stem": "A, B ve C; ortak hasımları D'yi öldürmek amacıyla bir plan yaparlar ve onun geçeceği yerde saldırı yapmaya karar vererek hasımları D'nin kurtulma olasılığını en aza indirmek amacıyla üç kişi olay yerinde farklı noktalardan ateş etmek konusunda anlaşırlar. D'nin belirledikleri yerden geçtiği sırada saldırıya başlamaları sonucu A'nın silahından çıkan kurşunlar D'ye isabet eder, B ve C'nin silahından çıkan kurşunlar ise isabetsiz kalır. Saldırı sonucu D hayatını kaybeder.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A kasten öldürmeden fail olarak, B ve C ise yardım eden olarak sorumludur." },
+      { "label": "B", "text": "A kasten öldürmeden fail olarak sorumludur, B ve C'nin ise ceza sorumluluğu yoktur." },
+      { "label": "C", "text": "A kasten öldürmeden fail olarak, B ve C kasten öldürmeye teşebbüsten sorumludur." },
+      { "label": "D", "text": "A, B ve C kasten öldürmeden müşterek fail olarak sorumludur.", "isCorrect": true },
+      { "label": "E", "text": "A, B ve C kasten öldürmeye teşebbüsten müşterek fail olarak sorumludur." }
+    ],
+    "explanation": "TCK m.37/1'e göre suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden her biri fail olarak sorumludur. A, B ve C ortak suç işleme kararı almış, planlamış ve fiil üzerinde ORTAK HÂKİMİYET kurarak birlikte ateş etmiştir; hangi silahtan çıkan kurşunun isabet ettiği önem taşımaz. Ölüm neticesi ortak fiilin ürünü olduğundan üçü de tamamlanmış kasten öldürmeden MÜŞTEREK FAİL olarak sorumludur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 37",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "167",
+    "stem": "A, sabah işe gitmek üzere aracının yanına gittiğinde aracının camının taş atılmak suretiyle kırıldığını fark eder ve durumu derhâl kolluk kuvvetlerine bildirir. Civardaki kamera kayıtlarını inceleyen kolluk görevlileri fiilin, evdeki çıkan tartışma dolayısıyla babasına kızgın olan oğlu B tarafından yapıldığını tespit eder.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A, aracın camını kim tarafından kırıldığını öğrenmeden şikâyet hakkını kullanamaz." },
+      { "label": "B", "text": "A'nın aracının camının kırıldığını öğrendiği gün, şikâyet süresi işlemeye başlar." },
+      { "label": "C", "text": "B'nin aracın camının kırılmasından dolayı ceza alabilmesi A'nın şikâyetinin devam etmesine bağlıdır." },
+      { "label": "D", "text": "Aracın camı kırılmış olsa bile bu durum, B açısından bir şahsi cezasızlık sebebi teşkil eder.", "isCorrect": true },
+      { "label": "E", "text": "Aracın camının kırılmasından dolayı B'nin cezası artırılarak uygulanır." }
+    ],
+    "explanation": "TCK m.167/1'e göre yağma ve nitelikli yağma hariç, malvarlığına karşı suçların üst soy veya alt soydan birinin zararına işlenmesi hâlinde ilgili akraba hakkında CEZAYA HÜKMOLUNMAZ — mutlak şahsi cezasızlık sebebi. Oğlun babasının aracına verdiği zarar (mala zarar verme) bu kapsamdadır; şikâyet olsa bile B cezalandırılamaz. Şikâyet süresi ise fiilin VE failin öğrenilmesiyle başlar (m.73/1); yalnız fiili öğrenmek süreyi başlatmaz, ancak fail bilinmeden de şikâyet hakkı kullanılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 73, 167",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "25",
+    "stem": "I. İnsandan kaynaklanan bir saldırının bulunması\nII. Saldırının icrai bir hareketle gerçekleşmiş olması\nIII. Saldırının bir hakka yönelmiş olması\nYukarıdakilerden hangileri meşru savunmanın saldırıya ilişkin şartlarından değildir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "II ve III" }
+    ],
+    "explanation": "TCK m.25/1'e göre meşru savunma; gerek kendisine gerek başkasına ait bir HAKKA yönelmiş, gerçekleşen, gerçekleşmesi veya tekrarı muhakkak haksız bir saldırıya karşı yapılır. Saldırının insandan kaynaklanması ve bir hakka yönelmiş olması şarttır (hayvan saldırısında zorunluluk hâli gündeme gelir). Buna karşılık saldırının İCRAİ hareketle yapılması şart değildir; ihmali davranışla da saldırı gerçekleşebilir (hastasına hayati ilacı kasten vermeyen görevli gibi).",
+    "difficulty": "medium",
+    "sourceLabel": "2021 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 25",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "Azmettirmeyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Azmettirmeden dolayı sorumluluğun doğumu için azmettirmeye konu olan suçun icrasına başlanmış olması gerekir." },
+      { "label": "B", "text": "İhmali davranışla işlenebilen suçlara azmettirme mümkündür." },
+      { "label": "C", "text": "Üst soy ve alt soy ilişkisinden doğan nüfuz kullanılmak suretiyle suça azmettirme hâlinde azmettirenin cezası artırılır." },
+      { "label": "D", "text": "Çocukların suça azmettirilmesi hâlinde azmettirenin cezası artırılır." },
+      { "label": "E", "text": "Azmettirenin belli olmaması hâlinde kim olduğunun ortaya çıkmasını sağlayan fail ve diğer suç ortağı hakkında cezaya hükmolunmaz.", "isCorrect": true }
+    ],
+    "explanation": "TCK m.38/3'e göre azmettirenin belli olmaması hâlinde, kim olduğunun ortaya çıkmasını sağlayan fail veya diğer suç ortağı hakkında cezaya hükmolunmaması değil, cezada İNDİRİM yapılabilmesi söz konusudur (ağırlaştırılmış müebbet yerine 20-25 yıl, müebbet yerine 15-20 yıl; diğer hâllerde üçte bir indirim). Diğer ifadeler doğrudur: bağlılık kuralı gereği icraya başlanmalıdır (m.40/3), ihmali suça azmettirme mümkündür, soy nüfuzuyla ve çocuğa yönelik azmettirmede ceza artırılır (m.38/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2021 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 38, 40",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "29",
+    "stem": "Türk Ceza Kanunu'na göre haksız tahrikle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Bir kişinin işlediği haksız fiile duyulan öfke sonucu bu kişinin alt soyuna karşı işlenen suçlarda haksız tahrik hükümleri uygulanmaz." },
+      { "label": "B", "text": "İsnat yeteneğine sahip olmayanlar tarafından yapılan hareketler haksız tahrik oluşturmaz.", "isCorrect": true },
+      { "label": "C", "text": "Meşru savunma kapsamında işlenen fiil haksız tahrike zemin oluşturmaz." },
+      { "label": "D", "text": "Yaş küçüklüğü ve haksız tahrik bir arada bulunabilir." },
+      { "label": "E", "text": "Haksız tahrik hükümlerinin uygulanabilmesi için tahriki oluşturan fiilin mutlaka suç teşkil etmesi gerekli değildir." }
+    ],
+    "explanation": "Haksız tahrikte tahrik fiilini gerçekleştirenin İSNAT (KUSUR) YETENEĞİNE sahip olması aranmaz; akıl hastasının veya çocuğun haksız fiili de failde hiddet ya da şiddetli elem doğurarak tahrik oluşturabilir — (B) bu nedenle yanlıştır. Tepki kural olarak tahrik edene yönelmelidir (onun alt soyuna yönelen suçta uygulanmaz), meşru savunma hukuka uygun olduğundan tahrike zemin olmaz, yaş küçüklüğü indirimi ile tahrik indirimi birlikte uygulanabilir ve tahrik fiilinin suç olması şart değildir, haksız olması yeterlidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 29",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "43",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre aşağıdaki suçlardan hangisine zincirleme suç hükümleri uygulanamaz?",
+    "options": [
+      { "label": "A", "text": "Eziyet" },
+      { "label": "B", "text": "Özel evrakta sahtecilik" },
+      { "label": "C", "text": "Hırsızlık" },
+      { "label": "D", "text": "Yağma", "isCorrect": true },
+      { "label": "E", "text": "Cinsel saldırı" }
+    ],
+    "explanation": "TCK m.43/3'e göre zincirleme suç hükümleri; kasten öldürme, kasten yaralama, İŞKENCE ve YAĞMA suçlarında uygulanmaz. Yağma bu dört suçtan biridir; her fiil için ayrı ceza verilir. Eziyet (m.96) işkenceden farklıdır ve istisna listesinde yer almaz; özel evrakta sahtecilik, hırsızlık ve cinsel saldırıda zincirleme hükümleri koşulları varsa uygulanabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "22",
+    "stem": "A'nın ameliyatı öncesinde anestezi uzmanı olan Doktor D, Hemşire H'nin hazırlamış olduğu narkozu, dozajını kontrol etmeksizin hastaya enjekte eder. Dozun fazla olması nedeniyle hasta ölüm tehlikesi geçirir.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "D ve H, taksirle öldürmeye teşebbüsten birlikte sorumludur." },
+      { "label": "B", "text": "D ve H'nin taksirle yaralama suçundan sorumlulukları iştirak hükümleri çerçevesinde belirlenir." },
+      { "label": "C", "text": "D'nin fiili görevinin ifası kapsamında kaldığı için hukuka uygun olsa da bu durumdan H yararlanamaz." },
+      { "label": "D", "text": "D ve H'nin taksirle yaralama suçundan sorumlulukları kendi kusurlarına göre ayrı ayrı belirlenir.", "isCorrect": true },
+      { "label": "E", "text": "D'nin fiili görevin ifası kapsamında kaldığı için hukuka uygundur ve bu durumdan H de yararlanır." }
+    ],
+    "explanation": "TCK m.22/5'e göre birden fazla kişinin taksirle işlediği suçlarda herkes KENDİ KUSURUNDAN dolayı sorumlu olur ve her failin cezası kusuruna göre ayrı ayrı belirlenir; taksirli suçlarda iştirak hükümleri uygulanmaz. Ayrıca taksirli suça teşebbüs mümkün değildir. Dozu yanlış hazırlayan H ile kontrol yükümlülüğünü ihmal eden D, taksirle yaralamadan kendi kusurları oranında sorumludur; özensiz tıbbi müdahale görevin ifası kapsamında hukuka uygun sayılamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 22",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Federasyonla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Federe devletler istedikleri zaman federasyondan ayrılabilir.", "isCorrect": true },
+      { "label": "B", "text": "Birden fazla devleti bir araya getiren bir devlet biçimidir." },
+      { "label": "C", "text": "Uluslararası alanda tüzel kişilik federal devlete aittir." },
+      { "label": "D", "text": "Federe devletler dış ilişkilerinde federal devlete tabidir." },
+      { "label": "E", "text": "Federe devletler kendi yetki alanlarında özerktir." }
+    ],
+    "explanation": "Federasyon anayasal temele dayanan bir DEVLET birliğidir. Federe devletlerin yetkileri federal anayasayla güvence altına alınır; ancak tek taraflı olarak federasyondan ayrılma hakları yoktur. Uluslararası tüzel kişilik kural olarak federal devlete aittir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Başkanlık sistemiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Başkan doğrudan veya doğrudan benzeri bir yöntemle halk tarafından seçilir." },
+      { "label": "B", "text": "Yürütme tek başlıdır." },
+      { "label": "C", "text": "Yürütmenin görevde kalabilmesi yasamanın güvenine bağlıdır.", "isCorrect": true },
+      { "label": "D", "text": "Kural olarak aynı kişi hem yasamada hem yürütmede görev alamaz." },
+      { "label": "E", "text": "Ayrı bir devlet başkanlığı makamı bulunmaz." }
+    ],
+    "explanation": "Başkanlık sisteminde yürütme tek başlıdır ve başkan halk tarafından seçilir. Sert kuvvetler ayrılığı gereği başkanın görevde kalması yasamanın GÜVENİNE bağlı değildir; ayrıca yürütmenin başı zaten devlet başkanı olduğundan ayrı bir devlet başkanlığı makamı bulunmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Konfederasyonla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Uluslararası antlaşmayla kurulur." },
+      { "label": "B", "text": "Birden fazla devleti bir araya getiren bir devletler birliğidir." },
+      { "label": "C", "text": "Konfederasyonun üye devletler üzerinde doğrudan zor kullanma yetkisi vardır.", "isCorrect": true },
+      { "label": "D", "text": "Üye devletler konfederasyondan ayrılabilir." },
+      { "label": "E", "text": "Üye devletler uluslararası alandaki bağımsızlıklarını korur." }
+    ],
+    "explanation": "Konfederasyon bir DEVLETLER BİRLİĞİDİR ve antlaşmayla kurulur. Üye devletler bağımsızlıklarını ve ayrılma haklarını korur. Konfederasyonun kararları doğrudan bireylere uygulanmadığı gibi üye devletler üzerinde doğrudan zor kullanma yetkisi de bulunmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Asli kurucu iktidarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Bir ülkenin ilk anayasasını yapan iktidardır." },
+      { "label": "B", "text": "Hukuki değil, fiilî bir iktidardır." },
+      { "label": "C", "text": "Devrim veya hükûmet darbesi sonrasında ortaya çıkabilir." },
+      { "label": "D", "text": "Yeni bir anayasal düzen kurar." },
+      { "label": "E", "text": "Önceki anayasanın değişiklik usulüne uymak zorundadır.", "isCorrect": true }
+    ],
+    "explanation": "Asli kurucu iktidar önceki hukuk düzeninden yetki almayan FİİLÎ bir iktidardır. Yeni anayasa yaparken önceki anayasanın değişiklik usulüyle hukuken bağlı değildir. Buna karşılık tali kurucu iktidar, yürürlükteki anayasanın çizdiği usul ve sınırlar içinde değişiklik yapar.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi parlamenter sistemin ayırt edici özelliklerinden biridir?",
+    "options": [
+      { "label": "A", "text": "Devlet başkanının zorunlu olarak halk tarafından seçilmesi" },
+      { "label": "B", "text": "Devlet başkanının hükûmet başkanı olması" },
+      { "label": "C", "text": "Yasama ve yürütme arasında hiçbir etkileşim aracının bulunmaması" },
+      { "label": "D", "text": "Hükûmetin yasama organına karşı siyasi sorumluluk taşıması", "isCorrect": true },
+      { "label": "E", "text": "Yürütmenin tek başlı olması" }
+    ],
+    "explanation": "Parlamenter sistemde yürütme iki başlıdır ve hükûmet yasama organının güvenine dayanır. Hükûmetin yasamaya karşı SİYASİ SORUMLULUĞU bu sistemin ayırt edici unsurudur.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Egemenliğin, manevi bir kişilik olan millete ait olduğunu ve egemenliğin bireyler tarafından ayrı ayrı kullanılamayacağını savunan teori hangisidir?",
+    "options": [
+      { "label": "A", "text": "Halk egemenliği teorisi" },
+      { "label": "B", "text": "Millî egemenlik teorisi", "isCorrect": true },
+      { "label": "C", "text": "Demokratik egemenlik teorisi" },
+      { "label": "D", "text": "Teokratik egemenlik teorisi" },
+      { "label": "E", "text": "Sınırlı egemenlik teorisi" }
+    ],
+    "explanation": "MİLLÎ EGEMENLİK teorisinde egemenlik, onu oluşturan bireylerden ayrı ve manevi bir kişiliği bulunan millete aittir. Halk egemenliği yaklaşımında ise egemenliğin paylarının vatandaşlara ait olduğu kabul edilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Temsili vekâlet teorisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Seçmenler temsilcilerini görev süreleri dolmadan azledebilir.", "isCorrect": true },
+      { "label": "B", "text": "Emredici vekâlet yasağı geçerlidir." },
+      { "label": "C", "text": "Vekâlet siyasi niteliktedir." },
+      { "label": "D", "text": "Temsilciler seçildikleri bölgenin değil bütün milletin temsilcisidir." },
+      { "label": "E", "text": "Seçmenler egemenlik yetkisini temsilcileri aracılığıyla kullanır." }
+    ],
+    "explanation": "Temsili vekâlet teorisinde temsilci yalnız seçildiği çevrenin değil bütün milletin temsilcisidir; seçmen talimatıyla bağlı değildir. Bu nedenle seçmenlerin temsilciyi görev süresi dolmadan AZLETMESİ mümkün değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi; T.C. Anayasası md. 80"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Tali kurucu iktidarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Hukuki bir iktidardır." },
+      { "label": "B", "text": "Anayasal bir iktidardır." },
+      { "label": "C", "text": "Anayasada değişiklik yapma yetkisi yoktur.", "isCorrect": true },
+      { "label": "D", "text": "Fiilî bir iktidar değildir." },
+      { "label": "E", "text": "Asli kurucu iktidarın yaptığı anayasanın sınırları içinde hareket eder." }
+    ],
+    "explanation": "Tali kurucu iktidar, yürürlükteki anayasanın verdiği yetkiye dayanarak anayasayı değiştiren HUKUKİ iktidardır. Yetkisi anayasanın öngördüğü usul ve maddi sınırlarla çevrilidir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "I. Devlet başkanının halk tarafından seçilmesi\nII. Devlet başkanının önemli anayasal yetkilere sahip olması\nIII. Yürütmenin yasamadan doğması\nIV. Hükûmetin parlamentonun güvenine dayanması\nYukarıdakilerden hangileri yarı başkanlık sisteminin özelliklerindendir?",
+    "options": [
+      { "label": "A", "text": "I, II ve IV", "isCorrect": true },
+      { "label": "B", "text": "II, III ve IV" },
+      { "label": "C", "text": "I, III ve IV" },
+      { "label": "D", "text": "III ve IV" },
+      { "label": "E", "text": "I, II, III ve IV" }
+    ],
+    "explanation": "Yarı başkanlık sisteminde devlet başkanı halk tarafından seçilir ve önemli anayasal yetkilere sahiptir. Bunun yanında başbakan ve bakanlardan oluşan hükûmet parlamentonun güvenine dayanır. Yürütmenin yasamadan doğması ise bu sistemi tanımlayan zorunlu bir unsur değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Kazüistik ve sert bir anayasanın birlikte bulunmasının temel sakıncası aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Anayasanın değişen toplumsal koşullara uyarlanmasının güçleşmesi", "isCorrect": true },
+      { "label": "B", "text": "Kanunların anayasaya uygunluk denetiminin güçlenmesi" },
+      { "label": "C", "text": "Hukuk devleti ilkesinin zayıflaması" },
+      { "label": "D", "text": "Kuvvetler ayrılığına uygun düşmemesi" },
+      { "label": "E", "text": "Çoğulcu demokrasi anlayışına aykırı olması" }
+    ],
+    "explanation": "Kazüistik anayasa çok ayrıntılı, sert anayasa ise değiştirilmesi güç bir metindir. Bu iki özellik birleştiğinde ayrıntılı hükümleri değişen sosyal ve siyasal koşullara uyarlamak zorlaşır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "Themis 2025 Anayasa Hukuku Soru Kitabı, Anayasa Hukuku Genel Teorisi"
+  }
+]

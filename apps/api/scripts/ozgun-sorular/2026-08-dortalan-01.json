@@ -1,0 +1,658 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "21",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, olası kastla işlenen ve ağırlaştırılmış müebbet ya da müebbet hapis cezasını gerektirmeyen bir suçta temel cezaya nasıl bir etki yapılır?",
+    "options": [
+      { "label": "A", "text": "Temel ceza üçte birden yarısına kadar indirilir.", "isCorrect": true },
+      { "label": "B", "text": "Temel ceza üçte birden yarısına kadar artırılır." },
+      { "label": "C", "text": "Temel ceza yarı oranında indirilir." },
+      { "label": "D", "text": "Temel cezada herhangi bir değişiklik yapılmaz." },
+      { "label": "E", "text": "Temel ceza altıda birden üçte birine kadar indirilir." }
+    ],
+    "explanation": "TCK m.21/2: Olası kast hâlinde ağırlaştırılmış müebbet yerine müebbet, müebbet yerine yirmi yıldan yirmi beş yıla kadar hapis cezasına hükmolunur; diğer suçlarda ise temel ceza üçte birden yarısına kadar İNDİRİLİR. Olası kast kusurun ağırlığını azalttığı için indirim sebebidir; bilinçli taksirle (artırım) karıştırılmamalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.21",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 21",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "22",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, taksirle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Taksirle işlenen fiiller, ancak kanunun açıkça belirttiği hâllerde cezalandırılır." },
+      { "label": "B", "text": "Bilinçli taksir hâlinde taksirli suça ilişkin ceza üçte birden yarısına kadar artırılır." },
+      { "label": "C", "text": "Birden fazla kişinin taksirle işlediği suçlarda herkes kendi kusurundan dolayı sorumlu olur." },
+      { "label": "D", "text": "Birden fazla kişinin taksirle işlediği suçlarda faillerin tümü hakkında ortak ve tek bir ceza belirlenir.", "isCorrect": true },
+      { "label": "E", "text": "Taksirle işlenen suçtan dolayı verilecek ceza failin kusuruna göre belirlenir." }
+    ],
+    "explanation": "TCK m.22/5: Birden fazla kişinin taksirle işlediği suçlarda herkes kendi kusurundan sorumlu olur ve HER FAİLİN CEZASI KUSURUNA GÖRE AYRI AYRI belirlenir. Taksirli suçlarda iştirak kuralları uygulanmadığı için ortak tek ceza belirlenmesi söz konusu değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.22",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 22",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "27",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, meşru savunmada sınırın mazur görülebilecek bir heyecan, korku veya telaştan ileri gelerek aşılması hâlinde fail bakımından sonuç ne olur?",
+    "options": [
+      { "label": "A", "text": "Faile ceza verilmez.", "isCorrect": true },
+      { "label": "B", "text": "Failin cezası yarı oranında indirilir." },
+      { "label": "C", "text": "Fail yalnızca taksirli suçtan sorumlu tutulur ve cezası üçte bir oranında indirilir." },
+      { "label": "D", "text": "Fail kasten işlenen suçun cezasıyla cezalandırılır, ancak hakkında güvenlik tedbirine hükmolunur." },
+      { "label": "E", "text": "Failin cezası altıda birden üçte birine kadar indirilir." }
+    ],
+    "explanation": "TCK m.27/2: Meşru savunmada sınırın aşılması mazur görülebilecek bir heyecan, korku veya telaştan ileri gelmişse faile CEZA VERİLMEZ. Buna karşılık m.27/1'de düzenlenen genel hâlde (sınırın kast olmaksızın aşılması) taksirli suçun cezası altıda birinden üçte birine kadar indirilerek hükmolunur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.27",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 27",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "31",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, fiili işlediği sırada kaç yaşını doldurmamış olan çocukların ceza sorumluluğu hiçbir koşulda bulunmaz?",
+    "options": [
+      { "label": "A", "text": "On iki", "isCorrect": true },
+      { "label": "B", "text": "On beş" },
+      { "label": "C", "text": "On altı" },
+      { "label": "D", "text": "On sekiz" },
+      { "label": "E", "text": "On bir" }
+    ],
+    "explanation": "TCK m.31/1: Fiili işlediği sırada on iki yaşını doldurmamış çocukların ceza sorumluluğu yoktur; haklarında ceza kovuşturması yapılamaz, yalnızca çocuklara özgü güvenlik tedbirleri uygulanabilir. On iki-on beş yaş grubunda ise sorumluluk, algılama ve yönlendirme yeteneğinin varlığına bağlıdır.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.31",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 31",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "32",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, işlediği fiille ilgili olarak davranışlarını yönlendirme yeteneği tam olarak kalkmamakla birlikte azalmış olan kişi hakkında, suçun ağırlaştırılmış müebbet hapis cezasını gerektirmesi hâlinde hangi ceza verilir?",
+    "options": [
+      { "label": "A", "text": "Yirmi yıl hapis" },
+      { "label": "B", "text": "Yirmi beş yıl hapis", "isCorrect": true },
+      { "label": "C", "text": "Müebbet hapis" },
+      { "label": "D", "text": "On beş yıldan yirmi yıla kadar hapis" },
+      { "label": "E", "text": "Ceza verilmez, yalnızca güvenlik tedbirine hükmolunur." }
+    ],
+    "explanation": "TCK m.32/2: Yönlendirme yeteneği azalmış kişiye ağırlaştırılmış müebbet hapis cezası yerine YİRMİ BEŞ YIL, müebbet hapis cezası yerine yirmi yıl hapis cezası verilir; diğer hâllerde ceza altıda birden fazla olmamak üzere indirilebilir. Yeteneğin tamamen kalktığı m.32/1 hâlinde ise ceza verilmez, güvenlik tedbirine hükmolunur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.32",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 32",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "39",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, ağırlaştırılmış müebbet veya müebbet hapis cezasını gerektirmeyen bir suça yardım eden kişi hakkında verilecek ceza bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Cezanın yarısı indirilir; ancak verilecek ceza sekiz yılı geçemez.", "isCorrect": true },
+      { "label": "B", "text": "Cezanın üçte biri indirilir; ancak verilecek ceza beş yılı geçemez." },
+      { "label": "C", "text": "Yardım eden, işlenen suçun cezasıyla cezalandırılır." },
+      { "label": "D", "text": "Cezanın yarısı indirilir ve verilecek ceza bakımından herhangi bir üst sınır öngörülmemiştir." },
+      { "label": "E", "text": "Cezanın üçte ikisi indirilir; ancak verilecek ceza üç yılı geçemez." }
+    ],
+    "explanation": "TCK m.39/1: Yardım edene, suç ağırlaştırılmış müebbeti gerektiriyorsa on beş yıldan yirmi yıla, müebbeti gerektiriyorsa on yıldan on beş yıla kadar hapis verilir; diğer hâllerde cezanın YARISI indirilir ve verilecek ceza SEKİZ YILI geçemez. İşlenen suçun cezasıyla cezalandırılan kişi ise azmettirendir (m.38).",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.39",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 39",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "43",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, aşağıdaki suçlardan hangisinde zincirleme suça ilişkin hükümler uygulanır?",
+    "options": [
+      { "label": "A", "text": "Kasten öldürme" },
+      { "label": "B", "text": "Kasten yaralama" },
+      { "label": "C", "text": "İşkence" },
+      { "label": "D", "text": "Yağma" },
+      { "label": "E", "text": "Hırsızlık", "isCorrect": true }
+    ],
+    "explanation": "TCK m.43/3: Zincirleme suç hükümleri kasten öldürme, kasten yaralama, işkence ve yağma suçlarında UYGULANMAZ. Bu dört suç dışında kalan hırsızlık gibi suçlarda ise zincirleme suç hükümleri uygulanabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.43",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "61",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, süreli hapis cezasını gerektiren bir suçtan dolayı cezanın belirlenmesi ve bireyselleştirilmesine ilişkin hükümler uygulandıktan sonra ulaşılan sonuç ceza en çok ne kadar olabilir?",
+    "options": [
+      { "label": "A", "text": "Yirmi yıl" },
+      { "label": "B", "text": "Yirmi beş yıl" },
+      { "label": "C", "text": "Otuz yıl", "isCorrect": true },
+      { "label": "D", "text": "Otuz altı yıl" },
+      { "label": "E", "text": "Kırk yıl" }
+    ],
+    "explanation": "TCK m.61/7: Süreli hapis cezasını gerektiren bir suçtan dolayı bu madde hükümlerine göre belirlenen sonuç ceza OTUZ YILDAN fazla olamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.61",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 61",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "66",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, kanunda başka türlü yazılmış olan hâller dışında, ağırlaştırılmış müebbet hapis cezasını gerektiren suçlarda kamu davası kaç yıl geçmesiyle düşer?",
+    "options": [
+      { "label": "A", "text": "On beş" },
+      { "label": "B", "text": "Yirmi" },
+      { "label": "C", "text": "Yirmi beş" },
+      { "label": "D", "text": "Otuz", "isCorrect": true },
+      { "label": "E", "text": "Kırk" }
+    ],
+    "explanation": "TCK m.66/1-a: Ağırlaştırılmış müebbet hapis cezasını gerektiren suçlarda dava zamanaşımı OTUZ yıldır. Müebbet hapiste yirmi beş, yirmi yıldan aşağı olmamak üzere hapiste yirmi, beş-yirmi yıl arasında on beş, beş yıla kadar olanlarda sekiz yıldır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.66",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 66",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "265",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, görevini yapmasını engellemek amacıyla kamu görevlisine karşı cebir veya tehdit kullanma suçunun yargı görevi yapan kişilere karşı işlenmesi hâlinde verilecek ceza aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Altı aydan üç yıla kadar hapis" },
+      { "label": "B", "text": "Bir yıldan üç yıla kadar hapis" },
+      { "label": "C", "text": "İki yıldan dört yıla kadar hapis", "isCorrect": true },
+      { "label": "D", "text": "Üç yıldan yedi yıla kadar hapis" },
+      { "label": "E", "text": "Beş yıldan on yıla kadar hapis" }
+    ],
+    "explanation": "TCK m.265/1'de suçun temel şekli altı aydan üç yıla kadar hapis cezasını gerektirir; m.265/2'ye göre suçun YARGI GÖREVİ YAPAN kişilere karşı işlenmesi hâlinde iki yıldan dört yıla kadar hapis cezasına hükmolunur.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Türk Ceza Kanunu m.265",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 265",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "90",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, herkes tarafından geçici olarak yakalama yapılabilmesi bakımından aşağıdakilerden hangisi kanunda öngörülen hâllerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Kişiye suçu işlerken rastlanması" },
+      { "label": "B", "text": "Suçüstü bir fiilden dolayı izlenen kişinin kaçması olasılığının bulunması" },
+      { "label": "C", "text": "Suçüstü bir fiilden dolayı izlenen kişinin hemen kimliğini belirleme olanağının bulunmaması" },
+      { "label": "D", "text": "Kişi hakkında daha önce verilmiş bir tutuklama kararının bulunması", "isCorrect": true },
+      { "label": "E", "text": "Suçüstü hâlinin, kendisini idareden aciz bir kişiye karşı işlenen ve soruşturması şikâyete bağlı bir suça ilişkin olması" }
+    ],
+    "explanation": "CMK m.90/1 herkes tarafından yakalamayı yalnız iki hâlde mümkün kılar: suçu işlerken rastlanması ve suçüstü fiilden dolayı izlenen kişinin kaçma olasılığı ya da kimliğinin hemen belirlenememesi. Tutuklama kararı veya yakalama emri bulunan hâllerde yakalama yetkisi m.90/2 uyarınca KOLLUK GÖREVLİLERİNE aittir; sıradan vatandaş bu yetkiyi kullanamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.90",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 90",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "91",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, gözaltı süresi ve yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre sırasıyla en çok ne kadardır?",
+    "options": [
+      { "label": "A", "text": "Yirmi dört saat — on iki saat", "isCorrect": true },
+      { "label": "B", "text": "Yirmi dört saat — yirmi dört saat" },
+      { "label": "C", "text": "Kırk sekiz saat — on iki saat" },
+      { "label": "D", "text": "Kırk sekiz saat — yirmi dört saat" },
+      { "label": "E", "text": "On iki saat — yirmi dört saat" }
+    ],
+    "explanation": "CMK m.91/1: Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, yakalama anından itibaren YİRMİ DÖRT SAATİ geçemez; bu zorunlu süre de ON İKİ SAATTEN fazla olamaz.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.91",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 91",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "91",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, toplu olarak işlenen suçlarda delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu nedeniyle gözaltı süresinin uzatılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Sulh ceza hâkimi, bir defaya mahsus olmak üzere üç gün uzatma kararı verir." },
+      { "label": "B", "text": "Cumhuriyet savcısı, her defasında bir günü geçmemek üzere üç gün süreyle yazılı olarak uzatma emri verebilir.", "isCorrect": true },
+      { "label": "C", "text": "Kolluk amiri, her defasında iki günü geçmemek üzere dört gün süreyle uzatma emri verebilir." },
+      { "label": "D", "text": "Mülki amir, toplam yedi güne kadar uzatma kararı verebilir." },
+      { "label": "E", "text": "Gözaltı süresi hiçbir hâlde uzatılamaz." }
+    ],
+    "explanation": "CMK m.91/3: Toplu olarak işlenen suçlarda Cumhuriyet savcısı, gözaltı süresinin HER DEFASINDA BİR GÜNÜ GEÇMEMEK ÜZERE ÜÇ GÜN süreyle uzatılmasına YAZILI OLARAK emir verebilir. Uzatma emri gözaltına alınana derhâl tebliğ edilir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.91",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 91",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "100",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, tutuklama kararı verilemeyecek hâllerle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Hapis cezasının üst sınırı iki yıldan fazla olmayan bütün suçlarda, istisnasız biçimde tutuklama kararı verilemez." },
+      { "label": "B", "text": "Sadece adlî para cezasını gerektiren suçlarda tutuklama kararı verilemez; hapis cezasının üst sınırı iki yıldan fazla olmayan suçlarda ise vücut dokunulmazlığına karşı kasten işlenenler bu yasağın dışındadır.", "isCorrect": true },
+      { "label": "C", "text": "Hapis cezasının alt sınırı iki yıldan az olan suçlarda tutuklama kararı verilemez." },
+      { "label": "D", "text": "Sadece adlî para cezasını gerektiren suçlarda dahi tutuklama nedeni varsa tutuklama kararı verilebilir." },
+      { "label": "E", "text": "Tutuklama yasağı öngörülen hâllerde adlî kontrol hükümleri de uygulanamaz." }
+    ],
+    "explanation": "CMK m.100/4: Sadece adlî para cezasını gerektiren suçlarda veya VÜCUT DOKUNULMAZLIĞINA KARŞI KASTEN İŞLENENLER HARİÇ OLMAK ÜZERE hapis cezasının üst sınırı iki yıldan fazla olmayan suçlarda tutuklama kararı verilemez. Ayrıca m.109/2 uyarınca tutuklama yasağı bulunan hâllerde adlî kontrol hükümleri uygulanabilir; bu nedenle E de yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.100",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 100",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "119",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, konutta yapılacak arama hangi karar veya emre dayanabilir?",
+    "options": [
+      { "label": "A", "text": "Yalnızca hâkim kararına" },
+      { "label": "B", "text": "Hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emrine", "isCorrect": true },
+      { "label": "C", "text": "Hâkim kararı, Cumhuriyet savcısının yazılı emri ya da savcıya ulaşılamadığı hâllerde kolluk amirinin yazılı emrine" },
+      { "label": "D", "text": "Kolluk amirinin sözlü emrine" },
+      { "label": "E", "text": "Mülki amirin yazılı emrine" }
+    ],
+    "explanation": "CMK m.119/1'de genel kural, hâkim kararı ya da gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının, savcıya ulaşılamadığı hâllerde ise kolluk amirinin yazılı emridir. Ancak KONUTTA, İŞYERİNDE VE KAMUYA AÇIK OLMAYAN KAPALI ALANLARDA arama, yalnızca hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle yapılabilir; kolluk amirinin emri bu yerler için yeterli değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.119",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 119",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "127",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, hâkim kararı olmaksızın yapılan elkoyma işlemiyle ilgili süreler aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "İşlem yirmi dört saat içinde hâkim onayına sunulur; hâkim kararını elkoymadan itibaren kırk sekiz saat içinde açıklar.", "isCorrect": true },
+      { "label": "B", "text": "İşlem kırk sekiz saat içinde hâkim onayına sunulur; hâkim kararını yirmi dört saat içinde açıklar." },
+      { "label": "C", "text": "İşlem yirmi dört saat içinde hâkim onayına sunulur; hâkim kararını yirmi dört saat içinde açıklar." },
+      { "label": "D", "text": "İşlem on iki saat içinde hâkim onayına sunulur; hâkim kararını otuz altı saat içinde açıklar." },
+      { "label": "E", "text": "İşlem üç gün içinde hâkim onayına sunulur; hâkim için süre öngörülmemiştir." }
+    ],
+    "explanation": "CMK m.127/3: Hâkim kararı olmaksızın yapılan elkoyma işlemi YİRMİ DÖRT SAAT içinde görevli hâkimin onayına sunulur; hâkim kararını elkoymadan itibaren KIRK SEKİZ SAAT içinde açıklar. Aksi hâlde elkoyma kendiliğinden kalkar.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.127",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 127",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "135",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, telekomünikasyon yoluyla iletişimin denetlenmesi tedbirinin süresiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Tedbir en çok bir ay için verilir ve uzatılamaz." },
+      { "label": "B", "text": "Tedbir en çok iki ay için verilir; bu süre bir ay daha uzatılabilir.", "isCorrect": true },
+      { "label": "C", "text": "Tedbir en çok üç ay için verilir; bu süre bir defa üç ay daha uzatılabilir." },
+      { "label": "D", "text": "Tedbir en çok altı ay için verilir ve uzatılamaz." },
+      { "label": "E", "text": "Tedbir için kanunda herhangi bir azami süre öngörülmemiştir." }
+    ],
+    "explanation": "CMK m.135/4: Tedbir kararı en çok İKİ AY için verilebilir; bu süre BİR AY daha uzatılabilir. Ayrıca örgüt faaliyeti çerçevesinde işlenen suçlarda hâkim, bu sürelere ek olarak her defasında bir aydan fazla olmamak ve toplam üç ayı geçmemek üzere uzatmaya karar verebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.135",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 135",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "171",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, kamu davasının açılmasının ertelenmesi kurumuyla ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Uzlaştırma ve önödeme kapsamındaki suçlar bu kurumun dışındadır." },
+      { "label": "B", "text": "Üst sınırı üç yıl veya daha az süreli hapis cezasını gerektiren suçlarda uygulanabilir." },
+      { "label": "C", "text": "Erteleme süresi beş yıldır." },
+      { "label": "D", "text": "Erteleme süresince dava zamanaşımı işlemeye devam eder.", "isCorrect": true },
+      { "label": "E", "text": "Cinsel dokunulmazlığa karşı işlenen suçlar hakkında uygulanmaz." }
+    ],
+    "explanation": "CMK m.171/4'ün son cümlesi açıktır: ERTELEME SÜRESİNCE ZAMANAŞIMI İŞLEMEZ. Diğer seçenekler m.171/2 ve m.171/6 hükümlerine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.171",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 171",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "231",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'nun yürürlükteki hükümlerine göre, hükmün açıklanmasının geri bırakılması kararına karşı hangi kanun yoluna başvurulabilir?",
+    "options": [
+      { "label": "A", "text": "İtiraz" },
+      { "label": "B", "text": "İstinaf", "isCorrect": true },
+      { "label": "C", "text": "Doğrudan temyiz" },
+      { "label": "D", "text": "Karar düzeltme" },
+      { "label": "E", "text": "Bu karara karşı hiçbir kanun yoluna başvurulamaz." }
+    ],
+    "explanation": "CMK m.231/12 (16/7/2026 tarihli ve 7589 sayılı Kanun'la değişik): 272 nci maddenin üçüncü fıkrası saklı kalmak üzere, hükmün açıklanmasının geri bırakılması kararına karşı İSTİNAF yoluna başvurulabilir. Değişiklikten önce bu karara karşı itiraz yolu öngörülüyordu; kanun yolunun değişmesi güncel mevzuatın en çok sorulabilecek noktalarından biridir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.231",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 231",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "231",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, hükmün açıklanmasının geri bırakılmasına karar verilmesi hâlinde sanık ne kadar süreyle denetim süresine tâbi tutulur?",
+    "options": [
+      { "label": "A", "text": "Bir yıl" },
+      { "label": "B", "text": "İki yıl" },
+      { "label": "C", "text": "Üç yıl" },
+      { "label": "D", "text": "Beş yıl", "isCorrect": true },
+      { "label": "E", "text": "Yedi yıl" }
+    ],
+    "explanation": "CMK m.231/8: Hükmün açıklanmasının geri bırakılması kararının verilmesi hâlinde sanık BEŞ YIL süreyle denetim süresine tâbi tutulur. Bu süre içinde bir yıldan fazla olmamak üzere denetimli serbestlik tedbirlerine hükmedilebilir ve denetim süresi içinde dava zamanaşımı durur.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Ceza Muhakemesi Kanunu m.231",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 231",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "2",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, idari yargı yetkisinin sınırlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İdari yargı yetkisi, idari eylem ve işlemlerin hukuka uygunluğunun denetimi ile sınırlıdır." },
+      { "label": "B", "text": "İdari mahkemeler yerindelik denetimi yapamazlar." },
+      { "label": "C", "text": "İdari mahkemeler, idarenin takdir yetkisini kaldıracak biçimde yargı kararı veremezler." },
+      { "label": "D", "text": "İdari mahkemeler, hukuka aykırı bulduğu idari işlemin yerine geçecek biçimde yeni bir idari işlem niteliğinde karar verebilir.", "isCorrect": true },
+      { "label": "E", "text": "İptal davası, idari işlemlerin yetki, şekil, sebep, konu ve maksat yönlerinden biri ile hukuka aykırı olması hâlinde menfaati ihlal edilenlerce açılır." }
+    ],
+    "explanation": "İYUK m.2/2: İdari mahkemeler yerindelik denetimi yapamaz ve İDARİ EYLEM VE İŞLEM NİTELİĞİNDE veya idarenin takdir yetkisini kaldıracak biçimde yargı kararı VEREMEZLER. Mahkeme hukuka aykırı işlemi iptal eder; onun yerine geçen yeni bir işlem kuramaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.2",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "7",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, özel kanunlarında ayrı süre gösterilmeyen hâllerde dava açma süresi Danıştay ve idare mahkemelerinde kaç, vergi mahkemelerinde kaç gündür?",
+    "options": [
+      { "label": "A", "text": "Otuz — otuz" },
+      { "label": "B", "text": "Altmış — otuz", "isCorrect": true },
+      { "label": "C", "text": "Altmış — altmış" },
+      { "label": "D", "text": "Otuz — altmış" },
+      { "label": "E", "text": "Doksan — altmış" }
+    ],
+    "explanation": "İYUK m.7/1: Dava açma süresi, özel kanunlarında ayrı süre gösterilmeyen hâllerde Danıştayda ve idare mahkemelerinde ALTMIŞ, vergi mahkemelerinde OTUZ gündür.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.7",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "10",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'nun yürürlükteki hükümlerine göre, idari makamlara yapılan başvuruda idarece verilen cevabın kesin olmaması hâlinde ilgilinin kesin cevabı beklemesi durumunda bekleme süresi başvuru tarihinden itibaren en çok ne kadar olabilir?",
+    "options": [
+      { "label": "A", "text": "İki ay" },
+      { "label": "B", "text": "Üç ay" },
+      { "label": "C", "text": "Dört ay", "isCorrect": true },
+      { "label": "D", "text": "Altı ay" },
+      { "label": "E", "text": "Bir yıl" }
+    ],
+    "explanation": "İYUK m.10/2 (8/7/2021 tarihli ve 7331 sayılı Kanun'la değişik): Otuz günlük süre içinde idarece verilen cevap kesin değilse ilgili kesin cevabı bekleyebilir; bu takdirde dava açma süresi işlemez, ancak BEKLEME SÜRESİ BAŞVURU TARİHİNDEN İTİBAREN DÖRT AYI GEÇEMEZ. 2021 değişikliğinden önce bu süre altı aydı; maddedeki altmış günlük süreler de otuz güne indirilmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.10",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 10",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "11",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, idari dava açılmadan önce üst makama yapılan başvurunun dava açma süresine etkisi nedir?",
+    "options": [
+      { "label": "A", "text": "İşlemeye başlamış olan dava açma süresini durdurur.", "isCorrect": true },
+      { "label": "B", "text": "Dava açma süresini kesintiye uğratır ve süre baştan işlemeye başlar." },
+      { "label": "C", "text": "Dava açma süresine hiçbir etkisi yoktur." },
+      { "label": "D", "text": "Dava açma süresini otuz gün uzatır." },
+      { "label": "E", "text": "Dava açma hakkını ortadan kaldırır." }
+    ],
+    "explanation": "İYUK m.11/1: Üst makama, üst makam yoksa işlemi yapmış olan makama yapılan başvuru işlemeye başlamış olan dava açma süresini DURDURUR. İsteğin reddi veya reddedilmiş sayılması hâlinde süre yeniden işlemeye başlar ve başvurma tarihine kadar geçmiş süre de hesaba katılır; yani süre sıfırlanmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.11",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 11",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "27",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, yürütmenin durdurulmasına karar verilebilmesi için aranan şartlar bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "İdari işlemin açıkça hukuka aykırı olması tek başına yeterlidir." },
+      { "label": "B", "text": "Telafisi güç veya imkânsız zararların doğması tek başına yeterlidir." },
+      { "label": "C", "text": "Telafisi güç veya imkânsız zararların doğması ile idari işlemin açıkça hukuka aykırı olması şartlarının birlikte gerçekleşmesi gerekir.", "isCorrect": true },
+      { "label": "D", "text": "İki şarttan herhangi birinin gerçekleşmesi yeterlidir." },
+      { "label": "E", "text": "Yalnızca davacının teminat göstermesi yeterlidir." }
+    ],
+    "explanation": "İYUK m.27/2: Yürütmenin durdurulması için idari işlemin uygulanması hâlinde telafisi güç veya imkânsız zararların doğması VE idari işlemin açıkça hukuka aykırı olması şartlarının BİRLİKTE gerçekleşmesi gerekir. Ayrıca kural olarak davalı idarenin savunması alındıktan veya savunma süresi geçtikten sonra, gerekçe gösterilerek karar verilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.27",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 27",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "27",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, yürütmenin durdurulması istemleri hakkında verilen kararlara karşı itiraz usulüyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İtiraz, kararın tebliğini izleyen günden itibaren yedi gün içinde yapılır." },
+      { "label": "B", "text": "İtiraz bir defaya mahsus olmak üzere yapılabilir." },
+      { "label": "C", "text": "İtiraz edilen merciler, dosyanın kendisine gelişinden itibaren yedi gün içinde karar vermek zorundadır." },
+      { "label": "D", "text": "İtiraz üzerine verilen kararlara karşı temyiz yoluna başvurulabilir.", "isCorrect": true },
+      { "label": "E", "text": "Aynı sebeplere dayanılarak ikinci kez yürütmenin durdurulması isteminde bulunulamaz." }
+    ],
+    "explanation": "İYUK m.27/7: İtiraz üzerine verilen kararlar KESİNDİR; bunlara karşı ayrıca kanun yoluna başvurulamaz. Diğer seçenekler m.27/7 ve m.27/10 hükümlerine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.27",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 27",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "28",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, idare mahkemelerinin esasa ve yürütmenin durdurulmasına ilişkin kararlarının icaplarına göre idarenin işlem tesis etme veya eylemde bulunma süresi en çok ne kadardır?",
+    "options": [
+      { "label": "A", "text": "On beş gün" },
+      { "label": "B", "text": "Otuz gün", "isCorrect": true },
+      { "label": "C", "text": "Altmış gün" },
+      { "label": "D", "text": "Üç ay" },
+      { "label": "E", "text": "Bir yıl" }
+    ],
+    "explanation": "İYUK m.28/1: İdare, mahkeme kararlarının icaplarına göre gecikmeksizin işlem tesis etmeye veya eylemde bulunmaya mecburdur; bu süre hiçbir şekilde kararın idareye tebliğinden başlayarak OTUZ GÜNÜ geçemez.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.28",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 28",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "45",
+    "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre, idare ve vergi mahkemelerinin kararlarına karşı bölge idare mahkemesine istinaf yoluna başvurma süresi, kararın tebliğinden itibaren ne kadardır?",
+    "options": [
+      { "label": "A", "text": "Yedi gün" },
+      { "label": "B", "text": "On beş gün" },
+      { "label": "C", "text": "Otuz gün", "isCorrect": true },
+      { "label": "D", "text": "Altmış gün" },
+      { "label": "E", "text": "Doksan gün" }
+    ],
+    "explanation": "İYUK m.45/1: İdare ve vergi mahkemelerinin kararlarına karşı, başka kanunlarda farklı bir kanun yolu öngörülmüş olsa dahi, mahkemenin bulunduğu yargı çevresindeki bölge idare mahkemesine kararın tebliğinden itibaren OTUZ GÜN içinde istinaf yoluna başvurulabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · İdari Yargılama Usulü Kanunu m.45",
+    "citation": "2577 sayılı İdari Yargılama Usulü Kanunu md. 45",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "articleNo": "2",
+    "stem": "5442 sayılı İl İdaresi Kanunu'na göre, il ve ilçe kurulması, kaldırılması ile bir ilçenin başka bir ile bağlanması hangi yolla yapılır?",
+    "options": [
+      { "label": "A", "text": "Kanun ile", "isCorrect": true },
+      { "label": "B", "text": "Cumhurbaşkanı onayı ile" },
+      { "label": "C", "text": "İçişleri Bakanlığının tasvibi ile" },
+      { "label": "D", "text": "İl genel meclisi kararı ile" },
+      { "label": "E", "text": "Valinin teklifi ve İçişleri Bakanının onayı ile" }
+    ],
+    "explanation": "5442 sayılı Kanun m.2/A: İl ve ilçe kurulması, kaldırılması, merkezlerinin belirtilmesi, adlarının değiştirilmesi ve bir ilçenin başka bir ile bağlanması KANUNLA yapılır. Buna karşılık bucak kurulması, kaldırılması ve il-ilçe-bucak sınırlarının değiştirilmesi Cumhurbaşkanı onayı ile gerçekleşir (m.2/B).",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · İl İdaresi Kanunu m.2",
+    "citation": "5442 sayılı İl İdaresi Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.5442.pdf"
+  },
+  {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "articleNo": "9",
+    "stem": "5442 sayılı İl İdaresi Kanunu'nun yürürlükteki hükümlerine göre, vali ilde kimin temsilcisi ve idari yürütme vasıtasıdır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanının", "isCorrect": true },
+      { "label": "B", "text": "İçişleri Bakanının" },
+      { "label": "C", "text": "Bakanlar Kurulunun" },
+      { "label": "D", "text": "Türkiye Büyük Millet Meclisinin" },
+      { "label": "E", "text": "İl genel meclisinin" }
+    ],
+    "explanation": "5442 sayılı Kanun m.9/1 (2/7/2018 tarihli ve 703 sayılı KHK ile değişik): Vali, ilde CUMHURBAŞKANININ temsilcisi ve idari yürütme vasıtasıdır; ilin genel idaresinden Cumhurbaşkanına karşı sorumludur. Değişiklikten önce madde \"Hükümetin temsilcisi\" ifadesini içeriyordu.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · İl İdaresi Kanunu m.9",
+    "citation": "5442 sayılı İl İdaresi Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.5442.pdf"
+  },
+  {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "articleNo": "11",
+    "stem": "5442 sayılı İl İdaresi Kanunu'na göre, kamu düzeni veya güvenliğinin olağan hayatı durduracak ya da kesintiye uğratacak şekilde bozulduğu hâllerde vali, ildeki belirli yerlere giriş ve çıkışı en çok ne kadar süreyle sınırlayabilir?",
+    "options": [
+      { "label": "A", "text": "Yedi gün" },
+      { "label": "B", "text": "On gün" },
+      { "label": "C", "text": "On beş gün", "isCorrect": true },
+      { "label": "D", "text": "Otuz gün" },
+      { "label": "E", "text": "Üç ay" }
+    ],
+    "explanation": "5442 sayılı Kanun m.11/C (25/7/2018 tarihli ve 7145 sayılı Kanun'la eklenen paragraf): Vali, kamu düzeni veya güvenliğinin ciddi şekilde bozulduğu ya da bozulacağına dair ciddi belirtilerin bulunduğu hâllerde ON BEŞ GÜNÜ GEÇMEMEK ÜZERE belirli yerlere giriş ve çıkışı sınırlayabilir, dolaşma ve toplanmaları düzenleyebilir veya kısıtlayabilir, ruhsatlı da olsa silah ve mermi taşınmasını yasaklayabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · İl İdaresi Kanunu m.11",
+    "citation": "5442 sayılı İl İdaresi Kanunu md. 11",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.5442.pdf"
+  },
+
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Aşağıdakilerden hangisi Mondros Ateşkes Antlaşması'nın imzalandığı tarihtir?",
+    "options": [
+      { "label": "A", "text": "30 Ekim 1918", "isCorrect": true },
+      { "label": "B", "text": "13 Kasım 1918" },
+      { "label": "C", "text": "10 Ağustos 1920" },
+      { "label": "D", "text": "11 Ekim 1922" },
+      { "label": "E", "text": "24 Temmuz 1923" }
+    ],
+    "explanation": "Mondros Ateşkes Antlaşması 30 Ekim 1918'de Limni Adası'nın Mondros Limanı'nda imzalanmıştır. 13 Kasım 1918 İtilaf donanmasının İstanbul'a gelişi, 10 Ağustos 1920 Sevr, 11 Ekim 1922 Mudanya, 24 Temmuz 1923 ise Lozan Antlaşması'nın tarihidir.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "\"Milletin istiklalini yine milletin azim ve kararı kurtaracaktır.\" ifadesi aşağıdakilerin hangisinde yer almıştır?",
+    "options": [
+      { "label": "A", "text": "Amasya Genelgesi", "isCorrect": true },
+      { "label": "B", "text": "Erzurum Kongresi kararları" },
+      { "label": "C", "text": "Sivas Kongresi kararları" },
+      { "label": "D", "text": "Misak-ı Millî" },
+      { "label": "E", "text": "Havza Genelgesi" }
+    ],
+    "explanation": "22 Haziran 1919 tarihli Amasya Genelgesi'nde yer alan bu ifade, Kurtuluş Savaşı'nın gerekçesini ve yöntemini birlikte ortaya koyan ilk metindir. Genelge ayrıca \"Vatanın bütünlüğü, milletin istiklali tehlikededir\" tespitiyle başlar ve Sivas'ta bir kongre toplanmasını kararlaştırır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Millî cemiyetlerin \"Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti\" adı altında birleştirilmesi kararı aşağıdakilerden hangisinde alınmıştır?",
+    "options": [
+      { "label": "A", "text": "Erzurum Kongresi" },
+      { "label": "B", "text": "Sivas Kongresi", "isCorrect": true },
+      { "label": "C", "text": "Balıkesir Kongresi" },
+      { "label": "D", "text": "Alaşehir Kongresi" },
+      { "label": "E", "text": "Amasya Görüşmeleri" }
+    ],
+    "explanation": "4-11 Eylül 1919 tarihli Sivas Kongresi'nde yurdun dört bir yanındaki millî cemiyetler \"Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti\" çatısı altında birleştirilmiş, böylece millî mücadele tek bir örgütsel yapıya kavuşmuştur. Sivas Kongresi bu yönüyle toplanış biçimi bakımından ulusal nitelik taşır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Misak-ı Millî kararları aşağıdaki meclislerin hangisinde kabul edilmiştir?",
+    "options": [
+      { "label": "A", "text": "Son Osmanlı Mebusan Meclisi", "isCorrect": true },
+      { "label": "B", "text": "Birinci Türkiye Büyük Millet Meclisi" },
+      { "label": "C", "text": "İkinci Türkiye Büyük Millet Meclisi" },
+      { "label": "D", "text": "Meclis-i Ayan" },
+      { "label": "E", "text": "Temsil Heyeti" }
+    ],
+    "explanation": "Misak-ı Millî, 28 Ocak 1920'de son Osmanlı Mebusan Meclisi tarafından kabul edilmiştir. Kararlar yeni Türk devletinin siyasi sınırlarını ve bağımsızlık ilkelerini ortaya koyduğu için İtilaf Devletleri 16 Mart 1920'de İstanbul'u resmen işgal etmiş, meclis kapatılmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Aşağıdaki gelişmelerden hangisi kronolojik olarak en önce gerçekleşmiştir?",
+    "options": [
+      { "label": "A", "text": "Türkiye Büyük Millet Meclisinin açılması", "isCorrect": true },
+      { "label": "B", "text": "Saltanatın kaldırılması" },
+      { "label": "C", "text": "Cumhuriyetin ilanı" },
+      { "label": "D", "text": "Halifeliğin kaldırılması" },
+      { "label": "E", "text": "Lozan Antlaşması'nın imzalanması" }
+    ],
+    "explanation": "Sıralama şöyledir: TBMM'nin açılışı 23 Nisan 1920, saltanatın kaldırılması 1 Kasım 1922, Lozan Antlaşması 24 Temmuz 1923, Cumhuriyetin ilanı 29 Ekim 1923, halifeliğin kaldırılması 3 Mart 1924. En erken tarihli gelişme TBMM'nin açılmasıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "3 Mart 1924 tarihinde kabul edilen kanunlarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Halifelik kaldırılmıştır." },
+      { "label": "B", "text": "Şer'iye ve Evkaf Vekâleti kaldırılmıştır." },
+      { "label": "C", "text": "Erkân-ı Harbiye Vekâleti kaldırılmıştır." },
+      { "label": "D", "text": "Tevhid-i Tedrisat Kanunu kabul edilmiştir." },
+      { "label": "E", "text": "Medeni Kanun kabul edilmiştir.", "isCorrect": true }
+    ],
+    "explanation": "3 Mart 1924'te halifelik kaldırılmış, Şer'iye ve Evkaf ile Erkân-ı Harbiye Vekâletleri kaldırılmış ve Tevhid-i Tedrisat Kanunu kabul edilmiştir. Türk Medeni Kanunu ise 17 Şubat 1926'da kabul edilmiştir; bu nedenle E yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Sakarya Meydan Muharebesi'nin sonuçlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Fransa ile Ankara Antlaşması imzalanmış ve Güney Cephesi kapanmıştır.", "isCorrect": true },
+      { "label": "B", "text": "İtilaf Devletleri Sevr Antlaşması'nı yürürlüğe koymuştur." },
+      { "label": "C", "text": "Yunan ordusu Anadolu'yu tamamen terk etmiştir." },
+      { "label": "D", "text": "Mudanya Ateşkes Antlaşması imzalanmıştır." },
+      { "label": "E", "text": "Türkiye Büyük Millet Meclisi kapatılmıştır." }
+    ],
+    "explanation": "23 Ağustos - 13 Eylül 1921 tarihli Sakarya Meydan Muharebesi'nin ardından 20 Ekim 1921'de Fransa ile Ankara Antlaşması imzalanmış ve Güney Cephesi kapanmıştır. Yunan ordusunun Anadolu'yu terk etmesi Büyük Taarruz (26 Ağustos 1922) sonrasında, Mudanya Ateşkesi ise 11 Ekim 1922'de gerçekleşmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Türkiye'de kadınlara milletvekili seçme ve seçilme hakkı hangi yıl tanınmıştır?",
+    "options": [
+      { "label": "A", "text": "1926" },
+      { "label": "B", "text": "1930" },
+      { "label": "C", "text": "1933" },
+      { "label": "D", "text": "1934", "isCorrect": true },
+      { "label": "E", "text": "1937" }
+    ],
+    "explanation": "Kadınlara milletvekili seçme ve seçilme hakkı 5 Aralık 1934'te Anayasa ve Seçim Kanunu'nda yapılan değişiklikle tanınmıştır. 1930'da belediye seçimlerine katılma, 1933'te ise muhtarlık seçimlerine katılma hakkı verilmişti; 1937 ise Atatürk ilkelerinin Anayasaya girdiği yıldır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  },
+  {
+    "topicId": "23d22785-351b-4f39-8516-a419e2c254c0",
+    "stem": "Boğazlar üzerinde Türkiye'nin egemenlik haklarını güçlendiren ve Boğazlar Komisyonu'nu kaldıran uluslararası belge aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Montrö Boğazlar Sözleşmesi", "isCorrect": true },
+      { "label": "B", "text": "Lozan Antlaşması" },
+      { "label": "C", "text": "Balkan Antantı" },
+      { "label": "D", "text": "Sadabat Paktı" },
+      { "label": "E", "text": "Ankara Antlaşması" }
+    ],
+    "explanation": "20 Temmuz 1936 tarihli Montrö Boğazlar Sözleşmesi ile Lozan'da kurulan ve başkanı Türk olan uluslararası Boğazlar Komisyonu kaldırılmış, Boğazların yönetimi ve tahkimi tümüyle Türkiye'ye bırakılmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · Atatürk İlkeleri ve İnkılap Tarihi"
+  }
+]

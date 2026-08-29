@@ -1,0 +1,155 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "2",
+    "stem": "2839 sayılı Milletvekili Seçimi Kanunu'na göre milletvekili seçim sistemiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Seçim tek derecelidir." },
+      { "label": "B", "text": "Nispi temsil sistemine göre yapılır." },
+      { "label": "C", "text": "Seçimin bütün yurtta aynı gün yapılması zorunlu değildir.", "isCorrect": true },
+      { "label": "D", "text": "Oyların sayım ve dökümü açık yapılır." },
+      { "label": "E", "text": "Seçmen oyunu tam bir serbestlikle kendisi kullanır." }
+    ],
+    "explanation": "2839 sayılı Kanun m.2'ye göre seçim tek dereceli; genel, eşit ve gizli oyla, nispi temsil sistemine göre ve BÜTÜN YURTTA AYNI GÜN yapılır. Sayım, döküm ve tutanak işlemleri açıktır.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "4",
+    "stem": "2839 sayılı Kanuna göre 66 milletvekili çıkaracağı belirlenen bir il kaç seçim çevresine bölünür?",
+    "options": [
+      { "label": "A", "text": "1" },
+      { "label": "B", "text": "2" },
+      { "label": "C", "text": "3", "isCorrect": true },
+      { "label": "D", "text": "4" },
+      { "label": "E", "text": "5" }
+    ],
+    "explanation": "Kanun m.4'e göre 18'e kadar milletvekili çıkaran iller bir; 19'dan 35'e kadar çıkaran iller iki; 36 VE DAHA FAZLA milletvekili çıkaran iller üç seçim çevresine bölünür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 4",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "5",
+    "stem": "2839 sayılı Kanuna göre seçim çevreleri ve her seçim çevresinin çıkaracağı milletvekili sayısı, genel nüfus bilgilerinin açıklanmasından itibaren kim tarafından ve en geç hangi süre içinde tespit edilerek ilan edilir?",
+    "options": [
+      { "label": "A", "text": "YSK tarafından en geç 6 ay içinde", "isCorrect": true },
+      { "label": "B", "text": "YSK tarafından en geç 1 yıl içinde" },
+      { "label": "C", "text": "TBMM tarafından en geç 3 ay içinde" },
+      { "label": "D", "text": "TBMM tarafından en geç 1 yıl içinde" },
+      { "label": "E", "text": "Yargıtay tarafından en geç 1 yıl içinde" }
+    ],
+    "explanation": "Kanun m.5'e göre belirleme YSK tarafından, nüfus bilgilerinin açıklanmasından itibaren EN GEÇ ALTI AY içinde yapılır ve Resmî Gazete, radyo ve televizyonda ilan edilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 5; YSK 2026/109",
+    "citationUrl": "https://www.ysk.gov.tr/doc/karar/dosya/58015403/2026-109.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "12/A",
+    "stem": "2839 sayılı Kanuna göre siyasi partiler, aday listelerinin teslim edilmesi için belirlenen tarihten kaç gün öncesine kadar seçim ittifakından vazgeçtiklerini YSK'ye bildirebilir?",
+    "options": [
+      { "label": "A", "text": "3 gün" },
+      { "label": "B", "text": "5 gün" },
+      { "label": "C", "text": "7 gün", "isCorrect": true },
+      { "label": "D", "text": "10 gün" },
+      { "label": "E", "text": "15 gün" }
+    ],
+    "explanation": "Kanun m.12/A'ya göre ittifaktan vazgeçme bildirimi, aday listelerinin teslimi için belirlenen tarihten YEDİ GÜN öncesine kadar YSK'ye yapılabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 12/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "12",
+    "stem": "2839 sayılı Kanuna göre milletvekili adaylığıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Siyasi partiler anlaşarak müşterek liste hâlinde aday gösteremez." },
+      { "label": "B", "text": "Siyasi parti tarafından aday gösterilen kişinin o siyasi partiye üye olması zorunludur.", "isCorrect": true },
+      { "label": "C", "text": "Bir kişi aynı zamanda farklı siyasi partilerden aday gösterilemez." },
+      { "label": "D", "text": "Bağımsız aday aynı seçim için birden fazla seçim çevresinde aday olamaz." },
+      { "label": "E", "text": "Cumhurbaşkanlığı ve milletvekilliği adaylığı aynı kişide birleşemez." }
+    ],
+    "explanation": "Siyasi partiler, kendi tüzüklerindeki usule göre aday belirlerken parti üyesi olmayan kişileri de aday gösterebilir. Bu nedenle adayın mutlaka o partiye üye olması gerekmez.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "22",
+    "stem": "2839 sayılı Kanuna göre adayların geçici olarak ilanından sonra yapılacak itirazlarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İtiraz adayların geçici ilanından itibaren yapılır." },
+      { "label": "B", "text": "İtiraz süresi beş gündür.", "isCorrect": true },
+      { "label": "C", "text": "İl seçim kurulu itirazı en geç üç gün içinde karara bağlar." },
+      { "label": "D", "text": "İl seçim kurulunun kararına karşı iki gün içinde YSK'ye başvurulabilir." },
+      { "label": "E", "text": "YSK başvuruyu en geç üç gün içinde karara bağlar." }
+    ],
+    "explanation": "Adayların geçici ilanından itibaren il seçim kuruluna itiraz süresi BEŞ GÜN DEĞİL İKİ GÜNDÜR. İl seçim kurulu üç günde karar verir; karara karşı iki günde YSK'ye başvurulur ve YSK üç günde kesin karar verir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 22",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "8",
+    "stem": "2839 sayılı Kanuna göre bir seçim çevresindeki seçimin işlemler sebebiyle iptaline karar verilmesi durumunda yenileme seçimi, kararın ilanından sonra gelen kaçıncı günü takip eden ilk pazar günü yapılır?",
+    "options": [
+      { "label": "A", "text": "15. günü" },
+      { "label": "B", "text": "30. günü" },
+      { "label": "C", "text": "45. günü" },
+      { "label": "D", "text": "60. günü", "isCorrect": true },
+      { "label": "E", "text": "90. günü" }
+    ],
+    "explanation": "Kanun m.8'e göre yenileme seçimi, iptal kararının ilanından sonra gelen ALTMIŞINCI GÜNÜ takip eden ilk pazar günü yapılır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "18",
+    "stem": "2839 sayılı Kanuna göre seçim yenilenirse, aday olabilmek için görevinden ayrılması gereken kamu görevlisi yenileme kararının ilanından itibaren en geç kaç gün içinde görevinden çekilmelidir?",
+    "options": [
+      { "label": "A", "text": "7 gün", "isCorrect": true },
+      { "label": "B", "text": "10 gün" },
+      { "label": "C", "text": "15 gün" },
+      { "label": "D", "text": "30 gün" },
+      { "label": "E", "text": "1 ay" }
+    ],
+    "explanation": "Kanun m.18'e göre seçim yenileme kararının ilanından başlayarak YEDİ GÜN içinde görevden ayrılmayan kişiler milletvekili adayı olamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 18",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "19",
+    "stem": "2839 sayılı Kanuna göre kamu görevlilerinin milletvekili adayı olmak için görevden ayrılmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Ayrılma isteği en yakın amire verilecek dilekçeyle yapılır." },
+      { "label": "B", "text": "Telgrafla da ayrılma başvurusu yapılabilir." },
+      { "label": "C", "text": "Dilekçenin ilgili makama geldiği tarihten itibaren en geç yedi gün içinde kabul kararı tebliğ edilir.", "isCorrect": true },
+      { "label": "D", "text": "Subay ve astsubaylar ayrılma istekleri reddedilse bile adaylıklarını koyabilir." },
+      { "label": "E", "text": "Ayrılma isteği kabul edilen subay ve astsubaylar sonradan bu isteklerinden vazgeçemez." }
+    ],
+    "explanation": "Kanun m.19'a göre kabul kararı YEDİ DEĞİL EN GEÇ ON GÜN içinde dilekçe sahibine tebliğ edilir. Subay ve astsubayların ayrılma istekleri reddedilse bile adaylık hakları korunur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 19",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2839.pdf"
+  }
+]

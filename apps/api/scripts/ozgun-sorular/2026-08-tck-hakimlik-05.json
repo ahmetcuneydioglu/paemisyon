@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "30",
+    "stem": "A, miras paylaşımı sırasında kendisine haksızlık yaptığını düşündüğü kardeş B'yi öldürmeye karar verir. Ancak gece karanlığından B zannıyla C'yi öldürür.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A, C'yi taksirle öldürme suçundan dolayı sorumludur." },
+      { "label": "B", "text": "A, bu hatasından yararlanamaz ve kasten öldürmenin kardeşe karşı işlenmiş nitelikli hâlinden sorumludur." },
+      { "label": "C", "text": "A, bu hatasından yararlanır ve başkaca ağırlaştırıcı sebep yoksa kasten öldürmenin temel şeklinden sorumludur.", "isCorrect": true },
+      { "label": "D", "text": "A, B'ye karşı teşebbüs aşamasında kalmış kasten öldürmeden; C'ye karşı ise tamamlanmış kasten öldürmenin nitelikli hâlinden sorumludur." },
+      { "label": "E", "text": "A, B'ye karşı teşebbüs aşamasında kalmış kasten öldürmeden; C'ye karşı ise tamamlanmış kasten öldürmenin temel şeklinden sorumlu olur." }
+    ],
+    "explanation": "Şahısta hata (error in persona) kastı kaldırmaz; A tek fiille tamamlanmış kasten öldürmeden sorumludur ve ayrıca B'ye teşebbüs sorumluluğu doğmaz. TCK m.30/2 uyarınca suçun nitelikli hâllerinin gerçekleştiği hususunda hataya düşen kişi bu hatasından yararlanır: öldürülen C failin kardeşi olmadığından ve fail kardeşini öldürmediğini bilmediğinden kardeşe karşı öldürme nitelikli hâli (m.82/1-d) uygulanamaz; başkaca ağırlaştırıcı sebep yoksa suçun temel şeklinden sorumluluk doğar.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 30, 82",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "30",
+    "stem": "A, B'ye gıyabında hakaret eder. Durumu öğrenen ve oldukça öfkelenen B, bu öfkenin tesiri altında A olduğunu sanarak C'yi yaralar.\nBuna göre B'nin ceza sorumluluğu ile ilgili olarak aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A'yı kasten yaralamaya teşebbüsten, C'yi kasten yaralamaktan sorumludur." },
+      { "label": "B", "text": "Yalnızca C'yi kasten yaralamaktan sorumludur.", "isCorrect": true },
+      { "label": "C", "text": "Yalnızca C'yi taksirle yaralamaktan sorumludur." },
+      { "label": "D", "text": "A'yı kasten yaralamaya teşebbüsten, C'yi taksirle yaralamaktan sorumludur." },
+      { "label": "E", "text": "Yalnızca A'yı kasten yaralamaya teşebbüsten sorumludur." }
+    ],
+    "explanation": "Olayda şahısta hata vardır: B, hedef aldığı kişiyi A ile karıştırmıştır. Şahısta hata suçun kurucu unsurlarına etki etmediğinden kastı kaldırmaz; B, hareketini bizzat hedef aldığı kişi üzerinde gerçekleştirdiğinden yalnızca C'yi KASTEN yaralamaktan sorumludur. Tek fiil bulunduğundan A'ya yönelik ayrıca teşebbüs sorumluluğu da doğmaz. B'nin, A'nın gıyabındaki hakareti nedeniyle haksız tahrik indirimi ayrıca değerlendirilebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 21, 30",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "44",
+    "stem": "A, B'nin bahçesindeki ağaçların bahçe dışına sarkan dallarını kesiyor ve hemen ardından aynı bahçedeki konutun camlarına da bahçe dışından taş atarak kırıyor.\nBu olayla ilgili olarak aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Bir suç işleme kararının icrası kapsamında A'ya karşı mala zarar verme suçu değişik zamanlarda iki kez işlendiği için zincirleme suç hükümleri uygulanarak tek bir cezaya hükmedilir ve bu ceza artırılır." },
+      { "label": "B", "text": "İki ayrı fiil vardır ve mala zarar verme suçundan iki ayrı cezaya hükmedilir." },
+      { "label": "C", "text": "Tek bir fiil vardır ve mala zarar verme suçundan tek bir cezaya hükmedilir.", "isCorrect": true },
+      { "label": "D", "text": "İki ayrı fiil vardır ve konut dokunulmazlığının ihlali ile mala zarar verme suçlarından ayrı ayrı cezaya hükmedilir." },
+      { "label": "E", "text": "Tek bir fiil ile konut dokunulmazlığının ihlali ve mala zarar verme suçları işlenmiştir; fikri içtima hükümleri uygulanarak mala zarar verme suçundan cezaya hükmedilir." }
+    ],
+    "explanation": "Dal kesme ile hemen ardından cam kırma, araya zaman girmeksizin, aynı yerde ve aynı mağdura karşı gerçekleşen doğal bir hareket bütünlüğüdür; hukuken TEK FİİL kabul edilir ve mala zarar verme suçundan tek cezaya hükmedilir. 'Değişik zamanlarda' işlenme koşulu gerçekleşmediğinden zincirleme suç (m.43) uygulanmaz. Fail bahçeye ve konuta girmediğinden konut dokunulmazlığının ihlali de oluşmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43, 44, 151",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "21",
+    "stem": "A, bir kafede tamamen cam kaplı özel bölümde oturan hasmı B'ye camın ardından ateş eder. Camı kırarak geçen kurşun B'yi yaralar.\nBuna göre A'nın fiili ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "B'nin yaralanması ve camın kırılması bakımından doğrudan kast ile hareket etmiştir.", "isCorrect": true },
+      { "label": "B", "text": "B'nin yaralanması ve camın kırılması bakımından olası kast ile hareket etmiştir." },
+      { "label": "C", "text": "B'nin yaralanması bakımından doğrudan kast ile, camın kırılması bakımından ise bilinçli taksirle hareket etmiştir." },
+      { "label": "D", "text": "B'nin yaralanması bakımından doğrudan kast ile, camın kırılması bakımından basit taksirle hareket etmiştir." },
+      { "label": "E", "text": "B'nin yaralanması bakımından doğrudan kast ile, camın kırılması bakımından olası kast ile hareket etmiştir." }
+    ],
+    "explanation": "Cam kaplı bölümdeki kişiye ateş eden fail, kurşunun önce camı kıracağını bilmektedir; neticenin gerçekleşmesi KAÇINILMAZ olan durumlarda fail bu netice bakımından da DOĞRUDAN KASTLA hareket etmiş sayılır. Olası kast, neticenin muhtemel olup kabullenildiği hâllere özgüdür; burada camın kırılması ihtimal değil zorunlu ara neticedir. Bu nedenle A hem yaralama hem mala zarar verme bakımından doğrudan kastla hareket etmiştir; iki suç arasında fikri içtima (m.44) değerlendirilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 21, 44",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "44",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre bir kimsenin işlediği bir fiille birden fazla farklı suçun oluşmasına neden olması ve bunlardan en ağır cezayı gerektiren suçtan dolayı cezalandırılması, aşağıdakilerin hangisiyle ifade edilir?",
+    "options": [
+      { "label": "A", "text": "Özgü suç" },
+      { "label": "B", "text": "Kesintisiz suç" },
+      { "label": "C", "text": "Bağlı hareketli suç" },
+      { "label": "D", "text": "Gerçek içtima" },
+      { "label": "E", "text": "Fikri içtima", "isCorrect": true }
+    ],
+    "explanation": "TCK m.44'e göre işlediği bir fiil ile birden fazla FARKLI suçun oluşumuna sebebiyet veren kişi, bunlardan en ağır cezayı gerektiren suçtan cezalandırılır; bu kurum FARKLI NEVİDEN FİKRİ İÇTİMAdır. Aynı suçun tek fiille birden fazla kişiye karşı işlenmesi (aynı neviden fikri içtima) ise m.43/2'de zincirleme suç hükümleri içinde düzenlenmiştir. Gerçek içtimada fiil sayısı kadar suç ve ceza vardır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43, 44",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

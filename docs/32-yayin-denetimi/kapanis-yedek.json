@@ -1,0 +1,76 @@
+[
+ {
+  "versiyonId": "3a07006c-108d-46b7-98a8-0c1fd0278d03",
+  "eskiAciklama": "m.36/1'e göre gerçek kişiye maktu ceza verilirken, m.36/2'ye göre fiilin bir ticarî işletmenin faaliyeti çerçevesinde işlenmesi hâlinde işletme sahibi gerçek veya tüzel kişiye alt-üst sınırlı ve katbekat daha yüksek ceza verilir (2026 tablosunda işletme cezasının üst sınırı, gerçek kişi cezasının yüz katından fazladır). Her iki cezaya da kolluk veya belediye zabıta görevlileri karar verir.",
+  "options": [
+   {
+    "id": "410f758e-ddfe-4a5f-ba9d-32465791a80f",
+    "label": "A",
+    "text": "Her ikisine de aynı miktarda maktu ceza verilir",
+    "isCorrect": false
+   },
+   {
+    "id": "ae64231e-79f9-4358-9ff2-0926983c8197",
+    "label": "B",
+    "text": "Ticarî işletmenin faaliyeti çerçevesinde işlenen gürültü kabahatinde işletme sahibine, gerçek kişiye verilen cezadan çok daha yüksek ve alt-üst sınır arasında belirlenen bir ceza verilir",
+    "isCorrect": true
+   },
+   {
+    "id": "4f99b8b5-3b51-43fb-bf7c-b86a4b2a51d3",
+    "label": "C",
+    "text": "İşletmeciye ceza verilemez; yalnızca faaliyetten men uygulanır",
+    "isCorrect": false
+   },
+   {
+    "id": "94c2f8ae-688a-423a-b1f3-fe65fe522df2",
+    "label": "D",
+    "text": "Gerçek kişiye verilecek ceza işletmeciden daha yüksektir",
+    "isCorrect": false
+   },
+   {
+    "id": "dda0ab93-5133-4549-be75-b61f1057f85c",
+    "label": "E",
+    "text": "İşletmeci hakkında yalnızca Cumhuriyet savcısı ceza verebilir",
+    "isCorrect": false
+   }
+  ],
+  "gerekce": "Eski açıklama “işletme cezasının üst sınırı, gerçek kişi cezasının YÜZ KATINDAN FAZLADIR” diyordu. Kanunî tutarlar 50 TL’ye karşı 1.000–5.000 TL; üst sınır 5000/50 = TAM YÜZ KATI, fazlası değil. Yeniden değerleme (m.17/7) iki cezayı da aynı oranda artırdığı için oran değişmez. İşaretli cevap (B) doğruydu; kusur yalnız açıklamadaydı."
+ },
+ {
+  "versiyonId": "f7ef5407-6c14-4751-8d12-823db9aa8613",
+  "eskiAciklama": null,
+  "options": [
+   {
+    "id": "1b340282-37ab-4b19-afe9-7b7ab2384ad0",
+    "label": "A",
+    "text": "Üç",
+    "isCorrect": false
+   },
+   {
+    "id": "d328a7e4-c53d-423f-ad95-3e7def05b443",
+    "label": "B",
+    "text": "Beş",
+    "isCorrect": false
+   },
+   {
+    "id": "85338b9f-d189-4a87-9c86-1518ee64674f",
+    "label": "C",
+    "text": "Yedi",
+    "isCorrect": true
+   },
+   {
+    "id": "243578d9-f002-41c8-8f5c-edaef5ca464d",
+    "label": "D",
+    "text": "On",
+    "isCorrect": false
+   },
+   {
+    "id": "93cf4ad4-cc29-426c-a061-f0315e4dc03b",
+    "label": "E",
+    "text": "On beş",
+    "isCorrect": false
+   }
+  ],
+  "gerekce": "GÜNCELLİĞİNİ YİTİRMİŞTİ VE CEVAPLANAMAZ HÂLDEYDİ. Soru “kaç gün içinde” diye soruyor, işaretli cevap “Yedi” idi; oysa m.29/1 7499 s.K. ile “iki hafta” (14 gün) olmuştur ve doğru karşılık şıklar arasında (üç/beş/yedi/on/on beş) HİÇ YOKTU. Soru 1 sınavda kullanıldığı için arşivlenmedi — arşivlemek geçmiş sonuçları bozardı. Bunun yerine C şıkkının METNİ “Yedi” → “On dört” olarak düzeltildi; DOĞRU CEVAP HARFİ (C) DEĞİŞMEDİ, dolayısıyla geçmiş sınav puanlaması etkilenmez. Aynı kuralı ölçen c2480012 zaten güncel metne göre doğruydu; bu düzeltmeyle banka içi çelişki de ortadan kalktı."
+ }
+]

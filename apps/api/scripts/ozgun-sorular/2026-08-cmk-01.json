@@ -1,0 +1,359 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "8",
+    "stem": "Tekirdağ'da M'yi öldüren K, aynı gece asker arkadaşı olan ve Edirne'de ikamet etmekte olan A ile Çanakkale'de buluşur ve olayı anlatarak cinayette kullandığı silahı A'ya verir. A, bu silahı alarak K'yi korumak adına İzmir'de denize atar.\n5271 sayılı Ceza Muhakemesi Kanunu'na göre A, silahı yok etme fiiliyle ilgili aşağıdaki mahkemelerin hangisinde yargılanabilir?",
+    "options": [
+      { "label": "A", "text": "Edirne ağır ceza mahkemesi" },
+      { "label": "B", "text": "Edirne asliye ceza mahkemesi" },
+      { "label": "C", "text": "Tekirdağ ağır ceza mahkemesi", "isCorrect": true },
+      { "label": "D", "text": "İzmir ağır ceza mahkemesi" },
+      { "label": "E", "text": "Çanakkale ağır ceza mahkemesi" }
+    ],
+    "explanation": "CMK m.8/2'ye göre suçun işlenmesinden sonra suçluyu kayırma, SUÇ DELİLLERİNİ YOK ETME, gizleme veya değiştirme fiilleri de bağlantılı suç sayılır. CMK m.9 uyarınca bağlantılı suçlardan her biri değişik mahkemelerin görevine giriyorsa bunlar hakkında birleştirilmek suretiyle YÜKSEK GÖREVLİ MAHKEMEDE dava açılabilir. Asıl suç olan kasten öldürme Tekirdağ'da işlenmiştir (m.12/1: davaya bakmak yetkisi suçun işlendiği yer mahkemesine aittir) ve bu suça bakmakla görevli mahkeme ağır ceza mahkemesidir. Bu nedenle A, delilleri yok etme fiilinden Tekirdağ ağır ceza mahkemesinde yargılanabilir; olayda geçen diğer iller yalnızca çeldiricidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 8, 9, 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "20",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre yetkiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Yetkili hâkim veya mahkeme, fiilî sebeplerle görevini yerine getiremeyecek hâlde bulunursa yüksek görevli mahkeme, davanın başka yerde bulunan aynı derecede bir mahkemeye naklîne karar verir." },
+      { "label": "B", "text": "Kovuşturmanın görevli ve yetkili olan mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeli olursa davanın naklini Adalet Bakanı Yargıtaydan ister." },
+      { "label": "C", "text": "Yetkili hâkim veya mahkeme, hukukî sebeplerle görevini yerine getiremeyecek hâlde bulunursa yüksek görevli mahkeme, davanın başka yerde bulunan aynı derecede bir mahkemeye naklîne karar verir." },
+      { "label": "D", "text": "Yetkili olmayan hâkim veya mahkemece yapılan işlemler yetkisizlik nedeniyle kural olarak hükümsüz sayılır.", "isCorrect": true },
+      { "label": "E", "text": "Bir hâkim veya mahkeme yetkili olmasa bile, gecikmesinde sakınca bulunan hâllerde yargı çevresi içerisinde gerekli işlemleri yapar." }
+    ],
+    "explanation": "CMK m.20 açıkça 'Yetkili olmayan hâkim veya mahkemece yapılan işlemler, SADECE YETKİSİZLİK NEDENİYLE HÜKÜMSÜZ SAYILMAZ' demektedir; bu işlemler geçerlidir, ancak yetkili merci gerek görürse tekrarlanabilir. Bu nedenle D yanlıştır. A ve C, m.19/1'deki hukukî veya fiilî sebeplerle nakli; B, m.19/2'deki kamu güvenliği nedeniyle nakli (istem Adalet BAKANINDAN gelir, Yargıtay karar verir); E ise m.21'deki gecikmesinde sakınca bulunan hâlleri karşılar.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 19, 20, 21",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "2",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre aşağıdaki tanımlardan hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Kovuşturmanın başlamasından itibaren hükmün kesinleşmesine kadar geçen aşamada suç şüphesi altında bulunan kişiye sanık denir." },
+      { "label": "B", "text": "Soruşturma evresinde şüphelinin tutuklanma talebi ile sevk edildiği sulh ceza hâkimi tarafından dinlenmesine ifade alma denir.", "isCorrect": true },
+      { "label": "C", "text": "Aralarında iştirak iradesi bulunmasa da üç veya daha fazla kişi tarafından işlenen suça toplu suç denir." },
+      { "label": "D", "text": "Fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suça suçüstü denir." },
+      { "label": "E", "text": "Malen sorumluyu ceza muhakemesinde temsil eden avukata vekil denir." }
+    ],
+    "explanation": "CMK m.2/1-g'ye göre İFADE ALMA, şüphelinin KOLLUK GÖREVLİLERİ VEYA CUMHURİYET SAVCISI tarafından soruşturma konusu suçla ilgili dinlenmesidir. Şüpheli veya sanığın HÂKİM VEYA MAHKEME tarafından dinlenmesi ise SORGUdur (m.2/1-h). Seçenekte anlatılan işlem sulh ceza hâkimi önünde gerçekleştiğinden sorgudur; bu nedenle B yanlıştır. Diğer tanımlar sırasıyla m.2/1-b (sanık), m.2/1-k (toplu suç), m.2/1-j (suçüstü) ve m.2/1-d (vekil) ile birebir örtüşür.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "2",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'nun uygulanmasında; yargılama konusu işin hükme bağlanması ve bunun kesinleşmesinden sonra maddî ve malî sorumluluk taşıyarak hükmün sonuçlarından etkilenecek veya bunlara katlanacak kişi aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Şüpheli" },
+      { "label": "B", "text": "Malen sorumlu", "isCorrect": true },
+      { "label": "C", "text": "Mağdur" },
+      { "label": "D", "text": "Müdafi" },
+      { "label": "E", "text": "Arabulucu" }
+    ],
+    "explanation": "Tanım, CMK m.2/1-i'de yer alan MALEN SORUMLU tanımıdır. Şüpheli, soruşturma evresinde suç şüphesi altında bulunan kişi (m.2/1-a); müdafi, şüpheli veya sanığın savunmasını yapan avukat (m.2/1-c); malen sorumluyu temsil eden avukat ise vekildir (m.2/1-d). Malen sorumlu, ilk derece mahkemesindeki kovuşturma evresinin her aşamasında hüküm verilinceye kadar davaya katılabilir.",
+    "difficulty": "easy",
+    "sourceLabel": "2024 KPSS",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "217",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'nun \"Hâkim kararını ancak duruşmaya getirilmiş ve huzurunda tartışılmış delillere dayandırabilir. Bu deliller hâkimin vicdani kanaatiyle serbestçe takdir edilir.\" hükmü, ceza muhakemesine hâkim olan hangi ilkenin sonucudur?",
+    "options": [
+      { "label": "A", "text": "Dağınıklık" },
+      { "label": "B", "text": "Kesintisizlik" },
+      { "label": "C", "text": "Delil serbestisi" },
+      { "label": "D", "text": "Doğrudan doğruyalık", "isCorrect": true },
+      { "label": "E", "text": "Aleniyet" }
+    ],
+    "explanation": "DOĞRUDAN DOĞRUYALIK (vasıtasızlık) ilkesi, hükmü verecek hâkimin maddi gerçeği yansıtan kanıtlara bir aracı olmadan ulaşmasını ve onları bizzat incelemesini ifade eder. CMK m.217/1'deki 'duruşmaya getirilmiş ve huzurunda tartışılmış delillere dayandırabilir' ifadesi bu ilkenin sonucudur. Naiplik ve istinabe bu ilkenin iki istisnasıdır. Aynı hükmün ikinci cümlesindeki 'vicdani kanaatle serbestçe takdir' ise vicdani delil sistemine ilişkindir; delil serbestisi ise ispat vasıtalarının sınırlı sayıda olmamasını anlatır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 KPSS",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 217",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "12",
+    "stem": "Konya'da yaşayan A, ilgisine karşılık vermeyen ve Eskişehir'de yaşayan B'yi evlenmeye razı etmek için Eskişehir'den alarak aracıyla Ankara'ya kaçırır. Bir müddet sonra da Bartın'a götürerek bir ay süreyle alıkoyar. Evlenmeye razı olmaması üzerine A, B'yi Bartın'da serbest bırakır.\n5271 sayılı Ceza Muhakemesi Kanunu'na göre bu olayda yetkili mahkeme aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Eskişehir" },
+      { "label": "B", "text": "Ankara" },
+      { "label": "C", "text": "Bartın", "isCorrect": true },
+      { "label": "D", "text": "Konya ve Eskişehir" },
+      { "label": "E", "text": "Ankara ve Bartın" }
+    ],
+    "explanation": "Kişiyi hürriyetinden yoksun kılma KESİNTİSİZ (mütemadi) bir suçtur: mağdurun hürriyetinin kısıtlanmasıyla suç tamamlanır, ancak mağdur hürriyetine kavuşuncaya kadar devam eder. CMK m.12/2'ye göre kesintisiz suçlarda KESİNTİNİN GERÇEKLEŞTİĞİ YER mahkemesi yetkilidir. Olayda kesinti, B'nin serbest bırakıldığı Bartın'da gerçekleştiğinden yetkili mahkeme Bartın mahkemesidir. Aynı fıkra teşebbüste son icra hareketinin yapıldığı, zincirleme suçlarda ise son suçun işlendiği yer mahkemesini yetkili kılar.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "226",
+    "stem": "Sanık A, ağır ceza mahkemesinde kasten öldürmeye teşebbüs suçundan dolayı yargılanmaktayken mahkeme, ortaya konulan deliller ışığında suçun taksirle yaralama olduğu yönünde kanaat oluşturmuştur.\nBuna göre;\nI. Müdafi ek savunma için süre isterse sürenin verilmesi zorunludur.\nII. Suç daha hafif bir cezayı gerektirdiğinden ek savunma alınması mahkemenin takdirine bağlıdır.\nIII. Bu aşamada dosya asliye ceza mahkemesine gönderilemez.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve III", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "CMK m.226/1 uyarınca sanık, suçun hukukî niteliğinin değişmesinden önce haber verilip savunmasını yapabilecek bir hâlde bulundurulmadıkça, iddianamede kanunî unsurları gösterilen suçun değindiği suçtan başkasıyla mahkûm edilemez; m.226/3'e göre ek savunma verilmesini gerektiren hâllerde istem üzerine sanığa ek savunmasını hazırlaması için SÜRE VERİLİR ve m.226/4 gereği müdafi de sanığa tanınan bu haktan onun gibi yararlanır; bu nedenle I doğru, II yanlıştır (ek savunma cezanın hafiflemesi hâlinde de zorunludur). CMK m.6 uyarınca iddianamenin kabulünden sonra duruşmada suçun hukukî niteliğinin değiştiğinden bahisle görevsizlik kararı verilerek dosya ALT DERECELİ mahkemeye gönderilemez; III de doğrudur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 6, 226",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "14",
+    "stem": "Hollanda'daki Türk büyükelçiliğinde çalışmakta olan ve diplomatik bağışıklıktan yararlanan kamu görevlisi A, bazı evraklarda sahtecilik yapar. Durumdan haberdar olan yetkililer, A'nın Hollanda büyükelçiliğindeki görevine son vererek Türkiye'ye çağırır. A'nın içinde bulunduğu uçak Türkiye'ye Edirne üzerinden girer ve İstanbul havaalanına iner. İzmir'de yaşamakta olan A, İzmir uçağına binerek memleketine gider.\nBuna göre A'nın işlemiş olduğu belgede sahtecilik suçundan dolayı;\nI. İstanbul\nII. Ankara\nIII. Edirne\nIV. İzmir\nmahkemelerinden hangisi yetkilidir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "II ve IV" },
+      { "label": "D", "text": "I, II ve III" },
+      { "label": "E", "text": "II ve III" }
+    ],
+    "explanation": "CMK m.14/4'e göre YABANCI ÜLKELERDE BULUNUP DA DİPLOMATİK BAĞIŞIKLIKTAN YARARLANAN TÜRK KAMU GÖREVLİLERİNİN işledikleri suçlardan dolayı yetkili mahkeme ANKARA MAHKEMESİDİR. Bu, yabancı ülkede işlenen suçlarda yetkiye ilişkin genel kurallara (m.13: şüphelinin Türkiye'de yakalandığı, yerleşim yeri veya son adresinin bulunduğu yer) göre ÖZEL bir yetki kuralıdır ve olayda A diplomatik bağışıklıktan yararlanan bir kamu görevlisi olduğundan yalnızca Ankara mahkemesi yetkilidir. Uçağın giriş yaptığı, indiği ya da failin yerleşim yerinin bulunduğu iller yetkiyi etkilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 13, 14",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "19",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre kovuşturulması görevli ve yetkili olan mahkemenin bulunduğu yerde yapılması, kamu güvenliği için tehlikeli olursa davanın naklini aşağıdakilerden hangisi Yargıtay'dan ister?",
+    "options": [
+      { "label": "A", "text": "Görevli ve yetkili olan ilk derece mahkemesi" },
+      { "label": "B", "text": "Yargıtay Cumhuriyet Başsavcısı" },
+      { "label": "C", "text": "Adalet Bakanlığı" },
+      { "label": "D", "text": "Ortak yüksek görevli mahkeme" },
+      { "label": "E", "text": "Adalet Bakanı", "isCorrect": true }
+    ],
+    "explanation": "CMK m.19/2'ye göre kovuşturmanın görevli ve yetkili olan mahkemenin bulunduğu yerde yapılması KAMU GÜVENLİĞİ için tehlikeli olursa, davanın naklini ADALET BAKANI Yargıtaydan ister. Burada istemde bulunan makam 'Adalet Bakanlığı' değil bizzat ADALET BAKANIdır; ayrıca kararı veren merci Yargıtaydır. Hukukî veya fiilî sebeplerle görevin yerine getirilememesi hâlinde (m.19/1) ise nakle YÜKSEK GÖREVLİ MAHKEME karar verir; bu iki hâli birbirine karıştırmamak gerekir.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KPSS HUKUK",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 19",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "10",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre bağlantı kavramı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Kovuşturma evresinin her aşamasında bağlantılı ceza davalarının birleştirilmesi veya ayrılmasına yüksek görevli mahkemece karar verilebilir." },
+      { "label": "B", "text": "Bağlantılı suçlardan her biri değişik mahkemelerin görevine giriyorsa bunlar birleştirilerek yüksek görevli mahkemede dava açılabilir." },
+      { "label": "C", "text": "Suçun işlenmesinden sonra suçluyu kayırma, suç delilleri yok etme, gizleme veya değiştirme fiilleri bağlantılı suç sayılır." },
+      { "label": "D", "text": "Bağlantı dolayısıyla birleştirilen davalar işin esasına girildikten sonra ayrılırsa bunların her birine farklı mahkemelerde devam olunur.", "isCorrect": true },
+      { "label": "E", "text": "Bir kişi birden fazla suçtan sanık olur veya bir suçta her ne sıfatla olursa olsun birden fazla sanık bulunursa bağlantı var sayılır." }
+    ],
+    "explanation": "CMK m.10/3'e göre birleştirilen davalar İŞİN ESASINA GİRİLDİKTEN SONRA ayrılırsa, davalara AYNI MAHKEMEDE devam olunur; farklı mahkemelere dağıtılmaz. Bu nedenle D yanlıştır. A, m.10/1; B, m.9; C, m.8/2; E ise m.8/1 hükmünün karşılığıdır. Ayrıca m.10/2 uyarınca birleştirilen davalarda, bu davaları gören mahkemenin tâbi olduğu yargılama usulü uygulanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 8, 9, 10",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "176",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre çağrı kâğıdının tebliği ile duruşma günü arasında en az 1 hafta süre bulunması gerekir.\nBu sürenin niteliği aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Zaman aşımı süresi" },
+      { "label": "B", "text": "Düzenleyici süre" },
+      { "label": "C", "text": "Hak düşürücü süre" },
+      { "label": "D", "text": "Takdirsel süre" },
+      { "label": "E", "text": "Koruyucu süre", "isCorrect": true }
+    ],
+    "explanation": "Ceza muhakemesinde süreler hak düşürücü, düzenleyici ve koruyucu olmak üzere üçe ayrılır. KORUYUCU SÜRE, kanunun bir işlemin EN ERKEN NE ZAMAN yapılabileceğini belirlediği, yani araya en az bir sürenin girmesini zorunlu kıldığı süredir. CMK m.176/4'teki 'çağrı kâğıdının tebliğiyle duruşma günü arasında en az bir hafta süre bulunması gerekir' hükmü, sanığın savunmasını hazırlayabilmesi için öngörülmüş tipik bir koruyucu süredir. Hak düşürücü süre kaçırıldığında hak sona erer (itiraz, temyiz süreleri); düzenleyici sürenin ise yaptırımı yoktur.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 176",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "158",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre soruşturma yapılmasına yer olmadığına dair kararla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İhbar ve şikâyet konusu fiilin suç oluşturmadığının herhangi bir araştırma yapılmasını gerektirmeksizin açıkça anlaşılması hâlinde bu karar verilir." },
+      { "label": "B", "text": "İhbar ve şikâyetin soyut ve genel nitelikte olması durumunda bu karar verilir." },
+      { "label": "C", "text": "Bu kararın verilmesi durumunda şikâyet edilen kişiye şüpheli sıfatı verilemez." },
+      { "label": "D", "text": "Bu karara karşı itiraz edilemez.", "isCorrect": true },
+      { "label": "E", "text": "Bu kararlar, bunlara mahsus bir sisteme kaydedilir ve ancak Cumhuriyet savcısı, hâkim veya mahkeme tarafından görülebilir." }
+    ],
+    "explanation": "CMK m.158/6 uyarınca soruşturma yapılmasına yer olmadığına dair karar, varsa ihbarda bulunana veya şikâyetçiye bildirilir ve bu karara karşı 173 üncü maddedeki usule göre İTİRAZ EDİLEBİLİR; itirazın kabulü hâlinde Cumhuriyet başsavcılığı soruşturma işlemlerini başlatır. Bu nedenle D yanlıştır. İtiraz, kararın tebliğinden itibaren iki hafta içinde, kararı veren Cumhuriyet savcısının yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki sulh ceza hâkimliğine yapılır (m.173/1). Diğer seçenekler aynı fıkranın metnidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 158, 173",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "253",
+    "stem": "Aşağıdakilerden hangisi 5271 sayılı Ceza Muhakemesi Kanunu'nda uzlaştırma müzakerelerine katılabilecek kişiler arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Mağdur" },
+      { "label": "B", "text": "Suçtan zarar gören" },
+      { "label": "C", "text": "Müdafi" },
+      { "label": "D", "text": "Malen sorumlu", "isCorrect": true },
+      { "label": "E", "text": "Şüpheli" }
+    ],
+    "explanation": "CMK m.253 uyarınca uzlaştırma müzakerelerine şüpheli, mağdur, suçtan zarar gören, kanunî temsilci, müdafi ve vekil katılabilir. MALEN SORUMLU bu kişiler arasında sayılmamıştır; malen sorumlu, yargılama konusu işin hükme bağlanması ve kesinleşmesinden sonra maddî ve malî sorumluluk taşıyarak hükmün sonuçlarından etkilenecek kişidir (m.2/1-i) ve uzlaştırmanın tarafı değildir. Uzlaştırma müzakereleri gizli yürütülür; şüpheli, mağdur veya suçtan zarar görenin kendisi ya da kanunî temsilcisi veya vekilinin müzakerelere katılmaktan imtina etmesi hâlinde uzlaşmayı kabul etmemiş sayılır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 2, 253",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "22",
+    "stem": "Aşağıdakilerden hangisi 5271 sayılı Ceza Muhakemesi Kanunu'nda hâkimin davaya bakamayacağı hâller arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Suçtan kendisinin zarar görmesi" },
+      { "label": "B", "text": "Şüpheli ile arasında sona ermiş kayyımlık ilişkisinin bulunması" },
+      { "label": "C", "text": "Sanık ile arasında üçüncü derece kayın hısımlığının bulunması", "isCorrect": true },
+      { "label": "D", "text": "Aynı davada sanık müdafiliği yapmış olması" },
+      { "label": "E", "text": "Aynı davada tanıklık yapmış olması" }
+    ],
+    "explanation": "CMK m.22/1-f'ye göre kayın hısımlığı bakımından yasak, evlilik sona ermiş olsa bile İKİNCİ DERECE DÂHİL kayın hısımlığıyla sınırlıdır; ÜÇÜNCÜ DERECE DÂHİL olan ise KAN hısımlığıdır (m.22/1-e). Bu nedenle üçüncü derece kayın hısımlığı kanunda sayılan hâllerden değildir ve C doğru cevaptır. A, m.22/1-a; B, m.22/1-b (sonradan kalksa bile evlilik, vesayet veya kayyımlık ilişkisi); D, m.22/1-g; E ise m.22/1-h hükmünün karşılığıdır. Sayılmayan hâller yasak kapsamında olmasa da tarafsızlığı şüpheye düşürüyorsa hâkimin reddi istenebilir (m.24/1).",
+    "difficulty": "hard",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 22, 24",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "41",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre süreler ve eski hâle getirmeyle ilgili olarak kural olarak aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Gün ile belirlenen süreler tebligatın yapıldığı gün işlemeye başlar." },
+      { "label": "B", "text": "Süre hafta olarak belirlenmişse tebligatın yapıldığı günün, son haftada isim itibarıyla karşılığı olan günün sonunda (00.00) sona erer." },
+      { "label": "C", "text": "Son gün bir tatile rastlarsa süre 3 gün daha uzamış sayılır." },
+      { "label": "D", "text": "Eski hâle getirme dilekçesi engelin kalkmasından itibaren 2 hafta içinde verilmelidir.", "isCorrect": true },
+      { "label": "E", "text": "Eski hâle getirme isteminin kabulüne ilişkin karara karşı itiraz edilebilir." }
+    ],
+    "explanation": "CMK m.41/1'e göre eski hâle getirme dilekçesi, engelin kalkmasından itibaren İKİ HAFTA içinde, süreye uyulduğunda usule ilişkin işlemleri yapacak olan mahkemeye verilir (süre 7. Yargı Paketi ile yedi günden iki haftaya çıkarılmıştır); bu nedenle D doğrudur. A yanlıştır: gün ile belirlenen süreler tebligatın yapıldığının ERTESİ GÜNÜ işlemeye başlar (m.39/1). B yanlıştır: süre, karşılığı olan günün MESAİ SAATİ BİTİMİNDE sona erer (m.39/2). C yanlıştır: son gün tatile rastlarsa süre TATİLİN ERTESİ GÜNÜ biter (m.39/4); üç günlük uzama yalnızca ADLÎ TATİLE rastlayan süreler içindir (m.331/4). E yanlıştır: kabule ilişkin karar KESİNDİR, yalnızca reddine ilişkin karara karşı itiraz yoluna gidilebilir (m.42/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 39, 41, 42, 331",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "27",
+    "stem": "Müdafi M, gerekçelerini de ileri sürmek suretiyle tarafsızlığını kaybettiğini düşündüğü asliye ceza mahkemesi hâkimi H'nin reddi isteminde bulunur. Mensup olduğu mahkeme, H'nin katılamaması nedeniyle teşekkül edemediğinden ret istemini inceleyemiyor.\n5271 sayılı Ceza Muhakemesi Kanunu'na göre bu durumda H'nin reddi istemi aşağıdakilerin hangisi tarafından incelenir?",
+    "options": [
+      { "label": "A", "text": "H'nin mensup olduğu asliye ceza mahkemesinin yargı çevresindeki ağır ceza mahkemesi", "isCorrect": true },
+      { "label": "B", "text": "H'nin mensup olduğu asliye ceza mahkemesini numara olarak izleyen asliye ceza mahkemesi" },
+      { "label": "C", "text": "H'nin mensup olduğu asliye ceza mahkemesinin yargı çevresinde bulunduğu bölge adliye mahkemesi" },
+      { "label": "D", "text": "H'nin mensup olduğu asliye ceza mahkemesinin yargı çevresindeki sulh ceza hâkimi" },
+      { "label": "E", "text": "H'nin mensup olduğu asliye ceza mahkemesine en yakın ağır ceza mahkemesi" }
+    ],
+    "explanation": "CMK m.27/1 uyarınca hâkimin reddi istemine kural olarak mensup olduğu mahkemece karar verilir; ancak reddi istenen hâkim müzakereye katılamayacağından mahkeme teşekkül edemezse, reddi istenen hâkim ASLİYE CEZA mahkemesine mensup ise karar verme yetkisi BU MAHKEMENİN YARGI ÇEVRESİ İÇERİSİNDE BULUNAN AĞIR CEZA MAHKEMESİNE aittir. 'En yakın ağır ceza mahkemesi' ölçütü ise yalnızca reddi istenen hâkim ağır ceza mahkemesine mensupsa ve o yerde ağır ceza mahkemesinin tek dairesi varsa uygulanır (m.27/1-b). Ret isteminde bulunabilecekler Cumhuriyet savcısı; şüpheli, sanık veya bunların müdafii; katılan veya vekilidir (m.24/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2022 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 24, 27",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "253",
+    "stem": "Aşağıdakilerden hangisi 5271 sayılı Ceza Muhakemesi Kanunu'nda şikâyete bağlı olup olmadığına bakılmaksızın uzlaştırma girişiminde bulunulacak suçlar arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Konut dokunulmazlığının ihlali" },
+      { "label": "B", "text": "Hırsızlık" },
+      { "label": "C", "text": "Şantaj", "isCorrect": true },
+      { "label": "D", "text": "Dolandırıcılık" },
+      { "label": "E", "text": "Çocuğun kaçırılması ve alıkonulması" }
+    ],
+    "explanation": "CMK m.253/1-b'de şikâyete bağlı olup olmadığına bakılmaksızın uzlaştırma kapsamında olan TCK suçları tek tek sayılmıştır: kasten yaralama (üçüncü fıkra hariç m.86; m.88), taksirle yaralama (m.89), tehdit (m.106/1), konut dokunulmazlığının ihlali (m.116), iş ve çalışma hürriyetinin ihlali (m.117/1; m.119/1-c), hırsızlık (m.141), güveni kötüye kullanma (üçüncü fıkra hariç m.155), dolandırıcılık (m.157), suç eşyasının satın alınması veya kabul edilmesi (m.165), çocuğun kaçırılması ve alıkonulması (m.234) ile ticari sır, bankacılık sırrı veya müşteri sırrının açıklanması (dördüncü fıkra hariç m.239). ŞANTAJ (TCK m.107) bu listede yer almadığı gibi şikâyete de bağlı olmadığından uzlaştırma kapsamı dışındadır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 253",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "174",
+    "stem": "Bir avukat hakkında göreviyle ilgili işlediği suçtan dolayı soruşturma açılabilmesi için Adalet Bakanlığından oluru alınır.\nSöz konusu ceza muhakemesi şartı aşağıdakilerden hangisiyle adlandırılır?",
+    "options": [
+      { "label": "A", "text": "Talep" },
+      { "label": "B", "text": "Şikâyet" },
+      { "label": "C", "text": "Hüküm" },
+      { "label": "D", "text": "Karar" },
+      { "label": "E", "text": "İzin", "isCorrect": true }
+    ],
+    "explanation": "Muhakeme şartları, muhakemenin yapılabilmesi veya sürdürülebilmesi için gerçekleşmesi gereken şartlardır; şikâyet, izin, talep, karar bunlardandır. Soruşturma açılabilmesi için bir makamın onayının aranması hukukî nitelik itibarıyla SORUŞTURMA İZNİdir. Avukatların görevden doğan veya görev sırasında işledikleri suçlar bakımından soruşturma yapılması Adalet Bakanlığının iznine bağlıdır (1136 sayılı Avukatlık Kanunu m.58). İzin veya talep olmaksızın açılan soruşturmalarda düzenlenen iddianamenin Cumhuriyet başsavcılığına iadesine karar verilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 174; 1136 sayılı Avukatlık Kanunu md. 58",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "31",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre kovuşturma evresinde ileri sürülen hâkimin reddi isteminin geri çevrilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Ret isteminin süresinde yapılmaması hâlinde istem geri çevrilir." },
+      { "label": "B", "text": "Kanunda sayılan sebeplerin varlığı hâlinde ret istemi, tek hâkimli mahkemelerde hâkimin kendisi tarafından geri çevrilir." },
+      { "label": "C", "text": "Kanunda sayılan sebeplerin varlığı hâlinde ret istemi, toplu mahkemelerde reddedilen hâkimin müzakereye katılmasıyla geri çevrilir." },
+      { "label": "D", "text": "Ret isteminin duruşmayı uzatmak amacıyla yapıldığının açıkça anlaşılması hâlinde istem geri çevrilir." },
+      { "label": "E", "text": "Ret isteminin geri çevrilmesi konusundaki kararlar kesindir.", "isCorrect": true }
+    ],
+    "explanation": "CMK m.31/3'e göre ret isteminin geri çevrilmesi konusundaki kararlara karşı İTİRAZ YOLUNA BAŞVURULABİLİR; bu kararlar kesin değildir. Bu nedenle E yanlıştır. A, B, C ve D ise m.31/1 ve m.31/2'nin karşılığıdır: ret istemi süresinde yapılmamışsa, ret sebebi ve delili gösterilmemişse veya istemin duruşmayı uzatmak amacıyla yapıldığı açıkça anlaşılıyorsa geri çevrilir; bu hâllerde karar, toplu mahkemelerde reddedilen hâkimin de müzakereye katılmasıyla, tek hâkimli mahkemelerde ise hâkimin kendisi tarafından verilir. Buna karşılık ret isteminin KABULÜNE ilişkin kararlar kesindir (m.28).",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 28, 31",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "39",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre sürelerin hesaplanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Gün ile belirlenen süreler, tebligatın yapıldığının ertesi günü işlemeye başlar." },
+      { "label": "B", "text": "Süre, hafta olarak belirlenmişse tebligatın yapıldığı günün, son hafta isim itibarıyla karşılığı olan günün mesai saati bitiminde sona erer." },
+      { "label": "C", "text": "Süre, ay olarak belirlenmişse tebligatın yapıldığı günün, son ayda varsa sayı itibarıyla karşılığı olan günün mesai saati bitiminde sona erer." },
+      { "label": "D", "text": "Son gün bir tatile rastlarsa süre, tatilin ertesi günü biter." },
+      { "label": "E", "text": "Son gün adli tatile rastlarsa süre adli tatilin bittiği günden itibaren yedi gün uzatılmış sayılır.", "isCorrect": true }
+    ],
+    "explanation": "CMK m.331/4'e göre adlî tatile rastlayan süreler işlemez ve bu süreler tatilin bittiği günden itibaren ÜÇ GÜN uzatılmış sayılır; 'yedi gün' ifadesi yanlıştır. Diğer seçenekler m.39'un fıkralarıyla birebir örtüşür: gün ile belirlenen süreler tebligatın ertesi günü işlemeye başlar (m.39/1); hafta ve ay olarak belirlenen süreler karşılığı olan günün mesai saati bitiminde sona erer (m.39/2, m.39/3); son gün tatile rastlarsa süre tatilin ertesi günü biter (m.39/4). Adlî tatil, her yıl 20 temmuzdan 31 ağustosa kadardır (m.331/1).",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 39, 331",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": "253",
+    "stem": "5271 sayılı Ceza Muhakemesi Kanunu'na göre uzlaştırmacı, dosya içerisindeki belgelerin birer örneğinin kendisine verilmesinden itibaren, uzatma süreleri hariç olmak üzere en geç kaç gün içinde uzlaştırma işlemini sonuçlandırır?",
+    "options": [
+      { "label": "A", "text": "10" },
+      { "label": "B", "text": "15" },
+      { "label": "C", "text": "30", "isCorrect": true },
+      { "label": "D", "text": "45" },
+      { "label": "E", "text": "60" }
+    ],
+    "explanation": "CMK m.253 uyarınca uzlaştırmacı, dosya içindeki belgelerin birer örneği kendisine verildikten itibaren en geç OTUZ GÜN içinde uzlaştırma işlemlerini sonuçlandırır. Uzlaştırma bürosu bu süreyi her defasında yirmi günü geçmemek üzere en fazla İKİ KEZ daha uzatabilir. Uzlaştırma kapsamına giren bir suçun, bu kapsama girmeyen bir başka suçla birlikte AYNI MAĞDURA KARŞI işlenmiş olması hâlinde uzlaşma hükümleri uygulanmaz; uzlaştırmanın sonuçsuz kalması hâlinde tekrar uzlaştırma yoluna gidilemez.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5271 sayılı Ceza Muhakemesi Kanunu md. 253",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  }
+]

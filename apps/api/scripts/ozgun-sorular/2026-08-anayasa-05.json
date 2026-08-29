@@ -1,0 +1,375 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "83",
+    "stem": "I. İnsan Haklarını İnceleme Komisyonu\nII. Anayasa Komisyonu\nIII. Adalet Komisyonu\nIV. Dilekçe Komisyonu\nTBMM İçtüzüğü'ne göre; bir milletvekilinin dokunulmazlığının kaldırılması hakkındaki istemin Başkanlıkça havale edildiği Karma Komisyon, yukarıdaki komisyonların hangilerinin üyelerinden kurulur?",
+    "options": [
+      { "label": "A", "text": "I ve II" },
+      { "label": "B", "text": "I ve III" },
+      { "label": "C", "text": "II ve IV" },
+      { "label": "D", "text": "II ve III", "isCorrect": true },
+      { "label": "E", "text": "III ve IV" }
+    ],
+    "explanation": "TBMM İçtüzüğü'ne göre bir milletvekilinin veya görevleriyle ilgili olmayan suçlardan dolayı Cumhurbaşkanı yardımcıları ile bakanların dokunulmazlığının kaldırılması hakkındaki istemler, Başkanlıkça ANAYASA VE ADALET KOMİSYONLARI ÜYELERİNDEN KURULU KARMA KOMİSYONA havale edilir. Karma Komisyon başkanı, her siyasi partinin hazırlık komisyonuna verebileceği üyeleri arasından ad çekme suretiyle BEŞ ÜYELİ bir hazırlık komisyonu teşkil eder; hazırlık komisyonu raporunu göreve başlamasından itibaren en geç bir ayda verir, rapor Karma Komisyonda bir ayda sonuçlandırılır. Karma Komisyon, dokunulmazlığın kaldırılmasına veya kovuşturmanın milletvekilliği sıfatının sona ermesine kadar ertelenmesine karar verir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 83; TBMM İçtüzüğü md. 131-133",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "106",
+    "stem": "1982 Anayasası'na göre hakkında Meclis soruşturması açılan cumhurbaşkanı yardımcıları ve bakanların Yüce Divana sevkine en az kaç oyla karar verilebilir?",
+    "options": [
+      { "label": "A", "text": "151" },
+      { "label": "B", "text": "301" },
+      { "label": "C", "text": "360" },
+      { "label": "D", "text": "400", "isCorrect": true },
+      { "label": "E", "text": "450" }
+    ],
+    "explanation": "Meclis soruşturmasında üç ayrı çoğunluk vardır ve bunların karıştırılmaması gerekir: ÖNERGE VERİLMESİ için üye tamsayısının SALT ÇOĞUNLUĞU (301), SORUŞTURMA AÇILMASI için üye tamsayısının BEŞTE ÜÇÜNÜN GİZLİ OYU (360), YÜCE DİVANA SEVK için ise üye tamsayısının ÜÇTE İKİSİNİN GİZLİ OYU (400) aranır. Soruşturma açılmasına karar verilmesi hâlinde on beş kişilik bir komisyon kurulur; komisyon raporunu iki ay içinde Meclis Başkanlığına sunar. Yüce Divana sevk kararı, Cumhurbaşkanı yardımcısı veya bakanın GÖREVİNİ SONA ERDİRMEZ; ancak Yüce Divanda seçilmeye engel bir suçtan mahkûm edilirse görevi sona erer.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "1982 Anayasası md. 106",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "2839 sayılı Milletvekili Seçimi Kanunu'na göre kural olarak, oy verme gününden geriye doğru hesaplanacak kaç günlük sürenin ilk günü seçimlerin başlangıç tarihidir?",
+    "options": [
+      { "label": "A", "text": "15" },
+      { "label": "B", "text": "30" },
+      { "label": "C", "text": "45" },
+      { "label": "D", "text": "60", "isCorrect": true },
+      { "label": "E", "text": "90" }
+    ],
+    "explanation": "2839 sayılı Milletvekili Seçimi Kanunu'na göre OY VERME GÜNÜNDEN GERİYE DOĞRU HESAPLANACAK ALTMIŞ GÜNLÜK SÜRENİN İLK GÜNÜ, seçimin başlangıç tarihidir. Bu tarih, seçim takviminin işlemeye başladığı ve seçim yasaklarının devreye girdiği andır. Milletvekili genel seçimi beş yılda bir yapılır ve seçim dönemi bitmeden Meclis veya Cumhurbaşkanı seçimlerin yenilenmesine karar verirse takvim yine bu esasa göre işletilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "2839 sayılı Milletvekili Seçimi Kanunu md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "80",
+    "stem": "1982 Anayasası'nın \"Türkiye Büyük Millet Meclisi üyeleri, seçildikleri bölgeyi veya kendilerini seçenleri değil; bütün milleti temsil ederler.\" hükmü kapsamında yapılan aşağıdaki çıkarımların hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Milletvekili, milletvekilliğinden istifa edemez.", "isCorrect": true },
+      { "label": "B", "text": "Milletvekili, seçmenler tarafından azledilemez." },
+      { "label": "C", "text": "Milletvekili, seçmenlerin emir ve talimatlarıyla bağlı değildir." },
+      { "label": "D", "text": "Milletvekili, seçilmiş olduğu partiyi değiştirip başka bir partiye katılabilir." },
+      { "label": "E", "text": "Milletvekili, partisinden istifa edip bağımsız milletvekili olarak devam edebilir." }
+    ],
+    "explanation": "Milletin temsili ilkesi (m.80) milletvekilinin seçmenle arasında EMREDİCİ VEKÂLET ilişkisi bulunmadığını, yani seçmenin emir ve talimatlarıyla bağlı olmadığını ve seçmenlerce azledilemeyeceğini gösterir; milletvekilinin partisini değiştirmesi veya bağımsız kalması da bu ilkenin sonucudur. Ancak bu ilkeden 'milletvekili İSTİFA EDEMEZ' sonucu ÇIKARILAMAZ: Anayasamızda milletvekillerinin istifasını yasaklayan bir hüküm yoktur; aksine m.84/1 istifa hâlinde milletvekilliğinin nasıl düşeceğini ayrıca düzenlemiştir. Bu nedenle A yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS HUKUK",
+    "citation": "1982 Anayasası md. 80, 84",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "59",
+    "stem": "Türkiye Futbol Federasyonu Profesyonel Futbol Disiplin Kurulu tarafından hakkında disiplin kararı tesis edilen profesyonel futbolcu Murat, ilgili karara karşı Tahkim yoluna başvuruyor. Türkiye Futbol Federasyonu Tahkim Kurulu, Murat'ın talebinin reddine karar veriyor.\n1982 Anayasası'na göre Murat'ın bu aşamada başvurabileceği hukuki yolla ilgili kural olarak aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Tahkim Kurulu kararları kesin olduğundan bu karara karşı herhangi bir yargı merciine başvuramaz.", "isCorrect": true },
+      { "label": "B", "text": "Tahkim Kurulu kararları idari işlem niteliğinde olduğundan karara karşı idare mahkemesine iptal davası açabilir." },
+      { "label": "C", "text": "Tahkim Kurulu kararları ilam niteliğinde olduğundan bu karara karşı bölge idare mahkemesine istinaf başvurusunda bulunabilir." },
+      { "label": "D", "text": "Özel kanununda düzenlenen hüküm gereği bu karara karşı doğrudan Danıştay'da iptal davası açabilir." },
+      { "label": "E", "text": "Tahkim Kurulu kararları idari yaptırım niteliğinde olduğundan bu karara karşı sulh ceza hâkimliğine itiraz edebilir." }
+    ],
+    "explanation": "Anayasa m.59'a 2011 yılı Anayasa değişikliğiyle eklenen fıkraya göre 'SPOR FEDERASYONLARININ SPOR FAALİYETLERİNİN YÖNETİMİNE VE DİSİPLİNİNE İLİŞKİN KARARLARINA KARŞI ANCAK ZORUNLU TAHKİM YOLUNA BAŞVURULABİLİR. TAHKİM KURULU KARARLARI KESİN OLUP BU KARARLARA KARŞI HİÇBİR YARGI MERCİİNE BAŞVURULAMAZ.' Bu hüküm, sporun geliştirilmesi ve tahkim başlığı altında SOSYAL VE EKONOMİK HAKLAR bölümünde yer alır. Bu spor tahkimi, m.125'te düzenlenen ve kamu hizmetleriyle ilgili imtiyaz şartlaşma ve sözleşmelerinden doğan uyuşmazlıklara ilişkin milletlerarası tahkim (1999 değişikliği) ile karıştırılmamalıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KPSS HUKUK",
+    "citation": "1982 Anayasası md. 59, 125",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "98",
+    "stem": "I. Cumhurbaşkanı\nII. Cumhurbaşkanı yardımcıları\nIII. Bakanlar\n1982 Anayasası'na göre, TBMM'nin bilgi edinme ve denetim yollarından biri olan yazılı soru yukarıdakilerden hangilerine sorulur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III", "isCorrect": true },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Anayasa m.98'e göre yazılı soru; en geç on beş gün içinde cevaplanmak üzere milletvekillerinin, CUMHURBAŞKANI YARDIMCILARI VE BAKANLARA yazılı olarak soru sormalarından ibarettir. 2017 değişikliğiyle CUMHURBAŞKANINA SORU SORULAMAYACAĞI kabul edilmiştir; bu nedenle doğru cevap D'dir. Meclis soruşturması da yalnızca Cumhurbaşkanı yardımcıları ve bakanlar hakkında açılabilir; Cumhurbaşkanı hakkında ise m.105'teki ayrı bir soruşturma usulü işletilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS KAMU YÖNETİMİ",
+    "citation": "1982 Anayasası md. 98, 105, 106",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "96",
+    "stem": "İskenderun ilinin kurulmasına dair kanun teklifinin tümü üzerinde yapılan son oylama için Türkiye Büyük Millet Meclisi Genel Kuruluna 350 milletvekili katılıyor.\n1982 Anayasası'na göre bu kanun teklifinin kabul edilebilmesi için en az kaç milletvekilinin kabul oyu gerekir?",
+    "options": [
+      { "label": "A", "text": "301" },
+      { "label": "B", "text": "200" },
+      { "label": "C", "text": "176", "isCorrect": true },
+      { "label": "D", "text": "175" },
+      { "label": "E", "text": "151" }
+    ],
+    "explanation": "Anayasa m.96/1'e göre TBMM, Anayasada BAŞKACA BİR HÜKÜM YOKSA toplantıya katılanların SALT ÇOĞUNLUĞU ile karar verir; ancak karar yeter sayısı hiçbir şekilde üye tamsayısının DÖRTTE BİRİNİN BİR FAZLASINDAN (151) az olamaz. Olağan kanunların kabulü için Anayasa'da özel bir çoğunluk öngörülmediğinden bu genel kural uygulanır: oylamaya 350 milletvekili katıldığından salt çoğunluk 176'dır ve bu sayı asgari sınır olan 151'in üzerinde olduğundan gereken oy 176'dır. Buna karşılık Cumhurbaşkanınca geri gönderilen bir kanunun AYNEN kabulü için üye tamsayısının salt çoğunluğu (301) gerekir (m.89/3).",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 89, 96",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "116",
+    "stem": "Seçimlerin yenilenmesine dair önergeyi görüşen Anayasa Komisyonunun raporu, Türkiye Büyük Millet Meclisi Genel Kurulunda 480 milletvekilinin katıldığı oturumda açık oya sunuluyor.\n1982 Anayasası'na göre bu oturumda seçimlerin yenilenmesine karar verilebilmesi için en az kaç milletvekilinin kabul oyu gerekir?",
+    "options": [
+      { "label": "A", "text": "151" },
+      { "label": "B", "text": "241" },
+      { "label": "C", "text": "288" },
+      { "label": "D", "text": "301" },
+      { "label": "E", "text": "360", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.116/1'e göre Türkiye Büyük Millet Meclisi, ÜYE TAMSAYISININ BEŞTE ÜÇ ÇOĞUNLUĞUYLA (600 × 3/5 = 360) seçimlerin yenilenmesine karar verebilir. Bu nitelikli çoğunluk ÜYE TAMSAYISI üzerinden hesaplandığından Genel Kurulda kaç milletvekili bulunursa bulunsun 360 kabul oyu gereklidir. Bu hâlde TBMM genel seçimi ile Cumhurbaşkanlığı seçimi BİRLİKTE yapılır; Cumhurbaşkanının seçimlerin yenilenmesine karar vermesi hâlinde de aynı sonuç doğar. Cumhurbaşkanının İKİNCİ DÖNEMİNDE Meclis tarafından seçimlerin yenilenmesine karar verilirse Cumhurbaşkanı BİR DEFA DAHA aday olabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 116",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "93",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi ara verme veya tatil sırasında Türkiye Büyük Millet Meclisini doğrudan doğruya toplantıya çağırabilir?",
+    "options": [
+      { "label": "A", "text": "Türkiye Büyük Millet Meclisi başkanı", "isCorrect": true },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi üyelerinin 1/5'i" },
+      { "label": "C", "text": "Bakanlar" },
+      { "label": "D", "text": "Türkiye Büyük Millet Meclisi genel sekreteri" },
+      { "label": "E", "text": "Milli Güvenlik Kurulu" }
+    ],
+    "explanation": "Anayasa m.93/3 uyarınca Meclisi olağanüstü toplantıya çağırma yetkisi CUMHURBAŞKANI ve TBMM BAŞKANINA aittir. CUMHURBAŞKANI DOĞRUDAN DOĞRUYA çağırır; MECLİS BAŞKANI ise hem DOĞRUDAN DOĞRUYA hem de MECLİS ÜYE TAMSAYISININ BEŞTE BİRİNİN (120) YAZILI İSTEMİ ÜZERİNE çağırabilir. Üyelerin beşte biri kendi başına Meclisi toplantıya çağıramaz; ancak Başkandan çağrı yapmasını isteyebilir ve Başkan bu istemi en geç yedi gün içinde yerine getirir. Bakanların, Meclis genel sekreterinin veya Milli Güvenlik Kurulunun böyle bir yetkisi yoktur.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 93",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "I. Kamu Başdenetçisi\nII. Anayasa Mahkemesi üyeleri\nIII. Hakimler ve Savcılar Kurulu üyeleri\n1982 Anayasası'na göre yukarıdakilerden hangilerinin Türkiye Büyük Millet Meclisi Genel Kurulunca seçimi en geç üçüncü oylamada tamamlanır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "ANAYASA MAHKEMESİ ÜYELİĞİ seçiminde ilk oylamada üye tamsayısının üçte ikisi (400), ikinci oylamada üye tamsayısının salt çoğunluğu (301) aranır; salt çoğunluk sağlanamazsa en çok oy alan iki aday için ÜÇÜNCÜ OYLAMA yapılır ve en fazla oy alan aday üye seçilmiş olur — yani seçim EN GEÇ ÜÇÜNCÜ OYLAMADA tamamlanır, bu nedenle B doğrudur. KAMU BAŞDENETÇİSİ ve TBMM BAŞKANI seçimleri EN FAZLA DÖRT TURLUDUR (ilk iki oylamada 400, üçüncüde 301, gerekirse dördüncü oylamada en çok oy alan seçilir). HÂKİMLER VE SAVCILAR KURULU üyeliğinde ise ilk turda 400, ikinci turda üye tamsayısının beşte üçü (360) aranır; ikinci turda da seçilemezse en çok oy alan iki aday arasında AD ÇEKME usulüne gidilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 74, 94, 146, 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "106",
+    "stem": "1982 Anayasası'na göre cumhurbaşkanı yardımcıları ve bakanlar hakkında, görevleriyle ilgili suç işledikleri iddiasıyla en az kaç milletvekilinin vereceği önergeyle meclis soruşturması açılması istenebilir?",
+    "options": [
+      { "label": "A", "text": "360" },
+      { "label": "B", "text": "301", "isCorrect": true },
+      { "label": "C", "text": "200" },
+      { "label": "D", "text": "151" },
+      { "label": "E", "text": "120" }
+    ],
+    "explanation": "Anayasa m.106/5'e göre Cumhurbaşkanı yardımcıları ve bakanlar hakkında görevleriyle ilgili suç işledikleri iddiasıyla, TBMM ÜYE TAMSAYISININ SALT ÇOĞUNLUĞUNUN (301) vereceği ÖNERGEYLE soruşturma açılması istenebilir. Meclis, önergeyi en geç bir ay içinde görüşür ve üye tamsayısının BEŞTE ÜÇÜNÜN (360) GİZLİ OYUYLA soruşturma açılmasına karar verebilir. Yüce Divana sevk kararı ise üye tamsayısının ÜÇTE İKİSİNİN (400) gizli oyuyla alınır. Bu kişiler görevde bulundukları sürede, görevleriyle ilgili işledikleri iddia edilen suçlar bakımından görevleri bittikten sonra da Meclis soruşturmasına konu olabilirler.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 106",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "116",
+    "stem": "1982 Anayasası'na göre birlikte yapılan Türkiye Büyük Millet Meclisi ve Cumhurbaşkanlığı seçimlerinin üzerinden;\nI. 29 ay geçtikten sonra Türkiye Büyük Millet Meclisince seçimlerin yenilenmesine karar verilmesi,\nII. 3 yıl geçtikten sonra cumhurbaşkanlığı makamında herhangi bir nedenle boşalma olması,\nIII. 4 yıl geçtikten sonra cumhurbaşkanınca seçimlerin yenilenmesine karar verilmesi\ndurumlarının hangilerinde Türkiye Büyük Millet Meclisi ve Cumhurbaşkanlığı seçimi birlikte yapılır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve III", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Anayasa m.116/1 ve /2'ye göre gerek TBMM'nin üye tamsayısının beşte üç çoğunluğuyla, gerek CUMHURBAŞKANININ seçimlerin yenilenmesine karar vermesi hâlinde TBMM genel seçimi ile Cumhurbaşkanlığı seçimi BİRLİKTE yapılır ve Anayasa bu konuda HERHANGİ BİR SÜRE ŞARTI ÖNGÖRMEMİŞTİR; bu nedenle I ve III doğrudur. II ise farklıdır: m.106/2 uyarınca Cumhurbaşkanlığı makamının herhangi bir nedenle boşalması hâlinde kırk beş gün içinde Cumhurbaşkanı seçimi yapılır; GENEL SEÇİME BİR YIL VEYA DAHA AZ KALMIŞSA TBMM seçimi de Cumhurbaşkanı seçimiyle birlikte yenilenir, GENEL SEÇİME BİR YILDAN FAZLA KALMIŞSA sadece Cumhurbaşkanı seçimi yapılır. Olayda genel seçime iki yıl kaldığından yalnızca Cumhurbaşkanı seçimi yapılacaktır.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 106, 116",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "90",
+    "stem": "1982 Anayasası'na göre ekonomik, ticari veya teknik ilişkileri düzenlenen ve süresi en fazla ne kadar olan milletlerarası antlaşmalar; Türk kanunlarında değişiklik ve devlet maliyesi bakımından yüklenme getirmemek, kişi hâllerine ve Türklerin yabancı ülkelerdeki mülkiyet haklarına dokunmamak şartıyla yayımlanarak yürürlüğe konulabilir?",
+    "options": [
+      { "label": "A", "text": "2 ay" },
+      { "label": "B", "text": "3 ay" },
+      { "label": "C", "text": "6 ay" },
+      { "label": "D", "text": "1 yıl", "isCorrect": true },
+      { "label": "E", "text": "2 yıl" }
+    ],
+    "explanation": "Anayasa m.90/2'ye göre ekonomik, ticari veya teknik ilişkileri düzenleyen ve SÜRESİ BİR YILI AŞMAYAN antlaşmalar; Devlet Maliyesi bakımından bir yüklenme getirmemek, kişi hâllerine ve Türklerin yabancı memleketlerdeki mülkiyet haklarına dokunmamak şartıyla, YAYIMLANMA İLE YÜRÜRLÜĞE KONABİLİR; bu takdirde antlaşmalar yayımlarından başlayarak iki ay içinde TBMM'nin bilgisine sunulur. Buna karşılık m.90/4 uyarınca TÜRK KANUNLARINA DEĞİŞİKLİK GETİREN HER TÜRLÜ ANDLAŞMANIN onaylanması, mutlaka TBMM'nin bir kanunla uygun bulmasına bağlıdır. Usulüne göre yürürlüğe konulmuş milletlerarası andlaşmalar KANUN HÜKMÜNDEDİR ve bunlar hakkında Anayasaya aykırılık iddiasıyla Anayasa Mahkemesine başvurulamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 90",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "94",
+    "stem": "1982 Anayasası'na göre aşağıda verilenlerden hangisinin Türkiye Büyük Millet Meclisi Genel Kurulunca seçiminde yapılması öngörülen azami oylama sayısı aynıdır?",
+    "options": [
+      { "label": "A", "text": "Anayasa Mahkemesi üyeleri ile Türkiye Büyük Millet Meclisi başkanı" },
+      { "label": "B", "text": "Anayasa Mahkemesi üyeleri ile kamu başdenetçisi" },
+      { "label": "C", "text": "Anayasa Mahkemesi üyeleri ile Hakimler ve Savcılar Kurulu üyeleri" },
+      { "label": "D", "text": "Hakimler ve Savcılar Kurulu üyeleri ile Türkiye Büyük Millet Meclisi başkanı" },
+      { "label": "E", "text": "Kamu başdenetçisi ile Türkiye Büyük Millet Meclisi başkanı", "isCorrect": true }
+    ],
+    "explanation": "TBMM BAŞKANI (m.94) ve KAMU BAŞDENETÇİSİ (m.74) seçimlerinin ikisi de EN FAZLA DÖRT TURLUDUR: ilk iki oylamada üye tamsayısının üçte iki çoğunluğu (400), üçüncü oylamada üye tamsayısının salt çoğunluğu (301) aranır; üçüncü oylamada salt çoğunluk sağlanamazsa en çok oy alan iki aday için dördüncü oylama yapılır ve en fazla oy alan seçilmiş olur. ANAYASA MAHKEMESİ üyeliği seçimi en fazla ÜÇ turlu, HÂKİMLER VE SAVCILAR KURULU üyeliği seçimi ise en fazla İKİ turludur (ikinci turda da seçilemezse ad çekme usulüne gidilir). Bu seçimlerde yapılan oylamaların tamamı GİZLİ OYLAMADIR.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 74, 94, 146, 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "93",
+    "stem": "TBMM İçtüzüğü'ne göre Danışma Kurulunun önerisi üzerine Genel Kurulca başka bir karar alınmazsa Türkiye Büyük Millet Meclisi hangi gün tatile girer?",
+    "options": [
+      { "label": "A", "text": "1 Temmuz", "isCorrect": true },
+      { "label": "B", "text": "1 Ağustos" },
+      { "label": "C", "text": "1 Eylül" },
+      { "label": "D", "text": "30 Eylül" },
+      { "label": "E", "text": "31 Aralık" }
+    ],
+    "explanation": "TBMM İçtüzüğü m.5/2'ye göre Danışma Kurulunun önerisi üzerine Genel Kurulca başka bir karar alınmadıkça TBMM 1 TEMMUZ günü tatile girer. Anayasa m.93/1 uyarınca Meclis her yıl EKİM AYININ İLK GÜNÜ kendiliğinden toplanır; m.93/2'ye göre ise Meclis bir yasama yılında EN ÇOK ÜÇ AY TATİL yapabilir. Meclisin tatil dışında çalışmalarını ertelemesi ise ARA VERMEDİR ve ara verme süresi bir defada on beş günü geçemez.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 93; TBMM İçtüzüğü md. 5",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "94",
+    "stem": "Yasama döneminin birinci birleşiminin ilk oturumundan başlayarak Türkiye Büyük Millet Meclisi başkanı seçilinceye kadar, aşağıdakilerden hangisi geçici başkanlık görevini yapar?",
+    "options": [
+      { "label": "A", "text": "En fazla yaşa sahip olan milletvekili", "isCorrect": true },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi genel sekreteri" },
+      { "label": "C", "text": "Önceki yasama döneminin son Türkiye Büyük Millet Meclisi başkanı" },
+      { "label": "D", "text": "Yüksek Seçim Kurulunca belirlenecek milletvekili" },
+      { "label": "E", "text": "Milletvekilliğinde en fazla kıdeme sahip olan milletvekili" }
+    ],
+    "explanation": "TBMM İçtüzüğü'ne göre yasama döneminin birinci birleşiminin ilk oturumundan başlayarak Başkan seçilinceye kadar EN YAŞLI MİLLETVEKİLİ GEÇİCİ BAŞKANLIK görevini yapar; ikinci derecede en yaşlı üye Başkanvekilliği görevini yerine getirir, EN GENÇ ALTI MİLLETVEKİLİ de geçici Kâtip Üyelik yapar. TBMM Başkanlık Divanı; Meclis üyeleri arasından seçilen Meclis Başkanı, Başkanvekilleri, Kâtip Üyeler ve İdare Amirlerinden oluşur ve Divan, Meclisteki siyasi parti gruplarının üye sayısı oranında Divana katılmalarını sağlayacak şekilde kurulur (m.94).",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 94; TBMM İçtüzüğü md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "96",
+    "stem": "1982 Anayasası'na göre 301 milletvekili, Türkiye Büyük Millet Meclisindeki sayı veya çoğunlukların hangisini her koşulda ifade eder?",
+    "options": [
+      { "label": "A", "text": "Üye tam sayısının salt çoğunluğunu", "isCorrect": true },
+      { "label": "B", "text": "Toplantı yeter sayısını" },
+      { "label": "C", "text": "Genel karar yeter sayısını" },
+      { "label": "D", "text": "Toplantıya katılanların salt çoğunluğunu" },
+      { "label": "E", "text": "Basit çoğunluğu" }
+    ],
+    "explanation": "TBMM üye tamsayısı 600 olduğundan 301 milletvekili HER KOŞULDA ÜYE TAMSAYISININ SALT ÇOĞUNLUĞUNU ifade eder. Diğer seçenekler değişkendir: TOPLANTI YETER SAYISI üye tamsayısının en az üçte biri yani 200'dür (m.96/1); GENEL KARAR YETER SAYISI ise toplantıya katılanların salt çoğunluğudur ve katılan sayısına göre değişir, ancak hiçbir şekilde üye tamsayısının dörtte birinin bir fazlasından (151) az olamaz. Dolayısıyla 301 sayısı ancak oylamaya 600 üyenin tamamı katıldığında toplantıya katılanların salt çoğunluğuna denk gelir; her koşulda değil.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "1982 Anayasası md. 96",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "94",
+    "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisi Başkanlık Divanıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Meclis başkanı, üyesi olduğu siyasi partinin Meclis dışındaki faaliyetlerine katılamaz." },
+      { "label": "B", "text": "Meclis başkanı, görevinin gereği olan hâller dışında Meclis tartışmalarına katılamaz." },
+      { "label": "C", "text": "Başkanlık Divanı için bir yasama döneminde iki seçim yapılır." },
+      { "label": "D", "text": "Oturumu yönetmeyen başkan vekili oy kullanabilir." },
+      { "label": "E", "text": "Meclis başkanlığına siyasi parti grupları aday gösterebilir.", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.94/2'ye göre Başkanlık Divanı, Meclisteki siyasi parti gruplarının üye sayısı oranında Divana katılmalarını sağlayacak şekilde kurulur; ANCAK SİYASİ PARTİ GRUPLARI BAŞKANLIK İÇİN ADAY GÖSTEREMEZLER. Bu nedenle E yanlıştır. Başkan adayları Meclis üyeleri içinden, Meclisin toplandığı günden itibaren beş gün içinde Başkanlık Divanına bildirilir. C doğrudur: bir yasama döneminde iki seçim yapılır; ilk seçilenlerin görev süresi iki yıl, ikinci devre için seçilenlerin görev süresi o yasama döneminin sonuna kadardır. A, B ve D ise m.94'ün son fıkrasının karşılığıdır: Meclis Başkanı ve oturumu yöneten Başkanvekili oy kullanamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 94",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "116",
+    "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisi ve Cumhurbaşkanı seçimlerinin yenilenmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine üye tamsayısının en az salt çoğunluğuyla karar verebilir." },
+      { "label": "B", "text": "Cumhurbaşkanı, ikinci dönemde seçimlerin yenilenmesine karar verirse bir kez daha aday olabilir." },
+      { "label": "C", "text": "Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine, üye tam sayısının 1/4'ünün fazlasından az olmamak üzere toplantıya katılanların en az salt çoğunluğuyla karar verebilir." },
+      { "label": "D", "text": "Türkiye Büyük Millet Meclisi seçimlerin yenilenmesine üye tamsayısının en az 3/5 çoğunluğuyla karar verebilir.", "isCorrect": true },
+      { "label": "E", "text": "Cumhurbaşkanının ikinci döneminde Türkiye Büyük Millet Meclisi tarafından seçimlerin yenilenmesine karar verilirse cumhurbaşkanı bir defa daha aday olamaz." }
+    ],
+    "explanation": "Anayasa m.116/1'e göre TBMM, seçimlerin yenilenmesine ÜYE TAMSAYISININ BEŞTE ÜÇ ÇOĞUNLUĞUYLA (360) karar verebilir; bu nedenle D doğrudur ve çoğunluğu farklı gösteren A ile C yanlıştır. B ve E ise Cumhurbaşkanının yeniden adaylığına ilişkin kuralın kritik ayrıntısını test eder: m.116/3 uyarınca Cumhurbaşkanının ikinci döneminde MECLİS TARAFINDAN seçimlerin yenilenmesine karar verilmesi hâlinde Cumhurbaşkanı bir defa daha aday olabilir — dolayısıyla E yanlıştır. Buna karşılık yenileme kararını CUMHURBAŞKANININ KENDİSİ alırsa bir kez daha aday OLAMAZ; bu yüzden B de yanlıştır. Her iki hâlde de TBMM genel seçimi ile Cumhurbaşkanlığı seçimi birlikte yapılır ve seçilenlerin görev süresi beş yıldır.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 116",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "89",
+    "stem": "1982 Anayasası'na göre Cumhurbaşkanının yayınlanmasını kısmen veya tamamen uygun bulmadığı, Anayasa değişikliğine ilişkin olmayan kanunları bir daha görüşmek üzere Meclise geri göndermesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı, bütçe kanunlarını Meclise geri gönderemez." },
+      { "label": "B", "text": "Cumhurbaşkanı, Meclise geri göndermediği bir kanunun iptali için Anayasa Mahkemesine başvuramaz.", "isCorrect": true },
+      { "label": "C", "text": "Meclis, geri gönderilen kanunu üye tam sayısının salt çoğunluğuyla aynen kabul ederse kanun, Cumhurbaşkanınca yayınlanır." },
+      { "label": "D", "text": "Meclis, geri gönderilen kanunda yeni bir değişiklik yaparsa Cumhurbaşkanı, değiştirilen kanunu tekrar Meclise geri gönderebilir." },
+      { "label": "E", "text": "Bir kanunun Cumhurbaşkanınca kısmen uygun bulunmayarak geri gönderilmesi durumunda Meclis, sadece uygun bulunmayan maddeleri görüşebilir." }
+    ],
+    "explanation": "Cumhurbaşkanının bir kanunu geri göndermemiş olması, o kanuna karşı ANAYASA MAHKEMESİNDE İPTAL DAVASI AÇMASINA ENGEL DEĞİLDİR; m.150 uyarınca Cumhurbaşkanı iptal davası açabilecekler arasındadır ve dava, kanunun Resmî Gazetede yayımlanmasından başlayarak altmış gün içinde açılır. Bu nedenle B yanlıştır. Diğer seçenekler m.89'un karşılığıdır: Cumhurbaşkanı kabul edilen kanunları on beş gün içinde yayımlar; uygun bulmadıklarını gerekçesiyle birlikte aynı süre içinde Meclise geri gönderir, ancak BÜTÇE KANUNLARI bu hükme tabi değildir; kısmen uygun bulunmama hâlinde Meclis sadece uygun bulunmayan maddeleri görüşebilir (2001 değişikliği); Meclis kanunu üye tamsayısının salt çoğunluğuyla AYNEN kabul ederse kanun yayımlanır, yeni bir değişiklik yaparsa Cumhurbaşkanı kanunu tekrar geri gönderebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 89, 150",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "96",
+    "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisinin karar yeter sayısı en az kaç olabilir?",
+    "options": [
+      { "label": "A", "text": "139" },
+      { "label": "B", "text": "150" },
+      { "label": "C", "text": "151", "isCorrect": true },
+      { "label": "D", "text": "200" },
+      { "label": "E", "text": "301" }
+    ],
+    "explanation": "Anayasa m.96/1'e göre TBMM, Anayasada başkaca bir hüküm yoksa TOPLANTIYA KATILANLARIN SALT ÇOĞUNLUĞU ile karar verir; ANCAK KARAR YETER SAYISI HİÇBİR ŞEKİLDE ÜYE TAMSAYISININ DÖRTTE BİRİNİN BİR FAZLASINDAN AZ OLAMAZ. Üye tamsayısı 600 olduğuna göre dörtte biri 150, bir fazlası 151'dir; dolayısıyla asgari karar yeter sayısı 151'dir. TOPLANTI YETER SAYISI ise üye tamsayısının en az üçte biri, yani 200'dür. Bu iki sayıyı birbirine karıştırmamak gerekir.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "1982 Anayasası md. 96",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "104",
+    "stem": "1982 Anayasası'na göre olağan dönem cumhurbaşkanlığı kararnameleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı yürütme yetkisine ilişkin konularda çıkarabilir." },
+      { "label": "B", "text": "Anayasada münhasıran kanunla düzenlenmesi öngörülen konularda Cumhurbaşkanlığı kararnamesi çıkarılamaz." },
+      { "label": "C", "text": "Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması hâlinde, kanun hükümleri uygulanır." },
+      { "label": "D", "text": "En geç 3 ay içinde TBMM'nin onayına sunulur.", "isCorrect": true },
+      { "label": "E", "text": "Türkiye Büyük Millet Meclisi aynı konuda kanun çıkarırsa Cumhurbaşkanlığı kararnamesi hükümsüz hâle gelir." }
+    ],
+    "explanation": "OLAĞAN DÖNEM Cumhurbaşkanlığı kararnamelerinin TBMM'nin ONAYINA SUNULMASINA GEREK YOKTUR; kararname çıkarma yetkisi doğrudan Anayasa ile Cumhurbaşkanına verilmiştir. Bu nedenle D yanlıştır. (Onaya sunma, yalnızca OLAĞANÜSTÜ HÂL Cumhurbaşkanlığı kararnameleri bakımından söz konusudur; bunlar Resmî Gazetede yayımlandıkları gün Meclis onayına sunulur ve üç ay içinde görüşülüp karara bağlanır.) A, B, C ve E ise m.104/17'nin karşılığıdır: Cumhurbaşkanı yürütme yetkisine ilişkin konularda kararname çıkarabilir; Anayasanın ikinci kısmının birinci ve ikinci bölümlerindeki temel haklar, kişi hakları ve ödevleriyle dördüncü bölümdeki siyasi haklar ve ödevler, Anayasada münhasıran kanunla düzenlenmesi öngörülen konular ve kanunda açıkça düzenlenen konular kararname konusu olamaz; kanunla kararname çatışırsa kanun hükümleri uygulanır ve Meclis aynı konuda kanun çıkarırsa kararname hükümsüz hâle gelir.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "1982 Anayasası md. 104, 119",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

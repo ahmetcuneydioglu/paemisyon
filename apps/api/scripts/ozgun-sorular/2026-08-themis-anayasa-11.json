@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "135",
+    "stem": "Kamu kurumu niteliğindeki meslek kuruluşlarıyla ilgili aşağıdaki ifadelerden hangisi 1982 Anayasası'nda yer almaz?",
+    "options": [
+      { "label": "A", "text": "Organlarının kendi üyeleri tarafından gizli oyla seçileceği" },
+      { "label": "B", "text": "Kamu tüzel kişiliğine sahip oldukları" },
+      { "label": "C", "text": "Kuruluş amaçları dışında faaliyette bulunamayacakları" },
+      { "label": "D", "text": "Devletin üzerlerinde idari denetim yetkisi kullanamayacağı", "isCorrect": true },
+      { "label": "E", "text": "Organlarının seçimlerinde siyasi partilerin aday gösteremeyeceği" }
+    ],
+    "explanation": "Anayasa m.135, bu kuruluşlar üzerinde Devletin idari ve mali denetimine ilişkin kuralların kanunla düzenleneceğini belirtir. Dolayısıyla Devletin idari denetim yetkisi kullanamayacağı ifadesi Anayasada yer almaz; diğer seçenekler madde metninde düzenlenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 135",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "1982 Anayasası'na göre Anayasa Mahkemesi kaç üyeden oluşur?",
+    "options": [
+      { "label": "A", "text": "10" },
+      { "label": "B", "text": "11" },
+      { "label": "C", "text": "13" },
+      { "label": "D", "text": "15", "isCorrect": true },
+      { "label": "E", "text": "17" }
+    ],
+    "explanation": "Anayasa m.146'ya göre Anayasa Mahkemesi on beş üyeden oluşur. Üye sayısı 2017 Anayasa değişikliğiyle on yediden on beşe indirilmiştir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "85",
+    "stem": "Anayasa Mahkemesi, TBMM'nin aşağıdaki kararlarından hangisini denetleyebilir?",
+    "options": [
+      { "label": "A", "text": "Savaş ilanı kararı" },
+      { "label": "B", "text": "Seçimlerin yenilenmesi kararı" },
+      { "label": "C", "text": "Kesin hüküm giyme nedeniyle milletvekilliğinin düşmesi kararı" },
+      { "label": "D", "text": "Olağanüstü hâl süresinin uzatılması kararı" },
+      { "label": "E", "text": "İstifa nedeniyle milletvekilliğinin düşmesi kararı", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.85'e göre m.84'ün birinci fıkrası uyarınca istifa nedeniyle verilen milletvekilliğinin düşmesi kararına karşı Anayasa Mahkemesine iptal başvurusu yapılabilir. Kesin hüküm giyme hâlinde üyelik kesin mahkeme kararının Genel Kurula bildirilmesiyle düştüğünden bu denetim yolu yoktur; diğer parlamento kararları da seçeneklerdeki biçimiyle Anayasa Mahkemesinin denetimine tabi değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 84 ve 85",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "149",
+    "stem": "I. Bireysel başvuruları karara bağlamak\nII. Siyasi partilere ilişkin davalara bakmak\nIII. İptal davalarını karara bağlamak\nIV. Yüce Divan sıfatıyla yargılama yapmak\n1982 Anayasası'na göre yukarıdakilerden hangileri Anayasa Mahkemesinin Bölümleri tarafından yerine getirilir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I", "isCorrect": true },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve IV" },
+      { "label": "D", "text": "I, II ve IV" },
+      { "label": "E", "text": "II, III ve IV" }
+    ],
+    "explanation": "Anayasa m.149'a göre bireysel başvurular Bölümlerce karara bağlanır. Siyasi partilere ilişkin davalar, iptal ve itiraz davaları ile Yüce Divan yargılamaları Genel Kurulca görülür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 149",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "Aşağıdakilerden hangisi Hâkimler ve Savcılar Kurulunun görevlerinden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Adli ve idari yargı hâkim ve savcılarını mesleğe kabul etmek, atamak ve nakletmek" },
+      { "label": "B", "text": "Adalet Bakanlığının bir mahkemenin kaldırılması veya yargı çevresinin değiştirilmesi konusundaki tekliflerini karara bağlamak" },
+      { "label": "C", "text": "Hâkim ve savcıları görevden uzaklaştırmak" },
+      { "label": "D", "text": "Yargıtay üyelerinin tümünü seçmek" },
+      { "label": "E", "text": "Anayasa Mahkemesine üye seçmek", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.159'a göre HSK; hâkim ve savcıların mesleğe kabulü, atanması, nakli ve görevden uzaklaştırılması gibi işlemleri yapar, ilgili mahkeme ve yargı çevresi tekliflerini karara bağlar ve Yargıtay üyelerini seçer. Anayasa Mahkemesine üye seçme yetkisi HSK'ye verilmemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 146 ve 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

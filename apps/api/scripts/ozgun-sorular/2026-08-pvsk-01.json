@@ -1,0 +1,759 @@
+[
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisi polisin kişileri ve araçları durdurabileceği amaçlardan biri değildir?",
+    "options": [
+      { "label": "A", "text": "Bir suç veya kabahatin işlenmesini önlemek" },
+      { "label": "B", "text": "Suç işlendikten sonra kaçan faillerin yakalanmasını sağlamak" },
+      { "label": "C", "text": "Hakkında yakalama emri ya da zorla getirme kararı verilmiş olan kişileri tespit etmek" },
+      { "label": "D", "text": "Kişilerin hayatı, vücut bütünlüğü veya malvarlığı bakımından mevcut veya muhtemel bir tehlikeyi önlemek" },
+      { "label": "E", "text": "Bölgedeki genel asayiş durumu hakkında istatistiki bilgi toplamak", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.4/A'da durdurma amaçları dört bentte sınırlı olarak sayılmıştır: suç veya kabahatin önlenmesi, kaçan faillerin yakalanması ve kimliklerinin tespiti, hakkında yakalama emri veya zorla getirme kararı bulunanların tespiti, kişilere ya da topluma yönelik mevcut veya muhtemel tehlikenin önlenmesi. İstatistik toplamak gibi bir amaç maddede yer almaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, durdurma yetkisinin kullanılabilmesi için aranan sebep aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Polisin tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanan makul bir sebep", "isCorrect": true },
+      { "label": "B", "text": "Somut delillere dayanan kuvvetli şüphe sebebi" },
+      { "label": "C", "text": "Yeterli şüphe oluşturan somut delil" },
+      { "label": "D", "text": "Cumhuriyet savcısının yazılı talimatı" },
+      { "label": "E", "text": "Sulh ceza hâkiminin kararı" }
+    ],
+    "explanation": "PVSK m.4/A'nın ikinci fıkrası: \"Durdurma yetkisinin kullanılabilmesi için polisin tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanan makul bir sebebin bulunması gerekir.\" Durdurma için hâkim kararı veya savcı talimatı aranmaz; ölçü \"makul sebep\"tir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "Devriye görevi sırasında bir kişiyi durduran polis memuru, kişinin üzerinde tehlike oluşturabilecek bir eşya bulunduğu yönünde yeterli şüpheye ulaşmıştır. 2559 sayılı Kanun'a göre polis memuru bu aşamada aşağıdakilerden hangisini yapamaz?",
+    "options": [
+      { "label": "A", "text": "Kendisine veya başkalarına zarar verilmesini önlemeye yönelik gerekli tedbirleri almak" },
+      { "label": "B", "text": "Kişiden üzerindeki elbisenin çıkarılmasını istemek", "isCorrect": true },
+      { "label": "C", "text": "Kişiye durdurma sebebini bildirmek" },
+      { "label": "D", "text": "Durdurma sebebine ilişkin sorular sormak" },
+      { "label": "E", "text": "Kimliğinin veya bulundurulması gerekli diğer belgelerin ibraz edilmesini istemek" }
+    ],
+    "explanation": "PVSK m.4/A'ya göre polis, silah veya tehlike oluşturan eşya bulunduğu yönünde yeterli şüphe hâlinde gerekli tedbirleri alabilir; ancak bu amaçla KİŞİNİN ÜZERİNDEKİ ELBİSENİN ÇIKARILMASI veya aracın dışarıdan bakıldığında içerisi görünmeyen bölümlerinin açılması İSTENEMEZ. Diğer seçenekler maddenin açıkça tanıdığı yetkilerdir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, durdurma süresiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Durdurma süresi her hâlde yirmi dört saati geçemez." },
+      { "label": "B", "text": "Durdurma süresi, durdurma sebebine esas teşkil eden işlemin gerçekleştirilmesi için zorunlu olan süreden fazla olamaz.", "isCorrect": true },
+      { "label": "C", "text": "Durdurma süresi on iki saatle sınırlıdır." },
+      { "label": "D", "text": "Durdurma süresi kırk sekiz saati geçemez." },
+      { "label": "E", "text": "Kanunda durdurma süresine ilişkin herhangi bir sınır öngörülmemiştir." }
+    ],
+    "explanation": "PVSK m.4/A: \"Durdurma süresi, durdurma sebebine esas teşkil eden işlemin gerçekleştirilmesi için zorunlu olan süreden fazla olamaz.\" Durdurma için sabit bir saat sınırı YOKTUR; ölçü zorunluluk ve ölçülülüktür. Sebebin ortadan kalkması hâlinde kişilerin ve araçların ayrılmalarına izin verilir. Maddede geçen \"yirmi dört saat\" ibaresi durdurmaya değil, kolluk amirinin ARAMA kararının hâkim onayına sunulmasına ilişkindir; üstelik bu yetkiyi veren bölüm Anayasa Mahkemesinin 4/5/2017 tarihli kararıyla iptal edilmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kimliği belirlenemeyen kişi hakkında yapılacak işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Kişi tutularak durumdan derhal Cumhuriyet savcısı haberdar edilir." },
+      { "label": "B", "text": "Kişi, kimliği açık bir şekilde anlaşılıncaya kadar gözaltına alınır ve gerekirse tutuklanır." },
+      { "label": "C", "text": "Gözaltına ve tutuklamaya karar verme yetkisi ve usulü bakımından Ceza Muhakemesi Kanunu hükümleri uygulanır." },
+      { "label": "D", "text": "Kişinin kimliğinin belirlenmesi durumunda gözaltına alınma veya tutuklanma hâline derhal son verilir." },
+      { "label": "E", "text": "Kimliğin tespiti amacıyla tutulan kişiye, talebi olmasa dahi tutulma süresini gösteren bir belge resen verilir.", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.4/A'ya göre kimliğinin tespiti amacıyla tutulan kişiye bu belge, kimliği tespit edildikten sonra ve TALEPTE BULUNMASI HÂLİNDE verilir. Belgenin resen verilmesi öngörülmemiştir; diğer seçenekler madde metnine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "4/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, polisin kişilere kimliğini sorabilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Polis, kendisinin polis olduğunu belirleyen belgeyi gösterdikten sonra kimlik sorabilir.", "isCorrect": true },
+      { "label": "B", "text": "Polis, üniformalı olsun olmasın kimliğini göstermeksizin her zaman kimlik sorabilir." },
+      { "label": "C", "text": "Kimlik sorma yetkisi yalnızca amirin yazılı emriyle kullanılabilir." },
+      { "label": "D", "text": "Kimlik sorma yetkisi yalnızca umuma açık yerlerde kullanılabilir." },
+      { "label": "E", "text": "Kimlik sormak için sulh ceza hâkiminin kararı gerekir." }
+    ],
+    "explanation": "PVSK m.4/A: \"Polis, görevini yerine getirirken, kendisinin polis olduğunu belirleyen belgeyi gösterdikten sonra, kişilere kimliğini sorabilir. Bu kişilere kimliğini ispatlamaları hususunda gerekli kolaylık gösterilir.\"",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.4/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 4/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun 13 üncü maddesine göre polis, sayılan kişileri eylemin veya durumun niteliğine göre hangi işlemlere tabi tutar?",
+    "options": [
+      { "label": "A", "text": "Yalnızca yakalar." },
+      { "label": "B", "text": "Koruma altına alır, uzaklaştırır ya da yakalar.", "isCorrect": true },
+      { "label": "C", "text": "Yalnızca uzaklaştırır ya da yakalar." },
+      { "label": "D", "text": "Yalnızca koruma altına alır." },
+      { "label": "E", "text": "Doğrudan gözaltına alır ve tutuklar." }
+    ],
+    "explanation": "27/3/2015 tarihli ve 6638 sayılı Kanun'la yapılan değişiklikten önce madde yalnızca \"yakalar ve gerekli kanuni işlemleri yapar\" diyordu. Güncel metinde polis, eylemin veya durumun niteliğine göre KORUMA ALTINA ALIR, UZAKLAŞTIRIR YA DA YAKALAR ve gerekli kanuni işlemleri yapar. Yani yakalama tek seçenek değil, ölçülü üç seçenekten biridir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun 13 üncü maddesine 2015 yılında yapılan değişiklikle eklenen ve polise yakalama yetkisi veren hâl aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Haklarında yetkili mercilerce verilen yakalama veya tutuklama kararı bulunanlar" },
+      { "label": "B", "text": "Usulüne aykırı şekilde ülkeye girenler" },
+      { "label": "C", "text": "Başkalarının can güvenliğini tehlikeye düşürenler", "isCorrect": true },
+      { "label": "D", "text": "Halkın rahatını bozacak derecede sarhoş olanlar" },
+      { "label": "E", "text": "Haklarında gözetim altında ıslahına karar verilen küçükler" }
+    ],
+    "explanation": "PVSK m.13'ün (H) bendi 27/3/2015 tarihli ve 6638 sayılı Kanun'un 2 nci maddesiyle eklenmiştir: \"Başkalarının can güvenliğini tehlikeye düşürenleri\". Diğer seçenekler maddenin daha önceden mevcut olan bentleridir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, yakalanan kişiye yakalama sebebinin bildirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Sebep her hâlde yazılı, bunun mümkün olmaması hâlinde sözlü olarak derhal bildirilir; toplu suçlarda ise en geç kişiler hâkim huzuruna çıkarılıncaya kadar bildirilir.", "isCorrect": true },
+      { "label": "B", "text": "Sebep yalnızca yazılı olarak ve yirmi dört saat içinde bildirilir." },
+      { "label": "C", "text": "Sebep yalnızca sözlü olarak bildirilir; yazılı bildirim aranmaz." },
+      { "label": "D", "text": "Sebebin bildirilmesi Cumhuriyet savcısının takdirine bağlıdır." },
+      { "label": "E", "text": "Toplu suçlarda yakalama sebebi hiçbir şekilde bildirilmez." }
+    ],
+    "explanation": "PVSK m.13: \"Yakalanan kişilere, yakalama sebebi herhalde yazılı ve bunun mümkün olmaması hâlinde sözlü olarak derhal; toplu suçlarda ise en geç bu kişiler hâkim huzuruna çıkarılıncaya kadar bildirilir.\" Ayrıca kişinin yakalandığı, istediği kanunî yakınlarına derhal bildirilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, yakalananlardan hangilerinin yakalanma anındaki sağlık durumu tabip raporuyla tespit edilir?",
+    "options": [
+      { "label": "A", "text": "Yalnızca zor kullanılarak yakalananların" },
+      { "label": "B", "text": "Yalnızca hakkında suç soruşturması yapılacak şüpheli ve sanıkların" },
+      { "label": "C", "text": "Uyuşturucu madde kullanmış olanlar ile sarhoş olanların, zor kullanılarak yakalananların ve hakkında suç soruşturması yapılacak şüpheli ve sanıkların", "isCorrect": true },
+      { "label": "D", "text": "Yakalanan herkesin, istisnasız" },
+      { "label": "E", "text": "Yalnızca on sekiz yaşından küçüklerin" }
+    ],
+    "explanation": "PVSK m.13'e göre yakalananlardan (A) uyuşturucu madde kullanmış olanlar ile sarhoş olanların, (B) zor kullanılarak yakalananların, (C) haklarında suç soruşturması yapılacak olan şüpheli ve sanıkların yakalanma anındaki sağlık durumları tabip raporuyla tespit edilir. Bu üç grup sınırlı olarak sayılmıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "Bir kahvehanede aşırı derecede sarhoş olan ve yapılan uyarılara rağmen çevredekilere saldırmaya yeltenen bir kişiyle karşılaşan polis, 2559 sayılı Kanun'a göre öncelikle hangi maddeye dayanarak işlem yapar?",
+    "options": [
+      { "label": "A", "text": "Durdurma ve kimlik sorma yetkisine ilişkin madde" },
+      { "label": "B", "text": "Yakalama yetkisine ilişkin madde", "isCorrect": true },
+      { "label": "C", "text": "Önleme aramasına ilişkin madde" },
+      { "label": "D", "text": "Parmak izi ve fotoğrafların kayda alınmasına ilişkin madde" },
+      { "label": "E", "text": "İstihbarat faaliyetlerine ilişkin madde" }
+    ],
+    "explanation": "PVSK m.13/C, \"halkın rahatını bozacak veya rezalet çıkaracak derecede sarhoş olanları veya sarhoşluk hâlinde başkalarına saldıranları, yapılan uyarılara rağmen bu hareketlerine devam edenler ile başkalarına saldırmaya yeltenenleri ve kavga edenleri\" yakalama sebebi olarak sayar. Olay doğrudan bu bende girer.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, yakalanan kişilerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Kaçmasının veya saldırıda bulunmasının önlenmesi bakımından kişinin sağlığına zarar vermeyecek şekilde her türlü tedbir alınabilir." },
+      { "label": "B", "text": "Suç işlediği şüphesi altında olanlar adlî mercilere sevk edilir." },
+      { "label": "C", "text": "Haklarında ıslah veya tedavi tedbiri alınması gerekenler ilgili kurum yetkilileri tarafından teslim alınır." },
+      { "label": "D", "text": "Yakalama sebebi ortadan kalksa dahi kişi en az yirmi dört saat gözaltında tutulur.", "isCorrect": true },
+      { "label": "E", "text": "Yakalanması belirli bir usule bağlanmış kişilerle ilgili kanun hükümleri saklıdır." }
+    ],
+    "explanation": "PVSK m.13'ün son cümlesi açıktır: \"Yakalama sebebi ortadan kalkanlar DERHAL SERBEST BIRAKILIR.\" Asgari bir gözaltı süresi öngörülmemiştir; diğer seçenekler madde metnine uygundur.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.13",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, zor kullanma yetkisi kapsamında başvurulacak araçların kademeli sıralaması aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "Maddî güç — bedenî kuvvet — silah" },
+      { "label": "B", "text": "Bedenî kuvvet — maddî güç — silah", "isCorrect": true },
+      { "label": "C", "text": "Silah — maddî güç — bedenî kuvvet" },
+      { "label": "D", "text": "Bedenî kuvvet — silah — maddî güç" },
+      { "label": "E", "text": "Kanunda kademe öngörülmemiş, seçim tamamen polisin takdirine bırakılmıştır." }
+    ],
+    "explanation": "PVSK m.16/2: Zor kullanma yetkisi kapsamında, direnmenin mahiyetine ve derecesine göre ve direnenleri etkisiz hale getirecek şekilde KADEMELİ OLARAK ARTAN NİSPETTE bedenî kuvvet, maddî güç ve kanunî şartları gerçekleştiğinde silah kullanılabilir.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisi \"maddî güç\" kavramının kapsamında yer almaz?",
+    "options": [
+      { "label": "A", "text": "Kelepçe" },
+      { "label": "B", "text": "Basınçlı ve/veya boyalı su" },
+      { "label": "C", "text": "Göz yaşartıcı gazlar veya tozlar" },
+      { "label": "D", "text": "Polis köpekleri ve atları" },
+      { "label": "E", "text": "Polisin direnen kişiye doğrudan doğruya uyguladığı bedenî gücü", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.16/3'te maddî güç, polisin direnen kişilere karşı veya eşya üzerinde BEDENÎ KUVVETİN DIŞINDA kullandığı kelepçe, cop, basınçlı ve/veya boyalı su, göz yaşartıcı gazlar veya tozlar, fizikî engeller, polis köpekleri ve atları ile sair hizmet araçları olarak tanımlanır. Doğrudan uygulanan bedenî güç ise \"bedenî kuvvet\"tir; ayrı bir kademedir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, zor kullanmadan önce yapılacak ihtarla ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "İhtar zorunludur; hiçbir hâlde ihtar yapılmadan zor kullanılamaz." },
+      { "label": "B", "text": "Kural olarak ihtar yapılır; ancak direnmenin mahiyeti ve derecesi göz önünde bulundurularak ihtar yapılmadan da zor kullanılabilir.", "isCorrect": true },
+      { "label": "C", "text": "İhtar yalnızca amirin izniyle yapılabilir." },
+      { "label": "D", "text": "İhtarın yazılı olarak yapılması şarttır." },
+      { "label": "E", "text": "İhtar yalnızca toplu kuvvet müdahalelerinde yapılır." }
+    ],
+    "explanation": "PVSK m.16/5: \"Zor kullanmadan önce, ilgililere direnmeye devam etmeleri halinde doğrudan doğruya zor kullanılacağı ihtarı yapılır. Ancak, direnmenin mahiyeti ve derecesi göz önünde bulundurularak, ihtar yapılmadan da zor kullanılabilir.\" Yani ihtar kuraldır ama mutlak değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, toplu kuvvet olarak müdahale edilen durumlarda zor kullanmanın derecesi ile kullanılacak araç ve gereçleri kim tayin ve tespit eder?",
+    "options": [
+      { "label": "A", "text": "Müdahaleye katılan her polis memuru kendisi" },
+      { "label": "B", "text": "Müdahale eden kuvvetin amiri", "isCorrect": true },
+      { "label": "C", "text": "Mahallin en büyük mülki amiri" },
+      { "label": "D", "text": "Cumhuriyet savcısı" },
+      { "label": "E", "text": "Sulh ceza hâkimi" }
+    ],
+    "explanation": "PVSK m.16/6: Polis, kullanacağı araç ve gereç ile zorun derecesini kural olarak kendisi takdir ve tayin eder. ANCAK toplu kuvvet olarak müdahale edilen durumlarda bunlar MÜDAHALE EDEN KUVVETİN AMİRİ tarafından tayin ve tespit edilir. Bu ayrım sık sorulan bir noktadır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, hakkında yakalama emri verilmiş olup kaçmakta olan bir kişinin yakalanmasını sağlamak amacıyla silah kullanılmasında izlenecek sıra aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "Duyabileceği şekilde \"dur\" çağrısı — uyarı amacıyla silahla ateş — yakalamayı sağlayacak ölçüde silahla ateş", "isCorrect": true },
+      { "label": "B", "text": "Uyarı amacıyla silahla ateş — \"dur\" çağrısı — yakalamayı sağlayacak ölçüde silahla ateş" },
+      { "label": "C", "text": "\"Dur\" çağrısı — doğrudan yakalamayı sağlayacak ölçüde silahla ateş" },
+      { "label": "D", "text": "Amirin emri — \"dur\" çağrısı — silahla ateş" },
+      { "label": "E", "text": "Doğrudan silahla ateş edilir; herhangi bir sıra öngörülmemiştir." }
+    ],
+    "explanation": "PVSK m.16/8: Polis, yedinci fıkranın (c) bendi kapsamında silah kullanmadan önce kişiye duyabileceği şekilde \"dur\" çağrısında bulunur; kişi uymayarak kaçmaya devam ederse ÖNCE UYARI AMACIYLA ateş edilebilir; buna rağmen kaçmakta ısrar etmesi dolayısıyla ele geçirilmesi mümkün olmazsa yakalanmasını sağlamak amacıyla ve sağlayacak ölçüde ateş edilebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, görevini yaparken kendisine silahla saldırıya teşebbüs edilen polis nasıl hareket eder?",
+    "options": [
+      { "label": "A", "text": "Saldırı tehlikesini etkisiz kılacak ölçüde duraksamadan silahla ateş edebilir.", "isCorrect": true },
+      { "label": "B", "text": "Önce mutlaka üç kez \"dur\" çağrısı yapmak zorundadır." },
+      { "label": "C", "text": "Yalnızca amirinden emir aldıktan sonra silah kullanabilir." },
+      { "label": "D", "text": "Yalnızca bedenî kuvvet ve maddî güç kullanabilir." },
+      { "label": "E", "text": "Geri çekilerek takviye kuvvet beklemek zorundadır." }
+    ],
+    "explanation": "PVSK m.16'nın son fıkrası: Polis, direnişi kırmak ya da yakalamak amacıyla zor veya silah kullanma yetkisini kullanırken kendisine karşı silahla saldırıya teşebbüs edilmesi hâlinde, teşebbüs eden kişiye karşı saldırı tehlikesini etkisiz kılacak ölçüde DURAKSAMADAN silahla ateş edebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nun 16 ncı maddesine 2015 yılında eklenen ve polise silah kullanma yetkisi veren hâl aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Meşru savunma hakkının kullanılması kapsamında" },
+      { "label": "B", "text": "Bedenî kuvvet ve maddî güç kullanarak etkisiz hale getirilemeyen direniş karşısında" },
+      { "label": "C", "text": "Hakkında tutuklama kararı verilmiş kişinin yakalanmasını sağlamak amacıyla" },
+      { "label": "D", "text": "Konutlara, okullara, ibadethanelere veya araçlara molotof, patlayıcı, yanıcı ve benzeri silahlarla saldıranlara karşı", "isCorrect": true },
+      { "label": "E", "text": "Suçüstü hâlinde şüphelinin yakalanmasını sağlamak amacıyla" }
+    ],
+    "explanation": "PVSK m.16/7'nin (d) bendi 27/3/2015 tarihli ve 6638 sayılı Kanun'un 4 üncü maddesiyle eklenmiştir: kişilere, işyerlerine, konutlara, kamu binalarına, okullara, yurtlara, ibadethanelere, araçlara ve toplu bulunulan alanlara molotof, patlayıcı, yanıcı, yakıcı, boğucu, yaralayıcı ve benzeri silahlarla saldıran veya saldırıya teşebbüs edenlere karşı, saldırıyı etkisiz kılmak amacıyla ve etkisiz kılacak ölçüde.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "16",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kendisine veya başkasına yönelik bir saldırı karşısında polisin savunmada bulunması hangi hükümler çerçevesinde değerlendirilir?",
+    "options": [
+      { "label": "A", "text": "Zor kullanmaya ilişkin koşullara bağlı kalınmaksızın, Türk Ceza Kanunu'nun meşru savunmaya ilişkin hükümleri çerçevesinde", "isCorrect": true },
+      { "label": "B", "text": "Yalnızca PVSK'nın kademeli zor kullanma hükümleri çerçevesinde" },
+      { "label": "C", "text": "Ceza Muhakemesi Kanunu'nun yakalamaya ilişkin hükümleri çerçevesinde" },
+      { "label": "D", "text": "Emniyet Teşkilat Kanunu'nun disiplin hükümleri çerçevesinde" },
+      { "label": "E", "text": "Kabahatler Kanunu hükümleri çerçevesinde" }
+    ],
+    "explanation": "PVSK m.16'nın ilgili fıkrası: \"Polis, kendisine veya başkasına yönelik bir saldırı karşısında, zor kullanmaya ilişkin koşullara bağlı kalmaksızın, 5237 sayılı Türk Ceza Kanununun meşru savunmaya ilişkin hükümleri çerçevesinde savunmada bulunur.\" Meşru savunma, kademelilik şartının dışındadır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.16",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "20",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisi zabıtanın konutlara, iş yerlerine ve eklentilerine girebileceği hâllerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "İmdat istenmesi" },
+      { "label": "B", "text": "Yangın, su baskını ve boğulma gibi büyük tehlikelerin haber verilmesi veya görülmesi" },
+      { "label": "C", "text": "Ağır cezalı bir suçun işlenmesine mani olmak" },
+      { "label": "D", "text": "Ağır cezalı bir suçun yapılmakta devam olunmasına mani olmak" },
+      { "label": "E", "text": "Kabahat niteliğindeki bir fiilin failinin kimliğini tespit etmek", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.20/1'de konuta girme sebepleri sınırlı olarak sayılmıştır: imdat istenmesi, yangın-su baskını-boğulma gibi büyük tehlikelerin haber verilmesi veya görülmesi, ağır cezalı bir suçun işlenmesine veya devamına mani olmak. Kabahat faili kimlik tespiti bu ağır sebepler arasında yer almaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.20",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 20",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "20",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, zabıtanın üniversite binalarına veya eklerine girmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Suç ve suçluların kovuşturulması için herhangi bir davet veya izne bağlı olmaksızın her zaman girebilir.", "isCorrect": true },
+      { "label": "B", "text": "Her hâlde rektörün yazılı izni gerekir." },
+      { "label": "C", "text": "Yalnızca Cumhuriyet savcısının kararıyla girebilir." },
+      { "label": "D", "text": "Üniversite binalarına hiçbir surette girilemez." },
+      { "label": "E", "text": "Yalnızca mülki amirin yazılı emriyle girebilir." }
+    ],
+    "explanation": "PVSK m.20/2'de iki hâl sayılır: (A) kurumun imkânlarıyla önlenmesi mümkün görülmeyen olayların çıkması ihtimali karşısında rektörün, acele hâllerde dekan veya bağlı kuruluş yetkililerinin yardım talebi üzerine; (B) suç ve suçluların kovuşturulması için HERHANGİ BİR DAVET VEYA İZNE BAĞLI OLMAKSIZIN HER ZAMAN.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.20",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 20",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "20",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, üniversite binalarında kurumun imkânlarıyla önlenmesi mümkün görülmeyen olayların çıkması ihtimali karşısında zabıtadan yardım talep etmeye acele hâllerde kim yetkilidir?",
+    "options": [
+      { "label": "A", "text": "Yalnızca rektör" },
+      { "label": "B", "text": "Dekan veya bağlı kuruluş yetkilileri", "isCorrect": true },
+      { "label": "C", "text": "Üniversite genel sekreteri" },
+      { "label": "D", "text": "Öğrenci temsilcisi" },
+      { "label": "E", "text": "Yükseköğretim Kurulu Başkanı" }
+    ],
+    "explanation": "PVSK m.20/2-A: Yardım talebi kural olarak rektör tarafından yapılır; ACELE HÂLLERDE ise dekan veya bağlı kuruluş yetkilileri de talep edebilir. Maddeye göre bu bentte gösterilen hâllerde talep derhal yerine getirilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.20",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 20",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "9",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, önleme aramasında gecikmesinde sakınca bulunan hâllerde yazılı emri vermeye yetkili merci aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Mülkî âmir", "isCorrect": true },
+      { "label": "B", "text": "Cumhuriyet savcısı" },
+      { "label": "C", "text": "Kolluk amiri" },
+      { "label": "D", "text": "Emniyet Genel Müdürü" },
+      { "label": "E", "text": "Ağır ceza mahkemesi başkanı" }
+    ],
+    "explanation": "PVSK m.9/1: Önleme araması, usulüne göre verilmiş SULH CEZA HÂKİMİNİN kararı veya bu sebeplere bağlı olarak gecikmesinde sakınca bulunan hâllerde MÜLKÎ ÂMİRİN vereceği yazılı emirle yapılır. Adli aramadan farklı olarak burada yetkili merci Cumhuriyet savcısı değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.9",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "9",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdaki yerlerin hangisinde önleme araması yapılamaz?",
+    "options": [
+      { "label": "A", "text": "Umumî veya umuma açık yerlerde" },
+      { "label": "B", "text": "Her türlü toplu taşıma araçlarında ve seyreden taşıtlarda" },
+      { "label": "C", "text": "Halkın topluca bulunduğu veya toplanabileceği yerlerde" },
+      { "label": "D", "text": "Konutta ve kamuya açık olmayan işyerlerinde", "isCorrect": true },
+      { "label": "E", "text": "Toplantı ve gösteri yürüyüşlerinin yapıldığı yerde veya yakın çevresinde" }
+    ],
+    "explanation": "PVSK m.9'un ilgili fıkrası açıktır: \"Konutta, yerleşim yerinde ve kamuya açık olmayan işyerlerinde ve eklentilerinde önleme araması YAPILAMAZ.\" Diğer seçenekler maddede önleme aramasının yapılabileceği yerler arasında sayılmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.9",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "9",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisi önleme araması kararında veya emrinde belirtilmesi gereken hususlardan biri değildir?",
+    "options": [
+      { "label": "A", "text": "Aramanın sebebi" },
+      { "label": "B", "text": "Aramanın konusu ve kapsamı" },
+      { "label": "C", "text": "Aramanın yapılacağı yer" },
+      { "label": "D", "text": "Aramanın yapılacağı zaman ve geçerli olacağı süre" },
+      { "label": "E", "text": "Aramayı gerçekleştirecek kolluk görevlilerinin açık kimlikleri", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.9/3'te arama kararında veya emrinde bulunması gerekenler dört bentte sayılmıştır: sebep, konu ve kapsam, yer, zaman ve geçerlilik süresi. Görevlilerin kimliklerinin karara yazılması aranmaz; ayrıca arama talep yazısında makul sebeplerin oluştuğunun gerekçeleriyle gösterilmesi gerekir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.9",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "9",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, polisin güvenliğini sağladığı bina ve tesislere gelenlerin üstünü, aracını ve eşyasını kontrol etme ve arama yetkisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Herhangi bir emir veya karar olmasına bakılmaksızın bu yetki kullanılabilir.", "isCorrect": true },
+      { "label": "B", "text": "Her hâlde sulh ceza hâkiminin kararı gerekir." },
+      { "label": "C", "text": "Her hâlde mülki amirin yazılı emri gerekir." },
+      { "label": "D", "text": "Yalnızca kişinin rızası varsa bu yetki kullanılabilir." },
+      { "label": "E", "text": "Bu yetki yalnızca olağanüstü hâl ilan edilen yerlerde kullanılabilir." }
+    ],
+    "explanation": "PVSK m.9'un ilgili fıkrası: Polis, tehlikenin önlenmesi veya bertaraf edilmesi amacıyla güvenliğini sağladığı bina ve tesislere gelenlerin HERHANGİ BİR EMİR VEYA KARAR OLMASINA BAKILMAKSIZIN üstünü, aracını ve eşyasını teknik cihazlarla, gerektiğinde el ile kontrol etmeye ve aramaya yetkilidir. Bu yerlere girmek isteyenler kimliklerini sorulmaksızın ibraz etmek zorundadır.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.9",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 6",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, bir suç işlendiği bilgisini edinen polis, olay yerinin korunması ve delillerin tespitine ilişkin acele tedbirleri aldıktan sonra ne yapar?",
+    "options": [
+      { "label": "A", "text": "El koyduğu olayları, yakalanan kişiler ile uygulanan tedbirleri derhal Cumhuriyet savcısına bildirir ve savcının emri doğrultusunda soruşturma işlemlerini yapar.", "isCorrect": true },
+      { "label": "B", "text": "Soruşturmayı kendi başına tamamlayarak dosyayı doğrudan mahkemeye gönderir." },
+      { "label": "C", "text": "Durumu yalnızca mülki amire bildirir." },
+      { "label": "D", "text": "Sulh ceza hâkiminden soruşturma izni ister." },
+      { "label": "E", "text": "Yirmi dört saat bekledikten sonra Cumhuriyet savcısına bilgi verir." }
+    ],
+    "explanation": "PVSK Ek m.6: Polis, olay yerinin korunması ve delillerin kaybolmaması için acele tedbirleri aldıktan sonra el koyduğu olayları, yakalanan kişiler ile uygulanan tedbirleri DERHAL CUMHURİYET SAVCISINA bildirir ve Cumhuriyet savcısının emri doğrultusunda işin aydınlatılması için gerekli soruşturma işlemlerini yapar.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK Ek m.6",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 6",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, teşhis işlemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Teşhis, Cumhuriyet savcısının talimatıyla ve zorunlu olması hâlinde yaptırılabilir." },
+      { "label": "B", "text": "Tanıklıktan çekinebilecek olanlar teşhiste bulunmaya zorlanamaz." },
+      { "label": "C", "text": "Teşhis işlemi en az iki kez tekrarlanır." },
+      { "label": "D", "text": "Teşhiste bulunan kişi ile teşhis işlemine tâbi tutulan kişilerin birbirini görmesi gerekir.", "isCorrect": true },
+      { "label": "E", "text": "Teşhis işlemine tâbi tutulan kişilerin her birinde teşhis sırasında bir numara bulundurulur." }
+    ],
+    "explanation": "PVSK Ek m.6 açıkça \"Teşhiste bulunan kişi ile teşhis işlemine tâbi tutulan kişilerin BİRBİRİNİ GÖRMEMESİ gerekir\" der. Amaç teşhiste bulunan kişinin baskı altında kalmasını önlemektir; diğer seçenekler madde metnine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK Ek m.6",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 6",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, şüphelinin fotoğrafı üzerinden yapılacak teşhisle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Tek bir fotoğraf veya aynı kişinin farklı fotoğrafları üzerinden teşhis yaptırılamaz.", "isCorrect": true },
+      { "label": "B", "text": "Fotoğraf üzerinden teşhis hiçbir şekilde yapılamaz." },
+      { "label": "C", "text": "Tek bir fotoğraf üzerinden teşhis yapılması yeterlidir." },
+      { "label": "D", "text": "Fotoğrafların farklı büyüklük ve özellikte olması gerekir." },
+      { "label": "E", "text": "Fotoğraf üzerinden teşhis için hâkim kararı zorunludur." }
+    ],
+    "explanation": "PVSK Ek m.6: \"Şüphelinin fotoğrafı üzerinden de teşhis yaptırılabilir. Ancak tek bir fotoğraf veya aynı kişinin farklı fotoğrafları üzerinden teşhis yaptırılamaz. Değişik kişilerin fotoğraflarının AYNI BÜYÜKLÜK VE ÖZELLİKTE olmaları gerekir.\"",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK Ek m.6",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 6",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, olay yeri dışında kalan ve o suça ilişkin delil elde edilebileceği yönünde kuvvetli şüphe sebebi bulunan konut, işyeri ve kamuya açık olmayan kapalı alanlarda yapılacak işlemlerde hangi hükümler uygulanır?",
+    "options": [
+      { "label": "A", "text": "Ceza Muhakemesi Kanunu'nun arama ve elkoymaya ilişkin hükümleri", "isCorrect": true },
+      { "label": "B", "text": "PVSK'nın önleme aramasına ilişkin hükümleri" },
+      { "label": "C", "text": "Kabahatler Kanunu hükümleri" },
+      { "label": "D", "text": "İl İdaresi Kanunu hükümleri" },
+      { "label": "E", "text": "Herhangi bir karar veya emir aranmaksızın polis resen işlem yapar." }
+    ],
+    "explanation": "PVSK Ek m.6: \"Olay yeri dışında kalan ve o suça ilişkin delil elde edilebileceği yönünde kuvvetli şüphe sebebi bulunan konut, işyeri ve kamuya açık olmayan kapalı alanlarda yapılacak işlemler için CEZA MUHAKEMESİ KANUNUNUN ARAMA VE ELKOYMAYA İLİŞKİN HÜKÜMLERİ uygulanır.\"",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK Ek m.6",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 6",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, polisin bir suça ilişkin olarak kendisine yapılan sözlü ihbar ve şikâyetler ile görevi sırasında öğrendiği suça ilişkin bilgiler bakımından yükümlülüğü nedir?",
+    "options": [
+      { "label": "A", "text": "Bunları yazılı hale getirir.", "isCorrect": true },
+      { "label": "B", "text": "Yalnızca yazılı yapılan şikâyetleri işleme alır." },
+      { "label": "C", "text": "Sözlü ihbarları ancak ihbarcı kimliğini açıklarsa kaydeder." },
+      { "label": "D", "text": "Sözlü ihbarları doğrudan mülki amire iletir." },
+      { "label": "E", "text": "Sözlü ihbarlar hakkında herhangi bir işlem yapmaz." }
+    ],
+    "explanation": "PVSK Ek m.6/2: \"Polis, bir suça ilişkin olarak kendisine yapılan sözlü ihbar ve şikâyetleri ve görevi sırasında öğrendiği suça ilişkin bilgileri YAZILI HALE GETİRİR.\" Bu, adli görevlerin başlangıç yükümlülüğüdür.",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · PVSK Ek m.6",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "5",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, aşağıdakilerden hangisinin parmak izi polis tarafından alınmaz?",
+    "options": [
+      { "label": "A", "text": "Her çeşit silah ruhsatı, sürücü belgesi veya pasaport almak için başvuruda bulunan" },
+      { "label": "B", "text": "Özel güvenlik görevlisi olarak istihdam edilen" },
+      { "label": "C", "text": "Türk vatandaşlığına başvuruda bulunan" },
+      { "label": "D", "text": "Gözaltına alınan" },
+      { "label": "E", "text": "Hakkında yalnızca idari para cezası uygulanan kabahat faili", "isCorrect": true }
+    ],
+    "explanation": "PVSK m.5/1'de parmak izi alınacaklar beş bentte sınırlı olarak sayılmıştır: gönüllü; silah ruhsatı, sürücü belgesi veya pasaport başvurusunda bulunan; kolluk veya özel güvenlik görevlisi olarak istihdam edilen; Türk vatandaşlığına başvuran; sığınma talebinde bulunan veya gerekli görülmesi hâlinde ülkeye giren sair yabancı; gözaltına alınan. Kabahat faili bu sayımda yer almaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.5",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 5",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "5",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, sisteme kayıtlı olan parmak izi ve fotoğraflar hangi sürelerin geçmesiyle sistemden silinir?",
+    "options": [
+      { "label": "A", "text": "Kişinin ölümünden itibaren on yıl ve her hâlde kayıt tarihinden itibaren seksen yıl", "isCorrect": true },
+      { "label": "B", "text": "Kişinin ölümünden itibaren beş yıl ve her hâlde kayıt tarihinden itibaren elli yıl" },
+      { "label": "C", "text": "Kişinin ölümünden itibaren yirmi yıl ve her hâlde kayıt tarihinden itibaren yüz yıl" },
+      { "label": "D", "text": "Kişinin ölümünden itibaren on yıl ve her hâlde kayıt tarihinden itibaren otuz yıl" },
+      { "label": "E", "text": "Kayıtlar hiçbir şekilde silinmez." }
+    ],
+    "explanation": "PVSK m.5: \"Sisteme kayıtlı olan parmak izi ve fotoğraflar, kişinin ölümünden itibaren ON YIL ve her halde kayıt tarihinden itibaren SEKSEN YIL geçtikten sonra sistemden silinir.\"",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.5",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 5",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "5",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, parmak izi kayıt sistemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Parmak izi, ait olduğu kişinin kimlik bilgileriyle birlikte, ne zaman ve kim tarafından alındığı belirtilmek suretiyle sisteme kaydedilir." },
+      { "label": "B", "text": "Parmak izinin hangi sebeple alındığı da sisteme kaydedilir.", "isCorrect": true },
+      { "label": "C", "text": "Olay yerinden elde edilen ve kime ait olduğu tespit edilemeyen parmak izleri, ilgili soruşturma dosya numarası ile birlikte sisteme kaydedilir." },
+      { "label": "D", "text": "Sistemde yer alan kayıtlar gizlidir ve kanunda belirlenen amaçlar dışında kullanılamaz." },
+      { "label": "E", "text": "Kolluk birimleri, kimlik tespiti yapmak amacıyla doğrudan bu sistemle bağlantı kurabilir." }
+    ],
+    "explanation": "PVSK m.5/2'nin son cümlesi açıktır: \"Ancak, parmak izinin HANGİ SEBEPLE ALINDIĞI SİSTEME KAYDEDİLMEZ.\" Bu, kişinin geçmişine ilişkin damgalanmayı önlemeye yönelik bir güvencedir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.5",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 5",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "2",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, amirinden aldığı emri kanuna aykırı gören polisin izleyeceği yol bakımından aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Emri yerine getirmez ve bu aykırılığı emri verene bildirir." },
+      { "label": "B", "text": "Amir emrinde ısrar eder ve emrini yazılı olarak yenilerse emir yerine getirilir." },
+      { "label": "C", "text": "Yazılı olarak yenilenen emri yerine getiren sorumlu olmaz." },
+      { "label": "D", "text": "Konusu suç teşkil eden emir, yazılı olarak yenilenirse yerine getirilir ve yerine getiren sorumlu olmaz.", "isCorrect": true },
+      { "label": "E", "text": "Konusu suç teşkil eden emri yerine getirenler sorumluluktan kurtulamaz." }
+    ],
+    "explanation": "PVSK m.2: \"Konusu suç teşkil eden emir HİÇBİR SURETLE yerine getirilmez. Yerine getirenler sorumluluktan kurtulamaz.\" Emrin yazılı olarak yenilenmesi kuralı yalnızca konusu suç teşkil etmeyen aykırılıklar için geçerlidir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.2",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "2",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, polisin genel emniyetle ilgili görevleri kaç kısma ayrılır ve bunlar hangileridir?",
+    "options": [
+      { "label": "A", "text": "İki kısım: önleyici görevler ve adli görevler", "isCorrect": true },
+      { "label": "B", "text": "İki kısım: idari görevler ve istihbarat görevleri" },
+      { "label": "C", "text": "Üç kısım: önleyici, adli ve istihbarat görevleri" },
+      { "label": "D", "text": "Üç kısım: idari, adli ve siyasi görevler" },
+      { "label": "E", "text": "Dört kısım: önleyici, adli, istihbarat ve trafik görevleri" }
+    ],
+    "explanation": "PVSK m.2: \"Polisin genel emniyetle ilgili görevleri iki kısımdır.\" (A) kanunlara, Cumhurbaşkanlığı kararnamelerine, yönetmeliklere, Hükümet emirlerine ve kamu düzenine uygun olmayan hareketlerin işlenmesinden ÖNCE önünü almak (önleyici görev); (B) işlenmiş bir suç hakkında mevzuatta yazılı görevleri yapmak (adli görev).",
+    "difficulty": "easy",
+    "sourceLabel": "Özgün soru · PVSK m.2",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "2",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'nda sayılan ve yetkili amir tarafından sözlü emir verilebilecek hâllerle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Bu emirlerin yazılı olarak verilmesi istenilemez ve emrin yerine getirilmesinden doğabilecek sorumluluk emri verene aittir.", "isCorrect": true },
+      { "label": "B", "text": "Bu emirlerin her hâlde yazılı olarak verilmesi istenebilir." },
+      { "label": "C", "text": "Sorumluluk emri yerine getirene aittir." },
+      { "label": "D", "text": "Bu emirler ancak mülki amir tarafından verilebilir." },
+      { "label": "E", "text": "Bu emirler yirmi dört saat içinde yazılı hale getirilmek zorundadır." }
+    ],
+    "explanation": "PVSK m.2'de sayılan hâllerde (can, ırz veya mal emniyetini korumak; kanunsuz toplantıları dağıtmak; afetlerde tedbir almak gibi) yetkili amir tarafından verilecek sözlü emirler derhal yerine getirilir. \"Bu emirlerin yazılı olarak verilmesi istenilemez. Bu hallerde emrin yerine getirilmesinden doğabilecek SORUMLULUK EMRİ VERENE AİTTİR.\"",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.2",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kaybolan çocukların bulunması amacıyla verilen tedbir kararının süresiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "En çok bir ay için verilebilir; bu süre bir defaya mahsus olmak üzere bir ay daha uzatılabilir.", "isCorrect": true },
+      { "label": "B", "text": "En çok iki ay için verilebilir; bu süre bir ay daha uzatılabilir." },
+      { "label": "C", "text": "En çok üç ay için verilebilir ve uzatılamaz." },
+      { "label": "D", "text": "En çok on beş gün için verilebilir ve uzatılamaz." },
+      { "label": "E", "text": "Süre öngörülmemiştir; çocuk bulununcaya kadar devam eder." }
+    ],
+    "explanation": "PVSK m.13/A: Kaybolan çocukların bulunması amacıyla banka hesap hareketlerinin talebi, iletişimin denetlenmesi ve sinyal bilgilerinin değerlendirilmesine ilişkin tedbir kararı EN ÇOK BİR AY için verilebilir; ancak bu süre BİR DEFAYA MAHSUS olmak üzere bir ay daha uzatılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.13/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "13/A",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, kayıp çocuğun bulunması amacıyla mülki idare amiri tarafından verilen karar bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Karar derhal mahkemenin onayına sunulur ve mahkeme kararını en geç yirmi dört saat içinde verir.", "isCorrect": true },
+      { "label": "B", "text": "Karar yirmi dört saat içinde mahkemenin onayına sunulur ve mahkeme kırk sekiz saat içinde karar verir." },
+      { "label": "C", "text": "Karar için mahkeme onayı aranmaz." },
+      { "label": "D", "text": "Karar yalnızca Cumhuriyet savcısının onayına sunulur." },
+      { "label": "E", "text": "Karar bir hafta içinde mahkemenin onayına sunulur." }
+    ],
+    "explanation": "PVSK m.13/A'nın son fıkrası: \"Mülki idare amirinin kararı, DERHAL mahkemenin onayına sunulur. Mahkeme kararını en geç YİRMİ DÖRT SAAT içinde verir.\"",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK m.13/A",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 13/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 1",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, umumî veya umuma açık yerlerde oyun ve temsil verilebilmesi ya da gösteri düzenlenebilmesi için mahallin en büyük mülkî amirine en az ne kadar süre önce bildirimde bulunulması gerekir?",
+    "options": [
+      { "label": "A", "text": "Yirmi dört saat" },
+      { "label": "B", "text": "Kırk sekiz saat", "isCorrect": true },
+      { "label": "C", "text": "Yedi gün" },
+      { "label": "D", "text": "On beş gün" },
+      { "label": "E", "text": "Bir ay" }
+    ],
+    "explanation": "PVSK Ek m.1: Umumî veya umuma açık yerler ile umuma açık yer niteliğindeki ulaşım araçlarında gerçek kişi veya topluluklar, mahallin en büyük mülkî amirine EN AZ KIRK SEKİZ SAAT ÖNCEDEN yazılı bildirimde bulunmak suretiyle oyun ve temsil verebilir veya gösteri düzenleyebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK Ek m.1",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 1",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "12",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, bar, pavyon, gazino ve meyhane gibi içkili yerlere on sekiz yaşını doldurmamış küçüklerin girmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yanlarında veli veya vasileri olsa bile polis bu kişilerin girmesini meneder.", "isCorrect": true },
+      { "label": "B", "text": "Yanlarında veli veya vasileri bulunması hâlinde girebilirler." },
+      { "label": "C", "text": "On altı yaşını doldurmuş olmaları hâlinde girebilirler." },
+      { "label": "D", "text": "İşletmecinin izniyle girebilirler." },
+      { "label": "E", "text": "Mülki amirin izniyle girebilirler." }
+    ],
+    "explanation": "PVSK m.12/2: \"Polis bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere YANLARINDA VELİ VE VASİLERİ OLSA BİLE onsekiz yaşını doldurmamış küçüklerin girmesini meneder.\" Ayrıca bu tür yerlerde on sekiz yaşından küçükler çalıştırılamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.12",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "8",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, polisçe kat'i delil elde edilmesi hâlinde kumar oynanan umuma açık yerleri geçici süreyle faaliyetten men etmeye yetkili merci ve azami süre aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "Mahallin en büyük mülkî amiri — otuz gün", "isCorrect": true },
+      { "label": "B", "text": "Cumhuriyet savcısı — otuz gün" },
+      { "label": "C", "text": "Sulh ceza hâkimi — altmış gün" },
+      { "label": "D", "text": "Belediye encümeni — on beş gün" },
+      { "label": "E", "text": "İl emniyet müdürü — yedi gün" }
+    ],
+    "explanation": "PVSK m.8: Maddede sayılan yerler MAHALLİN EN BÜYÜK MÜLKÎ AMİRİ tarafından OTUZ GÜNÜ GEÇMEMEK ÜZERE geçici süreyle faaliyetten men edilir. Bir yıl içinde üç defa faaliyetten men edilen işyerlerinde fiiller tekrar işlenirse ruhsat, mülkî amirin bildirimi üzerine belediye veya il özel idaresince beş iş günü içinde iptal edilir.",
+    "difficulty": "medium",
+    "sourceLabel": "Özgün soru · PVSK m.8",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  },
+  {
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "articleNo": "Ek 4",
+    "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, görevli bulunduğu mülki sınırlar içinde hizmet branşı, yeri ve zamanına bakılmaksızın bir suçla karşılaşan polise karşı işlenen suçlar nasıl nitelendirilir?",
+    "options": [
+      { "label": "A", "text": "Görevli memura karşı işlenmiş suç sayılır.", "isCorrect": true },
+      { "label": "B", "text": "Sıradan bir kişiye karşı işlenmiş suç sayılır." },
+      { "label": "C", "text": "Yalnızca polis mesai saatleri içindeyse görevli memura karşı işlenmiş sayılır." },
+      { "label": "D", "text": "Yalnızca polis üniformalıysa görevli memura karşı işlenmiş sayılır." },
+      { "label": "E", "text": "Suç niteliği mülki amirin takdirine bağlıdır." }
+    ],
+    "explanation": "PVSK Ek m.4: Polis, görevli bulunduğu mülki sınırlar içinde hizmet branşı, yeri ve zamanına bakılmaksızın bir suçla karşılaştığında el koymakla görevli ve yetkilidir. \"Bu madde hükmü gereğince bir suça müdahale eden polise karşı işlenen suçlar GÖREVLİ MEMURA KARŞI İŞLENMİŞ SUÇ; müdahalede bulunan polisin işlediği suçlar ise görevli memurun işlediği suç sayılır.\"",
+    "difficulty": "hard",
+    "sourceLabel": "Özgün soru · PVSK Ek m.4",
+    "citation": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu Ek md. 4",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  }
+]

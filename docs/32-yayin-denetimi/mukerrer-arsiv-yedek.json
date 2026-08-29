@@ -1,0 +1,51 @@
+[
+ {
+  "tutulanId": "51d91b91-061d-4cca-906c-3650e76d4a92",
+  "arsivlenen": {
+   "id": "97d9dfef-e76e-4b88-9c47-9336992cd9b3",
+   "questionId": "6f8afa47-a4e7-4517-956b-bb98a13ec8c3",
+   "stem": "Aşağıdakilerden hangisi Atatürk Dönemi gelişmeleri arasında yer almaz?",
+   "explanation": "- Aşar vergisi 17 Şubat 1925’te kaldırılmış,\n- İş Bankası 1924’te kurulmuş,\n- Teşvik-i Sanayi Kanunu 1927’de yürürlüğe konulmuş,\n- Emlak ve Eytam Bankası 1926’da kurulmuştur.\nE seçeneğinde yer alan Devlet Tiyatroları Genel Müdürlüğü ise 10 Haziran 1949’da kurulmuştur. Dolayısıyla bu kurum Atatürk Dönemi’nde değil, ismet İnönü Dönemi’nde kurulmuştur.",
+   "sourceLabel": null,
+   "contentHash": "4a6ef2dd61b03264a3283f6ebce8654ad3921e06825e78abdc7085940256ad51",
+   "createdAt": "2026-07-12T21:56:35.723Z",
+   "options": [
+    {
+     "id": "7e9e54a0-270d-441e-aac1-78edc22cf2a3",
+     "label": "A",
+     "text": "Aşar vergisinin kaldırılması",
+     "isCorrect": false
+    },
+    {
+     "id": "2976536e-96dd-4317-b064-f3bae7732862",
+     "label": "B",
+     "text": "İş Bankası’nın kurulması",
+     "isCorrect": false
+    },
+    {
+     "id": "6b95290a-78e3-4ea3-9819-37fa1cbb1b4a",
+     "label": "C",
+     "text": "Teşvik-i Sanayi Kanunu’nun çıkarılması",
+     "isCorrect": false
+    },
+    {
+     "id": "694e4181-de44-4b2c-87f2-796e580bab0a",
+     "label": "D",
+     "text": "Emlak ve Eytam Bankası’nın kurulması",
+     "isCorrect": false
+    },
+    {
+     "id": "230cadb7-de4f-4dd0-b649-699f4241d9c4",
+     "label": "E",
+     "text": "Devlet Tiyatroları Genel Müdürlüğü’nün kurul ması",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "topic": {
+     "name": "Genel Kültür"
+    }
+   }
+  }
+ }
+]

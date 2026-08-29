@@ -1,0 +1,155 @@
+[
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"7",
+    "stem":"5237 sayılı TCK'nın zaman bakımından uygulanmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options":[
+      {"label":"A","text":"İşlendiği zaman yürürlükte bulunan kanuna göre suç sayılmayan bir fiilden dolayı kimseye ceza verilemez."},
+      {"label":"B","text":"Sonradan yürürlüğe giren kanun failin lehine ise uygulanır ve infaz olunur."},
+      {"label":"C","text":"Suç tarihindeki kanun ile sonradan yürürlüğe giren kanunun hükümleri farklıysa lehe olan kanun belirlenir."},
+      {"label":"D","text":"Geçici kanunların, yürürlükte bulundukları sırada işlenen suçlar hakkında uygulanmasına devam edilir."},
+      {"label":"E","text":"Süreli kanun, yürürlükten kalktıktan sonra o kanunun yürürlükte olduğu sırada işlenen suçlara uygulanmaz.","isCorrect":true}
+    ],
+    "explanation":"TCK m.7/4 uyarınca geçici veya süreli kanunların, YÜRÜRLÜKTE BULUNDUKLARI SÜRE İÇİNDE işlenmiş suçlar hakkında uygulanmasına devam edilir.",
+    "difficulty":"medium",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 7",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"8",
+    "stem":"Aşağıdaki suçlardan hangisi 5237 sayılı TCK'ya göre Türkiye'de işlenmiş sayılmaz?",
+    "options":[
+      {"label":"A","text":"Japon karasularında bulunan Türk savaş gemisinde işlenen suç"},
+      {"label":"B","text":"Türkiye'nin münhasır ekonomik bölgesinde bulunan Libya bayraklı ticaret gemisinde işlenen suç","isCorrect":true},
+      {"label":"C","text":"Türk hava sahasında işlenen suç"},
+      {"label":"D","text":"İtalya hava sahasında bulunan Türk savaş uçağında işlenen suç"},
+      {"label":"E","text":"Türk karasularında bulunan Panama bayraklı yük gemisinde işlenen suç"}
+    ],
+    "explanation":"Münhasır ekonomik bölgede işlenen her suç Türkiye'de işlenmiş sayılmaz. Bu bölgedeki uygulama, TESİS EDİLMİŞ SABİT PLATFORMLARDA veya bunlara karşı işlenen suçlarla sınırlıdır. Yabancı bayraklı ticaret gemisi bu kapsamda değildir.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"7",
+    "stem":"İnfaz rejimine ilişkin kanunların zaman bakımından uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options":[
+      {"label":"A","text":"Kural olarak derhal uygulama ilkesi geçerlidir."},
+      {"label":"B","text":"Hapis cezasının ertelenmesine ilişkin hükümler derhal uygulama kuralının dışındadır."},
+      {"label":"C","text":"Koşullu salıverilmeye ilişkin hükümler derhal uygulama kuralının dışındadır."},
+      {"label":"D","text":"Tekerrürle ilgili hükümler bakımından lehe kanun değerlendirmesi yapılır."},
+      {"label":"E","text":"Tekerrürle ilgili hükümler her durumda derhal uygulanır.","isCorrect":true}
+    ],
+    "explanation":"İnfaz rejimine ilişkin hükümler kural olarak derhal uygulanır; ancak HAPİS CEZASININ ERTELENMESİ, KOŞULLU SALIVERİLME ve TEKERRÜR ile ilgili hükümler bu kuralın dışındadır.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 7/3",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"8",
+    "stem":"5237 sayılı TCK'nın yer bakımından uygulanmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options":[
+      {"label":"A","text":"Hareketin kısmen Türkiye'de yapılması hâlinde suç Türkiye'de işlenmiş sayılır."},
+      {"label":"B","text":"Neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır."},
+      {"label":"C","text":"Türkiye Cumhuriyeti konsolosluk temsilciliklerinde işlenen her suç Türkiye'de işlenmiş sayılır.","isCorrect":true},
+      {"label":"D","text":"Türk deniz ve hava savaş araçlarında işlenen suçlar, bu araçların bulunduğu yere bakılmaksızın Türkiye'de işlenmiş sayılır."},
+      {"label":"E","text":"Türkiye'nin münhasır ekonomik bölgesindeki sabit platformlarda işlenen suçlar Türkiye'de işlenmiş sayılır."}
+    ],
+    "explanation":"TCK m.8, konsolosluk binalarını Türkiye ülkesi sayan bir hüküm içermez. Konsolosluk temsilciliklerinde işlenen her suç, sırf bu nedenle Türkiye'de işlenmiş kabul edilemez.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"11",
+    "stem":"İtalya'da yaşayan Türk vatandaşı (F), yine Türk vatandaşı olan (M)'yi İtalya'da öldürüp Türkiye'ye gelmiştir. Olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options":[
+      {"label":"A","text":"Türkiye'de yargılama yapılabilmesi için fiilin Türk kanunlarına göre alt sınırı bir yıldan az olmayan hapis cezasını gerektirmesi gerekir."},
+      {"label":"B","text":"Türkiye'de kovuşturulabilirliğin bulunması gerekir."},
+      {"label":"C","text":"Failin Türkiye'de bulunması gerekir."},
+      {"label":"D","text":"Suç hakkında yabancı ülkede hüküm verilmemiş olması gerekir."},
+      {"label":"E","text":"Yargılama yapılabilmesi için her durumda mağdurun yakınlarının veya yabancı hükûmetin şikâyeti gerekir.","isCorrect":true}
+    ],
+    "explanation":"TCK m.11/1 kapsamındaki, alt sınırı bir yıldan az olmayan hapis cezasını gerektiren suçlarda şikâyet koşulu aranmaz. Şikâyet, m.11/2'de düzenlenen DAHA AZ CEZAYI gerektiren suçlar bakımından söz konusudur.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 11",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"8",
+    "stem":"Ceza kanununun yer bakımından uygulanmasında faile göre kişisellik ilkesi aşağıdakilerden hangisini ifade eder?",
+    "options":[
+      {"label":"A","text":"Yabancı ülkede suç işleyen kişiye, vatandaşı olduğu devletin kanununun uygulanmasını","isCorrect":true},
+      {"label":"B","text":"Yabancı ülkede işlenen suça suçun işlendiği yer kanununun uygulanmasını"},
+      {"label":"C","text":"Devletin yurt dışında kendi varlığına karşı işlenen suçları cezalandırmasını"},
+      {"label":"D","text":"Suçun faili veya mağduru dikkate alınmadan belirli suçların kovuşturulmasını"},
+      {"label":"E","text":"Yabancı ülkede vatandaşa karşı işlenen suça mağdurun vatandaşı olduğu devletin kanununun uygulanmasını"}
+    ],
+    "explanation":"Faile göre kişisellik ilkesi, failin VATANDAŞLIĞI esas alınarak kendi devletinin ceza kanununun uygulanmasını ifade eder. Mağdurun vatandaşlığına dayanan ilke ise mağdura göre kişiselliktir.",
+    "difficulty":"medium",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 11",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"2",
+    "stem":"Bir maddenin yurt dışına izinsiz gönderilmesi kanunda suç olarak düzenlenmiş; ancak aynı maddenin yurt dışına izinsiz çıkarılmaya çalışılması açıkça suç sayılmamıştır. Teşebbüs aşamasındaki fiilin tamamlanmış suç hükmüne dayanılarak cezalandırılması öncelikle hangi ilkeye aykırıdır?",
+    "options":[
+      {"label":"A","text":"Aleyhe kanunun geçmişe yürümezliği"},
+      {"label":"B","text":"Şüpheden sanık yararlanır"},
+      {"label":"C","text":"Kıyas yasağı","isCorrect":true},
+      {"label":"D","text":"Son sözün sanığa verilmesi"},
+      {"label":"E","text":"Cezaların şahsiliği"}
+    ],
+    "explanation":"Kanunda suç olarak tanımlanmayan bir fiil, benzer bir suç hükmü kıyas yoluyla genişletilerek cezalandırılamaz. Suç ve ceza içeren hükümler KIYASA YOL AÇACAK BİÇİMDE geniş yorumlanamaz.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 2/3",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"8, 9",
+    "stem":"İzmir'de bir kişinin yemeğine öldürme kastıyla zehir koyan fail, mağdur Hollanda'ya döndükten sonra neticenin gerçekleşmesi üzerine Hollanda'da yargılanmıştır. 5237 sayılı TCK'ya göre aşağıdakilerden hangisi doğrudur?",
+    "options":[
+      {"label":"A","text":"Netice Hollanda'da gerçekleştiği için Türk mahkemelerinin yargılama yetkisi yoktur."},
+      {"label":"B","text":"Suç yalnız Hollanda'da işlenmiş sayılır."},
+      {"label":"C","text":"Hollanda mahkemesinin hüküm vermesi, failin Türkiye'de yeniden yargılanmasına engel olmaz.","isCorrect":true},
+      {"label":"D","text":"Hollanda mahkemesinin beraat kararı vermesi hâlinde Türkiye'de yargılama yapılamaz."},
+      {"label":"E","text":"Türkiye'de verilebilecek ceza Hollanda kanunundaki cezanın üst sınırını aşamaz."}
+    ],
+    "explanation":"Hareket Türkiye'de gerçekleştirildiği için suç Türkiye'de işlenmiş sayılır. Türkiye'de işlenen suçtan dolayı yabancı ülkede hüküm verilmiş olması, kişinin Türkiye'de YENİDEN YARGILANMASINA engel değildir.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 8/1 ve 9",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo":"12",
+    "stem":"Yabancı ülkede bulunan bir yabancı, Türk kamu görevlisine resmî bir belgeyi usulsüz düzenlemesi için rüşvet teklif etmiş ve daha sonra Türkiye'ye gelmiştir. Bu kişi hakkında Türkiye'de soruşturma ve kovuşturma yapılmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "options":[
+      {"label":"A","text":"Türkiye'de soruşturma ve kovuşturma yapılamaz."},
+      {"label":"B","text":"Soruşturma yapılabilir ancak kovuşturma yapılamaz."},
+      {"label":"C","text":"Yargılama yapılması Adalet Bakanının istemine bağlıdır."},
+      {"label":"D","text":"Yargılama yapılması yabancı hükûmetin resmî şikâyetine bağlıdır."},
+      {"label":"E","text":"Adalet Bakanının istemi aranmaksızın resen soruşturma ve kovuşturma yapılır.","isCorrect":true}
+    ],
+    "explanation":"Yabancının yabancı ülkede Türkiye'nin zararına işlediği suçlarda kural olarak Adalet Bakanının istemi aranır. Ancak TCK m.12/5 uyarınca RÜŞVET ve NÜFUZ TİCARETİ suçlarında bu istem şart değildir.",
+    "difficulty":"hard",
+    "sourceLabel":"THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI",
+    "citation":"5237 sayılı Türk Ceza Kanunu md. 12/1 ve 12/5",
+    "citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

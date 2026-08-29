@@ -1,0 +1,150 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "3",
+    "stem": "TBMM İçtüzüğü'ne göre TBMM Genel Kurulu, milletvekili genel seçimi kesin sonuçlarının Yüksek Seçim Kurulunca ilanından sonra ilk toplantısını ne zaman yapar?",
+    "options": [
+      { "label": "A", "text": "İlanı izleyen ikinci gün saat 15.00'te" },
+      { "label": "B", "text": "İlanı izleyen üçüncü gün saat 14.00'te", "isCorrect": true },
+      { "label": "C", "text": "İlanı izleyen beşinci gün saat 15.00'te" },
+      { "label": "D", "text": "İlanı izleyen beşinci gün saat 09.00'da" },
+      { "label": "E", "text": "İlanı izleyen yedinci gün saat 16.00'da" }
+    ],
+    "explanation": "TBMM İçtüzüğü m.3'e göre Genel Kurul, kesin seçim sonuçlarının YSK tarafından ilanını takip eden ÜÇÜNCÜ GÜN SAAT 14.00'TE çağrısız olarak toplanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 3",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "5",
+    "stem": "TBMM İçtüzüğü'ne göre aksi yönde karar alınmadıkça TBMM hangi tarihte tatile girer?",
+    "options": [
+      { "label": "A", "text": "1 Haziran" },
+      { "label": "B", "text": "20 Haziran" },
+      { "label": "C", "text": "30 Haziran" },
+      { "label": "D", "text": "1 Temmuz", "isCorrect": true },
+      { "label": "E", "text": "1 Ağustos" }
+    ],
+    "explanation": "İçtüzük m.5'e göre Danışma Kurulunun önerisi üzerine Genel Kurulca başka bir karar alınmadıkça TBMM 1 TEMMUZ günü tatile girer. Bir yasama yılında üç aydan fazla tatil yapılamaz.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 5",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "7",
+    "stem": "TBMM tatilde veya ara vermedeyken üyelerin beşte birinin imzasını taşıyan gerekçeli toplantı çağrısı istemi, TBMM Başkanı tarafından en geç kaç gün içinde yerine getirilir?",
+    "options": [
+      { "label": "A", "text": "3 gün" },
+      { "label": "B", "text": "5 gün" },
+      { "label": "C", "text": "7 gün", "isCorrect": true },
+      { "label": "D", "text": "10 gün" },
+      { "label": "E", "text": "15 gün" }
+    ],
+    "explanation": "İçtüzük m.7'ye göre TBMM Başkanı, üyelerin beşte birinin imzasını taşıyan gerekçeli önergedeki çağrı istemini EN GEÇ YEDİ GÜN içinde yerine getirir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 7",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "9",
+    "stem": "TBMM İçtüzüğü'ne göre TBMM Başkanlık Divanında kaç kâtip üye bulunur?",
+    "options": [
+      { "label": "A", "text": "2" },
+      { "label": "B", "text": "3" },
+      { "label": "C", "text": "6" },
+      { "label": "D", "text": "7", "isCorrect": true },
+      { "label": "E", "text": "8" }
+    ],
+    "explanation": "İçtüzük m.9'a göre Başkanlık Divanı bir Başkan, dört başkanvekili, YEDİ KÂTİP ÜYE ve üç idare amirinden oluşur. Genel Kurul gerektiğinde kâtip üye veya idare amiri sayısını artırabilir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 9",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi TBMM Başkanlık Divanı üyelerinin görevlerinden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Yoklama yapmak" },
+      { "label": "B", "text": "Oyları saymak" },
+      { "label": "C", "text": "Seçimlerin dürüstlük içinde geçmesini denetlemek" },
+      { "label": "D", "text": "Tutanakların tutulmasını denetlemek" },
+      { "label": "E", "text": "Genel ve özel giriş kartlarını dağıtmak", "isCorrect": true }
+    ],
+    "explanation": "Yoklama, oyların sayılması, seçimlerin düzen içinde yürütülmesi ve tutanakların denetlenmesi Başkanlık Divanı kapsamındaki görevlerdendir. Genel ve özel giriş kartlarının dağıtılması ise Meclis idare amirlerinin görev alanındadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 14-17",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "TBMM İçtüzüğü'ne göre görüşmeye tabi tezkerelerin oylanması ile kanunların maddelerine geçilmesi ve tümünün oylanması sırasında, işaretle oylamaya geçilirken en az kaç milletvekili ayağa kalkarak veya önerge vererek yoklama isteyebilir?",
+    "options": [
+      { "label": "A", "text": "10" },
+      { "label": "B", "text": "15" },
+      { "label": "C", "text": "20", "isCorrect": true },
+      { "label": "D", "text": "25" },
+      { "label": "E", "text": "30" }
+    ],
+    "explanation": "İçtüzük m.57'ye göre belirtilen oylamalar sırasında işaretle oylamaya geçilirken EN AZ YİRMİ milletvekili ayağa kalkmak veya önerge vermek suretiyle yoklama yapılmasını isteyebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 57",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "TBMM İçtüzüğü'ne göre genel görüşmeyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Siyasi parti grupları veya en az yirmi milletvekili tarafından istenebilir." },
+      { "label": "B", "text": "Önerge beş yüz kelimeden fazlaysa beş yüz kelimeyi geçmeyen bir özeti eklenir." },
+      { "label": "C", "text": "Açılıp açılmamasına Genel Kurul karar verir." },
+      { "label": "D", "text": "Açılıp açılmamasına gizli oyla karar verilir.", "isCorrect": true },
+      { "label": "E", "text": "Toplumu ve devlet faaliyetlerini ilgilendiren belli bir konu hakkında yapılır." }
+    ],
+    "explanation": "Genel görüşmenin açılıp açılmamasına Genel Kurul İŞARET OYUYLA karar verir; gizli oy kullanılmaz. Genel görüşme siyasi parti grupları veya en az yirmi milletvekili tarafından istenebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 102-103",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "TBMM İçtüzüğü'ne göre Meclis Araştırma Komisyonu araştırmasını kural olarak hangi süre içinde bitirmek zorundadır?",
+    "options": [
+      { "label": "A", "text": "1 ay" },
+      { "label": "B", "text": "2 ay" },
+      { "label": "C", "text": "3 ay", "isCorrect": true },
+      { "label": "D", "text": "4 ay" },
+      { "label": "E", "text": "1 yıl" }
+    ],
+    "explanation": "İçtüzük m.105'e göre Meclis Araştırma Komisyonu araştırmasını ÜÇ AY içinde bitirir. Bu sürede tamamlayamazsa komisyona bir aylık kesin süre verilir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 105",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "TBMM İçtüzüğü'ne göre Meclis Araştırma Komisyonuna, araştırmasını süresi içinde bitirememesi hâlinde verilebilecek ek süre ne kadardır?",
+    "options": [
+      { "label": "A", "text": "1 ay", "isCorrect": true },
+      { "label": "B", "text": "2 ay" },
+      { "label": "C", "text": "3 ay" },
+      { "label": "D", "text": "4 ay" },
+      { "label": "E", "text": "1 yıl" }
+    ],
+    "explanation": "İçtüzük m.105'e göre üç aylık sürede araştırmasını tamamlayamayan komisyona BİR AYLIK kesin süre verilir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "TBMM İçtüzüğü md. 105",
+    "citationUrl": "https://www.tbmm.gov.tr/anayasa/yetmis-uc-ictuzuk"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "I. Mal veya hizmet satımları\nII. Trampa\nIII. Mal veya hizmet alımları\nIV. Yapım işleri\nYukarıdakilerden hangileri Kanun'da belirtilen idareler tarafından yapılması hâlinde 4734 sayılı Kamu İhale Kanunu kapsamındadır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "III ve IV", "isCorrect": true },
+      { "label": "D", "text": "I, II ve III" },
+      { "label": "E", "text": "II, III ve IV" }
+    ],
+    "explanation": "İhale mevzuatında ikili bir ayrım vardır ve ölçüt, işlemin idareye GELİR mi getirdiği yoksa HARCAMA mı gerektirdiğidir. KAMUYA GELİR SAĞLAMAYA yönelik işlemlerde — satım, kiraya verme, TRAMPA ve mülkiyetin gayri ayni hak tesisi — 2886 SAYILI DEVLET İHALE KANUNU uygulanır. Buna karşılık idarenin HARCAMA YAPMASINI gerektiren MAL VE HİZMET ALIMLARI İLE YAPIM İŞLERİNDE 4734 SAYILI KAMU İHALE KANUNU uygulanır. Bu nedenle doğru cevap III ve IV'tür.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "4734 sayılı Kamu İhale Kanunu md. 2, 4; 2886 sayılı Devlet İhale Kanunu md. 1",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.4734.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Ticaret Bakanlığında memur olarak çalışan M vefat ediyor. Vefatından sonraki bir tarihte Bakanlıkça hakkında emeklilik işlemi tesis ediliyor.\nBu bilgiler kapsamında emeklilik işleminin hangi unsurunda hukuka aykırılık bulunmaktadır?",
+    "options": [
+      { "label": "A", "text": "Yetki" },
+      { "label": "B", "text": "Şekil" },
+      { "label": "C", "text": "Sebep" },
+      { "label": "D", "text": "Amaç" },
+      { "label": "E", "text": "Konu", "isCorrect": true }
+    ],
+    "explanation": "İdari işlemin KONU unsuru, o işlemin hukuk âleminde meydana getirdiği DEĞİŞİKLİK, yani hukuki sonuçtur; konu aynı zamanda işlemin içeriği, kapsamı veya üzerinde gerçekleştiği şeydir. Bir idari işlemin veya kararın KONUSU İMKÂNSIZ ise ya da konusu hukuken meşru değilse, işlem KONU ÖĞESİ YÖNÜNDEN hukuka aykırı olur. Olayda M vefat etmiş olduğundan artık emekliye sevk edilmesi hukuken imkânsızdır; bu nedenle sakatlık konu unsurundadır. Bu tip sorularda öğrenciler doğrudan yetki unsuruna yönelme eğilimindedir; oysa işlemi yapan makam (Bakanlık) yetkilidir, sorun işlemin doğurduğu sonucun imkânsızlığındadır.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "İdare Hukuku – İdari İşlemin Unsurları",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Gazi Üniversitesi Senatosu tarafından kabul edilen Gazi Üniversitesi Lisansüstü Eğitim ve Öğretim Yönergesi, Resmî Gazete'de yayımlanarak yürürlüğe giriyor.\nBu Yönerge, idari işlemlerin açıklanan iradenin sayısı ve açıklanma usulü açısından tasnifine göre aşağıdakilerden hangisiyle ifade edilir?",
+    "options": [
+      { "label": "A", "text": "Şart işlem" },
+      { "label": "B", "text": "Zımni işlem" },
+      { "label": "C", "text": "Kolektif işlem", "isCorrect": true },
+      { "label": "D", "text": "Sübjektif işlem" },
+      { "label": "E", "text": "Basit işlem" }
+    ],
+    "explanation": "İşlemi yapan İRADE SAYISINA göre idari işlemler üçe ayrılır. BASİT İŞLEMLER, oluşması için tek bir idari merciin iradesini açıklamasının yeterli olduğu işlemlerdir (öğretmenin not vermesi, disiplin amirinin astına uyarma cezası vermesi gibi). KOLEKTİF İŞLEMLER, birden fazla iradenin AYNI ANDA VE AYNI YÖNDE açıklanmasıyla meydana gelen işlemlerdir; il genel meclisi, belediye meclisi veya encümeni kararları ile disiplin kurulu kararları ve RTÜK, Rekabet Kurumu gibi üst kurulların verdiği cezalar bu niteliktedir. KARMA İŞLEMLER ise aynı yönde ve aynı amaca yönelik birden fazla iradenin BELLİ BİR SIRA İZLENEREK açıklanmasıyla oluşur (adaylığı biten memurun disiplin amirinin teklifi üzerine atamaya yetkili amirin onayıyla asil memur olarak atanması gibi). Olayda karar SENATO yani bir kurul tarafından alındığından işlem KOLEKTİF İŞLEMDİR.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "İdare Hukuku – İdari İşlemlerin Tasnifi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "• Cumhurbaşkanı kararıyla bir ilçenin adının değiştirilmesi\n• Yükseköğretim Kurulu kararıyla yeni bir üniversite kurulması\nBu hukuki işlemler aşağıdaki idare hukuku kavramlarından hangisinin örneklerini teşkil eder?",
+    "options": [
+      { "label": "A", "text": "Yetki tecavüzü" },
+      { "label": "B", "text": "Usul saptırması" },
+      { "label": "C", "text": "Fiili yol" },
+      { "label": "D", "text": "Fonksiyon gasbı", "isCorrect": true },
+      { "label": "E", "text": "Yetki gasbı" }
+    ],
+    "explanation": "FONKSİYON (GÖREV) GASBI, devletin temel organları olan YASAMA, YÜRÜTME VE YARGININ birbirlerinin görev alanına giren bir konuda işlem yapmasıdır ve YOKLUK yaptırımına yol açar. İl ve ilçe kurulması, adlarının değiştirilmesi ile üniversite kurulması ANAYASA VE KANUNLA yapılması gereken, yani YASAMA fonksiyonuna ait işlerdir. Somut örneklerde idare (Cumhurbaşkanı ve YÖK), yasamanın yerine geçerek idari işlem tesis etmiştir; dolayısıyla fonksiyon gasbı vardır ve bu işlemler YOK HÜKMÜNDEDİR. Buna karşılık YETKİ TECAVÜZÜ, idare adına irade açıklamaya yetkili bir makamın BAŞKA BİR İDARİ MAKAMIN görevine giren konuda işlem yapmasıdır ve iptal edilebilirlik yaptırımına tabidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsurunda Sakatlıklar",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Doğrudan doğruya idare edilenlere yöneltmeksizin, idarenin kendi kuruluş ve işleyişi kapsamında hiyerarşi yetkisinin tezahürü olarak aldığı tedbir ve yaptığı işlemler olup bu sebeple de icrai kabul edilmeyen işlem kategorisi aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Genel karar" },
+      { "label": "B", "text": "Subjektif işlem" },
+      { "label": "C", "text": "Hükümet tasarrufu" },
+      { "label": "D", "text": "İç düzen işlemi", "isCorrect": true },
+      { "label": "E", "text": "Zımni işlem" }
+    ],
+    "explanation": "İdari işlemin İCRAİLİK özelliği, işlemin başka bir işlemin varlığına gerek olmaksızın üçüncü kişiler üzerinde tek taraflı olarak doğrudan hukuki sonuç doğurmasıdır. İdarenin bazı işlemleri hukuki sonuç doğurmadığı için icrai değildir: ÖN İŞLEMLER veya HAZIRLIK İŞLEMLERİ (tutanaklar, görüşler, teklifler, bilgi istemeler, değerlendirmeler, incelemeler), TEYİT EDİCİ İŞLEMLER, İÇ DÜZEN İŞLEMLERİ (sirkülerler, direktifler, hizmet içi tedbirler) ve İNFORMEL İŞLEMLER (uyarılar, duyurular, bilgilendirmeler, dilekler, basın açıklamaları). İÇ DÜZEN İŞLEMLERİ, idarenin kuruluşu, içyapısı, iç işleyişi ve hizmetin verimliliğine ilişkin olarak hiyerarşi yetkisiyle aldığı tedbirlerdir; idare edilenlere yönelmediği için icrai değildir ve kural olarak iptal davasına konu olmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 KPSS",
+    "citation": "İdare Hukuku – İdari İşlemin İcrailiği",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Memur M'ye disiplin amirince salt kişisel husumet güdülerek disiplin cezası veriliyor.\nBu idari işlemin hangi unsuru bakımından hukuka aykırılık bulunmaktadır?",
+    "options": [
+      { "label": "A", "text": "Amaç", "isCorrect": true },
+      { "label": "B", "text": "Yetki" },
+      { "label": "C", "text": "Şekil" },
+      { "label": "D", "text": "Sebep" },
+      { "label": "E", "text": "Konu" }
+    ],
+    "explanation": "İdari işlem ve kararların temel ve genel maksadı (amacı), kanunda açıkça gösterilmiş olsun ya da olmasın KAMU YARARININ SAĞLANMASIDIR; buna ek olarak kanunlarda daha özel ve somut amaçlar da öngörülmüş olabilir. İdari kararın alınmasında KİŞİSEL AMAÇ VEYA KİŞİSEL HUSUMET güdülmüşse ya da dinsel, ırksal, siyasal düşüncelerle hareket edilmişse, o karar MAKSAT (AMAÇ) ÖĞESİ yönünden hukuka aykırıdır. Maksat açısından hukuka aykırılığa idare hukukunda YETKİ SAPTIRMASI adı verilir; kanunda öngörülen idari usulün başka bir amaç için kullanılması ise bunun alt türü olan USUL SAPTIRMASIDIR.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 KPSS",
+    "citation": "İdare Hukuku – İdari İşlemin Amaç Unsuru",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Daha önce hiç disiplin cezası almamış memur Ada'ya, özürsüz ve izinsiz olarak bir ay içinde 2 gün göreve geç geldiği gerekçesiyle kademe ilerlemesinin durdurulması cezası veriliyor. Ada, bu cezaya karşı iptal davası açıyor. Mahkeme, işlenen fiilin karşılığı 657 sayılı Devlet Memurları Kanunu'nun ilgili hükümleri uyarınca uyarma cezası iken davacıya kademe ilerlemesinin durdurulması cezası verilmesini hukuka aykırı bularak cezayı iptal ediyor.\nMahkeme tarafından verilen bu kararın gerekçesi, Ada hakkında tesis edilen idari işlemin hangi yönden hukuka aykırı bulunduğunu gösterir?",
+    "options": [
+      { "label": "A", "text": "Yetki" },
+      { "label": "B", "text": "Şekil" },
+      { "label": "C", "text": "Sebep" },
+      { "label": "D", "text": "Konu", "isCorrect": true },
+      { "label": "E", "text": "Amaç" }
+    ],
+    "explanation": "Bir idari işlemin KANUNDA ÖNGÖRÜLEN SEBEBİ GERÇEKLEŞMİŞ OLMASINA RAĞMEN, kanunda öngörülen hukuki sonuçtan BAŞKA BİR HUKUKİ SONUÇ DOĞURAN işlem yapılması durumunda, bu işlem KONU ÖĞESİ yönünden hukuka aykırı olur. Olayda memurun fiili sabittir (sebep gerçekleşmiştir), ancak kanunun bu fiile bağladığı yaptırım uyarma iken kademe ilerlemesinin durdurulması cezası verilmiştir; dolayısıyla sakatlık, işlemin doğurduğu sonuçta yani KONU unsurundadır. Konu unsurundaki diğer sakatlık hâlleri: konunun imkânsız veya hukuken meşru olmaması, belli statülerdeki kişilere uygulanabilecek hükümlerin başka statüdekilere uygulanması ve hukuka uygun bir idari işlemin geri alınmasıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "657 sayılı Devlet Memurları Kanunu md. 125; İdare Hukuku – Konu Unsuru",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.657.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "I. Hâkimler ve Savcılar Kurulunun Cumhuriyet savcısı A aleyhine verdiği meslekten çıkarma cezası kararı\nII. Osmaniye Sulh Ceza Hâkimliğinin verdiği, idari yaptırım kararının kaldırılması kararı\nIII. TBMM Başkanlığının yasama uzmanı B aleyhine verdiği kınama cezası kararı\nYukarıdakilerden hangileri idari yargıda iptal davasına konu olabilecek idari işlem niteliğindedir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve III", "isCorrect": true },
+      { "label": "E", "text": "II ve III" }
+    ],
+    "explanation": "Yasama ve yargı fonksiyonları ile yürütme organının SİYASİ NİTELİKLİ faaliyetleri dışında, devletin toplumun günlük gereksinimlerini karşılamak amacıyla yürüttüğü faaliyetler İDARİ FONKSİYON olarak kabul edilir. II'deki SULH CEZA HÂKİMLİĞİ KARARI bir uyuşmazlığı çözdüğü için YARGISAL fonksiyona dâhildir, idari işlem değildir. Buna karşılık HSK'nın meslekten çıkarma kararı yargısal değil İDARİ bir işlemdir; nitekim HSK Kanunu m.33 uyarınca meslekten çıkarma cezasına ilişkin kesinleşmiş kararlara karşı açılan iptal davaları ilk derece mahkemesi olarak DANIŞTAY'DA görülür. TBMM Başkanlığının kendi personeline disiplin cezası vermesi de yasama değil idari fonksiyona dâhildir; TBMM'nin memurlarına ceza vermesi, görev yerlerini değiştirmesi veya ihale ile mal ve hizmet alması bu niteliktedir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "6087 sayılı HSK Kanunu md. 33; 2577 sayılı İYUK md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Aile ve Sosyal Politikalar Bakanlığında memur C'nin mevzuat gereği disiplin amiri konumunda olan daire başkanı A'nın, 10 gün süreli almış olduğu sağlık raporuyla hastalık iznine ayrılması nedeniyle yerine başka bir daire başkanı B görevlendiriliyor. Mazeretsiz ve izinsiz görev yerini terk ettiği gerekçesiyle bu 10 günlük süre içinde A tarafından C'ye uyarma cezası veriliyor.\nBu uyarma cezası işleminin hangi unsurunda sakatlık bulunmaktadır?",
+    "options": [
+      { "label": "A", "text": "Şekil" },
+      { "label": "B", "text": "Yetki", "isCorrect": true },
+      { "label": "C", "text": "Amaç" },
+      { "label": "D", "text": "Konu" },
+      { "label": "E", "text": "Sebep" }
+    ],
+    "explanation": "Bazı idari organ ve makamların Anayasa ve kanunların tanıdığı karar alma ve işlem yapma gücüne idare hukukunda YETKİ adı verilir. Yetki unsurunda KİŞİ, KONU, YER ve ZAMAN yönünden hukuka aykırılıklar ortaya çıkabilir. Yetkinin KANUNDA BELİRLENEN ZAMANLARDA KULLANILMASI gerekir; kural olarak bu zaman mesai saatleridir. Yetkili bir amirin işlem yapma yetkisini mesai saatleri dışında, hafta sonu veya bayram tatillerinde ya da YILLIK/HASTALIK İZİNLERİNDE kullanması işlemi ZAMAN AÇISINDAN YETKİSİZ kılar. Olayda A hastalık izninde olduğu ve yerine B görevlendirildiği hâlde ceza vermiştir; sakatlık yetki unsurundadır.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsuru",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Hazine ve Maliye Bakanlığı, daha önce Resmî Gazete'de yayımlanarak yürürlüğe koyduğu bir yönetmeliğin \"Amaç ve Kapsam\" başlıklı birinci maddesini, maddenin yeni hâlini yalnızca Bakanlığın resmî internet sitesinde yayımlamak suretiyle değiştiriyor. Bu değişiklik aleyhine açılan davada Danıştay, \"aksi kanunda öngörülmediği sürece Resmî Gazete'de yayımlanarak yürürlüğe konmuş bir yönetmeliğin ancak Resmî Gazete'de yayımlanmak suretiyle değiştirilebileceği\" gerekçesiyle iptal kararı veriyor.\nDanıştay'ın iptal kararının gerekçesinde vurgulanan idare hukuku ilkesi aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Şekilde paralellik", "isCorrect": true },
+      { "label": "B", "text": "İdarenin bütünlüğü" },
+      { "label": "C", "text": "Yetki genişliği" },
+      { "label": "D", "text": "Yerinden yönetim" },
+      { "label": "E", "text": "Sebep ikamesi" }
+    ],
+    "explanation": "İdare hukukunda içtihatlarla gelişen PARALELLİK İLKESİ iki görünüme sahiptir. YETKİDE PARALELLİK, bir idari işlemi yapmış veya idari kararı almış olan organ, aksine bir hüküm bulunmadıkça o idari işlemi veya kararı kaldırmaya, geri almaya ya da değiştirmeye de yetkilidir. ŞEKİLDE (VE USULDE) PARALELLİK ise bir idari işlem hangi şekil ve usulde yapılmışsa, aksine bir hüküm bulunmadıkça o idari işlem veya kararı kaldırmanın, geri almanın ya da değiştirmenin de AYNI ŞEKİL VE USULDE yapılması gerektiğini ifade eder. Bu nedenle Resmî Gazetede yayımlanarak yürürlüğe giren bir yönetmelik yine Resmî Gazetede yayımlanarak değiştirilmelidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Paralellik İlkesi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Belediye yararına yapılacak bir kamulaştırmada kamu yararı kararı, belediye encümeni yerine bu konuda yetkili olmayan belediye meclisi tarafından alınıyor.\nBu durumda ortaya çıkan sakatlık aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Yetki tecavüzü", "isCorrect": true },
+      { "label": "B", "text": "Fonksiyon gasbı" },
+      { "label": "C", "text": "Yetki gasbı" },
+      { "label": "D", "text": "Ağır ve bariz yetki tecavüzü" },
+      { "label": "E", "text": "Özel hukuka ait yetkinin gasbı" }
+    ],
+    "explanation": "İdare adına işlem yapma yetkisi olan bir idari makamın, DİĞER İDARİ MAKAMIN yerine işlem yapması hâli YETKİ TECAVÜZÜ olarak adlandırılır ve iptal edilebilirlik yaptırımına tabidir. Olayda hem belediye meclisi hem de belediye encümeni AYNI TÜZEL KİŞİLİK (belediye) içinde yer aldığından ve meclis, encümenin yerine karar aldığından yetki tecavüzü söz konusudur. Buna karşılık AĞIR VE BARİZ YETKİ TECAVÜZÜ, idari işbölümü esaslarına TAMAMEN AYKIRI bir biçimde alınan kararlarda (örneğin bir bakanlıkta çalışan memurun başka bir bakanlıkça atanması) ortaya çıkar ve YOKLUK yaptırımına tabidir. YETKİ GASBI ise idareye tamamen yabancı bir kişinin işlem yapmasıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsurunda Sakatlıklar",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Türk idare hukukuna göre idarenin sözleşmeleriyle ilgili\nI. Taraflarından en az birinin kamu tüzel kişisi olması, bir sözleşmenin idari sözleşme sayılması için yeterlidir.\nII. Kamu hizmetleriyle ilgili imtiyaz sözleşmelerinde milletlerarası tahkime, ancak yabancılık unsuru taşıyan uyuşmazlıklar için gidilebilir.\nIII. 2886 sayılı Devlet İhale Kanunu uyarınca yapılan sözleşmeler idari sözleşme, 4734 sayılı Kamu İhale Kanunu uyarınca yapılan sözleşmeler ise özel hukuk sözleşmesi niteliğindedir.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Anayasa m.125'e göre kamu hizmetleri ile ilgili imtiyaz şartlaşma ve sözleşmelerinde bunlardan doğan uyuşmazlıkların millî veya milletlerarası tahkim yoluyla çözülmesi öngörülebilir; ancak MİLLETLERARASI TAHKİME ANCAK YABANCILIK UNSURU TAŞIYAN UYUŞMAZLIKLAR İÇİN GİDİLEBİLİR — II doğrudur. I yanlıştır: taraflardan birinin idare olması TEK BAŞINA YETERLİ DEĞİLDİR; ayrıca sözleşmenin konusunun bir kamu hizmetinin yürütülmesine ilişkin olması ve idarenin özel hukuku aşan üstün ve ayrıcalıklı yetkilerle donatılmış olması, yani ÜÇ ŞARTIN BİR ARADA bulunması gerekir. III de yanlıştır: gerek 2886 gerek 4734 sayılı Kanunlar uyarınca yapılan İHALE SÖZLEŞMELERİ ÖZEL HUKUK SÖZLEŞMESİDİR. Başlıca idari sözleşmeler iltizam, kamu istikraz, kamu hizmeti imtiyaz, orman işletme, idari hizmet ve müşterek emanet sözleşmeleridir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 125, 155; 2886 ve 4734 sayılı Kanunlar",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Adana Adliyesinde mübaşir olarak çalışan M, İçişleri Bakanlığı tarafından emekliye sevk ediliyor.\nBu durumda ortaya çıkan yetki sakatlığı aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Ağır ve bariz yetki tecavüzü", "isCorrect": true },
+      { "label": "B", "text": "Yetki tecavüzü" },
+      { "label": "C", "text": "Yetki saptırması" },
+      { "label": "D", "text": "Fonksiyon gasbı" },
+      { "label": "E", "text": "Yetki gasbı" }
+    ],
+    "explanation": "Yetki unsurunda konu yönünden hukuka aykırılıklar üç derecede olabilir. YETKİ TECAVÜZÜ, idare adına irade açıklamaya yetkili bir makamın başka bir idari makamın görevine giren konuda işlem yapmasıdır ve İPTAL EDİLEBİLİRLİK yaptırımına tabidir. Yetki tecavüzünün iş bölümü esaslarına TAMAMEN AYKIRI şekilde gerçekleşmesi hâlinde AĞIR VE BARİZ YETKİ TECAVÜZÜ ortaya çıkar; yani tecavüzü fark etmek için uzman olmaya gerek yoksa ve ortalama bakışla anlaşılabiliyorsa bu durum kabul edilir ve yaptırımı YOKLUKTUR. Olayda ADALET BAKANLIĞI bünyesinde çalışan bir memur İÇİŞLERİ BAKANLIĞI tarafından emekliye sevk edilmiştir; bu, iş bölümü esaslarına tamamen aykırı olduğundan ağır ve bariz yetki tecavüzüdür. FONKSİYON GASBI ise ancak yasama, yürütme ve yargı organlarının birbirinin alanına girmesi hâlinde söz konusu olur.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsurunda Sakatlıklar",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Bir sözleşmenin idari sözleşme olarak nitelendirilebilmesi için aranan organik şart, kural olarak aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Sözleşmenin konusunun kamu hizmeti olması" },
+      { "label": "B", "text": "Sözleşmenin mal veya hizmet alımları ile yapım işlerini kapsaması" },
+      { "label": "C", "text": "Sözleşmenin amacının kamu yararı olması" },
+      { "label": "D", "text": "Sözleşmeden doğan uyuşmazlıkların idari yargıda çözümlenmesi" },
+      { "label": "E", "text": "Sözleşme taraflarından birinin idare olması", "isCorrect": true }
+    ],
+    "explanation": "İDARİ SÖZLEŞME, idarenin üstün ve ayrıcalıklı yetkiler kullanarak yaptığı, konusu bir kamu hizmetinin yürütülmesi olan ve kamu hukuku kurallarına tabi kılınan sözleşmedir. Bir sözleşme yasa ile 'idari sözleşme' olarak nitelendirilmişse tartışmasız idari sözleşmedir. Yasayla nitelendirilmemişse üç kriter birlikte aranır: (1) ORGANİK KRİTER — SÖZLEŞMENİN TARAFLARINDAN EN AZ BİRİSİ İDARE OLMALIDIR (diğer taraf idare de olabilir, özel kişi de); (2) sözleşmenin konusu, idarenin karşısında yer alan üçüncü kişilerin bir KAMU HİZMETİNİ YÜRÜTMESİNE ilişkin taahhüdü olmalıdır; (3) idare ÖZEL HUKUKU AŞAN ÜSTÜN VE AYRICALIKLI YETKİLERLE donatılmış olmalıdır. Soruda 'organik şart' sorulduğundan cevap taraflardan birinin idare olmasıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – İdari Sözleşmeler",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Bir idari işlemin maksat unsuru bakımından hukuka aykırı olduğunu ifade eden kavram aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Fonksiyon gaspı" },
+      { "label": "B", "text": "Yetki saptırması", "isCorrect": true },
+      { "label": "C", "text": "Hizmet kusuru" },
+      { "label": "D", "text": "Yetki tecavüzü" },
+      { "label": "E", "text": "Yetki gaspı" }
+    ],
+    "explanation": "İdari işlem ve kararların temel ve genel maksadı KAMU YARARININ SAĞLANMASIDIR. İdari kararın alınmasında kişisel amaç veya kişisel husumet güdülmüşse ya da dinsel, ırksal, siyasal düşüncelerle hareket edilmişse karar maksat unsuru yönünden hukuka aykırıdır ve bu sakatlığa YETKİ SAPTIRMASI adı verilir (örneğin öğretmenin, aralarındaki tartışma sebebiyle öğrenciye kötü not vermesi). USUL SAPTIRMASI ise yetki saptırmasının ALT KOLUDUR: idare, kanunda öngörülen bir idari usulü kanunun öngördüğü amacın dışında başka bir amaçla kullanarak gerçek maksadını gizler (belediyenin arsayı daha ucuza kamulaştırmak amacıyla arsa üzerindeki bina için yıkım kararı vermesi gibi). İsimlerinde 'yetki' geçse de bu iki sakatlık YETKİ unsuruyla değil AMAÇ unsuruyla ilgilidir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Amaç Unsuru ve Yetki Saptırması",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Diyanet İşleri Başkanının atanmasına dair Cumhurbaşkanı kararı, Resmî Gazete'de yayımlanıyor.\nYukarıdaki idari işlemin; maddi açıdan, iradenin sayısı açısından ve iradenin dış dünyaya yansıması açısından tasnifi, sırasıyla aşağıdakilerden hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "Şart işlem – Basit işlem – Sarih işlem", "isCorrect": true },
+      { "label": "B", "text": "Şart işlem – Karma işlem – Zımni işlem" },
+      { "label": "C", "text": "Subjektif işlem – Basit işlem – Sarih işlem" },
+      { "label": "D", "text": "Subjektif işlem – Basit işlem – Zımni işlem" },
+      { "label": "E", "text": "Düzenleyici işlem – Karma işlem – Sarih işlem" }
+    ],
+    "explanation": "Üç ayrı tasnifi birlikte uygulamak gerekir. MADDİ AÇIDAN: ŞART (NESNEL) İŞLEMLER, belli bir kişiyi veya nesneyi hukuk kurallarınca önceden düzenlenmiş olan nesnel ve kişilik dışı bir hukuki duruma sokan işlemlerdir; MEMURUN ATANMASI tipik şart işlemdir. SÜBJEKTİF İŞLEMLER ise kişiye özgü, statüsü ve kapsamı önceden belirlenmemiş sonuçlar doğurur (vergi tarh ve tahakkuku, sınav notları gibi). İRADE SAYISI AÇISINDAN: atamada yalnızca Cumhurbaşkanının iradesi yeterli olduğundan BASİT İŞLEMDİR. İRADENİN AÇIKLANMA BİÇİMİ AÇISINDAN: idare iradesini açıkça ortaya koyup Resmî Gazetede yayımladığından SARİH (AÇIK) İŞLEMDİR; ZIMNİ İŞLEM ise idarenin başvurulara hiçbir cevap vermeksizin tesis ettiği işlemdir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – İdari İşlemlerin Tasnifi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Aşağıdakilerden hangisi idarenin yaptığı idari sözleşmelerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Kamu istikraz sözleşmeleri" },
+      { "label": "B", "text": "İdari hizmet sözleşmeleri" },
+      { "label": "C", "text": "Mali iltizam sözleşmeleri" },
+      { "label": "D", "text": "Orman işletme sözleşmeleri" },
+      { "label": "E", "text": "Kamu ihale sözleşmeleri", "isCorrect": true }
+    ],
+    "explanation": "Başlıca İDARİ SÖZLEŞME türleri şunlardır: İLTİZAM SÖZLEŞMELERİ, KAMU İSTİKRAZ (borçlanma) SÖZLEŞMELERİ, KAMU HİZMETİ İMTİYAZ SÖZLEŞMELERİ, ORMAN İŞLETME SÖZLEŞMELERİ, İDARİ HİZMET SÖZLEŞMELERİ, MÜŞTEREK EMANET SÖZLEŞMELERİ ile yeraltı ve yerüstü servetlerinin işletilmesine dair sözleşmeler. Bunlar SINIRLI SAYIDADIR. Buna karşılık tarafların eşit ilişkiye girdiği sözleşmeler ÖZEL HUKUK SÖZLEŞMESİDİR ve bunlara örnek olarak KAMU İHALE SÖZLEŞMELERİ (ihale uygulamaları), yap-işlet-devret ve yap-işlet sözleşmeleri, bayilik, abonmanlık, kredi burs, eczacılık ve iş sözleşmeleri verilebilir. Bu nedenle doğru cevap E'dir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – İdari Sözleşme Türleri",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "15 yaşını dolduran askerî lise öğrencisi bay A, ilgili şartların varlığı üzerine nüfus müdürlüğünce reşit kılınıyor.\nBu durumda ortaya çıkan yetki sakatlığı aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Yetki gasbı" },
+      { "label": "B", "text": "Görev gasbı", "isCorrect": true },
+      { "label": "C", "text": "Yetki saptırması" },
+      { "label": "D", "text": "Yetki tecavüzü" },
+      { "label": "E", "text": "Ağır ve bariz yetki tecavüzü" }
+    ],
+    "explanation": "Bir idari makam hangi konuda yetkili kılınmışsa ancak o konuda işlem yapabilir; aksi hâlde konu yönünden yetkisizlik ortaya çıkar. FONKSİYON (GÖREV) GASBI, yasama, yürütme ve yargının birbirinin görev alanına giren bir konuda işlem yapmasıdır ve YOKLUK yaptırımına yol açar. Ergin kılınma (kazai rüşt) kararı, Türk Medeni Kanunu uyarınca ancak MAHKEME tarafından verilebilecek bir YARGISAL karardır. Olayda yargı organının yapması gereken işlem bir idari makam (nüfus müdürlüğü) tarafından gerçekleştirildiğinden görev gasbı vardır ve işlem yok hükmündedir. YETKİ TECAVÜZÜ iki idari makam arasında, YETKİ GASBI ise idareye tamamen yabancı bir kişinin işlem yapması hâlinde söz konusu olur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsurunda Sakatlıklar; 4721 sayılı TMK md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "İdarenin, düzeni sağlamak için kanunda öngörülen kolluk usulünü kanunun başka bir amaç için kullanması durumunda ortaya çıkan hukuka aykırılığa ne ad verilir?",
+    "options": [
+      { "label": "A", "text": "Konu bakımından yetkisizlik" },
+      { "label": "B", "text": "Yetki gaspı" },
+      { "label": "C", "text": "Fiili yol" },
+      { "label": "D", "text": "Usul saptırması", "isCorrect": true },
+      { "label": "E", "text": "Fonksiyon gaspı" }
+    ],
+    "explanation": "İdarenin belli bir amaca ulaşmak için kanun tarafından öngörülen idari usul yerine, kanunun BAŞKA BİR AMAÇ İÇİN öngördüğü idari usulü kullanması durumunda ortaya çıkan hukuka aykırılığa USUL SAPTIRMASI denir. Usul saptırması aslında MAKSAT (AMAÇ) YÖNÜNDEN hukuka aykırılığın bir TÜREVİDİR; ancak burada idare, kanunda öngörülen bir usulü, o usulün amacının dışında başka bir amaçla kullanmaktadır. İdare bu yolla gerçek maksadını görünürdeki meşru bir işlemin arkasında saklamaktadır. FİİLİ YOL ise idarenin kişilerin temel hak ve hürriyetlerine hiçbir hukuki dayanağı olmaksızın ağır ve bariz biçimde el atmasıdır ve idari işlem sayılmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Amaç Unsuru ve Usul Saptırması",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Çekilme yoluyla görevi sona eren bir memur, sona eren görevinden kaynaklı yetkileri kullanarak idari işlem tesis ediyor.\nBu durumdaki yetki sakatlığının adı aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Fonksiyon gasbı" },
+      { "label": "B", "text": "Yetki gasbı", "isCorrect": true },
+      { "label": "C", "text": "Konu bakımından yetki tecavüzü" },
+      { "label": "D", "text": "Ağır ve bariz yetki tecavüzü" },
+      { "label": "E", "text": "Yetki saptırması" }
+    ],
+    "explanation": "YETKİ unsuru, idarenin görev alanına giren bir konuda idare adına KİMİN irade açıklayacağını ifade eder. İDAREYE TAMAMEN YABANCI ya da idare adına irade açıklama yetkisi olmayan birisinin işlem yapması KİŞİ YÖNÜNDEN YETKİSİZLİK olarak ifade edilir ve buna YETKİ GASBI denir; yaptırımı YOKLUKTUR. Emeklilik, istifa (çekilme) veya görevden alınma gibi sebeplerle görevden ayrıldıktan sonra yetkinin kullanılması da kişi yönünden yetkisizliğe, yani yetki gasbına yol açar. Bu hâli, iki idari makam arasında ortaya çıkan yetki tecavüzü ile devletin temel organları arasında ortaya çıkan fonksiyon gasbından ayırmak gerekir.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "İdare Hukuku – Yetki Unsurunda Sakatlıklar",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Bir kişiyi veya nesneyi hukuk kurallarınca önceden belirlenmiş genel, objektif ve kişilik dışı bir statüye sokan veya böyle bir statüden çıkaran idari işlemlere ne ad verilir?",
+    "options": [
+      { "label": "A", "text": "Şart işlem", "isCorrect": true },
+      { "label": "B", "text": "Kolektif işlem" },
+      { "label": "C", "text": "Karma işlem" },
+      { "label": "D", "text": "Belirleyici işlem" },
+      { "label": "E", "text": "Emredici işlem" }
+    ],
+    "explanation": "İdari işlemler MADDİ AÇIDAN ŞART (KOŞUL) İŞLEM ve SÜBJEKTİF (ÖZNEL) İŞLEM olarak ikiye ayrılır. ŞART İŞLEM, bir kişi veya durumu hukuk kurallarınca önceden belirlenmiş, objektif, nesnel ve kişilik dışı bir 'statü'ye sokan veya böyle bir statüden çıkaran işlemlerdir; memur olma, öğrenci olma, öğrencilikten atılma, emekli olma ve ruhsat alma bu niteliktedir. Bu nedenle şart işlemin hukuku 'STATÜ' hukukudur. SÜBJEKTİF İŞLEM ise somut, belli bir kişiye özgü sonuçlar doğuran; statüsü ve kapsamı önceden belirlenmemiş, işlemle doğan işlemlerdir — en tipik örnekleri vergi tarh ve tahakkuk işlemleri ile sınav notlarıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS ALAN BİLGİSİ",
+    "citation": "İdare Hukuku – İdari İşlemlerin Tasnifi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "İdari işlemlerin, ilgilisinin kabul veya rızasına bağlı olmaksızın hukuki sonuç doğurması, hangi özelliğinin doğrudan sonucudur?",
+    "options": [
+      { "label": "A", "text": "Resen icra edilebilme" },
+      { "label": "B", "text": "Hukuka uygunluk karinesinden yararlanma" },
+      { "label": "C", "text": "Kamu yararı amacına yönelik olarak gerçekleştirilme" },
+      { "label": "D", "text": "Tek yanlılık", "isCorrect": true },
+      { "label": "E", "text": "Sebebe bağlılık" }
+    ],
+    "explanation": "TEK YANLI OLMA, idari işlemlerin EŞİTSİZLİK TEMELİNE dayandığını ifade eder: idare kamu gücüne sahip olduğu için tek taraflı üstünlüğe dayanarak işlemi yapar ve karşı tarafa uygular; işlemin hukuki sonuç doğurması ilgilinin kabul veya rızasına bağlı değildir. Diğer özellikler farklıdır: RE'SEN İCRA, idarenin almış olduğu kararı bizzat, gerekirse zor kullanarak kendisinin uygulaması ve yürütmesidir; HUKUKA UYGUNLUK KARİNESİ, aksi yargı kararlarınca kesinleşinceye kadar idari işlemlerin hukuka uygun sayılmasıdır; İCRAİLİK ise idarenin tek taraflı iradesiyle yeni bir hukuki durum yaratması, mevcut durumu değiştirmesi veya ortadan kaldırmasıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – İdari İşlemin Özellikleri",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Sincan Belediye Encümeni, Törekent Mahallesi'ndeki bir taşınmazın kamulaştırılmasına karar veriyor.\nBu idari işlemle ilgili,\nI. Tek yanlıdır.\nII. Düzenleyici işlemdir.\nIII. Kolektif işlemdir.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "I ve III", "isCorrect": true },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Belediye encümeninin kamulaştırma kararı çeşitli ayrımlar bakımından şöyle değerlendirilir: DÜZENLEYİCİ–BİREYSEL işlem ayrımı bakımından belli bir taşınmaza ilişkin olduğundan BİREYSEL İŞLEMDİR (II yanlıştır); ŞART–SÜBJEKTİF işlem ayrımı bakımından ŞART İŞLEMDİR; YAPICI–BELİRLEYİCİ ayrımı bakımından YAPICI; YARARLANDIRICI–YÜKÜMLENDİRİCİ ayrımı bakımından YÜKÜMLENDİRİCİ; BASİT–KOLEKTİF–KARMA ayrımı bakımından bir KURUL kararı olduğundan KOLEKTİF İŞLEMDİR (III doğrudur); SARİH–ZIMNİ ayrımı bakımından SARİH İŞLEMDİR. İdari işlemler ilgilinin rızasına bağlı olmaksızın hukuki sonuç doğurduğundan TEK YANLIDIR (I doğrudur).",
+    "difficulty": "hard",
+    "sourceLabel": "2020 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "İdare Hukuku – İdari İşlemlerin Tasnifi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  }
+]

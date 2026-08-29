@@ -1,0 +1,93 @@
+[
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"86",
+    "stem":"A ve B, çıkan tartışmada C'ye tokat atınca C hastaneye giderek darp raporu almıştır. Raporda yaralanmanın basit bir tıbbi müdahaleyle giderilebilecek ölçüde hafif olduğu belirtilmiştir. Olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options":[{"label":"A","text":"Kasten yaralama suçundan dolayı hüküm kurulurken suçun temel şeklinden daha az bir ceza verilir"},{"label":"B","text":"Olayda haksız tahrik hükümleri uygulanabilir"},{"label":"C","text":"Bu suç nedeniyle soruşturma ve kovuşturma resen yapılır","isCorrect":true},{"label":"D","text":"Olayda teşebbüs hükümleri uygulanamaz"},{"label":"E","text":"Olayda bilinçli taksir söz konusu değildir"}],
+    "explanation":"Kasten yaralamanın etkisi basit tıbbi müdahaleyle giderilebilecek ölçüde hafifse TCK md. 86/2 uygulanır ve suç, kural olarak MAĞDURUN ŞİKÂYETİ üzerine soruşturulur. Bu nedenle resen soruşturma yapılacağı ifadesi yanlıştır.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 86/2","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"82",
+    "stem":"Aşağıdakilerden hangisi kasten öldürme suçunun cezasının artırılmasını gerektiren nitelikli şekillerinden biri değildir?",
+    "options":[{"label":"A","text":"Suçun kadına karşı işlenmesi"},{"label":"B","text":"Suçun üstsoya karşı işlenmesi"},{"label":"C","text":"Suçun boşandığı eşe karşı işlenmesi"},{"label":"D","text":"Suçun töre saikiyle işlenmesi"},{"label":"E","text":"Suçun birden fazla kişi tarafından birlikte işlenmesi","isCorrect":true}],
+    "explanation":"TCK md. 82; kadına, üstsoya veya boşanılan eşe karşı öldürme ile töre saikiyle öldürmeyi nitelikli hal olarak sayar. Suçun BİRDEN FAZLA KİŞİ TARAFINDAN BİRLİKTE işlenmesi ise tek başına maddede sayılan nitelikli hallerden değildir.",
+    "difficulty":"easy","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 82","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"90",
+    "stem":"Yeni bir onkoloji kliniği kuran T, S ve K adlı doktorlar, kanser hastası A üzerinde gerekli kontrolleri yaptırmaksızın bilimsel bir deney yapmış; deney sonucunda A'nın sağ gözünde görme yeteneği önemli ölçüde azalmıştır. Doktorların eylemi hangi suç kapsamında cezalandırılır?",
+    "options":[{"label":"A","text":"Hukuka uygunluk nedeni bulunduğu için eylem cezalandırılmaz"},{"label":"B","text":"İnsan üzerinde deney"},{"label":"C","text":"Sonucu nedeniyle ağırlaşmış yaralama","isCorrect":true},{"label":"D","text":"Taksirle yaralama"},{"label":"E","text":"Kasten yaralamaya teşebbüs"}],
+    "explanation":"İnsan üzerinde deney suçunun işlenmesi sonucunda mağdur yaralanırsa TCK md. 90/5 gereğince kasten yaralama hükümleri uygulanır. Bir organın işlevinin SÜREKLİ ZAYIFLAMASI md. 87/1-a kapsamındaki neticesi sebebiyle ağırlaşmış yaralamadır.",
+    "difficulty":"hard","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 87/1-a, 90/5","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"36",
+    "stem":"A, husumet beslediği B'yi öldürmeye karar verip iş yerine yakın mesafeden birkaç el ateş etmiş; devriye gezen polis memuru C saldırıya son vermek için A'yı bacağından vurmuştur. B tıbbi müdahaleyle iyileşmiştir.\nI. A kasten öldürmeye teşebbüsten sorumludur.\nII. A kasten yaralamaya teşebbüsten sorumludur.\nIII. A doğrudan kastla hareket etmiştir.\nIV. C görevin ifası hukuka uygunluk nedeninden yararlanır.\nBuna göre hangileri doğrudur?",
+    "options":[{"label":"A","text":"Yalnız I"},{"label":"B","text":"I ve III"},{"label":"C","text":"II ve III"},{"label":"D","text":"I, III ve IV","isCorrect":true},{"label":"E","text":"II, III ve IV"}],
+    "explanation":"A öldürme kastıyla yakın mesafeden ateş ettiğinden DOĞRUDAN KASTLA kasten öldürmeye teşebbüsten sorumludur. A'nın kendi iradesiyle vazgeçmesi bulunmadığından gönüllü vazgeçme yoktur. C ise devam eden haksız saldırıyı görevi kapsamında durdurmuştur.",
+    "difficulty":"hard","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 21, 25, 35, 36","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"92",
+    "stem":"I. Kasten yaralama\nII. Organ veya doku ticareti\nIII. İnsan üzerinde deney\n5237 sayılı TCK'da yukarıdaki suçlardan hangileri için özel zorunluluk durumu öngörülmüştür?",
+    "options":[{"label":"A","text":"Yalnız II","isCorrect":true},{"label":"B","text":"Yalnız III"},{"label":"C","text":"I ve II"},{"label":"D","text":"I ve III"},{"label":"E","text":"II ve III"}],
+    "explanation":"TCK md. 92, organ veya dokularını satan kişinin içinde bulunduğu sosyal ve ekonomik koşullar dikkate alınarak hakkında ceza vermekten vazgeçilebilmesine veya cezasında indirim yapılabilmesine imkân tanır. Bu özel düzenleme diğer iki suç için öngörülmemiştir.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 92","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"87",
+    "stem":"A ile teyzesinin kızı B arasında miras paylaşımı nedeniyle kavga çıkmış; A'nın B'nin ayağına doğru attığı tekme üzerine B yere düşmüş ve travmanın etkisiyle erken doğum yapmıştır. A hangi suçtan sorumludur?",
+    "options":[{"label":"A","text":"Kasten öldürme suçuna teşebbüs"},{"label":"B","text":"Kasten yaralama suçuna teşebbüs"},{"label":"C","text":"Kasten yaralama"},{"label":"D","text":"Kasten yaralama suçunun nitelikli şekli"},{"label":"E","text":"Sonucu nedeniyle ağırlaşmış yaralama","isCorrect":true}],
+    "explanation":"A'nın kastı yaralamaya yöneliktir. Gebe kadına karşı kasten yaralama fiilinin çocuğun VAKTİNDEN ÖNCE DOĞMASINA neden olması TCK md. 87/1-e kapsamında neticesi sebebiyle ağırlaşmış yaralamadır.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 87/1-e","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"84",
+    "stem":"A, işlediği eylemin anlam ve sonuçlarını kavrayamayan B'yi, onu etkileyeceğini bildiği sözlerle intihara sevk etmiştir. B bindiği trenden atlayarak ölmüştür. A hangi suçtan sorumlu olur?",
+    "options":[{"label":"A","text":"İntihara teşvik etme"},{"label":"B","text":"İntihara azmettirme"},{"label":"C","text":"İntihara yardım"},{"label":"D","text":"İntihar kararını takviye etme"},{"label":"E","text":"Kasten öldürme","isCorrect":true}],
+    "explanation":"Fiilin anlam ve sonuçlarını algılama yeteneği gelişmemiş veya ortadan kaldırılmış kişiyi intihara sevk eden kişi TCK md. 84/4 gereğince KASTEN ÖLDÜRME suçundan sorumludur.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 84/4","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"89",
+    "stem":"5237 sayılı TCK'ya göre aşağıdakilerden hangisi taksirle yaralama suçunun cezayı artıran nitelikli sonuçlarından biri değildir?",
+    "options":[{"label":"A","text":"Eylemin çocuğa karşı işlenmiş olması","isCorrect":true},{"label":"B","text":"Eylemin mağdurun vücudunda kemik kırılmasına neden olması"},{"label":"C","text":"Eylemin mağdurun yüzünde sabit ize neden olması"},{"label":"D","text":"Eylemin mağdurun yaşamını tehlikeye sokan bir duruma neden olması"},{"label":"E","text":"Eylemin birden fazla kişinin yaralanmasına neden olması"}],
+    "explanation":"TCK md. 89; kemik kırılması, yüzde sabit iz, yaşamı tehlikeye sokan durum ve birden fazla kişinin yaralanması gibi sonuçları açıkça düzenler. Fiilin sırf ÇOCUĞA KARŞI işlenmesi ise taksirle yaralamanın cezayı artıran sonucu değildir.",
+    "difficulty":"easy","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 89","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"82",
+    "stem":"A, sevgilisi C ile anlaşarak boşanmaya yanaşmayan eşi B'yi birlikte öldürmüştür. Faillerin sorumluluğu hakkında hangisi doğrudur?",
+    "options":[{"label":"A","text":"Her iki fail de kasten öldürmenin nitelikli şeklinden sorumludur"},{"label":"B","text":"Her iki fail de kasten öldürmenin temel şeklinden sorumludur"},{"label":"C","text":"A kasten öldürmenin nitelikli şeklinden, C ise temel şeklinden sorumludur","isCorrect":true},{"label":"D","text":"A nitelikli kasten öldürmeden, C nitelikli öldürmeye yardımdan sorumludur"},{"label":"E","text":"A nitelikli kasten öldürmeden, C azmettirmeden sorumludur"}],
+    "explanation":"Eşe karşı öldürme TCK md. 82/1-d'deki nitelikli haldir ve mağdurla A arasındaki kişisel ilişkiden kaynaklanır. Bu kişisel nitelikli hal C'ye sirayet etmez; C müşterek fail olarak öldürmenin TEMEL ŞEKLİNDEN sorumlu olur.",
+    "difficulty":"hard","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 37, 40, 81, 82/1-d","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"84",
+    "stem":"I. Kasten öldürme\nII. Kasten yaralamanın basit tıbbi müdahaleyle giderilebilecek şekli\nIII. İntihara yönlendirme\n5237 sayılı TCK'da yukarıdaki suçlardan hangilerinin kadına karşı işlenmesi nitelikli hal olarak düzenlenmiştir?",
+    "options":[{"label":"A","text":"Yalnız I","isCorrect":true},{"label":"B","text":"Yalnız III"},{"label":"C","text":"I ve II"},{"label":"D","text":"I ve III"},{"label":"E","text":"II ve III"}],
+    "explanation":"Kadına karşı kasten öldürme TCK md. 82/1-f kapsamında nitelikli haldir. Basit tıbbi müdahaleyle giderilebilir kasten yaralamada kadına karşı işlenme daha yüksek alt sınır doğurur. İntihara yönlendirme bakımından ise kadına karşı işlenmeye özgü nitelikli hal yoktur. Bu nedenle yalnız I doğrudur.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 82/1-f, 84, 86/2","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"84",
+    "stem":"5237 sayılı TCK'ya göre dokuz yaşındaki bir çocuğu intihara sevk eden kişinin cezai sorumluluğuyla ilgili hangisi doğrudur?",
+    "options":[{"label":"A","text":"Kastı aşan insan öldürmeden sorumludur"},{"label":"B","text":"İntihara azmettirmeden sorumludur"},{"label":"C","text":"İntihara teşvikten sorumludur"},{"label":"D","text":"Kasten insan öldürmeden sorumludur","isCorrect":true},{"label":"E","text":"Sonucu nedeniyle ağırlaşan suçtan sorumludur"}],
+    "explanation":"İşlediği fiilin anlam ve sonuçlarını algılama yeteneği gelişmemiş kişiyi intihara sevk eden kişi, TCK md. 84/4 uyarınca KASTEN ÖLDÜRME suçundan sorumlu tutulur.",
+    "difficulty":"easy","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 84/4","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"86",
+    "stem":"A, uyku düzenini ve sağlığını bozduğu için boşandığı eşi B'nin kahvesine ilaç katmış; hastanede tedavi altına alınan B aynı servisteki başka bir hastanın bulaştırdığı virüs nedeniyle ölmüştür. A hangi suçtan cezalandırılır?",
+    "options":[{"label":"A","text":"Kasten yaralama"},{"label":"B","text":"Kasten öldürmeye teşebbüs"},{"label":"C","text":"Kasten öldürme"},{"label":"D","text":"Kasten yaralama suçunun nitelikli şekli","isCorrect":true},{"label":"E","text":"Kasten yaralamaya teşebbüs"}],
+    "explanation":"A'nın kastı yaralamaya yöneliktir ve ölüm, A'nın fiilinden değil hastanede bulaşan virüsten doğmuştur. Yaralama boşanılan eşe karşı işlendiğinden TCK md. 86/3-a kapsamında KASTEN YARALAMANIN NİTELİKLİ ŞEKLİ oluşur.",
+    "difficulty":"hard","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 86/3-a","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId":"81500d64-b141-4d67-a1cc-f34f42b5869b","articleNo":"84",
+    "stem":"I. Başkasının intihar kararını kuvvetlendirme\nII. Başkasını tehditle intihara zorlama\nIII. Başkasının intiharına yardım etme\n5237 sayılı TCK'ya göre yukarıdaki durumlardan hangilerinde fail kasten öldürme suçundan sorumlu olur?",
+    "options":[{"label":"A","text":"Yalnız I"},{"label":"B","text":"Yalnız II","isCorrect":true},{"label":"C","text":"I ve II"},{"label":"D","text":"I ve III"},{"label":"E","text":"II ve III"}],
+    "explanation":"İntihar kararını kuvvetlendirme ve intihara yardım TCK md. 84/1 kapsamındaki intihara yönlendirme fiilleridir. TEHDİT kullanarak kişiyi intihara mecbur eden fail ise md. 84/4 gereğince kasten öldürmeden sorumlu tutulur.",
+    "difficulty":"medium","sourceLabel":"THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI","citation":"5237 sayılı TCK md. 84","citationUrl":"https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

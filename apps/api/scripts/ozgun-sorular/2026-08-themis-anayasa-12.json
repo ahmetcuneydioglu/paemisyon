@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "147",
+    "stem": "I. Üyeler on iki yıl için seçilir.\nII. Bir kimse en çok iki defa üye seçilebilir.\nIII. Altmış beş yaşını dolduran üyeler emekliye ayrılır.\n1982 Anayasası'na göre Anayasa Mahkemesi üyeliğiyle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve III", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Anayasa m.147'ye göre Anayasa Mahkemesi üyeleri on iki yıl için seçilir ve altmış beş yaşını doldurunca emekliye ayrılır. Bir kimse iki defa Anayasa Mahkemesi üyesi seçilemez; bu nedenle II yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 147",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "1982 Anayasası'na göre Hâkimler ve Savcılar Kurulunda görev süresi dolmadan üyelik boşalırsa yeni üye seçimi, boşalmayı takip eden kaç gün içinde yapılır?",
+    "options": [
+      { "label": "A", "text": "10 gün" },
+      { "label": "B", "text": "15 gün" },
+      { "label": "C", "text": "30 gün", "isCorrect": true },
+      { "label": "D", "text": "45 gün" },
+      { "label": "E", "text": "60 gün" }
+    ],
+    "explanation": "Anayasa m.159'a göre HSK üyeliğinin görev süresi dolmadan boşalması hâlinde yeni üyenin seçimi, boşalmayı takip eden otuz gün içinde yapılır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "148",
+    "stem": "Kanunların şekil yönünden Anayasaya uygunluğunun denetlenmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Şekil aykırılığı Cumhurbaşkanı tarafından ileri sürülebilir." },
+      { "label": "B", "text": "Şekil aykırılığı TBMM üye tamsayısının beşte biri tarafından ileri sürülebilir." },
+      { "label": "C", "text": "Şekil bozukluğuna dayalı iptal davası kanunun Resmî Gazetede yayımlanmasından itibaren on gün içinde açılmalıdır." },
+      { "label": "D", "text": "Denetim, son oylamanın öngörülen çoğunlukla yapılıp yapılmadığıyla sınırlıdır." },
+      { "label": "E", "text": "Şekil aykırılığı siyasi parti grupları tarafından ileri sürülebilir.", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.148'e göre kanunların şekil bakımından denetlenmesini Cumhurbaşkanı veya TBMM üyelerinin beşte biri isteyebilir. Siyasi parti gruplarına bu konuda bağımsız bir başvuru yetkisi tanınmamıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 148",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "140",
+    "stem": "Aşağıdakilerden hangisi 1982 Anayasası'nda hâkimlik teminatına ilişkin hükümler arasında belirtilmemiştir?",
+    "options": [
+      { "label": "A", "text": "Hâkimler, kadronun kaldırılması sebebiyle de olsa aylık ve ödenek ile diğer özlük haklarından yoksun bırakılamazlar." },
+      { "label": "B", "text": "Hâkimler idari görevleri yönünden Adalet Bakanlığına bağlı değildirler.", "isCorrect": true },
+      { "label": "C", "text": "Hâkimler kendileri istemedikçe altmış beş yaşını bitirmeden emekliye ayrılamazlar." },
+      { "label": "D", "text": "Hâkimler bir mahkemenin kaldırılması sebebiyle aylık, ödenek ve diğer özlük haklarından yoksun bırakılamazlar." },
+      { "label": "E", "text": "Hâkimler azlolunamazlar." }
+    ],
+    "explanation": "Anayasa m.140, hâkim ve savcıların idari görevleri yönünden Adalet Bakanlığına bağlı olduğunu açıkça düzenler. Bu nedenle bağlı olmadıkları yönündeki ifade Anayasada yer almaz ve yanlıştır. Diğer seçenekler m.139'daki hâkimlik teminatıyla uyumludur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 139 ve 140",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "153",
+    "stem": "Aşağıdakilerden hangisi Anayasa Mahkemesi kararlarına ilişkin 1982 Anayasası'nda yer alan kurallardan biri değildir?",
+    "options": [
+      { "label": "A", "text": "Anayasa Mahkemesi kararları kesindir." },
+      { "label": "B", "text": "Anayasa Mahkemesinin hiçbir kararı gerekçesi yazılmadan açıklanamaz.", "isCorrect": true },
+      { "label": "C", "text": "İptal kararları geriye yürümez." },
+      { "label": "D", "text": "Anayasa değişikliklerinin iptaline karar verilebilmesi için toplantıya katılan üyelerin üçte iki çoğunluğu gerekir." },
+      { "label": "E", "text": "Anayasa Mahkemesi gereken hâllerde iptal kararının yürürlüğe gireceği tarihi ayrıca kararlaştırabilir." }
+    ],
+    "explanation": "Anayasa m.153 yalnız iptal kararlarının gerekçesi yazılmadan açıklanamayacağını belirtir; bütün Anayasa Mahkemesi kararlarını kapsayan böyle bir yasak yoktur. Diğer seçenekler m.149 ve m.153'te düzenlenen kurallardır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 149 ve 153",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

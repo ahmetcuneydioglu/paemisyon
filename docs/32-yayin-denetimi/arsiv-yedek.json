@@ -1,0 +1,178 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "CMK m.171 — \"kamu davasinin acilmasinin ertelenmesi KOSULLARINDAN BIRI DEGILDIR\". m.171/3 dort kosul sayar; siklardan C, D, E bunlarin ucunu karsilar. Isaretli B (\"ust sinirin 2 yil olmasi\") kosul degil (m.171/2 esigi UC YIL), ama A (\"sikayete bagli olmasi\") da kosul degil — m.171'in hicbir fikrasinda gecmiyor, uzlasma m.253 ile karistirilmis. Iki dogru cevap var, tek dogru cevap yok. Uc karsi-dogrulayici da kusuru teyit etti (curuten 0/3). Kullanici \"gereksiz soru, arsivle\" dedi.",
+  "arsivlenen": {
+   "id": "9a459d31-91f6-46b3-adb4-86b15219aab8",
+   "questionId": "1f718860-ba2e-473a-81b9-aeb707790ea4",
+   "stem": "Aşağıdakilerden hangisi kamu davasının açılmasının ertelenmesinin koşullarından biri değildir?",
+   "explanation": "Soruşturması veya kovuşturması şikâyete bağlı olan suçlarda Cumhuriyet savcısının iddianame düzenlemesini şüpheliye verdiği deneme süresinin sonucuna kadar geri bırakmasına kamu davasının açılmasının ertelenmesi denir. Erteleme kararı verilecek suçun soruşturulmasının ve kovuşturulmasının şikâyete bağlı olması gerekir. Erteleme kararı verilecek suçun kanunda öngörülen hapis cezasının üst sınırının 1 yıl veya daha az süreli olması gerekir. Uzlaşmaya ilişkin hükümler saklı kalmak üzere, şüphelinin daha önce kasıtlı bir suçtan dolayı hapis cezası ile mahkûmiyetinin bulunmaması gerekir. Yapılan soruşturmanın, kamu davası açılmasının ertelenmesi halinde şüphelinin suç işlemekten çekineceği kanaatini oluşturması gerekir. Ayrıca kamu davası açılmasının ertelenmesinin, şüpheli ve toplum açısından kamu davası açılmasından daha yararlı olması gerekir. Suçun işlenmesiyle mağdurun veya kamunun uğradığı zararın, aynen iade, suçtan önceki hale getirme veya tazmin suretiyle tamamen giderilmesi gerekir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Erteleme kararı verilecek suçun soruşturulmasının ve kovuşturulmasının şikâyete bağlı olması gerekir",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Hapis cezasının üst sınırının 2 yıl veya daha az süreli olması gerekir",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Mağdurun veya kamunun uğradığı zararın, aynen iade edilmesi gerekir",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Uzlaşmaya ilişkin hükümler saklı kalmak üzere, şüphelinin daha önce kasıtlı bir suçtan dolayı mahkûm olmaması gerekir",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Şüphelinin suç işlemekten çekineceği kanaatinin oluşması gerekir",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "kaynaksiz",
+  "gerekce": "Hakimlerin ADAYLIGA atanmasinda yetkili makam soruluyor; dayanak Hakimler ve Savcilar Kanunu / Turkiye Adalet Akademisi mevzuati. Bu mevzuat bankada yok ve polis sinavi kapsami disi. Kullanici karari.",
+  "arsivlenen": {
+   "id": "9f43114b-a69f-4cd5-a6b9-2de5808adabe",
+   "questionId": "384f1d88-9a68-4b84-855c-2730e542b2df",
+   "stem": "Hâkimlerin adaylığa atanmaları aşağıdakilerden hangisi tarafından yapılır?",
+   "explanation": "Hâkimlerin adaylığa atanmaları Adalet Bakanlığı tarafından yapılırken; mesleğe kabullerine Hâkimler ve Savcılar Kurulunca (HSK) karar verilir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Adalet Bakanlığı",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Türkiye Adalet Akademisi Başkanlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Yargıtay Başkanlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Adli Yargı Adalet Komisyonu Başkanlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Bölge Adliye Mahkemesi Başsavcılığı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "kaynaksiz",
+  "gerekce": "Onyargili davrandigi ileri surulen Cumhuriyet savcisinin denetlenmesi/degistirilmesi usulu soruluyor; dayanak HSK ve savcilik teskilat mevzuati, CMK'da yok. Bankada bulunmuyor. Kullanici karari.",
+  "arsivlenen": {
+   "id": "0ce13e82-5774-468d-8ac7-fe6cbb1ff5c2",
+   "questionId": "4413b5a8-681c-4569-986b-30d398997365",
+   "stem": "Ön yargılı davrandığı konusunda endişe bulunan Cumhuriyet savcısının denetlenmesi ve gerektiğinde değiştirilmesi için aşağıdakilerden hangisine başvurulmalıdır?",
+   "explanation": "Cumhuriyet savcısının kişisel olarak önyargılı davrandığı konusunda ciddi bir endişe mevcutsa, Cumhuriyet savcısının denetlenmesi ve gerektiğinde değiştirilmesi için Cumhuriyet savcısının bağlı bulunduğu Cumhuriyet Başsavcısına başvuru yapılmalıdır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Cumhuriyet savcısının görev yaptığı asliye ceza mahkemesine",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Cumhuriyet savcısının bağlı bulunduğu Cumhuriyet başsavcısına",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Cumhuriyet savcısının bulunduğu yargı çevresindeki bölge adliye mahkemesine",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Adalet Bakanlığına",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Cumhuriyet savcısının görev yaptığı ağır ceza mahkemesine",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "kaynaksiz",
+  "gerekce": "Cumhuriyet Bassavci Vekilinin gorevleri soruluyor; dayanak savcilik teskilat mevzuati (HSK / Adalet teskilat kanunu), CMK'da duzenlenmiyor. Bankada bulunmuyor. Kullanici karari.",
+  "arsivlenen": {
+   "id": "c25aa113-36f8-40b7-a3ee-db776aa8cfc8",
+   "questionId": "917e0b10-f840-40d3-97b0-a1c0635ef91e",
+   "stem": "Aşağıdakilerden hangisi Cumhuriyet Başsavcı Vekili'nin görevleri arasında yer almaz?",
+   "explanation": null,
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Cumhuriyet Başsavcılığı'nı temsil etmek",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Cumhuriyet Başsavcısı'nın verdiği görevleri yerine getirmek",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Cumhuriyet savcılarının adli ve idari görevlerine ilişkin işlemlerini inceleyip Cumhuriyet Başsavcısı'na bilgi vermek",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Gerektiğinde adli göreve ilişkin işlemleri yapmak, duruşmalara katılmak ve kanun yollarına başvurmak",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Cumhuriyet Başsavcısı'nın yokluğunda ona vekâlet etmek",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ }
+]

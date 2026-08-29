@@ -1,0 +1,104 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "18",
+    "stem": "1982 Anayasası'nın 18. maddesine göre aşağıdakilerden hangisi zorla çalıştırma sayılmayan durumlar arasında belirtilmemiştir?",
+    "options": [
+      { "label": "A", "text": "Koşulları doğrudan Cumhurbaşkanınca belirlenen çalıştırmalar", "isCorrect": true },
+      { "label": "B", "text": "Tutukluluk süreleri içindeki çalıştırmalar" },
+      { "label": "C", "text": "Olağanüstü hâllerde vatandaşlardan istenecek hizmetler" },
+      { "label": "D", "text": "Ülke ihtiyaçlarının zorunlu kıldığı alanlarda öngörülen vatandaşlık ödevi niteliğindeki beden ve fikir çalışmaları" },
+      { "label": "E", "text": "Hükümlülük süreleri içindeki çalıştırmalar" }
+    ],
+    "explanation": "Anayasa m.18'e göre şekil ve şartları KANUNLA düzenlenmek üzere hükümlülük veya tutukluluk süreleri içindeki çalıştırmalar, olağanüstü hâllerde vatandaşlardan istenecek hizmetler ve ülke ihtiyaçlarının zorunlu kıldığı alanlardaki vatandaşlık ödevi niteliğindeki beden ve fikir çalışmaları zorla çalıştırma sayılmaz. Koşulların doğrudan Cumhurbaşkanınca belirlenmesine ilişkin bir istisna yoktur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 18",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "20",
+    "stem": "1982 Anayasası'na göre kişisel verilerin korunmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Herkes, kendisiyle ilgili kişisel verilerin korunmasını isteme hakkına sahiptir" },
+      { "label": "B", "text": "Herkes, kendisiyle ilgili kişisel veriler hakkında bilgilendirilme hakkına sahiptir" },
+      { "label": "C", "text": "Herkes, kendisiyle ilgili kişisel verilere erişme hakkına sahiptir" },
+      { "label": "D", "text": "Herkes, kendisiyle ilgili kişisel verilerin düzeltilmesini veya silinmesini talep etme ve amaçları doğrultusunda kullanılıp kullanılmadığını öğrenme hakkına sahiptir" },
+      { "label": "E", "text": "Kişisel veriler, millî güvenliğin gerektirmesi durumunda kişinin açık rızası olmaksızın işlenebilir", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.20'ye göre kişisel veriler ancak KANUNDA ÖNGÖRÜLEN HÂLLERDE veya KİŞİNİN AÇIK RIZASIYLA işlenebilir. Anayasa, millî güvenlik gerekçesini tek başına ve doğrudan açık rıza şartını kaldıran bağımsız bir işleme sebebi olarak düzenlememiştir. Diğer seçenekler kişisel verilerin korunması hakkının anayasal kapsamındadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 20",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "32",
+    "stem": "Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hâkim tarafından ilgilinin başvuru tarihinden itibaren en geç kaç gün içinde karar verilir?",
+    "options": [
+      { "label": "A", "text": "Yedi gün", "isCorrect": true },
+      { "label": "B", "text": "On gün" },
+      { "label": "C", "text": "On beş gün" },
+      { "label": "D", "text": "Yirmi gün" },
+      { "label": "E", "text": "Otuz gün" }
+    ],
+    "explanation": "Anayasa m.32'ye göre düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine hâkim tarafından ilgilinin başvuru tarihinden itibaren EN GEÇ YEDİ GÜN içinde karar verilir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 32",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "61",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi sosyal güvenlik bakımından özel olarak korunması gerekenler arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Harp ve vazife şehitlerinin dul ve yetimleri" },
+      { "label": "B", "text": "Kadınlar", "isCorrect": true },
+      { "label": "C", "text": "Engelliler" },
+      { "label": "D", "text": "Gaziler" },
+      { "label": "E", "text": "Korunmaya muhtaç çocuklar" }
+    ],
+    "explanation": "Anayasa m.61 sosyal güvenlik bakımından özel olarak korunacak kişiler arasında harp ve vazife şehitlerinin dul ve yetimlerini, malul ve gazileri, engellileri, yaşlıları ve korunmaya muhtaç çocukları düzenler. KADINLAR bu maddede sayılan gruplar arasında değildir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 61",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "74",
+    "stem": "1982 Anayasası'na göre bilgi edinme hakkıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Anayasa'da bilgi edinme hakkından söz edilmemiştir" },
+      { "label": "B", "text": "Kişinin hakları ve ödevleri bölümünde düzenlenmiştir" },
+      { "label": "C", "text": "Sosyal ve ekonomik haklar ve ödevler bölümünde düzenlenmiştir" },
+      { "label": "D", "text": "Siyasi haklar ve ödevler kısmında düzenlenmiştir", "isCorrect": true },
+      { "label": "E", "text": "Anayasa'nın genel esaslar kısmında düzenlenmiştir" }
+    ],
+    "explanation": "Bilgi edinme hakkı, Anayasa'nın SİYASİ HAKLAR VE ÖDEVLER kısmındaki m.74'te düzenlenmiştir. Maddeye göre herkes bilgi edinme ve kamu denetçisine başvurma hakkına sahiptir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 74",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "33",
+    "stem": "1982 Anayasası'na göre dernek kurma hürriyetine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Herkes önceden izin almaksızın dernek üyeliğinden çıkma hürriyetine sahiptir" },
+      { "label": "B", "text": "Hiç kimse bir derneğe üye olmaya ve dernekte üye kalmaya zorlanamaz" },
+      { "label": "C", "text": "Dernek kurma hürriyeti genel sağlık sebebiyle kanunla sınırlanabilir" },
+      { "label": "D", "text": "Dernekler hâkim kararıyla kapatılabilir; ancak hiçbir durumda idari bir kararla faaliyetten alıkonulamaz", "isCorrect": true },
+      { "label": "E", "text": "Silahlı Kuvvetler ve kolluk kuvvetleri mensupları ile görevlerinin gerektirdiği ölçüde devlet memurlarına kanunla sınırlamalar getirilebilir" }
+    ],
+    "explanation": "Anayasa m.33'e göre dernekler kural olarak hâkim kararıyla kapatılabilir veya faaliyetten alıkonulabilir. Ancak gecikmesinde sakınca bulunan ve maddede sayılan hâllerde, kanunla yetkilendirilen bir merci derneği geçici olarak FAALİYETTEN MEN edebilir; karar yirmi dört saat içinde hâkim onayına sunulur. Bu nedenle idari kararın hiçbir durumda mümkün olmadığını söyleyen D seçeneği yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 33",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi 1921 Anayasası'nın özelliklerinden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Devlet başkanlığı kurumuna yer vermemesi" },
+      { "label": "B", "text": "Yerinden yönetim ilkesini benimsemesi" },
+      { "label": "C", "text": "Laiklik ilkesini kabul etmesi", "isCorrect": true },
+      { "label": "D", "text": "Bakanların bireysel sorumluluğunu düzenlemesi" },
+      { "label": "E", "text": "Egemenliğin kayıtsız şartsız millete ait olduğunu kabul etmesi" }
+    ],
+    "explanation": "1921 Anayasası egemenliği kayıtsız şartsız millete vermiş, meclis hükûmeti sistemini ve yerinden yönetimi benimsemiş; ancak LAİKLİK ilkesini düzenlememiştir. Üstelik 1923 değişikliğiyle devletin dininin İslam olduğu hükmü metne eklenmiştir. Laiklik, anayasal bir ilke olarak 1924 Anayasası'nda 1937 değişikliğiyle yer almıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1921 Teşkilât-ı Esasiye Kanunu md. 1-23 ve 1923 değişiklikleri",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1921-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi 1921 Anayasası'nda 1923 yılında yapılan değişikliklerle kabul edilen hükümlerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Devletin dininin İslam olduğunun belirtilmesi" },
+      { "label": "B", "text": "Cumhuriyet ilkesinin değiştirilemez olduğunun kabul edilmesi", "isCorrect": true },
+      { "label": "C", "text": "Cumhurbaşkanının gerekli görürse Meclise ve Bakanlar Kuruluna başkanlık edebilmesi" },
+      { "label": "D", "text": "Başbakanın Cumhurbaşkanı tarafından milletvekilleri arasından seçilmesi" },
+      { "label": "E", "text": "Devletin resmî dilinin Türkçe olduğunun belirtilmesi" }
+    ],
+    "explanation": "29 Ekim 1923 değişiklikleriyle devlet şeklinin Cumhuriyet olduğu, devletin dininin İslam ve resmî dilinin Türkçe olduğu kabul edilmiş; Cumhurbaşkanı ile hükûmetin kuruluşuna ilişkin hükümler eklenmiştir. Cumhuriyet ilkesinin DEĞİŞTİRİLEMEZLİĞİ ise ilk kez 1924 Anayasası'nda düzenlenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1921 Teşkilât-ı Esasiye Kanunu'nun 1923 değişiklikleri; 1924 Anayasası md. 102",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1921-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "İlköğretimin devlet okullarında parasız olduğu hükmüne ilk kez aşağıdaki anayasalardan hangisinde yer verilmiştir?",
+    "options": [
+      { "label": "A", "text": "1876 Kânûn-ı Esâsî" },
+      { "label": "B", "text": "1921 Anayasası" },
+      { "label": "C", "text": "1924 Anayasası", "isCorrect": true },
+      { "label": "D", "text": "1961 Anayasası" },
+      { "label": "E", "text": "1982 Anayasası" }
+    ],
+    "explanation": "1924 Anayasası'nın 87. maddesi, ilköğretimin bütün Türkler için zorunlu ve DEVLET OKULLARINDA PARASIZ olduğunu açıkça düzenlemiştir. 1876 Kânûn-ı Esâsî zorunlu ilköğretime yer vermekle birlikte devlet okullarında parasızlık güvencesini bu şekilde içermemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1924 Anayasası md. 87; 1876 Kânûn-ı Esâsî md. 114",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Bakanların TBMM üyesi olmayan kişiler arasından da seçilebilmesine ilk kez hangi Anayasa imkân vermiştir?",
+    "options": [
+      { "label": "A", "text": "1876 Kânûn-ı Esâsî" },
+      { "label": "B", "text": "1921 Anayasası" },
+      { "label": "C", "text": "1924 Anayasası" },
+      { "label": "D", "text": "1961 Anayasası", "isCorrect": true },
+      { "label": "E", "text": "1982 Anayasası" }
+    ],
+    "explanation": "1961 Anayasası'nın 102. maddesi, bakanların TBMM üyeleri VEYA milletvekili seçilme yeterliğine sahip olanlar arasından Başbakanca seçileceğini düzenlemiştir. Böylece bakanların Meclis dışından atanabilmesine anayasal düzeyde ilk kez imkân tanınmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1961 Anayasası md. 102",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1961-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "I. Kanun tasarısının Bakanlar Kurulunca verilebilmesi\nII. Dilekçe hakkı\nIII. Milletvekili dokunulmazlığı\nYukarıdakilerden hangileri 1876 Kânûn-ı Esâsî'de açıkça düzenlenmiştir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "1876 Kânûn-ı Esâsî; tebaanın yetkili makamlara ve Meclis-i Umumiye dilekçeyle başvurabilmesini, kanun tekliflerinin Heyet-i Vükelâ aracılığıyla hazırlanıp Meclise sunulmasını ve Heyet-i Mebusan üyelerinin dokunulmazlığını açıkça düzenlemiştir. Bu nedenle üç öncül de doğrudur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1876 Kânûn-ı Esâsî md. 14, 53 ve 79",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1876-kanun-i-esasi"
+  }
+]

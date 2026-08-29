@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "87",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi TBMM'nin görevlerinden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Kanun koymak, değiştirmek ve kaldırmak" },
+      { "label": "B", "text": "Olağanüstü hâl ilan etmek", "isCorrect": true },
+      { "label": "C", "text": "Bütçe ve kesinhesap kanun tekliflerini görüşmek ve kabul etmek" },
+      { "label": "D", "text": "Hâkimler ve Savcılar Kurulunun yedi üyesini seçmek" },
+      { "label": "E", "text": "Savaş ilanına karar vermek" }
+    ],
+    "explanation": "Anayasa m.87'de kanun koymak, bütçe ve kesinhesap tekliflerini görüşüp kabul etmek ve savaş ilanına karar vermek TBMM'nin görevleri arasında sayılmıştır. Hâkimler ve Savcılar Kurulunun yedi üyesi de Anayasa m.159 uyarınca TBMM tarafından seçilir. Olağanüstü hâl ilan etme yetkisi ise TBMM'ye değil Cumhurbaşkanına aittir; TBMM ilan kararını onaylama, değiştirme veya kaldırma yetkisine sahiptir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 87, 119 ve 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "161",
+    "stem": "1982 Anayasası'na göre geçici bütçe kanununun çıkarılamaması durumunda aşağıdakilerden hangisi uygulanır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı istifa eder." },
+      { "label": "B", "text": "Cumhurbaşkanınca yeni bütçe teklifi hazırlanır." },
+      { "label": "C", "text": "Yeni bütçe kanunu kabul edilinceye kadar bir önceki yılın bütçesi yeniden değerleme oranına göre artırılarak uygulanır.", "isCorrect": true },
+      { "label": "D", "text": "Yeni bütçe kanunu kabul edilinceye kadar bir önceki yılın bütçesi aynen uygulanır." },
+      { "label": "E", "text": "Bir önceki yılın bütçesi üç ay süreyle uygulanır." }
+    ],
+    "explanation": "Anayasa m.161'e göre bütçe kanununun süresinde yürürlüğe konulamaması hâlinde geçici bütçe kanunu çıkarılır. Geçici bütçe kanununun da çıkarılamaması durumunda, yeni bütçe kanunu kabul edilinceye kadar önceki yılın bütçesi yeniden değerleme oranına göre artırılarak uygulanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 161",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "89",
+    "stem": "1982 Anayasası'na göre Cumhurbaşkanının kanunları yayımlamasıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı, yayımlanmasını kısmen uygun bulmadığı bir kanunun yalnız uygun bulmadığı maddelerini TBMM'ye geri gönderemez." },
+      { "label": "B", "text": "Cumhurbaşkanı, Anayasaya aykırı bulduğu bir kanunu en geç on gün içinde TBMM'ye geri gönderebilir." },
+      { "label": "C", "text": "TBMM'nin geri gönderilen kanunu aynen kabul etmesi üzerine Cumhurbaşkanının kanunu yayımlaması için Anayasada ayrıca bir süre öngörülmemiştir.", "isCorrect": true },
+      { "label": "D", "text": "Cumhurbaşkanı, yayımlanmasını kısmen uygun bulmadığı bir kanunu bütünüyle on beş gün içinde TBMM'ye geri gönderir." },
+      { "label": "E", "text": "Cumhurbaşkanı yalnız olağan kanunları bir kez daha görüşülmek üzere TBMM'ye geri gönderebilir; Anayasa değişiklikleri geri gönderilemez." }
+    ],
+    "explanation": "Anayasa m.89, TBMM'ce ilk kez kabul edilen kanunların yayımlanması veya geri gönderilmesi için on beş günlük süre öngörür. Buna karşılık TBMM'nin geri gönderilen kanunu üye tamsayısının salt çoğunluğuyla aynen kabul etmesinden sonra Cumhurbaşkanının yayımlaması bakımından maddede ayrıca bir süre düzenlenmemiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 89",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "93",
+    "stem": "1982 Anayasası'na göre TBMM'nin toplanmasına ve tatiline ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "TBMM bir yasama yılında en çok üç ay tatil yapabilir." },
+      { "label": "B", "text": "TBMM her yıl Ekim ayının ilk günü kendiliğinden toplanır." },
+      { "label": "C", "text": "TBMM Başkanı, üyelerin beşte birinin yazılı istemi üzerine Meclisi toplantıya çağırır." },
+      { "label": "D", "text": "Ara verme veya tatil sırasında Cumhurbaşkanı TBMM'yi doğrudan toplantıya çağırabilir." },
+      { "label": "E", "text": "Ara verme veya tatil sırasında Cumhurbaşkanı yardımcılarının istemi üzerine Cumhurbaşkanı TBMM'yi toplantıya çağırır.", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.93'e göre ara verme veya tatil sırasında TBMM, Cumhurbaşkanınca toplantıya çağrılır. Meclis Başkanı da doğrudan veya üyelerin beşte birinin yazılı istemi üzerine çağrı yapar. Cumhurbaşkanı yardımcılarının istemine bağlı bir çağrı usulü öngörülmemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 93",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "84",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekilliği sıfatının kendiliğinden sona ermesi nedenlerinden biri değildir?",
+    "options": [
+      { "label": "A", "text": "İstifa", "isCorrect": true },
+      { "label": "B", "text": "Cumhurbaşkanı seçilme" },
+      { "label": "C", "text": "Bakan olarak atanma" },
+      { "label": "D", "text": "Ölüm" },
+      { "label": "E", "text": "Yasama döneminin sona ermesi" }
+    ],
+    "explanation": "Anayasa m.84'e göre istifa, milletvekilliğini tek başına ve kendiliğinden sona erdirmez. İstifanın geçerliliği önce TBMM Başkanlık Divanınca tespit edilir; ardından milletvekilliğinin düşmesine TBMM Genel Kurulunca karar verilir. Bu nedenle seçenekler arasında kendiliğinden sona erme nedeni olmayan hâl istifadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 84",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

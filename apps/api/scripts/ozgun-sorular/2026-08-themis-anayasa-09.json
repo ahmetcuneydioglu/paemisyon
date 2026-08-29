@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "127",
+    "stem": "Aşağıdakilerden hangisi 2017 Anayasa değişikliğiyle Cumhurbaşkanına verilen görevlerden biridir?",
+    "options": [
+      { "label": "A", "text": "Kanunları yayımlamak" },
+      { "label": "B", "text": "Türk Silahlı Kuvvetlerinin kullanılmasına karar vermek" },
+      { "label": "C", "text": "Millî Güvenlik Kurulunu toplantıya çağırmak ve Kurula başkanlık etmek" },
+      { "label": "D", "text": "Milletlerarası antlaşmaları onaylamak" },
+      { "label": "E", "text": "Mahallî idarelerin belirli kamu hizmetleri için kendi aralarında birlik kurmalarına izin vermek", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.127'deki mahallî idarelerin belirli kamu hizmetleri için kendi aralarında birlik kurmasına izin verme yetkisi, 2017 değişikliğiyle Bakanlar Kurulundan Cumhurbaşkanına geçirilmiştir. Diğer seçeneklerdeki görevler Cumhurbaşkanına daha önce de tanınmış görevlerdir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 104 ve 127",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "118",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Millî Güvenlik Kurulu üyesi değildir?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı yardımcıları" },
+      { "label": "B", "text": "İçişleri Bakanı" },
+      { "label": "C", "text": "Hava Kuvvetleri Komutanı" },
+      { "label": "D", "text": "Genelkurmay Başkanı" },
+      { "label": "E", "text": "Millî Güvenlik Kurulu Genel Sekreteri", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.118'e göre MGK; Cumhurbaşkanının başkanlığında Cumhurbaşkanı yardımcıları, Adalet, Millî Savunma, İçişleri ve Dışişleri bakanları, Genelkurmay Başkanı ile Kara, Deniz ve Hava Kuvvetleri komutanlarından oluşur. MGK Genel Sekreteri kurul üyesi değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 118",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "119",
+    "stem": "1982 Anayasası'na göre olağanüstü hâlin süresi her defasında en fazla ne kadar uzatılabilir; uzatma talebinde bulunan ve uzatmaya karar veren makamlar hangileridir?",
+    "options": [
+      { "label": "A", "text": "Dört ay - TBMM - Cumhurbaşkanı" },
+      { "label": "B", "text": "Altı ay - Cumhurbaşkanı - TBMM" },
+      { "label": "C", "text": "Dört ay - Millî Savunma Bakanı - Cumhurbaşkanı" },
+      { "label": "D", "text": "Dört ay - Cumhurbaşkanı - TBMM", "isCorrect": true },
+      { "label": "E", "text": "Altı ay - Genelkurmay Başkanı - Cumhurbaşkanı" }
+    ],
+    "explanation": "Anayasa m.119'a göre Cumhurbaşkanının talebi üzerine TBMM, olağanüstü hâlin süresini her defasında dört ayı geçmemek üzere uzatabilir. Savaş hâllerinde dört aylık üst sınır aranmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 119",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "106",
+    "stem": "Cumhurbaşkanlığı makamı, TBMM seçimlerine bir yıl veya daha az süre kala boşalmıştır. 1982 Anayasası'na göre seçimlerin zamanı ve kapsamıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız Cumhurbaşkanı seçimi, makamın boşaldığı günü izleyen altmışıncı günden sonraki ilk pazar günü yapılır." },
+      { "label": "B", "text": "Yalnız Cumhurbaşkanı seçimi kırk beş gün içinde yapılır." },
+      { "label": "C", "text": "Cumhurbaşkanı ve TBMM seçimleri birlikte, makamın boşaldığı günden sonraki altmışıncı günü takip eden ilk pazar günü yapılır." },
+      { "label": "D", "text": "Cumhurbaşkanı ve TBMM seçimleri birlikte kırk beş gün içinde yapılır.", "isCorrect": true },
+      { "label": "E", "text": "Cumhurbaşkanı ve TBMM seçimleri birlikte altmış gün içinde yapılır." }
+    ],
+    "explanation": "Anayasa m.106'ya göre Cumhurbaşkanlığı makamı boşaldığında kırk beş gün içinde Cumhurbaşkanı seçimi yapılır. Genel seçime bir yıl veya daha az kalmışsa TBMM seçimi de Cumhurbaşkanı seçimiyle birlikte yenilenir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 106",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "106",
+    "stem": "1982 Anayasası'na göre bakanlarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Görevleriyle ilgili suçlar nedeniyle Yüce Divanda yargılanabilirler." },
+      { "label": "B", "text": "Haklarında Meclis soruşturması açılabilir." },
+      { "label": "C", "text": "TBMM önünde ant içerek göreve başlarlar." },
+      { "label": "D", "text": "TBMM'ye karşı sorumludurlar.", "isCorrect": true },
+      { "label": "E", "text": "Görevleriyle ilgili olmayan suçlarda yasama dokunulmazlığına ilişkin hükümlerden yararlanırlar." }
+    ],
+    "explanation": "Anayasa m.106'ya göre bakanlar Cumhurbaşkanına karşı sorumludur; TBMM'ye karşı siyasi sorumlulukları yoktur. Diğer seçeneklerdeki ant, soruşturma, Yüce Divan ve görev dışı suçlarda dokunulmazlık hükümleri madde metniyle uyumludur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 106",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

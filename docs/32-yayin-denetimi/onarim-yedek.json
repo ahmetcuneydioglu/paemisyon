@@ -1,0 +1,79 @@
+[
+ {
+  "id": "d06e8252-bd96-42a6-ab6c-d3fca43155ed",
+  "onarim": {
+   "id": "d06e8252",
+   "tur": "cevap",
+   "yeniDogruHarf": "D",
+   "gerekce": "CMK m.22 — CEVAP ANAHTARI HATASI. Kok \"hakimin davaya bakmasinin yasakli oldugu kisilerden biri DEGILDIR\" diye soruyor. Isaretli C (\"vesayet iliskisi kalktiktan sonra eskiden vasisi oldugu kisi\") m.22/1-b ile YASAK KAPSAMINDA: \"SONRADAN KALKSA BILE ... vesayet ... iliskisi bulunmussa\". Gercek istisna D: m.22/1-e yalniz \"UCUNCU DERECE DAHIL kan hisimligi\" der, dorduncu derece (dayinin oglu) kapsam disidir. A (m.22/1-f ikinci derece kayin hismi), B (m.22/1-f kayin hismi ustsoy) ve E (m.22/1-d evlat edinme) de yasakli. Sik metinleri zaten dogru kurgulanmis; yalniz anahtar yanlis isaretlenmis. Soru metnine DOKUNULMADI."
+  },
+  "oncekiSiklar": [
+   {
+    "id": "8bc79dd9-98b6-4655-969b-2acd652517cd",
+    "label": "A",
+    "text": "Eski eşinin kardeşi",
+    "isCorrect": false
+   },
+   {
+    "id": "372e552c-d0dd-4a5e-8d16-156cf785eb1d",
+    "label": "B",
+    "text": "Eşinin babası",
+    "isCorrect": false
+   },
+   {
+    "id": "b9e36331-a532-47e1-8fa0-893f7d9e04ed",
+    "label": "C",
+    "text": "Vesayet ilişkisi kalktıktan sonra eskiden vasisi olduğu kişi",
+    "isCorrect": true
+   },
+   {
+    "id": "c17e14e1-d79a-43b1-be0d-8746fa995752",
+    "label": "D",
+    "text": "Dördüncü derece hısımı olan dayısının oğlu",
+    "isCorrect": false
+   },
+   {
+    "id": "f9a7e440-218d-485c-91ed-50dc0fd3a097",
+    "label": "E",
+    "text": "Evlat edindiği kişi",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "id": "d941b54f-5d0c-4afb-a5b8-5ed6889bf456",
+  "onarim": {
+   "id": "d941b54f",
+   "tur": "sikMetni",
+   "harf": "B",
+   "yeniMetin": "Seri muhakeme usulü, yaş küçüklüğü ve akıl hastalığı hâllerinde uygulanmaz.",
+   "gerekce": "CMK m.250 — MEVZUAT DEGISIKLIGI TEK SIKKI VURDU. Kok \"hangisi YANLISTIR\" tipinde; isaretli A (\"HAKIM tarafindan teklif edilir\") m.250/3'e gore gercekten yanlis (teklifi CUMHURIYET SAVCISI yapar). Ancak B sikki da yanlisa dondu: m.250/12'deki \"... ile sagir ve dilsizlik\" ibaresi Anayasa Mahkemesinin 5/11/2024 tarihli, E:2024/66, K:2024/188 sayili karariyla IPTAL EDILDI; istisna artik yalniz yas kucuklugu ve akil hastaligiyla sinirli. Iki yanlis sik olunca soru cozulemez hale geldi. ONARIM: B sikkindan \"ile sagir ve dilsizlik\" ibaresi cikarildi; B guncel metne uygun (dogru) ifadeye dondu, tek yanlis sik A kaldi. Isaretli cevap DEGISMEDI."
+  },
+  "oncekiSiklar": [
+   {
+    "id": "d2ef354a-fdeb-4cb2-90c8-109676ead114",
+    "label": "A",
+    "text": "Hâkim tarafından seri muhakeme usulünün uygulanması şüpheliye teklif edilir ve uygulanır.",
+    "isCorrect": true
+   },
+   {
+    "id": "e29f626c-d012-43a7-9b79-5dfefdc3acf2",
+    "label": "B",
+    "text": "Seri muhakeme usulü, yaş küçüklüğü ve akıl hastalığı ile sağır ve dilsizlik hâllerinde uygulanmaz.",
+    "isCorrect": false
+   },
+   {
+    "id": "26f9d7c6-c06b-4101-b2e6-e41c960706c6",
+    "label": "C",
+    "text": "Cumhuriyet savcısı veya kolluk görevlileri, şüpheliyi, seri muhakeme usulü hakkında bilgilendirir.",
+    "isCorrect": false
+   },
+   {
+    "id": "5dc4b27c-4645-470b-80c8-24b809ff94a4",
+    "label": "D",
+    "text": "Suçun iştirak hâlinde işlenmesi durumunda şüphelilerden birinin bu usulün uygulanmasını kabul etmemesi hâlinde seri muhakeme usulü uygulanmaz.",
+    "isCorrect": false
+   }
+  ]
+ }
+]

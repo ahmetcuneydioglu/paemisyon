@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "76",
+    "stem": "I. Milletvekili seçilme yaşının on sekiz olarak kabul edilmesi\nII. Askerlikle ilişiği olanların milletvekili seçilemeyeceğinin düzenlenmesi\nIII. TBMM'nin Anayasa Mahkemesine üye seçme yetkisinin kabul edilmesi\nYukarıdakilerden hangileri 1982 Anayasası'nda 2017 yılında yapılan değişikliklerdendir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II", "isCorrect": true },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "2017 tarihli 6771 sayılı Kanunla Anayasa m.76'da milletvekili seçilme yaşı on sekize indirilmiş ve 'yükümlü olduğu askerlik hizmetini yapmamış olanlar' ibaresi 'askerlikle ilişiği olanlar' şeklinde değiştirilmiştir. TBMM'nin Anayasa Mahkemesine üye seçme yetkisi ise 2010 değişikliğiyle kabul edilmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 76 ve 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "175",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Anayasa değişikliği teklif edebilir?",
+    "options": [
+      { "label": "A", "text": "Bakanlar" },
+      { "label": "B", "text": "TBMM üye tamsayısının beşte biri tutarındaki milletvekilleri" },
+      { "label": "C", "text": "TBMM üye tamsayısının üçte biri tutarındaki milletvekilleri", "isCorrect": true },
+      { "label": "D", "text": "TBMM Başkanı" },
+      { "label": "E", "text": "Cumhurbaşkanı" }
+    ],
+    "explanation": "Anayasa m.175'e göre Anayasanın değiştirilmesi, TBMM üye tamsayısının en az üçte biri tarafından yazıyla teklif edilebilir. Cumhurbaşkanının veya bakanların doğrudan değişiklik teklifi verme yetkisi yoktur.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 175",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "175",
+    "stem": "1982 Anayasası'na göre Anayasa değişikliklerine ilişkin kanunlarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Teklif, TBMM üye tamsayısının en az üçte biri tarafından yapılır." },
+      { "label": "B", "text": "Teklif Genel Kurulda iki defa görüşülür." },
+      { "label": "C", "text": "Cumhurbaşkanı değişiklik kanununu bir daha görüşülmek üzere TBMM'ye geri gönderebilir." },
+      { "label": "D", "text": "TBMM üye tamsayısının beşte üçü ile üçte ikisinden az oyla kabul edilen ve Cumhurbaşkanınca iade edilmeyen değişiklik kanunu halkoyuna sunulmak üzere yayımlanır." },
+      { "label": "E", "text": "Doğrudan veya Cumhurbaşkanının iadesi üzerine TBMM üye tamsayısının üçte iki çoğunluğuyla kabul edilen değişiklik kanununu Cumhurbaşkanı halkoyuna sunmak zorundadır.", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.175'e göre TBMM üye tamsayısının üçte iki çoğunluğuyla kabul edilen değişiklik kanununun veya gerekli görülen maddelerinin halkoyuna sunulması Cumhurbaşkanının takdirindedir; zorunlu değildir. Beşte üç ile üçte ikiden az oyla kabul edilip iade edilmeyen değişikliklerin halkoyuna sunulması ise zorunludur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 175",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "175",
+    "stem": "Anayasa değişikliği tekliflerinin görüşülmesi ve kabulüyle ilgili aşağıdaki ifadelerden hangisi söylenemez?",
+    "options": [
+      { "label": "A", "text": "Teklif en az iki yüz milletvekili tarafından verilebilir." },
+      { "label": "B", "text": "Teklif ivedilikle görüşülür.", "isCorrect": true },
+      { "label": "C", "text": "Oylama gizli yapılır." },
+      { "label": "D", "text": "Kabul edilen değişiklik kanunu Cumhurbaşkanınca TBMM'ye geri gönderilebilir." },
+      { "label": "E", "text": "Teklifin kabulünden sonra halkoylaması yoluna başvurulabilir." }
+    ],
+    "explanation": "Anayasa m.175'e göre değişiklik teklifleri Genel Kurulda iki defa görüşülür ve gizli oyla kabul edilir. Anayasa m.148 de değişikliklerin ivedilikle görüşülemeyeceği şartını şekil denetiminin unsurlarından biri olarak sayar. Bu nedenle teklifin ivedilikle görüşüleceği söylenemez.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 148 ve 175",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "148",
+    "stem": "Anayasa değişikliğine ilişkin bir kanunun Anayasa Mahkemesince şekil yönünden denetlenmesinde aşağıdaki eksikliklerden hangisinin tespiti değişikliğin iptaline neden olamaz?",
+    "options": [
+      { "label": "A", "text": "Teklifin içerik bakımından Anayasaya aykırı olması", "isCorrect": true },
+      { "label": "B", "text": "İvedilikle görüşülemeyeceği kuralına uyulmaması" },
+      { "label": "C", "text": "Teklif çoğunluğu şartına uyulmaması" },
+      { "label": "D", "text": "Oylama çoğunluğu şartına uyulmaması" },
+      { "label": "E", "text": "Teklifin Anayasada öngörülen asgari sayıdaki milletvekili tarafından verilmemesi" }
+    ],
+    "explanation": "Anayasa m.148'e göre Anayasa değişikliklerinin denetimi teklif ve oylama çoğunlukları ile ivedilikle görüşülemeyeceği şartına uyulup uyulmadığıyla sınırlıdır. Teklifin içeriğinin Anayasaya aykırı olduğu iddiası esas denetimi gerektirdiğinden şekil denetiminde iptal nedeni olamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 148 ve 175",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

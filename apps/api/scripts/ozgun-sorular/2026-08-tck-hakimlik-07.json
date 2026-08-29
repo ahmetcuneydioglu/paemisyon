@@ -1,0 +1,155 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "75",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre;\nI. takibi şikâyete bağlı, 6 aydan 2 yıla kadar hapis cezasını gerektiren konut dokunulmazlığının ihlali,\nII. 3 aydan 1 yıla kadar hapis cezasını gerektiren genel güvenliğin taksirle tehlikeye sokulması,\nIII. 1 yıldan 3 yıla kadar hapis veya adli para cezasını gerektiren gizliliğin ihlali\nsuçlarından hangileri bakımından ön ödeme hükümleri uygulanabilir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "TCK m.75'e göre ön ödeme; uzlaştırma kapsamındaki suçlar hariç olmak üzere, yalnız adli para cezasını gerektiren veya kanun maddesindeki hapis cezasının üst sınırı ALTI AYI AŞMAYAN suçlarda uygulanır; ayrıca maddede tek tek sayılan suçlar (m.171 genel güvenliğin taksirle tehlikeye sokulması, m.182/1, m.98/1 vb.) üst sınıra bakılmaksızın ön ödeme kapsamındadır. II'deki m.171 bu listededir. I şikâyete bağlı olduğundan uzlaştırma kapsamındadır; III'ün hapis üst sınırı (3 yıl) altı ayı aştığından her ikisi de ön ödemeye tâbi değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 75, 171",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "67",
+    "stem": "Türk ceza hukukuna göre aşağıdakilerin hangisi dava zamanaşımını durduran nedenlerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Şüpheli, mağdur veya suçtan zarar görenden birine ilk uzlaşma teklifinde bulunulması" },
+      { "label": "B", "text": "Şüpheli hakkında kamu davasının açılmasının ertelenmesine karar verilmesi" },
+      { "label": "C", "text": "Ceza davasının sonuçlanmasının diğer bir mercide çözülmesi gereken bir mesele sonucuna bağlı olduğu hâller" },
+      { "label": "D", "text": "Suç faili hakkında soruşturma ve kovuşturma yapılmasını sağlamak için yetkili merciden izin alınmasının beklenmesi" },
+      { "label": "E", "text": "Mahkeme tarafından sanık hakkında seri muhakeme usulünün uygulanmasına karar verilmesi", "isCorrect": true }
+    ],
+    "explanation": "TCK m.67/1'e göre dava zamanaşımını durduran hâller; izin veya karar alınmasının beklenmesi, bekletici mesele ve kaçak kararıdır. Ayrıca özel hükümler gereği ilk uzlaşma teklifi (CMK m.253/21), kamu davasının açılmasının ertelenmesi ve hükmün açıklanmasının geri bırakılması da zamanaşımını durdurur. Seri muhakeme usulünün uygulanması ise kanunda zamanaşımını durduran bir neden olarak öngörülmemiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 KPSS CEZA HUKUKU (ALAN)",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 67; 5271 sayılı CMK md. 231, 253",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "66",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre dava zamanaşımı süreleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Sürelerin belirlenmesinde suçun kanunda yer alan cezasının yukarı sınırı göz önünde bulundurulur." },
+      { "label": "B", "text": "Aynı fiilden dolayı tekrar yargılamayı gerektiren hâllerde, mahkemece bu husustaki talebin kabul edildiği tarihten itibaren fiile ilişkin zamanaşımı süresi yeni baştan işlemeye başlar." },
+      { "label": "C", "text": "Teşebbüs aşamasında kalan suçlarda süre, son hareketin yapıldığı günden itibaren işlemeye başlar." },
+      { "label": "D", "text": "Fiili işlediği sırada 12 yaşını doldurmuş olup da 15 yaşını doldurmamış olan çocuklar hakkında sürelerin yarısının geçmesiyle kamu davası düşer." },
+      { "label": "E", "text": "Sürelerin belirlenmesinde her durumda suçun temel şekli esas alınır.", "isCorrect": true }
+    ],
+    "explanation": "TCK m.66/3'e göre dava zamanaşımı süresinin belirlenmesinde, dosyadaki mevcut deliller itibarıyla suçun DAHA AĞIR CEZAYI GEREKTİREN NİTELİKLİ HÂLLERİ de göz önünde bulundurulur; 'her durumda temel şekil esas alınır' ifadesi bu nedenle yanlıştır. Sürelerde cezanın yukarı sınırı esas alınır (m.66/1), tekrar yargılama hâlinde süre yeni baştan işler (m.66/5), teşebbüste son hareket günü başlangıçtır (m.66/6) ve 12-15 yaş grubunda sürelerin yarısının geçmesiyle dava düşer (m.66/2).",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 66",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "69",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre kasten işlenen bir suçtan dolayı mahkûm olunan hapis cezasının infazının yapılamaması hâlinde cezaya bağlı hak yoksunluklarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Hak yoksunlukları uygulanmaz." },
+      { "label": "B", "text": "Ceza zamanaşımı süresi doluncaya kadar uygulanır.", "isCorrect": true },
+      { "label": "C", "text": "Dava zamanaşımı süresi kadar uygulanır." },
+      { "label": "D", "text": "Hükmün kesinleşmesinden itibaren 20 yıl uygulanır." },
+      { "label": "E", "text": "Hükmün kesinleşmesinden itibaren 10 yıl uygulanır." }
+    ],
+    "explanation": "TCK m.69'a göre cezaya bağlı olan veya hükümde belirtilen hak yoksunluklarının süresi, CEZA ZAMANAŞIMI doluncaya kadar devam eder. Ceza infaz edilmediği sürece hak yoksunlukları ayakta kalır; sona ermeleri cezanın infazına ya da ceza zamanaşımının dolmasına bağlıdır. 20 yıllık süre müsadere hükmünün infazına ilişkindir (m.70).",
+    "difficulty": "medium",
+    "sourceLabel": "2024 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 69, 70",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "75",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre ön ödemeyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Uzlaştırma kapsamındaki suçlar ön ödemeye tâbi değildir." },
+      { "label": "B", "text": "Kural olarak yalnız adli para cezasını gerektiren veya kanun maddesinde öngörülen hapis cezasının üst sınırı altı ayı aşmayan suçlar ön ödemeye tâbidir." },
+      { "label": "C", "text": "Ön ödeme nedeniyle kamu davasının açılmaması veya ortadan kaldırılması, müsadereye ilişkin hükümlerin uygulanmasını etkilemez." },
+      { "label": "D", "text": "Şüpheli, soruşturma giderleriyle birlikte ön ödeme miktarını belirlenen sürede ödediği takdirde hakkında kamu davasının açılmasının ertelenmesi kararı verilir.", "isCorrect": true },
+      { "label": "E", "text": "Cumhuriyet savcılığınca madde kapsamına giren suç nedeniyle ön ödeme işlemi yapılmadan dava açılması hâlinde de ön ödeme hükümleri uygulanır." }
+    ],
+    "explanation": "TCK m.75/1'e göre şüpheli, belirlenen miktarı soruşturma giderleriyle birlikte süresinde ödediği takdirde hakkında KAMU DAVASI AÇILMAZ; 'kamu davasının açılmasının ertelenmesi kararı verilir' ifadesi yanlıştır — erteleme, CMK m.171'deki ayrı bir kurumdur. Uzlaştırma kapsamındaki suçların hariç olması, altı aylık üst sınır kuralı, müsaderenin etkilenmemesi (m.75/2) ve dava açılmışsa mahkemece ön ödeme uygulanması (m.75/3) madde metnine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 75",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "70",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre müsadereye ilişkin hüküm, kesinleşmesinden itibaren en az kaç yıl geçtikten sonra infaz edilemez?",
+    "options": [
+      { "label": "A", "text": "5" },
+      { "label": "B", "text": "8" },
+      { "label": "C", "text": "10" },
+      { "label": "D", "text": "15" },
+      { "label": "E", "text": "20", "isCorrect": true }
+    ],
+    "explanation": "TCK m.70'e göre müsadereye ilişkin hüküm, kesinleşmeden itibaren YİRMİ YIL geçtikten sonra infaz edilmez. Müsaderenin kendine özgü bu zamanaşımı süresi; ceza zamanaşımının süreleri (m.68) ve Kabahatler Kanunu'ndaki mülkiyetin kamuya geçirilmesinin on yıllık yerine getirme zamanaşımı ile karıştırılmamalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 70",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "64",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre hükümlünün ölümüyle ilgili;\nI. Hapis cezaları ortadan kalkar.\nII. Henüz infaz edilmemiş adli para cezalarının infazına devam olunabilir.\nIII. Müsadereye ve yargılama giderlerine ilişkin olup ölümden önce kesinleşmiş bulunan hüküm infaz olunur.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve III", "isCorrect": true },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "TCK m.64/2'ye göre hükümlünün ölümü, hapis cezasını ve HENÜZ İNFAZ EDİLMEMİŞ adli para cezalarını ORTADAN KALDIRIR (II yanlış; ödenmiş adli para cezaları ise iade edilmez). Buna karşılık müsadereye ve yargılama giderlerine ilişkin olup ölümden önce kesinleşmiş bulunan hüküm infaz olunur (III doğru). Sanığın ölümünde ise kamu davası düşürülür; yalnızca niteliği gereği müsadereye tâbi eşya hakkında davaya devam olunabilir (m.64/1).",
+    "difficulty": "hard",
+    "sourceLabel": "2021 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 64",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "67",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre aşağıdakilerden hangisi dava zamanaşımını kesen nedenlerden birisi değildir?",
+    "options": [
+      { "label": "A", "text": "Şüphelilerden birinin Cumhuriyet Savcısı huzurunda ifadesinin alınması" },
+      { "label": "B", "text": "Şüphelilerden birinin tutuklanmasına karar verilmesi" },
+      { "label": "C", "text": "Suçla ilgili olarak iddianamenin düzenlenmesi" },
+      { "label": "D", "text": "Sanıklardan bir kısmı hakkında mahkûmiyet kararı verilmesi" },
+      { "label": "E", "text": "Soruşturma ve kovuşturma yapılması hususunda izin alınması", "isCorrect": true }
+    ],
+    "explanation": "TCK m.67/2'de dava zamanaşımını kesen nedenler sınırlı olarak sayılmıştır: şüpheli veya sanıklardan birinin savcı huzurunda ifadesinin alınması veya sorguya çekilmesi, tutuklama kararı verilmesi, iddianame düzenlenmesi ve sanıklardan bir kısmı hakkında da olsa mahkûmiyet kararı verilmesi. İZİN ALINMASI ise kesen değil, m.67/1'deki DURDURAN nedenlerdendir; kesilmede süre yeniden işlemeye başlar ve en fazla yarı oranında uzar, durmada ise engel kalkınca kaldığı yerden devam eder.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 67",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "49",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre hükmedilen en fazla ne kadar süreli hapis cezası, kısa süreli hapis cezasıdır?",
+    "options": [
+      { "label": "A", "text": "2 ay" },
+      { "label": "B", "text": "3 ay" },
+      { "label": "C", "text": "6 ay" },
+      { "label": "D", "text": "1 yıl", "isCorrect": true },
+      { "label": "E", "text": "2 yıl" }
+    ],
+    "explanation": "TCK m.49/2'ye göre hükmedilen BİR YIL veya daha az süreli hapis cezası, kısa süreli hapis cezasıdır. Süreli hapis cezası, kanunda aksi belirtilmeyen hâllerde bir aydan az, yirmi yıldan fazla olamaz (m.49/1); kısa süreli hapis cezası m.50'deki seçenek yaptırımlara çevrilebilir.",
+    "difficulty": "easy",
+    "sourceLabel": "2020 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 49",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

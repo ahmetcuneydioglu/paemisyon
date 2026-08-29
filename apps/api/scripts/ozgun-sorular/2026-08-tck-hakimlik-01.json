@@ -1,0 +1,354 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "13",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre bazı suçların, vatandaş ya da yabancı tarafından yabancı ülkede işlenmesi halinde Türk kanunları uygulanır.\nBuna göre aşağıdakilerden hangisi Kanun'da söz konusu suçlar arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Kasten öldürme", "isCorrect": true },
+      { "label": "B", "text": "Soykırım" },
+      { "label": "C", "text": "İnsanlığa karşı suçlar" },
+      { "label": "D", "text": "Parada sahtecilik" },
+      { "label": "E", "text": "Fuhuş" }
+    ],
+    "explanation": "TCK m.13'te vatandaş veya yabancı tarafından yabancı ülkede işlendiğinde Türk kanunlarının uygulanacağı suçlar sınırlı olarak sayılmıştır: İkinci Kitap Birinci Kısımdaki uluslararası suçlar (soykırım, insanlığa karşı suçlar, göçmen kaçakçılığı, insan ticareti), Dördüncü Kısım 3-8. bölümlerdeki devlete karşı suçlar, işkence, çevrenin kasten kirletilmesi, uyuşturucu imal ve ticareti, parada sahtecilik, fuhuş ile ulaşım araçlarının kaçırılması. Kasten öldürme bu listede yer almaz; genel kurallara (m.10-12) tâbidir.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "16",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre bir suçtan dolayı yabancı ülkede\nI. gözaltı,\nII. tutukluluk,\nIII. hükümlülük\nhallerinde geçen sürelerin hangileri aynı suçtan dolayı Türkiye'de verilecek cezadan mahsup edilir?",
+    "options": [
+      { "label": "A", "text": "Yalnız II" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "I ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "TCK m.16'ya göre nerede işlenmiş olursa olsun bir suçtan dolayı, yabancı ülkede gözaltında, gözlem altında, tutuklulukta veya hükümlülükte geçen süre, aynı suçtan dolayı Türkiye'de verilecek cezadan mahsup edilir. Madde dört hâli de kapsar; üç öncülün tamamı mahsup kapsamındadır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre aşağıdaki suçların hangisinden dolayı kovuşturma veya soruşturma yapılabilmesi Adalet Bakanının iznine bağlı değildir?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanına hakaret" },
+      { "label": "B", "text": "Türk milletini, Türkiye Cumhuriyeti Devletini, Devletin kurum ve organlarını aşağılama" },
+      { "label": "C", "text": "Savaş hali dışında işlenen temel milli yararlara karşı faaliyette bulunmak için yarar sağlama" },
+      { "label": "D", "text": "Yabancı devlet aleyhine asker toplama" },
+      { "label": "E", "text": "Suçtan kaynaklanan mal varlığı değerlerini aklama", "isCorrect": true }
+    ],
+    "explanation": "TCK'da Cumhurbaşkanına hakaretin kovuşturulması (m.299/3), Türk milletini ve Devleti aşağılamanın soruşturulması (m.301/4), temel milli yararlara karşı faaliyette yarar sağlamanın soruşturma ve kovuşturması (m.305) ile yabancı devlet aleyhine asker toplama (m.306) Adalet Bakanının iznine bağlanmıştır. Suçtan kaynaklanan malvarlığı değerlerini aklama (m.282) için ise böyle bir izin şartı yoktur; soruşturma resen yapılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 282, 299, 301, 305, 306",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türk savaş gemisine, yabancı bir ülkenin kara sularında bulunduğu esnada o ülke vatandaşı olmayan deniz korsanları tarafından saldırı düzenlenir. Bu saldırının sonucunda Türk mürettebattan iki kişi yaralanır.\nBu olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Suç Türkiye'de işlenmiş sayılır ve olaya Türk kanunları uygulanır.", "isCorrect": true },
+      { "label": "B", "text": "Suç yabancı ülkede işlenmiş sayılsa da failler mağdura göre şahsilik ilkesi gereğince Türkiye'de yargılanırlar." },
+      { "label": "C", "text": "Suç Türkiye'de işlenmiş sayılsa da faillere verilecek cezada yabancı ülke kanunlarının lehe olan hükümleri göz önünde bulundurulur." },
+      { "label": "D", "text": "Suç Türkiye'de işlenmiş sayılsa da bu fiilden dolayı yabancı ülkede tutuklulukta veya gözaltında geçirilen süreler, Türkiye'de hükmedilen cezadan mahsup edilmez." },
+      { "label": "E", "text": "Suçtan dolayı kişinin yabancı ülke mahkemesinde yargılanıp mahkum edilmiş olması bu fiilden dolayı Türkiye'de yeniden yargılanmasına engel teşkil eder." }
+    ],
+    "explanation": "TCK m.8/2'ye göre Türk deniz ve hava SAVAŞ araçlarında veya bu araçlarla işlenen suçlar, nerede bulunursa bulunsun (yabancı karasularında olsa bile) Türkiye'de işlenmiş sayılır; sivil araçlardan farklı olarak açık denizde bulunma şartı aranmaz. Suç Türkiye'de işlenmiş sayıldığından Türk kanunları uygulanır; m.16 gereği yabancı ülkede geçen tutukluluk süreleri mahsup edilir ve m.9 gereği yabancı mahkeme hükmü Türkiye'de yargılamaya engel olmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "13",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre aşağıdakilerden hangisi vatandaş veya yabancı tarafından yabancı ülkede işlenmesi durumunda Türk kanunlarının uygulanacağı suçlardan değildir?",
+    "options": [
+      { "label": "A", "text": "İşkence" },
+      { "label": "B", "text": "Deniz, demir yolu veya havayolu ulaşım araçlarının kaçırılması veya alıkonulması" },
+      { "label": "C", "text": "Rüşvet", "isCorrect": true },
+      { "label": "D", "text": "Uyuşturucu veya uyarıcı madde imal ve ticareti" },
+      { "label": "E", "text": "Çevrenin kasten kirletilmesi" }
+    ],
+    "explanation": "Rüşvet, TCK m.13/1'in (h) bendinde yer almaktaydı; ancak bu bent 26/6/2009 tarihli 5918 sayılı Kanunla YÜRÜRLÜKTEN KALDIRILMIŞTIR. Bu nedenle rüşvet, m.13 kapsamındaki suçlardan değildir. İşkence (c), çevrenin kasten kirletilmesi (d), uyuşturucu imal ve ticareti (e) ve ulaşım araçlarının kaçırılması (h yerine ı bendi) maddede hâlen sayılıdır. Mülga bendi bilmeyen eski kaynaklar bu soruda yanılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "A, Antalya'da bir bar toplantısına katılan Alman vatandaşı B'yi öldürmek amacıyla onun yemeğine zehir koyar. B, Almanya'ya döndüğünde zehrin etkisi ile rahatsızlığını ve hayatını kaybeder.\n5237 sayılı Türk Ceza Kanunu'na göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Ölüm neticesi Almanya'da ortaya çıktığı için suç Almanya'da işlenmiş sayılır." },
+      { "label": "B", "text": "Mağdur Alman vatandaşı olduğu için Türk mahkemelerinin yargılama yetkisi yoktur." },
+      { "label": "C", "text": "Alman mahkemelerinin fail A hakkında beraat kararı vermesi onun Türkiye'de yeniden yargılanmasına engel teşkil eder." },
+      { "label": "D", "text": "Alman mahkemelerinin fail A hakkında mahkumiyet kararı vermesi onun Türkiye'de yeniden yargılanmasına engel teşkil etmez.", "isCorrect": true },
+      { "label": "E", "text": "Fail hakkında bu suçtan dolayı verilebilecek ceza Alman ceza kanununda öngörülen cezanın üst sınırından fazla olamaz." }
+    ],
+    "explanation": "TCK m.8/1'e göre fiilin KISMEN VEYA TAMAMEN Türkiye'de işlenmesi ya da neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır. Hareket (zehir koyma) Antalya'da gerçekleştiğinden netice Almanya'da doğsa bile suç Türkiye'de işlenmiştir. m.9'a göre Türkiye'de işlenen suçtan dolayı yabancı ülkede hüküm verilmiş olsa bile Türkiye'de yeniden yargılama yapılır; mahkumiyet de beraat de engel değildir. Ceza sınırı karşılaştırması (m.19) Türkiye'de işlenen suçlarda uygulanmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8, 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Yabancı ülkede işlenen suçlar nedeniyle yabancı kişilerin iadesi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Türkiye'den talep edilen kişinin iadesi hakkında karar vermeye kural olarak kişinin bulunduğu yer ağır ceza mahkemesi yetkilidir." },
+      { "label": "B", "text": "Kişinin, iadesi konusunda rızası olsa dahi iade kararının yerine getirilmesi Adalet Bakanlığının onayına bağlıdır." },
+      { "label": "C", "text": "Kesinleşmiş mahkumiyet kararları bakımından iade talebi kabul edilemez.", "isCorrect": true },
+      { "label": "D", "text": "Geri verme talebinin nedenini oluşturan fiilin her iki devlet kanunlarına göre belli ağırlıkta suç olması gerekmektedir." },
+      { "label": "E", "text": "İade halinde kişi ancak iade kararına dayanak teşkil eden suçlardan dolayı yargılanabilir." }
+    ],
+    "explanation": "6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu'na göre iade, yalnızca soruşturma-kovuşturma için değil, HÜKMEDİLEN CEZANIN İNFAZI için de mümkündür; kesinleşmiş mahkumiyet hâlinde en az dört ay hapis cezası koşuluyla iade talep edilebilir. Bu nedenle (C) yanlıştır. İadeye kişinin bulunduğu yer ağır ceza mahkemesi karar verir, kararın yerine getirilmesi Adalet Bakanının onayına bağlıdır, çifte suçluluk ve hususilik (yalnız iadeye konu suçtan yargılama) ilkeleri geçerlidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 İDARİ HÂKİMLİK SINAVI",
+    "citation": "6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu md. 10-11, 18-19",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6706.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "20",
+    "stem": "Tüzel kişiler hakkında ceza yaptırımı uygulanamaması, ceza hukukunun ve suç politikasının temel ilkelerinden hangisinin bir sonucudur?",
+    "options": [
+      { "label": "A", "text": "Kanun önünde eşitlik" },
+      { "label": "B", "text": "İnsanilik" },
+      { "label": "C", "text": "Kanunilik" },
+      { "label": "D", "text": "Hukuk devleti" },
+      { "label": "E", "text": "Ceza sorumluluğunun şahsiliği", "isCorrect": true }
+    ],
+    "explanation": "TCK m.20/1 ceza sorumluluğunun şahsî olduğunu, kimsenin başkasının fiilinden dolayı sorumlu tutulamayacağını; m.20/2 ise tüzel kişiler hakkında CEZA yaptırımı uygulanamayacağını düzenler. Ceza sorumluluğu, insan davranışına ve kusura dayanır; organları aracılığıyla hareket eden tüzel kişinin fiil yeteneği bulunmadığından ceza uygulanamaması şahsîlik ilkesinin sonucudur. Tüzel kişilere yalnızca kanunda öngörülen güvenlik tedbiri niteliğindeki yaptırımlar uygulanabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 20",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "9",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre kanunun uygulama alanıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Hakkında Türkiye'de işlediği çevrenin kasten kirletilmesi suçundan dolayı yabancı ülkede hüküm verilmiş olan yabancı, Türkiye'de yeniden yargılanamaz." },
+      { "label": "B", "text": "Hakkında Türkiye'de işlediği fuhuş suçundan dolayı yabancı ülkede hüküm verilmiş olan Türk vatandaşı, Türkiye'de yeniden yargılanamaz." },
+      { "label": "C", "text": "Hakkında yabancı ülkede işlediği bir suçtan dolayı yabancı ülkede mahkumiyet kararı verilmiş olan bir yabancı, hiçbir surette Türkiye'de yeniden yargılanamaz." },
+      { "label": "D", "text": "Hakkında yabancı ülkede işlediği herhangi bir suçtan dolayı yabancı ülkede hüküm verilmiş olan bir Türk vatandaşı, hiçbir surette Türkiye'de yeniden yargılanamaz." },
+      { "label": "E", "text": "Hakkında yabancı ülkede işlediği parada sahtecilik suçundan dolayı yabancı ülkede mahkumiyet verilmiş olan yabancı, Türkiye'de yargılanamaz.", "isCorrect": true }
+    ],
+    "explanation": "TCK m.13/3'e göre yalnızca m.13/1'in (a) ve (b) bentlerindeki suçlarda (uluslararası suçlar ve devlete karşı suçlar) yabancı ülkede hüküm verilmiş olsa bile Adalet Bakanının talebiyle Türkiye'de yargılama yapılır. Parada sahtecilik ise (a)-(b) dışındaki bentlerde yer aldığından, yabancı ülkede mahkumiyet verilmişse Türkiye'de yeniden yargılama yapılamaz (E doğru). Türkiye'de işlenen suçlarda (A ve B) ise m.9 gereği yabancı hükme rağmen Türkiye'de yeniden yargılama yapılır; C ve D'deki 'hiçbir surette' ifadeleri de m.13/3'ün istisnası nedeniyle yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 9, 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "12",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre bir yabancı, Türk kanunlarınca aşağı sınırı en az 1 yıl hapis cezasını gerektiren bir suçu yabancı ülkede Türkiye'nin zararına işlediği ve kendisi Türkiye'de bulunduğu takdirde yargılama yapılması aşağıdakilerden hangisinin talebine kural olarak bağlıdır?",
+    "options": [
+      { "label": "A", "text": "Yargıtay" },
+      { "label": "B", "text": "Adalet Bakanı", "isCorrect": true },
+      { "label": "C", "text": "Şüphelinin yakalandığı yer Cumhuriyet Başsavcılığının" },
+      { "label": "D", "text": "Şüphelinin Türkiye'de en son adresinin bulunduğu yer Cumhuriyet Savcılığının" },
+      { "label": "E", "text": "Şüpheli hakkında ilk usul işlemlerinin yapıldığı yer Cumhuriyet Başsavcılığının" }
+    ],
+    "explanation": "TCK m.12/1'e göre bir yabancı, m.13'te yazılı suçlar dışında, Türk kanunlarına göre aşağı sınırı en az bir yıl hapis cezasını gerektiren bir suçu yabancı ülkede Türkiye'nin zararına işlediğinde ve kendisi Türkiye'de bulunduğunda Türk kanunlarına göre cezalandırılır; yargılama yapılması ADALET BAKANININ İSTEMİNE bağlıdır. İstem makamı Bakanlık değil bizzat Bakandır; bu ayrıntı sınavda bilinçli çeldirici olarak kullanılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "6",
+    "stem": "Aşağıdakilerden hangisi 5237 sayılı Türk Ceza Kanunu'nda tanımlanmamıştır?",
+    "options": [
+      { "label": "A", "text": "Kovuşturma", "isCorrect": true },
+      { "label": "B", "text": "Silah" },
+      { "label": "C", "text": "Çocuk" },
+      { "label": "D", "text": "Gece vakti" },
+      { "label": "E", "text": "İtiyadi suçlu" }
+    ],
+    "explanation": "TCK m.6'daki tanımlar arasında silah, çocuk (on sekiz yaşını doldurmamış kişi), gece vakti (güneşin batmasından bir saat sonra başlayıp doğmasından bir saat evvele kadar) ve itiyadi suçlu yer alır. Kovuşturma ise TCK'da değil, 5271 sayılı CMK m.2'de tanımlanmıştır: iddianamenin kabulüyle başlayıp hükmün kesinleşmesine kadar geçen evre.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "13",
+    "stem": "Aşağıdakilerden hangisi 5237 sayılı Türk Ceza Kanunu'nun 13. maddesinde, yabancı veya vatandaş tarafından yabancı ülkede işlenmesi hâlinde Türkiye'nin yargılama yapabileceği suçlar arasında sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Çevrenin kasten kirletilmesi" },
+      { "label": "B", "text": "İşkence" },
+      { "label": "C", "text": "Rüşvet", "isCorrect": true },
+      { "label": "D", "text": "Fuhuş" },
+      { "label": "E", "text": "Parada sahtecilik" }
+    ],
+    "explanation": "TCK m.13/1'in rüşveti düzenleyen (h) bendi, 26/6/2009 tarihli 5918 sayılı Kanunla yürürlükten kaldırılmıştır; rüşvet artık m.13 kapsamında değildir. Çevrenin kasten kirletilmesi, işkence, fuhuş ve parada sahtecilik maddede hâlen sayılmaktadır.",
+    "difficulty": "medium",
+    "sourceLabel": "2019 ARALIK ADLİ YARGI HÂKİMLİĞİ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "12",
+    "stem": "Suçun faili ya da mağduru vatandaş olmadığı halde ve suç Türkiye'de işlenmiş olmamasına rağmen suçun cezasız kalmaması gerektiği düşüncesinden hareketle yargılama yetkisi üstlenilmesi .......... ilkesiyle açıklanır.\nYukarıdaki ifadeye göre, noktalı olarak bırakılan yere aşağıdaki ilkelerden hangisi getirilir?",
+    "options": [
+      { "label": "A", "text": "Şahsilik ilkesi" },
+      { "label": "B", "text": "İkame yargı ilkesi", "isCorrect": true },
+      { "label": "C", "text": "Mülkilik ilkesi" },
+      { "label": "D", "text": "Evrensellik ilkesi" },
+      { "label": "E", "text": "Koruma ilkesi" }
+    ],
+    "explanation": "Failin ve mağdurun yabancı olduğu, Türkiye'yle bağı bulunmayan bir suçta, geri verme gerçekleşmediği için suçun cezasız kalmasını önlemek amacıyla suçlunun bulunduğu devletin yargılama yetkisi üstlenmesi İKAME YARGI ilkesidir; TCK m.12/3 bu ilkenin uygulamasıdır (yabancının yabancı ülkede bir yabancıya karşı işlediği suçta, cezanın alt sınırı üç yıldan az olmayan hapis gerektirmesi ve geri vermenin mümkün olmaması koşullarıyla Adalet Bakanının istemi üzerine yargılama yapılır). Evrensellik ise soykırım gibi tüm insanlığa karşı suçlarda her devlete kendiliğinden yetki tanıyan ayrı bir ilkedir.",
+    "difficulty": "hard",
+    "sourceLabel": "2019 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "7",
+    "stem": "5237 sayılı Türk Ceza Kanunu'nun zaman bakımından uygulamasıyla ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Geçici ve süreli kanunların, yürürlükte bulundukları süre içinde işlenmiş olan suçlar hakkında uygulanmasına devam edilir." },
+      { "label": "B", "text": "Suçun işlendiği zaman yürürlükte bulunan kanun ile sonradan yürürlüğe giren kanunların hükümleri farklı ise, failin lehine olan kanun uygulanır ve infaz olunur." },
+      { "label": "C", "text": "İşlendiği zaman yürürlükte bulunan kanuna göre suç sayılmayan bir fiilden dolayı kimseye ceza verilemez ve güvenlik tedbiri uygulanamaz." },
+      { "label": "D", "text": "Hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrürle ilgili olanlar hariç; infaz rejimine ilişkin hükümlerde failin lehine olan durum uygulanır.", "isCorrect": true },
+      { "label": "E", "text": "İşlendikten sonra yürürlüğe giren kanuna göre suç sayılmayan fiilden ötürü bir ceza veya güvenlik tedbiri hükmolunmuşsa infazı ve kanuni neticeleri kendiliğinden kalkar." }
+    ],
+    "explanation": "TCK m.7/3'e göre hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrürle ilgili olanlar HARİÇ, infaz rejimine ilişkin hükümler DERHAL uygulanır; failin lehine olup olmadığına bakılmaz. Lehe kanun kuralı (m.7/2) maddi ceza hukuku hükümleri içindir. Diğer seçenekler m.7/1, 7/2 ve 7/4'ün metnine uygundur.",
+    "difficulty": "hard",
+    "sourceLabel": "2019 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Aşağıdakilerden hangisi, ceza hukuku bakımından fiil olarak değerlendirilemez?",
+    "options": [
+      { "label": "A", "text": "On üç yaşındaki A'nın, komşusunun evinin camını isteyerek kırması" },
+      { "label": "B", "text": "A'nın, muayene için diz kapağına vuran doktora refleks olarak tekme atması", "isCorrect": true },
+      { "label": "C", "text": "A'nın, B'nin tehdidi üzerine sahte bir senet düzenlemesi" },
+      { "label": "D", "text": "A'nın meşru savunma hâli içerisinde B'yi yaralaması" },
+      { "label": "E", "text": "Sokak köpeğinden kaçan A'nın, zorunluluk hâli içerisinde B'nin evinden içeri girmesi" }
+    ],
+    "explanation": "Ceza hukukunda fiil (hareket), iradeye dayanan, insanın dış dünyaya yansıyan icraî veya ihmali davranışıdır. Refleks hareketler irade ürünü olmadığından hareket sayılmaz; doktorun vurmasıyla oluşan diz refleksi tekme, fiil değildir. Yaş küçüklüğü kusurluluğu, tehdit kusurluluğu, meşru savunma ve zorunluluk hâli hukuka aykırılığı/kusuru etkiler; ancak bu hâllerdeki davranışlar iradî olduğundan fiil niteliğini korur.",
+    "difficulty": "medium",
+    "sourceLabel": "2018 ARALIK İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 25, 28; ceza hukuku genel teorisi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türk ceza hukukunda kanunların yer yönünden uygulanması bakımından belirlenen temel ilke aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Mülkilik", "isCorrect": true },
+      { "label": "B", "text": "Faile göre şahsilik" },
+      { "label": "C", "text": "Mağdura göre şahsilik" },
+      { "label": "D", "text": "Devleti koruma" },
+      { "label": "E", "text": "Evrensellik" }
+    ],
+    "explanation": "TCK m.8/1 'Türkiye'de işlenen suçlar hakkında Türk kanunları uygulanır' diyerek MÜLKİLİK (ülkesellik) ilkesini temel ilke olarak benimser: ülkede işlenen suçta failin veya mağdurun uyrukluğuna bakılmaz. Şahsilik (m.10-11), koruma (m.12-13) ve evrensellik ilkeleri, yabancı ülkede işlenen suçlar için mülkiliği tamamlayan istisnai yetki kurallarıdır.",
+    "difficulty": "easy",
+    "sourceLabel": "2016 ARALIK ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "(I) Anayasa\n(II) Yolsuzluğa Karşı Özel Hukuk Sözleşmesi\n(III) 5326 sayılı Kabahatler Kanunu\n(IV) Doktrin\n(V) Yargıtay Ceza Genel Kurulu kararları\n(VI) Avrupa Konseyi Çocukların Sömürü ve İstismara Karşı Korunması Sözleşmesi\nYukarıdakiler hangileri ceza hukukunun doğrudan kaynağı değildir?",
+    "options": [
+      { "label": "A", "text": "III, IV ve V" },
+      { "label": "B", "text": "II, IV ve V" },
+      { "label": "C", "text": "I, III, V ve VI" },
+      { "label": "D", "text": "III ve IV" },
+      { "label": "E", "text": "IV ve V", "isCorrect": true }
+    ],
+    "explanation": "Ceza hukukunun doğrudan (asli, bağlayıcı) kaynakları Anayasa, kanunlar ve usulüne göre yürürlüğe konulmuş milletlerarası antlaşmalardır; uygulayıcı somut olayda bunlara aykırı karar veremez. Doktrin ve yüksek mahkeme kararları (içtihadı birleştirme kararları hariç) ise kuralın anlaşılması ve yorumlanmasında yararlanılan DOLAYLI kaynaklardır. Bu nedenle doğrudan kaynak olmayanlar IV (doktrin) ve V (Yargıtay CGK kararları)'tir.",
+    "difficulty": "medium",
+    "sourceLabel": "2016 KPSS",
+    "citation": "Ceza hukuku genel teorisi; Anayasa md. 38, 90",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "2",
+    "stem": "I. Kanunilik ilkesi hem ceza hem de güvenlik tedbirleri için geçerlidir.\nII. İdarenin düzenleyici işlemleri ile ceza konulamamasına karşılık hangi fiilin suç oluşturacağına ilişkin, kanunun kapsam ve koşulları bakımından belirlediği çerçeve hükmün içeriği, idarenin genel ve düzenleyici işlemleri ile doldurulabilir.\nIII. Kanunların suç ve ceza içeren hükümlerinin uygulanmasında kıyas yapılamaz.\nIV. İşlendiği zaman yürürlükte olan kanuna göre suç sayılan ancak daha sonra yürürlüğe giren kanuna göre suç olmaktan çıkarılan fiilden dolayı verilen cezanın infaz edilmemesi failin talebine bağlıdır.\nSuçta ve cezada kanunilik prensibi ile ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "I ve II" },
+      { "label": "B", "text": "I ve III", "isCorrect": true },
+      { "label": "C", "text": "I ve IV" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "III ve IV" }
+    ],
+    "explanation": "I doğrudur: TCK m.2/1 kanunilik ilkesini hem cezalar hem güvenlik tedbirleri için öngörür. III doğrudur: m.2/3 suç ve ceza içeren hükümlerde kıyası ve kıyasa yol açacak geniş yorumu yasaklar. II yanlıştır: m.2/2'ye göre idarenin düzenleyici işlemleriyle SUÇ VE CEZA KONULAMAZ; çerçeve hükmün idari işlemle doldurulması suçlarda değil, Kabahatler Kanunu m.4'te kabahatler için kabul edilmiştir. IV yanlıştır: m.7/1'e göre fiil suç olmaktan çıkarılmışsa cezanın infazı ve kanuni neticeleri KENDİLİĞİNDEN kalkar; failin talebi aranmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2013 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 2, 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "9",
+    "stem": "Türk vatandaşı T, Almanya'da bulunduğu sırada aralarında çıkan tartışma neticesinde Alman vatandaşı olan patronu P'yi öldürür. Hakkında verilen mahkûmiyet kararının infazından sonra T, Türkiye'ye yerleşir.\nBu olaya göre, aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "T'nin Türkiye'de yargılanabilmesi için P'nin yakınlarının veya Alman hükümetinin şikâyeti gereklidir." },
+      { "label": "B", "text": "Almanya'da T'nin hükümlülükte geçirmiş olduğu süre, aynı suçtan dolayı Türkiye'de verilecek cezadan mahsup edilir." },
+      { "label": "C", "text": "T hakkında Almanya'da hüküm verilmiş ve infaz edilmiş olduğu için Türkiye'de aynı suçtan dolayı tekrar yargılama yapılamaz.", "isCorrect": true },
+      { "label": "D", "text": "T, Türkiye'de verilen mahkûmiyet kararının infazı için Almanya'ya iade edilebilir." },
+      { "label": "E", "text": "T'nin Türkiye'de yargılanabilmesi Adalet Bakanının iznine bağlıdır." }
+    ],
+    "explanation": "TCK m.11/1'e göre Türk vatandaşının yabancı ülkede işlediği suçtan dolayı Türkiye'de yargılanabilmesi, m.13'teki suçlar dışında, o suçtan dolayı YABANCI ÜLKEDE HÜKÜM VERİLMEMİŞ olması koşuluna bağlıdır. Olayda Almanya'da hüküm verilmiş ve infaz edilmiştir; kasten öldürme m.13 kapsamında da olmadığından Türkiye'de yeniden yargılama yapılamaz (ne bis in idem). Yargılama zaten yapılamayacağı için mahsup da gündeme gelmez; vatandaş iade edilmez (Anayasa m.38).",
+    "difficulty": "hard",
+    "sourceLabel": "2012 KASIM İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 11, 13, 16",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "7",
+    "stem": "Güvenlik tedbirlerinin zaman bakımından uygulanmasında geçerli olan ilke, ---- ilkesinin doğal bir sonucu olarak ---- ilkesidir.\nYukarıdaki cümlede boşluklara gelebilecek en uygun kelimeler sırasıyla aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Kanunilik – geçmişe yürümezlik", "isCorrect": true },
+      { "label": "B", "text": "Geçmişe yürümezlik – derhâl uygulama" },
+      { "label": "C", "text": "Kanunilik – derhâl uygulama" },
+      { "label": "D", "text": "Derhâl uygulama – geçmişe yürürlük" },
+      { "label": "E", "text": "Geçmişe yürümezlik – kanunilik" }
+    ],
+    "explanation": "TCK m.2/1 kanunilik ilkesini güvenlik tedbirleri için de öngörür; m.7/1 de işlendiği zaman yürürlükteki kanuna göre suç sayılmayan fiilden dolayı güvenlik tedbiri uygulanamayacağını belirtir. Cezalar ile güvenlik tedbirleri zaman bakımından aynı rejime tâbidir: kanunilik ilkesinin doğal sonucu olarak aleyhe kanun GEÇMİŞE YÜRÜMEZ, lehe kanun geçmişe uygulanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2012 KASIM AVUKATLAR İÇİN İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 2, 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Aşağıdakilerden hangisi, ceza hukuku bakımından hareket sayılmaz?",
+    "options": [
+      { "label": "A", "text": "İhmali hareketler" },
+      { "label": "B", "text": "Tam bir şuur kaybı hâlinde icra edilen hareketler", "isCorrect": true },
+      { "label": "C", "text": "Seçimlik hareketler" },
+      { "label": "D", "text": "Tehdit altında yapılan hareketler" },
+      { "label": "E", "text": "Düşünce açıklamalarını yansıtan hareketler" }
+    ],
+    "explanation": "Ceza hukukunda hareket iradî olmalıdır. Ağır uyku, epilepsi nöbeti, hipnoz gibi tam şuur kaybı hâllerinde icra edilen davranışlar irade ürünü olmadığından hareket sayılmaz. İhmali davranış (TCK m.83 gibi) ve seçimlik hareketler kanunun tanıdığı hareket türleridir; tehdit altındaki davranış iradîdir (kusurluluğu etkiler, m.28); düşünce açıklaması da dış dünyaya yansıyan iradî bir harekettir.",
+    "difficulty": "medium",
+    "sourceLabel": "2012 KASIM İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 28; ceza hukuku genel teorisi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

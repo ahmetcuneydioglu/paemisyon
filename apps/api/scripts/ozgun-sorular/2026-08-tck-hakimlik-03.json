@@ -1,0 +1,358 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "A, B'den C'yi öldürmesini ister. B, A'nın havale ettiği para karşılığında teklifini kabul eder ve C'nin ailesi ile birlikte yaşadığı evin bulunduğu sokakta beklemeye başlar. B, karanlıkta C zannederek C'nin kardeşi D'ye ateş eder ve D yaşamını yitirir.\nOlayda kişilerin ceza sorumluluğu ve müsadere ile ilgili;\nI. B, D'yi kasten öldürmekten sorumludur.\nII. A, D'nin ölümünden azmettiren sıfatıyla sorumludur.\nIII. B, C'yi kasten öldürmeye teşebbüsten sorumludur.\nIV. A'nın B'ye havale ettiği para kazanç müsaderesinin konusunu oluşturur.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve III" },
+      { "label": "C", "text": "II ve IV" },
+      { "label": "D", "text": "I, II ve IV", "isCorrect": true },
+      { "label": "E", "text": "II, III ve IV" }
+    ],
+    "explanation": "Olayda şahısta hata (error in persona) vardır: B, C zannederek D'yi vurmuştur. Hedef alınan kişinin kimliğindeki bu yanılgı kastı etkilemez; B, D'yi kasten öldürmekten sorumludur (I doğru) ve ortada tek fiil olduğundan ayrıca C'ye yönelik teşebbüs sorumluluğu doğmaz (III yanlış). Şahısta hata azmettireni de etkilemez; A, D'nin ölümünden azmettiren olarak sorumludur (II doğru). Suçun işlenmesi için verilen para, TCK m.55 uyarınca kazanç müsaderesine tâbidir (IV doğru).",
+    "difficulty": "hard",
+    "sourceLabel": "2024 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 30, 38, 55",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "32",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre akıl hastalığının failin ceza sorumluluğuna etkisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Akıl hastalığı nedeniyle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişiye ceza verilmez." },
+      { "label": "B", "text": "Akıl hastalığı nedeniyle işlediği fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış olan kişiye ceza verilmez." },
+      { "label": "C", "text": "Akıl hastalığı nedeniyle işlediği fiille ilgili davranışlarını yönlendirme yeteneği önemli derecede olmamakla birlikte azalmış olan kişiye ceza verilmez.", "isCorrect": true },
+      { "label": "D", "text": "Akıl hastalığı nedeniyle işlediği fiilin hukuki anlam ve sonuçlarını algılayamayan kişi hakkında güvenlik tedbirine hükmolunur." },
+      { "label": "E", "text": "Davranışlarını yönlendirme yeteneği azalmış kişi hakkında tayin edilen ceza, süresi aynı olmak koşuluyla kısmen veya tamamen akıl hastalarına özgü güvenlik tedbiri olarak da uygulanabilir." }
+    ],
+    "explanation": "TCK m.32/1'e göre algılama yeteneği olmayan veya yönlendirme yeteneği ÖNEMLİ DERECEDE azalmış kişiye ceza verilmez, güvenlik tedbirine hükmolunur. m.32/2'ye göre yönlendirme yeteneği önemli derecede olmamakla birlikte azalmış kişiye ise ceza VERİLİR fakat indirilir (ağırlaştırılmış müebbet yerine 25 yıl, müebbet yerine 20 yıl; diğer hâllerde en fazla 1/6 indirim); bu ceza kısmen veya tamamen akıl hastalarına özgü güvenlik tedbiri olarak da uygulanabilir. (C) bu nedenle yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 32",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "Suça iştirak ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Suçun işlenmesinden önce yardımda bulunarak icrasını kolaylaştıran kişiye, işlenen suçun cezasına göre indirimli ceza verilir." },
+      { "label": "B", "text": "Kusur yeteneği olmadığını bildiği birisini suçun işlenmesinde araç olarak kullanan kişi, fail olarak sorumlu tutulur." },
+      { "label": "C", "text": "Özgü suçlarda ancak özel faillik niteliğini taşıyan kişi fail olabilir." },
+      { "label": "D", "text": "Başkasını suç işlemeye azmettiren kişi, azmettirdiği kişinin suçun icrasına başlamaktan vazgeçmesi hâlinde de azmettirdiği suçun cezası ile cezalandırılır.", "isCorrect": true },
+      { "label": "E", "text": "Azmettirenin belli olmaması hâlinde, kim olduğunun ortaya çıkmasını sağlayan faile işlenen suçun cezasına göre indirimli ceza verilebilir." }
+    ],
+    "explanation": "Bağlılık kuralı gereği (TCK m.40/3) suç ortaklarının sorumlu tutulabilmesi için suçun en azından teşebbüs aşamasına varmış olması gerekir; azmettirilen kişi icraya hiç başlamamışsa azmettiren cezalandırılamaz — (D) bu nedenle yanlıştır. Suçtan önce yardımla icrayı kolaylaştıran yardım edendir (m.39), kusur yeteneği olmayanı araç olarak kullanan dolaylı faildir (m.37/2), özgü suçlarda özel faillik niteliği taşımayanlar ancak azmettiren veya yardım eden olabilir (m.40/2) ve azmettirenin ortaya çıkmasını sağlayan faile indirim yapılabilir (m.38/3).",
+    "difficulty": "hard",
+    "sourceLabel": "2024 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 37-40",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "43",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre bir suç işleme kararının icrası kapsamında;\nI. birer gün arayla aynı kişiye karşı 3 defa kasten yaralama,\nII. A adlı kişiye karşı farklı zamanlarda 3 defa hırsızlık,\nIII. aynı kişiye karşı birer gün arayla yağma\nsuçlarının işlenmesi hâllerinin hangilerinde zincirleme suç hükümleri uygulanır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II", "isCorrect": true },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "TCK m.43/3'e göre kasten öldürme, kasten yaralama, işkence ve yağma suçlarında zincirleme suç hükümleri UYGULANMAZ; bu nedenle I ve III dışarıda kalır. Hırsızlıkta ise bir suç işleme kararının icrası kapsamında aynı kişiye karşı değişik zamanlarda birden fazla işlenme koşulu gerçekleştiğinden zincirleme suç hükümleri uygulanır (m.43/1): tek cezaya hükmedilir ve dörtte birden dörtte üçe kadar artırılır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 KPSS CEZA HUKUKU (ALAN)",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "35",
+    "stem": "Suça teşebbüsle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İcrasına başlanan suç, failin elinde olmayan nedenlerle tamamlanamamış olmalıdır." },
+      { "label": "B", "text": "Suç işleme konusunda karar verilmiş olması, teşebbüs hükümlerinin uygulanması için yeterli değildir." },
+      { "label": "C", "text": "Neticenin gerçekleşmesini failin kendisi değil bir başkası engellerse teşebbüs hükmü uygulanabilir." },
+      { "label": "D", "text": "Suça teşebbüs hâlinde fail hakkında suçun tamamlanmış hâline göre cezası indirilir." },
+      { "label": "E", "text": "Suçta kullanılan aracın elverişsiz olması hâllerinde teşebbüs hükümleri uygulanır.", "isCorrect": true }
+    ],
+    "explanation": "TCK m.35/1'e göre teşebbüs, işlenmesi kastedilen suçun ELVERİŞLİ hareketlerle doğrudan doğruya icrasına başlanıp elde olmayan nedenlerle tamamlanamamasıdır. Kullanılan aracın elverişsiz olması hâlinde suçun icrasına elverişli hareketlerle başlanmış sayılmaz; teşebbüs hükümleri uygulanmaz (işlenemez suç). Karar vermek yetmez, icraya başlamak gerekir; neticeyi failin kendi çabası değil başkası engellemişse gönüllü vazgeçme değil teşebbüs söz konusudur ve teşebbüste ceza tamamlanmış suça göre indirilir (m.35/2).",
+    "difficulty": "medium",
+    "sourceLabel": "2024 KPSS CEZA HUKUKU (ALAN)",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 35, 36",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "22",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre taksirle işlenen suçlarla ilgili;\nI. Suçlar, kanunda açıkça hüküm bulunmayan hâllerde hem kasten hem de taksirle işlenebilir.\nII. Taksirle işlenen suçtan dolayı verilecek olan ceza failin kusuruna göre belirlenir.\nIII. Birden fazla kişinin taksirle işlediği suçlarda her failin cezası kendi kusuruna göre ayrı ayrı belirlenir.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "I ve III" },
+      { "label": "D", "text": "II ve III", "isCorrect": true },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "I yanlıştır: TCK m.22/1'e göre taksirle işlenen fiiller, ancak kanunda AÇIKÇA belirtilen hâllerde cezalandırılır; 'açık hüküm yoksa her ikisiyle de işlenebilir' kuralı TCK'nın değil Kabahatler Kanunu m.9'un kuralıdır. II doğrudur: taksirli suçta ceza failin kusuruna göre belirlenir (m.22/4). III doğrudur: birden fazla kişinin taksirle işlediği suçlarda herkes kendi kusurundan sorumludur ve ceza ayrı ayrı belirlenir (m.22/5); taksirli suçlarda iştirak hükümleri uygulanmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 22",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "40",
+    "stem": "Kamu görevlisi A, görevi nedeniyle zilyetliği kendisine devredilmiş olan bir eşyayı zimmetine geçirmek için kamu görevlisi olmayan B ile anlaşır. A, eşyanın zimmete nasıl geçirileceğine dair B'nin gösterdiği yol sayesinde eşyayı zimmetine geçirir.\nBuna göre A ve B'nin ceza sorumluluklarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "A ve B zimmet suçundan müşterek fail sıfatı ile sorumludur." },
+      { "label": "B", "text": "A, zimmet suçunun faili; B ise azmettiren olarak sorumlu tutulur." },
+      { "label": "C", "text": "A, zimmet suçuna azmettiren; B ise fail sıfatıyla sorumludur." },
+      { "label": "D", "text": "A, zimmet suçunun dolaylı faili; B ise fail sıfatıyla sorumlu tutulur." },
+      { "label": "E", "text": "A, zimmet suçunun faili; B ise yardım eden olarak sorumludur.", "isCorrect": true }
+    ],
+    "explanation": "Zimmet özgü (mahsus) suçtur; TCK m.40/2'ye göre özgü suçlarda ancak özel faillik niteliğini taşıyan kişi (kamu görevlisi A) fail olabilir; suça iştirak eden diğer kişiler ancak azmettiren veya yardım eden olarak sorumlu tutulur. B suç işleme kararını oluşturmamış (azmettirme yok), suçun nasıl işleneceği konusunda yol göstererek yardımda bulunmuştur (m.39/2-a); bu nedenle B yardım edendir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 39, 40",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "31",
+    "stem": "Fiili işlediği sırada 12 yaşını doldurmamış olan çocukların ceza sorumluluğuyla ilgili;\nI. Haklarında ceza kovuşturması yapılamaz.\nII. Haklarında çocuklara özgü güvenlik tedbirleri uygulanabilir.\nIII. Ceza sorumlulukları sınırlı bir şekilde vardır.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "TCK m.31/1'e göre fiili işlediği sırada on iki yaşını doldurmamış çocukların ceza sorumluluğu YOKTUR; haklarında ceza kovuşturması yapılamaz ancak çocuklara özgü güvenlik tedbirleri uygulanabilir. 'Sınırlı ceza sorumluluğu' bu grup için söz konusu değildir; o değerlendirme, 12-15 yaş grubunda algılama ve yönlendirme yeteneğinin bulunması hâlinde (m.31/2) gündeme gelir.",
+    "difficulty": "easy",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 31",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "44",
+    "stem": "A, kasten işlediği bir fiil ile hem mala zarar verme hem de genel güvenliğin kasten tehlikeye sokulması suçlarının oluşumuna sebebiyet veriyor.\nBuna göre A'nın sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Her iki suçtan dolayı ayrı ayrı cezaya hükmolunur." },
+      { "label": "B", "text": "Her iki suçtan dolayı ayrı ayrı cezaya hükmolunur ancak sonuç cezalar dörtte birden dörtte üçüne kadar indirilir." },
+      { "label": "C", "text": "Bunlardan en hafif cezayı gerektiren suçtan dolayı cezalandırılır ancak sonuç ceza dörtte birden dörtte üçüne kadar artırılır." },
+      { "label": "D", "text": "Bunlardan sadece en ağır cezayı gerektiren suçtan dolayı cezalandırılır.", "isCorrect": true },
+      { "label": "E", "text": "Bunlardan sadece en ağır cezayı gerektiren suçtan dolayı cezalandırılır ancak sonuç ceza dörtte birden dörtte üçüne kadar artırılır." }
+    ],
+    "explanation": "Olayda tek fiille birden fazla FARKLI suç oluşmuştur: farklı neviden fikri içtima. TCK m.44'e göre işlediği bir fiil ile birden fazla farklı suçun oluşumuna sebebiyet veren kişi, bunlardan EN AĞIR cezayı gerektiren suçtan dolayı cezalandırılır; m.44'te herhangi bir artırım öngörülmemiştir. Dörtte birden dörtte üçe kadar artırım, zincirleme suça (m.43) ait kuraldır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 43, 44",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre;\nI. üst soy veya alt soy ilişkisinden doğan nüfuzu kullanmak suretiyle suça azmettiren,\nII. fiilin işlenmesinden sonra yardımda bulunacağını vaat eden,\nIII. başkasının suç işleme kararını kuvvetlendiren\nkişilerden hangileri kural olarak suçun failinden daha fazla ceza alır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I", "isCorrect": true },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "I ve III" }
+    ],
+    "explanation": "TCK m.38/1'e göre azmettiren, işlenen suçun cezası ile cezalandırılır; m.38/2'ye göre üst soy-alt soy ilişkisinden doğan nüfuz kullanılarak azmettirme hâlinde azmettirenin cezası üçte birden yarısına kadar ARTIRILIR — yani failden daha fazla ceza alır (I). Fiilden sonra yardım vaadinde bulunan ve suç işleme kararını kuvvetlendiren kişiler ise m.39/2 uyarınca YARDIM EDENdir; cezaları işlenen suçun cezasından indirilir, failden az ceza alırlar.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 38, 39",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "36",
+    "stem": "Aralarında husumet nedeniyle B'yi öldürmeye karar veren A, olay günü tenha bir sokakta karşılaştığı B'ye doğru, yakın mesafeden ve göğsünü hedef alarak 3 el ateş eder. Göğsüne tek kurşun isabet eden B, yaralanarak yere düşer. B'nin yerde can çekiştiğini gören A, yaptığından pişmanlık duyarak B'yi hastaneye yetiştirir. B yapılan tıbbî müdahalenin ardından bir süre hastanede kaldıktan sonra iyileşerek taburcu edilir.\nBuna göre A'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Kasten öldürme suçuna teşebbüsten sorumludur." },
+      { "label": "B", "text": "Kasten yaralama suçundan sorumludur.", "isCorrect": true },
+      { "label": "C", "text": "Taksirle yaralama suçundan sorumludur." },
+      { "label": "D", "text": "Genel güvenliği kasten tehlikeye sokma suçundan sorumludur." },
+      { "label": "E", "text": "B'nin tedavi edilerek kurtulmasını sağladığı için ceza sorumluluğu yoktur." }
+    ],
+    "explanation": "TCK m.36'ya göre fail, suçun icra hareketlerinden gönüllü vazgeçer veya kendi çabalarıyla neticenin gerçekleşmesini önlerse teşebbüsten cezalandırılmaz; ancak tamam olan kısım esasen bir suç oluşturuyorsa o suçun cezasıyla cezalandırılır. A, ölüm neticesini kendi çabasıyla (hastaneye yetiştirerek) önlemiştir; öldürmeye teşebbüsten sorumlu tutulmaz, o ana kadar gerçekleşen kasten yaralamadan sorumlu olur.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 36",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "42",
+    "stem": "Aşağıdaki suçlardan hangisine bileşik suç hükümleri uygulanamaz?",
+    "options": [
+      { "label": "A", "text": "Tehdit kullanmak suretiyle işlenen hükümlü veya tutuklunun kaçması suçu" },
+      { "label": "B", "text": "Bir suçu gizlemek amacıyla işlenen kasten öldürme suçu", "isCorrect": true },
+      { "label": "C", "text": "Cebir kullanmak suretiyle işlenen kişiyi hürriyetinden yoksun kılma suçu" },
+      { "label": "D", "text": "Tehdit kullanmak suretiyle işlenen konut dokunulmazlığının ihlali suçu" },
+      { "label": "E", "text": "Cinsel yönden taciz şeklinde işlenen işkence suçu" }
+    ],
+    "explanation": "TCK m.42'ye göre bileşik suç, biri diğerinin UNSURUNU veya AĞIRLAŞTIRICI NEDENİNİ oluşturması dolayısıyla tek fiil sayılan suçtur (yağma = hırsızlık + cebir/tehdit gibi). 'Bir suçu gizlemek amacıyla öldürme'de (m.82/1-h) ağırlaştırıcı olan başka bir SUÇ değil, failin SAİKİdir; gizlenen suç öldürmenin unsuruna dönüşmez ve failin o suçtan sorumluluğu ayrıca devam eder. Diğer seçeneklerde cebir/tehdit/taciz, ilgili suçun unsuru veya nitelikli hâli olarak bileşik suç yapısı içinde erir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 42, 82",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "35",
+    "stem": "Aşağıdaki faillerin hangisi hakkında teşebbüs hükümleri uygulanır?",
+    "options": [
+      { "label": "A", "text": "Cüzdan ve cep telefonunu vermesi için tehdit ettiği mağdurdan sadece cüzdanını alabilen K" },
+      { "label": "B", "text": "Bakıcılığını yaptığı bebeğe hediye gelen pahalı giysileri gizlice kendi çantasına koyup evine götürmek isteyen fakat hepsini sığdıramadığı için bir kısmını ertesi güne bırakan L" },
+      { "label": "C", "text": "5 kasa şeftali çalmak isterken 4 kasayı topladıktan sonra kalanını toplamaya fırsat kalmadan bekçinin gelmesi üzerine tüm kasaları bırakıp kaçan M", "isCorrect": true },
+      { "label": "D", "text": "Hastanede yatan Y'yi öldürmek isterken odaları karıştırarak hatayla Z'yi öldüren N" },
+      { "label": "E", "text": "Hasmını kaçırıp bir depoya hapseden fakat gelen ihbar üzerine mağdurun polis tarafından baskınla kurtarılması esnasında olay yerinden kaçan O" }
+    ],
+    "explanation": "M, hırsızlığın icrasına başlamış ancak bekçinin gelmesi (elinde olmayan neden) üzerine malları fiilî hâkimiyetine geçiremeden kaçmıştır; suç tamamlanmadığından teşebbüs hükümleri uygulanır (TCK m.35). K'nin yağması cüzdanı almasıyla, L'nin hırsızlığı eşyayı çantasına koymasıyla tamamlanmıştır; N şahısta hata nedeniyle tamamlanmış kasten öldürmeden sorumludur (m.30); O'nun kişiyi hürriyetinden yoksun kılması hapsetmeyle tamamlanmış kesintisiz suçtur.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 30, 35",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "38",
+    "stem": "A, husumetli olduğu B'yi öldürmesi için 17 yaşındaki C ile anlaşır. 2 gün sonra tek başına B'nin iş yeri yakınına gelen C, uygun koşulların gerçekleşmesini bekler. C, B'yi iş yerinden tek başına ayrılması üzerine bir müddet takip ettikten sonra göğüs bölgesinden bıçaklayarak öldürür.\n5237 sayılı Türk Ceza Kanunu'na göre olayla ilgili;\nI. Muhakeme sürecinde azmettirenin A olduğunun tespit edilmesini sağlayan C'nin cezasında indirim yapılabilir.\nII. C'nin yaşı A'nın alacağı ceza bakımından önemli değildir.\nIII. A, B'nin ölümü bakımından kasten öldürme suçuna azmettiren sıfatıyla sorumludur.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "I ve III", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "I doğrudur: TCK m.38/3'e göre azmettirenin belli olmaması hâlinde kim olduğunun ortaya çıkmasını sağlayan fail hakkında ceza indirimi yapılabilir. III doğrudur: A, kasten öldürmeye azmettirendir ve işlenen suçun cezasıyla cezalandırılır. II yanlıştır: m.38/2'ye göre ÇOCUKLARIN suça azmettirilmesi hâlinde (17 yaşındaki C çocuktur) üst soy-alt soy ilişkisi aranmaksızın azmettirenin cezası artırılır; C'nin yaşı A'nın cezasını doğrudan etkiler.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 MEZUNLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 38",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "36",
+    "stem": "A'nın sahibi olduğu tarlada ekmiş olduğu ekinlere, komşusu B'nin inekleri sürekli zarar vermektedir. Bu durumdan bıkan A, bir gün inekleri yine tarlasında görünce sinirlenir ve B'yi tüfekle vurarak öldürmek ister. Bir el ateş ettikten sonra yaptığından pişmanlık duyan A, hemen sağlık ekiplerine haber verir ve böylece yaralanan B kurtarılır.\n5237 sayılı Türk Ceza Kanunu'na göre A'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Gönüllü vazgeçme hükümleri uyarınca kasten yaralamadan sorumludur.", "isCorrect": true },
+      { "label": "B", "text": "Gönüllü vazgeçme hükümleri uyarınca ceza sorumluluğu yoktur." },
+      { "label": "C", "text": "Kasten öldürmeye teşebbüsten sorumludur." },
+      { "label": "D", "text": "Etkin pişmanlık hükümleri uyarınca ceza sorumluluğu yoktur." },
+      { "label": "E", "text": "Etkin pişmanlık hükümleri uyarınca kasten yaralamadan sorumludur." }
+    ],
+    "explanation": "A, icra hareketlerine başlamış (ateş etmiş) ancak ölüm neticesinin gerçekleşmesini kendi çabasıyla (sağlık ekiplerine haber vererek) önlemiştir; bu, TCK m.36'daki GÖNÜLLÜ VAZGEÇMEdir. Fail teşebbüsten cezalandırılmaz; tamam olan kısım (kasten yaralama) suç oluşturduğundan yalnızca ondan sorumludur. Etkin pişmanlık ise suç TAMAMLANDIKTAN sonra, kanunda özel hüküm bulunan suçlarda gündeme gelen ayrı bir kurumdur; olayda uygulanmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 36",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "30",
+    "stem": "A, kardeşi K'yi öldürmek isterken gece karanlığında K'ye benzeyen Z'yi öldürür.\nBuna göre A'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Taksirle ölüme sebebiyet verme suçundan sorumludur." },
+      { "label": "B", "text": "Kasten öldürme suçunun basit hâlinden sorumludur.", "isCorrect": true },
+      { "label": "C", "text": "Kasten öldürme suçunun nitelikli hâlinden sorumludur." },
+      { "label": "D", "text": "Z'ye karşı işlenmiş taksirle ölüme sebebiyet verme suçundan, K'ye karşı işlenmiş kasten öldürme suçuna teşebbüsten sorumludur." },
+      { "label": "E", "text": "Z'ye karşı işlenmiş kasten öldürme suçunun basit hâlinden, K'ye karşı işlenmiş kasten öldürme suçunun nitelikli hâline teşebbüsten sorumludur." }
+    ],
+    "explanation": "Şahısta hata (error in persona) kastı kaldırmaz; A tamamlanmış kasten öldürmeden sorumludur ve tek fiil olduğundan ayrıca K'ye teşebbüs sorumluluğu doğmaz. Nitelikli hâl (kardeşe karşı öldürme, m.82/1-d) uygulanamaz; çünkü TCK m.30/2 uyarınca suçun nitelikli hâllerinin gerçekleştiği hususunda hataya düşen kişi bu hatasından yararlanır — öldürülen Z failin kardeşi değildir ve fail kardeşini öldürdüğünü de bilmemektedir. Sonuç: kasten öldürmenin BASİT hâli.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 30, 82",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "40",
+    "stem": "Sadece özel faillik vasfını taşıyanlar tarafından işlenebilen suçlara gerçek özgü suç; herkes tarafından işlenebilen bir suçun, belirli özelliklere sahip bir kimse tarafından işlenmesinin suçu nitelikli hâle getirdiği suçlara görünüşte özgü suç denir.\nBuna göre aşağıdakilerden hangisi görünüşte özgü suça örnek teşkil eder?",
+    "options": [
+      { "label": "A", "text": "Resmî belgede sahtecilik suçunun, bu belgeyi düzenlemeye yetkili kamu görevlisi tarafından işlenmesi", "isCorrect": true },
+      { "label": "B", "text": "Bir kamu görevlisinin işkence suçunu işlemesi" },
+      { "label": "C", "text": "İşkence suçunun işlenmesine kamu görevlisi haricindeki kişilerin iştirak etmesi" },
+      { "label": "D", "text": "Bir kamu görevlisinin görevi nedeniyle zilyetliği kendisine devredilmiş malı zimmetine geçirmesi" },
+      { "label": "E", "text": "Bir kamu görevlisinin görevinin sağladığı nüfuzu kötüye kullanmak suretiyle bir başkasını kendisine menfaat sağlamaya zorlaması" }
+    ],
+    "explanation": "Resmî belgede sahtecilik (TCK m.204) herkes tarafından işlenebilir (m.204/1); belgeyi düzenlemeye YETKİLİ KAMU GÖREVLİSİNCE işlenmesi ise suçun daha ağır cezayı gerektiren hâlidir (m.204/2). Temel şekli herkes tarafından işlenebildiği için bu, görünüşte özgü suçtur. İşkence (m.94), zimmet (m.247) ve irtikâp (m.250) ise yalnızca kamu görevlisince işlenebilen GERÇEK özgü suçlardır; bunlara iştirak edenler ancak azmettiren veya yardım eden olabilir (m.40/2).",
+    "difficulty": "hard",
+    "sourceLabel": "2023 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 40, 204, 247",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "29",
+    "stem": "Haksız tahrikle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Haksız tahrik oluşturan fiilin suç niteliği taşıması zorunludur.", "isCorrect": true },
+      { "label": "B", "text": "Haksız tahrik oluşturan fiili gerçekleştiren kişinin kusur yeteneğine sahip olması gerekmez." },
+      { "label": "C", "text": "Haksız tahrik sonucu işlenen suçun, kural olarak haksız tahrikte bulunan kişiye yönelmiş olması gerekir." },
+      { "label": "D", "text": "Haksız tahrik oluşturan fiile maruz kalan kişi ile bunun sonucu suç işleyen kişinin aynı olması zorunlu değildir." },
+      { "label": "E", "text": "Haksız tahrik oluşturan fiil; şahıs veya mal varlığı değerlerine yönelik olabilir." }
+    ],
+    "explanation": "TCK m.29 'haksız bir fiilin meydana getirdiği hiddet veya şiddetli elemin etkisi altında suç işleyen kimse' der; tahriki oluşturan fiilin HAKSIZ olması yeterlidir, ayrıca SUÇ oluşturması zorunlu değildir — (A) bu nedenle yanlıştır. Tahrik fiilini gerçekleştirenin kusur yeteneği aranmaz, tepki kural olarak tahrik edene yönelmelidir, tahrike maruz kalanla suçu işleyen farklı kişiler olabilir (yakınına yapılan haksız fiil gibi) ve haksız fiil kişinin şahsına veya malvarlığına yönelik olabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 29",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Milletvekillerinin sahip olduğu yasama sorumsuzluğunun ceza hukuku anlamında hukukî mahiyeti aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Hukuka uygunluk sebebi" },
+      { "label": "B", "text": "Şahsi cezasızlık sebebi", "isCorrect": true },
+      { "label": "C", "text": "Kusurluluğu etkileyen hâl" },
+      { "label": "D", "text": "Objektif cezalandırılabilme şartı" },
+      { "label": "E", "text": "Soruşturma ve kovuşturma şartı" }
+    ],
+    "explanation": "Yasama sorumsuzluğunda fiil tipe uygun ve hukuka aykırı kalmaya devam eder; milletvekili, sahip olduğu sıfat (kişisel özellik) nedeniyle cezalandırılamaz. Faile bağlı bu cezalandırılabilme engeli, ŞAHSİ CEZASIZLIK SEBEBİdir. Muhakeme engeli (soruşturma-kovuşturma şartı) olan yasama DOKUNULMAZLIĞINDAN farkı buradadır: dokunulmazlık kaldırılınca yargılama yapılabilirken, sorumsuzluk kapsamındaki açıklamalar hiçbir zaman cezalandırılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 İDARİ HÂKİMLİK SINAVI",
+    "citation": "Türkiye Cumhuriyeti Anayasası md. 83; ceza hukuku genel teorisi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "37",
+    "stem": "A; uzağı iyi göremeyen B'ye, atış talimi sırasında ahşap çit direği olduğuna inandırdığı C'yi hedef aldırarak ateş ettiriyor. C, başına isabet eden kurşunun etkisiyle hayatını kaybediyor.\nBuna göre A, kasten öldürme suçundan dolayı aşağıdaki sıfatların hangisiyle sorumlu tutulur?",
+    "options": [
+      { "label": "A", "text": "Birlikte fail" },
+      { "label": "B", "text": "Müşterek fail" },
+      { "label": "C", "text": "Azmettiren" },
+      { "label": "D", "text": "Dolaylı fail", "isCorrect": true },
+      { "label": "E", "text": "Yardım eden" }
+    ],
+    "explanation": "TCK m.37/2'ye göre suçun işlenmesinde bir başkasını ARAÇ olarak kullanan kişi fail olarak sorumlu tutulur (dolaylı faillik). A, hileyle B'nin iradesini sakatlamış, C'yi insan olarak değil cansız hedef olarak gösterip B'yi araç olarak kullanmıştır; B kastsız hareket ettiğinden asıl sorumluluk dolaylı fail A'dadır. Azmettirme, suç işleme düşüncesi olmayan kişide SUÇ İŞLEME KARARI oluşturmayı gerektirir; burada B suç işlediğini dahi bilmediğinden azmettirme söz konusu olmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 37",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "22",
+    "stem": "Türk ceza hukukunda taksirle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Taksirli suçlarda meydana gelen netice fail tarafından öngörülmez." },
+      { "label": "B", "text": "Taksirle işlenen suçlarda iştirak hükümleri uygulanmaz." },
+      { "label": "C", "text": "Birden fazla kişinin taksirle işlediği suçlarda, herkes kendi kusurundan dolayı sorumludur." },
+      { "label": "D", "text": "Taksirli davranış icrai veya ihmali nitelikte olabilir." },
+      { "label": "E", "text": "Neticenin ortaya çıkmasında failin taksirli hareketinin yanında mağdurun taksirli hareketi de etkili olmuşsa faile ceza verilmez.", "isCorrect": true }
+    ],
+    "explanation": "Mağdurun kusurunun neticeye katkısı, failin ceza sorumluluğunu ORTADAN KALDIRMAZ; failin kusuru değerlendirilirken göz önünde bulundurulur ve ceza kusura göre belirlenir (TCK m.22/4). 'Faile ceza verilmez' ifadesi bu nedenle yanlıştır. Basit taksirde netice öngörülmez (öngörülseydi bilinçli taksir olurdu), taksirli suçlarda iştirak uygulanmaz ve herkes kendi kusurundan sorumludur (m.22/5); taksirli davranış icrai veya ihmali olabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 22",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

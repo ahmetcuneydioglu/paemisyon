@@ -1,0 +1,36 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "79",
+    "stem": "I. Yüksek Seçim Kurulu üyeleri, Yargıtay ve Danıştay genel kurullarınca gösterilen adaylar arasından Cumhurbaşkanınca seçilir.\nII. Yüksek Seçim Kurulu, TBMM üyelerinin seçim tutanaklarını kabul eder.\nIII. Bir milletvekilinin yükümlü olduğu askerlik hizmetini yapmadığının seçimden sonra ortaya çıkması hâlinde seçim tutanağını iptal eder.\nYüksek Seçim Kurulunun oluşumu ve görevleriyle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "I ve III", "isCorrect": true },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III" }
+    ],
+    "explanation": "Anayasa m.79'a göre YSK üyelerinin altısı Yargıtay, beşi Danıştay genel kurullarınca kendi üyeleri arasından seçilir; Cumhurbaşkanının seçim yetkisi yoktur. YSK, TBMM üyelerinin seçim tutanaklarını kabul eder. Seçimden sonra milletvekili seçilme yeterliliğine ilişkin ortaya çıkan durumların denetimi ise YSK'nın anayasal görevleri arasında değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 79",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "69",
+    "stem": "1982 Anayasası'na göre siyasi parti kapatma davasını açan ve davaya bakan merciler aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "Anayasa Mahkemesi - Anayasa Mahkemesi" },
+      { "label": "B", "text": "Anayasa Mahkemesi - Yargıtay" },
+      { "label": "C", "text": "Yargıtay - Anayasa Mahkemesi" },
+      { "label": "D", "text": "Yüksek Seçim Kurulu - Anayasa Mahkemesi" },
+      { "label": "E", "text": "Yargıtay Cumhuriyet Başsavcısı - Anayasa Mahkemesi", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.69'a göre siyasi partilerin kapatılması, YARGITAY CUMHURİYET BAŞSAVCISININ açacağı dava üzerine ANAYASA MAHKEMESİNCE kesin olarak karara bağlanır.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 69",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

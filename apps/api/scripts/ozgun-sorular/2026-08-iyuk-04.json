@@ -1,0 +1,53 @@
+[
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "41",
+    "stem": "2577 sayılı İYUK'a göre, bağlantı bulunduğu iddiasının mahkemece reddedilmesi üzerine yapılan başvuru sonucunda bölge idare mahkemesinin bağlantı bulunmadığı yönünde verdiği karara karşı başvuru yoluyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Karara karşı on beş gün içinde en yakın bölge idare mahkemesine itiraz edilebilir" },
+      { "label": "B", "text": "Karara karşı on beş gün içinde Danıştaya itiraz edilebilir" },
+      { "label": "C", "text": "Karar kesindir; karara karşı başvuruda bulunulamaz", "isCorrect": true },
+      { "label": "D", "text": "Karara karşı on gün içinde en yakın bölge idare mahkemesine itiraz edilebilir" },
+      { "label": "E", "text": "Karara karşı on gün içinde Danıştaya itiraz edilebilir" }
+    ],
+    "explanation": "Mahkemenin bağlantı iddiasını kabul etmemesine ilişkin ara kararına karşı İYUK m.41 uyarınca on beş gün içinde ilgili bölge idare mahkemesine veya şartlarına göre Danıştaya başvurulabilir. Ancak bu başvuru üzerine bağlantının bulunup bulunmadığı konusunda bölge idare mahkemesince verilen karar, m.42/3 gereğince KESİNDİR.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 KPSS",
+    "citation": "2577 sayılı İYUK md. 41, 42/3",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "20/B",
+    "stem": "2577 sayılı İYUK'a göre merkezî ve ortak sınavlara ilişkin yargılama usulünde savunma süresiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Savunmanın süresi içinde verilmemesi hâlinde dosya tekemmül etmemiş sayılır" },
+      { "label": "B", "text": "Savunma süresi bir defaya mahsus olmak üzere en fazla üç gün uzatılabilir", "isCorrect": true },
+      { "label": "C", "text": "Savunma süresi uzatılamaz" },
+      { "label": "D", "text": "Savunma süresi beş gündür" },
+      { "label": "E", "text": "Savunma süresi yedi gündür" }
+    ],
+    "explanation": "İYUK m.20/B/1-ç uyarınca merkezî ve ortak sınavlara ilişkin yargılama usulünde savunma süresi, dava dilekçesinin tebliğinden itibaren ÜÇ GÜNDÜR ve bu süre bir defaya mahsus olmak üzere EN FAZLA ÜÇ GÜN uzatılabilir. Savunmanın verilmesi veya sürenin geçmesiyle dosya tekemmül etmiş sayılır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "2577 sayılı İYUK md. 20/B/1-ç",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": "30",
+    "stem": "2577 sayılı İYUK'a göre aşağıdakilerden hangisine ilişkin yanlışlığın düzeltilmesi talep edilemez?",
+    "options": [
+      { "label": "A", "text": "Hüküm fıkrasındaki hesaplamalar" },
+      { "label": "B", "text": "Tarafların iddialarının sonucu" },
+      { "label": "C", "text": "Tarafların sıfatları" },
+      { "label": "D", "text": "Mahkemenin görev ve yetkisi", "isCorrect": true },
+      { "label": "E", "text": "Tarafların ad ve soyadları" }
+    ],
+    "explanation": "İYUK m.30/1; iki tarafın ADI VE SOYADI, SIFATI ve İDDİALARI SONUCUNA ilişkin yanlışlıklar ile hüküm fıkrasındaki HESAP YANLIŞLIKLARININ düzeltilmesinin istenebileceğini düzenler. Mahkemenin görev ve yetkisine ilişkin değerlendirme bu sınırlı düzeltme kapsamına girmez.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "2577 sayılı İYUK md. 30",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2577.pdf"
+  }
+]

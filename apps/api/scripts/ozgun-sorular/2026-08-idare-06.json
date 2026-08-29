@@ -1,0 +1,194 @@
+[
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "2942 sayılı Kamulaştırma Kanunu'na göre trampa yoluyla kamulaştırmada idarenin vereceği taşınmazın değeri, kamulaştırma bedelinin yüzde kaçını aşamaz?",
+    "options": [
+      { "label": "A", "text": "110" },
+      { "label": "B", "text": "115" },
+      { "label": "C", "text": "120", "isCorrect": true },
+      { "label": "D", "text": "125" },
+      { "label": "E", "text": "130" }
+    ],
+    "explanation": "Kamulaştırmada bedel kural olarak NAKDEN VE PEŞİN ödenir; nakden ödemenin istisnası TRAMPA, peşin ödemenin istisnası ise TAKSİTLENDİRMEDİR. Kamulaştırma bedelinin trampa yoluyla ödenmesi MALİKİN KABULÜNE BAĞLIDIR; malik kabul etmezse para ile ödeme yapılmak zorundadır. Trampa yoluyla malike verilecek taşınmaz, idarenin KAMU HİZMETİNE TAHSİS ETMEDİĞİ (özel emlaki) bir taşınmaz olmalıdır. Bu taşınmaz kamulaştırma bedelini kısmen veya tamamen karşılayacak miktarda olabilir ve bedeller arasındaki fark taraflarca nakit olarak karşılanır. Ancak İDARENİN TRAMPA OLARAK VERECEĞİ TAŞINMAZ MALIN DEĞERİ, KAMULAŞTIRMA BEDELİNİN YÜZDE YÜZ YİRMİSİNİ AŞAMAZ.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "2942 sayılı Kamulaştırma Kanunu md. 26",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Aşağıdakilerden hangisi idarenin ancak olağanüstü dönemlerde kullanabileceği bir mal edinme usulüdür?",
+    "options": [
+      { "label": "A", "text": "İstimval", "isCorrect": true },
+      { "label": "B", "text": "Kamulaştırma" },
+      { "label": "C", "text": "Devletleştirme" },
+      { "label": "D", "text": "Geçici işgal" },
+      { "label": "E", "text": "Cebri icra" }
+    ],
+    "explanation": "İSTİMVAL, olağanüstü durumlarda özel kişinin mülkiyetindeki MENKUL bir mala el konmasıdır; savaş döneminde özel kişilerin arabalarına el konulması buna örnektir. Üç temel özelliği vardır: (1) KONUSU OLAN MAL MENKUL OLMALIDIR, (2) OLAĞANÜSTÜ BİR DURUM (savaş, olağanüstü hâl) bulunmalıdır, (3) İSTİSNAİ BİR YETKİDİR. Buna karşılık KAMULAŞTIRMA yalnızca TAŞINMAZLAR üzerinde ve olağan dönemlerde de yapılabilir; DEVLETLEŞTİRME özel teşebbüslerin kamu hizmeti niteliği taşıyan işletmelerinin kanunla kamuya geçirilmesidir; GEÇİCİ İŞGAL ise taşınmazın belirli bir süre için kullanılmasıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "İdare Hukuku – İdarenin Mal Edinme Usulleri",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Kamulaştırmanın aşağıdaki aşamalarından hangisi diğerlerine göre daha önce gerçekleştirilir?",
+    "options": [
+      { "label": "A", "text": "Kamu yararı kararının onaylanması" },
+      { "label": "B", "text": "Kamulaştırma bedeli için yeterli ödeneğin temin edilmesi", "isCorrect": true },
+      { "label": "C", "text": "Kamulaştırma kararının alınması" },
+      { "label": "D", "text": "Kamulaştırılacak taşınmazın belirlenmesi" },
+      { "label": "E", "text": "Satın alma usulünün denenmesi" }
+    ],
+    "explanation": "Bir kamulaştırma işleminde önce İDARİ AŞAMA uygulanır, bu aşamada sonuç çıkmazsa ADLİ AŞAMAYA geçilir. Kamulaştırmanın İDARİ AŞAMALARI sırasıyla şöyledir: (1) YETERLİ ÖDENEK TESİSİ, (2) KAMU YARARI KARARI, (3) TAŞINMAZIN TESPİTİ, (4) KAMULAŞTIRMA KARARI, (5) SATIN ALMA USULÜNÜN DENENMESİ. Yani her şeyden önce kamulaştırma bedeli için yeterli ödenek sağlanmalı, sonra diğer aşamalara geçilmelidir. Satın alma usulünde malik veya yetkili temsilcisi, yazının tebliğ tarihinden itibaren ON BEŞ GÜN içinde başvurursa pazarlık görüşmeleri yapılır; anlaşma olursa idare bedeli KIRK BEŞ GÜN içinde yatırır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "2942 sayılı Kamulaştırma Kanunu md. 3, 5, 6, 7, 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Kolluk faaliyetlerinin hukuka uygun gerçekleştirilmesinde kural olarak\nI. ölçülülük,\nII. idari işlemin unsurlarına uygunluk,\nIII. temel hak ve özgürlüklere aykırı davranmama\nilkelerinden hangileri esas alınır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "KAMU DÜZENİNİ sağlamaya yönelik bütün faaliyetlere KOLLUK faaliyeti denir. Kolluk, izin verme ya da vermeme, emir ya da ihtar, erteleme, kapatma, yasaklama ve yaptırım kararları gibi geniş yetkilere sahiptir; ancak bu yetkileri kullanırken şu sınırlara uymak zorundadır: (1) ANAYASAL SINIRLARA (özellikle m.13'teki temel hak ve hürriyetlerin sınırlanması rejimine) dikkat edilmeli, (2) ÖLÇÜLÜ olmalı — kamu düzenini tehdit eden durum ile bunu ortadan kaldırmak için uygulanacak kolluk faaliyetinin içeriği ve sınırı arasında ölçülülük bulunmalıdır (konu öğesi), (3) kamu düzeni dışında siyasi, ideolojik, dinsel, cinsel, mezhepsel, etnik veya felsefi bir amaç GÜDÜLMEMELİ, aksi hâlde yetki saptırması oluşur (maksat öğesi), (4) eşitlik ve hukuk devleti ilkelerine uygun davranılmalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 13; İdare Hukuku – Kolluk Faaliyeti",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Alper'e ait bir taşınmaz üzerinde Enerji Piyasası Düzenleme Kurulu tarafından kamulaştırma yapılıyor. Ancak kamulaştırılan taşınmaz üzerinde kamulaştırma ve devir amacına uygun hiçbir işlem tesis edilmiyor.\n2942 sayılı Kamulaştırma Kanunu'na göre söz konusu taşınmaz üzerinde Alper'in geri alma hakkının doğabilmesi için bu durumun, kamulaştırma bedelinin kesinleşmesinden itibaren kural olarak en az kaç yıl devam etmesi gerekir?",
+    "options": [
+      { "label": "A", "text": "1" },
+      { "label": "B", "text": "2" },
+      { "label": "C", "text": "5", "isCorrect": true },
+      { "label": "D", "text": "7" },
+      { "label": "E", "text": "10" }
+    ],
+    "explanation": "2942 sayılı Kanun'a göre KAMULAŞTIRMA BEDELİNİN KESİNLEŞMESİNDEN İTİBAREN BEŞ YIL İÇİNDE, kamulaştırmayı yapan idarece veya kamulaştırma ve devir amacına uygun hiçbir işlem veya tesisat yapılmaz veya kamu yararına yönelik bir ihtiyaca tahsis edilmeyerek taşınmaz mal olduğu gibi bırakılırsa, ESKİ MAL SAHİBİNİN VEYA MİRASÇILARININ GERİ ALMA HAKKI DOĞAR. Bu hak, doğmasından itibaren BİR YIL İÇİNDE KULLANILMAZSA DÜŞER. Geri alma hâlinde mal sahibi veya mirasçıları, kamulaştırma bedelini aldıkları günden itibaren işleyecek yasal faizi ile birlikte ödeyerek taşınmaz malını geri alabilir. Taşınmaza, kamulaştırmayı yapan idare dışında BAŞKA BİR İDARENİN ihtiyaç duyması hâlinde geri alma mümkün değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "2942 sayılı Kamulaştırma Kanunu md. 23",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Bir kamu tüzel kişisi, başka bir kamu tüzel kişisine ait bir taşınmaza ihtiyaç duyuyor ve ödeyeceği bedeli de belirterek mal sahibi kamu tüzel kişisine yazılı olarak başvuruyor. Ancak mal sahibi kamu tüzel kişisi taşınmazın devrine muvafakat etmiyor.\nBu durumda ortaya çıkan anlaşmazlığı, alıcı kurum tüzel kişisinin başvurusu üzerine kesin olarak karara bağlama yetkisi aşağıdakilerden hangisine aittir?",
+    "options": [
+      { "label": "A", "text": "Danıştay Birinci Dairesi", "isCorrect": true },
+      { "label": "B", "text": "Danıştayın ilgili İdari Dava Dairesi" },
+      { "label": "C", "text": "Danıştay İdari Dava Daireleri Kurulu" },
+      { "label": "D", "text": "Taşınmazın bulunduğu yerin yargı çevresine dâhil olduğu idare mahkemesi" },
+      { "label": "E", "text": "Taşınmazın bulunduğu yerin yargı çevresine dâhil olduğu bölge idare mahkemesi" }
+    ],
+    "explanation": "Kamu tüzel kişilerinin ve kurumlarının sahip oldukları TAŞINMAZ MAL, KAYNAK VEYA İRTİFAK HAKLARI DİĞER BİR KAMU TÜZEL KİŞİSİ VEYA KURUMU TARAFINDAN KAMULAŞTIRILAMAZ. Bunlara ihtiyaç duyan idare, 2942 sayılı Kanun'un 8 inci maddesi uyarınca bedeli tespit eder ve bu bedel esas alınarak ödeyeceği bedeli de belirterek mal sahibi idareye yazılı olarak başvurur. MAL SAHİBİ İDARE, DEVRE MUVAFAKAT ETMEZ VEYA SÜRESİNDE CEVAP VERMEZSE ANLAŞMAZLIK, ALICI İDARENİN BAŞVURUSU ÜZERİNE DANIŞTAY BİRİNCİ DAİRESİNCE İNCELENEREK İKİ AY İÇİNDE KESİN KARARA BAĞLANIR. Danıştay Birinci Dairesi, Danıştayın idari (istişari) görev yapan dairesidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "2942 sayılı Kamulaştırma Kanunu md. 30",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Kamulaştırmayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Gerçek kişiler ile özel hukuk tüzel kişilerinin mülkiyetindeki mallar kamulaştırılabilir." },
+      { "label": "B", "text": "Taşınır ve taşınmaz mallar kamulaştırılabilir.", "isCorrect": true },
+      { "label": "C", "text": "Kamulaştırma bedeli bazı durumlarda taksitle ödenebilir." },
+      { "label": "D", "text": "Kısmen veya tamamen kamulaştırma yapılabilir." },
+      { "label": "E", "text": "Kamulaştırma yoluyla irtifak hakkı kurulabilir." }
+    ],
+    "explanation": "Anayasa m.46'ya göre 'Devlet ve kamu tüzel kişileri; kamu yararının gerektirdiği hallerde, gerçek karşılıklarını peşin ödemek şartıyla, ÖZEL MÜLKİYETTE BULUNAN TAŞINMAZ MALLARIN tamamını veya bir kısmını, kanunla gösterilen esas ve usullere göre, kamulaştırmaya ve bunlar üzerinde idarî irtifaklar kurmaya yetkilidir.' TAŞINIRLAR KAMULAŞTIRMANIN KONUSUNU OLUŞTURMAZ; bu nedenle B yanlıştır. Taşınırlara el konulması ancak olağanüstü dönemlerde İSTİMVAL yoluyla mümkündür. Kamulaştırma bedelinin taksitlendirilmesi ise Anayasa m.46'da sayılan istisnai hâllerde (tarım reformu, büyük enerji ve sulama projeleri, iskân, yeni ormanların yetiştirilmesi, kıyıların korunması ve turizm amacıyla kamulaştırma) mümkündür ve taksitlendirme süresi beş yılı aşamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 46; 2942 sayılı Kamulaştırma Kanunu md. 3",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Aşağıdakilerden hangisi adli kolluk faaliyetidir?",
+    "options": [
+      { "label": "A", "text": "Adliye binasına girişlerde üst araması yapılması" },
+      { "label": "B", "text": "Çocukların sağlığına zarar verebilecek kırtasiye malzemelerinin ithalatının önlenmesi" },
+      { "label": "C", "text": "Ormanların korunması" },
+      { "label": "D", "text": "Özel güvenlik hizmeti sunulması" },
+      { "label": "E", "text": "Hırsızlık suçu şüphelisinin aranarak bulunması", "isCorrect": true }
+    ],
+    "explanation": "İDARİ KOLLUK, suç işlenmeden devreye giren kolluktur; amacı suçun işlenmesini engellemektir ve ÖNLEYİCİ işlevi vardır (toplantı alanlarına girişte üst araması, GBT ve kimlik sorgulama gibi). ADLİ KOLLUK ise SUÇ İŞLENDİKTEN SONRA devreye girer, failler ve delillerle ilgilenir; ARAMA, EL KOYMA VE SUÇLUYU BULMA gibi faaliyetler adli kolluk faaliyetidir. İki kolluğun temel farkları: idari kolluk önleyici, adli kolluk bastırıcıdır; idari kolluk idari makamların (İçişleri, vali, kaymakam) emrinde, adli kolluk SAVCININ emrinde çalışır; idari kolluk uyuşmazlıkları idari yargıda, adli kolluk uyuşmazlıkları adli yargıda çözülür; idari kolluk makamları düzenleyici işlem yapabilirken adli kolluk makamları yapamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "İdare Hukuku – Adli Kolluk ve İdari Kolluk Ayrımı",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2559.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "2942 sayılı Kamulaştırma Kanunu'na göre aşağıdakilerden hangisinin verdiği kamu yararı kararının kural olarak ayrıca onanması gerekmez?",
+    "options": [
+      { "label": "A", "text": "Büyükşehir belediyesi" },
+      { "label": "B", "text": "Yükseköğretim Kurulu" },
+      { "label": "C", "text": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı", "isCorrect": true },
+      { "label": "D", "text": "İl idare kurulu" },
+      { "label": "E", "text": "Atatürk Kültür, Dil ve Tarih Yüksek Kurumu" }
+    ],
+    "explanation": "2942 sayılı Kanun m.6'ya göre kamu yararı kararı, kararı veren makama göre farklı mercilerin ONAYI ile tamamlanır: köy ihtiyar kurulları ve belediye encümenleri kararları, ilçelerde kaymakamın, il merkezlerinde valinin; ilçe idare kurulları, il daimî encümenleri ve il idare kurulları kararları valinin; üniversite yönetim kurulu kararları rektörün; YÖK kararları Kurul başkanının; TRT yönetim kurulu kararları genel müdürün; Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Yönetim Kurulu kararları Yüksek Kurum Başkanının; kamu kurumları yönetim kurulu veya idare meclisi kararları denetimine bağlı oldukları bakanın onayıyla tamamlanır. Buna karşılık CUMHURBAŞKANI VEYA BAKANLIKLAR TARAFINDAN VERİLEN KAMU YARARI KARARLARININ AYRICA ONAYLANMASI GEREKMEZ.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "2942 sayılı Kamulaştırma Kanunu md. 5, 6",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Aşağıdakilerden hangisinin kamulaştırma yapma yetkisi yoktur?",
+    "options": [
+      { "label": "A", "text": "Elazığ İl Özel İdaresi" },
+      { "label": "B", "text": "Sosyal Güvenlik Kurumu" },
+      { "label": "C", "text": "Bingöl Üniversitesi" },
+      { "label": "D", "text": "Türk Silahlı Kuvvetleri Mehmetçik Vakfı", "isCorrect": true },
+      { "label": "E", "text": "Bankacılık Düzenleme ve Denetleme Kurumu" }
+    ],
+    "explanation": "Anayasa m.46 uyarınca kamulaştırma yetkisi yalnızca DEVLET VE KAMU TÜZEL KİŞİLERİNE aittir; ÖZEL HUKUK KİŞİLERİ KAMULAŞTIRMA YAPAMAZ. TÜRK SİLAHLI KUVVETLERİ MEHMETÇİK VAKFI, adında 'Türk Silahlı Kuvvetleri' geçse de bir ÖZEL HUKUK TÜZEL KİŞİSİDİR (vakıf) ve kamulaştırma yetkisi yoktur. Diğer seçeneklerdekilerin tamamı kamu tüzel kişiliğine sahiptir: il özel idaresi bir mahalli idare, üniversite bilimsel-kültürel-teknik kamu kurumu, Sosyal Güvenlik Kurumu idari kamu kurumu ve BDDK düzenleyici ve denetleyici kurumdur. Düzenleyici ve denetleyici kurumların kamulaştırma yapma yetkisi bulunduğu unutulmamalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS ALAN BİLGİSİ",
+    "citation": "1982 Anayasası md. 46; 2942 sayılı Kamulaştırma Kanunu md. 1",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2942.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "Devletleştirme ile kamulaştırma arasında aşağıdakilerin hangisi açısından kural olarak fark bulunmaz?",
+    "options": [
+      { "label": "A", "text": "Bedel karşılığı gerçekleştirilme", "isCorrect": true },
+      { "label": "B", "text": "Yalnızca taşınmazlar üzerinde gerçekleştirilme" },
+      { "label": "C", "text": "Ancak idari kararla gerçekleştirilme" },
+      { "label": "D", "text": "Yargısal denetimi gerçekleştirecek merci" },
+      { "label": "E", "text": "Ancak kanunla gerçekleştirilme" }
+    ],
+    "explanation": "Kamulaştırma ile devletleştirme arasındaki farklar şunlardır: kamulaştırma için 'KAMU YARARININ GEREKLİ KILMASI' yeterliyken devletleştirme için 'KAMU YARARININ ZORUNLU KILMASI' gerekir; KAMULAŞTIRMANIN KONUSU TAŞINMAZ MALDIR, DEVLETLEŞTİRMENİN KONUSU İSE MAL DEĞİL KAMU HİZMETİ NİTELİĞİ TAŞIYAN ÖZEL TEŞEBBÜS (işletme)dir; KAMULAŞTIRMA İDARİ KARARLA gerçekleşirken DEVLETLEŞTİRME İÇİN KANUN GEREKLİDİR; kamulaştırma işleminin yargısal denetimi İDARİ YARGIDA, devletleştirme işleminin denetimi ise ANAYASA MAHKEMESİNDE olur. HER İKİ MAL EDİNME YÖNTEMİNDE DE İDARE MALIN YA DA HİZMETİN GERÇEK BEDELİNİ ÖDEMEK ZORUNDADIR; bu nedenle bedel karşılığı gerçekleştirilme yönünden aralarında fark yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 46, 47; 2942 sayılı Kamulaştırma Kanunu",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "b396a7c3-6f30-490e-9401-4be88e87a91b",
+    "stem": "6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun'a göre; zemin yapısı veya üzerindeki yapılaşma sebebiyle can ve mal kaybına yol açma riski taşıyan riskli alan, aşağıdakilerin hangisi tarafından kararlaştırılır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı", "isCorrect": true },
+      { "label": "B", "text": "Çevre, Şehircilik ve İklim Değişikliği bakanı" },
+      { "label": "C", "text": "Afet ve acil durum yönetimi başkanı" },
+      { "label": "D", "text": "Mahallin mülki idare amiri" },
+      { "label": "E", "text": "Belediye meclisi" }
+    ],
+    "explanation": "6306 sayılı Kanun m.2/1-ç'ye göre RİSKLİ ALAN, 'zemin yapısı veya üzerindeki yapılaşma sebebiyle can ve mal kaybına yol açma riski taşıyan, CUMHURBAŞKANINCA KARARLAŞTIRILAN ALAN'ı ifade eder. Bu bilgi idari yargı bakımından da önemlidir: 2577 sayılı İYUK'un 20/A maddesinin birinci fıkrasının (f) bendi uyarınca '6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun uyarınca alınan CUMHURBAŞKANI KARARLARI' İVEDİ YARGILAMA USULÜNE tabidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "6306 sayılı Kanun md. 2; 2577 sayılı İYUK md. 20/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6306.pdf"
+  }
+]

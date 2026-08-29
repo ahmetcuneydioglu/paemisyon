@@ -1,0 +1,621 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Aşağıdakilerden hangisi, Türk Ceza Kanunumuzca düzenlenmemiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Şüpheden sanık yararlanır ilkesi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Kanunilik ilkesi"
+      },
+      {
+        "label": "C",
+        "text": "Kıyas yasağı ilkesi"
+      },
+      {
+        "label": "D",
+        "text": "Orantılılık ilkesi"
+      },
+      {
+        "label": "E",
+        "text": "Kanun önünde eşitlik ilkesi"
+      }
+    ],
+    "explanation": "Kanunilik ve kıyas yasağı TCK m.2'de, orantılılık m.3/1'de (fiilin ağırlığıyla orantılı ceza), kanun önünde eşitlik m.3/2'de düzenlenmiştir. 'Şüpheden sanık yararlanır' (in dubio pro reo) ise maddi ceza hukukunun değil ceza MUHAKEMESİNİN ilkesidir; TCK'da yer almaz, masumiyet karinesinin (Anayasa m.38) yargılamadaki sonucudur.",
+    "difficulty": "medium",
+    "sourceLabel": "2012 AVUKATLAR İÇİN ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 2, 3",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Haksızlık teşkil eden fiili işlemesi dolayısıyla kişi hakkında yapılan kınama yargısından ibaret olan ve failin cezalandırılmasını sağlayan ceza hukuku ilkesi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kanunsuz suç ve ceza olmaz"
+      },
+      {
+        "label": "B",
+        "text": "Ceza sorumluluğunun şahsiliği"
+      },
+      {
+        "label": "C",
+        "text": "Kusurluluk",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Kıyas yasağı"
+      },
+      {
+        "label": "E",
+        "text": "Şüphenin sanığın aleyhine yorumlanmaması"
+      }
+    ],
+    "explanation": "Kusurluluk, haksızlık teşkil eden fiili işleyen kişi hakkında bu fiili nedeniyle yapılan kınama yargısıdır; failin cezalandırılabilmesi fiili işlerken en azından taksir derecesinde kusurlu olmasına bağlıdır (kusursuz ceza olmaz — nulla poena sine culpa). Sadece neticeden doğan sorumluluk çağdaş ceza hukukunda kabul edilmez; netice sebebiyle ağırlaşan suçlarda dahi TCK m.23 en azından taksir arar.",
+    "difficulty": "medium",
+    "sourceLabel": "2012 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 23; ceza hukuku genel teorisi",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "27",
+    "stem": "Türk Ceza Kanunu'na göre aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Taksir, suçun istisnai bir işleniş şeklidir."
+      },
+      {
+        "label": "B",
+        "text": "Zorunluluk hâlinde, fiili işleyen kişiye kusurlu sayılamadığı için ceza verilmez."
+      },
+      {
+        "label": "C",
+        "text": "Kasten ve hukuka aykırı işlenmiş bir fiilin varlığı suça iştirak için yeterlidir."
+      },
+      {
+        "label": "D",
+        "text": "Meşru savunmanın sınırının telaş, korku ve heyecan sebebiyle aşıldığı hâllerde taksirli sorumluluk söz konusu olur.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Bir fiilin kastedilenden daha ağır bir neticenin oluşumuna sebebiyet verdiği hâllerde, kişi bu neticeden en azından taksirinin varlığı hâlinde sorumlu tutulabilir."
+      }
+    ],
+    "explanation": "TCK m.27/2'ye göre meşru savunmada sınırın, mazur görülebilecek bir heyecan, korku veya telaştan ileri gelmesi hâlinde faile CEZA VERİLMEZ; taksirli sorumluluk doğmaz (kusurluluğu kaldıran neden). Taksirle sorumluluk, sınırın taksirle aşıldığı genel hâl (m.27/1) için geçerlidir. Diğer ifadeler doğrudur: taksir istisnaidir (m.22/1), zorunluluk hâli kusurluluğu kaldırır (m.25/2), iştirak için kasten ve hukuka aykırı fiil yeterlidir (m.40/1), netice sebebiyle ağırlaşmış suçta en az taksir aranır (m.23).",
+    "difficulty": "hard",
+    "sourceLabel": "2010 ARALIK ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 22, 23, 25, 27, 40",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türk Ceza Kanunu'na göre aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Türkiye'de işlenen suçlarda Türk kanunları uygulanır."
+      },
+      {
+        "label": "B",
+        "text": "Sadece neticenin Türkiye'de gerçekleşmesi hâlinde hareketin işlendiği ülke ceza kuralları uygulanır.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hareketin Türkiye'de işlenmesi, neticenin yabancı ülkede gerçekleşmesi hâlinde Türk kanunları uygulanır."
+      },
+      {
+        "label": "D",
+        "text": "Hareketin kısmen Türkiye'de işlenmesi hâlinde Türk kanunları uygulanır."
+      },
+      {
+        "label": "E",
+        "text": "Suçun Türk karasularında işlenmesi hâlinde suç Türkiye'de işlenmiş sayılır."
+      }
+    ],
+    "explanation": "TCK m.8/1'e göre fiilin kısmen veya tamamen Türkiye'de işlenmesi VEYA neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır ve Türk kanunları uygulanır. Netice Türkiye'de gerçekleşmişse hareket yabancı ülkede yapılmış olsa bile Türk kanunları uygulanır; (B) şıkkındaki 'hareketin işlendiği ülke kuralları uygulanır' ifadesi bu nedenle yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "2010 ARALIK ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Türk Ceza Kanunu'nda açıkça düzenlenmemiş olan kurum aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nedensellik bağı",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Suça iştirak"
+      },
+      {
+        "label": "C",
+        "text": "Suça teşebbüs"
+      },
+      {
+        "label": "D",
+        "text": "Suçların içtimaı"
+      },
+      {
+        "label": "E",
+        "text": "Ceza sorumluluğunun şahsiliği, kast ve taksir"
+      }
+    ],
+    "explanation": "Suça teşebbüs (m.35-36), iştirak (m.37-41), suçların içtimaı (m.42-44) ile ceza sorumluluğunun şahsiliği, kast ve taksir (m.20-22) TCK'da açıkça düzenlenmiştir. Hareket ile netice arasındaki sebep-sonuç ilişkisini ifade eden NEDENSELLİK BAĞI ise kanunda açıkça düzenlenmemiş, tespiti öğreti ve yargı kararlarına bırakılmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "2010 ARALIK ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 20-22, 35-44",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "9",
+    "stem": "Türkiye'de işlediği suçtan dolayı yabancı ülkede hakkında hüküm verilen kimsenin Türkiye'de yeniden yargılanması ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Türkiye'de yeniden yargılanmaz."
+      },
+      {
+        "label": "B",
+        "text": "Yabancı ülkede beraat etmişse yargılanır."
+      },
+      {
+        "label": "C",
+        "text": "Cezasını yabancı ülkede çekmemişse yargılanır."
+      },
+      {
+        "label": "D",
+        "text": "Türkiye'de yeniden yargılanır.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Adalet Bakanının izniyle yargılanır."
+      }
+    ],
+    "explanation": "TCK m.9 açıktır: 'Türkiye'de işlediği suçtan dolayı yabancı ülkede hakkında hüküm verilmiş olan kimse, Türkiye'de yeniden yargılanır.' Mülkilik ilkesinin gereği olarak yabancı hükmün mahkumiyet veya beraat olması, infaz edilip edilmemesi fark etmez ve herhangi bir izin şartı da yoktur. Yabancı ülkede geçen tutukluluk ve hükümlülük süreleri m.16 uyarınca mahsup edilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2010 KASIM İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 9",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "2",
+    "stem": "Aşağıdakilerden hangisi suçta ve cezada kanunilik ilkesinin sonuçlarından biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kanunun açık olması"
+      },
+      {
+        "label": "B",
+        "text": "İdarenin düzenleyici işlemleriyle suç ve ceza konulamaması"
+      },
+      {
+        "label": "C",
+        "text": "Örf ve âdetle suç ve ceza konulamaması"
+      },
+      {
+        "label": "D",
+        "text": "Kanunların suç ve ceza içeren hükümlerinin uygulanmasında kıyas yoluna başvurulamaması"
+      },
+      {
+        "label": "E",
+        "text": "Bir fiilin, davranış normlarını ihlal etmesinin o fiilin suç sayılması için yeterli olması",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Kanunilik ilkesinin (TCK m.2) sonuçları; belirlilik (kanunun açıklığı), idarenin düzenleyici işlemleriyle ve örf-âdetle suç-ceza konulamaması, kıyas yasağı ve aleyhe kanunun geçmişe yürümemesidir. Bir fiilin davranış normlarını ihlal etmesi tek başına suç sayılması için YETERLİ DEĞİLDİR; fiilin kanunda açıkça suç olarak tanımlanmış olması (tipiklik) gerekir — bu nedenle (E) kanunilik ilkesinin sonucu değil, tam tersine ilkeyle bağdaşmayan bir önermedir.",
+    "difficulty": "medium",
+    "sourceLabel": "2010 KASIM İDARİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Yasama sorumsuzluğu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meclis çalışmaları ile ilgili sorumsuzluk milletvekilliği sıfatı sona erdikten sonra da devam eder."
+      },
+      {
+        "label": "B",
+        "text": "Sorumsuzluktan feragat edilemez."
+      },
+      {
+        "label": "C",
+        "text": "Sorumsuzluk, Meclisin kararı ile kaldırılabilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Dışarıdan atanan bakanlar da sorumsuzluktan yararlanabilirler."
+      },
+      {
+        "label": "E",
+        "text": "Sorumsuzluk şiddete dayalı fiilleri kapsamaz."
+      }
+    ],
+    "explanation": "Anayasa m.83/1'de düzenlenen yasama sorumsuzluğu MUTLAKTIR: Meclis kararıyla kaldırılamaz; kaldırılabilen, m.83/2'deki yasama DOKUNULMAZLIĞIDIR. Sorumsuzluk oy, söz ve düşünce açıklamalarını korur; fiilî saldırıları (şiddeti) kapsamaz, kişisel yarar için değil kamu yararına tanındığından feragat edilemez ve korunan açıklamalar bakımından sıfat sona erdikten sonra da sürer.",
+    "difficulty": "hard",
+    "sourceLabel": "2009 NİSAN ADLİ HÂKİMLİK SINAVI",
+    "citation": "Türkiye Cumhuriyeti Anayasası md. 83",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türk Ceza Kanunu'na göre, ceza kanunlarının yer yönünden uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Türkiye'de işlenen fiiller hakkında Türk kanunları uygulanır."
+      },
+      {
+        "label": "B",
+        "text": "Fiilde neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır."
+      },
+      {
+        "label": "C",
+        "text": "Fiilde neticenin yabancı ülkede gerçekleşmesi hâlinde suç yabancı ülkede işlenmiş sayılır ve Türk kanunları uygulanamaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Fiilin kısmen ya da tamamen Türkiye'de işlenmesi hâlinde suç Türkiye'de işlenmiş sayılır."
+      },
+      {
+        "label": "E",
+        "text": "Fiilin kısmen yabancı ülkede, kısmen Türkiye'de işlenmesi hâlinde Türk kanunları uygulanır."
+      }
+    ],
+    "explanation": "TCK m.8/1'e göre fiilin kısmen veya tamamen Türkiye'de işlenmesi yeterlidir; hareket Türkiye'de yapılmışsa netice yabancı ülkede gerçekleşse bile suç TÜRKİYE'DE işlenmiş sayılır ve Türk kanunları uygulanır. (C) şıkkı bu kuralın tersini söylediği için yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "2009 KAMU İHALE KURUMU SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "2",
+    "stem": "Kanunilik ilkesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suç ve cezanın sadece kanunla yaratılmasını amaçlar."
+      },
+      {
+        "label": "B",
+        "text": "Yürütmenin keyfiliğini önlemeyi amaçlar."
+      },
+      {
+        "label": "C",
+        "text": "Yargının keyfiliğini önlemeyi amaçlar."
+      },
+      {
+        "label": "D",
+        "text": "Yasamanın keyfiliğini önlemeyi amaçlar."
+      },
+      {
+        "label": "E",
+        "text": "Suç ve ceza yaratan normlar yönünden kıyas işlemini yasaklamayı amaçlamaz.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Kıyas yasağı, kanunilik ilkesinin temel sonuçlarından biridir; TCK m.2/3 suç ve ceza içeren hükümlerin uygulanmasında kıyas yapılamayacağını ve bu hükümlerin kıyasa yol açacak biçimde geniş yorumlanamayacağını açıkça düzenler. Dolayısıyla ilkenin kıyası 'yasaklamayı amaçlamadığı' ifadesi yanlıştır. İlke; suç ve cezanın ancak kanunla konulmasını sağlayarak yürütmenin ve yargının keyfiliğini, belirlilik gereğiyle de yasamanın keyfiliğini önler.",
+    "difficulty": "medium",
+    "sourceLabel": "2009 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "22",
+    "stem": "I. Suçun oluşması için kural olarak failin taksirli olması aranır.\nII. Öngörülü taksirde netice fail tarafından öngörülmüştür.\nIII. Öngörülü taksirde ceza artırılır.\nIV. Taksirli fiiller ancak kanunda açıkça belirtilen hâllerde cezalandırılır.\nV. Neticesi sebebiyle ağırlaşan suçlarda failin netice yönünden en azından taksirle hareket etmesi gerekir.\nTaksirle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I"
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III"
+      },
+      {
+        "label": "C",
+        "text": "I ve III"
+      },
+      {
+        "label": "D",
+        "text": "II, IV ve V"
+      },
+      {
+        "label": "E",
+        "text": "II, III, IV ve V",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "I yanlıştır: suçun oluşması kural olarak KASTIN varlığına bağlıdır (m.21/1); taksir istisnaidir. II doğrudur: bilinçli (öngörülü) taksirde fail neticeyi öngörmüş ancak istememiştir (m.22/3). III doğrudur: bilinçli taksirde ceza üçte birden yarısına kadar artırılır. IV doğrudur: taksirle işlenen fiiller kanunda açıkça belirtilen hâllerde cezalandırılır (m.22/1). V doğrudur: netice sebebiyle ağırlaşmış suçta ağır netice bakımından en azından taksir aranır (m.23).",
+    "difficulty": "medium",
+    "sourceLabel": "2009 KPSS",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 21, 22, 23",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türk Ceza Kanunu'na göre, suçun işlendiği yerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Davranışın kısmen ya da tamamen Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır."
+      },
+      {
+        "label": "B",
+        "text": "Neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır."
+      },
+      {
+        "label": "C",
+        "text": "Türkiye'nin münhasır ekonomik bölgesindeki sabit platformlarda işlenmiş suç Türkiye'de işlenmiş sayılır."
+      },
+      {
+        "label": "D",
+        "text": "Türkiye Cumhuriyeti konsolosluk temsilciliklerinde işlenen suçlar Türkiye'de işlenmiş sayılır.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Türk bayrağı taşıyan deniz ve hava savaş araçlarında işlenen suçlar bu araçlar hangi sularda bulunursa bulunsun Türkiye'de işlenmiş sayılır."
+      }
+    ],
+    "explanation": "TCK m.8/2'de Türkiye sayılan yerler sınırlı olarak sayılmıştır: Türk kara ve hava sahaları ile karasuları; açık denizde ve üzerindeki hava sahasında Türk deniz ve hava araçlarında; Türk deniz ve hava savaş araçlarında (her yerde); kıta sahanlığı veya münhasır ekonomik bölgedeki sabit platformlarda. Yurt dışındaki büyükelçilik ve konsolosluk binaları bu listede YOKTUR; modern devletler hukukunda elçilik binaları gönderen devletin ülkesi sayılmaz, yalnızca dokunulmazlıklardan yararlanır.",
+    "difficulty": "hard",
+    "sourceLabel": "2008 MART ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "7",
+    "stem": "5237 sayılı Türk Ceza Kanunu'na göre, Kanun'un hükümlerinin zaman bakımından uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sanık lehine olan normun geçmişe uygulanması kuralı geçici kanunlar yönünden geçerli değildir."
+      },
+      {
+        "label": "B",
+        "text": "Yargılamanın yapıldığı zaman yürürlüğe giren kanun tarafından suç olmaktan çıkarılan fiil yönünden 'Lehe kanun geçmişe uygulanır.' ilkesi geçerlidir."
+      },
+      {
+        "label": "C",
+        "text": "Zaman bakımından uygulama açısından cezalar ile güvenlik tedbirleri aynı rejime tabidir."
+      },
+      {
+        "label": "D",
+        "text": "Sanık lehine olan kanunun belirlenmesinde tüm cezai sonuçlar dikkate alınarak değerlendirme yapılır."
+      },
+      {
+        "label": "E",
+        "text": "İnfaz rejimine ilişkin tüm kurallarda da lehe kanunun geçmişe uygulanırlığı ilkesi geçerlidir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "TCK m.7/3'e göre infaz rejimine ilişkin hükümler kural olarak DERHAL uygulanır; lehe olup olmadığına bakılmaz. Lehe-aleyhe değerlendirmesi yalnızca hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrür bakımından yapılır; 'infaz rejimine ilişkin TÜM kurallarda lehe kanun geçmişe uygulanır' ifadesi bu nedenle yanlıştır. Geçici ve süreli kanunlar yürürlük süreleri içinde işlenen suçlara uygulanmaya devam eder (m.7/4), lehe kanun kuralı bunlar yönünden işlemez.",
+    "difficulty": "hard",
+    "sourceLabel": "2007 KASIM ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Aşağıdaki ceza hukuku ilkelerinden hangisi 1982 Anayasasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vatandaşın geri verilmemesi ilkesi"
+      },
+      {
+        "label": "B",
+        "text": "Cezai sorumluluğun şahsiliği ilkesi"
+      },
+      {
+        "label": "C",
+        "text": "Suç ve cezaların kanuniliği ilkesi"
+      },
+      {
+        "label": "D",
+        "text": "Güvenlik tedbirlerinin kanuniliği ilkesi"
+      },
+      {
+        "label": "E",
+        "text": "Kusursuz suç olmaz ilkesi",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Anayasa m.38'de suç ve cezaların kanuniliği, ceza sorumluluğunun şahsiliği, ceza ve ceza yerine geçen güvenlik tedbirlerinin ancak kanunla konulacağı ve vatandaşın suç sebebiyle yabancı ülkeye verilemeyeceği (Uluslararası Ceza Divanına taraf olmanın gerektirdiği yükümlülükler hariç) tek tek sayılmıştır. 'Kusursuz suç ve ceza olmaz' ilkesi ise Anayasada açık bir hüküm olarak yer almaz; TCK sisteminden ve Anayasa Mahkemesi içtihadından çıkarılan bir ilkedir.",
+    "difficulty": "hard",
+    "sourceLabel": "2008 MALİYE BAKANLIĞI MALİ HİZMETLER UZMAN YARDIMCILIĞI SINAVI",
+    "citation": "Türkiye Cumhuriyeti Anayasası md. 38",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "7",
+    "stem": "Yeni bir ceza kanununun, bu kanun yürürlüğe girmeden önce işlenmiş suçlara uygulanmasıyla ilgili olarak aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Görülmekte olan davalara da dâhil tüm suçlara mutlaka uygulanır."
+      },
+      {
+        "label": "B",
+        "text": "Görülmekte olan davalar ve infaz edilmekte olan cezalar da dâhil tüm suçlara mutlaka uygulanır."
+      },
+      {
+        "label": "C",
+        "text": "Hiçbir şekilde uygulanmaz."
+      },
+      {
+        "label": "D",
+        "text": "Kural olarak uygulanır. Ancak sanık lehine hüküm getirmiş ise sadece daha önce hüküm verilip infazına başlanmış olanlar dışındaki suçlara uygulanır."
+      },
+      {
+        "label": "E",
+        "text": "Kural olarak uygulanmaz. Ancak sanığın lehine olan hükümleri ister dava ister infaz aşamasında olsun tüm suçlar yönünden uygulanır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "TCK m.7'ye göre kural, suçun işlendiği zaman yürürlükte olan kanunun uygulanmasıdır; yeni kanun geçmişe kural olarak uygulanmaz. Ancak yeni kanun failin LEHİNE ise geçmişe yürür ve m.7/2'nin açık ifadesiyle 'uygulanır VE İNFAZ OLUNUR' — yani dava aşamasında da, kesinleşip infaz aşamasına geçilmiş olsa da lehe hüküm uygulanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2003 ŞUBAT ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Yasama sorumsuzluğu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yasama sorumsuzluğu fiilin hukuka aykırılığını kaldırır."
+      },
+      {
+        "label": "B",
+        "text": "Yasama sorumsuzluğunun etkisi milletvekilliği süresiyle sınırlıdır."
+      },
+      {
+        "label": "C",
+        "text": "Yasama sorumsuzluğu her türlü suçu kapsamaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yasama sorumsuzluğu Cumhurbaşkanının görev suçlarını da kapsar."
+      },
+      {
+        "label": "E",
+        "text": "Yasama sorumsuzluğu her suçu kapsar."
+      }
+    ],
+    "explanation": "Anayasa m.83/1'e göre sorumsuzluk, milletvekillerinin Meclis çalışmalarındaki oy, söz ve düşünce açıklamalarıyla sınırlıdır; fiilî saldırılar ve bu kapsama girmeyen suçlar korunmaz — yani her türlü suçu KAPSAMAZ. Sorumsuzluk fiilin hukuka aykırılığını kaldırmaz, kişiye bağlı bir cezalandırılabilme engelidir (şahsi cezasızlık nedeni); korunan açıklamalar bakımından etkisi milletvekilliği sona erdikten sonra da sürer ve Cumhurbaşkanının görev suçları ayrı bir rejime (Anayasa m.105) tabidir.",
+    "difficulty": "hard",
+    "sourceLabel": "2003 ŞUBAT ADLİ HÂKİMLİK SINAVI",
+    "citation": "Türkiye Cumhuriyeti Anayasası md. 83, 105",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Ceza hukukunda \"özellik (hususilik) kuralı\" neyi ifade eder?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aynı suçtan dolayı iki defa yargılama yapılamamasını ifade eder."
+      },
+      {
+        "label": "B",
+        "text": "Sanığın hangi suçtan dolayı iade edilmişse o suçtan dolayı yargılanmasını ifade eder.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Suçluluğu ispat edilmedikçe hiç kimsenin suçlu sayılamayacağını ifade eder."
+      },
+      {
+        "label": "D",
+        "text": "Yabancı ülke kanunu ile Türk Ceza Kanunundan hangisi failin lehine ise o kanunun uygulanmasını ifade eder."
+      },
+      {
+        "label": "E",
+        "text": "Sanığın suçluluğu hakkında kuvvetli belirtiler yoksa sanığın bu şüpheden yararlanacağı ilkesini ifade eder."
+      }
+    ],
+    "explanation": "Hususilik (özellik) kuralı, suçluların geri verilmesine ilişkindir: 6706 sayılı Kanun m.10/4 uyarınca kişi, hangi suçtan dolayı iade edilmişse yalnızca o suçtan dolayı yargılanabilir veya mahkûm olduğu o cezası infaz edilebilir. (A) ne bis in idem, (C) masumiyet karinesi, (E) şüpheden sanık yararlanır ilkeleridir.",
+    "difficulty": "hard",
+    "sourceLabel": "2000 MART ADLİ HÂKİMLİK SINAVI",
+    "citation": "6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu md. 10",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6706.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": "8",
+    "stem": "Türkiye'de suç işleyen yabancı, hangi kanuna göre cezalandırılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Failin vatandaşı olduğu ülke kanununa göre"
+      },
+      {
+        "label": "B",
+        "text": "Türk kanunlarına göre",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Yabancının tercih ettiği kanuna göre"
+      },
+      {
+        "label": "D",
+        "text": "Mağdurun vatandaşı olduğu ülke kanununa göre"
+      },
+      {
+        "label": "E",
+        "text": "Yabancı ülke kanunu ile Türk kanunundan hangisi failin lehine ise o kanuna göre"
+      }
+    ],
+    "explanation": "TCK m.8/1 mülkilik ilkesini benimser: Türkiye'de işlenen suçlar hakkında, failin veya mağdurun uyrukluğuna bakılmaksızın TÜRK KANUNLARI uygulanır. Lehe yabancı kanun karşılaştırması yalnızca m.19'da, yabancı ülkede işlenen suçlarda gündeme gelir; Türkiye'de işlenen suçlarda uygulanmaz.",
+    "difficulty": "easy",
+    "sourceLabel": "2000 MART ADLİ HÂKİMLİK SINAVI",
+    "citation": "5237 sayılı Türk Ceza Kanunu md. 8",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "stem": "Ceza hukukunda suçun işlendiği an aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İcra hareketlerinin başladığı an",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İcra hareketlerinin tamamlandığı an"
+      },
+      {
+        "label": "C",
+        "text": "Sonucun gerçekleştiği an"
+      },
+      {
+        "label": "D",
+        "text": "Son icra hareketinin yapıldığı an"
+      },
+      {
+        "label": "E",
+        "text": "İcra hareketlerinin yapıldığı ve sonucun gerçekleştiği an"
+      }
+    ],
+    "explanation": "Öğretide genel kabule göre suç, işleme kararının İCRASINA BAŞLANDIĞI andan itibaren işlenmiş sayılır; hazırlık hareketleri ile icra hareketlerini ayıran çizgi budur ve neticenin gerçekleşme anı suçun işlendiği anın belirlenmesinde esas alınmaz. Aynı yaklaşım zaman bakımından uygulamada da geçerlidir: fiilin işlendiği zaman, davranışın gerçekleştirildiği zamandır (krş. Kabahatler Kanunu m.5/2'nin açık hükmü).",
+    "difficulty": "medium",
+    "sourceLabel": "2000 MART ADLİ HÂKİMLİK SINAVI",
+    "citation": "Ceza hukuku genel teorisi; 5237 sayılı Türk Ceza Kanunu md. 35",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5237.pdf"
+  }
+]

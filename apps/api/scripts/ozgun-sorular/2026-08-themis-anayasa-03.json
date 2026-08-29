@@ -1,0 +1,138 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "38",
+    "stem": "1982 Anayasası'na göre suç ve cezalarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Hiç kimse, işlendiği zaman yürürlükte bulunan kanunun suç saymadığı bir fiilden dolayı cezalandırılamaz" },
+      { "label": "B", "text": "Ceza ve ceza yerine geçen güvenlik tedbirleri ancak kanunla konulur" },
+      { "label": "C", "text": "Suçluluğu hükmen sabit oluncaya kadar kimse suçlu sayılamaz" },
+      { "label": "D", "text": "Kanuna aykırı olarak elde edilmiş bulgular delil olarak kabul edilemez" },
+      { "label": "E", "text": "Savaş ve çok yakın savaş tehdidi hâlleri ile terör suçları dışında ölüm cezası verilemez", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.38'de ölüm cezasına ilişkin istisnalı hüküm 2004 yılında kaldırılmıştır. Güncel Anayasa hiçbir hâl için ölüm cezasına izin veren bir düzenleme içermez. Diğer seçenekler m.38'deki suç ve ceza güvenceleridir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 38",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "28",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi süreli veya süresiz yayınların toplatılma nedenleri arasında açıkça sayılmamıştır?",
+    "options": [
+      { "label": "A", "text": "Devletin ülkesi ve milletiyle bölünmez bütünlüğünün korunması" },
+      { "label": "B", "text": "Millî güvenliğin korunması" },
+      { "label": "C", "text": "Özel hayatın gizliliğinin korunması", "isCorrect": true },
+      { "label": "D", "text": "Suçların önlenmesi" },
+      { "label": "E", "text": "Genel ahlakın korunması" }
+    ],
+    "explanation": "Anayasa m.28; süreli ve süresiz yayınların, maddede sayılan şartlarla bölünmez bütünlük, millî güvenlik, kamu düzeni, genel ahlak ve suçların önlenmesi gerekçeleriyle toplatılabilmesini düzenler. ÖZEL HAYATIN GİZLİLİĞİ bu toplatma nedenleri arasında açıkça sayılmamıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 28",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "26",
+    "stem": "1982 Anayasası'na göre düşünceyi açıklama ve yayma hürriyeti aşağıdaki sebeplerden hangisiyle sınırlanamaz?",
+    "options": [
+      { "label": "A", "text": "Cumhuriyetin temel niteliklerinin ve Devletin ülkesi ve milletiyle bölünmez bütünlüğünün korunması" },
+      { "label": "B", "text": "Devlet sırrı olarak usulünce belirtilmiş bilgilerin açıklanmaması" },
+      { "label": "C", "text": "Din ve vicdan özgürlüğünü sağlamak", "isCorrect": true },
+      { "label": "D", "text": "Başkalarının şöhret veya hakları ile özel ve aile hayatlarının korunması" },
+      { "label": "E", "text": "Yargılama görevinin gereğine uygun olarak yerine getirilmesi" }
+    ],
+    "explanation": "Anayasa m.26 düşünceyi açıklama ve yayma hürriyetinin sınırlanabileceği amaçları ayrıntılı biçimde sayar. DİN VE VİCDAN ÖZGÜRLÜĞÜNÜ SAĞLAMAK bu özel sınırlama sebepleri arasında değildir; diğer seçeneklerdeki amaçlar maddede yer alır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 26",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "74",
+    "stem": "Dilekçe hakkı aşağıdakilerden hangisinde doğru olarak tanımlanmıştır?",
+    "options": [
+      { "label": "A", "text": "Siyasi parti kurabilmek için İçişleri Bakanlığına yapılan başvurudur" },
+      { "label": "B", "text": "Dernek kurabilmek için mahallin en büyük mülki amirine yapılan başvurudur" },
+      { "label": "C", "text": "Vatandaşların ve karşılıklılık esası gözetilmek kaydıyla Türkiye'de ikamet eden yabancıların, kendileriyle veya kamu ile ilgili dilek ve şikâyetlerini yetkili makamlara ya da TBMM'ye yazılı olarak iletmeleridir", "isCorrect": true },
+      { "label": "D", "text": "Yargı mercileri önünde davalı veya davacı olabilmektir" },
+      { "label": "E", "text": "Oy kullanabilmek için Yüksek Seçim Kuruluna yöneltilen yazılı istektir" }
+    ],
+    "explanation": "Anayasa m.74 dilekçe hakkını vatandaşlara ve karşılıklılık esası gözetilerek Türkiye'de ikamet eden yabancılara tanır. Başvuru, kendileriyle veya kamu ile ilgili dilek ve şikâyetler hakkında YETKİLİ MAKAMLARA VE TBMM'YE yazılı olarak yapılabilir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 74",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "29",
+    "stem": "1982 Anayasası'na göre süreli yayın çıkarabilmenin ön koşulu aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Gazeteciler Cemiyetinden izin alınması" },
+      { "label": "B", "text": "Gerekli mali teminatın yatırılması" },
+      { "label": "C", "text": "İçişleri Bakanlığından izin alınması" },
+      { "label": "D", "text": "Kanunun gösterdiği bilgi ve belgelerin kanunda belirtilen yetkili mercie verilmesi", "isCorrect": true },
+      { "label": "E", "text": "Yetkili mercie verilen bilgi ve belgeler için altmış gün içinde olumlu cevap alınması" }
+    ],
+    "explanation": "Anayasa m.29'a göre süreli yayın çıkarmak için kanunun gösterdiği BİLGİ VE BELGELERİN kanunda belirtilen yetkili mercie verilmesi yeterlidir. Önceden izin veya mali teminat şartı getirilemez ve olumlu cevap bekleme zorunluluğu yoktur.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 29",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "62",
+    "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi yabancı ülkelerde çalışan Türk vatandaşlarına ilişkin olarak Devlete yüklenen görevlerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Aile birliklerinin sağlanması için gereken tedbirleri almak" },
+      { "label": "B", "text": "Çocuklarının eğitiminin sağlanması için gereken tedbirleri almak" },
+      { "label": "C", "text": "Sosyal güvenliklerinin sağlanması için gereken tedbirleri almak" },
+      { "label": "D", "text": "Anavatanla bağlarının korunması için gereken tedbirleri almak" },
+      { "label": "E", "text": "Yurda kesin dönüşlerini teşvik etmek ve bunun için gereken tedbirleri almak", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.62 Devlete, yabancı ülkelerde çalışan Türk vatandaşlarının aile birliği, çocuklarının eğitimi, kültürel ihtiyaçları, sosyal güvenlikleri ve anavatanla bağları için tedbir alma; yurda dönüşlerinde ise YARDIMCI OLMA görevi verir. Kesin dönüşü teşvik etme şeklinde bir görev düzenlenmemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 62",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "17",
+    "stem": "I. İsyanın bastırılması\nII. Meşru müdafaa\nIII. Tutuklunun kaçmasının önlenmesi\n1982 Anayasası'na göre yukarıdakilerden hangileri yaşama hakkının istisnaları arasında açıkça belirtilmiştir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "I ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.17; meşru müdafaa, bir tutuklu veya hükümlünün kaçmasının önlenmesi ve bir ayaklanma veya isyanın bastırılması sırasında, kanunun silah kullanılmasına izin verdiği zorunlu durumlarda meydana gelen öldürme fiillerini yaşama hakkına ilişkin birinci fıkra hükmünün dışında tutar.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 17",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "53",
+    "stem": "1982 Anayasası'na göre toplu sözleşme yapma hakkıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Memurlar ve diğer kamu görevlileri toplu sözleşme yapma hakkına sahiptir" },
+      { "label": "B", "text": "Toplu sözleşme konusunda anlaşma sağlanamazsa grev hakkı kullanılabilir", "isCorrect": true },
+      { "label": "C", "text": "Uyuşmazlık çıkması hâlinde Kamu Görevlileri Hakem Kuruluna başvurulabilir" },
+      { "label": "D", "text": "Toplu sözleşme hükümlerinin emeklilere yansıtılması kanunla düzenlenir" },
+      { "label": "E", "text": "Toplu sözleşme hakkı sosyal ve ekonomik haklar bölümünde düzenlenmiştir" }
+    ],
+    "explanation": "Anayasa m.53 memurlar ve diğer kamu görevlileri bakımından toplu sözleşme uyuşmazlığında Kamu Görevlileri Hakem Kuruluna başvuru yolunu düzenler. Bu uyuşmazlık için GREV HAKKI tanınmamıştır. Kurul kararları kesindir ve toplu sözleşme hükmündedir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 53",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

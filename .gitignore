@@ -15,3 +15,8 @@ paemisyoncom/app/Backup/
 
 # macOS çöpü (her yerde)
 **/.DS_Store
+docs/31-onay-kuyrugu-inceleme/.gece.lock
+docs/31-onay-kuyrugu-inceleme/SABAH-KURU-CALISMA.txt
+
+# Doc 32 denetimi sirasinda uretilen tek seferlik analiz scriptleri
+apps/api/scripts/_tek-seferlik/

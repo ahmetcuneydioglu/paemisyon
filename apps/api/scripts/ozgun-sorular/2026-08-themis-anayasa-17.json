@@ -1,0 +1,146 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi 1876 Kânûn-ı Esâsî'de ilk şekliyle yer alan hükümlerden biri değildir?",
+    "options": [
+      { "label": "A", "text": "Yasama organının iki meclisli olması" },
+      { "label": "B", "text": "Bir kişinin iki yasama meclisine aynı anda üye olamaması" },
+      { "label": "C", "text": "Heyet-i Âyan üyelerinin Padişahın huzurunda yemin etmesi" },
+      { "label": "D", "text": "Bakanların atanması ve görevden alınması yetkisinin Padişaha ait olması" },
+      { "label": "E", "text": "Heyet-i Âyan üyelerinin dört yıl için halk tarafından seçilmesi", "isCorrect": true }
+    ],
+    "explanation": "1876 Kânûn-ı Esâsî iki meclisli bir yasama organı kurmuştur. Heyet-i Mebusan üyeleri seçimle belirlenirken Heyet-i Âyan üyeleri Padişah tarafından atanır ve görevleri ömür boyu sürerdi; halk tarafından dört yıllığına seçilmeleri söz konusu değildi.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1876 Kânûn-ı Esâsî md. 42, 47, 60-62",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1876-kanun-i-esasi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "1982 Anayasası'nın kabulüne ilişkin halkoylaması dışında, bu Anayasa döneminde kaç kez anayasa değişikliği halkoylaması yapılmıştır?",
+    "options": [
+      { "label": "A", "text": "4", "isCorrect": true },
+      { "label": "B", "text": "5" },
+      { "label": "C", "text": "6" },
+      { "label": "D", "text": "7" },
+      { "label": "E", "text": "8" }
+    ],
+    "explanation": "1982 Anayasası'nın kabulüne ilişkin 1982 halkoylaması dışında anayasa değişiklikleri 1987, 1988, 2007, 2010 ve 2017 yıllarında halkoyuna sunulmuştur; ancak 1988 halkoylaması anayasa değişikliğiyle ilgili değildir. Bu nedenle anayasa değişikliği halkoylamalarının sayısı DÖRTTÜR: 1987, 2007, 2010 ve 2017.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "YSK anayasa değişikliği halkoylamaları kayıtları",
+    "citationUrl": "https://www.ysk.gov.tr/tr/halkoylamalari/3922"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdaki anayasalardan hangilerinde değiştirilmesi yasaklanan bir hükme yer verilmemiştir?\nI. 1876 Kânûn-ı Esâsî\nII. 1921 Anayasası\nIII. 1924 Anayasası\nIV. 1961 Anayasası\nV. 1982 Anayasası",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "I ve II", "isCorrect": true },
+      { "label": "D", "text": "I, II ve III" },
+      { "label": "E", "text": "III, IV ve V" }
+    ],
+    "explanation": "1876 Kânûn-ı Esâsî ile 1921 Anayasası değiştirilemez hüküm öngörmemiştir. Devlet şeklinin Cumhuriyet olduğuna ilişkin değiştirilemezlik ilk kez 1924 Anayasası'nda kabul edilmiş; 1961 ve 1982 Anayasalarında da değiştirilmesi yasaklanan hükümler yer almıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1924 Anayasası md. 102; 1961 Anayasası md. 9; 1982 Anayasası md. 4",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Anayasa değişikliklerinin halkoyuna sunulması usulüne ilk kez hangi Anayasada yer verilmiştir?",
+    "options": [
+      { "label": "A", "text": "1876 Kânûn-ı Esâsî" },
+      { "label": "B", "text": "1921 Anayasası" },
+      { "label": "C", "text": "1924 Anayasası" },
+      { "label": "D", "text": "1961 Anayasası" },
+      { "label": "E", "text": "1982 Anayasası", "isCorrect": true }
+    ],
+    "explanation": "Anayasa değişikliklerinin halkoyuna sunulmasına ilişkin anayasal usul ilk kez 1982 Anayasası'nın 175. maddesinde düzenlenmiştir. 1961 Anayasası halkoylamasıyla kabul edilmiş olsa da kendi değişiklikleri için halkoylaması usulü öngörmemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1982 Anayasası md. 175",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisine 1924 Anayasası'nda yer verilmemiştir?",
+    "options": [
+      { "label": "A", "text": "İlköğretimin devlet okullarında parasız olmasına" },
+      { "label": "B", "text": "Tek meclisli yasama organına" },
+      { "label": "C", "text": "Ara seçime" },
+      { "label": "D", "text": "Meclis soruşturmasına" },
+      { "label": "E", "text": "Siyasi partilerin demokratik siyasi hayatın vazgeçilmez unsurları olmasına", "isCorrect": true }
+    ],
+    "explanation": "1924 Anayasası parasız ilköğretimi, tek meclisli yasamayı, ara seçimi ve Meclis soruşturmasını düzenlemiştir. Siyasi partilerin demokratik siyasi hayatın vazgeçilmez unsurları olduğu hükmü ise 1961 Anayasasıyla anayasal güvenceye kavuşmuştur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1924 Anayasası md. 20, 22, 61, 87; 1961 Anayasası md. 56",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Bütçe kanununun yalnız bir yıl için geçerli olduğu hükmüne ilk kez hangi Anayasada yer verilmiştir?",
+    "options": [
+      { "label": "A", "text": "1876 Kânûn-ı Esâsî", "isCorrect": true },
+      { "label": "B", "text": "1921 Anayasası" },
+      { "label": "C", "text": "1924 Anayasası" },
+      { "label": "D", "text": "1961 Anayasası" },
+      { "label": "E", "text": "1982 Anayasası" }
+    ],
+    "explanation": "1876 Kânûn-ı Esâsî'nin 102. maddesi bütçe kanununun hükmünün bir yıl için geçerli olduğunu ve o yıl dışında uygulanamayacağını düzenlemiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1876 Kânûn-ı Esâsî md. 102",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1876-kanun-i-esasi"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "I. Anayasa değişikliği teklifinin Meclis üye tamsayısının üçte biri tarafından yapılması\nII. Milletvekillerinin bütün milleti temsil etmesi\nIII. Milletvekillerinin yasama sorumsuzluğundan yararlanması\nYukarıdakilerden hangileri 1924, 1961 ve 1982 Anayasalarının ortak hükümlerindendir?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız III" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "Üç Anayasa da değişiklik teklifinde üye tamsayısının üçte biri eşiğini, milletvekillerinin bütün milleti temsil etmesini ve Meclis çalışmalarındaki oy ve sözleri bakımından yasama sorumsuzluğunu kabul etmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1924 Anayasası md. 13, 17, 102; 1961 Anayasası md. 76, 79, 155; 1982 Anayasası md. 80, 83, 175",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Siyasi partilere Devletçe mali yardım yapılması ilk kez hangi anayasal düzenlemeyle kabul edilmiştir?",
+    "options": [
+      { "label": "A", "text": "1924 Anayasası" },
+      { "label": "B", "text": "1961 Anayasası'nın ilk metni" },
+      { "label": "C", "text": "1961 Anayasası'nın 1971 değişikliği", "isCorrect": true },
+      { "label": "D", "text": "1961 Anayasası'nın 1973 değişikliği" },
+      { "label": "E", "text": "1982 Anayasası'nın 1987 değişikliği" }
+    ],
+    "explanation": "Siyasi partilere Devletçe mali yardım yapılması, 1961 Anayasası'nın 56. maddesinde 1971 yılında yapılan değişiklikle ilk kez anayasal hüküm hâline getirilmiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1961 Anayasası md. 56 ve 30.6.1971 tarihli değişiklik",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1961-anayasasi/"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "I. 1928 değişikliğiyle devletin dininin İslam olduğu hükmü metinden çıkarılmıştır.\nII. 1934 değişikliğiyle kadınlara milletvekili seçme ve seçilme hakkı tanınmış, seçmen yaşı yirmi ikide eşitlenmiştir.\nIII. 1937 değişikliğiyle laiklik ilkesi Anayasaya girmiştir.\n1924 Anayasası dönemindeki değişikliklere ilişkin yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "1928'de devletin dini hükmü ve dinî yemin ifadeleri çıkarılmış; 1934'te kadınlara milletvekili seçme ve seçilme hakkı tanınarak seçmen yaşı kadın ve erkekler için yirmi iki olarak belirlenmiş; 1937'de laiklik ilkesi Anayasanın 2. maddesine eklenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "1924 Anayasası md. 2, 10 ve 11 değişiklikleri",
+    "citationUrl": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"
+  }
+]

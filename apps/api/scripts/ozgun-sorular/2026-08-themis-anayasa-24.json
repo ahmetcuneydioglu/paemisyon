@@ -1,0 +1,206 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "2",
+    "stem": "6271 sayılı Kanuna göre Cumhurbaşkanı seçiminde uygulanacak genel ilkelerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {"label":"A","text":"Cumhurbaşkanı halk tarafından seçilir."},
+      {"label":"B","text":"Seçim genel, eşit ve gizli oyla, bütün yurtta aynı günde yapılır."},
+      {"label":"C","text":"Bu Kanunda özel hüküm bulunmayan hâllerde 298 sayılı Kanun hükümleri uygulanamaz.","isCorrect":true},
+      {"label":"D","text":"Seçmen oyunu tam bir serbestlikle kendisi kullanır."},
+      {"label":"E","text":"Oyların sayımı, dökümü ve tutanaklara bağlanması açık olarak yapılır."}
+    ],
+    "explanation": "6271 sayılı Kanunda özel hüküm bulunmayan hâllerde 298 sayılı Kanun ile maddede sayılan diğer seçim kanunlarının bu Kanuna aykırı olmayan hükümleri UYGULANIR.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 2",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "3",
+    "stem": "Cumhurbaşkanı veya TBMM tarafından seçimlerin yenilenmesine karar verilmesi hâlinde bu karar kaç saat içinde Resmî Gazete'de yayımlanır?",
+    "options": [
+      {"label":"A","text":"24 saat"},
+      {"label":"B","text":"48 saat","isCorrect":true},
+      {"label":"C","text":"72 saat"},
+      {"label":"D","text":"5 gün"},
+      {"label":"E","text":"7 gün"}
+    ],
+    "explanation": "Seçimlerin yenilenmesine ilişkin karar KIRK SEKİZ SAAT içinde Resmî Gazete'de yayımlanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 3",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "5",
+    "stem": "Savaş sebebiyle yeni seçimlerin yapılmasına imkân görülmezse seçimlerin ertelenmesine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {"label":"A","text":"Erteleme kararı TBMM tarafından verilir."},
+      {"label":"B","text":"Seçimler bir yıl geriye bırakılabilir."},
+      {"label":"C","text":"Erteleme sebebi ortadan kalkmamışsa erteleme tekrarlanabilir."},
+      {"label":"D","text":"Erteleme yalnız savaş sebebine dayanabilir."},
+      {"label":"E","text":"Aynı erteleme kararı birden fazla kez tekrarlanamaz.","isCorrect":true}
+    ],
+    "explanation": "Savaş sebebiyle seçimlerin yapılmasına imkân görülmezse TBMM seçimleri bir yıl geriye bırakabilir. Geri bırakma sebebi ortadan kalkmamışsa erteleme kararı TEKRARLANABİLİR.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 5; T.C. Anayasası md. 78",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "7",
+    "stem": "6271 sayılı Kanuna göre siyasi partilerce Cumhurbaşkanı adayı gösterilmesine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {"label":"A","text":"Siyasi parti grupları aday gösterebilir."},
+      {"label":"B","text":"Son milletvekili genel seçiminde tek başına veya birlikte geçerli oyların en az yüzde beşini alan siyasi partiler aday gösterebilir."},
+      {"label":"C","text":"Birden fazla siyasi parti ortak aday gösterebilir."},
+      {"label":"D","text":"TBMM'de grubu bulunmayan siyasi partiler hiçbir şekilde aday gösteremez.","isCorrect":true},
+      {"label":"E","text":"Her siyasi parti veya parti grubu ancak bir aday gösterebilir."}
+    ],
+    "explanation": "TBMM'de grubu bulunmayan bir siyasi parti de son milletvekili genel seçiminde tek başına veya diğer partilerle birlikte geçerli oyların EN AZ YÜZDE BEŞİNİ almışsa aday gösterebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "7",
+    "stem": "Siyasi partilerce yapılan Cumhurbaşkanı adaylığı başvurusunda bilgi veya belgelerin eksik olduğu YSK tarafından tespit edilirse eksikliklerin tamamlanması için kaç günlük süre verilir?",
+    "options": [
+      {"label":"A","text":"2 gün"},
+      {"label":"B","text":"3 gün"},
+      {"label":"C","text":"5 gün","isCorrect":true},
+      {"label":"D","text":"7 gün"},
+      {"label":"E","text":"10 gün"}
+    ],
+    "explanation": "YSK, adaylık başvurusundaki bilgi ve belge eksikliklerinin tamamlanması için BEŞ GÜNLÜK süre verir; bu sürede eksiklik giderilmezse başvuru reddedilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 7",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "8/A",
+    "stem": "Seçmenler tarafından Cumhurbaşkanı adayı gösterilmek isteyen kişinin YSK'ya yaptığı başvuru, Kurul tarafından en geç kaç gün içinde incelenir?",
+    "options": [
+      {"label":"A","text":"1 gün"},
+      {"label":"B","text":"2 gün","isCorrect":true},
+      {"label":"C","text":"3 gün"},
+      {"label":"D","text":"5 gün"},
+      {"label":"E","text":"7 gün"}
+    ],
+    "explanation": "Seçmenler tarafından aday gösterilmek isteyen kişinin başvurusu YSK tarafından İKİ GÜN içinde incelenir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 8/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "8/A",
+    "stem": "Bir seçmen, Cumhurbaşkanı adaylığı teklifine ilişkin başvurusunu nereye yapar?",
+    "options": [
+      {"label":"A","text":"YSK Başkanlığına"},
+      {"label":"B","text":"Seçmen kütüğüne kayıtlı olduğu ilçe seçim kurulu başkanlığına","isCorrect":true},
+      {"label":"C","text":"İkamet ettiği ilin valiliğine"},
+      {"label":"D","text":"Herhangi bir il seçim kurulu başkanlığına"},
+      {"label":"E","text":"TBMM Başkanlığına"}
+    ],
+    "explanation": "Seçmen, adaylık teklifine ilişkin başvurusunu SEÇMEN KÜTÜĞÜNE KAYITLI OLDUĞU İLÇE SEÇİM KURULU BAŞKANLIĞINA yapar.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 8/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "8/A",
+    "stem": "Seçmenlerce Cumhurbaşkanı adayı gösterme usulüne ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {"label":"A","text":"Her seçmen yalnız bir aday için teklifte bulunabilir."},
+      {"label":"B","text":"Seçmen, teklif süresi sona ermeden üç gün öncesine kadar aday tercihini değiştirebilir.","isCorrect":true},
+      {"label":"C","text":"Başvuru bizzat yapılır."},
+      {"label":"D","text":"Adaylık teklifi için belirlenen tutar yatırılır."},
+      {"label":"E","text":"Aynı seçmenin birden fazla aday için yaptığı teklifler geçersizdir."}
+    ],
+    "explanation": "Her seçmen yalnız BİR aday için ve BİZZAT teklifte bulunabilir. Kanunda seçmene aday tercihini sonradan değiştirme imkânı tanınmamıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 8/A",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "11",
+    "stem": "Cumhurbaşkanı adayı olabilmek için görevinden ayrılan bir kamu görevlisi seçimi kaybederse görevine dönmek için seçim sonuçlarının kesinleşmesinden itibaren hangi süre içinde başvurmalıdır?",
+    "options": [
+      {"label":"A","text":"10 gün"},
+      {"label":"B","text":"15 gün"},
+      {"label":"C","text":"1 ay","isCorrect":true},
+      {"label":"D","text":"2 ay"},
+      {"label":"E","text":"3 ay"}
+    ],
+    "explanation": "Seçilemeyen kamu görevlisi, YSK tarafından Cumhurbaşkanı seçimi sonuçlarının ilanını takip eden BİR AY içinde başvurursa eski görevine veya kazanılmış hak aylık derecesindeki başka bir göreve dönebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 11",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "13",
+    "stem": "Cumhurbaşkanı seçiminde propaganda dönemi ne zaman sona erer?",
+    "options": [
+      {"label":"A","text":"Oy verme gününden iki gün önce saat 18.00'de"},
+      {"label":"B","text":"Oy verme gününden önceki gün saat 18.00'de","isCorrect":true},
+      {"label":"C","text":"Oy verme gününden önceki gün saat 24.00'te"},
+      {"label":"D","text":"Oy verme günü saat 08.00'de"},
+      {"label":"E","text":"Oy verme işleminin tamamlanmasıyla"}
+    ],
+    "explanation": "Propaganda dönemi, kesin aday listesinin Resmî Gazete'de yayımlandığı gün başlar ve oylamaların yapılacağı günden ÖNCEKİ GÜN SAAT 18.00'DE sona erer.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 13",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "14",
+    "stem": "Cumhurbaşkanı adayları, seçim sonuçlarının kesinleşmesinden itibaren seçim hesaplarını hangi süre içinde ve hangi makama sunar?",
+    "options": [
+      {"label":"A","text":"7 gün içinde Sayıştaya"},
+      {"label":"B","text":"10 gün içinde YSK'ya","isCorrect":true},
+      {"label":"C","text":"15 gün içinde TBMM Başkanlığına"},
+      {"label":"D","text":"30 gün içinde YSK'ya"},
+      {"label":"E","text":"1 ay içinde Anayasa Mahkemesine"}
+    ],
+    "explanation": "Adaylar, seçim sonuçlarının kesinleşmesinden itibaren ON GÜN içinde seçim hesaplarını YSK'ya sunar.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 14",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "21",
+    "stem": "Cumhurbaşkanı seçilen kişi, seçildiğine dair tutanağın TBMM Genel Kurulunda verilmesini izleyen gün andiçmezse aşağıdaki sonuçlardan hangisi doğar?",
+    "options": [
+      {"label":"A","text":"Tutanağın verildiği anda göreve başlamış sayılır."},
+      {"label":"B","text":"Üç gün içinde andiçmesi beklenir."},
+      {"label":"C","text":"Yedi gün içinde andiçmesi beklenir."},
+      {"label":"D","text":"Seçim kendiliğinden ikinci oylamaya kalır."},
+      {"label":"E","text":"Cumhurbaşkanlığı makamı boşalmış sayılır.","isCorrect":true}
+    ],
+    "explanation": "Cumhurbaşkanı seçilen kişi, tutanağın TBMM Genel Kurulunda verilmesini izleyen gün andiçerek göreve başlar. Andiçmezse Cumhurbaşkanlığı makamı BOŞALMIŞ sayılır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu md. 21",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6271.pdf"
+  }
+]

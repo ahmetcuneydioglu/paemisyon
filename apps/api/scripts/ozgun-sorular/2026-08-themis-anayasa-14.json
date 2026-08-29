@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "105",
+    "stem": "1982 Anayasası'na göre Yüce Divana sevk edilen Cumhurbaşkanının yargılanmasının tamamlanması için belirlenen olağan süre ne kadardır?",
+    "options": [
+      { "label": "A", "text": "Bir ay" },
+      { "label": "B", "text": "İki ay" },
+      { "label": "C", "text": "Üç ay", "isCorrect": true },
+      { "label": "D", "text": "Beş ay" },
+      { "label": "E", "text": "On ay" }
+    ],
+    "explanation": "Anayasa m.105'e göre Yüce Divan yargılaması üç ay içinde tamamlanır. Bu sürede tamamlanamazsa bir defaya mahsus olmak üzere üç aylık ek süre verilir ve yargılama bu sürede kesin olarak tamamlanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 105",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "153",
+    "stem": "1982 Anayasası'na göre Anayasa Mahkemesinin iptal kararlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Gerekçesi yazılmadan açıklanamaz." },
+      { "label": "B", "text": "İptal edilen hüküm kural olarak iptal kararının Resmî Gazetede yayımlandığı tarihte yürürlükten kalkar." },
+      { "label": "C", "text": "İptal kararının yürürlüğe girdiği tarihte, iptal edilen hükümle yürürlükten kaldırılmış olan önceki kanun hükümleri kendiliğinden yürürlük kazanır.", "isCorrect": true },
+      { "label": "D", "text": "Anayasa Mahkemesi gereken hâllerde iptal kararının yürürlük tarihini erteleyebilir." },
+      { "label": "E", "text": "Anayasa Mahkemesi iptal kararıyla kanun koyucu gibi hareket ederek yeni bir uygulamaya yol açacak hüküm tesis edemez." }
+    ],
+    "explanation": "Anayasa m.153 iptal kararının geçmişte yürürlükten kaldırılmış hükümleri kendiliğinden yeniden yürürlüğe sokacağına ilişkin bir kural içermez. İptal edilen hüküm, kural olarak kararın Resmî Gazetede yayımlandığı tarihte yürürlükten kalkar; ortaya çıkabilecek boşluğu doldurma görevi yasama organına aittir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 153",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "Birinci sınıf Cumhuriyet savcısı A'nın Anayasa Mahkemesi üyeliğine seçilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Kırk beş yaşını doldurmuş olması gerekir." },
+      { "label": "B", "text": "Adaylık dâhil en az yirmi yıl hâkim veya savcı olarak çalışmış olması gerekir." },
+      { "label": "C", "text": "Birinci sınıfa ayrılmış olması gerekir." },
+      { "label": "D", "text": "Hâkimler ve Savcılar Kurulu tarafından aday gösterilmesi gerekir.", "isCorrect": true },
+      { "label": "E", "text": "Cumhurbaşkanı tarafından seçilmesi mümkündür." }
+    ],
+    "explanation": "Anayasa m.146'ya göre Cumhurbaşkanı, dört üyeyi üst kademe yöneticileri, serbest avukatlar, birinci sınıf hâkim ve savcılar ile belirli kıdeme sahip Anayasa Mahkemesi raportörleri arasından doğrudan seçer. Birinci sınıf savcının HSK tarafından aday gösterilmesi şart değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "1982 Anayasası'na göre serbest avukatlar arasından Anayasa Mahkemesine üye seçilebilmek için en az kaç yıl fiilen serbest avukatlık yapılmış olmalıdır?",
+    "options": [
+      { "label": "A", "text": "5 yıl" },
+      { "label": "B", "text": "10 yıl" },
+      { "label": "C", "text": "12 yıl" },
+      { "label": "D", "text": "15 yıl" },
+      { "label": "E", "text": "20 yıl", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.146'ya göre serbest avukatların Anayasa Mahkemesi üyeliğine seçilebilmesi için kırk beş yaşını doldurmuş ve en az yirmi yıl fiilen avukatlık yapmış olmaları gerekir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "1982 Anayasası'na göre TBMM'nin Anayasa Mahkemesine üye seçimiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "İki üyeyi Sayıştay Genel Kurulunca gösterilen adaylar arasından seçer." },
+      { "label": "B", "text": "Bir üyeyi baro başkanlarınca serbest avukatlar arasından gösterilen adaylar arasından seçer." },
+      { "label": "C", "text": "Seçim gizli oylamayla yapılır." },
+      { "label": "D", "text": "Her boş üyelik için ilk ve ikinci oylamada TBMM üye tamsayısının üçte iki çoğunluğu aranır.", "isCorrect": true },
+      { "label": "E", "text": "İlk iki oylamada üye seçilemezse üçüncü oylamada en çok oy alan iki aday arasından en fazla oy alan aday seçilir." }
+    ],
+    "explanation": "Anayasa m.146'ya göre ilk oylamada TBMM üye tamsayısının üçte iki çoğunluğu, ikinci oylamada ise üye tamsayısının salt çoğunluğu aranır. İkinci oylamada da sonuç alınamazsa en çok oy alan iki aday arasında üçüncü oylama yapılır ve en fazla oy alan aday seçilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

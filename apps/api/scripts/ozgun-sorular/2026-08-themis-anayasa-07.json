@@ -1,0 +1,87 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "59",
+    "stem": "1982 Anayasası'na en son eklenen yasama kısıntısı aşağıdakilerden hangisidir?",
+    "options": [
+      { "label": "A", "text": "Kamu Görevlileri Hakem Kurulu kararları" },
+      { "label": "B", "text": "Spor federasyonlarının tahkim kurullarının kararları", "isCorrect": true },
+      { "label": "C", "text": "Hâkimler ve Savcılar Kurulu kararları" },
+      { "label": "D", "text": "Yargıtay Başkanlık Kurulu kararları" },
+      { "label": "E", "text": "Yüksek Askerî Şûranın ilişik kesme kararları" }
+    ],
+    "explanation": "Anayasa m.59'a 2011 yılında eklenen fıkraya göre spor federasyonlarının spor faaliyetlerinin yönetimine ve disiplinine ilişkin kararlarına karşı ancak zorunlu tahkime başvurulabilir. Tahkim kurulu kararları kesin olup bunlara karşı hiçbir yargı merciine başvurulamaz. Bu düzenleme, seçeneklerdeki yasama kısıntıları arasında Anayasaya en son eklenendir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 59",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "83",
+    "stem": "1982 Anayasası'na göre milletvekili dokunulmazlığıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Milletvekilinin Meclis çalışmalarındaki bir sözünden ötürü yargılanabilmesi için önce dokunulmazlığının kaldırılması gerekir." },
+      { "label": "B", "text": "Milletvekilinin dokunulmazlığı ancak TBMM üye tamsayısının salt çoğunluğuyla kaldırılabilir." },
+      { "label": "C", "text": "Milletvekilinin göreviyle ilgili bir suçtan ötürü dokunulmazlığı, hakkında açılan Meclis soruşturmasından sonra kaldırılabilir." },
+      { "label": "D", "text": "Milletvekilinin ağır cezayı gerektiren suçüstü hâlinde dokunulmazlığının kaldırılmasına gerek olmadan yargılanması mümkündür.", "isCorrect": true },
+      { "label": "E", "text": "Milletvekiline karşı açılacak ceza ve hukuk davalarında önce dokunulmazlığının kaldırılması gerekir." }
+    ],
+    "explanation": "Anayasa m.83'e göre ağır cezayı gerektiren suçüstü hâli yasama dokunulmazlığının istisnasıdır. Bu durumda Meclisin dokunulmazlığı kaldırma kararına gerek yoktur; yetkili makam durumu hemen ve doğrudan TBMM'ye bildirmek zorundadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 83",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "85",
+    "stem": "I. İstifa eden milletvekilinin milletvekilliğinin düşürülmesi\nII. Milletvekilliğinin kesin hüküm giyme nedeniyle düşmesi\nIII. Milletvekilliğiyle bağdaşmayan bir görev veya hizmeti sürdürmekte ısrar eden milletvekilinin milletvekilliğinin düşürülmesi\nIV. Meclis çalışmalarına özürsüz veya izinsiz olarak bir ay içinde toplam beş birleşim günü katılmayan milletvekilinin milletvekilliğinin düşürülmesi\nV. Milletvekilinin kısıtlanması\n1982 Anayasası'na göre yukarıdaki durumlardan hangilerine karşı Anayasa Mahkemesine başvurulamaz?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "I ve II" },
+      { "label": "C", "text": "II ve V", "isCorrect": true },
+      { "label": "D", "text": "I, II ve III" },
+      { "label": "E", "text": "III, IV ve V" }
+    ],
+    "explanation": "Anayasa m.85 uyarınca Anayasa Mahkemesine başvuru; dokunulmazlığın kaldırılması ile m.84'ün birinci, üçüncü veya dördüncü fıkralarına dayanan düşürme kararlarında mümkündür. Kesin hüküm giyme ve kısıtlanma hâllerinde üyelik, kesin mahkeme kararının Genel Kurula bildirilmesiyle düştüğünden bu yola başvurulamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 84 ve 85",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "161",
+    "stem": "1982 Anayasası'na göre kesinhesap kanun teklifiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı teklifi, ilgili mali yılın sonundan başlayarak en geç altı ay sonra TBMM'ye sunar." },
+      { "label": "B", "text": "Sayıştay genel uygunluk bildirimini, kesinhesap kanun teklifinin verilmesinden başlayarak en geç yetmiş beş gün içinde TBMM'ye sunar." },
+      { "label": "C", "text": "Kesinhesap kanun teklifi, yeni bütçe kanunu teklifiyle birlikte Plan ve Bütçe Komisyonu gündemine alınır.", "isCorrect": true },
+      { "label": "D", "text": "TBMM kesinhesap kanun teklifini yeni yıl bütçe kanunu teklifiyle beraber görüşerek karara bağlar." },
+      { "label": "E", "text": "Teklifin TBMM'ye verilmiş olması, ilgili yıla ait Sayıştayca sonuçlandırılmamış denetim ve hesap yargılamalarının karara bağlandığı anlamına gelmez." }
+    ],
+    "explanation": "Anayasa m.161, kesinhesap kanunu teklifinin yeni yıl bütçe kanunu teklifiyle birlikte görüşülüp karara bağlanacağını düzenler; iki teklifin birlikte Plan ve Bütçe Komisyonu gündemine alınacağı yönünde bir anayasal hüküm yoktur. Diğer seçeneklerdeki süre ve sonuçlar madde metniyle uyumludur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 161",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "78",
+    "stem": "TBMM genel seçimlerinden otuz iki ay geçtikten sonra milletvekili sayısı 574'e düşmüştür. 1982 Anayasası'na göre bu durumda aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Üç ay içinde ara seçime gidilmesi zorunludur." },
+      { "label": "B", "text": "Yüz yirmi gün içinde ara seçime gidilmesi zorunludur." },
+      { "label": "C", "text": "Ara seçime gidilmesi mümkün değildir." },
+      { "label": "D", "text": "Ara seçime gidilebilir.", "isCorrect": true },
+      { "label": "E", "text": "Üç ay içinde erken genel seçime gidilmelidir." }
+    ],
+    "explanation": "Anayasa m.78'e göre genel seçimden otuz ay geçmedikçe ara seçime gidilemez. Somut olayda otuz iki ay geçmiş ve 600 üyeli Mecliste 26 üyelik boşalmıştır; bu sayı üye tamsayısının yüzde beşine ulaşmadığından üç ay içinde ara seçim zorunluluğu doğmaz. Bununla birlikte genel seçimlere bir yıldan fazla kaldığı varsayımı altında ara seçim yapılabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI",
+    "citation": "T.C. Anayasası md. 75 ve 78",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

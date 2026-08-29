@@ -1,0 +1,376 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "149",
+    "stem": "Anayasa Mahkemesi Genel Kurulu, bir anayasa değişikliği kanunu hakkında iptal istemiyle açılan davada Başkan dahil 12 üye ile toplanır.\n1982 Anayasası'na göre bu toplantıda ilgili kanunun iptaline karar verebilmesi için iptal yönünde en az kaç oy gerekir?",
+    "options": [
+      { "label": "A", "text": "10" },
+      { "label": "B", "text": "9" },
+      { "label": "C", "text": "8", "isCorrect": true },
+      { "label": "D", "text": "7" },
+      { "label": "E", "text": "6" }
+    ],
+    "explanation": "Anayasa m.149/1 uyarınca Anayasa Mahkemesi Genel Kurulu, Mahkeme Başkanının veya Başkanın belirleyeceği başkanvekilinin başkanlığında EN AZ ON ÜYE ile toplanır ve kararlarını kural olarak SALT ÇOĞUNLUKLA alır. Ancak m.149/3'e göre ANAYASA DEĞİŞİKLİĞİNDE İPTALE, SİYASİ PARTİLERİN KAPATILMASINA ya da DEVLET YARDIMINDAN YOKSUN BIRAKILMASINA karar verilebilmesi için TOPLANTIYA KATILAN ÜYELERİN ÜÇTE İKİ OY ÇOKLUĞU şarttır. Toplantıya 12 üye katıldığından gereken oy 12 × 2/3 = 8'dir. Buradaki nitelikli çoğunluk üye tamsayısı (15) üzerinden değil, TOPLANTIYA KATILANLAR üzerinden hesaplanır.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 146, 149",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "Cumhurbaşkanı tarafından Anayasa Mahkemesi üyesi olarak seçildiği Anayasa Mahkemesi Başkanlığınca tarafına tebliğ edilen serbest avukat A, görevi kabul etmez. Bu husus, Anayasa Mahkemesi Başkanı tarafından yazıyla Cumhurbaşkanlığına bildirilir.\n6216 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun'a göre bu bildirimden itibaren kural olarak en geç ne kadar süre içinde Cumhurbaşkanı tarafından yeni üye seçilir?",
+    "options": [
+      { "label": "A", "text": "7 gün" },
+      { "label": "B", "text": "15 gün" },
+      { "label": "C", "text": "1 ay", "isCorrect": true },
+      { "label": "D", "text": "45 gün" },
+      { "label": "E", "text": "2 ay" }
+    ],
+    "explanation": "6216 sayılı Kanun'a göre Anayasa Mahkemesi üyeliğine seçilen kişinin görevi kabul etmemesi durumunda bu husus; TBMM'ce seçilmiş olması hâlinde TBMM Başkanlığına, Cumhurbaşkanınca seçilmiş olması hâlinde Cumhurbaşkanlığına, aday gösterilmesi söz konusu ise ilgili kurum ya da kurula Anayasa Mahkemesi Başkanı tarafından yazıyla bildirilir. BİLDİRİMDEN İTİBAREN AYNI USULE GÖRE BİR AY İÇİNDE YENİ ÜYE SEÇİLİR. Aday gösterecek kurulların tatilde bulunması hâlinde bu süre tatilin bitiminden itibaren başlar. Anayasa Mahkemesi on beş üyeden oluşur; üyelerin üçü TBMM, on ikisi Cumhurbaşkanı tarafından seçilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 146; 6216 sayılı Kanun md. 12",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "152",
+    "stem": "Ankara idare mahkemesi, baktığı iptal davasından uygulanacak olan ve Anayasa'ya aykırı gördüğü kanun hükmünü itiraz yoluyla Anayasa Mahkemesine taşır.\n1982 Anayasası'na göre Anayasa Mahkemesi; işin kendisine eksiksiz olarak gelişinden başlamak üzere kural olarak en geç kaç ay içinde karar vermezse Ankara idare mahkemesi, bu davayı yürürlükteki kanun hükümlerine göre sonuçlandırır?",
+    "options": [
+      { "label": "A", "text": "1" },
+      { "label": "B", "text": "2" },
+      { "label": "C", "text": "3" },
+      { "label": "D", "text": "4" },
+      { "label": "E", "text": "5", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.152/3'e göre Anayasa Mahkemesi, işin kendisine gelişinden başlamak üzere BEŞ AY İÇİNDE kararını verir ve açıklar; bu süre içinde karar verilmezse mahkeme davayı YÜRÜRLÜKTEKİ KANUN HÜKÜMLERİNE GÖRE sonuçlandırır. Ancak Anayasa Mahkemesi kararı, ESAS HAKKINDAKİ KARAR KESİNLEŞİNCEYE KADAR gelirse mahkeme buna uymak zorundadır. Somut norm denetiminde (itiraz yolu) davaya bakmakta olan mahkeme, uygulanacak kanun veya Cumhurbaşkanlığı kararnamesi hükmünü Anayasaya aykırı görürse ya da taraflardan birinin ileri sürdüğü aykırılık iddiasını ciddi bulursa Anayasa Mahkemesinin kararına kadar davayı geri bırakır; iddiayı ciddi görmezse bu iddia temyiz merciince esas hükümle birlikte karara bağlanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 152",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "152",
+    "stem": "Samsun idare Mahkemesi, önüne gelen davada uygulanacak bir Cumhurbaşkanlığı Kararnamesi hükmünün Anayasaya aykırı olduğu iddiasıyla karşı karşıya kalır.\nAykırılık iddiasının ciddi olduğu kanısına varan Samsun idare mahkemesi, kural olarak aşağıdakilerden hangisinin bu konuda vereceği karara kadar davayı geri bırakır?",
+    "options": [
+      { "label": "A", "text": "Yargıtay" },
+      { "label": "B", "text": "Anayasa Mahkemesi", "isCorrect": true },
+      { "label": "C", "text": "Danıştay" },
+      { "label": "D", "text": "Uyuşmazlık Mahkemesi" },
+      { "label": "E", "text": "Türkiye Büyük Millet Meclisi" }
+    ],
+    "explanation": "Anayasa m.152/1'e göre bir davaya bakmakta olan mahkeme, uygulanacak bir KANUN VEYA CUMHURBAŞKANLIĞI KARARNAMESİNİN hükümlerini Anayasaya aykırı görürse veya taraflardan birinin ileri sürdüğü aykırılık iddiasının CİDDİ olduğu kanısına varırsa, ANAYASA MAHKEMESİNİN bu konuda vereceği karara kadar davayı geri bırakır. Bu yola SOMUT NORM DENETİMİ (itiraz yolu, def'i yolu) denir. Tarafların doğrudan Anayasa Mahkemesine başvurma hakları yoktur; başvuruyu ancak davaya bakmakta olan mahkeme yapar. Ayrıca 2017 değişikliğiyle 'kanun hükmünde kararname' ibaresi 'Cumhurbaşkanlığı kararnamesi' olarak değiştirilmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "1982 Anayasası md. 152",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "6216 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun'a göre aşağıdakilerden hangisi Anayasa Mahkemesi Başkanı ve üyeleri için öngörülen disiplin cezalarından biridir?",
+    "options": [
+      { "label": "A", "text": "Aylıktan kesme" },
+      { "label": "B", "text": "Kademe ilerlemesinin durdurulması" },
+      { "label": "C", "text": "Devlet memurluğundan çıkarma" },
+      { "label": "D", "text": "Üyelikten çekilmeye davet", "isCorrect": true },
+      { "label": "E", "text": "Geçici süreyle görevden uzaklaştırma" }
+    ],
+    "explanation": "6216 sayılı Kanun'a göre Anayasa Mahkemesi Başkan ve üyelerine uygulanabilecek disiplin cezaları yalnızca üçtür: UYARMA, KINAMA ve ÜYELİKTEN ÇEKİLMEYE DAVET EDİLME. Başkan ve üyelerin asli görevleri dışında resmî veya özel bir görev almaları ya da yaptıkları yeminle veya üyeliğin vakar ve şerefi ile bağdaşmayan, hizmetin aksamasına yol açan hâl ve hareketlerinde sabit görülmesi hâlinde, eylemin niteliğine göre bu cezalardan birine karar verilir. Üyelikten çekilmeye davet cezası için GENEL KURULUN ÜÇTE İKİ oy çokluğu aranır; ilgili, tebliğden itibaren on gün içinde Genel Kurula yeniden inceleme başvurusunda bulunabilir ve bu karar kesindir.",
+    "difficulty": "hard",
+    "sourceLabel": "2024 EYLÜL HUKUK MESLEKLERİNE GİRİŞ SINAVI",
+    "citation": "6216 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun md. 18",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "148",
+    "stem": "I. Anayasa Mahkemesi kararları\nII. Cumhurbaşkanlığı kararnameleri\nIII. Yüksek Askerî Şûranın terfi işlemleri\nYukarıdakilerden hangileri aleyhine Anayasa Mahkemesinde doğrudan bireysel başvuru yoluna gidilemez?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "I ve II" },
+      { "label": "D", "text": "II ve III" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "6216 sayılı Kanun'a göre YASAMA İŞLEMLERİ İLE DÜZENLEYİCİ İDARİ İŞLEMLER aleyhine doğrudan bireysel başvuru yapılamayacağı gibi, ANAYASA MAHKEMESİ KARARLARI ile ANAYASANIN YARGI DENETİMİ DIŞINDA BIRAKTIĞI İŞLEMLER de bireysel başvurunun konusu olamaz. Cumhurbaşkanlığı kararnamesi düzenleyici bir idari işlem olduğundan II, Anayasa Mahkemesi kararları olduğundan I ve Anayasa m.159/son ile yargı yolu kapalı tutulan YÜKSEK ASKERÎ ŞÛRA'NIN TERFİ İŞLEMLERİ ile kadrosuzluk nedeniyle emekliye ayırma kararları olduğundan III bireysel başvuruya konu edilemez. Bireysel başvuru, ancak DİĞER HUKUK YOLLARI TÜKETİLDİKTEN SONRA başvurulabilen ikincil bir yargı yoludur.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 148, 159; 6216 sayılı Kanun md. 45",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "1982 Anayasası'na göre Anayasa Mahkemesi raportörlerinin Anayasa Mahkemesi üyesi seçilebilmeleri için kural olarak en az kaç yıl raportörlük görevinde bulunmuş olmaları gerekir?",
+    "options": [
+      { "label": "A", "text": "3" },
+      { "label": "B", "text": "5", "isCorrect": true },
+      { "label": "C", "text": "10" },
+      { "label": "D", "text": "7" },
+      { "label": "E", "text": "20" }
+    ],
+    "explanation": "Anayasa m.146'ya göre Anayasa Mahkemesine üye seçilebilmek için KIRK BEŞ YAŞIN DOLDURULMUŞ OLMASI kaydıyla; yükseköğretim kurumları öğretim üyelerinin PROFESÖR VEYA DOÇENT unvanını kazanmış, avukatların EN AZ YİRMİ YIL fiilen avukatlık yapmış, birinci sınıf hâkim ve savcıların adaylık dahil EN AZ YİRMİ YIL çalışmış, üst kademe yöneticilerinin yükseköğrenim görmüş ve en az yirmi yıl kamu hizmetinde fiilen çalışmış olması; ANAYASA MAHKEMESİ RAPORTÖRLERİNİN ise mesleklerinde EN AZ YİRMİ YIL çalışmış olması gerekir. Bu yirmi yıllık sürenin en az BEŞ YILININ RAPORTÖRLÜK görevinde geçmiş olması aranır.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "140",
+    "stem": "1982 Anayasası'na göre hakimler, idari görevleri yönünden hangisine bağlıdır?",
+    "options": [
+      { "label": "A", "text": "Hakimler ve Savcılar Kurulu" },
+      { "label": "B", "text": "İçişleri Bakanlığı" },
+      { "label": "C", "text": "Adalet Bakanlığı", "isCorrect": true },
+      { "label": "D", "text": "Cumhurbaşkanı" },
+      { "label": "E", "text": "Danıştay" }
+    ],
+    "explanation": "Anayasa m.140/6'ya göre HÂKİMLER VE SAVCILAR İDARİ GÖREVLERİ YÖNÜNDEN ADALET BAKANLIĞINA BAĞLIDIRLAR. Bu, mahkemelerin bağımsızlığı ilkesinin istisnası değildir; zira aynı maddeye göre hâkimler YARGISAL görevlerinde mahkemelerin bağımsızlığı ve hâkimlik teminatı esaslarına göre görev ifa ederler ve m.138 uyarınca hiçbir organ, makam, merci veya kişi yargı yetkisinin kullanılmasında mahkemelere ve hâkimlere emir ve talimat veremez, genelge gönderemez, tavsiye ve telkinde bulunamaz. Hâkim ve savcı olup da adalet hizmetindeki idari görevlerde çalışanlar, hâkimler ve savcılar hakkındaki hükümlere tabidir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 138, 140",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "138",
+    "stem": "\"Hiçbir organ, makam, merci veya kişi; yargı yetkisinin kullanılmasında mahkeme ve hakimlere emir ve talimat veremez, genelge gönderemez, tavsiye ve telkinde bulunamaz.\"\n1982 Anayasası'nın bu hükmü, aşağıdaki başlıkların hangisini taşıyan maddede düzenlenmiştir?",
+    "options": [
+      { "label": "A", "text": "Hakimlik ve savcılık teminatı" },
+      { "label": "B", "text": "Mahkemelerin bağımsızlığı", "isCorrect": true },
+      { "label": "C", "text": "Hakimlik ve savcılık mesleği" },
+      { "label": "D", "text": "Mahkemelerin kuruluşu" },
+      { "label": "E", "text": "Adalet hizmetlerinin denetimi" }
+    ],
+    "explanation": "Verilen hüküm, Anayasa m.138'de yer alan MAHKEMELERİN BAĞIMSIZLIĞI başlıklı maddenin ikinci fıkrasıdır. Aynı maddeye göre hâkimler görevlerinde bağımsızdır; Anayasaya, kanuna ve hukuka uygun olarak vicdani kanaatlerine göre hüküm verirler. Görülmekte olan bir dava hakkında Yasama Meclisinde yargı yetkisinin kullanılması ile ilgili soru sorulamaz, görüşme yapılamaz veya herhangi bir beyanda bulunulamaz; yasama ve yürütme organları ile idare, mahkeme kararlarına uymak zorundadır, bu organlar ve idare mahkeme kararlarını hiçbir suretle değiştiremez ve bunların yerine getirilmesini geciktiremez. HÂKİMLİK VE SAVCILIK TEMİNATI ise m.139'da, HÂKİMLİK VE SAVCILIK MESLEĞİ m.140'ta düzenlenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 138, 139, 140",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "154",
+    "stem": "360 üyeden oluşan Yargıtay Genel Kurulu, Yargıtay birinci başkanını seçmek üzere 340 üyeyle toplanmıştır.\n1982 Anayasası'na göre, Yargıtay birinci başkanının seçilebilmesi için gerekli olan asgari oy sayısı kaçtır?",
+    "options": [
+      { "label": "A", "text": "151" },
+      { "label": "B", "text": "171" },
+      { "label": "C", "text": "181", "isCorrect": true },
+      { "label": "D", "text": "216" },
+      { "label": "E", "text": "240" }
+    ],
+    "explanation": "Anayasa m.154/3'e göre Yargıtay Birinci Başkanı, birinci başkanvekilleri ve daire başkanları kendi üyeleri arasından Yargıtay Genel Kurulunca ÜYE TAMSAYISININ SALT ÇOĞUNLUĞU ile ve GİZLİ OYLA DÖRT YIL için seçilirler; süresi bitenler yeniden seçilebilirler. Buradaki ölçüt toplantıya katılan üye sayısı değil ÜYE TAMSAYISIDIR; Genel Kurul 360 üyeden oluştuğuna göre salt çoğunluk 181'dir ve toplantıya 340 üyenin katılmış olması sonucu değiştirmez. Yargıtay üyeleri ise birinci sınıfa ayrılmış adli yargı hâkim ve Cumhuriyet savcıları ile bu meslekten sayılanlar arasından Hâkimler ve Savcılar Kurulunca üye tamsayısının salt çoğunluğu ile ve gizli oyla seçilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 154",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "146",
+    "stem": "I. Avukatlar\nII. Üst kademe yöneticileri\nIII. Birinci sınıf hakim ve savcılar\n1982 Anayasası'na göre, Anayasa Mahkemesine üye seçilecek yukarıdaki meslek gruplarının hangileri için o meslek alanında en az 20 yıl çalışma olma şartı aranır?",
+    "options": [
+      { "label": "A", "text": "Yalnız I" },
+      { "label": "B", "text": "Yalnız II" },
+      { "label": "C", "text": "Yalnız III" },
+      { "label": "D", "text": "I ve II" },
+      { "label": "E", "text": "I, II ve III", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.146'ya göre Anayasa Mahkemesine üye seçilebilmek için KIRK BEŞ YAŞIN doldurulmuş olması kaydıyla; AVUKATLARIN en az YİRMİ YIL fiilen avukatlık yapmış, ÜST KADEME YÖNETİCİLERİNİN yükseköğrenim görmüş ve en az YİRMİ YIL kamu hizmetinde fiilen çalışmış, BİRİNCİ SINIF HÂKİM VE SAVCILARIN adaylık dahil en az YİRMİ YIL çalışmış olması şarttır; dolayısıyla üç meslek grubunun tamamı için yirmi yıllık süre aranır. Yükseköğretim kurumları öğretim üyeleri bakımından ise süre değil PROFESÖR VEYA DOÇENT unvanını kazanmış olma şartı öngörülmüştür.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 146",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "139",
+    "stem": "1982 Anayasası'na göre hakimlik ve savcılık teminatı ve mesleğiyle ilgili kural olarak aşağıdakilerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Hakimler ve savcılar azlolunamazlar." },
+      { "label": "B", "text": "Bir mahkemenin kaldırılması sebebiyle de olsa aylık, ödenek ve diğer özlük haklarından yoksun kılınamazlar." },
+      { "label": "C", "text": "Hakimler ve savcılar altmışbeş yaşını bitirinceye kadar hizmet görürler." },
+      { "label": "D", "text": "Kendileri istemedikçe görev yerleri değiştirilemez.", "isCorrect": true },
+      { "label": "E", "text": "İdari görevleri yönünden Adalet Bakanlığı'na bağlıdırlar." }
+    ],
+    "explanation": "Anayasamızda hâkim ve savcılara GÖREV YERLERİNİN DEĞİŞTİRİLEMEMESİ (coğrafi teminat) şeklinde bir güvence tanınmamıştır; aksine m.140/3, hâkim ve savcıların 'görevlerinin ve GÖREV YERLERİNİN GEÇİCİ VEYA SÜREKLİ OLARAK DEĞİŞTİRİLMESİ'ne ilişkin esasların kanunla düzenleneceğini öngörür. Bu nedenle D yanlıştır. A ve B, m.139/1'deki hâkimlik ve savcılık teminatının (azlolunamama, istemedikçe Anayasada gösterilen yaştan önce emekliye ayrılamama, mahkemenin veya kadronun kaldırılması hâlinde dahi özlük haklarından yoksun kılınamama) karşılığıdır. C, m.140/4'teki altmış beş yaş haddi; E ise m.140/6'daki idari bağlılık kuralıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "1982 Anayasası md. 139, 140",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "153",
+    "stem": "Anayasa Mahkemesi, bir iptal davasında kanun hükmünün Anayasa'ya aykırı bularak iptal ediyor. Ancak iptal hükmünün yayın tarihinde yürürlüğe girmesi hâlinde önemli bir yasal boşluk ortaya çıkacağı anlaşılıyor.\n1982 Anayasası'na göre bu durumda Anayasa Mahkemesi; iptal hükmünün yürürlüğe girmesini, kararın Resmî Gazete'de yayımlandığı tarihten itibaren kural olarak en fazla ne kadar süre erteleyebilir?",
+    "options": [
+      { "label": "A", "text": "1 ay" },
+      { "label": "B", "text": "3 ay" },
+      { "label": "C", "text": "6 ay" },
+      { "label": "D", "text": "1 yıl", "isCorrect": true },
+      { "label": "E", "text": "10 yıl" }
+    ],
+    "explanation": "Anayasa m.153/3'e göre kanun, Cumhurbaşkanlığı kararnamesi veya TBMM İçtüzüğü ya da bunların hükümleri, iptal kararlarının Resmî Gazetede YAYIMLANDIĞI TARİHTE yürürlükten kalkar. Gereken hâllerde Anayasa Mahkemesi iptal hükmünün yürürlüğe gireceği tarihi ayrıca kararlaştırabilir; ANCAK BU TARİH, KARARIN RESMÎ GAZETEDE YAYIMLANDIĞI GÜNDEN BAŞLAYARAK BİR YILI GEÇEMEZ. İptal kararının yürürlüğe girişinin ertelendiği durumlarda TBMM, iptal kararının ortaya çıkardığı hukuki boşluğu dolduracak kanun teklifini öncelikle görüşüp karara bağlar. Anayasa Mahkemesi kararları KESİNDİR, iptal kararları GERİYE YÜRÜMEZ ve gerekçesi yazılmadan açıklanamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS HUKUK",
+    "citation": "1982 Anayasası md. 153",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "158",
+    "stem": "1982 Anayasası'na göre Uyuşmazlık Mahkemesi başkanı, aşağıdakilerden hangisi tarafından görevlendirilir?",
+    "options": [
+      { "label": "A", "text": "Yargıtay" },
+      { "label": "B", "text": "Danıştay" },
+      { "label": "C", "text": "Hakimler ve Savcılar Kurulu" },
+      { "label": "D", "text": "Anayasa Mahkemesi", "isCorrect": true },
+      { "label": "E", "text": "Cumhurbaşkanı" }
+    ],
+    "explanation": "Anayasa m.158/2'ye göre Uyuşmazlık Mahkemesinin BAŞKANLIĞINI, ANAYASA MAHKEMESİNCE KENDİ ÜYELERİ ARASINDAN GÖREVLENDİRİLEN ÜYE yapar. Uyuşmazlık Mahkemesi, ADLİ VE İDARİ yargı mercileri arasındaki GÖREV VE HÜKÜM uyuşmazlıklarını KESİN OLARAK çözümlemeye yetkilidir (askerî yargı ibaresi 2017 değişikliğiyle çıkarılmıştır). Diğer mahkemelerle Anayasa Mahkemesi arasındaki görev uyuşmazlıklarında ANAYASA MAHKEMESİNİN KARARI ESAS ALINIR. Uyuşmazlık Mahkemesinin kuruluşu, üyelerinin nitelikleri ve seçimleri ile işleyişi Anayasa'da değil KANUNLA düzenlenir.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS KAMU YÖNETİMİ",
+    "citation": "1982 Anayasası md. 158",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "148",
+    "stem": "Anayasa Mahkemesinin aşağıdaki kararlarından hangisine karşı yeniden inceleme başvurusunda bulunulabilir?",
+    "options": [
+      { "label": "A", "text": "Yüce Divan sıfatıyla verilen hüküm niteliğindeki kararlar", "isCorrect": true },
+      { "label": "B", "text": "Bireysel başvurular hakkındaki kabul edilemezlik kararları" },
+      { "label": "C", "text": "Siyasi partilerin kapatılmasına ilişkin kararlar" },
+      { "label": "D", "text": "Anayasa değişikliklerinin iptaline ilişkin kararlar" },
+      { "label": "E", "text": "Siyasi partilere ihtar verilmesine ilişkin kararlar" }
+    ],
+    "explanation": "2010 yılı Anayasa değişikliğiyle Yüce Divan kararlarına karşı YENİDEN İNCELEME başvurusu yolu açılmıştır (2010'a kadar bu kararlara karşı itiraz yolu kapalıydı). 6216 sayılı Kanun'a göre başvuru; Yargıtay Cumhuriyet Başsavcısı veya Başsavcıvekili, sanık, müdafi, katılan veya vekili tarafından, HÜKMÜN AÇIKLANMASINDAN İTİBAREN ON BEŞ GÜN İÇİNDE Yüce Divana bir dilekçe verilmesi suretiyle yapılır. Yüce Divan yeniden incelemeyi kural olarak DOSYA ÜZERİNDEN yapar; inceleme yalnızca başvuruda belirtilen hususlarla sınırlıdır ve GENEL KURULUN yeniden inceleme sonucunda verdiği KARAR KESİNDİR. Anayasa Mahkemesinin diğer kararları m.153/1 uyarınca kesin olduğundan bunlara karşı böyle bir yol yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 148, 153; 6216 sayılı Kanun md. 60",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "1982 Anayasası'na göre bir adayın, Türkiye Büyük Millet Meclisi Genel Kurulu tarafından ikinci oylamada Hakimler ve Savcılar Kurulu üyeliğine seçilebilmesi için en az kaç oy alması gerekir?",
+    "options": [
+      { "label": "A", "text": "400" },
+      { "label": "B", "text": "360", "isCorrect": true },
+      { "label": "C", "text": "301" },
+      { "label": "D", "text": "200" },
+      { "label": "E", "text": "151" }
+    ],
+    "explanation": "Anayasa m.159 uyarınca TBMM, Karma Komisyon tarafından belirlenen adaylar arasından her bir üye için ayrı ayrı GİZLİ OYLA seçim yapar: İLK OYLAMADA üye tamsayısının ÜÇTE İKİ çoğunluğu (400), İKİNCİ OYLAMADA üye tamsayısının BEŞTE ÜÇ çoğunluğu (360) aranır. İkinci oylamada da üye seçilemediği takdirde EN ÇOK OYU ALAN İKİ ADAY ARASINDA AD ÇEKME USULÜ ile üye seçimi tamamlanır; yani ÜÇÜNCÜ BİR OYLAMA YAPILMAZ. Hâkimler ve Savcılar Kurulu on üç üyeden oluşur, üyelerin görev süresi DÖRT YILDIR ve süresi biten üyeler bir kez daha seçilebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "1982 Anayasası'na göre Hakimler ve Savcılar Kurulu üyeleri, kural olarak kaç yıl görev yapmak üzere seçilir?",
+    "options": [
+      { "label": "A", "text": "2" },
+      { "label": "B", "text": "4", "isCorrect": true },
+      { "label": "C", "text": "5" },
+      { "label": "D", "text": "6" },
+      { "label": "E", "text": "7" }
+    ],
+    "explanation": "Anayasa m.159 uyarınca Hâkimler ve Savcılar Kurulu üyeleri DÖRT YIL için seçilir; süresi biten üyeler BİR KEZ DAHA seçilebilir. Kurul on üç üyeden oluşur ve iki daire hâlinde çalışır; Kurulun Başkanı ADALET BAKANIDIR ve Adalet Bakanlığı Müsteşarı Kurulun tabiî üyesidir. Üyelerin dördü Cumhurbaşkanınca, yedisi ise TBMM tarafından seçilir. Kurul üyeliği seçimi, üyelerin görev süresinin dolmasından önceki OTUZ GÜN içinde yapılır; görev süreleri dolmadan üyeliğin boşalması durumunda, boşalmayı takip eden otuz gün içinde yeni üyelerin seçimi yapılır.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "139",
+    "stem": "\"Hakimler ve savcılar azlolunamaz, kendileri istemedikçe Anayasa'da gösterilen yaştan önce emekliye ayrılamaz; bir mahkemenin veya kadronun kaldırılması sebebiyle de olsa, aylık, ödenek ve diğer özlük haklarından yoksun kılınamaz.\"\n1982 Anayasası'nın bu hükmü, aşağıdaki başlıklardan hangisini taşıyan maddede düzenlenmiştir?",
+    "options": [
+      { "label": "A", "text": "Hakimlik ve savcılık teminatı", "isCorrect": true },
+      { "label": "B", "text": "Mahkemelerin bağımsızlığı" },
+      { "label": "C", "text": "Mahkemelerin kuruluşu" },
+      { "label": "D", "text": "Adalet hizmetlerinin denetimi" },
+      { "label": "E", "text": "Kanuni hakim güvencesi" }
+    ],
+    "explanation": "Verilen hüküm, Anayasa m.139'da yer alan HÂKİMLİK VE SAVCILIK TEMİNATI başlıklı maddenin birinci fıkrasıdır. Aynı maddenin ikinci fıkrasına göre meslekten çıkarılmayı gerektiren bir suçtan dolayı hüküm giymiş olanlar, görevini sağlık bakımından yerine getiremeyeceği kesin olarak anlaşılanlar veya meslekte kalmalarının uygun olmadığına karar verilenler hakkında kanundaki istisnalar saklıdır. MAHKEMELERİN BAĞIMSIZLIĞI m.138'de, KANUNİ HÂKİM GÜVENCESİ ise temel haklar arasında m.37'de düzenlenmiştir; bağımsızlık mahkemeye, teminat ise hâkimin kişiliğine ilişkin bir güvencedir.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 37, 138, 139",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "152",
+    "stem": "Ankara Asliye Hukuk Mahkemesinde görülen davada uygulanacak kanun hükmünün Anayasa'ya aykırı olduğu iddiasıyla Anayasa Mahkemesine somut norm denetimi (itiraz) yoluna başvurulmuştur. Anayasa Mahkemesi, bu başvuruyla ilgili işin esasına girerek ret kararı vermiştir.\n1982 Anayasası'na göre aynı kanun hükmünün Anayasa'ya aykırılığı iddiasıyla tekrar başvuruda bulunulabilmesi için bu kararın Resmî Gazete'de yayımlanmasından sonra en az kaç yıl geçmelidir?",
+    "options": [
+      { "label": "A", "text": "1" },
+      { "label": "B", "text": "3" },
+      { "label": "C", "text": "5" },
+      { "label": "D", "text": "10", "isCorrect": true },
+      { "label": "E", "text": "15" }
+    ],
+    "explanation": "Anayasa m.152/4'e göre Anayasa Mahkemesinin İŞİN ESASINA GİREREK verdiği RED KARARININ Resmî Gazetede yayımlanmasından sonra ON YIL GEÇMEDİKÇE aynı kanun hükmünün Anayasaya aykırılığı iddiasıyla TEKRAR BAŞVURUDA BULUNULAMAZ. Bu on yıllık yasak yalnızca SOMUT NORM DENETİMİ (itiraz yolu) sonucunda verilen esasa ilişkin ret kararlarını kapsar; iptal davası (soyut norm denetimi) sonucunda verilen ret kararları bu yasağın kapsamına girmez. Ayrıca Anayasa Mahkemesinin İLK İNCELEME sonucunda verdiği ret kararları için de böyle bir süre kısıtı yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 152",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "1982 Anayasası'na göre Hakimler ve Savcılar Kurulu'nun Türkiye Büyük Millet Meclisi Genel Kurulunca seçilecek üyelerine ilişkin aday belirleme işlemi aşağıdakilerin hangisi tarafından yapılır?",
+    "options": [
+      { "label": "A", "text": "Türkiye Barolar Birliği, Yargıtay Büyük Genel Kurulu, Danıştay Genel Kurulu ve Yükseköğretim Kurulu" },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi Anayasa ve Adalet Komisyonları üyelerinden kurulu Karma Komisyon", "isCorrect": true },
+      { "label": "C", "text": "Türkiye Büyük Millet Meclisi Başkanlık Divanı" },
+      { "label": "D", "text": "Türkiye Büyük Millet Meclisi Danışma Kurulu" },
+      { "label": "E", "text": "Türkiye Büyük Millet Meclisi siyasi parti grupları" }
+    ],
+    "explanation": "Anayasa m.159 uyarınca TBMM'ye Hâkimler ve Savcılar Kuruluna üye seçme yetkisi 2017 Anayasa değişikliğiyle verilmiştir. Kurul'un TBMM tarafından seçilecek üyeliklerine ilişkin başvurular MECLİS BAŞKANLIĞINA yapılır; Başkanlık, başvuruları ANAYASA VE ADALET KOMİSYONLARI ÜYELERİNDEN KURULU KARMA KOMİSYONA gönderir. Komisyon her bir üyelik için ÜÇ ADAYI, üye tamsayısının üçte iki çoğunluğuyla belirler; birinci oylamada bu çoğunluk sağlanamazsa ikinci oylamada üye tamsayısının beşte üç çoğunluğu aranır, bu oylamada da belirlenemezse en çok oy alan iki aday arasında AD ÇEKME usulüne gidilir. TBMM Genel Kurulu ise komisyonun belirlediği adaylar arasından her üye için ayrı ayrı GİZLİ OYLA seçim yapar.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "148",
+    "stem": "Anayasa Mahkemesinin görev ve yetkileri kapsamında olan aşağıdaki hususların hangisine \"anayasa şikâyeti\" adı verilir?",
+    "options": [
+      { "label": "A", "text": "Soyut norm denetimine" },
+      { "label": "B", "text": "Bireysel başvurulara", "isCorrect": true },
+      { "label": "C", "text": "Yüce Divan sıfatıyla yapılan yargılamalara" },
+      { "label": "D", "text": "Siyasi parti kapatma davalarına" },
+      { "label": "E", "text": "Somut norm denetimine" }
+    ],
+    "explanation": "BİREYSEL BAŞVURU yoluna anayasa doktrininde ANAYASA ŞİKÂYETİ de denilmektedir. Anayasa m.148/3'e göre herkes, Anayasada güvence altına alınmış temel hak ve özgürlüklerinden, Avrupa İnsan Hakları Sözleşmesi kapsamındaki herhangi birinin kamu gücü tarafından ihlal edildiği iddiasıyla Anayasa Mahkemesine başvurabilir; başvuruda bulunabilmek için OLAĞAN KANUN YOLLARININ TÜKETİLMİŞ OLMASI şarttır. Bu yönüyle anayasa şikâyeti İKİNCİL (tali) bir yargı yoludur. Bireysel başvuru 2010 yılı Anayasa değişikliği ile 1982 Anayasası'na girmiş, başvurular 23 Eylül 2012'den itibaren kabul edilmeye başlanmıştır; başvurular Genel Kurulca değil BÖLÜMLERCE karara bağlanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "1982 Anayasası md. 148, 149",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "159",
+    "stem": "1982 Anayasası'na göre, Hakimler ve Savcılar Kuruluna üye seçilmesi amacıyla Türkiye Büyük Millet Meclisi Genel Kurulunda yapılacak oylamalarla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Gizli oyla gerçekleştirilir." },
+      { "label": "B", "text": "Birinci oylamada karar yeter sayısı üye tam sayısının 2/3'üdür." },
+      { "label": "C", "text": "İkinci oylamada karar yeter sayısı üye tam sayısının 3/5'idir." },
+      { "label": "D", "text": "Üçüncü oylamada karar yeter sayısı üye tam sayısının salt çoğunluğudur.", "isCorrect": true },
+      { "label": "E", "text": "Anayasa Komisyonu ve Adalet Komisyonu üyelerinden kurulu karma komisyonca belirlenen adaylar arasından seçim yapılır." }
+    ],
+    "explanation": "Hâkimler ve Savcılar Kurulu üyeliği seçiminde ÜÇÜNCÜ BİR OYLAMA YOKTUR; bu nedenle D yanlıştır. Anayasa m.159 uyarınca TBMM Genel Kurulu, Karma Komisyonca belirlenen adaylar arasından her bir üye için ayrı ayrı GİZLİ OYLA seçim yapar: birinci oylamada ÜYE TAMSAYISININ ÜÇTE İKİ çoğunluğu (400), ikinci oylamada ÜYE TAMSAYISININ BEŞTE ÜÇ çoğunluğu (360) aranır. İkinci oylamada da üye seçilemediği takdirde EN ÇOK OYU ALAN İKİ ADAY ARASINDA AD ÇEKME USULÜ ile seçim tamamlanır. Bu yönüyle HSK seçimi, en fazla üç turlu olan Anayasa Mahkemesi üyeliği ve en fazla dört turlu olan TBMM Başkanı ile Kamu Başdenetçisi seçimlerinden ayrılır.",
+    "difficulty": "hard",
+    "sourceLabel": "2020 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 159",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]

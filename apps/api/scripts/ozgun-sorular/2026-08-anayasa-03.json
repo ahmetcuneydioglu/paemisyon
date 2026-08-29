@@ -1,0 +1,200 @@
+[
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "69",
+    "stem": "1982 Anayasası'na göre bir siyasi partinin temelli kapatılmasına beyan veya faaliyetleriyle sebep olan kurucuları dahil üyeleri, Anayasa Mahkemesinin temelli kapatmaya ilişkin kesin kararının Resmî Gazete'de gerekçeli olarak yayımlanmasından başlayarak ne kadar süre bir başka siyasi partiye üye olamaz?",
+    "options": [
+      { "label": "A", "text": "3 ay" },
+      { "label": "B", "text": "6 ay" },
+      { "label": "C", "text": "1 yıl" },
+      { "label": "D", "text": "3 yıl" },
+      { "label": "E", "text": "5 yıl", "isCorrect": true }
+    ],
+    "explanation": "Anayasa m.69/9'a göre bir siyasi partinin temelli kapatılmasına beyan veya faaliyetleriyle sebep olan kurucuları dahil üyeleri, Anayasa Mahkemesinin temelli kapatmaya ilişkin kesin kararının Resmî Gazetede gerekçeli olarak yayımlanmasından başlayarak BEŞ YIL SÜREYLE bir başka partinin KURUCUSU, ÜYESİ, YÖNETİCİSİ VE DENETİCİSİ OLAMAZLAR. Bu yasak, kapatmaya sebep olan kişiye özgüdür; temelli kapatılan partinin kendisi ise bir başka ad altında kurulamaz (m.69/8). Ayrıca Anayasa Mahkemesi, temelli kapatma yerine dava konusu fiillerin ağırlığına göre partinin Devlet yardımından kısmen veya tamamen yoksun bırakılmasına da karar verebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "2024 EYLÜL İDARİ YARGI ÖN SINAVI",
+    "citation": "1982 Anayasası md. 69",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Listeli tek turlu çoğunluk sisteminin benimsendiği bir ülkede, yasama organı seçimleri yapılıyor. 120.000 geçerli oy kullanıldığı ve 5 milletvekilinin çıkacağı bir seçim çevresinde; X Partisi 50.000, Y Partisi 37.000 ve Z Partisi 33.000 oy alıyor.\nBu seçim çevresinden partilerin çıkaracağı milletvekili sayıları aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": [
+      { "label": "A", "text": "X Partisi 3, Y Partisi 1, Z Partisi 1" },
+      { "label": "B", "text": "X Partisi 2, Y Partisi 2, Z Partisi 1" },
+      { "label": "C", "text": "X Partisi 3, Y Partisi 2, Z Partisi 0" },
+      { "label": "D", "text": "X Partisi 4, Y Partisi 1, Z Partisi 0" },
+      { "label": "E", "text": "X Partisi 5, Y Partisi 0, Z Partisi 0", "isCorrect": true }
+    ],
+    "explanation": "ÇOĞUNLUK SİSTEMİNDE seçim çevresinde en yüksek oyu alan parti, o çevrenin milletvekillerinin TAMAMINI kazanır; nispi temsilde olduğu gibi milletvekilleri oy oranına göre dağıtılmaz. LİSTELİ (bloklu) sistemde her parti çevrenin çıkaracağı milletvekili sayısı kadar aday gösterir ve TEK TURLU sistemde salt çoğunluk aranmadan en çok oyu alan liste seçilmiş sayılır. Olayda en çok oyu (50.000) X Partisi aldığından 5 milletvekilinin tamamını kazanır. Türkiye'de milletvekili seçimlerinde çoğunluk sistemi değil NİSPİ TEMSİL uygulanır; milletvekillerinin partilere dağılımı ise d'Hondt yöntemiyle hesaplanır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 ADLİ-İDARİ HÂKİMLİK SINAVI",
+    "citation": "Anayasa Hukuku – Seçim Sistemleri",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "84",
+    "stem": "Anayasa Mahkemesi, Yargıtay Cumhuriyet Başsavcısının açtığı dava üzerine X Partisi'nin temelli kapatılmasına karar veriyor. Bu kararın X Partisi açısından sonuçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      { "label": "A", "text": "Tüzel kişiliği sona erer." },
+      { "label": "B", "text": "Malvarlığı Hazine'ye geçer." },
+      { "label": "C", "text": "Başka bir ad altında kurulamaz." },
+      { "label": "D", "text": "Amblemi, başka bir siyasi parti tarafından kullanılamaz." },
+      { "label": "E", "text": "Kapatılmasına sebep olan milletvekilinin milletvekilliği sona erer.", "isCorrect": true }
+    ],
+    "explanation": "Partisinin temelli kapatılmasına beyan ve eylemleriyle sebep olan milletvekilinin milletvekilliğinin düşmesine dair kural, Anayasa m.84'ün son fıkrasında yer alıyordu; ANCAK BU FIKRA 7/5/2010 TARİHLİ 5982 SAYILI KANUNLA (2010 Anayasa değişikliği) YÜRÜRLÜKTEN KALDIRILMIŞTIR. Bugün kapatmaya sebep olan milletvekilinin milletvekilliği DÜŞMEZ; bu nedenle E yanlıştır. Bu kural, m.69/9'daki 'beş yıl boyunca başka bir partinin kurucusu, üyesi, yöneticisi ve deneticisi olamama' yasağıyla karıştırılmamalıdır — o yasak yürürlüktedir. Diğer sonuçlar 2820 sayılı Siyasi Partiler Kanunu'nda düzenlenmiştir: kapatılan partinin tüzel kişiliği sona erer, bütün malları Hazineye geçer, başka bir ad altında kurulamaz ve isim, amblem, rumuz ve işaretleri başka bir siyasi partice kullanılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 69, 84; 2820 sayılı Siyasi Partiler Kanunu",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "Aşağıdakilerden hangisi milletvekili genel seçimlerindeki bir seçim çevresini belirtir?",
+    "options": [
+      { "label": "A", "text": "Hürriyet Mahallesi" },
+      { "label": "B", "text": "Seyhan ilçesi" },
+      { "label": "C", "text": "Bayburt ili", "isCorrect": true },
+      { "label": "D", "text": "Türkiye" },
+      { "label": "E", "text": "Akdeniz Bölgesi" }
+    ],
+    "explanation": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun'a göre, özel kanunlarındaki çevre ayırmaları saklı kalmak şartıyla, seçimlerde HER İL BİR SEÇİM ÇEVRESİDİR; bu nedenle doğru cevap 'Bayburt ili'dir. Aynı Kanuna göre her MUHTARLIK bir SEÇİM BÖLGESİ, her seçim bölgesi de gerektiği kadar SANDIK BÖLGESİNE ayrılır. Çıkaracağı milletvekili sayısı on sekize kadar olan iller bir, on dokuzdan otuz beşe kadar olanlar iki, otuz altı ve daha fazla olanlar üç seçim çevresine bölünür (2839 sayılı Kanun m.4).",
+    "difficulty": "medium",
+    "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+    "citation": "298 sayılı Kanun md. 4-5; 2839 sayılı Milletvekili Seçimi Kanunu md. 4",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "67",
+    "stem": "1982 Anayasası'na göre seçim kanunlarında yapılan değişiklikler, kural olarak yürürlüğe girdiği tarihten itibaren ne kadar süre içinde yapılacak seçimlerde uygulanmaz?",
+    "options": [
+      { "label": "A", "text": "1 ay" },
+      { "label": "B", "text": "3 ay" },
+      { "label": "C", "text": "9 ay" },
+      { "label": "D", "text": "1 yıl", "isCorrect": true },
+      { "label": "E", "text": "2 yıl" }
+    ],
+    "explanation": "Anayasa m.67'nin son fıkrasına göre seçim kanunlarında yapılan değişiklikler, yürürlüğe girdiği tarihten itibaren BİR YIL içinde yapılacak seçimlerde uygulanmaz. Bu hüküm, 2001 yılı Anayasa değişikliği ile eklenmiştir ve amacı iktidarın seçime kısa süre kala kendi lehine kural değiştirmesini önleyerek seçim güvenliğini sağlamaktır. Aynı maddenin ilk fıkralarına göre seçimler ve halkoylaması serbest, eşit, gizli, tek dereceli, genel oy, açık sayım ve döküm esaslarına göre, yargı yönetim ve denetimi altında yapılır.",
+    "difficulty": "medium",
+    "sourceLabel": "2023 SAYIŞTAY DENETÇİ YARDIMCILIĞI SINAVI",
+    "citation": "1982 Anayasası md. 67",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "2820 sayılı Siyasi Partiler Kanunu'na göre, siyasi parti sicil dosyası aşağıdakilerden hangisi tarafından tutulur?",
+    "options": [
+      { "label": "A", "text": "Anayasa Mahkemesi" },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi" },
+      { "label": "C", "text": "Yüksek Seçim Kurulu" },
+      { "label": "D", "text": "İçişleri Bakanlığı" },
+      { "label": "E", "text": "Cumhuriyet Başsavcılığı", "isCorrect": true }
+    ],
+    "explanation": "2820 sayılı Siyasi Partiler Kanunu uyarınca YARGITAY CUMHURİYET BAŞSAVCILIĞINCA her siyasi parti için bir SİCİL DOSYASI tutulur. Bu dosyada partinin kuruluş bildirisi, tüzük ve programı, kurucularının kimlikleri, merkez organlarının üyeleri ile bunlardaki değişiklikler yer alır. Buna karşılık siyasi partiler, kanunda gösterilen bildiri ve belgelerin İÇİŞLERİ BAKANLIĞINA verilmesiyle TÜZEL KİŞİLİK KAZANIR; bu iki işlemi birbirine karıştırmamak gerekir. Siyasi partilerin mali denetimini Anayasa Mahkemesi Sayıştaydan yardım alarak yapar; kapatma davasını ise Yargıtay Cumhuriyet Başsavcısı açar.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "2820 sayılı Siyasi Partiler Kanunu md. 8, 10",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2820.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "2839 sayılı Milletvekili Seçimi Kanunu'na göre milletvekili seçilenlere, seçildiklerine dair tutanak aşağıdakilerin hangisi tarafından derhal verilir?",
+    "options": [
+      { "label": "A", "text": "Türkiye Büyük Millet Meclisi" },
+      { "label": "B", "text": "İl Seçim Kurulu", "isCorrect": true },
+      { "label": "C", "text": "Cumhurbaşkanlığı" },
+      { "label": "D", "text": "Danıştay" },
+      { "label": "E", "text": "Yüksek Seçim Kurulu" }
+    ],
+    "explanation": "2839 sayılı Milletvekili Seçimi Kanunu'na göre milletvekili seçilenlere, seçildiklerine dair tutanak İL SEÇİM KURULU tarafından DERHAL verilir. YÜKSEK SEÇİM KURULU ise bu aşamada devreye girmez; Anayasa m.79 uyarınca YSK'nın görevi TBMM üyelerinin seçim tutanaklarını ve CUMHURBAŞKANLIĞI SEÇİM TUTANAKLARINI KABUL ETMEKTİR. Seçimlerin başlamasından bitimine kadar seçimin düzen içinde yönetimi ve dürüstlüğüyle ilgili bütün işlemleri yapma ve yaptırma, seçim süresince ve sonrasındaki şikâyet ve itirazları inceleyip kesin karara bağlama görevi de YSK'ya aittir ve YSK kararları aleyhine başka bir mercie başvurulamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 79; 2839 sayılı Milletvekili Seçimi Kanunu",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "2820 sayılı Siyasi Partiler Kanunu'na göre, Siyasi Partilerle İlgili Yasakları İnceleme Kurulu aşağıdakilerden hangisinin bünyesinde kurulur?",
+    "options": [
+      { "label": "A", "text": "Anayasa Mahkemesi" },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi" },
+      { "label": "C", "text": "Cumhurbaşkanlığı" },
+      { "label": "D", "text": "Yargıtay", "isCorrect": true },
+      { "label": "E", "text": "Yüksek Seçim Kurulu" }
+    ],
+    "explanation": "2820 sayılı Siyasi Partiler Kanunu'na göre SİYASİ PARTİLERLE İLGİLİ YASAKLARI İNCELEME KURULU, YARGITAY CEZA DAİRELERİ BAŞKANLARINDAN kurulur ve bunların en kıdemlisi Kurulun başkanıdır. Kurul, siyasi partilerin kapatılmasına ilişkin isteklerin Yargıtay Cumhuriyet Başsavcılığınca REDDİ hâlinde, ilgililerin bu redde karşı yaptıkları itirazları incelemek üzere kurulmuştur; itiraz, ret kararının tebliğinden itibaren otuz gün içinde yapılır ve Kurulun kararı kesindir. Kapatma davasını açma yetkisi Yargıtay Cumhuriyet Başsavcısına, davayı karara bağlama yetkisi ise Anayasa Mahkemesine aittir.",
+    "difficulty": "hard",
+    "sourceLabel": "2022 KAYMAKAMLIK SINAVI",
+    "citation": "2820 sayılı Siyasi Partiler Kanunu md. 100",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2820.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "69",
+    "stem": "1982 Anayasası'na göre siyasi partilerle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Kapatılmaları için cumhurbaşkanı başvurusu gerekir." },
+      { "label": "B", "text": "Ticari faaliyete girişemezler.", "isCorrect": true },
+      { "label": "C", "text": "Devlet mali yardım yapamaz." },
+      { "label": "D", "text": "Yükseköğretim öğrencileri siyasi partilere üye olamazlar." },
+      { "label": "E", "text": "Kurulmadan önce Yüksek Seçim Kurulundan izin alırlar." }
+    ],
+    "explanation": "Anayasa m.69/2 açıkça 'Siyasi partiler, TİCARİ FAALİYETLERE GİRİŞEMEZLER' der; bu nedenle B doğrudur. A yanlıştır: kapatma davasını YARGITAY CUMHURİYET BAŞSAVCISI açar. C yanlıştır: m.68/son uyarınca siyasi partilere Devlet, YETERLİ DÜZEYDE VE HAKÇA MALİ YARDIM YAPAR. D yanlıştır: siyasi partilere üye olamayacaklar arasında YÜKSEKÖĞRETİM ÖNCESİ ÖĞRENCİLERİ sayılmıştır; yükseköğretim öğrencilerinin üye olabilmelerine ilişkin esaslar ise kanunla düzenlenir. E yanlıştır: m.68/3 gereği siyasi partiler ÖNCEDEN İZİN ALMADAN kurulurlar ve Anayasa ve kanun hükümleri içerisinde faaliyetlerini sürdürürler.",
+    "difficulty": "medium",
+    "sourceLabel": "2022 KPSS KAMU YÖNETİMİ",
+    "citation": "1982 Anayasası md. 68, 69",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "69",
+    "stem": "1982 Anayasası'na göre siyasi parti kapatma davasıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      { "label": "A", "text": "Cumhurbaşkanı tarafından Yargıtayda açılır." },
+      { "label": "B", "text": "Cumhurbaşkanı tarafından Anayasa Mahkemesinde açılır." },
+      { "label": "C", "text": "Yargıtay Cumhuriyet Başsavcısı tarafından Anayasa Mahkemesinde açılır.", "isCorrect": true },
+      { "label": "D", "text": "Danıştay başsavcısı tarafından Danıştayda açılır." },
+      { "label": "E", "text": "Yargıtay Cumhuriyet Başsavcısı tarafından Yargıtayda açılır." }
+    ],
+    "explanation": "Anayasa m.69/4'e göre siyasi partilerin kapatılması, YARGITAY CUMHURİYET BAŞSAVCISININ AÇACAĞI DAVA ÜZERİNE ANAYASA MAHKEMESİNCE kesin olarak karara bağlanır. Bir siyasi partinin TÜZÜĞÜ VE PROGRAMININ m.68/4'e aykırı bulunması hâlinde doğrudan temelli kapatma kararı verilir; EYLEMLERİ nedeniyle temelli kapatma ise ancak partinin bu nitelikteki fiillerin ODAĞI HÂLİNE GELDİĞİNİN Anayasa Mahkemesince tespiti hâlinde mümkündür. Anayasa Mahkemesi, temelli kapatma yerine fiillerin ağırlığına göre partinin Devlet yardımından kısmen veya tamamen yoksun bırakılmasına da karar verebilir. Kapatma kararı için Genel Kurulun üçte iki oy çokluğu aranır (m.149).",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KAYMAKAMLIK SINAVI",
+    "citation": "1982 Anayasası md. 68, 69, 149",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "stem": "2820 sayılı Siyasi Partiler Kanunu'na göre siyasi partiler, kanunda belirtilen şartları taşıyan en az kaç Türk vatandaşı tarafından kurulur?",
+    "options": [
+      { "label": "A", "text": "5" },
+      { "label": "B", "text": "20" },
+      { "label": "C", "text": "30", "isCorrect": true },
+      { "label": "D", "text": "40" },
+      { "label": "E", "text": "50" }
+    ],
+    "explanation": "2820 sayılı Siyasi Partiler Kanunu m.8/1'e göre siyasi partiler, PARTİYE ÜYE OLMA YETERLİĞİNE SAHİP EN AZ OTUZ TÜRK VATANDAŞI tarafından kurulur. Partilerin genel merkezi Ankara'da bulunur (m.8/2) ve partiler, kanunda gösterilen bildiri ve belgelerin İçişleri Bakanlığına verilmesiyle tüzel kişilik kazanır (m.8/3). Parti üyesi olabilmek için on sekiz yaşını doldurmuş olmak gerekir (bu yaş 1995 Anayasa değişikliğiyle 21'den 18'e indirilmiştir); kimse aynı zamanda birden fazla siyasi partinin üyesi olamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "2021 KPSS HUKUK",
+    "citation": "2820 sayılı Siyasi Partiler Kanunu md. 8, 11",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2820.pdf"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": "69",
+    "stem": "1982 Anayasası'na göre Anayasa Mahkemesi, siyasi partilerin mali denetimini yaparken aşağıdakilerden hangisinin yardımını sağlar?",
+    "options": [
+      { "label": "A", "text": "Yüksek Seçim Kurulu" },
+      { "label": "B", "text": "Türkiye Büyük Millet Meclisi" },
+      { "label": "C", "text": "Yargıtay" },
+      { "label": "D", "text": "Sayıştay", "isCorrect": true },
+      { "label": "E", "text": "Hazine ve Maliye Bakanlığı" }
+    ],
+    "explanation": "Anayasa m.69/3'e göre siyasi partilerin mal edinimleri ile gelir ve giderlerinin kanuna uygunluğunun tespitini ANAYASA MAHKEMESİ yapar ve bu denetim görevini yerine getirirken SAYIŞTAYDAN YARDIM SAĞLAR; Anayasa Mahkemesinin bu denetim sonunda vereceği kararlar KESİNDİR. Siyasi partilerin gelir ve giderlerinin amaçlarına uygun olması gereklidir ve partiler ticari faaliyetlere girişemezler. Sayıştay'ın buradaki rolü yardımcı niteliktedir; denetimi sonuçlandıran ve karar veren merci Anayasa Mahkemesidir.",
+    "difficulty": "medium",
+    "sourceLabel": "2020 KPSS",
+    "citation": "1982 Anayasası md. 69",
+    "citationUrl": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2709.pdf"
+  }
+]
