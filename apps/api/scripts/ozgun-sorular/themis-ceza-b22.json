@@ -1,0 +1,352 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre tekerrürle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Varsayılan tekerrür sistemi kabul edilmiştir.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Tekerrür için önceki cezanın kesinleşmesi yetmez, infaz edilmiş olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Tekerrür süreleri tekerrüre esas oluşturan sonraki mahkûmiyet kararının verildiği tarihten başlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kasıtlı suçlarla taksirli suçlar arasında tekerrür hükümleri uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Tekerrür durumunda sonraki suçun cezası artırılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Önceki mahkûmiyet hükmünün infazı gerekli ise gerçek tekerrürden, infazı gerekli değil ise VARSAYILAN TEKERRÜRDEN söz edilir. TCK m. 58/1 tekerrür için hükmün kesinleşmesini yeterli görüp \"bunun için cezanın infaz edilmiş olması gerekmez\" dediğinden Türk hukukunda kural olarak varsayılan tekerrür sistemi benimsenmiştir. Tekerrür süreleri cezanın İNFAZ EDİLDİĞİ tarihten itibaren işlemeye başlar (m. 58/2). TCK m. 58/4 kasıtlı suçlarla taksirli suçlar arasında tekerrür hükümlerinin uygulanmayacağını öngörür. 5237 sayılı Yasa tekerrürde cezanın artırılmasını öngören sistemden vazgeçmiş, tekerrürü bir infaz kurumu olarak düzenlemiştir; sonraki suçun cezası artırılmaz, mükerrirlere özgü infaz rejimi uygulanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre hükmedilen bir süreli hapis cezasının, kısa süreli hapis cezası sayılabilmesi için hangi sınırda olması gerekir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "6 aydan az süreli hapis cezası",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "6 ay veya daha az süreli hapis cezası",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "1 yıldan az süreli hapis cezası",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "1 yıl veya daha az süreli hapis cezası",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "2 yıldan az süreli hapis cezası",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 49/2'ye göre hükmedilen BİR YIL VEYA DAHA AZ süreli hapis cezası, kısa süreli hapis cezasıdır. Bu ayrım önemlidir; çünkü yalnızca kısa süreli hapis cezaları m. 50/1'de sayılan seçenek yaptırımlara çevrilebilir. Süreli hapis cezasının genel sınırları ise m. 49/1'de düzenlenmiş olup yasada aksi belirtilmeyen durumlarda bir aydan az, yirmi yıldan fazla olamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre tekerrürde süre aşağıdakilerin hangisinden itibaren işlemeye başlar?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Önceki suça ilişkin hükmün verildiği tarih",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Önceki suça ilişkin cezanın infaz edildiği tarih",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Önceki suça ilişkin hükmün kesinleştiği tarih",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Önceki suça ilişkin iddianamenin düzenlendiği tarih",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Önceki suça ilişkin iddianamenin kabul edildiği tarih",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 58/2'ye göre tekerrür hükümleri, önceden işlenen suçtan dolayı beş yıldan fazla süreyle hapis cezasına mahkûmiyet hâlinde bu cezanın İNFAZ EDİLDİĞİ tarihten itibaren beş yıl; beş yıl veya daha az süreli hapis ya da adli para cezasına mahkûmiyet hâlinde ise bu cezanın infaz edildiği tarihten itibaren üç yıl geçtikten sonra işlenen suçlar dolayısıyla uygulanmaz. Hükmün kesinleşmesi tekerrürün UYGULANABİLMESİ için aranan koşuldur (m. 58/1); tekerrür sürelerinin başlangıcı ise cezanın infaz edildiği tarihtir. Bu iki an birbirine karıştırılmamalıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Taşınmaz, hak ve alacaklara elkoyma\nII. Suçta tekerrür\nIII. Her türlü taşıtları veya bunlardan bazılarını kullanamamak ve gerektiğinde kaleme, makbuz karşılığında sürücü belgesini teslim etmek\nIV. Sınır dışı edilme\nYukarıdakilerden hangileri 5237 sayılı Türk Ceza Yasası'nda düzenlenen güvenlik tedbirlerinden biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Güvenlik tedbirleri Türk Ceza Yasası'nın 53 ve devamı maddelerinde düzenlenmiştir. Suçta tekerrür ve özel tehlikeli suçlular m. 58'de, sınır dışı edilme ise m. 59'da yer aldığından her ikisi de Yasa'da düzenlenen güvenlik tedbirlerindendir. Buna karşılık taşınmaz, hak ve alacaklara elkoyma Ceza Muhakemesi Yasası'nda düzenlenen bir koruma tedbiridir (CMK m. 128); her türlü taşıtları kullanamamak ve sürücü belgesini teslim etmek ise yine Ceza Muhakemesi Yasası'ndaki adli kontrol tedbirlerindendir (CMK m. 109/3).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Yağma\nII. İşkence\nIII. Uyuşturucu veya uyarıcı madde imal ve ticareti\nIV. Rüşvet\n5237 sayılı Türk Ceza Yasası'na göre yukarıdaki suçlardan hangileri hakkında yabancı ülke mahkemelerinden verilen hükümler tekerrüre esas olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yabancı ülke mahkemelerinden verilen hükümler kural olarak tekerrüre esas olmaz. TCK m. 58/4 bu kuralın istisnalarını sınırlı biçimde sayar: kasten öldürme, kasten yaralama, yağma, dolandırıcılık, uyuşturucu veya uyarıcı madde imal ve ticareti ile parada veya kıymetli damgada sahtecilik. İşkence ve rüşvet bu listede yer almadığından, bu suçlarda yabancı mahkeme kararları tekerrüre esas alınamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre adli para cezasının belirli taksitler şeklinde ödenmesine karar verilirse taksit sayısı en az kaç olmalıdır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "4",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "6",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "8",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "12",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 52/4'e göre yargıç, ekonomik ve kişisel durumlarını göz önünde bulundurarak kişiye adli para cezasını ödemesi için hükmün kesinleşme tarihinden itibaren bir yıldan fazla olmamak üzere mehil verebileceği gibi, bu cezanın belirli taksitler hâlinde ödenmesine de karar verebilir. Bu durumda taksit süresi iki yılı geçemez ve TAKSİT MİKTARI DÖRTTEN AZ OLAMAZ. Kararda ayrıca, taksitlerden birinin zamanında ödenmemesi hâlinde geri kalan kısmın tamamının tahsil edileceği ve ödenmeyen adli para cezasının hapse çevrileceği belirtilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Bu kişilerin güvenlik tedbiri olarak alkol ya da uyuşturucu veya uyarıcı madde bağımlılarına özgü sağlık kuruluşunda tedavi altına alınmasına karar verilir.\nII. Bu kişilerin tedavisi, alkol ya da uyuşturucu veya uyarıcı madde bağımlılığından kurtulmalarına kadar devam eder.\nIII. Bu kişiler, yerleştirildiği kurumun sağlık kurulunca bu yönde düzenlenecek rapor üzerine hükmü veren mahkeme kararıyla serbest bırakılabilir.\n5237 sayılı Türk Ceza Yasası'na göre suç işleyen alkol ya da uyuşturucu veya uyarıcı madde bağımlısı kişiler hakkında uygulanabilecek güvenlik tedbirleriyle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 57/7'ye göre suç işleyen alkol ya da uyuşturucu veya uyarıcı madde bağımlısı kişilerin, güvenlik tedbiri olarak alkol ya da uyuşturucu veya uyarıcı madde bağımlılarına özgü sağlık kuruluşunda tedavi altına alınmasına karar verilir; bu kişilerin tedavisi, alkol ya da uyuşturucu veya uyarıcı madde bağımlılığından kurtulmalarına kadar devam eder ve bu kişiler, yerleştirildiği kurumun sağlık kurulunca bu yönde düzenlenecek rapor üzerine İNFAZ YARGICI kararıyla serbest bırakılabilir. Serbest bırakma kararını hükmü veren mahkeme değil infaz yargıcı verdiğinden III yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Sırf askeri suçlarla diğer suçlar arasında tekerrür hükümleri uygulanmaz.\nII. Dolandırıcılık suçuyla ilgili yabancı ülke mahkemelerinden verilen hüküm tekerrüre esas olmaz.\nIII. Eylemi işlediği sırada 18 yaşını doldurmamış veya 65 yaşını doldurmuş olan kişilerin işlediği suçlar dolayısıyla tekerrür hükümleri uygulanmaz.\nIV. Tekerrür durumunda hükmolunan ceza, mükerrirlere özgü infaz rejimine göre çektirilir.\n5237 sayılı Türk Ceza Yasası'na göre suçta tekerrür hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 58/4'e göre kasıtlı suçlarla taksirli suçlar ve sırf askeri suçlarla diğer suçlar arasında tekerrür hükümleri uygulanmaz; I doğrudur. Aynı fıkra yabancı mahkeme kararlarının tekerrüre esas olacağı suçlar arasında DOLANDIRICILIĞI da saydığından II yanlıştır. TCK m. 58/5'e göre eylemi işlediği sırada 18 yaşını doldurmamış olan kişilerin işlediği suçlar dolayısıyla tekerrür hükümleri uygulanmaz; ancak 65 yaşını doldurmuş kişiler bu kapsamda olmadığından III de yanlıştır. TCK m. 58/6 tekerrür hâlinde hükmolunan cezanın mükerrirlere özgü infaz rejimine göre çektirileceğini öngörür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Mahkûm olunan cezanın yarısından bir katına kadar süreyle belirli yerlere gitmekten veya belirli etkinlikleri yapmaktan yasaklanma\nII. Yargıcın belirttiği merci veya kişilerin çağrılarına ve gerektiğinde mesleki uğraşlarına ilişkin veya eğitime devam konularındaki kontrol tedbirlerine uyma\nIII. Silah bulunduramama veya taşıyamama\nIV. Sağladığı hak ve yetkiler kötüye kullanılarak veya gerektirdiği dikkat ve özen yükümlülüğüne aykırı davranılarak suç işlenmiş olması durumunda; mahkûm olunan cezanın yarısından bir katına kadar süreyle ilgili ehliyet ve ruhsat belgelerinin geri alınmasına, belli bir meslek ve sanatı yapmaktan yasaklanma\n5237 sayılı Türk Ceza Yasası'na göre yukarıdakilerden hangileri kısa süreli hapis cezasının çevrilebileceği seçenek yaptırımlardan biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 50/1-d kısa süreli hapis cezasının, mahkûm olunan cezanın yarısından bir katına kadar süreyle belirli yerlere gitmekten veya belirli etkinlikleri yapmaktan yasaklanmaya; m. 50/1-e ise sağladığı hak ve yetkiler kötüye kullanılarak veya gerektirdiği dikkat ve özen yükümlülüğüne aykırı davranılarak suç işlenmiş olması durumunda ilgili ehliyet ve ruhsat belgelerinin geri alınmasına, belli bir meslek ve sanatı yapmaktan yasaklanmaya çevrilebileceğini öngörür. Buna karşılık yargıcın belirttiği merci veya kişilerin çağrılarına uyma ile silah bulunduramama veya taşıyamama, Ceza Muhakemesi Yasası'nda düzenlenen adli kontrol tedbirlerindendir (CMK m. 109/3).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre fail yararına takdiri indirim nedenlerinin varlığı durumunda, süreli hapis cezalarında en fazla hangi oranda indirim yapılabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1/6",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "1/5",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "1/3",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "1/2",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "3/5",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 62/1'e göre fail yararına cezayı hafifletecek takdiri nedenlerin varlığı hâlinde, ağırlaştırılmış müebbet hapis cezası yerine müebbet hapis; müebbet hapis cezası yerine yirmi beş yıl hapis cezası verilir. Diğer cezaların ALTIDA BİRİNE KADARI indirilir. Süreli hapis cezaları bu son gruba girdiğinden indirim oranı en fazla altıda birdir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

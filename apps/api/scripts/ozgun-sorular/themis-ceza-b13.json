@@ -1,0 +1,282 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. İhaleye fesat karıştırma\nII. Edimin ifasına fesat karıştırma\nIII. Dolandırıcılık\nIV. Tefecilik\nYukarıdakilerden hangileri, 5237 sayılı Türk Ceza Yasası'nda düzenlenen \"Ekonomi, Sanayi ve Ticarete İlişkin Suçlar\" arasında yer alır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I, II ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Türk Ceza Kanunu'nun İkinci Kitap Üçüncü Kısmının Dokuzuncu Bölümü \"Ekonomi, Sanayi ve Ticarete İlişkin Suçlar\" başlığını taşır ve m. 235 ile m. 242 arasını kapsar: ihaleye fesat karıştırma (m. 235), edimin ifasına fesat karıştırma (m. 236), fiyatları etkileme (m. 237), kamuya gerekli şeylerin yokluğuna neden olma (m. 238), ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelerin açıklanması (m. 239), mal veya hizmet satımından kaçınma (m. 240), tefecilik (m. 241) ve tüzel kişiler hakkında güvenlik tedbiri (m. 242). Dolandırıcılık ise m. 157'de, MALVARLIĞINA KARŞI SUÇLAR bölümünde düzenlenmiştir; korunan hukuki yarar kişinin malvarlığıdır, ekonomik düzen değildir. Kanunun bölüm sistematiği, suçun hangi hukuki yararı koruduğunu gösterdiği için doğrudan ölçülen bir bilgidir.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi ihaleye fesat karıştırma suçunun seçimlik hareketlerinden biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hileli davranışlarla ihalenin belirlenen gün ve saatte yapılmasını engellenmek",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Hileli davranışlarla ihaleye katılma yeterliğine veya koşullarına sahip olan kişilerin ihaleye veya ihale sürecindeki işlemlere katılmalarını engellemek",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hileli davranışlarla, ihaleye katılma yeterliğine veya koşullarına sahip olmayan kişilerin ihaleye katılmasını sağlamak",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hileli davranışlarla teklif edilen malları, şartnamesinde belirtilen niteliklere sahip olduğu hâlde, sahip olmadığı gerekçesiyle değerlendirme dışı bırakmak ya da teklif edilen malları, şartnamesinde belirtilen niteliklere sahip olmadığı hâlde, sahip olduğundan bahisle değerlendirmeye almak",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Tekliflerle ilgili olup da ihale mevzuatına veya şartnamelere göre gizli tutulması gereken bilgilere başkalarının ulaşmasını sağlamak",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 235/2 \"aşağıdaki hâllerde ihaleye fesat karıştırılmış sayılır\" diyerek fesat sayılan davranışları TAHDİDİ (sınırlı) olarak sayar; listede yer almayan bir davranış bu suçu oluşturmaz. Sayılan hâller şunlardır: hileli davranışlarla yeterliğe sahip olanların katılmasını engellemek, yeterliği olmayanların katılmasını sağlamak, teklif edilen malları niteliklere sahip olduğu hâlde değerlendirme dışı bırakmak veya sahip olmadığı hâlde değerlendirmeye almak (a bendi); gizli tutulması gereken bilgilere başkalarının ulaşmasını sağlamak (b bendi); cebir veya tehditle ya da hukuka aykırı diğer davranışlarla katılımı engellemek (c bendi); katılanların fiyatı etkilemek için aralarında açık veya gizli anlaşma yapmaları (d bendi). İhalenin belirlenen gün ve saatte yapılmasının engellenmesi bu listede geçmez.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. Kamu yararına çalışan dernekler ya da kooperatiflere karşı girişilen taahhütlerin yerine getirilmesiyle ilgili usulsüzlükler bu suç kapsamında cezalandırılmaz.\nII. Suçun işlenmesi suretiyle yararına haksız menfaat sağlanan tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.\nIII. Suçun oluşabilmesi için failin saiki veya amacı önem taşımaz.\nEdimin ifasına fesat karıştırma suçuyla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 236/1 suçun karşısında yer alabilecek kurumları tek tek sayar: kamu kurum veya kuruluşları, kamu kurumu niteliğindeki meslek kuruluşları, bunların iştirakiyle kurulmuş şirketler, bunların bünyesinde faaliyet icra eden vakıflar, KAMU YARARINA ÇALIŞAN DERNEKLER ya da KOOPERATİFLER. Dolayısıyla bu kurumlara karşı taahhüt altına girilen edimin ifasına fesat karıştırılması açıkça suç kapsamındadır ve ilk ifade kanun metnine aykırıdır. İkinci ifade m. 242'nin karşılığıdır: bölümde yer alan suçların işlenmesi suretiyle yararına haksız menfaat sağlanan tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur. Üçüncü ifade de doğrudur; madde failin belirli bir saikle hareket etmesini aramaz, genel kast yeterlidir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Tefecilik suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tefecilik suçu karma hukuksal konulu bir suçtur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suçun maddi konusu paradır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tefecilik suçunda hem kazanç elde etmek amacıyla başkasına ödünç para veren kişi hem de ödünç para alan kişi cezalandırılmamaktadır.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Suçun işlenmesi suretiyle yararına haksız menfaat sağlanan tüzel kişiler hakkında bunlara özgü güvenlik tedbirlerine hükmolunur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun bir örgütün faaliyeti çerçevesinde işlenmesi, bu suçun nitelikli şeklini oluşturur ve cezanın artırılmasını gerektirir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 241/1 tefeciliği \"kazanç elde etmek amacıyla başkasına ödünç para VEREN kişi\" bakımından suç sayar. Yani cezalandırılan taraf ödünç PARA VERENDİR; ödünç parayı alan kişi bu suçun faili değildir ve cezalandırılmaz. Bu nedenle her iki tarafın da cezalandırılmadığını söyleyen ifade kanun metnine aykırıdır. Maddenin aradığı iki unsur, ödünç verilenin PARA olması ve failin KAZANÇ ELDE ETME amacıyla hareket etmesidir; bu amaç suçu özel kastla işlenebilen bir suç hâline getirir. Suçun bir örgütün faaliyeti çerçevesinde işlenmesi m. 241/2 uyarınca cezanın bir kat artırılmasını gerektiren nitelikli hâldir; tüzel kişiler bakımından ise m. 242 güvenlik tedbiri öngörür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. Tefecilik suçunda kazanç elde etmek amacıyla başkasına ödünç para veren kişi cezalandırılmaktadır, ancak ödünç para alan kişi cezalandırılmamaktadır.\nII. Suçun maddi konusu para veya kıymetli eşyalar oluşturur.\nIII. Altın ve benzeri malların bir başkasına karşılık alınarak ödünç verilmesi tefecilik suçunu oluşturur.\nIV. Suçun oluşabilmesi için kast yeterli olmayıp failin kazanç elde etmek amacıyla hareket etmesi gerekir.\nTefecilik suçuyla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 241/1 yalnızca \"ödünç PARA verme\" fiilini cezalandırır. Maddenin lafzı açık olduğu ve ceza hükümleri kıyasla genişletilemeyeceği için (TCK m. 2/3 kıyas yasağı), suçun maddi konusu YALNIZCA PARADIR; kıymetli eşya, altın veya benzeri malların ödünç verilmesi bu suçu oluşturmaz. Bu nedenle maddi konuyu \"para veya kıymetli eşyalar\" diye genişleten ve altın ödünç vermeyi tefecilik sayan ifadeler yanlıştır. Buna karşılık cezalandırılan tarafın yalnızca ödünç veren olması ve failin KAZANÇ ELDE ETME amacıyla hareket etmesinin aranması, maddenin doğrudan sonuçlarıdır; bu amaç bulunmadığında salt ödünç para vermek suç oluşturmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelerin açıklanması suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun faili, sıfat veya görevi, meslek veya sanatı gereği ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelere vakıf olan kişilerdir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suçun maddi konusu; ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelerdir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Suç, bilgi veya belgelerin yetkisiz kişilere verilmesi veya ifşa edilmesi suretiyle işlenebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sırrın Türkiye'de oturmayan bir yabancıya veya onun memurlarına açıklanması, bu suçun nitelikli şeklini oluşturur ve cezanın artırılmasını gerektirir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun soruşturma ve kovuşturması resen yapılır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "TCK m. 239/1 suçun takibini açıkça \"ŞİKAYET ÜZERİNE\" yapılacak şekilde düzenler; bu nedenle soruşturma ve kovuşturmanın resen yapılacağını söyleyen ifade metne aykırıdır. Maddenin kurduğu sistem şudur: fail, sıfat veya görevi, meslek veya sanatı gereği söz konusu sırlara vakıf olan kişidir (özgü suç); fiil, bilgi veya belgelerin yetkisiz kişilere verilmesi ya da ifşa edilmesidir. Bu bilgilerin hukuka aykırı yolla elde eden kişilerce verilmesi veya ifşa edilmesi de aynı fıkraya göre cezalandırılır. Üçüncü fıkra ise sırların Türkiye'de oturmayan bir yabancıya veya onun memurlarına açıklanmasını nitelikli hâl sayarak cezayı üçte bir oranında artırır ve bu hâlde ŞİKÂYET KOŞULUNU ARAMAZ.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. Ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelerin açıklanması\nII. Mal veya hizmet satımından kaçınma\nIII. Bedelsiz senedi kullanma\nIV. Dolanlı iflas\nYukarıdakilerden hangileri, 5237 sayılı Türk Ceza Yasası'nda düzenlenen \"Ekonomi, Sanayi ve Ticarete İlişkin Suçlar\" arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "III ve IV",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Ekonomi, Sanayi ve Ticarete İlişkin Suçlar bölümü TCK m. 235-242 arasındadır; ticari sır, bankacılık sırrı veya müşteri sırrı niteliğindeki bilgi veya belgelerin açıklanması (m. 239) ile mal veya hizmet satımından kaçınma (m. 240) bu bölümde yer alır. Buna karşılık bedelsiz senedi kullanma m. 156'da, hileli iflas ise m. 161'de düzenlenmiştir ve her ikisi de MALVARLIĞINA KARŞI SUÇLAR bölümüne aittir. Ayrım ölçütü korunan hukuki yarardır: malvarlığına karşı suçlarda korunan, belirli bir kişinin malvarlığı; ekonomi, sanayi ve ticarete ilişkin suçlarda ise ekonomik düzenin ve ticari hayatın güvenilirliğidir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Aşağıdaki eylemlerden hangisi edimin ifasına fesat karıştırma suçunu oluşturmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İhale kararında veya sözleşmede özellikleri belirtilen maldan başka bir malın teslim veya kabul edilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İhale kararında veya sözleşmede belirtilen miktardan fazla malın teslim veya kabul edilmesi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Edimin ihale kararında veya sözleşmede belirtilen sürede ifa edilmemesine rağmen, süresinde ifa edilmiş gibi kabul edilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yapım ihalelerinde eserin veya kullanılan malzemenin şartname veya sözleşmede belirlenen koşullara, miktar veya niteliklere uygun olmamasına rağmen kabul edilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Hizmet niteliğindeki edimin, ihale kararında veya sözleşmede belirtilen koşullara göre verilmemesine veya eksik verilmesine rağmen verilmiş gibi kabul edilmesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 236/2 edimin ifasına fesat karıştırılmış sayılan fiilleri beş bent hâlinde ve TAHDİDİ olarak sayar; ayrıca bu fiillerin HİLELİ OLARAK yapılmasını arar. Sayılan hâller: sözleşmede evsafı belirtilen maldan başka bir malın teslim veya kabul edilmesi; belirtilen miktardan EKSİK malın teslim veya kabul edilmesi; edimin süresinde ifa edilmemesine rağmen süresinde ifa edilmiş gibi kabul edilmesi; yapım ihalelerinde eserin veya malzemenin şartnameye uygun olmamasına rağmen kabul edilmesi; hizmet ediminin verilmemesine veya eksik verilmesine rağmen verilmiş gibi kabul edilmesi. Kanun EKSİK malı yaptırıma bağlamıştır; sözleşmede belirtilenden FAZLA malın teslim veya kabul edilmesi listede yer almadığından bu suçu oluşturmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  }
+]

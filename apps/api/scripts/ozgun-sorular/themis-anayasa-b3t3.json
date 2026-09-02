@@ -1,0 +1,422 @@
+[
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "Hiçbir siyasi partinin ittifak yapmadığı, %7 ülke barajlı d'Hondt sisteminin uygulandığı bir seçim çevresinde 4 milletvekili çıkaran K ili seçim çevresinde kullanılan geçerli oyların siyasi partilere göre dağılımı şöyledir.\nA partisi: 45.000\nB partisi: 60.000\nC partisi: 90.000\nD partisi: 15.000\nC partisinin ülke barajını aşmamış olması halinde, Türkiye'de uygulanan seçim sistemine göre milletvekillerinin siyasi partilere dağılımı ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "A partisi 1, C partisi 3 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "A partisi 2, B partisi 2 milletvekili çıkarır.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "A partisi 1, B partisi 2, D partisi 1 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "A partisi 3, B partisi 1 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "A partisi 4 milletvekili çıkarır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İlk geçerli oyu, sırasıyla, bire, ikiye, üçe ve dörde bölelim. Ortaya çıkan en yüksek dört sayıya, dört milletvekilliğini dağıtalım. A partisi: 45.000 / 22.500 / 15.000 / 11.250; B partisi: 60.000 / 30.000 / 20.000 / 15.000; C partisi barajı aşamadığı için hesaba katılmaz; D partisi: 15.000 / 7.500 / 5.000 / 3.750. Tabloya göre en yüksek sayılar 60.000, 45.000, 30.000 ve 22.500 olduğuna göre A partisi 2, B partisi 2 milletvekilliği kazanır. Dikkat edilirse, D partisinin en yüksek sayısına gelmeden 4 milletvekilliğinin dağıtımı bitmiştir; D partisi milletvekilliği kazanamamıştır. İttifakın milletvekili dağılımına etkisi yoktur; ittifak sadece ülke barajının hesaplanmasında kullanılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Yargıtay Cumhuriyet Başsavcısının açacağı dava üzerine Anayasa Mahkemesinin vereceği karar ile kapatılabilir.\nII. Yargıtay Cumhuriyet Başsavcılığının açacağı kapatma davası, resen, Adalet Bakanınca veya bir siyasi partinin başvurusu üzerine açılabilir.\nIII. Yargıtay Cumhuriyet Başsavcılığı, kapatma başvurusu sonrası yeterli delilin bulunmadığı kanaatine varır ve dava açmazsa, bu karara karşı 30 gün içinde Yargıtay Ceza Daireleri Başkanlarından oluşan Siyasi Partilerle İlgili Yasakları İnceleme Kuruluna yazı ile itirazda bulunulabilir.\nSiyasi partilerin kapatılması ile ilgili yukarıda verilen ifadelerden hangileri 1982 Anayasası'nda düzenlenmemiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Siyasi partilerle ilgili “salt anayasal hükümleri”, kanun hükümlerinden ayırmak gerekir. Siyasi Partiler Kanunu'na göre, Başsavcılığın açacağı kapatma davası, resen, Adalet Bakanının isteği veya bir siyasi partinin isteği ile açılabilir. Başsavcılık, Adalet Bakanının veya siyasi partilerin istemde bulunmaları halinde yeterli delilin bulunmadığı kanaatine varırsa dava açmaz. Adalet Bakanının veya siyasi partinin, bu karara karşı Yargıtay Ceza Daireleri Başkanlarından oluşan Siyasi Partilerle İlgili Yasakları İnceleme Kuruluna otuz gün içinde yazı ile itirazda bulunma hakları vardır. Kurul, bu itirazı otuz gün içinde inceler ve bu konudaki kararı kesin olarak verir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Üyeleri, Yargıtay ve Danıştay Genel Kurullarınca gösterilen adaylar arasından Cumhurbaşkanınca seçilir.\nII. TBMM üyelerinin seçim tutanaklarını kabul eder.\nIII. Bir milletvekilinin yükümlü olduğu askerlik hizmetini yapmadığının seçiminden sonra ortaya çıkması durumunda, seçim tutanağını iptal eder.\nYüksek Seçim Kurulunun oluşumu ve görevleriyle ilgili yukarıda verilen ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "YSK üyeleri, doğrudan Yargıtay ve Danıştay Genel Kurulları tarafından seçilir. Seçilme koşullarının oluşup oluşmadığı, seçimden önce de sonra da YSK tarafından denetlenir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Bir siyasi partinin temelli kapatılabilmesi için Anayasa'nın 68. maddesinde yer alan eylemlerin odağı haline gelmiş olması gerekir.\nII. Odak olma hali, 2004 yılında yapılan Anayasa değişikliğiyle açıkça tanımlanmıştır.\nIII. 2010 yılı Anayasa değişikliğiyle Anayasa Mahkemesince siyasi partilerin gerek kapatılmasına gerekse Devlet yardımından yoksun bırakılmasına karar verilmesi üye tam sayısının üçte iki oy çokluğunun kabulü koşuluna bağlanmıştır.\n1982 Anayasası'na göre siyasi partilerle ilgili yukarıda verilen ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa'ya göre, bir siyasi partinin temelli kapatılabilmesi için 68. maddede yer alan eylemlerin odağı haline gelmiş olması gerekir. Odak hali, 2001 yılı değişikliğiyle tanımlanmıştır. Anayasa Mahkemesince siyasi partilerin gerek kapatılmasına gerekse Devlet yardımından yoksun bırakılmasına karar verilmesi toplantıya katılan üyelerin (üye tam sayısının değil) üçte iki oy çokluğunun kabulü koşuluna bağlanmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "I. Milletvekili genel seçimleri\nII. Milletvekili ara seçimleri\nIII. Mahalli idare seçimleri\nIV. Cumhurbaşkanı seçimi\nV. Anayasa değişikliğine ilişkin referandum\nYabancı memleketlerde yaşayan Türk vatandaşları yukarıda belirtilenlerin hangilerinde oy kullanabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I, IV ve V",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III, IV ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II, III ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yabancı ülkelerde yaşayan Türk vatandaşları, milletvekili genel seçimleri, Cumhurbaşkanı seçimi ile referandumda oy kullanma hakkına sahiptir. Yurt dışı seçmenler sadece seçime katılan siyasi partilere oy verebilirler. Mahalli idareler seçimleri bu hükümlerin dışındadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "Türk hukukunda, milletvekili seçimleriyle ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bir seçim çevresi sayılan yer, en çok 18 milletvekili çıkarabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bir il en çok 3 seçim çevresine bölünebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Nüfusuna bakılmaksızın her il bir seçim çevresidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "19 ila 35 milletvekili çıkaran iller 2 seçim çevresine bölünür.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletvekili seçimlerinde basit çoğunluk sistemi uygulanır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Ülkemizde, milletvekili seçimlerinde basit çoğunluk sistemi değil nispi temsil sistemi geçerlidir. Nispi temsilde, her parti aldığı oy oranında milletvekilliği kazanır. Oysa çoğunluk sisteminde, bir seçim çevresinde oyların çoğunu alan, tüm milletvekilliklerini kazanmaktadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Ağır cezayı gerektiren suçlardan dolayı mahkûm bulunanlar oy kullanabilir.\nII. Taksirli suçlardan hüküm giyenler oy kullanabilir.\nIII. Tutuklular oy kullanabilir.\nIV. Kısıtlılar oy kullanabilir.\n1982 Anayasası'na göre yukarıda verilen ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre taksirli suçlardan hüküm giyenler oy kullanabilir. Tutuklular da oy kullanabilirler. Anayasa'da yer almamasına rağmen ilgili Kanuna göre; kısıtlıların, Türk vatandaşı olmayanların, küçüklerin seçmen olamayacakları için oy kullanmaları mümkün değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, siyasi parti kapatma davasını açan ve davaya bakan merciler aşağıdakilerden hangisinde sırasıyla doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Anayasa Mahkemesi - Anayasa Mahkemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Anayasa Mahkemesi - Yargıtay",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yargıtay - Anayasa Mahkemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yüksek Seçim Kurulu - Anayasa Mahkemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yargıtay Cumhuriyet Başsavcısı - Anayasa Mahkemesi",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre siyasi parti kapatma davasını Yargıtay Cumhuriyet Başsavcısı açar. Davaya Anayasa Mahkemesi bakar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun'a göre yurt dışı seçmenlerin oy kullanmasında,\nI. Gümrük kapılarında oy kullanma\nII. Elektronik oylama\nIII. Mektupla oy kullanma\nyöntemlerinden hangileri uygulanabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yurt dışı seçmenlerin oy kullanmasında, sandık, gümrük kapılarında oy kullanma veya elektronik oylama yöntemleri uygulanır. Mektupla oy kullanma hükmü, Anayasa Mahkemesince iptal edilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun'a göre, yurt dışı seçmenlerin oy kullanmasında, sandık, gümrük kapılarında oy kullanma veya elektronik oylama yöntemlerinin birlikte veya ayrı ayrı uygulanmasına, yabancı ülkenin durumuna göre hangi yöntemle karar verilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Dışişleri Bakanlığının görüşü alınarak Yüksek Seçim Kurulu kararıyla",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yurt Dışı İlçe Seçim Kurulunun görüşü alınarak Yüksek Seçim Kurulu kararıyla",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Seçim yapılan ülkenin Türk Büyükelçiliğinin görüşü alınarak Yüksek Seçim Kurulu kararıyla",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Adalet Bakanlığının görüşü alınarak Yüksek Seçim Kurulu kararıyla",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Cumhurbaşkanı kararıyla",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yasa gereği, yurt dışı seçmenlerin oy kullanmasında; sandık, gümrük kapılarında oy kullanma veya elektronik oylama yöntemlerinin birlikte veya ayrı ayrı uygulanmasına, seçim türüne ve yabancı ülkenin durumuna göre Dışişleri Bakanlığının görüşü alınarak Yüksek Seçim Kurulunca karar verilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Yüksek Seçim Kurulu üyelerinin görev süresi kaç yıldır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "2",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "3",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "4",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "5",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "6",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Yüksek Seçim Kurulu üyelerinin görev süresi altı yıldır. Süresi biten üye yeniden seçilebilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "Yüksek Seçim Kurulunun prensip kararları hangi süre içinde Resmi Gazetede yayımlanır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "7 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "10 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "15 gün",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "2 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "3 ay",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yüksek Seçim Kurulunun prensip kararları on beş gün içinde Resmi Gazetede yayımlanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

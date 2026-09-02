@@ -1,0 +1,352 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Suç tanımında hapis cezası ile adli para cezasının seçenek olarak öngörüldüğü durumlarda, hapis cezasına hükmedilmişse bu ceza artık adli para cezasına çevrilmez.\nII. Bilinçli taksirle işlenen suçlardan dolayı hükmolunan hapis cezası uzun süreli de olsa bu ceza, diğer koşulların varlığı durumunda adli para cezasına çevrilebilir.\nIII. Hüküm kesinleştikten sonra Cumhuriyet savcılığınca yapılan tebligata rağmen 10 gün içinde seçenek tedbirin gereklerinin yerine getirilmesine başlanmaması veya başlanıp da devam edilmemesi durumunda, infaz yargıçlığı kısa süreli hapis cezasının tamamen veya kısmen infazına karar verir ve bu karar derhâl infaz edilir.\n5237 sayılı Türk Ceza Yasası'na göre kısa süreli hapis cezasının çevrilebileceği seçenek yaptırımlar hakkında yukarıdaki ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 50/2'ye göre suç tanımında hapis cezası ile adli para cezasının seçenek olarak öngörüldüğü durumlarda, hapis cezasına hükmedilmişse bu ceza artık adli para cezasına çevrilmez; I doğrudur. TCK m. 50/4'e göre taksirli suçlardan dolayı hükmolunan hapis cezası uzun süreli de olsa adli para cezasına çevrilebilir; ancak bu hüküm BİLİNÇLİ TAKSİR hâlinde uygulanmaz, bu nedenle II yanlıştır. TCK m. 50/6'ya göre süre 10 gün değil 30 GÜNDÜR; hüküm kesinleştikten sonra yapılan tebligata rağmen otuz gün içinde seçenek tedbirin gereklerinin yerine getirilmesine başlanmaması hâlinde infaz yargıçlığı hapis cezasının infazına karar verir, III de yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre yargıç, kişiye adli para cezasını ödemesi için hükmün kesinleşme tarihinden itibaren en fazla ne kadar mehil verilebilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "6 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "1 yıl",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "2 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "3 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "5 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 52/4'e göre yargıç, ekonomik ve kişisel durumlarını göz önünde bulundurarak, kişiye adli para cezasını ödemesi için hükmün kesinleşme tarihinden itibaren bir yıldan fazla olmamak üzere mehil verebileceği gibi, bu cezanın belirli taksitler hâlinde ödenmesine de karar verebilir. Taksit süresi iki yılı geçemez ve taksit miktarı dörtten az olamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), işlediği suç nedeniyle hüküm kesinleşmeden önce 30 gün boyunca tutuklu kalmıştır. Yapılan yargılama sonunda (A) hakkında temel ceza, bir gün karşılığı 200 TL olmak üzere, 500 gün adli para cezası olarak belirlenmiştir.\n5237 sayılı Türk Ceza Yasası'na göre tutuklu kalınan sürenin mahsubu durumunda, (A)'nın alacağı sonuç ceza miktarı ne olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "97.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "93.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "85.000 TL",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "60.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "45.000 TL",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 63'e göre hüküm kesinleşmeden önce gerçekleşen ve kişisel özgürlüğü sınırlama sonucunu doğuran bütün durumlar nedeniyle geçirilmiş süreler, hükmolunan hapis cezasından indirilir; adli para cezasına hükmedilmesi durumunda ise bir gün beş yüz Türk lirası sayılmak üzere bu cezadan indirim yapılır. Olayda temel ceza 200 × 500 = 100.000 TL'dir. Tutuklulukta geçen 30 günlük süre için mahsup, günlüğü 500 TL üzerinden 30 × 500 = 15.000 TL olarak hesaplanır. Sonuç ceza 100.000 − 15.000 = 85.000 TL'dir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Tekerrür ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tekerrür hükümlerinin uygulanabilmesi için ilk suçtan dolayı verilen hükmün kesinleşmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ön ödeme, tekerrür hükümlerinin uygulanmasına engeldir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Koşullu salıverilmeden sonra tekrar suç işlendiğinde koşullar gerçekleşmişse tekerrür hükümleri uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Tedbir kararları veya disiplin cezaları tekerrüre esas olmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Tekerrüre esas oluşturan suç, hapis cezası gerektiren bir suç ise tekerrür hükümleri uygulanacak suçun da hapis cezası içermesi gerekir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 58/1'e göre tekerrür için önceden işlenen suçtan dolayı verilen hükmün KESİNLEŞMİŞ olması gerekir. 5237 sayılı Yasa, 765 sayılı eski Yasa'nın aksine tek tip tekerrür sistemini benimsemiştir; bu nedenle önceki ve sonraki suçun aynı veya ayrı cinsten olması ya da her ikisinin de hapis cezası gerektirmesi aranmaz. Tekerrür hükümlerinin uygulanabilmesi için tekerrüre esas oluşturan suçun hapis cezası gerektirmesi hâlinde sonraki suçun da hapis cezası içermesi gerekmediğinden E yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre kasten işlemiş olduğu suçtan dolayı hakkında belli hakları kullanmaktan yoksun bırakılma tedbiri uygulanan kişi, bu hakları ne zamana kadar kullanamaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yasak hakların geri verilmesi kararı kesinleşinceye kadar",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yasak hakların geri verilmesi kararı verilinceye kadar",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Mahkûm olduğu hapis cezasının infazı tamamlanıncaya kadar",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Mahkûm olduğu hapis cezasının infazının üzerinden 3 yıl geçinceye kadar",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Mahkûm olduğu hapis cezasının infazının üzerinden 5 yıl geçinceye kadar",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 53/1'e göre kişi, kasten işlemiş olduğu suçtan dolayı hapis cezasına mahkûmiyetin yasal sonucu olarak belli hakları kullanmaktan yoksun bırakılır. TCK m. 53/2 uyarınca kişi, işlemiş bulunduğu suç dolayısıyla mahkûm olduğu hapis cezasının infazı TAMAMLANINCAYA KADAR bu hakları kullanamaz. Yoksunluk mahkûmiyetin yasal sonucu olduğundan ayrıca hüküm kurulmasına gerek yoktur ve infazın tamamlanmasıyla kendiliğinden sona erer.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Eşya müsaderesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Eşyanın üzerinde iyi niyetli üçüncü kişiler lehine kurulmuş sınırlı ayni hakkın bulunması durumunda müsadere kararı, bu hak saklı kalmak koşuluyla verilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Bir şeyin yalnızca bazı kısımlarının müsaderesi gerektiğinde, tümüne zarar verilmeksizin bu kısmı ayırmak mümkün olmasa bile yalnızca bu kısmın müsaderesine karar verilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Taksirle işlenen suçlarda kullanılan eşyalar için eşya müsaderesi mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bir eşyanın müsaderesine karar verilebilmesi için failin mahkûm olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Suç işlenmesine tahsis edilmiş olan eşyanın müsadere edilebilmesi için suçun işlenmesinde kullanılması gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 54/1'in son cümlesine göre eşyanın üzerinde iyi niyetli üçüncü kişiler lehine kurulmuş sınırlı ayni hakkın bulunması hâlinde müsadere kararı, bu hak saklı kalmak koşuluyla verilir; bu düzenleme 2016 yılında 6763 sayılı Yasayla getirilmiştir. TCK m. 54/5'e göre kısmi müsadere ancak tümüne zarar verilmeksizin ayırmak OLANAKLI ise mümkündür. Eşya müsaderesi yalnızca KASTEN işlenen suçlarda kullanılan eşyalar için mümkündür. Müsadere bir güvenlik tedbiri olduğundan failin mahkûm olması gerekmez. Suçun işlenmesine tahsis edilen eşyada ise tahsis yeterli olup ayrıca kullanılmış olması aranmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Daha önce suç işlememiş olan 20 yaşındaki (A), motosikleti ile insanların kalabalık olarak bulunduğu bir caddede ilerlerken sürücülüğüne ve yeteneklerine güvenerek gözlerini kapatıp tek elini kullanarak ilerlerken aniden önüne çıkan (B)'nin yaralanmasına neden olur. Mahkemece suçun bilinçli taksirle işlendiği kabul edilerek (A), karşılığında hapis veya adli para cezasının seçimlik olarak öngörüldüğü taksirli yaralama suçundan 1 yıl 6 ay hapis cezasına mahkûm edilir.\n(A)'nın cezasının seçenek yaptırımlara çevrilmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Adli para cezasına çevrilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Adli para cezasına çevrilmesi zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Seçenek tedbirlere çevrilmesi zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Seçenek tedbirlere çevrilmesi mümkün olup bu konuda yargıcın takdir yetkisi vardır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adli para cezasına veya diğer seçenek yaptırımlara çevrilemez.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 49/2'ye göre bir yıl veya daha az süreyle hükmedilen hapis cezası kısa süreli hapis cezasıdır; olayda ceza 1 yıl 6 ay olduğundan uzun süreli hapis cezası söz konusudur ve m. 50/1'deki seçenek yaptırımlara çevirme olanağı bulunmamaktadır. TCK m. 50/4 taksirli suçlardan hükmedilen hapis cezasının uzun süreli olsa bile adli para cezasına çevrilebileceğini öngörmüş, ancak bu hükmün BİLİNÇLİ TAKSİR hâlinde uygulanmayacağını açıkça belirtmiştir. Suç bilinçli taksirle işlendiğinden hükmolunan uzun süreli hapis cezası, adli para cezası dâhil hiçbir seçenek yaptırıma çevrilemez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre eşya müsaderesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Suçun işlenmesinde kullanılmak üzere hazırlanan eşya; kamu güvenliği, kamu sağlığı veya genel ahlak açısından tehlikeli olması durumunda müsadere edilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Üretimi, bulundurulması, kullanılması, taşınması, alım ve satımı suç oluşturan eşya müsadere edilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Birden fazla kişinin paydaş olduğu eşya ile ilgili verilen müsadere kararı eşyanın tamamı hakkında uygulanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Taksirle işlenen suçlarda müsadere kararı verilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Müsadereye ilişkin hüküm kesinleşmeden itibaren 20 yıl geçtikten sonra infaz edilmez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 54/6'ya göre birden fazla kişinin paydaş olduğu eşya ile ilgili olarak, yalnızca suça iştirak eden kişinin payının müsaderesine hükmolunur; eşyanın tamamı müsadere edilmez, bu nedenle C yanlıştır. TCK m. 54/1 suçun işlenmesinde kullanılmak üzere hazırlanan eşyanın ancak kamu güvenliği, kamu sağlığı veya genel ahlak açısından tehlikeli olması durumunda müsadere edileceğini; m. 54/4 ise üretimi, bulundurulması, kullanılması, taşınması, alım ve satımı suç oluşturan eşyanın müsadere edileceğini öngörür. Eşya müsaderesi yalnızca kasten işlenen suçlarda mümkündür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Özel hukuk tüzel kişileri hakkında ceza yaptırımı uygulanabilir.\nII. Özel hukuk tüzel kişileri hakkında güvenlik tedbiri niteliğinde yaptırımlara hükmedilebilir.\nIII. Özel hukuk tüzel kişileri hakkında hem ceza hem de güvenlik tedbirleri uygulanamaz.\nÖzel hukuk tüzel kişilerine uygulanabilecek yaptırımlarla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 20/2'ye göre tüzel kişiler hakkında ceza yaptırımı uygulanamaz; bu nedenle I yanlıştır. Ancak aynı fıkra, suç dolayısıyla yasada öngörülen güvenlik tedbiri niteliğindeki yaptırımların saklı olduğunu belirtir. TCK m. 60 özel hukuk tüzel kişileri hakkında faaliyet izninin iptali ve müsadere gibi güvenlik tedbirlerine hükmedilebileceğini düzenlediğinden II doğru, güvenlik tedbirlerinin de uygulanamayacağını söyleyen III yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre;\nI. 17 yaşındaki (A)'nın işlemiş olduğu suçtan dolayı mahkûm olduğu 1 yıl süreli hapis,\nII. 20 yaşındaki (B)'nin işlemiş olduğu suçtan dolayı mahkûm olduğu 6 ay süreli hapis,\nIII. 71 yaşındaki (C)'nin işlemiş olduğu suçtan dolayı mahkûm olduğu 8 ay süreli hapis\ncezalarından hangileri diğer koşulların varlığı durumunda seçenek yaptırımlara çevrilmek zorundadır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kısa süreli hapis cezasının seçenek yaptırımlara çevrilmesi kural olarak yargıcın takdirindedir (TCK m. 50/1). TCK m. 50/3 ise iki durumda çevirmeyi ZORUNLU kılar: daha önce hapis cezasına mahkûm edilmemiş olmak koşuluyla, mahkûm olunan 30 gün ve daha az süreli hapis cezası ile eylemi işlediği tarihte 18 yaşını doldurmamış veya 65 yaşını bitirmiş bulunanların mahkûm edildiği 1 yıl veya daha az süreli hapis cezası. (A) eylem tarihinde 18 yaşını doldurmamış ve cezası 1 yıl olduğundan, (C) ise 65 yaşını bitirmiş ve cezası 8 ay olduğundan bu cezaların çevrilmesi zorunludur. (B) ise 20 yaşında olduğundan ve cezası 30 günden fazla bulunduğundan zorunlu çevirme kapsamına girmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

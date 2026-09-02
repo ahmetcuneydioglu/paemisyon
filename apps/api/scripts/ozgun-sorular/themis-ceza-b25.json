@@ -1,0 +1,317 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre cezaların ertelenmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Adli para cezasının ertelenmesinde bir miktar belirlenmemiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ertelenecek cezanın miktarı sanığın yaşına göre değişir.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Hapis cezasının ertelenmesi, koşula bağlı tutulmuşsa koşulun yerine getirilmesi durumunda, hükmü veren mahkemece hükümlü infaz kurumundan derhâl salıverilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hükümlü, deneme süresi içinde herhangi bir suç işleyecek olursa cezanın tamamı infaz kurumunda çektirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Denetim süresi iyi hâlli geçirilirse mahkûmiyet ortadan kalkar.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 51/1'e göre iki yıl veya daha az süreyle hapis cezasına mahkûm edilen kişinin cezası ertelenebilir; ancak bu sürenin üst sınırı, eylemi işlediği sırada 18 yaşını doldurmamış veya 65 yaşını bitirmiş olan kişiler bakımından ÜÇ YILDIR. Bu nedenle ertelenecek cezanın miktarı sanığın yaşına göre değişir. Erteleme yalnızca hapis cezaları için mümkün olup adli para cezaları ertelenemez. TCK m. 51/2'ye göre koşulun yerine getirilmesi durumunda hükümlü, hükmü veren mahkeme değil İNFAZ YARGICI kararıyla infaz kurumundan derhâl salıverilir; bu yetki 2020 yılında 7242 sayılı Yasayla infaz yargıcına verilmiştir. TCK m. 51/8 uyarınca denetim süresi iyi hâlli geçirildiğinde mahkûmiyet ortadan kalkmaz, ceza İNFAZ EDİLMİŞ sayılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre anayasayı ihlal suçunu işleyen bir fail hakkında, hangi durumda koşullu salıverilme hükümleri uygulanmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Suçun bir örgütün faaliyeti çerçevesinde işlenmesi durumunda",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla müebbet hapis cezasına mahkûmiyeti durumunda",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Ağırlaştırılmış müebbet hapis cezasına mahkûmiyeti durumunda",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla 20 yıldan fazla hapis cezasına mahkûmiyeti durumunda",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Suçun bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla ağırlaştırılmış müebbet hapis cezasına mahkûmiyeti durumunda",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5275 sayılı Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun m. 107/16'ya göre Türk Ceza Kanunu'nun İkinci Kitap, Dördüncü Kısmında yer alan Devletin güvenliğine karşı suçlar, anayasal düzene ve bu düzenin işleyişine karşı suçlar ile ulusal savunmaya karşı suçlardan, BİR ÖRGÜTÜN FAALİYETİ ÇERÇEVESİNDE İŞLENMESİ dolayısıyla AĞIRLAŞTIRILMIŞ MÜEBBET HAPİS cezasına mahkûmiyet durumunda koşullu salıverilme hükümleri uygulanmaz. Bu iki koşulun birlikte gerçekleşmesi gerekir; yalnızca örgüt faaliyeti çerçevesinde işlenmesi ya da yalnızca ağırlaştırılmış müebbete mahkûmiyet tek başına yeterli değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), işlediği hırsızlık suçundan 1 yıl hapis cezasına mahkûm olmuş ve (A)'nın bu cezası ertelenmiştir. Yargıç, 1 yıllık denetim süresi belirlemiş ve (A)'yı herhangi bir yükümlülüğe tabi tutmamıştır.\nBuna göre (A) hakkında verilen cezanın ertelenmesi kararının sonuçlarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(A), denetim süresini suç işlemeden geçirirse mahkûmiyet vaki olmamış sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(A), denetim süresi içinde taksirli bir suç işlediği takdirde cezası infaz kurumunda çektirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "(A), denetim süresi içinde kasıtlı bir suç işlediğinde ertelenen ceza adli para cezasına çevrilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(A) hakkında, belli hakları kullanmaktan yoksun bırakılma tedbiri uygulanmaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yargıç, (A) hakkında bir kamu kurumunun veya kamu kurumu niteliğindeki meslek kuruluşunun iznine tabi bir meslek veya sanatı, kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etmesine karar verebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 53/4'e göre kısa süreli hapis cezası ertelenmiş veya eylemi işlediği sırada 18 yaşını doldurmamış olan kişiler hakkında belli hakları kullanmaktan yoksun bırakılma tedbiri uygulanmaz. Olayda ceza 1 yıl olduğundan m. 49/2 uyarınca kısa süreli hapis cezasıdır ve ertelendiğinden bu tedbir uygulanmaz. TCK m. 51/8'e göre denetim süresi iyi hâlli geçirildiğinde mahkûmiyet vaki olmamış sayılmaz, ceza İNFAZ EDİLMİŞ sayılır. TCK m. 51/7 uyarınca ertelemenin düşmesi ancak denetim süresinde KASITLI bir suç işlenmesi veya yükümlülüklere aykırı davranılmasında söz konusudur; taksirli suç bu sonucu doğurmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Koşullu salıverme hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Koşullu salıverilen hükümlünün tabi tutulacağı denetim süresi, infaz kurumunda geçirilmesi gereken süre kadardır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Koşullu salıverilen hükümlünün, denetim süresinde hapis cezasını gerektiren kasıtlı bir suç işlemesi veya kendisine yüklenen yükümlülüklere, infaz yargıcının uyarısına rağmen, uymamakta ısrar etmesi durumunda koşullu salıverilme kararı geri alınır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Koşullu salıverilme kararının geri alınması durumunda hükümlünün; sonraki suçu işlediği tarihten itibaren başlamak ve hak ederek tahliye tarihini geçmemek koşuluyla sonraki işlediği her bir suç için verilen hapis cezasının iki katı sürenin, yükümlülüklerine aykırı davranması durumunda, bu yükümlülüklere uymama tarihi ile hak ederek salıverilme tarihi arasındaki süreyi geçmemek koşuluyla ihlalin niteliğine göre takdir edilecek bir sürenin, ceza infaz kurumunda aynen çektirilmesine karar verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Koşullu salıverilme kararının geri alınmasından sonra aynı hükmün infazı ile ilgili en fazla bir kez daha koşullu salıverilme kararı verilebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Devletin güvenliğine karşı suçların, bir örgütün faaliyeti çerçevesinde işlenmesi dolayısıyla ağırlaştırılmış müebbet hapis cezasına mahkûmiyet durumunda, koşullu salıverilme hükümleri uygulanmaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "5275 sayılı Kanun m. 107/13'e göre koşullu salıverilme kararının geri alınmasından sonra aynı hükmün infazı ile ilgili BİR DAHA koşullu salıverilme kararı verilmez; bu nedenle \"en fazla bir kez daha\" diyen D yanlıştır. Aynı maddenin 6. fıkrası denetim süresinin infaz kurumunda geçirilmesi gereken süre kadar olduğunu, 12. fıkrası geri alma nedenlerini, 13. fıkrası geri alma sonrası aynen çektirme kurallarını, 16. fıkrası ise örgüt faaliyeti çerçevesinde işlenen Devletin güvenliğine karşı suçlarda ağırlaştırılmış müebbet hâlinde koşullu salıverilmenin uygulanmayacağını düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre suç tarihinde, 18 yaşını doldurmamış olanlar ile 65 yaşını bitirmiş bulunanların hapis cezalarının ertelenebilmesi için hükmolunan cezanın hangi sınırı aşmaması gerekir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "10 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "1 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "2 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "3 yıl",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "5 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 51/1'e göre işlediği suçtan dolayı iki yıl veya daha az süreyle hapis cezasına mahkûm edilen kişinin cezası ertelenebilir; ancak bu sürenin ÜST SINIRI, eylemi işlediği sırada 18 yaşını doldurmamış veya 65 yaşını bitirmiş olan kişiler bakımından ÜÇ YILDIR. Yaş sınırının belirlenmesinde hüküm tarihi değil EYLEMİN İŞLENDİĞİ tarih esas alınır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Koşullu salıverme hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Koşullu salıverme, cezanın infazında hükümlünün iyi hâlli olmasına bağlanan ödüldür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Koşullu salıverilmeden yararlanabilmek için mahkûmun kurumdaki infaz süresini iyi hâlli olarak geçirmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hükümlünün iyi hâlli olup olmadığı belirlenirken onun infazın tüm aşamalarındaki tutum ve davranışlarının değerlendirilmesi gerekir. Bu değerlendirme en geç 6 ayda bir yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Koşullu salıverilme süresinin hesaplanmasında, hükümlünün 15 yaşını doldurmasına kadar infaz kurumunda geçirdiği 1 gün, 2 gün olarak dikkate alınır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Koşullu salıverilen hükümlünün tabi tutulacağı denetim süresi, infaz kurumunda geçirilmesi gereken sürenin yarısı kadardır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5275 sayılı Kanun m. 107/6'ya göre koşullu salıverilen hükümlünün tabi tutulacağı denetim süresi, infaz kurumunda geçirilmesi gereken sürenin YARISI KADAR DEĞİL, bu sürenin KENDİSİ KADARDIR; ancak süreli hapislerde bu süre hak ederek tahliye tarihini geçemez. Denetim süresinin infaz kurumunda geçirilmesi gereken sürenin yarısı kadar olması 2020 yılında 7242 sayılı Yasayla yapılan düzenlemeden önceki kuraldı; bu nedenle E yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre hapis cezası ertelenen hükümlü hakkında denetim süresinin alt ve üst sınırı ne kadardır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "6 ay – 1 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "1 yıl – 2 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "1 yıl – 3 yıl",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "2 yıl – 3 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "2 yıl – 5 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 51/3'e göre cezası ertelenen hükümlü hakkında, bir yıldan az, üç yıldan fazla olmamak üzere bir denetim süresi belirlenir; bu sürenin ALT SINIRI, mahkûm olunan ceza süresinden az olamaz. Yani denetim süresi 1 yıl ile 3 yıl arasındadır, ancak hükmedilen ceza bir yıldan fazlaysa denetim süresi de en az o kadar olmalıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Koşullu salıvermede denetim süresi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hükümlü, denetim süresinde, infaz kurumunda öğrendiği meslek veya sanatı icra etmek üzere, bir kamu kurumunda veya özel olarak aynı meslek veya sanatı icra eden bir başkasının gözetimi altında, ücret karşılığında çalıştırılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İnfaz yargıcı, denetim süresinde hükümlüye rehberlik edecek bir uzman kişiyi görevlendirebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İnfaz yargıcı, koşullu salıverilen hükümlünün kişiliğini ve topluma uyumdaki başarısını göz önünde bulundurarak; denetim süresinin, denetimli serbestlik tedbiri uygulanmadan veya herhangi bir yükümlülük belirlemeden geçirilmesine karar verebileceği gibi, denetimli serbestlik tedbiri uygulanmasını veya belirlenen yükümlülükleri denetim süresi içinde kaldırabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hükümlünün koşullu salıverilmesi hakkında ceza infaz kurumu idaresi tarafından hazırlanan gerekçeli rapor, infaz işlemlerinin yapıldığı yer infaz yargıçlığına verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Denetim süresi yükümlülüklere uygun ve iyi hâlli olarak geçirildiği takdirde, mahkûmiyet hiç olmamış sayılır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5275 sayılı Kanun m. 107/14'e göre denetim süresi yükümlülüklere uygun ve iyi hâlli olarak geçirildiği takdirde ceza İNFAZ EDİLMİŞ SAYILIR; mahkûmiyet hiç olmamış sayılmaz, bu nedenle E yanlıştır. Aynı maddenin 8. fıkrası hükümlünün infaz kurumunda öğrendiği meslek veya sanatı ücret karşılığı icra edebilmesini, 9. fıkrası infaz yargıcının uzman kişi görevlendirmesini, 10. fıkrası denetimli serbestlik tedbirinin kaldırılabilmesini, 3. fıkrası ise gerekçeli raporun infaz yargıçlığına verilmesini düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre hapis cezası ertelenen hükümlü hakkında uygulanan denetim süresi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cezası ertelenen hükümlüler için mahkemece, yasada öngörülen sürelere bağlı kalınmak koşuluyla denetim süresi belirlenmesi zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Denetim süresi, hüküm (karar) tarihinden itibaren işlemeye başlar.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Denetim süresi içinde, bir meslek veya sanat sahibi olmayan hükümlünün, bu amaçla bir eğitim programına devam etmesine mahkemece karar verilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Mahkeme, denetim süresi içinde hükümlüye rehberlik edecek bir uzman kişiyi görevlendirebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Mahkeme, hükümlünün kişiliğini ve sosyal durumunu göz önünde bulundurarak, denetim süresinin herhangi bir yükümlülük belirlemeden veya uzman kişi görevlendirmeden geçirilmesine karar verebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Denetim süresi hüküm (karar) tarihinden değil, hükmün KESİNLEŞMESİ tarihinden itibaren işlemeye başlar; zira erteleme 5237 sayılı Türk Ceza Yasası'nda bir infaz rejimi olarak öngörülmüş olup hüküm kesinleşmeden infaz edilemez (TCK m. 51/3). TCK m. 51/4 denetim süresi içinde meslek veya sanat sahibi olmayan hükümlünün eğitim programına devamına ya da uzman kişi görevlendirilmesine karar verilebileceğini, m. 51/5 ise mahkemenin herhangi bir yükümlülük belirlemeden veya uzman kişi görevlendirmeden denetim süresinin geçirilmesine karar verebileceğini düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

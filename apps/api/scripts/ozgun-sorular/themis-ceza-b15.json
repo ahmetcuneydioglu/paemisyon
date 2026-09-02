@@ -1,0 +1,72 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Tacir (A), vergi borcunu yatırması için bir miktar parayı yanında çalıştırdığı (B)'ye verir. Ancak (B), vergi memuru (M) ile anlaşarak borcu ödemek yerine bu para ile ortak bir yatırım yaparlar. (M), söz konusu verginin ödendiği konusunda (A)'yı ikna etmek için gerçeğe aykırı bir makbuz düzenler ve (B), bunu (A)'ya verir.\nOlayda aşağıdaki suçlardan hangileri oluşmuştur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnızca güveni kötüye kullanma suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Güveni kötüye kullanma ve belgede sahtecilik suçları",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Dolandırıcılık ve sahte belge kullanma suçları",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yalnızca nitelikli zimmet suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Nitelikli zimmet ve belgede sahtecilik suçları",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 155 güveni kötüye kullanmayı, başkasına ait olup da muhafaza etmek veya BELİRLİ BİR ŞEKİLDE KULLANMAK üzere zilyetliği kendisine devredilmiş mal üzerinde, devir amacı dışında tasarrufta bulunmak olarak tanımlar. Olayda para, (B)'ye vergi borcunun ödenmesi amacıyla teslim edilmiş, o ise bu amaç dışında yatırıma yönlendirmiştir; üstelik para meslek veya hizmet ilişkisinin gereği olarak tevdi edildiğinden m. 155/2 uygulanır. Fiil dolandırıcılık değildir, çünkü zilyetlik hileyle değil GÜVENLE devredilmiştir; zimmet de değildir, çünkü para kamu görevlisine görevi nedeniyle tevdi edilmemiştir. Vergi memuru (M)'nin, düzenlemeye yetkili olduğu makbuzu gerçeğe aykırı düzenlemesi ise TCK m. 204/2 kapsamında resmî belgede sahteciliktir; bu belgenin (B) tarafından kullanılması da aynı maddenin kapsamındadır. İki ayrı hukuki yarar ihlal edildiği için gerçek içtima kuralı gereği her iki suçtan da sorumluluk doğar.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "(A), zor kullanarak (B)'nin konutunun bitişiğinde bulunan eklentiye girer ve o sırada orada bulunan (B)'yi ölümle tehdit ederek onun parasını alır ve gider.\nBuna göre (A)'nın cezai sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(A), nitelikli yağma suçundan dolayı cezalandırılır.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "(A), basit yağma suçundan dolayı cezalandırılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(A), yağma ve konut dokunulmazlığını ihlal suçlarından ayrı ayrı cezalandırılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(A), tehdit ve konut dokunulmazlığını ihlal suçundan dolayı cezalandırılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "(A), ağırlaştırılmış konut dokunulmazlığını ihlal suçundan dolayı cezalandırılır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 148/1 yağmayı, kişinin hayatına veya vücut dokunulmazlığına yönelik bir saldırı gerçekleştireceğinden bahisle tehdit ederek ya da cebir kullanarak bir malı teslime mecbur kılmak olarak tanımlar; olayda ölümle tehdit edilerek para alınması bu tanıma uyar. TCK m. 149/1-d ise yağmanın \"yol kesmek suretiyle ya da KONUTTA, İŞYERİNDE VEYA BUNLARIN EKLENTİLERİNDE\" işlenmesini nitelikli hâl sayar; eklenti kanun metninde açıkça anılmıştır. Konuta veya eklentiye girme fiili bu nitelikli hâlin içinde eritildiğinden, ayrıca konut dokunulmazlığının ihlali suçundan ceza verilmez; burada bileşik suç söz konusudur ve TCK m. 42 uyarınca bileşik suçu oluşturan suçlardan dolayı ayrıca ceza verilemez. Tehdit de yağmanın unsuru olduğu için bağımsız olarak cezalandırılmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  }
+]

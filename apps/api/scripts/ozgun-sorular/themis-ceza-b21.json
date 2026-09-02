@@ -1,0 +1,317 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Tekerrürle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Genel affa uğramış bir mahkûmiyet tekerrüre esas olmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İstinaf yoluna başvurulamayan mahkûmiyet hükümleri de tekerrüre esas olur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Tekerrüre esas olabilecek önceki mahkûmiyet hapis ya da adli para cezası olabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Özel affa uğramış olan mahkûmiyet tekerrüre esas olur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Koşullu salıvermede tekerrür hükümleri uygulanır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ceza Muhakemesi Yasası m. 272/3'e 2020 yılında 7242 sayılı Yasayla eklenen hükme göre istinaf yoluna başvurulamayan, yani başvuru yolu kapalı olan mahkûmiyet hükümleri TEKERRÜRE ESAS OLMAZ; bu nedenle B yanlıştır. TCK m. 65/1 uyarınca genel af hâlinde hükmolunan cezalar bütün sonuçlarıyla ortadan kalktığından genel affa uğramış mahkûmiyet tekerrüre esas olmaz; buna karşılık özel af mahkûmiyeti bütün sonuçlarıyla kaldırmadığından tekerrüre esas olur. TCK m. 58/2-b tekerrüre esas mahkûmiyet olarak adli para cezasını da saydığından önceki mahkûmiyetin hapis olması zorunlu değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre;\nI. 17 yaşındaki (A)'nın işlemiş olduğu suçtan dolayı mahkûm olduğu 1 yıl 6 ay süreli hapis,\nII. 19 yaşındaki (B)'nin işlemiş olduğu suçtan dolayı mahkûm olduğu 2 ay süreli hapis,\nIII. 60 yaşındaki (C)'nin işlemiş olduğu suçtan dolayı mahkûm olduğu 20 gün süreli hapis\ncezalarından hangileri diğer koşulların varlığı durumunda seçenek yaptırımlara çevrilmek zorundadır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 50/3'e göre zorunlu çevirme iki durumda söz konusudur: daha önce hapis cezasına mahkûm edilmemiş olmak koşuluyla mahkûm olunan 30 GÜN ve daha az süreli hapis cezası ile eylemi işlediği tarihte 18 yaşını doldurmamış veya 65 yaşını bitirmiş bulunanların mahkûm edildiği 1 YIL veya daha az süreli hapis cezası. I'de fail 18 yaşından küçük olmakla birlikte cezası 1 yılı aştığından zorunlu çevirme kapsamına girmez. II'de fail 19 yaşında ve cezası 30 günden fazla olduğundan çevirme yargıcın takdirindedir. III'te ise ceza 20 gün, yani 30 günden az olduğundan çevirme zorunludur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre tüzel kişiler hakkında güvenlik tedbirleri hakkında,\nI. Bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen kasıtlı veya taksirli suçlardan mahkûmiyet durumunda, iznin iptaline karar verilir.\nII. Müsadere hükümleri, yararına işlenen suçlarda özel hukuk tüzel kişileri hakkında da uygulanır.\nIII. İznin iptalinin veya müsadere hükümlerinin uygulanmasının işlenen eyleme göre daha ağır sonuçlar ortaya çıkarabileceği durumlarda, yargıç bu tedbirlere hükmetmeyebilir.\nifadelerinden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 60/1'e göre bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk tüzel kişisinin organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötüye kullanılması suretiyle tüzel kişi yararına işlenen KASITLI suçlardan mahkûmiyet hâlinde iznin iptaline karar verilir; taksirli suçlar bu kapsamda olmadığından I yanlıştır. TCK m. 60/2 müsadere hükümlerinin yararına işlenen suçlarda özel hukuk tüzel kişileri hakkında da uygulanacağını, m. 60/3 ise bu tedbirlerin uygulanmasının işlenen eyleme göre daha ağır sonuçlar ortaya çıkarabileceği durumlarda yargıcın bu tedbirlere hükmetmeyebileceğini öngörür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre müsaderenin hukuksal niteliği nedir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ceza",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Güvenlik tedbiri",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Koruma tedbiri",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Tazminat",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kolluk tedbiri",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 45'e göre suç karşılığında uygulanan yaptırım olarak cezalar yalnızca hapis ve adli para cezalarıdır; müsadere bu sayıma dâhil değildir. Müsadere, Yasa'nın \"Güvenlik Tedbirleri\" başlıklı bölümünde m. 54 (eşya müsaderesi) ve m. 55'te (kazanç müsaderesi) düzenlenmiştir. Bu nedenle müsadere bir ceza değil GÜVENLİK TEDBİRİDİR; nitekim güvenlik tedbiri niteliğinde olduğu için failin mahkûm olması da gerekmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Şirket ortağı olmaktan yoksun bırakılma\nII. Velayet hakkından; vesayet veya kayyımlığa ait bir hizmette bulunmaktan yoksun bırakılma\nIII. Bir kamu kurumunun veya kamu kurumu niteliğindeki meslek kuruluşunun iznine tabi bir meslek veya sanatı, kendi sorumluluğu altında serbest meslek erbabı veya tacir olarak icra etmekten yoksun bırakılma\nIV. Dernek veya sendika üyesi olmaktan yoksun bırakılma\n5237 sayılı Türk Ceza Yasası'na göre yukarıdakilerden hangileri hapis cezasına mahkûmiyetin yasal sonucu olarak uygulanan belli hakları kullanmaktan yoksun bırakılma tedbirlerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 53/1 hapis cezasına mahkûmiyetin yasal sonucu olarak yoksun bırakılan hakları sınırlı biçimde sayar; bunlar arasında velayet hakkından, vesayet veya kayyımlığa ait bir hizmette bulunmaktan yoksunluk (m. 53/1-c) ile izne tabi bir meslek veya sanatı serbest meslek erbabı veya tacir olarak icra etmekten yoksunluk (m. 53/1-e) yer alır. Buna karşılık madde, vakıf, dernek, sendika, şirket, kooperatif ve siyasi parti tüzel kişilikleri bakımından YÖNETİCİ VEYA DENETÇİ olmaktan yoksunluk öngörmüştür (m. 53/1-d); salt şirket ortağı veya dernek ya da sendika üyesi olmak bu kapsamda değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre temel cezanın belirlenmesi ve hesaplanması hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Süreli hapis cezasını gerektiren bir suçtan dolayı belirlenen sonuç ceza, 20 yıldan fazla olamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Adli para cezası hesaplanırken cezanın belirlenmesi ve bireyselleştirilmesine yönelik artırma ve indirimler, gün üzerinden yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Adli para cezası, belirlenen sonuç gün ile kişinin bir gün karşılığı ödeyebileceği miktarın çarpılması suretiyle bulunur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Adli para cezasının seçimlik ceza olarak öngörüldüğü suçlarda bu cezaya ilişkin gün biriminin alt sınırı, o suç tanımındaki hapis cezasının alt sınırından az; üst sınırı da hapis cezasının üst sınırından fazla olamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yasada açıkça yazılmış olmadıkça cezalar ne artırılabilir ne eksiltilebilir ne de değiştirilebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 61/7'ye göre süreli hapis cezasını gerektiren bir suçtan dolayı bu madde hükümlerine göre belirlenen sonuç ceza OTUZ YILDAN fazla olamaz; A'da bu sınır 20 yıl gösterildiği için yanlıştır. Buradaki 30 yıllık sınır, m. 49/1'deki süreli hapis cezasının yasal üst sınırı olan 20 yıldan farklıdır; ikisi karıştırılmamalıdır. TCK m. 61/8 adli para cezası hesaplanırken artırma ve indirimlerin gün üzerinden yapılacağını ve ortaya çıkan sonuç günün kişinin bir gün karşılığı ödeyebileceği miktar ile çarpılacağını, m. 61/9 ise seçimlik adli para cezasında gün biriminin sınırlarını düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5 yıldan az süreli hapis cezasına ya da adli para cezasına mahkûmiyet durumunda, tekerrür süresi ne kadardır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3 yıl",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "5 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "10 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "15 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "20 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 58/2'ye göre tekerrür hükümleri, önceden işlenen suçtan dolayı beş yıldan fazla süreyle hapis cezasına mahkûmiyet hâlinde bu cezanın infaz edildiği tarihten itibaren beş yıl; beş yıl veya daha az süreli hapis ya da adli para cezasına mahkûmiyet hâlinde ise bu cezanın infaz edildiği tarihten itibaren ÜÇ YIL geçtikten sonra işlenen suçlar dolayısıyla uygulanmaz. Sürelerin başlangıç anı hükmün kesinleşmesi değil, cezanın infaz edildiği tarihtir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), işlediği suç nedeniyle hüküm kesinleşmeden önce 50 gün boyunca tutuklu kalmıştır. Yapılan yargılama sonunda (A) hakkında temel ceza, bir gün karşılığı 100 TL olmak üzere, 600 gün adli para cezası olarak belirlenmiştir.\n5237 sayılı Türk Ceza Yasası'na göre tutuklu kalınan sürenin mahsubu durumunda, (A)'nın alacağı sonuç ceza miktarı ne olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "15.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "20.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "25.000 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "35.000 TL",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "55.000 TL",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 63'e göre hüküm kesinleşmeden önce gerçekleşen ve kişisel özgürlüğü sınırlama sonucunu doğuran bütün durumlar nedeniyle geçirilmiş süreler, adli para cezasına hükmedilmesi durumunda BİR GÜN BEŞ YÜZ TÜRK LİRASI sayılmak üzere bu cezadan indirilir. Olayda temel ceza 600 × 100 = 60.000 TL'dir. Tutuklulukta geçen 50 günlük süre için mahsup, hükümde takdir edilen 100 TL üzerinden değil yasanın öngördüğü sabit 500 TL üzerinden yapılır: 50 × 500 = 25.000 TL. Sonuç ceza 60.000 − 25.000 = 35.000 TL'dir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'yla kabul edilen kazanç müsaderesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ekonomik suçlarda kanıtları gizleyen failler hakkında uygulanan müsadere türüdür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Suç işleyen akıl hastalarının mallarının kötü yönetilmemesi için uygulanan müsadere türüdür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suç işleyerek veya suç işlemek dolayısıyla elde edilen ekonomik kazançların müsaderesidir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Suç işlemek amacıyla harcanan paraların ve öteki maddi değerlerin müsaderesidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Özel hukuk tüzel kişilerinin vergi borçlarını ödememeleri durumunda onların malları hakkında uygulanan müsadere türüdür.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 55/1'e göre suçun işlenmesi ile elde edilen veya suçun konusunu oluşturan ya da suçun işlenmesi için sağlanan maddi menfaatler ile bunların değerlendirilmesi veya dönüştürülmesi sonucu ortaya çıkan ekonomik kazançların müsaderesine karar verilir. Kazanç müsaderesi, uyuşturucu veya uyarıcı madde ticareti, dolandırıcılık, kaçakçılık, ihaleye fesat karıştırma gibi ekonomik çıkar elde etme amacıyla işlenen suçlara karşı caydırıcılık sağlayan bir güvenlik tedbiridir. TCK m. 55/3 uyarınca mağdura ve iyi niyetli üçüncü kişilere ait maddi değerler kazanç müsaderesine tabi tutulamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

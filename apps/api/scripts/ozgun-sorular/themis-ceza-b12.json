@@ -1,0 +1,107 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Haksız arama suçuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bir kimsenin eşyasının hukuka aykırı olarak aranması bu suçu oluşturmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Haksız arama suçu taksirle işlenebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bu suça teşebbüs mümkün değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Haksız arama eylemi konut veya iş yerinde gerçekleşirse fikri içtima hükümleri uygulanır ve faile yalnızca cezası daha ağır olan konut dokunulmazlığını ihlal suçundan ceza verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bu suça kamu görevlisi olmayıp da katılan kişiler azmettiren veya yardım eden olarak sorumlu olur.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "TCK m. 120 haksız aramayı yalnızca KAMU GÖREVLİSİ bakımından suç sayar; madde metni \"hukuka aykırı olarak bir kimsenin üstünü veya eşyasını arayan KAMU GÖREVLİSİNE\" ceza verileceğini söyler. Faillik özel bir niteliğe bağlandığı için suç ÖZGÜ SUÇTUR ve TCK m. 40/2 devreye girer: özgü suçlarda ancak özel faillik niteliğini taşıyan kişi fail olabilir, işlenişine katılan diğer kişiler ise azmettiren veya yardım eden olarak sorumlu tutulur. Maddede eşyanın aranması da açıkça sayıldığından ilk seçenek metne aykırıdır; TCK m. 22 gereği taksirle işlenebilmesi kanunda ayrıca belirtilmediğinden suç yalnızca kasten işlenebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Aşağıdaki eylemlerden hangisi nefret ve ayrımcılık suçunu oluşturmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bir kişinin seçim yoluyla gelinen bir kamu görevine aday olmasını engellemek",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Bir kişinin işe alınmasını engellemek",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bir kişiye kamuya arz edilmiş olan bir taşınır veya taşınmaz malın satılmasını, devrini veya kiraya verilmesini engellemek",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bir kişinin kamuya arz edilmiş belli bir hizmetten yararlanmasını engellemek",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bir kişinin olağan bir ekonomik etkinlikte bulunmasını engellemek",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 122/1 nefret ve ayrımcılık suçunu SINIRLI SAYIDA seçimlik hareketle tanımlar: kamuya arz edilmiş bir taşınır veya taşınmaz malın satılmasının, devrinin ya da kiraya verilmesinin engellenmesi; kamuya arz edilmiş belli bir hizmetten yararlanmanın engellenmesi; kişinin işe alınmasının engellenmesi; kişinin olağan bir ekonomik etkinlikte bulunmasının engellenmesi. Listede yer almayan bir davranış bu suçu oluşturmaz. Seçim yoluyla gelinen bir kamu görevine ADAY OLMANIN engellenmesi ise ayrı bir maddede, siyasi hakların kullanılmasının engellenmesi başlığı altında TCK m. 114/1-b'de düzenlenmiştir ve orada fiilin cebir veya tehditle işlenmesi aranır. İki suçu ayıran ölçüt, engellenen hakkın ekonomik-sosyal nitelikte mi yoksa siyasi nitelikte mi olduğudur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "5237 sayılı Türk Ceza Yasası'na göre aşağıdakilerden hangisi tehdit suçunun cezasının artırılmasını gerektiren nitelikli şekillerinden değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun var olan veya var sayılan suç örgütlerinin oluşturdukları korkutucu güçten yararlanılarak işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suçun birden fazla kişi tarafından birlikte işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Suçun silahla işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Suçun kişinin kendisini tanınmayacak bir hâle koyarak veya imzasız mektupla veya özel işaretlerle işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun mağduru mal varlığı bakımından büyük bir zarara uğratacağından söz edilerek işlenmesi",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Tehdit suçunun nitelikli şekilleri TCK m. 106/2'de dört bent hâlinde sayılmıştır: silahla; kişinin kendisini tanınmayacak bir hâle koyması suretiyle, imzasız mektupla veya özel işaretlerle; birden fazla kişi tarafından birlikte; var olan veya var sayılan suç örgütlerinin oluşturdukları korkutucu güçten yararlanılarak. Malvarlığı bakımından büyük bir zarara uğratma tehdidi ise nitelikli hâl değil, birinci fıkrada düzenlenen ve DAHA HAFİF cezayı gerektiren bir TEMEL ŞEKİLDİR; m. 106/1'in son cümlesi bu hâlde iki aydan altı aya kadar hapis veya adlî para cezası öngörür ve soruşturmayı mağdurun şikâyetine bağlar. Yani seçenek, cezayı artıran değil azaltan ve takibi şikâyete bağlı olan hâli tarif etmektedir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  }
+]

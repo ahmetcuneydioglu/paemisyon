@@ -1,0 +1,37 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Adli para cezasının infazıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhuriyet savcısı adli para cezasını içeren ilamın kendisine gelmesinden itibaren 30 gün içinde adli para cezasının ödenmesi için hükümlüye bir ödeme emri tebliğ eder.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hükümlü, tebliğ olunan ödeme emri üzerine belli süre içinde adli para cezasını ödemezse, doğrudan ödenmeyen kısma karşılık gelen gün miktarınca hapsedilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Hükümde, adli para cezası takside bağlanmamış ise 1 aylık süre içinde adli para cezasının üçte birini ödeyen hükümlünün isteği üzerine geri kalan kısmının birer ay ara ile 2 eşit taksitte ödenmesine izin verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Adli para cezası yerine çektirilen hapis süresi 3 yılı geçemez. Birden fazla hükümle adli para cezalarına mahkûmiyet durumunda bu süre 5 yılı geçemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adli para cezasından çevrilen hapsin infazı ertelenemez ve bunun infazında koşullu salıverilme hükümleri uygulanmaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "5275 sayılı Ceza ve Güvenlik Tedbirlerinin İnfazı Hakkında Kanun m. 106/3'e göre hükümlü, tebliğ olunan ödeme emri üzerine belli süre içinde adli para cezasını ödemezse, Cumhuriyet savcısının kararı ile ödenmeyen kısma karşılık gelen gün miktarı hapis cezasına çevrilerek hükümlünün İKİ SAAT ÇALIŞMASI KARŞILIĞI BİR GÜN olmak üzere kamuya yararlı bir işte çalıştırılmasına karar verilir. Doğrudan hapsedilme söz konusu değildir; 2014 yılında 6545 sayılı Yasayla yapılan değişiklikle önce kamuya yararlı işte çalıştırma uygulaması getirilmiştir. Hükümlünün hazırlanan programa ve denetimli serbestlik görevlilerinin uyarı ve önerilerine uymaması durumunda ise çalıştığı günler hapis cezasından mahsup edilerek kalan kısım açık ceza infaz kurumunda yerine getirilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

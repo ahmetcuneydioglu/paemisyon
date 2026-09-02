@@ -1,0 +1,107 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "İş ve çalışma özgürlüğünü ihlal suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun oluşması için zorunlu olarak birden fazla mağdurun olması gerekir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ücretsiz olarak çalıştırmak veya sağladığı hizmet ile açık bir şekilde orantısız düşük bir ücretle çalıştırmak ya da insan onuru ile bağdaşmayacak çalışma ve konaklama koşullarına tabi kılmak suç olarak tanımlanmıştır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mağdurun sanayi ve ticaret faaliyetinde çalışan işçi veya işveren sıfatına sahip bir kişi olması gerekmez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cebir veya tehdit kullanarak ya da hukuka aykırı başka bir davranışla iş ve çalışma özgürlüğünün ihlal edilmesi durumunda, suçun soruşturma ve kovuşturması şikâyete bağlıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cebir veya tehdit kullanarak, işçiyi veya işverenlerini ücretleri azaltıp çoğaltmaya veya önceden kabul edilenlerden başka koşullar altında anlaşmalar kabulüne zorlamak ya da bir işin durmasına, sona ermesine veya durmanın devamına neden olmak suç olarak tanımlanmıştır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 117 dört ayrı fıkrada birbirinden bağımsız seçimlik hareketler düzenler ve hiçbirinde mağdur sayısı bakımından bir alt sınır aranmaz. Birinci fıkra \"iş ve çalışma hürriyetini ihlal eden kişiye, MAĞDURUN ŞİKAYETİ HÂLİNDE\" ceza verileceğini söyleyerek suçun tek bir kişiye karşı da işlenebileceğini ve takibinin şikâyete bağlı olduğunu ortaya koyar. İkinci fıkra \"kişi veya kişileri\" ifadesiyle çaresizliğin sömürülmesi hâlini, dördüncü fıkra ise cebir veya tehditle işçi ya da işverenin ücret ve çalışma koşullarına zorlanmasını cezalandırır. Mağdurun işçi veya işveren sıfatını taşıması da zorunlu değildir; korunan hukuki yarar herkesin çalışma özgürlüğüdür. Bu nedenle birden fazla mağdur arayan ifade kanun metnine aykırıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "Bir siyasal partinin genel başkanı olan (A), parti programını açıklamak için İstanbul'a gitmiştir. (A)'nın siyasal parti yönetimindeki görevinden ayrılmasını isteyen (B) ve (C), havaalanında (A)'yı cebir kullanarak zorla kaçırmış ve otelde yapacağı konuşmayı engellemişlerdir.\n5237 sayılı Türk Ceza Yasası'na göre (B) ve (C) hangi suçlardan sorumlu olur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Siyasal hakların kullanılmasının engellenmesi suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hem siyasal hakların kullanılmasının engellenmesi suçu hem de kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Hem cebir suçu hem de kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cebir suçu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 114/1-a, bir kimseyi siyasi parti YÖNETİMİNDEKİ GÖREVİNDEN AYRILMAYA zorlamak amacıyla cebir veya tehdit kullanmayı bağımsız bir suç olarak cezalandırır; olayda failler tam da bu amaçla hareket etmiştir. Kaçırma fiili ise bu suçun tanımında yer alan bir unsur değildir: kişinin bir yere gitmek ya da bir yerde kalmak özgürlüğünden yoksun bırakılması TCK m. 109'da ayrıca suç sayılmıştır. Fiil cebir kullanılarak işlendiğinden m. 109/2, birden fazla kişi tarafından birlikte işlendiğinden m. 109/3-b uygulanır. Aynı fiille birden çok suçun ihlal edildiği bu durumda gerçek içtima kuralı geçerlidir ve failler her iki suçtan ayrı ayrı sorumlu tutulur; kanunda ayrıca genel bir \"cebir suçu\" bulunmadığından cebre dayalı seçenekler doğru değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "(A), kendisini terk eden sevgilisi (M)'yi gece sabaha kadar telefonla arar. Buna dayanamayan (M), (A)'yı şikâyet eder. Yapılan incelemede yüzü aşkın arama kaydına rastlanır.\nBuna göre olayda işlenen suç aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Haksız arama",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Özel yaşamın gizliliğini ihlal",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kişilerin huzur ve sükûnunu bozma",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Hakaret",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Haberleşmenin gizliliğini ihlal",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 123/1, sırf huzur ve sükûnu bozmak maksadıyla bir kimseye ISRARLA telefon edilmesini, gürültü yapılmasını ya da aynı maksatla hukuka aykırı başka bir davranışta bulunulmasını suç sayar ve takibini mağdurun şikâyetine bağlar. Maddenin iki ayırt edici unsuru vardır: fiilin ISRAR düzeyine ulaşması ve failin SIRF huzur ve sükûnu bozma saikiyle hareket etmesi; bu nedenle suç ancak doğrudan kastla işlenebilir. Gece boyunca yüzü aşkın arama her iki unsuru da karşılar. Konuşmanın içeriği öğrenilmediği için haberleşmenin gizliliğinin ihlali, onur ve saygınlığa yönelik bir isnat bulunmadığı için hakaret söz konusu değildir; \"haksız arama\" ise kişinin üstünün veya eşyasının hukuka aykırı aranmasını ifade eden bambaşka bir suçtur.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  }
+]

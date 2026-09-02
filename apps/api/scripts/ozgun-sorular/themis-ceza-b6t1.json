@@ -1,0 +1,352 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdaki suçlardan hangisinin soruşturulması ve kovuşturulması şikâyete bağlı değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ergin olmayanla cinsel ilişki",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kamu görevlisine hakaret",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Basit cinsel taciz",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Konut dokunulmazlığını ihlal",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kullanma hırsızlığı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 131/1'e göre hakaret suçunun soruşturulması ve kovuşturulması mağdurun şikâyetine bağlıdır; ancak kamu görevlisine karşı görevinden dolayı işlenen hakaret suçu bu kuralın dışında tutulmuş olup resen soruşturulur ve kovuşturulur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Memurlar ve diğer kamu görevlileri hakkında kovuşturma yapılabilmesinin bağlı oldukları kurumun uygun görüşüne bağlı olması, aşağıdaki muhakeme koşullarından hangisine uyar?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Karar",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İstem",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İzin",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Şikâyet",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Başvuru",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa m. 129/son'a göre memurlar ve diğer kamu görevlileri hakkında işledikleri iddia edilen suçlardan ötürü ceza kovuşturması açılması, kanunla belirlenen istisnalar dışında, kanunun gösterdiği idari merciin iznine bağlıdır. Bu nedenle memurlar yönünden muhakeme yapılabilmesi bir \"izin\" koşuluna bağlanmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdaki hukuka aykırı eylemlerden hangisi, suç oluşturmadığı hâlde borçlar hukuku anlamında bir haksız eylem sayılmaktadır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Birden çok evlenme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İnsan üzerinde deney",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Taksirle mala zarar verme",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Taksirle yaralama",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Usulsüz ölü gömülmesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bir eylemin suç olabilmesi için yasada suç olarak tanımlanmış olması gerekir. Mala zarar verme suçu TCK m. 151'de yalnızca kasten işlenebilecek biçimde düzenlenmiş olup bu suçun taksirli şekli yasada suç olarak tanımlanmamıştır. Taksirle mala zarar verme bu nedenle suç oluşturmaz ancak borçlar hukuku anlamında haksız eylem oluşturur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi hakkında belli muhakeme işlemlerinin yapılabilmesi \"karar\" alınmasına bağlıdır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Milletvekilleri",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Anayasa Mahkemesi Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Memurlar",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yargıç ve savcılar",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa m. 83/2'ye göre seçimden önce veya sonra bir suç işlediği ileri sürülen bir milletvekili, Meclisin kararı olmadıkça tutulamaz, sorguya çekilemez, tutuklanamaz ve yargılanamaz. Milletvekilleri bakımından muhakeme işlemlerinin yapılabilmesi, TBMM'nin yasama dokunulmazlığının kaldırılmasına ilişkin \"karar\" vermesine bağlıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Cezai ehliyetle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kişinin akıl hastası olup olmadığının saptanması için gözlem altına alınması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Eylemi işlediği sırada 21 yaşını doldurmuş olan sağır ve dilsizlere ceza verilir ancak bir miktar indirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İradi olarak alınan alkolün etkisinde suç işleyenin cezası azaltılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İradi olarak alınan alkolün etkisi altında olan kimse kasıtlı suçları işleyemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Geçici nedenle eylemle ilgili davranışlarını yönlendirme yeteneği önemli derecede azalmış olana ceza verilmez.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 34/1'e göre geçici bir nedenle ya da irade dışı alınan alkol veya uyuşturucu madde etkisiyle, işlediği eylemin hukuksal anlam ve sonuçlarını algılayamayan veya bu eylemle ilgili olarak davranışlarını yönlendirme yeteneği önemli derecede azalmış olan kişiye ceza verilmez. Buna karşılık iradi olarak alınan alkol veya uyuşturucu madde etkisinde suç işleyen kişinin cezai sorumluluğu tamdır, indirim yapılmaz. Eylemi işlediği sırada 21 yaşını doldurmuş olan sağır ve dilsizlere, kusur yeteneğini kaldıran ya da azaltan başka bir neden yoksa tam ceza verilir. Gözlem altına alma ise zorunlu değildir; bilirkişinin uygun görüşü doğrultusunda gerektiğinde başvurulabilecek bir kontrol yöntemidir (CMK m. 74).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Kapıcı (A), yönetici (B)'nin ölüm tehdidinden korkarak kiracı (C)'nin mücevherlerini çalar ve (B)'ye teslim eder.\n(A)'nın cezai sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Meşru savunma dolayısıyla (A)'nın cezalandırılması mümkün değildir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(A)'nın eylemi, zorunluluk durumu bulunması nedeniyle hukuka uygundur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Tehdit dolayısıyla (A) kasten hareket etmemiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(A), kusurlu olmadığından cezalandırılmaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "(A)'nın cezasında indirim yapılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 28'e göre karşı koyamayacağı veya kurtulamayacağı cebir ve şiddet veya muhakkak ve ağır bir korkutma veya tehdit sonucu suç işleyen kimseye ceza verilmez; bu durumda suçun faili cebir ve şiddet, korkutma ve tehdidi kullanan kişi sayılır ve dolaylı faillik hükümleri uygulanır (TCK m. 37/2). Bu bir kusurluluğu kaldıran nedendir; eylemi hukuka uygun hâle getirmez ve kastı da ortadan kaldırmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. (A)'nın, sevgilisinin evinin camını kıran 9 yaşındaki çocuğa hakaret etmesi\nII. (B)'nin, konutunda haciz yapan icra dairesi görevlilerini tehdit etmesi\nIII. (C)'nin, arabasını çizen kişinin oğluna taş atarak onu yaralaması\nYukarıdaki durumların hangilerinde haksız tahrik hükümleri uygulanmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 29'a göre haksız tahrik, haksız bir eylemin ortaya çıkardığı öfke veya şiddetli üzüntünün etkisi altında suç işlenmesidir. I'de mala zarar verme haksız bir eylem olduğundan, bunun ortaya çıkardığı öfkenin etkisiyle işlenen suçta haksız tahrik uygulanabilir. II'de icra görevlilerinin haciz yapması görevin ifası kapsamında hukuka uygun bir eylemdir; tahrike neden olan eylemin haksız olması gerektiğinden haksız tahrik uygulanmaz. III'te ise tepki, haksız eylemi işleyen kişiye değil onun oğluna yöneltilmiştir; suçun tahrik edici haksız eylemi yapan kişiye karşı işlenmesi gerektiğinden haksız tahrik hükümleri uygulanmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), kardeşi (B) ile alışveriş yaparken iş arkadaşları (C), (B)'yi kastederek (A)'ya \"Sen o bacını nasıl yanında gezdiriyorsun, çok geniş adamsın.\" der. Bu sözlere çok sinirlenen (A), olayı akşam yakın arkadaşı (D)'ye anlatır. 10 gün sonra, sinemada (D), (C)'yle karşılaşır ve ona \"Yosma seni.\" diyerek önce bir yumrukla yüzüne vurur ve (C)'yi yanında taşıdığı bıçakla bacağından yaralar. Olay sonunda hastaneye kaldırılan (C)'ye, basit bir tıbbi müdahale ile giderilecek ölçüde hafif yaralandığına ilişkin rapor verilir.\nOlayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Haksız tahrik hükümlerinin uygulanması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Tek bir yaralama suçu oluşmuştur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Yaralanma suçundan dolayı soruşturma yapılabilmesi şikâyete bağlıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Fikri içtima vardır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Zincirleme suç vardır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Olayda haksız tahrikin koşulları gerçekleşmemiştir; sözler (D)'ye değil (A)'ya yöneltilmiş, (D) olayı bizzat yaşamamış ve aradan geçen süre göz önüne alındığında herhangi bir öfke veya kızgınlığa kapıldığından söz edilemez. Yumruklama ve bıçaklama hareketlerinin hedefi tek olup aralarında önemli sayılabilecek bir zaman aralığı yoktur; amaç ve zamanda birlik bulunduğundan tek bir yaralama suçu oluşmuştur. Basit tıbbi müdahale ile giderilebilecek nitelikteki yaralamaların soruşturulması ve kovuşturulması şikâyete bağlıdır (TCK m. 86/2); ancak suç silahla işlendiği için resen kovuşturulur (TCK m. 86/3-e). Tek suç oluştuğundan fikri içtima veya zincirleme suç söz konusu olamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Eylemi işlediği sırada 11 yaşında olan (K)'nın cezai sorumluluğu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(K)'nın azaltılmış kusur yeteneği vardır.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "(K)'nın ceza sorumluluğu yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "(K) hakkında güvenlik tedbirine başvurulabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(K)'ya ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(K), 14 yaşında olsaydı ikinci dönem yaş küçüklerine ilişkin hükümler uygulanırdı.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 31/1'e göre eylemi işlediği sırada 12 yaşını doldurmamış olan çocukların ceza sorumluluğu yoktur; bu kişiler hakkında ceza kovuşturması yapılamaz ancak çocuklara özgü güvenlik tedbirleri uygulanabilir. Bu yaş grubunda azaltılmış kusur yeteneğinden değil, kusur yeteneğinin hiç bulunmamasından söz edilir. 12 yaşını doldurmuş olup 15 yaşını doldurmamış olanlar ise ikinci dönem yaş küçüklüğüne tabidir (TCK m. 31/2).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi kusurluluğu kaldıran nedenlerden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Haksız tahrik",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Zorunluluk durumu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Amirin emrini yerine getirme",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Zorlayıcı neden",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Beklenmeyen durum",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 29'da düzenlenen haksız tahrik, kusurluluğu kaldıran değil azaltan bir nedendir; haksız tahrik altında işlenen suçta faile ceza verilir ancak cezası indirilir. Buna karşılık zorunluluk durumu (TCK m. 25/2), cebir ve tehdit ile zorlayıcı neden (TCK m. 28) ve beklenmeyen durum kusurluluğu ortadan kaldıran nedenlerdendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

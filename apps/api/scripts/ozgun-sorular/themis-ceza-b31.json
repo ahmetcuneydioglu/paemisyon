@@ -1,0 +1,422 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Hapis cezasına mahkûmiyet hükümleri\nII. Adli para cezasına mahkûmiyet hükümleri\nIII. Cezanın ertelenmesine ilişkin kararlar\nIV. Yasaklanmış hakların geri verilmesine ilişkin kararlar\nYukarıdaki kararlardan hangileri adli sicil kaydına alınmayıp doğrudan arşive kaydedilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5352 sayılı Adli Sicil Kanunu m. 4/1'e göre Türk mahkemeleri tarafından vatandaş veya yabancı hakkında verilmiş ve kesinleşmiş mahkûmiyet hükümleri adli sicile kaydedilir. Adli sicilde iki tür kayıt vardır: işlenecek bütün kayıtlar önce sicile kaydedilir, sicil kaydı silindikten sonra arşiv kaydına alınır. Ancak ADLİ PARA CEZASINA mahkûmiyet hükümleri ile cezanın ERTELENMESİNE ilişkin kararlar adli sicil kaydına alınmaz, doğrudan arşive kaydedilir. Yasaklanmış hakların geri verilmesine ilişkin karar da kesinleşmesi durumunda doğrudan adli sicil arşivine kaydedilir (m. 13/A-6).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi uluslararası adli iş birliği kapsamında değerlendirilmez?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Adli yardımlaşma",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Geri verme",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Soruşturma ve kovuşturmanın devri",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İnfazın devri",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Hükümetler arası dostluk ziyaretleri",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Kanunu m. 2/1-c'ye göre uluslararası adli iş birliği, bir devletin yetkili adli mercilerinin diğer bir devletin adli mercileri adına yerine getirdiği işlemlerin bütününü ifade eder. Adli mercilerin kapsamına mahkemeler, yargıçlık ve savcılıklar ile yasayla istisnai olarak ceza soruşturması yapma yetkisi verilen diğer makamlar girer (m. 2/1-a). Cezai konularda uluslararası adli iş birliği temel olarak adli yardımlaşma (istinabe), geri verme (iade), soruşturma ve kovuşturmanın devri, infazın devri ve hükümlülerin nakli konularını kapsar; hükümetler arası dostluk ziyaretleri bu kapsamda değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Yabancı bir devlette yürütülen soruşturma veya kovuşturmanın Türk adli mercileri tarafından devralınabilmesi için aşağıdaki koşullardan hangisi aranmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yurt dışında işlenen bir suç nedeniyle yabancı bir devlette yürütülen soruşturma veya kovuşturma söz konusu olmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Suç, Türk hukukuna göre zamanaşımına veya affa uğramamış olmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suçun üst sınırı 3 yıl veya daha fazla hapis cezasını gerektirmelidir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Kişi, Türkiye'de mutat olarak bulunmalıdır veya Türk vatandaşı olmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Devir istemine konu eylem nedeniyle kişi daha önce Türkiye'de yargılanmamalıdır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 25/1'e göre yabancı bir devlette yürütülen soruşturma veya kovuşturmanın Türk adli mercileri tarafından devralınabilmesi için gereken koşullar şunlardır: yurt dışında işlenen bir suç nedeniyle yabancı bir devlette yürütülen soruşturma veya kovuşturma bulunması, suçun Türk hukukuna göre zamanaşımına veya affa uğramamış olması, suçun üst sınırının BİR YIL veya daha fazla hapis cezasını gerektirmesi, kişinin Türkiye'de mutat olarak bulunması veya Türk vatandaşı olması, suçun istemde bulunan devletin sınırları içinde işlenmiş olması ve kişinin devir istemine konu eylem nedeniyle daha önce Türkiye'de yargılanmamış olmasıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "İnfazın devrine ilişkin istem üzerine, Türk hukukuna göre uyarlama kararını hangi merci verir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İlgilinin Türkiye'de son olarak bulunduğu yer ağır ceza mahkemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ankara ağır ceza mahkemesi",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Ankara Bölge Adliye Mahkemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yargıtay",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adalet Bakanlığı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 26/5'e göre infazın devrine ilişkin istem, Türk hukukuna göre uyarlama kararı verilmesi için ANKARA AĞIR CEZA MAHKEMESİNE gönderilir. Mahkemece on beş gün içinde, yabancı devlette verilen mahkûmiyet kararında sübutu kabul edilen eyleme Türk yasalarına göre verilmesi gereken ceza belirlenir. Bu suretle belirlenen ceza, yabancı mahkeme kararında belirlenmiş ceza süresini geçemez. Uyarlama kararına karşı itiraz yasa yoluna başvurulabilir; ağır ceza mahkemesi koruma tedbirleri hakkında da karar vermeye yetkilidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre yabancı adli mercilerinin yapacakları adli yardımlaşma istemleri hakkında aşağıdakilerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yabancı devlet tarafından adli yardımlaşma isteminin yerine getirilmesinde özel bir usulün istenilmesi durumunda, istenen bu usul Türk hukukuna aykırı olmadığı takdirde, istem buna uygun olarak yerine getirilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kişi hakkında Türk mahkemelerince verilen mahkûmiyet veya beraat hükmü bulunması durumunda, aynı eyleme ilişkin yabancı devletlerce yapılan adli yardımlaşma istemleri yerine getirilmez.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Gecikmesinde sakınca bulunan durumlarda, adli yardımlaşma istemi gönderilmeden önce kanıtların korunması amacıyla geçici tedbirler alınabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Arama veya elkoyma isteminde bulunulması durumunda, istemin konusu olan suçun geri vermeye elverişli bir suç olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adli yardımlaşma istemine konu işlemin yerine getirilmesi sırasında yabancı adli merciler, Türk adli mercileri önünde hazır bulunma isteminde bulunabilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 8/1-f'ye göre kişi hakkında Türk mahkemelerince verilen mahkûmiyet veya beraat hükmü bulunması ya da suçun affa veya zamanaşımına uğramış olması durumunda, aynı eyleme ilişkin yabancı devletlerce yapılan adli yardımlaşma istemleri yerine GETİRİLMEYEBİLİR. Söz konusu hükümde takdir yetkisi verilmiş olup emredici bir yasak söz konusu değildir; bu nedenle \"yerine getirilmez\" biçimindeki B ifadesi yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre soruşturmanın veya kovuşturmanın yabancı devlete devredilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Üst sınırı 1 yıl veya daha fazla hapis cezasını gerektiren bir suçtan dolayı yürütülen soruşturma veya kovuşturma bulunmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Şüpheli veya sanığın yabancı devletin vatandaşı olması nedeniyle Türkiye'de hazır bulundurulamaması veya adli yardımlaşma yoluyla savunmasının alınamaması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Şüpheli veya sanığın Türk vatandaşı olmasına karşın yabancı devlette mutat olarak bulunması veya kanıtların bu devlette olması nedeniyle devrin, gerçeğin ortaya çıkarılmasına olanak vermesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Soruşturmanın devri isteminin kabul edilmesi üzerine, Ceza Muhakemesi Yasası'nın 171. maddesinde öngörülen koşullar varsa kamu davasının açılmasının ertelenmesine karar verilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yabancı devletteki yargılama sonucunda sanık hakkında mahkûmiyet kararı verilmesi durumunda düşme kararı verilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 24/3'e göre soruşturmanın devri isteminin kabul edilmesi üzerine, DOĞRUDAN kamu davasının açılmasının ertelenmesine karar verilir. Bu durumda Ceza Muhakemesi Yasası'nın 171. maddesinde öngörülen koşulların bulunup bulunmadığı araştırılmaz ve bu maddeye bağlanan sonuçlara bakılmaz. TCK m. 24/1 devrin koşullarını, m. 24/4 ise yabancı devletteki yargılama sonucunda mahkûmiyet kararı verilmesi hâlinde düşme kararı verileceğini düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi infazın devredilmesi için aranan koşullardan biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hükümlünün infazın devredileceği devletin vatandaşı olması zorunludur.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Mahkûmiyet kararının kesinleşmiş olması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Mahkûmiyet kararına konu eylemin yabancı devlet hukukuna göre suç oluşturması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hapis cezaları için merkezi makamlarca aksi kararlaştırılmadıkça istem tarihinde, hükümlünün ceza infaz kurumunda infazı gereken en az 6 ay hapis cezasının bulunması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adalet Bakanlığı'nın olumlu görüşünün bulunması zorunludur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İnfazın devredilmesi, Türk mahkemeleri tarafından verilen mahkûmiyet kararlarının yabancı bir devlette infaz edilmesidir. 6706 sayılı Kanun m. 28/1'e göre Türk mahkemeleri tarafından verilen mahkûmiyet kararlarının yabancı devlette infaz edilebilmesi için, infazın devredileceği devlette bulunan hükümlünün bu devletin vatandaşı olması ZORUNLU OLMAYIP bu devlet ile GÜÇLÜ SOSYAL BAĞLARININ bulunması yeterlidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Türkiye'ye hükümlü nakli ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hükümlünün Türk vatandaşı olması veya Türkiye ile güçlü sosyal bağlarının bulunması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hükümlünün veya yasal temsilcisinin rıza göstermesi zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanının karar vermesi zorunludur.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Mahkûmiyet kararına konu eylemin Türk hukukuna göre suç oluşturması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Merkezi makamlarca aksi kararlaştırılmadıkça, istem tarihinde, hükümlünün ceza infaz kurumunda infazı gereken en az 6 ay hapis cezasının bulunması zorunludur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Hükümlü nakli; hükümlünün, mahkûmiyet kararının verildiği devlette infazına başlanılan özgürlüğü bağlayıcı cezasının bakiye kısmının, diğer bir devlette infazı için her iki devletin anlaşması ve hükümlünün rızası çerçevesinde o devlete gönderilmesi sürecidir. 6706 sayılı Kanun m. 30/4'e göre yabancı devlet mahkemeleri tarafından hakkında mahkûmiyet kararı verilen ve ceza infaz kurumunda bulunan hükümlülerin nakline ADALET BAKANI karar verir; Cumhurbaşkanının karar vermesi gerekmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Türkiye'den yabancı devlete hükümlü nakledilebilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hükümlünün nakledileceği devletin vatandaşı olması zorunlu olmayıp bu devlet ile güçlü sosyal bağlarının bulunması yeterlidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hükümlünün veya yasal temsilcisinin rıza göstermesi aranmaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Mahkûmiyet kararına konu eylemin nakli istenen devlet hukukuna göre suç oluşturması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Merkezi makamlarca aksi kararlaştırılmadıkça, istem tarihinde, hükümlünün ceza infaz kurumunda infazı gereken en az 6 ay hapis cezasının bulunması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Hükümlü hakkında başka bir suçtan dolayı, Türkiye'de bir soruşturma veya kovuşturma bulunmaması gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 32/1'e göre Türkiye'den yabancı devlete hükümlü nakledilebilmesi için, Türk mahkemeleri tarafından hakkında mahkûmiyet kararı verilen ve ceza infaz kurumunda bulunan hükümlünün nakli için KENDİSİNİN VEYA YASAL TEMSİLCİSİNİN RIZA GÖSTERMESİ gerekir. Hükümlü nakli, hükümlünün rızasına dayanan bir kurum olduğundan rızanın aranmayacağını söyleyen B yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Yabancı devlet mahkemeleri tarafından verilen mahkûmiyet kararlarının infazının devralınması hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hükümlünün Türkiye'de bulunması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Mahkûmiyet kararının kesinleşmiş olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Mahkûmiyet kararına konu eylemin Türk hukukuna göre suç oluşturması ve zamanaşımına uğramamış olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hükümlünün ceza infaz kurumunda infazı gereken en az 1 yıl özgürlüğü bağlayıcı cezasının bulunması gerekir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Aynı suçtan dolayı Türkiye'de soruşturma veya kovuşturma yapılmamış olması gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İnfazın devralınması, yabancı devlet mahkemeleri tarafından verilen mahkûmiyet kararlarının infazının Türkiye'de yapılmasıdır. 6706 sayılı Kanun m. 26/1'e göre özgürlüğü bağlayıcı cezalar için merkezi makamlarca aksi kararlaştırılmadıkça istem tarihinde, hükümlünün ceza infaz kurumunda infazı gereken en az ALTI AY özgürlüğü bağlayıcı cezasının bulunması gerekir; maddede öngörülen süre bir yıl değil altı aydır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre merkezi makam aşağıdakilerden hangisidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanlığı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Dışişleri Bakanlığı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Adalet Bakanlığı",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Yargıtay",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Avrupa Birliği Bakanlığı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Kanunu m. 2/1-b'ye göre merkezi makam, ADALET BAKANLIĞINI ifade eder. Bu görev, Adalet Bakanlığı bünyesinde bulunan Uluslararası Hukuk ve Dış İlişkiler Genel Müdürlüğü tarafından yerine getirilir. Merkezi makam, adli iş birliği istemlerinin yabancı devletlere iletilmesi ve yabancı devletlerden gelen istemlerin ilgili adli mercilere gönderilmesi işlemlerini yürütür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre Türk adli mercilerinin yapacakları adli yardımlaşma istemleri hakkında aşağıdakilerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Gecikmesinde sakınca bulunan durumlarda adli yardımlaşma isteminden önce kanıtların korunması amacıyla geçici tedbirlerin alınması istenebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Tebligata ilişkin adli yardımlaşma istemlerinde, kısıtlayıcı veya zorlayıcı tedbir uygulanacağına ilişkin ihtarlara yer verilebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Adli yardımlaşma istemine konu işlemin yerine getirilmesi sırasında hazır bulunma isteminde bulunulabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Adli yardımlaşma istemi kapsamında ilgili devletin iç hukukuna uygun olarak yerine getirdiği işlemler, Türk hukuku bakımından da geçerli sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adli mercilerce, yürütülen bir soruşturma veya kovuşturma kapsamında başka bir devletin ceza soruşturması başlatmasına neden olabilecek bilgilerin öğrenilmesi durumunda, istem olmaksızın bu bilgiler, ilgili devlete gönderilmek üzere Adalet Bakanlığı'na bildirilebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Adli yardımlaşma (istinabe), bir devletin kendi yargı (egemenlik) sınırları dışında kalan bir adli işlemi, o işlemin yapılabileceği muhatabın bulunduğu yerdeki devletten istemesidir. 6706 sayılı Kanun m. 7/1-b'ye göre tebligata ilişkin adli yardımlaşma istemlerinde, kısıtlayıcı veya zorlayıcı tedbir uygulanacağına ilişkin ihtarlara YER VERİLMEZ. Zira muhakeme sürecindeki kısıtlayıcı veya zorlayıcı tedbirler devlet egemenliğinin bir sonucu olup, her devlet bunu kendi ülke sınırları içinde kullanabilmektedir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

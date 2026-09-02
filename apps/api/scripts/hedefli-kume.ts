@@ -15,7 +15,7 @@
  *
  * SALT OKUR — soruya dokunmaz, yalniz kume dosyasi yazar.
  *
- *   npx tsx scripts/hedefli-kume.ts --harita <json> --cikti <dizin>
+ *   npx tsx scripts/hedefli-kume.ts --harita <json> --cikti <dizin> [--inceleme] [--komsu]
  *
  * Harita bicimi: { "<soru id oneki>": ["<Kanun adi parcasi>|<madde no>", ...] }
  */
@@ -25,7 +25,7 @@ import { readFileSync, mkdirSync, writeFileSync } from 'fs';
 const p = new PrismaClient();
 const arg = (k: string) => { const i = process.argv.indexOf(k); return i === -1 ? undefined : process.argv[i + 1]; };
 
-const SORU_SINIR = 6;        // hedefli kumede madde metni buyuk; dosya basina az soru
+const SORU_SINIR = 12;      // kume basina soru: ajan sayisini yariya indirir (maliyet)
 const METIN_SINIR = 20_000;  // tek madde icin tavan (m.161 gibi uzun maddeler icin)
 
 (async () => {
@@ -38,15 +38,19 @@ const METIN_SINIR = 20_000;  // tek madde icin tavan (m.161 gibi uzun maddeler i
       topic: { select: { name: true } },
       section: { select: { heading: true, parent: { select: { heading: true } } } } } });
 
+  // --inceleme: henuz yayinlanmamis (in_review) partiler de hedefli denetime girebilsin.
+  const INCELEME = process.argv.includes('--inceleme');
+  const KOMSU = process.argv.includes('--komsu');
   const rows = await p.questionVersion.findMany({
-    where: { status: 'published', question: { deletedAt: null } },
+    where: { status: INCELEME ? { in: ['published', 'in_review'] } : 'published',
+      question: { deletedAt: null } },
     select: { id: true, stem: true, explanation: true, sourceLabel: true,
       _count: { select: { examQuestions: true } },
       question: { select: { articleNo: true, topic: { select: { name: true } } } },
       options: { select: { label: true, text: true, isCorrect: true }, orderBy: { sortOrder: 'asc' } } } });
 
-  // Madde araması: "Kanun adi parcasi|no" -> kayit. Komsu maddeler de eklenir,
-  // cunku aranan hukum bitisik maddede olabilir (denetci "m.43-48" diyebiliyor).
+  // Madde araması: "Kanun adi parcasi|no" -> kayit. Komsu maddeler yalniz
+  // --komsu verildiginde eklenir (bkz. asagidaki maliyet notu).
   const bul = (istek: string) => {
     const i = istek.lastIndexOf('|');
     const kanun = istek.slice(0, i).toLocaleLowerCase('tr');
@@ -61,6 +65,12 @@ const METIN_SINIR = 20_000;  // tek madde icin tavan (m.161 gibi uzun maddeler i
     const genis = new Set<string>();
     for (const s of istekler) {
       genis.add(s);
+      // Komsu madde (n-1, n+1) SADECE --komsu ile eklenir. Olculdu: komsular
+      // kume dosyasini ~2 katina cikariyor (50k karakter) ve iki denetci de
+      // bunu bastan sona okuyor. Aranan hukum bitisik maddede cikan durum
+      // nadir; ciktiginda denetci "gercek dayanak m.X" diyor ve o madde
+      // haritaya elle eklenip tur tekrarlaniyor. Varsayilan: kapali.
+      if (!KOMSU) continue;
       const i = s.lastIndexOf('|');
       const kanun = s.slice(0, i);
       const no = Number(s.slice(i + 1));

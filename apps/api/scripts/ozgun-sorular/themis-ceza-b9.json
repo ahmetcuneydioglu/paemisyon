@@ -1,0 +1,422 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), canlı sanarak öldürmek kastıyla (B)'ye ateş açmış ancak yapılan otopside (B)'nin daha önceden öldüğü saptanmıştır.\nBuna göre olayda aşağıdakilerden hangisi söz konusu olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kasten öldürme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İşlenemez suç",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Kasten öldürme suçuna teşebbüs",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Beklenmeyen durum",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Fiili yanılmaya dayanan sözde suç",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1 teşebbüsü, kişinin işlemeyi kastettiği bir suçu ELVERİŞLİ hareketlerle doğrudan doğruya icraya başlayıp da elinde olmayan nedenlerle tamamlayamaması olarak tanımlar. Kasten öldürme suçunun maddi konusu yaşayan bir insandır; olayda ateş edilen kişi zaten ölü olduğundan suçun maddi konusu yoktur ve suçun işlenmesi baştan itibaren olanaksızdır. Bu nedenle teşebbüs değil, işlenemez suç söz konusudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Kaldığı oteldeki banyo malzemelerini gizlice kendi valizine koyup evine götürmek isteyen fakat valizi küçük olduğu için bir kısmını ertesi güne bırakan (A)\nII. Çalıştığı tarladan 10 çuval patates çalmak isterken 5 çuvalı topladıktan sonra kalanını toplamaya fırsat kalmadan tarla sahibinin gelmesi üzerine tüm çuvalları bırakıp kaçan (B)\nIII. Evlenme teklifini reddeden kız arkadaşını kaçırıp bir depoya hapseden fakat mağdurun polis tarafından kurtarılması sırasında olay yerinden kaçan (C)\nYukarıdaki olaylardan hangilerinde fail hakkında teşebbüs hükümleri uygulanır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1'e göre teşebbüsten söz edilebilmesi için failin elverişli hareketlerle icraya başlaması ve suçu ELİNDE OLMAYAN NEDENLERLE tamamlayamaması gerekir. I'de fail, suç işleme kararı verirken düşündüğünden daha azıyla yetinmiş, malın bir kısmını alarak hırsızlığı tamamlamıştır; teşebbüs değil tamamlanmış suç vardır. III'te kişiyi özgürlüğünden yoksun kılma kesintisiz bir suç olup mağdurun özgürlüğünden alıkonulmasıyla tamamlanmış, kurtarılmasıyla sona ermiştir. II'de ise fail icraya başlamış ancak tarla sahibinin gelmesi gibi elinde olmayan bir nedenle suçu tamamlayamamıştır; yalnızca burada teşebbüs hükümleri uygulanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Gönüllü vazgeçmeyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Gönüllü vazgeçme icra hareketleri tamamlandıktan sonra da mümkündür.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Suça iştirak durumunda gönüllü vazgeçenin davranışı sonucunda suç tamamlanmamış ise diğer ortaklara da ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suça iştirak durumunda gönüllü vazgeçenin gayretine rağmen suç işlenmiş ise gönüllü vazgeçen sonuçtan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Gönüllü vazgeçene hiçbir şekilde ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Gönüllü vazgeçmeden söz edilebilmesi için vazgeçenin yaptığından pişman olması gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 36/1'e göre fail, suçun icra hareketlerinden gönüllü vazgeçer veya kendi çabalarıyla suçun tamamlanmasını ya da neticenin gerçekleşmesini önlerse teşebbüsten dolayı cezalandırılmaz. Maddenin ikinci hâli icra hareketleri tamamlandıktan sonra sonucun önlenmesini kapsadığından, gönüllü vazgeçme icra hareketlerinin tamamlanmasından sonra da mümkündür. Aynı fıkra uyarınca tamam olan kısım esasen bir suç oluşturuyorsa fail yalnızca o suçtan cezalandırılır; bu nedenle gönüllü vazgeçene hiçbir şekilde ceza verilmeyeceği söylenemez. Gönüllü vazgeçme kişisel bir neden olup öteki suç ortaklarına sirayet etmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Kan davalısı (B)'yi öldürmeyi planlayan (A), (B)'yi takip etmiş ve onun çalıştığı restoranda gece mesaisinde tek kaldığı bir sırada, silahını doğrultarak 5 el ateş etmiş ancak iğnesinin kırık olması nedeniyle silah ateş almamıştır.\n(A)'nın sorumluluğu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Sözde (mefruz) suç vardır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kasten yaralamaya teşebbüsten sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İşlenemez suç vardır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Tasarlayarak kasten öldürmekten sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kasten öldürmeye teşebbüsten sorumludur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1 teşebbüs için hareketlerin ELVERİŞLİ olmasını arar. İğnesi kırık olan bir silah, kimin kullandığından bağımsız olarak ateş almayacağından öldürme sonucunu doğurmaya mutlak biçimde elverişsizdir. Kullanılan aracın mutlak elverişsizliği durumunda teşebbüsten değil işlenemez suçtan söz edilir; bu nedenle (A) kasten öldürmeye teşebbüsten sorumlu tutulamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "\"(A)'nın, kardeşi (B)'yi öldürmek için yemeğine zehir katması\" ceza hukukunda nasıl nitelendirilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İcra hareketi",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Cezalandırılmayan sonraki hareketler",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hazırlık hareketi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İhmal suretiyle icrai davranış",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Şüphe suçu",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1 teşebbüsü, failin işlemeyi kastettiği suça elverişli hareketlerle DOĞRUDAN DOĞRUYA İCRAYA BAŞLAMASI ölçütüne bağlamıştır. Yemeğe zehir katmak, öldürme sonucunu doğurmaya elverişli ve suçun işlenmesine doğrudan yönelmiş bir davranıştır; bu nedenle hazırlık hareketi değil icra hareketi sayılır. Hazırlık hareketleri ise zehiri satın almak gibi, suç tipiyle henüz doğrudan bağlantı kurmayan öncül davranışlardır ve kural olarak cezalandırılmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Suça teşebbüsle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yargıtay'a göre olası kastla hareket edilen suçlarda teşebbüs hükümleri uygulanmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Fail, icra hareketlerinden gönüllü vazgeçerse gönüllü vazgeçme hükümlerinden yararlanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Fail, icra hareketlerinden sonra suçun tamamlanmasını kendi çabasıyla önlerse etkin pişmanlık hükümlerinden yararlanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Hareketin elverişli olmadığı durumlarda teşebbüsün varlığından söz edilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Teşebbüs durumunda faile verilecek ceza, tamamlanmış suça göre verilecek cezadan daha azdır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 36/1'e göre fail, suçun icra hareketlerinden gönüllü vazgeçer VEYA kendi çabalarıyla suçun tamamlanmasını ya da neticenin gerçekleşmesini önlerse teşebbüsten dolayı cezalandırılmaz. İcra hareketleri tamamlandıktan sonra sonucun kendi çabasıyla önlenmesi de gönüllü vazgeçme kapsamındadır. Etkin pişmanlık ise suç TAMAMLANDIKTAN sonra, yalnızca yasada öngörülen belli suçlar bakımından cezayı kaldıran veya indiren bir kurumdur. Bu nedenle C yanlıştır. TCK m. 35/2 teşebbüs hâlinde cezanın indirilerek verilmesini öngörür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), kuyumcu (B)'nin dükkânındaki kasayı açıp mücevherleri almak için maymuncukla kasanın bulunduğu odaya girer. Kasayı maymuncukla açmaya çalışırken maymuncuk kırılır. Bunun üzerine başka bir zaman yeni bir maymuncukla gelerek kasayı açabileceği düşüncesiyle oradan uzaklaşır.\nOlayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Gönüllü vazgeçme söz konusudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hırsızlık suçuna teşebbüs söz konusudur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "İşlenemez suç söz konusudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Etkin pişmanlık söz konusudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olayda icra değil, hazırlık hareketleri söz konusudur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1'e göre fail, elverişli hareketlerle doğrudan doğruya icraya başlamış ancak suçu elinde olmayan nedenlerle tamamlayamamışsa teşebbüsten sorumlu olur. Olayda (A) kasayı açmaya çalışarak hırsızlık suçunun icrasına başlamış, maymuncuğun kırılması gibi elinde olmayan bir nedenle suçu tamamlayamamıştır. Vazgeçme gönüllü olmadığından TCK m. 36 uygulanmaz; olay yerinden ayrılması iradi bir vazgeçiş değil, aracın kırılmasının zorunlu sonucudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Teşebbüste yalnızca suçun sonucu eksiktir.\nII. İcra hareketlerinin tamamlanamaması durumunda sözde suçtan söz edilir.\nIII. Sırf hareket suçlarına da bazı durumlarda teşebbüs mümkündür.\nIV. Teşebbüste failin mutlaka kasıtlı olması gerekir.\nTeşebbüsle ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1 teşebbüsü, kişinin işlemeyi KASTETTİĞİ bir suçu elverişli hareketlerle doğrudan doğruya icraya başlayıp elinde olmayan nedenlerle tamamlayamaması olarak tanımlar; madde açıkça kast aradığından IV doğrudur. Teşebbüste eksik olan yalnızca sonuç değildir; icra hareketleri de yarım kalmış olabilir, bu nedenle I yanlıştır. İcra hareketlerinin tamamlanamaması hâli sözde suç değil teşebbüstür; II de yanlıştır. Sırf hareket suçlarında icra hareketleri kısımlara bölünebiliyorsa teşebbüs mümkündür; posta yoluyla işlenen hakaret suçu buna örnektir, III doğrudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), hırsızlık amacıyla (F)'nin evine girmiş ve evin durumuna bakınca (F)'nin fakir birisi olduğunu anladığı için hırsızlık yapmadan evden çıkmıştır.\nBuna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Suç oluşmamıştır. Zira eylem hukuka aykırıdır ancak suç olarak tanımlanmamıştır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hırsızlık suçu, teşebbüs aşamasında kalmıştır. Ancak konut dokunulmazlığını ihlal suçu oluşmuştur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Konut dokunulmazlığını ihlal suçu oluşmuştur.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Hırsızlık ve konut dokunulmazlığını ihlal suçları birlikte oluşmuştur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bina içinde hırsızlık suçu oluşmuştur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 36/1'e göre fail suçun icra hareketlerinden gönüllü vazgeçerse teşebbüsten dolayı cezalandırılmaz; ancak tamam olan kısım esasen bir suç oluşturuyorsa yalnızca o suça ait ceza ile cezalandırılır. Olayda (A) hırsızlığın konusunu oluşturan taşınır malları almamış, icra hareketlerinden gönüllü olarak vazgeçmiştir; bu nedenle hırsızlıktan sorumlu tutulamaz. Buna karşılık (F)'nin rızası dışında konutuna girmesiyle konut dokunulmazlığını ihlal suçu tamamlanmıştır ve (A) yalnızca bu suçtan sorumlu olur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), ormanda yürüyüş yaparken karşılaştığı hasmı (B)'ye doğru, yakın mesafeden ve kalbini hedef alarak iki el ateş eder. Kurşunlar karın bölgesine isabet eden (B), yaralanarak yere düşer. (B)'nin yerde acı çektiğini gören (A), yaptığından pişmanlık duyarak (B)'yi hastaneye yetiştirir. (B), yapılan tıbbi müdahalenin ardından iyileşerek evine döner.\nBuna göre (A)'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kasten öldürme suçuna teşebbüsten sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kasten yaralama suçundan sorumludur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Taksirle yaralama suçundan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Genel güvenliği kasten tehlikeye sokma suçundan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(B)'nin tedavi edilerek kurtulmasını sağladığı için ceza sorumluluğu yoktur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 36/1'e göre fail kendi çabalarıyla suçun tamamlanmasını veya neticenin gerçekleşmesini önlerse teşebbüsten dolayı cezalandırılmaz; ancak tamam olan kısım esasen bir suç oluşturuyorsa yalnızca o suça ait ceza ile cezalandırılır. Olayda (A) icra hareketlerini tamamladıktan sonra pişmanlık duyup (B)'yi hastaneye yetiştirerek ölüm sonucunun gerçekleşmesini kendi çabasıyla önlemiştir; bu nedenle kasten öldürmeye teşebbüsten sorumlu olmaz. Buna karşılık o ana kadar yaptığı kasıtlı hareketlerle (B) yaralandığından kasten yaralama suçundan cezalandırılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Hırsızlık yaparken polislerce yakalanan (H), polis memurlarına, kendisini serbest bırakmaları için 100 dolar teklif etmiştir. Polis memurları 100 doları az bulunca (H), 100 elli dolar teklif etmiş ancak başka bir ekip otosunun gelmesi nedeniyle çekinen polisler parayı almadan (H)'yi karakola götürmüşlerdir.\nBu olayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(H)'nin ilk eylemi hırsızlık suçuna teşebbüstür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(H)'nin ikinci eylemi, rüşvet verme suçuna teşebbüstür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Polis memurlarının 100 doları az bularak daha fazla istemesi şeklindeki eylemi rüşvet suçuna teşebbüstür.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(H) ve polis memurları, 100 dolar verildiğinde, (H)'nin serbest bırakılması konusunda anlaşmış olsalardı, 100 dolar verilmese bile eylem, tamamlanmış rüşvet alma ve verme suçundan dolayı cezalandırılırdı.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Polis memurlarının (H)'nin önerdiği 100 doları almadan onu karakola götürmesi gönüllü vazgeçmedir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 36/1 gönüllü vazgeçmeyi, failin suçun icra hareketlerinden GÖNÜLLÜ olarak vazgeçmesine bağlar; vazgeçişin failin özgür iradesinden kaynaklanması gerekir. Olayda polis memurları parayı kendi iradeleriyle değil, yaklaşan başka bir ekip otosundan çekindikleri için almamışlardır. Dış bir etkenin zorlamasıyla gerçekleşen bu davranış gönüllü vazgeçme değildir; bu nedenle E yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Atalarından gelen husumeti sürdüren köy muhtarı (A), köylüye mera tahsisi yapılırken ilçe kaymakamı (K) ile tartışır. (K)'ye destek çıkan ve uzun zamandır öldürmeyi düşündüğü eşi (H)'nin çayına zehir sanarak pudra şekeri koyar.\nOlayın hukuksal nitelendirmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İnsan öldürmeye teşebbüstür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Fiili yanılma nedeniyle sözde suçtur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Aracın elverişsizliği nedeniyle işlenemez suçtur.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Maddi konunun yokluğu nedeniyle işlenemez suçtur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Hukuksal yanılma nedeniyle sözde suçtur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 35/1 teşebbüs için hareketlerin ELVERİŞLİ olmasını arar. Pudra şekeri, olağan koşullarda insan öldürme sonucunu doğurmaya elverişli bir araç değildir; kim kullanırsa kullansın bu araçla ölüm sonucu gerçekleşemez. Kullanılan aracın mutlak elverişsizliği söz konusu olduğundan teşebbüs değil işlenemez suç vardır. Olayda maddi konu (yaşayan insan) mevcut olduğundan maddi konunun yokluğundan da söz edilemez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

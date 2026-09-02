@@ -1,0 +1,247 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), oğlu (B)'yi darp eden öğretmen (C)'ye kızar ve onu darp etmek için elindeki sopasıyla (C)'ye vurur. Sopanın ucundaki demir (C)'nin başına isabet eder ve (C) beyin kanamasından ölür.\nBuna göre (A)'nın cezai sorumluluğuyla ilgili,\nI. Kasten insan öldürmeden sorumludur.\nII. Haksız tahrikten yararlanır.\nIII. Olası kasıtla insan öldürmeden sorumludur.\nIV. Sonucu nedeniyle ağırlaşmış kasten yaralamadan sorumludur.\nifadelerinden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Kasten yapılan bir hareketten, failin istemediği daha ağır bir sonucun ortaya çıkmasına, sonucu nedeniyle ağırlaşmış suç denir. Türk Ceza Yasası'nın 23. maddesine göre, \"Bir eylemin, kastedilenden daha ağır veya başka bir sonucun oluşumuna sebebiyet vermesi durumunda, kişinin bundan dolayı sorumlu tutulabilmesi için bu sonuç bakımından en azından taksirle hareket etmesi gerekir.\" Olayda (A), oğlunu darp eden (C)'ye kızmış elindeki sopasıyla (C)'ye vurmuştur. (A)'nın kastı (C)'yi öldürmek değildir; \"onu darp etmek\" için sopayı vurmuştur. Ancak sopanın ucundaki demir başına isabet ettiği için (C) beyin kanamasından ölmüştür. Ucunda bir demir olan sopayla bir insanın kafasına vurulduğunda ölüm sonucunun doğabileceği öngörülebilir. Bu nedenle (A), ortaya çıkan ölüm sonucu yönünden taksirle hareket etmiştir. Dolayısıyla sonucu nedeniyle ağırlaşmış insan yaralamadan sorumludur. Öğretmenin (B)'yi dövmesi haksız bir eylemdir. Haksız bir eyleme tepki olarak işlenen suçlarda haksız tahrik hükümleri uygulanır. Bu nedenle (A) haksız tahrik hükümlerinden yararlanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(F), yaralamak kastıyla (H)'ye ateş etmiş ve onu kolundan yaralamıştır. Hastaneye kaldırılan (H)'nin yarası, sağlıksız koşullar altında mikrop kapmış ve (H), enfeksiyon nedeniyle ölmüştür.\n(F), aşağıdaki suçların hangisinden cezalandırılır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kastı aşan öldürmeden",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kasten öldürmeye teşebbüsten",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kasten öldürmeden",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kasten yaralamadan",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Kasten yaralamaya teşebbüsten",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "(F), kasten yaralama suçundan sorumludur. Zira kastı yaralamaya yöneliktir. Ayrıca, ölüm sonucundan sorumlu tutulması için gereken nedensellik bağı da zaten hastane koşulları nedeniyle gerçekleşen enfeksiyondan dolayı kesilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), karşıdan ve yakın mesafeden başka bir aracın geldiğini gördüğü hâlde önündeki aracı sollamak istemiş ancak sollayamadan karşıdaki araç ile çarpışarak o araçta yer alan sürücünün ölümüne neden olmuştur.\nBuna göre (A) açısından aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Doğrudan kastla hareket etmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Olası kastla hareket etmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bilinçli taksirle hareket etmiştir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Bilinçsiz taksirle hareket etmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Beklenmeyen durum söz konusu olduğu için karşı aracın sürücüsünün ölümünden sorumlu değildir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "(A), bilinçli taksirle hareket etmiştir. Zira yakın mesafeden bir aracın geldiğini gören sürücü, sollama yapınca bir kazaya neden olabileceğini öngörebilir. (A), karşıdan ve yakın mesafeden aracın geldiğini görmesine karşın onu sollamak istemiştir. Bilinçli taksir, sonucun fail tarafından öngörülmüş olmasına rağmen, istenmemiş olmasıdır. Olayda da fail sonucu öngörmesine karşın istememektedir. Zira amacı sollama yapmaktır, karşı sürücüyü öldürmek değil.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Taksirli sorumluluk istisnaidir.\nII. Taksirle işlenen suçlardan dolayı verilecek ceza, zararın ağırlığına göre belirlenir.\nIII. Bilinçli (öngörülü) taksir cezayı ağırlaştıran bir nedendir.\nIV. Devletin güvenliğine ve siyasal yararlarına ilişkin bilgileri açıklama suçu taksirle işlenemez.\n5237 sayılı Türk Ceza Yasası'na göre taksirle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Taksirle işlenen suçtan dolayı verilecek olan ceza, zararın ağırlığına göre değil, failin kusuruna göre belirlenir (TCK m. 22/4). Taksirle işlenen suçlardan dolayı kusurluluk, bir değerlendirmeyle ancak olayı inceleyen yargıç tarafından yapılabilir. Bu nedenle taksirden dolayı kusurluluğun matematiksel olarak ifadesi (derecelendirme) mümkün değildir. Devletin güvenliğine ve siyasal yararlarına ilişkin bilgileri açıklama suçu Yasa'daki açık hüküm nedeniyle taksirle işlenebilir (TCK m. 329/3).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), kendi aracıyla işyerine giderken dalgınlıkla kırmızı ışıkta durmamış ve bu sırada bisikletle karşıdan karşıya geçen (B)'ye hızla çarpmıştır. (A), yaralanan (B)'yi hemen hastaneye kaldırmış ancak tüm çabalara rağmen (B) ölmüştür.\n(A)'nın cezai sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Taksirle insan öldürmeden sorumludur ancak olayda mağdurun kusuru bulunduğundan kusur oranında cezası indirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Taksirle insan öldürmeden sorumludur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Olayda olası kast söz konusu olduğu için kasten öldürmeden sorumludur ancak olası kast nedeniyle cezası indirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Olayda gönüllü vazgeçme gerçekleşmiş bulunduğundan ölüm sonucundan değil ancak gerçekleşen yaralama suçundan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olayda zorlayıcı neden söz konusu olduğundan sorumluluğu bulunmamaktadır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "(A), ölüm sonucuna isteyerek değil, dikkatsiz davrandığı için neden olmuştur. Bu nedenle taksirle insan öldürme suçundan dolayı sorumludur. Gönüllü vazgeçme, kasten işlenebilen suçlarda söz konusudur (TCK m. 36). Bu olayda uygulanmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Bilinçsiz taksirde sonuç öngörülmüş ancak istenmemiş olmalıdır.\nII. Taksirde hareketin iradi olması gerekmez; sonucun iradi olması yeterlidir.\nIII. Bilinçli taksir cezayı ağırlaştıran genel bir nedendir.\nIV. Taksirli sorumluluk her suç yönünden söz konusudur.\nTaksirle ilgili yukarıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bilinçli taksir, sonucun fail tarafından öngörülmüş olmasına rağmen, istenmemiş olmasıdır (TCK m. 22/3). Bilinçli taksir, cezayı ağırlaştıran genel bir nedendir. Bilinçli taksiri, bilinçsiz taksirden ayırt eden ölçüt, sonucun öngörülüp öngörülmediğidir. Yoksa hareketin iradi olup olmaması değil. Zira her iki taksir türünde de hareket iradi olarak yapılmaktadır. Bilinçsiz taksir, öngörülebilir sonucun fail tarafından öngörülmemesi iken; bilinçli taksir sonucun fail tarafından öngörülmüş olmasına rağmen istenmemiş olmasıdır. Asıl olan kasti sorumluluktur. Taksirli sorumluluk istisnaidir. Taksirli sorumluluk yalnızca yasada özel hüküm bulunan suçlarda mümkündür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre taksirle\nI. bir kimseye onur ve saygınlığını rencide edebilecek nitelikte somut bir eylem isnat eden,\nII. havayolu ulaşımında kişilerin yaşamı bakımından tehlikeye neden olan,\nIII. özel yaşamın gizliliğini ihlal eden,\nIV. çığ düşmesine neden olan,\nkişinin, hangi eylemlerden dolayı ceza sorumluluğu yoktur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Taksirli sorumluluk istisnai bir sorumluluk olduğu için failin taksirli davranışından sorumlu tutulabilmesi için eylemin taksirle işlendiğinde de cezalandırılacağının yasada açıkça yazılı olması gerekir (TCK m. 22/1). Yasada açıkça taksirle işlenebileceği yazılmayan bir suç ancak kasten işlenebilir ve bu suçtan taksirli sorumluluk söz konusu olmaz. Türk Ceza Yasası'nda hakaret ve özel yaşamın gizliliğini ihlal suçları yönünden taksirli sorumluluk öngörülmemiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

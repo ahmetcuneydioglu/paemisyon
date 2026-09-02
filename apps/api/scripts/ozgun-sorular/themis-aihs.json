@@ -1,0 +1,107 @@
+[
+ {
+  "topicId": "ae196a63-74dc-4f56-91de-83eb06fa008c",
+  "articleNo": null,
+  "stem": "Avrupa İnsan Hakları Mahkemesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bireysel başvuru için iç hukuk yollarının tüketilmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bireysel başvuru için aleyhine Mahkemeye başvurulan devletin, bireysel başvuru yolunu açıkça kabul etmiş olmasına gerek yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Mahkemenin tazminat hükümlerinin cebri icra yolu ile elde edilmesi mümkündür.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Mahkeme, devletin sözleşmeye aykırılığını saptadığı işlemini iptal edemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İlgili devlet, sözleşmeye aykırılığı Mahkemece saptanan işlemini geri almak zorunda değildir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "AİHM, aleyhine Mahkemeye başvurulan devlet işlemi konusunda, ilgili devletin sözleşmeye aykırı hareket ettiğini saptayarak, ilgili devlet hakkında tazminata hükmedebilir. Yalnız, Avrupa İnsan Hakları Mahkemesinin, aleyhine Mahkemeye müracaat edilmiş olan devlet işlemini iptal etme yetkisine sahip olmadığı gibi; ilgili devlet de Avrupa İnsan Hakları Mahkemesinin, kendisinin Sözleşmeye aykırı hareket ettiğini saptadı diye Sözleşmeye aykırı olduğu Mahkemece saptanan işlemini geri almak zorunda değildir. Mahkemenin tazminat hükümlerinin cebri icra yoluyla elde edilmesi mümkün değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "ae196a63-74dc-4f56-91de-83eb06fa008c",
+  "articleNo": null,
+  "stem": "Avrupa İnsan Hakları Sözleşmesi nerede ve hangi yılda imzalanmıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Paris, 1948",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Paris, 1950",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Roma, 1948",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Roma, 1950",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Strasburg, 1948",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Avrupa İnsan Hakları Sözleşmesi, 1950 yılında Roma'da imzalanmıştır. Bu yüzden “Roma Sözleşmesi” olarak da adlandırılmaktadır. Sözleşme 1953 yılında yürürlüğe girmiş ve 1954 yılında Türkiye tarafından da onaylanmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "ae196a63-74dc-4f56-91de-83eb06fa008c",
+  "articleNo": null,
+  "stem": "Türkiye, Avrupa İnsan Hakları Mahkemesine bireysel başvuru hakkını hangi yıl kabul etmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1949",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "1953",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "1954",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "1987",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "1999",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Uluslararası koruma mekanizması olarak temel hak ve özgürlüklerin korunması ve geliştirilmesi amacıyla 4.11.1950 tarihinde imzalanan Avrupa İnsan Hakları Sözleşmesi, 10.3.1954 tarihli ve 6366 sayılı İnsan Haklarını ve Ana Hürriyetleri Koruma Sözleşmesi ve Buna Ek Protokolün Tasdiki Hakkında Kanun'la TBMM tarafından onaylanmış ve onay belgesinin 18.5.1954 tarihinde Avrupa Konseyi Genel Sekreterine tevdi edilmesiyle Türkiye açısından yürürlüğe girmiştir. Bakanlar Kurulunun 22.1.1987 tarihli kararıyla Avrupa İnsan Hakları Komisyonuna (eski adıyla) bireysel başvuru hakkı, 25.9.1989 tarihli kararıyla da AİHM'in zorunlu yargı yetkisi tanınmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

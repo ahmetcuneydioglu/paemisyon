@@ -1,0 +1,282 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre ön ödeme ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Uzlaşma kapsamındaki suçlar hariç olmak üzere, yalnız adli para cezasını gerektiren veya yasa maddesinde öngörülen hapis cezasının yukarı sınırı 6 ayı aşmayan suçlarda ön ödeme mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması, kişisel hakkın istenmesine ilişkin hükümlerin uygulanmasına engel olur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Özel yasa hükümleri gereğince işin doğrudan mahkemeye intikal etmesi durumunda fail, yargıç tarafından yapılacak bildirim üzerine ödenmesi öngörülen parayı yargılama giderleriyle birlikte ödediğinde kamu davası düşer.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması, malın geri alınmasına ve müsadereye ilişkin hükümleri etkilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Adli para cezası maktu ise bu miktarı, değilse aşağı sınırını; hapis cezasının aşağı sınırının karşılığı olarak her gün için 100 TL üzerinden bulunacak miktarı soruşturma giderleri ile Cumhuriyet savcılığınca yapılacak tebliğ üzerine 10 gün içinde ödediği takdirde hakkında kamu davası açılmaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 75/5'e göre ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması; KİŞİSEL HAKKIN İSTENMESİNE, malın geri alınmasına ve müsadereye ilişkin hükümleri etkilemez. Yani ön ödeme yalnızca kamu davasını sona erdirir; suçtan zarar görenin hukuk mahkemesinde kişisel hakkını istemesine engel oluşturmaz. Bu nedenle B yanlıştır. Ön ödemenin genel koşulları m. 75/1'de, işin doğrudan mahkemeye intikali hâlindeki usul ise m. 75/2'de düzenlenmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Özel af ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Adli para cezaları için özel af çıkarılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı özel af çıkaramaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Özel af ile ceza mahkûmiyetine bağlanan bütün sonuçlar ortadan kaldırılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Cezaya bağlı olan veya hükümde belirtilen hak yoksunlukları, özel affa rağmen etkisini devam ettirir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Özel af, müsadere olunan şeylerin geri alınmasını gerektirir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 65/3'e göre cezaya bağlı olan veya hükümde belirtilen hak yoksunlukları, ÖZEL AFFA RAĞMEN etkisini devam ettirir; çünkü özel af mahkûmiyeti değil yalnızca cezanın infazını etkiler. TCK m. 65/2 özel affı yalnızca HAPİS cezaları bakımından öngörmüş olup adli para cezaları için özel af çıkarılamaz. Cumhurbaşkanı Anayasa uyarınca sürekli hastalık, sakatlık ve kocama nedeniyle belirli kişilerin cezalarını hafifletebilir veya kaldırabilir; bu bir özel aftır. Özel af mahkûmiyeti ortadan kaldırmadığından müsadere olunan şeylerin geri alınmasını da gerektirmez (m. 74/1).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre kasten işlenen bir suçtan dolayı mahkûm olunan hapis cezası infaz edilemezse cezaya bağlı hak yoksunlukları bundan nasıl etkilenir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hak yoksunlukları uygulanmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Hükmün kesinleşmesinden itibaren 3 yıl uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hükmün kesinleşmesinden itibaren 5 yıl uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Dava zamanaşımı süresi doluncaya kadar uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Ceza zamanaşımı süresi doluncaya kadar uygulanır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Ceza zamanaşımı, kesinleşmiş bir cezanın hüküm tarihinden itibaren yasada öngörülen süre içinde infaz edilememesi nedeniyle Devletin cezayı infaz yetkisinin ortadan kalkmasıdır. TCK m. 69/1'e göre cezaya bağlı olan veya hükümde belirtilen hak yoksunluklarının süresi, CEZA ZAMANAŞIMI doluncaya kadar devam eder. Yani ceza infaz edilemese bile hak yoksunlukları kendiliğinden sona ermez; ceza zamanaşımı süresinin dolmasını bekler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre hapis cezası gerektiren suçlarda, ön ödeme hükümleri uygulanırken bir gün karşılığı olarak esas alınacak tutar ne kadardır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "10 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "30 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "50 TL",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "100 TL",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "200 TL",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 75/1-b'ye göre suç için yasada hapis cezası öngörülmüşse failden, hapis cezasının aşağı sınırının karşılığı olarak her gün için YÜZ TÜRK LİRASI üzerinden bulunacak miktarı soruşturma giderleri ile birlikte ödemesi istenir. Bu tutar 2024 yılında 7499 sayılı Yasayla yapılan değişiklikle 30 Türk lirasından 100 Türk lirasına çıkarılmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi adli sicile kaydedilecek bilgilerden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hapis cezasına mahkûmiyet kararı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Koşullu salıverme kararı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Özel affa ilişkin Cumhurbaşkanlığı kararı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Koşullu salıverilme kararının geri alınmasına ilişkin karar",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Disiplin hapsine ilişkin karar",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5352 sayılı Adli Sicil Kanunu m. 4/1'e göre Türk mahkemeleri tarafından vatandaş veya yabancı hakkında verilmiş ve kesinleşmiş mahkûmiyet hükümleri adli sicile kaydedilir; koşullu salıverilme, bu kararın geri alınması ve özel affa ilişkin Cumhurbaşkanlığı kararı da bu kapsamdadır. Buna karşılık m. 5/1'e göre Türk mahkemeleri tarafından verilmiş olsa bile disiplin suçlarına ve sırf askeri suçlara ilişkin mahkûmiyet hükümleri, DİSİPLİN VEYA TAZYİK HAPSİNE ilişkin kararlar ile idari para cezasına ilişkin kararlar adli sicile kaydedilmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Adli sicil arşiv kayıtları kural olarak kaydın arşive alınma koşullarının oluştuğu tarihten itibaren kaç yıl geçmesi ile silinir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "5",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "10",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "80",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Arşiv kayıtları ilgilinin ölümü dışında silinemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "5352 sayılı Adli Sicil Kanunu m. 12/1'e göre arşiv bilgileri, ilgilinin ölümü üzerine ve her hâlde kaydın arşive alınma koşullarının oluştuğu tarihten itibaren BEŞ YIL geçmesiyle silinir. Bu düzenlemenin öncesinde tüm suçlara ilişkin arşiv kayıtlarının seksen yıl saklanmasını öngören hüküm Anayasa Mahkemesi tarafından iptal edilmiş (AYM, 20/1/2011, E. 2008/44, K. 2011/21), 2012 yılında 6290 sayılı Yasayla arşiv bilgilerinin silinmesi yeni esaslara bağlanmıştır. Türk Ceza Yasası dışındaki yasalarda hak yoksunluğuna neden olan mahkûmiyetlerde ise yasaklanmış hakların geri verilmesi kararı alınması koşuluyla on beş yıl, bu karar alınmaksızın otuz yıl geçmesi gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Yasaklanmış hakların geri verilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Türk Ceza Yasası dışındaki yasaların belli bir suçtan dolayı veya belli bir cezaya mahkûmiyete bağladığı hak yoksunluklarının giderilebilmesi için yasaklanmış hakların geri verilmesi yoluna gidilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Mahkûm olunan cezanın infazına genel af veya etkin pişmanlık dışında başka bir hukuksal nedenle son verilmiş olması durumunda, yasaklanmış hakların geri verilmesi yoluna gidilebilmesi için hükmün kesinleştiği tarihten itibaren 5 yıl geçmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yasaklanmış hakların geri verilmesi için hükümlünün veya vekilinin istemi üzerine, hükmü veren mahkemenin veya hükümlünün yerleşim yerinin bulunduğu yerdeki aynı derecedeki mahkemenin karar vermesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yasaklanmış hakların geri verilmesine ilişkin karar, kesinleşmesi durumunda, adli sicil arşivine kaydedilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yasaklanmış hakların geri verilmesi yoluna başvurulması nedeniyle oluşan bütün masraflar Devlet tarafından karşılanır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5352 sayılı Adli Sicil Kanunu m. 13/A'ya göre yasaklanmış hakların geri verilmesi yoluna başvurulması nedeniyle oluşan bütün masraflar HÜKÜMLÜ tarafından karşılanır; bu nedenle E yanlıştır. Aynı madde uyarınca Türk Ceza Yasası'nın 53. maddesinin beşinci ve altıncı fıkraları saklı kalmak kaydıyla, mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren üç yıllık bir sürenin geçmesi ve kişinin bu süre zarfında yeni bir suç işlememiş olması gerekir; infaza genel af veya etkin pişmanlık dışında başka bir hukuksal nedenle son verilmişse hükmün kesinleştiği tarihten itibaren beş yıl geçmesi aranır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Sırf askeri suçlara ilişkin mahkûmiyet hükmü\nII. Kısa süreli hapis cezasına mahkûmiyet hükmü\nIII. Tazyik hapsine ilişkin karar\nIV. Düşme kararı\nYukarıdaki kararlardan hangileri adli sicile kaydedilmez?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "5352 sayılı Adli Sicil Kanunu m. 4/1'e göre Türk mahkemeleri tarafından vatandaş veya yabancı hakkında verilmiş ve kesinleşmiş MAHKÛMİYET hükümleri adli sicile kaydedilir; kısa süreli hapis cezasına mahkûmiyet de bir mahkûmiyet hükmü olduğundan kaydedilir. Buna karşılık m. 5/1 uyarınca disiplin suçlarına ve SIRF ASKERİ SUÇLARA ilişkin mahkûmiyet hükümleri, disiplin veya TAZYİK HAPSİNE ilişkin kararlar ile idari para cezasına ilişkin kararlar adli sicile kaydedilmez. Beraat, durma, DÜŞME ve ortadan kaldırma kararları da mahkûmiyet hükmü niteliği taşımadığından adli sicile kaydedilmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

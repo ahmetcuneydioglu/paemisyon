@@ -1,0 +1,422 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Siyasi partilerle ilgili aşağıdakilerden hangisi 1982 Anayasası'nda yer alan düzenlemelerden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Önceden izin alınmaksızın kurulmaları",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yüzde 3 barajını aşan siyasi partilere Devletçe mali yardım yapılacağı",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Yükseköğretim öncesi öğrencilerinin siyasi partilere üye olamayacakları",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ticari faaliyete girişemeyecekleri",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yabancı devletlerden mali yardım alan siyasi partilerin temelli olarak kapatılacağı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Siyasi partilere Devlet yardımı yapılacağına ilişkin hüküm, 1961 Anayasası'na 1971 yılında, 1982 Anayasası'na ise 1995 yılında girmiştir. Ancak hangi koşullarda siyasi partilere yardım yapılacağına ilişkin açık bir hüküm Anayasa'da mevcut değildir; koşulları yasaya dayanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Türk hukukunda milletvekili seçimleri ve seçimlerin temel ilkeleri ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bir partinin milletvekili çıkarabilmesi için ülke genelinde kullanılan geçerli oyların en az yüzde 7'sinden fazlasını almış olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Milletvekilleri siyasi partilere dağıtılırken, orantılı sisteme göre hareket edilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Seçim çevresi barajı yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Beşten fazla milletvekili çıkaran seçim çevrelerinde her parti ayrıca kontenjan adayı gösterir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Seçimler, temsilde adalet ve yönetimde istikrar ilkelerine göre yapılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1995 yılında, Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkındaki Kanun'da 4125 sayılı Yasa ile yapılan değişiklikle kontenjan adaylığı kaldırılmıştır. Yine aynı değişiklikle seçim çevresi barajı da kaldırılmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "Bir kimsenin milletvekili veya belediye başkanı adayı olabilmesi için adaylık şartlarının bulunup bulunmadığı ile ilgili itirazları inceleyip nihai ve kesin kararı verme yetkisi aşağıdakilerden hangisine aittir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yüksek Seçim Kurulu",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Vali",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Danıştay",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa Mahkemesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yüksek Seçim Kurulu ile seçim kurulları, genel veya yerel seçimlerde, adayların seçilme yeterliliğine ilişkin koşulları taşıyıp taşımadığına bakar. Seçilmeye engel durumları olanların seçim tutanakları iptal edilir. Seçimden önce, ancak adayın tutanağı kesinleştikten sonra engel durum ortaya çıkarsa, tutanak Yüksek Seçim Kurulunca iptal edilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Yüksek Seçim Kurulunun oluşumuyla ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tüm üyelerini Cumhurbaşkanı seçer.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Tüm üyelerini TBMM seçer.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bir kısım üyelerini Anayasa Mahkemesi, bir kısım üyelerini TBMM seçer.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bir kısım üyelerini Cumhurbaşkanı, bir kısım üyelerini ise TBMM seçer.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bir kısım üyelerini Yargıtay, bir kısım üyelerini ise Danıştay seçer.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Yüksek Seçim Kurulu, yedi asıl ve dört yedek üyeden oluşur. Üyelerin altısı Yargıtay, beşi Danıştay Genel Kurullarınca kendi üyeleri arasından, üye tam sayılarının salt çoğunluğunun gizli oyuyla seçilir. Bu üyeler, salt çoğunlukla ve gizli oyla aralarından bir başkan ve başkanvekili seçerler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Seçme hakkı\nII. Milletvekili seçilme hakkı\nIII. Halkoylamasına katılma hakkı\n1982 Anayasası'na göre yukarıda belirtilenlerden hangilerinin kullanılmasında 18 yaşını doldurmuş olmak koşulu gereklidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre, yukarıda belirtilen hakların tümünün kullanılmasında gerekli olan yaş koşulu on sekizdir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "24.04.2022 tarihinde seçim kanunlarında değişiklik yapan Kanun Cumhurbaşkanı tarafından yayımlanmıştır. Kanunda, değişikliğin 24.07.2022 tarihinden itibaren yürürlüğe gireceği belirtilmiştir.\n1982 Anayasası'na göre aşağıdakilerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "24.04.2023 tarihinden sonra seçim yapılırsa değişiklik uygulanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "24.07.2022 tarihinden itibaren değişiklik uygulanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "24.04.2022 tarihinden itibaren değişiklik uygulanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "24.07.2023 tarihinden sonra seçim yapılırsa değişiklik uygulanabilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Seçimlere 1 yıl kala seçim kanunlarında değişiklik yapılamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2001 yılında yapılan Anayasa değişikliğine göre, seçim kanunlarında yapılan değişiklikler, yürürlüğe girdiği tarihten itibaren 1 yıl içinde yapılacak seçimlerde uygulanmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre siyasi partilerin kapatılmasına aşağıdakilerden hangisi karar verir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yüksek Seçim Kurulu",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Anayasa Mahkemesi",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "TBMM Başkanının görüşünü alarak Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Danıştay",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yargıtay Cumhuriyet Başsavcılığı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 69. maddesinin dördüncü fıkrasına göre, siyasi partilerin kapatılmasına Yargıtay Cumhuriyet Başsavcısının açacağı dava üzerine Anayasa Mahkemesi (Genel Kurulu) nitelikli çoğunlukla karar verir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "Milletvekili seçiminde artık oy ve artık milletvekili bırakmayan ve hukukumuzda geçerli olan seçim sistemi aşağıdakilerden hangisidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "d'Hondt usulü",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Milli bakiye usulü",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "En büyük artık usulü",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "En kuvvetli ortalama usulü",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Ulusal artık usulü",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Hem 1961 Anayasası hem 1982 Anayasası döneminde seçim kanunlarıyla nispi (orantılı) temsil sisteminin d'Hondt usulü benimsenmiştir. Bu usul, artık oy ve artık milletvekili bırakmayan bir usuldür. 1961 Anayasası döneminde genel olarak barajsız d'Hondt usulü uygulanmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, aşağıdakilerden hangisi siyasi partilere üye olamaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yükseköğretim elemanları",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yükseköğretim öğrencileri",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "19 yaşındaki lise öğrencisi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "İşçiler",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İşverenler",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1995 yılı değişikliğiyle yükseköğretim elemanlarına siyasi partilere üye olma hakkı tanınmıştır. Ancak yükseköğretim elemanları, siyasi partilerin merkez organları dışında görev alamazlar. Yine, 1995 yılı değişiklikleri sonrası, yükseköğretim öğrencilerine de siyasi partilere üye olabilme hakkı tanınmıştır. Fakat yükseköğretim öncesi öğrencilerin, örneğin lise öğrencilerinin, siyasi partilere üye olmaları mümkün değildir; lise öğrencisinin on sekiz yaşını doldurmuş olmasının bir önemi yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "I. Nüfusuna bakılmaksızın kural olarak her il bir seçim çevresidir.\nII. Seçimlerde çoğunluk sistemi uygulanır.\nIII. Seçimlerde milletvekili çıkarabilmek için ülke genelinde geçerli oyların yüzde 7'sinden fazlasını ve ilgili seçim çevresi için geçerli olan seçim çevresi barajını aşmak gerekir.\nTürk hukukunda, milletvekili genel seçimleri ile ilgili yukarıda verilen ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ülkemizde, milletvekili genel seçimlerinde çoğunluk sistemi değil, nispi temsil (orantılı temsil) sistemi uygulanır. Bir siyasi partinin milletvekili kazanabilmesi için ülke genelinde kullanılan geçerli oyların yüzde 7'sini aşmış olması yeterlidir; ayrı bir seçim çevresi barajı söz konusu değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "I. 36 ve daha fazla milletvekili çıkaran bir ilin 3 seçim çevresine ayrılması zorunludur.\nII. 19 (dâhil) ile 35 (dâhil) arası milletvekili çıkaracak iller 2 seçim çevresine bölünür.\nIII. Bir il en çok 3 seçim çevresine bölünebilir.\nTürk hukukunda, milletvekili genel seçimleri ile ilgili yukarıda verilen ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Ülkemizde, milletvekili genel seçimleri ile ilgili yukarıda verilen ifadelerin tümü doğrudur. Şunu hatırlatalım: Bu hükümler Anayasa hükümleri değildir, kanuna dayanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "Hiçbir partinin ittifak yapmadığı ve üç milletvekili çıkaran bir seçim çevresinde geçerli oyların siyasi partilere göre dağılımı şöyledir:\nA partisi: 60.000\nB partisi: 80.000\nC partisi: 50.000\nD partisi: 140.000\n2839 sayılı Milletvekili Seçim Kanunu'nun kabul ettiği seçim sistemine göre, D partisinin ülke barajını geçememesi halinde, milletvekillerinin siyasi partilere dağılımıyla ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "B partisi 2 milletvekili, C partisi 1 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "A partisi 1 milletvekili, B partisi 1 milletvekili, C partisi 1 milletvekili çıkarır.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "B partisi 1 milletvekili, D partisi 2 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "B partisi 3 milletvekili çıkarır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "D partisi 3 milletvekili çıkarır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ülkemizde uygulanan seçim sistemi, yüzde 7 ülke barajlı d'Hondt sistemidir. Hesaplama şöyle yapılır: Her partinin aldığı geçerli oy karşısına yazılır; sonra bu ilk geçerli oy, sırayla, milletvekili sayısı kadar her tam sayıya bölünür; en son, bölmeler sonucu ortaya çıkan en yüksek sayılara, sırasıyla bir milletvekilliği dağıtılır. Barajı geçemeyen parti bu hesaplamada dikkate alınmaz, yani seçime girmemiş gibi yok kabul edilir. Soruya göre A partisi için 60.000 / 30.000 / 20.000; B partisi için 80.000 / 40.000 / 26.666; C partisi için 50.000 / 25.000 / 16.666 sayıları elde edilir. En büyük üç sayı 80.000, 60.000 ve 50.000 olduğuna göre A partisi 1, B partisi 1 ve C partisi 1 milletvekili çıkarır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

@@ -1,0 +1,352 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), uyku düzenini ve sağlığını bozmak için eski eşi (B)'nin kahvesine ilaç katmış ve alerjik reaksiyona uğrayan (B), bu yüzden fenalaşmıştır. Hastanede tedavi altına alınan (B), aynı serviste yatan başka bir hastadan Covid 19 virüsünü kapmış ve enfeksiyon nedeniyle ölmüştür.\n(A), aşağıdaki suçların hangisinden cezalandırılır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kasten yaralama suçundan",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kasten öldürmeye teşebbüsten",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kasten öldürmeden",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kasten yaralama suçunun nitelikli şeklinden",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Kasten yaralamaya teşebbüsten",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "(A)'nın kastı yaralamaya yöneliktir; (B)'nin sağlığını bozmak niyetiyle hareket etmiştir. Ancak ölüm sonucundan sorumlu tutulamaz; zira ölüm sonucundan sorumluluk için gereken nedensellik bağı, hastane koşulları nedeniyle bulaşan salgın hastalık nedeniyle kesilmiştir. TCK m. 86/3-a'ya göre kasten yaralama suçunun üstsoya, altsoya, eşe, BOŞANDIĞI EŞE veya kardeşe karşı işlenmesi suçun nitelikli şekillerindendir; \"boşandığı eş\" ibaresi 2021 yılında 7331 sayılı Yasayla eklenmiştir. Bu nedenle (A) kasten yaralama suçunun nitelikli şeklinden sorumlu olur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "İşkence suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İşkence suçu, ancak kamu görevlileri tarafından işlenebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bu suçun görevin ifası sırasında işlenmesi mümkün olduğu gibi görev dışında işlenmesi de mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Failin sorgulamaya ve ifade almaya, soruşturmaya yetkili bir memur olması gerekir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "İşkence suçunun mağduru ancak gerçek kişiler olabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İşkence suçunun konusu insan vücududur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 94/1'e göre işkence suçu ancak KAMU GÖREVLİSİ tarafından işlenebilen özgü bir suçtur; ancak failin sorgulamaya, ifade almaya veya soruşturmaya yetkili bir memur olması aranmaz, herhangi bir kamu görevlisi bu suçu işleyebilir. 5237 sayılı Türk Ceza Yasası'nda işkence suçunun mağduru yalnızca suç şüphesi altında olan kişilerle sınırlı tutulmamıştır; göreviyle bağlantılı olarak bir kamu görevlisiyle muhatap olan herkes bu suçun mağduru olabilir. Örneğin bir eğitim kurumundaki öğrenci ya da tanık ve hatta bir kamu görevlisi de bu suçun mağduru olabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Eziyet suçuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Failin kamu görevlisi olması aranmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İşkence suçu ile arasında temel fark, failin sıfatından kaynaklanmaktadır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Herkes bu suçun mağduru olabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Suçun temel şeklinin kadına karşı işlenmesi durumunda cezanın alt sınırı daha yüksektir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Türk Ceza Yasası'nda suçun ihmali hareketle işlenebileceği açıkça düzenlenmiştir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 96/1'e göre eziyet, kamu görevlisi olmayanlar tarafından işlenen işkence niteliğindeki eylemlerdir; her iki suç bakımından temel farklılık failin sıfatından kaynaklanır. Eziyet genel bir suç olup herkes faili ve mağduru olabilir. 2022 yılında 7406 sayılı Yasayla yapılan değişikliğe göre eziyet suçunun temel şeklinin kadına karşı işlenmesi durumunda cezanın alt sınırı iki yıl altı aydan az olamaz (m. 96/1, c. 2). Buna karşılık işkence suçundan farklı olarak eziyet suçunun İHMALİ HAREKETLE işlenmesi Türk Ceza Yasası'nda düzenlenmemiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Basında podyumların aranan mankeni olarak gösterilen (A), iş insanı (B) ile olan evlilik dışı birlikteliğinden hamile kalmıştır. Gebeliğin 14. haftasında (A), iş yaşamını olumsuz etkileyeceği düşüncesiyle özel bir klinikte doktor arkadaşı (D) ile anlaşarak gebeliğine son vermiştir.\nOlayla ilgili olarak aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız (A), çocuk düşürtme suçundan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız (D), çocuk düşürtme suçundan sorumludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hem (A) hem de (D) çocuk düşürtme suçundan sorumludur.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Eylem hukuka uygun olduğu için suç oluşmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olayda çocuk düşürtme değil, çocuk düşürme suçu oluşmuştur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Olayda tıbbi bir zorunluluk olmadığı hâlde bu eylem işlenmiştir. TCK m. 99/2'ye göre tıbbi zorunluluk bulunmadığı hâlde, rızaya dayalı olsa bile gebelik süresi ON HAFTADAN FAZLA olan bir kadının çocuğunu düşürten kişi ile çocuğunun düşürtülmesine rıza gösteren kadın çocuk düşürtme suçunu işlemiş olur. Gebeliğin 14. haftasında olduğundan on haftalık sınır aşılmıştır; bu nedenle hem eylemi gerçekleştiren doktor (D) hem de rıza gösteren kadın (A) bu suçtan sorumludur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "İşkence suçunun muhakemesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Avrupa İnsan Hakları Mahkemesi, işkence veya kötü muamele iddiası ile kamu görevlileri hakkında yargı mercileri tarafından yürütülen soruşturma ve kovuşturmalarda davanın zamanaşımı nedeniyle düşmesini, Sözleşme'nin ihlali nedeni olarak kabul etmemiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İşkence suçu, 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkındaki Yasa'nın kapsamı dışında bırakılmadığından, kamu görevlisi fail hakkında soruşturma yapılması için izin alınması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İşkence suçundan dolayı zamanaşımı işlemez.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "İşkence suçundan dolayı dava zamanaşımı işlemez, ancak ceza zamanaşımı işler.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İşkence suçunun muhakemesi mağdurun şikâyeti üzerine başlatılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İşkence suçunun muhakemesi resen yapılır; fail kamu görevlisi olsa bile soruşturma yapılması için izin alınması gerekmez, zira işkence suçu 4483 sayılı Yasa'ya tabi değildir (4483 sayılı K. m. 2/5). Avrupa İnsan Hakları Mahkemesi, işkence veya kötü muamele iddiasıyla kamu görevlileri hakkında yürütülen soruşturma ve kovuşturmalarda davanın zamanaşımı nedeniyle düşmesini ve ceza zamanaşımı ile eylemin cezasız kalmasını Sözleşme'nin ihlali nedeni olarak kabul etmektedir. 2013 yılında 6459 sayılı Yasayla getirilen düzenlemeye göre İŞKENCE SUÇUNDAN DOLAYI ZAMANAŞIMI İŞLEMEZ (CMK m. 94/6).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Çocuk düşürme suçu hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Çocuk düşürme, gebelik süresi 20 haftadan fazla olan kadının cenini bilerek ve isteyerek rahminden çıkarmasıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Çocuk düşürme ile çocuk düşürtme suçları arasındaki fark, suçun mağduru bakımındandır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Özgü bir suçtur.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Bağlı hareketli bir suçtur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Eylem cenine değil, gebe kadının yaşamına yönelik olmalıdır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 100'e göre çocuk düşürme, gebelik süresi ON HAFTADAN fazla olan kadının cenini bilerek ve isteyerek rahminden çıkarmasıdır. Çocuk düşürme ile çocuk düşürtme suçları arasındaki fark suçun MAĞDURU bakımından değil SUÇUN FAİLİ bakımından ortaya çıkar; çocuk düşürme suçunda gebe kadın eylemi kendisi yapmaktadır. Suç serbest hareketli olup hareket ögesini ceninin rahimden tahliyesi oluşturur; eylemin cenine yönelmesi gerekir. Suçun faili yalnızca gebelik süresi on haftadan fazla olan kadın olabildiğinden çocuk düşürme ÖZGÜ bir suçtur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Suçu ancak hukuken koruma ve gözetimle yükümlü bir kişi işleyebilir.\nII. Hamile olduğunu bildiği eşini çaresiz durumda terk etmek bu suçu oluşturur.\nIII. Terk dolayısıyla mağdur bir hastalığa yakalanmış, yaralanmış veya ölmüşse sonucu nedeniyle ağırlaşmış suç hükümlerine göre cezaya hükmolunur.\nTerk suçu hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 97/1'e göre terk suçunun faili, yaşı veya hastalığı dolayısıyla kendini idare edemeyecek durumda olan kimseler üzerinde koruma ve gözetim yükümlülüğü bulunan kişi olabilir; suç ancak hukuken koruma ve gözetim yükümlüsü bir kişi tarafından işlenebilir, ahlaken yükümlü olmak fail olmaya yetmez. TCK m. 97/2'ye göre terk dolayısıyla mağdur bir hastalığa yakalanmış, yaralanmış veya ölmüşse sonucu nedeniyle ağırlaşmış suç hükümlerine göre cezaya hükmolunur. Buna karşılık hamile olduğunu bildiği eşini veya sürekli birlikte yaşadığı ve kendisinden gebe kalmış bulunduğunu bildiği evli olmayan bir kadını çaresiz durumda terk etmek, terk suçunu değil AİLE HUKUKUNDAN KAYNAKLANAN YÜKÜMLÜLÜĞÜN İHLALİ suçunu oluşturur (TCK m. 233/2).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Televizyonda bayanlara yönelik olarak yayınlanan bir yarışma programına katılmayı düşünen (A), birkaç gün önce doğurduğu bebeği (B)'yi soğuk bir kış günü cami avlusuna bırakarak İstanbul'a kaçmıştır.\n(A), aşağıdaki suçların hangisinden sorumlu olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Çocuk düşürme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kasten yaralama",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Terk",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Yardım yükümlülüğünün ihlali",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Cami avlusuna bırakılan (B)'ye bir şey olmadığından, (A)'nın bu eylemden dolayı cezai sorumluluğu bulunmamaktadır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 97/1'e göre yaşı veya hastalığı dolayısıyla kendini idare edemeyecek durumda olan ve bu nedenle koruma ve gözetim yükümlülüğü altında bulunan bir kimseyi kendi hâline bırakmak terk suçunu oluşturur. Olayda (A), birkaç günlük bebeğini soğuk bir kış gününde cami avlusuna bırakarak kendi hâline terk etmiştir. Terk suçu bir TEHLİKE SUÇU olduğundan suçun oluşması için bir zararın ortaya çıkması aranmaz; bu nedenle bebeğe bir şey olmamış olması failin cezai sorumluluğunu ortadan kaldırmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. İlgilinin rızası suçun oluşmasını engellemez.\nII. Üreme yeteneğine sahip herkes bu suçun mağduru olabilir.\nIII. Bir kimsenin kendi kendisini kısırlaştırması da suç olarak tanımlanmıştır.\nIV. Failde yaralama kastı olup da yaralama eylemi mağdurun çocuk yapma yeteneğinin kaybolmasına neden olmuşsa bu suç oluşur.\nKısırlaştırma suçu hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I, III ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 101/1'e göre kısırlaştırma, bir erkek veya kadının rızası olmaksızın çocuk yapma yeteneğinin sona erdirilmesidir; bu nedenle İLGİLİNİN RIZASI suçta bir hukuka uygunluk nedenidir ve rıza varsa eylem kısırlaştırma işlemi yapmaya yetkili bir kimse tarafından yapılmışsa suç oluşmaz, I yanlıştır. Yasa'da kişinin kendi kendisini kısırlaştırması suç olarak tanımlanmamıştır, III de yanlıştır. Failde yaralama kastı olup da eylem mağdurun çocuk yapma yeteneğinin kaybolmasına neden olmuşsa kısırlaştırma değil, TCK m. 87/2-c uyarınca SONUCU NEDENİYLE AĞIRLAŞMIŞ YARALAMA suçu oluşur; IV de yanlıştır. Üreme yeteneğine sahip herkes bu suçun mağduru olabilir (m. 101/2).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), yeni aldığı aracıyla Karadeniz Otoyolunda ilerlerken önündeki aracın yoldan çıktığını, refüje çarparak ters döndüğünü görür. Araca yaklaştığında sürücü (B)'nin yaralanmış olduğunu ve araçtan çıkmaya çalıştığını görür. Yolun işlek olduğunu ve başkasının yardım edeceği düşünen (A) yoluna devam eder ve (B), yardım ulaşmayınca iç kanamadan ölür.\nBuna göre (A)'nın ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(A)'nın ceza sorumluluğu bulunmamaktadır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yardım veya bildirim yükümlülüğünün yerine getirilmemesi suçundan sorumlu olur.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "İhmali davranışla işlenen kasten öldürme suçundan sorumlu olur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İcrai davranışla işlenen kasten öldürme suçundan sorumlu olur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Suçu bildirmeme suçundan sorumlu olur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 98/1'e göre yaşı, hastalığı veya yaralanması dolayısıyla ya da başka herhangi bir nedenle kendini idare edemeyecek durumda olan kimseye durum ve koşulların elverdiği ölçüde yardım etmeyen ya da durumu derhâl ilgili makamlara bildirmeyen kişi, yardım veya bildirim yükümlülüğünün yerine getirilmemesi suçunu işlemiş olur. Suç SEÇİMLİK HAREKETLİ olup hareket ögesini mağdura \"durum ve koşulların elverdiği ölçüde yardım etmemek\" ya da \"durumu derhâl ilgili makamlara bildirmemek\" oluşturur. Olayda (A) yardım etmediği gibi durumu ilgili makamlara da bildirmemiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ }
+]

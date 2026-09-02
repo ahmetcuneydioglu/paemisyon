@@ -1,0 +1,282 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Yakalanamaz.\nII. Tanık sıfatıyla dinlenemez.\nIII. Zorla getirilemez.\nIV. Dava açılamaz.\nMilletvekili hakkında yasama dokunulmazlığının devamı süresince yapılamayacak işlemler hakkında yukarıdakilerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Milletvekilleri hakkında yapılamayacak olan işlemler yakalama, sorguya çekme, tutuklama ve yargılamadır. Bunların dışındaki işlemlerin milletvekili hakkında yapılmasına engel yoktur. Bu nedenle milletvekiline karşı dava açılabilir, icra takibi yapılabilir, milletvekili tanık olarak dinlenebilir, milletvekilinin evinde, aracında veya üstünde arama yapılabilir. Ancak milletvekilinin tanık sıfatıyla yapılan davete uymaması durumunda, zorla getirilmesi mümkün değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), Konya'da tarım fuarına katılan Fransız vatandaşı mühendis (B)'yi öldürmek amacıyla onun yemeğine zehir koyar. (B), Fransa'ya döndüğünde zehrin etkisiyle rahatsızlanır ve ölür.\n5237 sayılı Türk Ceza Yasası'na göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Fransız mahkemelerinin (A) hakkında beraat kararı vermesi onun Türkiye'de yeniden yargılanmasına engel oluşturur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(A), Türkiye'de yeniden yargılanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "(B), Fransa'da öldüğü için suç Fransa'da işlenmiş sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(B), yabancı uyruklu olduğu için Türk mahkemelerinin yargılama yetkisi yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Fail (A) hakkında bu suçtan dolayı verilebilecek ceza, Fransız ceza yasasında öngörülen cezanın üst sınırından fazla olamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Hareketin kısmen veya tamamen Türkiye'de yapılması veya sonucun Türkiye'de gerçekleşmesi durumunda suç, Türkiye'de işlenmiş sayılır (TCK m. 8/1). Hareket ya da sonuçtan birinin Türkiye'de gerçekleşmesi, suçun Türkiye'de işlenmiş sayılması için yeterlidir. Fransız mahkemelerinin fail (A) hakkında mahkûmiyet kararı vermesi onun Türkiye'de yeniden yargılanmasına engel oluşturmaz. Türkiye'de işlediği suçtan dolayı yabancı ülkede hakkında hüküm verilmiş olan kimse, Türkiye'de yeniden yargılanır (TCK m. 9).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdaki suçlardan hangisi Türkiye'de işlenmiş sayılmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Japon karasularında Türk savaş gemisinde işlenen suç",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Türkiye'nin münhasır ekonomik bölgesinde, Libya bandıralı gemide işlenen suç",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Türk hava sahasında işlenen suç",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İtalya hava sahasında Türk savaş jetinde işlenen suç",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Türk karasularında Panama bandıralı yük gemisinde işlenen suç",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Suç, Türkiye'nin münhasır ekonomik bölgesinde tesis edilmiş sabit platformlarda veya bunlara karşı işlendiğinde Türkiye'de işlenmiş sayılır (TCK m. 8/2). Bunun dışında Türkiye'de işlenmiş sayılmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Türk Ceza Yasası'nın zaman bakımından uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Zaman bakımından uygulama açısından cezalar ile güvenlik tedbirleri aynı rejime tabidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yargılamanın yapıldığı zaman yürürlüğe giren yasa tarafından suç olmaktan çıkarılan eylem yönünden, lehe yasanın geçmişe uygulanması ilkesi geçerlidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Sanık lehine olan normun geçmişe uygulanması kuralı geçici yasalar yönünden geçerli değildir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Sanık lehine olan yasanın belirlenmesinde tüm cezai sonuçlar dikkate alınarak değerlendirme yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İnfaz rejimine ilişkin tüm kurallarda da lehe yasanın geçmişe uygulanması ilkesi geçerlidir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "İnfaz rejimine ilişkin yasalar bakımından kural olarak, derhal uygulanma ilkesi uygulanır. Bu bakımdan, cezanın infazı ile ilgili yasa, failin lehinde veya aleyhinde olduğuna bakılmadan, yürürlüğe girdiği andan itibaren hemen uygulanır. 2005 yılında 5377 sayılı Yasayla yapılan değişiklikle, hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrürle ilgili olanlar \"derhal uygulanma\" kuralının kapsamı dışında tutulmuştur. Başka bir anlatımla hapis cezasının ertelenmesi, koşullu salıverilme ve tekerrürle ilgili olan infaz rejimine ilişkin hükümler ancak sanığın lehine ise derhal uygulanabilecektir (TCK m. 7/3).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'nın yer bakımından uygulanma alanı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hareketin kısmen ya da tamamen Türkiye'de gerçekleşmesi durumunda suç Türkiye'de işlenmiş sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Sonucun Türkiye'de gerçekleşmesi durumunda suç Türkiye'de işlenmiş sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Türkiye Cumhuriyeti konsolosluk temsilciliklerinde işlenen suçlar Türkiye'de işlenmiş sayılır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Türk bayrağı taşıyan deniz ve hava savaş araçlarında işlenen suçlar bu araçlar hangi sularda bulunursa bulunsun Türkiye'de işlenmiş sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Türkiye'nin münhasır ekonomik bölgesindeki sabit platformlarda işlenmiş suç Türkiye'de işlenmiş sayılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Türk Ceza Yasası'nın 8. maddesine göre, Türkiye'de işlenen suçlar hakkında Türk yasaları uygulanır. Hareketin kısmen veya tamamen Türkiye'de işlenmesi veya sonucun Türkiye'de gerçekleşmesi durumunda suç, Türkiye'de işlenmiş sayılır. Suç; a) Türk kara ve hava sahaları ile Türk karasularında, b) Açık denizde ve bunun üzerindeki hava sahasında, Türk deniz ve hava araçlarında veya bu araçlarla, c) Türk deniz ve hava savaş araçlarında veya bu araçlarla, d) Türkiye'nin kıt'a sahanlığında veya münhasır ekonomik bölgesinde tesis edilmiş sabit platformlarda veya bunlara karşı işlendiğinde Türkiye'de işlenmiş sayılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "İtalya'da yaşayan Türk vatandaşları (F) ile (M), iş anlaşmazlığı nedeniyle tartışınca (F), (M)'yi öldürür ve Türkiye'ye kaçar.\nOlayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(F)'nin Türkiye'de yargılanabilmesi için bu suçtan dolayı İtalya'da hüküm verilmemiş olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Türkiye'de yargılama yapılırken Türk yasalarına göre verilecek ceza, İtalyan yasalarında öngörülen cezanın üst sınırından fazla olamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "(F)'nin Türkiye'de yargılanabilmesi için Türkiye'de kovuşturmanın mümkün olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(F) hakkında Türkiye'de yargılama yapılması Adalet Bakanının istemi gerekmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(F)'nin Türkiye'de yargılanabilmesi için (M)'nin yakınlarının ya da İtalyan hükümetinin şikâyeti aranmaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Olayda fail ve mağdur Türk vatandaşıdır ve fail olaydan sonra Türkiye'ye kaçmıştır. Yabancı bir ülkede suç işleyen fail hakkında, uyruğu bulunduğu devletin ceza yasasının uygulanmasını ifade eden ilkeye, faile göre kişisellik ilkesi denir. Vatandaş tarafından işlenen suçlarda kişisellik ilkesinin uygulanabilmesinin koşulları şunlardır (TCK m. 11): (I) Fail, Türk vatandaşı olmalı ve Türkiye'de bulunmalı, (II) suç, yabancı bir ülkede işlenmiş olup da 13. maddede yazılı suçlar dışında, Türk yasalarına göre hapis cezasını gerektiren ve Türkiye'de kovuşturulabilir bir suç olmalı ve (III) bu suçtan dolayı yabancı ülkede hüküm verilmemiş olmalıdır. Yabancı kanunun göz önünde bulundurulmasına ilişkin kural ise suçun Türk vatandaşına karşı işlenmesi durumunda uygulanmaz (TCK m. 19/2).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Türkiye'nin kıt'a sahanlığından geçen gemilerde işlenen suçlar\nII. Türkiye'nin münhasır ekonomik bölgesinde tesis edilmiş sabit platformlarda işlenen suçlar\nIII. Türk hava sahasında işlenen suçlar\nIV. Açık denizde Türk savaş gemisinde işlenen suçlar\nYukarıdakilerden hangileri 5237 sayılı Türk Ceza Yasası'nın yer bakımından uygulanma alanı içerisinde yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Suç, Türkiye'nin kıt'a sahanlığında veya münhasır ekonomik bölgesinde tesis edilmiş sabit platformlarda veya bunlara karşı işlendiğinde Türkiye'de işlenmiş sayılır (TCK m. 8/2). Burada dikkat edilecek husus, suçun Türkiye'de işlenmiş sayılabilmesi için tek başına kıt'a sahanlığı ya da münhasır ekonomik bölgede işlenmesi yeterli olmayıp suçun bu deniz alanlarında tesis edilmiş sabit platformlarda veya bunlara karşı işlenmesi gerekir. Zira kıta sahanlığı, karasularının aksine, ülkeden sayılmamaktadır. I numaralı öncül dışındaki seçeneklerde yer alan suçlar Türk Ceza Yasası'nın yer bakımından uygulama alanında yer alır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), tatil teklifini kabul etmeyen kız arkadaşı (B)'yi 14.02.2024 tarihinde kaçırarak Bursa Uludağ'daki bir dağ evine kapatır. Polis, bir görgü tanığının ihbarı üzerine 10.05.2024 tarihinde (B)'yi kurtarır. Yürütülen soruşturma sırasında (B)'nin kapalı tutulduğu yerde (C)'nin de zaman zaman nöbet tuttuğu anlaşılır.\nOlayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(A) yönünden kesintisiz bir suç söz konusudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(C), bu suça iştirak etmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suç 14.02.2024 tarihinde işlenmiştir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Dava zamanaşımı 10.05.2024 tarihinden itibaren işlemeye başlamıştır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(B)'nin tatil teklifini kabul edip etmemesi, suçun tamamlanması bakımından önemsizdir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "(A)'nın, teklifini kabul etmeyen kız arkadaşı (B)'yi kaçırarak Bursa'daki bir dağ evine kapatması kişiyi özgürlüğünden yoksun kılma suçunu oluşturur (TCK m. 109). (C) de nöbet tutup suçun icrasına katkı sağlayarak bu suça iştirak etmiştir. Bu suç kesintisiz bir suçtur. Hukuksal ihlalin hemen sona ermeyip, belli bir süre devam ettiği suçlara, kesintisiz (sürekli, mütemadi) suçlar denir. Kesintisiz suçlar, \"kesintinin gerçekleştiği\" yani, hukuksal ihlalin sona erdiği anda işlenmiş sayılır ve o anda yürürlükte olan yasa uygulanır. Dava zamanaşımı süresi, ani suçlarda suçun tamamlanmasından itibaren; kesintisiz suçlarda ise suçun sona ermesinden (kesintinin gerçekleştiği günden) itibaren başlar (TCK m. 66/6). Suç, (B)'nin özgürlüğünün kısıtlandığı 14.02.2024 tarihinde değil, kesintinin gerçekleştiği (hukuksal ihlalin sona erdiği) 10.05.2024 tarihinde işlenmiş sayılır ve dava zamanaşımı da bu tarihten itibaren işlemeye başlar (TCK m. 66/6).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

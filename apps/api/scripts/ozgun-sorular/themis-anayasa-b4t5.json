@@ -1,0 +1,492 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisinin toplanma ve tatili ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Her yıl Ekim ayının ilk iş günü kendiliğinden toplanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Çalışmalarına 15 günü geçmemek üzere ara verebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bir yasama yılında en çok 3 ay tatil yapılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Tatile karar vermeden önce Danışma Kurulunun görüşünün alınması zorunludur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Üyelerin beşte birinin TBMM Başkanından TBMM'yi olağanüstü toplantıya çağırmasını istemesi durumunda, TBMM Başkanının Meclisi toplantıya çağırması zorunludur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "B, C, D ve E seçenekleri doğrudur. A seçeneğinde verilen ifade yanlıştır; Anayasa'nın 93. maddesine göre TBMM her yıl Ekim ayının ilk günü (ilk iş günü değil) kendiliğinden toplanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre erken genel seçimle ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM'nin erken genel seçim kararı alması için Anayasa'da herhangi bir koşulun gerçekleşmesine ilişkin hüküm yoktur ancak bu kararın alınması için nitelikli çoğunluk öngörülmüştür.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Bir ilin temsilcisinin kalmaması erken genel seçim sebebidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bir seçim çevresinin temsilcisinin kalmaması erken genel seçim sebebidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM üye tam sayısının yüzde 5'lik bir kısmında boşalma olması erken genel seçim sebebidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bütçe kanunu teklifinin kabul edilmemesi erken genel seçim sebebidir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'ya göre, TBMM'nin erken genel seçim kararı alabilmesi için herhangi bir koşulun gerçekleşmesine gerek yoktur, yani herhangi bir sebebe bağlı değildir. Karar için en az üye tam sayısının beşte üçünün oyu gerekir. TBMM, dilediği zaman erken genel seçime karar verebilir. B, C, D seçenekleri erken genel seçim sebebi değil ara seçim sebebidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre ara seçim ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanının ilk turda seçilememesi sonrası yapılan seçimdir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Genel seçim dönemi bitmeden yapılan yerel seçimdir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanının parlamentoyu feshetmesi sonucu yapılan seçimdir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM üyeliklerinde belli sayıda boşalma olması durumunda yapılan seçimdir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "5 yılın dolmasını beklemeden yapılan seçimdir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 78. maddesinin üçüncü fıkrasına göre, TBMM üyeliklerinde boşalma olması durumunda, boşalan üyeliklerin doldurulması için ara seçim yapılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre seçimin üçüncü tura kalması durumunda TBMM Başkanı seçilebilmek için gereken çoğunluk aşağıdakilerden hangisinde doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM üye tam sayısının salt çoğunluğu",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Toplantıya katılanların salt çoğunluğu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM üye tam sayısının üçte birinin oyu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM üye tam sayısının dörtte üçünün oyu",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM üye tam sayısının dörtte birinin bir fazlasının oyu",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM Başkanının üçüncü turda seçilebilmesi için gereken çoğunluk, TBMM üye tam sayısının salt çoğunluğudur. Ayrıca Anayasa'ya göre, dördüncü turda en çok oyu alan Meclis Başkanı olarak seçilmiş olur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, milletvekili seçildikten sonra kasıtlı bir suçtan 2 yıl hapis cezası alan ve bu cezası kesinleşen bir milletvekilinin durumu ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM Genel Kurulu, milletvekilinin milletvekilliğini üye tam sayısının salt çoğunluğu ile düşürülebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Milletvekilinin milletvekilliği, kesin hükmün TBMM Genel Kuruluna bildirilmesiyle düşer.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "TBMM Genel Kurulu, Anayasa Komisyonunun önerisi üzerine milletvekilinin milletvekilliğini gizli oylama ile düşürebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Milletvekilinin milletvekilliği, başka bir işlem yapmaya gerek kalmadan, hükmün kesinleştiği anda kendiliğinden düşer.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletvekilinin milletvekilliğini Yüksek Seçim Kurulu iptal eder.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Milletvekilinin, seçildikten sonra cezai bir hüküm giymesi durumunda, bu husustaki kesinleşmiş mahkeme kararının TBMM Genel Kuruluna bildirilmesiyle milletvekilliği düşer. Bu durumda, üyeliğin sona ermesi için ayrıca bir TBMM kararına gerek yoktur. Seçildikten sonra alınan mahkûmiyet ile seçilmeye engel olan bir mahkûmiyetin seçildikten sonra ortaya çıkması durumlarını birbirine karıştırmamak gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. İstifa eden bir milletvekilinin milletvekilliği, TBMM Genel Kurulunun istifayı, toplantıya katılanların salt çoğunluğunun aldığı kararla kabul etmesi sonucunda düşer.\nII. Kızılay Yönetim Kurulu üyeliğinde ısrar eden bir milletvekilinin milletvekilliği, TBMM'nin gizli oyla aldığı kararla düşer.\nIII. Milletvekilinin, seçildikten sonra adam yaralamak suçundan 6 ay hapis cezası ile cezalandırılmış olması durumu, milletvekilliğinin düşmesine sebep olmaz.\n1982 Anayasası'na göre milletvekilliğinin düşmesi ile ilgili yukarıda verilen ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Milletvekilliğinin düşmesi ile ilgili yukarıda verilen ifadelerin tamamı doğrudur. İfadeler önemlidir, dikkatlice çalışmak gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Hakkında yargısal erginlik kararı verilen 15 yaşında ortaöğrenimini tamamlamış Türk vatandaşı A\nII. Yüksek lisans nedeniyle askerlik hizmetini tecil ettirmiş olan Türk vatandaşı B\nIII. 18 yaşını doldurmuş ilkokul mezunu Türk vatandaşı C\n1982 Anayasası'na göre yukarıda belirtilenlerden hangileri kesin olarak milletvekili seçilemez?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2017 yılı 6771 sayılı Yasa ile yapılan ve yürürlüğe giren Anayasa değişiklikleriyle, milletvekili seçilme yaşı on sekiz olarak belirlenmiş ve daha önce askerliği yapmış olma koşulu, “askerlikle ilişiği bulunmamak” şeklinde düzenlenmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre bütçe kanunuyla ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Teklif mali yılbaşından en az 75 gün önce TBMM'ye sunulur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Şekli kanundur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bütçe Kanun teklifinde gider artırıcı veya gelir azaltıcı öneriler, milletvekilleri tarafından sadece TBMM Genel Kurulundaki görüşmeler sırasında verilebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Süresinde yürürlüğe konulamaması halinde geçici bütçe kanunu çıkarılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Teklif, TBMM Bütçe Komisyonunda incelenir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM üyeleri, bütçe kanun tekliflerinin Genel Kurulda görüşülmesi sırasında, gider artırıcı veya gelirleri azaltıcı önerilerde bulunamazlar. Bu kuralın, bütçe komisyonu görüşmelerinde geçerli olmadığı fark edilmelidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na en son eklenen yasama kısıntısı aşağıdakilerden hangisidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kamu Görevlileri Hakem Kurulu kararları",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Spor federasyonları tahkim kurullarının kararları",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Hâkimler ve Savcılar Kurulu kararları",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yargıtay Başkanlık Kurulu kararları",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yüksek Askeri Şûranın ilişik kesme kararları",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kanunlarla veya anayasa yoluyla belli idari işlemlerin yargı denetimine kapatılmasına yasama kısıntısı adı verilir. 2011 yılında 1982 Anayasası'nın 59. maddesine, “Spor federasyonlarının spor faaliyetlerinin yönetimine ve disiplinine ilişkin kararlarına karşı ancak zorunlu tahkim yoluna başvurulabilir. Tahkim kurulu kararları kesin olup bu kararlara karşı hiçbir yargı merciine başvurulamaz” hükmü eklenmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre Türkiye Büyük Millet Meclisi komisyonlarının toplanma ve karar yeter sayıları aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Üye tam sayısının üçte biri çoğunluğu - Hazır bulunan üyelerin salt çoğunluğu",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Üye tam sayısının salt çoğunluğu - Hazır bulunan üyelerin salt çoğunluğu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Üye tam sayısının üçte iki çoğunluğu - Hazır bulunan üyelerin salt çoğunluğu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Üye tam sayısının üçte iki çoğunluğu - Hazır bulunan üyelerin üçte iki çoğunluğu",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Üye tam sayısının dörtte üç çoğunluğu - Hazır bulunan üyelerin salt çoğunluğu",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Komisyonlar, üye tam sayısının üçte biri ile toplanır ve hazır bulunan üyelerin salt çoğunluğu ile karar verir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Sayıştay Başkanını aşağıdakilerden hangisi seçer?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Türkiye Büyük Millet Meclisi",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Sayıştay",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hâkimler ve Savcılar Kurulu",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM Başkanı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Sayıştay Kanunu'na göre Sayıştay Başkanını, beş yıl için ve gizli oyla TBMM seçer. Sayıştay üyeleri de TBMM tarafından parlamento kararıyla seçilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Türkiye Büyük Millet Meclisine 1982 Anayasası'nda 2017 yılında yapılan değişiklikle tanınan yetkilerden biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kamu Başdenetçisini seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Anayasa Mahkemesine üye seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hâkimler ve Savcılar Kuruluna üye seçmek",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Savaş ilanına karar vermek",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TRT Genel Müdürünü atamak",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2017 yılı 6771 sayılı Yasa'yla yapılan ve yürürlüğe giren değişiklikle TBMM'ye, Hâkimler ve Savcılar Kuruluna üye seçme yetkisi tanınmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekillik görevi ile bağdaşır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kızılay Derneği yönetim kurulu üyeliği",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TCDD İşletmesi yönetim kurulu üyeliği",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Türk-İş Sendikasında yöneticilik",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İl genel meclisi üyeliği",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Mülteci Koruma Derneği üyeliği",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Milletvekillerine, her türlü dernek üyeliği serbesttir ve milletvekilleri kamu yararına olmayan derneklerde başkanlık dahi yapabilir. Bağdaşmayan, sadece kamu yararına derneğin ve sadece yönetim ve denetim kurulu üyeliğidir. Anayasa'ya göre TBMM üyeleri, Devlet ve diğer kamu tüzel kişilerinde ve bunlara bağlı kuruluşlarda, devletin veya diğer kamu tüzel kişilerinin doğrudan doğruya ya da dolaylı olarak katıldığı teşebbüs ve ortaklıklarda, özel gelir kaynakları ve özel imkânları kanunla sağlanmış kamu yararına çalışan derneklerin ve devletten yardım alan ve vergi muafiyeti olan vakıfların, kamu kurumu niteliğindeki meslek kuruluşlarının ve katıldıkları teşebbüs veya ortaklıkların yönetim ve denetim kurullarında görev alamazlar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. İstifa eden milletvekilinin milletvekilliğinin düşürülmesi\nII. Milletvekilinin kesin hüküm giymesi nedeniyle milletvekilliğinin düşmesi\nIII. Milletvekilliğiyle bağdaşmayan bir görev ya da hizmeti sürdürmekte ısrar eden milletvekilinin milletvekilliğinin düşürülmesi\nIV. TBMM çalışmalarına özürsüz veya izinsiz olarak 1 ay içinde toplam 5 birleşim günü katılmayan milletvekilinin milletvekilliğinin düşürülmesi\nV. Milletvekilinin kısıtlanması\n1982 Anayasası'na göre yukarıda verilen durumların hangilerine karşı Anayasa Mahkemesine başvurulamaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve V",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "III, IV ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Milletvekilinin, istifa, belli süre yapılan devamsızlık ile bağdaşmazlık ve yasak olan bir hizmeti sürdürmekte ısrar etmek nedenleriyle milletvekilliğinin sona ermesine TBMM karar vermektedir. İlgili milletvekili veya başka bir milletvekili bu nedenlerle sona erme halinde yedi gün içinde Anayasa Mahkemesine itiraz edebilir. Milletvekilinin, kesin hüküm ve kısıtlanma nedeniyle milletvekilliğinin sona ermesi ise, bu husustaki kesinleşmiş mahkeme kararının TBMM'ye bildirilmesi ile olmaktadır. Bu hallerde Anayasa Mahkemesine başvurmaya olanak yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

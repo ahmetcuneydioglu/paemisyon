@@ -1,0 +1,1052 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki kararlardan hangisi hakkında itiraz yasa yoluna başvurulamaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tutuklama kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gözlem altına alınma kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adli yargı içindeki mahkemeler bakımından verilen madde bakımından yetkisizlik (görevsizlik) kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Adli kontrole ilişkin karar",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Davanın reddi kararı",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.267 itiraz yolunu HÂKİM KARARLARI ile kanunun açıkça gösterdiği hâllerdeki mahkeme kararlarına özgüler; HÜKÜMLER bu yolun konusu değildir. CMK m.223/1'e göre beraat, ceza verilmesine yer olmadığı, mahkûmiyet, güvenlik tedbirine hükmedilmesi, DAVANIN REDDİ ve düşme kararı birer hükümdür; hükümlere karşı istinaf ya da temyiz yoluna gidilir. Tutuklama, adli kontrol ve gözlem altına alma kararları ise hâkim kararı niteliğindedir; adlî yargı içindeki görevsizlik kararlarına karşı itiraz da m.5/2'de açıkça öngörülmüştür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi mutlak bir bozma nedeni değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargıçlık görevini yapmaktan yasa gereğince yasaklanmış yargıcın hükme katılması",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Geçerli şüphe nedeniyle hakkında ret istemi öne sürülmüş olup da bu istem kabul olunduğu hâlde yargıcın hükme katılması veya bu istemin yasaya aykırı olarak reddedilip yargıcın hükme katılması",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mahkemenin yasaya aykırı olarak davaya bakmaya kendini görevli veya yetkili görmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cumhuriyet savcısı veya duruşmada yasa gereği mutlaka hazır bulunması gereken diğer kişilerin yokluğunda duruşma yapılması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İddianame veya iddianame yerine geçen belgenin duruşmada okunmaması",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.289, temyiz dilekçesinde gösterilmese bile hukuka KESİN aykırılık sayılan hâlleri dokuz bent hâlinde ve SINIRLI olarak sayar: mahkemenin kanuna uygun teşekkül etmemesi, yasaklı hâkimin hükme katılması, ret istemi kabul edildiği hâlde hâkimin hükme katılması, mahkemenin görev veya yetkiyi kanuna aykırı üstlenmesi, savcının veya duruşmada bulunması zorunlu kişilerin yokluğunda duruşma, açıklık kuralının ihlali, gerekçesizlik, savunma hakkının sınırlanması ve hükmün hukuka aykırı delile dayanması. İddianamenin duruşmada okunmaması bu listede yer almaz; m.191/3-b'de düzenlenen bir duruşma işlemidir ve ihlali ancak somut olarak savunma hakkını kısıtladığı ölçüde bozma nedeni olur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Bölge adliye mahkemesi Cumhuriyet başsavcılığının itiraz başvurusunun incelenmesi usulü hakkında\nI. Bölge adliye mahkemesi ceza dairelerinin kesin nitelikteki kararlarına karşı yapılan itirazları Ceza Daireleri Başkanlar Kurulu tarafından incelenir.\nII. Ceza Daireleri Başkanlar Kurulu itirazın kabulüne karar vermişse bu karar kesindir.\nIII. Ceza Daireleri Başkanlar Kurulu mümkün olan en kısa sürede yapacağı incelemede itirazı yerinde görürse kararı düzeltir; yerinde görmez ise dosyayı itirazı incelemek üzere Yargıtay'a gönderir.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.308/A'ya göre bölge adliye mahkemesi ceza dairelerinin kesin nitelikteki kararlarına karşı itiraz, ilk olarak KARARI VEREN DAİREYE yapılır; daire itirazı mümkün olan en kısa sürede inceler, yerinde görürse kararını düzeltir, görmezse dosyayı CEZA DAİRELERİ BAŞKANLAR KURULUNA gönderir. Yargıtay'a gönderme söz konusu değildir. Bu nedenle incelemeyi doğrudan Başkanlar Kuruluna bağlayan ve dosyanın Yargıtay'a gideceğini söyleyen ifadeler yanlıştır. Buna karşılık madde, \"Kurulun verdiği kararlar kesindir\" diyerek Başkanlar Kurulu kararlarına karşı başkaca bir başvuru yolu bırakmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre istinaf yasa yolu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İstinaf süresi 2 hafta olup süre hükmün tefhim veya tebliğ edildiği tarihten itibaren başlar.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Ağır ceza mahkemelerinde bulunan Cumhuriyet savcıları, mahkemelerinin yargı çevresi içerisindeki asliye mahkemelerinin hükümlerine karşı, kararın o yer Cumhuriyet başsavcılığına geliş tarihinden itibaren 2 hafta içinde istinaf yoluna başvurabilirler.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sanık, yokluğunda aleyhine verilen hükümlere karşı eski hâle getirme isteminde bulunabilir. Eski hâle getirme süresi içinde de istinaf süresi işler.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İstinaf başvurusu, hükmü veren mahkemeye bir dilekçe verilmesi veya zabıt kâtibine bir beyanda bulunulması suretiyle yapılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sanık ve katılan sıfatını almış olanlar ile katılma isteği karara bağlanmamış, reddedilmiş veya katılan sıfatını alabilecek surette suçtan zarar görmüş bulunanların dilekçe veya beyanında, başvuruya ilişkin nedenlerin gösterilmemesi inceleme yapılmasına engel olmaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.273/1 istinaf süresini, hükmün GEREKÇESİYLE BİRLİKTE TEBLİĞ EDİLDİĞİ tarihten itibaren iki hafta olarak belirler; sürenin tefhimle başladığını söyleyen ifade metne aykırıdır. (Tefhimden başlatan eski düzenleme 7499 sayılı Kanunla yürürlükten kaldırılmıştır.) Diğer ifadeler maddenin karşılığıdır: ağır ceza Cumhuriyet savcıları, yargı çevrelerindeki asliye mahkemesi hükümlerine karşı kararın başsavcılığa geliş tarihinden itibaren iki hafta içinde başvurabilir (f.3); başvuru dilekçeyle veya zabıt kâtibine beyanla yapılır (f.1); sanık ve katılan sıfatını taşıyanlar bakımından başvuru nedenlerinin gösterilmemesi incelemeye engel değildir (f.4). Eski hâle getirme süresi içinde istinaf süresinin işlemeye devam etmesi ise m.274/1'de düzenlenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yargıç veya mahkeme kararına itiraz, ilgililerin kararı öğrendiği günden itibaren hangi süre içerisinde yapılmalıdır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 hafta",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "2 hafta",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.268/1, kanunun ayrıca hüküm koymadığı hâllerde itiraz süresini, ilgililerin kararı ÖĞRENDİĞİ günden itibaren İKİ HAFTA olarak belirler. Süre, kararı veren mercie verilecek bir dilekçeyle ya da tutanağa geçirilmek koşuluyla zabıt kâtibine beyanda bulunmak suretiyle kullanılır. Bu süre 7499 sayılı Kanun öncesinde yedi gündü; eski süreyi esas alan çözümler artık geçersizdir. Tutuklu sanık bakımından m.263'teki kolaylık saklıdır. Not: kararına itiraz edilen hâkim veya mahkemenin, itirazı yerinde görmemesi hâlinde dosyayı mercie göndermek için sahip olduğu en çok ÜÇ GÜNLÜK süre (m.268/2) başvuru süresiyle karıştırılmamalıdır.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yargılamanın yenilenmesi yasa yolu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mahkeme kesinleşen hükümdeki hukuka aykırılıklar için istem üzerine veya resen yargılamanın yenilenmesi yoluna başvurabilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yargılamanın yenilenmesini; savcı, hükümlü, hükümlü ölmüşse, eşi, altsoyu ile üstsoyu ve kardeşleri isteyebilir. Bu kişilerin yokluğu durumunda, Adalet Bakanı da yargılamanın yenilenmesi isteminde bulunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hükümlünün kendi aleyhine yargılamanın yenilenmesini isteme hakkı yoktur.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Beraat eden sanık kendi lehine veya aleyhine yargılamanın yenilenmesini isteyemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cumhuriyet savcısı hem lehe hem de aleyhte yenileme isteminde bulunabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesi bir İSTEME bağlıdır; mahkeme kesinleşmiş hükümdeki aykırılıkları resen ele alamaz. CMK m.318/1 açıkça \"Yargılamanın yenilenmesi istemi, hükmü veren mahkemeye SUNULUR\" diyerek incelemenin bir başvuruyla harekete geçeceğini gösterir. Diğer ifadeler kanuna uygundur: hükmün infaz edilmiş olması veya hükümlünün ölümü istemi engellemez, ölenin eşi, üstsoyu, altsoyu ve kardeşleri istemde bulunabilir, bunların yokluğunda Adalet Bakanı da başvurabilir (m.313). Cumhuriyet savcısı hem hükümlü lehine (m.311) hem de aleyhine (m.314) yenileme isteyebilirken, hükümlünün kendi aleyhine böyle bir istem hakkı yoktur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Sanık (S), taksirle öldürme suçundan mahkûm olmuştur. Cumhuriyet savcısı (C) olayın taksirle değil, kasten öldürme olduğu gerekçesiyle hükme karşı istinaf yoluna başvurmuştur.\nBuna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İlk derece mahkemesince verilen ceza sanık için kazanılmış hak oluşturur, bu nedenle Cumhuriyet savcısının istinaf istemi reddedilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cumhuriyet savcısı sanık aleyhine istinaf yoluna gidemez, bu nedenle istemi reddedilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cumhuriyet savcısı istinaf yoluna gidebilir ancak sonuç ne olursa olsun, sanık hakkında ilk verilenden daha ağır bir ceza verilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İstinaf yoluna sanık lehine başvurulmadığı için yeniden verilen hüküm, önceki hükümle belirlenmiş olan cezadan daha ağır olabilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "İlk derece mahkemesinin kararında usule veya esasa ilişkin herhangi bir hukuka aykırılığın bulunmadığını, kanıtlarda veya işlemlerde herhangi bir eksiklik olmadığını, ispat bakımından değerlendirmenin yerinde olduğunu saptadığında istinaf başvurusunun esastan kabulüne karar verilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.283/1 cezanın ağırlaştırılması yasağını yalnızca \"istinaf yoluna YALNIZ SANIK LEHİNE başvurulmuşsa\" işletir. Olayda başvuruyu Cumhuriyet savcısı sanık ALEYHİNE yapmıştır; bu durumda yasak devreye girmez ve bölge adliye mahkemesi fiili kasten öldürme olarak nitelendirirse önceki cezadan daha ağır bir hükme varabilir. Cumhuriyet savcısı m.260 uyarınca hem lehe hem aleyhe kanun yoluna başvurabildiğinden istemin reddi de söz konusu değildir; ilk derece mahkemesinin belirlediği ceza, aleyhe başvuru varken kazanılmış hak oluşturmaz. Ayrıca m.280/1-a'ya göre hukuka aykırılık ve eksiklik bulunmadığında verilecek karar istinaf başvurusunun ESASTAN REDDİDİR, kabulü değil.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "İtiraz merciinin kararlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İtiraz hakkında kural olarak duruşma yapılmaksızın karar verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Merci itirazı yerinde görürse, itiraz konusu hakkında da karar verir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Karar en geç 5 gün içinde verilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Merciin kararı kesindir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İlk defa merci tarafından verilen tutuklama kararına itiraz edilebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.271/3 itiraz mercinin kararını \"mümkün olan EN KISA SÜREDE\" vereceğini söyler; kanun bu konuda beş gün gibi kesin bir süre öngörmemiştir. Maddenin kurduğu düzen şudur: itiraz hakkında kural olarak duruşma yapılmaksızın karar verilir, ancak gerekli görülürse önce Cumhuriyet savcısı, sonra müdafi veya vekil dinlenir (f.1); merci itirazı yerinde görürse aynı zamanda itiraz konusu hakkında da karar verir (f.2); mercinin itiraz üzerine verdiği kararlar kesindir, bu kesinliğin tek istisnası İLK DEFA MERCİ TARAFINDAN verilen tutuklama kararlarıdır ve bunlara karşı itiraz yolu açıktır (f.4).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdaki mahkeme kararlarından hangisi hakkında doğrudan temyiz yoluna başvurulabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargılamanın yenilenmesi isteminin kabule değer görülmeyerek reddi kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mahkemenin, suçlunun geri verilmesi istemine ilişkin kararı",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hükmün açıklanmasının geri bırakılması kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Madde bakımından yetkisizlik kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Durma kararı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Temyiz, kural olarak BÖLGE ADLİYE MAHKEMESİ ceza dairelerinin bozma dışındaki hükümlerine karşı açık bir kanun yoludur (CMK m.286/1); ilk derece mahkemesi kararlarına karşı doğrudan temyiz ancak kanunun açıkça öngördüğü hâllerde mümkündür. 6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu m.18/4, ağır ceza mahkemesinin SUÇLUNUN GERİ VERİLMESİ istemi hakkında verdiği karara karşı doğrudan temyiz yolunu açıkça tanır. Diğer seçenekler bu niteliği taşımaz: yargılamanın yenilenmesi isteminin kabule değer görülmeyerek reddi, madde bakımından yetkisizlik ve durma kararları itiraza tabidir; hükmün açıklanmasının geri bırakılması kararına karşı da m.231/12 uyarınca itiraz yoluna başvurulur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Cezanın ağırlaştırılması yasağı hakkında,\nI. Yasa yoluna yalnız sanık lehine başvurulmuşsa işlerlik kazanır.\nII. Yeniden verilen hükümde, önceki hükümle belirlenmiş olan cezadan daha ağır bir ceza verilmesini önler.\nIII. Sonuç ceza ve suçun niteliği yönünden etki doğurur.\nifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Cezanın ağırlaştırılması yasağı, kanun yoluna YALNIZ SANIK LEHİNE başvurulduğunda işlerlik kazanır (CMK m.283/1) ve aynı ilke bozmadan sonraki yargılama için m.307/4'te tekrarlanır. Yasağın koruduğu şey SONUÇ CEZADIR: yeniden verilen hüküm, önceki hükümle belirlenmiş cezadan daha ağır olamaz. Buna karşılık yasak, fiilin hukuki NİTELENDİRİLMESİNİ dondurmaz; mahkeme suçu farklı ve daha ağır bir suç tipi olarak niteleyebilir, yeter ki hükmedilen ceza önceki cezayı aşmasın. Bu nedenle yasağın suçun niteliği yönünden de etki doğurduğunu söyleyen ifade yanlıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Ağır ceza mahkemesinde kasten öldürme suçundan yargılanan (A), susma hakkını kullanmak isteğini belirtmesine karşın mahkeme başkanı (B), (A)'nın böyle bir hakka sahip olmadığı gerekçesiyle istemini reddetmiştir. Yapılan yargılama sonucunda mahkeme, (A) hakkında beraat kararı vermesine karşın Cumhuriyet savcısı (C), istinaf yoluna başvurmayı düşünmektedir.\nOlayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Savunma hakkı kısıtlandığı için kesin hukuka aykırılık nedeni vardır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(C)'nin istinaf yoluna başvurma hakkı bulunmamaktadır.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Susma hakkının kullanılması mahkemenin takdirinde olan bir yetki olduğu için (C) istinaf yoluna başvursa bile etkili bir sonuç alamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Susma hakkının kullanılması mahkeme başkanın takdirinde olan bir yetki olduğu için (C) istinaf yoluna başvursa bile etkili bir sonuç alamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sanığın yararına olan hukuk kurallarına aykırılık söz konusu olduğu için Cumhuriyet savcısı istinaf yoluna başvurabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.290/1 açık bir sınır çizer: sanığın yararına olan hukuk kurallarına aykırılık, sanık ALEYHİNE hükmün bozdurulması için Cumhuriyet savcısına bir hak vermez. Olayda ihlal edilen susma hakkı (m.147/1-e) münhasıran sanığın yararınadır; mahkeme başkanının bu hakkı tanımaması yalnızca sanık lehine bir kanun yolu nedeni oluşturur. Kaldı ki sanık hakkında zaten beraat kararı verilmiştir ve savunma hakkının kısıtlanması m.289/1-h uyarınca kesin hukuka aykırılık sayılsa bile, bu aykırılık savcıya sanık aleyhine başvurma yetkisi vermez. Susma hakkının kullanılması mahkemenin takdirine bırakılmış bir yetki de değildir; kanunla tanınmış bir haktır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi Yargıtay'ın verdiği bozma kararından hükmü temyiz etmeyen sanıkların yararlanabilmesi için gereken koşullar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Birden çok sanığın aynı ya da farklı mahkemelerce aynı eylemden dolayı mahkûm edilmesi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sanıkların eyleminde bağlantı bulunması",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hükmün Cumhuriyet savcısı, katılan veya sanıklardan bir veya birkaçınca ve sanıkların tümünü kapsamayacak şekilde temyiz edilmiş olması",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hükmün cezanın belirlenmesinde hukuka aykırılık nedeniyle sanık yararına bozulması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bozma kararının hükmü temyiz etmeyen veya kendileriyle ilgili temyiz bulunmayan sanıklara da uygulanma olanağına sahip olması",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.306, bozmadan yararlanmayı (sirayet) iki koşula bağlar: hüküm SANIK LEHİNE bozulmuş olmalı ve bozma nedeninin, temyiz isteminde bulunmamış diğer sanıklara da UYGULANMA OLANAĞI bulunmalıdır. Bu iki koşul gerçekleştiğinde, hükmü temyiz etmemiş sanıklar da temyiz etmiş gibi bozmadan yararlanır; amaç, aynı hukuka aykırılığın bazı sanıklar bakımından sürmesini önlemektir. Sirayet için sanıkların AYNI MAHKEMECE ve aynı kararla mahkûm edilmiş olması aranmaz; kanun böyle bir sınır koymamıştır. Bu nedenle sanıkların aynı ya da farklı mahkemelerce mahkûm edilmiş olmasını koşul sayan ifade kanundan çıkarılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre ceza hükmü aleyhine Avrupa İnsan Hakları Mahkemesi'ne yapılan başvuru hakkında dostane çözüm ya da tek taraflı deklarasyon sonucunda düşme kararı verilmesi durumunda, yargılamanın yenilenmesi hangi süre içerisinde istenebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren 3 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren 1 yıl",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Avrupa İnsan Hakları Mahkemesi kararının verildiği tarihten itibaren 1 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren 10 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Süreye tabi değildir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.311/1-f, Avrupa İnsan Hakları Sözleşmesinin ihlali suretiyle verildiği AİHM'in kesinleşmiş kararıyla saptanan ceza hükümleri yanında, ceza hükmü aleyhine AİHM'e yapılan başvuru hakkında DOSTANE ÇÖZÜM ya da TEK TARAFLI DEKLARASYON sonucunda düşme kararı verilmesi hâlini de yargılamanın yenilenmesi nedeni sayar. Aynı bendin son cümlesi süreyi açıkça düzenler: bu hâlde yargılamanın yenilenmesi, AİHM kararının KESİNLEŞTİĞİ tarihten itibaren BİR YIL içinde istenebilir. Sürenin başlangıcı kararın verildiği tarih değil kesinleştiği tarihtir; yenileme istemi bu bakımdan süreye tabi olmayan diğer yenileme nedenlerinden ayrılır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yargıtay Cumhuriyet Başsavcısının itiraz yetkisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Başsavcının resen veya istem üzerine başvurduğu yasa yoludur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İtiraz yasa yolu, ceza dairesinin kararında hukuka aykırılık yapılmış olduğu nedenine dayanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Başsavcının itiraz yetkisi, süreye tabi değildir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "İtiraz, önce kararı veren daire tarafından incelenir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Olağanüstü bir yasa yoludur.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.308/1, Yargıtay Cumhuriyet Başsavcısının itirazını kural olarak bir SÜREYE bağlar: Yargıtay ceza dairelerinin kararlarına karşı, dosyanın kendisine teslim edildiği tarihten itibaren belirli bir süre içinde Ceza Genel Kuruluna itiraz edilebilir. Yalnızca SANIĞIN LEHİNE yapılan itirazda süre aranmaz. Bu nedenle itiraz yetkisinin hiçbir biçimde süreye tabi olmadığını söyleyen ifade yanlıştır. Yolun diğer nitelikleri şöyledir: başsavcı resen veya istem üzerine başvurur, dayanağı dairenin kararındaki hukuka aykırılıktır, itiraz üzerine dosya önce KARARINA İTİRAZ EDİLEN DAİREYE gönderilir ve daire yerinde görürse kararını düzeltir (f.2-3); kesinleşmiş bir karara yönelik olduğu için olağanüstü bir kanun yoludur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdaki mahkeme kararlarından hangisine itiraz edilemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargıcın ret isteminin kabul edilmemesine ilişkin karar",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yargı yeri değişikliğine yol açan madde bakımından yetkisizlik (görevsizlik) kararı",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Eski hâle getirme isteminin reddine ilişkin karar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tanıklıktan ve yeminden nedensiz çekinmeden dolayı uygulanan disiplin hapsi kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Gözlem altına alınma kararı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İtiraz yolu, hâkim kararları ile kanunun gösterdiği hâllerde mahkeme kararlarına karşı açıktır (CMK m.267). Görevsizlik kararlarında ikili bir ayrım vardır: CMK m.5/2 uyarınca ADLÎ YARGI İÇERİSİNDEKİ mahkemeler bakımından verilen görevsizlik kararlarına karşı itiraz yoluna gidilebilir. Buna karşılık yargı yeri değişikliğine yol açan, yani dosyayı adlî yargı dışına taşıyan görevsizlik kararı m.223 anlamında bir hükümdür ve itiraza değil istinafa tabidir. Diğer seçeneklerdeki kararlar itiraz edilebilir niteliktedir: hâkimin reddi isteminin kabul edilmemesi (m.27/1), eski hâle getirme isteminin reddi (m.42/1), tanıklıktan çekinme nedeniyle disiplin hapsi (m.60/1) ve gözlem altına alma (m.74/4).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Hakaret suçunun temel şekli\nII. Halkı yanıltıcı bilgiyi alenen yayma\nIII. Halkı kin ve düşmanlığa tahrik veya aşağılama\n5271 sayılı Ceza Muhakemesi Yasası'na göre bölge adliye mahkemesi ceza daireleri tarafından yukarıdaki suçlar nedeniyle verilen kararlardan hangileri kesinlik sınırı içinde kalsa bile temyiz edilebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Temyizin kesinlik sınırını düzenleyen CMK m.286/2, beş yıl veya daha az hapis cezalarına ilişkin bazı bölge adliye mahkemesi kararlarını temyiz dışında bırakır. Ancak aynı maddenin ÜÇÜNCÜ FIKRASI bu sınırlamaya bir istisna getirerek, ikinci fıkrada sayılan sınırlar içinde kalsa bile bazı suçlara ilişkin kararların temyiz edilebileceğini belirtir. Bu istisna kataloğunda halkı kin ve düşmanlığa tahrik veya aşağılama (TCK m.216), halkı yanıltıcı bilgiyi alenen yayma (TCK m.217/A) gibi kamu barışına karşı suçlar ile temel hak ve özgürlükleri yakından ilgilendiren suçlar yer alır. HAKARET suçunun temel şekli bu katalogda bulunmadığından, kesinlik sınırı içinde kalan hakaret kararları temyiz edilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi yargılama gideri sayılmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Harçlar",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tarifesine göre ödenmesi gereken avukatlık ücretleri",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Türkçe bilmeyen ya da engelli olan şüpheli, sanık, mağdur veya tanık için görevlendirilen çevirmen giderleri",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Soruşturma ve kovuşturma evrelerinde yargılamanın yürütülmesi amacıyla Devlet Hazinesinden yapılan her türlü harcamalar",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Taraflarca yapılan ödemeler",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.324/1 yargılama giderlerini sayar: harçlar, tarifesine göre ödenmesi gereken avukatlık ücretleri, soruşturma ve kovuşturma evrelerinde yargılamanın yürütülmesi amacıyla Devlet Hazinesinden yapılan her türlü harcamalar ve taraflarca yapılan ödemeler. Aynı maddenin BEŞİNCİ FIKRASI ise bir istisna koyar: Türkçe bilmeyen ya da engelli olan şüpheli, sanık, mağdur veya tanık için görevlendirilen çevirmenin giderleri YARGILAMA GİDERİ SAYILMAZ ve bu giderler Devlet Hazinesince karşılanır. Kuralın amacı adil yargılanma hakkının bir gereği olan çeviri hizmetinin maliyetini ilgiliye yüklememektir; bu yüzden mahkûmiyet hâlinde bile bu gider sanığa çıkarılamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Hakkındaki hapis cezası ertelenen sanık (B) yargılama giderlerinden sorumlu tutulamaz.\nII. Hüküm kesinleşmeden ölen sanık (A)'nın mirasçıları giderleri ödemekle yükümlü değildir.\nIII. Suç ortağı olarak birlikte suç işleyip mahkûm edilen (C) ve (D)'ye, neden oldukları yargılama giderleri ayrı ayrı yükletilir.\nYargılama giderlerinden sorumlulukla ilgili olarak yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.325/1 kural olarak cezaya veya güvenlik tedbirine mahkûmiyet hâlinde BÜTÜN yargılama giderlerini sanığa yükler; ikinci fıkra bu kuralı hükmün açıklanmasının geri bırakılması ve CEZANIN ERTELENMESİ hâllerinde de aynen uygulatır. Erteleme yalnızca cezanın infaz biçimine ilişkindir ve gider sorumluluğunu ortadan kaldırmaz; bu nedenle cezası ertelenen sanığın giderlerden sorumlu tutulamayacağını söyleyen ifade yanlıştır. Diğer iki ifade kanuna uygundur: hüküm kesinleşmeden sanık ölürse mirasçılar giderleri ödemekle yükümlü tutulmaz (m.325/4) ve iştirak hâlinde işlenmiş bir suçtan mahkûm olanlara sebebiyet verdikleri giderler AYRI AYRI yükletilir (m.326/2).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yargılama giderleri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Karşılıklı hakaret durumlarında taraflardan biri veya her ikisi hakkında ceza verilmesine yer olmadığı kararının verilmesi; bunlardan birinin veya her ikisinin giderleri karşılamaya mahkûm edilmelerine engel olmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suç uydurup iftirada bulunduğu sabit olan kimse, bu nedenle yapılmış giderleri ödemeye mahkûm edilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Düşme kararı verilmesi durumunda kendi kusurundan doğan yargılama giderleri sanığa yüklenir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yasa yollarından birine başvuran taraf, bu başvurusunu geri almasından veya başvurunun reddolunmasından ileri gelen giderleri öder.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yasa yoluna başvuranın istemi kısmen kabul olunmuş ise mahkeme uygun gördüğü şekilde giderleri bölüştürür.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.327/1, yalnızca hakkında BERAAT veya CEZA VERİLMESİNE YER OLMADIĞI kararı verilen kişinin sadece kendi kusurundan ileri gelen giderleri ödeyeceğini söyler; DÜŞME kararı bu hükmün kapsamında değildir ve kanun düşme hâli için böyle bir sınırlama getirmemiştir. Bu nedenle düşme kararında sanığa yalnız kendi kusurundan doğan giderlerin yükleneceğini söyleyen ifade metinden çıkarılamaz. Diğer ifadeler doğrudan kanunun karşılığıdır: karşılıklı hakarette ceza verilmesine yer olmadığı kararı, tarafların giderleri karşılamaya mahkûm edilmesine engel değildir (m.328); suç uydurup iftirada bulunduğu sabit olan kimse bu nedenle yapılan giderleri öder (m.329); kanun yoluna başvuran taraf başvurusunu geri alması veya reddi hâlinde doğan giderleri öder, istemi kısmen kabul edilmişse mahkeme giderleri bölüştürür (m.330/1-2).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yargılama giderleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suç ortaklığı varsa birlikte suç işlediği için mahkûm edilmiş olan faillere neden oldukları yargılama giderleri ayrı ayrı yükletilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hakkında beraat kararı verilen kişi, hiçbir giderden sorumlu tutulmaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Karşılıklı hakaret durumlarında taraflardan biri veya her ikisi hakkında ceza verilmesine yer olmadığı kararının verilmesi; bunlardan birinin veya her ikisinin giderleri karşılamaya mahkûm edilmelerine engel olmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Suç uydurup iftirada bulunduğu sabit olan kimse, bu nedenle yapılmış giderleri ödemeye mahkûm edilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Eski hâle getirme isteminden doğan giderler, hasım tarafının esassız karşı koymasından ortaya çıkmış değilse, bu istemi ileri sürene yükletilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Beraat eden kişi gider sorumluluğundan tamamen kurtulmaz. CMK m.327/1'e göre hakkında beraat veya ceza verilmesine yer olmadığına karar verilen kişi, SADECE KENDİ KUSURUNDAN ileri gelen giderleri ödemeye mahkûm edilir; örneğin gereksiz yere yaptırdığı bir işlemin masrafı ona yüklenebilir. İkinci fıkra ise bu kişinin önceden ödemek zorunda kaldığı giderlerin Devlet Hazinesince üstlenileceğini söyler. Bu nedenle beraat edenin hiçbir giderden sorumlu tutulamayacağını söyleyen ifade yanlıştır. Diğer ifadeler kanuna uygundur: iştirak hâlinde mahkûm olanlara giderler ayrı ayrı yükletilir (m.326/2), karşılıklı hakaret (m.328) ve suç uydurma-iftira (m.329) hâlleri ile eski hâle getirme isteminden doğan giderler (m.330/4) ayrıca düzenlenmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yargılama giderleri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargılama giderlerinin miktarı ile iki taraftan birinin diğerine ödemesi gereken paranın miktarını mahkeme başkanı veya yargıç belirler.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hüküm ve kararda yargılama giderlerinin kimlere yükletileceği gösterilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Devlete ait yargılama giderlerine ilişkin kararlar, Harçlar Yasası hükümlerine göre; kişisel haklara ilişkin kararlar, İcra ve İflas Yasası hükümlerine göre yerine getirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Türkçe bilmeyen ya da engelli olan şüpheli, sanık, mağdur veya tanık için görevlendirilen çevirmen giderleri, yargılama gideri sayılmaz ve bu giderler Devlet Hazinesince karşılanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Hükmün açıklanmasının geri bırakılması durumunda sanığa ancak kendi kusuruyla neden olduğu yargılama giderleri yüklenebilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.325/2, hükmün açıklanmasının geri bırakılması ve cezanın ertelenmesi hâllerinde birinci fıkra hükmünün uygulanacağını söyler; birinci fıkra ise mahkûmiyet hâlinde BÜTÜN yargılama giderlerinin sanığa yükleneceğini öngörür. Dolayısıyla hükmün açıklanmasının geri bırakılmasında sanığa yalnızca kendi kusuruyla neden olduğu giderlerin yüklenebileceğini söyleyen ifade yanlıştır; \"kendi kusurundan ileri gelen giderler\" ölçütü m.327'de yalnızca beraat ve ceza verilmesine yer olmadığı kararları için geçerlidir. Diğer ifadeler m.324'ün karşılığıdır: giderlerin ve taraflardan birinin diğerine ödeyeceği paranın miktarını mahkeme başkanı veya hâkim belirler, hüküm ve kararda giderlerin kimlere yükletileceği gösterilir, Devlete ait giderler Harçlar Kanununa, kişisel haklara ilişkin kararlar İcra ve İflâs Kanununa göre yerine getirilir ve çevirmen giderleri yargılama gideri sayılmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Hırsızlık, mala zarar verme ve dolandırıcılık suçlarından dolayı hakkında kovuşturma yapılmış olan (A), hırsızlık suçundan mahkûm olmuş ve diğer iki suçtan dolayı beraat etmiş ise mala zarar verme ve dolandırıcılık suçlarının duruşmasının gerektirdiği giderleri ödemekle yükümlü değildir.\nII. Hakkında ceza verilmesine yer olmadığı kararı verilen (B), hiçbir giderden sorumlu tutulmaz.\nIII. Karşılıklı hakaret eden (C) ve (D)'nin her ikisi hakkında ceza verilmesine yer olmadığı kararının verilmesi, bunların giderleri karşılamaya mahkûm edilmelerine engel olmaz.\nYargılama giderlerinden sorumlulukla ilgili olarak yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Birinci ifade CMK m.326/1'in karşılığıdır: birden çok suçtan kovuşturulan kişi bunların bir kısmından mahkûm olmuşsa, BERAAT ETTİĞİ suçların duruşmasının gerektirdiği giderleri ödemekle yükümlü değildir. Üçüncü ifade m.328'in karşılığıdır: karşılıklı hakarette taraflardan biri veya her ikisi hakkında ceza verilmesine yer olmadığı kararı verilmesi, bunların giderleri karşılamaya mahkûm edilmelerine engel olmaz. İkinci ifade ise yanlıştır; m.327/1 hakkında ceza verilmesine yer olmadığı kararı verilen kişiyi giderlerden bütünüyle muaf tutmaz, yalnızca KENDİ KUSURUNDAN ileri gelen giderlerle sınırlı bir sorumluluk öngörür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi seri muhakeme usulünün uygulanabileceği suçlar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hakaret",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Genel güvenliğin kasten tehlikeye sokulması suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mühür bozma suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gürültüye neden olma suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Resmî belgenin düzenlenmesinde yalan beyan suçu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seri muhakeme usulü, CMK m.250/1'de TAHDİDİ olarak sayılan suçlarla sınırlıdır; listede yer almayan bir suç bakımından bu usul uygulanamaz. Kanun bu kapsama Türk Ceza Kanunundan hakkı olmayan yere tecavüz, genel güvenliğin kasten tehlikeye sokulması, trafik güvenliğini tehlikeye sokma, gürültüye neden olma, parada sahtecilik, mühür bozma, resmî belgenin düzenlenmesinde yalan beyan, kumar oynanması için yer ve imkân sağlama ile başkasına ait kimlik veya kimlik bilgilerinin kullanılması suçlarını; ayrıca 6136 sayılı Kanunun 13. maddesindeki bazı fiilleri almıştır. HAKARET suçu bu katalogda yer almaz; şikâyete bağlı olması ve uzlaştırma kapsamında bulunması onu seri muhakemeye tabi kılmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Fail ve mağdurun yasal koşullar çerçevesinde anlaşması nedeniyle fail ile devlet arasındaki ceza ilişkisinin askıya alınmasını veya tümüyle kaldırılmasını sağlayan ceza hukuku kurumuna ne ad verilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Erteleme",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hükmün açıklanmasının geri bırakılması",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Uzlaşma",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Islah",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Eski hâle getirme",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaşma (uzlaştırma), CMK m.253 ve devamında düzenlenen, şüpheli veya sanık ile mağdur ya da suçtan zarar görenin kanunda belirlenen koşullar çerçevesinde anlaşmasına dayanan bir kurumdur. Anlaşmanın gerçekleşmesi, soruşturma evresinde kovuşturmaya yer olmadığı kararı verilmesine, kovuşturma evresinde ise davanın düşmesine yol açar; böylece fail ile Devlet arasındaki ceza ilişkisi askıya alınır ya da tümüyle ortadan kalkar. Erteleme ve hükmün açıklanmasının geri bırakılması ise mağdurun rızasına değil mahkemenin değerlendirmesine dayanan, cezanın infazına ilişkin kurumlardır; ıslah ve eski hâle getirme de tarafların uzlaşmasıyla ilgisi bulunmayan usul kurumlarıdır.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Yaş küçüklüğü\nII. Sağır ve dilsizlik\nIII. Akıl hastalığı\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdaki durumlardan hangilerinde seri muhakeme usulü uygulanmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.250/12, seri muhakeme usulünün uygulanmayacağı kişisel hâlleri sayar. Hükmün YÜRÜRLÜKTEKİ metnine göre bu usul YAŞ KÜÇÜKLÜĞÜ ve AKIL HASTALIĞI hâllerinde uygulanmaz. Fıkrada başlangıçta yer alan \"sağır ve dilsizlik\" ibaresi Anayasa Mahkemesinin 5/11/2024 tarihli kararıyla İPTAL EDİLMİŞTİR; bu nedenle sağır ve dilsiz şüpheliler bakımından seri muhakeme usulünün uygulanmasına artık kanuni bir engel yoktur. Sorunun ölçtüğü nokta tam olarak bu güncelliktir: iptal öncesi kaynaklara dayanan çözümler üç hâli birlikte sayarak yanlış sonuca varır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Mağdur\nII. Suçtan zarar gören\nIII. Malen sorumlu\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdakilerden hangileri uzlaştırma müzakerelerine katılabilecek kişiler arasında sayılmıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.253/13 uzlaştırma müzakerelerinin GİZLİ yürütüleceğini belirttikten sonra müzakerelere katılabilecek kişileri tek tek sayar: şüpheli, mağdur, suçtan zarar gören, kanunî temsilci, müdafi ve vekil. Sayım sınırlıdır; listede yer almayan kişiler müzakerelere katılamaz. MALEN SORUMLU bu listede bulunmaz. Malen sorumlu, yargılama konusu işin hükme bağlanması ve bunun kesinleşmesinden sonra maddî sorumluluk taşıyacak kişiyi ifade eder (m.2/1-i); uzlaştırmanın tarafı olmadığı için müzakerelere katılması öngörülmemiştir. Şüpheli, mağdur veya suçtan zarar görenin kendisi ya da temsilcisinin müzakerelere katılmaktan kaçınması hâlinde uzlaşmayı kabul etmemiş sayılırlar.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi uzlaştırma kapsamındaki suçlar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Taksirle yaralama",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hırsızlık suçunun temel şekli",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Geceleyin birden fazla kişi tarafından işlenen konut dokunulmazlığının ihlali",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Dolandırıcılık suçunun temel şekli",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Çocuğun kaçırılması ve alıkonulması",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.253/1 uzlaştırma kapsamını iki ölçütle belirler: soruşturulması ve kovuşturulması ŞİKÂYETE BAĞLI suçlar ile şikâyete bağlı olup olmadığına bakılmaksızın maddede tek tek sayılan suçlar. Sayılanlar arasında taksirle yaralama, hırsızlık, dolandırıcılık, güveni kötüye kullanma, çocuğun kaçırılması ve alıkonulması ile KONUT DOKUNULMAZLIĞININ İHLALİ (TCK m.116) bulunur. Ancak kanun burada maddenin temel şeklini esas alır; suçun gece vakti veya birden fazla kişi tarafından birlikte işlenmesi TCK m.119'daki ortak nitelikli hâldir ve cezayı bir kat artırır. Nitelikli hâl uzlaştırma kapsamına alınmadığından bu biçimde işlenen konut dokunulmazlığı ihlali uzlaştırmaya tabi değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Asıl ceza davası açılmış olmakla müsadere davası da açılmış olacağından ayrı bir müsadere davası açılmasına gerek yoktur.\nII. Katılan ayrı bir müsadere davası açamaz.\nIII. Mahkeme madde bakımından yetkisizlik kararı vermişse müsadere konusunda da bir karar vermek zorundadır.\nMüsadere muhakemesiyle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.256/1, müsadere kararı verilmesi gereken hâllerde kamu davası AÇILMAMIŞ ya da açılmış olup da esasla beraber bir karar verilmemişse, karar verilmesi için Cumhuriyet savcısının VEYA KATILANIN davayı görmeye yetkili mahkemeye başvurabileceğini söyler. Buna göre katılanın ayrı bir müsadere davası açamayacağını söyleyen ifade metne aykırıdır. Aynı şekilde, asıl ceza davasının açılmış olması her hâlde müsadere konusunda karar verildiği anlamına gelmez; esasla birlikte bir karar verilmemişse ayrı bir müsadere muhakemesi yapılabilir. Buna karşılık mahkeme madde bakımından yetkisizlik kararı verdiğinde işi görevli mahkemeye gönderir ve esasa ilişkin müsadere konusunda karar veremez; bu nedenle müsadere hakkında karar vermek zorunda olduğunu söyleyen ifade de yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre soruşturma evresinde dosyanın uzlaştırma bürosuna gönderilmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Soruşturma konusu suçun uzlaştırmaya tâbi olması ve kamu davası açılması için yeterli şüphenin bulunması durumunda, dosya uzlaştırma bürosuna gönderilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Uzlaştırmacı, Cumhuriyet savcısı tarafından görevlendirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Uzlaştırmacılar, yalnızca meslekte 10 yıl kıdeme sahip avukatlar arasından görevlendirilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ceza Muhakemesi Yasası'nda belirlenen yargıcın davaya bakamayacağı durumlar ile reddi nedenleri, uzlaştırmacı görevlendirilmesi ile ilgili olarak göz önünde bulundurulur.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Uzlaştırmacı, dosya içindeki belgelerin birer örneği kendisine verildikten itibaren en geç 30 gün içinde uzlaştırma işlemlerini sonuçlandırır. Uzlaştırma bürosu bu süreyi en çok 15 gün daha uzatabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaştırmacı görevlendirilmesinde tarafsızlık güvencesi, CMK m.253/24 yollamasıyla hâkime ilişkin kurallara bağlanmıştır: hâkimin davaya bakamayacağı hâller ile reddi nedenleri, uzlaştırmacı görevlendirilirken de göz önünde bulundurulur. Diğer seçenekler kanuna aykırıdır. Dosyanın uzlaştırma bürosuna gönderilmesi için kamu davası açmaya yeterli şüphe bulunması ARANIR ve bu bir takdir değil zorunluluktur (m.253/4). Uzlaştırmacı, Cumhuriyet savcısı tarafından değil UZLAŞTIRMA BÜROSU tarafından görevlendirilir (m.253/10) ve avukat olma ya da belirli bir kıdem şartı yoktur; uzlaştırmacılar hukuk öğrenimi görmüş kişiler arasından, siciline kayıtlı olanlardan seçilir. Süre bakımından da uzlaştırmacı işlemleri en geç otuz günde sonuçlandırır ve büro bu süreyi her defasında yirmi günü geçmemek üzere en fazla iki kez uzatabilir (m.253/12).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmacı uzlaşma işini kural olarak en geç kaç gün içinde sonuçlandırmak zorundadır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "30",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "45",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "60",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.253/12, uzlaştırmacının dosya içindeki belgelerin birer örneği kendisine verildikten itibaren en geç OTUZ GÜN içinde uzlaştırma işlemlerini sonuçlandıracağını belirtir. Bu süre kesin bir tavan değildir: uzlaştırma bürosu, süreyi her defasında yirmi günü geçmemek üzere EN FAZLA İKİ KEZ daha uzatabilir. Düzenlemenin amacı, uzlaştırmanın soruşturmayı belirsiz biçimde geciktirmesini önlerken tarafların anlaşması için makul bir zaman tanımaktır. Sürenin sonunda uzlaşma sağlanamazsa uzlaştırmacı raporunu büroya verir ve soruşturma genel hükümlere göre sürdürülür.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

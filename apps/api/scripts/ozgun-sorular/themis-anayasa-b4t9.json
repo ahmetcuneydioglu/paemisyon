@@ -1,0 +1,457 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Yüksek Seçim Kurulu 1982 Anayasası'nın hangi bölümünde düzenlenmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Siyasi haklar ve ödevler",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yasama",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Yürütme",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yargı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Genel Esaslar",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yüksek Seçim Kurulu, Anayasa'da yasama bölümünde düzenlenmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Sayıştay ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yargı bölümünde düzenlenmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Denetleme ve sorumluların hesap ve işlemlerini kesin hükme bağlamak görevlerini TBMM adına yapar.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Sosyal güvenlik kurumlarının bütün gelir ve giderleri ile mallarını denetler ve sorumluların hesap ve işlemlerini kesin hükme bağlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Mahalli idarelerin hesap ve işlemlerini denetleyebilir ancak bunları kesin hükme bağlama yetkisi yoktur.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Vergi, benzeri mali yükümlülükler ve ödevler hakkında Danıştay ile Sayıştay kararları arasındaki uyuşmazlıklarda Danıştay kararları esas alınır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Sayıştay, mahalli idarelerin hesap ve işlemlerini denetleyebildiği gibi bunları kesin hükme bağlamaya da yetkilidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Radyo ve Televizyon Üst Kurulu ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Radyo ve televizyon faaliyetlerini düzenler ve denetler.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "9 üyeden oluşur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Üyeleri, siyasi parti gruplarının üye sayısı oranında gösterecekleri adaylar arasından seçilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Üyeleri, TBMM Genel Kurulunca ve normal çoğunlukla seçilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kuruluşu, görev ve yetkileri, üyelerinin nitelikleri, seçim usulleri ve görev süreleri Cumhurbaşkanlığı kararnamesi ile düzenlenir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Üyeler, siyasi parti gruplarının üye sayısı oranında belirlenecek üye sayısının ikişer katı olarak gösterecekleri adaylar arasından, her siyasi parti grubuna düşen üye sayısı esas alınmak suretiyle TBMM Genel Kurulunca seçilir; özel çoğunluk aranmaz. Son seçenekte sözü edilen hususlar kanunla düzenlenir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, bir hukuk dalını sistematik olarak bütünüyle veya kapsamlı olarak değiştirecek biçimde genel ilkeleri içeren, kişisel veya toplumsal yaşamın büyük bir bölümünü ilgilendiren kanunlar Genel Kurulda bölümler halinde görüşülebilirler.\nBu durumda bölümler en çok kaç maddeden oluşur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "10",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "20",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "30",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "40",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "50",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bunlar temel kanunlardır ve sözü edilen sınır otuz maddedir. Bu takdirde bölümler, maddeler okunmaksızın maddenin görüşülmesindeki usule göre ayrı ayrı görüşülür ve bölümdeki maddeler ayrı ayrı oylanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, Anayasa Mahkemesinin iptal kararının yürürlüğe girişinin ertelendiği durumlarda TBMM, iptal kararının ortaya çıkardığı hukuki boşluğu dolduracak kanun teklifini karara bağlar.\nBu şekilde görüşülecek kanun teklifi için öngörülen yöntem aşağıdakilerden hangisidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Öncelikle görüşülür.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "İvedilikle görüşülür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bölümler halinde görüşülebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "En geç 6 ay içinde görüşülmesi ve kabul edilmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "En geç iptal kararının yürürlüğe gireceği tarihe kadar görüşülmesi ve kabul edilmesi gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 153. maddesine göre, Anayasa Mahkemesinin iptal kararının yürürlüğe girişinin ertelendiği durumlarda TBMM, iptal kararının ortaya çıkardığı hukuki boşluğu dolduracak kanun teklifini öncelikle görüşüp karara bağlar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, maddelerine geçilmesi Genel Kurulca kabul edilmeyen kanun teklifi hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Reddedilmiş sayılır.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Oylama 24 saat içinde tekrar edilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Oylama 48 saat içinde tekrar edilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kadük olur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Oylamanın herhangi bir sonucu yoktur, maddelerin oylanmasına geçilebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Maddelerine geçilmesi veya tümü kabul edilmeyen kanun teklifleri Genel Kurulca reddedilmiş sayılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Kanunlar\nII. Cumhurbaşkanlığı kararnameleri\nIII. Türkiye Büyük Millet Meclisi İçtüzüğü\nYukarıda sayılanlardan hangileri aksine hüküm bulunmadıkça yayımlandıkları gün yürürlüğe girerler?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "10 sayılı Kararname gereğince kanun, kararname ve yönetmelikler, İçtüzük gereğince İçtüzük değişiklikleri aksine hüküm olmadıkça yayımlandıkları gün yürürlüğe girerler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre ara seçime gidilebilmesi için boşalan üyelik sayısı en az kaç olmalıdır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "28",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "29",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "30",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "31",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "32",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Sözü edilen sayı üye tam sayısının yüzde beşidir; 600 üye için 30 milletvekilliğidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "TBMM, seçimlerin yenilenmesine karar vermiş ve bu kararı 10.10.2024 tarihinde ilan etmiştir.\nMilletvekilliğine adaylığını koymak isteyen Kara Kuvvetleri Komutanlığında görevli Binbaşı B, ilandan itibaren en son hangi süre içinde görevden ayrılma isteğinde bulunmalıdır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "3 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "7 gün",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "10 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "15 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "1 ay",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yasada belirtilen kamu görevlileri, genel ve ara seçimlerin başlangıcından bir ay önce, seçimin yenilenmesine karar verilmesi halinde yenileme kararının ilanından başlayarak yedi gün içinde görevlerinden ayrılma isteğinde bulunmadıkça adaylıklarını koyamazlar ve aday gösterilemezler. Bir aylık süre, seçimin normal zamanda yapılmasına ilişkindir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "Jandarma Genel Komutanlığında görevli Yüzbaşı Y, yapılacak ilk genel seçimde milletvekilliğine aday olmaya karar verir.\nBuna göre Y'nin milletvekilliği adaylığı ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Seçimlerin başlangıcından 1 ay önce görevden ayrılma isteğinde bulunmadıkça aday olamaz ve aday gösterilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ayrılma isteğini en yakın amire bir dilekçe ile yapmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Ayrılma isteğini belirten dilekçeyi alan yetkili makam, en geç 10 gün içinde ayrılma isteğinin kabul edildiğini Y'ye ve onun amirlerine tebliğ eder.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ayrılma isteği kabul edilen Y, sonradan bu isteğinden vazgeçemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Y'nin adaylığı veya seçimi kaybetmesi durumunda Yüksek Seçim Kurulunca seçim sonuçlarının ilanını izleyen 1 ay içinde, başvurması koşuluyla eski görevine veya kazanılmış hak aylık derecelerindeki başka bir göreve dönebilir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Konuyla ilgili şu hususlar önemlidir: Ayrılmaya ilişkin hükümler ara seçimler için de aynen geçerlidir. Son seçenek diğer kamu görevlileri için geçerlidir; ancak milletvekili ve mahalli idareler genel ve ara seçimlerinde aday ve aday adayı olan yüksek mahkeme üyeleri, hâkimler, savcılar ve bu meslekten sayılanlar ile subay ve astsubaylar görevlerine dönemezler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre Cumhurbaşkanı yardımcıları ne zaman and içerler?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Atandıkları tarihten sonra yapılan ilk birleşimde",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Atandıkları tarihten sonra yapılan en geç üçüncü birleşimde",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Atandıkları tarihten itibaren 3 gün içinde",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Atandıkları tarihten itibaren 5 gün içinde",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Atandıkları tarihten itibaren 7 gün içinde",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanı yardımcıları ve bakanlar, atandıkları tarihten sonra yapılan ilk birleşimde and içerler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'nda düzenlenen yasama dokunulmazlığı gereğince TBMM kararı olmadıkça milletvekillerinin,\nI. Gözaltına alınabilmeleri mümkün değildir.\nII. Haklarında kamu davası açılamaz.\nIII. İfadeleri alınamaz.\nifadelerinden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM izni olmaksızın işletilemeyen ceza muhakemesi araçları tutulamama (gözaltı), sorguya çekilememe, tutuklanmama ve yargılanamadan ibarettir. Bu hüküm, delillerin tespiti, ifade alma, hazırlık soruşturması ya da kamu davası açılması gibi usuli işlemlere ve milletvekiline genel hukuk davası açılmasına engel oluşturmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisinin varlığı milletvekili seçilmeye kesin bir engel oluşturur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Çifte vatandaş olmak",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yabancı soylu olup Türk vatandaşı olmak",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yükümlü olduğu askerlik hizmetini yapmamış olmak",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Aday olmaya engel mahkûmiyeti ertelenmiş durumda bulunmak",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Kasten yaralama suçundan affa uğramış 16 ay mahkûmiyeti bulunmak",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Aday olmayı engelleyen mahkûmiyeti alıp cezası ertelenenler, erteleme süresi içinde aday olamazlar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

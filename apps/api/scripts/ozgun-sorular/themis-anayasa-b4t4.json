@@ -1,0 +1,527 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, Cumhurbaşkanının kanunları yayımlaması ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanı, yayımlaması için kendisine gönderilen kanunun Anayasa'ya aykırı bulduğu maddelerini TBMM'ye gönderip diğer maddelerini en geç 15 gün içinde Resmi Gazetede yayımlayabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı, yayımlaması için kendisine gönderilen kanunu sadece Anayasaya aykırı bulduğu takdirde en geç 10 gün içinde TBMM'ye geri gönderebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanının, TBMM tarafından kabul edilen kanunu yayımlaması için Anayasa'da herhangi bir süre öngörülmemiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Cumhurbaşkanı, yayımlaması için kendisine gönderilen bir kanunun bazı maddelerini uygun bulmasa bile tümünü 15 gün içinde TBMM'ye geri gönderir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Cumhurbaşkanı, sadece normal kanunları bir kez daha görüşülmesi için TBMM'ye geri gönderebileceği için Anayasa değişiklikleri geri gönderilemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanı, yayımlaması için kendisine gönderilen bir kanunun bazı maddelerini uygun bulmasa bile tümünü, on beş gün içinde TBMM'ye geri gönderir. Cumhurbaşkanının, kanunları kısmen geri göndermek şeklinde bir yetkisi yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, yasama dokunulmazlığının kaldırılmasına veya milletvekilliğinin düşmesine ilişkin kararlara karşı milletvekilinin itiraz hakkı ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Dokunulmazlığının kaldırılması kararlarına karşı Anayasa Mahkemesine itiraz edilmesi mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Sadece dokunulmazlığı kaldırılan veya üyeliği düşürülen milletvekili değil, bir başka milletvekili de bu kararlara karşı itiraz edebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İtiraz süresi 7 gündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İtiraz mercii bu konudaki kararını 15 gün içinde açıklar.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İtiraz, kararların sadece Anayasa'ya aykırı olduğu gerekçesine dayanır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Bu konuda yapılan itiraz, sadece kararın Anayasa'ya aykırı olduğu gerekçesine dayanmaz. Aynı zamanda, kanuna ve İçtüzüğe aykırılık iddiasına da dayanabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, bir kanun teklifinin kadük olarak nitelendirilmesi için geçmesi gereken süre aşağıdakilerden hangisinde doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1 tam yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "1 yasama yılı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "1 yasama dönemi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Üst üste 2 yasama dönemi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "3 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bir teklifin kadük olarak nitelendirilebilmesi için gereken süre bir yasama dönemidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "I. TBMM Genel Kurulunda reddedilen kanun teklifleri, ret tarihinden itibaren 1 tam yıl geçmedikçe hiçbir şekilde yeniden verilemez.\nII. Kanun teklifleri, TBMM Genel Kurulunun gündemine gelmeden önce ilgili komisyonlarda görüşülür.\nIII. Komisyonlar, Anayasaya aykırı buldukları teklifleri reddedebilirler.\nTBMM İçtüzüğüne göre kanun teklifleri ile ilgili yukarıda verilen ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM Genel Kurulunda reddedilen teklifler, aynı yasama döneminde olmak kaydıyla, ret tarihinden itibaren bir tam yıl geçmedikçe yeniden teklif edilemez. Seçim nedeniyle yasama döneminin değişmesi durumunda, bir tam yıllık süre söz konusu olmaz. Dolayısıyla ilk ifade yanlıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "TBMM üyeliklerinde 10 kişilik boşalma olmuş, TBMM'de 590 milletvekili kalmıştır.\nBu durumda, TBMM'nin toplantı yeter sayısı en az kaç milletvekilidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "108",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "110",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "184",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "200",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "271",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre, TBMM üye tam sayısı altı yüzdür. TBMM üyeliklerinde boşalma olması üye tam sayısını ya da karar yeter sayılarını değiştirmez. Dolayısıyla toplantı yeter sayısı her durumda üye tam sayısının üçte biridir (200 milletvekili).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, and içmekten imtina eden milletvekili ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Milletvekili sıfatını kazanamazlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Milletvekillikleri Başkanlık Divanının kararıyla düşer.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Milletvekili sıfatından kaynaklanan haklardan yararlanamazlar.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Milletvekillikleri TBMM kararıyla düşürülür.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Herhangi bir hukuki sonucu yoktur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM İçtüzüğünde 2017 yılında yapılan düzenlemeyle and içmekten imtina eden milletvekilleri vekillik sıfatından kaynaklanan haklardan yararlanamazlar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, kanunların teklif edilmesi, görüşülmesi ve kabul edilmesiyle ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM Başkanı kanun teklif edebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kanun teklifi hakkındaki komisyon raporu, TBMM Başkanı tarafından Genel Kurula sevk edildikten sonra, aksine karar alınmadıkça, dağıtımı tarihinden itibaren 48 saat geçmedikçe görüşülemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Teklif sahipleri, kanun tekliflerini gündeme alınmadan önce Genel Kurula bilgi verilmek şartıyla geri alabilirler. Teklifler, gündeme alındıktan sonra hiçbir şekilde geri alınamazlar.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Kanun teklifinin, önce tümü üzerinde görüşme açıldıktan sonra maddelerine geçilmesi oylanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Komisyonda görüşülen teklifler, komisyon tarafından reddedilebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Teklif sahipleri, sunulan kanun tekliflerini gündeme alınmadan önce Genel Kurula bilgi verilmek şartıyla geri alabilirler. Teklifler gündeme alınmışlarsa geri alınmaları için bu konuda Genel Kurulun karar vermesi gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası ve TBMM İçtüzüğüne göre, kanunlarla ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kanunlar, Cumhurbaşkanınca 15 gün içinde, ya TBMM'ye tekrar görüşülmesi için geri gönderilir ya da aynı süre içinde yayımlanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM Genel Kurulunda görüşülüp reddedilen teklifler, ret tarihinden itibaren 1 tam yıl geçmedikçe aynı yasama dönemi içinde yeniden verilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kanun, aksine hüküm olmadıkça Resmi Gazetede yayımlandıktan 45 gün sonra yürürlüğe girer.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Bir yasama döneminde görüşülüp karara bağlanmayan teklifler bir sonraki yasama döneminde dikkate alınmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kanunlar bir milletvekili tarafından dahi teklif edilebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kanunlar, aksine hüküm bulunmadıkça, Resmi Gazetede yayımlandığı gün yürürlüğe girer.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Türkiye Büyük Millet Meclisi İçtüzüğü ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İçtüzük değişikliği parlamento kararıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnızca TBMM'nin içyapısı ve çalışma usul ve esasları ile ilgili düzenleme yapılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Üçüncü kişilere yükümlülükler getirilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Anayasa yargısında ölçü norm olarak kullanılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa Mahkemesince şekil bakımından denetlenemez.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "İçtüzük, hem şekil hem esas bakımından Anayasa Mahkemesinin yargısal denetimine tabidir. İçtüzüğün Anayasaya aykırılığı iddiasıyla doğrudan doğruya iptal davası açma hakkı Cumhurbaşkanına, TBMM'de en çok üyeye sahip iki parti grubuna ve üye tam sayısının en az beşte biri tutarındaki üyeye aittir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Meclis soruşturma önergesinin kabulü\nII. Bakanın Yüce Divana sevkine ilişkin karar\nIII. Meclis araştırması önergesinin reddi\nTBMM, yukarıda sayılanlardan hangilerine hem gizli oyla hem de özel çoğunlukla karar verir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "I ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Meclis soruşturması önergesinin kabulü (üye tam sayısının beşte üçü) ve bir bakanın Yüce Divana sevki (üye tam sayısının üçte ikisi), nitelikli çoğunluk ve gizli oyla karar verilir. Meclis araştırma önergesinin reddi, nitelikli bir çoğunluk gerektirmez ve gizli oyla yapılmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, TBMM seçimlerinin hangi halde ve kimin kararı ile ertelenebileceği aşağıdakilerden hangisinde sırasıyla doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Savaş - TBMM",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Savaş - Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Olağanüstü hal - Genelkurmay Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Olağanüstü hal - Milli Savunma Bakanı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olağanüstü hal - TBMM",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Savaş sebebiyle mümkün olmazsa TBMM seçimleri, TBMM kararı ile 1 yıl geriye bırakılabilir (ertelenebilir). Geri bırakma sebebi ortadan kalkmamışsa, erteleme kararındaki usule göre bu işlem tekrarlanabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, TBMM Başkanlığında boşalma olması durumunda aşağıdakilerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yeni Başkan seçilinceye kadar en yaşlı başkanvekili geçici Başkanlık görevini yürütür.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "5 gün içinde yeni Başkan seçimi yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "30 gün içinde yeni Başkan seçimi yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "En yaşlı başkanvekili kalan süreyi tamamlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM seçimleri yenilenir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM İçtüzüğünün 12. maddesine göre, Başkanlıkta boşalma halinde, yeni Başkan seçilinceye kadar en yaşlı Başkanvekili geçici Başkanlık görevini yerine getirir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "İstifa, milletvekilliği ile bağdaşmayan bir görev ve hizmeti sürdürmekte ısrar etmek veya TBMM çalışmalarına özürsüz ya da izinsiz olarak 1 ay içinde toplam 5 birleşim günü katılmamak hallerinden birisi sonucu milletvekilliği düşürülen milletvekili veya bir başka milletvekili, düşme kararına karşı hangi süre içinde ve nereye başvurabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "5 gün içinde TBMM Başkanlığına",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "15 gün içinde ilgili komisyona",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "60 gün içinde Danıştaya",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "10 gün içinde Anayasa Mahkemesine",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "7 gün içinde Anayasa Mahkemesine",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Milletvekilliğinin yukarıda sayılan düşürme hallerinden biri sonrası veya yasama dokunulmazlığının kaldırılması sonucu, yasama dokunulmazlığı kaldırılan ya da milletvekilliği düşürülen milletvekili veya başka bir milletvekili, bu kararın alınışından itibaren yedi gün içinde iptal istemi ile Anayasa Mahkemesine başvurabilir. Anayasa Mahkemesinin bu denetimde hem şekil hem de esas yönünden inceleme yaptığını da belirtmek gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Türk hukukunda milletlerarası antlaşmalarla ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Antlaşmaların onaylanmasını bir kanunla uygun bulma görev ve yetkisi TBMM'ye aittir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Usulüne uygun olarak yürürlüğe konmuşsa kanun hükmündedir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Onay ve yayımlama yetkisi TBMM Başkanına aittir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Haklarında Anayasaya aykırılık iddiası ile Anayasa Mahkemesine başvurulamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Türk kanunlarında değişiklik gerektiren her türlü milletlerarası antlaşmanın onaylanması, TBMM'nin onaylamayı bir kanunla uygun bulmasına bağlıdır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Türkiye adına yapılan milletlerarası antlaşmaların onaylanması, kural olarak TBMM'nin onaylamayı bir kanunla uygun bulmasına bağlıdır. TBMM'nin uygun bulması, Cumhurbaşkanının onayından önceki bir aşamadır. İmzalanan uluslararası bir antlaşmanın onay ve yayım yetkisi, 1961 ve 1982 Anayasalarında Cumhurbaşkanına verilmiştir. Usulüne göre yürürlüğe konulan uluslararası antlaşmalar kanun hükmünde olup, bunlar hakkında Anayasaya aykırılık iddiasıyla Anayasa Mahkemesine başvurulamaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekillik sıfatının başkaca bir karar alınmaksızın kendiliğinden sona ermesi nedenlerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İstifa",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı seçilme",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bakan olarak atanma",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ölüm",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Yasama döneminin sona ermesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İstifa eden milletvekilinin milletvekilliği istifanın TBMM'ye sunulmasıyla kendiliğinden sona ermez. TBMM'nin istifayı, Genel Kurulda oylama yaparak kabul etmesi gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

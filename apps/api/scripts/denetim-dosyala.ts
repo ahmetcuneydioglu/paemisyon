@@ -108,8 +108,13 @@ const META_RE = /^\s*(amaç|kapsam|dayanak|tanımlar|yürürlük|yürütme)\s*$/
   const df = new Map<string, number>();
   for (const m of mJeton) for (const w of m.j) df.set(w, (df.get(w) ?? 0) + 1);
 
+  // --inceleme: henuz yayinlanmamis (in_review) partileri de denetle. Yeni ice
+  // aktarilan kitap partileri once burada denetlenir, SONRA yayinlanir; boylece
+  // kusurlu soru istemciye hic ulasmaz.
+  const INCELEME = process.argv.includes('--inceleme');
   const tumu = await p.questionVersion.findMany({
-    where: { status: 'published', question: { deletedAt: null, topicId: t.id } },
+    where: { status: INCELEME ? { in: ['published', 'in_review'] } : 'published',
+      question: { deletedAt: null, topicId: t.id } },
     select: { id: true, stem: true, explanation: true, sourceLabel: true,
       _count: { select: { examQuestions: true } },
       question: { select: { articleNo: true } },

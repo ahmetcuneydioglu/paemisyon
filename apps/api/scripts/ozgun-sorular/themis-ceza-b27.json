@@ -1,0 +1,247 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi dava zamanaşımını durduran nedenlerden biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Soruşturma ve kovuşturma yapılmasının izin alınmasına bağlı olması",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Şüpheli veya sanıklardan birinin savcı huzurunda ifadesinin alınması veya sorguya çekilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suçla ilgili olarak iddianame düzenlenmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Şüpheli veya sanıklardan biri hakkında tutuklama kararının verilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Sanıklar hakkında mahkûmiyet kararı verilmesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 67/1'e göre soruşturma ve kovuşturma yapılmasının, izin veya karar alınması ya da diğer bir mercide çözülmesi gereken bir sorunun sonucuna bağlı bulunduğu hâllerde; izin veya kararın alınmasına ya da sorunun çözümüne veya kanun gereğince hakkında kaçak denilen kişinin yakalanmasına kadar dava zamanaşımı DURUR. Buna karşılık m. 67/2'de sayılan şüpheli veya sanıklardan birinin savcı huzurunda ifadesinin alınması veya sorguya çekilmesi, biri hakkında tutuklama kararı verilmesi, iddianame düzenlenmesi ve mahkûmiyet kararı verilmesi dava zamanaşımını KESEN nedenlerdir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ön ödeme hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Uzlaştırma kapsamında yer almayan bir suç işlenmiş olmalıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Suçun cezası, yalnızca adli para cezası veya yasada yazılı cezasının yukarı sınırı 6 ayı aşmayan hapis cezası ya da her ikisini gerektirmelidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Taksirli suçlar hariç olmak üzere, ön ödemeye bağlı olarak kovuşturmaya yer olmadığına veya kamu davasının düşmesine karar verildiği tarihten itibaren 5 yıl içinde ön ödemeye tabi bir suçu işleyen faile teklif edilecek ön ödeme miktarı yarı oranında artırılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Suç için hapis cezası öngörülmüşse ön ödemede ödenecek miktar, bu cezanın aşağı sınırının karşılığı olarak her gün için 100 TL üzerinden hesaplanacak miktardır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Suçu bildirmeme suçunda ön ödeme hükümleri uygulanmaz.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 75/1'e göre ön ödeme, uzlaştırma kapsamındaki suçlar hariç olmak üzere, yalnız adli para cezasını gerektiren veya yasa maddesinde öngörülen hapis cezasının yukarı sınırı altı ayı aşmayan suçlarda uygulanır. Ancak aynı maddenin 6. fıkrası bazı suçlar bakımından da ön ödeme hükümlerinin uygulanacağını ayrıca öngörmüştür; SUÇU BİLDİRMEME suçu (m. 278/1, 2) bu sayımda yer aldığından bu suçta ön ödeme hükümleri uygulanır, E yanlıştır. TCK m. 75/1-b hapis cezası öngörülen suçlarda ödenecek miktarı, aşağı sınırın karşılığı olarak her gün için 100 Türk lirası üzerinden hesaplar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre aşağıdakilerden hangisi davayı düşüren nedenlerden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ön ödeme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Sanığın ölümü",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Dava zamanaşımı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hükümlünün ölümü",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Genel af",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bir kimse sanıklık statüsünden hükümlülük statüsüne girmişse ceza davası sona ermiş ve mahkûmiyet kararı kesinleşmiş demektir. Bu nedenle hükümlünün ölümü davayı düşüren bir neden değildir; TCK m. 64/2'ye göre hükümlünün ölümü hapis ve henüz infaz edilmemiş adli para cezalarını ortadan kaldırır, yani CEZAYI düşüren bir nedendir. Buna karşılık ön ödeme (m. 75), sanığın ölümü (m. 64/1), dava zamanaşımı (m. 66) ve genel af (m. 65/1) kamu davasını düşüren nedenlerdendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre aşağıdakilerden hangisi dava zamanaşımını kesen nedenlerden biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Mahkûmiyet hükmünün infazı için yetkili merci tarafından hükümlüye tebligat yapılması",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Mahkûmiyet hükmünün infazı için hükümlünün yakalanması",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Suçla ilgili olarak iddianame düzenlenmesi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Bir suçtan dolayı mahkûm olan kimsenin üst sınırı 2 yıldan fazla hapis cezasını gerektiren kasıtlı bir suç işlemesi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Soruşturma ve kovuşturma yapılmasının diğer bir mercide çözülmesi gereken bir sorunun sonucuna bağlı olması",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 67/2'ye göre bir suçla ilgili olarak şüpheli veya sanıklardan birinin savcı huzurunda ifadesinin alınması veya sorguya çekilmesi, biri hakkında tutuklama kararının verilmesi, suçla ilgili olarak İDDİANAME DÜZENLENMESİ veya sanıklardan bir kısmı hakkında da olsa mahkûmiyet kararı verilmesi dava zamanaşımını keser. A, B ve D şıklarında sayılanlar ise m. 71'de düzenlenen CEZA zamanaşımını kesen nedenlerdir; E ise m. 67/1'e göre dava zamanaşımını DURDURAN bir nedendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Genel afla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Genel af durumunda, kamu davası düşer.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Genel af durumunda hükmolunan cezalar bütün sonuçları ile birlikte ortadan kalkar.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Genel affa uğrayan bir mahkûmiyet tekerrüre konu olmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bileşik suçu oluşturan unsur suçlardan birisi genel affa uğrarsa bileşik suç da genel affa uğrar.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Genel af ile mahkûmiyetten doğan hak ve yoksunluklar sona erer.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 65/1'e göre genel af hâlinde kamu davası düşer, hükmolunan cezalar bütün sonuçlarıyla birlikte ortadan kalkar; bu nedenle genel affa uğrayan mahkûmiyet tekerrüre de esas olmaz. Ancak bileşik suç TCK m. 42/1 uyarınca kendisini oluşturan suçlara bölünemeyen tek bir suçtur; bu nedenle unsur suçlardan birinin genel affa uğraması bileşik suçun bütününü affın kapsamına sokmaz. Hırsızlık suçunun genel affa uğraması, yağma suçunun da affa uğradığı anlamına gelmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre ön ödeme yoluna başvurabilmek için suçun karşılığı olan hapis cezasının üst sınırının hangi süreyi aşmaması gerekir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "3 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "6 ay",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "1 yıl",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "2 yıl",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 75/1'e göre uzlaştırma kapsamındaki suçlar hariç olmak üzere, yalnız adli para cezasını gerektiren veya yasa maddesinde öngörülen hapis cezasının yukarı sınırı ALTI AYI AŞMAYAN suçlarda ön ödeme hükümleri uygulanır. Bu üst sınır 2016 yılında 6763 sayılı Yasayla yapılan değişiklikle ÜÇ AYDAN ALTI AYA yükseltilmiştir. Ön ödeme, kamu davasının açılmasını önleyen bir nedendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'na göre\nI. 1 yıla kadar hapis cezası gerektiren suçu bildirmeme\nII. 1 yıldan 3 yıla kadar hapis veya adli para cezasını gerektiren gizliliğin ihlali\nIII. 3 aydan 2 yıla kadar hapis veya adli para cezasını gerektiren gıyapta hakaret\nsuçlarından hangileri bakımından ön ödeme hükümleri uygulanabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 75/1'e göre ön ödeme kural olarak yalnız adli para cezasını gerektiren veya hapis cezasının yukarı sınırı altı ayı aşmayan suçlarda uygulanır. Ancak m. 75/6 bu kuralın dışında kalan bazı suçlar bakımından da ön ödeme hükümlerinin uygulanacağını ayrıca öngörmüştür; bunlar arasında HAKARET (m. 125/2, 125/3-b, c ve 125/4) ve SUÇU BİLDİRMEME (m. 278/1, 2) suçları yer alır. Gizliliğin ihlali bu sayımda bulunmadığı gibi hapis cezasının üst sınırı da altı ayı aştığından, bu suç bakımından ön ödeme hükümleri uygulanmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

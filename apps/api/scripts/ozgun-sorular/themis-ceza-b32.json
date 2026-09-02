@@ -1,0 +1,212 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Yasası'na göre adli iş birliği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Uluslararası adli iş birliği istemlerinin değerlendirilmesinde, karşılıklılık ilkesinin gözetilmesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yabancı devlet ile Türkiye arasında hukuksal ve eylemsel karşılıklılık yoksa adli iş birliği isteminin yerine getirilmesi, istemde bulunan devletin Türkiye'nin aynı konuya ilişkin adli iş birliği istemlerini karşılamayı garanti etmesi koşuluna bağlanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yabancı bir devletin adli iş birliği isteminin yerine getirilmesi, merkezi makam tarafından koşula veya güvenceye bağlanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Merkezi makamca kabul edilen koşullar veya verilen güvenceler adli mercileri bağlamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Adli iş birliği istemlerinin yerine getirilmesi nedeniyle tazminat ödenmesi durumunda, merkezi makam ödenen tazminatı ilgili devletten isteyebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6706 sayılı Kanun m. 3/4'e göre merkezi makam olan Adalet Bakanlığınca kabul edilen koşullar veya verilen güvenceler adli mercileri BAĞLAR; bu nedenle D yanlıştır. Aynı maddenin ikinci fıkrasına göre hukuksal ve eylemsel karşılıklılık (fiili mütekabiliyet) yoksa istemin yerine getirilmesi garanti koşuluna bağlanabilir; üçüncü fıkrasına göre istem merkezi makamca koşula veya güvenceye bağlanabilir; beşinci fıkrasına göre ödenen tazminat ilgili devletten istenebilir. Yasa'da yargı yetkisine giren hususlar hariç tutulmuş olup Adalet Bakanlığı bu konularda koşul kabul edemez veya güvence veremez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi ceza hukuku bakımından kamu görevlisi sayılmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Terör soruşturmasında görev alan şüpheli müdafi",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Özel hastanede hasta muayene edip rapor ve reçete yazan doktor",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Tanık sıfatıyla ifade veren kişi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hukuk dava dosyasına rapor sunan bilirkişi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bir kamusal faaliyeti ihale usulüyle alıp yürüten kişi",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 6/1-c'ye göre kamu görevlisi, kamusal faaliyetin yürütülmesine atama veya seçilme yoluyla ya da herhangi bir surette sürekli, süreli veya geçici olarak katılan kişidir. Bu tanım 765 sayılı eski Yasa'daki memur kavramından daha geniştir; kamusal faaliyet yapan herkes ceza hukuku açısından kamu görevlisidir. Kamu görevlisi sayılmanın temel ölçütü, görülen işin bir kamusal faaliyet olmasıdır. Kamusal faaliyet ise Anayasa ve yasalarda belirlenmiş usullere göre verilmiş bir siyasal kararla, bir hizmetin kamu adına yürütülmesidir. Bu nedenle özel hukuk hükümlerine göre bir kamusal faaliyeti İHALE USULÜYLE alıp yürüten kişiler kamu görevlisi sayılmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Avukat\nII. Cumhuriyet savcısı\nIII. Adli kolluk amiri\n5237 sayılı Türk Ceza Yasası'na göre yukarıdakilerden hangileri yargı görevi yapan sayılır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 6/1-d'ye göre yargı görevi yapan deyiminden yüksek mahkemeler, adli ve idari mahkemeler üye ve yargıçları ile Cumhuriyet savcısı ve AVUKATLAR anlaşılır. 5237 sayılı Türk Ceza Yasası'nda yargı görevini yapanlar yargıçlarla sınırlandırılmamıştır; Cumhuriyet savcıları ve 765 sayılı eski Yasa'dan farklı olarak avukatlar da yargı görevi yapan kişiler kapsamında kabul edilmiştir. Adli kolluk amiri ise bu sayımda yer almaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Kırılmış şişe\nII. Asit\nIII. Göz yaşartıcı sprey\n5237 sayılı Türk Ceza Yasası'nda belirlenen ölçütlere göre yukarıdakilerden hangileri silah sayılır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 6/1-f'ye göre silah deyiminden şunlar anlaşılır: ateşli silahlar; patlayıcı maddeler; saldırı ve savunmada kullanılmak üzere yapılmış her türlü kesici, delici veya bereleyici alet; saldırı ve savunma amacıyla yapılmış olmasa bile fiilen saldırı ve savunmada kullanılmaya elverişli diğer şeyler; yakıcı, aşındırıcı, yaralayıcı, boğucu, zehirleyici, sürekli hastalığa yol açıcı nükleer, radyoaktif, kimyasal, biyolojik maddeler. Kırılmış şişe fiilen saldırı ve savunmada kullanılmaya elverişli bir şey; asit aşındırıcı bir madde; göz yaşartıcı sprey ise bayıltıcı nitelikte bir kimyasal madde olduğundan üçü de silah sayılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza hukuku bakımından vatandaşlık kavramı hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Anayasa'da, hangi andaki vatandaşlığın esas alınacağına ilişkin açık bir hüküm yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Türk Ceza Yasası'na göre vatandaş kavramından, eylemden dolayı kovuşturmanın başladığı anda Türk vatandaşı olan kişi anlaşılır.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Suçu işlediği sırada Türk vatandaşı iken sonradan uyruğunu değiştiren kişi Türk sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Suçu işlediği sırada Türk uyruğuna girmiş olan kişi Türk vatandaşı sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Çifte uyruğu olanlar da Türk vatandaşı sayılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 6/1-a'ya göre vatandaş deyiminden, EYLEMİ İŞLEDİĞİ SIRADA Türk vatandaşı olan kişi anlaşılır; ölçüt kovuşturmanın başladığı an değil, eylemin işlendiği andır. Kişinin vatandaşlığının belirlenmesinde Türk Vatandaşlığı Yasası esas alınır. Suçu işlediği sırada Türk vatandaşı iken sonradan uyruğunu değiştiren kişi suçun unsuru veya ceza muhakemesi koşulu bakımından Türk sayılacağı gibi, suçu işlediği sırada Türk uyruğuna girmiş olan kişi de Türk vatandaşı sayılır; çifte uyruğu olanlar da Türk vatandaşı kabul edilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Gece vakti — Güneşin batmasından bir saat sonra başlayan ve doğmasından bir saat öncesine kadar devam eden zaman süresi\nII. Kamu görevlisi — Kamusal faaliyetin yürütülmesine atama veya seçilme yoluyla ya da herhangi bir surette asli ve sürekli olarak katılan kişi\nIII. Basın ve yayın yolu — Her türlü yazılı, görsel, işitsel ve elektronik kitle ve bireysel iletişim aracıyla yapılan yayın\n5237 sayılı Türk Ceza Yasası'na göre yukarıdaki kavram ve açıklamasına yönelik eşleştirmelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 6/1-e'ye göre gece vakti, güneşin batmasından bir saat sonra başlayan ve doğmasından bir saat öncesine kadar devam eden zaman süresidir; I doğrudur. TCK m. 6/1-c'ye göre kamu görevlisi, kamusal faaliyetin yürütülmesine atama veya seçilme yoluyla ya da herhangi bir surette SÜREKLİ, SÜRELİ VEYA GEÇİCİ olarak katılan kişidir; kamusal faaliyete süreli veya geçici katılanlar da kamu görevlisi sayıldığından \"asli ve sürekli\" ifadesi yanlıştır. TCK m. 6/1-g'ye göre basın ve yayın yolu deyiminden her türlü yazılı, görsel, işitsel ve elektronik KİTLE iletişim aracıyla yapılan yayınlar anlaşılır; bireysel iletişim araçları bu kapsamda değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+ }
+]

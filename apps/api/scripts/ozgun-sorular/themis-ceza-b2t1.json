@@ -1,0 +1,352 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza normu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ceza normları yalnızca ceza yasalarında değil, başka yasalarda da bulunabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bir ceza normu suçun unsurlarını, özel görünüş biçimlerini veya yaptırımı düzenliyorsa ceza hukuku normudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bir norm, suç işlendikten sonraki süreci (soruşturma ve kovuşturmayı) düzenliyorsa ceza muhakemesi hukuku normudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bir norm, ceza hukuku normu ise failin lehine ya da aleyhine olduğuna bakılmaksızın derhal uygulanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Ceza muhakemesi hukuku normlarında kıyas yasağı söz konusu değildir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bir norm, ceza hukuku normu ise lehe olmadığı sürece geçmişe yürümez. Oysa söz konusu norm, ceza muhakemesi hukuku normu ise failin lehine ya da aleyhine olduğuna bakılmaksızın derhal uygulanır. Suç ve ceza içeren ceza normlarında kıyas yasaktır. Oysa ceza muhakemesi hukuku normlarında kıyas yasağı söz konusu değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza hukukunda yorumla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ceza hukukunda yorum yasaktır ancak kıyas serbesttir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ceza hukukunda daraltıcı yorum serbesttir ancak genişletici yorum yasaktır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Ceza hukukunda daraltıcı yorum yasaktır ancak genişletici yorum serbesttir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ceza hukukunda daraltıcı yorum da genişletici yorum da serbesttir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Ceza yargıcı, özel hukuk yargıcından farklı olarak yorum yapamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ceza hukukunda daraltıcı yorum da genişletici yorum da kıyasa yol açmayacak biçimde serbesttir. Zira ceza hukukunda yorum serbesttir. Ceza yargıcı, özel hukuk yargıcından farklı olarak, yasada boşluk bulunması durumunda kendisi yasa koyucu gibi davranıp kural koyamaz. Ancak yorum yapabilir. Yorum yapmadan ceza normuna anlam verilemez. Yorum her hukuk dalı için zorunludur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Türk Ceza Yasası'nın 11. maddesinde, yurt dışında işlenen suçlardan 1 yıldan az olmayan hapis cezasını gerektirenler hakkında ülkede resen kovuşturma yapılacağı, daha az süreli olanlar için şikâyet aranacağı düzenlenirken, ağırlaştırılmış müebbet hapis cezasını gerektiren suçlar hakkında bir düzenleme bulunmamaktadır. Bu durumda yurt dışında işlenen ve ağırlaştırılmış müebbet hapis cezasını gerektiren suçların da resen kovuşturulacağı kabul edilmektedir.\nBu durum aşağıdakilerden hangisi ile ifade edilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Lehe kıyas",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Geniş yorum",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Aleyhe kıyas",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Dar yorum",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Serbest yorum",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Türk Ceza Yasası'nda yurt dışında işlenen suçlardan 1 yıldan az olmayan hapis cezasını gerektirenler hakkında ülkede resen kovuşturma yapılacağı; daha az süreli olanlar için şikâyet aranacağı düzenlenirken (m. 11), ağırlaştırılmış müebbet hapis cezasını gerektiren suçlar hakkında bir hüküm konulmamıştır. Bu durumda genişletici yorum yapılarak yurt dışında işlenen ve ağırlaştırılmış müebbet hapis cezasını gerektiren suçlar da resen kovuşturulur. Geniş yorum ise yasanın görünüşteki anlamının gerçek anlamını ifade etmede yetersiz olduğu durumlarda gerçek anlamının esas alınarak karar verilmesidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası ile özel ceza yasaları arasındaki ilişki hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Özel ceza yasalarında Türk Ceza Yasası'nın genel hükümler içinde yer alan bir düzenleme varsa o konuda Türk Ceza Yasası uygulanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Türk Ceza Yasası'nın uygulanabilmesi için özel ceza yasalarında ona bu konu için açıkça yollama yapılması gerekmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Özel ceza yasaları yalnızca suç tipi ve yaptırım bakımından uygulanır; teşebbüs, tekerrür, erteleme, iştirak ve benzeri konularda Türk Ceza Yasası uygulama alanı bulur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Türk Ceza Yasası'nda yalnızca özel ceza yasaları için değil, ceza içeren diğer yasalar için de aynı ilkeler kabul edilmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Ceza normuna yer veren her yasa, Türk Ceza Yasası anlamında özel ceza yasasıdır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Özel ceza yasalarında ya da ceza içeren yasalarda Türk Ceza Yasası'nın genel hükümler kitabı içinde yer alan özel bir düzenleme varsa özel düzenleme değil, Türk Ceza Yasası uygulanır (TCK m. 5). Ceza normuna yer veren her yasa, özel ceza yasası değildir. Örneğin Vergi Usul Yasası ceza içeren bir yasadır ancak özel bir ceza yasası değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza hukukunda yorum ve kıyasla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ceza hukukunda yorum serbesttir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Ceza yargıcı, özel hukuk yargıcından farklı olarak yasada boşluk bulunması durumunda kendisi yasa koyucu gibi davranıp kural koyamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Ceza yargıcı, karşılaştığı bir hukuksal sorunu, yorum yaparak çözebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Ceza hukukunda kıyas, genişletici yoruma yol açmayacak biçimde serbesttir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yorumda ortada bir hukuk kuralı vardır ancak onun anlamını saptamak gerekmektedir. Oysa kıyasta bir hukuk kuralı yoktur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ceza yargıcı, karşılaştığı bir hukuksal sorunu, kıyas yaparak çözemez. Zira suç ve ceza içeren hükümlerin uygulanmasında kıyas yapılamaz. Suç ve ceza içeren hükümler, kıyasa yol açacak biçimde geniş yorumlanamaz (TCK m. 2/3).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Cumhurbaşkanının cezai sorumluluğu ve yargılanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Türkiye Büyük Millet Meclisi, üye tamsayısının üçte ikisinin gizli oyuyla Yüce Divana sevk kararı alabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı hem görev hem de kişisel suçlarından dolayı Yüce Divan'da yargılanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM'nin cumhurbaşkanını Yüce Divan'a sevk eden kararı, Anayasa Mahkemesi tarafından yapılan ilk incelemede usulüne uygun bulunursa kovuşturma evresi başlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hakkında soruşturma açılan veya Yüce Divan'a sevk kararı verilen bir cumhurbaşkanının görevi kendiliğinden sona erer.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yüce Divan kararlarına karşı yeniden inceleme başvurusu yapılabilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Hakkında soruşturma açılan veya Yüce Divana sevk kararı verilen bir cumhurbaşkanının görevi kendiliğinden sona ermez. 2017 Anayasa değişikliği ile Yüce Divanda seçilmeye engel bir suçtan mahkûm edilen cumhurbaşkanının görevi sona ereceği açıkça düzenlenmiştir. Böylece soruşturma açılmasıyla ya da Yüce Divana sevk kararı ile cumhurbaşkanının görevinin kendiliğinden sona ermeyeceği, bu görevin seçilmeye engel bir suçtan kesinleşmiş mahkûmiyet kararı ile sona ereceği açıkça kabul edilmiştir. Hakkında soruşturma açılmasına karar verilen cumhurbaşkanı için tek yaptırım seçim kararı alamamasıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "5237 sayılı Türk Ceza Yasası'nda sayılan bazı suçların vatandaş veya yabancı tarafından yabancı ülkede işlenmesi durumunda Türk yasaları uygulanır.\nBuna göre aşağıdakilerden hangisi bu suçlar arasında sayılmamıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İnsanlığa karşı suçlar",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Çevrenin kasten kirletilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Rüşvet",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "İşkence",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Mühürde sahtecilik",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Suçun faili ya da mağduru Türk olmadığı ve eylem de Türkiye'de işlenmediği hâlde, Türkiye'de kovuşturma yapılmasını öngören ilkeye \"evrensellik (adalet) ilkesi\" denir. Evrensellik ilkesine göre önemli olan suçun niteliğidir. Evrensellik ilkesinin uygulanabilmesi için failin veya mağdurun uyruğu önemli değildir; önemli olan katalog suçlardan birinin işlenmesidir. Evrensellik ilkesinin uygulanacağı katalog suçlar TCK m. 13/1'de sayılmıştır: soykırım, insanlığa karşı suçlar, göçmen kaçakçılığı, insan ticareti, işkence, çevrenin kasten kirletilmesi, uyuşturucu veya uyarıcı madde imal ve ticareti, uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma, parada sahtecilik, para ve kıymetli damgaları imale yarayan araçların üretimi ve ticareti, mühürde sahtecilik, fuhuş, deniz, demiryolu veya havayolu ulaşım araçlarının kaçırılması veya alıkonulması ya da bu araçlara karşı işlenen zarar verme. 2009 yılında 5918 sayılı Yasayla yapılan değişiklikle rüşvet suçu evrensellik ilkesi kapsamından çıkarılmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Yasama sorumsuzluğu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Meclisin kararı ile kaldırılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Sorumsuzluktan feragat edilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Milletvekilliği sıfatı sona erdikten sonra da devam eder.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Uygulama alanı Genel Kurul ile sınırlıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Şiddete dayalı eylemleri kapsar.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yasama sorumsuzluğu (mutlak dokunulmazlık), bu sorumsuzluktan yararlanan kişilerin meclis çalışmalarındaki oy ve sözlerinden, Mecliste ileri sürdükleri düşüncelerden ya da bunları Meclis dışında tekrarlamak ve açığa vurmaktan dolayı sorumlu tutulamayacakları anlamına gelir. Yasama sorumsuzluğu, milletvekillerinin meclis çalışmalarında her türlü endişeden uzak olarak düşüncelerini açıklayabilmeleri amacını gütmektedir. Sorumsuzluk oy ve sözlere yönelik olup şiddete dayalı eylemleri kapsamaz. Yasama dokunulmazlığının aksine, yasama sorumsuzluğu meclis kararıyla kaldırılmaz, bundan feragat edilemez. Sorumsuzluk süreklidir; milletvekilliği sıfatı sona erdikten sonra da devam eder.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Alman vatandaşı olan (A), Türk vatandaşı olan (T) ile evlenmeyi düşünmekte ve bu amaçla bir dizi hazırlığa girişmektedir. İkametle ilgili sorunları çözemeyen (A), Türkiye'nin Almanya Konsolosluğunda çalışan Türk memur (M)'ye usulsüz bir belge düzenlemesi için rüşvet teklif etmiş, daha sonra eşiyle birlikte Türkiye'ye gelmiştir.\n(A) hakkında yürütülecek soruşturma ve kovuşturmayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(A) hakkında Türkiye'de soruşturma ve kovuşturma yapılamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(A) hakkında Türkiye'de soruşturma yapılabilir ancak kovuşturma yapılamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "(A) hakkında Türkiye'de soruşturma ve kovuşturma yapılabilmesi için Adalet Bakanının istemi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "(A) hakkında Türkiye'de soruşturma ve kovuşturma yapılabilmesi için Türkiye Devletinin resmi yoldan şikâyeti gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(A) hakkında Türkiye'de resen soruşturma ve kovuşturma yapılır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Yabancı ülkede, bir yabancının Türk kamu görevlisine rüşvet vermesi, teklif etmesi, aracılık etmesi ya da nüfuz ticareti suçu işlemesi durumlarında yabancı bakımından Türkiye'de resen yargılama yapılır; soruşturma ve kovuşturma yapılabilmesi için Adalet Bakanının istemi aranmaz (TCK m. 12/5).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza yasalarının zaman bakımından uygulanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İşlendiği zaman yürürlükte bulunan yasaya göre suç sayılmayan bir eylemden dolayı kimseye ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yeni yasanın lehe olan hükümleri geçmişe yürür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Lehe olan yasa saptanırken, yeni ve eski yasanın lehe olan hükümleri birlikte uygulanamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Zamanaşımına ilişkin yasalarda lehe olan yasanın geçmişe yürümesi ilkesi benimsenmiştir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Süreli yasalar, bu yasalar yürürlükten kalktıktan sonra işlenen suçlara da uygulanır.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Süreli ceza yasaları, yürürlükte kalacakları zaman açıkça düzenlenmiş olan ceza yasalarıdır. 5237 sayılı Türk Ceza Yasası, geçici ve süreli yasalar bakımından \"ileriye yürüme\" ilkesini benimsemiştir. Lehe olanın geçmişe uygulanması kuralı, geçici ve süreli yasalar bakımından geçerli değildir. Buna göre geçici veya süreli yasaların, yürürlükte bulundukları süre içinde işlenen suçlar hakkında uygulanmasına devam edilir (TCK m. 7/4).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

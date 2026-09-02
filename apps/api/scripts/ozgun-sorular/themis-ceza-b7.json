@@ -1,0 +1,457 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Eylemi işlediği sırada 12 yaşını doldurmamış olan çocukların ceza sorumluluğu yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Eylemi işlediği sırada 12 yaşını doldurmuş ancak 15 yaşını doldurmamış olanların işlediği eylemin hukuksal anlam ve sonuçlarını algılayamaması veya davranışlarını yönlendirme yeteneğinin yeterince gelişmemiş olması durumunda ceza sorumluluğu yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Akıl hastalığı nedeniyle işlediği eylemin hukuksal anlam ve sonuçlarını algılayamayan veya bu eylemle ilgili olarak davranışlarını yönlendirme yeteneği önemli derecede azalmış olan kişilere ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "15 yaşını doldurmamış sağır ve dilsizlerin ceza sorumluluğu yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "65 yaşını doldurmuş sağır ve dilsizlerin ceza sorumluluğu yoktur.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 31/1'e göre eylemi işlediği sırada 12 yaşını doldurmamış olan çocukların ceza sorumluluğu yoktur; m. 31/2'ye göre 12 yaşını doldurmuş olup 15 yaşını doldurmamış olanların algılama veya davranışlarını yönlendirme yeteneği yeterince gelişmemişse ceza sorumluluğu yoktur; m. 32/1'e göre akıl hastalığı nedeniyle algılama yeteneği bulunmayan veya davranışlarını yönlendirme yeteneği önemli derecede azalmış olana ceza verilmez. TCK m. 33 sağır ve dilsizler için yaş küçüklüğü rejimine paralel bir düzenleme yapmış olup 15 yaşını doldurmamış sağır ve dilsizlerin ceza sorumluluğu yoktur. Buna karşılık yasada 65 yaşını doldurmuş sağır ve dilsizler bakımından ceza sorumluluğunu kaldıran hiçbir hüküm bulunmamaktadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi haksız tahrikin koşullarından biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tahrike neden olan bir eylem olması",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Eylemin haksız olması",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Haksız eylemin failde öfke veya şiddetli üzüntüye neden olması",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Failin işlediği suçun, haksız tahrike neden olan kişiye karşı işlenmiş olması",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Failin işlediği suçun, haksız eylem ile orantılı olması",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 29'a göre haksız bir fiilin meydana getirdiği hiddet veya şiddetli elemin etkisi altında suç işleyen kimseye indirimli ceza verilir. Madde metni; tahrike neden olan bir fiilin bulunmasını, bu fiilin haksız olmasını, failde hiddet veya şiddetli elem doğurmasını ve suçun bu etki altında işlenmesini arar. Buna karşılık işlenen suç ile haksız eylem arasında bir orantı bulunması aranmaz; haksız tahrikin amacı saldırı ile savunma arasında denge kurmak değil, öfkeye yenik düşerek sağlıklı karar veremeyen faile ceza indirimi sağlamaktır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Zorunluluk durumu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Zorunluluk durumunda, kişi bilerek neden olmadığı bir tehlikeden kendisini veya başkasını kurtarmak amacıyla, suç oluşturan ve tehlikeyi uzaklaştırmaya yetecek ölçüde olan bir eylem işlemektedir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Malvarlığına ilişkin haklar için zorunluluk durumundan yararlanılamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Zorunluluk durumu, hukuka uygunluk nedeni olmaktan çıkartılmıştır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Meşru savunmadan farklı olarak, zorunluluk durumunda bir saldırı değil, tehlike söz konusudur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Tehlikeden kaçmayıp ona göğüs germe yükümlülüğü altında bulunan bir kimse, bir tehlike ile karşılaşınca zorunluluk durumunda bulunduğunu ileri süremez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 25/2 zorunluluk durumunu \"kendisine veya başkasına ait bir hakka yönelik olup, bilerek neden olmadığı ve başka suretle korunmak olanağı bulunmayan ağır ve muhakkak bir tehlikeden kurtulmak veya başkasını kurtarmak zorunluluğu ile ve tehlikenin ağırlığı ile konu ve kullanılan vasıta arasında orantı bulunmak koşulu ile işlenen fiiller\" biçiminde tanımlar. Madde tehlikenin yöneldiği hak bakımından hiçbir sınırlama yapmamıştır; bu nedenle malvarlığına yönelik tehlikeler de orantı ve öteki koşullar sağlandığı sürece zorunluluk durumu kapsamına girer.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Emrin hukuka uygunluğunun denetlenmesi yasa tarafından engellenebilir.\nII. Emir hukuka aykırı olmakla birlikte, amir emrinde ısrar eder ve bu emrini sözlü veya yazılı olarak yenilerse emir yerine getirilir.\nIII. Konusu suç oluşturan emirde amir ısrar eder ve bu emrini yazı ile yenilerse emir yerine getirilir.\nIV. Konusu suç oluşturan bir emri, amiri ısrar edip yazılı olarak yenilemeden yerine getiren kimse bundan sorumlu olur.\nAmirin emrini ifayla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II, III ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "I, II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa m. 137 ve TCK m. 24 uyarınca hukuka aykırı emir hiçbir surette yerine getirilmez; amirin ısrarı ve emri yazı ile yenilemesi hâlinde emir yerine getirilirse de bu durumda sorumluluk emri verene ait olur, dolayısıyla II eksik ve yanlıştır. Konusu suç oluşturan emir ise hiçbir surette yerine getirilemez; yerine getiren de emri veren de sorumlu olur (TCK m. 24/3), bu nedenle III yanlıştır. IV ise konusu suç oluşturan emri yerine getirenin her hâlde sorumlu olmasını amirin yazılı yenilememiş olmasına bağladığı için yanlıştır; yazılı yenileme konusu suç oluşturan emirde sonucu değiştirmez. Emrin hukuka uygunluğunun denetlenmesinin yasa tarafından engellendiği durumlarda ise yerine getirilmesinden emri veren sorumlu olur (TCK m. 24/4); I doğrudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Yeni aldığı arabasını çizen akıl hastasını darp eden araç malikinin cezai sorumluluğu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kasten yaralamanın tam cezasıyla cezalandırılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Zorunluluk durumundan yararlanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Haksız tahrikten yararlanabilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Meşru savunmadan yararlanabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Sonucu nedeniyle ağırlaşmış yaralamadan sorumlu olur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 29 haksız tahriki \"haksız bir fiilin meydana getirdiği hiddet veya şiddetli elemin etkisi altında suç işlenmesi\" olarak düzenler. Madde yalnızca fiilin haksız olmasını arar; tahrik edenin kusur yeteneğine sahip olmasını veya cezalandırılabilir olmasını koşul olarak öngörmez. Bu nedenle kusur yeteneği bulunmayan bir akıl hastasının arabayı çizmesi de haksız bir fiildir ve bunun ortaya çıkardığı öfkenin etkisiyle işlenen suçta haksız tahrik hükümleri uygulanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A), ormanda dolaşırken yaban hayvanlarının saldırısına uğrar. Başka türlü korunma olanağı olmayan (A), ormanda yaşayan (B)'nin kulübesinin kapısını kırarak içeri girer.\nBuna göre (A) bakımından aşağıdaki durumlardan hangisi vardır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Görevin ifası",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İşlenemez suç",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hakkın kullanılması",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Zorunluluk durumu",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Meşru savunma",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 25/2'ye göre kendisine veya başkasına ait bir hakka yönelik olup, bilerek neden olmadığı ve başka suretle korunmak olanağı bulunmayan ağır ve muhakkak bir tehlikeden kurtulmak zorunluluğu ile ve tehlikenin ağırlığı ile konu ve kullanılan vasıta arasında orantı bulunmak koşuluyla işlenen fiillerden dolayı faile ceza verilmez. Olayda (A), bilerek neden olmadığı yaban hayvanı saldırısından başka türlü korunma olanağı bulunmadığı için kulübeye girmiştir; zorunluluk durumu söz konusudur. Meşru savunmadan farklı olarak burada bir saldırı değil tehlike vardır, üstelik tehlike üçüncü kişi olan (B)'nin hakkına zarar verilerek giderilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Haksız tahrikle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Haksız tahrike ilişkin hükümler, ayrım yapılmaksızın bütün suçlar ve failler bakımından geçerlidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Haksız tahrik ile meşru savunma bir arada bulunamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Haksız tahrikte, tahriki oluşturan eylemin mutlaka tepkide bulunan kişiye gösterilmesi gerekmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "\"Tasarlama vardır diyebilmek için plân kurma yeterlidir.\" görüşü kabul edilirse tasarlama ile haksız tahrik bir arada bulunabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "İştirak biçiminde işlenen suçlarda, ortaklardan biri haksız tahrik etkisinde suç işlemişse, bütün suç ortaklarının cezası indirilir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 29 haksız tahriki failin kusurunu azaltan kişisel bir neden olarak düzenler. Kusurluluk kişiseldir; bu nedenle iştirak hâlinde işlenen suçlarda haksız tahrik yalnızca hiddet veya şiddetli elemin etkisi altında hareket eden suç ortağı bakımından uygulanır, öteki ortaklar bundan yararlanamaz. Meşru savunmada faile zaten ceza verilmediğinden (TCK m. 25/1) haksız tahrik indirimi ile bir arada bulunması söz konusu olmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A) tarafından üzerine bir tabanca doğrultularak ölümle tehdit edilen (B), (A)'dan kaçabilmek için (C)'ye ait arabayı çalmıştır.\nBuna göre (B)'nin cezai sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(B)'ye meşru savunma nedeniyle ceza verilmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "(B)'ye hırsızlık suçundan ceza verilir ve bu ceza haksız tahrik nedeniyle azaltılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "(B)'ye zorunluluk durumu nedeniyle ceza verilmez.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "(B)'ye hırsızlık suçundan ceza verilir ve bu ceza tehdit nedeniyle azaltılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(B)'ye hırsızlık suçundan ceza verilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 25/2'ye göre kendisine ait bir hakka yönelik olup bilerek neden olmadığı ve başka suretle korunmak olanağı bulunmayan ağır ve muhakkak bir tehlikeden kurtulmak zorunluluğu ile, tehlikenin ağırlığı ile konu ve kullanılan araç arasında orantı bulunmak koşuluyla işlenen fiillerden dolayı faile ceza verilmez. Olayda (B)'nin yaşam hakkına yönelen, bilerek neden olmadığı ve başka türlü korunma olanağı bulunmayan ağır ve kesin bir tehlike vardır; kaçmak için bir aracı alması ile tehlikenin ağırlığı arasında orantı da bulunmaktadır. Bu nedenle zorunluluk durumu söz konusudur ve (B)'ye ceza verilmez. Meşru savunma değildir, çünkü tepki saldırganı değil üçüncü kişi (C)'nin malvarlığını hedeflemiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi 5237 sayılı Türk Ceza Yasası'nda ceza sorumluluğuyla ilgili düzenlemelerden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Taksirli hareket nedeniyle ortaya çıkan sonuç, münhasıran failin kişisel ve ailevî durumu bakımından, artık bir cezanın hükmedilmesini gereksiz kılacak derecede mağdur olmasına yol açmışsa bilinçsiz taksir durumunda faile ceza verilmemesi; bilinçli taksir durumunda ise verilecek cezanın indirilebilmesi esasının kabul edilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Sonucu nedeniyle ağırlaşan suçlarda, failin ağırlaşan sonuçtan dolayı sorumlu tutulabilmesi için en azından taksir düzeyinde kusurunun olması gerektiği",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Objektif sorumluluğa dayanan ve kastın aşılması suretiyle işlenen suçlara yer verilmesi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Hafif tahrik-ağır tahrik ayrımı kaldırılması",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olası kasta yer verilmesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "5237 sayılı Türk Ceza Yasası kusur ilkesini benimsemiş, objektif (kusursuz) sorumluluğa yer vermemiştir. TCK m. 23'e göre bir fiilin kastedilenden daha ağır veya başka bir sonucun oluşumuna sebebiyet vermesi hâlinde kişinin bundan sorumlu tutulabilmesi için bu sonuç bakımından en azından taksirle hareket etmesi gerekir. Öteki seçenekler yasada karşılığı bulunan düzenlemelerdir: m. 22/6 taksirde kişisel cezasızlık/indirim hâlini, m. 21/2 olası kastı, m. 29 ise hafif-ağır tahrik ayrımı yapmayan tek bir haksız tahrik rejimini düzenler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Amirin emrini yerine getirmeyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İşverenin emrini uygulayan işçi sorumlu olmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Emri alan memur, emrin biçim ve içerik bakımından hukuka uygunluğunu araştırmak zorundadır.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Emrin görevle ilgili bir emir olması yeterlidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Emrin konusunun suç oluşturması eylemin hukuka uygunluğunu etkilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Emrin hukuka uygunluğunun denetlenmesi hiçbir şekilde engellenemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 24/2'ye göre yetkili bir merciden verilip yerine getirilmesi görev gereği zorunlu olan bir emri uygulayan kimse sorumlu olmaz. Bu hükmün uygulanabilmesi için emrin yetkili merciden gelmesi, görev gereği zorunlu olması ve yasanın öngördüğü biçim ve içerik koşullarına uygun bulunması gerekir; bu nedenle emri alan memurun emrin hukuka uygunluğunu araştırması hem hakkı hem görevidir. Buradaki emirden anlaşılması gereken kamu hukuku alanında verilen emirlerdir; işverenin işçiye verdiği özel hukuk ilişkisine dayanan emirler bu kapsamda değildir. Konusu suç oluşturan emir hiçbir surette yerine getirilemez (TCK m. 24/3). Emrin hukuka uygunluğunun denetlenmesi yasa tarafından engellenebilir; bu durumda sorumluluk emri verene ait olur (TCK m. 24/4).",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Haksız tahrikle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tahrik eden kusur yeteneğine sahip değilse veya kişisel cezasızlık nedeninden yararlanıyorsa haksız tahrik hükümleri uygulanamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Failin haksız eylemi, mağdur tarafından orantısız biçimde karşılanmışsa, failin cezası haksız tahrik nedeniyle indirilebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hukuka uygun olan bir eylem işleniş biçimi bakımından hakkın kötüye kullanılmasını oluşturuyorsa haksız sayılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Tepkinin tahrik eyleminden hemen sonra gösterilmiş olması gerekmez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Tahriki oluşturan eylemin mutlaka tepkide bulunan kişiye gösterilmesi gerekmez. Ancak suçun mutlaka haksız tahrike neden olan kişiye karşı işlenmesi gerekir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 29 haksız tahrik için yalnızca ortada haksız bir fiilin bulunmasını ve bunun failde hiddet veya şiddetli elem doğurmasını arar. Madde metni tahriki yapan kişinin kusur yeteneğine sahip olmasını veya cezalandırılabilir olmasını koşul saymamıştır; bu nedenle tahrik edenin kusur yeteneğinin bulunmaması ya da kişisel cezasızlık nedeninden yararlanması, haksız tahrik hükümlerinin uygulanmasına engel değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(A)'nın, kendi ceketi sanarak (B)'nin ceketini almasında aşağıdakilerden hangisi söz konusu olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kastı kaldıran yanılma",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Zorunluluk durumu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Fiili yanılmaya dayanan sözde suç",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İşlenememiş suç",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Hırsızlık",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 30/1'e göre fiilin icrası sırasında suçun kanuni tanımındaki maddi unsurları bilmeyen bir kimse kasten hareket etmiş olmaz. Olayda (A), aldığı ceketin başkasına ait olduğunu bilmemektedir; başkasına ait olma, hırsızlık suçunun kanuni tanımındaki maddi unsurlardandır. Bu nedenle (A)'nın yanılması kastı kaldıran yanılmadır. Hırsızlık yalnızca kasten işlenebilen bir suç olduğundan ve TCK m. 22/1 gereği taksirli sorumluluk ancak kanunun açıkça belirttiği hâllerde doğacağından, (A)'nın cezai sorumluluğu yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Zorunluluk durumu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Tehlikeye kasten neden olunmuşsa zorunluluk durumu söz konusu olmaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Tehlikeden kaçmayıp ona göğüs germe yükümlülüğü altında bulunan bir kimse, bir tehlike ile karşılaşınca zorunluluk durumunda bulunduğunu ileri süremez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Tehlikeden kurtulmak için başka türlü hareket edebilme olanağı varsa zorunluluk durumundan söz edilemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Üçüncü kişi yararına zorunluluk durumu mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Zorunluluk durumunda verilen zararın tazmini gerekmez.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 25/2 zorunluluk durumu için tehlikeye bilerek neden olunmamış olmasını, tehlikeden başka suretle korunma olanağının bulunmamasını, tehlikenin ağır ve muhakkak olmasını ve orantı bulunmasını arar; madde \"kendisine veya başkasına ait bir hakka yönelik\" dediğinden üçüncü kişi yararına zorunluluk durumu da mümkündür. Buna karşılık zorunluluk durumu yalnızca cezai sorumluluğu kaldırır; verilen zararın hukuki sorumluluğunu ortadan kaldırmaz, hakkaniyet gerektiriyorsa zararın tazmini gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

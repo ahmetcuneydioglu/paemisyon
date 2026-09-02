@@ -1,0 +1,142 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Anayasa değişikliklerinde halkoylaması ne zaman yapılır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Değişikliğin Resmi Gazetede yayımını izleyen günden itibaren 60 gün sonraki ilk Pazar günü",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Değişikliğin Resmi Gazetede yayımını izleyen günden itibaren 120 gün sonraki ilk Pazar günü",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Değişikliğin TBMM Genel Kurulunda kabulünü izleyen günden itibaren 60 gün sonraki ilk Pazar günü",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Değişikliğin TBMM Genel Kurulunda kabulünü izleyen günden itibaren 120 gün sonraki ilk Pazar günü",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Değişikliğin Resmi Gazetede yayımını izleyen günden itibaren en geç 1 yıl içinde",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa değişikliğinin halkoylaması, ilgili Anayasa değişikliği Kanununun Resmi Gazetede yayımını takip eden altmışıncı günden sonraki ilk Pazar günü yapılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Anayasa değişiklikleri ile normal kanunların kabul edilmesinde,\nI. Cumhurbaşkanınca kısmen uygun bulunmama\nII. Resmi Gazetede 15 gün içinde yayımlanma\nIII. Halkoylamasına sunulma\nyöntemlerinden hangileri ortak hükümler arasında yer alır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kanunlarda halkoylaması usulü bulunmamaktadır; halkoylaması yalnızca anayasa değişikliklerine özgü bir yöntemdir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Anayasa değişikliğine ilişkin kanunun şekil yönünden Anayasa Mahkemesince yapılan denetiminde, aşağıda verilen eksikliklerden hangisinin tespit edilmesi değişikliğin iptaline neden olmaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Teklifin Anayasaya aykırı olduğu",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İvedilikle görüşülemeyeceği kuralına uyulmamış olduğu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İkinci tur görüşmede maddelerin gerekli çoğunlukla kabul edilmemiş olduğu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Son oylamada yeterli çoğunluğun sağlanamamış olduğu",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Teklifin, Anayasa Komisyonunda görüşülmeden Genel Kurula gelmiş olduğu",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa değişikliklerinin şekil yönünden denetimi, yani iptal nedenleri sınırlıdır. Her türlü şekil eksikliği iptale neden olmaz. A, B, C ve D seçeneklerinde verilenler dışında hiçbir eksiklik iptal nedeni oluşturmaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Anayasa değişikliklerinin halkoylaması ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Halkoylamasına sunulma işlemleri, Yüksek Seçim Kurulunun yönetim ve denetiminde seçim kurullarınca yürütülür.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Halkoylamasında beyaz renk üzerinde Evet, kahverengi üzerinde Hayır ibareleri bulunan iki ayrı renkten oluşan birleşik oy pusulası kullanılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yabancı ülkelerdeki vatandaşlar, halkoylamasından 1 ay öncesinden başlayarak oylarını kullanabilirler.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Mazereti olmaksızın halkoylamasına katılmayanlara para cezası verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Geçerli oyların yarısından çoğu Evet ise anayasa değişikliği halk tarafından kabul edilmiş olur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yabancı ülkelerdeki vatandaşlar, halkoylamasından yirmi gün öncesinden başlayarak oylarını kullanabilirler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

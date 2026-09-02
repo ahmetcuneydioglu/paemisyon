@@ -1,0 +1,492 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Kanuna dayanmadan çıkarılırlar.\nII. Gerekçeleri olmaksızın yayımlanırlar.\nIII. Anayasa Mahkemesince şekil yönünden denetlenemezler.\nCumhurbaşkanlığı kararnameleri ile ilgili yukarıda verilen ifadelerden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanlığı kararnameleri, bir kanuna dayanmadan ve yasama organının onayı olmadan ilk elden çıkarılır ve gerekçeleri olmaksızın yayımlanırlar. Ancak hem şekil hem esas yönünden yargısal denetime tabidirler.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, aşağıdakilerden hangisi Cumhurbaşkanlığı kararnamesine “konu bakımından yetki yönünden” getirilen sınırlamalardan biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yürütme yetkisine ilişkin konularda çıkarılabileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kişi hakları ve ödevlerinin düzenlenemeyeceği",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Anayasa'da münhasıran kanunla düzenlenmesi öngörülen konularda çıkarılamayacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kanunda açıkça düzenlenen konularda çıkarılamayacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kanun hükümleriyle çatışması durumunda kanunların uygulanacağı",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Cumhurbaşkanlığı kararnamelerine konu bakımından yetki yönünden getirilen sınırlamalar, Anayasa'nın 104. maddesinin on yedinci fıkrasının ilk dört cümlesinde düzenlenmiştir. E seçeneğinde verilen, konu bakımından yetkinin bir sınırı değil, kararnamelerin hukuki sonuçlarından biridir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Cumhurbaşkanı yardımcısının görevinin sona ermesi nedenlerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yüce Divanda seçilmeye engel bir mahkûmiyet alınması",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İstifa",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Milletvekilliğinin sona ermesi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Ölüm",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Azil",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanı yardımcısı seçilebilmek için milletvekili olmak gerekmez, milletvekili seçilme yeterliliğine sahip olmak gerekir. Dolayısıyla milletvekili olmama durumu herhangi bir engel oluşturmadığı gibi, aksine olması gerekendir; milletvekilliğinin sona ermesi görevi sona erdirmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, hastalık ve yurtdışına çıkma gibi sebeplerle “geçici olarak görevden ayrılması” durumunda Cumhurbaşkanına aşağıdakilerden hangisi vekâlet eder?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM'de en çok üyeye sahip parti grubunun başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanı tarafından belirlenecek bir bakan",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Cumhurbaşkanı yardımcısı",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Cumhurbaşkanlığı İdari İşler Başkanı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2017 yılı Anayasa değişikliğiyle Cumhurbaşkanlığına vekâlet kurumunda değişiklik yapılmıştır. Daha önce TBMM Başkanı tarafından yürütülen bu görev, yeni sistemde Cumhurbaşkanı yardımcısına verilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Milli Güvenlik Kurulu üyesi değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanı yardımcıları",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İçişleri Bakanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Hava Kuvvetleri Komutanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Genelkurmay Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milli Güvenlik Kurulu Genel Sekreteri",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre MGK; Cumhurbaşkanı, Cumhurbaşkanı yardımcıları, Adalet Bakanı, İçişleri ve Dışişleri Bakanları, Milli Savunma Bakanı, Genelkurmay Başkanı ile kuvvet komutanlarından (Kara, Hava, Deniz Kuvvetleri komutanları) oluşur. MGK Genel Sekreteri ise Kurulun sekretarya işlerini yürüten, toplantılarda bulunan ancak Kurulun üyesi sayılmayan bir katılandır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Cumhurbaşkanının 1982 Anayasası'nda belirtilen görev ve yetkileri arasında yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Üniversite rektörlerini seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Radyo ve Televizyon Üst Kurulu üyelerini seçmek",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Yükseköğretim Kurulu üyelerini seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kanunları yayımlamak",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletlerarası antlaşmaları onaylamak ve yayınlamak",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "RTÜK üyelerini seçmek Cumhurbaşkanına değil TBMM'ye ait bir yetkidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Cumhurbaşkanının seçilebilmesi için birinci turda aranan asgari çoğunluk aşağıdakilerden hangisinde doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Geçerli oyların en az beşte üçü",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Geçerli oyların üçte ikisi",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Seçime katılanların salt çoğunluğu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Geçerli oyların salt çoğunluğu",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Geçerli oyların üçte biri",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanı halk tarafından seçilir. Yapılacak seçimde birinci turda geçerli oyların salt çoğunluğunu alan aday seçilmiş olur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre olağanüstü hal kararı ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanınca karar verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Şiddet olayları nedeniyle kamu düzeninin ciddi şekilde bozulması halinde, Milli Güvenlik Kurulunun da görüşü alındıktan sonra yurdun bir veya birden fazla bölgesinde veya bütününde, süresi 6 ayı geçmemek üzere olağanüstü hal ilan edilebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Karar, Resmi Gazetede yayımlanır ve hemen TBMM'nin onayına sunulur.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Olağanüstü hal süresince olağanüstü halin gerekli kıldığı konularda Cumhurbaşkanlığı kararnamesi çıkarılabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Karar, TBMM tarafından süresi kısaltılarak da onaylanabilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'nın 119. maddesine göre Cumhurbaşkanı, sayılan hallerde yurdun tamamında veya bir bölgesinde, süresi altı ayı geçmemek üzere olağanüstü hal ilan edebilir. Karar, verildiği gün Resmi Gazetede yayımlanır ve aynı gün TBMM onayına sunulur. TBMM, gerekli gördüğü takdirde olağanüstü halin süresini kısaltabilir, uzatabilir veya olağanüstü hali kaldırabilir. Dikkat edilirse ilan edilmeden önce MGK'dan görüş alınmamaktadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, olağanüstü halin süresinin en fazla ne kadar uzatılabileceği, olağanüstü halin uzatılmasını kimin talep edebileceği ve uzatılmasına kimin karar vermeye yetkili olduğu aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "4 ay - TBMM - Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "6 ay - Cumhurbaşkanı - TBMM",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "4 ay - Milli Savunma Bakanı - Cumhurbaşkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "4 ay - Cumhurbaşkanı - TBMM",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "6 ay - Genelkurmay başkanı - Cumhurbaşkanı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM, Cumhurbaşkanının talep etmesiyle olağanüstü hal süresinin uzatılmasına her defasında dört aylık süreyi aşmamak kaydı ile karar verebilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Kanun\nII. Cumhurbaşkanlığı kararnamesi\nIII. Genelge\n1982 Anayasası'na göre yönetmelikler, yukarıda verilenlerden hangilerinin uygulanmasını sağlamak amacıyla çıkarılabilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'nda 2017 yılında yapılan değişiklikle yönetmelikler, hem kanunların hem Cumhurbaşkanlığı kararnamelerinin uygulanmasını sağlamak amacıyla çıkarılabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Devlet Denetleme Kurulu ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kurul üyeleri TBMM ve Cumhurbaşkanı tarafından seçilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Adli makamlar Kurulun denetim alanı dışındadır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kurul üyeliği için yükseköğrenimin tamamlanması şarttır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kurulun görevden uzaklaştırma yetkisi yoktur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kurulun kendiliğinden harekete geçme yetkisi yoktur.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yargı organlarını denetleme yetkisi olmayan Kurulun Başkan ve tüm üyeleri doğrudan Cumhurbaşkanı tarafından seçilir. Kurul'un işleyişi, üyelerinin görev süresi ve diğer özlük işleri Cumhurbaşkanlığı kararnamesiyle düzenlenir. Kurulun görevden uzaklaştırma yetkisi Anayasa Mahkemesince iptal edilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Devlet Denetleme Kurulunun yetkileri arasında yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İnceleme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Araştırma",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Denetleme",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "İdari soruşturma yapma",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Görevden uzaklaştırma",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Devlet Denetleme Kurulu, Cumhurbaşkanının istemiyle her türlü idari soruşturma, inceleme, araştırma ve denetim yapabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Milli Güvenlik Kurulunun gündemi aşağıdakilerden hangisi tarafından düzenlenir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "MGK Genel Sekreteri",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Genelkurmay Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanı",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Cumhurbaşkanı yardımcısı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM Başkanı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre Milli Güvenlik Kurulunun gündemi Cumhurbaşkanı yardımcıları ve Genelkurmay Başkanının önerileri dikkate alınarak Cumhurbaşkanınca düzenlenir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Cumhurbaşkanı göreve başlayıncaya kadar aşağıdakilerden hangisi görev yapar?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Görev süresi dolan Cumhurbaşkanı",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanı yardımcısı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Genelkurmay Başkanı",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "MGK Genel Sekreteri",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre, Cumhurbaşkanı göreve başlayıncaya kadar görev süresi dolan Cumhurbaşkanının görevi devam eder.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

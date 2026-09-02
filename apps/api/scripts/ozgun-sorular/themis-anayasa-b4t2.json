@@ -1,0 +1,492 @@
+[
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "I. Genel görüşme\nII. Meclis araştırması\nIII. Meclis soruşturması\nTBMM'nin yukarıda sayılan bilgi edinme ve denetim araçlarının hangisi Meclis siyasi parti grupları tarafından istenebilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM İçtüzüğüne göre, Meclis siyasi parti grupları genel görüşme ve Meclis araştırması önergesi vermeye yetkilidir. Öncüller arasında yer alan Meclis soruşturması önergesi verme yetkisi ise TBMM üye tam sayısının salt çoğunluğuna aittir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi TBMM Başkanının görevleri arasında yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Danışma Kuruluna başkanlık etmek",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM komisyonlarını denetlemek",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM'nin idari, mali ve kolluk işlerini yürütmek",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Genel Kurul görüşmelerini yönetmediği zamanlarda Genel Kurulda oy kullanmak",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Meclisi olağanüstü toplantıya çağırmak",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 94. maddesinin son fıkrasına göre, oturumu yönetmediği zaman oy kullanma hakkına sahip olanlar, Meclis başkanvekilleridir. Meclis Başkanı oturumu yönetsin ya da yönetmesin hiçbir zaman oy kullanamaz. Meclis Başkanı, kendiliğinden ya da en az yüz yirmi milletvekilinin isteği üzerine Meclisi olağanüstü toplantıya çağırır, TBMM'yi temsil eder, Başkanlık Divanına başkanlık eder.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisinin erken genel seçime karar vermesi ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM, süresi dolmadan herhangi bir sebeple üye tam sayısının beşte üçünün vereceği karar ile seçimin yenilenmesine karar verebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "TBMM, üye tam sayısının yüzde beşinin boşalması halinde derhal erken genel seçim kararı almak zorundadır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM erken seçim kararı alırsa, seçim bu karardan 90 gün sonraki ilk Pazar günü yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Anayasa Mahkemesine göre, TBMM'nin erken genel seçim kararını kanunla değil, mutlaka parlamento kararı ile alması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM, genel seçimin üzerinden 30 ay geçmedikçe yeni bir genel seçim kararı alamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Birbiriyle en çok karıştırılan müesseselerden ikisi, seçimlerin yenilenmesi (erken seçim) ile ara seçimdir. TBMM, seçimlerin yenilenmesine karar verebilir. 2017 yılında yapılan Anayasa değişikliğine göre TBMM'nin seçimleri yenileyebilmesi için üye tam sayısının beşte üçü çoğunluğu gerekmektedir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Cumhurbaşkanı\nII. Anayasa Mahkemesi Başkanı\nIII. Danıştay Başkanı\nIV. Bakan\nV. Cumhurbaşkanı yardımcısı\n1982 Anayasası'na göre, yukarıda sayılanlardan hangileri milletvekili olmasa bile milletvekili seçilme yeterliliğine sahip olmalıdır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, IV ve V",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Cumhurbaşkanı, Cumhurbaşkanı yardımcısı ve bakanın, milletvekili seçilme yeterliliğine sahip olması Anayasa emridir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre TBMM'nin ara verme süresi en çok ne kadardır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "7 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "10 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "15 gün",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "30 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "3 ay",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM'nin, tatil dışında çalışmalarını ertelemesine ara verme denir ve ara verme süresi on beş günü geçemez. Tatil veya ara verme kararı vermeye, Danışma Kurulunun görüşü ile Genel Kurul yetkilidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre TBMM seçimlerinin yenilenmesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM, seçimlerinin yenilenmesi kararını herhangi bir sebeple verebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM seçimlerinin yenilenmesine Cumhurbaşkanı da karar verebilir. Bu durumda TBMM seçimleriyle Cumhurbaşkanlığı seçimi birlikte yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM'nin, üye tam sayısının beşte üçünün kabulü ile seçimlerin yenilenmesine karar vermesi gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM seçimlerinin yenilenmesi kararı, 48 saat içinde Resmi Gazetede yayımlanarak ilan olunur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "TBMM seçimlerinin yenilenmesine karar verilmesi durumunda ikinci kez görevde bulunan Cumhurbaşkanı yeniden aday olamaz.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa'nın 116. maddesine göre TBMM, üye tam sayısının beşte üç çoğunluğuyla seçimlerin yenilenmesine karar verebilir. Bu halde TBMM genel seçimi ile Cumhurbaşkanlığı seçimi birlikte yapılır. Cumhurbaşkanının ikinci döneminde Meclis tarafından seçimlerin yenilenmesine karar verilmesi halinde, Cumhurbaşkanı bir defa daha aday olabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Türkiye Büyük Millet Meclisinin parlamento kararı ile yaptığı işlemlerden biridir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Uluslararası andlaşmaların onaylanmasını uygun bulma",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Genel af ilanı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kesinhesabı kabul etme",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bütçeyi kabul etme",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Olağanüstü hal kararını onaylama",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Cumhurbaşkanınca karar verilen olağanüstü hal, TBMM tarafından parlamento kararıyla onaylanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Bütçe Kanunu ile ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanı kaynaklı olduğu için Danıştay'ın yargısal denetimine tabidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Komisyonda görüşülürken gider artırıcı ve gelir azaltıcı teklif ve önerilerde bulunulamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bütçesi kabul edilmeyen Cumhurbaşkanı Anayasa'ya göre istifa etmiş sayılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM'nin parlamento kararı ile onayladığı bir kural işlemdir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa Mahkemesinin denetimine tabidir.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Bütçe Kanunu Cumhurbaşkanınca TBMM'ye geri gönderilemez ancak anayasa yargılamasına elbette tabidir. B seçeneğine dikkat edelim: Anayasa'nın 162. maddesinin son fıkrası gereğince gider artırıcı ve gelir azaltıcı teklif ve önerilerde bulunmak, Genel Kurul görüşmeleri sırasında yasaktır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre ara seçimle ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ara seçime gidilebilmesinin tek nedeni, TBMM üyeliklerinde boşalma olmasıdır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM üyeliklerinde boşalma olması halinde her zaman ara seçime gidilebilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Genel seçimlere 1 yıl kala da ara seçime gidilmesi mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Seçimlere 1 yıl kalmamış olması şartıyla zorunlu olarak ara seçime gidilebilmesi için TBMM üyeliklerinde yüzde 5 boşalma olması gereklidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kural olarak genel seçimden 30 ay geçmedikçe ara seçime gidilemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Ara seçim Anayasa'da sıkı koşullara bağlanmıştır. Dolayısıyla her zaman ve her durumda ara seçime gidilmesi mümkün değildir. C seçeneği yanıltıcı olmamalıdır: kural olarak bu ifade doğru değildir, ancak özel bir durum olarak bir seçim çevresi veya ilin tüm üyeliklerinde boşalma olması durumunda ara seçim yapılması söz konusu olur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıda sayılanlardan hangisi TBMM'nin görevlerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kanun koymak, değiştirmek, kaldırmak",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Olağanüstü hal ilan etmek",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Bütçe ve kesin hesap kanun tekliflerini görüşmek ve kabul etmek",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Hâkimler ve Savcılar Kurulunun yedi üyesini seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Savaş ilanına karar vermek",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 87. maddesine göre TBMM'nin bazı görev ve yetkileri şunlardır: Kanun koymak, değiştirmek ve kaldırmak, bütçe ve kesin hesap kanun tekliflerini görüşmek ve kabul etmek, para basılmasına ve savaş ilanına karar vermek, milletlerarası antlaşmaların onaylanmasını uygun bulmak, üye tam sayısının beşte üç çoğunluğunun kararı ile genel ve özel af ilanına karar vermek. 2017 yılı değişikliğiyle Hâkimler ve Savcılar Kuruluna üye seçme yetkisi de kabul edilmiştir. Olağanüstü hal ilan etme yetkisi Cumhurbaşkanına aittir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi milletvekilliğinin düşmesi nedenlerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Milletvekilinin istifasının kabul edilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Milletvekilinin yasama dokunulmazlığının kaldırılması",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Milletvekilinin kesinleşmiş mahkûmiyetine ilişkin kararın TBMM Genel Kuruluna bildirilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Milletvekilinin Cumhurbaşkanı seçilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletvekilinin kısıtlanmasına ilişkin kararın TBMM Genel Kuruluna bildirilmesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Milletvekilliği ölüm, görev süresinin dolması, Cumhurbaşkanı seçilme ve 2017 yılı Anayasa değişikliği gereğince bakan veya Cumhurbaşkanı yardımcısı olarak seçilme gibi nedenlerle kendiliğinden; istifa, devamsızlık ve üyelikle bağdaşmayan işlerde ısrar hallerinde TBMM Genel Kurulu kararıyla; kısıtlılık ve kesin hüküm giyme hallerinde mahkeme kararının TBMM'ye bildirilmesiyle sona erer. Milletvekili dokunulmazlığının kaldırılması, milletvekilliğinin düşmesi nedenlerinden biri değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, Cumhurbaşkanı hakkında bir suç işlediği iddiasıyla soruşturma önergesi verilmesi kaç milletvekilinin imzasıyla mümkündür?",
+  "options": [
+   {
+    "label": "A",
+    "text": "En az 360 milletvekili",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "En az 400 milletvekili",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "En az 300 milletvekili",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "En az 301 milletvekili",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "En az 200 milletvekili",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'nda yapılan 2017 yılı değişikliğiyle Cumhurbaşkanı hakkında bir suç işlediği iddiası üzerine TBMM tarafından ceza soruşturması yapılması suretiyle denetim yolu açılmış, önergenin verilebilmesi için üye tam sayısının salt çoğunluğunun gerektiği (en az 301 milletvekili) kuralı düzenlenmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre milletvekilliğinin sona ermesine ilişkin aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanı seçilen milletvekilinin milletvekilliği kendiliğinden düşer.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İstifa eden milletvekilinin milletvekilliği, görüşmesiz olarak ve basit çoğunlukla alınan karar üzerine TBMM Genel Kurulunca düşürülür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Milletvekilliği ile bağdaşmayan işlerde ısrar eden milletvekilinin milletvekilliğinin düşmesine TBMM tarafından gizli oyla karar verilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Meclis çalışmalarına özürsüz veya izinsiz olarak 1 ay içinde toplam 5 birleşim günü katılmayan milletvekilinin milletvekilliğinin düşmesine, TBMM Genel Kurulunca üye tam sayısının salt çoğunluğunun gizli oyuyla karar verilir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Milletvekilinin kesin hüküm giymesi halinde bu husustaki kesin mahkeme kararının TBMM Genel Kurulunun bilgisine sunulmasıyla düşer.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 84. maddesine göre, TBMM çalışmalarına özürsüz veya izinsiz olarak bir ay içinde toplam beş birleşim günü katılmayan milletvekilinin milletvekilliğinin düşmesine, durumun Meclis Başkanlık Divanınca tespit edilmesi üzerine, Genel Kurulca üye tam sayısının salt çoğunluğunun oyuyla karar verilebilir. Bağdaşmayan işlerde ısrar halinde oylama gizli yapılırken, devamsızlık nedeniyle düşmede oylamanın gizli olmadığı dikkatten kaçmamalıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "d4a6b734-0110-4c9e-ae57-8cc39091a369",
+  "articleNo": null,
+  "stem": "TBMM İçtüzüğüne göre, TBMM'de milletvekillerinin and içmesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Genel seçimden sonraki ilk birleşimde and içme töreni yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Milletvekilleri, seçim çevresi, soyadı ve adlarının alfabe sırasına göre and içerler.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Ara seçimde milletvekili seçilenler, katıldıkları ilk birleşimin başında and içerler.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "And içmekten kaçınan milletvekili, milletvekillik sıfatını kazanamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "And içmekten kaçınan milletvekili, milletvekillik sıfatından kaynaklanan haklardan yararlanamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İçtüzük gereğince, TBMM Genel Kurulu, milletvekili genel seçimi kesin sonuçlarının Yüksek Seçim Kurulunca ilanını takip eden üçüncü gün saat 14.00'te çağrısız olarak toplanır. Bu birleşimde, önce milletvekillerinin and içme töreni yapılır. And içmekten imtina eden milletvekilleri, milletvekili sıfatından kaynaklanan haklardan yararlanamazlar. Andın milletvekillik sıfatının kazanılmasına bir etkisi yoktur; milletvekillik sıfatı, kişi hakkında il seçim kurulu tarafından milletvekili seçildiğine ilişkin tutanağın düzenlendiği anda kazanılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

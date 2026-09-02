@@ -1,0 +1,387 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Türk anayasa yargılamasında anayasa değişikliklerinin şekil bakımından denetimiyle ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnızca şekil bakımından denetim istendiği hallerde Anayasa Mahkemesi, gerekli görürse esas bakımından da denetim yapabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Şekil bakımından denetim isteme yetkisi sadece Cumhurbaşkanına aittir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Anayasa Mahkemesinin inceleme yetkisi teklif ve oylama çoğunluğuna ve ivedilikle görüşülemeyeceği şartına uyulup uyulmadığı hususu ile sınırlıdır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Şekil bakımından denetim isteme yetkisi sadece TBMM üyelerinin en az beşte birine aittir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Davaya bakan mahkeme, Anayasa değişikliğini şekil bakımından Anayasa'ya aykırı görürse bunu itiraz yoluyla Anayasa Mahkemesine götürebilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa değişikliklerinin esas bakımından denetlenmesi mümkün değildir. Anayasa değişikliklerinin ve kanunların şekil bakımından denetimini istemeye hem Cumhurbaşkanı hem de TBMM üye tam sayısının en az beşte biri tutarındaki üyeler yetkilidir. Anayasa Mahkemesinin anayasa değişikliklerini inceleme yetkisi, teklif ve oylama çoğunluğuna ve ivedilikle görüşülemeyeceği şartına uyulup uyulmadığı hususu ile sınırlıdır. İtiraz (def'i) yolunun konusu, kanunlar ve Cumhurbaşkanlığı kararnamelerinin sadece esas bakımından denetimi istemidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre aşağıdakilerden hangisi Anayasa Mahkemesinin görev ve yetkilerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Meclis çalışmalarına özürsüz veya izinsiz olarak 1 ay içinde toplam 5 birleşim katılmayan bir milletvekilinin milletvekilliğinin düşmesine ilişkin TBMM kararının iptali istemini karara bağlamak",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Uyuşmazlık Mahkemesi Başkanını seçmek",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "TBMM İçtüzüğünün şekil bakımından Anayasa'ya uygunluğunu denetlemek",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Siyasi partilerin mali denetimini yapmak",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Cumhurbaşkanınca ilan edilen olağanüstü halin onaylanmasına ilişkin TBMM kararının Anayasaya aykırılığı iddiasını karara bağlamak",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Cumhurbaşkanınca ilan edilen olağanüstü halin onaylanması kararı, TBMM tarafından ve parlamento kararı ile yapıldığı için anayasa yargısına tabi değildir; parlamento kararları kural olarak yargısal denetime tabi değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Anayasa değişiklikleri\nII. Kanunlar\nIII. Cumhurbaşkanlığı kararnameleri\nIV. TBMM İçtüzüğü\n6216 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun'a göre, yukarıda sayılanlardan hangilerine karşı şekil yönünden sınırlı bir yargısal denetim öngörülmüştür?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "I, II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "6216 sayılı Kanun'un 36. maddesine göre şekil bakımından denetim; Anayasa değişikliklerinde teklif çoğunluğuna, oylama çoğunluğuna ve ivedilikle görüşülemeyeceği şartına uyulup uyulmadığı; kanunların ve TBMM İçtüzüğünün son oylamasının öngörülen çoğunlukla yapılıp yapılmadığı ile sınırlıdır. Cumhurbaşkanlığı kararnameleri ise tüm şekil eksikleri yönünden incelenebilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "95 milletvekili tarafından kabul edilen bir kanun Resmi Gazetede yayımlanarak yürürlüğe girmiştir. 115 milletvekili bu kanuna karşı yayımından itibaren 8 gün sonra Anayasa Mahkemesinde şekil bakımından iptal davası açmıştır.\nBu istem karşısında Anayasa Mahkemesi, aşağıdaki kararlardan hangisini vermelidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kanunun kabulünde asgari karar yeter sayısının sağlanamadığı gerekçesiyle kanunun iptaline",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Başvurunun en az 120 milletvekilince yapılmadığı gerekçesiyle ilk incelemede reddine",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Başvurunun en az 120 milletvekilince yapılmadığı gerekçesiyle davanın esasının incelenmesi sırasında reddine",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Süresinde yapılmadığı gerekçesiyle başvurunun reddine",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletvekillerinin kanunun şekil bakımından iptalini isteyemeyecekleri gerekçesiyle başvurunun reddine",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bir norm açıkça Anayasaya aykırı da olsa, şekil ve esas denetimine geçilmeden önce başvuru koşullarının tam olarak gerçekleşmiş olması zorunludur. 95 milletvekilince kabul edilen kanun açıkça Anayasa'ya aykırıdır; ancak başvuru için gereken en az 120 milletvekili sayısına ulaşılmadığından başvuru ilk incelemede reddedilir ve davanın esasının görüşülmesine geçilmez. Usulüne uygun bir başka başvuru da yapılmamışsa, bu kanun artık şekil bakımından iptal edilemez ve yürürlükte kalmaya devam eder.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Hâkimler ve Savcılar Kurulu müfettişlerinin görev ve yetkilerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Hâkimlerin görevlerini kanun ve diğer mevzuata uygun olarak yapıp yapmadıklarını denetleme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Savcıların görevlerini kanun ve diğer mevzuata uygun olarak yapıp yapmadıklarını denetlemek",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhuriyet savcılarının idari nitelikteki iş ve işlemlerini denetlemek",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Hâkim ve savcıların suç işleyip işlemediklerini araştırmak, incelemek ve soruşturmak",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Hâkim ve savcıların görevleri sırasında suç işleyip işlemediklerini araştırmak, incelemek ve soruşturmak",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yargısal faaliyetler dışında kalan, icra, noter, cezaevi gibi mercilerin denetlenmesi ile savcıların idari nitelikteki iş ve işlemlerinin denetimi, Adalet Bakanlığına bağlı olarak görev yapan adalet müfettişleri ile hâkim ve savcı mesleğinden olan iç denetçiler eliyle yapılacaktır. Kurul'a bağlı olan Kurul müfettişleri ile Adalet Bakanlığına bağlı olan adalet müfettişleri ayrı alanlarda görev yapar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Hâkimler ve Savcılar Kurulu ile ilgili aşağıdakilerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Görev süreleri dolmadan Kurul üyeliğinin boşalması durumunda, her üyelik için boşalmayı takip eden 60 gün içinde yeni üyelerin seçimi yapılır.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Adalet Bakanı Daire çalışmalarına katılamadığı için dairelerde oy hakkına sahip değildir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Adli ve idari yargı hâkimlerini birinci sınıfa ayırmaya Kurul yetkilidir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Kurul'a bağlı bir Genel Sekreterlik bulunur.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Meslekten çıkarma cezası hariç Kurul kararlarına karşı yargı yolu kapalıdır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kurul'un yönetimi ve temsili Kurul Başkanı olan Adalet Bakanına aittir; Başkan Genel Kurul çalışmalarına katılır ve oy hakkına sahiptir, ancak dairelerin çalışmalarına katılamaz. Hâkim ve savcıları birinci sınıfa ayırmaya Kurul yetkilidir. Kurul'a bağlı bir Genel Sekreterlik kurulmuştur. Kurul kararlarına karşı prensip olarak yargı yolu kapalı olmakla birlikte, meslekten çıkarma cezasına ilişkin kararlarına karşı yargı yolu açılmıştır. Seçilen üyelerin görev süreleri dolmadan Kurul üyeliğinin boşalması durumunda, boşalmayı takip eden otuz gün içinde yeni üyelerin seçimi yapılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıda sayılan TBMM kararlarından hangisi Anayasa Mahkemesinin doğrudan denetimine tabidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Anayasa Mahkemesine üye seçme",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bütçe komisyonunun oluşturulması",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Başkanlık Divanının seçilmesi",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Milletvekilliği ile bağdaşmayan bir görev ve hizmeti sürdürmekte ısrar eden milletvekilinin milletvekilliğinin düşürülmesi kararı",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "TBMM Başkanının seçilmesi",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 85. maddesi gereği, milletvekilliği ile bağdaşmayan bir görev ve hizmeti sürdürmekte ısrar etmiş olmak sebebi ile milletvekilliğinin düşürülmesine ilişkin parlamento kararına karşı Anayasa Mahkemesine başvurulabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. İptal davası\nII. İtiraz yolu\nIII. Bireysel başvuru\nYukarıda sayılanların hangileri, kanunların Anayasa Mahkemesinde iptalinin istenmesi yolları arasındadır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Bireysel başvuru, Yüksek Mahkemeye, Meclis normlarına karşı iptal istemeye ilişkin bir başvuru yolu değildir. Bireysel başvuru, kişisel hak ihlaline karşı öngörülmüştür. Anayasa'nın 148. maddesine göre herkes Anayasa'da güvence altına alınmış temel hak ve özgürlüklerinden Avrupa İnsan Hakları Sözleşmesi kapsamındaki herhangi birinin kamu gücü tarafından ihlal edildiği iddiasıyla Anayasa Mahkemesine başvurabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Yüce Divana sevk edilen Cumhurbaşkanının yargılanmasının tamamlanması için belirlenen süre aşağıdakilerden hangisinde doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "1 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "2 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "3 ay",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "5 ay",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "10 ay",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre Cumhurbaşkanı hakkında Yüce Divana sevk kararı alınırsa, Yüce Divan yargılaması üç ay içinde tamamlanır; bu sürede tamamlanamazsa bir defaya mahsus olmak üzere üç aylık ek süre verilir, yargılama bu sürede kesin olarak tamamlanır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Anayasa Mahkemesinin iptal kararları ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Gerekçesi yazılmadan açıklanamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "İptal olunan kanun hükmü, kural olarak iptal kararının Resmi Gazetede yayımlandığı tarihte yürürlükten kalkar.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İptal kararının yürürlüğe girdiği tarihte, iptal olunan kanun hükmü ile yürürlükten kaldırılmış kanun hükümleri kendiliğinden yürürlük kazanır.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Anayasa Mahkemesi gereken hallerde, iptal kararının yürürlük tarihini erteleyebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa Mahkemesi, iptal kararıyla kanun koyucu gibi hareketle yeni bir uygulamaya yol açacak biçimde hüküm tesis edemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa Mahkemesinin iptal kararının yürürlüğe girdiği tarihte, iptal olunan kanun hükmü ile yürürlükten kaldırılmış olan kanun hükümleri kendiliğinden yürürlük kazanmaz. Ortaya çıkan yasal boşluğun yasama meclisi tarafından yeni bir düzenlemeyle doldurulması gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Cumhurbaşkanı\nII. TBMM\nIII. Yargıtay\nIV. Adli yargı hâkim ve savcıları\n1982 Anayasası'na göre yukarıdakilerden hangilerinin Hâkimler ve Savcılar Kuruluna üye seçme yetkisi yoktur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız IV",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Kurulun dört üyesi Cumhurbaşkanı, kalan yedi üyesi TBMM tarafından seçilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

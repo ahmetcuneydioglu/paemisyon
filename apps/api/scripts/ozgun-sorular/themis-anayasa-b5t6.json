@@ -1,0 +1,527 @@
+[
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisinin kamu tüzel kişiliği doğrudan 1982 Anayasası'ndan kaynaklanır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yükseköğretim Kurulu",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Radyo ve Televizyon Üst Kurulu",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kamu Denetçiliği Kurumu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Atatürk Kültür, Dil ve Tarih Yüksek Kurumu",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "TC Devlet Demiryolları Genel Müdürlüğü",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 134. maddesinin ilk fıkrasına göre, Atatürk Kültür, Dil ve Tarih Yüksek Kurumu ayrı kamu tüzel kişiliğine sahiptir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi memurlar ve diğer kamu görevlilerine ilişkin 2010 yılında yapılan Anayasa değişikliklerinden biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Memurlar ve diğer kamu görevlileri, toplu sözleşme yapma hakkına sahiptirler.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Toplu sözleşme yapılması sırasında uyuşmazlık çıkması halinde taraflar Kamu Görevlileri Hakem Kuruluna başvurabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kamu Görevlileri Hakem Kurulu kararları kesindir ve toplu sözleşme hükmündedir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Toplu sözleşme hükümleri emeklilere yansıtılamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Toplu sözleşme hakkının kapsamı ve istisnaları kanunla düzenlenir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'ya göre memurlar ve diğer kamu görevlileri toplu sözleşme yapma hakkına sahiptir; uyuşmazlık halinde taraflar Kamu Görevlileri Hakem Kuruluna başvurabilir ve bu kurulun kararları kesin olup toplu sözleşme hükmündedir. Toplu sözleşme hakkının kapsamı, istisnaları, toplu sözleşmeden yararlanacaklar, toplu sözleşmenin yapılma şekli, usulü ve yürürlüğü, toplu sözleşme hükümlerinin emeklilere yansıtılması, Kamu Görevlileri Hakem Kurulunun teşkili, çalışma usul ve esasları ile diğer hususlar kanunla düzenlenir. Dolayısıyla toplu sözleşme hükümlerinin emeklilere yansıtılamayacağı yönündeki ifade Anayasa metnine aykırıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Bakanlar ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Doğrudan Cumhurbaşkanınca atanırlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Göreve başlamak için TBMM'den güvenoyu almaları gerekli değildir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanına karşı sorumludurlar.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Görevle ilgili olmayan suçlardan ötürü milletvekili dokunulmazlığı hükümlerine tabidirler.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa'da açıkça belirtilen sınırlı sayıdaki işlemlerinden ötürü TBMM'ye karşı siyasal olarak sorumludurlar.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Cumhurbaşkanlığı hükümet sisteminin bir sonucu olarak bakanlar Cumhurbaşkanına karşı sorumludur; TBMM'ye karşı siyasal sorumlulukları söz konusu değildir, güvenoylaması usulü kaldırılmıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Cumhurbaşkanlığı kararnamesi\nII. Olağanüstü hallerde çıkarılan Cumhurbaşkanlığı kararnamesi\nIII. Yönetmelik\nYukarıda verilenlerin hangilerinin çıkarılmasında yürütme organı, başka herhangi bir işleme gerek kalmaksızın doğrudan Anayasa'dan aldığı asli düzenleme yetkisine dayanır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanlığı kararnamelerinin (olağan ve olağanüstü dönemde) çıkarılmasında yasama organından herhangi bir yetki (izin) alınması öngörülmediğinden bu işlemler yürütmenin asli düzenleme yetkisine dayanır; asli yetkinin yasamaya ait olduğunun istisnalarıdır. Yönetmelik ise kanunların ve Cumhurbaşkanlığı kararnamelerinin uygulanmasını sağlamak üzere çıkarıldığından türev (ikincil) bir düzenleme işlemidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Bakanlar\nII. Cumhurbaşkanı yardımcıları\nIII. TBMM Başkanı\nIV. Hâkimler ve Savcılar Kurulu üyeleri\nV. Üst kademe yöneticileri\n1982 Anayasası'na göre Cumhurbaşkanının yukarıda sayılanlardan hangilerini görevden alma yetkisi yoktur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "III ve IV",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "I, II ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I, IV ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, III, IV ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Cumhurbaşkanı; bakanlar, Cumhurbaşkanı yardımcıları ve üst kademe yöneticilerinin hem göreve atanmasında hem de görevden alınmasında yetkilidir. TBMM Başkanı ve HSK üyeleri üzerinde böyle bir yetkisi bulunmamaktadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. 40 yaşını doldurmuş yükseköğrenim mezunu milletvekili A\nII. 45 yaşını doldurmuş Cumhurbaşkanı yardımcısı\nIII. İkinci döneminde kendisi tarafından seçimlerin yenilenmesine karar vermiş Cumhurbaşkanı\nIV. Genel seçime 1 yıldan az bir süre kala Cumhurbaşkanlığı makamının boşalması durumunda bu makama ilk kez seçilen Cumhurbaşkanı\nV. Genel seçime 1 yıldan fazla bir süre kala Cumhurbaşkanlığı makamının boşalması durumunda bu makama ikinci kez seçilen Cumhurbaşkanı\n1982 Anayasası'na göre yukarıda verilenlerden hangileri Cumhurbaşkanlığına aday olamaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız III",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız IV",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "III ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III, IV ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İkinci döneminde kendisi tarafından seçimlerin yenilenmesine karar vermiş Cumhurbaşkanı, Cumhurbaşkanlığına aday olamaz. Cumhurbaşkanının böyle bir durumda adaylığını koyabilmesi için seçimleri yenileme kararını TBMM'nin alması gerekir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Çevrenin korunması\nII. Kamu hizmetine girme hakkı\nIII. Haberleşme hürriyeti\nIV. Dernek kurma hürriyeti\nV. Konut hakkı\n1982 Anayasası'na göre yukarıda verilen temel hak ve ödevlerden hangileri olağan dönem Cumhurbaşkanlığı kararnamesiyle düzenlenebilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve V",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II, III, IV ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "1982 Anayasası'na göre temel hak ve ödevlerden yalnızca sosyal ve ekonomik haklar olağan dönem Cumhurbaşkanlığı kararnamesiyle düzenlenebilir. Çevrenin korunması ve konut hakkı bu kapsamdadır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. Yargısal örgütleri denetleyemez.\nII. Kamu kurumu niteliğindeki meslek kuruluşlarını denetleyebilir.\nIII. Kamu yararına çalışan dernekleri denetleyebilir.\nIV. Askeri makamları denetleyemez.\nV. Vakıf iştiraklerini denetleyebilir.\nDevlet Denetleme Kurulunun denetim alanı ile ilgili yukarıda verilen ifadelerden hangileri söylenemez?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız IV",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Yalnız V",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I, II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III, IV ve V",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II, III ve V",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "İdarenin hukuka uygunluğunun, düzenli ve verimli şekilde yürütülmesinin ve geliştirilmesinin sağlanması amacıyla, tüm kamu kurum ve kuruluşlarında ve sermayesinin yarısından fazlasına bu kurum ve kuruluşların katıldığı her türlü kuruluşta, kamu kurumu niteliğinde olan meslek kuruluşlarında, her düzeydeki işçi ve işveren meslek kuruluşlarında, kamuya yararlı derneklerde, vakıflarda, kooperatiflerde, birliklerde ve bu kurum ve kuruluşların her türlü ortaklık ve iştiraklerinde her türlü idari soruşturma, inceleme, araştırma ve denetlemeleri yapabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Cumhurbaşkanlığı kararnamesi ile ilgili,\nI. Türkiye Büyük Millet Meclisinin onayı olmadan çıkarılır.\nII. Yetki devrine konu olamaz.\nIII. Uygulamaya ilişkin ayrıntıları yönetmelikle düzenlenebilir.\nifadelerinden hangileri doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve III",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Kararnamelerle ilgili soruda verilen öncüllerin tamamı doğrudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'nda aşağıdakilerden hangisinin olağan Cumhurbaşkanlığı kararnamesiyle düzenleneceği açıkça belirtilmemiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bakanlıkların kaldırılması",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Bakanlıkların taşra teşkilatlarının kurulması",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Üst kademe kamu yöneticilerinin atanması",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Devlet Denetleme Kurulu üyelerinin görev süresi",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milli Güvenlik Kurulunun teşkilatı, görevleri ve kaldırılması",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa'da yetki verilen, Milli Güvenlik Kurulu Genel Sekreterliğinin teşkilatı ve görevleridir; kaldırılmasına ilişkin bir yetki söz konusu değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre Türkiye Büyük Millet Meclisi, Cumhurbaşkanına soruşturma açılmasına en az hangi çoğunlukla karar verebilir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Toplantıya katılanların salt çoğunluğuyla",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Üye tam sayısının salt çoğunluğuyla",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Üye tam sayısının beşte üç çoğunluğuyla",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Üye tam sayısının üçte iki çoğunluğuyla",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Üye tam sayısının dörtte üç çoğunluğuyla",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TBMM, üye tam sayısının beşte üçünün gizli oyuyla soruşturma açılmasına karar verebilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'nda aşağıdakilerden hangisi idareye ilişkin hükümler arasında düzenlenmemiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kamu tüzel kişiliğinin Cumhurbaşkanlığı kararnamesiyle de kurulabileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanlığı kararnamesinin uygulanmasını sağlamak üzere yönetmelik çıkarılabileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İdari işlemlere karşı açılacak davalarda sürenin yazılı bildirim tarihinden başlayacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yürütmenin durdurulmasına gerekçe gösterilerek karar verilebileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Türkiye'nin, merkezi idare kuruluşu bakımından il, ilçe ve diğer kademeli bölümlere ayrılacağı",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa'da ilçe kademesi açıkça belirtilmez. C ve D seçeneğinde verilenlerin Anayasa hükmü olduğu unutulmamalıdır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Kamu kurumu niteliğindeki meslek kuruluşları ile ilgili aşağıda verilen ifadelerden hangisi 1982 Anayasası'nda yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Organlarının kendi üyeleri tarafından gizli oyla seçileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kamu tüzel kişiliğine sahip oldukları",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kuruluş amaçları dışında faaliyet gösteremeyecekleri",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Devletin üzerlerinde idari denetim yetkisi kullanamayacağı",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Seçimlerinde siyasi partilerin aday gösteremeyeceği",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'ya göre meslek kuruluşları üzerinde Devletin idari ve mali denetimine ilişkin kurallar kanunla düzenlenir; dolayısıyla idari denetim yetkisi kullanılamayacağı yönündeki ifade Anayasa'da yer almaz.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre kanunla bir merci, kamu kurumu niteliğindeki meslek kuruluşlarını veya üst kuruluşlarını faaliyetten men ile yetkilendirilebilir.\nBuna göre, faaliyetten men kararı hangi süre içinde görevli hâkimin onayına sunulur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "12 saat",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "24 saat",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "48 saat",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "3 gün",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "7 gün",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Sözü edilen idari merci kararı, yirmi dört saat içinde görevli hâkimin onayına sunulur. Hâkim, kararını kırk sekiz saat içinde açıklar, aksi halde bu idari karar kendiliğinden yürürlükten kalkar.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Devlet memurları ile ilgili aşağıda verilen ifadelerden hangisi 1982 Anayasası'nda yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Disiplin cezası verilmeden önce en az 7 gün savunma süresi verileceği",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Disiplin kararlarının yargı denetimi dışında bırakılamayacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Haklarında, işledikleri iddia edilen suçlardan ötürü ceza kovuşturması açılmasının kanunun gösterdiği idari merciin iznine bağlı olduğu",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Mali ve sosyal haklara ilişkin toplu sözleşme hükümleri saklı olmak üzere özlük işlerinin kanunla düzenleneceği",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Üst kademe yöneticilerinin yetiştirilme usul ve esaslarının kanunla düzenleneceği",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa, savunma hakkı tanınmadıkça disiplin cezası verilemeyeceği hükmüne yer verir; ancak belirli bir savunma süresinden bahsetmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]

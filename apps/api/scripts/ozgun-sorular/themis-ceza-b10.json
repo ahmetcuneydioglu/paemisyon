@@ -1,0 +1,177 @@
+[
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "5237 sayılı Türk Ceza Yasası'na göre cinsel amaçla vücuduna organ sokulan bir kadın, üreme yeteneğini yitirirse fail nasıl cezalandırılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cinsel saldırı suçundan cezalandırılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cinsel saldırı suçundan cezalandırılır, ayrıca hakkında kasten yaralama suçuna ilişkin hükümler de uygulanır.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cinsel saldırı suçundan cezalandırılır, ayrıca hakkında cebir suçuna ilişkin hükümler de uygulanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yalnızca kasten yaralama suçundan cezalandırılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yalnızca sonucu nedeniyle ağırlaşmış yaralama suçundan cezalandırılır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Cinsel saldırı suçunda kullanılan cebir, kural olarak suçun unsuru sayıldığı için ayrıca cezalandırılmaz; bu kuralın sınırını TCK m. 102/4 çizer. Anılan fıkraya göre cinsel saldırı için başvurulan cebir ve şiddet, KASTEN YARALAMA SUÇUNUN AĞIR NETİCELERİNE neden olmuşsa ayrıca kasten yaralama suçuna ilişkin hükümler de uygulanır. Üreme yeteneğinin yitirilmesi, TCK m. 87/2-c'de \"çocuk yapma yeteneğinin kaybolması\" olarak sayılan neticesi sebebiyle ağırlaşmış yaralama hâllerindendir. Dolayısıyla fail hem cinsel saldırıdan hem de ayrıca kasten yaralama hükümlerinden sorumlu olur; cebir bu noktada artık suçun unsuru olarak tüketilmiş sayılmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "17 yaşında olan ve yatılı okulda kalan (A)'ya, okul müdürü (M) tarafından eğer kendisi ile birlikte olmazsa yurttan atılacağı söylenir. (A), ekonomik durumunun zayıflığı nedeniyle tehdidin etkisi altında kalarak (M) ile cinsel ilişkiye girmeyi kabul eder. (M)'nin ceza sorumluluğuyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Çocukların cinsel istismarı suçunun nitelikli şeklinden ve tehdit suçlarından sorumludur",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnızca çocukların cinsel istismarı suçunun basit şeklinden sorumlu olur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yalnızca çocukların cinsel istismarı suçunun nitelikli şeklinden sorumlu olur.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yalnızca ergin olmayanla cinsel ilişki suçundan sorumlu olur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Ergin olmayanla cinsel ilişki ve tehdit suçlarından sorumlu olur.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 103/1-b'ye göre on beş yaşını tamamlamış çocuklara karşı CEBİR, TEHDİT, HİLE veya iradeyi etkileyen başka bir nedene dayalı olarak gerçekleştirilen cinsel davranışlar da \"cinsel istismar\" sayılır. Bu nedenle rızanın tehdit altında alındığı olayda, rızaya dayalı ilişkiyi cezalandıran TCK m. 104 değil, m. 103 uygulanır. Tehdit burada suçun TANIMINDA yer alan bir araç unsurudur; unsur olan fiil ayrıca cezalandırılmaz, aksi hâlde aynı fiil iki kez değerlendirilmiş olur. Suçun eğitici, öğretici ya da koruma, bakım ve gözetim yükümlülüğü bulunan kişilerce işlenmesi TCK m. 103/3-d uyarınca cezayı yarı oranında artıran nitelikli hâldir. Fail bu nedenle yalnızca çocukların cinsel istismarı suçunun nitelikli şeklinden sorumlu olur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. Konut dokunulmazlığını ihlal\nII. Dilekçe hakkının kullanılmasının engellenmesi\nIII. Hakaret\nIV. Tehdit\nYukarıdaki hangileri, Türk Ceza Yasası'nda düzenlenen \"Özgürlüğe Karşı Suçlar\" arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Türk Ceza Kanunu'nun İkinci Kitap İkinci Kısmının Yedinci Bölümü \"Hürriyete Karşı Suçlar\" başlığını taşır ve tehdit (m. 106), konut dokunulmazlığının ihlali (m. 116) ile dilekçe hakkının kullanılmasının engellenmesi (m. 121) bu bölümde düzenlenmiştir. Hakaret ise aynı kısmın Sekizinci Bölümünde, \"Şerefe Karşı Suçlar\" başlığı altında m. 125'te yer alır; korunan hukuki yarar kişinin hürriyeti değil, onur, şeref ve saygınlığıdır. Kanunun bölüm sistematiği, suçun hangi hukuki yararı koruduğunu gösterdiği için sınavlarda doğrudan ölçülen bir bilgidir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "I. Tehdit eyleminin mağdurun önünde gerçekleştirilmesi gerekir.\nII. Tehdit suçu, ruhsal ve fiziki durumları bakımından algılama yeteneği olan herkese karşı işlenebilir.\nIII. Muhatabı belli olamayan tehdit eylemleri suç oluşturmaz.\nIV. Halk arasında endişe, korku ve panik yaratmak amacıyla yaşam, sağlık, vücut veya cinsel dokunulmazlık ya da mal varlığı bakımından alenen tehditte bulunulması da bu suçu oluşturur.\nTehdit suçuyla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I, II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 106 tehdidin mağdurun YÜZÜNE KARŞI yapılmasını aramaz; tehdit mektupla, telefonla ya da üçüncü bir kişi aracılığıyla iletilse de, mağdurun bilgisine ulaştığı anda suç oluşur. Bu nedenle I yanlıştır. Buna karşılık suç, tehdidi algılayabilecek durumdaki herkese karşı işlenebilir (II doğru) ve muhatabı belirlenemeyen, kime yöneldiği saptanamayan söylemler m. 106 anlamında tehdit sayılmaz (III doğru). IV'te tarif edilen fiil ise m. 106'nın değil, kamu barışına karşı suçlar arasında yer alan TCK m. 213'ün (halk arasında korku ve panik yaratmak amacıyla tehdit) konusudur; korunan hukuki yarar kişinin hürriyeti değil kamu barışıdır. Yanlış ifadeler I ve IV'tür.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  },
+  {
+    "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+    "articleNo": null,
+    "stem": "5237 sayılı Türk Ceza Yasası'na göre aşağıdakilerden hangisi siyasal hakların kullanılmasının engellenmesi suçunun cezasının artırılmasını gerektiren nitelikli şekillerinden değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun cebir, tehdit veya hile kullanılarak işlenmesi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Suçun kişinin kendisini tanınmayacak bir hâle koyarak imzasız mektupla veya özel işaretlerle işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Suçun birden fazla kişi tarafından birlikte işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Suçun var olan veya var sayılan suç örgütlerinin oluşturdukları korkutucu güçten yararlanılarak işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun kamu görevinin sağladığı nüfuz kötüye kullanılarak işlenmesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "TCK m. 119, \"Ortak hüküm\" başlığıyla birden çok hürriyete karşı suç bakımından ortak nitelikli hâlleri tek maddede toplar; siyasi hakların kullanılmasının engellenmesi de bu maddenin kapsamındadır. Fıkrada sayılan artırım nedenleri sınırlıdır: silahla, kişinin kendisini tanınmayacak bir hâle koyması suretiyle, imzasız mektupla veya özel işaretlerle, birden fazla kişi tarafından birlikte, var olan veya var sayılan suç örgütlerinin oluşturduğu korkutucu güçten yararlanılarak ya da kamu görevinin sağladığı nüfuz kötüye kullanılarak işlenmesi. CEBİR, TEHDİT VEYA HİLE bu listede yer almaz; bunlar suçun temel şeklinde zaten aranan hareket biçimleridir ve ayrıca artırım nedeni sayılmamıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA HUKUKU ÖZEL HÜKÜMLER SORU KİTABI"
+  }
+]

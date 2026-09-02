@@ -1,0 +1,282 @@
+[
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Müsadereye ilişkin hüküm, kesinleşmeden itibaren 5 yıl geçtikten sonra infaz edilmez.\nII. Ceza zamanaşımı, kamu davasının açıldığı veya sanığın herhangi bir biçimde yakalandığı günden itibaren işlemeye başlar.\nIII. Dava ve ceza zamanaşımı resen uygulanır ve bundan şüpheli, sanık ve hükümlü vazgeçemez.\nIV. Dava zamanaşımını kesen birden fazla nedenin bulunması durumunda, zamanaşımı süresi ilk kesme nedeninin gerçekleştiği tarihten itibaren yeniden işlemeye başlar.\nZamanaşımı ile ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız IV",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "TCK m. 70'e göre müsadereye ilişkin hüküm, kesinleşmeden itibaren YİRMİ YIL geçtikten sonra infaz edilmez; I yanlıştır. TCK m. 68/5'e göre ceza zamanaşımı, hükmün kesinleştiği veya infazın herhangi bir suretle kesintiye uğradığı günden itibaren işlemeye başlar; II de yanlıştır. TCK m. 67/3'e göre dava zamanaşımını kesen birden fazla nedenin bulunması hâlinde zamanaşımı süresi SON kesme nedeninin gerçekleştiği tarihten itibaren yeniden işlemeye başlar; IV yanlıştır. TCK m. 72/2 ise dava ve ceza zamanaşımının resen uygulanacağını ve bundan şüpheli, sanık ve hükümlünün vazgeçemeyeceğini öngörür.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Şüpheli, mağdur veya suçtan zarar görenden birine ilk uzlaşma teklifinde bulunulması\nII. Şüphelilerden birinin savcı huzurunda ifadesinin alınması\nIII. Suçla ilgili olarak iddianame düzenlenmesi\nIV. Soruşturma ve kovuşturma yapılmasının izin alınmasına bağlı olması\nYukarıdakilerden hangileri dava zamanaşımını durduran nedenlerden değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II, III ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Dava zamanaşımının durması, işlemiş sürenin saklı tutularak yasal neden ortadan kalkıncaya kadar işletilmemesidir. TCK m. 67/1'e göre soruşturma ve kovuşturma yapılmasının izin veya karar alınmasına ya da diğer bir mercide çözülmesi gereken bir sorunun sonucuna bağlı olması dava zamanaşımını durdurur; IV bu kapsamdadır. Ceza Muhakemesi Yasası'na göre de ilk uzlaşma teklifinde bulunulması (CMK m. 253/21), hükmün açıklanmasının geri bırakılması kararı (CMK m. 231/8) ve kamu davasının açılmasının ertelenmesi kararı (CMK m. 171/4) zamanaşımını durdurur; I bu kapsamdadır. Buna karşılık şüphelinin savcı huzurunda ifadesinin alınması ve iddianame düzenlenmesi, m. 67/2 uyarınca zamanaşımını DURDURAN değil KESEN nedenlerdendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Af ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Bütün suçları kapsayan özel af çıkarılamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhurbaşkanı genel af çıkarabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "İtiyadi suçlulukta genel aftan önce işlenmiş eylemler itiyadın belirlenmesinde dikkate alınmaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Genel af kapsamına giren suçlar zincirleme suçun belirlenmesinde dikkate alınır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Kesin hükümden önce genel af çıkması durumunda, devam eden dava varsa durma kararı verilir.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 65/1'e göre genel af hâlinde kamu davası düşer, hükmolunan cezalar bütün sonuçlarıyla birlikte ortadan kalkar. Bu nedenle genel aftan önce işlenmiş eylemler itiyadın belirlenmesinde dikkate alınamaz; söz konusu eylemler zaten af kapsamına girmiştir. Aynı gerekçeyle genel af kapsamına giren suçlar zincirleme suçun belirlenmesinde de dikkate alınmaz. Bütün suçları kapsayan genel af çıkarılmasına engel bir hüküm yoktur. Anayasa uyarınca genel af çıkarma yetkisi TBMM'ye ait olup Cumhurbaşkanının affı genel değil özel aftır. Kesin hükümden önce genel af çıkması durumunda devam eden davada durma değil DÜŞME kararı verilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Hükümlünün ölümü\nII. Sanığın akıl hastası olması\nIII. Dava zamanaşımı\nIV. Ön ödeme\nYukarıdakilerden hangileri kamu davasını düşüren nedenlerden değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "I ve II",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "III ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "I, II ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 64/2'ye göre hükümlünün ölümü, sanığın ölümünün aksine kamu davasını değil, hapis ve henüz infaz edilmemiş adli para cezalarını ortadan kaldırır; bir kimse hükümlü statüsüne girmişse kamu davası zaten sona ermiştir. Sanığın akıl hastası olması ise kamu davasının düşmesine neden olmaz; akıl hastalığının bulunmaması bir muhakeme koşuludur ve yargılamanın yapılmasına engel oluşturur, davayı düşürmez. Buna karşılık dava zamanaşımı (m. 66) ve ön ödeme (m. 75) kamu davasını düşüren nedenlerdendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "I. Mahkeme tarafından hükmün açıklanmasının geri bırakılmasına karar verilmesi\nII. Mahkeme tarafından sanık hakkında basit yargılama usulünün uygulanmasına karar verilmesi\nIII. Mahkeme tarafından sanık hakkında kaçaklık kararı verilmesi\nIV. Soruşturma ve kovuşturma yapılmasının karar alınmasına bağlı olması\nYukarıdakilerden hangileri dava zamanaşımını durduran nedenlerden arasında sayılmamıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız I",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız II",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "II ve IV",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 67/1'e göre soruşturma ve kovuşturma yapılmasının izin veya KARAR ALINMASINA bağlı olması ile yasa gereğince suç faili hakkında KAÇAK olduğu hususunda karar verilmiş olması dava zamanaşımını durdurur; III ve IV bu kapsamdadır. Ceza Muhakemesi Yasası'na göre de sanık hakkında hükmün açıklanmasının geri bırakılmasına karar verilmesi zamanaşımını durdurur (CMK m. 231/8); I bu kapsamdadır. Buna karşılık basit yargılama usulünün uygulanmasına karar verilmesi, dava zamanaşımını durduran nedenler arasında sayılmamıştır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Genel ve özel affın karşılaştırılmasıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Cumhurbaşkanı tarafından ilân edilen af, genel; TBMM tarafından ilân edilen af, özel aftır.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "TBMM tarafından ilân edilen af, genel; Cumhurbaşkanı tarafından ilân edilen af, özel aftır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Bütün mahkûmların serbest bırakılmasını sağlayan af, genel; bazı mahkûmların serbest bırakılmasını sağlayan af, özel aftır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yalnızca hapis cezasını azaltan veya kaldıran af, özel af; mahkûmiyeti bütün sonuçları ile birlikte ortadan kaldıran af, genel aftır.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yalnızca cezayı ortadan kaldıran, değiştiren, azaltan af, genel; mahkûmiyeti bütün sonuçlarıyla birlikte ortadan kaldıran af, özel aftır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Genel af ile özel af arasındaki ayrım, affı çıkaran makama veya kapsadığı kişi sayısına göre değil DOĞURDUĞU SONUCA göre yapılır. TCK m. 65/1'e göre genel af hâlinde kamu davası düşer, hükmolunan cezalar bütün sonuçlarıyla birlikte ortadan kalkar. TCK m. 65/2'ye göre ise özel af ile yalnızca hapis cezasının infaz kurumunda çektirilmesine son verilebilir, çektirilecek süre kısaltılabilir ya da ceza adli para cezasına çevrilebilir; m. 65/3 uyarınca cezaya bağlı hak yoksunlukları özel affa rağmen devam eder.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "(F) hakkında, kasten yaralama suçundan dolayı ceza soruşturması yürütülmektedir.\nBuna göre aşağıdaki soruşturma işlemlerinden hangisi işlemekte olan dava zamanaşımının kesilmesine neden olur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "(F) hakkında yurt dışına çıkış yasağı konulması",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Cumhuriyet savcısının emriyle kolluk kuvvetlerince (F)'nin ifadesinin alınması",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "(F)'nin yargıç huzurunda sorguya çekilmesi",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "(F) hakkında yakalama kararı çıkarılması",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "(F)'nin konutunda arama yapılması",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 67/2 dava zamanaşımını kesen nedenleri sınırlı biçimde sayar: şüpheli veya sanıklardan birinin SAVCI HUZURUNDA ifadesinin alınması veya YARGIÇ HUZURUNDA SORGUYA ÇEKİLMESİ, biri hakkında TUTUKLAMA kararı verilmesi, suçla ilgili İDDİANAME düzenlenmesi ve sanıklardan bir kısmı hakkında da olsa MAHKÛMİYET kararı verilmesi. İfadenin savcı huzurunda değil kolluk tarafından alınması, yurt dışına çıkış yasağı, yakalama kararı ve arama işlemleri bu sayımda yer almadığından zamanaşımını kesmez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ },
+ {
+  "topicId": "81500d64-b141-4d67-a1cc-f34f42b5869b",
+  "articleNo": null,
+  "stem": "Kamu davasını düşüren ön ödeme ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "İşin özel yasa hükümleri gereğince savcılığa gitmeksizin doğrudan mahkemeye intikal etmesi durumunda suçun ön ödemelik bir suç olduğunu anlayan mahkeme sanığa ön ödeme bildiriminde bulunur.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Kamu davasını düşüren ön ödemede, davanın açılmasını önleyen ön ödemedeki esaslara göre belirlenen miktardan başka yargılama giderleri de sanığa ödettirilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Kamu davası açıldıktan sonra söz konusu olan ön ödemede ödeme süresi 7 gündür.",
+    "isCorrect": true
+   },
+   {
+    "label": "D",
+    "text": "Ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması, kişisel hakların istenmesini ve malın geri alınmasını engellemez.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması, müsadereye ilişkin hükümlerin uygulanmasını engellemez.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "TCK m. 75/2'ye göre özel yasa hükümleri gereğince işin doğrudan mahkemeye intikal etmesi hâlinde de sanığa ön ödeme bildiriminde bulunulur; ancak bu durumda ödenmesi gereken miktara yargılama giderleri de eklenir. Ödeme süresi ON GÜN olarak düzenlenmiş olup 7 gün değildir; bu nedenle C yanlıştır. TCK m. 75/3'e göre ön ödeme sonucu kamu davasının açılmaması veya ortadan kaldırılması, kişisel hakkın istenmesine, malın geri alınmasına ve müsadereye ilişkin hükümleri etkilemez.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 CEZA HUKUKU GENEL HÜKÜMLER SORU KİTABI"
+ }
+]

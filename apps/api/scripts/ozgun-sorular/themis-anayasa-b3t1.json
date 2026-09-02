@@ -1,0 +1,492 @@
+[
+ {
+  "topicId": "80c2d965-7e69-4c77-b67f-3a00043867e4",
+  "articleNo": null,
+  "stem": "6271 sayılı Cumhurbaşkanı Seçimi Kanunu'na göre, Cumhurbaşkanı seçimi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yurt dışında yaşayan Türk vatandaşları oy kullanamaz.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Oyların tutanaklara bağlanması açık olarak yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Seçimlerin yönetim ve denetimi Yüksek Seçim Kurulunca yapılır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Seçmen, oyunu tam bir serbestlikle kendisi kullanır.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bütün yurtta aynı günde yapılır.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Yurt dışında yaşayan Türk vatandaşları Cumhurbaşkanı seçiminde oy kullanma hakkına sahiptir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fc5b7d84-ad74-446c-9ac6-3d4172a04ccf",
+  "articleNo": null,
+  "stem": "298 sayılı Seçimlerin Temel Hükümleri ve Seçmen Kütükleri Hakkında Kanun'a göre, yurt dışı seçmen kütüğüne kayıtlı olan seçmenler, gümrük kapılarında seçimin yapılacağı günün kaç gün öncesinden oy kullanmaya başlarlar?",
+  "options": [
+   {
+    "label": "A",
+    "text": "7",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "15",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "30",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "45",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "60",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Tıpkı yurt dışı temsilciliklerinde oy kullanmada olduğu gibi gümrük kapılarında kurulacak sandıklarda da seçimin yapılacağı günün kırk beş gün öncesinden başlamak üzere seçim günü saat 17:00'a kadar oy kullanılabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+  "articleNo": null,
+  "stem": "Türk hukukunda siyasi partilerle ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "En az 7 gerçek kişinin bir araya gelmesi ile kurulurlar.",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "Siyasi partilere üye olabilmek için 18 yaşın doldurulması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Serbest kuruluş sistemine tabidirler.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Siyasi partilerin mali denetimini Anayasa Mahkemesi yapar.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Anayasa'ya göre, demokratik siyasal hayatın vazgeçilmez unsurlarıdırlar.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2820 sayılı Siyasi Partiler Kanunu'na göre, siyasi parti kurabilmek için otuz gerçek kişinin bir araya gelmesi gerekir. Kurucuların Türk vatandaşı olması zorunludur. Siyasi parti kurulurken herhangi bir makamdan izin almaya gerek yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre, aşağıdakilerden hangisi oy kullanma hakkına sahiptir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yıllık izinde olan er ve erbaşlar",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Askeri öğrenciler",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Eğitim sürecindeki yedek subay adayları",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Astsubaylar",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Kasıtlı bir suçtan hüküm giyen cezaevlerindeki hükümlüler",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Astsubaylar oy kullanma hakkına elbette sahiptir; diğer sayılanlar oy kullanma hakkına sahip değildir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "I. İki dereceli seçim\nII. Açık oy\nIII. Seçimlerin serbestliği\nIV. Eşit oy\nYukarıda sayılanlardan hangileri, 1982 Anayasası'nda belirtilen seçimlere egemen ilkelerdendir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Yalnız IV",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "I ve III",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "II ve IV",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "III ve IV",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Ülkemizde tek dereceli seçime 1946'da geçilmiştir; bu tarihten önce iki dereceli seçim ilkesi uygulanmaktaydı. Gizli oy ilkesi Anayasa emridir, açık oy değil. Anayasaya göre seçimler serbesttir ve eşit oy, seçimlerin temel ilkelerindendir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Aşağıdakilerden hangisi Yüksek Seçim Kurulunun görevleri arasında yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Milletvekillerinin yasama dokunulmazlıklarının kaldırılması hakkında TBMM kararlarına karşı yapılan iptal istemlerini karara bağlamak",
+    "isCorrect": true
+   },
+   {
+    "label": "B",
+    "text": "TBMM seçimlerinin yönetimiyle ilgili işlemleri yapmak ve yaptırmak",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Yerel yönetim seçimleriyle ilgili şikâyet ve itirazları inceleyip karara bağlamak",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM seçimleriyle ilgili şikâyet ve itirazları incelemek ve karara bağlamak",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Milletvekili seçilenlerin seçim tutanaklarını kabul etmek",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 85. maddesine göre, yasama dokunulmazlığı kaldırılan milletvekili veya bir başka milletvekili, kararın verilişinden itibaren yedi gün içinde kararın iptali istemi ile Anayasa Mahkemesine başvurabilir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Hukukumuzda, siyasi partiler ve TBMM siyasi parti grupları ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Siyasi parti, en az 30 gerçek kişinin bir araya gelmesi ile kurulabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Siyasi parti grupları TBMM Başkanlığı için aday gösteremez.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Siyasi parti grupları yasama dokunulmazlığının kaldırılması ile ilgili konularda görüşme yapamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Siyasi parti grubu kurabilmek için en az 10 milletvekiline sahip olunması gerekir.",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Siyasi partiler, Anayasa Mahkemesince Devlet yardımından yoksun bırakılabilirler.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 95. maddesinin ikinci fıkrasına göre siyasi parti grupları, en az yirmi üyeden meydana gelir. 1961 Anayasası Meclis siyasi parti grubu kurabilmek için on üyeyi yeterli görmekteydi. Siyasi parti ile siyasi parti grubu kavramları birbirine karıştırılmamalıdır. Siyasi parti grubu, seçim sonrasında veya katılma gibi başka nedenlerle, bir siyasi partinin TBMM'deki ve en az yirmi milletvekilinden oluşan topluluğudur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Seçimlerle ilgili aşağıdakilerden hangisi 1982 Anayasası'nda yer alan kurallardan biri değildir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Seçimlerin genel oy esasına göre yapılacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Tutukluların seçimlerde oy kullanamayacağı",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Seçimlerin tek dereceli olarak yapılacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "18 yaşını dolduran her Türk vatandaşının seçimlerde oy kullanabileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Seçimlerin yargı organının yönetim ve denetimi altında yapılacağı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "2001 yılında Anayasa'da yapılan değişikliğe göre taksirli suçlardan mahkûm olanlar hariç ceza infaz kurumlarında bulunan hükümlüler oy kullanamaz. Tutuklularla ilgili hiçbir engel yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre siyasi partilerle ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Kapatılmasına ilişkin davalara Anayasa Mahkemesi bakar.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Mali denetimlerini Sayıştay yapar.",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "Yükseköğrenim öğrencileri üye olabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Yükseköğretim üyeleri üye olabilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Devlet memurları üye olamaz.",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 69. maddesinin üçüncü fıkrasına göre, siyasi partilerin mali denetimini Anayasa Mahkemesi yapar. Bu denetim yapılırken Sayıştay'dan yardım alınır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+  "articleNo": null,
+  "stem": "2820 sayılı Siyasi Partiler Kanunu'na göre, Devletçe mali yardım yapılabilmesi için bir siyasi partinin milletvekili genel seçimlerinde toplam geçerli oyların en az ne kadarını alması gereklidir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "% 3'ünü",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "% 3'ünden fazlasını",
+    "isCorrect": true
+   },
+   {
+    "label": "C",
+    "text": "% 5'ini",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "% 7'sini",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "% 7'sinden fazlasını",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Milletvekili genel seçimlerinde toplam geçerli oyların yüzde üçünden fazlasını alan siyasi partilere Devlet yardımı yapılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "Milletvekili genel seçimleriyle ilgili aşağıda verilen hükümlerden hangisi 1982 Anayasası'nda yer almaz?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Yönetimde istikrar ilkesinin gözetileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Temsilde adalet ilkesinin gözetileceği",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Tek dereceli olacağı",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Bir siyasi partinin milletvekili çıkarabilmesi için ülke genelinde kullanılan geçerli oyların yüzde 7'sini aşması gerektiği",
+    "isCorrect": true
+   },
+   {
+    "label": "E",
+    "text": "Yargı yönetimi ve denetimi altında yapılacağı",
+    "isCorrect": false
+   }
+  ],
+  "explanation": "Anayasa'nın 67. maddesinin altıncı fıkrasına göre, seçim kanunları temsilde adalet ve yönetimde istikrar ilkeleri gözetilerek yapılır. Ülke genelindeki geçerli oyların yüzde yedisini geçmeyen siyasi partilerin milletvekili çıkaramayacaklarına ilişkin hüküm Anayasa'da değil, 2839 sayılı Milletvekili Seçimi Kanunu'nda belirtilmiştir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "fd517cd6-8889-4a46-b644-e6b156a5a9f3",
+  "articleNo": null,
+  "stem": "Türkiye'de uygulanan seçim sistemi aşağıdakilerden hangisinde doğru verilmiştir?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Ülke barajlı - Tek turlu - Tek isimli",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Seçim çevresi barajlı - Orantılı - d'Hondt",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "%10 ülke barajlı - Orantılı temsil - Mutlak çoğunluk",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Barajsız - Nispi temsil - d'Hondt",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "%7 ülke barajlı - Nispi temsil - d'Hondt",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "2839 sayılı Kanun'a göre, bir siyasi partinin milletvekili genel seçimlerinde milletvekili çıkarabilmesi için ülke genelinde kullanılan geçerli oyların yüzde 7'sini aşması gerekir. Milletvekili Seçimi Kanunu'na göre, milletvekili genel seçimlerinde nispi temsil (orantılı temsil) sistemi uygulanır ve d'Hondt usulü kullanılır.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+  "articleNo": null,
+  "stem": "1982 Anayasası'nın seçimlere ilişkin hükümlerine göre aşağıdakilerden hangisi yanlıştır?",
+  "options": [
+   {
+    "label": "A",
+    "text": "TBMM üyeliklerinde yüzde 5'lik boşalma olsa bile genel seçimlere 1 yıl kala ara seçim yapılamaz.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Genel seçimlerin savaş sebebi ile 1 yıl ertelenmesi mümkündür.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Cumhurbaşkanının, TBMM seçimlerini yenilerken Meclis Başkanına danışması gerekliliği ile ilgili hüküm 2017 yılında yapılan Anayasa değişikliğiyle kaldırılmıştır.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "TBMM, seçimlerin yenilenmesine parlamento kararı ya da kanunla karar verebilir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bir ilin ya da seçim çevresinin TBMM'de temsilcisinin kalmaması halinde, genel seçimlerin yapılmasına 1 yıl kalmışsa ara seçim yapılamaz.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Anayasa'nın 78. maddesine göre, TBMM'de bir ilin ya da seçim çevresinin temsilcisinin kalmamış olması hali, başka bir koşul aranmaksızın doğrudan ara seçim sebebidir.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ },
+ {
+  "topicId": "52223b97-98b3-408b-93f4-3e3a03bf509b",
+  "articleNo": null,
+  "stem": "1982 Anayasası'na göre siyasi partilerin kurulmasıyla ilgili aşağıda verilen ifadelerden hangisi doğrudur?",
+  "options": [
+   {
+    "label": "A",
+    "text": "Siyasi parti kurmak için İçişleri Bakanlığından ve mahallin en büyük mülki amirinden izin alınması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "B",
+    "text": "Siyasi parti kurucularının Anayasa Mahkemesince ve Yüksek Seçim Kurulunca onaylanmaları gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "C",
+    "text": "Siyasi partiye üye olabilmek için hiçbir öğretim kurumunda öğrenci olmamak gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "D",
+    "text": "Siyasi partiye üye olacak kişilerin en az 21 yaşında olması gerekir.",
+    "isCorrect": false
+   },
+   {
+    "label": "E",
+    "text": "Bir siyasi partinin kurulabilmesi için önceden izin alınmasına gerek yoktur.",
+    "isCorrect": true
+   }
+  ],
+  "explanation": "Siyasi partiler serbest kuruluş sistemine tabidirler. Bir siyasi partinin kurulabilmesi için herhangi bir makamdan izin almaya gerek yoktur.",
+  "difficulty": "medium",
+  "sourceLabel": "THEMIS 2025 ANAYASA HUKUKU SORU KİTABI"
+ }
+]
