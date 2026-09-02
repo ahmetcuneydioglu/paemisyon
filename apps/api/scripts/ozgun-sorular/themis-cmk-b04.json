@@ -1,0 +1,877 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Bölge adliye mahkemesi Cumhuriyet başsavcılığının itiraz yetkisi hakkında\nI. Bölge adliye mahkemesi ceza dairelerinin kesin nitelikteki kararları aleyhine bu yetki tanınmıştır.\nII. Başsavcılık ancak istem üzerine bu yola başvurabilir.\nIII. İtiraz, kararın başsavcılığa verildiği tarihten itibaren 2 hafta içinde kararı veren daireye yapılır.\nIV. İtiraz, sanık veya müdafine dava dosyasından belirlenen son adresleri üzerinden tebliğ olunur.\nifadelerinden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.308/A bölge adliye mahkemesi Cumhuriyet başsavcılığının itiraz yetkisini düzenler ve dört noktada belirlidir. Yetki, bölge adliye mahkemesi ceza dairelerinin KESİN NİTELİKTEKİ kararlarına karşı tanınmıştır. Başsavcılık bu yola RE'SEN VEYA İSTEM ÜZERİNE başvurabilir; yalnızca istem üzerine başvurabileceğini söyleyen ifade metni daraltır. Süre BİR AYDIR ve kararın başsavcılığa verildiği tarihten işler; iki hafta diyen ifade yanlıştır (sanık lehine itirazda ise süre aranmaz). Sanık aleyhine itiraz sanık veya müdafiine daire tarafından tebliğ olunur ve tebligat, ilgililerin DAVA DOSYASINDAN BELİRLENEN SON ADRESLERİNE yapılmasıyla geçerli olur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki mahkeme kararlarından hangisi itiraza tabi değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ceza verilmesine yer olmadığı kararı",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Elkonulan eşyanın geri verilmesi isteminin reddi kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adli kontrole ilişkin kararlar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kamu davasının açılmasının ertelenmesi kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İddianamenin iadesi kararı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İtiraz yolu CMK m.267 uyarınca hâkim kararları ile kanunun gösterdiği hâllerde mahkeme kararlarına karşı açıktır; HÜKÜMLER bu yolun konusu değildir. Ceza verilmesine yer olmadığı kararı m.223/1'de açıkça HÜKÜM olarak sayıldığı için itiraza değil istinafa tabidir. Diğer seçeneklerdeki kararlar hüküm niteliği taşımaz ve kanun bunlara itiraz yolunu açıkça öngörür: elkonulan eşyanın geri verilmesi isteminin reddi (m.131), adlî kontrole ilişkin kararlar (m.111/2), kamu davasının açılmasının ertelenmesi kararı (m.171/5) ve iddianamenin iadesi kararı (m.174/5). Ayrım basittir: karar davanın esasını çözüyorsa hüküm, çözmüyorsa itiraza tabi bir ara karardır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre temyiz süresi ne kadardır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 hafta",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 hafta",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "15 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "1 ay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.291/1 temyiz süresini, hükmün GEREKÇESİYLE BİRLİKTE TEBLİĞ EDİLDİĞİ tarihten itibaren İKİ HAFTA olarak belirler. Bu süre 2/3/2024 tarihli 7499 sayılı Kanunla değiştirilmiştir; önceki metin \"hükmün açıklanmasından itibaren on beş gün\" diyordu ve maddenin ikinci fıkrası da aynı kanunla yürürlükten kaldırılmıştır. Bu nedenle on beş gün ya da bir hafta veren çözümler artık geçersizdir. Süre, dilekçe verilerek veya zabıt kâtibine beyanda bulunularak kullanılır; beyan tutanağa geçirilir ve hâkime onaylattırılır. Tutuklu sanık bakımından m.263'teki kolaylık saklıdır. Aynı değişiklik istinaf süresini de (m.273/1) iki hafta ve gerekçeli tebliğ esasına bağlamıştır.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Cumhuriyet savcısı yasa yoluna sanık lehine başvurduğunda \"yeniden verilecek hükmün önceki hükümde belirlenmiş olan cezadan daha ağır bir cezayı içerememesine\" ne ad verilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Usulü kazanılmış hak",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Lehe bozma yasağı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kesin hükmün önleme etkisi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kesin hüküm",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Aleyhe değiştirme yasağı",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.265/1'in ikinci cümlesi ALEYHE DEĞİŞTİRME YASAĞINI (reformatio in peius) düzenler: Cumhuriyet savcısı kanun yoluna SANIK LEHİNE başvurduğunda, yeniden verilen hüküm önceki hükümde tayin edilmiş olan cezadan daha ağır bir cezayı içeremez. Aynı ilkenin istinaftaki karşılığı m.283/1, temyiz sonrası yargılamadaki karşılığı m.307/5'tir. Kuralın amacı, kanun yoluna başvurmanın başvuranın durumunu kötüleştirme riski taşımasını önlemek, böylece hak aramayı caydırmamaktır. Maddenin ilk cümlesi ise bunun aynasıdır: savcı tarafından ALEYHE kanun yoluna gidilen karar, sanık LEHİNE bozulabilir veya değiştirilebilir; yani aleyhe başvuru sanık yararına sonuç doğurmaya engel değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre kesinleşen ceza hükmünün Avrupa İnsan Hakları Sözleşmesi'nin veya eki protokollerinin ihlal edilerek verildiğinin ve hükmün bu aykırılığa dayandığının hangi yargısal makamın kesinleşmiş kararıyla tespit edilmiş olması durumunda, yargılamanın yenilenmesi istenebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Anayasa Mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yargıtay",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Avrupa İnsan Hakları Mahkemesi",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bölge adliye mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kararı veren mahkeme",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.311/1-f, kesinleşmiş bir ceza hükmü bakımından özel bir yenileme nedeni öngörür: hükmün, İnsan Haklarını ve Ana Hürriyetleri Korumaya Dair Sözleşmenin veya eki protokollerin İHLÂLİ suretiyle verildiğinin ve hükmün bu aykırılığa dayandığının AVRUPA İNSAN HAKLARI MAHKEMESİNİN KESİNLEŞMİŞ KARARIYLA tespit edilmiş olması. Aynı bent, AİHM'e yapılan başvuru hakkında dostane çözüm ya da tek taraflı deklarasyon sonucunda düşme kararı verilmesini de kapsar. Bu hâlde yenileme, AİHM kararının KESİNLEŞTİĞİ tarihten itibaren BİR YIL içinde istenebilir. Tespiti yapacak makam kanunda tek tek belirlendiği için Anayasa Mahkemesi veya Yargıtay kararları bu bende dayanak oluşturmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Temyiz yasa yolu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Temyiz yoluna bölge adliye mahkemesi ceza dairelerinin bozma dışında kalan hükümleri için başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kişinin rızaya dayalı geri verme usulünü kabul etmemesi durumunda, ağır ceza mahkemesinin vereceği geri verme isteminin kabul edilebilir olup olmadığına yönelik karara karşı temyiz yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hükümden önce verilip hükme esas oluşturan veya başkaca yasa yolu öngörülmemiş olan mahkeme kararları da hükümle birlikte temyiz olunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Avukatların, avukatlık veya Türkiye Barolar Birliği ya da baroların organlarındaki görevlerinden doğan veya görev sırasında işledikleri suçlar nedeniyle verilen bölge adliye mahkemesi ceza dairelerinin kararları hakkında, hapis cezasının süresine bakılmaksızın temyiz yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cumhuriyet savcısı temyiz dilekçesinde, temyiz isteğinin sanığın yararına veya aleyhine olduğunu açıkça belirtmek zorunda değildir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.294/1'e 2/3/2024 tarihli 7499 sayılı Kanunla eklenen cümle açık bir yükümlülük getirir: \"Cumhuriyet savcısı temyiz dilekçesinde, temyiz isteğinin sanığın yararına veya aleyhine olduğunu AÇIKÇA BELİRTİR.\" Bu nedenle böyle bir zorunluluğun bulunmadığını söyleyen ifade yürürlükteki metne aykırıdır; yükümlülüğün amacı, aleyhe değiştirme yasağının (m.265, m.307/5) hangi hâlde işleyeceğini baştan belirlemektir. Diğer ifadeler kanuna uygundur: temyiz, bölge adliye mahkemesi ceza dairelerinin BOZMA DIŞINDA kalan hükümlerine karşı açıktır (m.286/1); hükümden önce verilip hükme esas teşkil eden veya başkaca kanun yolu öngörülmemiş kararlar da hükümle birlikte temyiz olunabilir (m.287); geri verme istemine ilişkin karar ile avukatların görevlerinden doğan suçlarına ilişkin kararlar özel kanunlarla temyize açılmıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "İtiraz yasa yolu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İtiraz yasa yolunda itiraza konu olan karar, hukuksal ve maddi yönden incelemeye tabi tutulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kural olarak yargıç kararlarına karşı itiraz yoluna gidilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İtiraz, yasanın ayrıca hüküm koymadığı durumlarda ilgililerin kararı öğrendiği tarihten itibaren 2 hafta içinde yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İtiraz, kural olarak kararın yerine getirilmesinin geri bırakılması sonucunu doğurmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kararına itiraz edilen yargıç, başvuru nedenlerini yerinde görmezse itirazı reddeder.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Kararına itiraz edilen merci, itirazı REDDETME yetkisine sahip değildir. CMK m.268/2 iki seçenek tanır: hâkim veya mahkeme itirazı YERİNDE GÖRÜRSE kararını kendisi DÜZELTİR; yerinde görmezse en çok ÜÇ GÜN içinde dosyayı itirazı incelemeye yetkili MERCİE GÖNDERİR. Esas hakkındaki değerlendirme merciin işidir. Diğer ifadeler metne uygundur: itiraz incelemesi hem hukuki hem maddi yönü kapsar, bu yönüyle yalnız hukuka aykırılıkla sınırlı temyizden ayrılır; kural olarak hâkim kararlarına karşı itiraz yoluna gidilebilir (m.267); süre, kanunun ayrıca hüküm koymadığı hâllerde kararın öğrenilmesinden itibaren İKİ HAFTADIR (m.268/1); itiraz kural olarak kararın yerine getirilmesini geri bırakmaz (m.269/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Resmî belgede sahtecilik suçundan dolayı yargılanan (D), 3 yıl hapis cezası almıştır. Kararın hukuka aykırı olduğunu düşünen müdafi (M), müvekkili (D)'ye sormadan istinaf yoluna başvurmuştur.\nOlayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Müdafinin istinaf yoluna başvurma hakkı yoktur. Bu nedenle (M)'nin başvurusu ön inceleme aşamasında reddedilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Müdafinin istinaf yoluna başvurabilmesi için müvekkilinin açık rızası gereklidir. Bu nedenle (M)'nin başvurusu ön inceleme aşamasında reddedilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Müdafinin istinaf yoluna başvurabilmesi için müvekkilinin yazılı rızası gereklidir. Bu nedenle (M)'nin başvurusu inceleme aşamasında reddedilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Müdafi, müvekkilinin açık arzusuna aykırı olsa bile istinaf yoluna başvurabilir. Bu nedenle yapılan istinaf başvurusu geçerlidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İstinaf başvurusu geçerlidir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.261 avukatın kanun yoluna başvurmasını tek bir koşula bağlar: müdafiliğini veya vekilliğini üstlendiği kişilerin AÇIK ARZUSUNA AYKIRI OLMAMAK. Kanun, önceden alınmış bir rıza ya da yazılı muvafakat aramaz; aranan şey, müvekkilin açıkça ortaya konmuş iradesine ters düşmemektir. Olayda müvekkil başvuruya karşı bir irade açıklamamıştır; bu nedenle müdafinin başvurusu geçerlidir ve ön incelemede reddedilmez. Açık rıza ya da yazılı rıza arayan seçenekler maddeye ek koşul getirir; müvekkilin açık arzusuna aykırı olsa bile başvurulabileceğini söyleyen seçenek ise maddedeki tek sınırı yok sayar. Not: başvurudan VAZGEÇME farklıdır ve m.266/2 uyarınca vekâletnamede özel yetki gerektirir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Mahkemenin, açıkça bilirkişi raporuyla çelişen karar vermesi\nII. Heyette usuli bir sorunda azınlıkta kalan üyenin esas hakkındaki oylamada oy kullanılması\nIII. Savcının duruşmada bulunmaması\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdakilerden hangileri kesin bir hukuka aykırılık nedeni değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.289/1 hukuka KESİN aykırılık hâllerini dokuz bent hâlinde ve SINIRLI olarak sayar; listede olmayan bir aykırılık nispîdir ve hükme etkisi gösterilmedikçe bozma nedeni olmaz. Cumhuriyet savcısının veya duruşmada bulunması zorunlu diğer kişilerin yokluğunda duruşma yapılması (e) bendinde açıkça yer alır, dolayısıyla kesin aykırılıktır. Buna karşılık mahkemenin bilirkişi raporuyla çelişen karar vermesi listede yoktur; hâkim bilirkişi görüşüyle bağlı değildir ve delilleri vicdani kanaatine göre değerlendirir. Heyette usuli bir sorunda azınlıkta kalan üyenin esas hakkındaki oylamaya katılması da kesin aykırılık sayılmaz; müzakere ve oylama usulü m.227-229'da düzenlenmiştir ve azınlıkta kalan üye sonraki oylamalara katılmakla yükümlüdür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre istinaf yasa yolu hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İstinaf yoluna hükmün gerekçesiyle birlikte tebliğ edildiği tarihten itibaren 1 hafta içerisinde başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Hükümden önce verilip hükme esas oluşturan veya başkaca yasa yolu öngörülmemiş olan mahkeme kararlarına karşı istinaf yoluna başvurulamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kişinin rızaya dayalı geri verme usulünü kabul etmemesi durumunda, mahkemenin vereceği geri verme isteminin kabul edilebilir olup olmadığına yönelik karara karşı istinaf yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İstinaf başvurusu ancak bir dilekçe ile yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cumhuriyet savcısı, istinaf yoluna başvurma nedenlerini gerekçeleriyle birlikte yazılı isteminde açıkça göstermek zorundadır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.273/5 Cumhuriyet savcısı bakımından özel bir yükümlülük öngörür: savcı, istinaf yoluna başvurma nedenlerini GEREKÇELERİYLE BİRLİKTE yazılı isteminde AÇIKÇA GÖSTERİR ve bu istem ilgililere tebliğ edilir. Sanık ve katılan sıfatını taşıyanlar bakımından ise m.273/4 tersini söyler: başvuru nedenlerinin gösterilmemesi inceleme yapılmasına engel değildir. Diğer seçenekler metne aykırıdır: istinaf süresi bir hafta değil İKİ HAFTADIR ve hükmün gerekçesiyle birlikte tebliğinden işler (m.273/1); hükümden önce verilip hükme esas teşkil eden veya başkaca kanun yolu öngörülmemiş kararlara karşı da hükümle birlikte istinafa başvurulabilir (m.272/1); başvuru yalnız dilekçeyle değil, zabıt kâtibine beyanda bulunularak da yapılabilir (m.273/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Sanığın lehine veya aleyhine itirazda süre aranmaz.\nII. Sanık aleyhine bu yola başvurulabilmesi için kararı etkileyecek nitelikte esaslı bir hatanın bulunması zorunludur.\nIII. Sanık veya müdafi itirazın tebliğden itibaren 7 gün içinde yazılı olarak yanıt verebilir.\nBölge adliye mahkemesi Cumhuriyet başsavcılığının itiraz yetkisi hakkında yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.308/A, bölge adliye mahkemesi Cumhuriyet başsavcılığının itirazında sanık aleyhine başvuruyu ağırlaştırılmış bir koşula bağlar: sanık aleyhine itiraz edilebilmesi için KARARI ETKİLEYECEK NİTELİKTE ESASLI BİR HATANIN bulunması zorunludur. Bu koşul yalnız aleyhe itiraz için geçerlidir. Süre bakımından ise ayrım vardır: itiraz kural olarak kararın başsavcılığa verildiği tarihten itibaren BİR AY içinde yapılır, yalnızca SANIK LEHİNE itirazda süre aranmaz; bu nedenle \"lehine veya aleyhine itirazda süre aranmaz\" diyen ifade yanlıştır. Sanık veya müdafiin cevap süresi de yedi gün değil İKİ HAFTADIR. Kurulun itiraz üzerine verdiği kararlar kesindir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(A), doğrudan kastla insan öldürme suçundan mahkûm olup verilen karara karşı istinaf yasa yoluna başvurur. Bölge adliye mahkemesi, kararı yerinde bularak istinaf başvurusunu esastan reddeder. Bu kararın temyizi üzerine Yargıtay olayda bilinçli taksirin bulunduğu gerekçesiyle kararı sanık lehine bozar. Mahkeme, bozma kararına uyar. Yeniden yapılan duruşma sonunda eylemin olası kastla insan öldürme olduğunu kabul ile sanığı yeni tavsife göre mahkûm eder.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mahkeme ilk nitelendirmesine göre yargılama yapmak zorundadır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mahkeme, Yargıtay'ın aksi görüşünde olsa bile direnme kararı veremezdi.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mahkeme ilk nitelendirmeye göre yargılama yapmak zorundadır. Ancak bozmaya uymuş olmasına rağmen daha ağır bir ceza vermek yetkisine sahiptir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bozmaya uyan mahkemenin, mahkûmiyet kararı vermesi yerindedir ancak mahkeme eski cezadan daha ağır bir ceza veremez.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme bozmaya uymuş olmasına rağmen \"bozmadan sonra serbestlik kuralı\" gereği, yeni nitelendirmeye göre eskisinden daha ağır bir ceza da verebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bozmadan sonraki yargılamada mahkeme, bozma kararına uymuşsa fiili yeniden nitelendirebilir; buna \"bozmadan sonra serbestlik\" denir. Ancak bu serbestliğin sınırını CMK m.307/5 çizer: hüküm YALNIZ SANIK tarafından veya onun LEHİNE Cumhuriyet savcısı ya da m.262'de gösterilen kimselerce temyiz edilmişse, yeniden verilen hüküm önceki hükümle belirlenmiş cezadan DAHA AĞIR OLAMAZ. Olayda temyiz sanık tarafından yapılmış ve bozma sanık lehine gerçekleşmiştir; mahkeme fiili olası kastla öldürme olarak nitelendirip mahkûmiyet kurabilir, fakat cezayı ağırlaştıramaz. Not: m.307/4 uyarınca mahkemenin bozmaya DİRENME hakkı da vardır; uyma zorunlu değildir. Ayrıca m.307/2 gereği verilecek ceza bozmaya konu cezadan ağırsa sanığın her hâlde dinlenmesi gerekir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisinde itirazı incelemeye yetkili merci yanlış gösterilmiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sulh ceza sulh ceza yargıçlığının tutuklama ve adli kontrole ilişkin verdiği kararlara karşı yapılan itirazların incelenmesi, o yerde birden fazla sulh ceza yargıçlığının bulunması durumunda, numara olarak kendisini izleyen yargıçlığa aittir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İlk tutuklama istemini reddeden sulh ceza yargıçlığı, tutuklama kararını itiraz mercii olarak inceleyemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Asliye ceza mahkemesi yargıcı tarafından verilen kararlara yapılacak itirazların incelenmesi, yargı çevresinde bulundukları ağır ceza mahkemesine aittir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ağır ceza mahkemesi ile başkanı tarafından verilen kararlar hakkındaki itirazların incelenmesi, o yerde ağır ceza mahkemesinin birden çok dairesinin bulunması durumunda, numara olarak kendisini izleyen daireye aittir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Naip yargıç kararlarına yapılacak itirazların incelenmesi, mensup oldukları ağır ceza mahkemesi başkanına aittir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İtirazı incelemeye yetkili merciler CMK m.268/3'te sayılır ve sistem \"yatay\" işler: sulh ceza hâkimliği kararlarına yapılan itirazlar, o yerde birden fazla sulh ceza hâkimliği varsa NUMARA OLARAK KENDİSİNİ İZLEYEN hâkimliğe, son numaralı hâkimlik için bir numaralı hâkimliğe aittir. Asliye ceza mahkemesi hâkiminin kararlarına yapılan itirazlar yargı çevresinde bulundukları AĞIR CEZA MAHKEMESİNE; ağır ceza mahkemesi ile başkanının kararlarına yapılan itirazlar numara olarak kendisini izleyen ağır ceza dairesine; naip hâkim kararlarına yapılan itirazlar ise mensup oldukları ağır ceza mahkemesi başkanına yapılır. Maddenin (b) bendi ayrıca özel bir yasak koyar: İLK TUTUKLAMA İSTEMİNİ REDDEDEN sulh ceza hâkimliği, tutuklama kararını itiraz mercii olarak inceleyemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Gıyapta hakaret\nII. Kamu görevlisine görevinden dolayı hakaret\nIII. Ölünün hatırasına hakaret\n5271 sayılı Ceza Muhakemesi Yasası'na göre bölge adliye mahkemesi ceza daireleri tarafından yukarıdaki suçlar nedeniyle verilen kararlardan hangileri kesinlik sınırı içinde kalsa bile temyiz edilebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.286/2 belli kararları temyiz dışında bırakırken, ÜÇÜNCÜ FIKRA bu sınırlamaya bir istisna getirir: ikinci fıkradaki sınırlar içinde kalsa bile, fıkrada tek tek sayılan suçlara ilişkin bölge adliye mahkemesi kararları temyiz edilebilir. Katalog, hakaret suçunun tamamını değil yalnızca TCK m.125'in ÜÇÜNCÜ FIKRASINDAKİ nitelikli hâlleri kapsar; bunlar hakaretin kamu görevlisine görevinden dolayı, kişinin dinî, siyasî, sosyal, felsefî inanç ve düşüncelerini açıklamasından dolayı ya da mensup olduğu dine göre kutsal sayılan değerlerden bahisle işlenmesidir. Bu nedenle kamu görevlisine görevinden dolayı hakaret katalogdadır. Buna karşılık gıyapta hakaret (m.125/1) ile ölünün hatırasına hakaret (m.130) katalogda yer almaz ve kesinlik sınırı içinde kalan bu kararlar temyiz edilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "İstanbul 6. Sulh Ceza Yargıçlığı, göçmen kaçakçılığı suçundan şüpheli (A)'nın tutuklanması isteminin reddine karar verir. İtiraz üzerine İstanbul 3. Asliye Ceza Mahkemesi ret kararını kaldırır ve (A)'nın tutuklanmasına karar verir. Buna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Asliye Ceza Mahkemesi itiraz merci olduğu için (A)'nın adli kontrol altına alınmasına karar veremez.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Asliye Ceza Mahkemesi'nin verdiği karar kesin olmayıp bu karara karşı da itiraz yoluna başvurulabilmesi mümkündür.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "6. Sulh Ceza Yargıçlığının kararı kesin olduğundan Asliye Ceza Mahkemesi'nin kararı yok hükmündedir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6. Sulh Ceza Yargıçlığı itirazı yerinde görseydi kararını kendisi düzeltemezdi.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "6. Sulh Ceza Yargıçlığı itirazı üzerine dosyayı en çok 5 gün içinde, itirazı incelemeye yetkili olan mercie göndermek zorundadır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İtiraz mercii kararları kural olarak kesindir; CMK m.271/4 bu kuralın tek istisnasını gösterir: İLK DEFA MERCİ TARAFINDAN VERİLEN TUTUKLAMA KARARLARINA karşı itiraz yoluna gidilebilir. Olayda sulh ceza hâkimliği tutuklama istemini reddetmiş, itiraz mercii olan asliye ceza mahkemesi ise ilk kez tutuklamaya karar vermiştir; bu karar bu nedenle kesin değildir ve itiraza açıktır. Diğer seçenekler metne aykırıdır: itiraz mercii itirazı yerinde görürse itiraz konusu hakkında da karar verir (m.271/2), dolayısıyla adlî kontrole de hükmedebilir; kararına itiraz edilen hâkim itirazı yerinde görürse kararını KENDİSİ DÜZELTİR ve ancak yerinde görmezse dosyayı en çok ÜÇ GÜN içinde mercie gönderir (m.268/2); beş günlük bir süre kanunda yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Hükümlü ölürse yargılamanın yenilenmesi istenemez. II. Yargılamanın yenilenmesi istemi hükmün infazını ertelemez. Ancak mahkeme, infazın geri bırakılmasına veya durdurulmasına karar verebilir. III. Yargılamanın yenilenmesi istemi, ilk hükmü veren mahkemeye sunulur. Hükmü veren mahkeme, istemin kabule değer olup olmadığına karar verir. IV. Yargılamanın yenilenmesi istemi reddedilmezse bir diyeceği varsa 7 gün içinde bildirmek üzere Cumhuriyet savcısı ve ilgili tarafa tebliğ olunur. 5271 sayılı Ceza Muhakemesi Yasası'na göre yargılamanın yenilenmesi yasa yolu hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I, II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesinde iki ifade yürürlükteki metne aykırıdır. Birincisi, hükümlünün ölümünün yenilemeye engel olduğu iddiasıdır; CMK m.313/1 açıkça hükmün infaz edilmiş olmasının veya HÜKÜMLÜNÜN ÖLÜMÜNÜN istem için engel oluşturmadığını, m.313/2 ise ölenin eşi, üstsoyu, altsoyu ve kardeşlerinin istemde bulunabileceğini söyler. İkincisi süreye ilişkindir: m.319/2 uyarınca kabule değer görülen istem, bir diyeceği varsa İKİ HAFTA içinde bildirmek üzere Cumhuriyet savcısı ve ilgili tarafa tebliğ olunur; yedi gün diyen ifade eskimiştir. Buna karşılık yenileme istemi hükmün infazını ertelemez ama mahkeme infazın geri bırakılmasına veya durdurulmasına karar verebilir (m.312) ve istem, hükmü veren mahkemeye sunulur; kabule değer olup olmadığına o mahkeme karar verir (m.318/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yasa yararına bozmayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yasa yararına bozma, yargıç veya mahkeme tarafından verilen ve istinaf veya temyiz incelemesinden geçmeksizin kesinleşen karar veya hükümler için başvurulan olağanüstü yasa yoludur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yasa yararına bozma, 30 günlük süreye tabidir. Süre, kararın Adalet Bakanlığı'na bildirilmesinden itibaren başlar.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Adalet Bakanlığı, karar veya hükmün Yargıtay'ca bozulması istemini, Yargıtay Cumhuriyet Başsavcılığına yazılı olarak bildirir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yasa yararına bozma yetkisi, hükümlünün cezasının kaldırılmasına veya daha hafif bir cezanın verilmesine özgü olmak üzere ve yasa yararına olarak resen Yargıtay Cumhuriyet Başsavcısı tarafından da kullanılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yasa yararına bozma yoluna Adalet Bakanlığı tarafından başvurulduğunda bu yetki, artık Yargıtay Cumhuriyet Başsavcısı tarafından kullanılamaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kanun yararına bozma, hâkim veya mahkemece verilen ve İSTİNAF VEYA TEMYİZ İNCELEMESİNDEN GEÇMEKSİZİN kesinleşen karar ve hükümlere karşı işleyen olağanüstü bir kanun yoludur (CMK m.309/1). Kanun bu yol için HİÇBİR SÜRE ÖNGÖRMEZ; otuz günlük bir süreye tabi olduğunu söyleyen ifade metinde karşılığı bulunmadığı için yanlıştır. Yolun işleyişi şöyledir: hukuka aykırılığı öğrenen Adalet Bakanlığı, bozma istemini yasal nedenlerini belirterek Yargıtay Cumhuriyet Başsavcılığına yazılı olarak bildirir; başsavcı bu nedenleri aynen yazarak ilgili ceza dairesine verir; daire nedenleri yerinde görürse kararı kanun yararına bozar. Ayrıca m.310, hükümlünün cezasının kaldırılmasına veya daha hafif ceza verilmesine özgü hâllerde bu yetkinin re'sen Yargıtay Cumhuriyet Başsavcısınca da kullanılabileceğini, ancak Adalet Bakanlığı başvurmuşsa artık kullanılamayacağını söyler.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Kasten öldürme suçunu işledikleri ileri sürülen (A) ve (B) hakkında bir iddianame düzenleyen Cumhuriyet savcısı (C), mahkemenin iddianameyi kabul kararı vermesinden sonra (A) ve (B)'nin tutuklanmasını istemiştir. Yapılan yargılama sonucunda (A) ve (B) takdiri indirim nedenlerinden de yararlanarak ayrı ayrı 25 yıl hapis cezasına mahkûm edilmiştir. (C), sonradan sanıkların suçsuz olduğunu anladığı için onların lehine yasa yoluna başvurmuştur. Buna göre olayla ilgili I. (A) ve (B) hakkında kamu davasının açılabilmesi için yeterli şüphe gerekirken tutuklama kararı verilebilmesi için kuvvetli şüphe aranır. II. (C), sanık lehine yasa yollarına başvuramaz. Zira aksi durum, çelişkili davranış yasağının ihlali olup hukuken bu başvuru dinlenmez. III. (A) ve (B)'nin suçsuz olduğu anlaşılırsa mahkemece her ikisi hakkında düşme kararı verilir. ifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Olayda iki ifade yanlıştır. Cumhuriyet savcısı sanık lehine kanun yoluna BAŞVURABİLİR; CMK m.260/3 bunu açıkça tanır ve savcının kamu adına hareket etmesi lehe başvuruya engel değildir, çelişkili davranış yasağı gibi bir sınır kanunda yoktur. İkincisi, sanıkların suçsuz olduğu anlaşılırsa verilecek karar DÜŞME değil BERAATTİR; suçun sanık tarafından işlenmediğinin sabit olması m.223/2-b'de bir beraat nedenidir, düşme ise m.223/8'de sanığın ölümü, af, zamanaşımı gibi hâllere özgüdür. Buna karşılık ilk ifade doğrudur: kamu davasının açılması için m.170/2 uyarınca YETERLİ ŞÜPHE aranırken, tutuklama için m.100/1 uyarınca KUVVETLİ SUÇ ŞÜPHESİNİ gösteren somut deliller ve ayrıca bir tutuklama nedeni gerekir; tutuklamanın eşiği daha yüksektir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Yargılamanın hükümlü lehine yenilenmesi önceki kararın kesinleşmesinden itibaren 1 yıl içinde istenebilir. II. Ceza hükmünün, Avrupa İnsan Hakları Sözleşmesi'nin veya eki protokollerinin ihlal edilerek verildiğinin ve hükmün bu aykırılığa dayandığının, Avrupa İnsan Hakları Mahkemesi'nin kesinleşmiş kararıyla saptanmış olması durumunda yargılamanın yenilenmesi, Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren 1 yıl içinde istenebilir. III. Bir suç iddiasına dayandırılan yenileme istemi, kural olarak bu eylemden dolayı kesinleşmiş bir mahkûmiyet hükmü verilmişse veya mahkûmiyeti gerektirecek nitelikte kuvvetli kanıt bulunmaması dışında bir nedenle ceza soruşturmasına başlanamamış veya sürdürülememişse kabul edilebilir. IV. Kanıtların toplanması bittikten sonra Cumhuriyet savcısı ve hakkında hüküm kurulmuş olan kişiden 7 gün içinde görüş ve düşüncelerini bildirmeleri istenir. 5271 sayılı Ceza Muhakemesi Yasası'na göre yargılamanın yenilenmesi yolu hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesinde iki ifade yanlıştır. Birincisi süreye ilişkindir: hükümlü LEHİNE yenileme için CMK m.311'de herhangi bir süre öngörülmemiştir; kanun yalnızca (f) bendindeki AİHM hâli için bir yıllık süre koyar. Bu nedenle lehe yenilemeyi kesinleşmeden itibaren bir yılla sınırlayan ifade metinde karşılığı olmayan bir sınır getirir. İkincisi görüş süresidir: m.320/3, delillerin toplanması bittikten sonra Cumhuriyet savcısı ve hakkında hüküm kurulmuş olan kişiden İKİ HAFTALIK süre içinde görüş ve düşüncelerini bildirmelerinin isteneceğini söyler; yedi gün diyen ifade eskimiştir. Buna karşılık AİHM kararının kesinleştiği tarihten itibaren bir yıllık süre (m.311/1-f) ve bir suç iddiasına dayanan yenileme isteminin kabul koşulları (m.316/1) doğru aktarılmıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi bölge adliye mahkemelerinin temyiz edilemeyen kararları arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 yıl veya daha az hapis cezasını veya adli para cezasını gerektiren suçlardan, ilk derece mahkemesince verilen beraat kararları ile ilgili olarak istinaf başvurusunun esastan reddine ilişkin kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Avukatların, görevlerinden doğan veya görev sırasında işledikleri suçlar nedeniyle verilen bölge adliye mahkemesi ceza dairelerinin kararları",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "İlk derece mahkemelerinden verilen 5 yıl veya daha az hapis cezalarını artırmayan bölge adliye mahkemesi kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yalnızca eşya veya kazanç müsaderesine veya bunlara yer olmadığına ilişkin ilk derece mahkemesi kararları ile ilgili olarak istinaf başvurusunun esastan reddine ilişkin kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Davanın düşmesine ilişkin ilk derece mahkemesi kararları ile ilgili olarak bölge adliye mahkemesince verilen bu tür kararlar veya istinaf başvurusunun esastan reddine ilişkin kararlar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.286/2 bölge adliye mahkemesi kararlarından temyiz edilemeyecek olanları bentler hâlinde sayar: beş yıl veya daha az hapis cezalarını artırmayan kararlar, yalnızca eşya veya kazanç müsaderesine ilişkin kararlara dair esastan ret kararları, davanın düşmesine ilişkin kararlar ve on yıl veya daha az hapis ya da adlî para cezasını gerektiren suçlarda beraat kararlarına ilişkin esastan ret kararları bunlar arasındadır. Buna karşılık AVUKATLARIN avukatlık veya Türkiye Barolar Birliği ya da baroların organlarındaki görevlerinden doğan veya görev sırasında işledikleri suçlar nedeniyle verilen bölge adliye mahkemesi ceza dairesi kararları bu sınırlamaya tabi değildir; Avukatlık Kanunu m.59 bu kararlar için temyiz yolunu açık tutar. Özel kanunla tanınan bu istisna, genel kesinlik sınırının önüne geçer.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(A), (B) ve (C) zimmet suçundan dolayı 9 yıl hapse mahkûm olmuş; hükme karşı yalnızca (A) istinaf yoluna başvurmuştur. Bölge adliye mahkemesi, istinaf başvurusunu yaptığı inceleme sonucunda reddettikten sonra (A), bu sefer de temyiz yoluna başvurmuş ve Yargıtay temyiz olunan hükmü (A) lehine bozmuştur. Olayla ilgili I. (B) ve (C) hiçbir koşulda bozma kararından yararlanamaz. II. (A) hükümlü statüsüne girmemiştir. III. (B) ve (C) yasa yoluna başvurmadıkları için hükümlü statüsüne girmiştir. ifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İki ifade yanlıştır. Birincisi, kanun yoluna başvurmayan sanıkların bozmadan hiçbir koşulda yararlanamayacağı iddiasıdır; CMK m.306 tam tersini söyler: hüküm SANIK LEHİNE bozulmuşsa ve bozma nedeninin temyiz isteminde bulunmamış diğer sanıklara da UYGULANMA OLANAĞI varsa, o sanıklar da temyiz etmiş gibi bozmadan yararlanır (sirayet). İkincisi statüye ilişkindir: kanun yoluna başvurmayanların hükümlü sayıldığı ifadesi de yanlıştır, çünkü sirayet kuralı işlediğinde hüküm onlar bakımından da kesinleşmemiş olur. Buna karşılık kanun yoluna başvuran sanığın hükmü henüz kesinleşmediği için hükümlü statüsüne girmediği doğrudur; CMK m.2/1-b uyarınca hükümlü, kesinleşmiş mahkûmiyet hükmüyle cezası belirlenen kişidir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "İstanbul Cumhuriyet Savcısı (C) yaptığı soruşturma sonucunda, kasten öldürmeye teşebbüs suçundan şüpheli (A) hakkında, yeterli şüphe oluşturacak kanıt elde edilememesi nedeniyle kovuşturmaya yer olmadığı (takipsizlik) kararı vermiştir. Suçtan zarar gören (B) bu karara karşı itiraz etmek istemektedir. (B)'nin ikamet ettiği Bakırköy ilçesi, aynı zamanda İstanbul Adliyesi'ne en yakın ağır ceza merkezidir. Buna göre itirazla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İtirazı Bakırköy Ağır Ceza Mahkemesi inceler.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İtiraz, kovuşturmaya yer olmadığına ilişkin kararın verildiği tarihten 1 hafta içinde yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İtiraz dilekçesinde, kamu davasının açılmasını gerektirebilecek olaylar ve kanıtlar belirtilmek zorundadır.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "İtiraz mercii kararını vermek için soruşturmanın genişletilmesine gerek görür ise bu hususu açıkça belirterek o yer sulh ceza yargıcını görevlendirebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İtirazın reddedilmesi durumunda Cumhuriyet savcısının, yeni kanıt varlığı nedeniyle kamu davasını açabilmesi mümkün değildir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kovuşturmaya yer olmadığı kararına itirazda CMK m.173 biçimsel bir zorunluluk getirir: itiraz dilekçesinde KAMU DAVASININ AÇILMASINI GEREKTİREBİLECEK OLAYLAR VE DELİLLER belirtilir. Bu, itirazın soyut bir memnuniyetsizlik beyanı olmasını önler. Diğer seçenekler metne aykırıdır: itiraz, kararın kendisine tebliğ edildiği tarihten itibaren İKİ HAFTA içinde yapılır ve kararı veren savcının yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki SULH CEZA HÂKİMLİĞİNE verilir; itirazı ağır ceza mahkemesi incelemez. Sulh ceza hâkimliği soruşturmanın genişletilmesine gerek görürse bu hususu açıkça belirterek O YER CUMHURİYET BAŞSAVCILIĞINDAN talep eder. İtirazın reddi de mutlak bir engel değildir: m.172/2 uyarınca yeni delil elde edilir ve sulh ceza hâkimliğince karar verilirse aynı fiilden dava açılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Temyiz yasa yolu hakkında I. Bölge adliye mahkemesinin bozma hükümleri için temyiz yasa yoluna başvurulabilir. II. Temyiz istemi sözlü başvuru ile de yapılabilir. III. Maddi olguların denetimi, temyiz incelemesinin kapsamı dışındadır. yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Temyiz, olguların değil hukukun denetimidir. CMK m.294/2 bunu açıkça söyler: temyiz sebebi ANCAK hükmün HUKUKÎ YÖNÜNE ilişkin olabilir; maddi olguların yeniden değerlendirilmesi temyiz incelemesinin kapsamı dışındadır. Bu yönüyle temyiz, hem hukuki hem maddi denetim yapan istinaftan ayrılır. Başvuru biçimi bakımından ise m.291/1 iki yol tanır: hükmü veren mahkemeye dilekçe verilmesi ya da zabıt kâtibine BEYANDA BULUNULMASI; beyan tutanağa geçirilir ve hâkime onaylattırılır, dolayısıyla sözlü başvuru mümkündür. Buna karşılık bölge adliye mahkemesinin BOZMA hükümleri temyiz edilemez; m.286/1 temyiz yolunu ceza dairelerinin \"bozma dışında kalan\" hükümleri için açar, çünkü bozma kararı davayı sonuçlandırmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Sanık (S) hakkında, asliye ceza mahkemesi 3 yıl hapis cezası vermiş, Cumhuriyet savcısı (C) de sanık yararına önce yasa yoluna başvurmuş, daha sonra da başvurusunu geri almak istemiştir. (C)'nin yasa yolu başvurusunu geri alması mümkün müdür?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhuriyet savcısı, görevinde bağımsızdır; istemini geri alabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cumhuriyet savcısının yasa yolu istemini geri alabilmesi için sanığın muvafakati gerekir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Cumhuriyet savcısı, kamu adına hareket ettiğinden Adalet Bakanlığı'nın izni ile istemini geri alabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cumhuriyet savcısı, yargıcın izni ile yasa yolu istemini geri alabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Cumhuriyet savcısı ancak sanık lehine olan kararlar aleyhine yasa yolu isteminde bulunabileceğinden yasa yolu istemini her zaman geri alabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.266/1, kanun yolu başvurusundan vazgeçmeyi kural olarak merci karar verinceye kadar mümkün kılar; ancak aynı fıkranın ikinci cümlesi önemli bir sınır koyar: Cumhuriyet savcısı tarafından SANIK LEHİNE yapılan başvurudan ONUN RIZASI OLMAKSIZIN VAZGEÇİLEMEZ. Kuralın amacı, savcının lehe başvurusuyla sanık için doğmuş olan hukuki imkânın sanığın iradesi dışında ortadan kaldırılmasını önlemektir. Bu nedenle savcının bağımsızlığına, Adalet Bakanlığının iznine veya hâkimin iznine dayanan seçenekler kanunda karşılığı olmayan koşullar getirir. Savcının yalnızca sanık aleyhine başvurabileceğini söyleyen seçenek de m.260/3'e aykırıdır; savcı sanık lehine de kanun yoluna başvurabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Şüpheli (B), (A)'yı kasten öldürmeye teşebbüs ettiği için Cumhuriyet savcısı (C)'nin tutuklama istemiyle sulh ceza yargıçlığı önüne çıkarılmıştır. Mahkeme, istemi tutuklama nedenlerinin bulunmaması nedeniyle reddedince (C), itirazda bulunmuştur. Başvuruyu değerlendiren sulh ceza yargıçlığı itirazı reddetmiş ve dosyayı incelenmek üzere itiraz merciine göndermiştir. İtiraz merci, başvuruyu kabul ederek (B)'yi tutuklamıştır. (C), kasten öldürme suçuna teşebbüsten dolayı asliye ceza mahkemesine iddianame vermiş, mahkeme iddianameyi kabul ettikten sonra duruşmada ağır ceza mahkemesinin yetkili olduğu gerekçesiyle madde bakımından yetkisizlik kararı vermiştir. Yargılama devam ederken (B) akıl hastalığına yakalanmış ve tam bu sırada ağır ceza mahkemesi onun suçu işlemediğini saptamıştır.\nBuna göre bu olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(C)'nin itiraz başvurusunu sulh ceza yargıçlığının inceleme yetkisi yoktur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İtiraz merciinin itiraz üzerinde verdiği karar kesindir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Asliye ceza mahkemesinin iddianameyi kabul ettikten sonra duruşmada madde bakımından yetkisizlik kararı vermesi yanlıştır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(B)'nin yargılama sırasında akıl hastalığına yakalanması ona ceza verilmesine engel değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme beraat kararı vermelidir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Olayda birden çok kurum iç içe geçmiştir ama belirleyici olan CMK m.223/9'dur: DERHÂL BERAAT kararı verilebilecek hâllerde durma, düşme veya ceza verilmesine yer olmadığı kararı verilemez. Ağır ceza mahkemesi sanığın suçu işlemediğini saptadığına göre m.223/2-b uyarınca beraat gerekir; yargılama sırasında ortaya çıkan akıl hastalığı, esasa ilişkin bu sonucun önüne geçemez ve durma kararına dayanak olamaz. Diğer seçenekler de kanuna aykırıdır: kararına itiraz edilen sulh ceza hâkimliği itirazı yerinde görmezse dosyayı mercie gönderir, dolayısıyla başvuruyu değerlendirme yetkisi vardır (m.268/2); itiraz merciinin İLK DEFA verdiği tutuklama kararı kesin değildir ve itiraza açıktır (m.271/4); mahkemenin iddianameyi kabul ettikten sonra görevsizlik kararı vermesi ise m.5/1 uyarınca mümkündür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

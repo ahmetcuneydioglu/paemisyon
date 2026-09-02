@@ -44,11 +44,27 @@ karar verdi — dokunma, sadece mukerrer filtresi olarak kullan.
 #### MUKERRER TARAMASI ARTIK ELLE DEGIL, BETIKLE
 - `<scratchpad>/cmk-mevcut.json` — bankadaki TUM CMK sorulari (yayinda 453 + kuyrukta 454
   = 907), kok + sik metinleriyle. Yenilemek icin prisma sorgusu (bkz. oturum gecmisi).
-- `<scratchpad>/mukerrer-tara.py <aday.json> [...]` — alt ajan ciktisini 907 soruyla
-  UC KADEMEDE karsilastirir: (1) TAM parmak izi (kok+tum siklar), (2) salt kok,
-  (3) YAKIN — kok kelime kumesi %60+ ortusuyor. Ucuncu katman, isim/yas/rakam
-  degistirilerek yeniden yazilmis varyantlari yakalar; Ozel Hukumler'de alti mukerrerin
-  bankaya girmesine yol acan bosluk tam buydu. Kendi kendine test edildi.
+- `<scratchpad>/mukerrer-tara.py <aday.json> [...]` — alt ajan ciktisini bankadaki
+  TUM CMK sorulariyla UC KADEMEDE karsilastirir:
+  (1) TAM parmak izi (kok + tum sik metinleri), (2) salt kok,
+  (3) YAKIN — kok kelime ortusmesi >=%60 **VE** sik kelime ortusmesi >=%35.
+  Ucuncu katman isim/yas/rakam degistirilerek yeniden yazilmis varyantlari yakalar;
+  Ozel Hukumler'de alti mukerrerin bankaya girmesine yol acan bosluk tam buydu.
+
+  **IKI DUZELTME (2 Eyl 2026, yanlis pozitiflerden sonra):**
+  a) Kalip kelimeler (GURULTU listesi) elenir: "5271 sayili Ceza Muhakemesi Yasasi'na
+     gore ... asagidakilerden hangisi yanlistir?" kalibi alakasiz iki soruyu %60+
+     benzer gosteriyordu.
+  b) YAKIN katmani artik SIK BENZERLIGI de arar. Ayni kurali ayni kurguyla olcen
+     sorular siklarini da paylasir; kok benzerligi tek basina yetmez.
+  Bu iki duzeltmeden once s-092..s-095 partisinde 4 isaretin 3'u YANLIS POZITIFTI
+  (iddianamenin iadesi <-> yargilama giderleri gibi). Duzeltme sonrasi 1 gercek
+  mukerrer kaldi ve temiz sayisi 10 -> 13 yukseldi.
+
+  **REGRESYON TESTI:** yayina alinmis bir partinin okunan-JSON'unu yeniden tara;
+  o partideki her soru [TAM] olarak yakalanmali. b01 icin dogrulandi (30/30 TAM).
+  Ayrica `oz-test.json` sentetik testi: birebir kopya + isim degistirilmis varyant
+  yakalanmali, gercekten yeni soru gecmelidir.
 - Alt ajanlara "YIGILMA KONTROLU YAPMA" denir; onlar yalniz doktrin/celiski/eskime eler,
   mukerrer islemini betik yapar. Boylece geri cagirma (recall) yuksek kalir.
 
@@ -89,17 +105,124 @@ m.254-259 uzlastirma/musadere 1 (once 0).
 **VERIM: s-104..s-111 -> okunan 37, bankaya giren 30 (%81).** Onceki kitabin dolu
 bolgelerinde bu oran %4-19'du. Bos bolge hedeflemesi dogrulandi.
 
+#### PARTI b02 KAPANDI (2 Eyl 2026)
+s-092..s-095 + s-112..s-116 okundu: 34 soru -> 1 eskime elemesi (HAGB m.231/5, AYM
+iptali 1/8/2024), 1 mukerrer -> 32 soru bankaya girdi (`themis-cmk-b02.json`).
+Denetim: **31 yayimlanabilir, 1 KUSURLU** (run wf_7d4a4887-3f9). 31'i yayina alindi.
+
+**KUSURLU — `e8b6c891`, kuyrukta bekliyor, YAYINA ALINMADI:**
+Uzlastirma teklifi sorusu ("hangisi yanlistir"). Isaretli A gercekten yanlis (m.253/8:
+teklif delil toplanmasina ve koruma tedbirlerine engel DEGILDIR). Ama D sikki da yanlis:
+"3 gun icinde bildirmezse reddetmis sayilir" diyor, oysa m.253/4 **7/11/2024 tarihli 7531
+sayili Kanunla YEDI GUNE cikarilmis**. Iki yanlis sik -> soru kusurlu. Uc karsi-dogrulayici
+da onayladi (0 curuten). Talimat geregi otomatik uygulanmadi; kullanici karari bekliyor.
+Secenekler: (a) D sikkindaki "3 gun" -> "7 gun" duzeltilip soru saglamlastirilir
+(o zaman tek yanlis sik A kalir), (b) `kuyruk-arsivle.ts` ile elenir.
+
+**DIKKAT — ayni hata benim aciklamamda da vardi:** b02 icin yazdigim aciklamada
+m.253/4 suresini "UC GUN" diye yazmistim; eski metne guvenmistim. Denetim hatti
+hem sorudaki hem benim aciklamamdaki hatayi yakaladi. DERS: sure iceren her
+aciklamayi madde metninden BIREBIR dogrula, hafizadan yazma.
+
+#### PARTI b03 KAPANDI (2 Eyl 2026)
+s-084..s-091 okundu: 37 soru -> 3 eleme (1 celiski, 1 dizgi hatasi, 1 eskime),
+4 mukerrer -> 30 soru girdi. Denetim: **29 yayimlanabilir, 1 belirsiz** (run wf_5a82f607-2e4).
+29'u yayina alindi; belirsiz olan `248af4ee` arsivlendi.
+
+**ARSIVLENEN `248af4ee`** — "kapali yapilmasi gereken durusma acik yapilirsa yasa
+yolunda sonucu ne olur?" Iki denetci anlasmadi. Cevap, m.289/1-f'deki "ACIKLIK
+KURALININ ihlali" ibaresinin kapsamina iliskin bir YORUMA dayaniyor; ibarenin ters
+yonu (kapaliliga aykirilik) metinden kesin cikarilamiyor ve baska hicbir hukum
+kesinlestirmiyor. Dayanak kanun metninde olmadigi icin hedefli-kume ile kurtarma
+da mumkun degildi.
+
+**GERI ALINAN `s-084 S.5`** — alt ajan "m.231/5'teki 2 yil siniri AYM iptaliyle kalkti"
+diye elemisti; bu bilgi BENIM TALIMATIMDAN geliyordu ve ESKIMISTI. Gercek zincir:
+5560 (2006) -> AYM iptali (1/8/2024) -> **7589 s.K. (16/7/2026) YENIDEN yururluge
+koydu** -> AYM 10/7/2025 karari 30/9/2026'da yeniden iptal edecek. Soru geri alindi
+ve denetimden yayimlanabilir cikti.
+
+#### !!! ZAMANLI RISK — HAGB 30 EYLUL 2026'DA DUSUYOR
+Anayasa Mahkemesinin **10/7/2025 tarihli E:2024/98, K:2025/149** karari CMK m.231'in
+**5-14. fikralarinin TAMAMINI** iptal etti; karar **30/9/2026'da yururluge giriyor**.
+Yasama yeniden duzenlemezse HAGB'nin tum kosullari, denetim suresi ve sonuclari
+o tarihte yururlukten kalkacak.
+**Maruziyet: bankada YAYINDA 10 HAGB sorusu** (m.231 etiketli) + TCK'da 1 soru.
+YAPILACAK: 30 Eylul'de `eskime-tara.ts` calistir (ajan kullanmaz, maliyeti sifir);
+yasama yeniden duzenlemediyse m.231 etiketli sorulari gozden gecir.
+
+#### PARTI b04 KAPANDI (2 Eyl 2026)
+s-096..s-103 okundu: 31 soru -> 5 eleme, 1 mukerrer -> 25 soru girdi.
+Denetim: **25/25 yayimlanabilir** (run wf_2e0ab045-806 + kurtarma wf_2e0fda1f-b74).
+Elemeler: 2 eskime (m.308 itiraz suresi 7589 s.K. ile UC AY oldu, kitap "1 ay" diyor),
+1 IBK kaynakli kural, 1 doktrin, 1 DIZGI HATASI (s-098 S.6'nin III. onculu KENDINE atif
+yapiyor: "III numaralı öncül yanlış olurdu"; cevap ancak "II" okunursa tutuyor).
+
+**HAT DAVRANISI — SAYIM KONTROLU YINE IS GORDU:** 25 gonderildi, sonucta 24 geldi;
+`6b8c465a` iki denetciden biri tarafindan hic dondurulmedi. Kurtarma turunda
+yayimlanabilir cikti. Bu, b01'de de yasanmisti — **her denetimden sonra
+"haritada N = sonucta N" kontrolu SART.**
+
+#### CMK KITABI — TOPLAM (2 Eyl 2026)
+| parti | sayfalar | okunan | giren | yayinlanan |
+|---|---|---|---|---|
+| b01 | s-104..s-111 | 37 | 30 | 30 |
+| b02 | s-092..s-095, s-112..s-116 | 34 | 32 | 31 |
+| b03 | s-084..s-091 | 37 | 30 | 29 |
+| b04 | s-096..s-103 | 31 | 25 | 25 |
+| **toplam** | **36 sayfa** | **139** | **117** | **115** |
+Banka: CMK 453 -> **568**, toplam 5.500 -> **5.615**.
+
+#### !! m.277-282 HALA BOS (istinaf usulu)
+b04 istinaf/temyiz sayfalarini okudu ama sorular m.286, m.291, m.294, m.306-311
+etrafinda toplandi; **m.277-282 (BAM'da tevzi, on inceleme, durusma hazirligi,
+istisnalar) icin kitapta soru CIKMADI**. Bu bosluk bu kitaptan doldurulamiyor
+gorunuyor; baska bir kaynak gerekebilir.
+
+#### PARTI b05 KAPANDI — KORUMA TEDBIRLERI (2 Eyl 2026)
+s-060..s-067 okundu: 36 soru -> 3 eleme + 1 supheli -> 32 girdi. Mukerrer SIFIR.
+Denetim (run wf_f5aa989d-77d + kurtarma wf_a2abb456-3ba):
+**28 yayimlanabilir · 2 kusurlu · 2 kaynaksiz/belirsiz** — hepsi arsivlendi.
+Bu, kitabin EN COK KUSUR CIKAN bolgesi: sure, merci ve katalog ayrintisi yogun.
+
+**Arsivlenenler ve sebepleri:**
+- `cfe44cb8` KUSURLU — "hangisi dogrudur"da IKI dogru sik: m.128/3 tapu serhi dogru,
+  ama D de dogru cunku guveni kotuye kullanma m.128/2-a-5'te katalog sucu.
+- `f30e5b75` KUSURLU — isaretli D metne aykiri (karar mercii hakim, agir ceza degil)
+  ama B ve C de onay merciini "mahkeme" gostererek m.135/1'e aykiri; coklu yanlis sik.
+- `2171a3f5` KAYNAKSIZ — dayanagi 6384 s.K. m.5 (gorev uyusmazligini Ankara BAM cozer);
+  **6384 BANKADA YOK**. Eklenirse arsiv-geri-al.ts ile geri alinir.
+- `eff07887` BELIRSIZ — "tutuklama kararini kendiliginden hukumsuz kilmayan". Isaretli E
+  (durma) m.223/8 ile savunulabiliyor ama celdiricilerin dogrulugu (beraat/erteleme/KYOK'un
+  tutuklulugu kendiliginden bitirmesi) CMK'da tek hukumle duzenlenmemis. Kurtarma turunda
+  m.101/103/104/109/223 enjekte edildi, yine kesinlesmedi.
+
+**KURTARILANLAR:** `53e54705` (bir denetci dondurmemisti) ve `7ae3ac73` (Anayasa m.83
+enjekte edilince cozuldu — milletvekili dokunulmazligi ARAMAYI kapsamaz).
+
+#### !! MEVZUAT EKSIGI: 6384 sayili Tazminat Komisyonu Kanunu bankada yok.
+Koruma tedbirleri tazminat sorulari bu kanuna dayaniyor. mevzuat.gov.tr arama API'si ile
+cekilip `mevzuat-json-import.ts` ile eklenebilir.
+
 #### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
-1. s-112..s-116 — ozel muhakeme usulleri / uzlastirma (m.254-259 bos)
-2. s-092..s-103 — istinaf ve temyiz usulu (m.277-282 ve m.300-307 bos)
-3. s-075..s-091 — durusmada delillerin ortaya konulmasi (m.207-216 bos, 10 madde)
-4. s-053..s-074 — koruma tedbirleri (m.113-126 bos: guvence, arama usulu, elkoyma)
-5. s-042..s-052 — ispat (m.164-169 adli kolluk, m.177-184 savunma delilleri)
+1. s-053..s-059 ve s-068..s-074 — koruma tedbirlerinin kalani
+2. s-042..s-052 — ispat (m.164-169 adli kolluk, m.177-184 savunma delilleri)
+3. s-075..s-083 — sorusturma evresi (5. Kismin ilk yarisi)
+4. s-006..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
+ISLENEN: s-060..s-067, s-084..s-116. KALAN: s-006..s-059, s-068..s-083.
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
 -> `denetim-yayinla.ts --sonuc <task .output> --yaz`.
 
 #### HAT KULLANIRKEN DIKKAT (2 Eyl 2026'da yasandi)
 - **Harita anahtari SURUM id'sidir, soru id'si degil.** kuyruk-arsivle.ts de sürüm id'si ister.
+  (cmk-mevcut.json ise SORU id'si tutar — mukerrer raporundaki id ile denetim ciktisindaki
+  id ayni soruya ait olsa bile FARKLI gorunur, sasirtmasin.)
+- **Haritada FIKRA numarasi yazma, yalniz MADDE numarasi yaz.** `hedefli-kume.ts`
+  articleNo ile birebir eslesir; "253/19" diye yazarsan madde bulunamaz ve soru
+  kumeye HIC girmez — ustelik cogu sessizce duser, yalnizca hicbir maddesi
+  eslesmeyen soru icin uyari basar. b02'de 32 sorunun 15'i bu yuzden dusmustu.
+  Harf ekli gercek maddeler korunur: "308/A", "217/A" gecerlidir, "253/19" degil.
+  Kume uretiminden sonra MUTLAKA "kumede N = haritada N" kontrolu yap.
 - **Eslestirmeyi PARMAK IZIYLE yap (kok + siklar), salt kokle degil.** Iki sorunun kokü
   birebir ayni olabiliyor; salt kokle eslestirince ikisi ayni sürüme baglanip biri kumeden
   dusuyor (30 yerine 29 soru islenmisti).

@@ -1,0 +1,1122 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Sanığın duruşmada hazır bulunmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alt sınırı 5 yıl ve daha fazla hapis cezasını gerektiren suçlarda sanık istinabe suretiyle sorguya çekilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sanık ara vermeyi izleyen oturuma gelmezse dava, yokluğunda bitirilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sanık hakkında toplanan kanıtlara göre ceza verilmesine yer olmadığı kararı verilmesi gerektiği kanısına varılırsa sorgusu yapılmamış olsa bile dava yokluğunda bitirilebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Sanık önceden sorguya çekilmiş ve hazır bulunmasına gerek görülmüyorsa dava, yokluğunda bitirilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suç yalnız veya birlikte adli para cezasını veya müsadereyi gerektiriyorsa sanığın yokluğunda duruşma yapılabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.193/2, 28/3/2023 tarihli değişiklikle yeniden yazılmıştır. Yürürlükteki metne göre dava, ancak toplanan delillere göre MAHKÛMİYET, CEZA VERİLMESİNE YER OLMADIĞI ve GÜVENLİK TEDBİRİ DIŞINDA bir karar verilmesi gerektiği kanısına varılırsa sorgu yapılmamış olsa da sanığın yokluğunda bitirilebilir. Ceza verilmesine yer olmadığı kararı bu istisnalar arasına alındığı için, böyle bir karar verilecekse sorgu yapılmadan dava bitirilemez; bu nedenle ilgili ifade YANLIŞTIR. Diğerleri metne uygundur: alt sınırı beş yıl ve daha fazla hapis gerektiren suçlarda istinabe yoluyla sorgu yapılamaz (m.196/2), ara vermeyi izleyen oturuma gelmeyen sanığın yokluğunda dava bitirilebilir ve sorgusu yapılmış sanık duruşmadan bağışık tutulabilir (m.196/1), suç yalnız veya birlikte adlî para cezasını ya da müsadereyi gerektiriyorsa sanık gelmese de duruşma yapılabilir (m.195).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi açık duruşmanın içeriğinin yayımlanmasının yasaklanma nedenleri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Açık duruşmanın içeriği ulusal güvenliğe dokunacak nitelikte ise",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Açık duruşmanın içeriği genel ahlaka dokunacak nitelikte ise",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Açık duruşmanın içeriği kişilerin onuruna dokunacak nitelikte ise",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Açık duruşmanın içeriği suç işlemeyi kışkırtacak nitelikte ise",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Açık duruşmanın içeriği kamu düzenini bozacak nitelikte ise",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.187/3 açık duruşmanın içeriğinin yayımlanmasının yasaklanabileceği hâlleri SINIRLI olarak sayar: içerik MİLLÎ GÜVENLİĞE veya GENEL AHLÂKA veya KİŞİLERİN SAYGINLIK, ONUR VE HAKLARINA dokunacak ya da SUÇ İŞLEMEYE KIŞKIRTACAK nitelikteyse mahkeme, bunları önlemek amacıyla ve gerektiği ölçüde yayımı kısmen veya tamamen yasaklar ve kararını açık duruşmada açıklar. \"Kamu düzenini bozacak nitelik\" bu listede yer almaz; kamu düzeni ölçütü duruşmanın KAPALI yapılmasına ilişkin m.182-184 rejiminde geçer. Yayım yasağı ile kapalılık kararı birbirinden ayrı kurumlardır: kapalı duruşmanın içeriği zaten hiçbir iletişim aracıyla yayımlanamaz (m.187/2).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre çağrı kâğıdının tebliği ile duruşma günü arasında bulunması gereken en az süre ne kadardır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 hafta",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "10 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Süre aranmaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.176/4, çağrı kâğıdının tebliğiyle duruşma günü arasında EN AZ BİR HAFTA süre bulunmasını arar. Bu süre savunmanın hazırlanması için tanınan asgari güvencedir; kısaltılması hâlinde savunma hakkının kısıtlanması gündeme gelir. Maddenin kurduğu düzende iddianame çağrı kâğıdıyla birlikte sanığa tebliğ olunur (f.1); tutuklu olmayan sanığın çağrı kâğıdına mazeretsiz gelmemesi hâlinde zorla getirileceği yazılır (f.2); tutuklu sanığın çağrılması ise duruşma gününün tebliği yoluyla yapılır (f.3). Bir haftalık asgari süre, tebligatın usulüne uygun yapılmış olması koşuluyla işler.",
+    "difficulty": "easy",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre iddianamenin iadesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yasal unsurları taşımayan iddianamenin iadesine karar verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suçun sübutuna etki edeceği mutlak sayılan mevcut bir kanıt toplanmadan düzenlenen iddianamenin iadesine karar verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Suçun hukuksal nitelendirilmesi nedeniyle iddianame iade edilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15 gün içinde kabul edilmeyen iddianame iade edilmiş sayılır.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "İade kararına karşı Cumhuriyet savcısı tarafından itiraz edilebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İddianamenin iadesinde kanun, süre dolduğunda doğan sonucu KABUL yönünde belirlemiştir. CMK m.174/1 mahkemeye, iddianame ve soruşturma evrakının verildiği tarihten itibaren ON BEŞ GÜN içinde inceleme ve iade yetkisi tanır; m.174/3 ise bu sürenin sonunda İADE EDİLMEYEN iddianamenin KABUL EDİLMİŞ SAYILACAĞINI söyler. Seçenekteki ifade bu sonucu tersine çevirdiği için yanlıştır. Diğerleri metne uygundur: m.170'e aykırı düzenlenen ya da suçun sübutuna doğrudan etki edecek mevcut bir delil toplanmadan düzenlenen iddianame iade edilir (m.174/1-a, b); suçun hukuki nitelendirilmesi sebebiyle iade YAPILAMAZ (m.174/2); iade kararına karşı Cumhuriyet savcısı itiraz edebilir (m.174/5).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Kişisel cezasızlık nedeninin varlığı durumunda savcı kovuşturmaya yer olmadığı kararı verebilir. II. Savcının takdir yetkisini kullanarak vermiş olduğu kovuşturmaya yer olmadığı kararına itiraz edilemez. III. Kovuşturmaya yer olmadığına karar veren savcı, aynı olayla ilgili olarak her zaman dava açabilir. Cumhuriyet savcısının soruşturma evresi sonunda verebileceği kararlarla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kovuşturmaya yer olmadığı kararı kesin hüküm gücü taşımaz ama savcıyı sınırsız da bırakmaz. CMK m.172/2'ye göre bu karardan sonra aynı fiilden dolayı kamu davası açılabilmesi YENİ DELİL ORTAYA ÇIKMASINA ve dava zamanaşımının dolmamış olmasına bağlıdır; ayrıca sulh ceza hâkimliğince bir karar verilmesi gerekir. Bu nedenle savcının \"her zaman\" dava açabileceğini söyleyen ifade yanlıştır. Diğer iki ifade doğrudur: m.171/1 kişisel cezasızlık nedeni ya da etkin pişmanlık hâllerinde savcıya kovuşturmaya yer olmadığı kararı verme yetkisi tanır; m.173/1 ise bu karara karşı sulh ceza hâkimliğine itiraz yolunu açar, dolayısıyla takdir yetkisine dayansa bile karar denetime kapalı değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre I. (A)'nın kendisine karşı haksız saldırıda bulunan (C)'yi meşru savunma koşulları çerçevesinde yaralaması II. (A)'nın tehdidin etkisiyle (B)'ye karşı hırsızlık suçunu işlemesi III. (A)'nın öldürdüğü iddia edilen (E)'nin olaydan 3 gün önce başkası tarafından öldürülmüş olması IV. (A)'nın yakalandığı akıl hastalığının etkisiyle (E)'yi düşman görerek öldürmesi durumlarından hangilerinde sanık (A) hakkında beraat kararı verilmesi gerekir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Beraat ile ceza verilmesine yer olmadığı kararı, CMK m.223'ün iki ayrı fıkrasında ve farklı ölçütlerle düzenlenmiştir. m.223/2 beraat hâllerini sayar: fiilin kanunda suç olarak tanımlanmamış olması, suçun sanık tarafından işlenmediğinin sabit olması, kast veya taksirin bulunmaması, olayda bir HUKUKA UYGUNLUK NEDENİNİN bulunması ve suçun sanık tarafından işlendiğinin sabit olmaması. Meşru savunma bir hukuka uygunluk nedeni olduğu için beraat; fiilin başkası tarafından işlendiğinin anlaşılması da işlememenin sabit olması olduğu için yine beraat gerekir. Buna karşılık m.223/3, KUSURLULUĞU ortadan kaldıran hâlleri (yaş küçüklüğü, akıl hastalığı, cebir veya tehdit etkisi, zorunluluk hâli) ceza verilmesine yer olmadığı kararına bağlar; bu hâllerde fiil hukuka aykırıdır, yalnızca faile kusur yüklenemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "İstinaf yoluyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İlk derece mahkemelerinden verilen hükümlere karşı istinaf yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 yıl ve daha fazla hapis cezalarına ilişkin hükümler, bölge adliye mahkemesince resen incelenir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hükümden önce verilip hükme esas teşkil eden veya başkaca yasa yolu öngörülmemiş olan mahkeme kararlarına karşı da hükümle birlikte istinaf yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sonuç olarak belirlenen belli bir parasal sınırın altında olan adli para cezasına mahkûmiyet hükümlerine, üst sınırı 500 günü geçmeyen adli para cezasını gerektiren suçlardan beraat hükümlerine, yasalarda kesin olduğu yazılı bulunan hükümlere karşı istinaf yoluna başvurulamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İstinaf süresi hükmün gerekçesiyle birlikte tebliğ edildiği tarihten itibaren başlar.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.272/1, istinafta resen inceleme sınırını ON BEŞ YIL VE DAHA FAZLA hapis cezalarına ilişkin hükümler için koyar; bu hükümler başvuru olmasa dahi bölge adliye mahkemesince incelenir. Sınırı on yıl olarak veren ifade bu nedenle yanlıştır. Diğerleri metne uygundur: ilk derece mahkemelerinden verilen hükümlere karşı istinaf yolu açıktır ve hükümden önce verilip hükme esas teşkil eden ya da başkaca kanun yolu öngörülmemiş kararlara karşı da hükümle birlikte başvurulabilir (m.272/1); m.272/3 belli bir parasal sınırın altındaki adlî para cezası mahkûmiyetleri, üst sınırı beş yüz günü geçmeyen adlî para cezasını gerektiren suçlardan beraat ve kanunlarda kesin olduğu yazılı hükümler bakımından istinaf yolunu kapatır; süre ise hükmün GEREKÇESİYLE BİRLİKTE tebliğinden işlemeye başlar (m.273/1).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi mutlak temyiz nedenleri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhuriyet savcısı veya duruşmada yasa gereği mutlaka hazır bulunması gereken diğer kişilerin yokluğunda duruşma yapılması",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Duruşmalı olarak verilen hükümde açıklık kuralının ihlâl edilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hüküm için önemli olan hususlarda mahkeme kararı ile savunma hakkının sınırlandırılmış olması",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hükmün hukuka aykırı yöntemlerle elde edilen kanıta dayanması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mahkemede yeminsiz dinlenmesi gereken bir tanığın yeminle dinlenmesi",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.289/1, temyiz dilekçesinde gösterilmese bile hukuka KESİN aykırılık sayılan hâlleri dokuz bent hâlinde ve SINIRLI olarak sayar. Cumhuriyet savcısının ya da duruşmada bulunması zorunlu diğer kişilerin yokluğunda duruşma yapılması, duruşmalı hükümde açıklık kuralının ihlali, hüküm için önemli hususlarda mahkeme kararıyla savunma hakkının sınırlandırılması ve hükmün hukuka aykırı yöntemlerle elde edilen delile dayanması bu bentlerde yer alır. Buna karşılık yeminsiz dinlenmesi gereken bir tanığın yeminle dinlenmesi listede bulunmaz; yemin yasağı CMK m.50'de düzenlenmiştir ve ihlali NİSPÎ bir hukuka aykırılıktır — hükme etkisi ayrıca gösterilmedikçe tek başına bozma nedeni oluşturmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(A), hakkında verilen mahkûmiyet kararına karşı istinaf yoluna başvuracağı yerde temyiz yoluna başvurmuştur. Yaptığı yanlışlığın farkına varan (A), konuyu biri avukat, diğeri emekli hukuk profesörü olan iki hukukçuya danışmıştır: Avukat, yasa (kanun) yolunun belirlenmesinde yanılmanın, başvuranın hakkını ortadan kaldırmadığını söylemiştir. Hukuk profesörü ise başvurunun geçersiz olduğunu ve bu nedenle (A)'nın başvuru hakkını yitirdiğini söylemiştir. Olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yasa yolunda yanılma başvuru hakkını ortadan kaldırdığından avukatın görüşü yanlıştır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yapılan başvuru geçersiz olsa bile başvuru hakkı sona ermediğinden profesörün görüşü yanlıştır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Avukatın görüşü doğrudur.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Hüküm bir mahkûmiyet kararına ilişkin olduğundan yasa yolunu doğru belirlemek geçerlilik koşulu olup profesörün görüşü doğrudur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "(A)'nın danıştığı her iki hukukçunun da görüşü kısmen yanlıştır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.264/1 açık bir güvence getirir: kabul edilebilir bir başvuruda KANUN YOLUNUN veya MERCİİN belirlenmesinde yanılma, başvuranın haklarını ortadan kaldırmaz. Hüküm, hak arama özgürlüğünü şekli bir hatanın önüne geçirmeyi amaçlar. Bu nedenle istinaf yerine temyiz yoluna başvurulması başvuru hakkını düşürmez; ikinci fıkra uyarınca başvuru, yetkili olan mercie GÖNDERİLİR ve orada incelenir. Olayda avukatın görüşü kanunun lafzıyla örtüştüğü için doğrudur; başvurunun geçersiz sayılacağını ve hakkın yitirileceğini söyleyen görüş ise metne aykırıdır. Kuralın uygulanması için başvurunun süresinde ve kabul edilebilir olması yeterlidir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yargılamanın yenilenmesi yasa yolu hakkında I. Bu yola ancak kesin hüküm niteliği kazanmış kararlar için başvurulabilir. II. Hükmün infaz edilmesi durumunda bu yola başvurulamaz. III. Yeniden yapılacak duruşma sonucunda mahkeme önceki hükmü onaylar veya hükmün iptali ile dava hakkında yeniden hüküm verir. IV. İstem hükümlünün lehine olarak yapılmış olsa ile yeniden verilecek hüküm, önceki hükümle belirlenmiş olan cezadan daha ağır bir cezayı içerebilir. ifadelerinden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesi KESİNLEŞMİŞ hükümlere karşı işleyen olağanüstü bir kanun yoludur; CMK m.311 ve m.314 bu yolu \"kesinleşen bir hükümle sonuçlanmış dava\" bakımından açar. Yeniden yapılan duruşma sonunda mahkeme, m.323/1 uyarınca ya önceki hükmü ONAYLAR ya da hükmün iptali ile dava hakkında yeniden hüküm verir. Buna karşılık hükmün infaz edilmiş olması ya da hükümlünün ölümü bu yola başvurmaya ENGEL DEĞİLDİR (m.313/1); infaz edilmiş hükümler bakımından da yenileme istenebilir. Ayrıca m.323/2, istem hükümlünün lehine yapılmışsa yeniden verilecek hükmün önceki hükümle belirlenmiş cezadan DAHA AĞIR OLAMAYACAĞINI söyler; bu, lehe yenilemede geçerli olan ağırlaştırma yasağıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Temyiz yasa yolu hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargıtay Cumhuriyet Başsavcılığınca düzenlenen tebliğname, hükmü temyiz etmeleri veya aleyhlerine sonuç doğurabilecek görüş içermesi durumunda sanık veya müdafi ile katılan veya vekillerine ilgili dairesince tebliğ olunur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İlgili taraf tebliğnamenin tebliğinden itibaren 2 hafta içinde yazılı olarak yanıt verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sanık, yokluğunda aleyhine verilen hükümlere karşı eski hâle getirme isteminde bulunabilir. Eski hâle getirme süresi içinde de temyiz süresi işler.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yargıtay, yalnız temyiz başvurusunda belirtilen hususlar ile temyiz istemi usule ilişkin eksikliklerden kaynaklanmışsa, temyiz başvurusunda bunu belirten olaylar hakkında inceleme yapar.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sanık ve müdafinin dosyada var olan adreslerine davetiye tebliğ olunamaması nedeniyle bozmaya karşı beyanları saptanmamış ise dava yokluklarında bitirilemez.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.307/2, bozmadan sonraki duruşma bakımından açık bir kolaylık tanır: sanık, müdafi, katılan ve vekilinin dosyada var olan adreslerine davetiye tebliğ olunamaması veya tebliğe rağmen duruşmaya gelmemeleri nedeniyle bozmaya karşı beyanları saptanmamış olsa da duruşmaya devam edilerek dava YOKLUKLARINDA BİTİRİLEBİLİR. Tek istisna, verilecek cezanın bozmaya konu cezadan daha ağır olması hâlidir; o zaman her hâlde dinlenmeleri gerekir. Bu nedenle davanın yokluklarında bitirilemeyeceğini söyleyen ifade yanlıştır. Diğerleri metne uygundur: tebliğname, hükmü temyiz etmeleri veya aleyhe sonuç doğurabilecek görüş içermesi hâlinde ilgililere tebliğ olunur ve tebliğden itibaren iki hafta içinde yazılı cevap verilebilir (m.297/3); eski hâle getirme süresi içinde temyiz süresi de işler (m.274/1); Yargıtay incelemesini kural olarak temyiz başvurusunda belirtilen hususlarla sınırlı yapar (m.301/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki kararlardan hangisine karşı itiraz yasa yoluna gidilemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hükmün açıklanmasının geri bırakılması kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Naip yargıç kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sulh ceza yargıçlığının kararları",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kamu davasına katılma isteğinin reddine ilişkin kararlar",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Asliye ceza mahkemesi yargıcının kararları",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İtiraz yolu CMK m.267 uyarınca HÂKİM KARARLARI ile kanunun açıkça gösterdiği hâllerdeki mahkeme kararlarına karşı açıktır. Sulh ceza hâkimliğinin, naip hâkimin ve asliye ceza mahkemesi hâkiminin kararları birer hâkim kararı olduğu için itiraza tabidir; hükmün açıklanmasının geri bırakılması kararı bakımından ise m.231/12 itiraz yolunu açıkça öngörür. Buna karşılık kamu davasına katılma isteğinin reddine ilişkin karar bir MAHKEME kararıdır ve kanunda bu karara karşı itiraz yolu öngörülmemiştir; katılma talebi reddedilen kişi, katılan sıfatını alabilecek surette suçtan zarar görmüş olması hâlinde hükme karşı kanun yoluna başvurarak hakkını arar (m.260/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(B), av tüfeğini temizlerken dikkatsizlik ve özensizlik sonucu eşini öldürmekten 3 yıl hapis cezasına mahkûm olmuş, karara karşı yaptığı yasa yolu başvurusu reddedilmiş ve kesinleşen hükmün infazına başlanmıştır. Hükümlü (B), infaz tamamlandıktan sonra Cumhuriyet savcısına başvurup onun huzurunda ifade verip, eşini taksirle değil, kasten öldürdüğünü, vicdan azabı çektiğini söylemiştir. Olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargılamanın yenilenmesi yalnızca hükümlü lehine kabul edilen bir yol olduğu için olayda bu yola gidilmesi mümkün değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Olayda (B)'nin ikrarı güvenilir olmadığından yargılamanın yenilenmesi mümkün değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Olayda yeni kanıt söz konusu olduğu için yargılamanın aleyhe yenilenmesi mümkündür.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "(B), infaz tamamlandıktan sonra başvurduğu için yargılamanın yenilenmesi mümkün değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Olayda (B), yargıç önünde ikrarda bulunmadığından ve beraat etmemiş olduğundan yargılamanın yenilenmesi mümkün değildir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Sanık veya hükümlünün ALEYHİNE yargılamanın yenilenmesi, CMK m.314'te SINIRLI olarak sayılan üç nedene bağlanmıştır: sanık lehine ileri sürülen ve hükme etkili bir belgenin sahteliğinin anlaşılması; hükme katılan hâkimlerden birinin sanık lehine görevinde kusur etmesi; ve SANIK BERAAT ETTİKTEN SONRA suçla ilgili olarak HÂKİM ÖNÜNDE güvenilebilir nitelikte ikrarda bulunması. Olayda iki koşul da gerçekleşmemiştir: hükümlü beraat etmemiş, mahkûm olmuştur; ikrarı da hâkim önünde değil Cumhuriyet savcısı huzurunda yapılmıştır. Bu nedenle aleyhe yenileme mümkün değildir. Aleyhe yenileme yolunun hiç bulunmadığını ya da infazın tamamlanmasının engel olduğunu söyleyen seçenekler de yanlıştır; m.313/1 infaz edilmiş hükümler bakımından bu yolu kapatmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi bölge adliye mahkemesince temyiz edilebilen kararları arasında yer alır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İlk derece mahkemesince verilen 5 yıl hapis cezasını içeren hükme yönelik istinaf başvurusunun esastan reddi kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Davanın düşmesine ilişkin ilk derece mahkemesi kararları ile ilgili olarak bölge adliye mahkemesince verilen bu tür kararlar veya istinaf başvurusunun esastan reddine ilişkin kararlar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Adli para cezasını gerektiren bir suçtan dolayı ilk derece mahkemesince verilen hükme ilişkin her türlü karar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İlk derece mahkemelerinin görevine giren ve yasada üst sınırı 2 yıla kadar (2 yıl dâhil) hapis cezasını gerektiren suçlar ve bunlara bağlı adli para cezalarına ilişkin her türlü bölge adliye mahkemesi kararları",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "10 yıl hapis cezasını gerektiren bir suçtan dolayı ilk derece mahkemesince verilen beraat kararına yönelik istinaf başvurusunun esastan reddine ilişkin karar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.286/1 kural olarak bölge adliye mahkemesi ceza dairelerinin bozma dışındaki hükümlerini temyize açar; ikinci fıkra ise temyiz edilemeyecek kararları bentler hâlinde sayar. Beş yıl veya daha az hapis cezalarına ilişkin esastan ret kararları, miktarı ne olursa olsun adlî para cezalarına ilişkin kararlar, düşme kararlarına ilişkin bölge adliye mahkemesi kararları ve on yıl veya daha az hapis gerektiren suçlarda beraata ilişkin esastan ret kararları bu kapsamdadır. Üst sınırı iki yıla kadar hapis cezasını gerektiren suçlara ilişkin kararlar da kural olarak temyiz dışıdır; ancak ilgili bent, \"ilk defa bölge adliye mahkemesince verilen ve 272 nci maddenin üçüncü fıkrası kapsamı dışında kalan MAHKÛMİYET KARARLARI HARİÇ OLMAK ÜZERE\" diyerek bu kategori içinde temyizi açık bir alt küme bırakır. Bu nedenle temyiz edilebilen karar yalnızca bu seçenekte bulunabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Güveni kötüye kullanma\nII. Genel güvenliğin kasten tehlikeye sokulması suçu\nIII. Tehdit\n5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangileri seri muhakeme usulünün uygulanabileceği suçlardandır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seri muhakeme usulü, CMK m.250/1'de TAHDİDİ olarak sayılan suçlarla sınırlıdır. Türk Ceza Kanunundan bu kataloğa alınanlar şunlardır: hakkı olmayan yere tecavüz, GENEL GÜVENLİĞİN KASTEN TEHLİKEYE SOKULMASI, trafik güvenliğini tehlikeye sokma, gürültüye neden olma, parada sahtecilik, mühür bozma, resmî belgenin düzenlenmesinde yalan beyan, kumar oynanması için yer ve imkân sağlama ile başkasına ait kimlik veya kimlik bilgilerinin kullanılması; ayrıca 6136 sayılı Kanunun 13. maddesindeki bazı fiiller. Güveni kötüye kullanma ve tehdit bu katalogda yer almaz; bu suçların uzlaştırma kapsamında bulunması onları seri muhakemeye tabi kılmaz. İki kurumun kapsamı birbirinden bağımsızdır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cinsel dokunulmazlığa karşı suçlarda uzlaştırma yoluna gidilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Uzlaştırma kapsamına giren bir suçun, bu kapsama girmeyen bir başka suçla birlikte işlenmiş olması durumunda da uzlaştırma hükümleri uygulanabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Etkin pişmanlık hükümlerine yer verilen suçlarda uzlaştırma yoluna gidilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Uzlaştırma yoluna başvurabilmek için kamu davası açılması için yeterli şüphenin bulunması gerekir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Birden fazla kişinin mağduriyetine veya zarar görmesine neden olan bir suçtan dolayı uzlaştırma yoluna gidilebilmesi için mağdur veya suçtan zarar görenlerin bir kısmının uzlaştırmayı kabul etmesi yeterlidir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.253/4, dosyanın uzlaştırma bürosuna gönderilebilmesi için soruşturma konusu suçun uzlaştırmaya tabi olmasının yanında KAMU DAVASI AÇILMASI İÇİN YETERLİ ŞÜPHENİN BULUNMASINI da arar; delil durumu dava açmaya elverişli değilse uzlaştırmaya gidilmez. Diğer seçenekler maddenin üçüncü fıkrasına aykırıdır: soruşturulması ve kovuşturulması şikâyete bağlı olsa bile CİNSEL DOKUNULMAZLIĞA KARŞI SUÇLARDA uzlaştırma yoluna gidilemez; uzlaştırma kapsamına giren bir suçun kapsama girmeyen başka bir suçla birlikte işlenmesi hâlinde de uzlaştırma hükümleri uygulanmaz. Etkin pişmanlık hükümlerinin bulunması ise uzlaştırmaya engel değildir. Birden çok mağdur varsa uzlaştırma ancak TÜMÜNÜN kabulüyle mümkündür; bir kısmının kabulü yeterli değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Müsadere muhakemesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Müsadere kararı verilmesi gereken durumlarda, kamu davası açılmamış veya kamu davası açılmış olup da esasla birlikte bir karar verilmemişse; karar verilmesi için Cumhuriyet savcısı veya katılan, davayı görmeye madde ve yer bakımından yetkili mahkemeye başvurabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Suç konusu olmayıp yalnızca müsadereye tâbi bulunan eşyanın müsaderesine duruşma açılarak karar verilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Müsadere veya geri verilecek eşya veya diğer mal varlığı değerleri üzerinde hakkı olan kimseler de duruşmaya çağrılır. Çağrıya uymamaları, işlemin ertelenmesine neden olmaz ve hükmün verilmesini engellemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Müsadere yargılamasında da asıl ceza davasında olduğu gibi sanığın sorgusu yapılır, kanıtlar toplanır, gerektiğinde keşif yapılabilir veya bilirkişiye başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Müsadere için eşyanın faile ait olup olmaması önemli olmadığı gibi, asıl suçtan mahkûmiyet koşulu da aranmamaktadır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.259 açık bir istisna kurar: suç konusu olmayıp YALNIZCA müsadereye tabi bulunan eşyanın müsaderesine SULH CEZA HÂKİMİ tarafından DURUŞMA YAPILMAKSIZIN karar verilir. Bu nedenle böyle eşya için duruşma açılacağını söyleyen ifade yanlıştır. Genel kural ise farklıdır: kamu davası açılmamış ya da açılmış olup esasla birlikte karar verilmemişse Cumhuriyet savcısı veya katılan yetkili mahkemeye başvurur (m.256/1) ve m.257 uyarınca müsadere kararları duruşmalı verilir; hakkı olanlar duruşmaya çağrılır, çağrıya uymamaları işlemi ertelemez. Müsadere muhakemesinde de deliller toplanır, gerektiğinde keşif yapılır veya bilirkişiye başvurulur; TCK m.54 uyarınca eşyanın faile ait olması ve asıl suçtan mahkûmiyet her hâlde aranmaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmanın sonuçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uzlaştırma görüşmeleri sırasında yapılan açıklamalar, herhangi bir soruşturma ve kovuşturmada ya da davada kanıt olarak kullanılamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Şüpheli, mağdur veya suçtan zarar görenden birine ilk uzlaştırma teklifinde bulunulduğu tarihten itibaren, uzlaştırma girişiminin sonuçsuz kaldığı ve en geç, uzlaştırmacının raporunu düzenleyerek uzlaştırma bürosuna verdiği tarihe kadar dava zamanaşımı ile kovuşturma koşulu olan dava süresi işlemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kamu davası açıldıktan sonra kovuşturma konusu suçun uzlaştırma kapsamında olduğunun anlaşılması durumunda, kovuşturma dosyası, uzlaştırma işlemlerinin yerine getirilmesi için uzlaştırma bürosuna gönderilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mahkeme, uzlaştırma sonucunda sanığın edimini bir defada yerine getirmesi durumunda, onun hakkında ceza verilmesine yer olmadığı kararı verir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme uzlaşma sonucunda edimin yerine getirilmesinin ileri tarihe bırakılması, takside bağlanması veya süreklilik göstermesi durumunda durma kararı verir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaştırmanın sonucu, edimin ne zaman yerine getirildiğine göre değişir. CMK m.253/19'a göre şüpheli edimini DEFATEN (bir defada) yerine getirirse KOVUŞTURMAYA YER OLMADIĞI kararı verilir; edimin ifası ileri tarihe bırakılmış, taksite bağlanmış veya süreklilik gösteriyorsa kamu davasının açılmasının ertelenmesine karar verilir. Kovuşturma evresinde ise m.254/2 uyarınca edim defaten yerine getirilmişse DAVANIN DÜŞMESİNE, ileri tarihe bırakılmış veya taksite bağlanmışsa DURMA kararına hükmolunur. Dolayısıyla mahkemenin bu hâlde ceza verilmesine yer olmadığı kararı vereceğini söyleyen ifade yanlıştır. Diğer ifadeler kanuna uygundur: müzakerelerdeki açıklamalar delil olarak kullanılamaz (m.253/20); teklif tarihinden raporun büroya verildiği tarihe kadar dava zamanaşımı ile kovuşturma koşulu olan dava süresi işlemez (m.253/21); kovuşturma sırasında suçun uzlaştırma kapsamında olduğu anlaşılırsa dosya büroya gönderilir (m.254/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre basit yargılama usulü uygulanarak verilen bir karara karşı itiraz edilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İtiraz üzerine hükmü veren mahkemece duruşma açılır ve genel hükümlere göre yargılamaya devam olunur.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Mahkeme, itiraz üzerine hüküm verirken, basit yargılama usulüne göre verilen ilk hükümle bağlı değildir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İtiraz üzerine verilen hükmün sanık lehine olması durumunda, bu hususların itiraz etmemiş olan diğer sanıklara da uygulanma olanağı varsa bu sanıklar da itiraz etmiş gibi verilen kararlardan yararlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İtiraz üzerine verilen hükümlere karşı genel hükümlere göre yasa yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İtirazın, süresinde yapılmadığı veya yasa yoluna başvuru hakkı bulunmayan tarafından yapıldığı mahkemesince değerlendirildiğinde dosya, itirazı incelemeye yetkili olan mercie gönderilir. Mercii işin esasına girmeksizin yalnızca bu nedenler yönünden incelemesini yapar ve kararını gereği için mahkemesine gönderir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.252/2, 2/3/2024 tarihli 7499 sayılı Kanunla değiştirilmiştir. Yürürlükteki metne göre itiraz üzerine hükmü veren mahkeme duruşma AÇMAZ; dosyayı, o yerde birden fazla asliye ceza mahkemesi varsa tevzi kriterlerine göre belirlenen BAŞKA BİR ASLİYE CEZA MAHKEMESİNE gönderir ve duruşmayı o mahkeme açarak genel hükümlere göre yargılamaya devam eder. Tek asliye ceza mahkemesi bulunan yerlerde aynı mahkemede yetkili başka bir hâkim görevlendirilir. Değişikliğin amacı, dosyayı daha önce karara bağlamış hâkimin aynı işi yeniden görmesini önlemektir. Diğer ifadeler metne uygundur: itiraz üzerine hüküm veren mahkeme ilk hükümle bağlı değildir, sanık lehine sonuçlar itiraz etmemiş diğer sanıklara sirayet eder, itiraz üzerine verilen hükümlere karşı genel hükümlere göre kanun yoluna başvurulabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Suça sürüklenen çocukların muhakemesi hakkında\nI. Çocuğun ifadesinin alınması veya çocuk hakkındaki diğer işlemler sırasında, çocuğun yanında sosyal çalışma görevlisi bulundurulması zorunludur.\nII. Çocuklar gözaltına alınabilir.\nIII. Çocuklara zincir, kelepçe ve benzeri aletler takılamaz.\nIV. Çocuğa yüklenen suçtan dolayı, Ceza Muhakemesi Yasası'ndaki koşulların varlığı durumunda, kamu davasının açılmasının 5 yıl süreyle ertelenmesine karar verilebilir.\nifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Çocuk Koruma Kanunu iki noktada seçeneklerdekinden farklı bir düzen kurar. ÇKK m.15/2, çocuğun ifadesinin alınması veya diğer işlemler sırasında yanında sosyal çalışma görevlisi BULUNDURULABİLECEĞİNİ söyler; bu bir takdir yetkisidir, zorunluluk değil. ÇKK m.19/1 ise kamu davasının açılmasının ertelenmesinde süreyi çocuklar bakımından ÜÇ YIL olarak belirler (yetişkinlerdeki beş yıl değil). Bu iki ifade bu nedenle yanlıştır. Buna karşılık çocukların gözaltına alınması mümkündür; ÇKK m.16 bunu yasaklamaz, yalnızca gözaltına alınan çocukların kolluğun çocuk biriminde, böyle bir birim yoksa yetişkinlerden ayrı bir yerde tutulmasını emreder. Çocuklara zincir, kelepçe ve benzeri aletler takılamaması da m.18/1'in açık hükmüdür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi seri muhakeme usulünün uygulanabilmesi için gereken koşullar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kamu davası açılmasının ertelenmesi kararının verilmemiş olması",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Şüphelinin bu usulünün uygulanmasını bizzat ya da müdafi aracılığıyla kabul etmesi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Katalog suçlardan birinin işlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yaş küçüklüğü ve akıl hastalığı durumlarının bulunmaması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Şüpheliye ulaşılabilmesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seri muhakeme usulünün koşulları CMK m.250'de sayılır: katalog suçlardan birinin işlenmiş olması (f.1), kamu davasının açılmasının ertelenmesine karar verilmemiş olması (f.1), şüpheliye ulaşılabilmesi (f.13) ve yaş küçüklüğü ile akıl hastalığı hâllerinin bulunmaması (f.12). Teklifi kabul bakımından ise kanun daha sıkı bir güvence getirir: m.250/3'e göre Cumhuriyet savcısının teklifi şüpheli tarafından MÜDAFİ HUZURUNDA kabul edilmelidir. Yani kabulün bizzat ya da müdafi aracılığıyla yapılması yeterli değildir; müdafinin hazır bulunması zorunludur. Bu nedenle ilgili ifade koşullar arasında yer almaz. Not: fıkrada başlangıçta bulunan \"sağır ve dilsizlik\" ibaresi Anayasa Mahkemesinin 5/11/2024 tarihli kararıyla iptal edilmiştir; bu hâl artık bir engel değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5395 sayılı Çocuk Koruma Yasası'na göre suça sürüklenen çocukların muhakemesi hakkında\nI. Kamu davasının açılmasının ertelenmesine esas alınacak hapis cezasının üst sınırı, 15 yaşını doldurmamış çocuklar bakımından 5 yıl olarak uygulanır.\nII. Suça sürüklenen çocuklar hakkında kovuşturma evresinde Ceza Muhakemesi Yasası'nda sayılan adli kontrol tedbirleri uygulanamaz.\nIII. 15 yaşını doldurmamış çocuklar hakkında üst sınırı 3 yılı aşmayan hapis cezasını gerektiren eylemlerinden dolayı tutuklama kararı verilemez.\nIV. Çocuğa yüklenen suçtan dolayı yapılan yargılama sonunda, hükmün açıklanmasının geri bırakılmasına karar verilmişse denetim süresi 3 yıldır.\nifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Çocuk Koruma Kanunu, suça sürüklenen çocuklar için yetişkinlerden farklı eşikler koyar. ÇKK m.20/1, soruşturma ve kovuşturma evrelerinde çocuklar hakkında CMK m.109'daki adlî kontrol tedbirlerinin yanında çevre sınırları dışına çıkmamak, belirli yerlere gidememek ve belirli kişi veya kuruluşlarla ilişki kurmamak tedbirlerinin de uygulanabileceğini söyler; bu nedenle adlî kontrolün uygulanamayacağını söyleyen ifade yanlıştır. ÇKK m.21 ise tutuklama yasağını ON BEŞ yaşını doldurmamış çocuklar bakımından üst sınırı BEŞ YILI aşmayan hapis cezasını gerektiren fiillerle sınırlar; eşiği üç yıl olarak veren ifade de yanlıştır. Buna karşılık m.19/2 erteleme bakımından on beş yaşını doldurmamış çocuklarda üst sınırı beş yıl olarak uygulatır ve m.23/1 hükmün açıklanmasının geri bırakılmasında denetim süresini çocuklar için üç yıl olarak belirler.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırma görüşmeleri ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uzlaştırma görüşmelerine yasal temsilci katılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Şüpheli, mağdur veya suçtan zarar görenin kendisi veya vekilinin müzakerelere katılmaktan kaçınması durumunda, uzlaştırmayı kabul etmemiş sayılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cumhuriyet savcısı, uzlaştırmacıya talimat verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Uzlaştırma teklifinin reddedilmesine rağmen, şüpheli ile mağdur veya suçtan zarar gören uzlaştıklarını gösteren belge ile en geç iddianamenin kabul edildiği tarihe kadar Cumhuriyet savcısına başvurarak uzlaştıklarını beyan edebilirler.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Uzlaştırma süreci sonunda soruşturma dosyaları, uzlaştırma bürosunda görevli cumhuriyet savcıları tarafından sonuçlandırılır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaştırma, tarafların iradesine dayanan ve tarafsız bir uzlaştırmacı eliyle yürütülen bir kurumdur; bu nedenle CMK m.253/24 uzlaştırmacı görevlendirilmesinde hâkimin davaya bakamayacağı hâller ile reddi nedenlerini göz önünde bulundurur ve süreci uzlaştırma bürosuna bağlar. Cumhuriyet savcısının uzlaştırmacıya talimat vermesi bu tarafsızlıkla bağdaşmaz; kanunda böyle bir yetki yoktur, dolayısıyla ilgili ifade yanlıştır. Diğerleri metne uygundur: müzakerelere şüpheli, mağdur, suçtan zarar gören, kanunî temsilci, müdafi ve vekil katılabilir (m.253/13); tarafların ya da temsilcilerinin müzakerelere katılmaktan imtina etmesi uzlaşmayı kabul etmemiş sayılma sonucunu doğurur; teklifin reddedilmiş olmasına rağmen taraflar en geç iddianamenin kabul edildiği tarihe kadar uzlaştıklarını beyan edebilir (m.253/16); soruşturma dosyaları büroda görevli Cumhuriyet savcılarınca sonuçlandırılır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırma teklifiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uzlaştırma teklifinde bulunulması veya teklifin kabul edilmesi durumunda, soruşturma konusu suça ilişkin kanıtlar toplanamaz ve koruma tedbirleri uygulanamaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Şüphelinin, mağdurun veya suçtan zarar görenin ergin olmaması durumunda, uzlaştırma teklifi yasal temsilcilerine yapılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mağdur ölmüş ise şüpheli veya sanık ile mağdurun mirasçıları arasında uzlaştırma işlemlerinin yapılması gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Şüpheli, mağdur veya suçtan zarar gören, kendisine uzlaştırma teklifinde bulunulduktan itibaren 3 gün içinde kararını bildirmediği takdirde, teklifi reddetmiş sayılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Resmî mercilere beyan edilmiş olup da soruşturma dosyasında yer alan adreste bulunmama veya yurt dışında olma ya da başka bir nedenle mağdura, suçtan zarar görene, şüpheliye veya bunların yasal temsilcisine ulaşılamaması durumunda, uzlaştırma yoluna gidilmeksizin soruşturma sonuçlandırılır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaştırma teklifinde bulunulması ya da teklifin kabul edilmesi, soruşturmayı DURDURMAZ. CMK m.253/8, bu hâlde soruşturma konusu suça ilişkin DELİLLERİN TOPLANMASINA ve KORUMA TEDBİRLERİNİN uygulanmasına engel olunamayacağını açıkça söyler; amaç, uzlaştırma sonuçsuz kalırsa soruşturmanın delilsiz kalmamasıdır. Bu nedenle ilgili ifade metne aykırıdır. Diğerleri kanuna uygundur: taraflardan biri ergin değilse teklif kanunî temsilcisine yapılır; mağdur ölmüşse uzlaştırma mirasçılarıyla yürütülür; teklifte bulunulduktan sonra kararını ÜÇ GÜN içinde bildirmeyen kişi teklifi reddetmiş sayılır (m.253/4); resmî mercilere beyan edilmiş adreste bulunmama, yurt dışında olma ya da başka bir nedenle ilgililere ulaşılamaması hâlinde uzlaştırma yoluna gidilmeksizin soruşturma sonuçlandırılır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre seri muhakeme usulü hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seri muhakeme usulü, bu kapsama giren bir suçun, kapsama girmeyen başka bir suçla birlikte işlenmiş olması durumunda uygulanmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cumhuriyet savcısı tarafından şüpheliye seri muhakeme usulünün uygulanması teklif edilir ve şüpheli müdafi huzurunda teklifi kabul ederse seri muhakeme usulü uygulanır. Teklif sırasında müdafinin hazır bulunması, zorunlu bir koşuldur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Seri muhakeme usulünde uygulanacak yaptırım, Cumhuriyet savcısı tarafından belirlenir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Seri muhakeme usulünde yaptırım belirlenirken zincirleme suça ilişkin hükümler uygulanamaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme yasal koşulların gerçekleşmediğini veya eylemin seri muhakeme usulü kapsamı dışında olduğu kanısına varırsa istemi reddeder ve soruşturmanın genel hükümlere göre sonuçlandırılması amacıyla dosyayı Cumhuriyet başsavcılığına gönderir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Seri muhakemede yaptırım, Cumhuriyet savcısı tarafından ve TCK'nın genel hükümleri işletilerek belirlenir. CMK m.250/4, savcının Türk Ceza Kanununun 61. maddesinin birinci fıkrasındaki ölçütleri gözeterek temel cezayı saptayıp yarı oranında indirim uygulayacağını, ardından koşulları varsa ZİNCİRLEME SUÇA ilişkin hükümler dâhil olmak üzere cezayı artıran veya azaltan nedenleri uygulayacağını söyler. Bu nedenle zincirleme suç hükümlerinin uygulanamayacağını söyleyen ifade yanlıştır. Diğerleri metne uygundur: kapsama giren suçun kapsama girmeyen başka bir suçla birlikte işlenmesi hâlinde usul uygulanmaz (m.250/11); teklifin müdafi huzurunda kabulü zorunludur (m.250/3); mahkeme koşulların gerçekleşmediğini veya eylemin kapsam dışı olduğunu saptarsa istemi reddeder ve dosyayı genel hükümlere göre sonuçlandırılmak üzere Cumhuriyet başsavcılığına gönderir (m.250/9).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Israrlı takip suçunda uzlaştırma yoluna gidilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Aralarında iştirak ilişkisi olsun veya olmasın birden çok kişi tarafından işlenen suçlarda ancak uzlaşan kişi uzlaştırmadan yararlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Uzlaştırma kapsamına giren bir suçun, bu kapsama girmeyen bir başka suçla birlikte farklı mağdurlara karşı işlenmiş olması durumunda, uzlaştırma hükümleri uygulanmaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Uzlaştırma kurumu, kural olarak soruşturulması ve kovuşturulması şikâyete bağlı suçlarda uygulama alanı bulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Dolandırıcılık suçlarında uzlaştırma yoluna başvurulabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.253/3 uzlaştırmanın kapsam dışı kaldığı hâlleri belirlerken iki ayrı sınır çizer. Birincisi konu bakımındandır: cinsel dokunulmazlığa karşı suçlarda ve ısrarlı takip suçunda, soruşturulması ve kovuşturulması şikâyete bağlı olsa bile uzlaştırma yoluna gidilemez. İkincisi birleşme hâline ilişkindir: uzlaştırma kapsamına giren bir suçun, kapsama GİRMEYEN başka bir suçla birlikte işlenmiş olması durumunda uzlaştırma hükümleri uygulanmaz. Ancak bu ikinci sınır AYNI MAĞDURA karşı işlenme hâliyle ilgilidir; suçlar FARKLI MAĞDURLARA karşı işlenmişse uzlaştırma kapsamındaki suç bakımından uzlaştırma yürütülebilir. Bu nedenle farklı mağdurlar hâlinde de uzlaştırmanın uygulanmayacağını söyleyen ifade yanlıştır. Ayrıca m.255 uyarınca birden çok fail varsa yalnızca uzlaşan kişi uzlaştırmadan yararlanır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Kamu davası açılmış olup da geri verilmesi gereken eşya veya mal varlığı değerleri ile ilgili olarak asıl hükümle birlikte bir karar verilmemiş olması durumunda, mahkemece resen veya ilgililerin istemi üzerine bunların geri verilmesine karar verilir.\nII. Suçta kullanılan tabancanın yanı sıra kılıfının da müsaderesine karar verilebilir.\nIII. Açılan kamu davasında geri verilmesi gereken eşya veya mal varlığı değerleri için mahkemece esasla birlikte bir karar verilmemesi durumunda, mahkeme geri verilmesi gereken eşyaları vermediğini fark ettiğinde, 1 ay içerisinde resen bu eşyaların geri verilmesine karar verebilir.\nMüsadere muhakemesiyle ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "CMK m.256/2, kamu davası açılmış olup da iade edilmesi gereken eşya veya malvarlığı değerleriyle ilgili esasla birlikte karar verilmemişse, mahkemenin RESEN veya ilgililerin istemi üzerine bunların iadesine karar vereceğini söyler; kanun bu yetkiyi bir aylık gibi bir süreye bağlamaz. Bu nedenle bir aylık süre öngören ifade yanlıştır; resen karar verilebileceğini söyleyen ifade ise doğrudur. Müsaderenin kapsamı bakımından ise TCK m.54/1 yalnızca suçta kullanılan eşyayı değil, o eşyanın ayrılmaz parçası niteliğindeki veya onunla birlikte bir bütün oluşturan unsurları da kapsayacak biçimde uygulanır; silahın kılıfı bu nedenle müsadere dışında kalmaz. Dolayısıyla kılıfın müsadere edilemeyeceğini ima eden okuma da kanundan çıkarılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Cinsel taciz\nII. Tehdit\nIII. Israrlı takip\nYukarıdakilerden hangileri uzlaştırma kapsamındaki suçlar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Uzlaştırmanın kapsamı CMK m.253/1'de iki ölçütle çizilir: soruşturulması ve kovuşturulması ŞİKÂYETE BAĞLI suçlar ile şikâyete bağlı olup olmadığına bakılmaksızın maddede tek tek sayılan suçlar. Tehdit suçunun birinci fıkrası bu sayılanlar arasında yer aldığı için uzlaştırmaya tabidir. Buna karşılık m.253/3 iki mutlak yasak koyar: CİNSEL DOKUNULMAZLIĞA KARŞI SUÇLARDA ve ISRARLI TAKİP suçunda, şikâyete bağlı olsalar dahi uzlaştırma yoluna gidilemez. Cinsel taciz cinsel dokunulmazlığa karşı suçlar bölümünde düzenlendiğinden bu yasağın kapsamındadır. Kuralın gerekçesi, mağdurun fail karşısında müzakereye zorlanmasının yaratacağı ikincil mağduriyeti önlemektir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmanın sonuçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uzlaştırma sonucunda şüphelinin edimini bir defada (defaten) yerine getirmesi durumunda, hakkında kovuşturmaya yer olmadığı kararı verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Edimin yerine getirilmesinin ileri tarihe bırakılması, takside bağlanması veya süreklilik göstermesi durumunda, kovuşturmaya yer olmadığı kararı verilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Edimin yerine getirilmesinin takside bağlanması nedeniyle kamu davasının açılmasının ertelenmesi kararından sonra, uzlaştırmanın gereklerinin yerine getirilmemesi durumunda, erteleme süresi içinde kasıtlı bir suç işlenmesi koşulu aranmaksızın kamu davası açılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Şüphelinin, edimini yerine getirmemesi durumunda uzlaştırma raporu veya belgesi, İcra ve İflas Yasası'nın 38. maddesinde yazılı ilam niteliğinde belgelerden sayılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Uzlaştırmanın sağlanması durumunda, soruşturma konusu suç nedeniyle tazminat davası açılamaz; açılmış olan davadan feragat edilmiş sayılır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Uzlaştırmanın sağlanması, mağdurun özel hukuk yollarını tümüyle kapatmaz. CMK m.253/19'un son cümlesi, uzlaşmanın sağlanması hâlinde soruşturma konusu suç nedeniyle TAZMİNAT DAVASI AÇILAMAYACAĞINI ve açılmış davadan feragat edilmiş sayılacağını öngörmekteydi; ancak bu düzenleme Anayasa Mahkemesinin 26/7/2023 tarihli kararıyla İPTAL EDİLMİŞTİR. Dolayısıyla bugün uzlaşma, tazminat davası açma hakkını kendiliğinden ortadan kaldırmaz ve ilgili ifade yürürlükteki hukuku yansıtmaz. Diğer ifadeler geçerlidir: edim defaten yerine getirilirse kovuşturmaya yer olmadığı kararı verilir; edim ileri tarihe bırakılmış, taksite bağlanmış veya süreklilik gösteriyorsa kamu davasının açılmasının ertelenmesine karar verilir ve gerekler yerine getirilmezse kasıtlı suç işlenmesi koşulu aranmaksızın dava açılır; uzlaştırma raporu veya belgesi İcra ve İflas Kanunu m.38 anlamında ilam niteliğinde belge sayılır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5395 sayılı Çocuk Koruma Yasası'na göre suça sürüklenen çocukların muhakemesi hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sorgusu yapılmış çocuğun duruşmada hazır bulundurulmasına gerek görülmeyebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 yaşını doldurmamış çocuklar hakkında tutuklama kararı verilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ceza Muhakemesi Yasası'nın uzlaşmaya ilişkin hükümleri suça sürüklenen çocuklar bakımından da uygulanmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Çocukların yetişkinlerle birlikte suç işlemesi ve davaların birlikte yürütülmesinin zorunlu görülmesi durumunda, yargılamanın her aşamasında birleştirme kararı verilebilir. Bu takdirde birleştirilen davalar çocuk mahkemelerinde görülür.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Çocuk Koruma Yasası'nın kapsamına giren görevlerle bağlantılı olarak kamu görevlileri hakkında soruşturma için izin alınması gerekir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "ÇKK m.22/3, duruşmada hazır bulunan çocuğun yararı gerektirdiğinde duruşma salonundan çıkarılabileceğini, SORGUSU YAPILMIŞ çocuğun ise duruşmada hazır bulundurulmasına gerek görülmeyebileceğini söyler; amaç çocuğu yargılamanın örseleyici etkisinden korumaktır. Diğer seçenekler kanuna aykırıdır: tutuklama yasağı m.21'de mutlak değildir, yalnızca on beş yaşını doldurmamış çocuklar hakkında üst sınırı beş yılı aşmayan fiiller bakımından geçerlidir; m.24 uzlaşmaya ilişkin hükümlerin suça sürüklenen çocuklar bakımından da uygulanacağını açıkça belirtir; m.17/3'e göre davaların birleştirilmesi zorunlu görülürse birleştirme GENEL MAHKEMELERDE yapılır ve birleştirilen davalar genel mahkemede görülür, çocuk mahkemesinde değil.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Sağır ve dilsizlik\nII. Akıl hastalığı\nIII. Soruşturma veya kovuşturma yapılması izne bağlı olan suçlar\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdaki durumlardan hangilerinde basit yargılama usulü uygulanabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Basit yargılama usulünün uygulanmayacağı hâller CMK m.251/7'de sayılır. Hükmün YÜRÜRLÜKTEKİ metnine göre bu usul yaş küçüklüğü, akıl hastalığı hâlleri ile soruşturma veya kovuşturma yapılması İZNE YA DA TALEBE BAĞLI olan suçlarda uygulanmaz. Fıkrada başlangıçta yer alan \"sağır ve dilsizlik\" ibaresi ise Anayasa Mahkemesinin 5/11/2024 tarihli kararıyla İPTAL EDİLMİŞTİR; dolayısıyla sağır ve dilsiz sanıklar bakımından basit yargılama usulünün uygulanmasına artık kanuni bir engel bulunmamaktadır. Sorunun ölçtüğü nokta tam olarak bu güncelliktir; iptal öncesi kaynaklara dayanan çözümler üç hâli birlikte sayarak yanlış sonuca varır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi hakkında yapılacak soruşturmalar yargıçların görevlerinden dolayı tabi oldukları yargılama usulüne göre yapılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kolluk amirleri",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Valiler",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kaymakamlar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "En üst dereceli kolluk amirleri",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Belediye başkanları",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.161/5, adliyeyle ilgili görev veya işlerde görevini kötüye kullanan ya da ihmal eden kamu görevlileri hakkında kural olarak Cumhuriyet savcılarınca DOĞRUDAN soruşturma yapılmasını öngörür. Bu kuralın iki istisnası vardır: vali ve kaymakamlar hakkında 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümleri uygulanır; EN ÜST DERECELİ KOLLUK AMİRLERİ hakkında ise HÂKİMLERİN görevlerinden dolayı tabi oldukları yargılama usulü uygulanır. Sıradan kolluk amir ve memurları bu ayrıcalıktan yararlanmaz; onlar hakkında savcı doğrudan soruşturma yürütür. Ayrım, en üst dereceli kolluk amirinin görevinin taşıdığı ağırlık gözetilerek yapılmıştır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

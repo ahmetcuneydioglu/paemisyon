@@ -1,79 +1,40 @@
 [
  {
-  "id": "bd829ffa-f604-4f66-ac60-ea4496e091ca",
-  "questionId": "ad1352c8-d7de-4562-b74d-02dc3de93a0c",
-  "stem": "Bir siyasal partinin genel başkanı olan (A), parti programını açıklamak için İstanbul'a gitmiştir. (A)'nın siyasal parti yönetimindeki görevinden ayrılmasını isteyen (B) ve (C), havaalanında (A)'yı cebir kullanarak zorla kaçırmış ve otelde yapacağı konuşmayı engellemişlerdir.\n5237 sayılı Türk Ceza Yasası'na göre (B) ve (C) hangi suçlardan sorumlu olur?",
-  "explanation": "TCK m. 114/1-a, bir kimseyi siyasi parti YÖNETİMİNDEKİ GÖREVİNDEN AYRILMAYA zorlamak amacıyla cebir veya tehdit kullanmayı bağımsız bir suç olarak cezalandırır; olayda failler tam da bu amaçla hareket etmiştir. Kaçırma fiili ise bu suçun tanımında yer alan bir unsur değildir: kişinin bir yere gitmek ya da bir yerde kalmak özgürlüğünden yoksun bırakılması TCK m. 109'da ayrıca suç sayılmıştır. Fiil cebir kullanılarak işlendiğinden m. 109/2, birden fazla kişi tarafından birlikte işlendiğinden m. 109/3-b uygulanır. Aynı fiille birden çok suçun ihlal edildiği bu durumda gerçek içtima kuralı geçerlidir ve failler her iki suçtan ayrı ayrı sorumlu tutulur; kanunda ayrıca genel bir \"cebir suçu\" bulunmadığından cebre dayalı seçenekler doğru değildir.",
+  "id": "eff07887-6e21-4eba-b537-538e84a9256b",
+  "questionId": "92a66365-5fee-4ad2-bedb-0cb3b48c57df",
+  "stem": "Aşağıdakilerden hangisi tutuklama kararını kendiliğinden hükümsüz kılmaz?",
+  "explanation": "Tutuklama kararını kendiliğinden hükümsüz kılan hâller, kişi özgürlüğünün dayanağını ortadan kaldıran hâllerdir: beraat, kovuşturmaya yer olmadığı kararı ve tutuklulukta geçirilecek azamî sürenin dolması bunlardandır; cezanın ertelenmesi de m.109/6 uyarınca tutukluluğu sona erdirir. DURMA kararı ise farklıdır: CMK m.223/8 uyarınca durma, muhakeme şartının gerçekleşmesini BEKLEMEK üzere verilir ve davayı sona erdirmez. Dava devam ettiğinden tutuklama kararı da kendiliğinden hükümsüz kalmaz; mahkeme tutukluluğu ayrıca değerlendirir. Ayrım, kararın davayı sonlandırıp sonlandırmadığına dayanır.",
   "sourceLabel": null,
   "options": [
    {
     "label": "A",
-    "text": "Siyasal hakların kullanılmasının engellenmesi suçu",
+    "text": "Beraat kararı",
     "isCorrect": false
    },
    {
     "label": "B",
-    "text": "Kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
+    "text": "Cezanın ertelenmesi kararı",
     "isCorrect": false
    },
    {
     "label": "C",
-    "text": "Hem siyasal hakların kullanılmasının engellenmesi suçu hem de kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
-    "isCorrect": true
+    "text": "Kovuşturmaya yer olmadığı kararı",
+    "isCorrect": false
    },
    {
     "label": "D",
-    "text": "Hem cebir suçu hem de kişiyi özgürlüğünden yoksun kılma suçunun nitelikli şekli",
+    "text": "Tutuklulukta geçirilecek azami sürenin dolması",
     "isCorrect": false
    },
    {
     "label": "E",
-    "text": "Cebir suçu",
-    "isCorrect": false
-   }
-  ],
-  "question": {
-   "topic": {
-    "name": "Türk Ceza Kanunu"
-   }
-  }
- },
- {
-  "id": "45c5f549-8705-4874-a778-d86ef92b6e51",
-  "questionId": "b21e35c6-f3ee-4701-8285-b75ac21d7bfa",
-  "stem": "(A), kendisini terk eden sevgilisi (M)'yi gece sabaha kadar telefonla arar. Buna dayanamayan (M), (A)'yı şikâyet eder. Yapılan incelemede yüzü aşkın arama kaydına rastlanır.\nBuna göre olayda işlenen suç aşağıdakilerden hangisidir?",
-  "explanation": "TCK m. 123/1, sırf huzur ve sükûnu bozmak maksadıyla bir kimseye ISRARLA telefon edilmesini, gürültü yapılmasını ya da aynı maksatla hukuka aykırı başka bir davranışta bulunulmasını suç sayar ve takibini mağdurun şikâyetine bağlar. Maddenin iki ayırt edici unsuru vardır: fiilin ISRAR düzeyine ulaşması ve failin SIRF huzur ve sükûnu bozma saikiyle hareket etmesi; bu nedenle suç ancak doğrudan kastla işlenebilir. Gece boyunca yüzü aşkın arama her iki unsuru da karşılar. Konuşmanın içeriği öğrenilmediği için haberleşmenin gizliliğinin ihlali, onur ve saygınlığa yönelik bir isnat bulunmadığı için hakaret söz konusu değildir; \"haksız arama\" ise kişinin üstünün veya eşyasının hukuka aykırı aranmasını ifade eden bambaşka bir suçtur.",
-  "sourceLabel": null,
-  "options": [
-   {
-    "label": "A",
-    "text": "Haksız arama",
-    "isCorrect": false
-   },
-   {
-    "label": "B",
-    "text": "Özel yaşamın gizliliğini ihlal",
-    "isCorrect": false
-   },
-   {
-    "label": "C",
-    "text": "Kişilerin huzur ve sükûnunu bozma",
+    "text": "Muhakeme koşullarının gerçekleşmesini beklemek üzere verilen durma kararı",
     "isCorrect": true
-   },
-   {
-    "label": "D",
-    "text": "Hakaret",
-    "isCorrect": false
-   },
-   {
-    "label": "E",
-    "text": "Haberleşmenin gizliliğini ihlal",
-    "isCorrect": false
    }
   ],
   "question": {
    "topic": {
-    "name": "Türk Ceza Kanunu"
+    "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
    }
   }
  }
