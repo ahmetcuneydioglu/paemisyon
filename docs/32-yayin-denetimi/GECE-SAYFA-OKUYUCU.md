@@ -22,10 +22,21 @@ Emin olamadigin sayfa/soru icin karar "supheli" yaz, tahmin etme.
 
 ### ELEME KURALLARI (bunlara uyan soruyu "elendi" isaretle, sebebini yaz)
 1. Dayanagi kanun METNINDE olmayan sorular: doktrin ayrimlari (sahista hata,
-   hedefte sapma, gecitli suc, objektif isnat, sapma turleri), madde gerekcesi
-   veya ictihada dayanan kurallar.
+   hedefte sapma, gecitli suc, objektif isnat, sapma turleri), madde gerekcesi,
+   YONETMELIK hukmu veya ictihada dayanan kurallar. Kitabin cozum metni bir
+   yonetmelige ya da Yargitay kararina dayaniyorsa "sebep" alaninda BELIRT.
 2. Degistirilmis/mulga hukumler; guncelligi supheli sayilar.
-3. Birden fazla sikkin dogru olabilecegi belirsiz sorular.
+3. **Birden fazla sikki YANLIS (ya da dogru) olabilecek sorular.** En sik
+   kacirilan eleme budur; "hangisi yanlistir" sorusunda cevap DISINDAKI her
+   sikkin kanun metnine birebir uydugunu TEK TEK dogrula. Iki tipik tuzak:
+   a) Sik, kanundaki "-ebilir"i "-ir"e ceviriyorsa (hak -> yukumluluk) o sik da
+      YANLISTIR ve soru belirsizdir. Ornek: m.120/1 "hazir BULUNABILIR" derken
+      sik "bulundurulur" diyor.
+   b) Sik, katalog/liste disindaki bir hali listedeymis gibi gosteriyorsa.
+      Ornek: CMK m.100/3-a-4 TCK m.86/3'un b, e ve f bentlerine atif yapar;
+      f bendi CANAVARCA HISLE'dir, "kadina karsi" m.86/3'te HIC YOKTUR.
+3b. Kok, BASKA bir kanunun kuralini bu kanuna mal ediyorsa ("5271 sayili CMK'ya
+   gore" deyip 5651 veya 6384 sayili Kanun'un kuralini soruyorsa) ELE.
 4. YIGILMA — bankada ayni kurali ayni kurguyla olcen soru zaten var:
    <YIGILMA>
 5. Konu anlatim kitabindan uretilmis sorular (bu kitapta yok, yine de kontrol et).
