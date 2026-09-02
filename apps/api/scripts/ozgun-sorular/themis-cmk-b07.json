@@ -1,0 +1,912 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Polisin durdurma yetkisiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Durdurma için mutlaka suç şüphesi bulunması gerekir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Polis, kişileri ve araçları işlenen bir kabahatin faillerinin kimliklerini saptamak amacıyla durdurabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Durdurma yetkisinin kullanılabilmesi için polisin deneyimine ve içinde bulunulan durumdan edindiği izlenime dayanan makul bir nedenin bulunması gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Süreklilik arz edecek, fiilî durum ve keyfilik oluşturacak biçimde durdurma işlemi yapılamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Polis, durdurduğu kişiye durdurma nedenini bildirir ve durdurma nedenine ilişkin sorular sorabilir; kimliğini veya bulundurulması gerekli diğer belgelerin ibraz edilmesini isteyebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Polisin durdurma yetkisi PVSK m.4/A'da düzenlenir ve dayanağı SUÇ ŞÜPHESİ DEĞİLDİR. Madde dört amaç sayar: bir suç veya KABAHATİN işlenmesini önlemek; suç işlendikten sonra kaçan faillerin yakalanmasını sağlamak ve işlenen suç veya kabahatlerin faillerinin kimliklerini tespit etmek; hakkında yakalama emri ya da zorla getirme kararı verilmiş kişileri tespit etmek; kişilerin hayatı, vücut bütünlüğü veya malvarlığı bakımından ya da topluma yönelik mevcut veya muhtemel bir TEHLİKEYİ ÖNLEMEK. Görüldüğü gibi tedbir hem adlî hem ÖNLEYİCİ niteliktedir; ortada işlenmiş bir suç bulunmasa dahi uygulanabilir. Bu nedenle durdurma için mutlaka suç şüphesi arayan ifade yanlıştır. Maddenin aradığı ölçüt farklıdır: polisin TECRÜBESİNE ve içinde bulunduğu durumdan edindiği izlenime dayanan MAKUL BİR SEBEP. Ayrıca süreklilik arz edecek, fiilî durum ve keyfilik oluşturacak biçimde durdurma yapılamaz; polis durdurduğu kişiye sebebini bildirir, sorular sorabilir ve belge ibrazını isteyebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre soruşturma evresinde Cumhuriyet savcısının, tutuklunun serbest bırakılmasına ilişkin kararına karşı hangi yasa yoluna başvurulabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sulh ceza yargıcına itiraz edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Başsavcıya başvurulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Savcının yargı çevresinde bulunduğu ağır ceza mahkemesine en yakın ağır ceza mahkemesi başkanına başvurulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bölge adliye mahkemesinde istinaf yoluna başvurulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bu karara karşı yasa yolu kabul edilmemiştir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Soruşturma evresinde Cumhuriyet savcısı, adlî kontrol veya tutuklamanın artık gereksiz olduğu kanısına varırsa şüpheliyi CMK m.103/2 uyarınca RE'SEN serbest bırakır. Bu karara karşı bir kanun yolu ÖNGÖRÜLMEMİŞTİR ve bunun teknik nedeni m.267'dedir: itiraz yolu yalnızca HÂKİM KARARLARINA ve kanunun gösterdiği hâllerde MAHKEME kararlarına karşı açıktır. Savcının serbest bırakma kararı ne hâkim ne de mahkeme kararıdır; dolayısıyla itiraza da istinafa da konu olamaz. Sulh ceza hâkimine başvuru yolu ise m.91/5'te yalnız gözaltına alma ve gözaltı süresinin uzatılmasına ilişkin savcı emirleri için tanınmıştır, serbest bırakma için değil. Kuralın arkasındaki mantık şudur: kanun yolları kişi hürriyetini SINIRLAYAN kararlara karşı güvence olarak kurulmuştur; hürriyeti genişleten bir kararın ayrıca denetlenmesine ihtiyaç görülmemiştir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre ağır ceza mahkemesinin madde bakımından yetkisine (görevine) girmeyen işlerde adli kontrol süresi, uzatma süresi hariç, en çok ne kadar olabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 yıl",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "3 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "5 yıl",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Adlî kontrol altında geçecek azamî süre, 8/7/2021 tarihli 7331 sayılı Kanunla eklenen CMK m.110/A ile ilk kez sınırlandırılmıştır; öncesinde bir tavan yoktu. Madde tutukluluk süreleriyle paralel ama ONDAN FARKLI bir kademe kurar: ağır ceza mahkemesinin görevine GİRMEYEN işlerde adlî kontrol süresi en çok İKİ YILDIR ve zorunlu hâllerde gerekçe gösterilerek BİR YIL daha uzatılabilir. Ağır ceza mahkemesinin görevine GİREN işlerde ise süre en çok ÜÇ YILDIR; uzatma süresi toplam üç yılı, Devletin güvenliğine karşı suçlar gibi belirli bölümlerdeki suçlar ile Terörle Mücadele Kanunu kapsamındaki suçlarda dört yılı geçemez. Üçüncü fıkra ayrıca çocuklar bakımından bu sürelerin YARI ORANINDA uygulanacağını söyler. Sayılar tutuklulukla karıştırılmamalıdır: tutuklulukta ağır ceza dışı işlerde tavan bir yıl, ağır ceza işlerinde iki yıldır (m.102).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre şirket yönetimine kayyım atanmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun bir şirketin faaliyeti çerçevesinde işlenmekte olduğu hususunda kuvvetli şüphe nedenlerinin varlığı gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kayyımların görevleriyle ilgili iş ve işlemlerinden dolayı tazminat davaları, Devlet aleyhine açılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yargıç veya mahkeme tarafından karar verilmelidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Katalog suçlardan biri işlenmelidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Soruşturma evresi henüz sona ermemiş olmalıdır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Şirket yönetimine kayyım tayini CMK m.133'te düzenlenir ve maddenin ilk fıkrası tedbirin uygulanacağı evreyi açıkça gösterir: SORUŞTURMA VE KOVUŞTURMA SÜRECİNDE, hâkim veya mahkeme şirket işlerinin yürütülmesiyle ilgili olarak kayyım atayabilir. Tedbir kovuşturma evresinde de mümkün olduğundan, soruşturma evresinin henüz sona ermemiş olmasını koşul sayan ifade yanlıştır. Diğer seçenekler maddeye uygundur: suçun bir şirketin faaliyeti çerçevesinde işlenmekte olduğu hususunda KUVVETLİ ŞÜPHE sebeplerinin varlığı ve maddî gerçeğin ortaya çıkarılabilmesi için tedbirin gerekli olması aranır; karar yalnız hâkim veya mahkeme tarafından verilir; tedbir m.133/4'teki katalog suçlarla sınırlıdır. Kayyımların görevleriyle ilgili iş ve işlemlerinden doğan tazminat davalarının m.142 ilâ 144 uyarınca DEVLET ALEYHİNE açılacağı ise 1/7/2016 tarihli 6723 sayılı Kanunla eklenen m.133/5'te yazılıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(A) ve (B) nitelikli dolandırıcılık şüphesiyle (A)'nın arkadaşı (C)'nin evinde yakalanırlar. (C)'nin olayla ilgisi olmadığını anlayan Cumhuriyet savcısı, (A) ve (B)'nin gözaltına alınmasına karar verir. Buna göre yakalama ve gözaltı koruma tedbirleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gözaltı, yakalamadan ayrı bir koruma tedbiri olup uygulanabilmesi için bu tedbirin soruşturma yönünden zorunlu olması ve işlediği şüphesini gösteren somut kanıtların bulunması gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Olayda gözaltı süresi dört güne kadar uzatılabilir ancak ilk 24 saatten sonra gözaltı süresinin her defasında bir günü geçmemek üzere 3 kez uzatılmasına Cumhuriyet savcısının yazılı olarak emir vermesi gerekir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(A) ve (B), serbest bırakıldıkları takdirde bu eylem bakımından yeni ve yeterli kanıt elde edilmedikçe ve savcının kararı olmadıkça bir daha aynı nedenle haklarında yeniden yakalama tedbiri uygulanamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Olayda gözaltı süresi, yol süresi dâhil 36 saati geçemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Olayda haklarında gözaltı koruma tedbiri uygulanan (A) ve (B) şüpheli konumundadır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Olayda yakalananların sayısı İKİDİR ve bu, gözaltı süresini belirleyen kritik veridir. CMK m.2/1-k TOPLU SUÇU tanımlar: aralarında iştirak iradesi bulunsun bulunmasın ÜÇ VEYA DAHA FAZLA kişi tarafından işlenen suç. İki kişi toplu suç oluşturmadığından m.91/3'teki uzatma rejimi (her defasında bir günü geçmemek üzere toplam üç gün) UYGULANAMAZ. Olayda geçerli olan tek süre m.91/1'dir: gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre HARİÇ, yakalama anından itibaren yirmi dört saati geçemez; gönderme için zorunlu süre de on iki saatten fazla olamaz. Böylece yol süresi dâhil üst sınır OTUZ ALTI SAATTİR. Diğer seçenekler doğrudur: gözaltı yakalamadan ayrı bir tedbirdir ve soruşturma yönünden zorunlu olmasına ve somut delillerin varlığına bağlıdır (m.91/2); serbest bırakılan kişi hakkında yeni ve yeterli delil elde edilmedikçe ve savcının kararı olmadıkça aynı nedenle yeniden yakalama yapılamaz (m.91/6).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yakalama hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kişiye, suçu işlerken rastlanması durumunda herkes yakalama yapabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kolluk görevlilerinin yakalama yetkisini kullanabilmeleri için diğer koşulların yanında savcı veya amirlerine başvurma olanaklarının da bulunmaması gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kolluk önleyici tedbirleri aldıktan sonra, yakalanana yasal haklarını derhal bildirmek zorundadır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kolluk, kişilerin yakalama yetkisine sahip olduğu durumlarda da yakalama yetkisine sahiptir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçüstü durumunda çocuklara karşı işlenen şikâyete bağlı suçlarda, şüphelinin yakalanması için şikâyetin gerçekleşmesi gerekir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Yakalama CMK m.90'da üç ayrı temele oturur ve üçüncü fıkra ŞİKÂYETE BAĞLI SUÇLAR için özel bir istisna getirir: soruşturulması ve kovuşturulması şikâyete bağlı olmakla birlikte, ÇOCUKLARA ya da beden veya akıl hastalığı, malûllük veya güçsüzlükleri nedeniyle kendilerini idareden aciz bulunanlara karşı işlenen SUÇÜSTÜ hâllerinde kişinin yakalanması ŞİKÂYETE BAĞLI DEĞİLDİR. Bu nedenle böyle bir olayda yakalama için şikâyetin gerçekleşmesini arayan ifade yanlıştır; kural, korunmaya muhtaç mağdurun şikâyet edememesi ihtimaline karşı getirilmiştir. Diğerleri maddeye uygundur: kişiye suçu işlerken rastlanması hâlinde HERKES geçici olarak yakalama yapabilir (m.90/1); kolluğun kendi yakalama yetkisi ise tutuklama kararı veya yakalama emri düzenlenmesini gerektiren ve gecikmesinde sakınca bulunan hâllerde, savcıya veya âmirlerine derhâl başvurma OLANAĞI BULUNMADIĞI takdirde doğar (m.90/2); kolluk, kaçmayı ve zarar vermeyi önleyecek tedbirleri aldıktan sonra yakalanana kanunî haklarını DERHÂL bildirir (m.90/4).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi konutta, işyerinde veya diğer kapalı yerlerde gece vaktinde arama yapılamayacağı kuralının istisnaları arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçüstü durumu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gecikmesinde sakınca bulunan durumlar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yakalanmış ya da gözaltına alınmış olan kişinin firar etmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Firar eden tutuklunun veya hükümlünün yakalanması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun ağır cezalık olması",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Gece araması CMK m.118'de iki kısa fıkrayla düzenlenir. Birinci fıkra kesin bir yasak koyar: konutta, işyerinde veya diğer kapalı yerlerde gece vaktinde arama YAPILAMAZ. İkinci fıkra ise istisnaları SINIRLI olarak sayar ve bunlar yalnız dörttür: SUÇÜSTÜ hâli; GECİKMESİNDE SAKINCA BULUNAN hâller; yakalanmış veya gözaltına alınmış olup da FİRAR EDEN kişinin tekrar yakalanması; TUTUKLU VEYA HÜKÜMLÜNÜN tekrar yakalanması. Suçun ağır cezalık olması bu listede yer almaz ve tek başına gece araması yapılmasını meşrulaştırmaz; kanun ölçütü suçun ağırlığına değil, aramanın ertelenmesinin doğuracağı somut sakıncaya bağlamıştır. Yasağın amacı konut dokunulmazlığını gece saatlerinde daha yoğun korumaktır; bu nedenle istisnalar geniş yorumlanamaz. Yasak yalnızca kapalı yerler içindir; açık alanlarda gece araması bu hükümle sınırlı değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Anayasa'ya göre aşağıdaki kişilerden hangisi hakkında görevi süresince tutuklama kararı verilemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargıtay ceza dairesi başkanı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Valiler",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Milletvekilleri",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "En üst dereceli kolluk amirleri",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Belediye başkanları",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Görevi süresince tutuklanamayacak kişi, Anayasa m.83'teki YASAMA DOKUNULMAZLIĞINDAN yararlanan MİLLETVEKİLİDİR. Maddeye göre seçimden önce veya sonra bir suç işlediği ileri sürülen milletvekili, MECLİSİN KARARI OLMADIKÇA tutulamaz, sorguya çekilemez, tutuklanamaz ve yargılanamaz. Koruma mutlak değildir: ağır cezayı gerektiren SUÇÜSTÜ hâli ile seçimden önce soruşturmasına başlanılmış olmak kaydıyla Anayasa m.14 kapsamındaki durumlar hükmün dışındadır; bu hâlde yetkili makam durumu hemen ve doğrudan doğruya Türkiye Büyük Millet Meclisine bildirmek zorundadır. Buna karşılık valiler, belediye başkanları, en üst dereceli kolluk amirleri ve Yargıtay daire başkanları bakımından böyle bir tutuklama yasağı yoktur; bu kişiler için kanunlarda öngörülen tek fark, soruşturma İZNİ veya özel soruşturma usulüdür — izin alındıktan sonra genel hükümler uygulanır. Dokunulmazlık ile soruşturma izni birbirine karıştırılmamalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Durdurma tedbiriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Durdurma süresi, durdurma nedenine esas oluşturan işlemin gerçekleştirilmesi için zorunlu olan süreden fazla olamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Durdurma nedeninin ortadan kalkması durumunda kişilerin ve araçların ayrılmalarına izin verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Polis, durdurduğu kişi üzerinde silah bulunduğu hususunda yeterli şüpheye sahip olsa bile kendisine veya başkalarına zarar verilmesini önlemek amacıyla kişinin üzerindeki elbisenin çıkarılmasını isteyemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Polis, görevini yerine getirirken, kendisinin polis olduğunu belirleyen belgeyi gösterdikten sonra, kişilere kimliğini sorabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kimliği belirlenemeyen kişi tutularak durumdan derhal Cumhuriyet savcısı haberdar edilir. Bu kişi, kimliği açık bir biçimde anlaşılıncaya kadar gözaltına alınır ve Cumhuriyet savcısının kararıyla gerekirse tutuklanır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Durdurma PVSK m.4/A'da düzenlenir; ancak durdurmanın devamında uygulanan GÖZALTI ve TUTUKLAMA bakımından madde CMK'ya yollama yapar. Kimliği belirlenemeyen kişi tutularak durum derhâl Cumhuriyet savcısına bildirilir ve kişi kimliği açıkça anlaşılıncaya kadar gözaltına alınır, gerekirse tutuklanır; fakat gözaltına ve tutuklamaya KARAR VERME YETKİSİ VE USULÜ bakımından 5271 sayılı Ceza Muhakemesi Kanunu hükümleri uygulanır. CMK m.101/1'e göre soruşturma evresinde tutuklamaya Cumhuriyet savcısının istemi üzerine SULH CEZA HÂKİMİ karar verir. Bu nedenle tutuklamayı savcının kararına bağlayan ifade yanlıştır; savcı tutuklama İSTEYEBİLİR, karar veremez. Diğer seçenekler maddeye uygundur: durdurma süresi, sebebe esas oluşturan işlem için zorunlu süreden fazla olamaz; sebep ortadan kalkınca kişilerin ve araçların ayrılmasına izin verilir; silah bulunduğuna dair yeterli şüphe olsa bile ELBİSENİN ÇIKARILMASI İSTENEMEZ, ancak el ile dıştan kontrol yapılabilir; polis kimliğini gösterdikten sonra kişiye kimliğini sorabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Gizli soruşturmacı görevlendirilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Soruşturmacının kimliği değiştirilebilir; bu kimlikle hukuksal işlemler yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Soruşturmacı, görevini yerine getirirken suç işleyemez ve görevlendirildiği örgütün işlemekte olduğu suçlardan sorumlu tutulamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Soruşturmacı görevlendirilmesi suretiyle elde edilen kişisel bilgiler, görevlendirildiği ceza soruşturması ve kovuşturması dışında kullanılamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Suçla bağlantılı olmayan kişisel bilgilerin derhâl yok edilmesi gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Gizli soruşturmacı 2 ay süreyle görevlendirilebilir ancak zorunlu durumlarda süre 1 ay daha uzatılabilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Gizli soruşturmacı görevlendirilmesi CMK m.139'da düzenlenir ve maddede tedbirin SÜRESİNE İLİŞKİN HİÇBİR SINIR YOKTUR. İki ay ve bir aylık uzatma rejimi m.139'a değil, iletişimin denetlenmesini düzenleyen m.135'e aittir; teknik araçlarla izlemede ise süre üç hafta artı bir haftadır (m.140). Bu üç tedbirin süreleri sınavlarda sürekli birbirine karıştırılır. Maddenin koşulları şunlardır: soruşturma konusu suçun işlendiği hususunda SOMUT DELİLLERE DAYANAN KUVVETLİ ŞÜPHE sebeplerinin bulunması, BAŞKA SURETLE DELİL ELDE EDİLEMEMESİ ve görevlendirilecek kişinin KAMU GÖREVLİSİ olması; karara 24/11/2016 tarihli 6763 sayılı Kanundan bu yana HÂKİM karar verir (önceki metinde aranan ağır ceza mahkemesince oy birliği ölçütü kaldırılmıştır). Diğer seçenekler doğrudur: soruşturmacının kimliği değiştirilebilir ve bu kimlikle hukukî işlemler yapılabilir; soruşturmacı görevini yerine getirirken suç işleyemez ve görevlendirildiği örgütün işlemekte olduğu suçlardan sorumlu tutulamaz; elde edilen kişisel bilgiler görevlendirildiği soruşturma ve kovuşturma dışında kullanılamaz, suçla bağlantılı olmayanlar derhâl yok edilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Cumhuriyet savcısı II. Çocuk mahkemesi III. HSK başmüfettişi — Yukarıdaki kişi ya da makamlardan hangileri tutuklama kararı veremez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklama kararı verme yetkisi CMK m.101/1'de yalnız YARGILAMA MAKAMLARINA tanınmıştır: soruşturma evresinde şüphelinin tutuklanmasına Cumhuriyet savcısının istemi üzerine SULH CEZA HÂKİMİ, kovuşturma evresinde sanığın tutuklanmasına savcının istemi üzerine veya RE'SEN MAHKEME karar verir. Buna göre CUMHURİYET SAVCISI tutuklama isteyebilir ama karar veremez; iddia makamı ile karar makamının ayrılması ceza muhakemesinin temel ilkesidir. HÂKİMLER VE SAVCILAR KURULU BAŞMÜFETTİŞİ ise bir yargılama makamı değil, idarî denetim görevlisidir ve hiçbir koruma tedbirine karar veremez. Buna karşılık ÇOCUK MAHKEMESİ bir mahkemedir; çocuklar bakımından yargılama yetkisini kullanır ve kendi görev alanındaki işlerde tutuklama kararı verebilir. Bu nedenle tutuklama kararı veremeyecek olanlar savcı ile başmüfettiştir. Kararda ayrıca kuvvetli suç şüphesi, tutuklama nedenlerinin varlığı ve tedbirin ölçülü olduğu gerekçeleriyle gösterilir (m.101/2).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi postada elkoymanın koşulları arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Elkonulacak eşya bir gönderi olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gönderinin suçun kanıtı olduğundan şüphelenilmelidir ancak kuvvetli suç şüphesi aranmaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Katalog suçlardan biri söz konusu olmalıdır.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Gönderinin adliyenin eli altında bulundurulması zorunlu olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yetkili merciden karar alınmalıdır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Postada elkoyma CMK m.129'da düzenlenir ve KATALOG SUÇ KOŞULU TAŞIMAZ; bu, tedbiri m.128, m.133, m.135, m.139 ve m.140'tan ayıran temel özelliğidir. Maddenin aradığı koşullar şunlardır: konu bir GÖNDERİ olmalı ve posta hizmeti veren resmî veya özel bir kuruluşta bulunmalı; gönderinin suçun DELİLLERİNİ OLUŞTURDUĞUNDAN ŞÜPHE EDİLMELİ; gerçeğin ortaya çıkarılması için adliyenin eli altında olmasının zorunlu sayılması gerekir; karar HÂKİM, gecikmesinde sakınca bulunan hâllerde CUMHURİYET SAVCISI tarafından verilmelidir. Şüphe derecesi bakımından madde yalnızca ŞÜPHE arar, kuvvetli şüphe aramaz; bu nedenle ilgili seçenek doğrudur. Maddedeki katalog ise elkoymanın koşulu değil, zarf veya paketlerin AÇILMASINA ilişkindir: m.129/3 yalnız sayılan suçlarda savcının talimatıyla kolluk memurlarının zarfı açabileceğini söyler; kural olarak kolluk zarfı açamaz, gönderiyi posta görevlilerinin huzurunda mühür altına alıp karara veya emri veren mercie teslim eder.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Adli kontrol kararı verilebilmesi için soruşturma veya kovuşturma konusu suçun cezasının üst sınırı kural olarak en fazla ne kadar olabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "3 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Herhangi bir üst sınır yoktur.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Adlî kontrol için bir CEZA ÜST SINIRI ARANMAZ; bu, 2/7/2012 tarihli 6352 sayılı Kanunun getirdiği önemli bir değişikliktir ve eski bilgi hâlâ birçok kaynakta durduğu için sık sorulur. Maddenin eski metni tedbiri üst sınırı üç yıl veya daha az hapis cezasını gerektiren suçlarla sınırlıyordu. Yürürlükteki CMK m.109/1 ise ölçütü tümüyle değiştirmiştir: bir suç sebebiyle yürütülen soruşturmada, m.100'de belirtilen TUTUKLAMA SEBEPLERİNİN VARLIĞI hâlinde şüphelinin tutuklanması yerine adlî kontrol altına alınmasına karar verilebilir. Yani ölçüt cezanın miktarı değil, tutuklama sebeplerinin bulunmasıdır; tedbir tutuklamanın hafif alternatifidir. İkinci fıkra kapsamı daha da genişletir: kanunda TUTUKLAMA YASAĞI öngörülen hâllerde de adlî kontrole ilişkin hükümler uygulanabilir. Böylece tutuklamanın mümkün olmadığı hâllerde bile bu tedbire başvurulabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki tedbirlerden hangisinin uygulanabilmesi için \"başka bir yolla kanıt elde edilmesinin mümkün olmaması\" koşulu aranmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bilgisayarlarda, bilgisayar programlarında ve kütüklerinde arama",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Telekomünikasyon yoluyla iletişimin denetlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gizli soruşturmacı görevlendirilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Taşınmazlara, hak ve alacaklara elkoyma",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Teknik araçlarla izleme",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "BAŞKA SURETLE DELİL ELDE EDİLEMEMESİ koşulu, kişi hak ve özgürlüklerine ağır müdahale eden gizli ve teknik tedbirlerin ORTAK sınırıdır ve bunları son çare hâline getirir. Koşul şu maddelerde açıkça yazılıdır: bilgisayarlarda, bilgisayar programlarında ve kütüklerinde arama (m.134/1), telekomünikasyon yoluyla iletişimin denetlenmesi (m.135/1), gizli soruşturmacı görevlendirilmesi (m.139/1) ve teknik araçlarla izleme (m.140/1). Buna karşılık TAŞINMAZLARA, HAK VE ALACAKLARA ELKOYMAYI düzenleyen m.128'de böyle bir koşul yoktur. Bunun nedeni tedbirin niteliğidir: m.128 delil elde etmeye değil, suçtan elde edilen malvarlığı değerlerinin kaçırılmasını önlemeye ve müsadereyi güvence altına almaya yöneliktir. m.128'in kendine özgü koşulları ise şunlardır: suçun işlendiğine ve malvarlığının bu suçtan elde edildiğine dair SOMUT DELİLLERE DAYANAN KUVVETLİ ŞÜPHE, maddedeki katalog suçlardan biri ve hâkim kararı.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi adli kontrol kapsamındaki yükümlülük türleri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yurt dışına çıkmamak",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Konutunu terk etmemek",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Taşınır ve taşınmaz mallar ile alacakları teslim etmek",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yargıç tarafından belirlenen yerlere, belirtilen süreler içinde düzenli olarak başvurmak",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Belirli bir yerleşim bölgesini terk etmemek",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Adlî kontrol yükümlülükleri CMK m.109/3'te SINIRLI olarak sayılmıştır; listede yer almayan bir yükümlülük hâkim tarafından yaratılamaz. Sayılanlar şunlardır: yurt dışına çıkamamak; hâkimin belirlediği yerlere belirtilen sürelerde düzenli olarak başvurmak; hâkimin belirttiği merci veya kişilerin çağrılarına ve meslekî uğraş ya da eğitime ilişkin kontrol tedbirlerine uymak; taşıt kullanamamak ve gerektiğinde sürücü belgesini teslim etmek; uyuşturucu, uyarıcı veya uçucu madde ile alkol bağımlılığından arınmak için tedavi veya muayene tedbirlerine tâbi olmak; hâkimce belirlenecek bir GÜVENCE MİKTARINI yatırmak; silah bulunduramamak veya taşıyamamak ve silahları adlî emanete teslim etmek; suç mağdurunun haklarını güvence altına almak üzere belirlenen parayı aynî veya kişisel güvenceye bağlamak; aile yükümlülükleri ve nafaka için güvence vermek; konutunu terk etmemek; belirli bir yerleşim bölgesini terk etmemek; belirlenen yer veya bölgelere gitmemek. TAŞINIR VE TAŞINMAZ MALLAR İLE ALACAKLARI TESLİM ETMEK bu listede yoktur; malvarlığına yönelen tedbir adlî kontrol değil, m.128'deki ELKOYMADIR.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Gizli soruşturmacı görevlendirilmesiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bu tedbirin uygulanabilmesi için soruşturma konusu suçun işlendiği hususunda somut kanıtlara dayanan kuvvetli şüphe nedenleri bulunmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Başka surette kanıt elde etme olanağı varsa bu tedbire başvurulamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kolluk amiri ancak gecikmesinde sakınca olan durumlarda gizli soruşturmacı görevlendirebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yargıç, uyuşturucu veya uyarıcı madde imal ve ticareti suçu bakımından, görevlendirilen gizli soruşturmacının kamuya açık yerlerde ve işyerlerinde kanıt toplamak amacıyla ses veya görüntü kaydı yapmasına izin verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bu tedbirin uygulanabilmesi için mutlaka katalog suçlardan biri işlenmelidir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Gizli soruşturmacı görevlendirilmesinde KARAR MERCİİ 24/11/2016 tarihli 6763 sayılı Kanunla sadeleştirilmiştir: CMK m.139/1'e göre görevlendirmeye YALNIZCA HÂKİM karar verir. Önceki metinde aranan ağır ceza mahkemesince oy birliği ölçütü kaldırılmış, yerine tek hâkim kararı getirilmiştir. Kolluk amirine ne kural olarak ne de gecikmesinde sakınca bulunan hâllerde böyle bir yetki tanınmıştır; bu nedenle ilgili ifade yanlıştır. Bazı koruma tedbirlerinde savcıya tanınan gecikme yetkisi (m.135, m.140) burada YOKTUR; tedbirin örgüte sızmayı içeren ağırlığı nedeniyle karar tümüyle hâkime bırakılmıştır. Diğer seçenekler maddeye uygundur: somut delillere dayanan kuvvetli şüphe sebepleri aranır, başka surette delil elde etme imkânı varsa bu tedbire başvurulamaz, tedbir m.139/7'deki katalog suçlarla sınırlıdır ve 28/3/2023 tarihli 7445 sayılı Kanunla eklenen hükme göre hâkim, uyuşturucu veya uyarıcı madde imal ve ticareti suçu bakımından soruşturmacının kamuya açık yerlerde ve işyerlerinde ses veya görüntü kaydı yapmasına izin verebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Mahkeme ya da gecikmesinde sakınca olan durumlarda Cumhuriyet savcısı karar vermelidir.\nII. Arama, kolluk amirinin denetiminde yapılmalıdır.\nIII. Baro başkanı veya onu temsil eden bir avukat aramada hazır bulundurulmalıdır.\nAşağıdakilerden hangisi avukatların bürolarında arama yapılabilmesi için aranan koşullar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Avukat bürolarında arama CMK m.130'da üç sıkı koşula bağlanmıştır ve maddenin lafzı dikkatle okunmalıdır: arama ANCAK MAHKEME KARARI ile, kararda BELİRTİLEN OLAYLA İLGİLİ olarak ve CUMHURİYET SAVCISININ DENETİMİNDE yapılabilir; ayrıca BARO BAŞKANI veya onu temsil eden bir avukat aramada hazır bulundurulur. Buna göre I yanlıştır: karar yetkisi yalnız mahkemeye aittir, gecikmesinde sakınca bulunan hâllerde savcıya karar verme yetkisi tanınmamıştır — savcının rolü karar vermek değil DENETLEMEKTİR. II de yanlıştır: denetim kolluk amirine değil Cumhuriyet savcısına aittir. III ise maddenin son cümlesiyle birebir örtüştüğü için koşullar arasındadır. Bu ağırlaştırılmış usul, avukat ile müvekkil arasındaki meslekî sırrı ve savunma hakkını korumak içindir; nitekim m.130/2, elkonulacak şeye avukat-müvekkil ilişkisine ait olduğu gerekçesiyle karşı konulduğunda o şeyin ayrı bir zarfa konularak mühürlenmesini öngörür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Taşınmazlara, hak ve alacaklara elkoyma\nII. İletişimin denetlenmesi\nIII. Gizli soruşturmacı görevlendirilmesi\nYukarıdakilerden hangileri yalnızca yargıç kararı ile uygulanabilecek koruma tedbirleri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Koruma tedbirlerinde karar mercii tek tip değildir; bazılarında gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısına da yetki tanınmıştır ve ayrım tam buradadır. TAŞINMAZLARA, HAK VE ALACAKLARA ELKOYMA bakımından CMK m.128/9 açıktır: bu tedbire ANCAK HÂKİM karar verebilir; 2016 öncesindeki ağır ceza mahkemesince oy birliği ölçütü 6763 sayılı Kanunla kaldırılmıştır. GİZLİ SORUŞTURMACI görevlendirilmesinde de m.139/1 kararı yalnız hâkime bırakır. Buna karşılık İLETİŞİMİN DENETLENMESİNDE m.135/1 farklı bir rejim kurar: kural olarak hâkim karar verir, ancak GECİKMESİNDE SAKINCA BULUNAN hâllerde Cumhuriyet savcısı da karar verebilir; savcı kararını yirmi dört saat içinde hâkimin onayına sunar ve hâkim en geç yirmi dört saat içinde karar verir. Onaylanmaz ya da süre dolarsa tedbir savcı tarafından derhâl kaldırılır. Bu nedenle yalnızca hâkim kararıyla uygulanabilecek tedbirler arasında yer almayan, iletişimin denetlenmesidir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Otomobil\nII. İşyeri\nIII. Kamuya açık olmayan kapalı alanlar\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdakilerden hangileri kolluk amirinin aranması için emir verebileceği yerler arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Arama kararı ve emri CMK m.119/1'de YERE GÖRE ikili bir rejime bağlanmıştır. Genel kural şudur: hâkim kararı üzerine veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının, savcıya ULAŞILAMADIĞI hâllerde ise KOLLUK AMİRİNİN yazılı emriyle kolluk görevlileri arama yapabilir. Ancak aynı fıkranın ikinci cümlesi üç yeri bu genel kuralın dışına çıkarır: KONUTTA, İŞYERİNDE ve KAMUYA AÇIK OLMAYAN KAPALI ALANLARDA arama yalnızca hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle yapılabilir. Bu üç yer bakımından kolluk amirinin emri YETERLİ DEĞİLDİR. Otomobil ise bu istisnaya girmez; araç konut veya işyeri niteliğinde olmadığından kolluk amirinin yazılı emriyle aranabilir. Ayrım, konut dokunulmazlığının ve özel yaşamın kapalı alanlarda daha yoğun korunmasına dayanır. Kolluk amirinin emriyle yapılan aramaların sonuçları Cumhuriyet Başsavcılığına derhâl bildirilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi yalnızca Cumhuriyet savcısının karar verebileceği tedbirlerden biridir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Arama",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Gizli soruşturmacı görevlendirilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Fizik kimliğin tespiti",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Teknik araçlarla izleme",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İnternet yoluyla yapılan yayınlarda, içeriğin yayından çıkarılması ve/veya erişimin engellenmesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Fizik kimliğin tespiti CMK m.81'de düzenlenir ve karar merciini TEK BAŞINA Cumhuriyet savcısına bırakan ender tedbirlerdendir: üst sınırı iki yıl veya daha fazla hapis cezasını gerektiren bir suçtan dolayı şüpheli veya sanığın kimliğinin teşhisi için gerekli olması hâlinde, CUMHURİYET SAVCISININ EMRİYLE fotoğrafı, beden ölçüleri, parmak ve avuç içi izi, bedenindeki teşhisi kolaylaştıracak diğer özellikleri ile sesi ve görüntüleri kayda alınarak dosyaya konulur. Karşılaştırma soruyu çözer: aramada hâkim, savcı ve kolluk amiri kademeli olarak yetkilidir (m.119); gizli soruşturmacı görevlendirilmesine yalnız hâkim karar verir (m.139); teknik araçlarla izlemede hâkim, gecikmesinde sakınca bulunan hâllerde savcı karar verir (m.140); internet yayınlarında içeriğin çıkarılması ve erişimin engellenmesi ise 5651 sayılı Kanun uyarınca hâkim kararına bağlıdır. Kayıtlar, kovuşturmaya yer olmadığı kararına itiraz süresinin dolması ya da beraat kararının kesinleşmesi hâlinde savcılık denetiminde yok edilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Yeterli suç şüphesinin varlığı\nII. Bir tutuklama nedeninin bulunması\nIII. Suçun toplumda infial uyandırması\nYukarıdakilerden hangileri tutuklama tedbirinin uygulanabilmesi için gereken koşullar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklamanın koşulları CMK m.100'de sayılmıştır ve ŞÜPHE DERECESİ bu soruda ölçülen asıl noktadır: maddenin birinci fıkrası KUVVETLİ SUÇ ŞÜPHESİNİN varlığını gösteren SOMUT DELİLLERİN bulunmasını arar. YETERLİ şüphe ise tutuklamanın değil, kamu davasının açılmasının ölçütüdür (m.170/2); bu nedenle I bir tutuklama koşulu değildir. Ceza muhakemesinde şüphe dereceleri tedbire göre farklılaşır: gözaltı için suç işlendiği şüphesini gösteren somut deliller (m.91/2), arama için makul şüphe (m.116), tutuklama ve iletişimin denetlenmesi için somut delillere dayanan kuvvetli şüphe (m.100, m.135) aranır. II gerçek bir koşuldur: m.100/2'ye göre kaçma ya da saklanma şüphesi veya delilleri karartma tehlikesi gibi bir TUTUKLAMA NEDENİ bulunmalıdır. III bakımından ise kanunda hiçbir dayanak yoktur: suçun toplumda infial uyandırması bir tutuklama nedeni değildir, kanun ölçütleri somut olgulara bağlamıştır. Ayrıca tedbirin ÖLÇÜLÜ olması ve adlî kontrolün yetersiz kalacağının gerekçelendirilmesi gerekir (m.100/1, m.101/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre iletişimin denetlenmesi tedbiri kararı uzatma süresi hariç, en çok hangi süre için verilebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 ay",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "3 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "1 yıl",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İletişimin denetlenmesi kararının süresi CMK m.135'te düzenlenir ve 21/2/2014 tarihli 6526 sayılı Kanunla KISALTILMIŞTIR: eski metindeki üç aylık süre İKİ AYA, bir defalık uzatma ise BİR AYA indirilmiştir. Buna göre karar en çok İKİ AY için verilebilir; bu süre bir ay daha uzatılabilir. Örgütün faaliyeti çerçevesinde işlenen suçlarda ise hâkim, bu sürelere ek olarak her defasında bir aydan fazla olmamak ve TOPLAM ÜÇ AYI GEÇMEMEK üzere uzatılmasına karar verebilir. Süreler benzer tedbirlerle karıştırılmamalıdır: teknik araçlarla izlemede karar en çok üç haftalık süre için verilir ve bir hafta uzatılabilir (m.140); şüpheli veya sanığın yakalanabilmesi için mobil telefonun yerinin tespiti ise en çok iki ay için yapılabilir ve bir ay daha uzatılabilir (m.135). Sürelerin kısa tutulması, tedbirin haberleşme hürriyetine yaptığı sürekli müdahale nedeniyledir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre Türk Ceza Yasası'nın Anayasal Düzene ve Bu Düzenin İşleyişine Karşı Suçlar bölümlerinde tanımlanan suçlarda, tutuklulukta geçecek süre (uzatma süresi dâhil) en çok ne kadar olabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "5 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "7 yıl",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "10 yıl",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklulukta geçecek azamî süre CMK m.102'de kademeli olarak kurulmuştur ve soruda istenen, TAVAN SÜRENİN UZATMA DÂHİL TOPLAMIDIR. Ağır ceza mahkemesinin görevine giren işlerde tutukluluk süresi kural olarak en çok İKİ YILDIR. Bu süre zorunlu hâllerde gerekçesi gösterilerek uzatılabilir; uzatma süresi toplam ÜÇ YILI, ancak Türk Ceza Kanununun İkinci Kitap Dördüncü Kısmının Dördüncü, Beşinci, Altıncı ve Yedinci Bölümlerinde tanımlanan suçlar ile Terörle Mücadele Kanunu kapsamındaki suçlarda BEŞ YILI geçemez. Anayasal Düzene ve Bu Düzenin İşleyişine Karşı Suçlar (TCK m.309-316) bu bölümlerden BEŞİNCİSİDİR; dolayısıyla uzatma tavanı beş yıldır. İki yıllık asıl süre ile beş yıllık uzatma toplandığında azamî süre YEDİ YIL olur. Ağır ceza mahkemesinin görevine girmeyen işlerde ise tavan bir yıl artı altı aydır. Bu süreler kovuşturma evresine ilişkindir; soruşturma evresi için m.102 daha kısa süreler öngörür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Adli kontrol hükümleri kovuşturma evresinde uygulanabilir.\nII. Adli kontrol altında geçen süre, hiçbir şekilde kişisel özgürlüğü sınırlama nedeni sayılarak cezadan mahsup edilemez.\nIII. Konutu terk etmeme yükümlülüğü, kişisel özgürlüğü sınırlama nedeni sayılarak cezadan mahsup edilemez.\nAdli kontrol tedbiri hakkında yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Adlî kontrolde MAHSUP kuralı CMK m.109'da bir ana kural ve iki istisna biçiminde kurulmuştur. Ana kural: adlî kontrol altında geçen süre, şahsî hürriyeti sınırlama sebebi sayılarak cezadan MAHSUP EDİLEMEZ. Ancak aynı fıkra bu hükmün üçüncü fıkranın (e) ve (j) bentlerinde uygulanmayacağını söyler; yani uyuşturucu, uyarıcı veya uçucu madde ile alkol bağımlılığından arınmak amacıyla hastaneye yatmak dâhil tedavi veya muayene tedbirine tâbi olma ile KONUTUNU TERK ETMEME yükümlülükleri bakımından mahsup MÜMKÜNDÜR. Dahası 8/7/2021 tarihli 7331 sayılı Kanunla eklenen cümle, konutunu terk etmemek yükümlülüğü altında geçen her iki günün cezanın mahsubunda bir gün sayılacağını açıkça düzenler. Bu nedenle mahsubu mutlak biçimde reddeden II ile konutu terk etmeme yükümlülüğünü mahsup dışında bırakan III yanlıştır. I ise doğrudur: m.110 uyarınca adlî kontrol hükümleri kovuşturma evresinin her aşamasında da uygulanır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre gözlem altına almayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gözlem altına almaya yargıç veya mahkeme karar verir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Şüphelinin müdafisi yoksa baro tarafından bir müdafi görevlendirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gözlem süresi, ek sürelerle birlikte 3 ayı geçemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mahkemenin verdiği gözlem altına alma kararına itiraz edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Gözlem altına alma kararına itiraz, kararın yerine getirilmesini durdurmaz ancak itiraz merci aksine karar verebilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Gözlem altına alma CMK m.74'te düzenlenir ve maddenin dördüncü fıkrası itirazın etkisi bakımından GENEL KURALDAN AYRILIR: gözlem altına alınma kararına karşı itiraz yoluna gidilebilir ve İTİRAZ, KARARIN YERİNE GETİRİLMESİNİ DURDURUR. Ceza muhakemesinde itiraz kural olarak kararın icrasını durdurmaz (m.269); burada kanun koyucu, kişinin akıl sağlığının incelenmesi amacıyla resmî bir sağlık kurumuna yatırılmasının geri dönüşü güç bir müdahale olması nedeniyle istisna öngörmüştür. Bu yüzden itirazın durdurucu etkisi olmadığını söyleyen ifade yanlıştır. Diğerleri maddeye uygundur: karara soruşturma evresinde sulh ceza hâkimi, kovuşturma evresinde mahkeme, uzman hekimin önerisi üzerine ve Cumhuriyet savcısı ile müdafi dinlendikten sonra karar verir; müdafi yoksa hâkim veya mahkemenin istemi üzerine baro tarafından bir müdafi görevlendirilir; gözlem süresi üç haftayı, ek sürelerle birlikte toplam üç ayı geçemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre tutukluluk durumunun devamıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Soruşturma evresinde savcı, tutukluluk durumunun devamına gerek görmüyorsa tutukluyu serbest bırakabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Soruşturma evresinde savcı, tutukluluk durumunun devamına gerek görmüyorsa adli kontrol uygulamasına karar verebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Soruşturma evresinde 30 günlük sürelerle sulh ceza yargıcı, tutukluluğun devam edip etmeyeceğine savcının veya şüphelinin istemi üzerine karar verir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kovuşturma evresinde mahkeme, sanığın tutukluluk durumunun devam edip etmeyeceğine her oturumda karar verir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme, tutukluluk durumunun devam edip etmeyeceğine iki oturum arasında da karar verebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Soruşturma evresinde Cumhuriyet savcısının tutukluluk bakımından yetkisi TEK YÖNLÜDÜR ve soru tam bu sınırı ölçer. Savcı, adlî kontrol veya tutuklamanın artık gereksiz olduğu kanısına varırsa şüpheliyi CMK m.103 uyarınca RE'SEN SERBEST BIRAKABİLİR; hürriyeti genişleten bu işlem için hâkim kararına ihtiyaç yoktur. Buna karşılık ADLÎ KONTROLE KARAR VEREMEZ: m.103 savcının, şüphelinin adlî kontrol altına alınarak serbest bırakılmasını sulh ceza hâkiminden İSTEYEBİLECEĞİNİ; m.110 ise adlî kontrolün savcının istemi ve SULH CEZA HÂKİMİNİN KARARIYLA uygulanacağını söyler. Adlî kontrol de bir koruma tedbiri, yani hürriyeti sınırlayan bir işlem olduğundan yargısal karar gerektirir. Diğer seçenekler doğrudur: soruşturmada tutukluluk en geç otuzar günlük sürelerle savcının istemi üzerine sulh ceza hâkimince incelenir ve m.108 uyarınca bu incelemeyi şüpheli de isteyebilir; kovuşturmada mahkeme her oturumda, koşullar gerektirdiğinde oturumlar arasında ve otuz günlük süre içinde re'sen karar verir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

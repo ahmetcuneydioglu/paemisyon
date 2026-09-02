@@ -227,12 +227,37 @@ Bu partide ogrenilen uc sey ARACA DONUSTU:
 - Harita eslestirmesi artik **kok+SIK** anahtariyla. Iki otopsi sorusunun kokU
   birebir aynidir; kok bazli eslestirme birini sessizce eziyordu (33 -> 32).
 
+#### PARTI b07 KAPANDI — KORUMA TEDBIRLERI Test-II/III (3 Eyl 2026)
+s-053..s-059 ve s-068 okundu: **35 soru -> 26 bankaya girdi**, denetim 26/26
+yayimlanabilir, kusurlu 0, belirsiz 0. Run: wf_79f1526d-244. CMK 629 -> **655**.
+Banka toplam 5.557.
+
+9 eleme. Cogu ayni turden: **cevap disindaki bir sik da yanlisti** (belirsiz soru).
+- s-058 S.2 — m.100/3 katalogu. Kitap "kamu gorevlisine hakaret"i cevap saymis ama
+  "KADINA KARSI kasten yaralama" da katalogda YOK: CMK m.100/3-a-4, TCK m.86/3'un
+  b, e ve f bentlerine atif yapar; f bendi CANAVARCA HISLE'dir. "Kadina karsi"
+  m.86/3'un hicbir bendinde gecmez, yalniz m.86/2 son cumlede alt sinir artisi olarak
+  vardir. Iki dogru cevap -> elendi.
+- s-057 S.13 — m.248/5'te yurt ici/yurt disi ayrimi YOK ("Kacak hakkinda ... yoklugunda
+  tutuklama karari verilebilir"); soru bu ayrimi dogru varsayiyor.
+- s-056 S.7 — m.120/1 "hazir BULUNABILIR" derken sik "bulundurulur" diyor (hak -> yukumluluk).
+- s-055 S.4 — cevabin yanlisligi Adli ve Onleme Aramalari Yonetmeligi'nden cikiyor,
+  kokteki kanundan degil.
+- 2 banka mukerreri (m.102 cocuk orani aynadan, m.98 ayni bes olguyla), 1 supheli (6384),
+  2 kapsam ortusmesi (m.94/3 ve m.140 zaten kapli).
+
+**YAYINDA HATA DUZELTILDI:** `2b9645f7` (published, m.100) aciklamasi m.86/3-b bendini
+"kadina karsi" diye tanitiyordu; dogrusu "beden veya ruh bakimindan kendisini
+savunamayacak durumda bulunan kisiye karsi". Sorunun cevabi (irtikap) etkilenmedi ama
+aciklama yanlis bilgi ogretiyordu. Duzeltildi, eski metin
+`aciklama-duzeltme-yedek-2b9645f7.json`'a yedeklendi, deftere islendi.
+
 #### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
-1. s-053..s-059 ve s-068..s-074 — koruma tedbirlerinin kalani
+1. s-069..s-074 — koruma tedbirlerinin kalani
 2. s-075..s-083 — sorusturma evresi (m.164-169 adli kolluk, m.177-183 savunma delilleri)
-3. s-006..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
-ISLENEN: s-042..s-052, s-060..s-067, s-084..s-116.
-KALAN: **s-001..s-041, s-053..s-059, s-068..s-083.**
+3. s-001..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
+ISLENEN: s-042..s-059, s-060..s-068, s-084..s-116.
+KALAN: **s-001..s-041, s-069..s-083.**
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (bkz. GECE-TALIMATI-3.md).
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
 -> `denetim-yayinla.ts --sonuc <task .output> --yaz`.
