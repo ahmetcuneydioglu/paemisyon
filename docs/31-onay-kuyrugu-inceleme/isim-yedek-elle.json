@@ -1,0 +1,407 @@
+[
+ {
+  "versiyonId": "7b420296-d826-4aaf-add6-a783fa88b5d5",
+  "stem": "A, kız arkadaşı B ile barışmak için onun kapısının önüne bir mektup bırakmış; B'nin eski sevgilisi C mektubu fark edip yırtarak çöpe atmıştır. C hangi suçtan sorumludur?",
+  "explanation": "Mektubun muhatabına ulaşmasının engellenmesi TCK md. 124 kapsamındaki HABERLEŞMENİN ENGELLENMESİ suçunu oluşturur. İçeriğin öğrenilmesi halinde ayrıca gizlilik ihlali gündeme gelebilir.",
+  "options": [
+   {
+    "id": "aa14c81c-fe43-4f31-9c34-444786649cfd",
+    "text": "Haberleşmenin gizliliğini ihlal"
+   },
+   {
+    "id": "9a79e72c-3556-4bc6-ad82-b5779b87bba7",
+    "text": "Haberleşmenin engellenmesi"
+   },
+   {
+    "id": "afa61e42-cfe2-4ea1-8007-d1f0cbc14488",
+    "text": "Özel yaşamın gizliliğini ihlal"
+   },
+   {
+    "id": "069b7a2a-92f7-4c6a-8200-e50377fca8dd",
+    "text": "Verileri hukuka aykırı ele geçirme"
+   },
+   {
+    "id": "78f6caf6-e108-48f6-87cb-8ac5f3bec26c",
+    "text": "Mala zarar verme"
+   }
+  ]
+ },
+ {
+  "versiyonId": "72a8941a-8912-4d7c-be7f-080b8f5a370e",
+  "stem": "A, Antalya'da bir bar toplantısına katılan Alman vatandaşı B'yi öldürmek amacıyla onun yemeğine zehir koyar. B, Almanya'ya döndüğünde zehrin etkisi ile rahatsızlanır ve hayatını kaybeder.\n5237 sayılı Türk Ceza Kanunu'na göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "explanation": "TCK m.8/1'e göre fiilin KISMEN VEYA TAMAMEN Türkiye'de işlenmesi ya da neticenin Türkiye'de gerçekleşmesi hâlinde suç Türkiye'de işlenmiş sayılır. Hareket (zehir koyma) Antalya'da gerçekleştiğinden netice Almanya'da doğsa bile suç Türkiye'de işlenmiştir. m.9'a göre Türkiye'de işlenen suçtan dolayı yabancı ülkede hüküm verilmiş olsa bile Türkiye'de yeniden yargılama yapılır; mahkumiyet de beraat de engel değildir. Ceza sınırı karşılaştırması (m.19) Türkiye'de işlenen suçlarda uygulanmaz.",
+  "options": [
+   {
+    "id": "31cefaea-5efa-4620-907c-e11bd8c6e0dc",
+    "text": "Ölüm neticesi Almanya'da ortaya çıktığı için suç Almanya'da işlenmiş sayılır."
+   },
+   {
+    "id": "866b2272-7523-4c0c-b041-22645547e42b",
+    "text": "Mağdur Alman vatandaşı olduğu için Türk mahkemelerinin yargılama yetkisi yoktur."
+   },
+   {
+    "id": "689990dc-e1f5-4e1f-971c-aa8add94e27a",
+    "text": "Alman mahkemelerinin fail A hakkında beraat kararı vermesi onun Türkiye'de yeniden yargılanmasına engel teşkil eder."
+   },
+   {
+    "id": "5e15e8f2-345f-4e87-a4c3-d47aafca44f4",
+    "text": "Alman mahkemelerinin fail A hakkında mahkumiyet kararı vermesi onun Türkiye'de yeniden yargılanmasına engel teşkil etmez."
+   },
+   {
+    "id": "31534fc4-a3a9-4e89-81a4-bf1e71bb6e7a",
+    "text": "Fail hakkında bu suçtan dolayı verilebilecek ceza Alman ceza kanununda öngörülen cezanın üst sınırından fazla olamaz."
+   }
+  ]
+ },
+ {
+  "versiyonId": "94d5c717-e336-4810-9af7-547f241853bb",
+  "stem": "Türk vatandaşı T, Almanya'da bulunduğu sırada aralarında çıkan tartışma neticesinde Alman vatandaşı olan patronu P'yi öldürür. Hakkında verilen mahkûmiyet kararının infazından sonra T, Türkiye'ye yerleşir.\nBu olaya göre, aşağıdaki ifadelerden hangisi doğrudur?",
+  "explanation": "TCK m.11/1'e göre Türk vatandaşının yabancı ülkede işlediği suçtan dolayı Türkiye'de yargılanabilmesi, m.13'teki suçlar dışında, o suçtan dolayı YABANCI ÜLKEDE HÜKÜM VERİLMEMİŞ olması koşuluna bağlıdır. Olayda Almanya'da hüküm verilmiş ve infaz edilmiştir; kasten öldürme m.13 kapsamında da olmadığından Türkiye'de yeniden yargılama yapılamaz (ne bis in idem). Yargılama zaten yapılamayacağı için mahsup da gündeme gelmez; vatandaş iade edilmez (Anayasa m.38).",
+  "options": [
+   {
+    "id": "01e912f1-7f8c-49d3-bdf6-4b78e0645a94",
+    "text": "T'nin Türkiye'de yargılanabilmesi için P'nin yakınlarının veya Alman hükümetinin şikâyeti gereklidir."
+   },
+   {
+    "id": "e1cbb903-9f1b-4a93-86e6-e4908db656f8",
+    "text": "Almanya'da T'nin hükümlülükte geçirmiş olduğu süre, aynı suçtan dolayı Türkiye'de verilecek cezadan mahsup edilir."
+   },
+   {
+    "id": "f93232e1-19ef-49d6-9cb6-4ad06e19aed2",
+    "text": "T hakkında Almanya'da hüküm verilmiş ve infaz edilmiş olduğu için Türkiye'de aynı suçtan dolayı tekrar yargılama yapılamaz."
+   },
+   {
+    "id": "eef2c9e5-e7bc-4260-9ea8-b8ef21ef36a9",
+    "text": "T, Türkiye'de verilen mahkûmiyet kararının infazı için Almanya'ya iade edilebilir."
+   },
+   {
+    "id": "156a9b5b-a00f-4fa9-995c-316b1d38c039",
+    "text": "T'nin Türkiye'de yargılanabilmesi Adalet Bakanının iznine bağlıdır."
+   }
+  ]
+ },
+ {
+  "versiyonId": "f1418f41-a607-4409-9c7d-d0c5a0b84411",
+  "stem": "I. Haksız olarak karşı tarafa saldıran C'nin, karşı tarafın kendini korumaya yönelik fiiline sinirlenerek hakaret etmesi\nII. Hakkındaki yakalama emrini ifa eden kolluk görevlilerine B'nin hakaret etmesi\nIII. A'nın annesine taş atan 10 yaşındaki çocuğa, A'nın hakaret etmesi\nIV. D'nin, kendisine haksız yere vuran kişiye sinirlenmesi ve ona hakaret etmesi\nYukarıdaki durumların hangilerinde gerçekleştirilen hakaret suçunda haksız tahrik hükümleri uygulanabilir?",
+  "explanation": "Haksız tahrik (TCK m.29) için tahriki oluşturan fiilin HAKSIZ olması gerekir. I'de karşı tarafın kendini koruması (meşru savunma) hukuka uygundur; buna tepki tahrik oluşturmaz. II'de yakalama emrini ifa eden kolluğun fiili kanun hükmünün ifasıdır, haksız değildir. III'te tahrik fiilini gerçekleştirenin kusur yeteneğine sahip olması aranmaz; 10 yaşındaki çocuğun taş atması haksız fiildir ve tahrik oluşturabilir. IV'te haksız darp klasik tahrik hâlidir.",
+  "options": [
+   {
+    "id": "323a7e71-8267-470d-9c22-f04b714e6ff7",
+    "text": "Yalnız I"
+   },
+   {
+    "id": "315a7001-41e4-403b-bf84-0ac575e00f97",
+    "text": "Yalnız III"
+   },
+   {
+    "id": "771778aa-2dff-46e2-9bcd-06a8471f6abf",
+    "text": "I ve IV"
+   },
+   {
+    "id": "f9faee7a-e1a1-465c-8268-e11ce2f9c148",
+    "text": "II ve IV"
+   },
+   {
+    "id": "57be670c-7de8-410a-86b1-c8d387ef95d6",
+    "text": "III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "33d50985-715b-490e-9101-105ac19d5d45",
+  "stem": "A'nın ameliyatı öncesinde anestezi uzmanı olan Doktor D, Hemşire H'nin hazırlamış olduğu narkozu, dozajını kontrol etmeksizin hastaya enjekte eder. Dozun fazla olması nedeniyle hasta ölüm tehlikesi geçirir.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+  "explanation": "TCK m.22/5'e göre birden fazla kişinin taksirle işlediği suçlarda herkes KENDİ KUSURUNDAN dolayı sorumlu olur ve her failin cezası kusuruna göre ayrı ayrı belirlenir; taksirli suçlarda iştirak hükümleri uygulanmaz. Ayrıca taksirli suça teşebbüs mümkün değildir. Dozu yanlış hazırlayan H ile kontrol yükümlülüğünü ihmal eden D, taksirle yaralamadan kendi kusurları oranında sorumludur; özensiz tıbbi müdahale görevin ifası kapsamında hukuka uygun sayılamaz.",
+  "options": [
+   {
+    "id": "ea10c8c4-c505-4350-aaae-fe77bdd04ff3",
+    "text": "D ve H, taksirle öldürmeye teşebbüsten birlikte sorumludur."
+   },
+   {
+    "id": "8b470b4a-78c9-45d5-a015-0eda96db3632",
+    "text": "D ve H'nin taksirle yaralama suçundan sorumlulukları iştirak hükümleri çerçevesinde belirlenir."
+   },
+   {
+    "id": "f72e35d9-11e8-41a6-b0a6-6f1f8d5af8fd",
+    "text": "D'nin fiili görevinin ifası kapsamında kaldığı için hukuka uygun olsa da bu durumdan H yararlanamaz."
+   },
+   {
+    "id": "0ffba0a9-cb17-46bf-a45b-1c895cf8c308",
+    "text": "D ve H'nin taksirle yaralama suçundan sorumlulukları kendi kusurlarına göre ayrı ayrı belirlenir."
+   },
+   {
+    "id": "67000688-ba1b-4d85-9ff4-19ff60ee6a3f",
+    "text": "D'nin fiili görevin ifası kapsamında kaldığı için hukuka uygundur ve bu durumdan H de yararlanır."
+   }
+  ]
+ },
+ {
+  "versiyonId": "133d8d7a-38e1-46a0-926e-876cb3a1824a",
+  "stem": "X Partisi genel başkanı A, belli bir tarihte Ankara'da miting yapacaktır. A'nın mitingde yapacağı konuşmanın partiye oy kaybettireceğini düşünen V, Y ile Z; miting alanına gitmek üzere evinden çıkan A'yı fiziki güç kullanarak zorla kaçırırlar ve mitingde yapacağı konuşmayı engellerler.\n5237 sayılı Türk Ceza Kanunu'na göre olayda aşağıdaki suçlardan hangisi oluşmuştur?",
+  "explanation": "A'nın zorla kaçırılması, birden fazla kişi tarafından birlikte işlendiğinden kişiyi hürriyetinden yoksun kılma suçunun nitelikli hâlini (TCK m.109/2, 3-b) oluşturur; cebir bu suçun unsuru içinde erir. Ayrıca mitingde konuşmanın engellenmesi, bir siyasi partinin faaliyetinin cebirle engellenmesi niteliğinde olduğundan siyasi hakların kullanılmasının engellenmesi suçu (m.114) da oluşur. Failler her iki suçtan gerçek içtima kurallarına göre sorumludur.",
+  "options": [
+   {
+    "id": "bde8852b-6007-4318-b89f-27924a4fedfd",
+    "text": "Sadece cebir"
+   },
+   {
+    "id": "e781bb05-687d-4f99-a9b3-a86e2ad810b2",
+    "text": "Sadece kişiyi hürriyetinden yoksun kılma suçunun nitelikli hâli"
+   },
+   {
+    "id": "56dbe982-a1a0-4a59-a072-d5361c31537c",
+    "text": "Cebir ve kişiyi hürriyetinden yoksun kılma suçunun nitelikli hâli"
+   },
+   {
+    "id": "48eb5f36-3a3a-4637-854e-806ed41f13bb",
+    "text": "Kişiyi hürriyetinden yoksun kılma suçunun nitelikli hâli ve siyasi hakların kullanılmasının engellenmesi"
+   },
+   {
+    "id": "6e8a28c6-43c7-4757-8965-a8ac28e80196",
+    "text": "Sadece siyasi hakların kullanılmasının engellenmesi"
+   }
+  ]
+ },
+ {
+  "versiyonId": "a40985cd-7c6f-48ce-97da-0a4b1b35739e",
+  "stem": "22 haftalık gebe olan X, doktor Y ile anlaşır ve Y, tıbbi zorunluluk olmamasına rağmen X'in rahminden cenini alarak gebeliğini sonlandırır.\n5237 sayılı Türk Ceza Kanunu'na göre Y ve X'in ceza sorumluluklarıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+  "explanation": "TCK m.99/2 uyarınca tıbbi zorunluluk bulunmadığı hâlde, RIZAYA DAYALI OLSA BİLE gebelik süresi on haftadan fazla olan bir kadının çocuğunu düşürten kişi iki yıldan dört yıla kadar hapis cezası ile cezalandırılır; aynı fıkranın son cümlesine göre çocuğunun düşürtülmesine RIZA GÖSTEREN KADIN hakkında da bir yıla kadar hapis veya adlî para cezasına hükmolunur. Olayda gebelik 22 haftalık, yani on haftayı aşmıştır ve tıbbi zorunluluk yoktur; bu nedenle hem doktor Y hem de gebe X ÇOCUK DÜŞÜRTME suçundan sorumludur. m.99/6'daki cezasızlık hâli yalnızca gebeliğin bir suç sonucu oluşması ve süresinin yirmi haftayı aşmaması hâlinde uygulanır.",
+  "options": [
+   {
+    "id": "9d68bcc6-38c3-4a8e-a2ae-9ed56a8e22f6",
+    "text": "Y, çocuk düşürtme suçundan dolayı cezalandırılır; X'in ceza sorumluluğu yoktur."
+   },
+   {
+    "id": "e16403c8-a37b-437f-baea-07148aec2484",
+    "text": "Y ve X, çocuk düşürme suçundan dolayı cezalandırılır."
+   },
+   {
+    "id": "4f5e72b5-a6e9-4f41-9d74-ab9ebc428c43",
+    "text": "Y'nin ceza sorumluluğu yoktur; X, çocuk düşürtme suçundan dolayı cezalandırılır."
+   },
+   {
+    "id": "37b16975-e905-46bc-a074-30e914edcde8",
+    "text": "Y ve X, çocuk düşürtme suçundan dolayı cezalandırılır."
+   },
+   {
+    "id": "d204d60d-8fec-4cc1-8463-7f504dc01500",
+    "text": "Y, çocuk düşürme; X ise çocuk düşürtme suçundan dolayı cezalandırılır."
+   }
+  ]
+ },
+ {
+  "versiyonId": "8d4c798c-c804-42ea-9745-8abddd60767e",
+  "stem": "A, canı yansın diye annesi B'nin karnına yumruk atmış ve B bu yumruk sonucunda ölmüştür. Buna göre olayda aşağıdaki suçlardan hangisi oluşmuştur?",
+  "explanation": "A'nın kastı yaralamaya yöneliktir; ölüm neticesi kasten yaralamanın sonucunda doğmuştur. Üstsoya karşı kasten yaralama TCK md. 86/3-a kapsamındadır ve ölüm gerçekleştiğinde md. 87/4 uyarınca SONUCU NEDENİYLE AĞIRLAŞMIŞ KASTEN YARALAMA oluşur.",
+  "options": [
+   {
+    "id": "d4b9a6f0-4dcb-4e54-9539-98d9cd191260",
+    "text": "Kasten öldürme"
+   },
+   {
+    "id": "94f801fb-1fe6-438e-89ea-03a89b001e73",
+    "text": "Kasten öldürme suçuna teşebbüs"
+   },
+   {
+    "id": "bc85bbfe-1455-4689-bc2e-92ab0057b0b3",
+    "text": "Kasten yaralama suçuna teşebbüs"
+   },
+   {
+    "id": "279b9e8c-d5fe-47db-b06e-0cc0a88a54e5",
+    "text": "Sonucu nedeniyle ağırlaşmış kasten yaralama"
+   },
+   {
+    "id": "f202242b-390f-4737-b78d-39447fb47901",
+    "text": "Taksirle öldürme"
+   }
+  ]
+ },
+ {
+  "versiyonId": "f5a0ee83-cf8d-4b38-aa52-a903f523ea0d",
+  "stem": "A, uyku düzenini ve sağlığını bozduğu için boşandığı eşi B'nin kahvesine ilaç katmış; hastanede tedavi altına alınan B aynı servisteki başka bir hastanın bulaştırdığı virüs nedeniyle ölmüştür. A hangi suçtan cezalandırılır?",
+  "explanation": "A'nın kastı yaralamaya yöneliktir ve ölüm, A'nın fiilinden değil hastanede bulaşan virüsten doğmuştur. Yaralama boşanılan eşe karşı işlendiğinden TCK md. 86/3-a kapsamında KASTEN YARALAMANIN NİTELİKLİ ŞEKLİ oluşur.",
+  "options": [
+   {
+    "id": "2c61de3e-dafa-4ddf-b992-624f8c17d298",
+    "text": "Kasten yaralama"
+   },
+   {
+    "id": "6c04c2ef-79c9-4b17-8ac6-09714d7ed9f5",
+    "text": "Kasten öldürmeye teşebbüs"
+   },
+   {
+    "id": "0baea69e-460a-4308-9e1f-6cc66efb4946",
+    "text": "Kasten öldürme"
+   },
+   {
+    "id": "eb44f1d7-d711-4a3d-a965-cc4dfe6caab9",
+    "text": "Kasten yaralama suçunun nitelikli şekli"
+   },
+   {
+    "id": "8d030ed0-4e62-4a3b-9db6-c433ed9804a8",
+    "text": "Kasten yaralamaya teşebbüs"
+   }
+  ]
+ },
+ {
+  "versiyonId": "e252df2d-3ded-4460-adc3-9137ed791dad",
+  "stem": "(A), öldürme kastıyla (B)'ye ateş edip onu ağır yaralamıştır. Hastanede hemşirenin yanlış ilacı vermesi sonucu (B) ölmüş; hatalı tıbbi müdahalenin bağımsız biçimde ölüm sonucunu doğurduğu belirlenmiştir. (A)'nın sorumluluğu nedir?",
+  "explanation": "(A) öldürme kastıyla doğrudan icraya başlamıştır. Ölüm, bağımsız ve yeni bir nedensel süreç oluşturan hatalı tıbbi müdahaleden kaynaklandığı kabul edildiğinde ölüm (A)'ya yüklenmez; (A) öldürmeye teşebbüsten sorumlu olur.",
+  "options": [
+   {
+    "id": "5f7699ff-a66c-421b-a888-ee60b81c5e7b",
+    "text": "Kasten öldürme"
+   },
+   {
+    "id": "09b3123b-8224-43a8-8f4a-3069a0cd1b34",
+    "text": "Kasten yaralama"
+   },
+   {
+    "id": "dbcb6efd-8dc1-4feb-a37e-cb9e575fc4e1",
+    "text": "Neticesi sebebiyle ağırlaşmış yaralama"
+   },
+   {
+    "id": "bd1ac2a9-cf19-4912-be51-3b5d22cfd4a5",
+    "text": "Kasten öldürmeye teşebbüs"
+   },
+   {
+    "id": "25e17c01-3828-441f-8e25-58b3a9f4ddee",
+    "text": "Kasten yaralamaya teşebbüs"
+   }
+  ]
+ },
+ {
+  "versiyonId": "2bc4c1e5-14a0-406e-92b3-d8b5f778d30c",
+  "stem": "(A), on altı yaşındaki (C)'yi eski kız arkadaşını öldürmeye azmettirmiştir. (C), mağduru öldürmüş ve azmettirenin kimliğinin ortaya çıkmasını sağlamıştır. Hangileri doğrudur?\nI. (A), (C)'nin ayrıca işlediği ve ortak plan dışında kalan başka suçlardan sorumludur.\nII. (A), öldürme suçundan azmettiren olarak sorumludur.\nIII. (C)'nin yaşı kendi cezasında dikkate alınır.\nIV. (C), azmettirenin belirlenmesini sağladığı için kanundaki koşullarla indirimden yararlanabilir.",
+  "explanation": "Azmettiren yalnız kastının kapsadığı suçtan sorumludur. (A) öldürmeye azmettirmiştir; (C)'nin kişisel yaş küçüklüğü kendi cezasına etki eder. TCK m.38/3 kapsamında azmettirenin kimliğini ortaya çıkaran fail için indirim yapılabilir.",
+  "options": [
+   {
+    "id": "7bb6a1a7-95ff-47e2-919c-f119652a57ec",
+    "text": "I ve II"
+   },
+   {
+    "id": "bf0e1ad0-2e9d-450f-990d-52d07ce7be42",
+    "text": "II, III ve IV"
+   },
+   {
+    "id": "d9654ee4-7ec4-483a-960b-45526f4ecf06",
+    "text": "I, II ve IV"
+   },
+   {
+    "id": "a6eaecfb-d578-4fe7-9540-b70f2c1c3ee5",
+    "text": "II ve IV"
+   },
+   {
+    "id": "80c2afc4-06b0-4e4b-b989-c6c01b10870e",
+    "text": "I, II, III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "80788108-b93c-4870-8722-01dbca68bf9a",
+  "stem": "A ile teyzesinin kızı B arasında miras paylaşımı nedeniyle kavga çıkmış; A'nın B'nin ayağına doğru attığı tekme üzerine B yere düşmüş ve travmanın etkisiyle erken doğum yapmıştır. A hangi suçtan sorumludur?",
+  "explanation": "A'nın kastı yaralamaya yöneliktir. Gebe kadına karşı kasten yaralama fiilinin çocuğun VAKTİNDEN ÖNCE DOĞMASINA neden olması TCK md. 87/1-e kapsamında neticesi sebebiyle ağırlaşmış yaralamadır.",
+  "options": [
+   {
+    "id": "dbb701ae-3b15-442a-b8ee-8f031e2c827d",
+    "text": "Kasten öldürme suçuna teşebbüs"
+   },
+   {
+    "id": "81f0fda7-8882-40ce-8bfe-df76ffecb987",
+    "text": "Kasten yaralama suçuna teşebbüs"
+   },
+   {
+    "id": "1856d754-dc21-43a7-8651-f5b50225a650",
+    "text": "Kasten yaralama"
+   },
+   {
+    "id": "4cc4128f-6475-4670-a013-8cff753dc91b",
+    "text": "Kasten yaralama suçunun nitelikli şekli"
+   },
+   {
+    "id": "682dc198-99ce-41e4-b97f-7b008405a5e3",
+    "text": "Sonucu nedeniyle ağırlaşmış yaralama"
+   }
+  ]
+ },
+ {
+  "versiyonId": "eb5b27a1-35b4-4a52-816c-20b98577ca1b",
+  "stem": "A ve Fransız vatandaşı eşi B tatil için Bodrum'a gelmiştir. Gece otel odasında birlikte olmak isteyen B, A'nın istemediğini söylemesine rağmen anal yoldan cinsel ilişkide bulunmuştur. Hangisi doğrudur?",
+  "explanation": "Vücuda organ sokulması nitelikli cinsel saldırıdır ve suç eşe karşı da işlenebilir. TCK md. 102/2 gereğince bu fiilin EŞE KARŞI işlenmesinde soruşturma ve kovuşturma mağdurun şikâyetine bağlıdır.",
+  "options": [
+   {
+    "id": "63abba46-5b56-4a70-a778-c96e39c8ea4b",
+    "text": "B cinsel tacizden sorumludur"
+   },
+   {
+    "id": "568df8ba-ca3f-444a-83d1-28f94e2bbbd8",
+    "text": "Cebir kullanma suçu oluşur"
+   },
+   {
+    "id": "494d588b-5c60-4d0c-bad3-5d18c019d687",
+    "text": "Cinsel saldırının temel şekli oluşur"
+   },
+   {
+    "id": "8ca63519-3fd7-4fbf-bccf-82fc5d84e1b2",
+    "text": "Eşler arasında cinsellik ödev olduğundan suç oluşmaz"
+   },
+   {
+    "id": "a8a9cfe0-56cf-4f27-bdd2-e41ad0b10c20",
+    "text": "Soruşturma ve kovuşturma mağdurun şikâyetine bağlıdır"
+   }
+  ]
+ },
+ {
+  "versiyonId": "8d563c8d-146b-4fa1-85e7-f0a382bfe04b",
+  "stem": "A, kendisini terk eden sevgilisi M'yi gece sabaha kadar telefonla aramış; cevap alamayınca ertesi gün de aramaya devam etmiştir. Olayda hangi suç oluşur?",
+  "explanation": "Sırf mağdurun huzur ve sükûnunu bozmak maksadıyla ISRARLA telefon edilmesi TCK md. 123 kapsamındadır. Suç mağdurun şikâyetine bağlıdır.",
+  "options": [
+   {
+    "id": "91d6455b-ad8a-40e9-a88e-21eb409e274f",
+    "text": "Haksız arama"
+   },
+   {
+    "id": "0b70f2f3-e90b-40ef-90b2-2c80b4a40a97",
+    "text": "Özel yaşamın gizliliğini ihlal"
+   },
+   {
+    "id": "345df0d7-70a4-489e-97d3-802e73c6b56c",
+    "text": "Kişilerin huzur ve sükûnunu bozma"
+   },
+   {
+    "id": "76645c05-8b97-4e16-92b9-fbc8258b7291",
+    "text": "Hakaret"
+   },
+   {
+    "id": "327053c6-f0a9-4558-bbca-76181bc42342",
+    "text": "Haberleşmenin gizliliğini ihlal"
+   }
+  ]
+ },
+ {
+  "versiyonId": "33326cff-17c2-4e75-b668-ac0806a36656",
+  "stem": "A, eşiyle ilgili ceza soruşturmasında tanıklıktan çekinme hakkı kendisine hatırlatılmadan dinlenmiş ve gerçeğe aykırı beyanda bulunmuştur. A'nın sorumluluğu hakkında hangisi doğrudur?",
+  "explanation": "Tanıklıktan çekinme hakkı bulunan kişiye bu hak hatırlatılmadan gerçeğe aykırı tanıklık yaptırılırsa ceza indirilebilir veya ceza vermekten vazgeçilebilir. Bu hüküm özel hukuk uyuşmazlıklarında uygulanmaz.",
+  "options": [
+   {
+    "id": "c269dd13-634f-4199-8b48-f99709e8fec1",
+    "text": "Mutlaka ceza indirimi yapılır"
+   },
+   {
+    "id": "b54e9f0b-2cae-4259-97a9-6e9f2dca0767",
+    "text": "Ceza indirilebilir veya ceza vermekten vazgeçilebilir"
+   },
+   {
+    "id": "fab629a4-5671-4ef6-9c5e-155dfc358641",
+    "text": "Ceza indirilebilir ancak ceza vermekten vazgeçilemez"
+   },
+   {
+    "id": "2321db92-5238-4f07-908d-f2cfab0d841d",
+    "text": "Yalnız tazminat davasında verilecek ceza indirilir"
+   },
+   {
+    "id": "7bcf9d74-8551-421b-af8a-149e6551c3af",
+    "text": "Her durumda tam ceza verilir"
+   }
+  ]
+ }
+]

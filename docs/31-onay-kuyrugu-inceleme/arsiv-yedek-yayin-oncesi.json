@@ -1,0 +1,119 @@
+[
+ {
+  "sebep": "MÜKERRER — 1b35df63 ile aynı kuralı ölçüyor (TBMM İçtüzüğü m.5, 1 Temmuz). İkisi de doğru; açıklaması daha zengin olan 1b35df63 kuyrukta bırakıldı.",
+  "id": "3f43eb9b-a1df-4092-8807-591a2c42dc65",
+  "questionId": "de1c03c8-2fa7-450a-936e-0dbca19e3dc6",
+  "stem": "TBMM İçtüzüğü'ne göre aksi yönde karar alınmadıkça TBMM hangi tarihte tatile girer?",
+  "explanation": "İçtüzük m.5'e göre Danışma Kurulunun önerisi üzerine Genel Kurulca başka bir karar alınmadıkça TBMM 1 TEMMUZ günü tatile girer. Bir yasama yılında üç aydan fazla tatil yapılamaz.",
+  "options": [
+   {
+    "id": "140b35f4-457b-4bd8-ad84-570a6130f239",
+    "label": "A",
+    "text": "1 Haziran",
+    "isCorrect": false
+   },
+   {
+    "id": "1e0e0319-3fbc-4dc1-b8be-122b5e716d72",
+    "label": "B",
+    "text": "20 Haziran",
+    "isCorrect": false
+   },
+   {
+    "id": "adae8546-32d7-496f-ba36-a6e747fb0504",
+    "label": "C",
+    "text": "30 Haziran",
+    "isCorrect": false
+   },
+   {
+    "id": "def5cc34-4696-4372-9a0a-cd6a33cea062",
+    "label": "D",
+    "text": "1 Temmuz",
+    "isCorrect": true
+   },
+   {
+    "id": "d14a5aca-2a4b-4771-bf52-7f9179564d1e",
+    "label": "E",
+    "text": "1 Ağustos",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "sebep": "MÜKERRER — 814fdd27 ile aynı olay örgüsü ve aynı kural (TCK m.247/1 zimmet, kumarda harcama). İkisi de doğru; daha somut olan 814fdd27 kuyrukta bırakıldı.",
+  "id": "f3169da2-eaba-41bc-a599-e632048ca1ff",
+  "questionId": "bd958151-4668-46f2-99da-d6084e3e58b1",
+  "stem": "Kamu görevlisi Burak, görevi nedeniyle kendisine devredilen parayı kasaya koymak yerine kumarda harcamıştır. Hangi suç oluşur?",
+  "explanation": "Görev nedeniyle zilyetliği devredilen para üzerinde malik gibi tasarruf edilmesi zimmet suçunu oluşturur.",
+  "options": [
+   {
+    "id": "163b7638-ffdd-4991-8591-27083fede8ce",
+    "label": "A",
+    "text": "Zimmet",
+    "isCorrect": true
+   },
+   {
+    "id": "58e2021c-f7e4-49fc-9e45-001643d45b47",
+    "label": "B",
+    "text": "İrtikâp",
+    "isCorrect": false
+   },
+   {
+    "id": "4901f37d-ce8f-4a2b-be2f-99797542d6f5",
+    "label": "C",
+    "text": "Dolandırıcılık",
+    "isCorrect": false
+   },
+   {
+    "id": "13d349ee-c4bb-40ca-a597-d5b89095f527",
+    "label": "D",
+    "text": "Rüşvet",
+    "isCorrect": false
+   },
+   {
+    "id": "70de1fca-b644-47ba-943f-e01f1e23eac1",
+    "label": "E",
+    "text": "Görevi kötüye kullanma",
+    "isCorrect": false
+   }
+  ]
+ },
+ {
+  "sebep": "BANKA İÇİ ÇELİŞKİ — öncül I (\"aynı spor salonunda farklı kişilerin dolaplarından aynı gece peş peşe hırsızlık\") zincirleme suç sayılmış; oysa 48041639 aynı olguyu (aynı sitede farklı konutlardan aynı gece art arda hırsızlık) zincir DIŞINDA bırakıyor ve c5a802cc \"zincirleme suç oluşmamıştır\" ifadesini DOĞRU sayıyor. Hangi görüşün hukuken doğru olduğu çekişmeli doğrulamada çözülemedi; üçü birden yayınlanırsa banka kendi içinde çelişir. Aykırı olan bu soru kuyruktan çıkarıldı.",
+  "id": "6089f30c-0339-4843-a292-d0d5c6d4c8ca",
+  "questionId": "834c4330-c24d-48a6-8db3-f35fd532e90d",
+  "stem": "Bir suç işleme kararının icrası kapsamında;\nI. Aynı spor salonuna giden farklı kişilerin dolaplarından aynı gece peş peşe hırsızlık,\nII. Aynı kişiye karşı birer gün arayla işkence,\nIII. Aynı marketin deposundan birer hafta arayla hırsızlık\nfiillerinden hangilerinde zincirleme suç hükümleri uygulanır?",
+  "explanation": "TCK m.43/1 zincirleme suçu \"bir suç işleme kararının icrası kapsamında, değişik zamanlarda bir kişiye karşı aynı suçun birden fazla işlenmesi\" olarak tanımlar ve ek cümlesiyle \"mağduru belli bir kişi olmayan suçlarda da bu fıkra hükmü uygulanır\" der. m.43/2 ise \"aynı suçun birden fazla kişiye karşı TEK BİR FİİLLE işlenmesi durumunda da, birinci fıkra hükmü uygulanır.\" I numaralı olayda aynı spor salonunda aynı gece peş peşe gerçekleşen hareketler zaman ve mekân birliği nedeniyle tek fiil kabul edilir ve m.43/2 yollamasıyla zincirleme suç hükümlerine tabidir. III numaralı olayda aynı mağdura karşı değişik zamanlarda işlenen hırsızlıklar doğrudan m.43/1 kapsamındadır. II numaralı olay ise m.43/3'ün açık istisnasına girer: \"Kasten öldürme, kasten yaralama, işkence ve yağma suçlarında bu madde hükümleri uygulanmaz.\"",
+  "options": [
+   {
+    "id": "68a18449-a9de-47a1-9bc1-2bccd5cd8d2e",
+    "label": "A",
+    "text": "Yalnız II",
+    "isCorrect": false
+   },
+   {
+    "id": "5c7696b1-a358-4359-92b8-af0bf0dc4f4a",
+    "label": "B",
+    "text": "Yalnız III",
+    "isCorrect": false
+   },
+   {
+    "id": "5a0b4156-c3bf-4ead-99b2-be7ebdaa10eb",
+    "label": "C",
+    "text": "I ve II",
+    "isCorrect": false
+   },
+   {
+    "id": "aaf7241c-71f4-45e7-abca-6c884fb32149",
+    "label": "D",
+    "text": "I ve III",
+    "isCorrect": true
+   },
+   {
+    "id": "39e81e5e-23a3-4e25-aef1-cfa25058480c",
+    "label": "E",
+    "text": "II ve III",
+    "isCorrect": false
+   }
+  ]
+ }
+]

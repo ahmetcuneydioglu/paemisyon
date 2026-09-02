@@ -1,0 +1,56 @@
+[
+ {
+  "versiyonId": "2bc4c1e5-14a0-406e-92b3-d8b5f778d30c",
+  "stem": "Ahmet, on altı yaşındaki (C)'yi eski kız arkadaşını öldürmeye azmettirmiştir. (C), mağduru öldürmüş ve azmettirenin kimliğinin ortaya çıkmasını sağlamıştır. Hangileri doğrudur?\nI. Ahmet, (C)'nin ayrıca işlediği ve ortak plan dışında kalan başka suçlardan sorumludur.\nII. Ahmet, öldürme suçundan azmettiren olarak sorumludur.\nIII. (C)'nin yaşı kendi cezasında dikkate alınır.\nIV. (C), azmettirenin belirlenmesini sağladığı için kanundaki koşullarla indirimden yararlanabilir.",
+  "explanation": "Azmettiren yalnız kastının kapsadığı suçtan sorumludur. Ahmet öldürmeye azmettirmiştir; Cem'in kişisel yaş küçüklüğü kendi cezasına etki eder. TCK m.38/3 kapsamında azmettirenin kimliğini ortaya çıkaran fail için indirim yapılabilir.",
+  "options": [
+   {
+    "id": "7bb6a1a7-95ff-47e2-919c-f119652a57ec",
+    "text": "I ve II"
+   },
+   {
+    "id": "bf0e1ad0-2e9d-450f-990d-52d07ce7be42",
+    "text": "II, III ve IV"
+   },
+   {
+    "id": "d9654ee4-7ec4-483a-960b-45526f4ecf06",
+    "text": "I, II ve IV"
+   },
+   {
+    "id": "a6eaecfb-d578-4fe7-9540-b70f2c1c3ee5",
+    "text": "II ve IV"
+   },
+   {
+    "id": "80c2afc4-06b0-4e4b-b989-c6c01b10870e",
+    "text": "I, II, III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "231b0484-200d-4fa0-ba0f-6146c317b09b",
+  "stem": "On dört haftalık hamile A, yaşamını olumsuz etkileyeceğini düşünerek yetkili doktor D ile anlaşmış ve özel klinikte gebeliğini sona erdirmiştir. Tıbbi zorunluluk bulunmadığına göre hangisi doğrudur?",
+  "explanation": "Tıbbi zorunluluk yokken gebelik süresi ON HAFTADAN FAZLA olan kadının rızasıyla çocuğunu düşürten kişi TCK md. 99/2'den sorumludur; düşürtülmeye rıza gösteren kadın hakkında da aynı fıkrada ceza öngörülür.",
+  "options": [
+   {
+    "id": "ed5576c3-9b23-4b68-967a-5fbbb52b7131",
+    "text": "Yalnız A çocuk düşürtme suçundan sorumludur"
+   },
+   {
+    "id": "7c02bbc8-1622-4251-ab53-86a3ba53a972",
+    "text": "Yalnız D çocuk düşürtme suçundan sorumludur"
+   },
+   {
+    "id": "50b70e6d-09d9-491a-9cde-27c1709f7e8a",
+    "text": "A ve D çocuk düşürtme suçundan sorumludur"
+   },
+   {
+    "id": "82654356-4ac9-45c6-b082-a55745c8666e",
+    "text": "Eylem hukuka uygundur"
+   },
+   {
+    "id": "d8d9ff31-7219-4d13-b01b-1f47090c455b",
+    "text": "Olayda çocuk düşürtme değil, çocuk düşürme suçu oluşur"
+   }
+  ]
+ }
+]

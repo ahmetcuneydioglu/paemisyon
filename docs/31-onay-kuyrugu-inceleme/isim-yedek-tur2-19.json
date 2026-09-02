@@ -1,0 +1,515 @@
+[
+ {
+  "versiyonId": "d6063c6a-5a85-4bc2-b62b-637ec31ae0ab",
+  "stem": "Ahmet, öğretmeni Burak'ı öldürmek amacıyla ateş etmiş ancak isabet ettirememiştir. Olayı gören başka bir öğretmen (C), Ahmet'in yeniden ateş etmesini engellemek için elindeki çantayla Ahmet'e orantılı biçimde vurmuştur.\nI. Ahmet, kasten öldürmeye teşebbüsten sorumludur.\nII. (C)'nin fiili görevin ifası kapsamında hukuka uygundur.\nIII. Ahmet, (C)'ye karşı meşru savunmada bulunabilir.\nIV. Ahmet, olası kastla hareket etmiştir.\nHangileri doğrudur?",
+  "explanation": "Ahmet'in belirli kişiyi öldürmeye yönelik doğrudan kastla icraya başlayıp sonucu gerçekleştirememesi teşebbüstür. (C), başkasının yaşam hakkına yönelik devam eden saldırıyı bertaraf ettiğinden fiili görev nedeniyle değil üçüncü kişi lehine meşru savunma kapsamında hukuka uygundur; hukuka uygun savunmaya karşı meşru savunma olmaz.",
+  "options": [
+   {
+    "id": "dd5cafd3-1ebb-4ac7-8a39-ddb04bbbf1c6",
+    "text": "Yalnız I"
+   },
+   {
+    "id": "1c56f352-c754-42f7-aea9-072b2a0b7d3a",
+    "text": "I ve II"
+   },
+   {
+    "id": "b58ccaab-e288-4b91-8b10-4949fad3cb6a",
+    "text": "I ve III"
+   },
+   {
+    "id": "ff138781-7982-4b79-8023-d9907c4a652c",
+    "text": "I ve IV"
+   },
+   {
+    "id": "f6d705a0-cca2-4f24-8c3d-a86159c4840e",
+    "text": "II, III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "89f70996-70af-4604-b5a8-58bcfcd8c0cf",
+  "stem": "Kemal, (M) ve Serkan birlikte hırsızlık yapmak üzere eve girmeye karar vermiş; eve girdiklerinde (M), plan dışına çıkarak ev sahibinin oğlunu öldürmüştür.\nI. Üç kişi arasında hırsızlığa iştirak iradesi vardır.\nII. Hırsızlık işlenseydi üçü de bundan sorumlu olurdu.\nIII. Plan dışı öldürmeden üçü de sorumludur.\nIV. Öldürme, ortak suç planının dışında kalan ani suçtur.\nHangisi yanlıştır?",
+  "explanation": "Ortak iştirak iradesi hırsızlığa yöneliktir. (M)'nin ortak plan dışında işlediği öldürme suçundan yalnız (M) sorumludur; diğerlerinin sorumluluğu kast ve iştirak iradesinin kapsamını aşan bu sonuca genişletilemez.",
+  "options": [
+   {
+    "id": "2d21a0ce-8d0c-45d6-92ed-37ab244cbcb8",
+    "text": "Yalnız II"
+   },
+   {
+    "id": "a90b5e01-2859-4679-9ad4-6ec9b8208bf2",
+    "text": "Yalnız III"
+   },
+   {
+    "id": "1e61a95f-007c-4a42-8ead-87eeb01c492c",
+    "text": "I ve II"
+   },
+   {
+    "id": "389ac721-c70a-4da1-9824-abe98ab2093a",
+    "text": "III ve IV"
+   },
+   {
+    "id": "69925a26-2a64-4ae9-8f52-7b8f5f93c7fd",
+    "text": "II, III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "db6b970a-ac07-4786-85c9-16391e896936",
+  "stem": "A, sabah işe gitmek üzere aracının yanına gittiğinde aracının camının taş atılmak suretiyle kırıldığını fark eder ve durumu derhâl kolluk kuvvetlerine bildirir. Civardaki kamera kayıtlarını inceleyen kolluk görevlileri fiilin, evdeki çıkan tartışma dolayısıyla babasına kızgın olan oğlu B tarafından yapıldığını tespit eder.\nBuna göre aşağıdaki ifadelerden hangisi doğrudur?",
+  "explanation": "TCK m.167/1'e göre yağma ve nitelikli yağma hariç, malvarlığına karşı suçların üst soy veya alt soydan birinin zararına işlenmesi hâlinde ilgili akraba hakkında CEZAYA HÜKMOLUNMAZ — mutlak şahsi cezasızlık sebebi. Oğlun babasının aracına verdiği zarar (mala zarar verme) bu kapsamdadır; şikâyet olsa bile B cezalandırılamaz. Şikâyet süresi ise fiilin VE failin öğrenilmesiyle başlar (m.73/1); yalnız fiili öğrenmek süreyi başlatmaz, ancak fail bilinmeden de şikâyet hakkı kullanılabilir.",
+  "options": [
+   {
+    "id": "063842b9-15cb-48ef-9710-43f7900ccd3b",
+    "text": "A, aracın camını kim tarafından kırıldığını öğrenmeden şikâyet hakkını kullanamaz."
+   },
+   {
+    "id": "94975aa1-e9da-4de9-b036-76225c3c31ee",
+    "text": "A'nın aracının camının kırıldığını öğrendiği gün, şikâyet süresi işlemeye başlar."
+   },
+   {
+    "id": "9e690af3-8f78-440a-971c-a6e7dfcffeda",
+    "text": "B'nin aracın camının kırılmasından dolayı ceza alabilmesi A'nın şikâyetinin devam etmesine bağlıdır."
+   },
+   {
+    "id": "91396e62-d0ae-4e3f-8712-dfcf19612d9d",
+    "text": "Aracın camı kırılmış olsa bile bu durum, B açısından bir şahsi cezasızlık sebebi teşkil eder."
+   },
+   {
+    "id": "05a61b81-2b5c-48a1-a0a2-9ad034a31770",
+    "text": "Aracın camının kırılmasından dolayı B'nin cezası artırılarak uygulanır."
+   }
+  ]
+ },
+ {
+  "versiyonId": "576c20cf-0acf-432c-97d1-e9eb8af250cb",
+  "stem": "Cumhurbaşkanı tarafından Anayasa Mahkemesi üyesi olarak seçildiği Anayasa Mahkemesi Başkanlığınca tarafına tebliğ edilen serbest avukat A, görevi kabul etmez. Bu husus, Anayasa Mahkemesi Başkanı tarafından yazıyla Cumhurbaşkanlığına bildirilir.\n6216 sayılı Anayasa Mahkemesinin Kuruluşu ve Yargılama Usulleri Hakkında Kanun'a göre bu bildirimden itibaren kural olarak en geç ne kadar süre içinde Cumhurbaşkanı tarafından yeni üye seçilir?",
+  "explanation": "6216 sayılı Kanun'a göre Anayasa Mahkemesi üyeliğine seçilen kişinin görevi kabul etmemesi durumunda bu husus; TBMM'ce seçilmiş olması hâlinde TBMM Başkanlığına, Cumhurbaşkanınca seçilmiş olması hâlinde Cumhurbaşkanlığına, aday gösterilmesi söz konusu ise ilgili kurum ya da kurula Anayasa Mahkemesi Başkanı tarafından yazıyla bildirilir. BİLDİRİMDEN İTİBAREN AYNI USULE GÖRE BİR AY İÇİNDE YENİ ÜYE SEÇİLİR. Aday gösterecek kurulların tatilde bulunması hâlinde bu süre tatilin bitiminden itibaren başlar. Anayasa Mahkemesi on beş üyeden oluşur; üyelerin üçü TBMM, on ikisi Cumhurbaşkanı tarafından seçilir.",
+  "options": [
+   {
+    "id": "08c88165-e188-4753-b7ae-cf474f6c983f",
+    "text": "7 gün"
+   },
+   {
+    "id": "7c890d7a-1b79-488f-8efc-08f9d3ab8e3d",
+    "text": "15 gün"
+   },
+   {
+    "id": "f9164f11-85fb-477c-b802-f04e6728aaf9",
+    "text": "1 ay"
+   },
+   {
+    "id": "4cebca1a-7647-49a1-80f5-b8e6e64c4cd3",
+    "text": "45 gün"
+   },
+   {
+    "id": "8edbc47f-724d-48d0-9cce-ce803e7cce1c",
+    "text": "2 ay"
+   }
+  ]
+ },
+ {
+  "versiyonId": "051aff04-e43a-40e4-ab9b-f0333db89b91",
+  "stem": "Ahmet, düşmanı (C)'yi öldürmek amacıyla ateş etmiş; yaralanan (C) hastanede bir hafta sonra ölmüştür. Olayla ilgili;\nI. Ahmet öldürmeye teşebbüsten sorumludur.\nII. Ahmet doğrudan kastla hareket etmiştir.\nIII. Ahmet kasten öldürmeden sorumludur.\nIV. Yanında bulunan ve olaya katılmayan Burak, sırf engel olmadığı için iştirakçidir.\nifadelerinden hangileri doğrudur?",
+  "explanation": "Öldürme kastıyla ateş eden fail doğrudan kastla hareket etmiştir. Mağdurun daha sonra ölmesi suçu teşebbüs hâline getirmez; netice gerçekleştiği için tamamlanmış kasten öldürme vardır. Sırf engel olmamak iştirak için yeterli değildir.",
+  "options": [
+   {
+    "id": "db65d8eb-ba8b-4a1b-b341-94fd4be20065",
+    "text": "Yalnız III"
+   },
+   {
+    "id": "10dc9b74-6aab-4465-b78d-c57842b97dc0",
+    "text": "II ve III"
+   },
+   {
+    "id": "1716c38a-17fd-4f8a-91dd-3599ce39e960",
+    "text": "II ve IV"
+   },
+   {
+    "id": "a369703c-9681-45a8-bf37-667893f2564a",
+    "text": "I, II ve IV"
+   },
+   {
+    "id": "842a6274-fd2b-4811-9c6d-be79cf6793c8",
+    "text": "II, III ve IV"
+   }
+  ]
+ },
+ {
+  "versiyonId": "6ffc7ad9-bd60-42c6-bcab-d5e3f09bbcd6",
+  "stem": "Vergi dairesi veznedarı A, yatırılan vergilerin bir kısmını kayıtlara geçirmeyip kendisine almış ve bu yolla zimmetin ortaya çıkmasını önlemiştir. Hangi suç oluşur?",
+  "explanation": "Zimmetin açığa çıkmamasını sağlamaya yönelik hileli kayıt davranışları TCK md. 247/2'de ceza artırımı gerektiren nitelikli zimmettir.",
+  "options": [
+   {
+    "id": "3804171e-d95c-48e5-959e-d440d4ca12d0",
+    "text": "Güveni kötüye kullanma"
+   },
+   {
+    "id": "19cb52f4-0ea9-4493-8c35-26038418d9f0",
+    "text": "Resmî belgede sahtecilik ve zimmet"
+   },
+   {
+    "id": "a238fe35-aaff-4277-a233-88e5524a4fbb",
+    "text": "Resmî belgede sahtecilik ve güveni kötüye kullanma"
+   },
+   {
+    "id": "2ed04da5-6c07-4700-a660-b8f49cba939b",
+    "text": "Görevi kötüye kullanma"
+   },
+   {
+    "id": "f20871b5-d2fe-4846-9ab2-bac2ef94d045",
+    "text": "Nitelikli zimmet"
+   }
+  ]
+ },
+ {
+  "versiyonId": "b24aac41-ad31-40ab-8b86-187b6c65887f",
+  "stem": "A ve B, müşteri gibi girdikleri dükkânda pahalı bir halıyı almaktan vazgeçtiklerini söyleyip satıcının para üstü olarak verdiği dövizlerin bir kısmını el çabukluğuyla almıştır. Hangi suç oluşur?",
+  "explanation": "Fail, bağımsız zilyetliği kendisine devredilmeyen dövizi zilyedinin rızası dışında bulunduğu yerden almıştır. Hile, malın teslimini sağlamadığı için dolandırıcılık değil hırsızlık oluşur.",
+  "options": [
+   {
+    "id": "70df497a-d6fe-41c9-b86d-85950bf79c4e",
+    "text": "Sahtecilik"
+   },
+   {
+    "id": "56e3f847-4d48-4682-8be2-f50a45a6c208",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "90b6fb8a-3b09-44ee-830e-b44dd2d71dfc",
+    "text": "Hırsızlık"
+   },
+   {
+    "id": "6979e587-e131-4712-a5a6-1307c2f1f8df",
+    "text": "Yağma"
+   },
+   {
+    "id": "fcb610aa-0dba-4d09-91b8-8fc6e849b8c3",
+    "text": "Güveni kötüye kullanma"
+   }
+  ]
+ },
+ {
+  "versiyonId": "0f3ad71e-b59e-4ad6-b406-005ef054fb54",
+  "stem": "A, elektrik aboneliği yaptırdıktan sonra sayacı tüketim miktarının belirlenmesini engelleyecek biçimde devre dışı bırakıp elektrik kullanmaya başlamıştır. Eylemi hangi suçu oluşturur?",
+  "explanation": "Abonelik esasına göre yararlanılan elektriğin sahibinin rızası olmadan ve tüketimin belirlenmesini engelleyecek şekilde kullanılması karşılıksız yararlanmadır.",
+  "options": [
+   {
+    "id": "c1f6826b-15a8-48c9-a52b-42298f3512e8",
+    "text": "Hırsızlık"
+   },
+   {
+    "id": "6be2f63e-7d50-4aeb-899b-161e14710197",
+    "text": "Nitelikli hırsızlık"
+   },
+   {
+    "id": "8c80c7b5-66d5-42ed-a6b5-c0398a885bc0",
+    "text": "Güveni kötüye kullanma"
+   },
+   {
+    "id": "3ce05927-b8ba-4d6f-8539-b3251b6337bc",
+    "text": "Karşılıksız yararlanma"
+   },
+   {
+    "id": "a26333a0-03ac-43f8-a9b7-8aff323b9a6d",
+    "text": "Yalnız idari yaptırım gerektirir"
+   }
+  ]
+ },
+ {
+  "versiyonId": "ecd67dc0-6d43-43c8-a40c-4ce65e8597a3",
+  "stem": "H, mağazada denediği ceketi beğenmiş; satış bedelini ödemeden kabinde kendi ceketiyle değiştirip mağazadan çıkmıştır. Hangi suç oluşur?",
+  "explanation": "Ceket yalnız denenmesi için verilmiş, H'ye bağımsız zilyetlik ve tasarruf yetkisi devredilmemiştir. Malın mağazanın rızası dışında alınması hırsızlıktır.",
+  "options": [
+   {
+    "id": "c2e4f865-fba9-42db-9051-d8323ab5e50c",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "01582440-5527-4384-a08c-a749026a2aed",
+    "text": "Güveni kötüye kullanma"
+   },
+   {
+    "id": "eda10c62-38a9-4fd3-98de-80e688ebf5c7",
+    "text": "Karşılıksız yararlanma"
+   },
+   {
+    "id": "4516a05b-3c87-4cd5-bdb9-8256eeb09ff9",
+    "text": "Hırsızlık"
+   },
+   {
+    "id": "d44c3ab0-3d05-435a-b35f-90b2f7288022",
+    "text": "Sahtecilik"
+   }
+  ]
+ },
+ {
+  "versiyonId": "c7f1e8ee-9c2e-48c2-9808-2d7e3bc3829b",
+  "stem": "A, yüksek miktarda alkol aldıktan sonra güvenli biçimde kullanamayacak durumda olduğu otomobiliyle yüksek hızla orta refüje çarpmıştır. Hangi suç oluşur?",
+  "explanation": "Alkol etkisiyle emniyetli biçimde araç kullanamayacak durumda olmasına rağmen araç kullanan kişi TCK md. 179/3 uyarınca trafik güvenliğini tehlikeye sokar.",
+  "options": [
+   {
+    "id": "b4404809-338a-49c5-bfff-8197fb749d85",
+    "text": "Trafik güvenliğini taksirle tehlikeye sokma"
+   },
+   {
+    "id": "6834aad4-296e-43a5-993a-a3a0622af352",
+    "text": "Trafik güvenliğini tehlikeye sokma"
+   },
+   {
+    "id": "c733cea3-6354-4db9-ade5-db48a8a58c9d",
+    "text": "Mala zarar verme"
+   },
+   {
+    "id": "c1e564a3-4bea-4126-9065-005a94a33343",
+    "text": "Genel güvenliğin kasten tehlikeye sokulması"
+   },
+   {
+    "id": "1944c429-5a1e-4119-bc52-fc350ad66bd7",
+    "text": "Genel güvenliğin taksirle tehlikeye sokulması"
+   }
+  ]
+ },
+ {
+  "versiyonId": "1728f288-239d-40a2-bafa-2f5d2a07c1db",
+  "stem": "A, ileride trafiğe kapanan yolu gösteren trafik levhasını yerinden sökerek bir trafik kazasına neden olmuştur. Hangi suç oluşur?",
+  "explanation": "Ulaşımın güvenli akışı için konulan işareti kaldırarak başkalarının hayatı, sağlığı veya malvarlığı bakımından tehlike doğurmak TCK md. 179/1 kapsamındadır.",
+  "options": [
+   {
+    "id": "b1d93092-26f3-4659-a6ae-51e8c90e174d",
+    "text": "Genel güvenliğin kasten tehlikeye sokulması"
+   },
+   {
+    "id": "c92fb1e7-6fc3-4a5f-93b3-6806f938d022",
+    "text": "Genel güvenliğin taksirle tehlikeye sokulması"
+   },
+   {
+    "id": "9d367560-191d-4060-b312-63a8ea70f827",
+    "text": "Trafik güvenliğini tehlikeye sokma"
+   },
+   {
+    "id": "0309b195-2cb2-4fbb-9cc1-873300222534",
+    "text": "Trafik güvenliğini taksirle tehlikeye sokma"
+   },
+   {
+    "id": "5b3f63e6-e0f5-4c38-9fb1-589f5eb17ab4",
+    "text": "Yalnız işaret ve engel koymama"
+   }
+  ]
+ },
+ {
+  "versiyonId": "6ec6707c-e3fe-4d89-b027-6a373e7768c4",
+  "stem": "A, yurt dışında imal ettiği uyuşturucuyu Türkiye'ye sokmuş, ardından başka ülkeye göndermiştir. Bu hareketlerin aynı suç işleme kararı kapsamında gerçekleştirilmesi hâlinde sorumluluğu nedir?",
+  "explanation": "TCK md. 188/1'de imal, ithal ve ihraç aynı suçun seçimlik hareketleridir. Aynı suç işleme kararıyla birden fazlasının gerçekleştirilmesi tek suç oluşturur.",
+  "options": [
+   {
+    "id": "a8eb9415-cf43-4c21-ba94-863441099a36",
+    "text": "Tek uyuşturucu madde imal ve ticareti suçu oluşur"
+   },
+   {
+    "id": "7af7f5e5-24d1-4ace-954f-ca20a77f984d",
+    "text": "İthal ve ihraç nedeniyle iki ayrı suç oluşur"
+   },
+   {
+    "id": "c1ac241f-5485-4720-92e6-69c4e8000f26",
+    "text": "Yalnız ithal suçu oluşur"
+   },
+   {
+    "id": "d4b4799e-0b85-46a1-bfe6-18cbb6a434e7",
+    "text": "Yalnız ihraç suçu oluşur"
+   },
+   {
+    "id": "14b972c9-7202-4147-a057-ffdc581bfbcc",
+    "text": "Zincirleme suç hükümleri zorunlu olarak uygulanır"
+   }
+  ]
+ },
+ {
+  "versiyonId": "ba64a7ad-519b-44b9-aab5-42050c8e6de4",
+  "stem": "K, devlet hastanesinden aldığı üç günlük rapordaki '3' rakamını aynı renkte kalemle '9' yaparak raporu işyerine vermiştir. Hangi suç oluşur?",
+  "explanation": "Hastane raporu resmî belgedir. Gerçek resmî belgenin başkalarını aldatacak biçimde değiştirilip kullanılması resmî belgede sahteciliktir.",
+  "options": [
+   {
+    "id": "ab45f51b-1642-4b30-ac50-95f341bc5366",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "5a425ca3-224d-4da9-bd1e-b219f487788d",
+    "text": "Özel belgede sahtecilik"
+   },
+   {
+    "id": "0d5b4935-8dc9-424d-92f6-4bc733c2148d",
+    "text": "Resmî belgeyi bozma"
+   },
+   {
+    "id": "7716601e-9e93-4b88-8f13-8acd3a97d035",
+    "text": "Resmî belgede sahtecilik"
+   },
+   {
+    "id": "c8ebb262-1296-4b67-84e5-f4504b3d1960",
+    "text": "Özel belgeyi bozma"
+   }
+  ]
+ },
+ {
+  "versiyonId": "01be6926-5bd6-45d9-9220-a41e395b9db8",
+  "stem": "A, memuriyet başvurusunda istenen adli sicil belgesini sabıkası bulunmasına rağmen gerçeğe aykırı biçimde sabıkasız olarak düzenleyip kuruma teslim etmiştir. Hangi suç oluşur?",
+  "explanation": "Adli sicil belgesi resmî belgedir. A'nın belgeyi baştan sahte olarak düzenleyip kullanması TCK md. 204/1 kapsamındadır.",
+  "options": [
+   {
+    "id": "72fb8b89-974b-4e37-89e8-5e1293cfbb8b",
+    "text": "Resmî belgenin düzenlenmesinde yalan beyan"
+   },
+   {
+    "id": "ba18e5ac-b1bd-4895-b120-60cc5bca388e",
+    "text": "Resmî belgede sahtecilik"
+   },
+   {
+    "id": "8d531044-e305-40ce-9f26-fee06f27aa97",
+    "text": "Özel belgede sahtecilik"
+   },
+   {
+    "id": "ccadf1f3-1075-4577-a07d-cbfdcfd7e9b7",
+    "text": "Kamu görevinin usulsüz üstlenilmesi"
+   },
+   {
+    "id": "b51f6391-c7fc-4e63-adca-8f4f22a22388",
+    "text": "Görevi kötüye kullanma"
+   }
+  ]
+ },
+ {
+  "versiyonId": "9b9cb504-9451-430e-9ee2-14f927585719",
+  "stem": "A, babasının hazırladığı vasiyetnamedeki miras paylarını dışarıdan anlaşılmayacak biçimde değiştirip daha sonra mirasçılık belgesi almak için mahkemeye sunmuştur. Hangi suç oluşur?",
+  "explanation": "Vasiyetname özel belge niteliğinde olsa da TCK md. 210/1 gereği bu belge üzerindeki sahtecilikte resmî belgede sahtecilik hükümleri uygulanır.",
+  "options": [
+   {
+    "id": "c4782619-5673-4310-ada6-f56cab1e53a3",
+    "text": "Özel belgede sahtecilik"
+   },
+   {
+    "id": "ed67b912-38c3-4d2e-8abb-cd26352e4afe",
+    "text": "Resmî belgeyi bozma"
+   },
+   {
+    "id": "d79a2b79-c6d4-44cc-b8b6-7f0d95d4e871",
+    "text": "Özel belgeyi bozma"
+   },
+   {
+    "id": "b17cda30-ae8b-48bb-a812-2456287ca7db",
+    "text": "Resmî belgede sahtecilik"
+   },
+   {
+    "id": "33765810-3b1c-4348-bd76-407d682009b4",
+    "text": "Mala zarar verme"
+   }
+  ]
+ },
+ {
+  "versiyonId": "c7003c37-a784-4426-ac78-03e6f5460952",
+  "stem": "H, başkonsolosluğa pasaport başvurusu sırasında kimliği hakkında yalan beyanda bulunmuş ve bu beyana dayanılarak seyahat belgesi düzenlenmiştir. Hangi suç oluşur?",
+  "explanation": "Resmî belgeyi düzenlemeye yetkili kamu görevlisine, belgenin ispat gücünü etkileyen konuda yalan beyanda bulunmak TCK md. 206 kapsamındadır.",
+  "options": [
+   {
+    "id": "d1f2302b-904b-4f0b-a008-cdd8ea885132",
+    "text": "Resmî belgede sahtecilik"
+   },
+   {
+    "id": "621bd65d-4d2e-4ab7-bbb3-e033dc6d405a",
+    "text": "Özel belgede sahtecilik"
+   },
+   {
+    "id": "7563308e-70f7-403d-8252-c8e67ce8d35c",
+    "text": "Resmî belgenin düzenlenmesinde yalan beyan"
+   },
+   {
+    "id": "7819ef48-f019-43e2-8329-6e45be5252b9",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "7289c2b9-c2fd-48df-a528-e3b8efb0b0c4",
+    "text": "Resmî belgeyi bozma"
+   }
+  ]
+ },
+ {
+  "versiyonId": "1adbd3c9-3724-4271-8adc-8b6059cba848",
+  "stem": "A, lehtarı olduğu çekin tutarını 10.000 TL'den 15.000 TL'ye ve keşide tarihini değiştirerek bankaya ibraz etmiştir. Hangi suç oluşur?",
+  "explanation": "Çek emre yazılı kambiyo senedidir. TCK md. 210/1 gereği çek üzerindeki sahtecilikte resmî belgede sahtecilik hükümleri uygulanır.",
+  "options": [
+   {
+    "id": "64bd4171-2782-4f47-ba33-50efe7ce6a38",
+    "text": "Resmî belgeyi bozma"
+   },
+   {
+    "id": "231babdc-2fce-4af4-9e5e-0879361c3f4e",
+    "text": "Özel belgede sahtecilik"
+   },
+   {
+    "id": "6e28c1cd-542d-42e9-93c4-44ceeb91414c",
+    "text": "Yalnız dolandırıcılık"
+   },
+   {
+    "id": "2e094c93-b5ff-4142-ba8f-fd31bf134260",
+    "text": "Resmî belgede sahtecilik"
+   },
+   {
+    "id": "706b37b0-f498-45ef-afa0-ae33547e6976",
+    "text": "Suç oluşmaz"
+   }
+  ]
+ },
+ {
+  "versiyonId": "f3169da2-eaba-41bc-a599-e632048ca1ff",
+  "stem": "Kamu görevlisi B, görevi nedeniyle kendisine devredilen parayı kasaya koymak yerine kumarda harcamıştır. Hangi suç oluşur?",
+  "explanation": "Görev nedeniyle zilyetliği devredilen para üzerinde malik gibi tasarruf edilmesi zimmet suçunu oluşturur.",
+  "options": [
+   {
+    "id": "163b7638-ffdd-4991-8591-27083fede8ce",
+    "text": "Zimmet"
+   },
+   {
+    "id": "58e2021c-f7e4-49fc-9e45-001643d45b47",
+    "text": "İrtikâp"
+   },
+   {
+    "id": "4901f37d-ce8f-4a2b-be2f-99797542d6f5",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "13d349ee-c4bb-40ca-a597-d5b89095f527",
+    "text": "Rüşvet"
+   },
+   {
+    "id": "70de1fca-b644-47ba-943f-e01f1e23eac1",
+    "text": "Görevi kötüye kullanma"
+   }
+  ]
+ },
+ {
+  "versiyonId": "b9e60cb7-18e7-4df3-b904-ebe9f0b21ffd",
+  "stem": "Hastane saymanı H, döner sermayede toplanan paranın bir kısmını hastane çalışanlarının hesabına yatırmak yerine kendi hesabına aktarmıştır. Hangi suç oluşur?",
+  "explanation": "Görev nedeniyle zilyetliği H'ye devredilen paranın kendi hesabına geçirilmesi tamamlanmış zimmettir.",
+  "options": [
+   {
+    "id": "4e7ca25e-7d2d-4812-b223-b790a4f7e9c3",
+    "text": "Zimmete teşebbüs"
+   },
+   {
+    "id": "19af8130-7e84-4334-92aa-55094d5472f1",
+    "text": "Güveni kötüye kullanma"
+   },
+   {
+    "id": "8142755e-25e8-4100-b022-a627cdc62864",
+    "text": "Dolandırıcılık"
+   },
+   {
+    "id": "ce0b174f-4273-43e1-beb5-0243eb938e9d",
+    "text": "Zimmet"
+   },
+   {
+    "id": "cd242c02-5d75-4ab9-8091-12d4064bcece",
+    "text": "Görevi kötüye kullanma"
+   }
+  ]
+ }
+]

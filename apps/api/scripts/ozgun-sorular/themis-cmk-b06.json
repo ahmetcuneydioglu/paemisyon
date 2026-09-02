@@ -1,0 +1,1157 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Yer gösterme işlemi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yer gösterme yöntemi, kendisine yüklenen suç hakkında açıklamada bulunmuş olan şüpheli hakkında yaptırılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yer gösterme işlemini kural olarak Cumhuriyet savcısı yaptırabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Şüpheli susma hakkını kullansa bile yer gösterme işlemi sırasında hazır bulunup sorulan sorulara yanıt vermek zorundadır.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Soruşturmayı geciktirmemek kaydıyla müdafi de yer gösterme işlemi sırasında hazır bulunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yer gösterme işlemi tutanağa bağlanır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yer gösterme CMK m.85'te düzenlenir ve işlemin ön koşulu maddede açıkça yazılıdır: Cumhuriyet savcısı, kendisine yüklenen suç hakkında AÇIKLAMADA BULUNMUŞ OLAN şüpheliye yer gösterme işlemi yaptırabilir. Dolayısıyla susma hakkını kullanan şüpheli bakımından işlemin dayanağı yoktur; susan şüpheliyi yer göstermeye ve sorulara yanıt vermeye zorlamak hem m.85'in koşuluna hem de m.147'deki susma hakkı güvencesine aykırıdır. Susma hakkı ifade alma ve sorgunun her aşamasında geçerlidir ve kişinin sessiz kalması aleyhine yorumlanamaz. Diğer seçenekler maddeye uygundur: işlemi kural olarak Cumhuriyet savcısı yaptırır, soruşturmayı geciktirmemek kaydıyla müdafi de hazır bulunabilir ve işlem tutanağa bağlanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Otopsi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Otopsi, Cumhuriyet savcısının huzurunda biri adli tıp, diğeri patoloji uzmanı veya diğer dallardan birisinin mensubu veya biri pratisyen 2 hekim tarafından yapılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Müdafi veya vekil tarafından getirilen hekim de otopside hazır bulunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Zorunluluk bulunduğunda otopsi işlemi bir hekim tarafından da yapılabilir; bu durum otopsi raporunda açıkça belirtilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Otopsi savcı açısından keşif niteliğindedir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Ölümünden hemen önceki hastalığında öleni tedavi etmiş olan tabibe, otopsi yapma görevi verilemez ve bu tabibin otopsi sırasında hazır bulunmasına izin verilemez.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Otopsiyi düzenleyen CMK m.87, öleni son hastalığında tedavi etmiş hekim bakımından İKİ AYRI sonuç öngörür ve bunlar karıştırılmamalıdır: bu tabibe otopsi YAPMA GÖREVİ VERİLEMEZ, ancak otopsi sırasında HAZIR BULUNMASI ve hastalığın seyri hakkında bilgi vermesi İSTENEBİLİR. Yasak, tarafsızlık kaygısıyla yalnızca görevlendirmeye ilişkindir; hekimin bilgisinden yararlanmak ise soruşturmanın yararınadır. Bu nedenle hazır bulunmasına da izin verilemeyeceğini söyleyen ifade metne aykırıdır. Diğerleri m.87/1'e uygundur: otopsi kural olarak Cumhuriyet savcısının huzurunda, biri adlî tıp diğeri patoloji uzmanı ya da başka daldan veya pratisyen olmak üzere iki hekim tarafından yapılır; zorunluluk hâlinde tek hekimle de yapılabilir ve bu durum raporda açıkça belirtilir; müdafi veya vekilin getirdiği hekim de otopside hazır bulunabilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi tanık olarak yeminsiz dinlenemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kovuşturma konusu suça iştirakten sanık olanlar",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "15 yaşını doldurmuş olup da 18 yaşını doldurmamış olanlar",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Kovuşturma konusu suç nedeniyle suçluyu kayırmaktan hükümlü olanlar",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ayırt etme gücüne sahip olmadıkları için yeminin niteliğini ve önemini kavrayamayanlar",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kovuşturma konusu suçun kanıtlarını değiştirmekten şüpheli olanlar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.50 yeminsiz dinlenecek kişileri TAHDİDÎ olarak sayar: dinlenme sırasında on beş yaşını doldurmamış olanlar; ayırt etme gücüne sahip olmamaları nedeniyle yeminin niteliğini ve önemini kavrayamayanlar; soruşturma veya kovuşturma konusu suçlara iştirakten ya da bu suçlar nedeniyle suçluyu kayırmaktan veya suç delillerini yok etme, gizleme ya da değiştirmekten şüpheli, sanık veya hükümlü olanlar. Yaş bakımından tek bir eşik vardır: on beş. Bu nedenle on beş yaşını DOLDURMUŞ olup on sekiz yaşını doldurmamış tanık listenin dışındadır ve yeminle dinlenir; ceza sorumluluğundaki 15-18 yaş kademesi burada uygulanmaz. Sayım sınırlı olduğundan, listede yer almayan hiç kimse yalnızca yakınlık ya da sıfat gerekçesiyle yeminsiz dinlenemez.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre ölünün kimliğini belirleme ve adli muayene hakkında; I. Elde edilmiş bir şüpheli veya sanık varsa teşhis edilmek üzere ölü ona gösterilebilir. II. Adli muayenede ölünün tıbbî kimliği, ölüm zamanı ve ölüm nedenini belirlemek için tüm bulgular saptanır. Bu muayene, yargıç veya mahkemenin huzurunda ve bir hekim görevlendirilerek yapılır. III. Yeni doğanın cesedi üzerinde yapılacak adli muayenede, diğer hususlar yanında yaşama yeteneği bulunup bulunmadığı da saptanır. ifadelerinden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Ölü muayenesi ve otopside HUZUR koşulu tek bir merciye bağlanmıştır: CMK m.86/3 uyarınca ölünün adlî muayenesi CUMHURİYET SAVCISININ huzurunda ve bir hekim görevlendirilerek yapılır; m.87/1 otopsiyi de aynı biçimde savcının huzuruna bağlar. Muayeneyi yargıcın veya mahkemenin huzuruna bağlayan II bu nedenle yanlıştır. I doğrudur: m.86/1'e göre engelleyici sebepler yoksa ölünün kimliği kendisini tanıyanlara gösterilerek belirlenir ve elde edilmiş bir şüpheli veya sanık varsa teşhis edilmek üzere ölü ona da gösterilebilir. III de doğrudur: m.88, yeni doğanın cesedi üzerinde yapılacak ADLÎ MUAYENE VEYA OTOPSİDE doğum sırasında veya sonrasında yaşam bulgularının varlığını, olağan süresinde doğup doğmadığını ve yaşama yeteneğinin bulunup bulunmadığını saptama görevi verir; madde iki işlemi birlikte anar.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre Devlet sırrı konusunda tanıklıkla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bir suç olgusuna ilişkin bilgiler, Devlet sırrı olarak mahkemeye karşı gizli tutulamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tanıklık konusu bilgiler Devlet sırrı ise tanığı yalnızca yargıç veya mahkeme heyeti ve zabıt kâtibi dinler.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Yargıç veya mahkeme başkanı, tanık açıklamalarından yalnızca yüklenen suçu açıklığa kavuşturabilecek nitelikte olan bilgileri tutanağa kaydettirir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cumhurbaşkanı, Devlet sırrı konusunda tanıklık yapıp yapmayacağını kendisi takdir eder.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Devlet sırrına ilişkin tanıklık konusundaki düzenleme yalnızca alt sınırı 5 yıl ve daha fazla hapis cezası olan suçlarla ilgili olarak uygulanır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Devlet sırrı niteliğindeki bilgilerle ilgili tanıklık CMK m.47'de düzenlenir ve dinleme usulü olağan tanıklıktan ayrılır: tanık, SADECE mahkeme hâkimi veya heyeti tarafından ZABIT KÂTİBİ DAHİ OLMAKSIZIN dinlenir. Zabıt kâtibinin de bulunacağını söyleyen ifade bu nedenle metne aykırıdır; kuralın amacı sırra vâkıf olacak kişi sayısını en aza indirmektir. Hâkim veya mahkeme başkanı, dinlemeden sonra tanık açıklamalarından yalnızca yüklenen suçu açıklığa kavuşturabilecek nitelikte olanları tutanağa kaydettirir. Maddenin diğer kuralları seçeneklerde doğru verilmiştir: bir suç olgusuna ilişkin bilgiler Devlet sırrı olarak mahkemeye karşı gizli tutulamaz; hüküm yalnızca hapis cezasının alt sınırı BEŞ YIL veya daha fazla olan suçlarda uygulanır; Cumhurbaşkanının tanıklığında sırrın niteliğini ve mahkemeye bildirilmesi hususunu kendisi takdir eder.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre para ve Devlet tarafından çıkarılan tahvil ve Hazine bonosu gibi değerler üzerinde işlenen sahtecilik suçlarında, bu konudaki bilirkişi incelemesi aşağıdakilerden hangisine yaptırılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Adli Tıp Kurumuna",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kriminal polis laboratuvarlarına",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bunların asıllarını dolaşıma çıkaran kurumlara",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Üniversitelerin ilgili anabilim dallarına",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sahtecilik uzmanı herhangi bir bilirkişiye",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.73, para ile Devletin çıkardığı tahvil ve Hazine bonosu gibi değerler üzerinde işlenen sahtecilik suçlarında bilirkişi incelemesini özel bir mercie bağlar: elkonulan para ve değerlerin HEPSİ, bunların ASILLARINI TEDAVÜLE ÇIKARAN KURUMLARIN merkez veya taşra birimlerine incelettirilir. Türk parası bakımından bu kurum Türkiye Cumhuriyet Merkez Bankası, Devlet iç borçlanma senetleri bakımından ise ihracı yapan Hazine birimidir; çünkü aslın güvenlik özelliklerini kesin olarak yalnız ihraç eden kurum bilir. Yabancı devletlerin paraları ve değerleri söz konusu olduğunda ise maddenin ikinci fıkrası uyarınca yetkili Türk makamlarının görüşlerinin alınmasına karar verilir. Adlî Tıp Kurumu, kriminal polis laboratuvarları, üniversiteler veya serbest bilirkişiler bu inceleme bakımından kanunen öngörülen merci değildir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Yargıç II. Cumhuriyet savcısı III. Kolluk amiri Yukarıdakilerden hangilerinin tanıklara yemin verdirerek onları dinleme yetkisi vardır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tanığa yemin verdirme yetkisi CMK m.54'te iki merciye tanınmıştır. Birinci fıkra genel kuralı koyar: tanıklar tanıklıktan önce ayrı ayrı yemin ederler; gerektiğinde veya kişinin tanık sıfatıyla dinlenmesinin uygun olup olmadığında tereddüt varsa yemin tanıklıktan sonraya bırakılabilir. İkinci fıkra ise soruşturma evresi bakımından açık bir yetki verir: soruşturma evresinde Cumhuriyet savcıları da tanıklara yemin verirler. Böylece hâkim ve mahkemenin yanında Cumhuriyet savcısı da yeminli tanık dinleyebilir. Buna karşılık KOLLUĞUN yemin verdirme yetkisi yoktur; kolluk tanık beyanını yalnızca savcının emri ve denetimi altında tespit eder. Yemin, tanık beyanını yalan tanıklık suçunun yaptırımıyla desteklenen bir muhakeme işlemine dönüştürdüğü için yetki dar tutulmuştur.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi tanıklıktan çekinemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sanığın iş yerindeki amiri",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Sanığın nişanlısı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sanığın amcası",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sanığın babası",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sanığın evlatlığı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tanıklıktan çekinme hakkı CMK m.45'te SINIRLI olarak sayılan yakınlık ilişkilerine tanınmıştır: şüpheli veya sanığın nişanlısı; evlilik bağı kalmasa bile eşi; kan veya kayın hısımlığından üstsoy ve altsoyu; ÜÇÜNCÜ DERECE DÂHİL kan ve İKİNCİ DERECE DÂHİL kayın hısımları; aralarında evlâtlık bağı bulunanlar. Amca üçüncü derece kan hısmı, baba birinci derece üstsoy, evlâtlık ise maddede açıkça sayılan hâldir; nişanlı da listenin ilk sırasındadır. Buna karşılık İŞ YERİNDEKİ AMİR ile sanık arasında ne hısımlık ne de evlâtlık bağı bulunur; m.46'daki meslek ve sürekli uğraş sebebiyle çekinme hâlleri de amirlik ilişkisini kapsamaz. Sayım tahdidî olduğundan yakın dostluk, iş ilişkisi ya da bağlılık gibi fiilî yakınlıklar çekinme hakkı doğurmaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi yetkili makam ya da sanık tarafından izin verilse bile tanıklıktan çekinme hakkına sahiptir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Müşavirler",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Avukatlar",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Devlet memurları",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Doktor ve hemşireler",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kolluk görevlileri",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.46, meslek ve sürekli uğraş sebebiyle tanıklıktan çekinmeyi üç grup bakımından tanır: avukatlar ile stajyer ve yardımcılarının bu sıfatları dolayısıyla veya yüklendikleri yargı görevi sebebiyle öğrendikleri bilgiler; hekim, diş hekimi, eczacı, ebe ve diğer tıp meslek mensuplarının hastaları ve yakınları hakkında öğrendikleri bilgiler; malî işlerde görevlendirilmiş müşavirler ile noterlerin hizmet verdikleri kişiler hakkında öğrendikleri bilgiler. Ayrım maddenin İKİNCİ FIKRASINDADIR: (a) bendindeki AVUKATLAR DIŞINDA kalanlar, ilgilinin rızasının varlığı hâlinde tanıklıktan çekinemez. Yani hekim veya müşavir, hastası ya da müvekkili izin verdiğinde tanıklık yapmak zorundadır; avukat ise izin verilse dahi çekinme hakkını korur. Bunun nedeni, avukat ile müvekkil arasındaki güvenin yalnız kişiye değil savunma hakkına ve yargılamanın bütününe ait bir güvence sayılmasıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Otopsi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Otopsi hekimler açısından bilirkişi incelemesi niteliğinde iken, savcı açısından keşif niteliğindedir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Otopsi, cesedin durumu olanak verdiği takdirde, mutlaka baş, göğüs ve karnın açılmasını gerektirir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yeni doğanın cesedi üzerinde yapılan otopside, doğum sırasında veya doğumdan sonra yaşam bulgularının varlığı ve olağan süresinde doğup doğmadığı ve biyolojik olarak yaşamını rahim dışında sürdürebilecek kadar olgunlaşmış olup olmadığı veya yaşama yeteneği bulunup bulunmadığı saptanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Gömülmüş bulunan bir ceset, incelenmesi veya otopsi yapılması için mezardan çıkarılabilir. Bu karar, soruşturma evresinde yargıç ve kovuşturma evresinde mahkeme tarafından verilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Otopsi ya da mezardan çıkarma işlemleri yapılırken, cesedin görüntüleri kayda alınır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mezardan çıkarma CMK m.87/4'te düzenlenir ve karar mercii EVREYE göre ayrılır: soruşturma evresinde CUMHURİYET SAVCISI, kovuşturma evresinde MAHKEME karar verir. Soruşturma evresindeki yetkiyi yargıca veren ifade bu nedenle yanlıştır; soruşturma evresinde hâkim kararı gerektiren işlemler kanunda tek tek gösterilmiştir ve mezardan çıkarma bunlardan değildir. Karar, araştırmanın amacını tehlikeye düşürmeyecekse ve ulaşılması da zor değilse ölünün bir yakınına derhâl bildirilir. Diğer seçenekler maddeye uygundur: otopsi, cesedin durumu olanak verdiği takdirde mutlaka baş, göğüs ve karnın açılmasını gerektirir (m.87/2); yeni doğanın cesedinde yaşam bulguları ve yaşama yeteneği saptanır (m.88); bu işlemler yapılırken cesedin görüntüleri kayda alınır (m.87/5).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Bilirkişi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Çözümü uzmanlığı, özel veya teknik bilgiyi gerektiren durumlarda bilirkişinin oy ve görüşünün alınmasına, yalnızca Cumhuriyet savcısının, katılanın, vekilinin, şüphelinin veya sanığın, müdafinin veya yasal temsilcinin istemi üzerine karar verilebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yargıcın reddini gerektiren nedenler, bilirkişi hakkında da geçerlidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yargıçlık mesleğinin gerektirdiği genel ve hukuksal bilgi ile çözülmesi olanaklı konularda bilirkişi dinlenemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bilirkişi atanması ve gerekçe gösterilerek sayısının birden çok olarak saptanması yetkisi, yargıç veya mahkemeye aittir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bilirkişi raporunda, yargıç tarafından yapılması gereken hukuksal değerlendirmelerde bulunulamaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bilirkişiye başvurma kararının kaynağı CMK m.63/1'de gösterilmiştir ve bu karar TALEBE BAĞLI DEĞİLDİR: çözümü uzmanlığı, özel veya teknik bilgiyi gerektiren hâllerde bilirkişinin oy ve görüşünün alınmasına RE'SEN, Cumhuriyet savcısının, katılanın, vekilinin, şüphelinin veya sanığın, müdafiinin ya da kanunî temsilcinin istemi üzerine karar verilebilir. Yetkiyi yalnızca ilgililerin istemine bağlayan ifade bu nedenle yanlıştır; hâkim veya mahkeme kendiliğinden de bilirkişi görevlendirebilir. Diğerleri kanuna uygundur: hâkimin reddini gerektiren sebepler bilirkişi hakkında da geçerlidir (m.69/1); genel bilgi veya tecrübeyle ya da hâkimlik mesleğinin gerektirdiği hukukî bilgiyle çözülebilecek konularda bilirkişiye başvurulamaz (m.63/1); bilirkişi atanması ve sayısının gerekçe gösterilerek birden çok belirlenmesi hâkim veya mahkemeye aittir (m.63/2); bilirkişi, raporunda hâkim tarafından yapılması gereken hukukî nitelendirme ve değerlendirmelerde bulunamaz (m.67/3).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi bilirkişiyi reddedemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhuriyet savcısı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Müdafi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Şüpheli veya sanık",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Katılma isteği karara bağlanmamış olanlar",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Yasal temsilci",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bilirkişiyi reddedebilecek kişiler CMK m.69/2'de tek tek sayılmıştır: Cumhuriyet savcısı, KATILAN, vekili, şüpheli veya sanık, müdafii ve kanunî temsilci. Buradaki ölçüt sıfatın KAZANILMIŞ olmasıdır; katılma istemi henüz karara bağlanmamış kişi hukuken katılan sayılmadığından ret hakkını da kullanamaz. Katılma, mahkemenin kararıyla kazanılan bir sıfattır; karar verilinceye kadar ilgili yalnızca mağdur ya da suçtan zarar gören konumundadır. Ret hakkının kullanılabilmesi için hâkim veya mahkemece atanan bilirkişinin adı ve soyadı, engel sebepler olmadıkça ret hakkı sahiplerine bildirilir; reddi isteyen kişi bunun nedenini ve dayandığı olguları göstermekle yükümlüdür. Ret istemini davayı görmekte olan hâkim veya mahkeme; soruşturma evresinde Cumhuriyet savcısınca kabul edilmeyen istemi ise sulh ceza hâkimi inceler.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Ceza muhakemesinde bilirkişilik ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bilirkişi mütalaası, bir kanıt değil, kanıtların değerlendirilmesi aracıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tanıklara ilişkin hükümler, bilirkişiler hakkındaki özel düzenlemelere aykırı olmamak koşuluyla onlar hakkında da uygulanacaktır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bilirkişiler, adli yargı ilk derece mahkemelerinin adalet komisyonlarının yargı çevreleri esas alınarak komisyon tarafından hazırlanan listede yer alan kişiler arasından seçilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Öleni son hastalığında tedavi eden hekim, ölüm nedeni hakkında bilirkişi olarak atanamaz. Ancak bu hekimin otopsi sırasında hazır bulunması ve hastalığın seyri hakkında bilgi vermesi istenebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Hukuk öğrenimi görmüş kişiler, hukuk alanı dışında ayrı bir uzmanlığa sahip olduğunu belgelendirmedikçe, bilirkişi olarak görevlendirilemez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bilirkişilerin hangi listeden seçileceği 3/11/2016 tarihli 6754 sayılı Bilirkişilik Kanunuyla DEĞİŞTİRİLMİŞTİR; eski bilgi birçok kaynakta hâlâ yer aldığı için sık rastlanan bir tuzaktır. Yürürlükteki CMK m.64/1'e göre bilirkişiler, BÖLGE ADLİYE MAHKEMELERİNİN yargı çevreleri esas alınarak BİLİRKİŞİLİK BÖLGE KURULU tarafından hazırlanan listede yer alan kişiler arasından seçilir. Seçimi adlî yargı ilk derece mahkemesi adalet komisyonlarının hazırladığı listeye bağlayan ifade 2016 öncesindeki düzenlemeye aittir ve bugün yanlıştır. Diğer seçenekler doğrudur: tanıklara ilişkin hükümlerden bilirkişilik hükümlerine aykırı olmayanlar bilirkişiler hakkında da uygulanır (m.62); öleni son hastalığında tedavi eden hekime otopsi görevi verilemez, ancak hazır bulunması istenebilir (m.87/3); hukuk öğrenimi görmüş kişiler, hukuk alanı dışında ayrı bir uzmanlığa sahip olduğunu belgelendirmedikçe bilirkişi olarak görevlendirilemez (m.63/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Tanık kanıtı hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tanıklık görevi, yargıçlık görevinden önce gelir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalan yere tanıklıktan mahkûm olmuş kişiler tanık olabilirler.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Boşanmış olsa bile sanığın eşi tanıklıktan çekinebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Çağrılıp da mazeretsiz gelmeyen tanığa neden olduğu giderler ödettirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Çağrılıp da mazeretsiz gelmeyen tanığa 3 ay disiplin hapsi uygulanır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Tanığın iki ayrı aykırılığı iki ayrı yaptırıma bağlanmıştır ve bunlar karıştırılmamalıdır. ÇAĞRIYA UYMAMA hâlinde CMK m.44 uygulanır: usulüne uygun olarak çağrılıp mazeretini bildirmeksizin gelmeyen tanık ZORLA GETİRİLİR ve gelmemesinin sebep olduğu giderler takdir edilerek kamu alacaklarının tahsili usulüne göre ödettirilir; bu hâlde disiplin hapsi öngörülmemiştir. DİSİPLİN HAPSİ ise m.60'ta, yasal bir sebep olmaksızın TANIKLIKTAN VEYA YEMİNDEN ÇEKİNME hâline bağlanmıştır ve her hâlde üç ayı geçemez. Bu nedenle mazeretsiz gelmeyen tanığa üç ay disiplin hapsi uygulanacağını söyleyen ifade yanlıştır. Diğerleri doğrudur: tanıklık görevi hâkimlik görevinden önce gelir, aynı davada tanık olarak dinlenen kişi artık o davada hâkimlik yapamaz (m.22); evlilik bağı kalmasa bile eş tanıklıktan çekinebilir (m.45/1-b); yalan tanıklıktan mahkûmiyet ise tanıklık ehliyetini ortadan kaldırmaz, beyanın güvenilirliği takdirî delil olarak hâkimce değerlendirilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisinin keşif yapma yetkisi yoktur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargıç",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Naip yargıç",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İstinabe olunan yargıç",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Adli kolluk",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Cumhuriyet savcısı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Keşfi kimin yapabileceği CMK m.83/1'de sınırlı biçimde gösterilmiştir: keşif, HÂKİM veya MAHKEME, NAİP HÂKİM ya da İSTİNABE OLUNAN hâkim veya mahkeme tarafından; GECİKMESİNDE SAKINCA BULUNAN hâllerde ise CUMHURİYET SAVCISI tarafından yapılır. Bu sayımda ADLÎ KOLLUĞA yer verilmemiştir; kolluk keşfi hazırlar, işleme eşlik eder ve teknik destek verir, fakat keşif işleminin kendisini yürütme yetkisine sahip değildir. Keşif, delil değeri taşıyan bir yerin, kişinin veya nesnenin doğrudan duyularla algılanmasıdır ve algının yargılama makamınca yapılması vasıtasızlık ilkesinin gereğidir; savcıya tanınan yetki de bu ilkenin gecikme hâline özgü istisnasıdır. Keşif tutanağına, var olan durumun yanında olayın özel niteliğine göre varlığı umulup da elde edilemeyen delillerin yokluğu da yazılır (m.83/2).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yasal bir neden olmaksızın tanıklıktan çekinen kişi hakkında uygulanacak disiplin hapsiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Süresi 3 ayı geçemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kişi, tanıklığa ilişkin yükümlülüğüne uygun davransa bile karar infaz edilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Karar ertelenemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Karar seçenek yaptırımlara çevrilemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Karara itiraz edilebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yasal bir sebep olmaksızın tanıklıktan veya yeminden çekinen tanığa uygulanan disiplin hapsi CMK m.60'ta ZORLAMA amaçlı bir tedbir olarak kurgulanmıştır; amaç cezalandırmak değil, tanıklığın gerçekleştirilmesini sağlamaktır. Bu nedenle maddenin birinci fıkrası açıkça şunu söyler: kişi, tanıklığa ilişkin yükümlülüğüne uygun davranması hâlinde DERHÂL SERBEST BIRAKILIR. Yükümlülüğe uyulsa bile kararın infaz edileceğini söyleyen ifade tedbirin amacını tersine çevirdiği için yanlıştır. Diğerleri doğrudur: hapis, dava hakkında hüküm verilinceye kadar ve her hâlde ÜÇ AYI geçemez; karara itiraz edilebilir (m.60/4). Ertelenememesi ve seçenek yaptırımlara çevrilememesi ise m.2/1-l'deki tanımdan gelir: disiplin hapsi, seçenek yaptırımlara çevrilemeyen, ön ödeme uygulanamayan, tekerrüre esas olmayan, koşullu salıverilme hükümleri uygulanmayan, ertelenemeyen ve adlî sicil kayıtlarına geçirilmeyen bir hapistir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Karşılaştırmalı hukuk üzerinde uzmanlaşmış çevirmenler\nII. Hukuk fakültelerinde görevli öğretim üyeleri\nIII. İncelemenin yapılması için bilinmesi gerekli fen ve sanatları meslek edinenler\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdakilerden hangilerinin bilirkişiliği kabul yükümlülüğü yoktur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bilirkişiliği kabul yükümlülüğü CMK m.65'te ÜÇ grup için öngörülmüştür: resmî bilirkişilikle görevlendirilmiş olanlar ile m.64'teki listelerde yer almış bulunanlar; incelemenin yapılması için bilinmesi gerekli FEN VE SANATLARI MESLEK EDİNENLER; incelemenin yapılması için gerekli mesleği yapmaya RESMEN YETKİLİ olanlar. Sayım tahdidîdir; bu nedenle III'teki kişiler yükümlülük altındadır. Buna karşılık HUKUK FAKÜLTELERİNDE GÖREVLİ ÖĞRETİM ÜYELERİNİN böyle bir yükümlülüğü yoktur; dahası m.63/1, hukuk öğrenimi görmüş kişilerin hukuk alanı dışında ayrı bir uzmanlığı belgelendirmedikçe bilirkişi olarak görevlendirilemeyeceğini söyler, çünkü hukukî nitelendirme hâkimin işidir. KARŞILAŞTIRMALI HUKUK ÜZERİNDE UZMANLAŞMIŞ ÇEVİRMENLER de maddedeki üç gruptan hiçbirine girmez. Bu nedenle kabul yükümlülüğü bulunmayanlar I ve II'dir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Ceza muhakemesinde ortaya konulması istenen bir kanıt aşağıdaki durumlardan hangisinde reddedilmez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kanıt işkence sonucu elde edilmişse",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kanıt, arama kararı veya emri olmadan konutta yapılan bir arama sonucunda elde edilmişse",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kanıt ortaya koyma istemi, davayı uzatmak amacına yönelikse",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kanıt ortaya koyma istemi geç bildirilmişse",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Kanıt ile ispat edilmek istenen olayın karara etkisi yoksa",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Delilin reddi sebepleri CMK m.206/2'de sınırlı olarak sayılmıştır: delil kanuna aykırı olarak elde edilmişse; delille ispat edilmek istenen olayın karara etkisi yoksa; istem sadece davayı uzatmak maksadıyla yapılmışsa. İşkenceyle elde edilen delil ile arama kararı veya emri olmaksızın konutta yapılan aramadan elde edilen delil hukuka aykırı yolla elde edildiğinden ilk bende girer. Buna karşılık CMK m.207 bir reddi AÇIKÇA YASAKLAR: delilin ortaya konulması istemi, bunun veya ispat edilmek istenen olayın GEÇ BİLDİRİLMİŞ OLMASI nedeniyle reddedilemez. Kural, maddî gerçeğin araştırılmasını usul ekonomisine feda etmemek içindir; tarafların delillerini duruşmanın ilerlemiş bir aşamasında bildirmesi tek başına ret sebebi değildir. Ancak bildirim gerçekten davayı uzatma amacı taşıyorsa bu kez m.206/2-c uygulanır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre tanıklara yemin verdirme kuralının istisnalarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dinlenme sırasında 15 yaşını doldurmamış küçüklere yemin verdirilmez.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ayırt etme gücüne sahip olmaması nedeniyle yeminin niteliği ve önemini kavrayamayana yemin verdirilmez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Soruşturma konusu suçun kanıtlarını yok etmekten sanık olan kimseye yemin verdirilmez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Akrabalık nedeniyle tanıklıktan çekinme hakkına sahip olup da bu hakkını kullanmayan tanığa yemin verdirilmez.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Kovuşturma konusu suça iştirakten hükümlü olan tanığa yemin verdirilmez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yemin verdirme kuralının istisnaları iki ayrı maddede ve iki ayrı hukukî nitelikte düzenlenmiştir; ayrım kavranmadan soru çözülemez. CMK m.50 bir YASAK koyar: on beş yaşını doldurmamış olanlar, ayırt etme gücüne sahip olmadıkları için yeminin niteliğini ve önemini kavrayamayanlar ile soruşturma veya kovuşturma konusu suçlara iştirakten, suçluyu kayırmaktan ya da delilleri yok etme, gizleme veya değiştirmekten şüpheli, sanık veya hükümlü olanlar YEMİNSİZ DİNLENİR. CMK m.51 ise bir TAKDİR YETKİSİ tanır: m.45 gereğince tanıklıktan çekinebilecek olanlara yemin verip vermemek hâkim veya mahkemenin takdirine bağlıdır; ayrıca tanık yeminden çekinebilir ve bu husus kendisine bildirilir. Bu nedenle akrabalık sebebiyle çekinme hakkı olup da bu hakkını kullanmayan tanığa yemin verdirilemeyeceğini söylemek yanlıştır; burada yemin yasak değil, takdirîdir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre toplu olarak işlenen suçlarda gözaltı süresi en çok ne kadar uzatılabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Her defasında bir günü geçmemek üzere 4 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Her defasında bir günü geçmemek üzere 3 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "48 saat",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "24 saat",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Gözaltı süresinin uzatılması CMK m.91/3'te yalnız TOPLU OLARAK İŞLENEN suçlar için ve iki katmanlı bir sınırla düzenlenmiştir: delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu nedeniyle Cumhuriyet savcısı, gözaltı süresinin HER DEFASINDA BİR GÜNÜ GEÇMEMEK ÜZERE, toplam ÜÇ GÜN süreyle uzatılmasına YAZILI OLARAK emir verebilir. Uzatma tek seferde verilemez; savcı her gün yeniden değerlendirme yapmak ve emrini yazılı olarak vermek zorundadır, uzatma emri de gözaltına alınana derhâl tebliğ edilir. Bu süre, olağan gözaltı süresine EKLENİR: olağan süre, yakalama yerine en yakın hâkim veya mahkemeye gönderme için zorunlu süre hariç, yakalama anından itibaren yirmi dört saattir ve gönderme için zorunlu süre de on iki saati aşamaz. Kolluk amirlerine m.91/4 uyarınca tanınan yirmi dört ve kırk sekiz saatlik gözaltı yetkisiyle karıştırılmamalıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre taşınmazlara elkoymayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Soruşturma veya kovuşturma konusu suçun işlendiğine ve bu suçlardan elde edildiğine yönelik somut kanıtlara dayanan kuvvetli şüphe nedeni bulunmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Şüphelinin veya sanığın mülkiyetinde olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bu elkoyma ancak belli suçlar bakımından mümkündür.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Elkoyma kararını ancak yargıç verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Taşınmaz şüpheli veya sanığın zilyetliğinde olmalıdır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Taşınmazlara, hak ve alacaklara elkoymada CMK m.128/1 MÜLKİYET ile ZİLYETLİĞİ birbirinden ayırır; bu ayrım maddenin en çok sorulan noktasıdır. Tedbirin konusu şüpheli veya sanığa AİT malvarlığı değerleridir, yani mülkiyet bağı aranır. Buna karşılık aynı fıkranın devamı açıkça şunu söyler: somut olarak belirlenen bu taşınmaz, hak, alacak ve diğer malvarlığı değerlerinin şüpheli veya sanıktan BAŞKA BİR KİŞİNİN ZİLYETLİĞİNDE bulunması hâlinde DAHİ elkoyma işlemi yapılabilir. Bu nedenle taşınmazın şüpheli ya da sanığın zilyetliğinde olması gerektiğini söyleyen ifade yanlıştır; aksi hâlde malvarlığını üçüncü kişilere teslim ederek tedbirden kurtulmak mümkün olurdu. Diğerleri doğrudur: somut delillere dayanan kuvvetli şüphe sebebi aranır, tedbir m.128/2'deki katalog suçlarla sınırlıdır ve elkoymaya ANCAK HÂKİM karar verebilir. Son nokta bir tuzaktır: eski metindeki ağır ceza mahkemesince oy birliği ölçütü 24/11/2016 tarihli 6763 sayılı Kanunla kaldırılmıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre ifadesi alınmak için düzenlenen yakalama emri üzerine mesai saatleri dışında yakalanan ve belirlenen tarihte yargı mercii önünde hazır bulunmayı taahhüt eden kişinin serbest bırakılmasına kim karar verebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ağır ceza mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sulh ceza yargıçlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cumhuriyet savcısı",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Kolluk amiri",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kolluk personeli",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.94/3, 8/7/2021 tarihli 7331 sayılı Kanunla eklenmiştir ve İFADESİ ALINMAK amacıyla düzenlenen yakalama emri bakımından bir kolaylık getirir: MESAİ SAATLERİ DIŞINDA yakalanan ve belirlenen tarihte yargı mercii önünde hazır bulunmayı TAAHHÜT EDEN kişinin serbest bırakılması CUMHURİYET SAVCISI tarafından emredilebilir. Yetki savcıdadır; sulh ceza hâkimliğine, ağır ceza mahkemesine ya da kolluğa ait değildir. Hüküm iki sınırla dengelenmiştir: her yakalama emri için ancak BİR KEZ uygulanabilir ve taahhüdünü yerine getirmeyen kişiye, yakalama emrinin DÜZENLENDİĞİ YER Cumhuriyet savcısı tarafından idarî para cezası verilir. Kuralın amacı, yalnızca ifade almak için düzenlenmiş bir emir yüzünden kişinin geceyi nezarethanede geçirmesini önlemektir; tutuklama amacıyla düzenlenen yakalama emirleri bu fıkranın kapsamı dışındadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Yasaya uygun olarak yakalandıktan sonra haklarında kovuşturmaya yer olmadığına karar verilenler\nII. Eşyası veya diğer mal varlığı değerleri zamanında geri verilmeyenler\nIII. Yasal gözaltı süresi içinde yargıç önüne çıkarılmayanlar\nIV. Konutunu terk etmemek şeklindeki adli kontrol yükümlülükleri uygulandıktan sonra haklarında kovuşturmaya yer olmadığına karar verilenler\nYukarıdaki kişilerden hangilerinin koruma tedbirleri nedeniyle tazminat istemleri hakkında, 6384 sayılı Tazminat Komisyonunun Görevleri ile Çalışma Usul ve Esasları Hakkında Yasa hükümleri çerçevesinde kurulan Komisyon görevlidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I, II ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Koruma tedbirleri nedeniyle tazminatta GÖREV, 2/3/2024 tarihli 7499 sayılı Kanunla ikiye bölünmüştür. Kural olarak istem CMK m.142/2 uyarınca ağır ceza mahkemesinde karara bağlanır. Ancak aynı fıkra, m.141/1'in (e), (f) ve (l) BENTLERİ kapsamındaki istemler bakımından 6384 sayılı Kanun hükümlerinin uygulanacağını, yani TAZMİNAT KOMİSYONUNUN görevli olduğunu söyler. Bu bentler şunlardır: (e) kanuna uygun olarak yakalandıktan veya tutuklandıktan sonra haklarında kovuşturmaya yer olmadığına ya da beraatlerine karar verilenler; (f) gözaltı ve tutuklulukta geçirdiği süre hükümlülük süresinden fazla olanlar ile suçun karşılığı yalnız para cezası olduğu için bu cezayla cezalandırılanlar; (l) konutunu terk etmemek gibi adlî kontrol yükümlülükleri uygulandıktan sonra haklarında kovuşturmaya yer olmadığına veya beraatlerine karar verilenler. Buna karşılık gözaltı süresi içinde hâkim önüne çıkarılmama (b bendi) ve eşyanın zamanında geri verilmemesi (j bendi) bu listede yer almaz; bu istemlerde ağır ceza mahkemesi görevli kalmaya devam eder.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi iletişimin denetlenmesi tedbirinin uygulanabileceği suçlar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nitelikli hırsızlık",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yağma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cinsel taciz",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Rüşvet",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kasten öldürme",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İletişimin denetlenmesi CMK m.135'te düzenlenir ve tedbir yalnızca maddede TAHDİDÎ olarak sayılan KATALOG SUÇLAR bakımından uygulanabilir. Katalogda kasten öldürme, işkence, cinsel saldırı (birinci fıkra hariç), çocukların cinsel istismarı, göçmen kaçakçılığı ve insan ticareti, uyuşturucu veya uyarıcı madde imal ve ticareti, parada sahtecilik, suç işlemek amacıyla örgüt kurma, fuhuş, ihaleye fesat karıştırma, tefecilik, rüşvet, suçtan kaynaklanan malvarlığı değerlerini aklama ile Devletin güvenliğine ve anayasal düzene karşı suçlar yer alır; 21/2/2014 tarihli 6526 sayılı Kanunla NİTELİKLİ HIRSIZLIK (TCK m.142), YAĞMA (m.148, 149) ve nitelikli dolandırıcılık (m.158) da eklenmiştir. Buna karşılık CİNSEL TACİZ (TCK m.105) katalogda yer almaz; cinsel dokunulmazlığa karşı suçlardan yalnızca cinsel saldırı ile çocukların cinsel istismarı kataloğa alınmıştır. Katalog dışı bir suçta bu tedbire başvurulamaz.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi ceza muhakemesi hukukundaki gözlem altına almayı ifade eder?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suç işlediği şüphesiyle yakalanan kimsenin, Cumhuriyet savcısının yazılı emri üzerine, nezarethane denilen yere alınarak özgürlüğünün yargıç kararı olmaksızın sınırlandırılmasıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kişinin özgürlüğünün suç işlediği şüphesi üzerine yargıç kararıyla sınırlandırılmasıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Eylemi işlediği yolunda kuvvetli şüpheler bulunan şüpheli veya sanığın akıl hastası olup olmadığını, akıl hastası ise ne zamandan beri hasta olduğunu ve bunun, kişinin davranışları üzerindeki etkilerini saptamak için başvurulan bir yöntemdir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bir suça ilişkin kanıt elde etmek için şüpheli veya sanığın bedeninin tıbbî muayenesine ya da vücudundan kan veya cinsel salgı gibi örnekler alınmasıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Akıl hastası olduğu saptanan kişilere uygulanan tedbirler bütünüdür.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Gözlem altına alma CMK m.74'te düzenlenen ve AKIL SAĞLIĞININ SAPTANMASINA yönelik özel bir koruma tedbiridir: fiili işlediği yolunda kuvvetli şüpheler bulunan şüpheli veya sanığın akıl hastası olup olmadığını, akıl hastası ise ne zamandan beri hasta olduğunu ve bunun kişinin davranışları üzerindeki etkilerini saptamak için, uzman hekimin önerisi üzerine ve Cumhuriyet savcısı ile müdafiin dinlenmesinden sonra resmî bir sağlık kurumunda gözlem altına alınmasına karar verilebilir. Tanım benzer tedbirlerden dikkatle ayrılmalıdır: nezarethaneye alma GÖZALTIDIR (m.91); özgürlüğün hâkim kararıyla sınırlanması TUTUKLAMADIR (m.100); bedenin tıbbî muayenesi ile kan veya cinsel salgı gibi örnek alınması ise BEDEN MUAYENESİ VE VÜCUTTAN ÖRNEK ALMADIR (m.75-76). Gözlem süresi üç haftayı, ek sürelerle birlikte toplam üç ayı geçemez; müdafi bulundurulması zorunludur ve karara itiraz edilebilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre soruşturma evresinde şüphelinin tutukluluk durumunun devamının gerekip gerekmeyeceğinin en geç hangi aralıklarla incelenmesi gerekir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 hafta",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "3 ay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutukluluğun periyodik denetimi CMK m.108'de düzenlenir ve SORUŞTURMA evresi için açık bir süre öngörülmüştür: şüphelinin tutukevinde bulunduğu süre içinde ve EN GEÇ OTUZAR GÜNLÜK süreler itibarıyla tutukluluk hâlinin devamının gerekip gerekmediği, Cumhuriyet savcısının istemi üzerine sulh ceza hâkimince, şüpheli veya müdafii dinlenmek suretiyle değerlendirilir. Otuz gün bir ÜST SINIRDIR; hâkim daha kısa aralıklarla da inceleme yapabilir. Aynı madde kovuşturma evresinde de otuzar günlük denetimi öngörür ve tutuklu sanığın salıverilme istemini her oturumda ileri sürebileceğini kabul eder. Denetimin resen ve düzenli aralıklarla yapılması, bir kez verilen tutukluluk kararının kendiliğinden sürüp gitmesini engellemeye yöneliktir; hâkim her denetimde tutuklama sebeplerinin hâlâ var olup olmadığını yeniden değerlendirmek zorundadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yakalama emri ve nedenleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tutukevi veya ceza infaz kurumundan kaçan tutuklu veya hükümlü hakkında Cumhuriyet savcıları da yakalama emri düzenleyebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yakalanmış iken kolluk görevlisinin elinden kaçan sanık hakkında kolluk kuvvetleri de yakalama emri düzenleyebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Soruşturma evresinde çağrı üzerine gelmeyen şüpheli hakkında Cumhuriyet savcısı tarafından yakalama emri düzenlenebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Tutuklama isteminin reddi kararına itiraz durumunda, itiraz mercii tarafından da yakalama emri düzenlenebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kovuşturma evresinde kaçan sanık hakkında yakalama emri resen veya Cumhuriyet savcısının istemi üzerine yargıç veya mahkeme tarafından düzenlenir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yakalama emrini kimin düzenleyebileceği CMK m.98'de evrelere ve hâllere göre ayrılmıştır. SORUŞTURMA evresinde çağrı üzerine gelmeyen veya çağrı yapılamayan şüpheli hakkında yakalama emrini, Cumhuriyet savcısının istemi üzerine SULH CEZA HÂKİMİ düzenler; savcının kendiliğinden yakalama emri düzenleme yetkisi yoktur ve bu nedenle ilgili ifade yanlıştır. Ayrıca tutuklama isteminin reddi kararına itiraz hâlinde itiraz mercii de yakalama emri düzenleyebilir. KOVUŞTURMA evresinde kaçak sanık hakkındaki yakalama emri re'sen veya Cumhuriyet savcısının istemi üzerine hâkim veya mahkemece düzenlenir. Maddenin ikinci fıkrası ise dar bir istisna getirir: yakalanmışken kolluk görevlisinin elinden kaçan şüpheli veya sanık ya da tutukevi veya ceza infaz kurumundan kaçan tutuklu veya hükümlü hakkında Cumhuriyet savcıları VE KOLLUK KUVVETLERİ DE doğrudan yakalama emri düzenleyebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Kural olarak konutta gece vaktinde arama yapılabilir.\nII. Yakalanmış veya gözaltına alınmış olup da firar eden kişinin yeniden yakalanması amacıyla gece vakti konutunda arama yapılabilir.\nIII. Askeri mahallerde yapılacak arama, kural olarak Cumhuriyet savcısının nezaretinde askeri makamlar tarafından yerine getirilir.\n5271 sayılı Ceza Muhakemesi Yasası'na göre arama ile ilgili yukarıdaki ifadelerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Üç ayrı kural birlikte ölçülmektedir. GECE ARAMASI bakımından CMK m.118/1 kesin bir yasak koyar: konutta, işyerinde veya diğer kapalı yerlerde gece vaktinde arama YAPILAMAZ; bu nedenle aramanın kural olarak yapılabileceğini söyleyen I yanlıştır. Ancak m.118/2 istisnaları sayar: suçüstü veya gecikmesinde sakınca bulunan hâller ile YAKALANMIŞ VEYA GÖZALTINA ALINMIŞ OLUP DA FİRAR EDEN kişinin ya da tutuklu veya hükümlünün tekrar yakalanması amacıyla yapılan aramalarda gece yasağı uygulanmaz; II bu nedenle doğrudur. ASKERÎ MAHALLERDE arama ise 25/7/2018 tarihli 7145 sayılı Kanunla değiştirilen m.119/5'e göre Cumhuriyet savcısının NEZARETİNDE, askerî makamların KATILIMIYLA ve ADLÎ KOLLUK GÖREVLİLERİ TARAFINDAN yerine getirilir. Aramayı askerî makamların yaptığını söyleyen III bu nedenle yanlıştır; askerî makamların rolü katılım, icra ise adlî kolluğundur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi tutuklunun salıverilmesine karar veremez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhuriyet savcısı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sulh ceza yargıcı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bölge adliye mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yargıtay Cumhuriyet Başsavcısı",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Yargıtay Ceza Genel Kurulu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklunun salıverilmesine karar verebilecek merciler kanunda gösterilmiştir. Soruşturma evresinde Cumhuriyet savcısı, adlî kontrol veya tutuklamanın artık gereksiz olduğu kanısına varırsa şüpheliyi RE'SEN serbest bırakır (m.103/2); sulh ceza hâkimi ise salıverilme istemini karara bağlar (m.104/1-2). Dosya istinaf veya temyiz aşamasındaysa m.104/3 uyarınca salıverilme istemi hakkındaki kararı BÖLGE ADLİYE MAHKEMESİ, Yargıtayın ilgili dairesi ya da YARGITAY CEZA GENEL KURULU dosya üzerinde inceleme yaparak verir. Buna karşılık YARGITAY CUMHURİYET BAŞSAVCISI bir yargılama makamı değil iddia makamıdır; tebliğname düzenler ve kanun yoluna başvurur, fakat tutukluluk hakkında karar verme yetkisi yoktur. Karar verme yetkisi ile görüş bildirme yetkisini birbirinden ayırmak bu sorunun anahtarıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre kaçakların mal varlığına elkoymayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Elkoyma, kaçak sanığın duruşmaya gelmesini sağlamak amacıyla yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kaçağın müdafisi yoksa ona bir müdafi atanmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Elkoyma amaçla orantılı olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Katalog suçlardan birinin işlendiği yönünde şüphe olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Elkoyma kararı yalnızca kovuşturma evresinde verilebilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Zorlama amaçlı elkoyma CMK m.248'de düzenlenir ve kaçağın adalet önüne gelmesini sağlamaya yönelik bir baskı tedbiridir. Maddenin birinci fıkrası amacı çift yönlü belirler: kaçağın CUMHURİYET SAVCISINA BAŞVURMASINI veya DURUŞMAYA GELMESİNİ sağlamak. Savcıya başvurma soruşturma evresine ilişkin olduğundan tedbir yalnız kovuşturma evresine özgü değildir; kaldı ki karar, Cumhuriyet savcısının istemi üzerine SULH CEZA HÂKİMİ veya mahkeme tarafından verilir ve sulh ceza hâkiminin yetkili kılınması da soruşturma evresini işaret eder. Bu nedenle tedbiri yalnızca kovuşturmaya hasreden ifade yanlıştır. Diğerleri maddeye uygundur: elkoyma Türkiye'de bulunan mallara, hak ve alacaklara AMAÇLA ORANTILI olarak uygulanır, gerektiğinde idaresi için kayyım atanır, elkoyma ve kayyım atama kararı müdafie bildirilir ve tedbir maddenin ikinci fıkrasındaki katalog suçlarla sınırlıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre koruma tedbirleri nedeniyle tazminatta madde ve yer bakımından yetkili mahkeme kural olarak aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Koruma tedbirine karar veren yer bölge adliye mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Zarara uğrayanın oturduğu yer ağır ceza mahkemesi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Zarara uğrayanın yerleşim yerinin bulunduğu yer ağır ceza mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Koruma tedbirine karar veren yer mahkemesine en yakın ağır ceza mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Koruma tedbirine karar veren yer sulh ceza yargıçlığı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Koruma tedbirleri nedeniyle tazminatta madde ve yer bakımından yetki CMK m.142/2'de birlikte düzenlenmiştir: istem, ZARARA UĞRAYANIN OTURDUĞU YER AĞIR CEZA MAHKEMESİNDE karara bağlanır. Madde bakımından yetkili mahkeme her hâlde ağır ceza mahkemesidir; sulh ceza hâkimliği ya da bölge adliye mahkemesi görevli değildir. Yer bakımından ölçüt ise tedbire karar veren yer değil, ZARARA UĞRAYANIN OTURDUĞU yerdir; kanun teknik anlamda yerleşim yeri kavramını değil fiilen oturulan yeri esas almıştır ve bu ayrım sıkça sorulur. Maddede tek bir istisna vardır: zarara uğrayanın oturduğu yer ağır ceza mahkemesi tazminat konusu işlemle ilişkiliyse ve aynı yerde başka bir ağır ceza dairesi yoksa, istem EN YAKIN YER ağır ceza mahkemesinde karara bağlanır. Bu kural, kendi işlemini denetleyecek konumdaki mahkemenin karar vermesini önlemeye yöneliktir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Kolluk görevlileri\nII. Kolluk amiri\nIII. Cumhuriyet savcısı\n5271 sayılı Ceza Muhakemesi Yasası'na göre yukarıdakilerden hangileri gecikmesinde sakınca olsa bile arama kararı veya emri veremez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Arama kararı veya emrini kimin verebileceği CMK m.119/1'de kademeli olarak düzenlenmiştir: kural HÂKİM KARARIDIR; gecikmesinde sakınca bulunan hâllerde CUMHURİYET SAVCISININ, savcıya ulaşılamadığı hâllerde ise KOLLUK AMİRİNİN yazılı emriyle de arama yapılabilir. Ancak konutta, işyerinde ve kamuya açık olmayan kapalı alanlarda arama yalnızca hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle mümkündür; kolluk amirinin emri bu yerler bakımından yeterli değildir ve onun emriyle yapılan aramaların sonuçları Cumhuriyet Başsavcılığına derhâl bildirilir. Bu düzende KOLLUK GÖREVLİLERİ hiçbir hâlde arama kararı veya emri VEREMEZ; onların konumu kararı ya da emri UYGULAMAKTIR. Karar verme ile icra etme yetkisinin ayrılması, aramanın bir yargısal ya da savcılık denetiminden geçmesini güvence altına alır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre teknik araçla izleme tedbirinin koşullarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suç işlendiği yönünde somut kanıtlara dayanan kuvvetli şüphe nedenleri bulunmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Başka suretle kanıt elde edilmesi mümkün olmamalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tedbir, şüpheli veya sanığın kamuya açık yerlerdeki faaliyetleri ve işyerini kapsamalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Katalog suçlardan biri işlenmelidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Gecikmesinde sakınca bulunan durumlarda bile Cumhuriyet savcısı bu tedbire başvuramaz.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Teknik araçlarla izleme CMK m.140'ta düzenlenir. Maddenin birinci fıkrası hem koşulları hem de tedbirin SINIRINI birlikte verir: sayılan katalog suçların işlendiği hususunda SOMUT DELİLLERE DAYANAN KUVVETLİ ŞÜPHE sebepleri bulunması ve BAŞKA SURETLE DELİL ELDE EDİLEMEMESİ hâlinde, şüpheli veya sanığın KAMUYA AÇIK YERLERDEKİ FAALİYETLERİ VE İŞYERİ teknik araçlarla izlenebilir, ses veya görüntü kaydı alınabilir. Bu sınır nedeniyle konutta teknik araçlarla izleme yapılamaz. Karar mercii bakımından ise madde tek yetkiliye bağlamaz: kural olarak hâkim karar verir, ancak GECİKMESİNDE SAKINCA BULUNAN hâllerde CUMHURİYET SAVCISI da karar verebilir ve kararını hâkim onayına sunar. Bu nedenle savcının hiçbir hâlde bu tedbire başvuramayacağını söyleyen ifade yanlıştır. Karar en çok üç haftalık süre için verilir, gerektiğinde bir hafta daha uzatılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]
