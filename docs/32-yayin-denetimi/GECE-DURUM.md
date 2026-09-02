@@ -4,6 +4,11 @@ Bu dosya isin TEK KALICI DEVIR NOTUDUR. Oturum degistiginde once bu dosya okunur
 (2 Eyl 2026'da scratchpad'den buraya tasindi: scratchpad oturuma bagli gecici bir
 dizindir, oturum kapaninca silinir. Durum notu orada tutulmaz.)
 
+## !!! 3 EYL 2026 CRON TURU ICIN: **GECE-TALIMATI-3.md** OKU
+20 dakikada bir calisan cron turu bu dosyaya gore isler. Sira: CMK'nin kalani ->
+Idare Hukuku -> Idari Yargilama Hukuku. Kullanici karari: **kapsam degil kalite**;
+supheli/mukerrere yakin soru ALINMAZ, bir sayfadan sifir soru cikmasi normaldir.
+
 ## !! ONCE OKU: GECE-AKIS.md  (kota-optimize is akisi, 2 Eyl 2026)
 Sayfa gorsellerini ANA DONGUDE OKUMA — GECE-SAYFA-OKUYUCU.md'deki alt ajan sablonunu kullan.
 Denetimi her partide degil, 30-40 soru birikince tek turda calistir.
@@ -204,12 +209,31 @@ enjekte edilince cozuldu — milletvekili dokunulmazligi ARAMAYI kapsamaz).
 Koruma tedbirleri tazminat sorulari bu kanuna dayaniyor. mevzuat.gov.tr arama API'si ile
 cekilip `mevzuat-json-import.ts` ile eklenebilir.
 
+#### PARTI b06 KAPANDI — ISPAT (3 Eyl 2026)
+s-042..s-052 okundu: **49 soru -> 33 bankaya girdi**, denetim 33/33 yayimlanabilir,
+kusurlu 0, belirsiz 0. Run: wf_b066664d-d65. Banka: CMK 596 -> **629 yayinda**.
+Elemeler: 2 kural disi (1 doktrin "sanik tanik olamaz", 1 ictihat "rizayla arama"),
+1 supheli (s-045 S.10 cevap kutusu kesik), **8 banka mukerreri**, **5 parti ici tekrar**.
+Bosalan bloklar: m.43-73 (taniklik/yemin/bilirkisi/m.73 sahte para), m.83-89
+(kesif, yer gosterme, olu muayenesi, otopsi).
+
+Bu partide ogrenilen uc sey ARACA DONUSTU:
+- `ic-tarama.py` — PARTI ICI mukerrer taramasi. `mukerrer-tara.py` yalniz bankayla
+  karsilastiriyordu; ardisik sayfalarda ayni kurali soran ciftler temiz gecip
+  partiyle birlikte iceri giriyordu. 5 tekrar bu betikle ve elle yakalandi.
+- `karsilastir.py` — aday ile bankadaki esini yan yana doker. Tarayici YANLIS esi
+  isaretleyebiliyor (bir soruda oyle oldu; gercek es elle bulundu), o yuzden her
+  isaret elle bakilir.
+- Harita eslestirmesi artik **kok+SIK** anahtariyla. Iki otopsi sorusunun kokU
+  birebir aynidir; kok bazli eslestirme birini sessizce eziyordu (33 -> 32).
+
 #### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
 1. s-053..s-059 ve s-068..s-074 — koruma tedbirlerinin kalani
-2. s-042..s-052 — ispat (m.164-169 adli kolluk, m.177-184 savunma delilleri)
-3. s-075..s-083 — sorusturma evresi (5. Kismin ilk yarisi)
-4. s-006..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
-ISLENEN: s-060..s-067, s-084..s-116. KALAN: s-006..s-059, s-068..s-083.
+2. s-075..s-083 — sorusturma evresi (m.164-169 adli kolluk, m.177-183 savunma delilleri)
+3. s-006..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
+ISLENEN: s-042..s-052, s-060..s-067, s-084..s-116.
+KALAN: **s-001..s-041, s-053..s-059, s-068..s-083.**
+CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (bkz. GECE-TALIMATI-3.md).
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
 -> `denetim-yayinla.ts --sonuc <task .output> --yaz`.
 
@@ -389,6 +413,16 @@ ONEMLI FARK — Ozel Hukumler bolumu TCK m.76-345 arasini kapsar:
   curl -sL -A "Mozilla/5.0 ... Chrome/120.0 Safari/537.36" -o X.pdf \
     "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.<NO>.pdf"
   sonra mevzuat-json-import.ts ile bankaya ekle.
+
+## KONU ANLATIM KITABI — 3 EYL 2026'DA DARALTILDI
+
+Kullanici Idare Hukuku icin sunu soyledi: "idare hukukunun konu anlatimi olan
+Themis Konu - Idare Hukuku.pdf downloads klasorunde. bu sorulari olustururken
+buradaki konu anlatimini da baz alabilirsin."
+
+Ayrim korunuyor: **SORU** yalnizca "Themis Soru - ..." kitabindan alinir;
+konu anlatimi yalnizca **ACIKLAMA yazarken** basvuru kaynagidir. Konu anlatimindan
+soru URETILMEZ. Asagidaki yasak bu yonuyle gecerliligini surdurur.
 
 ## KONU ANLATIM KITABI YASAGI (kullanici karari — kesin)
 Drive'da "Themis Konu - ..." adli KONU ANLATIM kitaplari da var.
