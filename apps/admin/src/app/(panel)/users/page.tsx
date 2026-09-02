@@ -61,16 +61,35 @@ export default function UsersPage() {
 
   const invalidate = () => qc.invalidateQueries({ queryKey: ['users'] });
 
+  // Sessiz başarı ile sessiz iptali ayırt etmek için. 2 Eylül 2026'da bir kullanıcıya
+  // panelden premium verildiği sanıldı, istek aslında hiç gönderilmemişti (prompt
+  // kapatılmıştı) ve ekranda hiçbir iz kalmadığı için hata sonraki gün canlı denemede
+  // ortaya çıktı. Başarı da artık görünür.
+  const [bildirim, setBildirim] = useState<string | null>(null);
+
   const setStatus = useMutation({
     mutationFn: ({ id, status }: { id: string; status: 'active' | 'suspended' }) =>
       api(`/admin/users/${id}/status`, { method: 'POST', body: { status } }),
-    onSuccess: invalidate,
+    onSuccess: (_data, vars) => {
+      invalidate();
+      setBildirim(vars.status === 'suspended' ? 'Kullanıcı askıya alındı.' : 'Kullanıcı yeniden etkinleştirildi.');
+    },
   });
 
   const setPremium = useMutation({
     mutationFn: ({ id, isPremium, validUntil }: { id: string; isPremium: boolean; validUntil?: string }) =>
       api(`/admin/users/${id}/premium`, { method: 'POST', body: { isPremium, validUntil } }),
-    onSuccess: invalidate,
+    onSuccess: (_data, vars) => {
+      invalidate();
+      if (!vars.isPremium) {
+        setBildirim('Premium geri alındı.');
+      } else if (vars.validUntil) {
+        const bitis = new Date(vars.validUntil).toLocaleDateString('tr-TR');
+        setBildirim(`Premium verildi — ${bitis} tarihine kadar geçerli.`);
+      } else {
+        setBildirim('SÜRESİZ premium verildi.');
+      }
+    },
   });
 
   const totalPages = q.data ? Math.max(1, Math.ceil(q.data.total / q.data.pageSize)) : 1;
@@ -104,6 +123,22 @@ export default function UsersPage() {
           {(setStatus.isError || setPremium.isError) && (
             <div className="mb-4">
               <ErrorBox error={setStatus.error ?? setPremium.error} />
+            </div>
+          )}
+          {bildirim && (
+            <div
+              role="status"
+              className="mb-4 flex items-start justify-between gap-3 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800"
+            >
+              <span>{bildirim}</span>
+              <button
+                type="button"
+                onClick={() => setBildirim(null)}
+                aria-label="Bildirimi kapat"
+                className="shrink-0 text-emerald-600 hover:text-emerald-900"
+              >
+                ×
+              </button>
             </div>
           )}
           <Card className="p-0">

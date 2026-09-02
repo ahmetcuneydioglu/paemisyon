@@ -793,7 +793,16 @@ export class QuizService {
     }
 
     // Yeni soru → freemium günlük limit (re-answer sayılmaz).
-    if (!existing) {
+    //
+    // DENEME ve EXAM modları MUAFTIR. Randevulu deneme ayrı bir üründür:
+    // alıştırma kotasını tüketmesi de, sınavı ORTASINDAN KESMESİ de yanlıştır.
+    // 2 Eylül 2026'daki canlı denemede bu muafiyet yoktu ve ücretsiz kullanıcıların
+    // cevapları 30. soruda DAILY_LIMIT_REACHED ile reddedildi: 24 katılımcıdan
+    // sınavı tamamlayabilen tek kişi premium olandı, üç kişi kotasını gün içinde
+    // tükettiği için tek soru bile işaretleyemedi. Kullanıcılar "işaretledim ama
+    // kaydolmadı" diye bildirdi; sunucu gerçekten reddediyordu.
+    const gunlukLimiteTabi = session.mode !== 'deneme' && session.mode !== 'exam';
+    if (!existing && gunlukLimiteTabi) {
       await this.enforceDailyLimit(user);
     }
     const correct = version.options.find((option) => option.isCorrect);
