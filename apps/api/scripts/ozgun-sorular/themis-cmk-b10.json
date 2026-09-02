@@ -1,0 +1,142 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Sanık (A), nitelikli hırsızlık suçundan dolayı yargılanırken, mahkeme (A)'ya isnat edilen eylemin hırsızlık değil, yağma suçunu oluşturduğuna karar vermiştir.\n\nBuna göre olayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mahkeme Cumhuriyet savcısına bildirim yaparak bu kararı verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Mahkeme doğrudan böyle bir karar verebilir. Zira suçun hukuksal nitelemesini Cumhuriyet savcısı değil, mahkeme yapar.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mahkeme doğrudan böyle bir karar verebilir. Zira davasız yargılama olmaz ilkesini ihlal eden bir durum yoktur.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mahkeme ancak sanığa ek savunma hakkı tanıyarak bu kararı verebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Mahkemenin böyle bir karar verebilmesi mümkün değildir. Zira mahkeme sanığı iddianamede isnat edilen suçtan başkasıyla mahkûm edemez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Suçun hukukî niteliğinin değişmesi CMK m.226'da düzenlenir ve maddenin kurduğu denge iki ilkeyi uzlaştırır. Bir yandan m.225/2 uyarınca MAHKEME, FİİLİN NİTELENDİRİLMESİNDE İDDİA VE SAVUNMALARLA BAĞLI DEĞİLDİR; savcının yaptığı hukukî niteleme mahkemeyi bağlamaz, çünkü hukuku uygulamak yargılama makamının işidir. Öte yandan m.225/1 uyarınca hüküm ancak iddianamede unsurları gösterilen suça ilişkin FİİL VE FAİL hakkında verilebilir; davasız yargılama olmaz ilkesi fiil bakımından geçerlidir. m.226/1 bu ikisini birleştirir: sanık, suçun hukukî niteliğinin değişmesinden ÖNCE HABER VERİLİP savunmasını yapabilecek hâlde bulundurulmadıkça, iddianamede gösterilen kanun hükmünden başkasıyla mahkûm edilemez. Yani mahkeme nitelemeyi değiştirebilir ama önce EK SAVUNMA HAKKI tanımak zorundadır; istem üzerine sanığa ek savunmasını hazırlaması için süre de verilir (m.226/3). Aynı kural, cezanın artırılmasını veya güvenlik tedbiri uygulanmasını gerektiren hâller ilk defa duruşmada ortaya çıktığında da uygulanır. Bu nedenle mahkeme ne doğrudan karar verebilir ne de savcıya bildirimle yetinebilir; gereken şey sanığa ek savunma hakkı tanımaktır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi duruşmanın başlangıcında yapılması gereken işler arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tanık ve bilirkişilerin yoklamasını yapmak",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sanığın kimliğini saptamak",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Şüphe nedeniyle yargıcın reddi isteminde bulunmak",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yer yönünden yetkisizlik isteminde bulunmak",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Madde yönünden yetkisizlik isteminde bulunmak",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Soru, duruşmanın başlangıcında İLERİ SÜRÜLMESİ GEREKEN itirazlar ile HER AŞAMADA gözetilen hususları ayırıyor. Süreye bağlı olanlar şunlardır: YETKİSİZLİK iddiası, m.18/1-2 uyarınca ilk derece mahkemelerinde sanığın SORGUSUNDAN ÖNCE bildirilmeli ve karara bağlanmalıdır; bu aşamadan sonra yetkisizlik iddiasında bulunulamayacağı gibi mahkeme de re'sen karar veremez. Tarafsızlığı şüpheye düşüren sebeplerle HÂKİMİN REDDİ de m.25/1'e göre ilk derece mahkemelerinde sanığın sorgusu başlayıncaya kadar istenebilir. Sanığın kimliğinin saptanması ile tanık ve bilirkişilerin yoklaması ise m.191'de duruşmanın başlangıcındaki işler arasında sayılmıştır. Buna karşılık MADDE YÖNÜNDEN YETKİSİZLİK, yani GÖREVSİZLİK, süreye bağlı bir itiraz değildir: m.4/1'e göre davaya bakan mahkeme görevli olup olmadığına KOVUŞTURMA EVRESİNİN HER AŞAMASINDA RE'SEN karar verebilir. Ayrım şuradan gelir: yetki kamu düzenine ilişkin olmakla birlikte taraf menfaatiyle sınırlıdır, görev ise mahkemenin varlık şartıdır ve her zaman gözetilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Suçu öğrenme yollarından olan ihbar ve şikâyetle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Şikâyet, eylem ve failin öğrenilmesinden itibaren suçtan zarar gören tarafından en geç 3 ay içinde savcılığa yapılmalıdır.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İhbar veya şikâyet yazılı yapılabileceği gibi tutanağa geçirilmek kaydıyla sözlü olarak da yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Evinde hırsızlık yapılan kişinin komşusunun kolluğa durumu bildirmesi şikâyet değil, ihbardır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Şikâyet veya ihbar kaymakamlığa da yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Şikâyet üzerine Cumhuriyet savcısı, kamu davası açmak zorunda değildir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İhbar ve şikâyet CMK m.158'de düzenlenir; şikâyet SÜRESİ ise usul kanununda değil TCK m.73'tedir ve bu ayrım soruda ölçülmektedir. TCK m.73/1'e göre soruşturulması ve kovuşturulması şikâyete bağlı olan suç hakkında yetkili kimse ALTI AY içinde şikâyette bulunmazsa soruşturma ve kovuşturma yapılamaz; süre, zamanaşımını geçmemek koşuluyla şikâyet hakkı olan kişinin FİİLİ VE FAİLİN KİM OLDUĞUNU bildiği ya da öğrendiği günden başlar. Bu nedenle süreyi üç ay olarak veren ifade yanlıştır. Diğer seçenekler doğrudur: ihbar veya şikâyet yazılı ya da TUTANAĞA GEÇİRİLMEK ÜZERE SÖZLÜ olarak yapılabilir (m.158/5); valilik veya kaymakamlığa yapılan ihbar ve şikâyet ilgili Cumhuriyet Başsavcılığına gönderilir (m.158/2); suçtan zarar görmeyen üçüncü kişinin bildirimi şikâyet değil İHBARDIR, çünkü şikâyet hakkı suçtan zarar görene aittir. Son olarak savcı, şikâyet üzerine her hâlde kamu davası açmak zorunda değildir: m.171 uyarınca etkin pişmanlık ya da şahsî cezasızlık sebebi varsa kovuşturmaya yer olmadığı kararı verebilir, koşulları varsa kamu davasının açılmasını erteleyebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Davasız yargılama olmaz ilkesi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yargılama makamının bir davaya bakabilmesi için faile yüklenen eylemin suç oluşturduğunun ve failin cezalandırılması gerektiğinin iddia makamınca ileri sürülmesi gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İddia ve yargılama görevleri aynı kişi üzerinde birleşemez.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yargılama ancak hakkında dava açılan kişinin iddianamede gösterilen eylemi ile sınırlı olarak yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "5271 sayılı Ceza Muhakemesi Yasası'nda sözlü dava usulüne yer verilmiştir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Bu ilkenin istisnası olarak ilk derece mahkemelerinden verilen 15 yıl ve daha fazla hapis cezalarına ilişkin hükümler, bölge adliye mahkemesince resen incelenir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Davasız yargılama olmaz ilkesi, ceza muhakemesinde iddia ve yargılama makamlarının ayrılığını ifade eder ve dayanağı CMK m.225'tedir: hüküm, ancak İDDİANAMEDE UNSURLARI GÖSTERİLEN SUÇA İLİŞKİN FİİL VE FAİL hakkında verilir. Buna göre yargılama makamı kendiliğinden harekete geçemez; kamu davasını açma görevi m.170/1 uyarınca Cumhuriyet savcısına aittir ve savcı, yeterli şüphe oluşuyorsa iddianame düzenler. Yargılamanın sınırı da iddianamedeki fiildir; mahkeme fiilin nitelendirilmesinde bağlı değildir (m.225/2) ama fiilin kendisiyle bağlıdır. CMK bu ilkeyi tavizsiz uygular ve SÖZLÜ DAVA USULÜNE YER VERMEZ; kamu davası ancak yazılı iddianameyle ve iddianamenin kabulüyle açılır. Bu nedenle sözlü dava usulüne yer verildiğini söyleyen ifade yanlıştır. İlkenin bilinen bir istisnası ise kanun yolunda görülür: m.272/1 uyarınca ON BEŞ YIL VE DAHA FAZLA hapis cezalarına ilişkin hükümler, başvuru olmasa dahi bölge adliye mahkemesince RE'SEN incelenir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

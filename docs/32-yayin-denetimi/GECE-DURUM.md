@@ -314,11 +314,37 @@ Ozellikle degerli iki ayrim bankaya girdi:
 - m.201/2: heyet uyeleri DOGRUDAN soru sorar; baskan aracaligi yalnizca sanik
   ve katilan icindir.
 
-#### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
-1. s-081..s-083 — Besinci Kismin kalani
-2. s-001..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
-ISLENEN: s-042..s-080, s-084..s-116.
-KALAN: **s-001..s-041, s-081..s-083.**
+#### !!! DOYGUNLUK ESIGINE ULASILDI — s-081..s-083 ve s-006 (3 Eyl 2026)
+**21 soru okundu, YALNIZ 4'U ALINDI.** Bu, kitabin bu bolgesinde bankanin
+DOLDUGUNU gosteriyor. Uc soru BIREBIR mukerrerdi (yalniz isimler degismis):
+`s-006 S.1` -> ffe5bedc, `s-006 S.4` -> 29623d02, `s-081 S.2` -> c859f0bb.
+
+Madde doygunluk sayilari (3 Eyl 2026, CMK 681 iken):
+  m.2 -> 26 · m.223 -> 20 · m.135 -> 13 · m.171 -> 12 · m.174 -> 10
+  m.142 -> 7 · m.173 -> 6 · m.119 -> 6
+**m.223 tamamen doygun:** 6 aday geldi, ALTISI DA elendi. Bankada ayni kokle bir
+soru (a5cbff23), m.223/4 icin ayri bir soru (037d4774), hukum listesi icin iki soru
+(d3698d28, d458e184), zorunluluk/mesru savunma senaryolari icin uc soru
+(5485ca93, fb35535e, 675b112d) zaten var.
+
+**SONUC — s-001..s-041 BLOGU MUHTEMELEN DUSUK VERIMLI.** s-006'daki 5 sorudan
+2'si birebir mukerrer, 1'i doktrin, 1'i doygun m.2'ye dustu; yalniz 1 soru gecti.
+Kitabin giris bolumu bankaya buyuk olcude girmis gorunuyor. Bu blokta sayfa basina
+0-1 soru beklenmeli; SIFIR SORU CIKMASI NORMALDIR, zorlanmayacak.
+
+#### PARTI b10 (kuyrukta, denetim bekliyor)
+4 soru: m.226 (ek savunma — bankada 1 soru), m.4 (gorevsizlik her asamada resen;
+m.18 yetkisizlik ve m.25 hakimin reddi ise sorgudan once — m.4 bankada 0),
+m.225 (davasiz yargilama olmaz; CMK'da sozlu dava usulu YOK — m.225 bankada 0),
+m.158 + TCK m.73 (sikayet suresi ALTI AY; sure CMK'da degil TCK'dadir).
+harita-kur.py'ye TCK eslemesi eklendi (s-083 S.11'in dayanagi TCK m.73).
+
+#### SIRADAKI HEDEFLER
+1. s-007..s-041 — giris ve sujeler. DUSUK VERIM BEKLENIYOR (yukariya bak).
+   3-4 degil, 6-8 sayfa birden okutmak daha verimli olabilir.
+ISLENEN: s-006, s-042..s-116.
+KALAN: **s-001..s-005 (on sayfalar, muhtemelen icindekiler), s-007..s-041.**
+CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (GECE-TALIMATI-3.md).
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (GECE-TALIMATI-3.md).
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (bkz. GECE-TALIMATI-3.md).
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
