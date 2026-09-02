@@ -286,11 +286,40 @@ tarama yalnizca 1 mukerrer buldu. Cron oradan verimli devam eder.
 - **16 Nisan 2027** — AYM E.2025/18 karariyla iptal edilen hukum yururluge girer
   (m.229-230 civari; dipnot 74). Tarih gelmeden dokuman uzerinden dogrulanmali.
 
+#### PARTI b09 KAPANDI — MUHAKEMENIN EVRELERI (3 Eyl 2026)
+s-077..s-080 okundu: **20 soru -> 11 bankaya girdi**, denetim 11/11 yayimlanabilir,
+kusurlu 0. Run: wf_1ab6bc4a-7d2. CMK 670 -> **681**. Banka 5.583.
+
+9 eleme (1 supheli HAGB, 1 kitap kendi cozumuyle celisiyor, 7 ana dongude):
+- m.171 bankada 11 soruyla dolu: "kac yil erteleme" (ed381efd) ve ayni senaryonun
+  diger yarisi (03435956) zaten vardi -> 2 eleme.
+- m.223 bankada 18 soruyla dolu; iki aday "zorunluluk hali" noktasinda kesisiyordu,
+  ucu birden ayirt eden zengin olani tutuldu -> 1 eleme.
+- **2 soru ozunde TCK'ydi** (m.64 hukumlunun olumu, m.33 sagir-dilsiz). CMK
+  konusuna dosyalanirsa articleNo/topic bagi bozulur; denetim articleNo'yu
+  dogrulanan dayanaga bagliyor, "TCK m.64" bir CMK sorusunda tutarsiz kalir.
+  Ileride TCK gecisi yapilirsa oradan alinabilir.
+- 1 soru cevabini kanundan degil doktrin teriminden aliyordu ("hukuksal kesinti");
+  m.225/2 mahkemeyi hukuki nitelendirmeyle baglamadigi icin terim tartismali.
+
+**DOGRULANAN SEY:** "takdiri KYOK'a itiraz edilemez" kuralini doktrin sandim,
+kanunda acikca yaziyor — **CMK m.173/5**. Ezberden eleme yapma, maddeyi ac.
+
+#### BOS MADDE DOLDURULDU (b09)
+m.182 (durusmanin acikligi), m.194, m.195, m.204 -> hepsi 0 soruydu.
+m.170, m.201, m.207, m.216, m.232 -> 1'er soruydu.
+Ozellikle degerli iki ayrim bankaya girdi:
+- m.182/3 (kapalilik karari ve HUKUM ACIK durusmada aciklanir) ile m.185
+  (sanik 18 yasini doldurmamissa HUKUM DE KAPALI durusmada aciklanir) karsitligi.
+- m.201/2: heyet uyeleri DOGRUDAN soru sorar; baskan aracaligi yalnizca sanik
+  ve katilan icindir.
+
 #### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
-1. s-077..s-083 — sorusturma evresi (m.164-169 adli kolluk, m.177-183 savunma delilleri)
+1. s-081..s-083 — Besinci Kismin kalani
 2. s-001..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
-ISLENEN: s-042..s-076, s-084..s-116.
-KALAN: **s-001..s-041, s-077..s-083.**
+ISLENEN: s-042..s-080, s-084..s-116.
+KALAN: **s-001..s-041, s-081..s-083.**
+CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (GECE-TALIMATI-3.md).
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (bkz. GECE-TALIMATI-3.md).
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
 -> `denetim-yayinla.ts --sonuc <task .output> --yaz`.

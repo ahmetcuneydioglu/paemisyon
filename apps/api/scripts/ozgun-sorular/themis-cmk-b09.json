@@ -1,0 +1,387 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre kovuşturmaya yer olmadığına ilişkin kararla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kovuşturmaya yer olmadığına ilişkin karara karşı 15 gün içinde itiraz edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kovuşturmaya yer olmadığına ilişkin karar verildikten sonra aynı eylemden dolayı dava açılamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kovuşturmaya yer olmadığına ilişkin karara itirazı, savcının yargı çevresinde görev yaptığı ağır ceza mahkemesine en yakın ağır ceza mahkemesi inceler.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Savcı kovuşturmaya yer olmadığına ilişkin kararını bu konudaki takdir yetkisini kullanarak vermişse itiraz edilemez.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Kovuşturmaya yer olmadığına ilişkin karara itirazın reddi durumunda savcı hiçbir şekilde kamu davası açamaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kovuşturmaya yer olmadığı kararına itirazı CMK m.173 düzenler; maddenin BEŞİNCİ FIKRASI ise bir istisna getirir: “Cumhuriyet savcısının kamu davasının açılmaması hususunda TAKDİR YETKİSİNİ KULLANDIĞI hâllerde bu madde hükmü uygulanmaz.” Yani m.171 uyarınca etkin pişmanlık veya şahsî cezasızlık sebebiyle ya da kamu davasının açılmasının ertelenmesi yoluyla verilen kararlar itiraz yolunun dışındadır; itiraz, savcının delil yetersizliği gibi BAĞLI YETKİ ile verdiği kararlara karşıdır. Diğer seçenekler metne aykırıdır: itiraz süresi 2/3/2024 tarihli 7499 sayılı Kanundan bu yana on beş gün değil İKİ HAFTADIR ve itirazı, kararı veren savcının yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki SULH CEZA HÂKİMLİĞİ inceler (m.173/1); en yakın ağır ceza mahkemesi değildir. Ayrıca kovuşturmaya yer olmadığı kararı kesin hüküm doğurmaz: m.172/2 uyarınca yeni delil ortaya çıkmadıkça yeniden dava açılamaz, yani yeni delil çıkarsa açılabilir; aynı biçimde itirazın reddi hâlinde de savcı yeni delil varlığı nedeniyle kamu davası açabilir (m.173/6).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. (A)'nın ormanda ayı saldırısına uğrayıp başka türlü kurtulma olanağı kalmayınca (B)'ye ait dağ evinin kapısını kırarak içeri girmesi\nII. (A)'nın kendisinden boşanan (C)'nin çıplak görüntülerini sosyal medyada paylaştığı için hakkında açılan davada, iddia edilen suçu işlediğinin ispatlanamaması\nIII. (A)'nın kendisine karşı haksız saldırıda bulunan (D)'yi meşru savunmada sınırı telaş nedeniyle aşarak öldürmesi\n5271 sayılı Ceza Muhakemesi Yasası'na göre sanık (A) hakkında yürütülen yargılamada yukarıdaki durumlardan hangilerinde beraat kararı verilmesi gerekir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Soru, BERAAT ile CEZA VERİLMESİNE YER OLMADIĞI kararlarının sınırını ölçüyor; ikisi de sanığın lehinedir ama hukukî sonuçları farklıdır. CMK m.223/2 beraat sebeplerini sayar; bunlardan biri yüklenen suçun sanık tarafından işlendiğinin SABİT OLMAMASIDIR. II'de eylemin sanık tarafından işlendiği ispatlanamadığından beraat kararı verilir. Buna karşılık m.223/3, kusurluluğu ortadan kaldıran veya azaltan sebeplerin varlığı hâlinde ceza verilmesine yer olmadığı kararı verileceğini söyler ve bunlar arasında ZORUNLULUK HÂLİ ile MEŞRU SAVUNMADA SINIRIN HEYECAN, KORKU VE TELAŞLA AŞILMASI da vardır. I'de ayı saldırısından kurtulmak için başkasının konutuna girme zorunluluk hâlidir; III'te meşru savunmada sınır telaşla aşılmıştır. Her ikisinde de fiilin işlendiği sabittir, yalnızca kusur yoktur; bu nedenle beraat değil ceza verilmesine yer olmadığı kararı verilir. Ayrım önemlidir: ceza verilmesine yer olmadığı kararında fiilin sanık tarafından işlendiği kabul edilir ve koşulları varsa güvenlik tedbiri uygulanabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Hükümden önce son sözün verildiği aşamada zorunlu müdafi hazır değilse hüküm açıklanamaz.\nII. Kanıtın ortaya konulması istemi, bunun veya ispat edilmek istenen olayın geç bildirilmiş olması nedeniyle reddedilemez.\nIII. Cumhuriyet savcısı ile sanık veya müdafi birlikte rıza gösterse bile tanığın dinlenmesinden veya başka herhangi bir kanıtın ortaya konulmasından vazgeçilemez.\n5271 sayılı Ceza Muhakemesi Yasası'na göre kanıtların ortaya konulması ve tartışılmasıyla ilgili yukarıdaki ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Üç ayrı kural birlikte ölçülüyor. I YANLIŞTIR: CMK m.216/3'ün ilk cümlesi hükümden önce son sözün hazır bulunan sanığa verileceğini söyler; 2017'de eklenen ikinci cümle ise açıkça “Bu aşamada ZORUNLU MÜDAFİİN HAZIR BULUNMAMASI hükmün açıklanmasına engel teşkil etmez” demektedir. II DOĞRUDUR: m.207, delilin ortaya konulması isteminin, bunun veya ispat edilmek istenen olayın geç bildirilmiş olması nedeniyle reddedilemeyeceğini emreder; maddî gerçeğin araştırılması usul ekonomisine feda edilmez. III YANLIŞTIR: m.206/3, Cumhuriyet savcısı ile sanık veya müdafii BİRLİKTE RIZA GÖSTERİRLERSE tanığın dinlenmesinden ya da başka herhangi bir delilin ortaya konulmasından vazgeçilebileceğini kabul eder. Görüldüğü gibi kanun, tarafların ortak iradesine bu noktada değer tanımıştır; vazgeçme mutlak biçimde yasak değildir. Bu nedenle yanlış olanlar I ve III'tür.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre doğrudan soru yöneltmeyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhuriyet savcısı, müdafi veya vekil sıfatıyla davaya katılan avukat doğrudan soru yöneltme hakkına sahiptir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sanık ve katılan, mahkeme başkanı veya yargıç aracılığıyla soru yöneltebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Heyet olarak görev yapan mahkemelerde heyeti oluşturan yargıçlar, başkan aracılığıyla soru yöneltebilirler.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Sanığa, katılana, tanıklara, bilirkişilere ve duruşmaya katılan diğer kişilere doğrudan soru yöneltilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yöneltilen soruya itiraz edildiğinde, sorunun yöneltilmesi gerekip gerekmediğine mahkeme başkanı karar verir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Doğrudan soru yöneltme CMK m.201'de düzenlenir ve kişilere göre İKİ FARKLI usul öngörür. Birinci fıkraya göre Cumhuriyet savcısı ile müdafi veya vekil sıfatıyla duruşmaya katılan avukat; sanığa, katılana, tanıklara, bilirkişilere ve duruşmaya çağrılmış diğer kişilere duruşma disiplinine uygun olarak DOĞRUDAN soru yöneltebilir. Sanık ve katılan ise ancak MAHKEME BAŞKANI VEYA HÂKİM ARACILIĞIYLA soru yöneltebilir; hukukî yardım almayan tarafların soruları süzgeçten geçirilir. Yöneltilen soruya itiraz edilirse sorunun yöneltilmesinin gerekip gerekmediğine mahkeme başkanı karar verir. Maddenin İKİNCİ FIKRASI ise heyet üyeleri bakımından açıktır: heyet hâlinde görev yapan mahkemelerde heyeti oluşturan HÂKİMLER, birinci fıkrada belirtilen kişilere SORU SORABİLİR; başkan aracılığı şartı onlar için öngörülmemiştir. Bu nedenle heyet üyelerini başkan aracılığına bağlayan ifade yanlıştır; hâkimler yargılama makamının kendisidir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre sanığın duruşmada hazır bulunmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Muhakeme konusu suçun cezası adli para cezası ise sanığın yokluğunda duruşma yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sanık duruşmanın devamı sırasında savuşursa yokluğunda duruşmaya devam edilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Sanık duruşmadan bağışık tutulmuşsa yokluğunda duruşma yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Duruşmada hazır bulunduğu takdirde duruşmanın düzenini tehlikeye sokacağı anlaşıldığı için salondan çıkarılan sanığın yokluğunda duruşmaya devam edilebilir ve oturum bitirilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Tebligata rağmen mazeretsiz olarak gelmediği için sorgusu yapılamayan sanığın yokluğunda kanıtlar ortaya konulabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Sanığın duruşmada hazır bulunması kuraldır (CMK m.193) ve istisnaları kanunda tek tek gösterilmiştir. SAVUŞMA hâlini düzenleyen m.194/2 ise koşulludur: sanık savuşur veya ara vermeyi izleyen oturuma gelmezse, ÖNCEDEN SORGUYA ÇEKİLMİŞ OLMASI ve artık hazır bulunmasına MAHKEMECE GEREK GÖRÜLMEMESİ hâlinde dava yokluğunda bitirilebilir. Bu iki koşulu atlayarak savuşma hâlinde kendiliğinden yokluğunda devam edileceğini söyleyen ifade bu nedenle yanlıştır. Diğerleri kanuna uygundur: suç yalnız veya birlikte adlî para cezasını ya da müsadereyi gerektiriyorsa sanık gelmese bile duruşma yapılabilir (m.195); mahkemece sorgusu yapılmış sanık, kendisinin veya yetkili kıldığı müdafiin istemi üzerine duruşmada hazır bulunmaktan bağışık tutulabilir (m.196); duruşmanın düzenini bozduğu için salondan çıkarılan sanığın yokluğunda duruşmaya devam edilip oturum bitirilebilir (m.204); tebligata rağmen mazeretsiz gelmediği için sorgusu yapılamayan sanığın yokluğunda deliller ortaya konulabilir ve bunlar sonradan gelen sanığa bildirilir (m.206).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre hükmün gerekçesi tümüyle tutanağa geçirilmemiş ise açıklanmasından itibaren en geç kaç gün içinde dava dosyasına konulması gerekir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "15 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "1 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "3 ay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Hükmün gerekçesi CMK m.232'de düzenlenir ve maddenin üçüncü fıkrası gerekçenin ne zaman dosyaya konulacağını açık bir süreye bağlar: hükmün gerekçesi tümüyle tutanağa geçirilmemişse, açıklanmasından itibaren EN GEÇ ON BEŞ GÜN içinde dava dosyasına konulur. Kural, kısa kararla gerekçeli karar arasındaki boşluğun uzamasını ve tarafların kanun yoluna başvuru hazırlığının engellenmesini önler; gerekçe görülmeden başvuru sebeplerinin somutlaştırılması mümkün değildir. Maddenin diğer fıkraları gerekçenin İÇERİĞİNİ belirler: hükmün başına “Türk Milleti adına” verildiği yazılır; hükmü veren mahkemenin adı, heyet ve savcı ile zabıt kâtibinin, katılanın, mağdurun, vekilin ve müdafiin adları ile sanığın açık kimliği; beraat kararı dışında suçun işlendiği yer, tarih ve zaman dilimi; sanığın gözaltında veya tutuklu kaldığı tarih ve süre ile hâlen tutuklu olup olmadığı gösterilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi iddianamede yer alması gereken unsurlar arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maktul, mağdur veya suçtan zarar görenin kimliği",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Açıklanmasında sakınca bulunmaması durumunda ihbarda bulunan kişinin kimliği",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yüklenen suç ve uygulanması gereken yasa maddeleri",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Verilmesi gereken ceza miktarı",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Şüphelinin tutuklu olup olmadığı; tutuklanmış ise gözaltına alma ve tutuklama tarihleri ile bunların süreleri",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İddianamenin ZORUNLU UNSURLARI CMK m.170/3'te sayılmıştır: şüphelinin kimliği, müdafii, maktul, mağdur veya suçtan zarar görenin kimliği, mağdurun veya suçtan zarar görenin vekili ya da kanunî temsilcisi, açıklanmasında sakınca bulunmaması hâlinde ihbarda bulunan kişinin kimliği, şikâyette bulunan kişinin kimliği, şikâyetin yapıldığı tarih, yüklenen suç ve uygulanması gereken kanun maddeleri, suçun işlendiği yer, tarih ve zaman dilimi, suçun delilleri, şüphelinin tutuklu olup olmadığı ile tutuklanmışsa gözaltına alma ve tutuklama tarihleri ve süreleri. Bu sayımda VERİLMESİ GEREKEN CEZA MİKTARI YOKTUR; savcı iddianamenin sonuç kısmında yalnızca şüphelinin hangi kanun maddesine göre cezalandırılmasının talep edildiğini gösterir, ceza miktarını belirlemez. Bunun nedeni kuvvetler ayrımıdır: cezayı takdir etmek yargılama makamının işidir. Ayrıca iddianamede yüklenen suçu oluşturan olaylar mevcut delillerle İLİŞKİLENDİRİLEREK açıklanır ve şüphelinin lehine olan hususlar da gösterilir.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre sanığın duruşmadan bağışık (vareste) tutulmasıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bağışık tutma kararı verilebilmesi için mahkemenin, sanığın duruşmada hazır bulunmasına gerek görmemesi aranır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bağışık tutma kararı verilebilmesi için sanığın mahkemece sorgusu yapılmış olmalıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Mahkeme bağışık tutma kararını istem üzerine verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Mahkemenin bağışık tutma kararına rağmen sanık duruşmada hazır bulunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mahkeme, bağışık tutulan sanığın zorla getirilmesine karar veremez.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Duruşmadan bağışık tutma CMK m.196/1'de düzenlenir ve iki koşula bağlıdır: sanığın mahkemece SORGUSUNUN YAPILMIŞ olması ile sanığın kendisinin ya da bu hususta yetkili kıldığı müdafiin İSTEMİ. Karar mahkemenin takdirindedir; mahkeme sanığın hazır bulunmasına gerek görmüyorsa bağışık tutabilir. Ancak bağışık tutma kararı sanığı duruşmadan tümüyle koparmaz ve mahkemenin elini bağlamaz: CMK m.199, mahkemenin sanığın HAZIR BULUNMASINA ve ZORLA GETİRME KARARI VEYA YAKALAMA EMRİYLE getirilmesine HER ZAMAN karar verebileceğini söyler. Bu nedenle bağışık tutulan sanığın zorla getirilmesine karar verilemeyeceğini söyleyen ifade yanlıştır; bağışıklık mahkemenin takdirine dayandığı için her aşamada geri alınabilir. Aynı biçimde sanık, bağışık tutulmuş olsa bile duruşmada hazır bulunmayı kendisi tercih edebilir; bağışıklık bir hak olup yasak değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. Suç işlemek için örgüt kurmak suçları\nII. Kamu görevlisi tarafından görevi nedeniyle işlenen suçlar\nIII. Cinsel dokunulmazlığa karşı işlenen suçlar\n5271 sayılı Ceza Muhakemesi Yasası'na göre kamu davasının açılmasının ertelenmesi hükümleri, yukarıdaki suçların hangilerinde uygulanmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Kamu davasının açılmasının ertelenmesi CMK m.171'de düzenlenir ve maddenin altıncı fıkrası, 17/10/2019 tarihli 7188 sayılı Kanunla eklenen bir DIŞLAMA LİSTESİ içerir. Bu madde hükümleri şu suçlar hakkında UYGULANMAZ: suç işlemek için örgüt kurmak, yönetmek veya örgüte üye olmak suçları ile örgüt faaliyeti çerçevesinde işlenen suçlar; KAMU GÖREVLİSİ tarafından görevi sebebiyle veya kamu görevlisine karşı görevinden dolayı işlenen suçlar ile asker kişiler tarafından işlenen askerî suçlar; CİNSEL DOKUNULMAZLIĞA KARŞI işlenen suçlar. Bu nedenle sayılan üç grubun tamamında erteleme mümkün değildir. Dışlamanın gerekçesi, bu suçlarda kamu düzeni ve mağdurun korunması yararının, şüpheliyi yargılamadan uzak tutma yararına üstün görülmesidir. Erteleme kararı için ayrıca m.171/2 ve /3'teki koşullar aranır: uzlaştırma ve önödeme kapsamındaki suçlar hariç olmak üzere üst sınırı üç yıl veya daha az hapis cezasını gerektiren bir suç, şüphelinin daha önce kasıtlı bir suçtan hapis cezasına mahkûm olmamış bulunması ve zararın giderilmesi gibi.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre duruşmayla ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Duruşmada, hükme katılacak yargıçlar ve Cumhuriyet savcısı ile zabıt kâtibinin ve Yasa'nın zorunlu müdafiliği kabul ettiği durumlarda müdafinin hazır bulunması gerekir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sanık, 18 yaşını doldurmamış ise duruşma kapalı yapılır ancak hüküm aleni duruşmada açıklanır.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Genel ahlakın veya kamu güvenliğinin kesin olarak gerekli kıldığı durumlarda, duruşmanın bir kısmının veya tamamının kapalı yapılmasına mahkemece karar verilebilir. Duruşmanın kapalı yapılması konusundaki gerekçeli karar ile hüküm aleni duruşmada açıklanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kapalı duruşmanın içeriği hiçbir iletişim aracıyla yayımlanamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Ağır ceza mahkemelerinde yapılan duruşmalara Cumhuriyet savcısı katılmak zorundadır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Duruşmanın açıklığı bakımından kanun İKİ AYRI REJİM kurar ve fark HÜKMÜN NEREDE AÇIKLANACAĞINDADIR. Genel kural m.182'dedir: duruşma herkese açıktır; genel ahlâkın veya kamu güvenliğinin kesin olarak gerekli kıldığı hâllerde duruşmanın bir kısmının ya da tamamının kapalı yapılmasına mahkemece karar verilebilir; bu hâlde kapalılığa ilişkin GEREKÇELİ KARAR İLE HÜKÜM AÇIK DURUŞMADA açıklanır. Buna karşılık m.185 ZORUNLU KAPALILIK öngörür: sanık on sekiz yaşını doldurmamış ise duruşma kapalı yapılır ve HÜKÜM DE KAPALI DURUŞMADA AÇIKLANIR. Çocuğun kimliğinin ve yargılanmasının kamuya yansımaması esas olduğundan burada hükmün aleni açıklanması istisnası işlemez; bu nedenle ilgili ifade yanlıştır. Diğerleri kanuna uygundur: kapalı duruşmanın içeriği hiçbir iletişim aracıyla yayımlanamaz (m.187); duruşmada hükme katılacak hâkimler, Cumhuriyet savcısı ve zabıt kâtibi ile kanunun zorunlu müdafiliği kabul ettiği hâllerde müdafiin hazır bulunması şarttır (m.188).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre kovuşturmaya yer olmadığına ilişkin karara itiraz hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İtiraz yetkisi suçtan zarar görene aittir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İtiraz dilekçesinde kamu davasının açılmasını gerektirebilecek olgular ve kanıtlar belirtilmelidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İtirazın reddedilmesi durumunda; Cumhuriyet savcısının, yeni kanıt varlığı nedeniyle kamu davasını açabilmesi, önceden verilen dilekçe hakkında karar vermiş olan sulh ceza yargıçlığının bu hususta karar vermesine bağlıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Merci, kamu davasının açılması istemini yerinde görürse Cumhuriyet savcısı iddianame düzenleyerek mahkemeye verir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İtiraz konusunda karar verecek merci kararını vermeden soruşturmanın genişletilmesine gerek görürse bunu belirterek o yer sulh ceza yargıcını görevlendirebilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Kovuşturmaya yer olmadığı kararına itiraz usulü CMK m.173'te ayrıntılı biçimde düzenlenmiştir ve soruşturmanın genişletilmesi bakımından maddenin lafzı nettir: sulh ceza hâkimliği, kararını vermek için soruşturmanın genişletilmesine gerek görürse bu hususu açıkça belirtmek suretiyle O YER CUMHURİYET BAŞSAVCILIĞINDAN TALEPTE BULUNUR. Yani hâkimlik başka bir hâkimi görevlendirmez; eksik soruşturmayı yine soruşturma makamı tamamlar, çünkü delil toplamak savcılığın işidir. Bu nedenle o yer sulh ceza yargıcının görevlendirileceğini söyleyen ifade yanlıştır. Diğer seçenekler maddeye uygundur: itiraz hakkı SUÇTAN ZARAR GÖRENE aittir ve kararın tebliğinden itibaren iki hafta içinde kullanılır; itiraz dilekçesinde kamu davasının açılmasını gerektirebilecek olaylar ve deliller belirtilir; hâkimlik istemi yerinde bulursa Cumhuriyet savcısı iddianame düzenleyerek mahkemeye verir; itirazın reddi hâlinde savcının yeni delil nedeniyle kamu davası açabilmesi, önceden verilen dilekçe hakkında karar vermiş olan sulh ceza hâkimliğinin bu hususta karar vermesine bağlıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]
