@@ -1,0 +1,562 @@
+[
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki suçlardan hangisinin işlendiği hususunda kuvvetli şüphe nedenlerinin varlığı durumunda tutuklama nedeni var sayılamaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kamu görevlisine görevinden dolayı hakaret",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Çocukların cinsel istismarı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Silahla işlenmiş kasten yaralama",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Uyuşturucu veya uyarıcı madde imal ve ticareti",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kadına karşı işlenen kasten yaralama suçu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklama nedeninin VAR SAYILABİLECEĞİ katalog CMK m.100/3'tedir ve son yıllarda üç bentle genişletilmiştir. Kasten yaralama bakımından (a) bendinin 4 numaralı alt bendi TCK m.86/3'ün b, e ve f bentlerine — savunamayacak durumdaki kişiye karşı, SİLAHLA ve canavarca hisle işlenen hâllere — atıf yapar. Ayrıca 12/5/2022 tarihli 7406 sayılı Kanunla (i) KADINA KARŞI işlenen kasten yaralama ile (j) sağlık personeline karşı görevleri sırasında veya görevleri dolayısıyla işlenen kasten yaralama, 10/10/2024 tarihli 7528 sayılı Kanunla ise (k) öğretmenlere karşı işlenen kasten yaralama AYRI BENTLER olarak kataloğa alınmıştır. Çocukların cinsel istismarı ile uyuşturucu veya uyarıcı madde imal ve ticareti de katalogdadır. Buna karşılık KAMU GÖREVLİSİNE GÖREVİNDEN DOLAYI HAKARET katalogda yer almaz; kataloğa alınan bentlerin konusu kasten yaralamadır, aynı kişilere karşı işlenen hakaret veya tehdit değil. Katalog dışı suçlarda tutuklama nedeni somut olgularla ayrıca gösterilmelidir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre yakalanan veya gözaltına alınan kişinin durumu yakınlarına ne zaman bildirilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yakalandığı sırada hemen bildirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cumhuriyet savcısının emri üzerine gecikmeksizin bildirilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Hakkında kamu davası açıldığında bildirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yakalandığı tarihten itibaren 24 saat içinde bildirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sulh ceza yargıcına sevk edildiği tarihte bildirilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Bildirim yükümlülüğü tedbire göre AYRI MERCİLERE bağlanmıştır ve bu ayrım sık sorulur. Yakalama ve gözaltı bakımından CMK m.95/1 uygulanır: şüpheli veya sanık yakalandığında, gözaltına alındığında ya da gözaltı süresi uzatıldığında, CUMHURİYET SAVCISININ EMRİYLE bir yakınına veya belirlediği bir kişiye GECİKMEKSİZİN haber verilir. Tutuklama bakımından ise m.107/1 farklı bir merci gösterir: tutuklamadan ve tutuklamanın uzatılmasına ilişkin her karardan tutuklunun bir yakınına HÂKİMİN KARARIYLA gecikmeksizin haber verilir. Yani yakalama-gözaltıda savcının emri, tutuklamada hâkimin kararı esastır. Her iki hükümde de bildirim için yirmi dört saat gibi bir süre öngörülmemiştir; \"gecikmeksizin\" ibaresi derhâl bildirimi gerektirir. Yakalanan veya gözaltına alınan yabancıysa, yazılı olarak karşı çıkmaması hâlinde durum vatandaşı olduğu devletin konsolosluğuna bildirilir (m.95/2).",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "I. İletişimin dinlenmesi\nII. İletişimin tespiti\nIII. Sinyal bilgilerinin değerlendirilmesi\n\nYukarıdaki tedbirlerden hangilerine başvurulabilmesi için katalog suçlardan birinin işlendiği şüphesinin varlığı koşulu aranmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İletişimin denetlenmesi tek bir tedbir değildir; CMK m.135 üç ayrı işlemi düzenler ve KATALOG SINIRI hepsine uygulanmaz. Maddenin sekizinci fıkrası sınırı açıkça daraltır: bu madde kapsamında DİNLEME, KAYDA ALMA ve SİNYAL BİLGİLERİNİN DEĞERLENDİRİLMESİNE ilişkin hükümler ancak fıkrada sayılan katalog suçlarla ilgili olarak uygulanabilir. İLETİŞİMİN TESPİTİ bu sayımın dışındadır; m.135/6 tespiti ayrı bir fıkrada düzenler ve katalog koşulu aramaz. Bunun nedeni tespitin içeriğe değil, yalnızca iletişimin kimler arasında, ne zaman ve hangi araçla kurulduğuna ilişkin trafik bilgisine yönelmesidir; içeriğe girmediği için haberleşme hürriyetine müdahalesi daha hafiftir. Tespit kararı soruşturma aşamasında hâkim, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı, kovuşturma aşamasında mahkeme tarafından verilir ve savcının kararı yirmi dört saat içinde hâkim onayına sunulur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "(A) hakkında kuvvetli suç şüphesinin varlığını gösteren somut kanıtların varlığına dayanılarak zimmet suçunu işlediği gerekçesiyle soruşturma başlatılmıştır. Cumhuriyet savcısı (C), (A)'nın tutuklanmasını istemeyi düşünmektedir.\n\nOlayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hakkında tutuklama kararı istenildiğinde (A), kendisinin seçeceği veya baro tarafından görevlendirilecek bir müdafinin yardımından yararlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(A)'nın tutuklanmasına (C)'nin istemi üzerine sulh ceza yargıcı tarafından karar verilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "(A) hakkında tutuklama kararı verilmesi durumunda (C), soruşturma evresinde tutuklamanın artık gereksiz olduğu kanısına varırsa (A)'yı resen serbest bırakabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hakkında tutuklama kararı verilmesi durumunda (A), soruşturma evresinin her aşamasında salıverilmesini isteyebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "(A) hakkında soruşturma aşamasında tutukluluk süresi en çok 2 yıl olup gerekçesi gösterilerek 1 yıl daha uzatılabilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Olayda kritik nokta, tutukluluk sürelerinin EVREYE göre ayrılmasıdır. CMK m.102'nin ilk iki fıkrası KOVUŞTURMA evresine ilişkindir: ağır ceza mahkemesinin görevine girmeyen işlerde en çok bir yıl (altı ay uzatma ile), giren işlerde en çok iki yıl (uzatmalarla üç yıl, belirli suçlarda beş yıl). SORUŞTURMA evresi için ise m.102/4 çok daha kısa süreler öngörür: ağır ceza mahkemesinin görevine girmeyen işlerde altı ayı, giren işlerde BİR YILI geçemez; yalnızca Devletin güvenliğine karşı suçlar gibi belirli bölümlerdeki suçlar, Terörle Mücadele Kanunu kapsamındaki suçlar ve toplu olarak işlenen suçlar bakımından bu süre bir yıl altı aydır ve altı ay uzatılabilir. Bu nedenle soruşturma evresi için iki yıl artı bir yıl diyen ifade yanlıştır; iki yıl kovuşturma evresinin sınırıdır. Diğer seçenekler kanuna uygundur: tutuklama istenildiğinde müdafi görevlendirilir (m.101/3), karar savcının istemi üzerine sulh ceza hâkimince verilir (m.101/1), savcı re'sen serbest bırakabilir (m.103/2) ve şüpheli her aşamada salıverilme isteyebilir (m.104/1).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki suçlardan hangisinin işlendiği hususunda kuvvetli şüphe nedenlerinin varlığı durumunda tutuklama nedeni var sayılamaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kadına karşı işlenen kasten yaralama suçu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kaçakçılıkla Mücadele Yasası'nda tanımlanan ve hapis cezasını gerektiren suçlar",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sağlık kurum ve kuruluşlarında görev yapan personele karşı görevleri sırasında veya görevleri dolayısıyla işlenen tehdit suçu",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Göçmen kaçakçılığı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Özel öğretim kurumlarında öğretmen olarak görev yapanlara karşı görevleri sırasında veya görevleri nedeniyle işlenen kasten yaralama suçu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "CMK m.100/3 kataloğu 2022 ve 2024 değişiklikleriyle genişletilmiştir ve eklenen üç bendin ORTAK KONUSU KASTEN YARALAMADIR. 12/5/2022 tarihli 7406 sayılı Kanunla (i) kadına karşı işlenen kasten yaralama ile (j) sağlık kurum ve kuruluşlarında görev yapan personele karşı görevleri sırasında veya görevleri dolayısıyla işlenen kasten yaralama; 10/10/2024 tarihli 7528 sayılı Kanunla ise (k) Millî Eğitim Bakanlığına bağlı ve özel öğretim kurumlarındaki öğretmen, yönetici ve öğreticilere karşı görevleri sırasında veya görevleri sebebiyle işlenen kasten yaralama kataloğa alınmıştır. Sayım bu yönüyle DAR yorumlanır: aynı kişilere karşı işlenen TEHDİT, hakaret veya diğer suçlar katalogda yer almaz. Bu nedenle sağlık personeline karşı işlenen tehdit suçunda tutuklama nedeni var sayılamaz. Göçmen kaçakçılığı (a bendinin 2 numaralı alt bendi) ile Kaçakçılıkla Mücadele Kanunundaki hapis cezasını gerektiren suçlar (d bendi) ise katalogdadır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Aşağıdaki muhakeme tedbirlerinden hangisi için yargıç veya mahkeme kararı aranmaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yer gösterme",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Taşınmazlara, hak ve alacaklara elkoyma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tutuklama",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Moleküler genetik incelemeler yapılması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Adli kontrol",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Koruma tedbirlerinde yargısal karar kuralı geniştir ama mutlak değildir; soru bu istisnayı ölçer. YER GÖSTERME, CMK m.85 uyarınca CUMHURİYET SAVCISININ yaptırabileceği bir işlemdir ve hâkim ya da mahkeme kararı gerektirmez; savcı, kendisine yüklenen suç hakkında açıklamada bulunmuş olan şüpheliye bu işlemi yaptırabilir. Diğer tedbirlerin tamamı yargısal karara bağlıdır: taşınmazlara, hak ve alacaklara elkoymaya m.128/9 uyarınca ANCAK HÂKİM karar verebilir; tutuklamaya soruşturmada sulh ceza hâkimi, kovuşturmada mahkeme karar verir (m.101/1); moleküler genetik incelemeler m.79 uyarınca hâkim kararına bağlıdır; adlî kontrol ise m.110/1'e göre Cumhuriyet savcısının istemi ve SULH CEZA HÂKİMİNİN KARARIYLA uygulanır. Ayrım şuradan gelir: yer gösterme kişi hürriyetine ya da malvarlığına yeni bir sınırlama getirmez, mevcut açıklamanın yerinde somutlaştırılmasıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aramanın sona ermesi durumunda yapılacak işlemlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Aramanın sonunda hakkında arama işlemi uygulanan kimseye istemi üzerine, aramanın yasaya uygun yapıldığını ve şüpheli ve sanıkla ilgili olarak yapılan aramada soruşturma veya kovuşturma konusu eylemin niteliğini belirten bir belge verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Arama koruma tedbirlerinin uygulanması sırasında, yapılmakta olan soruşturma veya kovuşturmayla ilgisi olmayan ancak diğer bir suçun işlendiği şüphesini uyandırabilecek bir kanıt elde edilirse bu kanıt muhafaza altına alınır ve durum Cumhuriyet savcılığına derhâl bildirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hakkında arama işlemi uygulanan kimsenin belge veya kâğıtlarını inceleme yetkisi kolluğa, Cumhuriyet savcısına ve yargıca aittir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "İnceleme sonucu soruşturma veya kovuşturma konusu suça ilişkin olmadığı anlaşılan belge veya kâğıtlar ilgilisine geri verilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yargıç tarafından verilen arama kararlarına karşı itiraz yoluna başvurulabilmesi mümkündür.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Aramada ele geçen belge ve kâğıtları İNCELEME yetkisi CMK m.122/1'de dar tutulmuştur: bu yetki yalnızca CUMHURİYET SAVCISI VE HÂKİME aittir. Kolluk görevlileri arama işlemini yürütebilir, ancak ele geçirdikleri belge ve kâğıtların içeriğini inceleyemez; bu nedenle yetkiyi kolluğa da tanıyan ifade yanlıştır. Kural, özel yaşamın ve haberleşmenin gizliliğini korumak için getirilmiştir; kolluk incelemesi hem yargısal denetimi zayıflatır hem de gereksiz bilgi yayılmasına yol açar. Maddenin devamı inceleme sonrasını da düzenler: soruşturma veya kovuşturma konusu suça ilişkin olmadığı anlaşılan belge veya kâğıtlar ilgilisine geri verilir. Diğer seçenekler kanuna uygundur: arama sonunda ilgiliye istemi üzerine aramanın kanuna uygun yapıldığını gösteren bir belge verilir (m.121); arama sırasında başka bir suça ilişkin delil elde edilirse muhafaza altına alınır ve durum savcılığa derhâl bildirilir (m.138); hâkimin verdiği arama kararına m.267 uyarınca itiraz edilebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre koruma tedbirleri nedeniyle tazminat istemleri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İstem, zarara uğrayanın oturduğu yer ağır ceza mahkemesinde ve eğer o yer ağır ceza mahkemesi tazminat konusu işlemle ilişkili ise ve aynı yerde başka bir ağır ceza dairesi yoksa en yakın yer ağır ceza mahkemesinde karara bağlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tazminat davaları nedeniyle Avukatlık Asgari Ücret Tarifesi gereğince hesaplanan nispi avukatlık ücreti ödenir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ödenecek avukatlık ücreti miktarı Tarifede sulh ceza yargıçlıklarında takip edilen işler için belirlenen maktu ücretten az, ağır ceza mahkemelerinde takip edilen davalar için belirlenen maktu ücretten fazla olamaz.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İstinaf istemi üzerine bölge adliye mahkemesince karar yerinde görülmezse kaldırılır ve dosya yeniden karar verilmek üzere ağır ceza mahkemesine gönderilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Koruma tedbirleri nedeniyle tazminata ilişkin mahkeme kararları, kesinleşmeden ve idari başvuru süreci tamamlanmadan icra takibine konulamaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Koruma tedbirleri nedeniyle tazminat kararlarına karşı kanun yolu 2/3/2024 tarihli 7499 sayılı Kanunla DEĞİŞTİRİLMİŞTİR ve bu yenilik sınavlarda öne çıkar. Eski düzende istinaf mercii kararı yerinde görmezse kaldırıp dosyayı yeniden karar verilmek üzere ağır ceza mahkemesine gönderiyordu. Yürürlükteki düzenlemede ise BÖLGE ADLİYE MAHKEMESİ İŞİN ESASINA KARAR VERİR; dosya geri gönderilmez. Değişikliğin amacı, tazminat yargılamasının gidiş-gelişlerle uzamasını önlemektir. Bu nedenle dosyanın ağır ceza mahkemesine geri gönderileceğini söyleyen ifade yanlıştır. Diğer seçenekler maddeye uygundur: istem, zarara uğrayanın oturduğu yer ağır ceza mahkemesinde, o mahkeme tazminat konusu işlemle ilişkiliyse ve aynı yerde başka bir daire yoksa en yakın yer ağır ceza mahkemesinde karara bağlanır; tazminat davalarında nispî avukatlık ücreti ödenir ve bu ücret Tarifedeki sulh ceza maktu ücretinden az, ağır ceza maktu ücretinden fazla olamaz; kararlar kesinleşmeden ve idarî başvuru süreci tamamlanmadan icra takibine konulamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Tutuklama tedbiri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kasten insan öldürdüğü şüphesiyle hakkında soruşturma yürütülen bir kişinin, kuvvetli suç şüphesini gösteren olguların varlığı durumunda bile tutuklanmaması mümkündür.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Kovuşturma evresinde, sanığın tutuklanmasına mahkeme tarafından resen karar verilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tutuklama kararı verilebilmesi için suç işlendiği yönüne somut kanıtların bulunması gerekmez, kuvvetli suç şüphesini gösteren olguların varlığı yeterlidir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Yargıç, koşulları varsa şüphelinin tutuklanması yerine adli kontrol altına alınmasına da karar verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Soruşturma evresinde, Cumhuriyet savcısı şüpheliyi resen serbest bırakabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tutuklamanın ŞÜPHE EŞİĞİ 8/7/2021 tarihli 7331 sayılı Kanunla ağırlaştırılmıştır ve soru tam bu değişikliği ölçer. CMK m.100/1'in yürürlükteki metni, kuvvetli suç şüphesinin varlığını gösteren SOMUT DELİLLERİN bulunmasını arar; eski metinde yalnızca \"olguların\" varlığı aranıyordu. Dolayısıyla somut delil aranmadığını, olguların yeterli olduğunu söyleyen ifade yanlıştır. Aynı ağırlaştırma m.100/3'teki katalog için de yapılmıştır: orada da somut delillere dayanan kuvvetli şüphe sebepleri aranır. Diğer seçenekler kanuna uygundur: tutuklama ZORUNLU değil ihtiyarî bir tedbirdir, koşullar oluşsa bile hâkim tutuklamama yönünde karar verebilir ve adlî kontrolün yetersiz kalacağını gerekçelendirmek zorundadır (m.100/1, m.101/1); kovuşturma evresinde mahkeme savcının istemi üzerine VEYA RE'SEN karar verebilir (m.101/1); hâkim koşulları varsa tutuklama yerine adlî kontrole karar verebilir (m.109/1); soruşturma evresinde savcı tutuklamanın gereksiz olduğu kanısına varırsa şüpheliyi re'sen serbest bırakır (m.103/2).",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre duruşmada ilk olarak aşağıdaki işlemlerden hangisi yapılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sanığın açık kimliğinin saptanması",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tanıkların duruşma salonundan dışarı çıkarılması",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Sanığın ve müdafinin hazır bulunup bulunmadığı, çağrılmış tanık ve bilirkişilerin gelip gelmediklerinin saptanması",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "İddianame veya iddianame yerine geçen belgenin okunması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sanık açıklamada bulunmaya hazır olduğunu bildirdiğinde, usulüne göre sorgusunun yapılması",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Duruşmanın başlaması ve izlenecek SIRA CMK m.191'de adım adım gösterilmiştir. Önce sanığın ve müdafiin hazır bulunup bulunmadığı ile çağrılan tanık ve bilirkişilerin gelip gelmediği saptanır, sanık duruşmaya BAĞSIZ olarak alınır ve mahkeme başkanı veya hâkim duruşmanın başladığını İDDİANAMENİN KABULÜ KARARINI OKUYARAK açıklar. Ardından tanıklar salondan çıkarılır. Üçüncü fıkra asıl sırayı verir: (a) sanığın açık kimliği saptanır ve kişisel ile ekonomik durumu hakkında kendisinden bilgi alınır; (b) iddianamede veya iddianame yerine geçen belgede yer alan suçlamanın dayanağını oluşturan eylemler ve deliller ile suçlamanın hukukî nitelendirmesi anlatılır; (c) sanığa susma hakkı ile m.147'deki diğer hakları bildirilir; (d) sanık açıklamada bulunmaya hazır olduğunu bildirdiğinde usulüne göre sorgusu yapılır. Görüldüğü gibi KİMLİK TESPİTİ, suçlamanın anlatılmasından ve hakların bildirilmesinden ÖNCE gelir; sorgu ise en sondadır.",
+    "difficulty": "medium",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre iddianamenin iadesi hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suçun sübutuna doğrudan etki edecek mevcut bir kanıt toplanmadan düzenlenen iddianame iade edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Soruşturma veya kovuşturma yapılması izne veya isteme bağlı olan suçlarda izin alınmaksızın veya istem olmaksızın düzenlenen iddianame iade edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İddianame iade edildikten sonra, ilk kararda belirtilmeyen ancak sonradan fark edilen nedenlere dayanılarak yeniden iade edilebilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Ön ödemeye veya uzlaşmaya tâbi olduğu soruşturma dosyasından açıkça anlaşılan işlerde ön ödeme veya uzlaşma usulü uygulanmaksızın düzenlenen iddianame iade edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Suçun hukuksal nitelendirilmesi nedeniyle iddianame iade edilemez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İddianamenin iadesi CMK m.174'te düzenlenir ve maddenin üçüncü fıkrası önemli bir GÜVENCE içerir: iddianamenin iadesi üzerine Cumhuriyet savcısı eksik veya hatalı noktaları gidererek yeniden düzenlediği iddianameyi mahkemeye verdiğinde, İLK KARARDA BELİRTİLMEYEN sebeplere dayanılarak YENİDEN İADE EDİLEMEZ. Bu nedenle sonradan fark edilen nedenlerle yeniden iade edilebileceğini söyleyen ifade yanlıştır. Kural, iddianamenin gidiş-gelişlerle sürüncemede kalmasını ve kamu davasının açılmasının fiilen engellenmesini önler; mahkeme iade gerekçelerini bir defada ve eksiksiz göstermek zorundadır. İade sebepleri ise maddenin ikinci fıkrasında sayılmıştır: suçun sübutuna doğrudan etki edecek mevcut bir delil toplanmadan düzenlenmesi; ön ödemeye veya uzlaşmaya tâbi olduğu dosyadan açıkça anlaşılan işlerde bu usuller uygulanmaksızın düzenlenmesi; soruşturma veya kovuşturma yapılması izne ya da isteme bağlı suçlarda izin veya istem olmaksızın düzenlenmesi. Aynı fıkra bir sınır da koyar: suçun HUKUKÎ NİTELENDİRİLMESİ sebebiyle iddianame iade edilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdakilerden hangisi mağdur ile şikâyetçinin kovuşturma evresindeki hakları arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Duruşmadan haberdar edilme",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tutanak ve belgelerden yalnızca vekili aracılığıyla örnek alma",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Davaya katılma",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Tanıkları davet",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yasa yoluna başvurma",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mağdur ile şikâyetçinin hakları CMK m.234'te evrelere göre ayrılarak sayılmıştır. KOVUŞTURMA evresindeki haklar şunlardır: duruşmadan haberdar edilme, kamu davasına katılma, tutanak ve belgelerden ÖRNEK İSTEME, tanıkların davetini isteme, vekili bulunmaması hâlinde cinsel saldırı suçu ile alt sınırı beş yıldan fazla hapis cezasını gerektiren suçlarda baro tarafından kendisine vekil görevlendirilmesini isteme, kanun yollarına başvurma. Görüldüğü gibi tutanak ve belgelerden örnek isteme hakkı doğrudan mağdura tanınmıştır; bu hakkı YALNIZCA VEKİLİ ARACILIĞIYLA kullanabileceğini söyleyen ifade maddeye aykırıdır. Ayrım önemlidir: kanun mağduru vekil tutmaya zorlamaz, aksine vekili olmayan mağdur için belirli suçlarda baro tarafından vekil görevlendirilmesini öngörerek onu destekler. Soruşturma evresinde ise mağdurun hakları daha dardır ve delillerin toplanmasını isteme, kısıtlama kararı olmadıkça dosyayı inceleme gibi haklarla sınırlıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Hırsızlık suçu işlediği ileri sürülen (A) hakkında Cumhuriyet savcılığı bir iddianame düzenleyerek mahkemeye vermiş ve mahkemece iddianamenin kabulü kararı verildikten sonra (A)'nın, akıl hastası olduğu ileri sürülmüştür. Yargılama devam ederken toplanan kanıtlara göre (A)'nın suçu işlemediği kesin olarak saptanmıştır. Bu durumda mahkemenin vereceği karar aşağıdakilerden hangisi olmalıdır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Durma",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ceza verilmesine yer olmadığı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Düşme",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ret",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Beraat",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Olayda iki ayrı karar sebebi yarışmaktadır: sanığın akıl hastası olması ile suçu işlemediğinin kesin olarak saptanmış olması. CMK m.223 bu yarışmayı açık bir öncelik kuralıyla çözer: DERHÂL BERAAT kararı verilebilecek hâllerde durma, düşme veya CEZA VERİLMESİNE YER OLMADIĞI kararı VERİLEMEZ. Akıl hastalığı kusur yeteneğini kaldırdığı için normalde ceza verilmesine yer olmadığı kararına götürür; ancak sanığın fiili işlemediği kesin olarak saptandığında beraat kararı verilmesi gerekir. Beraat, sanığın lehine olan ve onu suçlamadan tümüyle arındıran karardır; kusur yeteneğine dayanan karar ise fiilin sanık tarafından işlendiğini kabul eder ve güvenlik tedbiri uygulanmasına yol açabilir. Bu nedenle mahkeme BERAAT kararı vermelidir. Durma kararı muhakeme şartının gerçekleşmesini beklemek için, düşme kararı ise af, zamanaşımı, şikâyetten vazgeçme gibi sebeplerle verilir; olayda bunların hiçbiri yoktur.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre ihbar ve şikâyete ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suça ilişkin ihbar veya şikâyet, Cumhuriyet Başsavcılığına veya kolluk makamlarına yapılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yürütülen soruşturma sonucunda kovuşturma evresine geçildikten sonra suçun şikâyete bağlı olduğunun anlaşılması durumunda; mağdur açıkça şikâyetten vazgeçmediği takdirde yargılamaya devam olunur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Valilik veya kaymakamlığa ya da mahkemeye yapılan ihbar veya şikâyet, ilgili Cumhuriyet Başsavcılığına gönderilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yurt dışında işlenip ülkede takibi gereken suçlar hakkında Türkiye'nin elçilik ve konsolosluklarına da ihbar veya şikâyette bulunulabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İhbar ve şikâyet konusu eylemin suç oluşturmadığının herhangi bir araştırma yapılmasını gerektirmeksizin açıkça anlaşılması veya ihbar ve şikâyetin soyut ve genel nitelikte olması durumunda kovuşturma yapılmasına yer olmadığına karar verilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "SORUŞTURMA YAPILMASINA YER OLMADIĞI kararı, 2017 tarihli düzenlemeyle CMK m.158/6'ya eklenmiş ve kovuşturmaya yer olmadığı kararından ayrı bir kurum olarak kurulmuştur. Karar yalnız iki hâlde verilebilir: ihbar ve şikâyet konusu fiilin suç oluşturmadığının HERHANGİ BİR ARAŞTIRMA YAPILMASINI GEREKTİRMEKSİZİN AÇIKÇA ANLAŞILMASI ya da ihbar ve şikâyetin SOYUT VE GENEL nitelikte olması. Kurumun ayırt edici sonucu şudur: bu durumda şikâyet edilen kişiye ŞÜPHELİ SIFATI VERİLEMEZ; yani hakkında bir soruşturma açılmış sayılmaz. Karara karşı m.173'teki usule göre itiraz edilebilir. İhbar ve şikâyetin yapılabileceği makamlar da maddede geniş tutulmuştur: Cumhuriyet Başsavcılığı veya kolluk makamları; valilik, kaymakamlık ya da mahkemeye yapılanlar ilgili Başsavcılığa gönderilir; yurt dışında işlenip ülkede takibi gereken suçlarda elçilik ve konsolosluklara da başvurulabilir. İhbar veya şikâyet yazılı ya da tutanağa geçirilmek üzere sözlü olarak yapılabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "Kasten öldürme suçundan dolayı yargılanan (M)'nin alacağı cezayı belirlemek amacıyla yapılan müzakerelerde bütün yasal indirim nedenleri de gözetilerek mahkeme başkanı (A) 10 yıl, üye yargıç (B) 15 yıl, diğer üye (C) ise 20 yıl hapis cezası verilmesi gerektiğini beyan etmiştir. Bu durumda, (M)'nin alacağı ceza nasıl belirlenir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "(M), 10 yıl ceza alır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "(M), 15 yıl ceza alır.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "(M), 20 yıl ceza alır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bu durumda mahkeme karar veremez. (M)'nin alacağı cezayı bölge adliye mahkemesi ya da Yargıtay belirler.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bu durumda mahkeme karar veremez. Yeni bir müzakere tarihi belirleyerek kararını o müzakerede verir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mahkemelerde oyların toplanması CMK m.229'da düzenlenir ve maddenin üçüncü fıkrası çoğunluk sağlanamayan hâller için özel bir çözüm getirir: OYLAR DAĞILIRSA sanığın EN ÇOK ALEYHİNE OLAN OY, çoğunluk meydana gelinceye kadar kendisine DAHA YAKIN OLAN OYA EKLENİR. Böylece heyet üç farklı ceza miktarında dağılmış olsa bile bir karara ulaşılır ve en ağır görüş tek başına sonucu belirleyemez; kural sanığın lehine işleyen bir birleştirme yöntemidir. Oylama usulünün diğer unsurları da maddededir: mahkeme başkanı KIDEMSİZ ÜYEDEN başlayarak oyları ayrı ayrı toplar ve en sonra kendi oyunu verir — bu sıra, kıdemsiz üyenin başkanın görüşünden etkilenmesini önlemek içindir. Ayrıca başkan ve üyelerden hiçbiri herhangi bir konu veya sorun üzerinde AZINLIKTA KALDIĞINI ileri sürerek oylamaya katılmaktan çekinemez; her üye her sorunda oy kullanmak zorundadır.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  },
+  {
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "articleNo": null,
+    "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre duruşma tutanağıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Tutanağı başkan veya yargıç dışında Cumhuriyet savcısı ve zabıt kâtibi de imzalar.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Başkanın mazereti varsa tutanak en kıdemli üye tarafından imzalanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Tutanakta bilirkişi ve teknik danışman açıklamaları da yer alır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Duruşmanın nasıl yapıldığı, yasada belirtilen usul ve esaslara uygun olarak yapılıp yapılmadığı ancak duruşma tutanağı ile ispat olunabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Tutanağa karşı yalnızca sahtecilik iddiası yöneltilebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Duruşma tutanağını İMZALAYACAK KİŞİLER CMK m.219'da sınırlı olarak gösterilmiştir: tutanak, MAHKEME BAŞKANI VEYA HÂKİM ile ZABIT KÂTİBİ tarafından imzalanır; başkanın mazereti bulunursa tutanak üyelerin en kıdemlisi tarafından imzalanır. CUMHURİYET SAVCISI bu sayımda YOKTUR; savcı duruşmada iddia makamı olarak yer alır, tutanağı düzenleyen veya onaylayan makam değildir. Bu nedenle tutanağın savcı tarafından da imzalanacağını söyleyen ifade yanlıştır. Tutanağın içeriği m.221'de sayılır: oturumlara katılanların ad ve soyadları, duruşmanın seyrini ve sonuçlarını yansıtan ve usulün bütün temel kurallarına uyulduğunu gösteren unsurlar, sanık açıklamaları, tanık ifadeleri, bilirkişi ve teknik danışman açıklamaları, okunan veya okunmasından vazgeçilen belgeler, istemler ve reddi hâlinde gerekçesi, verilen kararlar ve hüküm. Tutanağın İSPAT GÜCÜ ise m.222'de düzenlenmiştir: duruşmanın kanuna uygun yapılıp yapılmadığı ANCAK TUTANAKLA ispat olunabilir ve tutanağa karşı yalnız sahtecilik iddiası yöneltilebilir.",
+    "difficulty": "hard",
+    "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI"
+  }
+]

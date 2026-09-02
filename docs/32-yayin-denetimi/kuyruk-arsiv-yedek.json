@@ -1,35 +1,35 @@
 [
  {
-  "id": "eff07887-6e21-4eba-b537-538e84a9256b",
-  "questionId": "92a66365-5fee-4ad2-bedb-0cb3b48c57df",
-  "stem": "Aşağıdakilerden hangisi tutuklama kararını kendiliğinden hükümsüz kılmaz?",
-  "explanation": "Tutuklama kararını kendiliğinden hükümsüz kılan hâller, kişi özgürlüğünün dayanağını ortadan kaldıran hâllerdir: beraat, kovuşturmaya yer olmadığı kararı ve tutuklulukta geçirilecek azamî sürenin dolması bunlardandır; cezanın ertelenmesi de m.109/6 uyarınca tutukluluğu sona erdirir. DURMA kararı ise farklıdır: CMK m.223/8 uyarınca durma, muhakeme şartının gerçekleşmesini BEKLEMEK üzere verilir ve davayı sona erdirmez. Dava devam ettiğinden tutuklama kararı da kendiliğinden hükümsüz kalmaz; mahkeme tutukluluğu ayrıca değerlendirir. Ayrım, kararın davayı sonlandırıp sonlandırmadığına dayanır.",
-  "sourceLabel": null,
+  "id": "4380249d-edc6-4884-8a0c-35d14ff6df6e",
+  "questionId": "dafc0e5a-8bdf-4bbf-98a8-9ffcda57480f",
+  "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki suçlardan hangisinin işlendiği hususunda kuvvetli şüphe nedenlerinin varlığı durumunda tutuklama nedeni var sayılamaz?",
+  "explanation": "Tutuklama nedeninin VAR SAYILABİLECEĞİ katalog CMK m.100/3'tedir ve son yıllarda üç bentle genişletilmiştir. Kasten yaralama bakımından (a) bendinin 4 numaralı alt bendi TCK m.86/3'ün b, e ve f bentlerine — savunamayacak durumdaki kişiye karşı, SİLAHLA ve canavarca hisle işlenen hâllere — atıf yapar. Ayrıca 12/5/2022 tarihli 7406 sayılı Kanunla (i) KADINA KARŞI işlenen kasten yaralama ile (j) sağlık personeline karşı görevleri sırasında veya görevleri dolayısıyla işlenen kasten yaralama, 10/10/2024 tarihli 7528 sayılı Kanunla ise (k) öğretmenlere karşı işlenen kasten yaralama AYRI BENTLER olarak kataloğa alınmıştır. Çocukların cinsel istismarı ile uyuşturucu veya uyarıcı madde imal ve ticareti de katalogdadır. Buna karşılık KAMU GÖREVLİSİNE GÖREVİNDEN DOLAYI HAKARET katalogda yer almaz; kataloğa alınan bentlerin konusu kasten yaralamadır, aynı kişilere karşı işlenen hakaret veya tehdit değil. Katalog dışı suçlarda tutuklama nedeni somut olgularla ayrıca gösterilmelidir.",
+  "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI",
   "options": [
    {
     "label": "A",
-    "text": "Beraat kararı",
-    "isCorrect": false
+    "text": "Kamu görevlisine görevinden dolayı hakaret",
+    "isCorrect": true
    },
    {
     "label": "B",
-    "text": "Cezanın ertelenmesi kararı",
+    "text": "Çocukların cinsel istismarı",
     "isCorrect": false
    },
    {
     "label": "C",
-    "text": "Kovuşturmaya yer olmadığı kararı",
+    "text": "Silahla işlenmiş kasten yaralama",
     "isCorrect": false
    },
    {
     "label": "D",
-    "text": "Tutuklulukta geçirilecek azami sürenin dolması",
+    "text": "Uyuşturucu veya uyarıcı madde imal ve ticareti",
     "isCorrect": false
    },
    {
     "label": "E",
-    "text": "Muhakeme koşullarının gerçekleşmesini beklemek üzere verilen durma kararı",
-    "isCorrect": true
+    "text": "Kadına karşı işlenen kasten yaralama suçu",
+    "isCorrect": false
    }
   ],
   "question": {

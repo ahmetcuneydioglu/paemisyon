@@ -252,12 +252,45 @@ savunamayacak durumda bulunan kisiye karsi". Sorunun cevabi (irtikap) etkilenmed
 aciklama yanlis bilgi ogretiyordu. Duzeltildi, eski metin
 `aciklama-duzeltme-yedek-2b9645f7.json`'a yedeklendi, deftere islendi.
 
+#### PARTI b08 KAPANDI — koruma tedbirlerinin kalani + MUHAKEMENIN EVRELERI (3 Eyl 2026)
+s-069..s-076 okundu: **29 aday -> 15 bankaya girdi**, denetim 16/16 yayimlanabilir
+(1'i yigilma nedeniyle kuyruktan elendi). Run: wf_a4d3262d-d97. CMK 655 -> **670**.
+Banka toplam 5.572.
+
+**KENDI ELEMEMI GERI ALDIM — bunu bir daha yapma:** b07'de `s-058 S.2`yi
+"kadina karsi kasten yaralama da katalog disi, iki dogru cevap var" diye elemistim.
+YANLISTI. CMK m.100/3'un katalogu TCK m.86/3'e yapilan atifla BITMIYOR; maddenin
+kendi bentleri var ve bunlar sonradan eklendi:
+  (i) 7406 s.K. (12/5/2022) — KADINA KARSI islenen kasten yaralama
+  (j) 7406 s.K. (12/5/2022) — saglik personeline karsi kasten yaralama
+  (k) 7528 s.K. (10/10/2024) — ogretmenlere karsi kasten yaralama
+DERS: bir maddenin katalogunu "atif yapilan yerden" okuyup birakma; maddenin
+KENDI bentlerinin sonuna kadar in. Ucunun de konusu KASTEN YARALAMADIR — ayni
+kisilere karsi TEHDIT veya hakaret katalogda YOKTUR (s-071 S.13 bunu olcuyor).
+
+**YAYINDA IKI DUZELTME (ikisi de `2b9645f7`, published, m.100):**
+1. Aciklama m.86/3-b bendini "kadina karsi" diye tanitiyordu; dogrusu "beden veya
+   ruh bakimindan kendisini savunamayacak durumda bulunan kisiye karsi".
+2. Katalog dokumu (h) bendinde bitiyordu; (i), (j), (k) bentleri eklendi.
+Yedekler: `aciklama-duzeltme-yedek-2b9645f7.json`, `aciklama-tamamlama-yedek-2b9645f7.json`.
+
+#### BOS MADDE SINYALI (b08'de olculdu)
+m.95, m.122, m.219, m.221 -> bankada **0 soru**. m.191 ve m.229 -> 1'er soru.
+Buna karsilik m.223 -> 18, m.135 -> 13, m.142 -> 7, m.119 -> 6 soru.
+**s-075 sonrasi bolge (Besinci Kisim, muhakemenin evreleri) BAKIR:** 13 adaydan
+tarama yalnizca 1 mukerrer buldu. Cron oradan verimli devam eder.
+
+#### ZAMANLI RISKLER (eskime-tara.ts ile izlenecek)
+- **30 Eylul 2026** — AYM, CMK m.231 5-14. fikralari (HAGB) iptali yururluge girer.
+  s-076 S.6 bu yuzden "supheli" birakildi, alinmadi.
+- **16 Nisan 2027** — AYM E.2025/18 karariyla iptal edilen hukum yururluge girer
+  (m.229-230 civari; dipnot 74). Tarih gelmeden dokuman uzerinden dogrulanmali.
+
 #### SIRADAKI HEDEFLER (bos bloklara gore, oncelik sirasi)
-1. s-069..s-074 — koruma tedbirlerinin kalani
-2. s-075..s-083 — sorusturma evresi (m.164-169 adli kolluk, m.177-183 savunma delilleri)
-3. s-001..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
-ISLENEN: s-042..s-059, s-060..s-068, s-084..s-116.
-KALAN: **s-001..s-041, s-069..s-083.**
+1. s-077..s-083 — sorusturma evresi (m.164-169 adli kolluk, m.177-183 savunma delilleri)
+2. s-001..s-041 — giris, sujeler (gorev-yetki, hakimin reddi, mudafi, magdur)
+ISLENEN: s-042..s-076, s-084..s-116.
+KALAN: **s-001..s-041, s-077..s-083.**
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (bkz. GECE-TALIMATI-3.md).
 Denetim esigi: 30-40 soru birikince `hedefli-kume.ts --inceleme` -> denetim-hat.js
 -> `denetim-yayinla.ts --sonuc <task .output> --yaz`.
