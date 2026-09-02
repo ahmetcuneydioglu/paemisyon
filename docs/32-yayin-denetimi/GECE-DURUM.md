@@ -332,7 +332,17 @@ soru (a5cbff23), m.223/4 icin ayri bir soru (037d4774), hukum listesi icin iki s
 Kitabin giris bolumu bankaya buyuk olcude girmis gorunuyor. Bu blokta sayfa basina
 0-1 soru beklenmeli; SIFIR SORU CIKMASI NORMALDIR, zorlanmayacak.
 
-#### PARTI b10 (kuyrukta, denetim bekliyor)
+#### PARTI b10 KAPANDI (3 Eyl 2026) — denetim 4/4 yayimlanabilir, kusurlu 0.
+Run: wf_17fcf3f7-5ef. CMK 681 -> **685**. Banka 5.587.
+
+**DOGRULANAN GUVENLIK:** `513df6d1`in dayanagi TCK m.73 (sikayet suresi). Denetci
+`dogruKanun: "Türk Ceza Kanunu"` dondurdu ve `denetim-yayinla.ts` articleNo'yu
+YAZMADI — betikte zaten `dogruKanun === topic.name` kosulu var (satir 66,
+"baska kanuna dayanan soruda articleNo yaniltici olurdu"). Aksi halde CMK
+konusunda "m.73" yazacakti ve CMK m.73 SAHTE PARA INCELEMELERIDIR. Yani CMK
+konusunda TCK dayanakli soru tutmak guvenli; articleNo bos kaliyor.
+
+#### PARTI b10 — icerik
 4 soru: m.226 (ek savunma — bankada 1 soru), m.4 (gorevsizlik her asamada resen;
 m.18 yetkisizlik ve m.25 hakimin reddi ise sorgudan once — m.4 bankada 0),
 m.225 (davasiz yargilama olmaz; CMK'da sozlu dava usulu YOK — m.225 bankada 0),
