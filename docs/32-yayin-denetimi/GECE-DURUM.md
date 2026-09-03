@@ -659,6 +659,36 @@ s-095..s-110 (16 tarama = 32 kitap sayfasi, TEST-I..VIII) islendi.
 Eleme sebeplerinin dagilimi: ayna/mukerrer ~14, bankada olmayan mevzuat ~12
 (3 sayili CBK, 2531, 4688, 5176), doktrin ~8, eskimis hukum 3, belirsiz soru 5.
 
+### SIRADAKI BLOKLAR ICIN HAZIRLIK OLCUMU (3 Eyl 2026)
+
+**Mahalli idareler blogu (s-031..s-047, 8 test) -> 5393 + 5302. COK VERIMLI:**
+| kanun | madde | soru | bagli | BOS |
+|---|---|---|---|---|
+| 5393 Belediye | 101 | 18 | 15 | **86** |
+| 5302 Il Ozel Idaresi | 78 | 10 | 7 | **71** |
+
+5393'te sorusu OLAN maddeler yalniz: 4, 6, 7, 9, 18, 24, 26, 28, 29, 30, 33, 34, 47, 56, 74.
+**Bos duran cekirdek sinav maddeleri:** m.13 hemsehri hukuku · m.14 belediyenin gorev
+ve sorumluluklari · m.15 yetkiler ve imtiyazlar · m.16 muafiyet · m.17 belediye meclisi
+· m.19 baskanlik divani · m.20 meclis toplantisi · m.21 gundem · m.23 meclis kararlarinin
+kesinlesmesi · m.49 norm kadro · m.58 denetim · m.5 sinirlarin tespiti · m.8 birlesme ve
+katilma · m.11 tuzel kisiligin sona erdirilmesi.
+
+5302'de sorusu OLAN maddeler yalniz: 3, 6, 7, 18, 26, 27, 45.
+**Bos cekirdek maddeler:** m.5 gorev alani · m.9 il genel meclisi · m.10 meclisin gorev
+ve yetkileri · m.11 baskanlik divani · m.12 toplanti · m.13 gundem · m.14 toplanti ve
+karar yeter sayisi · m.15 kararlarin kesinlesmesi · m.16 ihtisas komisyonlari ·
+m.17 denetim komisyonu · m.36 norm kadro.
+
+**Merkezden yonetim blogu (s-018..s-030, 7 test) -> 5442 Il Idaresi:**
+77 madde, 31 soru, bagli 16 -> ~61 bos. Sorusu olanlar: 1, 2, 4, 9, 11, 13, 18, 24,
+27, 31, 34, 36, 53, 57, 58, 66.
+
+**TOPIC SECIMI (i01'de alinan karar geregi):** her soru DAYANAK KANUNUN konusuna
+yazilacak — 5393 -> `28eaa9b8`, 5302 -> `cc810ce5`, 5442 -> `4d185b8e`.
+Boylece `denetim-yayinla.ts` articleNo'yu baglar (dogruKanun === topic.name kosulu).
+Harita sol tarafi da topic adinin parcasi olmali: `5393|14`, `5302|10`, `5442|9`.
+
 ### SIRADAKI ADIM
 Memurlar blogunun son testi: **s-111..s-113** (TEST-IX).
 Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
