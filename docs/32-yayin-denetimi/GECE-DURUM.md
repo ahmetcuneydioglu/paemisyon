@@ -1033,3 +1033,35 @@ ibaresi GECMIYOR; 5442 Ek m.1 sivil hava meydanlari/limanlar hakkinda).
 
 SIRADAKI: s-039..s-042 (Mahalli idareler TEST-V ve sonrasi).
 EKSIK SAYFA: kitap s.67 (TEST-II 10-14) PNG setinde yok.
+
+### i08 adayi — s-039..s-042: 32 okundu, **2 SAG KALDI** (import BEKLETILDI)
+Alt ajan 20 eledi: 5216 -> 3, 442 -> 8, 5355 -> 2, 2972 -> 1, 5393 doygun madde -> 3,
+5747/6360 -> 1, tarihsel bilgi -> 1, ic celiski -> 1. Ayrica 1 supheli.
+Kalan 11 adayin **9'u elle elendi** (tarayici yalniz 1'ini gordu):
+
+| aday | sebep |
+|---|---|
+| s-039 S.3 | `b24b0198` (5393 m.28) bu kurali zaten olcuyor; aday onun alt kumesi |
+| s-040 S.16 | dayanak 5216 m.14; ustelik kitabin cevabi 60 gun, 5216 ON GUN diyor |
+| s-041 S.19 | `2ac6eafc` (i06) ile ayni kural, ayni cevap |
+| s-041 S.1  | AY m.127 kumesi doydu (`22bf487d`, `45ca646d`, `2ac6eafc`) |
+| s-041 S.3  | `ea33c82f` (i06) ile AYNA — m.4'un ayni cumlesinin iki yarisi |
+| s-041 S.4  | 5302 m.7 yalniz "PROJE KARSILIGI" borclanmayi koruyor; sik "her turlu" diyor -> belirsiz |
+| s-042 S.5  | `02a259cc` (5302 m.18) ayni listeyi ayni kurguyla soruyor |
+| s-042 S.7  | okuma ciktisi eksik (sik III/IV kesik) + dayanak m.21 yanlis |
+| s-042 S.8  | `afe79888` (i06, m.21) ile ayni kok, ayna cevap |
+| s-042 S.11 | `ff00b3b8`/`56b6d0c2` ile ayni kume; i06'da s-033 S.2 ayni sebeple elenmisti |
+
+**SAG KALAN 2 (madde metniyle dogrulandi, import edilmedi):**
+- `s-042 S.6` — 5302 m.18, genel gorusme icin uye tam sayisinin ucte biri
+- `s-042 S.9` — 5302 m.22, il genel meclisini DANISTAY feshdeder
+
+**KARAR: 2 soru icin ayri denetim turu acilmadi.** Bunlar bir sonraki okuma
+partisiyle BIRLESTIRILIP tek denetimde gecirilecek. Okuma dosyasi diskte:
+`idare-okunan-039-042.json`.
+
+**Blok durumu:** koy/mahalle/birlik/buyuksehir sorulari Test V ile kapandi.
+Test VI (kitap s.82'den itibaren) 5302 agirlikli — ama i06 zaten 5302'nin
+cekirdek maddelerini aldigi icin verim dusuyor. Bu blok DOYMAK UZERE.
+SIRADAKI: s-043..s-046. Verim yine 2-3'te kalirsa mahalli idareler bloku
+kapatilip Idari Yargilama Hukuku kitabina gecilmeli.
