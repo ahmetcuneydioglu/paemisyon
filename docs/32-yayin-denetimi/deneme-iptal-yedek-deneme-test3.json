@@ -1,0 +1,186 @@
+{
+ "exam": {
+  "id": "cd3fedf8-78a6-4a32-a97c-aff7b81f1f93",
+  "title": "Deneme Test3",
+  "startAt": "2026-09-03T22:07:00.000Z",
+  "durationMinutes": 15,
+  "status": "published"
+ },
+ "soruSayisi": 40,
+ "oturumlar": [
+  {
+   "id": "33186921-20e3-4175-8d54-bdef4d0a0632",
+   "userId": "1dfac361-9d09-4562-940d-d79cb12a82ba",
+   "status": "completed",
+   "totalQuestions": 40,
+   "correctCount": 6,
+   "wrongCount": 14,
+   "blankCount": 20,
+   "score": "2.5",
+   "startedAt": "2026-09-03T22:07:47.800Z",
+   "completedAt": "2026-09-03T22:22:00.069Z",
+   "answers": [
+    {
+     "questionId": "bd1cd62b-506a-4923-9ab1-06dd5fc1660e",
+     "questionVersionId": "80593fcd-5577-4158-a816-44e419d0263c",
+     "selectedOptionId": "88dc2282-c856-41dc-8f33-b2b9bd38e538",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:17.130Z",
+     "timeSpentMs": 795
+    },
+    {
+     "questionId": "486fc424-0371-4487-bc1c-0d764e3d9b65",
+     "questionVersionId": "1c697e9d-5bd7-4af4-a63b-c1803e568dac",
+     "selectedOptionId": "7d82d1bf-b42b-4a72-b03c-cad22e7cc0c4",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:07:55.861Z",
+     "timeSpentMs": 999
+    },
+    {
+     "questionId": "04d66879-87e3-43b9-af4d-bac3247a6300",
+     "questionVersionId": "e1ce6c21-6fa2-4305-a01d-a06402fbf9e7",
+     "selectedOptionId": "8eda63b0-c864-4b82-b4e9-8d3e296a2a58",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:07:49.548Z",
+     "timeSpentMs": 1157
+    },
+    {
+     "questionId": "34fa6c43-a6ac-43bc-b282-fb7772006cb5",
+     "questionVersionId": "42c52c3a-ef4d-4875-b85b-1028939d4f8d",
+     "selectedOptionId": "d683072a-36d0-4f46-bcf2-55125a7b683b",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:19.074Z",
+     "timeSpentMs": 1104
+    },
+    {
+     "questionId": "52db176f-d1a2-4eae-b5f3-ada6eb454466",
+     "questionVersionId": "4e1f360d-cc6c-4a80-9327-b563e167cf64",
+     "selectedOptionId": "535e9967-86cc-4ecb-9c49-8fdd57524ea8",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:19:23.678Z",
+     "timeSpentMs": 699
+    },
+    {
+     "questionId": "6a24c631-3979-4c5c-978d-552a7824f738",
+     "questionVersionId": "36745539-d839-4a46-8217-90395c1bbe09",
+     "selectedOptionId": "940ac5be-ce13-4291-9b01-14afd29a0711",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:31.268Z",
+     "timeSpentMs": 758
+    },
+    {
+     "questionId": "928bc555-4cde-4bda-a306-86ac719340f9",
+     "questionVersionId": "6336edcb-2eea-4c8f-b5b8-34bd7e8079dc",
+     "selectedOptionId": "8225a209-1406-40ac-81db-a5202c09e32d",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:19:37.600Z",
+     "timeSpentMs": 807
+    },
+    {
+     "questionId": "8f47ed26-690a-4fdb-ba00-a78dc2b5c563",
+     "questionVersionId": "5d429609-54fe-4cb5-8e17-6e7c33c7a85a",
+     "selectedOptionId": "d7008eeb-9ca2-4174-8a92-229467b87910",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:19:47.616Z",
+     "timeSpentMs": 873
+    },
+    {
+     "questionId": "5ba2cde1-e31c-4e21-9993-af4ba95c69dd",
+     "questionVersionId": "d1141715-3de8-401b-b0b4-ac9243263d62",
+     "selectedOptionId": "6c54d4c0-e3b1-4d3f-9ec1-8b7d51afa4a5",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:20.683Z",
+     "timeSpentMs": 829
+    },
+    {
+     "questionId": "379548f6-fbfc-497d-8b71-36403c3d5fe2",
+     "questionVersionId": "bb136e4f-7ee2-44eb-8760-265482bdeb71",
+     "selectedOptionId": "50604102-717e-4124-ab4d-23c54c965bc6",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:25.999Z",
+     "timeSpentMs": 1659
+    },
+    {
+     "questionId": "34582f68-33dc-4310-a65e-041c42111be6",
+     "questionVersionId": "f09fd8d3-832b-4c0e-869c-e4b97caad246",
+     "selectedOptionId": "f0577c45-1ed0-469e-a9ff-846ef16c0aef",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:19:29.339Z",
+     "timeSpentMs": 641
+    },
+    {
+     "questionId": "e56f9a0e-88c3-4fb1-ba6c-2d4a143d264d",
+     "questionVersionId": "50e69b5f-c038-428c-8b22-aaab0ca6397a",
+     "selectedOptionId": "f5024cd4-894b-4dce-99b0-0f8dbe3335b8",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:34.449Z",
+     "timeSpentMs": 640
+    },
+    {
+     "questionId": "15737334-519b-4179-88de-30e49f96d932",
+     "questionVersionId": "78f79e81-2336-422d-a00a-29ed2090c44d",
+     "selectedOptionId": "3a993116-430a-4879-a9b8-b9655b24e3b8",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:39.330Z",
+     "timeSpentMs": 947
+    },
+    {
+     "questionId": "3d8c2634-c226-4101-a479-c5f5b7fe3219",
+     "questionVersionId": "8107ef28-bfbe-487c-97df-af58ceca738a",
+     "selectedOptionId": "62c66fd5-8fba-464f-80ef-d99c937822a7",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:52.819Z",
+     "timeSpentMs": 1230
+    },
+    {
+     "questionId": "6feaf0b0-8554-4f11-9e7b-c77bd6157685",
+     "questionVersionId": "bcfdc8f3-eed9-4450-b20f-e8368e61606c",
+     "selectedOptionId": "3da6f2e3-73ff-427a-b2cc-d487a5caec31",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:22.293Z",
+     "timeSpentMs": 883
+    },
+    {
+     "questionId": "6935c83d-3903-4752-bed6-4a14fea558e2",
+     "questionVersionId": "6a5b06ea-c4db-4713-bca7-aa25f3ae60a2",
+     "selectedOptionId": "a42939e8-0fc8-408c-b685-55d82aeeb9fb",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:28.038Z",
+     "timeSpentMs": 1038
+    },
+    {
+     "questionId": "e0ca4fa8-038e-4645-9e8a-4e2986ebc97d",
+     "questionVersionId": "28e5b771-2a98-4d16-84f7-2b1146c73788",
+     "selectedOptionId": "af58a0b6-7d03-470b-a451-731ac90d6bf2",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:33.111Z",
+     "timeSpentMs": 788
+    },
+    {
+     "questionId": "0487e04c-de6f-41c9-9535-d2fc35c4f3b4",
+     "questionVersionId": "1990cb1f-75c5-457c-9462-7b7a072a9aa2",
+     "selectedOptionId": "e8c520be-3789-4c38-9749-7c2d69f6b997",
+     "isCorrect": false,
+     "answeredAt": "2026-09-03T22:19:36.108Z",
+     "timeSpentMs": 680
+    },
+    {
+     "questionId": "40ef58a4-9cbb-4abb-8c95-dcfc276e14ca",
+     "questionVersionId": "62e23c61-f345-4af1-966c-bd4520c496c1",
+     "selectedOptionId": "daaf05d0-cdb4-4d1e-bed0-4a117d6c0154",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:19:44.852Z",
+     "timeSpentMs": 1099
+    },
+    {
+     "questionId": "d3182622-5d29-4297-a246-f14a426c2c8f",
+     "questionVersionId": "0e50259e-cae6-46f5-856c-8766db92ab8e",
+     "selectedOptionId": "c6b1741e-6d47-451d-b21e-b9951df48da1",
+     "isCorrect": true,
+     "answeredAt": "2026-09-03T22:07:53.062Z",
+     "timeSpentMs": 1076
+    }
+   ]
+  }
+ ]
+}
