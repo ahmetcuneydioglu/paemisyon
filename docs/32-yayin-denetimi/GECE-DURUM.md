@@ -630,8 +630,37 @@ ULUSLARARASI KURULUSLARDA YIRMIBIR YILA kadar. Madde metni `m657d.json`'da
 elimdeydi ama BASMADAN ezberden yazdim. Denetci duzeltti, yayindaki metin dogru.
 **Kural: aciklamayi yazmadan once ilgili maddeyi EKRANA BAS, dosyada olmasi yetmez.**
 
+### PARTI i04 KAPANDI — MEMURLAR TEST-VII/VIII (3 Eyl 2026)
+s-107..s-110 (kitap s.213-220) okundu: **30 soru -> 20 bankaya girdi.**
+Denetim 20/20 yayimlanabilir, kusurlu 0. Run: wf_8734c002-6fb.
+657 yayinda 150 -> **170**; bagli madde 61 -> **66**. Banka 5.663.
+
+10 eleme — **besi AYNA**, kalanlar tanidik sebepler:
+- Ayna: kadrosu kaldirilan memur (6 ay), ceza verme zamanasimi (2 yil), gorevden
+  uzaklastirmaya yetkili makamlar, **m.135'in iki kolu** (uyarma -> disiplin kurulu /
+  kademe durdurma -> yuksek disiplin kurulu), **m.77'nin iki kolu** (10 yil / 21 yil
+  — yayindaki sorunun siklarindan biri zaten "21 yil"di).
+- Parti ici ayna: **m.133'un iki kolu** (kinama 5 yil / diger cezalar 10 yil); biri tutuldu.
+- 1 Etik Kurul (5176 bankada yok), 1 doktrin, 1 belirsiz hastalik izni sorusu.
+- 1 soru **kitabin cevabi kendi cozumuyle celisiyordu**: kok "atanamaz" diyor ama
+  dort sikkin dordu de yasak kadro; kitabin isaretledigi sik atanilabilecek TEK gorev.
+
+**IKI SUPHELI KURTARILDI, BIRI ELENDI:**
+- Kurtarilan ikisi m.127 zamanasimina dayaniyordu. **23/1/2026 (7573 s.K.) degisikligi
+  YALNIZ IKINCI FIKRAYA dokunmus**; bir aylik (uyarma/kinama/aylıktan kesme/kademe
+  durdurma) ve alti aylik (memurluktan cikarma) SORUSTURMAYA BASLAMA sureleri AYNI.
+- Elenen: "izinli yurtdisina cikan memur 15 gun". **657'de "yurtdisina cikma" HIC
+  GECMIYOR** — dayanak yonetmelikte; alinamaz.
+
+#### MEMURLAR BLOGU — TOPLAM (i01..i04)
+s-095..s-110 (16 tarama = 32 kitap sayfasi, TEST-I..VIII) islendi.
+120 soru okundu -> **76 bankaya girdi**, denetim 76/76 yayimlanabilir, kusurlu 0.
+657: 94 -> **170 soru**, bagli madde 46 -> **66**.
+Eleme sebeplerinin dagilimi: ayna/mukerrer ~14, bankada olmayan mevzuat ~12
+(3 sayili CBK, 2531, 4688, 5176), doktrin ~8, eskimis hukum 3, belirsiz soru 5.
+
 ### SIRADAKI ADIM
-Memurlar blogunun kalani: **s-107..s-113** (TEST-VII..IX).
+Memurlar blogunun son testi: **s-111..s-113** (TEST-IX).
 Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
 Kitap bitince -> Idari Yargilama Hukuku (Danistay ~20 temel soru + IYUK 50 bos madde).
 Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
