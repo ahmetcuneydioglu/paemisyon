@@ -27,11 +27,19 @@ async function bootstrap() {
   const config = app.get(ConfigService);
 
   // Railway'in edge proxy'si arkasındayız: X-Forwarded-For'a GÜVEN, yoksa
-  // req.ip her kullanıcı için aynı iç proxy adresini döndürür ve IP tabanlı
-  // hız sınırı gerçek istemciyi değil proxy'yi sayar (kalabalık denemede
-  // rastgele 429). '1' = yalnız EN YAKIN vekile güven; istemcinin kendi
-  // uydurduğu X-Forwarded-For değeri kabul edilmez.
-  app.getHttpAdapter().getInstance().set('trust proxy', 1);
+  // req.ip her kullanıcı için proxy adresini döndürür ve IP tabanlı hız sınırı
+  // gerçek istemciyi değil vekili sayar (kalabalık denemede rastgele 429).
+  //
+  // Neden 2? Zincir CANLIDA ölçüldü (3 Eylül 2026, GET /health):
+  //   X-Forwarded-For: <gerçek istemci>, <Railway edge iç adresi>
+  // İkinci adres istekten isteğe DEĞİŞİYOR (152.233.13.164/.165/.166…), bu
+  // yüzden '1' ile req.ip her istekte başka çıkıyordu — sayaç hiçbir şeyi
+  // izlemiyordu. '2' zincirin başındaki gerçek istemciyi verir.
+  //
+  // Sahtecilik: Railway edge'i istemcinin gönderdiği X-Forwarded-For'u SİLİP
+  // kendi zincirini yazıyor (ölçüldü: "5.5.5.5" ve "1.2.3.4, 9.9.9.9"
+  // başlıkları sunucuya hiç ulaşmadı), dolayısıyla 2 güvenli.
+  app.getHttpAdapter().getInstance().set('trust proxy', 2);
 
   // API versiyonlama (Doc 7): tüm uçlar /api/v1 altında
   app.setGlobalPrefix('api/v1');
