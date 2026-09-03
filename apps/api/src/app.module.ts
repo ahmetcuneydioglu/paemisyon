@@ -32,7 +32,7 @@ import { UsersModule } from './modules/users/users.module';
       validate: validateEnv,
     }),
     // Genel istek hız sınırı (Doc 18 §güvenlik). İKİ katman:
-    //  1) 'kimlik' — kullanıcı başına 300/dk. Kalabalık bir canlı denemede
+    //  1) 'default' — kullanıcı başına 300/dk. Kalabalık bir canlı denemede
     //     onlarca kişi tek mobil operatör NAT'ı (ya da tek okul ağı) arkasından
     //     girer; sayaç IP'ye bağlı kalırsa hepsi aynı kovayı paylaşıp 429 yer.
     //  2) 'ip' — IP başına 1500/dk. Birinci katmanın anahtarı DOĞRULANMAMIŞ
@@ -44,7 +44,10 @@ import { UsersModule } from './modules/users/users.module';
     ThrottlerModule.forRoot({
       errorMessage: 'Çok fazla istek gönderildi. Birkaç saniye sonra tekrar dene.',
       throttlers: [
-        { name: 'kimlik', ttl: 60_000, limit: 300, getTracker: (req) => istekKimligi(req) },
+        // ADI 'default' KALMALI: uç bazlı @Throttle({ default: {...} })
+        // geçersiz kılmaları throttler ADIYLA eşleşir. Adı değiştirmek, soru
+        // öner 5/dk gibi SIKI limitleri sessizce devre dışı bırakır.
+        { name: 'default', ttl: 60_000, limit: 300, getTracker: (req) => istekKimligi(req) },
         {
           name: 'ip',
           ttl: 60_000,
