@@ -1154,3 +1154,31 @@ soru yine de guvenli, cunku sik "15" diyor ve her iki sayiya gore de yanlis.)
 **DANISTAY: 20/20 — KAPANDI.** Kullanicinin istedigi ~20 temel duzey soru tamam.
 SIRADAKI: **IYUK govdesi (2577)** — s-16'dan itibaren. Bankada 2577 icin 49 soru
 var, kitapta ise s-16..s-88 arasi ~250 soru. Once s-16..s-19 okunacak.
+
+### s-16..s-19 (Ikinci Bolum: Idari Yarginin Gorev Alani) — 20 okundu, **2 SAG KALDI**
+Alt ajan 15 eledi (8'i banka disi kanun: 2918, 2942, 3194, 3402, 2004, 6413,
+3634, 2547; 5'i doktrin/ictihat; 2'si doygun madde). Kalan 5'in 3'u ELLE elendi:
+- `s-16 S.2` yasama kisintisi TANIMI — kanun metninde karsiligi olmayan terim sorusu
+- `s-16 S.7` yargi yetkisinin siniri — bankada AYNI kurali olcen IKI soru var
+  (`cd30cf3d` 2577 m.2 ve `c7c07337`); siklar neredeyse birebir ortusuyor
+- `s-17 S.11` imtiyaz sozlesmesi senaryosu — (A) ehliyet ve (D) gorev siklarinin
+  ikisi de savunulabilir; ayrica (B) "ayrilabilir islem" doktrinine dayaniyor
+
+**SAG KALAN 2 (import BEKLETILDI, sonraki partiyle birlestirilecek):**
+- `s-16 S.4` — CBK/genelge/karar ayrimi; CBK denetimi AYM'de (AY m.148),
+  genelge ve kararlar idari yargida (2575 m.24)
+- `s-17 S.9` — askeri okul kayit reddi: genel gorevli IDARE MAHKEMESI (2576 m.5)
+
+## STRATEJI NOTU — IYUK'ta hangi bolumler verimli
+Bu bolumun verimi %10. Sebep yapisal: "Idari Yarginin Gorev Alani" bolumu
+adli/idari yargi ayrimini ISLIYOR ve sorulari 2918, 2942, 3194 gibi BANKADA
+OLMAYAN kanunlara ya da Danistay ictihadina dayaniyor; 2577'nin bos maddelerine
+DOKUNMUYOR.
+
+2577'nin bos 52 maddesi USUL maddeleri: m.20-25 (dosyalarin incelenmesi,
+duruşma, karar), m.31-40 (HMK atfi, dava dosyalarinin incelenmesi, gorev-yetki),
+m.41-49 (kanun yollari: istinaf, temyiz, karar duzeltme, yargilamanin yenilenmesi),
+m.54-65 (cesitli hukumler). Bunlar kitabin ILERI bolumlerinde.
+**SIRADAKI: s-16..s-19 yerine ileri atlanmali.** Once s-30..s-33 okunup hangi
+bolumde olundugu olculecek; hedef "kanun yollari" ve "dava acma sureleri"
+bolumlerini bulmak.
