@@ -1182,3 +1182,26 @@ m.54-65 (cesitli hukumler). Bunlar kitabin ILERI bolumlerinde.
 **SIRADAKI: s-16..s-19 yerine ileri atlanmali.** Once s-30..s-33 okunup hangi
 bolumde olundugu olculecek; hedef "kanun yollari" ve "dava acma sureleri"
 bolumlerini bulmak.
+
+## IYUK BOLUM HARITASI (11 sayfa ornekleme ile cikarildi)
+Dosya: `<scratchpad>/iyuk-bolum-haritasi.json`
+**PNG -> kitap sayfa formulu: sol sayfa = 35 + 2*(png - 22).**
+
+| PNG araligi | Bolum | Baskin IYUK md. | Deger |
+|---|---|---|---|
+| s-20..s-35 | Ucuncu/Dorduncu (dava turleri, uyusmazlik yargisi) | 1,2,3,7,14,15,27 | dusuk |
+| s-36..s-49 | **Besinci — Idari Davalarin Acilmasi** | 3,6,14-16,24,27,**38,39** | orta-yuksek |
+| s-50..s-53 | **Altinci — Idari Yargida Ic Gorev** | 9,**43,44** | yuksek |
+| s-54..s-56 | Yedinci | ? | ? |
+| s-57..s-62 | Sekizinci — Sureler | 7,11 (DOLU) | dusuk |
+| **s-63..s-69** | **Dokuzuncu — Ozel Durumlar** | **31,56,57** | **cok yuksek** |
+| **s-70..s-78** | **Onuncu — KANUN YOLLARI** | 27,45,**46,49**,50,51 | yuksek |
+| s-79..s-88 | Onbirinci — Karma Pratik | 7,20/A | dusuk |
+
+**Kritik bulgu:** bankada bos olan 52 madde tesadufi dagilmamis, UC BOLUMDE
+kumelenmis — Dokuzuncu (m.31 + m.54-65), Onuncu'nun ikinci yarisi (m.46-49
+temyiz/karar duzeltme), Altinci (m.43-45). Sekizinci Bolum (sureler) ve ilk
+bolumler bankada ZATEN DOLU maddeleri olcuyor; sirayla okumak bosa emek.
+
+**OKUMA SIRASI (verim sirasina gore):** s-63..s-66 -> s-67..s-69 ->
+s-76..s-78 -> s-50..s-53 -> s-40..s-43.
