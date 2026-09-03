@@ -12,6 +12,7 @@
  * ÖNCE: panelden yayında ve penceresi AÇIK bir deneme oluştur (yük testi için
  * AYRI bir deneme; sonunda scripts/deneme-iptal.ts ile iptal edilir).
  *
+ *   npx tsx scripts/yuk-testi-deneme.ts --son --kisi 50   # en son yayındaki deneme
  *   npx tsx scripts/yuk-testi-deneme.ts --sinav <examId> --kisi 50
  *   npx tsx scripts/yuk-testi-deneme.ts --temizle          # sanal hesapları sil
  *
@@ -156,11 +157,47 @@ async function temizle() {
   }
 }
 
+/** En son yayınlanan denemeyi seçer; penceresi kapalıysa uyarır. */
+async function sonDeneme(): Promise<string | undefined> {
+  const p = new PrismaClient();
+  try {
+    const e = await p.exam.findFirst({
+      where: { status: 'published', deletedAt: null },
+      orderBy: { startAt: 'desc' },
+      select: { id: true, title: true, startAt: true, durationMinutes: true, isPremium: true },
+    });
+    if (!e) {
+      console.log('Yayınlanmış deneme yok — panelden bir yük testi denemesi aç.');
+      return undefined;
+    }
+    const bitis = new Date(e.startAt.getTime() + e.durationMinutes * 60_000);
+    const now = new Date();
+    const durum = now < e.startAt ? 'BAŞLAMADI' : now < bitis ? 'AKTİF' : 'BİTTİ';
+    console.log(`Seçilen deneme: ${e.title}  (${e.id})  durum=${durum}  premium=${e.isPremium}`);
+    if (durum !== 'AKTİF') {
+      // toLowerCase yok: Türkçe'de "BİTTİ" → "bi̇tti̇" gibi bozuluyor.
+      console.log(`DURDURULDU: deneme ${durum} — yük testi için penceresi AÇIK deneme gerekir.`);
+      return undefined;
+    }
+    if (e.isPremium) {
+      console.log('DURDURULDU: deneme premium\'a özel — sanal hesaplar ücretsiz olduğu için kapıdan döner.');
+      return undefined;
+    }
+    return e.id;
+  } finally {
+    await p.$disconnect();
+  }
+}
+
 async function main() {
   if (process.argv.includes('--temizle')) return temizle();
 
-  const examId = arg('--sinav');
-  if (!examId) return console.log('--sinav <examId> ver (panelden açtığın YÜK TESTİ denemesi).');
+  // examId'yi elle aramaya gerek yok: --son en güncel yayındaki denemeyi seçer
+  // (panelde denemeyi açtığında adres çubuğunda /exams/<id> olarak da görünür).
+  const examId = arg('--sinav') ?? (process.argv.includes('--son') ? await sonDeneme() : undefined);
+  if (!examId) {
+    return console.log('--son (en güncel yayındaki deneme) ya da --sinav <examId> ver.');
+  }
   if (!SB || !KEY) return console.log('.env içinde SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY yok.');
 
   console.log(`YÜK TESTİ — ${KISI} sanal katılımcı, hedef ${API}`);
