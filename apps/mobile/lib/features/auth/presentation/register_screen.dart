@@ -6,6 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
+import '../../../core/validation/eposta.dart';
 import '../../../shared/widgets/primary_button.dart';
 import '../data/auth_repository.dart';
 import 'auth_scaffold.dart';
@@ -28,9 +29,31 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
   bool _obscure = true;
   String? _error;
   String? _info;
+  // Yazım hatası uyarısı: "gmial.com yazdın, gmail.com mu?" — kaydı KESMEZ,
+  // yalnız sorar. Gerçekten o adresi kullanan biri "Adresim doğru" diyebilmeli.
+  EpostaSonuc? _epostaOneri;
+  bool _oneriKapali = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _email.addListener(_epostayiDenetle);
+  }
+
+  void _epostayiDenetle() {
+    final sonuc = epostaDenetle(_email.text);
+    final yeni = sonuc.durum == EpostaDurumu.oneri ? sonuc : null;
+    if (yeni?.oneri != _epostaOneri?.oneri) {
+      setState(() {
+        _epostaOneri = yeni;
+        _oneriKapali = false;
+      });
+    }
+  }
 
   @override
   void dispose() {
+    _email.removeListener(_epostayiDenetle);
     _name.dispose();
     _email.dispose();
     _password.dispose();
@@ -44,6 +67,14 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
     }
     if (_password.text.length < 8) {
       setState(() => _error = 'Şifre en az 8 karakter olmalı.');
+      return;
+    }
+    // Adres denetimi Supabase'e GİTMEDEN önce: yanlış yazılmış her adres bir
+    // doğrulama maili ve ardından bir bounce demek (Supabase 3 Eylül 2026
+    // uyarısı). Web'le aynı kurallar — core/validation/eposta.dart.
+    final denetim = epostaDenetle(_email.text);
+    if (denetim.durum == EpostaDurumu.gecersiz) {
+      setState(() => _error = denetim.mesaj);
       return;
     }
     setState(() {
@@ -113,6 +144,23 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           decoration: authFieldDecoration(context,
               label: 'E-posta', icon: Icons.mail_outline_rounded),
         ),
+        if (_epostaOneri != null && !_oneriKapali) ...[
+          const SizedBox(height: AppSpacing.sm),
+          AuthBanner(
+            _epostaOneri!.mesaj!,
+            tone: AuthBannerTone.uyari,
+            actions: [
+              TextButton(
+                onPressed: () => _email.text = _epostaOneri!.oneri!,
+                child: Text('${_epostaOneri!.oneri} olarak düzelt'),
+              ),
+              TextButton(
+                onPressed: () => setState(() => _oneriKapali = true),
+                child: const Text('Adresim doğru'),
+              ),
+            ],
+          ),
+        ],
         const SizedBox(height: AppSpacing.md),
         TextField(
           controller: _password,
@@ -141,40 +189,25 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
           const SizedBox(height: AppSpacing.md),
         ],
         if (_info != null) ...[
-          Container(
-            padding: const EdgeInsets.all(AppSpacing.md),
-            decoration: BoxDecoration(
-              color: tokens.success.withValues(alpha: .10),
-              borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-              border:
-                  Border.all(color: tokens.success.withValues(alpha: .35)),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(children: [
-                  Icon(Icons.mark_email_read_outlined,
-                      size: 18, color: tokens.success),
-                  const SizedBox(width: AppSpacing.sm),
-                  Expanded(
-                    child: Text(_info!,
-                        style: AppTypography.caption
-                            .copyWith(color: tokens.success)),
-                  ),
-                ]),
-                TextButton(
-                  onPressed: _loading ? null : _resend,
-                  child: const Text('E-postayı yeniden gönder'),
-                ),
-              ],
-            ),
+          AuthBanner(
+            _info!,
+            tone: AuthBannerTone.basari,
+            actions: [
+              TextButton(
+                onPressed: _loading ? null : _resend,
+                child: const Text('E-postayı yeniden gönder'),
+              ),
+            ],
           ),
           const SizedBox(height: AppSpacing.md),
         ],
         PrimaryButton(label: 'Kayıt ol', loading: _loading, onPressed: _submit),
         const SizedBox(height: AppSpacing.lg),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        // Wrap, Row değil: büyük yazı tipi ölçeğinde (erişilebilirlik) ya da
+        // dar ekranda metin + buton tek satıra sığmıyor ve taşıyordu.
+        Wrap(
+          alignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             Text('Zaten hesabın var mı?',
                 style: AppTypography.body.copyWith(color: tokens.inkSoft)),

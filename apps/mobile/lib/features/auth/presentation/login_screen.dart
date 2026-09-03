@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/validation/eposta.dart';
 import '../../../core/theme/app_tokens.dart';
 import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -78,6 +79,14 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     // Kapanış animasyonu bitmeden dispose = '_dependents.isEmpty' çökmesi.
     Future.delayed(const Duration(milliseconds: 400), controller.dispose);
     if (email == null || email.isEmpty || !mounted) return;
+    // Yalnız BİÇİM denetlenir: yazım hatası önerisi ya da başka kural yok.
+    // Bu akışa mevcut kullanıcılar da girer; onları kendi hesaplarından
+    // kilitlememek için kural kayıttan daha gevşek (web'le aynı).
+    final denetim = epostaDenetle(email);
+    if (denetim.durum == EpostaDurumu.gecersiz) {
+      setState(() => _error = denetim.mesaj);
+      return;
+    }
     try {
       await ref.read(authRepositoryProvider).requestPasswordReset(email);
       if (mounted) {
@@ -147,8 +156,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         ],
         PrimaryButton(label: 'Giriş yap', loading: _loading, onPressed: _submit),
         const SizedBox(height: AppSpacing.lg),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        // Wrap, Row değil: büyük yazı tipi ölçeğinde (erişilebilirlik) ya da
+        // dar ekranda metin + buton tek satıra sığmıyor ve taşıyordu.
+        Wrap(
+          alignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
             Text('Hesabın yok mu?',
                 style: AppTypography.body.copyWith(color: tokens.inkSoft)),

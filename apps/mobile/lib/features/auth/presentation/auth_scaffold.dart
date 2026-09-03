@@ -88,29 +88,66 @@ InputDecoration authFieldDecoration(
   );
 }
 
+/// Bant tonu — renk ve ikon buradan gelir; her ton için ayrı widget yazılmaz.
+enum AuthBannerTone { hata, uyari, basari }
+
+/// Auth ekranlarının ortak bilgi/uyarı bandı: yumuşak zemin, ince kenar,
+/// isteğe bağlı eylem satırı. AuthErrorBanner bunun kırmızı varyantıdır.
+class AuthBanner extends StatelessWidget {
+  const AuthBanner(
+    this.message, {
+    super.key,
+    this.tone = AuthBannerTone.hata,
+    this.actions = const [],
+  });
+
+  final String message;
+  final AuthBannerTone tone;
+
+  /// Bandın altındaki eylemler (ör. "gmail.com olarak düzelt").
+  final List<Widget> actions;
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    final (renk, ikon) = switch (tone) {
+      AuthBannerTone.hata => (tokens.danger, Icons.error_outline_rounded),
+      AuthBannerTone.uyari => (tokens.warning, Icons.help_outline_rounded),
+      AuthBannerTone.basari => (tokens.success, Icons.check_circle_outline),
+    };
+    return Container(
+      padding: const EdgeInsets.all(AppSpacing.md),
+      decoration: BoxDecoration(
+        color: renk.withValues(alpha: .10),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+        border: Border.all(color: renk.withValues(alpha: .35)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(children: [
+            Icon(ikon, size: 18, color: renk),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+              child: Text(message,
+                  style: AppTypography.caption.copyWith(color: renk)),
+            ),
+          ]),
+          if (actions.isNotEmpty) ...[
+            const SizedBox(height: AppSpacing.sm),
+            Wrap(spacing: AppSpacing.sm, runSpacing: AppSpacing.xs, children: actions),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 /// Hata bandı — çıplak kırmızı metin yerine yumuşak kutulu uyarı.
 class AuthErrorBanner extends StatelessWidget {
   const AuthErrorBanner(this.message, {super.key});
   final String message;
 
   @override
-  Widget build(BuildContext context) {
-    final tokens = context.tokens;
-    return Container(
-      padding: const EdgeInsets.all(AppSpacing.md),
-      decoration: BoxDecoration(
-        color: tokens.danger.withValues(alpha: .10),
-        borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-        border: Border.all(color: tokens.danger.withValues(alpha: .35)),
-      ),
-      child: Row(children: [
-        Icon(Icons.error_outline_rounded, size: 18, color: tokens.danger),
-        const SizedBox(width: AppSpacing.sm),
-        Expanded(
-          child: Text(message,
-              style: AppTypography.caption.copyWith(color: tokens.danger)),
-        ),
-      ]),
-    );
-  }
+  Widget build(BuildContext context) => AuthBanner(message);
 }
