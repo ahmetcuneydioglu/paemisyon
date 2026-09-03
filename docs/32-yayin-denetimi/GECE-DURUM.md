@@ -349,9 +349,59 @@ m.225 (davasiz yargilama olmaz; CMK'da sozlu dava usulu YOK — m.225 bankada 0)
 m.158 + TCK m.73 (sikayet suresi ALTI AY; sure CMK'da degil TCK'dadir).
 harita-kur.py'ye TCK eslemesi eklendi (s-083 S.11'in dayanagi TCK m.73).
 
-#### SIRADAKI HEDEFLER
-1. s-007..s-041 — giris ve sujeler. DUSUK VERIM BEKLENIYOR (yukariya bak).
-   3-4 degil, 6-8 sayfa birden okutmak daha verimli olabilir.
+#### !!!! CMK KITABI KAPANDI — 3 Eyl 2026 !!!!
+**Themis Soru - Ceza Muhakemesi Hukuku BITTI. Yeniden okumaya deger sayfa YOK.**
+
+KARARIN DAYANAGI — tahmin degil, olcum:
+1. **Dogrudan test:** s-007..s-016 (10 sayfa, 1. Kismin Giris ve Gorev-Yetki
+   bolumleri) okundu -> **45 aday, ICE AKTARILABILIR SIFIR SORU.** Aday havuzunun
+   tamami ya bankada zaten vardi, ya doktrine dayaniyordu, ya da bankada olmayan
+   bir mevzuata (5235 s.K.) dayaniyordu.
+2. **Tarayici bu bolgede YETERSIZ kaldi** — ders: `mukerrer-tara.py` senaryo
+   sorularinda esikleri asamiyor, cunku adaylar "(A)/(B)" kullanirken banka ISIM
+   kullaniyor. Bankadaki sorulari MADDEYE GORE listeleyince gercek ortaya cikti:
+     m.18 -> 4 adayin 4'u de bankada (ucu "sorgudan once"yi ayri ayri soruyor)
+     m.13 -> 3 adayin 3'u de bankada (biri ayni sehirle, Elazig, ayni senaryo)
+     m.12 -> Eskisehir-Bursa-Isparta ve Kayseri-Ankara-Aksaray senaryolari BIREBIR
+     m.14 -> 4 adayin 4'u de; m.19 -> 3'un 3'u; m.15, m.6, m.7, m.20, m.332 -> hepsi
+   **YENI YONTEM: bir bolgeye girmeden once bankayi MADDEYE GORE dok, tarayiciya
+   tek basina guvenme.** (`python3 -c` ile cmk-mevcut.json'u madde bazli grupla.)
+3. **Kalan bolgelerin yogunlugu olculdu (CMK 685 iken):**
+     temel kavramlar m.1-21 -> 71 soru
+     sureler + adli tatil m.34-46, 331-333 -> 28 soru (m.39 tek basina 9)
+     mudafi m.149-157 -> 16 · hakimin reddi m.22-31 -> 14 · magdur/katilan m.233-239 -> 14
+   Bu bloklar s-017..s-041'in tamamini kapsiyor. Okunacak yeni sey yok.
+4. Tek bos cep **m.164-169 (adli kolluk, 6 madde 0 soru)** ama bu 5. Kisma ait ve
+   s-075..s-091 zaten okundu; kitapta bu maddelere soru YOK.
+
+**CMK NIHAI: 453 -> 685 yayinda** (b01..b10, on parti). Banka 5.587.
+
+---
+
+## AKTIF KITAP (3 Eyl 2026'dan itibaren): **Themis Soru - Idare Hukuku**
+
+- PDF: `~/Downloads/Themis Soru - Idare Hukuku.pdf` (118 sayfa)
+- Gorseller: `<scratchpad>/idare-png/s-NNN.png` (uretiliyor)
+  `pdftoppm -png -r 200 -f 1 -l 118 "$HOME/Downloads/Themis Soru - Idare Hukuku.pdf" <scratchpad>/idare-png/s`
+- Sonraki kitap: `~/Downloads/Themis Soru - Idari Yargilama Hukuku.pdf` (88 sayfa)
+- **Konu anlatimi ACIKLAMA icin kullanilabilir** (kullanici karari, 3 Eyl):
+  `~/Downloads/Themis Konu - Idare Hukuku.pdf` (148 sayfa). SORU URETILMEZ.
+
+### ILK ISLER (siradaki tur)
+1. Gorseller hazir mi bak (`ls <scratchpad>/idare-png | wc -l` -> 118 olmali).
+2. **Konu topic id'sini bul** — CMK'nin TOPIC sabiti artik gecerli degil.
+3. **Bankada idare hukuku mevzuati var mi?** IYUK'un bankada oldugu kullanici
+   tarafindan soylendi; 2577 s. IYUK, 2575 s. Danistay K., 657, 5393, 5302, 3194
+   gibi kanunlarin durumu OLCULMELI. Dayanagi bankada olmayan soru alinamaz.
+4. **Bankadaki mevcut idare hukuku sorularini MADDEYE GORE dok** (yukaridaki ders).
+5. Bolum haritasi cikar (birkac sayfa ornekle), sonra bos bloklara git.
+
+### DANISTAY SINIRI (kullanici karari, 3 Eyl 2026)
+Yalnizca TEMEL duzey, **hedef ~20 soru**. Ornek: Danistay uyeleri kim tarafindan
+secilir, kurul kac uyeden olusur, daire sayisi. Derinlikli/istisnai Danistay
+sorulari ALINMAZ. 20'ye ulasinca Danistay konusu KAPANIR.
+
+#### (kapandi) CMK siradaki hedefler
 ISLENEN: s-006, s-042..s-116.
 KALAN: **s-001..s-005 (on sayfalar, muhtemelen icindekiler), s-007..s-041.**
 CMK bitince -> Idare Hukuku -> Idari Yargilama Hukuku (GECE-TALIMATI-3.md).
