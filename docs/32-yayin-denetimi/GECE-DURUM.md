@@ -1131,3 +1131,26 @@ kurullar m.16/20/21'de). Bu kitapta HER dayanak elle dogrulanmali.
 
 **DANISTAY HEDEFI: 8/20.** Kalan 12 icin s-05..s-12 okunacak (Test 1-4).
 SIRADAKI: s-09..s-12.
+
+### y02 YAYINDA — 14/14 yayimlanabilir · **DANISTAY HEDEFI TAMAM (20/20)**
+2575: 12 soru (m.3, m.9-10, m.13 x3, m.15, m.16, m.17, m.18, m.19/A, m.41, m.52/A)
+2576: 2 soru (m.3/A-3/D BIM gorevleri, m.3/C BIM baskanlar kurulu)
+29 okundu, 15 elendi: 9 "cok derinlikli" (kullanici talimati), 1 supheli,
+**3'u 2576 m.3 metni bankada BOS oldugu icin**, 1 mukerrer (`c280da79` — BIM
+baskanina atama = HSK), 1 dogrulanamadi (BIM adalet komisyonu).
+
+## VERI EKSIGI — 2576 m.3 (kullanici gormeli)
+Bankadaki `2576 m.3` kaydinin metni yalnizca **174 karakter** ve icerigi
+dipnot girisinden ibaret: "(Degisik: 18/6/2014-6545/3 md.) Bu maddenin ...
+degistirilmeden onceki metni asagidaki sekildedir. 'Bolge Idare Mahkemelerinin
+olusumu:" — yani BIM'in KURULUS/OLUSUM hukmu (kac daire, dairelerin yapisi,
+daire sayisini kim artirir) IMPORT EDILMEMIS. m.3/A..3/I alt maddeleri saglam.
+Sonuc: BIM'in olusumuna dayanan sorular dogrulanamiyor ve aliniyor.
+**Yapilacak: 2576 m.3 metni mevzuat.gov.tr PDF'inden yeniden import edilmeli.**
+(Ayrica `2575 m.18`in govdesi "otuzbir" derken dipnotu 6572/2014'un bunu
+"yirmi bes" yaptigini soyluyor — ayni tur bir metin tutarsizligi; bu turdaki
+soru yine de guvenli, cunku sik "15" diyor ve her iki sayiya gore de yanlis.)
+
+**DANISTAY: 20/20 — KAPANDI.** Kullanicinin istedigi ~20 temel duzey soru tamam.
+SIRADAKI: **IYUK govdesi (2577)** — s-16'dan itibaren. Bankada 2577 icin 49 soru
+var, kitapta ise s-16..s-88 arasi ~250 soru. Once s-16..s-19 okunacak.
