@@ -1,4 +1,9 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["node_modules", "test", "dist", "prisma", "**/*spec.ts"]
+  // "scripts" DIŞLANIR: orası tsx ile elle çalıştırılan geliştirme araçlarıdır,
+  // dağıtılan pakete girmez. Dışlanmadığı için 2-3 Eylül 2026'da apps/api
+  // DEPLOY'U KİLİTLENDİ: bir betikteki tip hatası "npm run build"i düşürdü,
+  // Railway eski sürümü servis etmeye devam etti ve deneme sınavı günlük limit
+  // düzeltmesi (c4a123b) günlerce canlıya çıkamadı. Uygulama kodunda hata yoktu.
+  "exclude": ["node_modules", "test", "dist", "prisma", "scripts", "**/*spec.ts"]
 }

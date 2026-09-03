@@ -46,7 +46,7 @@ const p = new PrismaClient();
     select: {
       id: true, status: true, startedAt: true, completedAt: true,
       plannedDurationSeconds: true,
-      user: { select: { email: true, isPremium: true } },
+      user: { select: { email: true, entitlement: { select: { isPremium: true } } } },
       _count: { select: { answers: true } },
     },
   });
@@ -67,15 +67,15 @@ const p = new PrismaClient();
     });
     const n = s._count.answers;
     // Tam 30'da durmak, ücretsiz plan limitinin sınavı kestiğinin imzasıdır.
-    const bayrak = !s.user.isPremium && n === 30 ? '  ← TAM 30: HATA SÜRÜYOR' : '';
+    const bayrak = !(s.user.entitlement?.isPremium ?? false) && n === 30 ? '  ← TAM 30: HATA SÜRÜYOR' : '';
     console.log(
-      `  ${(s.user.isPremium ? 'PREM' : 'ÜCRT').padEnd(6)} ${String(n).padStart(5)}  ` +
+      `  ${((s.user.entitlement?.isPremium ?? false) ? 'PREM' : 'ÜCRT').padEnd(6)} ${String(n).padStart(5)}  ` +
         `${s.status.padEnd(12)} ${(son?.answeredAt.toISOString().slice(11, 19) ?? '—').padEnd(19)} ` +
         `${s.user.email}${bayrak}`,
     );
   }
 
-  const ucretsiz = sessions.filter((s) => !s.user.isPremium);
+  const ucretsiz = sessions.filter((s) => !(s.user.entitlement?.isPremium ?? false));
   console.log('\nSONUÇ');
   if (ucretsiz.length === 0) {
     console.log('  Ücretsiz hesapla katılım YOK — düzeltme test EDİLMEDİ.');
