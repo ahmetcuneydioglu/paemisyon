@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useActionState, useState } from "react";
+import { useActionState, useMemo, useState } from "react";
 import { resendConfirmation, signIn, signUp, type AuthState } from "./actions";
 import { Button } from "@/components/ui/button";
 import { AuthDivider } from "@/components/auth/auth-divider";
 import { SocialLoginButtons } from "@/components/auth/social-login-buttons";
+import { epostaDenetle } from "@/lib/eposta";
 
 /** Giriş/Kayıt formu — eski popup'ın sayfa hali; ikonlu alanlar, eski buton dili. */
 export function AuthForm({
@@ -16,6 +17,15 @@ export function AuthForm({
 }) {
   const isLogin = mode === "giris";
   const [showPassword, setShowPassword] = useState(false);
+  // Yazım hatası uyarısı istemcide: "gmial.com yazdın, gmail.com mu?" — kayıt
+  // yolunu KESMEZ, yalnız sorar. Sunucuya gidip dönseydi React 19 form'u
+  // sıfırlar, kullanıcı ad ve şifresini yeniden yazmak zorunda kalırdı.
+  const [email, setEmail] = useState("");
+  const [oneriKapali, setOneriKapali] = useState(false);
+  const oneri = useMemo(() => {
+    const sonuc = epostaDenetle(email);
+    return sonuc.durum === "oneri" ? sonuc : null;
+  }, [email]);
   const [state, action, pending] = useActionState<AuthState, FormData>(
     isLogin ? signIn : signUp,
     {},
@@ -96,9 +106,51 @@ export function AuthForm({
       <form action={action} className="space-y-4">
         <input type="hidden" name="next" value={next} />
         {!isLogin && (
-          <Field name="name" type="text" label="Ad soyad" autoComplete="name" />
+          <Field
+            name="name"
+            type="text"
+            label="Ad soyad"
+            autoComplete="name"
+            defaultValue={state.name}
+          />
         )}
-        <Field name="email" type="email" label="E-posta" autoComplete="email" />
+        <div>
+          <Field
+            name="email"
+            type="email"
+            label="E-posta"
+            autoComplete="email"
+            value={email}
+            onValueChange={(v) => {
+              setEmail(v);
+              setOneriKapali(false);
+            }}
+          />
+          {!isLogin && oneri && !oneriKapali && (
+            <div
+              className="mt-2 rounded-sm border border-warning/40 bg-warning/10 px-3 py-2"
+              role="status"
+            >
+              <p className="text-[13px] text-ink">{oneri.mesaj}</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setEmail(oneri.oneri)}
+                  className="tk-interactive min-h-11 rounded-sm bg-brand px-3 text-[13px] font-bold text-surface hover:opacity-90"
+                >
+                  {oneri.oneri} olarak düzelt
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setOneriKapali(true)}
+                  className="tk-interactive min-h-11 px-2 text-[13px] font-bold text-ink-soft hover:text-ink"
+                >
+                  Adresim doğru
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
         <div>
           <div className="flex items-center justify-between gap-3">
             <label
@@ -201,6 +253,9 @@ function Field(props: {
   type: string;
   label: string;
   autoComplete: string;
+  defaultValue?: string;
+  value?: string;
+  onValueChange?: (value: string) => void;
 }) {
   return (
     <div>
@@ -216,6 +271,16 @@ function Field(props: {
         name={props.name}
         type={props.type}
         autoComplete={props.autoComplete}
+        // Kontrollü (e-posta) ya da kontrolsüz (ad) — ikisi karışmasın.
+        // key spread'e KONMAZ: React uyarı basıyor ve gerek de yok — React 19
+        // action sonrası formu sıfırlarken defaultValue'yu zaten uyguluyor.
+        {...(props.onValueChange
+          ? {
+              value: props.value ?? "",
+              onChange: (e: { target: { value: string } }) =>
+                props.onValueChange!(e.target.value),
+            }
+          : { defaultValue: props.defaultValue })}
         className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
       />
     </div>

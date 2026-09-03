@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { supabaseServer } from "@/lib/supabase/server";
 import { authRedirectUrl, safeNext } from "@/lib/auth";
 import { config } from "@/lib/config";
+import { alanAdi, epostaDenetle } from "@/lib/eposta";
+import { alanTeslimEdilemezMi } from "@/lib/eposta-dns";
 
 /** Kimlik server action'ları — Supabase Auth (tüm platformlarla ORTAK hesap, Doc 18 §7). */
 
@@ -11,6 +13,8 @@ export type AuthState = {
   notice?: string;
   email?: string;
   verificationRequired?: boolean;
+  /** Hata dönerken formu yeniden doldurmak için (React 19 formu sıfırlıyor). */
+  name?: string;
 };
 
 export async function signIn(
@@ -35,9 +39,24 @@ export async function signUp(
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
   const password = String(formData.get("password") ?? "");
-  if (name.length < 2) return { error: "Ad Soyad zorunludur." };
-  if (!email || password.length < 8)
-    return { error: "Geçerli e-posta ve en az 8 karakterli şifre gir." };
+  if (name.length < 2) return { error: "Ad Soyad zorunludur.", email, name };
+  if (password.length < 8)
+    return { error: "Şifre en az 8 karakter olmalı.", email, name };
+
+  // Adres denetimi Supabase'e GİTMEDEN önce: yanlış yazılmış her adres bir
+  // doğrulama maili ve ardından bir bounce demek (Supabase 3 Eylül 2026 uyarısı).
+  // Yazım hatası önerisi burada DEĞİL, istemcide: engelleyici olmadığı için
+  // sunucuya gidip dönmesi gereksiz, üstelik React 19 action sonrası formu
+  // sıfırladığı için kullanıcının yazdığı ad ve şifre siliniyordu.
+  const denetim = epostaDenetle(email);
+  if (denetim.durum === "gecersiz") return { error: denetim.mesaj, email, name };
+  if (await alanTeslimEdilemezMi(alanAdi(email))) {
+    return {
+      error: `"${alanAdi(email)}" adresine e-posta ulaşamıyor. Adresi kontrol et.`,
+      email,
+      name,
+    };
+  }
 
   const supabase = await supabaseServer();
   const { data, error } = await supabase.auth.signUp({
@@ -63,7 +82,11 @@ export async function resendConfirmation(
   formData: FormData,
 ): Promise<AuthState> {
   const email = String(formData.get("email") ?? "").trim();
-  if (!email) return { error: "E-posta adresini gir." };
+  const denetim = epostaDenetle(email);
+  // Burada yalnız BİÇİM denetlenir: yazım hatası önerisi ya da DNS denetimi
+  // yok. Bu akışlara mevcut kullanıcılar da girer; onları kendi hesaplarından
+  // kilitlememek için kural kayıttan daha gevşek.
+  if (denetim.durum === "gecersiz") return { error: denetim.mesaj, email };
   const supabase = await supabaseServer();
   const { error } = await supabase.auth.resend({
     type: "signup",
@@ -82,7 +105,8 @@ export async function requestPasswordReset(
   formData: FormData,
 ): Promise<AuthState> {
   const email = String(formData.get("email") ?? "").trim();
-  if (!email) return { error: "E-posta adresini gir." };
+  const denetim = epostaDenetle(email);
+  if (denetim.durum === "gecersiz") return { error: denetim.mesaj, email };
   const supabase = await supabaseServer();
   const { error } = await supabase.auth.resetPasswordForEmail(email, {
     redirectTo: authRedirectUrl(config.siteUrl, "/sifre-yenile"),
