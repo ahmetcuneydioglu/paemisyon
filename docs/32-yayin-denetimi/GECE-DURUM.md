@@ -508,9 +508,52 @@ Hizmet bakimindan yerinden yonetim (s-048..s-049), bagimsiz idari otoriteler
 (s-050..s-052) ve meslek kuruluslari (s-053..s-054) kurulus kanunlarina dayanir;
 o kanunlar da bankada yok -> atlanacak.
 
+### PARTI i01 KAPANDI — MEMURLAR / 657 DMK (3 Eyl 2026)
+s-095..s-098 (kitap s.189-196, TEST-I ve II) okundu: **30 soru -> 17 bankaya girdi.**
+Denetim 17/17 yayimlanabilir, kusurlu 0. Run: wf_fa91e478-de2.
+657 yayinda 94 -> **111**; soru bagli madde 46 -> **52**. Banka 5.604.
+
+**KONU SECIMI:** sorular "Idare Hukuku" degil **"657 Sayili Devlet Memurlari
+Kanunu"** konusuna (`8b68257c`) yazildi. Sebep: `denetim-yayinla.ts` articleNo'yu
+yalnizca `dogruKanun === topic.name` oldugunda baglar. 657 konusuna yazilinca
+madde bagi kuruluyor; Idare Hukuku konusuna yazilsaydi 241 bagsiz sorunun yanina
+bir tane daha eklenirdi. **Kanun bazli sorular ilgili KANUN konusuna yazilacak.**
+
+**KAYNAK ETIKETI:** `SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)`.
+
+13 eleme:
+- 9'u alt ajan: 5 doktrin (memur kavraminin ogeleri, atamanin sart islem nitelig,
+  kadro/rutbe sistemleri...), 4'u **3 sayili Cumhurbaskanligi Kararnamesi**
+  (ust kademe yoneticileri) — CBK bankada yok, dayanak dogrulanamaz.
+- 2 banka mukerreri: kariyer ilkesi tanimi (0ca66ed7), adalet hizmetleri sinifi
+  (4e421ffa) — ikisi de birebir.
+- **2 ESKIMIS HUKUM — bu kitabin en onemli riski:**
+  Kitap Ocak 2025 baskisi; **657 m.56 23/1/2026'da degisti ve m.57 MULGA edildi
+  (7573 s.K.).** Eski m.56'nin ilisik kesme sebepleri ("memuriyetle bagdasmayan
+  hal ve hareketler", "gorevde devamsizlik") KALDIRILDI; yerine disiplin cezasi
+  olcutu geldi. Bu yuzden `s-096 S.15` (o sebepleri sik olarak sayiyordu -> bugun
+  UC dogru cevapli) ve `s-097 S.1` (kokunde artik var olmayan bir sebebi
+  varsayiyor) elendi. `s-097 S.2` kurtuldu: uc yillik yasak yeni m.56'da AYNEN
+  duruyor, yalniz madde numarasi degisti.
+  **DERS: bu kitap 1 yil eski. Sure/rakam iceren her soruda maddeyi bankadan CEK.**
+
+### YENI ARACLAR (3 Eyl 2026)
+- `harita-kur-idare.py` — idare partileri icin harita. `hedefli-kume.ts` maddeyi
+  **lawArticle.topic.name** icinde arar (legislation adinda DEGIL), o yuzden sol
+  taraf topic adinin parcasi olmali: `657|48`, `Anayasa|128`. Ek maddeler bankada
+  "Ek 8" bicimindedir; betik "ek m.8" -> "Ek 8" cevirir.
+- `mukerrer-tara.py`, `karsilastir.py`, `dok.py`, `aday-kur.py` artik **BANKA** ve
+  **OKUNAN_DESEN** ortam degiskenleriyle herhangi bir konuya yoneltilebilir.
+  GURULTU listesine idare kaliplari eklendi (657, devlet, memurlari, idari...).
+
+### !!! TURKCE BUYUK I TUZAGI (3 Eyl 2026'da yasandi)
+JavaScript `toLowerCase()` "İdare" -> "i̇dare" (birlesik noktali i) uretir ve
+`/idare hukuku/i` ile ESLESMEZ. Ilk banka dokumunde Idare Hukuku'nun 262 sorusu
+bu yuzden dusmustu. **Konu suzerken desen degil, TOPIC ID listesi kullan.**
+
 ### SIRADAKI ADIM
-**Memurlar blogundan basla** (en buyuk bos madde havuzu: 657'de ~291).
-s-095..s-098 okundu/okunuyor. Sonra s-099..s-113 devam.
+Memurlar blogunun kalani: **s-099..s-113** (TEST-III..IX).
+Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
 Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
 Kitap bitince -> Idari Yargilama Hukuku kitabi (Danistay + IYUK; IYUK'ta 50 bos madde).
 
