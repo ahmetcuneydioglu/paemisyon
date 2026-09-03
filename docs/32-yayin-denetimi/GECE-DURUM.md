@@ -413,7 +413,40 @@ Gorseller hazir: `<scratchpad>/idare-png/s-001..s-118.png` (118 sayfa).
 (`mevzuat-import.ts --slug <yeni> --file <pdf>`; legislation kaydi ONCE kurulmali,
 betik findUnique yapiyor, kendisi olusturmuyor).
 
-### !!! YAPISAL SORUN — KARAR GEREKIYOR (kullanici uyaninca)
+### KULLANICI KARARI (3 Eyl 2026): **TEORI BLOKLARI ALINMAYACAK**
+> "Gerek yok alma bu kisimlari ve kaldigin yerden devam et"
+
+Genel idare hukuku teorisi (idari islemin unsurlari, kamu hizmeti olcutleri,
+hizmet kusuru/kusursuz sorumluluk, idari sozlesme turleri) **ALINMAYACAK.**
+Yalnizca KANUNLA DOGRULANABILIR bloklar islenecek. Denetim hattinda degisiklik
+yapilmayacak; konu anlatimi PDF'i aciklama yazarken basvuru kaynagi olarak kalir.
+
+### !!! FIRSAT TABLOSU — IDARE MEVZUATI COK INCE (3 Eyl 2026 olcumu)
+
+CMK'nin tersine burasi VERIMLI. Kanun basina madde / soru / soru bagli madde:
+
+| kanun | madde | soru | bagli madde | BOS |
+|---|---|---|---|---|
+| **2575 Danistay** | 138 | **0** | 0 | **138** |
+| 657 Devlet Memurlari | 337 | 94 | 46 | ~291 |
+| 5393 Belediye | 101 | 18 | 15 | ~86 |
+| 2577 IYUK | 82 | 58 | 29 | **50** |
+| 5302 Il Ozel Idaresi | 78 | 10 | 7 | ~71 |
+| 5442 Il Idaresi | 77 | 31 | 16 | ~61 |
+| 2576 BIM | 48 | 5 | 3 | ~45 |
+| 4483 Memurlarin Yarg. | 25 | 30 | 9 | ~16 |
+| 3071 Dilekce | 12 | 5 | 4 | ~8 |
+| 4982 Bilgi Edinme | 33 | 84 | 29 | ~4 (DOYGUN) |
+
+**IYUK'ta sorusu olmayan sinav maddeleri:** m.1, 4, 12, **13** (idari eylemden dogan
+zarar — cok sorulur), 21, 22, 23, 25, 29, 31, 32, 34-40, 42, 44 (yargilamanin
+yenilenmesi), 46-49 (istinaf/temyiz), 54-65. (Gecici maddeler sayilmadi.)
+
+**"Idare Hukuku" konusundaki 262 sorunun 241'inin MADDE BAGI YOK** — eski toplu
+ice aktarimdan kalma, denetimden gecmemis. Bu da konunun doktrin agirligini
+dogruluyor; yeni sorular madde bagli gelecegi icin karisma riski yok.
+
+### (kapandi) yapisal sorun notu
 
 Idare hukuku, CMK'dan farkli olarak **buyuk olcude KANUNA DAYANMAZ.** Idari islemin
 unsurlari (yetki-sekil-sebep-konu-amac), idari islemin geri alinmasi, kamu hizmeti
