@@ -1113,3 +1113,21 @@ sonunda koyu zeminde "Yanit, X secenegi".
 - Yogunluk: PNG basina ~7 soru.
 
 SIRADAKI: s-13..s-15 (Danistay Test 5) okunuyor.
+
+### y01 YAYINDA — 8/8 yayimlanabilir (DANISTAY basladi)
+2575 konusu ONCEDEN BOSTU (0 soru); bunlar bankadaki ilk Danistay sorulari.
+Maddeler: m.10 (bassavci gorev suresi 4 yil), m.22 (baskanliga vekalet),
+m.40 x2 (ictihat karari 1 ay RG / kim isteyemez), m.45 (ictuzugu Genel Kurul
+kabul eder), m.48 (imtiyaz 2 ay), m.42 (imtiyaz gorevi 1. Daire),
+m.21 (Disiplin Kuruluna Baskan baskanlik ETMEZ).
+16 okundu, 6 "cok derinlikli" (daire is bolumu, ozluk), 1 supheli, 1 coklu dogru sik.
+
+**METOT NOTU — okuyucu dayanaklari GUVENILMEZ.** 8 sorunun 6'sinda alt ajanin
+madde tahmini yanlisti: m.9->m.10, m.14->m.22, m.39->m.40, m.52->m.45,
+m.48->m.42, m.11->m.21. Hepsi anahtar kelimeyle 2575'in 138 maddesinde aranip
+duzeltildi. **2575'te madde basliklari yaniltici** (m.9 "Uye secimi" ama
+bassavci suresi m.10'da; m.11 tetkik hakimleri ama Baskanin baskanlik ettigi
+kurullar m.16/20/21'de). Bu kitapta HER dayanak elle dogrulanmali.
+
+**DANISTAY HEDEFI: 8/20.** Kalan 12 icin s-05..s-12 okunacak (Test 1-4).
+SIRADAKI: s-09..s-12.
