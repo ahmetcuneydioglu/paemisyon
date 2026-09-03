@@ -1261,3 +1261,25 @@ s-76..s-78'den 16 okundu, 4 alindi (%25).
 - **4 soru BANKA DISI KANUN**: 6216 (AYM) ve 6085 (Sayistay). Kitap kanun yollari
   bolumunde Sayistay kanun yollarini da isliyor; 6085 bankada yok.
 - **6 soru DOYGUN MADDE** (m.50, m.51, m.53 tekrarlari).
+
+### y06 YAYINDA — 2/2 yayimlanabilir (Onuncu Bolum basi)
+2577 m.20/A (ivedi yargilamada temyiz: Danistay maddi vakia bilgisini yeterli
+gormezse BOZUP GONDERMEZ, tahkikati KENDISI yapar) · m.46 (kamu gorevinden
+cikarma -> once 30 gun istinaf BIM, sonra 30 gun temyiz Danistay).
+s-70..s-73'ten 21 okundu, 2 alindi (%10).
+
+## KRITIK ESKIME BULGUSU — IYUK m.45 ve m.46
+Bankadaki metne gore:
+- **m.45, 16/7/2026 tarihli 7589 sayili Kanun'la DEGISTIRILDI** (fikra 3 ve 5).
+- m.45/1'deki istinaf kesinlik siniri 28/7/2024-7524 ile **otuz bir bin TL**.
+- m.46/1'de (b) bendi AYM'nin 26/7/2023 kararyla IPTAL edilip 7524/2024 ile
+  yeniden duzenlendi (dokuz yuz yirmi bin TL), (c) bendi ise **16/7/2026-7589
+  ile MULGA**.
+**Sonuc: kitap Ocak 2025 baskisi oldugu icin m.45/m.46 parasal ve yapisal
+sorulari ARTIK GUVENILMEZ.** Bu partide m.45 dayanakli 6 soru ve parasal sinir
+iceren 3 soru bu nedenle elendi. Kalan iki soru parasal sinira DEGMEYEN
+yapisal kurallari olctugu icin alindi.
+
+**KURAL (bundan sonraki turlar icin):** IYUK kanun yollari bolumunde
+**parasal sinir iceren HER SORU elenir**; m.45/m.46'ya dayanan sorular ise
+yalnizca parasal olmayan yapisal kurali olcuyorsa alinir.
