@@ -572,6 +572,27 @@ dogurur" sorusunu m.57'ye dayandiriyor, o madde MULGA. Kural yeni m.56'da duruyo
 ve aciklamaya kanunun ince ayrimi eklendi: aylıktan kesme ile kademe ilerlemesinin
 durdurulmasi TEK BASINA yeterli, uyarma/kinama ise ancak BIRDEN FAZLA olursa.
 
+#### !! "MULGA" TESPITINDE TUZAK (3 Eyl 2026'da yasandi)
+Madde metninin BASINDAKI "(Mülga: ...)" ibaresine bakip maddeyi yururlukten kalkmis
+saymak YANLIS. Cok sayida madde once mulga edilip SONRA YENIDEN DUZENLENMISTIR ve
+her iki serh de metnin basinda yan yana durur:
+  657 m.22 -> "(Mülga: 23/12/1972 - KHK-2/5 md.; **Yeniden düzenleme: 12/6/1997
+  4275/1 md.**) Devlet memurları ... sendikalar ve üst kuruluşlar kurabilir..."
+Yani m.22 YURURLUKTEDIR. Regex ile `^\(Mülga` arayan bir tarama bu maddeleri
+yanlislikla "mulga" listesine atar. **Karar vermeden once maddenin GOVDE metnini
+oku**; serh degil, hukum belirleyicidir.
+
+#### 657 DISIPLIN BOLUMU — HAZIRLIK OLCUMU (3 Eyl 2026)
+m.124-145 araliginda 2023 sonrasi degisiklik tasiyan maddeler: **m.127**
+(23/1/2026 - 7573/3), Ek m.40 (21/5/2025 - 7548), Ek m.41 (8/5/2025 - 7547).
+m.127'deki 2026 degisikligi **iki yillik ceza verme zamanasimini DEGISTIRMEDI**;
+eklenen sey, disiplin cezasi yargi kararıyla iptal edilirse kalan zamanasimi
+suresi icinde (dolmus ya da alti aydan az kalmissa en gec alti ay icinde)
+yeniden ceza tesis edilebilecegidir. Yani "ceza verme zamanasimi kac yil" tipi
+sorular hala gecerli.
+Ilgili madde metinleri `<scratchpad>/m657c.json` dosyasinda hazir
+(m.94-101, 108-109, 124-145).
+
 #### BU KITAPTA DAYANAGI BANKADA OLMAYAN KANUNLAR (buyuyen liste)
 3 sayili CBK · 2531 · 4688 · 2942 Kamulastirma · 2886/4734 Ihale · 2547 YOK
 Bunlara dayanan soru ALINMAZ. Ihtiyac olursa `mevzuat-import.ts` ile cekilir
