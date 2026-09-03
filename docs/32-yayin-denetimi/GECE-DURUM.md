@@ -1065,3 +1065,27 @@ Test VI (kitap s.82'den itibaren) 5302 agirlikli — ama i06 zaten 5302'nin
 cekirdek maddelerini aldigi icin verim dusuyor. Bu blok DOYMAK UZERE.
 SIRADAKI: s-043..s-046. Verim yine 2-3'te kalirsa mahalli idareler bloku
 kapatilip Idari Yargilama Hukuku kitabina gecilmeli.
+
+### i08 YAYINDA — 9/9 yayimlanabilir (kusur yok)
+5393: m.10, m.11, m.25, m.41, m.45, m.73 | 5302: m.18, m.22, m.40.
+s-039..s-046 arasi **59 soru okundu, 9 alindi (%15)**. Iki tur birlestirildi.
+Dayanak duzeltmesi: belde adi degisikligi m.11 DEGIL **m.10** (m.11 tuzel
+kisiligin sona erdirilmesi). Ayrica s-043 S.12 ile s-045 S.2 ayni kurali
+olcuyordu (sulh hukuk hakimi); genis olan (S.2) tutuldu.
+
+## MAHALLI IDARELER BLOKU — DOYGUNLUK OLCUMU
+| tur | okunan | alinan | oran |
+|---|---|---|---|
+| i06 (s-031..034) | 29 | 21 | %72 |
+| i07 (s-035..038) | 30 | 17 | %57 |
+| i08 (s-039..046) | 59 |  9 | %15 |
+
+Verim ucte bire dustu. Sebep yapisal: (1) 5302/5393/5442'nin cekirdek maddeleri
+alindi, (2) kalan sorular 5216/442/5355/2972'ye dayaniyor ve bu kanunlarin
+METNI BANKADA YOK, (3) kitabin kalan testleri ayni kurallari tekrar oluyor.
+
+**ONERI (kullanici karari):** mahalli idareler bloku KAPATILIP
+`Themis Soru - Idari Yargilama Hukuku.pdf` kitabina gecilmeli. Gerekce:
+IYUK metinleri bankada VAR (2577'nin ~50 bos maddesi), 2575 Danistay Kanunu
+bu gece import edildi ve kullanici ozellikle "danistay ile ilgili temel duzeyde
+20 soru" istedi — bu hedef henuz HIC baslamadi.

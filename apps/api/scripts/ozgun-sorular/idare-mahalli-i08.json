@@ -1,0 +1,317 @@
+[
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl özel idaresinin işleriyle ilgili bir konuda mecliste görüşme açılması için aranan çoğunluk aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bir üyenin talebi yeterlidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "En az 10 üyenin talebi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İl genel meclisi üyelerinin en az üçte birinin talebi",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "İl genel meclisi üyelerinin en az yarısının talebi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İl genel meclisi üyelerinin en az üçte ikisinin talebi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Genel görüşme, il genel meclisinin bilgi edinme ve denetim yollarından biridir. 5302 sayılı Kanun m.18'e göre il genel meclisi bilgi edinme ve denetim yetkisini SORU, GENEL GÖRÜŞME ve FAALİYET RAPORUNU DEĞERLENDİRME yollarıyla kullanır. Genel görüşmenin usulü aynı maddede gösterilmiştir: İL GENEL MECLİSİ ÜYELERİNİN EN AZ ÜÇTE BİRİ, meclis başkanlığına istekte bulunarak il özel idaresinin işleriyle ilgili bir konuda mecliste genel görüşme açılmasını isteyebilir; bu istek MECLİS TARAFINDAN KABUL EDİLDİĞİ TAKDİRDE gündeme alınır. Üçte birlik oran görüşmeyi kendiliğinden başlatmaz, yalnızca istekte bulunma yetkisi verir. Belediye tarafındaki karşılığı 5393 m.26'dır ve orada da oran üçte birdir; ancak belediye meclisinin denetim yolları arasında ayrıca DENETİM KOMİSYONU ve GENSORU da bulunur — il genel meclisinde gensoru YOKTUR.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisi aşağıdaki mercilerden hangisinin kararı ile feshedilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İçişleri Bakanlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Danıştay",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "İdare mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Anayasa Mahkemesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl genel meclisinin feshi 5302 sayılı Kanun m.22'de düzenlenmiştir ve yetki, idare ile yargı arasında BÖLÜNMÜŞTÜR. Meclis; kendisine kanunla verilen görevleri süresi içinde yapmayı ihmal eder ve bu durum il özel idaresine ait işleri aksatırsa ya da il özel idaresine verilen görevlerle ilgisi olmayan SİYASÎ konularda karar alırsa, İÇİŞLERİ BAKANLIĞININ BİLDİRİSİ üzerine DANIŞTAYIN KARARI İLE feshedilir. Yani bildirimi idare yapar, fesih kararını YARGI verir; İçişleri Bakanlığı, Cumhurbaşkanı, idare mahkemesi veya Anayasa Mahkemesi bu konuda karar mercii değildir. Seçilmiş bir organın görevine son verilmesinin yargı kararına bağlanması, Anayasa m.127'deki mahallî idare özerkliğinin güvencesidir. Aynı model belediye meclisi için de geçerlidir: 5393 m.30 uyarınca fesih yine İçişleri Bakanlığının bildirimi üzerine Danıştay kararıyla olur.",
+    "difficulty": "easy",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Bir beldenin adının değiştirilmesi usulü aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye meclisi üye tamsayısının salt çoğunluğunun kararı ve kaymakamın görüşü üzerine İçişleri Bakanlığının onayı ile değiştirilir",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Belediye meclisi üye tamsayısının en az dörtte üç çoğunluğunun kararı ve valinin görüşü üzerine İçişleri Bakanlığının onayı ile değiştirilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Belediye meclisi üye tamsayısının en az dörtte üç çoğunluğunun kararı ve kaymakamın görüşü üzerine valinin onayı ile değiştirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kaymakamın kararı ve valinin görüşü üzerine Çevre, Şehircilik ve İklim Değişikliği Bakanlığının onayı ile değiştirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Valinin görüşü ve İçişleri Bakanlığının kararı üzerine Cumhurbaşkanı onayı ile değiştirilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belde adının değiştirilmesi 5393 sayılı Kanun m.10'da ÜÇ AŞAMALI bir usule bağlanmıştır. Bir beldenin adı; BELEDİYE MECLİSİ ÜYE TAM SAYISININ EN AZ DÖRTTE ÜÇ ÇOĞUNLUĞUNUN KARARI ve VALİNİN GÖRÜŞÜ üzerine İÇİŞLERİ BAKANLIĞININ ONAYI ile değiştirilir; bu karar Resmî Gazete'de yayımlanır. Beldenin adının değişmesiyle belediyenin adı da değişmiş sayılır. Aranan çoğunluk olağan salt çoğunluk değil NİTELİKLİ çoğunluktur; görüş bildirecek merci kaymakam değil VALİ, onay mercii ise vali değil İÇİŞLERİ BAKANLIĞIDIR. Karıştırılmaması gereken komşu kural m.9'dadır: belediye sınırları içinde MAHALLE kurulması, kaldırılması, birleştirilmesi, bölünmesi ve adlarının değiştirilmesi belediye meclisinin kararı ve KAYMAKAMIN GÖRÜŞÜ üzerine VALİNİN ONAYI ile olur. Yani belde adında Bakanlık, mahalle adında vali son sözü söyler.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Tüzel kişiliği kaldırılan bir belediyenin tasfiyesi aşağıdakilerden hangisi tarafından yapılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İl valisi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İl özel idaresi",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "İçişleri bakanlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İLBANK",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Hazine ve Maliye Bakanlığı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Tüzel kişiliği kaldırılan belediyenin akıbeti 5393 sayılı Kanun m.11'de düzenlenmiştir. Nüfusu 2.000'in altına düşen belediyeler KÖYE DÖNÜŞTÜRÜLÜR ve TÜZEL KİŞİLİĞİ KALDIRILAN BELEDİYENİN TASFİYESİ İL ÖZEL İDARESİ TARAFINDAN YAPILIR. Bu belediyenin taşınır ve taşınmaz malları ile hak, alacak ve borçları ilgili KÖY TÜZEL KİŞİLİĞİNE intikal eder. İntikal eden borçların karşılanamayan kısımları il özel idaresi tarafından üstlenilir ve vali tarafından İller Bankasına bildirilir; İller Bankası bu miktarı, takip eden ayın genel bütçe vergi gelirleri tahsilat toplamının belediyelere ayrılan kısmından keserek ilgili il özel idaresi hesabına aktarır. Görüldüğü gibi İller Bankasının rolü tasfiyeyi yapmak değil, üstlenilen borcun MAHSUBUNU sağlamaktır; tasfiye işlemini yürüten idare il özel idaresidir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Bir alanın kentsel dönüşüm ve gelişim alanı olarak ilan edilebilmesi için bu alanın belediye veya mücavir alan sınırları içinde bulunması gerekmektedir. Ancak kamunun mülkiyetinde bulunan veya kullanımında olan yerlerde kentsel dönüşüm ve gelişim proje alanı ilan edilebilmesi ve uygulama yapılabilmesi ilgili belediyenin talebi üzerine aşağıdakilerden hangisinin kararına bağlıdır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İçişleri Bakanlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Ulaştırma ve Altyapı Bakanlığı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İlgili vali",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kentsel dönüşüm ve gelişim alanı ilanı 5393 sayılı Kanun m.73'te düzenlenmiştir. Belediye, belediye meclisi kararıyla; konut, sanayi, ticaret ve kamu hizmeti alanları oluşturmak, eskiyen kent kısımlarını yeniden inşa ve restore etmek, kentin tarihî ve kültürel dokusunu korumak veya DEPREM RİSKİNE KARŞI tedbir almak amacıyla kentsel dönüşüm ve gelişim projeleri uygulayabilir. Bir alanın bu nitelikte ilan edilebilmesi için sayılan amaçlardan birinin gerçekleşmesi ve alanın belediye veya mücavir alan sınırları içinde bulunması şarttır. ANCAK KAMUNUN MÜLKİYETİNDE VEYA KULLANIMINDA OLAN YERLERDE proje alanı ilan edilebilmesi ve uygulama yapılabilmesi için İLGİLİ BELEDİYENİN TALEBİ ve CUMHURBAŞKANINCA bu yönde KARAR ALINMASI şarttır. Bu yetki daha önce Bakanlar Kuruluna aitti ve 2/7/2018 tarihli 703 sayılı Kanun Hükmünde Kararname ile Cumhurbaşkanına geçmiştir; eski kaynaklarda hâlâ Bakanlar Kurulu olarak geçer. Alanın büyüklüğü en az 5, en çok 500 hektar olabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Nüfusu kaçın altında olan belediyelerde stratejik plan yapılması zorunlu değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10.000",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "50.000",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "100.000",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "250.000",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "500.000",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Stratejik plân yapma yükümlülüğü 5393 sayılı Kanun m.41'de bir NÜFUS EŞİĞİNE bağlanmıştır: NÜFUSU 50.000'İN ALTINDA OLAN BELEDİYELERDE STRATEJİK PLÂN YAPILMASI ZORUNLU DEĞİLDİR. Eşiğin üzerindeki belediyelerde ise belediye başkanı, mahallî idareler genel seçimlerinden itibaren ALTI AY İÇİNDE, kalkınma plânı ve programı ile varsa bölge plânına uygun olarak stratejik plânı ve ilgili olduğu yıl başından önce de YILLIK PERFORMANS PROGRAMINI hazırlayıp belediye meclisine sunar. Stratejik plân, varsa üniversiteler ve meslek odaları ile konuyla ilgili sivil toplum örgütlerinin görüşleri alınarak hazırlanır ve BELEDİYE MECLİSİ TARAFINDAN KABUL EDİLDİKTEN SONRA yürürlüğe girer. Stratejik plân ve performans programı bütçenin hazırlanmasına esas teşkil eder ve mecliste BÜTÇEDEN ÖNCE görüşülerek kabul edilir. Performans programı bakımından nüfus istisnası yoktur; istisna yalnız stratejik plâna ilişkindir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye başkanlığının herhangi bir nedenle boşalması halinde, vali tarafından belediye meclisinin ne kadar süre içinde toplanması sağlanır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1 hafta",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "15 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "20 gün",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye başkanlığının boşalması hâlinde izlenecek usul 5393 sayılı Kanun m.45'te düzenlenmiştir. Başkanlığın herhangi bir nedenle boşalması durumunda VALİ TARAFINDAN BELEDİYE MECLİSİNİN ON GÜN İÇİNDE TOPLANMASI SAĞLANIR. Meclis; birinci başkan vekilinin, o yoksa ikinci başkan vekilinin, o da yoksa EN YAŞLI ÜYENİN başkanlığında toplanır. Başkanlığın boşalması veya seçim dönemini aşacak biçimde kamu hizmetinden yasaklanma cezası verilmiş olması durumunda bir BAŞKAN; başkanın görevden uzaklaştırılması, tutuklanması veya seçim dönemini aşmayacak biçimde kamu hizmetinden yasaklanma cezası alması durumunda ise bir BAŞKAN VEKİLİ seçilir. Seçim meclis üyeleri arasından ve GİZLİ OYLA yapılır: ilk iki oylamada üye tam sayısının ÜÇTE İKİSİ, üçüncü oylamada SALT ÇOĞUNLUK aranır; sağlanamazsa en çok oy alan iki aday için dördüncü oylama yapılır ve en fazla oy alan seçilmiş olur.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "I. Mahkeme kararıyla tespit edilen hizmetlerde meydana gelen aksamanın giderilmesini İçişleri Bakanlığı, hizmetin özelliğine göre makul bir süre vererek il özel idaresinden ister.\nII. Hizmetlerde meydana gelen aksama il özel idaresi tarafından giderilmezse, söz konusu hizmetin yerine getirilmesi o ilin valisinden istenir.\nIII. İl özel idaresinin aksayan hizmetlerinin vali tarafından yerine getirilmesi durumunda, ortaya çıkan maliyet vali tarafından İLBANK'a bildirilir.\nIV. İl özel idaresi hizmetlerinin ciddi bir şekilde aksatıldığı ve bu durumun halkın sağlık, huzur ve esenliğini hayati derecede olumsuz etkilediği, ilgili bakanlığın talebi üzerine Danıştay tarafından belirlenir.\nİl özel idarelerinin gördükleri hizmetleri ciddi şekilde aksatmalarına ilişkin verilen bilgilerden hangileri doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I, II ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl özel idaresi hizmetlerindeki ciddî aksama 5302 sayılı Kanun m.40'ta KADEMELİ bir işleyişe bağlanmıştır. Aksamanın ve bunun halkın sağlık, huzur ve esenliğini hayatî derecede olumsuz etkilediğinin tespiti YARGISAL bir işlemdir: ilgili bakanlığın talebi üzerine YETKİLİ SULH HUKUK HÂKİMİ tarafından belirlenir — Danıştay tarafından değil. Tespitten sonra İÇİŞLERİ BAKANLIĞI, hizmetin özelliğine göre makul bir süre vererek aksamanın giderilmesini İL ÖZEL İDARESİNDEN ister. Aksama giderilemezse hizmetin yerine getirilmesini O İLİN VALİSİNDEN ister; vali aksaklığı öncelikle il özel idaresinin araç, gereç, personel ve diğer kaynaklarıyla, mümkün olmazsa diğer kamu kurum ve kuruluşlarının imkânlarıyla giderir. Bu nedenle ortaya çıkan MALİYET VALİ TARAFINDAN İLLER BANKASINA bildirilir ve İller Bankasınca o il özel idaresinin müteakip ay genel bütçe vergi gelirleri payından valilik emrine gönderilir. Zincir şudur: yargısal tespit, Bakanlıktan uyarı, valiye devir, İller Bankası üzerinden mahsup.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediyelerdeki denetim komisyonlarına ilişkin aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İl ve ilçe belediyeleri ile nüfusu 10.000'in üzerindeki belediyelerde oluşturulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Belediyenin bir önceki yıl gelir ve giderleri ile bunlara ilişkin hesap kayıt ve işlemlerinin denetimi için oluşturulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Denetim komisyonu üyeleri, belediye meclisi tarafından ve kendi üyeleri arasından gizli oyla seçilerek belirlenir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Komisyon, çalışmasını 45 işgünü içinde tamamlar ve buna ilişkin raporunu mart ayının sonuna kadar meclis başkanlığına sunar.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Üye sayısı en az 10, en fazla 15'tir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Denetim komisyonu 5393 sayılı Kanun m.25'te düzenlenmiştir ve belediye meclisinin bilgi edinme-denetim yollarından biridir. İL VE İLÇE BELEDİYELERİ İLE NÜFUSU 10.000'İN ÜZERİNDEKİ belediyelerde, belediye meclisi HER OCAK AYI TOPLANTISINDA, belediyenin bir önceki yıl gelir ve giderleri ile bunlara ilişkin hesap kayıt ve işlemlerinin denetimi için kendi üyeleri arasından GİZLİ OYLA ve ÜYE SAYISI ÜÇTEN AZ BEŞTEN ÇOK OLMAMAK ÜZERE bir denetim komisyonu oluşturur; on ile on beş kişilik bir komisyon kanunda öngörülmemiştir. Komisyon, her siyasî parti grubunun ve bağımsız üyelerin meclisteki üye sayısının meclis üye tam sayısına oranlanması suretiyle oluşur. Komisyon belediye birimlerinden her türlü bilgi ve belgeyi isteyebilir ve bu istekler gecikmeksizin yerine getirilir. Çalışmasını KIRK BEŞ İŞ GÜNÜ içinde tamamlar ve raporunu MART AYININ SONUNA KADAR meclis başkanlığına sunar.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  }
+]
