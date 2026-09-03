@@ -598,10 +598,42 @@ Ilgili madde metinleri `<scratchpad>/m657c.json` dosyasinda hazir
 Bunlara dayanan soru ALINMAZ. Ihtiyac olursa `mevzuat-import.ts` ile cekilir
 (once topic + legislation kaydi ELLE kurulmali, betik findUnique yapiyor).
 
+### PARTI i03 KAPANDI — MEMURLAR TEST-V/VI, izinler + disiplin (3 Eyl 2026)
+s-103..s-106 (kitap s.205-212) okundu: **30 soru -> 20 bankaya girdi.**
+Denetim 20/20 yayimlanabilir, kusurlu 0. Run: wf_34a998fc-85f.
+657 yayinda 130 -> **150**; bagli madde 56 -> **61**. Banka 5.643.
+
+10 eleme:
+- 4'u ETIK KURUL (5176 s.K. bankada yok) — alt ajan eledi.
+- 1 doktrin tasnifi, 1 belirsiz hastalik izni sorusu (kok hastalik turunu
+  soylemiyor -> hem 12 hem 18 ay savunulabilir).
+- **3'u AYNA SORU** — ayni kitaptan az once yayinlananlarin diger yarisi:
+  sut izni (ilk/ikinci alti ay), yarim zamanli calisma (birinci/sonraki dogum),
+  yedi gunluk izin (evlenme/kardes olumu).
+- 1 belirsiz aylıksız izin sorusu: D sikki "yurtdisinda gorevlendirildigi sure
+  boyunca" diyor ama m.108/D izni memurun KENDISINE degil ESINE veriyor;
+  kitabin cozumu maddeyi yanlis aktariyor -> ikinci dogru cevap riski.
+
+**IKI SORU SUPHELIDEN KURTARILDI:**
+- Memurluktan cikarma sorusu: kitabin cozum metni fiilleri yanlis siniflandiriyor
+  ama cevap dogru. m.125/E-l (teror orgutlerine yardim) ve m.125/E-h (gizli
+  bilgileri aciklamak) dogrulandi; 3-9 gun gelmeme, sarhos gelme ve mal bildirimi
+  ise m.125/D (kademe durdurma).
+- Kademe ilerlemesi sorusu: supheli sik **m.158**'de cikti — "Aday memurlara,
+  asaletleri tasdik edilinceye kadar kademe ilerlemesi uygulanmaz."
+
+#### !! KENDI ACIKLAMA HATAM — m.77 (denetim yakaladi)
+m.77 icin "yabanci memleketlerin resmi kurumlari VEYA uluslararasi kuruluslarda
+on yila kadar" yazdim. **YANLIS:** m.77/1 ikisini AYIRIR — yabanci memleketlerin
+resmi kurumlari ile Cumhurbaskaninca belirlenen yurtdisi kuruluslarinda ON YILA,
+ULUSLARARASI KURULUSLARDA YIRMIBIR YILA kadar. Madde metni `m657d.json`'da
+elimdeydi ama BASMADAN ezberden yazdim. Denetci duzeltti, yayindaki metin dogru.
+**Kural: aciklamayi yazmadan once ilgili maddeyi EKRANA BAS, dosyada olmasi yetmez.**
+
 ### SIRADAKI ADIM
-Memurlar blogunun kalani: **s-103..s-113** (TEST-V..IX; disiplin, gorevden
-uzaklastirma, memurlugun sona ermesi bekleniyor — 657'nin en yogun bolumu).
+Memurlar blogunun kalani: **s-107..s-113** (TEST-VII..IX).
 Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
+Kitap bitince -> Idari Yargilama Hukuku (Danistay ~20 temel soru + IYUK 50 bos madde).
 Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
 Kitap bitince -> Idari Yargilama Hukuku kitabi (Danistay + IYUK; IYUK'ta 50 bos madde).
 
