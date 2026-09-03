@@ -26,6 +26,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get(ConfigService);
 
+  // Railway'in edge proxy'si arkasındayız: X-Forwarded-For'a GÜVEN, yoksa
+  // req.ip her kullanıcı için aynı iç proxy adresini döndürür ve IP tabanlı
+  // hız sınırı gerçek istemciyi değil proxy'yi sayar (kalabalık denemede
+  // rastgele 429). '1' = yalnız EN YAKIN vekile güven; istemcinin kendi
+  // uydurduğu X-Forwarded-For değeri kabul edilmez.
+  app.getHttpAdapter().getInstance().set('trust proxy', 1);
+
   // API versiyonlama (Doc 7): tüm uçlar /api/v1 altında
   app.setGlobalPrefix('api/v1');
 
