@@ -1,0 +1,72 @@
+[
+  {
+    "topicId": "b7a655d1-8b82-416d-bbdf-33d4d5679545",
+    "articleNo": null,
+    "stem": "Aşağıdaki sayılan uyuşmazlıklardan hangisi vergi mahkemesinin görev alanına girmez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hazine ve Maliye Bakanlığına ödenen fazla harcın geri istenmesine karşı açılan dava",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Sakatlık indirimi isteğinin idarece reddedilmesi üzerine tarh edilen verginin iptali istemine ilişkin dava",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vergi borcu nedeniyle haczedilen taşınırın satışının iptali istemine ilişkin dava",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "4458 sayılı Gümrük Kanunu uyarınca verilen idari para cezasının tahsili amacıyla 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun'a göre tebliğ edilen ödeme emrinin iptali istemine ilişkin dava",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Belediye tarafından çıkarılan vergi benzeri mali yükümlülük niteliğindeki tarifenin değiştirilmesi kararının iptali istemine ilişkin dava",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Vergi mahkemelerinin görev alanı 2576 sayılı Kanun m.6'da SINIRLI SAYIDA belirlenmiştir. Vergi mahkemeleri; GENEL BÜTÇEYE, İL ÖZEL İDARELERİNE, BELEDİYE VE KÖYLERE AİT VERGİ, RESİM VE HARÇLAR İLE BENZERİ MALÎ YÜKÜMLER ve bunların ZAM VE CEZALARI ile TARİFELERE ilişkin davaları; bu konularda 6183 SAYILI AMME ALACAKLARININ TAHSİL USULÜ HAKKINDA KANUN'UN UYGULANMASINA ilişkin davaları ve diğer kanunlarla verilen işleri çözer. Buradaki kilit sınırlama (b) bendindedir: 6183 uygulamasına ilişkin dava, ancak (A) BENDİNDEKİ KONULARDA — yani bir vergi, resim, harç veya benzeri malî yükümlülükten kaynaklanıyorsa — vergi mahkemesinin görevine girer. İDARİ PARA CEZASI ise vergi, resim, harç ya da benzeri malî yükümlülük DEĞİLDİR; niteliği gereği bir idari yaptırımdır. Bu nedenle bir idari para cezasının tahsili amacıyla 6183 uyarınca düzenlenen ödeme emrine karşı açılacak dava vergi mahkemesinin değil, İDARE MAHKEMESİNİN görevine girer. Ölçüt takibin usulü değil, ALACAĞIN NİTELİĞİDİR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  },
+  {
+    "topicId": "be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3",
+    "articleNo": null,
+    "stem": "I. Ankara'da görev yapan kamu görevlilerinin resmi törenlerde giyecekleri kıyafetlere ilişkin çıkarılan Cumhurbaşkanlığı genelgesi\nII. Sanayi yatırımlarının teşvik edilmesine ilişkin Doğu Anadolu Bölgesi illerinde geçerli olmak üzere çıkarılan Sanayi ve Teknoloji Bakanlığı yönetmeliği\nIII. Basın İlan Kurumu genel müdürünün atanmasına ilişkin Cumhurbaşkanlığı kararı\n2575 sayılı Danıştay Kanunu'na göre yukarıda sayılanlardan hangilerine karşı açılacak davalarda ilk derece Danıştay görevlidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve III",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "I, II ve III",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Danıştay'ın ilk derece mahkemesi olarak göreceği davalar 2575 sayılı Kanun m.24'te bentler hâlinde sayılmıştır ve bentler arasındaki FARKA dikkat edilmelidir. (a) bendi CUMHURBAŞKANI KARARLARINA, (b) bendi CUMHURBAŞKANINCA ÇIKARILAN CUMHURBAŞKANLIĞI KARARNAMELERİ DIŞINDAKİ DÜZENLEYİCİ İŞLEMLERE, (c) bendi ise BAKANLIKLAR İLE KAMU KURULUŞLARI VEYA KAMU KURUMU NİTELİĞİNDEKİ MESLEK KURULUŞLARINCA ÇIKARILAN VE ÜLKE ÇAPINDA UYGULANACAK DÜZENLEYİCİ İŞLEMLERE karşı açılacak davaları Danıştay'a verir. ÜLKE ÇAPINDA UYGULANMA ölçütü YALNIZCA (c) BENDİNDE aranır; Cumhurbaşkanı kararları ve Cumhurbaşkanınca çıkarılan genelge gibi düzenleyici işlemler bakımından böyle bir şart YOKTUR. Bu nedenle yalnızca belirli bir ildeki veya bölgedeki uygulamaya ilişkin olsa dahi bir Cumhurbaşkanlığı genelgesine karşı açılacak dava ilk derecede Danıştay'da görülür; buna karşılık bir bakanlığın yalnız bir bölgede uygulanacak düzenleyici işlemi (c) bendine girmediğinden idare mahkemesinde dava konusu edilir. Aynı madde ayrıca Danıştay'ın, belediyeler ile il özel idarelerinin seçimle gelen organlarının ORGANLIK SIFATINI KAYBETMELERİ hakkındaki istemleri de karara bağlayacağını belirtir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  }
+]

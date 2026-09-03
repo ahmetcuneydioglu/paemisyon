@@ -1307,3 +1307,20 @@ soru vardi. Bu parti IYUK'un yetki rejimini bastan kurdu.
 (m.7/m.11 doygun) — ATLANMALI. Onun yerine **s-50..s-53 Altinci Bolum
 (Idari Yargida Ic Gorev)** okunmali; m.43 doygun ama m.42 ve gorev-yetki
 uyusmazliklari bankada bos. Sonra s-36..s-49 Besinci Bolum.
+
+### y08 YAYINDA — 2/2 yayimlanabilir (Altinci Bolum: ic gorev) · **CRON KAPATILDI**
+2576 m.6 (vergi mahkemesinin gorev alani — olcut takibin usulu degil ALACAGIN
+NITELIGI; idari para cezasi odeme emri idare mahkemesinde) · 2575 m.24
+(ilk derece Danistay — "ulke capinda" olcutu YALNIZ (c) bendinde aranir).
+17 okundu, 2 alindi. Elle eleme: bir ayna cift (ayni kural, imar/gumruk cezasi
+varyanti) ve ust kurul kararlarinin ilk derece Danistay'da gorulmesi sorusu
+(4054/5411/6446 gibi bankada OLMAYAN ozel kanunlara dayaniyor, 2020'de degisti).
+
+## GECE OZETI (3 Eyl 2026)
+**181 soru bankaya girdi: 178 yayinda, 1 arsivlendi, 2 kuyrukta degil (yayinlandi).**
+- Idare Hukuku kitabi: 127 soru (657: 76, 5393: 28, 5302: 17, 4483: 4, 5442: 1, AY: 1)
+- IYUK kitabi: 54 soru (2577: 26, 2575: 23, 2576: 4, AY: 1)
+- Denetim: 12 parti, tek kusurlu soru `83f79d63` (m.38/1 secimlik tanimi
+  kumulatif gosteren sik) — arsivlendi. Kusur orani ~%0,55.
+- 2575 Danistay Kanunu bu gece SIFIRDAN kuruldu (kullanici hedefi 20, ulasilan 23).
+- IYUK'un yetki rejimi (m.32-37) ve ozel durumlar (m.29-31, 38-44, 56-61) bastan kuruldu.
