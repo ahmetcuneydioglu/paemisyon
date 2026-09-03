@@ -935,3 +935,53 @@ soru URETILMEZ. Asagidaki yasak bu yonuyle gecerliligini surdurur.
 Drive'da "Themis Konu - ..." adli KONU ANLATIM kitaplari da var.
 BUNLARDAN ASLA SORU URETILMEYECEK. Yalnizca "Themis Soru - ..." ve
 "Muessir - ... SB" gibi SORU kitaplarindaki gercek sorular alinir.
+
+## i06 adayi — Mahalli idareler s-031..s-034 (3 Eyl 2026)
+
+Okuma: 29 soru. Alt ajan elemesi 2 (2972 secim kanunu 1, supheli 1).
+Banka tarayicisi: 0 mukerrer. Parti ici tarayici: 0 cakisma.
+**ELLE bulunan 6 yigilma** — ikisi de tarayicidan gecmisti:
+
+| aday | banka esi | sebep |
+|---|---|---|
+| s-031 S.2 | 22bf487d | ayni tuzak: "merkezi idare hiyerarsik denetim" (AY m.127) |
+| s-032 S.11 | 90a92195 | il genel meclisi yeter sayisi; ayrica aday sikki 1/4 kaydini atliyor |
+| s-033 S.2 | 56b6d0c2 | m.26 encumen gorevleri, ayna kurgu (…dendir / …degildir) |
+| s-033 S.3 | e00017ab | m.27 encumen toplantisi, ayni kurgu |
+| s-033 S.6 | b43f8668 | genel sekreter atama usulu (bankada yanlis onerme olarak) |
+| s-034 S.3 | 79522a08 | 5393 m.74 yurt disi is birligi izni; ayrica kitabin cevabi supheli |
+
+**KALAN: 21 aday.**
+
+### Metot dersi (onemli)
+Bu bolgenin banka sorulari agirlikla **konu = "Idare Hukuku", madde = None**
+altinda duruyor; 5302/5393 konu adiyla aranınca gorunmuyorlar. `mukerrer-tara.py`
+ve madde bazli karsilastirma ikisi de bu yuzden 0 dondu. **Yeni kural: mahalli
+idare / merkezi idare bolgesine girmeden once "Idare Hukuku" konusunu ANAHTAR
+KELIMEYLE (mahall, yerinden yonetim, bucak, il ozel idaresi, 127) tara.**
+
+### Kapsam olcumu
+s-031..s-034'te 5216 (buyuksehir) veya 442 (koy) dayanakli soru **cikmadi**;
+bu kanunlari bankaya eklemek bu blok icin gerekli degil. 2972 bir soru maliyetine
+mal oldu. (Not: bankada 5355 ve 2972 sorulari zaten var ama kanun metni yok.)
+
+### s-034 uyarisi
+s-034 PNG'i gercek spread degil: sag yari kitap s.68, sol yari TEST-III basi.
+**TEST-II'nin 10-14. sorulari (kitap s.67) taranmadi** — o sayfa yeniden cekilmeli.
+
+### i06 import edildi (21 soru, in_review)
+`scripts/ozgun-sorular/idare-mahalli-i06.json` — 5302:14, 5393:5, 5442:1, Anayasa:1.
+Dayanak duzeltmeleri (alt ajan tahminleri kaymisti): m.3->m.4 (tuzel kisilik),
+m.22->m.21 (uyeligin sona ermesi), m.23->m.22 (fesih), m.28->m.27 (israr/10 gun).
+**Ek eleme: s-033 S.9** — 5393 m.4 son fikra 18/6/2025-7551/13 ile yeniden
+duzenlendi, "Cumhurbaskani karari ile" ibaresi METINDEN CIKTI; kitabin cevabi
+(Ocak 2025 baskisi) artik gecersiz. Kitap-kanun kaymasi orneginin bir yenisi.
+SIRADAKI ADIM: i06 icin harita kur -> hedefli-kume --inceleme -> denetim-hat.
+
+### i06 YAYINDA — 21/21 yayimlanabilir (kusur yok)
+Iki denetci de uzlasti, curutme oyu 0. articleNo 21 sorunun hepsine yazildi
+(dogruKanun = topic adi kosulu saglandi). Mahalli idareler bloku basladi.
+NOT: `sonuc-topla.py` journal'daki IKI denetcinin ciktisini duzlestirdigi icin
+42 kayit uretti (21 benzersiz); yayinlamadan once TEKILLESTIRILDI.
+SIRADAKI: s-035..s-038 (Mahalli idareler TEST-III devami + TEST-IV).
+EKSIK SAYFA: kitap s.67 (TEST-II 10-14) PNG setinde yok, yeniden cekilmeli.

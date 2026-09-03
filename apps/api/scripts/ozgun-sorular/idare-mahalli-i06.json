@@ -1,0 +1,737 @@
+[
+  {
+    "topicId": "4d185b8e-a24f-4f0e-8c29-d17e03eeec11",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi mahalli idare değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İl özel idaresi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bucak",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Köy",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Büyükşehir belediyesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İlçe belediyesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mahallî idare ile MERKEZÎ İDARENİN TAŞRA BİRİMİ birbirinden ayrılmalıdır. 5442 sayılı İl İdaresi Kanunu m.1'e göre Türkiye, MERKEZÎ İDARE KURULUŞU BAKIMINDAN coğrafya durumuna, iktisadî şartlara ve kamu hizmetlerinin gereklerine göre illere; iller ilçelere ve ilçeler de BUCAKLARA bölünmüştür. Yani il, ilçe ve bucak merkezî idarenin taşra kademeleridir; ayrı bir kamu tüzel kişiliğine ve seçimle gelen karar organına sahip değildirler. Anayasa m.127 ise mahallî idareleri, il, belediye veya köy halkının mahallî müşterek ihtiyaçlarını karşılamak üzere kurulan ve KARAR ORGANLARI SEÇMENLERCE SEÇİLEREK oluşturulan KAMU TÜZEL KİŞİLERİ olarak tanımlar. Buna göre il özel idaresi, belediye (büyükşehir ve ilçe belediyeleri dâhil) ve köy mahallî idaredir; bucak ise değildir. Ayırt edici ölçüt idarenin adı değil, ayrı tüzel kişilik ile seçilmiş karar organının varlığıdır.",
+    "difficulty": "easy",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "articleNo": null,
+    "stem": "Mahalli idarelerin belirli kamu hizmetlerinin görülmesi amacı ile kendi aralarında birlik kurmaları aşağıdaki makamlardan hangisinin iznine tabidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İçişleri Bakanı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Çevre, Şehircilik ve İklim Değişikliği Bakanı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Danıştay",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mahalli İdareler Başkanlığı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Mahallî idare birliklerinin kurulmasında izin makamı Anayasa m.127'nin son fıkrasında gösterilmiştir: mahallî idarelerin belirli kamu hizmetlerinin görülmesi amacı ile, kendi aralarında CUMHURBAŞKANININ İZNİ ile birlik kurmaları, görevleri, yetkileri, maliye ve kolluk işleri ve merkezî idare ile karşılıklı bağ ve ilgileri kanunla düzenlenir. Bu yetki, 2017 Anayasa değişikliğiyle Bakanlar Kuruluna ait olmaktan çıkıp Cumhurbaşkanına geçmiştir; dolayısıyla İçişleri Bakanı veya Çevre, Şehircilik ve İklim Değişikliği Bakanı bu konuda yetkili değildir. İzin, hizmette iş birliğini kolaylaştırırken merkezî idarenin idarî vesayet denetimini de korur. Birliğin kendisi ayrı bir kamu tüzel kişisidir; ancak kuruluşu, mahallî idarelerin serbestçe yapabileceği bir işlem olmayıp merkezî iznin varlığına bağlıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl özel idaresinin tüzel kişiliği aşağıdaki işlemlerden hangisi ile sona erdirilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhurbaşkanlığı kararnamesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Cumhurbaşkanı kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İçişleri Bakanlığının teklifi üzerine Cumhurbaşkanı onayı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İçişleri Bakanlığı kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kanun",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "İl özel idaresinin tüzel kişiliğinin doğumu ve sona ermesi, İLİN KADERİNE BAĞLIDIR. 5302 sayılı Kanun m.4'e göre il özel idaresi, İLİN KURULMASINA DAİR KANUNLA KURULUR VE İLİN KALDIRILMASIYLA TÜZEL KİŞİLİĞİ SONA ERER. İl kurulması ve kaldırılması ise 5442 sayılı Kanun m.2 uyarınca kanunla yapıldığından, il özel idaresinin tüzel kişiliğini sona erdiren işlem de KANUNDUR. Bu nedenle Cumhurbaşkanlığı kararnamesi, Cumhurbaşkanı kararı veya İçişleri Bakanlığı işlemi ile il özel idaresinin tüzel kişiliğine son verilemez. Belediyeden farkı burada belirginleşir: belediye kurulmasında idarî işlemlere yer verilebilirken, il özel idaresi doğrudan ilin varlığına bağlı olduğu için hem kuruluşu hem sona ermesi yasama işlemini gerektirir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi il genel meclisinin görev ve yetkileri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Stratejik plân ile yatırım ve çalışma programlarını, il özel idaresi faaliyetlerini ve personelinin performans ölçütlerini görüşmek ve karara bağlamak.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bütçe ve kesin hesabı kabul etmek.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bütçede fonksiyonel sınıflandırmanın birinci düzeyleri arasında aktarma yapmak.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kamulaştırma kararı almak.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Üç yıldan fazla kiralanmasına ve süresi yirmi beş yılı geçmemek kaydıyla bunlar üzerinde sınırlı ayni hak tesisine karar vermek.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Soru, il genel meclisi ile il encümeninin görev alanlarını ayırmayı ölçer. 5302 sayılı Kanun m.10'da sayılan il genel meclisi görevleri arasında stratejik plân ile yatırım ve çalışma programlarını görüşüp karara bağlamak, bütçe ve kesin hesabı kabul etmek, bütçede kurumsal kodlama yapılan birimler ile FONKSİYONEL SINIFLANDIRMANIN BİRİNCİ DÜZEYLERİ arasında aktarma yapmak, taşınmazların üç yıldan fazla kiralanmasına ve süresi yirmi beş yılı geçmemek kaydıyla üzerlerinde sınırlı aynî hak tesisine karar vermek yer alır. KAMULAŞTIRMA KARARI ALMAK ise meclisin değil ENCÜMENİN görevidir: m.26/b uyarınca yıllık çalışma programına alınan işlerle ilgili kamulaştırma kararlarını almak ve uygulamak encümene aittir. Kalıp şudur: meclis programı ve bütçeyi belirler, encümen o programın uygulanmasına ilişkin somut kararları alır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "I. İl özel idaresi tarafından çıkarılacak yönetmelikleri kabul etmek.\nII. Şartsız bağışları kabul etmek.\nIII. İl özel idaresine kanunlarla verilen görev ve hizmetler dışında kalan ve ilgililerin isteğine bağlı hizmetler için uygulanacak ücret tarifesini belirlemek.\nIV. Belediye sınırları dışındaki umuma açık yerlerin açılış ve kapanış saatlerini belirlemek.\nV. Taşınmaz malların süresi üç yılı geçmemek üzere kiralanmasına karar vermek.\nYukarıda verilenlerden hangileri il genel meclisine ait görev ve yetkilerden değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "II ve V",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "IV ve V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "II, IV ve V",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Beş ifade, il özel idaresinin üç organı arasında dağıtılmıştır. Meclise ait olanlar 5302 m.10'da sayılıdır: il özel idaresi tarafından çıkarılacak YÖNETMELİKLERİ KABUL ETMEK (bent k) ve kanunlarla verilen görevler dışında kalan, ilgililerin isteğine bağlı hizmetler için uygulanacak ÜCRET TARİFESİNİ BELİRLEMEK (bent o). Buna karşılık ŞARTSIZ BAĞIŞLARI KABUL ETMEK m.30/l uyarınca VALİYE aittir — meclis yalnızca ŞARTLI bağışları kabul eder (m.10/g). BELEDİYE SINIRLARI DIŞINDAKİ UMUMA AÇIK YERLERİN AÇILIŞ VE KAPANIŞ SAATLERİNİ BELİRLEMEK m.26/h ile, TAŞINMAZLARIN SÜRESİ ÜÇ YILI GEÇMEMEK ÜZERE KİRALANMASINA karar vermek ise m.26/g ile ENCÜMENE bırakılmıştır. Kiralamada süre eşiği kritiktir: üç yıla kadar encümen, üç yıldan fazlası meclis yetkisindedir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisi başkanlık divanı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Seçim sonuçlarını izleyen beşinci gün kendiliğinden toplanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İlk toplantıda meclis, üyeleri arasından ve gizli oyla meclis başkanını seçer.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Meclis başkanı seçilene kadar, toplantılara meclisin en genç üyesi başkanlık eder.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Meclis başkanlık divanı seçimi üç gün içinde tamamlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İlk seçilecek başkanlık divanının görev süresi iki yıldır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl genel meclisinin ilk toplantısını ve başkanlık divanı seçimini 5302 sayılı Kanun m.11 düzenler. Meclis, seçim sonuçlarının ilânını izleyen BEŞİNCİ GÜN kendiliğinden toplanır ve bu toplantıda meclise EN YAŞLI ÜYE başkanlık eder — en genç üye değil. Meclis bu toplantıda üyeleri arasından ve GİZLİ OYLA meclis başkanını, birinci ve ikinci başkan vekillerini, ikisi yedek olmak üzere dört kâtip üyeyi İLK İKİ YIL için görev yapmak üzere seçer; ilk iki yıldan sonra seçilecek başkanlık divanı ise yapılacak ilk mahallî idareler seçimlerine kadar görev yapar. Başkanlık divanı seçimi ÜÇ GÜN içinde tamamlanır. Meclis başkanlığında veya divanda boşalma olursa kalan süreyi tamamlamak üzere yenisi seçilir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisi toplantılarına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İl genel meclisi, her yıl kendisinin karar vereceği sürede üç ay tatil yapar.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Tatil dönemi dışında il genel meclisi, her ayın ilk haftası önceden belirlenen günde mutat toplantı yerinde toplanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İl genel meclisinin toplantıları açıktır.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İl genel meclisini bir yılda üç defadan fazla olmamak üzere meclis başkanı tarafından olağanüstü toplantıya çağrılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Meclis başkanı veya üyelerden herhangi birinin gerekçeli önerisi üzerine, toplantıya katılanların salt çoğunluğuyla kapalı oturum yapılmasına karar verilebilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl genel meclisinin toplanma düzeni 5302 sayılı Kanun m.12'de düzenlenmiştir. Meclis, il genel meclisince belirlenecek BİR AYLIK TATİL hariç HER AYIN İLK HAFTASI, meclisçe önceden belirlenen günde mutat toplantı yerinde toplanır; dolayısıyla üç aylık bir tatil söz konusu değildir, tatil süresi yasayla bir ayla sınırlandırılmıştır. Toplantılar AÇIKTIR; ancak meclis başkanı veya üyelerden herhangi birinin gerekçeli önerisi üzerine, toplantıya KATILANLARIN SALT ÇOĞUNLUĞUYLA kapalı oturum yapılmasına karar verilebilir. Meclis başkanı, acil durumlarda lüzum görmesi hâlinde meclisi BİR YILDA ÜÇ DEFADAN FAZLA OLMAMAK ve her toplantı bir birleşimi geçmemek üzere olağanüstü toplantıya çağırır; bu toplantılarda çağrıyı gerektiren konuların dışında hiçbir konu görüşülemez.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisinde bütçe görüşmesine rastlayan toplantı süresi en çok kaç gündür?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "20",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Toplantı sürelerinin üst sınırı 5302 sayılı Kanun m.12'de iki farklı rakamla belirlenmiştir: BÜTÇE GÖRÜŞMESİNE RASTLAYAN toplantı süresi EN ÇOK YİRMİ GÜN, DİĞER toplantıların süresi ise EN ÇOK BEŞ GÜNDÜR. Bütçe toplantısına tanınan uzun süre, gelir ve gider tahminlerinin madde madde görüşülmesi ihtiyacından kaynaklanır. Aynı ayrım belediye meclisi bakımından da geçerlidir; 5393 sayılı Belediye Kanunu m.20 de bütçe toplantısı için yirmi gün, diğer toplantılar için beş gün öngörür. Bu süreler AZAMİ sürelerdir; meclis işini daha kısa sürede bitirebilir, ancak süreyi aşamaz. Süre sınırının amacı, mahallî idare meclislerinin sürekli toplantı hâlinde kalmasını önleyerek yürütme organlarının işleyişini rahatlatmaktır.",
+    "difficulty": "easy",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisinde yapılan oylamada eşitlik çıkması durumunda, alınması gereken karar aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meclis başkanının bulunduğu taraf çoğunluk sayılır.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Oylama tekrarlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Meclis başkanı tarafından kura çekilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meclisin en yaşlı üyesinin oy kullandığı taraf çoğunluk sayılır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bir sonraki toplantıda tekrar oylanmak üzere karar ertelenir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Oylamada eşitliğin sonucu, oylamanın TÜRÜNE göre değişir. 5302 sayılı Kanun m.14 uyarınca AÇIK oylamada eşitlik çıkması durumunda MECLİS BAŞKANININ BULUNDUĞU TARAF ÇOĞUNLUK SAYILIR. Buna karşılık GİZLİ oylamalarda eşitlik çıkarsa oylama TEKRARLANIR; eşitliğin yine bozulmaması durumunda meclis başkanı tarafından KUR'A ÇEKİLİR. Bu üç aşamalı çözüm sırası karıştırılmamalıdır: kur'a, gizli oylamada ve ancak tekrar oylamadan sonra devreye girer. Aynı maddeye göre meclis, üye tam sayısının salt çoğunluğuyla toplanır ve katılanların salt çoğunluğuyla karar verir; ancak karar yeter sayısı üye tam sayısının DÖRTTE BİRİNDEN AZ OLAMAZ. Oy verme kabul, ret veya çekimser şeklinde olur ve üyeler oylarını bizzat kullanır.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl genel meclisi tarafından alınan kararların tam metni, en geç kaç gün içinde valiye gönderilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "15",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl genel meclisi kararlarının kesinleşme usulü 5302 sayılı Kanun m.15'te idarî vesayet mantığıyla kurulmuştur. Meclis tarafından alınan kararların TAM METNİ, EN GEÇ BEŞ GÜN İÇİNDE VALİYE GÖNDERİLİR. Vali, hukuka aykırı gördüğü kararları YEDİ GÜN İÇİNDE gerekçesini de belirterek yeniden görüşülmek üzere meclise iade edebilir. Valiye gönderilmeyen meclis kararları YÜRÜRLÜĞE GİRMEZ; yeniden görüşülmesi istenilmeyen kararlar ise kesinleşir. Kesinleşen karar özetleri, toplantıyı izleyen en geç YEDİ GÜN içinde çeşitli yollarla halka duyurulur. Buradaki beş, yedi ve yedi günlük süreler birbirine karıştırılmamalıdır: beş gün gönderme, yedi gün valinin iade, yedi gün da halka duyurma süresidir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi il genel meclisinde kurulması zorunlu olan ihtisas komisyonlarından değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eğitim, kültür ve sosyal hizmetler komisyonu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Tarım ve hayvancılık komisyonu",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Çevre ve sağlık komisyonu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İmar ve bayındırlık komisyonu",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Plan ve bütçe komisyonu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İhtisas komisyonlarını düzenleyen 5302 sayılı Kanun m.16, kurulması ZORUNLU olan komisyonları sınırlı sayıda saymıştır: EĞİTİM, KÜLTÜR VE SOSYAL HİZMETLER komisyonu, İMAR VE BAYINDIRLIK komisyonu, ÇEVRE VE SAĞLIK komisyonu ile PLÂN VE BÜTÇE komisyonu. Bu dördü dışında kalan komisyonların kurulması meclisin takdirindedir; tarım ve hayvancılık komisyonu da bu ihtiyarî komisyonlardandır. Meclis, bir yıl görev yapmak üzere üyeleri arasından en az üç, en fazla beş kişiden oluşan ihtisas komisyonları kurabilir; Plân ve Bütçe ile İmar ve Bayındırlık komisyonları en çok yedi kişiden meydana gelir. Komisyonlar, her siyasî parti grubunun ve bağımsız üyelerin meclisteki üye sayısının meclis üye tam sayısına oranlanması suretiyle oluşturulur.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi il genel meclisi üyeliğini sona erdiren hallerden biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ölüm",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İstifa",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Seçilme yeterliliğini kaybetme",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Bir yıl içinde yapılan toplantıların yarısına katılmama",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İzinsiz, özürsüz ve mazeretsiz olarak arka arkaya yirmi birleşim günü toplantılara katılmamak",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "İl genel meclisi üyeliğinin sona erme hâlleri 5302 sayılı Kanun m.21'de düzenlenmiştir. ÖLÜM VE İSTİFA durumunda üyelik KENDİLİĞİNDEN sona erer. Özürsüz veya izinsiz olarak ARKA ARKAYA ÜÇ BİRLEŞİM GÜNÜ veya BİR YIL İÇİNDE YAPILAN TOPLANTILARIN YARISINA katılmayan üyenin üyeliğinin düşmesine, SAVUNMASI ALINDIKTAN SONRA üye tam sayısının salt çoğunluğuyla karar verilir. Üyeliğe SEÇİLME YETERLİLİĞİNİN KAYBEDİLMESİ durumunda ise valinin bildirmesi üzerine DANIŞTAY tarafından üyeliğin düşmesine karar verilir. Kanunun aradığı devamsızlık eşiği arka arkaya ÜÇ birleşim günüdür; yirmi birleşim gibi bir ölçüt kanunda yer almaz. Görüldüğü gibi kanun, sona erme biçimine göre üç ayrı usul öngörmüştür: kendiliğinden sona erme, meclis kararı ve yargı kararı.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "Gerekli görüldüğü takdirde il genel meclisinin feshine dair bildiri ile birlikte karar verilinceye kadar meclis toplantılarının ertelenmesini aşağıdakilerden hangisi talep eder?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İçişleri bakanı",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Danıştay",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Yargıtay Cumhuriyet Başsavcısı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Adalet bakanı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl genel meclisinin feshi 5302 sayılı Kanun m.22'de düzenlenmiştir. Meclis; kendisine kanunla verilen görevleri süresi içinde yapmayı ihmal eder ve bu durum il özel idaresine ait işleri aksatırsa ya da il özel idaresine verilen görevlerle ilgisi olmayan SİYASÎ konularda karar alırsa, İÇİŞLERİ BAKANLIĞININ BİLDİRİSİ üzerine DANIŞTAYIN KARARI ile feshedilir. Aynı maddeye göre İçişleri Bakanlığı gerekli gördüğü takdirde, meclisin feshine dair bildiri ile birlikte KARAR VERİLİNCEYE KADAR MECLİS TOPLANTILARININ ERTELENMESİNİ de ister; Danıştay, toplantıların ertelenmesi hususunu EN GEÇ BİR AY İÇİNDE karara bağlar. Yetkiler burada bölünmüştür: talep merciî idare (İçişleri Bakanlığı), karar merciî ise yargı (Danıştay) olduğundan fesih doğrudan bir idarî işlemle gerçekleşemez. Feshedilen meclisin yerine seçilen meclis, kalan süreyi tamamlar.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi İl özel idaresinde valinin görev ve yetkileri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kadro ihdasına karar vermek.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İl özel idaresinin bütçesini hazırlamak.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Şartsız bağışları kabul etmek.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "İl özel idaresinin gelir ve alacaklarını takip ve tahsil etmek.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İl özel idaresi personelini atamak.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Valinin görev ve yetkileri 5302 sayılı Kanun m.30'da sayılmıştır ve bunlar arasında il özel idaresinin BÜTÇESİNİ HAZIRLAMAK (bent b), il özel idaresinin GELİR VE ALACAKLARINI TAKİP VE TAHSİL ETMEK (bent f), il özel idaresi PERSONELİNİ ATAMAK (bent j) ve ŞARTSIZ BAĞIŞLARI KABUL ETMEK (bent l) yer alır. Buna karşılık NORM KADRO ÇERÇEVESİNDE İL ÖZEL İDARESİNİN VE BAĞLI KURULUŞLARININ KADROLARININ İHDAS, İPTAL VE DEĞİŞTİRİLMESİNE KARAR VERMEK m.10/l uyarınca İL GENEL MECLİSİNE aittir. Ayrım şu mantığa dayanır: kadronun ihdası bir teşkilatlanma ve bütçe kararıdır, dolayısıyla karar organı olan meclise; o kadroya atama yapmak ise yürütme işlemidir, dolayısıyla valiye bırakılmıştır. Aynı ayrım şartlı-şartsız bağışta da görülür: şartlı bağışı meclis, şartsız bağışı vali kabul eder.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl özel idaresinde valinin ısrar üzerine kesinleşen İl encümeni kararlarına karşı idari yargı mercilerine başvuru süresi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "15 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "60 gün",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Valinin encümen kararları üzerindeki denetimi ve bunun yargısal uzantısı 5302 sayılı Kanun m.27'de düzenlenmiştir. Vali, kanun ve diğer mevzuat hükümleri ile il genel meclisi kararlarına aykırı gördüğü encümen kararının BİR SONRAKİ TOPLANTIDA TEKRAR GÖRÜŞÜLMESİNİ isteyebilir. Encümen kararında ISRAR EDERSE KARAR KESİNLEŞİR. Bu takdirde vali, kesinleşen encümen kararının UYGULANMASINI DURDURUR ve idarî yargı mercilerine YÜRÜTMEYİ DURDURMA TALEBİ İLE BİRLİKTE ON GÜN İÇİNDE başvurur. İtiraz DANIŞTAYCA en geç ALTMIŞ GÜN içinde karara bağlanır. Buradaki on günlük süre, 2577 sayılı Kanun'daki genel altmış günlük dava açma süresinden ayrılan özel bir süredir; valinin başvurusu klasik bir iptal davasından çok, idarî vesayetin yargı önünde kullanılan biçimidir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "cc810ce5-feac-47bd-b4f9-9a9edf7c4672",
+    "articleNo": null,
+    "stem": "İl özel idaresinde bütçe ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bütçe, vali tarafından hazırlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bütçe, il özel idaresinin mali yılı ve izleyen iki yıl içindeki gelir ve gider tahminlerini gösterir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vali tarafından eylül ayı başında il encümenine sunulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Süresi içinde kesinleşen bütçe tasarısı onaylanmak üzere İçişleri Bakanlığına gönderilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Bütçe tasarısı il genel meclisinde görüşülürken meclis, bütçe denkliğini bozacak biçimde gider arttırıcı ve gelir azaltıcı değişiklikler yapamaz.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İl özel idaresi bütçesinin hazırlanması ve kabulü 5302 sayılı Kanun m.45'te aşama aşama düzenlenmiştir. Vali tarafından hazırlanan bütçe tasarısı EYLÜL AYI BAŞINDA il encümenine sunulur; encümen bütçeyi inceleyerek görüşüyle birlikte KASIM AYININ BİRİNCİ GÜNÜNDEN ÖNCE il genel meclisine sunar; meclis ise tasarıyı YIL BAŞINDAN ÖNCE aynen veya değiştirerek kabul eder. Meclis, bütçe denkliğini bozacak biçimde GİDER ARTIRICI VE GELİR AZALTICI değişiklikler yapamaz. Kesinleşen bütçenin onay için İçişleri Bakanlığına gönderilmesi diye bir aşama YOKTUR; Bakanlık yalnızca bütçe tasarısının SÜRESİ İÇİNDE KESİNLEŞMEMESİ hâlinde devreye girer. Bu durumda vali görüşüyle birlikte durumu İçişleri Bakanlığına bildirir ve İçişleri Bakanının OTUZ GÜN içinde vereceği karar KESİNDİR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Bir yerleşim yerinde belediye kurulabilmesi için gereken en az nüfus aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.000",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5.000",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "50.000",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "100.000",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "750.000",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye kurulmasının nüfus eşiği 5393 sayılı Belediye Kanunu m.4'ün ilk cümlesinde belirtilmiştir: NÜFUSU 5.000 VE ÜZERİNDE OLAN yerleşim birimlerinde belediye kurulabilir. Bu bir üst sınır değil ALT EŞİKTİR; eşiğin altındaki yerleşim yerlerinde belediye kurulamaz. Aynı maddeye göre İL VE İLÇE MERKEZLERİNDE ise nüfusa bakılmaksızın belediye kurulması ZORUNLUDUR. Maddede geçen diğer 5.000 rakamı ise nüfusla değil MESAFEYLE ilgilidir: içme ve kullanma suyu havzaları ile sit ve diğer koruma alanlarında ve meskûn sahası kurulu bir belediyenin sınırlarına 5.000 METREDEN daha yakın olan yerleşim yerlerinde belediye kurulamaz. Köylerin birleşerek belediye kurabilmesi için de meskûn sahaların merkez kabul edilecek yerleşim yerine azami 5.000 metre mesafede bulunması ve nüfusları toplamının 5.000 ve üzerinde olması aranır.",
+    "difficulty": "easy",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediyelerden imtiyaz yoluyla devredilebilecek hizmetlerden değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Müktesep haklar saklı kalmak üzere; içme, kullanma ve endüstri suyu sağlamak.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Atık su ve yağmur suyunun uzaklaştırılmasını sağlamak.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Gerçek ve tüzel kişilerin faaliyetleri ile ilgili olarak kanunlarda belirtilen izin veya ruhsatı vermek.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Toplu taşıma yapmak.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Katı atıkların toplanması.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İmtiyaz yoluyla devredilebilecek belediye hizmetleri 5393 sayılı Kanun m.15'te SINIRLI SAYIDA belirlenmiştir. Maddeye göre belediye, yalnızca (e), (f) ve (g) bentlerinde belirtilen hizmetleri Danıştayın görüşü ve Çevre ve Şehircilik Bakanlığının kararıyla süresi KIRK DOKUZ YILI GEÇMEMEK ÜZERE imtiyaz yoluyla devredebilir. Bu bentler sırasıyla; müktesep haklar saklı kalmak üzere içme, kullanma ve endüstri suyu sağlamak ile atık su ve yağmur suyunun uzaklaştırılmasını sağlamak (e), toplu taşıma yapmak (f) ve katı atıkların toplanması, taşınması, ayrıştırılması, geri kazanımı, ortadan kaldırılması ve depolanması hizmetleri (g) şeklindedir. Buna karşılık GERÇEK VE TÜZEL KİŞİLERİN FAALİYETLERİ İLE İLGİLİ OLARAK KANUNLARDA BELİRTİLEN İZİN VEYA RUHSATI VERMEK m.15/c'de yer alan bir KAMU GÜCÜ YETKİSİDİR ve niteliği gereği imtiyaz konusu yapılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdaki belediye gelirlerinden hangisi haczedilebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Şartsız bağışlar",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Proje karşılığı borçlanma yoluyla elde edilen gelirler",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Belediye tarafından tahsil edilen vergiler",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Belediye tarafından tahsil edilen harçlar",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Şartlı bağışlar",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye gelirlerinin haczedilebilirliği 5393 sayılı Kanun m.15'in son fıkrasında düzenlenmiştir. Maddeye göre belediyenin PROJE KARŞILIĞI BORÇLANMA YOLUYLA ELDE ETTİĞİ GELİRLERİ, ŞARTLI BAĞIŞLAR ve KAMU HİZMETLERİNDE FİİLEN KULLANILAN MALLARI ile belediye tarafından tahsil edilen VERGİ, RESİM VE HARÇ GELİRLERİ HACZEDİLEMEZ. Bu sayım sınırlıdır; listede yer almayan gelirler genel kural gereği haczedilebilir. ŞARTSIZ BAĞIŞLAR maddede sayılmadığından haczedilebilir niteliktedir. Ayrımın mantığı açıktır: haciz yasağı, belirli bir amaca veya kamu hizmetine tahsis edilmiş değerleri korumayı hedefler. Şartlı bağış bağışlayanın belirlediği amaca bağlıdır ve proje karşılığı borçlanma geliri de belirli bir yatırıma özgülenmiştir; şartsız bağış ise böyle bir tahsis taşımaz.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediye meclisinin görev ve yetkilerinden değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediyenin imar plânlarını görüşmek ve onaylamak.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Borçlanmaya karar vermek.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "İhtisas komisyonları üyelerini seçmek.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meydan, cadde, sokak, park, tesis ve benzerlerine ad vermek.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bütçede yoksul ve muhtaçlar için ayrılan ödeneği kullanmak.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Belediye meclisinin görev ve yetkileri 5393 sayılı Kanun m.18'de sayılmıştır; belediyenin İMAR PLÂNLARINI görüşmek ve onaylamak (bent c), BORÇLANMAYA karar vermek (bent d), meclis başkanlık divanını ve encümen üyeleri ile İHTİSAS KOMİSYONLARI ÜYELERİNİ seçmek (bent k) ve MEYDAN, CADDE, SOKAK, PARK, TESİS VE BENZERLERİNE AD VERMEK (bent n) bunlar arasındadır. Buna karşılık BÜTÇEDE YOKSUL VE MUHTAÇLAR İÇİN AYRILAN ÖDENEĞİ KULLANMAK, m.38 uyarınca BELEDİYE BAŞKANININ görev ve yetkilerindendir. Ayrım şu ilkeye dayanır: meclis bütçeyi ve kadroyu belirleyen KARAR ORGANI, başkan ise bütçeyi uygulayan YÜRÜTME ORGANIDIR. Ödeneğin ayrılması meclisin bütçe yetkisi içindeyken, ayrılmış ödeneğin harcanması başkana aittir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediye meclisi toplantılarına ilişkin yanlış bir ifadedir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye meclisi, her ayın ilk haftası, önceden kararlaştırdığı günde toplanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Meclis, resmî tatile rastlayan günlerde çalışmasına ara verebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Meclis gündemi belediye başkanı tarafından belirlenerek en az üç gün önceden üyelere bildirilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Toplantıların süresi 15 gündür.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Belediye meclisi her yıl bir ay tatil kararı alabilir.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye meclisinin toplanma düzeni 5393 sayılı Kanun m.20 ve m.21'de düzenlenmiştir. Meclis, HER AYIN İLK HAFTASI önceden kararlaştırdığı günde toplanır; resmî tatile rastlayan günlerde çalışmasına ARA VEREBİLİR ve HER YIL BİR AY TATİL KARARI ALABİLİR. Toplantı süreleri ise ikiye ayrılmıştır: BÜTÇE GÖRÜŞMESİNE RASTLAYAN toplantı süresi EN ÇOK YİRMİ GÜN, DİĞER toplantıların süresi EN ÇOK BEŞ GÜNDÜR; kanunda on beş günlük bir toplantı süresi yer almaz. Gündem bakımından m.21 uyarınca her ayın ilk günündeki meclis gündemi BELEDİYE BAŞKANI tarafından belirlenerek EN AZ ÜÇ GÜN ÖNCEDEN üyelere bildirilir ve çeşitli yöntemlerle halka duyurulur. Her ayın ilk toplantısında başkan ve üyeler belediyeye ait işlerle ilgili konuların gündeme alınmasını önerebilir; öneri, toplantıya katılanların salt çoğunluğuyla kabul edilirse gündeme alınır.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  }
+]
