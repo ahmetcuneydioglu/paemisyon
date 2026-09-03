@@ -958,10 +958,18 @@ export class QuizService {
         : session.totalQuestions > 0
           ? (correctCount / session.totalQuestions) * 100
           : 0;
-    const durationSeconds = Math.max(
+    // Geçen süre. Randevulu denemede TAVAN planlanan süredir: oturum, süre
+    // dolduktan çok sonra (sonuç ekranı açıldığında ya da süpürücü cron ile)
+    // finalize olabilir; ham "şimdi − başlangıç" o durumda saatler/günler çıkar
+    // ve sıralamanın eşitlik bozucusu süre olduğu için tabloyu bozardı.
+    const elapsedSeconds = Math.max(
       0,
       Math.round((Date.now() - session.startedAt.getTime()) / 1000),
     );
+    const durationSeconds =
+      session.plannedDurationSeconds != null
+        ? Math.min(elapsedSeconds, session.plannedDurationSeconds)
+        : elapsedSeconds;
 
     await this.prisma.quizSession.update({
       where: { id: sessionId },

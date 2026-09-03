@@ -2,8 +2,10 @@ import {
   ConflictException,
   ForbiddenException,
   Injectable,
+  Logger,
   NotFoundException,
 } from '@nestjs/common';
+import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { QuizService } from '../quiz/quiz.service';
@@ -18,6 +20,8 @@ export type ExamState = 'upcoming' | 'active' | 'ended';
  */
 @Injectable()
 export class ExamsService {
+  private readonly logger = new Logger(ExamsService.name);
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
@@ -163,6 +167,11 @@ export class ExamsService {
             mode: 'deneme',
             examId,
             totalQuestions: questions.length,
+            // Cevaplanabilir sürümler SUNUCUDA sabitlenir. Boş bırakılırsa
+            // submitAnswer'daki üyelik denetimi (quiz.service) denemede devre
+            // dışı kalıyor ve sınav setinde OLMAYAN, cevabı bilinen sorular
+            // POST edilerek net şişirilebiliyordu — sıralama manipülasyonu.
+            questionOrder: questions.map((q) => q.versionId),
             // Küresel bitişe kalan süre → mevcut sunucu süre denetimi aynen çalışır.
             plannedDurationSeconds: Math.max(
               1,
@@ -300,6 +309,44 @@ export class ExamsService {
     };
   }
 
+  /**
+   * Süresi dolmuş katılımları SUNUCUDA kapatır (her 2 dk).
+   *
+   * Finalize eskiden yalnız TEMBELDİ: kullanıcı sonucunu açtığında ya da
+   * sınava yeniden girmeyi denediğinde. Sekmeyi kapatıp bir daha dönmeyen
+   * katılımcı `in_progress` kalıyor; sıralama ve ortalama NET yalnız
+   * `completed` satırları saydığı için o kişi tabloda HİÇ görünmüyordu.
+   * 100 kişilik gerçek bir denemede bu, sıralamayı yanlış gösterir.
+   *
+   * completeSession idempotenttir — çok replikalı dağıtımda ya da tembel
+   * finalize ile yarışırsa istatistik ÇİFT SAYILMAZ.
+   */
+  @Cron('*/2 * * * *')
+  async finalizeExpiredAttempts() {
+    const stale = await this.prisma.$queryRaw<{ id: string; user_id: string }[]>`
+      SELECT qs.id, qs.user_id
+      FROM quiz_sessions qs
+      JOIN exams e ON e.id = qs.exam_id
+      WHERE qs.status = 'in_progress'
+        AND qs.exam_id IS NOT NULL
+        AND (e.start_at + make_interval(mins => e.duration_minutes)) < now()
+      LIMIT 500`;
+    if (stale.length === 0) return;
+
+    // SIRAYLA: pooler bağlantısı dar (Supabase havuzu prod ile ortak), sınav
+    // bitişindeki yığılmada paralel finalize havuzu tüketirdi.
+    let ok = 0;
+    for (const row of stale) {
+      try {
+        await this.quiz.completeSession(row.user_id, row.id);
+        ok++;
+      } catch (e) {
+        this.logger.warn(`Katılım kapatılamadı ${row.id}: ${(e as Error).message}`);
+      }
+    }
+    this.logger.log(`Süresi dolan katılım kapatıldı: ${ok}/${stale.length}`);
+  }
+
   // ── Deneme sıralaması (public; pencere kapanmadan liste verilmez) ──
   async leaderboard(examId: string, user?: AuthenticatedUser) {
     const exam = await this.prisma.exam.findFirst({
@@ -349,6 +396,11 @@ export class ExamsService {
              SUM(qs.correct_count)::int AS total_correct
       FROM quiz_sessions qs
       JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
+      -- İPTAL EDİLEN deneme sıralamayı kirletmez: sorgu eskiden exam'e hiç
+      -- bakmıyordu, soft-delete edilmiş bir denemenin netleri KALICI olarak
+      -- genel tabloda kalıyordu (scripts/deneme-iptal.ts bu yüzden oturumları
+      -- silmek zorundaydı).
+      JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL
       WHERE qs.mode = 'deneme' AND qs.status = 'completed'
       GROUP BY qs.user_id, u.display_name, u.avatar_url
       ORDER BY avg_score DESC, attempts DESC`;
