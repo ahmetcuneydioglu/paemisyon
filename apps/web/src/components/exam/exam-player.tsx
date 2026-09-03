@@ -62,6 +62,10 @@ export function ExamPlayer({
     ),
   );
   const [saveState, setSaveState] = useState<Record<string, SaveState>>({});
+  // Sunucunun gerekçesi (kota doldu, süre bitti, soru bu oturuma ait değil…).
+  // Hepsini "bağlantını kontrol et" diye göstermek 2 Eylül 2026 denemesinde
+  // gerçek sebebi (403 DAILY_LIMIT_REACHED) saatlerce gizledi.
+  const [saveError, setSaveError] = useState<Record<string, string>>({});
   // "Emin değilim" bayrağı yalnız oturum içi taktik aracıdır — sunucuya yazılmaz.
   const [flags, setFlags] = useState<Set<string>>(new Set());
   const [finishOpen, setFinishOpen] = useState(false);
@@ -147,12 +151,26 @@ export function ExamPlayer({
           },
         });
         setSaveState((p) => ({ ...p, [questionId]: "saved" }));
+        setSaveError((p) => {
+          if (p[questionId] == null) return p;
+          const { [questionId]: _drop, ...rest } = p;
+          return rest;
+        });
       } catch (e) {
         if (e instanceof ApiClientError && e.code === "EXAM_TIME_OVER") {
           void finish();
           return;
         }
         setSaveState((p) => ({ ...p, [questionId]: "failed" }));
+        // Sunucu bir gerekçe verdiyse ONU göster; yalnız gerçek ağ/bilinmeyen
+        // hatalarda bağlantı metnine düş.
+        const sunucuMesaji =
+          e instanceof ApiClientError && e.message.trim().length > 0 ? e.message.trim() : null;
+        setSaveError((p) => ({
+          ...p,
+          [questionId]:
+            sunucuMesaji ?? "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç.",
+        }));
       }
     },
     [start.sessionId, finish],
@@ -308,7 +326,8 @@ export function ExamPlayer({
           </div>
           {saveState[q.questionId] === "failed" && (
             <p className="mt-2 text-[13px] font-semibold text-danger" role="alert">
-              Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç.
+              {saveError[q.questionId] ??
+                "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç."}
             </p>
           )}
 
