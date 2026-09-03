@@ -1283,3 +1283,27 @@ yapisal kurallari olctugu icin alindi.
 **KURAL (bundan sonraki turlar icin):** IYUK kanun yollari bolumunde
 **parasal sinir iceren HER SORU elenir**; m.45/m.46'ya dayanan sorular ise
 yalnizca parasal olmayan yapisal kurali olcuyorsa alinir.
+
+### y07 YAYINDA — 7/7 yayimlanabilir · **YEDINCI BOLUM: IDARI YARGIDA YETKI**
+Haritada hic orneklenmemis tek bolgeydi ve gecenin en verimli damari cikti.
+2577 m.32 x3 (genel yetki = islemi/sozlesmeyi YAPAN MERCIIN bulundugu yer;
+yetki KAMU DUZENINDEN, yetki sozlesmesi yasak; ozel yetki kurallari sinirli
+sayida) · m.33 (kamu gorevlileri: atama/nakil YENI VEYA ESKI gorev yeri, goreve
+son verme/emeklilik SON GOREV YERI, disiplin/ozluk GOREVLI BULUNDUGU YER) ·
+m.34 (koy/belediye/ozel idare mevzuati ve sinir uyusmazliklari: bulundugu
+YAHUT YENI BAGLANDIGI yer) · m.36 (tam yargi, SIRALI olcut; idari sozlesmeden
+doganlar HARIC) · m.37 (vergi; 6183 uygulamasinda ODEME EMRINI DUZENLEYEN daire).
+
+18 okundu, 13 alt ajan onayi, 6 elle eleme -> 7 (%39).
+**Elle eleme sebebi:** kitap "hangisinde ozel yetki kurali YOKTUR" sorusunu
+DORT ayri kurguyla soruyor (s-54 S.1, s-55 S.11, s-55 S.12, s-56 S.16); en genis
+olani (S.12) tutuldu. Ayrica m.36'da bir bilesik + bir senaryo (ayna) ve m.33'te
+bankadaki `eb4e2460` ile ucuncu bir soru vardi; birer tane dusuruldu.
+
+**KAPSAM KAZANIMI:** m.32, 34, 35, 36, 37 bankada TAMAMEN BOSTU; m.33'te tek
+soru vardi. Bu parti IYUK'un yetki rejimini bastan kurdu.
+
+**SIRADAKI:** s-57..s-62 Sekizinci Bolum (sureler) haritada "dusuk" isaretli
+(m.7/m.11 doygun) — ATLANMALI. Onun yerine **s-50..s-53 Altinci Bolum
+(Idari Yargida Ic Gorev)** okunmali; m.43 doygun ama m.42 ve gorev-yetki
+uyusmazliklari bankada bos. Sonra s-36..s-49 Besinci Bolum.
