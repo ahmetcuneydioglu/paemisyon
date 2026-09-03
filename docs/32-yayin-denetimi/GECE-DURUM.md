@@ -1089,3 +1089,27 @@ METNI BANKADA YOK, (3) kitabin kalan testleri ayni kurallari tekrar oluyor.
 IYUK metinleri bankada VAR (2577'nin ~50 bos maddesi), 2575 Danistay Kanunu
 bu gece import edildi ve kullanici ozellikle "danistay ile ilgili temel duzeyde
 20 soru" istedi — bu hedef henuz HIC baslamadi.
+
+## IDARI YARGILAMA HUKUKU KITABI ACILDI (3 Eyl 2026)
+`~/Downloads/Themis Soru - Idari Yargilama Hukuku.pdf` -> 88 PNG,
+`<scratchpad>/iyuk-png/s-01..s-88.png` (170 dpi, 189 MB).
+
+**Kimlik:** THEMIS | Idari Yargilama Hukuku Soru Kitabi — **Umit KAYMAK**,
+**Seckin Yayincilik**, 3. Baski Ocak 2025, "Tamami Cozumlu 470 Soru", 176 sayfa.
+(Bu kez dosya adi dogru: THEMIS, Seckin'in serisi.)
+
+**Geometri:** her PNG ACIK KITAP (2 sayfa), her sayfa 2 sutun = PNG basina 4 sutun.
+Eslesme: `png = 4 + ceil(kitapSayfa/2)`. Dogrulandi (s-12 -> 15/16, s-48 -> 87/88).
+**Cevap anahtari:** toplu anahtar YOK; her sorunun altinda cerceveli cozum,
+sonunda koyu zeminde "Yanit, X secenegi".
+
+**Bolum haritasi (PNG araligi):**
+- **Danistay (2575): s-05..s-15** — Birinci Bolum "Idari Yargi Orgutu ve
+  Gorevlileri", Test 1-5. **s-13..s-15 = Test 5, TAMAMI 2575** (daireler,
+  Genel Kurul, Disiplin/Yuksek Disiplin Kurulu, ictihatlarin birlestirilmesi,
+  1. Daire gorevleri) — kullanicinin ~20 temel Danistay sorusu icin EN VERIMLI YER.
+- Bolge Idare (2576): s-12..s-13, ayrica s-48..s-53 ve s-70..s-78'de dagimik.
+- **IYUK (2577): s-16..s-88** (kitap s.23-170), govdenin tamami.
+- Yogunluk: PNG basina ~7 soru.
+
+SIRADAKI: s-13..s-15 (Danistay Test 5) okunuyor.
