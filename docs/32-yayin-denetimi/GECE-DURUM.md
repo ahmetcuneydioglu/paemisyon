@@ -1227,3 +1227,22 @@ yolu m.39/40'ta degil **m.41'de**. Kume dosyasinda m.41 olmadigi icin denetciler
 **DERS:** hedefli kume ureticisinin kendi basligindaki uyari dogrulandi —
 denetci "gercek dayanak m.X, kumede yok" dediginde ikinci tur ucuz ve etkili.
 Bu gece ilk kez kullanildi ve 2 sorudan 1'ini kurtardi.
+
+### y04 YAYINDA — 4/4 yayimlanabilir · **Dokuzuncu Bolum KAPANDI**
+2575: m.87 (nobetci dairenin goreceği isler), m.86 (nobetci daire uyelerini
+Baskanlar Kurulu secer) · 2577: m.20 (resen arastirma; belge suresini MAHKEME
+belirler, sabit 30 gun YOK), m.58 (delillerin tespitinde ozel duzenleme).
+s-67..s-69'dan 15 okundu, 4 alindi (%27). Dayanak duzeltmesi: nobetci dairenin
+GOREVLERI m.86'da degil **m.87'de** (m.86 yalniz kurulus ve secim).
+
+**DOYGUNLUK UYARISI — m.31 atif listesi.** Kitap m.31'in HMK atif listesini
+DORT ayri kurguyla soruyor (s-67 S.14, s-68 S.15/16/17). Bu gece zaten
+`b83675a6` yayimlanmisti; uc tanesi ELLE elendi, yalnizca acikca FARKLI kurali
+olcen (atif yapilmis olmasina RAGMEN ayrica ozel duzenleme bulunan konu) tutuldu.
+Ayni sekilde nobetci kumesinde bir soru hem yayimlanmis `d1270124` ile hem de
+ayni partideki kardesiyle ortustugu icin dusuruldu.
+
+**IYUK DURUMU:** Dokuzuncu Bolum bitti (kitap s.129). Onuncu Bolum
+"Idari Yargida Kanun Yollari" s-70'te basliyor — bankada bos olan m.46, 47, 48,
+49 (temyiz, karar duzeltme, bozma sonrasi) orada.
+**SIRADAKI: s-76..s-78** (haritada "yuksek" isaretli, m.46/49) sonra s-70..s-75.
