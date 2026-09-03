@@ -689,8 +689,42 @@ yazilacak — 5393 -> `28eaa9b8`, 5302 -> `cc810ce5`, 5442 -> `4d185b8e`.
 Boylece `denetim-yayinla.ts` articleNo'yu baglar (dogruKanun === topic.name kosulu).
 Harita sol tarafi da topic adinin parcasi olmali: `5393|14`, `5302|10`, `5442|9`.
 
+### PARTI i05 KAPANDI — MEMURLAR TEST-IX (3 Eyl 2026) · **MEMURLAR BLOGU BITTI**
+s-111..s-113 (kitap s.221-226) okundu: **21 soru -> YALNIZ 4 bankaya girdi.**
+Denetim 4/4 yayimlanabilir, kusurlu 0. Run: wf_0a49f9e7-13e. Banka 5.667.
+Konu: **4483** (657 degil) — sorular 4483'e dayandigi icin `ad5ea381`'e yazildi.
+
+**SEBEP: 4483 DOYGUN.** Bankada 30 soru var ve tam bu maddelerde: m.3 -> 8 soru,
+m.9 -> 6, m.12 -> 5, m.7 -> 2. Elenenler: sorusturma izni suresi (30+15, bankada 2
+soru), itiraz suresi 10 gun (**3 soru**), itirazlar 3 ay (2 soru), TBMM Genel
+Sekreteri (2 soru), ilce belediye -> Icisleri Bakani, on inceleme, hazirlik
+sorusturmasi — hepsi kapli. Ayrica aylıktan kesme orani (bankada ayni soru "1/9"
+cevabiyla) ve m.36 hizmet siniflari (bu kitaptan **ucuncu** kez ayni kurgu).
+Alt ajan da 657 m.57'ye (mulga) ve 3628'e (bankada yok) dayanan ikisini eledi.
+
+**KITAP-KANUN METIN FARKI:** kitap "Cumhurbaskanligi **Idari Isler Baskani**" diyor;
+4483 m.3/(g)'nin guncel metni "Cumhurbaskanligi **GENEL SEKRETERI**". Denetci bunu
+**21/5/2025 tarihli 7547 sayili Kanun** degisikligine bagladi. Kitap Ocak 2025
+baskisi oldugu icin eski ibareyi kullaniyor. Sorunun cevabi etkilenmedi (sik
+"Cumhurbaskani" diyordu, o her halde yanlis) ama ACIKLAMA kanunun lafziyla yazildi.
+
+#### MEMURLAR BLOGU — NIHAI (i01..i05, s-095..s-113)
+19 tarama = 38 kitap sayfasi, TEST-I..IX. **141 soru okundu -> 80 bankaya girdi**,
+denetim 80/80 yayimlanabilir, kusurlu 0.
+657: 94 -> **170 soru** (bagli madde 46 -> 66) · 4483: 30 -> **34 soru**.
+
+### YENI ARAC DUZELTMESI (3 Eyl 2026)
+`harita-kur-idare.py` aciklamalardaki ciplak "m.N" atiflarini HER ZAMAN 657'ye
+bagliyordu. 4483 partisinde bu, kumeye 657 m.3 (ilkeler) ve m.4 (istihdam sekilleri)
+gibi ALAKASIZ maddeleri sokuyordu. Varsayilan kanun 5. arguman olarak
+parametrelendirildi: `python3 harita-kur-idare.py <aday> <kuyruk> <import> <cikti> 4483`
+
 ### SIRADAKI ADIM
-Memurlar blogunun son testi: **s-111..s-113** (TEST-IX).
+**Mahalli idareler blogu: s-031..s-034** ile basla (TEST-I ve II).
+Hedef kanunlar 5393 Belediye (86 bos madde) ve 5302 Il Ozel Idaresi (71 bos madde);
+bos duran cekirdek maddeler yukarida "HAZIRLIK OLCUMU" basliginda listelendi.
+Topic: 5393 -> `28eaa9b8` · 5302 -> `cc810ce5` · 5442 -> `4d185b8e`.
+Harita varsayilan kanunu buna gore ver (ornek: `... i06-harita.json 5393`).
 Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
 Kitap bitince -> Idari Yargilama Hukuku (Danistay ~20 temel soru + IYUK 50 bos madde).
 Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
