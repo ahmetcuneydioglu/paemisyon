@@ -1,0 +1,667 @@
+[
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Devlet memurunun amirinden aldığı emrin konusunun suç teşkil etmesi durumuna ilişkin aşağıdaki hangisi doğrudur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Memur emri hiçbir surette yerine getirmemelidir, yerine getirirse sorumluluktan kurtulamaz.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Memur emrin yazılı olarak yinelenmesini istemeli, emir yazılı olarak yinelenirse emri yerine getirmelidir. Bu durumda sadece emri veren amir sorumlu olur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Memur emri yerine getirmelidir ancak emrin yerine getirilmesinden memur değil emri veren amir sorumlu olur.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Memur, emrin suç teşkil ettiğini amirine bildirmeli ancak amiri emrinde ısrar ederse emri yerine getirmelidir. Bu durumda sorumluluk memura değil emri veren amire ait olur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Memur her koşulda emri yerine getirmelidir. Emrin yerine getirilmesinden memur ve amir müteselsilen sorumlu olur.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Memurun amirinden aldığı emir karşısındaki durumu 657 m.11'de KADEMELİ olarak düzenlenmiştir ve son kademe mutlaktır. Kural olarak memur, emri Anayasaya, kanuna, Cumhurbaşkanlığı kararnamesine veya yönetmeliğe aykırı görürse YERİNE GETİRMEZ ve aykırılığı emri verene bildirir. Amir emrinde ısrar eder ve emrini YAZI İLE YENİLERSE memur bu emri yapmakla yükümlü olur; bu durumda sorumluluk emri verene geçer. Ancak maddenin son cümlesi bu mekanizmayı tümüyle dışlayan bir istisna getirir: KONUSU SUÇ TEŞKİL EDEN EMİR HİÇBİR SURETLE YERİNE GETİRİLMEZ; yerine getiren kimse SORUMLULUKTAN KURTULAMAZ. Yani suç teşkil eden emirde yazılı yineleme usulü işlemez, emri yazılı almak memuru korumaz ve sorumluluk amire geçmez. Kural Anayasa m.137 ile de örtüşür. Bu nedenle memurun emri yerine getirmesi gerektiğini ya da sorumluluğun amire ait olacağını söyleyen ifadeler yanlıştır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Memurların aylık hakkına ilişkin aşağıdakilerden hangisi söylenemez?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Memurlara hizmetlerinin karşılığında kadroya dayanılarak ay itibariyle ödenen paradır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Aylık subjektif bir kamu hakkıdır.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Memurun aylığı üzerindeki haklarından vazgeçmesi bir hüküm ifade etmez.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Memurlara aylıkları her ayın başında peşin ödenir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Emekliye ayrılma ve ölüm durumlarında o aya ait peşin ödenen aylık geri alınır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Aylık, memurun hizmetinin karşılığında KADROYA DAYANILARAK ay itibarıyla ödenen paradır (657 m.147) ve statüden doğan sübjektif bir kamu hakkıdır; bu nitelik gereği memurun aylığı üzerindeki haklarından vazgeçmesi hüküm ifade etmez. Ödeme zamanı ve peşinliği ise m.164'te düzenlenir: memurlara aylıkları HER AYIN BAŞINDA PEŞİN ödenir. Maddenin devamı, peşin ödemenin doğurduğu sorunu memur lehine çözer: EMEKLİYE AYRILMA VE ÖLÜM HÂLLERİNDE o aya ait peşin ödenen aylık GERİ ALINMAZ. Bu nedenle peşin ödenen aylığın geri alınacağını söyleyen ifade yanlıştır. Kuralın amacı, hizmetin sona erdiği ayda memurun ya da ailesinin gelirsiz kalmasını önlemektir. Aynı maddede emekli aylıklarının da her ayın başında peşin ödeneceği belirtilmiştir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Devlet Memurları Kanunu'na göre hizmet süreleri 10 yıla kadar olan memurlar ile 10 yıldan fazla olan memurların yol süresi hariç kullanabilecekleri yıllık izin süreleri sırasıyla aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 gün - 30 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "15 gün - 20 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "10 gün - 20 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "22 gün - 32 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "30 gün - 20 gün",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yıllık izin süreleri 657 m.102'de HİZMET SÜRESİNE bağlı iki kademe hâlinde belirlenmiştir: hizmeti BİR YILDAN ON YILA KADAR (on yıl dâhil) olanlar için YİRMİ GÜN, hizmeti ON YILDAN FAZLA olanlar için OTUZ GÜNDÜR. On yıl sınırının hangi kademeye dâhil olduğu sık karıştırılır; kanun on yılı ALT kademeye dâhil etmiştir, yani tam on yıllık hizmeti olan memurun izni yirmi gündür. Maddede ayrıca zorunlu hâllerde bu sürelere gidiş ve dönüş için EN ÇOK İKİŞER GÜN eklenebileceği öngörülmüştür. Yıllık iznin kullanımı ise m.103'te düzenlenir: izinler amirin uygun bulacağı zamanlarda toptan veya kısım kısım kullanılabilir; birbirini izleyen iki yılın izni bir arada verilebilir; carî yıl ile bir önceki yıl hariç, önceki yıllara ait kullanılmayan izin hakları DÜŞER.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Memurların yıllık izin haklarına ilişkin aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Memurun yıllık izin hakkı bir yıllık hizmet süresinin tamamlanması ile başlar.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yıllık izinler, amirin uygun bulacağı zamanlarda toptan veya ihtiyaca göre kısım kısım kullanılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Hizmeti sekiz yıl olan bir memurun yıllık izin süresi yol izni hariç 20 gündür.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Öğretmenlerin yıllık izin hakkı yoktur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Birbirini izleyen üç yılın izni bir arada verilebilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Yıllık iznin kullanılma usulü 657 m.103'te düzenlenmiştir. İzinler AMİRİN UYGUN BULACAĞI ZAMANLARDA, toptan veya ihtiyaca göre kısım kısım kullanılabilir; yani izin bir haktır ama kullanma zamanı hizmetin gereklerine göre amirin takdirindedir. Maddenin ikinci cümlesi biriktirmeye sınırlı bir imkân tanır: BİRBİRİNİ İZLEYEN İKİ YILIN İZNİ BİR ARADA VERİLEBİLİR. Buna karşılık üçüncü cümle sınırı çizer: carî yıl ile bir önceki yıl hariç, ÖNCEKİ YILLARA AİT KULLANILMAYAN İZİN HAKLARI DÜŞER. Böylece memur en fazla iki yıllık izni biriktirebilir. Madde ayrıca iki özel durum içerir: öğretmenler yaz tatili ile dinlenme tatillerinde izinli sayılır ve bunlara hastalık ile diğer mazeret izinleri dışında ayrıca yıllık izin verilmez; hizmetleri sırasında RADYOAKTİF IŞINLARLA çalışan personele ise her yıl yıllık izinlerine ilaveten BİR AYLIK SAĞLIK İZNİ verilir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Hizmetleri sırasında radyoaktif ışınlara maruz kalan personele her yıl yıllık izinlerine ilaveten verilen sağlık izni süresi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "20 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 ay",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "45 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "2 ay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Radyoaktif ışınlarla çalışan personele tanınan izin, 657 m.103'ün son cümlesinde yer alır ve olağan yıllık izinden AYRI bir haktır: hizmetleri sırasında radyoaktif ışınlarla çalışan personele, HER YIL YILLIK İZİNLERİNE İLAVETEN BİR AYLIK SAĞLIK İZNİ verilir. İki nokta önemlidir. Birincisi, bu izin yıllık iznin yerine geçmez, ONA EKLENİR; ikincisi, izin her yıl yeniden doğar ve rapora bağlı değildir — hastalık izninden farklı olarak koruyucu nitelikte bir izindir. Amaç, iyonlaştırıcı radyasyona sürekli maruz kalan personelin sağlığını korumaktır. Aynı maddede öğretmenler bakımından farklı bir rejim vardır: öğretmenler yaz tatili ile dinlenme tatillerinde izinli sayılır ve kendilerine hastalık ile diğer mazeret izinleri dışında ayrıca yıllık izin verilmez.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "657 sayılı Devlet Memurları Kanununda yer alan \"Açıktan vekil olarak atananlara, bir yılda ... günü geçmemek üzere çalıştıkları her ay için ... gün yıllık izin verilir.\" hükmünü doğru tamamlayan şık aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15 – 1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "18 – 2",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "20 – 2",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "30 – 3",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "40 – 4",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Açıktan vekil olarak atananların izin hakkı, 12/7/2013 tarihli 6495 sayılı Kanunla 657 m.86'ya eklenen fıkrada düzenlenmiştir: açıktan vekil olarak atananlara, BİR YILDA YİRMİ GÜNÜ GEÇMEMEK ÜZERE ÇALIŞTIKLARI HER AY İÇİN İKİ GÜN yıllık izin verilir. İzin hakkı çalışılan süreyle orantılı doğduğundan, on ay çalışan vekil yirmi gün iznin tamamını hak eder. Aynı fıkra bir sınır daha koyar: bu iznin kullanımında, BİR SONRAKİ YILA DEVREDİLME hâli dışında Devlet memurları için öngörülen hükümler uygulanır; yani vekilin izni ertesi yıla devredilemez. Düzenlemenin amacı, asıl memur gibi kadroya dayanmayan açıktan vekilin izinsiz kalmasını önlemektir. m.86 ayrıca vekâletin kural olarak AYLIKSIZ olduğunu, vekâlet aylığının ancak maddede sayılan hâllerde ödeneceğini belirtir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Memura, eşinin doğum yapması halinde ve isteği üzerine verilecek babalık izni süresi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "7 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 hafta",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "10 gün",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "12 gün",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Babalık izni 657 m.104/B'de düzenlenmiştir: erkek memura, EŞİNİN DOĞUM YAPMASI hâlinde isteği üzerine ON GÜN babalık izni verilir. Süre 13/2/2011 tarihli 6111 sayılı Kanunla üç günden on güne çıkarılmıştır; eski süreyi veren kaynaklar güncel değildir. İzin memurun İSTEĞİNE bağlıdır, kendiliğinden uygulanmaz. Aynı fıkrada yer alan diğer mazeret izinleri de karıştırılmamalıdır: memurun kendisinin veya çocuğunun EVLENMESİ ile annesinin, babasının, eşinin, çocuğunun veya kardeşinin ÖLÜMÜ hâllerinde isteği üzerine YEDİ GÜN izin verilir. Bunların dışında, mazeretleri sebebiyle memura yıl içinde toptan veya bölümler hâlinde amirin uygun görmesiyle ON GÜNE KADAR izin verilebilir; zorunluluk hâlinde on gün daha aynı usulle eklenebilir ancak bu ikinci on gün yıllık izinden düşülür.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Doğum sonrası analık izni süresi sonunda başlamak ve ayrıca süt izni kullanmamak kaydıyla kadın memur, isteği hâlinde çocuğun hayatta olması şartıyla birinci doğumda ne kadar süreyle yarım zamanlı çalışabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "2 ay",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "4 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "1 yıl",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Doğum sonrası yarım zamanlı çalışma hakkı, 29/1/2016 tarihli 6663 sayılı Kanunla 657 m.104'e eklenmiştir ve süre DOĞUM SIRASINA göre kademelidir: doğum sonrası analık izninin bitiminde başlamak üzere, çocuğun hayatta olması kaydıyla kadın memur isteği hâlinde BİRİNCİ DOĞUMDA İKİ AY, ikinci doğumda dört ay, sonraki doğumlarda ise altı ay süreyle günlük çalışma süresinin YARISI kadar çalışabilir. Çoğul doğumlarda bu sürelere birer ay ilave edilir; çocuğun engelli doğması veya doğumdan sonraki on iki ay içinde engellilik durumunun tespiti hâlinde süreler on iki ay olarak uygulanır. Bu dönemde memura malî ve sosyal haklar tam ödenir ve süre yıllık izin hesabında çalışılmış sayılır. Hak, analık izninin bir uzantısı olduğundan İZİN BİTİMİNDE ARALIKSIZ başlaması gerekir; sonradan talep edilemez.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Kadın memura çocuğunu emzirmesi için doğum sonrası analık izni süresinin bitiminden itibaren ilk altı ay günde kaç saat süt izni verilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "1,5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "2,5",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "3",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Süt izni 657 m.104/D'de düzenlenmiştir ve süre çocuğun yaşına göre İKİ KADEMELİDİR: kadın memura, çocuğunu emzirmesi için DOĞUM SONRASI ANALIK İZNİNİN BİTİM TARİHİNDEN İTİBAREN İLK ALTI AYDA GÜNDE ÜÇ SAAT, İKİNCİ ALTI AYDA GÜNDE BİR BUÇUK SAAT süt izni verilir. Sürenin başlangıcı doğum tarihi değil, ANALIK İZNİNİN BİTİM TARİHİDİR; bu nokta sıkça karıştırılır. Maddede ayrıca izin saatlerinin günün hangi diliminde ve kaça bölünerek kullanılacağını MEMURUN KENDİSİNİN belirleyeceği öngörülmüştür; yani kullanım zamanı amirin takdirine bırakılmamıştır. Süt izni, doğum sonrası yarım zamanlı çalışma hakkından ayrıdır; yarım zamanlı çalışma hakkını kullanan memura ayrıca süt izni verilmez.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Memura çocuğunun evlenmesi halinde ve isteği üzerine kaç gün izin verilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "10",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Evlenme ve ölüm hâllerindeki mazeret izni 657 m.104/B'de birlikte düzenlenmiştir: memura, KENDİSİNİN VEYA ÇOCUĞUNUN EVLENMESİ, ANNESİNİN, BABASININ, EŞİNİN, ÇOCUĞUNUN VEYA KARDEŞİNİN ÖLÜMÜ hâllerinde isteği üzerine YEDİ GÜN izin verilir. Sayım tahdidîdir: kardeş ölümü kapsamdayken kayınpeder, kayınvalide veya amca gibi yakınların ölümü bu izne hak kazandırmaz; o hâllerde amirin takdirine bağlı genel mazeret izni gündeme gelir. Evlenme bakımından da yalnız memurun kendisinin veya çocuğunun evlenmesi sayılmıştır. Aynı fıkrada erkek memura eşinin doğum yapması hâlinde ON GÜN babalık izni verileceği de düzenlenmiştir. Yedi ve on günlük bu izinler memurun İSTEĞİNE bağlıdır ve yıllık izinden düşülmez.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Memura, aylık ve özlük hakları korunarak, verilecek raporda gösterilecek lüzum üzerine, kanser, verem ve akıl hastalığı gibi uzun süreli bir tedaviye ihtiyaç gösteren hastalığı halinde kaç aya kadar izin verilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "12",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "18",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "24",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Hastalık izninin azamî süreleri 657 m.105'te HASTALIĞIN TÜRÜNE göre ikiye ayrılmıştır: kanser, verem ve akıl hastalığı gibi UZUN SÜRELİ BİR TEDAVİYE ihtiyaç gösteren hastalık hâlinde ON SEKİZ AYA KADAR, diğer hastalık hâllerinde ise ON İKİ AYA KADAR izin verilir. İzin süresince memurun AYLIK VE ÖZLÜK HAKLARI KORUNUR. Memurun yataklı tedavi kurumunda yatarak gördüğü tedavi süreleri de bu sürenin hesabında dikkate alınır. Azamî süre dolduğunda memurun işe başlayabilmesi için İYİLEŞTİĞİNE DAİR RAPOR ibrazı zorunludur. Süre sonunda hastalığın devam ettiği resmî sağlık kurulu raporuyla tespit edilirse izin aynı süreler kadar UZATILIR; bu sürenin sonunda da iyileşemeyen memur hakkında emeklilik hükümleri uygulanır. Sağlık şartlarını sonradan yeniden kazandığı tespit edilen ve emeklilik hakkını elde etmemiş olanlar, istemeleri hâlinde niteliklerine uygun kadrolara ÖNCELİKLE atanır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Görevi nedeniyle meslek hastalığına yakalanan memura verilecek izin süresi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "12 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "18 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "24 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "İyileşinceye kadar izinli sayılır.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "657 m.105, hastalık izninde SÜREYE BAĞLI OLMAYAN özel bir hâl öngörür: görevi sırasında veya görevinden dolayı bir KAZAYA veya SALDIRIYA uğrayan yahut bir MESLEK HASTALIĞINA tutulan memur, iyileşinceye kadar izinli sayılır. Burada on sekiz ay ya da on iki aylık azamî süreler uygulanmaz; iznin sınırı iyileşmedir. Ayrım, zararın hizmetle olan bağına dayanır: hastalık ya da yaralanma memurun görevinden kaynaklandığında külfetin memura yüklenmesi hakkaniyete aykırı görülmüştür. Bu süre boyunca da aylık ve özlük hakları korunur. Genel hastalık hâlleri bakımından ise kademeli rejim işler: kanser, verem ve akıl hastalığı gibi uzun süreli tedavi gerektiren hastalıklarda on sekiz aya kadar, diğer hastalıklarda on iki aya kadar izin verilir ve süre sonunda iyileşemeyen memur hakkında emeklilik hükümleri uygulanır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "I. Anayasa Mahkemesi üyeleri\nII. Sayıştay savcı ve yardımcıları\nIII. Sözleşmeli personel\nIV. Sözleşmeli erbaş ve erler\nV. Memur\nYukarıda yer alan kamu personellerinden hangileri özel kanun hükümlerine tabidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I, II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "III ve V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "I, II ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "I, II, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "657 m.1, Kanunun KİMLERE UYGULANMAYACAĞINI da belirleyerek kapsamı çizer. Maddeye göre Anayasa Mahkemesi üye ve yedek üyeleri ile raportörleri, hâkimlik ve savcılık mesleklerinde bulunanlar, Danıştay ve Sayıştay meslek mensupları ile SAYIŞTAY SAVCI VE YARDIMCILARI, üniversite öğretim üye ve yardımcıları gibi kişiler ÖZEL KANUNLARI hükümlerine tâbidir. Sözleşmeli erbaş ve erler de 657'nin kapsamı dışındadır; statüleri kendi özel kanunlarında düzenlenmiştir. Buna karşılık SÖZLEŞMELİ PERSONEL özel bir kanuna değil, maddenin ikinci cümlesi uyarınca BU KANUNDA BELİRTİLEN ÖZEL HÜKÜMLERE tâbidir — yani 657'nin içindedir (m.4/B). Memur ise Kanunun asıl muhatabıdır. Ayrım şudur: bir personel türünün 657'de ÖZEL HÜKÜMLERLE düzenlenmesi ile 657'nin DIŞINDA bırakılıp özel kanuna bırakılması farklı şeylerdir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Kamu hizmetlerinde görev alacak personelin göreve alınmasında, ilerleme yükselmesinde, yer değiştirmesinde, tüm hizmet ve şartlarda ehliyetin esas alınmasını gerektiren ilke aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Liyakat ilkesi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Kariyer ilkesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kanun önünde eşitlik ilkesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Fırsat eşitliği ilkesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Sınıflandırma ilkesi",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "LİYAKAT İLKESİ 657 m.3'te Kanunun temel ilkelerinden biri olarak tanımlanmıştır: Devlet kamu hizmetleri görevlerine girmeyi, sınıflar içinde ilerleme ve yükselmeyi, görevin sona erdirilmesini LİYAKAT SİSTEMİNE dayandırmak ve bu sistemin eşit imkânlarla uygulanmasında Devlet memurlarını güvenliğe sahip kılmaktır. Yani liyakat, kamu görevine girişten ayrılmaya kadar bütün aşamalarda ölçütün KİŞİSEL YETERLİLİK olmasını ve memurun güvence altında bulunmasını ifade eder; kayırmacılığın karşıtıdır. KARİYER ilkesiyle karıştırılmamalıdır: aynı maddede tanımlanan kariyer, Devlet memurlarına yaptıkları hizmetler için lüzumlu bilgilere ve yetişme şartlarına uygun şekilde SINIFLARI İÇİNDE EN YÜKSEK DERECELERE KADAR İLERLEME imkânı sağlamaktır. Liyakat girişte ve her aşamada ölçütü, kariyer ise ilerleme imkânını anlatır. Maddedeki üçüncü ilke ise sınıflandırmadır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi 657 sayılı Devlet Memurları Kanununda öngörülen memur sınıflarından değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eğitim ve öğretim hizmetleri sınıfı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Avukatlık hizmetleri sınıfı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Din hizmetleri sınıfı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Özel güvenlik hizmetleri sınıfı",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Emniyet hizmetleri sınıfı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Memur sınıfları 657 m.36'da TAHDİDÎ olarak sayılmıştır ve listede yer almayan bir sınıf yaratılamaz. Maddedeki sınıflar şunlardır: genel idare hizmetleri, teknik hizmetler, sağlık hizmetleri ve yardımcı sağlık hizmetleri, eğitim ve öğretim hizmetleri, avukatlık hizmetleri, din hizmetleri, emniyet hizmetleri, jandarma hizmetleri, sahil güvenlik hizmetleri, yardımcı hizmetler, mülkî idare amirliği hizmetleri ve millî istihbarat hizmetleri. ÖZEL GÜVENLİK HİZMETLERİ SINIFI bu listede YOKTUR. Özel güvenlik görevlileri 5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanuna tâbidir ve kural olarak memur statüsünde değildir; bu nedenle 657'nin sınıflandırmasında yer almazlar. Listenin son eklemeleri 25/7/2016 tarihli 668 sayılı KHK ile gelen jandarma hizmetleri ve sahil güvenlik hizmetleri sınıflarıdır.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "I. Genel idare hizmetleri sınıfı\nII. Jandarma hizmetleri sınıfı\nIII. Emniyet hizmetleri sınıfı\nIV. Sahil güvenlik hizmetleri sınıfı\nYukarıda yer alana hizmet sınıflarından hangileri 657 sayılı Kanuna 2016 yılında yapılan değişiklik ile eklenmiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız III",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Yalnız IV",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "657 m.36'daki sınıf listesi 25/7/2016 tarihli 668 sayılı KHK ile GENİŞLETİLMİŞTİR: aynı düzenlemeyle listeye hem JANDARMA HİZMETLERİ SINIFI hem de SAHİL GÜVENLİK HİZMETLERİ SINIFI eklenmiş, sonraki bentler buna göre teselsül ettirilmiştir. Madde metnine göre jandarma hizmetleri sınıfı Jandarma Genel Komutanlığı, sahil güvenlik hizmetleri sınıfı ise Sahil Güvenlik Komutanlığı kadrolarında bulunan subay ve astsubayları kapsar. Ekleme, bu iki teşkilatın İçişleri Bakanlığına bağlanmasıyla personelinin statüsünün yeniden düzenlenmesinin sonucudur; hüküm 8/11/2016 tarihli 6755 sayılı Kanunla kanunlaşmıştır. Listenin daha eski sınıfları ise maddenin 1974-1975 tarihli metninden gelir: genel idare, teknik, sağlık, eğitim ve öğretim, avukatlık, din, emniyet, yardımcı hizmetler, mülkî idare amirliği ve millî istihbarat hizmetleri sınıfları.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "I. Uyarma\nII. Kınama\nIII. Aylıktan kesme\nIV. Kademe ilerlemesinin durdurulması\nYukarıdaki disiplin cezalarından hangilerinin aday memurluk süresi içinde alınmış olması ilişik kesme sonucunu doğurur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "III ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yalnız IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Aday memurun disiplin cezası nedeniyle ilişiğinin kesilmesi, 23/1/2026 tarihli 7573 sayılı Kanunla yeniden düzenlenen 657 m.56'da yer alır ve cezalar bakımından İKİ FARKLI EŞİK öngörür. AYLIKTAN KESME ile KADEME İLERLEMESİNİN DURDURULMASI cezaları TEK BAŞINA ilişik kesme sonucunu doğurur. Buna karşılık uyarma ve kınama için kanun sayı şartı arar: ilişik kesme ancak BİRDEN FAZLA uyarma ve/veya kınama cezası alınmışsa mümkündür; tek bir uyarma ya da tek bir kınama bu sonucu doğurmaz. Maddede sayılan üçüncü sebep ise temel ve hazırlayıcı eğitim ile staj devrelerinin herhangi birinde başarısız olmaktır. İlişik kesme, disiplin amirlerinin TEKLİFİ ve atamaya yetkili amirin ONAYI ile gerçekleşir ve ilişiği kesilenler sağlık nedenleri hariç ÜÇ YIL süreyle Devlet memurluğuna alınmaz. Bu kural 7573 sayılı Kanun öncesinde m.57'de düzenleniyordu; madde numarası değişmiş, içerik korunmuştur.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "I. Verdiği zararları giderme\nII. Mal bildirimi\nIII. Müracaat, şikâyet ve dava açma\nIV. Hizmeti şahsen ve kesintisiz olarak görme\nV. Denetimindeki teşebbüsten menfaat sağlama\nYukarıda verilenlerden hangileri memurlar için getirilen yükümlülüklerdendir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I, II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I, II ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "I, II ve V",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "II, III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "III ve V",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Soru, 657'nin ÖDEV, HAK ve YASAK kategorilerini ayırt etmeyi ölçüyor. ÖDEVLER arasında yer alanlar: memurun kasıt, kusur, ihmal veya tedbirsizliği sonucu idareye verdiği ZARARI GİDERME yükümlülüğü (m.12), göreve girişte ve kanunda belirtilen dönemlerde MAL BİLDİRİMİNDE bulunma yükümlülüğü (m.14) ve hizmeti ŞAHSEN VE KESİNTİSİZ olarak görme yükümlülüğü. Buna karşılık MÜRACAAT, ŞİKÂYET VE DAVA AÇMA bir ödev değil HAKTIR: m.21'e göre memurlar kurumlarıyla ilgili resmî ve şahsî işlerinden dolayı müracaat, amirleri veya kurumları tarafından kendilerine uygulanan idarî eylem ve işlemlerden dolayı şikâyet ve dava açma hakkına sahiptir. DENETİMİNDEKİ TEŞEBBÜSTEN MENFAAT SAĞLAMA ise m.29'da düzenlenen bir YASAKTIR. Üç kategorinin karıştırılmaması gerekir: ödev yerine getirilmezse disiplin sorumluluğu doğar, hak kullanılıp kullanılmaması memurun iradesine bağlıdır, yasağa aykırılık ise yaptırıma tâbidir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "8b68257c-bd1e-4a44-bb49-830ee4d8e4c9",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi memurlara getirilen yasaklardan biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İkinci görev alma",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Toplu eylem ve hareketlerde bulunma",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Grev",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Sendika kurma",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Hediye alma",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Memurlara getirilen yasaklar 657'de tek tek sayılmıştır: TOPLU EYLEM VE HAREKETLERDE bulunma yasağı (m.26), GREV yasağı (m.27), HEDİYE ALMA ve menfaat sağlama yasağı (m.29), İKİNCİ GÖREV yasağı (m.87) ile ticaret ve kazanç getirici faaliyet yasağı (m.28). Buna karşılık SENDİKA KURMA bir yasak değil HAKTIR: m.22'ye göre Devlet memurları, Anayasada ve özel kanununda belirtilen hükümler uyarınca sendikalar ve üst kuruluşlar kurabilir ve bunlara üye olabilirler. Ayrım şuradadır: memurun sendika kurma ve üye olma hakkı tanınmış, ancak bu hakkın uzantısı sayılabilecek GREV ve toplu eylem yasaklanmıştır. Yani örgütlenme serbest, eylem yasaktır. Hak ile yasağın bu noktada birbirine çok yakın durması sınavlarda sıkça tuzak olarak kullanılır.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  }
+]

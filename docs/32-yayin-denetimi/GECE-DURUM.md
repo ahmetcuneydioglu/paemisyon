@@ -551,8 +551,35 @@ JavaScript `toLowerCase()` "İdare" -> "i̇dare" (birlesik noktali i) uretir ve
 `/idare hukuku/i` ile ESLESMEZ. Ilk banka dokumunde Idare Hukuku'nun 262 sorusu
 bu yuzden dusmustu. **Konu suzerken desen degil, TOPIC ID listesi kullan.**
 
+### PARTI i02 KAPANDI — MEMURLAR TEST-III/IV (3 Eyl 2026)
+s-099..s-102 (kitap s.197-204) okundu: **30 soru -> 19 bankaya girdi.**
+Denetim 19/19 yayimlanabilir, kusurlu 0. Run: wf_a80d983f-98f.
+657 yayinda 111 -> **130**; soru bagli madde 52 -> **56**. Banka 5.623.
+
+11 eleme:
+- **4'u DAYANAGI BANKADA OLMAYAN KANUN:** 2531 s.K. (ayrilanlarin yapamayacaklari
+  isler) ve 4688 s.K. (Kamu Gorevlileri Sendikalari). Ikisi de bankada YOK.
+- 3'u alt ajan: 3 sayili CBK (ust kademe yoneticileri) + 1 doktrin tasnifi.
+- 1 birebir mukerrer (taksirli suc sorusu, yalniz suc degismis -> 035d2bd5).
+- 1 AYNA soru: m.62'nin diger yarisi (ayni yer / baska yer) — 4a255001 az once
+  ayni kitaptan yayinlanmisti.
+- **1'i IKI YANLIS SIKLIYDI (alt ajan kacirdi):** analik izni sorusunda hem C
+  ("dogumdan once BES hafta" — kanun IKI hafta) hem A ("8+8=16 hafta" — kanun
+  m.104/A'ya gore 8+16=24 hafta) yanlis. Kitabin kendi sik metninde hata var.
+
+**KURTARILAN SORU:** kitap "aday memurlukta hangi disiplin cezalari ilisik kesme
+dogurur" sorusunu m.57'ye dayandiriyor, o madde MULGA. Kural yeni m.56'da duruyor
+ve aciklamaya kanunun ince ayrimi eklendi: aylıktan kesme ile kademe ilerlemesinin
+durdurulmasi TEK BASINA yeterli, uyarma/kinama ise ancak BIRDEN FAZLA olursa.
+
+#### BU KITAPTA DAYANAGI BANKADA OLMAYAN KANUNLAR (buyuyen liste)
+3 sayili CBK · 2531 · 4688 · 2942 Kamulastirma · 2886/4734 Ihale · 2547 YOK
+Bunlara dayanan soru ALINMAZ. Ihtiyac olursa `mevzuat-import.ts` ile cekilir
+(once topic + legislation kaydi ELLE kurulmali, betik findUnique yapiyor).
+
 ### SIRADAKI ADIM
-Memurlar blogunun kalani: **s-099..s-113** (TEST-III..IX).
+Memurlar blogunun kalani: **s-103..s-113** (TEST-V..IX; disiplin, gorevden
+uzaklastirma, memurlugun sona ermesi bekleniyor — 657'nin en yogun bolumu).
 Sonra Mahalli idareler (s-031..s-047), sonra Merkezden yonetim (s-018..s-030).
 Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
 Kitap bitince -> Idari Yargilama Hukuku kitabi (Danistay + IYUK; IYUK'ta 50 bos madde).
