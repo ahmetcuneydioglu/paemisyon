@@ -1205,3 +1205,25 @@ bolumler bankada ZATEN DOLU maddeleri olcuyor; sirayla okumak bosa emek.
 
 **OKUMA SIRASI (verim sirasina gore):** s-63..s-66 -> s-67..s-69 ->
 s-76..s-78 -> s-50..s-53 -> s-40..s-43.
+
+### y03 — 16 YAYINDA, 1 ARSIVLENDI (gecenin ILK kusurlu sorusu)
+2577: 15 · Anayasa: 1 (CBK/genelge/karar ayrimi) · 2576: 1 (askeri okul, genel gorevli
+idare mahkemesi). Maddeler: m.15, 16, 29, 31, 38 x2, 41, 44, 56, 57 x3, 61 x2.
+s-63..s-66'dan 22 okundu, 17 alindi (%77); 5 alt ajan elemesi (3 HMK, 2 doktrin),
+2 elle eleme (ikiz + yigilma); bekleyen 2 soru bu partiye katildi.
+
+**HARITA HATASI ve DUZELTMESI.** Ilk turda 2 soru "belirsiz" dondu. Sebep soru
+kusuru DEGIL, benim dayanak hatamdi: baglanti iddiasinin REDDINE karsi itiraz
+yolu m.39/40'ta degil **m.41'de**. Kume dosyasinda m.41 olmadigi icin denetciler
+"gercek dayanak kumede yok" dedi. m.41 eklenip IKINCI TUR calistirildi:
+- `eda9f7ad` KURTARILDI -> yayimlanabilir (m.41: baglanti reddine karsi teblig
+  tarihini izleyen 15 gun icinde BIM'e veya Danistaya basvuru).
+- `83f79d63` ikinci turda da belirsiz -> **ARSIVLENDI.** Gerekce gercek bir kusur:
+  (E) sikki m.38/1'in "ayni maddi VEYA hukuki sebepten dogan YA DA biri hakkinda
+  verilecek hukum digerini etkileyecek nitelikte olan" seklindeki SECIMLIK
+  tanimini "gereklidir" diyerek KUMULATIF hale getiriyor; isaretli (D) disinda
+  (E) de savunulabilir yanlis sik oluyor.
+
+**DERS:** hedefli kume ureticisinin kendi basligindaki uyari dogrulandi —
+denetci "gercek dayanak m.X, kumede yok" dediginde ikinci tur ucuz ve etkili.
+Bu gece ilk kez kullanildi ve 2 sorudan 1'ini kurtardi.

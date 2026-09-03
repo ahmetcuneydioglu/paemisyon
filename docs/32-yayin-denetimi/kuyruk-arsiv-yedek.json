@@ -1,40 +1,40 @@
 [
  {
-  "id": "4380249d-edc6-4884-8a0c-35d14ff6df6e",
-  "questionId": "dafc0e5a-8bdf-4bbf-98a8-9ffcda57480f",
-  "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre aşağıdaki suçlardan hangisinin işlendiği hususunda kuvvetli şüphe nedenlerinin varlığı durumunda tutuklama nedeni var sayılamaz?",
-  "explanation": "Tutuklama nedeninin VAR SAYILABİLECEĞİ katalog CMK m.100/3'tedir ve son yıllarda üç bentle genişletilmiştir. Kasten yaralama bakımından (a) bendinin 4 numaralı alt bendi TCK m.86/3'ün b, e ve f bentlerine — savunamayacak durumdaki kişiye karşı, SİLAHLA ve canavarca hisle işlenen hâllere — atıf yapar. Ayrıca 12/5/2022 tarihli 7406 sayılı Kanunla (i) KADINA KARŞI işlenen kasten yaralama ile (j) sağlık personeline karşı görevleri sırasında veya görevleri dolayısıyla işlenen kasten yaralama, 10/10/2024 tarihli 7528 sayılı Kanunla ise (k) öğretmenlere karşı işlenen kasten yaralama AYRI BENTLER olarak kataloğa alınmıştır. Çocukların cinsel istismarı ile uyuşturucu veya uyarıcı madde imal ve ticareti de katalogdadır. Buna karşılık KAMU GÖREVLİSİNE GÖREVİNDEN DOLAYI HAKARET katalogda yer almaz; kataloğa alınan bentlerin konusu kasten yaralamadır, aynı kişilere karşı işlenen hakaret veya tehdit değil. Katalog dışı suçlarda tutuklama nedeni somut olgularla ayrıca gösterilmelidir.",
-  "sourceLabel": "THEMIS 2025 CEZA MUHAKEMESİ HUKUKU SORU KİTABI",
+  "id": "83f79d63-e8a2-462c-a20f-dc4b822cc6b2",
+  "questionId": "c285991a-435b-45d2-94f6-b34b1578fa8c",
+  "stem": "2577 sayılı İdari Yargılama Usulü Kanunu'na göre bağlantılı davalarla (davaların birleştirilmesi) ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+  "explanation": "Bağlantı incelemesinin sonuçları 2577 sayılı Kanun m.39 ve m.40'ta düzenlenmiştir. DANIŞTAY bağlantının bulunduğuna karar verirse: davalardan biri Danıştayda açılmış ve çözümü Danıştayın görevine dâhil bir uyuşmazlıkla ilgiliyse DAVALARIN TÜMÜ DANIŞTAYDA görülür; davalar ayrı bölge idare mahkemesi yargı çevrelerindeki mahkemelerin görevine giriyorsa Danıştayın ilgili dairesi YETKİLİ MAHKEMEYİ KARARINDA BELİRTİR ve dosyaları o mahkemeye gönderir. BÖLGE İDARE MAHKEMESİ de bağlantılı dosyaları ÖNCELİKLE VE İVEDİLİKLE inceler; bağlantı varsa yetkili mahkeme kararda belirtilerek dosyalar oraya gönderilir ve durum diğer mahkemeye duyurulur. Her iki mercide de BAĞLANTI BULUNMADIĞI yolunda karar verilirse DOSYALAR İLGİLİ MAHKEMELERE GERİ GÖNDERİLİR ve davalara kaldıkları yerden devam olunur; bağlantı incelemesi davayı sona erdiren bir karar değildir.",
+  "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)",
   "options": [
    {
     "label": "A",
-    "text": "Kamu görevlisine görevinden dolayı hakaret",
-    "isCorrect": true
+    "text": "Davalardan birisi Danıştay'da ise bağlantı ile ilgili kararı Danıştay verir.",
+    "isCorrect": false
    },
    {
     "label": "B",
-    "text": "Çocukların cinsel istismarı",
+    "text": "Aynı bölge idare mahkemesinin yargı çevresindeki mahkemelerde bulunan dosyalarla ilgili bağlantı kararı bölge idare mahkemesi tarafından verilir.",
     "isCorrect": false
    },
    {
     "label": "C",
-    "text": "Silahla işlenmiş kasten yaralama",
+    "text": "Danıştay ve bölge idare mahkemelerinin bağlantı hakkında verdiği kararlar kesindir.",
     "isCorrect": false
    },
    {
     "label": "D",
-    "text": "Uyuşturucu veya uyarıcı madde imal ve ticareti",
-    "isCorrect": false
+    "text": "Bağlantı kararı verilirse bütün usuli işlemler durur ancak bağlantı kararından sonra yetkili mahkeme davaya en başından bakmaya başlar.",
+    "isCorrect": true
    },
    {
     "label": "E",
-    "text": "Kadına karşı işlenen kasten yaralama suçu",
+    "text": "Bağlantı kararı verilebilmesi için davaların aynı maddi veya hukuki sebepten doğması gereklidir.",
     "isCorrect": false
    }
   ],
   "question": {
    "topic": {
-    "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    "name": "2577 İdari Yargılama Usulü Kanunu (İYUK)"
    }
   }
  }
