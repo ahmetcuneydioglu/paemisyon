@@ -1,0 +1,142 @@
+[
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": null,
+    "stem": "İdari yargıda kanun yararına temyiz ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Temyiz incelemesinden geçmeden kesinleşen idare mahkemesi kararları kanun yararına temyiz edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Temyiz incelemesinden geçmeden kesinleşen vergi mahkemesi kararları kanun yararına temyiz edilebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kanun yararına temyiz başvurusu yapmaya, ilgili bakanlıkların göstereceği lüzum üzerine veya kendiliğinden Danıştay Başsavcısı yetkilidir.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Kanun yararına temyiz istemi yerinde görülüp karar bozulduğunda, bozma kararı daha önce kesinleşmiş kararın hukuki sonuçlarını ortadan kaldırır.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Kanun yararına bozma kararı Resmi Gazetede yayımlanır.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Kanun yararına temyiz 2577 sayılı Kanun m.51'de düzenlenmiş OLAĞANÜSTÜ bir kanun yoludur. İdare ve vergi mahkemeleri ile bölge idare mahkemelerinin KESİN OLARAK verdiği kararlar ile İSTİNAF VEYA TEMYİZ İNCELEMESİNDEN GEÇMEDEN KESİNLEŞMİŞ bulunan kararlardan niteliği bakımından YÜRÜRLÜKTEKİ HUKUKA AYKIRI bir sonucu ifade edenler; İLGİLİ BAKANLIKLARIN GÖSTERECEĞİ LÜZUM ÜZERİNE VEYA KENDİLİĞİNDEN BAŞSAVCI tarafından kanun yararına temyiz olunabilir. Bu yolun ayırt edici özelliği sonucundadır: temyiz isteği yerinde görülürse karar KANUN YARARINA BOZULUR, ancak BU BOZMA KARARI DAHA ÖNCE KESİNLEŞMİŞ OLAN MERCİ KARARININ HUKUKİ SONUÇLARINI KALDIRMAZ. Yani taraflar arasındaki kesin hüküm ayakta kalır; amaç yalnızca hukukun doğru uygulanmasını sağlamak ve içtihat birliğine katkıdır. Bozma kararının bir örneği ilgili bakanlığa gönderilir ve RESMÎ GAZETE'DE YAYIMLANIR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": null,
+    "stem": "Ankara İdare Mahkemesi tarafından verilen ve daha sonra Danıştay tarafından onanarak kesinleşen bir kararın yargılamasının yenilenmesi aşağıdakilerden hangisi tarafından yapılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ankara İdare Mahkemesi",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "En yakın idare mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Ankara Bölge İdare Mahkemesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Danıştay ilgili dava dairesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Bu kararın yenilenmesi istenemez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesinde görevli mahkeme 2577 sayılı Kanun m.53'ün ikinci fıkrasında tek cümleyle belirlenmiştir: YARGILAMANIN YENİLENMESİ İSTEKLERİ ESAS KARARI VERMİŞ OLAN MAHKEMECE KARARA BAĞLANIR. Bu kural, kararın daha sonra kanun yolu incelemesinden geçmiş ve onanarak kesinleşmiş olmasından etkilenmez; onama kararı esas hükmü Danıştay'ın kararı hâline getirmez, yalnızca hukuka uygunluğunu denetler. Bu nedenle bir idare mahkemesi kararı Danıştay'ca onanarak kesinleşmiş olsa bile, yargılamanın yenilenmesi istemini yine ESAS KARARI VEREN İDARE MAHKEMESİ inceler; Danıştay ilgili dava dairesi, bölge idare mahkemesi veya en yakın idare mahkemesi görevli değildir. Yargılamanın yenilenmesi olağanüstü bir kanun yoludur ve kesinleşmiş kararlara karşı, m.53/1'de sınırlı sayıda sayılan sebeplerin varlığı hâlinde başvurulabilir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": null,
+    "stem": "2577 sayılı Kanun'a göre, aşağıdakilerden hangisi yargılamanın yenilenmesi sebeplerinden biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bilirkişinin kasıtla gerçeğe aykırı beyanda bulunduğunun mahkeme kararıyla belirlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Görev ve yetki dışında bir işe bakılmış olduğunun hükmün kesinleşmesinden sonra anlaşılması",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Vekil veya kanuni temsilci olmayan kimseler ile davanın karara bağlanmış olması",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Lehine karar verilen tarafın eyleminden doğan bir sebeple elde edilemeyen bir belgenin kararın verilmesinden sonra ele geçirilmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Çekilmeye mecbur olan bir başkan veya hâkimin katılmasıyla karar verilmiş olması",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesi sebepleri 2577 sayılı Kanun m.53'ün birinci fıkrasında SINIRLI SAYIDA sayılmıştır: zorlayıcı sebeple veya lehine karar verilen tarafın eyleminden doğan bir sebeple ELDE EDİLEMEYEN BİR BELGENİN sonradan ele geçirilmesi (a); karara esas alınan BELGENİN SAHTELİĞİNE hükmedilmiş olması (b); karara esas alınan İLAM HÜKMÜNÜN ortadan kalkması (c); BİLİRKİŞİNİN KASITLA GERÇEĞE AYKIRI BEYANDA bulunduğunun mahkeme kararıyla belirlenmesi (d); lehine karar verilen tarafın HİLE kullanmış olması (e); VEKİL VEYA KANUNİ TEMSİLCİ OLMAYAN kimselerle davanın karara bağlanması (f); ÇEKİNMEYE MECBUR olan başkan, üye veya hâkimin katılmasıyla karar verilmesi (g); kesin hükme AYKIRI YENİ BİR KARAR verilmesi (h); hükmün İNSAN HAKLARI AVRUPA SÖZLEŞMESİNİN İHLALİ suretiyle verildiğinin AİHM kararıyla tespiti (ı). GÖREV VE YETKİ DIŞINDA BİR İŞE BAKILMIŞ OLMASI bu katalogda YER ALMAZ; görev ve yetki aykırılığı ilk inceleme ve kanun yolu aşamasında ileri sürülebilecek bir hukuka aykırılıktır, kesinleşmiş kararı yeniden açan bir sebep değildir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  },
+  {
+    "topicId": "e22d1f78-8191-4099-9134-044c59114bd7",
+    "articleNo": null,
+    "stem": "İdari Yargılama Usulü Kanununda 2003 yılında yapılan değişiklikle, mahkeme hükmünün insan Haklarını ve Ana Hürriyetleri Korumaya Dair Sözleşmenin ihlali suretiyle verildiği Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararıyla tespit edilmiş olması durumu yargılamanın yenilenmesi sebeplerinden birisi olarak kabul edilmiştir.\n\nBu durumda, hangi süre içinde yargılamanın yenilenmesi isteminde bulunulması gerekir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "60 gün",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "6 ay",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "1 yıl",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "2 yıl",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "10 yıl",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Yargılamanın yenilenmesi süreleri 2577 sayılı Kanun m.53'ün üçüncü fıkrasında ÜÇE AYRILMIŞTIR: kesin hükme aykırı yeni bir karar verilmesi hâlinde (h bendi) ON YIL; hükmün Avrupa İnsan Hakları Sözleşmesinin ihlali suretiyle verildiğinin AİHM kararıyla tespit edilmiş olması hâlinde (ı bendi) AVRUPA İNSAN HAKLARI MAHKEMESİ KARARININ KESİNLEŞTİĞİ TARİHTEN İTİBAREN BİR YIL; DİĞER SEBEPLER için ALTMIŞ GÜN. Bu süreler, dayanılan sebebin istemde bulunan yönünden gerçekleştiği tarihi izleyen günden başlatılarak hesaplanır. AİHM sebebi, 15/7/2003 tarihli 4928 sayılı Kanun'la (ı) bendi olarak eklenmiş, 25/7/2018 tarihli 7145 sayılı Kanun'la ise AİHM'e yapılan başvuru hakkında DOSTANE ÇÖZÜM ya da TEK TARAFLI DEKLARASYON sonucunda düşme kararı verilmesi hâli de kapsama alınmıştır. Bir yıllık sürenin başlangıcı AİHM kararının verilmesi değil KESİNLEŞMESİDİR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARİ YARGILAMA HUKUKU SORU KİTABI (Ü. KAYMAK)"
+  }
+]

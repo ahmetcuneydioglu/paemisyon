@@ -1246,3 +1246,18 @@ ayni partideki kardesiyle ortustugu icin dusuruldu.
 "Idari Yargida Kanun Yollari" s-70'te basliyor — bankada bos olan m.46, 47, 48,
 49 (temyiz, karar duzeltme, bozma sonrasi) orada.
 **SIRADAKI: s-76..s-78** (haritada "yuksek" isaretli, m.46/49) sonra s-70..s-75.
+
+### y05 YAYINDA — 4/4 yayimlanabilir (Onuncu Bolum: kanun yollari)
+2577 m.51 (kanun yararina temyiz; bozma kesinlesmis kararin hukuki sonuclarini
+KALDIRMAZ) · m.53 x3 (yenilemede gorevli merci = ESAS KARARI VEREN mahkeme;
+sebep katalogu — gorev/yetki disinda ise bakilmasi sebep DEGIL; AIHM icin
+1 yil, (h) bendi icin 10 yil, digerleri 60 gun).
+s-76..s-78'den 16 okundu, 4 alindi (%25).
+
+**BU BOLUMDE ELEME SEBEPLERI YAPISAL:**
+- **3 soru PARASAL SINIR** (temyiz sinirinda 920.000 / 1.250.000 TL). Bu tutarlar
+  her yil yeniden degerleme oraniyla degisiyor; bankaya ALINMAZ kurali dogru
+  calisti.
+- **4 soru BANKA DISI KANUN**: 6216 (AYM) ve 6085 (Sayistay). Kitap kanun yollari
+  bolumunde Sayistay kanun yollarini da isliyor; 6085 bankada yok.
+- **6 soru DOYGUN MADDE** (m.50, m.51, m.53 tekrarlari).
