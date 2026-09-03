@@ -387,14 +387,60 @@ KARARIN DAYANAGI — tahmin degil, olcum:
 - **Konu anlatimi ACIKLAMA icin kullanilabilir** (kullanici karari, 3 Eyl):
   `~/Downloads/Themis Konu - Idare Hukuku.pdf` (148 sayfa). SORU URETILMEZ.
 
+### KESIF TAMAM (3 Eyl 2026) — asagidaki sabitler olculdu
+
+**TOPIC:** `b396a7c3-6f30-490e-9401-4be88e87a91b` = "İdare Hukuku" — **262 soru var.**
+Gorseller hazir: `<scratchpad>/idare-png/s-001..s-118.png` (118 sayfa).
+
+**Bankadaki ilgili konularin soru sayilari:**
+  Idare Hukuku 262 · 4982 Bilgi Edinme 106 · 657 DMK 99 · 2577 IYUK 58
+  5442 Il Idaresi 32 · 4483 Memurlarin Yargilanmasi 30 · 5393 Belediye 19
+  5302 Il Ozel Idaresi 12 · 2576 BIM 5 · 3071 Dilekce 5+2
+
+**Bankadaki ilgili MEVZUAT (madde sayisi):**
+  657 DMK 337 · 5393 Belediye 101 · 2577 IYUK 82 · 5442 Il Idaresi 77
+  5302 Il Ozel Idaresi 78 · 2576 BIM 48 · 4982 Bilgi Edinme 33
+  4483 Memurlarin Yargilanmasi 25 · 3071 Dilekce 12
+  **2575 DANISTAY KANUNU -> 3 Eyl 2026'da EKLENDI: 138 madde, 10 bolum, yayinda.**
+  slug `2575-danistay-kanunu`, topic `be738fb3-fc30-4d1e-9306-c1cb2eb7d0c3`.
+  Kaynak: `~/Downloads/1.5.2575.pdf` (mevzuat.gov.tr konsolide metin).
+  Kullanicinin istedigi ~20 temel Danistay sorusu artik DOGRULANABILIR:
+  m.5 karar organlari · m.8 uye nitelikleri · m.13 on daire (dokuzu dava, biri idari)
+  m.17 dava daireleri kurullari · m.52 Baskanlar Kurulu gorevleri.
+
+**HALA EKSIK mevzuat:** 3194 Imar, 2942 Kamulastirma, 2886 Devlet Ihale,
+4734 Kamu Ihale. Bu konularda soru cikarsa once kanunu cekmek gerekir
+(`mevzuat-import.ts --slug <yeni> --file <pdf>`; legislation kaydi ONCE kurulmali,
+betik findUnique yapiyor, kendisi olusturmuyor).
+
+### !!! YAPISAL SORUN — KARAR GEREKIYOR (kullanici uyaninca)
+
+Idare hukuku, CMK'dan farkli olarak **buyuk olcude KANUNA DAYANMAZ.** Idari islemin
+unsurlari (yetki-sekil-sebep-konu-amac), idari islemin geri alinmasi, kamu hizmeti
+olcutleri, hizmet kusuru / kusursuz sorumluluk, idari sozlesme turleri — bunlarin
+hicbiri bir kanun maddesinde yazmaz; doktrin ve Danistay ictihadidir.
+
+Denetim hatti "dayanak kanun metninde mi" diye bakiyor. Bu haliyle genel idare
+hukuku sorularinin cogu **belirsiz** donerdi ve yayina alinamazdi.
+
+**BU GECE UYGULANAN GUVENLI VARSAYILAN:** once KANUNLA DOGRULANABILIR bloklara
+gidilecek — IYUK usulu (2577), Danistay/BIM teskilat (2575, 2576), memur hukuku
+(657), belediye/il idaresi (5393, 5302, 5442), bilgi edinme (4982), dilekce (3071),
+memurlarin yargilanmasi (4483). Bu bloklarda hat oldugu gibi calisir.
+
+**Genel idare hukuku teorisi bloklari BEKLETILIYOR.** Kullanici konu anlatimini
+aciklama kaynagi olarak yetkilendirdi (`~/Downloads/Themis Konu - Idare Hukuku.pdf`,
+148 sayfa) ama denetimin bu sorulari NEYE KARSI dogrulayacagi kullanici karari:
+  (a) bu bloklari hic almamak,
+  (b) denetimi konu anlatimina karsi calistirmak (hatta degisiklik gerekir).
+Kullanici uyaninca sorulacak.
+
 ### ILK ISLER (siradaki tur)
-1. Gorseller hazir mi bak (`ls <scratchpad>/idare-png | wc -l` -> 118 olmali).
-2. **Konu topic id'sini bul** — CMK'nin TOPIC sabiti artik gecerli degil.
-3. **Bankada idare hukuku mevzuati var mi?** IYUK'un bankada oldugu kullanici
-   tarafindan soylendi; 2577 s. IYUK, 2575 s. Danistay K., 657, 5393, 5302, 3194
-   gibi kanunlarin durumu OLCULMELI. Dayanagi bankada olmayan soru alinamaz.
-4. **Bankadaki mevcut idare hukuku sorularini MADDEYE GORE dok** (yukaridaki ders).
-5. Bolum haritasi cikar (birkac sayfa ornekle), sonra bos bloklara git.
+1. Bolum haritasi cikar: s-003, s-020, s-040, s-060, s-080, s-100, s-115 ornekle
+   ve hangi kismin nerede oldugunu yaz. Kanunla dogrulanabilir bloklari isaretle.
+2. **Bankadaki 262 Idare Hukuku sorusunu MADDEYE GORE dok** — CMK'da ogrenilen ders:
+   tarayiciya tek basina guvenme, once maddeye gore yogunlugu ol.
+3. Danistay blogunu bul ve ~20 temel soru hedefiyle oku.
 
 ### DANISTAY SINIRI (kullanici karari, 3 Eyl 2026)
 Yalnizca TEMEL duzey, **hedef ~20 soru**. Ornek: Danistay uyeleri kim tarafindan
