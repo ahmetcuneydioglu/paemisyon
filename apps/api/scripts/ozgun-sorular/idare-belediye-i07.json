@@ -1,0 +1,597 @@
+[
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "I. Belediye meclisi, üye tam sayısının 1/3 çoğunluğuyla toplanır ve katılanların salt çoğunluğuyla karar verir. II. Karar yeter sayısı, üye tam sayısının üçte birinden az olamaz. III. Meclisin toplanmasında, üye tam sayısının salt çoğunluğu sağlanamadığı takdirde başkan, gün ve saatini tespit ederek en geç üç gün içinde toplanmak üzere meclisi tatil eder. IV. Gizli oylamalarda eşitlik çıkması durumunda oylama tekrarlanır. V. Oylama gizli, işaretle veya ad okunarak yapılır. Belediye meclis toplantılarına ilişkin yukarıda yer alan ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "III ve IV",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "IV ve V",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye meclisinin toplantı ve karar yeter sayısı 5393 sayılı Kanun m.22'de düzenlenmiştir. Meclis, ÜYE TAM SAYISININ SALT ÇOĞUNLUĞUYLA toplanır ve KATILANLARIN SALT ÇOĞUNLUĞUYLA karar verir; dolayısıyla toplantı yeter sayısını üçte bir olarak gösteren I numaralı ifade yanlıştır. Aynı fıkraya göre karar yeter sayısı, üye tam sayısının DÖRTTE BİRİNDEN az olamaz; bu eşiği üçte bir olarak veren II numaralı ifade de yanlıştır. Buna karşılık III, IV ve V numaralı ifadeler metne uygundur: toplanmada salt çoğunluk sağlanamazsa başkan, gün ve saatini tespit ederek en geç ÜÇ GÜN içinde toplanmak üzere meclisi tatil eder; gizli oylamada eşitlik çıkarsa oylama tekrarlanır (bozulmazsa başkan kur'a çeker); oylama gizli, işaretle veya ad okunarak yapılır. Karıştırılmaması gereken iki oran şudur: toplantı için SALT ÇOĞUNLUK, karar için ise asgari DÖRTTE BİR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye meclisi kararlarının kesinleşmesi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye başkanı, hukuka aykırı gördüğü meclis kararlarını, gerekçesini de belirterek yeniden görüşülmek üzere 5 gün içinde meclise iade edebilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yeniden görüşülmesi istenip de belediye meclisi üye tam sayısının salt çoğunluğuyla ısrar edilen kararlar kesinleşir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Kararlar kesinleştiği tarihten itibaren en geç 15 gün içinde mahallin en büyük mülki idare amirine gönderilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Kesinleşen meclis kararlarının özetleri 7 gün içinde uygun araçlarla halka duyurulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Mülki idare amirine gönderilmeyen kararlar yürürlüğe girmez.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye meclisi kararlarının kesinleşmesi 5393 sayılı Kanun m.23'te birbirini izleyen sürelerle kurulmuştur. Belediye başkanı, hukuka aykırı gördüğü meclis kararlarını gerekçesini de belirterek yeniden görüşülmek üzere BEŞ GÜN içinde meclise iade edebilir. Yeniden görüşülmesi istenmeyen kararlar ile yeniden görüşülüp de meclis üye tam sayısının SALT ÇOĞUNLUĞUYLA ısrar edilen kararlar kesinleşir. Kararlar kesinleştiği tarihten itibaren EN GEÇ YEDİ GÜN içinde mahallin en büyük mülkî idare amirine gönderilir; on beş gün değil. Mülkî idare amirine gönderilmeyen kararlar YÜRÜRLÜĞE GİRMEZ. Kesinleşen meclis kararlarının özetleri ise yedi gün içinde uygun araçlarla halka duyurulur. Maddedeki üç süre birbirine karışmamalıdır: beş gün iade, yedi gün mülkî amire gönderme, yedi gün halka duyurma.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye başkanı, meclisin ısrarı ile kesinleşen kararlar aleyhine kaç gün içinde idari yargıya başvurabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "15",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "60",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye başkanının meclis kararlarına karşı yargı yolu 5393 sayılı Kanun m.23'te düzenlenmiştir. Başkan, hukuka aykırı gördüğü kararı önce beş gün içinde meclise iade eder; meclis üye tam sayısının salt çoğunluğuyla ISRAR EDERSE karar KESİNLEŞİR. Bu durumda belediye başkanı, meclisin ısrarı ile kesinleşen kararlar aleyhine ON GÜN İÇİNDE idarî yargıya başvurabilir. Bu on günlük süre, 2577 sayılı Kanun'daki genel altmış günlük dava açma süresinden ayrılan ÖZEL bir süredir ve mahallî idarelerde idarî vesayetin yargı önünde kullanılan biçimini oluşturur. Aynı yapı il özel idaresinde de vardır: 5302 sayılı Kanun m.27 uyarınca vali, ısrar üzerine kesinleşen encümen kararı için yürütmeyi durdurma talebiyle on gün içinde başvurur. Kurgu aynıdır; iade, ısrar, kesinleşme ve on günlük yargı başvurusu.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye meclisinde ihtisas komisyonları en az kaç kişiden oluşur?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "7",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "9",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "10",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "İhtisas komisyonlarının oluşumu 5393 sayılı Kanun m.24'te belirlenmiştir: belediye meclisi, üyeleri arasından EN AZ ÜÇ, EN FAZLA BEŞ kişiden oluşan ihtisas komisyonları kurabilir. Komisyonların bir yılı geçmemek üzere ne kadar süre için kurulacağı aynı meclis kararında belirtilir. Komisyonlar, her siyasî parti grubunun ve bağımsız üyelerin meclisteki üye sayısının meclis üye tam sayısına oranlanması suretiyle oluşturulur; böylece meclisteki siyasî denge komisyonlara yansıtılır. Aynı maddeye göre il ve ilçe belediyeleri ile nüfusu 10.000'in üzerindeki belediyelerde PLÂN VE BÜTÇE ile İMAR komisyonlarının kurulması ZORUNLUDUR. Sayı sınırının il özel idaresindeki karşılığı 5302 m.16'dır ve orada da alt sınır üçtür; ancak Plân ve Bütçe ile İmar ve Bayındırlık komisyonları en çok yedi kişiden oluşabilir.",
+    "difficulty": "easy",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye meclisinde ne kadar üyenin talebiyle meclis görüşmesi açılması istenebilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meclis üyelerinin üçte biri",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Meclis üyelerinin dörtte biri",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Toplantıya katılanların salt çoğunluğu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meclis üye tam sayısının salt çoğunluğu",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Meclis üyelerinin yarısı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Genel görüşme, belediye meclisinin bilgi edinme ve denetim yollarından biridir. 5393 sayılı Kanun m.26'ya göre meclis, bilgi edinme ve denetim yetkisini FAALİYET RAPORUNU DEĞERLENDİRME, DENETİM KOMİSYONU, SORU, GENEL GÖRÜŞME ve GENSORU yoluyla kullanır. Genel görüşmenin usulü aynı maddede gösterilmiştir: MECLİS ÜYELERİNİN EN AZ ÜÇTE BİRİ, meclis başkanlığına istekte bulunarak belediyenin işleriyle ilgili bir konuda genel görüşme açılmasını isteyebilir; bu istek MECLİS TARAFINDAN KABUL EDİLDİĞİ TAKDİRDE gündeme alınır. Yani üçte birlik oran görüşmeyi kendiliğinden başlatmaz, yalnızca istekte bulunma yetkisi verir. Aynı üçte birlik oran gensoru önergesi verilmesi için de aranır; ancak gensorunun gündeme alınması meclis üye tam sayısının SALT ÇOĞUNLUĞUNUN oyunu gerektirir.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye meclisi tarafından belediye başkanı hakkında yetersizlik kararı alınabilmesi için aranan meclis çoğunluğu aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meclis üye tamsayısının salt çoğunluğu",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Meclis üye tam sayısının üçte iki çoğunluğu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Meclis üye tam sayısının beşte üç çoğunluğu",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meclis üye tam sayısının dörtte üç çoğunluğu",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Meclis üye tam sayısının beşte dört çoğunluğu",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Faaliyet raporunun yetersiz görülmesi, belediye başkanının başkanlıktan düşmesine giden sürecin ilk halkasıdır ve 5393 sayılı Kanun m.26'da düzenlenmiştir. Belediye başkanınca meclise sunulan bir önceki yıla ait faaliyet raporundaki açıklamalar, MECLİS ÜYE TAM SAYISININ DÖRTTE ÜÇ ÇOĞUNLUĞUYLA yeterli görülmezse yetersizlik kararı verilmiş olur. Aranan çoğunluk salt çoğunluk değil, nitelikli bir çoğunluktur; bu ağır oran, seçimle gelen bir başkanın görevine son verilmesinin kolaylaştırılmaması amacını taşır. Yetersizlik kararıyla görüşmeleri kapsayan tutanak, MECLİS BAŞKAN VEKİLİ tarafından mahallin mülkî idare amirine gönderilir; vali dosyayı gerekçeli görüşüyle birlikte DANIŞTAYA gönderir ve yetersizlik kararı DANIŞTAYCA uygun görüldüğü takdirde belediye başkanı başkanlıktan düşer. Son sözü söyleyen merci idare değil YARGIDIR.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "I. İstifa durumunda üyeliğin sona ermesine meclis basit çoğunlukla karar verir. II. Özürsüz veya izinsiz olarak arka arkaya üç birleşim günü toplantılara katılmayan üyenin üyeliğinin kendiliğinden sona erer. III. Özürsüz veya izinsiz olarak bir yıl içinde yapılan toplantıların yarısına katılmayan üyenin üyeliğinin düşmesine, savunması alındıktan sonra üye tam sayısının salt çoğunluğuyla karar verilir. IV. Belediye meclisi üyeliğine seçilme yeterliğinin kaybedilmesi durumunda, valinin bildirmesi üzerine Danıştay tarafından üyeliğin düşmesine karar verilir. V. Ölüm durumunda üyelik kendiliğinden sona erer. Belediye meclisi üyeliğini sonlandıran hallerle ilgili yukarıda verilen ifadelerden hangileri yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yalnız I",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Yalnız II",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "I ve II",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Yalnız IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye meclisi üyeliğinin sona ermesi 5393 sayılı Kanun m.29'da üç ayrı usule bağlanmıştır ve öncüllerin bu usullere göre ayrılması gerekir. ÖLÜM VE İSTİFA durumunda üyelik KENDİLİĞİNDEN sona erer; istifada meclisin ayrıca bir karar alması gerekmediğinden, istifanın meclis kararıyla sonuçlandığını söyleyen I numaralı ifade yanlıştır (istifa dilekçesi belediye başkanlığına verilir ve başkan tarafından meclisin BİLGİSİNE sunulur). Özürsüz veya izinsiz olarak ARKA ARKAYA ÜÇ BİRLEŞİM GÜNÜ veya BİR YIL İÇİNDE YAPILAN TOPLANTILARIN YARISINA katılmama hâlinde üyelik kendiliğinden düşmez; savunma alındıktan sonra ÜYE TAM SAYISININ SALT ÇOĞUNLUĞUYLA karar verilmesi gerekir. Bu nedenle devamsızlığı kendiliğinden sona erme sebebi sayan II numaralı ifade de yanlıştır; aynı kuralı doğru veren III numaralı ifade ise isabetlidir. Seçilme yeterliğinin kaybedilmesinde ise valinin bildirmesi üzerine DANIŞTAY karar verir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediye meclisinin feshi nedenlerinden biridir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meclisin mutat yerde toplanmaması",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Meclisin olağan zamanda toplanmaması",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Toplantı için aranan çoğunluk sağlanmadan toplantı yapılması",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meclisin belediyeye verilen görevlerle ilgisi olmayan siyasi konularda karar alması",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Meclisin olağan toplantı süresinden daha kısa toplantı halinde kalması",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye meclisinin feshi 5393 sayılı Kanun m.30'da SINIRLI SAYIDA iki sebebe bağlanmıştır. Meclis; kendisine kanunla verilen görevleri süresi içinde yapmayı ihmal eder ve bu durum belediyeye ait işleri sekteye veya gecikmeye uğratırsa ya da BELEDİYEYE VERİLEN GÖREVLERLE İLGİSİ OLMAYAN SİYASÎ KONULARDA KARAR ALIRSA, İçişleri Bakanlığının bildirimi üzerine DANIŞTAYIN KARARI ile feshedilir. Toplantının mutat yerde yapılmaması, olağan zamanda toplanılmaması, yeter sayı sağlanmadan toplanılması veya toplantının süresinden kısa sürmesi gibi hâller maddede fesih sebebi olarak sayılmamıştır; bunlar toplantı usulüne ilişkin aykırılıklardır ve kararın hukuka aykırılığı sonucunu doğurabilirse de meclisin varlığına son vermez. Yetki bölünmüştür: bildirim İçişleri Bakanlığından gelir, fesih kararını YARGI verir. Feshedilen meclisin yerine seçilen meclis kalan süreyi tamamlar.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye meclisinin Danıştay tarafından feshi veya meclis toplantılarının ertelenmesi halinde meclis çalışabilir duruma gelinceye veya yeni meclis seçimi yapılıncaya kadar meclis görevi aşağıdakilerden hangisi tarafından yürütülür?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye encümeninin memur üyeleri",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "İl idaresi kurulu",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Vali",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Belediye birim amirleri",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Belediye başkanı ve başkan vekilleri",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Meclisin görevini geçici olarak kimin yürüteceği 5393 sayılı Kanun m.31'de gösterilmiştir. Belediye meclisinin Danıştay tarafından FESHİ veya meclis TOPLANTILARININ ERTELENMESİ, meclis üye tam sayısının yarıdan fazlasının TUTUKLANMASI, yedek üyelerin getirilmesinden sonra da üye tam sayısının YARISINDAN AŞAĞI DÜŞMESİ ya da meclisin GEÇİCİ OLARAK GÖREVDEN UZAKLAŞTIRILMASI hâllerinde, meclis çalışabilir duruma gelinceye veya yeni meclis seçimi yapılıncaya kadar meclis görevi BELEDİYE ENCÜMENİNİN MEMUR ÜYELERİ tarafından yürütülür. Görevin seçilmiş üyelere değil, encümenin MEMUR üyelerine bırakılmasının nedeni, boşluğu dolduran organın siyasî değil idarî nitelikte olmasının amaçlanmasıdır. Aynı çözüm il özel idaresinde de benimsenmiştir: 5302 sayılı Kanun m.23 uyarınca il genel meclisi görevi de encümenin memur üyelerince yürütülür.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediye encümeninin görev ve yetkileri arasında yer almaz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Umuma açık yerlerin açılış ve kapanış saatlerini belirlemek.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Bütçede fonksiyonel sınıflandırmanın ikinci düzeyleri arasında aktarma yapmak.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Taşınmaz malların süresi üç yılı geçmemek üzere kiralanmasına karar vermek.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Belediye adına imtiyaz verilmesine karar vermek.",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Kamulaştırma kararı almak.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye encümeninin görev ve yetkileri 5393 sayılı Kanun m.34'te sayılmıştır: umuma açık yerlerin AÇILIŞ VE KAPANIŞ SAATLERİNİ belirlemek (bent h), bütçede FONKSİYONEL SINIFLANDIRMANIN İKİNCİ DÜZEYLERİ arasında aktarma yapmak (bent d), taşınmaz malların SÜRESİ ÜÇ YILI GEÇMEMEK ÜZERE kiralanmasına karar vermek (bent g) ve yıllık çalışma programına alınan işlerle ilgili KAMULAŞTIRMA KARARLARINI almak ve uygulamak (bent b) bunlar arasındadır. Buna karşılık BELEDİYE ADINA İMTİYAZ VERİLMESİNE KARAR VERMEK m.18/j uyarınca BELEDİYE MECLİSİNE aittir. İki eşik karıştırılmamalıdır: bütçe aktarmasında BİRİNCİ düzey meclis, İKİNCİ düzey encümen yetkisindedir; kiralamada ise üç yıla kadar encümen, üç yıldan fazlası meclis (m.18/e) karar verir. Kalıp şudur: meclis stratejik ve uzun vadeli kararları, encümen uygulama kararlarını alır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye encümeni toplantılarına ilişkin aşağıda verilen bilgilerden hangisi yanlıştır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Haftada birden az olmamak üzere toplanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Acil durumlarda başkan tarafından toplantıya çağrılabilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Belediye başkanı başkanlık eder.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Üye tam sayısının salt çoğunluğu ile toplanır ve toplantıya katılanların salt çoğunluğu ile karar alır.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Oyların eşitliği durumunda bir sonraki toplantıda oylama tekrar edilir.",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Belediye encümeninin toplanma ve karar usulü 5393 sayılı Kanun m.35'te düzenlenmiştir. Encümen, HAFTADA BİRDEN AZ OLMAMAK üzere önceden belirlenen gün ve saatte toplanır; belediye başkanı acil durumlarda encümeni toplantıya çağırabilir. Encümen ÜYE TAM SAYISININ SALT ÇOĞUNLUĞUYLA toplanır ve KATILANLARIN SALT ÇOĞUNLUĞUYLA karar verir. OYLARIN EŞİTLİĞİ DURUMUNDA BAŞKANIN BULUNDUĞU TARAF ÇOĞUNLUK SAYILIR; oylamanın bir sonraki toplantıya bırakılması diye bir çözüm kanunda yer almaz. Ayrıca encümende ÇEKİMSER OY KULLANILAMAZ. Encümen gündemi belediye başkanı tarafından hazırlanır ve başkan tarafından havale edilmeyen konular encümende görüşülemez; havale edilen konular bir hafta içinde görüşülerek karara bağlanır. Encümen üyeleri kendileri, ikinci derece dâhil kan ve kayın hısımları ve evlatlıkları ile ilgili işlerin görüşüldüğü toplantılara katılamaz.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "I. Belediyenin taşınır ve taşınmaz mallarını idare etmek. II. Şartlı bağışları kabul etmek. III. Belediyenin gelir ve alacaklarını takip ve tahsil etmek. IV. Bütçede öngörülemeyen giderler ödeneğinin harcama yerlerini belirlemek. V. Belediye bütçesini hazırlamak. Yukarıda verilen görev ve yetkilerden hangileri belediye başkanına ait değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I ve II",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "II ve III",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "II ve IV",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "II ve V",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "III ve IV",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Beş öncül, belediyenin üç organı arasında dağıtılmıştır. Başkana ait olanlar 5393 sayılı Kanun m.38'de sayılıdır: belediyenin TAŞINIR VE TAŞINMAZ MALLARINI İDARE ETMEK (bent e), belediyenin GELİR VE ALACAKLARINI TAKİP VE TAHSİL ETMEK (bent f) ve stratejik plâna uygun olarak BÜTÇEYİ HAZIRLAMAK (bent b). Buna karşılık ŞARTLI BAĞIŞLARI KABUL ETMEK m.18/g uyarınca BELEDİYE MECLİSİNE aittir; başkan yalnızca ŞARTSIZ bağışları kabul eder (m.38/l). ÖNGÖRÜLMEYEN GİDERLER ÖDENEĞİNİN HARCAMA YERLERİNİ BELİRLEMEK ise m.34/c ile BELEDİYE ENCÜMENİNE bırakılmıştır. Başkana ait olmayanlar II ve IV olduğundan doğru yanıt bunları birlikte veren şıktır. Bağıştaki şartlı-şartsız ayrımı mahallî idare mevzuatının tekrar eden kalıbıdır: şartlı bağış meclisin, şartsız bağış yürütme organının yetkisindedir.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi İçişleri Bakanlığının başvurusu üzerine Danıştay kararıyla belediye başkanlığı sıfatını sonlandıran hallerden biri değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mazeretsiz ve kesintisiz olarak yirmi günden fazla görevini terk etmesi ve bu durumun mahallin mülki idare amiri tarafından belirlenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Seçilme yeterliğini kaybetmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Görevini sürdürmesine engel bir hastalık veya engellilik durumunun yetkili sağlık kuruluşu raporuyla belgelenmesi",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Meclisin feshine neden olan eylem ve işlemlere katılması",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Görevi ile ilgili bir suçtan dolayı hakkında kovuşturma başlatılması",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Belediye başkanlığının sona ermesi 5393 sayılı Kanun m.44'te düzenlenmiştir. ÖLÜM VE İSTİFA hâllerinde başkanlık KENDİLİĞİNDEN sona erer. Bunun dışında; MAZERETSİZ VE KESİNTİSİZ OLARAK YİRMİ GÜNDEN FAZLA görevi terk etmek ve bu durumun mahallin mülkî idare amirince belirlenmesi, SEÇİLME YETERLİĞİNİ KAYBETMEK, görevi sürdürmeye engel bir HASTALIK VEYA ENGELLİLİK durumunun yetkili sağlık kuruluşu raporuyla belgelenmesi ve MECLİSİN FESHİNE NEDEN OLAN EYLEM VE İŞLEMLERE KATILMAK hâllerinden birinin gerçekleşmesi durumunda, İÇİŞLERİ BAKANLIĞININ BAŞVURUSU ÜZERİNE DANIŞTAY KARARIYLA başkanlık sıfatı sona erer. Görevle ilgili bir suçtan kovuşturma başlatılması bu listede YOKTUR; bu hâl m.47 uyarınca yalnızca GEÇİCİ bir tedbir olan GÖREVDEN UZAKLAŞTIRMA sonucunu doğurur. Geçici uzaklaştırma ile sıfatın kesin olarak sona ermesi birbirine karıştırılmamalıdır.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "5393 sayılı Belediye Kanununun 46. maddesine göre belediye başkanlığının herhangi bir nedenle boşalması ve yeni belediye başkanı veya başkan vekili seçiminin yapılamaması durumunda seçim yapılıncaya kadar belediye başkanlığına, il belediyelerinde aşağıdakilerden hangisi tarafından görevlendirme yapılır?",
+    "options": [
+      {
+        "label": "A",
+        "text": "İçişleri Bakanı",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Vali",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Belediye Meclisi",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Danıştay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye başkanlığının boşalması hâlinde yapılacak görevlendirme 5393 sayılı Kanun m.46'da BELEDİYENİN TÜRÜNE GÖRE ikiye ayrılmıştır. Başkanlığın herhangi bir nedenle boşalması ve yeni belediye başkanı veya başkan vekili seçiminin yapılamaması durumunda, seçim yapılıncaya kadar belediye başkanlığına BÜYÜKŞEHİR VE İL BELEDİYELERİNDE İÇİŞLERİ BAKANI, DİĞER BELEDİYELERDE VALİ tarafından görevlendirme yapılır. Ayrım idarenin kademesine paraleldir: il düzeyindeki belediyelerde merkezî idarenin en üst siyasî sorumlusu, diğerlerinde ilin mülkî idare amiri yetkilidir. Maddeye göre görevlendirilecek kişinin BELEDİYE BAŞKANI SEÇİLME YETERLİĞİNE SAHİP OLMASI ŞARTTIR; yani görevlendirme yetkisi, seçilme yeterliği taşımayan bir kişinin atanmasına imkân vermez.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Görevi ile ilgili bir suç nedeniyle hakkında soruşturma veya kovuşturma açılan belediye başkanı geçici bir önlem olarak aşağıdakilerden hangisi tarafından görevinden uzaklaştırılabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cumhurbaşkanı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "İçişleri Bakanı",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Adalet Bakanı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Çevre, Şehircilik ve İklim Değişikliği Bakanı",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Danıştay",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye organlarının görevden uzaklaştırılması 5393 sayılı Kanun m.47'de ve Anayasa m.127'de aynı doğrultuda düzenlenmiştir. Görevleriyle ilgili bir suç nedeniyle haklarında SORUŞTURMA VEYA KOVUŞTURMA açılan belediye organları veya bu organların üyeleri, KESİN HÜKME KADAR İÇİŞLERİ BAKANI tarafından görevden uzaklaştırılabilir. Bu bir CEZA değil GEÇİCİ TEDBİRDİR; nitekim görevden uzaklaştırma kararı İKİ AYDA BİR gözden geçirilir ve devamında kamu yararı bulunmayan karar kaldırılır. Kovuşturmaya yer olmadığına karar verilmesi, kamu davasının düşmesi, beraat, genel af veya görevden düşürmeyi gerektirmeyen bir suçtan mahkûmiyet hâllerinde de karar kaldırılır. Görevden uzaklaştırılan belediye başkanına, görevden uzak kaldığı sürece aylık ödeneğinin ÜÇTE İKİSİ ödenir ve diğer sosyal hak ve yardımlardan yararlanmaya devam eder.",
+    "difficulty": "medium",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Aşağıdakilerden hangisi belediye bütçesine ilişkin doğru bir ifade değildir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye başkanınca hazırlanır.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Eylül ayının birinci gününden önce encümene sunulur.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Bir örneği İçişleri Bakanlığına gönderilir.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Bütçe meclis tarafından aynen ya da değiştirilerek kabul edilir.",
+        "isCorrect": false
+      },
+      {
+        "label": "E",
+        "text": "Kabul edilen bütçe mali yılbaşından itibaren yürürlüğe girer.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediye bütçesinin hazırlanması ve kabulü 5393 sayılı Kanun m.62'de aşamalı olarak düzenlenmiştir. Bütçe tasarısı BELEDİYE BAŞKANI tarafından hazırlanır ve EYLÜL AYININ BİRİNCİ GÜNÜNDEN ÖNCE encümene sunulur; aynı anda ÇEVRE VE ŞEHİRCİLİK BAKANLIĞINA gönderilir — İçişleri Bakanlığına değil. Bu ibare 29/11/2018 tarihli 7153 sayılı Kanun'la değiştirilmiştir ve eski kaynaklarda hâlâ İçişleri Bakanlığı olarak geçtiği için sık karıştırılır. Bakanlık, belediye bütçe tahminlerini konsolide ederek merkezî yönetim bütçe tasarısına eklenmek üzere eylül ayı sonuna kadar bildirir. Encümen bütçeyi inceleyip görüşüyle birlikte KASIM AYININ BİRİNCİ GÜNÜNDEN ÖNCE meclise sunar; meclis tasarıyı YILBAŞINDAN ÖNCE aynen veya değiştirerek kabul eder, ancak bütçe denkliğini bozacak biçimde gider artırıcı ve gelir azaltıcı değişiklik yapamaz. Kabul edilen bütçe malî yılbaşından itibaren yürürlüğe girer.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  },
+  {
+    "topicId": "28eaa9b8-d646-4d32-af33-618d8e1c7ea7",
+    "articleNo": null,
+    "stem": "Belediye, en son kesinleşmiş bütçe gelirlerinin yüzde onunu geçen iç borçlanmayı aşağıdaki işlemlerden hangisi ile yapabilir?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Belediye meclisinin basit çoğunluğunun kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Belediye meclisi üye tam sayısının salt çoğunluğunun kararı",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Belediye meclisi üye tam sayısının dörtte üçünün kararı ve İçişleri Bakanlığının onayı",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Belediye meclisi üye tam sayısının salt çoğunluğunun kararı ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığının onayı",
+        "isCorrect": true
+      },
+      {
+        "label": "E",
+        "text": "Belediye meclisi üye tam sayısının salt çoğunluğunun kararı ve Hazine ve Maliye Bakanlığının onayı",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Belediyenin iç borçlanması 5393 sayılı Kanun m.68/e'de bir ORANA bağlanmış ve oranın altında ile üstünde farklı usuller öngörülmüştür. Belediye ve bağlı kuruluşları ile bunların sermayesinin yüzde ellisinden fazlasına sahip oldukları şirketler, en son kesinleşmiş bütçe gelirlerinin Vergi Usul Kanunu'na göre belirlenecek yeniden değerleme oranıyla artırılan miktarının yılı içinde TOPLAM YÜZDE ONUNU GEÇMEYEN iç borçlanmayı BELEDİYE MECLİSİNİN KARARI ile yapabilir. YÜZDE ONU GEÇEN iç borçlanma için ise MECLİS ÜYE TAM SAYISININ SALT ÇOĞUNLUĞUNUN KARARI VE ÇEVRE, ŞEHİRCİLİK VE İKLİM DEĞİŞİKLİĞİ BAKANLIĞININ ONAYI aranır. Eşik aşıldığında hem meclis içindeki oran ağırlaşmakta hem de merkezî idarenin idarî vesayet denetimi devreye girmektedir. Bakanlığın adı 7153 ve 7446 sayılı Kanunlarla değiştiği için eski kaynaklarda İçişleri Bakanlığı olarak geçer.",
+    "difficulty": "hard",
+    "sourceLabel": "SEÇKİN 2025 İDARE HUKUKU SORU KİTABI (M. EROĞLU DURKAL)"
+  }
+]

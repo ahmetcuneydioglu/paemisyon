@@ -1019,3 +1019,17 @@ YAYIMLANDI (s-034'un sol yarisi TEST-III'un basiymis, s-035 ayni testi bastan
 veriyor). Ayrica s-035 S.3 = s-034 S.3, i06'da supheli diye elenmisti -> yine ELE.
 **s-036 S.9** YAKIN (k%75/s%100) -> `bafa7f76` m.26; ELLE bakilacak.
 KALAN: 21 (s-036 S.9 karari beklemede).
+
+### i07 YAYINDA — 17/17 yayimlanabilir (kusur yok)
+Tamami 5393 Belediye Kanunu (m.22,23,24,26,29,30,31,34,35,38,44,46,47,62,68).
+Iki denetci uzlasti, curutme oyu 0.
+30 okunan sorudan 13 elendi: 4 buyuksehir/5216, 1 supheli, 3 TAM mukerrer +
+1 ikiz (s-035 TEST-III'u bastan veriyor, s-034'te girmislerdi), 2 yigilma
+(s-036 S.9 bankadaki `bafa7f76` ile BIREBIR ayni; s-036 S.12 `4ea467e1` ile),
+1 belirsiz (s-037 S.3, "D'hont ile secilir" iddiasi 2972'ye dayaniyor ve
+"yurutme organi" ifadesi de tartisilabilir), 1 dayanak yok (s-038 S.11 YIKOB —
+bankadaki 5442'nin 77 maddesinde "Yatirim Izleme ve Koordinasyon Baskanligi"
+ibaresi GECMIYOR; 5442 Ek m.1 sivil hava meydanlari/limanlar hakkinda).
+
+SIRADAKI: s-039..s-042 (Mahalli idareler TEST-V ve sonrasi).
+EKSIK SAYFA: kitap s.67 (TEST-II 10-14) PNG setinde yok.
