@@ -13,9 +13,16 @@ mukerrerin bankaya girmesine yol acti, o yuzden uc katman var:
   2. KOK   : yalniz kok ayni (siklar yeniden yazilmis olabilir)
   3. YAKIN : kok kelime kumesi %75+ ortusuyor (isim/yas degistirilmis varyantlar)
 """
-import json, re, sys, unicodedata
+import json, os, re, sys, unicodedata
 
-MEVCUT = "/private/tmp/claude-501/-Users-ahmetcnd-Developer-paemisyon/20ed2718-7038-4dee-b298-9e861d231aee/scratchpad/cmk-mevcut.json"
+# BANKA env degiskeni ZORUNLU. 3 Eyl 2026: burasi cmk-mevcut.json'a SABITLENMISTI
+# ve Idare partileri (i01-i06) farkinda olunmadan CMK bankasina karsi tarandi;
+# "0 mukerrer" sonuclarinin hepsi anlamsizdi. Sabit yol yerine env + sert kontrol.
+MEVCUT = os.environ.get("BANKA")
+if not MEVCUT:
+    sys.exit("HATA: BANKA env degiskeni verilmedi (ornek: BANKA=<scratchpad>/idare-mevcut.json).")
+if not os.path.exists(MEVCUT):
+    sys.exit("HATA: banka dokumu bulunamadi: %s" % MEVCUT)
 
 # Iki tur gurultu:
 # 1) varyant uretirken degistirilen isimler,

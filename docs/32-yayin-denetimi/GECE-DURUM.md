@@ -985,3 +985,37 @@ NOT: `sonuc-topla.py` journal'daki IKI denetcinin ciktisini duzlestirdigi icin
 42 kayit uretti (21 benzersiz); yayinlamadan once TEKILLESTIRILDI.
 SIRADAKI: s-035..s-038 (Mahalli idareler TEST-III devami + TEST-IV).
 EKSIK SAYFA: kitap s.67 (TEST-II 10-14) PNG setinde yok, yeniden cekilmeli.
+
+## TARAYICI HATASI ve DENETIMI (3 Eyl 2026) — ONEMLI
+
+`mukerrer-tara.py` icindeki `MEVCUT` sabiti **`cmk-mevcut.json`'a SABITLENMISTI**.
+Kodda `BANKA` env degiskeni hic okunmuyordu; ben her turda `BANKA=...idare-mevcut.json`
+veriyordum ama betik bunu YOK SAYIP CMK bankasina karsi tariyordu. Yani i01-i06
+partilerinin "0 mukerrer" sonuclarinin HEPSI anlamsizdi.
+
+**Duzeltme:** `MEVCUT = os.environ.get("BANKA")`, verilmezse veya dosya yoksa
+betik HATA VERIP DURUR (sessiz yanlis sonuc uretmesin diye sert kontrol).
+
+**Kirlilik denetimi yapildi — SONUC TEMIZ.** Uc ayri tarama:
+1. Banka ici TAM es (kok+sik ayni): 1 cift — `7de01323|49663d2a` (Anayasa m.19),
+   ikisi de ESKI banka icerigi, benim partilerimden degil.
+2. Banka ici KOK esi: 21 grup — hepsi eski Anayasa/657/4483 icerigi.
+3. Ayni kanun+madde icinde YAKIN cift (kok>=%75, sik>=%60): 46 cift.
+   **46'sinin da ikisi de ESKI BANKA.** Import ettigim 101 sorunun hicbiri
+   bu ciftlerde yok (kok karsilastirmasiyla dogrulandi).
+
+Sebep: her partide ayrica ELLE madde bazli karsilastirma yapiliyordu; gercek
+elemeyi o yapmis, bozuk tarayici sadece bos yere "temiz" demis.
+
+**Ayri bir bulgu (kullanici karari gerekir):** bankada 46 yakin-mukerrer cift
+zaten VAR (cogu Anayasa; ayni soru noktalama/yazim farkiyla iki kez girilmis).
+Bunlar bu calismadan onceki icerik; temizlenmesi ayri bir is.
+
+## i07 adayi — s-035..s-038 (Mahalli idareler TEST-III/IV)
+30 soru okundu. Alt ajan: 4 elendi (hepsi 5216 buyuksehir), 1 supheli (s-037 S.8,
+faaliyet raporu bakanlik adi). 442'ye dayanan soru YOK.
+Duzeltilmis tarayici: **3 TAM mukerrer** — s-035 S.1/S.2/S.4, uculu de i06'da
+YAYIMLANDI (s-034'un sol yarisi TEST-III'un basiymis, s-035 ayni testi bastan
+veriyor). Ayrica s-035 S.3 = s-034 S.3, i06'da supheli diye elenmisti -> yine ELE.
+**s-036 S.9** YAKIN (k%75/s%100) -> `bafa7f76` m.26; ELLE bakilacak.
+KALAN: 21 (s-036 S.9 karari beklemede).
