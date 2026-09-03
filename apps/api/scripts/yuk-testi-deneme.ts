@@ -102,12 +102,27 @@ const sb = (yol: string, init: RequestInit = {}) =>
     },
   });
 
-/** Sanal hesapları açar (zaten varsa yeniden kullanır) ve erişim token'ı alır. */
+/**
+ * Sanal hesapları açar (zaten varsa yeniden kullanır) ve erişim token'ı alır.
+ *
+ * `email_confirm: true` ile açılan hesaba Supabase POSTA GÖNDERMEZ — 3 Eylül
+ * 2026'da 50 hesapla doğrulandı: hepsinde `confirmation_sent_at` boş, hepsi
+ * doğrulanmış. Yine de adresler teslim edilemez bir alan adında (.test):
+ * yanlışlıkla posta akışı tetiklenirse bounce üretmesin diye DEĞİL, gerçek bir
+ * kutuya düşmesin diye.
+ *
+ * Giriş isteği Supabase tarafında hız sınırlıdır: ilk sürümde 50 hesabın yalnız
+ * 32'si token alabildi ve hata YUTULUYORDU (test 50 sanılıp 32 ile koştu).
+ * Artık küçük gruplar + geri çekilmeli yeniden deneme var, başarısızlık raporlanır.
+ */
 async function hesaplar(n: number) {
   const out: { i: number; token: string }[] = [];
-  for (let i = 0; i < n; i += 10) {
+  const hata: string[] = [];
+  const bekle = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+  for (let i = 0; i < n; i += 5) {
     await Promise.all(
-      Array.from({ length: Math.min(10, n - i) }, async (_, k) => {
+      Array.from({ length: Math.min(5, n - i) }, async (_, k) => {
         const idx = i + k;
         const email = EPOSTA(idx);
         // Zaten varsa 422 döner; yok sayılır.
@@ -120,15 +135,24 @@ async function hesaplar(n: number) {
             user_metadata: { full_name: `Yük Testi ${idx}` },
           }),
         });
-        const g = await sb('/auth/v1/token?grant_type=password', {
-          method: 'POST',
-          headers: { Authorization: '' },
-          body: JSON.stringify({ email, password: SIFRE }),
-        });
-        const t = (await g.json()) as { access_token?: string };
-        if (t.access_token) out.push({ i: idx, token: t.access_token });
+        for (let deneme = 0; deneme < 4; deneme++) {
+          const g = await sb('/auth/v1/token?grant_type=password', {
+            method: 'POST',
+            headers: { Authorization: '' },
+            body: JSON.stringify({ email, password: SIFRE }),
+          });
+          const t = (await g.json()) as { access_token?: string; error_description?: string; msg?: string };
+          if (t.access_token) return out.push({ i: idx, token: t.access_token });
+          if (deneme === 3) hata.push(`${email}: ${g.status} ${t.error_description ?? t.msg ?? ''}`);
+          else await bekle(1500 * (deneme + 1)); // hız sınırı → geri çekil
+        }
       }),
     );
+    await bekle(400); // Supabase auth hız sınırına nefes payı
+  }
+  if (hata.length) {
+    console.log(`  giriş yapamayan ${hata.length} hesap:`);
+    for (const h of hata.slice(0, 5)) console.log(`    ↳ ${h}`);
   }
   return out.sort((a, b) => a.i - b.i);
 }
