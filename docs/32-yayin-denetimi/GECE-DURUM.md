@@ -468,12 +468,51 @@ aciklama kaynagi olarak yetkilendirdi (`~/Downloads/Themis Konu - Idare Hukuku.p
   (b) denetimi konu anlatimina karsi calistirmak (hatta degisiklik gerekir).
 Kullanici uyaninca sorulacak.
 
-### ILK ISLER (siradaki tur)
-1. Bolum haritasi cikar: s-003, s-020, s-040, s-060, s-080, s-100, s-115 ornekle
-   ve hangi kismin nerede oldugunu yaz. Kanunla dogrulanabilir bloklari isaretle.
-2. **Bankadaki 262 Idare Hukuku sorusunu MADDEYE GORE dok** — CMK'da ogrenilen ders:
-   tarayiciya tek basina guvenme, once maddeye gore yogunlugu ol.
-3. Danistay blogunu bul ve ~20 temel soru hedefiyle oku.
+### !!! KITAP KIMLIGI DUZELTMESI (3 Eyl 2026)
+Dosya adi `Themis Soru - Idare Hukuku.pdf` ama **ICERIK THEMIS DEGIL**:
+**"Idare Hukuku Soru Kitabi" — Muzeyyen Eroglu Durkal, Seckin Yayincilik,
+4. Baski, Ocak 2025, 234 sayfa.** KAYNAK ETIKETI buna gore yazilacak, "THEMIS"
+yazilmayacak. (Idari Yargilama kitabinin kimligi de acilinca DOGRULANMALI.)
+
+### SAYFA FORMULU — CMK'dan FARKLI, DIKKAT
+PNG'ler **acik kitap (spread)** taramasi: her dosyada IKI kitap sayfasi var.
+  solKitapSayfa = 2N-1 · sagKitapSayfa = 2N · taramaNo = ceil(kitapSayfa/2)
+Ornek: s-095 -> kitap s.189/190. Son icerik s-117; s-118 bos.
+Sayfa basina 2 sutun, okuma sirasi sutun sutun. Test basina ~15-20 soru.
+Ayri cevap anahtari YOK: her sorunun altinda cerceveli aciklama, dogru sik
+aciklamanin sonunda koyu zeminde "Yanit, (D) secenegi".
+
+### BOLUM HARITASI — 16 konu, 53 test, KISIM/BOLUM hiyerarsisi YOK
+Harita: `<scratchpad>/idare-bolum-haritasi.json` (icindekiler tam olarak var).
+
+**!!! BU KITAPTA DANISTAY VE IYUK BOLUMU YOK.** Kullanicinin istedigi ~20 temel
+Danistay sorusu ile IYUK usul sorulari **Idari Yargilama Hukuku kitabindan**
+gelecek (`~/Downloads/Themis Soru - Idari Yargilama Hukuku.pdf`, 88 sayfa).
+
+**KANUNLA DOGRULANABILIR BLOKLAR (islenecek):**
+| blok | tarama | test | dayanak kanun | bankada bos madde |
+|---|---|---|---|---|
+| **Memurlar ve diger kamu gorevlileri** | s-095..s-113 | 9 | 657 DMK | ~291 |
+| Merkezden yonetim | s-018..s-030 | 7 | 5442 Il Idaresi | ~61 |
+| Mahalli idareler | s-031..s-047 | 8 | 5393 Belediye, 5302 Il Ozel Id. | ~86 / ~71 |
+| Idari usul | s-079..s-081 | 1 | 3071 Dilekce, 4982 Bilgi Edinme | ~8 / ~4 |
+
+**TEORI BLOKLARI — KULLANICI KARARIYLA ALINMAYACAK:**
+Genel olarak idare hukuku (s-005..s-008) · Idare hukukunun kaynaklari (s-009..s-017)
+· Idari islemler (s-055..s-066) · Idarenin sozlesmeleri (s-067..s-071)
+· Kamu hizmeti (s-072..s-078) · Kolluk faaliyetleri (s-082..s-083)
+· Idarenin mallari (s-084..s-085) · Idarenin mali sorumlulugu (s-114..s-117)
+Ayrica **Idarenin mal edinme yontemleri (s-086..s-094)** dayanagi 2942 Kamulastirma
+ve 2886/4734 Ihale kanunlaridir; bunlar BANKADA YOK -> simdilik atlanacak.
+Hizmet bakimindan yerinden yonetim (s-048..s-049), bagimsiz idari otoriteler
+(s-050..s-052) ve meslek kuruluslari (s-053..s-054) kurulus kanunlarina dayanir;
+o kanunlar da bankada yok -> atlanacak.
+
+### SIRADAKI ADIM
+**Memurlar blogundan basla** (en buyuk bos madde havuzu: 657'de ~291).
+s-095..s-098 okundu/okunuyor. Sonra s-099..s-113 devam.
+Memurlar bitince: Mahalli idareler (s-031..s-047), sonra Merkezden yonetim.
+Kitap bitince -> Idari Yargilama Hukuku kitabi (Danistay + IYUK; IYUK'ta 50 bos madde).
 
 ### DANISTAY SINIRI (kullanici karari, 3 Eyl 2026)
 Yalnizca TEMEL duzey, **hedef ~20 soru**. Ornek: Danistay uyeleri kim tarafindan
