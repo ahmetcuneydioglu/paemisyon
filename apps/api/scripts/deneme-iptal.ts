@@ -27,12 +27,27 @@ const arg = (a: string) => { const i = process.argv.indexOf(a); return i === -1 
 async function main() {
   const YAZ = process.argv.includes('--yaz');
   const baslik = arg('--deneme');
-  if (!baslik) { console.log('--deneme "<baslik>" ver'); return; }
+  const id = arg('--id');
+  if (!baslik && !id) { console.log('--deneme "<baslik>" ya da --id <examId> ver'); return; }
 
-  const exam = await p.exam.findFirst({
-    where: { title: { contains: baslik }, deletedAt: null },
-    select: { id: true, title: true, startAt: true, durationMinutes: true, status: true },
-  });
+  // --id kesindir. Baslik "contains" oldugu icin "Deneme Test" hem kendisiyle
+  // hem "Deneme Test 1" ile eslesir; yanlis denemeyi iptal etmemek icin birden
+  // fazla aday varsa DURULUR.
+  const adaylar = id
+    ? await p.exam.findMany({
+        where: { id, deletedAt: null },
+        select: { id: true, title: true, startAt: true, durationMinutes: true, status: true },
+      })
+    : await p.exam.findMany({
+        where: { title: { contains: baslik! }, deletedAt: null },
+        select: { id: true, title: true, startAt: true, durationMinutes: true, status: true },
+      });
+  if (adaylar.length > 1) {
+    console.log('DURDURULDU: baslik birden fazla denemeyle esletiyor, --id ile sec:');
+    for (const a of adaylar) console.log(`  ${a.id}  ${a.title}`);
+    return;
+  }
+  const exam = adaylar[0] ?? null;
   if (!exam) { console.log('Deneme bulunamadi (veya zaten silinmis).'); return; }
 
   const bitis = new Date(exam.startAt.getTime() + exam.durationMinutes * 60000);
@@ -57,7 +72,14 @@ async function main() {
   console.log(`Oturum : ${oturumlar.length}  |  Cevap: ${cevap}   -> SILINECEK`);
   if (!YAZ) { console.log('\nKURU CALISMA — uygulamak icin --yaz ekle.'); return; }
 
-  const yedek = path.join(__dirname, '../../../docs/32-yayin-denetimi/deneme-iptal-yedek.json');
+  // Yedek adi denemeye OZEL: sabit ad, onceki iptalin yedegini eziyordu
+  // (2 Eylul 2026'daki 89 soruluk denemenin 24 katilimcilik kaydi bir sonraki
+  // iptalde kaybolacakti).
+  const slug = exam.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+  const yedek = path.join(
+    __dirname,
+    `../../../docs/32-yayin-denetimi/deneme-iptal-yedek-${slug || exam.id.slice(0, 8)}.json`,
+  );
   fs.writeFileSync(yedek, JSON.stringify({ exam, soruSayisi: sorular, oturumlar }, null, 1), 'utf-8');
 
   await p.$transaction(async (tx) => {
