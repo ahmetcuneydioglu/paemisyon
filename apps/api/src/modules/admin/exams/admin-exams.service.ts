@@ -4,6 +4,7 @@ import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
 import { UpsertExamDto } from '../dto/exam.dto';
 import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
+import { bayraklariHesapla, tekrarEdenKokler } from './exam-review.logic';
 import { PushService } from '../../notifications/push.service';
 
 /**
@@ -84,6 +85,238 @@ export class AdminExamsService {
         courseName: q.question.topic.course.name,
       })),
     };
+  }
+
+  /**
+   * Yayın öncesi GÖZDEN GEÇİRME (Doc 18 §8): setteki her sorunun TAM içeriği.
+   *
+   * Neden ayrı uç: `detail` yalnız kökü döndürüyordu, panel de onu tek satıra
+   * kırpıyordu — 100 soruluk otomatik seti yayınlamadan önce okumak imkânsızdı.
+   * 2 Eylül 2026 denemesinde müfredat dışı Türkçe soruları bu körlük yüzünden
+   * yayına gitti. Yükü ağır (şıklar + açıklama + kullanım geçmişi), bu yüzden
+   * hafif `detail`den ayrıldı.
+   *
+   * Bayraklar gözü doğru yere götürmek içindir, ENGEL DEĞİLDİR: kaynaksız soru
+   * da denemeye girebilir (kullanıcı kararı) — yalnız işaretlenir.
+   */
+  async inceleme(id: string) {
+    const exam = await this.prisma.exam.findFirst({
+      where: { id, deletedAt: null },
+      select: { id: true, title: true, status: true, startAt: true, durationMinutes: true },
+    });
+    if (!exam) throw new NotFoundException('Deneme bulunamadı.');
+
+    const rows = await this.prisma.examQuestion.findMany({
+      where: { examId: id },
+      orderBy: { sortOrder: 'asc' },
+      include: {
+        question: {
+          select: {
+            id: true,
+            articleNo: true,
+            currentVersionId: true,
+            topic: {
+              select: { id: true, name: true, course: { select: { id: true, name: true } } },
+            },
+            _count: { select: { examQuestions: true } },
+          },
+        },
+        questionVersion: {
+          select: {
+            id: true,
+            versionNo: true,
+            stem: true,
+            mediaUrl: true,
+            explanation: true,
+            sourceLabel: true,
+            options: {
+              orderBy: { sortOrder: 'asc' },
+              select: { id: true, label: true, text: true, isCorrect: true },
+            },
+          },
+        },
+      },
+    });
+
+    // Taslakta güncel sürüm gösterilir (yayında sürümler sabitlenir), bu yüzden
+    // taslak için güncel sürümleri ayrıca çekeriz — panelde okunan metin, yayına
+    // gidecek metnin AYNISI olmalı.
+    const taslak = exam.status === 'draft';
+    const guncelIds = rows
+      .map((r) => r.question.currentVersionId)
+      .filter((v): v is string => v != null && taslak);
+    const guncel = guncelIds.length
+      ? await this.prisma.questionVersion.findMany({
+          where: { id: { in: guncelIds } },
+          select: {
+            id: true,
+            questionId: true,
+            versionNo: true,
+            stem: true,
+            mediaUrl: true,
+            explanation: true,
+            sourceLabel: true,
+            options: {
+              orderBy: { sortOrder: 'asc' },
+              select: { id: true, label: true, text: true, isCorrect: true },
+            },
+          },
+        })
+      : [];
+    const guncelOf = new Map(guncel.map((v) => [v.questionId, v]));
+
+    // Yakın kullanım: aynı soru son denemelerde çıktıysa aday "bunu görmüştüm" der.
+    const sonKullanim = await this.prisma.examQuestion.findMany({
+      where: {
+        questionId: { in: rows.map((r) => r.questionId) },
+        examId: { not: id },
+        exam: { deletedAt: null, status: 'published' },
+      },
+      select: { questionId: true, exam: { select: { title: true, startAt: true } } },
+    });
+    const sonOf = new Map<string, { title: string; startAt: Date }>();
+    for (const k of sonKullanim) {
+      const v = sonOf.get(k.questionId);
+      if (!v || k.exam.startAt > v.startAt) sonOf.set(k.questionId, k.exam);
+    }
+
+    const sorular = rows.map((r, i) => {
+      const v = (taslak ? guncelOf.get(r.questionId) : null) ?? r.questionVersion;
+      const son = sonOf.get(r.questionId);
+      const dersAdi = r.question.topic.course.name;
+      return {
+        order: i + 1,
+        questionId: r.questionId,
+        versionId: v.id,
+        versionNo: v.versionNo,
+        stem: v.stem,
+        mediaUrl: v.mediaUrl,
+        explanation: v.explanation,
+        sourceLabel: v.sourceLabel,
+        articleNo: r.question.articleNo,
+        topicId: r.question.topic.id,
+        topicName: r.question.topic.name,
+        courseId: r.question.topic.course.id,
+        courseName: dersAdi,
+        options: v.options,
+        // Bu deneme dahil kaç denemede kullanıldı.
+        usageCount: r.question._count.examQuestions,
+        lastUsedIn: son ? { title: son.title, startAt: son.startAt } : null,
+      };
+    });
+    // Benzer kök yalnız SET İÇİNDE anlamlı — bütün köklerden sonra hesaplanır.
+    const tekrarlayan = tekrarEdenKokler(sorular.map((q) => q.stem));
+
+    return {
+      exam,
+      questionCount: sorular.length,
+      // Ders bazlı dağılım — kota kontrolü panelde bunun üstünden yapılır.
+      dersDagilimi: [...sorular.reduce((m, q) => m.set(q.courseName, (m.get(q.courseName) ?? 0) + 1), new Map<string, number>())]
+        .map(([courseName, count]) => ({ courseName, count }))
+        .sort((a, b) => b.count - a.count),
+      questions: sorular.map((q) => ({
+        ...q,
+        bayraklar: bayraklariHesapla(
+          {
+            stem: q.stem,
+            sourceLabel: q.sourceLabel,
+            explanation: q.explanation,
+            articleNo: q.articleNo,
+            courseName: q.courseName,
+            optionCorrectCount: q.options.filter((o) => o.isCorrect).length,
+            usedBefore: q.lastUsedIn != null,
+          },
+          tekrarlayan,
+        ),
+      })),
+    };
+  }
+
+  /**
+   * Bir soruyu setten çıkarır; `yerineGetir` ise AYNI ALANDAN yenisini koyar.
+   *
+   * "Aynı alan" önce KONU, o tükendiyse DERS demektir: bölüm kotası ders
+   * üstünden yürüdüğü için ders içinde kalmak müfredat dağılımını bozmaz,
+   * konuyu öncelemek de konu dengesini korur. Yeni soru setteki AYNI SIRAYA
+   * girer — okurken liste altından kaymaz.
+   */
+  async replaceQuestion(
+    actor: AuthenticatedUser,
+    id: string,
+    questionId: string,
+    yerineGetir: boolean,
+  ) {
+    const exam = await this.exists(id);
+    if (exam.status !== 'draft') {
+      throw new BadRequestException('Soru seti yalnız taslak denemede düzenlenebilir.');
+    }
+    const mevcut = await this.prisma.examQuestion.findUnique({
+      where: { examId_questionId: { examId: id, questionId } },
+      include: { question: { select: { topicId: true, topic: { select: { courseId: true } } } } },
+    });
+    if (!mevcut) throw new NotFoundException('Bu soru denemede yok.');
+
+    let yeni: { id: string; currentVersionId: string | null } | null = null;
+    if (yerineGetir) {
+      const settekiler = (
+        await this.prisma.examQuestion.findMany({
+          where: { examId: id },
+          select: { questionId: true },
+        })
+      ).map((r) => r.questionId);
+
+      // Önce konu, sonra ders — ilk dolu havuz kazanır.
+      for (const kapsam of [
+        { topicId: mevcut.question.topicId },
+        { topic: { courseId: mevcut.question.topic.courseId } },
+      ]) {
+        const adaylar = await this.prisma.question.findMany({
+          where: {
+            ...kapsam,
+            deletedAt: null,
+            currentVersionId: { not: null },
+            id: { notIn: settekiler },
+          },
+          select: { id: true, currentVersionId: true, _count: { select: { examQuestions: true } } },
+        });
+        if (adaylar.length === 0) continue;
+        // Az kullanılmış öncelikli, eşitlikte rastgele (autofill ile aynı ilke).
+        const [sec] = adaylar
+          .map((a) => ({ a, r: Math.random() }))
+          .sort((x, y) => x.a._count.examQuestions - y.a._count.examQuestions || x.r - y.r);
+        yeni = { id: sec.a.id, currentVersionId: sec.a.currentVersionId };
+        break;
+      }
+      if (!yeni) {
+        throw new BadRequestException(
+          'Bu dersin bankasında sette olmayan başka soru kalmadı — elle soru ekle.',
+        );
+      }
+    }
+
+    await this.prisma.$transaction(async (tx) => {
+      await tx.examQuestion.delete({
+        where: { examId_questionId: { examId: id, questionId } },
+      });
+      if (yeni) {
+        await tx.examQuestion.create({
+          data: {
+            examId: id,
+            questionId: yeni.id,
+            questionVersionId: yeni.currentVersionId!,
+            sortOrder: mevcut.sortOrder, // aynı sıra — liste kaymaz
+          },
+        });
+      }
+    });
+    await this.audit.log(
+      actor,
+      yeni ? 'exam.replace_question' : 'exam.remove_question',
+      'exam',
+      id,
+      { cikarilan: questionId, eklenen: yeni?.id ?? null },
+    );
+    return this.inceleme(id);
   }
 
   async create(actor: AuthenticatedUser, dto: UpsertExamDto) {

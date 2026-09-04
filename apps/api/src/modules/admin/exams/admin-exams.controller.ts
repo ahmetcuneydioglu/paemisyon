@@ -1,11 +1,13 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Param,
   ParseUUIDPipe,
   Patch,
   Post,
+  Query,
   UseGuards,
 } from '@nestjs/common';
 import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
@@ -42,6 +44,25 @@ export class AdminExamsController {
   @Roles('admin')
   results(@Param('id', ParseUUIDPipe) id: string) {
     return this.exams.results(id);
+  }
+
+  /** Yayın öncesi gözden geçirme: setteki soruların TAM içeriği + bayraklar. */
+  @Get(':id/inceleme')
+  @Roles('admin', 'editor')
+  inceleme(@Param('id', ParseUUIDPipe) id: string) {
+    return this.exams.inceleme(id);
+  }
+
+  /** Soruyu setten çıkar; ?yerine=1 ise aynı konudan/dersten yenisini koy. */
+  @Delete(':id/questions/:questionId')
+  @Roles('admin', 'editor')
+  replaceQuestion(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Param('questionId', ParseUUIDPipe) questionId: string,
+    @Query('yerine') yerine?: string,
+  ) {
+    return this.exams.replaceQuestion(actor, id, questionId, yerine === '1');
   }
 
   @Post()

@@ -1,6 +1,7 @@
 'use client';
 
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
@@ -242,9 +243,19 @@ export default function ExamDetailPage() {
       </Card>
 
       {/* Soru seti */}
-      <h2 className="mb-3 text-sm font-semibold text-slate-700">
-        Soru Seti {!isDraft && '(yayınlandı — sürümler sabit, düzenlenemez)'}
-      </h2>
+      <div className="mb-3 flex items-center justify-between gap-4">
+        <h2 className="text-sm font-semibold text-slate-700">
+          Soru Seti {!isDraft && '(yayınlandı — sürümler sabit, düzenlenemez)'}
+        </h2>
+        {/* Buradaki liste kökleri tek satıra kırpar; yayın kararı için soruların
+            TAMAMI okunmalı (şık, cevap, kaynak). Gözden geçirme ekranı odur. */}
+        <Link
+          href={`/exams/${id}/inceleme`}
+          className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium hover:bg-slate-50"
+        >
+          🔍 Soruları tam gör / gözden geçir
+        </Link>
+      </div>
       {isDraft ? (
         <>
           {/* Otomatik doldur: müfredat ağırlıklarına göre rastgele set (Doc 18 §8) */}

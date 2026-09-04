@@ -4,3 +4,19 @@
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+
+/* Yazdırma: deneme gözden geçirme ekranı PDF'e basılabilsin diye panel kabuğu
+   (kenar menü, üst çubuk) çıktıdan düşer; içerik tam genişlikte akar ve soru
+   kartları sayfa ortasından ikiye bölünmez. */
+@media print {
+  aside,
+  header {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  body {
+    background: #fff;
+  }
+}

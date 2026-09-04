@@ -169,6 +169,48 @@ export interface AdminExamDetail {
   questions: AdminExamQuestion[];
 }
 
+/** Yayın öncesi gözden geçirme uçları (/admin/exams/:id/inceleme). */
+export type ExamReviewFlag =
+  | 'kaynak-yok'
+  | 'aciklama-yok'
+  | 'daha-once-kullanildi'
+  | 'benzer-kok'
+  | 'madde-yok'
+  | 'sik-bozuk';
+
+export interface ExamReviewQuestion {
+  order: number;
+  questionId: string;
+  versionId: string;
+  versionNo: number;
+  stem: string;
+  mediaUrl: string | null;
+  explanation: string | null;
+  sourceLabel: string | null;
+  articleNo: string | null;
+  topicId: string;
+  topicName: string;
+  courseId: string;
+  courseName: string;
+  options: { id: string; label: string; text: string; isCorrect: boolean }[];
+  usageCount: number;
+  lastUsedIn: { title: string; startAt: string } | null;
+  bayraklar: ExamReviewFlag[];
+}
+
+export interface ExamReview {
+  exam: {
+    id: string;
+    title: string;
+    status: ContentStatus;
+    startAt: string;
+    durationMinutes: number;
+  };
+  questionCount: number;
+  dersDagilimi: { courseName: string; count: number }[];
+  questions: ExamReviewQuestion[];
+}
+
 export interface ExamResults {
   summary: {
     completed: number;
