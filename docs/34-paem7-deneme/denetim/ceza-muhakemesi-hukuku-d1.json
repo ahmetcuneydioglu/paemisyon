@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s21",
+  "cevap": "E",
+  "guven": "yuksek",
+  "dayanak": "CMK md 2/1-c ve 2/1-g",
+  "gerekce": "Müdafi, şüpheli veya sanığın savunmasını yapan avukat; ifade alma ise şüphelinin kolluk veya C. savcısı tarafından dinlenmesidir (sorgu hâkim/mahkeme önündedir).",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s22",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 12/2",
+  "gerekce": "Madde 12/2 zincirleme suçlarda SON suçun işlendiği yer mahkemesini yetkili kılar; şıkta 'ilk suç' denildiği için yanlıştır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s23",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 19/2",
+  "gerekce": "Kovuşturmanın yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Adalet Bakanı Yargıtaydan ister.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s24",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 36/2",
+  "gerekce": "'İnfaz edilecek kararlar, Cumhuriyet Başsavcılığına verilir.' hükmü birebir B şıkkını karşılar.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s25",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 40/1",
+  "gerekce": "'Kusuru olmaksızın bir süreyi geçirmiş olan kişi, eski hale getirme isteminde bulunabilir' hükmü kökle birebir aynıdır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s26",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "CMK md 50/1-a",
+  "gerekce": "Dinlenme sırasında onbeş yaşını doldurmamış olanlar yeminsiz dinlenir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s27",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 91/1",
+  "gerekce": "Kanun gözaltı süresini 'yakalama anından itibaren yirmidört saat' olarak belirler; B şıkkındaki 'gözaltı kararından itibaren' ifadesi yanlıştır, A/C/D/E şıkları md 91/1-3 ile örtüşür.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s28",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 110/2-(4) (Ek: 8/7/2021-7331/16 md.)",
+  "gerekce": "Adli kontrol yükümlülüğünün devamı 'en geç dört aylık aralıklarla' gözden geçirilip karara bağlanır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s29",
+  "cevap": "A",
+  "guven": "yuksek",
+  "dayanak": "CMK md 39/1",
+  "gerekce": "Gün ile belirlenen süreler tebligatın yapıldığının ERTESİ günü işlemeye başlar; şıkta tebligat günü denildiği için yanlıştır.",
+  "eskime": null,
+  "uyari": "C ve E şıkları aynı hükmü (md 39/3) veriyor; E yalnızca cümlenin devamını da içeriyor — mükerrer şık kusuru. A şıkkında ayrıca OCR bozukluğu var ('yapıldığının gün')."
+ },
+ {
+  "id": "s30",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 268/3-b",
+  "gerekce": "Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin kararlarına itirazı, yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimi inceler.",
+  "eskime": null,
+  "uyari": null
+ }
+]

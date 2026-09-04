@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s31",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "Ceza hukuku doktrini + Anayasa md 38 (suçta ve cezada kanunilik) ve md 90/5 (usulüne göre yürürlüğe konmuş temel hak sözleşmeleri kanun hükmünde)",
+  "gerekce": "Anayasa, kanunlar (CMK, TMK) ve kanun hükmündeki AİHS bağlayıcı/asli kaynaktır; içtihatlar ise yardımcı (tali) kaynaktır.",
+  "eskime": null,
+  "uyari": "B şıkkında yazım hatası: 'Ceza Mahkemesi Kanunu' → doğrusu 'Ceza Muhakemesi Kanunu' (5271). Cevabı etkilemiyor."
+ },
+ {
+  "id": "s32",
+  "cevap": "B",
+  "guven": "orta",
+  "dayanak": "6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu md 10 (TCK md 18, 23/4/2016-6706/36 ile mülga)",
+  "gerekce": "Geri vermede hükümlülük hâli için aranan alt sınır dört ay hürriyeti bağlayıcı cezadır; 'altı aydan az ceza almamalı' şeklindeki koşul mevzuatta yoktur.",
+  "eskime": null,
+  "uyari": "E şıkkı da tam doğru değil: geri verme için ikili/çok taraflı antlaşma zorunlu olmayıp mütekabiliyet esası da yeterlidir; bu yönüyle soruda ikinci bir 'koşul olmayan' şık bulunuyor."
+ },
+ {
+  "id": "s33",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "6706 sayılı Kanun md 16/1",
+  "gerekce": "Geri verme talebi hakkında karar vermeye kişinin bulunduğu yer ağır ceza mahkemesi, bulunduğu yer belli değilse Ankara Ağır Ceza Mahkemesi yetkilidir.",
+  "eskime": null,
+  "uyari": "OCR: C şıkkı 'Ankara Ağır Ceza Muhakemesi' yazılmış; doğrusu 'Ankara Ağır Ceza Mahkemesi'. Cevabı etkilemiyor."
+ },
+ {
+  "id": "s34",
+  "cevap": "C",
+  "guven": "orta",
+  "dayanak": "TCK md 23 (netice sebebiyle ağırlaşmış suç) + suç genel teorisi",
+  "gerekce": "Fail, mağdur, nedensellik bağı ve nitelikli haller suçun maddi unsurları içinde incelenirken, netice sebebiyle ağırlaşmış suç kast-taksir bileşimine dayandığı için manevi unsur başlığında yer alır (s36'da soru da bunu böyle kabul ediyor).",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s35",
+  "cevap": "E",
+  "guven": "orta",
+  "dayanak": "TCK md 22/2-3 + taksir doktrini",
+  "gerekce": "Taksirin klasik unsurları fiilin taksirle işlenebilen bir suç olması, hareketin iradi olması, dikkat ve özen yükümlülüğüne aykırılık, neticenin istenmemesine rağmen öngörülebilir olması ve nedensellik bağıdır; 'neticenin meydana gelmiş olması' bu unsur listesinde değil, suçun maddi unsurları içinde yer alır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s36",
+  "cevap": "E",
+  "guven": "orta",
+  "dayanak": "TCK md 23",
+  "gerekce": "TCK md 23 ağır netice bakımından failin en azından taksirle hareket etmiş olmasını arar; temel suçun 'taksirle de işlenebilen bir suç olmaması' diye bir koşul yoktur (kasten yaralama hem taksirle işlenebilir hem de tipik netice sebebiyle ağırlaşmış suç temelidir).",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s37",
+  "cevap": "B",
+  "guven": "orta",
+  "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b; TBK md 63/2",
+  "gerekce": "III yanlıştır (zorunluluk halinde doğan zarar için tazmin yükümlülüğü vardır), V yanlıştır (zorunluluk halinde beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri yerindedir.",
+  "eskime": null,
+  "uyari": "V satırının meşru müdafaa sütununda 'verili' yazılmış (OCR: 'verilir'); IV satırındaki 'ceza sorumluluğunu kaldıran neden' nitelemesi doktrinde 'kusurluluğu kaldıran neden' olarak geçse de TCK'nın bölüm başlığıyla uyumlu olduğundan yanlış sayılmadı."
+ },
+ {
+  "id": "s38",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "TCK md 43/1",
+  "gerekce": "Madde 'aynı suçun birden fazla işlenmesi' dediğine göre zincirleme suç için en az iki kez işlenmesi yeterlidir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s39",
+  "cevap": "A",
+  "guven": "yuksek",
+  "dayanak": "TCK md 43/2 ve 43/3",
+  "gerekce": "Aynı suçun tek bir fiille birden fazla kişiye karşı işlenmesinde md 43/1 uygulanır; hırsızlık md 43/3'teki istisnalar arasında olmadığı için tek hırsızlık suçundan hüküm kurulup ceza artırılır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s40",
+  "cevap": "E",
+  "guven": "yuksek",
+  "dayanak": "TCK md 82/1",
+  "gerekce": "Md 82/1'de tasarlayarak (a), boşandığı eşe karşı (d), kan gütme saikiyle (j) ve çocuğa karşı (e) işlenmesi nitelikli hal sayılmıştır; 'yabancıya karşı işlenmesi' maddede yer almaz.",
+  "eskime": null,
+  "uyari": null
+ }
+]

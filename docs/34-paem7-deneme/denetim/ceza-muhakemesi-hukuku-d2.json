@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s21",
+  "cevap": "E",
+  "guven": "yuksek",
+  "dayanak": "CMK md 2/1-c ve 2/1-g",
+  "gerekce": "Müdafi şüpheli/sanığın savunmasını yapan avukat; şüphelinin kolluk veya C. savcısı tarafından dinlenmesi ise ifade almadır (hâkim/mahkeme yapsaydı sorgu olurdu).",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s22",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 12/2 (ve 12/1, 12/6)",
+  "gerekce": "Zincirleme suçlarda ilk suçun değil SON suçun işlendiği yer mahkemesi yetkilidir; diğer şıklar md 12/1, 12/2 ve 7331 sayılı Kanunla eklenen md 12/6 ile uyumludur.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s23",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 19/2",
+  "gerekce": "Kovuşturmanın yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Adalet Bakanı Yargıtaydan ister.",
+  "eskime": null,
+  "uyari": "OCR: kökte '5271 sayıl' → '5271 sayılı'. Cevabı etkilemiyor."
+ },
+ {
+  "id": "s24",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 36/2",
+  "gerekce": "'İnfaz edilecek kararlar, Cumhuriyet Başsavcılığına verilir.'",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s25",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 40/1",
+  "gerekce": "'Kusuru olmaksızın bir süreyi geçirmiş olan kişi, eski hale getirme isteminde bulunabilir.'",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s26",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "CMK md 50/1-a",
+  "gerekce": "Dinlenme sırasında onbeş yaşını doldurmamış olanlar yeminsiz dinlenir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s27",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 91/1",
+  "gerekce": "Madde, yirmi dört saatlik sürenin 'yakalama anından itibaren' işlediğini söyler; B şıkkı süreyi 'gözaltı kararından itibaren' başlattığı için yanlıştır (A, C, D, E madde metniyle aynıdır).",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s28",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "CMK md 110/4 (Ek: 8/7/2021-7331/16)",
+  "gerekce": "Adli kontrol yükümlülüğünün devamı en geç dört aylık aralıklarla gözden geçirilir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s29",
+  "cevap": "A",
+  "guven": "yuksek",
+  "dayanak": "CMK md 39/1",
+  "gerekce": "Gün ile belirlenen süreler tebligatın yapıldığı gün değil, yapıldığının ERTESİ GÜNÜ işlemeye başlar; B, C, D, E md 39/2-3-4 ile uyumludur.",
+  "eskime": null,
+  "uyari": "C ve E şıkları aynı hükmü (md 39/3) tekrarlıyor, E yalnızca cümlenin devamını ekliyor; ayrıca A şıkkı OCR'da bozulmuş ('tebligatın yapıldığının gün') — asıl metinde 'tebligatın yapıldığı gün' olmalı."
+ },
+ {
+  "id": "s30",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "CMK md 268/3-b (Değişik: 8/7/2021-7331/24 md.)",
+  "gerekce": "Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin kararlarına itirazı, yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimi inceler.",
+  "eskime": null,
+  "uyari": "Değişiklik 14/7/2021'de yürürlüğe girdiği için Mayıs 2022'de de cevap B'dir; ancak soru 6545 dönemi alışkanlığıyla hazırlanmışsa kitap anahtarı A (ağır ceza) olabilir — yürürlükteki metne göre doğru şık B."
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s31",
+  "cevap": "D",
+  "guven": "yuksek",
+  "dayanak": "Anayasa md 38/1 (suçta ve cezada kanunilik); ceza hukuku genel teorisi — asli/yardımcı kaynak ayrımı",
+  "gerekce": "Kanunilik ilkesi gereği ceza hukukunun asli kaynakları yazılı ve bağlayıcı metinlerdir (Anayasa, kanunlar, usulüne uygun yürürlüğe konmuş uluslararası sözleşmeler); içtihatlar ve doktrin ise yalnızca yardımcı kaynaktır.",
+  "eskime": null,
+  "uyari": "OCR: B şıkkı 'Ceza Mahkemesi Kanunu' → '5271 sayılı Ceza Muhakemesi Kanunu'; C şıkkı 'Avrupa Konseyi İnsan Hakları Sözleşmesi' → 'Avrupa İnsan Hakları Sözleşmesi'. Cevabı etkilemiyor."
+ },
+ {
+  "id": "s32",
+  "cevap": "B",
+  "guven": "orta",
+  "dayanak": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Kanunu md 10-11 (TCK md 18 mülga: 23/4/2016-6706/36); Suçluların İadesine Dair Avrupa Sözleşmesi md 2",
+  "gerekce": "Hükümlülük halinde iade eşiği en az 4 ay hapistir; 'altı aydan az ceza almamalı' diye bir koşul yoktur, diğer şıklar (çifte suçluluk, 1 yıl eşiği, vatandaş olmama) iade koşullarıdır.",
+  "eskime": null,
+  "uyari": "E şıkkı da tartışmaya açık: iade için mutlaka anlaşma şart değildir, mütekabiliyet yeterlidir; bu haliyle iki şık savunulabilir."
+ },
+ {
+  "id": "s33",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "6706 sayılı Kanun md 17 (mülga TCK md 18/3 ile aynı yönde)",
+  "gerekce": "İade talebi hakkında karar vermeye kişinin bulunduğu yer ağır ceza mahkemesi, bulunduğu yer belli değilse Ankara ağır ceza mahkemesi yetkilidir.",
+  "eskime": null,
+  "uyari": "OCR kusuru: 'Ankara Ağır Ceza Muhakemesi' → 'Ankara Ağır Ceza Mahkemesi'."
+ },
+ {
+  "id": "s34",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "TCK md 23 (netice sebebiyle ağırlaşmış suç); suç genel teorisi",
+  "gerekce": "Netice sebebiyle ağırlaşmış suç manevi unsur başlığı altında incelenir (soru 36 da bunu böyle kurar); fail, mağdur, nedensellik bağı ve nitelikli haller maddi unsurlar arasındadır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s35",
+  "cevap": "E",
+  "guven": "orta",
+  "dayanak": "TCK md 22/2-3 (taksir tanımı)",
+  "gerekce": "A-D şıkları taksirin klasik unsur listesini (taksirle işlenebilen suç, iradi hareket, öngörülebilir ama istenmeyen netice, dikkat ve özen yükümlülüğüne aykırılık) karşılar; listedeki beşinci unsur nedensellik bağıdır, 'neticenin meydana gelmiş olması' ayrı bir unsur olarak sayılmaz.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s36",
+  "cevap": "E",
+  "guven": "orta",
+  "dayanak": "TCK md 23; TCK md 87/4 (kasten yaralama sonucu ölüm)",
+  "gerekce": "Temel suçun kasten işlenmiş olması yeterlidir; o suçun ayrıca taksirle işlenememesi aranmaz — arketip örnek olan yaralama taksirle de işlenebilen bir suçtur.",
+  "eskime": null,
+  "uyari": "D şıkkı ('her iki suç aynı mağdur üzerinde meydana gelmelidir') da doktrinde zorunlu koşul olarak sayılmaz; iki şık savunulabilir görünüyor."
+ },
+ {
+  "id": "s37",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b",
+  "gerekce": "III yanlıştır (zorunluluk halinde TBK 63/2 uyarınca hakkaniyet tazminatı yükümlülüğü doğabilir), V yanlıştır (zorunluluk hali kusurluluğu kaldırdığından CMK 223/3-b gereği beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri doğrudur.",
+  "eskime": null,
+  "uyari": "Tabloda V satırında 'beraat kararı verili' yazım eksikliği var (OCR/dizgi); cevabı etkilemiyor."
+ },
+ {
+  "id": "s38",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "TCK md 43/1",
+  "gerekce": "Madde 'aynı suçun birden fazla işlenmesi' dediğinden zincirleme suç için en az iki kez işlenmesi yeterlidir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s39",
+  "cevap": "A",
+  "guven": "yuksek",
+  "dayanak": "TCK md 43/2 (ve md 43/3, 141)",
+  "gerekce": "Aynı suçun birden fazla kişiye karşı tek bir fiille işlenmesinde zincirleme suç hükmü uygulanır: tek hırsızlık suçundan bir ceza verilip artırılır; cebir/tehdit olmadığı için yağma söz konusu değildir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s40",
+  "cevap": "E",
+  "guven": "yuksek",
+  "dayanak": "TCK md 82/1",
+  "gerekce": "Madde 82/1'de tasarlayarak (a), boşandığı eşe karşı (d), çocuğa karşı (e) ve kan gütme saikiyle (j) işlenme nitelikli hal olarak sayılmış; mağdurun yabancı olması sayılan haller arasında yer almaz.",
+  "eskime": null,
+  "uyari": null
+ }
+]

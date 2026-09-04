@@ -1,0 +1,219 @@
+{
+ "baslik": "HAKEM TURU",
+ "sorular": [
+  {
+   "id": "s11",
+   "ders": "İdare Hukuku",
+   "kok": "Cumhurbaşkanı tarafından tesis edilen işlem neticesinde kurulan Kamu tüzel kişiliği işlemine karşı iptal davaları aşağıdaki yargı organlarından hangisinde görülür?",
+   "siklar": {
+    "A": "Danıştay",
+    "B": "Anayasa mahkemesi",
+    "C": "Bölge idare mahkemesi",
+    "D": "Sayıştay",
+    "E": "Yargıtay"
+   },
+   "kitapCevabi": "B",
+   "denetciCevaplari": [
+    "A",
+    "A"
+   ],
+   "denetciGerekcesi": "Danıştay Kanunu md 24/1-a uyarınca Cumhurbaşkanı kararlarına karşı açılacak iptal davaları ilk derece mahkemesi olarak Danıştay'da görülür.",
+   "denetciDayanagi": "2575 sayılı Danıştay Kanunu md 24/1-a (Değişik: 2/7/2018-KHK-703/184) + Anayasa md 123/3",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Kök bozuk: 'Cumhurbaşkanı tarafından tesis edilen işlem neticesinde kurulan Kamu tüzel kişiliği işlemine karşı' ifadesi iki farklı okumaya açık. Dava edilen işlem Cumhurbaşkanı kararı ise Danıştay (2575 md 24/1-a); kamu tüzel kişiliği Anayasa md 123/3 uyarınca Cumhurbaşkanlığı KARARNAMESİ ile kurulmuşsa kararnamenin iptali Anayasa Mahkemesi'nin görevindedir (Anayasa md 148) ve doğru şık B olurdu. Kurulan tüzel kişinin kendi işlemi kastediliyorsa hiçbir şık doğru değildir (genel görevli idare mahkemesi).",
+    "Kök çift anlamlı: Anayasa md 123/3 uyarınca kamu tüzel kişiliği ancak kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir; kuruluş işlemi CBK ise 2575 md 24/1-b bunu Danıştay'ın görevi dışında bırakır ve denetim Anayasa Mahkemesine (B şıkkı) ait olur. 'Cumhurbaşkanı tarafından tesis edilen işlem' ifadesi CB kararı okunduğunda A, CBK okunduğunda B doğrudur."
+   ]
+  },
+  {
+   "id": "s16",
+   "ders": "İdare Hukuku",
+   "kok": "Aşağıdakilerden hangisi kamu hizmetine egemen olan ilkeler arasında yer almaz?",
+   "siklar": {
+    "A": "Devamlılık",
+    "B": "Değişkenlik",
+    "C": "Nesnellik",
+    "D": "Bedelsizlik",
+    "E": "Laiklik"
+   },
+   "kitapCevabi": "E",
+   "denetciCevaplari": [
+    "D",
+    "D"
+   ],
+   "denetciGerekcesi": "Kamu hizmetinin klasik üç ilkesi süreklilik, değişkenlik ve eşitlik/nesnelliktir; bedelsizlik (meccanilik) Türk hukukunda genel bir ilke sayılmaz, kamu hizmetlerinin çoğu harç/ücret karşılığı görülür.",
+   "denetciDayanagi": "İdare hukuku doktrini — 'lois de Rolland' (süreklilik, değişkenlik, eşitlik/nesnellik)",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Kök tartışmalı: Türk ders kitaplarının bir kısmı hem bedelsizliği (meccanilik) hem laikliği kamu hizmeti ilkeleri arasında sayar; bu durumda D ve E birlikte savunulabilir hale gelir. Mevzuat metnine dayanmayan doktrin sorusu.",
+    "Kusurlu soru: kaynağa göre hem 'Bedelsizlik' hem 'Laiklik' kamu hizmeti ilkeleri arasında sayılabiliyor; birçok Türk kaynağı laikliği ilke olarak listeler, dolayısıyla iki savunulabilir doğru şık var."
+   ]
+  },
+  {
+   "id": "s39",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "A, B ve C isimli şahıslar kafeteryada oturmaktadırlar. D isimli şahıs bir an dikkatsizliklerinden yararlanarak hepsinin kendisine ait olan laptoplarını alarak kaçar. D isimli şahsın cezai sorumluluğu ile alakalı aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Bir hırsızlık suçundan sorumlu olup cezası artırılarak uygulanır.",
+    "B": "Bir yağma suçundan sorumlu olup cezası artırılarak uygulanır",
+    "C": "Üç hırsızlık suçundan sorumlu olup ayrı ayrı cezalandırılır",
+    "D": "Üç ayrı yağma suçundan sorumlu olup ayrı ayrı cezalandırılır",
+    "E": "Cezai sorumluluğu yoktur"
+   },
+   "kitapCevabi": "C",
+   "denetciCevaplari": [
+    "A",
+    "A"
+   ],
+   "denetciGerekcesi": "Aynı suçun birden fazla kişiye karşı tek bir fiille işlenmesinde zincirleme suç hükmü uygulanır: tek hırsızlık suçundan bir ceza verilip artırılır; cebir/tehdit olmadığı için yağma söz konusu değildir.",
+   "denetciDayanagi": "TCK md 43/2 (ve md 43/3, 141)",
+   "eskimeNotlari": [],
+   "uyarilar": []
+  },
+  {
+   "id": "s51",
+   "ders": "Polis Mevzuatı",
+   "kok": "3201 sayılı Emniyet Teşkilatı Kanunu hükümlerine göre emniyet teşkilatı bölümleri aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "Vasıtali- vasıtasız",
+    "B": "Üniformalı ve üniformasız",
+    "C": "Adlı idari ve siyasi",
+    "D": "Adli ve idari",
+    "E": "Umumi ve hususi"
+   },
+   "kitapCevabi": "C",
+   "denetciCevaplari": [
+    "E",
+    "E"
+   ],
+   "denetciGerekcesi": "Md 3: 'Zabıta teşkilatı: Umumi ve hususi olmak üzere iki kısma ayrılır.'",
+   "denetciDayanagi": "3201 sayılı Kanun md 3",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Kök 'emniyet teşkilatı bölümleri' diyor; kanun metnindeki ayrım zabıta teşkilatına ilişkindir — kök terim olarak kaymış. OCR: 'Vasıtali', 'Adlı'.",
+    "Kök 'emniyet teşkilatı bölümleri' diyor, oysa umumi/hususi ayrımı md 3'te zabıta teşkilatı içindir; md 4'teki polis ayrımı ise 'üniformalı ve sivil'dir (B şıkkındaki 'üniformasız' değil). Kök bu yönüyle yanıltıcı."
+   ]
+  },
+  {
+   "id": "s53",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "3628 sayılı Mal Bildiriminde bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu hükümlerine göre aşağıdakilerden hangisi mal bildiriminde bulunması zorunlu olanlardan değildir?",
+   "siklar": {
+    "A": "Cumhurbaşkanı yardımcısı",
+    "B": "Kamu yararına çalışan dernek başkanları",
+    "C": "Sendika başkanları",
+    "D": "Siyasî parti genel başkanları",
+    "E": "Kamu Başdenetçisi"
+   },
+   "kitapCevabi": "C",
+   "denetciCevaplari": [
+    "E",
+    "C"
+   ],
+   "denetciGerekcesi": "Madde 2'de Cumhurbaşkanı yardımcıları (a bendi), siyasi parti genel başkanları ile kamu yararına sayılan dernek yönetici ve deneticileri (f bendi) açıkça sayılmış; Kamu Başdenetçisi ne bu maddede ne de 6328 sayılı Kanunda mal bildirimi yükümlüsü olarak anılmıştır.",
+   "denetciDayanagi": "3628 sayılı Kanun md 2",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Soru muhtemelen iki doğru cevaplı: sendika başkanları da 3628 md 2'de sayılmaz, yükümlülükleri 6356 sayılı Kanun md 29 üzerinden (md 2 son fıkrasındaki 'özel kanunlarına göre' atfıyla) doğar. Buna karşılık Kamu Başdenetçisi TBMM Genel Kurulunca seçildiği için (a) bendindeki 'her tür seçimle iş başına gelen kamu görevlileri' kapsamına sokulabileceği de savunulabilir; 'Kanun hükümlerine göre' denen kökte C ve E ayrımı net değil.",
+    "6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu md 29 sendika yöneticilerine mal bildirimi zorunluluğu getirir ve 3628 md 2 son fıkrası özel kanunlarına göre bildirimde bulunanları da bu Kanuna tabi kılar; bu nedenle şık yalnızca 'yalnız 3628 md 2 listesi' okumasıyla doğru olur."
+   ]
+  },
+  {
+   "id": "s82",
+   "ders": "İnsan Hakları",
+   "kok": "Aşağıdakilerden hangisi pozitif statü haklar arasında yer almaz?",
+   "siklar": {
+    "A": "Sağlık Hakkı",
+    "B": "Çalışma ve Sözleşme Özgürlüğü",
+    "C": "Çalışma Hakkı",
+    "D": "Sendika Kurma Hakkı",
+    "E": "Mülkiyet Hakkı"
+   },
+   "kitapCevabi": "E",
+   "denetciCevaplari": [
+    "B",
+    "B"
+   ],
+   "denetciGerekcesi": "Çalışma ve sözleşme hürriyeti devletten edim istemeyi değil devletin karışmamasını gerektiren negatif statü (koruyucu) hakkıdır; sağlık, çalışma ve sendika hakları isteme (pozitif statü) haklarıdır.",
+   "denetciDayanagi": "Jellinek statü kuramı; Anayasa md 35 (mülkiyet), md 48 (çalışma ve sözleşme hürriyeti), md 49-51, 56",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "İki doğru şık var: mülkiyet hakkı (E) da klasik doktrinde negatif statü hakkıdır (Anayasa md 35, Kişinin Hakları bölümü). Kök 'hangisi yer almaz' tekil cevap istediği için soru kusurlu; B ile E arasında ayrım yapılamıyor. Çalışma hakkı (C) ile çalışma ve sözleşme özgürlüğü (B) karşıtlığı kurulmuş olması B'yi hedeflendiği izlenimini veriyor, ancak bu bir tahmin.",
+    "Birden fazla doğru şık: Mülkiyet hakkı (E, Any. md 35 - kişinin hakları bölümü) da doktrinde tartışmasız negatif statü hakkıdır; B ile E arasında tek doğru ayırt edilemiyor."
+   ]
+  },
+  {
+   "id": "s87",
+   "ders": "İnsan Hakları",
+   "kok": "Avrupa Konseyinin temelini oluşturan sözleşme aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Roma Statüsü",
+    "B": "İnsan Hakları Evrensel Beyannamesi",
+    "C": "Avrupa İnsan Hakları Sözleşmesi",
+    "D": "Avrupa toplulukları Sözleşmesi",
+    "E": "Avrupa Konseyi sözleşmesi"
+   },
+   "kitapCevabi": "C",
+   "denetciCevaplari": [
+    "E",
+    "C"
+   ],
+   "denetciGerekcesi": "Avrupa Konseyi 1949 tarihli Statü (Londra Antlaşması) ile kurulmuştur; AİHS (1950) Konsey bünyesinde sonradan hazırlandığı için Konseyin temelini oluşturamaz.",
+   "denetciDayanagi": "Avrupa Konseyi Statüsü (Londra Antlaşması), 5 Mayıs 1949 (elde metin yok; künye)",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Şık metni özensiz: doğru künye 'Avrupa Konseyi Statüsü'dür, 'Avrupa Konseyi sözleşmesi' değil. Ayrıca kaynakların bir kısmı AİHS'i (C) 'Konseyin temel sözleşmesi' diye anlattığı için kök yanıltıcı; C ile E arasında cevap anahtarı çelişkisi olabilir.",
+    "Kök yanıltıcı: Avrupa Konseyini kuran belge 1949 tarihli Londra Antlaşması (Avrupa Konseyi Statüsü) olup AİHS 1950'de Konsey bünyesinde sonradan kabul edilmiştir; 'Avrupa Konseyi sözleşmesi' (E) şıkkı da kurucu belgeyi karşılayabilir - iki savunulabilir şık var."
+   ]
+  },
+  {
+   "id": "s90",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanakKaynagi": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Avrupa Toplulukları Adalet Divanı merkezi neresidir?",
+   "siklar": {
+    "A": "Strazburg",
+    "B": "Cenevre",
+    "C": "Lahey",
+    "D": "Brüksel",
+    "E": "New York"
+   },
+   "kitapCevabi": "D",
+   "denetciCevaplari": [
+    null,
+    null
+   ],
+   "denetciGerekcesi": "Avrupa Toplulukları Adalet Divanı (bugünkü adıyla Avrupa Birliği Adalet Divanı) 1952'den beri Lüksemburg'da bulunur; Lüksemburg şıklarda yer almadığı için doğru cevap yoktur.",
+   "denetciDayanagi": "Avrupa Birliği'nin İşleyişi Hakkında Antlaşma'ya ekli 6 No.lu Protokol (kurumların yeri) — ABAD'ın merkezi Lüksemburg",
+   "eskimeNotlari": [],
+   "uyarilar": [
+    "Hiçbir şık doğru değil: ABAD'ın merkezi Lüksemburg'dur. Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın merkezidir; şıklar bu iki mahkemeyle karıştırmaya yol açıyor. Muhtemelen OCR sırasında 'Lüksemburg' şıkkı düşmüş ya da soru kökü hatalı.",
+    "Hicbir sik dogru degil: dogru cevap Luksemburg, siklarda yer almiyor (siklardaki Lahey Uluslararasi Adalet Divani, Strazburg AIHM, Bruksel Komisyon/Konsey merkezidir). Muhtemelen OCR'da bir sik dusmus ya da soru hatali. Ayrica kurumun adi Lizbon Antlasmasi (yur. 1/12/2009) ile 'Avrupa Birligi Adalet Divani' olarak degismistir; merkez degismedi."
+   ]
+  },
+  {
+   "id": "s100",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanakKaynagi": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Aşağıdakilerden hangisinde yazım yanlışı vardır?",
+   "siklar": {
+    "A": "Süregelen",
+    "B": "Açgözlü",
+    "C": "Ön izleme",
+    "D": "Gökbilim",
+    "E": "Herkes"
+   },
+   "kitapCevabi": "D",
+   "denetciCevaplari": [
+    "C",
+    "C"
+   ],
+   "denetciGerekcesi": "TDK 'önizleme'yi bitişik yazar; 'Ön izleme' ayrı yazımı yanlıştır. Süregelen, açgözlü, gökbilim ve herkes doğru yazılmıştır.",
+   "denetciDayanagi": "TDK Yazım Kılavuzu — 'ön' ile kurulan birleşik kelimeler",
+   "eskimeNotlari": [],
+   "uyarilar": []
+  }
+ ]
+}

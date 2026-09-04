@@ -1,0 +1,253 @@
+{
+ "baslik": "ONARILAN — OCR metni düzeltilen sorular, karışık ders",
+ "not": "Bu soruların metni sayfa görüntüsünden onarıldı; önceki denetim bozuk metne dayanıyordu.",
+ "sorular": [
+  {
+   "id": "s6",
+   "ders": "Anayasa Hukuku",
+   "dayanak": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "I. Anayasanın sözüne aykırı olamaz II. Anayasanın ruhuna aykırı olamaz III. Demokratik toplum düzeninin ilkesine aykırı olamaz IV. Lâik Cumhuriyetin gereklerine aykırı olamaz V. Ölçülülük ilkesine aykırı olamaz. 1982 Anayasasına göre yukarıdakilerden hangisi/hangileri Temel Hak ve Hürriyetlerin sınırlandırma ölçütleri arasında yer alır?",
+   "siklar": {
+    "A": "I II III IV",
+    "B": "II III IV V",
+    "C": "I II III IV V",
+    "D": "I III IV V",
+    "E": "II IV V"
+   }
+  },
+  {
+   "id": "s8",
+   "ders": "Anayasa Hukuku",
+   "dayanak": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1982 Anayasasına göre ara seçimle alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Türkiye Büyük Millet Meclisi üyeliklerinde boşalma olması halinde, ara seçime gidilir.",
+    "B": "Ara seçim, her seçim döneminde bir defa yapılır.",
+    "C": "Yerel seçimden otuz ay geçmedikçe ara seçime gidilemez.",
+    "D": "Boşalan üyeliklerin sayısı, üye tamsayısının yüzde beşini bulduğu hallerde, ara seçimlerinin üç ay içinde yapılmasına karar verilir.",
+    "E": "Genel seçimlere bir yıl kala, ara seçimi yapılamaz."
+   }
+  },
+  {
+   "id": "s20",
+   "ders": "Anayasa Hukuku",
+   "dayanak": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "Genel Kurmay Başkanının atanma usulü ile alakalı aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Milli Savunma Bakanının teklifi cumhurbaşkanının onayı",
+    "B": "Milli Savunma Bakanı kararı",
+    "C": "Doğrudan Cumhurbaşkanı Kararnamesi",
+    "D": "Yüksek Askeri Şura teklifi Milli Savunma Bakanı onayı",
+    "E": "Yüksek Askeri Şura teklifi Cumhurbaşkanı onayı"
+   }
+  },
+  {
+   "id": "s24",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanak": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre \"Mahkeme başkanı veya hâkim, her türlü tebligatı, tüm gerçek veya özel hukuk tüzel kişileri veya kamu kurum ve kuruluşları ile ilgili yazışmaları yapar.\" İnfaz edilecek kararlar, aşağıdakilerden hangisine verilir?",
+   "siklar": {
+    "A": "Yetkili kolluk amiri",
+    "B": "Cumhuriyet Başsavcılığı",
+    "C": "Ceza İnfaz Büro Amirliği",
+    "D": "Ceza İnfaz Kurumu",
+    "E": "Ceza ve Tutuk evleri Genel Müdürlüğü"
+   }
+  },
+  {
+   "id": "s25",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanak": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre \"Kusuru olmaksızın bir süreyi geçirmiş olan kişi\" aşağıdakilerden hangisinden yararlanabilir?",
+   "siklar": {
+    "A": "İtiraz",
+    "B": "İptal",
+    "C": "Yargılamanın yenilenmesi",
+    "D": "Eski hale getirme",
+    "E": "Kanun yararına bozma"
+   }
+  },
+  {
+   "id": "s27",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanak": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre \"Gözaltı tedbiri\" ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Yakalanan kişi, Cumhuriyet Savcılığınca bırakılmazsa, soruşturmanın tamamlanması için gözaltına alınmasına karar verilebilir",
+    "B": "Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, gözaltı kararından itibaren yirmi dört saati geçemez.",
+    "C": "Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre on iki saatten fazla olamaz",
+    "D": "Gözaltına alma, bu tedbirin soruşturma yönünden zorunlu olmasına ve kişinin bir suçu işlediği şüphesini gösteren somut delillerin varlığına bağlıdır",
+    "E": "Toplu olarak işlenen suçlarda, delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu nedeniyle; Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir."
+   }
+  },
+  {
+   "id": "s28",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanak": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre Şüpheli veya sanığın adli kontrol yükümlülüğünün devamının gerekip gerekmeyeceği hususunda en geç kaç aylık aralıklarla gözden geçirilip karar verilir?",
+   "siklar": {
+    "A": "Bir",
+    "B": "İki",
+    "C": "Üç",
+    "D": "Dört",
+    "E": "Beş"
+   }
+  },
+  {
+   "id": "s37",
+   "ders": "Ceza Hukuku",
+   "dayanak": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "|  | Meşru müdafaa | Zorunluluk hali |\n| I | Saldırı olmalıdır | Tehlike olmalıdır |\n| II | Sadece insan saldırılarına karşı yapılabilir | Zorunluluk halinde insan, hayvan veya doğadan tehlike kaynaklanmış olabilir. |\n| III | Kişinin zarar tazmini yükümlülüğü bulunmamaktadır | Tehlike ortadan kalktıktan sonra ortaya çıkan zarar tazmin yükümlülüğü bulunmamaktadır. |\n| IV | Hukuka uygunluk nedenidir | Ceza sorumluluğunu kaldıran nedendir |\n| V | Fail hakkında beraat kararı verili | Fail hakkında beraat kararı verilir. |\n\nYukarıdaki yer verilen meşru müdafaa ve zorunluluk hali eşleştirmelerinden hangisi yanlış olarak verilmiştir?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "III V",
+    "C": "I III V",
+    "D": "II III IV",
+    "E": "I III IV V"
+   }
+  },
+  {
+   "id": "s42",
+   "ders": "Polis Mevzuatı",
+   "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Polis Kampları\nII. Öğretmen evleri\nIII. Askeri Dinlenme tesissileri\nIV. Polis evleri\nV. Araç kiralama işlemleri\n\n1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre yukarıdakilerden hangisi bu kanun hükümlerine tabi olan yerler arasında yer almaz?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II IV V",
+    "C": "III V",
+    "D": "III",
+    "E": "V"
+   }
+  },
+  {
+   "id": "s44",
+   "ders": "Polis Mevzuatı",
+   "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Gönüllülerin\nII. Sürücü belgesi almak için başvuruda bulunanların\nIII. Özel güvenlik görevlisi olarak istihdam edilenlerin\nIV. Sığınma talebinde bulunanların\nV. Bir suç işlediği gerekçesiyle yakalananların\n\n2559 Sayılı Polis vazife ve Salahiyet Kanunu hükümlerine göre polis yukarıdakilerden hangisinin parmak izini alabilir?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II III IV",
+    "C": "II III IV V",
+    "D": "III IV V",
+    "E": "I III IV"
+   }
+  },
+  {
+   "id": "s47",
+   "ders": "Polis Mevzuatı",
+   "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Yabancılar toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.\nII. Yabancıların bu Kanun hükümlerine göre toplantı ve gösteri yürüyüşü düzenlemeleri, İçişleri Bakanlığının iznine bağlıdır.\nIII. Yabancılar düzenleme kurulu üyesi olabilirler\nIV. Yabancılar önceden bildirimde bulunarak yapılacak toplantı ve gösteri yürüyüşünde topluluğa hitapta bulunabilirler.\nV. Toplantı ve gösteri yürüyüşü hakkı anayasada güvence altına alınmış olan temel hak ve hürriyetler arasında yer alır.\n\nYabancıları toplantı ve gösteri yürüyüşü düzenlemeleri için yukarıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "I II III IV",
+    "B": "I II IV V",
+    "C": "I II III IV V",
+    "D": "I IV V",
+    "E": "II III IV V"
+   }
+  },
+  {
+   "id": "s48",
+   "ders": "Polis Mevzuatı",
+   "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Şehirlerarası karayolları II. Genele yollar III. Kamu hizmeti görülen bina eklentilerinde IV. Kilise V. Cami 2911 sayılı kanuna göre yukarıdakilerden hangisi toplantı ve gösteri yürüyüşü yapılması yasak olan yerlerden değildir?",
+   "siklar": {
+    "A": "I II",
+    "B": "II",
+    "C": "III",
+    "D": "I II III IV V",
+    "E": "II III IV V"
+   }
+  },
+  {
+   "id": "s54",
+   "ders": "Polis Mevzuatı",
+   "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Hükûmete karşı suç işlemek II. Türkiye Cumhuriyeti Hükûmetine karşı silahlı isyan etmek III. Silahlı örgüt kurmak IV. Savaş zamanında emirlere uymama V. Yabancı hizmetine asker yazma, yazılma 3713 sayılı Terörle Mücadele Kanunu hükümlerine göre yukarıdakilerden hangisi terör suçudur?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "IV V",
+    "C": "II IV V",
+    "D": "IV",
+    "E": "I II III V"
+   }
+  },
+  {
+   "id": "s73",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanak": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Mondros Ateşkes Antlaşmasının aşağıdaki maddelerinden hangisi, Anadolu'nun tamamen işgal edilebileceği anlamını taşımaktadır?",
+   "siklar": {
+    "A": "Bütün demiryolları itilaf devletlerine teslim edilecek",
+    "B": "Her türlü haberleşme cihazları itilaflarca denetlenecek",
+    "C": "Osmanlı ordusu terhis edilecek",
+    "D": "İtilaf devletleri güvenliklerini tehdit edici bir durumda, önemli stratejik noktaları işgal edebilecek",
+    "E": "Azınlıkların çoğunluğu sağladığı bölgelerde azınlıklar bağımsız devletler kurabilecek"
+   }
+  },
+  {
+   "id": "s75",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanak": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Aşağıdaki cephelerden hangisinde Osmanlı Devleti toprak kazanmak amacıyla taarruz etmiştir?",
+   "siklar": {
+    "A": "Hicaz-Yemen",
+    "B": "Suriye-Filistin",
+    "C": "Galiçya-Makedonya",
+    "D": "Kanal-Kafkas",
+    "E": "Irak-Filistin"
+   }
+  },
+  {
+   "id": "s79",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanak": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Mustafa Kemal Son Osmanlı Mebussan Meclisinde \" Misak-ı Milli Kararlarını \" meclise kabul ettirmekle; I. Mecliste Padişah taraftarlarını sindirme II. Milli Mücadelenin haklılığına resmiyet kazandırma III. Ulusal mücadelede Mebussan Meclisinin desteğini sağlama Durumlarından hangisini ya da hangilerini amaçlamıştır?",
+   "siklar": {
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "Yalnız III",
+    "D": "I-II",
+    "E": "I-II-II"
+   }
+  },
+  {
+   "id": "s80",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanak": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "I. TBMM'nin açılması II. Misak-ı Milli Kararlarının yayınlanması III. İstanbul'un resmen işgali IV. Son Osmanlı Mebussan Meclisi'nin açılması V. Son Osmanlı Mebussan Meclisinin dağıtılması Yukarıdaki olayların kronolojik sıralaması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "V-II-III-IV-I",
+    "B": "III-I-IV-V-II",
+    "C": "IV-III-II-I-V",
+    "D": "I-II-V-III-IV",
+    "E": "IV-II-III-V-I"
+   }
+  },
+  {
+   "id": "s96",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanak": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Birleşmiş Milletler Genel Kurulu, hangi tarihi ' Uluslararası İslamofobi ile Mücadele Günü ' olarak kabul etmiştir?",
+   "siklar": {
+    "A": "10 Aralık",
+    "B": "15 Nisan",
+    "C": "15 Mart",
+    "D": "10 Nisan",
+    "E": "26 Aralık"
+   }
+  },
+  {
+   "id": "s100",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanak": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Aşağıdakilerden hangisinde yazım yanlışı vardır?",
+   "siklar": {
+    "A": "Süregelen",
+    "B": "Açgözlü",
+    "C": "Ön izleme",
+    "D": "Gökbilim",
+    "E": "Herkes"
+   }
+  }
+ ]
+}

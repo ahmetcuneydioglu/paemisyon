@@ -1,0 +1,122 @@
+{
+ "parca": 1,
+ "sorular": [
+  {
+   "id": "s13",
+   "sayfa": 4,
+   "gorsel": "sayfa/s-04.png",
+   "mevcutKok": "Büyükşehir belediyesi aşağıdaki normlardan hangisiyle kurulur?",
+   "mevcutSiklar": {
+    "A": "Kanun",
+    "B": "Cumhurbaşkanı kararı",
+    "C": "Cumhurbaşkanlığı kararnamesi",
+    "D": "İçişleri Bakanı kararı",
+    "E": "İçişleri bakanı teklifi cumhurbaşkanı onayı"
+   }
+  },
+  {
+   "id": "s15",
+   "sayfa": 4,
+   "gorsel": "sayfa/s-04.png",
+   "mevcutKok": "Kamu Hizmeti İmtiyaz Sözleşmelerinde imtiyazcı hizmetin ifası sırasında tarafların iradesi dışında mücbir nedenlerden dolayı imtiyazının zararına olabilecek durumlar karşısında idareden sözleşmenin yeni koşullara uydurulmasını ve zararının geçici olarak tanzimini istemesine yarayan temel ilke aşağıdakilerden hangisidir?",
+   "mevcutSiklar": {
+    "A": "Öngörülemezlik (emprovizyon)",
+    "B": "Faith du princ",
+    "C": "Tahkim",
+    "D": "Belirsizlik",
+    "E": "Dengesizlik"
+   }
+  },
+  {
+   "id": "s16",
+   "sayfa": 4,
+   "gorsel": "sayfa/s-04.png",
+   "mevcutKok": "Aşağıdakilerden hangisi kamu hizmetine egemen olan ilkeler arasında yer almaz?",
+   "mevcutSiklar": {
+    "A": "Devamhlık",
+    "B": "Değişkenlik",
+    "C": "Nesnellik",
+    "D": "Bedelsizlik",
+    "E": "Laiklik"
+   }
+  },
+  {
+   "id": "s31",
+   "sayfa": 7,
+   "gorsel": "sayfa/s-07.png",
+   "mevcutKok": "Aşağıdakilerden hangisi ceza hukukunun asil kaynakları arasında yer almaz?",
+   "mevcutSiklar": {
+    "A": "Anayasa",
+    "B": "Ceza Mahkemesi Kanunu",
+    "C": "Avrupa Konseyi Ínsan Hakları Sözleşmesi",
+    "D": "İçtihatlar",
+    "E": "Terörle Mücadele Kanunu"
+   }
+  },
+  {
+   "id": "s33",
+   "sayfa": 7,
+   "gorsel": "sayfa/s-07.png",
+   "mevcutKok": "Suçluların İade talebi hakkında karar vermeye, kişinin bulunduğu yer ağır ceza mahkemesi yetkilidir. Kişinin bulunduğu yer belli değilse, aşağıdaki mahkemelerden hangisi yetkilidir?",
+   "mevcutSiklar": {
+    "A": "Yargıtay",
+    "B": "Danıştay",
+    "C": "Ankara Ağır Ceza Muhakemesi",
+    "D": "Anayasa Mahkemesi",
+    "E": "Uyuşmazlık Mahkemesi"
+   }
+  },
+  {
+   "id": "s40",
+   "sayfa": 9,
+   "gorsel": "sayfa/s-09.png",
+   "mevcutKok": "5237 sayılı Türk Ceza Kanunu hükümlerine göre aşağıdakilerden hangisi \"Kasten öldürme\" fiilinin nitelikli halleri arasında yer almaz?",
+   "mevcutSiklar": {
+    "A": "Tasarlayarak işlenmesi",
+    "B": "Boşandığı eşe karşı işlenmesi",
+    "C": "Kan gütme sakiyle işlenmesi",
+    "D": "Başkasının çocuğuna karşı işlenmesi",
+    "E": "Yabancıya karşı işlenmesi"
+   }
+  },
+  {
+   "id": "s41",
+   "sayfa": 9,
+   "gorsel": "sayfa/s-09.png",
+   "mevcutKok": "Aşağıdakilerden hangisi 657 sayılı Devlet Memurları Kanununda yer alan hizmet sınıfları arasında yer almaz?",
+   "mevcutSiklar": {
+    "A": "Sağlık Hizmetleri Sınıfi",
+    "B": "Eğitim Oğretim Hizmetleri Sınıfi",
+    "C": "Avukatlık Hizmetleri Sınıfı",
+    "D": "Din Hizmetleri Sınıfi",
+    "E": "Adliye Hizmetleri Sınıfi"
+   }
+  },
+  {
+   "id": "s50",
+   "sayfa": 11,
+   "gorsel": "sayfa/s-11.png",
+   "mevcutKok": "2918 sayılı karayolları trafik kanunu hükümlerine göre araç sınıfina bakılmaksızın kaç promil üstü alkollü araç kullandığı tespit edilen aday sürücülerin ehliyetleri daimi iptal edilir?",
+   "mevcutSiklar": {
+    "A": "10",
+    "B": "20",
+    "C": "50",
+    "D": "70",
+    "E": "75"
+   }
+  },
+  {
+   "id": "s53",
+   "sayfa": 11,
+   "gorsel": "sayfa/s-11.png",
+   "mevcutKok": "3628 sayılı Mal Bildiriminde bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu hükümlerine göre aşağıdakilerden hangisi mal bildiriminde bulunması zorunlu olanlardan değildir?",
+   "mevcutSiklar": {
+    "A": "Cumhurbaşkanı yardımcısı",
+    "B": "Kamu yararına çalışan dernek başkanları",
+    "C": "Sendika başkanları",
+    "D": "Siyasi parti genel başkanları",
+    "E": "Kamu Başdenetçisi"
+   }
+  }
+ ]
+}

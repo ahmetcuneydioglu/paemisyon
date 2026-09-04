@@ -1,0 +1,83 @@
+{
+ "parca": 3,
+ "sorular": [
+  {
+   "id": "s48",
+   "sayfa": 11,
+   "gorsel": "sayfa/s-11.png",
+   "mevcutKok": "I. Şehirlerarası karayolları II. Genele yollar III. Kamu hizmeti görülen bina eklentilerinde IV. Kilise V. Cami 2911 sayılı kanuna göre yukarıdakilerden hangisi toplantı ve gösteri yürüyüşü yapılması yasak olan yerlerden değildir?",
+   "mevcutSiklar": {
+    "A": "III",
+    "B": "II",
+    "C": "III",
+    "D": "II III IVV",
+    "E": "IIIIVV"
+   }
+  },
+  {
+   "id": "s54",
+   "sayfa": 12,
+   "gorsel": "sayfa/s-12.png",
+   "mevcutKok": "I. Hükûmete karşı suç işlemek II. Türkiye Cumhuriyeti Hükûmetine karşı silahlı isyan etmek III. Silahlı örgüt kurmak IV. Savas zamanında emirlere uymama V. Yabancı hizmetine asker yazma, yazılma 3713 sayılı Terörle Mücadele Kanunu hükümlerine göre yukarıdakilerden hangisi terör suçudur?",
+   "mevcutSiklar": {
+    "A": "IIIIIIVV",
+    "B": "IVV",
+    "C": "IIVV",
+    "D": "IV R",
+    "E": "IIIIV"
+   }
+  },
+  {
+   "id": "s71",
+   "sayfa": 14,
+   "gorsel": "sayfa/s-14.png",
+   "mevcutKok": "Milli Mücadelenin haklı olduğunu savunan ilk uluslararası belge aşağıdakilerden hangisidir?",
+   "mevcutSiklar": {
+    "A": "General Harbourd Raporu",
+    "B": "Lozan Antlaşması",
+    "C": "Amiral Bristol Raporu",
+    "D": "Paris Barış Konferansı",
+    "E": "Londra Konferansı"
+   }
+  },
+  {
+   "id": "s73",
+   "sayfa": 15,
+   "gorsel": "sayfa/s-15.png",
+   "mevcutKok": "Mondros Ateşkes Antlaşmasının aşağıdaki maddelerinden hangisi, Anadolu'nun tamamen isgal edilebileceği anlamını taşımaktadır?",
+   "mevcutSiklar": {
+    "A": "Bütün demiryolları itilaf devletlerine teslim edilecek",
+    "B": "Her türlü haberleşme cihazları itilaflarca denetlenecek",
+    "C": "Osmanlı ordusu terhis edilecek",
+    "D": "İtilaf devletleri güvenliklerini tehdit edici bir durumda, önemli stratejik noktaları işgal edebilecek",
+    "E": "Azınlıkların K çoğunluğu sağladığı bölgelerde azınlıklar bağımsız devletler kurabilecek"
+   }
+  },
+  {
+   "id": "s75",
+   "sayfa": 15,
+   "gorsel": "sayfa/s-15.png",
+   "mevcutKok": "Aşağıdaki cephelerden hangisinde Osmanlı Devleti toprak kazanmak amacıyla taarruz etmiștir?",
+   "mevcutSiklar": {
+    "A": "Hicaz-Yemen",
+    "B": "Suriye-Filistin",
+    "C": "Galiçya-Makedonya",
+    "D": "Kanal-Kafkas R",
+    "E": "Irak-Filistin"
+   }
+  },
+  {
+   "id": "s76",
+   "sayfa": 15,
+   "gorsel": "sayfa/s-15.png",
+   "mevcutKok": "Aşağıdakilerden hangisi Amasya Genelgesi kararları arasında yer almaz?",
+   "mevcutSiklar": {
+    "A": "Vatanın bütünlüğü ve ulusun bağımsızlı tehlikededir.",
+    "B": "Milli sınırlar içerisinde vatan bir bütündür, bölünemez",
+    "C": "Ulusun bağımsızlığını yine ulusun azim ve kararı kurtaracaktır",
+    "D": "Sivas'ta Milli bir kongre toplanmalıdır",
+    "E": "Etki ve denetimden uzak milli bir kurul oluşturulmalıdır"
+   }
+  }
+ ]
+}

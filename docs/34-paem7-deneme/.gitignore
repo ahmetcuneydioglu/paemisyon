@@ -1,0 +1,5 @@
+# Türetilebilir, commit'lenmez:
+# mevzuat/ → scripts/mevzuat-dosyaya-dok.ts ile veritabanından yeniden üretilir
+# sayfa/   → pdftoppm ile kaynak PDF'ten yeniden üretilir (PDF depoda DEĞİL)
+mevzuat/
+sayfa/

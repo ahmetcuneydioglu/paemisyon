@@ -1,0 +1,110 @@
+[
+ {
+  "id": "s1",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "Anayasa tarihi — 1924 Teşkilât-ı Esasiye Kanunu (md 104, 1876 Kanun-i Esasi'yi ilga eder)",
+  "gerekce": "1921 Teşkilât-ı Esasiye 1876 Kanun-i Esasi'yi yürürlükten kaldırmadığı için 1921-1924 arası ikili anayasa dönemi yaşandı; bu döneme 1924 Anayasası son verdi.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s2",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "Doktrin — meclis hükümeti sistemi (Özbudun, Türk Anayasa Hukuku)",
+  "gerekce": "Meclis hükümetinde yasama ve yürütme mecliste toplanır; yürütme (icra vekilleri) meclisçe kendi üyeleri arasından seçilir ve meclise karşı sorumludur.",
+  "eskime": null,
+  "uyari": "A şıkkı 'yürütmede toplanır' diyor (doğrusu yasamada/mecliste); E şıkkı Türkiye'de uygulamayı 1961'e bağlıyor (doğrusu 1920-1923 I. TBMM) — ikisi de çeldirici, kusur değil."
+ },
+ {
+  "id": "s3",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "1924 Anayasası md 26 (TBMM'nin kanunları yorumlaması)",
+  "gerekce": "Yasama yorumu yetkisi Türk anayasa hukukunda yalnız 1924 Anayasası döneminde TBMM'ye tanınmıştır; 1961 ve 1982 Anayasalarında bu yetki yoktur.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s4",
+  "cevap": "B",
+  "guven": "orta",
+  "dayanak": "Doktrin — 1924 Anayasası hükümet sistemi (Gözler/Özbudun)",
+  "gerekce": "1924 Anayasası kuvvetler birliği-görevler ayrılığı temelinde meclis hükümeti ile parlamenter sistem öğelerini birlikte taşıyan karma bir sistem kurmuştur.",
+  "eskime": null,
+  "uyari": "Bazı kaynaklar 1924'ü doğrudan 'parlamenter sisteme yaklaşan' diye anlatır; ancak baskın doktrin 'karma sistem' der."
+ },
+ {
+  "id": "s5",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "AY md 8",
+  "gerekce": "Yürütme yetkisi ve görevi Cumhurbaşkanı tarafından Anayasaya ve kanunlara uygun olarak kullanılır ve yerine getirilir.",
+  "eskime": null,
+  "uyari": "Maddedeki '(Bakanlar Kurulu)' ibaresi 6771 sayılı Kanunla (2017) çıkarılmıştır; 2022'de de bugünkü hâl yürürlükteydi."
+ },
+ {
+  "id": "s6",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "AY md 13",
+  "gerekce": "Md 13 sınırlamaların Anayasanın sözüne ve ruhuna, demokratik toplum düzeninin ve lâik Cumhuriyetin gereklerine ve ölçülülük ilkesine aykırı olamayacağını sayar; beş ölçütün tamamı metinde yer alır.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s7",
+  "cevap": "A",
+  "guven": "yuksek",
+  "dayanak": "AY md 33 ile md 66-74",
+  "gerekce": "Siyasi Haklar ve Ödevler bölümü md 66-74'tür (kamu hizmetine girme md 70, mal bildirimi md 71, vatan hizmeti md 72, dilekçe/bilgi edinme md 74); vakıf/dernek kurma hürriyeti md 33'te, Kişinin Hakları ve Ödevleri bölümündedir.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s8",
+  "cevap": "C",
+  "guven": "yuksek",
+  "dayanak": "AY md 78/3",
+  "gerekce": "Metin 'genel seçimden otuz ay geçmedikçe ara seçime gidilemez' der; C şıkkındaki 'yerel seçimden' ifadesi yanlıştır, diğer dört şık madde metniyle birebir örtüşür.",
+  "eskime": null,
+  "uyari": null
+ },
+ {
+  "id": "s9",
+  "cevap": "B",
+  "guven": "yuksek",
+  "dayanak": "AY md 118/5",
+  "gerekce": "Cumhurbaşkanı katılamadığı zamanlar Milli Güvenlik Kurulu Cumhurbaşkanı yardımcısının başkanlığında toplanır.",
+  "eskime": null,
+  "uyari": "Fıkradaki 'Başbakan' ibaresi 6771 sayılı Kanunla (2017, yür. 9/7/2018) 'Cumhurbaşkanı yardımcısı' olmuştur; 2022'de de bugünkü hâl yürürlükteydi."
+ },
+ {
+  "id": "s10",
+  "cevap": "E",
+  "guven": "yuksek",
+  "dayanak": "AY md 151 ve md 148/2",
+  "gerekce": "Md 151'e göre içtüzük dahil doğrudan iptal davası açma hakkı Resmî Gazetede yayımdan itibaren altmış günde düşer; 10 günlük süre yalnız şekil bozukluğuna dayalı denetim içindir, dolayısıyla 'TBMM İçtüzüğü değişikliğinde iptal davası süresi 10 gündür' ifadesi yanlıştır.",
+  "eskime": null,
+  "uyari": "A şıkkı 'kanun teklifleri' diyor; denetlenen şey teklif değil kabul edilmiş anayasa değişikliği kanunudur — E kadar açık bir yanlış olmasa da şık ifadesi özensiz."
+ },
+ {
+  "id": "s19",
+  "cevap": "D",
+  "guven": "dusuk",
+  "dayanak": "AY md 79/4 (YSK), md 159/3 (HSK), md 146/son (AYM), md 155/4 (Danıştay), 6112 s.K. md 35 (RTÜK)",
+  "gerekce": "YSK üyeleri salt çoğunluk ve gizli oyla aralarından bir başkan seçer; başkan Cumhurbaşkanınca seçilmez, dolayısıyla D yanlıştır.",
+  "eskime": null,
+  "uyari": "Sorunun kusuru: B şıkkı da yanlış. Md 159'a göre HSK'nın Başkanı Adalet Bakanıdır; 'Cumhurbaşkanı tarafından seçilir' ifadesi de doğru değil. İki yanlış şık bulunduğu için tek doğru cevap yok — cevap anahtarına göre B ya da D olabilir."
+ },
+ {
+  "id": "s20",
+  "cevap": "C",
+  "guven": "orta",
+  "dayanak": "AY md 117/3 (6771 s.K. ile 4. ve 5. fıkralar mülga)",
+  "gerekce": "Yürürlükteki metinde 'Cumhurbaşkanınca atanan Genelkurmay Başkanı' denir; teklif/onay mekanizması kaldırıldığından atama doğrudan Cumhurbaşkanı iradesiyle yapılır, bu da yalnız C şıkkına uyar.",
+  "eskime": null,
+  "uyari": "Terminoloji kusurlu: atama 'Cumhurbaşkanı kararı' ile yapılır, 'Cumhurbaşkanlığı kararnamesi' ile değil; C yine de tek savunulabilir şık."
+ }
+]

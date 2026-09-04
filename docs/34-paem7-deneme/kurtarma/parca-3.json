@@ -1,0 +1,653 @@
+{
+ "parca": 3,
+ "sorular": [
+  {
+   "id": "s58",
+   "ders": "(konusu yok)",
+   "dayanakKaynagi": "mevzuat/2860-*.md (Yardım Toplama) · mevzuat/5188-*.md + mevzuat/7190-*.md (Özel Güvenlik) — YENİ eklendi",
+   "kok": "5188 sayılı özel güvenlik hizmetlerine dair kanun hükümlerine göre korumave güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "İçişleri Bakanı",
+    "B": "Vali",
+    "C": "Özel Güvenlik Komisyonu",
+    "D": "il Emniyet Müdürü",
+    "E": "Özel Güvenlik Denetleme Başbakanlığı"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR kusurları: kökte \"korumave\" (koruma ve) bitişik yazılmış; D şıkkı \"il Emniyet Müdürü\" küçük harfle başlıyor. Cevabı etkilemiyor. Ayrıca E şıkkındaki \"Özel Güvenlik Denetleme Başbakanlığı\" var olmayan bir kurum (Başbakanlık 2018'de kaldırıldı) — açık çeldirici.",
+    "OCR kusuru: kökte 'korumave' (koruma ve) bitişik yazılmış; D şıkkı 'il Emniyet Müdürü' küçük harfle başlıyor. Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "5188 sayılı Kanun md 3/3",
+     "gerekce": "\"Komisyon, koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azamî miktarını ve niteliğini, gerekli hallerde diğer fizikî ve aletli güvenlik tedbirlerini belirlemeye yetkilidir.\" — yetkili makam özel güvenlik komisyonudur.",
+     "eskime": null,
+     "uyari": "OCR kusurları: kökte \"korumave\" (koruma ve) bitişik yazılmış; D şıkkı \"il Emniyet Müdürü\" küçük harfle başlıyor. Cevabı etkilemiyor. Ayrıca E şıkkındaki \"Özel Güvenlik Denetleme Başbakanlığı\" var olmayan bir kurum (Başbakanlık 2018'de kaldırıldı) — açık çeldirici."
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "5188 sayılı Kanun md 3/3",
+     "gerekce": "Komisyon, koruma ve güvenlik hizmetini yerine getirecek personelin bulundurulabilecek veya taşınabilecek silah ve teçhizatın azamî miktarını ve niteliğini, gerekli hallerde diğer fizikî ve aletli güvenlik tedbirlerini belirlemeye yetkilidir.",
+     "eskime": null,
+     "uyari": "OCR kusuru: kökte 'korumave' (koruma ve) bitişik yazılmış; D şıkkı 'il Emniyet Müdürü' küçük harfle başlıyor. Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s60",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "5276 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?",
+   "siklar": {
+    "A": "Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.",
+    "B": "Tanıklık konusu olay.",
+    "C": "Tanıklığa ilişkin bilgiler",
+    "D": "Tedbir veya tedbirlerin şekli ve süresi.",
+    "E": "Tanığa ilişkin geçmiş ikamet bilgileri"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR: kök 'Tanık Koruma Kanunu'nun numarasını 5276 yazmış; doğrusu 5726. Cevabı etkilemiyor.",
+    "OCR: kanun numarası '5276' yazılmış, doğrusu 5726 sayılı Tanık Koruma Kanunu. Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "5726 md 7/1",
+     "gerekce": "Kararda yer alacak hususlar arasında tanığın geçmiş ikamet bilgileri sayılmamıştır; diğer dört şık (a, b, c, ç bentleri) sayılmıştır.",
+     "eskime": null,
+     "uyari": "OCR: kök 'Tanık Koruma Kanunu'nun numarasını 5276 yazmış; doğrusu 5726. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "5726 md 7/1",
+     "gerekce": "Maddede sayılan yedi bent arasında 'tanığa ilişkin geçmiş ikamet bilgileri' yoktur; A, B, C ve D bentleri (a), (b), (c) ve (ç) olarak sayılmıştır.",
+     "eskime": null,
+     "uyari": "OCR: kanun numarası '5276' yazılmış, doğrusu 5726 sayılı Tanık Koruma Kanunu. Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s61",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "5326 Sayılı Kabahatler Kanunu hükümlerine göre kolluk tarafından dilencilik tespit edilmesi üzerine dilenci üzerindeki kazancın mülkiyetinin kamuya geçirilmesine aşağıdakilerden hangisi karar verir?",
+   "siklar": {
+    "A": "Mülki amir",
+    "B": "Belediye başkanı",
+    "C": "Belediye encümeni",
+    "D": "Zabıta amiri",
+    "E": "Cumhuriyet savcısı"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Madde metni mülki amir ile belediye encümenini alternatif sayar ve tespiti yapan birime göre ayrım açıkça yazılmaz; kök 'kolluk tarafından' demeseydi C de savunulabilirdi."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "5326 sayılı Kanun md 33/2",
+     "gerekce": "Dilencilikte idari para cezasına ve elkoymaya kolluk veya belediye zabıta görevlileri, mülkiyetin kamuya geçirilmesine mülki amir veya belediye encümeni karar verir; kökte tespiti kolluk yaptığı için karar mercii mülki amirdir.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "5326 sayılı Kanun md 33/2",
+     "gerekce": "Dilencilikte idari para cezası ve elkoymaya kolluk veya belediye zabıta görevlileri, mülkiyetin kamuya geçirilmesine mülki amir veya belediye encümeni karar verir; kolluğun tespit ettiği olayda karar mercii mülki amirdir.",
+     "eskime": null,
+     "uyari": "Madde metni mülki amir ile belediye encümenini alternatif sayar ve tespiti yapan birime göre ayrım açıkça yazılmaz; kök 'kolluk tarafından' demeseydi C de savunulabilirdi."
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "5326 sayılı Kanun md 33/2",
+     "gerekce": "Dilencilikte idari para cezasına ve elkoymaya kolluk veya belediye zabıta görevlileri, mülkiyetin kamuya geçirilmesine mülki amir veya belediye encümeni karar verir; kökte tespiti kolluk yaptığı için karar mercii mülki amirdir.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "5326 sayılı Kanun md 33/2",
+     "gerekce": "Dilencilikte idari para cezası ve elkoymaya kolluk veya belediye zabıta görevlileri, mülkiyetin kamuya geçirilmesine mülki amir veya belediye encümeni karar verir; kolluğun tespit ettiği olayda karar mercii mülki amirdir.",
+     "eskime": null,
+     "uyari": "Madde metni mülki amir ile belediye encümenini alternatif sayar ve tespiti yapan birime göre ayrım açıkça yazılmaz; kök 'kolluk tarafından' demeseydi C de savunulabilirdi."
+    }
+   ]
+  },
+  {
+   "id": "s62",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "5395 Çocuk Koruma Kanunu hükümlerine göre kaç yaşını doldurmuş kişi çocuk sıfatına haiz değildir?",
+   "siklar": {
+    "A": "10",
+    "B": "12",
+    "C": "15",
+    "D": "18",
+    "E": "13"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": "D",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "5395 sayılı Kanun elde bulunan mevzuat dosyaları arasında yok; cevap kanunun kendi tanım maddesine dayandırılmıştır."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "5395 md 3/1-a",
+     "gerekce": "Çocuk, daha erken yaşta ergin olsa bile onsekiz yaşını doldurmamış kişidir; 18'i dolduran çocuk sayılmaz.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "5395 sayılı Çocuk Koruma Kanunu md 3/1-a",
+     "gerekce": "Kanun çocuğu 'daha erken yaşta ergin olsa bile onsekiz yaşını doldurmamış kişi' olarak tanımlar; onsekiz yaşını dolduran artık çocuk sayılmaz.",
+     "eskime": null,
+     "uyari": "5395 sayılı Kanun elde bulunan mevzuat dosyaları arasında yok; cevap kanunun kendi tanım maddesine dayandırılmıştır."
+    }
+   ]
+  },
+  {
+   "id": "s71",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanakKaynagi": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Milli Mücadelenin haklı olduğunu savunan ilk uluslararası belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "General Harbourd Raporu",
+    "B": "Lozan Antlaşması",
+    "C": "Amiral Bristol Raporu",
+    "D": "Paris Barış Konferansı",
+    "E": "Londra Konferansı"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "General Harbord Raporu (24 Ekim 1919) da Türkleri haklı bulan bir uluslararası rapordur; 'ilk' ölçütü Bristol lehinedir ama kök A şıkkını yakın çeldirici yapar."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "Amiral Bristol Raporu (ABD, Ekim-Aralık 1919; İzmir'in işgalini soruşturan İtilaf komisyonu raporu)",
+     "gerekce": "İzmir'in işgalinde Rumların saldırgan olduğunu ve Türklerin haklı olduğunu tespit eden Bristol Raporu, Milli Mücadelenin haklılığını belgeleyen ilk uluslararası belgedir.",
+     "eskime": null,
+     "uyari": "General Harbord Raporu (24 Ekim 1919) da Türkleri haklı bulan bir uluslararası rapordur; 'ilk' ölçütü Bristol lehinedir ama kök A şıkkını yakın çeldirici yapar."
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "Amiral Mark L. Bristol Raporu (İzmir'in işgalini soruşturan ABD komisyonu, Ekim-Kasım 1919)",
+     "gerekce": "İzmir'in işgalini inceleyen Bristol Raporu işgalin haksızlığını ve Yunan zulmünü tespit ederek Milli Mücadelenin haklılığını belgeleyen ilk uluslararası rapordur; Harbourd Raporu (Ekim 1919) Ermeni iddialarına ilişkindir.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s76",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanakKaynagi": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Aşağıdakilerden hangisi Amasya Genelgesi kararları arasında yer almaz?",
+   "siklar": {
+    "A": "Vatanın bütünlüğü ve ulusun bağımsızlı tehlikededir.",
+    "B": "Milli sınırlar içerisinde vatan bir bütündür, bölünemez",
+    "C": "Ulusun bağımsızlığını yine ulusun azim ve kararı kurtaracaktır",
+    "D": "Sivas'ta Milli bir kongre toplanmalıdır",
+    "E": "Etki ve denetimden uzak milli bir kurul oluşturulmalıdır"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR kusuru: A şıkkında 'bağımsızlı' (bağımsızlığı). Cevabı etkilemiyor.",
+    "OCR kusuru: A şıkkında 'bağımsızlı' (bağımsızlığı). Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "Amasya Genelgesi, 22 Haziran 1919 (maddeleri) / Erzurum Kongresi, 23 Temmuz-7 Ağustos 1919",
+     "gerekce": "'Milli sınırlar içinde vatan bir bütündür, bölünemez' ilkesi Amasya Genelgesinde değil Erzurum Kongresi kararlarında (ve Misak-ı Milli'de) yer alır.",
+     "eskime": null,
+     "uyari": "OCR kusuru: A şıkkında 'bağımsızlı' (bağımsızlığı). Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "Amasya Genelgesi, 22 Haziran 1919; Erzurum Kongresi, 23 Temmuz-7 Ağustos 1919 / Misak-ı Milli, 28 Ocak 1920",
+     "gerekce": "'Milli sınırlar içinde vatan bir bütündür, bölünemez' ifadesi Amasya Genelgesinde değil Erzurum Kongresi ve Misak-ı Milli kararlarında yer alır; A, C, D, E maddeleri genelgenin kararlarıdır.",
+     "eskime": null,
+     "uyari": "OCR kusuru: A şıkkında 'bağımsızlı' (bağımsızlığı). Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s78",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanakKaynagi": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Atatürk döneminde milliyetçilik anlayışını güçlendirmek amacıyla; I. Halifeliğin kaldırılması II. Türk Tarih Kurumu'nun kurulması III. Türk Dil Kurumu'nun kurulması Yukarıdakilerden hangileri gerçekleştirilmiştir?",
+   "siklar": {
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "Yalnız III",
+    "D": "II ve III",
+    "E": "I, II ve III"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": "D",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kök kusurlu: 'hangileri gerçekleştirilmiştir' diye sorulmuş, oysa üç öncül de gerçekleştirilmiştir (lafzen E). Sorulmak istenen 'hangileri milliyetçilik amacı taşır' olmalıydı.",
+    "Kök ifadesi kusurlu: 'hangileri gerçekleştirilmiştir' dendiğinde üç öncül de gerçekleştirilmiştir; kastedilen 'milliyetçiliği güçlendirmek amacıyla yapılanlar hangileridir' olmalıydı."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Türk Tarih Kurumu (12 Nisan 1931) ve Türk Dil Kurumu (12 Temmuz 1932); Halifeliğin kaldırılması 3 Mart 1924 (429/431 sayılı kanunlar)",
+     "gerekce": "TTK ve TDK doğrudan milliyetçilik ilkesini güçlendirmeye yönelik kurumlardır; halifeliğin kaldırılması laiklik ve ulusal egemenlikle ilgilidir.",
+     "eskime": null,
+     "uyari": "Kök kusurlu: 'hangileri gerçekleştirilmiştir' diye sorulmuş, oysa üç öncül de gerçekleştirilmiştir (lafzen E). Sorulmak istenen 'hangileri milliyetçilik amacı taşır' olmalıydı."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Türk Tarih Kurumu, 12 Nisan 1931; Türk Dil Kurumu, 12 Temmuz 1932; Halifeliğin kaldırılması, 3 Mart 1924 (431 sayılı Kanun)",
+     "gerekce": "TTK ve TDK milli tarih ve dil bilincini geliştirmek yani milliyetçilik ilkesini güçlendirmek amacıyla kurulmuştur; halifeliğin kaldırılması ise laiklik ve ulusal egemenlik ilkesine yönelik bir inkılaptır.",
+     "eskime": null,
+     "uyari": "Kök ifadesi kusurlu: 'hangileri gerçekleştirilmiştir' dendiğinde üç öncül de gerçekleştirilmiştir; kastedilen 'milliyetçiliği güçlendirmek amacıyla yapılanlar hangileridir' olmalıydı."
+    }
+   ]
+  },
+  {
+   "id": "s79",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanakKaynagi": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "Mustafa Kemal Son Osmanlı Mebussan Meclisinde \" Misak-ı Milli Kararlarını \" meclise kabul ettirmekle; I. Mecliste Padişah taraftarlarını sindirme II. Milli Mücadelenin haklılığına resmiyet kazandırma III. Ulusal mücadelede Mebussan Meclisinin desteğini sağlama Durumlarından hangisini ya da hangilerini amaçlamıştır?",
+   "siklar": {
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "Yalnız III",
+    "D": "I-II",
+    "E": "I-II-II"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "E şıkkı 'I-II-II' olarak yazılmış; 'I-II-III' olmalı (OCR/dizgi). Ayrıca I. öncül ('padişah taraftarlarını sindirme') tartışmalı ve 'II-III' seçeneği hiç sunulmamış — soru kurgusu kusurlu.",
+    "Soru kusurlu: doğru öncül kümesi (II-III) seçeneklerde yok; E şıkkı da 'I-II-II' biçiminde yazılmış (OCR/dizgi: 'I-II-III'). Ayrıca I öncülü ('padişah taraftarlarını sindirme') amaç olarak tartışmalıdır ve kökte 'Mebussan' yazımı hatalıdır ('Mebusan')."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "Misak-ı Millî kararları (Son Osmanlı Mebusan Meclisi, 28 Ocak 1920)",
+     "gerekce": "Kararların meclise kabul ettirilmesi Millî Mücadele'nin haklılığına resmiyet kazandırma (II) ve Mebusan Meclisi'nin desteğini sağlama (III) amaçlarını taşır; seçeneklerde 'II-III' bileşimi bulunmadığından tek tutarlı şık üç öncülü birlikte veren E'dir.",
+     "eskime": null,
+     "uyari": "E şıkkı 'I-II-II' olarak yazılmış; 'I-II-III' olmalı (OCR/dizgi). Ayrıca I. öncül ('padişah taraftarlarını sindirme') tartışmalı ve 'II-III' seçeneği hiç sunulmamış — soru kurgusu kusurlu."
+    },
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "Misak-ı Millî, Osmanlı Mebusan Meclisi kararı, 28 Ocak 1920",
+     "gerekce": "Kararın son Osmanlı Mebusan Meclisine kabul ettirilmesi Millî Mücadelenin haklılığına resmiyet kazandırmayı (II) ve Meclisin desteğini sağlamayı (III) amaçlar; seçenekler arasında 'II-III' bulunmadığından bunları kapsayan tek şık E'dir.",
+     "eskime": null,
+     "uyari": "Soru kusurlu: doğru öncül kümesi (II-III) seçeneklerde yok; E şıkkı da 'I-II-II' biçiminde yazılmış (OCR/dizgi: 'I-II-III'). Ayrıca I öncülü ('padişah taraftarlarını sindirme') amaç olarak tartışmalıdır ve kökte 'Mebussan' yazımı hatalıdır ('Mebusan')."
+    },
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "Misak-ı Millî kararları (Son Osmanlı Mebusan Meclisi, 28 Ocak 1920)",
+     "gerekce": "Kararların meclise kabul ettirilmesi Millî Mücadele'nin haklılığına resmiyet kazandırma (II) ve Mebusan Meclisi'nin desteğini sağlama (III) amaçlarını taşır; seçeneklerde 'II-III' bileşimi bulunmadığından tek tutarlı şık üç öncülü birlikte veren E'dir.",
+     "eskime": null,
+     "uyari": "E şıkkı 'I-II-II' olarak yazılmış; 'I-II-III' olmalı (OCR/dizgi). Ayrıca I. öncül ('padişah taraftarlarını sindirme') tartışmalı ve 'II-III' seçeneği hiç sunulmamış — soru kurgusu kusurlu."
+    },
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "Misak-ı Millî, Osmanlı Mebusan Meclisi kararı, 28 Ocak 1920",
+     "gerekce": "Kararın son Osmanlı Mebusan Meclisine kabul ettirilmesi Millî Mücadelenin haklılığına resmiyet kazandırmayı (II) ve Meclisin desteğini sağlamayı (III) amaçlar; seçenekler arasında 'II-III' bulunmadığından bunları kapsayan tek şık E'dir.",
+     "eskime": null,
+     "uyari": "Soru kusurlu: doğru öncül kümesi (II-III) seçeneklerde yok; E şıkkı da 'I-II-II' biçiminde yazılmış (OCR/dizgi: 'I-II-III'). Ayrıca I öncülü ('padişah taraftarlarını sindirme') amaç olarak tartışmalıdır ve kökte 'Mebussan' yazımı hatalıdır ('Mebusan')."
+    }
+   ]
+  },
+  {
+   "id": "s80",
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "dayanakKaynagi": "Elde metin YOK — tarihî belge/olay künyesiyle (tarih + belge adı)",
+   "kok": "I. TBMM'nin açılması II. Misak-ı Milli Kararlarının yayınlanması III. İstanbul'un resmen işgali IV. Son Osmanlı Mebussan Meclisi'nin açılması V. Son Osmanlı Mebussan Meclisinin dağıtılması Yukarıdaki olayların kronolojik sıralaması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "V-II-III-IV-I",
+    "B": "III-I-IV-V-II",
+    "C": "IV-III-II-I-V",
+    "D": "I-II-V-III-IV",
+    "E": "IV-II-III-V-I"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kökte 'Mebussan' yazımı hatalı ('Mebusan')."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "1920 kronolojisi: Mebusan Meclisi'nin açılışı 12 Ocak, Misak-ı Millî 28 Ocak, İstanbul'un resmen işgali 16 Mart, Meclisin dağıtılması 18 Mart, TBMM'nin açılışı 23 Nisan",
+     "gerekce": "Sıralama IV-II-III-V-I olup yalnız E şıkkı bunu verir.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "1920 kronolojisi: 12 Ocak, 28 Ocak, 16 Mart, 11 Nisan, 23 Nisan 1920",
+     "gerekce": "Son Osmanlı Mebusan Meclisi'nin açılışı (12 Ocak) → Misak-ı Millî (28 Ocak) → İstanbul'un resmen işgali (16 Mart) → Meclisin dağıtılması (11 Nisan) → TBMM'nin açılması (23 Nisan) sırası IV-II-III-V-I'dir.",
+     "eskime": null,
+     "uyari": "Kökte 'Mebussan' yazımı hatalı ('Mebusan')."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "1920 kronolojisi: Mebusan Meclisi'nin açılışı 12 Ocak, Misak-ı Millî 28 Ocak, İstanbul'un resmen işgali 16 Mart, Meclisin dağıtılması 18 Mart, TBMM'nin açılışı 23 Nisan",
+     "gerekce": "Sıralama IV-II-III-V-I olup yalnız E şıkkı bunu verir.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "1920 kronolojisi: 12 Ocak, 28 Ocak, 16 Mart, 11 Nisan, 23 Nisan 1920",
+     "gerekce": "Son Osmanlı Mebusan Meclisi'nin açılışı (12 Ocak) → Misak-ı Millî (28 Ocak) → İstanbul'un resmen işgali (16 Mart) → Meclisin dağıtılması (11 Nisan) → TBMM'nin açılması (23 Nisan) sırası IV-II-III-V-I'dir.",
+     "eskime": null,
+     "uyari": "Kökte 'Mebussan' yazımı hatalı ('Mebusan')."
+    }
+   ]
+  },
+  {
+   "id": "s82",
+   "ders": "İnsan Hakları",
+   "dayanakKaynagi": "mevzuat/6701-*.md · mevzuat/t-c-anayasasi.md · mevzuat/avrupa-insan-haklari-sozlesmesi.md (AİHS ELDE MEVCUT). BM/Avrupa Konseyi belgeleri için elde metin yok, künye ile.",
+   "kok": "Aşağıdakilerden hangisi pozitif statü haklar arasında yer almaz?",
+   "siklar": {
+    "A": "Sağlık Hakkı",
+    "B": "Çalışma ve Sözleşme Özgürlüğü",
+    "C": "Çalışma Hakkı",
+    "D": "Sendika Kurma Hakkı",
+    "E": "Mülkiyet Hakkı"
+   },
+   "kitapCevabi": "E",
+   "karar": "KUSURLU",
+   "hakemCevabi": "B",
+   "hakemAlintisi": "Anayasa md 35: \"Herkes, mülkiyet ve miras haklarına sahiptir.\" — Anayasa md 48: \"Herkes, dilediği alanda çalışma ve sözleşme hürriyetlerine sahiptir.\"",
+   "hakemKarari": "kusurlu",
+   "hakemGerekcesi": "Her iki hak da devletten edim istemeyi değil devletin karışmamasını gerektiren koruyucu (negatif statü) haklardır; mülkiyet hakkı Anayasada 'Kişinin Hakları ve Ödevleri' bölümünde yer alan klasik negatif statü hakkı, çalışma ve sözleşme hürriyeti de adı üstünde bir hürriyettir. 'Pozitif statü hakları arasında yer almaz' sorusunun hem B hem E ile doğru yanıtlanması mümkün olduğundan tek doğru şık yoktur; kitabın E'si de denetçilerin B'si de tek başına savunulamaz. // Jellinek'in statü kuramında pozitif (isteme) hakları devletten edim istemeyi gerektirir; sağlık hakkı (md 56), çalışma hakkı (md 49) ve sendika kurma hakkı (md 51) bu gruptadır. Buna karşılık hem çalışma ve sözleşme HÜRRİYETİ (B) hem de mülkiyet hakkı (E) devletin karışmamasını gerektiren negatif statü (koruyucu) haklarıdır; mülkiyet hakkının negatif statüde olduğu doktrinde tartışmasızdır. 'Hangisi yer almaz' tek cevap istediği hâlde iki şık da tam olarak cevabı karşılıyor.",
+   "uyarilar": [
+    "İki doğru şık var: mülkiyet hakkı (E) da klasik doktrinde negatif statü hakkıdır (Anayasa md 35, Kişinin Hakları bölümü). Kök 'hangisi yer almaz' tekil cevap istediği için soru kusurlu; B ile E arasında ayrım yapılamıyor. Çalışma hakkı (C) ile çalışma ve sözleşme özgürlüğü (B) karşıtlığı kurulmuş olması B'yi hedeflendiği izlenimini veriyor, ancak bu bir tahmin.",
+    "Birden fazla doğru şık: Mülkiyet hakkı (E, Any. md 35 - kişinin hakları bölümü) da doktrinde tartışmasız negatif statü hakkıdır; B ile E arasında tek doğru ayırt edilemiyor.",
+    "HAKEM: Her iki hak da devletten edim istemeyi değil devletin karışmamasını gerektiren koruyucu (negatif statü) haklardır; mülkiyet hakkı Anayasada 'Kişinin Hakları ve Ödevleri' bölümünde yer alan klasik negatif statü hakkı, çalışma ve sözleşme hürriyeti de adı üstünde bir hürriyettir. 'Pozitif statü hakları arasında yer almaz' sorusunun hem B hem E ile doğru yanıtlanması mümkün olduğundan tek doğru şık yoktur; kitabın E'si de denetçilerin B'si de tek başına savunulamaz. // Jellinek'in statü kuramında pozitif (isteme) hakları devletten edim istemeyi gerektirir; sağlık hakkı (md 56), çalışma hakkı (md 49) ve sendika kurma hakkı (md 51) bu gruptadır. Buna karşılık hem çalışma ve sözleşme HÜRRİYETİ (B) hem de mülkiyet hakkı (E) devletin karışmamasını gerektiren negatif statü (koruyucu) haklarıdır; mülkiyet hakkının negatif statüde olduğu doktrinde tartışmasızdır. 'Hangisi yer almaz' tek cevap istediği hâlde iki şık da tam olarak cevabı karşılıyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "dusuk",
+     "dayanak": "Jellinek statü kuramı; Anayasa md 35 (mülkiyet), md 48 (çalışma ve sözleşme hürriyeti), md 49-51, 56",
+     "gerekce": "Çalışma ve sözleşme hürriyeti devletten edim istemeyi değil devletin karışmamasını gerektiren negatif statü (koruyucu) hakkıdır; sağlık, çalışma ve sendika hakları isteme (pozitif statü) haklarıdır.",
+     "eskime": null,
+     "uyari": "İki doğru şık var: mülkiyet hakkı (E) da klasik doktrinde negatif statü hakkıdır (Anayasa md 35, Kişinin Hakları bölümü). Kök 'hangisi yer almaz' tekil cevap istediği için soru kusurlu; B ile E arasında ayrım yapılamıyor. Çalışma hakkı (C) ile çalışma ve sözleşme özgürlüğü (B) karşıtlığı kurulmuş olması B'yi hedeflendiği izlenimini veriyor, ancak bu bir tahmin."
+    },
+    {
+     "cevap": "B",
+     "guven": "dusuk",
+     "dayanak": "Jellinek statü teorisi (doktrin); Anayasa md 35, 48, 49, 51, 56",
+     "gerekce": "Çalışma ve sözleşme hürriyeti (Any. md 48) devletten edim istemeyi değil müdahale etmemeyi gerektirdiği için negatif statü hakkıdır; kökteki 'özgürlük/hak' karşıtlığı bu şıkkı hedefliyor görünüyor.",
+     "eskime": null,
+     "uyari": "Birden fazla doğru şık: Mülkiyet hakkı (E, Any. md 35 - kişinin hakları bölümü) da doktrinde tartışmasız negatif statü hakkıdır; B ile E arasında tek doğru ayırt edilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s86",
+   "ders": "İnsan Hakları",
+   "dayanakKaynagi": "mevzuat/6701-*.md · mevzuat/t-c-anayasasi.md · mevzuat/avrupa-insan-haklari-sozlesmesi.md (AİHS ELDE MEVCUT). BM/Avrupa Konseyi belgeleri için elde metin yok, künye ile.",
+   "kok": "Birleşmiş Milletler sözleşme dışı koruma mekanizmaları arasında yer alan 1503 usulü için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Ekonomik ve Sosyal Konseyin 1503 sayılı kararına dayanır.",
+    "B": "Kararla Ínsan Hakları Inceleme Komisyonuna soruşturma izni verilmiştir.",
+    "C": "1235 sayılı kararla eksik kalan kısımlar 1503 sayılı kararla tamamlanmıştır.",
+    "D": "Bu karara istinaden yapılan başvurular Birleşmiş Milletler Genel Sekreterine yapılır.",
+    "E": "Başvuru ve görüşmeler açık yürütülür."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "1503 usulü, İnsan Hakları Komisyonu'nun 2006'da kaldırılmasıyla BM İnsan Hakları Konseyi'nin 5/1 sayılı kararıyla (18/6/2007) 'Şikâyet Usulü'ne dönüştü; kök usulü hâlen yürürlükteymiş gibi kuruyor. Bu değişiklik 2022 öncesi olduğu için eskime sayılmadı. OCR kusuru: 'Ínsan Hakları Inceleme Komisyonu' (İ harfleri bozuk).",
+    "OCR bozukluğu: B şıkkında 'Ínsan Hakları Inceleme Komisyonuna' (doğrusu 'İnsan Hakları'); cevabı etkilemiyor. Ayrıca tarihsel not: 1503 usulü 2007'de İnsan Hakları Konseyinin 5/1 sayılı kararıyla 'şikayet usulü'ne dönüştürülmüştür - bu değişiklik sorunun hazırlandığı 2022'den öncedir, cevabı değiştirmez."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "BM ESOSOK 1503 (XLVIII) sayılı kararı, 27/5/1970 (elde metin yok; künye)",
+     "gerekce": "1503 usulünün ayırt edici özelliği gizliliktir; başvurular ve görüşmeler gizli yürütülür, dolayısıyla 'açık yürütülür' ifadesi yanlıştır.",
+     "eskime": null,
+     "uyari": "1503 usulü, İnsan Hakları Komisyonu'nun 2006'da kaldırılmasıyla BM İnsan Hakları Konseyi'nin 5/1 sayılı kararıyla (18/6/2007) 'Şikâyet Usulü'ne dönüştü; kök usulü hâlen yürürlükteymiş gibi kuruyor. Bu değişiklik 2022 öncesi olduğu için eskime sayılmadı. OCR kusuru: 'Ínsan Hakları Inceleme Komisyonu' (İ harfleri bozuk)."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "BM ECOSOC 1503 (XLVIII) sayılı kararı, 27/5/1970 (künye ile; elde metin yok)",
+     "gerekce": "1503 usulünün ayırt edici özelliği gizli (confidential) yürütülmesidir; başvuru ve görüşmelerin açık yürütüldüğü ifadesi yanlıştır.",
+     "eskime": null,
+     "uyari": "OCR bozukluğu: B şıkkında 'Ínsan Hakları Inceleme Komisyonuna' (doğrusu 'İnsan Hakları'); cevabı etkilemiyor. Ayrıca tarihsel not: 1503 usulü 2007'de İnsan Hakları Konseyinin 5/1 sayılı kararıyla 'şikayet usulü'ne dönüştürülmüştür - bu değişiklik sorunun hazırlandığı 2022'den öncedir, cevabı değiştirmez."
+    }
+   ]
+  },
+  {
+   "id": "s87",
+   "ders": "İnsan Hakları",
+   "dayanakKaynagi": "mevzuat/6701-*.md · mevzuat/t-c-anayasasi.md · mevzuat/avrupa-insan-haklari-sozlesmesi.md (AİHS ELDE MEVCUT). BM/Avrupa Konseyi belgeleri için elde metin yok, künye ile.",
+   "kok": "Avrupa Konseyinin temelini oluşturan sözleşme aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Roma Statüsü",
+    "B": "İnsan Hakları Evrensel Beyannamesi",
+    "C": "Avrupa İnsan Hakları Sözleşmesi",
+    "D": "Avrupa toplulukları Sözleşmesi",
+    "E": "Avrupa Konseyi sözleşmesi"
+   },
+   "kitapCevabi": "C",
+   "karar": "ANAHTAR-HATALI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": "AİHS md 51: \"Yargıçlar görevlerinin ifasında Avrupa Konseyi Statüsü'nün 40. maddesinde ... öngörülen ayrıcalık ve dokunulmazlıklardan yararlanır.\" — AİHS md 54: \"Bu Sözleşme'nin hiçbir hükmü, Avrupa Konseyi Statüsü'nün Bakanlar Komitesi'ne tanıdığı yetkileri ihlal etmez.\"",
+   "hakemKarari": "denetci",
+   "hakemGerekcesi": "AİHS'in kendi metni, Avrupa Konseyi Statüsü'nü kendisinden önce var olan ve organları/ayrıcalıkları kuran ayrı bir belge olarak zikreder; yani Konseyin temelini AİHS değil, 5 Mayıs 1949 tarihli Statü (Londra Antlaşması) oluşturur. 1950 tarihli AİHS zaten kurulmuş olan Konsey bünyesinde hazırlandığı için kitabın C cevabı kronolojik ve hukuken çürütülmüştür. Şıklar içinde Konseyin kurucu belgesini karşılayan tek seçenek E'dir; adlandırması ('sözleşme') özensizdir ama gönderme yaptığı belge doğrudur. // Avrupa Konseyi 5 Mayıs 1949 tarihli Londra Antlaşması (Avrupa Konseyi Statüsü) ile kurulmuştur; AİHS 1950'de Konsey bünyesinde hazırlandığı için kronolojik olarak Konseyin temelini oluşturması mümkün değildir — kitabın C cevabı bu nedenle çürüktür. Kalan şıklardan Roma Statüsü UCM'yi, İHEB Birleşmiş Milletleri, Avrupa Toplulukları Sözleşmesi AB'yi ilgilendirdiğinden kurucu belgeyi karşılayabilecek tek şık, adlandırması özensiz de olsa E'dir.",
+   "uyarilar": [
+    "Şık metni özensiz: doğru künye 'Avrupa Konseyi Statüsü'dür, 'Avrupa Konseyi sözleşmesi' değil. Ayrıca kaynakların bir kısmı AİHS'i (C) 'Konseyin temel sözleşmesi' diye anlattığı için kök yanıltıcı; C ile E arasında cevap anahtarı çelişkisi olabilir.",
+    "Kök yanıltıcı: Avrupa Konseyini kuran belge 1949 tarihli Londra Antlaşması (Avrupa Konseyi Statüsü) olup AİHS 1950'de Konsey bünyesinde sonradan kabul edilmiştir; 'Avrupa Konseyi sözleşmesi' (E) şıkkı da kurucu belgeyi karşılayabilir - iki savunulabilir şık var.",
+    "HAKEM: AİHS'in kendi metni, Avrupa Konseyi Statüsü'nü kendisinden önce var olan ve organları/ayrıcalıkları kuran ayrı bir belge olarak zikreder; yani Konseyin temelini AİHS değil, 5 Mayıs 1949 tarihli Statü (Londra Antlaşması) oluşturur. 1950 tarihli AİHS zaten kurulmuş olan Konsey bünyesinde hazırlandığı için kitabın C cevabı kronolojik ve hukuken çürütülmüştür. Şıklar içinde Konseyin kurucu belgesini karşılayan tek seçenek E'dir; adlandırması ('sözleşme') özensizdir ama gönderme yaptığı belge doğrudur. // Avrupa Konseyi 5 Mayıs 1949 tarihli Londra Antlaşması (Avrupa Konseyi Statüsü) ile kurulmuştur; AİHS 1950'de Konsey bünyesinde hazırlandığı için kronolojik olarak Konseyin temelini oluşturması mümkün değildir — kitabın C cevabı bu nedenle çürüktür. Kalan şıklardan Roma Statüsü UCM'yi, İHEB Birleşmiş Milletleri, Avrupa Toplulukları Sözleşmesi AB'yi ilgilendirdiğinden kurucu belgeyi karşılayabilecek tek şık, adlandırması özensiz de olsa E'dir."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "Avrupa Konseyi Statüsü (Londra Antlaşması), 5 Mayıs 1949 (elde metin yok; künye)",
+     "gerekce": "Avrupa Konseyi 1949 tarihli Statü (Londra Antlaşması) ile kurulmuştur; AİHS (1950) Konsey bünyesinde sonradan hazırlandığı için Konseyin temelini oluşturamaz.",
+     "eskime": null,
+     "uyari": "Şık metni özensiz: doğru künye 'Avrupa Konseyi Statüsü'dür, 'Avrupa Konseyi sözleşmesi' değil. Ayrıca kaynakların bir kısmı AİHS'i (C) 'Konseyin temel sözleşmesi' diye anlattığı için kök yanıltıcı; C ile E arasında cevap anahtarı çelişkisi olabilir."
+    },
+    {
+     "cevap": "C",
+     "guven": "dusuk",
+     "dayanak": "Avrupa Konseyi Statüsü (Londra Antlaşması), 5/5/1949; AİHS, Roma, 4/11/1950",
+     "gerekce": "Sorunun aradığı belge büyük olasılıkla Konseyin insan hakları düzeninin temel sözleşmesi olan AİHS'dir.",
+     "eskime": null,
+     "uyari": "Kök yanıltıcı: Avrupa Konseyini kuran belge 1949 tarihli Londra Antlaşması (Avrupa Konseyi Statüsü) olup AİHS 1950'de Konsey bünyesinde sonradan kabul edilmiştir; 'Avrupa Konseyi sözleşmesi' (E) şıkkı da kurucu belgeyi karşılayabilir - iki savunulabilir şık var."
+    }
+   ]
+  },
+  {
+   "id": "s90",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanakKaynagi": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Avrupa Toplulukları Adalet Divanı merkezi neresidir?",
+   "siklar": {
+    "A": "Strazburg",
+    "B": "Cenevre",
+    "C": "Lahey",
+    "D": "Brüksel",
+    "E": "New York"
+   },
+   "kitapCevabi": "D",
+   "karar": "KUSURLU",
+   "hakemCevabi": null,
+   "hakemAlintisi": "Elde resmî metin YOK — ABAD'ın merkezini gösteren kurucu antlaşma protokolü (kurumların yeri hakkında protokol) dosyalar arasında bulunmadığından birebir alıntı yapılamıyor.",
+   "hakemKarari": "kusurlu",
+   "hakemGerekcesi": "Avrupa Toplulukları Adalet Divanı (Lizbon Antlaşması sonrası adıyla Avrupa Birliği Adalet Divanı) 1952'den bu yana Lüksemburg'dadır; Lüksemburg şıklarda hiç yer almıyor. Şıklardaki Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın, Brüksel ise Komisyon/Konseyin merkezidir. Ne kitabın D cevabı ne de başka bir şık savunulabilir; muhtemelen doğru şık dizgide/OCR'da düşmüştür. // Avrupa Toplulukları Adalet Divanı (bugün Avrupa Birliği Adalet Divanı) 1952'den bu yana Lüksemburg'dadır ve Lüksemburg şıklar arasında yoktur; kitabın cevabı Brüksel (Komisyon/Konsey merkezi) yanlıştır. Şıklardaki Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın, New York BM'nin merkezidir — hiçbiri doğru değildir. Denetçilerin 'doğru şık yok' tespiti ayakta kalmıştır.",
+   "uyarilar": [
+    "Hiçbir şık doğru değil: ABAD'ın merkezi Lüksemburg'dur. Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın merkezidir; şıklar bu iki mahkemeyle karıştırmaya yol açıyor. Muhtemelen OCR sırasında 'Lüksemburg' şıkkı düşmüş ya da soru kökü hatalı.",
+    "Hicbir sik dogru degil: dogru cevap Luksemburg, siklarda yer almiyor (siklardaki Lahey Uluslararasi Adalet Divani, Strazburg AIHM, Bruksel Komisyon/Konsey merkezidir). Muhtemelen OCR'da bir sik dusmus ya da soru hatali. Ayrica kurumun adi Lizbon Antlasmasi (yur. 1/12/2009) ile 'Avrupa Birligi Adalet Divani' olarak degismistir; merkez degismedi.",
+    "HAKEM: Avrupa Toplulukları Adalet Divanı (Lizbon Antlaşması sonrası adıyla Avrupa Birliği Adalet Divanı) 1952'den bu yana Lüksemburg'dadır; Lüksemburg şıklarda hiç yer almıyor. Şıklardaki Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın, Brüksel ise Komisyon/Konseyin merkezidir. Ne kitabın D cevabı ne de başka bir şık savunulabilir; muhtemelen doğru şık dizgide/OCR'da düşmüştür. // Avrupa Toplulukları Adalet Divanı (bugün Avrupa Birliği Adalet Divanı) 1952'den bu yana Lüksemburg'dadır ve Lüksemburg şıklar arasında yoktur; kitabın cevabı Brüksel (Komisyon/Konsey merkezi) yanlıştır. Şıklardaki Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın, New York BM'nin merkezidir — hiçbiri doğru değildir. Denetçilerin 'doğru şık yok' tespiti ayakta kalmıştır."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": null,
+     "guven": "dusuk",
+     "dayanak": "Avrupa Birliği'nin İşleyişi Hakkında Antlaşma'ya ekli 6 No.lu Protokol (kurumların yeri) — ABAD'ın merkezi Lüksemburg",
+     "gerekce": "Avrupa Toplulukları Adalet Divanı (bugünkü adıyla Avrupa Birliği Adalet Divanı) 1952'den beri Lüksemburg'da bulunur; Lüksemburg şıklarda yer almadığı için doğru cevap yoktur.",
+     "eskime": null,
+     "uyari": "Hiçbir şık doğru değil: ABAD'ın merkezi Lüksemburg'dur. Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın merkezidir; şıklar bu iki mahkemeyle karıştırmaya yol açıyor. Muhtemelen OCR sırasında 'Lüksemburg' şıkkı düşmüş ya da soru kökü hatalı."
+    },
+    {
+     "cevap": null,
+     "guven": "dusuk",
+     "dayanak": "Avrupa Birliği'nin İşleyişi Hakkında Antlaşma'ya ekli 6 No.lu Protokol (kurumların yeri) — Divan Lüksemburg'dadır",
+     "gerekce": "Avrupa Toplulukları Adalet Divanı'nın (bugünkü adıyla Avrupa Birliği Adalet Divanı) merkezi 1952'den bu yana Lüksemburg'dur; şıklarda Lüksemburg yok.",
+     "eskime": null,
+     "uyari": "Hicbir sik dogru degil: dogru cevap Luksemburg, siklarda yer almiyor (siklardaki Lahey Uluslararasi Adalet Divani, Strazburg AIHM, Bruksel Komisyon/Konsey merkezidir). Muhtemelen OCR'da bir sik dusmus ya da soru hatali. Ayrica kurumun adi Lizbon Antlasmasi (yur. 1/12/2009) ile 'Avrupa Birligi Adalet Divani' olarak degismistir; merkez degismedi."
+    }
+   ]
+  },
+  {
+   "id": "s100",
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "dayanakKaynagi": "Elde metin YOK — kaynağı künyele; dil bilgisi sorularında TDK kuralı",
+   "kok": "Aşağıdakilerden hangisinde yazım yanlışı vardır?",
+   "siklar": {
+    "A": "Süregelen",
+    "B": "Açgözlü",
+    "C": "Ön izleme",
+    "D": "Gökbilim",
+    "E": "Herkes"
+   },
+   "kitapCevabi": "D",
+   "karar": "CELISKI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "TDK Yazım Kılavuzu — 'ön' ile kurulan birleşik kelimeler",
+     "gerekce": "TDK 'önizleme'yi bitişik yazar; 'Ön izleme' ayrı yazımı yanlıştır. Süregelen, açgözlü, gökbilim ve herkes doğru yazılmıştır.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "TDK Yazım Kılavuzu / Güncel Türkçe Sözlük",
+     "gerekce": "TDK bu bilişim terimini bitişik yazar ('önizleme'); süregelen, açgözlü, gökbilim ve herkes yazımları doğrudur.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "TDK Yazım Kılavuzu — 'ön' ile kurulan birleşik kelimeler",
+     "gerekce": "TDK 'önizleme'yi bitişik yazar; 'Ön izleme' ayrı yazımı yanlıştır. Süregelen, açgözlü, gökbilim ve herkes doğru yazılmıştır.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "TDK Yazım Kılavuzu / Güncel Türkçe Sözlük",
+     "gerekce": "TDK bu bilişim terimini bitişik yazar ('önizleme'); süregelen, açgözlü, gökbilim ve herkes yazımları doğrudur.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  }
+ ]
+}

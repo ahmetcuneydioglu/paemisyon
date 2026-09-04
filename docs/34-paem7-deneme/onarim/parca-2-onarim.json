@@ -1,0 +1,100 @@
+[
+  {
+    "id": "s30",
+    "kok": "5271 sayılı Ceza Muhakemesi Kanunu hükümlerine göre Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin verdiği kararlara karşı yapılan itirazların inceleme yetkisi aşağıdakilerden hangisine aittir?",
+    "siklar": {
+      "A": "Yargı çevresinde bulunduğu Ağır Ceza Mahkemesi",
+      "B": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesi",
+      "C": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesine en yakın Asliye Ceza Mahkemesi",
+      "D": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesine en yakın Ağır Ceza Mahkemesi",
+      "E": "Numara olarak takip eden Sulh Ceza Hâkimliği"
+    },
+    "degisenler": [],
+    "okunamadi": false
+  },
+  {
+    "id": "s37",
+    "kok": "|  | Meşru müdafaa | Zorunluluk hali |\n| I | Saldırı olmalıdır | Tehlike olmalıdır |\n| II | Sadece insan saldırılarına karşı yapılabilir | Zorunluluk halinde insan, hayvan veya doğadan tehlike kaynaklanmış olabilir. |\n| III | Kişinin zarar tazmini yükümlülüğü bulunmamaktadır | Tehlike ortadan kalktıktan sonra ortaya çıkan zarar tazmin yükümlülüğü bulunmamaktadır. |\n| IV | Hukuka uygunluk nedenidir | Ceza sorumluluğunu kaldıran nedendir |\n| V | Fail hakkında beraat kararı verili | Fail hakkında beraat kararı verilir. |\n\nYukarıdaki yer verilen meşru müdafaa ve zorunluluk hali eşleştirmelerinden hangisi yanlış olarak verilmiştir?",
+    "siklar": {
+      "A": "I II III IV V",
+      "B": "III V",
+      "C": "I III V",
+      "D": "II III IV",
+      "E": "I III IV V"
+    },
+    "degisenler": [
+      "Kök: OCR'ın iki sütunu birbirine karıştırarak düzleştirdiği tablo, sayfadaki satır/sütun yapısına göre yeniden kuruldu (I-V satırları, Meşru müdafaa / Zorunluluk hali sütunları).",
+      "Kök: OCR'da satır arasına düşen 'III' ve 'IV' numaraları kendi satırlarına alındı.",
+      "Kitaptaki 'Fail hakkında beraat kararı verili' yazım hatası (I. sütun) sayfadaki gibi korundu; 'tesissileri' benzeri düzeltme yapılmadı.",
+      "A şıkkı: 'IIIIIIIVV' → 'I II III IV V'",
+      "B şıkkı: 'IIIV' → 'III V'",
+      "C şıkkı: 'IIIV' → 'I III V'",
+      "D şıkkı: 'ILII IV' → 'II III IV'",
+      "E şıkkı: 'IIIIIVV' → 'I III IV V'"
+    ],
+    "okunamadi": false
+  },
+  {
+    "id": "s42",
+    "kok": "I. Polis Kampları\nII. Öğretmen evleri\nIII. Askeri Dinlenme tesissileri\nIV. Polis evleri\nV. Araç kiralama işlemleri\n\n1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre yukarıdakilerden hangisi bu kanun hükümlerine tabi olan yerler arasında yer almaz?",
+    "siklar": {
+      "A": "I II III IV V",
+      "B": "I II IV V",
+      "C": "III V",
+      "D": "III",
+      "E": "V"
+    },
+    "degisenler": [
+      "Kök: 'Polis Kamplar' → 'Polis Kampları'",
+      "Kök: 'Askeri Dinlenme tesissileri' sayfadaki yazım hatasıyla korundu",
+      "Kök: 'ükümlerine' → 'hükümlerine'",
+      "Kök: 'hangi u kanun hükümlerine tabi olan yerle arasında' → 'hangisi bu kanun hükümlerine tabi olan yerler arasında'",
+      "A şıkkı: 'ILILIVV' → 'I II III IV V'",
+      "B şıkkı: 'IIIVV' → 'I II IV V'",
+      "C şıkkı: 'IIIV' → 'III V'",
+      "D şıkkı: 'III' (değişmedi)",
+      "E şıkkı: 'V' (değişmedi)"
+    ],
+    "okunamadi": false
+  },
+  {
+    "id": "s44",
+    "kok": "I. Gönüllülerin\nII. Sürücü belgesi almak için başvuruda bulunanların\nIII. Özel güvenlik görevlisi olarak istihdam edilenlerin\nIV. Sığınma talebinde bulunanların\nV. Bir suç işlediği gerekçesiyle yakalananların\n\n2559 Sayılı Polis vazife ve Salahiyet Kanunu hükümlerine göre polis yukarıdakilerden hangisinin parmak izini alabilir?",
+    "siklar": {
+      "A": "I II III IV V",
+      "B": "I II III IV",
+      "C": "II III IV V",
+      "D": "III IV V",
+      "E": "I III IV"
+    },
+    "degisenler": [
+      "Kök metni sayfayla birebir aynıydı; yalnız madde/soru satır düzeni korunarak yazıldı.",
+      "A şıkkı: 'IIIIIIIVV' → 'I II III IV V'",
+      "B şıkkı: 'II II IV' → 'I II III IV'",
+      "C şıkkı: 'IIIIIVV' → 'II III IV V'",
+      "D şıkkı: 'IIIIVV' → 'III IV V'",
+      "E şıkkı: 'IIIIV' → 'I III IV'"
+    ],
+    "okunamadi": false
+  },
+  {
+    "id": "s47",
+    "kok": "I. Yabancılar toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.\nII. Yabancıların bu Kanun hükümlerine göre toplantı ve gösteri yürüyüşü düzenlemeleri, İçişleri Bakanlığının iznine bağlıdır.\nIII. Yabancılar düzenleme kurulu üyesi olabilirler\nIV. Yabancılar önceden bildirimde bulunarak yapılacak toplantı ve gösteri yürüyüşünde topluluğa hitapta bulunabilirler.\nV. Toplantı ve gösteri yürüyüşü hakkı anayasada güvence altına alınmış olan temel hak ve hürriyetler arasında yer alır.\n\nYabancıları toplantı ve gösteri yürüyüşü düzenlemeleri için yukarıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "I II III IV",
+      "B": "I II IV V",
+      "C": "I II III IV V",
+      "D": "I IV V",
+      "E": "II III IV V"
+    },
+    "degisenler": [
+      "Kök metni sayfayla birebir aynıydı; yalnız madde/soru satır düzeni korunarak yazıldı.",
+      "A şıkkı: 'IIIIIIV' → 'I II III IV'",
+      "B şıkkı: 'HIIVV' → 'I II IV V'",
+      "C şıkkı: 'III II IVV' → 'I II III IV V'",
+      "D şıkkı: 'IIVV' → 'I IV V'",
+      "E şıkkı: 'IIIIIVV' → 'II III IV V'"
+    ],
+    "okunamadi": false
+  }
+]

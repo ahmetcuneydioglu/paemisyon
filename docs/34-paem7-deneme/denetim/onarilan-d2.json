@@ -1,0 +1,86 @@
+[
+ {"id":"s6","cevap":"C","guven":"yuksek","dayanak":"Anayasa md 13",
+  "gerekce":"Md 13: sınırlamalar Anayasanın sözüne ve ruhuna, demokratik toplum düzeninin ve lâik Cumhuriyetin gereklerine ve ölçülülük ilkesine aykırı olamaz — beş ölçüt de sayılıdır.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s8","cevap":"C","guven":"yuksek","dayanak":"Anayasa md 78/3",
+  "gerekce":"Metin 'genel seçimden otuz ay geçmedikçe ara seçime gidilemez' der; C şıkkı 'yerel seçimden' dediği için yanlıştır, diğer şıklar madde metniyle birebir örtüşür.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s20","cevap":"C","guven":"yuksek","dayanak":"Anayasa md 117/3 (6771 s. K. ile değişik)",
+  "gerekce":"Md 117/3'e göre Genelkurmay Başkanı doğrudan Cumhurbaşkanınca atanır; bakan teklifi veya YAŞ teklifi aranmaz.",
+  "eskime":null,
+  "uyari":"C şıkkındaki 'Cumhurbaşkanı Kararnamesi' ifadesi teknik olarak gevşek: atama, düzenleyici CBK ile değil Cumhurbaşkanı atama kararıyla yapılır; yine de yalnız C, atamanın tek yetkilisinin Cumhurbaşkanı olduğunu söyler."},
+
+ {"id":"s24","cevap":"B","guven":"yuksek","dayanak":"CMK md 36/2",
+  "gerekce":"'İnfaz edilecek kararlar, Cumhuriyet Başsavcılığına verilir.'",
+  "eskime":null,"uyari":null},
+
+ {"id":"s25","cevap":"D","guven":"yuksek","dayanak":"CMK md 40/1",
+  "gerekce":"'Kusuru olmaksızın bir süreyi geçirmiş olan kişi, eski hale getirme isteminde bulunabilir.'",
+  "eskime":null,"uyari":null},
+
+ {"id":"s27","cevap":"B","guven":"yuksek","dayanak":"CMK md 91/1",
+  "gerekce":"Madde, yirmi dört saatlik sürenin 'yakalama anından itibaren' işlediğini söyler; B şıkkı süreyi 'gözaltı kararından itibaren' başlattığı için yanlıştır (A, C, D, E madde metniyle aynıdır).",
+  "eskime":null,"uyari":null},
+
+ {"id":"s28","cevap":"D","guven":"yuksek","dayanak":"CMK md 110/4 (Ek: 8/7/2021-7331/16)",
+  "gerekce":"Adli kontrol yükümlülüğünün devamı en geç dört aylık aralıklarla gözden geçirilir.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s37","cevap":"B","guven":"orta","dayanak":"TCK md 25; CMK md 223/2-d ve 223/3-b; TBK md 63/2",
+  "gerekce":"III yanlıştır (zorunluluk halinde doğan zarar için tazmin yükümlülüğü vardır), V yanlıştır (zorunluluk halinde beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri yerindedir.",
+  "eskime":null,
+  "uyari":"V satırının meşru müdafaa sütununda 'verili' yazılmış (OCR: 'verilir'); IV satırındaki 'ceza sorumluluğunu kaldıran neden' nitelemesi doktrinde 'kusurluluğu kaldıran neden' olarak geçse de TCK'nın bölüm başlığıyla uyumlu olduğundan yanlış sayılmadı."},
+
+ {"id":"s42","cevap":"D","guven":"yuksek","dayanak":"1774 s. K. md 1/2 ve Ek md 3",
+  "gerekce":"Md 1/2 askeri konaklama, dinlenme ve kamp tesisleri ile ordu evlerini kanun kapsamı dışında bırakır; araç kiralama Ek md 3 ile kapsamdadır, polis kampı/polis evi/öğretmenevi ise 'resmi konaklama yerleri' olarak md 2 kapsamındadır.",
+  "eskime":null,
+  "uyari":"Kökte 'tesissileri' yazım bozukluğu var (OCR: 'tesisleri'); cevabı etkilemiyor."},
+
+ {"id":"s44","cevap":"B","guven":"yuksek","dayanak":"PVSK md 5/1 (a-e bentleri)",
+  "gerekce":"Madde gönüllü, sürücü belgesi başvurusunda bulunan, özel güvenlik görevlisi olarak istihdam edilen ve sığınma talebinde bulunanların parmak izini almaya yetki verir; (e) bendi 'gözaltına alınan' kişiyi sayar, V'teki 'yakalanan' bundan dardır/farklıdır.",
+  "eskime":null,
+  "uyari":null},
+
+ {"id":"s47","cevap":"C","guven":"orta","dayanak":"2911 s. K. md 3/2 ve md 9/1; Anayasa md 34",
+  "gerekce":"Md 3/2 yabancıların İçişleri Bakanlığı izniyle düzenleme yapmasına ve bildirimle topluluğa hitap etmesine izin verir; md 9 düzenleme kurulu üyeliğinde vatandaşlık şartı aramaz, yalnız diplomatik dokunulmazlığı olanları dışlar; md 34 hakkı anayasal güvenceye bağlar — beş öncül de doğrudur.",
+  "eskime":null,
+  "uyari":"III öncülü kanunda açık hüküm yerine md 9'un susmasından (yalnız diplomatik dokunulmazlık istisnası) çıkarılıyor; soru yazarı III'ü yanlış sayıp B'yi beklemiş olabilir."},
+
+ {"id":"s48","cevap":"A","guven":"orta","dayanak":"2911 s. K. md 22/1",
+  "gerekce":"Yürürlükteki metinde yasak yerler parklar, mabetler, kamu hizmeti görülen bina ve tesisler ile eklentileri ve TBMM'ye bir kilometre alandır; 'genel yollar' ibaresi AYM'nin 28/9/2017 tarihli E.2014/101-K.2017/142 kararıyla, şehirlerarası karayollarına ilişkin ibare ise AYM'nin 10/9/2020 tarihli E.2020/12-K.2020/46 kararıyla iptal edilmiştir.",
+  "eskime":null,
+  "uyari":"Soru büyük olasılıkla iptallerden önceki metne göre yazılmış; kitap anahtarı I ve/veya II'yi hâlâ yasak sayıyorsa bugünkü metne göre yanlıştır. İptaller (2017 ve 2020) sınav tarihinden (Mayıs 2022) önce olduğu için eskime alanı boş bırakıldı."},
+
+ {"id":"s54","cevap":"E","guven":"yuksek","dayanak":"3713 s. K. md 3; TCK md 312, 313, 314, 320, 321",
+  "gerekce":"Md 3 mutlak terör suçları arasında TCK 312 (hükümete karşı suç), 313 (silahlı isyan), 314 (silahlı örgüt) ve 320'yi (yabancı hizmetine asker yazma) sayar; 'savaş zamanında emirlere uymama' TCK 321'dir ve listede yoktur.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s73","cevap":"D","guven":"yuksek","dayanak":"Mondros Ateşkes Antlaşması (30 Ekim 1918), md 7",
+  "gerekce":"7. madde İtilaf devletlerine güvenliklerini tehdit eden bir durumda herhangi bir stratejik noktayı işgal hakkı tanır; Anadolu'nun tümüyle işgaline hukuki kılıf sağlayan hüküm budur.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s75","cevap":"D","guven":"yuksek","dayanak":"I. Dünya Savaşı Osmanlı cepheleri (Kanal Harekâtı 1915; Kafkas/Sarıkamış Harekâtı 1914-15)",
+  "gerekce":"Kanal ve Kafkas cepheleri Osmanlı'nın kendi başlattığı taarruz cepheleridir; diğerleri savunma cepheleri (Hicaz-Yemen, Suriye-Filistin, Irak) ya da müttefiklere yardım cepheleridir (Galiçya-Makedonya).",
+  "eskime":null,"uyari":null},
+
+ {"id":"s79","cevap":"E","guven":"dusuk","dayanak":"Misak-ı Millî, Osmanlı Mebusan Meclisi kararı, 28 Ocak 1920",
+  "gerekce":"Kararın son Osmanlı Mebusan Meclisine kabul ettirilmesi Millî Mücadelenin haklılığına resmiyet kazandırmayı (II) ve Meclisin desteğini sağlamayı (III) amaçlar; seçenekler arasında 'II-III' bulunmadığından bunları kapsayan tek şık E'dir.",
+  "eskime":null,
+  "uyari":"Soru kusurlu: doğru öncül kümesi (II-III) seçeneklerde yok; E şıkkı da 'I-II-II' biçiminde yazılmış (OCR/dizgi: 'I-II-III'). Ayrıca I öncülü ('padişah taraftarlarını sindirme') amaç olarak tartışmalıdır ve kökte 'Mebussan' yazımı hatalıdır ('Mebusan')."},
+
+ {"id":"s80","cevap":"E","guven":"yuksek","dayanak":"1920 kronolojisi: 12 Ocak, 28 Ocak, 16 Mart, 11 Nisan, 23 Nisan 1920",
+  "gerekce":"Son Osmanlı Mebusan Meclisi'nin açılışı (12 Ocak) → Misak-ı Millî (28 Ocak) → İstanbul'un resmen işgali (16 Mart) → Meclisin dağıtılması (11 Nisan) → TBMM'nin açılması (23 Nisan) sırası IV-II-III-V-I'dir.",
+  "eskime":null,
+  "uyari":"Kökte 'Mebussan' yazımı hatalı ('Mebusan')."},
+
+ {"id":"s96","cevap":"C","guven":"yuksek","dayanak":"BM Genel Kurulu kararı A/RES/76/254 (15 Mart 2022)",
+  "gerekce":"Genel Kurul 15 Mart'ı Uluslararası İslamofobi ile Mücadele Günü olarak ilan etmiştir.",
+  "eskime":null,"uyari":null},
+
+ {"id":"s100","cevap":"C","guven":"orta","dayanak":"TDK Yazım Kılavuzu / Güncel Türkçe Sözlük",
+  "gerekce":"TDK bu bilişim terimini bitişik yazar ('önizleme'); süregelen, açgözlü, gökbilim ve herkes yazımları doğrudur.",
+  "eskime":null,
+  "uyari":null}
+]

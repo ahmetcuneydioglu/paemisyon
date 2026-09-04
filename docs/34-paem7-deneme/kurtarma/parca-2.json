@@ -1,0 +1,777 @@
+{
+ "parca": 2,
+ "sorular": [
+  {
+   "id": "s31",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "Aşağıdakilerden hangisi ceza hukukunun asil kaynakları arasında yer almaz?",
+   "siklar": {
+    "A": "Anayasa",
+    "B": "Ceza Mahkemesi Kanunu",
+    "C": "Avrupa Konseyi İnsan Hakları Sözleşmesi",
+    "D": "İçtihatlar",
+    "E": "Terörle Mücadele Kanunu"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": "D",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR: B şıkkı 'Ceza Mahkemesi Kanunu' → '5271 sayılı Ceza Muhakemesi Kanunu'; C şıkkı 'Avrupa Konseyi İnsan Hakları Sözleşmesi' → 'Avrupa İnsan Hakları Sözleşmesi'. Cevabı etkilemiyor.",
+    "B şıkkında yazım hatası: 'Ceza Mahkemesi Kanunu' → doğrusu 'Ceza Muhakemesi Kanunu' (5271). Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 38/1 (suçta ve cezada kanunilik); ceza hukuku genel teorisi — asli/yardımcı kaynak ayrımı",
+     "gerekce": "Kanunilik ilkesi gereği ceza hukukunun asli kaynakları yazılı ve bağlayıcı metinlerdir (Anayasa, kanunlar, usulüne uygun yürürlüğe konmuş uluslararası sözleşmeler); içtihatlar ve doktrin ise yalnızca yardımcı kaynaktır.",
+     "eskime": null,
+     "uyari": "OCR: B şıkkı 'Ceza Mahkemesi Kanunu' → '5271 sayılı Ceza Muhakemesi Kanunu'; C şıkkı 'Avrupa Konseyi İnsan Hakları Sözleşmesi' → 'Avrupa İnsan Hakları Sözleşmesi'. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Ceza hukuku doktrini + Anayasa md 38 (suçta ve cezada kanunilik) ve md 90/5 (usulüne göre yürürlüğe konmuş temel hak sözleşmeleri kanun hükmünde)",
+     "gerekce": "Anayasa, kanunlar (CMK, TMK) ve kanun hükmündeki AİHS bağlayıcı/asli kaynaktır; içtihatlar ise yardımcı (tali) kaynaktır.",
+     "eskime": null,
+     "uyari": "B şıkkında yazım hatası: 'Ceza Mahkemesi Kanunu' → doğrusu 'Ceza Muhakemesi Kanunu' (5271). Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 38/1 (suçta ve cezada kanunilik); ceza hukuku genel teorisi — asli/yardımcı kaynak ayrımı",
+     "gerekce": "Kanunilik ilkesi gereği ceza hukukunun asli kaynakları yazılı ve bağlayıcı metinlerdir (Anayasa, kanunlar, usulüne uygun yürürlüğe konmuş uluslararası sözleşmeler); içtihatlar ve doktrin ise yalnızca yardımcı kaynaktır.",
+     "eskime": null,
+     "uyari": "OCR: B şıkkı 'Ceza Mahkemesi Kanunu' → '5271 sayılı Ceza Muhakemesi Kanunu'; C şıkkı 'Avrupa Konseyi İnsan Hakları Sözleşmesi' → 'Avrupa İnsan Hakları Sözleşmesi'. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "Ceza hukuku doktrini + Anayasa md 38 (suçta ve cezada kanunilik) ve md 90/5 (usulüne göre yürürlüğe konmuş temel hak sözleşmeleri kanun hükmünde)",
+     "gerekce": "Anayasa, kanunlar (CMK, TMK) ve kanun hükmündeki AİHS bağlayıcı/asli kaynaktır; içtihatlar ise yardımcı (tali) kaynaktır.",
+     "eskime": null,
+     "uyari": "B şıkkında yazım hatası: 'Ceza Mahkemesi Kanunu' → doğrusu 'Ceza Muhakemesi Kanunu' (5271). Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "Aşağıdakilerden hangisi suçluların iadesi koşulları arasında yer almaz?",
+   "siklar": {
+    "A": "Suça konu olan fiil her iki devletin yasalarında en az 1 yıl hapis cezasını veya güvenlik tedbirini gerektirmeli",
+    "B": "Geri verme için suçlu 6 aydan az ceza almamalı",
+    "C": "Gerivermeye konu eylemin her iki devlet yasalarına göre de suç oluşturması gerekir. Teşebbüs aşamasında kalan suçlarda geri verilebilir.",
+    "D": "Suçu işleyen kişi yabancı olmalıdır",
+    "E": "Geri verme için suçluların iadesi konusunda bir anlaşma bulunmalıdır"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "E şıkkı da tartışmaya açık: iade için mutlaka anlaşma şart değildir, mütekabiliyet yeterlidir; bu haliyle iki şık savunulabilir.",
+    "E şıkkı da tam doğru değil: geri verme için ikili/çok taraflı antlaşma zorunlu olmayıp mütekabiliyet esası da yeterlidir; bu yönüyle soruda ikinci bir 'koşul olmayan' şık bulunuyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "6706 sayılı Cezai Konularda Uluslararası Adli İş Birliği Kanunu md 10-11 (TCK md 18 mülga: 23/4/2016-6706/36); Suçluların İadesine Dair Avrupa Sözleşmesi md 2",
+     "gerekce": "Hükümlülük halinde iade eşiği en az 4 ay hapistir; 'altı aydan az ceza almamalı' diye bir koşul yoktur, diğer şıklar (çifte suçluluk, 1 yıl eşiği, vatandaş olmama) iade koşullarıdır.",
+     "eskime": null,
+     "uyari": "E şıkkı da tartışmaya açık: iade için mutlaka anlaşma şart değildir, mütekabiliyet yeterlidir; bu haliyle iki şık savunulabilir."
+    },
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "6706 sayılı Cezaî Konularda Uluslararası Adlî İş Birliği Kanunu md 10 (TCK md 18, 23/4/2016-6706/36 ile mülga)",
+     "gerekce": "Geri vermede hükümlülük hâli için aranan alt sınır dört ay hürriyeti bağlayıcı cezadır; 'altı aydan az ceza almamalı' şeklindeki koşul mevzuatta yoktur.",
+     "eskime": null,
+     "uyari": "E şıkkı da tam doğru değil: geri verme için ikili/çok taraflı antlaşma zorunlu olmayıp mütekabiliyet esası da yeterlidir; bu yönüyle soruda ikinci bir 'koşul olmayan' şık bulunuyor."
+    }
+   ]
+  },
+  {
+   "id": "s33",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "Suçluların İade talebi hakkında karar vermeye, kişinin bulunduğu yer ağır ceza mahkemesi yetkilidir. Kişinin bulunduğu yer belli değilse, aşağıdaki mahkemelerden hangisi yetkilidir?",
+   "siklar": {
+    "A": "Yargıtay",
+    "B": "Danıştay",
+    "C": "Ankara Ağır Ceza Muhakemesi",
+    "D": "Anayasa Mahkemesi",
+    "E": "Uyuşmazlık Mahkemesi"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR kusuru: 'Ankara Ağır Ceza Muhakemesi' → 'Ankara Ağır Ceza Mahkemesi'.",
+    "OCR: C şıkkı 'Ankara Ağır Ceza Muhakemesi' yazılmış; doğrusu 'Ankara Ağır Ceza Mahkemesi'. Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "6706 sayılı Kanun md 17 (mülga TCK md 18/3 ile aynı yönde)",
+     "gerekce": "İade talebi hakkında karar vermeye kişinin bulunduğu yer ağır ceza mahkemesi, bulunduğu yer belli değilse Ankara ağır ceza mahkemesi yetkilidir.",
+     "eskime": null,
+     "uyari": "OCR kusuru: 'Ankara Ağır Ceza Muhakemesi' → 'Ankara Ağır Ceza Mahkemesi'."
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "6706 sayılı Kanun md 16/1",
+     "gerekce": "Geri verme talebi hakkında karar vermeye kişinin bulunduğu yer ağır ceza mahkemesi, bulunduğu yer belli değilse Ankara Ağır Ceza Mahkemesi yetkilidir.",
+     "eskime": null,
+     "uyari": "OCR: C şıkkı 'Ankara Ağır Ceza Muhakemesi' yazılmış; doğrusu 'Ankara Ağır Ceza Mahkemesi'. Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s36",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "Aşağıdakilerden hangisi suçun manevi unsurları arasında yer alan netice sebebiyle ağırlaşmış suç koşulları arasında yer almaz?",
+   "siklar": {
+    "A": "Iki ayrı suçun varlığı gerekmektedir.",
+    "B": "Failin ilk hareketi ile işlemeyi hedeflediği suç kasten olmalıdır.",
+    "C": "Failin kastettiğinden daha ağır veya başka bir sonuç doğmalıdır.",
+    "D": "Her iki suç aynı mağdur üzerinde meydana gelmelidir.",
+    "E": "Failin ilk işlemeye kast ettiği suç taksirle de işlenebilen bir suç olmamalıdır."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "D şıkkı ('her iki suç aynı mağdur üzerinde meydana gelmelidir') da doktrinde zorunlu koşul olarak sayılmaz; iki şık savunulabilir görünüyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "TCK md 23; TCK md 87/4 (kasten yaralama sonucu ölüm)",
+     "gerekce": "Temel suçun kasten işlenmiş olması yeterlidir; o suçun ayrıca taksirle işlenememesi aranmaz — arketip örnek olan yaralama taksirle de işlenebilen bir suçtur.",
+     "eskime": null,
+     "uyari": "D şıkkı ('her iki suç aynı mağdur üzerinde meydana gelmelidir') da doktrinde zorunlu koşul olarak sayılmaz; iki şık savunulabilir görünüyor."
+    },
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "TCK md 23",
+     "gerekce": "TCK md 23 ağır netice bakımından failin en azından taksirle hareket etmiş olmasını arar; temel suçun 'taksirle de işlenebilen bir suç olmaması' diye bir koşul yoktur (kasten yaralama hem taksirle işlenebilir hem de tipik netice sebebiyle ağırlaşmış suç temelidir).",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s37",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "|  | Meşru müdafaa | Zorunluluk hali |\n| I | Saldırı olmalıdır | Tehlike olmalıdır |\n| II | Sadece insan saldırılarına karşı yapılabilir | Zorunluluk halinde insan, hayvan veya doğadan tehlike kaynaklanmış olabilir. |\n| III | Kişinin zarar tazmini yükümlülüğü bulunmamaktadır | Tehlike ortadan kalktıktan sonra ortaya çıkan zarar tazmin yükümlülüğü bulunmamaktadır. |\n| IV | Hukuka uygunluk nedenidir | Ceza sorumluluğunu kaldıran nedendir |\n| V | Fail hakkında beraat kararı verili | Fail hakkında beraat kararı verilir. |\n\nYukarıdaki yer verilen meşru müdafaa ve zorunluluk hali eşleştirmelerinden hangisi yanlış olarak verilmiştir?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "III V",
+    "C": "I III V",
+    "D": "II III IV",
+    "E": "I III IV V"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Tabloda V satırında 'beraat kararı verili' yazım eksikliği var (OCR/dizgi); cevabı etkilemiyor.",
+    "V satırının meşru müdafaa sütununda 'verili' yazılmış (OCR: 'verilir'); IV satırındaki 'ceza sorumluluğunu kaldıran neden' nitelemesi doktrinde 'kusurluluğu kaldıran neden' olarak geçse de TCK'nın bölüm başlığıyla uyumlu olduğundan yanlış sayılmadı."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b",
+     "gerekce": "III yanlıştır (zorunluluk halinde TBK 63/2 uyarınca hakkaniyet tazminatı yükümlülüğü doğabilir), V yanlıştır (zorunluluk hali kusurluluğu kaldırdığından CMK 223/3-b gereği beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri doğrudur.",
+     "eskime": null,
+     "uyari": "Tabloda V satırında 'beraat kararı verili' yazım eksikliği var (OCR/dizgi); cevabı etkilemiyor."
+    },
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b; TBK md 63/2",
+     "gerekce": "III yanlıştır (zorunluluk halinde doğan zarar için tazmin yükümlülüğü vardır), V yanlıştır (zorunluluk halinde beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri yerindedir.",
+     "eskime": null,
+     "uyari": "V satırının meşru müdafaa sütununda 'verili' yazılmış (OCR: 'verilir'); IV satırındaki 'ceza sorumluluğunu kaldıran neden' nitelemesi doktrinde 'kusurluluğu kaldıran neden' olarak geçse de TCK'nın bölüm başlığıyla uyumlu olduğundan yanlış sayılmadı."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b",
+     "gerekce": "III yanlıştır (zorunluluk halinde TBK 63/2 uyarınca hakkaniyet tazminatı yükümlülüğü doğabilir), V yanlıştır (zorunluluk hali kusurluluğu kaldırdığından CMK 223/3-b gereği beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri doğrudur.",
+     "eskime": null,
+     "uyari": "Tabloda V satırında 'beraat kararı verili' yazım eksikliği var (OCR/dizgi); cevabı etkilemiyor."
+    },
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "TCK md 25; CMK md 223/2-d ve 223/3-b; TBK md 63/2",
+     "gerekce": "III yanlıştır (zorunluluk halinde doğan zarar için tazmin yükümlülüğü vardır), V yanlıştır (zorunluluk halinde beraat değil 'ceza verilmesine yer olmadığı' kararı verilir); I, II ve IV eşleştirmeleri yerindedir.",
+     "eskime": null,
+     "uyari": "V satırının meşru müdafaa sütununda 'verili' yazılmış (OCR: 'verilir'); IV satırındaki 'ceza sorumluluğunu kaldıran neden' nitelemesi doktrinde 'kusurluluğu kaldıran neden' olarak geçse de TCK'nın bölüm başlığıyla uyumlu olduğundan yanlış sayılmadı."
+    }
+   ]
+  },
+  {
+   "id": "s39",
+   "ders": "Ceza Hukuku",
+   "dayanakKaynagi": "mevzuat/5237-*.md (TCK, 349 md)",
+   "kok": "A, B ve C isimli şahıslar kafeteryada oturmaktadırlar. D isimli şahıs bir an dikkatsizliklerinden yararlanarak hepsinin kendisine ait olan laptoplarını alarak kaçar. D isimli şahsın cezai sorumluluğu ile alakalı aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Bir hırsızlık suçundan sorumlu olup cezası artırılarak uygulanır.",
+    "B": "Bir yağma suçundan sorumlu olup cezası artırılarak uygulanır",
+    "C": "Üç hırsızlık suçundan sorumlu olup ayrı ayrı cezalandırılır",
+    "D": "Üç ayrı yağma suçundan sorumlu olup ayrı ayrı cezalandırılır",
+    "E": "Cezai sorumluluğu yoktur"
+   },
+   "kitapCevabi": "C",
+   "karar": "ANAHTAR-HATALI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": "TCK md 43/2: \"Aynı suçun birden fazla kişiye karşı tek bir fiille işlenmesi durumunda da, birinci fıkra hükmü uygulanır.\" — md 43/1: \"...bir cezaya hükmedilir. Ancak bu ceza, dörtte birinden dörtte üçüne kadar artırılır.\" — md 43/3: \"Kasten öldürme, kasten yaralama, işkence ve yağma suçlarında bu madde hükümleri uygulanmaz.\"",
+   "hakemKarari": "denetci",
+   "hakemGerekcesi": "D tek bir fiille üç kişinin malını almıştır; TCK 43/2 bu hali doğrudan düzenler ve 43/1 yollamasıyla tek ceza verilip artırılmasını emreder. Hırsızlık 43/3'teki istisnalar arasında sayılmadığından zincirleme suç hükmü uygulanır; kitabın 'üç ayrı suçtan ayrı ayrı ceza' cevabı kanun metnine açıkça aykırıdır. Cebir veya tehdit bulunmadığından (md 141'deki hırsızlık tanımı) yağma seçenekleri de elenir. // Fail tek bir fiille (hepsinin laptoplarını alıp kaçmak) üç ayrı mağdura karşı aynı suçu işlemiştir; TCK md 43/2 bu hâli açıkça zincirleme suç sayar, yani tek ceza verilir ve artırılır. Kitabın 'üç ayrı suç, ayrı ayrı ceza' cevabı md 43/2'yi tamamen işlevsiz bırakır. Cebir veya tehdit bulunmadığından yağma (md 148) gündeme gelmez; md 43/3'ün yağmayı zincirleme suç dışında tutması da bu olayda uygulanmaz.",
+   "uyarilar": [
+    "HAKEM: D tek bir fiille üç kişinin malını almıştır; TCK 43/2 bu hali doğrudan düzenler ve 43/1 yollamasıyla tek ceza verilip artırılmasını emreder. Hırsızlık 43/3'teki istisnalar arasında sayılmadığından zincirleme suç hükmü uygulanır; kitabın 'üç ayrı suçtan ayrı ayrı ceza' cevabı kanun metnine açıkça aykırıdır. Cebir veya tehdit bulunmadığından (md 141'deki hırsızlık tanımı) yağma seçenekleri de elenir. // Fail tek bir fiille (hepsinin laptoplarını alıp kaçmak) üç ayrı mağdura karşı aynı suçu işlemiştir; TCK md 43/2 bu hâli açıkça zincirleme suç sayar, yani tek ceza verilir ve artırılır. Kitabın 'üç ayrı suç, ayrı ayrı ceza' cevabı md 43/2'yi tamamen işlevsiz bırakır. Cebir veya tehdit bulunmadığından yağma (md 148) gündeme gelmez; md 43/3'ün yağmayı zincirleme suç dışında tutması da bu olayda uygulanmaz."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "TCK md 43/2 (ve md 43/3, 141)",
+     "gerekce": "Aynı suçun birden fazla kişiye karşı tek bir fiille işlenmesinde zincirleme suç hükmü uygulanır: tek hırsızlık suçundan bir ceza verilip artırılır; cebir/tehdit olmadığı için yağma söz konusu değildir.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "TCK md 43/2 ve 43/3",
+     "gerekce": "Aynı suçun tek bir fiille birden fazla kişiye karşı işlenmesinde md 43/1 uygulanır; hırsızlık md 43/3'teki istisnalar arasında olmadığı için tek hırsızlık suçundan hüküm kurulup ceza artırılır.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s41",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "Aşağıdakilerden hangisi 657 sayılı Devlet Memurları Kanununda yer alan hizmet sınıfları arasında yer almaz?",
+   "siklar": {
+    "A": "Sağlık Hizmetleri Sınıfı",
+    "B": "Eğitim Öğretim Hizmetleri Sınıfı",
+    "C": "Avukatlık Hizmetleri Sınıfı",
+    "D": "Din Hizmetleri Sınıfı",
+    "E": "Adliye Hizmetleri Sınıfı"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kökte kanun 657 olduğu halde soru 'Polis Mevzuatı' dersi altında sorulmuş; kusur değil, kapsam notu.",
+    "Soru 657 sayılı Kanuna dayanıyor; kaydın 'Polis Mevzuatı' ders etiketi ile dayanak listesi (657 yok) uyumsuz — içerik olarak sorun yok."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "657 sayılı Kanun md 36",
+     "gerekce": "Madde 36'da sayılan sınıflar Genel İdare, Teknik, Sağlık ve Yardımcı Sağlık, Eğitim ve Öğretim, Avukatlık, Din, Emniyet, Jandarma, Sahil Güvenlik, Yardımcı Hizmetler, Mülki İdare Amirliği ve Milli İstihbarat Hizmetleri sınıflarıdır; 'Adliye Hizmetleri Sınıfı' diye bir sınıf yoktur.",
+     "eskime": null,
+     "uyari": "Kökte kanun 657 olduğu halde soru 'Polis Mevzuatı' dersi altında sorulmuş; kusur değil, kapsam notu."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "657 sayılı Kanun md 36",
+     "gerekce": "Md 36'da sayılan sınıflar Genel İdare, Teknik, Sağlık ve Yardımcı Sağlık, Eğitim ve Öğretim, Avukatlık, Din, Emniyet, Jandarma, Sahil Güvenlik, Yardımcı Hizmetler, Mülki İdare Amirliği ve Milli İstihbarat sınıflarıdır; 'Adliye Hizmetleri Sınıfı' yoktur.",
+     "eskime": null,
+     "uyari": "Soru 657 sayılı Kanuna dayanıyor; kaydın 'Polis Mevzuatı' ders etiketi ile dayanak listesi (657 yok) uyumsuz — içerik olarak sorun yok."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "657 sayılı Kanun md 36",
+     "gerekce": "Madde 36'da sayılan sınıflar Genel İdare, Teknik, Sağlık ve Yardımcı Sağlık, Eğitim ve Öğretim, Avukatlık, Din, Emniyet, Jandarma, Sahil Güvenlik, Yardımcı Hizmetler, Mülki İdare Amirliği ve Milli İstihbarat Hizmetleri sınıflarıdır; 'Adliye Hizmetleri Sınıfı' diye bir sınıf yoktur.",
+     "eskime": null,
+     "uyari": "Kökte kanun 657 olduğu halde soru 'Polis Mevzuatı' dersi altında sorulmuş; kusur değil, kapsam notu."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "657 sayılı Kanun md 36",
+     "gerekce": "Md 36'da sayılan sınıflar Genel İdare, Teknik, Sağlık ve Yardımcı Sağlık, Eğitim ve Öğretim, Avukatlık, Din, Emniyet, Jandarma, Sahil Güvenlik, Yardımcı Hizmetler, Mülki İdare Amirliği ve Milli İstihbarat sınıflarıdır; 'Adliye Hizmetleri Sınıfı' yoktur.",
+     "eskime": null,
+     "uyari": "Soru 657 sayılı Kanuna dayanıyor; kaydın 'Polis Mevzuatı' ders etiketi ile dayanak listesi (657 yok) uyumsuz — içerik olarak sorun yok."
+    }
+   ]
+  },
+  {
+   "id": "s42",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Polis Kampları\nII. Öğretmen evleri\nIII. Askeri Dinlenme tesissileri\nIV. Polis evleri\nV. Araç kiralama işlemleri\n\n1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre yukarıdakilerden hangisi bu kanun hükümlerine tabi olan yerler arasında yer almaz?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II IV V",
+    "C": "III V",
+    "D": "III",
+    "E": "V"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": "D",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Öncül III'te 'tesissileri' yazım hatası (OCR); cevabı etkilemiyor.",
+    "Kökte 'tesissileri' yazım bozukluğu var (OCR: 'tesisleri'); cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "1774 s.K. md 1/2",
+     "gerekce": "'Askeri konaklama, dinlenme ve kamp tesisleri ile ordu evleri bu Kanunun kapsamı dışındadır'; araç kiralama ise 6638 s.K. değişikliğiyle md 1 kapsamına alınmıştır, dolayısıyla kapsam dışı olan yalnızca III'tür.",
+     "eskime": null,
+     "uyari": "Öncül III'te 'tesissileri' yazım hatası (OCR); cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "1774 s. K. md 1/2 ve Ek md 3",
+     "gerekce": "Md 1/2 askeri konaklama, dinlenme ve kamp tesisleri ile ordu evlerini kanun kapsamı dışında bırakır; araç kiralama Ek md 3 ile kapsamdadır, polis kampı/polis evi/öğretmenevi ise 'resmi konaklama yerleri' olarak md 2 kapsamındadır.",
+     "eskime": null,
+     "uyari": "Kökte 'tesissileri' yazım bozukluğu var (OCR: 'tesisleri'); cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "1774 s.K. md 1/2",
+     "gerekce": "'Askeri konaklama, dinlenme ve kamp tesisleri ile ordu evleri bu Kanunun kapsamı dışındadır'; araç kiralama ise 6638 s.K. değişikliğiyle md 1 kapsamına alınmıştır, dolayısıyla kapsam dışı olan yalnızca III'tür.",
+     "eskime": null,
+     "uyari": "Öncül III'te 'tesissileri' yazım hatası (OCR); cevabı etkilemiyor."
+    },
+    {
+     "cevap": "D",
+     "guven": "yuksek",
+     "dayanak": "1774 s. K. md 1/2 ve Ek md 3",
+     "gerekce": "Md 1/2 askeri konaklama, dinlenme ve kamp tesisleri ile ordu evlerini kanun kapsamı dışında bırakır; araç kiralama Ek md 3 ile kapsamdadır, polis kampı/polis evi/öğretmenevi ise 'resmi konaklama yerleri' olarak md 2 kapsamındadır.",
+     "eskime": null,
+     "uyari": "Kökte 'tesissileri' yazım bozukluğu var (OCR: 'tesisleri'); cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s44",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Gönüllülerin\nII. Sürücü belgesi almak için başvuruda bulunanların\nIII. Özel güvenlik görevlisi olarak istihdam edilenlerin\nIV. Sığınma talebinde bulunanların\nV. Bir suç işlediği gerekçesiyle yakalananların\n\n2559 Sayılı Polis vazife ve Salahiyet Kanunu hükümlerine göre polis yukarıdakilerden hangisinin parmak izini alabilir?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II III IV",
+    "C": "II III IV V",
+    "D": "III IV V",
+    "E": "I III IV"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "V öncülü kanun metnindeki 'gözaltına alınan' ibaresini 'yakalanan' diye vermiş; sadece yakalanıp gözaltına alınmayan kişi md 5 kapsamında değildir. Anahtar A ise soru bu nedenle kusurludur."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "PVSK md 5/1 (a-e bentleri)",
+     "gerekce": "Madde gönüllü, sürücü belgesi başvurusunda bulunan, özel güvenlik görevlisi olarak istihdam edilen ve sığınma talebinde bulunan kişileri sayar; (e) bendi 'gözaltına alınan' der, V'teki 'yakalanan' bundan dar/farklı bir kategoridir.",
+     "eskime": null,
+     "uyari": "V öncülü kanun metnindeki 'gözaltına alınan' ibaresini 'yakalanan' diye vermiş; sadece yakalanıp gözaltına alınmayan kişi md 5 kapsamında değildir. Anahtar A ise soru bu nedenle kusurludur."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "PVSK md 5/1 (a-e bentleri)",
+     "gerekce": "Madde gönüllü, sürücü belgesi başvurusunda bulunan, özel güvenlik görevlisi olarak istihdam edilen ve sığınma talebinde bulunanların parmak izini almaya yetki verir; (e) bendi 'gözaltına alınan' kişiyi sayar, V'teki 'yakalanan' bundan dardır/farklıdır.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "PVSK md 5/1 (a-e bentleri)",
+     "gerekce": "Madde gönüllü, sürücü belgesi başvurusunda bulunan, özel güvenlik görevlisi olarak istihdam edilen ve sığınma talebinde bulunan kişileri sayar; (e) bendi 'gözaltına alınan' der, V'teki 'yakalanan' bundan dar/farklı bir kategoridir.",
+     "eskime": null,
+     "uyari": "V öncülü kanun metnindeki 'gözaltına alınan' ibaresini 'yakalanan' diye vermiş; sadece yakalanıp gözaltına alınmayan kişi md 5 kapsamında değildir. Anahtar A ise soru bu nedenle kusurludur."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "PVSK md 5/1 (a-e bentleri)",
+     "gerekce": "Madde gönüllü, sürücü belgesi başvurusunda bulunan, özel güvenlik görevlisi olarak istihdam edilen ve sığınma talebinde bulunanların parmak izini almaya yetki verir; (e) bendi 'gözaltına alınan' kişiyi sayar, V'teki 'yakalanan' bundan dardır/farklıdır.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s47",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Yabancılar toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.\nII. Yabancıların bu Kanun hükümlerine göre toplantı ve gösteri yürüyüşü düzenlemeleri, İçişleri Bakanlığının iznine bağlıdır.\nIII. Yabancılar düzenleme kurulu üyesi olabilirler\nIV. Yabancılar önceden bildirimde bulunarak yapılacak toplantı ve gösteri yürüyüşünde topluluğa hitapta bulunabilirler.\nV. Toplantı ve gösteri yürüyüşü hakkı anayasada güvence altına alınmış olan temel hak ve hürriyetler arasında yer alır.\n\nYabancıları toplantı ve gösteri yürüyüşü düzenlemeleri için yukarıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "I II III IV",
+    "B": "I II IV V",
+    "C": "I II III IV V",
+    "D": "I IV V",
+    "E": "II III IV V"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "III öncülü eski (2002 öncesi) metne göre yanlış sayılırdı; anahtar B ise soru güncel md 9 karşısında hatalıdır.",
+    "III öncülü kanunda açık hüküm yerine md 9'un susmasından (yalnız diplomatik dokunulmazlık istisnası) çıkarılıyor; soru yazarı III'ü yanlış sayıp B'yi beklemiş olabilir."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "2911 s.K. md 3/2, md 9/1; AY md 34",
+     "gerekce": "Yabancılar İçişleri Bakanlığı izniyle toplantı düzenleyebilir ve 48 saat önce bildirimle topluluğa hitap edebilir (md 3/2); md 9'da 4748 s.K. ile vatandaşlık şartı kaldırıldığından yabancı düzenleme kurulu üyesi olabilir (yalnız diplomatik dokunulmazlığı olanlar olamaz); hak AY md 34'te güvence altındadır — beş öncül de doğrudur.",
+     "eskime": null,
+     "uyari": "III öncülü eski (2002 öncesi) metne göre yanlış sayılırdı; anahtar B ise soru güncel md 9 karşısında hatalıdır."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "2911 s. K. md 3/2 ve md 9/1; Anayasa md 34",
+     "gerekce": "Md 3/2 yabancıların İçişleri Bakanlığı izniyle düzenleme yapmasına ve bildirimle topluluğa hitap etmesine izin verir; md 9 düzenleme kurulu üyeliğinde vatandaşlık şartı aramaz, yalnız diplomatik dokunulmazlığı olanları dışlar; md 34 hakkı anayasal güvenceye bağlar — beş öncül de doğrudur.",
+     "eskime": null,
+     "uyari": "III öncülü kanunda açık hüküm yerine md 9'un susmasından (yalnız diplomatik dokunulmazlık istisnası) çıkarılıyor; soru yazarı III'ü yanlış sayıp B'yi beklemiş olabilir."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "2911 s.K. md 3/2, md 9/1; AY md 34",
+     "gerekce": "Yabancılar İçişleri Bakanlığı izniyle toplantı düzenleyebilir ve 48 saat önce bildirimle topluluğa hitap edebilir (md 3/2); md 9'da 4748 s.K. ile vatandaşlık şartı kaldırıldığından yabancı düzenleme kurulu üyesi olabilir (yalnız diplomatik dokunulmazlığı olanlar olamaz); hak AY md 34'te güvence altındadır — beş öncül de doğrudur.",
+     "eskime": null,
+     "uyari": "III öncülü eski (2002 öncesi) metne göre yanlış sayılırdı; anahtar B ise soru güncel md 9 karşısında hatalıdır."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "2911 s. K. md 3/2 ve md 9/1; Anayasa md 34",
+     "gerekce": "Md 3/2 yabancıların İçişleri Bakanlığı izniyle düzenleme yapmasına ve bildirimle topluluğa hitap etmesine izin verir; md 9 düzenleme kurulu üyeliğinde vatandaşlık şartı aramaz, yalnız diplomatik dokunulmazlığı olanları dışlar; md 34 hakkı anayasal güvenceye bağlar — beş öncül de doğrudur.",
+     "eskime": null,
+     "uyari": "III öncülü kanunda açık hüküm yerine md 9'un susmasından (yalnız diplomatik dokunulmazlık istisnası) çıkarılıyor; soru yazarı III'ü yanlış sayıp B'yi beklemiş olabilir."
+    }
+   ]
+  },
+  {
+   "id": "s48",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "I. Şehirlerarası karayolları II. Genele yollar III. Kamu hizmeti görülen bina eklentilerinde IV. Kilise V. Cami 2911 sayılı kanuna göre yukarıdakilerden hangisi toplantı ve gösteri yürüyüşü yapılması yasak olan yerlerden değildir?",
+   "siklar": {
+    "A": "I II",
+    "B": "II",
+    "C": "III",
+    "D": "I II III IV V",
+    "E": "II III IV V"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Öncül II 'Genele yollar' yazılmış (OCR).",
+    "Soru büyük olasılıkla iptallerden önceki metne göre yazılmış; kitap anahtarı I ve/veya II'yi hâlâ yasak sayıyorsa bugünkü metne göre yanlıştır. İptaller (2017 ve 2020) sınav tarihinden (Mayıs 2022) önce olduğu için eskime alanı boş bırakıldı."
+   ],
+   "eskimeler": [
+    "Şehirlerarası karayollarında gösteri yürüyüşü yasağı AYM'nin 10/9/2020 tarihli E.2020/12, K.2020/46 kararıyla iptal edildi; 'Genel yollar' ibaresi ise AYM'nin 28/9/2017 tarihli E.2014/101, K.2017/142 kararıyla (RG 27/12/2017) iptal edilmişti. Kitabın 'yalnız II' cevabı bugün eksiktir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2911 s.K. md 22/1",
+     "gerekce": "Yürürlükteki metinde yasak yerler parklar, mabetler (cami/kilise), kamu hizmeti görülen bina-tesis ve eklentileri ile TBMM'ye 1 km alandır; 'Genel yollar' ibaresi iptal edilmiştir ve şehirlerarası karayollarına ilişkin cümle de iptal edilmiştir, dolayısıyla I ve II yasak yer değildir.",
+     "eskime": "Şehirlerarası karayollarında gösteri yürüyüşü yasağı AYM'nin 10/9/2020 tarihli E.2020/12, K.2020/46 kararıyla iptal edildi; 'Genel yollar' ibaresi ise AYM'nin 28/9/2017 tarihli E.2014/101, K.2017/142 kararıyla (RG 27/12/2017) iptal edilmişti. Kitabın 'yalnız II' cevabı bugün eksiktir.",
+     "uyari": "Öncül II 'Genele yollar' yazılmış (OCR)."
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2911 s. K. md 22/1",
+     "gerekce": "Yürürlükteki metinde yasak yerler parklar, mabetler, kamu hizmeti görülen bina ve tesisler ile eklentileri ve TBMM'ye bir kilometre alandır; 'genel yollar' ibaresi AYM'nin 28/9/2017 tarihli E.2014/101-K.2017/142 kararıyla, şehirlerarası karayollarına ilişkin ibare ise AYM'nin 10/9/2020 tarihli E.2020/12-K.2020/46 kararıyla iptal edilmiştir.",
+     "eskime": null,
+     "uyari": "Soru büyük olasılıkla iptallerden önceki metne göre yazılmış; kitap anahtarı I ve/veya II'yi hâlâ yasak sayıyorsa bugünkü metne göre yanlıştır. İptaller (2017 ve 2020) sınav tarihinden (Mayıs 2022) önce olduğu için eskime alanı boş bırakıldı."
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2911 s.K. md 22/1",
+     "gerekce": "Yürürlükteki metinde yasak yerler parklar, mabetler (cami/kilise), kamu hizmeti görülen bina-tesis ve eklentileri ile TBMM'ye 1 km alandır; 'Genel yollar' ibaresi iptal edilmiştir ve şehirlerarası karayollarına ilişkin cümle de iptal edilmiştir, dolayısıyla I ve II yasak yer değildir.",
+     "eskime": "Şehirlerarası karayollarında gösteri yürüyüşü yasağı AYM'nin 10/9/2020 tarihli E.2020/12, K.2020/46 kararıyla iptal edildi; 'Genel yollar' ibaresi ise AYM'nin 28/9/2017 tarihli E.2014/101, K.2017/142 kararıyla (RG 27/12/2017) iptal edilmişti. Kitabın 'yalnız II' cevabı bugün eksiktir.",
+     "uyari": "Öncül II 'Genele yollar' yazılmış (OCR)."
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2911 s. K. md 22/1",
+     "gerekce": "Yürürlükteki metinde yasak yerler parklar, mabetler, kamu hizmeti görülen bina ve tesisler ile eklentileri ve TBMM'ye bir kilometre alandır; 'genel yollar' ibaresi AYM'nin 28/9/2017 tarihli E.2014/101-K.2017/142 kararıyla, şehirlerarası karayollarına ilişkin ibare ise AYM'nin 10/9/2020 tarihli E.2020/12-K.2020/46 kararıyla iptal edilmiştir.",
+     "eskime": null,
+     "uyari": "Soru büyük olasılıkla iptallerden önceki metne göre yazılmış; kitap anahtarı I ve/veya II'yi hâlâ yasak sayıyorsa bugünkü metne göre yanlıştır. İptaller (2017 ve 2020) sınav tarihinden (Mayıs 2022) önce olduğu için eskime alanı boş bırakıldı."
+    }
+   ]
+  },
+  {
+   "id": "s50",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "2918 sayılı karayolları trafik kanunu hükümlerine göre araç sınıfına bakılmaksızın kaç promil üstü alkollü araç kullandığı tespit edilen aday sürücülerin ehliyetleri daimi iptal edilir?",
+   "siklar": {
+    "A": "10",
+    "B": "20",
+    "C": "50",
+    "D": "70",
+    "E": "75"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kökteki 'daimi iptal' ifadesi kanunda yok: madde yalnızca 'iptal edilir' der ve iptal edilenlerin kurs/sınav şartıyla yeniden belge alabileceğini düzenler. Ek md 17 24/7/2026-7590/5 md. ile yeniden yazıldı; 0.20 promil eşiği değişmediği için cevap etkilenmiyor.",
+    "Kökteki 'daimi iptal' ifadesi kanuna aykırı: belge iptal edilir, ancak kurs ve sınav şartıyla yeniden alınabilir (Ek md 17/3). Ayrıca şıklar promil değeri değil ondalıksız sayı olarak yazılmış (0.20 yerine '20'). Ek md 17, 24/7/2026-7590/5 ile yeniden düzenlendi ama 0.20 promil eşiği korundu; cevap değişmedi."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "2918 sayılı Kanun Ek md 17/2-c",
+     "gerekce": "Aday sürücülük süresi içinde araç cinsine bakılmaksızın 0.20 promilin üzerinde alkollü araç kullanıldığının tespiti hâlinde aday sürücü belgesi iptal edilir.",
+     "eskime": null,
+     "uyari": "Kökteki 'daimi iptal' ifadesi kanunda yok: madde yalnızca 'iptal edilir' der ve iptal edilenlerin kurs/sınav şartıyla yeniden belge alabileceğini düzenler. Ek md 17 24/7/2026-7590/5 md. ile yeniden yazıldı; 0.20 promil eşiği değişmediği için cevap etkilenmiyor."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "2918 sayılı Kanun Ek md 17/2-c",
+     "gerekce": "Aday sürücülük süresi içinde araç cinsine bakılmaksızın 0.20 promilin üzerinde alkollü araç kullandığı tespit edilenlerin aday sürücü belgesi iptal edilir.",
+     "eskime": null,
+     "uyari": "Kökteki 'daimi iptal' ifadesi kanuna aykırı: belge iptal edilir, ancak kurs ve sınav şartıyla yeniden alınabilir (Ek md 17/3). Ayrıca şıklar promil değeri değil ondalıksız sayı olarak yazılmış (0.20 yerine '20'). Ek md 17, 24/7/2026-7590/5 ile yeniden düzenlendi ama 0.20 promil eşiği korundu; cevap değişmedi."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "2918 sayılı Kanun Ek md 17/2-c",
+     "gerekce": "Aday sürücülük süresi içinde araç cinsine bakılmaksızın 0.20 promilin üzerinde alkollü araç kullanıldığının tespiti hâlinde aday sürücü belgesi iptal edilir.",
+     "eskime": null,
+     "uyari": "Kökteki 'daimi iptal' ifadesi kanunda yok: madde yalnızca 'iptal edilir' der ve iptal edilenlerin kurs/sınav şartıyla yeniden belge alabileceğini düzenler. Ek md 17 24/7/2026-7590/5 md. ile yeniden yazıldı; 0.20 promil eşiği değişmediği için cevap etkilenmiyor."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "2918 sayılı Kanun Ek md 17/2-c",
+     "gerekce": "Aday sürücülük süresi içinde araç cinsine bakılmaksızın 0.20 promilin üzerinde alkollü araç kullandığı tespit edilenlerin aday sürücü belgesi iptal edilir.",
+     "eskime": null,
+     "uyari": "Kökteki 'daimi iptal' ifadesi kanuna aykırı: belge iptal edilir, ancak kurs ve sınav şartıyla yeniden alınabilir (Ek md 17/3). Ayrıca şıklar promil değeri değil ondalıksız sayı olarak yazılmış (0.20 yerine '20'). Ek md 17, 24/7/2026-7590/5 ile yeniden düzenlendi ama 0.20 promil eşiği korundu; cevap değişmedi."
+    }
+   ]
+  },
+  {
+   "id": "s51",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "3201 sayılı Emniyet Teşkilatı Kanunu hükümlerine göre emniyet teşkilatı bölümleri aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "Vasıtali- vasıtasız",
+    "B": "Üniformalı ve üniformasız",
+    "C": "Adlı idari ve siyasi",
+    "D": "Adli ve idari",
+    "E": "Umumi ve hususi"
+   },
+   "kitapCevabi": "C",
+   "karar": "CELISKI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kök 'emniyet teşkilatı bölümleri' diyor; kanun metnindeki ayrım zabıta teşkilatına ilişkindir — kök terim olarak kaymış. OCR: 'Vasıtali', 'Adlı'.",
+    "Kök 'emniyet teşkilatı bölümleri' diyor, oysa umumi/hususi ayrımı md 3'te zabıta teşkilatı içindir; md 4'teki polis ayrımı ise 'üniformalı ve sivil'dir (B şıkkındaki 'üniformasız' değil). Kök bu yönüyle yanıltıcı."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "3201 sayılı Kanun md 3",
+     "gerekce": "Md 3: 'Zabıta teşkilatı: Umumi ve hususi olmak üzere iki kısma ayrılır.'",
+     "eskime": null,
+     "uyari": "Kök 'emniyet teşkilatı bölümleri' diyor; kanun metnindeki ayrım zabıta teşkilatına ilişkindir — kök terim olarak kaymış. OCR: 'Vasıtali', 'Adlı'."
+    },
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "3201 md 3",
+     "gerekce": "Md 3: 'Zabıta teşkilatı: Umumi ve hususi olmak üzere iki kısma ayrılır.'",
+     "eskime": null,
+     "uyari": "Kök 'emniyet teşkilatı bölümleri' diyor, oysa umumi/hususi ayrımı md 3'te zabıta teşkilatı içindir; md 4'teki polis ayrımı ise 'üniformalı ve sivil'dir (B şıkkındaki 'üniformasız' değil). Kök bu yönüyle yanıltıcı."
+    }
+   ]
+  },
+  {
+   "id": "s53",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "3628 sayılı Mal Bildiriminde bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu hükümlerine göre aşağıdakilerden hangisi mal bildiriminde bulunması zorunlu olanlardan değildir?",
+   "siklar": {
+    "A": "Cumhurbaşkanı yardımcısı",
+    "B": "Kamu yararına çalışan dernek başkanları",
+    "C": "Sendika başkanları",
+    "D": "Siyasî parti genel başkanları",
+    "E": "Kamu Başdenetçisi"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": "3628 md 2: \"a) Her tür seçimle iş başına gelen kamu görevlileri ile Cumhurbaşkanı yardımcıları ve bakanlar (Muhtarlar ve ihtiyar heyeti üyeleri hariç)... f) Siyasi parti genel başkanları, vakıfların idare organlarında görev alanlar, ... kamu yararına sayılan dernek yönetici ve deneticileri\". Maddede 'sendika' sözcüğü hiç geçmez.",
+   "hakemKarari": "kitap",
+   "hakemGerekcesi": "Kök 'bu Kanun hükümlerine göre' dediğinden md 2'deki sayım esastır: Cumhurbaşkanı yardımcısı (a), siyasi parti genel başkanları ve kamu yararına dernek yöneticileri (f) açıkça sayılmıştır; Kamu Başdenetçisi ise TBMM Genel Kurulunca seçildiğinden (6328 md 11: \"Başdenetçi gizli oyla seçilir.\") (a) bendindeki 'her tür seçimle iş başına gelen kamu görevlileri' kapsamına girer ve E elenir. Sendika başkanları 3628'de hiç sayılmaz; yükümlülükleri ancak 6356 md 29 gibi özel kanunlardan ve md 2 son fıkrasının atfından doğar, yani bu Kanunun kendi listesinden değil. Ayakta kalan C'dir. // A, B ve D şıkları md 2'nin (a) ve (f) bentlerinde birebir sayılıdır. Kamu Başdenetçisi (E) 6328 md 11 uyarınca TBMM Genel Kurulunca gizli oyla SEÇİLİR; md 2/a'daki 'her tür seçimle iş başına gelen kamu görevlileri' lafzı halk seçimiyle sınırlı olmayıp bu görevi kapsar, ayrıca özel kanunla kurulan ve kamu hizmeti gören bir kurumda ödenek alan görevli olarak md 2/d kapsamına da girer. Sendika başkanları ise md 2'nin hiçbir bendinde sayılmamıştır; yükümlülükleri 6356 md 29'dan doğar ve 3628 md 2 son fıkrası onları yalnızca 'bu Kanun hükümlerine tabi' kılar — yani kökteki '3628 hükümlerine göre zorunlu olanlar' listesinde yer almazlar.",
+   "uyarilar": [
+    "Soru muhtemelen iki doğru cevaplı: sendika başkanları da 3628 md 2'de sayılmaz, yükümlülükleri 6356 sayılı Kanun md 29 üzerinden (md 2 son fıkrasındaki 'özel kanunlarına göre' atfıyla) doğar. Buna karşılık Kamu Başdenetçisi TBMM Genel Kurulunca seçildiği için (a) bendindeki 'her tür seçimle iş başına gelen kamu görevlileri' kapsamına sokulabileceği de savunulabilir; 'Kanun hükümlerine göre' denen kökte C ve E ayrımı net değil.",
+    "6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu md 29 sendika yöneticilerine mal bildirimi zorunluluğu getirir ve 3628 md 2 son fıkrası özel kanunlarına göre bildirimde bulunanları da bu Kanuna tabi kılar; bu nedenle şık yalnızca 'yalnız 3628 md 2 listesi' okumasıyla doğru olur."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "3628 sayılı Kanun md 2",
+     "gerekce": "Madde 2'de Cumhurbaşkanı yardımcıları (a bendi), siyasi parti genel başkanları ile kamu yararına sayılan dernek yönetici ve deneticileri (f bendi) açıkça sayılmış; Kamu Başdenetçisi ne bu maddede ne de 6328 sayılı Kanunda mal bildirimi yükümlüsü olarak anılmıştır.",
+     "eskime": null,
+     "uyari": "Soru muhtemelen iki doğru cevaplı: sendika başkanları da 3628 md 2'de sayılmaz, yükümlülükleri 6356 sayılı Kanun md 29 üzerinden (md 2 son fıkrasındaki 'özel kanunlarına göre' atfıyla) doğar. Buna karşılık Kamu Başdenetçisi TBMM Genel Kurulunca seçildiği için (a) bendindeki 'her tür seçimle iş başına gelen kamu görevlileri' kapsamına sokulabileceği de savunulabilir; 'Kanun hükümlerine göre' denen kökte C ve E ayrımı net değil."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "3628 sayılı Kanun md 2",
+     "gerekce": "Md 2'de Cumhurbaşkanı yardımcıları (a), kamu yararına sayılan dernek yönetici ve deneticileri ile siyasi parti genel başkanları (f) sayılmış, seçimle iş başına gelen kamu görevlileri (a) kapsamına Kamu Başdenetçisi girmektedir; sendika başkanları 3628 md 2'de sayılmamıştır.",
+     "eskime": null,
+     "uyari": "6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu md 29 sendika yöneticilerine mal bildirimi zorunluluğu getirir ve 3628 md 2 son fıkrası özel kanunlarına göre bildirimde bulunanları da bu Kanuna tabi kılar; bu nedenle şık yalnızca 'yalnız 3628 md 2 listesi' okumasıyla doğru olur."
+    },
+    {
+     "cevap": "E",
+     "guven": "dusuk",
+     "dayanak": "3628 sayılı Kanun md 2",
+     "gerekce": "Madde 2'de Cumhurbaşkanı yardımcıları (a bendi), siyasi parti genel başkanları ile kamu yararına sayılan dernek yönetici ve deneticileri (f bendi) açıkça sayılmış; Kamu Başdenetçisi ne bu maddede ne de 6328 sayılı Kanunda mal bildirimi yükümlüsü olarak anılmıştır.",
+     "eskime": null,
+     "uyari": "Soru muhtemelen iki doğru cevaplı: sendika başkanları da 3628 md 2'de sayılmaz, yükümlülükleri 6356 sayılı Kanun md 29 üzerinden (md 2 son fıkrasındaki 'özel kanunlarına göre' atfıyla) doğar. Buna karşılık Kamu Başdenetçisi TBMM Genel Kurulunca seçildiği için (a) bendindeki 'her tür seçimle iş başına gelen kamu görevlileri' kapsamına sokulabileceği de savunulabilir; 'Kanun hükümlerine göre' denen kökte C ve E ayrımı net değil."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "3628 sayılı Kanun md 2",
+     "gerekce": "Md 2'de Cumhurbaşkanı yardımcıları (a), kamu yararına sayılan dernek yönetici ve deneticileri ile siyasi parti genel başkanları (f) sayılmış, seçimle iş başına gelen kamu görevlileri (a) kapsamına Kamu Başdenetçisi girmektedir; sendika başkanları 3628 md 2'de sayılmamıştır.",
+     "eskime": null,
+     "uyari": "6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu md 29 sendika yöneticilerine mal bildirimi zorunluluğu getirir ve 3628 md 2 son fıkrası özel kanunlarına göre bildirimde bulunanları da bu Kanuna tabi kılar; bu nedenle şık yalnızca 'yalnız 3628 md 2 listesi' okumasıyla doğru olur."
+    }
+   ]
+  },
+  {
+   "id": "s57",
+   "ders": "Polis Mevzuatı",
+   "dayanakKaynagi": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+   "kok": "4982 sayılı Bilgi Edinme Hakkı Kanunu hükümlerine göre Bilgi Edinme ve Değerlendirme Kurulu üyelerini aşağıdaki makamlardan hangisi seçer kaç üyeden oluşur?",
+   "siklar": {
+    "A": "Adalet Bakanı /9",
+    "B": "Adalet Bakanı/11",
+    "C": "Cumhurbaşkanı/9",
+    "D": "Cumhurbaşkanı/11",
+    "E": "TBMM/9"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Kök 'seçer kaç üyeden oluşur' derken bağlaç düşmüş (…seçer, kurul kaç üyeden…); anlamı bozmuyor, OCR/dizgi kusuru."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "4982 md 14/2",
+     "gerekce": "Kurul üyeleri Cumhurbaşkanınca seçilir ve dokuz üyeden oluşur.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "4982 md 14/2",
+     "gerekce": "Bilgi Edinme Değerlendirme Kurulu, madde metninde sayılan adaylar arasından Cumhurbaşkanınca seçilecek dokuz üyeden oluşur.",
+     "eskime": null,
+     "uyari": "Kök 'seçer kaç üyeden oluşur' derken bağlaç düşmüş (…seçer, kurul kaç üyeden…); anlamı bozmuyor, OCR/dizgi kusuru."
+    }
+   ]
+  }
+ ]
+}

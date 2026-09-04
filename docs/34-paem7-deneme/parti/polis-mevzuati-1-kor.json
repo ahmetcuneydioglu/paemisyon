@@ -1,0 +1,160 @@
+{
+ "ders": "Polis Mevzuatı",
+ "dayanak": "mevzuat/ içindeki polis mevzuatı (2559, 3201, 7068, 3713, 5326, 5682, 5253, 2911, 1774, 2918, 6136, 6222, 5901, 5607, 4483, 4982, 3628, 5726)",
+ "sorular": [
+  {
+   "id": "s41",
+   "kok": "Aşağıdakilerden hangisi 657 sayılı Devlet Memurları Kanununda yer alan hizmet sınıfları arasında yer almaz?",
+   "siklar": {
+    "A": "Sağlık Hizmetleri Sınıfı",
+    "B": "Eğitim Öğretim Hizmetleri Sınıfı",
+    "C": "Avukatlık Hizmetleri Sınıfı",
+    "D": "Din Hizmetleri Sınıfı",
+    "E": "Adliye Hizmetleri Sınıfı"
+   }
+  },
+  {
+   "id": "s42",
+   "kok": "I. Polis Kampları\nII. Öğretmen evleri\nIII. Askeri Dinlenme tesissileri\nIV. Polis evleri\nV. Araç kiralama işlemleri\n\n1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre yukarıdakilerden hangisi bu kanun hükümlerine tabi olan yerler arasında yer almaz?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II IV V",
+    "C": "III V",
+    "D": "III",
+    "E": "V"
+   }
+  },
+  {
+   "id": "s43",
+   "kok": "1774 sayılı Kimlik Bildirme Kanunu hükümlerine göre Öğrenci yurtları ve benzeri yerlerde çalışanlar ile bu yerlerde kalmakta olan öğrenciler için kimlik bildirimleri, mahalli kolluk örgütüne verilmeden evvel aşağıdakilerden hangisine onaylatılır?",
+   "siklar": {
+    "A": "Kolluk amiri",
+    "B": "Cumhuriyet Savcisı",
+    "C": "Mülki Amir",
+    "D": "Köy veya Mahalle Muhtarı",
+    "E": "Tesisten sorumlu işletici"
+   }
+  },
+  {
+   "id": "s44",
+   "kok": "I. Gönüllülerin\nII. Sürücü belgesi almak için başvuruda bulunanların\nIII. Özel güvenlik görevlisi olarak istihdam edilenlerin\nIV. Sığınma talebinde bulunanların\nV. Bir suç işlediği gerekçesiyle yakalananların\n\n2559 Sayılı Polis vazife ve Salahiyet Kanunu hükümlerine göre polis yukarıdakilerden hangisinin parmak izini alabilir?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "I II III IV",
+    "C": "II III IV V",
+    "D": "III IV V",
+    "E": "I III IV"
+   }
+  },
+  {
+   "id": "s45",
+   "kok": "2559 Sayılı Polis vazife ve Salahiyet Kanunu hükümlerine göre umuma açık istirahat ve eğlence yerlerinin ruhsatı bağlı olduğu kolluk kuvvetinin görüşü alındıktan sonra belediye ve mücavir alan sınırları içinde aşağıdakilerden hangisi tarafından verilir?",
+   "siklar": {
+    "A": "Zabıta",
+    "B": "Mülki amir",
+    "C": "Belediye Encümeni",
+    "D": "Belediye",
+    "E": "İl Özel İdaresi"
+   }
+  },
+  {
+   "id": "s47",
+   "kok": "I. Yabancılar toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.\nII. Yabancıların bu Kanun hükümlerine göre toplantı ve gösteri yürüyüşü düzenlemeleri, İçişleri Bakanlığının iznine bağlıdır.\nIII. Yabancılar düzenleme kurulu üyesi olabilirler\nIV. Yabancılar önceden bildirimde bulunarak yapılacak toplantı ve gösteri yürüyüşünde topluluğa hitapta bulunabilirler.\nV. Toplantı ve gösteri yürüyüşü hakkı anayasada güvence altına alınmış olan temel hak ve hürriyetler arasında yer alır.\n\nYabancıları toplantı ve gösteri yürüyüşü düzenlemeleri için yukarıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "I II III IV",
+    "B": "I II IV V",
+    "C": "I II III IV V",
+    "D": "I IV V",
+    "E": "II III IV V"
+   }
+  },
+  {
+   "id": "s48",
+   "kok": "I. Şehirlerarası karayolları II. Genele yollar III. Kamu hizmeti görülen bina eklentilerinde IV. Kilise V. Cami 2911 sayılı kanuna göre yukarıdakilerden hangisi toplantı ve gösteri yürüyüşü yapılması yasak olan yerlerden değildir?",
+   "siklar": {
+    "A": "I II",
+    "B": "II",
+    "C": "III",
+    "D": "I II III IV V",
+    "E": "II III IV V"
+   }
+  },
+  {
+   "id": "s49",
+   "kok": "2918 sayılı karayolları trafik kanunu hükümlerine göre Trafik zorunlulukları dışında araçların, insan indirmek ve bindirmek, eşya yüklemek, boşaltmak veya beklemek amacı ile kısa bir süre için durdurulmasına ne denir?",
+   "siklar": {
+    "A": "Durma",
+    "B": "Trafik kazası",
+    "C": "Park etme",
+    "D": "Mola",
+    "E": "Duraklama"
+   }
+  },
+  {
+   "id": "s50",
+   "kok": "2918 sayılı karayolları trafik kanunu hükümlerine göre araç sınıfına bakılmaksızın kaç promil üstü alkollü araç kullandığı tespit edilen aday sürücülerin ehliyetleri daimi iptal edilir?",
+   "siklar": {
+    "A": "10",
+    "B": "20",
+    "C": "50",
+    "D": "70",
+    "E": "75"
+   }
+  },
+  {
+   "id": "s51",
+   "kok": "3201 sayılı Emniyet Teşkilatı Kanunu hükümlerine göre emniyet teşkilatı bölümleri aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "Vasıtali- vasıtasız",
+    "B": "Üniformalı ve üniformasız",
+    "C": "Adlı idari ve siyasi",
+    "D": "Adli ve idari",
+    "E": "Umumi ve hususi"
+   }
+  },
+  {
+   "id": "s52",
+   "kok": "3201 sayılı Emniyet Teşkilatı Kanunu hükümlerine göre hangi rütbeye terfi etmek için zorunlu ikinci bölge hizmetini en az bir kez yapmış olmak veya halen bu bölge hizmetini ifa ediyor olmak şarttır?",
+   "siklar": {
+    "A": "4.sınıf Emniyet müdürü",
+    "B": "3.sınıf Emniyet müdürü",
+    "C": "2.sınıf Emniyet müdürü",
+    "D": "Komiser yardımcısı",
+    "E": "Emniyet amiri"
+   }
+  },
+  {
+   "id": "s53",
+   "kok": "3628 sayılı Mal Bildiriminde bulunulması, Rüşvet ve Yolsuzluklarla Mücadele Kanunu hükümlerine göre aşağıdakilerden hangisi mal bildiriminde bulunması zorunlu olanlardan değildir?",
+   "siklar": {
+    "A": "Cumhurbaşkanı yardımcısı",
+    "B": "Kamu yararına çalışan dernek başkanları",
+    "C": "Sendika başkanları",
+    "D": "Siyasî parti genel başkanları",
+    "E": "Kamu Başdenetçisi"
+   }
+  },
+  {
+   "id": "s54",
+   "kok": "I. Hükûmete karşı suç işlemek II. Türkiye Cumhuriyeti Hükûmetine karşı silahlı isyan etmek III. Silahlı örgüt kurmak IV. Savaş zamanında emirlere uymama V. Yabancı hizmetine asker yazma, yazılma 3713 sayılı Terörle Mücadele Kanunu hükümlerine göre yukarıdakilerden hangisi terör suçudur?",
+   "siklar": {
+    "A": "I II III IV V",
+    "B": "IV V",
+    "C": "II IV V",
+    "D": "IV",
+    "E": "I II III V"
+   }
+  },
+  {
+   "id": "s55",
+   "kok": "4483 sayılı Memurlar Ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümlerine göre bölge düzeyinde teşkilatlanan kurum ve kuruluşlarda görev yapan memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye yetkili makam aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Görev yaptıkları ilin valisi",
+    "B": "Bağlı oldukları Bakanlık",
+    "C": "Bağlı oldukları il müdürleri",
+    "D": "İçişleri Bakanlığı",
+    "E": "Kaymakam"
+   }
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "s78",
+    "kok": "Atatürk döneminde milliyetçilik anlayışını güçlendirmek amacıyla; I. Halifeliğin kaldırılması II. Türk Tarih Kurumu'nun kurulması III. Türk Dil Kurumu'nun kurulması Yukarıdakilerden hangileri gerçekleştirilmiştir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "degisenler": [],
+    "okunamadi": false
+  },
+  {
+    "id": "s79",
+    "kok": "Mustafa Kemal Son Osmanlı Mebussan Meclisinde \" Misak-ı Milli Kararlarını \" meclise kabul ettirmekle; I. Mecliste Padişah taraftarlarını sindirme II. Milli Mücadelenin haklılığına resmiyet kazandırma III. Ulusal mücadelede Mebussan Meclisinin desteğini sağlama Durumlarından hangisini ya da hangilerini amaçlamıştır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "I-II",
+      "E": "I-II-II"
+    },
+    "degisenler": [
+      "kök: kapanış tırnağından önceki boşluk sayfadaki gibi geri kondu (Kararlarını \" )"
+    ],
+    "okunamadi": false,
+    "not": "E şıkkı sayfada gerçekten 'I-II-II' olarak basılmış (kitap dizgi hatası); OCR hatası değil, olduğu gibi bırakıldı."
+  },
+  {
+    "id": "s80",
+    "kok": "I. TBMM'nin açılması II. Misak-ı Milli Kararlarının yayınlanması III. İstanbul'un resmen işgali IV. Son Osmanlı Mebussan Meclisi'nin açılması V. Son Osmanlı Mebussan Meclisinin dağıtılması Yukarıdaki olayların kronolojik sıralaması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "siklar": {
+      "A": "V-II-III-IV-I",
+      "B": "III-I-IV-V-II",
+      "C": "IV-III-II-I-V",
+      "D": "I-II-V-III-IV",
+      "E": "IV-II-III-V-I"
+    },
+    "degisenler": [
+      "A: 'V-II-II-IV-I' → 'V-II-III-IV-I'",
+      "B: 'II-I-IV-V-II' → 'III-I-IV-V-II'",
+      "D: 'I-II-V-II-IV' → 'I-II-V-III-IV'",
+      "E: 'IV-II-II-V-I' → 'IV-II-III-V-I'"
+    ],
+    "okunamadi": false
+  },
+  {
+    "id": "s96",
+    "kok": "Birleşmiş Milletler Genel Kurulu, hangi tarihi ' Uluslararası İslamofobi ile Mücadele Günü ' olarak kabul etmiştir?",
+    "siklar": {
+      "A": "10 Aralık",
+      "B": "15 Nisan",
+      "C": "15 Mart",
+      "D": "10 Nisan",
+      "E": "26 Aralık"
+    },
+    "degisenler": [
+      "kök: OCR'ın madde imi olarak okuduğu '•' aslında tek tırnak ('); açılış/kapanış tırnakları sayfadaki gibi kondu",
+      "kök: 'islamofobi' → 'İslamofobi' (sayfada büyük İ ile)"
+    ],
+    "okunamadi": false
+  },
+  {
+    "id": "s100",
+    "kok": "Aşağıdakilerden hangisinde yazım yanlışı vardır?",
+    "siklar": {
+      "A": "Süregelen",
+      "B": "Açgözlü",
+      "C": "Ön izleme",
+      "D": "Gökbilim",
+      "E": "Herkes"
+    },
+    "degisenler": [
+      "C: 'Önizleme' → 'Ön izleme' (sayfada ayrı yazılmış; yazım sorusu olduğu için kritik)"
+    ],
+    "okunamadi": false
+  }
+]

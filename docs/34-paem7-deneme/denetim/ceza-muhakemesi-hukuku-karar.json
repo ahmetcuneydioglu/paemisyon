@@ -1,0 +1,179 @@
+[
+ {
+  "id": "s21",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "guncelCevap": "E",
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 2/1-c ve 2/1-g",
+  "gerekce": "Müdafi, şüpheli veya sanığın savunmasını yapan avukat; ifade alma ise şüphelinin kolluk veya C. savcısı tarafından dinlenmesidir (sorgu hâkim/mahkeme önündedir).",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s22",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "guncelCevap": "D",
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 12/2",
+  "gerekce": "Madde 12/2 zincirleme suçlarda SON suçun işlendiği yer mahkemesini yetkili kılar; şıkta 'ilk suç' denildiği için yanlıştır.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s23",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "guncelCevap": "B",
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 19/2",
+  "gerekce": "Kovuşturmanın yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Adalet Bakanı Yargıtaydan ister.",
+  "eskimeler": [],
+  "uyarilar": [
+   "OCR: kökte '5271 sayıl' → '5271 sayılı'. Cevabı etkilemiyor."
+  ]
+ },
+ {
+  "id": "s24",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "guncelCevap": "B",
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 36/2",
+  "gerekce": "'İnfaz edilecek kararlar, Cumhuriyet Başsavcılığına verilir.' hükmü birebir B şıkkını karşılar.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s25",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "guncelCevap": "D",
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 40/1",
+  "gerekce": "'Kusuru olmaksızın bir süreyi geçirmiş olan kişi, eski hale getirme isteminde bulunabilir' hükmü kökle birebir aynıdır.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s26",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "guncelCevap": "C",
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 50/1-a",
+  "gerekce": "Dinlenme sırasında onbeş yaşını doldurmamış olanlar yeminsiz dinlenir.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s27",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "guncelCevap": "B",
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 91/1",
+  "gerekce": "Kanun gözaltı süresini 'yakalama anından itibaren yirmidört saat' olarak belirler; B şıkkındaki 'gözaltı kararından itibaren' ifadesi yanlıştır, A/C/D/E şıkları md 91/1-3 ile örtüşür.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s28",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "guncelCevap": "D",
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 110/2-(4) (Ek: 8/7/2021-7331/16 md.)",
+  "gerekce": "Adli kontrol yükümlülüğünün devamı 'en geç dört aylık aralıklarla' gözden geçirilip karara bağlanır.",
+  "eskimeler": [],
+  "uyarilar": []
+ },
+ {
+  "id": "s29",
+  "karar": "UYARI",
+  "kitapCevabi": "A",
+  "guncelCevap": "A",
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 39/1",
+  "gerekce": "Gün ile belirlenen süreler tebligatın yapıldığının ERTESİ günü işlemeye başlar; şıkta tebligat günü denildiği için yanlıştır.",
+  "eskimeler": [],
+  "uyarilar": [
+   "C ve E şıkları aynı hükmü (md 39/3) veriyor; E yalnızca cümlenin devamını da içeriyor — mükerrer şık kusuru. A şıkkında ayrıca OCR bozukluğu var ('yapıldığının gün').",
+   "C ve E şıkları aynı hükmü (md 39/3) tekrarlıyor, E yalnızca cümlenin devamını ekliyor; ayrıca A şıkkı OCR'da bozulmuş ('tebligatın yapıldığının gün') — asıl metinde 'tebligatın yapıldığı gün' olmalı."
+  ]
+ },
+ {
+  "id": "s30",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "guncelCevap": "B",
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CMK md 268/3-b",
+  "gerekce": "Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin kararlarına itirazı, yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimi inceler.",
+  "eskimeler": [],
+  "uyarilar": [
+   "Değişiklik 14/7/2021'de yürürlüğe girdiği için Mayıs 2022'de de cevap B'dir; ancak soru 6545 dönemi alışkanlığıyla hazırlanmışsa kitap anahtarı A (ağır ceza) olabilir — yürürlükteki metne göre doğru şık B."
+  ]
+ }
+]

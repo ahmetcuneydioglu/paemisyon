@@ -1,0 +1,676 @@
+{
+ "parca": 1,
+ "sorular": [
+  {
+   "id": "s2",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "Aşağıdakilerden hangisi meclis hükümeti sistemi özellikleri arasında yer alır?",
+   "siklar": {
+    "A": "Yasama ve yürütme organları yürütmede toplanır.",
+    "B": "Seçimle oluşur yürütme üstünlüğü ilkesine dayanır.",
+    "C": "Yürütme organı meclis tarafından oluşturulur ve meclise karşı sorumludur.",
+    "D": "Kuvvetlerin yumuşak ayrımına dayanır.",
+    "E": "Türk Tarihinde ilk kez 1961 Anayasası döneminde uygulanmıştır."
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "A şıkkı 'yürütmede toplanır' diyor (doğrusu yasamada/mecliste); E şıkkı Türkiye'de uygulamayı 1961'e bağlıyor (doğrusu 1920-1923 I. TBMM) — ikisi de çeldirici, kusur değil.",
+    "C şıkkındaki tanım parlamenter sistem için de geçerli olduğundan ayırt ediciliği zayıf; yine de diğer dört şık açıkça yanlış olduğu için tek doğru şıktır."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "Doktrin — meclis hükümeti sistemi (Özbudun, Türk Anayasa Hukuku)",
+     "gerekce": "Meclis hükümetinde yasama ve yürütme mecliste toplanır; yürütme (icra vekilleri) meclisçe kendi üyeleri arasından seçilir ve meclise karşı sorumludur.",
+     "eskime": null,
+     "uyari": "A şıkkı 'yürütmede toplanır' diyor (doğrusu yasamada/mecliste); E şıkkı Türkiye'de uygulamayı 1961'e bağlıyor (doğrusu 1920-1923 I. TBMM) — ikisi de çeldirici, kusur değil."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "Doktrin: Ergun Özbudun, Türk Anayasa Hukuku (hükümet sistemleri tasnifi)",
+     "gerekce": "Meclis hükümeti sisteminde kuvvetler mecliste birleşir; yürütme meclis tarafından oluşturulur ve tek tek meclise karşı sorumludur — A ve B'de üstünlük yürütmeye verilmiş, D parlamenter sisteme, E ise 1921 yerine 1961'e işaret ettiği için yanlıştır.",
+     "eskime": null,
+     "uyari": "C şıkkındaki tanım parlamenter sistem için de geçerli olduğundan ayırt ediciliği zayıf; yine de diğer dört şık açıkça yanlış olduğu için tek doğru şıktır."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1924 Anayasası döneminde hangi hükümet sistemi uygulanmıştır?",
+   "siklar": {
+    "A": "Meclis Hükümet sistemi",
+    "B": "Karma hükümet sistemi",
+    "C": "Parlamenter hükümet sistemi",
+    "D": "Başkanlık sitemi",
+    "E": "Cumhurbaşkanlığı hükümet sistemi"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Bazı kaynaklar 1924'ü doğrudan 'parlamenter sisteme yaklaşan' diye anlatır; ancak baskın doktrin 'karma sistem' der."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "Doktrin — 1924 Anayasası hükümet sistemi (Gözler/Özbudun)",
+     "gerekce": "1924 Anayasası kuvvetler birliği-görevler ayrılığı temelinde meclis hükümeti ile parlamenter sistem öğelerini birlikte taşıyan karma bir sistem kurmuştur.",
+     "eskime": null,
+     "uyari": "Bazı kaynaklar 1924'ü doğrudan 'parlamenter sisteme yaklaşan' diye anlatır; ancak baskın doktrin 'karma sistem' der."
+    },
+    {
+     "cevap": "B",
+     "guven": "orta",
+     "dayanak": "Doktrin: Ergun Özbudun, Türk Anayasa Hukuku — 1924 Anayasası'nın hükümet sistemi",
+     "gerekce": "1924 Anayasası kuvvetler birliği-görevler ayrılığı esasına dayanmakla birlikte meclis hükümeti ile parlamenter sistem öğelerini birlikte taşıdığından doktrinde karma sistem olarak nitelenir.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1982 Anayasasına göre yürütme yetkisi ve görevi aşağıdaki makamlardan hangisi tarafından yerine getirilir?",
+   "siklar": {
+    "A": "Cumhurbaşkanı ve Bakanlar",
+    "B": "Yalnız Cumhurbaşkanı",
+    "C": "Cumhurbaşkanlığı Kabinesi",
+    "D": "TBMM",
+    "E": "Cumhurbaşkanı, Cumhurbaşkanı yardımcıları ve Bakanlar"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Maddedeki '(Bakanlar Kurulu)' ibaresi 6771 sayılı Kanunla (2017) çıkarılmıştır; 2022'de de bugünkü hâl yürürlükteydi."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "AY md 8",
+     "gerekce": "Yürütme yetkisi ve görevi Cumhurbaşkanı tarafından Anayasaya ve kanunlara uygun olarak kullanılır ve yerine getirilir.",
+     "eskime": null,
+     "uyari": "Maddedeki '(Bakanlar Kurulu)' ibaresi 6771 sayılı Kanunla (2017) çıkarılmıştır; 2022'de de bugünkü hâl yürürlükteydi."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 8",
+     "gerekce": "Madde 8, 6771 sayılı Kanunla değiştirilen hâliyle yürütme yetki ve görevini yalnız Cumhurbaşkanına vermektedir (\"Bakanlar Kurulu\" ibaresi metinden çıkarılmıştır).",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1982 Anayasasına göre Milli Güvenlik Kurulu Başkanı Cumhurbaşkanıdır. Cumhurbaşkanı katılmadığı zamanlar Milli Güvenlik Kuruluna aşağıdaki makamlardan hangisi başkanlık yapar?",
+   "siklar": {
+    "A": "Milli Güvenlik Kurulu Genel Sekreteri",
+    "B": "Cumhurbaşkanı Yardımcısı",
+    "C": "TBMM Başkanı",
+    "D": "Milli Savunma Bakanı",
+    "E": "Adalet Bakanı"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Fıkradaki 'Başbakan' ibaresi 6771 sayılı Kanunla (2017, yür. 9/7/2018) 'Cumhurbaşkanı yardımcısı' olmuştur; 2022'de de bugünkü hâl yürürlükteydi."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "AY md 118/5",
+     "gerekce": "Cumhurbaşkanı katılamadığı zamanlar Milli Güvenlik Kurulu Cumhurbaşkanı yardımcısının başkanlığında toplanır.",
+     "eskime": null,
+     "uyari": "Fıkradaki 'Başbakan' ibaresi 6771 sayılı Kanunla (2017, yür. 9/7/2018) 'Cumhurbaşkanı yardımcısı' olmuştur; 2022'de de bugünkü hâl yürürlükteydi."
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 118/4",
+     "gerekce": "\"Cumhurbaşkanı katılamadığı zamanlar Milli Güvenlik Kurulu Cumhurbaşkanı yardımcısının başkanlığında toplanır.\"",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1982 Anayasasına göre Anayasa Mahkemesi tarafından yapılan soyut norm denetimi ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Anayasa değişikliği öngören kanun tekliflerini yalnız şekil bakımından denetlemekle yetkili olup değişikliğin Resmi Gazetede yayımından başlayarak 10 gün içinde iptal istemiyle dava açılması gereklidir.",
+    "B": "Kanun değişikliklerini hem şekil hem esas bakımından denetlemekle yetkilidir.",
+    "C": "Kanun değişiklikleri hakkında iptal istemiyle açılacak davada değişikliğin resmi gazetede yayımından itibaren esas bakımından 60 gün şekil bakımından 10 gün içinde dava açılmalıdır.",
+    "D": "Cumhurbaşkanı Olağan dönem kararnameleri hakkında dava açma süresi 60 gündür.",
+    "E": "TBMM İçtüzüğü değişikliği hakkında iptal istemi ile dava açma süresi 10 gündür."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "A şıkkı 'kanun teklifleri' diyor; denetlenen şey teklif değil kabul edilmiş anayasa değişikliği kanunudur — E kadar açık bir yanlış olmasa da şık ifadesi özensiz."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "AY md 151 ve md 148/2",
+     "gerekce": "Md 151'e göre içtüzük dahil doğrudan iptal davası açma hakkı Resmî Gazetede yayımdan itibaren altmış günde düşer; 10 günlük süre yalnız şekil bozukluğuna dayalı denetim içindir, dolayısıyla 'TBMM İçtüzüğü değişikliğinde iptal davası süresi 10 gündür' ifadesi yanlıştır.",
+     "eskime": null,
+     "uyari": "A şıkkı 'kanun teklifleri' diyor; denetlenen şey teklif değil kabul edilmiş anayasa değişikliği kanunudur — E kadar açık bir yanlış olmasa da şık ifadesi özensiz."
+    },
+    {
+     "cevap": "E",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 151 ve md 148/2",
+     "gerekce": "Md 151'e göre kanun, Cumhurbaşkanlığı kararnamesi ve İçtüzük için iptal davası açma süresi altmış gündür; şekil bozukluğuna dayalı on günlük süre (md 148/2) İçtüzük değişikliğinin esas denetimi için geçerli olmadığından E yanlıştır, diğer şıklar metne uygundur.",
+     "eskime": null,
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "ders": "İdare Hukuku",
+   "dayanakKaynagi": "mevzuat/ içindeki idare kanunları (5442, 5302, 5393, 2577, 2575) + Anayasa",
+   "kok": "Cumhurbaşkanı tarafından tesis edilen işlem neticesinde kurulan Kamu tüzel kişiliği işlemine karşı iptal davaları aşağıdaki yargı organlarından hangisinde görülür?",
+   "siklar": {
+    "A": "Danıştay",
+    "B": "Anayasa mahkemesi",
+    "C": "Bölge idare mahkemesi",
+    "D": "Sayıştay",
+    "E": "Yargıtay"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": "Anayasa md 123/3: \"Kamu tüzelkişiliği, kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulur.\" — 2575 md 24/1-b: \"Cumhurbaşkanınca çıkarılan Cumhurbaşkanlığı kararnameleri dışındaki düzenleyici işlemlere\" — Anayasa md 148: \"Anayasa Mahkemesi, kanunların, Cumhurbaşkanlığı kararnamelerinin ve Türkiye Büyük Millet Meclisi İçtüzüğünün Anayasaya şekil ve esas bakımlarından uygunluğunu denetler\".",
+   "hakemKarari": "kitap",
+   "hakemGerekcesi": "Denetçilerin dayandığı 2575 md 24/1-a yalnız 'Cumhurbaşkanı kararlarını' kapsar; oysa Cumhurbaşkanının tesis ettiği ve kamu tüzel kişiliği KURAN işlem Anayasa md 123/3 gereği ancak Cumhurbaşkanlığı kararnamesi olabilir, bir CB kararı olamaz. 2575 md 24/1-b kararnameleri Danıştay'ın görev alanının açıkça dışında bırakır; kararnamenin denetimi Anayasa md 148 uyarınca Anayasa Mahkemesine aittir. Kök özensiz olsa da ayakta kalan tek şık B'dir; A metnin lafzıyla çürütülmüştür. // Kök, Cumhurbaşkanınca tesis edilen ve neticesinde kamu tüzel kişiliği KURULAN işlemi dava konusu yapıyor. Anayasa md 123/3 uyarınca kamu tüzel kişiliği ancak kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir; Cumhurbaşkanının basit 'kararı' ile kamu tüzel kişiliği kurulamayacağından denetçilerin dayandığı 2575 md 24/1-a (Cumhurbaşkanı kararları) bu senaryoya hukuken uygulanamaz. Kuruluş işlemi CBK olduğuna göre 2575 md 24/1-b bunu Danıştay'ın ilk derece görevinin açıkça dışında bırakır ve denetim Anayasa md 148 gereği Anayasa Mahkemesine aittir.",
+   "uyarilar": [
+    "Kök bozuk: 'Cumhurbaşkanı tarafından tesis edilen işlem neticesinde kurulan Kamu tüzel kişiliği işlemine karşı' ifadesi iki farklı okumaya açık. Dava edilen işlem Cumhurbaşkanı kararı ise Danıştay (2575 md 24/1-a); kamu tüzel kişiliği Anayasa md 123/3 uyarınca Cumhurbaşkanlığı KARARNAMESİ ile kurulmuşsa kararnamenin iptali Anayasa Mahkemesi'nin görevindedir (Anayasa md 148) ve doğru şık B olurdu. Kurulan tüzel kişinin kendi işlemi kastediliyorsa hiçbir şık doğru değildir (genel görevli idare mahkemesi).",
+    "Kök çift anlamlı: Anayasa md 123/3 uyarınca kamu tüzel kişiliği ancak kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir; kuruluş işlemi CBK ise 2575 md 24/1-b bunu Danıştay'ın görevi dışında bırakır ve denetim Anayasa Mahkemesine (B şıkkı) ait olur. 'Cumhurbaşkanı tarafından tesis edilen işlem' ifadesi CB kararı okunduğunda A, CBK okunduğunda B doğrudur."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2575 sayılı Danıştay Kanunu md 24/1-a (Değişik: 2/7/2018-KHK-703/184) + Anayasa md 123/3",
+     "gerekce": "Danıştay Kanunu md 24/1-a uyarınca Cumhurbaşkanı kararlarına karşı açılacak iptal davaları ilk derece mahkemesi olarak Danıştay'da görülür.",
+     "eskime": null,
+     "uyari": "Kök bozuk: 'Cumhurbaşkanı tarafından tesis edilen işlem neticesinde kurulan Kamu tüzel kişiliği işlemine karşı' ifadesi iki farklı okumaya açık. Dava edilen işlem Cumhurbaşkanı kararı ise Danıştay (2575 md 24/1-a); kamu tüzel kişiliği Anayasa md 123/3 uyarınca Cumhurbaşkanlığı KARARNAMESİ ile kurulmuşsa kararnamenin iptali Anayasa Mahkemesi'nin görevindedir (Anayasa md 148) ve doğru şık B olurdu. Kurulan tüzel kişinin kendi işlemi kastediliyorsa hiçbir şık doğru değildir (genel görevli idare mahkemesi)."
+    },
+    {
+     "cevap": "A",
+     "guven": "orta",
+     "dayanak": "2575 s. Danıştay Kanunu md 24/1-a (Değişik: 2/7/2018-KHK-703/184)",
+     "gerekce": "Cumhurbaşkanı kararlarına karşı açılacak iptal davaları ilk derece mahkemesi olarak Danıştay'da görülür.",
+     "eskime": null,
+     "uyari": "Kök çift anlamlı: Anayasa md 123/3 uyarınca kamu tüzel kişiliği ancak kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir; kuruluş işlemi CBK ise 2575 md 24/1-b bunu Danıştay'ın görevi dışında bırakır ve denetim Anayasa Mahkemesine (B şıkkı) ait olur. 'Cumhurbaşkanı tarafından tesis edilen işlem' ifadesi CB kararı okunduğunda A, CBK okunduğunda B doğrudur."
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "ders": "İdare Hukuku",
+   "dayanakKaynagi": "mevzuat/ içindeki idare kanunları (5442, 5302, 5393, 2577, 2575) + Anayasa",
+   "kok": "Büyükşehir belediyesi aşağıdaki normlardan hangisiyle kurulur?",
+   "siklar": {
+    "A": "Kanun",
+    "B": "Cumhurbaşkanı kararı",
+    "C": "Cumhurbaşkanlığı kararnamesi",
+    "D": "İçişleri Bakanı kararı",
+    "E": "İçişleri bakanı teklifi cumhurbaşkanı onayı"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Şıklardaki 'Cumhurbaşkanı kararı' seçeneği normal belediye kuruluşuna ilişkin 5393 md 4 usulünü çağrıştırıyor; o hüküm de AYM'nin 7/12/2023 tarih ve E.2018/117, K.2023/212 kararı ile kısmen iptal edilip 18/6/2025-7551/13 md. ile yeniden düzenlendi. Büyükşehir kuruluşu bundan etkilenmedi, doğru şık değişmiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 127/2 ('kuruluş ve görevleri ... kanunla düzenlenir') + 5216 sayılı Büyükşehir Belediyesi Kanunu md 4 (2004)",
+     "gerekce": "Mahallî idarelerin kuruluşu Anayasa md 127/2 gereği kanunla düzenlenir; büyükşehir belediyeleri de 5216 md 4 uyarınca kanunla kurulur (nitekim 30 büyükşehir 6360 sayılı Kanunla kurulmuştur).",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 127/1-2 + 5216 s. Büyükşehir Belediyesi Kanunu md 4",
+     "gerekce": "Mahallî idarelerin kuruluşu kanunla düzenlenir; büyükşehir belediyeleri de (en son 6360 s.K. ile olduğu gibi) doğrudan kanunla kurulur.",
+     "eskime": null,
+     "uyari": "Şıklardaki 'Cumhurbaşkanı kararı' seçeneği normal belediye kuruluşuna ilişkin 5393 md 4 usulünü çağrıştırıyor; o hüküm de AYM'nin 7/12/2023 tarih ve E.2018/117, K.2023/212 kararı ile kısmen iptal edilip 18/6/2025-7551/13 md. ile yeniden düzenlendi. Büyükşehir kuruluşu bundan etkilenmedi, doğru şık değişmiyor."
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "ders": "İdare Hukuku",
+   "dayanakKaynagi": "mevzuat/ içindeki idare kanunları (5442, 5302, 5393, 2577, 2575) + Anayasa",
+   "kok": "Kamu Hizmeti İmtiyaz Sözleşmelerinde imtiyazcı hizmetin ifası sırasında tarafların iradesi dışında mücbir nedenlerden dolayı imtiyazcının zararına olabilecek durumlar karşısında idareden sözleşmenin yeni koşullara uydurulmasını ve zararının geçici olarak tanzimini istemesine yarayan temel ilke aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Öngörülemezlik (emprovizyon)",
+    "B": "Faith du princ",
+    "C": "Tahkim",
+    "D": "Belirsizlik",
+    "E": "Dengesizlik"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR: B şıkkı 'Faith du princ' → 'fait du prince'; A şıkkındaki 'emprovizyon' da 'imprevizyon' olmalı. Cevabı etkilemiyor.",
+    "B şıkkı OCR bozuk: 'Faith du princ' → doğrusu 'fait du prince'. Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "İdare hukuku doktrini — öngörülemezlik (imprévision) teorisi; Fr. Danıştay Gaz de Bordeaux kararı (CE, 30/3/1916)",
+     "gerekce": "Tarafların iradesi dışında gelişen, sözleşme yapılırken öngörülemeyen olağanüstü koşullar imtiyazcının edimini aşırı ağırlaştırdığında sözleşmenin yeni koşullara uyarlanmasını ve zararın geçici olarak paylaşılmasını sağlayan ilke öngörülemezliktir; 'fait du prince' ise idarenin kendi işlem/eyleminden doğan yükü ifade eder ve kökteki 'iradeleri dışında mücbir neden' tanımına uymaz.",
+     "eskime": null,
+     "uyari": "OCR: B şıkkı 'Faith du princ' → 'fait du prince'; A şıkkındaki 'emprovizyon' da 'imprevizyon' olmalı. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "İdare hukuku doktrini — öngörülemezlik (imprévision) teorisi; Fransız Danıştayı, Compagnie Générale d'Éclairage de Bordeaux (Gaz de Bordeaux), 30/3/1916",
+     "gerekce": "Tarafların iradesi dışındaki olağanüstü/mücbir gelişmeler sözleşmenin ifasını aşırı zorlaştırdığında imtiyazcının sözleşmenin yeni koşullara uyarlanmasını ve zararının geçici olarak paylaşılmasını isteyebilmesi öngörülemezlik ilkesidir; fait du prince ise idarenin kendi eyleminden doğan zararı ifade eder.",
+     "eskime": null,
+     "uyari": "B şıkkı OCR bozuk: 'Faith du princ' → doğrusu 'fait du prince'. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "İdare hukuku doktrini — öngörülemezlik (imprévision) teorisi; Fr. Danıştay Gaz de Bordeaux kararı (CE, 30/3/1916)",
+     "gerekce": "Tarafların iradesi dışında gelişen, sözleşme yapılırken öngörülemeyen olağanüstü koşullar imtiyazcının edimini aşırı ağırlaştırdığında sözleşmenin yeni koşullara uyarlanmasını ve zararın geçici olarak paylaşılmasını sağlayan ilke öngörülemezliktir; 'fait du prince' ise idarenin kendi işlem/eyleminden doğan yükü ifade eder ve kökteki 'iradeleri dışında mücbir neden' tanımına uymaz.",
+     "eskime": null,
+     "uyari": "OCR: B şıkkı 'Faith du princ' → 'fait du prince'; A şıkkındaki 'emprovizyon' da 'imprevizyon' olmalı. Cevabı etkilemiyor."
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "İdare hukuku doktrini — öngörülemezlik (imprévision) teorisi; Fransız Danıştayı, Compagnie Générale d'Éclairage de Bordeaux (Gaz de Bordeaux), 30/3/1916",
+     "gerekce": "Tarafların iradesi dışındaki olağanüstü/mücbir gelişmeler sözleşmenin ifasını aşırı zorlaştırdığında imtiyazcının sözleşmenin yeni koşullara uyarlanmasını ve zararının geçici olarak paylaşılmasını isteyebilmesi öngörülemezlik ilkesidir; fait du prince ise idarenin kendi eyleminden doğan zararı ifade eder.",
+     "eskime": null,
+     "uyari": "B şıkkı OCR bozuk: 'Faith du princ' → doğrusu 'fait du prince'. Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "ders": "İdare Hukuku",
+   "dayanakKaynagi": "mevzuat/ içindeki idare kanunları (5442, 5302, 5393, 2577, 2575) + Anayasa",
+   "kok": "Aşağıdakilerden hangisi kamu hizmetine egemen olan ilkeler arasında yer almaz?",
+   "siklar": {
+    "A": "Devamlılık",
+    "B": "Değişkenlik",
+    "C": "Nesnellik",
+    "D": "Bedelsizlik",
+    "E": "Laiklik"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": "Elde resmî metin YOK — kamu hizmeti ilkeleri mevzuatta sayılmaz; kaynak doktrindir (Rolland ilkeleri: süreklilik/devamlılık, değişkenlik, eşitlik-nesnellik, meccanilik/bedelsizlik). Birebir alıntı yapılamıyor.",
+   "hakemKarari": "kitap",
+   "hakemGerekcesi": "Denetçilerin 'bedelsizlik Türk hukukunda ilke sayılmaz' iddiası yerleşik Türk idare hukuku literatürüyle çelişir: meccanilik (bedelsizlik) tartışmalı da olsa standart dört ilke listesinde yer alır; tartışma ilkenin varlığında değil kapsamındadır. Laiklik ise hiçbir standart kamu hizmeti ilkesi listesinde bulunmaz — Anayasanın genel bir ilkesidir, kamu hizmetine özgü bir ilke değildir. Bu nedenle 'aralarında yer almaz' sorusunun tek net cevabı E'dir. // Şık seti tam olarak Türk idare hukuku ders kitaplarının saydığı dört kamu hizmeti ilkesini (devamlılık/süreklilik, değişkenlik/uyarlama, nesnellik-eşitlik, bedelsizlik/meccanilik) verip dışarıya laikliği bırakıyor; denetçilerin 'bedelsizlik Türk hukukunda ilke sayılmaz' savı hâkim doktrine aykırıdır (meccanilik standart listede yer alır). Laiklik ise Fransız kamu hizmeti hukukunun ilkesi olup Türk kaynaklarının çoğunda kamu hizmeti ilkeleri arasında sayılmaz; dolayısıyla 'yer almaz' cevabı E'dir.",
+   "uyarilar": [
+    "Kök tartışmalı: Türk ders kitaplarının bir kısmı hem bedelsizliği (meccanilik) hem laikliği kamu hizmeti ilkeleri arasında sayar; bu durumda D ve E birlikte savunulabilir hale gelir. Mevzuat metnine dayanmayan doktrin sorusu.",
+    "Kusurlu soru: kaynağa göre hem 'Bedelsizlik' hem 'Laiklik' kamu hizmeti ilkeleri arasında sayılabiliyor; birçok Türk kaynağı laikliği ilke olarak listeler, dolayısıyla iki savunulabilir doğru şık var."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "dusuk",
+     "dayanak": "İdare hukuku doktrini — 'lois de Rolland' (süreklilik, değişkenlik, eşitlik/nesnellik)",
+     "gerekce": "Kamu hizmetinin klasik üç ilkesi süreklilik, değişkenlik ve eşitlik/nesnelliktir; bedelsizlik (meccanilik) Türk hukukunda genel bir ilke sayılmaz, kamu hizmetlerinin çoğu harç/ücret karşılığı görülür.",
+     "eskime": null,
+     "uyari": "Kök tartışmalı: Türk ders kitaplarının bir kısmı hem bedelsizliği (meccanilik) hem laikliği kamu hizmeti ilkeleri arasında sayar; bu durumda D ve E birlikte savunulabilir hale gelir. Mevzuat metnine dayanmayan doktrin sorusu."
+    },
+    {
+     "cevap": "D",
+     "guven": "dusuk",
+     "dayanak": "İdare hukuku doktrini — kamu hizmetinin klasik ilkeleri (lois de Rolland: süreklilik-düzenlilik, değişkenlik/uyarlama, eşitlik-tarafsızlık)",
+     "gerekce": "Süreklilik, değişkenlik ve nesnellik (eşitlik) klasik kamu hizmeti ilkeleridir; bedelsizlik Türk hukukunda genel bir ilke değildir, kamu hizmetlerinden ücret alınabilir (bazı yazarlar laikliği de ilkeler arasında saymaz).",
+     "eskime": null,
+     "uyari": "Kusurlu soru: kaynağa göre hem 'Bedelsizlik' hem 'Laiklik' kamu hizmeti ilkeleri arasında sayılabiliyor; birçok Türk kaynağı laikliği ilke olarak listeler, dolayısıyla iki savunulabilir doğru şık var."
+    },
+    {
+     "cevap": "D",
+     "guven": "dusuk",
+     "dayanak": "İdare hukuku doktrini — 'lois de Rolland' (süreklilik, değişkenlik, eşitlik/nesnellik)",
+     "gerekce": "Kamu hizmetinin klasik üç ilkesi süreklilik, değişkenlik ve eşitlik/nesnelliktir; bedelsizlik (meccanilik) Türk hukukunda genel bir ilke sayılmaz, kamu hizmetlerinin çoğu harç/ücret karşılığı görülür.",
+     "eskime": null,
+     "uyari": "Kök tartışmalı: Türk ders kitaplarının bir kısmı hem bedelsizliği (meccanilik) hem laikliği kamu hizmeti ilkeleri arasında sayar; bu durumda D ve E birlikte savunulabilir hale gelir. Mevzuat metnine dayanmayan doktrin sorusu."
+    },
+    {
+     "cevap": "D",
+     "guven": "dusuk",
+     "dayanak": "İdare hukuku doktrini — kamu hizmetinin klasik ilkeleri (lois de Rolland: süreklilik-düzenlilik, değişkenlik/uyarlama, eşitlik-tarafsızlık)",
+     "gerekce": "Süreklilik, değişkenlik ve nesnellik (eşitlik) klasik kamu hizmeti ilkeleridir; bedelsizlik Türk hukukunda genel bir ilke değildir, kamu hizmetlerinden ücret alınabilir (bazı yazarlar laikliği de ilkeler arasında saymaz).",
+     "eskime": null,
+     "uyari": "Kusurlu soru: kaynağa göre hem 'Bedelsizlik' hem 'Laiklik' kamu hizmeti ilkeleri arasında sayılabiliyor; birçok Türk kaynağı laikliği ilke olarak listeler, dolayısıyla iki savunulabilir doğru şık var."
+    }
+   ]
+  },
+  {
+   "id": "s18",
+   "ders": "İdare Hukuku",
+   "dayanakKaynagi": "mevzuat/ içindeki idare kanunları (5442, 5302, 5393, 2577, 2575) + Anayasa",
+   "kok": "Aşağıdaki hangi iki kurum arasındaki ilişki idari vesayet değildir?",
+   "siklar": {
+    "A": "YÖK-Üniversite",
+    "B": "Türkiye Barolar Birliği -Ankara Barosu",
+    "C": "Büyükşehir Belediyesi-İlçe Belediyesi ( büyükşehir bağlı)",
+    "D": "Vali-il Özel İdaresi",
+    "E": "EGM-Polis Akademisi Başkanlığı"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": "E",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "D şıkkı da savunulabilir: 5302 md 3/b ve md 29 uyarınca vali il özel idaresinin ORGANI ve başıdır, bu nedenle vali-il özel idaresi ilişkisi de teknik anlamda vesayet değildir. Soruda birden fazla doğru şık bulunuyor.",
+    "D şıkkı da savunulabilir: vali 5302 md 3/b ve md 29 uyarınca il özel idaresinin bir organı ve tüzel kişiliğinin temsilcisidir; bu yönüyle ilişki organ/hiyerarşi ilişkisidir. Vesayet sayılması yalnız valinin merkezî idare temsilcisi sıfatıyla md 15'teki karar iade yetkisine dayanır. Bu haliyle soruda iki savunulabilir doğru şık bulunuyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "3201 sayılı Emniyet Teşkilat Kanunu md 13 (Polis Akademisi Başkanı EGM kadro/rütbe cetvelinde yer alır) + Anayasa md 127/son (vesayet ayrı kamu tüzel kişileri arasında olur)",
+     "gerekce": "İdari vesayet ancak ayrı kamu tüzel kişileri arasında kurulabilir; Polis Akademisi Başkanlığı ayrı bir kamu tüzel kişisi olmayıp Emniyet Genel Müdürlüğü teşkilatı içinde yer alır, dolayısıyla ilişki vesayet değil hiyerarşidir.",
+     "eskime": null,
+     "uyari": "D şıkkı da savunulabilir: 5302 md 3/b ve md 29 uyarınca vali il özel idaresinin ORGANI ve başıdır, bu nedenle vali-il özel idaresi ilişkisi de teknik anlamda vesayet değildir. Soruda birden fazla doğru şık bulunuyor."
+    },
+    {
+     "cevap": "E",
+     "guven": "orta",
+     "dayanak": "4652 s. Polis Yüksek Öğretim Kanunu md 3 (Polis Akademisi, EGM'ye bağlı, ayrı kamu tüzel kişiliği yok; Başkan Genel Müdüre karşı sorumlu) + 3201 s.K. kadro cetvelleri",
+     "gerekce": "İdari vesayet iki ayrı kamu tüzel kişisi arasında olur; Polis Akademisi Başkanlığı EGM teşkilatının bir birimi olduğundan aradaki ilişki vesayet değil hiyerarşidir.",
+     "eskime": null,
+     "uyari": "D şıkkı da savunulabilir: vali 5302 md 3/b ve md 29 uyarınca il özel idaresinin bir organı ve tüzel kişiliğinin temsilcisidir; bu yönüyle ilişki organ/hiyerarşi ilişkisidir. Vesayet sayılması yalnız valinin merkezî idare temsilcisi sıfatıyla md 15'teki karar iade yetkisine dayanır. Bu haliyle soruda iki savunulabilir doğru şık bulunuyor."
+    }
+   ]
+  },
+  {
+   "id": "s19",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "1982 anayasasında yer alan aşağıdaki kurumlardan hangisinin başkan seçimi usulü yanlış olarak verilmiştir?",
+   "siklar": {
+    "A": "Anayasa mahkemesi başkanı anayasa mahkemesi üyeleri tarafından seçilir",
+    "B": "Hâkimler ve savcılar kurulu başkanı cumhurbaşkanı tarafından seçilir.",
+    "C": "RTÜK başkanı RTÜK üyeleri tarafından seçilir",
+    "D": "YSK başkanı Cumhurbaşkanı tarafından seçilir.",
+    "E": "Danıştay başkanı Danıştay üyeleri tarafından seçilir."
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": "D",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Sorunun kusuru: B şıkkı da yanlış. Md 159'a göre HSK'nın Başkanı Adalet Bakanıdır; 'Cumhurbaşkanı tarafından seçilir' ifadesi de doğru değil. İki yanlış şık bulunduğu için tek doğru cevap yok — cevap anahtarına göre B ya da D olabilir.",
+    "B şıkkı da tartışmalı: md 159/3'e göre HSK'nın Başkanı, seçimle değil, Adalet Bakanı sıfatıyla göreve gelir. Bakanı Cumhurbaşkanının ataması dolaylı bir doğruluk sağlasa da ifade teknik olarak hatalıdır; iki şıkkın yanlış sayılabilmesi riski vardır."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "guven": "dusuk",
+     "dayanak": "AY md 79/4 (YSK), md 159/3 (HSK), md 146/son (AYM), md 155/4 (Danıştay), 6112 s.K. md 35 (RTÜK)",
+     "gerekce": "YSK üyeleri salt çoğunluk ve gizli oyla aralarından bir başkan seçer; başkan Cumhurbaşkanınca seçilmez, dolayısıyla D yanlıştır.",
+     "eskime": null,
+     "uyari": "Sorunun kusuru: B şıkkı da yanlış. Md 159'a göre HSK'nın Başkanı Adalet Bakanıdır; 'Cumhurbaşkanı tarafından seçilir' ifadesi de doğru değil. İki yanlış şık bulunduğu için tek doğru cevap yok — cevap anahtarına göre B ya da D olabilir."
+    },
+    {
+     "cevap": "D",
+     "guven": "orta",
+     "dayanak": "Anayasa md 79/4",
+     "gerekce": "YSK üyeleri \"salt çoğunluk ve gizli oyla aralarından bir başkan ve bir başkanvekili seçerler\"; başkan Cumhurbaşkanınca seçilmez.",
+     "eskime": null,
+     "uyari": "B şıkkı da tartışmalı: md 159/3'e göre HSK'nın Başkanı, seçimle değil, Adalet Bakanı sıfatıyla göreve gelir. Bakanı Cumhurbaşkanının ataması dolaylı bir doğruluk sağlasa da ifade teknik olarak hatalıdır; iki şıkkın yanlış sayılabilmesi riski vardır."
+    }
+   ]
+  },
+  {
+   "id": "s20",
+   "ders": "Anayasa Hukuku",
+   "dayanakKaynagi": "mevzuat/t-c-anayasasi.md + ilgili kanunlar",
+   "kok": "Genel Kurmay Başkanının atanma usulü ile alakalı aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Milli Savunma Bakanının teklifi cumhurbaşkanının onayı",
+    "B": "Milli Savunma Bakanı kararı",
+    "C": "Doğrudan Cumhurbaşkanı Kararnamesi",
+    "D": "Yüksek Askeri Şura teklifi Milli Savunma Bakanı onayı",
+    "E": "Yüksek Askeri Şura teklifi Cumhurbaşkanı onayı"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": "C",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Terminoloji kusurlu: atama 'Cumhurbaşkanı kararı' ile yapılır, 'Cumhurbaşkanlığı kararnamesi' ile değil; C yine de tek savunulabilir şık.",
+    "C şıkkındaki 'Cumhurbaşkanı Kararnamesi' ifadesi teknik olarak gevşek: atama, düzenleyici CBK ile değil Cumhurbaşkanı atama kararıyla yapılır; yine de yalnız C, atamanın tek yetkilisinin Cumhurbaşkanı olduğunu söyler."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "AY md 117/3 (6771 s.K. ile 4. ve 5. fıkralar mülga)",
+     "gerekce": "Yürürlükteki metinde 'Cumhurbaşkanınca atanan Genelkurmay Başkanı' denir; teklif/onay mekanizması kaldırıldığından atama doğrudan Cumhurbaşkanı iradesiyle yapılır, bu da yalnız C şıkkına uyar.",
+     "eskime": null,
+     "uyari": "Terminoloji kusurlu: atama 'Cumhurbaşkanı kararı' ile yapılır, 'Cumhurbaşkanlığı kararnamesi' ile değil; C yine de tek savunulabilir şık."
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 117/3 (6771 s. K. ile değişik)",
+     "gerekce": "Md 117/3'e göre Genelkurmay Başkanı doğrudan Cumhurbaşkanınca atanır; bakan teklifi veya YAŞ teklifi aranmaz.",
+     "eskime": null,
+     "uyari": "C şıkkındaki 'Cumhurbaşkanı Kararnamesi' ifadesi teknik olarak gevşek: atama, düzenleyici CBK ile değil Cumhurbaşkanı atama kararıyla yapılır; yine de yalnız C, atamanın tek yetkilisinin Cumhurbaşkanı olduğunu söyler."
+    },
+    {
+     "cevap": "C",
+     "guven": "orta",
+     "dayanak": "AY md 117/3 (6771 s.K. ile 4. ve 5. fıkralar mülga)",
+     "gerekce": "Yürürlükteki metinde 'Cumhurbaşkanınca atanan Genelkurmay Başkanı' denir; teklif/onay mekanizması kaldırıldığından atama doğrudan Cumhurbaşkanı iradesiyle yapılır, bu da yalnız C şıkkına uyar.",
+     "eskime": null,
+     "uyari": "Terminoloji kusurlu: atama 'Cumhurbaşkanı kararı' ile yapılır, 'Cumhurbaşkanlığı kararnamesi' ile değil; C yine de tek savunulabilir şık."
+    },
+    {
+     "cevap": "C",
+     "guven": "yuksek",
+     "dayanak": "Anayasa md 117/3 (6771 s. K. ile değişik)",
+     "gerekce": "Md 117/3'e göre Genelkurmay Başkanı doğrudan Cumhurbaşkanınca atanır; bakan teklifi veya YAŞ teklifi aranmaz.",
+     "eskime": null,
+     "uyari": "C şıkkındaki 'Cumhurbaşkanı Kararnamesi' ifadesi teknik olarak gevşek: atama, düzenleyici CBK ile değil Cumhurbaşkanı atama kararıyla yapılır; yine de yalnız C, atamanın tek yetkilisinin Cumhurbaşkanı olduğunu söyler."
+    }
+   ]
+  },
+  {
+   "id": "s23",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanakKaynagi": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayıl Ceza Muhakemesi kanunu hükümlerine göre \"Kovuşturmanın görevli ve yetkili olan mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeli olursa\" davanın naklini Adalet Bakanı aşağıdakilerden hangisinden ister?",
+   "siklar": {
+    "A": "Hâkimler ve Savcılar Kurulu",
+    "B": "Yargıtay",
+    "C": "Bölge İdare Mahkemesi",
+    "D": "Bölge Adliye Mahkemesi",
+    "E": "Uyuşmazlık Mahkemesi"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "OCR: kökte '5271 sayıl' → '5271 sayılı'. Cevabı etkilemiyor."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "CMK md 19/2",
+     "gerekce": "Kovuşturmanın yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Adalet Bakanı Yargıtaydan ister.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "CMK md 19/2",
+     "gerekce": "Kovuşturmanın yetkili mahkemenin bulunduğu yerde yapılması kamu güvenliği için tehlikeliyse davanın naklini Adalet Bakanı Yargıtaydan ister.",
+     "eskime": null,
+     "uyari": "OCR: kökte '5271 sayıl' → '5271 sayılı'. Cevabı etkilemiyor."
+    }
+   ]
+  },
+  {
+   "id": "s29",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanakKaynagi": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi kanunu hükümlerine göre \"sürelerin hesaplanması\" ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Gün ile belirlenen süreler, tebligatın yapıldığının gün işlemeye başlar.",
+    "B": "Süre, hafta olarak belirlenmiş ise, tebligatın yapıldığı günün, son haftada isim itibarıyla karşılığı olan günün mesai saati bitiminde sona erer",
+    "C": "Süre, ay olarak belirlenmiş ise tebligatın yapıldığı günün, son ayda sayı itibarıyla karşılığı olan günün mesai saati bitiminde sona erer",
+    "D": "Son gün bir tatile rastlarsa süre, tatilin ertesi günü biter.",
+    "E": "Süre, ay olarak belirlenmiş ise tebligatın yapıldığı günün, son ayda sayı itibarıyla karşılığı olan günün mesai saati bitiminde sona erer. Son bulduğu ayda sayı itibarıyla karşılığı olan gün yoksa süre, ayın son günü mesai saati bitiminde sona erer."
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": "A",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "C ve E şıkları aynı hükmü (md 39/3) veriyor; E yalnızca cümlenin devamını da içeriyor — mükerrer şık kusuru. A şıkkında ayrıca OCR bozukluğu var ('yapıldığının gün').",
+    "C ve E şıkları aynı hükmü (md 39/3) tekrarlıyor, E yalnızca cümlenin devamını ekliyor; ayrıca A şıkkı OCR'da bozulmuş ('tebligatın yapıldığının gün') — asıl metinde 'tebligatın yapıldığı gün' olmalı."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "CMK md 39/1",
+     "gerekce": "Gün ile belirlenen süreler tebligatın yapıldığının ERTESİ günü işlemeye başlar; şıkta tebligat günü denildiği için yanlıştır.",
+     "eskime": null,
+     "uyari": "C ve E şıkları aynı hükmü (md 39/3) veriyor; E yalnızca cümlenin devamını da içeriyor — mükerrer şık kusuru. A şıkkında ayrıca OCR bozukluğu var ('yapıldığının gün')."
+    },
+    {
+     "cevap": "A",
+     "guven": "yuksek",
+     "dayanak": "CMK md 39/1",
+     "gerekce": "Gün ile belirlenen süreler tebligatın yapıldığı gün değil, yapıldığının ERTESİ GÜNÜ işlemeye başlar; B, C, D, E md 39/2-3-4 ile uyumludur.",
+     "eskime": null,
+     "uyari": "C ve E şıkları aynı hükmü (md 39/3) tekrarlıyor, E yalnızca cümlenin devamını ekliyor; ayrıca A şıkkı OCR'da bozulmuş ('tebligatın yapıldığının gün') — asıl metinde 'tebligatın yapıldığı gün' olmalı."
+    }
+   ]
+  },
+  {
+   "id": "s30",
+   "ders": "Ceza Muhakemesi Hukuku",
+   "dayanakKaynagi": "mevzuat/5271-*.md (CMK, 349 md)",
+   "kok": "5271 sayılı Ceza Muhakemesi Kanunu hükümlerine göre Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin verdiği kararlara karşı yapılan itirazların inceleme yetkisi aşağıdakilerden hangisine aittir?",
+   "siklar": {
+    "A": "Yargı çevresinde bulunduğu Ağır Ceza Mahkemesi",
+    "B": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesi",
+    "C": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesine en yakın Asliye Ceza Mahkemesi",
+    "D": "Yargı çevresinde bulunduğu Asliye Ceza Mahkemesine en yakın Ağır Ceza Mahkemesi",
+    "E": "Numara olarak takip eden Sulh Ceza Hâkimliği"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": null,
+   "hakemKarari": null,
+   "hakemGerekcesi": null,
+   "uyarilar": [
+    "Değişiklik 14/7/2021'de yürürlüğe girdiği için Mayıs 2022'de de cevap B'dir; ancak soru 6545 dönemi alışkanlığıyla hazırlanmışsa kitap anahtarı A (ağır ceza) olabilir — yürürlükteki metne göre doğru şık B."
+   ],
+   "eskimeler": [],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "CMK md 268/3-b",
+     "gerekce": "Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin kararlarına itirazı, yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimi inceler.",
+     "eskime": null,
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "guven": "yuksek",
+     "dayanak": "CMK md 268/3-b (Değişik: 8/7/2021-7331/24 md.)",
+     "gerekce": "Sulh ceza hâkimliğinin tutuklama ve adli kontrole ilişkin kararlarına itirazı, yargı çevresinde bulunduğu asliye ceza mahkemesi hâkimi inceler.",
+     "eskime": null,
+     "uyari": "Değişiklik 14/7/2021'de yürürlüğe girdiği için Mayıs 2022'de de cevap B'dir; ancak soru 6545 dönemi alışkanlığıyla hazırlanmışsa kitap anahtarı A (ağır ceza) olabilir — yürürlükteki metne göre doğru şık B."
+    }
+   ]
+  }
+ ]
+}

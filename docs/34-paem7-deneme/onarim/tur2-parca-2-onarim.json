@@ -1,0 +1,133 @@
+[
+ {
+  "id": "s55",
+  "kok": "4483 sayılı Memurlar Ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümlerine göre bölge düzeyinde teşkilatlanan kurum ve kuruluşlarda görev yapan memurlar ve diğer kamu görevlileri hakkında soruşturma izni vermeye yetkili makam aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Görev yaptıkları ilin valisi",
+   "B": "Bağlı oldukları Bakanlık",
+   "C": "Bağlı oldukları il müdürleri",
+   "D": "İçişleri Bakanlığı",
+   "E": "Kaymakam"
+  },
+  "degisenler": [
+   "kök: 'sorușturma' -> 'soruşturma' (OCR harf bozulması)"
+  ],
+  "okunamadi": false
+ },
+ {
+  "id": "s57",
+  "kok": "4982 sayılı Bilgi Edinme Hakkı Kanunu hükümlerine göre Bilgi Edinme ve Değerlendirme Kurulu üyelerini aşağıdaki makamlardan hangisi seçer kaç üyeden oluşur?",
+  "siklar": {
+   "A": "Adalet Bakanı /9",
+   "B": "Adalet Bakanı/11",
+   "C": "Cumhurbaşkanı/9",
+   "D": "Cumhurbaşkanı/11",
+   "E": "TBMM/9"
+  },
+  "degisenler": [],
+  "okunamadi": false
+ },
+ {
+  "id": "s60",
+  "kok": "5276 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?",
+  "siklar": {
+   "A": "Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.",
+   "B": "Tanıklık konusu olay.",
+   "C": "Tanıklığa ilişkin bilgiler",
+   "D": "Tedbir veya tedbirlerin şekli ve süresi.",
+   "E": "Tanığa ilişkin geçmiş ikamet bilgileri"
+  },
+  "degisenler": [],
+  "okunamadi": false
+ },
+ {
+  "id": "s61",
+  "kok": "5326 Sayılı Kabahatler Kanunu hükümlerine göre kolluk tarafından dilencilik tespit edilmesi üzerine dilenci üzerindeki kazancın mülkiyetinin kamuya geçirilmesine aşağıdakilerden hangisi karar verir?",
+  "siklar": {
+   "A": "Mülki amir",
+   "B": "Belediye başkanı",
+   "C": "Belediye encümeni",
+   "D": "Zabıta amiri",
+   "E": "Cumhuriyet savcısı"
+  },
+  "degisenler": [
+   "D şıkkı: 'Zabita amiri' -> 'Zabıta amiri' (ı/i OCR bozulması)"
+  ],
+  "okunamadi": false
+ },
+ {
+  "id": "s62",
+  "kok": "5395 Çocuk Koruma Kanunu hükümlerine göre kaç yaşını doldurmuş kişi çocuk sıfatına haiz değildir?",
+  "siklar": {
+   "A": "10",
+   "B": "12",
+   "C": "15",
+   "D": "18",
+   "E": "13"
+  },
+  "degisenler": [],
+  "okunamadi": false
+ },
+ {
+  "id": "s66",
+  "kok": "5901 Sayılı Türk Vatandaşlığı Kanunu hükümlerine göre bir Türk vatandaşı ile en az kaç yıldan beri evli olan ve evliliği devam eden yabancılar Türk vatandaşlığını kazanmak üzere başvuruda bulunabilir?",
+  "siklar": {
+   "A": "Sekiz",
+   "B": "Beş",
+   "C": "Dört",
+   "D": "Üç",
+   "E": "Altı"
+  },
+  "degisenler": [
+   "kök: 'vatandaşlığını|' içindeki artık '|' işareti kaldırıldı",
+   "kök: 'kazanmak üzerer' -> 'kazanmak üzere'"
+  ],
+  "okunamadi": false
+ },
+ {
+  "id": "s67",
+  "kok": "6136 sayılı Ateşli silahlar ve bıçaklar ile diğer Aletler hakkında kanun hükümlerine göre ateşli silahla işlenen suçlardan hükümlü bulunanlar ile taksirli suçlar hariç olmak üzere bir yıldan fazla hapis cezasına mahkûm olanlara, mahkûm olunan cezanın infazının tamamlandığı tarihten itibaren kaç yıl geçmedikçe ve haklarında yasaklanmış hakların geri verilmesine ilişkin karar verilmedikçe, ateşli silah taşıma ve bulundurma izni verilemez?",
+  "siklar": {
+   "A": "Bir",
+   "B": "İki",
+   "C": "Üç",
+   "D": "Dört",
+   "E": "Beş"
+  },
+  "degisenler": [
+   "kök: 'kaç yı geçmedikçe' -> 'kaç yıl geçmedikçe'",
+   "C şıkkı: 'Uç' -> 'Üç'"
+  ],
+  "okunamadi": false
+ },
+ {
+  "id": "s69",
+  "kok": "7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun Hükmünde Kararnamenin Kabul Edilmesine Dair Kanun hükümlerine göre görevde kayıtsızlık göstermek, görevi savsaklamak veya geçerli bir özrü olmaksızın belirtilen sürede bitirmemek, fiilinin karşılığında öngörülen disiplin cezası karşılığında ayrıca kaç disiplin puanı verilir?",
+  "siklar": {
+   "A": "Bir",
+   "B": "İki",
+   "C": "Üç",
+   "D": "Dört",
+   "E": "Beş"
+  },
+  "degisenler": [
+   "kök: 'filinin karşılığında' -> 'fiilinin karşılığında'"
+  ],
+  "okunamadi": false
+ },
+ {
+  "id": "s70",
+  "kok": "7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun Hükmünde Kararnamenin Kabul Edilmesine Dair Kanun hükümlerine göre vali tarafından verilen disiplin cezalarına itiraz aşağıdakilerden hangisine yapılır?",
+  "siklar": {
+   "A": "Bölge İdare Mahkemesi",
+   "B": "İçişleri Bakanı",
+   "C": "Emniyet Genel Müdürü",
+   "D": "İl polis Disiplin Kurulu",
+   "E": "Bakanlık Yüksek Disiplin Kurulu"
+  },
+  "degisenler": [
+   "D şıkkı: 'il polis Disiplin Kurulu' -> 'İl polis Disiplin Kurulu'"
+  ],
+  "okunamadi": false
+ }
+]

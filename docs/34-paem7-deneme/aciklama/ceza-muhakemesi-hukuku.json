@@ -1,0 +1,37 @@
+[
+ {
+  "id": "s21",
+  "aciklama": "Şüpheli veya sanığın ceza muhakemesinde savunmasını yapan avukat müdafidir; şüphelinin kolluk görevlileri ya da Cumhuriyet savcısı tarafından soruşturma konusu suçla ilgili dinlenmesi ise ifade almadır (CMK md 2/1-c ve 2/1-g). Sorgu ile karıştırmamak gerekir: dinleyen makam hâkim veya mahkeme ise işlemin adı sorgudur (md 2/1-h). Katılanı, suçtan zarar göreni veya malen sorumluyu temsil eden avukat ise müdafi değil vekildir (md 2/1-d).",
+  "dayanak": "CMK md 2/1-c, 2/1-g"
+ },
+ {
+  "id": "s22",
+  "aciklama": "Yetki kural olarak suçun işlendiği yer mahkemesine aittir; teşebbüste son icra hareketinin yapıldığı, kesintisiz suçlarda kesintinin gerçekleştiği, zincirleme suçlarda ise son suçun işlendiği yer mahkemesi yetkilidir (CMK md 12/1-2). Bu nedenle zincirleme suçta yetkiyi ilk suçun işlendiği yere bağlayan ifade kanuna aykırıdır. Bilişim sistemlerinin, banka veya kredi kurumlarının ya da banka veya kredi kartlarının araç olarak kullanılmasıyla işlenen suçlarda mağdurun yerleşim yeri mahkemelerinin de yetkili olması ise 7331 sayılı Kanunla (2021) eklenen md 12/6 hükmüdür.",
+  "dayanak": "CMK md 12/2"
+ },
+ {
+  "id": "s24",
+  "aciklama": "Tebligat ve yazışmaları mahkeme başkanı veya hâkim yapar; infaz edilecek kararlar ise Cumhuriyet Başsavcılığına verilir (CMK md 36/2). Kararın yerine getirilmesi ceza infaz kurumuna veya kolluğa doğrudan değil, infazı takip eden makam olan Cumhuriyet Başsavcılığı eliyle yürür.",
+  "dayanak": "CMK md 36/2"
+ },
+ {
+  "id": "s25",
+  "aciklama": "Kusuru olmaksızın bir süreyi geçiren kişinin başvurabileceği kurum eski hâle getirmedir (CMK md 40/1); kanun yoluna başvuru hakkı kendisine bildirilmemişse kişi kusursuz sayılır (md 40/2). Dilekçe, engelin kalkmasından itibaren iki hafta içinde, süreye uyulsaydı usul işlemlerini yapacak olan mahkemeye verilir (md 41/1). Yargılamanın yenilenmesi ve kanun yararına bozma, süre kaçırmanın değil kesinleşmiş hükümdeki hukuka aykırılıkların giderilmesine ilişkindir.",
+  "dayanak": "CMK md 40/1"
+ },
+ {
+  "id": "s26",
+  "aciklama": "Dinlenme sırasında onbeş yaşını doldurmamış olanlar tanık olarak yeminsiz dinlenir (CMK md 50/1-a). Ölçüt tanıklığın yapıldığı andaki yaştır, suçun işlendiği tarihteki yaş değildir. Aynı maddede, ayırt etme gücü bulunmadığından yeminin niteliğini kavrayamayanlar ile olayla ilgili iştirak veya suçluyu kayırma şüphesi altındaki kişiler de yeminsiz dinlenecekler arasında sayılmıştır.",
+  "dayanak": "CMK md 50/1-a"
+ },
+ {
+  "id": "s27",
+  "aciklama": "Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, gözaltı kararından değil yakalama anından itibaren yirmi dört saati geçemez (CMK md 91/1, 5353 sayılı Kanunla (2005) değişik); bu nedenle süreyi gözaltı kararına bağlayan ifade yanlıştır. Aynı fıkraya göre en yakın hâkim veya mahkemeye gönderilme için zorunlu süre on iki saati aşamaz. Toplu olarak işlenen suçlarda Cumhuriyet savcısı, her defasında bir günü geçmemek üzere üç gün süreyle uzatma emri verebilir (md 91/3).",
+  "dayanak": "CMK md 91/1"
+ },
+ {
+  "id": "s28",
+  "aciklama": "Şüpheli veya sanığın adli kontrol yükümlülüğünün devamının gerekip gerekmeyeceği en geç dört aylık aralıklarla gözden geçirilip karara bağlanır (CMK md 110/4; 7331 sayılı Kanunla (2021) eklenmiştir). Kararı soruşturma evresinde Cumhuriyet savcısının istemi üzerine sulh ceza hâkimi, kovuşturma evresinde ise resen mahkeme verir.",
+  "dayanak": "CMK md 110/4"
+ }
+]
