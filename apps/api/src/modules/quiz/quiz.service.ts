@@ -811,6 +811,7 @@ export class QuizService {
     // Geri bildirim verilecek mi? exam: asla; deneme: yalnız liveAnswerReveal
     // açık denemelerde (Doc 18 karar 5, varsayılan KAPALI — pencere açıkken
     // anahtar SIZDIRILMAZ).
+    const denemeModu = session.mode === 'deneme' || session.mode === 'exam';
     const givesFeedback =
       session.mode !== 'exam' &&
       !(session.mode === 'deneme' && !session.exam?.liveAnswerReveal);
@@ -900,7 +901,11 @@ export class QuizService {
       explanation: version?.explanation ?? null,
       legalReference: version?.legalReferences[0]?.citation ?? null,
       relatedArticle,
-      source: showSource ? (version?.sourceLabel ?? null) : null,
+      // Randevulu denemede kaynak etiketi GİZLİ (kullanıcı kararı, 4 Eylül 2026):
+      // aday yalnız açıklamayı görür. liveAnswerReveal açık bir denemede anlık
+      // geri bildirim verilse bile etiket sızmamalı — alıştırmada ise etiket
+      // ürünün güven vaadidir ve panelden yönetilir.
+      source: denemeModu || !showSource ? null : (version?.sourceLabel ?? null),
     };
   }
 

@@ -7,7 +7,6 @@ import {
 } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { QuizService } from '../quiz/quiz.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 
@@ -25,7 +24,6 @@ export class ExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
-    private readonly settings: SettingsService,
   ) {}
 
   private endAt(exam: { startAt: Date; durationMinutes: number }): Date {
@@ -234,10 +232,15 @@ export class ExamsService {
       select: { questionId: true, selectedOptionId: true, isCorrect: true, timeSpentMs: true },
     });
     const answerOf = new Map(answers.map((a) => [a.questionId, a]));
-    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    // Randevulu denemede KAYNAK ETİKETİ GÖSTERİLMEZ (kullanıcı kararı,
+    // 4 Eylül 2026): aday sonucu incelerken yalnız açıklamayı görür. Etiket
+    // sorunun geldiği kitabı/sınavı işaret ediyor; denemenin kendisi bir ürün
+    // ve kaynağını dağıtmak istemiyoruz. Alıştırma ve public akışlarda etiket
+    // yerinde duruyor — orada "gerçek, kaynaklı çıkmış soru" güveni anlatılır;
+    // oradaki görünürlük panelden (Sorular > kaynak etiketi) yönetiliyor.
     const review = (await this.examQuestions(session.examId!, { withAnswers: true })).map((q) => ({
       ...q,
-      source: showSource ? q.source : null,
+      source: null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
     }));
 
