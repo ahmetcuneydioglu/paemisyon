@@ -78,7 +78,10 @@ export default function ExamReviewPage() {
     onMutate: ({ questionId }) => setIslemde(questionId),
     onSuccess: (yeni, degisken) => {
       qc.setQueryData(['admin-exam-inceleme', id], yeni);
-      qc.invalidateQueries({ queryKey: ['admin-exam', id] });
+      // refetchType 'all': deneme detayı şu an EKRANDA DEĞİL (arka planda pasif).
+      // Sade invalidate pasif sorguyu yalnız bayatlatır; kullanıcı "Denemeye dön"
+      // dediğinde 15 sn'lik staleTime penceresinde eski set görünebiliyordu.
+      qc.invalidateQueries({ queryKey: ['admin-exam', id], refetchType: 'all' });
       setNotice(
         degisken.yerine
           ? 'Soru değiştirildi — yerine aynı alandan yeni soru geldi.'

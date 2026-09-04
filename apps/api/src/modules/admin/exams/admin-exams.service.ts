@@ -233,12 +233,22 @@ export class AdminExamsService {
   }
 
   /**
-   * Bir soruyu setten çıkarır; `yerineGetir` ise AYNI ALANDAN yenisini koyar.
+   * Bir soruyu setten çıkarır; `yerineGetir` ise AYNI DERSTEN yenisini koyar.
    *
-   * "Aynı alan" önce KONU, o tükendiyse DERS demektir: bölüm kotası ders
-   * üstünden yürüdüğü için ders içinde kalmak müfredat dağılımını bozmaz,
-   * konuyu öncelemek de konu dengesini korur. Yeni soru setteki AYNI SIRAYA
-   * girer — okurken liste altından kaymaz.
+   * Yeni soru setteki AYNI SIRAYA girer — okurken liste altından kaymaz.
+   *
+   * İlk sürümde havuz "önce KONU, tükendiyse ders" idi ve pratikte kırıldı
+   * (4 Eylül 2026, canlı deneme): konu havuzu dar. Örnek — "2576 Bölge İdare
+   * Mahkemeleri Kanunu" konusunda 9 soru var, 2'si zaten sette, geriye 7 aday
+   * kalıyordu. Üstüne seçim "az kullanılmış önce" sıralı: setten çıkarılan soru
+   * kullanım sayısı düştüğü için ANINDA en iyi aday oluyordu. Sonuç, aynı 2-3
+   * sorunun dönüp durması — kullanıcı "değiştirdiğim soru yine geliyor" diye
+   * bildirdi, denetim kaydı da tam bu döngüyü gösterdi. Aynı derste havuz
+   * 458 (429'u sette değil); konu yerine ders almak sorunu kökten çözer ve
+   * "hangi alandan çıkardıysak o alandan gelsin" kuralına da uyar.
+   *
+   * İkinci koruma: bu denemeden BİR KEZ ÇIKARILAN soru geri önerilmez —
+   * reddedilenler denetim kaydından okunur, sayfa yenilense de unutulmaz.
    */
   async replaceQuestion(
     actor: AuthenticatedUser,
@@ -252,7 +262,7 @@ export class AdminExamsService {
     }
     const mevcut = await this.prisma.examQuestion.findUnique({
       where: { examId_questionId: { examId: id, questionId } },
-      include: { question: { select: { topicId: true, topic: { select: { courseId: true } } } } },
+      include: { question: { select: { topic: { select: { courseId: true } } } } },
     });
     if (!mevcut) throw new NotFoundException('Bu soru denemede yok.');
 
@@ -264,34 +274,27 @@ export class AdminExamsService {
           select: { questionId: true },
         })
       ).map((r) => r.questionId);
+      const disari = [...new Set([...settekiler, ...(await this.reddedilenler(id))])];
 
-      // Önce konu, sonra ders — ilk dolu havuz kazanır.
-      for (const kapsam of [
-        { topicId: mevcut.question.topicId },
-        { topic: { courseId: mevcut.question.topic.courseId } },
-      ]) {
-        const adaylar = await this.prisma.question.findMany({
-          where: {
-            ...kapsam,
-            deletedAt: null,
-            currentVersionId: { not: null },
-            id: { notIn: settekiler },
-          },
-          select: { id: true, currentVersionId: true, _count: { select: { examQuestions: true } } },
-        });
-        if (adaylar.length === 0) continue;
-        // Az kullanılmış öncelikli, eşitlikte rastgele (autofill ile aynı ilke).
-        const [sec] = adaylar
-          .map((a) => ({ a, r: Math.random() }))
-          .sort((x, y) => x.a._count.examQuestions - y.a._count.examQuestions || x.r - y.r);
-        yeni = { id: sec.a.id, currentVersionId: sec.a.currentVersionId };
-        break;
-      }
-      if (!yeni) {
+      const adaylar = await this.prisma.question.findMany({
+        where: {
+          topic: { courseId: mevcut.question.topic.courseId },
+          deletedAt: null,
+          currentVersionId: { not: null },
+          id: { notIn: disari },
+        },
+        select: { id: true, currentVersionId: true, _count: { select: { examQuestions: true } } },
+      });
+      if (adaylar.length === 0) {
         throw new BadRequestException(
-          'Bu dersin bankasında sette olmayan başka soru kalmadı — elle soru ekle.',
+          'Bu dersin bankasında sette olmayan ve daha önce çıkarılmamış soru kalmadı — elle soru ekle.',
         );
       }
+      // Az kullanılmış öncelikli, eşitlikte rastgele (autofill ile aynı ilke).
+      const [sec] = adaylar
+        .map((a) => ({ a, r: Math.random() }))
+        .sort((x, y) => x.a._count.examQuestions - y.a._count.examQuestions || x.r - y.r);
+      yeni = { id: sec.a.id, currentVersionId: sec.a.currentVersionId };
     }
 
     await this.prisma.$transaction(async (tx) => {
@@ -317,6 +320,21 @@ export class AdminExamsService {
       { cikarilan: questionId, eklenen: yeni?.id ?? null },
     );
     return this.inceleme(id);
+  }
+
+  /**
+   * Bu denemeden daha önce ÇIKARILMIŞ soru id'leri (denetim kaydından).
+   * Reddedilen soru bir daha önerilmemeli; ayrı bir tablo tutmak yerine zaten
+   * yazdığımız denetim kaydı okunur — sayfa yenilense, gün değişse de kalıcı.
+   */
+  private async reddedilenler(examId: string): Promise<string[]> {
+    const rows = await this.prisma.$queryRaw<{ qid: string | null }[]>`
+      SELECT DISTINCT detail->>'cikarilan' AS qid
+      FROM audit_logs
+      WHERE entity_type = 'exam'
+        AND entity_id = ${examId}
+        AND action IN ('exam.replace_question', 'exam.remove_question')`;
+    return rows.map((r) => r.qid).filter((v): v is string => v != null);
   }
 
   async create(actor: AuthenticatedUser, dto: UpsertExamDto) {
