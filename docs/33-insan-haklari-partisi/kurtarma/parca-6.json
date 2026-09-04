@@ -1,0 +1,471 @@
+{
+ "parca": 6,
+ "sorular": [
+  {
+   "id": "b20-41",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesine Devletlerarası başvuru süresi iç hukuk yolları tüketilip kesin karar verildikten sonra kaç ay içerisinde yapılması gerekmektedir?",
+   "siklar": {
+    "A": "Üç",
+    "B": "Dört",
+    "C": "Beş",
+    "D": "Altı",
+    "E": "On iki"
+   },
+   "kitapCevabi": "D",
+   "karar": "ANAHTAR-HATALI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": "AİHS md 35/1: “Mahkeme'ye ancak, uluslararası hukukun genel olarak kabul edilen ilkeleri uyarınca iç hukuk yollarının tüketilmesinden sonra ve iç hukuktaki kesin karar tarihinden itibaren dört aylık bir süre içinde başvurulabilir.”",
+   "uyarilar": [
+    "Bilgi eskimis: sorunun beklenen cevabi buyuk olasilikla 'Alti' (D); Protokol 15 sonrasi (1 Subat 2022'den itibaren kesinlesen ic hukuk kararlari icin) sure DORT aydir, panelin aihs.md metni de dort ay demektedir.",
+    "Bilgi eskimiş: klasik altı aylık süre 15 No.lu Protokol ile dört aya indirildi (Protokol 1 Ağustos 2021'de yürürlüğe girdi, dört ay kuralı 1 Şubat 2022'den sonraki kesin kararlara uygulanıyor). Cevap anahtarı 'Altı' diyorsa güncellenmelidir.",
+    "HAKEM: Kitabın “altı ay” anahtarı Protokol 15 öncesi metne aittir; elde bulunan yürürlükteki resmî çeviride süre açıkça “dört ay”dır, dolayısıyla D çürütülüyor. Denetçinin “bu kural md 33 devletlerarası başvuruları da kapsar” gerekçesi metinle doğrulanıyor: md 35/1 süzcük seçimiyle tüm başvurulara (“Mahkeme'ye ancak …”) hitap ederken, md 35/2 ve 35/3 kendilerini açıkça “34. madde uyarınca sunulan bireysel başvurular” ile sınırlar — sınırlama yalnız 2 ve 3. fıkralarda olduğuna göre 1. fıkra devletlerarası başvuruya da uygulanır. // Yürürlükteki resmî Türkçe metin süreyi 'dört ay' olarak yazıyor; kitabın 'altı ay'ı Protokol 15 öncesi mülga metindir ve elde tutulan metinle doğrudan çelişir. Md 35/1 başvuru türü ayrımı yapmadan 'Mahkeme'ye ancak' diyor; bireysel başvuruya özgüleme yalnız 35/2 ve 35/3'te ('34. madde uyarınca sunulan bireysel başvurular') geçiyor, dolayısıyla md 33 devletlerarası başvurular da bu süreye tabidir. Denetçinin cevabı ayakta kaldı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "AIHS md 35/1 (Protokol 15 ile degisik)",
+     "gerekce": "Ic hukuk yollari tuketildikten ve ic hukuktaki kesin karardan sonra Mahkemeye basvuru suresi guncel md 35/1'e gore dort aydir; bu sure md 33 devlet basvurularini da kapsar.",
+     "uyari": "Bilgi eskimis: sorunun beklenen cevabi buyuk olasilikla 'Alti' (D); Protokol 15 sonrasi (1 Subat 2022'den itibaren kesinlesen ic hukuk kararlari icin) sure DORT aydir, panelin aihs.md metni de dort ay demektedir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "AİHS md 35/1",
+     "gerekce": "Madde 35/1 iç hukuk yollarının tüketilmesinden ve iç hukuktaki kesin karar tarihinden itibaren 'dört aylık' süre öngörür; bu koşul md 33 devlet başvuruları için de geçerlidir.",
+     "uyari": "Bilgi eskimiş: klasik altı aylık süre 15 No.lu Protokol ile dört aya indirildi (Protokol 1 Ağustos 2021'de yürürlüğe girdi, dört ay kuralı 1 Şubat 2022'den sonraki kesin kararlara uygulanıyor). Cevap anahtarı 'Altı' diyorsa güncellenmelidir."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b20-42",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesine Bireysel başvuru süresi iç hukuk yolları tüketilip kesin karar verildikten sonra kaç ay içerisinde yapılması gerekmektedir?",
+   "siklar": {
+    "A": "Üç",
+    "B": "Dört",
+    "C": "Beş",
+    "D": "Altı",
+    "E": "On iki"
+   },
+   "kitapCevabi": "D",
+   "karar": "ANAHTAR-HATALI",
+   "hakemCevabi": "B",
+   "hakemAlintisi": "AİHS md 35/1: “Mahkeme'ye ancak, uluslararası hukukun genel olarak kabul edilen ilkeleri uyarınca iç hukuk yollarının tüketilmesinden sonra ve iç hukuktaki kesin karar tarihinden itibaren dört aylık bir süre içinde başvurulabilir.”",
+   "uyarilar": [
+    "Bilgi eskimis: sorunun beklenen cevabi buyuk olasilikla 'Alti' (D); guncel md 35/1 metni dort ay ongormektedir (Protokol 15). Soru ya guncellenmeli ya da kaldirilmalidir.",
+    "Bilgi eskimiş: altı aylık süre 15 No.lu Protokol ile dört aya indirildi (1 Şubat 2022'den itibaren uygulanıyor). Cevap anahtarı 'Altı' diyorsa güncellenmelidir.",
+    "HAKEM: Bireysel başvuru için de aynı fıkra geçerlidir ve yürürlükteki metinde süre “dört ay”dır; kitabın “altı ay” cevabını destekleyen hiçbir ibare güncel Sözleşme metninde kalmamıştır. Denetçinin B cevabı metinden doğrudan okunuyor, çürütülemiyor. // Elde tutulan güncel resmî metin bireysel başvuru için de süreyi 'iç hukuktaki kesin karar tarihinden itibaren dört ay' olarak belirliyor; kitabın 'altı ay' anahtarı Protokol 15 ile değiştirilmiş eski metne dayanıyor ve bugünkü hükümle çürüyor. Denetçinin cevabı ayakta kaldı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "AIHS md 35/1 (Protokol 15 ile degisik)",
+     "gerekce": "Bireysel basvuruda da sure ic hukuktaki kesin karar tarihinden itibaren dort aydir.",
+     "uyari": "Bilgi eskimis: sorunun beklenen cevabi buyuk olasilikla 'Alti' (D); guncel md 35/1 metni dort ay ongormektedir (Protokol 15). Soru ya guncellenmeli ya da kaldirilmalidir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "AİHS md 35/1",
+     "gerekce": "Bireysel başvuruda da süre md 35/1'e göre kesin karardan itibaren dört aydır.",
+     "uyari": "Bilgi eskimiş: altı aylık süre 15 No.lu Protokol ile dört aya indirildi (1 Şubat 2022'den itibaren uygulanıyor). Cevap anahtarı 'Altı' diyorsa güncellenmelidir."
+    }
+   ],
+   "kitapNotu": "Not: 01 Şubat 2022 tarihi itibariyle kesinleşen kararlarda 4 ay olacak.",
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b20-43",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesi önüne gelen başvurularla alakalı aşağıdakilerden hangisi hakkında kabul edilemezlik kararı verilemez?",
+   "siklar": {
+    "A": "Başvurunun imzalı olmaması",
+    "B": "Başvuru süresi olan 6 aylık sürenin geçirilmiş olması",
+    "C": "Mahkeme tarafından daha önce karara bağlanmış bir konu olması",
+    "D": "Başvurunun açıkça AİHS ve ek protokollerine dayanması",
+    "E": "Başvurunun Devlet Tüzel kişisi tarafından yapılmış olması"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "B sikkindaki '6 aylik sure' rakami eskimis: md 35/1 Protokol 15 ile dort aya inmistir. Dogru cevabi degistirmiyor ama sik metni guncellenmelidir.",
+    "B şıkkındaki '6 aylık süre' eskimiş: md 35/1'de süre 15 No.lu Protokol ile dört aya indirildi. Doğru cevabı değiştirmiyor ama şık metni güncellenmelidir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "AIHS md 35/2-3; md 34",
+     "gerekce": "Kabul edilemezlik sebebi basvurunun 'dayanaktan acikca yoksun' olmasidir; basvurunun AIHS ve protokollerine dayanmasi kabul edilemezlik sebebi degil, tam tersi kabul edilebilirlik sartidir.",
+     "uyari": "B sikkindaki '6 aylik sure' rakami eskimis: md 35/1 Protokol 15 ile dort aya inmistir. Dogru cevabi degistirmiyor ama sik metni guncellenmelidir."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "AİHS md 35/2-3; md 34",
+     "gerekce": "Kabul edilemezlik nedenleri isimsizlik (35/2-a), süre aşımı (35/1), daha önce incelenmiş olma (35/2-b) ve Sözleşme ile bağdaşmama — devlet tüzel kişisinin başvurusu kişi bakımından bağdaşmazlıktır (md 34); başvurunun 'açıkça Sözleşme ve protokollerine dayanması' ise kabul edilebilirlik lehine bir olgudur, kabul edilemezlik nedeni değildir.",
+     "uyari": "B şıkkındaki '6 aylık süre' eskimiş: md 35/1'de süre 15 No.lu Protokol ile dört aya indirildi. Doğru cevabı değiştirmiyor ama şık metni güncellenmelidir."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b20-47",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesi kararlarından hangisi ihtiyati tedbir niteliğindedir?",
+   "siklar": {
+    "A": "Tazminat",
+    "B": "Durma",
+    "C": "Yürütmeyi durdurma",
+    "D": "Üyelikten çıkarma",
+    "E": "Dostane çözüm"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökü belirsiz: sayılan seçeneklerin hiçbiri AİHS'te tanımlı bir karar türü değil, 'durma' ile 'yürütmeyi durdurma' iç hukuk usul terimleri; doğru cevap yalnız İçtüzük md 39 uygulamasından çıkarılabiliyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "AIHM Ictuzugu md 39 (gecici tedbirler) — metin panelde yok; AIHS'te karsiligi bulunmuyor",
+     "gerekce": "Gecici/ihtiyati tedbir kurumu Sozlesmede degil Mahkeme Ictuzugunun 39. maddesinde duzenlenir ve pratikte sinir disi etme, iade gibi islemlerin durdurulmasi (yurutmenin durdurulmasi) seklinde uygulanir; tazminat, dostane cozum ve uyelikten cikarma tedbir niteliginde degildir.",
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "dayanak": "AİHM İçtüzüğü md 39 (geçici tedbir) — içtüzük metni elde yok",
+     "gerekce": "Mahkemenin geçici/ihtiyati tedbiri Sözleşme'de değil İçtüzük md 39'da düzenlenir ve tipik uygulaması sınır dışı/iade gibi işlemlerin icrasının durdurulmasıdır; şıklar içinde buna karşılık gelen tek seçenek 'yürütmeyi durdurma'dır.",
+     "uyari": "Soru kökü belirsiz: sayılan seçeneklerin hiçbiri AİHS'te tanımlı bir karar türü değil, 'durma' ile 'yürütmeyi durdurma' iç hukuk usul terimleri; doğru cevap yalnız İçtüzük md 39 uygulamasından çıkarılabiliyor."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b20-48",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesi dostane çözüm ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Dostane çözüme başvurabilmek için öncelikle ilgili daire tarafından başvurunun kabul edilmesi gerekir.",
+    "B": "Yargılamanın her aşamasında dostane çözüme başvurmak mümkündür.",
+    "C": "Dostane çözüm kapsamında yapılan görüşmeler şeffaf bir şekilde yürütülür.",
+    "D": "Dostane çözüm hâlinde mahkeme sınırlı bir kararla başvuruyu kayıttan düşürür.",
+    "E": "Verilen karar kararın yerine getirilip getirilmediğini incelemek üzere Bakanlar Komitesine gönderilir."
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Iki sik birden yanlis: A sikki da yanlistir. Protokol 14 ile degisen md 39/1 dostane cozumu 'yargilamanin her asamasinda' mumkun kilar, onceden kabul edilebilirlik karari verilmesi sarti kaldirilmistir; ustelik A ile B sikki birbirini dogrudan yalanlamaktadir. Sorunun tek dogru cevabi belirsiz.",
+    "Birden fazla yanlış şık: A da yanlış — md 39/1'e göre dostane çözüm 'yargılamanın her aşamasında' mümkündür, kabul edilebilirlik kararı ön şart değildir (bu şart 14 No.lu Protokol ile kaldırıldı) ve A ile B birbiriyle çelişiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "AIHS md 39/2 (ve md 39/1)",
+     "gerekce": "Md 39/2 dostane cozum islemlerinin GIZLI oldugunu soyler, dolayisiyla 'seffaf bir sekilde yurutulur' ifadesi metne aykiridir.",
+     "uyari": "Iki sik birden yanlis: A sikki da yanlistir. Protokol 14 ile degisen md 39/1 dostane cozumu 'yargilamanin her asamasinda' mumkun kilar, onceden kabul edilebilirlik karari verilmesi sarti kaldirilmistir; ustelik A ile B sikki birbirini dogrudan yalanlamaktadir. Sorunun tek dogru cevabi belirsiz."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "AİHS md 39/2",
+     "gerekce": "Madde 39/2 dostane çözüm işlemlerinin 'gizli' olduğunu söyler; şeffaf yürütüldüğü ifadesi metne doğrudan aykırıdır (B, D ve E sırasıyla md 39/1, 39/3 ve 39/4'ün karşılığıdır).",
+     "uyari": "Birden fazla yanlış şık: A da yanlış — md 39/1'e göre dostane çözüm 'yargılamanın her aşamasında' mümkündür, kabul edilebilirlik kararı ön şart değildir (bu şart 14 No.lu Protokol ile kaldırıldı) ve A ile B birbiriyle çelişiyor."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b20-51",
+   "bolum": "Avrupa İnsan Hakları Mahkemesi (28-53)",
+   "kok": "Avrupa İnsan Hakları Mahkemesi adli tanzim (tazminata hükmetme)ile alakalı kararı için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Mahkemenin tazminata hükmetmesi için ilgilinin bu konuda talebi olup olmadığına bakılmaksızın resen verir.",
+    "B": "Mahkeme sözleşmenin ihlal edildiğine karar verirse gerekli şartlar sağlanmışsa tazminata hükmedebilir.",
+    "C": "Taraf sözleşmeci ihlali kısmen giderebiliyorsa gerekli şartlar sağlanmışsa tazminata hükmedebilir.",
+    "D": "Mahkeme tazminatı zarar görenin lehine hükmeder.",
+    "E": "Tazminat mahkemenin verebileceği en önemli karar ve yaptırım niceliğindedir."
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "E sikkinda anlam bozan yazim hatasi: 'yaptirim niceligindedir' ifadesi 'niteligindedir' olmalidir.",
+    "E şıkkında anlam bozan yazım hatası: 'yaptırım niceliğindedir' değil 'yaptırım niteliğindedir' olmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "AIHS md 41 (talep sarti icin AIHM Ictuzugu md 60 — metin panelde yok)",
+     "gerekce": "Md 41 adil tazmini 'gerektigi takdirde' ongorur ve Mahkeme uygulamasinda tazminata resen degil ancak basvurucunun acik talebi uzerine hukmedilir; B, C ve D siklari md 41 metninin birebir karsiligidir.",
+     "uyari": "E sikkinda anlam bozan yazim hatasi: 'yaptirim niceligindedir' ifadesi 'niteligindedir' olmalidir."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "AİHS md 41; AİHM İçtüzüğü md 60 (talep şartı) — içtüzük metni elde yok",
+     "gerekce": "Adil tazmin resen değil, İçtüzük md 60 uyarınca usulüne uygun talep üzerine hükmedilir ve md 41 de 'gerektiği takdirde' demektedir; B, C ve D md 41'in ihlal, iç hukukun ancak kısmen giderebilmesi ve zarar gören taraf lehine hüküm unsurlarını karşılar.",
+     "uyari": "E şıkkında anlam bozan yazım hatası: 'yaptırım niceliğindedir' değil 'yaptırım niteliğindedir' olmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/aihs.md"
+  },
+  {
+   "id": "b21-1",
+   "bolum": "Avrupa Toplulukları Adalet Divanı (ABAD)",
+   "kok": "Avrupa Toplulukları Adalet Divanı kurucu antlaşması aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Roma statüsü antlaşması",
+    "B": "İnsan Hakları Sözleşmesi",
+    "C": "İnsan Hakları Evrensel Beyannamesi",
+    "D": "Kömür ve Çelik Topluluğu antlaşması",
+    "E": "Cenevre statüsü"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Bölüm başlığı 'Avrupa İnsan Hakları Mahkemesi' olmasına rağmen sekiz sorunun tamamı AB kurumu olan Adalet Divanı'na ait; dayanak AİHS değil AB antlaşmalarıdır (panelde yok). Ayrıca 'Avrupa Toplulukları Adalet Divanı' adı Lizbon Antlaşması (2009) ile 'Avrupa Birliği Adalet Divanı' olarak değişmiştir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "Paris Antlaşması (1951, AKÇT) md 7 ve md 31-45",
+     "gerekce": "Adalet Divanı'nı kuran antlaşma, kurumlar arasında bir Adalet Divanı öngören ve Divanın kuruluş-görevlerini düzenleyen Avrupa Kömür ve Çelik Topluluğu (Paris) Antlaşması'dır.",
+     "uyari": "Bölüm başlığı 'Avrupa İnsan Hakları Mahkemesi' olmasına rağmen sekiz sorunun tamamı AB kurumu olan Adalet Divanı'na ait; dayanak AİHS değil AB antlaşmalarıdır (panelde yok). Ayrıca 'Avrupa Toplulukları Adalet Divanı' adı Lizbon Antlaşması (2009) ile 'Avrupa Birliği Adalet Divanı' olarak değişmiştir."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "Paris Antlaşması (Avrupa Kömür ve Çelik Topluluğu'nu kuran antlaşma, 1951) md 31-45",
+     "gerekce": "Adalet Divanı'nı kuran belge 1951 tarihli AKÇT (Paris) Antlaşması'dır; Roma Statüsü UCM'yi, İnsan Hakları Sözleşmesi AİHM'yi ilgilendirir, Evrensel Beyanname ve 'Cenevre statüsü' ise mahkeme kurmaz.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — AB antlaşmaları (ABA/ABİA), ABAD Statüsü (künye ile)"
+  },
+  {
+   "id": "b21-4",
+   "bolum": "Avrupa Toplulukları Adalet Divanı (ABAD)",
+   "kok": "Avrupa Toplulukları Adalet Divanı kaç yargıçtan oluşur?",
+   "siklar": {
+    "A": "18",
+    "B": "15",
+    "C": "27",
+    "D": "54",
+    "E": "293"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Sayı üye devlet sayısına bağlı olduğu için eskimeye açık: 2013-2020 arasında 28 iken Brexit ile 27'ye inmiştir; soru kökü tarih belirtmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "ABA md 19/2: 'Adalet Divanı, her üye devletten bir yargıçtan oluşur.'",
+     "gerekce": "Her üye devletten bir yargıç kuralı gereği, 27 üye devletli AB'de Divan 27 yargıçtan oluşur.",
+     "uyari": "Sayı üye devlet sayısına bağlı olduğu için eskimeye açık: 2013-2020 arasında 28 iken Brexit ile 27'ye inmiştir; soru kökü tarih belirtmiyor."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "ABA (Avrupa Birliği Antlaşması) md 19/2; ABİA md 251",
+     "gerekce": "Divan her üye devletten bir yargıçtan oluşur; Birleşik Krallık'ın ayrılmasından sonra üye devlet sayısı 27 olduğu için yargıç sayısı da 27'dir.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — AB antlaşmaları (ABA/ABİA), ABAD Statüsü (künye ile)"
+  },
+  {
+   "id": "b21-8",
+   "bolum": "Avrupa Toplulukları Adalet Divanı (ABAD)",
+   "kok": "Avrupa Toplulukları Adalet Divanı için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Üye devletlerden bir temsilci yargıç bulunur toplamda 27 yargıç vardır.",
+    "B": "Üyelerin görev süresi 9 yıldır.",
+    "C": "Başkanın görev süresi 3 yıldır.",
+    "D": "Başkan divan üyeleri tarafından seçilir.",
+    "E": "Mahkemenin merkezi Lüksemburg’da bulunur."
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "A şıkkındaki 'temsilci yargıç' ifadesi hatalı — yargıçlar bağımsızdır, üye devletlerini temsil etmezler; bu haliyle 'yanlış olan' iki şık gibi okunabilir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "ABİA md 253/1 ve 253/3; ABA md 19/2; Protokol No 6 (b)",
+     "gerekce": "Yargıçların görev süresi dokuz değil altı yıldır; diğer şıklar (27 yargıç, üç yıllık başkanlık, başkanın üyelerce seçilmesi, Lüksemburg merkezi) doğrudur.",
+     "uyari": "A şıkkındaki 'temsilci yargıç' ifadesi hatalı — yargıçlar bağımsızdır, üye devletlerini temsil etmezler; bu haliyle 'yanlış olan' iki şık gibi okunabilir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "ABİA md 253/1 ve 253/3; ABA md 19/2; Protokol No 6 (d)",
+     "gerekce": "Yargıçların görev süresi dokuz değil altı yıldır (ABİA md 253/1); diğer şıklardaki 27 yargıç, üç yıllık başkanlık, başkanın üyelerce seçilmesi ve Lüksemburg merkezi bilgileri doğrudur.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — AB antlaşmaları (ABA/ABİA), ABAD Statüsü (künye ile)"
+  },
+  {
+   "id": "b22-4",
+   "bolum": "Avrupa Konseyi — yargısal nitelikli olmayan koruma usulleri",
+   "kok": "Avrupa İnsan Hakları Komiserliği görevini ilk yerine getiren kimdir?",
+   "siklar": {
+    "A": "Alvaro Gil-Roberts",
+    "B": "Dunja Moviteviç",
+    "C": "Nikola tanguç",
+    "D": "İnefrit Den palo",
+    "E": "Lagortus venus"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Doğru şıkta isim yanlış yazılmış: 'Alvaro Gil-Roberts' değil Álvaro Gil-Robles; B şıkkı da Dunja Mijatović'i bozuk yazıyor, C-D-E ise gerçek kişi adı değil.",
+    "Doğru şıkkın yazımı hatalı: 'Alvaro Gil-Roberts' değil 'Álvaro Gil-Robles' olmalı; ayrıca B şıkkı 'Dunja Mijatović' olarak düzeltilmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "AK İnsan Hakları Komiserliği görev listesi (Álvaro Gil-Robles, 1999-2006)",
+     "gerekce": "İlk İnsan Hakları Komiseri İspanyol Álvaro Gil-Robles'tir; B şıkkındaki isim üçüncü komiser Dunja Mijatović'e (2018-2024) karşılık gelir.",
+     "uyari": "Doğru şıkta isim yanlış yazılmış: 'Alvaro Gil-Roberts' değil Álvaro Gil-Robles; B şıkkı da Dunja Mijatović'i bozuk yazıyor, C-D-E ise gerçek kişi adı değil."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "AK İnsan Hakları Komiserliği — ilk Komiser Álvaro Gil-Robles (1999–2006); ardından Thomas Hammarberg, Nils Muižnieks, Dunja Mijatović",
+     "gerekce": "Makamı ilk üstlenen kişi İspanyol hukukçu Álvaro Gil-Robles'tir; A şıkkı yazımı bozuk olsa da onu işaret eder, B şıkkındaki isim (Mijatović) dördüncü Komiserdir, diğer üç şık gerçek kişi değildir.",
+     "uyari": "Doğru şıkkın yazımı hatalı: 'Alvaro Gil-Roberts' değil 'Álvaro Gil-Robles' olmalı; ayrıca B şıkkı 'Dunja Mijatović' olarak düzeltilmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — Avrupa Konseyi Statüsü, AK sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b22-11",
+   "bolum": "Avrupa Konseyi — yargısal nitelikli olmayan koruma usulleri",
+   "kok": "Avrupa Konseyi İşkenceyi Önleme Komitesi ilk ziyaretini aşağıdaki ülkelerden hangisine yapmıştır?",
+   "siklar": {
+    "A": "Almanya",
+    "B": "Rusya",
+    "C": "Türkiye",
+    "D": "İtalya",
+    "E": "ABD"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "CPT'nin ilk ziyareti Avusturya'ya (Mayıs 1990) yapılmıştır ve bu ülke şıklarda yok; Türkiye ise CPT'nin ilk kamuoyu açıklamasının (1992) muhatabıdır. Soru büyük olasılıkla bu iki olguyu karıştırıyor - hiçbir şık tam doğru olmayabilir.",
+    "Hiçbir şık doğru değil: CPT'nin ilk ziyareti Mayıs 1990'da Avusturya'ya yapılmıştır. Ayrıca ABD Avrupa Konseyi üyesi ve Sözleşme tarafı olmadığından geçersiz bir çeldiricidir. Soru ya 'Avusturya' şıkkı eklenerek düzeltilmeli ya da bankadan çıkarılmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "CPT ziyaret kayıtları (ilk periyodik ziyaret: Avusturya, 20-27 Mayıs 1990; Türkiye ziyareti 9-21 Eylül 1990)",
+     "gerekce": "Şıklar arasında yalnızca Türkiye savunulabilir görünüyor (Rusya 1998'e kadar taraf değil, ABD hiç taraf değil) ancak CPT'nin ilk ziyareti Mayıs 1990'da Avusturya'ya yapılmıştır; resmî ziyaret listesi elde olmadığı için güven düşük tutuldu.",
+     "uyari": "CPT'nin ilk ziyareti Avusturya'ya (Mayıs 1990) yapılmıştır ve bu ülke şıklarda yok; Türkiye ise CPT'nin ilk kamuoyu açıklamasının (1992) muhatabıdır. Soru büyük olasılıkla bu iki olguyu karıştırıyor - hiçbir şık tam doğru olmayabilir."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "CPT'nin ilk ziyareti: Avusturya, 20–27 Mayıs 1990 (rapor: CPT/Inf (91) 10); 1990'daki ilk ziyaret turu Avusturya, Malta, Birleşik Krallık, Türkiye ve Danimarka",
+     "gerekce": "Şıklar arasında doğru ülke bulunmadığından yalnızca kurgusal olarak en yakın seçenek (Türkiye) işaretlenebilir; Türkiye 1990'daki ilk ziyaret turunda yer alır ama Komitenin ilk ziyaretini aldığı ülke değildir.",
+     "uyari": "Hiçbir şık doğru değil: CPT'nin ilk ziyareti Mayıs 1990'da Avusturya'ya yapılmıştır. Ayrıca ABD Avrupa Konseyi üyesi ve Sözleşme tarafı olmadığından geçersiz bir çeldiricidir. Soru ya 'Avusturya' şıkkı eklenerek düzeltilmeli ya da bankadan çıkarılmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — Avrupa Konseyi Statüsü, AK sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b22-12",
+   "bolum": "Avrupa Konseyi — yargısal nitelikli olmayan koruma usulleri",
+   "kok": "Avrupa Sosyal Haklar Komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Kurulması ve denetim organı olduğu antlaşma Avrupa Sosyal Şartı Antlaşmasıdır.",
+    "B": "1965 yılında kurulmuştur.",
+    "C": "Üye sayısı en çok 9 dur.",
+    "D": "Üyelerini Avrupa Konseyi Bakanlar Komitesi seçer.",
+    "E": "Üyelerin görev süresi 12 yılıdr."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "C şıkkı da yanlış: 1991 Torino Protokolü komiteyi 'en az dokuz üye' olarak düzenler ve komite bugün 15 üyelidir; 'en çok 9' ifadesi hiçbir metinde yok. Böylece soruda iki yanlış şık bulunuyor.",
+    "C şıkkı da eskimiş bilgi içeriyor: 'en çok dokuz üye' 1991 Torino Protokolüyle değişik md 25 metnidir; Komite bugün 15 üyeden oluşmaktadır. Bu hâliyle iki şık birden yanlış sayılabilir — C ya '15' olarak güncellenmeli ya da yeniden yazılmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "Avrupa Sosyal Şartı (1961) md 25; 1991 Torino Değişiklik Protokolü md 3-4",
+     "gerekce": "Bağımsız Uzmanlar Komitesi (bugünkü Avrupa Sosyal Haklar Komitesi) Şartın 1965'te yürürlüğe girmesiyle oluşmuş, üyeleri Bakanlar Komitesince seçilmektedir; görev süresi 12 yıl değil, bir kez yenilenebilen 6 yıldır.",
+     "uyari": "C şıkkı da yanlış: 1991 Torino Protokolü komiteyi 'en az dokuz üye' olarak düzenler ve komite bugün 15 üyelidir; 'en çok 9' ifadesi hiçbir metinde yok. Böylece soruda iki yanlış şık bulunuyor."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "Avrupa Sosyal Şartı (AK, ETS 35) md 25; 1991 Torino Değişiklik Protokolü (ETS 142) md 3; Şartın yürürlüğü 26 Şubat 1965",
+     "gerekce": "Avrupa Sosyal Haklar Komitesi üyelerinin görev süresi altı yıl (bir kez yenilenebilir) olduğundan 12 yıl diyen E yanlıştır; Şartın denetim organı olması, 1965'te işlerlik kazanması ve üyelerin Bakanlar Komitesince seçilmesi doğrudur.",
+     "uyari": "C şıkkı da eskimiş bilgi içeriyor: 'en çok dokuz üye' 1991 Torino Protokolüyle değişik md 25 metnidir; Komite bugün 15 üyeden oluşmaktadır. Bu hâliyle iki şık birden yanlış sayılabilir — C ya '15' olarak güncellenmeli ya da yeniden yazılmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — Avrupa Konseyi Statüsü, AK sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b22-16",
+   "bolum": "Avrupa Konseyi — yargısal nitelikli olmayan koruma usulleri",
+   "kok": "Kadına Yönelik Şiddet ve Ev İçi Şiddet Önlenmesi ve Bunlarla Mücadeleye İlişkin Avrupa Konseyi komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "2014 yılında kurulmuştur.",
+    "B": "15 üyeden oluşur",
+    "C": "Üyelerinin görev süresi 4 yıldır.",
+    "D": "Kısaltılmış ismi GIREVİO’ dur",
+    "E": "Türkiye sözleşmeye hâlen üyedir."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Bilgi eskimesi: soru 2021 öncesine ait görünüyor; Türkiye 1 Temmuz 2021'de Sözleşmeden çekildiği için E şıkkı artık yanlış ve orijinal cevap anahtarı geçersizleşmiş olabilir. Ayrıca D şıkkındaki kısaltma 'GIREVİO' yanlış yazılmış (doğrusu GREVIO) ve GREVIO 2015'te (üyelerinin seçilmesiyle) çalışmaya başlamıştır; birden fazla şık tartışmalı.",
+    "İki şık birden yanlış: D şıkkındaki kısaltma 'GIREVİO' değil 'GREVIO' olmalıdır. Soru 2021 öncesinde yazılmış görünüyor (o tarihte doğru cevap D olurdu); yayına girecekse E'nin tek yanlış şık olması için D düzeltilmelidir. Ayrıca A şıkkı tartışmaya açıktır: Sözleşme 2014'te yürürlüğe girmiş, GREVIO üyeleri ilk kez Mayıs 2015'te seçilmiştir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "İstanbul Sözleşmesi (CETS 210) md 66; 20 Mart 2021 tarihli 3718 sayılı Cumhurbaşkanı Kararı (fesih, yürürlük 1 Temmuz 2021)",
+     "gerekce": "Türkiye Sözleşmeyi ilk onaylayan ülke olmakla birlikte 2021'de çekilmiştir; bu nedenle 'Türkiye sözleşmeye hâlen üyedir' ifadesi bugün yanlıştır (GREVIO ise md 66 uyarınca 10-15 üyeli olup üyeler dört yıllığına seçilir).",
+     "uyari": "Bilgi eskimesi: soru 2021 öncesine ait görünüyor; Türkiye 1 Temmuz 2021'de Sözleşmeden çekildiği için E şıkkı artık yanlış ve orijinal cevap anahtarı geçersizleşmiş olabilir. Ayrıca D şıkkındaki kısaltma 'GIREVİO' yanlış yazılmış (doğrusu GREVIO) ve GREVIO 2015'te (üyelerinin seçilmesiyle) çalışmaya başlamıştır; birden fazla şık tartışmalı."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "İstanbul Sözleşmesi (CETS 210) md 66/1-2 (GREVIO'nun kuruluşu, 10–15 üye, 4 yıllık görev süresi); Türkiye'nin çekilmesi: 20 Mart 2021 tarihli 3718 sayılı Cumhurbaşkanı Kararı, 1 Temmuz 2021'de hüküm doğurdu",
+     "gerekce": "Türkiye Sözleşmeden çekilmiş ve çekilme 1 Temmuz 2021'de yürürlüğe girmiştir; 'hâlen üyedir' diyen E yanlıştır — Sözleşmenin 1 Ağustos 2014'te yürürlüğe girmesiyle kurulan GREVIO bugün 15 üyeden oluşur ve üyelerin görev süresi dört yıldır.",
+     "uyari": "İki şık birden yanlış: D şıkkındaki kısaltma 'GIREVİO' değil 'GREVIO' olmalıdır. Soru 2021 öncesinde yazılmış görünüyor (o tarihte doğru cevap D olurdu); yayına girecekse E'nin tek yanlış şık olması için D düzeltilmelidir. Ayrıca A şıkkı tartışmaya açıktır: Sözleşme 2014'te yürürlüğe girmiş, GREVIO üyeleri ilk kez Mayıs 2015'te seçilmiştir."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — Avrupa Konseyi Statüsü, AK sözleşmeleri (künye ile)"
+  }
+ ]
+}

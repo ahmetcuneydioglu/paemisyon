@@ -1,0 +1,136 @@
+[
+ {
+  "id": "b21-1",
+  "karar": "UYARI",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Paris Antlaşması (1951, AKÇT) md 7 ve md 31-45",
+  "gerekce": "Adalet Divanı'nı kuran antlaşma, kurumlar arasında bir Adalet Divanı öngören ve Divanın kuruluş-görevlerini düzenleyen Avrupa Kömür ve Çelik Topluluğu (Paris) Antlaşması'dır.",
+  "uyarilar": [
+   "Bölüm başlığı 'Avrupa İnsan Hakları Mahkemesi' olmasına rağmen sekiz sorunun tamamı AB kurumu olan Adalet Divanı'na ait; dayanak AİHS değil AB antlaşmalarıdır (panelde yok). Ayrıca 'Avrupa Toplulukları Adalet Divanı' adı Lizbon Antlaşması (2009) ile 'Avrupa Birliği Adalet Divanı' olarak değişmiştir."
+  ]
+ },
+ {
+  "id": "b21-2",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Paris Antlaşması (AKÇT, imza 18 Nisan 1951; yürürlük 23 Temmuz 1952)",
+  "gerekce": "Divan, AKÇT Antlaşması'nın 1952'de yürürlüğe girmesiyle kurulmuş ve 4 Aralık 1952'de göreve başlamıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b21-3",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABA/ABİA'ya ekli 6 No'lu Protokol (kurumların merkezleri), tek madde/d",
+  "gerekce": "Avrupa Toplulukları Adalet Divanı'nın (Lizbon sonrası adıyla Avrupa Birliği Adalet Divanı) merkezi Lüksemburg'dur; Strazburg AİHM'in, Lahey UAD'ın, Cenevre BM Ofisi'nin, New York BM Merkezi'nin bulunduğu yerdir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b21-4",
+  "karar": "UYARI",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABA md 19/2: 'Adalet Divanı, her üye devletten bir yargıçtan oluşur.'",
+  "gerekce": "Her üye devletten bir yargıç kuralı gereği, 27 üye devletli AB'de Divan 27 yargıçtan oluşur.",
+  "uyarilar": [
+   "Sayı üye devlet sayısına bağlı olduğu için eskimeye açık: 2013-2020 arasında 28 iken Brexit ile 27'ye inmiştir; soru kökü tarih belirtmiyor."
+  ]
+ },
+ {
+  "id": "b21-5",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABİA md 253/1",
+  "gerekce": "Yargıçlar altı yıllık süre için atanır; her üç yılda bir kısmi yenileme yapılır ve yeniden atanmaları mümkündür.",
+  "uyarilar": []
+ },
+ {
+  "id": "b21-6",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABİA md 253/3",
+  "gerekce": "Divan Başkanı, yargıçlar tarafından kendi aralarından seçilir; dışarıdan bir organ atama yapmaz.",
+  "uyarilar": []
+ },
+ {
+  "id": "b21-7",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABİA md 253/3",
+  "gerekce": "Başkan üç yıllık süre için seçilir ve yeniden seçilebilir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b21-8",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABİA md 253/1 ve 253/3; ABA md 19/2; Protokol No 6 (b)",
+  "gerekce": "Yargıçların görev süresi dokuz değil altı yıldır; diğer şıklar (27 yargıç, üç yıllık başkanlık, başkanın üyelerce seçilmesi, Lüksemburg merkezi) doğrudur.",
+  "uyarilar": [
+   "A şıkkındaki 'temsilci yargıç' ifadesi hatalı — yargıçlar bağımsızdır, üye devletlerini temsil etmezler; bu haliyle 'yanlış olan' iki şık gibi okunabilir."
+  ]
+ }
+]

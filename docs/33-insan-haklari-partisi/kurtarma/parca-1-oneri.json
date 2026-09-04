@@ -1,0 +1,288 @@
+[
+ {
+  "id": "b1-1",
+  "grup": "F",
+  "gerekce": "Hakem de iki denetçi de 'hak kavramının unsurları' listesini künyelenebilir tek bir esere bağlayamadı; korunma da yetki de saygı gösterilme de farklı anlatımlarda unsur sayıldığından tek doğru şık kaynakla sabitlenemiyor. Elenmeli; aynı kazanım istenirse hak/özgürlük ayrımı gibi kaynağı belli bir kavram üzerinden sıfırdan yazılmalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b1-6",
+  "grup": "E",
+  "gerekce": "Şık kümesi iki ayrı tasnifi (dikey/yatay ilişki tipi ile negatif/pozitif yükümlülük tipi) bir arada taşıdığı için 'ihlalden kaçınma' tanımı hem E hem C ile birebir örtüşüyor; kökü 'ilişkinin tarafları' vurgusuyla daraltmak cevabı bariz hale getirir, şıklardan negatif/pozitif çiftini çıkarmak ise soruyu yeniden kurmaktır. Editoryal karar: ya şık kümesi tek tasnifle sınırlanmalı (dikey/yatay/kurumsal etki vb.) ya da soru negatif/pozitif yükümlülük sorusu olarak yeniden yazılmalı. Ayrıca A şıkkı 'Minimaliz' → 'Minimalist' olarak düzeltilmeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b1-7",
+  "grup": "E",
+  "gerekce": "b1-6 ile aynı yapısal kusur: 'devletin bireyi diğer bireylere karşı koruması' hem yatay etkinin hem pozitif yükümlülüğün tanımı olduğundan B ve D birlikte savunulabiliyor. Şık kümesi tek tasnife indirgenmeli ya da soru yeniden kurulmalı; b1-6 ile birlikte ele alınmalı. A şıkkındaki 'Minimaliz' → 'Minimalist' yazımı da düzeltilmeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b1-11",
+  "grup": "C",
+  "gerekce": "Tek kusur E şıkkındaki yazım hatası; cevap ve çeldirici dengesi sağlam.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Evrensellik",
+    "B": "Sonradan kazanılma",
+    "C": "Toplum öncesi olma",
+    "D": "Mutlaklık (dokunulmazlık)",
+    "E": "Devredilmezlik"
+   },
+   "dogru": "B",
+   "aciklama": "İnsan hakları insan olmakla doğuştan kazanılan haklardır; 1948 İnsan Hakları Evrensel Bildirisi'nin 1. maddesi de bütün insanların 'hür, haysiyet ve haklar bakımından eşit doğduğunu' söyler. Aynı anlayış Anayasa'nın 12. maddesinde hakların kişiliğe bağlı, dokunulmaz, devredilmez ve vazgeçilmez sayılmasıyla yinelenir. Sonradan kazanılma bu doğuştanlık niteliğini reddettiği için nitelikler arasında yer almaz. Tuzak, kazanılmış hak gibi özel hukuk kavramlarını insan haklarının niteliğiyle karıştırmaktır.",
+   "dayanak": "İHEB md 1; Anayasa md 12/1"
+  },
+  "degisenler": [
+   "E şıkkı: 'Devredilmezdik' → 'Devredilmezlik'",
+   "D şıkkı: 'Mutlaklık(dokunulmazlık)' → 'Mutlaklık (dokunulmazlık)' (parantez öncesi boşluk)"
+  ]
+ },
+ {
+  "id": "b1-16",
+  "grup": "C",
+  "gerekce": "Cevap tartışmasız Aquinas; kusur yalnızca kökün bozuk yazımı ('orta cağ', kopuk madde cümleleri, çift boşluk). Tekrar uyarısı bankada sıralama meselesidir, sorunun kendi kusuru değildir.",
+  "duzeltme": {
+   "kok": "• İktidar Tanrı'dan halk aracılığıyla gelir.\n• Yönetilenlerin despot yöneticilere karşı başkaldırma ve direnme hakkı vardır.\nYukarıdaki görüşleri savunan orta çağ düşünürü aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Saint Thomas Aquinas",
+    "B": "Padovalı Marsilius",
+    "C": "Machiavelli",
+    "D": "Hugo Grotius",
+    "E": "John Locke"
+   },
+   "dogru": "A",
+   "aciklama": "İktidarın Tanrı'dan halk aracılığıyla geldiği ve adaletten sapan yöneticiye direnilebileceği öğretisi, Aquinolu Thomas'ın Summa Theologiae (1265-1274) ve De Regno adlı eserlerinde geliştirilmiştir. Padovalı Marsilius, Defensor Pacis'te iktidarı Tanrı'ya değil doğrudan halka (legislator humanus) dayandırdığı için ayrılır. Machiavelli, Grotius ve Locke ise orta çağ sonrasının düşünürleridir; tuzak, direnme hakkı denince akla ilk Locke'un gelmesidir.",
+   "dayanak": "Thomas Aquinas, Summa Theologiae (1265-1274) / De Regno"
+  },
+  "degisenler": [
+   "Kök: 'orta cağ' → 'orta çağ'",
+   "Kök: kopuk iki önerme madde işaretiyle ayrıldı ve 'direnme hakkı' ifadesi 'direnme hakkı vardır' biçiminde cümleye tamamlandı",
+   "Kök: baştaki ve cümleler arasındaki fazla boşluklar temizlendi"
+  ]
+ },
+ {
+  "id": "b1-18",
+  "grup": "C",
+  "gerekce": "Cevap doğru ve sağlam; kökteki 'orta çağ düşünürü' nitelemesi ise olgusal olarak yanlış — Machiavelli (1469-1527) Rönesans düşünürüdür. Dönem nitelemesinin düzeltilmesi soruyu kolaylaştırmaz, çünkü şıklarda başka bir Rönesans adı yoktur ama ayırt edici bilgi yine eser adıdır.",
+  "duzeltme": {
+   "kok": "• Prens adlı eserin sahibidir.\n• Siyasetin laikleşmesi düşüncesini savunmuştur.\nYukarıdaki özellikleri verilen düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Saint Thomas Aquinas",
+    "B": "Padovalı Marsilius",
+    "C": "Machiavelli",
+    "D": "Hugo Grotius",
+    "E": "John Locke"
+   },
+   "dogru": "C",
+   "aciklama": "Prens (Il Principe, yazımı 1513, basımı 1532) Niccolò Machiavelli'nin eseridir; siyaseti dinî ve ahlaki temelden ayırıp kendi kurallarına sahip bağımsız bir alan olarak ele alan yaklaşım da ona atfedilir. Machiavelli orta çağın değil Rönesans'ın düşünürüdür, bu yüzden dönem nitelemesine göre eleme yapmak yanıltır. Marsilius'un Defensor Pacis'i ile karıştırılmamalıdır; o da dinî iktidarı sınırlar ama Prens'in yazarı değildir.",
+   "dayanak": "Niccolò Machiavelli, Il Principe (Prens), 1513/1532"
+  },
+  "degisenler": [
+   "Kök: 'orta çağ düşünürü' nitelemesi kaldırıldı (Machiavelli 1469-1527, Rönesans dönemi)",
+   "Kök: kopuk iki önerme madde işaretiyle ayrıldı, fazla boşluklar temizlendi"
+  ]
+ },
+ {
+  "id": "b2-3",
+  "grup": "E",
+  "gerekce": "Kök 'doğal haklar öğretisini ilk sistematize eden' derken A şıkkındaki Grotius'un 'doğal hukuk öğretisini sistemleştiren' sıfatıyla karışıyor; ayrım tek kelimelik (hukuk/haklar) olduğundan soru okuma tuzağına dönüşüyor. Köke 'yaşam-özgürlük-mülkiyet' ibaresi eklenerek düzeltilebilir ama bu doğrudan Locke'u adres gösterip soruyu bariz hale getirir. Editoryal karar: ya Grotius çeldiricisi kaldırılıp kök korunmalı, ya soru 'doğal hukuk / doğal haklar' ayrımını ölçen iki ayrı soruya bölünmelidir. Ayrıca B şıkkı 'John locke' → 'John Locke' olmalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b2-12",
+  "grup": "E",
+  "gerekce": "Kökteki 'modern anayasal hukuk devletinin hukuki ve siyasi çerçevesini kurma' ölçütü, rıza ve sınırlı devlet öğretisi nedeniyle C şıkkındaki Locke için de savunulabiliyor; ayırt edici ölçüt (kuvvetler ayrılığı) köke yazılırsa soru b2-14 ile aynileşir ve cevap bariz olur. Editoryal karar: soru b2-14 ile birlikte değerlendirilip ya elenmeli ya da Montesquieu'yü tekleştiren başka bir ölçütle (ılımlı yönetim / iktidarın iktidarla sınırlanması) yeniden kurulmalıdır. C şıkkı 'John locke' → 'John Locke' olmalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b2-14",
+  "grup": "C",
+  "gerekce": "Cevap doğru; kusur kökteki 'ilk ortaya atan' nitelemesinin olgusal yanlışlığı — Locke 1689'da yasama-yürütme-federatif ayrımını daha önce formüle etmişti ve şıklarda yer alıyor. Kökün 'yasama-yürütme-yargı biçimindeki üçlü kuvvetler ayrılığını sistemleştiren' olarak daraltılması yanlışı giderir, ayrımı bilmeyen adayı hâlâ Locke'a yönlendirdiği için soruyu kolaylaştırmaz.",
+  "duzeltme": {
+   "kok": "Yasama, yürütme ve yargı biçimindeki üçlü kuvvetler ayrılığı öğretisini sistemleştiren düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Hugo Grotius",
+    "B": "John Locke",
+    "C": "William Blackstone",
+    "D": "Rousseau",
+    "E": "Montesquieu"
+   },
+   "dogru": "E",
+   "aciklama": "Yasama, yürütme ve yargı biçimindeki üçlü kuvvetler ayrılığı öğretisi Montesquieu'nün Kanunların Ruhu (De l'Esprit des Lois, 1748) adlı eserinin XI. kitabının 6. bölümünde ortaya konmuştur. Tuzak, ayrımın 'ilk' sahibinin Montesquieu sanılmasıdır: Locke, Hükümet Üzerine İki İnceleme'de (1689) yasama-yürütme-federatif biçiminde daha erken bir ayrım yapmıştı; üçlü şemayı kuran ve öğretiye adını veren ise Montesquieu'dür.",
+   "dayanak": "Montesquieu, De l'Esprit des Lois (1748), XI. Kitap, böl. 6"
+  },
+  "degisenler": [
+   "Kök: 'Kuvvetler ayrılığını ilk ortaya atan düşünür' → 'Yasama, yürütme ve yargı biçimindeki üçlü kuvvetler ayrılığı öğretisini sistemleştiren düşünür'",
+   "B şıkkı: 'John locke' → 'John Locke'"
+  ]
+ },
+ {
+  "id": "b2-16",
+  "grup": "A",
+  "gerekce": "Sorunun kendisinde kusur yok; tek uyarı Jellinek'in kitabın '17-18. yüzyıl düşünürleri' bölümüne konmuş olması, yani bölümleme meselesidir. Soru başka bir bölüm etiketiyle olduğu gibi alınabilir.",
+  "duzeltme": {
+   "kok": "Hakları negatif, pozitif ve aktif statü hakları olarak ayıran düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Jellinek",
+    "B": "Karel Vasak",
+    "C": "John Locke",
+    "D": "Hobbes",
+    "E": "Rousseau"
+   },
+   "dogru": "A",
+   "aciklama": "Hakları negatif statü (koruyucu), pozitif statü (isteme) ve aktif statü (katılma) hakları biçiminde ayıran statüler kuramı, Georg Jellinek'in System der subjektiven öffentlichen Rechte (1892) adlı eserine dayanır ve Türk anayasa hukuku öğretisinde temel tasnif olarak kullanılır. Tuzak, hak tasnifi denince akla gelen öbür ismin, birinci-ikinci-üçüncü kuşak ayrımını yapan Karel Vasak olmasıdır.",
+   "dayanak": "Georg Jellinek, System der subjektiven öffentlichen Rechte (1892)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "b2-17",
+  "grup": "A",
+  "gerekce": "Soruda kusur yok; tek uyarı Vasak'ın 1977 tarihli tasnifinin '17-18. yüzyıl düşünürleri' bölümüne yerleştirilmiş olması, yani bölümleme meselesidir.",
+  "duzeltme": {
+   "kok": "İnsan haklarını birinci, ikinci ve üçüncü kuşak haklar olarak ayrıma tabi tutan düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Jellinek",
+    "B": "Karel Vasak",
+    "C": "John Locke",
+    "D": "Hobbes",
+    "E": "Rousseau"
+   },
+   "dogru": "B",
+   "aciklama": "Hakları birinci kuşak (kişisel ve siyasal), ikinci kuşak (ekonomik, sosyal ve kültürel) ve üçüncü kuşak (dayanışma) haklar olarak ayıran tasnif, Karel Vasak'ın 1977'de UNESCO Courier'de yayımlanan yazısına dayanır ve Fransız Devrimi'nin özgürlük-eşitlik-kardeşlik şiarıyla eşleştirilir. Tuzak, kuşak ayrımının negatif/pozitif/aktif statü ayrımıyla karıştırılmasıdır; ikincisi Jellinek'e aittir.",
+   "dayanak": "Karel Vasak, UNESCO Courier (1977) — üç kuşak haklar tasnifi"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "b3-7",
+  "grup": "C",
+  "gerekce": "Cevap doğru; kusur doğru cevabı taşıyan şıkkın belge adının yanlış yazılması. Belge adlarının resmî biçime çevrilmesi mekanik düzeltmedir.",
+  "duzeltme": {
+   "kok": "Adil yargılanma ile olağan dışı cezaya çarptırılmamayı doğal haklar olarak kabul eden İngiliz insan hakları belgesi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "1215 Magna Charta Libertatum",
+    "B": "1628 Petition of Right",
+    "C": "1641 Great Remonstrance",
+    "D": "1679 Habeas Corpus Act",
+    "E": "1689 Bill of Rights"
+   },
+   "dogru": "E",
+   "aciklama": "1689 tarihli Bill of Rights, aşırı kefalet ile 'zalimane ve olağan dışı ceza' yasağını ve jüri güvencesini İngilizlerin kadim ve şüphe götürmez hakları olarak ilan eder. Tuzak, kişi güvenliğiyle ilgili öbür belgelerdir: 1628 Petition of Right keyfî tutuklama ve vergiye, 1679 Habeas Corpus Act yakalananın yargıç önüne çıkarılmasına odaklanır; ceza ve yargılama güvencelerini doğal hak diliyle ilan eden metin 1689 belgesidir.",
+   "dayanak": "Bill of Rights (1689)"
+  },
+  "degisenler": [
+   "E şıkkı: '1689 Bil Off Rights' → '1689 Bill of Rights'",
+   "B şıkkı: '1628 Petition Of Rights' → '1628 Petition of Right' (belgenin resmî adı)",
+   "Kök: 'Adil yargılama' → 'Adil yargılanma', 'olağan olmayan ceza' → 'olağan dışı ceza'"
+  ]
+ },
+ {
+  "id": "b3-8",
+  "grup": "C",
+  "gerekce": "Cevap doğru; tek kusur D çeldiricisinde var olmayan bir devlet adının yazılması. Aynı şık b3-5'te doğru yazıldığından düzeltme mekaniktir.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "İngiliz Anayasası",
+    "B": "ABD Anayasası",
+    "C": "Fransız Anayasası",
+    "D": "Meksika Birleşik Devletleri Anayasası",
+    "E": "Osmanlı Kanun-i Esasi"
+   },
+   "dogru": "B",
+   "aciklama": "Doğuştan gelen hakları pozitif anayasa kuralına dönüştüren ilk yazılı anayasa 1787 tarihli ABD Anayasası'dır; hak güvenceleri 1791'de yürürlüğe giren ilk on ek maddeyle (Bill of Rights) tamamlanmış, öncülü ise 1776 Virginia Haklar Bildirgesi olmuştur. Tuzak, İngiltere'nin yazılı bir anayasasının bulunmaması ve öbür metinlerin daha geç tarihli olmasıdır: Fransız Anayasası 1791, Kanun-i Esasi 1876, Meksika Anayasası 1917'dir.",
+   "dayanak": "ABD Anayasası (1787) ve Haklar Bildirgesi ek maddeleri (1791)"
+  },
+  "degisenler": [
+   "D şıkkı: 'Meksika Birleşik Krallık Anayasası' → 'Meksika Birleşik Devletleri Anayasası'"
+  ]
+ },
+ {
+  "id": "b3-11",
+  "grup": "E",
+  "gerekce": "EDİTORYAL: b3-10 ile aynı şık kümesini paylaşıyor ve pratikte aynı şeyi soruyor (b3-10 cevabı zaten Meksika). Anahtarı B'ye çekmek iki soruyu birbirinin kopyası yapar. Ya b3-11 elenmeli, ya da kökü 'sosyal devlet anlayışını benimseyen ilk AVRUPA anayasası' gibi daraltılıp cevabı E (Weimar) olarak korunmalı — bu editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b3-15",
+  "grup": "C",
+  "gerekce": "Cevap doğru; kusur kökün 'hukuk belgesi' derken bağlayıcılık ölçütünü açıkça söylememesi, bu yüzden İHEB okuması da savunulabiliyor. Köke 'bağlayıcı' ibaresinin yazılması kusuru giderir ve soruyu kolaylaştırmaz — adayın hâlâ İHEB'in antlaşma olmadığını bilmesi gerekir.",
+  "duzeltme": {
+   "kok": "İnsan haklarını evrensel bir değer olarak uluslararası ilişkiler ve hukuk alanına taşıyan ilk bağlayıcı uluslararası hukuk belgesi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Fransız İnsan ve Yurttaş Hakları Bildirisi",
+    "B": "İnsan Hakları Evrensel Beyannamesi",
+    "C": "Birleşmiş Milletler Sözleşmesi",
+    "D": "Avrupa Konseyi Sözleşmesi",
+    "E": "ABD Anayasası"
+   },
+   "dogru": "C",
+   "aciklama": "İnsan haklarına saygıyı devletlerin uluslararası bir yükümlülüğü hâline getiren ilk bağlayıcı metin, 1945 tarihli Birleşmiş Milletler Şartı'dır; Başlangıç kısmı ile 1/3, 55 ve 56. maddeleri üyelere insan haklarına saygıyı geliştirme ödevi yükler. Tuzak, 1948 İnsan Hakları Evrensel Beyannamesi'dir: hem Şart'tan sonra kabul edilmiştir hem de bir antlaşma değil Genel Kurul kararıdır, yani kabul edildiği anda bağlayıcı değildir.",
+   "dayanak": "BM Şartı (1945), Başlangıç ile md 1/3, 55 ve 56"
+  },
+  "degisenler": [
+   "Kök: bağlayıcılık ölçütü açıkça yazıldı — 'ilk uluslararası hukuk belgesi' → 'ilk bağlayıcı uluslararası hukuk belgesi'; cümle devriği düzeltildi"
+  ]
+ },
+ {
+  "id": "b3-22",
+  "grup": "E",
+  "gerekce": "Hem anahtar hem kök tartışmalı: kök 'bağlayıcılık ne zaman kazandırılmıştır' derken kabul mü yürürlük mü aradığını söylemiyor ve 1966 ile 1976 şıklarda birlikte duruyor; kitabın anahtarı 1976 (yürürlük), iki denetçi 1966 (kabul) diyor. İkisi de savunulabilir olduğundan tercih editoryaldir: kök ya 'İkiz Sözleşmelerin kabul edildiği yıl' (cevap 1966) ya da 'İkiz Sözleşmelerin yürürlüğe girdiği yıl' (cevap 1976) biçiminde tekleştirilmeli; hangisi seçilirse diğer yıl çeldirici olarak kalabilir. Karar verilmeden bankaya alınmamalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b3-35",
+  "grup": "C",
+  "gerekce": "Cevap doğru; kusur kökün bozuk kurulması ve neyin sorulduğunun (imza mı onay mı, kim tarafından) belirsiz kalması. Kökün dilbilgisel olarak düzeltilip 'imzalaması' ile 'onaylaması' arasındaki ayrımın açıkça yazılması mekanik bir onarımdır ve 1989 çeldiricisini korur. (Bankaya alınırken b3-32 ile yinelenme riski gözetilmelidir.)",
+  "duzeltme": {
+   "kok": "Avrupa İnsan Hakları Sözleşmesi birinci kuşak haklara yer verdiğinden sosyal haklar sözleşme dışında kalmış, bu haklar için Avrupa Sosyal Şartı kabul edilmiştir. Türkiye Avrupa Sosyal Şartı'nı hangi yıl imzalamıştır?",
+   "siklar": {
+    "A": "1961",
+    "B": "1966",
+    "C": "1965",
+    "D": "2003",
+    "E": "1989"
+   },
+   "dogru": "A",
+   "aciklama": "Avrupa Sosyal Şartı (ETS No. 35) 18 Ekim 1961'de Torino'da imzaya açılmış, Türkiye Şartı açıldığı gün imzalamıştır. Tuzak, imza ile onay tarihlerinin karıştırılmasıdır: Türkiye'nin onay işlemi ve Şartın Türkiye bakımından yürürlüğe girmesi 1989'dadır, Gözden Geçirilmiş Avrupa Sosyal Şartı'nın imzalanması ise 2004'tür.",
+   "dayanak": "Avrupa Sosyal Şartı (ETS No. 35) — Türkiye'nin imza tarihi 18 Ekim 1961"
+  },
+  "degisenler": [
+   "Kök: 'Avrupa Sosyal Şartı Türkiye hangi yıl imzalanmıştır' → 'Türkiye Avrupa Sosyal Şartı'nı hangi yıl imzalamıştır' (özne-nesne düzeltmesi, imza yılı sorulduğu netleştirildi)",
+   "Kök: birinci cümle 'yer aldığından sosyal haklara yer verilmemiştir' devrikliği düzeltildi"
+  ]
+ },
+ {
+  "id": "b4-8",
+  "grup": "C",
+  "gerekce": "Cevap ve çeldirici dengesi sağlam; tek kusur E şıkkındaki yazım eksiği ('çocuk haklar' → 'çocuk hakları').",
+  "duzeltme": {
+   "kok": "Aşağıdakilerden hangisi pozitif statü hakları arasında yer almaz?",
+   "siklar": {
+    "A": "Konut hakkı",
+    "B": "Toprak mülkiyeti",
+    "C": "Eğitim ve öğrenim hakkı",
+    "D": "Süreli ve süresiz yayın hakkı",
+    "E": "Ailenin korunması ve çocuk hakları"
+   },
+   "dogru": "D",
+   "aciklama": "Jellinek'in statüler kuramında pozitif statü hakları, devletten edim isteme hakları olan sosyal ve ekonomik haklardır; Anayasa'nın 41, 42, 44 ve 57. maddelerindeki ailenin korunması ve çocuk hakları, eğitim ve öğrenim hakkı, toprak mülkiyeti ve konut hakkı bu gruptadır. Süreli ve süresiz yayın hakkı ise Anayasa'nın 29. maddesinde basın hürriyetinin uzantısı olarak kişinin hakları arasında düzenlenir ve devletten kaçınma isteyen negatif statü hakkıdır. Tuzak, yayın hakkının Anayasa'daki yerinin değil adının çağrıştırdığı sosyal içeriğin esas alınmasıdır.",
+   "dayanak": "Jellinek statü kuramı; Anayasa md 29 (krş. md 41, 42, 44, 57)"
+  },
+  "degisenler": [
+   "E şıkkı: 'Ailenin korunması ve çocuk haklar' → 'Ailenin korunması ve çocuk hakları'",
+   "Kök: 'pozitif statü haklar' → 'pozitif statü hakları'",
+   "A/B/C/D şıklarında gereksiz büyük harfler küçültüldü; D şıkkı 'Süreli Süresiz Yayın Hakkı' → 'Süreli ve süresiz yayın hakkı' (Anayasa md 29 başlığı)"
+  ]
+ }
+]

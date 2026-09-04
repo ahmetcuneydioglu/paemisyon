@@ -1,0 +1,327 @@
+[
+ {
+  "id": "b15-1",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ECOSOC Kararı 1235 (XLII), 6 Haziran 1967 — BM Şartı temelli (sözleşme dışı) usul",
+  "gerekce": "Rapor, devletlerarası şikâyet, bireysel başvuru ve soruşturma usulleri sözleşme organlarının yetkilerinden doğar; 1235 usulü ise bir ECOSOC kararına dayanan Şart temelli usuldür.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-2",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "İşkenceye Karşı Sözleşme'ye Ek İhtiyari Protokol (OPCAT, 2002) md 1 ve 4 — alıkonulma yerlerine düzenli ziyaret",
+  "gerekce": "Alıkonulma yerlerini ziyaret usulü bir sözleşme (ek protokol) ile kurulmuştur; 1235 ve 1503 usulleri ile acil eylem usulü ECOSOC/İnsan Hakları Konseyi kararlarına dayanan Şart temelli usullerdir, UAD başvurusu ise insan hakları denetim organı usulü değildir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-3",
+  "karar": "UYARI",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "BM sözleşme organları listesi (CAT, CCPR, CERD); ECOSOC Kararı 1235 (XLII) bir usuldür, komite değildir",
+  "gerekce": "1235 bir Şart temelli inceleme usulünün adıdır; bu adı taşıyan bir BM komitesi hiç kurulmamıştır.",
+  "uyarilar": [
+   "C şıkkındaki 'Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi' de mevcut değildir (CEDAW ile CERD adlarının karışımı); soruda birden fazla şık doğru cevaba uymaktadır.",
+   "İki şık birden doğru: C'deki \"Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi\" de var olmayan bir organdır (CEDAW Komitesi'nin adı \"Kadınlara Karşı Her Türlü Ayrımcılığın Önlenmesi Komitesi\"). C ya düzeltilmeli ya da soru tek doğru cevaplı hale getirilmeli."
+  ]
+ },
+ {
+  "id": "b15-4",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM sözleşme organları: CESCR (ECOSOC 1985/17), CMW (Göçmen İşçiler Sözleşmesi md 72), CRC (Çocuk Hakları Sözleşmesi md 43), CRPD (Engelli Hakları Sözleşmesi md 34)",
+  "gerekce": "'Ceza ve Tutukevleri Komitesi' bir BM sözleşme organı değildir; diğer dördü BM bünyesinde kurulmuş komitelerdir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-5",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM Kişisel ve Siyasal Haklar Sözleşmesi (MSHS) md 41/1-a, b, h",
+  "gerekce": "Komitenin hazırladığı rapor Güvenlik Konseyine değil, ilgili taraf devletlere bildirilir; 3 ay, 6 ay ve 12 aylık süreler madde metnine uygundur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-6",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM Kişisel ve Siyasal Haklar Sözleşmesi (MSHS) md 28/1",
+  "gerekce": "İnsan Hakları Komitesi doğrudan Kişisel ve Siyasal Haklar Sözleşmesi ile kurulmuş ve bu sözleşmenin denetim organı olarak öngörülmüştür.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-7",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "MSHS md 28/1 (18 üye), md 28/3 (kişisel sıfat), md 30/4 ve 31 (taraf devletler toplantısında seçim), md 32/1 (4 yıl)",
+  "gerekce": "Komite üyeleri BM Genel Kurulu tarafından değil, Sözleşmeye taraf devletlerin toplantısında gizli oyla seçilir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-8",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "MSHS md 1 (kendi kaderini tayin), md 2 ve 26 (ayrımcılık yasağı), md 3 (kadın-erkek eşitliği), md 6 (yaşama hakkı); sosyal güvenlik için ESKHS md 9",
+  "gerekce": "Sosyal güvenlik hakkı Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesinde düzenlenmiştir, Kişisel ve Siyasal Haklar Sözleşmesinde yer almaz.",
+  "uyarilar": [
+   "A şıkkında yazım hatası var: 'Hakların kendi kaderini tayin hakkı' ifadesi anlamsız; doğrusu 'Halkların kendi kaderini tayin hakkı'dır."
+  ]
+ },
+ {
+  "id": "b15-9",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "MSHS md 8 (kölelik yasağı), md 9 (özgürlük ve güvenlik), md 11 (borç nedeniyle hapis yasağı), md 12 (seyahat özgürlüğü); eğitim hakkı için ESKHS md 13",
+  "gerekce": "Eğitim hakkı Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesinde düzenlenmiştir; Kişisel ve Siyasal Haklar Sözleşmesinde bağımsız bir eğitim hakkı yoktur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-10",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ECOSOC Kararı 1985/17, 28 Mayıs 1985 — Ekonomik, Sosyal ve Kültürel Haklar Komitesinin kuruluşu",
+  "gerekce": "Komite bir sözleşme metniyle değil, ECOSOC'un 1985/17 sayılı kararıyla kurulmuştur; Kişisel ve Siyasal Haklar Sözleşmesiyle kurulan organ İnsan Hakları Komitesidir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-11",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Her Türlü Irk Ayrımcılığının Ortadan Kaldırılmasına İlişkin Sözleşme (ICERD) md 8/1 (18 üye), md 8/4 (taraf devletlerce seçim), md 8/5 (4 yıl, yarısının 2 yılda bir yenilenmesi)",
+  "gerekce": "Komite üyeleri Güvenlik Konseyi tarafından değil, Sözleşmeye taraf devletlerin toplantısında gizli oyla seçilir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-12",
+  "karar": "UYARI",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "Kadına Karşı Her Türlü Ayrımcılığın Önlenmesi Sözleşmesi (CEDAW) md 17/1 — 35. onaydan sonra 23 uzman; md 17/2 (taraf devletlerin aday göstermesi), md 17/5 (4 yıl)",
+  "gerekce": "Sözleşme metni gereği Komite 35. onaydan sonra 18 değil 23 üyeden oluşur; bu koşul çoktan gerçekleşmiştir.",
+  "uyarilar": [
+   "D şıkkı güncel değil: Komite sekretaryası 2008'de Cenevre'ye taşındığından oturumlar artık New York'ta değil Cenevre'de yapılmaktadır; C şıkkı da güncel uygulamaya uymaz (Komite yılda üç oturum toplanmaktadır).",
+   "Tek yanlış şık değil: Komite 2008'den bu yana New York'ta değil Cenevre'de toplanmakta (D) ve yılda iki değil üç oturum yapmaktadır (C). Soru güncellenmeli."
+  ]
+ },
+ {
+  "id": "b15-13",
+  "karar": "UYARI",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "OPCAT md 16/4 — kamuya açıklama kararını, Alt Komitenin talebi üzerine İşkenceye Karşı Komite üye çoğunluğuyla verir; md 9 (4 yıl), md 16/3 (yıllık rapor)",
+  "gerekce": "Taraf devlet işbirliğinden kaçınırsa raporu yayımlama ya da kamuoyu açıklaması yapma yetkisi Alt Komitede değil, onun talebi üzerine karar veren İşkenceye Karşı Komitededir.",
+  "uyarilar": [
+   "A şıkkındaki bilgi eskimiş: OPCAT md 5/1 uyarınca 50. onaydan sonra Alt Komitenin üye sayısı 25'e çıkmıştır (2011'den bu yana 25 üye).",
+   "A şıkkı da güncel değil: OPCAT md 5/1'e göre üye sayısı ellinci onaydan sonra 25'e çıkmıştır (2011'den beri 25 üye). Ayrıca şıklardaki \"İşkenceyi Önleme Komitesi\" ifadesi İşkenceye Karşı Komite'yi (CAT) kastediyor; adlandırma karışıklık yaratıyor."
+  ]
+ },
+ {
+  "id": "b15-14",
+  "karar": "UYARI",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "BM İşkenceye Karşı Sözleşme (CAT) md 17/1 — Komite on uzmandan oluşur; md 17/3 (taraf devletlerce gizli oyla seçim), md 17/5 (4 yıl)",
+  "gerekce": "Sözleşme metni Komitenin 18 değil 10 üyeden oluşacağını açıkça belirtir; 18 üyeli olanlar İnsan Hakları, CERD, CEDAW gibi diğer komitelerdir.",
+  "uyarilar": [
+   "E şıkkı da tam doğru değil: CAT md 28 uyarınca devletler onay sırasında md 20 soruşturma yetkisini tanımadıklarını beyan edebildiğinden bu yetkinin kabulü mutlak zorunlu değildir.",
+   "E şıkkı da tartışmalı: md 28 uyarınca devletler onay sırasında md 20'deki soruşturma yetkisini tanımadıklarını beyan edebilir, yani yetki \"zorunlu olarak\" kabul edilmiş sayılmaz. A sayısal olarak açıkça yanlış olduğu için tek cevap kabul edildi."
+  ]
+ },
+ {
+  "id": "b15-15",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CAT md 19 (devlet raporları), md 20 (soruşturma), md 21 (devletlerarası şikâyet), md 22 (bireysel şikâyet)",
+  "gerekce": "Komite bir yargı organı değildir; yargılama yetkisi bulunmaz, denetim yolları rapor, soruşturma ve şikâyet usulleriyle sınırlıdır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-16",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CAT md 19/1 (bir yıl içinde ilk rapor, dört yılda bir tamamlayıcı rapor), md 19/2 (Genel Sekreterin raporları taraf devletlere iletmesi), md 19/3-4 (Komitenin genel yorumları ve yıllık rapora derci)",
+  "gerekce": "Rapor usulünde 'yaptırım olarak kamuoyuna açıklama' diye bir sonuç öngörülmemiştir; Komite yalnızca genel yorumlarını ilgili devlete iletir ve yıllık raporuna alır.",
+  "uyarilar": [
+   "D şıkkındaki organ adı hatalı: raporları inceleyen organ \"İşkenceye Karşı Komite\"dir; \"İşkenceyi Önleme Komitesi\" adı OPCAT Alt Komitesi ile Avrupa Konseyi CPT'sini çağrıştırdığı için D de yanlış okunabilir."
+  ]
+ },
+ {
+  "id": "b15-17",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CAT md 21/1-a (üç ay), md 21/1-b (altı ay), md 21/1-h — Komite bildirimin alınmasından itibaren on iki ay içinde rapor sunar",
+  "gerekce": "Komitenin rapor süresi altı ay değil on iki aydır; şıktaki süre sözleşme metnine aykırıdır.",
+  "uyarilar": [
+   "D şıkkında organ \"İşkenceyi Önleme Komitesi\" olarak anılmış; doğru ad İşkenceye Karşı Komite'dir (soru kökündeki adla da çelişiyor)."
+  ]
+ },
+ {
+  "id": "b15-18",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "CAT md 20/1-2-4-5 (gizli soruşturma; bulguların taraf devlete iletilmesi; istişare sonrası yıllık rapora özet derci) ve md 20/5 gizlilik ilkesi",
+  "gerekce": "Md 20 soruşturması bütünüyle gizli yürütülür; Komitenin yaptırım niteliğinde kamuoyu açıklaması yapma yetkisi yoktur, en fazla ilgili devletle istişare ederek yıllık raporuna özet koyabilir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b15-19",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "dusuk",
+   "orta"
+  ],
+  "dayanak": "Çocuk Hakları Sözleşmesi md 43/2 (2002'de yürürlüğe giren değişiklikle 18 üye), md 43/6 (4 yıl), md 43/10 (toplantı yeri); Çocuk Hakları Sözleşmesine Ek Üçüncü İhtiyari Protokol (2011, yürürlük 14 Nisan 2014) — bireysel başvuru usulü",
+  "gerekce": "Soru büyük olasılıkla 2014 öncesi duruma göre kurgulanmış ve 'Komitenin bireysel başvuruyu kabul etmediği' bilgisini aramaktadır; bugün ise Üçüncü İhtiyari Protokol yürürlükte olduğu için bu şık da doğrudur.",
+  "uyarilar": [
+   "Bilgi eskimiş: bireysel başvuru usulü 14 Nisan 2014'te yürürlüğe giren Üçüncü İhtiyari Protokol ile kabul edildi. Güncel duruma göre beş şık da doğru olduğundan sorunun geçerli bir 'yanlış' şıkkı kalmamıştır; soru güncellenmeli veya çıkarılmalıdır.",
+   "Bilgi eskimiş: Çocuk Haklarına Dair Sözleşmeye Ek Üçüncü İhtiyari Protokol 14 Nisan 2014'te yürürlüğe girdiği için Komite, protokole taraf devletler bakımından bireysel başvuruyu kabul etmektedir (Türkiye protokolü onaylamadı). E artık kesin biçimde yanlış sayılamaz; soru güncellenmeli."
+  ]
+ }
+]

@@ -1,0 +1,57 @@
+{
+ "bolum": 91,
+ "baslik": "HAKEM TURU",
+ "sorular": [
+  {
+   "id": "b1-1",
+   "bolum": "İnsan haklarıyla ilgili kavramsal ve tarihsel gelişmeler",
+   "kok": "Aşağıdakilerden hangisi hak kavramının unsurları arasında yer almaz?",
+   "siklar": {
+    "A": "Yetki",
+    "B": "Talep",
+    "C": "Tanınma",
+    "D": "Saygı gösterilme",
+    "E": "Korunma"
+   },
+   "kitapCevabi": "E",
+   "denetciCevabi": "A/D",
+   "denetciGerekcesi": "Yaygın ders anlatımında hak kavramının unsurları talep, tanınma, korunma ve saygı gösterilme olarak sayılır; 'yetki' hakkın unsuru değil hakkın kendisinin tanımlandığı üst kavramdır.",
+   "denetciDayanagi": "Genel hak kuramı ders literatürü — belirli bir eser/yazar adlandırılamadı",
+   "dayanakDosyasi": "Yetkili kanun metni yok — akademik kaynak/eser adıyla doğrula"
+  },
+  {
+   "id": "b3-11",
+   "bolum": "İnsan haklarının pozitif hukuka geçişi",
+   "kok": "Devletin sosyal fonksiyonunu yansıtan ilk anayasa aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "ABD Anayasası",
+    "B": "Meksika Anayasası",
+    "C": "Fransız İnsan ve Yurttaş Hakları Bildirisi",
+    "D": "İngiliz Magna Carta Libertatum",
+    "E": "Alman Anayasası"
+   },
+   "kitapCevabi": "E",
+   "denetciCevabi": "B",
+   "denetciGerekcesi": "Devlete ekonomik ve sosyal edim yükleyen, yani sosyal devlet fonksiyonunu anayasa düzeyine taşıyan ilk metin 1917 Meksika Anayasası'dır.",
+   "denetciDayanagi": "Meksika Birleşik Devletleri Anayasası (1917), md 123",
+   "dayanakDosyasi": "Yetkili kanun metni yok — akademik kaynak/eser adıyla doğrula"
+  },
+  {
+   "id": "b3-22",
+   "bolum": "İnsan haklarının pozitif hukuka geçişi",
+   "kok": "Başlangıçta bağlayıcı olmayan İnsan Hakları Evrensel Beyannamesine bağlayıcılık ne zaman kazandırılmıştır?",
+   "siklar": {
+    "A": "1950",
+    "B": "1954",
+    "C": "1960",
+    "D": "1976",
+    "E": "1966"
+   },
+   "kitapCevabi": "D",
+   "denetciCevabi": "E",
+   "denetciGerekcesi": "Bildiri'deki haklar, 1966'da kabul edilen İkiz Sözleşmelerle andlaşma hâline getirilerek bağlayıcılık kazanmıştır; b3-23'ün 'kabul edilmesi' ifadesi de kabul tarihini işaret eder.",
+   "denetciDayanagi": "BM İkiz Sözleşmeleri: Medeni ve Siyasi Haklar Sözleşmesi ile Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi (kabul 16 Aralık 1966; yürürlük 1976)",
+   "dayanakDosyasi": "Yetkili kanun metni yok — akademik kaynak/eser adıyla doğrula"
+  }
+ ]
+}

@@ -1,0 +1,649 @@
+{
+ "parca": 4,
+ "sorular": [
+  {
+   "id": "b15-8",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Aşağıdakilerden hangisi Birleşmiş Milletler Kişisel ve Siyasal Haklar Sözleşmesi içerisinde yer alan haklardan değildir?",
+   "siklar": {
+    "A": "Hakların kendi kaderini tayin hakkı",
+    "B": "Ayrımcılık yasağı",
+    "C": "Cinsiyet eşitliği",
+    "D": "Yaşama hakkı",
+    "E": "Sosyal güvenlik hakkı"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "A şıkkında yazım hatası var: 'Hakların kendi kaderini tayin hakkı' ifadesi anlamsız; doğrusu 'Halkların kendi kaderini tayin hakkı'dır."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "MSHS md 1 (kendi kaderini tayin), md 2 ve 26 (ayrımcılık yasağı), md 3 (kadın-erkek eşitliği), md 6 (yaşama hakkı); sosyal güvenlik için ESKHS md 9",
+     "gerekce": "Sosyal güvenlik hakkı Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesinde düzenlenmiştir, Kişisel ve Siyasal Haklar Sözleşmesinde yer almaz.",
+     "uyari": "A şıkkında yazım hatası var: 'Hakların kendi kaderini tayin hakkı' ifadesi anlamsız; doğrusu 'Halkların kendi kaderini tayin hakkı'dır."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "KSHS md 1, 2, 3 ve 6; sosyal güvenlik için ESKHS md 9",
+     "gerekce": "Sosyal güvenlik hakkı Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi'nde yer alır; kendi kaderini tayin, ayrımcılık yasağı, cinsiyet eşitliği ve yaşam hakkı KSHS'dedir.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-12",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler Kadına Karşı Her Türlü Ayrımcılığın Önlenmesi Komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Komite 18 üyeden oluşur.",
+    "B": "Üyelerin görev süresi 4 yıldır.",
+    "C": "Yılda iki defa toplanır.",
+    "D": "Toplantıları New York’ta yapılır.",
+    "E": "Üyeleri üye devletler tarafından gösterilecek adaylar arasından seçilir."
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D şıkkı güncel değil: Komite sekretaryası 2008'de Cenevre'ye taşındığından oturumlar artık New York'ta değil Cenevre'de yapılmaktadır; C şıkkı da güncel uygulamaya uymaz (Komite yılda üç oturum toplanmaktadır).",
+    "Tek yanlış şık değil: Komite 2008'den bu yana New York'ta değil Cenevre'de toplanmakta (D) ve yılda iki değil üç oturum yapmaktadır (C). Soru güncellenmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "Kadına Karşı Her Türlü Ayrımcılığın Önlenmesi Sözleşmesi (CEDAW) md 17/1 — 35. onaydan sonra 23 uzman; md 17/2 (taraf devletlerin aday göstermesi), md 17/5 (4 yıl)",
+     "gerekce": "Sözleşme metni gereği Komite 35. onaydan sonra 18 değil 23 üyeden oluşur; bu koşul çoktan gerçekleşmiştir.",
+     "uyari": "D şıkkı güncel değil: Komite sekretaryası 2008'de Cenevre'ye taşındığından oturumlar artık New York'ta değil Cenevre'de yapılmaktadır; C şıkkı da güncel uygulamaya uymaz (Komite yılda üç oturum toplanmaktadır)."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "CEDAW md 17/1 (üye sayısı) ve md 20 (toplantılar)",
+     "gerekce": "CEDAW md 17/1 uyarınca Komite yürürlüğe girişte 18, otuz beşinci onaydan sonra 23 uzmandan oluşur; bugün üye sayısı 23'tür, dolayısıyla \"18 üye\" ifadesi yanlıştır.",
+     "uyari": "Tek yanlış şık değil: Komite 2008'den bu yana New York'ta değil Cenevre'de toplanmakta (D) ve yılda iki değil üç oturum yapmaktadır (C). Soru güncellenmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-13",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler İşkence ve Diğre Zalimane, İnsanlık dışı veya Küçültücü Muameleye ve Cezaya Karşı Sözleşmeye ek protokolle oluşturulan İşkenceyi Önleme Alt komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Komite 10 üyeden oluşur.",
+    "B": "Komite üyelerinin görev süresi 4 yıldır.",
+    "C": "Komite her yıl İşkenceyi Önleme Komitesine rapor sunar.",
+    "D": "Taraf devlet işbirliği içinde bulunmazsa Alt Komite doğrudan elindeki raporu kamuoyuyla paylaşma hakkı vardır.",
+    "E": "Komite alt komite olarak İşkenceyi Önleme Komitesiyle İşbirliği hâlinde çalışır."
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "A şıkkındaki bilgi eskimiş: OPCAT md 5/1 uyarınca 50. onaydan sonra Alt Komitenin üye sayısı 25'e çıkmıştır (2011'den bu yana 25 üye).",
+    "A şıkkı da güncel değil: OPCAT md 5/1'e göre üye sayısı ellinci onaydan sonra 25'e çıkmıştır (2011'den beri 25 üye). Ayrıca şıklardaki \"İşkenceyi Önleme Komitesi\" ifadesi İşkenceye Karşı Komite'yi (CAT) kastediyor; adlandırma karışıklık yaratıyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "OPCAT md 16/4 — kamuya açıklama kararını, Alt Komitenin talebi üzerine İşkenceye Karşı Komite üye çoğunluğuyla verir; md 9 (4 yıl), md 16/3 (yıllık rapor)",
+     "gerekce": "Taraf devlet işbirliğinden kaçınırsa raporu yayımlama ya da kamuoyu açıklaması yapma yetkisi Alt Komitede değil, onun talebi üzerine karar veren İşkenceye Karşı Komitededir.",
+     "uyari": "A şıkkındaki bilgi eskimiş: OPCAT md 5/1 uyarınca 50. onaydan sonra Alt Komitenin üye sayısı 25'e çıkmıştır (2011'den bu yana 25 üye)."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "OPCAT md 16/4 (ayrıca md 5/1, md 9, md 16/3)",
+     "gerekce": "Taraf devlet işbirliğinden kaçınırsa raporu yayımlama ya da kamuoyu açıklaması yapma kararını Alt Komite doğrudan değil, Alt Komitenin talebi üzerine İşkenceye Karşı Komite üye çoğunluğuyla verir.",
+     "uyari": "A şıkkı da güncel değil: OPCAT md 5/1'e göre üye sayısı ellinci onaydan sonra 25'e çıkmıştır (2011'den beri 25 üye). Ayrıca şıklardaki \"İşkenceyi Önleme Komitesi\" ifadesi İşkenceye Karşı Komite'yi (CAT) kastediyor; adlandırma karışıklık yaratıyor."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-14",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler İşkenceye Karşı Komite için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Komite 18 üyeden oluşur.",
+    "B": "Üyelerin görev süresi 4 yıldır.",
+    "C": "Üyeler taraf devletler tarafından gizli oyla seçilir.",
+    "D": "Komite yılda iki kez Cenevre’de toplanır.",
+    "E": "Sözleşmeyi onaylayan devletler komitenin soruşturma yetkisini zorunlu olarak kabul etmek zorunda."
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "E şıkkı da tam doğru değil: CAT md 28 uyarınca devletler onay sırasında md 20 soruşturma yetkisini tanımadıklarını beyan edebildiğinden bu yetkinin kabulü mutlak zorunlu değildir.",
+    "E şıkkı da tartışmalı: md 28 uyarınca devletler onay sırasında md 20'deki soruşturma yetkisini tanımadıklarını beyan edebilir, yani yetki \"zorunlu olarak\" kabul edilmiş sayılmaz. A sayısal olarak açıkça yanlış olduğu için tek cevap kabul edildi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "BM İşkenceye Karşı Sözleşme (CAT) md 17/1 — Komite on uzmandan oluşur; md 17/3 (taraf devletlerce gizli oyla seçim), md 17/5 (4 yıl)",
+     "gerekce": "Sözleşme metni Komitenin 18 değil 10 üyeden oluşacağını açıkça belirtir; 18 üyeli olanlar İnsan Hakları, CERD, CEDAW gibi diğer komitelerdir.",
+     "uyari": "E şıkkı da tam doğru değil: CAT md 28 uyarınca devletler onay sırasında md 20 soruşturma yetkisini tanımadıklarını beyan edebildiğinden bu yetkinin kabulü mutlak zorunlu değildir."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "İşkenceye Karşı Sözleşme md 17/1, 17/3, 17/5; md 28",
+     "gerekce": "İşkenceye Karşı Komite 18 değil 10 uzmandan oluşur (md 17/1); 4 yıllık görev süresi, taraf devletlerce gizli oyla seçim ve Cenevre'de yılda iki olağan oturum doğrudur.",
+     "uyari": "E şıkkı da tartışmalı: md 28 uyarınca devletler onay sırasında md 20'deki soruşturma yetkisini tanımadıklarını beyan edebilir, yani yetki \"zorunlu olarak\" kabul edilmiş sayılmaz. A sayısal olarak açıkça yanlış olduğu için tek cevap kabul edildi."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-16",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler İşkenceye Karşı Komite denetim yollarından olan devlet raporları için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Taraf devletler sözleşmeyi onayladıktan sonra bir yıl içinde sözleşmeye istinaden üstlendikleri tedbirleri uygulanmak için almış oldukları önlemler hakkında rapor sunarlar.",
+    "B": "Taraf devlet her 4 yılda bir tamamlayıcı rapor sunarlar.",
+    "C": "Birleşmiş Milletler Genel Sekreteri taraf devletlerce gönderilen raporları sözleşmeye tüm taraf devletlere gönderir.",
+    "D": "Taraf devletler tarafından sunulan raporlar İşkenceyi Önleme Komitesi tarafından incelenir.",
+    "E": "Taraf devletler tarafından sunulan raporlar inceleme neticesinde yaptırım olarak kamuoyuna açıklanır."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D şıkkındaki organ adı hatalı: raporları inceleyen organ \"İşkenceye Karşı Komite\"dir; \"İşkenceyi Önleme Komitesi\" adı OPCAT Alt Komitesi ile Avrupa Konseyi CPT'sini çağrıştırdığı için D de yanlış okunabilir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "CAT md 19/1 (bir yıl içinde ilk rapor, dört yılda bir tamamlayıcı rapor), md 19/2 (Genel Sekreterin raporları taraf devletlere iletmesi), md 19/3-4 (Komitenin genel yorumları ve yıllık rapora derci)",
+     "gerekce": "Rapor usulünde 'yaptırım olarak kamuoyuna açıklama' diye bir sonuç öngörülmemiştir; Komite yalnızca genel yorumlarını ilgili devlete iletir ve yıllık raporuna alır.",
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "dayanak": "İşkenceye Karşı Sözleşme md 19/1-4",
+     "gerekce": "Raporlar bir yaptırım olarak kamuoyuna açıklanmaz; Komite raporlar üzerine genel yorum yapar ve bunları taraf devletin görüşleriyle birlikte yıllık raporuna alabilir (md 19/3-4).",
+     "uyari": "D şıkkındaki organ adı hatalı: raporları inceleyen organ \"İşkenceye Karşı Komite\"dir; \"İşkenceyi Önleme Komitesi\" adı OPCAT Alt Komitesi ile Avrupa Konseyi CPT'sini çağrıştırdığı için D de yanlış okunabilir."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-17",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler İşkenceye Karşı Komite denetim yollarından olan devletlerarası şikâyet için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Bir taraf devlet sözleşmeye taraf diğer devletin bu sözleşme hükümlerini uygulamadığını düşündüğü takdirde yazılı bir başvuru ile taraf devletin dikkatini çeker.",
+    "B": "Başvuruyu alan devlet 3 ay içinde meseleyi izah eden bir açıklamayı başvuruda bulunan devlete gönderir.",
+    "C": "İlk başvuruyu kabul eden devlet başvuruyu aldığı tarihten itibaren 6 ay içinde her iki taraf içinde tatmin edici sonuç alınamazsa konuyu komiteye götürme hakkı doğar.",
+    "D": "Konuyu her iki devlette İşkenceyi Önleme Komitesine götürebilir.",
+    "E": "Komiteye yapılan başvuru üzerine komite 6 ay içinde konuyla alakalı bir rapor sunar."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D şıkkında organ \"İşkenceyi Önleme Komitesi\" olarak anılmış; doğru ad İşkenceye Karşı Komite'dir (soru kökündeki adla da çelişiyor)."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "CAT md 21/1-a (üç ay), md 21/1-b (altı ay), md 21/1-h — Komite bildirimin alınmasından itibaren on iki ay içinde rapor sunar",
+     "gerekce": "Komitenin rapor süresi altı ay değil on iki aydır; şıktaki süre sözleşme metnine aykırıdır.",
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "dayanak": "İşkenceye Karşı Sözleşme md 21/1-a, b, h",
+     "gerekce": "Komite ihbarın alınmasından itibaren 6 ay değil 12 ay içinde rapor sunar; 3 aylık cevap ve 6 aylık uzlaşma süreleri ile her iki devletin başvuru hakkı madde metnine uygundur.",
+     "uyari": "D şıkkında organ \"İşkenceyi Önleme Komitesi\" olarak anılmış; doğru ad İşkenceye Karşı Komite'dir (soru kökündeki adla da çelişiyor)."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-19",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Birleşmiş Milletler Çocuk Hakları Komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Komite 18 üyeden oluşur.",
+    "B": "Komite üyelerinin görev süresi 4 yıldır.",
+    "C": "Komite yılda 3 kez toplanır.",
+    "D": "Komite toplantılarını Cenevre’de yapar.",
+    "E": "Komite bireysel Başvuru yolunu kabul etmiştir."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Bilgi eskimiş: bireysel başvuru usulü 14 Nisan 2014'te yürürlüğe giren Üçüncü İhtiyari Protokol ile kabul edildi. Güncel duruma göre beş şık da doğru olduğundan sorunun geçerli bir 'yanlış' şıkkı kalmamıştır; soru güncellenmeli veya çıkarılmalıdır.",
+    "Bilgi eskimiş: Çocuk Haklarına Dair Sözleşmeye Ek Üçüncü İhtiyari Protokol 14 Nisan 2014'te yürürlüğe girdiği için Komite, protokole taraf devletler bakımından bireysel başvuruyu kabul etmektedir (Türkiye protokolü onaylamadı). E artık kesin biçimde yanlış sayılamaz; soru güncellenmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "Çocuk Hakları Sözleşmesi md 43/2 (2002'de yürürlüğe giren değişiklikle 18 üye), md 43/6 (4 yıl), md 43/10 (toplantı yeri); Çocuk Hakları Sözleşmesine Ek Üçüncü İhtiyari Protokol (2011, yürürlük 14 Nisan 2014) — bireysel başvuru usulü",
+     "gerekce": "Soru büyük olasılıkla 2014 öncesi duruma göre kurgulanmış ve 'Komitenin bireysel başvuruyu kabul etmediği' bilgisini aramaktadır; bugün ise Üçüncü İhtiyari Protokol yürürlükte olduğu için bu şık da doğrudur.",
+     "uyari": "Bilgi eskimiş: bireysel başvuru usulü 14 Nisan 2014'te yürürlüğe giren Üçüncü İhtiyari Protokol ile kabul edildi. Güncel duruma göre beş şık da doğru olduğundan sorunun geçerli bir 'yanlış' şıkkı kalmamıştır; soru güncellenmeli veya çıkarılmalıdır."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "ÇHS md 43/2 (1995 değişikliği), 43/6, 43/10; ÇHS'ye Ek Üçüncü İhtiyari Protokol (2011, yürürlük 14.4.2014)",
+     "gerekce": "Sözleşmenin özgün denetim düzeninde yalnız devlet raporları vardır; 18 üye, 4 yıllık görev süresi, Cenevre'de yılda üç oturum doğrudur.",
+     "uyari": "Bilgi eskimiş: Çocuk Haklarına Dair Sözleşmeye Ek Üçüncü İhtiyari Protokol 14 Nisan 2014'te yürürlüğe girdiği için Komite, protokole taraf devletler bakımından bireysel başvuruyu kabul etmektedir (Türkiye protokolü onaylamadı). E artık kesin biçimde yanlış sayılamaz; soru güncellenmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b16-3",
+   "bolum": "BM Teşkilatında sözleşme dışı koruma mekanizmaları",
+   "kok": "Birleşmiş Milletler sözleşme dışı koruma mekanizmaları arasında yer alan Birleşmiş Milletler Genel Kurulu için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Genel Kurul Birleşmiş Milletlere üye devletlerin temsilcilerinden oluşur.",
+    "B": "Her üye devletin genel kurulda en çok 3 temsilcisi bulunur.",
+    "C": "Birleşmiş Milletler Sözleşmesi genel kurula insan hakları konularında inceleme ve tavsiyede bulunma yetkisi vermiştir.",
+    "D": "Uluslararası antlaşma sözleşmelerde DEPOZİTER (emanetçi) olarak hareket eder.",
+    "E": "Uluslararası İnsan hakları sözleşmelerinin yerine getirilmesinde devletlere yapılacak lojistik ve teknolojik destekleri koordine eder."
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D şıkkı da tartışmalı: çok taraflı BM sözleşmelerinde depoziter (emanetçi) sıfatı Genel Kurul'a değil BM Genel Sekreteri'ne aittir; iki yanlış şık bulunduğu için soru tek doğru cevaplı değil. Yine de sayısal olarak tartışmasız yanlış olan B'dir.",
+    "D şıkkı da isabetsiz: BM çatısı altında akdedilen çok taraflı antlaşmalarda depoziter (emanetçi) Genel Kurul değil BM Genel Sekreteridir. Böylece soruda iki yanlış şık bulunuyor; kesin yanlışlık B'de (Şart md 9/2 sayı hükmü) olduğu için cevap B verildi, ancak kök tek bir yanlışı varsaydığından kusurludur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı md 9/2 (her üyenin Genel Kurul'da en çok BEŞ temsilcisi bulunur); md 9/1 ve md 13/1-b",
+     "gerekce": "Şart md 9/2 uyarınca her üye devletin Genel Kurul'da en çok beş temsilcisi bulunur; 'en çok 3 temsilci' ifadesi metne aykırıdır.",
+     "uyari": "D şıkkı da tartışmalı: çok taraflı BM sözleşmelerinde depoziter (emanetçi) sıfatı Genel Kurul'a değil BM Genel Sekreteri'ne aittir; iki yanlış şık bulunduğu için soru tek doğru cevaplı değil. Yine de sayısal olarak tartışmasız yanlış olan B'dir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı md 9/1-2 (ayrıca md 13/1-b)",
+     "gerekce": "BM Şartı md 9/2 her üye devletin Genel Kurulda en çok BEŞ temsilci bulundurabileceğini söyler; 'en çok 3 temsilci' ifadesi Şart metnine aykırıdır.",
+     "uyari": "D şıkkı da isabetsiz: BM çatısı altında akdedilen çok taraflı antlaşmalarda depoziter (emanetçi) Genel Kurul değil BM Genel Sekreteridir. Böylece soruda iki yanlış şık bulunuyor; kesin yanlışlık B'de (Şart md 9/2 sayı hükmü) olduğu için cevap B verildi, ancak kök tek bir yanlışı varsaydığından kusurludur."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b16-12",
+   "bolum": "BM Teşkilatında sözleşme dışı koruma mekanizmaları",
+   "kok": "Birleşmiş Milletler Uluslararası Adalet Divanı için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Birleşmiş Milletlerin Adli organıdır.",
+    "B": "18 yargıçtan oluşur.",
+    "C": "Yargıçlar Genel kurul tarafından seçilir.",
+    "D": "Yargıçlar Güvenlik Konseyinin tavsiyesi üzerine seçilir.",
+    "E": "1946 yılı itibariyle göreve başlamıştır."
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D şıkkı da teknik olarak hatalı: yargıçlar Güvenlik Konseyi'nin 'tavsiyesi üzerine' değil, Genel Kurul ve Güvenlik Konseyi'nin birbirinden bağımsız oylarıyla, Sürekli Hakem Mahkemesi ulusal gruplarının aday listesinden seçilir (Statü md 4, 8, 10). Sayısal olarak tartışmasız yanlış olan B'dir.",
+    "D şıkkı da isabetsiz: UAD yargıçları Güvenlik Konseyinin tavsiyesi üzerine değil, Genel Kurul ile Güvenlik Konseyinde birbirinden bağımsız yapılan oylamalarda salt çoğunlukla seçilir (Statü md 4/1, 8, 10); 'Güvenlik Konseyinin tavsiyesi üzerine seçim' usulü Genel Sekreter içindir (BM Şartı md 97). Sayı hatası tartışmasız olduğu için cevap B verildi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 3/1 (on beş yargıç); md 4, 8, 10; BM Şartı md 92",
+     "gerekce": "Divan 18 değil 15 yargıçtan oluşur (Statü md 3/1); 1946'da göreve başlaması ve yargıçların Genel Kurul ile Güvenlik Konseyi'nce seçilmesi doğrudur.",
+     "uyari": "D şıkkı da teknik olarak hatalı: yargıçlar Güvenlik Konseyi'nin 'tavsiyesi üzerine' değil, Genel Kurul ve Güvenlik Konseyi'nin birbirinden bağımsız oylarıyla, Sürekli Hakem Mahkemesi ulusal gruplarının aday listesinden seçilir (Statü md 4, 8, 10). Sayısal olarak tartışmasız yanlış olan B'dir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 3/1 (ayrıca md 4/1, md 8, md 10)",
+     "gerekce": "Divan 18 değil 15 yargıçtan oluşur (UAD Statüsü md 3/1); Divanın 1946'da göreve başlaması ve BM'nin adli organı olması doğrudur.",
+     "uyari": "D şıkkı da isabetsiz: UAD yargıçları Güvenlik Konseyinin tavsiyesi üzerine değil, Genel Kurul ile Güvenlik Konseyinde birbirinden bağımsız yapılan oylamalarda salt çoğunlukla seçilir (Statü md 4/1, 8, 10); 'Güvenlik Konseyinin tavsiyesi üzerine seçim' usulü Genel Sekreter içindir (BM Şartı md 97). Sayı hatası tartışmasız olduğu için cevap B verildi."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b16-13",
+   "bolum": "BM Teşkilatında sözleşme dışı koruma mekanizmaları",
+   "kok": "Birleşmiş Milletler sözleşme dışı koruma mekanizmaları arasında yer alan 1235 usulü için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Birleşmiş Milletler Ekonomik ve Sosyal Konseyin 1235 sayılı kararına dayanır bundan dolayı bu isimle anılır.",
+    "B": "Bu karar İnsan Hakları Komisyonunun talebiyle alınmıştır.",
+    "C": "İnsan Hakları Komisyonu bu kararla ülkelerde bulunan insan hakları ihlallerini araştırma ve inceleme izni istemektedir.",
+    "D": "1235 sayılı karar alınana kadar insan hakları komisyonu kendisine yapılan başvuruları insan hakları ihlal inceleme yetkisi olmadığına karar veriyordu.",
+    "E": "Karar ile İnsan Hakları İnceleme Komisyonuna insan hakları ihlallerini inceleme araştırma ve sorumlular hakkında yaptırım uygulama yetkisi verilmiştir."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Şıklarda BM organının adı tutarsız: B, C ve D'de 'İnsan Hakları Komisyonu', E'de 'İnsan Hakları İnceleme Komisyonu' deniyor. İkinci ad TBMM'nin İnsan Haklarını İnceleme Komisyonu'nu çağrıştırıyor ve b16-5'te çeldirici olarak kullanılıyor; adın 'İnsan Hakları Komisyonu' olarak düzeltilmesi gerekir (cevabı değiştirmez)."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "ECOSOC kararı 1235 (XLII), 6 Haziran 1967; karşılaştırma: ECOSOC kararı 75 (V), 1947 ('yetkisizlik' doktrini)",
+     "gerekce": "1235 usulü Komisyona ağır ihlallere ilişkin bilgileri inceleme, çalışma yapma ve alenî tartışma/rapor yetkisi vermiştir; failler hakkında yaptırım uygulama yetkisi hiçbir zaman tanınmamıştır.",
+     "uyari": "Şıklarda BM organının adı tutarsız: B, C ve D'de 'İnsan Hakları Komisyonu', E'de 'İnsan Hakları İnceleme Komisyonu' deniyor. İkinci ad TBMM'nin İnsan Haklarını İnceleme Komisyonu'nu çağrıştırıyor ve b16-5'te çeldirici olarak kullanılıyor; adın 'İnsan Hakları Komisyonu' olarak düzeltilmesi gerekir (cevabı değiştirmez)."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "ECOSOC kararı 1235 (XLII), 6 Haziran 1967",
+     "gerekce": "1235 sayılı karar Komisyona ağır ve sistematik insan hakları ihlallerine ilişkin bilgileri inceleme, kapsamlı çalışma yapma ve konuyu alenen görüşme yetkisi tanır; sorumlular hakkında yaptırım uygulama yetkisi vermez.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b16-14",
+   "bolum": "BM Teşkilatında sözleşme dışı koruma mekanizmaları",
+   "kok": "Birleşmiş Milletler sözleşme dışı koruma mekanizmaları arasında yer alan 1503 usulü için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Ekonomik ve Sosyal Konseyin 1503 sayılı kararına dayanır.",
+    "B": "Kararla İnsan Hakları İnceleme Komisyonuna soruşturma izni verilmiştir.",
+    "C": "1235 sayılı kararla eksik kalan kısımlar 1503 sayılı kararla tamamlanmıştır.",
+    "D": "Bu karara istinaden yapılan başvurular Birleşmiş Milletler Genel Sekreterine yapılır.",
+    "E": "Başvuru ve görüşmeler açık yürütülür."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "B şıkkında BM organı yine 'İnsan Hakları İnceleme Komisyonu' olarak anılmış; doğrusu 'İnsan Hakları Komisyonu'dur (cevabı değiştirmez).",
+    "B şıkkındaki 'İnsan Hakları İnceleme Komisyonu' adlandırması hatalı — kastedilen organ BM İnsan Hakları Komisyonudur; bu ad TBMM'nin 3686 sayılı Kanunla kurulan İnsan Haklarını İnceleme Komisyonu ile karışmaya elverişlidir (aynı hatalı adlandırma b16-13/E'de de var)."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "ECOSOC kararı 1503 (XLVIII), 27 Mayıs 1970 — gizli (confidential) şikâyet usulü",
+     "gerekce": "1503 usulünün tanımlayıcı özelliği gizliliktir; başvurular ve görüşmeler kamuya açık değil gizli yürütülür, bu yönüyle alenî olan 1235 usulünden ayrılır.",
+     "uyari": "B şıkkında BM organı yine 'İnsan Hakları İnceleme Komisyonu' olarak anılmış; doğrusu 'İnsan Hakları Komisyonu'dur (cevabı değiştirmez)."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "ECOSOC kararı 1503 (XLVIII), 27 Mayıs 1970, prg. 1-8",
+     "gerekce": "1503 usulünün ayırt edici özelliği GİZLİLİKTİR: başvurular ve alt komisyon/komisyon aşamasındaki görüşmeler kapalı (gizli) yürütülür; 'açık yürütülür' ifadesi usulün temel niteliğine aykırıdır.",
+     "uyari": "B şıkkındaki 'İnsan Hakları İnceleme Komisyonu' adlandırması hatalı — kastedilen organ BM İnsan Hakları Komisyonudur; bu ad TBMM'nin 3686 sayılı Kanunla kurulan İnsan Haklarını İnceleme Komisyonu ile karışmaya elverişlidir (aynı hatalı adlandırma b16-13/E'de de var)."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-2",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Adalet Divanı merkezi aşağıdaki şehirlerden hangisindedir?",
+   "siklar": {
+    "A": "Strazburg",
+    "B": "Lahey",
+    "C": "Cenevre",
+    "D": "New York",
+    "E": "Bürüksel"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "E şıkkı yazım hatalı: 'Bürüksel' değil 'Brüksel'.",
+    "Yazım: E şıkkı 'Bürüksel' olarak yazılmış, doğrusu 'Brüksel'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 22/1",
+     "gerekce": "Statü, Divanın merkezinin Lahey'de kurulacağını açıkça belirtir; Strazburg AİHM'in, Cenevre BM insan hakları organlarının, New York BM Genel Merkezinin bulunduğu şehirlerdir.",
+     "uyari": "E şıkkı yazım hatalı: 'Bürüksel' değil 'Brüksel'."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 22/1",
+     "gerekce": "Statüye göre Divanın merkezi Lahey'dedir (Barış Sarayı); Strazburg AİHM'nin, Cenevre BM İnsan Hakları Konseyi'nin merkezidir.",
+     "uyari": "Yazım: E şıkkı 'Bürüksel' olarak yazılmış, doğrusu 'Brüksel'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-3",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Adalet Divanı merkezi aşağıdaki ülkelerden hangisindedir?",
+   "siklar": {
+    "A": "ABD",
+    "B": "Fransa",
+    "C": "Roma",
+    "D": "Hollanda",
+    "E": "İngiltere"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru ülke sorarken C şıkkına ülke değil şehir adı ('Roma') konmuş; çeldirici kategori olarak hatalı.",
+    "Şık tutarsızlığı: ülke sorulmasına rağmen C şıkkına şehir adı ('Roma') konmuş; şıklar aynı kategoriden olmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "UAD Statüsü md 22/1 — Lahey (Barış Sarayı), Hollanda",
+     "gerekce": "Divanın merkezi Lahey'deki Barış Sarayı olduğundan Divan Hollanda sınırları içindedir.",
+     "uyari": "Soru ülke sorarken C şıkkına ülke değil şehir adı ('Roma') konmuş; çeldirici kategori olarak hatalı."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "UAD Statüsü md 22/1",
+     "gerekce": "Divanın merkezi Lahey olduğuna göre bulunduğu ülke Hollanda'dır.",
+     "uyari": "Şık tutarsızlığı: ülke sorulmasına rağmen C şıkkına şehir adı ('Roma') konmuş; şıklar aynı kategoriden olmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-4",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Adalet Divanı yargıçları aşağıdakilerden hangisi tarafından seçilir?",
+   "siklar": {
+    "A": "Parlamenter Meclis",
+    "B": "Birleşmiş Milletler Genel Kurulu",
+    "C": "Güvenlik Konseyi",
+    "D": "Taraf Devletler",
+    "E": "Ekonomik ve Sosyal Konsey"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Birden fazla şık doğru: Statü md 8 uyarınca Genel Kurul (B) kadar Güvenlik Konseyi (C) de seçici organdır; tek doğru şık yoktur. Şık kümesine 'Genel Kurul ve Güvenlik Konseyi' eklenip anahtar oraya çekilmelidir.",
+    "Birden fazla şık savunulabilir: md 8 uyarınca Genel Kurul (B) ve Güvenlik Konseyi (C) seçimi birbirinden bağımsız yapar; kök 'hangi organlar' biçiminde ya da şık 'Genel Kurul ve Güvenlik Konseyi' olarak düzeltilmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 4/1 ve md 8",
+     "gerekce": "Yargıçlar BM Genel Kurulu ile Güvenlik Konseyi tarafından, iki organın birbirinden bağımsız oylamasıyla seçilir; şıklar arasında bu ikisini birlikte veren seçenek olmadığından Genel Kurul cevabı alınmıştır.",
+     "uyari": "Birden fazla şık doğru: Statü md 8 uyarınca Genel Kurul (B) kadar Güvenlik Konseyi (C) de seçici organdır; tek doğru şık yoktur. Şık kümesine 'Genel Kurul ve Güvenlik Konseyi' eklenip anahtar oraya çekilmelidir."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "UAD Statüsü md 4/1 ve md 8",
+     "gerekce": "Yargıçlar BM Genel Kurulu ve Güvenlik Konseyi tarafından seçilir; şıklar arasında tek başına gösterilebilecek asıl seçici organ Genel Kurul'dur.",
+     "uyari": "Birden fazla şık savunulabilir: md 8 uyarınca Genel Kurul (B) ve Güvenlik Konseyi (C) seçimi birbirinden bağımsız yapar; kök 'hangi organlar' biçiminde ya da şık 'Genel Kurul ve Güvenlik Konseyi' olarak düzeltilmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-6",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Adalet Divanı yargıçlarının seçimi ile alakalı aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Yargıçların onu Genel Kurul beşi ise Güvenlik Konseyi tarafından seçilir.",
+    "B": "Yargıçların onu Güvenlik Konseyi beşi Genel Kurul tarafından seçilir.",
+    "C": "Yargıçların tamamı Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul tarafından seçilir.",
+    "D": "Yargıçların tamamı Genel Kurulun tavsiyesi üzerine Güvenlik Konseyi tarafından seçilir.",
+    "E": "Yargıçların tamamı Güvenlik Konseyi tarafından seçilir."
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Hiçbir şık doğru değil: Statü md 8 iki organın 'birbirinden bağımsız' seçim yapmasını, md 10/1 her iki organda salt çoğunluk aranmasını emreder; 10/5 dağılımı da 'tavsiye üzerine seçim' de (bu usul BM Şartı md 97'deki Genel Sekreter atamasına aittir) Statüde yoktur. Soru ya yeniden yazılmalı ya bankadan çıkarılmalıdır.",
+    "Hiçbir şık tam doğru değil: md 8'e göre Genel Kurul ile Güvenlik Konseyi seçimi birbirinden BAĞIMSIZ yürütür ve iki organda da salt çoğunluk arayan aday seçilir; adaylar Sürekli Hakem Mahkemesi ulusal gruplarınca gösterilir (md 4/1), Güvenlik Konseyi 'tavsiye' etmez. C şıkkındaki 'Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul' usulü BM Genel Sekreteri seçimine (BM Şartı md 97) aittir. Soru yeniden yazılmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "UAD Statüsü md 8 ve md 10/1",
+     "gerekce": "Doğru kural, yargıçların tamamının Genel Kurul ve Güvenlik Konseyinde bağımsız oylamalarla ve her iki organda salt çoğunlukla seçilmesidir; şıklar arasında bunu veren seçenek olmadığından yalnızca yazarın kastettiği tahmin edilerek en yakın şık işaretlenmiştir.",
+     "uyari": "Hiçbir şık doğru değil: Statü md 8 iki organın 'birbirinden bağımsız' seçim yapmasını, md 10/1 her iki organda salt çoğunluk aranmasını emreder; 10/5 dağılımı da 'tavsiye üzerine seçim' de (bu usul BM Şartı md 97'deki Genel Sekreter atamasına aittir) Statüde yoktur. Soru ya yeniden yazılmalı ya bankadan çıkarılmalıdır."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "UAD Statüsü md 4/1 ve md 8",
+     "gerekce": "Şıklar içinde yargıçların tamamının aynı usulle seçildiğini söyleyen ve Genel Kurul'u seçici organ gösteren tek seçenek C'dir; ancak metne birebir uyan bir şık yoktur.",
+     "uyari": "Hiçbir şık tam doğru değil: md 8'e göre Genel Kurul ile Güvenlik Konseyi seçimi birbirinden BAĞIMSIZ yürütür ve iki organda da salt çoğunluk arayan aday seçilir; adaylar Sürekli Hakem Mahkemesi ulusal gruplarınca gösterilir (md 4/1), Güvenlik Konseyi 'tavsiye' etmez. C şıkkındaki 'Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul' usulü BM Genel Sekreteri seçimine (BM Şartı md 97) aittir. Soru yeniden yazılmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-11",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Caza Mahkemesi hangi ülke sınırları içerisinde yer almaktadır?",
+   "siklar": {
+    "A": "Hollanda",
+    "B": "ABD",
+    "C": "Fransa",
+    "D": "İngiltere",
+    "E": "İtalya"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökünde kurum adı yanlış yazılmış: 'Uluslararası Caza Mahkemesi' değil 'Uluslararası Ceza Mahkemesi'.",
+    "Yazım: kökte 'Caza' yazılmış, doğrusu 'Ceza'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "Roma Statüsü md 3/1",
+     "gerekce": "Mahkemenin merkezi ev sahibi devlet Hollanda'nın Lahey şehridir.",
+     "uyari": "Soru kökünde kurum adı yanlış yazılmış: 'Uluslararası Caza Mahkemesi' değil 'Uluslararası Ceza Mahkemesi'."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "Roma Statüsü md 3/1",
+     "gerekce": "Mahkemenin merkezi ev sahibi devlet Hollanda'nın Lahey şehridir.",
+     "uyari": "Yazım: kökte 'Caza' yazılmış, doğrusu 'Ceza'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-12",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Caza Mahkemesi hangi şehirde faaliyet göstermektedir?",
+   "siklar": {
+    "A": "Roma",
+    "B": "Lahey",
+    "C": "Strazburg",
+    "D": "Bürüksel",
+    "E": "New York"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökünde 'Caza' (doğrusu 'Ceza'), D şıkkında 'Bürüksel' (doğrusu 'Brüksel') yazım hatası var.",
+    "Yazım: kökte 'Caza' (doğrusu 'Ceza'), D şıkkında 'Bürüksel' (doğrusu 'Brüksel')."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "Roma Statüsü md 3/1",
+     "gerekce": "Mahkeme Lahey'de faaliyet gösterir; Roma yalnızca statünün kabul edildiği şehirdir.",
+     "uyari": "Soru kökünde 'Caza' (doğrusu 'Ceza'), D şıkkında 'Bürüksel' (doğrusu 'Brüksel') yazım hatası var."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "Roma Statüsü md 3/1",
+     "gerekce": "Mahkemenin merkezi Lahey'dir; Roma yalnızca statünün kabul edildiği şehirdir.",
+     "uyari": "Yazım: kökte 'Caza' (doğrusu 'Ceza'), D şıkkında 'Bürüksel' (doğrusu 'Brüksel')."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b17-13",
+   "bolum": "BM Teşkilatında yargısal mekanizmalar",
+   "kok": "Uluslararası Caza Mahkemesi kaç yargıçtan oluşur?",
+   "siklar": {
+    "A": "54",
+    "B": "18",
+    "C": "15",
+    "D": "30",
+    "E": "12"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökünde kurum adı 'Caza' olarak yanlış yazılmış.",
+    "Yazım: kökte 'Caza' yazılmış, doğrusu 'Ceza'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "Roma Statüsü md 36/1",
+     "gerekce": "Mahkeme on sekiz yargıçtan oluşur; 15 UAD'nin, 54 BM Ekonomik ve Sosyal Konseyinin üye sayısıdır.",
+     "uyari": "Soru kökünde kurum adı 'Caza' olarak yanlış yazılmış."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "Roma Statüsü md 36/1",
+     "gerekce": "Mahkeme on sekiz yargıçtan oluşur; sayı Statüde öngörülen usulle artırılabilir.",
+     "uyari": "Yazım: kökte 'Caza' yazılmış, doğrusu 'Ceza'."
+    }
+   ],
+   "kitapNotu": "Uluslararası Ceza Mahkemesi yargıçları 1/3 ‘ü 3 yıl 1/3’ü 6 yıl 1/3’ü ise 9 yıl için seçilir.",
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  }
+ ]
+}

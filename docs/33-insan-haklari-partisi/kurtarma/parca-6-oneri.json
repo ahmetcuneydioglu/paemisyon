@@ -1,0 +1,225 @@
+[
+ {
+  "id": "b20-41",
+  "grup": "B",
+  "gerekce": "Soru ve şıklar sağlam; yalnız anahtar yanlış — yürürlükteki AİHS md 35/1 süreyi dört ay olarak belirliyor ve bu süre devletlerarası başvurulara da uygulanıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Üç",
+    "B": "Dört",
+    "C": "Beş",
+    "D": "Altı",
+    "E": "On iki"
+   },
+   "dogru": "B",
+   "aciklama": "AİHS'in kabul edilebilirlik koşullarını düzenleyen 35. maddesinin birinci fıkrasına göre Mahkeme'ye ancak iç hukuk yollarının tüketilmesinden sonra ve iç hukuktaki kesin karar tarihinden itibaren dört aylık süre içinde başvurulabilir. Bu fıkra başvuru türü ayrımı yapmaz; bireysel başvuruya özgüleme yalnız 35/2 ve 35/3'te geçtiğinden, 33. madde uyarınca yapılan devletlerarası başvurular da aynı süreye tabidir. Tuzak, 15 No.lu Protokol öncesinde geçerli olan altı aylık süredir; bu süre 1 Şubat 2022'den itibaren kesinleşen iç hukuk kararları bakımından dört aya inmiştir.",
+   "dayanak": "AİHS md 35/1 (15 No.lu Protokol ile değişik); md 33"
+  },
+  "degisenler": ["Cevap anahtarı: D (Altı) → B (Dört)"]
+ },
+ {
+  "id": "b20-42",
+  "grup": "B",
+  "gerekce": "Kusur yalnız anahtarda: bireysel başvuruda da md 35/1'in güncel metnine göre süre dört aydır.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Üç",
+    "B": "Dört",
+    "C": "Beş",
+    "D": "Altı",
+    "E": "On iki"
+   },
+   "dogru": "B",
+   "aciklama": "AİHS'in 35. maddesinin birinci fıkrası, iç hukuk yollarının tüketilmesinden ve iç hukuktaki kesin karar tarihinden itibaren dört aylık bir başvuru süresi öngörür; 34. madde uyarınca yapılan bireysel başvurular da bu süreye tabidir. Klasik altı aylık süre 15 No.lu Protokol ile dörde indirilmiş, yeni süre 1 Şubat 2022'den sonra kesinleşen kararlara uygulanmaya başlamıştır. Tuzak, hâlâ yaygın biçimde ezberlenen altı aylık süredir.",
+   "dayanak": "AİHS md 35/1 (15 No.lu Protokol ile değişik); md 34"
+  },
+  "degisenler": ["Cevap anahtarı: D (Altı) → B (Dört)"]
+ },
+ {
+  "id": "b20-43",
+  "grup": "D",
+  "gerekce": "Doğru cevap yerinde; yalnız bir çeldiricideki süre bilgisi eskimiş, dört ay olarak güncellenmesi gerekiyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Başvurunun imzalı olmaması",
+    "B": "Başvuru süresi olan 4 aylık sürenin geçirilmiş olması",
+    "C": "Mahkeme tarafından daha önce karara bağlanmış bir konu olması",
+    "D": "Başvurunun açıkça AİHS ve ek protokollerine dayanması",
+    "E": "Başvurunun Devlet Tüzel kişisi tarafından yapılmış olması"
+   },
+   "dogru": "D",
+   "aciklama": "AİHS'in 35. maddesi kabul edilemezlik nedenlerini sayar: başvurunun isimsiz olması (35/2-a), süre koşuluna uyulmaması (35/1), daha önce incelenmiş ya da başka bir uluslararası mercie sunulmuş olması (35/2-b), Sözleşme hükümleriyle bağdaşmaması veya dayanaktan açıkça yoksun olması (35/3-a). Devlet tüzel kişisinin başvurusu, 34. maddenin başvuru ehliyetini gerçek kişi, hükümet dışı kuruluş ve kişi gruplarıyla sınırlaması nedeniyle kişi bakımından bağdaşmazdır. Başvurunun Sözleşme ve protokollerine dayanması ise kabul edilemezlik nedeni değil, tam tersine kabul edilebilirliğin koşuludur; tuzak burada 'dayanaktan açıkça yoksunluk' ile 'Sözleşmeye dayanma' ifadelerinin karıştırılmasıdır.",
+   "dayanak": "AİHS md 34; md 35/1-2-3"
+  },
+  "degisenler": ["B şıkkı: 'Başvuru süresi olan 6 aylık sürenin geçirilmiş olması' → 'Başvuru süresi olan 4 aylık sürenin geçirilmiş olması' (md 35/1, 15 No.lu Protokol)"]
+ },
+ {
+  "id": "b20-47",
+  "grup": "E",
+  "gerekce": "Kök ve şık kümesi editoryal olarak yeniden kurulmalı: soru 'AİHM kararlarından' diye soruyor ama sayılanların hiçbiri Sözleşme'de tanımlı bir karar türü değil; geçici tedbir kurumu Sözleşme'de değil AİHM İçtüzüğü'nün 39. maddesinde düzenlenir ve içtüzük metni elde yok. Kök 'AİHM İçtüzüğü md 39 uyarınca alınan geçici tedbir tipik olarak hangi sonucu doğurur?' biçiminde daraltılıp şıklar (tazminat, dostane çözüm, kayıttan düşürme, sınır dışı işleminin icrasının durdurulması gibi) gerçek AİHM kurumlarından kurulmalı; içtüzük metni künyelenerek doğrulanmadan bankaya alınmamalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b20-48",
+  "grup": "E",
+  "gerekce": "İki şık birden yanlış ve bunlar birbirini yalanlıyor: 'seffaf yürütülür' md 39/2'ye (işlemler gizlidir) aykırı, 'önce kabul edilebilirlik kararı verilmesi gerekir' ise 14 No.lu Protokol sonrası md 39/1'e ('yargılamanın her aşamasında') aykırı. Tek doğru cevaplı hâle gelmesi için kabul edilebilirlik şartını anlatan şıkkın md 39/1 ile uyumlu, doğru bir ifadeyle (örneğin dostane çözümün Mahkemenin yardımıyla yürütülmesi) yeniden yazılması gerekiyor; hangi olgunun çeldirici yapılacağı editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b20-51",
+  "grup": "C",
+  "gerekce": "Kusur mekanik: bir şıkta anlam bozan yazım hatası ('nicelik' → 'nitelik') ve kökte kapanış parantezinden sonra eksik boşluk var; doğru cevap değişmiyor.",
+  "duzeltme": {
+   "kok": "Avrupa İnsan Hakları Mahkemesinin adli tanzim (tazminata hükmetme) ile alakalı kararı için aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Mahkemenin tazminata hükmetmesi için ilgilinin bu konuda talebi olup olmadığına bakılmaksızın resen verir.",
+    "B": "Mahkeme sözleşmenin ihlal edildiğine karar verirse gerekli şartlar sağlanmışsa tazminata hükmedebilir.",
+    "C": "Taraf sözleşmeci ihlali kısmen giderebiliyorsa gerekli şartlar sağlanmışsa tazminata hükmedebilir.",
+    "D": "Mahkeme tazminatı zarar görenin lehine hükmeder.",
+    "E": "Tazminat mahkemenin verebileceği en önemli karar ve yaptırım niteliğindedir."
+   },
+   "dogru": "A",
+   "aciklama": "AİHS'in adil tazmini düzenleyen 41. maddesi, Mahkeme ihlal saptadığında ve ilgili devletin iç hukuku ihlalin sonuçlarını ancak kısmen giderebiliyorsa 'gerektiği takdirde' zarar gören taraf lehine adil bir tazmine hükmedileceğini söyler. Adil tazmin resen değil, AİHM İçtüzüğü'nün 60. maddesi uyarınca başvurucunun usulüne uygun ve süresinde ileri sürdüğü talep üzerine karara bağlanır. Tuzak, 41. maddedeki 'gerektiği takdirde' ifadesinin Mahkemeye resen hükmetme yetkisi verdiği sanısıdır.",
+   "dayanak": "AİHS md 41; AİHM İçtüzüğü md 60"
+  },
+  "degisenler": [
+   "E şıkkı: 'yaptırım niceliğindedir' → 'yaptırım niteliğindedir'",
+   "Kök: 'tazminata hükmetme)ile' → 'tazminata hükmetme) ile'; 'Mahkemesi adli tanzim' → 'Mahkemesinin adli tanzim'"
+  ]
+ },
+ {
+  "id": "b21-1",
+  "grup": "A",
+  "gerekce": "Kusur yok: uyarı sorunun kitaptaki bölüm başlığı altında yanlış yerde durmasıyla ilgili; soru tarihsel bir kuruluş olgusunu sorduğu için dönemin adını kullanması da yerindedir.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Roma statüsü antlaşması",
+    "B": "İnsan Hakları Sözleşmesi",
+    "C": "İnsan Hakları Evrensel Beyannamesi",
+    "D": "Kömür ve Çelik Topluluğu antlaşması",
+    "E": "Cenevre statüsü"
+   },
+   "dogru": "D",
+   "aciklama": "Adalet Divanı'nı kuran belge, Avrupa Kömür ve Çelik Topluluğu'nu kuran 1951 tarihli Paris Antlaşması'dır; antlaşma kurumlar arasında bir Adalet Divanı öngörmüş ve Divanın kuruluşu ile görevlerini düzenlemiştir. Divan, Lizbon Antlaşması'ndan (2009) sonra Avrupa Birliği Adalet Divanı adını almıştır. Tuzak, Uluslararası Ceza Mahkemesi'ni kuran Roma Statüsü ile Avrupa İnsan Hakları Mahkemesi'ni kuran İnsan Hakları Sözleşmesi'nin bu Divanla karıştırılmasıdır; Evrensel Beyanname ise bir mahkeme kurmaz.",
+   "dayanak": "Paris Antlaşması (AKÇT, 1951) md 7 ve md 31-45"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "b21-4",
+  "grup": "D",
+  "gerekce": "Sayı üye devlet sayısına bağlı olduğu için kök tarihsiz haliyle eskimeye açık; 'hâlihazırda' ibaresi ve güncel kurum adı eklenerek güncellenmeli.",
+  "duzeltme": {
+   "kok": "Avrupa Birliği Adalet Divanı (eski adıyla Avrupa Toplulukları Adalet Divanı) hâlihazırda kaç yargıçtan oluşur?",
+   "siklar": {
+    "A": "18",
+    "B": "15",
+    "C": "27",
+    "D": "54",
+    "E": "293"
+   },
+   "dogru": "C",
+   "aciklama": "Avrupa Birliği Antlaşması'nın 19. maddesinin ikinci fıkrası uyarınca Divan her üye devletten bir yargıçtan oluşur; yargıç sayısı bu nedenle üye devlet sayısına eşittir. Birleşik Krallık'ın ayrılmasından sonra Birlik 27 üye devletli olduğundan Divanda hâlen 27 yargıç görev yapar. Tuzak, Brexit öncesindeki 28 sayısıyla ve Genel Mahkeme'nin üye devlet başına iki yargıçlı yapısıyla karıştırmaktır.",
+   "dayanak": "ABA md 19/2; ABİA md 251"
+  },
+  "degisenler": ["Kök: 'Avrupa Toplulukları Adalet Divanı kaç yargıçtan oluşur?' → 'Avrupa Birliği Adalet Divanı (eski adıyla Avrupa Toplulukları Adalet Divanı) hâlihazırda kaç yargıçtan oluşur?'"]
+ },
+ {
+  "id": "b21-8",
+  "grup": "C",
+  "gerekce": "Bir şıktaki 'temsilci yargıç' ifadesi hukuken hatalı olduğu için soru iki yanlış şıklı görünüyor; ifade metin düzeyinde düzeltilince doğru cevap tekleşir.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Her üye devletten bir yargıç bulunur, toplamda 27 yargıç vardır.",
+    "B": "Üyelerin görev süresi 9 yıldır.",
+    "C": "Başkanın görev süresi 3 yıldır.",
+    "D": "Başkan divan üyeleri tarafından seçilir.",
+    "E": "Mahkemenin merkezi Lüksemburg’da bulunur."
+   },
+   "dogru": "B",
+   "aciklama": "Avrupa Birliği'nin İşleyişi Hakkında Antlaşma'nın 253. maddesine göre Divan yargıçlarının görev süresi altı yıldır ve kısmi yenilemelerle üç yılda bir yenilenir; yargıçlar başkanlarını kendi aralarından üç yıllığına seçer. Divan, Avrupa Birliği Antlaşması'nın 19. maddesi uyarınca her üye devletten bir yargıçtan oluşur (bugün 27) ve merkezi Lüksemburg'dur. Tuzak, dokuz yıllık sürenin AİHM yargıçlarına ait olmasıdır; ayrıca yargıçlar üye devletten gelseler de onları temsil etmez, bağımsızdır.",
+   "dayanak": "ABİA md 253/1 ve 253/3; ABA md 19/2; Divan Statüsü (Protokol No 3)"
+  },
+  "degisenler": ["A şıkkı: 'Üye devletlerden bir temsilci yargıç bulunur toplamda 27 yargıç vardır.' → 'Her üye devletten bir yargıç bulunur, toplamda 27 yargıç vardır.'"]
+ },
+ {
+  "id": "b22-4",
+  "grup": "C",
+  "gerekce": "Kusur yalnız özel adların yazımında: doğru şıktaki isim ve bir çeldiricideki isim bozuk yazılmış; düzeltme mekaniktir, doğru cevap değişmiyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Álvaro Gil-Robles",
+    "B": "Dunja Mijatović",
+    "C": "Nikola tanguç",
+    "D": "İnefrit Den palo",
+    "E": "Lagortus venus"
+   },
+   "dogru": "A",
+   "aciklama": "Avrupa Konseyi İnsan Hakları Komiserliği makamını ilk üstlenen kişi, 1999-2006 arasında görev yapan İspanyol hukukçu Álvaro Gil-Robles'tir. Onu sırasıyla Thomas Hammarberg, Nils Muižnieks ve Dunja Mijatović izlemiştir. Tuzak, görev yapmış komiserler arasından en çok tanınan ismin ilk komiser sanılmasıdır.",
+   "dayanak": "Avrupa Konseyi İnsan Hakları Komiserliği görev listesi (Álvaro Gil-Robles, 1999-2006)"
+  },
+  "degisenler": [
+   "A şıkkı: 'Alvaro Gil-Roberts' → 'Álvaro Gil-Robles'",
+   "B şıkkı: 'Dunja Moviteviç' → 'Dunja Mijatović'"
+  ]
+ },
+ {
+  "id": "b22-11",
+  "grup": "E",
+  "gerekce": "Doğru yanıt şıklarda yok: CPT'nin ilk ziyareti 20-27 Mayıs 1990'da Avusturya'ya yapılmıştır (rapor künyesi CPT/Inf (91) 10) ve Türkiye 1990 ziyaret turunda yer alsa da ilk ziyaret edilen ülke değildir; ayrıca Avrupa Konseyi üyesi ve Sözleşme tarafı olmayan ABD geçersiz bir çeldiricidir. Şık kümesi 'Avusturya' eklenip anahtar ona çekilerek ya da kök 'CPT'nin ilk kamuoyu açıklaması hangi ülke hakkındadır?' biçiminde değiştirilerek yeniden kurulmalı; resmî ziyaret listesi künyeyle doğrulanmadan bankaya alınmamalı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b22-12",
+  "grup": "D",
+  "gerekce": "Üye sayısını veren şık eskimiş bilgi taşıdığı için soru iki yanlış şıklı hâle gelmiş; sayı güncellenince tek yanlış şık kalıyor (ayrıca doğru cevabın şıkkında yazım hatası var).",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Kurulması ve denetim organı olduğu antlaşma Avrupa Sosyal Şartı Antlaşmasıdır.",
+    "B": "1965 yılında kurulmuştur.",
+    "C": "Üye sayısı 15’tir.",
+    "D": "Üyelerini Avrupa Konseyi Bakanlar Komitesi seçer.",
+    "E": "Üyelerin görev süresi 12 yıldır."
+   },
+   "dogru": "E",
+   "aciklama": "Avrupa Sosyal Haklar Komitesi, Avrupa Sosyal Şartı'nın (ETS 35) denetim organıdır; Şartın 26 Şubat 1965'te yürürlüğe girmesiyle Bağımsız Uzmanlar Komitesi olarak işlerlik kazanmıştır. Şartın 25. maddesi ile 1991 tarihli Torino Değişiklik Protokolü (ETS 142) uyarınca üyeleri Bakanlar Komitesi seçer; komite bugün 15 üyelidir ve üyelerin görev süresi bir kez yenilenebilen altı yıldır. Tuzak, on iki yıllık bir görev süresi ezberidir; böyle bir süre hiçbir metinde yer almaz.",
+   "dayanak": "Avrupa Sosyal Şartı (ETS 35) md 25; 1991 Torino Değişiklik Protokolü (ETS 142) md 3-4"
+  },
+  "degisenler": [
+   "C şıkkı: 'Üye sayısı en çok 9 dur.' → 'Üye sayısı 15’tir.' (Torino Protokolü sonrası güncel yapı)",
+   "E şıkkı: 'Üyelerin görev süresi 12 yılıdr.' → 'Üyelerin görev süresi 12 yıldır.'"
+  ]
+ },
+ {
+  "id": "b22-16",
+  "grup": "C",
+  "gerekce": "Kusurlar metin düzeyinde: kısaltma yanlış yazılmış ve kuruluş yılını veren şık belirsiz olduğu için ikinci bir yanlış şık gibi okunabiliyor; ifadeler düzeltilince tek yanlış şık kalıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Kuruluşu, Sözleşmenin yürürlüğe girdiği 2014 yılına dayanır.",
+    "B": "15 üyeden oluşur",
+    "C": "Üyelerinin görev süresi 4 yıldır.",
+    "D": "Kısaltılmış ismi GREVIO’dur",
+    "E": "Türkiye sözleşmeye hâlen üyedir."
+   },
+   "dogru": "E",
+   "aciklama": "Kadına Yönelik Şiddet ve Ev İçi Şiddetin Önlenmesi ve Bunlarla Mücadeleye İlişkin Avrupa Konseyi Sözleşmesi (İstanbul Sözleşmesi, CETS 210) 1 Ağustos 2014'te yürürlüğe girmiş, 66. maddesiyle kurulan bağımsız uzmanlar grubu GREVIO on ile on beş üyeden oluşmuş ve üyeleri dört yıllığına seçilmiştir. Türkiye Sözleşmeyi ilk onaylayan ülke olmakla birlikte 20 Mart 2021 tarihli 3718 sayılı Cumhurbaşkanı Kararı ile fesih bildiriminde bulunmuş, çekilme 1 Temmuz 2021'de hüküm doğurmuştur; bu nedenle Türkiye'nin hâlen taraf olduğu ifadesi yanlıştır. Tuzak, Sözleşmenin adının İstanbul'dan gelmesi ve Türkiye'nin ilk onaylayan ülke olması nedeniyle tarafların hâlâ Türkiye'yi kapsadığı sanısıdır.",
+   "dayanak": "İstanbul Sözleşmesi (CETS 210) md 66; 20 Mart 2021 tarihli 3718 sayılı Cumhurbaşkanı Kararı"
+  },
+  "degisenler": [
+   "D şıkkı: 'Kısaltılmış ismi GIREVİO’ dur' → 'Kısaltılmış ismi GREVIO’dur'",
+   "A şıkkı: '2014 yılında kurulmuştur.' → 'Kuruluşu, Sözleşmenin yürürlüğe girdiği 2014 yılına dayanır.' (üyeler ilk kez Mayıs 2015'te seçildiği için belirsizlik giderildi)"
+  ]
+ }
+]

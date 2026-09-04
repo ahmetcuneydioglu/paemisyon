@@ -1,0 +1,646 @@
+{
+ "parca": 3,
+ "sorular": [
+  {
+   "id": "b12-9",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (1-21)",
+   "kok": "6701 sayılı Türkiye İnsan Hakları ve Eşitlik Kurumu Kanunu hükümlerine göre bir gerçek veya tüzel kişinin, bu Kanunda sayılan ayrımcılık temellerinden birisiyle gerçekte ilgisi olmamasına rağmen, bu temellerden birisini taşıdığı sanılarak hukuken tanınmış hak ve hürriyetlerden yararlanma bakımından ayrımcı muameleye maruz kalması şeklinde tanımı yapılan kavram aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Ayrımcılık talimatı",
+    "B": "Ayrı tutma",
+    "C": "Çoklu ayrımcılık",
+    "D": "Doğrudan ayrımcılık",
+    "E": "Varsayılan temele dayalı ayrımcılık !"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "E şıkkının sonundaki gereksiz '!' işareti temizlenmeli. Ayrıca b12-4…b12-9 dizisinde A-D şıkları hep aynıyken yalnız bu soruda E şıkkı değiştirilmiş; bu biçimsel kırılma doğru cevabı ele veriyor.",
+    "E şıkkının sonunda kaynaktan sızmış bir '!' işareti var; doğru şıkkı ele veriyor, temizlenmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "6701 md 2/1-m",
+     "gerekce": "Tanım birebir 'Varsayılan temele dayalı ayrımcılık' tanımıdır.",
+     "uyari": "E şıkkının sonundaki gereksiz '!' işareti temizlenmeli. Ayrıca b12-4…b12-9 dizisinde A-D şıkları hep aynıyken yalnız bu soruda E şıkkı değiştirilmiş; bu biçimsel kırılma doğru cevabı ele veriyor."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "6701 md 2/1-m",
+     "gerekce": "Temellerden birini gerçekte taşımadığı hâlde taşıdığı sanılarak ayrımcı muameleye maruz kalma 'Varsayılan temele dayalı ayrımcılık' tanımıdır.",
+     "uyari": "E şıkkının sonunda kaynaktan sızmış bir '!' işareti var; doğru şıkkı ele veriyor, temizlenmeli."
+    }
+   ],
+   "kitapNotu": "Cinsiyet, ırk, renk, dil, din, inanç, mezhep, felsefi ve siyasi görüş, etnik köken, servet, doğum, medeni hâl, sağlık durumu, engellilik ve yaş temellerine dayalı ayrımcılık yasaktır. Ayrımcılık yasağının ihlali hâlinde, konuya ilişkin görev ve yetkisi bulunanlar yukarıdaki tedbirleri almak zorundadırlar. Ayrımcılık yasağı bakımından sorumluluk altında olan gerçek ve özel hukuk tüzel kişileri, yetki alanları içerisinde bulunan konular bakımından yukarıdaki tedbirleri almak zorundadır.",
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-15",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (1-21)",
+   "kok": "Türkiye İnsan Hakları Eşitlik Kurumu aşağıdakilerden hangisi ile ilişkilidir?",
+   "siklar": {
+    "A": "Adalet Bakanlığı",
+    "B": "TBMM",
+    "C": "Cumhurbaşkanı",
+    "D": "İçişleri Bakanlığı",
+    "E": "Anayasa Mahkemesi"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": "6701 md 8/1: “… Cumhurbaşkanının görevlendireceği bakan ile ilişkili Türkiye İnsan Hakları ve Eşitlik Kurumu kurulmuştur. Cumhurbaşkanı bu teşkilatın yönetimi ile ilgili yetkilerini gerekli gördüğü hallerde bakan vasıtasıyla kullanabilir.” · karşılaştırma için 6328 md 4/1: “… Türkiye Büyük Millet Meclisi Başkanlığına bağlı … Kamu Denetçiliği Kurumu kurulmuştur.”",
+   "uyarilar": [
+    "Şık kümesi belirsiz: 6701 hiçbir bakanlığı adıyla saymaz, yalnızca 'Cumhurbaşkanının görevlendireceği bakan' der; bu nedenle C (Cumhurbaşkanı) şıkkı da savunulabilir ve iki şık birden doğru sayılabilir. Ayrıca 2018 öncesi doğru cevap Başbakanlıktı; kök 'hangi bakanlıkla ilişkilidir' biçiminde netleştirilmeli.",
+    "Kanunun ilişkilendirdiği makam doğrudan Cumhurbaşkanı değil, onun görevlendireceği bakandır; görevlendirilen bakanlık esas alınırsa A şıkkı da savunulabilir hâle gelir, kök bu yüzden bulanık."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "6701 md 8/1 + 2018/1 sayılı Cumhurbaşkanlığı Genelgesi Ek-1 listesi",
+     "gerekce": "Kanun ilişkili bakanı Cumhurbaşkanının görevlendirmesine bırakmış, yürürlükteki görevlendirmeyle TİHEK Adalet Bakanlığı ile ilişkili kuruluş sayılmıştır.",
+     "uyari": "Şık kümesi belirsiz: 6701 hiçbir bakanlığı adıyla saymaz, yalnızca 'Cumhurbaşkanının görevlendireceği bakan' der; bu nedenle C (Cumhurbaşkanı) şıkkı da savunulabilir ve iki şık birden doğru sayılabilir. Ayrıca 2018 öncesi doğru cevap Başbakanlıktı; kök 'hangi bakanlıkla ilişkilidir' biçiminde netleştirilmeli."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "6701 md 8/1 (Değişik: KHK/703/149)",
+     "gerekce": "Kanun Kurumu 'Cumhurbaşkanının görevlendireceği bakan ile ilişkili' sayar; şıklar arasında bu ifadeye en yakın ve ilişkiyi belirleyen merci Cumhurbaşkanıdır.",
+     "uyari": "Kanunun ilişkilendirdiği makam doğrudan Cumhurbaşkanı değil, onun görevlendireceği bakandır; görevlendirilen bakanlık esas alınırsa A şıkkı da savunulabilir hâle gelir, kök bu yüzden bulanık."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-19",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (1-21)",
+   "kok": "Türkiye İnsan Hakları Eşitlik Kurulu kaç üyeden oluşur?",
+   "siklar": {
+    "A": "11",
+    "B": "9",
+    "C": "15",
+    "D": "7",
+    "E": "15"
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "C ve E şıkları birebir aynı ('15') — mükerrer şık; biri farklı bir sayıyla değiştirilmeli.",
+    "C ve E şıkları aynı değeri ('15') taşıyor; şıklardan biri düzeltilmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "6701 md 10/2 (Değişik: 8/5/2025-7547/21)",
+     "gerekce": "Kurul, biri Başkan biri İkinci Başkan olmak üzere on bir üyeden oluşur; üye sayısı 2016'dan bu yana değişmemiştir.",
+     "uyari": "C ve E şıkları birebir aynı ('15') — mükerrer şık; biri farklı bir sayıyla değiştirilmeli."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "6701 md 10/2 (Değişik: 8/5/2025-7547/21)",
+     "gerekce": "Kurul, biri Başkan biri İkinci Başkan olmak üzere on bir üyeden oluşur.",
+     "uyari": "C ve E şıkları aynı değeri ('15') taşıyor; şıklardan biri düzeltilmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-22",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (22-42)",
+   "kok": "Türkiye İnsan Hakları Eşitlik Kurulu üyeleri görevlerine görev süresi dolmadan cumhurbaşkanınca kurul üyelikleri sonlandırılamaz ancak aşağıdaki hangisi bu kapsam dışında bulunan işlemler arasında yer almaz?",
+   "siklar": {
+    "A": "Seçilmesi için gerekli şartları taşımaması ya da sonradan kaybetmesi",
+    "B": "Kurul kararlarını süresi içinde imzalamaması",
+    "C": "Kurul tarafından kabul edilebilir mazereti olmaksızın bir takvim yılı içinde toplam beş Kurul toplantısına katılmaması",
+    "D": "Ağır hastalık veya engellilik nedeniyle iş göremeyeceğinin sağlık kurulu raporuyla belgelenmesi",
+    "E": "Disiplin suçu nedeniyle hakkında uyarma ve kınama haricinde ceza verilmesi"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökü bozuk: çift olumsuz kurulmuş ve kanunun 'hâller'i için 'işlemler' denmiş; anlam ancak zorlanarak çıkarılıyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "6701 md 10/8 (Değişik: 7547/21, 8/5/2025)",
+     "gerekce": "Görev süresi dolmadan üyeliğe son verilebilecek hâller md 10/8'de (a) seçilme şartlarını taşımama/kaybetme, (b) kararları süresinde imzalamama, (c) bir takvim yılında beş toplantıya katılmama, (ç) ağır hastalık/engellilik raporu, (d) görev suçundan mahkûmiyetin kesinleşmesi, (e) geçici iş göremezliğin üç ayı aşması, (f) 657/48-A-5 suçlardan cezanın infazına başlanması olarak sayılmıştır; disiplin cezası verilmesi bu sayımda yoktur.",
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "dayanak": "6701 md 10/8 (a-f bentleri)",
+     "gerekce": "Üyeliğe son verme sebepleri sayma yoluyla belirlenmiş (seçilme şartlarını kaybetme, kararları imzalamama, bir takvim yılında beş toplantıya katılmama, ağır hastalık/engellilik, mahkûmiyetin kesinleşmesi, geçici iş göremezliğin üç ayı aşması, 657/48-A-5 suçlarında infaza başlanması); uyarma ve kınama dışında disiplin cezası verilmesi bu listede yoktur.",
+     "uyari": "Soru kökü bozuk: çift olumsuz kurulmuş ve kanunun 'hâller'i için 'işlemler' denmiş; anlam ancak zorlanarak çıkarılıyor."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-23",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (22-42)",
+   "kok": "4483 sayılı Kanun hükümleri kapsamında Türkiye İnsan Hakları Eşitlik Kurulu üyeleri hakkında soruşturma izni vermeye yetkili makam aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Türkiye İnsan Hakları Eşitlik Kurumu Başkanı",
+    "B": "Cumhurbaşkanı veya Adalet Bakanı",
+    "C": "Cumhurbaşkanı veya İçişleri Bakanı",
+    "D": "Türkiye İnsan Hakları Eşitlik Kurulu genel kurulu",
+    "E": "Yargıtay Başkanı"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Hiçbir şık kanun metnini birebir vermiyor: 6701 md 10/13 belirli bir bakanlık adı saymaz, 'Cumhurbaşkanı veya görevlendireceği bakan' der. B şıkkı ancak Cumhurbaşkanlığı genelgesiyle kurulan Adalet Bakanlığı ilişkisi üzerinden doğrulanabiliyor; kanun metni esas alınırsa tam doğru şık yoktur.",
+    "Kanun metni belirli bir bakan adı vermez ('görevlendireceği bakan'); şıkların hiçbiri metnin birebir karşılığı değildir, B ancak yorumla doğrudur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "6701 md 10/13; 2018/1 sayılı Cumhurbaşkanlığı Genelgesi (TİHEK'in Adalet Bakanlığı ile ilişkilendirilmesi)",
+     "gerekce": "Kanun soruşturma iznini 'Cumhurbaşkanı veya görevlendireceği bakan'a bırakır; TİHEK Adalet Bakanlığı ile ilişkilendirildiği için şıklar içinde kanun metnine en yakın seçenek Cumhurbaşkanı veya Adalet Bakanıdır (izne karşı itirazları Danıştay karara bağlar).",
+     "uyari": "Hiçbir şık kanun metnini birebir vermiyor: 6701 md 10/13 belirli bir bakanlık adı saymaz, 'Cumhurbaşkanı veya görevlendireceği bakan' der. B şıkkı ancak Cumhurbaşkanlığı genelgesiyle kurulan Adalet Bakanlığı ilişkisi üzerinden doğrulanabiliyor; kanun metni esas alınırsa tam doğru şık yoktur."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "6701 md 10/13",
+     "gerekce": "Kanun 4483 kapsamında Başkan ve üyeler için soruşturmayı 'Cumhurbaşkanı veya görevlendireceği bakanın' iznine bağlar; TİHEK'in ilişkili olduğu bakanlık Adalet Bakanlığı olduğundan şıklar içinde yalnızca B bu ölçüye yaklaşır.",
+     "uyari": "Kanun metni belirli bir bakan adı vermez ('görevlendireceği bakan'); şıkların hiçbiri metnin birebir karşılığı değildir, B ancak yorumla doğrudur."
+    }
+   ],
+   "kitapNotu": "4483 sayılı kanun kapsamında üyeler veya başkan hakkında soruşturma verilmesi veya verilmemesi kararına karşı itiraz mercii Danıştay’dır.",
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-33",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (22-42)",
+   "kok": "Ayrımcılık yasağının ihlali hâlinde İnsan Hakları Eşitlik Kurulu tarafından uygulanacak yaptırım aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Adli para cezası",
+    "B": "İdari para cezası",
+    "C": "Disiplin para cezası",
+    "D": "Hapis cezası",
+    "E": "Hapis cezası"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "D ve E şıkları birebir aynı ('Hapis cezası'); beş yerine fiilen dört seçenek var.",
+    "D ve E şıkları birebir aynı ('Hapis cezası') — beş seçenek yerine fiilen dört seçenek var."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "6701 md 25/1",
+     "gerekce": "Ayrımcılık yasağının ihlalinde bin TL'den on beş bin TL'ye kadar idari para cezası uygulanır; Kurulun adli ceza verme yetkisi yoktur.",
+     "uyari": "D ve E şıkları birebir aynı ('Hapis cezası'); beş yerine fiilen dört seçenek var."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "6701 md 25/1",
+     "gerekce": "Ayrımcılık yasağının ihlalinde bin TL'den on beş bin TL'ye kadar idari para cezası uygulanır; Kurulun adli ceza verme yetkisi yoktur.",
+     "uyari": "D ve E şıkları birebir aynı ('Hapis cezası') — beş seçenek yerine fiilen dört seçenek var."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-38",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (22-42)",
+   "kok": "Aşağıdakilerden hangisi İl ve İlçe İnsan Hakları Kurullarının genel görevleri arasında yer almaz?",
+   "siklar": {
+    "A": "İllerde Bakanlık, Başkanlık, Valilik, İl Masası, İl Kurulu üyeleri ve İlçe Kurulları tarafından İl Kurulunun gündemine getirilen; ilçelerde de Bakanlık, Başkanlık, Valilik, İl Kurulu, Kaymakamlık, İlçe Masası ve İlçe Kurulu üyeleri tarafından İlçe Kurulu gündemine getirilen konuları değerlendirmek,",
+    "B": "İnsan hakları ihlal iddialarını incelemek ve araştırmak,",
+    "C": "İnsan haklarının korunması ve insan hak ve özgürlüklerinin kullanılmasının önündeki engeller ile hak ihlallerine yol açan sosyal, siyasi, hukuki ve idari sebepleri incelemek, araştırmak ve bunların çözümüne ilişkin valilik veya kaymakamlık makamına önerilerde bulunmak,",
+    "D": "Her türlü ayrımcılığın önlenmesi için gerekli çalışmaları yapmak,",
+    "E": "Millî eğitim müfredatında bulunan insan hakları ve ayrımcılık yasağıyla ilgili bölümlerin hazırlanmasına katkıda bulunmak."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Şık metinleri 2003 tarihli yönetmelikten aynen alınmış; içindeki 'Bakanlık' ve 'Başkanlık' (Başbakanlık İnsan Hakları Başkanlığı) tanımları Başbakanlık dönemine aittir ve 2018 sonrası teşkilat yapısında karşılığı kalmamıştır."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "İl ve İlçe İnsan Hakları Kurullarının Kuruluş, Görev ve Çalışma Esasları Hakkında Yönetmelik (RG 23/11/2003-25298) md 9 (a-f); karşılaştırma: 6701 md 9/1-c",
+     "gerekce": "A, B, C ve D şıkları yönetmeliğin md 9 genel görevler bentlerinin birebir metnidir; millî eğitim müfredatındaki insan hakları bölümlerinin hazırlanmasına katkı ise 6701 sayılı Kanun md 9/1-c ile TİHEK'e verilmiş bir görevdir.",
+     "uyari": "Şık metinleri 2003 tarihli yönetmelikten aynen alınmış; içindeki 'Bakanlık' ve 'Başkanlık' (Başbakanlık İnsan Hakları Başkanlığı) tanımları Başbakanlık dönemine aittir ve 2018 sonrası teşkilat yapısında karşılığı kalmamıştır."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "İl ve İlçe İnsan Hakları Kurulları Yönetmeliği md 9/a-f; krş. 6701 md 9/1-c",
+     "gerekce": "Millî eğitim müfredatındaki insan hakları ve ayrımcılık yasağı bölümlerinin hazırlanmasına katkı, yönetmelikteki genel görevler arasında değil TİHEK'in kanuni görevleri arasındadır; A-D bentleri md 9'un a, b, c ve d bentleridir.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b12-41",
+   "bolum": "Ulusal idari mekanizmalar — TİHEK (22-42)",
+   "kok": "İl ve İlçe İnsan Hakları Kurullarına yapılan başvuruların değerlendirilmesi ve sonuçlandırılması ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Başvuru hakkında karar verilmesine imkan vermeyen eksiklikler söz konusu ise, eksikliklerin tamamlanması için ara karar alınır.",
+    "B": "Bakanlık ve Başkanlık tarafından iletilen konular ilgili kurulda öncelikle görüşülerek sonuçlandırılır ve sonucundan Bakanlığa veya Başkanlığa bilgi verilir.",
+    "C": "Kurul kararları, ilgili kamu kurum ve kuruluşları tarafından geciktirilmeksizin öncelikle ele alınıp sonuçlandırılır.",
+    "D": "Kurulda alınan kararlar ve yapılan işlemler yazılı olarak başvuru sahibine en geç atmış gün içerisinde bildirilir ve gerekli hâllerde ara bilgi de verilir.",
+    "E": "Başvuru sahibine verilecek yanıtta, hakları konusunda kendisine başvurabileceği yasal yollar hakkında bilgi verilir."
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Doğru cevap şıkkında yazım hatası var: 'atmış' yerine 'altmış' olmalı. Ayrıca soru, b12-40 ile aynı hükmü (md 18/d bildirim süresi) sınayan mükerrer bir sorudur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "İl ve İlçe İnsan Hakları Kurullarının Kuruluş, Görev ve Çalışma Esasları Hakkında Yönetmelik (RG 23/11/2003-25298) md 18/d",
+     "gerekce": "Bildirim süresi otuz gündür; şıkta yazılı altmış günlük süre yanlıştır. Diğer şıklar md 18'in f, g, i ve h bentlerine uygundur.",
+     "uyari": "Doğru cevap şıkkında yazım hatası var: 'atmış' yerine 'altmış' olmalı. Ayrıca soru, b12-40 ile aynı hükmü (md 18/d bildirim süresi) sınayan mükerrer bir sorudur."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "İl ve İlçe İnsan Hakları Kurulları Yönetmeliği md 18/d",
+     "gerekce": "Bildirim süresi otuz gündür; şıktaki altmış ('atmış') günlük süre yanlıştır, diğer bentler yönetmelikle uyumludur.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6701-tihek.md"
+  },
+  {
+   "id": "b13-4",
+   "bolum": "Ulusal idari mekanizmalar — Kamu Denetçiliği Kurumu",
+   "kok": "I. Cumhurbaşkanının tek başına yaptığı işlemler II. Yasama yetkisinin kullanılmasına ilişkin işlemler III. Yargı yetkisinin kullanılmasına ilişkin kararlar IV. Türk Silahlı Kuvvetlerinin sırf askeri nitelikteki işlemler Yukarıdakilerden hangileri Kamu Denetçiliği Kurumu görev alanı dışında kalan işlemler arasında yer alır?",
+   "siklar": {
+    "A": "I II III IV",
+    "B": "I II III",
+    "C": "II III IV",
+    "D": "I III IV",
+    "E": "II IV"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "md 5/2-a 2/7/2018 tarihli KHK/703 ile mülga edildi; 2018 öncesi kaynaklara dayanan cevap anahtarları bu soruda hatalı biçimde A'yı (I-II-III-IV) gösterebilir.",
+    "Mevzuat değişikliği: soru 2018 öncesi metne göre kurgulanmış görünüyor; eski metinde I de kapsam dışıydı ve cevap A olurdu. Yürürlükteki metne göre doğru cevap C'dir — soru ya güncellenmeli ya da kaldırılmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "6328 md 5/2-b, c, ç (md 5/2-a mülga: 2/7/2018-KHK/703/110)",
+     "gerekce": "Yürürlükteki metinde görev alanı dışında kalanlar yasama işlemleri, yargı kararları ve TSK'nın sırf askerî faaliyetleridir; Cumhurbaşkanının tek başına yaptığı işlemleri dışlayan (a) bendi 2018'de mülga edilmiştir.",
+     "uyari": "md 5/2-a 2/7/2018 tarihli KHK/703 ile mülga edildi; 2018 öncesi kaynaklara dayanan cevap anahtarları bu soruda hatalı biçimde A'yı (I-II-III-IV) gösterebilir."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "6328 md 5/2 (a bendi mülga: 2/7/2018 - KHK/703/110)",
+     "gerekce": "Yürürlükteki metinde görev alanı dışında kalanlar yalnız yasama işlemleri, yargı kararları ve TSK'nın sırf askerî faaliyetleridir; Cumhurbaşkanının tek başına yaptığı işlemleri dışlayan (a) bendi 2018'de mülga edilmiştir.",
+     "uyari": "Mevzuat değişikliği: soru 2018 öncesi metne göre kurgulanmış görünüyor; eski metinde I de kapsam dışıydı ve cevap A olurdu. Yürürlükteki metne göre doğru cevap C'dir — soru ya güncellenmeli ya da kaldırılmalı."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6328-kdk.md + mevzuat/anayasa.md md 74"
+  },
+  {
+   "id": "b13-16",
+   "bolum": "Ulusal idari mekanizmalar — Kamu Denetçiliği Kurumu",
+   "kok": "Kamu Başdenetçisi seçimi ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "TBMM Başkanlığı tarafından seçim yapılır.",
+    "B": "İlk oylamada üye tam sayısının 3/2 si aranır.",
+    "C": "İkinci oylamada üye tam sayısının 3/2 si aranır.",
+    "D": "Üçüncü oylamada üye tam sayısının salt çoğunluğu aranır.",
+    "E": "Dördüncü oylamada toplantıya katılanların salt çoğunluğunun oyu aranır."
+   },
+   "kitapCevabi": "A",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "B ve C şıklarında çoğunluk \"3/2\" yazılmış; doğru gösterim üçte iki, yani 2/3'tür.",
+    "B ve C şıklarında üçte iki çoğunluk \"3/2\" biçiminde yazılmış (üye tamsayısının 1,5 katı anlamına gelir); \"2/3\" ya da \"üçte iki\" olmalı. Ayrıca E, dördüncü turu \"karar yeter sayısı şartıyla en fazla oy alan seçilir\" yerine gevşek biçimde ifade ediyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "dayanak": "6328 md 11/4-5; Anayasa md 74/6",
+     "gerekce": "Seçimi TBMM Başkanlığı değil Genel Kurul yapar; ilk iki oylamada üye tamsayısının üçte ikisi, üçüncüde salt çoğunluk, dördüncüde karar yeter sayısı (toplantıya katılanların salt çoğunluğu) şartıyla en fazla oyu alan aday seçilir.",
+     "uyari": "B ve C şıklarında çoğunluk \"3/2\" yazılmış; doğru gösterim üçte iki, yani 2/3'tür."
+    },
+    {
+     "cevap": "A",
+     "dayanak": "6328 md 11/4-5; Anayasa md 74/6, md 96",
+     "gerekce": "Seçimi TBMM Başkanlığı değil Genel Kurul yapar; oylama çoğunluklarına ilişkin B, C, D ve E şıkları madde metniyle örtüşür.",
+     "uyari": "B ve C şıklarında üçte iki çoğunluk \"3/2\" biçiminde yazılmış (üye tamsayısının 1,5 katı anlamına gelir); \"2/3\" ya da \"üçte iki\" olmalı. Ayrıca E, dördüncü turu \"karar yeter sayısı şartıyla en fazla oy alan seçilir\" yerine gevşek biçimde ifade ediyor."
+    }
+   ],
+   "kitapNotu": "Kamu Başdenetçisi seçimi ile denetçilerin seçiminde aranan çoğunluk sayıları aynıdır aradaki tek fark Başdenetçi TBMM Genel Kurulu tarafından Denetçi ise TBMM Karma Komisyon (Dilekçe Komisyonu ve İnsan Hakları İnceleme Komisyonu)seçimler 90 gün içinde tamamlanır.",
+   "dayanakKaynagi": "mevzuat/6328-kdk.md + mevzuat/anayasa.md md 74"
+  },
+  {
+   "id": "b13-18",
+   "bolum": "Ulusal idari mekanizmalar — Kamu Denetçiliği Kurumu",
+   "kok": "Aşağıdakilerden hangisi Kamu Başdenetçiliği Kurumu tarafından incelenmeyecek başvurular arasında yer almaz?",
+   "siklar": {
+    "A": "Belli bir konuyu içermeyen başvurular",
+    "B": "Yargı organlarında görülmekte olan uyuşmazlıklarla alakalı olan başvurular",
+    "C": "Yargı organlarınca karara bağlanmış uyuşmazlıklarla alakalı olan başvurular",
+    "D": "Başvuru belgesinde bulunması gereken şartları eksik olan başvurular",
+    "E": "İdari yargı yolu tüketilmeden önce yapılan başvurular"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökündeki \"Kamu Başdenetçiliği Kurumu\" adı yanlış; kurumun adı Kamu Denetçiliği Kurumudur (aynı adlandırma hatası b13-19, b13-21, b13-22 ve b13-23 köklerinde de var)."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "6328 md 17/3 (a-ç) ve md 17/4",
+     "gerekce": "İdari başvuru yolları tüketilmeden yapılan başvurular \"incelenmeyecek başvurular\" arasında sayılmamış, ilgili kuruma gönderilecek başvurular olarak düzenlenmiştir (telafisi güç zarar hâlinde Kurum bunları kabul de edebilir); diğer dört şık md 17/3'te sayılıdır.",
+     "uyari": "Soru kökündeki \"Kamu Başdenetçiliği Kurumu\" adı yanlış; kurumun adı Kamu Denetçiliği Kurumudur (aynı adlandırma hatası b13-19, b13-21, b13-22 ve b13-23 köklerinde de var)."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "6328 md 17/3 ve 17/4",
+     "gerekce": "17/3'teki incelenmeyecek başvurular listesinde bu hâl yoktur; idari başvuru yolları tüketilmeden yapılan başvurular ilgili kuruma gönderilir, telafisi güç zarar ihtimalinde ise Kurum bunları kabul edebilir.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "mevzuat/6328-kdk.md + mevzuat/anayasa.md md 74"
+  },
+  {
+   "id": "b13-19",
+   "bolum": "Ulusal idari mekanizmalar — Kamu Denetçiliği Kurumu",
+   "kok": "Kamu Başdenetçiliği Kurumuna yapılacak başvurularla alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Kuruma illerde valilik ilçelerde kaymakamlık vasıtasıyla başvuru yapılabilir.",
+    "B": "Başvurular ücretsizdir.",
+    "C": "Kuruma İdari Başvuru yolları tüketilmeden başvuru yapılamaz.",
+    "D": "İdari başvuru hâlinde idare tarafından 60 gün içinde cevap verilmezse başvuru süresi bu sürenin bitiminden itibaren başlar.",
+    "E": "Kuruma başvuru idari başvuru yolları tüketildikten sonra 4 ay içinde yapılmalı."
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "C şıkkı da tam doğru değil: md 17/4'ün son cümlesi, telafisi güç veya imkânsız zarar ihtimalinde idari başvuru yolları tüketilmeden de başvuru kabulüne izin veriyor. E sayısal olarak açıkça yanlış olduğu için tek cevap kabul edildi; yine de iki şık kusurlu."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "6328 md 17/4-7",
+     "gerekce": "Kuruma başvuru süresi idarenin cevabının tebliğinden, cevap verilmemişse altmış günlük sürenin bitiminden itibaren dört ay değil altı aydır; diğer şıklar md 17/5, 17/6, 17/4 ve 17/7 ile uyumludur.",
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "dayanak": "6328 md 17/4-7",
+     "gerekce": "Başvuru süresi dört ay değil altı aydır (idarenin cevabının tebliğinden ya da altmış günlük cevap süresinin bitiminden itibaren).",
+     "uyari": "C şıkkı da tam doğru değil: md 17/4'ün son cümlesi, telafisi güç veya imkânsız zarar ihtimalinde idari başvuru yolları tüketilmeden de başvuru kabulüne izin veriyor. E sayısal olarak açıkça yanlış olduğu için tek cevap kabul edildi; yine de iki şık kusurlu."
+    }
+   ],
+   "kitapNotu": "Kamu Başdenetçiliği Kurumuna yapılan başvuru İdari yargıya başvuru için başlamış olan süreyi durdurur..",
+   "dayanakKaynagi": "mevzuat/6328-kdk.md + mevzuat/anayasa.md md 74"
+  },
+  {
+   "id": "b14-2",
+   "bolum": "Uluslararası sözleşme ve belgeler — Birleşmiş Milletler",
+   "kok": "Birleş Milletler Antlaşması nerede imzalanmıştır?",
+   "siklar": {
+    "A": "Cenevre",
+    "B": "San Francisco",
+    "C": "Roma",
+    "D": "Strazburg",
+    "E": "New York"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökünde yazım hatası: \"Birleş Milletler\" — doğrusu \"Birleşmiş Milletler\".",
+    "Soru kökünde yazım hatası: 'Birleş Milletler' → 'Birleşmiş Milletler'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı, imza künyesi — Uluslararası Örgütlenme Konferansı, San Francisco (26.6.1945)",
+     "gerekce": "Antlaşma San Francisco'daki Birleşmiş Milletler Uluslararası Örgütlenme Konferansı'nda imzalanmıştır; Cenevre Milletler Cemiyeti'nin, Strazburg Avrupa Konseyi'nin merkezidir.",
+     "uyari": "Soru kökünde yazım hatası: \"Birleş Milletler\" — doğrusu \"Birleşmiş Milletler\"."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı — San Francisco Konferansı (25 Nisan – 26 Haziran 1945)",
+     "gerekce": "Şart San Francisco'da imzalanmıştır; Cenevre Milletler Cemiyeti, Strazburg ise Avrupa Konseyi merkezidir.",
+     "uyari": "Soru kökünde yazım hatası: 'Birleş Milletler' → 'Birleşmiş Milletler'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b14-8",
+   "bolum": "Uluslararası sözleşme ve belgeler — Birleşmiş Milletler",
+   "kok": "Birleşmiş Milletler Antlaşması özellikleri ile alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "1945 yılında imzalanmış ve 1945 yılında yürülüğe girmiştir.",
+    "B": "Antlaşma Cenevrede imzalanmıştır.",
+    "C": "Türkiye Adalet Divanı statüsüyle birlikte imzalamış ve onaylamıştır.(1945)",
+    "D": "Antlaşma kavram olarak insan haklarını anmakla birlikte bunları sayıp açıklamamıştır.",
+    "E": "Birleşmiş Milletlere üyelik Güvenlik Konseyinin tavsiyesi üzerine BM Genel Kurulunun kararıyla gerçekleşmektedir."
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "A şıkkında yazım hatası: 'yürülüğe' → 'yürürlüğe'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı imza künyesi (San Francisco, 26.6.1945); ayrıca md 1/3, md 4/2, md 92",
+     "gerekce": "Antlaşma Cenevre'de değil San Francisco'da imzalandığı için B yanlıştır; A (1945 imza-1945 yürürlük), C (UAD Statüsü md 92 gereği Şart'ın ayrılmaz parçasıdır ve Türkiye ikisini birlikte imzalayıp onaylamıştır), D (Şart insan haklarını md 1/3 ve md 55'te anar ama katalog vermez) ve E (md 4/2) doğrudur.",
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "dayanak": "BM Şartı — imza 26 Haziran 1945 San Francisco, yürürlük 24 Ekim 1945; md 4/2; md 92",
+     "gerekce": "Şart Cenevre'de değil San Francisco'da imzalandığı için B yanlıştır; A, C, D ve E doğrudur.",
+     "uyari": "A şıkkında yazım hatası: 'yürülüğe' → 'yürürlüğe'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b14-24",
+   "bolum": "Uluslararası sözleşme ve belgeler — Birleşmiş Milletler",
+   "kok": "İnsan Hakleri Evrensel Beyannamesi kaç yılında kabul edildi?",
+   "siklar": {
+    "A": "1945",
+    "B": "1948",
+    "C": "1952",
+    "D": "1953",
+    "E": "1954"
+   },
+   "kitapCevabi": "B",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Soru kökünde yazım hatası: \"İnsan Hakleri\" — doğrusu \"İnsan Hakları\".",
+    "Soru kökünde yazım hatası: 'İnsan Hakleri' → 'İnsan Hakları'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "dayanak": "BM Genel Kurulu kararı 217 A (III), 10 Aralık 1948",
+     "gerekce": "Beyanname 1948'de kabul edilmiştir; 1945 Şart'ın, 1950/1953 AİHS'in tarihleridir.",
+     "uyari": "Soru kökünde yazım hatası: \"İnsan Hakleri\" — doğrusu \"İnsan Hakları\"."
+    },
+    {
+     "cevap": "B",
+     "dayanak": "BM Genel Kurulu 217 A (III) sayılı karar, 10 Aralık 1948",
+     "gerekce": "Beyanname 1948'de kabul edilmiştir.",
+     "uyari": "Soru kökünde yazım hatası: 'İnsan Hakleri' → 'İnsan Hakları'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b14-31",
+   "bolum": "Uluslararası sözleşme ve belgeler — Birleşmiş Milletler",
+   "kok": "Aşağıdakilerden hangisi İnsan Hakları Evrensen Beyannamesinde yer alan haklar arasında yer almaz?",
+   "siklar": {
+    "A": "Yaşama hakkı",
+    "B": "Kölelikten hürriyet hakkı",
+    "C": "İşkence yasağı",
+    "D": "Eğitim öğretim hakkı",
+    "E": "Siyasi faaliyette bulunma hakkı"
+   },
+   "kitapCevabi": "E",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Şık E tartışmalı: İHEB md 21 ülke yönetimine katılma, md 20 toplanma ve dernek kurma, md 19 ifade özgürlüğü tanıdığından siyasi faaliyet özde Beyannamede karşılanmıştır; soru ancak madde başlıklarının birebir lafzına bakılırsa tek doğru cevap verir. Ayrıca kökte yazım hatası var: \"Evrensen\" — doğrusu \"Evrensel\".",
+    "İHEB md 21 herkese ülkesinin yönetimine doğrudan ya da seçilmiş temsilcileri aracılığıyla katılma hakkını, md 20 ise toplanma ve örgütlenme özgürlüğünü tanır; 'siyasi faaliyette bulunma hakkı' bunların kapsamında sayılabileceği için şık tartışmalı. Ayrıca kökte yazım hatası: 'Evrensen' → 'Evrensel'."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "dayanak": "İHEB md 3 (yaşam), md 4 (kölelik yasağı), md 5 (işkence yasağı), md 26 (eğitim); karşılaştır md 19-21",
+     "gerekce": "A-D şıkları Beyannamede lafzen sayılan haklardır; \"siyasi faaliyette bulunma hakkı\" ise bu adla bir madde başlığı olarak geçmez, dolayısıyla lafzî okumada dışarıda kalan tek şık E'dir.",
+     "uyari": "Şık E tartışmalı: İHEB md 21 ülke yönetimine katılma, md 20 toplanma ve dernek kurma, md 19 ifade özgürlüğü tanıdığından siyasi faaliyet özde Beyannamede karşılanmıştır; soru ancak madde başlıklarının birebir lafzına bakılırsa tek doğru cevap verir. Ayrıca kökte yazım hatası var: \"Evrensen\" — doğrusu \"Evrensel\"."
+    },
+    {
+     "cevap": "E",
+     "dayanak": "İHEB md 3 (yaşama), md 4 (kölelik yasağı), md 5 (işkence yasağı), md 26 (eğitim); md 20-21",
+     "gerekce": "A-D şıkları Beyanname'de açık hükümlerle yer aldığından geriye E kalmaktadır.",
+     "uyari": "İHEB md 21 herkese ülkesinin yönetimine doğrudan ya da seçilmiş temsilcileri aracılığıyla katılma hakkını, md 20 ise toplanma ve örgütlenme özgürlüğünü tanır; 'siyasi faaliyette bulunma hakkı' bunların kapsamında sayılabileceği için şık tartışmalı. Ayrıca kökte yazım hatası: 'Evrensen' → 'Evrensel'."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b14-32",
+   "bolum": "Uluslararası sözleşme ve belgeler — Birleşmiş Milletler",
+   "kok": "Türkiye İnsan Hakları Evrensel Beyannamesini ne zaman onaylamıştır?",
+   "siklar": {
+    "A": "1945",
+    "B": "1948",
+    "C": "1949",
+    "D": "1954",
+    "E": "1952"
+   },
+   "kitapCevabi": "C",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "Kökteki \"onaylamıştır\" ifadesi teknik olarak hatalı: İHEB bir andlaşma değil Genel Kurul bildirisi olduğundan usulüne göre onaya (Anayasa md 90) tabi değildir; Türkiye'nin işlemi kabul ve yayımdır."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "dayanak": "Türkiye'nin İHEB'i kabulüne dair 6 Nisan 1949 tarihli Bakanlar Kurulu kararı (RG 27.5.1949)",
+     "gerekce": "Türkiye Beyannameyi 10 Aralık 1948'de Genel Kurul'da olumlu oy vererek desteklemiş, ulusal düzeyde 1949'da Bakanlar Kurulu kararıyla kabul edip yayımlamıştır; şıklar 1948 ile 1949'u ayırdığından beklenen cevap 1949'dur.",
+     "uyari": "Kökteki \"onaylamıştır\" ifadesi teknik olarak hatalı: İHEB bir andlaşma değil Genel Kurul bildirisi olduğundan usulüne göre onaya (Anayasa md 90) tabi değildir; Türkiye'nin işlemi kabul ve yayımdır."
+    },
+    {
+     "cevap": "C",
+     "dayanak": "6 Nisan 1949 tarihli Bakanlar Kurulu kararı; Resmî Gazete 27 Mayıs 1949",
+     "gerekce": "Türkiye 1948'de lehte oy vermiş, Beyanname'yi 1949'da Bakanlar Kurulu kararıyla kabul edip Resmî Gazete'de yayımlamıştır.",
+     "uyari": null
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  },
+  {
+   "id": "b15-3",
+   "bolum": "BM Teşkilatında insan haklarının korunması",
+   "kok": "Aşağıdakilerden hangisi Birleşmiş Milletler bünyesinde oluşturulan komiteler arasında yer almaz?",
+   "siklar": {
+    "A": "İşkenceye Karşı Komite",
+    "B": "İnsan Hakları Komitesi",
+    "C": "Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi",
+    "D": "1235 Sözleşme Dışı Koruma Komitesi",
+    "E": "Irk Ayrımcılığının Kaldırılması Komitesi"
+   },
+   "kitapCevabi": "D",
+   "karar": "UYARI",
+   "hakemCevabi": null,
+   "hakemAlintisi": null,
+   "uyarilar": [
+    "C şıkkındaki 'Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi' de mevcut değildir (CEDAW ile CERD adlarının karışımı); soruda birden fazla şık doğru cevaba uymaktadır.",
+    "İki şık birden doğru: C'deki \"Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi\" de var olmayan bir organdır (CEDAW Komitesi'nin adı \"Kadınlara Karşı Her Türlü Ayrımcılığın Önlenmesi Komitesi\"). C ya düzeltilmeli ya da soru tek doğru cevaplı hale getirilmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "dayanak": "BM sözleşme organları listesi (CAT, CCPR, CERD); ECOSOC Kararı 1235 (XLII) bir usuldür, komite değildir",
+     "gerekce": "1235 bir Şart temelli inceleme usulünün adıdır; bu adı taşıyan bir BM komitesi hiç kurulmamıştır.",
+     "uyari": "C şıkkındaki 'Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi' de mevcut değildir (CEDAW ile CERD adlarının karışımı); soruda birden fazla şık doğru cevaba uymaktadır."
+    },
+    {
+     "cevap": "D",
+     "dayanak": "KSHS md 28; ICERD md 8; İşkenceye Karşı Sözleşme md 17; CEDAW md 17",
+     "gerekce": "1235 bir usulün adıdır, bu adla kurulmuş bir komite yoktur; İşkenceye Karşı Komite, İnsan Hakları Komitesi ve Irk Ayrımcılığının Kaldırılması Komitesi ise sözleşmelerle kurulmuş gerçek komitelerdir.",
+     "uyari": "İki şık birden doğru: C'deki \"Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi\" de var olmayan bir organdır (CEDAW Komitesi'nin adı \"Kadınlara Karşı Her Türlü Ayrımcılığın Önlenmesi Komitesi\"). C ya düzeltilmeli ya da soru tek doğru cevaplı hale getirilmeli."
+    }
+   ],
+   "kitapNotu": null,
+   "dayanakKaynagi": "Elde metin YOK — BM Şartı, UAD Statüsü, BM sözleşmeleri (künye ile)"
+  }
+ ]
+}

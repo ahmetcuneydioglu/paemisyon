@@ -1,0 +1,578 @@
+[
+ {
+  "id": "b3-1",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Habeas Corpus Act (1679)",
+  "gerekce": "Habeas Corpus Act, keyfî tutuklamaya karşı tutuklunun derhâl yargıç önüne çıkarılmasını zorunlu kılarak kişi güvenliğini/kişi özgürlüğünü doğrudan güvenceye bağlayan İngiliz belgesidir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-2",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan ve Yurttaş Hakları Bildirisi (Fransa, 1789); Magna Charta Libertatum (1215), Petition of Right (1628), Grand Remonstrance (1641), Habeas Corpus Act (1679)",
+  "gerekce": "1789 Bildirisi Fransız Devrimi'nin ürünüdür; diğer dört belge İngiliz anayasal geleneğine aittir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-3",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Petition of Right (1628)",
+  "gerekce": "Petition of Right, Parlamentonun I. Charles'a sunduğu 'haklar dilekçesi'dir; adı da bu anlama gelir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-4",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Grand Remonstrance / Great Remonstrance (1641)",
+  "gerekce": "1641 tarihli Büyük Uyarı (Remonstrance), Uzun Parlamento'nun I. Charles'a yönelttiği şikâyet ve uyarı listesidir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-5",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "Magna Charta Libertatum (1215)",
+  "gerekce": "Kral ile baronlar arasındaki 1215 tarihli Magna Carta, iktidarı yazılı bir metinle sınırlayan ilk anayasal belge sayılır; soru 'anayasa' değil 'anayasal belge' dediğinden ABD (1787) ve Virginia (1776) anayasaları elenir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-6",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Sened-i İttifak (1808)",
+  "gerekce": "1808 Sened-i İttifak, padişahın yetkisini âyanlarla yaptığı yazılı bir belgeyle sınırlayan ilk Osmanlı anayasal belgesidir; ilk anayasa ise 1876 Kanun-i Esasi'dir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-7",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Bill of Rights (1689)",
+  "gerekce": "1689 Bill of Rights aşırı kefalet ve 'zalimane ve olağan dışı ceza' yasağı ile jüri/adil yargılama güvencelerini İngilizlerin kadim ve doğal hakları olarak ilan eder.",
+  "uyarilar": [
+   "Doğru şık 'Bil Off Rights' biçiminde yanlış yazılmış; belgenin adı '1689 Bill of Rights'tır. Aynı yazım hatası b3-1/E ve b3-3/E şıklarında da tekrarlanıyor.",
+   "Doğru cevap şıkkının adı yanlış yazılmış: 'Bil Off Rights' → 'Bill of Rights' (1689). Aynı yazım hatası b3-1, b3-3 ve b3-4'te çeldirici olarak da tekrarlanıyor; doğru cevabı taşıdığı için burada düzeltilmesi şart."
+  ]
+ },
+ {
+  "id": "b3-8",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "ABD Anayasası (1787; Haklar Bildirgesi ilk 10 değişiklik, 1791); Virginia Haklar Bildirgesi (1776)",
+  "gerekce": "Doğal/doğuştan hakları pozitif anayasa kuralı hâline getiren ilk yazılı anayasa 1787 ABD Anayasası'dır (1791 Haklar Bildirgesi'yle tamamlanır); İngiltere'nin yazılı anayasası yok, Fransız (1791), Meksika (1917) ve Kanun-i Esasi (1876) daha sonradır.",
+  "uyarilar": [
+   "D şıkkının adı hatalı: ülkenin resmî adı 'Meksika Birleşik Devletleri'dir, 'Meksika Birleşik Krallık' diye bir devlet yoktur (aynı şık b3-5'te doğru yazılmış)."
+  ]
+ },
+ {
+  "id": "b3-9",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Virginia Haklar Bildirgesi ve Virginia Anayasası (1776)",
+  "gerekce": "Virginia, ABD'nin kurucu on üç kolonisinden biridir; 1776 metni Amerikan bağımsızlık sürecinin ürünüdür.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-10",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Meksika Birleşik Devletleri Anayasası (Querétaro, 1917), md 27 ve md 123",
+  "gerekce": "1917 Meksika Anayasası toprak reformu, çalışma ve sosyal güvenlik hükümleriyle sosyal haklara geniş yer veren ilk anayasadır; 1919 Weimar Anayasası onu izler.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-11",
+  "karar": "ANAHTAR-HATALI",
+  "kitapCevabi": "E",
+  "hakemCevabi": "B",
+  "hakemAlintisi": "Meksika Birleşik Devletleri Siyasi Anayasası (Querétaro, 5 Şubat 1917), md. 123 (çalışma ve sosyal güvenlik hakları) ve md. 27 (toprak reformu / mülkiyetin sosyal işlevi).",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "Meksika Birleşik Devletleri Anayasası (1917), md 123",
+  "gerekce": "Devlete ekonomik ve sosyal edim yükleyen, yani sosyal devlet fonksiyonunu anayasa düzeyine taşıyan ilk metin 1917 Meksika Anayasası'dır.",
+  "uyarilar": [
+   "Şık dizisi ve cevabı b3-10 ile aynı; iki soru pratikte aynı bilgiyi ölçüyor. Ayrıca 'devletin sosyal fonksiyonu' ifadesi literatürde sık sık 1919 Weimar Anayasası ile de anıldığından E şıkkı savunulabilir hâle geliyor.",
+   "Soru b3-10 ile aynı şıklara sahip ve aynı cevaba çıkıyor (yinelenen soru); ayrıca 'devletin sosyal fonksiyonu' ölçütü doktrinde 1919 Weimar Anayasası için de kullanıldığından E şıkkı (Alman Anayasası) savunulabilir hale geliyor.",
+   "HAKEM: Sosyal ve ekonomik hakları anayasa düzeyinde ilk kez düzenleyerek devlete edim yükümlülüğü getiren metin 1917 Meksika Anayasası'dır; bu, karşılaştırmalı anayasa hukukunda tartışmasız kabul edilen bir önceliktir. Kitabın işaret ettiği Alman (Weimar) Anayasası 1919 tarihlidir, yani Meksika'dan sonradır ve 'ilk' olamaz. ABD Anayasası, 1789 Fransız Bildirisi ve Magna Carta klasik/negatif haklar metinleridir. // Kitabın E (Alman/Weimar Anayasası) cevabı tarih karşısında çürüyor: sosyal ve ekonomik hakları anayasa düzeyine taşıyan Meksika Anayasası 1917'de, Weimar'dan iki yıl önce yürürlüğe girmiştir; 'ilk' nitelemesi Weimar'a verilemez. Denetçinin B cevabını çürütecek bir veri yok — diğer şıklar (ABD 1787, Fransız Bildirisi 1789, Magna Carta 1215) tümüyle birinci kuşak/klasik haklar metinleridir ve sosyal edim yükümlülüğü içermez."
+  ]
+ },
+ {
+  "id": "b3-12",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "F. D. Roosevelt, Dört Özgürlük konuşması (Kongre'ye Yıllık Mesaj, 6 Ocak 1941)",
+  "gerekce": "Dört özgürlük söz/ifade, ibadet-vicdan, yoksulluktan kurtulma ve korkudan kurtulma özgürlükleridir; 'yaşam özgürlüğü' bunlar arasında sayılmaz.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-13",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM Şartı (San Francisco Konferansı, 26 Haziran 1945)",
+  "gerekce": "Birleşmiş Milletler Antlaşması, San Francisco'da toplanan Uluslararası Örgütlenme Konferansı'nda imzalanmıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-14",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM Şartı (imza 26 Haziran 1945; yürürlük 24 Ekim 1945)",
+  "gerekce": "Antlaşma 1945'te imzalanmış ve aynı yıl yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-15",
+  "karar": "UYARI",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "BM Şartı (1945), Başlangıç ile md 1/3, 55 ve 56",
+  "gerekce": "İnsan haklarına saygıyı devletlerin uluslararası yükümlülüğü hâline getiren ilk bağlayıcı uluslararası hukuk belgesi BM Şartı'dır; 1948 Evrensel Bildiri antlaşma değil Genel Kurul kararıdır ve Şart'tan sonradır.",
+  "uyarilar": [
+   "Kök belirsiz: 'ilk uluslararası insan hakları belgesi' okumasıyla B (İHEB) de savunulabiliyor; ayrımı 'hukuk belgesi = bağlayıcı antlaşma' vurgusu taşıyor ve bu vurgu köke açıkça yansıtılmamış."
+  ]
+ },
+ {
+  "id": "b3-16",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM Şartı (Türkiye'nin imzası 26 Haziran 1945; onay 15 Ağustos 1945, 4801 sayılı Kanun)",
+  "gerekce": "Türkiye kurucu üye olarak Antlaşmayı San Francisco'da 1945'te imzalamıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-17",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM İnsan Hakları Komisyonu (ECOSOC bünyesinde, 1946); İnsan Hakları Evrensel Bildirisi (1948)",
+  "gerekce": "Bildiri metnini, ECOSOC'a bağlı İnsan Hakları Komisyonu (Eleanor Roosevelt başkanlığında) hazırlamıştır; İnsan Hakları Konseyi ise 2006'da kurulmuştur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-18",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan Hakları Evrensel Bildirisi, BM Genel Kurulu kararı 217 A (III), 10 Aralık 1948",
+  "gerekce": "Bildiri, Komisyonun hazırladığı metnin BM Genel Kurulu tarafından kabul edilmesiyle yürürlük kazanmıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-19",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan Hakları Evrensel Bildirisi (10 Aralık 1948)",
+  "gerekce": "Bildiri 10 Aralık 1948'de kabul edilmiştir; bu tarih İnsan Hakları Günü olarak anılır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-20",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan Hakları Evrensel Bildirisi (BM Genel Kurulu, 10 Aralık 1948)",
+  "gerekce": "Bildiriyi kabul eden organ BM Genel Kurulu'dur; Avrupa Konseyi Parlamenter Meclisi ile ilgisi yoktur, diğer dört ifade doğrudur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-21",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan Hakları Evrensel Bildirisi (1948) — BM Genel Kurulu tavsiye kararı niteliği",
+  "gerekce": "Bildiri bir andlaşma değil, Genel Kurul kararı (deklarasyon) olduğu için devletler bakımından hukuken bağlayıcı yükümlülük doğurmaz; denetim mekanizması eksikliği bu niteliğin sonucudur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-22",
+  "karar": "UYARI",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": "Medeni ve Siyasi Haklar Uluslararası Sözleşmesi md. 49 ve Ekonomik, Sosyal ve Kültürel Haklar Uluslararası Sözleşmesi md. 27: sözleşmeler 35. onay belgesinin tevdiinden sonra yürürlüğe girer — ESKHS 3 Ocak 1976, MSHS 23 Mart 1976 (kabul: BM Genel Kurulu, 16 Aralık 1966, karar 2200A (XXI)).",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "BM İkiz Sözleşmeleri: Medeni ve Siyasi Haklar Sözleşmesi ile Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi (kabul 16 Aralık 1966; yürürlük 1976)",
+  "gerekce": "Bildiri'deki haklar, 1966'da kabul edilen İkiz Sözleşmelerle andlaşma hâline getirilerek bağlayıcılık kazanmıştır; b3-23'ün 'kabul edilmesi' ifadesi de kabul tarihini işaret eder.",
+  "uyarilar": [
+   "1966 (kabul) ve 1976 (yürürlüğe giriş) şıkların ikisinde birden yer alıyor; kök 'ne zaman kazandırılmıştır' derken kabul mü yürürlük mü aradığını söylemediğinden D de savunulabilir. Kökte 'kabul edildiği yıl' denmesi kusuru giderir.",
+   "Kök belirsiz: İkiz Sözleşmeler 1966'da kabul edilmiş, 1976'da yürürlüğe girmiştir ve her iki yıl da şıklarda yer alıyor; 'bağlayıcılık kazandırılması' ifadesi netleştirilmezse iki şık yarışır."
+  ]
+ },
+ {
+  "id": "b3-23",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM İkiz Sözleşmeleri (1966)",
+  "gerekce": "Bağlayıcılık, Bildiri'deki hakları andlaşma metnine dönüştüren İkiz Sözleşmelerin kabulüyle sağlanmıştır; diğer şıklardaki yargı organları Bildiri'ye bağlayıcılık kazandırmaz.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-24",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM İkiz Sözleşmeleri — Türkiye'nin imzası 15 Ağustos 2000",
+  "gerekce": "Türkiye her iki sözleşmeyi de 2000 yılında imzalamıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-25",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "BM İkiz Sözleşmeleri — Türkiye'nin onayı 2003 (4867 ve 4868 sayılı Kanunlar)",
+  "gerekce": "Türkiye bakımından sözleşmeler 2003'te onaylanarak yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-26",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Avrupa İnsan Hakları Sözleşmesi (Roma, 4 Kasım 1950)",
+  "gerekce": "Sözleşme Roma'da imzalanmıştır; Strazburg, Avrupa Konseyi ve AİHM'in merkezidir, imza yeri değildir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-27",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "AİHS (imza 4 Kasım 1950)",
+  "gerekce": "Sözleşme 1950'de imzaya açılmış ve imzalanmıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-28",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "AİHS (yürürlük 3 Eylül 1953)",
+  "gerekce": "Gerekli onayların tamamlanmasıyla Sözleşme 1953'te yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-29",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "AİHS — Türkiye'nin onayı: 6366 sayılı Kanun (10 Mart 1954), Türkiye bakımından yürürlük 18 Mayıs 1954",
+  "gerekce": "Türkiye Sözleşmeyi 1950'de imzalamış, 1954'te onaylamış ve Sözleşme Türkiye bakımından aynı yıl yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-30",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "AİHS (mülga) md 25 uyarınca Türkiye'nin bireysel başvuru bildirimi, 28 Ocak 1987",
+  "gerekce": "Türkiye bireysel başvuru hakkını 1987'de tanımıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-31",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "AİHS (mülga) md 46 uyarınca Türkiye'nin zorunlu yargı yetkisi bildirimi, 22 Ocak 1990",
+  "gerekce": "Türkiye AİHM'in zorunlu yargı yetkisini 1990'da kabul etmiştir; bireysel başvuru (1987) ile arasında üç yıl vardır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-32",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Avrupa Sosyal Şartı (ETS No. 35, Torino, 18 Ekim 1961)",
+  "gerekce": "Şart 1961'de Torino'da imzaya açılmış ve imzalanmıştır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-33",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Avrupa Sosyal Şartı (yürürlük 26 Şubat 1965)",
+  "gerekce": "Şart gerekli onaylardan sonra 1965'te yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-34",
+  "karar": "ONAY",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Avrupa Sosyal Şartı — Türkiye'nin onayı 24 Kasım 1989, Türkiye bakımından yürürlük 24 Aralık 1989",
+  "gerekce": "Türkiye Şart'ı 1989'da onaylamış ve Şart Türkiye bakımından aynı yıl yürürlüğe girmiştir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b3-35",
+  "karar": "UYARI",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "Avrupa Sosyal Şartı (ETS No. 35) — Türkiye'nin imzası 18 Ekim 1961",
+  "gerekce": "Türkiye Şart'ı imzaya açıldığı gün, 18 Ekim 1961'de imzalamıştır; onay ise 1989'da gelmiştir.",
+  "uyarilar": [
+   "Kök bozuk kurulmuş ('Avrupa Sosyal Şartı Türkiye hangi yıl imzalanmıştır') ve 'Türkiye tarafından' mı 'Türkiye açısından' mı sorulduğu belirsiz. Türkiye Şart'ı imzaya açıldığı gün imzaladığı için cevap b3-32 ile aynı (1961) çıkıyor; soru b3-32'nin tekrarı hâline geliyor, 1989'u bekleyen aday yanılır."
+  ]
+ }
+]

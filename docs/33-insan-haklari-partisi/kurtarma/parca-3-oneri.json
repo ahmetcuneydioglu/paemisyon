@@ -1,0 +1,289 @@
+[
+ {
+  "id": "b12-9",
+  "grup": "C",
+  "gerekce": "Tek kusur, E şıkkının sonuna kaynaktan sızmış '!' işareti; temizlenince soru sağlam.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Ayrımcılık talimatı",
+    "B": "Ayrı tutma",
+    "C": "Çoklu ayrımcılık",
+    "D": "Doğrudan ayrımcılık",
+    "E": "Varsayılan temele dayalı ayrımcılık"
+   },
+   "dogru": "E",
+   "aciklama": "6701 sayılı Kanunun 2 nci maddesinin birinci fıkrasının (m) bendi, kişinin ayrımcılık temellerinden biriyle gerçekte ilgisi olmamasına rağmen o temeli taşıdığı sanılarak ayrımcı muameleye maruz kalmasını varsayılan temele dayalı ayrımcılık olarak tanımlar. Tuzak, tanımdaki 'sanılarak' ifadesinin atlanıp doğrudan ayrımcılıkla karıştırılmasıdır; doğrudan ayrımcılıkta temel gerçekten mevcuttur. Bu tür, Kanunun 4 üncü maddesinde ayrımcılık türleri arasında ayrıca sayılmıştır.",
+   "dayanak": "6701 sayılı Kanun md 2/1-m; md 4/1-ğ"
+  },
+  "degisenler": ["E şıkkı: 'Varsayılan temele dayalı ayrımcılık !' → 'Varsayılan temele dayalı ayrımcılık'"]
+ },
+ {
+  "id": "b12-15",
+  "grup": "E",
+  "gerekce": "6701 md 8/1 Kurumu 'Cumhurbaşkanının görevlendireceği bakan ile ilişkili' sayar; şıkların hiçbiri bu ifadenin karşılığı değil, iki denetçi iki ayrı şıkkı savunmuş (A ve C). Şık kümesi yeniden kurulmalı: ya kök 'hangi makam ile ilişkili olarak kurulmuştur' biçiminde sorulup şıklardan biri 'Cumhurbaşkanının görevlendireceği bakan' yapılmalı, ya da soru elenmeli. Bakanlık adı üzerinden kurulan hâli genelgeye bağlı olduğu için zamanla eskir; editoryal karar insana bırakılıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b12-19",
+  "grup": "C",
+  "gerekce": "C ve E şıkları birebir aynı ('15'); mükerrer şık farklı bir sayıyla değiştirilerek beş seçenek geri kazanılıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {"A": "11", "B": "9", "C": "15", "D": "7", "E": "13"},
+   "dogru": "A",
+   "aciklama": "6701 sayılı Kanunun 10 uncu maddesinin ikinci fıkrasına göre Türkiye İnsan Hakları ve Eşitlik Kurulu, biri Başkan biri İkinci Başkan olmak üzere Cumhurbaşkanı tarafından seçilen on bir üyeden oluşur. Tuzak, Kurulun üye sayısını Kurumun diğer organlarına veya benzer kurulların üye sayılarına bakarak tahmin etmektir; sayı 2016'daki kuruluşundan bu yana on birdir.",
+   "dayanak": "6701 sayılı Kanun md 10/2 (Değişik: 8/5/2025-7547/21)"
+  },
+  "degisenler": ["E şıkkı: '15' → '13' (C ile mükerrerlik giderildi)"]
+ },
+ {
+  "id": "b12-22",
+  "grup": "E",
+  "gerekce": "Kök çift olumsuzla kurulmuş ve kanunun saydığı 'hâller' için 'işlemler' denmiş; anlam ancak zorlanarak çıkıyor. Şıklar ve anahtar (E) sağlam olduğundan soru kurtarılabilir, ancak kök yeniden yazılmalı; önerilen biçim: 'Türkiye İnsan Hakları ve Eşitlik Kurulu üyelerinin görev süresi dolmadan üyeliklerine son verilebilecek hâller kanunda sayılmıştır. Aşağıdakilerden hangisi bu hâller arasında yer almaz?' Kök değişikliği editoryal karar olduğu için insana bırakılıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b12-23",
+  "grup": "C",
+  "gerekce": "Anahtar doğru ama B şıkkı kanun metnini değil genelgeye dayalı bir yorumu yazıyor; şık, 6701 md 10/13'ün lafzıyla değiştirilince soru tek doğru cevaplı ve künyelenebilir hâle geliyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Türkiye İnsan Hakları ve Eşitlik Kurumu Başkanı",
+    "B": "Cumhurbaşkanı veya görevlendireceği bakan",
+    "C": "Cumhurbaşkanı veya İçişleri Bakanı",
+    "D": "Türkiye İnsan Hakları ve Eşitlik Kurulu genel kurulu",
+    "E": "Yargıtay Başkanı"
+   },
+   "dogru": "B",
+   "aciklama": "6701 sayılı Kanunun 10 uncu maddesinin on üçüncü fıkrasına göre 4483 sayılı Kanun uyarınca Başkan ve üyeler hakkında soruşturma yapılması Cumhurbaşkanı veya görevlendireceği bakanın iznine tabidir; izin verilmesine ya da verilmemesine ilişkin kararlara karşı itirazları Danıştay karara bağlar. Tuzak, izin merciini Kurumun kendi organlarında ya da belirli bir bakanlıkta aramaktır; kanun hiçbir bakanlığı adıyla saymaz.",
+   "dayanak": "6701 sayılı Kanun md 10/13"
+  },
+  "degisenler": ["B şıkkı: 'Cumhurbaşkanı veya Adalet Bakanı' → 'Cumhurbaşkanı veya görevlendireceği bakan' (kanun lafzı)"]
+ },
+ {
+  "id": "b12-33",
+  "grup": "C",
+  "gerekce": "D ve E şıkları birebir aynı ('Hapis cezası'); E farklı bir yaptırım türüyle değiştirilerek beş seçenek geri kazanılıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Adli para cezası",
+    "B": "İdari para cezası",
+    "C": "Disiplin para cezası",
+    "D": "Hapis cezası",
+    "E": "Tazminata hükmetme"
+   },
+   "dogru": "B",
+   "aciklama": "6701 sayılı Kanunun 25 inci maddesinin birinci fıkrası, ayrımcılık yasağının ihlali hâlinde ihlalin ağırlığı, failin ekonomik durumu ve çoklu ayrımcılığın ağırlaştırıcı etkisi gözetilerek bin Türk lirasından on beş bin Türk lirasına kadar idari para cezası uygulanacağını düzenler. Tuzak, Kurulu bir yargı organı gibi düşünüp adli ceza ya da tazminat yaptırımı aramaktır; Kurulun yaptırım yetkisi idari niteliktedir.",
+   "dayanak": "6701 sayılı Kanun md 25/1"
+  },
+  "degisenler": ["E şıkkı: 'Hapis cezası' → 'Tazminata hükmetme' (D ile mükerrerlik giderildi)"]
+ },
+ {
+  "id": "b12-38",
+  "grup": "E",
+  "gerekce": "Şık metinleri 2003 tarihli İl ve İlçe İnsan Hakları Kurulları Yönetmeliğinden aynen alınmış; içindeki 'Bakanlık' ve 'Başkanlık' (Başbakanlık İnsan Hakları Başkanlığı) 2018 sonrası teşkilatta karşılıksız. Anahtar (E) doğru, ancak yönetmeliğin yürürlükteki metni elde olmadığından şıkların güncel mi yoksa mülga mı olduğu doğrulanamıyor. Yönetmeliğin yürürlükteki metni teyit edilip A şıkkı ona göre sadeleştirilmeli; teyit edilemezse soru elenmeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b12-41",
+  "grup": "C",
+  "gerekce": "Tek kusur D şıkkındaki 'atmış' yazım hatası; düzeltilince soru sağlam. (Not: b12-40 aynı hükmü sınıyor olabilir, mükerrerlik bankaya alırken gözden geçirilmeli.)",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Başvuru hakkında karar verilmesine imkan vermeyen eksiklikler söz konusu ise, eksikliklerin tamamlanması için ara karar alınır.",
+    "B": "Bakanlık ve Başkanlık tarafından iletilen konular ilgili kurulda öncelikle görüşülerek sonuçlandırılır ve sonucundan Bakanlığa veya Başkanlığa bilgi verilir.",
+    "C": "Kurul kararları, ilgili kamu kurum ve kuruluşları tarafından geciktirilmeksizin öncelikle ele alınıp sonuçlandırılır.",
+    "D": "Kurulda alınan kararlar ve yapılan işlemler yazılı olarak başvuru sahibine en geç altmış gün içerisinde bildirilir ve gerekli hâllerde ara bilgi de verilir.",
+    "E": "Başvuru sahibine verilecek yanıtta, hakları konusunda kendisine başvurabileceği yasal yollar hakkında bilgi verilir."
+   },
+   "dogru": "D",
+   "aciklama": "İl ve İlçe İnsan Hakları Kurullarının Kuruluş, Görev ve Çalışma Esasları Hakkında Yönetmeliğin (RG 23/11/2003-25298) 18 inci maddesine göre kurulda alınan kararlar ve yapılan işlemler başvuru sahibine en geç otuz gün içinde yazılı olarak bildirilir; gerekli hâllerde ara bilgi de verilir. Tuzak, bu süreyi idari başvurulara cevap için öngörülen altmış günlük süreyle karıştırmaktır. Diğer seçenekler aynı maddenin eksiklik giderme, öncelikli görüşme ve yasal yollar konusunda bilgilendirme hükümlerine uygundur.",
+   "dayanak": "İl ve İlçe İnsan Hakları Kurulları Yönetmeliği (RG 23/11/2003-25298) md 18"
+  },
+  "degisenler": ["D şıkkı: 'atmış gün' → 'altmış gün'"]
+ },
+ {
+  "id": "b13-4",
+  "grup": "A",
+  "gerekce": "Metinde kusur yok; uyarılar yalnızca 2018 öncesi kaynaklara dayanan anahtarların A'yı göstereceği riskine ilişkin. Yürürlükteki metne göre soru tek doğru cevaplıdır.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "I II III IV",
+    "B": "I II III",
+    "C": "II III IV",
+    "D": "I III IV",
+    "E": "II IV"
+   },
+   "dogru": "C",
+   "aciklama": "6328 sayılı Kanunun 5 inci maddesinin ikinci fıkrasına göre Kamu Denetçiliği Kurumunun görev alanı dışında kalanlar yasama yetkisinin kullanılmasına ilişkin işlemler, yargı yetkisinin kullanılmasına ilişkin kararlar ve Türk Silahlı Kuvvetlerinin sırf askerî nitelikteki faaliyetleridir. Cumhurbaşkanının tek başına yaptığı işlemleri kapsam dışında tutan (a) bendi 2/7/2018 tarihli ve 703 sayılı KHK ile mülga edilmiştir; tuzak, bu mülga bendi hâlâ yürürlükteymiş gibi düşünüp dört öncülü birden işaretlemektir.",
+   "dayanak": "6328 sayılı Kanun md 5/2 (a bendi mülga: 2/7/2018-KHK/703/110)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "b13-16",
+  "grup": "C",
+  "gerekce": "B ve C şıklarında üçte iki çoğunluk '3/2' olarak yazılmış ve E dördüncü turu gevşek ifade etmiş; her ikisi de kanun lafzıyla düzeltilince yanlış olan tek şık A kalıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "TBMM Başkanlığı tarafından seçim yapılır.",
+    "B": "İlk oylamada üye tam sayısının 2/3'ü aranır.",
+    "C": "İkinci oylamada üye tam sayısının 2/3'ü aranır.",
+    "D": "Üçüncü oylamada üye tam sayısının salt çoğunluğu aranır.",
+    "E": "Dördüncü oylamada karar yeter sayısı olmak şartıyla en fazla oy alan aday seçilir."
+   },
+   "dogru": "A",
+   "aciklama": "6328 sayılı Kanunun 11 inci maddesine göre Kamu Başdenetçisini TBMM Genel Kurulu gizli oyla seçer; Başkanlığın rolü adaylık sürecinin ilanı ve Komisyonun belirlediği üç adayın Genel Kurula sunulmasıdır. Oylamalarda ilk iki turda üye tamsayısının üçte iki çoğunluğu, üçüncü turda üye tamsayısının salt çoğunluğu aranır; dördüncü turda en çok oy alan iki aday arasında karar yeter sayısı şartıyla en fazla oyu alan seçilir. Tuzak, seçim merciini TBMM Başkanlığı sanmaktır; denetçileri seçen ise Karma Komisyondur.",
+   "dayanak": "6328 sayılı Kanun md 11/4-5; Anayasa md 74"
+  },
+  "degisenler": [
+   "B şıkkı: 'üye tam sayısının 3/2 si' → 'üye tam sayısının 2/3'ü'",
+   "C şıkkı: 'üye tam sayısının 3/2 si' → 'üye tam sayısının 2/3'ü'",
+   "E şıkkı: 'Dördüncü oylamada toplantıya katılanların salt çoğunluğunun oyu aranır.' → 'Dördüncü oylamada karar yeter sayısı olmak şartıyla en fazla oy alan aday seçilir.' (md 11/5 lafzı)"
+  ]
+ },
+ {
+  "id": "b13-18",
+  "grup": "C",
+  "gerekce": "Tek kusur kökteki kurum adı hatası; 'Kamu Başdenetçiliği Kurumu' → 'Kamu Denetçiliği Kurumu' düzeltilince soru sağlam.",
+  "duzeltme": {
+   "kok": "Aşağıdakilerden hangisi Kamu Denetçiliği Kurumu tarafından incelenmeyecek başvurular arasında yer almaz?",
+   "siklar": {
+    "A": "Belli bir konuyu içermeyen başvurular",
+    "B": "Yargı organlarında görülmekte olan uyuşmazlıklarla alakalı olan başvurular",
+    "C": "Yargı organlarınca karara bağlanmış uyuşmazlıklarla alakalı olan başvurular",
+    "D": "Başvuru belgesinde bulunması gereken şartları eksik olan başvurular",
+    "E": "İdari yargı yolu tüketilmeden önce yapılan başvurular"
+   },
+   "dogru": "E",
+   "aciklama": "6328 sayılı Kanunun 17 nci maddesinin üçüncü fıkrası incelenmeyecek başvuruları sayar: belli bir konuyu içermeyenler, yargıda görülmekte olan veya karara bağlanmış uyuşmazlıklara ilişkin olanlar, dilekçede aranan şartları taşımayanlar ve sebepleri, konusu ve tarafları aynı olup daha önce sonuçlandırılanlar. İdari başvuru yolları tüketilmeden yapılan başvurular ise incelenmez değil, aynı maddenin dördüncü fıkrası uyarınca ilgili kuruma gönderilir; üstelik telafisi güç veya imkânsız zarar ihtimalinde Kurum bunları kabul de edebilir. Tuzak, bu iki farklı sonucu aynı kefeye koymaktır.",
+   "dayanak": "6328 sayılı Kanun md 17/3 ve md 17/4"
+  },
+  "degisenler": ["Kök: 'Kamu Başdenetçiliği Kurumu' → 'Kamu Denetçiliği Kurumu'"]
+ },
+ {
+  "id": "b13-19",
+  "grup": "C",
+  "gerekce": "Kökte kurum adı hatası, C şıkkında ise md 17/4'ün istisnasının atlanması nedeniyle ikinci bir yanlış şık doğmuş; ikisi de kanun lafzıyla düzeltilince yanlış olan tek şık E kalıyor.",
+  "duzeltme": {
+   "kok": "Kamu Denetçiliği Kurumuna yapılacak başvurularla alakalı aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Kuruma illerde valilik ilçelerde kaymakamlık vasıtasıyla başvuru yapılabilir.",
+    "B": "Başvurular ücretsizdir.",
+    "C": "Kuruma kural olarak idari başvuru yolları tüketilmeden başvuru yapılamaz; ancak telafisi güç veya imkânsız zararların doğması ihtimali bulunan hâllerde Kurum başvuruyu kabul edebilir.",
+    "D": "İdari başvuru hâlinde idare tarafından 60 gün içinde cevap verilmezse başvuru süresi bu sürenin bitiminden itibaren başlar.",
+    "E": "Kuruma başvuru idari başvuru yolları tüketildikten sonra 4 ay içinde yapılmalı."
+   },
+   "dogru": "E",
+   "aciklama": "6328 sayılı Kanunun 17 nci maddesinin yedinci fıkrasına göre Kuruma, idarenin cevabının tebliği tarihinden, idare altmış gün içinde cevap vermediği takdirde bu sürenin bitmesinden itibaren altı ay içinde başvurulabilir; dört aylık bir süre yoktur. Diğer seçenekler aynı maddenin valilik ve kaymakamlık aracılığıyla başvuru, ücretsizlik ve idari başvuru yollarının tüketilmesi hükümlerine uygundur. Tuzak, altı aylık başvuru süresini idari yargıdaki sürelerle karıştırmaktır.",
+   "dayanak": "6328 sayılı Kanun md 17/4-7"
+  },
+  "degisenler": [
+   "Kök: 'Kamu Başdenetçiliği Kurumuna' → 'Kamu Denetçiliği Kurumuna'",
+   "C şıkkı: md 17/4'ün son cümlesindeki istisna eklendi ('… ancak telafisi güç veya imkânsız zararların doğması ihtimali bulunan hâllerde Kurum başvuruyu kabul edebilir.')"
+  ]
+ },
+ {
+  "id": "b14-2",
+  "grup": "C",
+  "gerekce": "Tek kusur kökteki 'Birleş Milletler' yazım hatası.",
+  "duzeltme": {
+   "kok": "Birleşmiş Milletler Antlaşması nerede imzalanmıştır?",
+   "siklar": {
+    "A": "Cenevre",
+    "B": "San Francisco",
+    "C": "Roma",
+    "D": "Strazburg",
+    "E": "New York"
+   },
+   "dogru": "B",
+   "aciklama": "Birleşmiş Milletler Antlaşması, 25 Nisan - 26 Haziran 1945 tarihleri arasında toplanan Uluslararası Örgütlenme Konferansı'nın sonunda 26 Haziran 1945'te San Francisco'da imzalanmıştır. Tuzak, örgütün merkeziyle imza yerini karıştırmaktır: New York Birleşmiş Milletlerin merkezi, Cenevre Milletler Cemiyetinin, Strazburg ise Avrupa Konseyinin merkezidir.",
+   "dayanak": "BM Antlaşması, imza künyesi: San Francisco, 26 Haziran 1945"
+  },
+  "degisenler": ["Kök: 'Birleş Milletler' → 'Birleşmiş Milletler'"]
+ },
+ {
+  "id": "b14-8",
+  "grup": "C",
+  "gerekce": "Kusurlar yalnızca yazım düzeyinde ('yürülüğe', 'Cenevrede', kısaltılmış divan adı ve bitişik parantez); anahtar ve şık kümesi sağlam.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "1945 yılında imzalanmış ve 1945 yılında yürürlüğe girmiştir.",
+    "B": "Antlaşma Cenevre'de imzalanmıştır.",
+    "C": "Türkiye, Uluslararası Adalet Divanı Statüsü ile birlikte imzalamış ve onaylamıştır. (1945)",
+    "D": "Antlaşma kavram olarak insan haklarını anmakla birlikte bunları sayıp açıklamamıştır.",
+    "E": "Birleşmiş Milletlere üyelik Güvenlik Konseyinin tavsiyesi üzerine BM Genel Kurulunun kararıyla gerçekleşmektedir."
+   },
+   "dogru": "B",
+   "aciklama": "Birleşmiş Milletler Antlaşması 26 Haziran 1945'te San Francisco'da imzalanmış, 24 Ekim 1945'te yürürlüğe girmiştir; Cenevre'de imzalandığı bilgisi yanlıştır. Antlaşma insan haklarını 1 inci ve 55 inci maddelerinde amaç olarak anar ama bir hak kataloğu vermez; Uluslararası Adalet Divanı Statüsü 92 nci madde uyarınca Antlaşmanın ayrılmaz parçasıdır ve Türkiye ikisini 1945'te birlikte imzalayıp onaylamıştır; üyelik ise 4 üncü maddenin ikinci fıkrası uyarınca Güvenlik Konseyinin tavsiyesi üzerine Genel Kurul kararıyla gerçekleşir. Tuzak, Cenevre'yi Milletler Cemiyeti geçmişi nedeniyle imza yeri sanmaktır.",
+   "dayanak": "BM Antlaşması md 1/3, md 4/2, md 55, md 92; imza künyesi San Francisco, 26 Haziran 1945"
+  },
+  "degisenler": [
+   "A şıkkı: 'yürülüğe' → 'yürürlüğe'",
+   "B şıkkı: 'Cenevrede' → 'Cenevre'de'",
+   "C şıkkı: 'Türkiye Adalet Divanı statüsüyle birlikte imzalamış ve onaylamıştır.(1945)' → 'Türkiye, Uluslararası Adalet Divanı Statüsü ile birlikte imzalamış ve onaylamıştır. (1945)'"
+  ]
+ },
+ {
+  "id": "b14-24",
+  "grup": "C",
+  "gerekce": "Tek kusur kökteki 'İnsan Hakleri' yazım hatası.",
+  "duzeltme": {
+   "kok": "İnsan Hakları Evrensel Beyannamesi kaç yılında kabul edildi?",
+   "siklar": {"A": "1945", "B": "1948", "C": "1952", "D": "1953", "E": "1954"},
+   "dogru": "B",
+   "aciklama": "İnsan Hakları Evrensel Beyannamesi, Birleşmiş Milletler Genel Kurulunun 10 Aralık 1948 tarihli 217 A (III) sayılı kararıyla kabul edilmiştir. Tuzak, yakın tarihli diğer kilometre taşlarıyla karıştırmaktır: 1945 BM Antlaşmasının, 1950 Avrupa İnsan Hakları Sözleşmesinin imza, 1953 ise Sözleşmenin yürürlük yılıdır.",
+   "dayanak": "BM Genel Kurulu kararı 217 A (III), 10 Aralık 1948"
+  },
+  "degisenler": ["Kök: 'İnsan Hakleri' → 'İnsan Hakları'"]
+ },
+ {
+  "id": "b14-31",
+  "grup": "E",
+  "gerekce": "Yazım hatasının ('Evrensen' → 'Evrensel') ötesinde asıl kusur anahtar şıkta: İHEB md 19, 20 ve 21 ifade, toplanma-örgütlenme ve ülke yönetimine katılma haklarını tanıdığından 'siyasi faaliyette bulunma hakkı' Beyannamede karşılıksız sayılamaz; soru ancak madde başlıklarının lafzına bakılırsa tek cevaplıdır. Kurtarmak için E şıkkı, Beyannamede gerçekten yer almayan bir hakla değiştirilmeli (örneğin 'Sağlıklı ve dengeli bir çevrede yaşama hakkı'); anahtar şıkkın içeriğini değiştirmek editoryal karar olduğundan insana bırakılıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b14-32",
+  "grup": "C",
+  "gerekce": "Kökteki 'onaylamıştır' teknik olarak hatalı — İHEB andlaşma değil Genel Kurul bildirisi olduğundan Anayasa md 90 anlamında onaya tabi değil; kök 'kabul edip yayımlama' işlemini adlandıracak biçimde düzeltilince soru tek cevaplı ve doğru olur.",
+  "duzeltme": {
+   "kok": "Türkiye, İnsan Hakları Evrensel Beyannamesi'ni Bakanlar Kurulu kararıyla ne zaman kabul edip Resmî Gazete'de yayımlamıştır?",
+   "siklar": {"A": "1945", "B": "1948", "C": "1949", "D": "1954", "E": "1952"},
+   "dogru": "C",
+   "aciklama": "Türkiye, Beyanname'yi 10 Aralık 1948'de Birleşmiş Milletler Genel Kurulunda olumlu oy vererek desteklemiş; ulusal düzeyde ise 6 Nisan 1949 tarihli Bakanlar Kurulu kararıyla kabul edip 27 Mayıs 1949 tarihli Resmî Gazete'de yayımlamıştır. Tuzak, Genel Kurulun kabul yılı olan 1948 ile Türkiye'nin kendi işleminin yılı olan 1949'u aynı saymaktır. Beyanname bir andlaşma değil bildiri olduğu için burada söz konusu olan usulüne göre onay değil, kabul ve yayımdır.",
+   "dayanak": "6 Nisan 1949 tarihli Bakanlar Kurulu kararı; Resmî Gazete 27 Mayıs 1949"
+  },
+  "degisenler": ["Kök: 'Türkiye İnsan Hakları Evrensel Beyannamesini ne zaman onaylamıştır?' → 'Türkiye, İnsan Hakları Evrensel Beyannamesi'ni Bakanlar Kurulu kararıyla ne zaman kabul edip Resmî Gazete'de yayımlamıştır?'"]
+ },
+ {
+  "id": "b15-3",
+  "grup": "C",
+  "gerekce": "C şıkkındaki komite adı CEDAW ile CERD adlarının karışımı olduğu için var olmayan ikinci bir organ doğmuş; ad gerçek komite adıyla düzeltilince yer almayan tek seçenek D kalıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "İşkenceye Karşı Komite",
+    "B": "İnsan Hakları Komitesi",
+    "C": "Kadınlara Karşı Ayrımcılığın Önlenmesi Komitesi",
+    "D": "1235 Sözleşme Dışı Koruma Komitesi",
+    "E": "Irk Ayrımcılığının Kaldırılması Komitesi"
+   },
+   "dogru": "D",
+   "aciklama": "İşkenceye Karşı Komite İşkenceye Karşı Sözleşmenin 17 nci, İnsan Hakları Komitesi Medeni ve Siyasi Haklar Sözleşmesinin 28 inci, Kadınlara Karşı Ayrımcılığın Önlenmesi Komitesi CEDAW'ın 17 nci, Irk Ayrımcılığının Kaldırılması Komitesi ise ICERD'in 8 inci maddesiyle kurulmuş sözleşme organlarıdır. Buna karşılık 1235, Ekonomik ve Sosyal Konseyin 1235 (XLII) sayılı kararıyla getirilen Şart temelli bir inceleme usulünün adıdır; bu adı taşıyan bir komite hiç kurulmamıştır. Tuzak, usul adlarını organ adı sanmaktır.",
+   "dayanak": "MSHUS md 28; ICERD md 8; İşkenceye Karşı Sözleşme md 17; CEDAW md 17; ECOSOC kararı 1235 (XLII)"
+  },
+  "degisenler": ["C şıkkı: 'Kadına Karşı Irk Ayrımcılığının Kaldırılması Komitesi' → 'Kadınlara Karşı Ayrımcılığın Önlenmesi Komitesi'"]
+ }
+]

@@ -1,0 +1,317 @@
+[
+ {
+  "id": "b17-21",
+  "grup": "E",
+  "gerekce": "Şıkların dördü birden (Rusya, Türkiye, Çin, Suudi Arabistan) Roma Statüsüne taraf değil; sorunun tek doğru cevabı yok. Kurtarma için çeldirici kümesi yeniden kurulmalı: B, D ve E şıkları taraf devletlerle (örn. Fransa, Güney Kore, Arjantin) değiştirilip Türkiye tek taraf-olmayan devlet olarak bırakılmalı; alternatif olarak kök 'taraftır' biçimine çevrilip yalnız bir taraf devlet doğru bırakılmalı. Ayrıca E şıkkındaki 'Arabistan' künyesi 'Suudi Arabistan' olarak düzeltilmeli. Hangi yolun seçileceği ve güncel taraf devlet listesinin doğrulanması editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b18-3",
+  "grup": "D",
+  "gerekce": "Bilgi eskimiş: Rusya'nın 16 Mart 2022'de üyeliğine son verilmesiyle üye sayısı 46'ya indi; anahtar şık 47'den 46'ya güncellenerek soru kurtarılıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "54",
+    "B": "46",
+    "C": "93",
+    "D": "15",
+    "E": "27"
+   },
+   "dogru": "B",
+   "aciklama": "Avrupa Konseyi, 5 Mayıs 1949 tarihli Londra Statüsü ile kurulmuş bölgesel bir örgüttür; üyelik Statünün 2-4. maddelerine göre kazanılır ve yitirilir. Bakanlar Komitesinin 16 Mart 2022 tarihli kararıyla (CM/Res(2022)2) Rusya Federasyonunun üyeliğine son verilmesinden sonra üye sayısı 46'dır. Tuzak, 2007-2022 arasında geçerli olan 47 sayısının kaynaklarda hâlâ dolaşımda olmasıdır; 27 Avrupa Birliği, 54 ise Afrika Birliği üye sayısını çağrıştıran çeldiricilerdir.",
+   "dayanak": "Avrupa Konseyi Statüsü (Londra, 5.V.1949) md 2-4; Bakanlar Komitesi kararı CM/Res(2022)2 (16 Mart 2022)"
+  },
+  "degisenler": [
+   "B şıkkı: '47' → '46'"
+  ]
+ },
+ {
+  "id": "b18-7",
+  "grup": "E",
+  "gerekce": "Hakem soruyu iki cevaplı buldu: kök 'temelini oluşturan sözleşme' hem kurucu belge (1949 tarihli Avrupa Konseyi Statüsü) hem de Konseyin insan hakları alanındaki köşe taşı (AİHS) okumasını destekliyor; üstelik E şıkkındaki 'Avrupa Konseyi Sözleşmesi' adında bir belge yok. Kurtarma için hem kök hem şık kümesi yeniden kurulmalı: kök 'Avrupa Konseyini kuran belge aşağıdakilerden hangisidir?' biçimine çevrilip E şıkkı 'Avrupa Konseyi Statüsü (Londra, 5 Mayıs 1949)' olarak düzeltilmeli ve anahtar E yapılmalı; ya da kök 'Konseyin insan hakları alanındaki temel sözleşmesi' biçiminde daraltılıp anahtar C bırakılmalı. İki yol da sorunun neyi ölçtüğünü değiştirdiğinden karar insana bırakılıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b18-8",
+  "grup": "C",
+  "gerekce": "Anahtar (54 üye) her okumada yanlış olduğu için soru sağlam; tek kusur B şıkkındaki 'kurucu üye' nitelemesinin tartışmalı olmasıdır — Türkiye Statüyü 5 Mayıs 1949'da imzalayan on devlet arasında değil, 9 Ağustos 1949'da davetle katılan devlettir. B şıkkı tarihe dayalı ve tartışmasız doğru bir ifadeyle yeniden yazıldı; anahtar ve çeldirici gücü değişmedi.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Konsey 1949 yılında kurulmuştur.",
+    "B": "Türkiye Konseye 1949 yılında üye olmuştur.",
+    "C": "Konseyin resmî dilleri Fransızca ve İngilizcedir.",
+    "D": "Konseyin merkezi Strazburg'da bulunur.",
+    "E": "Konseyin 54 üyesi vardır."
+   },
+   "dogru": "E",
+   "aciklama": "Avrupa Konseyi 5 Mayıs 1949 tarihli Londra Statüsü ile kurulmuş olup merkezi Strazburg'dadır ve Statü md 12 uyarınca resmî dilleri İngilizce ile Fransızcadır; Türkiye Konseye 9 Ağustos 1949'da katılmıştır. Üye sayısı ise hiçbir dönemde 54 olmamıştır: 2007-2022 arasında 47, Rusya'nın üyeliğine son verilmesinden sonra 46'dır. Tuzak, 54 sayısının başka bölgesel örgütlerin üye sayısını çağrıştırarak tanıdık gelmesidir.",
+   "dayanak": "Avrupa Konseyi Statüsü (Londra, 5.V.1949) md 11-12; Bakanlar Komitesi kararı CM/Res(2022)2"
+  },
+  "degisenler": [
+   "B şıkkı: 'Türkiye Konseyin kurucu üyeleri arasında yer almaktadır.' → 'Türkiye Konseye 1949 yılında üye olmuştur.'",
+   "C şıkkı: 'Konseyin resmi diller Fransızca ve İngilizcedir.' → 'Konseyin resmî dilleri Fransızca ve İngilizcedir.' (yazım)",
+   "A ve E şıklarının sonuna nokta eklendi (noktalama tutarlılığı)"
+  ]
+ },
+ {
+  "id": "b18-13",
+  "grup": "E",
+  "gerekce": "Kök hangi düzeydeki toplantıyı sorduğunu söylemiyor: Bakanlar Komitesi bugün bakanlar düzeyinde yılda bir kez (mayıs) olağan oturum yapıyor, Bakan Yardımcıları (delegeler) düzeyinde ise haftalık toplanıyor; Statü sayıyı saptamadığı için hem 'Bir' hem 'İki' savunulabiliyor. Kurtarma için kök 'Bakanlar Komitesi bakanlar düzeyinde yılda kaç kez olağan oturum yapar?' biçiminde daraltılıp anahtar güncel uygulamaya (Bir) çevrilmeli ya da soru delegeler düzeyi üzerinden yeniden kurulmalı. Anahtarın değişmesi ve ölçülen bilginin kayması editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b18-15",
+  "grup": "D",
+  "gerekce": "Bilgi eskimiş: 324 asil/324 yedek sayısı 47 üyeli döneme ait; Rusya'nın çıkarılmasından sonra Meclis 306 asil ve 306 yedek üyelidir. B şıkkı güncellenince 'hangisi yanlıştır' kökünde tek yanlış şık olarak A kalıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Avrupa Konseyinin karar organıdır.",
+    "B": "306 asil 306 yedek üyeden oluşur.",
+    "C": "Türkiye'den 18 asil 18 yedek üye bulunmaktadır.",
+    "D": "Parlamenter Meclis üye devletlerin milletvekillerinden oluşur.",
+    "E": "Parlamenter Meclis yılda 4 kez toplanır."
+   },
+   "dogru": "A",
+   "aciklama": "Avrupa Konseyi Statüsü md 13 örgütün iki organını sayar: karar organı Bakanlar Komitesi, danışma ve müzakere organı ise Parlamenter Meclistir. Meclis, üye devlet parlamentolarının kendi üyeleri arasından seçtiği temsilcilerden oluşur, yılda dört bölümlü oturum hâlinde toplanır ve Rusya'nın üyeliğinin sona ermesinden sonra 306 asil ile 306 yedek üyelidir; Türkiye'nin 18 sandalyesi vardır. Tuzak, Meclisin görünürlüğü nedeniyle karar organı sanılmasıdır; Meclisin işlemleri tavsiye niteliğindedir, bağlayıcı kararları Bakanlar Komitesi alır.",
+   "dayanak": "Avrupa Konseyi Statüsü md 13, 22, 25-26; PACE İçtüzüğü (yılda dört bölümlü oturum)"
+  },
+  "degisenler": [
+   "B şıkkı: '324 asil 324 yedek üyeden oluşur.' → '306 asil 306 yedek üyeden oluşur.'",
+   "D şıkkı: 'Milletvekillerinden' → 'milletvekillerinden' (yazım)"
+  ]
+ },
+ {
+  "id": "b18-19",
+  "grup": "C",
+  "gerekce": "Anahtar (D) Statü md 37/b ile sağlam; tek kusur E şıkkının özne hatasıdır: md 36/a'ya göre bir Genel Sekreter, bir Genel Sekreter Yardımcısı ve gerekli personelden oluşan yapı 'Genel Sekreter' değil Sekretaryadır. Şık doğru özneyle yeniden yazıldı, anahtar değişmedi.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Genel Sekreterin görev süresi 5 yıldır.",
+    "B": "Genel Sekreterin seçimini Bakanlar Komitesi tavsiye eder.",
+    "C": "Genel Sekreter tavsiye üzerine Parlamenter Meclis tarafından seçilir.",
+    "D": "Genel Sekreter görevlerinden dolayı Parlamenter Meclise karşı sorumludur.",
+    "E": "Sekretarya; bir Genel Sekreter, bir Genel Sekreter Yardımcısı ve gerekli personelden oluşur."
+   },
+   "dogru": "D",
+   "aciklama": "Avrupa Konseyi Statüsü md 36/a uyarınca Sekretarya bir Genel Sekreter, bir Genel Sekreter Yardımcısı ve gerekli personelden oluşur; Genel Sekreter, Bakanlar Komitesinin tavsiyesi üzerine Parlamenter Meclis tarafından beş yıllık süre için seçilir. Md 37/b ise Genel Sekreterin Sekretaryanın çalışmalarından ötürü Bakanlar Komitesine karşı sorumlu olduğunu söyler. Tuzak, seçimi Parlamenter Meclisin yapmasından hareketle sorumluluğun da Meclise karşı olduğunun sanılmasıdır; seçen organ ile sorumluluğun doğduğu organ farklıdır.",
+   "dayanak": "Avrupa Konseyi Statüsü md 36/a-b ve md 37/b"
+  },
+  "degisenler": [
+   "E şıkkı: 'Genel sekreter bir genel sekreter ve yeteri kadar yardımcıdan oluşur.' → 'Sekretarya; bir Genel Sekreter, bir Genel Sekreter Yardımcısı ve gerekli personelden oluşur.'",
+   "A/B/C şıklarında 'Genel sekreter' → 'Genel Sekreter', 'Bakanlar komitesi' → 'Bakanlar Komitesi' (yazım)"
+  ]
+ },
+ {
+  "id": "b19-5",
+  "grup": "B",
+  "gerekce": "Anahtar hatalı: Sözleşme 4 Kasım 1950'de Roma'da düzenlenip imzaya açılmış ve Türkiye aynı gün imzalamıştır; kitabın 1952 cevabı Sözleşmenin değil Ek 1 No.lu Protokolün tarihidir. Anahtar D'den B'ye düzeltildi, kök ve şık kümesi aynen korundu.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "1949",
+    "B": "1950",
+    "C": "1951",
+    "D": "1952",
+    "E": "1954"
+   },
+   "dogru": "B",
+   "aciklama": "Avrupa İnsan Hakları Sözleşmesi, kendi kapanış hükmünün deyişiyle 4 Kasım 1950'de Roma'da düzenlenmiş ve md 59/1 uyarınca Avrupa Konseyi üyelerinin imzasına açılmıştır; Konseyin kurucu üyelerinden Türkiye de Sözleşmeyi açıldığı gün imzalamıştır. İki yaygın tuzak vardır: 1952, Sözleşmenin değil 20 Mart 1952'de Paris'te düzenlenen Ek 1 No.lu Protokolün tarihidir; 1954 ise imza değil, 10/3/1954 tarihli ve 6366 sayılı Kanunla yapılan onay tarihidir.",
+   "dayanak": "AİHS md 59/1 ve kapanış hükmü (4 Kasım 1950, Roma); onay için 10/3/1954 tarihli ve 6366 sayılı Kanun"
+  },
+  "degisenler": [
+   "Anahtar: D (1952) → B (1950)"
+  ]
+ },
+ {
+  "id": "b19-14",
+  "grup": "C",
+  "gerekce": "Anahtar sağlam ama kök, ek protokolleri kapsam dışı bıraktığını söylemiyor; protokoller Sözleşmenin ayrılmaz parçası sayılırsa hiçbir şık doğru olmuyor. Kök, ölçülen bilgiyi değiştirmeden 'ana metninde (ek protokoller hariç)' ibaresiyle netleştirildi.",
+  "duzeltme": {
+   "kok": "Aşağıdakilerden hangisi Avrupa İnsan Hakları Sözleşmesinin ana metninde (ek protokoller hariç) yer alan haklar arasında yer almaz?",
+   "siklar": {
+    "A": "Mülkiyet hakkı",
+    "B": "Adil yargılanma hakkı",
+    "C": "Kanunsuz ceza olmaz",
+    "D": "Özel ve aile hayatına saygı",
+    "E": "Düşünce, vicdan ve din özgürlüğü"
+   },
+   "dogru": "A",
+   "aciklama": "Sözleşmenin ana metni hakları 2-18. maddelerde sayar: adil yargılanma md 6, kanunsuz ceza olmaz md 7, özel ve aile hayatına saygı md 8, düşünce, vicdan ve din özgürlüğü md 9. Mülkiyet hakkı ana metinde değil, 20 Mart 1952'de Paris'te düzenlenen Ek 1 No.lu Protokolün 1. maddesinde güvence altına alınmıştır. Tuzak, mülkiyet hakkının Sözleşme sisteminde korunuyor olmasıdır; koruma vardır ama kaynağı Sözleşmenin kendi metni değil, ek protokoldür.",
+   "dayanak": "AİHS md 6, 7, 8, 9; mülkiyet için Ek 1 No.lu Protokol (Paris, 20.III.1952) md 1"
+  },
+  "degisenler": [
+   "Kök: 'Avrupa İnsan Hakları Sözleşmesinde yer alan haklar' → 'Avrupa İnsan Hakları Sözleşmesinin ana metninde (ek protokoller hariç) yer alan haklar'",
+   "E şıkkı: 'Düşünce vicdan ve din özgürlüğü' → 'Düşünce, vicdan ve din özgürlüğü' (noktalama)"
+  ]
+ },
+ {
+  "id": "b19-18",
+  "grup": "D",
+  "gerekce": "Köktekki 'üye devletlerin tamamınca imzalanıp onaylanmayan' önermesi eskimiş (15 No.lu Protokol tüm taraflarca onaylanıp 1 Ağustos 2021'de yürürlüğe girdi) ve bu protokol 'ek' değil değiştirici protokoldür; kök güncel duruma göre yeniden yazıldı, anahtar değişmedi.",
+  "duzeltme": {
+   "kok": "Avrupa İnsan Hakları Mahkemesine bireysel başvuru süresini altı aydan dört aya indiren ve 1 Ağustos 2021'de yürürlüğe giren Avrupa İnsan Hakları Sözleşmesi protokolü aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "15",
+    "B": "17",
+    "C": "16",
+    "D": "18",
+    "E": "13"
+   },
+   "dogru": "A",
+   "aciklama": "Bireysel başvuru süresini altı aydan dört aya indiren düzenleme, Sözleşmenin 35/1. maddesini değiştiren 15 No.lu Protokoldür; Protokol 1 Ağustos 2021'de yürürlüğe girmiş, dört aylık süre ise 1 Şubat 2022'den sonra kesinleşen kararlara uygulanmaya başlamıştır. Aynı Protokol yargıç adayları için 65 yaş koşulunu getirmiş, 70 yaşta görevin sona ermesi kuralını kaldırmıştır. Tuzak 16 No.lu Protokoldür: o, yüksek mahkemelere danışma görüşü isteme imkânı tanıyan ve tüm taraflarca onaylanmamış olan protokoldür, sürelerle ilgisi yoktur.",
+   "dayanak": "15 No.lu Protokol (CETS 213) md 4 — AİHS md 35/1'i değiştirir; güncel AİHS md 35/1: 'dört aylık bir süre'"
+  },
+  "degisenler": [
+   "Kök: 'süresini 6 aydan 4 aya inmesini öngören fakat üye devletlerin tamamı tarafından imzalanıp onaylanmayan Avrupa İnsan Hakları Sözleşmesi Ek protokolü' → 'süresini altı aydan dört aya indiren ve 1 Ağustos 2021'de yürürlüğe giren Avrupa İnsan Hakları Sözleşmesi protokolü'"
+  ]
+ },
+ {
+  "id": "b19-19",
+  "grup": "E",
+  "gerekce": "Hiçbir şık doğru değil: Avrupa Konseyinin yargısal mekanizması AİHM'dir (AİHS md 19) ve şıklarda yok; A (Avrupa Toplulukları Adalet Divanı) Avrupa Birliği organıdır, D ve E Avrupa Konseyi dışındadır, B ve C ise yargısal olmayan mekanizmalardır. Kurtarma için bir şık 'Avrupa İnsan Hakları Mahkemesi' ile değiştirilip anahtar o şıkka taşınmalı; ayrıca A şıkkının adı 2009'dan beri 'Avrupa Birliği Adalet Divanı'dır. Hangi şıkkın feda edileceği ve çeldirici dengesi editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b20-3",
+  "grup": "C",
+  "gerekce": "Kök 'hangi ülke' diye sorarken A şıkkı şehir adı ('Roma') olarak yazılmış; kategori hatası mekanik biçimde giderildi (Roma → İtalya). Anahtar değişmedi, çeldirici gücü korundu.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "İtalya",
+    "B": "İngiltere",
+    "C": "Fransa",
+    "D": "ABD",
+    "E": "Çin"
+   },
+   "dogru": "C",
+   "aciklama": "Avrupa İnsan Hakları Mahkemesi, Avrupa Konseyi Statüsü md 11 uyarınca örgütün merkezi olan Strazburg'da çalışır; Strazburg Fransa sınırları içindedir. Tuzak, Sözleşmenin 4 Kasım 1950'de Roma'da düzenlenmiş olması nedeniyle Mahkemenin de İtalya'da sanılmasıdır; imza yeri ile Mahkemenin merkezi ayrı şeylerdir.",
+   "dayanak": "Avrupa Konseyi Statüsü md 11 (Strazburg); AİHM İçtüzüğü md 19"
+  },
+  "degisenler": [
+   "A şıkkı: 'Roma' (şehir) → 'İtalya' (ülke)"
+  ]
+ },
+ {
+  "id": "b20-8",
+  "grup": "C",
+  "gerekce": "Kök daraltılmadığı için 11 No.lu Protokol (Komisyonu kaldırıp Mahkemeyi sürekli hâle getiren) de savunulabiliyordu; kök, Mahkemenin sürekli hâle gelmesinden sonraki dönemi işaret edecek biçimde netleştirildi ve şık künyeleri düzeltildi. Anahtar ve çeldirici gücü değişmedi.",
+  "duzeltme": {
+   "kok": "Avrupa İnsan Hakları Mahkemesinin sürekli tek mahkeme hâline gelmesinden sonra işleyişinde köklü değişiklik yapan protokol aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "11 No.lu Protokol",
+    "B": "14 No.lu Protokol",
+    "C": "2 No.lu Protokol",
+    "D": "6 No.lu Protokol",
+    "E": "10 No.lu Protokol"
+   },
+   "dogru": "B",
+   "aciklama": "Mahkeme 11 No.lu Protokolle 1998'de sürekli tek mahkeme hâline gelmiş; bu yapının işleyişini köklü biçimde değiştiren düzenleme ise 1 Haziran 2010'da yürürlüğe giren 14 No.lu Protokol olmuştur. Tek yargıç düzeni (md 27), komitelere yerleşik içtihat konusu davalarda esas hakkında karar yetkisi (md 28/1-b), 'önemli bir zarar görmemiş olma' kabul edilemezlik ölçütü (md 35/3-b) ve tekrar seçilemeyen dokuz yıllık görev süresi (md 23/1) bu Protokolle gelmiştir. Tuzak, 6 ve 13 No.lu Protokollerin (ölüm cezasının kaldırılması) esasa ilişkin olmasıdır; bunlar Mahkemenin işleyişini değil korunan hakları düzenler.",
+   "dayanak": "14 No.lu Protokol (CETS 194, yür. 1 Haziran 2010); AİHS md 23/1, 26/1, 27, 28/1-b, 35/3-b"
+  },
+  "degisenler": [
+   "Kök: 'aşağıdaki ek protokollerden hangisiyle mahkemenin işleyiş sisteminde önemli değişiklikler olmuştur' → 'sürekli tek mahkeme hâline gelmesinden sonra işleyişinde köklü değişiklik yapan protokol aşağıdakilerden hangisidir'",
+   "Şıklar: 'Ek 11 / Ek 14 / Ek 2 / Ek 6 / Ek 10' → '11 / 14 / 2 / 6 / 10 No.lu Protokol' (künye düzeltmesi)"
+  ]
+ },
+ {
+  "id": "b20-16",
+  "grup": "D",
+  "gerekce": "Bilgi eskimiş: 70 yaşta görevin sona ermesi kuralı 15 No.lu Protokolle (yür. 1 Ağustos 2021) Sözleşmeden çıkarıldı ve yerine md 21/2'deki 65 yaş koşulu geldi; bugünkü metne göre hiçbir şık doğru değildi. Kök yürürlükteki hükme göre güncellendi, anahtar 65'e taşındı.",
+  "duzeltme": {
+   "kok": "Avrupa İnsan Hakları Mahkemesi yargıçlığı için adayların, üç adaylık listenin Parlamenterler Meclisi tarafından talep edildiği tarihte kaç yaşın altında olması gerekir?",
+   "siklar": {
+    "A": "63",
+    "B": "65",
+    "C": "70",
+    "D": "75",
+    "E": "45"
+   },
+   "dogru": "B",
+   "aciklama": "Sözleşmenin 21/2. maddesi, adayların üç adaylık listenin Parlamenterler Meclisi tarafından talep edildiği tarihte 65 yaşın altında olmasını arar. Bu koşul, 1 Ağustos 2021'de yürürlüğe giren 15 No.lu Protokolle getirilmiş; aynı Protokol, eski metindeki yargıçlık görevinin 70 yaşın doldurulmasıyla sona ereceği kuralını yürürlükten kaldırmıştır. Tuzak, yürürlükten kalkan 70 yaş sınırının kaynaklarda hâlâ geçmesidir; bugün ölçülen ölçüt görev sonu yaşı değil, adaylık tarihindeki yaş koşuludur.",
+   "dayanak": "AİHS md 21/2 (15 No.lu Protokolle değişik); mülga eski md 23/2"
+  },
+  "degisenler": [
+   "Kök: 'görev alan yargıçların görev süresi kaç yaşını doldurunca sonlanır' → 'yargıçlığı için adayların, üç adaylık listenin Parlamenterler Meclisi tarafından talep edildiği tarihte kaç yaşın altında olması gerekir'",
+   "Anahtar: C (70) → B (65)"
+  ]
+ },
+ {
+  "id": "b20-17",
+  "grup": "D",
+  "gerekce": "Güncel metne göre iki şık birden yanlıştı: 70 yaş kuralı 15 No.lu Protokolle kaldırıldığından C şıkkı da yanlış hâle gelmişti. C şıkkı yürürlükteki md 21/2 hükmüne göre güncellendi; böylece 'hangisi yanlıştır' kökünde tek yanlış şık olarak A kaldı.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Yargıçlar Mahkeme Genel Kurulu tarafından seçilir.",
+    "B": "Yargıçların seçiminde oy çokluğu aranır.",
+    "C": "Yargıç adayları, üç adaylık listenin talep edildiği tarihte 65 yaşın altında olmalıdır.",
+    "D": "Yargıçların görev süresi 9 yıldır.",
+    "E": "Yargıçların tekrar seçilmeleri mümkün değildir."
+   },
+   "dogru": "A",
+   "aciklama": "Sözleşmenin 22. maddesine göre yargıçlar, her Yüksek Sözleşmeci Tarafın sunacağı üç adaylık liste üzerinden Parlamenterler Meclisi tarafından oy çokluğu ile seçilir; md 23/1 görev süresini dokuz yıl olarak belirler ve tekrar seçilmeyi kapatır, md 21/2 ise adaylar için liste talebi tarihinde 65 yaşın altında olma koşulunu arar. Mahkeme Genel Kurulunun görevleri md 25'te sayılmıştır ve idari niteliktedir: başkan ile daire başkanlarını seçmek, daireleri oluşturmak, içtüzüğü kabul etmek. Tuzak, Genel Kurulun Mahkemenin kendi organı olmasından hareketle yargıçları da onun seçtiğinin sanılmasıdır; yargıçları seçen organ Mahkeme değil, Avrupa Konseyi Parlamenterler Meclisidir.",
+   "dayanak": "AİHS md 21/2, md 22, md 23/1, md 25"
+  },
+  "degisenler": [
+   "C şıkkı: 'Yargıçlar 70 yaşına kadar görev yaparlar' → 'Yargıç adayları, üç adaylık listenin talep edildiği tarihte 65 yaşın altında olmalıdır.'",
+   "E şıkkı: 'Yargıçlar tekrar seçilmeleri mümkün değildir.' → 'Yargıçların tekrar seçilmeleri mümkün değildir.' (dil düzeltmesi)"
+  ]
+ },
+ {
+  "id": "b20-23",
+  "grup": "E",
+  "gerekce": "Hakem soruyu sertifikalayamadı: Sözleşme kabul edilebilirlik yetkisini tek yargıç (md 27/1), komite (md 28/1-a) ve Daire'ye (md 29/1) birlikte veriyor, md 30-31 yoluyla Büyük Daire de inceleyebiliyor; kökte 'ilk olarak' ya da 'oybirliğiyle' gibi daraltıcı bir kayıt olmadığı için A, B ve C aynı anda savunulabiliyor. Kurtarma yolu kökte hangi süzgecin sorulduğunu seçmektir: 'ilk inceleme' denirse anahtar tek yargıç, 'oybirliğiyle karar veren üç yargıçlı organ' denirse komite olur. Anahtarın değişmesi ve ölçülen bilginin kayması editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "b20-27",
+  "grup": "A",
+  "gerekce": "Kusur yok: md 29/2 devlet başvurularının hem kabul edilebilirliği hem esası hakkında kararı açıkça Daire'ye veriyor, anahtar C sağlam. Denetçi uyarısı yalnızca aynı bölümdeki b20-26 ile örtüşme, yani kitabın dizim/bölümleme tercihi hakkındadır.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Genel Kurul",
+    "B": "Büyük Daire",
+    "C": "Daire",
+    "D": "Komite",
+    "E": "Tek yargıç"
+   },
+   "dogru": "C",
+   "aciklama": "Sözleşmenin 29/2. maddesi, 33. madde uyarınca yapılan devlet başvurularının kabul edilebilirliği ve esası hakkında kararı Daire'ye bırakır. Büyük Daire bu başvurulara ancak istisnaen bakar: md 30 uyarınca Daire dosyadan el çekerse ya da md 43 uyarınca dava kendisine gönderilirse. Tuzak, devletlerarası başvuruların ağırlığı nedeniyle doğrudan Büyük Dairenin görevli sanılmasıdır; ayrıca md 25'teki Genel Kurul yargısal bir heyet değil, idari görevleri olan bir oluşumdur.",
+   "dayanak": "AİHS md 29/2 (ayrıca md 30, md 31/a, md 43)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "b20-29",
+  "grup": "C",
+  "gerekce": "Anahtar (E) sağlam: Mahkemenin 'komisyon' diye bir organı yoktur ve ilk kabul edilebilirlik incelemesini md 27/1 uyarınca tek yargıç yapar. Tek kusur D şıkkının komitelerin esas yetkisini koşulsuz gibi göstermesiydi; şık md 28/1-b'ye uygun biçimde yeniden yazılarak tek yanlış şık kurgusu korundu.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Komiteler üç yargıçtan oluşur.",
+    "B": "Daireler yedi yargıçtan oluşur.",
+    "C": "Büyük Daire on yedi yargıçtan oluşur.",
+    "D": "Komiteler, yerleşik içtihat konusu bireysel başvuruların esası hakkında karar verebilir; devlet başvurularının esasını daireler inceler.",
+    "E": "Bireysel başvuruların ilk incelemesi (kabul edilebilirlik) komisyonlar tarafından yapılır."
+   },
+   "dogru": "E",
+   "aciklama": "Sözleşmenin 26/1. maddesine göre Mahkeme tek yargıç, üç yargıçlı komite, yedi yargıçlı Daire ve on yedi yargıçlı Büyük Daire düzeninde toplanır; komiteler md 28/1-b uyarınca yalnızca yerleşik içtihat konusu bireysel başvuruların esasına karar verebilir, devlet başvurularının esası ise md 29/2 ile Daire'ye aittir. Bireysel başvurunun ilk kabul edilebilirlik incelemesini md 27/1 uyarınca tek yargıç yapar; Mahkemenin 'komisyon' adlı bir organı yoktur. Tuzak, 11 No.lu Protokolle 1998'de kaldırılan Avrupa İnsan Hakları Komisyonunun hâlâ süzgeç organı sanılmasıdır.",
+   "dayanak": "AİHS md 26/1, md 27/1, md 28/1-b, md 29/1-2"
+  },
+  "degisenler": [
+   "D şıkkı: 'Bireysel başvuruları esas bakımından komiteler devlet başvurularını esas bakımından daireler inceler.' → 'Komiteler, yerleşik içtihat konusu bireysel başvuruların esası hakkında karar verebilir; devlet başvurularının esasını daireler inceler.'",
+   "C şıkkı: 'Büyük daire' → 'Büyük Daire' (yazım)"
+  ]
+ }
+]

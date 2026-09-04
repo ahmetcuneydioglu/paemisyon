@@ -1,0 +1,323 @@
+[
+ {
+  "id": "b1-1",
+  "karar": "KUSURLU",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": "Künyelenebilir kaynak yok. Ne kitabın 'korunma unsur değildir' tercihi ne de denetçinin 'yetki/saygı gösterilme unsur değildir' tercihi belirli bir yazar/eserle (ör. Kuçuradi, Gemalmaz, Donnelly, AÖF İnsan Hakları ders kitabı) eşleştirilebildi.",
+  "d1": "A",
+  "d2": "D",
+  "guven": [
+   "dusuk",
+   "orta"
+  ],
+  "dayanak": "Genel hak kuramı ders literatürü — belirli bir eser/yazar adlandırılamadı",
+  "gerekce": "Yaygın ders anlatımında hak kavramının unsurları talep, tanınma, korunma ve saygı gösterilme olarak sayılır; 'yetki' hakkın unsuru değil hakkın kendisinin tanımlandığı üst kavramdır.",
+  "uyarilar": [
+   "Bu dört unsurluk listeyi doğrulayacak adlandırılabilir bir kaynak bulunamadı; 'saygı gösterilme' (D) şıkkının dışlandığı anlatımlar da mevcut olduğundan cevap kaynak metniyle karşılaştırılmalı.",
+   "HAKEM: Hak kavramının 'unsurları' listesi tek bir yerleşik doktrin listesi değildir; farklı ders kitapları talep/yetki/iktidar/tanınma/korunma/saygı gösterilme öğelerini farklı kümelerle sayar. Kitabın cevabını (E) çürütecek bir metin bulunamadığı gibi, denetçinin A/D önerisi de tek bir kaynağa dayandırılamıyor; denetçi kendi dayanağında da 'eser adlandırılamadı' diyor. Bu haliyle soru, cevabı kaynakla sabitlenemeyen bir ezber-liste sorusudur. // Kitabın E (korunma) cevabını çürütmek kolay: korunma, hakkın en çok anılan unsurlarından biridir (hukuken korunmayan menfaat hak sayılmaz), dolayısıyla 'unsur değildir' demek savunulamaz. Ama denetçinin A (yetki) cevabı da ayakta kalmıyor: klasik hak tanımı zaten 'hukuk düzenince kişiye tanınan yetki'dir ve pek çok anlatımda yetki hakkın unsuru olarak sayılır; denetçi ayrıca A ile D arasında karar veremeyip iki cevap vermiştir. İki taraf da künyeli kaynak gösteremediği için tek doğru şık belirlenemiyor."
+  ]
+ },
+ {
+  "id": "b1-2",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "John Rawls, A Theory of Justice (Bir Adalet Teorisi), 1971",
+  "gerekce": "Hakkı adalet teorisi/hakkaniyet olarak adalet çerçevesinde temellendiren düşünür Rawls'tır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-3",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Ronald Dworkin, Taking Rights Seriously (Hakları Ciddiye Almak), 1977 — 'rights as trumps'",
+  "gerekce": "Hakları kolektif hedefleri yenen 'koz (trump)' olarak niteleyen düşünür Dworkin'dir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-4",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "H. L. A. Hart, The Concept of Law (Hukukun Kavramı), 1961, Bölüm IX — 'minimum content of natural law'",
+  "gerekce": "Doğal hukukun asgari/minimum içeriği tezi Hart'ın Hukukun Kavramı adlı eserinde ortaya konmuştur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-5",
+  "karar": "ONAY",
+  "kitapCevabi": "D",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Hans Kelsen, Reine Rechtslehre / General Theory of Law and State (1934-1945) — normlar hiyerarşisi ve temel norm (Grundnorm)",
+  "gerekce": "Hukuku normlar hiyerarşisi olarak kuran ve uluslararası düzlemde temel normu 'ahde vefa' (pacta sunt servanda) olarak belirleyen düşünür Kelsen'dir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-6",
+  "karar": "UYARI",
+  "kitapCevabi": "E",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "İnsan hakları doktrini — dikey etki (birey–devlet ilişkisinde hakların doğrudan ileri sürülmesi)",
+  "gerekce": "Kökte esas alınan ölçüt 'birey ile devlet arasındaki ilişki' olduğundan tarif edilen dikey etkidir; devletin bu ilişkideki yükümlülüğü müdahaleden kaçınmadır.",
+  "uyarilar": [
+   "Kök iki farklı ayrımı (ilişki tipi: dikey/yatay ile yükümlülük tipi: negatif/pozitif) tek cümlede birleştirdiğinden C (negatif etki) şıkkı da 'devletin ihlalden kaçınması' tanımına birebir uyar; iki şık savunulabilir durumda.",
+   "Kök iki ayrı tasnifi karıştırıyor: 'ihlalden kaçınma' aynı zamanda negatif yükümlülüğün/etkinin ders kitabı tanımıdır, dolayısıyla C şıkkı da savunulabilir; seçeneklerde dikey/yatay ile negatif/pozitif birlikte bulunduğu için soru tek doğru cevaba kilitlenmiyor. Ayrıca A şıkkı 'Minimaliz etki' biçiminde hatalı yazılmış ('minimalist' olmalı)."
+  ]
+ },
+ {
+  "id": "b1-7",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "İnsan hakları doktrini — yatay etki (Drittwirkung; Alman Federal Anayasa Mahkemesi Lüth kararı, 1958)",
+  "gerekce": "Hakların bireyler arası ilişkilerde de sonuç doğurması ve devletin bireyi diğer bireylere karşı koruması yatay etki olarak adlandırılır.",
+  "uyarilar": [
+   "b1-6 ile aynı yapısal sorun: tarif edilen koruma ödevi aynı zamanda pozitif yükümlülük olduğundan D (pozitif etki) şıkkı da savunulabilir.",
+   "b1-6 ile aynı tasnif karışıklığı: 'devletin koruması' pozitif yükümlülüğün tanımı olduğundan D şıkkı da savunulabilir; iki farklı ayrım aynı seçenek listesinde toplandığı için cevap tekleşmiyor."
+  ]
+ },
+ {
+  "id": "b1-8",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Eşitlik doktrini — yatay eşitlik (Anayasa md 10/1 kanun önünde eşitlik ilkesinin şekli boyutu)",
+  "gerekce": "Aynı hukuki durumda olanlara aynı kuralların uygulanması yatay (şekli) eşitliktir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-9",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Eşitlik doktrini — dikey eşitlik (maddi eşitlik)",
+  "gerekce": "Farklı durumda olanlara farklı kuralların uygulanması dikey eşitlik olarak adlandırılır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-10",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Anayasa md 10 son fıkra (pozitif ayrımcılık) + dikey eşitlik kavramı",
+  "gerekce": "Kökte sayılan gruplar için alınacak tedbirler farklı durumdakilere farklı muamele anlamına geldiğinden sonuç dikey (maddi) eşitliktir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-11",
+  "karar": "UYARI",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan hakları nitelikleri doktrini; Anayasa md 12/1 (kişiliğe bağlı, dokunulmaz, devredilmez, vazgeçilmez)",
+  "gerekce": "İnsan hakları insan olmakla doğuştan kazanılır; 'sonradan kazanılma' bu niteliklerle çelişir, diğer dört şık kabul edilen niteliklerdir.",
+  "uyarilar": [
+   "E şıkkında yazım hatası var: 'Devredilmezdik' → 'Devredilmezlik'.",
+   "E şıkkı 'Devredilmezdik' biçiminde yazılmış; doğrusu 'Devredilmezlik'tir — mevcut hâli anlamı bozuyor."
+  ]
+ },
+ {
+  "id": "b1-12",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "İnsan hakları nitelikleri doktrini; Anayasa md 12 ve Viyana Deklarasyonu (1993) para. 5 — bölünmezlik",
+  "gerekce": "İnsan hakları toplum öncesi ve toplumdan bağımsız kabul edildiğinden 'toplumsallık' bir nitelik değildir; vazgeçilmezlik, temel hak olma, devlete karşı ileri sürülme ve bölünmezlik sayılan niteliklerdir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-13",
+  "karar": "ONAY",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Devletin insan hakları yükümlülükleri öğretisi (saygı gösterme–koruma–yerine getirme: respect, protect, fulfil)",
+  "gerekce": "Devlete yüklenen ödev haklara 'dokunmama'dır; 'dokunma' bir ödev değil ihlaldir, tanıma/koruma/temin/tedarik ise devletin ödevleridir.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-14",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Stoa okulu (Kitionlu Zenon, MÖ 3. yy) — evrensel doğal yasa ve insanların doğal eşitliği öğretisi",
+  "gerekce": "İnsanların doğuştan eşit ve evrensel bir doğal yasaya tabi olduğu düşüncesini ilk kez sistemli biçimde savunan okul Stoacılardır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-15",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "dayanak": "Aquinolu Thomas, Summa Theologiae ve De Regno (13. yy) — zorba yönetime direnme",
+  "gerekce": "Ortaçağda tiranlığa karşı direnme hakkını ilk savunan düşünür olarak Saint Thomas Aquinas gösterilir; Marsilius ondan sonraki kuşaktandır.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-16",
+  "karar": "UYARI",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "Aquinolu Thomas, De Regno / Summa Theologiae (13. yy) — iktidarın Tanrı'dan halk aracılığıyla gelmesi",
+  "gerekce": "İktidarın Tanrı'dan halk aracılığıyla geldiği ve despota karşı direnilebileceği görüşü Aquinas'a aittir.",
+  "uyarilar": [
+   "b1-15 ile aynı düşünürü işaret eden neredeyse eşdeğer iki soru; bankada arka arkaya sorulduğunda tekrar etkisi yaratır."
+  ]
+ },
+ {
+  "id": "b1-17",
+  "karar": "ONAY",
+  "kitapCevabi": "B",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Padovalı Marsilius, Defensor Pacis (Barışın Savunucusu), 1324",
+  "gerekce": "Barışın Savunucusu'nun yazarı ve iktidarın sınırlandırılması teziyle anayasal devletin habercisi sayılan düşünür Padovalı Marsilius'tur.",
+  "uyarilar": []
+ },
+ {
+  "id": "b1-18",
+  "karar": "UYARI",
+  "kitapCevabi": "C",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Niccolò Machiavelli, Il Principe (Prens), 1513/1532",
+  "gerekce": "Prens'in yazarı ve siyaseti dinden ayırarak laikleştiren düşünür Machiavelli'dir.",
+  "uyarilar": [
+   "Kök Machiavelli'yi 'orta çağ düşünürü' olarak niteliyor; Machiavelli (1469-1527) Rönesans/erken modern dönem düşünürüdür. Cevabı değiştirmiyor ama kökteki dönem nitelemesi düzeltilmeli.",
+   "Kök Machiavelli'yi 'orta çağ düşünürü' diye niteliyor; Machiavelli (1469-1527) Rönesans düşünürüdür — cevabı değiştirmez ama kökteki bilgi yanlıştır."
+  ]
+ },
+ {
+  "id": "b1-19",
+  "karar": "ONAY",
+  "kitapCevabi": "A",
+  "hakemCevabi": null,
+  "hakemAlintisi": null,
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Magna Carta Libertatum (1215), özellikle md 39",
+  "gerekce": "Modern anayasaların ilk çekirdek belgesi sayılan, can ve mal güvenliği ile keyfi yakalama ve cezalandırmaya karşı güvence getiren belge 1215 Magna Carta'dır.",
+  "uyarilar": []
+ }
+]

@@ -1,0 +1,176 @@
+[
+{"id":"b15-8","grup":"C",
+ "gerekce":"Tek kusur A şıkkındaki harf hatası ('Hakların' → 'Halkların'); soru ve anahtar sağlam.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Halkların kendi kaderini tayin hakkı","B":"Ayrımcılık yasağı","C":"Cinsiyet eşitliği","D":"Yaşama hakkı","E":"Sosyal güvenlik hakkı"},
+   "dogru":"E",
+   "aciklama":"İkiz sözleşmeler hakları ikiye böler: kişisel ve siyasal haklar Kişisel ve Siyasal Haklar Uluslararası Sözleşmesi'nde, sosyal ve ekonomik haklar Ekonomik, Sosyal ve Kültürel Haklar Uluslararası Sözleşmesi'nde düzenlenir. Halkların kendi kaderini tayin hakkı (md 1), ayrımcılık yasağı (md 2 ve 26), kadın-erkek eşitliği (md 3) ve yaşama hakkı (md 6) Kişisel ve Siyasal Haklar Sözleşmesi'ndedir. Sosyal güvenlik hakkı ise Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi md 9'da yer alır; tuzak, iki sözleşmenin aynı yıl (1966) kabul edilmiş olmasının yarattığı karışıklıktır.",
+   "dayanak":"Kişisel ve Siyasal Haklar Sözleşmesi md 1, 2, 3, 6, 26; Ekonomik, Sosyal ve Kültürel Haklar Sözleşmesi md 9"},
+ "degisenler":["A şıkkı: 'Hakların kendi kaderini tayin hakkı' → 'Halkların kendi kaderini tayin hakkı'"]},
+
+{"id":"b15-12","grup":"D",
+ "gerekce":"Anahtar (18 üye) doğru kalmakla birlikte C ve D şıkları eskimiş bilgi taşıyor; güncellenince tek yanlış şık kalır.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Komite 18 üyeden oluşur.","B":"Üyelerin görev süresi 4 yıldır.","C":"Yılda üç defa toplanır.","D":"Toplantıları Cenevre'de yapılır.","E":"Üyeleri üye devletler tarafından gösterilecek adaylar arasından seçilir."},
+   "dogru":"A",
+   "aciklama":"Kadına Karşı Her Türlü Ayrımcılığın Önlenmesi Sözleşmesi md 17/1 Komitenin yürürlüğe girişte 18, otuz beşinci onaydan sonra 23 uzmandan oluşacağını söyler; bu koşul gerçekleştiği için Komite bugün 23 üyelidir. Adaylar taraf devletlerce gösterilir ve görev süresi dört yıldır (md 17/2 ve 17/5). Komite sekretaryası 2008'de Cenevre'ye taşınmış olup Komite yılda üç oturum toplanır; tuzak, 18 sayısının sözleşmenin geçiş hükmünden gelmesidir.",
+   "dayanak":"CEDAW md 17/1, 17/2, 17/5 ve md 20; Komitenin güncel çalışma düzeni (Cenevre, yılda üç oturum)"},
+ "degisenler":["C şıkkı: 'Yılda iki defa toplanır.' → 'Yılda üç defa toplanır.'","D şıkkı: 'Toplantıları New York'ta yapılır.' → 'Toplantıları Cenevre'de yapılır.'"]},
+
+{"id":"b15-13","grup":"D",
+ "gerekce":"A şıkkındaki üye sayısı eskimiş (10 → 25) ve organ adı yanlış anılmış; düzeltilince anahtar D geçerli kalır.",
+ "duzeltme":{
+   "kok":"Birleşmiş Milletler İşkence ve Diğer Zalimane, İnsanlık Dışı veya Küçültücü Muamele ve Cezaya Karşı Sözleşmeye ek protokolle oluşturulan İşkenceyi Önleme Alt Komitesi için aşağıdakilerden hangisi yanlıştır?",
+   "siklar":{"A":"Alt Komite 25 üyeden oluşur.","B":"Alt Komite üyelerinin görev süresi 4 yıldır.","C":"Alt Komite her yıl İşkenceye Karşı Komiteye rapor sunar.","D":"Taraf devlet işbirliği içinde bulunmazsa Alt Komitenin doğrudan elindeki raporu kamuoyuyla paylaşma hakkı vardır.","E":"Alt Komite, İşkenceye Karşı Komite ile işbirliği hâlinde çalışır."},
+   "dogru":"D",
+   "aciklama":"İşkenceye Karşı Sözleşmeye Ek İhtiyari Protokol md 16/4 uyarınca taraf devlet işbirliğinden kaçınırsa kamuya açıklama ya da raporu yayımlama kararını Alt Komite kendiliğinden veremez; bu kararı Alt Komitenin talebi üzerine İşkenceye Karşı Komite üye çoğunluğuyla alır. Alt Komitenin üye sayısı ellinci onaydan sonra 25'e çıkmıştır (md 5/1), görev süresi dört yıldır (md 9) ve her yıl İşkenceye Karşı Komiteye rapor sunar (md 16/3). Tuzak, önleyici ziyaret yetkisi geniş olan Alt Komiteye yayımlama kararını da vermiş sanmaktır.",
+   "dayanak":"İşkenceye Karşı Sözleşmeye Ek İhtiyari Protokol (OPCAT) md 5/1, 9, 16/3 ve 16/4"},
+ "degisenler":["Kök: 'Diğre' → 'Diğer'; sözleşme adı düzeltildi","A şıkkı: 'Komite 10 üyeden oluşur.' → 'Alt Komite 25 üyeden oluşur.'","B şıkkı: 'Komite' → 'Alt Komite'","C şıkkı: 'İşkenceyi Önleme Komitesine' → 'İşkenceye Karşı Komiteye'","D şıkkı: 'Alt Komite doğrudan ... hakkı vardır' ifadesi dilbilgisel olarak düzeltildi","E şıkkı: 'Komite alt komite olarak İşkenceyi Önleme Komitesiyle İşbirliği hâlinde çalışır.' → 'Alt Komite, İşkenceye Karşı Komite ile işbirliği hâlinde çalışır.'"]},
+
+{"id":"b15-14","grup":"D",
+ "gerekce":"Anahtar A (10 yerine 18) tartışmasız yanlış; ancak E şıkkı da sözleşmeye aykırı olduğundan iki yanlış şık vardı, E metne uygun hâle getirildi.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Komite 18 üyeden oluşur.","B":"Üyelerin görev süresi 4 yıldır.","C":"Üyeler taraf devletler tarafından gizli oyla seçilir.","D":"Komite yılda iki kez Cenevre'de toplanır.","E":"Devletler onay sırasında Komitenin soruşturma yetkisini tanımadıklarını beyan edebilir."},
+   "dogru":"A",
+   "aciklama":"İşkenceye Karşı Sözleşme md 17/1 Komitenin on uzmandan oluşacağını söyler; 18 üyeli olanlar İnsan Hakları Komitesi, Irk Ayrımcılığının Ortadan Kaldırılması Komitesi ve Kadına Karşı Ayrımcılığın Önlenmesi Komitesi gibi diğer sözleşme organlarıdır. Üyeler taraf devletlerce gizli oyla dört yıllığına seçilir (md 17/3 ve 17/5). Devletler onay ya da katılma sırasında md 20'deki soruşturma yetkisini tanımadıklarını beyan edebilir (md 28); tuzak, sözleşme organlarının üye sayılarını birbirine karıştırmaktır.",
+   "dayanak":"İşkenceye Karşı Sözleşme (CAT) md 17/1, 17/3, 17/5, md 20 ve md 28"},
+ "degisenler":["E şıkkı: 'Sözleşmeyi onaylayan devletler komitenin soruşturma yetkisini zorunlu olarak kabul etmek zorunda.' → 'Devletler onay sırasında Komitenin soruşturma yetkisini tanımadıklarını beyan edebilir.'"]},
+
+{"id":"b15-16","grup":"C",
+ "gerekce":"Tek kusur D şıkkındaki organ adının yanlış yazılması; anahtar E ve soru kurgusu sağlam.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Taraf devletler sözleşmeyi onayladıktan sonra bir yıl içinde, sözleşme gereği üstlendikleri yükümlülükleri yerine getirmek için aldıkları önlemler hakkında rapor sunarlar.","B":"Taraf devletler her 4 yılda bir tamamlayıcı rapor sunarlar.","C":"Birleşmiş Milletler Genel Sekreteri taraf devletlerce gönderilen raporları sözleşmeye taraf tüm devletlere gönderir.","D":"Taraf devletler tarafından sunulan raporlar İşkenceye Karşı Komite tarafından incelenir.","E":"Taraf devletler tarafından sunulan raporlar inceleme neticesinde yaptırım olarak kamuoyuna açıklanır."},
+   "dogru":"E",
+   "aciklama":"İşkenceye Karşı Sözleşme md 19'daki rapor usulünde bir yaptırım öngörülmemiştir: taraf devlet onaydan sonraki bir yıl içinde ilk raporunu, ardından dört yılda bir tamamlayıcı rapor sunar (md 19/1), raporlar Genel Sekreter aracılığıyla taraf devletlere iletilir (md 19/2) ve Komite genel yorumlarını ilgili devlete bildirip yıllık raporuna alabilir (md 19/3-4). Tuzak, rapor usulünü yaptırım mekanizması sanmaktır; rapor usulünün gücü kamuoyu denetimi değil diyalogdur.",
+   "dayanak":"İşkenceye Karşı Sözleşme (CAT) md 19/1-4"},
+ "degisenler":["D şıkkı: 'İşkenceyi Önleme Komitesi' → 'İşkenceye Karşı Komite'","A ve C şıklarında bozuk cümle yapısı düzeltildi (anlam değişmedi)","B şıkkı: 'Taraf devlet ... sunarlar' → 'Taraf devletler ... sunarlar'"]},
+
+{"id":"b15-17","grup":"C",
+ "gerekce":"Tek kusur D şıkkındaki organ adının yanlış yazılması; anahtar E (6 ay yerine 12 ay) sağlam.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Bir taraf devlet, sözleşmeye taraf diğer bir devletin sözleşme hükümlerini uygulamadığını düşündüğü takdirde yazılı bir başvuruyla o devletin dikkatini çeker.","B":"Başvuruyu alan devlet 3 ay içinde meseleyi izah eden bir açıklamayı başvuruda bulunan devlete gönderir.","C":"İlk başvurunun alınmasından itibaren 6 ay içinde her iki tarafı da tatmin eden bir sonuç alınamazsa konuyu Komiteye götürme hakkı doğar.","D":"Konuyu her iki devlet de İşkenceye Karşı Komiteye götürebilir.","E":"Komiteye yapılan başvuru üzerine Komite 6 ay içinde konuyla ilgili bir rapor sunar."},
+   "dogru":"E",
+   "aciklama":"İşkenceye Karşı Sözleşme md 21/1-h uyarınca Komite, bildirimin alınmasından itibaren on iki ay içinde rapor sunar; şıktaki altı aylık süre metne aykırıdır. Usulde önce yazılı başvuru yapılır, muhatap devlet üç ay içinde açıklama gönderir (md 21/1-a) ve altı ay içinde çözüm sağlanamazsa taraflardan her biri konuyu Komiteye taşıyabilir (md 21/1-b). Tuzak, usulde geçen üç ve altı aylık sürelerin rapor süresiyle karıştırılmasıdır.",
+   "dayanak":"İşkenceye Karşı Sözleşme (CAT) md 21/1-a, 21/1-b, 21/1-h"},
+ "degisenler":["D şıkkı: 'İşkenceyi Önleme Komitesine' → 'İşkenceye Karşı Komiteye'","A, C, D, E şıklarında bozuk cümle yapısı ve 'içinde/için de' yazımı düzeltildi (anlam değişmedi)"]},
+
+{"id":"b15-19","grup":"D",
+ "gerekce":"E şıkkı 2014'te yürürlüğe giren Üçüncü İhtiyari Protokol nedeniyle artık doğru hâle geldiğinden geçerli yanlış şık kalmamıştı; şık, sözleşmenin özgün denetim düzenini soracak biçimde güncellendi.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Komite 18 üyeden oluşur.","B":"Komite üyelerinin görev süresi 4 yıldır.","C":"Komite yılda 3 kez toplanır.","D":"Komite toplantılarını Cenevre'de yapar.","E":"Komiteye bireysel başvuru yolu, Çocuk Haklarına Dair Sözleşmenin kendi metniyle tanınmıştır."},
+   "dogru":"E",
+   "aciklama":"Çocuk Haklarına Dair Sözleşmenin özgün denetim düzeni yalnızca devlet raporları üzerine kuruludur; Komiteye bireysel başvuru yolu sözleşme metniyle değil, 2011'de kabul edilip 14 Nisan 2014'te yürürlüğe giren Üçüncü İhtiyari Protokol ile ve yalnızca bu protokole taraf devletler bakımından açılmıştır (Türkiye protokole taraf değildir). Komite, 1995 değişikliğiyle 18 üyeye çıkmış olup üyeler dört yıllığına seçilir ve Komite Cenevre'de yılda üç oturum toplanır (md 43/2, 43/6, 43/10). Tuzak, protokolle sonradan açılan yolu sözleşmenin kendi denetim usulü sanmaktır.",
+   "dayanak":"Çocuk Haklarına Dair Sözleşme md 43/2, 43/6, 43/10; Sözleşmeye Ek Üçüncü İhtiyari Protokol (2011, yürürlük 14.4.2014)"},
+ "degisenler":["E şıkkı: 'Komite bireysel Başvuru yolunu kabul etmiştir.' → 'Komiteye bireysel başvuru yolu, Çocuk Haklarına Dair Sözleşmenin kendi metniyle tanınmıştır.'"]},
+
+{"id":"b16-3","grup":"D",
+ "gerekce":"Anahtar B (en çok 3 temsilci) tartışmasız yanlış; ancak depoziterlik Genel Sekretere ait olduğundan D de yanlıştı, D doğru bir Genel Kurul yetkisiyle değiştirildi.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Genel Kurul, Birleşmiş Milletlere üye devletlerin temsilcilerinden oluşur.","B":"Her üye devletin Genel Kurulda en çok 3 temsilcisi bulunur.","C":"Birleşmiş Milletler Şartı Genel Kurula insan hakları konularında inceleme yapma ve tavsiyede bulunma yetkisi vermiştir.","D":"Uluslararası insan hakları sözleşmelerinin metinlerini kabul ederek devletlerin imzasına açar.","E":"Uluslararası insan hakları sözleşmelerinin yerine getirilmesinde devletlere yapılacak lojistik ve teknolojik destekleri koordine eder."},
+   "dogru":"B",
+   "aciklama":"Birleşmiş Milletler Şartı md 9/2 her üye devletin Genel Kurulda en çok beş temsilcisi bulunabileceğini söyler; 'en çok üç temsilci' ifadesi Şart metnine aykırıdır. Genel Kurul üye devletlerin temsilcilerinden oluşur (md 9/1) ve insan hakları alanında inceleme yaptırma ile tavsiyede bulunma yetkisine sahiptir (md 13/1-b); ikiz sözleşmeler gibi metinleri kabul edip imzaya açan da Genel Kuruldur. Tuzak, çok taraflı Birleşmiş Milletler antlaşmalarında emanetçinin (depoziterin) Genel Kurul değil Genel Sekreter olmasıdır.",
+   "dayanak":"Birleşmiş Milletler Şartı md 9/1-2 ve md 13/1-b"},
+ "degisenler":["D şıkkı: 'Uluslararası antlaşma sözleşmelerde DEPOZİTER (emanetçi) olarak hareket eder.' → 'Uluslararası insan hakları sözleşmelerinin metinlerini kabul ederek devletlerin imzasına açar.'","A, C, E şıklarında büyük harf ve yazım düzeltmeleri (anlam değişmedi)"]},
+
+{"id":"b16-12","grup":"D",
+ "gerekce":"Anahtar B (18 yerine 15 yargıç) tartışmasız yanlış; ancak 'Güvenlik Konseyinin tavsiyesi üzerine seçim' usulü Statüde bulunmadığından D de yanlıştı, D Statüye uygun biçimde değiştirildi.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Birleşmiş Milletlerin başlıca yargı organıdır.","B":"18 yargıçtan oluşur.","C":"Yargıçlar Genel Kurul tarafından seçilir.","D":"Yargıçlar Güvenlik Konseyi tarafından da seçilir.","E":"1946 yılı itibarıyla göreve başlamıştır."},
+   "dogru":"B",
+   "aciklama":"Uluslararası Adalet Divanı Statüsü md 3/1 uyarınca Divan on beş yargıçtan oluşur; on sekiz sayısı Uluslararası Ceza Mahkemesine aittir. Divan Birleşmiş Milletlerin başlıca yargı organıdır (Şart md 92) ve 1946'da göreve başlamıştır. Yargıçlar Sürekli Hakem Mahkemesi ulusal gruplarınca gösterilen adaylar arasından Genel Kurul ile Güvenlik Konseyinin birbirinden bağımsız oylamalarıyla seçilir (Statü md 4/1, 8, 10); tuzak, iki mahkemenin yargıç sayılarını karıştırmaktır.",
+   "dayanak":"Uluslararası Adalet Divanı Statüsü md 3/1, 4/1, 8, 10; Birleşmiş Milletler Şartı md 92"},
+ "degisenler":["A şıkkı: 'Adli organıdır' → 'başlıca yargı organıdır'","D şıkkı: 'Yargıçlar Güvenlik Konseyinin tavsiyesi üzerine seçilir.' → 'Yargıçlar Güvenlik Konseyi tarafından da seçilir.'","C ve E şıklarında yazım düzeltmesi ('Genel kurul' → 'Genel Kurul', 'itibariyle' → 'itibarıyla')"]},
+
+{"id":"b16-13","grup":"C",
+ "gerekce":"Tek kusur E şıkkında organ adının 'İnsan Hakları İnceleme Komisyonu' olarak yanlış yazılması; anahtar E ve kurgu sağlam.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Birleşmiş Milletler Ekonomik ve Sosyal Konseyin 1235 sayılı kararına dayandığı için bu isimle anılır.","B":"Bu karar İnsan Hakları Komisyonunun talebiyle alınmıştır.","C":"İnsan Hakları Komisyonu bu kararla ülkelerdeki insan hakları ihlallerini araştırma ve inceleme izni istemiştir.","D":"1235 sayılı karar alınana kadar İnsan Hakları Komisyonu kendisine yapılan başvurular bakımından insan hakları ihlallerini inceleme yetkisi olmadığına karar veriyordu.","E":"Karar ile İnsan Hakları Komisyonuna insan hakları ihlallerini inceleme, araştırma ve sorumlular hakkında yaptırım uygulama yetkisi verilmiştir."},
+   "dogru":"E",
+   "aciklama":"Ekonomik ve Sosyal Konseyin 6 Haziran 1967 tarihli 1235 (XLII) sayılı kararı, İnsan Hakları Komisyonuna ağır ve sistematik ihlallere ilişkin bilgileri inceleme, kapsamlı çalışma yapma ve konuyu alenen görüşme yetkisi tanımıştır; sorumlular hakkında yaptırım uygulama yetkisi hiçbir zaman verilmemiştir. Karardan önce Komisyon, 1947 tarihli 75 (V) sayılı kararla benimsenen anlayış gereği bireysel başvurular karşısında kendisini yetkisiz sayıyordu. Tuzak, aleni tartışma ve raporlama yetkisini yaptırım yetkisiyle karıştırmaktır.",
+   "dayanak":"ECOSOC kararı 1235 (XLII), 6 Haziran 1967; ECOSOC kararı 75 (V), 1947"},
+ "degisenler":["E şıkkı: 'İnsan Hakları İnceleme Komisyonuna' → 'İnsan Hakları Komisyonuna'","A, C, D şıklarında bozuk cümle yapısı ve noktalama düzeltildi (anlam değişmedi)"]},
+
+{"id":"b16-14","grup":"C",
+ "gerekce":"Tek kusur B şıkkında organ adının 'İnsan Hakları İnceleme Komisyonu' olarak yanlış yazılması; anahtar E (gizlilik) sağlam.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Ekonomik ve Sosyal Konseyin 1503 sayılı kararına dayanır.","B":"Kararla İnsan Hakları Komisyonuna soruşturma izni verilmiştir.","C":"1235 sayılı kararla eksik kalan kısımlar 1503 sayılı kararla tamamlanmıştır.","D":"Bu karara istinaden yapılan başvurular Birleşmiş Milletler Genel Sekreterine yapılır.","E":"Başvuru ve görüşmeler açık yürütülür."},
+   "dogru":"E",
+   "aciklama":"Ekonomik ve Sosyal Konseyin 27 Mayıs 1970 tarihli 1503 (XLVIII) sayılı kararıyla kurulan usulün ayırt edici özelliği gizliliktir: başvurular ve alt komisyon ile Komisyon aşamasındaki görüşmeler kapalı yürütülür. Başvurular Genel Sekretere iletilir ve süzgeçten geçirilerek İnsan Hakları Komisyonunun önüne gelir; usul, aleni tartışmaya dayanan 1235 usulünü tamamlar. Tuzak, iki usulü birbirine karıştırmaktır: aleni olan 1235, gizli olan 1503'tür.",
+   "dayanak":"ECOSOC kararı 1503 (XLVIII), 27 Mayıs 1970"},
+ "degisenler":["B şıkkı: 'İnsan Hakları İnceleme Komisyonuna' → 'İnsan Hakları Komisyonuna'"]},
+
+{"id":"b17-2","grup":"C",
+ "gerekce":"Tek kusur E şıkkındaki yazım hatası ('Bürüksel' → 'Brüksel').",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Strazburg","B":"Lahey","C":"Cenevre","D":"New York","E":"Brüksel"},
+   "dogru":"B",
+   "aciklama":"Uluslararası Adalet Divanı Statüsü md 22/1 Divanın merkezinin Lahey'de bulunacağını söyler; Divan burada Barış Sarayı'nda çalışır. Çeldiriciler başka kurumların merkezleridir: Strazburg Avrupa İnsan Hakları Mahkemesinin, Cenevre Birleşmiş Milletler insan hakları organlarının, New York Birleşmiş Milletler Genel Merkezinin, Brüksel ise Avrupa Birliği kurumlarının bulunduğu şehirdir.",
+   "dayanak":"Uluslararası Adalet Divanı Statüsü md 22/1"},
+ "degisenler":["E şıkkı: 'Bürüksel' → 'Brüksel'"]},
+
+{"id":"b17-3","grup":"C",
+ "gerekce":"Tek kusur C şıkkına ülke yerine şehir adı konmuş olması; şık aynı kategoriye ('İtalya') çekildi, güçlüğü değişmedi.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"ABD","B":"Fransa","C":"İtalya","D":"Hollanda","E":"İngiltere"},
+   "dogru":"D",
+   "aciklama":"Uluslararası Adalet Divanı Statüsü md 22/1 uyarınca Divanın merkezi Lahey'dedir; Lahey Hollanda sınırları içinde bulunduğundan Divan bu ülkede faaliyet gösterir. Tuzak, Lahey ile diğer uluslararası merkezlerin ülkelerini karıştırmaktır: Strazburg Fransa'da, Birleşmiş Milletler Genel Merkezi ABD'dedir.",
+   "dayanak":"Uluslararası Adalet Divanı Statüsü md 22/1"},
+ "degisenler":["C şıkkı: 'Roma' → 'İtalya' (kök ülke sorduğu için şık kategorisi düzeltildi)"]},
+
+{"id":"b17-4","grup":"D",
+ "gerekce":"Statü md 8'e göre Genel Kurul kadar Güvenlik Konseyi de seçici organ olduğundan iki şık savunulabiliyordu; B şıkkı iki organı birlikte verecek biçimde düzeltilerek tek doğru cevap sağlandı.",
+ "duzeltme":{
+   "kok":null,
+   "siklar":{"A":"Parlamenter Meclis","B":"Birleşmiş Milletler Genel Kurulu ve Güvenlik Konseyi","C":"Yalnızca Güvenlik Konseyi","D":"Taraf Devletler","E":"Ekonomik ve Sosyal Konsey"},
+   "dogru":"B",
+   "aciklama":"Uluslararası Adalet Divanı Statüsü md 8 uyarınca yargıçlar Genel Kurul ile Güvenlik Konseyinin birbirinden bağımsız yaptığı oylamalarla seçilir ve md 10/1 gereği her iki organda da salt çoğunluğu alan aday seçilmiş sayılır; adaylar Sürekli Hakem Mahkemesi ulusal gruplarınca gösterilir (md 4/1). Bu oylamada Güvenlik Konseyinin daimî üyelerinin veto hakkı işlemez. Tuzak, seçimi tek bir organa bağlamak ya da Avrupa Konseyi Parlamenter Meclisince seçilen Avrupa İnsan Hakları Mahkemesi yargıçlarıyla karıştırmaktır.",
+   "dayanak":"Uluslararası Adalet Divanı Statüsü md 4/1, md 8, md 10/1"},
+ "degisenler":["B şıkkı: 'Birleşmiş Milletler Genel Kurulu' → 'Birleşmiş Milletler Genel Kurulu ve Güvenlik Konseyi'","C şıkkı: 'Güvenlik Konseyi' → 'Yalnızca Güvenlik Konseyi'"]},
+
+{"id":"b17-6","grup":"E",
+ "gerekce":"Şıkların hiçbiri Statüye uymuyor: md 8 iki organın birbirinden bağımsız seçim yapmasını, md 10/1 her iki organda salt çoğunluk aranmasını emreder; anahtar C'deki 'Güvenlik Konseyinin tavsiyesi üzerine seçim' usulü BM Şartı md 97'deki Genel Sekreter atamasına aittir, A ve B'deki 10-5 dağılımının ise dayanağı yoktur. Kurtarmak için şık kümesinin tamamı yeniden yazılmalı ve doğru şık 'Yargıçların tamamı Genel Kurul ile Güvenlik Konseyinde birbirinden bağımsız yapılan oylamalarda, her iki organda salt çoğunluk alarak seçilir.' biçiminde kurulmalıdır; kalan dört çeldirici (tamamı Güvenlik Konseyince, tamamı Genel Kurulca, Güvenlik Konseyinin tavsiyesi üzerine Genel Kurulca, sayısal bölüşüm) yeniden düzenlenmelidir. Doğru şıkkın içeriği kitabın anahtarını değiştirdiği için editoryal karar insana bırakıldı.",
+ "duzeltme":null,
+ "degisenler":[]},
+
+{"id":"b17-11","grup":"C",
+ "gerekce":"Tek kusur kökteki yazım hatası ('Caza' → 'Ceza').",
+ "duzeltme":{
+   "kok":"Uluslararası Ceza Mahkemesi hangi ülke sınırları içerisinde yer almaktadır?",
+   "siklar":{"A":"Hollanda","B":"ABD","C":"Fransa","D":"İngiltere","E":"İtalya"},
+   "dogru":"A",
+   "aciklama":"Roma Statüsü md 3/1 uyarınca Mahkemenin merkezi ev sahibi devlet Hollanda'nın Lahey şehridir. Tuzak, mahkemenin kurucu antlaşmasının 1998'de Roma'da kabul edilmiş olmasından hareketle merkezi İtalya sanmaktır; Roma yalnızca statünün kabul edildiği şehirdir.",
+   "dayanak":"Uluslararası Ceza Mahkemesi Roma Statüsü md 3/1"},
+ "degisenler":["Kök: 'Uluslararası Caza Mahkemesi' → 'Uluslararası Ceza Mahkemesi'"]},
+
+{"id":"b17-12","grup":"C",
+ "gerekce":"Kusurlar yalnızca yazım: kökte 'Caza', D şıkkında 'Bürüksel'.",
+ "duzeltme":{
+   "kok":"Uluslararası Ceza Mahkemesi hangi şehirde faaliyet göstermektedir?",
+   "siklar":{"A":"Roma","B":"Lahey","C":"Strazburg","D":"Brüksel","E":"New York"},
+   "dogru":"B",
+   "aciklama":"Roma Statüsü md 3/1 Mahkemenin merkezinin Lahey olduğunu belirtir. Tuzak, statünün 1998'de kabul edildiği Roma'yı merkez sanmaktır; Strazburg Avrupa İnsan Hakları Mahkemesinin, New York Birleşmiş Milletler Genel Merkezinin, Brüksel ise Avrupa Birliği kurumlarının bulunduğu şehirdir.",
+   "dayanak":"Uluslararası Ceza Mahkemesi Roma Statüsü md 3/1"},
+ "degisenler":["Kök: 'Caza' → 'Ceza'","D şıkkı: 'Bürüksel' → 'Brüksel'"]},
+
+{"id":"b17-13","grup":"C",
+ "gerekce":"Tek kusur kökteki yazım hatası ('Caza' → 'Ceza').",
+ "duzeltme":{
+   "kok":"Uluslararası Ceza Mahkemesi kaç yargıçtan oluşur?",
+   "siklar":{"A":"54","B":"18","C":"15","D":"30","E":"12"},
+   "dogru":"B",
+   "aciklama":"Roma Statüsü md 36/1 uyarınca Uluslararası Ceza Mahkemesi on sekiz yargıçtan oluşur; bu sayı Statüde öngörülen usulle Taraf Devletler Meclisi kararıyla artırılabilir. Yargıçlar dokuz yıllığına seçilir, ilk seçimde kura ile üçte biri üç, üçte biri altı, üçte biri dokuz yıllık sürelerle görev yapar. Tuzak, sayıyı diğer organlarla karıştırmaktır: 15 Uluslararası Adalet Divanının yargıç sayısı, 54 ise Ekonomik ve Sosyal Konseyin üye sayısıdır.",
+   "dayanak":"Uluslararası Ceza Mahkemesi Roma Statüsü md 36/1 ve md 36/9"},
+ "degisenler":["Kök: 'Uluslararası Caza Mahkemesi' → 'Uluslararası Ceza Mahkemesi'"]}
+]

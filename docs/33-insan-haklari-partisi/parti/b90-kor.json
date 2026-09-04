@@ -1,0 +1,81 @@
+{
+ "bolum": 90,
+ "baslik": "DÜZELTME — metni onarılan sorular (karışık dayanak)",
+ "dayanak": "Her sorunun dayanağı ayrı; aşağıdaki listeye bak.",
+ "kaynakNotu": {
+  "b9-8": "Tip A — mevzuat/anayasa.md + mevzuat/6216-aym-kanunu.md",
+  "b10-17": "Tip A — mevzuat/anayasa.md + mevzuat/6216-aym-kanunu.md",
+  "b10-21": "Tip A — mevzuat/anayasa.md + mevzuat/6216-aym-kanunu.md",
+  "b11-9": "Tip A — mevzuat/3686-ihik.md",
+  "b19-18": "Tip A — mevzuat/aihs.md",
+  "b21-3": "Tip B — AB antlaşmaları (ABA/ABİA), ABAD Statüsü"
+ },
+ "sorular": [
+  {
+   "id": "b9-8",
+   "kok": "TBMM iç tüzüğünün esas bakımından iptal davası açma süresi kaç gündür?",
+   "siklar": {
+    "A": "On",
+    "B": "Kırk beş",
+    "C": "Altmış",
+    "D": "Yedi",
+    "E": "Otuz"
+   }
+  },
+  {
+   "id": "b10-17",
+   "kok": "Yüce Divan tarafından verilen hükme karşı yeniden inceleme başvurusu, Yargıtay Cumhuriyet Başsavcısı veya Yargıtay Cumhuriyet Başsavcı vekili, sanık, müdafi, katılan veya vekili tarafından yapılabilir. Yeniden inceleme başvurusu hükmün açıklanmasından itibaren kaç gün içinde yapılır?",
+   "siklar": {
+    "A": "Beş",
+    "B": "Üç",
+    "C": "Yedi",
+    "D": "On",
+    "E": "On beş"
+   }
+  },
+  {
+   "id": "b10-21",
+   "kok": "Avrupa İnsan Hakları Mahkemesinin, Anayasa Mahkemesinin siyasi parti kapatma veya Yüce Divan sıfatıyla verdiği bir kararının Avrupa İnsan Hakları Sözleşmesi ve eki protokollerin ihlali suretiyle verildiğine hükmetmesi hâlinde, Avrupa İnsan Hakları Mahkemesi kararının kesinleştiği tarihten itibaren ne kadar süre içinde Anayasa Mahkemesinden yargılamanın yenilenmesi talebinde bulunulabilir?",
+   "siklar": {
+    "A": "Bir ay",
+    "B": "Üç ay",
+    "C": "Bir yıl",
+    "D": "Beş ay",
+    "E": "Otuz gün"
+   }
+  },
+  {
+   "id": "b11-9",
+   "kok": "I. Üye tam sayısının en az üçte biri ile toplanır. II. Toplantıya katılanların salt çoğunluğuyla karar verilir. III. Karar yeter sayısı üye tam sayısının dörtte birinden az olamaz. TBMM İnsan Hakları İnceleme Komisyonu toplantı ve karar yeter sayıları ile alakalı aşağıdakilerden yukarıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "I II",
+    "E": "I II III"
+   }
+  },
+  {
+   "id": "b19-18",
+   "kok": "Avrupa İnsan Hakları Mahkemesine bireysel Başvuru süresini 6 aydan 4 aya inmesini öngören fakat üye devletlerin tamamı tarafından imzalanıp onaylanmayan Avrupa İnsan Hakları Sözleşmesi Ek protokolü aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "15",
+    "B": "17",
+    "C": "16",
+    "D": "18",
+    "E": "13"
+   }
+  },
+  {
+   "id": "b21-3",
+   "kok": "Avrupa Toplulukları Adalet Divanı merkezi neresidir?",
+   "siklar": {
+    "A": "Strazburg",
+    "B": "Cenevre",
+    "C": "Lahey",
+    "D": "Lüksemburg",
+    "E": "New York"
+   }
+  }
+ ]
+}
