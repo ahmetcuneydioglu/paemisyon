@@ -63,6 +63,10 @@ export default function ExamReviewPage() {
   const [ders, setDers] = useState<string>('hepsi');
   const [notice, setNotice] = useState<string | null>(null);
   const [islemde, setIslemde] = useState<string | null>(null);
+  // Aday gözüyle önizleme: kaynak etiketi son kullanıcıya gösterilmiyor
+  // (4 Eylül 2026 kararı) ama admin burada görüyor. "Adayın gördüğü bu mu?"
+  // sorusunu ekran değiştirmeden yanıtlar.
+  const [adayGozu, setAdayGozu] = useState(false);
 
   const q = useQuery({
     queryKey: ['admin-exam-inceleme', id],
@@ -124,6 +128,17 @@ export default function ExamReviewPage() {
             <div className="flex items-center gap-3">
               <StatusBadge status={veri.exam.status} />
               <button
+                onClick={() => setAdayGozu((v) => !v)}
+                aria-pressed={adayGozu}
+                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition ${
+                  adayGozu
+                    ? 'bg-slate-800 text-white'
+                    : 'border border-slate-300 hover:bg-slate-50'
+                }`}
+              >
+                👁 Aday gözüyle
+              </button>
+              <button
                 onClick={() => window.print()}
                 className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50"
               >
@@ -148,6 +163,13 @@ export default function ExamReviewPage() {
         {notice && (
           <div className="mb-4 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-800">
             {notice}
+          </div>
+        )}
+        {adayGozu && (
+          <div className="mb-4 rounded-lg border border-slate-800 bg-slate-800 p-3 text-sm text-white">
+            <strong>Aday gözüyle.</strong> Denemeyi çözen kişinin sonuç ekranında gördüğü hâl:
+            kaynak etiketi, ders/konu başlığı, bayraklar ve düzenleme düğmeleri gizli. Adayın
+            kendi işaretlediği şık burada yok — bu bir soru önizlemesi, bir katılım değil.
           </div>
         )}
 
@@ -203,6 +225,7 @@ export default function ExamReviewPage() {
             key={s.questionId}
             soru={s}
             taslak={taslak}
+            adayGozu={adayGozu}
             islemde={islemde === s.questionId}
             onDegistir={() => cikar.mutate({ questionId: s.questionId, yerine: true })}
             onCikar={() => {
@@ -245,12 +268,14 @@ function Chip({
 function SoruKarti({
   soru,
   taslak,
+  adayGozu,
   islemde,
   onDegistir,
   onCikar,
 }: {
   soru: ExamReviewQuestion;
   taslak: boolean;
+  adayGozu: boolean;
   islemde: boolean;
   onDegistir: () => void;
   onCikar: () => void;
@@ -260,12 +285,15 @@ function SoruKarti({
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <span className="text-xs font-bold text-slate-400">{soru.order}.</span>
-          <span className="ml-2 text-xs text-slate-500">
-            {soru.courseName} / {soru.topicName}
-            {soru.articleNo && ` · md. ${soru.articleNo}`}
-          </span>
+          {/* Ders/konu başlığı yalnız yönetimde; aday sonuç ekranında görmez. */}
+          {!adayGozu && (
+            <span className="ml-2 text-xs text-slate-500">
+              {soru.courseName} / {soru.topicName}
+              {soru.articleNo && ` · md. ${soru.articleNo}`}
+            </span>
+          )}
         </div>
-        {taslak && (
+        {taslak && !adayGozu && (
           <div className="flex shrink-0 gap-2 print:hidden">
             <button
               onClick={onDegistir}
@@ -285,7 +313,7 @@ function SoruKarti({
         )}
       </div>
 
-      {soru.bayraklar.length > 0 && (
+      {!adayGozu && soru.bayraklar.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-1.5">
           {soru.bayraklar.map((b) => (
             <span
@@ -316,26 +344,46 @@ function SoruKarti({
         ))}
       </ul>
 
-      <div className="mt-3 space-y-1 border-t border-slate-100 pt-3 text-xs text-slate-500">
-        <div>
-          <span className="font-semibold text-slate-600">Kaynak:</span>{' '}
-          {soru.sourceLabel || <span className="text-amber-700">— yok —</span>}
+      {adayGozu ? (
+        // Adayın sonuç ekranındaki karşılığı: yalnız açıklama kutusu.
+        // Kaynak satırı yok — hiçbir son kullanıcıya gösterilmiyor.
+        soru.explanation ? (
+          <div className="mt-3 rounded-lg bg-slate-50 p-3">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+              Açıklama
+            </div>
+            <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-slate-700">
+              {soru.explanation}
+            </p>
+          </div>
+        ) : (
+          <p className="mt-3 text-xs italic text-slate-400">
+            Bu soruda açıklama yok — aday sınavdan sonra hiçbir geri bildirim görmez.
+          </p>
+        )
+      ) : (
+        <div className="mt-3 space-y-1 border-t border-slate-100 pt-3 text-xs text-slate-500">
+          <div>
+            <span className="font-semibold text-slate-600">Kaynak:</span>{' '}
+            {soru.sourceLabel || <span className="text-amber-700">— yok —</span>}
+            <span className="ml-1 text-slate-400">(yalnız panelde görünür)</span>
+          </div>
+          <div>
+            <span className="font-semibold text-slate-600">Açıklama:</span>{' '}
+            {soru.explanation ? (
+              <span className="whitespace-pre-wrap">{soru.explanation}</span>
+            ) : (
+              <span className="text-amber-700">— yok —</span>
+            )}
+          </div>
+          <div className="print:hidden">
+            {soru.usageCount} denemede kullanıldı
+            {soru.lastUsedIn &&
+              ` · en son: ${soru.lastUsedIn.title} (${new Date(soru.lastUsedIn.startAt).toLocaleDateString('tr-TR')})`}
+            {' · '}sürüm v{soru.versionNo}
+          </div>
         </div>
-        <div>
-          <span className="font-semibold text-slate-600">Açıklama:</span>{' '}
-          {soru.explanation ? (
-            <span className="whitespace-pre-wrap">{soru.explanation}</span>
-          ) : (
-            <span className="text-amber-700">— yok —</span>
-          )}
-        </div>
-        <div className="print:hidden">
-          {soru.usageCount} denemede kullanıldı
-          {soru.lastUsedIn &&
-            ` · en son: ${soru.lastUsedIn.title} (${new Date(soru.lastUsedIn.startAt).toLocaleDateString('tr-TR')})`}
-          {' · '}sürüm v{soru.versionNo}
-        </div>
-      </div>
+      )}
     </Card>
   );
 }
