@@ -13,7 +13,14 @@ import { PrismaClient } from "@prisma/client";
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
-const prisma = new PrismaClient();
+// Supabase pooler 15 baglanti limitli: proje kurali geregi scriptler tek
+// baglantiyla calisir, yoksa API'nin slotlarini yer.
+const DB_URL = process.env.DATABASE_URL!;
+const prisma = new PrismaClient({
+  datasources: {
+    db: { url: DB_URL.includes("?") ? `${DB_URL}&connection_limit=1` : `${DB_URL}?connection_limit=1` },
+  },
+});
 
 // ── Ayarlar ────────────────────────────────────────────────────────────────
 const OUT_DIR = "telegram-export";
