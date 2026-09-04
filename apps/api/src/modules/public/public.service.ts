@@ -129,7 +129,7 @@ export class PublicService {
     if (!version) throw new BadRequestException('Geçersiz soru.');
     const chosen = version.options.find((o) => o.id === optionId);
     if (!chosen) throw new BadRequestException('Geçersiz şık.');
-    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    const showSource = await this.settings.showQuestionSource();
     return {
       isCorrect: chosen.isCorrect,
       correctOptionId: version.options.find((o) => o.isCorrect)?.id ?? null,
@@ -243,7 +243,7 @@ export class PublicService {
     if (!version) throw new BadRequestException('Geçersiz soru.');
     const chosen = version.options.find((o) => o.id === optionId);
     if (!chosen) throw new BadRequestException('Geçersiz şık.');
-    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    const showSource = await this.settings.showQuestionSource();
     return {
       isCorrect: chosen.isCorrect,
       correctOptionId: version.options.find((o) => o.isCorrect)?.id ?? null,
@@ -405,7 +405,7 @@ export class PublicService {
         },
       },
     });
-    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    const showSource = await this.settings.showQuestionSource();
 
     // ── Madde Isı Haritası (Doc 25 §4 — Türkiye'de eşi olmayan veri):
     // bu kanunda hangi maddeden kaç soru çıkmış. Sayısal maddeler numaraya
@@ -547,7 +547,7 @@ export class PublicService {
       orderBy: { createdAt: 'asc' },
       select: { currentVersion: { select: { stem: true, sourceLabel: true } } },
     });
-    const showSource = await this.settings.getBool(SETTING_KEYS.showQuestionSource, true);
+    const showSource = await this.settings.showQuestionSource();
     const bySource = new Map<string, number>();
     for (const q of questions) {
       const s = q.currentVersion?.sourceLabel;

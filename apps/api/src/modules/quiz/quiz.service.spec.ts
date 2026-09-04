@@ -50,9 +50,15 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
       findFirst: jest.fn().mockResolvedValue(null),
     },
   };
-  const settings = { getBool: jest.fn().mockResolvedValue(true) };
+  // Kaynak etiketi görünürlüğü artık tek noktadan (showQuestionSource) okunur;
+  // varsayılanı KAPALI. Testte AÇIK tutulur ki alan gerçekten dolduruluyor mu
+  // görülsün — kapalı hâli ayrı bir testle doğrulanır.
+  const settings = {
+    getBool: jest.fn().mockResolvedValue(true),
+    showQuestionSource: jest.fn().mockResolvedValue(true),
+  };
   const service = new QuizService(prisma as never, {} as never, {} as never, settings as never);
-  return { service, prisma, selectedId, correctId };
+  return { service, prisma, settings, selectedId, correctId };
 }
 
 describe('QuizService.submitAnswer', () => {
@@ -80,6 +86,51 @@ describe('QuizService.submitAnswer', () => {
         source: 'Kaynak',
       }),
     );
+  });
+
+  // Kaynak etiketi HİÇBİR son kullanıcıya gösterilmez (kullanıcı kararı,
+  // 4 Eylül 2026); yalnız panelde admin görür. İki kapı var ve ikisi de ayrı
+  // ayrı tutmalı: panel anahtarı ve denemeye özel sabit gizleme.
+  it('kaynak etiketi ayarı KAPALIYKEN alıştırmada da dönmez', async () => {
+    const { service, settings } = setup();
+    settings.showQuestionSource.mockResolvedValue(false);
+    const result = (await service.submitAnswer(
+      premiumUser,
+      '00000000-0000-0000-0000-000000000006',
+      {
+        questionId: '00000000-0000-0000-0000-000000000002',
+        questionVersionId: VERSION_ID,
+        selectedOptionId: '00000000-0000-0000-0000-000000000004',
+      },
+    )) as { source: string | null; explanation: string | null };
+    expect(result.source).toBeNull();
+    // Açıklama gizlenmez — aday geri bildirimini görmeye devam eder.
+    expect(result.explanation).toBe('Açıklama');
+  });
+
+  it('DENEMEDE ayar AÇIK olsa bile kaynak etiketi dönmez', async () => {
+    const { service, prisma, settings } = setup();
+    settings.showQuestionSource.mockResolvedValue(true);
+    // Canlı cevap gösterimi AÇIK bir deneme: geri bildirim verilir ama etiket yok.
+    prisma.quizSession.findFirst.mockResolvedValue({
+      status: 'in_progress',
+      mode: 'deneme',
+      startedAt: new Date(),
+      plannedDurationSeconds: null,
+      questionOrder: [VERSION_ID],
+      exam: { liveAnswerReveal: true },
+    });
+    const result = (await service.submitAnswer(
+      premiumUser,
+      '00000000-0000-0000-0000-000000000006',
+      {
+        questionId: '00000000-0000-0000-0000-000000000002',
+        questionVersionId: VERSION_ID,
+        selectedOptionId: '00000000-0000-0000-0000-000000000004',
+      },
+    )) as { source: string | null; explanation: string | null };
+    expect(result.source).toBeNull();
+    expect(result.explanation).toBe('Açıklama');
   });
 
   it('GÜVENLİK: oturuma ait olmayan sürüm reddedilir (cevap sızıntısı engeli)', async () => {

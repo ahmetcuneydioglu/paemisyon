@@ -38,4 +38,12 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   panellerine (Railway/Vercel) elle girilir.
 - Koç kuralları SUNUCUDA yaşar (`/me/coach`); istemciler kural bilmez.
 - Soru bankasının varlık nedeni "gerçek, kaynaklı çıkmış soru" güvenidir:
-  AI soru üretimi yapılmaz; kaynak etiketi her zaman görünür.
+  AI soru üretimi yapılmaz; her sorunun kaynağı bankada KAYITLIDIR.
+- Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
+  ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
+  sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.
+  Yalnız admin panelde görünür (soru listesi, deneme gözden geçirme).
+  Uygulanışı: `SettingsService.showQuestionSource()` — tek karar noktası,
+  varsayılanı KAPALI, panelden (Sorular) açılabilir. Denemede ise ayardan
+  bağımsız, HER ZAMAN kapalıdır. Kaynak etiketi AI açıklama istemine de
+  konulmaz (model açıklamada tekrarlayıp ayarı anlamsızlaştırır).

@@ -137,7 +137,7 @@ export class AdminController {
   @Roles('admin')
   async getSettings() {
     return {
-      showQuestionSource: await this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
+      showQuestionSource: await this.settings.showQuestionSource(),
     };
   }
 

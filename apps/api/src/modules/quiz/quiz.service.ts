@@ -752,7 +752,7 @@ export class QuizService {
           },
         },
       }),
-      this.settings.getBool(SETTING_KEYS.showQuestionSource, true),
+      this.settings.showQuestionSource(),
     ]);
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
     if (session.status !== 'in_progress') {

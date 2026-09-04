@@ -8,6 +8,14 @@ export const SETTING_KEYS = {
   showQuestionSource: 'show_question_source',
 } as const;
 
+/**
+ * Kaynak etiketinin VARSAYILANI kapalıdır (kullanıcı kararı, 4 Eylül 2026):
+ * etiket hiçbir son kullanıcıya gösterilmez, yalnız panelde admin görür.
+ * Varsayılan "açık" kalsaydı ayar satırı silindiğinde ya da yeni bir ortam
+ * kurulduğunda etiket sessizce sızardı.
+ */
+export const SHOW_QUESTION_SOURCE_DEFAULT = false;
+
 const CACHE_MS = 60_000;
 
 /**
@@ -27,6 +35,11 @@ export class SettingsService {
     const values = new Map(rows.map((r) => [r.key, r.value]));
     this.cache = { values, expiresAt: Date.now() + CACHE_MS };
     return values;
+  }
+
+  /** Kaynak etiketi gösterilsin mi? Tek karar noktası — varsayılan KAPALI. */
+  async showQuestionSource(): Promise<boolean> {
+    return this.getBool(SETTING_KEYS.showQuestionSource, SHOW_QUESTION_SOURCE_DEFAULT);
   }
 
   async getBool(key: string, fallback: boolean): Promise<boolean> {

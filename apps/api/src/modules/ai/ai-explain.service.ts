@@ -51,7 +51,6 @@ export class AiExplainService {
         id: true,
         stem: true,
         explanation: true,
-        sourceLabel: true,
         question: { select: { deletedAt: true } },
         options: {
           orderBy: { sortOrder: 'asc' },
@@ -167,7 +166,6 @@ export class AiExplainService {
     version: {
       stem: string;
       explanation: string | null;
-      sourceLabel: string | null;
       options: { id: string; label: string; text: string; isCorrect: boolean }[];
     },
     chosenId: string,
@@ -199,7 +197,11 @@ export class AiExplainService {
       `KULLANICININ SEÇİMİ: ${chosen.label}) ${chosen.text}`,
       correct ? `DOĞRU CEVAP: ${correct.label}) ${correct.text}` : '',
       version.explanation ? `\nEDİTÖR AÇIKLAMASI (tutarlı kal): ${version.explanation}` : '',
-      version.sourceLabel ? `KAYNAK: ${version.sourceLabel}` : '',
+      // KAYNAK ETİKETİ MODELE VERİLMEZ (kullanıcı kararı, 4 Eylül 2026):
+      // etiket hiçbir son kullanıcıya gösterilmiyor, ama isteme koyulursa model
+      // açıklamanın içinde ("Seçkin 2025 kitabındaki bu soru…") tekrarlayabilir
+      // ve ayarı kapatmak hiçbir işe yaramaz. Bir kitap adı açıklamayı zaten
+      // iyileştirmiyor — hukuki dayanak `EDİTÖR AÇIKLAMASI` ve maddeden gelir.
     ]
       .filter(Boolean)
       .join('\n');
