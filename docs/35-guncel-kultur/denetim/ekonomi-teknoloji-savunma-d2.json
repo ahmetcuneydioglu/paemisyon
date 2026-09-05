@@ -1,0 +1,132 @@
+[
+ {
+  "id": "ekonomi-teknoloji-savunma-1",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "NASA, 'NASA Welcomes Türkiye as Newest Artemis Accords Signatory' (31 Ağustos 2026) ve T.C. Dışişleri Bakanlığı No: 170, 1 Eylül 2026",
+  "kaynakUrl": "https://www.nasa.gov/organizations/oiir/artemis-accords/nasa-welcomes-turkiye-as-newest-artemis-accords-signatory/",
+  "gerekce": "NASA ve Dışişleri Bakanlığı açıklamalarına göre Türkiye 31 Ağustos 2026'da NASA merkezinde Artemis Anlaşmaları'nı imzalayarak 71. imzacı ülke oldu; diğer şıklar BM uzay hukuku metinleri olup ABD Ay programına ait değil.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-2",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Türkiye Uzay Ajansı (TUA), 'Türkiye'nin İlk Yerli Atomik Saati Uzay Yolculuğuna Başladı'; ayrıca TÜBİTAK duyurusu",
+  "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+  "gerekce": "TUA metni birebir 'TÜBİTAK Ulusal Metroloji Enstitüsü ana yükleniciliğinde geliştirilen Rubidyum Atomik Frekans Standardı Projesi' diyor ve 'RAFS uydusu, 7 Temmuz 2026 tarihinde SpaceX Transporter-17 göreviyle başarıyla fırlatıldı' bilgisini veriyor.",
+  "dogrulanamadi": false,
+  "uyari": "Proje TUA liderliğinde, TÜBİTAK UZAY ve İTÜNOVA iş birliğiyle yürütülüyor; kök 'ana yüklenici' dediği için tek doğru şık A kalıyor, ancak B (TÜBİTAK UZAY) paydaş olarak geçtiğinden dikkatli okunmazsa çeldirici güçlü."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-3",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Türkiye Uzay Ajansı, 'IAC 2026 Antalya' sayfası",
+  "kaynakUrl": "https://tua.gov.tr/tr/uluslararasi-faaliyetler/iac-2026-antalya",
+  "gerekce": "TUA sayfası birebir 'Antalya, 5-9 Ekim 2026 tarihleri arasında gerçekleştirilecek ... 77. Uluslararası Uzay Kongresi'ne (IAC) ev sahipliği yapacak' diyor (Antalya Nest Kongre Merkezi).",
+  "dogrulanamadi": false,
+  "uyari": "Zaman kipi hatası: bugün 5 Eylül 2026, kongre henüz yapılmadı; kök 'düzenlenmektedir' diyor, 'düzenlenecektir' olmalı. Ayrıca 'dünyanın en büyük uzay etkinliği' nitelemesi TUA metninde 'dünyanın en prestijli uzay etkinliklerinden biri' şeklinde geçiyor — 'en büyük' iddiası kaynakta birebir yok."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-4",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Baykar Teknoloji kurumsal duyurusu 'Fergani'nin Beşinci Uydusu Uzayda' ve TRT Haber (30 Mart 2026)",
+  "kaynakUrl": "https://baykartech.com/tr/haberler/ferganinin-besinci-uydusu-uzayda/",
+  "gerekce": "FGN-100-D3, Fergani Uzay'ın tamamen millî imkânlarla geliştirdiği beşinci deneme uydusu olup 30 Mart 2026'da Vandenberg'den SpaceX Transporter-16 göreviyle fırlatıldı.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-5",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı, 'Savunma ve havacılık ihracatta 10 milyar dolar eşiğini aştı' (Ocak 2026); SSB Başkanı Haluk Görgün açıklaması",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818",
+  "gerekce": "2025 savunma ve havacılık ihracatı 10 milyar 54 milyon dolar (9,87 milyar mal + 184 milyon hizmet), yüzde 48 artışla tarihî rekor.",
+  "dogrulanamadi": false,
+  "uyari": "E şıkkındaki 17,8 milyar dolar aynı açıklamada geçen 'yeni sözleşme' rekoru; ihracatla karıştırılmasın diye konulmuş bilinçli çeldirici, kök 'ihracat' dediği için sorun yok."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-6",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı, 'Gabar'da günlük petrol üretimi 83 bin 300 varile ulaşarak rekor kırdı' (6 Ağustos 2026), Bakan Alparslan Bayraktar açıklaması",
+  "kaynakUrl": "https://aa.com.tr/tr/ekonomi/gabarda-gunluk-petrol-uretimi-83-bin-300-varile-ulasarak-rekor-kirdi/4019797",
+  "gerekce": "Rekor üretim Şırnak'ın Gabar bölgesinde; 2021'de burada Cumhuriyet tarihinin en büyük petrol keşfi yapıldı ve bugüne dek 50 milyon varilin üzerinde ham petrol üretildi.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-7",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "UAB '5G'de Geri Sayım Başladı' ve BTK 5G ihalesi duyurusu; TRT Haber (1 Nisan 2026 başlangıcı)",
+  "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-geri-sayim-basladi",
+  "gerekce": "16 Ekim 2025'teki 5G ihalesinin ardından operatörlerin ticari 5G hizmetine başlama tarihi 1 Nisan 2026 olarak belirlendi ve bu tarihte hizmet sunulmaya başlandı.",
+  "dogrulanamadi": false,
+  "uyari": "A şıkkı (16 Ekim 2025) ihale tarihi; kök 'ticari olarak sunulmaya başlanma' dediği için ayrım net."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-8",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Ulaştırma ve Altyapı Bakanlığı, 'Türkiye'nin En Uzun Metro Ringinin Son Halkası Tamamlandı'",
+  "kaynakUrl": "https://www.uab.gov.tr/haberler/tuerkiye-nin-en-uzun-metro-ringinin-son-halkasi-tamamlandi/",
+  "gerekce": "UAB duyurusu Halkalı-İstanbul Havalimanı-Gayrettepe Metro Projesi'nin 19 Haziran 2026'da tamamlandığını, 69 kilometreyle 'metro sınıfında Türkiye'nin en uzun ve en hızlı' hat olduğunu belirtiyor; son etap 22 km'lik Halkalı-Arnavutköy kesimi.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-9",
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları 2025 (9 Şubat 2026); TÜİK resmî hesap duyurusu ve AA",
+  "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+  "gerekce": "31 Aralık 2025 itibarıyla nüfus, bir önceki yıla göre 427.224 kişi artarak 86 milyon 92 bin 168 oldu; TÜİK'in kamuoyu duyurusu bültenin 9 Şubat 2026 saat 10.00'da yayımlanacağını teyit ediyor.",
+  "dogrulanamadi": false,
+  "uyari": "C şıkkı (85.664.944) 2024 yılı nüfusudur — bilinçli ama güçlü çeldirici."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-10",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı, 'İstanbul'un Esenyurt ilçesi 57 ilden daha kalabalık' (Şubat 2026, TÜİK ADNKS 2025 verisi)",
+  "kaynakUrl": "https://www.aa.com.tr/tr/gundem/istanbulun-esenyurt-ilcesi-57-ilden-daha-kalabalik/3825465",
+  "gerekce": "ADNKS 2025'e göre Esenyurt 1 milyon 3 bin 905 kişiyle Türkiye'de nüfusu ilk kez 1 milyonu aşan ilçe oldu; ikinci Şahinbey 957.792, üçüncü Çankaya 952.198.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-11",
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı, 'Türkiye'de doğurganlık hızındaki gerileme devam ediyor' (21 Mayıs 2026, TÜİK Doğum İstatistikleri 2025)",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+  "gerekce": "Haber birebir toplam doğurganlık hızının '2025'te 1,42 çocuk olarak gerçekleşti' diyor; 2025'te canlı doğan bebek sayısı 895.374.",
+  "dogrulanamadi": false,
+  "uyari": "D şıkkı (1,48) 2024 değeridir; tarih okunmazsa iki şık da savunulabilir görünebilir, kök '2025' dediği için sorun yok."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-12",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı, aynı TÜİK Doğum İstatistikleri 2025 haberi (21 Mayıs 2026)",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+  "gerekce": "Haberde en yüksek doğurganlık hızı Şanlıurfa'da '3,15 çocukla', en düşük Bartın'da '1,09 çocuk ile' olarak veriliyor.",
+  "dogrulanamadi": false,
+  "uyari": "E şıkkı (Bartın) en DÜŞÜK ilin adı; kök 'en yüksek' dediği için ayrım net ama okuma tuzağı içeriyor."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-13",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansı Enerji Terminali, 'Türkiye'nin güneş enerjisi kurulu gücü 25 bin megavatı geçti' (ETKB verileri)",
+  "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+  "gerekce": "2014'te 40,2 MW olan güneş kurulu gücü, 2026 Ocak ayı sonu itibarıyla 25 bin 827 MW'a ulaştı; toplam kurulu güç içindeki payı yüzde 20,9.",
+  "dogrulanamadi": false,
+  "uyari": "E şıkkı (120 bin MW) 2035 güneş+rüzgâr hedefidir; çeldirici olarak tutarlı."
+ }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "ekonomi-teknoloji-savunma-11",
+    "grup": "A",
+    "gerekce": "Uyarı olgu hatası değil çeldirici notu; kök '2025' dediği için 1,48 (2024) ikinci doğru şık olamaz, iki denetçi de E'de birleşti.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-12",
+    "grup": "A",
+    "gerekce": "Bartın'ın en düşük il olması bilinçli okuma tuzağı; kök 'en yüksek' dediği için tek doğru şık Şanlıurfa, kusur yok.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-13",
+    "grup": "A",
+    "gerekce": "120 bin MW'ın 2035 hedefi olması çeldirici notudur; kök 'Ocak 2026 sonu itibarıyla ulaşılan düzey' dediği için ayrım net.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-2",
+    "grup": "A",
+    "gerekce": "TÜBİTAK UZAY paydaş, UME ana yüklenici; kök 'ana yüklenici' dediği için çeldirici güçlü ama tek doğru şık kalıyor.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-3",
+    "grup": "C",
+    "gerekce": "Kök gelecekteki bir etkinliği (5-9 Ekim 2026) şimdiki zamanla anlatıyor ve kaynakta olmayan 'dünyanın en büyük' nitelemesini kullanıyor; ikisi de metin düzeltmesiyle giderilir.",
+    "duzeltme": {
+      "kok": "Dünyanın en prestijli uzay etkinliklerinden biri sayılan 77. Uluslararası Astronotik Kongresi (IAC 2026), 5-9 Ekim 2026 tarihlerinde Türkiye'de hangi ilde düzenlenecektir?",
+      "siklar": {
+        "A": "İstanbul",
+        "B": "Ankara",
+        "C": "Antalya",
+        "D": "İzmir",
+        "E": "Gaziantep"
+      },
+      "dogru": "C",
+      "aciklama": "77. Uluslararası Astronotik Kongresi, Sanayi ve Teknoloji Bakanlığı koordinasyonunda Türkiye Uzay Ajansı ev sahipliğinde 5-9 Ekim 2026 tarihlerinde Antalya'daki NEST Kongre Merkezi'nde düzenlenecektir (Türkiye Uzay Ajansı, IAC 2026 Antalya duyurusu). Kongre Türkiye'de ilk kez yapılacak olup ana teması 'The World Needs More Space'tir; bir önceki kongre 2025'te Sidney'de düzenlenmişti. Sık yapılan hata, kongrenin İstanbul'da yapılacağını sanmaktır.",
+      "dayanak": "Türkiye Uzay Ajansı, 'IAC 2026 Antalya' sayfası (erişim 5 Eylül 2026); Uluslararası Astronotik Federasyonu IAC 2026 duyurusu"
+    },
+    "degisenler": [
+      "Kök zaman kipi: 'düzenlenmektedir' → 'düzenlenecektir' (etkinlik 5 Eylül 2026 itibarıyla henüz yapılmadı)",
+      "Kök nitelemesi: 'Dünyanın en büyük uzay etkinliği kabul edilen' → 'Dünyanın en prestijli uzay etkinliklerinden biri sayılan' (TUA metnindeki ifade)",
+      "Açıklama: yer/tarih bilgisi gelecek zamana çevrildi, NEST Kongre Merkezi ve ana tema eklendi"
+    ]
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-5",
+    "grup": "A",
+    "gerekce": "7,1 milyar (2024 ihracatı) ve 17,8 milyar (yeni sözleşme rekoru) bilinçli çeldiricilerdir; kök 'ihracat' dediği için tek doğru şık 10 milyar 54 milyon dolar.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-7",
+    "grup": "A",
+    "gerekce": "16 Ekim 2025 ihale tarihi olarak çeldiricidir; kök 'ticari olarak sunulmaya başlanma' dediği için ikinci savunulabilir şık yok.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-8",
+    "grup": "A",
+    "gerekce": "Adlandırma notu kusur değil; 'Gayrettepe-İstanbul Havalimanı-Halkalı' aynı M11 hattının tam güzergâh adıdır ve diğer şıklar başka hatlardır.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "ekonomi-teknoloji-savunma-9",
+    "grup": "A",
+    "gerekce": "Uyarılar kaynak erişimi ve çeldirici notudur; rakam iki denetçide de birebir tutuyor, 85.664.944 (2024) kök '31 Aralık 2025' dediği için savunulamaz.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "kultur-sanat-bilim-10",
+    "grup": "C",
+    "gerekce": "Şehir adları diyakritiksiz yazılmış (Trenčín, Timișoara); olgu doğru, yalnız yazım düzeltiliyor.",
+    "duzeltme": {
+      "kok": null,
+      "siklar": {
+        "A": "Oulu (Finlandiya) ve Trenčín (Slovakya)",
+        "B": "Chemnitz (Almanya) ve Nova Gorica (Slovenya)",
+        "C": "Tartu (Estonya) ve Bad Ischl (Avusturya)",
+        "D": "Kaunas (Litvanya) ve Novi Sad (Sırbistan)",
+        "E": "Timișoara (Romanya) ve Elefsina (Yunanistan)"
+      },
+      "dogru": "A",
+      "aciklama": "Avrupa Komisyonu'nun belirlediği takvime göre 1 Ocak 2026'dan itibaren Avrupa Kültür Başkenti unvanını Finlandiya'dan Oulu ve Slovakya'dan Trenčín taşımaktadır; Oulu programını 'Kültürel İklim Değişikliği' temasıyla yürütmektedir. Chemnitz ile Nova Gorica 2025'in, Tartu ile Bad Ischl 2024'ün, Timișoara ile Elefsina 2023'ün başkentleridir — tuzak yıl kaydırmasıdır.",
+      "dayanak": "Avrupa Komisyonu, Kültür ve Yaratıcılık — '2026: Finlandiya ve Slovakya (Oulu ve Trenčín)' sayfası (erişim 5 Eylül 2026)"
+    },
+    "degisenler": [
+      "A şıkkı: 'Trencin' → 'Trenčín'",
+      "E şıkkı: 'Timisoara' → 'Timișoara'",
+      "Açıklama: aynı diyakritik düzeltmeleri ve unvanın 1 Ocak 2026'da başladığı bilgisi"
+    ]
+  },
+  {
+    "id": "kultur-sanat-bilim-13",
+    "grup": "A",
+    "gerekce": "Uyarı yalnız kaynak erişim notu ve çeldirici tutarlılığı hakkında; olgu iki bağımsız denetçide doğrulandı, kusur yok.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "kultur-sanat-bilim-14",
+    "grup": "A",
+    "gerekce": "Uyarı soru kusuru değil dağıtım notu (13 ile aynı olay); ödül bilgisi doğru, iki soru ayrı denemelere konularak çözülür.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "kultur-sanat-bilim-16",
+    "grup": "A",
+    "gerekce": "Çeldiricilerin daha önce vefat etmiş isimler olması kusur değil; tarih, yaş ve müzikal niteliği kaynakta birebir geçiyor.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "kultur-sanat-bilim-8",
+    "grup": "A",
+    "gerekce": "UNESCO duyurusu 5 Eylül 2026'da yeniden açıldı: 25 yeni alan (19 kültürel, 5 doğal, 1 karma), liste 173 ülkede 1.273 alan ve Türkiye'den yeni alan yok — ikincil kaynaklardaki 17+7+1 dağılımı resmî metinle çelişmiyor, kusur yok.",
+    "duzeltme": null,
+    "degisenler": []
+  }
+]

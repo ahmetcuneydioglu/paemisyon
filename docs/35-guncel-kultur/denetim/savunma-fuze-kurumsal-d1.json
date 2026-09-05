@@ -1,0 +1,172 @@
+[
+ {
+  "id": "savunma-fuze-kurumsal-1",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "ROKETSAN ürün sayfası, HİSAR Hava Savunma Füzeleri — teknik özellik tablosu",
+  "kaynakUrl": "https://www.roketsan.com.tr/tr/urunler/hisar-hava-savunma-fuzeleri",
+  "gerekce": "Üretici tablosunda HİSAR-A [Alçak İrtifa] sistem önleme menzili 15+ km, HİSAR-O [Orta İrtifa] ise 25+ km olarak verilmiştir.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-2",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Savunma Sanayii Başkanlığı, SİPER proje sayfası",
+  "kaynakUrl": "https://www.ssb.gov.tr/proje/siper",
+  "gerekce": "SSB proje sayfası SİPER'in ASELSAN, ROKETSAN ve TÜBİTAK SAGE konsorsiyumu tarafından yürütüldüğünü, uzun menzil/yüksek irtifadaki hava soluyan hedeflere karşı geliştirildiğini yazıyor; AA da aynı üçlüyü veriyor (https://www.aa.com.tr/tr/cumhuriyetin-yuzuncu-yili/turk-savunma-sanayisinin-cumhuriyetin-100-yilina-armaganlari-tayfun-ve-siper-fuzesi/3031848).",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-3",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "SSB 2025 Yılı Faaliyet Raporu, Başkan sunuşu (s. 5)",
+  "kaynakUrl": "https://www.ssb.gov.tr/storage/img/2025-yili-faaliyet-raporu.pdf",
+  "gerekce": "Rapor birebir şöyle diyor: 'Çelik Kubbe kapsamında, ilk olarak toplam 47 araçtan oluşan hava savunma, radar ve elektronik harp sistemleri silahlı kuvvetlerimize teslim edilmiştir.'",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-4",
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "ROKETSAN ürün sayfası, ATMACA Gemisavar Füzesi — teknik özellikler",
+  "kaynakUrl": "https://www.roketsan.com.tr/en/products/atmaca-anti-ship-missile",
+  "gerekce": "Üretici kataloğunda menzil 250 km, harp başlığı 220 kg, arayıcı aktif RF olarak verilmiştir.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-5",
+  "cevap": "C",
+  "guven": "dusuk",
+  "kaynak": "ROKETSAN ürün kartında yer aldığı bildirilen 280+ km değeri; karşılaştırma için ROKETSAN BORA katalog PDF'i (280 km)",
+  "kaynakUrl": "https://www.roketsan.com.tr/uploads/docs/kataloglar/TR/2024/1726595380_bora.pdf",
+  "gerekce": "TAYFUN için yaygın olarak aktarılan üretici değeri '280 km'nin üzerinde'dir; diğer seçenekler (70/120/800/1500 km) hiçbir üretici belgesinde geçmiyor.",
+  "dogrulanamadi": false,
+  "uyari": "Soru kökü 'ROKETSAN ürün kataloğuna göre' diyor ama TAYFUN, roketsan.com.tr ürün listesinde ve kataloglar dizininde YOK (ürün sayfası 404, katalog PDF'i yayımlanmamış) — kökteki katalog dayanağı doğrulanamıyor. Ayrıca AA/haber kaynakları etkili menzil 280 km, azami menzil 800 km diyerek D şıkkını da savunulabilir kılıyor; TAYFUN Blok-4 için ~1.000 km telaffuz ediliyor. Kök ya kaynağı 'ROKETSAN ürün kartı/BORA ile karşılaştırma' diye düzeltilmeli ya da soru elenmeli."
+ },
+ {
+  "id": "savunma-fuze-kurumsal-6",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "TÜBİTAK SAGE resmî sitesi, Sistemler > Seyir Füzeleri menüsü",
+  "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/",
+  "gerekce": "SAGE kendi Türkçe sitesinde ürünü 'SOM – Satha Atılan Orta Menzilli Mühimmat' olarak adlandırıyor (İngilizce sitede 'Stand-Off Missile').",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-7",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "TÜBİTAK SAGE resmî sitesi, Hava-Hava Füzeleri listesi",
+  "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/",
+  "gerekce": "SAGE listesi: 'BOZDOĞAN – Görüş İçi Hava-Hava Füzesi', 'GÖKDOĞAN – Görüş Ötesi Hava-Hava Füzesi'; görüş ötesi (BVR) olan GÖKDOĞAN'dır.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-8",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "TÜBİTAK SAGE resmî sitesi, Güdüm Kitleri listesi",
+  "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/",
+  "gerekce": "SAGE listesi 'HGK – Hassas Güdüm Kiti' ve 'KGK – Kanatlı Güdüm Kiti' yazıyor (İng. Precision / Wing-Assisted Guidance Kit).",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-9",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "ROKETSAN ürün sayfası, TEBER Güdüm Kiti",
+  "kaynakUrl": "https://www.roketsan.com.tr/tr/urunler/teber-gudum-kiti",
+  "gerekce": "Üretici: TEBER, MK-81 ve MK-82 Genel Maksat Bombalarını Ataletsel Ölçüm Birimi, GPS ve lazer arayıcı başlık kullanarak akıllı silah sistemine dönüştürüyor.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-10",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "ROKETSAN ürün sayfası, UMTAS Uzun Menzilli Tanksavar Füze Sistemi",
+  "kaynakUrl": "https://www.roketsan.com.tr/tr/urunler/umtas-uzun-menzilli-tanksavar-fuze-sistemi",
+  "gerekce": "Üretici tablosu menzili 0,5-8 km veriyor; kızılötesi görüntüleyici (IIR) arayıcı başlıklı, taarruz helikopteri / hafif taarruz uçağı / kara ve deniz platformlarına entegre edilebiliyor. L-UMTAS lazer güdümlüdür, bu nedenle IIR tarifi UMTAS'a aittir.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-11",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Türk Silahlı Kuvvetlerini Güçlendirme Vakfı, 'KORKUT Hava Savunma Sistemi Gökyüzünü Korumaya Hazır!' (20 Mayıs 2025)",
+  "kaynakUrl": "https://tskgv.org.tr/savunmasanayiigundem/korkut-hava-savunma-sistemi-gokyuzunu-korumaya-hazir",
+  "gerekce": "TSKGV: KORKUT-SSA, 35 mm KDC-02 tipi çift namlulu silah sistemine sahip alçak irtifa hava savunma sistemidir (1100 atım/dakika).",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-12",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "TSKGV, 'ASELSAN KORAL Kara Konuşlu Uzaktan Elektronik Destek ve Elektronik Taarruz Sistemi' (12 Mart 2026)",
+  "kaynakUrl": "https://tskgv.org.tr/savunma-sanayii-gundem/aselsan-koral-kara-konuslu-uzaktan-elektronik-destek-ve-elektronik-taarruz-sistemi",
+  "gerekce": "KORAL, 8x8 taktik araçlara entegre, radar elektronik destek (ED) ve elektronik taarruz (ET) araçlarından oluşan kara konuşlu mobil elektronik harp sistemidir; AA'nın modernizasyon haberi de aynı tanımı veriyor (https://www.aa.com.tr/tr/savunma-sanayisi/aselsanin-gorunmeyen-gucu-koral-modernize-edildi/3685686).",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-13",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "Mevzuat Bilgi Sistemi, 3238 sayılı Kanun künyesi",
+  "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3238.pdf",
+  "gerekce": "Resmî metin: 'SAVUNMA SANAYİİ İLE İLGİLİ BAZI DÜZENLEMELER HAKKINDA KANUN — Kanun Numarası: 3238, Kabul Tarihi: 7/11/1985, RG 13/11/1985-18927'.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-14",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Savunma Sanayii Başkanlığı, Savunma Sanayii İcra Komitesi sayfası",
+  "kaynakUrl": "https://www.ssb.gov.tr/savunma-sanayii-icra-komitesi",
+  "gerekce": "SSB sayfasına göre Komiteye Cumhurbaşkanı başkanlık eder; üyeler arasında Cumhurbaşkanı Yardımcısı, Millî Savunma Bakanı, Genelkurmay Başkanı ve Savunma Sanayii Başkanı yer alır. tccb.gov.tr toplantı haberleri de 'Cumhurbaşkanı başkanlığında toplandı' diyor.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-15",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Mevzuat Bilgi Sistemi, 3388 sayılı Türk Silahlı Kuvvetlerini Güçlendirme Vakfı Kanunu",
+  "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3388.pdf",
+  "gerekce": "Resmî metin: 'TÜRK SİLAHLI KUVVETLERİNİ GÜÇLENDİRME VAKFI KANUNU — Kanun Numarası: 3388, Kabul Tarihi: 17/6/1987, RG 25/6/1987-19498'.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-16",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "SIPRI basın bülteni, 1 Aralık 2025 — SIPRI Top 100 (2024)",
+  "kaynakUrl": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals",
+  "gerekce": "SIPRI: listedeki beş Türk şirketinin toplam silah geliri 10,1 milyar dolar (%11 artış); MKE ilk kez Top 100'e girdi (ASELSAN 47., TUSAŞ 65., Baykar 73., ROKETSAN 87., MKE 93.).",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "savunma-fuze-kurumsal-17",
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "SSB 2025 Yılı Faaliyet Raporu, P.G. 2.4.1 Savunma Sanayii Yerlilik Oranı (s. 41)",
+  "kaynakUrl": "https://www.ssb.gov.tr/storage/img/2025-yili-faaliyet-raporu.pdf",
+  "gerekce": "Rapor: '2025 yılı içerisinde hesaplanan 2024 yılına ilişkin yerlilik oranı %81,3'tür.'",
+  "dogrulanamadi": false,
+  "uyari": null
+ }
+]

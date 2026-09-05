@@ -1,0 +1,410 @@
+[
+ {
+  "id": "savunma-hava-uzay-1",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "C şıkkı (6 Mayıs 2024) aynı sayfada geçen İKİNCİ test uçuşunun tarihidir; ayırt edici ama meşru bir çeldirici."
+  ],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+   "https://www.tusas.com/medya-merkezi/haberler/milli-muharip-ucak-kaan-ilk-ucusunu-gerceklestirdi"
+  ],
+  "gerekce": "TUSAŞ: \"Millî Muharip Uçak KAAN 21 Şubat 2024 tarihinde ilk uçuşunu gerçekleştirerek 13 dakika havada kaldı.\"",
+  "meta": {
+   "aciklama": "KAAN, 21 Şubat 2024'te ilk uçuşunu yapmış; 13 dakika havada kalarak 8.000 feet irtifaya ve 230 knot hıza ulaşmıştır (TUSAŞ ürün sayfası). Tuzak, 6 Mayıs 2024'tür: bu tarih ilk uçuş değil, KAAN'ın ikinci test uçuşudur. 25 Nisan 2023 ise HÜRJET'in ilk uçuş tarihidir.",
+   "kaynak": "TUSAŞ, KAAN ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+   "olayTarihi": "2024-02-21"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-2",
+  "alan": "savunma-hava-uzay",
+  "karar": "ONAY",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan"
+  ],
+  "gerekce": "TUSAŞ: \"KAAN Geliştirilmesi Projesi'nde TUSAŞ ana yüklenici konumundadır\" ve \"5'inci nesil çok rollü savaş uçağı olan KAAN\".",
+  "meta": {
+   "aciklama": "KAAN, Savunma Sanayii Başkanlığı ile 5 Ağustos 2016'da imzalanan sözleşme kapsamında ana yüklenici TUSAŞ tarafından geliştirilen beşinci nesil, çift motorlu, çok maksatlı bir muharip uçaktır (TUSAŞ). Baykar'ın insansız platformlarıyla karıştırılmamalıdır; KAAN pilotlu bir savaş uçağıdır.",
+   "kaynak": "TUSAŞ, KAAN ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+   "olayTarihi": "2024-02-21"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-3",
+  "alan": "savunma-hava-uzay",
+  "karar": "ONAY",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://baykartech.com/tr/press/bayraktar-kizilelmanin-uretim-prototipi-ilk-ucus-testini-basariyla-tamamladi/",
+   "https://baykartech.com/tr/press/bayraktar-kizilelma-havacilik-tarihinde-ilkleri-basardi/"
+  ],
+  "gerekce": "Baykar: \"...14 Aralık 2022 tarihinde ilk uçuşunu gerçekleştirdi\"; Baykar ayrıca KIZILELMA'yı \"Türkiye'nin ilk insansız savaş uçağı\" olarak tanımlıyor.",
+  "meta": {
+   "aciklama": "Baykar'ın tümüyle kendi kaynaklarıyla 2021'de başlattığı Bayraktar KIZILELMA, 14 Aralık 2022'de ilk uçuşunu yaparak Türkiye'nin ilk insansız savaş uçağı olmuştur (Baykar basın açıklaması). AKINCI ve TB2 taarruzi/silahlı İHA sınıfındadır; KIZILELMA jet motorlu, hava-hava muharebesi de yapabilen ayrı bir sınıftır.",
+   "kaynak": "Baykar Teknoloji basın açıklaması",
+   "kaynakUrl": "https://baykartech.com/tr/press/bayraktar-kizilelma-havacilik-tarihinde-ilkleri-basardi/",
+   "olayTarihi": "2022-12-14"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-4",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Kökte \"kısa güverteli gemi\" deniyor; kaynağın ifadesi \"kısa pistli gemi\". Anlam aynı, terim birebir değil."
+  ],
+  "denetciKaynaklari": [
+   "https://baykartech.com/tr/press/dunya-havacilik-tarihinde-bir-ilk/",
+   "https://www.baykartech.com/tr/haberler/dunya-havacilik-tarihinde-bir-ilk/"
+  ],
+  "gerekce": "Baykar: \"Bayraktar TB3, TCG Anadolu gibi kısa pistli gemilerden iniş ve kalkış yapabilen dünyadaki ilk silahlı insansız hava aracı oldu\" — test 19 Kasım 2024, 46 dakika.",
+  "meta": {
+   "aciklama": "Bayraktar TB3, 19 Kasım 2024'te TCG Anadolu'nun 12 derece rampalı kısa güvertesinden kalkıp 46 dakikalık uçuşun ardından yine aynı güverteye inerek dünya havacılık tarihinde bir ilki gerçekleştirmiştir (Baykar). TB2 ile karıştırılmamalıdır: gemiden iniş-kalkış için katlanır kanatlı TB3 geliştirilmiştir.",
+   "kaynak": "Baykar Teknoloji, \"Dünya havacılık tarihinde bir ilk\"",
+   "kaynakUrl": "https://baykartech.com/tr/press/dunya-havacilik-tarihinde-bir-ilk/",
+   "olayTarihi": "2024-11-19"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-5",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "B şıkkındaki 23 Ocak 2022, envanter değil ilk ihracat tarihidir — kasıtlı çeldirici, kusur sayılmaz."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/bilim-teknoloji/bayraktar-akinci-tiha-envantere-girdi/2350110",
+   "https://www.baykartech.com/tr/press/turk-savunma-sanayisinin-ihracat-sampiyonu-bayraktar-akinci/"
+  ],
+  "gerekce": "AKINCI ilk uçuşunu 6 Aralık 2019'da yaptı; envantere giriş/ilk teslimat töreni 29 Ağustos 2021'de Cumhurbaşkanı huzurunda yapıldı. Baykar tarihçesi yılları (2019 / 2021) doğruluyor.",
+  "meta": {
+   "aciklama": "Baykar'ın TİHA sınıfındaki Bayraktar AKINCI 6 Aralık 2019'da ilk uçuşunu yapmış, 29 Ağustos 2021'de Türk güvenlik güçlerinin envanterine girmiştir (Baykar). Platform, ilk ihracat başarısını 23 Ocak 2022'de elde etmiştir; bu tarih envantere giriş tarihiyle karıştırılmamalıdır.",
+   "kaynak": "Baykar Teknoloji, Bayraktar AKINCI basın açıklaması",
+   "kaynakUrl": "https://www.baykartech.com/tr/press/turk-savunma-sanayisinin-ihracat-sampiyonu-bayraktar-akinci/",
+   "olayTarihi": "2019-12-06"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-6",
+  "alan": "savunma-hava-uzay",
+  "karar": "ONAY",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/iha/operatif-stratejik-iha-sistemleri/anka",
+   "https://www.tusas.com/urunler/iha/operatif-stratejik-iha-sistemleri/anka"
+  ],
+  "gerekce": "Sayfa başlığı \"ANKA — ORTA İRTİFA UZUN HAVADA KALIŞLI (MALE İHA SİSTEMİ)\" ve metin: \"30 Aralık 2010 tarihinde ilk uçuşunu gerçekleştiren ANKA\"; üretici TUSAŞ.",
+  "meta": {
+   "aciklama": "TUSAŞ tarafından geliştirilen ANKA İnsansız Hava Aracı Sistemi 30 Aralık 2010'da ilk uçuşunu yapmış, Ekim 2013'te 10 uçaklık seri üretim (ANKA-S) sözleşmesi imzalanmıştır (TUSAŞ). ANKA orta irtifa uzun havada kalış sınıfındadır ve 400 bin uçuş saatini aşmıştır.",
+   "kaynak": "TUSAŞ, ANKA ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/iha/operatif-stratejik-iha-sistemleri/anka",
+   "olayTarihi": "2010-12-30"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-7",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Platform kesin, ancak TUSAŞ haber sayfasında uçuşun 'Kasım 2023' tarihi açıkça görünmüyor; tarih ikincil kaynaklarda Kasım 2023 olarak geçiyor. Kök 'Kasım 2023' ibaresini içermeseydi de cevap değişmezdi."
+  ],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur",
+   "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur"
+  ],
+  "gerekce": "TUSAŞ: \"Kasım 2023'te ilk kez millî motor TEI-PD170 ile uçuş gerçekleştiren AKSUNGUR, millî motor ile de 30.000 feet'e ulaşmıştır\" ve \"Kendi sınıfında Dünya'nın en uzun süre havada kalabilen İHA'sı\"; kategori adı \"Yüksek Faydalı Yük Kapasitesi\".",
+  "meta": {
+   "aciklama": "TUSAŞ AKSUNGUR, 750 kilogramın üzerinde faydalı yük taşıyabilen, 50 saate varan havada kalış süresiyle sınıfının en uzun süre havada kalan insansız hava aracı sistemidir; Kasım 2023'te yerli TEI-PD170 motoruyla 30 bin feet'te 41 saatlik uçuş yapmıştır (TUSAŞ). GÖKBEY bir helikopterdir, İHA değildir.",
+   "kaynak": "TUSAŞ, AKSUNGUR ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur",
+   "olayTarihi": "2023-11-01"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-8",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "İki kusur: (1) TUSAŞ HÜRJET'i yalnız \"Jet Eğitim Uçağı\" diye adlandırıyor, doğru şıktaki \"hafif taarruz\" nitelemesi kurumsal sayfada HÜRKUŞ için kullanılıyor; (2) D şıkkındaki 12 Kasım 2024, aynı sayfada geçen HÜRJET P2 (ikinci prototip) ilk uçuş tarihidir — tip adı D'de daha doğru yazıldığı için çeldirici gereğinden güçlü. Yine de tek doğru cevap B.",
+   "D şıkkındaki 12 Kasım 2024, HÜRJET'in ikinci prototipinin (P2) ilk uçuşudur; kök 'HÜRJET'in ilk uçuşu' dediği için belirsizlik doğurmuyor ama yakın bir çeldirici."
+  ],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurjet",
+   "https://www.tusas.com/medya-merkezi/haberler/hurjet-jet-egitim-ve-hafif-taarruz-ucagi-ilkleri-gerceklestirmeye-devam-ediyor"
+  ],
+  "gerekce": "TUSAŞ: \"Üretilen ilk HÜRJET Jet Eğitim Uçağı ilk uçuşu 25 Nisan 2023 tarihinde\" yapmıştır.",
+  "meta": {
+   "aciklama": "HÜRJET, TUSAŞ'ın tek motorlu, tandem kokpitli jet eğitim ve hafif taarruz uçağıdır; ilk prototip 25 Nisan 2023'te uçmuştur (TUSAŞ). 12 Kasım 2024 tarihi tuzaktır: o gün uçan ikinci prototiptir. HÜRJET 1,4 Mach azami hıza ve 45.000 feet servis tavanına sahiptir.",
+   "kaynak": "TUSAŞ, HÜRJET ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurjet",
+   "olayTarihi": "2023-04-25"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-9",
+  "alan": "savunma-hava-uzay",
+  "karar": "ONAY",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurkus",
+   "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurkus"
+  ],
+  "gerekce": "TUSAŞ: \"Böylece HÜRKUŞ, Avrupa Sivil Havacılık Otoritesi'nden tip sertifikası alan ilk Türk uçağı olmuştur\" (EASA geçerli kılınan tip sertifikası, 11 Temmuz 2016).",
+  "meta": {
+   "aciklama": "TUSAŞ'ın yeni nesil temel eğitim uçağı HÜRKUŞ, 11 Temmuz 2016'da Avrupa sivil havacılık otoritesinden tip sertifikası alarak bu belgeyi kazanan ilk Türk uçağı olmuştur (TUSAŞ). HÜRKUŞ 1600 shp PT6A-68T turboprop motorla uçar; hafif taarruz görevleri için HÜRKUŞ Görev Uçağı varyantı geliştirilmiştir.",
+   "kaynak": "TUSAŞ, HÜRKUŞ ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurkus",
+   "olayTarihi": "2016-07-11"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-10",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "D şıkkındaki 11 Temmuz 2016, HÜRKUŞ'un sertifika tarihi; 12. soruyla aynı havuzdan gelen çeldirici, sorun teşkil etmiyor."
+  ],
+  "denetciKaynaklari": [
+   "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey",
+   "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey"
+  ],
+  "gerekce": "TUSAŞ: \"Yerli imkânlarla geliştirilip üretilen ilk Genel Maksat Helikopteri T625 GÖKBEY ilk uçuşunu 6 Eylül 2018 saat 06:00'da başarıyla gerçekleştirmiş\".",
+  "meta": {
+   "aciklama": "TUSAŞ'ın 6.050 kilogram azami kalkış ağırlığındaki T625 GÖKBEY genel maksat helikopteri ilk uçuşunu 6 Eylül 2018'de gerçekleştirmiştir (TUSAŞ). GÖKBEY, yerli imkânlarla geliştirilip üretilen ilk genel maksat helikopteridir; sonraki varyantlarında millî TEI-TS1400 turboşaft motor kullanılmaktadır.",
+   "kaynak": "TUSAŞ, T625 GÖKBEY ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey",
+   "olayTarihi": "2018-09-06"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-11",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "orta",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Kök \"ilk ihracat yapıldığı ülke\" derken teslimatı mı sözleşmeyi mi kastettiği belirsiz: ilk ihracat SÖZLEŞMESİ 2018'de Pakistan ile imzalanmış ancak ABD motor ihraç lisansı çıkmadığı için teslimat hiç yapılmamıştır. Kökün \"ilk ihracat teslimatının yapıldığı ülke\" biçiminde netleştirilmesi önerilir."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/ekonomi/atak-helikopteri-ilk-ihracat-icin-filipinlerde-/2528498",
+   "https://www.aa.com.tr/tr/ekonomi/atak-helikopteri-ilk-ihracat-icin-filipinlerde-/2528498"
+  ],
+  "gerekce": "İlk T129 ATAK ihracat teslimatı Filipinler Hava Kuvvetleri'ne yapıldı (2022, SSB–Filipinler Savunma Bakanlığı G2G anlaşması); TUSAŞ ürün sayfası yalnız Filipinler ve Nijerya'yı ihracat kullanıcısı olarak sayıyor.",
+  "meta": {
+   "aciklama": "T129 ATAK taarruz helikopteri, ana yüklenici TUSAŞ tarafından ilk kez Filipinler'e ihraç edilmiş ve Filipinler Hava Kuvvetleri'ne 6 helikopter teslim edilmiştir (TUSAŞ). Pakistan ile imzalanan sözleşme motor ihraç izni sorunu nedeniyle teslimatla sonuçlanmamıştır; bu ikisi sıkça karıştırılır.",
+   "kaynak": "TUSAŞ, T129 ATAK ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urun/t129-atak",
+   "olayTarihi": "2011-08-01"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-12",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "ABD saatiyle 14 Nisan 2023 akşamı olarak da geçebilir; Türk resmî kaynakları TSİ 15 Nisan 2023 diyor, soru bu haliyle doğrudur."
+  ],
+  "denetciKaynaklari": [
+   "https://tubitak.gov.tr/tr/haber/metrealti-cozunurluklu-yer-gozlem-uydusu-imece-uzayda-ikinci-yilini-tamamladi",
+   "https://www.iletisim.gov.tr/turkce/haberler/detay/imece-uydusu-uzaya-firlatildi"
+  ],
+  "gerekce": "TÜBİTAK: \"Türkiye'nin ilk metrealtı çözünürlüklü yerli yer gözlem uydusu olan İMECE... 15 Nisan 2023'te... Falcon 9 roketiyle fırlatıldı.\"",
+  "meta": {
+   "aciklama": "TÜBİTAK UZAY tarafından geliştirilen İMECE, 15 Nisan 2023'te ABD'nin Vandenberg Üssü'nden SpaceX Falcon 9 roketiyle 680 kilometre yükseklikteki güneş eş zamanlı yörüngeye gönderilmiştir; Türkiye ilk kez metre altı çözünürlüklü, yerli imkânlarla geliştirilen bir elektro-optik uydu kamerasına sahip olmuştur (İletişim Başkanlığı, 15 Nisan 2023). TÜRKSAT 6A bir haberleşme uydusudur, gözlem uydusu değildir.",
+   "kaynak": "T.C. İletişim Başkanlığı, 15 Nisan 2023",
+   "kaynakUrl": "https://www.iletisim.gov.tr/turkce/haberler/detay/imece-uydusu-uzaya-firlatildi",
+   "olayTarihi": "2023-04-15"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-13",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "C şıkkındaki 'GÖKTÜRK-3' fiilen mevcut bir uydu değil; çeldirici olarak zayıf ama hataya yol açmıyor."
+  ],
+  "denetciKaynaklari": [
+   "https://www.iletisim.gov.tr/turkce/haberler/detay/iletisim-baskani-altun-ilk-yerli-ve-milli-haberlesme-uydumuz-turksat-6anin-uzay-yolculugu-basliyor",
+   "https://tubitak.gov.tr/tr/haber/ilk-yerli-ve-milli-haberlesme-uydumuz-turksat-6a-resmi-olarak-gorevine-basladi"
+  ],
+  "gerekce": "TÜRKSAT 6A Türkiye'nin ilk yerli ve millî haberleşme uydusudur; montaj, entegrasyon ve testleri TUSAŞ Uzay Sistemleri Entegrasyon ve Test Merkezi'nde (USET, Ankara) yapılmış, 9 Temmuz 2024'te fırlatılmıştır.",
+  "meta": {
+   "aciklama": "TÜRKSAT 6A, Türkiye'nin ilk yerli ve millî haberleşme uydusudur; montaj ve entegrasyon çalışmaları TUSAŞ'ın Uzay Sistemleri Entegrasyon ve Test Merkezi'nde (USET) tamamlanmıştır (TUSAŞ). TÜRKSAT 5A ve 5B yurt dışında üretilip satın alınan uydulardır; yerli üretim olan TÜRKSAT 6A'dır.",
+   "kaynak": "TUSAŞ, Uzay Sistemleri ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/uzay",
+   "olayTarihi": "2024-07-08"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-14",
+  "alan": "savunma-hava-uzay",
+  "karar": "ONAY",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/bilim-teknoloji/ilk-turk-astronot-gezeravcinin-da-yer-aldigi-ax-3-ekibi-uluslararasi-uzay-istasyonunda/3114122",
+   "https://www.axiomspace.com/astronaut/alper-gezeravci"
+  ],
+  "gerekce": "Gezeravcı, Axiom Mission 3 (Ax-3) mürettebatıyla 18/19 Ocak 2024'te Crew Dragon ile fırlatıldı ve 20 Ocak 2024'te UUİ'ye kenetlendi.",
+  "meta": {
+   "aciklama": "Türkiye'nin ilk astronotu Alper Gezeravcı, Axiom Mission 3 (Ax-3) göreviyle Falcon 9 roketiyle Kennedy Uzay Merkezi'nden fırlatılmış ve Uluslararası Uzay İstasyonu'nda 14 gün kalarak 13 bilimsel deney yapmıştır (TÜBİTAK UZAY). Deneyler TÜBİTAK UZAY, Axiom Space ve NASA eşgüdümünde yürütülmüştür.",
+   "kaynak": "TÜBİTAK UZAY, Ocak 2024",
+   "kaynakUrl": "https://uzay.tubitak.gov.tr/en/our-first-astronaut-alper-gezeravci-started-his-space-journey-as-part-of-a-science-mission-on-january-19-2024-00-49/",
+   "olayTarihi": "2024-01-19"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-15",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "C şıkkı da programın gerçek bir hedefini (Türk astronotun uzaya gönderilmesi) doğru hedef sayısıyla veriyor; yalnız \"birinci hedef\" olmadığı için yanlış. Kökteki \"birinci hedef\" vurgusu ayırt edici olduğundan soru geçerli, ama çeldirici güçlü.",
+   "C şıkkındaki 'Türk astronotun uzaya gönderilmesi' de 10 hedeften biridir ama birinci hedef değildir; kök 'birinci hedef' dediği için tek doğru B'dir."
+  ],
+  "denetciKaynaklari": [
+   "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+   "https://cdn.tua.gov.tr/62988f09d2a2e.pdf"
+  ],
+  "gerekce": "TUA: program \"10 maddelik stratejik hedeflerden\" oluşuyor; Cumhurbaşkanı Erdoğan: \"Milli Uzay Programındaki birinci ve en önemli hedefimiz, Cumhuriyetimizin 100'üncü yılında aya ilk teması gerçekleştirmektir.\"",
+  "meta": {
+   "aciklama": "Türkiye Uzay Ajansı'na göre Millî Uzay Programı 10 stratejik hedeften oluşur ve birinci hedef Ay görevidir; Türk astronotun bilim misyonuyla uzaya gönderilmesi ise programın onuncu hedefi olarak sıralanmıştır (Türkiye Uzay Ajansı). Uzay limanı ve bölgesel konumlama sistemi de listedeki diğer hedeflerdir, ancak ilk sırada değildir.",
+   "kaynak": "Türkiye Uzay Ajansı",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+   "olayTarihi": "2021-02-10"
+  }
+ },
+ {
+  "id": "savunma-hava-uzay-16",
+  "alan": "savunma-hava-uzay",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Kararname geçici maddelerinde Ulaştırma ve Altyapı Bakanlığı'ndan devir hükümleri var (Havacılık ve Uzay Teknolojileri Genel Müdürlüğü devri); B şıkkı bu yüzden çekici ama yanlıştır."
+  ],
+  "denetciKaynaklari": [
+   "https://mevzuat.gov.tr/MevzuatMetin/19.5.23.pdf",
+   "https://mevzuat.gov.tr/MevzuatMetin/19.5.23.pdf"
+  ],
+  "gerekce": "Madde 3: \"...özel bütçeli, Sanayi ve Teknoloji Bakanlığı ile ilgili Türkiye Uzay Ajansı kurulmuştur.\" Madde 2'de \"Bakan: Sanayi ve Teknoloji Bakanını\" ifade eder.",
+  "meta": {
+   "aciklama": "Türkiye Uzay Ajansı, 2018 yılında çıkarılan Cumhurbaşkanlığı Kararnamesi ile Sanayi ve Teknoloji Bakanlığı'nın ilgili kuruluşu olarak kurulmuş, merkezi Ankara'dır (Türkiye Uzay Ajansı). Uydu haberleşmesi Ulaştırma ve Altyapı Bakanlığı ile ilişkilendirildiğinden bu iki bakanlık sıkça karıştırılır.",
+   "kaynak": "Türkiye Uzay Ajansı",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+   "olayTarihi": "2018-12-13"
+  }
+ }
+]

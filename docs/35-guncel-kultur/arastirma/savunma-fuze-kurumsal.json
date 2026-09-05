@@ -1,0 +1,286 @@
+{
+ "alan": "savunma-fuze-kurumsal",
+ "sorular": [
+  {
+   "kok": "ROKETSAN tarafından geliştirilen HİSAR hava savunma füzesi ailesinde, 25 km'yi aşan menziliyle orta irtifa hava savunma görevini üstlenen versiyon hangisidir?",
+   "siklar": {
+    "A": "SUNGUR",
+    "B": "KORKUT",
+    "C": "SİPER",
+    "D": "HİSAR-A",
+    "E": "HİSAR-O"
+   },
+   "dogru": "E",
+   "aciklama": "HİSAR ailesinin alçak irtifa versiyonu 15 km üzeri menzile sahip HİSAR-A, orta irtifa versiyonu ise 25 km üzeri menzile sahip HİSAR-O'dur; ikisi de dikey atış yapabilen, çift darbeli katı yakıtlı motor kullanan füzelerdir (ROKETSAN ürün sayfası). Sondaki harfler görev irtifasını verir: A alçak, O orta. SUNGUR çok kısa menzilli (8 km), SİPER ise uzun menzilli bölge hava savunma sistemidir.",
+   "kaynak": "ROKETSAN, HİSAR Hava Savunma Füzeleri ürün sayfası",
+   "kaynakUrl": "https://www.roketsan.com.tr/en/products/hisar-air-defence-missiles",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "Savunma Sanayii Başkanlığı'nın yürüttüğü, uzun menzil ve yüksek irtifadaki muharip uçak, seyir füzesi ve İHA gibi hedeflere karşı geliştirilen SİPER hava savunma sistemi hangi üç kuruluşun iş birliğiyle geliştirilmektedir?",
+   "siklar": {
+    "A": "ROKETSAN – MKE – BAYKAR",
+    "B": "HAVELSAN – ASPİLSAN – MKE",
+    "C": "TUSAŞ – TEI – TÜBİTAK SAGE",
+    "D": "ASELSAN – TUSAŞ – HAVELSAN",
+    "E": "ASELSAN – ROKETSAN – TÜBİTAK SAGE"
+   },
+   "dogru": "E",
+   "aciklama": "SİPER Uzun Menzilli Bölge Hava ve Füze Savunma Sistemi, Savunma Sanayii Başkanlığı yönetiminde ASELSAN, ROKETSAN ve TÜBİTAK SAGE iş birliğiyle geliştirilmektedir (SSB proje sayfası). Sistem komuta merkezi, arama radarı, ateş kontrol merkezi ve radarı, füze atış sistemi ve füzelerden oluşur. TUSAŞ ve HAVELSAN bu projenin ana yüklenicileri arasında değildir.",
+   "kaynak": "Savunma Sanayii Başkanlığı, SİPER proje sayfası",
+   "kaynakUrl": "https://www.ssb.gov.tr/proje/siper",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "Savunma Sanayii Başkanlığı 2025 Yılı Faaliyet Raporu'na göre, katmanlı hava savunma programı Çelik Kubbe kapsamında Türk Silahlı Kuvvetlerine ilk etapta kaç araçtan oluşan hava savunma, radar ve elektronik harp sistemi teslim edilmiştir?",
+   "siklar": {
+    "A": "12",
+    "B": "24",
+    "C": "47",
+    "D": "68",
+    "E": "105"
+   },
+   "dogru": "C",
+   "aciklama": "SSB'nin Şubat 2026'da yayımlanan 2025 Yılı Faaliyet Raporu'nda, Çelik Kubbe kapsamında ilk olarak toplam 47 araçtan oluşan hava savunma, radar ve elektronik harp sisteminin silahlı kuvvetlere teslim edildiği belirtilmiştir. Çelik Kubbe tek bir silah değil, her irtifa ve menzilde koruma sağlamayı amaçlayan katmanlı bir \"sistemlerin sistemi\"dir; SİPER, HİSAR, KORKUT ve GÜRZ gibi sistemler bu mimarinin parçalarıdır.",
+   "kaynak": "Savunma Sanayii Başkanlığı, 2025 Yılı Faaliyet Raporu (Şubat 2026)",
+   "kaynakUrl": "https://www.ssb.gov.tr/storage/img/2025-yili-faaliyet-raporu.pdf",
+   "olayTarihi": "2026-02-28"
+  },
+  {
+   "kok": "ROKETSAN tarafından geliştirilen ve hücumbot, korvet ile firkateynlere entegre edilebilen ATMACA gemisavar füzesinin üreticisince açıklanan menzili kaç kilometredir?",
+   "siklar": {
+    "A": "80 km",
+    "B": "120 km",
+    "C": "180 km",
+    "D": "250 km",
+    "E": "500 km"
+   },
+   "dogru": "D",
+   "aciklama": "ATMACA, su üstü harbinin harekât ihtiyaçları için geliştirilmiş, 250 km menzilli, 220 kg harp başlığı taşıyan gemisavar füzesidir; güdümünde ataletsel seyrüsefer, GPS, barometrik ve radar altimetre ile aktif radar arayıcı başlık kullanılır (ROKETSAN ürün sayfası). ATMACA'nın karadan karaya versiyonu KARA ATMACA adını taşır; AKYA ise bir torpidodur, füze değildir.",
+   "kaynak": "ROKETSAN, ATMACA Gemisavar Füzesi ürün sayfası",
+   "kaynakUrl": "https://www.roketsan.com.tr/en/products/atmaca-anti-ship-missile",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "ROKETSAN ürün kataloğuna göre, hipersonik seviyelere ulaşan seyir hızıyla stratejik hedeflere karşı kullanılan TAYFUN füzesinin menzili aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "70 km'nin üzerinde",
+    "B": "120 km'nin üzerinde",
+    "C": "280 km'nin üzerinde",
+    "D": "800 km'nin üzerinde",
+    "E": "1.500 km'nin üzerinde"
+   },
+   "dogru": "C",
+   "aciklama": "ROKETSAN'ın TAYFUN kataloğunda füzenin menzili 280 km'nin üzerinde, uzunluğu 6,5 m, çapı 610 mm ve ağırlığı 2.300 kg olarak verilmiş; hedef seti arasında hava savunma füze sistemleri, komuta kontrol merkezleri ve kritik askerî tesisler sayılmıştır. TAYFUN, koordinata güdümlü ve 10 metrenin altında isabet hassasiyetine (CEP) sahiptir.",
+   "kaynak": "ROKETSAN, TAYFUN Füzesi ürün kataloğu",
+   "kaynakUrl": "https://www.roketsan.com.tr/uploads/docs/kataloglar/TR/2024/1726595739_tayfun.pdf",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "TÜBİTAK SAGE tarafından geliştirilen ve Türkiye'nin ilk millî seyir füzesi ailesi olan SOM'un açılımı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Satha Atılan Orta Menzilli Mühimmat",
+    "B": "Stratejik Otonom Mühimmat",
+    "C": "Süpersonik Orta Menzilli Mühimmat",
+    "D": "Seyir Odaklı Manevra Füzesi",
+    "E": "Sabit Odaklı Mühimmat"
+   },
+   "dogru": "A",
+   "aciklama": "TÜBİTAK SAGE'nin sistem kataloğunda SOM, \"Satha Atılan Orta Menzilli Mühimmat\" olarak künyelenmiş ve seyir füzeleri başlığı altında listelenmiştir; SOM-J versiyonu da aynı aileye aittir. SAGE, 1972'den beri savunma sanayiinde Ar-Ge yürüten TÜBİTAK enstitüsüdür ve SOM ailesinin geliştiricisidir; ROKETSAN ise SOM'u kendi ürün kataloğunda seri üretim/entegrasyon kalemi olarak taşır.",
+   "kaynak": "TÜBİTAK SAGE, Sistemler kataloğu",
+   "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/sistemler/",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "TÜBİTAK SAGE tarafından geliştirilen millî hava-hava füzelerinden hangisi \"görüş ötesi\" (BVR) sınıfındadır?",
+   "siklar": {
+    "A": "BOZDOĞAN",
+    "B": "GÖKDOĞAN",
+    "C": "BOZOK",
+    "D": "KUZGUN",
+    "E": "GÖKSUR"
+   },
+   "dogru": "B",
+   "aciklama": "TÜBİTAK SAGE'nin sistem kataloğunda GÖKDOĞAN \"Görüş Ötesi Hava-Hava Füzesi\", BOZDOĞAN ise \"Görüş İçi Hava-Hava Füzesi\" olarak tanımlanmıştır; GÖKDOĞAN aktif radar arayıcı başlık kullanır ve 65 km üzeri menzile sahiptir. İkisi birbirine en çok karıştırılan çifttir; BOZOK ve KUZGUN İHA mühimmatı, GÖKSUR ise deniz platformları için yakın hava savunma füzesidir.",
+   "kaynak": "TÜBİTAK SAGE, Sistemler kataloğu",
+   "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/sistemler/",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "TÜBİTAK SAGE'nin geliştirdiği güdüm kitlerinden HGK ve KGK'nın açılımları sırasıyla aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Hava Güdüm Kiti – Kara Güdüm Kiti",
+    "B": "Hassas Güdüm Kiti – Kanatlı Güdüm Kiti",
+    "C": "Hedef Gözetleme Kiti – Kısa Güdüm Kiti",
+    "D": "Hafif Güdüm Kiti – Kontrollü Güdüm Kiti",
+    "E": "Hassas Görüntüleme Kiti – Kanatlı Güdüm Kiti"
+   },
+   "dogru": "B",
+   "aciklama": "TÜBİTAK SAGE'nin sistem kataloğunda HGK \"Hassas Güdüm Kiti\", KGK ise \"Kanatlı Güdüm Kiti\" olarak künyelenmiştir; her ikisi de genel maksat bombalarını güdümlü mühimmata dönüştüren millî kitlerdir. KGK'daki kanat, mühimmata süzülme kabiliyeti kazandırarak menzili artırır; bu iki kısaltma birbirine sıkça karıştırılır.",
+   "kaynak": "TÜBİTAK SAGE, Sistemler kataloğu",
+   "kaynakUrl": "https://www.sage.tubitak.gov.tr/tr/sistemler/",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "ROKETSAN tarafından geliştirilen TEBER güdüm kitinin işlevi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "MK-81 ve MK-82 genel maksat bombalarını güdümlü akıllı mühimmata dönüştürmek",
+    "B": "Gemisavar füzelere aktif radar arayıcı başlık eklemek",
+    "C": "İnsansız hava araçlarına elektronik harp kabiliyeti kazandırmak",
+    "D": "Topçu roketlerinin menzilini iki katına çıkarmak",
+    "E": "Tanksavar füzelerine üstten vuruş kabiliyeti kazandırmak"
+   },
+   "dogru": "A",
+   "aciklama": "TEBER, MK-81 ve MK-82 genel maksat bombalarını akıllı silah sistemlerine dönüştüren bir güdüm kitidir; ataletsel ölçüm ünitesi, GPS ve yarı aktif lazer arayıcı başlıkla 2-28 km arasında 3 metrenin altında isabet sağlar (ROKETSAN ürün sayfası). TEBER-81 ve TEBER-82 versiyonları dönüştürdükleri bombanın sınıfına göre adlandırılır.",
+   "kaynak": "ROKETSAN, TEBER Güdüm Kiti ürün sayfası",
+   "kaynakUrl": "https://www.roketsan.com.tr/en/products/teber-guidance-kit",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "ROKETSAN'ın taarruz helikopteri, hafif taarruz uçağı ve kara/deniz platformlarından atılabilen, 0,5-8 km menzilli, görüntüleyen kızılötesi arayıcı başlıklı uzun menzilli tanksavar füze sistemi hangisidir?",
+   "siklar": {
+    "A": "KARAOK",
+    "B": "METE",
+    "C": "CİRİT",
+    "D": "OMTAS",
+    "E": "UMTAS"
+   },
+   "dogru": "E",
+   "aciklama": "UMTAS Uzun Menzilli Tanksavar Füze Sistemi 0,5-8 km menzile, 160 mm çapa ve 37,5 kg ağırlığa sahiptir; görüntüleyen kızılötesi arayıcı başlığı ve RF veri linki sayesinde at-unut ve at-güncelle modlarında çalışır (ROKETSAN ürün sayfası). Baş harf açılımı ayırt edicidir: UMTAS uzun menzilli, OMTAS ise 0,2-4 km menzilli orta menzilli tanksavar sistemidir. KARAOK kısa menzilli, CİRİT ise lazer güdümlü 2,75 inç füzedir.",
+   "kaynak": "ROKETSAN, UMTAS ve OMTAS ürün sayfaları",
+   "kaynakUrl": "https://www.roketsan.com.tr/en/products/umtas-long-range-anti-tank-missile-system",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "ASELSAN tarafından geliştirilen ve alçak irtifa hava savunmasında görev yapan KORKUT sisteminin namlu çapı kaç milimetredir?",
+   "siklar": {
+    "A": "20 mm",
+    "B": "25 mm",
+    "C": "35 mm",
+    "D": "40 mm",
+    "E": "76 mm"
+   },
+   "dogru": "C",
+   "aciklama": "KORKUT, 35 mm çift namlulu, dakikada 1.100 atım ateş gücüne sahip namlulu hava savunma sistemidir ve 35 mm ATOM parçacıklı mühimmatla İHA, seyir füzesi ve havadan karaya füzelere karşı yaklaşık 4 km etkili menzile ulaşır (ASELSAN ürün broşürü, Haziran 2025). Sistem, silah sistemi araçları (SSA) ile komuta kontrol aracından (KKA) oluşan takımlar hâlinde konuşlanır.",
+   "kaynak": "ASELSAN, KORKUT 130/35 ürün broşürü (Haziran 2025)",
+   "kaynakUrl": "https://wwwcdn.aselsan.com/api/file/SST_KORKUT_130_35_TR.pdf",
+   "olayTarihi": "2025-06-30"
+  },
+  {
+   "kok": "ASELSAN'ın geliştirdiği KORAL sistemi hangi alanda kullanılır?",
+   "siklar": {
+    "A": "İnsansız hava aracı yer kontrol istasyonu",
+    "B": "Zırhlı personel taşıyıcı aktif koruma sistemi",
+    "C": "Denizaltı sonar sistemi",
+    "D": "Orta irtifa hava savunma füzesi",
+    "E": "Kara konuşlu mobil radar elektronik harp sistemi"
+   },
+   "dogru": "E",
+   "aciklama": "KORAL, elektronik destek ve elektronik taarruz alt sistemlerini aynı platformda barındıran kara konuşlu mobil radar elektronik harp sistemidir; tehdit radarlarını tespit edip kapsama alanlarını daraltır, aldatma veya karıştırma yoluyla elektronik taarruz uygular (ASELSAN ürün sayfası). Frekans atlamalı sinyallere karşı reaktif karıştırma yapabilmesi ayırt edici özelliğidir. Radar bir sensördür, KORAL ise radarı etkisizleştiren karşı sistemdir.",
+   "kaynak": "ASELSAN, KORAL II ürün sayfası",
+   "kaynakUrl": "https://www.aselsan.com/tr/savunma/urun/1867/koral-ii",
+   "olayTarihi": "2026-09-05"
+  },
+  {
+   "kok": "7 Kasım 1985'te kabul edilen ve bugün \"Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun\" adıyla yürürlükte olan, Savunma Sanayii Başkanlığı'nın temelini oluşturan kanun kaç sayılıdır?",
+   "siklar": {
+    "A": "2634",
+    "B": "3238",
+    "C": "3388",
+    "D": "3704",
+    "E": "5202"
+   },
+   "dogru": "B",
+   "aciklama": "3238 sayılı Kanun 7 Kasım 1985'te kabul edilmiş, 13 Kasım 1985 tarihli ve 18927 sayılı Resmî Gazete'de yayımlanmıştır; kurum bu kanunla \"Savunma Sanayii Geliştirme ve Destekleme İdaresi Başkanlığı\" adıyla kurulmuş, 1989'da Savunma Sanayii Müsteşarlığı'na, 2018'de Cumhurbaşkanlığı Savunma Sanayii Başkanlığı'na dönüşmüştür; kanunun bugünkü adı da 2 Temmuz 2018 tarihli 703 sayılı KHK ile verilmiştir. Aynı kanun, Türkiye Cumhuriyet Merkez Bankası nezdinde Savunma Sanayii Destekleme Fonu'nu kurar. Tuzak, 3388 sayılı Kanun'un Türk Silahlı Kuvvetlerini Güçlendirme Vakfı'nın, 3704 sayılı Kanun'un ise 390 sayılı KHK'yi aynen kabul eden kanun olmasıdır.",
+   "kaynak": "3238 sayılı Kanun (Mevzuat Bilgi Sistemi künyesi; 2 no'lu dipnot: 2/7/2018-KHK/703/121 md. ile ad değişikliği)",
+   "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3238.pdf",
+   "olayTarihi": "1985-11-07"
+  },
+  {
+   "kok": "Türk savunma sanayiinde tedarik kararlarını alan en üst karar organı olan Savunma Sanayii İcra Komitesi'ne kim başkanlık eder?",
+   "siklar": {
+    "A": "Savunma Sanayii Başkanı",
+    "B": "Sanayi ve Teknoloji Bakanı",
+    "C": "Cumhurbaşkanı",
+    "D": "Genelkurmay Başkanı",
+    "E": "Millî Savunma Bakanı"
+   },
+   "dogru": "C",
+   "aciklama": "Savunma Sanayii İcra Komitesi, Cumhurbaşkanının başkanlığında; görevlendirilecek Cumhurbaşkanı Yardımcısı, Hazine ve Maliye Bakanı, İçişleri Bakanı, Millî Savunma Bakanı, Sanayi ve Teknoloji Bakanı, Genelkurmay Başkanı ve Savunma Sanayii Başkanından oluşur (SSB 2025 Yılı Faaliyet Raporu). Cumhurbaşkanının katılmadığı toplantılara Cumhurbaşkanı Yardımcısı vekâleten başkanlık eder; komitenin sekretaryasını Savunma Sanayii Başkanlığı yürütür.",
+   "kaynak": "Savunma Sanayii Başkanlığı, 2025 Yılı Faaliyet Raporu (Şubat 2026)",
+   "kaynakUrl": "https://www.ssb.gov.tr/storage/img/2025-yili-faaliyet-raporu.pdf",
+   "olayTarihi": "2026-02-28"
+  },
+  {
+   "kok": "ASELSAN, TUSAŞ, ROKETSAN ve HAVELSAN'ın çoğunluk hissesine sahip olan Türk Silahlı Kuvvetlerini Güçlendirme Vakfı, 17 Haziran 1987'de kaç sayılı kanunla kurulmuştur?",
+   "siklar": {
+    "A": "3238",
+    "B": "3291",
+    "C": "3388",
+    "D": "3571",
+    "E": "3704"
+   },
+   "dogru": "C",
+   "aciklama": "Kuvvet komutanlıkları adına kurulan vakıfların birleştirilmesiyle, 17 Haziran 1987'de 3388 sayılı yasayla kurulan TSKGV 26 Eylül 1987'de faaliyete başlamıştır ve özel bir yasayla kurulan ilk savunma sanayii vakfıdır (TSKGV kurumsal bilgileri). Vakıf ASELSAN, TUSAŞ, ROKETSAN, HAVELSAN, ASPİLSAN ve İŞBİR'de %50'den fazla hisseye sahiptir. 3238 sayılı Kanun ise SSB'nin kuruluş kanunudur; ikisi karıştırılır.",
+   "kaynak": "Türk Silahlı Kuvvetlerini Güçlendirme Vakfı, kurumsal bilgiler",
+   "kaynakUrl": "https://www.tskgv.org.tr/",
+   "olayTarihi": "1987-06-17"
+  },
+  {
+   "kok": "SIPRI'nin 1 Aralık 2025'te açıkladığı 2024 yılı \"Dünyanın En Büyük 100 Silah Üreticisi\" listesinde kaç Türk şirketi yer almış ve hangi Türk şirketi listeye ilk kez girmiştir?",
+   "siklar": {
+    "A": "2 şirket – listeye ilk kez BAYKAR girmiştir",
+    "B": "3 şirket – listeye ilk kez MKE girmiştir",
+    "C": "5 şirket – listeye ilk kez MKE girmiştir",
+    "D": "5 şirket – listeye ilk kez ASELSAN girmiştir",
+    "E": "7 şirket – listeye ilk kez HAVELSAN girmiştir"
+   },
+   "dogru": "C",
+   "aciklama": "Stockholm Uluslararası Barış Araştırmaları Enstitüsü'nün (SIPRI) 1 Aralık 2025'te yayımladığı 2024 verilerine göre listede beş Türk şirketi yer almış, toplam silah gelirleri %11 artışla 10,1 milyar dolara ulaşmış ve MKE ilk kez ilk 100'e girmiştir. Bir önceki (2023) listede üç Türk şirketi bulunuyordu; sayıların yıllara göre değiştiğine dikkat edilmelidir.",
+   "kaynak": "SIPRI, Top 100 basın bülteni, 1 Aralık 2025",
+   "kaynakUrl": "https://www.sipri.org/media/press-release/2025/sipri-top-100-arms-producers-see-combined-revenues-surge-states-rush-modernize-and-expand-arsenals",
+   "olayTarihi": "2025-12-01"
+  },
+  {
+   "kok": "Savunma Sanayii Başkanlığı'nın 2025 Yılı Faaliyet Raporu'nda açıklanan, 2024 yılına ilişkin savunma sanayii yerlilik oranı yüzde kaçtır?",
+   "siklar": {
+    "A": "%61,3",
+    "B": "%68,0",
+    "C": "%75,4",
+    "D": "%81,3",
+    "E": "%92,7"
+   },
+   "dogru": "D",
+   "aciklama": "SSB'nin performans göstergelerine göre 2025 yılı içinde hesaplanan 2024 yılı savunma sanayii yerlilik oranı %81,3'tür ve hedef değeri %82 olarak alınmıştır (SSB 2025 Yılı Faaliyet Raporu). Oran, firmaların her yıl haziran ayında YETEN sistemine girdiği veriler üzerinden hesaplandığı için bir yıl gecikmeli açıklanır; bu yüzden \"2025 oranı\" diye bir veri henüz yoktur.",
+   "kaynak": "Savunma Sanayii Başkanlığı, 2025 Yılı Faaliyet Raporu (Şubat 2026)",
+   "kaynakUrl": "https://www.ssb.gov.tr/storage/img/2025-yili-faaliyet-raporu.pdf",
+   "olayTarihi": "2026-02-28"
+  }
+ ],
+ "uretilemeyen": [
+  {
+   "konu": "BORA balistik füzesinin menzili ve ilk harekât kullanımı",
+   "neden": "ROKETSAN güncel ürün kataloğunda BORA adı geçmiyor (ihracat adı KHAN olarak listeleniyor); menzil ve ilk kullanım tarihi için iki birincil kaynak doğrulaması yapılamadı"
+  },
+  {
+   "konu": "GÜRZ sisteminin menzili ve silah bileşimi",
+   "neden": "ASELSAN sayfaları yalnızca arama motoru özeti üzerinden okunabildi; GÜRZ 150 ile GÜRZ İnsansız versiyonlarının menzil değerleri birincil broşürden teyit edilemedi"
+  },
+  {
+   "konu": "SİPER'in menzil rakamı (kilometre)",
+   "neden": "SSB ve ASELSAN sayfaları menzili sayısal olarak vermiyor, yalnızca 'uzun menzil' sınıfı belirtiliyor; açık kaynaklardaki 100-150 km rakamları resmî kaynakla doğrulanamadı"
+  },
+  {
+   "konu": "ATMACA'nın envantere giriş tarihi ve ilk konuşlandırıldığı gemi",
+   "neden": "ROKETSAN, SSB ve Deniz Kuvvetleri kaynaklarında kesin teslim tarihi ve ilk platform bilgisi birincil kaynaktan doğrulanamadı"
+  },
+  {
+   "konu": "Savunma Sanayii Başkanı'nın kim olduğu",
+   "neden": "SSB 2025 Faaliyet Raporu (Şubat 2026) Prof. Dr. Haluk Görgün imzalı; ancak makam sahibi bilgisi eskimeye açık olduğundan sabit olgu sayılmadı"
+  },
+  {
+   "konu": "2026 yılı savunma ve havacılık ihracatı rakamı",
+   "neden": "SSB sitesinde 10,9 milyar dolar ibaresi görülüyor ancak hangi yıla ait olduğu belirtilmemiş; 2025 rakamı (10,054 milyar dolar) ise başka bir alanda zaten soru olmuş"
+  }
+ ]
+}

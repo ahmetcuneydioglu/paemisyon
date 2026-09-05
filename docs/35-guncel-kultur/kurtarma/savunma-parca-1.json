@@ -1,0 +1,526 @@
+{
+ "parca": 1,
+ "sorular": [
+  {
+   "id": "savunma-fuze-kurumsal-13",
+   "alan": "savunma-fuze-kurumsal",
+   "karar": "UYARI",
+   "kok": "Bugünkü Savunma Sanayii Başkanlığı'nın temelini oluşturan ve 7 Kasım 1985'te kabul edilen \"Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun\" kaç sayılıdır?",
+   "siklar": {
+    "A": "2634",
+    "B": "3238",
+    "C": "3388",
+    "D": "3704",
+    "E": "5202"
+   },
+   "dogruCevap": "B",
+   "aciklama": "3238 sayılı Kanun 7 Kasım 1985'te kabul edilmiş ve 13 Kasım 1985 tarihli, 18927 sayılı Resmî Gazete'de yayımlanmıştır; kurum bu kanunla \"Savunma Sanayii Geliştirme ve Destekleme İdaresi Başkanlığı\" adıyla kurulmuş, 1989'da Savunma Sanayii Müsteşarlığı'na, 2018'de ise Cumhurbaşkanlığı Savunma Sanayii Başkanlığı'na dönüşmüştür. Aynı kanun, TCMB nezdinde Savunma Sanayii Destekleme Fonu'nu da kurar. 3388 sayılı Kanun ise TSKGV'nin kuruluş kanunudur.",
+   "kaynak": "Mevzuat Bilgi Sistemi, 3238 sayılı Kanun; SSB 2025 Yılı Faaliyet Raporu",
+   "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3238.pdf",
+   "olayTarihi": "1985-11-07",
+   "uyarilar": [
+    "Küçük anakronizm: 'Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun' başlığı kanuna 2/7/2018 tarihli 703 sayılı KHK ile verilmiştir; 1985'te kabul edilen metnin adı 'Savunma Sanayii Geliştirme ve Destekleme İdaresi Başkanlığı Kurulması Hakkında Kanun' idi (mevzuat metnindeki 2 no'lu dipnot). Cevabı değiştirmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "Mevzuat Bilgi Sistemi, 3238 sayılı Kanun künyesi",
+     "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3238.pdf",
+     "gerekce": "Resmî metin: 'SAVUNMA SANAYİİ İLE İLGİLİ BAZI DÜZENLEMELER HAKKINDA KANUN — Kanun Numarası: 3238, Kabul Tarihi: 7/11/1985, RG 13/11/1985-18927'.",
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "kaynak": "mevzuat.gov.tr, 3238 sayılı Kanun metni — 'Kanun Numarası: 3238, Kabul Tarihi: 7/11/1985, RG 13/11/1985 – 18927'",
+     "kaynakUrl": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3238.pdf",
+     "gerekce": "Mevzuat metninin künyesi kanun numarasını ve 7 Kasım 1985 kabul tarihini birebir doğruluyor; SSB'nin 2025 Faaliyet Raporu da sistemin 3238 sayılı Kanunla kurulduğunu yazıyor.",
+     "uyari": "Küçük anakronizm: 'Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun' başlığı kanuna 2/7/2018 tarihli 703 sayılı KHK ile verilmiştir; 1985'te kabul edilen metnin adı 'Savunma Sanayii Geliştirme ve Destekleme İdaresi Başkanlığı Kurulması Hakkında Kanun' idi (mevzuat metnindeki 2 no'lu dipnot). Cevabı değiştirmiyor."
+    }
+   ]
+  },
+  {
+   "id": "savunma-fuze-kurumsal-5",
+   "alan": "savunma-fuze-kurumsal",
+   "karar": "UYARI",
+   "kok": "ROKETSAN ürün kataloğuna göre, hipersonik seviyelere ulaşan seyir hızıyla stratejik hedeflere karşı kullanılan TAYFUN füzesinin menzili aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "70 km'nin üzerinde",
+    "B": "120 km'nin üzerinde",
+    "C": "280 km'nin üzerinde",
+    "D": "800 km'nin üzerinde",
+    "E": "1.500 km'nin üzerinde"
+   },
+   "dogruCevap": "C",
+   "aciklama": "ROKETSAN'ın TAYFUN kataloğunda füzenin menzili 280 km'nin üzerinde, uzunluğu 6,5 m, çapı 610 mm ve ağırlığı 2.300 kg olarak verilmiş; hedef seti arasında hava savunma füze sistemleri, komuta kontrol merkezleri ve kritik askerî tesisler sayılmıştır. TAYFUN, koordinata güdümlü ve 10 metrenin altında isabet hassasiyetine (CEP) sahiptir.",
+   "kaynak": "ROKETSAN, TAYFUN Füzesi ürün kataloğu",
+   "kaynakUrl": "https://www.roketsan.com.tr/uploads/docs/kataloglar/TR/2024/1726595739_tayfun.pdf",
+   "olayTarihi": "2026-09-05",
+   "uyarilar": [
+    "Soru kökü 'ROKETSAN ürün kataloğuna göre' diyor ama TAYFUN, roketsan.com.tr ürün listesinde ve kataloglar dizininde YOK (ürün sayfası 404, katalog PDF'i yayımlanmamış) — kökteki katalog dayanağı doğrulanamıyor. Ayrıca AA/haber kaynakları etkili menzil 280 km, azami menzil 800 km diyerek D şıkkını da savunulabilir kılıyor; TAYFUN Blok-4 için ~1.000 km telaffuz ediliyor. Kök ya kaynağı 'ROKETSAN ürün kartı/BORA ile karşılaştırma' diye düzeltilmeli ya da soru elenmeli.",
+    "Kök 'ROKETSAN ürün kataloğuna göre' dediği için cevap tektir; ancak TAYFUN, roketsan.com.tr güncel ürün listesinde (tr/urunler) YER ALMIYOR — dayanak yalnız 2024 katalog PDF'i. Ayrıca basında ~560 km test menzili ve TAYFUN BLOK-4 için çok daha uzun menzil konuşulduğundan D şıkkı adayı bilgili öğrenciyi tereddüde düşürebilir; kökün 'katalog' kaydı bu riski büyük ölçüde kapatıyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "ROKETSAN ürün kartında yer aldığı bildirilen 280+ km değeri; karşılaştırma için ROKETSAN BORA katalog PDF'i (280 km)",
+     "kaynakUrl": "https://www.roketsan.com.tr/uploads/docs/kataloglar/TR/2024/1726595380_bora.pdf",
+     "gerekce": "TAYFUN için yaygın olarak aktarılan üretici değeri '280 km'nin üzerinde'dir; diğer seçenekler (70/120/800/1500 km) hiçbir üretici belgesinde geçmiyor.",
+     "uyari": "Soru kökü 'ROKETSAN ürün kataloğuna göre' diyor ama TAYFUN, roketsan.com.tr ürün listesinde ve kataloglar dizininde YOK (ürün sayfası 404, katalog PDF'i yayımlanmamış) — kökteki katalog dayanağı doğrulanamıyor. Ayrıca AA/haber kaynakları etkili menzil 280 km, azami menzil 800 km diyerek D şıkkını da savunulabilir kılıyor; TAYFUN Blok-4 için ~1.000 km telaffuz ediliyor. Kök ya kaynağı 'ROKETSAN ürün kartı/BORA ile karşılaştırma' diye düzeltilmeli ya da soru elenmeli."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "ROKETSAN 2024 Ürün Kataloğu, TAYFUN föyü — 'MENZİL > 280 KM', 'Hipersonik seviyelere ulaşan seyir hızı'",
+     "kaynakUrl": "https://www.roketsan.com.tr/uploads/docs/kataloglar/TR/2024/1726595739_tayfun.pdf",
+     "gerekce": "Katalog föyü menzili '> 280 km' olarak veriyor ve kökteki 'hipersonik seviyelere ulaşan seyir hızı' ifadesi föyün kendi cümlesi.",
+     "uyari": "Kök 'ROKETSAN ürün kataloğuna göre' dediği için cevap tektir; ancak TAYFUN, roketsan.com.tr güncel ürün listesinde (tr/urunler) YER ALMIYOR — dayanak yalnız 2024 katalog PDF'i. Ayrıca basında ~560 km test menzili ve TAYFUN BLOK-4 için çok daha uzun menzil konuşulduğundan D şıkkı adayı bilgili öğrenciyi tereddüde düşürebilir; kökün 'katalog' kaydı bu riski büyük ölçüde kapatıyor."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-1",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Millî Muharip Uçak KAAN ilk uçuşunu hangi tarihte gerçekleştirmiştir?",
+   "siklar": {
+    "A": "25 Nisan 2023",
+    "B": "21 Şubat 2024",
+    "C": "6 Mayıs 2024",
+    "D": "14 Aralık 2022",
+    "E": "19 Kasım 2024"
+   },
+   "dogruCevap": "B",
+   "aciklama": "KAAN, 21 Şubat 2024'te ilk uçuşunu yapmış; 13 dakika havada kalarak 8.000 feet irtifaya ve 230 knot hıza ulaşmıştır (TUSAŞ ürün sayfası). Tuzak, 6 Mayıs 2024'tür: bu tarih ilk uçuş değil, KAAN'ın ikinci test uçuşudur. 25 Nisan 2023 ise HÜRJET'in ilk uçuş tarihidir.",
+   "kaynak": "TUSAŞ, KAAN ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+   "olayTarihi": "2024-02-21",
+   "uyarilar": [
+    "C şıkkı (6 Mayıs 2024) aynı sayfada geçen İKİNCİ test uçuşunun tarihidir; ayırt edici ama meşru bir çeldirici."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ, KAAN ürün sayfası",
+     "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/kaan",
+     "gerekce": "TUSAŞ: \"Millî Muharip Uçak KAAN 21 Şubat 2024 tarihinde ilk uçuşunu gerçekleştirerek 13 dakika havada kaldı.\"",
+     "uyari": "C şıkkı (6 Mayıs 2024) aynı sayfada geçen İKİNCİ test uçuşunun tarihidir; ayırt edici ama meşru bir çeldirici."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ basın bülteni: \"Milli Muharip Uçak KAAN ilk uçuşunu gerçekleştirdi\"",
+     "kaynakUrl": "https://www.tusas.com/medya-merkezi/haberler/milli-muharip-ucak-kaan-ilk-ucusunu-gerceklestirdi",
+     "gerekce": "TUSAŞ, KAAN'ın 21 Şubat 2024'te 08:50'de kalkıp 13 dakika havada kaldığını, 8.000 feet ve 230 knot'a ulaştığını duyuruyor.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-10",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Yerli imkânlarla geliştirilip üretilen ilk genel maksat helikopteri olan T625 GÖKBEY, ilk uçuşunu hangi tarihte yapmıştır?",
+   "siklar": {
+    "A": "6 Eylül 2018",
+    "B": "30 Aralık 2010",
+    "C": "25 Nisan 2023",
+    "D": "11 Temmuz 2016",
+    "E": "6 Aralık 2019"
+   },
+   "dogruCevap": "A",
+   "aciklama": "TUSAŞ'ın 6.050 kilogram azami kalkış ağırlığındaki T625 GÖKBEY genel maksat helikopteri ilk uçuşunu 6 Eylül 2018'de gerçekleştirmiştir (TUSAŞ). GÖKBEY, yerli imkânlarla geliştirilip üretilen ilk genel maksat helikopteridir; sonraki varyantlarında millî TEI-TS1400 turboşaft motor kullanılmaktadır.",
+   "kaynak": "TUSAŞ, T625 GÖKBEY ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey",
+   "olayTarihi": "2018-09-06",
+   "uyarilar": [
+    "D şıkkındaki 11 Temmuz 2016, HÜRKUŞ'un sertifika tarihi; 12. soruyla aynı havuzdan gelen çeldirici, sorun teşkil etmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "TUSAŞ, T625 GÖKBEY ürün sayfası",
+     "kaynakUrl": "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey",
+     "gerekce": "TUSAŞ: \"Yerli imkânlarla geliştirilip üretilen ilk Genel Maksat Helikopteri T625 GÖKBEY ilk uçuşunu 6 Eylül 2018 saat 06:00'da başarıyla gerçekleştirmiş\".",
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "kaynak": "TUSAŞ ürün sayfası — T625 GÖKBEY",
+     "kaynakUrl": "https://www.tusas.com/urunler/helikopter/ozgun-gelistirme/gokbey",
+     "gerekce": "TUSAŞ birebir: \"Yerli imkânlarla geliştirilip üretilen ilk Genel Maksat Helikopteri T625 GÖKBEY ilk uçuşunu 6 Eylül 2018 saat 06:00'da başarıyla gerçekleştirmiş\".",
+     "uyari": "D şıkkındaki 11 Temmuz 2016, HÜRKUŞ'un sertifika tarihi; 12. soruyla aynı havuzdan gelen çeldirici, sorun teşkil etmiyor."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-11",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "TUSAŞ üretimi T129 ATAK taarruz helikopterinin ilk ihracat yapıldığı ülke hangisidir?",
+   "siklar": {
+    "A": "Pakistan",
+    "B": "Azerbaycan",
+    "C": "Filipinler",
+    "D": "Katar",
+    "E": "Ürdün"
+   },
+   "dogruCevap": "C",
+   "aciklama": "T129 ATAK taarruz helikopteri, ana yüklenici TUSAŞ tarafından ilk kez Filipinler'e ihraç edilmiş ve Filipinler Hava Kuvvetleri'ne 6 helikopter teslim edilmiştir (TUSAŞ). Pakistan ile imzalanan sözleşme motor ihraç izni sorunu nedeniyle teslimatla sonuçlanmamıştır; bu ikisi sıkça karıştırılır.",
+   "kaynak": "TUSAŞ, T129 ATAK ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urun/t129-atak",
+   "olayTarihi": "2011-08-01",
+   "uyarilar": [
+    "Kök \"ilk ihracat yapıldığı ülke\" derken teslimatı mı sözleşmeyi mi kastettiği belirsiz: ilk ihracat SÖZLEŞMESİ 2018'de Pakistan ile imzalanmış ancak ABD motor ihraç lisansı çıkmadığı için teslimat hiç yapılmamıştır. Kökün \"ilk ihracat teslimatının yapıldığı ülke\" biçiminde netleştirilmesi önerilir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansı, \"Atak helikopteri ilk ihracat için Filipinler'de\"; TRT Haber, \"ATAK'ta ilk ihracat Filipinler'e\"; TUSAŞ T129 ATAK ürün sayfası (ihracat müşterileri: Filipinler ve Nijerya)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/atak-helikopteri-ilk-ihracat-icin-filipinlerde-/2528498",
+     "gerekce": "İlk T129 ATAK ihracat teslimatı Filipinler Hava Kuvvetleri'ne yapıldı (2022, SSB–Filipinler Savunma Bakanlığı G2G anlaşması); TUSAŞ ürün sayfası yalnız Filipinler ve Nijerya'yı ihracat kullanıcısı olarak sayıyor.",
+     "uyari": "Kök \"ilk ihracat yapıldığı ülke\" derken teslimatı mı sözleşmeyi mi kastettiği belirsiz: ilk ihracat SÖZLEŞMESİ 2018'de Pakistan ile imzalanmış ancak ABD motor ihraç lisansı çıkmadığı için teslimat hiç yapılmamıştır. Kökün \"ilk ihracat teslimatının yapıldığı ülke\" biçiminde netleştirilmesi önerilir."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansı: \"Atak helikopteri ilk ihracat için Filipinler'de\"",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/atak-helikopteri-ilk-ihracat-icin-filipinlerde-/2528498",
+     "gerekce": "AA, T129 ATAK'ın ilk ihracatının Filipinler'e yapıldığını, ilk iki helikopterin Mart 2022'de teslim edildiğini bildiriyor; Pakistan sözleşmesi imzalandı ancak teslimat gerçekleşmedi.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-12",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "15 Nisan 2023'te uzaya fırlatılan ve Türkiye'nin metre altı çözünürlüğe sahip ilk yerli yer gözlem uydusu olan uydu hangisidir?",
+   "siklar": {
+    "A": "GÖKTÜRK-1",
+    "B": "GÖKTÜRK-2",
+    "C": "RASAT",
+    "D": "İMECE",
+    "E": "TÜRKSAT 6A"
+   },
+   "dogruCevap": "D",
+   "aciklama": "TÜBİTAK UZAY tarafından geliştirilen İMECE, 15 Nisan 2023'te ABD'nin Vandenberg Üssü'nden SpaceX Falcon 9 roketiyle 680 kilometre yükseklikteki güneş eş zamanlı yörüngeye gönderilmiştir; Türkiye ilk kez metre altı çözünürlüklü, yerli imkânlarla geliştirilen bir elektro-optik uydu kamerasına sahip olmuştur (İletişim Başkanlığı, 15 Nisan 2023). TÜRKSAT 6A bir haberleşme uydusudur, gözlem uydusu değildir.",
+   "kaynak": "T.C. İletişim Başkanlığı, 15 Nisan 2023",
+   "kaynakUrl": "https://www.iletisim.gov.tr/turkce/haberler/detay/imece-uydusu-uzaya-firlatildi",
+   "olayTarihi": "2023-04-15",
+   "uyarilar": [
+    "ABD saatiyle 14 Nisan 2023 akşamı olarak da geçebilir; Türk resmî kaynakları TSİ 15 Nisan 2023 diyor, soru bu haliyle doğrudur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "kaynak": "TÜBİTAK, \"Metrealtı Çözünürlüklü Yer Gözlem Uydusu İMECE Uzayda İkinci Yılını Tamamladı\", 15 Nisan 2025",
+     "kaynakUrl": "https://tubitak.gov.tr/tr/haber/metrealti-cozunurluklu-yer-gozlem-uydusu-imece-uzayda-ikinci-yilini-tamamladi",
+     "gerekce": "TÜBİTAK: \"Türkiye'nin ilk metrealtı çözünürlüklü yerli yer gözlem uydusu olan İMECE... 15 Nisan 2023'te... Falcon 9 roketiyle fırlatıldı.\"",
+     "uyari": null
+    },
+    {
+     "cevap": "D",
+     "kaynak": "T.C. İletişim Başkanlığı: \"İMECE uydusu uzaya fırlatıldı\"",
+     "kaynakUrl": "https://www.iletisim.gov.tr/turkce/haberler/detay/imece-uydusu-uzaya-firlatildi",
+     "gerekce": "İletişim Başkanlığı, İMECE'yi \"Türkiye'nin metre altı çözünürlüğe sahip yerli ve millî ilk gözlem uydusu\" olarak tanımlıyor; fırlatma 15 Nisan 2023, TSİ 09:48, Vandenberg. TÜBİTAK UZAY da aynı tarihi veriyor (https://uzay.tubitak.gov.tr/en/imece-successfully-launched-into-space/).",
+     "uyari": "ABD saatiyle 14 Nisan 2023 akşamı olarak da geçebilir; Türk resmî kaynakları TSİ 15 Nisan 2023 diyor, soru bu haliyle doğrudur."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-13",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Montaj ve entegrasyonu TUSAŞ'ın Uzay Sistemleri Entegrasyon ve Test Merkezi'nde tamamlanan, Türkiye'nin ilk yerli ve millî haberleşme uydusu hangisidir?",
+   "siklar": {
+    "A": "TÜRKSAT 5B",
+    "B": "TÜRKSAT 6A",
+    "C": "GÖKTÜRK-3",
+    "D": "İMECE",
+    "E": "RASAT"
+   },
+   "dogruCevap": "B",
+   "aciklama": "TÜRKSAT 6A, Türkiye'nin ilk yerli ve millî haberleşme uydusudur; montaj ve entegrasyon çalışmaları TUSAŞ'ın Uzay Sistemleri Entegrasyon ve Test Merkezi'nde (USET) tamamlanmıştır (TUSAŞ). TÜRKSAT 5A ve 5B yurt dışında üretilip satın alınan uydulardır; yerli üretim olan TÜRKSAT 6A'dır.",
+   "kaynak": "TUSAŞ, Uzay Sistemleri ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/uzay",
+   "olayTarihi": "2024-07-08",
+   "uyarilar": [
+    "C şıkkındaki 'GÖKTÜRK-3' fiilen mevcut bir uydu değil; çeldirici olarak zayıf ama hataya yol açmıyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "T.C. İletişim Başkanlığı, \"İlk yerli ve millî haberleşme uydumuz TÜRKSAT 6A'nın uzay yolculuğu başlıyor\"; T.C. Ulaştırma ve Altyapı Bakanlığı, \"Türkiye'nin uzaydaki garantisi TÜRKSAT 6A\"",
+     "kaynakUrl": "https://www.iletisim.gov.tr/turkce/haberler/detay/iletisim-baskani-altun-ilk-yerli-ve-milli-haberlesme-uydumuz-turksat-6anin-uzay-yolculugu-basliyor",
+     "gerekce": "TÜRKSAT 6A Türkiye'nin ilk yerli ve millî haberleşme uydusudur; montaj, entegrasyon ve testleri TUSAŞ Uzay Sistemleri Entegrasyon ve Test Merkezi'nde (USET, Ankara) yapılmış, 9 Temmuz 2024'te fırlatılmıştır.",
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "kaynak": "TÜBİTAK: \"İlk Yerli ve Milli Haberleşme Uydumuz TÜRKSAT 6A resmi olarak görevine başladı\"; TUSAŞ ürün sayfası — TÜRKSAT 6A",
+     "kaynakUrl": "https://tubitak.gov.tr/tr/haber/ilk-yerli-ve-milli-haberlesme-uydumuz-turksat-6a-resmi-olarak-gorevine-basladi",
+     "gerekce": "TÜRKSAT 6A Türkiye'nin ilk yerli ve millî haberleşme uydusudur; montaj-entegrasyon ve testleri TUSAŞ tesislerindeki USET (Uzay Sistemleri Entegrasyon ve Test Merkezi) içinde yapılmıştır (https://www.tusas.com/urunler/uzay/haberlesme-uydulari/turksat-6a).",
+     "uyari": "C şıkkındaki 'GÖKTÜRK-3' fiilen mevcut bir uydu değil; çeldirici olarak zayıf ama hataya yol açmıyor."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-15",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Millî Uzay Programı'nda açıklanan hedeflerin sayısı ve programın birinci hedefi aşağıdakilerden hangisinde doğru verilmiştir?",
+   "siklar": {
+    "A": "5 hedef — uzay limanı kurulması",
+    "B": "10 hedef — Ay görevi",
+    "C": "10 hedef — Türk astronotun uzaya gönderilmesi",
+    "D": "7 hedef — bölgesel konumlama sistemi",
+    "E": "12 hedef — millî uydu markası oluşturulması"
+   },
+   "dogruCevap": "B",
+   "aciklama": "Türkiye Uzay Ajansı'na göre Millî Uzay Programı 10 stratejik hedeften oluşur ve birinci hedef Ay görevidir; Türk astronotun bilim misyonuyla uzaya gönderilmesi ise programın onuncu hedefi olarak sıralanmıştır (Türkiye Uzay Ajansı). Uzay limanı ve bölgesel konumlama sistemi de listedeki diğer hedeflerdir, ancak ilk sırada değildir.",
+   "kaynak": "Türkiye Uzay Ajansı",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+   "olayTarihi": "2021-02-10",
+   "uyarilar": [
+    "C şıkkı da programın gerçek bir hedefini (Türk astronotun uzaya gönderilmesi) doğru hedef sayısıyla veriyor; yalnız \"birinci hedef\" olmadığı için yanlış. Kökteki \"birinci hedef\" vurgusu ayırt edici olduğundan soru geçerli, ama çeldirici güçlü.",
+    "C şıkkındaki 'Türk astronotun uzaya gönderilmesi' de 10 hedeften biridir ama birinci hedef değildir; kök 'birinci hedef' dediği için tek doğru B'dir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "Türkiye Uzay Ajansı, \"Türkiye'nin uzay yolculuğu başlıyor\" (Millî Uzay Programı tanıtımı, 10 Şubat 2021)",
+     "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+     "gerekce": "TUA: program \"10 maddelik stratejik hedeflerden\" oluşuyor; Cumhurbaşkanı Erdoğan: \"Milli Uzay Programındaki birinci ve en önemli hedefimiz, Cumhuriyetimizin 100'üncü yılında aya ilk teması gerçekleştirmektir.\"",
+     "uyari": "C şıkkı da programın gerçek bir hedefini (Türk astronotun uzaya gönderilmesi) doğru hedef sayısıyla veriyor; yalnız \"birinci hedef\" olmadığı için yanlış. Kökteki \"birinci hedef\" vurgusu ayırt edici olduğundan soru geçerli, ama çeldirici güçlü."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "Türkiye Uzay Ajansı, Milli Uzay Programı Strateji Belgesi (PDF), Bölüm 3",
+     "kaynakUrl": "https://cdn.tua.gov.tr/62988f09d2a2e.pdf",
+     "gerekce": "Belge birebir: \"Türkiye'nin Milli Uzay Programı kapsamında 10 hedef belirlenmiştir\"; 3.1 başlığı ve ilk hedef 'Ay Araştırma Programı' (AYAP / Ay görevi).",
+     "uyari": "C şıkkındaki 'Türk astronotun uzaya gönderilmesi' de 10 hedeften biridir ama birinci hedef değildir; kök 'birinci hedef' dediği için tek doğru B'dir."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-16",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Türkiye Uzay Ajansı hangi bakanlığın ilgili kuruluşudur?",
+   "siklar": {
+    "A": "Millî Savunma Bakanlığı",
+    "B": "Ulaştırma ve Altyapı Bakanlığı",
+    "C": "Sanayi ve Teknoloji Bakanlığı",
+    "D": "Millî Eğitim Bakanlığı",
+    "E": "Hazine ve Maliye Bakanlığı"
+   },
+   "dogruCevap": "C",
+   "aciklama": "Türkiye Uzay Ajansı, 2018 yılında çıkarılan Cumhurbaşkanlığı Kararnamesi ile Sanayi ve Teknoloji Bakanlığı'nın ilgili kuruluşu olarak kurulmuş, merkezi Ankara'dır (Türkiye Uzay Ajansı). Uydu haberleşmesi Ulaştırma ve Altyapı Bakanlığı ile ilişkilendirildiğinden bu iki bakanlık sıkça karıştırılır.",
+   "kaynak": "Türkiye Uzay Ajansı",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-uzay-yolculugu-basliyor",
+   "olayTarihi": "2018-12-13",
+   "uyarilar": [
+    "Kararname geçici maddelerinde Ulaştırma ve Altyapı Bakanlığı'ndan devir hükümleri var (Havacılık ve Uzay Teknolojileri Genel Müdürlüğü devri); B şıkkı bu yüzden çekici ama yanlıştır."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "23 sayılı Türkiye Uzay Ajansı Hakkında Cumhurbaşkanlığı Kararnamesi (RG 13/12/2018-30624), Madde 3",
+     "kaynakUrl": "https://mevzuat.gov.tr/MevzuatMetin/19.5.23.pdf",
+     "gerekce": "Madde 3: \"...özel bütçeli, Sanayi ve Teknoloji Bakanlığı ile ilgili Türkiye Uzay Ajansı kurulmuştur.\" Madde 2'de \"Bakan: Sanayi ve Teknoloji Bakanını\" ifade eder.",
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "kaynak": "23 sayılı Türkiye Uzay Ajansı Hakkında Cumhurbaşkanlığı Kararnamesi, MADDE 3 (mevzuat.gov.tr resmî PDF)",
+     "kaynakUrl": "https://mevzuat.gov.tr/MevzuatMetin/19.5.23.pdf",
+     "gerekce": "Kararname madde 3/1 birebir: \"...özel bütçeli, Sanayi ve Teknoloji Bakanlığı ile ilgili Türkiye Uzay Ajansı kurulmuştur.\"",
+     "uyari": "Kararname geçici maddelerinde Ulaştırma ve Altyapı Bakanlığı'ndan devir hükümleri var (Havacılık ve Uzay Teknolojileri Genel Müdürlüğü devri); B şıkkı bu yüzden çekici ama yanlıştır."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-4",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "19 Kasım 2024'te TCG Anadolu'dan kalkış ve inişi başararak kısa güverteli gemiden iniş-kalkış yapan dünyanın ilk silahlı insansız hava aracı unvanını kazanan platform hangisidir?",
+   "siklar": {
+    "A": "Bayraktar TB3",
+    "B": "Bayraktar TB2",
+    "C": "Bayraktar KIZILELMA",
+    "D": "TUSAŞ ANKA-S",
+    "E": "Bayraktar AKINCI"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Bayraktar TB3, 19 Kasım 2024'te TCG Anadolu'nun 12 derece rampalı kısa güvertesinden kalkıp 46 dakikalık uçuşun ardından yine aynı güverteye inerek dünya havacılık tarihinde bir ilki gerçekleştirmiştir (Baykar). TB2 ile karıştırılmamalıdır: gemiden iniş-kalkış için katlanır kanatlı TB3 geliştirilmiştir.",
+   "kaynak": "Baykar Teknoloji, \"Dünya havacılık tarihinde bir ilk\"",
+   "kaynakUrl": "https://baykartech.com/tr/press/dunya-havacilik-tarihinde-bir-ilk/",
+   "olayTarihi": "2024-11-19",
+   "uyarilar": [
+    "Kökte \"kısa güverteli gemi\" deniyor; kaynağın ifadesi \"kısa pistli gemi\". Anlam aynı, terim birebir değil."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "Baykar basın bülteni, \"Dünya havacılık tarihinde bir ilk!\", 20 Kasım 2024",
+     "kaynakUrl": "https://baykartech.com/tr/press/dunya-havacilik-tarihinde-bir-ilk/",
+     "gerekce": "Baykar: \"Bayraktar TB3, TCG Anadolu gibi kısa pistli gemilerden iniş ve kalkış yapabilen dünyadaki ilk silahlı insansız hava aracı oldu\" — test 19 Kasım 2024, 46 dakika.",
+     "uyari": "Kökte \"kısa güverteli gemi\" deniyor; kaynağın ifadesi \"kısa pistli gemi\". Anlam aynı, terim birebir değil."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Baykar: \"Dünya havacılık tarihinde bir ilk!\" (19 Kasım 2024) ve AA haberi",
+     "kaynakUrl": "https://www.baykartech.com/tr/haberler/dunya-havacilik-tarihinde-bir-ilk/",
+     "gerekce": "Baykar, 19 Kasım 2024'te Bayraktar TB3'ün TCG Anadolu'nun 12 derece rampalı kısa pistinden kalkıp indiğini ve bunu başaran ilk silahlı İHA olduğunu duyuruyor; AA aynı tarihi teyit ediyor (https://www.aa.com.tr/tr/gundem/bayraktar-tb3-tcg-anadoluya-ilk-kalkis-ve-inisini-basariyla-tamamladi/3398031).",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-5",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "Bayraktar AKINCI Taarruzi İnsansız Hava Aracı'nın ilk uçuş tarihi ile envantere giriş tarihi aşağıdakilerden hangisinde doğru verilmiştir?",
+   "siklar": {
+    "A": "İlk uçuş 6 Aralık 2019 — envantere giriş 29 Ağustos 2021",
+    "B": "İlk uçuş 14 Aralık 2022 — envantere giriş 23 Ocak 2022",
+    "C": "İlk uçuş 29 Ağustos 2021 — envantere giriş 6 Aralık 2019",
+    "D": "İlk uçuş 6 Aralık 2019 — envantere giriş 19 Kasım 2024",
+    "E": "İlk uçuş 21 Şubat 2024 — envantere giriş 29 Ağustos 2021"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Baykar'ın TİHA sınıfındaki Bayraktar AKINCI 6 Aralık 2019'da ilk uçuşunu yapmış, 29 Ağustos 2021'de Türk güvenlik güçlerinin envanterine girmiştir (Baykar). Platform, ilk ihracat başarısını 23 Ocak 2022'de elde etmiştir; bu tarih envantere giriş tarihiyle karıştırılmamalıdır.",
+   "kaynak": "Baykar Teknoloji, Bayraktar AKINCI basın açıklaması",
+   "kaynakUrl": "https://www.baykartech.com/tr/press/turk-savunma-sanayisinin-ihracat-sampiyonu-bayraktar-akinci/",
+   "olayTarihi": "2019-12-06",
+   "uyarilar": [
+    "B şıkkındaki 23 Ocak 2022, envanter değil ilk ihracat tarihidir — kasıtlı çeldirici, kusur sayılmaz."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "Baykar Tarihçe (2019 Bayraktar AKINCI İlk Uçuş / 2021 AKINCI TİHA İlk Teslimat); Anadolu Ajansı, \"Bayraktar AKINCI TİHA envantere girdi\"",
+     "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/bayraktar-akinci-tiha-envantere-girdi/2350110",
+     "gerekce": "AKINCI ilk uçuşunu 6 Aralık 2019'da yaptı; envantere giriş/ilk teslimat töreni 29 Ağustos 2021'de Cumhurbaşkanı huzurunda yapıldı. Baykar tarihçesi yılları (2019 / 2021) doğruluyor.",
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Baykar basın bülteni: \"Türk savunma sanayisinin ihracat şampiyonu Bayraktar AKINCI\"",
+     "kaynakUrl": "https://www.baykartech.com/tr/press/turk-savunma-sanayisinin-ihracat-sampiyonu-bayraktar-akinci/",
+     "gerekce": "Baykar metni birebir: \"İlk uçuşunu 6 Aralık 2019'da yaptı\", \"29 Ağustos 2021'de envantere girdi\"; 23 Ocak 2022 ise ilk ihracat tarihi.",
+     "uyari": "B şıkkındaki 23 Ocak 2022, envanter değil ilk ihracat tarihidir — kasıtlı çeldirici, kusur sayılmaz."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-7",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "TUSAŞ'ın yüksek faydalı yük kapasiteli, sınıfının en uzun havada kalabilen insansız hava aracı olan ve Kasım 2023'te millî TEI-PD170 motoruyla 30 bin feet irtifada uçuş gerçekleştiren platformu hangisidir?",
+   "siklar": {
+    "A": "ANKA-III",
+    "B": "AKSUNGUR",
+    "C": "Bayraktar AKINCI",
+    "D": "KARAYEL-SU",
+    "E": "GÖKBEY"
+   },
+   "dogruCevap": "B",
+   "aciklama": "TUSAŞ AKSUNGUR, 750 kilogramın üzerinde faydalı yük taşıyabilen, 50 saate varan havada kalış süresiyle sınıfının en uzun süre havada kalan insansız hava aracı sistemidir; Kasım 2023'te yerli TEI-PD170 motoruyla 30 bin feet'te 41 saatlik uçuş yapmıştır (TUSAŞ). GÖKBEY bir helikopterdir, İHA değildir.",
+   "kaynak": "TUSAŞ, AKSUNGUR ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur",
+   "olayTarihi": "2023-11-01",
+   "uyarilar": [
+    "Platform kesin, ancak TUSAŞ haber sayfasında uçuşun 'Kasım 2023' tarihi açıkça görünmüyor; tarih ikincil kaynaklarda Kasım 2023 olarak geçiyor. Kök 'Kasım 2023' ibaresini içermeseydi de cevap değişmezdi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ, AKSUNGUR ürün sayfası",
+     "kaynakUrl": "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur",
+     "gerekce": "TUSAŞ: \"Kasım 2023'te ilk kez millî motor TEI-PD170 ile uçuş gerçekleştiren AKSUNGUR, millî motor ile de 30.000 feet'e ulaşmıştır\" ve \"Kendi sınıfında Dünya'nın en uzun süre havada kalabilen İHA'sı\"; kategori adı \"Yüksek Faydalı Yük Kapasitesi\".",
+     "uyari": null
+    },
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ ürün sayfası — AKSUNGUR; TUSAŞ haberi: \"AKSUNGUR ... milli motorla 30 bin feet yükseklikte uçuş gerçekleştirdi\"",
+     "kaynakUrl": "https://www.tusas.com/urunler/iha/yuksek-faydali-yuk-kapasitesi/aksungur",
+     "gerekce": "TUSAŞ, AKSUNGUR'u \"Yüksek Faydalı Yük Kapasiteli İHA\" başlığı altında ve \"kendi sınıfında dünyanın en uzun süre havada kalabilen İHA'sı\" olarak tanımlıyor; ayrı haberde TEI-PD170 milli motorla 2,5 saatlik uçuşta 30 bin feet'e çıktığı duyuruluyor (https://www.tusas.com/medya-merkezi/haberler/aksungur-yuksek-faydali-yuk-kapasiteli-iha-milli-motorla-30-bin-feet-yukseklikte-ucus-gerceklestirdi).",
+     "uyari": "Platform kesin, ancak TUSAŞ haber sayfasında uçuşun 'Kasım 2023' tarihi açıkça görünmüyor; tarih ikincil kaynaklarda Kasım 2023 olarak geçiyor. Kök 'Kasım 2023' ibaresini içermeseydi de cevap değişmezdi."
+    }
+   ]
+  },
+  {
+   "id": "savunma-hava-uzay-8",
+   "alan": "savunma-hava-uzay",
+   "karar": "UYARI",
+   "kok": "TUSAŞ tarafından geliştirilen HÜRJET'in tipi ve ilk uçuş tarihi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Temel eğitim uçağı — 29 Ağustos 2013",
+    "B": "Jet eğitim ve hafif taarruz uçağı — 25 Nisan 2023",
+    "C": "Muharip uçak — 21 Şubat 2024",
+    "D": "Jet eğitim uçağı — 12 Kasım 2024",
+    "E": "Nakliye uçağı — 6 Eylül 2018"
+   },
+   "dogruCevap": "B",
+   "aciklama": "HÜRJET, TUSAŞ'ın tek motorlu, tandem kokpitli jet eğitim ve hafif taarruz uçağıdır; ilk prototip 25 Nisan 2023'te uçmuştur (TUSAŞ). 12 Kasım 2024 tarihi tuzaktır: o gün uçan ikinci prototiptir. HÜRJET 1,4 Mach azami hıza ve 45.000 feet servis tavanına sahiptir.",
+   "kaynak": "TUSAŞ, HÜRJET ürün sayfası",
+   "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurjet",
+   "olayTarihi": "2023-04-25",
+   "uyarilar": [
+    "İki kusur: (1) TUSAŞ HÜRJET'i yalnız \"Jet Eğitim Uçağı\" diye adlandırıyor, doğru şıktaki \"hafif taarruz\" nitelemesi kurumsal sayfada HÜRKUŞ için kullanılıyor; (2) D şıkkındaki 12 Kasım 2024, aynı sayfada geçen HÜRJET P2 (ikinci prototip) ilk uçuş tarihidir — tip adı D'de daha doğru yazıldığı için çeldirici gereğinden güçlü. Yine de tek doğru cevap B.",
+    "D şıkkındaki 12 Kasım 2024, HÜRJET'in ikinci prototipinin (P2) ilk uçuşudur; kök 'HÜRJET'in ilk uçuşu' dediği için belirsizlik doğurmuyor ama yakın bir çeldirici."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ, HÜRJET ürün sayfası",
+     "kaynakUrl": "https://www.tusas.com/urunler/ucak/ozgun-gelistirme/hurjet",
+     "gerekce": "TUSAŞ: \"Üretilen ilk HÜRJET Jet Eğitim Uçağı ilk uçuşu 25 Nisan 2023 tarihinde\" yapmıştır.",
+     "uyari": "İki kusur: (1) TUSAŞ HÜRJET'i yalnız \"Jet Eğitim Uçağı\" diye adlandırıyor, doğru şıktaki \"hafif taarruz\" nitelemesi kurumsal sayfada HÜRKUŞ için kullanılıyor; (2) D şıkkındaki 12 Kasım 2024, aynı sayfada geçen HÜRJET P2 (ikinci prototip) ilk uçuş tarihidir — tip adı D'de daha doğru yazıldığı için çeldirici gereğinden güçlü. Yine de tek doğru cevap B."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "TUSAŞ ürün sayfası — HÜRJET ve TUSAŞ haberi \"HÜRJET jet eğitim ve hafif taarruz uçağı ilkleri gerçekleştirmeye devam ediyor\"",
+     "kaynakUrl": "https://www.tusas.com/medya-merkezi/haberler/hurjet-jet-egitim-ve-hafif-taarruz-ucagi-ilkleri-gerceklestirmeye-devam-ediyor",
+     "gerekce": "TUSAŞ HÜRJET'i 'jet eğitim ve hafif taarruz uçağı' olarak adlandırıyor; ilk uçuş 25 Nisan 2023 (07:35, 26 dk, 14.000 feet).",
+     "uyari": "D şıkkındaki 12 Kasım 2024, HÜRJET'in ikinci prototipinin (P2) ilk uçuşudur; kök 'HÜRJET'in ilk uçuşu' dediği için belirsizlik doğurmuyor ama yakın bir çeldirici."
+    }
+   ]
+  },
+  {
+   "id": "savunma-kara-deniz-13",
+   "alan": "savunma-kara-deniz",
+   "karar": "UYARI",
+   "kok": "MİLGEM Projesi'nin ilk büyük ihracat başarısı sayılan ve Türkiye'de inşa edilen korvetlerin teslim edildiği ülke aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Malezya",
+    "B": "Pakistan",
+    "C": "Ukrayna",
+    "D": "Endonezya",
+    "E": "Katar"
+   },
+   "dogruCevap": "B",
+   "aciklama": "Pakistan MİLGEM Projesi kapsamında dört korvet üretilmiş, bunların ikisi İstanbul Tersanesi Komutanlığı'nda, ikisi Karaçi'de inşa edilmiş; sınıfın ilk gemisi PNS BABUR Eylül 2023'te İstanbul'da düzenlenen törenle Pakistan Deniz Kuvvetlerine teslim edilmiştir (Anadolu Ajansı, 23 Eylül 2023). Ukrayna için iki Ada sınıfı korvet, Malezya için ise Ada sınıfı temelli üç LMS Batch-2 gemisi sonraki anlaşmalarla gündeme gelmiştir.",
+   "kaynak": "Anadolu Ajansı, 23 Eylül 2023",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/istanbulda-pakistan-milgem-teslimati-ile-karakol-gemilerini-denize-indirme-toreni-yapildi/2999479",
+   "olayTarihi": "2023-09-23",
+   "uyarilar": [
+    "İkinci doğru şık riski: Ukrayna (C) için de Ada sınıfı korvet (Hetman Ivan Mazepa) Türkiye'de inşa edilip teslim edildi. Kökteki 'Türkiye'de inşa edilen korvetlerin teslim edildiği ülke' ifadesi tek başına ayırt edici değil; ayrımı yalnız 'ilk büyük ihracat' ibaresi sağlıyor. Kök 'MİLGEM'in ilk ve en büyük ihracat sözleşmesi' biçiminde netleştirilmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "Anadolu Ajansı — İstanbul Tersanesi Komutanlığı'nda Pakistan MİLGEM teslimat töreni; Pakistan MİLGEM, Türk savunma sanayisinin deniz platformlarındaki en büyük tek kalem ihracatı",
+     "kaynakUrl": "https://www.aa.com.tr/tr/gundem/istanbulda-pakistan-milgem-teslimati-ile-karakol-gemilerini-denize-indirme-toreni-yapildi/2999479",
+     "gerekce": "2018 sözleşmesiyle Pakistan Deniz Kuvvetleri için 4 Ada sınıfı korvet (2'si İstanbul Tersanesi'nde) üretildi; PNS BABUR İstanbul'da teslim edildi ve MİLGEM'in ilk büyük ihracatıdır.",
+     "uyari": "İkinci doğru şık riski: Ukrayna (C) için de Ada sınıfı korvet (Hetman Ivan Mazepa) Türkiye'de inşa edilip teslim edildi. Kökteki 'Türkiye'de inşa edilen korvetlerin teslim edildiği ülke' ifadesi tek başına ayırt edici değil; ayrımı yalnız 'ilk büyük ihracat' ibaresi sağlıyor. Kök 'MİLGEM'in ilk ve en büyük ihracat sözleşmesi' biçiminde netleştirilmeli."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "AA — Pakistan MİLGEM Projesi: Temmuz 2018'de ASFAT ile imzalanan sözleşme kapsamında 4 Ada sınıfı korvetin 2'si İstanbul Tersanesi Komutanlığı'nda, 2'si Karaçi'de inşa edildi; ilk gemi PNS BABUR İstanbul'daki törenle Pakistan Donanması'na teslim edildi",
+     "kaynakUrl": "https://www.aa.com.tr/tr/gundem/istanbulda-pakistan-milgem-teslimati-ile-karakol-gemilerini-denize-indirme-toreni-yapildi/2999479",
+     "gerekce": "MİLGEM'in ilk ve tek kalemde en büyük ihracat sözleşmesi Pakistan'ladır; Ukrayna korvet sözleşmesi 2020'de imzalanmış olup daha sonraki ve daha küçük bir programdır.",
+     "uyari": null
+    }
+   ]
+  }
+ ]
+}

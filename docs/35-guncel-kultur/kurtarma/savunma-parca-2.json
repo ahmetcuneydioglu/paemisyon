@@ -1,0 +1,42 @@
+{
+ "parca": 2,
+ "sorular": [
+  {
+   "id": "savunma-kara-deniz-7",
+   "alan": "savunma-kara-deniz",
+   "karar": "UYARI",
+   "kok": "Türkiye'nin denizaltıyı yalnızca inşa etmekle kalmayıp tasarımını da tamamen kendi imkânlarıyla yapmayı hedefleyen millî denizaltı projesinin adı nedir?",
+   "siklar": {
+    "A": "MİLGEM",
+    "B": "MİLDEN",
+    "C": "MUGEM",
+    "D": "TF-2000",
+    "E": "STM500"
+   },
+   "dogruCevap": "B",
+   "aciklama": "MİLDEN (Millî Denizaltı) projesi, Türkiye'nin kendi tasarımı denizaltıyı geliştirme hedefini taşır ve tasarım ofisi Gölcük Tersanesi'nde kurulmuştur (Anadolu Ajansı). MİLGEM su üstü savaş gemisi, MUGEM millî uçak gemisi, TF-2000 hava savunma muhribi projesidir; STM500 ise STM'nin ihracata yönelik küçük tonajlı denizaltı tasarımıdır.",
+   "kaynak": "Anadolu Ajansı — millî denizaltı ve yeni tip denizaltılar",
+   "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/milli-denizalti-ile-yeni-tip-denizaltilar-turk-donanmasinin-gucune-guc-katacak/2670492",
+   "olayTarihi": "2024-08-24",
+   "uyarilar": [
+    "Zayıf çeldirici riski: E şıkkındaki STM500 de tamamen Türk tasarımı bir denizaltıdır; ancak 'millî denizaltı projesi' resmî adlandırması MİLDEN'e aittir (STM500 firma ürünü/ihracat odaklıdır). Kök 'millî denizaltı projesinin adı' dediği için tek doğru MİLDEN'dir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "SSB / AA — 'Milli denizaltı (MİLDEN) ile yeni tip denizaltılar Türk donanmasının gücüne güç katacak'; MİLDEN tasarım ofisi Gölcük Tersanesi'nde",
+     "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/milli-denizalti-ile-yeni-tip-denizaltilar-turk-donanmasinin-gucune-guc-katacak/2670492",
+     "gerekce": "MİLDEN, Türkiye'ye denizaltı TASARIM kabiliyeti kazandırmayı hedefleyen millî denizaltı projesidir; MİLGEM yüzey gemisi, TF-2000 hava savunma muhribi projesidir.",
+     "uyari": "Zayıf çeldirici riski: E şıkkındaki STM500 de tamamen Türk tasarımı bir denizaltıdır; ancak 'millî denizaltı projesi' resmî adlandırması MİLDEN'e aittir (STM500 firma ürünü/ihracat odaklıdır). Kök 'millî denizaltı projesinin adı' dediği için tek doğru MİLDEN'dir."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "AA — 'Millî denizaltı ile yeni tip denizaltılar, Türk donanmasının gücüne güç katacak': MİLDEN, tasarımı da Türkiye'de yapılacak millî denizaltı projesi; MİLDEN Tasarım Proje Ofisi Deniz Kuvvetleri bünyesinde kuruldu",
+     "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/milli-denizalti-ile-yeni-tip-denizaltilar-turk-donanmasinin-gucune-guc-katacak/2670492",
+     "gerekce": "MİLGEM yüzey gemisi, TF-2000 hava savunma muhribi, STM500 ise ihracat odaklı küçük denizaltı projesidir; tasarımı millî olan denizaltı projesi MİLDEN'dir.",
+     "uyari": null
+    }
+   ]
+  }
+ ]
+}

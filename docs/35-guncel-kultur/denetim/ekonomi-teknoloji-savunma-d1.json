@@ -1,0 +1,132 @@
+[
+ {
+  "id": "ekonomi-teknoloji-savunma-1",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "NASA, Artemis Accords resmi sayfasi: \"On August 31, 2026, Republic of Turkiye became the 71st nation to sign the accords.\"",
+  "kaynakUrl": "https://www.nasa.gov/artemis-accords/",
+  "gerekce": "NASA'nin kendi sayfasi Turkiye'yi 31 Agustos 2026'da imzalayan 71. ulke olarak listeliyor; tarih, sira ve belge adi soru kokuyle birebir ortusuyor.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-2",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Turkiye Uzay Ajansi (TUA), \"Turkiye'nin ilk yerli atomik saati uzay yolculuguna basladi\"; TUBITAK haber sayfasi",
+  "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+  "gerekce": "TUA, Rubidyum Atomik Frekans Standardi (RAFS) projesinin ana yuklenicisinin TUBITAK Ulusal Metroloji Enstitusu (UME) oldugunu ve 7 Temmuz 2026'da SpaceX Transporter-17 ile firlatildigini bildiriyor.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-3",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "IAF / IAC 2026 resmi sitesi: 77. Uluslararasi Astronotik Kongresi, 5-9 Ekim 2026, Antalya (NEST Kongre Merkezi), ev sahibi TUA",
+  "kaynakUrl": "https://www.iac2026.org/iac-2026",
+  "gerekce": "Kongrenin resmi sitesi ve IAF etkinlik sayfasi yeri Antalya, tarihi 5-9 Ekim 2026 olarak veriyor; Turkiye'de ilk kez duzenleniyor.",
+  "dogrulanamadi": false,
+  "uyari": "Zaman kipi sorunu: bugun 5 Eylul 2026 ve etkinlik 5-9 Ekim 2026'da, yani HENUZ GERCEKLESMEDI. Kok 'duzenlenmektedir' diyor; 'duzenlenecektir' olmali. Yer bilgisi dogru ve resmen ilan edilmis olsa da soru bankaya girerken kip duzeltilmeli."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-4",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Baykar Teknoloji kurumsal duyurusu \"Fergani'nin besinci uydusu uzayda\"; TRT Haber, 30 Mart 2026",
+  "kaynakUrl": "https://baykartech.com/tr/haberler/ferganinin-besinci-uydusu-uzayda/",
+  "gerekce": "FGN-100-D3, Fergani Uzay Teknolojileri'nin besinci uydusu olarak 30 Mart 2026'da Vandenberg'den SpaceX Transporter-16 goreviyle firlatildi; FGN on eki de Fergani'ye ait.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-5",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansi, \"Savunma ve havacilik ihracatta 10 milyar dolar esigini asti\" (SSB Baskani Haluk Gorgun aciklamasi)",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818",
+  "gerekce": "SSB verisine gore 2025 savunma-havacilik ihracati 9 milyar 870 milyon dolar mal + 184 milyon dolar hizmet = 10 milyar 54 milyon dolar; 2024'teki 7,1 milyar dolara gore ~%48 artis.",
+  "dogrulanamadi": false,
+  "uyari": "Celeldirici siklar gercek ama farkli buyuklukler: A (7,1 milyar) 2024 ihracati, E (17,8 milyar) 2025 yeni SOZLESME rekoru. Kok 'ihracat' dedigi icin tek dogru sik C; yine de E'yi karistiran adaylar icin kok net."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-6",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "Anadolu Ajansi Enerji Terminali / Enerji ve Tabii Kaynaklar Bakani Alparslan Bayraktar aciklamasi, 6 Agustos 2026",
+  "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/petrol/gabarda-gunluk-petrol-uretimi-35-bin-varille-rekor-kirdi/40394",
+  "gerekce": "Bakan Bayraktar, Sirnak Gabar'da gunluk petrol uretiminin 83 bin 300 varile ulastigini; 2021'deki Gabar kesfinin Cumhuriyet tarihinin en buyuk kara petrol kesfi oldugunu ve toplam uretimin 50 milyon varili gectigini duyurdu.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-7",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "T.C. Ulastirma ve Altyapi Bakanligi (uab.gov.tr) 5G duyurulari; Bakan Uraloglu: \"1 Nisan 2026'da baslayan 5G'de 45 milyon aboneye ulastik\"",
+  "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-tarihi-adim/",
+  "gerekce": "Bakanlik, 16 Ekim 2025'te yapilan 5G ihalesinin ardindan operatorlerin 1 Nisan 2026 itibariyla ticari 5G hizmeti sunmaya basladigini bildiriyor.",
+  "dogrulanamadi": false,
+  "uyari": "A sikki (16 Ekim 2025) 5G IHALE tarihi; kok 'ticari olarak sunulmaya baslandigi tarih' dedigi icin ayrim net, ikinci dogru sik yok."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-8",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "T.C. Ulastirma ve Altyapi Bakanligi, \"Halkali-Arnavutkoy hatti 31 Temmuz'a kadar ucretsiz\"",
+  "kaynakUrl": "https://www.uab.gov.tr/haberler/halkali-arnavutkoey-hatti-31-temmuz-a-kadar-uecretsiz/",
+  "gerekce": "Bakanlik duyurusu, 19 Haziran 2026'da acilan 22 km'lik Halkali-Arnavutkoy kesimiyle tamamlanan hattin Halkali-Istanbul Havalimani (M11, Gayrettepe baglantili) hatti oldugunu ve toplam 69 km ile 'Turkiye'nin en uzun ve en hizli metro hatti' oldugunu (120 km/sa) belirtiyor.",
+  "dogrulanamadi": false,
+  "uyari": "Kucuk adlandirma riski: bakanlik metinlerinde hat cogunlukla 'Halkali-Istanbul Havalimani Metro Hatti' diye aniliyor; A sikkindaki 'Gayrettepe-Istanbul Havalimani-Halkali' ise ayni M11 hattinin tam guzergah adi. Diger sikliar baska hatlar oldugundan tek dogru sik yine A."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-9",
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "TUIK ADNKS 2025 sonuclari (9 Subat 2026) - Anadolu Ajansi aktarimi",
+  "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+  "gerekce": "TUIK'e gore 31 Aralik 2025 itibariyla Turkiye nufusu 86 milyon 92 bin 168 kisi; bir onceki yila gore 427 bin 224 kisi artti, yillik artis hizi binde 5.",
+  "dogrulanamadi": false,
+  "uyari": "TUIK bulten sayfasi (veriportali.tuik.gov.tr) dogrudan cekilemedi; rakam AA aktarimi ve ikinci kaynaklarla dogrulandi. Rakamin kendisi birebir tutuyor."
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-10",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "TUIK ADNKS 2025 ilce nufuslari - Anadolu Ajansi, 9 Subat 2026",
+  "kaynakUrl": "https://www.aa.com.tr/tr/gundem/istanbulun-esenyurt-ilcesi-57-ilden-daha-kalabalik/3825465",
+  "gerekce": "Esenyurt 1 milyon 3 bin 905 kisiyle Turkiye'de nufusu 1 milyonu asan ilk ilce oldu; onu Sahinbey (957.792) ve Cankaya (952.198) izliyor.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-11",
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "TUIK Dogum Istatistikleri 2025 - Anadolu Ajansi, 21 Mayis 2026",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+  "gerekce": "TUIK'e gore toplam dogurganlik hizi 2025'te 1,42 cocuk olarak gerceklesti; 2001'de 2,38'di ve 9 yildir 2,1 yenilenme duzeyinin altinda. Haber tarihi 21 Mayis 2026, soru kokuyle ayni.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-12",
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "TUIK Dogum Istatistikleri 2025 - Anadolu Ajansi, 21 Mayis 2026",
+  "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+  "gerekce": "2025'te toplam dogurganlik hizi en yuksek il 3,15 cocukla Sanliurfa; onu Sirnak (2,53) ve Mardin (2,23) izliyor. Sanliurfa 3 cocuk ve uzerindeki tek il.",
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-13",
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "Enerji ve Tabii Kaynaklar Bakanligi verileri - Anadolu Ajansi Enerji Terminali, \"Turkiye'nin gunes enerjisi kurulu gucu 25 bin megavati gecti\"",
+  "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+  "gerekce": "Bakanlik verilerine gore 2014'te 40,2 MW olan gunes kurulu gucu 2026 Ocak sonu itibariyla 25 bin 827 MW'a ulasti; toplam elektrik kurulu gucu icindeki pay %20,9.",
+  "dogrulanamadi": false,
+  "uyari": "E sikkindaki 120 bin MW, 2035 icin gunes+ruzgar HEDEFI (mevcut kapasite degil); kok 'Ocak 2026 sonu itibariyla ulastigi duzey' dedigi icin ayrim net."
+ }
+]

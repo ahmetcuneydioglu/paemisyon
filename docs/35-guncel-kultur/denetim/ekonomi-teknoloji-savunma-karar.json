@@ -1,0 +1,337 @@
+[
+ {
+  "id": "ekonomi-teknoloji-savunma-1",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "ONAY",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.nasa.gov/artemis-accords/",
+   "https://www.nasa.gov/organizations/oiir/artemis-accords/nasa-welcomes-turkiye-as-newest-artemis-accords-signatory/"
+  ],
+  "gerekce": "NASA'nin kendi sayfasi Turkiye'yi 31 Agustos 2026'da imzalayan 71. ulke olarak listeliyor; tarih, sira ve belge adi soru kokuyle birebir ortusuyor.",
+  "meta": {
+   "aciklama": "Türkiye, 31 Ağustos 2026'da Washington'daki NASA Genel Merkezi'nde Artemis Anlaşmaları'nı imzalayarak belgenin 71. imzacısı oldu; imzayı Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır attı (Türkiye Uzay Ajansı, 2 Eylül 2026). Şıklardaki Dış Uzay Antlaşması (1967) ve Ay Antlaşması (1979) BM çatısı altındaki daha eski metinlerdir; Artemis Anlaşmaları ise NASA öncülüğünde 2020'de başlatılmıştır.",
+   "kaynak": "Türkiye Uzay Ajansı, 2 Eylül 2026",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-artemis-mutabakati-ni-imzaladi",
+   "olayTarihi": "2026-08-31"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-2",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Proje TUA liderliğinde, TÜBİTAK UZAY ve İTÜNOVA iş birliğiyle yürütülüyor; kök 'ana yüklenici' dediği için tek doğru şık A kalıyor, ancak B (TÜBİTAK UZAY) paydaş olarak geçtiğinden dikkatli okunmazsa çeldirici güçlü."
+  ],
+  "denetciKaynaklari": [
+   "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+   "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi"
+  ],
+  "gerekce": "TUA, Rubidyum Atomik Frekans Standardi (RAFS) projesinin ana yuklenicisinin TUBITAK Ulusal Metroloji Enstitusu (UME) oldugunu ve 7 Temmuz 2026'da SpaceX Transporter-17 ile firlatildigini bildiriyor.",
+  "meta": {
+   "aciklama": "Rubidyum Atomik Frekans Standardı (RAFS) adlı saat, Türkiye Uzay Ajansı'nın yürütücülüğünde TÜBİTAK Ulusal Metroloji Enstitüsü ana yükleniciliğinde geliştirildi ve 7 Temmuz 2026'da Transporter-17 göreviyle yörüngeye çıktı (Türkiye Uzay Ajansı, 17 Temmuz 2026). Saat, yörüngede en az bir yıl çalışarak Bölgesel Konumlandırma ve Zamanlama Sistemi hedefine veri sağlayacaktır; şıklardaki diğer kurumlar projede ana yüklenici değildir.",
+   "kaynak": "Türkiye Uzay Ajansı, 17 Temmuz 2026",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+   "olayTarihi": "2026-07-07"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-3",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Zaman kipi sorunu: bugun 5 Eylul 2026 ve etkinlik 5-9 Ekim 2026'da, yani HENUZ GERCEKLESMEDI. Kok 'duzenlenmektedir' diyor; 'duzenlenecektir' olmali. Yer bilgisi dogru ve resmen ilan edilmis olsa da soru bankaya girerken kip duzeltilmeli.",
+   "Zaman kipi hatası: bugün 5 Eylül 2026, kongre henüz yapılmadı; kök 'düzenlenmektedir' diyor, 'düzenlenecektir' olmalı. Ayrıca 'dünyanın en büyük uzay etkinliği' nitelemesi TUA metninde 'dünyanın en prestijli uzay etkinliklerinden biri' şeklinde geçiyor — 'en büyük' iddiası kaynakta birebir yok."
+  ],
+  "denetciKaynaklari": [
+   "https://www.iac2026.org/iac-2026",
+   "https://tua.gov.tr/tr/uluslararasi-faaliyetler/iac-2026-antalya"
+  ],
+  "gerekce": "Kongrenin resmi sitesi ve IAF etkinlik sayfasi yeri Antalya, tarihi 5-9 Ekim 2026 olarak veriyor; Turkiye'de ilk kez duzenleniyor.",
+  "meta": {
+   "aciklama": "77. Uluslararası Astronotik Kongresi, Sanayi ve Teknoloji Bakanlığı koordinasyonunda Türkiye Uzay Ajansı ev sahipliğinde 5-9 Ekim 2026 tarihlerinde Antalya'daki NEST Kongre Merkezi'nde düzenlenecektir (Türkiye Uzay Ajansı, IAC 2026 Antalya duyurusu). Kongre Türkiye'de ilk kez yapılacak olup ana teması 'The World Needs More Space'tir; bir önceki kongre 2025'te Sidney'de düzenlenmişti. Sık yapılan hata, kongrenin İstanbul'da yapılacağını sanmaktır.",
+   "kaynak": "Türkiye Uzay Ajansı, 'IAC 2026 Antalya' sayfası (erişim 5 Eylül 2026); Uluslararası Astronotik Federasyonu IAC 2026 duyurusu",
+   "kaynakUrl": "https://www.tua.gov.tr/tr/haberler/turkiye-iac-2026-antalya-tanitim-kampanyasini-baslatti",
+   "olayTarihi": "2026-10-05"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-4",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "ONAY",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://baykartech.com/tr/haberler/ferganinin-besinci-uydusu-uzayda/",
+   "https://baykartech.com/tr/haberler/ferganinin-besinci-uydusu-uzayda/"
+  ],
+  "gerekce": "FGN-100-D3, Fergani Uzay Teknolojileri'nin besinci uydusu olarak 30 Mart 2026'da Vandenberg'den SpaceX Transporter-16 goreviyle firlatildi; FGN on eki de Fergani'ye ait.",
+  "meta": {
+   "aciklama": "113 kilogramlık FGN-100-D3, Fergani Uzay tarafından millî imkânlarla geliştirildi ve 30 Mart 2026'da ABD'deki Vandenberg Uzay Üssü'nden Transporter-16 göreviyle 500-520 kilometre yüksekliğindeki hedef yörüngesine yerleşti (Baykar/Fergani Uzay, Mart 2026). Şirketin ilk uydusu FGN-100-D1 ise 2024'te fırlatılmıştı; Plan-S ve Hello Space de Türk özel uydu girişimleridir, bu göreve ait değildir.",
+   "kaynak": "Baykar Teknoloji / Fergani Uzay duyurusu, Mart 2026",
+   "kaynakUrl": "https://baykartech.com/tr/haberler/ferganinin-besinci-uydusu-uzayda/",
+   "olayTarihi": "2026-03-30"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-5",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Celeldirici siklar gercek ama farkli buyuklukler: A (7,1 milyar) 2024 ihracati, E (17,8 milyar) 2025 yeni SOZLESME rekoru. Kok 'ihracat' dedigi icin tek dogru sik C; yine de E'yi karistiran adaylar icin kok net.",
+   "E şıkkındaki 17,8 milyar dolar aynı açıklamada geçen 'yeni sözleşme' rekoru; ihracatla karıştırılmasın diye konulmuş bilinçli çeldirici, kök 'ihracat' dediği için sorun yok."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818",
+   "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818"
+  ],
+  "gerekce": "SSB verisine gore 2025 savunma-havacilik ihracati 9 milyar 870 milyon dolar mal + 184 milyon dolar hizmet = 10 milyar 54 milyon dolar; 2024'teki 7,1 milyar dolara gore ~%48 artis.",
+  "meta": {
+   "aciklama": "Ticaret Bakanı Ömer Bolat, 2025 savunma ve havacılık ihracatının 10 milyar 54 milyon dolar olduğunu açıklamıştır (Anadolu Ajansı, 30 Ocak 2026); bu, 2024'teki 7,1 milyar dolarlık düzeye göre yaklaşık yüzde 48'lik artışa karşılık gelir. Tuzak, aynı dönemde açıklanan 17,8 milyar dolarlık rakamdır: o ihracat değil, yıl içinde imzalanan yeni sözleşmelerin toplamıdır.",
+   "kaynak": "Anadolu Ajansı, 30 Ocak 2026 (Ticaret Bakanı Ömer Bolat açıklaması)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-savunma-sanayii-ihracatimiz-neredeyse-yuzde-100-artti-10-milyar-54-milyon-dolar/3815250",
+   "olayTarihi": "2026-01-30"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-6",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "ONAY",
+  "uretilenCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/enerjiterminali/petrol/gabarda-gunluk-petrol-uretimi-35-bin-varille-rekor-kirdi/40394",
+   "https://aa.com.tr/tr/ekonomi/gabarda-gunluk-petrol-uretimi-83-bin-300-varile-ulasarak-rekor-kirdi/4019797"
+  ],
+  "gerekce": "Bakan Bayraktar, Sirnak Gabar'da gunluk petrol uretiminin 83 bin 300 varile ulastigini; 2021'deki Gabar kesfinin Cumhuriyet tarihinin en buyuk kara petrol kesfi oldugunu ve toplam uretimin 50 milyon varili gectigini duyurdu.",
+  "meta": {
+   "aciklama": "Gabar bölgesindeki petrol sahaları Şırnak ili sınırları içindedir; Enerji ve Tabii Kaynaklar Bakanı Alparslan Bayraktar 6 Ağustos 2026'da Gabar'da günlük üretimin 83 bin 300 varile çıkarak rekor kırdığını, 2021'den bu yana 50 milyon varilden fazla ham petrol üretildiğini bildirmiştir (Anadolu Ajansı, 6 Ağustos 2026). Batman ve Adıyaman Türkiye'nin klasik petrol illeridir, ancak bu rekor Gabar'a aittir.",
+   "kaynak": "Anadolu Ajansı, 6 Ağustos 2026 (Enerji ve Tabii Kaynaklar Bakanlığı açıklaması)",
+   "kaynakUrl": "https://aa.com.tr/tr/ekonomi/gabarda-gunluk-petrol-uretimi-83-bin-300-varile-ulasarak-rekor-kirdi/4019797",
+   "olayTarihi": "2026-08-06"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-7",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "A sikki (16 Ekim 2025) 5G IHALE tarihi; kok 'ticari olarak sunulmaya baslandigi tarih' dedigi icin ayrim net, ikinci dogru sik yok.",
+   "A şıkkı (16 Ekim 2025) ihale tarihi; kök 'ticari olarak sunulmaya başlanma' dediği için ayrım net."
+  ],
+  "denetciKaynaklari": [
+   "https://www.uab.gov.tr/haberler/5g-de-tarihi-adim/",
+   "https://www.uab.gov.tr/haberler/5g-de-geri-sayim-basladi"
+  ],
+  "gerekce": "Bakanlik, 16 Ekim 2025'te yapilan 5G ihalesinin ardindan operatorlerin 1 Nisan 2026 itibariyla ticari 5G hizmeti sunmaya basladigini bildiriyor.",
+  "meta": {
+   "aciklama": "5G yetkilendirme ihalesi 16 Ekim 2025'te Bilgi Teknolojileri ve İletişim Kurumu'nda yapılmış, ticari hizmet ise 1 Nisan 2026'da başlamıştır; yetkilendirme 31 Aralık 2042'ye kadar geçerlidir (Ulaştırma ve Altyapı Bakanlığı). Sık yapılan hata ihale tarihi olan 16 Ekim 2025'i hizmetin başlangıcı sanmaktır.",
+   "kaynak": "Ulaştırma ve Altyapı Bakanlığı, 5G yetkilendirme duyurusu",
+   "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-geri-sayim-basladi",
+   "olayTarihi": "2026-04-01"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-8",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "Kucuk adlandirma riski: bakanlik metinlerinde hat cogunlukla 'Halkali-Istanbul Havalimani Metro Hatti' diye aniliyor; A sikkindaki 'Gayrettepe-Istanbul Havalimani-Halkali' ise ayni M11 hattinin tam guzergah adi. Diger sikliar baska hatlar oldugundan tek dogru sik yine A."
+  ],
+  "denetciKaynaklari": [
+   "https://www.uab.gov.tr/haberler/halkali-arnavutkoey-hatti-31-temmuz-a-kadar-uecretsiz/",
+   "https://www.uab.gov.tr/haberler/tuerkiye-nin-en-uzun-metro-ringinin-son-halkasi-tamamlandi/"
+  ],
+  "gerekce": "Bakanlik duyurusu, 19 Haziran 2026'da acilan 22 km'lik Halkali-Arnavutkoy kesimiyle tamamlanan hattin Halkali-Istanbul Havalimani (M11, Gayrettepe baglantili) hatti oldugunu ve toplam 69 km ile 'Turkiye'nin en uzun ve en hizli metro hatti' oldugunu (120 km/sa) belirtiyor.",
+  "meta": {
+   "aciklama": "Cumhurbaşkanı Recep Tayyip Erdoğan 19 Haziran 2026'da 22 kilometrelik Halkalı-Arnavutköy kesimini hizmete açarak 16 istasyonlu, 69 kilometrelik Gayrettepe-İstanbul Havalimanı-Halkalı hattını tamamladı; saatte 120 kilometre hızla Halkalı'dan İstanbul Havalimanı'na 30 dakikada ulaşılmaktadır (Anadolu Ajansı, 19 Haziran 2026). Bakırköy Sahil-Kirazlı hattı daha önce açılmış ayrı bir hattır.",
+   "kaynak": "Anadolu Ajansı, 19 Haziran 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-turkiyeyi-en-uzun-ve-en-hizli-metro-hattiyla-bulusturuyoruz/3971948",
+   "olayTarihi": "2026-06-19"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-9",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "TUIK bulten sayfasi (veriportali.tuik.gov.tr) dogrudan cekilemedi; rakam AA aktarimi ve ikinci kaynaklarla dogrulandi. Rakamin kendisi birebir tutuyor.",
+   "C şıkkı (85.664.944) 2024 yılı nüfusudur — bilinçli ama güçlü çeldirici."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+   "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394"
+  ],
+  "gerekce": "TUIK'e gore 31 Aralik 2025 itibariyla Turkiye nufusu 86 milyon 92 bin 168 kisi; bir onceki yila gore 427 bin 224 kisi artti, yillik artis hizi binde 5.",
+  "meta": {
+   "aciklama": "TÜİK verilerine göre Türkiye nüfusu 2025 sonunda bir önceki yıla göre 427 bin 224 kişi artarak 86 milyon 92 bin 168 olmuştur (TÜİK, ADNKS Sonuçları 2025). Şıklardaki 85 milyon 664 bin 944 rakamı 2024 yıl sonu nüfusudur; iki yılın karıştırılması tipik hatadır.",
+   "kaynak": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları 2025 (9 Şubat 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+   "olayTarihi": "2026-02-09"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-10",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "ONAY",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/gundem/istanbulun-esenyurt-ilcesi-57-ilden-daha-kalabalik/3825465",
+   "https://www.aa.com.tr/tr/gundem/istanbulun-esenyurt-ilcesi-57-ilden-daha-kalabalik/3825465"
+  ],
+  "gerekce": "Esenyurt 1 milyon 3 bin 905 kisiyle Turkiye'de nufusu 1 milyonu asan ilk ilce oldu; onu Sahinbey (957.792) ve Cankaya (952.198) izliyor.",
+  "meta": {
+   "aciklama": "İstanbul'un Esenyurt ilçesi 1 milyon 3 bin kişilik nüfusuyla Türkiye'de nüfusu 1 milyonu aşan ilk ilçe oldu (TÜİK, ADNKS Sonuçları 2025; 9 Şubat 2026). Aynı veride Türkiye'nin ortanca yaşı 34,4'ten 34,9'a yükselmiş, nüfusun yüzde 93,6'sı il ve ilçe merkezlerinde yaşar duruma gelmiştir.",
+   "kaynak": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları 2025 (9 Şubat 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+   "olayTarihi": "2026-02-09"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-11",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "D şıkkı (1,48) 2024 değeridir; tarih okunmazsa iki şık da savunulabilir görünebilir, kök '2025' dediği için sorun yok."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191"
+  ],
+  "gerekce": "TUIK'e gore toplam dogurganlik hizi 2025'te 1,42 cocuk olarak gerceklesti; 2001'de 2,38'di ve 9 yildir 2,1 yenilenme duzeyinin altinda. Haber tarihi 21 Mayis 2026, soru kokuyle ayni.",
+  "meta": {
+   "aciklama": "Toplam doğurganlık hızı 2025'te 1,42 çocuğa gerileyerek Cumhuriyet tarihinin en düşük düzeyine indi; bu oran dokuz yıldır nüfusun yenilenme düzeyi olan 2,10'un altındadır (TÜİK, Doğum İstatistikleri 2025; 21 Mayıs 2026). Şıklardaki 1,48 bir önceki yılın (2024) değeridir, 2,10 ise yenilenme eşiğidir.",
+   "kaynak": "TÜİK, Doğum İstatistikleri 2025 (21 Mayıs 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "olayTarihi": "2026-05-21"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-12",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "E şıkkı (Bartın) en DÜŞÜK ilin adı; kök 'en yüksek' dediği için ayrım net ama okuma tuzağı içeriyor."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191"
+  ],
+  "gerekce": "2025'te toplam dogurganlik hizi en yuksek il 3,15 cocukla Sanliurfa; onu Sirnak (2,53) ve Mardin (2,23) izliyor. Sanliurfa 3 cocuk ve uzerindeki tek il.",
+  "meta": {
+   "aciklama": "2025'te en yüksek toplam doğurganlık hızı 3,15 çocukla Şanlıurfa'da, en düşüğü ise 1,09 çocukla Bartın'da kaydedilmiştir (TÜİK, Doğum İstatistikleri 2025; 21 Mayıs 2026). Aynı yıl 895 bin 374 bebek canlı doğmuş, doğurganlık hızı 2,10'un altına düşen il sayısı 76'ya çıkmıştır.",
+   "kaynak": "TÜİK, Doğum İstatistikleri 2025 (21 Mayıs 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "olayTarihi": "2026-05-21"
+  }
+ },
+ {
+  "id": "ekonomi-teknoloji-savunma-13",
+  "alan": "ekonomi-teknoloji-savunma",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "E sikkindaki 120 bin MW, 2035 icin gunes+ruzgar HEDEFI (mevcut kapasite degil); kok 'Ocak 2026 sonu itibariyla ulastigi duzey' dedigi icin ayrim net.",
+   "E şıkkı (120 bin MW) 2035 güneş+rüzgâr hedefidir; çeldirici olarak tutarlı."
+  ],
+  "denetciKaynaklari": [
+   "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+   "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711"
+  ],
+  "gerekce": "Bakanlik verilerine gore 2014'te 40,2 MW olan gunes kurulu gucu 2026 Ocak sonu itibariyla 25 bin 827 MW'a ulasti; toplam elektrik kurulu gucu icindeki pay %20,9.",
+  "meta": {
+   "aciklama": "2014'te yalnızca 40,2 megavat olan güneş kurulu gücü, Ocak 2026 sonunda 641 kat artışla 25 bin 827 megavata ulaşmış ve toplam elektrik kurulu gücünün yüzde 20,9'unu oluşturmuştur (Enerji ve Tabii Kaynaklar Bakanlığı verileri, Şubat 2026). Şıktaki 120 bin megavat bir gerçekleşme değil, güneş ve rüzgâr için 2035 hedefidir.",
+   "kaynak": "Enerji ve Tabii Kaynaklar Bakanlığı verileri, Anadolu Ajansı Enerji Terminali, Şubat 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+   "olayTarihi": "2026-01-31"
+  }
+ }
+]

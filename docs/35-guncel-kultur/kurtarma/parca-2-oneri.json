@@ -1,0 +1,234 @@
+[
+ {
+  "id": "spor-2",
+  "grup": "A",
+  "gerekce": "Uyarı olgu hatası değil çeldirici notu: diğer şıklardaki sayılar kendi başına doğru olsa da kök 'birinci tamamlamıştır' dediği için tek doğru şık var.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Norveç – 18 altın",
+    "B": "ABD – 12 altın",
+    "C": "İtalya – 10 altın",
+    "D": "Almanya – 14 altın",
+    "E": "Hollanda – 10 altın"
+   },
+   "dogru": "A",
+   "aciklama": "Milano-Cortina 2026 Kış Olimpiyat Oyunları'nı Norveç 18 altın, 12 gümüş ve 11 bronz olmak üzere 41 madalyayla birinci tamamlamış; bu sonuçla bir Kış Olimpiyatı'nda en çok altın ve en çok toplam madalya rekorunu eline geçirmiştir. ABD 12 altınla ikinci, Hollanda ile ev sahibi İtalya 10'ar altınla üçüncülüğü paylaşmıştır. Tuzak, ikinci ve üçüncü sıradaki altın sayılarının kendi başlarına doğru olmasıdır; kök birinciliği sorduğu için yalnız Norveç doğrudur (Uluslararası Olimpiyat Komitesi resmî madalya tablosu, 22 Şubat 2026).",
+   "dayanak": "Uluslararası Olimpiyat Komitesi (IOC) Milano Cortina 2026 resmî madalya tablosu, 22 Şubat 2026"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-10",
+  "grup": "A",
+  "gerekce": "Uyarı çeldirici notu; kökteki 'değişikliğe göre' ibaresi eski ve yeni aralık ayrımını zaten kuruyor, olgu ve anahtar doğru.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "10 yıldan 18 yıla kadar hapis",
+    "B": "15 yıldan 18 yıla kadar hapis",
+    "C": "18 yıldan 24 yıla kadar hapis",
+    "D": "19 yıldan 27 yıla kadar hapis",
+    "E": "20 yıldan 30 yıla kadar hapis"
+   },
+   "dogru": "D",
+   "aciklama": "7593 sayılı Kanun'un 2. maddesiyle Türk Ceza Kanunu'nun 31/3. fıkrasındaki \"onsekiz yıldan yirmidört yıla\" ibaresi \"ondokuz yıldan yirmiyedi yıla\" şeklinde değiştirilmiştir; böylece on beş yaşını doldurmuş, on sekiz yaşını doldurmamış çocuklar bakımından ağırlaştırılmış müebbeti gerektiren suçlarda ceza 19-27 yıl hapistir (Resmî Gazete, 18 Ağustos 2026, Sayı 33344). Tuzak, 18-24 yılın değişiklikten önceki aralık, 10-18 yılın ise 12-15 yaş grubuna uygulanan yeni aralık olmasıdır.",
+   "dayanak": "Resmî Gazete, 18 Ağustos 2026, Sayı 33344 — 7593 sayılı Kanun m.2 (TCK m.31/3)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-11",
+  "grup": "C",
+  "gerekce": "Olgu ve anahtar doğru; tek kusur kökteki 'kararlarla' çoğulunun resmî kaynakla uyuşmaması — iki atama 2026/51 sayılı tek kararla yapılmış.",
+  "duzeltme": {
+   "kok": "11 Şubat 2026 tarihli Resmî Gazete'de yayımlanan Cumhurbaşkanlığı atama kararıyla İçişleri Bakanlığına ve Adalet Bakanlığına getirilen isimler sırasıyla hangileridir?",
+   "siklar": {
+    "A": "Ali Yerlikaya — Yılmaz Tunç",
+    "B": "Mustafa Çiftçi — Akın Gürlek",
+    "C": "Akın Gürlek — Mustafa Çiftçi",
+    "D": "Ali Fidan — Yılmaz Tunç",
+    "E": "Mustafa Çiftçi — Yılmaz Tunç"
+   },
+   "dogru": "B",
+   "aciklama": "2026/51 sayılı Cumhurbaşkanlığı atama kararıyla, görevden af talebi kabul edilen İçişleri Bakanı Ali Yerlikaya'nın yerine Erzurum Valisi Mustafa Çiftçi, Adalet Bakanı Yılmaz Tunç'un yerine İstanbul Cumhuriyet Başsavcısı Akın Gürlek atanmıştır (Resmî Gazete, 11 Şubat 2026, Sayı 33165). Tuzak, iki ismin bakanlıklarının ters eşleştirilmesidir: mülki idare kökenli Çiftçi İçişleri'ne, hukukçu kökenli Gürlek Adalet'e gelmiştir.",
+   "dayanak": "Resmî Gazete, 11 Şubat 2026, Sayı 33165 — Cumhurbaşkanlığı Atama Kararı 2026/51 (karar tarihi 10 Şubat 2026)"
+  },
+  "degisenler": [
+   "Kök: 'yayımlanan kararlarla' → 'yayımlanan Cumhurbaşkanlığı atama kararıyla' (RG'de tek karar var: 2026/51)",
+   "Açıklama: karar numarası ve Resmî Gazete künyesi cümle içine eklendi"
+  ]
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-12",
+  "grup": "A",
+  "gerekce": "Her iki denetçi de kökün 'karar tarihi'ni verdiğini, dolayısıyla hatalı olmadığını belirtiyor; yayım tarihi farkı kusur değil.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Mahmut Demirtaş",
+    "B": "Vasip Şahin",
+    "C": "Ali Fidan",
+    "D": "Mustafa Çiftçi",
+    "E": "Ali Yerlikaya"
+   },
+   "dogru": "C",
+   "aciklama": "Nevşehir Valisi Ali Fidan, 29 Nisan 2026 tarihli ve 2026/123 sayılı Cumhurbaşkanı Kararının eki listeyle Emniyet Genel Müdürlüğüne atanmıştır; karar Resmî Gazete'de 30 Nisan 2026'da yayımlanmıştır. Aynı listeyle önceki Emniyet Genel Müdürü Mahmut Demirtaş İçişleri Bakanlığı emrine alınmıştır; Mustafa Çiftçi ise aynı dönemde İçişleri Bakanı olan eski Erzurum Valisidir.",
+   "dayanak": "Resmî Gazete, 30 Nisan 2026, Sayı 33239 — 29/4/2026 tarihli ve 2026/123 sayılı Cumhurbaşkanı Kararının eki liste"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-14",
+  "grup": "C",
+  "gerekce": "Anahtar doğru ama kök ihlalin ilk kez mi tekrar mı olduğunu söylemediği için tekerrür yaptırımını veren şık savunulabilir hâle geliyor; köke 'ilk kez' ibaresi eklenerek kusur giderilir.",
+  "duzeltme": {
+   "kok": "27 Şubat 2026 tarihli Resmî Gazete'de yayımlanan 7574 sayılı Kanun'la Karayolları Trafik Kanunu'nda yapılan değişikliğe göre, tescil plakasının farklı okunmasına veya okunamamasına bilerek neden olacak şekilde plakasında ilk kez değişiklik yapan sürücüye uygulanacak yaptırım nedir?",
+   "siklar": {
+    "A": "4.000 TL idari para cezası",
+    "B": "46.000 TL idari para cezası ve aracın 15 gün trafikten men edilmesi",
+    "C": "140.000 TL idari para cezası ve aracın 30 gün trafikten men edilmesi",
+    "D": "280.000 TL idari para cezası ve aracın 60 gün trafikten men edilmesi",
+    "E": "Sürücü belgesinin doğrudan iptali"
+   },
+   "dogru": "C",
+   "aciklama": "7574 sayılı Kanun'un 4. maddesiyle değişen 2918 sayılı Karayolları Trafik Kanunu'nun 23. maddesi, tescil plakasının farklı okunmasına veya okunamamasına bilerek neden olacak şekilde plakasında değişiklik yapan sürücüye 140.000 TL idari para cezası verilmesini ve aracın otuz gün trafikten menedilmesini öngörür (Resmî Gazete, 27 Şubat 2026, Sayı 33181). Tuzak, aynı fıkradaki tekerrür yaptırımıdır: bir yıl içinde ihlalin tekrarlanması hâlinde ceza 280.000 TL'ye, men süresi altmış güne çıkar; 4.000 TL ise yalnızca yönetmeliğe aykırı plaka takmanın karşılığıdır.",
+   "dayanak": "Resmî Gazete, 27 Şubat 2026, Sayı 33181 — 7574 sayılı Kanun m.4 (2918 sayılı Kanun m.23)"
+  },
+  "degisenler": [
+   "Kök: '…plakasında değişiklik yapan sürücüye' → '…plakasında ilk kez değişiklik yapan sürücüye' (tekerrür hâliyle karışmayı önlemek için)",
+   "Açıklama: tekerrür yaptırımı tuzak olarak açıkça belirtildi"
+  ]
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-6",
+  "grup": "A",
+  "gerekce": "Aynı başlıklı öteki kanunlar şıklarda yer almıyor ve kök içerik tarifiyle ayrıştırıyor; uyarı kapsam notu, kusur değil.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "7582 sayılı Kanun — 4 Haziran 2026",
+    "B": "7584 sayılı Kanun — 20 Haziran 2026",
+    "C": "7587 sayılı Kanun — 1 Temmuz 2026",
+    "D": "7589 sayılı Kanun — 31 Temmuz 2026",
+    "E": "7592 sayılı Kanun — 9 Ağustos 2026"
+   },
+   "dogru": "C",
+   "aciklama": "TBMM'nin 24 Haziran 2026'da kabul ettiği 7587 sayılı \"Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun\", 1 Temmuz 2026 tarihli ve 33297 sayılı Resmî Gazete'de yayımlanmıştır; metinde 3201 sayılı Kanun'un 55. maddesindeki rütbe oranları tablosu, internet haber sitelerine getirilen nitelik şartı ve elektronik tebligatın genişletilmesi bir aradadır. Tuzak, 2026'da aynı başlıkla birden çok kanunun çıkmış olmasıdır (18 Ağustos 2026'da yayımlanan 7594 sayılı Kanun gibi); ayırt edici olan başlık değil, kanunun içeriği ile numara-tarih eşleşmesidir.",
+   "dayanak": "Resmî Gazete, 1 Temmuz 2026, Sayı 33297 — 7587 sayılı Kanun (Kabul: 24/6/2026)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "turkiye-siyaset-mevzuat-9",
+  "grup": "C",
+  "gerekce": "Olgu doğru ama kanun tek bir karşılık koymuyor ('adli süreçteki' yanında 'hakkında adli süreç yürütülen' de var); kökteki 'hangi ifadeyle' tekillik varsayımı 'başlıca' denilerek düzeltilir.",
+  "duzeltme": {
+   "kok": "7593 sayılı Kanun'la 5395 sayılı Çocuk Koruma Kanunu başta olmak üzere mevzuatta yer alan \"suça sürüklenen çocuk\" ibaresinin yerini alan başlıca ifade aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Korunmaya muhtaç çocuk",
+    "B": "Adli süreçteki çocuk",
+    "C": "Mağdur çocuk",
+    "D": "Tedbir uygulanan çocuk",
+    "E": "Ceza sorumluluğu bulunan çocuk"
+   },
+   "dogru": "B",
+   "aciklama": "7593 sayılı Kanun'un ibare değişikliği maddeleri, 5395 sayılı Çocuk Koruma Kanunu ile 2828 sayılı Sosyal Hizmetler Kanunu ve 5271 sayılı Ceza Muhakemesi Kanunu'ndaki \"suça sürüklenen\" ibaresini sıfat konumunda \"adli süreçteki\" şeklinde değiştirmiştir; yüklem konumundaki kullanımlar ise \"hakkında adli süreç yürütülen\" biçimini almıştır (Resmî Gazete, 18 Ağustos 2026, Sayı 33344). Bu nedenle kanunun getirdiği başlıca karşılık \"adli süreçteki çocuk\"tur. Tuzak, \"korunmaya muhtaç çocuk\" kavramının mevzuatta bu değişiklikten bağımsız, ayrı bir kategori olmasıdır.",
+   "dayanak": "Resmî Gazete, 18 Ağustos 2026, Sayı 33344 — 7593 sayılı Kanun, ibare değişikliği maddeleri (m.14-15)"
+  },
+  "degisenler": [
+   "Kök: '…ibaresi hangi ifadeyle değiştirilmiştir?' → '…ibaresinin yerini alan başlıca ifade aşağıdakilerden hangisidir?' (kanun tek bir karşılık koymadığı için)",
+   "Açıklama: yüklem konumundaki 'hakkında adli süreç yürütülen' biçimi de belirtildi"
+  ]
+ },
+ {
+  "id": "uluslararasi-11",
+  "grup": "A",
+  "gerekce": "Uyarılar kökteki 'Haziran 2026' ifadesinin doğru olduğunu teyit ediyor; gün verilmediği için duyuru/imza tarihi farkı kusur oluşturmuyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Doha Mutabakatı",
+    "B": "İslamabad Mutabakatı",
+    "C": "Maskat Mutabakatı",
+    "D": "Cenevre Mutabakatı",
+    "E": "Kahire Mutabakatı"
+   },
+   "dogru": "B",
+   "aciklama": "ABD ile İran arasında Pakistan'ın arabuluculuğunda varılan 14 maddelik mutabakat, sürecin yürütüldüğü Pakistan'ın başkentine atfen \"İslamabad Mutabakatı\" adıyla anılmaktadır; metin Haziran 2026'da elektronik olarak imzalanmıştır (Birleşik Krallık Avam Kamarası Kütüphanesi araştırma notu CBP-10637, 2026). Belge savaşın sona erdirilmesi, Hürmüz Boğazı'nın açılması ve deniz ablukasının kaldırılması gibi maddeler içerir. Tuzak, imzanın İsviçre'de atılacağı yönündeki ilk haberlerdir; imza dijital ortamda tamamlanmıştır.",
+   "dayanak": "Birleşik Krallık Avam Kamarası Kütüphanesi araştırma notu CBP-10637 (2026); Anadolu Ajansı, Haziran 2026"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "uluslararasi-12",
+  "grup": "F",
+  "gerekce": "İki resmî kaynak doğrudan çelişiyor: ITF'nin kendi sitesi (itf-oecd.org) ITF 2027 Zirvesi'ni 'under the ITF Presidency of Czechia' diye duyuruyor ve ITF başkanlığının yıllık döndüğünü, 2025/26 başkanının Azerbaycan olduğunu, görevin Çekya'ya geçtiğini belirtiyor; Ulaştırma ve Altyapı Bakanlığı ise Türkiye'nin 2027-2028 dönem başkanlığına seçildiğini duyuruyor. 2027 başkanlığı için güvenilir tek cevap bulunmadığından soru bankaya girmemeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "uluslararasi-14",
+  "grup": "E",
+  "gerekce": "İki kusur var: 'Hiçbiri' şıkkı olumsuz kökle mantıksal olarak tutarsız bir çöp şık, ayrıca listedeki TDT 13. Zirvesi'nin Türkiye'deki yeri/tarihi resmî olarak kesinleşmemiş, ertelenirse soru eskir. Öneri: 'Hiçbiri' yerine Türkiye'nin 2026'da ev sahipliği yaptığı, resmî kaynakla doğrulanabilen dördüncü bir uluslararası zirve konmalı (aksi hâlde iki doğru şık oluşur); TDT 13. Zirvesi ise resmî ilan çıkana kadar şık kümesinden çıkarılıp yerine kesinleşmiş bir etkinlik konmalı. Bu şık kümesi kararı insana bırakılıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "uluslararasi-3",
+  "grup": "A",
+  "gerekce": "Olay Kasım 2026'da gerçekleşecek ve kök gelecek zamanla kurulmuş; denetçi de bunu kusur saymıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "İzmir",
+    "B": "Ankara",
+    "C": "Antalya",
+    "D": "Mersin",
+    "E": "Bursa"
+   },
+   "dogru": "C",
+   "aciklama": "Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi'nin 31. Taraflar Konferansı (COP31), 9-20 Kasım 2026 tarihlerinde Antalya'da, Antalya EXPO alanında toplanacaktır; Türkiye bir COP'a ilk kez ev sahipliği yapmaktadır (UNFCCC, \"The Road to Antalya\", 2026). Tuzak, konferansın Liderler Zirvesi bölümünün İstanbul'da planlanmasıdır; ana ev sahibi şehir Antalya'dır.",
+   "dayanak": "UNFCCC COP31 \"The Road to Antalya\" sayfası (2026); T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı — cop31.tr"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "uluslararasi-7",
+  "grup": "A",
+  "gerekce": "Uyarı yalnızca çeldirici gücüne işaret ediyor; kökteki tarih net olduğu için kusur yok.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Tiencin",
+    "B": "Astana",
+    "C": "Semerkant",
+    "D": "Bişkek",
+    "E": "Yeni Delhi"
+   },
+   "dogru": "D",
+   "aciklama": "Şanghay İşbirliği Örgütü'nün 26. Devlet Başkanları Konseyi Zirvesi, Kırgızistan'ın dönem başkanlığında 31 Ağustos - 1 Eylül 2026'da başkent Bişkek'te toplanmış; örgütün kuruluşunun 25. yılına denk gelen zirvede Bişkek Bildirisi kabul edilmiş ve dönem başkanlığı Pakistan'a devredilmiştir (ŞİÖ Sekretaryası, 1 Eylül 2026). Tuzak, bir önceki zirvenin 2025'te Çin'in Tiencin kentinde yapılmış olmasıdır.",
+   "dayanak": "Şanghay İşbirliği Örgütü Sekretaryası duyurusu, 1 Eylül 2026 (26. Devlet Başkanları Konseyi Toplantısı, Bişkek)"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "uluslararasi-9",
+  "grup": "A",
+  "gerekce": "Uyarı kaynak gücüne ilişkin bir not; olgu iki kör denetçi tarafından bağımsız doğrulandı ve anahtar tuttu.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Peter Magyar",
+    "B": "Ferenc Gyurcsany",
+    "C": "Peter Marki-Zay",
+    "D": "Gergely Karacsony",
+    "E": "Katalin Novak"
+   },
+   "dogru": "A",
+   "aciklama": "Macaristan'da 12 Nisan 2026'da yapılan genel seçimi, Peter Magyar liderliğindeki Tisza Partisi 199 sandalyenin 141'ini alarak kazanmış; Viktor Orban'ın Fidesz'i 16 yıl sonra iktidarı kaybetmiştir (Anadolu Ajansı, 13 Nisan 2026). Tuzak, muhalefetin öteki tanıdık isimleridir: Marki-Zay 2022 seçiminde muhalefetin ortak başbakan adayıydı, Katalin Novak ise 2022-2024 arasında cumhurbaşkanlığı yapmıştır.",
+   "dayanak": "Anadolu Ajansı, 13 Nisan 2026 (Macaristan genel seçim sonuçları)"
+  },
+  "degisenler": []
+ }
+]

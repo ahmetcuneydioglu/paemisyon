@@ -1,0 +1,130 @@
+[
+ {
+  "id": "savunma-fuze-kurumsal-13",
+  "grup": "C",
+  "gerekce": "Anakronizm: kök, 1985'te kabul edilen metne 2/7/2018 tarihli 703 sayılı KHK ile verilen bugünkü adı yakıştırıyor; kanunun 1985'teki adı farklıydı. Cevap değişmiyor, yalnız kök ifadesi düzeltiliyor.",
+  "duzeltme": {
+   "kok": "7 Kasım 1985'te kabul edilen ve bugün \"Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun\" adıyla yürürlükte olan, Savunma Sanayii Başkanlığı'nın temelini oluşturan kanun kaç sayılıdır?",
+   "siklar": {
+    "A": "2634",
+    "B": "3238",
+    "C": "3388",
+    "D": "3704",
+    "E": "5202"
+   },
+   "dogru": "B",
+   "aciklama": "3238 sayılı Kanun 7 Kasım 1985'te kabul edilmiş, 13 Kasım 1985 tarihli ve 18927 sayılı Resmî Gazete'de yayımlanmıştır; kurum bu kanunla \"Savunma Sanayii Geliştirme ve Destekleme İdaresi Başkanlığı\" adıyla kurulmuş, 1989'da Savunma Sanayii Müsteşarlığı'na, 2018'de Cumhurbaşkanlığı Savunma Sanayii Başkanlığı'na dönüşmüştür; kanunun bugünkü adı da 2 Temmuz 2018 tarihli 703 sayılı KHK ile verilmiştir. Aynı kanun, Türkiye Cumhuriyet Merkez Bankası nezdinde Savunma Sanayii Destekleme Fonu'nu kurar. Tuzak, 3388 sayılı Kanun'un Türk Silahlı Kuvvetlerini Güçlendirme Vakfı'nın, 3704 sayılı Kanun'un ise 390 sayılı KHK'yi aynen kabul eden kanun olmasıdır.",
+   "dayanak": "3238 sayılı Kanun (Mevzuat Bilgi Sistemi künyesi; 2 no'lu dipnot: 2/7/2018-KHK/703/121 md. ile ad değişikliği)"
+  },
+  "degisenler": [
+   "Kök: '... 7 Kasım 1985'te kabul edilen \"Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun\" kaç sayılıdır?' → '... bugün \"Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun\" adıyla yürürlükte olan ...' (anakronizm giderildi)",
+   "Açıklama: adın 703 sayılı KHK ile verildiği ve 3704 sayılı Kanun'un ne olduğu eklendi"
+  ]
+ },
+ {
+  "id": "savunma-fuze-kurumsal-5",
+  "grup": "A",
+  "gerekce": "Denetçinin 'katalog yayımlanmamış' uyarısı yersiz: ROKETSAN'ın TAYFUN katalog PDF'i kendi alan adında canlı ve menzili birebir '> 280 KM' veriyor; kök kataloğa çıpalandığı için 800 km'lik azami menzil iddiası ikinci doğru şık yaratmıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-1",
+  "grup": "A",
+  "gerekce": "Uyarı çeldirici notu; 6 Mayıs 2024 ikinci test uçuşudur ve kök 'ilk uçuş' dediği için tek doğru 21 Şubat 2024'tür.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-10",
+  "grup": "A",
+  "gerekce": "Uyarı yalnız çeldirici kaynağına dair; GÖKBEY'in 6 Eylül 2018 ilk uçuş tarihi kurumsal sayfada doğrulanıyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-11",
+  "grup": "C",
+  "gerekce": "Kökteki 'ilk ihracat yapıldığı ülke' ifadesi sözleşme mi teslimat mı belirsiz; ilk ihracat sözleşmesi 2018'de Pakistan ile imzalandığı hâlde teslimat yapılamamıştır, bu yüzden kök 'ilk ihracat teslimatı' diye netleştirildi.",
+  "duzeltme": {
+   "kok": "TUSAŞ üretimi T129 ATAK taarruz helikopterinin ilk ihracat teslimatı hangi ülkeye yapılmıştır?",
+   "siklar": {
+    "A": "Pakistan",
+    "B": "Azerbaycan",
+    "C": "Filipinler",
+    "D": "Katar",
+    "E": "Ürdün"
+   },
+   "dogru": "C",
+   "aciklama": "Ana yüklenicisi TUSAŞ olan T129 ATAK taarruz helikopterinin ilk ihracat teslimatı Filipinler Hava Kuvvetlerine yapılmış, ilk iki helikopter Mart 2022'de teslim edilerek toplam altı helikopterlik teslimat tamamlanmıştır; TUSAŞ, aynı tipten altı helikopteri daha Nijerya Hava Kuvvetlerine (ilk teslimat Kasım 2023) vermiştir. Tuzak Pakistan'dır: 2018'de imzalanan ihracat sözleşmesi ABD motor ihraç lisansı çıkmadığı için teslimatla sonuçlanmamıştır.",
+   "dayanak": "TUSAŞ, T129 ATAK ürün sayfası (Filipinler ve Nijerya Hava Kuvvetlerine 6'şar helikopter teslimatının tamamlandığı kaydı)"
+  },
+  "degisenler": [
+   "Kök: 'ilk ihracat yapıldığı ülke hangisidir?' → 'ilk ihracat teslimatı hangi ülkeye yapılmıştır?'",
+   "Açıklama: Filipinler teslimatının Mart 2022'de başladığı ve Nijerya teslimatının Kasım 2023'te başladığı eklendi"
+  ]
+ },
+ {
+  "id": "savunma-hava-uzay-12",
+  "grup": "A",
+  "gerekce": "Uyarı saat dilimi notu; Türk resmî kaynaklarında fırlatma tarihi 15 Nisan 2023'tür ve soru bu haliyle doğrudur.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-13",
+  "grup": "A",
+  "gerekce": "Uyarı yalnız bir çeldiricinin zayıflığına dair; TÜRKSAT 6A'nın USET'te entegre edilen ilk yerli ve millî haberleşme uydusu olduğu kurumsal kaynakta nettir.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-15",
+  "grup": "A",
+  "gerekce": "Uyarı güçlü çeldirici notu; kök 'birinci hedef' dediği için Türk astronot şıkkı yanlıştır, kusur yok.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-16",
+  "grup": "A",
+  "gerekce": "Uyarı çeldiricinin neden çekici olduğunu açıklıyor; Türkiye Uzay Ajansı'nın Sanayi ve Teknoloji Bakanlığı ilgili kuruluşu olduğu tartışmasızdır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-4",
+  "grup": "A",
+  "gerekce": "Uyarı terim farkı notu: kaynağın 'kısa pistli gemi' ifadesiyle kökteki 'kısa güverteli gemi' aynı olguyu anlatıyor, cevaba etkisi yok.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-5",
+  "grup": "A",
+  "gerekce": "Uyarı kasıtlı çeldiriciye dair; 23 Ocak 2022 ilk ihracat tarihidir ve kök ilk uçuş ile envantere giriş sorduğundan tek doğru şık vardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-7",
+  "grup": "A",
+  "gerekce": "Uyarı yersiz: TUSAŞ AKSUNGUR ürün sayfası 'Kasım 2023'te ilk kez millî motor TEI-PD170 ile uçuş gerçekleştiren AKSUNGUR ... 30.000 feet'e ulaşmıştır ve bu uçuşta 41 saat havada kalma başarısını elde etmiştir' diyerek kökteki tarihi birebir doğruluyor.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-hava-uzay-8",
+  "grup": "A",
+  "gerekce": "Uyarıdaki 'hafif taarruz nitelemesi kurumsal değil' saptaması yanlış: TUSAŞ kendi haber başlığında uçağı 'HÜRJET Jet Eğitim ve Hafif Taarruz Uçağı' diye adlandırıyor; 12 Kasım 2024 ise ikinci prototipin uçuşudur.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-kara-deniz-13",
+  "grup": "A",
+  "gerekce": "Kökteki 'ilk büyük ihracat başarısı' ibaresi ayırt edicidir: Pakistan sözleşmesi (2018, dört korvet) hem Ukrayna sözleşmesinden (2020, iki korvet) öncedir hem de daha büyüktür.",
+  "duzeltme": null,
+  "degisenler": []
+ }
+]

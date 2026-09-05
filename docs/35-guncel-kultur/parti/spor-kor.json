@@ -1,0 +1,138 @@
+{
+ "alan": "spor",
+ "not": "Cevap anahtarı AYRI dosyada; denetçi görmez.",
+ "sorular": [
+  {
+   "id": "spor-1",
+   "kok": "Türkiye, 6-22 Şubat 2026 tarihlerinde İtalya'da düzenlenen Milano-Cortina Kış Olimpiyat Oyunları'na kaç sporcuyla katılmış ve kaç madalya kazanmıştır?",
+   "siklar": {
+    "A": "6 sporcu – madalya yok",
+    "B": "8 sporcu – madalya yok",
+    "C": "8 sporcu – 1 gümüş madalya",
+    "D": "12 sporcu – 2 bronz madalya",
+    "E": "4 sporcu – 1 bronz madalya"
+   }
+  },
+  {
+   "id": "spor-2",
+   "kok": "Milano-Cortina 2026 Kış Olimpiyat Oyunları'nı madalya sıralamasında hangi ülke, kaç altın madalyayla birinci tamamlamıştır?",
+   "siklar": {
+    "A": "İtalya – 10 altın",
+    "B": "Almanya – 14 altın",
+    "C": "Hollanda – 10 altın",
+    "D": "ABD – 12 altın",
+    "E": "Norveç – 18 altın"
+   }
+  },
+  {
+   "id": "spor-3",
+   "kok": "Milano-Cortina 2026'da tek bir Kış Olimpiyatı'nda altı altın madalya kazanarak bu alandaki rekoru kıran sporcu ve branşı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Eric Heiden – sürat pateni",
+    "B": "Ole Einar Bjørndalen – biatlon",
+    "C": "Nils van der Poel – sürat pateni",
+    "D": "Marco Odermatt – alp disiplini",
+    "E": "Johannes Hösflot Klæbo – kayaklı koşu"
+   }
+  },
+  {
+   "id": "spor-4",
+   "kok": "Milano-Cortina 2026 Kış Olimpiyatları'nda alp disiplini erkekler dev slalom altın madalyasını kazanarak ülkesine tarihindeki ilk Kış Olimpiyatları madalyasını getiren sporcunun ülkesi hangisidir?",
+   "siklar": {
+    "A": "Meksika",
+    "B": "Brezilya",
+    "C": "Yeni Zelanda",
+    "D": "Şili",
+    "E": "Arjantin"
+   }
+  },
+  {
+   "id": "spor-5",
+   "kok": "ABD, Kanada ve Meksika'nın ortak ev sahipliğinde düzenlenen 2026 FIFA Dünya Kupası'nda uygulanan yeni format için aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "48 takım, 12 grup, 104 maç",
+    "B": "48 takım, 16 grup, 80 maç",
+    "C": "36 takım, 9 grup, 96 maç",
+    "D": "32 takım, 8 grup, 64 maç",
+    "E": "40 takım, 10 grup, 88 maç"
+   }
+  },
+  {
+   "id": "spor-6",
+   "kok": "A Millî Futbol Takımı'nı 24 yıl aradan sonra Dünya Kupası'na taşıyan, 31 Mart 2026'da Priştine'de oynanan play-off final maçındaki tek golü kaydeden futbolcu kimdir?",
+   "siklar": {
+    "A": "Ferdi Kadıoğlu",
+    "B": "Kenan Yıldız",
+    "C": "Kerem Aktürkoğlu",
+    "D": "Orkun Kökçü",
+    "E": "Arda Güler"
+   }
+  },
+  {
+   "id": "spor-7",
+   "kok": "A Millî Futbol Takımı, 2026 FIFA Dünya Kupası D Grubu'ndaki tek galibiyetini hangi takımı yenerek almıştır?",
+   "siklar": {
+    "A": "Paraguay",
+    "B": "ABD",
+    "C": "Kanada",
+    "D": "Meksika",
+    "E": "Avustralya"
+   }
+  },
+  {
+   "id": "spor-8",
+   "kok": "19 Temmuz 2026'da oynanan 2026 FIFA Dünya Kupası finalinde hangi ülke, hangi rakibini yenerek şampiyon olmuştur?",
+   "siklar": {
+    "A": "Brezilya – İspanya'yı",
+    "B": "İngiltere – Arjantin'i",
+    "C": "İspanya – Arjantin'i",
+    "D": "Fransa – İngiltere'yi",
+    "E": "Arjantin – Fransa'yı"
+   }
+  },
+  {
+   "id": "spor-9",
+   "kok": "2026 Avrupa Güreş Şampiyonası'nda grekoromen 130 kiloda altın kazanarak 13. Avrupa şampiyonluğuna ulaşan ve bu dalda en çok Avrupa şampiyonluğu rekorunun tek sahibi olan Türk sporcu kimdir?",
+   "siklar": {
+    "A": "Rıza Kayaalp",
+    "B": "Selçuk Can",
+    "C": "Murat Fırat",
+    "D": "Süleyman Atlı",
+    "E": "Taha Akgül"
+   }
+  },
+  {
+   "id": "spor-10",
+   "kok": "Ağustos 2026'da İstanbul'da düzenlenen Avrupa Şampiyonası'nda altın madalya kazanarak Türkiye'ye modern pentatlon dalındaki ilk Avrupa şampiyonluğunu getiren sporcu kimdir?",
+   "siklar": {
+    "A": "Şevval İlayda Tarhan",
+    "B": "İlke Özyüksel Mihrioğlu",
+    "C": "Defne Kurt",
+    "D": "Öznur Cüre Girdi",
+    "E": "Buse Naz Çakıroğlu"
+   }
+  },
+  {
+   "id": "spor-11",
+   "kok": "A Millî Kadın Voleybol Takımı'nın 26 Temmuz 2026'da Makao'da kazandığı FIVB Milletler Ligi şampiyonluğu ile ilgili aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Finalde İtalya 3-0 yenilmiş, bu Türkiye'nin ilk Milletler Ligi kupasıdır",
+    "B": "Finalde Brezilya 3-1 yenilmiş, bu Türkiye'nin ikinci Milletler Ligi kupasıdır",
+    "C": "Finalde ABD 3-2 yenilmiş, bu Türkiye'nin üçüncü Milletler Ligi kupasıdır",
+    "D": "Finalde Polonya 3-1 yenilmiş, bu Türkiye'nin ilk Milletler Ligi kupasıdır",
+    "E": "Finalde Sırbistan 3-0 yenilmiş, bu Türkiye'nin ikinci Milletler Ligi kupasıdır"
+   }
+  },
+  {
+   "id": "spor-12",
+   "kok": "Mayıs 2026'da İstanbul'da Beşiktaş Park'ta oynanan UEFA Avrupa Ligi finalini hangi takım kazanmıştır?",
+   "siklar": {
+    "A": "AS Roma",
+    "B": "Real Betis",
+    "C": "Tottenham Hotspur",
+    "D": "SC Freiburg",
+    "E": "Aston Villa"
+   }
+  }
+ ]
+}

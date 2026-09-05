@@ -1,0 +1,530 @@
+{
+ "parca": 1,
+ "sorular": [
+  {
+   "id": "ekonomi-teknoloji-savunma-11",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "TÜİK'in 21 Mayıs 2026'da açıkladığı Doğum İstatistikleri'ne göre Türkiye'de 2025 yılı toplam doğurganlık hızı (bir kadının doğurgan çağında dünyaya getirdiği ortalama çocuk sayısı) kaçtır?",
+   "siklar": {
+    "A": "2,10",
+    "B": "1,88",
+    "C": "1,62",
+    "D": "1,48",
+    "E": "1,42"
+   },
+   "dogruCevap": "E",
+   "aciklama": "Toplam doğurganlık hızı 2025'te 1,42 çocuğa gerileyerek Cumhuriyet tarihinin en düşük düzeyine indi; bu oran dokuz yıldır nüfusun yenilenme düzeyi olan 2,10'un altındadır (TÜİK, Doğum İstatistikleri 2025; 21 Mayıs 2026). Şıklardaki 1,48 bir önceki yılın (2024) değeridir, 2,10 ise yenilenme eşiğidir.",
+   "kaynak": "TÜİK, Doğum İstatistikleri 2025 (21 Mayıs 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "olayTarihi": "2026-05-21",
+   "uyarilar": [
+    "D şıkkı (1,48) 2024 değeridir; tarih okunmazsa iki şık da savunulabilir görünebilir, kök '2025' dediği için sorun yok."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "kaynak": "TUIK Dogum Istatistikleri 2025 - Anadolu Ajansi, 21 Mayis 2026",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+     "gerekce": "TUIK'e gore toplam dogurganlik hizi 2025'te 1,42 cocuk olarak gerceklesti; 2001'de 2,38'di ve 9 yildir 2,1 yenilenme duzeyinin altinda. Haber tarihi 21 Mayis 2026, soru kokuyle ayni.",
+     "uyari": null
+    },
+    {
+     "cevap": "E",
+     "kaynak": "Anadolu Ajansı, 'Türkiye'de doğurganlık hızındaki gerileme devam ediyor' (21 Mayıs 2026, TÜİK Doğum İstatistikleri 2025)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+     "gerekce": "Haber birebir toplam doğurganlık hızının '2025'te 1,42 çocuk olarak gerçekleşti' diyor; 2025'te canlı doğan bebek sayısı 895.374.",
+     "uyari": "D şıkkı (1,48) 2024 değeridir; tarih okunmazsa iki şık da savunulabilir görünebilir, kök '2025' dediği için sorun yok."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-12",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "TÜİK'in 2025 yılı doğum istatistiklerine göre toplam doğurganlık hızının 3,15 çocukla en yüksek olduğu il hangisidir?",
+   "siklar": {
+    "A": "Şanlıurfa",
+    "B": "Şırnak",
+    "C": "Ağrı",
+    "D": "Mardin",
+    "E": "Bartın"
+   },
+   "dogruCevap": "A",
+   "aciklama": "2025'te en yüksek toplam doğurganlık hızı 3,15 çocukla Şanlıurfa'da, en düşüğü ise 1,09 çocukla Bartın'da kaydedilmiştir (TÜİK, Doğum İstatistikleri 2025; 21 Mayıs 2026). Aynı yıl 895 bin 374 bebek canlı doğmuş, doğurganlık hızı 2,10'un altına düşen il sayısı 76'ya çıkmıştır.",
+   "kaynak": "TÜİK, Doğum İstatistikleri 2025 (21 Mayıs 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+   "olayTarihi": "2026-05-21",
+   "uyarilar": [
+    "E şıkkı (Bartın) en DÜŞÜK ilin adı; kök 'en yüksek' dediği için ayrım net ama okuma tuzağı içeriyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "TUIK Dogum Istatistikleri 2025 - Anadolu Ajansi, 21 Mayis 2026",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+     "gerekce": "2025'te toplam dogurganlik hizi en yuksek il 3,15 cocukla Sanliurfa; onu Sirnak (2,53) ve Mardin (2,23) izliyor. Sanliurfa 3 cocuk ve uzerindeki tek il.",
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Anadolu Ajansı, aynı TÜİK Doğum İstatistikleri 2025 haberi (21 Mayıs 2026)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/turkiye-de-dogurganlik-hizindaki-gerileme-devam-ediyor/3944191",
+     "gerekce": "Haberde en yüksek doğurganlık hızı Şanlıurfa'da '3,15 çocukla', en düşük Bartın'da '1,09 çocuk ile' olarak veriliyor.",
+     "uyari": "E şıkkı (Bartın) en DÜŞÜK ilin adı; kök 'en yüksek' dediği için ayrım net ama okuma tuzağı içeriyor."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-13",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "Enerji ve Tabii Kaynaklar Bakanlığı verilerine göre Türkiye'nin güneş enerjisi kurulu gücü Ocak 2026 sonu itibarıyla hangi düzeye ulaşmıştır?",
+   "siklar": {
+    "A": "9 bin 425 megavat",
+    "B": "15 bin 300 megavat",
+    "C": "25 bin 827 megavat",
+    "D": "48 bin 600 megavat",
+    "E": "120 bin megavat"
+   },
+   "dogruCevap": "C",
+   "aciklama": "2014'te yalnızca 40,2 megavat olan güneş kurulu gücü, Ocak 2026 sonunda 641 kat artışla 25 bin 827 megavata ulaşmış ve toplam elektrik kurulu gücünün yüzde 20,9'unu oluşturmuştur (Enerji ve Tabii Kaynaklar Bakanlığı verileri, Şubat 2026). Şıktaki 120 bin megavat bir gerçekleşme değil, güneş ve rüzgâr için 2035 hedefidir.",
+   "kaynak": "Enerji ve Tabii Kaynaklar Bakanlığı verileri, Anadolu Ajansı Enerji Terminali, Şubat 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+   "olayTarihi": "2026-01-31",
+   "uyarilar": [
+    "E sikkindaki 120 bin MW, 2035 icin gunes+ruzgar HEDEFI (mevcut kapasite degil); kok 'Ocak 2026 sonu itibariyla ulastigi duzey' dedigi icin ayrim net.",
+    "E şıkkı (120 bin MW) 2035 güneş+rüzgâr hedefidir; çeldirici olarak tutarlı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "Enerji ve Tabii Kaynaklar Bakanligi verileri - Anadolu Ajansi Enerji Terminali, \"Turkiye'nin gunes enerjisi kurulu gucu 25 bin megavati gecti\"",
+     "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+     "gerekce": "Bakanlik verilerine gore 2014'te 40,2 MW olan gunes kurulu gucu 2026 Ocak sonu itibariyla 25 bin 827 MW'a ulasti; toplam elektrik kurulu gucu icindeki pay %20,9.",
+     "uyari": "E sikkindaki 120 bin MW, 2035 icin gunes+ruzgar HEDEFI (mevcut kapasite degil); kok 'Ocak 2026 sonu itibariyla ulastigi duzey' dedigi icin ayrim net."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansı Enerji Terminali, 'Türkiye'nin güneş enerjisi kurulu gücü 25 bin megavatı geçti' (ETKB verileri)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/enerjiterminali/finans/turkiyenin-gunes-enerjisi-kurulu-gucu-25-bin-megavati-gecti-/55711",
+     "gerekce": "2014'te 40,2 MW olan güneş kurulu gücü, 2026 Ocak ayı sonu itibarıyla 25 bin 827 MW'a ulaştı; toplam kurulu güç içindeki payı yüzde 20,9.",
+     "uyari": "E şıkkı (120 bin MW) 2035 güneş+rüzgâr hedefidir; çeldirici olarak tutarlı."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-2",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "Türkiye'nin millî imkânlarla geliştirilen ilk atomik saati 7 Temmuz 2026'da SpaceX'in Transporter-17 göreviyle uzaya gönderilmiştir. Bu atomik saatin ana yüklenicisi olan kurum hangisidir?",
+   "siklar": {
+    "A": "TÜBİTAK Ulusal Metroloji Enstitüsü (UME)",
+    "B": "TÜBİTAK Uzay Teknolojileri Araştırma Enstitüsü",
+    "C": "TÜRKSAT A.Ş.",
+    "D": "ASELSAN",
+    "E": "TUSAŞ"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Rubidyum Atomik Frekans Standardı (RAFS) adlı saat, Türkiye Uzay Ajansı'nın yürütücülüğünde TÜBİTAK Ulusal Metroloji Enstitüsü ana yükleniciliğinde geliştirildi ve 7 Temmuz 2026'da Transporter-17 göreviyle yörüngeye çıktı (Türkiye Uzay Ajansı, 17 Temmuz 2026). Saat, yörüngede en az bir yıl çalışarak Bölgesel Konumlandırma ve Zamanlama Sistemi hedefine veri sağlayacaktır; şıklardaki diğer kurumlar projede ana yüklenici değildir.",
+   "kaynak": "Türkiye Uzay Ajansı, 17 Temmuz 2026",
+   "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+   "olayTarihi": "2026-07-07",
+   "uyarilar": [
+    "Proje TUA liderliğinde, TÜBİTAK UZAY ve İTÜNOVA iş birliğiyle yürütülüyor; kök 'ana yüklenici' dediği için tek doğru şık A kalıyor, ancak B (TÜBİTAK UZAY) paydaş olarak geçtiğinden dikkatli okunmazsa çeldirici güçlü."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "Turkiye Uzay Ajansi (TUA), \"Turkiye'nin ilk yerli atomik saati uzay yolculuguna basladi\"; TUBITAK haber sayfasi",
+     "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+     "gerekce": "TUA, Rubidyum Atomik Frekans Standardi (RAFS) projesinin ana yuklenicisinin TUBITAK Ulusal Metroloji Enstitusu (UME) oldugunu ve 7 Temmuz 2026'da SpaceX Transporter-17 ile firlatildigini bildiriyor.",
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Türkiye Uzay Ajansı (TUA), 'Türkiye'nin İlk Yerli Atomik Saati Uzay Yolculuğuna Başladı'; ayrıca TÜBİTAK duyurusu",
+     "kaynakUrl": "https://tua.gov.tr/tr/haberler/turkiye-nin-ilk-yerli-atomik-saati-uzay-yolculuguna-basladi",
+     "gerekce": "TUA metni birebir 'TÜBİTAK Ulusal Metroloji Enstitüsü ana yükleniciliğinde geliştirilen Rubidyum Atomik Frekans Standardı Projesi' diyor ve 'RAFS uydusu, 7 Temmuz 2026 tarihinde SpaceX Transporter-17 göreviyle başarıyla fırlatıldı' bilgisini veriyor.",
+     "uyari": "Proje TUA liderliğinde, TÜBİTAK UZAY ve İTÜNOVA iş birliğiyle yürütülüyor; kök 'ana yüklenici' dediği için tek doğru şık A kalıyor, ancak B (TÜBİTAK UZAY) paydaş olarak geçtiğinden dikkatli okunmazsa çeldirici güçlü."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-3",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "Dünyanın en büyük uzay etkinliği kabul edilen 77. Uluslararası Astronotik Kongresi (IAC 2026) 5-9 Ekim 2026 tarihlerinde Türkiye'de hangi ilde düzenlenmektedir?",
+   "siklar": {
+    "A": "İstanbul",
+    "B": "Ankara",
+    "C": "Antalya",
+    "D": "İzmir",
+    "E": "Gaziantep"
+   },
+   "dogruCevap": "C",
+   "aciklama": "77. Uluslararası Astronotik Kongresi, Sanayi ve Teknoloji Bakanlığı koordinasyonunda Türkiye Uzay Ajansı ev sahipliğinde 5-9 Ekim 2026'da Antalya'da yapılmaktadır (Türkiye Uzay Ajansı). Bir önceki kongre 2025'te Sidney'de düzenlenmişti; kongrenin İstanbul'da yapıldığı bilgisi yaygın bir karıştırmadır.",
+   "kaynak": "Türkiye Uzay Ajansı, IAC 2026 tanıtım duyurusu",
+   "kaynakUrl": "https://www.tua.gov.tr/tr/haberler/turkiye-iac-2026-antalya-tanitim-kampanyasini-baslatti",
+   "olayTarihi": "2026-10-05",
+   "uyarilar": [
+    "Zaman kipi sorunu: bugun 5 Eylul 2026 ve etkinlik 5-9 Ekim 2026'da, yani HENUZ GERCEKLESMEDI. Kok 'duzenlenmektedir' diyor; 'duzenlenecektir' olmali. Yer bilgisi dogru ve resmen ilan edilmis olsa da soru bankaya girerken kip duzeltilmeli.",
+    "Zaman kipi hatası: bugün 5 Eylül 2026, kongre henüz yapılmadı; kök 'düzenlenmektedir' diyor, 'düzenlenecektir' olmalı. Ayrıca 'dünyanın en büyük uzay etkinliği' nitelemesi TUA metninde 'dünyanın en prestijli uzay etkinliklerinden biri' şeklinde geçiyor — 'en büyük' iddiası kaynakta birebir yok."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "IAF / IAC 2026 resmi sitesi: 77. Uluslararasi Astronotik Kongresi, 5-9 Ekim 2026, Antalya (NEST Kongre Merkezi), ev sahibi TUA",
+     "kaynakUrl": "https://www.iac2026.org/iac-2026",
+     "gerekce": "Kongrenin resmi sitesi ve IAF etkinlik sayfasi yeri Antalya, tarihi 5-9 Ekim 2026 olarak veriyor; Turkiye'de ilk kez duzenleniyor.",
+     "uyari": "Zaman kipi sorunu: bugun 5 Eylul 2026 ve etkinlik 5-9 Ekim 2026'da, yani HENUZ GERCEKLESMEDI. Kok 'duzenlenmektedir' diyor; 'duzenlenecektir' olmali. Yer bilgisi dogru ve resmen ilan edilmis olsa da soru bankaya girerken kip duzeltilmeli."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "Türkiye Uzay Ajansı, 'IAC 2026 Antalya' sayfası",
+     "kaynakUrl": "https://tua.gov.tr/tr/uluslararasi-faaliyetler/iac-2026-antalya",
+     "gerekce": "TUA sayfası birebir 'Antalya, 5-9 Ekim 2026 tarihleri arasında gerçekleştirilecek ... 77. Uluslararası Uzay Kongresi'ne (IAC) ev sahipliği yapacak' diyor (Antalya Nest Kongre Merkezi).",
+     "uyari": "Zaman kipi hatası: bugün 5 Eylül 2026, kongre henüz yapılmadı; kök 'düzenlenmektedir' diyor, 'düzenlenecektir' olmalı. Ayrıca 'dünyanın en büyük uzay etkinliği' nitelemesi TUA metninde 'dünyanın en prestijli uzay etkinliklerinden biri' şeklinde geçiyor — 'en büyük' iddiası kaynakta birebir yok."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-5",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "Ocak 2026'da açıklanan verilere göre Türkiye'nin 2025 yılı savunma ve havacılık sanayii ihracatı ilk kez 10 milyar doları aşarak kaç dolar olarak gerçekleşmiştir?",
+   "siklar": {
+    "A": "7 milyar 100 milyon dolar",
+    "B": "8 milyar 700 milyon dolar",
+    "C": "10 milyar 54 milyon dolar",
+    "D": "12 milyar 300 milyon dolar",
+    "E": "17 milyar 800 milyon dolar"
+   },
+   "dogruCevap": "C",
+   "aciklama": "Ticaret Bakanı Ömer Bolat, 2025 savunma ve havacılık ihracatının 10 milyar 54 milyon dolar olduğunu açıklamıştır (Anadolu Ajansı, 30 Ocak 2026); bu, 2024'teki 7,1 milyar dolarlık düzeye göre yaklaşık yüzde 48'lik artışa karşılık gelir. Tuzak, aynı dönemde açıklanan 17,8 milyar dolarlık rakamdır: o ihracat değil, yıl içinde imzalanan yeni sözleşmelerin toplamıdır.",
+   "kaynak": "Anadolu Ajansı, 30 Ocak 2026 (Ticaret Bakanı Ömer Bolat açıklaması)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-savunma-sanayii-ihracatimiz-neredeyse-yuzde-100-artti-10-milyar-54-milyon-dolar/3815250",
+   "olayTarihi": "2026-01-30",
+   "uyarilar": [
+    "Celeldirici siklar gercek ama farkli buyuklukler: A (7,1 milyar) 2024 ihracati, E (17,8 milyar) 2025 yeni SOZLESME rekoru. Kok 'ihracat' dedigi icin tek dogru sik C; yine de E'yi karistiran adaylar icin kok net.",
+    "E şıkkındaki 17,8 milyar dolar aynı açıklamada geçen 'yeni sözleşme' rekoru; ihracatla karıştırılmasın diye konulmuş bilinçli çeldirici, kök 'ihracat' dediği için sorun yok."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansi, \"Savunma ve havacilik ihracatta 10 milyar dolar esigini asti\" (SSB Baskani Haluk Gorgun aciklamasi)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818",
+     "gerekce": "SSB verisine gore 2025 savunma-havacilik ihracati 9 milyar 870 milyon dolar mal + 184 milyon dolar hizmet = 10 milyar 54 milyon dolar; 2024'teki 7,1 milyar dolara gore ~%48 artis.",
+     "uyari": "Celeldirici siklar gercek ama farkli buyuklukler: A (7,1 milyar) 2024 ihracati, E (17,8 milyar) 2025 yeni SOZLESME rekoru. Kok 'ihracat' dedigi icin tek dogru sik C; yine de E'yi karistiran adaylar icin kok net."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansı, 'Savunma ve havacılık ihracatta 10 milyar dolar eşiğini aştı' (Ocak 2026); SSB Başkanı Haluk Görgün açıklaması",
+     "kaynakUrl": "https://www.aa.com.tr/tr/ekonomi/savunma-ve-havacilik-ihracatta-10-milyar-dolar-esigini-asti/3788818",
+     "gerekce": "2025 savunma ve havacılık ihracatı 10 milyar 54 milyon dolar (9,87 milyar mal + 184 milyon hizmet), yüzde 48 artışla tarihî rekor.",
+     "uyari": "E şıkkındaki 17,8 milyar dolar aynı açıklamada geçen 'yeni sözleşme' rekoru; ihracatla karıştırılmasın diye konulmuş bilinçli çeldirici, kök 'ihracat' dediği için sorun yok."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-7",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "Türkiye'de 5G mobil haberleşme hizmeti operatörler tarafından ticari olarak hangi tarihte sunulmaya başlanmıştır?",
+   "siklar": {
+    "A": "16 Ekim 2025",
+    "B": "1 Ocak 2026",
+    "C": "1 Nisan 2026",
+    "D": "1 Temmuz 2026",
+    "E": "31 Aralık 2026"
+   },
+   "dogruCevap": "C",
+   "aciklama": "5G yetkilendirme ihalesi 16 Ekim 2025'te Bilgi Teknolojileri ve İletişim Kurumu'nda yapılmış, ticari hizmet ise 1 Nisan 2026'da başlamıştır; yetkilendirme 31 Aralık 2042'ye kadar geçerlidir (Ulaştırma ve Altyapı Bakanlığı). Sık yapılan hata ihale tarihi olan 16 Ekim 2025'i hizmetin başlangıcı sanmaktır.",
+   "kaynak": "Ulaştırma ve Altyapı Bakanlığı, 5G yetkilendirme duyurusu",
+   "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-geri-sayim-basladi",
+   "olayTarihi": "2026-04-01",
+   "uyarilar": [
+    "A sikki (16 Ekim 2025) 5G IHALE tarihi; kok 'ticari olarak sunulmaya baslandigi tarih' dedigi icin ayrim net, ikinci dogru sik yok.",
+    "A şıkkı (16 Ekim 2025) ihale tarihi; kök 'ticari olarak sunulmaya başlanma' dediği için ayrım net."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "T.C. Ulastirma ve Altyapi Bakanligi (uab.gov.tr) 5G duyurulari; Bakan Uraloglu: \"1 Nisan 2026'da baslayan 5G'de 45 milyon aboneye ulastik\"",
+     "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-tarihi-adim/",
+     "gerekce": "Bakanlik, 16 Ekim 2025'te yapilan 5G ihalesinin ardindan operatorlerin 1 Nisan 2026 itibariyla ticari 5G hizmeti sunmaya basladigini bildiriyor.",
+     "uyari": "A sikki (16 Ekim 2025) 5G IHALE tarihi; kok 'ticari olarak sunulmaya baslandigi tarih' dedigi icin ayrim net, ikinci dogru sik yok."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "UAB '5G'de Geri Sayım Başladı' ve BTK 5G ihalesi duyurusu; TRT Haber (1 Nisan 2026 başlangıcı)",
+     "kaynakUrl": "https://www.uab.gov.tr/haberler/5g-de-geri-sayim-basladi",
+     "gerekce": "16 Ekim 2025'teki 5G ihalesinin ardından operatörlerin ticari 5G hizmetine başlama tarihi 1 Nisan 2026 olarak belirlendi ve bu tarihte hizmet sunulmaya başlandı.",
+     "uyari": "A şıkkı (16 Ekim 2025) ihale tarihi; kök 'ticari olarak sunulmaya başlanma' dediği için ayrım net."
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-8",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "19 Haziran 2026'da Halkalı-Arnavutköy kesiminin açılışıyla tamamlanan ve 69 kilometrelik uzunluğuyla \"Türkiye'nin en uzun ve en hızlı metro hattı\" olarak tanıtılan hat hangisidir?",
+   "siklar": {
+    "A": "Gayrettepe-İstanbul Havalimanı-Halkalı Metro Hattı",
+    "B": "Bakırköy Sahil-Bağcılar Kirazlı Metro Hattı",
+    "C": "Başakşehir-Kayaşehir Metro Hattı",
+    "D": "Ankara Esenboğa Metro Hattı",
+    "E": "İzmir Buca Metro Hattı"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Cumhurbaşkanı Recep Tayyip Erdoğan 19 Haziran 2026'da 22 kilometrelik Halkalı-Arnavutköy kesimini hizmete açarak 16 istasyonlu, 69 kilometrelik Gayrettepe-İstanbul Havalimanı-Halkalı hattını tamamladı; saatte 120 kilometre hızla Halkalı'dan İstanbul Havalimanı'na 30 dakikada ulaşılmaktadır (Anadolu Ajansı, 19 Haziran 2026). Bakırköy Sahil-Kirazlı hattı daha önce açılmış ayrı bir hattır.",
+   "kaynak": "Anadolu Ajansı, 19 Haziran 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-turkiyeyi-en-uzun-ve-en-hizli-metro-hattiyla-bulusturuyoruz/3971948",
+   "olayTarihi": "2026-06-19",
+   "uyarilar": [
+    "Kucuk adlandirma riski: bakanlik metinlerinde hat cogunlukla 'Halkali-Istanbul Havalimani Metro Hatti' diye aniliyor; A sikkindaki 'Gayrettepe-Istanbul Havalimani-Halkali' ise ayni M11 hattinin tam guzergah adi. Diger sikliar baska hatlar oldugundan tek dogru sik yine A."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "T.C. Ulastirma ve Altyapi Bakanligi, \"Halkali-Arnavutkoy hatti 31 Temmuz'a kadar ucretsiz\"",
+     "kaynakUrl": "https://www.uab.gov.tr/haberler/halkali-arnavutkoey-hatti-31-temmuz-a-kadar-uecretsiz/",
+     "gerekce": "Bakanlik duyurusu, 19 Haziran 2026'da acilan 22 km'lik Halkali-Arnavutkoy kesimiyle tamamlanan hattin Halkali-Istanbul Havalimani (M11, Gayrettepe baglantili) hatti oldugunu ve toplam 69 km ile 'Turkiye'nin en uzun ve en hizli metro hatti' oldugunu (120 km/sa) belirtiyor.",
+     "uyari": "Kucuk adlandirma riski: bakanlik metinlerinde hat cogunlukla 'Halkali-Istanbul Havalimani Metro Hatti' diye aniliyor; A sikkindaki 'Gayrettepe-Istanbul Havalimani-Halkali' ise ayni M11 hattinin tam guzergah adi. Diger sikliar baska hatlar oldugundan tek dogru sik yine A."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Ulaştırma ve Altyapı Bakanlığı, 'Türkiye'nin En Uzun Metro Ringinin Son Halkası Tamamlandı'",
+     "kaynakUrl": "https://www.uab.gov.tr/haberler/tuerkiye-nin-en-uzun-metro-ringinin-son-halkasi-tamamlandi/",
+     "gerekce": "UAB duyurusu Halkalı-İstanbul Havalimanı-Gayrettepe Metro Projesi'nin 19 Haziran 2026'da tamamlandığını, 69 kilometreyle 'metro sınıfında Türkiye'nin en uzun ve en hızlı' hat olduğunu belirtiyor; son etap 22 km'lik Halkalı-Arnavutköy kesimi.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "ekonomi-teknoloji-savunma-9",
+   "alan": "ekonomi-teknoloji-savunma",
+   "karar": "UYARI",
+   "kok": "TÜİK'in 9 Şubat 2026'da yayımladığı Adrese Dayalı Nüfus Kayıt Sistemi sonuçlarına göre Türkiye'nin 31 Aralık 2025 itibarıyla nüfusu kaçtır?",
+   "siklar": {
+    "A": "84 milyon 680 bin 273",
+    "B": "85 milyon 372 bin 377",
+    "C": "85 milyon 664 bin 944",
+    "D": "86 milyon 92 bin 168",
+    "E": "87 milyon 415 bin 902"
+   },
+   "dogruCevap": "D",
+   "aciklama": "TÜİK verilerine göre Türkiye nüfusu 2025 sonunda bir önceki yıla göre 427 bin 224 kişi artarak 86 milyon 92 bin 168 olmuştur (TÜİK, ADNKS Sonuçları 2025). Şıklardaki 85 milyon 664 bin 944 rakamı 2024 yıl sonu nüfusudur; iki yılın karıştırılması tipik hatadır.",
+   "kaynak": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları 2025 (9 Şubat 2026)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+   "olayTarihi": "2026-02-09",
+   "uyarilar": [
+    "TUIK bulten sayfasi (veriportali.tuik.gov.tr) dogrudan cekilemedi; rakam AA aktarimi ve ikinci kaynaklarla dogrulandi. Rakamin kendisi birebir tutuyor.",
+    "C şıkkı (85.664.944) 2024 yılı nüfusudur — bilinçli ama güçlü çeldirici."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "kaynak": "TUIK ADNKS 2025 sonuclari (9 Subat 2026) - Anadolu Ajansi aktarimi",
+     "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+     "gerekce": "TUIK'e gore 31 Aralik 2025 itibariyla Turkiye nufusu 86 milyon 92 bin 168 kisi; bir onceki yila gore 427 bin 224 kisi artti, yillik artis hizi binde 5.",
+     "uyari": "TUIK bulten sayfasi (veriportali.tuik.gov.tr) dogrudan cekilemedi; rakam AA aktarimi ve ikinci kaynaklarla dogrulandi. Rakamin kendisi birebir tutuyor."
+    },
+    {
+     "cevap": "D",
+     "kaynak": "TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları 2025 (9 Şubat 2026); TÜİK resmî hesap duyurusu ve AA",
+     "kaynakUrl": "https://www.aa.com.tr/tr/gundem/turkiyenin-nufusu-86-milyon-92-bin-168-oldu/3824394",
+     "gerekce": "31 Aralık 2025 itibarıyla nüfus, bir önceki yıla göre 427.224 kişi artarak 86 milyon 92 bin 168 oldu; TÜİK'in kamuoyu duyurusu bültenin 9 Şubat 2026 saat 10.00'da yayımlanacağını teyit ediyor.",
+     "uyari": "C şıkkı (85.664.944) 2024 yılı nüfusudur — bilinçli ama güçlü çeldirici."
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-bilim-10",
+   "alan": "kultur-sanat-bilim",
+   "karar": "UYARI",
+   "kok": "2026 yılı Avrupa Kültür Başkenti unvanını hangi iki şehir taşımaktadır?",
+   "siklar": {
+    "A": "Oulu (Finlandiya) ve Trencin (Slovakya)",
+    "B": "Chemnitz (Almanya) ve Nova Gorica (Slovenya)",
+    "C": "Tartu (Estonya) ve Bad Ischl (Avusturya)",
+    "D": "Kaunas (Litvanya) ve Novi Sad (Sırbistan)",
+    "E": "Timisoara (Romanya) ve Elefsina (Yunanistan)"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Avrupa Komisyonu'nun belirlediği takvime göre 2026 Avrupa Kültür Başkentleri Finlandiya'dan Oulu ve Slovakya'dan Trencin'dir; Oulu programını 'Kültürel İklim Değişikliği' temasıyla yürütmektedir. Chemnitz ve Nova Gorica 2025'in, Tartu ve Bad Ischl 2024'ün, Timisoara ve Elefsina 2023'ün başkentleridir — tuzak yıl kaydırmasıdır.",
+   "kaynak": "Avrupa Komisyonu (Kültür ve Yaratıcılık), 2026",
+   "kaynakUrl": "https://culture.ec.europa.eu/policies/culture-in-cities-and-regions/designated-capitals-of-culture/2026-finland-and-slovakia",
+   "olayTarihi": "2026-01-01",
+   "uyarilar": [
+    "Şıkta Slovak şehri 'Trencin' biçiminde, diaktriksiz yazılmış (doğrusu Trenčín) — içerik hatası değil, yazım notu."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "Avrupa Komisyonu, Kültür ve Yaratıcılık — '2026: Finlandiya ve Slovakya — Oulu ve Trenčín'",
+     "kaynakUrl": "https://culture.ec.europa.eu/policies/culture-in-cities-and-regions/designated-capitals-of-culture/2026-finland-and-slovakia",
+     "gerekce": "AB resmî sayfası 2026 Avrupa Kültür Başkentlerini Oulu (Finlandiya) ve Trenčín (Slovakya) olarak veriyor.",
+     "uyari": "Şıkta Slovak şehri 'Trencin' biçiminde, diaktriksiz yazılmış (doğrusu Trenčín) — içerik hatası değil, yazım notu."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Avrupa Komisyonu, Culture and Creativity — 2026 Avrupa Kultur Baskentleri: Oulu (Finlandiya) ve Trencin (Slovakya)",
+     "kaynakUrl": "https://culture.ec.europa.eu/policies/culture-in-cities-and-regions/designated-capitals-of-culture/2026-finland-and-slovakia",
+     "gerekce": "AB resmi sayfasi 1 Ocak 2026'dan itibaren Oulu ve Trencin'in Avrupa Kultur Baskenti oldugunu belirtiyor; Chemnitz-Nova Gorica 2025, Tartu-Bad Ischl 2024 idi.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-bilim-13",
+   "alan": "kultur-sanat-bilim",
+   "karar": "UYARI",
+   "kok": "Şubat 2026'da düzenlenen 76. Berlin Film Festivali'nde Altın Ayı ödülünü kazanan yönetmen ve filmi hangisidir?",
+   "siklar": {
+    "A": "İlker Çatak — Sarı Zarflar",
+    "B": "Emin Alper — Kurtuluş",
+    "C": "Nuri Bilge Ceylan — Kuru Otlar Üstüne",
+    "D": "Grant Gee — Everybody Digs Bill Evans",
+    "E": "Lance Hammer — Queen at Sea"
+   },
+   "dogruCevap": "A",
+   "aciklama": "76. Berlin Film Festivali'nin 21 Şubat 2026'daki kapanışında Altın Ayı, Türk asıllı yönetmen İlker Çatak'ın 'Sarı Zarflar' (Yellow Letters) filmine verildi; Çatak daha önce 'Öğretmenler Odası' ile Oscar adaylığı kazanmıştı. Aynı gece Emin Alper'in 'Kurtuluş' filmi Gümüş Ayı Büyük Jüri Ödülü'nü aldı — iki Türk yönetmenin ödülü karıştırılmamalıdır.",
+   "kaynak": "76. Berlinale ödül töreni, 21 Şubat 2026",
+   "kaynakUrl": "https://www.screendaily.com/news/yellow-letters-wins-berlinales-golden-bear-as-politics-dominate-closing-ceremony/5214151.article",
+   "olayTarihi": "2026-02-21",
+   "uyarilar": [
+    "berlinale.de sunucusu bu turda otomatik erişime 503 döndü; olgu iki bağımsız sinema basını (Variety, Hollywood Reporter) kaydıyla doğrulandı. C şıkkındaki 'Kuru Otlar Üstüne' 2023 Cannes filmidir, çeldirici olarak tutarlı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "76. Berlinale (Şubat 2026) ödül töreni — Altın Ayı: 'Sarı Zarflar / Gelbe Briefe / Yellow Letters', yön. İlker Çatak",
+     "kaynakUrl": "https://www.berlinale.de/en/2026/programme/202615786.html",
+     "gerekce": "Festivalin en büyük ödülü Altın Ayı, İlker Çatak'ın Sarı Zarflar filmine verildi (Variety ve Hollywood Reporter ödül töreni aktarımlarıyla da teyitli).",
+     "uyari": "berlinale.de sunucusu bu turda otomatik erişime 503 döndü; olgu iki bağımsız sinema basını (Variety, Hollywood Reporter) kaydıyla doğrulandı. C şıkkındaki 'Kuru Otlar Üstüne' 2023 Cannes filmidir, çeldirici olarak tutarlı."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Berlinale — 76. Berlin Film Festivali (2026) odulleri: Altin Ayi 'Gelbe Briefe / Yellow Letters', yon. Ilker Catak",
+     "kaynakUrl": "https://www.berlinale.de/en/2026/programme/202615786.html",
+     "gerekce": "Festival 21 Subat 2026'da sona erdi; Altin Ayi'yi Ilker Catak'in Almanya-Fransa-Turkiye ortak yapimi 'Gelbe Briefe' (Sari Zarflar) kazandi.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-bilim-14",
+   "alan": "kultur-sanat-bilim",
+   "karar": "UYARI",
+   "kok": "76. Berlin Film Festivali'nde (2026) Emin Alper'in 'Kurtuluş' filmi hangi ödülü kazanmıştır?",
+   "siklar": {
+    "A": "Gümüş Ayı Büyük Jüri Ödülü",
+    "B": "Altın Ayı En İyi Film",
+    "C": "Gümüş Ayı En İyi Yönetmen",
+    "D": "Gümüş Ayı En İyi Başrol Performansı",
+    "E": "Altın Ayı En İyi Kısa Film"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Batman ve Mardin'de çekilen, kan davası ve aşiret gerilimini anlatan 'Kurtuluş', 21 Şubat 2026'da Berlinale ana yarışmasında Gümüş Ayı Büyük Jüri Ödülü'nü kazandı. Aynı festivalde En İyi Yönetmen Gümüş Ayı'sı Grant Gee'ye, En İyi Başrol Performansı ödülü Sandra Hüller'e gitti; Altın Ayı ise İlker Çatak'ın oldu.",
+   "kaynak": "76. Berlinale ödül töreni, 21 Şubat 2026",
+   "kaynakUrl": "https://www.screendaily.com/news/yellow-letters-wins-berlinales-golden-bear-as-politics-dominate-closing-ceremony/5214151.article",
+   "olayTarihi": "2026-02-21",
+   "uyarilar": [
+    "Kaynak erişimi 13 ile aynı: berlinale.de 503 verdi, doğrulama bağımsız basın aktarımlarına dayanıyor.",
+    "13 ve 14 numarali sorular ayni olayi (76. Berlinale) sorguluyor; birlikte sorulursa biri digerinin cevabini daraltiyor — ayri denemelere dagitilmasi iyi olur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "76. Berlinale 2026 ödülleri — Emin Alper'in 'Kurtuluş' (Salvation) filmi Gümüş Ayı Jüri Büyük Ödülü",
+     "kaynakUrl": "https://www.berlinale.de/en/2026/programme/202616780.html",
+     "gerekce": "Kurtuluş ana yarışmada dünya prömiyerini yaptı ve Gümüş Ayı Jüri Büyük Ödülü'nü kazandı; Altın Ayı aynı yıl Çatak'a gitti.",
+     "uyari": "Kaynak erişimi 13 ile aynı: berlinale.de 503 verdi, doğrulama bağımsız basın aktarımlarına dayanıyor."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "Berlinale — 'Kurtulus / Salvation' (Emin Alper), Gumus Ayi Buyuk Juri Odulu",
+     "kaynakUrl": "https://www.berlinale.de/en/2026/programme/202616780.html",
+     "gerekce": "Emin Alper 76. Berlinale'de 'Kurtulus' ile Gumus Ayi Buyuk Juri Odulu'nu aldi; Altin Ayi ayni yil Catak'a gitti.",
+     "uyari": "13 ve 14 numarali sorular ayni olayi (76. Berlinale) sorguluyor; birlikte sorulursa biri digerinin cevabini daraltiyor — ayri denemelere dagitilmasi iyi olur."
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-bilim-16",
+   "alan": "kultur-sanat-bilim",
+   "karar": "UYARI",
+   "kok": "21 Ocak 2026'da 97 yaşında vefat eden, Türk tiyatrosuna müzikal türünü kazandırmasıyla anılan oyuncu, yönetmen ve yazar kimdir?",
+   "siklar": {
+    "A": "Haldun Dormen",
+    "B": "Genco Erkal",
+    "C": "Ferhan Şensoy",
+    "D": "Müşfik Kenter",
+    "E": "Gazanfer Özcan"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Tiyatro oyuncusu, yönetmen, oyun yazarı ve çevirmen Haldun Dormen 21 Ocak 2026'da 97 yaşında hayatını kaybetti (Anadolu Ajansı). Aynı yıl kaybedilen sanatçılar arasında 26 Haziran 2026'da 77 yaşında vefat eden Yeşilçam oyuncusu Kadir İnanır da bulunuyor. Ferhan Şensoy 2021'de, Müşfik Kenter 2012'de vefat etmişti.",
+   "kaynak": "Anadolu Ajansı, 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/kultur/hayata-veda-eden-unlu-isimler-kultur-sanat-dunyasinda-eserleriyle-iz-birakti/4020091",
+   "olayTarihi": "2026-01-21",
+   "uyarilar": [
+    "Ferhan Şensoy (2021) ve Müşfik Kenter (2012) zaten vefat etmiş; Genco Erkal yaşıyor. Çeldiricilerde vefat etmiş isimlerin bulunması kusur sayılmaz ama soru tipi gereği not edildi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "TRT Haber ve Anadolu Ajansı — Haldun Dormen 21 Ocak 2026'da 97 yaşında vefat etti; 1961 'Sokak Kızı İrma' Türkiye'de batılı anlamda ilk müzikal",
+     "kaynakUrl": "https://www.trthaber.com/haber/kultur-sanat/haldun-dormen-vefat-etti-932219.html",
+     "gerekce": "Tarih (21 Ocak 2026), yaş (97) ve müzikal türünü Türk tiyatrosuna kazandırma niteliği kaynakta birebir yer alıyor.",
+     "uyari": "Ferhan Şensoy (2021) ve Müşfik Kenter (2012) zaten vefat etmiş; Genco Erkal yaşıyor. Çeldiricilerde vefat etmiş isimlerin bulunması kusur sayılmaz ama soru tipi gereği not edildi."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "TRT Haber ve Anadolu Ajansi — Haldun Dormen 21 Ocak 2026'da 97 yasinda vefat etti",
+     "kaynakUrl": "https://www.trthaber.com/haber/kultur-sanat/haldun-dormen-vefat-etti-932219.html",
+     "gerekce": "1955'te Dormen Tiyatrosu'nu kuran, 1961'de Turkiye'nin ilk Bati tarzi muzikali 'Sokak Kizi Irma'yi sahneleyen Haldun Dormen 21 Ocak 2026'da 97 yasinda vefat etti (AA: aa.com.tr/tr/kultur/.../3807009).",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-bilim-8",
+   "alan": "kultur-sanat-bilim",
+   "karar": "UYARI",
+   "kok": "2026'da Busan'da toplanan UNESCO Dünya Mirası Komitesi oturumu sonunda Dünya Mirası Listesi'ne kaç yeni alan eklenmiş ve Türkiye'den listeye alan girmiş midir?",
+   "siklar": {
+    "A": "25 yeni alan eklendi; Türkiye'den yeni alan girmedi",
+    "B": "25 yeni alan eklendi; Türkiye'den bir alan girdi",
+    "C": "12 yeni alan eklendi; Türkiye'den iki alan girdi",
+    "D": "44 yeni alan eklendi; Türkiye'den yeni alan girmedi",
+    "E": "18 yeni alan eklendi; Türkiye'den bir alan girdi"
+   },
+   "dogruCevap": "A",
+   "aciklama": "48. oturumda listeye 19'u kültürel, 5'i doğal ve 1'i karma olmak üzere 25 yeni alan eklendi ve Türkiye'den bu yıl listeye giren yeni bir alan olmadı (UNESCO, 28 Temmuz 2026). Türkiye'nin Dünya Mirası Listesi'ndeki toplam alan sayısı 22'de kaldı; oturum sonrası listedeki toplam alan sayısı 173 ülkede 1.273'tür.",
+   "kaynak": "UNESCO Dünya Mirası Merkezi, 28 Temmuz 2026",
+   "kaynakUrl": "https://www.unesco.org/en/articles/unesco-world-heritage-25-new-sites-inscribed",
+   "olayTarihi": "2026-07-28",
+   "uyarilar": [
+    "UNESCO basın duyurusu 25 alanın tamamını isim isim vermiyor; 'Türkiye'den alan girmedi' olgusu duyurunun anılan alan listesi ve Türkiye adaylığına dair haber bulunmamasına dayanıyor — 48COM karar belgesiyle bir kez daha teyit edilmesi iyi olur.",
+    "UNESCO duyurusu 25 alanin dagilimini 19 kulturel + 5 dogal + 1 karma verirken bazi ikincil kaynaklar 17+7+1 diyor; toplam 25 degismiyor, soru toplam uzerinden sorulduu icin cevap etkilenmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "UNESCO duyurusu — 25 yeni alan; liste 173 ülkede 1.273 alana ulaştı",
+     "kaynakUrl": "https://www.unesco.org/en/articles/unesco-world-heritage-25-new-sites-inscribed",
+     "gerekce": "Duyuruda 25 yeni alan sayılıyor ve anılan alanlar arasında Türkiye'den bir alan yok.",
+     "uyari": "UNESCO basın duyurusu 25 alanın tamamını isim isim vermiyor; 'Türkiye'den alan girmedi' olgusu duyurunun anılan alan listesi ve Türkiye adaylığına dair haber bulunmamasına dayanıyor — 48COM karar belgesiyle bir kez daha teyit edilmesi iyi olur."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "UNESCO — '25 new sites inscribed' (48COM, Busan 2026); Turkiye'den alan girmedi",
+     "kaynakUrl": "https://www.unesco.org/en/articles/unesco-world-heritage-25-new-sites-inscribed",
+     "gerekce": "UNESCO 25 yeni alanin listeye alindigini duyurdu (liste 1.273 alan / 173 ulke); 2026 oturumunda Turkiye'den yeni alan yok — Turkiye'nin son girisi 2025'te Sardes ve Bintepeler idi.",
+     "uyari": "UNESCO duyurusu 25 alanin dagilimini 19 kulturel + 5 dogal + 1 karma verirken bazi ikincil kaynaklar 17+7+1 diyor; toplam 25 degismiyor, soru toplam uzerinden sorulduu icin cevap etkilenmiyor."
+    }
+   ]
+  }
+ ]
+}
