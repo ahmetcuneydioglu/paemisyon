@@ -6,7 +6,19 @@ import { useEffect, useState } from "react";
  * Bir sonraki denemeye geri sayım — eski ana sayfa #clock (gün/saat/dk/sn).
  * Süre dolunca sayfayı tazeler (liste durumları sunucudan yeniden hesaplanır).
  */
-export function Countdown({ target }: { target: string }) {
+/**
+ * `blocks` (varsayılan): eski ana sayfanın 4 kutulu büyük sayacı.
+ * `inline`: tek satır, dar alanlar için ("4 sa 59 dk"). Duyuru şeridi bunu
+ * kullanır — kutulu sürüm 330px genişlik istiyor ve mobilde şeridin çağrı
+ * düğmesini ekran dışına itiyordu.
+ */
+export function Countdown({
+  target,
+  variant = "blocks",
+}: {
+  target: string;
+  variant?: "blocks" | "inline";
+}) {
   const router = useRouter();
   const [left, setLeft] = useState<number | null>(null);
 
@@ -36,6 +48,20 @@ export function Countdown({ target }: { target: string }) {
     { v: Math.floor((s % 3600) / 60), l: "Dakika" },
     { v: s % 60, l: "Saniye" },
   ];
+
+  if (variant === "inline") {
+    // Sıfır olan baştaki birimler gizlenir: "0 gün 4 sa" yerine "4 sa".
+    const gosterilecek = units.filter((u, i) => u.v > 0 || units.slice(0, i).some((x) => x.v > 0));
+    const kisa: Record<string, string> = { Gün: "gün", Saat: "sa", Dakika: "dk", Saniye: "sn" };
+    return (
+      <span className="tabular" role="timer" aria-live="off">
+        {(gosterilecek.length ? gosterilecek : units.slice(-1))
+          .slice(0, 3)
+          .map((u) => `${u.v} ${kisa[u.l]}`)
+          .join(" ")}
+      </span>
+    );
+  }
 
   return (
     <div className="flex justify-center gap-3" role="timer" aria-live="off">

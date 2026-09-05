@@ -13,6 +13,7 @@ import { AppStoreBadge } from "@/components/app-store-badge";
 import { StreakBadge } from "@/components/ui/streak-badge";
 import { ButtonLink } from "@/components/ui/button";
 import { FocusPicker } from "@/components/bugun/focus-picker";
+import { ExamBanner, bannerExam } from "@/components/exam-banner";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -47,11 +48,16 @@ export default async function BugunPage() {
     .filter((e) => e.state === "upcoming")
     .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
   const liveExam = exams.find((e) => e.state === "active");
+  // Canlı ya da 24 saat içinde başlayacak deneme sayfanın EN ÜSTÜNE şerit olur:
+  // web'de push yok, o gün uygulamayı açan herkesin gördüğü tek duyuru kanalı bu.
+  const serit = bannerExam(exams);
   const week = activity.slice(-7);
   const dayShort = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-6">
+      {serit && <ExamBanner exam={serit} />}
+
       {/* Üst şerit: selamlama + seri */}
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <h1 className="font-heading text-xl font-bold text-ink">
@@ -212,8 +218,9 @@ export default async function BugunPage() {
             </Card>
           )}
 
-          {/* Sıradaki canlı deneme (wireframe 02 sağ kolon) */}
-          {(liveExam || nextExam) && (
+          {/* Sıradaki canlı deneme (wireframe 02 sağ kolon). Şerit aynı
+              denemeyi zaten duyuruyorsa tekrar edilmez. */}
+          {(liveExam || nextExam) && serit?.id !== (liveExam ?? nextExam)?.id && (
             <Card className={liveExam ? "border-live/50" : undefined}>
               <CardTitle className="text-[13px]">
                 {liveExam ? "● Canlı deneme sürüyor" : "🏆 Sıradaki canlı deneme"}
