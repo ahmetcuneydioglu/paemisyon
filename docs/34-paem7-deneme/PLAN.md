@@ -114,3 +114,56 @@ deneme-rapor                 → RAPOR.md
 deneme-bankaya-yaz           ONAY + açıklamalı → banka (in_review)
 deneme-kurtarma-parti        kalanlar → kurtarma turu
 ```
+
+---
+
+## 8. Kurtarma turu (5 Eylül 2026)
+
+Bankaya giremeyen 44 soru A-F sınıflandırmasından geçti (`KURTARMA-TALIMATI.md`).
+
+| Grup | Soru | Sonuç |
+|---|---:|---|
+| A — kusur yok | 10 | uyarı koşulluydu ya da kapsam notuydu |
+| B — anahtar düzeltmesi | 1 | s39: C → A (TCK md 43/2) |
+| C — mekanik metin | 25 | dizgi/OCR/yazım |
+| D — mevzuat güncellemesi | 1 | s32 |
+| **E — editoryal karar** | 7 | s11 s16 s36 s51 s79 s82 s90 — ALINMADI |
+| F | 0 | |
+
+**37 soru kurtarıldı** (%84). Doc 34 toplamı: **81/100 bankada.**
+
+### İki bulgu
+
+**s32 — turun tek gerçek eskimesi.** TCK md 18 **mülga** (23/4/2016-6706/36);
+iade koşulları 6706 md 10-11'e taşınmış. E şıkkı "andlaşma ya da mütekabiliyet"
+olarak güncellenince ikinci savunulabilir şık kapandı, anahtar korundu.
+Denetim turunda çıkmamıştı — kurtarma maddeye daha derin bakınca buldu.
+
+**s48 — eskime sanılan şey eskime değilmiş.** Bir denetçi 2911 md 22'deki AYM
+iptallerini eskime saymıştı. Kurtarma ajanı künyeledi: AYM 2017/142 ve 2020/46,
+ikisi de sınavdan ÖNCE. Anahtar bugün de geçerli; yalnız OCR düzeltmesi gerekti.
+
+### E grubunun kusur tipleri
+
+Çoğunda ikinci savunulabilir şık var (s11, s16, s36, s82). s51'de kanunda
+karşılığı olmayan bir ayrım soruluyor ("emniyet teşkilatı bölümleri" — 3201
+md 3 zabıta için umumi/hususi, md 4 polis için üniformalı/sivil der). s79'da
+kitabın kendi dizgi hatası (E şıkkı sayfada `I-II-II` basılmış) cevabı
+belirsizleştiriyor. s90'da hiçbir şık doğru değil (ABAD merkezi Lüksemburg).
+
+Her biri için somut öneri `kurtarma/parca-*-oneri.json` içinde hazır.
+
+## 9. Mevzuat Merkezi
+
+Bu ve Doc 33 turunda eklenen **altı mevzuat da yayında**:
+
+| Mevzuat | Madde | Parti |
+|---|---:|---|
+| 3686 İnsan Haklarını İnceleme Komisyonu | 10 | Doc 33 |
+| 6328 Kamu Denetçiliği Kurumu | 38 | Doc 33 |
+| 6701 Türkiye İnsan Hakları ve Eşitlik Kurumu | 31 | Doc 33 |
+| 2860 Yardım Toplama | 33 | Doc 34 |
+| 5188 Özel Güvenlik Hizmetleri | 32 | Doc 34 |
+| 7190 Özel Güvenlik Yönetmeliği | 57 | Doc 34 |
+
+`scripts/mevzuat-yayinla.ts <no...>` ile yayınlandı (kanun + maddeleri birlikte).

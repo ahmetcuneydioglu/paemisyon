@@ -36,9 +36,19 @@ function hedefBul(kunye: string) {
 
 let toplam = 0, dogru = 0;
 const sorunlu: string[] = [], atlanan: string[] = [];
-if (!existsSync(`${KOK}/aciklama`)) { console.log('aciklama/ yok'); process.exit(0); }
-for (const f of readdirSync(`${KOK}/aciklama`).filter((x) => x.endsWith('.json'))) {
-  for (const a of JSON.parse(readFileSync(`${KOK}/aciklama/${f}`, 'utf8'))) {
+/** Açıklama turu + kurtarma turu önerileri — ikisi de bankaya künye yazıyor. */
+const kaynaklar: { id: string; dayanak: string | null }[] = [];
+if (existsSync(`${KOK}/aciklama`))
+  for (const f of readdirSync(`${KOK}/aciklama`).filter((x) => x.endsWith('.json')))
+    for (const a of JSON.parse(readFileSync(`${KOK}/aciklama/${f}`, 'utf8')))
+      kaynaklar.push({ id: a.id, dayanak: a.dayanak });
+if (existsSync(`${KOK}/kurtarma`))
+  for (const f of readdirSync(`${KOK}/kurtarma`).filter((x) => /-oneri\.json$/.test(x)))
+    for (const o of JSON.parse(readFileSync(`${KOK}/kurtarma/${f}`, 'utf8')))
+      if (o.duzeltme?.dayanak) kaynaklar.push({ id: `${o.id}(kurtarma)`, dayanak: o.duzeltme.dayanak });
+
+{
+  for (const a of kaynaklar) {
     if (!a.dayanak) continue;
     toplam++;
     const h = hedefBul(a.dayanak);

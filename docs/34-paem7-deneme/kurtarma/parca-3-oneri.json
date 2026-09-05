@@ -1,0 +1,257 @@
+[
+ {
+  "id": "s58",
+  "grup": "C",
+  "gerekce": "Kusur yalnızca dizgi/OCR düzeyinde (kökte bitişik yazılmış 'korumave', D şıkkında küçük harfle başlayan 'il'); yetkili makam 5188 md 3'te açıkça komisyondur, anahtar sağlam.",
+  "duzeltme": {
+   "kok": "5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun hükümlerine göre koruma ve güvenlik hizmetini yerine getirecek personelin, bulundurulabilecek veya taşınabilecek silah ve teçhizatın azami miktarını ve niteliğini, gerekli hallerde diğer fiziki ve aletli güvenlik tedbirlerini belirlemeye yetkili olan makam aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "İçişleri Bakanı",
+    "B": "Vali",
+    "C": "Özel Güvenlik Komisyonu",
+    "D": "İl Emniyet Müdürü",
+    "E": "Özel Güvenlik Denetleme Başbakanlığı"
+   },
+   "dogru": "C",
+   "aciklama": "5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun'un 3. maddesi, koruma ve güvenlik hizmetini yerine getirecek personelin bulundurabileceği veya taşıyabileceği silah ve teçhizatın azami miktarı ile niteliğini, gerektiğinde diğer fiziki ve aletli güvenlik tedbirlerini belirleme yetkisini özel güvenlik komisyonuna verir. Aynı maddede valiliğe tanınan yetki, özel güvenlik uygulamasına izin vermektir; silah ve teçhizat sınırını valilik tek başına belirlemez. Tuzak, izin veren makam ile teçhizatın miktar ve niteliğini belirleyen makamın aynı sanılmasıdır.",
+   "dayanak": "5188 sayılı Kanun md 3"
+  },
+  "degisenler": [
+   "Kök: 'korumave güvenlik' → 'koruma ve güvenlik'",
+   "Kök: '5188 sayılı özel güvenlik hizmetlerine dair kanun' → '5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun'",
+   "D şıkkı: 'il Emniyet Müdürü' → 'İl Emniyet Müdürü'"
+  ]
+ },
+ {
+  "id": "s60",
+  "grup": "C",
+  "gerekce": "Tek kusur kökteki kanun numarasının rakam sırasının bozulması ('5276' → 5726); madde metni doğrulandı, anahtar sağlam.",
+  "duzeltme": {
+   "kok": "5726 sayılı Tanık Koruma Kanunu hükümlerine göre aşağıdakilerden hangisi tanık koruma tedbir kararında bulunması gereken hususlar arasında yer almaz?",
+   "siklar": {
+    "A": "Korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri.",
+    "B": "Tanıklık konusu olay.",
+    "C": "Tanıklığa ilişkin bilgiler.",
+    "D": "Tedbir veya tedbirlerin şekli ve süresi.",
+    "E": "Tanığa ilişkin geçmiş ikamet bilgileri."
+   },
+   "dogru": "E",
+   "aciklama": "5726 sayılı Tanık Koruma Kanunu'nun 7. maddesi, tanık koruma tedbiri kararında yer alacak hususları tek tek sayar: korunmasına karar verilen kişilerin açık kimlik ve adres bilgileri, tanıklık konusu olay, tanıklığa ilişkin bilgiler, tedbirin şekli ve süresi, kararın istem üzerine mi re'sen mi verildiği, karara dayanak hukuki ve fiili sebepler ile tanık anlatımının sağladığı fayda. Tanığın geçmişte oturduğu adreslere ilişkin bilgiler bu sayımda geçmez. Tuzak, kararda bulunması zorunlu olan güncel kimlik ve adres bilgisiyle ses benzerliği kurulan 'geçmiş ikamet' ifadesidir.",
+   "dayanak": "5726 sayılı Kanun md 7/1"
+  },
+  "degisenler": [
+   "Kök: '5276 sayılı Tanık Koruma Kanunu' → '5726 sayılı Tanık Koruma Kanunu'",
+   "Şıklarda nokta kullanımı birleştirildi (C ve E şıklarına eksik nokta eklendi)"
+  ]
+ },
+ {
+  "id": "s61",
+  "grup": "A",
+  "gerekce": "Uyarı yersiz: kök tespiti kolluğun yaptığını söylediği için 5326 md 33/2'deki iki alternatif makamdan yalnız mülki amir kalır; belediye encümeni zabıtanın tespit ettiği hâlin makamıdır.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Mülki amir",
+    "B": "Belediye başkanı",
+    "C": "Belediye encümeni",
+    "D": "Zabıta amiri",
+    "E": "Cumhuriyet savcısı"
+   },
+   "dogru": "A",
+   "aciklama": "5326 sayılı Kabahatler Kanunu'nun 33. maddesine göre dilencilik kabahatinde idari para cezası vermeye ve elde edilen gelire elkoymaya kolluk veya belediye zabıta görevlileri, bu gelirin mülkiyetinin kamuya geçirilmesine ise mülki amir veya belediye encümeni karar verir. Kabahati kolluk tespit ettiğinde karar mercii mülki amirdir; belediye encümeni belediye zabıtasının tespit ettiği hâllerde devreye girer. Tuzak, para cezasını veren görevli ile mülkiyetin kamuya geçirilmesine karar veren makamın aynı sanılması ve tespiti yapan birimin gözden kaçırılmasıdır.",
+   "dayanak": "5326 sayılı Kanun md 33/2"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "s62",
+  "grup": "C",
+  "gerekce": "Denetim uyarısı kapsam notuydu (5395 metni artık elde ve tanım doğrulandı); kalan tek kusur kökteki 'sıfatına haiz' yazım hatasıdır.",
+  "duzeltme": {
+   "kok": "5395 sayılı Çocuk Koruma Kanunu hükümlerine göre kaç yaşını dolduran kişi çocuk sıfatını haiz değildir?",
+   "siklar": {
+    "A": "10",
+    "B": "12",
+    "C": "15",
+    "D": "18",
+    "E": "13"
+   },
+   "dogru": "D",
+   "aciklama": "5395 sayılı Çocuk Koruma Kanunu'nun tanımlar maddesi çocuğu 'daha erken yaşta ergin olsa bile onsekiz yaşını doldurmamış kişi' olarak tanımlar; buna göre onsekiz yaşını dolduran kişi artık çocuk sayılmaz. Evlenme veya mahkeme kararıyla erginliğin öne çekilmesi bu yaş ölçütünü değiştirmez. Tuzak, ceza sorumluluğunda kullanılan on iki ve on beş yaş eşiklerinin çocuk tanımıyla karıştırılmasıdır.",
+   "dayanak": "5395 sayılı Kanun md 3/1-a"
+  },
+  "degisenler": [
+   "Kök: 'çocuk sıfatına haiz değildir' → 'çocuk sıfatını haiz değildir'",
+   "Kök: '5395 Çocuk Koruma Kanunu' → '5395 sayılı Çocuk Koruma Kanunu'",
+   "Kök: 'kaç yaşını doldurmuş kişi' → 'kaç yaşını dolduran kişi'"
+  ]
+ },
+ {
+  "id": "s71",
+  "grup": "A",
+  "gerekce": "Uyarı yakın çeldirici notu; 'ilk' ölçütü Bristol Raporunu tek doğru şık bırakıyor, Harbord Raporu hem sonraki tarihli hem farklı konuludur.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "General Harbourd Raporu",
+    "B": "Lozan Antlaşması",
+    "C": "Amiral Bristol Raporu",
+    "D": "Paris Barış Konferansı",
+    "E": "Londra Konferansı"
+   },
+   "dogru": "C",
+   "aciklama": "İzmir'in işgalini yerinde soruşturan ABD'li Amiral Mark Bristol'ün 1919 sonunda hazırladığı rapor, işgalin haksızlığını ve bölgedeki Türk halkına yönelik saldırıları tespit ederek Millî Mücadele'nin haklılığını ortaya koyan ilk uluslararası belgedir. Aynı yıl hazırlanan General Harbord Raporu (Ekim 1919) ise ağırlıklı olarak Doğu Anadolu ve Ermeni iddialarına ilişkindir. Lozan Antlaşması (1923) Millî Mücadele'nin sonucudur; Paris ve Londra konferansları ise İtilaf devletlerinin toplantılarıdır. Tuzak, 1919'un iki Amerikan raporunun konu ve tarih bakımından karıştırılmasıdır.",
+   "dayanak": "Amiral Bristol Raporu, 1919 (ABD soruşturma raporu); General Harbord Raporu, Ekim 1919"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "s76",
+  "grup": "C",
+  "gerekce": "Tek kusur A şıkkındaki 'bağımsızlı' yazım/dizgi hatası ve şıklarda tutarsız noktalama; kararın hangi belgeye ait olduğu tartışmasız.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Vatanın bütünlüğü ve ulusun bağımsızlığı tehlikededir.",
+    "B": "Milli sınırlar içerisinde vatan bir bütündür, bölünemez.",
+    "C": "Ulusun bağımsızlığını yine ulusun azim ve kararı kurtaracaktır.",
+    "D": "Sivas'ta milli bir kongre toplanmalıdır.",
+    "E": "Etki ve denetimden uzak milli bir kurul oluşturulmalıdır."
+   },
+   "dogru": "B",
+   "aciklama": "22 Haziran 1919 tarihli Amasya Genelgesi; vatanın bütünlüğü ile milletin bağımsızlığının tehlikede olduğunu, bağımsızlığı yine milletin azim ve kararının kurtaracağını, her türlü etki ve denetimden uzak millî bir kurulun oluşturulması gerektiğini ve Sivas'ta millî bir kongre toplanmasını duyurur. 'Millî sınırlar içinde vatan bir bütündür, bölünemez' ilkesi ise 23 Temmuz-7 Ağustos 1919 tarihli Erzurum Kongresi kararlarında ortaya konmuş, Misak-ı Millî ile pekiştirilmiştir. Tuzak, birkaç ay arayla yayımlanan bu belgelerin kararlarının birbirine karıştırılmasıdır.",
+   "dayanak": "Amasya Genelgesi, 22 Haziran 1919; Erzurum Kongresi, 23 Temmuz-7 Ağustos 1919"
+  },
+  "degisenler": [
+   "A şıkkı: 'ulusun bağımsızlı tehlikededir' → 'ulusun bağımsızlığı tehlikededir'",
+   "B, C, D, E şıklarına eksik cümle sonu noktaları eklendi",
+   "D şıkkı: 'Milli' → 'milli' (cümle içi küçük harf)"
+  ]
+ },
+ {
+  "id": "s78",
+  "grup": "A",
+  "gerekce": "Uyarı yersiz: kök zaten 'milliyetçilik anlayışını güçlendirmek amacıyla' kaydını taşıdığı için sorulan şey öncüllerin gerçekleşip gerçekleşmediği değil, bu amaca hizmet edip etmedikleridir.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Yalnız I",
+    "B": "Yalnız II",
+    "C": "Yalnız III",
+    "D": "II ve III",
+    "E": "I, II ve III"
+   },
+   "dogru": "D",
+   "aciklama": "Türk Tarih Kurumu (12 Nisan 1931) ve Türk Dil Kurumu (12 Temmuz 1932), millî tarih ve dil bilincini geliştirmek üzere kurulduğundan doğrudan milliyetçilik ilkesini güçlendirmeye yöneliktir. Halifeliğin 3 Mart 1924 tarihli 431 sayılı Kanunla kaldırılması ise laiklik ve ulusal egemenlik ilkeleriyle ilgili bir inkılaptır. Kökteki ölçüt 'milliyetçiliği güçlendirmek amacıyla yapılmış olmak' olduğundan, bir inkılabın Atatürk döneminde gerçekleşmiş olması tek başına yeterli değildir; tuzak tam olarak budur.",
+   "dayanak": "Türk Tarih Kurumu, 12 Nisan 1931; Türk Dil Kurumu, 12 Temmuz 1932; 431 sayılı Kanun, 3 Mart 1924"
+  },
+  "degisenler": []
+ },
+ {
+  "id": "s79",
+  "grup": "E",
+  "gerekce": "Şık kümesi yeniden kurulmalı: savunulabilir öncül birleşimi olan 'II ve III' seçeneklerde hiç yok, 'padişah taraftarlarını sindirme' öncülü kaynaklandırılabilir bir amaç değil ve E şıkkı sayfada 'I-II-II' olarak bozuk basılmış. Öneri: I. öncül, Misak-ı Millî'nin kabulüyle doğrudan ilişkili ve kaynaklanabilir bir amaçla (örneğin 'ulusal sınırların uluslararası bir belgeyle ilan edilmesi') değiştirilsin; şık kümesi 'Yalnız II / Yalnız III / I ve II / II ve III / I, II ve III' biçiminde yeniden kurulup E şıkkının dizgisi 'I, II ve III' olarak düzeltilsin; ayrıca kökteki 'Mebussan' → 'Mebusan'. Anahtar, yeniden kurulan kümeye göre insan tarafından belirlenmelidir.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "s80",
+  "grup": "C",
+  "gerekce": "Tek kusur kökteki 'Mebussan' yazım hatası; 1920 kronolojisi doğrulandı ve sıralamayı veren tek şık ayakta.",
+  "duzeltme": {
+   "kok": "I. TBMM'nin açılması II. Misak-ı Milli Kararlarının yayınlanması III. İstanbul'un resmen işgali IV. Son Osmanlı Mebusan Meclisi'nin açılması V. Son Osmanlı Mebusan Meclisi'nin dağıtılması Yukarıdaki olayların kronolojik sıralaması aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "V-II-III-IV-I",
+    "B": "III-I-IV-V-II",
+    "C": "IV-III-II-I-V",
+    "D": "I-II-V-III-IV",
+    "E": "IV-II-III-V-I"
+   },
+   "dogru": "E",
+   "aciklama": "Son Osmanlı Mebusan Meclisi 12 Ocak 1920'de açılmış, 28 Ocak 1920'de Misak-ı Millî kararlarını kabul etmiştir. İstanbul 16 Mart 1920'de resmen işgal edilmiş, meclis bu işgalin ardından çalışamaz hâle gelerek 11 Nisan 1920'de padişah iradesiyle dağıtılmış, TBMM ise 23 Nisan 1920'de açılmıştır. Doğru sıralama bu takvimden çıkar. Tuzak, işgal ile meclisin dağıtılmasının yer değiştirmesi ve TBMM'nin açılışının sıranın başına alınmasıdır.",
+   "dayanak": "1920 kronolojisi: 12 Ocak, 28 Ocak, 16 Mart, 11 Nisan, 23 Nisan 1920"
+  },
+  "degisenler": [
+   "Kök: 'Mebussan' → 'Mebusan' (iki yerde)",
+   "Kök: 'Mebussan Meclisinin dağıtılması' → 'Mebusan Meclisi'nin dağıtılması'"
+  ]
+ },
+ {
+  "id": "s82",
+  "grup": "E",
+  "gerekce": "İki savunulabilir şık var: Jellinek'in statü kuramında hem çalışma ve sözleşme hürriyeti hem de mülkiyet hakkı negatif statü (koruyucu) haklarıdır; 'yer almaz' tekil cevap istediği için soru bu hâliyle çözülemez. Öneri: mülkiyet hakkı şıkkı, tartışmasız bir pozitif statü hakkıyla (örneğin 'Sosyal Güvenlik Hakkı' — Anayasa md 60) değiştirilsin; böylece kalan dört şıktan yalnız çalışma ve sözleşme hürriyeti negatif statüde kalır ve anahtar B olur. Alternatif olarak kök 'negatif statü haklarından hangisi...' biçiminde ters çevrilebilir; hangi yolun seçileceği editoryal karardır.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "s86",
+  "grup": "C",
+  "gerekce": "Kusur yalnız B şıkkındaki bozuk 'İ' harfleri; 1503 usulünün ayırt edici niteliği gizlilik olduğundan 'açık yürütülür' ifadesi tek yanlış şık olarak ayakta kalıyor.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Ekonomik ve Sosyal Konseyin 1503 sayılı kararına dayanır.",
+    "B": "Kararla İnsan Hakları İnceleme Komisyonuna soruşturma izni verilmiştir.",
+    "C": "1235 sayılı kararla eksik kalan kısımlar 1503 sayılı kararla tamamlanmıştır.",
+    "D": "Bu karara istinaden yapılan başvurular Birleşmiş Milletler Genel Sekreterine yapılır.",
+    "E": "Başvuru ve görüşmeler açık yürütülür."
+   },
+   "dogru": "E",
+   "aciklama": "Birleşmiş Milletler Ekonomik ve Sosyal Konseyi'nin 27 Mayıs 1970 tarihli 1503 (XLVIII) sayılı kararıyla kurulan usul, 1235 sayılı kararla getirilen alenî inceleme mekanizmasının boşluklarını doldurur ve bireysel başvurular Genel Sekreterlik aracılığıyla iletilir. Usulün ayırt edici özelliği gizliliktir: başvurular da, komisyon önündeki görüşmeler de gizli yürütülür. Tuzak, 1235 usulünün aleniliğinin 1503 usulüne yakıştırılmasıdır. Bu mekanizma 2007'de İnsan Hakları Konseyi'nin 5/1 sayılı kararıyla 'şikâyet usulü' adıyla yeniden düzenlenmiş, gizlilik esası korunmuştur.",
+   "dayanak": "BM ESOSOK 1503 (XLVIII) sayılı kararı, 27 Mayıs 1970; BM İnsan Hakları Konseyi 5/1 sayılı kararı, 18 Haziran 2007"
+  },
+  "degisenler": [
+   "B şıkkı: 'Ínsan Hakları Inceleme Komisyonuna' → 'İnsan Hakları İnceleme Komisyonuna'"
+  ]
+ },
+ {
+  "id": "s87",
+  "grup": "C",
+  "gerekce": "Kitap anahtarı kronolojik olarak çürük (AİHS 1950'de, zaten kurulmuş Konsey bünyesinde hazırlandı) ve kurucu belgeyi karşılayan şık özensiz adlandırılmış; şık künyesi ile kök netleştirilip anahtar düzeltilince soru sağlam kalıyor.",
+  "duzeltme": {
+   "kok": "Avrupa Konseyi'ni kuran belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Roma Statüsü",
+    "B": "İnsan Hakları Evrensel Beyannamesi",
+    "C": "Avrupa İnsan Hakları Sözleşmesi",
+    "D": "Avrupa Toplulukları Sözleşmesi",
+    "E": "Avrupa Konseyi Statüsü (Londra Antlaşması)"
+   },
+   "dogru": "E",
+   "aciklama": "Avrupa Konseyi, 5 Mayıs 1949'da Londra'da imzalanan Avrupa Konseyi Statüsü ile kurulmuş; Bakanlar Komitesi ve Danışma Meclisi gibi organları da bu belge oluşturmuştur. Avrupa İnsan Hakları Sözleşmesi 1950'de, zaten kurulmuş olan Konsey bünyesinde hazırlanmıştır; Sözleşme'nin kendi maddeleri de yargıçların ayrıcalıkları ve Bakanlar Komitesi'nin yetkileri bakımından Statü'ye kendinden önce var olan bir belge gibi atıf yapar. Roma Statüsü Uluslararası Ceza Mahkemesi'ni, İnsan Hakları Evrensel Beyannamesi ise Birleşmiş Milletler düzenini ilgilendirir. Tuzak, Konsey'in en tanınmış sözleşmesinin kurucu belge sanılmasıdır.",
+   "dayanak": "Avrupa Konseyi Statüsü, 5 Mayıs 1949 (Londra); AİHS md 51 ve md 54"
+  },
+  "degisenler": [
+   "Kök: 'Avrupa Konseyinin temelini oluşturan sözleşme' → 'Avrupa Konseyi'ni kuran belge'",
+   "E şıkkı: 'Avrupa Konseyi sözleşmesi' → 'Avrupa Konseyi Statüsü (Londra Antlaşması)'",
+   "D şıkkı: 'Avrupa toplulukları Sözleşmesi' → 'Avrupa Toplulukları Sözleşmesi'",
+   "Anahtar: C → E"
+  ]
+ },
+ {
+  "id": "s90",
+  "grup": "E",
+  "gerekce": "Hiçbir şık doğru değil: Avrupa Toplulukları Adalet Divanı 1952'den bu yana Lüksemburg'dadır (kurumların yeri hakkında protokol) ve Lüksemburg şıklar arasında yok; Strazburg AİHM'in, Lahey Uluslararası Adalet Divanı'nın, Brüksel Komisyon ve Konsey'in merkezidir. Öneri: kitabın cevabı olan Brüksel şıkkı 'Lüksemburg' ile değiştirilip anahtar bu şıkka bağlansın (kalan üç şık zaten güçlü çeldirici); ayrıca kurumun adı Lizbon Antlaşması'ndan (1 Aralık 2009) sonra Avrupa Birliği Adalet Divanı olduğundan kökte bu ad kullanılsın. Şık değişimi editoryal karar gerektirdiği için insana bırakıldı.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "s100",
+  "grup": "A",
+  "gerekce": "Çelişki denetçi hatasından doğmuş: TDK Yazım Kılavuzu 'bilim/bilgi' ile kurulan adları ayrı ('gök bilimi'), 'ön' ile kurulan birleşikleri de ayrı ('ön izleme') yazar; dolayısıyla yanlış yazılan tek sözcük bitişik biçimdir ve kitap anahtarı doğrudur.",
+  "duzeltme": {
+   "kok": null,
+   "siklar": {
+    "A": "Süregelen",
+    "B": "Açgözlü",
+    "C": "Ön izleme",
+    "D": "Gökbilim",
+    "E": "Herkes"
+   },
+   "dogru": "D",
+   "aciklama": "Türk Dil Kurumu Yazım Kılavuzu'na göre 'bilim' ve 'bilgi' sözleriyle kurulan adlar ayrı yazılır: gök bilimi, dil bilimi, toplum bilimi, dil bilgisi. Bu nedenle bitişik yazılan biçim yazım yanlışıdır. Aynı kılavuzda 'ön, art, alt, üst, iç, dış' gibi sözlerle kurulan birleşikler de ayrı yazıldığından 'ön izleme' doğrudur; 'süregelen' ve 'açgözlü' ise anlamca kaynaşmış birleşik sözler olarak bitişik, 'herkes' de kalıplaşmış biçimiyle doğrudur. Tuzak, bilişim alanında yaygınlaşan bitişik yazımın kılavuz kuralı sanılmasıdır.",
+   "dayanak": "TDK Yazım Kılavuzu — 'bilim/bilgi' ile kurulan birleşikler ile 'ön, art, alt, üst' sözleriyle kurulan birleşiklerin ayrı yazılması kuralı"
+  },
+  "degisenler": []
+ }
+]
