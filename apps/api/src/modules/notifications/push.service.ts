@@ -36,6 +36,29 @@ export class PushService implements OnModuleInit {
   }
 
   /** Cihaz token'ını kullanıcıya bağla (upsert — cihazda hesap değişirse taşınır). */
+  /**
+   * Web bildirimi tıklanınca açılacak adres.
+   *
+   * Rota mobil uygulamanın dilindedir ("/quiz", "/review"…); web karşılıkları
+   * farklı. Eşlemeyi burada TEKRARLAMIYORUZ: bağlantı /bildirim sıçrama
+   * sayfasına gider, çeviriyi orası yapar (apps/web/src/lib/routes.ts#webRoute).
+   */
+  private webLink(route?: string): string {
+    const taban = (process.env.WEB_BASE_URL ?? 'https://paemisyon.com').replace(/\/$/, '');
+    return route ? `${taban}/bildirim?git=${encodeURIComponent(route)}` : `${taban}/bugun`;
+  }
+
+  /** Platforma özel gönderim seçenekleri — mobil ses, web tıklama hedefi. */
+  private platformSecenekleri(route?: string) {
+    return {
+      apns: { payload: { aps: { sound: 'default' } } },
+      webpush: {
+        fcmOptions: { link: this.webLink(route) },
+        notification: { icon: '/apple-touch-icon.png' },
+      },
+    };
+  }
+
   async registerToken(userId: string, token: string, platform: string) {
     await this.prisma.pushToken.upsert({
       where: { token },
@@ -70,7 +93,7 @@ export class PushService implements OnModuleInit {
       tokens: tokens.map((t) => t.token),
       notification: { title: params.title, body: params.body },
       data: params.route ? { route: params.route } : {},
-      apns: { payload: { aps: { sound: 'default' } } },
+      ...this.platformSecenekleri(params.route),
     });
     const dead: string[] = [];
     res.responses.forEach((r, j) => {
@@ -133,7 +156,7 @@ export class PushService implements OnModuleInit {
       const data: Record<string, string> = params.route ? { route: params.route } : {};
       const base = {
         data,
-        apns: { payload: { aps: { sound: 'default' } } },
+        ...this.platformSecenekleri(params.route),
       };
       const res = personalize
         ? await getMessaging(this.app).sendEach(

@@ -14,6 +14,7 @@ import { StreakBadge } from "@/components/ui/streak-badge";
 import { ButtonLink } from "@/components/ui/button";
 import { FocusPicker } from "@/components/bugun/focus-picker";
 import { ExamBanner, bannerExam } from "@/components/exam-banner";
+import { PushOptIn } from "@/components/push-opt-in";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -57,6 +58,9 @@ export default async function BugunPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-6">
       {serit && <ExamBanner exam={serit} />}
+      {/* Bildirim ön-sorusu şeridin ALTINDA: kullanıcı önce "deneme var" bilgisini
+          görsün, sonra "haber vereyim mi" sorusu anlam kazansın. */}
+      <PushOptIn />
 
       {/* Üst şerit: selamlama + seri */}
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">

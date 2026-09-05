@@ -260,11 +260,11 @@ export class UsersController {
     @Body() body: { token?: string; platform?: string },
   ) {
     if (!body.token) return { ok: false };
-    return this.push.registerToken(
-      user.id,
-      body.token,
-      body.platform === 'android' ? 'android' : 'ios',
-    );
+    // 'web' 5 Eylül 2026'da eklendi: kullanıcıların çoğu web'de ve o güne dek
+    // bildirim yalnız 17 mobil cihaza gidebiliyordu.
+    const platform =
+      body.platform === 'android' || body.platform === 'web' ? body.platform : 'ios';
+    return this.push.registerToken(user.id, body.token, platform);
   }
 
   @Delete('push-token')
