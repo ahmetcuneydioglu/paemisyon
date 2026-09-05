@@ -81,10 +81,14 @@ const p = new PrismaClient();
     console.log('  Ücretsiz hesapla katılım YOK — düzeltme test EDİLMEDİ.');
   } else if (ucretsiz.some((s) => s._count.answers === 30)) {
     console.log('  ✗ Bir ücretsiz hesap tam 30 cevapta durmuş — günlük limit sınavı KESİYOR.');
-  } else if (ucretsiz.every((s) => s._count.answers > 30)) {
-    console.log('  ✓ Ücretsiz hesapların hepsi 30 sınırını geçmiş — düzeltme ÇALIŞIYOR.');
+  } else if (ucretsiz.some((s) => s._count.answers > 30)) {
+    // TEK bir hesabın 30'u geçmesi kanıttır. Eskiden "HEPSİ geçmiş olmalı"
+    // aranıyordu; sınav SÜRERKEN çalıştırıldığında daha yeni başlamış hesaplar
+    // yüzünden "sınır denenmedi" yazıyordu — 78 cevaplı bir hesap varken bile.
+    const enCok = Math.max(...ucretsiz.map((s) => s._count.answers));
+    console.log(`  ✓ Ücretsiz bir hesap ${enCok} cevaba ulaşmış — 30 sınırı AŞILDI, düzeltme ÇALIŞIYOR.`);
   } else {
-    console.log('  ? Ücretsiz hesapların cevap sayısı 30 altında; sınırı geçen bir deneme yapılmadı.');
+    console.log('  ? Hiçbir ücretsiz hesap henüz 30 cevaba ulaşmadı; sınır bu denemede sınanmadı.');
   }
   console.log();
 })().finally(() => p.$disconnect());
