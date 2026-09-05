@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/error/failure.dart';
+import '../../../core/notifications/davet_zamanlamasi.dart';
 import '../../../core/notifications/notification_service.dart';
 import '../../../core/notifications/push_service.dart';
 import '../../../core/theme/accent_palette.dart';
@@ -29,18 +30,28 @@ import '../data/me_repository.dart';
 import '../../quiz/data/quiz_repository.dart';
 import '../../quiz/domain/quiz_models.dart';
 
-/// Tek seferlik bildirim daveti — oturum içinde ve cihazda bir kez.
+/// Bildirim daveti — oturumda bir kez, cihazda en fazla 30 günde bir.
+///
+/// Eskiden "cihazda BİR KEZ, bir daha asla" idi (notif_offer_shown_v1) ve
+/// uygulamayı kurup o an "Şimdi değil" diyen herkes KALICI olarak ulaşılamaz
+/// kalıyordu. Anahtar v2'ye çıkarıldı: eski cevabı ne olursa olsun herkese
+/// YENİ vaatle bir kez daha sorulur, sonra 30 günlük erteleme işler.
 bool _reminderOfferInFlight = false;
 Future<void> _maybeOfferReminder(BuildContext context, WidgetRef ref) async {
   if (_reminderOfferInFlight) return;
   _reminderOfferInFlight = true;
-  const kFlag = 'notif_offer_shown_v1';
+  const kSonSorulan = 'notif_offer_v2_last_ms';
   final prefs = await SharedPreferences.getInstance();
-  if (prefs.getBool(kFlag) == true ||
-      ref.read(reminderSettingsProvider).enabled) {
-    return; // zaten soruldu ya da açık
+  if (!bildirimDavetiGosterilsinMi(
+    sonSorulanMs: prefs.getInt(kSonSorulan),
+    zatenAcik: ref.read(reminderSettingsProvider).enabled,
+    simdiMs: DateTime.now().millisecondsSinceEpoch,
+  )) {
+    return;
   }
-  await prefs.setBool(kFlag, true); // bir kez — reddedene ısrar yok
+  // Kayıt gösterimden ÖNCE: alt sayfa herhangi bir sebeple açılamazsa
+  // kullanıcı bir sonraki açılışta üst üste rahatsız edilmesin.
+  await prefs.setInt(kSonSorulan, DateTime.now().millisecondsSinceEpoch);
   if (!context.mounted) return;
   final accept = await showModalBottomSheet<bool>(
     context: context,
@@ -53,13 +64,17 @@ Future<void> _maybeOfferReminder(BuildContext context, WidgetRef ref) async {
           Icon(Icons.notifications_active_rounded,
               size: 40, color: ctx.tokens.brand),
           const SizedBox(height: AppSpacing.md),
-          Text('Günün sorusu her akşam cebine gelsin mi?',
+          // Vaat DÜRÜST olmalı: izin verildiğinde hem akşam hatırlatması hem
+          // canlı deneme duyurusu gidiyor. Eski metin yalnız hatırlatmadan
+          // söz ediyordu; deneme haberi almak isteyen kişiye hitap etmiyordu.
+          Text('Günün sorusu ve canlı denemeler cebine gelsin mi?',
               textAlign: TextAlign.center,
               style: AppTypography.heading.copyWith(color: ctx.tokens.ink)),
           const SizedBox(height: AppSpacing.sm),
           Text(
-            'Her akşam 19.00\'da tek soruluk kısa bir hatırlatma — '
-            'serin kopmasın. Saatini Ayarlar\'dan değiştirebilirsin.',
+            'Canlı deneme başlamadan haber veririz; her akşam 19.00\'da da '
+            'tek soruluk kısa bir hatırlatma gelir. Saatini Ayarlar\'dan '
+            'değiştirebilir, istediğin an kapatabilirsin.',
             textAlign: TextAlign.center,
             style: AppTypography.body.copyWith(color: ctx.tokens.inkSoft),
           ),
