@@ -1,0 +1,36 @@
+[
+ {
+  "parti": "inkilap-genelkultur",
+  "denetci": 1,
+  "no": 80,
+  "eski": {
+   "no": 80,
+   "cevap": "C",
+   "guven": "yuksek",
+   "kaynak": "TDK Güncel Türkçe Sözlük, 'görüş birliği': birden çok kimsenin bir konuda aynı görüşü paylaşması; anlatım bozukluğu kuralı — gereksiz sözcük kullanımı (anlamca çakışma)",
+   "kaynakUrl": "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi",
+   "gerekce": "Çözüm: 'görüş birliği' zaten 'görüşlerin aynı olması' demektir; başına 'aynı' getirilince anlam gereksiz yere yinelenir (anlamca çakışan sözcük kullanımı). Bozukluk III numaralı 'aynı' sözcüğü atılınca giderilir: 'Seninle sonunda görüş birliğine varmayı başardık.' I (Seninle), II (sonunda), IV (varmayı) ve V (başardık) cümlenin gerekli ögeleridir.",
+   "eskime": null,
+   "dogrulanamadi": false,
+   "uyari": "Girdi metninde numara işaretleri satır sonlarına düşmüş; numaralandırmayı I=Seninle, II=sonunda, III=aynı, IV=varmayı, V=başardık olarak okudum ('görüş birliğine' deyim olduğu için numarasız). Bankaya girerken numara-sözcük eşleşmesi orijinal soru kâğıdından teyit edilmelidir."
+  },
+  "zaman": "2026-09-06T01:44:03.941Z"
+ },
+ {
+  "parti": "inkilap-genelkultur",
+  "denetci": 2,
+  "no": 80,
+  "eski": {
+   "no": 80,
+   "cevap": "C",
+   "guven": "orta",
+   "kaynak": "TDK Güncel Türkçe Sözlük, 'görüş birliği: bir konuda aynı görüşü paylaşma durumu, konsensüs' — gereksiz sözcük kullanımı (anlatım bozukluğu) kuralı",
+   "kaynakUrl": "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi",
+   "gerekce": "'Görüş birliği' zaten 'aynı görüşte olmak' demektir; 'aynı' sözcüğü bu anlamı tekrarlayan gereksiz sözcüktür (gereksiz sözcük kullanımından kaynaklanan anlatım bozukluğu). Cümle 'Seninle sonunda görüş birliğine varmayı başardık.' biçiminde düzelir; III numarası 'aynı' sözcüğünü karşılamaktadır.",
+   "eskime": null,
+   "dogrulanamadi": false,
+   "uyari": "Kör dosyada numaralandırma satır kırılması nedeniyle belirsiz aktarılmış (birinci satırda 5 sözcük, 3 numara var). III'ün 'aynı' sözcüğü olduğu varsayımıyla cevap C'dir; numara eşleşmesi farklıysa (ör. III = 'görüş birliğine') cevap değişebilir. Orijinal sınav kitapçığından numara yerleşimi teyit edilmeli."
+  },
+  "zaman": "2026-09-06T01:44:03.944Z"
+ }
+]

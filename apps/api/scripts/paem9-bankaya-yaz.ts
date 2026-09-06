@@ -99,6 +99,14 @@ async function main() {
   for (const x of atlanan) console.log('  atlandı: ' + x);
   if (!APPLY) { console.log('\n(kuru çalışma — APPLY=1 ile yazılır)'); return; }
 
+  // Tek seferlik: script iki kez çalışırsa 100 soruyu ikinci kez yaratırdı.
+  const mevcut = await prisma.pastExam.findUnique({
+    where: { slug: SINAV.slug },
+    select: { id: true, _count: { select: { questions: true } } },
+  });
+  if (mevcut && mevcut._count.questions > 0)
+    throw new Error(`${SINAV.slug} zaten ${mevcut._count.questions} soru içeriyor — yazma iptal edildi.`);
+
   const sinav = await prisma.pastExam.upsert({
     where: { slug: SINAV.slug },
     update: { name: SINAV.name, institution: SINAV.institution, term: SINAV.term, heldOn: SINAV.heldOn, kind: SINAV.kind },

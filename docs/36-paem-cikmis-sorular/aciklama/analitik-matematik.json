@@ -1,0 +1,116 @@
+[
+ {
+  "no": 82,
+  "aciklama": "Tek eleme usulünde 8 oyuncu için 4 ilk tur maçı, 2 yarı final ve 1 final oynanır. Alin ikinci maçını Can ile oynadığına göre ikisi de ilk turu geçmiş ve yarı finalde eşleşmiştir; Özgür-Baran zaten bir ilk tur maçı olduğundan Alin ile Can'ın ilk tur rakipleri ancak Lena ve Uraz olabilir. Duru-Ece maçı da ilk turda oynanmak zorundadır: yarı finalde olsaydı Duru, Ece, Alin ve Can'ın dördünün de ilk turu geçmesi gerekirdi, oysa geriye yalnız 3 maç kalıyor. Böylece Lena ilk turda elenir ve hiçbir zaman ikinci maç oynamaz; \"Lena ikinci maçını Ece ile oynamıştır\" kesinlikle yanlıştır. Adayın en çok takıldığı şık C'dir: Can yarı finali kazanıp finalde Ece ile oynayabileceği için \"Can ikinci turu geçmiştir\" pekâlâ mümkündür, yanlış değildir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 83,
+  "aciklama": "Kurgu şudur: ilk turda Özgür-Baran ve Duru-Ece (Ece kazanır) oynanır, Alin ile Can da Lena ve Uraz'ı eler; yarı finalde Alin-Can ile Ece-(Özgür/Baran galibi) eşleşir. Yani Ece ile Alin ayrı yarı final kollarındadır ve ancak finalde karşılaşabilirlerdi. Final maçında 1 kız ve 1 erkek oynadığına göre iki kızın finali imkânsızdır; Ece ile Alin hiçbir turda karşı karşıya gelemez. Diğer şıkların hepsi kurulabilir: Ece-Baran yarı finalde, Özgür-Alin finalde, Can-Lena ve Alin-Uraz ise ilk turda oynayabilir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 84,
+  "aciklama": "Alin ile Can ikinci maçlarını birbirleriyle oynadığına göre ikisi de ilk turu geçmiştir; ilk tur rakipleri de Lena ile Uraz'dır. Dolayısıyla Uraz ilk turda elenir ve finale çıkması imkânsızdır. Diğer dört isim için finale ulaşan senaryolar vardır: Alin ya da Can yarı finali kazanıp finale gelir, karşısında Ece veya Özgür bulunabilir. Final 1 kız + 1 erkek olduğu için Alin gelirse rakibi Özgür, Can gelirse rakibi Ece olur; bu yüzden B, C, D ve E'deki isimler için \"kesinlikle oynamamıştır\" denemez.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 85,
+  "aciklama": "Ahmet'in mülakatı telefonla yapılıyor, ilk üç mülakat ise birebir; bu yüzden Ahmet en erken 4. sıradadır. Betül-Ahmet-Cemil ardışık olduğundan Betül = Ahmet - 1, yani Betül en az 3. sıradadır; Betül aynı zamanda ilk üç kişiden biri olduğu için en fazla 3. sıradadır. İki koşul birleşince Betül 3, Ahmet 4, Cemil 5. sıraya oturur. Geriye 1-2 sıralarına Derya ile Gökhan, 6-7 sıralarına da ardışık olması gereken Emine ile Füsun kalır. Beşinci sırada mülakat yapılan kişi Cemil'dir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 86,
+  "aciklama": "Dizilim şudur: 1-2 Derya ve Gökhan (hangisinin önce olduğu belirsiz), 3 Betül, 4 Ahmet, 5 Cemil, 6-7 Emine ve Füsun (sırası belirsiz). Emine 6. ya da 7. sırada, Cemil ise 5. sırada olduğundan hangi ihtimalde olursa olsun Emine'nin mülakatı Cemil'den sonradır; kesin olan tek ifade budur. A ve C çeldiricidir: telefonla görüşülen 2 kişiden biri Ahmet'tir, ikincisi Cemil, Emine veya Füsun'dan herhangi biri olabileceği için ne Emine'nin ne de Cemil'in telefon mülakatı olduğu kesindir. D de kesin değildir, son sırada Füsun yerine Emine olabilir; E'de ise Derya ile Gökhan'ın 1-2 sıralarındaki yeri serbesttir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 87,
+  "aciklama": "Telefonla görüşülen 2 kişi Ahmet ile Cemil, Emine veya Füsun'dan biridir; bunlar başa alınınca 1-2 sıraları onlara, 3-7 sıraları kalan beş kişiye gider. Kalan beşli kendi sırasını koruduğu için önce Derya ile Gökhan (3-4), hemen ardından Betül gelir. İkinci telefon adayı kim olursa olsun Betül her senaryoda 5. sıradadır; sırası kesin bilinen tek kişi odur. Diğerlerinin yeri oynar: Cemil 1/2 ya da 6, Derya ile Gökhan 3 ya da 4, Füsun 1/2, 6 ya da 7. sırada olabilir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 88,
+  "aciklama": "Bu soru sınavda iptal edilmiştir. Verilen öncüller yalnızca Göz < KBB < Psikiyatri < Dâhiliye zincirini kurar; Nöroloji'nin bu zincirin neresine girdiğini söyleyen tek bir öncül yoktur, dolayısıyla Nöroloji 1., 2., 3., 4. veya 5. sırada olmak üzere 5 farklı dizilim mümkündür. Tahlil koşulları da bu boşluğu kapatmaz: 2. poliklinik 0, 1. ile 3. poliklinik aynı kümeyi istediği için 1'er, Dâhiliye 3 ve kalan poliklinik 1 tahlil ister; toplam 6 eder ve bu dağılım beş dizilimin hepsinde kurulabilir. Sonuçta ilk poliklinik bir dizilimde Nöroloji, dört dizilimde Göz olur; yani D ve E şıklarının ikisi de öncüllerle uyumludur. Resmî anahtar D (Nöroloji) idi, ama bu cevap ancak 90. sorunun tek doğru şıkka sahip olması gerektiği varsayımından geriye doğru türetilebiliyor; kurgunun kendisinden çıkmıyor. Göz'ü işaretlediyseniz akıl yürütmenizde hata yok, soruda eksik öncül var.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 89,
+  "aciklama": "Bu soru sınavda iptal edilmiştir. Öncüller Göz < KBB < Psikiyatri < Dâhiliye zincirini verir, fakat Nöroloji'nin yerini sabitleyen bir öncül içermez; Nöroloji zincire beş ayrı noktada girebildiği için 5 dizilim mümkündür. Bunların dördünde (Nöroloji 1., 2., 3. veya 4. sıradayken) en son gidilen poliklinik Dâhiliye olur; beşincisinde, yani Göz-KBB-Psikiyatri-Dâhiliye-Nöroloji diziliminde en son gidilen poliklinik Nöroloji'dir. Yani hem E hem B öncüllerle tutarlıdır ve soru tek cevaba kapanmaz. Resmî anahtar E (Dâhiliye) idi. Çözümünüz sizi Nöroloji'ye götürdüyse mantık hatası yapmış değilsiniz; sorunun öncül kümesi eksik.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 90,
+  "aciklama": "Bu soru sınavda iptal edilmiştir. 88 ve 89 ile aynı bilgi bloğunu paylaştığı için üç soruluk grup birlikte iptal edilmiştir. Tahlil dağılımı öncüllerden çıkar: 2. poliklinik 0 tahlil, 1. ile 3. poliklinik \"birebir aynı\" kümeyi istediği için eşit ve boş olmayan sayıda (k), Dâhiliye 3 ve toplam 6 olduğundan 2k + kalan = 3, yani k = 1 ve kalan poliklinik de 1 tahlil ister. Psikiyatri, mümkün olan beş dizilimin hepsinde 3. veya 4. sıraya düştüğü için daima 1 tahlillik yuvadadır; A bu belirsizliğe rağmen doğrudur. B, C ve D bir polikliniğe 2 tahlil yükler, oysa Dâhiliye dışında hiçbir poliklinik 1'den fazla tahlil isteyemez. Asıl sorun E'dedir: Nöroloji'nin yeri sabitlenmediği için Göz dört dizilimde 1. sırada olur (1 tahlil, E doğru görünür), yalnızca Nöroloji'nin başa geldiği dizilimde 2. sıraya düşer (0 tahlil). Yani \"Nöroloji birinci\" bilgisi verilmediği sürece adayın önünde doğru gibi duran iki şık bulunur; grubun iptal nedeni de budur.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 91,
+  "aciklama": "Araçlar birbirine doğru gittiği için yaklaşma hızları 80 + 120 = 200 km/sa'tir; 1.000 km'lik mesafeyi 1.000 / 200 = 5 saatte kapatıp karşılaşırlar. Bu 5 saatte yavaş araç 5 x 80 = 400 km yol almıştır, yani B şehrine 1.000 - 400 = 600 km kalmıştır. Hızını %25 artırınca yeni hızı 80 x 1,25 = 100 km/sa olur ve kalan yolu 600 / 100 = 6 saatte tamamlar. İki yaygın hata var: kalan yolu 600 km yerine yolun yarısı olan 500 km almak 5 saate (B şıkkı), hız artışını uygulamayı unutmak ise 600 / 80 = 7,5 saate götürür; ikisi de kurguya uymaz.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 92,
+  "aciklama": "Banknotların toplam tutarı 8 x (10 + 20 + 50 + 100 + 200) = 8 x 380 = 3.040 TL'dir. Bir kişiye en çok verebilmek için diğer 17 kişiye birer banknot ve mümkün olan en ucuzlarını vermek gerekir: 8 tane 10 TL, 8 tane 20 TL ve 1 tane 50 TL, yani 80 + 160 + 50 = 290 TL. Geriye kalan 40 - 17 = 23 banknot tek kişiye verilir ve tutarı 3.040 - 290 = 2.750 TL olur (7 x 50 + 8 x 100 + 8 x 200 = 350 + 800 + 1.600 ile de doğrulanır). Çeldirici 2.800'dür: 10 ve 20 TL'liklerin tamamı yalnızca 16 banknot ettiği için 17. kişiye de bir banknot vermek zorunludur ve en ucuz seçenek 50 TL'dir; bu adımı atlayanlar 3.040 - 240 = 2.800 bulur.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 93,
+  "aciklama": "Başarı oranı %60 ise net doğru sayısı 40 x 0,60 = 24'tür. Dört yanlış bir doğruyu götürdüğü için net = doğru - yanlış/4 kuralı kullanılır: 24 = 25 - Y/4 eşitliğinden Y = 4 yanlış bulunur. Boş sayısı 40 - 25 - 4 = 11 olur. Başarı oranını \"doğru sayısı / soru sayısı\" sanıp 25 / 40 = %62,5 üzerinden gitmek soruyu kilitler; oran net üzerinden hesaplanır.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 94,
+  "aciklama": "Saat her gerçek 60 dakikada 45 dakika ilerliyor. 08:00'dan doğru zamanla 22:00'a kadar 14 saat geçmiştir; bu sürede geri kalan saatin ilerlemesi 14 x 45 = 630 dakika, yani 10 saat 30 dakikadır. 08:00 + 10 saat 30 dakika = 18:30. Aynı sonuca toplam gerileme üzerinden de varılır: 14 x 15 = 210 dakika = 3 saat 30 dakika geri kalır, 22:00 - 3:30 = 18:30. Geri kalmayı tek seferlik 15 dakika sanmak ya da geçen süreyi 14 saat yerine 13 saat saymak şıklarda karşılığı olan yanlışlara götürür.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 95,
+  "aciklama": "Buzdolabı sayısı B, televizyon sayısı T olsun: B + T = 30 ve satılan adetler eşit olduğundan 0,30B = 0,60T, yani B = 2T. Buradan 3T = 30 → T = 10 ve B = 20 bulunur. Satılanlar: 20'nin %30'u = 6 buzdolabı, 10'un %60'ı = 6 televizyon; toplam 12 ürün satılmıştır. Kalan (20 - 6) + (10 - 6) = 14 + 4 = 18 olur; 30 - 12 = 18 ile de doğrulanır. Soru tek bir ürünün değil, kalan buzdolabı ve televizyonların toplamını istiyor.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 96,
+  "aciklama": "Ozan'ın parası M, nohudun zamsız kilo fiyatı p olsun. Zamsız alabileceği miktar M/p, %40 zamlı fiyatla alabileceği miktar ise M/(1,4p)'dir. Aradaki fark 10 kilo verildiğine göre (M/p) x (1 - 1/1,4) = (M/p) x (0,4/1,4) = (2/7) x (M/p) = 10 → M/p = 35 kilo. Kontrol: 35 kilo alabilen kişi zamdan sonra 35 / 1,4 = 25 kilo alabilir, fark tam 10 kilodur. Fiyattaki %40 artışın miktarda da %40 azalma demek olduğunu sanmak yanlıştır (o zaman 0,40x = 10 → 25 çıkar ve şıklarda karşılığı yoktur); soru ayrıca zamdan sonraki değil, başlangıçtaki miktarı soruyor.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 97,
+  "aciklama": "Şekildeki oklar sırasıyla şu zinciri kuruyor: K -6→ L, L x4→ M, M ÷2→ N, N x3→ P, P +6→ R, R ÷3→ S. N = 26 verildiğine göre önce geriye doğru gidilir ve işlemler tersine çevrilir: M = 26 x 2 = 52, L = 52 / 4 = 13, K = 13 + 6 = 19. Sonra ileri doğru gidilir: P = 26 x 3 = 78, R = 78 + 6 = 84, S = 84 / 3 = 28. Buradan K + S = 19 + 28 = 47 bulunur. Kritik nokta okların yönüdür: N'den K'ye giderken bölme çarpmaya, çıkarma toplamaya döner; işlemleri olduğu gibi uygulayanlar K'yi 19 yerine başka bir değere taşır.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 98,
+  "aciklama": "Dairesel grafikte dağılım kiraz %40, kayısı %35, elma %25'tir. Toplam 80 kilo bu oranlara bölünür: kiraz 80 x 0,40 = 32 kg, kayısı 80 x 0,35 = 28 kg, elma 80 x 0,25 = 20 kg. Her miktar kendi kilo fiyatıyla çarpılır: 32 x 150 = 4.800 TL, 28 x 100 = 2.800 TL, 20 x 90 = 1.800 TL. Toplam gelir 4.800 + 2.800 + 1.800 = 9.400 TL'dir. En sık yapılan hata dilimleri meyvelerle karıştırmaktır; grafikteki en büyük dilim (%40) en pahalı meyveye, kiraza aittir ve gelirin yarısından fazlası oradan gelir.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 99,
+  "aciklama": "Sayılar rakam tekrar örüntüsüne göre ikiye ayrılır: 32673 ve 47384'te birinci ile beşinci rakam aynıdır (abcda kalıbı), 61658 ve 54521'de ise birinci ile üçüncü rakam aynıdır (abacd kalıbı). Sembol satırlarından üçüncüsü (kalın yıldız - dolu kare - ince yıldız - dört uçlu yıldız - kalın yıldız) ve dördüncüsü (elmas - dört uçlu yıldız - kalın yıldız - daire - elmas) abcda kalıbındadır; üçüncü satır 32673'e, dördüncü satır 47384'e oturur. Tersi denendiğinde dört uçlu yıldız aynı anda hem 8 hem 2 olmak zorunda kalır ve çelişki çıkar, yani eşleşme tektir. Buradan kalın yıldız = 3, dolu kare = 2, ince yıldız = 6, dört uçlu yıldız = 7, elmas = 4, daire = 8 gelir; kalan iki satır 61658 ve 54521 ile eşleşince daireli 10 = 1 ve boş kare = 5 tamamlanır. Sorulan gruplar (daire - boş kare - ince yıldız - dört uçlu yıldız) = 8567 ve (daireli 10 - elmas - dolu kare - kalın yıldız) = 1423 olduğundan fark 8567 - 1423 = 7144'tür. Sorunun bütün ağırlığı şu ayrımdadır: iki farklı yıldız sembolü var; ince, altı ışınlı yıldız 6, kalın yıldız 3'tür. İkisini aynı sembol sayarsanız eşleme tutmaz ve bulduğunuz fark şıkların hiçbirinde yer almaz.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ },
+ {
+  "no": 100,
+  "aciklama": "Şekil dizisinde n. şekil, üçerli n sıra ile en tepedeki boyasız tek kareden oluşur; toplam kare sayısı 3n + 1'dir ve altlarındaki 4, 7, 10, 13 sayıları bunu doğrular. Boyama en üstteki tam sıradan başlar ve aşağı doğru bir sıra atlayarak devam eder; tepedeki tek kare hiçbir şekilde boyalı değildir. Buna göre boyalı sıra sayısı n/2'nin yukarı yuvarlanmışıdır, boyalı kare sayısı ise onun 3 katı: 3, 3, 6, 6, 9, 9, 12, 12, ... 18 boyalı kare için bu değerin 6 olması gerekir, bu da n = 11 ve n = 12 şekillerinde sağlanır; yani koşulu iki şekil birden karşılar. Bu şekillerin altındaki sayılar 3 x 11 + 1 = 34 ve 3 x 12 + 1 = 37 olduğundan toplamları 71'dir. En tepedeki boyasız kareyi saymayı unutup toplamı 3n almak 33 + 36 = 69'a (C şıkkı) götürür; oysa şekillerin altında yazan sayılar o kareyi de içeriyor.",
+  "kaynak": "çözüm",
+  "kaynakUrl": null
+ }
+]

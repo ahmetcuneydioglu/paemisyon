@@ -210,14 +210,14 @@
  },
  {
   "no": 80,
-  "cevap": "C",
+  "cevap": "B",
   "guven": "yuksek",
-  "kaynak": "TDK Güncel Türkçe Sözlük, 'görüş birliği': birden çok kimsenin bir konuda aynı görüşü paylaşması; anlatım bozukluğu kuralı — gereksiz sözcük kullanımı (anlamca çakışma)",
+  "kaynak": "TDK Güncel Türkçe Sözlük — \"görüş birliği\": \"Aynı görüş ve düşüncede olma\"; \"birlik\": \"Tek, bir olma durumu\" (sozluk.gov.tr)",
   "kaynakUrl": "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi",
-  "gerekce": "Çözüm: 'görüş birliği' zaten 'görüşlerin aynı olması' demektir; başına 'aynı' getirilince anlam gereksiz yere yinelenir (anlamca çakışan sözcük kullanımı). Bozukluk III numaralı 'aynı' sözcüğü atılınca giderilir: 'Seninle sonunda görüş birliğine varmayı başardık.' I (Seninle), II (sonunda), IV (varmayı) ve V (başardık) cümlenin gerekli ögeleridir.",
+  "gerekce": "Cümlede gereksiz sözcük (anlamca çakışma) kaynaklı anlatım bozukluğu vardır: TDK'ye göre \"görüş birliği\" zaten \"aynı görüş ve düşüncede olma\" demektir, yani \"aynı\" anlamı \"birlik\" sözcüğünde bulunmaktadır; bu yüzden II numaralı \"aynı\" gereksizdir ve çıkarılmalıdır. Geriye kalan \"Seninle sonunda görüş birliğine varmayı başardık.\" cümlesi hem kurallı hem eksiksizdir; I (sonunda) zaman zarfı, III (görüş birliğine) dolaylı tümleç, IV (varmayı) nesne, V (başardık) yüklem olarak cümlede zorunludur.",
   "eskime": null,
   "dogrulanamadi": false,
-  "uyari": "Girdi metninde numara işaretleri satır sonlarına düşmüş; numaralandırmayı I=Seninle, II=sonunda, III=aynı, IV=varmayı, V=başardık olarak okudum ('görüş birliğine' deyim olduğu için numarasız). Bankaya girerken numara-sözcük eşleşmesi orijinal soru kâğıdından teyit edilmelidir."
+  "uyari": null
  },
  {
   "no": 81,

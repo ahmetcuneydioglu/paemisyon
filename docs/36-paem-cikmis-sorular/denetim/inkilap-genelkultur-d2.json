@@ -210,14 +210,14 @@
  },
  {
   "no": 80,
-  "cevap": "C",
-  "guven": "orta",
-  "kaynak": "TDK Güncel Türkçe Sözlük, 'görüş birliği: bir konuda aynı görüşü paylaşma durumu, konsensüs' — gereksiz sözcük kullanımı (anlatım bozukluğu) kuralı",
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "TDK Guncel Turkce Sozluk: \"gorus birligi\" = \"Ayni gorus ve dusuncede olma\"; deyim \"gorus birligine varmak\" = \"farkli gorus ve dusuncelerden sonra ayni gorus ve dusunceye ulasmak\"",
   "kaynakUrl": "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi",
-  "gerekce": "'Görüş birliği' zaten 'aynı görüşte olmak' demektir; 'aynı' sözcüğü bu anlamı tekrarlayan gereksiz sözcüktür (gereksiz sözcük kullanımından kaynaklanan anlatım bozukluğu). Cümle 'Seninle sonunda görüş birliğine varmayı başardık.' biçiminde düzelir; III numarası 'aynı' sözcüğünü karşılamaktadır.",
+  "gerekce": "II numarali \"ayni\" gereksiz sozcuktur: \"gorus birligi\" tamlamasindaki \"birlik\" zaten aynilik/ortaklik anlamini tasidigi icin (TDK tanimi birebir \"Ayni gorus ve dusuncede olma\") basa \"ayni\" eklemek ayni anlami ikinci kez soylemek olur; bu, anlatim bozukluklari icinde \"gereksiz sozcuk kullanimi (anlamca ayni sozcuklerin bir arada kullanilmasi)\" basligina girer ve \"Seninle sonunda gorus birligine varmayi basardik.\" cumlesi kusursuzdur. Diger numaralar cikarilamaz: I \"sonunda\" cumleye zamansal bilgi katan, atilinca anlami eksilten bir zarftir (yineleme yaratmaz); III \"gorus birligine\" yuklemin zorunlu dolayli tumleci olan ad tamlamasidir, atilinca \"varmayi\" ogesiz kalir; IV \"varmayi\" cumlenin nesnesi ve asil eylemidir; V \"basardik\" cumlenin yuklemidir, atilinca cumle yuklemsiz kalir.",
   "eskime": null,
   "dogrulanamadi": false,
-  "uyari": "Kör dosyada numaralandırma satır kırılması nedeniyle belirsiz aktarılmış (birinci satırda 5 sözcük, 3 numara var). III'ün 'aynı' sözcüğü olduğu varsayımıyla cevap C'dir; numara eşleşmesi farklıysa (ör. III = 'görüş birliğine') cevap değişebilir. Orijinal sınav kitapçığından numara yerleşimi teyit edilmeli."
+  "uyari": null
  },
  {
   "no": 81,

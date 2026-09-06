@@ -72,6 +72,26 @@ const gurultuMu = (s: string) => {
  *  komşuluğu aranır. */
 const GORSEL = /yukarıda(ki)?\s+\S*\s*(şekil|grafik|tablo)|şekil dizisi|sembolle eşleş/i;
 
+/**
+ * Sembol yazı tipiyle basılan işaretler metin katmanına Özel Kullanım Alanı
+ * (U+E000-U+F8FF) kod noktaları olarak düşüyor; uygulamada "?" kutusu görünür
+ * (Doc 33'te aynı sorun yaşandı). Bu işaretler yalnız 99. soruda var ve o
+ * sorunun görseli zaten kökün tamamını taşıyor, dolayısıyla metinden
+ * ayıklanırlar — uydurma bir karşılık konmaz.
+ */
+const PUA = /[\u{E000}-\u{F8FF}\u{F0000}-\u{FFFFD}]+/gu;
+function puaTemizle(s: string): string {
+  if (!PUA.test(s)) return s;
+  return s
+    .replace(PUA, '')
+    .replace(/\s+([,.;:?!])/g, '$1')      // işaret silinince önde kalan boşluk
+    .replace(/([.?!]),\s*/g, '$1 ')       // cümle sonuna düşen sahipsiz virgül
+    .replace(/([.?!])\s+([a-zçğıöşü])/g, (_, n, h) => `${n} ${h.toLocaleUpperCase('tr')}`)
+    .replace(/^[\s,;:]+/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 /** Sütun içi hizalama boşlukları anlam taşımaz. */
 const sadeBosluk = (s: string) => s.replace(/\s+/g, ' ').trim();
 
@@ -201,14 +221,17 @@ function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
   let aktif: { no: number; kokSatir: string[]; siklar: Record<string, string>; sonSik?: string } | null = null;
   const kapat = () => {
     if (!aktif) return;
-  const kok = iptalYazisiniSok(sadeBosluk(aktif.kokSatir.join(' ')));
+    const hamKok = iptalYazisiniSok(sadeBosluk(aktif.kokSatir.join(' ')));
+    const puaVardi = /[\u{E000}-\u{F8FF}]/u.test(hamKok);
+    const kok = puaTemizle(hamKok);
     sorular.push({
       no: aktif.no,
       grup,
       ortakMetin: ortak.get(aktif.no),
       kok,
       siklar: Object.fromEntries(Object.entries(aktif.siklar).map(([h, t]) => [h, sarkaniAt(t as string)])),
-      gorselli: GORSEL.test(kok),
+      // Sembolleri ayıklanan soru metinle anlaşılmaz; görseli zorunludur.
+      gorselli: GORSEL.test(kok) || puaVardi,
     });
     aktif = null;
   };

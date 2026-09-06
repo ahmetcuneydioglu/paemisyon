@@ -1642,25 +1642,22 @@
  {
   "no": 80,
   "parti": "inkilap-genelkultur",
-  "karar": "CELISKI",
+  "karar": "ONAY",
   "resmiCevap": "B",
-  "d1": "C",
-  "d2": "C",
+  "d1": "B",
+  "d2": "B",
   "guven": [
    "yuksek",
-   "orta"
+   "yuksek"
   ],
   "eskime": [],
-  "uyarilar": [
-   "Girdi metninde numara işaretleri satır sonlarına düşmüş; numaralandırmayı I=Seninle, II=sonunda, III=aynı, IV=varmayı, V=başardık olarak okudum ('görüş birliğine' deyim olduğu için numarasız). Bankaya girerken numara-sözcük eşleşmesi orijinal soru kâğıdından teyit edilmelidir.",
-   "Kör dosyada numaralandırma satır kırılması nedeniyle belirsiz aktarılmış (birinci satırda 5 sözcük, 3 numara var). III'ün 'aynı' sözcüğü olduğu varsayımıyla cevap C'dir; numara eşleşmesi farklıysa (ör. III = 'görüş birliğine') cevap değişebilir. Orijinal sınav kitapçığından numara yerleşimi teyit edilmeli."
-  ],
+  "uyarilar": [],
   "kaynaklar": [
    "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi",
    "https://sozluk.gov.tr/?ara=g%C3%B6r%C3%BC%C5%9F%20birli%C4%9Fi"
   ],
-  "gerekce": "Çözüm: 'görüş birliği' zaten 'görüşlerin aynı olması' demektir; başına 'aynı' getirilince anlam gereksiz yere yinelenir (anlamca çakışan sözcük kullanımı). Bozukluk III numaralı 'aynı' sözcüğü atılınca giderilir: 'Seninle sonunda görüş birliğine varmayı başardık.' I (Seninle), II (sonunda), IV (varmayı) ve V (başardık) cümlenin gerekli ögeleridir.",
-  "gerekce2": "'Görüş birliği' zaten 'aynı görüşte olmak' demektir; 'aynı' sözcüğü bu anlamı tekrarlayan gereksiz sözcüktür (gereksiz sözcük kullanımından kaynaklanan anlatım bozukluğu). Cümle 'Seninle sonunda görüş birliğine varmayı başardık.' biçiminde düzelir; III numarası 'aynı' sözcüğünü karşılamaktadır."
+  "gerekce": "Cümlede gereksiz sözcük (anlamca çakışma) kaynaklı anlatım bozukluğu vardır: TDK'ye göre \"görüş birliği\" zaten \"aynı görüş ve düşüncede olma\" demektir, yani \"aynı\" anlamı \"birlik\" sözcüğünde bulunmaktadır; bu yüzden II numaralı \"aynı\" gereksizdir ve çıkarılmalıdır. Geriye kalan \"Seninle sonunda görüş birliğine varmayı başardık.\" cümlesi hem kurallı hem eksiksizdir; I (sonunda) zaman zarfı, III (görüş birliğine) dolaylı tümleç, IV (varmayı) nesne, V (başardık) yüklem olarak cümlede zorunludur.",
+  "gerekce2": "II numarali \"ayni\" gereksiz sozcuktur: \"gorus birligi\" tamlamasindaki \"birlik\" zaten aynilik/ortaklik anlamini tasidigi icin (TDK tanimi birebir \"Ayni gorus ve dusuncede olma\") basa \"ayni\" eklemek ayni anlami ikinci kez soylemek olur; bu, anlatim bozukluklari icinde \"gereksiz sozcuk kullanimi (anlamca ayni sozcuklerin bir arada kullanilmasi)\" basligina girer ve \"Seninle sonunda gorus birligine varmayi basardik.\" cumlesi kusursuzdur. Diger numaralar cikarilamaz: I \"sonunda\" cumleye zamansal bilgi katan, atilinca anlami eksilten bir zarftir (yineleme yaratmaz); III \"gorus birligine\" yuklemin zorunlu dolayli tumleci olan ad tamlamasidir, atilinca \"varmayi\" ogesiz kalir; IV \"varmayi\" cumlenin nesnesi ve asil eylemidir; V \"basardik\" cumlenin yuklemidir, atilinca cumle yuklemsiz kalir."
  },
  {
   "no": 81,
