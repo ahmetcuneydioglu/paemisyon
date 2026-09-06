@@ -14,9 +14,22 @@ const ILK_DERSLER = 3;
  * beklentisiyle konu analizi sayfasına girip hayal kırıklığına uğraması,
  * sayfada geçirdiği üç saniyeden daha pahalıya mal olur.
  */
-export function SinavListesi({ sinavlar }: { sinavlar: CikmisSinavOzet[] }) {
+export function SinavListesi({
+  sinavlar,
+  erisilemedi = false,
+}: {
+  sinavlar: CikmisSinavOzet[];
+  /** Liste alınamadı — "içerik yok" demek YANLIŞ olur. */
+  erisilemedi?: boolean;
+}) {
   if (!sinavlar.length) {
-    return (
+    return erisilemedi ? (
+      <EmptyState
+        icon="icon-doc"
+        title="Liste şu an yüklenemedi"
+        message="Geçici bir aksaklık; birkaç dakika içinde tekrar dener misin?"
+      />
+    ) : (
       <EmptyState
         icon="icon-doc"
         title="Henüz yayında dönem yok"

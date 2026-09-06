@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
   publicApi,
+  publicApiList,
   type CikmisSinavDetay,
   type CikmisSinavOzet,
 } from "@/lib/public-api";
@@ -15,11 +16,8 @@ async function getir(slug: string): Promise<CikmisSinavDetay | null> {
 
 /** Yayındaki dönemler build sırasında üretilir; yenisi ISR ile eklenir. */
 export async function generateStaticParams() {
-  const sinavlar = await publicApi<CikmisSinavOzet[]>(
-    "/public/cikmis-sinavlar",
-    3600,
-  ).catch(() => [] as CikmisSinavOzet[]);
-  return sinavlar.map((s) => ({ slug: s.slug }));
+  const { items } = await publicApiList<CikmisSinavOzet>("/public/cikmis-sinavlar");
+  return items.map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({

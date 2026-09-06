@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { publicApi, type CikmisSinavOzet } from "@/lib/public-api";
+import { publicApiList, type CikmisSinavOzet } from "@/lib/public-api";
 import { SinavListesi } from "@/components/cikmis/sinav-listesi";
 
 export const metadata: Metadata = {
@@ -14,10 +14,8 @@ export const metadata: Metadata = {
  * İstek durumu OKUNMAZ, böylece sayfa statik üretilip edge'de önbelleklenir.
  */
 export default async function CikmisSorularPage() {
-  const sinavlar = await publicApi<CikmisSinavOzet[]>(
-    "/public/cikmis-sinavlar",
-    3600,
-  ).catch(() => [] as CikmisSinavOzet[]);
+  const { items: sinavlar, erisilemedi } =
+    await publicApiList<CikmisSinavOzet>("/public/cikmis-sinavlar");
 
   // Yeni ekranların taban yüzeyi `.tk-scope`: koyu temada doğru zemini ve
   // token'ları verir (Doc 26). Wrapper olmadan sayfa beyaz gövdede kalıyor.
@@ -36,7 +34,7 @@ export default async function CikmisSorularPage() {
           </p>
         </header>
 
-        <SinavListesi sinavlar={sinavlar} />
+        <SinavListesi sinavlar={sinavlar} erisilemedi={erisilemedi} />
 
         <section className="space-y-2 border-t border-line pt-6">
           <h2 className="font-heading text-[17px] font-bold text-ink">

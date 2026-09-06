@@ -17,6 +17,33 @@ export async function publicApi<T>(
   return json.data;
 }
 
+/**
+ * Boş dönebilen public liste çağrısı — hatayı SESSİZCE boşluğa çevirmez.
+ *
+ * `.catch(() => [])` kalıbı bir API kesintisini "içerik yok" sayfasına
+ * dönüştürüyor ve ISR o boş sayfayı bir saat önbelleğe alıyor. Ölçülen vaka:
+ * dağıtım sırasında API henüz ayağa kalkmamışken üretilen çıkmış sınav
+ * vitrini, dört dönem yayındayken "Henüz yayında dönem yok" gösterdi.
+ *
+ * Çözüm: hata durumunda KISA ömürle yeniden denenir; böylece sayfa dakikalar
+ * içinde kendini toplar ve çağıran taraf gerçekten boş mu, erişilemedi mi
+ * ayırt edebilir.
+ */
+export async function publicApiList<T>(
+  path: string,
+  revalidateSeconds = 3600,
+): Promise<{ items: T[]; erisilemedi: boolean }> {
+  try {
+    return { items: await publicApi<T[]>(path, revalidateSeconds), erisilemedi: false };
+  } catch {
+    try {
+      return { items: await publicApi<T[]>(path, 60), erisilemedi: false };
+    } catch {
+      return { items: [], erisilemedi: true };
+    }
+  }
+}
+
 // ── Tipler (backend public.service ile birebir) ──
 export interface QuestionOfDay {
   date: string;

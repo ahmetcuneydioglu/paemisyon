@@ -3,6 +3,7 @@ import { config } from "@/lib/config";
 import {
   articleSlug,
   publicApi,
+  publicApiList,
   type CikmisSinavOzet,
   type LawDetail,
   type LawSummary,
@@ -13,10 +14,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = config.siteUrl;
   const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]);
   // Çıkmış sınav dönemleri (Doc 36) — yalnız yayındakiler döner.
-  const cikmisSinavlar = await publicApi<CikmisSinavOzet[]>(
+  const { items: cikmisSinavlar } = await publicApiList<CikmisSinavOzet>(
     "/public/cikmis-sinavlar",
-    3600,
-  ).catch(() => [] as CikmisSinavOzet[]);
+  );
 
   // Madde sayfaları (Doc 27 W4): yalnız soru sayısı olan kanunların detayına inilir;
   // fetch-ISR sayesinde saatte bir tazelenir, istek maliyeti sabittir.
