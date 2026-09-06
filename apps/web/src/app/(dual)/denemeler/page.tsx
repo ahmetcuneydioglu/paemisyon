@@ -27,23 +27,15 @@ export default async function DenemelerPage() {
   ]);
 
   if (user) {
-    const attempts = await api<MyAttempt[]>("/exams/attempts/mine").catch(
-      () => [] as MyAttempt[],
-    );
-    const attemptByExam = new Map(
-      attempts
-        .filter((attempt) => attempt.exam)
-        .map((attempt) => [attempt.exam!.id, attempt] as const),
-    );
-    const exams = publicExams.map((exam) => {
-      const attempt = attemptByExam.get(exam.id);
-      return {
-        ...exam,
-        myAttempt: attempt
-          ? { id: attempt.attemptId, status: attempt.status }
-          : null,
-      };
-    });
+    // Liste girişli olarak YENİDEN çekilir. Yukarıdaki çağrı `auth: false` ve
+    // 30 sn önbellekli (misafir/SEO yolu için doğru) — ama o yanıtta kullanıcıya
+    // özel alanlar HEP null döner. Katılım bilgisi elle birleştirildiği için bu
+    // fark uzun süre görünmedi; arşiv sonucu eklenince ortaya çıktı: kullanıcı
+    // "arşiv sonucum" girişini hiç göremedi (7 Eylül 2026).
+    const [exams, attempts] = await Promise.all([
+      api<ExamListItem[]>("/exams").catch(() => publicExams),
+      api<MyAttempt[]>("/exams/attempts/mine").catch(() => [] as MyAttempt[]),
+    ]);
     return <ExamCenter exams={exams} attempts={attempts} />;
   }
 
