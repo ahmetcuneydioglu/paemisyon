@@ -1,23 +1,40 @@
 #!/usr/bin/env python3
 """
-DENEME KİTAPÇIĞI PDF ÜRETİCİSİ.
+DENEME KİTAPÇIĞI PDF ÜRETİCİSİ — sınav yayıncılığı kalitesinde.
 
-Gerçek PAEM kitapçığının düzenini birebir örnek alır (2025 PAEM İlk Derece
-Amirlik sınavı incelendi): iki sütun, koyu soru kökü, A)–E) girintili şıklar,
-sayfa üstünde küçük sınav adı + büyük kitapçık türü harfi, altta sayfa numarası.
-Üstüne bir kapak, cevap anahtarı ve tanıtım sayfası eklenir.
+TASARIM SİSTEMİ (tek kaynak: aşağıdaki DS sınıfı)
+
+  Izgara      A4 · dış kenar 17 mm · üst 20 mm · alt 17 mm
+              iki sütun, sütun arası 11 mm → sütun genişliği 82,5 mm
+              82,5 mm'de 10 pt Arial ≈ 47 karakter/satır. İki sütunlu sınav
+              kitapçığının doğal ölçüsü; tek sütun A4'te 90+ karaktere çıkar
+              ve göz satır başını kaybeder.
+
+  Tipografi   soru kökü      10 pt regular / 13,5 pt satır
+              seçenekler      9,5 pt regular / 12,4 pt satır
+              soru numarası  10 pt bold, asılı (metin bloğunun dışında)
+              üst bilgi       8 pt · alt bilgi 7,5 pt
+              Kalın yazı YALNIZ numarada ve başlıklarda. Kökün tamamını bold
+              yapmak hiyerarşiyi yok eder ve sayfayı gürültüye çevirir.
+
+  Boşluk      ölçek (mm): 1,5 · 3 · 4,5 · 6 · 9 · 12
+              kök → ilk şık 3 · şıklar arası 1,8 · sorular arası 9
+
+  Renk        Soru sayfaları: siyah metin, çok açık gri çizgi, ince lacivert
+              vurgu. SARI YOK — iç sayfalar reklam broşürü değildir.
+              Sarı yalnız kapakta ve arka kapakta.
+
+  Kural       Soru bloğu ATOMİKTİR: kök ve şıkları asla ayrılmaz, sütun/sayfa
+              sonunda bölünmez. Dul/yetim satır oluşmaz.
 
 Kullanım:
     npx tsx scripts/deneme-pdf-veri.ts <examId> > /tmp/deneme.json
     python3 scripts/deneme-pdf.py /tmp/deneme.json cikti.pdf [--kitapcik A]
-
-Kopya koruması ayrı adımdır (scripts/pdf-kilitle.py) — üretim ve koruma
-birbirine karışmasın, kilitsiz sürüm arşivde kalsın.
 """
 import json
 import os
 import sys
-from reportlab.lib.colors import Color, HexColor, white, black
+from reportlab.lib.colors import Color, HexColor, white
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
@@ -26,65 +43,122 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas as pdfcanvas
 from reportlab.platypus import Paragraph
 
-# ── Marka ────────────────────────────────────────────────────────────────
-LACIVERT = HexColor("#173F72")   # logodan alındı
-SARI = HexColor("#FFCB08")
-GRI = HexColor("#8A94A6")
-ACIK_GRI = HexColor("#E6E9EF")
+KOK_DIZIN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GORSEL = os.path.join(KOK_DIZIN, "..", "web", "public", "img")
+FONT_DIZIN = "/System/Library/Fonts/Supplemental"
 SITE = "paemisyon.com"
 
-KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # apps/api
-GORSEL = os.path.join(KOK, "..", "web", "public", "img")
-FONT_DIZIN = "/System/Library/Fonts/Supplemental"
 
-# Sayfa ölçüleri — gerçek kitapçıkla aynı sıkılıkta.
-SAYFA_G, SAYFA_Y = A4
-KENAR_SOL = 18 * mm
-KENAR_SAG = 18 * mm
-UST = 20 * mm
-ALT = 16 * mm
-SUTUN_ARA = 8 * mm
-SUTUN_G = (SAYFA_G - KENAR_SOL - KENAR_SAG - SUTUN_ARA) / 2
+class DS:
+    """Tasarım sistemi — bütün ölçüler tek yerden."""
+
+    SAYFA_G, SAYFA_Y = A4
+    SOL = SAG = 17 * mm
+    UST = 20 * mm
+    ALT = 17 * mm
+    SUTUN_ARA = 11 * mm
+    SUTUN_G = (SAYFA_G - SOL - SAG - SUTUN_ARA) / 2
+
+    BAS_ALAN = 10 * mm   # üst çizgi ile ilk satır arası
+    DIP_ALAN = 8 * mm    # son satır ile alt bilgi arası
+
+    KOK_PT, KOK_SATIR = 10, 13.5
+    SIK_PT, SIK_SATIR = 9.5, 12.4
+    BASLIK_PT = 8
+    DIPNOT_PT = 7.5
+
+    XS, SM, MD, LG, XL, XXL = 1.5 * mm, 3 * mm, 4.5 * mm, 6 * mm, 9 * mm, 12 * mm
+
+    METIN = HexColor("#111418")
+    IKINCIL = HexColor("#5B6572")
+    CIZGI = HexColor("#DCE0E6")
+    CIZGI_ACIK = HexColor("#EDEFF3")
+    ZEMIN = HexColor("#F7F8FA")
+    LACIVERT = HexColor("#173F72")
+    SARI = HexColor("#FFCB08")
+
+    ASKI = 7.5 * mm  # numara/şık harfi metin bloğunun dışında kalır
 
 
 def fontlari_kur():
-    """Arial: gerçek kitapçığın yazı tipi ve Türkçe karakterleri tam."""
     pdfmetrics.registerFont(TTFont("Ar", f"{FONT_DIZIN}/Arial.ttf"))
     pdfmetrics.registerFont(TTFont("ArB", f"{FONT_DIZIN}/Arial Bold.ttf"))
     pdfmetrics.registerFont(TTFont("ArI", f"{FONT_DIZIN}/Arial Italic.ttf"))
     pdfmetrics.registerFontFamily("Ar", normal="Ar", bold="ArB", italic="ArI")
 
 
-# Asılı girinti: numara dışarıda kalır, kökün devam satırları hizalanır —
-# gerçek kitapçıkta da böyle ve iki haneli numaralarda kayma olmaz.
-KOK_STIL = ParagraphStyle(
-    "kok", fontName="ArB", fontSize=8.6, leading=10.6, alignment=4, spaceAfter=0,
-    leftIndent=6.5 * mm, firstLineIndent=-6.5 * mm,
-)
-SIK_STIL = ParagraphStyle(
-    "sik", fontName="Ar", fontSize=8.4, leading=10.2, alignment=4,
-    leftIndent=6.5 * mm, firstLineIndent=-6.5 * mm,
-)
+def stiller():
+    return {
+        # Sola dayalı (alignment=0), iki yana yaslı DEĞİL. 47 karakterlik
+        # sütunda ReportLab hecelemediği için yaslama kelime aralarını açıyor
+        # ve satırlarda "ırmak" oluşuyordu — kurumsal kitapçıkta en göze batan
+        # kusur budur. Sağ kenarın tırtıklı olması buna yeğdir.
+        "kok": ParagraphStyle(
+            "kok", fontName="Ar", fontSize=DS.KOK_PT, leading=DS.KOK_SATIR,
+            textColor=DS.METIN, alignment=0,
+            leftIndent=DS.ASKI, firstLineIndent=-DS.ASKI,
+        ),
+        # Şıklar sola dayalı: kısa seçeneklerde iki yana yaslama kelimeleri
+        # birbirinden koparıyor. Harf asılı, devam satırları hizalı.
+        "sik": ParagraphStyle(
+            "sik", fontName="Ar", fontSize=DS.SIK_PT, leading=DS.SIK_SATIR,
+            textColor=DS.METIN, alignment=0,
+            leftIndent=DS.ASKI + 6.5 * mm, firstLineIndent=-6.5 * mm,
+        ),
+    }
 
 
-def kacis(s: str) -> str:
+def kacis(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def soru_blogu(q):
-    """Bir sorunun (kök + şıklar) akış parçaları ve toplam yüksekliği."""
-    parcalar = [Paragraph(f"<b>{q['order']}.</b>&nbsp;&nbsp;{kacis(q['stem'])}", KOK_STIL)]
+def sinav_adi(baslik):
+    """'Paem 10 Deneme Sınavı-1' → 'PAEM 10 DENEME SINAVI – 1'."""
+    b = baslik.upper()
+    for ayrac in ("SINAVI-", "SINAVI -", "SINAVI –"):
+        if ayrac in b:
+            return b.replace(ayrac, "SINAVI – ")
+    return b
+
+
+# ── Soru bloğu ───────────────────────────────────────────────────────────
+def soru_parcalari(q, st):
+    """(paragraf, altındaki boşluk) çiftleri. Blok atomiktir."""
+    p = [(Paragraph(f'<font name="ArB">{q["order"]}.</font>&nbsp;&nbsp;{kacis(q["stem"])}',
+                    st["kok"]), DS.SM)]
     for o in q["options"]:
-        parcalar.append(Paragraph(f"{kacis(o['label'])})&nbsp;&nbsp;{kacis(o['text'])}", SIK_STIL))
-    return parcalar
+        p.append((Paragraph(f'{kacis(o["label"])})&nbsp;&nbsp;{kacis(o["text"])}', st["sik"]),
+                  1.8 * mm))
+    return p
 
 
 def blok_yuksekligi(parcalar, genislik):
-    y = 0.0
-    for i, p in enumerate(parcalar):
-        _, h = p.wrap(genislik, 10_000)
-        y += h + (1.6 * mm if i == 0 else 0.9 * mm)
-    return y
+    return sum(par.wrap(genislik, 10_000)[1] + bosluk for par, bosluk in parcalar)
+
+
+# ── Sayfa çerçevesi ──────────────────────────────────────────────────────
+def cerceve(c, ad, kitapcik, sayfa_no, sutun_cizgisi=True):
+    ust_y = DS.SAYFA_Y - DS.UST
+    c.setFont("Ar", DS.BASLIK_PT)
+    c.setFillColor(DS.IKINCIL)
+    c.drawString(DS.SOL, ust_y + 3.5 * mm, f"{ad}  |  {kitapcik} Kitapçığı")
+    c.setStrokeColor(DS.LACIVERT)
+    c.setLineWidth(0.9)
+    c.line(DS.SOL, ust_y + 1.5 * mm, DS.SAYFA_G - DS.SAG, ust_y + 1.5 * mm)
+
+    if sutun_cizgisi:
+        c.setStrokeColor(DS.CIZGI_ACIK)
+        c.setLineWidth(0.6)
+        x = DS.SOL + DS.SUTUN_G + DS.SUTUN_ARA / 2
+        c.line(x, DS.ALT + 4 * mm, x, ust_y - 2 * mm)
+
+    c.setStrokeColor(DS.CIZGI_ACIK)
+    c.setLineWidth(0.6)
+    c.line(DS.SOL, DS.ALT + 1 * mm, DS.SAYFA_G - DS.SAG, DS.ALT + 1 * mm)
+    c.setFont("Ar", DS.DIPNOT_PT)
+    c.setFillColor(DS.IKINCIL)
+    c.drawString(DS.SOL, DS.ALT - 3 * mm, SITE)
+    c.drawRightString(DS.SAYFA_G - DS.SAG, DS.ALT - 3 * mm, str(sayfa_no))
 
 
 # ── Kapak ────────────────────────────────────────────────────────────────
@@ -92,432 +166,416 @@ ACIKLAMALAR = [
     "Bu kitapçıkta <b>{soru} soru</b> vardır. Sınav süresi <b>{sure} dakikadır</b>.",
     "Her sorunun beş seçeneği vardır; yalnızca <b>bir</b> seçenek doğrudur.",
     "Değerlendirmede <b>dört yanlış bir doğruyu götürür</b>. Net = Doğru − (Yanlış / 4).",
-    "Cevaplarınızı, kitapçığın sonundaki cevap kâğıdına ya da ayrı bir kâğıda "
-    "soru numarasıyla eşleştirerek işaretleyiniz.",
-    "Sınav süresince kaynak, hesap makinesi ve iletişim aracı kullanmayınız; "
-    "gerçek sınav koşullarını birebir uygulamanız denemenin ölçme değerini artırır.",
-    "Süre bitiminde cevaplarınızı kitapçık sonundaki <b>cevap anahtarıyla</b> "
-    "karşılaştırınız; ayrıntılı çözümler ve konu bazlı analiz için denemeyi "
-    "<b>{site}</b> üzerinden çevrim içi çözebilirsiniz.",
+    "Cevaplarınızı ayrı bir kâğıda soru numarasıyla eşleştirerek işaretleyiniz.",
+    "Sınav süresince kaynak, hesap makinesi ve iletişim aracı kullanmayınız. Deneme, "
+    "ancak gerçek sınav koşullarında çözüldüğünde netiniz hakkında bilgi verir.",
+    "Süre bitiminde cevaplarınızı kitapçık sonundaki <b>cevap anahtarı</b> ile "
+    "karşılaştırınız.",
 ]
 
 
-def qr_gorseli(veri: str, yol: str):
-    import qrcode
-    img = qrcode.QRCode(border=1, box_size=10, error_correction=qrcode.constants.ERROR_CORRECT_M)
-    img.add_data(veri)
-    img.make(fit=True)
-    img.make_image(fill_color="#173F72", back_color="white").save(yol)
-    return yol
-
-
 def kapak(c, d, kitapcik):
-    g, y = SAYFA_G, SAYFA_Y
+    g, y = DS.SAYFA_G, DS.SAYFA_Y
+    ad = sinav_adi(d["title"])
 
-    # Üst lacivert şerit + logo
-    c.setFillColor(LACIVERT)
-    c.rect(0, y - 32 * mm, g, 32 * mm, stroke=0, fill=1)
-    # Logo lacivert harflidir; koyu şeritte kaybolur — beyaz levha üstüne basılır.
+    # Üst kimlik satırı — ince ve kurumsal; büyük logo bloğu yok.
     logo = os.path.join(GORSEL, "logo2.png")
-    c.setFillColor(white)
-    c.roundRect(KENAR_SOL, y - 25.5 * mm, 58 * mm, 17 * mm, 2.5 * mm, stroke=0, fill=1)
     if os.path.exists(logo):
-        c.drawImage(logo, KENAR_SOL + 5 * mm, y - 23 * mm, width=48 * mm, height=14.1 * mm,
-                    mask="auto")
-    c.setFont("Ar", 8.5)
-    c.setFillColor(Color(1, 1, 1, 0.75))
-    c.drawRightString(g - KENAR_SAG, y - 15 * mm, "Polis Amirleri Eğitimi Merkezi sınavına hazırlık")
-    c.drawRightString(g - KENAR_SAG, y - 20 * mm, SITE)
+        c.drawImage(logo, DS.SOL, y - 24 * mm, width=41 * mm, height=12 * mm, mask="auto")
+    c.setFont("Ar", 8)
+    c.setFillColor(DS.IKINCIL)
+    c.drawRightString(g - DS.SAG, y - 16 * mm,
+                      "Polis Amirleri Eğitimi Merkezi sınavına hazırlık")
+    c.drawRightString(g - DS.SAG, y - 20.5 * mm, SITE)
+    c.setStrokeColor(DS.LACIVERT)
+    c.setLineWidth(1.1)
+    c.line(DS.SOL, y - 29 * mm, g - DS.SAG, y - 29 * mm)
 
-    # Kitapçık türü kutusu
-    kb = 22 * mm
+    # Başlık
+    bas = y - 46 * mm
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 22)
+    c.drawString(DS.SOL, bas, ad)
+    c.setFillColor(DS.METIN)
+    c.setFont("Ar", 11)
+    c.drawString(DS.SOL, bas - 8 * mm, "İlk Derece Amirlik Eğitimi Yazılı Sınavı Denemesi")
+
+    # Kitapçık türü
+    kb = 24 * mm
+    c.setStrokeColor(DS.LACIVERT)
+    c.setLineWidth(1.1)
     c.setFillColor(white)
-    c.setStrokeColor(LACIVERT)
-    c.setLineWidth(1.2)
-    c.rect(g - KENAR_SAG - kb, y - 62 * mm, kb, kb, stroke=1, fill=1)
-    c.setFillColor(LACIVERT)
+    c.rect(g - DS.SAG - kb, bas - 9 * mm, kb, kb, stroke=1, fill=1)
+    c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 6.6)
-    c.drawCentredString(g - KENAR_SAG - kb / 2, y - 46.5 * mm, "KİTAPÇIK TÜRÜ")
-    c.setFont("ArB", 20)
-    c.drawCentredString(g - KENAR_SAG - kb / 2, y - 57 * mm, kitapcik)
+    c.drawCentredString(g - DS.SAG - kb / 2, bas + 9.5 * mm, "KİTAPÇIK TÜRÜ")
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 22)
+    c.drawCentredString(g - DS.SAG - kb / 2, bas - 2 * mm, kitapcik)
 
-    # Başlık bloğu
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 21)
-    c.drawString(KENAR_SOL, y - 48 * mm, d["title"].upper())
-    c.setFillColor(black)
-    c.setFont("Ar", 10.5)
-    c.drawString(KENAR_SOL, y - 55.5 * mm, "İLK DERECE AMİRLİK EĞİTİMİ YAZILI SINAVI DENEMESİ")
-    c.setFillColor(SARI)
-    c.rect(KENAR_SOL, y - 60 * mm, 34 * mm, 1.6 * mm, stroke=0, fill=1)
-
-    # Künye kutuları
-    ust = y - 72 * mm
-    kutu_y = 15 * mm
-    kutular = [("SORU SAYISI", str(d["questionCount"])),
-               ("SÜRE", f"{d['durationMinutes']} dakika"),
-               ("PUANLAMA", "4 yanlış = 1 doğru")]
-    kg = (g - KENAR_SOL - KENAR_SAG - 2 * 4 * mm) / 3
-    for i, (b, v) in enumerate(kutular):
-        x = KENAR_SOL + i * (kg + 4 * mm)
-        c.setFillColor(HexColor("#F4F6FA"))
-        c.setStrokeColor(ACIK_GRI)
-        c.setLineWidth(0.8)
-        c.rect(x, ust - kutu_y, kg, kutu_y, stroke=1, fill=1)
-        c.setFillColor(GRI)
+    # Künye şeridi
+    ky = bas - 26 * mm
+    c.setFillColor(DS.ZEMIN)
+    c.setStrokeColor(DS.CIZGI)
+    c.setLineWidth(0.7)
+    c.rect(DS.SOL, ky - 16 * mm, g - DS.SOL - DS.SAG, 16 * mm, stroke=1, fill=1)
+    kolon = (g - DS.SOL - DS.SAG) / 3
+    for i, (etiket, deger) in enumerate(
+        [("SORU SAYISI", str(d["questionCount"])),
+         ("SÜRE", f"{d['durationMinutes']} dakika"),
+         ("PUANLAMA", "4 yanlış = 1 doğru")]
+    ):
+        x = DS.SOL + i * kolon + 6 * mm
+        c.setFillColor(DS.IKINCIL)
         c.setFont("Ar", 6.8)
-        c.drawString(x + 4 * mm, ust - 5.6 * mm, b)
-        c.setFillColor(LACIVERT)
-        c.setFont("ArB", 11)
-        c.drawString(x + 4 * mm, ust - 11.8 * mm, v)
+        c.drawString(x, ky - 6 * mm, etiket)
+        c.setFillColor(DS.LACIVERT)
+        c.setFont("ArB", 11.5)
+        c.drawString(x, ky - 12.5 * mm, deger)
+        if i:
+            c.setStrokeColor(DS.CIZGI)
+            c.line(DS.SOL + i * kolon, ky - 16 * mm, DS.SOL + i * kolon, ky)
 
     # Aday alanı
-    ay = ust - kutu_y - 12 * mm
-    c.setFillColor(black)
-    c.setFont("ArB", 8.6)
-    c.drawString(KENAR_SOL, ay, "ADAYIN")
-    c.setFont("Ar", 8.6)
-    satirlar = [("ADI SOYADI", 96 * mm), ("T.C. KİMLİK NO", 52 * mm)]
-    yy = ay - 8 * mm
-    for etiket, uzunluk in satirlar:
-        c.setFillColor(GRI)
-        c.drawString(KENAR_SOL, yy, f"{etiket}")
-        c.setStrokeColor(ACIK_GRI)
-        c.setLineWidth(0.8)
-        c.line(KENAR_SOL + 34 * mm, yy - 1.2 * mm, KENAR_SOL + 34 * mm + uzunluk, yy - 1.2 * mm)
-        yy -= 8.5 * mm
+    ay = ky - 16 * mm - 14 * mm
+    c.setFillColor(DS.METIN)
+    c.setFont("ArB", 8.4)
+    c.drawString(DS.SOL, ay, "ADAYIN")
+    yy = ay - 9 * mm
+    for etiket, uzunluk in [("ADI SOYADI", 104 * mm), ("T.C. KİMLİK NO", 58 * mm)]:
+        c.setFillColor(DS.IKINCIL)
+        c.setFont("Ar", 8.6)
+        c.drawString(DS.SOL, yy, etiket)
+        c.setStrokeColor(DS.CIZGI)
+        c.setLineWidth(0.7)
+        c.line(DS.SOL + 36 * mm, yy - 1.4 * mm, DS.SOL + 36 * mm + uzunluk, yy - 1.4 * mm)
+        yy -= 10 * mm
 
-    # Açıklamalar kutusu
-    ky = yy - 4 * mm
-    metin = [a.format(soru=d["questionCount"], sure=d["durationMinutes"], site=SITE)
-             for a in ACIKLAMALAR]
-    stil = ParagraphStyle("ack", fontName="Ar", fontSize=8.4, leading=11.6, alignment=4,
-                          leftIndent=6 * mm, firstLineIndent=-6 * mm)
-    paras = [Paragraph(f"<b>{i+1}.</b>&nbsp;&nbsp;{t}", stil) for i, t in enumerate(metin)]
-    ic_g = g - KENAR_SOL - KENAR_SAG - 12 * mm
-    yuk = sum(p.wrap(ic_g, 10_000)[1] + 2.4 * mm for p in paras) + 14 * mm
+    # Açıklamalar
+    st = ParagraphStyle("ack", fontName="Ar", fontSize=9, leading=13, alignment=4,
+                        textColor=DS.METIN, leftIndent=6.5 * mm, firstLineIndent=-6.5 * mm)
+    paras = [Paragraph(f'<font name="ArB">{i+1}.</font>&nbsp;&nbsp;' +
+                       a.format(soru=d["questionCount"], sure=d["durationMinutes"]), st)
+             for i, a in enumerate(ACIKLAMALAR)]
+    ic_g = g - DS.SOL - DS.SAG - 14 * mm
+    yuk = sum(p.wrap(ic_g, 10_000)[1] + DS.SM for p in paras) + 15 * mm
+
+    ky2 = yy - 1 * mm
     c.setFillColor(white)
-    c.setStrokeColor(LACIVERT)
-    c.setLineWidth(1)
-    c.rect(KENAR_SOL, ky - yuk, g - KENAR_SOL - KENAR_SAG, yuk, stroke=1, fill=1)
-    c.setFillColor(LACIVERT)
-    c.rect(KENAR_SOL, ky - 8 * mm, g - KENAR_SOL - KENAR_SAG, 8 * mm, stroke=0, fill=1)
+    c.setStrokeColor(DS.CIZGI)
+    c.setLineWidth(0.8)
+    c.rect(DS.SOL, ky2 - yuk, g - DS.SOL - DS.SAG, yuk, stroke=1, fill=1)
+    c.setFillColor(DS.LACIVERT)
+    c.rect(DS.SOL, ky2 - 8.5 * mm, g - DS.SOL - DS.SAG, 8.5 * mm, stroke=0, fill=1)
     c.setFillColor(white)
     c.setFont("ArB", 8.4)
-    c.drawString(KENAR_SOL + 6 * mm, ky - 5.6 * mm, "SINAVLA İLGİLİ AÇIKLAMALAR")
-    yy = ky - 8 * mm - 5 * mm
+    c.drawString(DS.SOL + 7 * mm, ky2 - 5.9 * mm, "SINAVLA İLGİLİ AÇIKLAMALAR")
+    yy2 = ky2 - 8.5 * mm - 5.5 * mm
     for p in paras:
         _, h = p.wrap(ic_g, 10_000)
-        p.drawOn(c, KENAR_SOL + 6 * mm, yy - h)
-        yy -= h + 2.4 * mm
+        p.drawOn(c, DS.SOL + 7 * mm, yy2 - h)
+        yy2 -= h + DS.SM
 
-    # Bölüm dağılımı — kapağın ortasındaki boşluğu dolduran ve gerçekten
-    # bilgi veren tek şey: adayın hangi dersten kaç soru geleceğini bilmesi.
-    dy = yy - 12 * mm
-    c.setFillColor(black)
-    c.setFont("ArB", 8.6)
-    c.drawString(KENAR_SOL, dy, "SORU DAĞILIMI")
-    dy -= 6 * mm
+    # Soru dağılımı
+    dy = ky2 - yuk - 12 * mm
+    c.setFillColor(DS.METIN)
+    c.setFont("ArB", 8.4)
+    c.drawString(DS.SOL, dy, "SORU DAĞILIMI")
+    dy -= 6.5 * mm
     dagilim = {}
     for q in d["questions"]:
         dagilim[q["course"]] = dagilim.get(q["course"], 0) + 1
-    siralı = sorted(dagilim.items(), key=lambda kv: (-kv[1], kv[0]))
-    kolon = (g - KENAR_SOL - KENAR_SAG) / 2
-    for i, (ders, adet) in enumerate(siralı):
-        x = KENAR_SOL + (i % 2) * kolon
-        satir_y = dy - (i // 2) * 6.2 * mm
-        c.setFillColor(black)
-        c.setFont("Ar", 8.4)
-        c.drawString(x, satir_y, ders)
-        c.setFillColor(LACIVERT)
-        c.setFont("ArB", 8.4)
-        c.drawString(x + kolon - 16 * mm, satir_y, f"{adet} soru")
-        c.setStrokeColor(HexColor("#EDF0F5"))
+    sirali = sorted(dagilim.items(), key=lambda kv: (-kv[1], kv[0]))
+    kol = (g - DS.SOL - DS.SAG) / 2
+    for i, (ders, adet) in enumerate(sirali):
+        x = DS.SOL + (i % 2) * kol
+        sy = dy - (i // 2) * 6.4 * mm
+        c.setFillColor(DS.METIN)
+        c.setFont("Ar", 8.8)
+        c.drawString(x, sy, ders)
+        c.setFillColor(DS.LACIVERT)
+        c.setFont("ArB", 8.8)
+        c.drawRightString(x + kol - 8 * mm, sy, str(adet))
+        c.setStrokeColor(DS.CIZGI_ACIK)
         c.setLineWidth(0.6)
-        c.line(x, satir_y - 2 * mm, x + kolon - 6 * mm, satir_y - 2 * mm)
-    dy -= ((len(siralı) + 1) // 2) * 6.2 * mm + 6 * mm
+        c.line(x, sy - 2.2 * mm, x + kol - 8 * mm, sy - 2.2 * mm)
 
-    # DİKKAT şeridi
-    c.setFillColor(SARI)
-    c.rect(KENAR_SOL, dy - 9 * mm, g - KENAR_SOL - KENAR_SAG, 9 * mm, stroke=0, fill=1)
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 8.2)
-    c.drawString(KENAR_SOL + 5 * mm, dy - 5.8 * mm,
-                 "DİKKAT: Süreyi tam tutunuz. Deneme, ancak gerçek sınav koşullarında "
-                 "çözüldüğünde netiniz hakkında bilgi verir.")
-
-    # Alt tanıtım şeridi
-    sy = 30 * mm
-    c.setFillColor(HexColor("#F4F6FA"))
-    c.rect(0, 0, g, sy, stroke=0, fill=1)
-    c.setFillColor(SARI)
-    c.rect(0, sy - 1.6 * mm, g, 1.6 * mm, stroke=0, fill=1)
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 10.5)
-    c.drawString(KENAR_SOL, sy - 10 * mm, "Aynı denemeyi çevrim içi çöz, netini anında gör")
-    c.setFillColor(black)
+    # Alt marka bandı — sınav alanına karışmaz; rozet/QR arka kapakta.
+    # Izgaraya uyar: alt kenar boşluğunun (17 mm) ÜSTÜNDE kalır.
+    c.setStrokeColor(DS.CIZGI)
+    c.setLineWidth(0.7)
+    c.line(DS.SOL, DS.ALT + 14 * mm, g - DS.SAG, DS.ALT + 14 * mm)
+    c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 8.2)
-    c.drawString(KENAR_SOL, sy - 15.5 * mm, "Soru bazlı çözüm · konu bazlı kayıp analizi · sıralama")
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 9.5)
-    c.drawString(KENAR_SOL, sy - 21.5 * mm, SITE)
-    bx = g - KENAR_SAG - 26 * mm - 6 * mm - 62 * mm
-    for i, (ad, gen) in enumerate([("appStore.png", 26 * mm), ("playStore.png", 30 * mm)]):
-        yol = os.path.join(GORSEL, ad)
-        if os.path.exists(yol):
-            c.drawImage(yol, bx + i * 32 * mm, sy - 20 * mm,
-                        width=gen, height=gen * 34 / (96 if i == 0 else 114), mask="auto")
-    qr = qr_gorseli(f"https://{SITE}/denemeler", "/tmp/_qr.png")
-    c.drawImage(qr, g - KENAR_SAG - 24 * mm, sy - 26 * mm, width=24 * mm, height=24 * mm)
+    c.drawString(DS.SOL, DS.ALT + 8 * mm,
+                 "Bu deneme Paemisyon soru bankasından hazırlanmıştır. Çözümler, konu bazlı")
+    c.drawString(DS.SOL, DS.ALT + 3.5 * mm, "analiz ve sıralama için")
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 9)
+    c.drawString(DS.SOL + 37.5 * mm, DS.ALT + 3.5 * mm, SITE)
     c.showPage()
 
 
 # ── Soru sayfaları ───────────────────────────────────────────────────────
-def sayfa_cercevesi(c, d, kitapcik, sayfa_no, sutun_ayraci=True):
-    c.setFillColor(black)
-    c.setFont("Ar", 7.4)
-    c.drawString(KENAR_SOL, SAYFA_Y - 12 * mm, f"{d['title'].upper()} - {kitapcik}")
-    c.setFont("ArB", 17)
-    c.setFillColor(LACIVERT)
-    c.drawRightString(SAYFA_G - KENAR_SAG, SAYFA_Y - 14 * mm, kitapcik)
-    c.setStrokeColor(ACIK_GRI)
-    c.setLineWidth(0.7)
-    c.line(KENAR_SOL, SAYFA_Y - 15.5 * mm, SAYFA_G - KENAR_SAG, SAYFA_Y - 15.5 * mm)
-    if sutun_ayraci:
-        c.setStrokeColor(HexColor("#C9CFDA"))
-        x = KENAR_SOL + SUTUN_G + SUTUN_ARA / 2
-        c.line(x, ALT + 4 * mm, x, SAYFA_Y - UST + 2 * mm)
-    c.setFillColor(black)
-    c.setFont("Ar", 8)
-    c.drawCentredString(SAYFA_G / 2, ALT - 4 * mm, str(sayfa_no))
-    c.setFillColor(GRI)
-    c.setFont("Ar", 6.4)
-    c.drawRightString(SAYFA_G - KENAR_SAG, ALT - 4 * mm, SITE)
-
-
-def sorular(c, d, kitapcik, ilk_sayfa):
-    tepe = SAYFA_Y - UST
-    dip = ALT + 6 * mm
-    sayfa = ilk_sayfa
-    sutun = 0
-    y = tepe
-    sayfa_cercevesi(c, d, kitapcik, sayfa)
+def sorular(c, d, kitapcik, ilk_sayfa, st):
+    ad = sinav_adi(d["title"])
+    tepe = DS.SAYFA_Y - DS.UST - DS.BAS_ALAN
+    dip = DS.ALT + DS.DIP_ALAN
+    sayfa, sutun, y = ilk_sayfa, 0, tepe
+    cerceve(c, ad, kitapcik, sayfa)
 
     for q in d["questions"]:
-        parcalar = soru_blogu(q)
-        h = blok_yuksekligi(parcalar, SUTUN_G)
-        if y - h < dip:
+        parcalar = soru_parcalari(q, st)
+        h = blok_yuksekligi(parcalar, DS.SUTUN_G)
+        if y - h < dip:  # blok atomik — komple taşınır
             sutun += 1
             if sutun > 1:
                 c.showPage()
                 sayfa += 1
-                sayfa_cercevesi(c, d, kitapcik, sayfa)
+                cerceve(c, ad, kitapcik, sayfa)
                 sutun = 0
             y = tepe
-        x = KENAR_SOL + sutun * (SUTUN_G + SUTUN_ARA)
-        for i, p in enumerate(parcalar):
-            _, ph = p.wrap(SUTUN_G, 10_000)
-            y -= ph + (1.6 * mm if i == 0 else 0.9 * mm)
-            p.drawOn(c, x, y)
-        y -= 5.5 * mm  # sorular arası nefes
+        x = DS.SOL + sutun * (DS.SUTUN_G + DS.SUTUN_ARA)
+        for par, bosluk in parcalar:
+            _, ph = par.wrap(DS.SUTUN_G, 10_000)
+            y -= ph + bosluk
+            par.drawOn(c, x, y)
+        y -= DS.XL - 1.8 * mm  # sorular arası nefes (son şık boşluğu düşülür)
     c.showPage()
     return sayfa + 1
 
 
 # ── Cevap anahtarı ───────────────────────────────────────────────────────
 def cevap_anahtari(c, d, kitapcik, sayfa_no):
-    sayfa_cercevesi(c, d, kitapcik, sayfa_no, sutun_ayraci=False)
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 15)
-    c.drawString(KENAR_SOL, SAYFA_Y - 28 * mm, "CEVAP ANAHTARI")
-    c.setFillColor(black)
-    c.setFont("Ar", 8.4)
-    c.drawString(KENAR_SOL, SAYFA_Y - 34 * mm,
-                 "Netini hesapla: Doğru − (Yanlış / 4).  Ayrıntılı çözümler ve konu analizi için "
-                 f"{SITE} üzerinden çöz.")
+    """Yalnız anahtar tablosu — net/analiz bir sonraki sayfada.
+
+    Tek sayfaya sığdırmayı denedik ve ders tablosu alt bilgiye taşıyordu;
+    sıkıştırmak yerine ayırmak doğrusu: iki tablo da tarama kolaylığını
+    boşluktan alıyor."""
+    g = DS.SAYFA_G
+    ad = sinav_adi(d["title"])
+    cerceve(c, ad, kitapcik, sayfa_no, sutun_cizgisi=False)
+
+    y = DS.SAYFA_Y - DS.UST - 6 * mm
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 14)
+    c.drawString(DS.SOL, y, "CEVAP ANAHTARI")
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("Ar", 8.6)
+    c.drawString(DS.SOL, y - 6.5 * mm,
+                 "Cevaplarınızı karşılaştırın; netinizi ve ders bazlı dökümünüzü "
+                 "bir sonraki sayfadaki tablolarla çıkarın.")
 
     qs = d["questions"]
     sut = 5
     satir = (len(qs) + sut - 1) // sut
-    hg = (SAYFA_G - KENAR_SOL - KENAR_SAG) / sut
-    hy = 6.5 * mm
-    y0 = SAYFA_Y - 42 * mm
+    tg = (g - DS.SOL - DS.SAG) / sut
+    ty = 8.6 * mm
+    y0 = y - 18 * mm
+
+    c.setFillColor(DS.ZEMIN)
+    c.rect(DS.SOL, y0 - 7 * mm, g - DS.SOL - DS.SAG, 7 * mm, stroke=0, fill=1)
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("ArB", 6.8)
+    for k in range(sut):
+        c.drawString(DS.SOL + k * tg + 5 * mm, y0 - 4.7 * mm, "SORU")
+        c.drawString(DS.SOL + k * tg + 22 * mm, y0 - 4.7 * mm, "CEVAP")
+    y0 -= 7 * mm
+
     for i, q in enumerate(qs):
-        s = i % satir
-        k = i // satir
-        x = KENAR_SOL + k * hg
-        yy = y0 - s * hy
-        if s % 2 == 0:
-            c.setFillColor(HexColor("#F4F6FA"))
-            c.rect(x, yy - 2.2 * mm, hg - 3 * mm, hy - 1 * mm, stroke=0, fill=1)
-        c.setFillColor(GRI)
-        c.setFont("Ar", 8)
-        c.drawString(x + 2.5 * mm, yy, f"{q['order']}.")
-        c.setFillColor(LACIVERT)
-        c.setFont("ArB", 9)
-        c.drawString(x + 12 * mm, yy, q["answer"])
-
-    # Kendi netini hesapla — anahtarın altındaki boşluğu dolduran ve gerçekten
-    # işe yarayan kısım: aday burada durup kendi tablosunu doldurur.
-    ty = y0 - satir * hy - 9 * mm
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 11)
-    c.drawString(KENAR_SOL, ty, "NETİNİ HESAPLA")
-    ty -= 8 * mm
-    alanlar = [("DOĞRU", 26 * mm), ("YANLIŞ", 26 * mm), ("BOŞ", 26 * mm), ("NET", 34 * mm)]
-    x = KENAR_SOL
-    for etiket, gen in alanlar:
-        c.setFillColor(HexColor("#F4F6FA"))
-        c.setStrokeColor(ACIK_GRI)
-        c.setLineWidth(0.8)
-        c.rect(x, ty - 13 * mm, gen, 13 * mm, stroke=1, fill=1)
-        c.setFillColor(GRI)
-        c.setFont("Ar", 6.6)
-        c.drawString(x + 3 * mm, ty - 4.6 * mm, etiket)
-        x += gen + 4 * mm
-    c.setFillColor(black)
-    c.setFont("Ar", 8.4)
-    c.drawString(x + 2 * mm, ty - 8 * mm, "Net = Doğru − (Yanlış / 4)")
-
-    # Ders bazlı kendi kendini değerlendirme çizelgesi.
-    ty -= 20 * mm
-    c.setFillColor(LACIVERT)
-    c.setFont("ArB", 11)
-    c.drawString(KENAR_SOL, ty, "DERS BAZLI DÖKÜM")
-    c.setFillColor(GRI)
-    c.setFont("Ar", 7.6)
-    c.drawString(KENAR_SOL + 42 * mm, ty,
-                 "— hangi dersten kaç net yaptığını yaz; çalışma sıranı bu tablo belirler")
-    ty -= 7 * mm
-    dagilim = {}
-    for q in qs:
-        dagilim[q["course"]] = dagilim.get(q["course"], 0) + 1
-    genislik = SAYFA_G - KENAR_SOL - KENAR_SAG
-    c.setFillColor(HexColor("#F4F6FA"))
-    c.rect(KENAR_SOL, ty - 5.6 * mm, genislik, 5.6 * mm, stroke=0, fill=1)
-    c.setFillColor(GRI)
-    c.setFont("ArB", 7)
-    for etiket, dx in [("DERS", 3), ("SORU", 96), ("DOĞRU", 116), ("YANLIŞ", 138), ("NET", 162)]:
-        c.drawString(KENAR_SOL + dx * mm, ty - 3.9 * mm, etiket)
-    ty -= 5.6 * mm
-    for ders, adet in sorted(dagilim.items(), key=lambda kv: (-kv[1], kv[0])):
-        c.setFillColor(black)
-        c.setFont("Ar", 8.2)
-        c.drawString(KENAR_SOL + 3 * mm, ty - 5 * mm, ders)
-        c.setFont("ArB", 8.2)
-        c.setFillColor(LACIVERT)
-        c.drawString(KENAR_SOL + 96 * mm, ty - 5 * mm, str(adet))
-        c.setStrokeColor(HexColor("#EDF0F5"))
-        c.setLineWidth(0.6)
-        c.line(KENAR_SOL, ty - 6.2 * mm, KENAR_SOL + genislik, ty - 6.2 * mm)
-        ty -= 6.2 * mm
-
-    c.setFillColor(GRI)
-    c.setFont("ArI", 8)
-    c.drawString(KENAR_SOL, ty - 6 * mm,
-                 f"Bu dökümü elle tutmak zorunda değilsin: aynı denemeyi {SITE} üzerinden "
-                 "çözersen konu bazlı kaybını otomatik çıkarır.")
+        sr, k = i % satir, i // satir
+        x = DS.SOL + k * tg
+        yy = y0 - sr * ty
+        c.setStrokeColor(DS.CIZGI_ACIK)
+        c.setLineWidth(0.5)
+        c.line(x, yy - ty + 2.6 * mm, x + tg - 7 * mm, yy - ty + 2.6 * mm)
+        c.setFillColor(DS.IKINCIL)
+        c.setFont("Ar", 8.8)
+        c.drawString(x + 5 * mm, yy - 5.2 * mm, str(q["order"]))
+        c.setFillColor(DS.METIN)
+        c.setFont("ArB", 9.6)
+        c.drawString(x + 22 * mm, yy - 5.2 * mm, q["answer"])
     c.showPage()
     return sayfa_no + 1
 
 
-# ── Tanıtım sayfası ──────────────────────────────────────────────────────
+def analiz_sayfasi(c, d, kitapcik, sayfa_no):
+    """Net hesabı + ders bazlı döküm — doldurulabilir hücrelerle."""
+    g = DS.SAYFA_G
+    ad = sinav_adi(d["title"])
+    cerceve(c, ad, kitapcik, sayfa_no, sutun_cizgisi=False)
+
+    y = DS.SAYFA_Y - DS.UST - 6 * mm
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 14)
+    c.drawString(DS.SOL, y, "NETİNİZİ HESAPLAYIN")
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("Ar", 8.6)
+    c.drawString(DS.SOL, y - 6.5 * mm,
+                 "Önce toplam netinizi, sonra hangi dersten kaç net yaptığınızı yazın.")
+
+    ny = y - 18 * mm
+    x = DS.SOL
+    for etiket, gen in [("DOĞRU", 34 * mm), ("YANLIŞ", 34 * mm),
+                        ("BOŞ", 34 * mm), ("NET", 42 * mm)]:
+        c.setFillColor(white)
+        c.setStrokeColor(DS.CIZGI)
+        c.setLineWidth(0.8)
+        c.rect(x, ny - 16 * mm, gen, 16 * mm, stroke=1, fill=1)
+        c.setFillColor(DS.IKINCIL)
+        c.setFont("Ar", 7)
+        c.drawString(x + 4 * mm, ny - 5.4 * mm, etiket)
+        x += gen + 5 * mm
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("Ar", 9)
+    c.drawString(DS.SOL, ny - 22 * mm, "Net = Doğru − (Yanlış / 4)")
+
+    # Ders bazlı döküm — doldurulabilir hücreler
+    dy = ny - 38 * mm
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 14)
+    c.drawString(DS.SOL, dy, "DERS BAZLI DÖKÜM")
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("Ar", 8.6)
+    c.drawString(DS.SOL, dy - 6.5 * mm,
+                 "En çok neti nerede kaybettiyseniz çalışmaya oradan başlayın.")
+    dy -= 16 * mm
+
+    genislik = g - DS.SOL - DS.SAG
+    kolonlar = [("DERS", DS.SOL + 4 * mm), ("SORU", DS.SOL + 96 * mm),
+                ("DOĞRU", DS.SOL + 118 * mm), ("YANLIŞ", DS.SOL + 143 * mm),
+                ("NET", DS.SOL + 168 * mm)]
+    ayrac_x = [DS.SOL + 92 * mm, DS.SOL + 114 * mm, DS.SOL + 139 * mm, DS.SOL + 164 * mm]
+
+    c.setFillColor(DS.ZEMIN)
+    c.rect(DS.SOL, dy - 7 * mm, genislik, 7 * mm, stroke=0, fill=1)
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("ArB", 6.8)
+    for etiket, x in kolonlar:
+        c.drawString(x, dy - 4.7 * mm, etiket)
+    dy -= 7 * mm
+
+    dagilim = {}
+    for q in d["questions"]:
+        dagilim[q["course"]] = dagilim.get(q["course"], 0) + 1
+    sirali = sorted(dagilim.items(), key=lambda kv: (-kv[1], kv[0]))
+    satir_y = 10 * mm
+    ust_sinir = dy
+    for ders, adet in sirali:
+        c.setFillColor(DS.METIN)
+        c.setFont("Ar", 9.2)
+        c.drawString(DS.SOL + 4 * mm, dy - 6.4 * mm, ders)
+        c.setFillColor(DS.IKINCIL)
+        c.drawString(DS.SOL + 96 * mm, dy - 6.4 * mm, str(adet))
+        c.setStrokeColor(DS.CIZGI_ACIK)
+        c.setLineWidth(0.5)
+        c.line(DS.SOL, dy - satir_y, DS.SOL + genislik, dy - satir_y)
+        dy -= satir_y
+    # TOPLAM satırı
+    c.setFillColor(DS.ZEMIN)
+    c.rect(DS.SOL, dy - satir_y, genislik, satir_y, stroke=0, fill=1)
+    c.setFillColor(DS.METIN)
+    c.setFont("ArB", 9.2)
+    c.drawString(DS.SOL + 4 * mm, dy - 6.4 * mm, "TOPLAM")
+    c.drawString(DS.SOL + 96 * mm, dy - 6.4 * mm, str(len(d["questions"])))
+    dy -= satir_y
+
+    # Dikey ayraçlar: hücreler elle doldurulabilsin.
+    c.setStrokeColor(DS.CIZGI_ACIK)
+    c.setLineWidth(0.5)
+    for x in ayrac_x:
+        c.line(x, dy, x, ust_sinir)
+    c.setStrokeColor(DS.CIZGI)
+    c.setLineWidth(0.7)
+    c.rect(DS.SOL, dy, genislik, ust_sinir - dy, stroke=1, fill=0)
+
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("ArI", 8.6)
+    c.drawString(DS.SOL, dy - 10 * mm,
+                 f"Bu dökümü elle tutmak zorunda değilsiniz: aynı denemeyi {SITE} "
+                 "üzerinden çözerseniz konu bazlı kaybınız otomatik çıkar.")
+    c.showPage()
+    return sayfa_no + 1
+
+
+# ── Arka kapak ───────────────────────────────────────────────────────────
 OZELLIKLER = [
-    ("Soru bazlı çözüm", "Her yanlışının altında editör açıklaması ve dayandığı kanun maddesi."),
-    ("Konu bazlı kayıp analizi", "Netini nerede kaybettiğini konu konu görürsün — çalışma sıranı o belirler."),
-    ("Canlı deneme ve sıralama", "Randevulu denemelerde binlerce adayla aynı anda yarış, sıranı gör."),
-    ("Yanlış tekrar kuyruğu", "Yanlışların otomatik birikir; unutmadan doğru zamanda önüne gelir."),
+    ("Soru bazlı çözüm", "Her yanlışın altında editör açıklaması ve dayandığı kanun maddesi."),
+    ("Konu bazlı kayıp analizi", "Netinizi nerede kaybettiğinizi konu konu görürsünüz."),
+    ("Canlı deneme ve sıralama", "Randevulu denemelerde aynı anda yarışın, sıranızı görün."),
+    ("Yanlış tekrar kuyruğu", "Yanlışlarınız birikir; unutmadan doğru zamanda önünüze gelir."),
     ("Çıkmış sorular", "Gerçek sınavlardan derlenmiş, kaynağı kayıtlı soru bankası."),
-    ("Kişisel koç", "Bugün ne çalışacağını sana söyler; hedefini ve serini takip eder."),
+    ("Kişisel koç", "Bugün ne çalışacağınızı söyler; hedefinizi ve serinizi takip eder."),
 ]
 
 
-def tanitim(c):
-    g, y = SAYFA_G, SAYFA_Y
-    c.setFillColor(LACIVERT)
-    c.rect(0, 0, g, y, stroke=0, fill=1)
+def qr_uret(veri, yol):
+    import qrcode
+    k = qrcode.QRCode(border=1, box_size=10,
+                      error_correction=qrcode.constants.ERROR_CORRECT_M)
+    k.add_data(veri)
+    k.make(fit=True)
+    k.make_image(fill_color="#173F72", back_color="white").save(yol)
+    return yol
 
+
+def arka_kapak(c):
+    g, y = DS.SAYFA_G, DS.SAYFA_Y
     logo = os.path.join(GORSEL, "logo2.png")
-    # Koyu zeminde lacivert logo görünmez: beyaz bir levha üstüne bas.
-    c.setFillColor(white)
-    c.roundRect(KENAR_SOL, y - 36 * mm, 60 * mm, 20 * mm, 3 * mm, stroke=0, fill=1)
     if os.path.exists(logo):
-        c.drawImage(logo, KENAR_SOL + 6 * mm, y - 32 * mm, width=48 * mm, height=14.1 * mm,
-                    mask="auto")
+        c.drawImage(logo, DS.SOL, y - 26 * mm, width=44 * mm, height=12.9 * mm, mask="auto")
+    c.setStrokeColor(DS.LACIVERT)
+    c.setLineWidth(1.1)
+    c.line(DS.SOL, y - 32 * mm, g - DS.SAG, y - 32 * mm)
 
-    c.setFillColor(white)
-    c.setFont("ArB", 25)
-    c.drawString(KENAR_SOL, y - 55 * mm, "Denemeyi çözdün.")
-    c.setFillColor(SARI)
-    c.drawString(KENAR_SOL, y - 68 * mm, "Şimdi netini yükselt.")
-    c.setFillColor(Color(1, 1, 1, 0.82))
-    c.setFont("Ar", 10.5)
-    stil = ParagraphStyle("t", fontName="Ar", fontSize=10.5, leading=15,
-                          textColor=Color(1, 1, 1, 0.82))
+    c.setFillColor(DS.LACIVERT)
+    c.setFont("ArB", 20)
+    c.drawString(DS.SOL, y - 48 * mm, "Denemeyi çözdünüz.")
+    c.setFillColor(DS.METIN)
+    c.drawString(DS.SOL, y - 59 * mm, "Şimdi netinizi yükseltin.")
+
+    st = ParagraphStyle("t", fontName="Ar", fontSize=10, leading=14.5,
+                        textColor=DS.IKINCIL, alignment=0)
     p = Paragraph(
-        "Bu kitapçıktaki soruların tamamı Paemisyon soru bankasından derlendi. "
-        "Aynı denemeyi uygulamada çözersen netini anında görür, yanlışlarının "
-        "çözümüne dokunur ve konu bazlı kaybını takip edersin.", stil)
-    _, h = p.wrap(g - KENAR_SOL - KENAR_SAG - 40 * mm, 10_000)
-    p.drawOn(c, KENAR_SOL, y - 78 * mm - h)
+        "Bu kitapçıktaki soruların tamamı Paemisyon soru bankasından derlenmiştir. "
+        "Aynı denemeyi çevrim içi çözerseniz netiniz anında hesaplanır, her yanlışın "
+        "çözümüne ulaşır ve konu bazlı kaybınızı takip edersiniz.", st)
+    _, h = p.wrap(g - DS.SOL - DS.SAG - 46 * mm, 10_000)
+    p.drawOn(c, DS.SOL, y - 66 * mm - h)
 
     yy = y - 100 * mm
     for ad, aciklama in OZELLIKLER:
-        c.setFillColor(SARI)
-        c.circle(KENAR_SOL + 1.6 * mm, yy + 1.4 * mm, 1.6 * mm, stroke=0, fill=1)
-        c.setFillColor(white)
+        c.setFillColor(DS.LACIVERT)
+        c.rect(DS.SOL, yy - 0.2 * mm, 2.2 * mm, 2.2 * mm, stroke=0, fill=1)
+        c.setFillColor(DS.METIN)
         c.setFont("ArB", 9.6)
-        c.drawString(KENAR_SOL + 7 * mm, yy, ad)
-        c.setFillColor(Color(1, 1, 1, 0.7))
-        c.setFont("Ar", 8.8)
-        c.drawString(KENAR_SOL + 7 * mm, yy - 5 * mm, aciklama)
-        yy -= 14 * mm
+        c.drawString(DS.SOL + 6.5 * mm, yy, ad)
+        c.setFillColor(DS.IKINCIL)
+        c.setFont("Ar", 9)
+        c.drawString(DS.SOL + 6.5 * mm, yy - 5.4 * mm, aciklama)
+        yy -= 20 * mm
 
-    # Üç adım şeridi — özellik listesiyle alt şerit arasındaki boşluğu dolduran
-    # ve okuru eyleme bağlayan kısım.
-    ay = 70 * mm
-    c.setFillColor(Color(1, 1, 1, 0.10))
-    c.roundRect(KENAR_SOL, ay - 4 * mm, g - KENAR_SOL - KENAR_SAG, 30 * mm, 3 * mm,
-                stroke=0, fill=1)
-    c.setFillColor(Color(1, 1, 1, 0.55))
-    c.setFont("ArB", 7.6)
-    c.drawString(KENAR_SOL + 7 * mm, ay + 20 * mm, "ÜÇ ADIMDA BAŞLA")
-    adimlar = [
-        # Metinler kısa: uzun açıklama yan sütuna taşıyordu.
-        ("1", "Hesap aç", "Google/Apple ile 30 saniye."),
-        ("2", "Denemeni çöz", "Aynı sorular, süreli ve sıralı."),
-        ("3", "Netini yükselt", "Koç ne çalışacağını söyler."),
-    ]
-    kg = (g - KENAR_SOL - KENAR_SAG - 14 * mm) / 3
-    for i, (no, bas, alt) in enumerate(adimlar):
-        x = KENAR_SOL + 7 * mm + i * kg
-        c.setFillColor(SARI)
-        c.circle(x + 2.4 * mm, ay + 12.4 * mm, 2.9 * mm, stroke=0, fill=1)
-        c.setFillColor(LACIVERT)
-        c.setFont("ArB", 8)
-        c.drawCentredString(x + 2.4 * mm, ay + 11.2 * mm, no)
-        c.setFillColor(white)
-        c.setFont("ArB", 9.4)
-        c.drawString(x + 7.5 * mm, ay + 11.2 * mm, bas)
-        c.setFillColor(Color(1, 1, 1, 0.68))
-        c.setFont("Ar", 8)
-        c.drawString(x + 7.5 * mm, ay + 5.6 * mm, alt)
-
-    # Alt eylem şeridi
-    c.setFillColor(SARI)
-    c.rect(0, 0, g, 40 * mm, stroke=0, fill=1)
-    c.setFillColor(LACIVERT)
+    bant = 52 * mm
+    c.setFillColor(DS.LACIVERT)
+    c.rect(0, 0, g, bant, stroke=0, fill=1)
+    c.setFillColor(DS.SARI)
+    c.rect(0, bant - 2 * mm, g, 2 * mm, stroke=0, fill=1)
+    c.setFillColor(white)
     c.setFont("ArB", 15)
-    c.drawString(KENAR_SOL, 26 * mm, f"{SITE} · ücretsiz başla")
-    c.setFont("Ar", 9)
-    c.drawString(KENAR_SOL, 19 * mm, "Web'de hesap aç, uygulamada aynı hesapla devam et.")
-    for i, (ad, gen) in enumerate([("appStore.png", 26 * mm), ("playStore.png", 30 * mm)]):
-        yol = os.path.join(GORSEL, ad)
+    c.drawString(DS.SOL, bant - 15 * mm, SITE)
+    c.setFillColor(Color(1, 1, 1, 0.78))
+    c.setFont("Ar", 9.2)
+    c.drawString(DS.SOL, bant - 21.5 * mm, "Ücretsiz hesap açın; web'de ve mobil uygulamada")
+    c.drawString(DS.SOL, bant - 26.5 * mm, "aynı hesapla kaldığınız yerden devam edin.")
+    for i, (dosya, gen) in enumerate([("appStore.png", 27 * mm), ("playStore.png", 31 * mm)]):
+        yol = os.path.join(GORSEL, dosya)
         if os.path.exists(yol):
-            c.drawImage(yol, KENAR_SOL + i * 34 * mm, 7 * mm,
+            c.drawImage(yol, DS.SOL + i * 34 * mm, 9 * mm,
                         width=gen, height=gen * 34 / (96 if i == 0 else 114), mask="auto")
-    qr = qr_gorseli(f"https://{SITE}", "/tmp/_qr2.png")
-    c.drawImage(qr, g - KENAR_SAG - 28 * mm, 6 * mm, width=28 * mm, height=28 * mm)
+    kod = qr_uret(f"https://{SITE}", "/tmp/_qr_arka.png")
+    c.setFillColor(white)
+    c.roundRect(g - DS.SAG - 32 * mm, 10 * mm, 32 * mm, 32 * mm, 2 * mm, stroke=0, fill=1)
+    c.drawImage(kod, g - DS.SAG - 30 * mm, 12 * mm, width=28 * mm, height=28 * mm)
     c.showPage()
 
 
@@ -525,21 +583,23 @@ def main():
     if len(sys.argv) < 3:
         print(__doc__)
         return
-    veri = json.load(open(sys.argv[1], encoding="utf-8"))
+    d = json.load(open(sys.argv[1], encoding="utf-8"))
     cikti = sys.argv[2]
     kitapcik = sys.argv[sys.argv.index("--kitapcik") + 1] if "--kitapcik" in sys.argv else "A"
 
     fontlari_kur()
+    st = stiller()
     c = pdfcanvas.Canvas(cikti, pagesize=A4)
-    c.setTitle(veri["title"])
+    c.setTitle(sinav_adi(d["title"]))
     c.setAuthor("Paemisyon")
     c.setSubject("PAEM deneme sınavı kitapçığı")
     c.setCreator(f"Paemisyon · {SITE}")
 
-    kapak(c, veri, kitapcik)
-    son = sorular(c, veri, kitapcik, 1)
-    cevap_anahtari(c, veri, kitapcik, son)
-    tanitim(c)
+    kapak(c, d, kitapcik)
+    son = sorular(c, d, kitapcik, 1, st)
+    son = cevap_anahtari(c, d, kitapcik, son)
+    analiz_sayfasi(c, d, kitapcik, son)
+    arka_kapak(c)
     c.save()
     print(f"yazıldı: {cikti}")
 
