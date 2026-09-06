@@ -951,24 +951,31 @@ enum PastExamKind {
 
 /// Bir çıkmış sınav dönemi (PAEM 9, PAEM 8, ...).
 model PastExam {
-  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id            String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   /// URL parçası: "paem-9-2025" → /paem-cikmis-sorular/paem-9-2025
-  slug        String        @unique
-  name        String
-  institution String        @map("institution")
+  slug          String        @unique
+  name          String
+  institution   String        @map("institution")
   /// Dönem numarası (PAEM 9 → 9). Sıralama ve başlık üretiminde kullanılır.
-  term        Int?
-  heldOn      DateTime?     @map("held_on") @db.Date
-  kind        PastExamKind
+  term          Int?
+  heldOn        DateTime?     @map("held_on") @db.Date
+  kind          PastExamKind
   /// Vitrin sayfasındaki tanıtım metni.
-  summary     String?
+  summary       String?
+  /// Sınavdaki toplam soru sayısı — `analiz` türünde sorular bankada yoktur,
+  /// dağılım yine de bu sayı üzerinden anlatılır.
+  questionCount Int?          @map("question_count")
+  /// Konu analizi: ders ve kanun kırılımı, kaynak ve güvenilirlik notu.
+  /// `analiz` türü sınavların TEK içeriği budur; resmî sınavlarda sorulardan
+  /// da hesaplanabilir ama sayfa tek yerden okusun diye burada saklanır.
+  analysis      Json?
   /// Sınav gibi çözme deneyimi mevcut deneme motorundan gelir.
-  examId      String?       @unique @map("exam_id") @db.Uuid
-  status      ContentStatus @default(draft)
-  sortOrder   Int           @default(0) @map("sort_order")
-  createdAt   DateTime      @default(now()) @map("created_at")
-  updatedAt   DateTime      @updatedAt @map("updated_at")
-  deletedAt   DateTime?     @map("deleted_at")
+  examId        String?       @unique @map("exam_id") @db.Uuid
+  status        ContentStatus @default(draft)
+  sortOrder     Int           @default(0) @map("sort_order")
+  createdAt     DateTime      @default(now()) @map("created_at")
+  updatedAt     DateTime      @updatedAt @map("updated_at")
+  deletedAt     DateTime?     @map("deleted_at")
 
   questions PastExamQuestion[]
 

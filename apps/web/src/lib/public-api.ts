@@ -53,6 +53,52 @@ export interface PublicPricing {
   plans: PublicPlan[];
 }
 
+/** Çıkmış sınav vitrini (Doc 36) — backend cikmis-sinav.service ile birebir. */
+export interface CikmisSinavOzet {
+  slug: string;
+  ad: string;
+  kurum: string;
+  donem: number | null;
+  tarih: string | null;
+  /**
+   * `resmi` = kurumun yayımladığı gerçek kitapçık; sorular bankada.
+   * `analiz` = sınav yayımlanmadı, elimizde yalnız konu dağılımı var.
+   * Rozet buradan gelir — ikisi asla aynı görünmez.
+   */
+  tur: "resmi" | "analiz";
+  ozet: string | null;
+  soruSayisi: number | null;
+  acikSoru: number;
+  dersDagilimi: { ders: string; adet: number }[];
+}
+
+export interface CikmisSinavSoru {
+  sira: number;
+  iptal: boolean;
+  ders: string;
+  konu: string;
+  kok: string;
+  gorselUrl: string | null;
+  siklar: { harf: string; metin: string; dogru: boolean }[];
+  aciklama: string | null;
+  dayanak: { baslik: string; url: string | null }[];
+}
+
+/** Aday hatırlatmasından çıkarılan konu analizi (`analiz` türü sınavlar). */
+export interface CikmisSinavAnaliz {
+  kaynak: string;
+  uyari: string;
+  dersDagilim: Record<string, number>;
+  kanunDagilim?: Record<string, number>;
+}
+
+export interface CikmisSinavDetay extends CikmisSinavOzet {
+  analiz: CikmisSinavAnaliz | null;
+  sorular: CikmisSinavSoru[];
+  kapaliSoru: number;
+  iptalSayisi: number;
+}
+
 export interface LawSummary {
   slug: string;
   /** Girişli derinlik (Doc 27 W2): atlas + tur başlatma için konu kimliği. */

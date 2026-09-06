@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Header, Param, Post, Query } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
+import { CikmisSinavService } from './cikmis-sinav.service';
 import { MevzuatService } from './mevzuat.service';
 import { PublicService } from './public.service';
 
@@ -16,7 +17,23 @@ export class PublicController {
   constructor(
     private readonly service: PublicService,
     private readonly mevzuat: MevzuatService,
+    private readonly cikmisSinav: CikmisSinavService,
   ) {}
+
+  // ── Çıkmış sınavlar (Doc 36) ──
+  // Dönem içeriği ancak admin yeniden yayınladığında değişir; SEO sayfaları
+  // ISR ile bunları tüketiyor, uzun s-maxage yerinde.
+  @Get('cikmis-sinavlar')
+  @Header('Cache-Control', CACHE_SLOW)
+  cikmisSinavlar() {
+    return this.cikmisSinav.list();
+  }
+
+  @Get('cikmis-sinavlar/:slug')
+  @Header('Cache-Control', CACHE_SLOW)
+  cikmisSinavDetay(@Param('slug') slug: string) {
+    return this.cikmisSinav.detail(slug);
+  }
 
   // ── Mevzuat Merkezi (Doc 29) ──
   @Get('mevzuat')
