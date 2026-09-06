@@ -12,6 +12,8 @@ export interface QuestionFormValue {
   difficulty: Difficulty;
   /** Madde Atlası (Doc 25 §4): "16", "4/A", "Ek 6"… Boş = madde yok. */
   articleNo: string;
+  /** Sorunun şekli/grafiği (Doc 36). Boş = görsel yok. */
+  mediaUrl: string;
   options: QuestionOption[];
 }
 
@@ -24,6 +26,7 @@ export function emptyQuestion(): QuestionFormValue {
     explanation: '',
     difficulty: 'medium',
     articleNo: '',
+    mediaUrl: '',
     options: [
       { label: 'A', text: '', isCorrect: true },
       { label: 'B', text: '', isCorrect: false },
@@ -120,6 +123,29 @@ export function QuestionForm({
           className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
           placeholder="Soruyu yaz…"
         />
+      </div>
+
+      {/* Şekilli sorular (Doc 36): kök metni tek başına anlaşılmayabilir.
+          Denetçi soruyu adayın gördüğü hâliyle görmeli, yoksa eksik metni
+          onaylar. Görsel yükleme altyapısı yok; alan URL taşır. */}
+      <div>
+        <label className="block text-sm font-medium">
+          Görsel (şekil / grafik) <span className="text-slate-400">— varsa</span>
+        </label>
+        <input
+          type="url"
+          value={v.mediaUrl}
+          onChange={(e) => set({ mediaUrl: e.target.value })}
+          className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+          placeholder="https://paemisyon.com/soru-gorsel/…"
+        />
+        {v.mediaUrl.trim() !== '' && (
+          <img
+            src={v.mediaUrl}
+            alt="Sorunun şekli"
+            className="mt-2 max-h-64 rounded-lg border border-slate-200 bg-white p-2"
+          />
+        )}
       </div>
 
       <div>

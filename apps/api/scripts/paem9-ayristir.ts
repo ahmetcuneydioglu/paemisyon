@@ -73,23 +73,36 @@ const gurultuMu = (s: string) => {
 const GORSEL = /yukarıda(ki)?\s+\S*\s*(şekil|grafik|tablo)|şekil dizisi|sembolle eşleş/i;
 
 /**
- * Sembol yazı tipiyle basılan işaretler metin katmanına Özel Kullanım Alanı
- * (U+E000-U+F8FF) kod noktaları olarak düşüyor; uygulamada "?" kutusu görünür
- * (Doc 33'te aynı sorun yaşandı). Bu işaretler yalnız 99. soruda var ve o
- * sorunun görseli zaten kökün tamamını taşıyor, dolayısıyla metinden
- * ayıklanırlar — uydurma bir karşılık konmaz.
+ * Sembol yazı tipiyle (Wingdings 2, `pdffonts` ile doğrulandı) basılan
+ * işaretler metin katmanına Özel Kullanım Alanı kod noktası olarak düşüyor;
+ * uygulamada "?" kutusu görünür (Doc 33'te aynı sorun yaşandı).
+ *
+ * Bu işaretler 99. sorunun ÇÖZÜMÜNÜN parçası — atılırsa soru cevaplanamaz.
+ * Karşılıkları, kaynak sayfa 600 dpi'de büyütülüp glif glif okunarak çıkarıldı
+ * ve dört satırın tekrar örüntüsüyle çapraz doğrulandı (ör. f0e4 birinci ve
+ * beşinci konumda; f0dc ile karışmıyor — biri ince, diğeri kalın yıldız).
  */
-const PUA = /[\u{E000}-\u{F8FF}\u{F0000}-\u{FFFFD}]+/gu;
-function puaTemizle(s: string): string {
+const PUA_KARSILIK: Record<string, string> = {
+  '\uf0dc': '✳', // ince yıldız
+  '\uf0e4': '✱', // kalın yıldız
+  '\uf07e': '❿',
+  '\uf0a3': '□',
+  '\uf0a2': '■',
+  '\uf081': '○',
+  '\uf0b2': '◈',
+  '\uf0f6': '✦',
+};
+const PUA = /[\u{E000}-\u{F8FF}\u{F0000}-\u{FFFFD}]/gu;
+
+/** Bilinen sembolleri Unicode karşılığına çevirir; bilinmeyeni ATMAZ, bildirir. */
+function puaCevir(s: string, bildir: (kod: string) => void): string {
   if (!PUA.test(s)) return s;
-  return s
-    .replace(PUA, '')
-    .replace(/\s+([,.;:?!])/g, '$1')      // işaret silinince önde kalan boşluk
-    .replace(/([.?!]),\s*/g, '$1 ')       // cümle sonuna düşen sahipsiz virgül
-    .replace(/([.?!])\s+([a-zçğıöşü])/g, (_, n, h) => `${n} ${h.toLocaleUpperCase('tr')}`)
-    .replace(/^[\s,;:]+/, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
+  return s.replace(PUA, (ch) => {
+    const karsilik = PUA_KARSILIK[ch];
+    if (karsilik) return karsilik;
+    bildir(`U+${ch.codePointAt(0)!.toString(16).toUpperCase()}`);
+    return '';
+  });
 }
 
 /** Sütun içi hizalama boşlukları anlam taşımaz. */
@@ -210,6 +223,8 @@ function romaNumaralariniGom(satirlar: string[]): string[] {
 }
 
 function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
+  // Karşılığı bilinmeyen sembol sessizce atılmaz: soru bozulur, haber verilir.
+  const bilinmeyenSembol = new Set<string>();
   const son = satirlar.findIndex((s) => /Grubu Cevap Anahtarı/i.test(s));
   const govde = romaNumaralariniGom(satirlar.slice(0, son < 0 ? undefined : son))
     .filter((s) => !gurultuMu(sadeBosluk(s)));
@@ -223,7 +238,7 @@ function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
     if (!aktif) return;
     const hamKok = iptalYazisiniSok(sadeBosluk(aktif.kokSatir.join(' ')));
     const puaVardi = /[\u{E000}-\u{F8FF}]/u.test(hamKok);
-    const kok = puaTemizle(hamKok);
+    const kok = puaCevir(hamKok, (kod) => bilinmeyenSembol.add(kod));
     sorular.push({
       no: aktif.no,
       grup,
@@ -277,6 +292,8 @@ function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
     else aktif.kokSatir.push(s);
   }
   kapat();
+  if (bilinmeyenSembol.size)
+    console.log(`  ! karşılığı bilinmeyen sembol: ${[...bilinmeyenSembol].join(', ')}`);
   return sorular;
 }
 

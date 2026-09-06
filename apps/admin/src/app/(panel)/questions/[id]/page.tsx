@@ -68,6 +68,7 @@ export default function QuestionDetailPage() {
     explanation: latest.explanation ?? '',
     difficulty: latest.difficulty,
     articleNo: d.articleNo ?? '',
+    mediaUrl: latest.mediaUrl ?? '',
     options: latest.options.map((o) => ({ label: o.label, text: o.text, isCorrect: o.isCorrect })),
   };
 

@@ -44,6 +44,16 @@ export class UpsertQuestionDto {
   difficulty?: 'easy' | 'medium' | 'hard';
 
   /**
+   * Sorunun şekli/grafiği (Doc 36). Bazı sorular metinle ANLAŞILMAZ; görsel
+   * kaybolursa soru sessizce bozulur. undefined = dokunma (yeni sürümde
+   * öncekinden taşınır); '' = kaldır.
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(500)
+  mediaUrl?: string;
+
+  /**
    * Madde Atlası (Doc 25 §4): "16", "4/A", "Ek 6", "Geçici 2".
    * undefined = dokunma (update) / otomatik tespit (create); '' = temizle.
    */

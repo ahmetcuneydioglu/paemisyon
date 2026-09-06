@@ -106,6 +106,8 @@ export interface QuestionVersion {
   stem: string;
   explanation: string | null;
   difficulty: Difficulty;
+  /** Sorunun şekli/grafiği (Doc 36) — metinle anlaşılmayan sorularda zorunlu. */
+  mediaUrl: string | null;
   status: ContentStatus;
   createdAt: string;
   publishedAt: string | null;

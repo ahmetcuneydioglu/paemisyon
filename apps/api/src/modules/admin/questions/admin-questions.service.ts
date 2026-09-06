@@ -207,6 +207,7 @@ export class AdminQuestionsService {
             stem: dto.stem,
             explanation: dto.explanation ?? null,
             difficulty: (dto.difficulty ?? 'medium') as Difficulty,
+            ...(dto.mediaUrl !== undefined ? { mediaUrl: dto.mediaUrl.trim() || null } : {}),
             status: 'draft', // in_review'da düzenleme onayı sıfırlar
             options: {
               create: dto.options.map((o, i) => ({
@@ -219,7 +220,7 @@ export class AdminQuestionsService {
           },
         });
       } else {
-        await this.createVersion(tx, id, (latest?.versionNo ?? 0) + 1, actor.id, dto);
+        await this.createVersion(tx, id, (latest?.versionNo ?? 0) + 1, actor.id, dto, latest?.mediaUrl);
       }
     });
     await this.audit.log(actor, 'question.update', 'question', id);
@@ -728,6 +729,8 @@ export class AdminQuestionsService {
     versionNo: number,
     authorId: string,
     dto: UpsertQuestionDto,
+    /** Önceki sürümün görseli — dto taşımıyorsa yeni sürüme kopyalanır. */
+    oncekiMediaUrl?: string | null,
   ) {
     return tx.questionVersion.create({
       data: {
@@ -735,6 +738,9 @@ export class AdminQuestionsService {
         versionNo,
         stem: dto.stem,
         explanation: dto.explanation ?? null,
+        // Şekilli soruda görsel kaybolursa soru cevaplanamaz hâle gelir;
+        // dto sessiz kaldığında önceki sürümden taşınır.
+        mediaUrl: dto.mediaUrl !== undefined ? dto.mediaUrl.trim() || null : (oncekiMediaUrl ?? null),
         difficulty: (dto.difficulty ?? 'medium') as Difficulty,
         status: 'draft',
         authoredBy: authorId,
