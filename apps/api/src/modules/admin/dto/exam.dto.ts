@@ -44,6 +44,12 @@ export class UpsertExamDto {
   @IsOptional()
   @IsBoolean()
   questionsOpenAfterEnd?: boolean;
+
+  /** Sınav bitince arşivden ÇÖZÜLEBİLİR mi? Varsayılan kapalı (tekrar edilen
+   *  denemenin soruları önceden çalışılmasın). */
+  @IsOptional()
+  @IsBoolean()
+  archiveOpenAfterEnd?: boolean;
 }
 
 export class SetExamQuestionsDto {

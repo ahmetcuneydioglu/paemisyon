@@ -90,10 +90,20 @@ export interface ExamListItem {
   questionCount: number;
   isPremium: boolean;
   questionsOpenAfterEnd: boolean;
+  /** Sınav bitince arşivden çözülebilir mi (denemeye özel anahtar). */
+  archiveOpenAfterEnd: boolean;
   state: ExamState;
   participantCount: number;
   avgScore: number | null;
   myAttempt: { id: string; status: "in_progress" | "completed" | "abandoned" } | null;
+  /** Arşivde çözdüysem son sonucum — "arşiv sonucum" girişi bunun üstünden. */
+  myArchiveAttempt: {
+    id: string;
+    correctCount: number;
+    wrongCount: number;
+    blankCount: number;
+    completedAt: string | null;
+  } | null;
 }
 
 export interface PublicCatalogModule {

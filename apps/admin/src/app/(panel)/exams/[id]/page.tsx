@@ -153,6 +153,7 @@ export default function ExamDetailPage() {
     isPremium: exam.isPremium,
     liveAnswerReveal: exam.liveAnswerReveal,
     questionsOpenAfterEnd: exam.questionsOpenAfterEnd,
+    archiveOpenAfterEnd: exam.archiveOpenAfterEnd,
   };
 
   return (

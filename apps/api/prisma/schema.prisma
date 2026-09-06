@@ -653,6 +653,10 @@ model Exam {
   isPremium             Boolean       @default(false) @map("is_premium") // eski kredi yerine (Doc 18 karar 2)
   liveAnswerReveal      Boolean       @default(false) @map("live_answer_reveal") // varsayılan KAPALI (karar 5)
   questionsOpenAfterEnd Boolean       @default(true) @map("questions_open_after_end")
+  /// Sınav bitince ARŞİVDEN ÇÖZÜLEBİLİR mi? Varsayılan KAPALI — aynı deneme
+  /// birden çok kez yayınlanabildiği için arşiv, tekrar sınavının sorularını
+  /// önceden çalışmaya açık kapı bırakıyordu (6 Eylül 2026).
+  archiveOpenAfterEnd   Boolean       @default(false) @map("archive_open_after_end")
   status                ContentStatus @default(draft)
   sortOrder             Int           @default(0) @map("sort_order")
   createdBy             String?       @map("created_by") @db.Uuid
@@ -660,8 +664,9 @@ model Exam {
   updatedAt             DateTime      @updatedAt @map("updated_at")
   deletedAt             DateTime?     @map("deleted_at")
 
-  questions  ExamQuestion[]
-  sessions   QuizSession[]
+  questions       ExamQuestion[]
+  sessions        QuizSession[]
+  archiveSessions QuizSession[] @relation("ArchiveExam")
   /// Doluysa bu Exam bir çıkmış sınavın motor kaydıdır (Doc 36) — deneme
   /// listesinde görünmez. Yabancı anahtar PastExam tarafındadır.
   pastExam   PastExam?
@@ -695,6 +700,9 @@ model QuizSession {
   courseId               String?           @map("course_id") @db.Uuid
   // Randevulu deneme (Doc 18): katılım = bu oturum. (userId, examId) tekildir.
   examId                 String?           @map("exam_id") @db.Uuid
+  /// Arşivden çözülen deneme. examId'den AYRI: orası tekil (canlı katılım bir
+  /// kezdir), arşiv çözümü ise tekrarlanabilir. Sonuca geri dönebilmek için şart.
+  archiveExamId          String?           @map("archive_exam_id") @db.Uuid
   status                 QuizSessionStatus @default(in_progress)
   totalQuestions         Int               @map("total_questions")
   correctCount           Int               @default(0) @map("correct_count")
@@ -711,7 +719,8 @@ model QuizSession {
   startedAt              DateTime          @default(now()) @map("started_at")
   completedAt            DateTime?         @map("completed_at")
 
-  user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  archiveExam Exam?  @relation("ArchiveExam", fields: [archiveExamId], references: [id])
   topic   Topic?       @relation(fields: [topicId], references: [id])
   course  Course?      @relation(fields: [courseId], references: [id])
   exam    Exam?        @relation(fields: [examId], references: [id])

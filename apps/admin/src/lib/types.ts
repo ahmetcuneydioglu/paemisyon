@@ -218,6 +218,7 @@ export interface AdminExamDetail {
   isPremium: boolean;
   liveAnswerReveal: boolean;
   questionsOpenAfterEnd: boolean;
+  archiveOpenAfterEnd: boolean;
   status: ContentStatus;
   attemptCount: number;
   questions: AdminExamQuestion[];

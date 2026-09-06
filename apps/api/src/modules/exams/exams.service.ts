@@ -67,6 +67,28 @@ export class ExamsService {
       : [];
     const mineOf = new Map(mine.map((m) => [m.examId, m]));
 
+    // Arşiv çözümleri: en SON tamamlanan gösterilir. Kullanıcı arşivde birden
+    // çok kez çözebilir; listede "sonucuma dön" kapısı olmadığı için insanlar
+    // sonucunu ararken üst üste boş oturum açıyordu (6 Eylül 2026).
+    const arsivler = user
+      ? await this.prisma.quizSession.findMany({
+          where: { userId: user.id, archiveExamId: { in: ids }, status: 'completed' },
+          orderBy: { completedAt: 'desc' },
+          select: {
+            id: true,
+            archiveExamId: true,
+            correctCount: true,
+            wrongCount: true,
+            blankCount: true,
+            completedAt: true,
+          },
+        })
+      : [];
+    const arsivOf = new Map<string, (typeof arsivler)[number]>();
+    for (const a of arsivler) {
+      if (a.archiveExamId && !arsivOf.has(a.archiveExamId)) arsivOf.set(a.archiveExamId, a);
+    }
+
     const now = new Date();
     return exams.map((e) => ({
       id: e.id,
@@ -78,12 +100,24 @@ export class ExamsService {
       questionCount: e._count.questions,
       isPremium: e.isPremium,
       questionsOpenAfterEnd: e.questionsOpenAfterEnd,
+      /** Arşivden çözmeye açık mı? İstemci "Arşivde çöz" girişini buna göre çizer. */
+      archiveOpenAfterEnd: e.archiveOpenAfterEnd,
       state: this.stateOf(e, now),
       participantCount: statOf.get(e.id)?._count._all ?? 0,
       avgScore: statOf.get(e.id)?._avg.score != null
         ? Math.round(Number(statOf.get(e.id)!._avg.score) * 100) / 100
         : null,
       myAttempt: mineOf.get(e.id) ?? null,
+      /** Arşivde çözdüysem son sonucum — "Arşiv sonucum" girişi bunun üstünden. */
+      myArchiveAttempt: arsivOf.get(e.id)
+        ? {
+            id: arsivOf.get(e.id)!.id,
+            correctCount: arsivOf.get(e.id)!.correctCount,
+            wrongCount: arsivOf.get(e.id)!.wrongCount,
+            blankCount: arsivOf.get(e.id)!.blankCount,
+            completedAt: arsivOf.get(e.id)!.completedAt,
+          }
+        : null,
     }));
   }
 
@@ -210,13 +244,25 @@ export class ExamsService {
 
   // ── Sonuç + inceleme (yalnız sahibi; Doc 18 güvenlik: anahtar ancak bitince) ──
   async getAttempt(user: AuthenticatedUser, attemptId: string) {
+    // Canlı katılım (examId) ya da ARŞİV çözümü (archiveExamId) — ikisi de
+    // burada incelenir. Arşiv çözen kullanıcının sonucuna dönebileceği tek
+    // kapı buydu ve yoktu: bir kullanıcı sonucunu ararken 40 dakikada 20'den
+    // fazla boş oturum açtı (6 Eylül 2026).
     const session = await this.prisma.quizSession.findFirst({
-      where: { id: attemptId, userId: user.id, examId: { not: null } },
-      include: { exam: true },
+      where: {
+        id: attemptId,
+        userId: user.id,
+        OR: [{ examId: { not: null } }, { archiveExamId: { not: null } }],
+      },
+      include: { exam: true, archiveExam: true },
     });
-    if (!session || !session.exam) throw new NotFoundException('Katılım bulunamadı.');
+    const exam = session?.exam ?? session?.archiveExam ?? null;
+    if (!session || !exam) throw new NotFoundException('Katılım bulunamadı.');
+    const arsiv = session.examId == null;
 
-    const ended = this.stateOf(session.exam) === 'ended';
+    // Arşiv çözümünde pencere yoktur; canlı katılımda pencere kapanmadan
+    // sonuç açılmaz (anahtar sızmasın).
+    const ended = arsiv || this.stateOf(exam) === 'ended';
     if (session.status === 'in_progress') {
       if (!ended) {
         throw new ConflictException({
@@ -242,7 +288,7 @@ export class ExamsService {
     // ve kaynağını dağıtmak istemiyoruz. Alıştırma ve public akışlarda etiket
     // yerinde duruyor — orada "gerçek, kaynaklı çıkmış soru" güveni anlatılır;
     // oradaki görünürlük panelden (Sorular > kaynak etiketi) yönetiliyor.
-    const review = (await this.examQuestions(session.examId!, { withAnswers: true })).map((q) => ({
+    const review = (await this.examQuestions(exam.id, { withAnswers: true })).map((q) => ({
       ...q,
       source: null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
@@ -297,11 +343,13 @@ export class ExamsService {
 
     return {
       attemptId: session.id,
+      /** Arşiv çözümü sıralamaya girmez — istemci rozeti buna göre çizer. */
+      isArchive: arsiv,
       exam: {
-        id: session.exam.id,
-        title: session.exam.title,
-        startAt: session.exam.startAt,
-        durationMinutes: session.exam.durationMinutes,
+        id: exam.id,
+        title: exam.title,
+        startAt: exam.startAt,
+        durationMinutes: exam.durationMinutes,
       },
       totalQuestions: fresh.totalQuestions,
       correctCount: fresh.correctCount,

@@ -10,6 +10,7 @@ export interface ExamFormValue {
   isPremium: boolean;
   liveAnswerReveal: boolean;
   questionsOpenAfterEnd: boolean;
+  archiveOpenAfterEnd: boolean;
 }
 
 export function emptyExam(): ExamFormValue {
@@ -24,6 +25,9 @@ export function emptyExam(): ExamFormValue {
     isPremium: false,
     liveAnswerReveal: false,
     questionsOpenAfterEnd: true,
+    // Varsayılan KAPALI: aynı deneme tekrar yayınlanabiliyor ve arşiv, tekrar
+    // sınavının sorularını önceden çalışmaya açık kapı bırakıyor.
+    archiveOpenAfterEnd: false,
   };
 }
 
@@ -142,6 +146,19 @@ export function ExamForm({
             onChange={(e) => set({ questionsOpenAfterEnd: e.target.checked })}
           />
           Sınav bitince sorular herkese açık görüntülenebilsin
+        </label>
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            disabled={disabled}
+            checked={v.archiveOpenAfterEnd}
+            onChange={(e) => set({ archiveOpenAfterEnd: e.target.checked })}
+          />
+          Sınav bitince arşivden çözülebilsin
+          <span className="text-xs text-amber-600">
+            (⚠ bu denemeyi TEKRAR yayınlayacaksan kapalı bırak — sorular
+            önceden çalışılabilir hâle gelir)
+          </span>
         </label>
       </div>
 

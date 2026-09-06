@@ -175,13 +175,30 @@ export function ExamCenter({
                             sonucum →
                           </Link>
                         )}
-                        {/* Arşiv modu: aynı set + süre, sıralamasız pratik */}
-                        <Link
-                          href={`/sinav/arsiv/${e.id}`}
-                          className="text-[13px] font-bold text-ink-soft hover:text-ink hover:underline"
-                        >
-                          arşivde çöz →
-                        </Link>
+                        {/* Arşivde çözdüysem sonucuma DÖNEBİLMELİYİM. Bu kapı
+                            yoktu: bir kullanıcı 100 soruyu çözüp sonucunu bir
+                            kez gördü, sonra ararken 40 dakikada 20'den fazla
+                            boş oturum açtı ve her seferinde 0/100 gördü. */}
+                        {e.myArchiveAttempt && (
+                          <Link
+                            href={`/sonuc/${e.myArchiveAttempt.id}`}
+                            className="text-[13px] font-bold text-brand hover:underline"
+                          >
+                            arşiv sonucum →
+                          </Link>
+                        )}
+                        {/* Arşiv modu: aynı set + süre, sıralamasız pratik.
+                            Denemeye özel anahtar kapalıysa giriş çizilmez —
+                            tekrar yayınlanacak denemenin soruları önceden
+                            çalışılmasın. */}
+                        {e.archiveOpenAfterEnd && (
+                          <Link
+                            href={`/sinav/arsiv/${e.id}`}
+                            className="text-[13px] font-bold text-ink-soft hover:text-ink hover:underline"
+                          >
+                            arşivde çöz →
+                          </Link>
+                        )}
                       </span>
                     </td>
                   </tr>

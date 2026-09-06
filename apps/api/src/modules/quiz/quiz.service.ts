@@ -487,6 +487,16 @@ export class QuizService {
         'Bu deneme henüz arşivde değil — canlı pencere sürüyor, oradan katıl.',
       );
     }
+    // Arşiv artık denemeye özel bir anahtar (varsayılan KAPALI). Aynı deneme
+    // birden çok kez yayınlandığı için arşiv, TEKRAR sınavının sorularını
+    // önceden çalışmaya açık kapı bırakıyordu: 6 Eylül 2026'da bir kullanıcı
+    // akşamki tekrar sınavından yedi saat önce aynı 100 soruyu çözebildi.
+    if (!exam.archiveOpenAfterEnd) {
+      throw new BadRequestException({
+        code: 'ARCHIVE_CLOSED',
+        message: 'Bu deneme arşivden çözmeye kapalı.',
+      });
+    }
     if (exam.isPremium && !user.isPremium) {
       throw new ForbiddenException({
         code: 'PREMIUM_REQUIRED',
@@ -519,6 +529,10 @@ export class QuizService {
       data: {
         userId: user.id,
         mode: 'exam',
+        // Hangi denemeden geldiği KAYDEDİLİR — yoksa kullanıcı sonucuna bir
+        // daha ulaşamıyor. examId kullanılamaz: orası (userId, examId) tekil,
+        // canlı katılım bir kezdir; arşiv çözümü tekrarlanabilir.
+        archiveExamId: exam.id,
         totalQuestions: rows.length,
         plannedDurationSeconds,
         questionOrder: rows.map((r) => r.questionVersion.id),

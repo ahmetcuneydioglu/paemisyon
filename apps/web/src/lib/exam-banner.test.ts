@@ -15,10 +15,12 @@ function deneme(p: Partial<ExamListItem>): ExamListItem {
     questionCount: 100,
     isPremium: false,
     questionsOpenAfterEnd: true,
+    archiveOpenAfterEnd: false,
     state: p.state ?? "upcoming",
     participantCount: 0,
     avgScore: null,
     myAttempt: null,
+    myArchiveAttempt: null,
   };
 }
 

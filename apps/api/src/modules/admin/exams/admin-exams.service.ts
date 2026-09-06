@@ -70,6 +70,7 @@ export class AdminExamsService {
       isPremium: exam.isPremium,
       liveAnswerReveal: exam.liveAnswerReveal,
       questionsOpenAfterEnd: exam.questionsOpenAfterEnd,
+      archiveOpenAfterEnd: exam.archiveOpenAfterEnd,
       status: exam.status,
       attemptCount: exam._count.sessions,
       questions: exam.questions.map((q, i) => ({
@@ -615,6 +616,9 @@ export class AdminExamsService {
       isPremium: dto.isPremium ?? false,
       liveAnswerReveal: dto.liveAnswerReveal ?? false,
       questionsOpenAfterEnd: dto.questionsOpenAfterEnd ?? true,
+      // Varsayılan KAPALI: aynı deneme tekrar yayınlanabildiği için arşiv,
+      // tekrar sınavının sorularını önceden çalışmaya açık kapı bırakıyor.
+      archiveOpenAfterEnd: dto.archiveOpenAfterEnd ?? false,
     };
   }
 
