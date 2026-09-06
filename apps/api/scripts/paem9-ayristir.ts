@@ -75,6 +75,13 @@ const GORSEL = /yukarıda(ki)?\s+\S*\s*(şekil|grafik|tablo)|şekil dizisi|sembo
 /** Sütun içi hizalama boşlukları anlam taşımaz. */
 const sadeBosluk = (s: string) => s.replace(/\s+/g, ' ').trim();
 
+/**
+ * Sütun kırpması, bir sonraki sorunun ilk sözcüğünü ("Yukarıdaki") önceki
+ * bloğun sonuna düşürebiliyor: ortak metnin ya da E şıkkının sonunda tek
+ * başına kalıyor. Hiçbir şık ya da bilgi bloğu bu sözcükle bitmez.
+ */
+const sarkaniAt = (s: string) => s.replace(/\s*Yukarıdaki\s*$/, '').trim();
+
 /** Karşılaştırma için: boşluk, noktalama ve büyük/küçük harf farkını sil. */
 const parmakIzi = (s: string) =>
   s.toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]/gu, '');
@@ -139,12 +146,53 @@ function iptalYazisiniSok(kok: string): string {
   });
   let i = 0;
   jetonlar = jetonlar.filter((j) => (i < damga.length && j === damga[i] ? (i++, false) : true));
-  return sadeBosluk(jetonlar.join(' '));
+  // Damga "Yukarıdaki" sözcüğünün üstüne bastığı için pdftotext onu hiç
+  // üretemiyor; kalıp bellisi olduğundan geri konur.
+  const temiz = sadeBosluk(jetonlar.join(' '));
+  return /^bilgilere göre/i.test(temiz) ? `Yukarıdaki ${temiz}` : temiz;
+}
+
+/**
+ * Türkçe sorularında numaralar sözcüklerin ALTINA ayrı bir satıra basılıyor:
+ *
+ *     Seninle sonunda    aynı   görüş birliğine
+ *               I         II           III
+ *
+ * Satırlar sırayla birleştirilirse numaralar cümlenin sonuna yığılır ve soru
+ * çözülemez hâle gelir (ilk turda iki denetçi de bu yüzden yanıldı). Numara
+ * satırı, her rakamın SÜTUN KONUMUNA bakılarak üstteki sözcüğün arkasına
+ * yerleştirilir.
+ */
+function romaNumaralariniGom(satirlar: string[]): string[] {
+  const cikti = [...satirlar];
+  const yalnizRoma = /^\s*(?:[IVX]+\s+){1,}[IVX]+\s*$/;
+  for (let i = 0; i < cikti.length; i++) {
+    if (!yalnizRoma.test(cikti[i])) continue;
+    let j = i - 1;
+    while (j >= 0 && cikti[j].trim() === '') j--;
+    if (j < 0) continue;
+    const hedef = cikti[j];
+    const kelimeler = [...hedef.matchAll(/\S+/g)].map((m) => ({ bas: m.index!, son: m.index! + m[0].length }));
+    if (!kelimeler.length) continue;
+    const eklemeler: { yer: number; metin: string }[] = [];
+    for (const m of cikti[i].matchAll(/[IVX]+/g)) {
+      const sutun = m.index!;
+      // Rakamın hizasındaki (ya da hizasından önce başlayan son) sözcük.
+      const k = kelimeler.filter((w) => w.bas <= sutun + 1).at(-1) ?? kelimeler[0];
+      eklemeler.push({ yer: k.son, metin: ` ${m[0]}` });
+    }
+    let yeni = hedef;
+    for (const e of eklemeler.sort((a, b) => b.yer - a.yer)) yeni = yeni.slice(0, e.yer) + e.metin + yeni.slice(e.yer);
+    cikti[j] = yeni;
+    cikti[i] = '';
+  }
+  return cikti;
 }
 
 function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
   const son = satirlar.findIndex((s) => /Grubu Cevap Anahtarı/i.test(s));
-  const govde = satirlar.slice(0, son < 0 ? undefined : son).filter((s) => !gurultuMu(sadeBosluk(s)));
+  const govde = romaNumaralariniGom(satirlar.slice(0, son < 0 ? undefined : son))
+    .filter((s) => !gurultuMu(sadeBosluk(s)));
 
   const sorular: Soru[] = [];
   const ortak = new Map<number, string>(); // soru no → ortak metin
@@ -159,7 +207,7 @@ function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
       grup,
       ortakMetin: ortak.get(aktif.no),
       kok,
-      siklar: aktif.siklar,
+      siklar: Object.fromEntries(Object.entries(aktif.siklar).map(([h, t]) => [h, sarkaniAt(t as string)])),
       gorselli: GORSEL.test(kok),
     });
     aktif = null;
@@ -185,7 +233,7 @@ function sorulariOku(satirlar: string[], grup: 'A' | 'B'): Soru[] {
       // olarak] cevaplayınız.") başlık satırından taşabiliyor; ilk
       // "cevaplayınız." dâhil olmak üzere baştaki yönerge atılır.
       const metin = sadeBosluk(toplanan.satirlar.join(' ')).replace(/^.{0,120}?cevaplayınız\.\s*/i, '');
-      for (let n = toplanan.ilk; n <= toplanan.son; n++) ortak.set(n, metin);
+      for (let n = toplanan.ilk; n <= toplanan.son; n++) ortak.set(n, sarkaniAt(metin));
       toplanan = null;
     }
     if (toplanan) { toplanan.satirlar.push(s); continue; }
@@ -234,12 +282,17 @@ function main() {
   }
 
   // ── A/B çapraz doğrulama ──
+  // Ortak metinli sorularda kök tek başına AYIRT ETMİYOR ("Yukarıdaki
+  // bilgilere göre ... kesinlikle doğrudur?" üç grupta da aynı); eşleştirme
+  // ortak metin + kök + şık kümesi üzerinden yapılır.
+  const kimlik = (s: Soru) =>
+    parmakIzi((s.ortakMetin ?? '') + s.kok + Object.values(s.siklar).sort().join(''));
   const indeks = new Map<string, Soru>();
-  for (const s of kitapciklar.B) indeks.set(parmakIzi(s.kok), s);
+  for (const s of kitapciklar.B) indeks.set(kimlik(s), s);
   let eslesen = 0;
   const sorunlar: string[] = [];
   for (const a of kitapciklar.A) {
-    const b = indeks.get(parmakIzi(a.kok));
+    const b = indeks.get(kimlik(a));
     if (!b) { sorunlar.push(`A/${a.no} B'de eşleşmedi: ${a.kok.slice(0, 60)}`); continue; }
     eslesen++;
     if (a.iptal !== b.iptal) sorunlar.push(`A/${a.no}-B/${b.no}: iptal durumu farklı`);

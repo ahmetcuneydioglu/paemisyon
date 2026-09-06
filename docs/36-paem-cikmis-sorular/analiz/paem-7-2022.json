@@ -1,0 +1,632 @@
+{
+ "slug": "paem-7-2022",
+ "ad": "PAEM 7. Dönem Yazılı Sınavı (2022)",
+ "tur": "analiz",
+ "kaynak": "sınava giren adayların derlediği hatırlatma listesi (100 satır)",
+ "uyari": "Bu sınav yayımlanmadı. Dağılım aday hatırlatmasına dayanır; soru metinleri elimizde yoktur.",
+ "dersDagilim": {
+  "Polis Mevzuatı": 30,
+  "Anayasa Hukuku": 10,
+  "İdare Hukuku": 10,
+  "Ceza Hukuku": 10,
+  "Ceza Muhakemesi Hukuku": 10,
+  "İnsan Hakları": 10,
+  "Atatürk İlkeleri ve İnkılap Tarihi": 10,
+  "Genel Kültür ve Analitik Düşünme": 10
+ },
+ "kanunDagilim": {
+  "657": 3,
+  "1774": 1,
+  "2559": 4,
+  "2911": 4,
+  "2918": 4,
+  "3201": 2,
+  "5188": 4,
+  "5326": 4,
+  "5607": 1,
+  "6136": 1,
+  "6222": 1
+ },
+ "satirlar": [
+  {
+   "no": 1,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Milletvekili Anayasa Mah. İtiraz 7 gün"
+  },
+  {
+   "no": 2,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Anayasa Değişikliği teklif yeter sayısı 200"
+  },
+  {
+   "no": 3,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Siyasi partiler izin alarak kurulurlar yanlış olan sorulmuştu"
+  },
+  {
+   "no": 4,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "C.B ye C.B Yardımcısı vekalet eder"
+  },
+  {
+   "no": 5,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Seçimlerin sorumluluğu YSK"
+  },
+  {
+   "no": 6,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Değiştirilemeyen maddelerden değildir Hükümet Sistemi"
+  },
+  {
+   "no": 7,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Milletvekili Yüksekokul şartı aranmaz"
+  },
+  {
+   "no": 8,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Milletler arası antlaşmayı uygun bulma yanlış olan"
+  },
+  {
+   "no": 9,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Aym 65 yaş dolunca emekli olur (1 - 3)"
+  },
+  {
+   "no": 10,
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "Siyasi Partilere kimler üye olamaz? yükseköğretim öncesi öğrenci - bu soru mükerrer olabilir"
+  },
+  {
+   "no": 11,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Kamu Tüzel Kişiliği olmayan Diyanet İşleri Başkanlığı"
+  },
+  {
+   "no": 12,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Eğitimi Ofisi yok"
+  },
+  {
+   "no": 13,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Gönüllü personel kamu personeli değil"
+  },
+  {
+   "no": 14,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Bakanlık kurulması C.B kararnamesi"
+  },
+  {
+   "no": 15,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "En yüksek devlet memuru İdari İşler Başkanı"
+  },
+  {
+   "no": 16,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Dönüşüm ofisi ktk var"
+  },
+  {
+   "no": 17,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Kolluk üst makamı C.B"
+  },
+  {
+   "no": 18,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "C. B. Ye bağlı olmayan Rekabet Kurumu"
+  },
+  {
+   "no": 19,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Kolluk hizmetleri"
+  },
+  {
+   "no": 20,
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "Milli Eğitimi Bakanı hireyarşik üstü C.B"
+  },
+  {
+   "no": 21,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Suç yaptırımı Eşya Müsaderesi"
+  },
+  {
+   "no": 22,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Hemşire Sorusu Taksirle Öldürme"
+  },
+  {
+   "no": 23,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Öldürmek için not alan kişi cezalandırılmaz"
+  },
+  {
+   "no": 24,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Haksız tahrik"
+  },
+  {
+   "no": 25,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Kendisine vuran değil kızına yumruk atma kasten yaralama"
+  },
+  {
+   "no": 26,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "En az hapis cezası 1 ay"
+  },
+  {
+   "no": 27,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Öldürmek amaçlı vurduğu kişinin ambulans kazasında ölmesi Kasten Öldürmeye Teşebbüs"
+  },
+  {
+   "no": 28,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Tanıklıktan çekinme rıza gösterse dahi Avukat Stajyeri çekilebilir"
+  },
+  {
+   "no": 29,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Özgü suç görevi kötüye kullanma"
+  },
+  {
+   "no": 30,
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Fiil ve failin öğrenilmesinden itibaren 6 ay"
+  },
+  {
+   "no": 31,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Kaçak sanık tutuklama kararı verilir"
+  },
+  {
+   "no": 32,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Savcı tutuklama kararı veremez"
+  },
+  {
+   "no": 33,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Yetkisizlik iddaası sanığın sorgusu başlayıncaya kadar"
+  },
+  {
+   "no": 34,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Zorunlu Müdaafi 4 ila 20 yıl alt sınır 5 yıl"
+  },
+  {
+   "no": 35,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Kollukta verilen ifade mahkemede doğrulanmadıkça esas alınmaz"
+  },
+  {
+   "no": 36,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Sanık tanığa doğrudan soru soramaz"
+  },
+  {
+   "no": 37,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Sanık beyanda bulunmaya zorlanamaz"
+  },
+  {
+   "no": 38,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Menfaat çatışması olmayan birden fazla şüphelinin müdafiliğini yapabilir"
+  },
+  {
+   "no": 39,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "İşlediği fiilin haksızlık olduğu konusunda hataya düşene ceza verilmez - cevabını bilmiyorum"
+  },
+  {
+   "no": 40,
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "Suçun Konusu - cevabı muallak"
+  },
+  {
+   "no": 41,
+   "ders": "Polis Mevzuatı",
+   "kanun": null,
+   "konu": "112 acil çağrı BTK"
+  },
+  {
+   "no": 42,
+   "ders": "Polis Mevzuatı",
+   "kanun": "1774",
+   "konu": "Kimlik bildirme idari para cezası Mülki Amir"
+  },
+  {
+   "no": 43,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "Sporcular parmak izi alınmaz"
+  },
+  {
+   "no": 44,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "Önleme Dinlemesi Ankara Ağır Ceza Mahkemesi üyesi"
+  },
+  {
+   "no": 45,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "Önleme araması g.s.b.h Mülki Amir"
+  },
+  {
+   "no": 46,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "Polis Makul Sebepler varsa durdurur karar aramaz"
+  },
+  {
+   "no": 47,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "Toplantı ve Gösteri Yürüyüşü izin alma yanlış olan (bildirimde bulunulur)"
+  },
+  {
+   "no": 48,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "Toplantı ve Gösteri Yürüyüşü 48 saat önce bildirim"
+  },
+  {
+   "no": 49,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "Kapalı yerlerde Toplantı 24.00 a kadar"
+  },
+  {
+   "no": 50,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "1 Ay erteleme Vali"
+  },
+  {
+   "no": 51,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "Bisiklet kullanma yaşı 11"
+  },
+  {
+   "no": 52,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "Alkol Trafik Güvenliğini Tehlikeye Sokma 1 promil"
+  },
+  {
+   "no": 53,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "Ticari kullanan Şoför"
+  },
+  {
+   "no": 54,
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "Geçiş Yolu"
+  },
+  {
+   "no": 55,
+   "ders": "Polis Mevzuatı",
+   "kanun": "3201",
+   "konu": "Taşra Teşkilatı İl Emniyet Müdürü"
+  },
+  {
+   "no": 56,
+   "ders": "Polis Mevzuatı",
+   "kanun": "3201",
+   "konu": "Genel Asayiş İçişleri Bakanı"
+  },
+  {
+   "no": 57,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "5188 Özel güvenlik 1 yıl ve üzeri hapis cezası"
+  },
+  {
+   "no": 58,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "5188 Ticaret Odası Başkanı"
+  },
+  {
+   "no": 59,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "Özel Güvenlik Komisyonunda oylar eşitse Başkanın olduğu taraf"
+  },
+  {
+   "no": 60,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "Özel Güvenlik Sorumlusu Önlisans"
+  },
+  {
+   "no": 61,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "Kabahat hem kasten hem taksirle işlenir"
+  },
+  {
+   "no": 62,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "Kabahate Teşebbüs cezalandırılmaz"
+  },
+  {
+   "no": 63,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "Kabahat haksızlık karşısında öngörülen idari yaptırımdır"
+  },
+  {
+   "no": 64,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "Hem kabahat hem suç oluşturuyorsa sadece suçtan dolayı yaptırım"
+  },
+  {
+   "no": 65,
+   "ders": "Polis Mevzuatı",
+   "kanun": "5607",
+   "konu": "5607 Katılan ilgili gümrük idaresi"
+  },
+  {
+   "no": 66,
+   "ders": "Polis Mevzuatı",
+   "kanun": "6136",
+   "konu": "Silahlar Milli Savunma Bakanlığı'na teslim edilir"
+  },
+  {
+   "no": 67,
+   "ders": "Polis Mevzuatı",
+   "kanun": "6222",
+   "konu": "Eş güdüm Toplantısı Federasyon Temsilcisi"
+  },
+  {
+   "no": 68,
+   "ders": "Polis Mevzuatı",
+   "kanun": "657",
+   "konu": "DMK haftada 40 saat"
+  },
+  {
+   "no": 69,
+   "ders": "Polis Mevzuatı",
+   "kanun": "657",
+   "konu": "DMK'ya engel suç Güveni Kötüye Kullanma"
+  },
+  {
+   "no": 70,
+   "ders": "Polis Mevzuatı",
+   "kanun": "657",
+   "konu": "Teknik Hizmetler Fen Memuru"
+  },
+  {
+   "no": 71,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Kuşak Hakları Karel Vasak"
+  },
+  {
+   "no": 72,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Anayasa Mahkemesi bireysel başvuru 2010"
+  },
+  {
+   "no": 73,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Ölçülülük-Gereklilik-Orantılılık 1-2-3"
+  },
+  {
+   "no": 74,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "İnsan Hakları Tanımı"
+  },
+  {
+   "no": 75,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Hukuk Devleti"
+  },
+  {
+   "no": 76,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Sınırlama sebepleri Genel Sınırlama olan yanlış soruluyordu"
+  },
+  {
+   "no": 77,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Din ve Vicdan Özgürlüğü Ohalde sınırlandırılamaz"
+  },
+  {
+   "no": 78,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "C.B Ohal ilan etme"
+  },
+  {
+   "no": 79,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Negatif Kişi Özgürlüğü"
+  },
+  {
+   "no": 80,
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "Pozitif"
+  },
+  {
+   "no": 81,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "TBMM ilk Gümrü Antlaşması"
+  },
+  {
+   "no": 82,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Yunanla Etablı Sorunu"
+  },
+  {
+   "no": 83,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Benim şahsi meselem Hatay"
+  },
+  {
+   "no": 84,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Aşar vergisi 1923 İzmir İktisat Kongresi"
+  },
+  {
+   "no": 85,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Saltanatın Kaldırılması, Şeh Said İsyanı, Takrir-i Sukun, Medeni Kanun Kronoloji"
+  },
+  {
+   "no": 86,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Musul sorunu Milletler Cemiyeti"
+  },
+  {
+   "no": 87,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Amasya genelgesinde Azınlık yoktu"
+  },
+  {
+   "no": 88,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Boğazlar mutlak hakimiyet Montrö Boğazlar Sözleşmesi"
+  },
+  {
+   "no": 89,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Kurtuluş Savaşlarından kaybettiğimiz tek savaş Eskişehir - Kütahya"
+  },
+  {
+   "no": 90,
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "Lozanda Türkiye'ye verilen adalar İmroz (Gökçeada), Bozcaada, Tavşan Adaları 2, 3, 5 olabilir"
+  },
+  {
+   "no": 91,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Fatma Girik"
+  },
+  {
+   "no": 92,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "2022 Türksoy Bursa"
+  },
+  {
+   "no": 93,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Hibrit Bingöl"
+  },
+  {
+   "no": 94,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "2021 - 2022 Şampiyon Trabzonspor"
+  },
+  {
+   "no": 95,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "ABD Fed mayıs Ukrayna Savaşı ve Yüksek Enflasyon"
+  },
+  {
+   "no": 96,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Cimer Sorusu Adalet bakanı olan şık deniliyor"
+  },
+  {
+   "no": 97,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "HSK Başkanı Adalet Bakanı"
+  },
+  {
+   "no": 98,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Kazada ağır yaralanan … hastaneye zor yetiştirdik"
+  },
+  {
+   "no": 99,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Gençliğinde laftan anlamaz, kabına sığmazdı"
+  },
+  {
+   "no": 100,
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "Öznel düsünce 4 - 5"
+  }
+ ]
+}

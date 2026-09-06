@@ -1188,7 +1188,7 @@
   {
    "no": 80,
    "grup": "A",
-   "kok": "Seninle sonunda aynı görüş birliğine I II III varmayı başardık. IV V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
+   "kok": "Seninle sonunda I aynı II görüş birliğine III varmayı IV başardık. V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
    "siklar": {
     "A": "I",
     "B": "II",
@@ -1314,8 +1314,8 @@
   {
    "no": 88,
    "grup": "A",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
-   "kok": "bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
+   "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
    "siklar": {
     "A": "Psikiyatri",
     "B": "KBB Hastalıkları",
@@ -1330,14 +1330,14 @@
   {
    "no": 89,
    "grup": "A",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
    "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin en son gittiği poliklinik aşağıdakilerden hangisidir?",
    "siklar": {
     "A": "Psikiyatri",
     "B": "Nöroloji",
     "C": "Göz Hastalıkları",
     "D": "KBB Hastalıkları",
-    "E": "Dâhiliye Yukarıdaki"
+    "E": "Dâhiliye"
    },
    "gorselli": false,
    "dogru": "E",
@@ -1346,8 +1346,8 @@
   {
    "no": 90,
    "grup": "A",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
-   "kok": "bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
+   "kok": "Yukarıdaki bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
    "siklar": {
     "A": "Psikiyatri polikliniği 1 adet tahlil istemiştir.",
     "B": "KBB Hastalıkları polikliniği 2 adet tahlil istemiştir.",
@@ -2684,7 +2684,7 @@
   {
    "no": 79,
    "grup": "B",
-   "kok": "Seninle sonunda aynı görüş birliğine I II III varmayı başardık. IV V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
+   "kok": "Seninle sonunda I aynı II görüş birliğine III varmayı IV başardık. V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
    "siklar": {
     "A": "I",
     "B": "II",
@@ -2777,8 +2777,8 @@
   {
    "no": 85,
    "grup": "B",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
-   "kok": "bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
+   "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
    "siklar": {
     "A": "Göz Hastalıkları",
     "B": "Nöroloji",
@@ -2793,14 +2793,14 @@
   {
    "no": 86,
    "grup": "B",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
    "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin en son gittiği poliklinik aşağıdakilerden hangisidir?",
    "siklar": {
     "A": "Nöroloji",
     "B": "Göz Hastalıkları",
     "C": "KBB Hastalıkları",
     "D": "Psikiyatri",
-    "E": "Dâhiliye Yukarıdaki"
+    "E": "Dâhiliye"
    },
    "gorselli": false,
    "dogru": "E",
@@ -2809,8 +2809,8 @@
   {
    "no": 87,
    "grup": "B",
-   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
-   "kok": "bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir.",
+   "kok": "Yukarıdaki bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
    "siklar": {
     "A": "Psikiyatri polikliniği 1 adet tahlil istemiştir.",
     "B": "KBB Hastalıkları polikliniği x ve y tahlillerini istemiştir.",

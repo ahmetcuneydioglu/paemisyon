@@ -114,26 +114,26 @@ model User {
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
 
-  authIdentities   AuthIdentity[]
-  roles            UserRole[]
-  entitlement      Entitlement?
-  subscriptions    Subscription[]
-  dailyUsage       DailyUsage[]
-  quizSessions     QuizSession[]
-  topicProgress    UserTopicProgress[]
-  stats            UserStats?
-  streak           Streak?
-  bookmarks        Bookmark[]
-  articleBookmarks ArticleBookmark[]
+  authIdentities    AuthIdentity[]
+  roles             UserRole[]
+  entitlement       Entitlement?
+  subscriptions     Subscription[]
+  dailyUsage        DailyUsage[]
+  quizSessions      QuizSession[]
+  topicProgress     UserTopicProgress[]
+  stats             UserStats?
+  streak            Streak?
+  bookmarks         Bookmark[]
+  articleBookmarks  ArticleBookmark[]
   articleHighlights ArticleHighlight[]
-  articleNotes     ArticleNote[]
-  readingProgress  ReadingProgress[]
-  wrongAnswers     WrongAnswer[]
-  questionReports  QuestionReport[]
-  badges           UserBadge[]
-  masterySnapshots TopicMasterySnapshot[]
-  pushTokens       PushToken[]
-  preferredModule  ExamType?              @relation(fields: [preferredModuleId], references: [id])
+  articleNotes      ArticleNote[]
+  readingProgress   ReadingProgress[]
+  wrongAnswers      WrongAnswer[]
+  questionReports   QuestionReport[]
+  badges            UserBadge[]
+  masterySnapshots  TopicMasterySnapshot[]
+  pushTokens        PushToken[]
+  preferredModule   ExamType?              @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -327,10 +327,10 @@ model LawArticle {
   text      String
 
   /// Kaynak künyesi — istemcide görünür (güven vaadi).
-  sourceName String  @default("mevzuat.gov.tr") @map("source_name")
-  sourceUrl  String? @map("source_url")
+  sourceName     String    @default("mevzuat.gov.tr") @map("source_name")
+  sourceUrl      String?   @map("source_url")
   /// Yürürlük/işlenme notu (ör. "5/7/2022 tarihli değişiklik işlenmiş metin").
-  effectiveInfo String? @map("effective_info")
+  effectiveInfo  String?   @map("effective_info")
   /// İçeriğin resmî kaynağa göre son doğrulandığı an (istemcide "… itibarıyla").
   lastVerifiedAt DateTime? @map("last_verified_at")
 
@@ -344,12 +344,12 @@ model LawArticle {
   // ── Mevzuat Merkezi (Doc 29) ──
   /// Kanun kimliği — geçiş sonrası tüm maddelerde dolu; topicId quiz köprüsü
   /// için kalır (soru etiketi (topicId, articleNo) anahtarını kullanır).
-  legislationId String?  @map("legislation_id") @db.Uuid
-  sectionId     String?  @map("section_id") @db.Uuid
+  legislationId String?                  @map("legislation_id") @db.Uuid
+  sectionId     String?                  @map("section_id") @db.Uuid
   /// Madde başlığı (ör. "Durdurma ve kimlik sorma") — resmî metinden; yoksa null.
   title         String?
   /// Deterministik sıra: articleOrder() kalıcılaştı (sayısal önce, Ek/Geçici sona).
-  sortKey       Int      @default(0) @map("sort_key")
+  sortKey       Int                      @default(0) @map("sort_key")
   /// Tam-metin arama vektörü — migration'da GENERATED ALWAYS (simple + tr_unaccent).
   search        Unsupported("tsvector")?
 
@@ -494,11 +494,12 @@ model Question {
   createdAt        DateTime  @default(now()) @map("created_at")
   deletedAt        DateTime? @map("deleted_at")
 
-  topic          Topic             @relation(fields: [topicId], references: [id])
+  topic          Topic              @relation(fields: [topicId], references: [id])
   reports        QuestionReport[]
-  versions       QuestionVersion[] @relation("QuestionVersions")
-  currentVersion QuestionVersion?  @relation("CurrentVersion", fields: [currentVersionId], references: [id])
+  versions       QuestionVersion[]  @relation("QuestionVersions")
+  currentVersion QuestionVersion?   @relation("CurrentVersion", fields: [currentVersionId], references: [id])
   examQuestions  ExamQuestion[]
+  pastExams      PastExamQuestion[]
 
   @@index([topicId])
   @@index([topicId, articleNo])
@@ -624,12 +625,12 @@ model Entitlement {
 
 // Freemium günlük limit — sunucu-taraflı sayaç.
 model DailyUsage {
-  userId            String   @map("user_id") @db.Uuid
-  usageDate         DateTime @map("usage_date") @db.Date
-  questionsAnswered Int      @default(0) @map("questions_answered")
-  dailyLimit        Int      @map("daily_limit")
+  userId             String   @map("user_id") @db.Uuid
+  usageDate          DateTime @map("usage_date") @db.Date
+  questionsAnswered  Int      @default(0) @map("questions_answered")
+  dailyLimit         Int      @map("daily_limit")
   // AI açıklama hakkı (Doc 24 §11: free günde 3, premium sınırsız).
-  aiExplanationsUsed Int     @default(0) @map("ai_explanations_used")
+  aiExplanationsUsed Int      @default(0) @map("ai_explanations_used")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -798,10 +799,10 @@ model UserStats {
 }
 
 model Streak {
-  userId         String    @id @map("user_id") @db.Uuid
-  currentStreak  Int       @default(0) @map("current_streak")
-  longestStreak  Int       @default(0) @map("longest_streak")
-  lastActiveDate DateTime? @map("last_active_date") @db.Date
+  userId          String    @id @map("user_id") @db.Uuid
+  currentStreak   Int       @default(0) @map("current_streak")
+  longestStreak   Int       @default(0) @map("longest_streak")
+  lastActiveDate  DateTime? @map("last_active_date") @db.Date
   // Seri sigortası (Doc 24 §7.2, Doc 26 §5): kaçan TEK gün affedilir.
   // Haftalık hak: free 1, premium 3. Hafta = Pzt başlangıçlı UTC (snapshot konv.).
   freezeWeekStart DateTime? @map("freeze_week_start") @db.Date
@@ -932,4 +933,65 @@ model LegacyUserMap {
   @@index([newUserId])
   @@index([legacyEmail])
   @@map("legacy_user_map")
+}
+
+// ─────────────────────────────────────────────
+// Çıkmış sınavlar (Doc 36)
+// ─────────────────────────────────────────────
+
+/// Sınavın niteliği. `resmi` = kurumun yayımladığı gerçek kitapçık.
+/// `analiz` = sınav yayımlanmadı; elimizde aday hatırlatmasından çıkarılmış
+/// konu dağılımı ve o konulardan bizim yazdığımız sorular var. İkisi
+/// kullanıcıya AYRI rozetle gösterilir (Doc 36 §1) — karıştırmak, bankanın
+/// "gerçek çıkmış soru" güvenini harcamak olur.
+enum PastExamKind {
+  resmi
+  analiz
+}
+
+/// Bir çıkmış sınav dönemi (PAEM 9, PAEM 8, ...).
+model PastExam {
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// URL parçası: "paem-9-2025" → /paem-cikmis-sorular/paem-9-2025
+  slug        String        @unique
+  name        String
+  institution String        @map("institution")
+  /// Dönem numarası (PAEM 9 → 9). Sıralama ve başlık üretiminde kullanılır.
+  term        Int?
+  heldOn      DateTime?     @map("held_on") @db.Date
+  kind        PastExamKind
+  /// Vitrin sayfasındaki tanıtım metni.
+  summary     String?
+  /// Sınav gibi çözme deneyimi mevcut deneme motorundan gelir.
+  examId      String?       @unique @map("exam_id") @db.Uuid
+  status      ContentStatus @default(draft)
+  sortOrder   Int           @default(0) @map("sort_order")
+  createdAt   DateTime      @default(now()) @map("created_at")
+  updatedAt   DateTime      @updatedAt @map("updated_at")
+  deletedAt   DateTime?     @map("deleted_at")
+
+  questions PastExamQuestion[]
+
+  @@index([status, sortOrder])
+  @@map("past_exams")
+}
+
+/// Sınavdaki soru ve o sınava özgü bilgileri.
+model PastExamQuestion {
+  pastExamId String  @map("past_exam_id") @db.Uuid
+  questionId String  @map("question_id") @db.Uuid
+  /// Kitapçıktaki sıra (A grubu esas alınır).
+  orderNo    Int     @map("order_no")
+  /// Sınavda İPTAL edilmiş soru: gösterilir ama puanlanmaz.
+  cancelled  Boolean @default(false)
+  /// Public SEO sayfasında tam metniyle görünen soru (dönem başına ~20).
+  publicly   Boolean @default(false) @map("publicly_visible")
+
+  pastExam PastExam @relation(fields: [pastExamId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@id([pastExamId, questionId])
+  @@unique([pastExamId, orderNo])
+  @@index([questionId])
+  @@map("past_exam_questions")
 }

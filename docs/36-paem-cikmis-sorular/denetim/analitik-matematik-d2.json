@@ -1,0 +1,211 @@
+[
+ {
+  "no": 82,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "8 kişilik tek eleme: 4 ilk tur + 2 yarı final + final. Duru-Ece maçı ilk turda olmak zorundadır (2. turda olsaydı Alin-Can ile birlikte iki yarı final dolar, ama o zaman Duru ve Ece'nin ilk turda ayrı maçlarda kazanması gerekir; Alin ve Can da ayrı maçlarda kazanmalı — 4 kişiye 3 maç düşer, çelişki; finalde de olamaz çünkü final 1 kız 1 erkek). Böylece ilk tur: Özgür-Baran, Duru-Ece (Ece kazandı), Alin-X, Can-Y ({X,Y}={Lena,Uraz}); Alin ve Can kazanıp yarı finalde eşleşir. Lena ilk turunda Alin veya Can'a yenilip elenir, ikinci maçı hiç olmaz — E kesinlikle yanlıştır. A (Baran ilk maçta yenilebilir), B (Özgür yarı finalde Ece'yi eleyebilir), C (Can yarı finali geçebilir), D (Uraz Can'ın ilk tur rakibi olabilir) mümkündür.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 83,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Aynı kurgu: Ece ilk turda Duru ile, yarı finalde Özgür/Baran galibi ile oynar; Alin ilk turda Lena/Uraz ile, yarı finalde Can ile oynar. Ece ile Alin ancak finalde karşılaşabilirdi, oysa finalde 1 kız 1 erkek var; ikisi de kız olduğundan hiçbir turda karşılaşamazlar. Diğer şıklar mümkün: Ece-Baran (yarı final), Özgür-Alin (final), Can-Lena (ilk tur), Alin-Uraz (ilk tur).",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 84,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Finalistler ancak {Alin, Can} yarı finalinin galibi ile {Ece, Özgür/Baran} yarı finalinin galibi olabilir. Uraz (ya da Lena) ilk turda Alin veya Can'a yenilerek elenir; Alin ve Can'ın ikinci maçta buluşması ikisinin de ilk turu geçtiğini gerektirir. Dolayısıyla Uraz kesinlikle finalde oynamamıştır; Alin, Can, Özgür ve Ece için finale çıkan senaryolar kurulabilir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 85,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "İlk üç sıra Betül/Derya/Gökhan (birebir). Ahmet telefon mülakatı olduğundan ilk üçte olamaz, yani sırası ≥4. Betül-Ahmet-Cemil ardışık olduğundan Betül = Ahmet-1 ≥ 3 ve Betül ≤ 3 → Betül 3, Ahmet 4, Cemil 5. 1-2 sıralar Derya ve Gökhan, 6-7 sıralar ardışık olan Emine ve Füsun. Beşinci sıra Cemil'dir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 86,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Dizilim: 1-2 = {Derya, Gökhan} (sıra belirsiz), 3 Betül, 4 Ahmet, 5 Cemil, 6-7 = {Emine, Füsun} (sıra belirsiz). Emine 6 veya 7'de, Cemil 5'te olduğundan Emine kesinlikle Cemil'den sonradır (B doğru). A ve C belirsiz (Ahmet dışındaki tek telefon mülakatı Cemil, Emine veya Füsun olabilir), D belirsiz (son Emine de olabilir), E belirsiz (Derya-Gökhan sırası serbest).",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 87,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "İki telefon mülakatı başa alınıp diğerleri sırasını koruduğunda 1-2 sıralar telefonculara, 3-7 kalan beş kişiye gider. Telefoncular Ahmet + {Cemil | Emine | Füsun}. Üç durumda da kalan sıralamanın ilk ikisi Derya/Gökhan (3-4), üçüncüsü Betül olur → Betül her senaryoda 5. sıradadır. Cemil (1/2 veya 6), Derya/Gökhan (3 veya 4), Füsun (1/2, 6 veya 7) değişkendir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 88,
+  "cevap": "D",
+  "guven": "dusuk",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Sıra kısıtları yalnız Göz < KBB < Psikiyatri < Dâhiliye zincirini verir; Nöroloji zincire serbestçe yerleşebildiğinden 5 olası dizilim vardır ve metinde yazılı tahlil kısıtları (1.=3. eşit küme, 2.=0, Dâhiliye=3, toplam 6 → kümeler 1,0,1,1,3) Nöroloji'nin yerini daraltmaz. Soru tek cevap istediğine ve 90. soruda yalnız tek bir şıkkın doğru olması ancak Nöroloji-Göz-KBB-Psikiyatri-Dâhiliye diziliminde sağlandığına göre ilk poliklinik Nöroloji'dir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": "Aktarılan metin tek başına ilk polikliniği belirlemiyor: Göz de ilk olabilir (Göz-Nöroloji-KBB-Psikiyatri-Dâhiliye vb.). ortakMetin sonundaki kopuk 'Yukarıdaki' ibaresi, Nöroloji'nin (ya da Göz'ün) yerini sabitleyen bir maddenin OCR'da düşmüş olabileceğine işaret ediyor. Cevap, 90. sorunun tek doğru şıkka sahip olması varsayımıyla verildi."
+ },
+ {
+  "no": 89,
+  "cevap": "E",
+  "guven": "dusuk",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Göz < KBB < Psikiyatri < Dâhiliye zincirinde Dâhiliye en erken 4. sırada olabilir; son sıra ya Dâhiliye ya da Nöroloji'dir. 88. soruda gerekçelendirilen Nöroloji-Göz-KBB-Psikiyatri-Dâhiliye diziliminde en son gidilen poliklinik Dâhiliye olur.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": "88 ile aynı belirsizlik: yazılı kısıtlar Nöroloji'yi 5. sıraya da koymaya izin veriyor, o durumda cevap Nöroloji olurdu. Ayrıca E şıkkı 'Dâhiliye Yukarıdaki' biçiminde OCR bulaşması içeriyor."
+ },
+ {
+  "no": 90,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "1. ve 3. poliklinikler birebir aynı kümeyi istediğinden sayıları eşit (k), 2. poliklinik 0, Dâhiliye 3, toplam 6 → 2k + (kalan poliklinik) = 3. 'Birebir aynı tahlilleri istemiştir' boş küme olamayacağından k=1, kalan=1; yani tahlil dağılımı sırasıyla 1, 0, 1, ve Dâhiliye 3 ile diğerine 1'dir. Psikiyatri, olası beş dizilimin hepsinde 3. veya 4. sırada, yani daima 1 tahlillik yuvada olduğundan tam 1 tahlil istemiştir — kesinlikle doğru. B, C, D iki tahlil varsayar (imkânsız); E ise Göz 2. sıraya düştüğünde 0 tahlil olacağından kesin değildir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 91,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Yaklaşma hızı 80+120=200 km/sa, 1000/200 = 5 saatte karşılaşırlar. Yavaş araç 5x80 = 400 km yapmış, B'ye 1000-400 = 600 km kalmıştır. Hızı %25 artınca 80x1,25 = 100 km/sa olur; 600/100 = 6 saat.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 92,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Toplam para 8x(10+20+50+100+200) = 8x380 = 3.040 TL. Bir kişiye en çok vermek için diğer 17 kişiye en ucuz birer banknot verilir: 8x10 + 8x20 + 1x50 = 80+160+50 = 290 TL. Kalan 23 banknot (7x50 + 8x100 + 8x200 = 350+800+1.600 = 2.750 TL) tek kişiye verilir; 3.040 - 290 = 2.750 TL doğrular.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 93,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Başarı oranı %60 → net = 40 x 0,60 = 24. Net = doğru - yanlış/4 → 24 = 25 - Y/4 → Y = 4. Boş = 40 - 25 - 4 = 11.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 94,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Saat her gerçek 60 dakikada 45 dakika ilerliyor. 08:00'dan 22:00'a gerçek süre 14 saat; saatin ilerlemesi 14 x 45 = 630 dakika = 10 saat 30 dakika. 08:00 + 10:30 = 18:30.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 95,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Buzdolabı B, televizyon T; B+T = 30 ve 0,30B = 0,60T → B = 2T → T = 10, B = 20. Satılan: 6 buzdolabı ve 6 televizyon. Kalan: (20-6) + (10-6) = 14 + 4 = 18.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 96,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Para M, eski fiyat p ise eski miktar M/p, yeni fiyat 1,4p ile yeni miktar M/(1,4p). Fark: (M/p)(1 - 1/1,4) = (M/p)(0,4/1,4) = (2/7)(M/p) = 10 → M/p = 35 kilo.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 97,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Şekildeki zincir: K -6→ L, L x4→ M, M ÷2→ N, N x3→ P, P +6→ R, R ÷3→ S. N = 26 → M = 52 → L = 13 → K = 19; P = 26x3 = 78 → R = 84 → S = 28. K + S = 19 + 28 = 47.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 98,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Grafikte Kiraz %40, Kayısı %35, Elma %25. 80 kilonun dağılımı: elma 20, kayısı 28, kiraz 32 kg. Gelir: 20x90 = 1.800, 28x100 = 2.800, 32x150 = 4.800 → toplam 9.400 TL.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 99,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Sembol grupları tekrar örüntüsüyle eşleşir: 32673 ve 47384 'abcda' (1.=5.), 61658 ve 54521 'abacd' (1.=3.). 3. satır (✱■✳✦✱) 32673'e, 4. satır (◈✦✱○◈) 47384'e oturur ve 7=✦, 3=✱ ortak kalır; buradan 2=■, 6=✳, 4=◈, 8=○. Kalan iki grup 61658 = ✳⑩✳□○ ve 54521 = □◈□■⑩ ile eşleşerek 1=⑩, 5=□ verir. Sorulan gruplar: ○□✳✦ = 8567 ve ⑩◈■✱ = 1423; fark 8567 - 1423 = 7144.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 100,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm",
+  "kaynakUrl": null,
+  "gerekce": "Görselde n. şekil 3'erli n sıra + en üstte 1 boyasız kareden oluşur: toplam kare 3n+1 (4, 7, 10, 13 ile uyumlu). Boyama en üstteki tam sıradan başlayıp aşağı doğru şaşırtmalıdır; tepedeki tek kare hiç boyalı değildir, yani boyalı sıra sayısı tavan(n/2) ve boyalı kare sayısı 3·tavan(n/2). 18 boyalı kare için tavan(n/2) = 6 → n = 11 veya n = 12. Altlarındaki sayılar 3·11+1 = 34 ve 3·12+1 = 37; toplam 71.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ }
+]

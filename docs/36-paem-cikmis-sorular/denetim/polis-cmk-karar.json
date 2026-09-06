@@ -1,0 +1,411 @@
+[
+ {
+  "no": 1,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=3201&MevzuatTertip=3",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.3201.pdf"
+  ],
+  "gerekce": "Madde metni: \"Emniyet Teşkilatı mensupları ile çarşı ve mahalle bekçileri dernek kurucusu ve üyesi olamazlar. Ancak spor derneklerine üye olabilir.\"",
+  "gerekce2": "Ek md 11/1: 'Emniyet Teşkilatı mensupları ile çarşı ve mahalle bekçileri dernek kurucusu ve üyesi olamazlar. Ancak spor derneklerine üye olabilir.' — yani yalnız spor dernekleri."
+ },
+ {
+  "no": 2,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=2559&MevzuatTertip=3",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  ],
+  "gerekce": "Polis, kendisine saldıranlara karşı \"saldırıyı etkisiz kılmak amacıyla ve etkisiz kılacak ölçüde\" silah kullanmaya yetkilidir; ölçülülük esastır, yazılı izin veya salt uyarı ateşi şartı yoktur.",
+  "gerekce2": "Md 16 son fıkra: silahla saldırıya teşebbüs edilmesi hâlinde polis 'saldırı tehlikesini etkisiz kılacak ölçüde duraksamadan silahla ateş edebilir'; ne yazılı izin ne yalnız uyarı ateşi şartı vardır."
+ },
+ {
+  "no": 3,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=2559&MevzuatTertip=3",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  ],
+  "gerekce": "Madde metni: \"...sair surette kimliği belirlenemeyen kişi tutularak durumdan derhal Cumhuriyet savcısı haberdar edilir. Bu kişi, kimliği açık bir şekilde anlaşılıncaya kadar gözaltına alınır...\"",
+  "gerekce2": "Md 4/A: 'sair surette kimliği belirlenemeyen kişi tutularak durumdan derhal Cumhuriyet savcısı haberdar edilir. Bu kişi, kimliği açık bir şekilde anlaşılıncaya kadar gözaltına alınır.'"
+ },
+ {
+  "no": 4,
+  "parti": "polis-cmk",
+  "karar": "UYARI",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "eskime": [],
+  "uyarilar": [
+   "Md 7'nin ikinci fıkrası (açık yer toplantılarının güneş batmadan dağılması, kapalı yer toplantılarının 24.00'te bitmesi) Anayasa Mahkemesi'nin 30/6/2022 tarihli E.2018/137, K.2022/86 kararıyla iptal edildi (yürürlük 12/1/2023). Bugün yürürlükte olan tek zaman sınırı 'güneş doğmadan başlanamaz'; bu nedenle 'gece de yapılabilir' ifadesi kısmen savunulabilir hale gelmiştir. Soru 2022 öncesi ders kitabı kalıbına dayanıyor.",
+   "Kusurlu soru riski: 2911 md 7'nin toplantının bitiş saatini düzenleyen ikinci fıkrası (7145 s.K. ile değişik) Anayasa Mahkemesi'nin 30/6/2022 tarihli E.2018/137, K.2022/86 kararıyla İPTAL edildi (yürürlük 12/1/2023). Bugün yürürlükte kalan tek sınır 'güneş doğmadan başlanamaz'; kapanış saati sınırı yoktur. Dolayısıyla 'gece de yapılabilir' ifadesi güncel metne göre savunulabilir hâle gelmiştir; doğru cevap yalnızca diğer dört şıkkın birebir kanun metni olması yoluyla eleme ile bulunmaktadır. İptal 2023'te, yani sınavdan önce gerçekleştiği için eskime değil, soru kusuru olarak işaretlendi."
+  ],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=2911&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.2911.pdf"
+  ],
+  "gerekce": "A, B, C ve E şıkları kanun metniyle birebir örtüşüyor; geriye kalan D yanlış kabul edilmelidir — md 7/1 uyarınca toplantı ve yürüyüşlere güneş doğmadan başlanamaz.",
+  "gerekce2": "A (md 8), B (md 26 son fıkra), C (md 9: en az yedi kişilik düzenleme kurulu) ve E (md 22: TBMM'ye 1 km) madde metniyle birebir doğru; geriye yanlış olarak D kalır — md 7/1 'güneş doğmadan başlanamaz' der, klasik kural gece toplantı yapılamayacağı yönündedir."
+ },
+ {
+  "no": 5,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=657&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.657.pdf"
+  ],
+  "gerekce": "Madde metni: \"Konusu suç teşkil eden emir, hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz.\"",
+  "gerekce2": "Md 11: 'Konusu suç teşkil eden emir, hiçbir suretle yerine getirilmez; yerine getiren kimse sorumluluktan kurtulamaz.'"
+ },
+ {
+  "no": 6,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=8203&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8203&MevzuatTur=7&MevzuatTertip=5"
+  ],
+  "gerekce": "Konutta, iş yerinde ve kamuya açık olmayan kapalı alanlarda arama ancak hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle yapılabilir; kolluk amiri bu yerler için arama kararı veremez.",
+  "gerekce2": "Bina içi (konut/iş yeri/kamuya açık olmayan kapalı alan) araması kolluk amiri emriyle yapılamaz; 'ancak hâkim kararı veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının yazılı emriyle' yapılabilir."
+ },
+ {
+  "no": 7,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=8201&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8201&MevzuatTur=7&MevzuatTertip=5"
+  ],
+  "gerekce": "Yönetmelik tanımı: \"Gecikmesinde sakınca bulunan hâl: Derhâl işlem yapılmadığı takdirde suçun delillerinin kaybolması veya şüphelinin kaçması veya kimliğinin saptanamaması ihtimalini ifade eder.\"",
+  "gerekce2": "Yönetmelik md 3: 'Gecikmesinde sakınca bulunan hâl: Derhâl işlem yapılmadığı takdirde suçun delillerinin kaybolması veya şüphelinin kaçması veya kimliğinin saptanamaması ihtimalini ifade eder.'"
+ },
+ {
+  "no": 8,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=2559&MevzuatTertip=3",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.2559.pdf"
+  ],
+  "gerekce": "Kaçan failin yakalanmasını sağlamak durdurma sebeplerinden biridir; madde metni \"Durdurma yetkisinin kullanılabilmesi için polisin tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanan makul bir sebebin bulunması gerekir\" der — kuvvetli şüphe değil, makul sebep aranır.",
+  "gerekce2": "Md 4/A/b durdurma amaçlarından biri 'suç işlendikten sonra kaçan faillerin yakalanmasını sağlamak'tır; ikinci fıkra 'durdurma yetkisinin kullanılabilmesi için ... makul bir sebebin bulunması gerekir' der."
+ },
+ {
+  "no": 9,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=3201&MevzuatTertip=3",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.3201.pdf"
+  ],
+  "gerekce": "Madde metni: \"...memleketin umumi emniyet ve asayiş işlerinden Dahiliye Vekili (İçişleri Bakanı) mesuldür.\"",
+  "gerekce2": "Md 1: 'Memleketin umumi emniyet ve asayiş işlerinden Dahiliye Vekili (İçişleri Bakanı) mesuldür.'"
+ },
+ {
+  "no": 10,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=7&MevzuatNo=8201&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8201&MevzuatTur=7&MevzuatTertip=5"
+  ],
+  "gerekce": "Madde metni: \"Cumhuriyet başsavcıları her yılın sonunda ... adlî kolluk sorumluları hakkında değerlendirme raporu düzenleyerek, mülki idare amirlerine gönderir.\"",
+  "gerekce2": "Md 11: 'Cumhuriyet başsavcıları her yılın sonunda ... adlî kolluk sorumluları hakkında değerlendirme raporu düzenleyerek, mülki idare amirlerine gönderir.' Rapor mülki amire GÖNDERİLİR, onun tarafından düzenlenmez."
+ },
+ {
+  "no": 11,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Kanun tanımı: \"Şüpheli: Soruşturma evresinde, suç şüphesi altında bulunan kişiyi\" ifade eder (kovuşturma evresindeki kişi 'sanık'tır).",
+  "gerekce2": "Md 2/1-a: 'Şüpheli: Soruşturma evresinde, suç şüphesi altında bulunan kişiyi ... ifade eder.'"
+ },
+ {
+  "no": 12,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Madde metni: \"Toplu olarak işlenen suçlarda ... Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir.\"",
+  "gerekce2": "Md 91/3: 'Toplu olarak işlenen suçlarda ... Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir.'"
+ },
+ {
+  "no": 13,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Hâkim kararı, gecikmesinde sakınca varsa Cumhuriyet savcısının, \"Cumhuriyet savcısına ulaşılamadığı hallerde ise kolluk amirinin yazılı emri\" ile arama yapılabilir; üst araması konut/iş yeri istisnasına girmediği için kolluk amiri yetkilidir.",
+  "gerekce2": "Md 119/1: savcıya ulaşılamadığı hâllerde kolluk amirinin yazılı emriyle arama yapılabilir; yasak olan sadece konut, iş yeri ve kamuya açık olmayan kapalı alanlardır — olayda şüphelinin üstü aranmaktadır."
+ },
+ {
+  "no": 14,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Madde metni: \"Cumhuriyet savcısı, ihbar veya başka bir suretle bir suçun işlendiği izlenimini veren bir hâli öğrenir öğrenmez ... hemen işin gerçeğini araştırmaya başlar.\"",
+  "gerekce2": "Md 160/1: savcı, suç izlenimi veren hâli 'öğrenir öğrenmez ... hemen işin gerçeğini araştırmaya başlar'."
+ },
+ {
+  "no": 15,
+  "parti": "polis-cmk",
+  "karar": "UYARI",
+  "resmiCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [
+   "A şıkkındaki 'karar ve işlemler tedbir süresince gizli tutulur' ibaresi CMK md 135'te değil, tedbire ilişkin uygulama yönetmeliğinde yer alır; yine de doğru bir ifadedir ve B'nin açık aykırılığını değiştirmez."
+  ],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Md 135/3 açıkça \"Şüpheli veya sanığın tanıklıktan çekinebilecek kişilerle arasındaki iletişimi kayda alınamaz\" der; B şıkkı bunun tersini söylediği için yanlıştır (A, C, D, E metne uygundur).",
+  "gerekce2": "Md 135/3: 'Şüpheli veya sanığın tanıklıktan çekinebilecek kişilerle arasındaki iletişimi kayda ALINAMAZ'; B şıkkı bunun tersini söylediği için yanlıştır (C, D, E md 135/1'de aynen yer alır)."
+ },
+ {
+  "no": 16,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Mesleki ilişkiye ait olduğu öne sürülen şey derhal iade edilmez; ayrı zarfa konup mühürlenir ve iade ancak yetkili hâkimin (soruşturmada sulh ceza hâkimi) bu tespiti yapmasıyla olur — E yanlıştır.",
+  "gerekce2": "Md 130/2: meslekî ilişkiye ait olduğu ileri sürülen şey derhâl iade edilmez; ayrı zarfa konup mühürlenir ve kararı soruşturmada sulh ceza hâkimi verir — iade ancak hâkim bunu saptarsa yapılır."
+ },
+ {
+  "no": 17,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Madde metni: \"Yakalanmış iken kolluk görevlisinin elinden kaçan şüpheli veya sanık ya da ... kaçan tutuklu veya hükümlü hakkında Cumhuriyet savcıları ve kolluk kuvvetleri de yakalama emri düzenleyebilirler.\"",
+  "gerekce2": "Md 98/2: 'Yakalanmış iken kolluk görevlisinin elinden kaçan şüpheli veya sanık ... hakkında Cumhuriyet savcıları ve kolluk kuvvetleri de yakalama emri düzenleyebilirler.'"
+ },
+ {
+  "no": 18,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Kanun tanımı: \"Sorgu: Şüpheli veya sanığın hâkim veya mahkeme tarafından ... dinlenmesini\" ifade eder; savcı ve kolluğun yaptığı işlem 'ifade alma'dır.",
+  "gerekce2": "Md 2/1-h: 'Sorgu: Şüpheli veya sanığın HÂKİM VEYA MAHKEME tarafından ... dinlenmesini' ifade eder; savcı/kolluk tarafından dinlenme ise ifade almadır (md 2/1-g)."
+ },
+ {
+  "no": 19,
+  "parti": "polis-cmk",
+  "karar": "ONAY",
+  "resmiCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [],
+  "uyarilar": [],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Madde metni: posta kuruluşunda bulunan gönderilere \"hâkimin veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının kararı ile elkonulabilir.\"",
+  "gerekce2": "Md 129/1: posta hizmeti veren kuruluşta bulunan gönderilere 'hâkimin veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının kararı ile elkonulabilir'."
+ },
+ {
+  "no": 20,
+  "parti": "polis-cmk",
+  "karar": "UYARI",
+  "resmiCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "eskime": [
+   "CMK md 134'ün TAMAMI Anayasa Mahkemesi'nin 12/2/2026 tarihli E.2023/128, K.2026/36 sayılı kararıyla iptal edildi; iptal kararın RG'de yayımından dokuz ay sonra, 25/2/2027'de yürürlüğe girecek. Bugün (6 Eyl 2026) madde hâlâ yürürlükte olduğu için cevap C'dir; ancak 25/2/2027'den sonra yerine yeni bir düzenleme gelmezse bu sorunun dayanağı ortadan kalkar. Soru en geç 2027 başında yeniden değerlendirilmeli."
+  ],
+  "uyarilar": [
+   "Kararı hâkim (gecikmesinde sakınca bulunan hâllerde savcı, 24 saat içinde hâkim onayına sunulmak üzere) verir; soru yalnızca 'aranan şartlar' sorduğu için C tam karşılığıdır."
+  ],
+  "kaynaklar": [
+   "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=5271&MevzuatTertip=5",
+   "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5271.pdf"
+  ],
+  "gerekce": "Madde metni: \"...somut delillere dayanan kuvvetli şüphe sebeplerinin varlığı ve başka surette delil elde etme imkânının bulunmaması halinde, hâkim veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı tarafından ... karar verilir.\" Rıza, kabahat veya salt savcı kararı şartı yoktur.",
+  "gerekce2": "Md 134/1: 'somut delillere dayanan kuvvetli şüphe sebeplerinin varlığı ve başka surette delil elde etme imkânının bulunmaması hâlinde' bilgisayar kütüklerinde arama kararı verilir."
+ }
+]

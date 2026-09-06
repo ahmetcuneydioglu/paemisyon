@@ -1,0 +1,543 @@
+{
+ "slug": "paem-6",
+ "ad": "PAEM 6. Dönem Yazılı Sınavı",
+ "tur": "analiz",
+ "kaynak": "sınava giren adayların derlediği hatırlatma listesi",
+ "uyari": "Bu sınav yayımlanmadı. Liste kabadır: bazı sorular hatırlanamamış, bazı satırların etiketi eksiktir. Dağılım YAKLAŞIKTIR.",
+ "hatirlanan": 100,
+ "hatirlanmayan": 4,
+ "etiketsiz": [
+  "hangi hak hem ozgurluk aynı zamanda guvenlik ozelligine sshiptir sux ve cezalarin gexmise yurutulememesi",
+  "afından korunmasi )",
+  "une kadar verilmezse sorusturma zaman aşımına ugrar",
+  "yararlanamaz",
+  "mise yurutulememesi"
+ ],
+ "dersDagilim": {
+  "Polis Mevzuatı": 28,
+  "Anayasa Hukuku": 16,
+  "Atatürk İlkeleri ve İnkılap Tarihi": 12,
+  "Ceza Hukuku": 11,
+  "Ceza Muhakemesi Hukuku": 10,
+  "İdare Hukuku": 8,
+  "Genel Kültür ve Analitik Düşünme": 8,
+  "İnsan Hakları": 7
+ },
+ "kanunDagilim": {
+  "657": 2,
+  "1774": 1,
+  "2559": 4,
+  "2911": 2,
+  "2918": 2,
+  "3201": 1,
+  "5176": 1,
+  "5188": 3,
+  "5326": 5,
+  "6136": 2,
+  "6222": 1,
+  "6284": 2,
+  "7068": 2
+ },
+ "kayitlar": [
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "POLİS DEVLETİ: HUKUK YOK"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "TBMM CB'NİN 2.DÖNEMİNDE SEÇİM YENİLERSE CM 3.KEZ SEÇİLEBİLİR"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "DANIŞTAY: danışma ve yüksek yargı"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "BAŞKOMUTANLIK TBMM manevi varlığından ayrilamaz"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "BÜTÇE KANUNLARI ANAYASA İPTAL eder cb"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "DDK, CBK İLE DÜZENLENİR"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "ÇALIŞMA HK., CBK İLE DÜZENLENİR"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "CB KARARLARI: karara karşı idari yargı açıktır"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "ANAYASA ÜSTÜNLÜĞÜ: HİYARARŞİ PİRAMİDİ"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "KADINLARA SEÇME SEÇİLME 18-25 YAŞ YANLIŞTI"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "MAA İLE KANUN UYUŞMAZSA MAA GEÇERLİ"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "SAVCILAR, HAKİMLER GİBİ BAĞIMSIZ"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "HAKİM-SAVCI TAYİNİ GÜVENCE VERİLMEYEN KONUDUR"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "HAKLARIN SINIRLANDIRILMASI’ Temel hak ve hürriyetler, sadece Anayasanın ilgili maddelerinde belirtilen sebeple"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "temel haklarin durdurulmasi Keza bizim Anayasamızın 15’inci maddesinde de “ölçülülük ilkesi” olağanüstü hâllerde"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "MECLİS FESİH KARINI DANIŞTAY VERİR"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "FONKSİYON GASPI: İB'nin parti kapatması"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "CBK VE YÖNETMELİK"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "VALİ 7 YIL görev yapmaz"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "FİİLİ YOL"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "BAKAN-VALİ: İDARİ VESAYET YOK"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "BAKAN YARDIMCISINI CB ATAR"
+  },
+  {
+   "ders": "İdare Hukuku",
+   "kanun": null,
+   "konu": "olağan donem cb kararnamesi hakkinds hangisi yanlsyir ( yetki kanununa dayanir"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Kasten öld. Teş: Ammulans kaza yaptı"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "KASTEN ÖLDÜRME: SERBEST HAREKETLİ SUÇ"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "ZİMMET: özgü suçtur"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "Şikaytten vazgeçen bir daha şikayet edemez"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "İTEKLENEN AYLİN'İN hareket olmadığından tck kapsskinda suç olarwk degerlendirilmes"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "MADDİ UNSURLARDA NETİCESİ AĞIRLAŞMI SUÇ YOK"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "İRADE YETENĞİ: BİŞEY ALMADAN DURAMAZ, KLEPTOMANİ"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "TEKERÜR: Lehe aleyhe bakılır"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "SUÇ TARİHİNDEKİ KANUN ESAS ALINIR"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "MÜSADERE"
+  },
+  {
+   "ders": "Ceza Hukuku",
+   "kanun": null,
+   "konu": "ALT SINIR 3 YIL TEMEL CEZA SONUÇ 30 YIL"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "KA ARAMA KARINI 24 SAAT HAKİME SUNAR (A/17.soru 2 şık aynı)"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "GÖZLEM ALTI: zorunlu müdafi"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "2 KİŞİ GÖZALTI 24 SAAT"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "TÜZEL KİŞİLER BİLİRKİŞİ OLABİLİR"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "YARGILAMANIN DENETİME TABİ OLMASI: katılan vs, itiraz eder(bu soruyu hatirlayamadim?"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "İLETİŞİMİN TESPİTİ: HER SUÇ İÇİN YAPILABİLİR (teğitli)"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "5 YIL: AĞIR CEZA UZATMA gözaltı süresi"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "SAVCI KAMU DAVASI AÇTIKTAN SONRA GERİ ALAMAZ"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "KATALOG SUÇLARDA VEKALET ALINIR, GİZLİLİK"
+  },
+  {
+   "ders": "Ceza Muhakemesi Hukuku",
+   "kanun": null,
+   "konu": "VİCDANI DELİL SİSTEMİ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "657",
+   "konu": "MAL BİLDİRİM yapmama UYARMA verilmez"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "657",
+   "konu": "ADALET HİZMETLERİ: DMK DA YOK"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "1774",
+   "konu": "AİLE RESİ 30 GÜNde misafirin kimliğini bildiri"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "KAYBOLAN ÇOCUKLAR: CBK DEĞİL MA İLE İLGİLİDİR"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "PARMAK İZİ VATANDAŞLIKTAN ÇIKMAK İSTEYENDEN ALINMAZ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "BELEDİYE ENCÜMENİ: faaliyetten men edilen Ank. Oteli erken açınca ipc"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2559",
+   "konu": "BELEDİYE BİNASI SİLAHLA GİRİLEBİLİR"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "MESLEK KURULUŞLARI MİTİNGLERİ 2911 E TABİ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2911",
+   "konu": "YABANCILAR DÜZENLEME KURULU ÜYESİ OLAMAZ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "TRAFİK POLİS GENEL ZABITA MÜLKİ AMİR görevlendirir"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "2918",
+   "konu": "PLAKA 7 GÜNDE DÜZELT (tegit edildi)"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "3201",
+   "konu": "İÇİŞLERİ BAKANI ORDUDAN FAYDALANMA CB KR İLE"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5176",
+   "konu": "AMİRİN HER EMRİ YAPILMAZ (etik)"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "ÖZEL GÜVENLİK SİLAHLA BAKANLIKta çalışır"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "KİŞİLERİN KORUNMASINDA GÜVENLİK ŞİRKETİ GİBİ İZİN ALINAMZ(silahsız personel tarafından korunmasi )"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5188",
+   "konu": "ÖZEL GÜVENLİK KOMİSYONUNDA VALİ YOK"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "İMAR: KABAHATLERDE YOK"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "15 YAŞ DOLMAMIŞA KABAHAT SUÇU VERİLMEZ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "SUÇTAN CEZA VERİLMEZSE KABAHATTEN VERİLMEZ (YANLIŞı sordu)"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "MÜLKİYETİN KAMUYA GEÇİRİLMESİ 10 YIL"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "5326",
+   "konu": "50 BİN TL VE FAZLASI TRAFİK İPC fiilinin islendigi yili takip eden takvim yilinin son gunune kadar verilmezse sorust"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "6136",
+   "konu": "CB KARARILA SİLAH VERİLİR"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "6136",
+   "konu": "YARGITAY BAŞKANI: SİLAH RUHSAT SÜRESİ ARANIR"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "6222",
+   "konu": "EŞGÜDÜM TOPLANTISI: GAZETECİ yok"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "6284",
+   "konu": "2 HAFTA : AİLE MAH DE TEDBİR KARAINA İTİRAZ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "6284",
+   "konu": "İŞ YERİNİN DEĞİŞTİRMESİNİ MÜLKİ AMİR PAMAZ 6284"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "7068",
+   "konu": "DEVLET MEMURLUĞUNDAN ÇIKARMA: ÖZLÜKTEN silme TALEP EDİLMEZ"
+  },
+  {
+   "ders": "Polis Mevzuatı",
+   "kanun": "7068",
+   "konu": "DİSİPLİN AMİRİ: GÖREVDEN UZAKLASTIRAMAZ"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "OLUMSUZ EDİM sozlesme hakki"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "MAGNA KARTA İÇERİĞİNDE SÜRGÜN EDİLİR DİYE BİRŞEY YOK"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "VİRGİNE İNSAN HAKLARI HÜR DOĞAR EŞİT"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "ÇEVRE HAKKI"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "SINIR GÜVENLİK KOMİTESİ: BM DE YOK"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "AHİS ÖZGÜRLÜKTEN SUÇ İŞLEME ŞÜPHESİ OLAMAZ"
+  },
+  {
+   "ders": "İnsan Hakları",
+   "kanun": null,
+   "konu": "seyahat hurriyeti AİHS ÇOK İHLAL YOK"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "ROMANYA BİRİNCİ KATILMAYIP İKİNCİ KATILDI"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "BOZKURT LOTUS LEHİMİZE ÇÖZÜLDÜ"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "SKYS PİCOT ANT: Serif Hüseyin Mac Mohan a. olacak"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "HATAY: sorusu milletlerr cemiyeti anayasasi kullanmadi kendi anayasasini yapti"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "SAİNT JEAN MAURİENE:"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "SOYADI KANUNU 34: EN SON YAPILAN"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "SURİYE: Sadabad paktında yok"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "MONTRO BOĞAZLAR SÖZLEŞMESİ 36"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "İSMET PAŞA İKTİSAT KONGRESİ: kk"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "SULTAN REŞAT: 2.Ahamit Tanzimat fermanını ilan etti"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "İSTANBUL KONGRESİ: Milli mücadele son kongresi"
+  },
+  {
+   "ders": "Atatürk İlkeleri ve İnkılap Tarihi",
+   "kanun": null,
+   "konu": "NURİ PAŞA: KAFKAS İSLAM ORDUSU KOMUTANI"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "YAZIM YANLIŞI: oda (doğrusu: o da)"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "DERVİŞ ZAİM: CB SİNEMA ÖDÜLÜ"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "BURSA: 2022 Türk Kültür başkenti"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "MALEZYA G20 DE YOK"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "ilk FİFA KOKARTLI kadIn hakem: Drahşan"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "ANLATIM BOZUKLUĞU: GERİ İADE"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "TÜRK AKIM"
+  },
+  {
+   "ders": "Genel Kültür ve Analitik Düşünme",
+   "kanun": null,
+   "konu": "AHMET HAMDİ TANPINAR: KADRO GURUBU"
+  },
+  {
+   "ders": "Anayasa Hukuku",
+   "kanun": null,
+   "konu": "mahkemesi bireysel basvuru sorusu turkiyede bulunan yabancilar bu haktan yararlanamaz"
+  }
+ ]
+}
