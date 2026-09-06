@@ -67,13 +67,17 @@ export class ExamsService {
       : [];
     const mineOf = new Map(mine.map((m) => [m.examId, m]));
 
-    // Arşiv çözümleri: en SON tamamlanan gösterilir. Kullanıcı arşivde birden
-    // çok kez çözebilir; listede "sonucuma dön" kapısı olmadığı için insanlar
-    // sonucunu ararken üst üste boş oturum açıyordu (6 Eylül 2026).
+    // Arşiv çözümleri: EN İYİ sonuç gösterilir, en sonuncusu değil.
+    //
+    // "En son" denemiştik ve yanlış çıktı: kullanıcı arşivde birden çok kez
+    // çözebiliyor, üstelik sonucunu ararken üst üste boş oturum açan bir
+    // kullanıcı gördük (6 Eylül 2026: 100 soruyu D80 Y20 çözdükten sonra 40
+    // dakikada 20'den fazla boş oturum). "En son" kuralı ona kendi 0/100
+    // çöplüğünü gösterirdi; "en iyi" gerçek emeğini gösterir.
     const arsivler = user
       ? await this.prisma.quizSession.findMany({
           where: { userId: user.id, archiveExamId: { in: ids }, status: 'completed' },
-          orderBy: { completedAt: 'desc' },
+          orderBy: [{ correctCount: 'desc' }, { completedAt: 'desc' }],
           select: {
             id: true,
             archiveExamId: true,
