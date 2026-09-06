@@ -69,6 +69,8 @@ export interface CikmisSinavOzet {
   ozet: string | null;
   soruSayisi: number | null;
   acikSoru: number;
+  /** Deneme motorundaki karşılığı; "sınav gibi çöz" bunu kullanır. */
+  examId: string | null;
   dersDagilimi: { ders: string; adet: number }[];
 }
 

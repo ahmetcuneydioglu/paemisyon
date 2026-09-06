@@ -39,7 +39,11 @@ export class ExamsService {
   // ── Liste (public; kullanıcı varsa kendi katılımıyla zenginleşir) ──
   async list(user?: AuthenticatedUser) {
     const exams = await this.prisma.exam.findMany({
-      where: { status: 'published', deletedAt: null },
+      // Çıkmış sınavların (Doc 36) arkasındaki Exam kayıtları burada
+      // LİSTELENMEZ: onların vitrini /paem-cikmis-sorular. Deneme listesi
+      // randevulu denemelerin yeri; ikisi karışırsa aday hangisinin canlı
+      // olduğunu ayırt edemez.
+      where: { status: 'published', deletedAt: null, pastExam: null },
       orderBy: [{ startAt: 'desc' }],
       take: 50,
       include: { _count: { select: { questions: true } } },

@@ -660,8 +660,11 @@ model Exam {
   updatedAt             DateTime      @updatedAt @map("updated_at")
   deletedAt             DateTime?     @map("deleted_at")
 
-  questions ExamQuestion[]
-  sessions  QuizSession[]
+  questions  ExamQuestion[]
+  sessions   QuizSession[]
+  /// Doluysa bu Exam bir çıkmış sınavın motor kaydıdır (Doc 36) — deneme
+  /// listesinde görünmez. Yabancı anahtar PastExam tarafındadır.
+  pastExam   PastExam?
 
   @@index([status, startAt])
   @@map("exams")
@@ -971,6 +974,7 @@ model PastExam {
   analysis      Json?
   /// Sınav gibi çözme deneyimi mevcut deneme motorundan gelir.
   examId        String?       @unique @map("exam_id") @db.Uuid
+  exam          Exam?         @relation(fields: [examId], references: [id])
   status        ContentStatus @default(draft)
   sortOrder     Int           @default(0) @map("sort_order")
   createdAt     DateTime      @default(now()) @map("created_at")

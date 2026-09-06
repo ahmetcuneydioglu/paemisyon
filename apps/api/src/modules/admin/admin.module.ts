@@ -8,6 +8,8 @@ import { AdminUsersService } from './users/admin-users.service';
 import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AdminExamsController } from './exams/admin-exams.controller';
 import { AdminExamsService } from './exams/admin-exams.service';
+import { AdminPastExamsController } from './past-exams/admin-past-exams.controller';
+import { AdminPastExamsService } from './past-exams/admin-past-exams.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 
@@ -17,7 +19,7 @@ import { ReportsModule } from '../reports/reports.module';
  */
 @Module({
   imports: [ReportsModule, PublicModule],
-  controllers: [AdminController, AdminExamsController],
+  controllers: [AdminController, AdminExamsController, AdminPastExamsController],
   providers: [
     AuditService,
     AdminDashboardService,
@@ -26,6 +28,7 @@ import { ReportsModule } from '../reports/reports.module';
     AdminUsersService,
     AdminLawArticlesService,
     AdminExamsService,
+    AdminPastExamsService,
   ],
 })
 export class AdminModule {}

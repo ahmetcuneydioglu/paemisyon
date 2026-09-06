@@ -135,6 +135,58 @@ export interface AdminUser {
   createdAt: string;
 }
 
+/** Çıkmış sınav vitrini (Doc 36). `kind` dürüstlük rozetini belirler:
+ *  `resmi` gerçek kitapçık, `analiz` yalnız konu dağılımı. */
+export type PastExamKind = 'resmi' | 'analiz';
+
+export interface AdminPastExamListItem {
+  id: string;
+  slug: string;
+  name: string;
+  institution: string;
+  term: number | null;
+  heldOn: string | null;
+  kind: PastExamKind;
+  status: ContentStatus;
+  questionCount: number | null;
+  /** Bankaya bağlı soru sayısı (`analiz` türünde 0). */
+  linked: number;
+  publicCount: number;
+  cancelledCount: number;
+  /** Yayında ve açıklaması olan soru — public sayfaya çıkmaya hazır. */
+  readyCount: number;
+  /** Public işaretli ama sürümü yayında olmayan soru: sayfada GÖRÜNMEZ. */
+  publicNotLive: number;
+}
+
+export interface AdminPastExamQuestion {
+  questionId: string;
+  orderNo: number;
+  cancelled: boolean;
+  publicly: boolean;
+  course: string;
+  topic: string;
+  stem: string;
+  versionStatus: ContentStatus | null;
+  hasExplanation: boolean;
+}
+
+export interface AdminPastExamDetail {
+  id: string;
+  slug: string;
+  name: string;
+  institution: string;
+  term: number | null;
+  heldOn: string | null;
+  kind: PastExamKind;
+  status: ContentStatus;
+  summary: string | null;
+  questionCount: number | null;
+  sortOrder: number;
+  analysis: { kaynak?: string; uyari?: string; dersDagilim?: Record<string, number>; kanunDagilim?: Record<string, number> } | null;
+  questions: AdminPastExamQuestion[];
+}
+
 export interface AdminExamListItem {
   id: string;
   title: string;

@@ -26,6 +26,8 @@ export interface CikmisSinavOzet {
   soruSayisi: number | null;
   /** Public sayfada tam metniyle görünen soru sayısı. */
   acikSoru: number;
+  /** Deneme motorundaki karşılığı — "sınav gibi çöz" bunu kullanır. */
+  examId: string | null;
   dersDagilimi: { ders: string; adet: number }[];
 }
 
@@ -129,6 +131,7 @@ export class CikmisSinavService {
     kind: string;
     summary: string | null;
     questionCount: number | null;
+    examId?: string | null;
     analysis?: unknown;
     questions: { publicly: boolean; question: { topic: { course: { name: string } } } }[];
   }): CikmisSinavOzet {
@@ -144,6 +147,7 @@ export class CikmisSinavService {
     }
     return {
       slug: s.slug,
+      examId: s.examId ?? null,
       ad: s.name,
       kurum: s.institution,
       donem: s.term,

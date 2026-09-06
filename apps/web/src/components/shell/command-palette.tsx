@@ -26,6 +26,7 @@ const STATIC_ITEMS: Item[] = [
   { group: "Sayfalar", label: "Kütüphane", href: "/kutuphane" },
   { group: "Sayfalar", label: "Mevzuat — Madde Atlası", href: "/kanunlar" },
   { group: "Sayfalar", label: "Denemeler", href: "/denemeler" },
+  { group: "Sayfalar", label: "PAEM Çıkmış Sorular", href: "/paem-cikmis-sorular" },
   { group: "Sayfalar", label: "Performans", href: "/performans" },
   {
     group: "Sayfalar",

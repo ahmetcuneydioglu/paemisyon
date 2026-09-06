@@ -86,12 +86,26 @@ export function SinavDetay({ sinav }: { sinav: CikmisSinavDetay }) {
               </h2>
               <p className="mt-1 max-w-[60ch] text-[14px] leading-relaxed text-ink-soft">
                 Sınavın tamamını süre tutarak çöz, netini gör, yanlışların çalışma
-                defterine düşsün. Her sorunun açıklaması ve kanun dayanağı hazır.
+                defterine düşsün. Her sorunun açıklaması ve kanun dayanağı hazır;
+              iptal edilen sorular sete girmez, netini bozmaz.
               </p>
             </div>
-            <ButtonLink href="/kayit" size="lg">
-              Ücretsiz başla
-            </ButtonLink>
+            <div className="flex flex-wrap gap-2">
+              {/* Sınav gibi çözme mevcut arşiv denemesi akışına gider: sabit
+                  set, süreli, tekrarlanabilir, resmî sıralamaya girmez. */}
+              {sinav.examId && (
+                <ButtonLink href={`/sinav/arsiv/${sinav.examId}`} size="lg">
+                  Sınav gibi çöz
+                </ButtonLink>
+              )}
+              <ButtonLink
+                href="/kayit"
+                size="lg"
+                variant={sinav.examId ? "secondary" : "primary"}
+              >
+                Ücretsiz başla
+              </ButtonLink>
+            </div>
           </Card>
         )}
       </article>

@@ -54,7 +54,13 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/denemeler",
     label: "Denemeler",
     icon: "exam",
-    also: ["/sinav", "/sonuc", "/siralama"],
+    // Çıkmış sınavlar (Doc 36) ayrı bir bölge değil; randevulu denemeyle
+    // aynı zihinsel yerde durur ama listesi karışmaz.
+    also: ["/sinav", "/sonuc", "/siralama", "/paem-cikmis-sorular"],
+    children: [
+      { href: "/denemeler", label: "Randevulu denemeler" },
+      { href: "/paem-cikmis-sorular", label: "Çıkmış sınavlar" },
+    ],
   },
   { href: "/liderlik", label: "Liderlik", icon: "leaderboard", also: [] },
   {

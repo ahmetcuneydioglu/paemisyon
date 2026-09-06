@@ -12,6 +12,7 @@ const NAV = [
   { href: '/review', label: 'Onay Kuyruğu', icon: '✅' },
   { href: '/reports', label: 'Soru Bildirimleri', icon: '🚩' },
   { href: '/exams', label: 'Denemeler', icon: '📝' },
+  { href: '/past-exams', label: 'Çıkmış Sınavlar', icon: '🗓️' },
   { href: '/law-articles', label: 'Madde Metinleri', icon: '📖' },
   { href: '/catalog', label: 'İçerik Ağacı', icon: '🗂️' },
   { href: '/notifications', label: 'Bildirim Gönder', icon: '🔔', adminOnly: true },

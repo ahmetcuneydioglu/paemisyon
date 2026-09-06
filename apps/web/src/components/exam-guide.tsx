@@ -85,6 +85,24 @@ export function ExamGuideBody({ guide }: { guide: ExamGuide }) {
         </section>
       ))}
 
+      {/* Çıkmış sınavlara iç bağlantı (Doc 36): rehber sayfası bu ürünün en
+          doğal giriş kapısı — arayan aday önce "PAEM nedir"e, sonra "ne
+          çıkmış"a bakıyor. */}
+      {guide.key === "paem" && (
+        <div className="mt-8 rounded-xl border border-(--color-border) p-5">
+          <p className="font-heading mb-1 text-base font-bold">
+            PAEM&apos;de gerçekten ne çıktı?
+          </p>
+          <p className="mb-3 text-sm text-(--color-text)">
+            Yayımlanmış dönemlerin soruları cevaplarıyla ve kanun dayanaklarıyla,
+            yayımlanmayanların konu dağılımı dönem dönem burada.
+          </p>
+          <Link href="/paem-cikmis-sorular" className="btn2">
+            PAEM Çıkmış Sorular →
+          </Link>
+        </div>
+      )}
+
       <div className="mt-8 rounded-xl bg-(--color-navy) p-6 text-center text-white">
         <p className="font-heading mb-3 text-lg font-bold">
           {guide.name} hazırlığına bugün başla

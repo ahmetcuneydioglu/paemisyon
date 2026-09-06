@@ -135,6 +135,33 @@ binlerce kişi olacak ve ortada hiçbir şey olmayacak. Şablon önceden hazırs
 akşam konu analizi yayınlanır. İşin en yüksek getirili tek parçası, ama ancak
 altyapı önceden kurulursa mümkün.
 
+## 7.1 Yapılanlar (6 Eyl 2026)
+
+| Katman | Durum |
+|---|---|
+| PAEM 9 ayrıştırma + kör denetim + açıklama | ✅ 100 soru `in_review` |
+| PAEM 8 vitrine bağlama | ✅ 100 soru, 47 eksik açıklama üretildi (`in_review`) |
+| PAEM 7 · PAEM 6 konu analizi | ✅ yayında |
+| `PastExam` / `PastExamQuestion` + admin API | ✅ |
+| Panel: Çıkmış Sınavlar listesi + dönem detayı | ✅ |
+| Public uç + vitrin + dönem sayfaları | ✅ |
+| Deneme motoruna bağlama ("sınav gibi çöz") | ✅ PAEM 8 |
+| Sitemap + iç bağlantı (üst menü, footer, PAEM rehberi, komut paleti) | ✅ |
+| PAEM 10 hazırlığı | ✅ `PAEM10-GECESI.md`, URL ayrıldı |
+
+**Bekleyen tek şey kullanıcı onayı:** PAEM 9'un 100 sorusu ve PAEM 8'in 47
+açıklaması onay kuyruğunda. Onaylanınca `cikmis-vitrin-sec.ts` yeniden
+çalıştırılır (vitrin açıklamalı soruları tercih eder) ve PAEM 9
+`cikmis-sinav-motora-bagla.ts` ile motora bağlanır.
+
+### Zamanla eskiyen soru sınıfı
+
+PAEM 8'in 94. sorusu (Alper Gezeravcı'nın rütbesi) **bugün cevapsız**: 30
+Ağustos 2026'da tuğgeneral oldu, hiçbir şık doğru değil. Kişinin güncel
+rütbesini/unvanını soran sorular bu sınıfa girer ve düzenli taranmalı.
+CMK md 134'e dayanan PAEM 9 s.20 ise **25 Şubat 2027'de** eskiyecek (AYM
+iptali o gün yürürlüğe giriyor).
+
 ## 8. Kural istisnası
 
 CLAUDE.md'deki "kaynak etiketi son kullanıcıya gösterilmez" kuralı (4 Eyl 2026)

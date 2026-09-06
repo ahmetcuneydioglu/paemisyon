@@ -1,11 +1,22 @@
 import type { MetadataRoute } from "next";
 import { config } from "@/lib/config";
-import { articleSlug, publicApi, type LawDetail, type LawSummary } from "@/lib/public-api";
+import {
+  articleSlug,
+  publicApi,
+  type CikmisSinavOzet,
+  type LawDetail,
+  type LawSummary,
+} from "@/lib/public-api";
 
 /** Sitemap (Doc 23 SEO omurgası) — statik sayfalar + DB'den kanun ve madde sayfaları. */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = config.siteUrl;
   const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]);
+  // Çıkmış sınav dönemleri (Doc 36) — yalnız yayındakiler döner.
+  const cikmisSinavlar = await publicApi<CikmisSinavOzet[]>(
+    "/public/cikmis-sinavlar",
+    3600,
+  ).catch(() => [] as CikmisSinavOzet[]);
 
   // Madde sayfaları (Doc 27 W4): yalnız soru sayısı olan kanunların detayına inilir;
   // fetch-ISR sayesinde saatte bir tazelenir, istek maliyeti sabittir.
@@ -32,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/misyon`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/hesaplayici/paem-puan`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/denemeler`, changeFrequency: "daily", priority: 0.8 },
+    { url: `${base}/paem-cikmis-sorular`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/premium`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/lider-tablosu`, changeFrequency: "daily", priority: 0.5 },
     { url: `${base}/sss`, changeFrequency: "monthly", priority: 0.5 },
@@ -55,5 +67,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     }));
 
-  return [...staticPages, ...lawPages, ...readingPages, ...articlePages];
+  const cikmisPages: MetadataRoute.Sitemap = cikmisSinavlar.map((s) => ({
+    url: `${base}/paem-cikmis-sorular/${s.slug}`,
+    // Dönem içeriği ancak yeni soru açıldığında değişir; sık taranmasına
+    // gerek yok ama öncelik yüksek: aranan sayfa bu.
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...cikmisPages, ...lawPages, ...readingPages, ...articlePages];
 }

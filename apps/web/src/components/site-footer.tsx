@@ -10,6 +10,7 @@ const GROUPS: { title: string; links: { href: string; label: string; external?: 
       { href: "/kanunlar", label: "Kanun Kütüphanesi" },
       { href: "/gunun-sorusu", label: "Günün Quizi" },
       { href: "/denemeler", label: "Canlı Denemeler" },
+      { href: "/paem-cikmis-sorular", label: "PAEM Çıkmış Sorular" },
       { href: "/hesaplayici/paem-puan", label: "Puan Hesaplayıcı" },
     ],
   },

@@ -9,6 +9,7 @@ const NAV = [
   { href: "/kanunlar", label: "Kanunlar" },
   { href: "/paem", label: "PAEM" },
   { href: "/misyon", label: "Misyon" },
+  { href: "/paem-cikmis-sorular", label: "Çıkmış Sorular" },
   { href: "/denemeler", label: "Denemeler" },
   { href: "/gunun-sorusu", label: "Günün Quizi" },
   { href: "/premium", label: "Premium" },
