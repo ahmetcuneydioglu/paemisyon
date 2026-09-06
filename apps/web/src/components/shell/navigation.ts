@@ -23,9 +23,25 @@ export interface NavItem {
   desktopOnly?: boolean;
 }
 
-/** Ürünün beş ana bölgesi — web ve mobil navigasyonun tek kaynağı. */
+/**
+ * Ürünün ana bölgeleri — web ve mobil navigasyonun tek kaynağı.
+ * Mobil alt bar altı bölge gösterir (`grid-cols-6`); yedincisi sığmadığı için
+ * bir bölge eklenecekse ya `desktopOnly` olur ya da yerini başkasına verir.
+ */
 export const APP_NAV_ITEMS: NavItem[] = [
-  { href: "/bugun", label: "Bugün", icon: "today", also: [] },
+  // Liderlik tablosu Bugün'ün altına alındı (kullanıcı kararı): günlük
+  // döngünün parçası değil, ara sıra bakılan bir yer. Alt bardaki yerini
+  // Çıkmış Sorular aldı.
+  {
+    href: "/bugun",
+    label: "Bugün",
+    icon: "today",
+    also: ["/liderlik"],
+    children: [
+      { href: "/bugun", label: "Bugünün planı" },
+      { href: "/liderlik", label: "Liderlik tablosu" },
+    ],
+  },
   {
     href: "/kutuphane",
     label: "Kütüphane",
@@ -43,7 +59,7 @@ export const APP_NAV_ITEMS: NavItem[] = [
     ],
   },
   // Mevzuat Merkezi (Doc 29): platformun temel özelliği — birinci seviye.
-  // Mobil web alt barı 5 bölgede kalır; oradan Kütüphane > Mevzuat çocuğu taşır.
+  // Mobil alt bara sığmıyor; oraya Kütüphane > Mevzuat çocuğu üzerinden gidilir.
   {
     href: "/kanunlar",
     label: "Mevzuat",
@@ -56,25 +72,16 @@ export const APP_NAV_ITEMS: NavItem[] = [
     label: "Denemeler",
     icon: "exam",
     also: ["/sinav", "/sonuc", "/siralama"],
-    // Mobil alt bar 6 bölgede sabit; çıkmış sorular oraya sığmıyor, bu yüzden
-    // Mevzuat'ta olduğu gibi bir üst bölgenin çocuğu olarak da taşınır.
-    children: [
-      { href: "/denemeler", label: "Randevulu denemeler" },
-      { href: "/paem-cikmis-sorular", label: "Çıkmış sorular" },
-    ],
   },
-  // Çıkmış sorular kendi bölgesi (kullanıcı kararı): adayın en çok aradığı
-  // içerik, denemenin alt başlığı olarak gömülmez. Mevzuat'la aynı desen —
-  // masaüstünde birinci seviye, mobil alt bar 5-6 bölgede kalsın diye orada
-  // Denemeler'in çocuğu olarak taşınır.
+  // Çıkmış sorular kendi bölgesi (kullanıcı kararı): sınav öncesi her gün
+  // açılan içerik, denemenin alt başlığı olarak gömülmez. Mobil alt barda da
+  // yer alır — oradaki yerini liderlik tablosuna verdi.
   {
     href: "/paem-cikmis-sorular",
     label: "Çıkmış Sorular",
     icon: "archive",
     also: [],
-    desktopOnly: true,
   },
-  { href: "/liderlik", label: "Liderlik", icon: "leaderboard", also: [] },
   {
     href: "/performans",
     label: "Performans",
