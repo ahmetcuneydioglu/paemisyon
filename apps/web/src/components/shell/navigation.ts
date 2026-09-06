@@ -3,6 +3,7 @@ export type NavigationIconName =
   | "library"
   | "mevzuat"
   | "exam"
+  | "archive"
   | "leaderboard"
   | "performance"
   | "profile";
@@ -54,13 +55,24 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/denemeler",
     label: "Denemeler",
     icon: "exam",
-    // Çıkmış sınavlar (Doc 36) ayrı bir bölge değil; randevulu denemeyle
-    // aynı zihinsel yerde durur ama listesi karışmaz.
-    also: ["/sinav", "/sonuc", "/siralama", "/paem-cikmis-sorular"],
+    also: ["/sinav", "/sonuc", "/siralama"],
+    // Mobil alt bar 6 bölgede sabit; çıkmış sorular oraya sığmıyor, bu yüzden
+    // Mevzuat'ta olduğu gibi bir üst bölgenin çocuğu olarak da taşınır.
     children: [
       { href: "/denemeler", label: "Randevulu denemeler" },
-      { href: "/paem-cikmis-sorular", label: "Çıkmış sınavlar" },
+      { href: "/paem-cikmis-sorular", label: "Çıkmış sorular" },
     ],
+  },
+  // Çıkmış sorular kendi bölgesi (kullanıcı kararı): adayın en çok aradığı
+  // içerik, denemenin alt başlığı olarak gömülmez. Mevzuat'la aynı desen —
+  // masaüstünde birinci seviye, mobil alt bar 5-6 bölgede kalsın diye orada
+  // Denemeler'in çocuğu olarak taşınır.
+  {
+    href: "/paem-cikmis-sorular",
+    label: "Çıkmış Sorular",
+    icon: "archive",
+    also: [],
+    desktopOnly: true,
   },
   { href: "/liderlik", label: "Liderlik", icon: "leaderboard", also: [] },
   {
