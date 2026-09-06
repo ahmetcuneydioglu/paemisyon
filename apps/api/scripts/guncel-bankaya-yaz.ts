@@ -21,8 +21,7 @@ const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 const APPLY = process.env.APPLY === '1';
 const GECER = new Set(['ONAY', 'ZAYIF']);
 /**
- * Bankaya yazılmış alanlar. Karar dosyaları dengeleme sonrası geçersizleşti
- * (harfler değişti), o yüzden bu alanlar yeniden değerlendirilmez.
+ * Bankaya yazılmış alanlar; yeniden değerlendirilmez (mükerrer yazım olurdu).
  * Yeni bir alan yazıldıktan sonra buraya eklenir.
  */
 const YAZILMIS = new Set(
