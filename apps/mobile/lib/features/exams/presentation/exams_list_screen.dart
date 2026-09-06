@@ -746,20 +746,24 @@ class _PastRow extends StatelessWidget {
                         ?.copyWith(fontWeight: FontWeight.w700)),
               ),
             ),
-            ListTile(
-              leading: const Icon(Icons.replay_rounded),
-              title: Text(attended ? 'Arşivde tekrar çöz' : 'Arşivde çöz'),
-              subtitle: const Text(
-                  'Aynı sorular, aynı süre — sıralamaya girmez, pratik sayılır.'),
-              onTap: () {
-                Navigator.pop(ctx);
-                onOpen('/quiz', {
-                  'archiveExamId': exam.id,
-                  'topicName': exam.title,
-                  'mode': 'exam',
-                });
-              },
-            ),
+            // Arşiv artık denemeye özel bir anahtar (7 Eyl 2026): kapalıyken
+            // sunucu ARCHIVE_CLOSED döndürür, o yüzden giriş hiç çizilmez —
+            // ölü düğme göstermek kullanıcıyı hataya sürüklemekti.
+            if (exam.archiveOpenAfterEnd)
+              ListTile(
+                leading: const Icon(Icons.replay_rounded),
+                title: Text(attended ? 'Arşivde tekrar çöz' : 'Arşivde çöz'),
+                subtitle: const Text(
+                    'Aynı sorular, aynı süre — sıralamaya girmez, pratik sayılır.'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  onOpen('/quiz', {
+                    'archiveExamId': exam.id,
+                    'topicName': exam.title,
+                    'mode': 'exam',
+                  });
+                },
+              ),
             if (attended)
               ListTile(
                 leading: const Icon(Icons.assessment_outlined),
@@ -767,6 +771,19 @@ class _PastRow extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(ctx);
                   onOpen('/denemeler/sonuc/${exam.myAttempt!.id}');
+                },
+              ),
+            // Arşivde çözenin sonucuna DÖNEBİLMESİ gerekiyor: bu kapı yoktu ve
+            // bir kullanıcı sonucunu ararken 40 dakikada 20'den fazla boş
+            // oturum açtı, her seferinde 0/100 gördü (6 Eylül 2026).
+            if (exam.myArchiveAttempt != null)
+              ListTile(
+                leading: const Icon(Icons.history_rounded),
+                title: const Text('Arşiv sonucum'),
+                subtitle: const Text('Arşivde çözdüğün en iyi sonuç — sıralamaya girmez.'),
+                onTap: () {
+                  Navigator.pop(ctx);
+                  onOpen('/denemeler/sonuc/${exam.myArchiveAttempt!.id}');
                 },
               ),
             ListTile(

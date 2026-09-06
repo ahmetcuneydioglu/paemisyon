@@ -29,10 +29,15 @@ class ExamListItem {
   final int questionCount;
   final bool isPremium;
   final bool questionsOpenAfterEnd;
+  /// Sınav bitince arşivden çözülebilir mi (denemeye özel anahtar, 7 Eyl 2026).
+  /// Kapalıysa "Arşivde çöz" girişi ÇİZİLMEZ — sunucu zaten reddeder.
+  final bool archiveOpenAfterEnd;
   final ExamState state;
   final int participantCount;
   final double? avgScore;
   final ExamAttemptRef? myAttempt;
+  /// Arşivde çözdüysem en iyi sonucum — "Arşiv sonucum" girişi bunun üstünden.
+  final ExamAttemptRef? myArchiveAttempt;
 
   const ExamListItem({
     required this.id,
@@ -44,10 +49,12 @@ class ExamListItem {
     required this.questionCount,
     required this.isPremium,
     required this.questionsOpenAfterEnd,
+    this.archiveOpenAfterEnd = false,
     required this.state,
     required this.participantCount,
     this.avgScore,
     this.myAttempt,
+    this.myArchiveAttempt,
   });
 
   factory ExamListItem.fromJson(Map<String, dynamic> j) => ExamListItem(
@@ -60,11 +67,15 @@ class ExamListItem {
         questionCount: j['questionCount'] as int,
         isPremium: j['isPremium'] as bool? ?? false,
         questionsOpenAfterEnd: j['questionsOpenAfterEnd'] as bool? ?? true,
+        archiveOpenAfterEnd: j['archiveOpenAfterEnd'] as bool? ?? false,
         state: _stateFrom(j['state'] as String),
         participantCount: j['participantCount'] as int? ?? 0,
         avgScore: (j['avgScore'] as num?)?.toDouble(),
         myAttempt: j['myAttempt'] != null
             ? ExamAttemptRef.fromJson(j['myAttempt'] as Map<String, dynamic>)
+            : null,
+        myArchiveAttempt: j['myArchiveAttempt'] != null
+            ? ExamAttemptRef.fromJson(j['myArchiveAttempt'] as Map<String, dynamic>)
             : null,
       );
 }

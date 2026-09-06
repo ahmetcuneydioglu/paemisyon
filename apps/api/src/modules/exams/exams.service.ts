@@ -116,6 +116,9 @@ export class ExamsService {
       myArchiveAttempt: arsivOf.get(e.id)
         ? {
             id: arsivOf.get(e.id)!.id,
+            // Sorgu zaten completed süzüyor; istemciler myAttempt ile AYNI
+            // şekli beklediği için alan açıkça yazılır.
+            status: 'completed' as const,
             correctCount: arsivOf.get(e.id)!.correctCount,
             wrongCount: arsivOf.get(e.id)!.wrongCount,
             blankCount: arsivOf.get(e.id)!.blankCount,

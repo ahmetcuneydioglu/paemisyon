@@ -99,6 +99,7 @@ export interface ExamListItem {
   /** Arşivde çözdüysem son sonucum — "arşiv sonucum" girişi bunun üstünden. */
   myArchiveAttempt: {
     id: string;
+    status: "completed";
     correctCount: number;
     wrongCount: number;
     blankCount: number;
