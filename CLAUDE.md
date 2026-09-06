@@ -47,3 +47,7 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   varsayılanı KAPALI, panelden (Sorular) açılabilir. Denemede ise ayardan
   bağımsız, HER ZAMAN kapalıdır. Kaynak etiketi AI açıklama istemine de
   konulmaz (model açıklamada tekrarlayıp ayarı anlamsızlaştırır).
+  **İSTİSNA (6 Eyl 2026, Doc 36):** "PAEM Çıkmış Sorular" ürününde resmî
+  yayımlanmış sınavın adı public sayfalarda GÖSTERİLİR — orada sınavın kimliği
+  ürünün kendisidir ve zaten kamuya açıktır. İstisna yalnız resmî sınavları
+  kapsar; kitap/deneme etiketleri kural kapsamında kalmaya devam eder.

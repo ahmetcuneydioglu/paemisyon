@@ -1,0 +1,3024 @@
+{
+ "A": [
+  {
+   "no": 1,
+   "grup": "A",
+   "kok": "Emniyet Hizmetleri Sınıfı mensuplarının derneklere üye olabilmesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Sadece spor derneklerine üye olabilirler.",
+    "B": "Her türlü derneğe üye olabilirler.",
+    "C": "Sadece mesleki derneklere üye olabilirler.",
+    "D": "Hiçbir derneğe üye olamazlar.",
+    "E": "Çevreyi koruma amacıyla kurulan derneklere üye olabilirler."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 2,
+   "grup": "A",
+   "kok": "Silahlı bir saldırıya maruz kalan polisin silah kullanması ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Amirinden yazılı izin alarak silah kullanabilir.",
+    "B": "Kesinlikle silah kullanamaz.",
+    "C": "Sadece saldırganı yakalamak amacıyla silah kullanabilir.",
+    "D": "Saldırıyı etkisiz kılacak ölçüde silah kullanabilir.",
+    "E": "Sadece uyarı ateşi açabilir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 3,
+   "grup": "A",
+   "kok": "Polisin kimlik sorduğu kişi kimliğini ispatlayamamıştır. Bu kişi hakkında yapılacak işlem ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Derhal serbest bırakılır.",
+    "B": "En yakın karakola götürülerek serbest bırakılır.",
+    "C": "Sadece fotoğrafı çekilir.",
+    "D": "Kimlik tespiti yapılmadan ailesine teslim edilir.",
+    "E": "Kimliği belirleninceye kadar tutulur ve durumdan derhal Cumhuriyet savcısı haberdar edilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 4,
+   "grup": "A",
+   "kok": "Toplantı ve gösteri yürüyüşleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Toplantının yapıldığı yer toplantı süresince umuma açık yer sayılır.",
+    "B": "Kapalı yer toplantılarında ses yükseltici alet ve araçlarla dışarıya yayın yapılamaz.",
+    "C": "Toplantılar en az 7 kişi tarafından oluşan bir kurul tarafından düzenlenir.",
+    "D": "Gece de yapılabilir.",
+    "E": "TBMM’ye 1 km uzaklıktaki alan içinde toplantı yapılamaz."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 5,
+   "grup": "A",
+   "kok": "Kanuna aykırı emir bakımından aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Emir alan kendi inisiyatifiyle emri değiştirerek uygular.",
+    "B": "Emir iade edilir.",
+    "C": "Emir derhal yerine getirmelidir.",
+    "D": "Emir yerine getirilmez ve durum İçişleri Bakanlığına bildirilir.",
+    "E": "Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 6,
+   "grup": "A",
+   "kok": "Suç ihbarı üzerine olay yerine gelen adlî kolluk görevlilerinin, delillerin toplanması amacıyla olay yerinin dışındaki bir binanın içinde arama yapmaları gerekmiştir. Bu arama işlemi için hangi merciin kararı veya emri gereklidir?",
+   "siklar": {
+    "A": "Sadece kolluk amirinin yazılı emri",
+    "B": "Hakim kararı veya gecikmesinde sakınca bulunan hallerde Cumhuriyet savcısının yazılı emri",
+    "C": "İçişleri Bakanının kararı",
+    "D": "İl Emniyet Müdürünün emri",
+    "E": "Mahallin en büyük mülki idare amirinin emri"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 7,
+   "grup": "A",
+   "kok": "İhbar üzerine olay yerine gelen kolluk görevlileri yerde yatan bir cesetle karşılaşmış ve cesedin etrafındaki delillerin kaybolmaması için derhal işlem yapmıştır. Bu işlem mevzuatta hangi kavramla ifade edilir?",
+   "siklar": {
+    "A": "Tehlikenin önlenmesi",
+    "B": "Kovuşturma",
+    "C": "Olağanüstü hâl",
+    "D": "Gecikmesinde sakınca bulunan hâl",
+    "E": "Adli kontrol"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 8,
+   "grup": "A",
+   "kok": "Suç şüphesi üzerine kaçan failin yakalanmasını sağlamak amacıyla polisin bir kişiyi durdurabilmesi için hangi temel sebebe dayanması gerekir?",
+   "siklar": {
+    "A": "Makul bir sebebin bulunmasına",
+    "B": "Kişinin kılık kıyafetine",
+    "C": "Gecikmesinde sakınca bulunan hale",
+    "D": "Kuvvetli suç şüphesinin varlığına",
+    "E": "Yazılı emre"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 9,
+   "grup": "A",
+   "kok": "Emniyet Teşkilat Kanunu'na göre, ülkenin genel emniyet ve asayiş işlerinden aşağıdakilerden hangisi sorumludur?",
+   "siklar": {
+    "A": "İçişleri Bakanı",
+    "B": "Başsavcı",
+    "C": "Jandarma Genel Komutanı",
+    "D": "Vali",
+    "E": "Emniyet Genel Müdürü"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 10,
+   "grup": "A",
+   "kok": "Adlî kolluk sorumluları hakkında değerlendirme raporu her yılın sonunda hangi makam tarafından düzenlenir?",
+   "siklar": {
+    "A": "Mülki idare amiri",
+    "B": "Adalet Bakanı",
+    "C": "Cumhuriyet başsavcısı",
+    "D": "En üst dereceli kolluk amiri",
+    "E": "İçişleri Bakanı"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 11,
+   "grup": "A",
+   "kok": "Ceza Muhakemesi Kanunu'nda 'şüpheli' nasıl tanımlanmıştır?",
+   "siklar": {
+    "A": "Kovuşturma evresinde suç şüphesi altında bulunan kişi",
+    "B": "Katılan, suçtan zarar gören veya malen sorumlu kişiyi ceza muhakemesinde temsil eden kişi",
+    "C": "Yargılama konusu işin hükme bağlanması ve bunun kesinleşmesinden sonra, maddi ve mali sorumluluk taşıyarak hükmün sonuçlarından etkilenecek veya bunlara katlanacak kişi",
+    "D": "Soruşturma evresinde, suç şüphesi altında bulunan kişi",
+    "E": "Duruşmada savunmasını yapan kişi"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 12,
+   "grup": "A",
+   "kok": "Toplu olarak işlenen suçlarda gözaltı süresinin uzatılmasına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Mülki Amir her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir.",
+    "B": "Hakim her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına karar verebilir.",
+    "C": "İlk yakalama anından itibaren 48 saat ile sınırlıdır.",
+    "D": "Gözaltı süresi hiçbir şekilde uzatılamaz.",
+    "E": "Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 13,
+   "grup": "A",
+   "kok": "Polis ekipleri, bir hırsızlık olayının hemen ardından, şüphelinin üstünde suç delillerini bulmak amacıyla arama yapmak istemektedir. Durumun aciliyeti nedeniyle Cumhuriyet savcısına ulaşılamamaktadır. Ceza Muhakemesi Kanunu'na göre, bu durumda arama emri verme yetkisi aşağıdakilerden hangisine aittir?",
+   "siklar": {
+    "A": "Hâkime",
+    "B": "Mahkeme başkanına",
+    "C": "Kolluk amirine",
+    "D": "Kaymakama",
+    "E": "Valiye"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 14,
+   "grup": "A",
+   "kok": "Cumhuriyet savcısı ihbar üzerine bir suçun işlendiği izlenimini veren bir hâli öğrenmiştir. Ceza Muhakemesi Kanunu'na göre, Cumhuriyet savcısının öncelikli görevi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Sadece şüphelinin aleyhine delil toplamak",
+    "B": "Derhal iddianame düzenlemek",
+    "C": "Suçun işlendiği yerdeki mahkemeye haber vermek",
+    "D": "Hemen işin gerçeğini araştırmaya başlamak",
+    "E": "Adalet Bakanlığına bilgi vermek"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 15,
+   "grup": "A",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, telekomünikasyon yoluyla yapılan iletişimin dinlenmesi ve kayda alınması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Bu tedbire ilişkin alınan karar ve yapılan işlemler, tedbir süresince gizli tutulur.",
+    "B": "Şüpheli veya sanığın tanıklıktan çekinebilecek kişilerle arasındaki iletişimi kayda alınabilir.",
+    "C": "Başka suretle delil elde edilme imkanı bulunmamalıdır.",
+    "D": "Hâkim veya gecikmesinde sakınca bulunan hallerde Cumhuriyet savcısının kararı bulunmalıdır.",
+    "E": "Suç işlendiğine ilişkin somut delillere dayanan kuvvetli şüphe sebepleri bulunmalıdır."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 16,
+   "grup": "A",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, avukat bürolarında arama ve elkoyma işlemlerine ilişkin aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Arama sadece kararda belirtilen olayla ilgili yapılabilir.",
+    "B": "Avukat büroları ancak mahkeme kararı ile aranabilir.",
+    "C": "Arama Cumhuriyet savcısının denetiminde yapılır.",
+    "D": "Aramada baro başkanı veya onu temsil eden bir avukat hazır bulundurulur.",
+    "E": "Elkonulmasına karar verilen şeyler avukat ile müvekkili arasındaki meslekî ilişkiye ait olduğu öne sürülürse derhal avukata iade edilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 17,
+   "grup": "A",
+   "kok": "Aşağıdaki durumlardan hangisinde kolluk kuvvetleri de yakalama emri düzenleyebilir?",
+   "siklar": {
+    "A": "Örgütlü suçlara ilişkin soruşturmada şüpheli hakkında",
+    "B": "Soruşturma evresinde çağrı üzerine gelmeyen şüpheli hakkında",
+    "C": "Kovuşturma evresinde kaçak sanık hakkında",
+    "D": "Yakalanmış iken kolluk görevlisinin elinden kaçan şüpheli veya sanık hakkında",
+    "E": "Kabahat teşkil eden fiillerden dolayı ulaşılamayan kişi hakkında"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 18,
+   "grup": "A",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, sorgu yetkisi aşağıdakilerden hangisine aittir?",
+   "siklar": {
+    "A": "Mağdura",
+    "B": "Müdafiye",
+    "C": "Cumhuriyet savcısına",
+    "D": "Hâkim veya mahkemeye",
+    "E": "Kolluk görevlilerine"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 19,
+   "grup": "A",
+   "kok": "Uyuşturucu ticaretine ilişkin yapılan bir soruşturmada, şüpheli M'nin suçla ilgili deliller içerdiğinden şüphelenilen mektubunun postanede bulunduğu öğrenilmiştir. Ceza Muhakemesi Kanunu'na göre, bu mektuba el konulması için hangi merciin kararı gereklidir?",
+   "siklar": {
+    "A": "Adalet Bakanının kararı",
+    "B": "Hâkimin veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının kararı",
+    "C": "Kolluk amirinin yazılı emri",
+    "D": "Sadece Cumhuriyet savcısının kararı",
+    "E": "Sadece hâkim kararı"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 20,
+   "grup": "A",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, bilgisayar kütüklerinde arama yapılabilmesi için aranan şartlar bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Şüphelinin rızasının alınmış olması",
+    "B": "Bilgisayarın şüpheli dışındaki kişilere ait olması",
+    "C": "Somut delillere dayanan kuvvetli şüphe sebepleri bulunması ve başka surette delil elde etme imkanının bulunmaması",
+    "D": "Fiilin kabahat niteliğinde olması",
+    "E": "Sadece savcının kararının bulunması"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 21,
+   "grup": "A",
+   "kok": "Türk Ceza Kanunu'nda 'kast' nasıl tanımlanmıştır?",
+   "siklar": {
+    "A": "Suç işleme amacı olmaksızın fiilin gerçekleştirilmesi",
+    "B": "Dikkat ve özen yükümlülüğüne aykırılık",
+    "C": "Neticenin meydana gelmesinin istenmemesine rağmen fiilin işlenmesi",
+    "D": "Suçun kanuni tanımındaki unsurların öngörülmeden gerçekleştirilmesi",
+    "E": "Suçun kanuni tanımındaki unsurların bilerek ve istenerek gerçekleştirilmesi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 22,
+   "grup": "A",
+   "kok": "Türk Ceza Kanunu'na göre, 'çocuk' kavramından ne anlaşılır?",
+   "siklar": {
+    "A": "Henüz 12 yaşını doldurmamış kişi",
+    "B": "Henüz 14 yaşını doldurmamış kişi",
+    "C": "Henüz 15 yaşını doldurmamış kişi",
+    "D": "Henüz 18 yaşını doldurmamış kişi",
+    "E": "Henüz 21 yaşını doldurmamış kişi"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 23,
+   "grup": "A",
+   "kok": "Türk Ceza Kanunu'na göre ceza sorumluluğu bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Tüzel kişilere de ceza verilebilir.",
+    "B": "Ceza sorumluluğu kişisel değildir.",
+    "C": "Ceza hukukunda müteselsil sorumluluk mümkündür .",
+    "D": "Ceza sorumluluğu devredilebilir.",
+    "E": "Kimse başkasının fiilinden dolayı sorumlu tutulamaz."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 24,
+   "grup": "A",
+   "kok": "Türk Ceza Kanunu'nun 7. maddesinde yer alan 'zaman bakımından uygulama' ilkesine göre, bir fiil işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmıyorsa, sonradan suç sayılan bir kanunla cezalandırılabilme durumu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Kanun koyucunun kararına bağlıdır.",
+    "B": "Yargılamayı yapan hakimin takdirine bağlıdır.",
+    "C": "Sadece ağır cezalık suçlarda cezalandırılabilir.",
+    "D": "Kimseye işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmayan bir fiilden dolayı ceza verilemez.",
+    "E": "Kamu yararı varsa cezalandırılabilir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 25,
+   "grup": "A",
+   "kok": "Hukuka uygunluk nedenlerinden biri olan 'meşru savunma' bakımından aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Saldırı bir hakka yönelik olmalıdır.",
+    "B": "Saldırı silahla gerçekleştirilmelidir.",
+    "C": "Savunma saldırana karşı olmalıdır.",
+    "D": "Savunma zorunlu olmalıdır.",
+    "E": "Haksız bir saldırı bulunmalıdır."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 26,
+   "grup": "A",
+   "kok": "Türk Ceza Kanunu'na göre, 'taksir' ile işlenen fiiller hangi hallerde cezalandırılır?",
+   "siklar": {
+    "A": "Sadece ağır neticeler doğurması halinde cezalandırılır.",
+    "B": "Mağdurun şikayetine bağlı olarak cezalandırılır.",
+    "C": "Hakimin takdirine bağlı olarak cezalandırılır.",
+    "D": "Her durumda cezalandırılır.",
+    "E": "Kanunun açıkça belirttiği hallerde cezalandırılır."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 27,
+   "grup": "A",
+   "kok": "Fiili işlediği sırada on iki yaşını doldurmamış olan çocukların ceza sorumluluğu hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Tam ceza sorumluluğu vardır.",
+    "B": "Sadece adli para cezası verilebilir.",
+    "C": "Ceza sorumluluğu yoktur.",
+    "D": "Çocuklara özgü güvenlik tedbirleri uygulanamaz.",
+    "E": "Şikayete bağlı olarak cezalandırılabilir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 28,
+   "grup": "A",
+   "kok": "Suçta ve Cezada Kanunîlik İlkesi'ne göre aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "İdarenin düzenleyici işlemleriyle suç ve ceza konulabilir.",
+    "B": "Suç ve ceza içeren hükümlerin uygulanmasında kıyas yapılamaz.",
+    "C": "Suç ve ceza içeren hükümler, kıyasa yol açacak biçimde geniş yorumlanamaz.",
+    "D": "Kanunda yazılı cezalardan başka bir ceza hükmolunamaz.",
+    "E": "Kanunun açıkça suç saymadığı bir fiil için kimseye ceza verilemez."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 29,
+   "grup": "A",
+   "kok": "'Suça teşebbüs' bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Ortaya çıkan zarar veya tehlikenin ağır olması",
+    "B": "Suçun hazırlık hareketlerinin tamamlanmamış olması",
+    "C": "Suçun icra hareketlerinin tamamlanmış olması",
+    "D": "Suçun icra hareketlerine başlanmasına rağmen kişinin elinde olmayan nedenlerle suçun tamamlanmamış olması",
+    "E": "Suç işleme kararından gönüllü vazgeçilmesi"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 30,
+   "grup": "A",
+   "kok": "'Suç İşlemek Amacıyla Örgüt Kurma' suçunun varlığı için örgütün üye sayısının en az kaç kişi olması gerekir?",
+   "siklar": {
+    "A": "2",
+    "B": "3",
+    "C": "5",
+    "D": "7",
+    "E": "9"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 31,
+   "grup": "A",
+   "kok": "Anayasaya göre, toplantı ve gösteri yürüyüşü düzenleme hakkı ile ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Bu hak milli güvenlik amacıyla sınırlanabilir.",
+    "B": "Toplantılar silahsız ve saldırısız olmalıdır.",
+    "C": "Bu hakkın kullanılması izne bağlıdır.",
+    "D": "Bu hak genel ahlakın korunması amacıyla sınırlanabilir.",
+    "E": "Bu hak, başkalarının hak ve özgürlüklerinin korunması amacıyla sınırlanabilir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 32,
+   "grup": "A",
+   "kok": "Anayasaya göre, Türkiye Büyük Millet Meclisi kaç milletvekilinden oluşur?",
+   "siklar": {
+    "A": "450",
+    "B": "500",
+    "C": "550",
+    "D": "600",
+    "E": "650"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 33,
+   "grup": "A",
+   "kok": "Anayasaya göre, savaş, seferberlik veya olağanüstü hallerde temel hak ve hürriyetlerin kullanılmasının kısmen veya tamamen durdurulabileceği hallerde dahi hangi haklara dokunulamaz?",
+   "siklar": {
+    "A": "Çalışma ve sözleşme hürriyetine",
+    "B": "Din ve vicdan hürriyetine",
+    "C": "Yerleşme ve seyahat hürriyetine",
+    "D": "Basın hürriyetine",
+    "E": "Toplantı ve gösteri yürüyüşü hakkına"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 34,
+   "grup": "A",
+   "kok": "Anayasaya göre, aşağıdakilerden hangisi Cumhuriyetin niteliklerinden biri değildir?",
+   "siklar": {
+    "A": "Federal Devlet",
+    "B": "Demokratik Devlet",
+    "C": "Sosyal Devlet",
+    "D": "Hukuk Devleti",
+    "E": "Laik Devlet"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 35,
+   "grup": "A",
+   "kok": "Anayasaya göre, kişisel veriler hangi durumlarda işlenebilir?",
+   "siklar": {
+    "A": "Gecikmesinde sakınca bulunan hallerde",
+    "B": "Kamu yararı varsa",
+    "C": "Mahkeme kararı ile",
+    "D": "İdari makamların onayıyla",
+    "E": "Kanunda öngörülen hallerde veya kişinin açık rızasıyla"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 36,
+   "grup": "A",
+   "kok": "Anayasaya göre, kanuna aykırı olarak elde edilmiş bulguların delil olarak kabul edilip edilemeyeceği ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Savcılık kararıyla kabul edilebilir.",
+    "B": "Sadece ağır cezalık suçlarda kabul edilebilir.",
+    "C": "Mağdurun onayıyla kabul edilebilir.",
+    "D": "Mahkemenin takdirine bağlıdır.",
+    "E": "Hiçbir şekilde kullanılamaz."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 37,
+   "grup": "A",
+   "kok": "Bir suç işlediği iddia edilen Anayasa Mahkemesi üyeleri hangi merciide yargılanır?",
+   "siklar": {
+    "A": "Anayasa Mahkemesi'nde",
+    "B": "Sayıştay'da",
+    "C": "Yargıtay'da",
+    "D": "Danıştay'da",
+    "E": "Uyuşmazlık Mahkemesi'nde"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 38,
+   "grup": "A",
+   "kok": "Anayasaya göre, Cumhurbaşkanı'nın doğal afet veya tehlikeli salgın hastalık gibi hallerde olağanüstü hal ilan etme süresi en fazla ne kadardır?",
+   "siklar": {
+    "A": "15 gün",
+    "B": "3 ay",
+    "C": "6 ay",
+    "D": "1 yıl",
+    "E": "2 yıl"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 39,
+   "grup": "A",
+   "kok": "Anayasaya göre, kanun teklif etmeye yetkili kişi veya kurum aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Anayasa Mahkemesi",
+    "B": "Türkiye Büyük Millet Meclisi komisyonları",
+    "C": "Cumhurbaşkanı",
+    "D": "Bakanlar",
+    "E": "Milletvekilleri"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 40,
+   "grup": "A",
+   "kok": "Anayasaya göre, aşağıdakilerden hangisi vücut bütünlüğüne dokunulabilecek istisnai hallerden biri değildir?",
+   "siklar": {
+    "A": "Tıbbi zorunluluklar",
+    "B": "Bir ayaklanmanın veya isyanın bastırılması",
+    "C": "Rızası olmadan bilimsel ve tıbbi deneylere tabi tutulması",
+    "D": "Meşru müdafaa hali",
+    "E": "Tutuklunun kaçmasının önlenmesi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 41,
+   "grup": "A",
+   "kok": "İdari Yargılama Usulü Kanunu'na göre, yürütmenin durdurulması kararı verilebilmesi için hangi şartların birlikte gerçekleşmesi gerekir?",
+   "siklar": {
+    "A": "İdari işlem nedeniyle telafisi güç veya imkânsız zararların doğması",
+    "B": "İdari işlemin açıkça hukuka aykırı olması ve telafisi güç veya imkânsız zararların doğması",
+    "C": "İdari işlemin siyasi nitelik taşıması ve kamu düzenini bozması",
+    "D": "İdari işlemin kanuna aykırı olması ve kamu yararını ihlal etmesi",
+    "E": "İdari işlemin tarafların rızası olmadan tesis edilmesi ve kamusal yetki içermesi"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 42,
+   "grup": "A",
+   "kok": "İdari Yargılama Usulü Kanunu'na göre, ilgililerin idari makamlara yaptıkları başvurulara otuz gün içinde cevap verilmemesi durumu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "İdari makamın yeni bir cevap verme yükümlülüğü doğar.",
+    "B": "İstek reddedilmiş sayılır ve ilgililer otuz günün bittiği tarihten itibaren dava açma süresi içinde dava açabilirler.",
+    "C": "İstek kabul edilmiş sayılır ve dava açma süresi başlamaz.",
+    "D": "İdari makamdan kesin cevap gelene kadar dava açma süresi işlemez, ancak bekleme süresi doksan günü geçemez.",
+    "E": "Dava doğrudan Danıştay'a açılmalıdır."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 43,
+   "grup": "A",
+   "kok": "Aşağıdakilerden hangisi kamu tüzel kişiliğinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "Kamu tüzel kişileri, başka bir makam veya organdan izin almadan tek yanlı irade açıklamaları ile hukuki durum yaratabilir.",
+    "B": "Kamu tüzel kişileri, Anayasanın 123. maddesine göre kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir.",
+    "C": "Kamu tüzel kişileri, özel hukuk tüzel kişilerinden farklı olarak serbest irade ile ortadan kalkabilir.",
+    "D": "Kamu tüzel kişileri kamu gücü kullanma yetkisi ile donatılmıştır.",
+    "E": "Kamu tüzel kişilerinin malvarlıkları özel düzenlemelerle korunmaktadır."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 44,
+   "grup": "A",
+   "kok": "Danıştay Kanunu'na göre Danıştay'ın niteliği ve yetkileri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Danıştay'ın yürütmeyle ilgili işleri Adalet Bakanlığı aracılığı ile yürütülür.",
+    "B": "Danıştay danışma ve inceleme merciidir.",
+    "C": "Danıştay bağımsızdır.",
+    "D": "Danıştay, Türkiye Cumhuriyeti Anayasası ile görevlendirilmiş yüksek mahkemedir.",
+    "E": "Danıştay'ın yönetimi ve temsili Danıştay Başkanına aittir."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 45,
+   "grup": "A",
+   "kok": "Aşağıdakilerden hangisi kamu hizmetinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "Uyarlama",
+    "B": "Kural olarak bedelsizlik",
+    "C": "Eşitlik",
+    "D": "Süreklilik",
+    "E": "Özel mülkiyet"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 46,
+   "grup": "A",
+   "kok": "Aşağıdakilerden hangisi idari kolluk faaliyetinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "İdari kolluk, kamu düzenini bozulmasından önce alınan tedbirlerle korumayı ifade eder.",
+    "B": "Kolluk faaliyetinin yerine getirilmesinde sözleşme yapılabilir.",
+    "C": "Kolluk faaliyeti doğrudan idare tarafından yerine getirilir.",
+    "D": "Kolluk yetkisi, kamu hizmetlerini kolaylaştırmak veya iyileştirmek amacıyla kullanılamaz.",
+    "E": "İdare, kolluk yetkisini kullanmaktan vazgeçemez."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 47,
+   "grup": "A",
+   "kok": "Danıştay üyelerinin seçimi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Danıştay üyelerinin dörtte biri Hakimler ve Savcılar Kurulu tarafından seçilir.",
+    "B": "Danıştay’da boşalan üyeliklerin tamamı idari yargı hakim ve savcılığından seçilir.",
+    "C": "Bir kimse iki defa Danıştay üyesi seçilebilir.",
+    "D": "İdari yargı hakim ve savcıları, Hakimler ve Savcılar Yüksek Kurulunca; diğer görevlerde bulunanlar ise, Cumhurbaşkanınca Danıştay üyeliğine seçilirler.",
+    "E": "Danıştay üyeleri sekiz yıl için seçilir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 48,
+   "grup": "A",
+   "kok": "İdare hukukunun özellikleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "İdare hukuku pozitif bir hukuk dalıdır.",
+    "B": "İdare hukuku içtihadi bir hukuk dalıdır.",
+    "C": "İdare hukuku bağımsız bir hukuk dalıdır.",
+    "D": "İdare hukuku yeni bir hukuk dalıdır.",
+    "E": "İdare hukuku tedvin (kodifiye) edilmiş bir hukuk dalıdır."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 49,
+   "grup": "A",
+   "kok": "Özel kanunlarında ayrı süre gösterilmeyen hallerde, idare mahkemelerinde dava açma süresi kaç gündür?",
+   "siklar": {
+    "A": "15",
+    "B": "30",
+    "C": "45",
+    "D": "60",
+    "E": "90"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 50,
+   "grup": "A",
+   "kok": "İdari işlemin hukuki sonucunu ifade eden unsur aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Yetki",
+    "B": "Sebep",
+    "C": "Amaç",
+    "D": "Konu",
+    "E": "Şekil"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 51,
+   "grup": "A",
+   "kok": "Avrupa Konseyi tarafından, 'Avrupa Konseyi Tâcının Mücevheri' olarak nitelendirilen ve öngördüğü denetim mekanizması ile benzerlerinden ayrılan uluslararası sözleşme aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Medeni ve Siyasi Haklara Dair Uluslararası Sözleşme",
+    "B": "İnsan Haklarının ve Temel Özgürlüklerin Korunmasına İlişkin Avrupa Sözleşmesi",
+    "C": "Avrupa Sosyal Şartı",
+    "D": "İşkence ve İnsanlık Dışı veya Aşağılayıcı Muamele ve Cezaları Önleme Avrupa Sözleşmesi",
+    "E": "Ulusal Azınlıkları Koruma Çerçeve Sözleşmesi"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 52,
+   "grup": "A",
+   "kok": "Jellinek'in insan hakları sınıflandırmasında, devlete karışmama yükümlülüğü yükleyen \"negatif statü hakları\" ve bireylerin siyasal hayata katılmasını sağlayan \"aktif statü hakları\" hangi kuşak haklara karşılık gelir?",
+   "siklar": {
+    "A": "Birinci Kuşak Haklar",
+    "B": "İkinci Kuşak Haklar",
+    "C": "Üçüncü Kuşak Haklar",
+    "D": "Dördüncü Kuşak Haklar",
+    "E": "Kolektif Haklar"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 53,
+   "grup": "A",
+   "kok": "John Locke'a göre devletin asıl kuruluş amacı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Sınırsız iktidarı pekiştirmek",
+    "B": "İnsanların doğal hakları olan hayat, hürriyet ve mülkiyetini korumak",
+    "C": "Toplumu bir savaş düzeninde tutmak",
+    "D": "Suçluları cezalandıracak bir organizasyon kurmak",
+    "E": "Aristokrasinin ayrıcalıklarını sürdürmek"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 54,
+   "grup": "A",
+   "kok": "1982 Anayasası'na göre, temel hak ve hürriyetlerin sınırlanması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Sınırlamalar ölçülülük ilkesine aykırı olamaz.",
+    "B": "Sınırlamalar yalnızca Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak yapılabilir.",
+    "C": "Sınırlamalar, demokratik toplum düzeninin ve laik Cumhuriyetin gereklerine aykırı olamaz.",
+    "D": "Temel hak ve hürriyetler, özlerine dokunulmaksızın sınırlanabilir.",
+    "E": "Sınırlamalar Cumhurbaşkanlığı kararnamesiyle de yapılabilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 55,
+   "grup": "A",
+   "kok": "Aşağıdakilerden hangisi adil yargılanma hakkının unsurlarından biri değildir?",
+   "siklar": {
+    "A": "Makul sürede yargılanma hakkı",
+    "B": "Silahların eşitliği ilkesi",
+    "C": "Kovuşturma mecburiyeti ilkesi",
+    "D": "Aleniyet (halka açıklık) ilkesi",
+    "E": "Masumiyet karinesi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 56,
+   "grup": "A",
+   "kok": "10 Aralık 1948 tarihinde Birleşmiş Milletler tarafından ilan edilen ve devletleri hukuksal yükümlülük altına sokmayan ancak insan hakları açısından yön gösterici nitelikte olan belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Medeni ve Siyasi Haklara Dair Uluslararası Sözleşme",
+    "B": "Avrupa İnsan Hakları Sözleşmesi",
+    "C": "Birleşmiş Milletler Şartı",
+    "D": "Ekonomik, Sosyal ve Kültürel Haklara Dair Uluslararası Sözleşme",
+    "E": "İnsan Hakları Evrensel Bildirgesi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 57,
+   "grup": "A",
+   "kok": "İnsan hakları doktrinine 'kuvvetler ayrılığı' ilkesiyle büyük katkı sunan düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "John Locke",
+    "B": "Jean-Jacques Rousseau",
+    "C": "Voltaire",
+    "D": "Montesquieu",
+    "E": "Thomas Hobbes"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 58,
+   "grup": "A",
+   "kok": "Mülkiyet hakkı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Mülkiyet hakkı ancak kanunla sınırlandırılabilir.",
+    "B": "Mülkiyet hakkının kullanılması toplum yararına aykırı olamaz.",
+    "C": "Reşit olmayanlar mülkiyet hakkına sahip olamazlar.",
+    "D": "Mülkiyet hakkı kamu yararı amacıyla sınırlandırılabilir.",
+    "E": "Herkes mülkiyet hakkına sahiptir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 59,
+   "grup": "A",
+   "kok": "Çağdaş demokrasilerde kişilere tanınan hak ve hürriyetler için kullanılan terimler arasında aşağıdakilerden hangisi yer almaz?",
+   "siklar": {
+    "A": "Zümre hakları",
+    "B": "Kişi hak ve hürriyetleri",
+    "C": "Temel haklar",
+    "D": "Kamu hakları",
+    "E": "Vatandaş hakları"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 60,
+   "grup": "A",
+   "kok": "Osmanlı İmparatorluğu'nda insan hakları konusunda ilk dikkat çeken belgeler arasında yer alan, can, mal, ırz güvenliğini sağlamaya yönelik ifadeler içeren, vergi ve askerlik işlerinin adaletle görülmesi gerektiğini belirten ve kanunsuz suç ve ceza olmaz ilkesine yer veren belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Kanun-u Esasi",
+    "B": "Tanzimat Fermanı",
+    "C": "II. Meşrutiyet",
+    "D": "Islahat Fermanı",
+    "E": "Sened-i İttifak"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 61,
+   "grup": "A",
+   "kok": "Lozan Barış Antlaşması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Birinci Dünya Savaşı’nı bitiren barış antlaşmaları içinde gerçek bir müzakere sonucunda imzalanan tek antlaşmadır.",
+    "B": "Türkiye’nin bağımsızlığını uluslararası alanda tescil eden bir siyasi bağımsızlık belgesidir.",
+    "C": "İktisadi millileştirmenin ilk adımı ve iktisadi bağımsızlık belgesidir.",
+    "D": "Türk milletinin Kurtuluş Savaşı’yla kazandığı bağımsızlığın diplomatik zaferi olmuştur.",
+    "E": "Türkiye’nin sınırları bu antlaşma ile tamamen Misak-ı Millî’ye uygun olarak çizilmiştir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 62,
+   "grup": "A",
+   "kok": "I. Soyadı Kanunu’nun kabulü II. Türk harflerinin kabulü III. Şapka ve Kıyafet Kanunu’nun kabulü IV. Medeni Kanun’un kabulü Yukarıdaki gelişmelerin kronolojik sırası aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "I-II-IV-III",
+    "B": "I-III-II-IV",
+    "C": "III-I-IV-II",
+    "D": "III-II-I-IV",
+    "E": "III-IV-II-I"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 63,
+   "grup": "A",
+   "kok": "I. Türk İnkılabının hukuki temelleri atılmıştır. II. Temel hak ve özgürlüklere yer verilmemiştir. III. Kanun-ı Esasi kesin olarak yürürlükten kalkmıştır. IV. Uzun süre uygulanmış ve bu sürede çok kere değişikliğe uğramıştır. Yukarıdakilerden hangileri 1924 Anayasası’nın özellikleri arasında yer alır?",
+   "siklar": {
+    "A": "I ve III",
+    "B": "II ve IV",
+    "C": "I, II ve IV",
+    "D": "I, III ve IV",
+    "E": "II, III ve IV"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 64,
+   "grup": "A",
+   "kok": "Sevr Antlaşması’nın şartlarının belirlenmesi ve Osmanlı İmparatorluğu’nun topraklarının paylaşılması amacıyla Fransa, İngiltere ve İtalya’nın katılımı ile düzenlenen konferans aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Paris Konferansı",
+    "B": "Yalta Konferansı",
+    "C": "San Remo Konferansı",
+    "D": "Adana Konferansı",
+    "E": "Londra Konferansı"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 65,
+   "grup": "A",
+   "kok": "Mondros Mütarekesi’nden sonra farklı şehirlerde düşman işgaline karşı kurulan millî cemiyetler, aşağıdaki kongrelerden hangisinde alınan karar ile ‘Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti’ çatısı altında birleştirilmiştir?",
+   "siklar": {
+    "A": "Birinci Nazilli Kongresi",
+    "B": "Alaşehir Kongresi",
+    "C": "Birinci Balıkesir Kongresi",
+    "D": "Uşak Kongresi",
+    "E": "Sivas Kongresi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 66,
+   "grup": "A",
+   "kok": "Kurtuluş Savaşı’nın amacını, ilkelerini ve yöntemini belirleyerek ilk kez ortaya koyan, bir plan niteliğindeki belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Samsun Raporu",
+    "B": "Erzurum Kongresi Kararları",
+    "C": "Amasya Genelgesi",
+    "D": "Sivas Kongresi Kararları",
+    "E": "Havza Genelgesi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 67,
+   "grup": "A",
+   "kok": "Kurtuluş Savaşı’nın en yoğun yaşandığı dönemde, Atatürk’ün emri ile eğitim alanında politika belirlemek üzere Ankara’da toplanan kongre aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Anadolu Kongresi",
+    "B": "Talim ve Terbiye Kongresi",
+    "C": "Maarif Kongresi",
+    "D": "Öğretmenler Kongresi",
+    "E": "Tevhid-i Tedrisat Kongresi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 68,
+   "grup": "A",
+   "kok": "Aşağıdakilerden hangisi sonrasında TBMM tarafından Mustafa Kemal’e Başkomutanlık yetkisi verilmiştir?",
+   "siklar": {
+    "A": "Kütahya-Eskişehir Muharebesi",
+    "B": "Birinci İnönü Muharebesi",
+    "C": "Sakarya Meydan Muharebesi",
+    "D": "İkinci İnönü Muharebesi",
+    "E": "Dumlupınar Meydan Muharebesi"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 69,
+   "grup": "A",
+   "kok": "1933’den sonra İtalya’nın hızlı bir şekilde silahlanarak Balkanlar’a yönelik politikalar üretmesi Balkan devletlerini ve Türkiye’yi endişelendirmiştir. Bu çerçevede 9 Şubat 1934’de Türkiye, Yunanistan, Romanya ve Yugoslavya arasında bir uluslararası savunma ittifakı imzalanmıştır. Yukarıdaki paragrafta sözü edilen ittifak aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Anti-Komintern Paktı",
+    "B": "Dörtlü Antant",
+    "C": "Balkan Antantı",
+    "D": "Sadabat Paktı",
+    "E": "Bağdat Paktı"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 70,
+   "grup": "A",
+   "kok": "Mustafa Kemal Atatürk, “Hattı müdafaa yoktur, sathı müdafaa vardır. O satıh bütün vatandır. Yurdun her karış toprağı yurttaş kanıyla sulanmadıkça düşmana bırakılamaz.” sözlerini aşağıdaki olaylardan hangisi sırasında söylemiştir?",
+   "siklar": {
+    "A": "Sakarya Meydan Muharebesi",
+    "B": "İstanbul’un işgali",
+    "C": "Londra Konferansı",
+    "D": "Büyük Taarruz",
+    "E": "Lozan Barış Antlaşması"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 71,
+   "grup": "A",
+   "kok": "Türk demokrasi tarihinde ilk kez gizli oy ve açık sayım ilkesinin uygulandığı seçim aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "1946 Seçimleri",
+    "B": "1950 Seçimleri",
+    "C": "1954 Seçimleri",
+    "D": "1957 Seçimleri",
+    "E": "1961 Seçimleri"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 72,
+   "grup": "A",
+   "kok": "Devletin tüm kurumlarını kapsayıcı ve bütünlüklü bir iletişim stratejisi oluşturmak, millet-devlet iletişiminin etkin yönetimi için gerekli düzenlemeleri yapmak, medya ve düşünce dünyasını yakından izlemek, değerlendirmek ve ilgili makamları ve kamuoyunu bu çerçevede bilgilendirmek amacıyla 24 Temmuz 2018 tarihinde Cumhurbaşkanlığı Kararnamesi ile kurulan ve hizmet vermeye başlayan kurum aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Cumhurbaşkanlığı İletişim Başkanlığı",
+    "B": "Kişisel Verileri Koruma Kurumu",
+    "C": "Türkiye İnsan Hakları ve Eşitlik Kurulu Başkanlığı",
+    "D": "Türk Akreditasyon Kurumu",
+    "E": "Türk İşbirliği ve Koordinasyon Ajansı Başkanlığı"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 73,
+   "grup": "A",
+   "kok": "Türkiye’de 2030’lu yıllardan itibaren F-16 uçaklarının yerine kullanılacak 5. nesil bir savaş uçağı üretilmesi amacıyla millî imkânlarla geliştirilen ve ilk uçuşunu Şubat 2024’te gerçekleştiren savaş uçağı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "BAYRAKTAR TB2",
+    "B": "ATAK",
+    "C": "KAAN",
+    "D": "HÜRJET",
+    "E": "HÜRKUŞ"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 74,
+   "grup": "A",
+   "kok": "Türkiye’de istihbarat ve millî güvenlik alanında lisansüstü çalışmalar yapılması, istihbaratın akademik boyut kazanmasına yönelik çalışmaların ileri düzeye taşınması amacıyla Millî İstihbarat Teşkilâtı (MİT) bünyesinde kurulan ve 6 Ocak 2024 tarihinde çalışmalarına başlayan yükseköğretim kurumu aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Millî Savunma Üniversitesi",
+    "B": "Millî İstihbarat Akademisi",
+    "C": "Güvenlik Bilimleri Fakültesi",
+    "D": "Jandarma Güvenlik Akademisi",
+    "E": "Siber Güvenlik Enstitüsü"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 75,
+   "grup": "A",
+   "kok": "Dünya Atletizm Şampiyonası, 13-21 Eylül 2025 tarihlerinde aşağıdaki şehirlerden hangisinde gerçekleştirilecektir?",
+   "siklar": {
+    "A": "Tokyo",
+    "B": "Paris",
+    "C": "Roma",
+    "D": "Atina",
+    "E": "Riga"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 76,
+   "grup": "A",
+   "kok": "Gurbet Kuşları, Ankara Ekspresi, Umutsuzlar, Acı Hayat ve Memleketim adlı filmlerin de aralarında bulunduğu çok sayıda filmde rol alarak Türk sinemasının bir dönemine damga vuran, Mart 2025’te hayatını kaybeden Yeşilçam’ın usta oyuncusu aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Tomris Giritlioğlu",
+    "B": "Bedia Ener",
+    "C": "Filiz Akın",
+    "D": "Ayla Algan",
+    "E": "Ahu Tuğba"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 77,
+   "grup": "A",
+   "kok": "2024 yılında müzik alanında Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülü’ne layık görülen sanatçı aşağıdakilerden hangisindedir?",
+   "siklar": {
+    "A": "Sami Özer",
+    "B": "Ahmet Özhan",
+    "C": "Mehmet Emin Ay",
+    "D": "Mustafa Demirci",
+    "E": "Erkan Mutlu"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 78,
+   "grup": "A",
+   "kok": "Aşağıdaki cümlelerin hangisinde “inceden inceye, dikkatlice gözden geçirmek” anlamında bir deyim kullanılmıştır?",
+   "siklar": {
+    "A": "Bu kızın hatalarına her seferinde göz yumuyorlardı.",
+    "B": "Kitabın arasında bulduğu nota göz ucuyla bakıp, kâğıdı çöpe atmıştı.",
+    "C": "Evden ayrılmadan önce her odaya alıcı gözüyle baktılar.",
+    "D": "Bu yaptıklarını göz ardı edemem dedi.",
+    "E": "Plan yaparken benim programımı da göz önünde bulundurursan sevinirim."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 79,
+   "grup": "A",
+   "kok": "Aşağıdaki cümlelerin hangisinde “ateşlemek” sözcüğü “birini heyecanlı ve coşkulu duruma getirmek” anlamında kullanılmıştır?",
+   "siklar": {
+    "A": "Taraftarın sevgisi, tribünlerden gelen tezahüratlar takımı iyice ateşledi.",
+    "B": "Keskin nişancı silahını hedefe doğru ateşledi.",
+    "C": "Isınmak için odunları dizip sobayı ateşledik.",
+    "D": "Havai fişekleri güvenli bir uzaklıktan ateşlemişti.",
+    "E": "Sen bu işin altından kalkamazsın demeleri beni ateşledi, inat ettim ve başardım."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 80,
+   "grup": "A",
+   "kok": "Seninle sonunda aynı görüş birliğine I II III varmayı başardık. IV V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
+   "siklar": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 81,
+   "grup": "A",
+   "kok": "(I) Yazar, “Birinci Dünya Savaşı’nın Kökenleri Üzerine Osmanlı Diplomatik Belgeleri” adlı kitabı ile Osmanlı diplomasi tarihi çalışmalarına önemli bir katkı sunmaktadır. (II) Kitap, 1836 adet belgeden oluşmaktadır. (III) Yer ve kişi adlarına, orijinal belgelerde bulunan haliyle yer verilmiştir. (IV) Çalışmanın giriş, notlar ve indeksler kısmı İngilizce olmakla birlikte belgelerin dili Osmanlı Devleti’nin diplomatik servis dili olan Fransızcadır. (V) Yazarın bazı kayıp belgelere ulaşamaması ise ne yazık ki anlatımda boşluklara neden olmuştur. Yukarıdaki parçada numaralandırılmış cümlelerin hangilerinde kişisel düşüncelere yer verilmiştir?",
+   "siklar": {
+    "A": "I ve II",
+    "B": "I ve V",
+    "C": "II ve III",
+    "D": "I, III ve IV",
+    "E": "II, IV ve V"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 82,
+   "grup": "A",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki ifadelerden hangisi kesinlikle yanlıştır?",
+   "siklar": {
+    "A": "Baran ilk maçında yenilmiştir.",
+    "B": "Özgür, Ece’yi elemiştir.",
+    "C": "Can, ikinci turu geçmiştir.",
+    "D": "Uraz, ilk maçını Can ile oynamıştır.",
+    "E": "Lena ikinci maçını Ece ile oynamıştır."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 83,
+   "grup": "A",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi turnuvanın herhangi bir turunda karşılıklı maç yapmış olamaz?",
+   "siklar": {
+    "A": "Ece ve Alin",
+    "B": "Ece ve Baran",
+    "C": "Özgür ve Alin",
+    "D": "Can ve Lena",
+    "E": "Alin ve Uraz"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 84,
+   "grup": "A",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki oyunculardan hangisi final maçında kesinlikle oynamamıştır?",
+   "siklar": {
+    "A": "Uraz",
+    "B": "Alin",
+    "C": "Can",
+    "D": "Özgür",
+    "E": "Ece"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 85,
+   "grup": "A",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Yukarıdaki bilgilere göre, kurumun beşinci sırada mülakat yapacağı kişi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Betül",
+    "B": "Emine",
+    "C": "Cemil",
+    "D": "Derya",
+    "E": "Ahmet"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 86,
+   "grup": "A",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "siklar": {
+    "A": "Emine’nin mülakatı telefon mülakatı şeklinde yapılacaktır.",
+    "B": "Emine’nin mülakatı Cemil’den sonra yapılacaktır.",
+    "C": "Cemil’in mülakatı telefon mülakatı şeklinde yapılacaktır.",
+    "D": "Son mülakat Füsun ile yapılacaktır.",
+    "E": "Derya’nın mülakatı Gökhan’dan sonra yapılacaktır."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 87,
+   "grup": "A",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Kurum, mülakat yapılacak diğer adayları aynı sıra ile çağırmak kaydı ile sadece telefon mülakatlarını en başa aldığında yeni oluşan mülakat listesinde aşağıdakilerden hangisinin mülakat sırası kesin olarak bilinir?",
+   "siklar": {
+    "A": "Derya",
+    "B": "Betül",
+    "C": "Cemil",
+    "D": "Gökhan",
+    "E": "Füsun"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 88,
+   "grup": "A",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Psikiyatri",
+    "B": "KBB Hastalıkları",
+    "C": "Dâhiliye",
+    "D": "Nöroloji",
+    "E": "Göz Hastalıkları"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": true
+  },
+  {
+   "no": 89,
+   "grup": "A",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin en son gittiği poliklinik aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Psikiyatri",
+    "B": "Nöroloji",
+    "C": "Göz Hastalıkları",
+    "D": "KBB Hastalıkları",
+    "E": "Dâhiliye Yukarıdaki"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": true
+  },
+  {
+   "no": 90,
+   "grup": "A",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "siklar": {
+    "A": "Psikiyatri polikliniği 1 adet tahlil istemiştir.",
+    "B": "KBB Hastalıkları polikliniği 2 adet tahlil istemiştir.",
+    "C": "KBB Hastalıkları polikliniği x ve y tahlillerini istemiştir.",
+    "D": "Nöroloji polikliniği q ve z tahlillerini istemiştir.",
+    "E": "Göz Hastalıkları polikliniği 1 adet tahlil istemiştir."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": true
+  },
+  {
+   "no": 91,
+   "grup": "A",
+   "kok": "Saatte 80 km hızla bir araç A şehrinden B şehrine, saatte 120 km hızla başka bir araç B şehrinden A şehrine aynı anda birbirlerine doğru yola çıkıyorlar. İki şehir arası uzaklık 1.000 km’dir. Bu iki aracın iki şehir arasında ilk karşılaşmalarından sonra yavaş giden araç hızını %25 artırdığında B şehrine kaç saat sonra ulaşır?",
+   "siklar": {
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "7",
+    "E": "8"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 92,
+   "grup": "A",
+   "kok": "Her birinden 8’er tane olmak üzere 10, 20, 50, 100 ve 200 TL’lik toplam 40 tane banknot 18 kişiye her birine en az bir banknot olacak şekilde dağıtılacaktır. Bir kişiye en çok kaç TL tutarında banknot verilebilir?",
+   "siklar": {
+    "A": "2.600",
+    "B": "2.650",
+    "C": "2.700",
+    "D": "2.750",
+    "E": "2.800"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 93,
+   "grup": "A",
+   "kok": "Dört yanlış cevabın bir doğru cevabı götürdüğü 40 soruluk bir sınavda Kerem 25 soruyu doğru cevaplamıştır. Kerem’in başarı oranı %60 olduğuna göre, kaç soruyu boş bırakmıştır?",
+   "siklar": {
+    "A": "8",
+    "B": "9",
+    "C": "10",
+    "D": "11",
+    "E": "12"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 94,
+   "grup": "A",
+   "kok": "Her saatte 15 dakika düzenli olarak geri kalan bir saat 08:00’da doğru zamana ayarlanmıştır. Ayarlamanın yapıldığı gün doğru zamanın 22:00 olduğu anda, ayarlanan bu saat, saat kaçı gösterir?",
+   "siklar": {
+    "A": "18:15",
+    "B": "18:30",
+    "C": "19:10",
+    "D": "19:25",
+    "E": "19:45"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 95,
+   "grup": "A",
+   "kok": "Elektronik eşya satılan bir mağazada belli sayıda buzdolabı ve televizyon vardır. Bu ürünlerin sırasıyla %30’u ve %60’ı satılmıştır. Her bir üründen eşit sayıda satılmıştır. Mağazada başlangıçta bu iki üründen toplam 30 tane vardır. Buna göre, son durumda mağazada kalan buzdolabı ve televizyon sayısı kaçtır?",
+   "siklar": {
+    "A": "18",
+    "B": "16",
+    "C": "15",
+    "D": "14",
+    "E": "12"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 96,
+   "grup": "A",
+   "kok": "Bir markette nohutun satış fiyatı üzerinden %40 zam yapılarak satılıyor. Ozan, son durumda zamsız fiyattan alabileceği nohut miktarından 10 kilo daha az nohut alabiliyor. Buna göre, Ozan elindeki parayla başlangıçta kaç kilo nohut alabilir?",
+   "siklar": {
+    "A": "30",
+    "B": "32",
+    "C": "35",
+    "D": "36",
+    "E": "37"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 97,
+   "grup": "A",
+   "kok": "Yukarıdaki şekilde K, L, M, N, P, R ve S sayıları doğal sayılardır. Oklar üzerindeki işlemler sırasıyla ok yönünde yapılmaktadır. N sayısı 26 olduğuna göre, K+S toplamı kaçtır?",
+   "siklar": {
+    "A": "47",
+    "B": "50",
+    "C": "52",
+    "D": "58",
+    "E": "62"
+   },
+   "gorselli": true,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 98,
+   "grup": "A",
+   "kok": "Yukarıdaki dairesel grafikte bir çiftçinin meyve bahçesinden topladığı meyve miktarının meyvelere göre dağılımı verilmiştir. Tabloda ise bu meyvelerin bir kilogramlarının satış fiyatları vardır. Meyve Fiyat(TL) Elma 90 Kayısı 100 Kiraz 150 Bu çiftçi bahçesinden bu üç meyveden toplam 80 kilo topladığına göre, meyvelerin tamamının satışından kaç TL elde eder?",
+   "siklar": {
+    "A": "8.600",
+    "B": "8.790",
+    "C": "9.200",
+    "D": "9.350",
+    "E": "9.400"
+   },
+   "gorselli": true,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 99,
+   "grup": "A",
+   "kok": "32673  61658  47384  54521  Yukarıdaki sayıların rakamlarının her biri, birer sembolle eşleşmiştir. Bu sayılara karşılık gelen sembol grupları karışık olarak verilmiştir. ,  sembol gruplarına karşılık gelen dört basamaklı bu iki sayının farkı kaçtır?",
+   "siklar": {
+    "A": "7144",
+    "B": "7133",
+    "C": "6895",
+    "D": "6775",
+    "E": "6544"
+   },
+   "gorselli": true,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 100,
+   "grup": "A",
+   "kok": "Özdeş kareler kullanılarak belirli bir kurala göre yukarıdaki şekil dizisi oluşturulmuştur. Her şeklin altında o şekilde yer alan toplam kare sayısı yazmaktadır. Buna göre, içinde 18 tane boyalı kare olan şekillerin altındaki sayıların toplamı kaçtır?",
+   "siklar": {
+    "A": "62",
+    "B": "65",
+    "C": "69",
+    "D": "71",
+    "E": "75"
+   },
+   "gorselli": true,
+   "dogru": "D",
+   "iptal": false
+  }
+ ],
+ "B": [
+  {
+   "no": 1,
+   "grup": "B",
+   "kok": "Adlî kolluk sorumluları hakkında değerlendirme raporu her yılın sonunda hangi makam tarafından düzenlenir?",
+   "siklar": {
+    "A": "İçişleri Bakanı",
+    "B": "Mülki idare amiri",
+    "C": "Cumhuriyet başsavcısı",
+    "D": "En üst dereceli kolluk amiri",
+    "E": "Adalet Bakanı"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 2,
+   "grup": "B",
+   "kok": "Kanuna aykırı emir bakımından aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Emir derhal yerine getirmelidir.",
+    "B": "Emir alan kendi inisiyatifiyle emri değiştirerek uygular.",
+    "C": "Emir iade edilir.",
+    "D": "Emir yerine getirilmez ve durum İçişleri Bakanlığına bildirilir.",
+    "E": "Konusu suç teşkil eden emir hiçbir suretle yerine getirilmez."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 3,
+   "grup": "B",
+   "kok": "İhbar üzerine olay yerine gelen kolluk görevlileri yerde yatan bir cesetle karşılaşmış ve cesedin etrafındaki delillerin kaybolmaması için derhal işlem yapmıştır. Bu işlem mevzuatta hangi kavramla ifade edilir?",
+   "siklar": {
+    "A": "Tehlikenin önlenmesi",
+    "B": "Adli kontrol",
+    "C": "Kovuşturma",
+    "D": "Gecikmesinde sakınca bulunan hâl",
+    "E": "Olağanüstü hâl"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 4,
+   "grup": "B",
+   "kok": "Emniyet Hizmetleri Sınıfı mensuplarının derneklere üye olabilmesi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Her türlü derneğe üye olabilirler.",
+    "B": "Sadece spor derneklerine üye olabilirler.",
+    "C": "Sadece mesleki derneklere üye olabilirler.",
+    "D": "Hiçbir derneğe üye olamazlar.",
+    "E": "Çevreyi koruma amacıyla kurulan derneklere üye olabilirler."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 5,
+   "grup": "B",
+   "kok": "Suç şüphesi üzerine kaçan failin yakalanmasını sağlamak amacıyla polisin bir kişiyi durdurabilmesi için hangi temel sebebe dayanması gerekir?",
+   "siklar": {
+    "A": "Gecikmesinde sakınca bulunan hale",
+    "B": "Kuvvetli suç şüphesinin varlığına",
+    "C": "Makul bir sebebin bulunmasına",
+    "D": "Yazılı emre",
+    "E": "Kişinin kılık kıyafetine"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 6,
+   "grup": "B",
+   "kok": "Suç ihbarı üzerine olay yerine gelen adlî kolluk görevlilerinin, delillerin toplanması amacıyla olay yerinin dışındaki bir binanın içinde arama yapmaları gerekmiştir. Bu arama işlemi için hangi merciin kararı veya emri gereklidir?",
+   "siklar": {
+    "A": "Sadece kolluk amirinin yazılı emri",
+    "B": "İl Emniyet Müdürünün emri",
+    "C": "İçişleri Bakanının kararı",
+    "D": "Mahallin en büyük mülki idare amirinin emri",
+    "E": "Hakim kararı veya gecikmesinde sakınca bulunan hallerde Cumhuriyet savcısının yazılı emri"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 7,
+   "grup": "B",
+   "kok": "Toplantı ve gösteri yürüyüşleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Gece de yapılabilir.",
+    "B": "Toplantının yapıldığı yer toplantı süresince umuma açık yer sayılır.",
+    "C": "TBMM’ye 1 km uzaklıktaki alan içinde toplantı yapılamaz.",
+    "D": "Toplantılar en az 7 kişi tarafından oluşan bir kurul tarafından düzenlenir.",
+    "E": "Kapalı yer toplantılarında ses yükseltici alet ve araçlarla dışarıya yayın yapılamaz."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 8,
+   "grup": "B",
+   "kok": "Polisin kimlik sorduğu kişi kimliğini ispatlayamamıştır. Bu kişi hakkında yapılacak işlem ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Sadece fotoğrafı çekilir.",
+    "B": "En yakın karakola götürülerek serbest bırakılır.",
+    "C": "Kimlik tespiti yapılmadan ailesine teslim edilir.",
+    "D": "Derhal serbest bırakılır.",
+    "E": "Kimliği belirleninceye kadar tutulur ve durumdan derhal Cumhuriyet savcısı haberdar edilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 9,
+   "grup": "B",
+   "kok": "Emniyet Teşkilat Kanunu'na göre, ülkenin genel emniyet ve asayiş işlerinden aşağıdakilerden hangisi sorumludur?",
+   "siklar": {
+    "A": "İçişleri Bakanı",
+    "B": "Vali",
+    "C": "Başsavcı",
+    "D": "Jandarma Genel Komutanı",
+    "E": "Emniyet Genel Müdürü"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 10,
+   "grup": "B",
+   "kok": "Silahlı bir saldırıya maruz kalan polisin silah kullanması ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Kesinlikle silah kullanamaz.",
+    "B": "Amirinden yazılı izin alarak silah kullanabilir.",
+    "C": "Saldırıyı etkisiz kılacak ölçüde silah kullanabilir.",
+    "D": "Sadece uyarı ateşi açabilir.",
+    "E": "Sadece saldırganı yakalamak amacıyla silah kullanabilir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 11,
+   "grup": "B",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, bilgisayar kütüklerinde arama yapılabilmesi için aranan şartlar bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Şüphelinin rızasının alınmış olması",
+    "B": "Somut delillere dayanan kuvvetli şüphe sebepleri bulunması ve başka surette delil elde etme imkanının bulunmaması",
+    "C": "Bilgisayarın şüpheli dışındaki kişilere ait olması",
+    "D": "Sadece savcının kararının bulunması",
+    "E": "Fiilin kabahat niteliğinde olması"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 12,
+   "grup": "B",
+   "kok": "Cumhuriyet savcısı ihbar üzerine bir suçun işlendiği izlenimini veren bir hâli öğrenmiştir. Ceza Muhakemesi Kanunu'na göre, Cumhuriyet savcısının öncelikli görevi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Suçun işlendiği yerdeki mahkemeye haber vermek",
+    "B": "Sadece şüphelinin aleyhine delil toplamak",
+    "C": "Hemen işin gerçeğini araştırmaya başlamak",
+    "D": "Derhal iddianame düzenlemek",
+    "E": "Adalet Bakanlığına bilgi vermek"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 13,
+   "grup": "B",
+   "kok": "Uyuşturucu ticaretine ilişkin yapılan bir soruşturmada, şüpheli M'nin suçla ilgili deliller içerdiğinden şüphelenilen mektubunun postanede bulunduğu öğrenilmiştir. Ceza Muhakemesi Kanunu'na göre, bu mektuba el konulması için hangi merciin kararı gereklidir?",
+   "siklar": {
+    "A": "Kolluk amirinin yazılı emri",
+    "B": "Sadece hâkim kararı",
+    "C": "Adalet Bakanının kararı",
+    "D": "Sadece Cumhuriyet savcısının kararı",
+    "E": "Hâkimin veya gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının kararı"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 14,
+   "grup": "B",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, sorgu yetkisi aşağıdakilerden hangisine aittir?",
+   "siklar": {
+    "A": "Mağdura",
+    "B": "Hâkim veya mahkemeye",
+    "C": "Müdafiye",
+    "D": "Cumhuriyet savcısına",
+    "E": "Kolluk görevlilerine"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 15,
+   "grup": "B",
+   "kok": "Toplu olarak işlenen suçlarda gözaltı süresinin uzatılmasına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Gözaltı süresi hiçbir şekilde uzatılamaz.",
+    "B": "Cumhuriyet savcısı gözaltı süresinin, her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir.",
+    "C": "İlk yakalama anından itibaren 48 saat ile sınırlıdır.",
+    "D": "Hakim her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına karar verebilir.",
+    "E": "Mülki Amir her defasında bir günü geçmemek üzere, üç gün süreyle uzatılmasına yazılı olarak emir verebilir."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 16,
+   "grup": "B",
+   "kok": "Polis ekipleri, bir hırsızlık olayının hemen ardından, şüphelinin üstünde suç delillerini bulmak amacıyla arama yapmak istemektedir. Durumun aciliyeti nedeniyle Cumhuriyet savcısına ulaşılamamaktadır. Ceza Muhakemesi Kanunu'na göre, bu durumda arama emri verme yetkisi aşağıdakilerden hangisine aittir?",
+   "siklar": {
+    "A": "Valiye",
+    "B": "Kaymakama",
+    "C": "Mahkeme başkanına",
+    "D": "Hâkime",
+    "E": "Kolluk amirine"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 17,
+   "grup": "B",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, telekomünikasyon yoluyla yapılan iletişimin dinlenmesi ve kayda alınması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Bu tedbire ilişkin alınan karar ve yapılan işlemler, tedbir süresince gizli tutulur.",
+    "B": "Suç işlendiğine ilişkin somut delillere dayanan kuvvetli şüphe sebepleri bulunmalıdır.",
+    "C": "Hâkim veya gecikmesinde sakınca bulunan hallerde Cumhuriyet savcısının kararı bulunmalıdır.",
+    "D": "Başka suretle delil elde edilme imkanı bulunmamalıdır.",
+    "E": "Şüpheli veya sanığın tanıklıktan çekinebilecek kişilerle arasındaki iletişimi kayda alınabilir."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 18,
+   "grup": "B",
+   "kok": "Aşağıdaki durumlardan hangisinde kolluk kuvvetleri de yakalama emri düzenleyebilir?",
+   "siklar": {
+    "A": "Soruşturma evresinde çağrı üzerine gelmeyen şüpheli hakkında",
+    "B": "Kabahat teşkil eden fiillerden dolayı ulaşılamayan kişi hakkında",
+    "C": "Kovuşturma evresinde kaçak sanık hakkında",
+    "D": "Yakalanmış iken kolluk görevlisinin elinden kaçan şüpheli veya sanık hakkında",
+    "E": "Örgütlü suçlara ilişkin soruşturmada şüpheli hakkında"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 19,
+   "grup": "B",
+   "kok": "Ceza Muhakemesi Kanunu'na göre, avukat bürolarında arama ve elkoyma işlemlerine ilişkin aşağıdakilerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Avukat büroları ancak mahkeme kararı ile aranabilir.",
+    "B": "Elkonulmasına karar verilen şeyler avukat ile müvekkili arasındaki meslekî ilişkiye ait olduğu öne sürülürse derhal avukata iade edilir.",
+    "C": "Arama Cumhuriyet savcısının denetiminde yapılır.",
+    "D": "Aramada baro başkanı veya onu temsil eden bir avukat hazır bulundurulur.",
+    "E": "Arama sadece kararda belirtilen olayla ilgili yapılabilir."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 20,
+   "grup": "B",
+   "kok": "Ceza Muhakemesi Kanunu'nda 'şüpheli' nasıl tanımlanmıştır?",
+   "siklar": {
+    "A": "Duruşmada savunmasını yapan kişi",
+    "B": "Kovuşturma evresinde suç şüphesi altında bulunan kişi",
+    "C": "Katılan, suçtan zarar gören veya malen sorumlu kişiyi ceza muhakemesinde temsil eden kişi",
+    "D": "Soruşturma evresinde, suç şüphesi altında bulunan kişi",
+    "E": "Yargılama konusu işin hükme bağlanması ve bunun kesinleşmesinden sonra, maddi ve mali sorumluluk taşıyarak hükmün sonuçlarından etkilenecek veya bunlara katlanacak kişi"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 21,
+   "grup": "B",
+   "kok": "Türk Ceza Kanunu'na göre, 'çocuk' kavramından ne anlaşılır?",
+   "siklar": {
+    "A": "Henüz 12 yaşını doldurmamış kişi",
+    "B": "Henüz 14 yaşını doldurmamış kişi",
+    "C": "Henüz 15 yaşını doldurmamış kişi",
+    "D": "Henüz 18 yaşını doldurmamış kişi",
+    "E": "Henüz 21 yaşını doldurmamış kişi"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 22,
+   "grup": "B",
+   "kok": "Türk Ceza Kanunu'nun 7. maddesinde yer alan 'zaman bakımından uygulama' ilkesine göre, bir fiil işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmıyorsa, sonradan suç sayılan bir kanunla cezalandırılabilme durumu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Kanun koyucunun kararına bağlıdır.",
+    "B": "Yargılamayı yapan hakimin takdirine bağlıdır.",
+    "C": "Kimseye işlendiği zaman yürürlükte bulunan kanuna göre suç sayılmayan bir fiilden dolayı ceza verilemez.",
+    "D": "Kamu yararı varsa cezalandırılabilir.",
+    "E": "Sadece ağır cezalık suçlarda cezalandırılabilir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 23,
+   "grup": "B",
+   "kok": "Türk Ceza Kanunu'na göre, 'taksir' ile işlenen fiiller hangi hallerde cezalandırılır?",
+   "siklar": {
+    "A": "Kanunun açıkça belirttiği hallerde cezalandırılır.",
+    "B": "Sadece ağır neticeler doğurması halinde cezalandırılır.",
+    "C": "Mağdurun şikayetine bağlı olarak cezalandırılır.",
+    "D": "Her durumda cezalandırılır.",
+    "E": "Hakimin takdirine bağlı olarak cezalandırılır."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 24,
+   "grup": "B",
+   "kok": "Türk Ceza Kanunu'nda 'kast' nasıl tanımlanmıştır?",
+   "siklar": {
+    "A": "Suçun kanuni tanımındaki unsurların öngörülmeden gerçekleştirilmesi",
+    "B": "Neticenin meydana gelmesinin istenmemesine rağmen fiilin işlenmesi",
+    "C": "Dikkat ve özen yükümlülüğüne aykırılık",
+    "D": "Suç işleme amacı olmaksızın fiilin gerçekleştirilmesi",
+    "E": "Suçun kanuni tanımındaki unsurların bilerek ve istenerek gerçekleştirilmesi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 25,
+   "grup": "B",
+   "kok": "Fiili işlediği sırada on iki yaşını doldurmamış olan çocukların ceza sorumluluğu hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Tam ceza sorumluluğu vardır.",
+    "B": "Ceza sorumluluğu yoktur.",
+    "C": "Sadece adli para cezası verilebilir.",
+    "D": "Çocuklara özgü güvenlik tedbirleri uygulanamaz.",
+    "E": "Şikayete bağlı olarak cezalandırılabilir."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 26,
+   "grup": "B",
+   "kok": "Hukuka uygunluk nedenlerinden biri olan 'meşru savunma' bakımından aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Saldırı silahla gerçekleştirilmelidir.",
+    "B": "Savunma zorunlu olmalıdır.",
+    "C": "Haksız bir saldırı bulunmalıdır.",
+    "D": "Savunma saldırana karşı olmalıdır.",
+    "E": "Saldırı bir hakka yönelik olmalıdır."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 27,
+   "grup": "B",
+   "kok": "Suçta ve Cezada Kanunîlik İlkesi'ne göre aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Kanunda yazılı cezalardan başka bir ceza hükmolunamaz.",
+    "B": "Suç ve ceza içeren hükümlerin uygulanmasında kıyas yapılamaz.",
+    "C": "İdarenin düzenleyici işlemleriyle suç ve ceza konulabilir.",
+    "D": "Suç ve ceza içeren hükümler, kıyasa yol açacak biçimde geniş yorumlanamaz.",
+    "E": "Kanunun açıkça suç saymadığı bir fiil için kimseye ceza verilemez."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 28,
+   "grup": "B",
+   "kok": "Türk Ceza Kanunu'na göre ceza sorumluluğu bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Ceza hukukunda müteselsil sorumluluk mümkündür .",
+    "B": "Ceza sorumluluğu devredilebilir.",
+    "C": "Kimse başkasının fiilinden dolayı sorumlu tutulamaz.",
+    "D": "Tüzel kişilere de ceza verilebilir.",
+    "E": "Ceza sorumluluğu kişisel değildir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 29,
+   "grup": "B",
+   "kok": "'Suça teşebbüs' bakımından aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Suçun icra hareketlerine başlanmasına rağmen kişinin elinde olmayan nedenlerle suçun tamamlanmamış olması",
+    "B": "Ortaya çıkan zarar veya tehlikenin ağır olması",
+    "C": "Suçun icra hareketlerinin tamamlanmış olması",
+    "D": "Suç işleme kararından gönüllü vazgeçilmesi",
+    "E": "Suçun hazırlık hareketlerinin tamamlanmamış olması"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 30,
+   "grup": "B",
+   "kok": "'Suç İşlemek Amacıyla Örgüt Kurma' suçunun varlığı için örgütün üye sayısının en az kaç kişi olması gerekir?",
+   "siklar": {
+    "A": "2",
+    "B": "3",
+    "C": "5",
+    "D": "7",
+    "E": "9"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 31,
+   "grup": "B",
+   "kok": "Anayasaya göre, kanuna aykırı olarak elde edilmiş bulguların delil olarak kabul edilip edilemeyeceği ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Sadece ağır cezalık suçlarda kabul edilebilir.",
+    "B": "Mağdurun onayıyla kabul edilebilir.",
+    "C": "Savcılık kararıyla kabul edilebilir.",
+    "D": "Mahkemenin takdirine bağlıdır.",
+    "E": "Hiçbir şekilde kullanılamaz."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 32,
+   "grup": "B",
+   "kok": "Bir suç işlediği iddia edilen Anayasa Mahkemesi üyeleri hangi merciide yargılanır?",
+   "siklar": {
+    "A": "Yargıtay'da",
+    "B": "Sayıştay'da",
+    "C": "Danıştay'da",
+    "D": "Anayasa Mahkemesi'nde",
+    "E": "Uyuşmazlık Mahkemesi'nde"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 33,
+   "grup": "B",
+   "kok": "Anayasaya göre, savaş, seferberlik veya olağanüstü hallerde temel hak ve hürriyetlerin kullanılmasının kısmen veya tamamen durdurulabileceği hallerde dahi hangi haklara dokunulamaz?",
+   "siklar": {
+    "A": "Toplantı ve gösteri yürüyüşü hakkına",
+    "B": "Çalışma ve sözleşme hürriyetine",
+    "C": "Basın hürriyetine",
+    "D": "Din ve vicdan hürriyetine",
+    "E": "Yerleşme ve seyahat hürriyetine"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 34,
+   "grup": "B",
+   "kok": "Anayasaya göre, aşağıdakilerden hangisi vücut bütünlüğüne dokunulabilecek istisnai hallerden biri değildir?",
+   "siklar": {
+    "A": "Meşru müdafaa hali",
+    "B": "Tıbbi zorunluluklar",
+    "C": "Rızası olmadan bilimsel ve tıbbi deneylere tabi tutulması",
+    "D": "Bir ayaklanmanın veya isyanın bastırılması",
+    "E": "Tutuklunun kaçmasının önlenmesi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 35,
+   "grup": "B",
+   "kok": "Anayasaya göre, Türkiye Büyük Millet Meclisi kaç milletvekilinden oluşur?",
+   "siklar": {
+    "A": "450",
+    "B": "500",
+    "C": "550",
+    "D": "600",
+    "E": "650"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 36,
+   "grup": "B",
+   "kok": "Anayasaya göre, toplantı ve gösteri yürüyüşü düzenleme hakkı ile ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Bu hak milli güvenlik amacıyla sınırlanabilir.",
+    "B": "Toplantılar silahsız ve saldırısız olmalıdır.",
+    "C": "Bu hak, başkalarının hak ve özgürlüklerinin korunması amacıyla sınırlanabilir.",
+    "D": "Bu hak genel ahlakın korunması amacıyla sınırlanabilir.",
+    "E": "Bu hakkın kullanılması izne bağlıdır."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 37,
+   "grup": "B",
+   "kok": "Anayasaya göre, kanun teklif etmeye yetkili kişi veya kurum aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Milletvekilleri",
+    "B": "Bakanlar",
+    "C": "Cumhurbaşkanı",
+    "D": "Anayasa Mahkemesi",
+    "E": "Türkiye Büyük Millet Meclisi komisyonları"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 38,
+   "grup": "B",
+   "kok": "Anayasaya göre, Cumhurbaşkanı'nın doğal afet veya tehlikeli salgın hastalık gibi hallerde olağanüstü hal ilan etme süresi en fazla ne kadardır?",
+   "siklar": {
+    "A": "15 gün",
+    "B": "3 ay",
+    "C": "6 ay",
+    "D": "1 yıl",
+    "E": "2 yıl"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 39,
+   "grup": "B",
+   "kok": "Anayasaya göre, kişisel veriler hangi durumlarda işlenebilir?",
+   "siklar": {
+    "A": "Mahkeme kararı ile",
+    "B": "Kamu yararı varsa",
+    "C": "Gecikmesinde sakınca bulunan hallerde",
+    "D": "Kanunda öngörülen hallerde veya kişinin açık rızasıyla",
+    "E": "İdari makamların onayıyla"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 40,
+   "grup": "B",
+   "kok": "Anayasaya göre, aşağıdakilerden hangisi Cumhuriyetin niteliklerinden biri değildir?",
+   "siklar": {
+    "A": "Federal Devlet",
+    "B": "Demokratik Devlet",
+    "C": "Laik Devlet",
+    "D": "Hukuk Devleti",
+    "E": "Sosyal Devlet"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 41,
+   "grup": "B",
+   "kok": "Aşağıdakilerden hangisi kamu hizmetinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "Özel mülkiyet",
+    "B": "Süreklilik",
+    "C": "Kural olarak bedelsizlik",
+    "D": "Uyarlama",
+    "E": "Eşitlik"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 42,
+   "grup": "B",
+   "kok": "Özel kanunlarında ayrı süre gösterilmeyen hallerde, idare mahkemelerinde dava açma süresi kaç gündür?",
+   "siklar": {
+    "A": "15",
+    "B": "30",
+    "C": "45",
+    "D": "60",
+    "E": "90"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 43,
+   "grup": "B",
+   "kok": "İdari Yargılama Usulü Kanunu'na göre, ilgililerin idari makamlara yaptıkları başvurulara otuz gün içinde cevap verilmemesi durumu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "İstek reddedilmiş sayılır ve ilgililer otuz günün bittiği tarihten itibaren dava açma süresi içinde dava açabilirler.",
+    "B": "İdari makamdan kesin cevap gelene kadar dava açma süresi işlemez, ancak bekleme süresi doksan günü geçemez.",
+    "C": "Dava doğrudan Danıştay'a açılmalıdır.",
+    "D": "İdari makamın yeni bir cevap verme yükümlülüğü doğar.",
+    "E": "İstek kabul edilmiş sayılır ve dava açma süresi başlamaz."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 44,
+   "grup": "B",
+   "kok": "Aşağıdakilerden hangisi kamu tüzel kişiliğinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "Kamu tüzel kişilerinin malvarlıkları özel düzenlemelerle korunmaktadır.",
+    "B": "Kamu tüzel kişileri, özel hukuk tüzel kişilerinden farklı olarak serbest irade ile ortadan kalkabilir.",
+    "C": "Kamu tüzel kişileri kamu gücü kullanma yetkisi ile donatılmıştır.",
+    "D": "Kamu tüzel kişileri, Anayasanın 123. maddesine göre kanunla veya Cumhurbaşkanlığı kararnamesiyle kurulabilir.",
+    "E": "Kamu tüzel kişileri, başka bir makam veya organdan izin almadan tek yanlı irade açıklamaları ile hukuki durum yaratabilir."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 45,
+   "grup": "B",
+   "kok": "Danıştay Kanunu'na göre Danıştay'ın niteliği ve yetkileri hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Danıştay bağımsızdır.",
+    "B": "Danıştay, Türkiye Cumhuriyeti Anayasası ile görevlendirilmiş yüksek mahkemedir.",
+    "C": "Danıştay'ın yönetimi ve temsili Danıştay Başkanına aittir.",
+    "D": "Danıştay'ın yürütmeyle ilgili işleri Adalet Bakanlığı aracılığı ile yürütülür.",
+    "E": "Danıştay danışma ve inceleme merciidir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 46,
+   "grup": "B",
+   "kok": "Aşağıdakilerden hangisi idari kolluk faaliyetinin özelliklerinden biri değildir?",
+   "siklar": {
+    "A": "İdari kolluk, kamu düzenini bozulmasından önce alınan tedbirlerle korumayı ifade eder.",
+    "B": "İdare, kolluk yetkisini kullanmaktan vazgeçemez.",
+    "C": "Kolluk faaliyetinin yerine getirilmesinde sözleşme yapılabilir.",
+    "D": "Kolluk faaliyeti doğrudan idare tarafından yerine getirilir.",
+    "E": "Kolluk yetkisi, kamu hizmetlerini kolaylaştırmak veya iyileştirmek amacıyla kullanılamaz."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 47,
+   "grup": "B",
+   "kok": "İdari işlemin hukuki sonucunu ifade eden unsur aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Konu",
+    "B": "Yetki",
+    "C": "Şekil",
+    "D": "Sebep",
+    "E": "Amaç"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 48,
+   "grup": "B",
+   "kok": "Danıştay üyelerinin seçimi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Danıştay üyeleri sekiz yıl için seçilir.",
+    "B": "Bir kimse iki defa Danıştay üyesi seçilebilir.",
+    "C": "Danıştay’da boşalan üyeliklerin tamamı idari yargı hakim ve savcılığından seçilir.",
+    "D": "İdari yargı hakim ve savcıları, Hakimler ve Savcılar Yüksek Kurulunca; diğer görevlerde bulunanlar ise, Cumhurbaşkanınca Danıştay üyeliğine seçilirler.",
+    "E": "Danıştay üyelerinin dörtte biri Hakimler ve Savcılar Kurulu tarafından seçilir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 49,
+   "grup": "B",
+   "kok": "İdare hukukunun özellikleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "İdare hukuku yeni bir hukuk dalıdır.",
+    "B": "İdare hukuku tedvin (kodifiye) edilmiş bir hukuk dalıdır.",
+    "C": "İdare hukuku içtihadi bir hukuk dalıdır.",
+    "D": "İdare hukuku bağımsız bir hukuk dalıdır.",
+    "E": "İdare hukuku pozitif bir hukuk dalıdır."
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 50,
+   "grup": "B",
+   "kok": "İdari Yargılama Usulü Kanunu'na göre, yürütmenin durdurulması kararı verilebilmesi için hangi şartların birlikte gerçekleşmesi gerekir?",
+   "siklar": {
+    "A": "İdari işlemin tarafların rızası olmadan tesis edilmesi ve kamusal yetki içermesi",
+    "B": "İdari işlemin kanuna aykırı olması ve kamu yararını ihlal etmesi",
+    "C": "İdari işlem nedeniyle telafisi güç veya imkânsız zararların doğması",
+    "D": "İdari işlemin açıkça hukuka aykırı olması ve telafisi güç veya imkânsız zararların doğması",
+    "E": "İdari işlemin siyasi nitelik taşıması ve kamu düzenini bozması"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 51,
+   "grup": "B",
+   "kok": "John Locke'a göre devletin asıl kuruluş amacı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Sınırsız iktidarı pekiştirmek",
+    "B": "İnsanların doğal hakları olan hayat, hürriyet ve mülkiyetini korumak",
+    "C": "Toplumu bir savaş düzeninde tutmak",
+    "D": "Suçluları cezalandıracak bir organizasyon kurmak",
+    "E": "Aristokrasinin ayrıcalıklarını sürdürmek"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 52,
+   "grup": "B",
+   "kok": "1982 Anayasası'na göre, temel hak ve hürriyetlerin sınırlanması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Sınırlamalar, demokratik toplum düzeninin ve laik Cumhuriyetin gereklerine aykırı olamaz.",
+    "B": "Temel hak ve hürriyetler, özlerine dokunulmaksızın sınırlanabilir.",
+    "C": "Sınırlamalar ölçülülük ilkesine aykırı olamaz.",
+    "D": "Sınırlamalar Cumhurbaşkanlığı kararnamesiyle de yapılabilir.",
+    "E": "Sınırlamalar yalnızca Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı olarak yapılabilir."
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 53,
+   "grup": "B",
+   "kok": "Aşağıdakilerden hangisi adil yargılanma hakkının unsurlarından biri değildir?",
+   "siklar": {
+    "A": "Makul sürede yargılanma hakkı",
+    "B": "Aleniyet (halka açıklık) ilkesi",
+    "C": "Masumiyet karinesi",
+    "D": "Silahların eşitliği ilkesi",
+    "E": "Kovuşturma mecburiyeti ilkesi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 54,
+   "grup": "B",
+   "kok": "Çağdaş demokrasilerde kişilere tanınan hak ve hürriyetler için kullanılan terimler arasında aşağıdakilerden hangisi yer almaz?",
+   "siklar": {
+    "A": "Vatandaş hakları",
+    "B": "Kamu hakları",
+    "C": "Temel haklar",
+    "D": "Kişi hak ve hürriyetleri",
+    "E": "Zümre hakları"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 55,
+   "grup": "B",
+   "kok": "Osmanlı İmparatorluğu'nda insan hakları konusunda ilk dikkat çeken belgeler arasında yer alan, can, mal, ırz güvenliğini sağlamaya yönelik ifadeler içeren, vergi ve askerlik işlerinin adaletle görülmesi gerektiğini belirten ve kanunsuz suç ve ceza olmaz ilkesine yer veren belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Kanun-u Esasi",
+    "B": "Tanzimat Fermanı",
+    "C": "II. Meşrutiyet",
+    "D": "Islahat Fermanı",
+    "E": "Sened-i İttifak"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 56,
+   "grup": "B",
+   "kok": "İnsan hakları doktrinine 'kuvvetler ayrılığı' ilkesiyle büyük katkı sunan düşünür aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "John Locke",
+    "B": "Jean-Jacques Rousseau",
+    "C": "Montesquieu",
+    "D": "Thomas Hobbes",
+    "E": "Voltaire"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 57,
+   "grup": "B",
+   "kok": "Avrupa Konseyi tarafından, 'Avrupa Konseyi Tâcının Mücevheri' olarak nitelendirilen ve öngördüğü denetim mekanizması ile benzerlerinden ayrılan uluslararası sözleşme aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "İşkence ve İnsanlık Dışı veya Aşağılayıcı Muamele ve Cezaları Önleme Avrupa Sözleşmesi",
+    "B": "Avrupa Sosyal Şartı",
+    "C": "İnsan Haklarının ve Temel Özgürlüklerin Korunmasına İlişkin Avrupa Sözleşmesi",
+    "D": "Medeni ve Siyasi Haklara Dair Uluslararası Sözleşme",
+    "E": "Ulusal Azınlıkları Koruma Çerçeve Sözleşmesi"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 58,
+   "grup": "B",
+   "kok": "Mülkiyet hakkı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "Mülkiyet hakkı kamu yararı amacıyla sınırlandırılabilir.",
+    "B": "Mülkiyet hakkı ancak kanunla sınırlandırılabilir.",
+    "C": "Herkes mülkiyet hakkına sahiptir.",
+    "D": "Mülkiyet hakkının kullanılması toplum yararına aykırı olamaz.",
+    "E": "Reşit olmayanlar mülkiyet hakkına sahip olamazlar."
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 59,
+   "grup": "B",
+   "kok": "Jellinek'in insan hakları sınıflandırmasında, devlete karışmama yükümlülüğü yükleyen \"negatif statü hakları\" ve bireylerin siyasal hayata katılmasını sağlayan \"aktif statü hakları\" hangi kuşak haklara karşılık gelir?",
+   "siklar": {
+    "A": "Birinci Kuşak Haklar",
+    "B": "İkinci Kuşak Haklar",
+    "C": "Üçüncü Kuşak Haklar",
+    "D": "Dördüncü Kuşak Haklar",
+    "E": "Kolektif Haklar"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 60,
+   "grup": "B",
+   "kok": "10 Aralık 1948 tarihinde Birleşmiş Milletler tarafından ilan edilen ve devletleri hukuksal yükümlülük altına sokmayan ancak insan hakları açısından yön gösterici nitelikte olan belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Birleşmiş Milletler Şartı",
+    "B": "Avrupa İnsan Hakları Sözleşmesi",
+    "C": "İnsan Hakları Evrensel Bildirgesi",
+    "D": "Ekonomik, Sosyal ve Kültürel Haklara Dair Uluslararası Sözleşme",
+    "E": "Medeni ve Siyasi Haklara Dair Uluslararası Sözleşme"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 61,
+   "grup": "B",
+   "kok": "Aşağıdakilerden hangisi sonrasında TBMM tarafından Mustafa Kemal’e Başkomutanlık yetkisi verilmiştir?",
+   "siklar": {
+    "A": "Kütahya-Eskişehir Muharebesi",
+    "B": "Birinci İnönü Muharebesi",
+    "C": "İkinci İnönü Muharebesi",
+    "D": "Sakarya Meydan Muharebesi",
+    "E": "Dumlupınar Meydan Muharebesi"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 62,
+   "grup": "B",
+   "kok": "Sevr Antlaşması’nın şartlarının belirlenmesi ve Osmanlı İmparatorluğu’nun topraklarının paylaşılması amacıyla Fransa, İngiltere ve İtalya’nın katılımı ile düzenlenen konferans aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Yalta Konferansı",
+    "B": "San Remo Konferansı",
+    "C": "Paris Konferansı",
+    "D": "Adana Konferansı",
+    "E": "Londra Konferansı"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 63,
+   "grup": "B",
+   "kok": "Kurtuluş Savaşı’nın amacını, ilkelerini ve yöntemini belirleyerek ilk kez ortaya koyan, bir plan niteliğindeki belge aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Amasya Genelgesi",
+    "B": "Havza Genelgesi",
+    "C": "Samsun Raporu",
+    "D": "Erzurum Kongresi Kararları",
+    "E": "Sivas Kongresi Kararları"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 64,
+   "grup": "B",
+   "kok": "Mustafa Kemal Atatürk, “Hattı müdafaa yoktur, sathı müdafaa vardır. O satıh bütün vatandır. Yurdun her karış toprağı yurttaş kanıyla sulanmadıkça düşmana bırakılamaz.” sözlerini aşağıdaki olaylardan hangisi sırasında söylemiştir?",
+   "siklar": {
+    "A": "Sakarya Meydan Muharebesi",
+    "B": "Londra Konferansı",
+    "C": "İstanbul’un işgali",
+    "D": "Büyük Taarruz",
+    "E": "Lozan Barış Antlaşması"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 65,
+   "grup": "B",
+   "kok": "Kurtuluş Savaşı’nın en yoğun yaşandığı dönemde, Atatürk’ün emri ile eğitim alanında politika belirlemek üzere Ankara’da toplanan kongre aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Anadolu Kongresi",
+    "B": "Öğretmenler Kongresi",
+    "C": "Talim ve Terbiye Kongresi",
+    "D": "Tevhid-i Tedrisat Kongresi",
+    "E": "Maarif Kongresi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 66,
+   "grup": "B",
+   "kok": "Mondros Mütarekesi’nden sonra farklı şehirlerde düşman işgaline karşı kurulan millî cemiyetler, aşağıdaki kongrelerden hangisinde alınan karar ile ‘Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti’ çatısı altında birleştirilmiştir?",
+   "siklar": {
+    "A": "Uşak Kongresi",
+    "B": "Birinci Nazilli Kongresi",
+    "C": "Birinci Balıkesir Kongresi",
+    "D": "Alaşehir Kongresi",
+    "E": "Sivas Kongresi"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 67,
+   "grup": "B",
+   "kok": "Lozan Barış Antlaşması ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "siklar": {
+    "A": "İktisadi millileştirmenin ilk adımı ve iktisadi bağımsızlık belgesidir.",
+    "B": "Birinci Dünya Savaşı’nı bitiren barış antlaşmaları içinde gerçek bir müzakere sonucunda imzalanan tek antlaşmadır.",
+    "C": "Türkiye’nin sınırları bu antlaşma ile tamamen Misak-ı Millî’ye uygun olarak çizilmiştir.",
+    "D": "Türk milletinin Kurtuluş Savaşı’yla kazandığı bağımsızlığın diplomatik zaferi olmuştur.",
+    "E": "Türkiye’nin bağımsızlığını uluslararası alanda tescil eden bir siyasi bağımsızlık belgesidir."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 68,
+   "grup": "B",
+   "kok": "I. Türk İnkılabının hukuki temelleri atılmıştır. II. Temel hak ve özgürlüklere yer verilmemiştir. III. Kanun-ı Esasi kesin olarak yürürlükten kalkmıştır. IV. Uzun süre uygulanmış ve bu sürede çok kere değişikliğe uğramıştır. Yukarıdakilerden hangileri 1924 Anayasası’nın özellikleri arasında yer alır?",
+   "siklar": {
+    "A": "I ve III",
+    "B": "II ve IV",
+    "C": "I, II ve IV",
+    "D": "I, III ve IV",
+    "E": "II, III ve IV"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 69,
+   "grup": "B",
+   "kok": "1933’den sonra İtalya’nın hızlı bir şekilde silahlanarak Balkanlar’a yönelik politikalar üretmesi Balkan devletlerini ve Türkiye’yi endişelendirmiştir. Bu çerçevede 9 Şubat 1934’de Türkiye, Yunanistan, Romanya ve Yugoslavya arasında bir uluslararası savunma ittifakı imzalanmıştır. Yukarıdaki paragrafta sözü edilen ittifak aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Bağdat Paktı",
+    "B": "Dörtlü Antant",
+    "C": "Sadabat Paktı",
+    "D": "Balkan Antantı",
+    "E": "Anti-Komintern Paktı"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 70,
+   "grup": "B",
+   "kok": "I. Soyadı Kanunu’nun kabulü II. Türk harflerinin kabulü III. Şapka ve Kıyafet Kanunu’nun kabulü IV. Medeni Kanun’un kabulü Yukarıdaki gelişmelerin kronolojik sırası aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+   "siklar": {
+    "A": "I-II-IV-III",
+    "B": "I-III-II-IV",
+    "C": "III-I-IV-II",
+    "D": "III-II-I-IV",
+    "E": "III-IV-II-I"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 71,
+   "grup": "B",
+   "kok": "Türk demokrasi tarihinde ilk kez gizli oy ve açık sayım ilkesinin uygulandığı seçim aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "1946 Seçimleri",
+    "B": "1950 Seçimleri",
+    "C": "1954 Seçimleri",
+    "D": "1957 Seçimleri",
+    "E": "1961 Seçimleri"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 72,
+   "grup": "B",
+   "kok": "Devletin tüm kurumlarını kapsayıcı ve bütünlüklü bir iletişim stratejisi oluşturmak, millet-devlet iletişiminin etkin yönetimi için gerekli düzenlemeleri yapmak, medya ve düşünce dünyasını yakından izlemek, değerlendirmek ve ilgili makamları ve kamuoyunu bu çerçevede bilgilendirmek amacıyla 24 Temmuz 2018 tarihinde Cumhurbaşkanlığı Kararnamesi ile kurulan ve hizmet vermeye başlayan kurum aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Kişisel Verileri Koruma Kurumu",
+    "B": "Türk Akreditasyon Kurumu",
+    "C": "Türkiye İnsan Hakları ve Eşitlik Kurulu Başkanlığı",
+    "D": "Cumhurbaşkanlığı İletişim Başkanlığı",
+    "E": "Türk İşbirliği ve Koordinasyon Ajansı Başkanlığı"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 73,
+   "grup": "B",
+   "kok": "Türkiye’de istihbarat ve millî güvenlik alanında lisansüstü çalışmalar yapılması, istihbaratın akademik boyut kazanmasına yönelik çalışmaların ileri düzeye taşınması amacıyla Millî İstihbarat Teşkilâtı (MİT) bünyesinde kurulan ve 6 Ocak 2024 tarihinde çalışmalarına başlayan yükseköğretim kurumu aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Millî İstihbarat Akademisi",
+    "B": "Güvenlik Bilimleri Fakültesi",
+    "C": "Siber Güvenlik Enstitüsü",
+    "D": "Millî Savunma Üniversitesi",
+    "E": "Jandarma Güvenlik Akademisi"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 74,
+   "grup": "B",
+   "kok": "Türkiye’de 2030’lu yıllardan itibaren F-16 uçaklarının yerine kullanılacak 5. nesil bir savaş uçağı üretilmesi amacıyla millî imkânlarla geliştirilen ve ilk uçuşunu Şubat 2024’te gerçekleştiren savaş uçağı aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "HÜRKUŞ",
+    "B": "ATAK",
+    "C": "HÜRJET",
+    "D": "BAYRAKTAR TB2",
+    "E": "KAAN"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 75,
+   "grup": "B",
+   "kok": "Gurbet Kuşları, Ankara Ekspresi, Umutsuzlar, Acı Hayat ve Memleketim adlı filmlerin de aralarında bulunduğu çok sayıda filmde rol alarak Türk sinemasının bir dönemine damga vuran, Mart 2025’te hayatını kaybeden Yeşilçam’ın usta oyuncusu aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Ayla Algan",
+    "B": "Tomris Giritlioğlu",
+    "C": "Ahu Tuğba",
+    "D": "Bedia Ener",
+    "E": "Filiz Akın"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 76,
+   "grup": "B",
+   "kok": "2024 yılında müzik alanında Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülü’ne layık görülen sanatçı aşağıdakilerden hangisindedir?",
+   "siklar": {
+    "A": "Mehmet Emin Ay",
+    "B": "Ahmet Özhan",
+    "C": "Sami Özer",
+    "D": "Erkan Mutlu",
+    "E": "Mustafa Demirci"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 77,
+   "grup": "B",
+   "kok": "Dünya Atletizm Şampiyonası, 13-21 Eylül 2025 tarihlerinde aşağıdaki şehirlerden hangisinde gerçekleştirilecektir?",
+   "siklar": {
+    "A": "Paris",
+    "B": "Riga",
+    "C": "Roma",
+    "D": "Atina",
+    "E": "Tokyo"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 78,
+   "grup": "B",
+   "kok": "Aşağıdaki cümlelerin hangisinde “inceden inceye, dikkatlice gözden geçirmek” anlamında bir deyim kullanılmıştır?",
+   "siklar": {
+    "A": "Plan yaparken benim programımı da göz önünde bulundurursan sevinirim.",
+    "B": "Bu kızın hatalarına her seferinde göz yumuyorlardı.",
+    "C": "Evden ayrılmadan önce her odaya alıcı gözüyle baktılar.",
+    "D": "Kitabın arasında bulduğu nota göz ucuyla bakıp, kâğıdı çöpe atmıştı.",
+    "E": "Bu yaptıklarını göz ardı edemem dedi."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 79,
+   "grup": "B",
+   "kok": "Seninle sonunda aynı görüş birliğine I II III varmayı başardık. IV V Yukarıdaki cümlede anlatım bozukluğunu gidermek için numaralanmış sözcüklerden hangisinin cümleden çıkarılması gerekmektedir?",
+   "siklar": {
+    "A": "I",
+    "B": "II",
+    "C": "III",
+    "D": "IV",
+    "E": "V"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 80,
+   "grup": "B",
+   "kok": "Aşağıdaki cümlelerin hangisinde “ateşlemek” sözcüğü “birini heyecanlı ve coşkulu duruma getirmek” anlamında kullanılmıştır?",
+   "siklar": {
+    "A": "Isınmak için odunları dizip sobayı ateşledik.",
+    "B": "Sen bu işin altından kalkamazsın demeleri beni ateşledi, inat ettim ve başardım.",
+    "C": "Taraftarın sevgisi, tribünlerden gelen tezahüratlar takımı iyice ateşledi.",
+    "D": "Havai fişekleri güvenli bir uzaklıktan ateşlemişti.",
+    "E": "Keskin nişancı silahını hedefe doğru ateşledi."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 81,
+   "grup": "B",
+   "kok": "(I) Yazar, “Birinci Dünya Savaşı’nın Kökenleri Üzerine Osmanlı Diplomatik Belgeleri” adlı kitabı ile Osmanlı diplomasi tarihi çalışmalarına önemli bir katkı sunmaktadır. (II) Kitap, 1836 adet belgeden oluşmaktadır. (III) Yer ve kişi adlarına, orijinal belgelerde bulunan haliyle yer verilmiştir. (IV) Çalışmanın giriş, notlar ve indeksler kısmı İngilizce olmakla birlikte belgelerin dili Osmanlı Devleti’nin diplomatik servis dili olan Fransızcadır. (V) Yazarın bazı kayıp belgelere ulaşamaması ise ne yazık ki anlatımda boşluklara neden olmuştur. Yukarıdaki parçada numaralandırılmış cümlelerin hangilerinde kişisel düşüncelere yer verilmiştir?",
+   "siklar": {
+    "A": "I ve II",
+    "B": "I ve V",
+    "C": "II ve III",
+    "D": "I, III ve IV",
+    "E": "II, IV ve V"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 82,
+   "grup": "B",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki ifadelerden hangisi kesinlikle yanlıştır?",
+   "siklar": {
+    "A": "Can, ikinci turu geçmiştir.",
+    "B": "Özgür, Ece’yi elemiştir.",
+    "C": "Lena ikinci maçını Ece ile oynamıştır.",
+    "D": "Baran ilk maçında yenilmiştir.",
+    "E": "Uraz, ilk maçını Can ile oynamıştır."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 83,
+   "grup": "B",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi turnuvanın herhangi bir turunda karşılıklı maç yapmış olamaz?",
+   "siklar": {
+    "A": "Alin ve Uraz",
+    "B": "Ece ve Alin",
+    "C": "Can ve Lena",
+    "D": "Özgür ve Alin",
+    "E": "Ece ve Baran"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 84,
+   "grup": "B",
+   "ortakMetin": "Bir okulda düzenlenen tenis turnuvasına 12 yaş kategorisinde toplam 8 oyuncu katılmıştır. Oyuncular çekilen kura ile aralarında eşleşmişlerdir. Turnuva ve oyuncular ile ilgili olarak bilinenler şunlardır: - Turnuvaya katılan kız oyuncular şunlardır: Alin, Duru, Ece ve Lena. - Turnuvaya katılan erkek oyuncular şunlardır: Baran, Can, Özgür ve Uraz. - Tüm turlar tek maçlık eleme usulü ile oynanmıştır. - Turnuvada kız ve erkek öğrenciler karışık şekilde oynamıştır. - Özgür, ilk turda Baran ile karşılaşmıştır. - Duru, Ece ile oynadığı maçta yenilmiştir. - Alin, ikinci maçını Can ile oynamıştır. - Final maçında 1 kız 1 erkek öğrenci karşı karşıya gelmiştir.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki oyunculardan hangisi final maçında kesinlikle oynamamıştır?",
+   "siklar": {
+    "A": "Alin",
+    "B": "Ece",
+    "C": "Can",
+    "D": "Uraz",
+    "E": "Özgür"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 85,
+   "grup": "B",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "bilgilere göre, söz konusu kişinin ilk gittiği poliklinik aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Göz Hastalıkları",
+    "B": "Nöroloji",
+    "C": "KBB Hastalıkları",
+    "D": "Psikiyatri",
+    "E": "Dâhiliye"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": true
+  },
+  {
+   "no": 86,
+   "grup": "B",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "Yukarıdaki bilgilere göre, söz konusu kişinin en son gittiği poliklinik aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Nöroloji",
+    "B": "Göz Hastalıkları",
+    "C": "KBB Hastalıkları",
+    "D": "Psikiyatri",
+    "E": "Dâhiliye Yukarıdaki"
+   },
+   "gorselli": false,
+   "dogru": "E",
+   "iptal": true
+  },
+  {
+   "no": 87,
+   "grup": "B",
+   "ortakMetin": "Silah ruhsatı başvurusunda kullanılmak üzere, tam teşekküllü devlet hastanesinden sağlık raporu almak için başvuran bir kişiden, 5 farklı poliklinikte muayene olması istenmiştir. Muayene süreci ile ilgili bilinenler şunlardır: - Rapor için muayene olunması gereken poliklinikler şunlardır: Dâhiliye, Nöroloji, Psikiyatri, Göz Hastalıkları, KBB Hastalıkları. - Psikiyatri polikliniğine KBB’den sonra, Dâhiliye polikliniğinden önce gitmiştir. - KBB’den önce Göz Hastalıkları polikliniğine gitmiştir. - Poliklinikler q, x, y ve z tahlillerinden toplam 6 adet tahlil istemişlerdir. - Birinci ve üçüncü sırada gittiği poliklinikler birebir aynı tahlilleri istemiştir. - İkinci poliklinik herhangi bir tahlil istememiştir. - Dâhiliye polikliniği toplam 3 tahlil istemiştir. Yukarıdaki",
+   "kok": "bilgilere göre aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "siklar": {
+    "A": "Psikiyatri polikliniği 1 adet tahlil istemiştir.",
+    "B": "KBB Hastalıkları polikliniği x ve y tahlillerini istemiştir.",
+    "C": "Göz Hastalıkları polikliniği 1 adet tahlil istemiştir.",
+    "D": "Nöroloji polikliniği q ve z tahlillerini istemiştir.",
+    "E": "KBB Hastalıkları polikliniği 2 adet tahlil istemiştir."
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": true
+  },
+  {
+   "no": 88,
+   "grup": "B",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Yukarıdaki bilgilere göre, kurumun beşinci sırada mülakat yapacağı kişi aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Betül",
+    "B": "Cemil",
+    "C": "Ahmet",
+    "D": "Derya",
+    "E": "Emine"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 89,
+   "grup": "B",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Yukarıdaki bilgilere göre, aşağıdaki ifadelerden hangisi kesinlikle doğrudur?",
+   "siklar": {
+    "A": "Son mülakat Füsun ile yapılacaktır.",
+    "B": "Emine’nin mülakatı telefon mülakatı şeklinde yapılacaktır.",
+    "C": "Emine’nin mülakatı Cemil’den sonra yapılacaktır.",
+    "D": "Derya’nın mülakatı Gökhan’dan sonra yapılacaktır.",
+    "E": "Cemil’in mülakatı telefon mülakatı şeklinde yapılacaktır."
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 90,
+   "grup": "B",
+   "ortakMetin": "Bir kuruma iş başvurusunda bulunan Ahmet, Betül, Cemil, Derya, Emine, Füsun ve Gökhan işe alım mülakatlarına girmeye hak kazanmışlardır. Kurum adaylarla mülakatları birebir (yüz yüze) mülakat ya da telefon mülakatı olmak üzere iki farklı şekilde gerçekleştirmektedir. Adayların mülakat süreçleri ile ilgili olarak bilinenler şunlardır: - İlk üç mülakat birebir mülakat şeklinde; Betül, Derya ve Gökhan ile yapılacaktır. - Emine ve Füsun’un mülakatları art ardadır. - Ahmet’in mülakatı, telefon mülakatı şeklinde ve Cemil’den hemen önce Betül’den hemen sonra yapılacaktır. - Telefon mülakatı yapılan toplam 2 aday bulunmaktadır.",
+   "kok": "Kurum, mülakat yapılacak diğer adayları aynı sıra ile çağırmak kaydı ile sadece telefon mülakatlarını en başa aldığında yeni oluşan mülakat listesinde aşağıdakilerden hangisinin mülakat sırası kesin olarak bilinir?",
+   "siklar": {
+    "A": "Betül",
+    "B": "Gökhan",
+    "C": "Cemil",
+    "D": "Derya",
+    "E": "Füsun"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 91,
+   "grup": "B",
+   "kok": "Her birinden 8’er tane olmak üzere 10, 20, 50, 100 ve 200 TL’lik toplam 40 tane banknot 18 kişiye her birine en az bir banknot olacak şekilde dağıtılacaktır. Bir kişiye en çok kaç TL tutarında banknot verilebilir?",
+   "siklar": {
+    "A": "2.600",
+    "B": "2.650",
+    "C": "2.700",
+    "D": "2.750",
+    "E": "2.800"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 92,
+   "grup": "B",
+   "kok": "Elektronik eşya satılan bir mağazada belli sayıda buzdolabı ve televizyon vardır. Bu ürünlerin sırasıyla %30’u ve %60’ı satılmıştır. Her bir üründen eşit sayıda satılmıştır. Mağazada başlangıçta bu iki üründen toplam 30 tane vardır. Buna göre, son durumda mağazada kalan buzdolabı ve televizyon sayısı kaçtır?",
+   "siklar": {
+    "A": "18",
+    "B": "16",
+    "C": "15",
+    "D": "14",
+    "E": "12"
+   },
+   "gorselli": false,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 93,
+   "grup": "B",
+   "kok": "Bir markette nohutun satış fiyatı üzerinden %40 zam yapılarak satılıyor. Ozan, son durumda zamsız fiyattan alabileceği nohut miktarından 10 kilo daha az nohut alabiliyor. Buna göre, Ozan elindeki parayla başlangıçta kaç kilo nohut alabilir?",
+   "siklar": {
+    "A": "30",
+    "B": "32",
+    "C": "35",
+    "D": "36",
+    "E": "37"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 94,
+   "grup": "B",
+   "kok": "Dört yanlış cevabın bir doğru cevabı götürdüğü 40 soruluk bir sınavda Kerem 25 soruyu doğru cevaplamıştır. Kerem’in başarı oranı %60 olduğuna göre, kaç soruyu boş bırakmıştır?",
+   "siklar": {
+    "A": "8",
+    "B": "9",
+    "C": "10",
+    "D": "11",
+    "E": "12"
+   },
+   "gorselli": false,
+   "dogru": "D",
+   "iptal": false
+  },
+  {
+   "no": 95,
+   "grup": "B",
+   "kok": "Saatte 80 km hızla bir araç A şehrinden B şehrine, saatte 120 km hızla başka bir araç B şehrinden A şehrine aynı anda birbirlerine doğru yola çıkıyorlar. İki şehir arası uzaklık 1.000 km’dir. Bu iki aracın iki şehir arasında ilk karşılaşmalarından sonra yavaş giden araç hızını %25 artırdığında B şehrine kaç saat sonra ulaşır?",
+   "siklar": {
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "7",
+    "E": "8"
+   },
+   "gorselli": false,
+   "dogru": "C",
+   "iptal": false
+  },
+  {
+   "no": 96,
+   "grup": "B",
+   "kok": "Her saatte 15 dakika düzenli olarak geri kalan bir saat 08:00’da doğru zamana ayarlanmıştır. Ayarlamanın yapıldığı gün doğru zamanın 22:00 olduğu anda, ayarlanan bu saat, saat kaçı gösterir?",
+   "siklar": {
+    "A": "18:15",
+    "B": "18:30",
+    "C": "19:10",
+    "D": "19:25",
+    "E": "19:45"
+   },
+   "gorselli": false,
+   "dogru": "B",
+   "iptal": false
+  },
+  {
+   "no": 97,
+   "grup": "B",
+   "kok": "32673  61658  47384  54521  Yukarıdaki sayıların rakamlarının her biri, birer sembolle eşleşmiştir. Bu sayılara karşılık gelen sembol grupları karışık olarak verilmiştir. ,  sembol gruplarına karşılık gelen dört basamaklı bu iki sayının farkı kaçtır?",
+   "siklar": {
+    "A": "7144",
+    "B": "7133",
+    "C": "6895",
+    "D": "6775",
+    "E": "6544"
+   },
+   "gorselli": true,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 98,
+   "grup": "B",
+   "kok": "Yukarıdaki şekilde K, L, M, N, P, R ve S sayıları doğal sayılardır. Oklar üzerindeki işlemler sırasıyla ok yönünde yapılmaktadır. N sayısı 26 olduğuna göre, K+S toplamı kaçtır?",
+   "siklar": {
+    "A": "47",
+    "B": "50",
+    "C": "52",
+    "D": "58",
+    "E": "62"
+   },
+   "gorselli": true,
+   "dogru": "A",
+   "iptal": false
+  },
+  {
+   "no": 99,
+   "grup": "B",
+   "kok": "Yukarıdaki dairesel grafikte bir çiftçinin meyve bahçesinden topladığı meyve miktarının meyvelere göre dağılımı verilmiştir. Tabloda ise bu meyvelerin bir kilogramlarının satış fiyatları vardır. Meyve Fiyat(TL) Elma 90 Kayısı 100 Kiraz 150 Bu çiftçi bahçesinden bu üç meyveden toplam 80 kilo topladığına göre, meyvelerin tamamının satışından kaç TL elde eder?",
+   "siklar": {
+    "A": "8.600",
+    "B": "8.790",
+    "C": "9.200",
+    "D": "9.350",
+    "E": "9.400"
+   },
+   "gorselli": true,
+   "dogru": "E",
+   "iptal": false
+  },
+  {
+   "no": 100,
+   "grup": "B",
+   "kok": "Özdeş kareler kullanılarak belirli bir kurala göre yukarıdaki şekil dizisi oluşturulmuştur. Her şeklin altında o şekilde yer alan toplam kare sayısı yazmaktadır. Buna göre, içinde 18 tane boyalı kare olan şekillerin altındaki sayıların toplamı kaçtır?",
+   "siklar": {
+    "A": "62",
+    "B": "65",
+    "C": "69",
+    "D": "71",
+    "E": "75"
+   },
+   "gorselli": true,
+   "dogru": "D",
+   "iptal": false
+  }
+ ]
+}
