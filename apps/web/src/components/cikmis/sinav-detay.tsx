@@ -64,6 +64,7 @@ export function SinavDetay({ sinav }: { sinav: CikmisSinavDetay }) {
             sorular={sinav.sorular}
             kapaliSoru={sinav.kapaliSoru}
             examId={sinav.examId}
+            slug={sinav.slug}
           />
         )}
 

@@ -32,6 +32,7 @@ export async function middleware(request: NextRequest) {
   const protectedPrefixes = [
     "/bugun",
     "/calisma", // kanun/SEO sayfalarının girişli app-kabuğu sürümleri (rewrite hedefi)
+    "/cikmis-sinav", // çıkmış sınav çalışma modu (Doc 36) — public vitrin /paem-cikmis-sorular
     "/kutuphane",
     "/performans",
     "/profil",

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import type { CikmisSinavSoru } from "@/lib/public-api";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -25,11 +25,20 @@ export function SinavQuiz({
   sorular,
   kapaliSoru,
   examId,
+  slug,
+  baslik,
+  sonKart,
 }: {
   sorular: CikmisSinavSoru[];
   /** Uygulamada çözülebilen, burada gösterilmeyen soru sayısı. */
   kapaliSoru: number;
   examId: string | null;
+  /** Girişli kullanıcıyı çalışma moduna götürmek için dönem slug'ı. */
+  slug?: string;
+  baslik?: string;
+  /** Listenin sonundaki kart. Verilmezse public sayfanın çağrı-eylemi çıkar;
+   *  çalışma modunda kayıt daveti anlamsız olduğu için oradan geçilir. */
+  sonKart?: ReactNode;
 }) {
   const girisli = useLoggedIn();
   const [secimler, setSecimler] = useState<Record<number, string>>({});
@@ -43,7 +52,7 @@ export function SinavQuiz({
     <section className="space-y-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="font-heading text-[19px] font-bold text-ink">
-          Sınavdan {sorular.length} soru — çöz, hemen gör
+          {baslik ?? `Sınavdan ${sorular.length} soru — çöz, hemen gör`}
         </h2>
         <p className="tabular-nums text-[13px] text-ink-soft" aria-live="polite">
           {cevaplanan}/{sorular.length} cevaplandı
@@ -69,6 +78,7 @@ export function SinavQuiz({
         ))}
       </ol>
 
+      {sonKart ?? (
       <Card className="border-brand/30 bg-brand/5">
         <h3 className="font-heading text-[17px] font-bold text-ink">
           {bitti
@@ -85,9 +95,16 @@ export function SinavQuiz({
             zaten yaptı. Tek kapı bırakılır: sınavın tamamı. */}
         <div className="mt-3 flex flex-wrap gap-2">
           {girisli && examId ? (
-            <ButtonLink href={`/sinav/arsiv/${examId}`} size="lg">
-              Sınavın tamamını çöz
-            </ButtonLink>
+            <>
+              <ButtonLink href={`/sinav/arsiv/${examId}`} size="lg">
+                Sınav gibi çöz
+              </ButtonLink>
+              {slug && (
+                <ButtonLink href={`/cikmis-sinav/${slug}`} size="lg" variant="secondary">
+                  Tüm soruları çalış
+                </ButtonLink>
+              )}
+            </>
           ) : (
             <ButtonLink href="/kayit" size="lg">
               {examId ? "Ücretsiz başla ve tamamını çöz" : "Ücretsiz başla"}
@@ -95,6 +112,7 @@ export function SinavQuiz({
           )}
         </div>
       </Card>
+      )}
     </section>
   );
 }

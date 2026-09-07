@@ -64,7 +64,19 @@ export class CikmisSinavService {
     return sinavlar.map((s) => this.ozetle(s));
   }
 
-  async detail(slug: string) {
+  /**
+   * Girişli kullanıcı için TAM dönem: bütün sorular, cevaplarıyla ve
+   * açıklamalarıyla (çalışma modu, Doc 36 §4).
+   *
+   * Public sayfadaki 10 soruluk sınır bir pazarlama kararı; hesabı olan
+   * kullanıcıya aynı sınırı uygulamak, ona zaten verdiğimiz şeyi saklamak
+   * olurdu. Yayına alınmamış sürüm burada da GÖSTERİLMEZ.
+   */
+  async detailFull(slug: string) {
+    return this.detail(slug, { hepsi: true });
+  }
+
+  async detail(slug: string, secenek?: { hepsi?: boolean }) {
     const s = await this.prisma.pastExam.findFirst({
       where: { slug, status: 'published', deletedAt: null },
       include: {
@@ -94,7 +106,7 @@ export class CikmisSinavService {
 
     const acik: CikmisSinavSoru[] = [];
     for (const q of s.questions) {
-      if (!q.publicly) continue;
+      if (!secenek?.hepsi && !q.publicly) continue;
       const v = q.question.currentVersion;
       // Sürümü yayına alınmamış soru public sayfaya ÇIKMAZ: onay kuyruğundaki
       // metni sızdırmak, gözden geçirilmemiş içeriği yayımlamak olur.

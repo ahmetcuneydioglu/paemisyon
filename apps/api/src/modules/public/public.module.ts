@@ -8,6 +8,6 @@ import { PublicService } from './public.service';
 @Module({
   controllers: [PublicController],
   providers: [PublicService, MevzuatService, CikmisSinavService],
-  exports: [MevzuatService],
+  exports: [MevzuatService, CikmisSinavService],
 })
 export class PublicModule {}
