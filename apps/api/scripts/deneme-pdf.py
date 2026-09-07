@@ -155,9 +155,17 @@ def cerceve(c, ad, kitapcik, sayfa_no, sutun_cizgisi=True):
     c.setStrokeColor(DS.CIZGI_ACIK)
     c.setLineWidth(0.6)
     c.line(DS.SOL, DS.ALT + 1 * mm, DS.SAYFA_G - DS.SAG, DS.ALT + 1 * mm)
-    c.setFont("Ar", DS.DIPNOT_PT)
-    c.setFillColor(DS.IKINCIL)
+    # Marka izi: adı lacivert ve yarı kalın ki göz seçsin, kanallar gri ve
+    # küçük ki sınav deneyimini bölmesin. Tek satır, her sayfada aynı yerde.
+    c.setFont("ArB", DS.DIPNOT_PT)
+    c.setFillColor(DS.LACIVERT)
     c.drawString(DS.SOL, DS.ALT - 3 * mm, SITE)
+    genislik = c.stringWidth(SITE, "ArB", DS.DIPNOT_PT)
+    c.setFont("Ar", DS.DIPNOT_PT - 0.5)
+    c.setFillColor(DS.IKINCIL)
+    c.drawString(DS.SOL + genislik + 2.5 * mm, DS.ALT - 3 * mm,
+                 "· web · iOS · Android")
+    c.setFont("Ar", DS.DIPNOT_PT)
     c.drawRightString(DS.SAYFA_G - DS.SAG, DS.ALT - 3 * mm, str(sayfa_no))
 
 
@@ -165,10 +173,11 @@ def cerceve(c, ad, kitapcik, sayfa_no, sutun_cizgisi=True):
 ACIKLAMALAR = [
     "Bu kitapçıkta <b>{soru} soru</b> vardır. Sınav süresi <b>{sure} dakikadır</b>.",
     "Her sorunun beş seçeneği vardır; yalnızca <b>bir</b> seçenek doğrudur.",
-    "Değerlendirmede <b>dört yanlış bir doğruyu götürür</b>. Net = Doğru − (Yanlış / 4).",
+    "Yanlış cevaplar doğru cevapları <b>etkilemez</b>; puanınız doğru cevap "
+    "sayınızdır. Emin olmadığınız soruları boş bırakmak zorunda değilsiniz.",
     "Cevaplarınızı ayrı bir kâğıda soru numarasıyla eşleştirerek işaretleyiniz.",
     "Sınav süresince kaynak, hesap makinesi ve iletişim aracı kullanmayınız. Deneme, "
-    "ancak gerçek sınav koşullarında çözüldüğünde netiniz hakkında bilgi verir.",
+    "ancak gerçek sınav koşullarında çözüldüğünde puanınız hakkında bilgi verir.",
     "Süre bitiminde cevaplarınızı kitapçık sonundaki <b>cevap anahtarı</b> ile "
     "karşılaştırınız.",
 ]
@@ -223,7 +232,8 @@ def kapak(c, d, kitapcik):
     for i, (etiket, deger) in enumerate(
         [("SORU SAYISI", str(d["questionCount"])),
          ("SÜRE", f"{d['durationMinutes']} dakika"),
-         ("PUANLAMA", "4 yanlış = 1 doğru")]
+         # PAEM'de yanlış doğruyu GÖTÜRMEZ (7 Eylül 2026 düzeltmesi).
+         ("PUANLAMA", "Her doğru 1 puan")]
     ):
         x = DS.SOL + i * kolon + 6 * mm
         c.setFillColor(DS.IKINCIL)
@@ -302,17 +312,29 @@ def kapak(c, d, kitapcik):
 
     # Alt marka bandı — sınav alanına karışmaz; rozet/QR arka kapakta.
     # Izgaraya uyar: alt kenar boşluğunun (17 mm) ÜSTÜNDE kalır.
+    bant_ust = DS.ALT + 22 * mm
     c.setStrokeColor(DS.CIZGI)
     c.setLineWidth(0.7)
-    c.line(DS.SOL, DS.ALT + 14 * mm, g - DS.SAG, DS.ALT + 14 * mm)
+    c.line(DS.SOL, bant_ust, g - DS.SAG, bant_ust)
     c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 8.2)
-    c.drawString(DS.SOL, DS.ALT + 8 * mm,
-                 "Bu deneme Paemisyon soru bankasından hazırlanmıştır. Çözümler, konu bazlı")
-    c.drawString(DS.SOL, DS.ALT + 3.5 * mm, "analiz ve sıralama için")
+    c.drawString(DS.SOL, bant_ust - 6 * mm,
+                 "Bu deneme Paemisyon soru bankasından hazırlanmıştır.")
+    c.drawString(DS.SOL, bant_ust - 10.5 * mm, "Çözümler, konu bazlı analiz ve sıralama için")
     c.setFillColor(DS.LACIVERT)
     c.setFont("ArB", 9)
-    c.drawString(DS.SOL + 37.5 * mm, DS.ALT + 3.5 * mm, SITE)
+    c.drawString(DS.SOL + 63 * mm, bant_ust - 10.5 * mm, SITE)
+    c.setFillColor(DS.IKINCIL)
+    c.setFont("Ar", 7.6)
+    c.drawString(DS.SOL, bant_ust - 16 * mm, "Web · iOS · Android — tek hesap, her cihazda")
+    # Rozetler ve QR sağda: sınav alanına girmez, kapağın dibinde kalır.
+    for i, (dosya, gen) in enumerate([("appStore.png", 23 * mm), ("playStore.png", 26 * mm)]):
+        yol = os.path.join(GORSEL, dosya)
+        if os.path.exists(yol):
+            c.drawImage(yol, g - DS.SAG - 26 * mm - 58 * mm + i * 29 * mm, bant_ust - 15 * mm,
+                        width=gen, height=gen * 34 / (96 if i == 0 else 114), mask="auto")
+    kod = qr_uret(f"https://{SITE}/denemeler", "/tmp/_qr_kapak.png")
+    c.drawImage(kod, g - DS.SAG - 21 * mm, bant_ust - 19 * mm, width=21 * mm, height=21 * mm)
     c.showPage()
 
 
@@ -363,7 +385,7 @@ def cevap_anahtari(c, d, kitapcik, sayfa_no):
     c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 8.6)
     c.drawString(DS.SOL, y - 6.5 * mm,
-                 "Cevaplarınızı karşılaştırın; netinizi ve ders bazlı dökümünüzü "
+                 "Cevaplarınızı karşılaştırın; puanınızı ve ders bazlı dökümünüzü "
                  "bir sonraki sayfadaki tablolarla çıkarın.")
 
     qs = d["questions"]
@@ -408,16 +430,16 @@ def analiz_sayfasi(c, d, kitapcik, sayfa_no):
     y = DS.SAYFA_Y - DS.UST - 6 * mm
     c.setFillColor(DS.LACIVERT)
     c.setFont("ArB", 14)
-    c.drawString(DS.SOL, y, "NETİNİZİ HESAPLAYIN")
+    c.drawString(DS.SOL, y, "PUANINIZI HESAPLAYIN")
     c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 8.6)
     c.drawString(DS.SOL, y - 6.5 * mm,
-                 "Önce toplam netinizi, sonra hangi dersten kaç net yaptığınızı yazın.")
+                 "Önce toplam doğrunuzu, sonra hangi dersten kaç doğru yaptığınızı yazın.")
 
     ny = y - 18 * mm
     x = DS.SOL
     for etiket, gen in [("DOĞRU", 34 * mm), ("YANLIŞ", 34 * mm),
-                        ("BOŞ", 34 * mm), ("NET", 42 * mm)]:
+                        ("BOŞ", 34 * mm), ("PUAN", 42 * mm)]:
         c.setFillColor(white)
         c.setStrokeColor(DS.CIZGI)
         c.setLineWidth(0.8)
@@ -428,7 +450,8 @@ def analiz_sayfasi(c, d, kitapcik, sayfa_no):
         x += gen + 5 * mm
     c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 9)
-    c.drawString(DS.SOL, ny - 22 * mm, "Net = Doğru − (Yanlış / 4)")
+    c.drawString(DS.SOL, ny - 22 * mm,
+                 "Puanınız doğru cevap sayınızdır — yanlışlar doğruları götürmez.")
 
     # Ders bazlı döküm — doldurulabilir hücreler
     dy = ny - 38 * mm
@@ -438,13 +461,13 @@ def analiz_sayfasi(c, d, kitapcik, sayfa_no):
     c.setFillColor(DS.IKINCIL)
     c.setFont("Ar", 8.6)
     c.drawString(DS.SOL, dy - 6.5 * mm,
-                 "En çok neti nerede kaybettiyseniz çalışmaya oradan başlayın.")
+                 "En çok yanlışı hangi derste yaptıysanız çalışmaya oradan başlayın.")
     dy -= 16 * mm
 
     genislik = g - DS.SOL - DS.SAG
     kolonlar = [("DERS", DS.SOL + 4 * mm), ("SORU", DS.SOL + 96 * mm),
                 ("DOĞRU", DS.SOL + 118 * mm), ("YANLIŞ", DS.SOL + 143 * mm),
-                ("NET", DS.SOL + 168 * mm)]
+                ("BOŞ", DS.SOL + 168 * mm)]
     ayrac_x = [DS.SOL + 92 * mm, DS.SOL + 114 * mm, DS.SOL + 139 * mm, DS.SOL + 164 * mm]
 
     c.setFillColor(DS.ZEMIN)
@@ -501,7 +524,7 @@ def analiz_sayfasi(c, d, kitapcik, sayfa_no):
 # ── Arka kapak ───────────────────────────────────────────────────────────
 OZELLIKLER = [
     ("Soru bazlı çözüm", "Her yanlışın altında editör açıklaması ve dayandığı kanun maddesi."),
-    ("Konu bazlı kayıp analizi", "Netinizi nerede kaybettiğinizi konu konu görürsünüz."),
+    ("Konu bazlı kayıp analizi", "Puanınızı nerede kaybettiğinizi konu konu görürsünüz."),
     ("Canlı deneme ve sıralama", "Randevulu denemelerde aynı anda yarışın, sıranızı görün."),
     ("Yanlış tekrar kuyruğu", "Yanlışlarınız birikir; unutmadan doğru zamanda önünüze gelir."),
     ("Çıkmış sorular", "Gerçek sınavlardan derlenmiş, kaynağı kayıtlı soru bankası."),
@@ -532,13 +555,13 @@ def arka_kapak(c):
     c.setFont("ArB", 20)
     c.drawString(DS.SOL, y - 48 * mm, "Denemeyi çözdünüz.")
     c.setFillColor(DS.METIN)
-    c.drawString(DS.SOL, y - 59 * mm, "Şimdi netinizi yükseltin.")
+    c.drawString(DS.SOL, y - 59 * mm, "Şimdi puanınızı yükseltin.")
 
     st = ParagraphStyle("t", fontName="Ar", fontSize=10, leading=14.5,
                         textColor=DS.IKINCIL, alignment=0)
     p = Paragraph(
         "Bu kitapçıktaki soruların tamamı Paemisyon soru bankasından derlenmiştir. "
-        "Aynı denemeyi çevrim içi çözerseniz netiniz anında hesaplanır, her yanlışın "
+        "Aynı denemeyi çevrim içi çözerseniz puanınız anında hesaplanır, her yanlışın "
         "çözümüne ulaşır ve konu bazlı kaybınızı takip edersiniz.", st)
     _, h = p.wrap(g - DS.SOL - DS.SAG - 46 * mm, 10_000)
     p.drawOn(c, DS.SOL, y - 66 * mm - h)
