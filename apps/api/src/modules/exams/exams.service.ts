@@ -37,13 +37,25 @@ export class ExamsService {
   }
 
   // ── Liste (public; kullanıcı varsa kendi katılımıyla zenginleşir) ──
-  async list(user?: AuthenticatedUser) {
+  /**
+   * Yayındaki denemeler.
+   *
+   * `cikmisSinavlarDahil`: liste ekranında çıkmış sınavlar GÖRÜNMEZ (kendi
+   * vitrinleri var, randevulu denemeyle karışmasınlar). Ama `detail()` bu
+   * listeden okuduğu için, tekil sorguda onları dışarıda bırakmak sınav
+   * sayfasını 404 yapıyordu — filtre yalnız listeye aittir.
+   */
+  async list(user?: AuthenticatedUser, cikmisSinavlarDahil = false) {
     const exams = await this.prisma.exam.findMany({
       // Çıkmış sınavların (Doc 36) arkasındaki Exam kayıtları burada
       // LİSTELENMEZ: onların vitrini /paem-cikmis-sorular. Deneme listesi
       // randevulu denemelerin yeri; ikisi karışırsa aday hangisinin canlı
       // olduğunu ayırt edemez.
-      where: { status: 'published', deletedAt: null, pastExam: null },
+      where: {
+        status: 'published',
+        deletedAt: null,
+        ...(cikmisSinavlarDahil ? {} : { pastExam: null }),
+      },
       orderBy: [{ startAt: 'desc' }],
       take: 50,
       include: { _count: { select: { questions: true } } },
@@ -129,7 +141,8 @@ export class ExamsService {
   }
 
   async detail(examId: string, user?: AuthenticatedUser) {
-    const list = await this.list(user);
+    // Çıkmış sınavlar listede gizli ama tekil olarak açılabilir olmalı.
+    const list = await this.list(user, true);
     const found = list.find((e) => e.id === examId);
     if (!found) throw new NotFoundException('Deneme bulunamadı.');
     return found;
