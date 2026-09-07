@@ -9,6 +9,7 @@ import '../../../core/theme/app_typography.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../data/calisma_kaydi.dart';
 import '../data/cikmis_sinav_repository.dart';
 import '../domain/cikmis_sinav_models.dart';
 
@@ -52,13 +53,17 @@ class CikmisSinavScreen extends ConsumerWidget {
   }
 }
 
-class _Govde extends StatelessWidget {
+class _Govde extends ConsumerWidget {
   final CikmisSinavDetay detay;
   const _Govde({required this.detay});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final tokens = context.tokens;
+    // Çalışma modu ilerlemesi cihazda saklanıyor; kartta göstermezsek aday
+    // kaldığı yerden devam edebileceğini bilmez.
+    final calisilan =
+        ref.watch(calismaIlerlemeProvider(detay.ozet.slug)).valueOrNull ?? 0;
     final o = detay.ozet;
     final resmi = o.tur == CikmisSinavTuru.resmi;
     final toplam = o.dersDagilimi.fold<int>(0, (t, d) => t + d.adet);
@@ -83,29 +88,63 @@ class _Govde extends StatelessWidget {
         ],
 
         // ── Modlar ──
+        //
+        // Sıra kullanıcının durumuna göre: yarım sınav varsa devam etmek,
+        // bitirdiyse sonucunu görmek öne çıkar. Eskiden ekran durumu hiç
+        // bilmiyordu ve sınavı bitirmiş biri "Sınav gibi çöz"e dokununca
+        // SESSİZCE sıfırdan yeni sınav başlıyordu (7 Eyl 2026 bildirimi).
+        // Tekrar çözmek meşru bir ihtiyaç ama bilerek seçilmeli.
         if (resmi && detay.sorular.isNotEmpty) ...[
           const SizedBox(height: AppSpacing.xl),
-          if (o.examId != null)
-            _ModKarti(
-              ikon: Icons.timer_outlined,
-              baslik: 'Sınav gibi çöz',
-              aciklama:
-                  'Aynı sorular, süre tutarak. Netini görürsün; yanlışların '
-                  'çalışma defterine düşer. Sıralamaya girmez.',
-              vurgulu: true,
-              onTap: () => context.push('/quiz', extra: {
-                'archiveExamId': o.examId,
-                'topicName': o.ad,
-                'mode': 'exam',
-              }),
-            ),
+          if (o.examId != null) ...[
+            if (detay.devamEden != null)
+              _ModKarti(
+                ikon: Icons.play_circle_outline_rounded,
+                baslik: 'Kaldığın yerden devam et',
+                aciklama: _devamMetni(detay.devamEden!),
+                vurgulu: true,
+                onTap: () => _sinavaGir(context, o),
+              )
+            else if (detay.benimSonucum != null) ...[
+              _ModKarti(
+                ikon: Icons.assessment_outlined,
+                baslik: 'Sonucunu gör',
+                aciklama: _sonucMetni(detay.benimSonucum!),
+                vurgulu: true,
+                onTap: () => context
+                    .push('/denemeler/sonuc/${detay.benimSonucum!.attemptId}'),
+              ),
+              _ModKarti(
+                ikon: Icons.replay_rounded,
+                baslik: 'Tekrar çöz',
+                aciklama:
+                    'Aynı sorular, süre tutarak baştan. Önceki sonucun '
+                    'silinmez; en iyisi burada görünür.',
+                onTap: () => _sinavaGir(context, o),
+              ),
+            ] else
+              _ModKarti(
+                ikon: Icons.timer_outlined,
+                baslik: 'Sınav gibi çöz',
+                aciklama:
+                    'Aynı sorular, süre tutarak. Netini görürsün; yanlışların '
+                    'çalışma defterine düşer. Sıralamaya girmez.',
+                vurgulu: true,
+                onTap: () => _sinavaGir(context, o),
+              ),
+          ],
           _ModKarti(
             ikon: Icons.menu_book_outlined,
-            baslik: 'Çalışma modu',
-            aciklama:
-                'Soru soru, süre yok. Cevabı işaretle, doğrusunu ve neden '
-                'doğru olduğunu hemen gör.',
-            onTap: () => context.push('/denemeler/cikmis/${o.slug}/calis'),
+            baslik: calisilan > 0 ? 'Çalışmaya devam et' : 'Çalışma modu',
+            aciklama: calisilan > 0
+                ? '$calisilan/${detay.sorular.length} soru işaretlenmiş. '
+                    'Kaldığın yerden devam edersin; süre yok.'
+                : 'Soru soru, süre yok. Cevabı işaretle, doğrusunu ve neden '
+                    'doğru olduğunu hemen gör.',
+            onTap: () async {
+              await context.push('/denemeler/cikmis/${o.slug}/calis');
+              ref.invalidate(calismaIlerlemeProvider(o.slug));
+            },
           ),
         ],
 
@@ -145,6 +184,28 @@ class _Govde extends StatelessWidget {
         ],
       ],
     );
+  }
+
+  void _sinavaGir(BuildContext context, CikmisSinavOzet o) => context.push(
+        '/quiz',
+        extra: {'archiveExamId': o.examId, 'topicName': o.ad, 'mode': 'exam'},
+      );
+
+  static String _devamMetni(CikmisDevamEden d) {
+    final kalan = d.kalanSaniye;
+    final sure = kalan == null
+        ? ''
+        : kalan <= 0
+            ? ' · süre doldu'
+            : ' · ${(kalan / 60).ceil()} dk kaldı';
+    return '${d.cevaplanan}/${d.toplamSoru} soru cevaplandı$sure. '
+        'Süre ilk başlangıçtan işliyor.';
+  }
+
+  static String _sonucMetni(CikmisSonucum r) {
+    final net = r.score != null ? ' · Net ${r.score!.toStringAsFixed(2)}' : '';
+    return 'Bu sınavı çözdün: ${r.correctCount} doğru, ${r.wrongCount} yanlış, '
+        '${r.blankCount} boş$net. Soru soru incele.';
   }
 
   static const _aylar = [

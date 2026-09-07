@@ -43,10 +43,38 @@ export default async function CikmisSinavCalismaPage({
           Sınavın tamamı — {sinav.sorular.length} soru, cevaplarıyla ve
           dayanaklarıyla. Süre tutarak çözmek istersen sınav modunu seç.
         </p>
+        {/* Durumuna göre: yarım sınav varsa devam, bitirdiyse önce sonucu.
+            Ekran durumu bilmeden "Sınav gibi çöz" diyordu ve sınavı bitirmiş
+            biri dokununca SESSİZCE sıfırdan yeni sınav başlıyordu
+            (7 Eyl 2026 bildirimi). Tekrar çözmek meşru ama bilerek seçilmeli. */}
         {sinav.examId && (
-          <ButtonLink href={`/sinav/arsiv/${sinav.examId}`} variant="secondary">
-            Sınav gibi çöz
-          </ButtonLink>
+          <div className="flex flex-wrap gap-3">
+            {sinav.devamEden ? (
+              <ButtonLink href={`/sinav/arsiv/${sinav.examId}`}>
+                Kaldığın yerden devam et ({sinav.devamEden.cevaplanan}/
+                {sinav.devamEden.toplamSoru})
+              </ButtonLink>
+            ) : sinav.benimSonucum ? (
+              <>
+                <ButtonLink href={`/sonuc/${sinav.benimSonucum.attemptId}`}>
+                  Sonucunu gör ({sinav.benimSonucum.correctCount} doğru)
+                </ButtonLink>
+                <ButtonLink
+                  href={`/sinav/arsiv/${sinav.examId}`}
+                  variant="secondary"
+                >
+                  Tekrar çöz
+                </ButtonLink>
+              </>
+            ) : (
+              <ButtonLink
+                href={`/sinav/arsiv/${sinav.examId}`}
+                variant="secondary"
+              >
+                Sınav gibi çöz
+              </ButtonLink>
+            )}
+          </div>
         )}
       </header>
 

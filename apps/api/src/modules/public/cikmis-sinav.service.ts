@@ -74,10 +74,10 @@ export class CikmisSinavService {
    * kullanıcıya aynı sınırı uygulamak, ona zaten verdiğimiz şeyi saklamak
    * olurdu. Yayına alınmamış sürüm burada da GÖSTERİLMEZ.
    */
-  async detailFull(slug: string, user: { isPremium: boolean }) {
+  async detailFull(slug: string, user: { id: string; isPremium: boolean }) {
     const sinav = await this.prisma.pastExam.findFirst({
       where: { slug, status: 'published', deletedAt: null },
-      select: { isPremium: true },
+      select: { isPremium: true, examId: true },
     });
     if (!sinav) throw new NotFoundException('Sınav bulunamadı.');
     // Premium kapısı SUNUCUDA (Doc 8). Public sayfadaki 10 soru bundan
@@ -88,7 +88,82 @@ export class CikmisSinavService {
         message: 'Bu dönem Premium üyelere özeldir.',
       });
     }
-    return this.detail(slug, { hepsi: true });
+    const [detay, durum] = await Promise.all([
+      this.detail(slug, { hepsi: true }),
+      this.kullaniciDurumu(user.id, sinav.examId),
+    ]);
+    return { ...detay, ...durum };
+  }
+
+  /**
+   * Kullanıcının bu dönemdeki durumu (7 Eyl 2026 kullanıcı bildirimi).
+   *
+   * Ekran bunu bilmeden "Sınav gibi çöz" diyordu ve sınavı bitirmiş biri
+   * dokununca SIFIRDAN yeni bir sınav başlıyordu. Tekrar çözmek meşru bir
+   * ihtiyaç ama SESSİZCE olmamalı: aday önce sonucunu görmeli, tekrarı
+   * bilerek seçmeli.
+   */
+  private async kullaniciDurumu(userId: string, examId: string | null) {
+    if (!examId) return { devamEden: null, benimSonucum: null };
+    const [devam, enIyi] = await Promise.all([
+      this.prisma.quizSession.findFirst({
+        where: { userId, archiveExamId: examId, status: 'in_progress' },
+        // En çok ilerleyen: eski hatanın bıraktığı mükerrer oturumlarda
+        // "en son" kuralı az cevaplı olanı seçebiliyordu.
+        orderBy: [{ answers: { _count: 'desc' } }, { startedAt: 'desc' }],
+        select: {
+          id: true,
+          startedAt: true,
+          plannedDurationSeconds: true,
+          totalQuestions: true,
+          _count: { select: { answers: true } },
+        },
+      }),
+      // EN İYİ sonuç gösterilir, en sonuncusu değil: kullanıcı arşivde birden
+      // çok kez çözebiliyor ve "en son" kuralı ona kendi boş oturumunu
+      // gösterirdi (6 Eylül 2026 dersi).
+      this.prisma.quizSession.findFirst({
+        where: { userId, archiveExamId: examId, status: 'completed' },
+        orderBy: [{ correctCount: 'desc' }, { completedAt: 'desc' }],
+        select: {
+          id: true,
+          correctCount: true,
+          wrongCount: true,
+          blankCount: true,
+          score: true,
+          totalQuestions: true,
+          completedAt: true,
+        },
+      }),
+    ]);
+    return {
+      devamEden: devam
+        ? {
+            attemptId: devam.id,
+            cevaplanan: devam._count.answers,
+            toplamSoru: devam.totalQuestions,
+            kalanSaniye:
+              devam.plannedDurationSeconds != null
+                ? Math.max(
+                    0,
+                    devam.plannedDurationSeconds -
+                      Math.floor((Date.now() - devam.startedAt.getTime()) / 1000),
+                  )
+                : null,
+          }
+        : null,
+      benimSonucum: enIyi
+        ? {
+            attemptId: enIyi.id,
+            correctCount: enIyi.correctCount,
+            wrongCount: enIyi.wrongCount,
+            blankCount: enIyi.blankCount,
+            score: enIyi.score != null ? Number(enIyi.score) : null,
+            totalQuestions: enIyi.totalQuestions,
+            completedAt: enIyi.completedAt,
+          }
+        : null,
+    };
   }
 
   async detail(slug: string, secenek?: { hepsi?: boolean }) {

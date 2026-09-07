@@ -159,6 +159,58 @@ class CikmisSoru {
       );
 }
 
+/// Kullanıcının bu dönemde yarım kalan sınavı.
+class CikmisDevamEden {
+  final String attemptId;
+  final int cevaplanan;
+  final int toplamSoru;
+
+  /// Süreli oturumda kalan saniye; süre ilk başlangıçtan sayılır.
+  final int? kalanSaniye;
+
+  const CikmisDevamEden({
+    required this.attemptId,
+    required this.cevaplanan,
+    required this.toplamSoru,
+    this.kalanSaniye,
+  });
+
+  factory CikmisDevamEden.fromJson(Map<String, dynamic> j) => CikmisDevamEden(
+        attemptId: j['attemptId'] as String,
+        cevaplanan: (j['cevaplanan'] as num?)?.toInt() ?? 0,
+        toplamSoru: (j['toplamSoru'] as num?)?.toInt() ?? 0,
+        kalanSaniye: (j['kalanSaniye'] as num?)?.toInt(),
+      );
+}
+
+/// Kullanıcının bu dönemdeki EN İYİ tamamlanmış sonucu.
+class CikmisSonucum {
+  final String attemptId;
+  final int correctCount;
+  final int wrongCount;
+  final int blankCount;
+  final double? score;
+  final int totalQuestions;
+
+  const CikmisSonucum({
+    required this.attemptId,
+    required this.correctCount,
+    required this.wrongCount,
+    required this.blankCount,
+    this.score,
+    required this.totalQuestions,
+  });
+
+  factory CikmisSonucum.fromJson(Map<String, dynamic> j) => CikmisSonucum(
+        attemptId: j['attemptId'] as String,
+        correctCount: (j['correctCount'] as num?)?.toInt() ?? 0,
+        wrongCount: (j['wrongCount'] as num?)?.toInt() ?? 0,
+        blankCount: (j['blankCount'] as num?)?.toInt() ?? 0,
+        score: (j['score'] as num?)?.toDouble(),
+        totalQuestions: (j['totalQuestions'] as num?)?.toInt() ?? 0,
+      );
+}
+
 /// Dönemin tamamı — girişli kullanıcı bütün soruları açıklamalarıyla görür.
 class CikmisSinavDetay {
   final CikmisSinavOzet ozet;
@@ -170,11 +222,20 @@ class CikmisSinavDetay {
   final int kapaliSoru;
   final int iptalSayisi;
 
+  /// Yarım kalan sınav — varsa "kaldığın yerden devam et" kapısı açılır.
+  final CikmisDevamEden? devamEden;
+
+  /// Daha önce çözdüyse EN İYİ sonucu. Ekran bunu bilmeden "Sınav gibi çöz"
+  /// diyordu ve sınavı bitirmiş biri dokununca sıfırdan yeni sınav başlıyordu.
+  final CikmisSonucum? benimSonucum;
+
   const CikmisSinavDetay({
     required this.ozet,
     required this.sorular,
     this.kapaliSoru = 0,
     this.iptalSayisi = 0,
+    this.devamEden,
+    this.benimSonucum,
   });
 
   factory CikmisSinavDetay.fromJson(Map<String, dynamic> j) => CikmisSinavDetay(
@@ -184,5 +245,11 @@ class CikmisSinavDetay {
             .toList(),
         kapaliSoru: (j['kapaliSoru'] as num?)?.toInt() ?? 0,
         iptalSayisi: (j['iptalSayisi'] as num?)?.toInt() ?? 0,
+        devamEden: j['devamEden'] != null
+            ? CikmisDevamEden.fromJson(j['devamEden'] as Map<String, dynamic>)
+            : null,
+        benimSonucum: j['benimSonucum'] != null
+            ? CikmisSonucum.fromJson(j['benimSonucum'] as Map<String, dynamic>)
+            : null,
       );
 }

@@ -132,14 +132,14 @@ describe('detailFull premium kapısı', () => {
     await expect(
       servis(prismaMock({ donem: { isPremium: true } })).detailFull(
         'paem-8-2024',
-        { isPremium: false },
+        { id: 'u1', isPremium: false },
       ),
     ).rejects.toThrow(ForbiddenException);
   });
 
   it('yayında olmayan dönem 404', async () => {
     await expect(
-      servis(prismaMock({ donem: null })).detailFull('yok', { isPremium: true }),
+      servis(prismaMock({ donem: null })).detailFull('yok', { id: 'u1', isPremium: true }),
     ).rejects.toThrow(NotFoundException);
   });
 });

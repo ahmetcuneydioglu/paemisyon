@@ -10,6 +10,7 @@ import '../../../shared/widgets/explanation_box.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/option_row.dart';
 import '../../../shared/widgets/question_media.dart';
+import '../data/calisma_kaydi.dart';
 import '../data/cikmis_sinav_repository.dart';
 import '../domain/cikmis_sinav_models.dart';
 
@@ -38,16 +39,76 @@ class CikmisCalismaScreen extends ConsumerStatefulWidget {
 class _CikmisCalismaScreenState extends ConsumerState<CikmisCalismaScreen> {
   final _pager = PageController();
 
-  /// sıra → seçilen şık harfi. Ekran ömrü boyunca yaşar (kalıcı değil):
-  /// çalışma modu bir ölçüm değil, bu yüzden geri dönüldüğünde sıfırlanması
-  /// doğru davranış.
-  final Map<int, String> _secim = {};
+  /// sıra → seçilen şık harfi. CİHAZDA saklanır: ekrandan çıkıp dönünce
+  /// ilerleme kaybolmamalı (7 Eyl 2026 bildirimi). Ölçüm değil, kişisel bir
+  /// okuma durumu — bu yüzden sunucuya değil cihaza yazılır.
+  Map<int, String> _secim = {};
   int _index = 0;
+  bool _kayitYuklendi = false;
+  bool _basaAtlandi = false;
+
+  @override
+  void initState() {
+    super.initState();
+    CalismaKaydi.oku(widget.slug).then((k) {
+      if (!mounted) return;
+      setState(() {
+        // Kullanıcı kayıt gelmeden bir şık işaretlediyse onunki kalır.
+        _secim = {...k, ..._secim};
+        _kayitYuklendi = true;
+      });
+    });
+  }
 
   @override
   void dispose() {
     _pager.dispose();
     super.dispose();
+  }
+
+  void _isaretle(CikmisSoru soru, String harf) {
+    setState(() => _secim[soru.sira] = harf);
+    CalismaKaydi.yaz(widget.slug, _secim);
+    // Yanlışlar çalışma defterine düşsün (7 Eyl 2026): buradaki sorular
+    // bankanın en kıymetlileri ve "yanlışın defterine düşer" çekirdek döngü.
+    // Kota harcanmaz, puan/seri işlemez; doğruluğu SUNUCU belirler.
+    // Ateşle-unut — çalışmayı bloke etmez.
+    if (harf != soru.dogruHarf && !soru.iptal) {
+      ref.read(cikmisSinavRepositoryProvider).calismaYanlisi(
+            slug: widget.slug,
+            sira: soru.sira,
+            harf: harf,
+          );
+    }
+  }
+
+  Future<void> _sifirla() async {
+    final onay = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Baştan başla'),
+        content: const Text(
+          'Bu dönemdeki işaretlerin silinecek. Çalışma defterine düşen '
+          'yanlışların kalır.',
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: const Text('Vazgeç')),
+          FilledButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: const Text('Sıfırla')),
+        ],
+      ),
+    );
+    if (onay != true || !mounted) return;
+    await CalismaKaydi.sil(widget.slug);
+    if (!mounted) return;
+    setState(() {
+      _secim = {};
+      _index = 0;
+    });
+    if (_pager.hasClients) _pager.jumpToPage(0);
   }
 
   @override
@@ -57,6 +118,12 @@ class _CikmisCalismaScreenState extends ConsumerState<CikmisCalismaScreen> {
       appBar: AppBar(
         title: const Text('Çalışma modu'),
         actions: [
+          if (_secim.isNotEmpty)
+            IconButton(
+              tooltip: 'Baştan başla',
+              icon: const Icon(Icons.restart_alt_rounded),
+              onPressed: _sifirla,
+            ),
           data.maybeWhen(
             data: (d) => d.sorular.isEmpty
                 ? const SizedBox.shrink()
@@ -97,6 +164,21 @@ class _CikmisCalismaScreenState extends ConsumerState<CikmisCalismaScreen> {
               ),
             );
           }
+          // Kaldığı yerden devam: kayıt geldikten sonra ilk cevapsız soruya
+          // BİR KEZ atla. Yükleme çarkı KOYMUYORUZ — bekleme milisaniyelik ve
+          // çark widget testlerinde pumpAndSettle'ı sonsuza kilitliyor.
+          if (_kayitYuklendi && !_basaAtlandi && _secim.isNotEmpty) {
+            _basaAtlandi = true;
+            final ilk =
+                sorular.indexWhere((q) => !_secim.containsKey(q.sira));
+            if (ilk > 0) {
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (!mounted || !_pager.hasClients) return;
+                _pager.jumpToPage(ilk);
+                setState(() => _index = ilk);
+              });
+            }
+          }
           return Column(
             children: [
               _IlerlemeSeridi(
@@ -113,21 +195,7 @@ class _CikmisCalismaScreenState extends ConsumerState<CikmisCalismaScreen> {
                     soru: sorular[i],
                     secilen: _secim[sorular[i].sira],
                     sonuncu: i == sorular.length - 1,
-                    onSec: (harf) {
-                      setState(() => _secim[sorular[i].sira] = harf);
-                      // Yanlışlar çalışma defterine düşsün (7 Eyl 2026):
-                      // buradaki sorular bankanın en kıymetlileri ve
-                      // "yanlışın defterine düşer" çekirdek döngü. Kota
-                      // harcanmaz, puan/seri işlemez; doğruluğu SUNUCU
-                      // belirler. Ateşle-unut — çalışmayı bloke etmez.
-                      if (harf != sorular[i].dogruHarf && !sorular[i].iptal) {
-                        ref.read(cikmisSinavRepositoryProvider).calismaYanlisi(
-                              slug: widget.slug,
-                              sira: sorular[i].sira,
-                              harf: harf,
-                            );
-                      }
-                    },
+                    onSec: (harf) => _isaretle(sorular[i], harf),
                     onSonraki: i == sorular.length - 1 ? null : _sonraki,
                   ),
                 ),

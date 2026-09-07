@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:paemisyon/core/theme/app_theme.dart';
+import 'package:paemisyon/features/exams/data/calisma_kaydi.dart';
 import 'package:paemisyon/features/exams/data/cikmis_sinav_repository.dart';
 import 'package:paemisyon/features/exams/domain/cikmis_sinav_models.dart';
 import 'package:paemisyon/features/exams/presentation/cikmis_calisma_screen.dart';
@@ -55,6 +57,9 @@ Future<void> _pump(WidgetTester tester, CikmisSinavDetay d) async {
 }
 
 void main() {
+  // Çalışma ilerlemesi cihazda saklanıyor; her test temiz kayıtla başlar.
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
   testWidgets('cevaptan önce açıklama gizli, sonra görünür', (tester) async {
     await _pump(tester, _detay([_soru(sira: 1)]));
 
@@ -129,5 +134,47 @@ void main() {
 
     expect(find.text('Soru 3 / 3'), findsOneWidget);
     expect(find.text('3 numaralı sorunun kökü'), findsOneWidget);
+  });
+
+  testWidgets('önceki ilerleme geri gelir ve ilk cevapsız sorudan devam eder',
+      (tester) async {
+    // Ekrandan çıkıp dönen aday sıfırdan başlıyordu (7 Eyl 2026 bildirimi).
+    SharedPreferences.setMockInitialValues({
+      CalismaKaydi.anahtar('paem-9-2025'): CalismaKaydi.kodla({1: 'A', 2: 'B'}),
+    });
+    await _pump(
+        tester, _detay([_soru(sira: 1), _soru(sira: 2), _soru(sira: 3)]));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Soru 3 / 3'), findsOneWidget);
+    expect(find.text('2 cevap · 1 doğru'), findsOneWidget);
+  });
+
+  testWidgets('işaretlenen şık cihaza yazılır', (tester) async {
+    await _pump(tester, _detay([_soru(sira: 7)]));
+    await tester.tap(find.text('B şıkkı'));
+    await tester.pumpAndSettle();
+    expect(await CalismaKaydi.oku('paem-9-2025'), {7: 'B'});
+  });
+
+  testWidgets('sıfırlama kaydı siler ve başa döner', (tester) async {
+    SharedPreferences.setMockInitialValues({
+      CalismaKaydi.anahtar('paem-9-2025'): CalismaKaydi.kodla({1: 'A'}),
+    });
+    await _pump(tester, _detay([_soru(sira: 1), _soru(sira: 2)]));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byTooltip('Baştan başla'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Sıfırla'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Henüz cevaplamadın'), findsOneWidget);
+    expect(await CalismaKaydi.oku('paem-9-2025'), isEmpty);
+  });
+
+  testWidgets('kayıt yokken "Baştan başla" düğmesi çizilmez', (tester) async {
+    await _pump(tester, _detay([_soru(sira: 1)]));
+    expect(find.byTooltip('Baştan başla'), findsNothing);
   });
 }

@@ -126,6 +126,22 @@ export interface CikmisSinavDetay extends CikmisSinavOzet {
   sorular: CikmisSinavSoru[];
   kapaliSoru: number;
   iptalSayisi: number;
+  /** Yarım kalan sınav — girişli uçta gelir (public uçta yoktur). */
+  devamEden?: {
+    attemptId: string;
+    cevaplanan: number;
+    toplamSoru: number;
+    kalanSaniye: number | null;
+  } | null;
+  /** Daha önce çözdüyse EN İYİ sonucu. */
+  benimSonucum?: {
+    attemptId: string;
+    correctCount: number;
+    wrongCount: number;
+    blankCount: number;
+    score: number | null;
+    totalQuestions: number;
+  } | null;
 }
 
 export interface LawSummary {
