@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/brand-mark";
 import { ContactChannels } from "@/components/contact-channels";
-import { AppStoreBadge } from "@/components/app-store-badge";
+import { StoreBadges } from "@/components/store-badges";
 
 const GROUPS: { title: string; links: { href: string; label: string; external?: boolean }[] }[] = [
   {
@@ -46,7 +46,7 @@ export function SiteFooter() {
             kişisel koç.
           </p>
           <ContactChannels variant="inline" className="mt-3" />
-          <AppStoreBadge className="mt-4" width={132} />
+          <StoreBadges className="mt-4" width={124} wrap />
         </div>
         {GROUPS.map((g) => (
           <nav key={g.title} aria-label={g.title}>

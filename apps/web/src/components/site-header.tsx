@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AppStoreBadge } from "./app-store-badge";
+import { StoreBadges } from "./store-badges";
 import { BrandMark } from "./brand-mark";
 import { SiteNav } from "./site-nav";
 import { HeaderAuthArea } from "./header-auth-area";
@@ -32,7 +32,9 @@ export function SiteHeader() {
         <SiteNav items={NAV} authArea={authArea} />
         <div className="hidden items-center gap-3 md:flex">
           {/* Dar md aralığında nav ile çakışmasın diye yalnız lg üstünde. */}
-          <AppStoreBadge className="hidden lg:block" width={108} />
+          {/* iOS + Android birlikte: yalnız iPhone rozeti Android
+              kullanıcısına "bu uygulama bende yok" dedirtiyordu. */}
+          <StoreBadges className="hidden lg:inline-flex" width={92} />
           <ThemeToggle compact />
           {authArea}
         </div>

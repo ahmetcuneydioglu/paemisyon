@@ -8,6 +8,8 @@ export const config = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://paemisyon.com",
   /** App Store ürün sayfası (iOS 1.0 — 20 Ağu 2026'da yayında). */
   appStoreUrl: "https://apps.apple.com/tr/app/paemisyon/id6802087692",
+  /** Google Play ürün sayfası — uygulama kimliği mobil build.gradle ile aynı. */
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon",
   supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://yhkiuzevyqdqtofrmroj.supabase.co",
   supabaseAnonKey:
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??

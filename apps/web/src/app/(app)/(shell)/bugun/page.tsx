@@ -9,7 +9,7 @@ import { webRoute } from "@/lib/routes";
 import { Card, CardTitle } from "@/components/ui/card";
 import { CoachCard } from "@/components/ui/coach-card";
 import { GoalProgress } from "@/components/ui/goal-progress";
-import { AppStoreBadge } from "@/components/app-store-badge";
+import { StoreBadges } from "@/components/store-badges";
 import { StreakBadge } from "@/components/ui/streak-badge";
 import { ButtonLink } from "@/components/ui/button";
 import { FocusPicker } from "@/components/bugun/focus-picker";
@@ -71,7 +71,7 @@ export default async function BugunPage() {
           {/* Girişli kullanıcı da uygulamayı bulabilsin: web'de çalışan aday
               genelde native sürümü olduğunu bilmiyor. Seri rozetiyle aynı
               hizada ama daha sessiz (küçük ölçek). */}
-          <AppStoreBadge width={104} />
+          <StoreBadges width={96} />
           <StreakBadge days={today.streak.current} atRisk={today.streak.atRisk} />
         </div>
       </div>

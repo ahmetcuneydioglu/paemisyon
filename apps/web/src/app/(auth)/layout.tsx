@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AppStoreBadge } from "@/components/app-store-badge";
+import { StoreBadges } from "@/components/store-badges";
 import { BrandMark } from "@/components/brand-mark";
 
 /** Kimlik sayfaları: ortalanmış tek kolon, dikkat dağıtmayan kabuk. */
@@ -12,7 +12,7 @@ export default function AuthLayout({ children }: Readonly<{ children: React.Reac
         </Link>
         {/* Giriş yapmak üzere olan ziyaretçi genelde telefonda: native
             sürümü burada görsün. Form akışını bozmayacak kadar sessiz. */}
-        <AppStoreBadge width={104} />
+        <StoreBadges width={100} />
       </header>
       <main className="flex flex-1 items-start justify-center px-4 pb-16 pt-8">{children}</main>
     </div>
