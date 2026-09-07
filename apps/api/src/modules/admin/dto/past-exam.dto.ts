@@ -23,6 +23,11 @@ export class UpdatePastExamDto {
   @Min(0)
   @Max(9999)
   sortOrder?: number;
+
+  /** Dönem Premium'a özel mi. Public SEO sayfası bundan etkilenmez. */
+  @IsOptional()
+  @IsBoolean()
+  isPremium?: boolean;
 }
 
 export class UpdatePastExamQuestionDto {

@@ -981,6 +981,14 @@ model PastExam {
   /// `analiz` türü sınavların TEK içeriği budur; resmî sınavlarda sorulardan
   /// da hesaplanabilir ama sayfa tek yerden okusun diye burada saklanır.
   analysis      Json?
+  /// Dönem Premium'a özel mi (7 Eyl 2026 kararı).
+  ///
+  /// Anahtar burada, gizli `Exam` kaydında DEĞİL: bir dönemin iki modu var
+  /// (sınav gibi çöz + çalışma modu) ve `Exam.isPremium` yalnız birincisini
+  /// kapatıyordu — aday 100 soruyu cevaplarıyla okumaya devam edebiliyordu.
+  /// Tek karar noktası olmalı. Public SEO sayfası bundan ETKİLENMEZ: orası
+  /// huninin girişi, paywall'a alınmaz.
+  isPremium     Boolean       @default(false) @map("is_premium")
   /// Sınav gibi çözme deneyimi mevcut deneme motorundan gelir.
   examId        String?       @unique @map("exam_id") @db.Uuid
   exam          Exam?         @relation(fields: [examId], references: [id])

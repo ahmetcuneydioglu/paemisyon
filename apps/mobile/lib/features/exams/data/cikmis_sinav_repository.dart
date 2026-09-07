@@ -40,6 +40,26 @@ class CikmisSinavRepository {
     });
   }
 
+  /// Çalışma modunda verilen YANLIŞ cevabı defterine yazar (7 Eyl 2026).
+  ///
+  /// Kota harcamaz, puan/seri işlemez; doğruluğu SUNUCU belirler — istemcinin
+  /// "yanlıştı" demesine güvenilmez. Ateşle-unut: başarısız olursa çalışma
+  /// akışı kesilmez, yalnız o yanlış deftere düşmez.
+  Future<void> calismaYanlisi({
+    required String slug,
+    required int sira,
+    required String harf,
+  }) async {
+    try {
+      await _dio.post<Map<String, dynamic>>(
+        '/cikmis-sinavlar/$slug/calisma-yanlisi',
+        data: {'sira': sira, 'harf': harf},
+      );
+    } catch (_) {
+      // Sessiz: defter beslemesi çalışmayı bloke etmemeli.
+    }
+  }
+
   Future<T> _guard<T>(Future<T> Function() run) async {
     try {
       return await run();

@@ -17,8 +17,12 @@ import '../domain/cikmis_sinav_models.dart';
 ///
 /// Sunucuya oturum açılmaz: doğru cevap ve açıklama zaten yükte geliyor, bu
 /// yüzden dokunuş anında değerlendirilir. Süre tutulmaz, net hesaplanmaz,
-/// hiçbir yere yazılmaz — ölçmek isteyen "Sınav gibi çöz"ü kullanır. İki
-/// ölçümü karıştırmak, adayın hangisinin gerçek olduğunu bilememesi demekti.
+/// puan/seri işlemez — ölçmek isteyen "Sınav gibi çöz"ü kullanır. İki ölçümü
+/// karıştırmak, adayın hangisinin gerçek olduğunu bilememesi demekti.
+///
+/// TEK istisna yanlış defteri (7 Eyl 2026): yanlışlar deftere yazılır, çünkü
+/// "yanlışın defterine düşer" uygulamanın çekirdek döngüsü ve buradaki sorular
+/// bankanın en kıymetlileri. Günlük kota yine harcanmaz.
 ///
 /// Tur oynatıcının dilini aynen kullanır (dokunuş = cevap, anında renk + ikon,
 /// açıklama aynı ekranda) — aday iki ekran arasında yeniden öğrenmez.
@@ -109,8 +113,21 @@ class _CikmisCalismaScreenState extends ConsumerState<CikmisCalismaScreen> {
                     soru: sorular[i],
                     secilen: _secim[sorular[i].sira],
                     sonuncu: i == sorular.length - 1,
-                    onSec: (harf) =>
-                        setState(() => _secim[sorular[i].sira] = harf),
+                    onSec: (harf) {
+                      setState(() => _secim[sorular[i].sira] = harf);
+                      // Yanlışlar çalışma defterine düşsün (7 Eyl 2026):
+                      // buradaki sorular bankanın en kıymetlileri ve
+                      // "yanlışın defterine düşer" çekirdek döngü. Kota
+                      // harcanmaz, puan/seri işlemez; doğruluğu SUNUCU
+                      // belirler. Ateşle-unut — çalışmayı bloke etmez.
+                      if (harf != sorular[i].dogruHarf && !sorular[i].iptal) {
+                        ref.read(cikmisSinavRepositoryProvider).calismaYanlisi(
+                              slug: widget.slug,
+                              sira: sorular[i].sira,
+                              harf: harf,
+                            );
+                      }
+                    },
                     onSonraki: i == sorular.length - 1 ? null : _sonraki,
                   ),
                 ),

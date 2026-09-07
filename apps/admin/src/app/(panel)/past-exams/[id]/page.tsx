@@ -59,6 +59,23 @@ export default function PastExamDetailPage() {
     },
   });
 
+  const premium = useMutation({
+    mutationFn: (v: boolean) =>
+      api(`/admin/past-exams/${id}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ isPremium: v }),
+      }),
+    onSuccess: (_d, v) => {
+      setNotice(
+        v
+          ? 'Dönem Premium’a alındı. Public SEO sayfası etkilenmez.'
+          : 'Dönem herkese açıldı.',
+      );
+      qc.invalidateQueries({ queryKey: ['admin-past-exam', id] });
+      qc.invalidateQueries({ queryKey: ['admin-past-exams'] });
+    },
+  });
+
   const soru = useMutation({
     mutationFn: (v: { questionId: string; publicly?: boolean; cancelled?: boolean }) =>
       api(`/admin/past-exams/${id}/questions/${v.questionId}`, {
@@ -118,6 +135,18 @@ export default function PastExamDetailPage() {
           <span className="text-slate-600">
             Sınavdaki soru: <b>{s.questionCount ?? '—'}</b>
           </span>
+          <label
+            className="flex cursor-pointer items-center gap-2 text-slate-600"
+            title="Açıkken hem 'Sınav gibi çöz' hem 'Çalışma modu' Premium ister. Public SEO sayfası (dönem başına birkaç soru) her zaman açık kalır."
+          >
+            <input
+              type="checkbox"
+              checked={s.isPremium}
+              disabled={!isAdmin || premium.isPending}
+              onChange={(e) => premium.mutate(e.target.checked)}
+            />
+            Premium&apos;a özel
+          </label>
           <span className="text-slate-600">
             Bankaya bağlı: <b>{s.questions.length}</b>
           </span>

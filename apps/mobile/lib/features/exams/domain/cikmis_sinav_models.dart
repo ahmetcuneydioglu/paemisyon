@@ -39,6 +39,10 @@ class CikmisSinavOzet {
   /// Deneme motorundaki karşılığı. `null` ise "sınav gibi çöz" YOKTUR —
   /// düğme hiç çizilmez, ölü düğme kullanıcıyı hataya sürükler.
   final String? examId;
+
+  /// Dönem Premium'a özel mi. Public SEO sayfası bundan ETKİLENMEZ — orası
+  /// huninin girişi, paywall'a alınmaz.
+  final bool isPremium;
   final List<DersDagilimi> dersDagilimi;
 
   const CikmisSinavOzet({
@@ -51,6 +55,7 @@ class CikmisSinavOzet {
     this.ozet,
     this.soruSayisi,
     this.examId,
+    this.isPremium = false,
     this.dersDagilimi = const [],
   });
 
@@ -73,6 +78,7 @@ class CikmisSinavOzet {
         ozet: j['ozet'] as String?,
         soruSayisi: (j['soruSayisi'] as num?)?.toInt(),
         examId: j['examId'] as String?,
+        isPremium: j['isPremium'] as bool? ?? false,
         dersDagilimi: ((j['dersDagilimi'] as List<dynamic>?) ?? const [])
             .map((e) => DersDagilimi.fromJson(e as Map<String, dynamic>))
             .toList(),

@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 
 /**
@@ -28,6 +28,8 @@ export interface CikmisSinavOzet {
   acikSoru: number;
   /** Deneme motorundaki karşılığı — "sınav gibi çöz" bunu kullanır. */
   examId: string | null;
+  /** Dönem Premium'a özel mi (vitrinde kilit rozeti). */
+  isPremium: boolean;
   dersDagilimi: { ders: string; adet: number }[];
 }
 
@@ -72,7 +74,20 @@ export class CikmisSinavService {
    * kullanıcıya aynı sınırı uygulamak, ona zaten verdiğimiz şeyi saklamak
    * olurdu. Yayına alınmamış sürüm burada da GÖSTERİLMEZ.
    */
-  async detailFull(slug: string) {
+  async detailFull(slug: string, user: { isPremium: boolean }) {
+    const sinav = await this.prisma.pastExam.findFirst({
+      where: { slug, status: 'published', deletedAt: null },
+      select: { isPremium: true },
+    });
+    if (!sinav) throw new NotFoundException('Sınav bulunamadı.');
+    // Premium kapısı SUNUCUDA (Doc 8). Public sayfadaki 10 soru bundan
+    // etkilenmez — orası huninin girişi.
+    if (sinav.isPremium && !user.isPremium) {
+      throw new ForbiddenException({
+        code: 'PREMIUM_REQUIRED',
+        message: 'Bu dönem Premium üyelere özeldir.',
+      });
+    }
     return this.detail(slug, { hepsi: true });
   }
 
@@ -134,6 +149,70 @@ export class CikmisSinavService {
     };
   }
 
+  /**
+   * Çalışma modunda verilen YANLIŞ cevabı defterine yazar (7 Eyl 2026 kararı).
+   *
+   * Çalışma modu sunucuda oturum açmaz — doğru cevap ve açıklama zaten yükte
+   * gelir, değerlendirme istemcide olur. Sonuç şuydu: aday 100 gerçek sınav
+   * sorusu çözüyor ama yanlışları çalışma defterine düşmüyordu. "Yanlışın
+   * defterine düşer" uygulamanın çekirdek döngüsü ve buradaki sorular bankanın
+   * en kıymetlileri.
+   *
+   * Yalnız yanlış defteri beslenir: günlük kota HARCANMAZ, puan/seri/hâkimiyet
+   * İŞLEMEZ. Ölçüm isteyen "Sınav gibi çöz"e gider; iki ölçümü karıştırmak
+   * adayın hangisinin gerçek olduğunu bilememesi olurdu — ayrıca süresiz ve
+   * açıklamalı bir moddan puan vermek çiftçiliğe açık kapı bırakırdı.
+   *
+   * Doğruluk SUNUCUDA belirlenir: istemcinin "yanlıştı" demesine güvenilmez.
+   */
+  async calismaYanlisi(
+    userId: string,
+    slug: string,
+    dto: { sira: number; harf: string },
+  ): Promise<{ kaydedildi: boolean }> {
+    const bag = await this.prisma.pastExamQuestion.findFirst({
+      where: {
+        orderNo: dto.sira,
+        pastExam: { slug, status: 'published', deletedAt: null },
+      },
+      select: {
+        questionId: true,
+        cancelled: true,
+        question: {
+          select: {
+            currentVersion: {
+              select: {
+                status: true,
+                options: { select: { label: true, isCorrect: true } },
+              },
+            },
+          },
+        },
+      },
+    });
+    if (!bag) throw new NotFoundException('Soru bu sınavda bulunamadı.');
+    // İptal edilen soru sınavda puanlanmadı; yanlış defterine de yazılmaz.
+    if (bag.cancelled) return { kaydedildi: false };
+    const v = bag.question.currentVersion;
+    if (!v || v.status !== 'published') {
+      throw new NotFoundException('Soru yayında değil.');
+    }
+    const secilen = v.options.find(
+      (o) => o.label.toUpperCase() === dto.harf.toUpperCase(),
+    );
+    if (!secilen) throw new NotFoundException('Şık bu soruda yok.');
+    if (secilen.isCorrect) return { kaydedildi: false }; // doğruysa defter dolmaz
+
+    await this.prisma.$executeRaw`
+      INSERT INTO wrong_answers (user_id, question_id)
+      VALUES (${userId}::uuid, ${bag.questionId}::uuid)
+      ON CONFLICT (user_id, question_id) DO UPDATE SET
+        wrong_count = wrong_answers.wrong_count + 1,
+        last_wrong_at = now(),
+        resolved_at = NULL`;
+    return { kaydedildi: true };
+  }
+
   private ozetle(s: {
     slug: string;
     name: string;
@@ -144,6 +223,7 @@ export class CikmisSinavService {
     summary: string | null;
     questionCount: number | null;
     examId?: string | null;
+    isPremium?: boolean;
     analysis?: unknown;
     questions: { publicly: boolean; question: { topic: { course: { name: string } } } }[];
   }): CikmisSinavOzet {
@@ -160,6 +240,7 @@ export class CikmisSinavService {
     return {
       slug: s.slug,
       examId: s.examId ?? null,
+      isPremium: s.isPremium ?? false,
       ad: s.name,
       kurum: s.institution,
       donem: s.term,

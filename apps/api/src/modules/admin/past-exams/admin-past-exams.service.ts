@@ -85,6 +85,7 @@ export class AdminPastExamsService {
       heldOn: s.heldOn,
       kind: s.kind,
       status: s.status,
+      isPremium: s.isPremium,
       questionCount: s.questionCount,
       /** Bankaya bağlı soru sayısı — `analiz` türünde 0'dır. */
       linked: s.questions.length,
@@ -131,6 +132,7 @@ export class AdminPastExamsService {
       kind: s.kind,
       status: s.status,
       examId: s.examId,
+      isPremium: s.isPremium,
       summary: s.summary,
       questionCount: s.questionCount,
       sortOrder: s.sortOrder,
@@ -254,7 +256,13 @@ export class AdminPastExamsService {
   async update(
     actor: AuthenticatedUser,
     id: string,
-    dto: { name?: string; summary?: string | null; status?: 'draft' | 'published' | 'archived'; sortOrder?: number },
+    dto: {
+      name?: string;
+      summary?: string | null;
+      status?: 'draft' | 'published' | 'archived';
+      sortOrder?: number;
+      isPremium?: boolean;
+    },
   ) {
     const mevcut = await this.prisma.pastExam.findFirst({ where: { id, deletedAt: null }, select: { slug: true } });
     if (!mevcut) throw new NotFoundException('Çıkmış sınav bulunamadı.');
@@ -265,6 +273,7 @@ export class AdminPastExamsService {
         ...(dto.summary !== undefined ? { summary: dto.summary } : {}),
         ...(dto.status !== undefined ? { status: dto.status } : {}),
         ...(dto.sortOrder !== undefined ? { sortOrder: dto.sortOrder } : {}),
+        ...(dto.isPremium !== undefined ? { isPremium: dto.isPremium } : {}),
       },
     });
     await this.audit.log(actor, 'past_exam.update', 'past_exam', id, { slug: mevcut.slug, ...dto });

@@ -500,10 +500,19 @@ export class QuizService {
         message: 'Bu deneme arşivden çözmeye kapalı.',
       });
     }
-    if (exam.isPremium && !user.isPremium) {
+    // Premium kapısı iki yerden gelebilir: denemenin kendisi ya da (çıkmış
+    // sınavsa) dönemin anahtarı. Dönem anahtarı ASIL karar noktasıdır —
+    // Exam.isPremium yalnız bu modu kapatır, çalışma modunu açık bırakırdı.
+    const donem = await this.prisma.pastExam.findUnique({
+      where: { examId: exam.id },
+      select: { isPremium: true },
+    });
+    if ((exam.isPremium || donem?.isPremium) && !user.isPremium) {
       throw new ForbiddenException({
         code: 'PREMIUM_REQUIRED',
-        message: 'Bu deneme premium üyelere özeldir.',
+        message: donem?.isPremium
+          ? 'Bu çıkmış sınav Premium üyelere özeldir.'
+          : 'Bu deneme premium üyelere özeldir.',
       });
     }
 

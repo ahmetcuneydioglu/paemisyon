@@ -186,6 +186,7 @@ export interface AdminPastExamDetail {
   id: string;
   cozulebilirlik: PastExamCozulebilirlik;
   examId: string | null;
+  isPremium: boolean;
   slug: string;
   name: string;
   institution: string;

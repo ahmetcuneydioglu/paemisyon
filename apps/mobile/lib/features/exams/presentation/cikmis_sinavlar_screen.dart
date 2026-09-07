@@ -127,6 +127,10 @@ class _DonemKarti extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: AppSpacing.xs),
+                  if (sinav.isPremium) ...[
+                    const _PremiumRozeti(),
+                    const SizedBox(width: AppSpacing.xs),
+                  ],
                   _TurRozeti(resmi: resmi),
                 ],
               ),
@@ -207,6 +211,33 @@ class _TurRozeti extends StatelessWidget {
           Text(resmi ? 'Çıkmış sınav' : 'Konu analizi',
               style: AppTypography.caption
                   .copyWith(color: fg, fontWeight: FontWeight.w700)),
+        ],
+      ),
+    );
+  }
+}
+
+class _PremiumRozeti extends StatelessWidget {
+  const _PremiumRozeti();
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    return Container(
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.sm, vertical: AppSpacing.xs / 2),
+      decoration: BoxDecoration(
+        color: tokens.accentStreak.withValues(alpha: 0.14),
+        borderRadius: BorderRadius.circular(AppSpacing.radiusFull),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.lock_rounded, size: 13, color: tokens.accentStreak),
+          const SizedBox(width: AppSpacing.xs),
+          Text('Premium',
+              style: AppTypography.caption.copyWith(
+                  color: tokens.accentStreak, fontWeight: FontWeight.w700)),
         ],
       ),
     );

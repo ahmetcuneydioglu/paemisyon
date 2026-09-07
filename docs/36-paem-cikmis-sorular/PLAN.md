@@ -262,6 +262,45 @@ Not: sınav bazlı sıralama (`/exams/:id/leaderboard`) yalnız `examId` taşıy
 oturumları sayar; arşiv oturumlarında o alan boştur. Çıkmış sınavların canlı
 penceresi hiç açılmadığı için o sıralamalar kalıcı olarak boştur — kasıtlı.
 
+### Fiyatlandırma mekanizması ve çalışma modunun kaydı (7 Eyl 2026)
+
+**Premium anahtarı `PastExam.isPremium` üzerinde** — gizli `Exam` kaydında
+değil. Gerekçe: bir dönemin İKİ modu var ve `Exam.isPremium` yalnız "sınav
+gibi çöz"ü kapatıyordu; aday 100 soruyu cevaplarıyla okumaya devam
+edebiliyordu. Tek karar noktası olmalı.
+
+Uygulandığı yerler: çalışma modu ucu (`GET /cikmis-sinavlar/:slug`), arşiv
+sınavı başlatma, ve vitrinde kilit rozeti. **Public SEO sayfası ETKİLENMEZ**
+— orası huninin girişi, paywall'a alınmaz.
+
+Panelde: Çıkmış Sınavlar → dönem detayı → "Premium'a özel".
+
+**Politika (bugün): hepsi ÜCRETSİZ.** İki gerekçe:
+
+1. Elde yalnız iki çözülebilir dönem var; "arşivin tamamı" diyebilmek için
+   arşivin derinleşmesi lazım.
+2. PAEM 10 (~20 Eylül) yılın en büyük trafik olayı ve Doc 36'nın tüm kurgusu
+   o kişileri uygulamaya sokmak üzerine. O akşam kapıya kilit koymak huniyi
+   kendi elinle tıkamaktır.
+
+Sonrası için hedeflenen kural: **en yeni dönem her zaman ücretsiz** (arama
+mıknatısı ve kalite kanıtı), önceki dönemler Premium. Arşiv derinleştikçe
+teklif kendiliğinden güçlenir.
+
+**Çalışma modu artık yanlış defterini besliyor.** Mod sunucuda oturum açmaz
+(değerlendirme istemcide), bu yüzden yanlışlar hiçbir yere düşmüyordu — oysa
+"yanlışın defterine düşer" uygulamanın çekirdek döngüsü ve buradaki sorular
+bankanın en kıymetlileri. Yeni uç: `POST /cikmis-sinavlar/:slug/calisma-yanlisi`.
+
+- Doğruluğu **sunucu** belirler (istemcinin "yanlıştı" demesine güvenilmez).
+- UUID değil **sıra + şık harfi** alır — public DTO'ya kimlik eklemeye gerek
+  kalmıyor ve daha az sızdırır.
+- Günlük kota **harcanmaz**, puan/seri/hâkimiyet **işlemez**: süresiz ve
+  açıklamalı bir moddan puan vermek çiftçiliğe kapı açardı. Ölçüm isteyen
+  "Sınav gibi çöz"e gider.
+- **İptal edilen soru yazılmaz** — sınavda puanlanmadı, adayın defterine
+  "yanlış" diye düşmesi haksız olur.
+
 ## 8. Kural istisnası
 
 CLAUDE.md'deki "kaynak etiketi son kullanıcıya gösterilmez" kuralı (4 Eyl 2026)
