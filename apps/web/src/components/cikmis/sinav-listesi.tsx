@@ -82,7 +82,7 @@ export function SinavListesi({
 
             <p className="mt-auto pt-1 text-[13px] font-bold text-brand">
               {s.tur === "resmi"
-                ? `${s.soruSayisi ?? 0} soru · ${s.acikSoru} tanesi burada açık`
+                ? `${s.soruSayisi ?? 0} soru · ${s.acikSoru} tanesini burada çöz`
                 : `${s.soruSayisi ?? 0} sorunun konu dağılımı`}
             </p>
           </Card>

@@ -41,10 +41,11 @@ export default async function CikmisSorularPage() {
             Çıkmış soru çalışmanın en verimli yolu
           </h2>
           <p className="max-w-[68ch] text-[15px] leading-relaxed text-ink-soft">
-            Soruyu okuyup cevabı görmek yetmiyor; sınav aynı maddeyi başka bir yüzle
-            tekrar soruyor. Bu yüzden her sorunun altına dayandığı maddeyi ve
-            çeldiricinin neden yanlış olduğunu yazdık. Bir dönemi bitirince aynı
-            konudan alıştırma yapmak, o maddeyi kalıcı hâle getiriyor.
+            Soruyu okuyup cevabı görmek yetmiyor; okurken her şey anlaşılır
+            görünür, asıl fark çözerken çıkar. Bu yüzden buradaki sorular
+            çözülüyor: şıkka dokunuyorsun, doğru mu yanlış mı anında görüyorsun
+            ve altında dayandığı madde yazıyor. Sınav aynı maddeyi başka bir
+            yüzle tekrar sorduğu için kalıcı olan da bu.
           </p>
         </section>
       </div>

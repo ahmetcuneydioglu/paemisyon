@@ -1,9 +1,10 @@
 /**
  * Doc 36 — bir çıkmış sınavın public sayfasında görünecek soruları seçer.
  *
- * Kullanıcı kararı: dönem başına 20 soru açık, kalanı uygulamada. Seçim
- * konu dağılımına ORANTILI: aday sınavın gerçek karışımını görür, "paem 9 tck
- * soruları" gibi uzun kuyruk aramaları da karşılanır.
+ * Kullanıcı kararı: dönem başına 10 soru açık (sayfada quiz olarak çözülür),
+ * kalanı uygulamada. Seçim konu dağılımına ORANTILI: aday sınavın gerçek
+ * karışımını görür, "paem 9 tck soruları" gibi uzun kuyruk aramaları da
+ * karşılanır.
  *
  * Tercih sırası (deterministik, tohum = kitapçık sırası):
  *   1. Açıklaması olan soru — public sayfanın işi cevabı değil GEREKÇEYİ
@@ -13,13 +14,14 @@
  *
  *   npx tsx scripts/cikmis-vitrin-sec.ts <slug>            # kuru çalışma
  *   APPLY=1 npx tsx scripts/cikmis-vitrin-sec.ts <slug>
- *   ACIK=25 ... ile açık soru sayısı değiştirilebilir.
+ *   ACIK=20 ... ile açık soru sayısı değiştirilebilir.
  */
 import { createHash } from 'node:crypto';
 import { PrismaClient } from '@prisma/client';
 
 const APPLY = process.env.APPLY === '1';
-const ACIK = Number(process.env.ACIK ?? 20);
+/** Public sayfada quiz olarak çözülen soru sayısı (kullanıcı kararı: 10). */
+const ACIK = Number(process.env.ACIK ?? 10);
 const prisma = new PrismaClient();
 
 const tohum = (slug: string, n: number) =>
@@ -61,7 +63,7 @@ async function main() {
   for (const k of uygun) gruplar.set(grupAdi(k), [...(gruplar.get(grupAdi(k)) ?? []), k]);
   const toplam = uygun.length || 1;
 
-  // En büyük kalan yöntemi — yuvarlama toplamı 20'nin altına/üstüne kaçırmasın.
+  // En büyük kalan yöntemi — yuvarlama toplamı hedefin altına/üstüne kaçırmasın.
   const paylar = [...gruplar].map(([g, l]) => {
     const tam = (l.length * ACIK) / toplam;
     return { g, l, taban: Math.floor(tam), kalan: tam - Math.floor(tam) };
