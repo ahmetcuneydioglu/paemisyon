@@ -15,6 +15,7 @@ const NAV = [
   { href: '/past-exams', label: 'Çıkmış Sınavlar', icon: '🗓️' },
   { href: '/law-articles', label: 'Madde Metinleri', icon: '📖' },
   { href: '/catalog', label: 'İçerik Ağacı', icon: '🗂️' },
+  { href: '/plans', label: 'Planlar', icon: '💳', adminOnly: true },
   { href: '/notifications', label: 'Bildirim Gönder', icon: '🔔', adminOnly: true },
   { href: '/users', label: 'Kullanıcılar', icon: '👥', adminOnly: true },
   { href: '/audit', label: 'İşlem Kayıtları', icon: '📜', adminOnly: true },

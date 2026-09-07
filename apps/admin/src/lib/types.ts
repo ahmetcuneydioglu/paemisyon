@@ -307,3 +307,28 @@ export interface AuditEntry {
   detail: unknown;
   createdAt: string;
 }
+
+/** Plan (fiyat + ücretsiz katmanın günlük soru limiti) — /admin/plans. */
+export interface AdminPlan {
+  id: string;
+  key: string;
+  name: string;
+  price: number | null;
+  currency: string;
+  period: string;
+  dailyQuestionLimit: number | null;
+  storeProductIdIos: string | null;
+  storeProductIdAndroid: string | null;
+  isActive: boolean;
+  subscriptionCount: number;
+  /** Günlük limitin yaşadığı satır ('free') — panel bunu vurgular ve korur. */
+  limitKaynagi: boolean;
+}
+
+/** Limit düşürmenin BUGÜNE etkisi — kaydetmeden önce gösterilir. */
+export interface PlanLimitEtkisi {
+  yeniLimit: number;
+  mevcutLimit: number;
+  bugunAktifKullanici: number;
+  aninaDuvaraCarpacak: number;
+}
