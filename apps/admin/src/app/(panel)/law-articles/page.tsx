@@ -406,14 +406,14 @@ function LegislationMetaCard({ topicId, isAdmin }: { topicId: string; isAdmin: b
     mutationFn: () =>
       api(`/admin/legislation`, {
         method: "PATCH",
-        body: JSON.stringify({
+        body: {
           topicId,
           shortName: f.shortName || null,
           number: f.number || null,
           aliases: f.aliases.split(",").map((x: string) => x.trim()).filter(Boolean),
           type: f.type,
           officialSourceUrl: f.officialSourceUrl || null,
-        }),
+        },
       }),
     onSuccess: () => {
       setForm(null);

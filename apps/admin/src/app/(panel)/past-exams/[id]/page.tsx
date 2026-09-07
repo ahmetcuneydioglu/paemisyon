@@ -21,6 +21,18 @@ export default function PastExamDetailPage() {
   const qc = useQueryClient();
   const [me, setMe] = useState<{ roles: string[] } | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
+  // Hata görünür olmalı: bu sayfadaki üç mutasyon da yalnız onSuccess taşıyordu
+  // ve gövde çift kodlandığı için sessizce 400 dönüyordu — "tıklıyorum, hiçbir
+  // şey olmuyor" (7 Eyl 2026). Sessiz başarısızlık bir daha fark edilmesin.
+  const [hata, setHata] = useState<string | null>(null);
+  const bildir = (m: string) => {
+    setHata(null);
+    setNotice(m);
+  };
+  const hataVer = (e: unknown) => {
+    setNotice(null);
+    setHata(e instanceof Error ? e.message : 'İşlem başarısız.');
+  };
 
   useEffect(() => {
     api<{ roles: string[] }>('/me')
@@ -36,9 +48,10 @@ export default function PastExamDetailPage() {
 
   const durum = useMutation({
     mutationFn: (status: 'draft' | 'published' | 'archived') =>
-      api(`/admin/past-exams/${id}`, { method: 'PATCH', body: JSON.stringify({ status }) }),
+      api(`/admin/past-exams/${id}`, { method: 'PATCH', body: { status } }),
+    onError: hataVer,
     onSuccess: (_d, status) => {
-      setNotice(status === 'published' ? 'Dönem yayına alındı.' : 'Dönem yayından kaldırıldı.');
+      bildir(status === 'published' ? 'Dönem yayına alındı.' : 'Dönem yayından kaldırıldı.');
       qc.invalidateQueries({ queryKey: ['admin-past-exam', id] });
       qc.invalidateQueries({ queryKey: ['admin-past-exams'] });
     },
@@ -50,8 +63,9 @@ export default function PastExamDetailPage() {
         `/admin/past-exams/${id}/motora-bagla`,
         { method: 'POST' },
       ),
+    onError: hataVer,
     onSuccess: (r) => {
-      setNotice(
+      bildir(
         `Motora bağlandı: ${r.soru} soru, ${r.dakika} dk. "Sınav gibi çöz" artık çalışıyor.`,
       );
       qc.invalidateQueries({ queryKey: ['admin-past-exam', id] });
@@ -63,10 +77,11 @@ export default function PastExamDetailPage() {
     mutationFn: (v: boolean) =>
       api(`/admin/past-exams/${id}`, {
         method: 'PATCH',
-        body: JSON.stringify({ isPremium: v }),
+        body: { isPremium: v },
       }),
+    onError: hataVer,
     onSuccess: (_d, v) => {
-      setNotice(
+      bildir(
         v
           ? 'Dönem Premium’a alındı. Public SEO sayfası etkilenmez.'
           : 'Dönem herkese açıldı.',
@@ -80,8 +95,9 @@ export default function PastExamDetailPage() {
     mutationFn: (v: { questionId: string; publicly?: boolean; cancelled?: boolean }) =>
       api(`/admin/past-exams/${id}/questions/${v.questionId}`, {
         method: 'PATCH',
-        body: JSON.stringify({ publicly: v.publicly, cancelled: v.cancelled }),
+        body: { publicly: v.publicly, cancelled: v.cancelled },
       }),
+    onError: hataVer,
     onSuccess: () => qc.invalidateQueries({ queryKey: ['admin-past-exam', id] }),
   });
 
@@ -115,6 +131,9 @@ export default function PastExamDetailPage() {
 
       {notice && (
         <div className="mb-4 rounded-lg bg-emerald-50 px-4 py-2 text-sm text-emerald-800">{notice}</div>
+      )}
+      {hata && (
+        <div className="mb-4 rounded-lg bg-rose-50 px-4 py-2 text-sm text-rose-800">{hata}</div>
       )}
 
       <CozulebilirlikKutusu

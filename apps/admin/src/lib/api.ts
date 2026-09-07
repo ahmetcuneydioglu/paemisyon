@@ -15,6 +15,12 @@ export class ApiError extends Error {
 /**
  * NestJS API çağrısı (Doc 7): Bearer token ekler, {data}/{error} zarfını açar.
  * Panel iş mantığı İÇERMEZ — yalnızca API'yi çağırır (Doc 9 §1).
+ *
+ * DİKKAT: `body` DÜZ NESNE verilir, `JSON.stringify` EDİLMEZ — bu fonksiyon
+ * zaten stringliyor. Önceden stringlenmiş gövde çift kodlanır; Express'in JSON
+ * çözücüsü üst seviyede metin kabul etmediği için istek 400 döner ve mutasyon
+ * sessizce başarısız olur. Çıkmış sınav sayfasında "Yayına al", soru onay
+ * kutuları ve Premium tiki bu yüzden hiç çalışmıyordu (7 Eyl 2026).
  */
 export async function api<T>(
   path: string,
