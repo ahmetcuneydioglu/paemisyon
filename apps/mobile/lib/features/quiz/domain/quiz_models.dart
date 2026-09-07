@@ -42,21 +42,49 @@ class StartedSession {
   final String sessionId;
   final String mode;
 
-  /// Deneme sınavı süresi (sn) — exam modunda dolu; sayaç bundan çalışır.
+  /// Deneme sınavı süresi (sn) — exam modunda dolu.
   final int? plannedDurationSeconds;
+
+  /// Sayacın gerçekten başlayacağı değer. Yarım kalmış bir oturuma dönüldüğünde
+  /// planlanan süreden DEĞİL, ilk başlangıçtan hesaplanır — çıkıp girmek ek
+  /// süre kazandırmaz. Verilmezse planlanan süreye düşer.
+  final int? remainingSeconds;
+
+  /// Sunucu yarım kalan oturumu sürdürdü mü (yeni oturum açmak yerine).
+  final bool resumed;
+
+  /// Süresi dolduğu için kapatılan önceki deneme — kullanıcıya haber verilir,
+  /// yoksa "50 soru çözmüştüm, sıfırlandı" izlenimi kalır.
+  final String? expiredAttemptId;
+
+  /// Sürdürülen oturumda daha önce cevaplanmış sorular.
+  final Set<String> answeredQuestionIds;
   final List<QuizQuestion> questions;
 
   const StartedSession({
     required this.sessionId,
     required this.mode,
     this.plannedDurationSeconds,
+    this.remainingSeconds,
+    this.resumed = false,
+    this.expiredAttemptId,
+    this.answeredQuestionIds = const {},
     required this.questions,
   });
+
+  /// Sayaç bu değerden başlar.
+  int? get sayacSaniye => remainingSeconds ?? plannedDurationSeconds;
 
   factory StartedSession.fromJson(Map<String, dynamic> j) => StartedSession(
         sessionId: j['sessionId'] as String,
         mode: j['mode'] as String,
         plannedDurationSeconds: j['plannedDurationSeconds'] as int?,
+        remainingSeconds: j['remainingSeconds'] as int?,
+        resumed: j['resumed'] as bool? ?? false,
+        expiredAttemptId: j['expiredAttemptId'] as String?,
+        answeredQuestionIds: ((j['givenAnswers'] as List<dynamic>? ?? const [])
+                .map((e) => (e as Map<String, dynamic>)['questionId'] as String))
+            .toSet(),
         questions: (j['questions'] as List<dynamic>)
             .map((e) => QuizQuestion.fromJson(e as Map<String, dynamic>))
             .toList(),
@@ -71,6 +99,9 @@ class ActiveSession {
   final int answeredCount;
   final String? scopeName;
 
+  /// Süreli oturumda kalan saniye; süresiz turda null.
+  final int? remainingSeconds;
+
   /// Eski oturumlarda soru sırası kayıtlı değil → gerçek devam mümkün değil;
   /// istemci "bitir ve sonucu gör" yolunu sunar.
   final bool resumable;
@@ -81,6 +112,7 @@ class ActiveSession {
     required this.totalQuestions,
     required this.answeredCount,
     this.scopeName,
+    this.remainingSeconds,
     required this.resumable,
   });
 
@@ -90,6 +122,7 @@ class ActiveSession {
         totalQuestions: j['totalQuestions'] as int? ?? 0,
         answeredCount: j['answeredCount'] as int? ?? 0,
         scopeName: j['scopeName'] as String?,
+        remainingSeconds: j['remainingSeconds'] as int?,
         resumable: j['resumable'] as bool? ?? false,
       );
 }

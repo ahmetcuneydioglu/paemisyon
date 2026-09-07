@@ -227,6 +227,41 @@ olduğunu bilememesi olurdu.
 İptal edilen sorular çalışma modunda rozetle görünür ama doğru sayacına
 girmez; motora bağlanan sette zaten yoklar.
 
+### Yarım kalan oturum ve sıralama (7 Eyl 2026)
+
+**Yarım oturum.** `startArchiveExam` her girişte YENİ oturum açıyordu; 100
+soruluk bir sette çıkıp girmek her şeyi sıfırlıyordu. Üretimde izi görüldü:
+bir kullanıcı altı dakikada yedi oturum açtı. Cevaplar zaten sunucudaydı,
+eksik olan geri dönüş yoluydu.
+
+Yeni davranış:
+
+- Yarım oturum varsa **sürdürülür** (en çok ilerleyen seçilir — eski hatanın
+  bıraktığı mükerrer oturumlarda "en son" kuralı 18 cevaplı dururken
+  2 cevaplıyı seçebiliyordu).
+- **Süre ilk başlangıçtan sayılır.** Çıkıp girmek ek süre kazandırsaydı
+  "sınav gibi çöz" bir ölçüm olmaktan çıkardı; acele etmeden çalışmanın yeri
+  süresiz Çalışma modudur.
+- Süre dolmuşsa oturum **kapatılır ve netiyle kaydedilir** (emek çöpe gitmez),
+  sonra taze oturum açılır; istemci `expiredAttemptId` ile kullanıcıya haber
+  verir.
+- Yarım arşiv oturumu artık Bugün ekranındaki "Devam et" kartında görünür
+  (kalan süreyle birlikte) ve terk edilenler temizlik işiyle kapanır — eskiden
+  `finalizeExpiredAttempts` yalnız `exam_id` taşıyanlara bakıyordu ve arşiv
+  oturumları sonsuza kadar açık kalıyordu.
+
+**Sıralama.** Genel sıralama mod filtresi olmadan `SUM(correct_count)`
+topluyordu; arşiv oturumları da puan yazıyordu (%6,7'si). Arşivde sınırsız
+tekrar hakkı olduğu için cevapları ezberleyen biri puan çiftçiliği
+yapabilirdi. Yeni kural: **arşiv oturumları kullanıcı+sınav başına yalnız EN
+İYİ sonucuyla sayılır**, arşiv dışı oturumların hepsi sayılmaya devam eder.
+100 soru çözmek gerçek emektir, ama aynı seti beşinci kez çözmek değil.
+Üretimde ölçüldü: tek kullanıcı etkilendi (235 → 185).
+
+Not: sınav bazlı sıralama (`/exams/:id/leaderboard`) yalnız `examId` taşıyan
+oturumları sayar; arşiv oturumlarında o alan boştur. Çıkmış sınavların canlı
+penceresi hiç açılmadığı için o sıralamalar kalıcı olarak boştur — kasıtlı.
+
 ## 8. Kural istisnası
 
 CLAUDE.md'deki "kaynak etiketi son kullanıcıya gösterilmez" kuralı (4 Eyl 2026)

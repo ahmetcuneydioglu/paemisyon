@@ -4,6 +4,7 @@ import {
   ForbiddenException,
   Injectable,
   NotFoundException,
+  Logger,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
@@ -32,6 +33,8 @@ const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
  */
 @Injectable()
 export class QuizService {
+  private readonly logger = new Logger(QuizService.name);
+
   constructor(
     private readonly prisma: PrismaService,
     private readonly progress: ProgressService,
@@ -525,6 +528,67 @@ export class QuizService {
     if (rows.length === 0) throw new NotFoundException('Denemenin soru seti boş.');
 
     const plannedDurationSeconds = exam.durationMinutes * 60;
+    const sorular = rows.map((r) => ({
+      questionId: r.questionVersion.questionId,
+      versionId: r.questionVersion.id,
+      stem: r.questionVersion.stem,
+      mediaUrl: r.questionVersion.mediaUrl,
+      options: r.questionVersion.options,
+    }));
+
+    // YARIM OTURUM: her girişte yeni oturum açmak 100 soruluk bir sınavda
+    // acımasızdı — 7 Eylül 2026'da bir kullanıcı altı dakikada yedi oturum
+    // açıp her seferinde sıfırdan başladı. Cevaplar zaten sunucuda; kayıp
+    // olan tek şey geri dönüş yoluydu.
+    const yarim = await this.prisma.quizSession.findFirst({
+      where: { userId: user.id, archiveExamId: exam.id, status: 'in_progress' },
+      // EN ÇOK İLERLEYEN önce: eski hatanın bıraktığı mükerrer oturumlarda
+      // "en son" kuralı 18 cevaplı oturum dururken 2 cevaplıyı seçebiliyordu.
+      // Kalanlar süreleri dolunca temizlik işiyle kapanır.
+      orderBy: [{ answers: { _count: 'desc' } }, { startedAt: 'desc' }],
+      select: {
+        id: true,
+        startedAt: true,
+        plannedDurationSeconds: true,
+        questionOrder: true,
+        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+      },
+    });
+
+    let expiredAttemptId: string | null = null;
+    if (yarim) {
+      const planlanan = yarim.plannedDurationSeconds ?? plannedDurationSeconds;
+      const gecen = Math.floor((Date.now() - yarim.startedAt.getTime()) / 1000);
+      const kalan = planlanan - gecen;
+      const setAyni =
+        Array.isArray(yarim.questionOrder) &&
+        (yarim.questionOrder as string[]).length === sorular.length;
+
+      if (kalan > 0 && setAyni) {
+        // Kaldığı yerden devam. Süre İLK başlangıçtan sayılır: çıkıp girmek
+        // ek süre kazandırsaydı "sınav gibi çöz" bir ölçüm olmaktan çıkardı.
+        // Acele etmeden çalışmak isteyenin yeri süresiz Çalışma modudur.
+        return {
+          sessionId: yarim.id,
+          mode: 'exam' as const,
+          plannedDurationSeconds: planlanan,
+          remainingSeconds: kalan,
+          resumed: true,
+          expiredAttemptId,
+          questions: sorular,
+          givenAnswers: yarim.answers,
+        };
+      }
+      // Süresi dolmuş (ya da soru seti değişmiş): emeği çöpe atmadan kapat,
+      // netiyle kaydet — "Arşiv sonucum"dan görülebilir. Sonra taze oturum.
+      try {
+        await this.completeSession(user.id, yarim.id);
+        expiredAttemptId = yarim.id;
+      } catch (e) {
+        this.logger.warn(`Arşiv oturumu kapatılamadı ${yarim.id}: ${(e as Error).message}`);
+      }
+    }
+
     const session = await this.prisma.quizSession.create({
       data: {
         userId: user.id,
@@ -543,13 +607,12 @@ export class QuizService {
       sessionId: session.id,
       mode: session.mode,
       plannedDurationSeconds,
-      questions: rows.map((r) => ({
-        questionId: r.questionVersion.questionId,
-        versionId: r.questionVersion.id,
-        stem: r.questionVersion.stem,
-        mediaUrl: r.questionVersion.mediaUrl,
-        options: r.questionVersion.options,
-      })),
+      remainingSeconds: plannedDurationSeconds,
+      resumed: false,
+      /** Süresi dolduğu için kapatılan önceki deneme — istemci haber verir. */
+      expiredAttemptId,
+      questions: sorular,
+      givenAnswers: [] as { questionId: string; selectedOptionId: string | null; isCorrect: boolean }[],
     };
   }
 
@@ -1077,7 +1140,18 @@ export class QuizService {
    */
   async getActiveSession(userId: string) {
     const session = await this.prisma.quizSession.findFirst({
-      where: { userId, status: 'in_progress', mode: { in: ['practice', 'review', 'daily'] } },
+      where: {
+        userId,
+        status: 'in_progress',
+        OR: [
+          { mode: { in: ['practice', 'review', 'daily'] } },
+          // Arşivden çözülen çıkmış sınav da "devam eden tur"dur (Doc 36):
+          // 100 soruluk bir sette çıkıp girmek olağan ve kullanıcı geri
+          // dönüş yolunu burada arıyor. Canlı deneme (examId) DIŞARIDA
+          // kalır — onun kendi penceresi ve akışı var.
+          { mode: 'exam', archiveExamId: { not: null } },
+        ],
+      },
       orderBy: { startedAt: 'desc' },
       select: {
         id: true,
@@ -1085,6 +1159,8 @@ export class QuizService {
         totalQuestions: true,
         startedAt: true,
         questionOrder: true,
+        plannedDurationSeconds: true,
+        archiveExam: { select: { title: true } },
         topic: { select: { name: true } },
         course: { select: { name: true } },
         _count: { select: { answers: true } },
@@ -1097,7 +1173,17 @@ export class QuizService {
       totalQuestions: session.totalQuestions,
       answeredCount: session._count.answers,
       startedAt: session.startedAt,
-      scopeName: session.topic?.name ?? session.course?.name ?? null,
+      scopeName:
+        session.topic?.name ?? session.course?.name ?? session.archiveExam?.title ?? null,
+      /** Süreli oturumda kalan saniye; süresiz turda null. */
+      remainingSeconds:
+        session.plannedDurationSeconds != null
+          ? Math.max(
+              0,
+              session.plannedDurationSeconds -
+                Math.floor((Date.now() - session.startedAt.getTime()) / 1000),
+            )
+          : null,
       // Eski oturumlarda soru sırası yok → gerçek devam mümkün değil; istemci
       // 'bitir ve sonucu gör' yolunu sunar.
       resumable: Array.isArray(session.questionOrder) && session.questionOrder.length > 0,
@@ -1113,6 +1199,8 @@ export class QuizService {
         mode: true,
         status: true,
         questionOrder: true,
+        startedAt: true,
+        plannedDurationSeconds: true,
         answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
       },
     });
@@ -1139,9 +1227,21 @@ export class QuizService {
       },
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
+    // Kalan süre İLK başlangıçtan hesaplanır — devam etmek ek süre
+    // kazandırmaz. Süresiz oturumlarda (practice/review) null.
+    const kalan =
+      session.plannedDurationSeconds != null
+        ? Math.max(
+            0,
+            session.plannedDurationSeconds -
+              Math.floor((Date.now() - session.startedAt.getTime()) / 1000),
+          )
+        : null;
     return {
       sessionId: session.id,
       mode: session.mode,
+      plannedDurationSeconds: session.plannedDurationSeconds,
+      remainingSeconds: kalan,
       questions: versionIds
         .map((vid) => byId.get(vid))
         .filter((v): v is NonNullable<typeof v> => v != null)

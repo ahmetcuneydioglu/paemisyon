@@ -153,6 +153,20 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         s = resumed.session;
         startIndex = s.questions
             .indexWhere((q) => !resumed.answeredQuestionIds.contains(q.questionId));
+      } else if (widget.archiveExamId != null) {
+        // Arşiv sınavı (çıkmış sınav dâhil): sunucu yarım oturum varsa onu
+        // SÜRDÜRÜR. Her girişte sıfırdan başlamak 100 soruluk bir sette
+        // acımasızdı — 7 Eyl 2026'da bir kullanıcı altı dakikada yedi oturum
+        // açtı. Cevaplar zaten sunucudaydı; eksik olan geri dönüş yoluydu.
+        s = await repo.start(
+          mode: widget.mode,
+          archiveExamId: widget.archiveExamId,
+          count: widget.questionCount,
+        );
+        if (s.resumed) {
+          startIndex = s.questions
+              .indexWhere((q) => !s.answeredQuestionIds.contains(q.questionId));
+        }
       } else {
         s = await repo.start(
           mode: widget.mode,
@@ -184,8 +198,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           }
         });
       }
-      if (s.plannedDurationSeconds != null) {
-        _startTimer(s.plannedDurationSeconds!);
+      // Sayaç kalan süreden başlar (sürdürülen oturumda planlanandan değil).
+      final sayac = s.sayacSaniye;
+      if (sayac != null) _startTimer(sayac);
+      // Süresi dolduğu için kapatılan önceki deneme sessizce kaybolmasın.
+      if (s.expiredAttemptId != null && mounted) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (!mounted) return;
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text(
+                'Önceki denemenin süresi dolmuştu; cevapların netiyle kaydedildi. '
+                'Bu yeni bir deneme.',
+              ),
+              duration: Duration(seconds: 5),
+            ),
+          );
+        });
       }
       if (!_isPractice) _maybeShowSwipeHint();
     } catch (e) {

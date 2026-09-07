@@ -11,6 +11,10 @@ export const dynamic = "force-dynamic";
 interface ArchiveStart {
   sessionId: string;
   plannedDurationSeconds: number | null;
+  /** Yarım oturuma dönüldüyse ilk başlangıçtan kalan süre (Doc 36). */
+  remainingSeconds: number | null;
+  resumed: boolean;
+  givenAnswers: { questionId: string; selectedOptionId: string | null }[];
   questions: {
     questionId: string;
     versionId: string;
@@ -49,16 +53,17 @@ export default async function ArsivSinavPage({
     throw e;
   }
 
+  // Sunucu yarım oturumu SÜRDÜRÜR: verilen cevaplar geri gelir ve süre ilk
+  // başlangıçtan sayılır — çıkıp girmek ek süre kazandırmaz (Doc 36 §7.2).
+  const kalan = start.remainingSeconds ?? start.plannedDurationSeconds ?? 0;
   const payload: StartPayload = {
     sessionId: start.sessionId,
     examId,
     title,
-    endsAt: new Date(
-      Date.now() + (start.plannedDurationSeconds ?? 0) * 1000,
-    ).toISOString(),
+    endsAt: new Date(Date.now() + kalan * 1000).toISOString(),
     liveAnswerReveal: false,
     questions: start.questions.map((q, i) => ({ order: i + 1, ...q })),
-    givenAnswers: [],
+    givenAnswers: start.givenAnswers ?? [],
   };
 
   return <ExamPlayer start={payload} archive />;

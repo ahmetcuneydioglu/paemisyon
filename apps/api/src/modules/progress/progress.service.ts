@@ -286,24 +286,51 @@ export class ProgressService {
    * ömür-boyu XP (rütbe skoru), seviye, başarı %, rozet ve son aktifliği taşır.
    * İlk 50 + kullanıcının kendi satırı (listede olmasa da) + sayfa özeti döner.
    */
+  /**
+   * Sıralamaya giren oturumlar (Doc 36, 7 Eyl 2026 kararı).
+   *
+   * Arşivden çözülen sınav puana yazılır — 100 soru çözmek gerçek emektir.
+   * Ama SINIRSIZ TEKRAR hakkı var ve cevapları ezberleyen biri aynı seti
+   * defalarca çözüp puan çiftçiliği yapabilirdi. Bu yüzden arşiv oturumları
+   * kullanıcı+sınav başına yalnız EN İYİ sonucuyla sayılır; arşiv dışı
+   * oturumların hepsi sayılmaya devam eder.
+   */
+  private puanlananOturumlar(fromClause: Prisma.Sql) {
+    return Prisma.sql`
+      SELECT qs.user_id, qs.correct_count, qs.completed_at
+      FROM quiz_sessions qs
+      WHERE qs.status = 'completed' AND qs.archive_exam_id IS NULL ${fromClause}
+      UNION ALL
+      SELECT user_id, correct_count, completed_at FROM (
+        SELECT qs.user_id, qs.correct_count, qs.completed_at,
+               ROW_NUMBER() OVER (
+                 PARTITION BY qs.user_id, qs.archive_exam_id
+                 ORDER BY qs.correct_count DESC, qs.completed_at ASC
+               ) AS sira
+        FROM quiz_sessions qs
+        WHERE qs.status = 'completed' AND qs.archive_exam_id IS NOT NULL ${fromClause}
+      ) arsiv WHERE arsiv.sira = 1`;
+  }
+
   async getLeaderboard(userId: string, period: LeaderboardPeriod) {
     const from = this.leaderboardFrom(period);
     const fromClause = from ? Prisma.sql`AND qs.started_at >= ${from}` : Prisma.empty;
+    const puanlanan = this.puanlananOturumlar(fromClause);
 
     const [topRows, mineRow, stats] = await Promise.all([
       this.prisma.$queryRaw<{ user_id: string; points: number }[]>(Prisma.sql`
-        SELECT qs.user_id, SUM(qs.correct_count)::int AS points
-        FROM quiz_sessions qs
-        JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
-        WHERE qs.status = 'completed' ${fromClause}
-        GROUP BY qs.user_id
-        HAVING SUM(qs.correct_count) > 0
-        ORDER BY points DESC, MAX(qs.completed_at) ASC
+        WITH puanlanan AS (${puanlanan})
+        SELECT p.user_id, SUM(p.correct_count)::int AS points
+        FROM puanlanan p
+        JOIN users u ON u.id = p.user_id AND u.deleted_at IS NULL
+        GROUP BY p.user_id
+        HAVING SUM(p.correct_count) > 0
+        ORDER BY points DESC, MAX(p.completed_at) ASC
         LIMIT 50`),
       this.prisma.$queryRaw<{ points: number }[]>(Prisma.sql`
-        SELECT COALESCE(SUM(qs.correct_count), 0)::int AS points
-        FROM quiz_sessions qs
-        WHERE qs.user_id = ${userId}::uuid AND qs.status = 'completed' ${fromClause}`),
+        WITH puanlanan AS (${puanlanan})
+        SELECT COALESCE(SUM(p.correct_count), 0)::int AS points
+        FROM puanlanan p WHERE p.user_id = ${userId}::uuid`),
       this.leaderboardStats(),
     ]);
 
@@ -313,13 +340,13 @@ export class ProgressService {
     let myRank: number | null = null;
     if (myPoints > 0 && !inTop) {
       const rankRow = await this.prisma.$queryRaw<{ rank: number }[]>(Prisma.sql`
+        WITH puanlanan AS (${puanlanan})
         SELECT COUNT(*)::int + 1 AS rank FROM (
-          SELECT qs.user_id
-          FROM quiz_sessions qs
-          JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
-          WHERE qs.status = 'completed' ${fromClause}
-          GROUP BY qs.user_id
-          HAVING SUM(qs.correct_count) > ${myPoints}
+          SELECT p.user_id
+          FROM puanlanan p
+          JOIN users u ON u.id = p.user_id AND u.deleted_at IS NULL
+          GROUP BY p.user_id
+          HAVING SUM(p.correct_count) > ${myPoints}
         ) better`);
       myRank = rankRow[0]?.rank ?? null;
     }
@@ -367,12 +394,14 @@ export class ProgressService {
       this.prisma.userStats.aggregate({ _sum: { totalSolved: true } }),
       this.prisma.dailyUsage.count({ where: { questionsAnswered: { gt: 0 } } }),
       this.prisma.$queryRaw<{ display_name: string; points: number }[]>(Prisma.sql`
-        SELECT u.display_name, SUM(qs.correct_count)::int AS points
-        FROM quiz_sessions qs
-        JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
-        WHERE qs.status = 'completed' AND qs.started_at >= ${dayStart}
+        WITH puanlanan AS (${this.puanlananOturumlar(
+          Prisma.sql`AND qs.started_at >= ${dayStart}`,
+        )})
+        SELECT u.display_name, SUM(p.correct_count)::int AS points
+        FROM puanlanan p
+        JOIN users u ON u.id = p.user_id AND u.deleted_at IS NULL
         GROUP BY u.display_name
-        HAVING SUM(qs.correct_count) > 0
+        HAVING SUM(p.correct_count) > 0
         ORDER BY points DESC
         LIMIT 1`),
     ]);

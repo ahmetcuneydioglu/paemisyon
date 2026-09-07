@@ -405,6 +405,17 @@ export class ExamsService {
       WHERE qs.status = 'in_progress'
         AND qs.exam_id IS NOT NULL
         AND (e.start_at + make_interval(mins => e.duration_minutes)) < now()
+      UNION ALL
+      -- Arşivden çözülen oturumlar (çıkmış sınav dâhil) buraya girmiyordu ve
+      -- sonsuza kadar 'in_progress' kalıyordu: 7 Eylül 2026'da 10 tanesi
+      -- açıkta duruyordu. Onların penceresi denemenin tarihi değil, kendi
+      -- başlangıçları + planlanan süredir.
+      SELECT qs.id, qs.user_id
+      FROM quiz_sessions qs
+      WHERE qs.status = 'in_progress'
+        AND qs.archive_exam_id IS NOT NULL
+        AND qs.planned_duration_seconds IS NOT NULL
+        AND (qs.started_at + make_interval(secs => qs.planned_duration_seconds)) < now()
       LIMIT 500`;
     if (stale.length === 0) return;
 
@@ -419,7 +430,7 @@ export class ExamsService {
         this.logger.warn(`Katılım kapatılamadı ${row.id}: ${(e as Error).message}`);
       }
     }
-    this.logger.log(`Süresi dolan katılım kapatıldı: ${ok}/${stale.length}`);
+    this.logger.log(`Süresi dolan oturum kapatıldı: ${ok}/${stale.length}`);
   }
 
   // ── Deneme sıralaması (public; pencere kapanmadan liste verilmez) ──

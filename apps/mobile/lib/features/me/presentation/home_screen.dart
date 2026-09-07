@@ -572,8 +572,12 @@ class _ActiveSessionCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Yarım kalan turun var'
-                    '${active.scopeName != null ? ' · ${active.scopeName}' : ''}',
+                    // Süreli oturum (arşivden çözülen sınav) "tur" değildir;
+                    // kullanıcı sayacın işlediğini bilmeli.
+                    (active.mode == 'exam'
+                            ? 'Yarım kalan sınavın var'
+                            : 'Yarım kalan turun var') +
+                        (active.scopeName != null ? ' · ${active.scopeName}' : ''),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: AppTypography.label.copyWith(color: tokens.ink),
@@ -581,6 +585,7 @@ class _ActiveSessionCard extends StatelessWidget {
                   Text(
                     active.resumable
                         ? '${active.answeredCount}/${active.totalQuestions} çözüldü — kaldığın yerden devam et'
+                            '${_kalanMetni(active.remainingSeconds)}'
                         : '${active.answeredCount}/${active.totalQuestions} çözüldü — bitir, sonucunu gör',
                     style:
                         AppTypography.caption.copyWith(color: tokens.inkSoft),
@@ -594,6 +599,15 @@ class _ActiveSessionCard extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Süreli oturumda kalan süre. Sayaç ilk başlangıçtan işlediği için burada
+/// göstermek şart: kullanıcı "iki saat sonra dönerim" diye düşünmesin.
+String _kalanMetni(int? saniye) {
+  if (saniye == null) return '';
+  if (saniye <= 0) return ' · süre doldu';
+  final dk = saniye ~/ 60;
+  return dk >= 1 ? ' · $dk dk kaldı' : ' · 1 dk’dan az kaldı';
 }
 
 // ── Seri sigortası pili (Doc 24 §7.2) ──
