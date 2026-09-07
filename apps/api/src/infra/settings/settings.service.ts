@@ -6,6 +6,11 @@ export const SETTING_KEYS = {
   /// Soru kaynağı etiketi ("30 Kasım 2025 Adalet Bakanlığı GYS") kullanıcıya
   /// gösterilsin mi? Panelden aç/kapa; kapalıyken payload'a hiç yazılmaz.
   showQuestionSource: 'show_question_source',
+  /// Bugün ekranındaki "Çıkmış sınavlar" keşif kartı (Doc 36) açık mı?
+  /// Varsayılanı KAPALI: kart, ekranı içeren mağaza sürümü yayına çıkmadan
+  /// önce açılırsa güncellemeyen kullanıcı Denemeler listesine düşer ve
+  /// kartın verdiği sözü ekranda bulamaz.
+  coachCikmisSinavKarti: 'coach_cikmis_sinav_karti',
 } as const;
 
 /**
@@ -15,6 +20,7 @@ export const SETTING_KEYS = {
  * kurulduğunda etiket sessizce sızardı.
  */
 export const SHOW_QUESTION_SOURCE_DEFAULT = false;
+export const COACH_CIKMIS_SINAV_KARTI_DEFAULT = false;
 
 const CACHE_MS = 60_000;
 
@@ -40,6 +46,14 @@ export class SettingsService {
   /** Kaynak etiketi gösterilsin mi? Tek karar noktası — varsayılan KAPALI. */
   async showQuestionSource(): Promise<boolean> {
     return this.getBool(SETTING_KEYS.showQuestionSource, SHOW_QUESTION_SOURCE_DEFAULT);
+  }
+
+  /** Çıkmış sınav keşif kartı açık mı? Varsayılan KAPALI (mağaza sürümü şartı). */
+  async coachCikmisSinavKarti(): Promise<boolean> {
+    return this.getBool(
+      SETTING_KEYS.coachCikmisSinavKarti,
+      COACH_CIKMIS_SINAV_KARTI_DEFAULT,
+    );
   }
 
   async getBool(key: string, fallback: boolean): Promise<boolean> {

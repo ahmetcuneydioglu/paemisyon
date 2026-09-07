@@ -138,22 +138,30 @@ export class AdminController {
   async getSettings() {
     return {
       showQuestionSource: await this.settings.showQuestionSource(),
+      coachCikmisSinavKarti: await this.settings.coachCikmisSinavKarti(),
     };
   }
 
-  /// Kaynak etiketi gösterimini aç/kapa (Doc 9). Değişiklik ~1 dk içinde
-  /// tüm istemcilere yansır (SettingsService önbelleği).
+  /// Ayarları aç/kapa. Değişiklik ~1 dk içinde tüm istemcilere yansır
+  /// (SettingsService önbelleği).
+  ///   showQuestionSource      — kaynak etiketi gösterimi (Doc 9)
+  ///   coachCikmisSinavKarti   — Bugün ekranındaki çıkmış sınav keşif kartı
+  ///                             (Doc 36 §7.2). Ekranı içeren mağaza sürümü
+  ///                             yayına çıkmadan AÇMA.
   @Patch('settings')
   @Roles('admin')
   async updateSettings(
     @CurrentUser() actor: AuthenticatedUser,
-    @Body() body: { showQuestionSource?: boolean },
+    @Body() body: { showQuestionSource?: boolean; coachCikmisSinavKarti?: boolean },
   ) {
-    if (typeof body.showQuestionSource === 'boolean') {
-      await this.settings.set(SETTING_KEYS.showQuestionSource, String(body.showQuestionSource));
-      await this.audit.log(actor, 'settings.update', 'setting', SETTING_KEYS.showQuestionSource, {
-        value: body.showQuestionSource,
-      });
+    const degisenler: [string, boolean | undefined][] = [
+      [SETTING_KEYS.showQuestionSource, body.showQuestionSource],
+      [SETTING_KEYS.coachCikmisSinavKarti, body.coachCikmisSinavKarti],
+    ];
+    for (const [key, value] of degisenler) {
+      if (typeof value !== 'boolean') continue;
+      await this.settings.set(key, String(value));
+      await this.audit.log(actor, 'settings.update', 'setting', key, { value });
     }
     return this.getSettings();
   }

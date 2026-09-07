@@ -1,6 +1,6 @@
 'use client';
 
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
 import { api } from '@/lib/api';
@@ -25,6 +25,54 @@ function KindBadge({ kind }: { kind: AdminPastExamListItem['kind'] }) {
   );
 }
 
+/**
+ * Bugün ekranındaki "Çıkmış sınavlar" keşif kartı anahtarı (Doc 36 §7.2).
+ *
+ * Kart sunucudan gelir; hiç çözmemiş kullanıcıya görünür, bir dönem çözülünce
+ * kendiliğinden susar. Varsayılanı KAPALI ve öyle kalmalı: ekranı içeren
+ * mağaza sürümü yayına çıkmadan açılırsa, güncellemeyen kullanıcı karta
+ * dokununca deneme listesine düşer ve kartın verdiği sözü ekranda bulamaz.
+ */
+function KesifKartiToggle() {
+  const qc = useQueryClient();
+  type Ayarlar = { coachCikmisSinavKarti: boolean };
+  const settings = useQuery({
+    queryKey: ['admin-settings'],
+    queryFn: () => api<Ayarlar>('/admin/settings'),
+  });
+  const update = useMutation({
+    mutationFn: (v: boolean) =>
+      api<Ayarlar>('/admin/settings', {
+        method: 'PATCH',
+        body: { coachCikmisSinavKarti: v },
+      }),
+    onSuccess: (r) => qc.setQueryData(['admin-settings'], r),
+  });
+  const on = settings.data?.coachCikmisSinavKarti ?? false;
+  return (
+    <Card className="mb-4">
+      <label className="flex cursor-pointer items-start gap-3 text-sm">
+        <input
+          type="checkbox"
+          className="mt-0.5"
+          checked={on}
+          disabled={settings.isLoading || update.isPending}
+          onChange={(e) => update.mutate(e.target.checked)}
+        />
+        <span>
+          <span className="font-medium">Bugün ekranında keşif kartı göster</span>
+          <span className="mt-0.5 block text-xs text-slate-500">
+            Hiç çıkmış sınav çözmemiş kullanıcıya Bugün ekranında kart çıkar; bir
+            dönem çözülünce kendiliğinden susar. Yeni dönem yayımlanınca geri
+            gelir. <strong>Uygulama sürümü yayına çıkmadan açma</strong> —
+            güncellemeyen kullanıcı bu ekranı göremez.
+          </span>
+        </span>
+      </label>
+    </Card>
+  );
+}
+
 /** Çıkmış sınav vitrini (Doc 36): dönemler, yayın durumu, public soru sayısı. */
 export default function PastExamsPage() {
   const q = useQuery({
@@ -38,6 +86,8 @@ export default function PastExamsPage() {
         title="Çıkmış Sınavlar"
         subtitle="paemisyon.com/paem-cikmis-sorular vitrini — yayınlanmayan dönem sitede görünmez"
       />
+
+      <KesifKartiToggle />
 
       {q.isPending ? (
         <Spinner />

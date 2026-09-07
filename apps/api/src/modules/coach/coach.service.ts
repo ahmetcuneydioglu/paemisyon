@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft } from '../progress/streak.logic';
 import { computeRank, rankScore } from './rank.logic';
@@ -16,7 +17,10 @@ const WEEKLY_GOAL_DAYS = 5;
  */
 @Injectable()
 export class CoachService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly settings: SettingsService,
+  ) {}
 
   async brief(user: AuthenticatedUser): Promise<CoachBrief> {
     const ctx = await this.buildContext(user);
@@ -136,6 +140,9 @@ export class CoachService {
       snapshots,
       recentUsage,
       recentDeneme,
+      cikmisSinavlar,
+      cikmisCozumlerim,
+      cikmisKartAcik,
     ] = await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
@@ -227,6 +234,34 @@ export class CoachService {
         orderBy: { completedAt: 'desc' },
         select: { examId: true, wrongCount: true, exam: { select: { title: true } } },
       }),
+      // Çıkmış sınavlar (Doc 36): yalnız motora bağlı resmî dönemler — analiz
+      // dönemlerinde soru yok, çözülecek bir şey de yok.
+      this.prisma.pastExam.findMany({
+        where: {
+          status: 'published',
+          deletedAt: null,
+          kind: 'resmi',
+          examId: { not: null },
+        },
+        orderBy: [{ sortOrder: 'desc' }, { heldOn: 'desc' }],
+        select: {
+          slug: true,
+          name: true,
+          term: true,
+          examId: true,
+          questionCount: true,
+          // `questionCount` elle girilen bir alan ve boş bırakılabiliyor
+          // (PAEM 9'da NULL) — bağlı soru sayısı yedek. Public vitrin de aynı
+          // yedeği kullanıyor; kart ondan farklı bir sayı söylememeli.
+          _count: { select: { questions: true } },
+        },
+      }),
+      // Arşivde çözdüklerim: çıkmış sınav oturumu `archiveExamId` taşır.
+      this.prisma.quizSession.findMany({
+        where: { userId: user.id, status: 'completed', archiveExamId: { not: null } },
+        select: { archiveExamId: true },
+      }),
+      this.settings.coachCikmisSinavKarti(),
     ]);
 
     // ── Deneme durumları ──
@@ -380,6 +415,20 @@ export class CoachService {
         newPublished: newPublished ? { id: newPublished.id, title: newPublished.title } : null,
         completedCount: denemeAgg._count._all,
         bestNet: denemeAgg._max.score != null ? Number(denemeAgg._max.score) : null,
+      },
+      cikmisSinavlar: {
+        kartAcik: cikmisKartAcik,
+        cozulebilirSayisi: cikmisSinavlar.length,
+        toplamSoru: cikmisSinavlar.reduce(
+          (t, s) => t + (s.questionCount ?? s._count.questions),
+          0,
+        ),
+        cozulmemisEnYeni: (() => {
+          const cozulen = new Set(cikmisCozumlerim.map((o) => o.archiveExamId));
+          // Liste zaten yeniden eskiye sıralı; ilk çözülmemiş en yenisidir.
+          const y = cikmisSinavlar.find((e) => !cozulen.has(e.examId));
+          return y ? { slug: y.slug, ad: y.name, donem: y.term } : null;
+        })(),
       },
       dailyQuizPlayed: dailySession?.status === 'completed',
       nextBadge,

@@ -149,6 +149,7 @@ altyapı önceden kurulursa mümkün.
 | Sitemap + iç bağlantı (üst menü, footer, PAEM rehberi, komut paleti) | ✅ |
 | PAEM 10 hazırlığı | ✅ `PAEM10-GECESI.md`, URL ayrıldı |
 | Mobil (Flutter) yüzey | ✅ 7 Eyl 2026 — Denemeler sekmesinde giriş kartı + vitrin + dönem ekranı + çalışma modu |
+| Bugün keşif kartı (koç) | ✅ 7 Eyl 2026 — panelden aç/kapa, varsayılan KAPALI (mağaza sürümü şartı) |
 
 **Bekleyen tek şey kullanıcı onayı:** PAEM 9'un 100 sorusu ve PAEM 8'in 47
 açıklaması onay kuyruğunda. Onaylanınca `cikmis-vitrin-sec.ts` yeniden
@@ -182,6 +183,41 @@ açılan bir giriş kartı kondu.
 | Vitrin | `/denemeler/cikmis` | Dönem kartları, tür rozeti, ders dağılımı |
 | Dönem | `/denemeler/cikmis/:slug` | İki mod + konu dağılımı + eksik/iptal notları |
 | Çalışma modu | `/denemeler/cikmis/:slug/calis` | Soru soru, anında cevap + açıklama, numara ızgarası |
+
+### Keşif: Bugün ekranındaki koç kartı
+
+Yerleşim tartışmasında (7 Eyl 2026) üç seçenek vardı: alt sekme, Bugün ekranı,
+Denemeler. Karar: **kalıcı ev Denemeler, Bugün'de zamanlı koç kartı.**
+
+Alt sekme elendi — çıkmış sınavlar TÜKETİLEN bir kaynak (iki dönem, aday bunları
+bir kez çözer), gezinmenin 1/5'ini hak etmiyor; ayrıca iPhone'da 6. sekme
+etiketleri sıkıştırır. Bugün'e kalıcı vitrin de elendi: orası günlük döngünün
+yeri.
+
+Ama gerçek bir keşif açığı vardı: `"paem çıkmış sorular"` aramasından gelip
+uygulamayı indiren kişi Bugün ekranına düşüyor ve aradığı şeyin Denemeler
+sekmesinde olduğunu tahmin etmek zorunda. Çözüm `cikmis_sinav` koç kartı:
+
+- Hiç çıkmış sınav çözmemişse görünür, bir dönem çözülünce **susar**.
+- Yeni dönem yayımlanınca (PAEM 10) kendiliğinden geri gelir.
+- `priority: 72` — günlük hedefi (75) ezmez, günün quizinin (55) önüne geçer.
+- Panelden aç/kapa: **Çıkmış Sınavlar → "Bugün ekranında keşif kartı göster"**.
+  Varsayılan KAPALI.
+
+**İki tuzak ve çözümleri:**
+
+1. **Eski mağaza sürümü `/denemeler/cikmis`i bilmiyor** ve go_router bilinmeyen
+   rotada kırmızı hata ekranı veriyor (errorBuilder yok). Bu yüzden kartın
+   `route`'u en düşük ortak payda: `/denemeler`. Vitrine gitmeyi kart **TİPİ**
+   belirler — yeni sürüm `cikmis_sinav` tipini görünce vitrine gider, eski
+   sürüm bildiği deneme listesine düşer. Anahtarın varsayılanının kapalı
+   olması da bu yüzden: sürüm yayına çıkmadan açılmamalı.
+2. **`webRoute` `/denemeler` ile başlayan her yolu geçiriyordu** — kart webde
+   404 verirdi. Artık tipi de okuyor ve `/paem-cikmis-sorular`a çeviriyor.
+
+`PastExam.questionCount` elle girilen bir alan ve PAEM 9'da NULL — koç bağlamı
+public vitrinle aynı yedeği (bağlı soru sayısı) kullanır, yoksa kart "200"
+yerine "100 gerçek soru" derdi.
 
 Çalışma modu sunucuya oturum AÇMAZ: doğru cevap ve açıklama zaten yükte
 geliyor. Süre tutulmaz, net hesaplanmaz, hiçbir yere yazılmaz — ölçmek isteyen

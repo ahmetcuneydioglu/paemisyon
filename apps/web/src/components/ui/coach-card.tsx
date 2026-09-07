@@ -27,8 +27,9 @@ export function CoachCard({
   title: string;
   body?: string;
   cta?: { label: string; route: string };
-  /** Mobil route'larını web karşılığına eşler. */
-  routeMapper: (route: string) => string;
+  /** Mobil route'larını web karşılığına eşler. Bazı kartlarda hedefi rota
+   *  değil kart TİPİ belirler (bkz. cikmis_sinav — Doc 36 §7.2). */
+  routeMapper: (route: string, type?: string) => string;
 }) {
   const icon = typeIcon[type] ?? (type.startsWith("exam") ? "🏆" : "🎯");
   return (
@@ -41,7 +42,7 @@ export function CoachCard({
         {body && <p className="mt-0.5 text-[13px] leading-relaxed text-ink-soft">{body}</p>}
         {cta && (
           <Link
-            href={routeMapper(cta.route)}
+            href={routeMapper(cta.route, type)}
             className="mt-2 inline-block text-[13px] font-bold text-brand hover:underline"
           >
             {cta.label} →

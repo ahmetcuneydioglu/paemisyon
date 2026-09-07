@@ -1,5 +1,6 @@
 import { CoachRule } from '../coach.types';
 import { badgeNearRule } from './badge-near.rule';
+import { cikmisSinavRule } from './cikmis-sinav.rule';
 import { comebackRule } from './comeback.rule';
 import { examModeRule } from './exam-mode.rule';
 import { slumpWatchRule } from './slump-watch.rule';
@@ -41,4 +42,5 @@ export const coachRules: CoachRule[] = [
   taperRule,
   slumpWatchRule,
   aftermathRule,
+  cikmisSinavRule,
 ];

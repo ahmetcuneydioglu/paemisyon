@@ -1,6 +1,7 @@
 import { CoachContext } from './coach.types';
 import { deriveMode } from './coach.service';
 import { badgeNearRule } from './rules/badge-near.rule';
+import { cikmisSinavRule } from './rules/cikmis-sinav.rule';
 import { comebackRule } from './rules/comeback.rule';
 import { examModeRule } from './rules/exam-mode.rule';
 import { slumpWatchRule } from './rules/slump-watch.rule';
@@ -44,6 +45,12 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
       newPublished: null,
       completedCount: 0,
       bestNet: null,
+    },
+    cikmisSinavlar: {
+      kartAcik: true,
+      cozulebilirSayisi: 0,
+      toplamSoru: 0,
+      cozulmemisEnYeni: null,
     },
     dailyQuizPlayed: true,
     nextBadge: null,
@@ -402,5 +409,63 @@ describe('deriveMode (durum makinesi etiketi — Doc 25 §3)', () => {
     expect(deriveMode(ctx(), [card('aftermath')])).toBe('aftermath');
     expect(deriveMode(ctx(), [card('onboarding')])).toBe('onboarding');
     expect(deriveMode(ctx(), [card('post_exam')])).toBe('post_exam');
+  });
+});
+
+describe('cikmis_sinav (Doc 36 kesif karti)', () => {
+  const iki = {
+    kartAcik: true,
+    cozulebilirSayisi: 2,
+    toplamSoru: 200,
+    cozulmemisEnYeni: { slug: 'paem-9-2025', ad: '2025 PAEM 9', donem: 9 },
+  };
+
+  it('hic cozmemise kart cikar ve vitrine goturur', () => {
+    const c = cikmisSinavRule(ctx({ cikmisSinavlar: iki }));
+    expect(c?.type).toBe('cikmis_sinav');
+    expect(c?.priority).toBe(72);
+    // Rota en düşük ortak payda: ekranı bilmeyen eski sürüm hata ekranı
+    // görmesin. Vitrine gitmeyi kart TİPİ belirler.
+    expect(c?.cta?.route).toBe('/denemeler');
+    expect(c?.body).toContain('200 gerçek soru');
+  });
+
+  it('hepsini cozmusse SUSAR — kalici vitrin Denemeler sekmesinde', () => {
+    expect(
+      cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, cozulmemisEnYeni: null } })),
+    ).toBeNull();
+  });
+
+  it('hic cikmis sinav yoksa kart yok', () => {
+    expect(cikmisSinavRule(ctx())).toBeNull();
+  });
+
+  it('panelden kapaliyken hic cikmaz — magaza surumu sarti', () => {
+    expect(
+      cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, kartAcik: false } })),
+    ).toBeNull();
+  });
+
+  it('tek donem varsa donemin adiyla anlatir', () => {
+    const c = cikmisSinavRule(
+      ctx({
+        cikmisSinavlar: {
+          kartAcik: true,
+          cozulebilirSayisi: 1,
+          toplamSoru: 100,
+          cozulmemisEnYeni: { slug: 'paem-10-2026', ad: '2026 PAEM 10', donem: 10 },
+        },
+      }),
+    );
+    expect(c?.body).toContain('PAEM 10');
+    expect(c?.body).not.toContain('dönem,');
+  });
+
+  it('gunluk hedefi ezmez ama gunun quizinin onune gecer', () => {
+    // Kesif karti gunluk dongunun onune gecmemeli; ama uygulamayi cikmis
+    // sorular icin indiren kisi icin gunun quizinden onemlidir.
+    const c = cikmisSinavRule(ctx({ cikmisSinavlar: iki }))!;
+    expect(c.priority).toBeLessThan(75); // goal_remaining
+    expect(c.priority).toBeGreaterThan(55); // daily_quiz
   });
 });

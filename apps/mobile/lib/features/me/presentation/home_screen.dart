@@ -225,6 +225,11 @@ class _CoachBody extends ConsumerWidget {
             'mode': 'practice',
             'count': 10,
           });
+        case 'cikmis_sinav':
+          // Sunucu güvenli rota (/denemeler) gönderir; vitrine gitmeyi TİP
+          // belirler. Böylece ekranı bilmeyen eski sürümler hata ekranı
+          // görmeden deneme listesine düşer (Doc 36 §7.2).
+          await context.push('/denemeler/cikmis');
         case 'quick_review':
         case 'exam_mode' when route == '/review':
           // Yanlış tekrarı artık gerçek reçeteye gider (Doc 28 P0-⑤):
@@ -938,6 +943,10 @@ class _CoachCardTile extends StatelessWidget {
       'onboarding' => (Icons.flag_rounded, pal.accentText),
       'post_exam' => (Icons.hourglass_bottom_rounded, pal.accentText),
       'aftermath' => (Icons.favorite_rounded, pal.liveFg),
+      // Çıkmış sınav keşif kartı (Doc 36). İkon şimdi konuyor ki kartı
+      // sunucudan açtığımızda genel yıldız ikonuna düşmesin — sonradan
+      // eklemek yeni bir mağaza sürümü demekti.
+      'cikmis_sinav' => (Icons.history_edu_rounded, pal.accentText),
       _ => (Icons.auto_awesome_rounded, scheme.onSurfaceVariant),
     };
   }

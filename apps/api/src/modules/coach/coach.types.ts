@@ -25,6 +25,7 @@ export type CoachCardType =
   | 'onboarding'
   | 'post_exam'
   | 'aftermath'
+  | 'cikmis_sinav'
   | 'motivation';
 
 /**
@@ -109,6 +110,30 @@ export interface CoachContext {
     newPublished: { id: string; title: string } | null;
     completedCount: number;
     bestNet: number | null;
+  };
+  /**
+   * Çıkmış sınavlar (Doc 36) — keşif kartı için.
+   *
+   * Kart yalnız KEŞİF amaçlı: uygulamayı "paem çıkmış sorular" aramasından
+   * indiren kişi Bugün ekranına düşüyor ve aradığı şeyin Denemeler sekmesinde
+   * olduğunu tahmin etmek zorunda kalıyor. Kullanıcı bir dönemi çözer çözmez
+   * kart susar — kalıcı vitrin Denemeler sekmesindedir.
+   */
+  cikmisSinavlar: {
+    /**
+     * Kart açık mı (panelden yönetilir, varsayılan KAPALI).
+     *
+     * Ekranı içeren mağaza sürümü yayına çıkmadan açılmamalı: güncellemeyen
+     * kullanıcının uygulaması `/denemeler/cikmis`i bilmiyor, kartın sözünü
+     * ekranda bulamaz.
+     */
+    kartAcik: boolean;
+    /** Motora bağlı, yayında, resmî dönem sayısı. */
+    cozulebilirSayisi: number;
+    /** O dönemlerin toplam soru sayısı. */
+    toplamSoru: number;
+    /** Kullanıcının HİÇ çözmediği dönemlerin en yenisi; hepsi çözülmüşse null. */
+    cozulmemisEnYeni: { slug: string; ad: string; donem: number | null } | null;
   };
   dailyQuizPlayed: boolean;
   /** Kazanılmamış rozetlerden tamamlanmaya en yakın olanı. */
