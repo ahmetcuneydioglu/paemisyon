@@ -173,8 +173,19 @@ export interface AdminPastExamQuestion {
   hasExplanation: boolean;
 }
 
+/** "Uygulamada çözülebilir mi, değilse neden?" — panelde açıkça yazılır. */
+export interface PastExamCozulebilirlik {
+  cozulebilir: boolean;
+  motoraBaglanabilir: boolean;
+  yayindaSoru: number;
+  iptalSoru: number;
+  engeller: string[];
+}
+
 export interface AdminPastExamDetail {
   id: string;
+  cozulebilirlik: PastExamCozulebilirlik;
+  examId: string | null;
   slug: string;
   name: string;
   institution: string;

@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
 import { api } from '@/lib/api';
-import type { AdminPastExamDetail, AdminPastExamQuestion } from '@/lib/types';
+import type { AdminPastExamDetail, AdminPastExamQuestion, PastExamCozulebilirlik } from '@/lib/types';
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://paemisyon.com';
 
@@ -39,6 +39,21 @@ export default function PastExamDetailPage() {
       api(`/admin/past-exams/${id}`, { method: 'PATCH', body: JSON.stringify({ status }) }),
     onSuccess: (_d, status) => {
       setNotice(status === 'published' ? 'Dönem yayına alındı.' : 'Dönem yayından kaldırıldı.');
+      qc.invalidateQueries({ queryKey: ['admin-past-exam', id] });
+      qc.invalidateQueries({ queryKey: ['admin-past-exams'] });
+    },
+  });
+
+  const motor = useMutation({
+    mutationFn: () =>
+      api<{ examId: string; soru: number; dakika: number }>(
+        `/admin/past-exams/${id}/motora-bagla`,
+        { method: 'POST' },
+      ),
+    onSuccess: (r) => {
+      setNotice(
+        `Motora bağlandı: ${r.soru} soru, ${r.dakika} dk. "Sınav gibi çöz" artık çalışıyor.`,
+      );
       qc.invalidateQueries({ queryKey: ['admin-past-exam', id] });
       qc.invalidateQueries({ queryKey: ['admin-past-exams'] });
     },
@@ -84,6 +99,13 @@ export default function PastExamDetailPage() {
       {notice && (
         <div className="mb-4 rounded-lg bg-emerald-50 px-4 py-2 text-sm text-emerald-800">{notice}</div>
       )}
+
+      <CozulebilirlikKutusu
+        c={s.cozulebilirlik}
+        isAdmin={isAdmin}
+        pending={motor.isPending}
+        onBagla={() => motor.mutate()}
+      />
 
       <Card className="mb-4">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
@@ -215,5 +237,54 @@ export default function PastExamDetailPage() {
         </Card>
       )}
     </>
+  );
+}
+
+/**
+ * Uygulamada çözülebilirlik tanısı (Doc 36 §7.2).
+ *
+ * "Yayına aldım ama uygulamada çözülemiyor" sorusunun cevabı dört ayrı yerde
+ * saklıydı: tür, yayın durumu, soru sürümleri, motor bağı. Panelde tek yerde
+ * ve açıkça yazılmalı — kimse dördünü akılda tutamaz.
+ */
+function CozulebilirlikKutusu({
+  c,
+  isAdmin,
+  pending,
+  onBagla,
+}: {
+  c: PastExamCozulebilirlik;
+  isAdmin: boolean;
+  pending: boolean;
+  onBagla: () => void;
+}) {
+  if (c.cozulebilir) {
+    return (
+      <div className="mb-4 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+        <b>Uygulamada çözülebilir.</b> {c.yayindaSoru} soru sette
+        {c.iptalSoru > 0 ? ` (${c.iptalSoru} iptal soru sete girmez)` : ''}. iOS,
+        Android ve web bu dönemi otomatik gösterir — uygulama güncellemesi
+        gerekmez.
+      </div>
+    );
+  }
+  return (
+    <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+      <b>Uygulamada henüz çözülemiyor.</b>
+      <ul className="mt-1 list-disc space-y-0.5 pl-5">
+        {c.engeller.map((e) => (
+          <li key={e}>{e}</li>
+        ))}
+      </ul>
+      {isAdmin && c.motoraBaglanabilir && (
+        <button
+          onClick={onBagla}
+          disabled={pending}
+          className="mt-3 rounded-lg bg-amber-700 px-4 py-2 text-sm font-medium text-white hover:bg-amber-800 disabled:opacity-50"
+        >
+          {pending ? 'Bağlanıyor…' : 'Deneme motoruna bağla'}
+        </button>
+      )}
+    </div>
   );
 }

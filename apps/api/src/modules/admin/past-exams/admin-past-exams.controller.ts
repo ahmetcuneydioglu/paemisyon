@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, ParseUUIDPipe, Patch, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseUUIDPipe, Patch, Post, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../../auth/guards/roles.guard';
 import { Roles } from '../../auth/decorators/roles.decorator';
@@ -38,6 +38,17 @@ export class AdminPastExamsController {
     @Body() dto: UpdatePastExamDto,
   ) {
     return this.service.update(user, id, dto);
+  }
+
+  /// Dönemi deneme motoruna bağla ("Sınav gibi çöz"). Yayına alma gibi
+  /// yalnız admin: aday karşısına çıkacak yeni bir sınav üretiyor.
+  @Post(':id/motora-bagla')
+  @Roles('admin')
+  motoraBagla(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    return this.service.motoraBagla(user, id);
   }
 
   @Patch(':id/questions/:questionId')
