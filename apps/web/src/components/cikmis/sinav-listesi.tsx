@@ -57,7 +57,10 @@ export function SinavListesi({
                   {s.tarih ? new Date(s.tarih).getFullYear() : "Tarih bilinmiyor"} · {s.kurum}
                 </p>
               </div>
-              <TurRozeti tur={s.tur} />
+              <span className="flex shrink-0 items-center gap-1.5">
+                {s.isPremium && <PremiumRozeti />}
+                <TurRozeti tur={s.tur} />
+              </span>
             </div>
 
             <p className="text-[13px] leading-relaxed text-ink-soft">{turAciklamasi(s.tur)}</p>
@@ -89,5 +92,14 @@ export function SinavListesi({
         </li>
       ))}
     </ul>
+  );
+}
+
+/** Dönem Premium'a özel: ziyaretçi tıklamadan önce bilmeli. */
+function PremiumRozeti() {
+  return (
+    <span className="rounded-sm bg-amber-100 px-1.5 py-0.5 text-[12px] font-bold text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
+      🔒 Premium
+    </span>
   );
 }

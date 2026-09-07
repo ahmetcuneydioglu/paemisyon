@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { api } from "@/lib/api";
+import { api, ApiError } from "@/lib/api";
 import type { CikmisSinavDetay } from "@/lib/public-api";
 import { SinavQuiz } from "@/components/cikmis/sinav-quiz";
 import { ButtonLink } from "@/components/ui/button";
@@ -28,10 +28,17 @@ export default async function CikmisSinavCalismaPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const sinav = await api<CikmisSinavDetay>(`/cikmis-sinavlar/${slug}`).catch(
-    () => null,
-  );
-  if (!sinav) notFound();
+  // Premium dönem ile bulunamayan dönem AYRI: 403'ü 404 diye göstermek,
+  // parayla açılan bir kapıyı "yok" diye kapatmak olurdu (7 Eyl 2026).
+  let sinav: CikmisSinavDetay;
+  try {
+    sinav = await api<CikmisSinavDetay>(`/cikmis-sinavlar/${slug}`);
+  } catch (e) {
+    if (e instanceof ApiError && e.code === "PREMIUM_REQUIRED") {
+      return <PremiumKapisi mesaj={e.message} />;
+    }
+    notFound();
+  }
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 px-4 py-6">
@@ -79,6 +86,8 @@ export default async function CikmisSinavCalismaPage({
       </header>
 
       <SinavQuiz
+        calismaModu
+        slug={slug}
         sorular={sinav.sorular}
         kapaliSoru={0}
         examId={sinav.examId}
@@ -102,6 +111,29 @@ export default async function CikmisSinavCalismaPage({
           </Card>
         }
       />
+    </div>
+  );
+}
+
+/** Dönem Premium'a alındıysa: 404 değil, ne olduğunu söyleyen bir kapı. */
+function PremiumKapisi({ mesaj }: { mesaj: string }) {
+  return (
+    <div className="mx-auto grid min-h-[60vh] max-w-md place-items-center px-4">
+      <Card className="w-full p-8 text-center">
+        <p className="text-3xl" aria-hidden>
+          🔒
+        </p>
+        <h1 className="mt-3 font-heading text-[17px] font-bold text-ink">
+          Premium çıkmış sınav
+        </h1>
+        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{mesaj}</p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>
+          <ButtonLink href="/paem-cikmis-sorular" variant="secondary">
+            Diğer dönemler
+          </ButtonLink>
+        </div>
+      </Card>
     </div>
   );
 }

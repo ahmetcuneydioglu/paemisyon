@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { apiClient } from "@/lib/api-client";
+import {
+  calismaAnahtari,
+  cozCalisma,
+  kodlaCalisma,
+} from "@/lib/cikmis-calisma";
 import type { CikmisSinavSoru } from "@/lib/public-api";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -28,6 +34,7 @@ export function SinavQuiz({
   slug,
   baslik,
   sonKart,
+  calismaModu = false,
 }: {
   sorular: CikmisSinavSoru[];
   /** Uygulamada çözülebilen, burada gösterilmeyen soru sayısı. */
@@ -35,6 +42,13 @@ export function SinavQuiz({
   examId: string | null;
   /** Girişli kullanıcıyı çalışma moduna götürmek için dönem slug'ı. */
   slug?: string;
+  /**
+   * Çalışma modu mu (girişli, sınavın TAMAMI)? Açıkken ilerleme tarayıcıda
+   * saklanır ve yanlışlar çalışma defterine yazılır. Public tanıtım
+   * sayfasında KAPALI: orada 10 soruluk bir vitrin var, defteri onunla
+   * doldurmak yanlış olurdu (7 Eyl 2026).
+   */
+  calismaModu?: boolean;
   baslik?: string;
   /** Listenin sonundaki kart. Verilmezse public sayfanın çağrı-eylemi çıkar;
    *  çalışma modunda kayıt daveti anlamsız olduğu için oradan geçilir. */
@@ -42,11 +56,63 @@ export function SinavQuiz({
 }) {
   const girisli = useLoggedIn();
   const [secimler, setSecimler] = useState<Record<number, string>>({});
+  // Çalışma modu ilerlemesi tarayıcıda saklanır: sayfadan çıkıp dönen aday
+  // sıfırdan başlıyordu (7 Eyl 2026 bildirimi). Ölçüm değil kişisel bir okuma
+  // durumu — sunucuya yazmak oturum açmayı ve kota sorularını geri getirirdi.
+  const kayitAnahtari = calismaModu && slug ? calismaAnahtari(slug) : null;
+  const yuklendi = useRef(false);
+
+  useEffect(() => {
+    if (!kayitAnahtari || yuklendi.current) return;
+    yuklendi.current = true;
+    try {
+      const kayit = cozCalisma(localStorage.getItem(kayitAnahtari));
+      // Kullanıcı bu arada bir şık işaretlediyse onunki kalır.
+      if (Object.keys(kayit).length > 0) setSecimler((o) => ({ ...kayit, ...o }));
+    } catch {
+      // Depolama kapalıysa (gizli sekme vb.) çalışma yine sürer.
+    }
+  }, [kayitAnahtari]);
   const cevaplanan = Object.keys(secimler).length;
   const dogru = sorular.filter(
     (s) => secimler[s.sira] && secimler[s.sira] === s.siklar.find((x) => x.dogru)?.harf,
   ).length;
   const bitti = cevaplanan === sorular.length && sorular.length > 0;
+
+  function isaretle(soru: CikmisSinavSoru, harf: string) {
+    setSecimler((o) => {
+      if (o[soru.sira]) return o; // ilk cevap kalır — deneye deneye bulunmaz
+      const yeni = { ...o, [soru.sira]: harf };
+      if (kayitAnahtari) {
+        try {
+          localStorage.setItem(kayitAnahtari, kodlaCalisma(yeni));
+        } catch {
+          // Depolama kapalıysa çalışma yine sürer, yalnız ilerleme saklanmaz.
+        }
+      }
+      return yeni;
+    });
+    // Yanlışlar çalışma defterine (7 Eyl 2026): kota harcanmaz, puan işlemez;
+    // doğruluğu SUNUCU belirler. Ateşle-unut — çalışmayı bloke etmez.
+    const dogruHarf = soru.siklar.find((x) => x.dogru)?.harf;
+    if (calismaModu && slug && harf !== dogruHarf && !soru.iptal) {
+      void apiClient(`/cikmis-sinavlar/${slug}/calisma-yanlisi`, {
+        method: "POST",
+        body: { sira: soru.sira, harf },
+      }).catch(() => {});
+    }
+  }
+
+  function sifirla() {
+    if (kayitAnahtari) {
+      try {
+        localStorage.removeItem(kayitAnahtari);
+      } catch {
+        // yok sayılır
+      }
+    }
+    setSecimler({});
+  }
 
   return (
     <section className="space-y-3">
@@ -54,10 +120,21 @@ export function SinavQuiz({
         <h2 className="font-heading text-[19px] font-bold text-ink">
           {baslik ?? `Sınavdan ${sorular.length} soru — çöz, hemen gör`}
         </h2>
-        <p className="tabular-nums text-[13px] text-ink-soft" aria-live="polite">
-          {cevaplanan}/{sorular.length} cevaplandı
-          {cevaplanan > 0 && ` · ${dogru} doğru`}
-        </p>
+        <div className="flex items-baseline gap-3">
+          <p className="tabular-nums text-[13px] text-ink-soft" aria-live="polite">
+            {cevaplanan}/{sorular.length} cevaplandı
+            {cevaplanan > 0 && ` · ${dogru} doğru`}
+          </p>
+          {kayitAnahtari && cevaplanan > 0 && (
+            <button
+              type="button"
+              onClick={sifirla}
+              className="text-[13px] font-bold text-ink-soft hover:text-ink hover:underline"
+            >
+              Baştan başla
+            </button>
+          )}
+        </div>
       </div>
       <p className="max-w-[68ch] text-[14px] leading-relaxed text-ink-soft">
         Şıkka dokun, doğru mu yanlış mı anında gör. Her sorunun altında cevabın
@@ -70,9 +147,7 @@ export function SinavQuiz({
             <SoruKarti
               soru={s}
               secim={secimler[s.sira]}
-              onSecim={(harf) =>
-                setSecimler((o) => (o[s.sira] ? o : { ...o, [s.sira]: harf }))
-              }
+              onSecim={(harf) => isaretle(s, harf)}
             />
           </li>
         ))}

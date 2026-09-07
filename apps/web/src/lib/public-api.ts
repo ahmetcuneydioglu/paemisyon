@@ -82,6 +82,8 @@ export interface PublicPricing {
 
 /** Çıkmış sınav vitrini (Doc 36) — backend cikmis-sinav.service ile birebir. */
 export interface CikmisSinavOzet {
+  /** Dönem Premium'a özel mi — vitrinde kilit rozeti. */
+  isPremium?: boolean;
   slug: string;
   ad: string;
   kurum: string;
