@@ -6,6 +6,7 @@ import type { CikmisSinavSoru } from "@/lib/public-api";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { OptionRow, type OptionState } from "@/components/ui/option-row";
+import { useLoggedIn } from "@/lib/auth/use-logged-in";
 
 /**
  * Çıkmış sınav örneği — quiz olarak (Doc 36, kullanıcı kararı).
@@ -30,6 +31,7 @@ export function SinavQuiz({
   kapaliSoru: number;
   examId: string | null;
 }) {
+  const girisli = useLoggedIn();
   const [secimler, setSecimler] = useState<Record<number, string>>({});
   const cevaplanan = Object.keys(secimler).length;
   const dogru = sorular.filter(
@@ -77,16 +79,20 @@ export function SinavQuiz({
           {bitti
             ? `Burada sınavın küçük bir parçası var. Kalan ${kapaliSoru} soruyu süre tutarak çöz, netini gör, yanlışların çalışma defterine düşsün.`
             : "Sınavın tamamını süre tutarak çöz, netini gör, yanlışların çalışma defterine düşsün. Her sorunun açıklaması ve kanun dayanağı hazır; iptal edilen sorular sete girmez, netini bozmaz."}
+          {!girisli && " Ücretsiz hesap yeterli."}
         </p>
+        {/* Girişli kullanıcıya "Ücretsiz başla" göstermek anlamsız — onu
+            zaten yaptı. Tek kapı bırakılır: sınavın tamamı. */}
         <div className="mt-3 flex flex-wrap gap-2">
-          {examId && (
+          {girisli && examId ? (
             <ButtonLink href={`/sinav/arsiv/${examId}`} size="lg">
               Sınavın tamamını çöz
             </ButtonLink>
+          ) : (
+            <ButtonLink href="/kayit" size="lg">
+              {examId ? "Ücretsiz başla ve tamamını çöz" : "Ücretsiz başla"}
+            </ButtonLink>
           )}
-          <ButtonLink href="/kayit" size="lg" variant={examId ? "secondary" : "primary"}>
-            Ücretsiz başla
-          </ButtonLink>
         </div>
       </Card>
     </section>

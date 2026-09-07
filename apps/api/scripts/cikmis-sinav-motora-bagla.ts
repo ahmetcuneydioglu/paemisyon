@@ -62,6 +62,11 @@ async function main() {
         isPremium: false,
         liveAnswerReveal: false,
         questionsOpenAfterEnd: true,
+        // Arşivden çözme denemeye özel bir anahtarla açılıyor ve varsayılanı
+        // KAPALI: aynı denemenin tekrar sınavı yapılırken sorular önceden
+        // sızıyordu. Çıkmış sınavda böyle bir risk yok — kitapçık resmî
+        // cevap anahtarıyla zaten yayımlanmış durumda.
+        archiveOpenAfterEnd: true,
         status: 'published',
         sortOrder: sinav.sortOrder,
       },

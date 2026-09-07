@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { signOut } from "@/app/(auth)/actions";
 import { ButtonLink } from "@/components/ui/button";
+import { useLoggedIn } from "@/lib/auth/use-logged-in";
 
 /**
  * Public üst nav'ın giriş alanı — İSTEMCİDE çözülür ki `(site)` layout'u
@@ -15,14 +15,7 @@ import { ButtonLink } from "@/components/ui/button";
  * ile /bugun'e yönlendirilir).
  */
 export function HeaderAuthArea() {
-  const [loggedIn, setLoggedIn] = useState(false);
-  useEffect(() => {
-    const id = setTimeout(
-      () => setLoggedIn(document.cookie.includes("-auth-token")),
-      0,
-    );
-    return () => clearTimeout(id);
-  }, []);
+  const loggedIn = useLoggedIn();
 
   if (loggedIn) {
     return (
