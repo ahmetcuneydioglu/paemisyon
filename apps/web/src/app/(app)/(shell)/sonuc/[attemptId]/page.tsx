@@ -122,9 +122,13 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
           )}
 
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href={`/siralama/${result.exam.id}`} variant="secondary">
-              Sıralamayı gör
-            </ButtonLink>
+            {/* Arşiv çözümü resmî sıralamaya GİRMEZ: çıkmış sınavların canlı
+                penceresi hiç açılmadığı için o tablo kalıcı olarak boştur. */}
+            {!result.isArchive && (
+              <ButtonLink href={`/siralama/${result.exam.id}`} variant="secondary">
+                Sıralamayı gör
+              </ButtonLink>
+            )}
             <ButtonLink href="/denemeler" variant="secondary">
               Denemeler
             </ButtonLink>

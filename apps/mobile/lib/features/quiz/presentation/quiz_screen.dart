@@ -428,11 +428,20 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       // Rozet kazanımı gerçek dönüm noktasıdır — belirgin haptic (P2-18).
       if (result.earnedBadges.isNotEmpty) AppHaptics.celebrate();
       if (mounted) {
-        context.pushReplacement('/quiz/result', extra: {
-          'result': result,
-          'patrol': widget.patrol,
-          'restart': _restartArgs(),
-        });
+        // Arşivden çözülen sınav (çıkmış sınav dâhil) DENEME KARNESİNE gider:
+        // net, konu kırılımı, süre şeridi ve soru soru cevap incelemesi.
+        // Genel tur sonucu yalnız yanlışların kökünü listeleyip "yanlış turu"
+        // öneriyordu; 100 soruluk bir sınavı bitiren aday kendi doğru ve
+        // yanlışlarını tek tek görebilmeli (7 Eyl 2026 kullanıcı bildirimi).
+        if (widget.archiveExamId != null) {
+          context.pushReplacement('/denemeler/sonuc/${_session!.sessionId}');
+        } else {
+          context.pushReplacement('/quiz/result', extra: {
+            'result': result,
+            'patrol': widget.patrol,
+            'restart': _restartArgs(),
+          });
+        }
       }
     } on NetworkFailure {
       _snack(

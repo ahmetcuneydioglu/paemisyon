@@ -22,6 +22,8 @@ export interface ReviewQuestion {
 }
 export interface AttemptResult {
   attemptId: string;
+  /** Arşiv çözümü mü (çıkmış sınav dâhil) — sıralamaya girmez. */
+  isArchive?: boolean;
   exam: { id: string; title: string; startAt: string; durationMinutes: number };
   totalQuestions: number;
   correctCount: number;

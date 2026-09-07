@@ -35,13 +35,6 @@ type SaveState = "saved" | "saving" | "failed";
  * Klavye: ←/→ soru · 1-5/A-E işaretle · F bayrak · Esc bitirme diyaloğu.
  */
 /** Arşiv modunda tamamlanınca gösterilen yerinde sonuç (resmî /sonuc yok). */
-interface ArchiveResult {
-  totalQuestions: number;
-  correctCount: number;
-  wrongCount: number;
-  blankCount: number;
-  score: number;
-}
 
 export function ExamPlayer({
   start,
@@ -53,7 +46,6 @@ export function ExamPlayer({
 }) {
   const router = useRouter();
   const [index, setIndex] = useState(0);
-  const [archiveResult, setArchiveResult] = useState<ArchiveResult | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>(() =>
     Object.fromEntries(
       start.givenAnswers
@@ -85,20 +77,11 @@ export function ExamPlayer({
     if (finishingRef.current) return;
     finishingRef.current = true;
     setFinishing(true);
-    if (archive) {
-      // Arşiv: resmî katılım yok — sonuç complete yanıtından yerinde gösterilir.
-      try {
-        const res = await apiClient<ArchiveResult>(
-          `/quiz/sessions/${start.sessionId}/complete`,
-          { method: "POST" },
-        );
-        setArchiveResult(res);
-      } catch {
-        setFinishing(false);
-        finishingRef.current = false;
-      }
-      return;
-    }
+    // Arşiv çözümü de sonuç sayfasına gider (7 Eyl 2026 kullanıcı bildirimi):
+    // yerinde gösterilen sayı kartı yalnız doğru/yanlış sayısını veriyordu ve
+    // aday kendi cevaplarını göremiyordu. 100 soruluk bir sınavı bitiren kişi
+    // doğrularını ve yanlışlarını tek tek inceleyebilmeli — /sonuc sayfası
+    // arşiv oturumlarını da açar (exams.service.getAttempt).
     try {
       await apiClient(`/quiz/sessions/${start.sessionId}/complete`, { method: "POST" });
     } catch {
@@ -237,44 +220,6 @@ export function ExamPlayer({
   const lowTime = timeLeft !== null && timeLeft <= 10 * 60_000;
 
   // ── Arşiv sonucu — yerinde özet (resmî sıralamaya girmez) ──
-  if (archiveResult) {
-    const pct =
-      archiveResult.totalQuestions > 0
-        ? Math.round((archiveResult.correctCount / archiveResult.totalQuestions) * 100)
-        : 0;
-    return (
-      <div className="grid min-h-[70vh] place-items-center px-4">
-        <div className="w-full max-w-md rounded-md border border-line bg-surface p-8 text-center">
-          <p className="tk-caption">{start.title} · arşiv denemesi</p>
-          <p className="tabular mt-3 font-heading text-5xl font-bold text-ink">
-            {archiveResult.correctCount}
-            <span className="text-2xl text-ink-soft">/{archiveResult.totalQuestions}</span>
-          </p>
-          <p className="tabular mt-1 text-[14px] text-ink-soft">
-            doğruluk %{pct} · yanlış {archiveResult.wrongCount} · boş {archiveResult.blankCount}
-          </p>
-          <p className="mt-3 text-[13px] leading-relaxed text-ink-soft">
-            Arşiv çözümü sıralamaya girmez — yanlışların tekrar kuyruğuna eklendi.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/denemeler"
-              className="rounded-sm bg-brand px-5 py-2.5 text-[14px] font-bold text-white hover:opacity-90"
-            >
-              Denemelere dön
-            </Link>
-            <Link
-              href="/kutuphane/yanlislar"
-              className="rounded-sm border border-line px-5 py-2.5 text-[14px] font-bold text-ink hover:border-ink"
-            >
-              Yanlışları çalış
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 flex items-center gap-4 border-b border-line bg-surface px-4 py-2.5">

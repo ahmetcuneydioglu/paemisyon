@@ -139,14 +139,19 @@ class _BodyState extends ConsumerState<_Body> {
         const SizedBox(height: AppSpacing.lg),
         Row(
           children: [
-            Expanded(
-              child: OutlinedButton(
-                onPressed: () =>
-                    context.push('/denemeler/${result.examId}/siralama'),
-                child: const Text('Sıralama'),
+            // Arşiv çözümü resmî sıralamaya GİRMEZ: çıkmış sınavların canlı
+            // penceresi hiç açılmadığı için o tablo kalıcı olarak boştur.
+            // Ölü düğme kullanıcıyı boş listeye götürürdü.
+            if (!result.isArchive) ...[
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () =>
+                      context.push('/denemeler/${result.examId}/siralama'),
+                  child: const Text('Sıralama'),
+                ),
               ),
-            ),
-            const SizedBox(width: AppSpacing.sm),
+              const SizedBox(width: AppSpacing.sm),
+            ],
             Expanded(
               child: FilledButton(
                 onPressed: () => context.go('/denemeler'),

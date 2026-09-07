@@ -228,6 +228,10 @@ class AttemptTiming {
 
 class AttemptResult {
   final String attemptId;
+
+  /// Arşiv çözümü mü (çıkmış sınav dâhil). Arşiv sıralamaya girmez —
+  /// sıralama düğmesi çizilmez, ölü kapı kullanıcıyı boş listeye götürür.
+  final bool isArchive;
   final String examId;
   final String examTitle;
   final int totalQuestions;
@@ -244,6 +248,7 @@ class AttemptResult {
 
   const AttemptResult({
     required this.attemptId,
+    this.isArchive = false,
     required this.examId,
     required this.examTitle,
     required this.totalQuestions,
@@ -263,6 +268,7 @@ class AttemptResult {
     final exam = j['exam'] as Map<String, dynamic>;
     return AttemptResult(
       attemptId: j['attemptId'] as String,
+      isArchive: j['isArchive'] as bool? ?? false,
       examId: exam['id'] as String,
       examTitle: exam['title'] as String,
       totalQuestions: j['totalQuestions'] as int,
