@@ -58,7 +58,7 @@ void main() {
       (tester) async {
     await _pump(tester, [_resmi, _analiz]);
 
-    expect(find.text('Çıkmış sınavlar'), findsOneWidget);
+    expect(find.text('Çıkmış sınav soruları'), findsOneWidget);
     // Yalnız motora bağlı dönemler sayılır: konu analizi "gerçek soru" değil.
     expect(
       find.textContaining('PAEM 9 · 100 gerçek soru'),
@@ -75,13 +75,13 @@ void main() {
   testWidgets('liste boşsa kart hiç çizilmez — boşluğa açılan kapı olmaz',
       (tester) async {
     await _pump(tester, []);
-    expect(find.text('Çıkmış sınavlar'), findsNothing);
+    expect(find.text('Çıkmış sınav soruları'), findsNothing);
     // Deneme ekranının kendisi yine çalışır.
     expect(find.text('Bana özel deneme'), findsOneWidget);
   });
 
   testWidgets('koyu temada hatasız çizilir', (tester) async {
     await _pump(tester, [_resmi], theme: AppTheme.dark);
-    expect(find.text('Çıkmış sınavlar'), findsOneWidget);
+    expect(find.text('Çıkmış sınav soruları'), findsOneWidget);
   });
 }

@@ -28,7 +28,7 @@ class CikmisSinavlarScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final data = ref.watch(cikmisSinavlarProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Çıkmış Sınavlar')),
+      appBar: AppBar(title: const Text('Çıkmış Sınav Soruları')),
       body: data.when(
         loading: () => ListView(
           padding: const EdgeInsets.all(AppSpacing.lg),

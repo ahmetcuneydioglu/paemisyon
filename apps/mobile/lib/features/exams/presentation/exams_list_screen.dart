@@ -508,7 +508,7 @@ class _CikmisSinavlarCard extends ConsumerWidget {
     final pal = AccentPalette.of(context);
     return Semantics(
       button: true,
-      label: 'Çıkmış sınavlar',
+      label: 'Çıkmış sınav soruları',
       child: PressableScale(
         onTap: () => context.push('/denemeler/cikmis'),
         child: Container(
@@ -534,7 +534,7 @@ class _CikmisSinavlarCard extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Çıkmış sınavlar',
+                    Text('Çıkmış sınav soruları',
                         style: Theme.of(context)
                             .textTheme
                             .titleSmall
