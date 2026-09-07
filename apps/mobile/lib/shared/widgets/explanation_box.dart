@@ -32,6 +32,11 @@ class ExplanationBox extends StatelessWidget {
       padding: const EdgeInsets.all(AppSpacing.lg),
       decoration: BoxDecoration(
         color: tokens.surfaceAlt,
+        // Çerçeve şart: scaffold zemini de `surfaceAlt` (AppTheme) — çerçevesiz
+        // kutu tam ekran bir sayfada kaybolup açıklama serbest metin gibi
+        // görünüyordu. Kart olduğu belli olmalı ki göz cevaptan açıklamaya
+        // geçtiğini anlasın.
+        border: Border.all(color: tokens.line),
         borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
       ),
       child: Column(

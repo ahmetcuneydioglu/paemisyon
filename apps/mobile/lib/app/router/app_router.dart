@@ -12,6 +12,9 @@ import '../../features/catalog/presentation/atlas_screen.dart';
 import '../../features/catalog/presentation/courses_screen.dart';
 import '../../features/catalog/presentation/modules_screen.dart';
 import '../../features/catalog/presentation/topics_screen.dart';
+import '../../features/exams/presentation/cikmis_calisma_screen.dart';
+import '../../features/exams/presentation/cikmis_sinav_screen.dart';
+import '../../features/exams/presentation/cikmis_sinavlar_screen.dart';
 import '../../features/exams/presentation/exam_leaderboard_screen.dart';
 import '../../features/exams/presentation/exam_result_screen.dart';
 import '../../features/exams/presentation/exam_runner_screen.dart';
@@ -168,6 +171,27 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                     path: ':id/siralama',
                     builder: (context, state) => ExamLeaderboardScreen(
                         examId: state.pathParameters['id']!),
+                  ),
+                  // Çıkmış sınavlar (Doc 36) — Denemeler sekmesinin altında
+                  // ama LİSTESİNİN dışında: randevulu deneme hiyerarşisiyle
+                  // (Canlı → Sıradaki → Geçmiş) karışmasın.
+                  GoRoute(
+                    path: 'cikmis',
+                    builder: (context, state) => const CikmisSinavlarScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':slug',
+                        builder: (context, state) => CikmisSinavScreen(
+                            slug: state.pathParameters['slug']!),
+                        routes: [
+                          GoRoute(
+                            path: 'calis',
+                            builder: (context, state) => CikmisCalismaScreen(
+                                slug: state.pathParameters['slug']!),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ]),
           ]),

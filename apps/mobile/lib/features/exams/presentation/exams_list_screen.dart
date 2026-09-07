@@ -12,6 +12,7 @@ import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../data/cikmis_sinav_repository.dart';
 import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
 
@@ -97,6 +98,10 @@ class _Sections extends ConsumerWidget {
     final children = <Widget>[
       // Bana özel deneme: randevu beklemeden, müfredat ağırlıklarıyla (madde 3).
       StaggeredReveal(index: i++, child: _PersonalExamCard(onOpen: go)),
+      // Çıkmış sınavlar: kendi ekranına açılan kapı. Liste İÇİNDE bölüm
+      // olarak durmuyor — her zaman açık olan çıkmış sınavlar, randevulu
+      // denemelerin "Canlı → Sıradaki → Geçmiş" hiyerarşisini bozardı.
+      StaggeredReveal(index: i++, child: const _CikmisSinavlarCard()),
       if (list.isEmpty)
         const Padding(
           padding: EdgeInsets.only(top: AppSpacing.xl),
@@ -469,6 +474,82 @@ class _PersonalExamCard extends StatelessWidget {
             Icon(Icons.chevron_right_rounded,
                 color: Theme.of(context).colorScheme.onSurfaceVariant),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── ÇIKMIŞ SINAVLAR: kendi ekranına giriş kartı (Doc 36) ──
+
+/// Vitrin özetini kartın kendisinde gösterir ("PAEM 9 ve 8 · 200 gerçek
+/// soru"), çünkü "Çıkmış Sınavlar" başlığı tek başına neyin olduğunu
+/// söylemiyor: aday elinde ne olduğunu görmeden içeri girmez.
+///
+/// Liste boşsa ya da alınamıyorsa kart HİÇ ÇİZİLMEZ — boş bir ekrana açılan
+/// kapı göstermek, kullanıcıyı hayal kırıklığına sürüklemek olurdu.
+class _CikmisSinavlarCard extends ConsumerWidget {
+  const _CikmisSinavlarCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final list = ref.watch(cikmisSinavlarProvider).valueOrNull;
+    if (list == null || list.isEmpty) return const SizedBox.shrink();
+
+    final resmi = list.where((s) => s.cozulebilir).toList();
+    final soru = resmi.fold<int>(0, (t, s) => t + (s.soruSayisi ?? 0));
+    final donemler = resmi.map((s) => 'PAEM ${s.donem}').join(' ve ');
+
+    final alt = resmi.isEmpty
+        ? '${list.length} dönemin konu dağılımı — hangi konudan kaç soru çıktı.'
+        : '$donemler · $soru gerçek soru, cevaplı ve açıklamalı. '
+            'Sınav gibi çöz ya da soru soru çalış.';
+
+    final pal = AccentPalette.of(context);
+    return Semantics(
+      button: true,
+      label: 'Çıkmış sınavlar',
+      child: PressableScale(
+        onTap: () => context.push('/denemeler/cikmis'),
+        child: Container(
+          margin: const EdgeInsets.only(bottom: AppSpacing.xs),
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          decoration: BoxDecoration(
+            border:
+                Border.all(color: Theme.of(context).colorScheme.outlineVariant),
+            borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(AppSpacing.sm + 2),
+                decoration: BoxDecoration(
+                  color: pal.accent.withValues(alpha: 0.12),
+                  borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+                ),
+                child: Icon(Icons.history_edu_rounded, color: pal.accent),
+              ),
+              const SizedBox(width: AppSpacing.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Çıkmış sınavlar',
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleSmall
+                            ?.copyWith(fontWeight: FontWeight.w700)),
+                    const SizedBox(height: 2),
+                    Text(alt,
+                        style: Theme.of(context).textTheme.bodySmall),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpacing.xs),
+              Icon(Icons.chevron_right_rounded,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant),
+            ],
+          ),
         ),
       ),
     );

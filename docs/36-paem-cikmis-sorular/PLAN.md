@@ -148,6 +148,7 @@ altyapı önceden kurulursa mümkün.
 | Deneme motoruna bağlama ("sınav gibi çöz") | ✅ PAEM 8 |
 | Sitemap + iç bağlantı (üst menü, footer, PAEM rehberi, komut paleti) | ✅ |
 | PAEM 10 hazırlığı | ✅ `PAEM10-GECESI.md`, URL ayrıldı |
+| Mobil (Flutter) yüzey | ✅ 7 Eyl 2026 — Denemeler sekmesinde giriş kartı + vitrin + dönem ekranı + çalışma modu |
 
 **Bekleyen tek şey kullanıcı onayı:** PAEM 9'un 100 sorusu ve PAEM 8'in 47
 açıklaması onay kuyruğunda. Onaylanınca `cikmis-vitrin-sec.ts` yeniden
@@ -161,6 +162,34 @@ Ağustos 2026'da tuğgeneral oldu, hiçbir şık doğru değil. Kişinin güncel
 rütbesini/unvanını soran sorular bu sınıfa girer ve düzenli taranmalı.
 CMK md 134'e dayanan PAEM 9 s.20 ise **25 Şubat 2027'de** eskiyecek (AYM
 iptali o gün yürürlüğe giriyor).
+
+## 7.2 Mobil yüzey (7 Eyl 2026)
+
+Backend'e dokunulmadı: uçlar (`/public/cikmis-sinavlar`, girişli
+`/cikmis-sinavlar/:slug`) ve "sınav gibi çöz" için arşiv akışı zaten hazırdı.
+
+Yerleşim kararı — çıkmış sınavlar **Denemeler sekmesinin altında ama
+listesinin dışında**. Deneme listesi randevulu denemelerin yeri ve
+"Canlı → Sıradaki → Geçmiş" hiyerarşisi üstünde duruyor; her zaman açık olan
+çıkmış sınavlar o hiyerarşiye karışırsa aday hangisinin canlı olduğunu ayırt
+edemez. Sunucu tarafında aynı karar zaten var (`exams.service.list`,
+`pastExam: null` süzgeci). Bu yüzden listeye bölüm eklenmedi, kendi ekranına
+açılan bir giriş kartı kondu.
+
+| Ekran | Yol | İçerik |
+|---|---|---|
+| Giriş kartı | Denemeler sekmesi | Çözülebilir dönemleri ve soru sayısını özetler; liste boşsa çizilmez |
+| Vitrin | `/denemeler/cikmis` | Dönem kartları, tür rozeti, ders dağılımı |
+| Dönem | `/denemeler/cikmis/:slug` | İki mod + konu dağılımı + eksik/iptal notları |
+| Çalışma modu | `/denemeler/cikmis/:slug/calis` | Soru soru, anında cevap + açıklama, numara ızgarası |
+
+Çalışma modu sunucuya oturum AÇMAZ: doğru cevap ve açıklama zaten yükte
+geliyor. Süre tutulmaz, net hesaplanmaz, hiçbir yere yazılmaz — ölçmek isteyen
+"Sınav gibi çöz"ü kullanır. İki ölçümü karıştırmak, adayın hangisinin gerçek
+olduğunu bilememesi olurdu.
+
+İptal edilen sorular çalışma modunda rozetle görünür ama doğru sayacına
+girmez; motora bağlanan sette zaten yoklar.
 
 ## 8. Kural istisnası
 
