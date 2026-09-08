@@ -18,7 +18,13 @@
  * `CIKAR` ile, kararı geçerli olduğu hâlde insan kararıyla bekletilen sorular
  * dışarıda tutulur (kararı tahrif etmeden).
  *
+ * `YAYIN` ile sayılan kimlikler DOĞRUDAN yayına yazılır (`published` +
+ * `currentVersionId`), onay kuyruğuna uğramadan. Bu, projenin "içe aktarılan
+ * soru asla doğrudan yayına çıkmaz" kuralının bilinçli istisnasıdır ve yalnız
+ * kullanıcının açık talimatıyla kullanılır (Doc 38, 9 Eyl 2026).
+ *
  *   npx tsx scripts/ogm-bankaya-yaz.ts <doc-dizini> <aday-dosyası>
+ *   YAYIN=s1,s3,… KAYNAK="…" npx tsx scripts/ogm-bankaya-yaz.ts …
  *   APPLY=1 npx tsx scripts/ogm-bankaya-yaz.ts <doc-dizini> <aday-dosyası>
  */
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -30,7 +36,9 @@ const APPLY = process.env.APPLY === '1';
 const GECER = new Set(['ONAY', 'ONAY-HAKEM', 'ZAYIF']);
 /** Dersin TEK konusu (8 Eyl 2026'da üç kopya konu burada birleştirildi). */
 const KONU_ID = '23d22785-351b-4f39-8516-a419e2c254c0';
-const KAYNAK = 'MEB OGM Materyal soru bankası';
+const KAYNAK = process.env.KAYNAK ?? 'MEB OGM Materyal soru bankası';
+/** Doğrudan yayına çıkacak kimlikler — geri kalanı onay kuyruğuna düşer. */
+const YAYIN = new Set((process.env.YAYIN ?? '').split(',').map((x) => x.trim()).filter(Boolean));
 const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
 /** İnsan kararıyla bekletilenler — karar dosyasına dokunulmaz. */
 const CIKAR = new Set((process.env.CIKAR ?? '').split(',').map((x) => x.trim()).filter(Boolean));
@@ -104,7 +112,12 @@ async function main() {
   console.log(`  bunun ${kullaniciElemis.length}'i kullanıcının PANELDEN ELEDİĞİ soru — geri yazılmıyor`);
   if (kullaniciElemis.length) console.log(`     ${kullaniciElemis.map((r) => r.id).join(' ')}`);
   console.log(`görselli           : ${yazilacak.filter((r) => r.gorselUrl).length}`);
+  const yayinlanacak = yazilacak.filter((r) => YAYIN.has(r.id));
   console.log(`YAZILACAK          : ${yazilacak.length}`);
+  console.log(`  doğrudan YAYIN   : ${yayinlanacak.length}  ${yayinlanacak.map((r) => r.id).join(' ')}`);
+  console.log(`  onay kuyruğuna   : ${yazilacak.length - yayinlanacak.length}`);
+  const yayinFazla = [...YAYIN].filter((id) => !yazilacak.some((r) => r.id === id));
+  if (yayinFazla.length) console.log(`  ! YAYIN listesinde olup yazılmayacak: ${yayinFazla.join(' ')}`);
   if (!APPLY) { console.log('\n(kuru çalışma — APPLY=1 ile yazılır)'); return; }
   if (!yazilacak.length) { console.log('\nyazılacak soru yok.'); return; }
 
@@ -121,9 +134,16 @@ async function main() {
         id: r.versionId, questionId: r.questionId, versionNo: 1,
         stem: r.kok, explanation: r.ac.aciklama, difficulty: Difficulty.medium,
         mediaUrl: r.gorselUrl ?? null,
-        sourceLabel: KAYNAK, contentHash: r.contentHash, status: 'in_review' as const,
+        sourceLabel: KAYNAK, contentHash: r.contentHash,
+        status: (YAYIN.has(r.id) ? 'published' : 'in_review') as const,
+        publishedAt: YAYIN.has(r.id) ? new Date() : null,
       })),
     });
+    // Yayına çıkan sürüm Question.currentVersionId ile bağlanır; uygulama
+    // yayındaki metni buradan çözüyor (admin-questions.service.approve ile
+    // aynı adım).
+    for (const r of satirlar.filter((x) => YAYIN.has(x.id)))
+      await tx.question.update({ where: { id: r.questionId }, data: { currentVersionId: r.versionId } });
     await tx.questionOption.createMany({
       data: satirlar.flatMap((r) =>
         SIKLAR.map((l, i) => ({
@@ -135,7 +155,8 @@ async function main() {
     const ref = satirlar.filter((r) => r.ac.dayanak)
       .map((r) => ({ questionVersionId: r.versionId, citation: r.ac.dayanak! }));
     if (ref.length) await tx.legalReference.createMany({ data: ref });
-    console.log(`\n✓ ${satirlar.length} soru yazıldı (in_review) · ${ref.length} künye`);
+    const y = satirlar.filter((r) => YAYIN.has(r.id)).length;
+    console.log(`\n✓ ${satirlar.length} soru yazıldı · ${y} YAYINDA · ${satirlar.length - y} onay kuyruğunda · ${ref.length} künye`);
   }, { timeout: 120_000 });
 }
 main().finally(() => prisma.$disconnect());

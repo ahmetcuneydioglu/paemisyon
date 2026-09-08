@@ -1,0 +1,372 @@
+[
+ {
+  "id": "s1",
+  "karar": "ONAY",
+  "mebCevabi": "B",
+  "onerilen": "B",
+  "d1": "B",
+  "d2": "B",
+  "d3": "B",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Almanya'nın Polonya'yı işgali, 1 Eylül 1939 — II. Dünya Savaşı'nın resmî başlangıcı (İngiltere ve Fransa 3 Eylül 1939'da Almanya'ya savaş ilan etti)",
+  "dayanak2": "Almanya'nın Polonya'yı işgali, 1 Eylül 1939 — II. Dünya Savaşı'nın resmî başlangıcı (İngiltere ve Fransa 3 Eylül 1939'da Almanya'ya savaş ilan etti)",
+  "gerekce": "Savaşı resmen başlatan olay Polonya'nın işgalidir; İtalya'nın Arnavutluk işgali (Nisan 1939) savaş öncesi, Fransa'nın işgali (1940) savaş içi bir gelişmedir.",
+  "gerekce2": "Savaşı resmen başlatan olay Polonya'nın işgalidir; İtalya'nın Arnavutluk işgali (Nisan 1939) savaş öncesine, Fransa'nın işgali (1940) savaş içine aittir.",
+  "gerekce3": "Savaşı resmen başlatan olay Almanya'nın 1 Eylül 1939'da Polonya'ya saldırmasıdır; diğer şıklar ya savaş öncesi (İtalya'nın Arnavutluk işgali, Nisan 1939) ya da savaş sırasındaki gelişmelerdir.",
+  "uyarilar": []
+ },
+ {
+  "id": "s2",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "A",
+  "onerilen": "A",
+  "d1": "A",
+  "d2": "A",
+  "d3": "A",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Mustafa Kemal'in Harp Akademisi'ni kurmay yüzbaşı olarak bitirmesi (11 Ocak 1905) ve 5 Şubat 1905'te merkezi Şam'da bulunan 5. Ordu'ya (30. Süvari Alayı) atanması",
+  "dayanak2": "Mustafa Kemal 11 Ocak 1905'te Harp Akademisi'ni kurmay yüzbaşı olarak bitirdi; 5 Şubat 1905'te Şam'daki 5. Ordu emrine (30. Süvari Alayı) atandı, 1907'ye kadar orada kaldı",
+  "gerekce": "Kurmay yüzbaşı rütbesiyle ilk görev yeri Şam'daki 5. Ordu'dur; Trablusgarp (1911) ve Erzurum 15. Kolordu (1919) çok daha sonraki görevlerdir.",
+  "gerekce2": "Kurmay yüzbaşı rütbesiyle ilk görev yeri Şam'daki 5. Ordu'dur; Trablusgarp (1911) ve Erzurum 15. Kolordu (1919) çok sonraki görevlerdir.",
+  "gerekce3": "Kurmay yüzbaşı rütbesiyle ilk görev yeri Şam merkezli 5. Ordu'dur; Selanik'teki 3. Ordu, Trablusgarp ve Erzurum sonraki görevlerdir.",
+  "uyarilar": [
+   "Şıkta 'ordu komutanlığı' ifadesi kullanılmış; Mustafa Kemal 1905'te 5. Ordu'nun komutanı değil, emrindeki bir alayda stajyer kurmay subaydı. Şıkkın lafzı görev yerini değil unvanı çağrıştırdığı için kökle birlikte okunduğunda yanıltıcı olabilir; yine de doğru şık A'dır."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Şıklardaki 'komutanlığı' ibaresi unvan değil görev yeri/birlik adı olarak okunur ve 1905'te kurmay yüzbaşı olarak atandığı yer Şam'daki 5. Ordu'dur; diğer şıklar (Trablusgarp 1911, 15. Kolordu 1919) kronolojik olarak çok sonradır, aday tereddüde düşmez.",
+    "Şıkların hepsi aynı kalıpta birlik-yer adı verdiği için 'komutanlığı' ifadesi görev yerini gösteriyor, unvan iddiası taşımıyor; 1905'te Şam'daki 5. Ordu emrine atanması bilgisi tektir ve aday için ikinci bir seçenek doğmuyor."
+   ]
+  }
+ },
+ {
+  "id": "s3",
+  "karar": "ONAY",
+  "mebCevabi": "A",
+  "onerilen": "A",
+  "d1": "A",
+  "d2": "A",
+  "d3": "A",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Amasya Genelgesi, 22 Haziran 1919 — vatanın bütünlüğü ve milletin istiklalinin tehlikede olduğu, İstanbul Hükûmeti'nin sorumluluğunu yerine getiremediği, milletin istiklalini yine milletin azim ve kararının kurtaracağı, millî bir heyetin ve Sivas'ta kongrenin gerekliliği",
+  "dayanak2": "Amasya Genelgesi, 22 Haziran 1919 — 'Vatanın bütünlüğü, milletin istiklali tehlikededir', 'Milletin istiklalini yine milletin azim ve kararı kurtaracaktır', Sivas'ta millî bir kongre toplanması",
+  "gerekce": "Damat Ferit Paşa'nın istifasının istenmesi Amasya Genelgesi'nde yoktur; bu talep Sivas Kongresi sonrası İstanbul ile ilişkilerin kesilmesi sürecinde gündeme gelmiş, Damat Ferit 2 Ekim 1919'da istifa etmiştir.",
+  "gerekce2": "Genelgede Damat Ferit Paşa'nın istifasının istenmesi diye bir madde yoktur; diğer dört şık genelgenin bilinen maddelerinin karşılığıdır.",
+  "gerekce3": "Damat Ferit Paşa'nın istifasının istenmesi Amasya Genelgesi'nde yer almaz; genelge hükümetin şahsını değil, İstanbul Hükümeti'nin genel aczini konu edinir.",
+  "uyarilar": []
+ },
+ {
+  "id": "s4",
+  "karar": "ONAY",
+  "mebCevabi": "C",
+  "onerilen": "C",
+  "d1": "C",
+  "d2": "C",
+  "d3": "C",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "430 sayılı Tevhid-i Tedrisat (Öğretim Birliği) Kanunu, 3 Mart 1924",
+  "dayanak2": "430 sayılı Tevhid-i Tedrisat Kanunu, 3 Mart 1924 — öğretimin birleştirilmesi",
+  "gerekce": "Şıklardan yalnız Tevhid-i Tedrisat Kanunu eğitim alanına ilişkindir; diğerleri hukuk, siyasal haklar ve iktisat alanındadır.",
+  "gerekce2": "Tek eğitim inkılabı Tevhid-i Tedrisat'tır; Medeni Kanun hukuk, seçme-seçilme hakkı siyasal, İş Bankası ve Teşvik-i Sanayi ekonomi alanındadır.",
+  "gerekce3": "Beş şıktan yalnız Tevhid-i Tedrisat Kanunu eğitim alanına aittir; diğerleri hukuk (Medeni Kanun, 1926), siyasi haklar (1934), ekonomi (İş Bankası 1924, Teşvik-i Sanayi Kanunu 1927) alanındadır.",
+  "uyarilar": []
+ },
+ {
+  "id": "s6",
+  "karar": "ONAY",
+  "mebCevabi": "D",
+  "onerilen": "D",
+  "d1": "D",
+  "d2": "D",
+  "d3": "D",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "ABD'nin 15 Mayıs 1951'de müttefiklerine Türkiye ve Yunanistan'ın NATO'ya alınmasını önermesi; Türkiye 20 Şubat 1952'de üye oldu",
+  "dayanak2": "ABD'nin 15 Mayıs 1951'de Türkiye ve Yunanistan'ın NATO'ya alınmasını müttefiklerine önermesi; gerekçeler Sovyet çevrelemesi, Ortadoğu petrolleri ve üs ihtiyacıydı (Türkiye 18 Şubat 1952'de üye oldu)",
+  "gerekce": "Öneri stratejik-askerî gerekçelere (Sovyet sınırı, üsler, Ortadoğu petrolleri ve bölge devletleriyle ilişkilerde kanal olma) dayanıyordu; ikili ticaret hacmini artırma böyle bir gerekçe olarak geçmez.",
+  "gerekce2": "Öneri askerî-stratejik gerekçelere dayanır; ikili ticaret hacmini artırma kaygısı bu gerekçeler arasında sayılmaz.",
+  "gerekce3": "ABD'nin gerekçeleri stratejik/askerî (Sovyet sınırı, üsler, Ortadoğu petrolleri ve Ortadoğu'ya açılan kanal) idi; ikili ticaret hacmini büyütmek NATO önerisinin gerekçeleri arasında sayılmaz.",
+  "uyarilar": []
+ },
+ {
+  "id": "s7",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "D",
+  "onerilen": "D",
+  "d1": "D",
+  "d2": "D",
+  "d3": "D",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Maarif Kongresi, Temmuz 1921, Ankara — Maarif Vekili Hamdullah Suphi (Tanrıöver) başkanlığında, Kütahya-Eskişehir Muharebeleri sürerken toplandı; Mustafa Kemal açılış konuşmasını yaptı",
+  "dayanak2": "Maarif Kongresi, Ankara, Temmuz 1921 — Maarif Vekili Hamdullah Suphi (Tanrıöver) öncülüğünde, Kütahya-Eskişehir Savaşları sürerken toplandı; Mustafa Kemal açılış konuşmasını yaptı",
+  "gerekce": "1921 Temmuzunda Ankara'da Maarif Vekili öncülüğünde toplanan kongre Maarif Kongresi'dir; Türk Tarih Kongresi (1932) ve İzmir İktisat Kongresi (1923) farklı tarihlerdedir.",
+  "gerekce2": "Kökteki tarih, yer ve bakan adı doğrudan Maarif Kongresi'ni tarif eder; diğer kongreler farklı yıl ve konulardadır (İktisat Kongresi 1923, I. Türk Tarih Kongresi 1932, Balıkesir Kongresi 1919).",
+  "gerekce3": "Kütahya-Eskişehir Savaşları sürerken 1921 Temmuz'unda Ankara'da toplanan kongre Maarif Kongresi'dir; İzmir İktisat Kongresi 1923, I. Türk Tarih Kongresi 1932, Balıkesir Kongresi 1919'dur.",
+  "uyarilar": [
+   "Kökte kongrenin tarihi '15-22 Temmuz 1921' verilmiş; literatürde yaygın tarihlendirme 15-21 Temmuz 1921'dir. Doğru şıkkı etkilemiyor ama kökteki bitiş tarihi tartışmalı/olası dizgi hatası.",
+   "Kökte kongrenin tarihi '15-22 Temmuz 1921' verilmiş; literatürde yaygın kabul 15-21 Temmuz 1921'dir. Doğru şıkkı değiştirmez ama kökte bir gün kayması olabilir (transkripsiyon ya da kitap hatası).",
+   "Kökte kongre tarihi \"15-22 Temmuz 1921\" verilmiş; kaynakların çoğu kongreyi 15-21 Temmuz 1921 (kapanış konuşması 21 Temmuz) olarak veriyor. Doğru şıkkı değiştirmiyor ama tarih aralığının bitişi tartışmalı/muhtemelen bir gün fazla."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Kongrenin bitiş tarihi kaynaklarda 21 Temmuz 1921'dir (Hamdullah Suphi'nin kapanış konuşması o gün yapılmıştır), ancak bir günlük kayma hangi kongrenin sorulduğunu değiştirmez; Ankara'da 1921'de Maarif Vekili öncülüğünde toplanan kongre yalnızca Maarif Kongresi'dir.",
+    "Kongrenin kapanışı 21 Temmuz 1921 olduğu için bitiş tarihi bir gün fazla verilmiş, ancak Maarif Vekili öncülüğünde toplanma bilgisi tek başına D'yi zorunlu kıldığından tarih aralığı adayın kararına girmiyor."
+   ]
+  }
+ },
+ {
+  "id": "s9",
+  "karar": "ONAY",
+  "mebCevabi": "B",
+  "onerilen": "B",
+  "d1": "B",
+  "d2": "B",
+  "d3": "B",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "MEB'in ve ders kitaplarının bütünleyici ilkeler listesi: millî egemenlik, millî bağımsızlık (tam bağımsızlık), millî birlik ve beraberlik, 'Yurtta sulh, cihanda sulh', çağdaşlaşma, bilimsellik ve akılcılık, insan ve insanlık sevgisi",
+  "dayanak2": "Atatürkçü düşünce sisteminin bütünleyici ilkeleri: millî egemenlik, millî birlik ve ülke bütünlüğü, yurtta sulh cihanda sulh, çağdaşlaşma, bilimsellik ve akılcılık, insan ve insanlık sevgisi, tam bağımsızlık",
+  "gerekce": "Gelenekselcilik bütünleyici ilkeler arasında yer almaz; Atatürkçülük çağdaşlaşma ve akılcılık vurgusuyla bunun karşısındadır.",
+  "gerekce2": "Gelenekselcilik bütünleyici ilkeler arasında yer almaz; aksine inkılapçılık ilkesiyle çelişir.",
+  "gerekce3": "Gelenekselcilik bütünleyici ilkeler listesinde yer almaz; aksine inkılapçılık ilkesiyle çelişir.",
+  "uyarilar": []
+ },
+ {
+  "id": "s10",
+  "karar": "ONAY",
+  "mebCevabi": "B",
+  "onerilen": "B",
+  "d1": "B",
+  "d2": "B",
+  "d3": "B",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Dörtlü Takrir (Bayar, Menderes, Köprülü, Koraltan) — CHP grubunda 12 Haziran 1945'te reddedildi; Demokrat Parti 7 Ocak 1946'da kuruldu",
+  "dayanak2": "Dörtlü Takrir (7 Haziran 1945) — Celal Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan'ın CHP grubuna verdiği önerge reddedildi; Demokrat Parti 7 Ocak 1946'da kuruldu",
+  "gerekce": "DP'nin kuruluşunun doğrudan nedeni Dörtlü Takrir'in reddi ve ardından gelen ihraç/istifalardır; diğer şıklar kuruluş nedeni olarak gösterilmez.",
+  "gerekce2": "DP'nin doğrudan kuruluş nedeni Dörtlü Takrir'in reddi ve ardından gelen ihraç/istifalardır; diğer şıklar ya sonuç ya da ilgisiz olgulardır.",
+  "gerekce3": "DP'nin kuruluşunun doğrudan nedeni Dörtlü Takrir'in reddedilmesi ve imzacıların partiden ihracı/istifasıdır; diğer şıklar ya farklı dönemlere ait ya da neden değil sonuçtur.",
+  "uyarilar": []
+ },
+ {
+  "id": "s14",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "E",
+  "onerilen": "E",
+  "d1": "E",
+  "d2": "E",
+  "d3": "E",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Mustafa Kemal Paşa'nın Büyük Taarruz sonrası orduya hitaben yayımladığı 'Ordular! İlk hedefiniz Akdeniz'dir, ileri!' emri (Genelkurmay belgesinde tarih 1 Eylül 1922); Türk ordusu 9 Eylül 1922'de İzmir'e girdi",
+  "dayanak2": "Başkomutanlık Meydan Muharebesi sonrası orduya hitaben verilen 'Ordular, ilk hedefiniz Akdeniz'dir. İleri!' emri; ordular İzmir istikametine yöneldi, 9 Eylül 1922'de İzmir'e girildi",
+  "gerekce": "Emirle ordular Ege/Batı Anadolu istikametine, yani İzmir yönüne yönlendirilmiş, 9 Eylül 1922'de İzmir'e ulaşılmıştır.",
+  "gerekce2": "Emirdeki 'Akdeniz', o dönemin kullanımında Ege'yi de kapsar ve takibin hedefi İzmir yönüdür.",
+  "gerekce3": "Emirden sonra takip harekâtı batıya, İzmir yönüne yapılmış; dönemin dilinde \"Akdeniz\" bugünkü Ege'yi de kapsayacak biçimde kullanılmıştır.",
+  "uyarilar": [
+   "Kökte emrin tarihi '30 Ağustos 1922' verilmiş; emrin resmî belgesindeki tarih 1 Eylül 1922'dir (30 Ağustos, emirden önce kazanılan Başkomutanlık Meydan Muharebesi'nin tarihidir). Kökte tarih kusuru var. Ayrıca aynı partide s29 aynı emri konu alıyor — iki soru aynı olayı kullanıyor.",
+   "İki ayrı sorun var. (1) Kök emri '30 Ağustos 1922'ye tarihliyor; Genelkurmay belgelerinde emrin tarihi 1 Eylül 1922'dir (30 Ağustos zaferinin ertesi). (2) Bugünkü coğrafî adlandırmayla 'Akdeniz' okuyan bir aday Antalya veya Mersin şıkkını savunabilir; şıkların hepsi kıyı kenti olduğu için ayırt edici tek dayanak dönemsel kullanımdır. Ayrıca bu soru s29 ile aynı emri konu alıyor — parti içinde konu tekrarı var.",
+   "İki ayrı kusur: (1) Emir 30 Ağustos 1922'de değil, 1 Eylül 1922 sabahı yayımlanmıştır; 30 Ağustos Başkomutanlık Meydan Muharebesi'nin kazanıldığı tarihtir — kökteki tarih hatalıdır. (2) Şıklardaki Antalya/Mersin/Adana bugünkü coğrafyada gerçek Akdeniz limanlarıdır; \"Akdeniz\" sözcüğünün dönemsel kullanımını bilmeyen aday için birden fazla şık savunulabilir görünür. Ayrıca bu soru s29 ile aynı sözü konu ediyor (parti içi içerik tekrarı)."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Kökteki tarih gerçekten hatalı (emir 1 Eylül 1922'de Zafertepe'de yayımlandı, 30 Ağustos Başkomutanlık Meydan Muharebesi'nin tarihidir) ama bu hata hiçbir şıkkı savunulabilir kılmıyor: Büyük Taarruz'un takibi Batı Anadolu'da İzmir'e yönelmiştir, Antalya/Mersin/Adana o tarihte harekât alanı bile değildir; aday doğru şıkkı bulduktan sonra bu uyarıyı okusa 'haklıymışım' der.",
+    "Kökteki tarih gerçekten hatalı (emir 1 Eylül 1922'de Dumlupınar'da yayımlandı; 30 Ağustos zaferin tarihidir) ama aday hangi tarihi okursa okusun taarruzun istikameti İzmir'dir; Antalya/Mersin/Adana yönünde ne cephe ne de düşman vardı, dolayısıyla ikinci savunulabilir şık yok."
+   ]
+  }
+ },
+ {
+  "id": "s18",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "C",
+  "onerilen": "C",
+  "d1": "C",
+  "d2": "C",
+  "d3": "C",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Atatürk'ün babası Ali Rıza Efendi (öl. 1893 civarı); gümrük/evkaf memurluğu ve reji memurluğunun ardından kereste ticaretiyle uğraşmıştır",
+  "dayanak2": "Mustafa Kemal'in babası Ali Rıza Efendi'dir (1839/1841-1893); gümrük ve reji memurluğunun ardından kereste ticaretine geçmiştir",
+  "gerekce": "Babanın adı Ali Rıza Efendi'dir; 'Ahmet Rıza Efendi' ifadesi yanlıştır, mesleklerle ilgili kısım doğru olduğundan hatalı olan yalnız isimdir.",
+  "gerekce2": "C şıkkında babanın adı 'Ahmet Rıza Efendi' olarak verilmiş, doğrusu Ali Rıza Efendi'dir; diğer dört ifade (Zübeyde Hanım, beş kardeş, hayatta kalan tek kardeş Makbule, 1881 Selanik doğumu) doğrudur.",
+  "gerekce3": "Yanlış ifade C'dir: babasının adı Ahmet Rıza değil Ali Rıza Efendi'dir; diğer dört ifade doğrudur (beş kardeş, hayatta kalan tek kardeş Makbule, Selanik'teki üç katlı müze ev).",
+  "uyarilar": [
+   "B ve D şıklarındaki kardeş sayısı kaynaklara göre değişebiliyor: bazı kaynaklar Ali Rıza Efendi'nin çocuk sayısını beş (yani dört kardeş) verir, bazıları altı (beş kardeş). Doğru şık yanlış isim üzerinden kesin olduğu için soru yine de çözülüyor, ancak B/D birer 'doğru ifade' olarak sayılması kaynak seçimine bağlı.",
+   "Şıktaki hata yalnız isimde; mesleğe ilişkin kısım (reji memurluğu ardından kereste tüccarlığı) doğrudur. Bir adayın hatayı isimde değil meslekte araması ihtimali var, ancak yanlış ifadeyi içeren tek şık yine C'dir."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Yanlış ifadeyi taşıyan tek şık C'dir (baba Ali Rıza Efendi'dir, Ahmet Rıza değil); B ve D kendi içinde tutarlıdır ve yaygın kabulle örtüşür (Ali Rıza-Zübeyde çiftinin altı çocuğundan Mustafa dışında beş kardeş, dördü küçük yaşta ölmüş, hayatta kalan Makbule), dolayısıyla aday ikinci bir yanlış ifade gösteremez.",
+    "Yanlış olan tek şık C'dir ve yanlışlık tartışmasızdır (baba Ali Rıza Efendi'dir, Ahmet Rıza değil); B ile D kendi içinde tutarlı (beş kardeş: Fatma, Ahmet, Ömer, Makbule, Naciye) ve hiçbiri ikinci bir 'yanlış ifade' oluşturmuyor."
+   ]
+  }
+ },
+ {
+  "id": "s19",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "B",
+  "onerilen": "B",
+  "d1": "B",
+  "d2": "B",
+  "d3": "B",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "2804 sayılı Kanun, 14 Haziran 1935 — Maden Tetkik ve Arama Enstitüsü'nün kuruluşu (aynı gün 2805 sayılı Kanun'la Etibank kuruldu)",
+  "dayanak2": "2804 sayılı Kanun, 14 Haziran 1935 — Maden Tetkik ve Arama Enstitüsü'nün kuruluşu (1983'ten beri Maden Tetkik ve Arama Genel Müdürlüğü); aynı gün 2805 sayılı Kanun'la Etibank kuruldu",
+  "gerekce": "Yeraltı zenginliklerinin aranması, tespiti ve etüdü görevi MTA'ya verilmiştir; Etibank ise bulunan sahaların işletilmesi ve finansmanıyla görevlidir.",
+  "gerekce2": "Yeraltı kaynaklarının aranması ve tespiti görevi MTA'ya, bulunan madenlerin işletilmesi ve finansmanı Etibank'a verilmiştir.",
+  "gerekce3": "Yer altı zenginliklerinin aranması ve tespiti görevi MTA'ya verilmiştir; Etibank ise MTA'nın bulduğu sahaların işletilmesi ve finansmanı için kurulmuştur.",
+  "uyarilar": [
+   "B şıkkı kurumun adını 'Maden Teknik Arama Enstitüsü' olarak yazmış; doğrusu 'Maden Tetkik ve Arama Enstitüsü'dür (bugün Maden Tetkik ve Arama Genel Müdürlüğü). Dizgi/transkripsiyon kusuru olabilir; yayına almadan önce şık metni düzeltilmeli.",
+   "Şıkta kurumun adı 'Maden Teknik Arama Enstitüsü' yazılmış; doğrusu 'Maden Tetkik ve Arama Enstitüsü'dür. Dizgi/transkripsiyon hatası olabilir — bankaya girmeden düzeltilmeli. Ayrıca Etibank da 1935'te kurulduğu için 'araştırma/belirleme' vurgusu okunmazsa E savunulabilir görünür.",
+   "Şıkta kurum adı yanlış yazılmış: doğru ad \"Maden Tetkik ve Arama Enstitüsü\"dür, şıkta \"Maden Teknik Arama Enstitüsü\" geçiyor (yaygın bir yanlış kullanım). Ayrıca Etibank da 1935'te kurulduğu için, kökteki \"araştırılması ve belirlenmesi\" ibaresi okunmazsa E şıkkı çeldirici olarak güçlüdür."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Kurum adı şıkta yanlış yazılmış olsa da hangi kurumu işaret ettiği tartışmasızdır ve kökteki 'araştırılması ve belirlenmesi' görevi 14 Haziran 1935 tarih ve 2804 sayılı Kanun'la kurulan MTA'ya aittir; aynı gün 2805 sayılı Kanun'la kurulan Etibank işletme kurumu olduğu için E savunulamaz.",
+    "Şıktaki ad bozuk yazılmış olsa da kastedilen kurum tektir ve MTA'yı işaret eden başka şık yoktur; kök 'araştırılması ve belirlenmesi' dediği için 2805 sayılı Kanun'la işletme kurumu olarak kurulan Etibank savunulamaz."
+   ]
+  }
+ },
+ {
+  "id": "s23",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "C",
+  "onerilen": "C",
+  "d1": "C",
+  "d2": "C",
+  "d3": "C",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "II. Dünya Savaşı'nda Mihver bloğu (Almanya, İtalya, Japonya ve Üçlü Pakt'a katılan/ortak savaşan Romanya, Macaristan, Bulgaristan, Finlandiya ile İtalya kontrolündeki Arnavutluk); Türkiye savaş boyunca tarafsız kalmış, 23 Şubat 1945'te Almanya ve Japonya'ya sembolik olarak savaş ilan etmiştir",
+  "dayanak2": "Üçlü Pakt (Almanya-İtalya-Japonya, 27 Eylül 1940); Romanya 23 Kasım 1940'ta pakta katıldı, Finlandiya 1941'de Almanya'nın yanında savaştı, Arnavutluk 1939'dan itibaren İtalya işgali altındaydı. Türkiye savaş boyunca tarafsız kaldı, 23 Şubat 1945'te Almanya ve Japonya'ya savaş ilan etti",
+  "gerekce": "Türkiye Mihver bloğunda yer almamıştır; diğer dört ülke Mihver saflarında bulunmuştur.",
+  "gerekce2": "Türkiye Mihver bloğunda hiç yer almadı; savaşın sonunda müttefikler safında sembolik savaş ilanında bulundu.",
+  "gerekce3": "Türkiye savaşın büyük bölümünde tarafsızdır ve hiçbir aşamada Mihver bloğunda yer almamıştır.",
+  "uyarilar": [
+   "Finlandiya kendini Mihver üyesi değil, SSCB'ye karşı Almanya'nın 'ortak savaşanı' (co-belligerent) sayar; Arnavutluk ise bağımsız bir Mihver devleti değil İtalya işgali altındaki bir yapıdır. Doğru şık yine tartışmasız Türkiye'dir, ama şıkların tarihsel nitelendirmesi gevşek.",
+   "Arnavutluk bağımsız bir Mihver devleti değil, İtalya işgali altındaki bir kukla yönetimdi; şıkkın nitelemesi tam doğru değil. Doğru cevabı (Türkiye) etkilemez."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Finlandiya ve Arnavutluk'un statüsüne ilişkin nüans uzman düzeyinde doğru olsa da her ikisi de Mihver saflarında yer almıştır; savaş boyunca tarafsız kalan ve Mihver'e hiçbir biçimde bağlanmayan tek ülke Türkiye olduğu için aday ikinci bir şık savunamaz.",
+    "Finlandiya ve Arnavutluk'un statüsü uzman gözüyle tartışılabilir ama ikisi de fiilen Mihver saflarındaydı; Türkiye savaş boyunca tarafsız kalıp 1945'te Müttefikler yanında yer aldığı için tek savunulabilir cevap C'dir."
+   ]
+  }
+ },
+ {
+  "id": "s24",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "D",
+  "onerilen": "D",
+  "d1": "D",
+  "d2": "D",
+  "d3": "D",
+  "guven": [
+   "yuksek",
+   "yuksek",
+   "yuksek"
+  ],
+  "dayanak": "Erzurum Kongresi, 23 Temmuz - 7 Ağustos 1919 kararları: millî sınırlar içinde vatan bir bütündür, manda ve himaye kabul edilemez, azınlıklara siyasî hâkimiyeti bozacak ayrıcalık verilemez, Mebusan Meclisi'nin derhâl toplanması, dokuz kişilik Heyet-i Temsiliye'nin seçilmesi",
+  "dayanak2": "Erzurum Kongresi, 23 Temmuz - 7 Ağustos 1919 — vatanın bölünmez bütünlüğü, manda ve himayenin reddi, azınlıklara ayrıcalık verilemeyeceği, Meclis-i Mebusan'ın derhal toplanması, 9 kişilik Heyet-i Temsiliye'nin seçilmesi",
+  "gerekce": "Kongre kararlarında geçen 'Mebusan Meclisi'nin derhâl toplanması'dır; TBMM 23 Nisan 1920'de açıldığından kongre kararında TBMM'nin açılması yer alamaz (anakronizm).",
+  "gerekce2": "Kongre kararında geçen 'Meclis-i Mebusan'ın derhal toplanması'dır; TBMM 23 Nisan 1920'de açılmıştır, 1919'daki bir kongre kararında adı geçemez.",
+  "gerekce3": "Kongrede istenen, TBMM değil kapatılmış olan Mebusan Meclisi'nin derhal toplanmasıdır; TBMM 23 Nisan 1920'de açılmıştır, dolayısıyla D kongre kararları arasında yer alamaz.",
+  "uyarilar": [
+   "Ayırt edici fark kurum adının anakronizmi (Meclis-i Mebusan yerine TBMM). Erzurum kararlarını 'millî meclisin toplanması' diye ezberlemiş bir aday D'yi doğru sanabilir; soru içerik değil adlandırma inceliği üzerine kurulu."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "TBMM 23 Nisan 1920'de açılmıştır; Temmuz-Ağustos 1919'daki Erzurum Kongresi'nin kararı 'millî meclisin derhâl toplanması'dır ve bu ayrım ezber değil açık bir kronoloji bilgisidir, diğer dört şık ise Erzurum kararlarının bilinen maddeleridir.",
+    "Kusur adlandırma inceliği değil düpedüz anakronizm: TBMM 23 Nisan 1920'de açıldı, Erzurum Kongresi Temmuz-Ağustos 1919'da toplandı ve kararı Meclis-i Mebusan'ın toplanmasıydı; diğer dört şık gerçekten Erzurum kararıdır, aday tek yanlışı bulabilir."
+   ]
+  }
+ },
+ {
+  "id": "s29",
+  "karar": "ONAY-HAKEM",
+  "mebCevabi": "A",
+  "onerilen": "A",
+  "d1": "A",
+  "d2": "A",
+  "d3": "A",
+  "guven": [
+   "orta",
+   "orta",
+   "yuksek"
+  ],
+  "dayanak": "26 Ağustos 1922'de başlayan Büyük Taarruz ve 30 Ağustos 1922 Başkomutanlık Meydan Muharebesi (Dumlupınar) zaferi; 'Ordular! İlk hedefiniz Akdeniz'dir, ileri!' emri bu zaferin ardından yayımlandı",
+  "dayanak2": "Büyük Taarruz 26 Ağustos 1922'de başladı, 30 Ağustos 1922'de Başkomutanlık Meydan Muharebesi (Dumlupınar) ile kesin zafere ulaştı; 'Ordular, ilk hedefiniz Akdeniz'dir. İleri!' emri bunun ardından verildi",
+  "gerekce": "Emir, Büyük Taarruz kapsamındaki 30 Ağustos zaferinden sonra verildiği için şıklar içinde tek savunulabilir karşılık Büyük Taarruz'dur.",
+  "gerekce2": "Şıklar arasında 1922 Ağustos'undaki zaferi karşılayan tek seçenek Büyük Taarruz'dur; Sakarya 1921, İnönü muharebeleri 1921, Anafartalar 1915'tir.",
+  "gerekce3": "Emir Büyük Taarruz'un/Başkomutanlık Meydan Muharebesi'nin kazanılmasının hemen ardından verilmiştir; Sakarya (1921), I.-II. İnönü (1921) ve Anafartalar (1915) daha önceki muharebelerdir.",
+  "uyarilar": [
+   "İki kusur var: (1) Kökte emrin tarihi '30 Ağustos 1922' verilmiş, oysa emrin belgesindeki tarih 1 Eylül 1922'dir — 30 Ağustos emrin değil, öncesindeki muharebenin tarihidir. (2) Emrin doğrudan ardından geldiği zafer literatürde 'Başkomutanlık Meydan Muharebesi (Dumlupınar)' adıyla anılır; şıklarda bu ad yok, 'Büyük Taarruz' onu kapsayan üst başlık olduğu için doğru kabul ediliyor. Ayrıca s14 ile aynı emri konu alan ikinci soru.",
+   "Kök emri '30 Ağustos 1922'de verilmiştir' diyor; Genelkurmay belgelerinde emrin tarihi 1 Eylül 1922'dir — kökte tarih hatası var. Ayrıca zaferin özel adı Başkomutanlık Meydan Muharebesi'dir; şıkta yalnız onu kapsayan üst başlık 'Büyük Taarruz' verilmiş, bu da tam örtüşme değil. Güven bu iki nedenle 'orta'. Bu soru s14 ile aynı emri konu alıyor — parti içinde tekrar.",
+   "Kökteki tarih hatalı: emir 30 Ağustos 1922'de değil, 1 Eylül 1922 sabahı verilmiştir; 30 Ağustos Başkomutanlık Meydan Muharebesi'nin kazanıldığı gündür. Ayrıca çeldirici düzeyinde bir belirsizlik var: doğru şık \"Büyük Taarruz\" olarak yazılmış, oysa 30 Ağustos'ta kazanılan muharebenin adı Başkomutanlık Meydan Muharebesi'dir (Büyük Taarruz onu kapsayan harekâtın adıdır). Bu soru s14 ile aynı sözü konu ediyor (parti içi içerik tekrarı)."
+  ],
+  "hakem": {
+   "h1": "TEMIZ",
+   "h2": "TEMIZ",
+   "gerekce": [
+    "Kökteki tarih hatalı (emir 1 Eylül 1922) ve zaferin özel adı Başkomutanlık Meydan Muharebesi'dir, ancak bu ad şıklarda yer almadığı ve onu kapsayan harekâtın adı olan Büyük Taarruz dışındaki şıklar (Anafartalar, Sakarya, İnönü) bambaşka tarihlere ait olduğu için adayın savunabileceği ikinci bir şık yoktur.",
+    "Tarih kökte hatalı (emir 1 Eylül 1922) ama şıklarda Başkomutanlık Meydan Muharebesi yok ve onu kapsayan Büyük Taarruz dışındaki dört şık (Anafartalar, Sakarya, I. ve II. İnönü) emirden aylarca-yıllarca önceki olaylar olduğu için ikinci savunulabilir şık doğmuyor."
+   ]
+  }
+ }
+]

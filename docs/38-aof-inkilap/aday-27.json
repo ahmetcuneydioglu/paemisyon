@@ -1,0 +1,380 @@
+[
+ {
+  "id": "s1",
+  "no": 1,
+  "kok": "II. Dünya Savaşı'nı resmen başlatan olay aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "İtalya'nın Arnavutluk'u işgal etmesi",
+   "B": "Almanya'nın Polonya'yı işgal etmesi",
+   "C": "Hatay Sorunu'nun ortaya çıkması",
+   "D": "İtalya'nın Balkanlar'da ve Akdeniz'de bir tehdit unsuru olarak belirmesi",
+   "E": "Almanya'nın Fransa'yı işgal etmesi"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s2",
+  "no": 2,
+  "kok": "Kurmay Yüzbaşı Mustafa Kemal'in ilk görev yeri aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "5. Ordu Komutanlığı (Şam)",
+   "B": "3. Ordu Komutanlığı (Selanik)",
+   "C": "Genel Kurmay Başkanlığı (İstanbul)",
+   "D": "Trablusgarp (Batı Trablus) Cephesi",
+   "E": "15. Kolordu Komutanlığı (Erzurum)"
+  },
+  "dogru": "A",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s3",
+  "no": 3,
+  "kok": "Aşağıdakilerden hangisi Amasya Genelgesi'nde yer alan konulardan biri değildir?",
+  "siklar": {
+   "A": "Damat Ferit Paşa'nın istifasının istenmesi",
+   "B": "Milli egemenliğin vurgulanması",
+   "C": "Milletin istiklalinin tehlikede olduğunun belirtilmesi",
+   "D": "Yurdun kurtuluşunun milletin kararlılığıyla olacağına vurgu yapılması",
+   "E": "Vatanın bir bütün olarak kurtuluşunun savunulması"
+  },
+  "dogru": "A",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s4",
+  "no": 4,
+  "kok": "Aşağıdakilerden hangisi eğitim alanında yapılan inkılaplardan biridir?",
+  "siklar": {
+   "A": "Türk Medeni Kanunu'nun kabul edilmesi",
+   "B": "Kadınlara seçme ve seçilme hakkı verilmesi",
+   "C": "Tevhid-i Tedrisat Kanunu'nun kabul edilmesi",
+   "D": "İş Bankasının kurulması",
+   "E": "Teşvik-i Sanayi Kanunu'nun çıkarılması"
+  },
+  "dogru": "C",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s6",
+  "no": 6,
+  "kok": "Aşağıdakilerden hangisi 15 Mayıs 1951'de ABD'nin, müttefiklerine Türkiye'nin NATO'ya alınmasını önermesinin nedenlerinden biri değildir?",
+  "siklar": {
+   "A": "Türkiye'yi Ortadoğu petrollerinin kilidi olarak görmesi",
+   "B": "Türkiye'nin Sovyetler Birliği'ne coğrafi olarak yakın olması",
+   "C": "Türkiye'deki deniz ve hava üslerinin Batı'nın hizmetine tahsis edilmesini istemesi",
+   "D": "Türkiye ile olan ticaret hacmini artırmak istemesi",
+   "E": "Ortadoğu devletleri ile olan ilişkilerinde Türkiye'nin iyi bir kanal olabileceğini düşünmesi"
+  },
+  "dogru": "D",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s7",
+  "no": 7,
+  "kok": "Batı Cephesi'nde Yunanlıların ilerleyişe geçtiği ve Kütahya-Eskişehir Savaşları'nın yaşandığı süreçte, Maarif Vekili Hamdullah Suphi (Tanrıöver) Bey'in öncülüğünde Ankara'da 15-21 Temmuz 1921 tarihinde toplanan kongre aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Türk Tarih Kongresi",
+   "B": "İktisat Kongresi",
+   "C": "Türkiye Ziraat Kongresi",
+   "D": "Maarif Kongresi",
+   "E": "Balıkesir Kongresi"
+  },
+  "dogru": "D",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s9",
+  "no": 9,
+  "kok": "Aşağıdakilerden hangisi Atatürkçü düşünce sisteminin temel özelliklerini destekleyen bütünleyici ilkelerden biri değildir?",
+  "siklar": {
+   "A": "Tam bağımsızlık",
+   "B": "Gelenekselcilik",
+   "C": "Akıl ve bilim",
+   "D": "Çağdaşlaşma",
+   "E": "Milli egemenlik"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s10",
+  "no": 10,
+  "kok": "Aşağıdakilerden hangisi Demokrat Parti'nin kurulmasının nedenlerinden biridir?",
+  "siklar": {
+   "A": "Müstakil Grubun başarısız olması",
+   "B": "Dörtlü Takrir'in reddedilmesi",
+   "C": "Adnan Menderes'in karizmatik bir lider olması",
+   "D": "Sovyetler Birliği'nin Türkiye'yi tehdit etmesi",
+   "E": "İkinci Beş Yıllık Sanayi Planı'nın liberalizme dayanması"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s14",
+  "no": 14,
+  "kok": "1 Eylül 1922 tarihinde Mustafa Kemal Paşa, orduya hitaben yayımladığı “Ordular, İlk hedefiniz Akdeniz'dir. İleri!” emri ile orduları aşağıdaki istikametlerden hangisine yönlendirmiştir?",
+  "siklar": {
+   "A": "Antalya",
+   "B": "Mersin",
+   "C": "Adana",
+   "D": "Muğla",
+   "E": "İzmir"
+  },
+  "dogru": "E",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s18",
+  "no": 18,
+  "kok": "Mustafa Kemal Atatürk'ün ailesi ve çocukluğu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+  "siklar": {
+   "A": "Annesi Zübeyde Hanım zeki, sağduyulu, muhafazakâr ve geleneklere bağlı bir kadındı.",
+   "B": "Orta hâlli bir ailenin çocuğu olarak dünyaya gelen Mustafa Kemal'in beş kardeşi olmuştur.",
+   "C": "Babası Ahmet Rıza Efendi, uzun süre reji memurluğunun ardından kereste tüccarlığı ile meşgul olmuştur.",
+   "D": "Dört kardeşi vefat etmiş, en uzun zaman geçirebildiği hayatta kalan tek kardeşi Makbule olmuştur.",
+   "E": "1881 yılında Selanik'te Kocakasım Mahallesi Islahhâne caddesinde bugün müze olan üç katlı bir evde dünyaya gelmiştir."
+  },
+  "dogru": "C",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s19",
+  "no": 19,
+  "kok": "Birinci Beş Yıllık Sanayi Planı çerçevesinde 1935 yılında yeraltı zenginliklerinin araştırılması ve belirlenmesi için oluşturulan kurum aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Sümerbank",
+   "B": "Maden Tetkik ve Arama Enstitüsü",
+   "C": "İş Bankası",
+   "D": "Sanayi Ve Maadin Bankası",
+   "E": "Etibank"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s23",
+  "no": 23,
+  "kok": "Aşağıdakilerden hangisi II. Dünya Savaşı'ndaki Mihver devletlerden biri değildir?",
+  "siklar": {
+   "A": "Almanya",
+   "B": "Finlandiya",
+   "C": "Türkiye",
+   "D": "Romanya",
+   "E": "Arnavutluk"
+  },
+  "dogru": "C",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s24",
+  "no": 24,
+  "kok": "Aşağıdakilerden hangisi Erzurum Kongresi'nde alınan kararlardan biri değildir?",
+  "siklar": {
+   "A": "Azınlıklara ayrıcalıkların verilemeyeceği",
+   "B": "9 kişilik bir Heyeti Temsiliye'nin oluşturulacağı",
+   "C": "Vatanın bir bütün ve bölünemez olduğu",
+   "D": "Türkiye Büyük Millet Meclisinin bir an önce açılması gerektiği",
+   "E": "Manda ve himayenin kabul edilemeyeceği"
+  },
+  "dogru": "D",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s29",
+  "no": 29,
+  "kok": "1 Eylül 1922'de Mustafa Kemal Paşa orduya hitaben \"Ordular, ilk hedefiniz Akdeniz'dir. İleri!\" emrini aşağıdaki savaşlardan hangisinin kazanılmasından sonra vermiştir?",
+  "siklar": {
+   "A": "Büyük Taarruz",
+   "B": "İkinci Anafartalar Zaferi",
+   "C": "Sakarya Zaferi",
+   "D": "Birinci İnönü Muharebesi",
+   "E": "İkinci İnönü Muharebesi"
+  },
+  "dogru": "A",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s30",
+  "no": 30,
+  "kok": "Eğitim alanında yaşanan çeşitliliğe son vererek millî, çağdaş ve laik bir eğitim sistemi kurmak amacıyla 3 Mart 1924 tarihinde çıkarılan kanun aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "430 Sayılı Öğretim Birliği Kanunu",
+   "B": "Tevhid-i Tedrisat Kanunu",
+   "C": "1739 Sayılı Milli Eğitim Temel Kanunu",
+   "D": "3308 Sayılı Mesleki Eğitim Kanunu",
+   "E": "5580 Sayılı Özel Öğretim Kurumları Kanunu"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s31",
+  "no": 31,
+  "kok": "Albay Mustafa Kemal Bey Çanakkale Cephesi'nde gösterdiği üstün başarılarından dolayı İstanbul basınında kamuoyuna nasıl tanıtılmıştır?",
+  "siklar": {
+   "A": "Arıburnu Kahramanı",
+   "B": "Anafartalar Kahramanı",
+   "C": "Kumkale Kahramanı",
+   "D": "Bolayır Kahramanı",
+   "E": "Seddülbahir Kahramanı"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s32",
+  "no": 32,
+  "kok": "Aşağıdakilerden hangisi Demokrat Parti'nin kurulmasına neden olan gelişmelerden biridir?",
+  "siklar": {
+   "A": "Sovyetler Birliği'nin toprak talebinde bulunması",
+   "B": "Dörtlü Takririn CHP Meclis Grubunda reddedilmesi",
+   "C": "Milli iktisat politikasının iflas etmesi",
+   "D": "Anayasa değişikliğinin çok partili hayatı zorunlu kılması",
+   "E": "II. Dünya Savaşı sırasında izlenen denge politikasının hoşnutsuzluk yaratması"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s33",
+  "no": 33,
+  "kok": "Cumhuriyet hükümetleri tarafından 1924 yılında başlatılan ve II. Dünya Savaşı yıllarına kadar sürdürülen demir yolu politikalarının dayandığı anlayış aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Demir yolu geçmeyen toprak kalmasın",
+   "B": "Uçtan uca ulaşım",
+   "C": "Dört bucak Anadolu",
+   "D": "Bir karış fazla şimendifer",
+   "E": "Her kesime ulaşım imkanı"
+  },
+  "dogru": "D",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s38",
+  "no": 38,
+  "kok": "Demokrat Parti döneminde \"traktör devrimi\" olarak yapılan atılım aşağıdakilerden hangisi ile ilgilidir?",
+  "siklar": {
+   "A": "Sanayi ve teknoloji",
+   "B": "İş gücünün artırılması",
+   "C": "Ekonominin lokomotif alanları",
+   "D": "Dış ticaretin artırılması",
+   "E": "Tarımsal modernizasyon"
+  },
+  "dogru": "E",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s40",
+  "no": 40,
+  "kok": "Birinci Beş Yıllık Sanayi Planı çerçevesinde 1935 yılında maden ve enerji kaynaklarını işletmek için kurulan kurum aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Sümerbank",
+   "B": "Devlet Sanayi Ofisi",
+   "C": "Etibank",
+   "D": "İş Bankası",
+   "E": "Sanayi Ve Maadin Bankası"
+  },
+  "dogru": "C",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s41",
+  "no": 41,
+  "kok": "Mustafa Kemal Atatürk'ün, askerlik görevinden istifa ettikten sonra sivil bir lider olmasının önünü açan gelişme aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Amasya Mülakatı",
+   "B": "Amasya Genelgesi",
+   "C": "Erzurum Kongresi'nde Heyet-i Temsiliye başkanı seçilmesi",
+   "D": "İstanbul'dan Samsun'a geçmesi",
+   "E": "Sivas Kongresi"
+  },
+  "dogru": "C",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s45",
+  "no": 45,
+  "kok": "Mustafa Kemal Atatürk, \"Ben size taarruzu emretmiyorum, ölmeyi emrediyorum. Biz ölünceye kadar geçecek zaman içinde, yerimize başka kuvvetler ve kumandanlar geçebilir.\" sözünü hangi cephede söylemiştir?",
+  "siklar": {
+   "A": "Irak Cephesi",
+   "B": "Çanakkale Cephesi",
+   "C": "Suriye Cephesi",
+   "D": "Galiçya Cephesi",
+   "E": "Kafkas Cephesi"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s46",
+  "no": 46,
+  "kok": "Aşağıdakilerden hangisi İsmet İnönü'nün Cumhurbaşkanlığı döneminde kurulan hükümetlerden biri değildir?",
+  "siklar": {
+   "A": "Nihat Erim Hükümeti",
+   "B": "Şükrü Saracoğlu Hükümeti",
+   "C": "Recep Peker Hükümeti",
+   "D": "Refik Saydam Hükümeti",
+   "E": "Celal Bayar Hükümeti"
+  },
+  "dogru": "A",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s49",
+  "no": 49,
+  "kok": "17 Nisan 1934'te uygulamaya konulan Birinci Beş Yıllık Sanayi Planını uygulama görevi aşağıdaki kurumlardan hangisine verilmiştir?",
+  "siklar": {
+   "A": "İş Bankası",
+   "B": "Sümerbank",
+   "C": "Devlet Sanayi Ofisi",
+   "D": "Etibank",
+   "E": "Sanayi Ve Maadin Bankası"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s51",
+  "no": 51,
+  "kok": "Dörtlü Takrir'in Cumhuriyet Halk Partisi Meclis Grubu tarafından reddedilmesi üzerine kurulan siyasi parti aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Terakkiperver Cumhuriyet Partisi",
+   "B": "Hürriyet Partisi",
+   "C": "Serbest Cumhuriyet Partisi",
+   "D": "Demokrat Parti",
+   "E": "Türkiye İşçi Partisi"
+  },
+  "dogru": "D",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s52",
+  "no": 52,
+  "kok": "Aşağıdakilerden hangisi ABD'nin, Türkiye'nin NATO'ya alınmasını önermesini sağlayan olaylardan biri değildir?",
+  "siklar": {
+   "A": "Türk birliklerinin Kunuri Muharebesi'nde Amerikan birliklerini imha edilmekten kurtarması",
+   "B": "Türkiye'nin, ABD'den Marshall Planı doğrultusunda gelen yardımları reddetmesi",
+   "C": "Türk birliklerinin Kore Savaşı'nda başarı sağlaması",
+   "D": "Amerikan kamuoyunda, Türkiye'nin Sovyet tehdidi karşısında yalnız bırakılmaması gerektiği görüşünün taraftar bulması",
+   "E": "ABD'li hava uzmanlarının Türkiye'nin ittifaka alınması konusunda görüş bildirmesi"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ },
+ {
+  "id": "s54",
+  "no": 54,
+  "kok": "Başkomutan Mustafa Kemal Paşa'ya 19 Eylül 1921 tarihinde TBMM tarafından Müşir (Mareşal) rütbesi ve Gazilik unvanı hangi savaş sonrasında verilmiştir?",
+  "siklar": {
+   "A": "Başkomutanlık Meydan Muharebesi",
+   "B": "Sakarya Meydan Muharebesi",
+   "C": "Kütahya-Eskişehir Muharebesi",
+   "D": "Büyük Taarruz",
+   "E": "Aslıhanlar-Dumlupınar Muharebesi"
+  },
+  "dogru": "B",
+  "gorselGerekli": false
+ }
+]
