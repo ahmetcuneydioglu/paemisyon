@@ -15,13 +15,16 @@ import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 
 type Hakem = { id: string; karar: string; gerekce: string };
 
+/** Tur etiketi: aynı doc altında birden çok hakem turu oluyor. */
+const TUR = process.env.TUR ?? '1';
+
 function main() {
   const doc = process.argv[2];
   if (!doc) throw new Error('kullanım: ogm-hakem-uygula.ts <doc-dizini>');
 
   const oku = (k: string) =>
     new Map<string, Hakem>(
-      (JSON.parse(readFileSync(`${doc}/denetim/hakem-${k}.json`, 'utf8')) as Hakem[]).map((h) => [h.id, h]),
+      (JSON.parse(readFileSync(`${doc}/denetim/hakem-${k}-${TUR}.json`, 'utf8')) as Hakem[]).map((h) => [h.id, h]),
     );
   const h1 = oku('h1');
   const h2 = oku('h2');

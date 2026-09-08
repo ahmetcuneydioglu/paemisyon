@@ -15,6 +15,9 @@
  * Kökü metin katmanında olmayan tabloya/şekle dayanan soru `mediaUrl` ile
  * taşınır (ogm-gorsel-cikar.ts); API, web oynatıcı ve Flutter render ediyor.
  *
+ * `CIKAR` ile, kararı geçerli olduğu hâlde insan kararıyla bekletilen sorular
+ * dışarıda tutulur (kararı tahrif etmeden).
+ *
  *   npx tsx scripts/ogm-bankaya-yaz.ts <doc-dizini> <aday-dosyası>
  *   APPLY=1 npx tsx scripts/ogm-bankaya-yaz.ts <doc-dizini> <aday-dosyası>
  */
@@ -29,6 +32,8 @@ const GECER = new Set(['ONAY', 'ONAY-HAKEM', 'ZAYIF']);
 const KONU_ID = '23d22785-351b-4f39-8516-a419e2c254c0';
 const KAYNAK = 'MEB OGM Materyal soru bankası';
 const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
+/** İnsan kararıyla bekletilenler — karar dosyasına dokunulmaz. */
+const CIKAR = new Set((process.env.CIKAR ?? '').split(',').map((x) => x.trim()).filter(Boolean));
 const prisma = new PrismaClient();
 
 async function main() {
@@ -47,8 +52,13 @@ async function main() {
 
   const aday = JSON.parse(readFileSync(adayYolu, 'utf8'));
   const gecerli: any[] = [];
-  const eleme: Record<string, string[]> = { karar: [], aciklamaYok: [], cevapYok: [] };
+  const eleme: Record<string, string[]> = { karar: [], aciklamaYok: [], cevapYok: [], bekletilen: [], ayniSik: [] };
   for (const q of aday) {
+    if (CIKAR.has(q.id)) { eleme.bekletilen.push(q.id); continue; }
+    // Son savunma hattı: aynı metni taşıyan iki şık, sorunun kendisi bozuk
+    // demektir — hangi karar verilmiş olursa olsun bankaya girmez.
+    const metinler = SIKLAR.map((l) => String(q.siklar[l]).trim().toLocaleLowerCase('tr'));
+    if (new Set(metinler).size !== SIKLAR.length) { eleme.ayniSik.push(q.id); continue; }
     const k = karar.get(q.id);
     if (!GECER.has(k ?? '')) { eleme.karar.push(`${q.id}=${k ?? 'KARARSIZ'}`); continue; }
     if (!aciklama.has(q.id)) { eleme.aciklamaYok.push(q.id); continue; }
@@ -68,6 +78,8 @@ async function main() {
   console.log(`karar nedeniyle    : ${eleme.karar.length}  ${eleme.karar.join(' ')}`);
   console.log(`açıklaması yok     : ${eleme.aciklamaYok.length}  ${eleme.aciklamaYok.join(' ')}`);
   console.log(`cevabı yok         : ${eleme.cevapYok.length}  ${eleme.cevapYok.join(' ')}`);
+  console.log(`aynı şık taşıyor   : ${eleme.ayniSik.length}  ${eleme.ayniSik.join(' ')}`);
+  console.log(`insan bekletiyor   : ${eleme.bekletilen.length}  ${eleme.bekletilen.join(' ')}`);
   console.log(`bankada zaten var  : ${gecerli.length - yazilacak.length}`);
   console.log(`görselli           : ${yazilacak.filter((r) => r.gorselUrl).length}`);
   console.log(`YAZILACAK          : ${yazilacak.length}`);

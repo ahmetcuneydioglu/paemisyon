@@ -1,0 +1,842 @@
+[
+ {
+  "id": "t15s1",
+  "test": "t15",
+  "no": 1,
+  "kok": "Aşağıda verilen inkılaplar ve yapıldıkları alanlar ile ilgili verilen eşleştirmelerden hangisi yanlıştır?\n\nİnkılap\t\tAlan",
+  "siklar": {
+   "A": "Cumhuriyetin İlanı - Siyasi",
+   "B": "Kabotaj Kanunu'nun Kabulü - Ekonomik",
+   "C": "Musiki Muallim Mektebinin Açılması - Sanat",
+   "D": "Halkevlerinin Açılması - Askerî",
+   "E": "Türk Harflerinin Kabulü - Eğitim"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s2",
+  "test": "t15",
+  "no": 2,
+  "kok": "Atatürk ilkelerinin amaçları arasında aşağıdakilerden hangisi yer almaz?",
+  "siklar": {
+   "A": "Siyasi, kültürel ve ekonomik alanda güçlü bir ülke hâline gelmek",
+   "B": "Toplumun ihtiyaçlarına göre ülke sınırlarını genişletme hedefini canlı tutmak",
+   "C": "Halkın refah içerisinde yaşamasını sağlamak",
+   "D": "Ülkede birlik ve beraberliği güçlendirici inkılapları gerçekleştirmek",
+   "E": "Çağın gereklerine göre hareket edebilen genç nesiller yetiştirmek"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s3",
+  "test": "t15",
+  "no": 3,
+  "kok": "Aşağıdakilerden hangisi Atatürkçü Düşünce Sistemi'nin özelliklerinden değildir?",
+  "siklar": {
+   "A": "Çağdaş medeniyet düzeyinin üstüne çıkmayı amaçlaması",
+   "B": "Türk milletinin ihtiyaç ve isteklerinin esas alınması",
+   "C": "Ulusal egemenlik ve bağımsızlığın temel amaç olması",
+   "D": "Değişmez, sorgulanamaz ve tartışılamaz esaslara dayanması",
+   "E": "Akılcı ve bilimsel düşünceye önem verilmesi"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s4",
+  "test": "t15",
+  "no": 4,
+  "kok": "Atatürk “… gelişi güzel bir yabancı kültür, şimdiye kadar takip olunan yabancı kültürlerin yıkıcı neticelerini tekrar ettirebilir. Kültür zeminle orantılıdır. O zemin milletin karakteridir.” demiştir.\n\nAtatürk'ün bu sözlerinin;\n\nI. Türk Tarih Kurumunun kurulması,\n\nII. Türk Dil Kurumunun kurulması,\n\nIII. Belleten Dergisi'nin yayınlanması\n\ngelişmelerinden hangilerine ortam hazırladığı söylenebilir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "I ve II",
+   "C": "II ve III",
+   "D": "I ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s5",
+  "test": "t15",
+  "no": 5,
+  "kok": "Mustafa Kemal “…Türkiye büyük ve önemli bir çaba harcıyor. Çünkü savunduğu, bütün haksızlığa uğramış milletlerin, bütün Doğu'nun davasıdır.” demiştir.\n\nMustafa Kemal Atatürk'ün bu sözü Türk inkılabının hangi yönünü ortaya koymaktadır?",
+  "siklar": {
+   "A": "Kendine özgülüğünü",
+   "B": "Evrenselliğini",
+   "C": "Çok yönlülüğünü",
+   "D": "Geleneksel değerleri önemsemesini",
+   "E": "Bağımsızlığı ilke edinmesini"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s6",
+  "test": "t15",
+  "no": 6,
+  "kok": "Mustafa Kemal'in çocukluk ve gençlik yılları Selanik ve Manastır şehirlerinde geçmiştir. Bu şehirler farklı milletlerden, dinlerden ve kültürlerden oluşan insanları barındıran kozmopolit şehirlerdi.\n\nYukarıda verilen bilgilere göre Mustafa Kemal'in çocukluk ve gençlik yıllarının geçtiği bu şehirlerin onun düşünce yapısının şekillenmesinde;\n\nI. insan haklarına saygılı olmayı evrensel bir ilke olarak benimsemesi,\n\nII. farklı görüşlere değer vermesi,\n\nIII. askerî yeteneğinin gelişmesi\n\ngibi durumlardan hangilerinin etkili olduğu söylenebilir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "I ve II",
+   "C": "I ve III",
+   "D": "II ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s7",
+  "test": "t15",
+  "no": 7,
+  "kok": "Teşkilat-ı Esasiye Kanunu'nun önemli maddeleri şunlardır:\n\n1. Egemenlik kayıtsız şartsız milletindir.\n\n2. Yürütme ve yasama yetkisi BMM'nindir.\n\n3. Türkiye Devleti, Büyük Millet Meclisi tarafından yönetilir ve hükûmet BMM Hükûmeti adını alır.\n\n4. Din buyruklarının yerine getirilmesi, kanun konması, barış yapılması, savaş kararı verilmesi gibi esas haklar BMM'ye aittir.\n\nBuna göre Teşkilat-ı Esasiye Kanunu ile ilgili;\n\nI. Güçler birliği esası benimsenmiştir.\n\nII. Hükûmet şekli meclis hükûmetidir.\n\nIII. Laik devlet anlayışı kabul edilmiştir.\n\nIV. Millî egemenlik esas alınmıştır.\n\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, II ve IV",
+   "E": "II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s8",
+  "test": "t15",
+  "no": 8,
+  "kok": "I.Durum: Fransız ihtilali'nin getirmiş olduğu milliyetçilik ve Sanayi İnkılabı'nın sömürgecilik anlayışı dünya devletlerinin rekabete girmelerine ve bloklaşmalarına neden olmuştur. Almanya'nın önderliğinde Avusturya-Macaristan ve İtalya bir araya gelerek 1882'de Üçlü İttifak (Bağlaşma) Devletlerini oluşturdu. Bu birlikteliğe karşı İngiltere ve Fransa İtilaf (Anlaşma) Devletlerini kurdu. Daha sonra İtilaf Devletlerine Rusya'nın da katılmasıyla 1907'de Üçlü İtilaf Devletleri kurulmuş oldu.\n\nII.Durum: İttifak ve İtilaf devletlerinin arasında bir savaşın başlaması için küçük bir kıvılcım yeterliydi. 28 Haziran 1914'te Avusturya-Macaristan Veliahtı Franz Ferdinand (Franz Ferdinand) ve eşi, bir Sırp milliyetçisi tarafından suikast sonucu öldürüldü. Bu olay, İttifak ve İtilaf devletlerini savaşa sürükledi.\n\nVerilen durumlardan çıkarılabilecek en kapsamlı yargı aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "I. Dünya Savaşının temel sebebi milliyetçilik akımı ve sömürgecilik yarışıdır.",
+   "B": "I. Dünya Savaşı'na devletler bloklaşarak girmişlerdir.",
+   "C": "İtilaf Bloku İttifak Bloku'na göre daha sonra oluşmuştur.",
+   "D": "I. Dünya Savaş'nda temel sebeplerin etkisiyle oluşan bloklaşma sonrası gerçekleşen olay, tarafların çatışmasını başlatmıştır.",
+   "E": "İttifak Bloku ülkeleri karada güçlü bir orduya sahipken İtilaf Devletleri denizlerde güçlüdür."
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s9",
+  "test": "t15",
+  "no": 9,
+  "kok": "• Türk ordusunun Batı Cephesi'nde son savunma savaşıdır.\n\n• Millî Mücadele'yi bitiren ateşkes anlaşmasıdır.\n\n• Yeni kurulan düzenli ordunun ilk askerî başarısıdır.\n\n• Bu savaşla Millî Mücadele'nin askerî safhası sona ermiştir.\n\n• Savaş sonrası Mustafa Kemal'e TBMM tarafından gazilik unvanı ve mareşallik rütbesi verildi.\n\nVerilen bilgiler dikkate alındığında aşağıdaki gelişmelerden hangisi ile bir ilişki kurulamaz?",
+  "siklar": {
+   "A": "Lozan Barış Antlaşması",
+   "B": "Sakarya Muharebesi",
+   "C": "Büyük Taarruz",
+   "D": "I. İnönü Savaşı",
+   "E": "Mudanya Ateşkes Antlaşması"
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t15s10",
+  "test": "t15",
+  "no": 10,
+  "kok": "18 Aralık 1929'da “Millî İktisat ve Tasarruf Cemiyeti” kuruldu. 1929'dan 1946'ya kadar “Millî İktisat ve Tasarruf Haftası”, 1946-1983 arasında ise “Yerli Malı Haftası” olarak kutlandı. Günümüzde ise “Tutum, Yatırım ve Türk Malları Haftası” olarak kutlamalar yapılmaktadır.\n\nBuna göre;\n\nI. Cumhuriyetin ilk yıllarından itibaren yerli malı kullanımı özendirilmektedir.\n\nII. Cumhuriyetin genç kuşaklarına tasarruf bilinci aşılanmaya çalışılmaktadır.\n\nIII. Yabancı malların kullanımına engel olunmaya çalışılmıştır.\n\nIV. Millî ekonominin güçlendirilmesi amaçlanmıştır.\n\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, II ve IV",
+   "E": "II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s1",
+  "test": "t16",
+  "no": 1,
+  "kok": "Mustafa Kemal, İtalya'nın sömürge elde etmek için Osmanlı Devleti'nin Kuzey Afrika'daki son toprak parçası olan Trablusgarp'a saldırması üzerine gönüllü olarak o bölgeye gitti. Buradaki yerli halkı örgütledi. Komutasındaki birliklerle Derne, Tobruk ve Bingazi'de İtalyanlara karşı önemli başarılar kazandı.\n\nBu durum Mustafa Kemal'in;\n\nI. bağımsızlığa olan inancına,\nII. teşkilatçı oluşuna,\nIII. vatanseverliğine,\nIV. liderliğine\n\ngibi özelliklerinden hangilerine örnek gösterilebilir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "I ve II",
+   "C": "II ve III",
+   "D": "II, III ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s2",
+  "test": "t16",
+  "no": 2,
+  "kok": "Mustafa Kemal Atatürk'ün birtakım olaylar ve gelişmeler karşısında söylemiş olduğu aşağıdaki sözlerinden hangisi topyekûn mücadeleyi amaçlamıştır?",
+  "siklar": {
+   "A": "\"Hatt-ı müdafaa yoktur, sath-ı müdafaa vardır. O satıh bütün vatandır…\"",
+   "B": "\"…Gençlikle iftihar ediyorum ve gençliğe güveniyorum. Biz azınlıkta kalsak dahi mandayı kabul etmeyeceğiz. Parolamız tektir ve değişmez…\"",
+   "C": "\"Bilirsiniz ki savaş ve çarpışma demek, iki ulusun yalnız iki ordunun değil, iki ulusun bütün varlıklarıyla, bütün mallarıyla, bütün maddi ve manevi güçleriyle karşılaşması ve birbirleriyle vuruşması demektir…\"",
+   "D": "\"…cahillikle, ilkellikle savaş, düşmanla savaştan daha az önemli değildir…\"",
+   "E": "\"Bir ulusun asker ordusu ne kadar güçlü olursa olsun, kazandığı zafer ne kadar yüce olursa olsun, bir ulus ilim ordusuna sahip değilse, savaş meydanlarında kazanılmış zaferlerin sonu olacaktır…\""
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s4",
+  "test": "t16",
+  "no": 4,
+  "kok": "• \"Dünyada her şey için, medeniyet için, hayat için, muvaffakiyet için en hakiki mürşit ilimdir, fendir.\"\n• \"Medeni dünya çok ileridedir. Buna yetişmek, o medeniyet çemberine girmek mecburiyetindeyiz…\"\n• \"Türk milleti çalışkandır. Türk milleti zekidir. Çünkü Türk milleti millî birlik ve beraberlikle güçlükleri yenmesini bilmiştir…\"\n\nMustafa Kemal Atatürk'ün bu sözleri,\n\nI. Milliyetçilik\nII. Halkçılık\nIII. Laiklik\nIV. İnkılapçılık\n\nilkelerinden hangileriyle ilişkilendirilebilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, III ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s5",
+  "test": "t16",
+  "no": 5,
+  "kok": "Sakarya Savaşı, Türk ordusunun taktik geri çekilmeleri bırakıp stratejik savunmayı uygulamaya koymasının en güzel örneklerinden birisidir. Mustafa Kemal Paşa, \"Hattı müdafaa yoktur, sathı müdafaa vardır. O satıh bütün vatandır.\" emrini vermiş böylece hat taktiği bırakılarak çekilmek zorunda kalan birliklerin tutunabildikleri ilk yerde savunmaya devam etmeleri, diğerlerinin ise bulundukları mevzileri bırakmamaları sağlanmıştır. Türk İstiklal Harbi tarihine de \"subay muharebesi\" diye geçen ve aralıksız 22 gün geceli gündüzlü devam eden savaş Yunanlıların yenilgisi ile sona ermiştir.\n\nYukarıda verilen bilgiye göre Sakarya Savaşı ile ilgili;\n\nI. Türk ordusunun savunma savaşıdır.\nII. Batı cephesinin son muharebesidir.\nIII. Yunan kuvvetlerinin taarruzu ile başlamıştır.\nIV. Mustafa Kemal'e Mareşallik rütbesi kazandırmıştır.\n\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I ve IV",
+   "D": "II ve III",
+   "E": "II ve IV"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s6",
+  "test": "t16",
+  "no": 6,
+  "kok": "Atatürk'ün milliyetçilik ilkesi ile ilgili;\n\n• Millî Mücadele'yi ortaya çıkaran ve başarıya ulaştıran ruhun kaynağıdır.\n• Türk tarihinin aydınlatılmasını ve Türk dilinin korunmasını amaçlar.\n• Millî ekonomiyi kurmak için millî sanayinin tesisini ister.\n• Toplumda birlik ve beraberliği sağlam tutmayı hedefler.\n\nverilen ifadelerin hangisi aşağıdaki alanlardan biri ile ilişkilendirilemez?",
+  "siklar": {
+   "A": "Ekonomik",
+   "B": "Kültürel",
+   "C": "Siyasi",
+   "D": "Eğitim",
+   "E": "Dinî"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s7",
+  "test": "t16",
+  "no": 7,
+  "kok": "1870'te siyasi birliğini kuran İtalya, sömürgecilik rekabetine katıldı. Fransa; Tunus, Cezayir ve Fas'ı; İngiltere ise Mısır'ı işgal etmişti. İtalya da Osmanlı Devleti'nin Kuzey Afrika'daki son toprağı olan Trablusgarp'a yöneldi ve Osmanlı Devleti'ne ültimatom vererek bu toprakların kendisine bırakılmasını istedi.Osmanlı Devleti bu isteği kabul etmeyince İtalya, Osmanlı'ya savaş ilan etti.\n\nBuna göre İtalya'nın Trablusgarp'ı işgalinin temel sebebi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Trablusgarp'ta ayrıcalık elde etmek",
+   "B": "Akdeniz hâkimiyetini sağlamak",
+   "C": "Sömürge elde etmek",
+   "D": "Osmanlı Devleti ile diplomatik ilişkileri kesmek",
+   "E": "İngiltere'ye engel olmak"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s8",
+  "test": "t16",
+  "no": 8,
+  "kok": "24 Nisan 1920'de Mustafa Kemal, Büyük Millet Meclisi'ne hükûmetin kurulması konusunda verdiği önergede, \"Geçici olarak bir hükûmet başkanı tanımak veya padişah vekili atamak uygun değildir.\" düşüncesine destek istemiştir.\n\nBu önerge maddesi dikkate alındığında BMM ile ilgili;\n\nI. geçici bir süre için var olduğu,\nII. bağımsız karar almaya önem verdiği,\nIII. ulusal nitelikli kararlar aldığı\n\ngibi yorumlardan hangisi yapılamaz?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "I ve II",
+   "D": "I ve III",
+   "E": "II ve III"
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s9",
+  "test": "t16",
+  "no": 9,
+  "kok": "Cumhuriyetçilik ilkesi;\n\n• Vatandaşlar arasında din ayrımı gözetmez, akılcı ve bilimsel bir yönetim anlayışını savunur. Bu sebeple laiklik ilkesine katkıda bulunur.\n• Yenilikçi bir yönetim anlayışını savunur ve her alanda yeniliklerin önünü açmıştır. Bu sebeple İnkılapçılık ilkesi ile yakından ilişkilidir.\n• Irkçılığa karşıdır. Halk arasında birlik ve beraberlik duygularını güçlendirdiği için milliyetçilik ilkesi ile bir bütünlük oluşturur.\n\nVerilen bilgilerden ulaşılabilecek temel yargı aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Cumhuriyetçilik ilkesi yeni rejim ile birlikte ortaya çıkmıştır.",
+   "B": "Halkçılık ilkesi Cumhuriyetçiliğin doğal sonucu olarak ortaya çıkmıştır.",
+   "C": "Cumhuriyetçilik ilkesi diğer ilkelerin merkezindedir ve diğer ilkelerle iç içedir.",
+   "D": "Vatandaşlar birçok hak ve özgürlüğü Cumhuriyetin ilanı ile elde etmiştir.",
+   "E": "Yenilikler ve inkılaplar Cumhuriyetçilik ilkesi ile güç kazanmıştır."
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t16s10",
+  "test": "t16",
+  "no": 10,
+  "kok": "Osmanlı Devleti ilk olarak Doğu Anadolu'da, Kafkas Cephesi'nde, Ruslara karşı savaştı. Bu cephede Almanların en büyük hedefi Bakü petrollerini ele geçirmekti. Osmanlı Devleti'nin, 1877- 1878 Osmanlı-Rus Savaşı'yla elinden çıkan; Kars, Ardahan ve Batum'u geri almak, Orta Asya'da yaşayan Müslüman Türkleri Rus egemenliğinden kurtarmak ve Turancılık fikri merkezinde Osmanlı ile birleştirmek isteyen Enver Paşa, 22 Aralık 1914'te Sarıkamış Harekâtı'nı başlattı.\n\nBuna göre Osmanlı Devleti'nin Kafkas Cephesi'ndeki durumu ile ilgili;\n\nI. Almanya'nın isteklerini yerine getirmeye çalışmıştır.\nII. Kaybettiği toprakları geri almak istemiştir.\nIII. Rusya'yı savaş dışında bırakmıştır.\nIV. Türkçülük politikası doğrultusunda hareket etmiştir.\n\nyargılarından hangileri doğrudur?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, II ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s1",
+  "test": "t17",
+  "no": 1,
+  "kok": "Kurulması bağımsızlık mücadelesinin dönüm noktası denilebilecek zor günlere rastlayan Anadolu Ajansı, işgal kuvvetlerinin Anadolu'daki direnişini kırmak ve ulusal bilincin oluşmasını engellemek için yürüttüğü propaganda faaliyetlerine karşı mücadele etti, iç ve dış kamuoyunu aydınlatmak amacıyla zor şartlar altında faaliyet gösterdi. M. Kemal'in talimatı ile 6 Nisan 1920 tarihinde Anadolu Ajansı kuruldu. 5 Mayıs 1920'de Anadolu Ajansı'nın tüm bültenlerinin sadece halka değil cephede savaşan askerlere de ulaştırılması için tüm vasıtaların kullanılması emrini verdi. İmkânsızlıklara rağmen Anadolu Ajansı'nın Fransızca bültenleri ile Anadolu'nun haklı mücadelesi dış kamuoyuna anlatıldı.\n\nBuna göre Anadolu Ajansı ile ilgili;\n\nI. Mustafa Kemal'in talimatıyla kurulmuştur.\nII. Sivas Kongresi sırasında açılmıştır.\nIII. Ajans askerî amaçlar için de kullanılmıştır.\nIV. Millî Mücadele'nin sesi olmuştur.\n\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, III ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s3",
+  "test": "t17",
+  "no": 3,
+  "kok": "Erzurum Kongresi'nde alınan,\n\nI. Millî sınırlar içinde vatan bir bütündür bölünemez.\nII. Her türlü yabancı işgal ve müdahalesine karşı, millet birlik olarak kendisini müdafaa ve mukavemet edecektir.\nIII. Kuvay-ı Millîye'yi etkin ve millî iradeyi egemen kılmak esastır.\nIV. Manda ve himaye kabul edilemez.\nV. Mebusan Meclisinin derhâl toplanmasına ve hükûmet işlerinin meclisin denetimi altında yürütülmesine çalışılacaktır.\n\nkararlarından hangileri millî egemenlik ile ilişkilendirilebilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "II ve III",
+   "D": "III ve IV",
+   "E": "III ve V"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s4",
+  "test": "t17",
+  "no": 4,
+  "kok": "Mustafa Kemal Paşa'nın \"Gözüm Sakarya'da, Dumlupınar'da, kulağım İnebolu'da\" dediği İnebolu'dan Ankara'ya gelen kervan yolu Millî Mücadele için çok önemliydi. İstanbul'da Kuvâ-yı Millîyecilerin kurduğu gizli cemiyetler, elde ettikleri silahları birçok zorluğu göze alarak Anadolu'ya sevk etmişlerdir. İstanbul'dan İnebolu açıklarına gemilerle gelen silah ve cephane, kayıklarla İnebolu kıyılarına taşınıyordu. İnebolu'ya gelen silah ve cephane Kastamonu'nun kahraman kadınları, yaşlıları ve çocukları tarafından kağnı arabalarıyla çok zor şartlarda Ankara'ya taşınıyordu. Eli silah tutan erkekler cephelerde düşmana karşı çarpışırken, onlara ulaştırılacak bu silah ve cephaneler çok elzemdi. İşte bu sebeplerden, İnebolu'dan Ankara'ya uzanan bu zorlu yola \"İstiklal Yolu\" denilmiştir.\n\nBuna göre İstiklal Yolu ile ilgili;\n\nI. Türk milletinin fedakârlığının bir göstergesidir.\nII. Türk ordusunun tüm ihtiyacını karşılamaktadır.\nIII. Topyekûn mücadeleye örnektir.\nIV. Millî Mücadele'nin kazanılmasında katkı sağlamıştır.\n\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I, II ve III",
+   "C": "I, II ve IV",
+   "D": "I, III ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s5",
+  "test": "t17",
+  "no": 5,
+  "kok": "Hukuk alanında yapılan inkılâplar, millî egemenlik anlayışı doğrultusunda hukuk üstünlüğünün geçerli olduğu bir devlet yapısı oluşturmayı amaçladı. Yapılan düzenlemeler cinsiyete, ırka ve dine dayalı ayrımları sona erdirdi. Akla, bilime ve mantığa dayalı bir hukuk düzeni kurulmasını sağladı. Muasır medeniyet seviyesine uygun oluşturulan hukuk düzeni inkılâpların halk tarafından benimsenmesinde son derece etkili oldu.\n\nBuna göre hukuk alanında yapılan inkılâpların aşağıdaki özelliklerden hangisine sahip olduğu söylenemez?",
+  "siklar": {
+   "A": "Çağdaş",
+   "B": "Laik",
+   "C": "Demokratik",
+   "D": "Ayrımcı",
+   "E": "Millî"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s6",
+  "test": "t17",
+  "no": 6,
+  "kok": "Millî Mücadele Dönemi ile ilgili aşağıdaki bilgilerden hangisi yanlıştır?",
+  "siklar": {
+   "A": "Millî sınırlar Misak-ı Millî kararlarıyla çizilmiştir.",
+   "B": "Amasya Genelgesi'nde Millî Mücadele'nin gerekçesi, amacı ve yöntemi belirtilmiştir.",
+   "C": "Temsil Heyeti'nin oluşturulması, yeni Türk devletinin kurulması yolunda atılan ilk adımdır.",
+   "D": "Manda ve himaye ilk kez Erzurum Kongresi'nde reddedilmiştir.",
+   "E": "Millî cemiyetler Sivas Kongresi kararıyla ile birleştirilmiştir."
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s7",
+  "test": "t17",
+  "no": 7,
+  "kok": "\"Devlet Demiryolları ve Limanları İdare-i Umumiyesi\" hem demiryollarının yapımını hem de işletilmesini sağlamak amacıyla 31 Mayıs 1927'de kuruldu. Cumhuriyet öncesinde yapılan ve yabancı şirketler tarafından işletilen hatlar, 1928-1948 yılları arasında satın alınarak yerli ve millî ekonomi anlayışı güçlendirildi. 22 Temmuz 1953'e kadar katma bütçeli bir devlet idaresi şeklinde yönetilen kurum, bu tarihte çıkarılan bir kanunla Ulaştırma Bakanlığına bağlı olarak \"Türkiye Cumhuriyeti Devlet Demiryolları İşletmesi (TCDD)\" adı altında bir kamu şirketi hâline getirildi.\n\nVerilen bilgilere göre TCDD'nin kuruluşu ile ilgili süreç, aşağıdaki hangi ilkelerin hayata geçirilmesi ile ilgilidir?",
+  "siklar": {
+   "A": "Cumhuriyetçilik - Devletçilik",
+   "B": "Cumhuriyetçilik - Milliyetçilik",
+   "C": "Devletçilik - Milliyetçilik",
+   "D": "Milliyetçilik - Halkçılık",
+   "E": "İnkılapçılık - Cumhuriyetçilik"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s8",
+  "test": "t17",
+  "no": 8,
+  "kok": "Mustafa Kemal'in, (I) Selânik'te öğrenim gördüğü yıllarda burada farklı dillerde yazılmış kitaplar ve basılmış gazeteler zengin bir kültürel ortamın oluşmasını sağladı. Mustafa Kemal (II) Manastır'da öğrenim görürken Türk tarihi ve kültürü ile ilgili birçok kitap okudu. Namık Kemal ve Ziya Gökalp gibi vatansever şairlerden etkilendi. (III) İstanbul Harp Okulu ve Akademisi'ndeyken arkadaşlarıyla gazete çıkarmış ve çeşitli konferanslar düzenlemiştir. (IV) Sofya'da görevliyken diğer ülke diplomatlarıyla çeşitli konularda fikir alışverişinde bulunmuştur. (V) Trablusgarp'ta işgalci İtalyan kuvvetlerine karşı Derne ve Tobruk'ta askerî başarılar kazandı.\n\nNumaralandırılmış şehirlerin Mustafa Kemal'in fikir ve düşünce hayatına katkıları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+  "siklar": {
+   "A": "I. Şehir, farklı kültürleri tanımasını sağlamıştır.",
+   "B": "II. Şehir, tarih sevgisi ve milliyetçi duygularının oluşmasına ortam sağlamıştır.",
+   "C": "III. Şehir, Batı kültürünü daha yakından tanımasını sağlamıştır.",
+   "D": "IV. Şehir, Balkan ülkeleri hakkında diplomasi bilgisine katkı sağlamıştır.",
+   "E": "V. Şehir, askerî yeteneklerinin gelişmesini sağlamıştır."
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s9",
+  "test": "t17",
+  "no": 9,
+  "kok": "Lozan Antlaşması'nın aşağıdaki maddelerinden hangisi \"İstiklal-i Tam\" ilkesine aykırıdır?",
+  "siklar": {
+   "A": "Boğazlar, Türkiye'nin başkanlığında uluslararası bir komisyon tarafından yönetilecektir. Türkiye, Boğazların her iki yakasında da asker bulundurmayacaktır.",
+   "B": "Adli, mali, idari ve ekonomik ayrıcalıklar içeren kapitülasyonlar kaldırılacaktır.",
+   "C": "Osmanlı borçları, Osmanlı Devleti'nden ayrılan devletlerle Türkiye arasında paylaştırılacaktır. Türkiye'nin payına düşen borçlar taksitlere bağlanacaktır.",
+   "D": "Azınlıklar Türk vatandaşı olacaklar, Türk kanunlarına tabi tutulacaklardır.",
+   "E": "Fener Rum Patrikhanesi, İstanbul'da bulunacak fakat ekümenik özelliği olmayacaktır."
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t17s10",
+  "test": "t17",
+  "no": 10,
+  "kok": "İsviçre Medeni Kanunu, 17 Şubat 1926'da Türk toplumunun yapısına uygun olarak düzenlenip kabul edildi ve 4 Ekim 1926'da yürürlüğe girdi.\n\nMedeni Kanun'la:\n\n• Resmî nikâh zorunluluğu getirildi. Evlilik devlet güvencesi altına alındı.\n• Tek eşlilik zorunlu kılınarak erkeğin birden fazla kadınla evlenmesi yasaklandı.\n• Kadınlara boşanma hakkı verildi.\n• Boşanma hâlinde kadına nafaka verilmesi kabul edildi.\n• Kadınlara mahkeme şahitliğinde erkeklerle eşit olma hakkı tanındı.\n• Kadın ve erkeğin miras paylaşımında eşit pay alması sağlandı.\n• Kadınlara istediği mesleği seçme hakkı tanındı.\n\nBuna göre Türk kadını, Medeni Kanun'la;\n\nI. ekonomik,\nII. siyasi,\nIII. sosyal,\nIV. hukuk\n\nalanlarından hangilerinde erkeklerle ile eşit haklara kavuşmuştur?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, III ve IV",
+   "E": "II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s1",
+  "test": "t18",
+  "no": 1,
+  "kok": "Aşağıdaki isimlerden hangisi Mustafa Kemal'in fikir hayatının oluşum ve gelişimini etkileyen fikir adamları arasında gösterilemez?",
+  "siklar": {
+   "A": "Namık Kemal",
+   "B": "Montesquieu",
+   "C": "Ziya Gökalp",
+   "D": "Mehmet Emin Yurdakul",
+   "E": "Yakup Kadri"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s2",
+  "test": "t18",
+  "no": 2,
+  "kok": "• Vatanseverlik\n• Tam bağımsızlık\n• Ülke bütünlüğü\n• Birlik ve beraberlik\n\nVerilen kavramlar aşağıdaki Atatürk ilkelerinin hangisiyle daha çok ilişkilidir?",
+  "siklar": {
+   "A": "Cumhuriyetçilik",
+   "B": "Halkçılık",
+   "C": "Milliyetçilik",
+   "D": "Devletçilik",
+   "E": "İnkılapçılık"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s3",
+  "test": "t18",
+  "no": 3,
+  "kok": "Anadolu'yu işgal için gelen ancak 3 Ekim 1921'de başlayan Mudanya Ateşkes görüşmelerine doğrudan katılmayan devlet aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "İngiltere",
+   "B": "İtalya",
+   "C": "Fransa",
+   "D": "Rusya",
+   "E": "Yunanistan"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s4",
+  "test": "t18",
+  "no": 4,
+  "kok": "Kurtuluş Savaşı sırasında Batı Cephesi'nde düzenli ordu ile gerçekleştirilen aşağıdaki muharebelerden hangisi başarısızlıkla sonuçlanmıştır?",
+  "siklar": {
+   "A": "I. İnönü",
+   "B": "II. İnönü",
+   "C": "Kütahya - Eskişehir",
+   "D": "Sakarya",
+   "E": "Aslıhanlar - Dumlupınar"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s5",
+  "test": "t18",
+  "no": 5,
+  "kok": "Kurtuluş Savaşı yıllarında gerçekleştirilen;\n\nI. TBMM çatısı altında güçler birliği ilkesinin benimsenmesi\nII. Düzenli ordunun kurulması,\nIII. Tekalif-i Milliye kararlarının alınması,\nIV. Kongrelerin toplanması\n\ngibi faaliyetlerden hangileri Kurtuluş Savaşı'nın tek elden yürütmesine yönelik bir uygulama olduğu söylenebilir?",
+  "siklar": {
+   "A": "Yalnız II",
+   "B": "I ve II",
+   "C": "I ve III",
+   "D": "II ve IV",
+   "E": "III ve IV"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s6",
+  "test": "t18",
+  "no": 6,
+  "kok": "Aşağıdakilerden hangisi Mondros Ateşkes Antlaşması'ndan sonra İngilizler tarafından ilk işgal edilen yerdir?",
+  "siklar": {
+   "A": "İzmir",
+   "B": "İstanbul",
+   "C": "Bursa",
+   "D": "Musul",
+   "E": "Van"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s7",
+  "test": "t18",
+  "no": 7,
+  "kok": "Ermenistan ile BMM arasında 3 Aralık 1920 tarihinde imzalanan Gümrü Barış Antlaşması'nın önemli bazı maddeleri şunlardır:\n\nI. Ermenistan BMM'yi tanıyacaktır.\nII. Kars, Sarıkamış, Kağızman, Iğdır ve Oltu BMM Hükûmeti'ne bırakılacaktır.\nIII. İsteyen Ermeniler Türkiye'ye göç edebilecektir.\n\nBuna göre Gümrü Antlaşması ile aşağıdaki yargılardan hangisine ulaşılamaz?",
+  "siklar": {
+   "A": "BMM Hükûmeti'nin uluslararası alanda siyasi başarı kazanmıştır.",
+   "B": "Ermeniler, Anadolu üzerindeki her türlü isteklerinden vazgeçmişlerdir.",
+   "C": "Sevr Antlaşması'nın Ermeniler ile ilgili maddeleri geçersiz olmuştur.",
+   "D": "Ermenistan BMM'nin varlığını tanımıştır.",
+   "E": "Güney cephesi kapanmıştır."
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s8",
+  "test": "t18",
+  "no": 8,
+  "kok": "I. İnönü Savaşı'ndan sonra toplanan Londra Konferansı'nda İtilaf Devletleri'nin Sevr Antlaşması şartlarını biraz hafifleterek sunmaları aşağıdaki ifadelerden hangisinin kanıtıdır?",
+  "siklar": {
+   "A": "Savaş alanında başarı gösterdiklerinin",
+   "B": "Londra Konferansı'nda amaçlarına ulaşacaklarına inanmalarının",
+   "C": "Sevr Antlaşması'nın şartlarının ağır olduğunu kabul etmelerinin",
+   "D": "İtilaf Devletleri'nin aralarında anlaştıklarının",
+   "E": "Yunan kuvvetlerine güvenmediklerinin"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s9",
+  "test": "t18",
+  "no": 9,
+  "kok": "• Din ve vicdan hürriyetini önemser.\n• Sürekli yenileşmeyi ve değişimi öngörür.\n• Sınıf ayrımını reddeder.\n• Türk kültüründen doğmuştur.\n\nAtatürk ilkeleri'ne ait verilen özellikler aşağıdaki ilkelerle eşleştirildiğinde hangisi ile ilgili bilgiye ulaşılamaz?",
+  "siklar": {
+   "A": "İnkılapçılık",
+   "B": "Laiklik",
+   "C": "Milliyetçilik",
+   "D": "Halkçılık",
+   "E": "Devletçilik"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t18s10",
+  "test": "t18",
+  "no": 10,
+  "kok": "Osmanlı Devleti hangi savaş ile uğraşırken Arnavutluk bu durumu fırsat bilerek bağımsızlığını ilan etmiştir?",
+  "siklar": {
+   "A": "Balkan Savaşları",
+   "B": "Trablusgarp Savaşı",
+   "C": "I.Dünya Savaşı",
+   "D": "Kırım Savaşı",
+   "E": "93 Harbi"
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s1",
+  "test": "t19",
+  "no": 1,
+  "kok": "I. Saltanatın kaldırılması\nII. Cumhuriyetin ilanı\nIII. Tevhid-i Tedrisat Kanunu'nun çıkarılması\nIV. Halifeliğin kaldırılması\n\nYukarıda verilen gelişmelerden hangileri doğrudan siyasi alanda yapılan inkılaplar ile ilgilidir?",
+  "siklar": {
+   "A": "I ve II",
+   "B": "I ve III",
+   "C": "I, II ve III",
+   "D": "I, II ve IV",
+   "E": "I, II, III ve IV"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s2",
+  "test": "t19",
+  "no": 2,
+  "kok": "I. İnönü zaferinden sonra BMM elçilik heyeti ile Afganistan temsilcileri arasında askerî ve siyasi alanda yardımlaşmayı esas alan Türk-Afgan Dostluk Antlaşması imzalanmıştır.\n\nBuna göre;\n\nI. BMM Hailfeliğin dinî gücünü kullanmak istemiştir.\nII. Afganistan BMM'nin bağımsızlık hareketine destek vermiştir.\nIII. BMM'nin dış politikadaki etkinliği artmıştır.\n\nyargılarından hangilerine ulaşılır?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "Yalnız III",
+   "D": "I ve III",
+   "E": "II ve III"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s3",
+  "test": "t19",
+  "no": 3,
+  "kok": "Aşağıdakilerden hangisinde olay  ile sonuç arasındaki ilişki yanlıştır?",
+  "siklar": {
+   "A": "Olay: Yeni Türk harflerinin kabulü — Sonuç: Millet Mektepleri'nin Açılması",
+   "B": "Olay: Saltanatın kaldırılması — Sonuç: Cumhuriyetin ilanı",
+   "C": "Olay: Medeni Kanunun kabulü — Sonuç: Kadının toplumdaki statüsünün iyileştirilmesi",
+   "D": "Olay: Mondros Ateşkes Antlaşması — Sonuç: Kurtuluş Savaşı'nın silahlı mücadele döneminin bitmesi",
+   "E": "Olay: Büyük Taarruz — Sonuç: Mudanya Ateşkes Antlaşması'nın imzalanması"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s4",
+  "test": "t19",
+  "no": 4,
+  "kok": "\"Bütün cihan bilmelidir ki, artık bu devletin ve bu milletin başında hiçbir kuvvet yoktur, hiçbir makam yoktur. Yalnız bir kuvvet vardır, o da millî egemenliktir. Yalnız bir makam vardır, o da milletin kalbi, vicdanı ve mevcudiyetidir\"\n\nAtatürk'ün bu sözü ;\n\nI. Cumhuriyet'in ilanı,\nII. Medeni Kanun'un kabulü,\nIII. Saltanatın kaldırılması\n\nİnkılâplarından hangileriyle doğrudan ilgilidir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "I ve II",
+   "D": "I ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s6",
+  "test": "t19",
+  "no": 6,
+  "kok": "Lozan Antlaşması ile yabancı okulların çalışması belli esaslara bağlandı, bu okullarda, Türk kanun ve yönetmeliklerinin uygulanması kararı alındı. Türkçe, tarih, coğrafya dersleri Türk öğretmenler tarafından okutulacak ve okulları Türk müfettişler denetleyecekti.\n\nBuna göre;\n\nI. bağımsızlık\nII. milliyetçilik\nIII. egemenlik\n\nkavramlarından hangileri yabancı okullar sorununun çözümünde dikkate alınan ilkelerdendir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "Yalnız III",
+   "D": "I ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s7",
+  "test": "t19",
+  "no": 7,
+  "kok": "I. Medeni Kanunu'nun kabul edilmesi\nII. Tevhidi Tedrisat Kanunu'nun kabul edilmesi\nIII. Kabotaj Kanunu'nun kabulü\n\nVerilen gelişmeler ve ilgili oldukları alanların doğru eşleştirilmesi aşağıdakilerden hangisinde verilmiştir?",
+  "siklar": {
+   "A": "Eğitim: II — Ekonomik: I — Hukuki: III",
+   "B": "Eğitim: III — Ekonomik: I — Hukuki: II",
+   "C": "Eğitim: III — Ekonomik: II — Hukuki: I",
+   "D": "Eğitim: I — Ekonomik: III — Hukuki: II",
+   "E": "Eğitim: II — Ekonomik: III — Hukuki: I"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s8",
+  "test": "t19",
+  "no": 8,
+  "kok": "Mustafa Kemal Atatürk'ün öğrenim gördüğü şehirlerin kronolojik sıralaması aşağıdakilerin hangisinde doğru olarak verilmiştir?",
+  "siklar": {
+   "A": "Selanik - Manastır - İstanbul",
+   "B": "Manastır - Selanik - İstanbul",
+   "C": "Manastır - İstanbul - Selanik",
+   "D": "Selanik - İstanbul - Manastır",
+   "E": "İstanbul - Manastır - Selanik"
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s9",
+  "test": "t19",
+  "no": 9,
+  "kok": "Aşağıdakilerden hangisi Millî Cemiyetlerin kurulma sebeplerinden biri değildir?",
+  "siklar": {
+   "A": "İtilaf Devletlerinin, Mondros Ateşkes Anlaşması'nın 7. maddesine göre işgallere başlaması",
+   "B": "Azınlıkların bağımsızlık istekleri",
+   "C": "İstanbul Hükûmeti'nin işgaller karşısında etkisiz kalması",
+   "D": "Kuruldukları bölgelerde bağımsız olma istekleri",
+   "E": "Zararlı cemiyetlerin faaliyetlerine engel olunmak istenmesi"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t19s10",
+  "test": "t19",
+  "no": 10,
+  "kok": "· Afganistan Dostluk Antlaşması imzalanmıştır.\n· Londra Konferansı'nın toplanmasında etkili olmuştur.\n· Savaş sonunda Moskova Antlaşması imzalanmıştır.\n· Düzenli ordunun Yunanlılara karşı ilk başarısıdır.\n\nYukarıda sonuçları verilen savaş, aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "I. İnönü",
+   "B": "II. İnönü",
+   "C": "Sakarya",
+   "D": "Büyük Taarruz",
+   "E": "Kütahya - Eskişehir"
+  },
+  "dogru": "A",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s1",
+  "test": "t20",
+  "no": 1,
+  "kok": "Fransa ile yapılan Ankara Antlaşması'nda yer alan;\n• Fransa Hatay dışında Misak-ı Millî'yi tanıyacak,\n• Fransa Anadolu'dan çekilecek,\n• Hatay'da halkın dili Türkçe olacak,\ngibi maddelere bakılarak;\nI. Kurtuluş Savaşı muharebeler dönemi sona ermiştir.\nII. Misak-ı Millî belgesinde belirlenen sınırlardan taviz verilmiştir.\nIII. Hatay'la kültürel bağlar korunmak istenmiştir.\nyargılarından hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "Yalnız III",
+   "D": "II ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s2",
+  "test": "t20",
+  "no": 2,
+  "kok": "Aşağıdaki devletlerinden hangisi, Millî Mücadele yıllarında İngiltere'nin menfaatleri doğrultusunda hareket etmiştir?",
+  "siklar": {
+   "A": "Fransa",
+   "B": "İtalya",
+   "C": "Yunanistan",
+   "D": "Rusya",
+   "E": "ABD"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s3",
+  "test": "t20",
+  "no": 3,
+  "kok": "Vatandaşlar arasında din ayrımı gözetmeyen Cumhuriyetçilik, akıl ve bilim ilkelerine göre hareket eden bir yönetim anlayışını savunur.\nBuna göre \"Cumhuriyetçilik\" ilkesinin aşağıdaki ilkelerden hangisi ile ilişkili olduğu söylenebilir?",
+  "siklar": {
+   "A": "İnkılapçılık",
+   "B": "Milliyetçilik",
+   "C": "Halkçılık",
+   "D": "Laiklik",
+   "E": "Devletçilik"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s4",
+  "test": "t20",
+  "no": 4,
+  "kok": "• İtilaf Devletleri arasında görüş ayrılıkları belirginleşmiştir.\n• Şehir savunmaları şeklinde olmuştur.\n• Bölge halkının direnişi ile karşı konulmuştur.\n• Fransa ile yapılan Ankara Antlaşması ile kapanmıştır.\nverilen özellikler aşağıdaki cephelerden hangisine aittir?",
+  "siklar": {
+   "A": "Doğu",
+   "B": "Batı",
+   "C": "Güney",
+   "D": "Kafkas",
+   "E": "Çanakkale"
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s5",
+  "test": "t20",
+  "no": 5,
+  "kok": "Aşağıda verilen bilgilerden hangisi Atatürk ilkeleri ile ilgili doğru bir ifade değildir?",
+  "siklar": {
+   "A": "Atatürk ilkeleri çağdaş yaşam anlayışına uygundur ve Türk milletinin hem o dönemdeki hem de gelecekteki ihtiyaçları göz önüne alınarak belirlenmiştir.",
+   "B": "Halkçılık ilkesi sosyal devlet anlayışına uygun olarak halkın refah düzeyini yükseltmeyi amaçlar.",
+   "C": "Devletçilik ilkesine göre ekonomik yatırımları devletten çok, özel teşebbüs gerçekleştirmelidir.",
+   "D": "Atatürk'ün milliyetçilik ilkesi vatan, millet sevgisi ve bağımsız yaşama arzusuna dayanmaktadır.",
+   "E": "İnkılapçılık ilkesi sürekli yenilik yapılmasını sağlayarak Atatürkçü düşünce sistemine dinamik bir yapı kazandırmıştır."
+  },
+  "dogru": "C",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s6",
+  "test": "t20",
+  "no": 6,
+  "kok": "Cumhuriyet döneminde gerçekleşen;\nI. Halkın yönetime katılmasının sağlanması\nII. Ülkede yaşayanların refah düzeyinin artırılması\nIII. Hicri Takvim yerine Miladi Takvim'in kullanılması\ngibi girişimlerin Atatürk ilkeleriyle ilişkisi aşağıdakilerden hangisinde doğru verilmiştir?",
+  "siklar": {
+   "A": "I: Halkçılık — II: Milliyetçilik — III: İnkılapçılık",
+   "B": "I: Cumhuriyetçilik — II: Halkçılık — III: İnkılapçılık",
+   "C": "I: Cumhuriyetçilik — II: Milliyetçilik — III: İnkılapçılık",
+   "D": "I: Halkçılık — II: Cumhuriyetçilik — III: Milliyetçilik",
+   "E": "I: Cumhuriyetçilik — II: Milliyetçilik — III: İnkılapçılık"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s7",
+  "test": "t20",
+  "no": 7,
+  "kok": "Amasya Genelgesi'nde yer alan;\n\"Vatanın bütünlüğü ve milletin bağımsızlığı tehlikededir. İstanbul Hükûmeti galip devletlerin etkisi altında bulunduğundan yüklendiği sorumlulukları yerine getirememektedir. Bu durum milletimizi yok olmuş saymaktadır.\"\nşeklindeki ifadelere dayanarak;\nI. Türk milletinin İstanbul Hükûmeti'nden bir beklentisinin olmaması gerektiği,\nII. Yeni bir devletin kurulması için çalışmalara başlandığı,\nIII. Vatanın bütünlüğünü ve milletin bağımsızlığının korunması yolunda adım atılacağı,\nIV. Millî Mücadele'nin gerekçesinin oluştuğu\ngibi durumlardan hangilerine ulaşılamaz?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "Yalnız IV",
+   "D": "II ve III",
+   "E": "III ve IV"
+  },
+  "dogru": "B",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s8",
+  "test": "t20",
+  "no": 8,
+  "kok": "Mudanya Ateşkes Antlaşması'nda;\n• Doğu Trakya 15 gün içerisinde Yunan kuvvetleri tarafından boşaltılacak,\n• Boğazlar ve İstanbul TBMM'ye bırakılacak,\n• Doğu Trakya'daki memuriyetler 30 gün içinde Türklere teslim edilecek\nmaddeleri yer almıştır.\nBuna göre;\nI. İstanbul'un BMM'ye verilmesi Osmanlı Devleti'nin hukuken yok sayıldığının göstergesidir.\nII. Yunanlılar yenilgiyi kabullenmiştir.\nIII. Doğu Trakya, savaşılmadan alınmıştır.\ngibi yargılardan hangilerine ulaşılabilir?",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız II",
+   "C": "Yalnız III",
+   "D": "I ve II",
+   "E": "I, II ve III"
+  },
+  "dogru": "E",
+  "gorselUrl": null
+ },
+ {
+  "id": "t20s9",
+  "test": "t20",
+  "no": 9,
+  "kok": "Osmanlı Devleti'nin Trablusgarp'ı İtalya'ya karşı savunmakta zorluk yaşamasının nedenleri arasında aşağıdakilerden hangisi gösterilebilir?",
+  "siklar": {
+   "A": "İtalya'nın Balkan devletlerinden destek alması",
+   "B": "Trablusgarp halkının İtalyanlarla birlikte hareket etmesi",
+   "C": "Balkanlarda azınlık isyanlarının çıkması",
+   "D": "Osmanlı Devleti'nin Trablusgarp ile kara bağlantısının olmaması",
+   "E": "İtalya'nın Osmanlı Devleti'ne ültimatom vermesi"
+  },
+  "dogru": "D",
+  "gorselUrl": null
+ }
+]

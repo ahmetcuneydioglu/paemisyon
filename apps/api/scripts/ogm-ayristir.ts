@@ -140,6 +140,17 @@ function main() {
   console.log(`sayfa ${sayfaSayisi} · soru ${sorular.length} · anahtar ${Object.keys(anahtar).length}`);
   if (sorun.length) {
     for (const s of sorun) console.log(`  ! ${s}`);
+    // KISMI=1: sağlam çıkan soruları AYRI bir dosyaya yazar ama yine de hata
+    // verir. Bazı testlerde soruların bir kısmı metin, bir kısmı resim; metin
+    // olanları elde tutmak için. Parti dosyası ÜRETİLMEZ — kısmi çıktı hiçbir
+    // zaman tam parti yerine geçmez.
+    if (process.env.KISMI === '1') {
+      const bozukNo = new Set(sorun.map((s) => Number(/^soru (\d+):/.exec(s)?.[1])).filter(Boolean));
+      const saglam = sorular.filter((q) => !bozukNo.has(q.no));
+      writeFileSync(`${dizin}/kismi-${saglam.length}.json`, JSON.stringify(saglam, null, 1));
+      writeFileSync(`${dizin}/anahtar-kismi.json`, JSON.stringify(anahtar, null, 1));
+      console.log(`  (KISMI) ${saglam.length} sağlam soru → ${dizin}/kismi-${saglam.length}.json`);
+    }
     throw new Error(`${sorun.length} sorun — parti kurulmadı`);
   }
 

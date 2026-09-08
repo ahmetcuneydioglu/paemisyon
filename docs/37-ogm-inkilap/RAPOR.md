@@ -124,3 +124,48 @@ tasnifi ezberlenmişse tek cevaplı oluyor.
 Hakemlerden biri "aday itiraz edemez", diğeri "edebilir" dedi. **Ayrışma
 halinde soru dışarıda kalır** — hakemlerin anlaşamaması, kusurun tartışmaya
 açık olduğunun kanıtıdır.
+
+---
+
+# 3. ve 4. parti (test9…test20) — dışarıda kalan 15 soru
+
+## Görselli — kullanıcı kararıyla alınmadı (4)
+
+`t16s3` · `t17s2` · `t19s5` · `t20s10`. Üçü haritaya, biri şemaya dayanıyor.
+Kullanıcı kararı (8 Eyl 2026): görsele bağlı soru sisteme alınmayacak.
+
+**Açık konu:** 2. partide bankaya yazılan `t3s2` de görselli (muharebe-antlaşma
+tablosu, `mediaUrl` bağlı). Şu an `in_review`; kural gereği çekilmesi gerekir,
+kullanıcının kararı bekleniyor.
+
+## Anahtarı tartışmalı (1)
+
+`t10s4` — MEB anahtarı A, iki denetçi bağımsız olarak B dedi. Ayrıntı:
+PLAN.md §7.6.
+
+## Hakem kusurlu buldu (8)
+
+| Soru | Kusur |
+|---|---|
+| `t9s6` | Mudanya'nın Osmanlı'yı "hukuken" sona erdirdiği ifadesi tartışmalı (hukuken sona erme 1 Kasım 1922) |
+| `t9s8` | aynı ayrımın ikinci hâli; "ilk belge" nitelemesi ince eleme gerektiriyor |
+| `t16s2` | "Hatt-ı müdafaa yoktur…" şıkkı da topyekûn mücadele olarak savunulabilir |
+| `t16s6` | kök kaynakta bozuk basılmış: "ifadelerin hangisi … alanlardan biri ile ilişkilendirilemez" |
+| `t17s6` | "Temsil Heyeti'nin oluşturulması ilk adımdır" ifadesi literatürde tartışmalı; cevap elemeyle çıkıyor |
+| `t18s3` | kaynakta tarih hatalı: "3 Ekim 1921" (Mudanya görüşmeleri 3 Ekim 1922) |
+| `t18s4` | hakemlerin ikisi de kusurlu buldu |
+| `t20s8` | "hukuken yok sayıldı" öncülü tartışmalı; "II ve III" seçeneği olmadığı için cevap zorlanıyor |
+
+## Aynı şık taşıyor — bankaya yazılmadı (1)
+
+`t20s6` — kaynakta C ve E satırları birebir aynı (gözle doğrulandı):
+`Cumhuriyetçilik | Milliyetçilik | İnkılapçılık`.
+
+Hakemlerin ikisi de "TEMİZ" dedi ve gerekçeleri teknik olarak doğru: anahtar B,
+yani iki doğru cevap durumu yok, adayın kararı değişmiyor. Ancak aday ekranda
+aynı iki şık görecek ve bu, MEB'in dizgi hatası olduğu hâlde **ürünün kusuru
+gibi** görünür.
+
+`ogm-bankaya-yaz.ts` bu soruyu son savunma hattında durdurdu: aynı metni taşıyan
+iki şık, hangi karar verilirse verilsin sorunun bozuk olduğu anlamına gelir.
+Kullanıcı aksini söylerse tek komutla eklenir.

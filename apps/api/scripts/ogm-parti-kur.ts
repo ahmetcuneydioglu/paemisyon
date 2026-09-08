@@ -21,8 +21,9 @@
  *
  *   npx tsx scripts/ogm-parti-kur.ts <doc-dizini> <test-dizini> <t2 t3 …>
  *   CIKAR=t7s6 npx tsx scripts/ogm-parti-kur.ts …
+ *   ILK_PARTI=6 …   (aynı doc altında yeni tur; parti adları ogm-6, ogm-7 …)
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { PrismaClient } from '@prisma/client';
 import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
 
@@ -32,6 +33,8 @@ const PARTI_BOYU = 20;
 const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
 /** İnsan kararıyla elenen sorular (yakın eş taramasının ardından). */
 const CIKAR = new Set((process.env.CIKAR ?? '').split(',').map((x) => x.trim()).filter(Boolean));
+/** İlk partinin numarası — aynı doc altında birden çok tur olduğu için. */
+const ILK_PARTI = Number(process.env.ILK_PARTI ?? 2);
 const p = new PrismaClient();
 
 const KALIP = new Set([
@@ -59,8 +62,15 @@ async function main() {
   // ── Testleri birleştir, kimlik ver ────────────────────────────────────
   const aday: any[] = [];
   for (const t of testler) {
-    const ham = JSON.parse(readFileSync(`${testDizin}/${t}/ham-10.json`, 'utf8'));
-    const anahtar: Record<string, string> = JSON.parse(readFileSync(`${testDizin}/${t}/anahtar-10.json`, 'utf8'));
+    // Soru sayısı testten teste değişebiliyor (görselli sorular çıkarıldığında
+    // 10'un altına düşüyor), o yüzden dosya adı sabit değil.
+    const bul = (on: string) => {
+      const f = readdirSync(`${testDizin}/${t}`).find((x) => new RegExp(`^${on}-\\d+\\.json$`).test(x));
+      if (!f) throw new Error(`${testDizin}/${t}: ${on}-*.json yok`);
+      return JSON.parse(readFileSync(`${testDizin}/${t}/${f}`, 'utf8'));
+    };
+    const ham = bul('ham');
+    const anahtar: Record<string, string> = bul('anahtar');
     for (const q of ham) {
       const dogru = anahtar[String(q.no)];
       if (!dogru) throw new Error(`${t} s${q.no}: cevap anahtarı yok`);
@@ -130,7 +140,7 @@ async function main() {
   const parcalar: any[][] = [];
   for (let i = 0; i < temiz.length; i += PARTI_BOYU) parcalar.push(temiz.slice(i, i + PARTI_BOYU));
   parcalar.forEach((parca, i) => {
-    const ad = `ogm-${i + 2}`; // ogm-1 ilk parti (Test1) — çakışmasın
+    const ad = `ogm-${i + ILK_PARTI}`;
     writeFileSync(
       `${docDizin}/parti/${ad}-kor.json`,
       JSON.stringify(

@@ -223,3 +223,111 @@ Sonuç: 12 `ONAY-HAKEM`, 1 `KUSURLU` (**t5s9** — hakemler ayrıştı).
 | **Bankaya yazıldı (`in_review`)** | **68** |
 
 68 sorunun 68'inde açıklama, 54'ünde künye, 1'inde görsel.
+
+## 7. Üçüncü ve dördüncü parti — test9…test20 (8 Eyl 2026)
+
+Kullanıcı 12 test daha indirdi. İkiye ayrıldılar:
+
+| | Test | Soru | Kaynak biçimi |
+|---|---|--:|---|
+| 3. parti | test9-14 | 60 | metin katmanı sağlam |
+| 4. parti | test15-20 | 60 | **sorular resim olarak basılmış** |
+
+### 7.1 Ayrıştırıcıda sabit sayı kalmadı
+
+test7'de sabit `790` pt kesme son şıkkı yutmuştu (§6.1). Bu turda `govdeAlti()`
+altbilginin konumunu `pdftotext -bbox` ile okuyor. 12 testin 6'sı sorunsuz
+geçti; kalan 6'sında ayrıştırıcı "şık eksik (A,B,C,D,E)" diyerek durdu —
+çünkü o sayfalarda gerçekten metin yoktu.
+
+### 7.2 Resim olarak basılmış sorular — transkript hattı
+
+test15-20'de kök, roma rakamlı öncüller ve beş şıkkın tamamı tek bir taranmış
+görüntü. Doc 34'ün OCR hattı (macOS Vision) burada riskliydi: oradaki en
+sistematik hasar **roma rakamlarındaydı** ve bu sorular baştan sona roma
+rakamlı öncüllerden oluşuyor.
+
+Onun yerine: sayfa 200 dpi PNG'ye basılıp **iki bağımsız ajana ayrı ayrı
+transkribe ettirildi**, çıktılar `ogm-transkript-karsilastir.ts` ile
+karşılaştırıldı.
+
+**Kalibrasyon (test15):** bu testin ilk 5 sorusu metin, son 5'i resim. Yani
+ajanların çıktısı `pdftotext`in verdiği KESİN doğruyla ölçülebildi:
+
+| Ölçüm | Sonuç |
+|---|---|
+| İki transkript birbirine | 10/10 |
+| A ↔ kesin doğru | 4/5 |
+| B ↔ kesin doğru | 4/5 |
+
+Tek fark ikisinde de aynı yerde: kaynakta kapanış tırnağı `’’` basılmış, ikisi
+de `"` yazmış. Roma rakamlarında tek fark yok. Yol bu kanıtla açıldı.
+
+`KISMI=1` kipi bu kalibrasyon için eklendi: bir testin sağlam çıkan soruları
+ayrı dosyaya yazılır ama script **yine de hata verir ve parti kurmaz** — kısmi
+çıktı hiçbir zaman tam parti yerine geçmemeli.
+
+### 7.3 İki ajanın uyuşması ispat değil
+
+t16s8'de ikisi de aynı kelimeyi aynı şekilde yanlış okudu (`hükümet` ↔ kaynakta
+`hükûmet`) ve karşılaştırma bunu göremedi: **ortak eğilim uyuşmadan sağ
+çıkıyor.**
+
+Düzeltme tahminle değil ölçümle yapıldı — metin katmanı sağlam 13 testten MEB'in
+kendi yazım tercihi çıkarıldı: **millî** 38'e 1, **askerî** 7'ye 0, **resmî**
+1'e 0, ama **milliyetçilik** 15 kez düz. Bu ölçüye göre 9 geçiş düzeltildi.
+
+Ayrışan 4 soruda fark içerikte değil, ajanların kendi ekledikleri parantez içi
+düzen notlarındaydı (tablo hâlinde basılmış şıklar) — talimatın eksiği.
+`transkript/karar.json` hangisinin kanonik olduğunu ve neyin gözle
+doğrulandığını kayda geçirir.
+
+### 7.4 Denetçilerin "bu bizim hatamız mı" tereddüdü — dördü de kaynağın
+
+Denetçilere bu partinin metninin görüntüden çıkarıldığı söylendi ve şüpheli bir
+şey görürlerse yazmaları istendi. Dört soruda "transkript kusuru olabilir"
+dediler; dördünde de kaynak görüntüsüne bakıldı:
+
+| Soru | Kaynakta |
+|---|---|
+| t16s6 | kök sayfada da aynen bozuk basılmış |
+| t18s3 | "3 Ekim 1921" yazıyor (doğrusu 1922) |
+| t19s2 | "Hailfeliğin" yazıyor |
+| t20s6 | tabloda C ve E satırları birebir aynı |
+
+**Dördü de MEB'in dizgi kusuru; transkript sadık.** Ajanlar bozuk cümleyi
+düzeltmeye kalkmamış, olduğu gibi kopyalamışlar — talimatın "sen soru
+YAZMIYORSUN, KOPYALIYORSUN" kuralı tuttu.
+
+### 7.5 Sonuç
+
+| | 3. parti | 4. parti |
+|---|--:|--:|
+| Denetime giren | 60 | 56 |
+| `ONAY` | 48 | 38 |
+| `ONAY-HAKEM` | 9 | 12 |
+| `KUSURLU` | 2 | 6 |
+| `ANAHTAR-SUPHELI` | 1 | 0 |
+| **Bankaya yazıldı** | **57** | **49** |
+
+Görselli 4 soru (t16s3, t17s2, t19s5, t20s10) **kullanıcı kararıyla alınmadı**.
+
+`t20s6` hakemlerden "temiz" aldı ama bankaya GİRMEDİ: aynı metni taşıyan iki
+şık, hangi karar verilirse verilsin sorunun bozuk olduğu anlamına gelir. Bu
+kontrol `ogm-bankaya-yaz.ts`e son savunma hattı olarak konuldu. Hakemlere
+"adayın kararını değiştiriyor mu" diye sorulmuştu; "ürün bozuk görünüyor mu"
+diye sorulmamıştı — talimatın eksiği, hakemlerin değil.
+
+### 7.6 `ANAHTAR-SUPHELI` ilk kez çıktı — t10s4
+
+> Lozan ile elde edilen kazanımlar arasında hangisi **yer almaz**?
+> A) Doğu Trakya'nın kurtarılması · B) Yabancı okulların MEB'e bağlanması
+
+MEB anahtarı A; **iki denetçi de bağımsız olarak B** dedi. Lozan'da
+kararlaştırılan, okulların Türk kanunlarına tabi olması ve Türk müfettişlerce
+denetlenmesiydi; Bakanlığa bağlanmaları Tevhid-i Tedrisat'ın (1924) işi. Bir
+denetçi daha ileri gitti: **aynı testin 1. sorusu** maddeyi doğru ifade ediyor,
+demek ki bu soruda ifade bilinçli değiştirilmiş.
+
+Hangisinin haklı olduğuna karar verilmedi — anahtarı tartışmalı soru bankaya
+yazılmaz.
