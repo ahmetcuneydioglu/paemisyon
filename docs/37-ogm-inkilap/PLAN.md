@@ -331,3 +331,70 @@ demek ki bu soruda ifade bilinçli değiştirilmiş.
 
 Hangisinin haklı olduğuna karar verilmedi — anahtarı tartışmalı soru bankaya
 yazılmaz.
+
+## 8. Beşinci parti — test21…test29 (9 Eyl 2026)
+
+Dokuz test daha, **hepsi resim tabanlı** (86 soru). Hat §7'deki transkript
+yoluyla kuruldu; bu kez kalibrasyona gerek kalmadı, §7.2'deki kanıt yeterliydi.
+
+### 8.1 Transkript kalitesi
+
+| Test | İki bağımsız okuma |
+|---|---|
+| test21-24, 26, 29 | birebir aynı |
+| test25 | 9/10 |
+| test27 | 8/10 |
+| test28 | 9/10 |
+
+86 sorunun 86'sında **içerik** uyuştu. Ayrışmaların üçü biçimsel (sütun ayracı
+stili, bir boşluk); tek gerçek okuma farkı t25s6'daydı — bir ajan Osmanlıca
+izafet tirelerini düşürmüş ("Hatt-ı" → "Hattı"). Kaynak sayfaya bakıldı, tireli
+biçim doğrulandı.
+
+§7.3'teki şapka düzeltmesi bu partide de uygulandı (15 geçiş).
+
+### 8.2 Görsel korkusu boşa çıktı
+
+`pdfimages` bu testlerde soru sayısının çok üstünde görsel sayıyordu (10 soruya
+15-18) ve bunu "görsele bağımlı soru oranı yüksek olacak" diye yorumlamıştım.
+Yanlıştı: fazlalık, sorunun KENDİ taranmış görüntüsünün birden çok parçaya
+bölünmesinden geliyor. 86 sorunun yalnız **2'si** görsele bağımlı çıktı
+(t21s2, t27s4) ve kullanıcı kararıyla alınmadı.
+
+### 8.3 Kaynak kalitesi bu blokta düşüyor
+
+İlk turlarda sıfır çelişki, ~%20 uyarı vardı. Burada:
+
+| | |
+|---|--:|
+| `ONAY` | 52 |
+| `ONAY-HAKEM` | 25 |
+| `KUSURLU` | 4 |
+| `ANAHTAR-SUPHELI` | 2 |
+| `CELISKI` | 1 |
+| **Bankaya yazıldı** | **77** |
+
+Uyarı oranı iki katına çıktı (29/84). Denetçilerin saydıkları somut: 1924 için
+anakronik "Millî Eğitim Bakanlığı" adı (doğrusu Maarif Vekâleti), Lozan'da
+bulunmayan bir madde, devrik kök, "ayakanmaları" gibi yazım hataları.
+
+**Denetçilerin transkript şüphesi yine kaynağa çıktı.** t23s10'da iki denetçi de
+"B şıkkı görüntüden dökümde bozulmuş olabilir" dedi; kaynak sayfaya bakıldı,
+orada da aynen "Tevfik Paşa hükümeti kuruldu." yazıyor. İtirazları içerik
+olarak haklıydı (Tevfik Paşa hükûmeti 1918'den beri görevdeydi, saltanat
+kaldırılınca istifa etti — "kuruldu" Mudanya'nın sonucu değil), sebebi
+konusunda yanılmışlardı. Bu, hattın başından beri **beşinci** kez böyle
+sonuçlandı: denetçi transkriptten şüpheleniyor, kaynak kusurlu çıkıyor.
+
+### 8.4 Bu turda benim iki hatam
+
+- **ogm-15'in denetçilerine yanlış ipucu verdim:** "bu partide tekrarlı roma
+  rakamı var" dedim, oysa o kusur t29s6'daydı, yani ogm-16'da. İkisi de aradı,
+  bulamadı, dürüstçe rapor etti ve bu arada dört başka gerçek kusur çıkardılar.
+  Zararsız atlatıldı ama ipucu vermeden önce hangi partide olduğu kontrol
+  edilmeliydi.
+- **t20s6 ile t29s6 arasında tutarsız davrandım.** İkisinde de kaynağın dizgi
+  hatası bir çeldiriciyi bozuyor, ikisinde de hakemler "temiz" dedi. t20s6'yı
+  kendi kararımla durdurmuş, t29s6'yı geçirmiştim. Hakem turunun varlık nedeni
+  bu kararı bana bırakmamak; ikisinde de hakeme uyulmalı ya da ikisi birden
+  durdurulmalı. Karar kullanıcıya bırakıldı.
