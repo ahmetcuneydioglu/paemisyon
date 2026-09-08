@@ -88,9 +88,14 @@
 - **5018 Sayılı Kamu Malî Yönetimi ve Kontrol Kanunu** (0 soru) — `270990de-e156-4db0-b5fb-eb469562dd8a`  · anahtar: 5018 sayılı, Kamu Malî Yönetimi, Kamu Mali Yönetimi
 
 ## Atatürk İlkeleri ve İnkılap Tarihi
-- **Atatürk İlkeleri ve İnkılap Tarihi** (142 soru) — `e699f23d-5bc4-4508-8bcc-8750d911b3e9`  · anahtar: Atatürk, İnkılap, Mondros, Kurtuluş Savaşı, tam bağımsızlık, Kabotaj
-- **İnkilap Tarihi** (572 soru) — `23d22785-351b-4f39-8516-a419e2c254c0`
-- **Atatürk İlkeleri ve İnkılap Tarihi** (30 soru) — `181c590f-0036-4105-beb5-9ee7c3e5b4b6`
+> **8 Eyl 2026:** aşağıdaki üç konu tek konuda birleşti; ilk ikisinin id'si artık
+> YOK. Dersin tek konusu **`23d22785-351b-4f39-8516-a419e2c254c0`** — "Atatürk
+> İlkeleri ve İnkılap Tarihi" (yazım düzeltildi, 26 anahtar taşındı).
+> Bkz. `docs/37-ogm-inkilap/PLAN.md` §5.
+
+- ~~**Atatürk İlkeleri ve İnkılap Tarihi** (142 soru) — `e699f23d-…`~~ *(birleşti)*
+- **Atatürk İlkeleri ve İnkılap Tarihi** — `23d22785-351b-4f39-8516-a419e2c254c0`  · anahtar: Atatürk, İnkılap, Mondros, Kurtuluş Savaşı, tam bağımsızlık, Kabotaj
+- ~~**Atatürk İlkeleri ve İnkılap Tarihi** (30 soru) — `181c590f-…`~~ *(birleşti)*
 
 ## İnsan Hakları
 - **Avrupa İnsan Hakları Sözleşmesi (AİHS)** (69 soru) — `8b991a24-eecf-48c9-a068-0aecfc65cfd1`  · anahtar: aihs, aihm, sözleşme, avrupa insan hakları
