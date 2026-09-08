@@ -34,6 +34,15 @@ const KAYNAK = 'MEB OGM Materyal soru bankası';
 const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
 /** İnsan kararıyla bekletilenler — karar dosyasına dokunulmaz. */
 const CIKAR = new Set((process.env.CIKAR ?? '').split(',').map((x) => x.trim()).filter(Boolean));
+
+/**
+ * Üç ya da daha çok roma rakamı sıralayan bir şıkta tekrar varsa dizi bozuktur.
+ * Eşik üç: "I ve II" ya da "Yalnız I" gibi normal şıklar yanlış yakalanmasın.
+ */
+function bozukRomaDizisi(metin: string): boolean {
+  const tokenlar = metin.match(/\b(?:I{1,3}|IV|V)\b/g) ?? [];
+  return tokenlar.length >= 3 && new Set(tokenlar).size !== tokenlar.length;
+}
 const prisma = new PrismaClient();
 
 async function main() {
@@ -52,13 +61,18 @@ async function main() {
 
   const aday = JSON.parse(readFileSync(adayYolu, 'utf8'));
   const gecerli: any[] = [];
-  const eleme: Record<string, string[]> = { karar: [], aciklamaYok: [], cevapYok: [], bekletilen: [], ayniSik: [] };
+  const eleme: Record<string, string[]> = { karar: [], aciklamaYok: [], cevapYok: [], bekletilen: [], ayniSik: [], bozukDizi: [] };
   for (const q of aday) {
     if (CIKAR.has(q.id)) { eleme.bekletilen.push(q.id); continue; }
     // Son savunma hattı: aynı metni taşıyan iki şık, sorunun kendisi bozuk
     // demektir — hangi karar verilmiş olursa olsun bankaya girmez.
     const metinler = SIKLAR.map((l) => String(q.siklar[l]).trim().toLocaleLowerCase('tr'));
     if (new Set(metinler).size !== SIKLAR.length) { eleme.ayniSik.push(q.id); continue; }
+    // Sıralama sorularında bir şıkkın roma dizisi tekrarlı basılmışsa
+    // (ör. "II - V - I - II - IV") o şık geçerli bir sıralama değildir.
+    // Kullanıcı kararı (9 Eyl 2026): kaynağın dizgi hatası bir çeldiriciyi
+    // bozuyorsa soru alınmaz — aday ekranda bozuk bir seçenek görmemeli.
+    if (SIKLAR.some((l) => bozukRomaDizisi(String(q.siklar[l])))) { eleme.bozukDizi.push(q.id); continue; }
     const k = karar.get(q.id);
     if (!GECER.has(k ?? '')) { eleme.karar.push(`${q.id}=${k ?? 'KARARSIZ'}`); continue; }
     if (!aciklama.has(q.id)) { eleme.aciklamaYok.push(q.id); continue; }
@@ -67,20 +81,28 @@ async function main() {
   }
 
   const parmak = gecerli.map((r) => questionFingerprint(r.kok, SIKLAR.map((l) => r.siklar[l])));
+  // `deletedAt` FİLTRELENMEZ: kullanıcı panelden bir soruyu elediyse o soru
+  // "bankada yok" değildir, "istenmiyor" demektir. Filtrelenirse script
+  // kullanıcının elemesini geri alır — bir turda 12 soru böyle dirilecekti.
   const mevcut = await prisma.questionVersion.findMany({
-    where: { contentHash: { in: parmak }, question: { deletedAt: null } },
-    select: { contentHash: true },
+    where: { contentHash: { in: parmak } },
+    select: { contentHash: true, question: { select: { deletedAt: true } } },
   });
   const carpisan = new Set(mevcut.map((m) => m.contentHash));
+  const elenmis = new Set(mevcut.filter((m) => m.question.deletedAt != null).map((m) => m.contentHash));
   const yazilacak = gecerli.filter((_, i) => !carpisan.has(parmak[i]));
+  const kullaniciElemis = gecerli.filter((_, i) => elenmis.has(parmak[i]));
 
   console.log(`aday soru          : ${aday.length}`);
   console.log(`karar nedeniyle    : ${eleme.karar.length}  ${eleme.karar.join(' ')}`);
   console.log(`açıklaması yok     : ${eleme.aciklamaYok.length}  ${eleme.aciklamaYok.join(' ')}`);
   console.log(`cevabı yok         : ${eleme.cevapYok.length}  ${eleme.cevapYok.join(' ')}`);
   console.log(`aynı şık taşıyor   : ${eleme.ayniSik.length}  ${eleme.ayniSik.join(' ')}`);
+  console.log(`bozuk roma dizisi  : ${eleme.bozukDizi.length}  ${eleme.bozukDizi.join(' ')}`);
   console.log(`insan bekletiyor   : ${eleme.bekletilen.length}  ${eleme.bekletilen.join(' ')}`);
   console.log(`bankada zaten var  : ${gecerli.length - yazilacak.length}`);
+  console.log(`  bunun ${kullaniciElemis.length}'i kullanıcının PANELDEN ELEDİĞİ soru — geri yazılmıyor`);
+  if (kullaniciElemis.length) console.log(`     ${kullaniciElemis.map((r) => r.id).join(' ')}`);
   console.log(`görselli           : ${yazilacak.filter((r) => r.gorselUrl).length}`);
   console.log(`YAZILACAK          : ${yazilacak.length}`);
   if (!APPLY) { console.log('\n(kuru çalışma — APPLY=1 ile yazılır)'); return; }

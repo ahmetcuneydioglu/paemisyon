@@ -398,3 +398,44 @@ sonuçlandı: denetçi transkriptten şüpheleniyor, kaynak kusurlu çıkıyor.
   kendi kararımla durdurmuş, t29s6'yı geçirmiştim. Hakem turunun varlık nedeni
   bu kararı bana bırakmamak; ikisinde de hakeme uyulmalı ya da ikisi birden
   durdurulmalı. Karar kullanıcıya bırakıldı.
+
+## 9. İki kural, biri pahalıya patlayabilirdi (9 Eyl 2026)
+
+### 9.1 Bozuk çeldirici — kullanıcı kararı
+
+`t20s6` (aynı iki şık) ve `t29s6` (tekrarlı roma dizisi: "II - V - I - II - IV")
+hakemlerden "TEMİZ" almıştı; gerekçeleri teknik olarak doğruydu, doğru cevap
+her ikisinde de tartışmasızdı. Kullanıcı kararı: **ikisi de alınmayacak.**
+
+Ölçü artık şu: kaynağın dizgi hatası bir çeldiriciyi bozuyorsa soru girmez.
+Aday ekranda bozuk bir seçenek görüyorsa bu, MEB'in hatası olsa bile ürünün
+kusuru gibi görünür. Hakem talimatı bu soruyu sormuyordu — eksik olan talimattı,
+hakemlerin kararı değil.
+
+İkisi de `ogm-bankaya-yaz.ts`e mekanik kontrol olarak kondu:
+- `ayniSik` — iki şıkkın metni aynıysa,
+- `bozukRomaDizisi` — üç ya da daha çok roma rakamı sıralayan bir şıkta tekrar
+  varsa (eşik üç: "I ve II" gibi normal şıklar yanlış yakalanmasın).
+
+### 9.2 Silinmiş soruyu diriltme kusuru — YAKALANDI
+
+Kullanıcı panelde onay yaparken 36 soruyu eledi. Banka yazıcısının "bankada
+zaten var mı" kontrolü `question: { deletedAt: null }` filtresiyle çalışıyordu,
+yani **elenmiş soruyu "yok" sayıyordu**. Script yeniden çalıştırılsaydı
+kullanıcının elediği **12 soruyu geri diriltecekti**.
+
+Kuru çalışmadaki "bankada zaten var 64 · YAZILACAK 12" satırı tuhaf geldiği
+için durup bakıldı; 12'sinin 12'si de kullanıcının panelden sildiği sorular
+çıktı.
+
+Düzeltme:
+- `ogm-bankaya-yaz.ts` çakışma sorgusundan `deletedAt` filtresi KALDIRILDI ve
+  kaçının kullanıcı tarafından elendiği ayrıca raporlanıyor.
+- `ogm-parti-kur.ts` mükerrer taramasına silinmiş sorular da dahil edildi
+  (`archived` dahil): kullanıcı bir soruyu elediyse aynı soruyu yeni parti diye
+  tekrar önüne koymanın anlamı yok. Yakın eş taramasında ise elenmişler
+  dışarıda — silinmiş soru "benzer" uyarısı üretmemeli.
+
+**Ders:** "zaten var mı" kontrolleri, kullanıcının SİLME kararını da "var"
+saymalı. `deletedAt: null` filtresi okuma sorgularında doğru, çakışma
+sorgularında yanlış.

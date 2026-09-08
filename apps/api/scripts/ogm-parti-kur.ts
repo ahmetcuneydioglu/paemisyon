@@ -81,8 +81,10 @@ async function main() {
   console.log(`${testler.length} test → ${aday.length} soru`);
 
   // ── Bankaya karşı tarama ──────────────────────────────────────────────
+  // Silinmiş sorular da taranır: kullanıcı bir soruyu elediyse aynı soruyu
+  // yeni parti diye tekrar önümüze koymanın anlamı yok.
   const banka = await p.questionVersion.findMany({
-    where: { question: { deletedAt: null }, status: { in: ['published', 'in_review', 'draft'] } },
+    where: { status: { in: ['published', 'in_review', 'draft', 'archived'] } },
     select: {
       stem: true, status: true, contentHash: true,
       question: { select: { topic: { select: { name: true, course: { select: { name: true } } } } } },
@@ -93,8 +95,9 @@ async function main() {
   const ayniDers: { stem: string; durum: string; kume: Set<string> }[] = [];
   for (const v of banka) {
     const fp = v.contentHash ?? questionFingerprint(v.stem, v.options.map((o) => o.text));
-    if (!tam.has(fp)) tam.set(fp, `${v.question.topic.course.name}/${v.question.topic.name} (${v.status})`);
-    if (/nkil|nkıl/i.test(v.question.topic.course.name))
+    if (!tam.has(fp))
+      tam.set(fp, `${v.question.topic.course.name}/${v.question.topic.name} (${v.status}${v.question.deletedAt ? ', KULLANICI ELEMİŞ' : ''})`);
+    if (/nkil|nkıl/i.test(v.question.topic.course.name) && !v.question.deletedAt)
       ayniDers.push({ stem: v.stem, durum: v.status, kume: kelimeler(v.stem) });
   }
 
