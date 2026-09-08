@@ -134,9 +134,10 @@ açık olduğunun kanıtıdır.
 `t16s3` · `t17s2` · `t19s5` · `t20s10`. Üçü haritaya, biri şemaya dayanıyor.
 Kullanıcı kararı (8 Eyl 2026): görsele bağlı soru sisteme alınmayacak.
 
-**Açık konu:** 2. partide bankaya yazılan `t3s2` de görselli (muharebe-antlaşma
-tablosu, `mediaUrl` bağlı). Şu an `in_review`; kural gereği çekilmesi gerekir,
-kullanıcının kararı bekleniyor.
+**`t3s2` KALIYOR (kullanıcı kararı, 9 Eyl 2026).** 2. partide bankaya yazılan
+bu soru da görselli (muharebe-antlaşma tablosu, `mediaUrl` bağlı) ama kullanıcı
+kalmasını istedi. Yani "görselli soru alınmaz" kuralı test15-20 turuna özgü bir
+karardı, bankaya geriye dönük uygulanmıyor.
 
 ## Anahtarı tartışmalı (1)
 
