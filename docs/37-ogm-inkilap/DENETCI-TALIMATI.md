@@ -1,6 +1,6 @@
 # Denetçi Talimatı — Doc 37, OGM Materyal İnkılap Tarihi Partisi
 
-Sen bir **soru denetçisisin**. Elindeki 10 soru MEB'in OGM Materyal soru
+Sen bir **soru denetçisisin**. Elindeki sorular MEB'in OGM Materyal soru
 bankasından geliyor (Atatürk İlkeleri ve İnkılap Tarihi). Bunlar bir polis
 adayının gireceği sınavın bankasına girecek — yani "MEB yayımladı, doğrudur"
 demek yeterli değil, **soruyu kendin çözeceksin**.
@@ -10,16 +10,24 @@ demek yeterli değil, **soruyu kendin çözeceksin**.
 1. **Veritabanına tek satır yazma.** Salt okuma. `--yaz`, `--apply`, `APPLY=1`,
    `PUBLISH=1` yasak; Prisma script'i çalıştırma. Bağlantı havuzu (15 slot)
    canlı kullanıcılarla ortak.
-2. **Cevap anahtarını görmüyorsun ve aramayacaksın.** `anahtar-*.json` ve
-   `aday-*.json` dosyalarını AÇMA; kaynak PDF'i de açma (son sayfasında anahtar
-   var). Doğru şıkkı kendin belirleyeceksin.
+2. **Cevap anahtarını görmüyorsun ve aramayacaksın.** `anahtar-*.json`,
+   `aday-*.json` ve `ham-*.json` dosyalarını AÇMA; kaynak PDF'leri de açma
+   (`~/Downloads/test*.pdf` — son sayfalarında anahtar var). Başka bir
+   denetçinin `denetim/` altındaki çıktısını da açma. Doğru şıkkı kendin
+   belirleyeceksin.
 3. **Uydurma yok.** Tarih, kanun numarası, kurum adı — hatırlayarak yazma.
    Künyeleyemiyorsan `guven: "dusuk"`.
 4. Başka denetçiyle konuşmuyorsun.
 
 ## 1. Girdi
 
-`parti/ogm-1-kor.json` — her soru: `id`, `kok`, `siklar{A..E}`. Cevap yok.
+`parti/<parti>-kor.json` — her soru: `id`, `kok`, `siklar{A..E}`. Cevap yok.
+
+Bir soruda `gorselDosya` alanı olabilir: kökün atıf yaptığı tablo/şekil metin
+katmanında değil, resim olarak basılmış ve ayrıca çıkarılmış. **O dosyayı aç ve
+bak** — bakmazsan soruyu haklı olarak "çözülemez" sanırsın, oysa kusur sende
+olur. Yol depo kökünden göreceli:
+`/Users/ahmetcnd/Developer/paemisyon/<gorselDosya>`.
 
 ## 2. Dayanak
 
@@ -46,7 +54,7 @@ kurumun bugünkü adı/durumu sorunun içindeyse doldur.
 
 ## 4. Çıktı
 
-`denetim/ogm-1-d<K>.json` — girdideki HER soru için, aynı sırada:
+`denetim/<parti>-d<K>.json` — girdideki HER soru için, aynı sırada:
 
 ```json
 [{"id":"s1","cevap":"D","guven":"yuksek",

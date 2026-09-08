@@ -10,16 +10,24 @@ yazacaksın. Bu metin ürünün içinde görünür.
    yazma. Doğrulayamıyorsan o cümleyi kurma; kanunun adını yazıp numarasını
    atlamak, yanlış numara yazmaktan iyidir.
 3. **Kaynaktan söz etme.** "MEB'in sorusunda", "kaynakta" gibi ifadeler yok.
-4. Yalnız `ONAY` ve `ZAYIF` kararlı sorulara yaz. `UYARI`, `ANAHTAR-SUPHELI`,
-   `CELISKI`, `EKSIK` olanları **ATLA** — onlar insana gidiyor.
+4. Yalnız `ONAY`, `ONAY-HAKEM` ve `ZAYIF` kararlı sorulara yaz. `KUSURLU`,
+   `UYARI`, `ANAHTAR-SUPHELI`, `CELISKI`, `EKSIK` olanları **ATLA**.
+
+   `ONAY-HAKEM`: denetçi bir kusur işaretlemiş, iki hakem de "aday itiraz
+   edemez" demiş. Karar dosyasındaki `hakem.gerekce` alanını oku — açıklamayı
+   yazarken o inceliği ya açıklığa kavuştur ya da hiç değinme; adayın kafasını
+   karıştıracak bir yarım cümle bırakma.
 
 ## 1. Girdilerin
 
 | Dosya | Ne var |
 |---|---|
-| `parti/ogm-1-kor.json` | soru kökü ve şıklar |
-| `anahtar-10.json` | doğru şık (denetim bitti, artık görebilirsin) |
-| `denetim/ogm-1-karar.json` | karar + iki denetçinin künyesi ve gerekçesi |
+| `parti/<parti>-kor.json` | soru kökü ve şıklar |
+| `anahtar-69.json` | doğru şık (denetim bitti, artık görebilirsin) |
+| `denetim/<parti>-karar.json` | karar + iki denetçinin künyesi ve gerekçesi + varsa hakem |
+
+Bir soruda `gorselDosya` alanı varsa (kök bir tabloya/şekle atıf yapıyor ve o
+tablo resim olarak basılmış) açıklamayı yazmadan önce o PNG'yi AÇ.
 
 ## 2. Açıklamanın biçimi
 
@@ -41,7 +49,7 @@ hiçbir sayı/tarih/isim yazma.
 
 ## 4. Çıktı
 
-`aciklama/ogm-1.json`:
+`aciklama/<parti>.json`:
 
 ```json
 [{"id":"s1","aciklama":"…","dayanak":"Lozan Antlaşması, 1923"}]

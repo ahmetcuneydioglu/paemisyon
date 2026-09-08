@@ -147,3 +147,79 @@ Doğrulama (yedekle karşılaştırmalı):
 
 `mastery = correct/solved` bağıntısı 65 satırın 65'inde tutuyor. Geri dönüş
 yedeği repo DIŞINA yazıldı (kullanıcı verisi commit edilmez).
+
+## 6. İkinci parti — test2…test8 (8 Eyl 2026)
+
+Kullanıcı yedi test daha indirdi (70 soru, hepsi aynı ders). Aynı hat, iki
+farkla: parti çok, o yüzden kimlik `t<test>s<no>` (soru numarası testler
+arasında tekrar ediyor); ve uyarılar için **hakem turu** eklendi.
+
+### 6.1 Ayrıştırıcıdaki sabit kesme — düzeltildi
+
+İlk turda gövdeyi sabit `790` pt'de kesiyordum (altbilgi metne karışmasın
+diye). test7'de son şık y≈799'da basılmış ve o sabit sınır **E şıkkını
+yutmuştu**. Doğrulama yakaladı, parti kurulmadı — ama asıl ders şu: sabit
+sayı, bir örnekten genellenmiş bir varsayımdı.
+
+`govdeAlti()` artık altbilginin **kendi konumunu** `pdftotext -bbox` ile okuyup
+2 pt üstünden kesiyor. Testten teste değişen şey artık ölçülüyor, varsayılmıyor.
+
+### 6.2 Metin katmanında olmayan tablo
+
+test3'ün 2. sorusu "Yukarıda verilen tablo" diyor ama tablo resim olarak
+basılmış — soru metin hâliyle çözülemez. `pdfimages -list` yedi testte **tek
+bir** görsel buluyor ve o da tam bu tablo, yani başka gizli görsel yok.
+
+Tablo `ogm-gorsel-cikar.ts` ile kırpıldı, `mediaUrl` ile bağlandı. Denetçilere
+de PNG'nin yolu verildi: görmeden bakan denetçi soruyu haklı olarak
+"çözülemez" sayardı ve kusur sorunun değil bizim olurdu. İki denetçi de
+doğru cevabı verdi — yani görseli gerçekten açtılar.
+
+### 6.3 Mükerrer
+
+Tam eşleşme (banka + parti içi): 0. Yakın eşleşme 2, ikisine de bakıldı:
+
+- **t7s6** (Doğu Cephesi komutanı) — bankada aynı soru **iki kez** var, ikisi
+  de Kazım Karabekir. Üçüncüsü adaya tekrardan başka bir şey vermez. Elendi.
+- **t2s9** — benzerlik yalnız kalıp sözlerden; bankadaki soru San Remo'yu
+  soruyor. Kaldı.
+
+### 6.4 Denetim: 69 soru, sıfır çelişki
+
+Sekiz denetçi (parti başına iki), 69 sorunun **69'unda** hem birbiriyle hem
+MEB anahtarıyla aynı şıkta. Çelişki de anahtar şüphesi de çıkmadı.
+
+Denetçi eforu eşit değildi: araç çağrısı 3 ile 8 arasında. Ama hiçbir parti
+"iki denetçi de yüzeysel" durumuna düşmedi — her partide en az biri TBMM ve
+Dışişleri Bakanlığı kaynaklarına gitti. İlk partideki 17-19 çağrılık titizlik
+yine de yakalanmadı; not düşülüyor.
+
+### 6.5 Hakem turu — neden gerekti
+
+13 soruya uyarı geldi, ama uyarıların ağırlığı çok farklıydı: kimi "birden
+fazla şık savunulabilir", kimi "kökte çoğul kip kullanılmış". İlk parti kuralı
+(uyarı = bankaya girmez) burada körü körüne uygulansa, adayın hiç fark
+etmeyeceği dizgi pürüzü yüzünden kullanılabilir sorular elenecekti. Kuralı tek
+başıma gevşetmek de çift denetimin anlamını boşa çıkarırdı.
+
+Ayrı bir hakem turu (`HAKEM-TALIMATI.md`): iki hakem yalnız şu soruya cevap
+verir — *bu kusur adayın haklı olarak itiraz edebileceği bir kusur mu?*
+
+Kural: **iki hakem de `TEMIZ` demezse soru girmez.** Ayrışmanın kendisi,
+kusurun tartışmaya açık olduğunun kanıtıdır; şüphe sorunun aleyhine.
+
+Sonuç: 12 `ONAY-HAKEM`, 1 `KUSURLU` (**t5s9** — hakemler ayrıştı).
+
+### 6.6 Sonuç
+
+| | Soru |
+|---|--:|
+| Ayrıştırılan | 70 |
+| Mükerrer elendi | 1 (t7s6) |
+| Denetime giren | 69 |
+| `ONAY` | 56 |
+| `ONAY-HAKEM` | 12 |
+| `KUSURLU` | 1 (t5s9) |
+| **Bankaya yazıldı (`in_review`)** | **68** |
+
+68 sorunun 68'inde açıklama, 54'ünde künye, 1'inde görsel.

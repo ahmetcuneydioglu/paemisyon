@@ -25,17 +25,28 @@ const SUTUN = [
 ];
 const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
 /**
- * Sayfa gövdesinin alt sınırı (pt). Yazdırma altbilgisi — tam sayfa genişliğinde
- * tek bir URL — y≈819'da duruyor ve İKİ sütunu birden kesiyor; sütun kırpması
- * onu ikiye bölünce yarısı sağ sütundaki son şıkkın devamı gibi görünüyor.
- * Soru metni y≈721'de bitiyor, aradaki boşluktan kesmek güvenli.
+ * Gövdenin alt sınırı, altbilginin KENDİ konumundan hesaplanır.
+ *
+ * Yazdırma altbilgisi — tam sayfa genişliğinde tek bir URL — iki sütunu birden
+ * kesiyor; sütun kırpması onu ikiye bölünce sağ yarısı, sağ sütundaki son
+ * şıkkın devamı gibi metne yapışıyor. Çözüm gövdeyi altbilginin üstünden
+ * kesmek, ama SABİT bir yükseklikle değil: soru metninin nerede bittiği teste
+ * göre değişiyor (bir testte y≈638, başka birinde y≈799) ve sabit sınır uzun
+ * testlerde son şıkkı yutuyor.
+ *
+ * Bulunamazsa kırpma yapılmaz; altbilgi metne karışırsa doğrulama yakalar.
  */
-const GOVDE_ALT = 790;
+function govdeAlti(pdf: string, sayfa: number): number {
+  const bbox = execFileSync('pdftotext', ['-bbox', '-f', String(sayfa), '-l', String(sayfa), pdf, '-']).toString();
+  const satir = bbox.split('\n').find((l) => l.includes('ogmmateryal.eba.gov.tr'));
+  const y = satir?.match(/yMin="([\d.]+)"/)?.[1];
+  return y ? Math.floor(Number(y)) - 2 : 900;
+}
 
-const metin = (pdf: string, sayfa: number, x: number, w: number) =>
+const metin = (pdf: string, sayfa: number, x: number, w: number, h: number) =>
   execFileSync('pdftotext', [
     '-f', String(sayfa), '-l', String(sayfa),
-    '-x', String(x), '-y', '0', '-W', String(w), '-H', String(GOVDE_ALT),
+    '-x', String(x), '-y', '0', '-W', String(w), '-H', String(h),
     pdf, '-',
   ]).toString();
 
@@ -103,9 +114,11 @@ function main() {
   if (!sayfaSayisi) throw new Error('sayfa sayısı okunamadı');
 
   const sorular: Soru[] = [];
-  for (let sayfa = 1; sayfa <= sayfaSayisi; sayfa++)
+  for (let sayfa = 1; sayfa <= sayfaSayisi; sayfa++) {
+    const alt = govdeAlti(pdf, sayfa);
     for (const { x, w } of SUTUN)
-      sorular.push(...ayristir(metin(pdf, sayfa, x, w).split('\n')));
+      sorular.push(...ayristir(metin(pdf, sayfa, x, w, alt).split('\n')));
+  }
 
   sorular.sort((a, b) => a.no - b.no);
   const anahtar = anahtariOku(duzenliMetin(pdf, sayfaSayisi));

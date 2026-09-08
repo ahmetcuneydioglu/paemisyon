@@ -89,3 +89,38 @@ bir kıtlık yok — aynı konuda 502 yayımlanmış soru duruyor.
 
 Bu üç soru bankaya **hiç girmedi**; yukarıdaki düzeltme önerileri, aynı kusur
 başka bir partide çıkarsa diye kayıt olarak duruyor.
+
+
+---
+
+# İkinci parti (test2…test8) — dışarıda kalan 2 soru
+
+## t7s6 — Doğu Cephesi komutanı · MÜKERRER
+
+> Millî Mücadele Dönemi'nde Doğu Cephesi komutanı aşağıdakilerden hangisidir?
+> A) **Kazım Karabekir** · B) İsmet İnönü · C) Enver Paşa · D) Rauf Orbay
+> E) Fethi Okyar
+
+Cevap doğru, soruda kusur yok. Ama bankada **aynı soru zaten iki kez var**,
+ikisinin de cevabı Kazım Karabekir:
+
+- "Kurtuluş Savaşı'nda Doğu Cephesi komutanı aşağıdakilerden hangisidir?"
+- "Aşağıdakilerden hangisi Millî Mücadele Dönemi'nde Doğu Cephesi Komutanı
+  olarak görev yapmıştır?"
+
+Üçüncüsü adaya tekrar hissi vermekten başka bir şey katmaz. Denetime hiç
+sokulmadı.
+
+## t5s9 — I. Dünya Savaşı'nın genel nedenleri · HAKEMLER AYRIŞTI
+
+> Aşağıdakilerden hangisi I. Dünya Savaşı'nın çıkmasında etkili olan **genel
+> nedenler** arasında yer almaz?
+
+İki denetçi de anahtarla (D) aynı şıkta. Uyarıları: Rusya'nın Balkan siyaseti
+ve Panslavizm birçok kaynakta savaşın genel nedenleri arasında da sayılıyor;
+soru ancak "genel neden / özel neden" ayrımının belirli bir ders kitabı
+tasnifi ezberlenmişse tek cevaplı oluyor.
+
+Hakemlerden biri "aday itiraz edemez", diğeri "edebilir" dedi. **Ayrışma
+halinde soru dışarıda kalır** — hakemlerin anlaşamaması, kusurun tartışmaya
+açık olduğunun kanıtıdır.
