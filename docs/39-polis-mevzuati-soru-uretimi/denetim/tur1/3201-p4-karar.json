@@ -1,0 +1,317 @@
+[
+  {
+    "id": "3201-p4-01",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Kök, md 81'in SONUCUNU ('inzibati cezanın tatbikinin mahkeme kararı neticesine bırakılabilmesi') açıkça yazıp şartları soruyor. Bu ifade aynı dosyadaki 02'nin doğru cevabının (A: 'İnzibati cezanın tatbiki') ve 03'ün doğru cevabının (D) anahtar ifadesidir; kök -> cevap sızıntısı. Ayrıca md 81 tek cümlelik tek kurallı bir maddedir ve dosyada bu maddeden ÜÇ soru vardır. | öneri: 02 çıkarılsın; 01 kalsın. 01'in kökündeki sonuç ifadesi 'disiplin işleminin mahkeme sürecine bağlanabilmesi için' gibi cevabı ele vermeyen bir formülasyonla değiştirilsin.",
+      "dil: REVIZYON — Mantik/cevapsizlik sorunu yok; B md 81'in iki sartini birlikte veriyor. Ancak KOK->CEVAP sizintisi var: q03'un koku 'fiil hem inzibati cezayi hem de TCK uyarinca cezalandirilmayi gerektirmekte, deliller kafi gorulmemektedir' diyerek bu sorunun B cevabini birebir yaziyor; q02'nin koku de sartin ikinci yarisini veriyor. Ayni denemeye dusmesi halinde soru olcmez. | öneri: q01 ile q03 (ve q02) ayni denemede/alistirmada birlikte kullanilmasin; ucu ayni hukmu olctugu icin q01 bankadan cikarilabilir.",
+      "mevzuat (onayladı, çekince): md 81 ile birebir: 'inzibati cezayı müstelzim olmakla beraber, Türk Ceza Kanunu mucibince cezalandırılmayı da istilzam eylediği ve ... mevcut deliller kafi görülmeyerek ... intizar zarureti'. B iki şartı da taşıyor. C/D/E metinde yok; A hükmün tersi. Soru 3201'in KENDİ metnine dayanıyor, 7068'den bilgi taşınmamış (metnin arkaik sözcükleri — müstelzim/intizar/talik — 3201'e ait). ŞÜPHE: bu sorunun B cevabı, 3201-p4-03'ün kökünde kelimesi kelimesine veriliyor; düzeltme q03 tarafında."
+    ]
+  },
+  {
+    "id": "3201-p4-02",
+    "karar": "RED",
+    "itirazlar": [
+      "kalite: RED — MÜKERRER. Doğru cevabın metni ('İnzibati cezanın tatbiki') 03'ün D şıkkında birebir yer alıyor; ayrıca 01'in kökü bu ifadeyi zaten basıyor. Sorunun kökü de md 81'in ikinci şartını ('mevcut deliller kâfi görülmeyip mahkeme hükmünün beklenmesi zarureti') tam metin verdiği için geriye ölçülecek bilgi kalmıyor: aday yalnız cümleyi tamamlıyor. Tek kurallı bir maddeden üçüncü soru. | öneri: Çıkarılsın; md 81 için 01 (şartlar) + 03 (uygulama) yeterlidir.",
+      "mevzuat (onayladı, çekince): md 81 son cümlesi: 'inzıbati cezanın tatbikı, mahkeme kararı neticesine talik olunur' — A doğru. Açıklamadaki komşu hüküm iddiası da doğrulandı: md 55'te 'uzun ve kısa süreli durdurma cezaları ile meslekten ve memuriyetten men cezaları, ceza süreleri kadar rütbe terfiini geri bıraktırır'. ŞÜPHE: kök, q01'in cevabının delil-yetersizliği ayağını açıkça içeriyor.",
+      "dil (onayladı, çekince): Talik edilen sey 'inzibati cezanin tatbiki' — metinle tek anlamli. Sik-kok uyumu iyi. Not: kok, q01'in dogru cevabinin ikinci yarisini (deliller kafi gorulmemesi) icerdiginden q01 ile ayni denemede kullanilmamali."
+    ]
+  },
+  {
+    "id": "3201-p4-03",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Hukuken doğru (md 81, D). Ancak iki kusur var: (1) kök, q01'in doğru cevabı olan İKİ ŞARTI da ('hem inzibati cezayı hem de TCK uyarınca cezalandırılmayı gerektirdiği', 'delilleri kâfi görmemiş') birebir yazıyor — açık kök→cevap sızıntısı; (2) doğru önerme q02 ile aynı: her ikisi de 'inzibati cezanın tatbiki mahkeme kararı neticesine talik olunur' hükmünü ölçüyor, q03 bunu yalnız vaka kılığına sokuyor. Açıklamadaki 'Vakada maddenin aradığı İKİ UNSUR da açıkça verilmiştir' cümlesi kusuru itiraf ediyor. | öneri: q01, q02, q03 üçlüsünden biri çıkarılsın. Tercihen q03 kaldırılsın; kalacaksa vaka kökünden şartlardan biri gizlenip (ör. yalnız delil durumu verilip) uygulama sonucu değil, ŞARTIN varlığı sorulsun.",
+      "kalite: REVIZYON — Vaka, md 81'in her iki şartını da senaryoda hazır veriyor ('hem inzibati cezayı hem TCK uyarınca cezalandırılmayı gerektirdiği', 'delilleri kâfi görmemiş ve mahkeme hükmünün beklenmesi zarureti') — geriye yalnız hükmün sonucunu yazmak kalıyor. Bu, 01'in birebir tersi; ayrıca 01'in kökü sonucu zaten söylüyor. Açıklamanın kendisi de itiraf ediyor: 'Vakada maddenin aradığı İKİ UNSUR da açıkça verilmiştir'. zorluk 'hard' gerçeği yansıtmıyor; bu hâliyle easy. | öneri: Senaryo, şartlardan birinin GERÇEKLEŞMEDİĞİ bir kurguya çevrilsin (ör. deliller yeterli görülmüş olsun) ve aday beklemenin gerekip gerekmediğine karar versin; zorluk 'medium'a çekilsin.",
+      "dil (onayladı, çekince): Vaka senaryosu hukmun her iki unsurunu da (TCK cezasi + delil yetersizligi) acikca veriyor; hukmu uygulamaya yeter. Ikinci dogru sik yok: E 'ancak mahkumiyet halinde' metinde yok, A/B/C hukmun tersini soyluyor. Tek kayit: kok, q01 ve q02'nin cevabini iceriyor (bkz. q01)."
+    ]
+  },
+  {
+    "id": "3201-p4-04",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Hukuken doğru: md 82'nin yürürlükteki tek fıkrası 'Kısa veya uzun süreli durdurma cezaları, ceza süresi içinde derece yükselmesi için açılan kurslara, yarışma sınavı veya seçmelerine girmeyi de önler' — C birebir. Mülga fıkralardan soru üretilmemiş, dayanak md 82/2 doğru. Çeldiricilerin hiçbiri metnin başka yerinde durdurma cezasının sonucu olarak geçmiyor (md 55 durdurmaya yalnız 'rütbe terfiini geri bıraktırır' sonucunu bağlıyor). KUSUR açıklamada: 'Branş işlemleri ile asli memurluğa atanma ise performans değerlendirme sonuçlarının kullanılabileceği alanlar arasında geçer' cümlesi, aynı dosyadaki q09'un B ve C çeldiricilerinin 'sayılanlar arasında' olduğunu doğrudan söyleyerek o sorunun çözümünü kolaylaştırıyor (açıklama→cevap sızıntısı). | öneri: Açıklamadan bu cümle çıkarılsın veya 'performans değerlendirmesiyle ilgili ayrı bir maddenin konusudur' biçiminde, kalem adı verilmeden genelleştirilsin.",
+      "kalite: REVIZYON — Hüküm ve doğru cevap (md 82/2) yerinde. Ancak açıklamadaki 'Branş işlemleri ile asli memurluğa atanma ise performans değerlendirme sonuçlarının kullanılabileceği alanlar arasında geçer' cümlesi, 09'un B ve C şıklarını (asli memurluğa atanma, branş işlemleri) doğrudan eliyor — açıklama -> cevap sızıntısı. Ayrıca doğru şık (C) en uzun şıktır. | öneri: Açıklamanın son iki cümlesi (branş/asli memurluk kısmı) silinsin; C şıkkı 'Derece yükselmesi kursları ile yarışma sınavlarına' biçiminde kısaltılsın.",
+      "dil (onayladı, çekince): Tek dogru C; siklarin hepsi yonelme halinde, kok 'hangisine girmeyi onler' ile dilbilgisel uyum tam. Diger sikların hicbiri md 82'nin yururlukteki fikrasinda gecmiyor, mulga fikralara dayanan sik yok."
+    ]
+  },
+  {
+    "id": "3201-p4-05",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 85/1 birebir: 'Emniyet Genel Müdürlüğünün stratejik plan ve hedefleri doğrultusunda ... kurum içi bireysel performans değerlendirme sistemi oluşturulur.' Çeldiricilerin hiçbiri md 85'te geçmiyor; Emniyet Komisyonu (md 2) ve Yüksek Değerlendirme Kurulu (md 55) gerçek organlar ama bu maddeyle ilgisiz.",
+      "kalite (onayladı, çekince): md 85/1 ile birebir; şıklar dengeli, zorluk 'easy' doğru. Küçük not: açıklamadaki 'Kadro cetvelleri ise Kanuna bağlı cetvelde gösterilen bambaşka bir konudur' cümlesi 33'ün C/D/E şıklarını zayıflatıyor; 33 kalacaksa bu cümle çıkarılmalı.",
+      "dil (onayladı, çekince): Kok 'neyin dogrultusunda' + siklar ad tamlamasi: uyumlu. Tek dogru A (md 85/1). Belirsiz zamir yok."
+    ]
+  },
+  {
+    "id": "3201-p4-06",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 85 son fıkra: 'Performans değerlendirmesi yılda en az bir kez yapılır.' C doğru. Çeldiricilerin md 55 dayanağı tek tek doğrulandı: İKİ YIL ('fiili hizmet süreleri ... iki yıl uzatılır ... iki yıl sonra tekrar değerlendirilerek'), ÜÇ YIL ('toplamda üç yılı aşan kısmı rütbe terfilerinde değerlendirilmez'), BEŞ YIL ('beş yıl içinde bir üst rütbeye terfi edemeyen'). ŞÜPHE: A şıkkındaki ALTI AY md 55'te GEÇMİYOR (kanunda yalnız md 36 sivil polis stajı ve md 56 hapis cezası eşiği bağlamında var) ve açıklama dört çeldiriciden yalnız üçünü ele alıp A'yı hiç açıklamıyor. Yanlış bir iddia içermediği için ONAY; açıklamaya bir cümle eklenmesi yerinde olur.",
+      "kalite (onayladı, çekince): md 85/4 ile birebir ('yılda en az bir kez'). Açıklamadaki iki/üç/beş yıl karşılaştırmalarını md 55 metninden doğruladım, hepsi Kanunda gerçekten geçiyor — çeldirici gerekçesi sağlam. Not: 'Altı ayda bir' ile 'Yılda bir kez' aynı uzunlukta, uzunluk ipucu yok.",
+      "dil (onayladı, çekince): Metin 'yilda en az bir kez'; kokteki 'en az' ibaresi C'yi tek dogru kiliyor. Kucuk risk: A 'Alti ayda bir' daha sik oldugu icin 'yilda en az bir kez' sartini fiilen karsilar; ancak kok kanuni asgariyi sordugundan ikinci dogru dogmuyor. Istenirse kok 'kanunen en az hangi siklikla' olarak netlestirilebilir."
+    ]
+  },
+  {
+    "id": "3201-p4-07",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 85/3 birebir: 'Performansın iyileştirilmesi için alınması gerekli görülen tedbirleri görüşerek önerilerde bulunmak üzere, merkezde Performans Değerlendirme Kurulu oluşturulur.' Dayanak fıkra numarası doğru.",
+      "kalite (onayladı, çekince): md 85/3 ile birebir ('merkezde'). Şıklar kısa ve dengeli. Tek not: zorluk 'medium' yerine 'easy' daha doğru — tek kelimelik konum bilgisi.",
+      "dil (onayladı, çekince): Tek dogru B (merkezde). Siklar ayni kategoride (yer), esit uzunlukta; ipucu yok."
+    ]
+  },
+  {
+    "id": "3201-p4-08",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 85 son fıkra son cümlesi: 'Performans değerlendirme formunda yer alacak performans değerlendirme ölçütleri ile ihtiyaç duyulan bilgiler Emniyet Genel Müdürlüğünce belirlenir.' E doğru. Açıklamanın 'yetki ikiye bölünür' tespiti metinle uyumlu: usul ve esaslar İçişleri Bakanlığı yönetmeliğine, form ölçütleri EGM'ye bırakılmış — dolayısıyla A çeldiricisi kökün sorduğu unsur bakımından yanlış.",
+      "kalite (onayladı, çekince): md 85/4'ün son cümlesiyle birebir (form ölçütleri EGM'ce). Yönetmelik yetkisi (İçişleri Bakanlığı) ile form yetkisi (EGM) ayrımı gerçek ve sınavlık bir ayrım; 'hard' etiketi yerinde. Şıklar hepsi kısa kurum adı, uzunluk ipucu yok.",
+      "dil (onayladı, çekince): Kok yetkiyi 'form olcutleri ve ihtiyac duyulan bilgiler' ile sinirladigindan yonetmelik yetkisiyle (Icisleri Bakanligi) karismiyor; iki dogru riski yok. A'nin cazip ama yanlis olmasi olcme degeri saglar."
+    ]
+  },
+  {
+    "id": "3201-p4-09",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap (disiplin sayılmamıştır) md 85/2 ile uyumlu. Ancak 04'ün açıklaması B ve C şıklarını, 06'nın açıklaması da ('sonuçlarının nerelerde kullanılabileceği') konuyu haber veriyor; 5 şıktan 2'si dosya içinden eleniyor. Ayrıca doğru şık en uzun grupta. | öneri: 04'ün açıklamasındaki branş/asli memurluk cümlesi silindikten sonra soru kalabilir; ek olarak şıklara md 85/2'de geçen 'eğitim ihtiyaçlarının belirlenmesi' gibi bir kalem eklenip 'Kıdem sırasının tespitinde' ile değiştirilebilir.",
+      "dil: REVIZYON — Karar dogru (disiplin md 85/2 sayiminda yok) ve olumsuzluk 'SAYILMAMISTIR' ile vurgulanmis. Dil kusuru: B sikkinda 'Asli memurluga atanmasinda' iyelik eki bos — kokte 'personelin' diye bir oncul yok, digger siklar (A, C, E) iyeliksiz kurulmus; sik listesi kendi icinde tutarsiz. | öneri: B sikkini 'Asli memurluga atanmada' olarak duzelt (ya da tum siklari 'personelin ...' ile ac).",
+      "mevzuat (onayladı, çekince): md 85/2 sayımı: 'başarı, yeterlilik ve ehliyetlerinin tespitinde, performansının geliştirilmesinde, kıdem sırasının tespitinde, rütbe terfiinde, görevde yükselmesinde, asli memurluğa atanmasında, branş işlemlerinde, eğitim ... ödüllendirilmesinde, istihdamında ve görev yeri değişikliğinde kullanılabilir.' Disiplin sayımda yok — D doğru; A/B/C/E sayımda var. ŞÜPHE: q04'ün açıklaması B ve C'yi sayılanlar arasında olduğunu söyleyerek eliyor (düzeltme q04 tarafında)."
+    ]
+  },
+  {
+    "id": "3201-p4-10",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — BANKA ÇAKIŞMASI. Bankadaki gerçek çıkmış md 86 sorusunun KÖKÜ şudur: 'olağanüstü durumlarda yaşamını ortaya koyarak büyük yararlıklar gösterenler ... en az kaç katından en fazla kaç katına kadar'. Bu kök, (B) bendinin AYRI ve daha yüksek bir kat aralığına ait olduğunu açıkça söylüyor; dolayısıyla bu soruda B şıkkı bankayı çalışmış aday için kendiliğinden eleniyor. Doğru cevap 'iki katından beş katına kadar' -> A yerinde ama ayırt ediciliği düşüyor. | öneri: Kök, kat aralığından (A)/(B) bendi ayrımına çevrilsin: 'aşağıdaki fiillerden hangisi daha yüksek ödül aralığına tabidir' gibi; ya da B şıkkı bankadaki soruyla örtüşmeyen bir çeldiriciyle değiştirilsin. Ayrıca açıklamadaki '2330 sayılı Kanun hükümlerinden BAŞKA' cümlesi 16'nın I. önermesinin cevabını veriyor.",
+      "dil: REVIZYON — Sik duzeyinde iki dogru yok: A md 86/1-(A) (iki-bes kat), B (B) bendinin alti-yirmidort kat hali, C madalya sebebi, D takma izni, E metinde yok. ANCAK aciklamanin son cumlesi ('bu oduller 2330 sayili Kanun hukumlerinden BASKA, yani onlara EK olarak uygulanir') q16'nin I. onermesinin cevabini birebir veriyor — aciklama->cevap sizintisi. | öneri: Aciklamadan 2330 kaydina iliskin son cumleyi cikar; o bilgi zaten q16'nin olctugu sey.",
+      "mevzuat (onayladı, çekince): md 86/1-(A) birebir: 'kişilerin can, ırz ve mallarını korumada yüksek hizmetleri görülenler, fiilen almakta oldukları aylık tutarlarının iki katından beş katına kadar'. B şıkkı (B) bendinin konusu olup oranı altı–yirmidört kat olduğundan yanlış. Kat sayıları doğrulandı: metinde yalnız iki, beş, altı, yirmidört geçiyor — uydurma sayı yok. C madalya sebebi, D takılma izni, E metinde yok. MÜLGA (C) bendinden (2330/11-d) soru üretilmemiş; giriş cümlesindeki '2330 sayılı Kanun hükümlerinden başka' kaydı yalnız açıklamada anılmış."
+    ]
+  },
+  {
+    "id": "3201-p4-11",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Cevap doğru: '(Ek fıkra:21/11/2024-7533/5 md.) ... İçişleri Bakanı tarafından aşağıda isimleri yazılı madalyalar verilebilir' — C. KUSUR: açıklamanın 'Sık karıştırılan komşu hüküm aynı maddenin yabancı madalyalara ilişkin kısmıdır: orada yetki BAKAN değil BAKANLIK düzeyindedir ve konu ... başka devletlerce tevcih edilmiş madalya ve nişanların takılabilmesidir' cümlesi, aynı dosyadaki q13'ün doğru cevabını (E — 'İçişleri Bakanlığınca tasvip ve tescil') doğrudan veriyor; q13'te İçişleri Bakanlığını anan tek şık odur. Açıklama→cevap sızıntısı. | öneri: Açıklamadaki komşu hüküm kısmı 'yabancı madalyalarda yetkinin farklı bir düzeyde düzenlendiğine dikkat edilmelidir' gibi merci adı vermeyen bir cümleye indirilsin.",
+      "kalite: REVIZYON — Doğru cevap (İçişleri Bakanı, 2024 ek fıkrası) metinle birebir. Fakat AYNA ÇİFT: 13'ün açıklaması 'orada yetki BAKANLIK değil BAKAN düzeyindedir' diyerek bu sorunun cevabını birebir veriyor; bu sorunun açıklaması da 13'ün cevabını ('yetki BAKAN değil BAKANLIK düzeyindedir ... başka devletlerce tevcih edilmiş madalya ve nişanların takılabilmesi') veriyor. Karşılıklı açıklama -> cevap sızıntısı. | öneri: İki sorudan birinin açıklamasındaki 'Sık karıştırılan komşu hüküm' paragrafı tamamen silinsin (tercihen 13'ünki); ya da 11 ile 13'ten biri partiden çıkarılsın.",
+      "dil: REVIZYON — Kok/siklar saglam, tek dogru C (Icisleri Bakani). Kusur aciklamada: 'orada yetki BAKAN degil BAKANLIK duzeyindedir ve konu ... takilabilmesidir' cumlesi q13'un dogru cevabini (Icisleri Bakanliginca tasvip ve tescil) dogrudan veriyor. q13'un aciklamasi da simetrik bicimde bu sorunun cevabini veriyor — ayna cift. | öneri: Aciklamadaki 'BAKAN degil BAKANLIK' karsilastirmasini kaldir, yalnizca 'yabanci madalyalarin takilmasi ayri bir kural olup farkli bir mercie baglidir' de."
+    ]
+  },
+  {
+    "id": "3201-p4-12",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): Metinde sayılan üç ad: 'A) Emniyet Üstün Cesaret ve Feragat Madalyası, B) Emniyet Şeref Madalyası, C) Emniyet Üstün Hizmet Madalyası.' Yalnız B şıkkı bu adlardan biri; A/C/D/E metinde ad olarak geçmiyor (cesaret, feragat, kahramanlık, üstün başarı yalnız veriliş sebebi olarak geçiyor). Açıklamanın 'ad ile sebep karıştırılması' tespiti metinle uyumlu.",
+      "kalite (onayladı, çekince): Madalya adları md 86'nın 2024 ek fıkrasıyla birebir (Üstün Cesaret ve Feragat / Şeref / Üstün Hizmet). 'Veriliş sebebi ile madalya adını karıştırma' üzerine kurulu çeldiriciler makul ve dosyadaki en iyi çeldirici setlerinden biri. Not: doğru şık en kısa şık; ters yönde küçük bir ipucu var ama ayırt edici değil.",
+      "dil (onayladı, çekince): Metinde sayilan uc madalya adindan yalniz B siklarda yer aliyor; A/C/D/E maddedeki veris SEBEPLERINDEN turetilmis uydurma adlar, dolayisiyla cevapsizlik/iki dogru yok. 'acikca belirtilen' kaydi koku emniyete aliyor."
+    ]
+  },
+  {
+    "id": "3201-p4-13",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap (İçişleri Bakanlığınca tasvip ve tescil) metinle birebir. Ancak 11 ile AYNA ÇİFT oluşturuyor: bu sorunun açıklaması 11'in cevabını, 11'in açıklaması bu sorunun cevabını veriyor. Ayrıca doğru şık (E) en uzun şıktır ve tek 'iki aşamalı' (tasvip VE tescil) şıktır — çift ipucu. | öneri: Açıklamadaki son iki cümle (Bakan/Bakanlık karşılaştırması) silinsin; C şıkkı 'Emniyet Genel Müdürlüğünce kayda ve tescile alınması hâlinde' gibi eşit ağırlıklı bir çeldiriciyle değiştirilsin.",
+      "dil: REVIZYON — Tek dogru E, metinle birebir. Kusur aciklamada: 'orada yetki BAKANLIK degil BAKAN duzeyindedir' cumlesi q11'in dogru cevabini (Icisleri Bakani) veriyor — aciklama->cevap sizintisi, q11 ile ayna cift. | öneri: Aciklamada komsu hukum karsilastirmasindan makam adini cikar; 'ayni maddede EGM personeline madalya verilmesi ayri bir mercie birakilmistir' yeter.",
+      "mevzuat (onayladı, çekince): md 86 birebir: 'Başka devletlerce tevcih edilen madalya ve nişanlar ile bunlara ait rozet ve minyatürler, İçişleri Bakanlığınca tasvip ve tescil edildikten sonra takılabilir.' E doğru; Cumhurbaşkanı/Dışişleri metinde geçmiyor. ŞÜPHE: cevap q11'in açıklamasından sızıyor (düzeltme q11 tarafında)."
+    ]
+  },
+  {
+    "id": "3201-p4-14",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Hüküm doğru ('bir defaya mahsus olmak üzere bütçeden'). İki kusur: (1) zorluk 'hard' değil — tek cümlelik bir gider hükmü, medium; (2) açıklamadaki 'bağış ve yardımlar da ... Sandığın gelir kalemlerinin düzenlendiği hükmün kavramıdır' cümlesi 23'ün gelir sayımını haber veriyor. | öneri: zorluk 'medium' yapılsın; açıklamanın Sandık gelirlerine ilişkin son cümlesi silinsin.",
+      "mevzuat (onayladı, çekince): md 86 birebir: 'Verilen madalyaların imalatı ve bunların muhafazalarının temin giderleri bir defaya mahsus olmak üzere bütçeden karşılanır.' D doğru. Küçük not: açıklamadaki 'bağış ve yardımlar ... Sandığın gelir kalemlerinin düzenlendiği hükmün kavramıdır' cümlesi md 90/2 ile doğru ama q23'ün C şıkkının gerçek bir gelir kalemi olduğunu teyit ediyor; zayıf bir eleme ipucu.",
+      "dil (onayladı, çekince): Tek dogru D; kok 'nasil karsilanir' + siklar zarf tumleci: uyumlu. Zayif ipucu: aciklamada 'bagis ve yardimlar ... Sandigin gelir kalemlerinin duzenlendigi hukmun kavramidir' cumlesi q23'te C sikkinin elenmesine yardim eder; zorunlu degilse kisaltilabilir."
+    ]
+  },
+  {
+    "id": "3201-p4-15",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap (İçişleri Bakanlığınca çıkarılacak yönetmelikler) md 86'nın 2019 ek fıkrasıyla birebir. Kusur: açıklamada 'Polis Bakım ve Yardım Sandığına ilişkin maddesindedir: orada yönetmelik çıkarma yetkisi Bakanlığa değil BAŞKA BİR MERCİYE aittir' cümlesi, 30'un B şıkkını eliyor. Ayrıca açıklamanın 'kat aralığı yalnız para ödülünün üst ve alt sınırıdır' kısmı 16'nın III. önermesinin yanlışlığını veriyor. | öneri: Açıklamadaki Sandık karşılaştırması ve kat aralığı cümlesi silinsin.",
+      "mevzuat (onayladı, çekince): md 86 son fıkra birebir: '(Ek fıkra:6/12/2019-7196/4 md.) ... esaslar, teklif ve değerlendirme işlemleri, ödül verme yetkileri, ödül gerekçelerine göre verilecek ödülün cinsi ve miktarı ile diğer usul ve esaslar İçişleri Bakanlığınca çıkarılacak yönetmelikler ile belirlenir.' A doğru. Açıklamadaki 'Sandık maddesinde yetki başka bir merciye aittir' ifadesi merci adı vermediği için q30'a doğrudan sızıntı yapmıyor, yalnız B şıkkını zayıflatıyor.",
+      "dil (onayladı, çekince): Tek dogru A. Aciklamadaki 'orada yonetmelik yetkisi Bakanliga degil BASKA BIR MERCIYE aittir' cumlesi q30'da B sikkini eletiyor (makami adlandirmadigi icin cevabi vermiyor); zayif ipucu olarak not edildi."
+    ]
+  },
+  {
+    "id": "3201-p4-16",
+    "karar": "RED",
+    "itirazlar": [
+      "kalite: RED — Üç ayrı sebeple düzeltilemez. (1) Ölçme değeri yok: II. önerme 'Madde hükmü geriye yürür' 1980 tarihli 2261 sayılı değişikliğin geçiş kaydıdır; bugünkü bir polis adayının bilmesi gereken bir kural değildir, saf metin arkeolojisidir. (2) SIZINTI: I. önermenin doğruluğu 10'un açıklamasında ('bu ödüller 2330 sayılı Kanun hükümlerinden BAŞKA, yani onlara ek olarak uygulanır'), III'ün yanlışlığı 15'in açıklamasında ('ödülün cinsi ve miktarı ... yönetmeliklere bırakır') zaten veriliyor; dosyayı sırayla çözen aday bu soruyu hiçbir madde bilgisi olmadan cevaplıyor. (3) Şık seti eksik/dengesiz: 'Yalnız III' ve 'I ve III' kombinasyonları yok, doğru cevap C 'I ve II' otomatik olarak öne çıkıyor. | öneri: Çıkarılsın. md 86 zaten dosyada 7 soruyla aşırı temsil ediliyor.",
+      "dil: REVIZYON — II ve III tek anlamli, cevap anahtari (C) metne uygun. Kusur I. onermede: 'oduller ... 2330 sayili Kanun hukumlerinden BASKA OLARAK uygulanir' ifadesi tek anlamli degil — 'baska' Turkcede hem 'ek olarak' hem 'disinda/yerine' okunabilir; onermenin dogru mu yanlis mi oldugu okuyusa gore degisir, bu da CEVAPSIZ/iki-anahtar riski dogurur. Ayrica q10'un aciklamasi bu onermenin cevabini pesin veriyor. | öneri: I. onermeyi 'Maddede ongorulen oduller, 2330 sayili Kanun hukumlerinin sagladigi haklara EK OLARAK uygulanir.' bicimine getir.",
+      "mevzuat (onayladı, çekince): I: maddenin giriş cümlesi 'Emniyet örgütü mensupları, 2330 sayılı Kanun hükümlerinden başka aşağıdaki durumlarda' — doğru. II: metinde bağımsız bir fıkra olarak 'Bu madde hükmü geriye yürür.' cümlesi bulunuyor — doğru. III: metinde ödül miktarının EGM'ce her yıl belirlenmesine dair hiçbir hüküm yok, aksine yönetmelik yetkisi İçişleri Bakanlığındadır — yanlış. C doğru. Mülga (C) bendi önermelerde kullanılmamış."
+    ]
+  },
+  {
+    "id": "3201-p4-17",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap ('Devlet') md 87 ile birebir; hüküm de bugün geçerli. Kusur: kök md 87'nin sayımından üç kalemi ('melbusat, hayvan yem bedelleri, ilaç ve tedavi masrafları') tam metin basıyor ve açıklama listenin TAMAMINI tekrar sayıyor — bu, 19'un dört çeldiricisini (kırtasiye, tenvir/teshin, köpek/muhabere kuşu, mefruşat) doğrudan onaylayan bir kök+açıklama -> cevap sızıntısıdır. Ayrıca kök gereksiz uzun; 'Devlet' cevabı genel bilgiyle de bulunabildiği için ölçme değeri düşük. | öneri: 19 çıkarıldıktan sonra kök tek kaleme indirilsin ('... melbusat ve tedavi masrafları umumiyetle kim tarafından verilir?') ve açıklamadaki tam liste sayımı kısaltılsın.",
+      "dil: REVIZYON — Sik duzeyinde kusur yok, tek dogru C (Devlet). Ancak cevap dosyanin icinden sizmis: q19'un koku 'Devlet tarafindan verilecegi ACIKCA SAYILAN giderlerden biri degildir' diyerek cevabi birebir yaziyor; ayrica q20'nin D sikki ve q18'in aciklamasi ayni bilgiyi tasiyor. Kolay bir soru olarak olcme degeri kaliyor. | öneri: q17'yi q19/q20 ile ayni denemede kullanma; ya da q19'un kokunu '87 nci maddede sayilan giderlerden biri degildir' bicimine cevirip q17'yi koru.",
+      "mevzuat (onayladı, çekince): md 87 sonu: '... umumiyetle Devlet tarafından verilir.' C doğru. Açıklamadaki belediye istisnası da doğrulandı: md 6 'Belediye zabıtası işleri; ... tahsisatı belediyelerden alınan bir kısım tarafından ifa edilir.' Polis Bakım ve Yardım Sandığının konusu md 90'daki sosyal yardımlar olup melbusat/tedavi gideri değil — D yanlış."
+    ]
+  },
+  {
+    "id": "3201-p4-18",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 87 birebir: '... polis memur ve komiserlik derecelerine dahil olanların ve ayrıca YÖNETMELİK İLE kendilerine elbise ve teçhizat verilmesi kabul edilen emniyet teşkilatı mensuplarının melbusat ... bedelleri'. B doğru; Cumhurbaşkanı kararı/onay/olur metinde yok.",
+      "kalite (onayladı, çekince): md 87'deki 'ayrıca yönetmelik ile kendilerine elbise ve teçhizat verilmesi kabul edilen' kaydıyla birebir. İki gruplu yapı (Kanundan doğan hak / yönetmelikle kabul) gerçek bir ayrım ölçüyor; şıklar kısa ve dengeli, uzunluk ipucu yok. Dosyada md 87'den kalan tek sağlam soru budur.",
+      "dil (onayladı, çekince): Kok 'hangi duzenlemeyle kabul edilir' + siklar arac hali: uyumlu; tek dogru B, metinde 'ayrica yonetmelik ile ... kabul edilen'. Not: aciklama '87 nci madde melbusat giderini ... Devlete yukler' diyerek q17'nin cevabini iceriyor."
+    ]
+  },
+  {
+    "id": "3201-p4-19",
+    "karar": "RED",
+    "itirazlar": [
+      "kalite: RED — İki sebeple düzeltilemez. (1) SIZINTI: dört çeldiricinin dördü de (kırtasiye, tenvir/teshin, mefruşat, polis köpeği/muhabere kuşu) 17'nin açıklamasında Devletçe karşılanan giderler olarak tek tek sayılıyor; 17'nin kökü de listenin bir kısmını basıyor. Sızıntıyı gidermek için 17'nin kökünü ve açıklamasını da bozmak gerekir. (2) ÖLÇME DEĞERİ: geriye kalan iş, 1937 tarihli bir gider sayımının (tenvir, teshin, mefruşat, muhabere kuşu) ezberlenip ezberlenmediğidir; doğru cevap ise 'çocukların öğrenim gideri' gibi listede olmadığı sağduyuyla da anlaşılan bir kalemdir. Yani sızıntı giderilse bile soru ya ezber ya da bedava olur. | öneri: Çıkarılsın; md 87 için 18 (ve düzeltilmiş 17) yeterlidir.",
+      "mevzuat (onayladı, çekince): md 87 sayımı doğrulandı: muhabere, tenvir, teshin, fenni vasıtalar, mefruşat, kırtasiye (A, B, D) ve 'kullanılacak polis köpek ve muhabere kuşları mübayaa ve tedavi ve iaşe' (C) metinde var; personel çocuklarının öğrenim gideri (E) hiçbir yerde yok. Kökteki 'AÇIKÇA SAYILAN' kaydı yerinde ve doğru: maddenin sonundaki 'diğer canlı ve cansız vasıtaların masrafları' açık uçlu kaydı yalnız VASITALARA ilişkin giderleri kapsayabildiği için E'yi zaten kapsamaz; kayıt teknik olarak zorunlu olmasa da yanlış değil ve belirsizlik doğurmuyor.",
+      "dil (onayladı, çekince): Olumsuzluk (DEGILDIR) ve 'ACIKCA SAYILAN' kaydi birlikte cevapsizligi onluyor: A-D sayimda birebir var, E yok ve maddenin sonundaki acik uclu kayit ('diger canli ve cansiz vasitalarin masraflari') yalniz VASITA giderlerini genisletebilecegi icin ogrenim giderini kapsayamaz — ikinci dogru dogmuyor. Ayni tuzagin acikta kaldigi baska soru yok (q17 acik uclu kalemi hic kullanmiyor). Tek kayit: kok, q17'nin cevabini veriyor (bkz. q17)."
+    ]
+  },
+  {
+    "id": "3201-p4-20",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Cevap doğru: md 88 'Polis ve komiserlerinden kanuni evsafta hayvan tedarik edenler ihtiyaç halinde atlı polis sınıfına nakledilirler. Bunların hayvan yem bedelleri Devletçe temin olunur' — E; D metnin tersi, C 'ihtiyaç halinde' kaydına aykırı, B hayvanı memurun tedarik ettiği düzene aykırı. KUSUR: açıklamanın 'Askerliğin hangi sınıfta yapıldığı ise ... vasıtalı polis kısmına alınacaklar arasında tercih sebebini düzenleyen ayrı bir maddenin konusudur' cümlesi, aynı dosyadaki q31'in doğru cevabını (D — askerliğini vasıtalı sınıflarda ikmal etmiş olanlar tercih edilir) neredeyse birebir veriyor. | öneri: Açıklamada A şıkkı 'askerlik sınıfı bu maddede bir nakil şartı olarak öngörülmemiştir' denip bırakılsın; md 91'e yapılan içerikli atıf silinsin.",
+      "kalite: REVIZYON — Doğru cevap (E) md 88 ile birebir ve 'ihtiyaç hâlinde' + 'kanuni evsafta hayvan tedarik eden' iki şartı doğru ölçüyor. İki kusur: (1) açıklamadaki 'Askerliğin hangi sınıfta yapıldığı ise ... vasıtalı polis kısmına alınacaklar arasında tercih sebebini düzenleyen ayrı bir maddenin konusudur' cümlesi 31'in doğru cevabını (askerliğini vasıtalı sınıflarda ikmal etmiş olanlar) TAM olarak veriyor; (2) D şıkkı ('hayvan yem bedelleri kendileri tarafından karşılanır') 17'nin kökünde 'hayvan yem bedelleri ... Devlet tarafından verilir' denerek zaten çürütülmüş. | öneri: Açıklamanın askerlik sınıfına ilişkin cümlesi silinsin; D şıkkı ('yem bedeli') 17 ile çakıştığı için başka bir çeldiriciyle değiştirilsin.",
+      "dil: REVIZYON — Tek dogru E; A/B/C/D metnin acik tersini soyluyor, iki dogru riski yok. Kusur aciklamada: 'Askerligin hangi sinifta yapildigi ... vasitali polis kismina alinacaklar arasinda TERCIH sebebini duzenleyen ayri bir maddenin konusudur' cumlesi q31'in dogru cevabini (D) eksiksiz veriyor. | öneri: Aciklamada askerlik sinifina yapilan gonderimi kaldir; 'vasitali polis kismina alinmaya iliskin olcut ayri bir maddede duzenlenir' yeterlidir."
+    ]
+  },
+  {
+    "id": "3201-p4-21",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Hüküm md 90/1 (2024 değişikliği) ile birebir. Kusurlar: (1) zorluk 'easy' yanlış — 'üyeliği devam ederken emekli olup katılım payını Sandıkta bırakanlar' 2024 ek kaydı ince bir ayrıntıdır, en az medium; (2) doğru şık (C) hem en uzun hem de tek 'iki gruplu' şık; B de iki gruplu ama açıkça geniş. Uzunluk + yapı ipucu birlikte veriyor. | öneri: zorluk 'medium' yapılsın; A ve D şıkları ('Yalnızca ...') benzer uzunlukta iki gruplu çeldiricilere çevrilsin.",
+      "mevzuat (onayladı, çekince): md 90/1 (Değişik birinci fıkra:21/11/2024-7533/6 md.) birebir: 'Sandık üyeleri, Emniyet Teşkilatı mensupları ile üyelikleri devam etmekte iken emekli olup katılım payını Sandıkta bırakanlardan oluşur.' C doğru. B yanlış (mirasçılar üye değil, yalnız yardım alabilen kişilerdir — 7533 ile eklenen yardım fıkrası). E, emekli üyeler grubunu düşürdüğü için eksik/yanlış. Güncel fıkra ile eski metin karışması yok; kökte ve şıklarda mülga ifade kullanılmamış.",
+      "dil (onayladı, çekince): 7533/6 ile degisik BIRINCI FIKRA esas alinmis, eski metne dayanan sik yok; C metinle birebir. B (yakinlar/mirascilar) uyelik ile yardimin muhatabini karistiran makul celdirici, ikinci dogru degil: metin mirascilari uye degil yardim alacak kisi olarak anar."
+    ]
+  },
+  {
+    "id": "3201-p4-22",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap md 90/2 ile birebir. Kusurlar: (1) doğru şık (A) en uzun şık; (2) D ve E şıkları dosya içinden eleniyor — 23'ün açıklaması 'Kanun onu mali bakımdan özerk ve kendi kaynağıyla işleyen bir teşekkül olarak kurgular', 28'in açıklaması 'Sandık mali ve idari bakımdan özerk, kendi tüzel kişiliği olan bir teşekküldür' diyor. 5 şıktan 2'si başka soruların açıklamalarıyla düşüyor; (3) zorluk 'hard' değil medium. | öneri: 23 ve 28'in açıklamalarındaki özerklik/tüzel kişilik cümleleri silinsin; A şıkkı 'Üyeleriyle kamu hukuku, diğer işlemlerinde özel hukuk hükümlerine tabidir' biçiminde kısaltılsın.",
+      "mevzuat (onayladı, çekince): md 90/2 (Değişik ikinci fıkra:21/11/2024-7533/6 md.) birebir: 'Sandık, üyeleri ile arasındaki ilişkilerde kamu hukuku, diğer tüm iş ve işlemlerinde özel hukuk hükümlerine tabi olup mali ve idari bakımdan özerk ve tüzel kişiliği haiz bir teşekküldür.' A doğru, D ve E metnin açık tersi.",
+      "dil (onayladı, çekince): Kok 'hukuki niteligi' diyerek fikrayi tek anlamli isaret ediyor; A metnin yonuyle birebir. E 'mali bakimdan ozerk olmakla birlikte idari bakimdan Bakanliga bagli' metnin 'mali ve idari bakimdan ozerk' ifadesiyle celisir, ikinci dogru degil. Not: q28'in aciklamasi Sandigin ozerkligi ve tuzel kisiligini tekrarlayarak D/E'yi eletiyor (zayif ipucu)."
+    ]
+  },
+  {
+    "id": "3201-p4-23",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Cevap doğru: md 90/2 'Sandığın gelirleri; üyelik aidatları, katılım payı, bu aidat ve katılım paylarının nemalandırılması için yapılan her türlü yatırım ve faaliyetten elde edilen gelirler ile bağış ve yardımlardan oluşur.' Hazine yardımı kanunun hiçbir yerinde geçmiyor — E doğru. KUSUR: açıklamanın son cümlesi 'Sandığın mevcut ve alacaklarının Devlet mallarına ait hak ve rüçhanları haiz olması da bir gelir kalemi değil...' ifadesi, aynı dosyadaki q28'in doğru cevabını (B — 'Devlet mallarına ait hak ve rüçhanları haizdir') birebir veriyor. | öneri: Açıklamanın bu cümlesi çıkarılsın veya 'Sandığın mal varlığına tanınan koruma ayrı bir fıkranın konusudur' biçiminde içerik verilmeden yazılsın.",
+      "kalite: REVIZYON — Gelir sayımı md 90/2 ile birebir; 'hazine yardımı' gerçekten sayımda yok. Ancak açıklamanın son cümlesi 28'in doğru cevabını BİREBİR veriyor: 'Sandığın mevcut ve alacaklarının Devlet mallarına ait hak ve rüçhanları haiz olması...'. Üreticinin 'birebir eşleşme yok' iddiası bu satırda yanlıştır. Ayrıca aynı açıklama 22'nin D/E şıklarını eliyor. | öneri: Açıklamanın son iki cümlesi (mevcut ve alacaklar + özerklik) tamamen silinsin.",
+      "dil: REVIZYON — Sayim dogru, E tek dogru cevap (hazine yardimi metinde yok). Kusur aciklamada: son cumle 'Sandigin mevcut ve alacaklarinin Devlet mallarina ait hak ve ruchanlari haiz olmasi' diyerek q28'in dogru cevabini (B) birebir veriyor — aciklama->cevap sizintisi. | öneri: Aciklamanin son cumlesini 'Sandigin mal varliginin tabi oldugu koruma rejimi ayri bir fikrada duzenlenmistir; gelir kalemi degildir' bicimine kisalt."
+    ]
+  },
+  {
+    "id": "3201-p4-24",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 90/2 birebir: 'Üyelik aidatı, emeklilik keseneğine esas aylık tutarının veya prime esas kazanç tutarının yüzde dokuzudur.' B doğru; kanunda başka hiçbir yerde 'yüzde dokuz' geçmiyor. Üreticinin çeldirici iddiası TEK TEK doğrulandı ve DOĞRU: %35 (ek ödeme — özel harekat ve istihbarat birimleri), %27 (ek ödeme — diğer birimler), %20 (Bakanlıkça kullanılacak toplam kontenjan sınırı), %5 (emniyet teşkilatı için uygulanan oran). Dördü de kanunun başka hükümlerinde gerçekten geçiyor; uydurma oran yok. Matrahın ikili ifadesi de metinle uyumlu.",
+      "kalite (onayladı, çekince): md 90/2 ile birebir (yüzde dokuz) ve matrah ikiliği (keseneğe esas aylık / prime esas kazanç) doğru işleniyor. Açıklamanın 'çeldirici oranların hepsi Kanunun başka hükümlerinde gerçekten geçen değerlerdir' iddiasını metinden doğruladım: %35, %27, %20 ve %5 Kanunda gerçekten var. Dosyadaki en sağlam çeldirici seti.",
+      "dil (onayladı, çekince): Tek dogru B. Kok matrahi ('emeklilik kesenegine esas aylik veya prime esas kazanc') acikca verdigi icin belirsizlik yok; celdirici oranlar (%5, %20, %27, %35) Kanunun baska hukumlerinde gercekten geciyor, uydurma degil."
+    ]
+  },
+  {
+    "id": "3201-p4-25",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 90/2 son cümlesi birebir: 'Sandık Genel Kurulu bu oranı beş puana kadar artırmaya veya azaltmaya yetkilidir.' D doğru; Cumhurbaşkanı bu maddede yalnız usul ve esas yönetmeliği bakımından yetkili olduğundan A yanlış. Açıklama komşu yetkiyi merci adı vermeden anıyor, q30'a sızıntı yok.",
+      "kalite (onayladı, çekince): md 90/2 son cümlesiyle birebir (Sandık Genel Kurulu, beş puana kadar). Şıklar kısa kurum adları, uzunluk ipucu yok. Not: açıklamadaki 'Sandığın organları, üyeliğe giriş, aidat, katılım payı, yardımlar ve denetim gibi konulardaki USUL VE ESASLAR' cümlesi 30'un kökünü aynen basıyor (cevabı vermiyor ama gereksiz); silinmesi iyi olur.",
+      "dil (onayladı, çekince): Tek dogru D. 'Bes puana kadar artirma/azaltma' yetkisi metinde yalniz Sandik Genel Kuruluna verilmis; usul ve esas yonetmeligi (Cumhurbaskani) farkli bir yetki oldugundan A ile cakisma dogmuyor — kok 'aidati orani' diyerek ayrimi net kuruyor."
+    ]
+  },
+  {
+    "id": "3201-p4-26",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 90 (Ek fıkra:21/11/2024-7533/6 md.) birebir: '28/12/2018 tarihinden önce Emniyet Teşkilatı kadrosunda göreve başlayanlardan Teşkilattaki görevi devam edenler Sandığa üye olabilirler. Bu üyelerin Sandığa girişlerinden itibaren üç yıl geçtikten sonra nemalar dahil aidatlarını alarak ayrılabilmeleri mümkündür.' Vaka verileri (2010 göreve başlama, 2025 üyelik, ikinci yıl) hükmü uygulamaya yeterli ve sonuç A. C şıkkı 'Ancak üyelikten çıkanlar bir daha Sandık üyeliğine kabul edilmezler' cümlesiyle de ayrıca yanlış.",
+      "kalite (onayladı, çekince): Dosyanın en iyi sorusu. Vaka gerçekten uygulama yaptırıyor: 2018 öncesi göreve başlama -> isteğe bağlı üyelik rejimi, sürenin başlangıcı göreve başlama değil SANDIĞA GİRİŞ. Tarihler ve süre md 90'ın 2024 ek fıkrasıyla birebir. 'hard' etiketi yerinde. Küçük not: açıklamanın son cümlesi ('sonraki girişliler bakımından Kanun farklı bir üyelik düzeni öngörmüştür') 27'nin A şıkkını zayıflatıyor; silinebilir.",
+      "dil (onayladı, çekince): Vaka, hukmu uygulamaya yeten uc veriyi de acikca tasiyor: 2018 oncesi goreve baslama (2010), Teskilattaki gorevin devami, uyelige giristen bu yana gecen sure (ikinci yil). Tek dogru A; E ve D metinle celisiyor, C ise 'bir daha uyelige kabul edilmez' kuraliyla acikca yanlis."
+    ]
+  },
+  {
+    "id": "3201-p4-27",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 90 (Ek fıkra:27/12/2018-7159/1 md.) birebir: 'Bu fıkranın yürürlüğe girdiği tarihten sonra Emniyet Genel Müdürlüğü kadrosunda göreve başlayan memurlar görevleri süresince Sandığın daimi ortağıdır.' E doğru; kökteki 7159 künyesi metindeki künye ile uyumlu. A, q26'nın rejimini bu gruba taşıdığı için yanlış.",
+      "kalite (onayladı, çekince): md 90'ın 7159 sayılı Kanunla eklenen fıkrasıyla birebir ('görevleri süresince Sandığın daimi ortağıdır'). Şıklar dengeli. Not: 26 ile birlikte okunduğunda iki rejim birbirini haber veriyor; ikisinden birinin açıklamasındaki 'diğer rejim' cümlesi silinirse çift tamamen temizlenir.",
+      "dil (onayladı, çekince): Tek dogru E, metinle birebir ('gorevleri suresince ... daimi ortagidir'). Kucuk kayit: kokte fikranin '7159 sayili Kanunla eklenen' diye anilmasi sinav diline gore teknik; '27/12/2018 tarihli duzenleme ile eklenen fikra' daha okunakli olur (cevabi etkilemiyor)."
+    ]
+  },
+  {
+    "id": "3201-p4-28",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap md 90 ile birebir, ancak cevabın anahtar ifadesi ('Devlet mallarına ait hak ve rüçhanları haizdir') 23'ün açıklamasında BİREBİR geçiyor — dosyadaki en net açıklama -> cevap sızıntısı. Ayrıca bu sorunun kendi açıklaması da 22'nin D/E şıklarını eliyor. | öneri: 23'ün açıklamasındaki ilgili cümle silinsin; bu sorunun açıklamasındaki 'mali ve idari bakımdan özerk, kendi tüzel kişiliği olan' ifadesi de 22 ile çakıştığı için çıkarılsın.",
+      "mevzuat (onayladı, çekince): md 90 birebir: 'Sandığın mevcutları ve alacakları Devlet mallarına ait hak ve rüçhanları haizdir.' B doğru; C/D metinde yok, A ise nemalandırma hükmüyle çelişir. ŞÜPHE: cevap q23'ün açıklamasından sızıyor (düzeltme q23 tarafında).",
+      "dil (onayladı, çekince): Tek dogru B. A 'hicbir sekilde ... isletilemez' metnin nemalandirma imkaniyla celisir, E korumanin varligiyla celisir; iki dogru yok. Not: cevap q23'un aciklamasinda birebir geciyor (bkz. q23)."
+    ]
+  },
+  {
+    "id": "3201-p4-29",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 90 (Ek fıkra:21/11/2024-7533/6 md.) birebir: 'Sandığın Emniyet Teşkilatı mensubu olan üyelerine veya ölümleri halinde mirasçılarına emeklilik yardımı, maluliyet yardımı ve ölüm yardımı; emekli olan üyelerine ise katılım payı kâr payı ve ölüm yardımı yapılır.' Vakadaki kişi emekli üye olduğundan D doğru; B çalışan üye paketidir. İki grup arasındaki kesişim yalnız ölüm yardımıdır, bu da tek doğru şık kalmasını sağlıyor.",
+      "kalite (onayladı, çekince): md 90'ın 2024 ek fıkrasıyla birebir; çalışan üye (emeklilik + maluliyet + ölüm) ile emekli üye (katılım payı kâr payı + ölüm) ayrımı gerçek ve ince bir ayrım. Vaka, hükmü uygulamak için gereken tek veriyi (emekli olup katılım payını bırakma) veriyor, fazlasını vermiyor. 'hard' yerinde.",
+      "dil (onayladı, çekince): Vaka, kisiyi 'emekli olan uye' grubuna sokan iki unsuru da veriyor (emeklilik + katilim payini Sandikta birakarak uyeligin surmesi); veri yeterli. Tek dogru D. Kucuk dil kaydi: D'deki 'katilim payi kar payi' teknik olarak bir 'yardim' degil odemedir; kok istenirse 'hangi yardim ve odemeler yapilir' bicimine getirilebilir — metin ikisini ayni cumlede saydigi icin cevapsizlik dogurmuyor."
+    ]
+  },
+  {
+    "id": "3201-p4-30",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap (Cumhurbaşkanı yönetmeliği) md 90 son fıkrasıyla birebir. Kusurlar: (1) 15'in açıklaması 'orada yönetmelik çıkarma yetkisi Bakanlığa değil BAŞKA BİR MERCİYE aittir' diyerek B şıkkını, 25'in açıklaması da 'başka bir merciye bırakılmıştır' diyerek aynı şeyi eliyor; (2) 25'in açıklaması bu sorunun kökünü neredeyse aynen basıyor; (3) doğru şık (A) en uzun şık. | öneri: 15 ve 25'in açıklamalarındaki 'başka bir merci' cümleleri silinsin; A şıkkı 'Cumhurbaşkanı yönetmeliğiyle' biçiminde kısaltılıp B 'İçişleri Bakanlığı yönetmeliğiyle' ile eşitlensin.",
+      "mevzuat (onayladı, çekince): md 90 (Ek fıkra:21/11/2024-7533/6 md.) birebir: 'Sandığın organları, ... denetim ve soruşturma, hesap yılı, bütçe, safi kârın dağılımı ve yapacağı hizmetlere ilişkin diğer usul ve esaslar Cumhurbaşkanı tarafından çıkarılan yönetmelik ile belirlenir.' A doğru; C şıkkı, Genel Kurulun md 90/2'deki sınırlı oran yetkisiyle karışmasın diye makul çeldirici. ŞÜPHE: q15'in açıklaması B şıkkını dolaylı olarak eliyor.",
+      "dil (onayladı, çekince): Tek dogru A. Kok, yonetmelige birakilan konulari metindeki sayimla ortusecek bicimde sinirladigindan md 86'daki Bakanlik yonetmeligiyle (q15) karismiyor; B celdiricisi tam da bu ayrimi olcuyor."
+    ]
+  },
+  {
+    "id": "3201-p4-31",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "kalite: REVIZYON — Doğru cevap md 91 ile birebir ve 'tercih edilir' (zorunluluk değil) vurgusu doğru. Ancak cevap 20'nin açıklamasında TAM olarak veriliyor: 'Askerliğin hangi sınıfta yapıldığı ... vasıtalı polis kısmına alınacaklar arasında tercih sebebini düzenleyen ayrı bir maddenin konusudur; orada da doğrudan atama değil TERCİH söz konusudur.' Ayrıca doğru şık en uzun grupta. | öneri: 20'nin açıklamasındaki bu cümle silinsin. Aksi hâlde 20 ile 31'den biri partiden çıkarılmalı.",
+      "mevzuat (onayladı, çekince): md 91 birebir: 'Vasıtalı polis kısmına alınacaklar arasında askerliğini vasıtalı sınıflarda ikmal etmiş olanlar tercih edilir.' D doğru. Açıklamadaki vasıtalı polis tanımı da doğrulandı (md 4/'Üniformalı polis; vasıtalı ve vasıtasız kısımlara ayrılır. Vasıtalı polis; atlı, ...'). Çeldiriciler kanunun başka kurumlarından (md 36 Polis Enstitüsü/sivil polislik) türetilmiş ve bu madde bakımından yanlış. ŞÜPHE: cevap q20'nin açıklamasından sızıyor (düzeltme q20 tarafında).",
+      "dil (onayladı, çekince): Tek dogru D, metinle birebir ('tercih edilir'). Not: cevap q20'nin aciklamasinda acikca veriliyor (bkz. q20); duzeltme q20 tarafinda yapilmali."
+    ]
+  },
+  {
+    "id": "3201-p4-32",
+    "karar": "RED",
+    "itirazlar": [
+      "kalite: RED — ÖLÇME DEĞERİ YOK — arkeoloji. Soru, 1937'de mülga kılınan 2049, 2050, 2352 ve 2531 sayılı kanunların hangisinin kısmen mülga olduğunu ezberletmeyi hedefliyor. Bu numaralar bugün hiçbir hukuki sonuç doğurmuyor, hiçbir polis adayının bilmesi gereken bir kural değil ve gerçek PAEM/EGM sorularında karşılığı yok (stil referansındaki 97 gerçek sorunun hiçbiri bu tipte değil). Revizyonla kurtarılamaz: hükmün kendisi ölçülebilir bir kural içermiyor. Ayrıca açıklamadaki '1452 sayılı Kanuna atıf' paragrafı 34'ün cevabını haber veriyor. | öneri: Çıkarılsın.",
+      "mevzuat (onayladı, çekince): md 94 birebir: '2049, 2050, 2352 sayılı kanunlar ve Polis Nizamnamesi ile 2531 sayılı kanunun emniyet ve polis teşkilatı hakkındaki hükümleri mülgadır.' Kısmi ilga yalnız 2531 bakımından — B doğru, diğer dört metin tümüyle mülga. Açıklamadaki 1452 atfı da doğrulandı (md 95).",
+      "dil (onayladı, çekince): Kokteki 'YALNIZCA ... hakkindaki hukumleri' kaydi ayrimi tek anlamli kuruyor; 2049/2050/2352 ve Nizamname tumuyle mulga oldugundan yalniz B dogru, cevapsizlik/iki dogru yok."
+    ]
+  },
+  {
+    "id": "3201-p4-33",
+    "karar": "REVIZYON",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Cevap doğru: md 95 'Emniyet teşkilatı kadroları bu kanuna bağlı (1) sayılı cetvelde gösterilmiştir' — A; kanunda (2) sayılı cetvel yok. KUSUR: açıklamanın 'o atıf kadronun kendisine değil, kadroda yazılı bir memuriyette daha küçük bir memur istihdam edilmesi hâlinde MAAŞIN hangi mevzuata göre verileceğine ilişkindir' cümlesi, hemen sonraki q34'ün doğru cevabını (E — '1452 sayılı Kanunun müsait olduğu derecede maaş verilir') tam olarak kuruyor; q34'te 1452'yi anan tek şık odur. | öneri: q33'ün açıklamasından 1452 atfına ilişkin iki cümle çıkarılsın (aynı bilgi q34'ün kendi açıklamasında zaten var), ya da iki soru farklı denemelere dağıtılsın.",
+      "kalite: REVIZYON — Hüküm md 95 ile birebir doğru ancak ölçme değeri sınırda: tek fakt ('(1) sayılı cetvel') ve şık seti (1)/(2) ikilisiyle neredeyse yarı yarıya tahmin edilebilir. Ayrıca cevabın anahtar ifadesi ('Kanuna bağlı cetvelde') hem 05'in hem 34'ün açıklamasında geçiyor. Bu sorunun kendi açıklaması da 34'ün doğru cevabını (1452 sayılı Kanunun müsait olduğu derece) tam olarak veriyor. | öneri: Açıklamadaki 1452 sayılı Kanun paragrafı silinsin; 05'in açıklamasındaki kadro cetveli cümlesi de çıkarılsın. Parti daraltılacaksa md 95 ilk elenecek başlıktır.",
+      "dil (onayladı, çekince): Tek dogru A. C sikki (1452 sayili Kanuna bagli cetvel) ayni maddedeki atfi kullanan makul celdirici; metin kadroyu degil maasi 1452'ye bagladigi icin ikinci dogru degil."
+    ]
+  },
+  {
+    "id": "3201-p4-34",
+    "karar": "RED",
+    "itirazlar": [
+      "kalite: RED — İki sebeple düzeltilemez. (1) ÖLÇME DEĞERİ: cevap, 1929 tarihli 1452 sayılı Barem Kanununa yapılan bir atıftır; bu Kanun bugün uygulanmıyor ve 'müsait olduğu derecede maaş' kuralının bir polis adayı için pratik karşılığı yok — 32 ile aynı arkeoloji kategorisi. (2) SIZINTI: doğru cevap İKİ ayrı soruda veriliyor — 33'ün açıklaması ('o atıf ... daha küçük bir memur istihdam edilmesi hâlinde MAAŞIN hangi mevzuata göre verileceğine ilişkindir' + 1452 numarası) ve 32'nin açıklaması ('kadroda yazılı memuriyette daha küçük bir memur istihdam edilmesi hâlinde maaşın hangi mevzuata göre verileceğidir'). 1452 geçen tek şık E olduğu için soru hiçbir bilgi gerektirmeden çözülüyor. | öneri: Çıkarılsın.",
+      "mevzuat (onayladı, çekince): md 95 birebir: 'İcabında bu kadroda yazılı memuriyetlerden birinde daha küçük bir memurun istihdamı caizdir. Bu suretle istihdam olunanlara 1452 sayılı kanunun müsait olduğu derecede maaş verilir.' E doğru; D şıkkı metnin açık tersi, B idari takdir metinde yok. ŞÜPHE: cevap q33'ün açıklamasından sızıyor (düzeltme q33 tarafında).",
+      "dil (onayladı, çekince): Vaka kisa ama hukmun tek sartini ('kadroda yazili memuriyette daha kucuk memur istihdami') veriyor, uygulamaya yeter. Tek dogru E; D sikki metnin 'caizdir' ifadesiyle acikca celisiyor."
+    ]
+  },
+  {
+    "id": "3201-p4-35",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 96 birebir: 'Emniyet Umum Müdürlüğü; merkez ve vilayetler teşkilatında maaş veya ücretle istihdam etmekte olduğu her hangi bir memur veya müstahdemi, ifası emniyet Umum Müdürlüğüne ait bir iş için orada emniyet teşkilatı ve münhal vazife bulunup bulunmamasile mukayyet olmaksızın, kadroda gösterilen tahsisatile dilediği yerde kullanabilir.' Metnin ARANMAYACAĞINI açıkça söylediği tek unsur C; A, B, D, E hükmün metninde yer alan unsurlardır. E'nin bir 'şart' değil ödemenin ölçüsü olduğu yönünde zayıf bir itiraz düşünülebilir, ancak metin yalnız C'yi sarih biçimde dışladığı için tek doğru cevap korunuyor.",
+      "kalite (onayladı, çekince): md 96 ile birebir; maddenin ağırlık merkezi olan olumsuz şartı ('emniyet teşkilatı ve münhal vazife bulunup bulunmamasıyla mukayyet olmaksızın') doğru yerden ölçüyor ve hüküm bugün de yürürlükte. Olumsuz kök ('aranmaz') açıkça vurgulanmış. Şüphe notu: E şıkkı ('kadroda gösterilen tahsisatının verilmesi') maddede bir ÖNKOŞUL değil, yetkinin kullanılış biçimidir; titiz bir aday E'yi de 'aranmaz' okuyabilir. E, açık bir şart olan bir unsurla (ör. 'işin ifasının Umum Müdürlüğe ait olması' zaten A'da var) değiştirilirse risk sıfırlanır.",
+      "dil (onayladı, çekince): Olumsuz kok ('aranmaz') maddenin 'bulunup bulunmamasiyla mukayyet olmaksizin' kaydiyla tek dogru cevap veriyor: C. B ve D ayni cumlenin iki ayri unsuru olsa da ikisi de aranan sart oldugundan cakisma yok. Zayif risk: E 'kadroda gosterilen tahsisatin verilmesi' bir on sart degil odemenin yapilis bicimidir; yine de metin bunu yetkinin kullanimina bagli olarak yazdigindan aranan unsur sayilir — C'nin acik olumsuz kaydi karsisinda ikinci dogru dogmaz. Istenirse kok 'hangisinin BULUNMASI aranmaz' seklinde netlestirilebilir."
+    ]
+  }
+]

@@ -1,0 +1,580 @@
+[
+  {
+    "id": "2911-p1-01",
+    "articleNo": "1",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'nun kapsamı ile ilgili aşağıdakilerden hangisi söylenemez?",
+    "siklar": {
+      "A": "Toplantı ve gösteri yürüyüşü düzenleme hakkının kullanılmasında uygulanacak şekil, şart ve usulleri düzenler.",
+      "B": "Düzenleme kurulunun görev ve sorumluluklarını düzenler.",
+      "C": "Yetkili merciin yasaklama ve erteleme hâllerini düzenler.",
+      "D": "Güvenlik kuvvetlerinin görev ve yetkileri ile yasaklarını düzenler.",
+      "E": "Siyasi partilerin kapalı yer toplantılarının usul ve şartlarını düzenler."
+    },
+    "dogru": "E",
+    "aciklama": "Kanunun 1 inci maddesi kapsamı sayarken toplantı ve gösteri yürüyüşü düzenleme hakkının kullanılmasında uygulanacak ŞEKİL, ŞART VE USULLER ile toplantı ve yürüyüşlerin YERİ VE ZAMANI, DÜZENLEME KURULUNUN GÖREV VE SORUMLULUKLARI, YETKİLİ MERCİİN YASAKLAMA VE ERTELEME HÂLLERİ, GÜVENLİK KUVVETLERİNİN GÖREV, YETKİ VE YASAKLARI ile CEZA HÜKÜMLERİNİ sayar. Buradaki tuzak, kapsam maddesi ile istisna maddesinin birbirine karıştırılmasıdır: siyasi partilerin özel kanunlarına ve kendi tüzüklerine göre yapacakları KAPALI YER toplantıları, 4 üncü maddenin (a) bendi uyarınca bu Kanun hükümlerine TABİ DEĞİLDİR; yani Kanun bu toplantıları düzenlemez, kapsam dışında bırakır.",
+    "dayanak": "2911 sayılı Kanun md 1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-02",
+    "articleNo": "2",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre \"mahallin en büyük mülki amiri\" deyimi ile kastedilen aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İllerde vali, ilçelerde kaymakam",
+      "B": "İllerde il emniyet müdürü, ilçelerde ilçe emniyet amiri",
+      "C": "İllerde vali yardımcısı, ilçelerde kaymakam",
+      "D": "İllerde bölge valisi, ilçelerde vali",
+      "E": "İllerde il jandarma komutanı, ilçelerde ilçe jandarma komutanı"
+    },
+    "dogru": "A",
+    "aciklama": "Kanunun 2 nci maddesinin (c) bendine göre mahallin en büyük mülki amiri İLLERDE VALİ, İLÇELERDE KAYMAKAMDIR. Sık karıştırılan komşu tanım aynı maddenin (d) bendindeki MAHALLİN GÜVENLİK AMİRLERİDİR; bunlar mülki idare amiri değil, Kanunda ayrıca sayılan KOLLUK makamlarıdır. Mülki amir ile güvenlik amiri Kanunda AYRI iki kavramdır: biri mülki idare, diğeri kolluk hiyerarşisini gösterir. Tuzak, toplantıya ilişkin kararları alan makam ile toplantıda güvenliği sağlayan makamı aynı saymaktır.",
+    "dayanak": "2911 sayılı Kanun md 2/c",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-03",
+    "articleNo": "2",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre \"mahallin güvenlik amirleri\" arasında aşağıdakilerden hangisi sayılmamıştır?",
+    "siklar": {
+      "A": "İl emniyet müdürü",
+      "B": "İl jandarma komutanı",
+      "C": "İlçe emniyet amiri veya komiseri",
+      "D": "Sahil Güvenlik Bölge Komutanı",
+      "E": "İl emniyet müdür yardımcısı"
+    },
+    "dogru": "E",
+    "aciklama": "2 nci maddenin (d) bendi mahallin güvenlik amirlerini sayarken İLLERDE il emniyet müdürü ve il jandarma komutanını, İLÇELERDE ilçe emniyet amiri veya komiseri ile ilçe jandarma komutanını, Sahil Güvenlik Komutanlığı bakımından ise Sahil Güvenlik Bölge Komutanı, Sahil Güvenlik Grup Komutanı, Sahil Güvenlik Karakol Komutanı ve Sahil Güvenlik Gemi/Bot Komutanını saymıştır. Sayım SINIRLIDIR; il emniyet müdür YARDIMCISI bu listede yer almaz. Tuzak, kolluk teşkilatındaki her üst rütbeli amirin bu tanıma girdiğini sanmaktır; oysa Kanun makamları tek tek saymıştır.",
+    "dayanak": "2911 sayılı Kanun md 2/d",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-04",
+    "articleNo": "2",
+    "kok": "Bir ile bağlı ilçenin, o ilin belediye sınırları içinde kalan kısmında toplantı yapılmak istenmektedir. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'nun uygulanması yönünden bu yerin en büyük mülki amiri aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İlçe kaymakamı",
+      "B": "İlin valisi",
+      "C": "Bölge valisi",
+      "D": "Belediye başkanı",
+      "E": "İl emniyet müdürü"
+    },
+    "dogru": "B",
+    "aciklama": "2 nci maddenin son fıkrasına göre bir ile bağlı ilçelerin, o ilin BELEDİYE SINIRLARI İÇİNDEKİ kısımlarına ilişkin olarak bu Kanunun uygulanması yönünden mahallin en büyük mülki amiri İLİN VALİSİDİR. Buradaki tuzak, aynı maddede yer alan GENEL TANIMI ezberleyip bu ÖZEL İSTİSNAYI atlamaktır; il belediye sınırları içinde kalan ilçe kısımlarında yetki ilçe makamından il makamına kayar. Bu ayrım özellikle büyükşehirlerde bildirimin hangi makama verileceği ve erteleme/yasaklama yetkisinin kimde olduğu bakımından sonuç doğurur.",
+    "dayanak": "2911 sayılı Kanun md 2 son fıkra",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2911-p1-05",
+    "articleNo": "2",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'ndaki \"toplantı\" tanımı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Halkı aydınlatmak amacıyla yalnızca açık yerlerde düzenlenen toplanmaları ifade eder.",
+      "B": "Halkı aydınlatmak amacıyla yalnızca kapalı yerlerde düzenlenen toplanmaları ifade eder.",
+      "C": "Halkı aydınlatmak ve kamuoyu yaratmak amacıyla düzenlenen açık ve kapalı yer toplantılarıdır.",
+      "D": "Yalnızca tüzel kişiler tarafından bu Kanun çerçevesinde düzenlenen toplanmaları ifade eder.",
+      "E": "Belirli bir amaç aranmaksızın kişilerin bir araya gelmesinin tümünü ifade eder."
+    },
+    "dogru": "C",
+    "aciklama": "2 nci maddenin (a) bendine göre toplantı; belirli konular üzerinde HALKI AYDINLATMAK ve BİR KAMUOYU YARATMAK suretiyle o konuyu benimsetmek için GERÇEK VE TÜZELKİŞİLER tarafından bu Kanun çerçevesinde düzenlenen AÇIK VE KAPALI YER toplantılarıdır. Tanımın belirleyici unsuru AMAÇTIR; toplantının açık ya da kapalı yerde yapılması tanımı daraltmaz. Tuzak, tanımı tek bir yer türüne ya da yalnız tüzel kişilere bağlamaktır; gerçek kişiler de toplantı düzenleyebilir. (b) bendindeki gösteri yürüyüşü tanımı da aynı amaç unsurunu taşır, farkı yürüyüş biçiminde gerçekleşmesidir.",
+    "dayanak": "2911 sayılı Kanun md 2/a",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-06",
+    "articleNo": "3",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantı ve gösteri yürüyüşü düzenleme hakkı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Herkes bu hakka sahiptir.",
+      "B": "Hakkın kullanılması önceden izin alınması şartına bağlıdır.",
+      "C": "Toplantı ve yürüyüşün silahsız olması gerekir.",
+      "D": "Toplantı ve yürüyüşün saldırısız olması gerekir.",
+      "E": "Amacın kanunların suç saymadığı belirli bir amaç olması gerekir."
+    },
+    "dogru": "B",
+    "aciklama": "3 üncü maddenin birinci fıkrasına göre herkes, ÖNCEDEN İZİN ALMAKSIZIN, bu Kanun hükümlerine göre SİLAHSIZ VE SALDIRISIZ olarak KANUNLARIN SUÇ SAYMADIĞI belirli amaçlarla toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir. Klasik tuzak, 10 uncu maddedeki BİLDİRİM zorunluluğunu bir İZİN şartı sanmaktır; bildirim idareyi haberdar eden bir usul işlemidir, idarenin onayına bağlı bir izin değildir. Maddenin ikinci fıkrasında ise yabancılar bakımından ayrı bir rejim öngörülmüştür.",
+    "dayanak": "2911 sayılı Kanun md 3/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-07",
+    "articleNo": "3",
+    "kok": "Türkiye'de bulunan bir grup yabancı, hem kendileri bir gösteri yürüyüşü düzenlemek hem de aynı hafta Türk vatandaşlarınca düzenlenen bir toplantıda pankart taşıyıp topluluğa hitap etmek istemektedir. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bu iki talep bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yürüyüşü düzenlemeleri İçişleri Bakanlığının iznine, toplantıda topluluğa hitap etmeleri mülki idare amirliğine bildirimde bulunmaya bağlıdır.",
+      "B": "Yürüyüşü düzenlemeleri mülki idare amirliğine bildirimde bulunmaya, toplantıda topluluğa hitap etmeleri İçişleri Bakanlığının iznine bağlıdır.",
+      "C": "Her iki talep de İçişleri Bakanlığından önceden izin alınmasına bağlıdır; ayrıca bildirim aranmaz.",
+      "D": "Her iki talep de mahallin en büyük mülki idare amirliğine bildirimde bulunulmasına bağlıdır; izin aranmaz.",
+      "E": "Yürüyüşü düzenlemeleri valiliğin iznine, toplantıda topluluğa hitap etmeleri Dışişleri Bakanlığının iznine bağlıdır."
+    },
+    "dogru": "A",
+    "aciklama": "3 üncü maddenin ikinci fıkrası yabancılar bakımından İKİ AYRI REJİM kurar. Yabancıların bu Kanun hükümlerine göre toplantı ve gösteri yürüyüşü DÜZENLEMELERİ İÇİŞLERİ BAKANLIĞININ İZNİNE bağlıdır. Buna karşılık yabancıların, bu Kanuna göre düzenlenen toplantı ve yürüyüşlerde TOPLULUĞA HİTAP ETMELERİ ile afiş, pankart, resim, flama, levha, araç ve gereç TAŞIMALARI izne değil, toplantının yapılacağı mahallin en büyük MÜLKÎ İDARE AMİRLİĞİNE yapılacak BİLDİRİME bağlıdır. Sınavda ölçülen nokta bu iki rejimin YER DEĞİŞTİRİLMESİDİR: izin DÜZENLEMEYE, bildirim ise KATILIP KONUŞMAYA ve materyal taşımaya ilişkindir. Yabancıların bu hakkı büsbütün yasaklanmış değildir; makam bakımından da Dışişleri Bakanlığı ya da valilik yetkili değildir.",
+    "dayanak": "2911 sayılı Kanun md 3/2",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2911-p1-08",
+    "articleNo": "4",
+    "kok": "Bir sendika, kendi tüzüğüne göre üyelerine yönelik bir toplantıyı kapalı bir salonda yapmakta; aynı hafta içinde ise üyelik çağrısı yapmak üzere bir şehir meydanında açık yer toplantısı düzenlemektedir. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu bakımından bu iki toplantının durumu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Her iki toplantı da Kanun hükümlerine tabidir.",
+      "B": "Kapalı salondaki toplantı Kanun hükümlerine tabi değildir; meydandaki toplantı Kanuna tabidir.",
+      "C": "Kapalı salondaki toplantı Kanun hükümlerine tabidir; meydandaki toplantı Kanuna tabi değildir.",
+      "D": "Sendika tüzel kişi olduğundan her iki toplantı da Kanun hükümlerine tabi değildir.",
+      "E": "Meydandaki toplantı sendikanın tüzüğüne dayandığı sürece Kanun hükümlerine tabi olmaz."
+    },
+    "dogru": "B",
+    "aciklama": "İstisnanın ölçütü kuruluşun KİMLİĞİ değil, toplantının YAPILDIĞI YERDİR. 4 üncü maddenin (a) bendi sendikalar da dâhil olmak üzere tüzel kişilerin yalnızca KAPALI YER toplantılarını Kanun hükümlerinin dışında bırakmıştır; aynı tüzel kişinin AÇIK YERDE yapacağı toplantı istisnanın dışında kalır ve 2911 sayılı Kanuna tabidir. Sınavda en sık yapılan hata, \"sendika toplantısı her hâlde kapsam dışıdır\" diyerek istisnayı kuruluşa bağlamaktır. Aynı hata ters yönde de yapılır: kapalı salondaki toplantı için bildirim ve düzenleme kurulu usulünün işletileceği sanılır; oysa kapsam dışı toplantıda bu usul uygulanmaz.",
+    "dayanak": "2911 sayılı Kanun md 4/a",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2911-p1-10",
+    "articleNo": "4",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre kanun veya gelenek ve göreneklere göre yapılacak toplantı, tören, şenlik, karşılama ve uğurlamaların Kanun hükümlerine tabi olmaması hangi şarta bağlanmıştır?",
+    "siklar": {
+      "A": "Kapalı yer toplantısı niteliğinde olmaları",
+      "B": "Kanunlara uymak ve kendi kural ve sınırları içinde kalmak",
+      "C": "Mahallin en büyük mülki amirine önceden bildirimde bulunulması",
+      "D": "Katılımcı sayısının yönetmelikte gösterilen sınırı aşmaması",
+      "E": "Güneş doğduktan sonra başlayıp aynı gün sona ermeleri"
+    },
+    "dogru": "B",
+    "aciklama": "4 üncü maddenin (b) bendine göre kanun veya gelenek ve göreneklere göre yapılacak toplantı, tören, şenlik, karşılama ve uğurlamalar; KANUNLARA UYMAK ve KENDİ KURAL VE SINIRLARI İÇİNDE KALMAK şartıyla bu Kanuna tabi değildir. İstisna mutlak değil ŞARTLIDIR: kendi kural ve sınırlarının dışına taşan bir tören artık bu bendin koruması altında sayılmaz. Bendin (a) bendinden farkı, burada kapalı yer şartının aranmamasıdır; bu iki bendin şartlarının birbirine karıştırılması tipik hatadır. Bildirim usulü (md 10) ve toplantı zamanına ilişkin 7 nci madde kuralı ise zaten Kanuna TABİ toplantılar için geçerlidir.",
+    "dayanak": "2911 sayılı Kanun md 4/b",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-11",
+    "articleNo": "4",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre, aşağıdakilerden hangisinin Devlet işleri hakkındaki toplantı ve konuşmaları bu Kanun hükümlerine tabi değildir?",
+    "siklar": {
+      "A": "Büyükşehir belediye başkanları",
+      "B": "Valiler",
+      "C": "Cumhurbaşkanı yardımcıları",
+      "D": "Siyasi parti genel başkanları",
+      "E": "Kamu kurumu niteliğindeki meslek kuruluşlarının başkanları"
+    },
+    "dogru": "C",
+    "aciklama": "4 üncü maddenin (d) bendi sınırlı bir sayım yapar ve CUMHURBAŞKANI, CUMHURBAŞKANI YARDIMCILARI VE BAKANLARIN Devlet işleri hakkındaki toplantı ve konuşmalarını Kanun hükümlerinin dışında bırakır. Bendin özgün metnindeki \"Başbakan\" ibaresi 2/7/2018 tarihli ve 700 sayılı KHK ile \"Cumhurbaşkanı yardımcıları\" olarak değiştirilmiş, \"ve Hükümet\" ibaresi metinden çıkarılmıştır; eski metni ezberleyenlerin hata yaptığı yer burasıdır. Sayım sınırlı olduğundan vali, belediye başkanı, siyasi parti genel başkanı veya meslek kuruluşu başkanı bu bende dâhil değildir. Siyasi partiler bakımından istisna (a) bendindedir ve yalnız KAPALI YER toplantılarını kapsar.",
+    "dayanak": "2911 sayılı Kanun md 4/d",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-12",
+    "articleNo": "4",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre Türkiye Büyük Millet Meclisi üyelerinin halk ile yapacakları görüşmelerin bu Kanuna tabi olmaması için görüşmelerin niteliği ne olmalıdır?",
+    "siklar": {
+      "A": "Denetim niteliğinde olmalıdır",
+      "B": "Sohbet niteliğinde olmalıdır",
+      "C": "Propaganda niteliğinde olmalıdır",
+      "D": "Bilimsel nitelikte olmalıdır",
+      "E": "Kapalı yerde ve basına kapalı olmalıdır"
+    },
+    "dogru": "B",
+    "aciklama": "4 üncü maddenin (d) bendi TBMM üyeleri bakımından istisnayı, halk ile yapacakları SOHBET NİTELİĞİNDEKİ görüşmelerle sınırlamıştır. Nitelik ölçütü kritiktir: milletvekilinin katıldığı her toplanma kapsam dışı değildir, yalnız sohbet niteliğindeki görüşmeler istisnadır. Aynı bentte sayılan yürütme makamları bakımından ölçüt farklıdır; onlarda toplantı ve konuşmaların DEVLET İŞLERİ HAKKINDA olması aranır. Tuzak, iki ayrı ölçütü birbirinin yerine kullanmaktır.",
+    "dayanak": "2911 sayılı Kanun md 4/d",
+    "zorluk": "easy",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-13",
+    "articleNo": "5",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre seçim zamanlarında yapılacak propaganda toplantıları bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu toplantılar 4 üncü maddede sayılan istisnalar arasında yer almıştır.",
+      "B": "Bu toplantılarla ilgili kanun hükümleri saklı tutulmuştur.",
+      "C": "Bu toplantılar İçişleri Bakanlığının iznine bağlı tutulmuştur.",
+      "D": "Bu toplantılar için bildirim süresi yirmidört saat olarak belirlenmiştir.",
+      "E": "Bu toplantılar bakımından düzenleme kurulunun üye sayısı beş kişiye indirilmiştir."
+    },
+    "dogru": "B",
+    "aciklama": "5 inci madde tek cümleliktir: SEÇİM ZAMANLARINDA yapılacak PROPAGANDA TOPLANTILARI ile ilgili KANUN HÜKÜMLERİ SAKLIDIR. Bu bir SAKLI TUTMA kuralıdır; anılan toplantılar hakkında kendi özel kanunundaki hükümler uygulanır. Birinci tuzak, bu maddeyi 4 üncü maddedeki istisna sayımıyla karıştırmaktır; propaganda toplantıları o maddede sayılan istisnalar arasında yer almaz, ayrı bir maddede ve ayrı bir teknikle düzenlenmiştir. İkinci tuzak, maddeye metninde bulunmayan izin, süre ya da kurul yapısı kuralları eklemektir; 5 inci maddede bunların hiçbiri yer almaz.",
+    "dayanak": "2911 sayılı Kanun md 5",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-14",
+    "articleNo": "6",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre il ve ilçelerde toplantı ve gösteri yürüyüşü yer ve güzergâhı belirlenirken aşağıdakilerden hangisinin görüşü alınmaz?",
+    "siklar": {
+      "A": "Türkiye Büyük Millet Meclisinde grubu bulunan siyasi partilerin il ve ilçe temsilcileri",
+      "B": "Güzergâhın geçeceği ilçe ve il belediye başkanları",
+      "C": "En çok üyeye sahip üç sendikanın il ve ilçe temsilcileri",
+      "D": "Kamu kurumu niteliğindeki meslek kuruluşlarının il ve ilçe temsilcileri",
+      "E": "İl ve ilçe emniyet müdürlüklerinin temsilcileri"
+    },
+    "dogru": "E",
+    "aciklama": "6 ncı maddenin ikinci fıkrasına göre yer ve güzergâh; TBMM'de GRUBU BULUNAN siyasi partilerin il ve ilçe temsilcileri, güzergâhın geçeceği ilçe ve il BELEDİYE BAŞKANLARI, EN ÇOK ÜYEYE SAHİP ÜÇ SENDİKANIN ve KAMU KURUMU NİTELİĞİNDEKİ MESLEK KURULUŞLARININ il ve ilçe temsilcilerinin GÖRÜŞLERİ ALINARAK MAHALLİN EN BÜYÜK MÜLKİ AMİRİ tarafından belirlenir. Sayım sınırlı olup kolluk birimlerinin temsilcileri bu listede yer almaz. İki tuzağa dikkat: siyasi partiler bakımından ölçüt Mecliste GRUBU BULUNMAKTIR, her siyasi parti değil; sendikalar bakımından ise ölçüt EN ÇOK ÜYEYE SAHİP ÜÇ sendikadır, bütün sendikalar değil. Görüş alınması bir usul şartıdır; nihai belirleme yetkisi mülki amirdedir.",
+    "dayanak": "2911 sayılı Kanun md 6/2",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-15",
+    "articleNo": "6",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre belirlenen toplantı ve gösteri yürüyüşü yer ve güzergâhı hakkında sonradan yapılan değişiklikler, duyurudan kaç gün sonra geçerli olur?",
+    "siklar": {
+      "A": "Yedi",
+      "B": "On",
+      "C": "On beş",
+      "D": "Yirmi",
+      "E": "Otuz"
+    },
+    "dogru": "C",
+    "aciklama": "6 ncı maddeye göre belirlenen yer ve güzergâh ilan edilerek halka duyurulur; sonradan yapılacak değişiklikler de AYNI YÖNTEMLE yapılır ve bu değişiklikler DUYURUDAN ON BEŞ GÜN SONRA geçerli olur. Süre, halkın ve düzenleyicilerin yeni güzergâha uyum sağlaması için tanınmıştır. Tuzak, bu süreyi Kanunun BAŞKA maddelerinde yer alan erteleme ve geri bırakma süreleriyle karıştırmaktır; bunlar ayrı kurumlardır ve süreleri de farklıdır. Değişikliğin duyurulması ile yürürlüğe girmesi arasındaki bu on beş günlük ara, güzergâhın ilk kez belirlenmesinde aranmaz.",
+    "dayanak": "2911 sayılı Kanun md 6",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-16",
+    "articleNo": "6",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bir il veya ilçede birden fazla toplantı ve gösteri yürüyüşü yer ve güzergâhı belirlenmişse, bunlardan birini tercih etme yetkisi kime aittir?",
+    "siklar": {
+      "A": "Mahallin en büyük mülki amirine",
+      "B": "Düzenleme kuruluna",
+      "C": "Belediye başkanına",
+      "D": "Mahallin güvenlik amirine",
+      "E": "İçişleri Bakanlığına"
+    },
+    "dogru": "B",
+    "aciklama": "6 ncı maddenin son fıkrasına göre birden fazla yer ve güzergâhın belirlendiği il ve ilçelerde DÜZENLEME KURULU, kamu düzenini ve genel asayişi bozmayacak şekilde belirlenen yer ve güzergâhlardan BİRİSİNİ TERCİH EDEBİLİR. Buradaki yetki dağılımı iki aşamalıdır ve sınavda tam da bu noktada tuzak kurulur: güzergâhları BELİRLEME yetkisi ilgili temsilcilerin görüşü alınarak MAHALLİN EN BÜYÜK MÜLKİ AMİRİNE, önceden belirlenmiş bu güzergâhlar arasından SEÇİM YAPMA yetkisi ise DÜZENLEME KURULUNA aittir. Ayrıca aynı maddede il ve ilçenin büyüklüğü, gelişmişliği ve yerleşim özellikleri dikkate alınarak birden fazla yer ve güzergâh belirlenebileceği öngörülmüştür.",
+    "dayanak": "2911 sayılı Kanun md 6 son fıkra",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-17",
+    "articleNo": "6",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre belirlenen toplantı ve gösteri yürüyüşü yer ve güzergâhının halka duyurulmasında aşağıdakilerden hangisi kullanılmaz?",
+    "siklar": {
+      "A": "Yerel gazeteler",
+      "B": "İnternet haber siteleri",
+      "C": "Valilik internet siteleri",
+      "D": "Kaymakamlık internet siteleri",
+      "E": "Resmî Gazete"
+    },
+    "dogru": "E",
+    "aciklama": "6 ncı maddenin üçüncü fıkrası duyuru mecralarını sayar: YEREL GAZETELER ve İNTERNET HABER SİTELERİ ile VALİLİK VE KAYMAKAMLIK İNTERNET SİTELERİ. Sayım sınırlı olup Resmî Gazete bu mecralar arasında yer almaz; duyuru merkezî değil YEREL nitelikte bir bilgilendirmedir. \"İnternet haber siteleri\" ibaresi fıkraya 7418 sayılı Kanunla eklenmiştir, dolayısıyla eski metni esas alan kaynaklar bu şıkkı eksik gösterir. Karıştırılan komşu hüküm 19 uncu maddedir: orada bütün toplantıların yasaklanması hâlinde kararın ÖZETİ, yasaklamanın uygulanacağı yerlerde MUTAT VASITALARLA ilan edilir.",
+    "dayanak": "2911 sayılı Kanun md 6/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-18",
+    "articleNo": "7",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantı ve yürüyüşlere ve bu amaçla toplanmalara başlanma zamanı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Güneş doğmadan başlanamaz.",
+      "B": "Saat 07.00'den önce başlanamaz.",
+      "C": "Çalışma saatleri başlamadan önce başlanamaz.",
+      "D": "Saat 09.00'dan önce başlanamaz.",
+      "E": "Güneş battıktan sonra başlanamaz."
+    },
+    "dogru": "A",
+    "aciklama": "7 nci maddenin birinci fıkrasına göre toplantı ve yürüyüşlere ve bu amaçla toplanmalara GÜNEŞ DOĞMADAN BAŞLANAMAZ. Kural saatle değil, DOĞAL BİR OLGUYLA belirlenmiştir; bu yüzden 07.00 ya da 09.00 gibi sabit saat içeren seçenekler makul görünse de yanlıştır. Yasak yalnız toplantı ve yürüyüşün kendisini değil, BU AMAÇLA TOPLANMALARI da kapsar; hazırlık amaçlı bir araya gelmeler de güneş doğmadan başlayamaz. Madde başlangıç anını düzenler; toplantının sona ereceği saate ilişkin bir kural bu maddede yer almaz.",
+    "dayanak": "2911 sayılı Kanun md 7/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-19",
+    "articleNo": "8",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantının yapıldığı yerin hukuki niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Toplantının yapıldığı yer, toplantı süresince umuma açık yer sayılır.",
+      "B": "Toplantının yapıldığı yer, toplantı süresince umuma kapalı yer sayılır.",
+      "C": "Toplantının yapıldığı yer, yalnızca açık yer toplantılarında umuma açık yer sayılır.",
+      "D": "Toplantının yapıldığı yer, düzenleme kurulunun kararına göre umuma açık sayılır.",
+      "E": "Toplantının yapıldığı yer, toplantıdan yirmidört saat öncesinden itibaren umuma açık yer sayılır."
+    },
+    "dogru": "A",
+    "aciklama": "8 inci madde tek cümledir: TOPLANTININ YAPILDIĞI YER, TOPLANTI SÜRESİNCE UMUMA AÇIK YER SAYILIR. Kural, toplantı kapalı yerde yapılsa dahi geçerlidir; ayrım açık/kapalı yer üzerinden değil, TOPLANTININ SÜRESİ üzerinden kurulmuştur. Nitelik kendiliğinden doğar, bir makamın ya da düzenleme kurulunun kararına bağlı değildir. Hükmün önemi, umuma açık yer sayılmanın kolluğun görev ve yetkileri ile bazı suçların işlenebileceği yer bakımından sonuç doğurmasıdır. Tuzak, süreyi toplantı öncesine yaymak veya niteliği kapalı yer toplantılarında ortadan kaldırmaktır.",
+    "dayanak": "2911 sayılı Kanun md 8",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-20",
+    "articleNo": "9",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bu Kanuna göre yapılacak toplantılar en az kaç kişiden oluşan bir düzenleme kurulu tarafından düzenlenir?",
+    "siklar": {
+      "A": "Üç",
+      "B": "Beş",
+      "C": "Yedi",
+      "D": "Dokuz",
+      "E": "On bir"
+    },
+    "dogru": "C",
+    "aciklama": "9 uncu maddenin birinci fıkrasına göre bu Kanuna göre yapılacak toplantılar; FİİL EHLİYETİNE SAHİP ve ONSEKİZ YAŞINI DOLDURMUŞ, EN AZ YEDİ KİŞİDEN oluşan bir DÜZENLEME KURULU tarafından düzenlenir. Sayı bir tavan değil TABANDIR; kurul yediden fazla üyeden de oluşabilir. Tuzak, kurulun KURULUŞUNA ilişkin bu sayıyı, Kanunun başka maddelerinde yer alan yükümlülüklerle karıştırmaktır. Bu fıkra 26/3/2002 tarihli ve 4748 sayılı Kanunla değiştirilmiştir; ayrıca yaş şartı ile fiil ehliyeti şartı BİRLİKTE aranır.",
+    "dayanak": "2911 sayılı Kanun md 9/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-21",
+    "articleNo": "9",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulu ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Kurul üyelerinin fiil ehliyetine sahip olması gerekir.",
+      "B": "Kurul üyelerinin onsekiz yaşını doldurmuş olması gerekir.",
+      "C": "Kurul, başkanını kendi üyeleri arasından seçer.",
+      "D": "Kurulun başkanı mahallin en büyük mülki amiri tarafından belirlenir.",
+      "E": "Diplomatik dokunulmazlıkları bulunan kişiler kurul başkanı veya üyesi olamaz."
+    },
+    "dogru": "D",
+    "aciklama": "9 uncu maddeye göre düzenleme kurulu KENDİ ARALARINDAN BİRİNİ BAŞKAN SEÇER; başkanın belirlenmesinde hiçbir idari makamın yetkisi yoktur. Buradaki tuzak, mülki amirin Kanundaki yetkileriyle kurulun iç işleyişini karıştırmaktır: mülki amirin yetkisi yer ve güzergâhın belirlenmesi (md 6) ile erteleme ve yasaklama (md 17, 19) gibi konulardadır, kurulun başkanını seçmek değildir. Maddenin diğer kuralları şunlardır: üyeler fiil ehliyetine sahip ve onsekiz yaşını doldurmuş olmalıdır; DİPLOMATİK DOKUNULMAZLIKLARI BULUNANLAR kurul başkanı veya üyesi olamaz.",
+    "dayanak": "2911 sayılı Kanun md 9",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-23",
+    "articleNo": "9",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre tüzel kişilerin toplantı ve gösteri yürüyüşü düzenlemeleri neye bağlıdır?",
+    "siklar": {
+      "A": "Yetkili organlarının kararına",
+      "B": "Genel kurullarının oybirliğiyle alacağı karara",
+      "C": "Mahallin en büyük mülki amirinin iznine",
+      "D": "İçişleri Bakanlığının iznine",
+      "E": "Üyelerinin salt çoğunluğunun yazılı muvafakatine"
+    },
+    "dogru": "A",
+    "aciklama": "9 uncu maddenin ikinci fıkrasına göre tüzel kişilerin toplantı ve gösteri yürüyüşü düzenlemeleri YETKİLİ ORGANLARININ KARARINA bağlıdır. Kanun hangi organın yetkili olduğunu kendisi belirlemez; bu, tüzel kişinin kendi mevzuatına ve tüzüğüne göre saptanır. Dolayısıyla \"genel kurul\" ya da \"oybirliği\" gibi ölçütler metne eklenmiş şartlardır. İzin ölçütünü içeren şıklar da başka hükümlerin kapsamına aittir: 3 üncü maddede İÇİŞLERİ BAKANLIĞI İZNİ yalnız YABANCILARIN düzenlemeleri için aranır ve toplantı hakkının kullanılması genel olarak ÖNCEDEN İZİN ALMAKSIZIN mümkündür.",
+    "dayanak": "2911 sayılı Kanun md 9/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-24",
+    "articleNo": "10",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantı için verilecek bildirim ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Bildirimde toplantının amacı ile başlayış ve bitiş saatleri belirtilir.",
+      "B": "Bildirim, toplantının yapılacağı yerin bağlı bulunduğu valilik veya kaymakamlığa verilir.",
+      "C": "Bildirim, çalışma saatleri içinde verilir.",
+      "D": "Bildirime yönetmelikte gösterilecek belgeler eklenir.",
+      "E": "Bildirimin düzenleme kurulu başkanı tarafından imzalanması yeterlidir."
+    },
+    "dogru": "E",
+    "aciklama": "10 uncu maddenin birinci fıkrasına göre bildirimi DÜZENLEME KURULU ÜYELERİNİN TAMAMI imzalar; başkanın tek başına imzası YETERLİ DEĞİLDİR. Aynı madde bildirimin toplantının yapılacağı yerin bağlı bulunduğu VALİLİK VEYA KAYMAKAMLIĞA ve ÇALIŞMA SAATLERİ İÇİNDE verileceğini, ikinci fıkrası ise bildirimde toplantının AMACI ile YER, GÜN, BAŞLAYIŞ VE BİTİŞ SAATLERİNİN ve düzenleme kurulu üyelerinin açık kimliklerinin belirtileceğini, bildirime YÖNETMELİKTE GÖSTERİLECEK BELGELERİN ekleneceğini söyler. Tuzak, kurulun bir organ olarak aldığı kararlar ile bildirimin İMZA şartını aynı saymaktır; Kanun imza bakımından açıkça TAMAMI ölçütünü koymuştur.",
+    "dayanak": "2911 sayılı Kanun md 10/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-25",
+    "articleNo": "10",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bildirimin valilik veya kaymakamlıkça kabul edilmemesi ya da karşılığında alındı belgesi verilmemesi hâlinde ne yapılır?",
+    "siklar": {
+      "A": "Durum bir tutanakla tespit edilir ve noter vasıtasıyla ihbar yapılır; ihbar saati bildirimin verilme saati sayılır.",
+      "B": "Durum bir tutanakla tespit edilir ve toplantı ayrıca bildirim verilmeksizin yapılabilir hâle gelir.",
+      "C": "Bildirim İçişleri Bakanlığına gönderilir; Bakanlığa ulaştığı saat bildirimin verilme saati sayılır.",
+      "D": "Durum bir tutanakla tespit edilir; tutanağın düzenlendiği saat bildirimin verilme saati sayılır.",
+      "E": "Bildirim taahhütlü posta ile gönderilir; postaya verildiği saat bildirimin verilme saati sayılır."
+    },
+    "dogru": "A",
+    "aciklama": "10 uncu maddeye göre bildirim valilik veya kaymakamlıkça KABUL EDİLMEZ ya da karşılığında ALINDI BELGESİ VERİLMEZSE keyfiyet BİR TUTANAKLA TESPİT EDİLİR; bu hâlde NOTER VASITASIYLA İHBAR yapılır ve İHBAR SAATİ BİLDİRİMİN VERİLME SAATİ SAYILIR. Hüküm, idarenin bildirimi almaktan kaçınarak kırksekiz saatlik süreyi işlemez kılmasını önler. Tuzak, başlangıç anını tutanağın düzenlendiği saate ya da postaya veriliş anına bağlamaktır; Kanun bu anı açıkça NOTER İHBARININ SAATİNE bağlamıştır. Ayrıca bildirimin kabul edilmemesi, bildirim yükümlülüğünü ortadan kaldırmaz; usul noter yoluyla tamamlanır.",
+    "dayanak": "2911 sayılı Kanun md 10/4",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2911-p1-26",
+    "articleNo": "10",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre aynı yerde, aynı gün toplantı yapmak üzere ayrı ayrı düzenleme kurullarınca bildirim verilmişse aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "Üye sayısı fazla olan düzenleme kurulunun bildirimi geçerlidir, diğerleri işleme konulmaz.",
+      "B": "Hangi bildirimin geçerli olacağına mahallin en büyük mülki amiri takdiren karar verir.",
+      "C": "Bütün bildirimler geçersiz sayılır ve o gün için toplantılar yasaklanmış olur.",
+      "D": "İlk verilen bildirim geçerlidir, diğerlerine durum hemen yazılı olarak bildirilir.",
+      "E": "Bildirimler arasında kura çekilir ve sonuç kurullara yazılı olarak bildirilir."
+    },
+    "dogru": "D",
+    "aciklama": "10 uncu maddenin son fıkrasına göre aynı yerde, aynı gün toplantı yapmak üzere ayrı ayrı düzenleme kurullarınca bildirim verilmişse İLK VERİLEN BİLDİRİM GEÇERLİDİR ve diğerlerine durum HEMEN YAZILI OLARAK BİLDİRİLİR. Ölçüt ZAMAN ÖNCELİĞİDİR; kurulun üye sayısı, temsil gücü ya da idarenin takdiri değildir. Bu yüzden bildirim karşılığında verilen belgedeki GÜN VE SAAT kaydı belirleyici hâle gelir. Tuzak, geçerlilik sorununu idarenin bir tercihi gibi görmektir; hüküm idareye takdir tanımaz, yalnız diğer kurullara durumun bildirilmesini emreder.",
+    "dayanak": "2911 sayılı Kanun md 10 son fıkra",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-27",
+    "articleNo": "10",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantı bildirimi karşılığında verilen alındı belgesinin hukuki niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Toplantının yapılmasına idarece izin verildiğini gösteren bir belgedir.",
+      "B": "Verilip verilmemesi idarenin takdirine bırakılmış bir belgedir.",
+      "C": "Verilmesi zorunlu olan ve bildirimin gün ve saatini tespit eden bir belgedir.",
+      "D": "Yalnızca gösteri yürüyüşü bildirimleri için düzenlenen bir belgedir.",
+      "E": "Düzenleme kurulunca hazırlanıp idareye onaylatılan bir belgedir."
+    },
+    "dogru": "C",
+    "aciklama": "10 uncu maddenin üçüncü fıkrasına göre bildirim karşılığında GÜN VE SAATİ GÖSTEREN ALINDI BELGESİ VERİLMESİ ZORUNLUDUR; bu bir takdir yetkisi değil BAĞLI YETKİDİR ve toplantı türü bakımından bir ayrım yapılmamıştır. Belgedeki gün ve saat kaydı tesadüfi değildir: bildirimin İDAREYE ULAŞTIĞI ANI kesin biçimde tespit ederek Kanunun süreye ve önceliğe bağladığı sonuçların hesaplanmasını sağlar. Asıl kavram tuzağı şudur: alındı belgesi bir İZİN BELGESİ DEĞİLDİR; 3 üncü maddeye göre hak zaten ÖNCEDEN İZİN ALMAKSIZIN kullanılır, bildirim yalnızca idareyi haberdar eder. Belge idarece verilir; kurulun hazırlayıp onaylattığı bir belge de değildir.",
+    "dayanak": "2911 sayılı Kanun md 10/3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-28",
+    "articleNo": "11",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulu, kendi üyelerinden en az kaç kişiyi toplantının yapıldığı yerde bulundurmakla yükümlüdür?",
+    "siklar": {
+      "A": "Başkan dahil en az beş kişiyi",
+      "B": "Başkan dahil en az yedi kişiyi",
+      "C": "Başkan hariç en az yedi kişiyi",
+      "D": "Başkan dahil en az dokuz kişiyi",
+      "E": "Başkan hariç en az beş kişiyi"
+    },
+    "dogru": "B",
+    "aciklama": "11 inci maddeye göre toplantı, 6 ncı madde hükümlerine uyulmak suretiyle BİLDİRİMDE BELİRTİLEN YERDE yapılır ve düzenleme kurulu, kendi üyelerinden BAŞKAN DAHİL EN AZ YEDİ KİŞİYİ toplantının yapıldığı yerde BULUNDURMAKLA YÜKÜMLÜDÜR. Kritik ayrıntı, yedi sayısına BAŞKANIN DA DAHİL olmasıdır; \"başkan hariç yedi\" seçeneği tipik tuzaktır ve kurulun fiilen sekiz üyeyle temsil edilmesi sonucunu doğurur. Karıştırılan komşu hüküm 9 uncu maddedir: orada YEDİ sayısı kurulun KURULUŞ şartıdır — toplantı, fiil ehliyetine sahip ve onsekiz yaşını doldurmuş EN AZ YEDİ KİŞİDEN oluşan bir düzenleme kurulunca düzenlenir ve kurul kendi aralarından birini başkan seçer. 11 inci maddedeki yedi ise kuruluş değil, toplantı sırasında YERDE HAZIR BULUNDURMA yükümlülüğüdür; aynı sayı iki farklı yükümlülüğe aittir.",
+    "dayanak": "2911 sayılı Kanun md 11/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-29",
+    "articleNo": "11",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulunun, üyelerini toplantı yerinde bulundurma yükümlülüğünü yerine getirdiğine dair tutanak hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Tutanak yetkili kolluk amiri tarafından hazırlanır ve düzenleme kuruluna teslim edilir.",
+      "B": "Tutanak noter tarafından düzenlenir.",
+      "C": "Tutanak mahallin en büyük mülki amiri tarafından hazırlanır.",
+      "D": "Tutanak düzenleme kurulu tarafından hazırlanarak yetkili kolluk amirine teslim edilir.",
+      "E": "Tutanak toplantı sona erdikten sonra valiliğe gönderilir."
+    },
+    "dogru": "D",
+    "aciklama": "11 inci maddenin 2/3/2014 tarihli ve 6529 sayılı Kanunla değiştirilen üçüncü cümlesine göre, kurulun üyelerini toplantı yerinde bulundurma yükümlülüğünün yerine getirildiğine dair tutulan tutanak DÜZENLEME KURULU TARAFINDAN HAZIRLANARAK YETKİLİ KOLLUK AMİRİNE TESLİM EDİLİR. Yön tek yönlüdür: hazırlayan KURUL, teslim alan KOLLUKTUR; şıklardaki tuzak bu yönün ters çevrilmesi ya da muhatabın mülki idare amiri yapılmasıdır. Tutanak bir izin ya da onay işlemi değil, kanuni bir yükümlülüğün yerine getirildiğinin BELGELENMESİDİR.",
+    "dayanak": "2911 sayılı Kanun md 11/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-30",
+    "articleNo": "11",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre toplantı ve gösteri yürüyüşlerinde katılımcıların ve konuşmacıların ses ve görüntülerinin kaydedilmesi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Kayıt kolluk tarafından yapılabilir.",
+      "B": "Kayıt, yapıldığı belli olacak şekilde gerçekleştirilir.",
+      "C": "Elde edilen kayıt ve görüntüler şüphelilerin tespiti amacıyla kullanılabilir.",
+      "D": "Elde edilen kayıt ve görüntüler suç delillerinin tespiti amacıyla kullanılabilir.",
+      "E": "Elde edilen kayıt ve görüntüler kamuoyunu bilgilendirmek amacıyla da kullanılabilir."
+    },
+    "dogru": "E",
+    "aciklama": "11 inci maddeye 6529 sayılı Kanunla eklenen fıkraya göre toplantı ve gösteri yürüyüşlerinde katılımcıların ve konuşmacıların ses ve görüntüleri KOLLUK TARAFINDAN, YAPILDIĞI BELLİ OLACAK ŞEKİLDE kaydedilebilir; elde edilen kayıt ve görüntüler ŞÜPHELİLERİN VE SUÇ DELİLLERİNİN TESPİTİ DIŞINDA BAŞKA BİR AMAÇLA KULLANILAMAZ. Kullanım amacı kanunla SINIRLANDIRILMIŞTIR; kamuoyunu bilgilendirme, arşivleme ya da idari değerlendirme gibi amaçlar bu sınırın dışındadır. İki güvence birlikte okunmalıdır: kaydın GİZLİ YAPILMAMASI ve verinin AMAÇ DIŞI KULLANILMAMASI. Tuzak, kaydı yapma yetkisinden hareketle kullanımın da serbest olduğu sonucuna varmaktır.",
+    "dayanak": "2911 sayılı Kanun md 11/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-31",
+    "articleNo": "12",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulunun sorumluluğu ne zamana kadar sürer?",
+    "siklar": {
+      "A": "Bildirimde gösterilen bitiş saatine kadar",
+      "B": "Kolluk kuvvetlerinin toplantı yerine gelmesine kadar",
+      "C": "Dağılma kararının alındığı ana kadar",
+      "D": "Topluluk toplantı yerinden tamamen dağılıncaya kadar",
+      "E": "Toplantı yerinin kolluk tarafından teslim alınmasına kadar"
+    },
+    "dogru": "D",
+    "aciklama": "12 nci maddenin son fıkrasına göre düzenleme kurulunun sorumluluğu, TOPLULUK TOPLANTI YERİNDEN TAMAMEN DAĞILINCAYA KADAR sürer. Ölçüt saat değil, FİİLÎ DURUMDUR: bildirimde yazılı bitiş saati gelmiş olsa bile topluluk dağılmadıkça sorumluluk devam eder. Aynı maddeye göre kurul, toplantının SÜKUN VE DÜZENİNİ ve BİLDİRİMDE YAZILI AMAÇ DIŞINA ÇIKILMAMASINI sağlamakla yükümlü ve sorumludur; gereken önlemleri alır ve gerektiğinde güvenlik kuvvetlerinin yardımını ister. Dağılma kararının alınmış olması da sorumluluğu sona erdirmez; karar sürecin başıdır, sorumluluk fiilî dağılmayla biter.",
+    "dayanak": "2911 sayılı Kanun md 12/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2911-p1-32",
+    "articleNo": "12",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulunun, toplantının amacı dışına çıktığını veya düzen içinde gerçekleşmesini imkânsız gördüğü takdirde dağılma kararı kim tarafından alınır ve durum kime bildirilir?",
+    "siklar": {
+      "A": "Kurul, toplanamadığı takdirde kurul başkanı karar alır; durum derhâl yetkili kolluk amirine bildirilir.",
+      "B": "Yalnızca kurul başkanı karar alır; durum derhâl mahallin en büyük mülki amirine bildirilir.",
+      "C": "Yetkili kolluk amiri karar alır; durum derhâl düzenleme kuruluna bildirilir.",
+      "D": "Mahallin en büyük mülki amiri karar alır; durum derhâl kurul başkanına bildirilir.",
+      "E": "Kurul oybirliğiyle karar alır; durum yirmidört saat içinde valiliğe bildirilir."
+    },
+    "dogru": "A",
+    "aciklama": "12 nci maddenin 6529 sayılı Kanunla değiştirilen üçüncü cümlesine göre toplantının amacı dışına çıktığı veya düzen içinde gerçekleşmesini imkânsız gördüğü takdirde KURUL, TOPLANAMADIĞI TAKDİRDE KURUL BAŞKANI dağılma kararı alır ve durumu DERHÂL YETKİLİ KOLLUK AMİRİNE bildirir. İki ayrıntı birlikte ölçülür: karar yetkisi önce KURULDADIR, başkanın tek başına karar alması ancak kurulun TOPLANAMAMASI hâlinde söz konusudur; bildirim muhatabı ise mülki idare amiri değil YETKİLİ KOLLUK AMİRİDİR ve bildirim DERHÂL yapılır, bir süreye bağlanmamıştır. Ayrıca kurul, düzeni sağlamak için gerektiğinde güvenlik kuvvetlerinin YARDIMINI İSTEYEBİLİR.",
+    "dayanak": "2911 sayılı Kanun md 12/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2911-p1-33",
+    "articleNo": "14",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulunun toplantıyı geri bırakması ile ilgili aşağıdaki bilgilerden hangileri doğrudur?\nI. Geri bırakma, toplantının yapılacağı saatten en az yirmidört saat önce bildirilmelidir.\nII. Geri bırakma kararı düzenleme kurulunun çoğunluğu tarafından alınır.\nIII. Toplantı, kırksekiz saati geçmemek üzere ve yalnız bir kez geri bırakılabilir.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "E",
+    "aciklama": "14 üncü maddeye göre toplantı; TOPLANTININ YAPILACAĞI SAATTEN EN AZ YİRMİDÖRT SAAT ÖNCE, DÜZENLEME KURULUNUN ÇOĞUNLUĞU tarafından, ilgili mülki idare makamına YAZI İLE bildirilmek şartıyla KIRKSEKİZ SAATİ GEÇMEMEK ÜZERE YALNIZ BİR KEZ geri bırakılabilir; dolayısıyla üç öncül de doğrudur. Maddede iki farklı süre bir arada bulunduğu için karışıklık doğar: YİRMİDÖRT SAAT bildirimin ne kadar önce yapılacağını, KIRKSEKİZ SAAT ise geri bırakmanın azami süresini gösterir. Geri bırakma DÜZENLEME KURULUNUN kendi işlemidir; idarenin erteleme yetkisi ise 15, 16, 17 ve 19 uncu maddelerde ayrıca düzenlenmiştir.",
+    "dayanak": "2911 sayılı Kanun md 14",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "2911-p1-34",
+    "articleNo": "14",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre düzenleme kurulunca toplantının geri bırakılması hangi makama bildirilir?",
+    "siklar": {
+      "A": "Bildirimin verildiği valilik veya kaymakamlığa",
+      "B": "İçişleri Bakanlığına",
+      "C": "Bölge valiliğine",
+      "D": "Yetkili kolluk amirine",
+      "E": "Toplantı yerinin bağlı olduğu belediye başkanlığına"
+    },
+    "dogru": "A",
+    "aciklama": "14 üncü maddeye göre geri bırakma, BİLDİRİMİN VERİLDİĞİ VALİLİK VEYA KAYMAKAMLIĞA YAZI İLE bildirilmek şartıyla geçerlidir. Muhatap, 10 uncu maddeye göre bildirimin verildiği MÜLKİ İDARE makamıdır; usul de sözlü değil YAZILIDIR. Buradaki tuzak, Kanunun kolluk makamlarına yapılan bildirimleriyle bu bildirimi karıştırmaktır; geri bırakma kurulun kendi bildirimini geri bırakması olduğu için muhatap da bildirimi alan makamdır. Bölge valiliği ve İçişleri Bakanlığı ise Kanunun 16 ncı maddesinde İDARENİN erteleme yetkisi bakımından devreye girer, kurulun geri bırakması bakımından değil.",
+    "dayanak": "2911 sayılı Kanun md 14",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2911-p1-35",
+    "articleNo": "15",
+    "kok": "Bir il sınırı içinde aynı günde birden çok toplantı yapılmak istenmesi hâlinde vali, emrindeki güvenlik kuvvetlerinin ve gerektiğinde yararlanabileceği diğer güçlerin bu toplantıların güvenlik içinde yapılmasını sağlamaya yeterli olmadığı kanısına varmıştır. 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre vali bu toplantılardan bir kısmını ne kadar süreyle erteleyebilir?",
+    "siklar": {
+      "A": "Yirmidört saati aşmamak üzere bir kez",
+      "B": "Kırksekiz saati aşmamak üzere bir kez",
+      "C": "On günü aşmamak üzere bir kez",
+      "D": "On beş günü aşmamak üzere bir kez",
+      "E": "Bir ayı aşmamak üzere bir kez"
+    },
+    "dogru": "C",
+    "aciklama": "15 inci maddeye göre bir il sınırı içinde aynı günde birden çok toplantı yapılmak istenmesi hâlinde VALİ, emrindeki güvenlik kuvvetlerinin ve gerektiğinde yararlanabileceği diğer güçlerin bu toplantıların güvenlik içinde yapılmasını sağlamaya YETERLİ OLMADIĞI kanısına varırsa, toplantılardan BİR KISMINI ON GÜNÜ AŞMAMAK ÜZERE BİR KEZ erteleyebilir. Süre 30/7/2003 tarihli ve 4963 sayılı Kanunla OTUZ GÜNDEN ON GÜNE indirilmiştir; eski metni ezberleyenler burada hata yapar. İkinci tuzak, valinin toplantıların TAMAMINI erteleyebileceğini sanmaktır; Kanun yalnız BİR KISMININ ertelenmesine izin verir. Kanunun başka maddelerinde yer alan erteleme ve geri bırakma süreleri bu süreyle karıştırılmamalıdır.",
+    "dayanak": "2911 sayılı Kanun md 15",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2911-p1-36",
+    "articleNo": "15",
+    "kok": "2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu'na göre bir il sınırı içinde aynı günde yapılmak istenen toplantılardan bir kısmının valice ertelenmesinde hangi ölçüt göz önünde bulundurulur?",
+    "siklar": {
+      "A": "Müracaat önceliği",
+      "B": "Düzenleme kurullarının üye sayısı",
+      "C": "Toplantıya katılacağı bildirilen kişi sayısı",
+      "D": "Toplantı yerlerinin merkeze uzaklığı",
+      "E": "Toplantı konusunun kamu yararına ilişkin olup olmadığı"
+    },
+    "dogru": "A",
+    "aciklama": "15 inci maddenin son cümlesine göre bu ertelemede MÜRACAAT ÖNCELİĞİ göz önünde bulundurulur. Ölçüt nesneldir ve idarenin toplantının konusuna, katılımcı sayısına ya da düzenleyicinin niteliğine göre tercih yapmasını engeller; belirleyici olan bildirimin ne zaman verildiğidir. Bu yüzden 10 uncu maddedeki GÜN VE SAATİ GÖSTEREN ALINDI BELGESİ burada da işlevseldir. Aynı öncelik ölçütü 16 ncı maddede bölge valiliği ve İçişleri Bakanlığınca yapılacak ertelemeler için de öngörülmüştür. Karıştırılmaması gereken nokta şudur: 10 uncu maddedeki öncelik AYNI YER VE AYNI GÜN için verilen bildirimlerden hangisinin GEÇERLİ olacağını, 15 inci maddedeki öncelik ise hangi toplantının ERTELENECEĞİNİ belirler.",
+    "dayanak": "2911 sayılı Kanun md 15",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

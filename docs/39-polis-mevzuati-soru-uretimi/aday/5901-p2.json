@@ -1,0 +1,716 @@
+[
+  {
+    "id": "5901-p2-02",
+    "articleNo": "25",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığından çıkmak için izin isteyenlerde aranan şartlarla ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Herhangi bir suç veya askerlik hizmeti nedeniyle aranan kişilerden olmamak",
+      "B": "Hakkında herhangi bir mali ve cezai tahdit bulunmamak",
+      "C": "Türkiye dışında kesintisiz olarak en az beş yıldır ikamet ediyor olmak",
+      "D": "Ergin ve ayırt etme gücüne sahip olmak",
+      "E": "Yabancı bir devlet vatandaşlığını kazanmış olmak veya kazanacağına ilişkin inandırıcı belirtiler bulunmak"
+    },
+    "dogru": "C",
+    "aciklama": "25 inci madde çıkma izni için DÖRT şart sayar: ergin ve ayırt etme gücüne sahip olmak; yabancı bir devlet vatandaşlığını kazanmış olmak veya kazanacağına ilişkin inandırıcı belirtiler bulunmak; herhangi bir suç veya askerlik hizmeti nedeniyle aranan kişilerden olmamak; hakkında herhangi bir mali ve cezai tahdit bulunmamak. Yurt dışında belli bir süre ikamet etmiş olmak ARANMAZ; çıkmada ikamet ölçütü hiç kullanılmamıştır. Tuzak, vatandaşlığı KAZANMA yolundaki ikamet şartının kayıp tarafına taşınmasıdır: ikamet süresi kazanma başvurusunun şartıdır, çıkmanın değil. Ayrıca maddede şartların varlığı hâlinde izin 'verilebilir' denildiğinden idarenin TAKDİR YETKİSİ vardır; şartları taşımak tek başına çıkma hakkı doğurmaz.",
+    "dayanak": "5901 sayılı Kanun md 25/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-03",
+    "articleNo": "25",
+    "kok": "Hakkında kasten yaralama suçundan yakalama kararı bulunan ve bu nedenle aranan bir Türk vatandaşı, yabancı bir devlet vatandaşlığını kazandığını belgeleyerek Türk vatandaşlığından çıkmak için başvurmuştur. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu başvuru bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İlgili Türkiye dışında ikamet ediyorsa başvuru şartsız olarak kabul edilir.",
+      "B": "Yabancı devlet vatandaşlığı kazanıldığından çıkma belgesi verilmesi zorunludur.",
+      "C": "Suç nedeniyle aranan kişilerden olmama şartı gerçekleşmedikçe izin verilemez.",
+      "D": "Başvuru kabul edilir, ancak belge kovuşturma sonuçlanıncaya kadar teslim edilmez.",
+      "E": "Başvurunun kabulü için mali tahdidin bulunmaması tek başına yeterli sayılır."
+    },
+    "dogru": "C",
+    "aciklama": "Çıkma iznini düzenleyen maddede sayılan şartlar BİRLİKTE aranır; bunlardan biri de herhangi bir suç veya askerlik hizmeti nedeniyle ARANAN KİŞİLERDEN OLMAMAKTIR. Vakadaki ayırt edici unsur, kişi hakkında yakalama kararı bulunması ve bu nedenle aranıyor olmasıdır; bu unsur tek başına şartın gerçekleşmesine engeldir. Sorunun tuzağı, yabancı devlet vatandaşlığının fiilen kazanılmış olmasının diğer şartları gereksiz kıldığı yanılgısıdır: yabancı vatandaşlığın kazanılması şartlardan yalnızca biridir ve tek başına izne hak kazandırmaz. Maddenin lafzı ayrıca izin verilmesini idarenin takdirine bırakmıştır; şartların tamamı bulunsa dahi izin 'verilebilir' denilmiştir, yani kişiye mutlak bir hak doğmaz. Mali ve cezai tahdit bulunmaması ise ayrı ve ek bir şart olup aranan kişi olmama şartının yerini tutmaz; bu ikisi sınavda birbirinin yerine geçirilerek sorulur.",
+    "dayanak": "5901 sayılı Kanun md 25/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-04",
+    "articleNo": "26",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığından çıkma izin belgesi ile çıkma belgesi hakkında aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Çıkma izin belgesi de çıkma belgesi de Bakanlıkça verilir.",
+      "B": "İzin belgesi, yabancı devlet vatandaşlığını kazanmak üzere çıkmak için izin isteyenlerden talebi uygun görülenlere verilir.",
+      "C": "Çıkma belgesi, verilen izin sonucunda yabancı devlet vatandaşlığını kazandığını belgeleyenlere verilir.",
+      "D": "Önceden yabancı bir devlet vatandaşlığını kazandığını belgeleyenlere de çıkma belgesi verilir.",
+      "E": "Çıkma izin belgesi, düzenlendiği anda Türk vatandaşlığını kendiliğinden sona erdirir."
+    },
+    "dogru": "E",
+    "aciklama": "Çıkma belgelerini düzenleyen maddenin birinci fıkrası iki belgeyi kişinin BULUNDUĞU AŞAMAYA göre ayırır: henüz yabancı vatandaşlığı kazanmamış olup kazanmak ÜZERE çıkma talebinde bulunan ve talebi uygun görülene ÇIKMA İZİN BELGESİ; verilen izin sonucunda ya da önceden yabancı devlet vatandaşlığını KAZANDIĞINI BELGELEYENE ise ÇIKMA BELGESİ verilir. Her iki belgeyi de BAKANLIK verir; ayrım makamda değil, kişinin durumundadır. Sorunun tuzağı iki belgenin hukuki gücünü eşitlemektir: izin belgesi yalnızca bir aşamayı tamamlar, kendiliğinden vatandaşlığı sona erdirmez. Vatandaşlığın hangi anda kaybedildiği ayrı bir maddede ayrıca düzenlenmiştir ve izin belgesinin düzenlenmesinden farklı bir olguya bağlanmıştır. İki belgenin adlarının birbirine çok benzemesi, aday açısından asıl karışıklık kaynağıdır.",
+    "dayanak": "5901 sayılı Kanun md 26/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-05",
+    "articleNo": "26",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığından çıkma izin belgesi, karar tarihinden itibaren ne kadar süreyle geçerlidir?",
+    "siklar": {
+      "A": "Bir ay",
+      "B": "Üç ay",
+      "C": "Bir yıl",
+      "D": "İki yıl",
+      "E": "Üç yıl"
+    },
+    "dogru": "D",
+    "aciklama": "Çıkma belgelerini düzenleyen maddenin ikinci fıkrasına göre çıkma izin belgesi KARAR TARİHİNDEN İTİBAREN İKİ YIL geçerlidir. Sürenin başlangıcı ayrı bir ayrıntıdır: belgenin ilgiliye tesliminden değil, KARAR TARİHİNDEN işlemeye başlar. Belgeyi alanlar bu süre içinde yabancı devlet vatandaşlığını kazandıklarına dair bilgi ve belgeleri Kanunda gösterilen makamlara vermek zorundadır; süre içinde yabancı devlet vatandaşlığı kazanılamazsa belgenin akıbeti de aynı fıkrada ayrıca düzenlenmiştir. Sorunun tuzağı, Kanunun kayıp bölümünde birbirine yakın uzunlukta birden çok sürenin bulunmasıdır; aday değeri hatırlar ama hangi kuruma ait olduğunu ayırt edemediğinde en bilinen değeri işaretler. Bu nedenle süre okunurken hem uzunluğu hem de başlangıç anı birlikte hatırlanmalıdır.",
+    "dayanak": "5901 sayılı Kanun md 26/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-06",
+    "articleNo": "26",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Türk vatandaşlığından çıkma izin belgesi alan bir kişi belgede öngörülen süre içinde yabancı devlet vatandaşlığını kazanamamıştır. Bu durumda aşağıdakilerden hangisi gerçekleşir?",
+    "siklar": {
+      "A": "Kişinin Türk vatandaşlığı Cumhurbaşkanı kararı ile kaybettirilir.",
+      "B": "Kişi hakkında kendiliğinden çıkma belgesi düzenlenir.",
+      "C": "Kişinin nüfus aile kütüğündeki kaydı kapatılır.",
+      "D": "Kişi bu tarihten itibaren yabancı muamelesine tabi tutulur.",
+      "E": "Çıkma izin belgesi geçersiz hâle gelir."
+    },
+    "dogru": "E",
+    "aciklama": "26 ncı maddenin ikinci fıkrasının son cümlesi açıktır: süresi içinde yabancı devlet vatandaşlığının kazanılamaması durumunda ÇIKMA İZİN BELGESİ GEÇERSİZ HÂLE GELİR. Yani kişi Türk vatandaşı olmaya devam eder; belge, hüküm doğurmadan hukuki değerini yitirir. Buradaki tuzak, izin belgesinin kendiliğinden çıkma belgesine dönüştüğü ya da sürecin vatandaşlığın kaybıyla sonuçlandığı yanılgısıdır. Kayıt kapatma ve yabancı muamelesi, kaybın gerçekleştiği hâle bağlanmış sonuçlardır; ortada tamamlanmış bir kayıp yoksa bu sonuçlar doğmaz. Kaybettirme ise tamamen ayrı bir kurumdur ve yalnız 29 uncu maddede sayılan eylemlere bağlanmıştır.",
+    "dayanak": "5901 sayılı Kanun md 26/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-07",
+    "articleNo": "27",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığından çıkma hâlinde vatandaşlık hangi anda kaybedilir?",
+    "siklar": {
+      "A": "Bakanlığın çıkma iznine ilişkin karar tarihinde",
+      "B": "Çıkma belgesinin ilgiliye imza karşılığı teslimi ile",
+      "C": "Çıkma kararının Resmî Gazetede yayımlandığı tarihte",
+      "D": "Yabancı devlet vatandaşlığının kazanıldığı tarihte",
+      "E": "Nüfus aile kütüğündeki kaydın kapatıldığı tarihte"
+    },
+    "dogru": "B",
+    "aciklama": "27 nci maddenin birinci fıkrasına göre Türk vatandaşlığı, ÇIKMA BELGESİNİN İLGİLİYE İMZA KARŞILIĞI TESLİMİ ile kaybedilir. Kaybın anı ne izin kararının tarihi ne de yabancı vatandaşlığın kazanıldığı tarihtir; bunlar sürecin önceki halkalarıdır. Kayıt kapatma ise kaybın SEBEBİ değil SONUCUDUR: vatandaşlığı kaybedenlerin nüfus aile kütüklerindeki kayıtları kapatılır ve kişi kayıp tarihinden itibaren yabancı muamelesine tabi tutulur. 'İmza karşılığı teslim' ibaresi sınavlarda özellikle sorulan ayrıntıdır; belgenin düzenlenmesi ya da postaya verilmesi yetmez, fiilî ve imzalı teslim aranır.",
+    "dayanak": "5901 sayılı Kanun md 27/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-08",
+    "articleNo": "27",
+    "kok": "Türk vatandaşlığını çıkma izni almak suretiyle kaybeden bir baba, çocuklarının da kendisiyle birlikte Türk vatandaşlığını kaybetmesini talep etmiş; ancak diğer ebeveyn muvafakat vermemiştir. Kaybın çocukları vatansız kılması söz konusu değildir. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu durumda nasıl işlem yapılır?",
+    "siklar": {
+      "A": "Çocuklar ergin oluncaya kadar işlem askıya alınır.",
+      "B": "Talep reddedilir; çocukların vatandaşlığı hiçbir şekilde etkilenmez.",
+      "C": "Talep eden ebeveynin iradesi esas alınarak çocuklar da vatandaşlığı kaybeder.",
+      "D": "Muvafakat şartı aranmaksızın Bakanlık kararına göre işlem yapılır.",
+      "E": "Hâkim kararına göre işlem yapılır."
+    },
+    "dogru": "E",
+    "aciklama": "Çıkmanın sonuçlarını düzenleyen maddenin ikinci fıkrasına göre çocukların ana ya da baba ile birlikte vatandaşlığı kaybedebilmesi için kaybeden ebeveynin TALEBİ ve diğer ebeveynin MUVAFAKATİ birlikte aranır; MUVAFAKAT VERİLMEMESİ HÂLİNDE HÂKİM KARARINA GÖRE işlem yapılır. Yani uyuşmazlık ne idarenin tek yanlı kararıyla ne de talep edenin iradesinin üstün tutulmasıyla çözülür, yargıya taşınır. Vakada kaybın ÇIKMA İZNİ yoluyla gerçekleşmiş olması bilinçli olarak belirtilmiştir. Erginliğin beklenmesi ise Kanunda öngörülmüş bir yol değildir.",
+    "dayanak": "5901 sayılı Kanun md 27/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-09",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlere tanınan haklardan yararlanacak kişiler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu haklardan, doğumla Türk vatandaşı olup çıkma izniyle vatandaşlığını kaybedenler ile altsoyları yararlanır.",
+      "B": "Bu haklar, bir Türk vatandaşı ile evlenerek vatandaşlığı kazanıp sonra çıkma izniyle kaybedenleri de kapsar.",
+      "C": "Bu haklar, vatandaşlığı kaybettirilenler ile vatandaşlığa alınması iptal edilenler bakımından da geçerlidir.",
+      "D": "Bu haklardan yararlanabilmek için ilgilinin Türkiye'de ikamet ediyor olması şarttır.",
+      "E": "Bu haklar yalnızca vatandaşlığı kaybeden kişiye tanınmış olup altsoyu kapsamaz."
+    },
+    "dogru": "A",
+    "aciklama": "İlgili maddenin birinci fıkrası hakkın kapsamını kişi bakımından iki ölçütle belirler: vatandaşlığın DOĞUMLA kazanılmış olması ve kaybın ÇIKMA İZNİ ALMAK SURETİYLE gerçekleşmiş olması. Bu iki ölçütü taşıyanlar ile altsoyları, maddede belirtilen istisnalar dışında Türk vatandaşlarına tanınan haklardan aynen yararlanmaya devam eder; millî güvenliğe ve kamu düzenine ilişkin hükümler ayrıca saklıdır. Sorunun tuzağı, sonradan kazanılmış vatandaşlığı çıkma izniyle kaybedeni de kapsama sokmaktır; madde açıkça DOĞUMLA vatandaş olmayı arar, bu nedenle evlenme yoluyla kazanıp sonra çıkanlar kapsam dışındadır. Kaybettirme ve iptal de kapsam dışıdır, çünkü madde yalnız ÇIKMA yoluyla kaybı esas alır; bu iki kurum kişinin kendi iradesine değil, bir yaptırıma ya da sakat kazanıma dayanır. Türkiye'de ikamet etmek ise madde bakımından hiçbir aşamada aranmaz; ikamet ölçütü Kanunun kazanma tarafına aittir.",
+    "dayanak": "5901 sayılı Kanun md 28/1",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-11",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, çıkma izni almak suretiyle Türk vatandaşlığını kaybeden kişilerin kamu görevlerinde çalıştırılması ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Bir kadroya dayalı ve kamu hukuku rejimine tabi asli ve sürekli kamu hizmeti görevlerinde bulunamazlar.",
+      "B": "Kamu kurum ve kuruluşlarında işçi veya geçici personel olarak çalıştırılabilirler.",
+      "C": "Kamu kurum ve kuruluşlarında sözleşmeli personel olarak çalıştırılabilirler.",
+      "D": "Kamu görevine ilişkin bu sınırlama, madde kapsamındaki altsoy bakımından da geçerlidir.",
+      "E": "Bu sınırlama, ilgili Mavi Kartını ibraz ettiği takdirde uygulanmaz."
+    },
+    "dogru": "E",
+    "aciklama": "İlgili maddenin üçüncü fıkrası ölçütü GÖREVİN NİTELİĞİNE bağlar: bir KADROYA DAYALI ve KAMU HUKUKU REJİMİNE TABİ olarak ASLİ VE SÜREKLİ kamu hizmeti görevlerinde bulunmak yasaktır; buna karşılık kamu kurum ve kuruluşlarında İŞÇİ, GEÇİCİ VEYA SÖZLEŞMELİ PERSONEL olarak çalıştırılmalarına izin verilmiştir. Yasak mutlak değildir, ölçülüdür. Fıkra 'bu madde kapsamında bulunan kişiler' ifadesini kullandığından sınırlama yalnız vatandaşlığını kaybedeni değil, maddeden yararlanan altsoyu da kapsar. Sorunun tuzağı, Mavi Karta ait ispat kolaylığını bir muafiyet gibi okumaktır: Mavi Kart maddedeki hakların KULLANILMASINDA ibraz kolaylığı sağlayan bir belgedir, maddede öngörülen sınırlamaları ortadan kaldırmaz. Kartın işlevi ile hakkın kapsamı birbirinden ayrı iki konudur ve sınavda bilinçli olarak yer değiştirilir. Aynı maddede herhangi bir makamın izniyle bu yasağın aşılmasına da imkân tanınmamıştır.",
+    "dayanak": "5901 sayılı Kanun md 28/3",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-12",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, çıkma izni almak suretiyle Türk vatandaşlığını kaybeden kişilerin sosyal güvenliğe ilişkin kazanılmış hakları bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu haklar saklı olup kullanımında ilgili kanunlardaki hükümlere tabi olunur.",
+      "B": "Bu haklar, vatandaşlığın kaybedildiği tarihte kendiliğinden sona erer.",
+      "C": "Bu hakların kullanımı, ilgilinin Türkiye'de ikamet etmesi şartına bağlanmıştır.",
+      "D": "Bu haklar yalnızca üçüncü dereceye kadar olan altsoy bakımından saklı tutulmuştur.",
+      "E": "Bu hakların kullanılabilmesi için ayrıca Bakanlıktan izin alınması gerekir."
+    },
+    "dogru": "A",
+    "aciklama": "İlgili maddenin ikinci fıkrası, bu kişiler bakımından bulunmayan hak ve yükümlülükleri saydıktan sonra sosyal güvenlik yönünden ayrı bir kural koyar: SOSYAL GÜVENLİĞE İLİŞKİN KAZANILMIŞ HAKLARI SAKLI olup bu hakların kullanımında İLGİLİ KANUNLARDAKİ HÜKÜMLERE tabidirler. Yani vatandaşlığın kaybı bu hakları ortadan kaldırmaz; yalnızca kullanımını kendi mevzuatının şartlarına bağlar. Sorunun tuzağı, vatandaşlığın kaybını sosyal güvenlik bağının da kopması olarak okumaktır; Kanun tam tersini yaparak kazanılmış hakları korumuştur. İkinci tuzak, saklılığı bir izne ya da ikamete bağlamaktır: fıkrada böyle bir şart yoktur, atıf doğrudan ilgili sosyal güvenlik mevzuatınadır. Altsoya ilişkin derece sınırı ise maddenin kapsamını belirleyen ayrı bir ölçüttür ve sosyal güvenlik hakkının saklılığını daraltmak için kullanılamaz.",
+    "dayanak": "5901 sayılı Kanun md 28/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-13",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlere tanınan haklardan yararlanacak altsoy bakımından aşağıdakilerden hangisi şarttır?",
+    "siklar": {
+      "A": "Üstsoyu ile soy bağını belgelendirmek",
+      "B": "Ergin ve ayırt etme gücüne sahip olmak",
+      "C": "Yabancı bir devlet vatandaşlığını kazanmış olmak",
+      "D": "Türkiye'de yerleşmeye karar verdiğini davranışları ile teyit etmek",
+      "E": "Türkiye'de en az bir yıl ikamet etmiş olmak"
+    },
+    "dogru": "A",
+    "aciklama": "28 inci maddenin beşinci fıkrası tek ve açık bir şart öngörür: bu madde hükümlerinden yararlanacak ALTSOYUN, ÜSTSOYU İLE SOY BAĞINI BELGELENDİRMESİ ŞARTTIR. Hakkın kaynağı üstsoyun doğumla Türk vatandaşı olup çıkma izniyle vatandaşlıktan ayrılmasıdır; bu nedenle bağın ispatı hakkın ön koşuludur. Çeldiricilerin bir kısmı Kanunun KAZANMA tarafındaki şartlarından devşirilmiştir; ikamet, erginlik veya Türkiye'ye yerleşme iradesi gibi ölçütler vatandaşlığı sonradan kazanma başvurusuna aittir ve bu madde bakımından aranmaz. Yabancı devlet vatandaşlığının kazanılmış olması da altsoy için değil, çıkma izni isteyen kişi bakımından anlam taşır.",
+    "dayanak": "5901 sayılı Kanun md 28/5",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-14",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlere talepleri hâlinde düzenlenen Mavi Kart ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Mavi Kart, pasaport yerine geçen belgelerden sayılır.",
+      "B": "Mavi Kart yalnızca vatandaşlığı kaybeden kişiye düzenlenir, altsoyu kapsamaz.",
+      "C": "Mavi Kart yalnızca yurt dışında ikamet edenlere düzenlenir.",
+      "D": "Mavi Kart, 210 sayılı Değerli Kağıtlar Kanunu kapsamındadır.",
+      "E": "Mavi Kart, talep aranmaksızın resen düzenlenir."
+    },
+    "dogru": "D",
+    "aciklama": "İlgili maddenin altıncı fıkrasına göre madde kapsamındaki kişilere TALEPLERİ HÂLİNDE, maddede belirtilen haklardan faydalanabileceklerini gösteren MAVİ KART düzenlenir ve bu Kart 21/2/1963 tarihli ve 210 sayılı DEĞERLİ KAĞITLAR KANUNU kapsamındadır. Kartın değerli kâğıt sayılması, basımı ve bedeli bakımından özel bir rejime tabi olması sonucunu doğurur; sınavda doğrudan sorulan ayrıntı budur. Kart resen değil TALEP ÜZERİNE düzenlenir ve madde kapsamındaki herkese, yani hem vatandaşlığını kaybedene hem de kapsamdaki altsoya verilebilir; ikamet yeri bakımından bir sınır getirilmemiştir. Sorunun tuzağı, Mavi Kartı bir seyahat belgesi gibi görmektir: Kart, maddedeki haklardan yararlanmayı gösteren bir belgedir, pasaport ya da pasaport yerine geçen belge değildir. Vatandaşlığın ispatına karine teşkil eden belgeler Kanunda ayrıca ve sınırlı olarak sayılmıştır.",
+    "dayanak": "5901 sayılı Kanun md 28/6",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-15",
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Mavi Kartın ibraz edilememesi durumunda işlem nasıl yapılır?",
+    "siklar": {
+      "A": "İkamet edilen yer valiliğinden alınacak yazı ile işlem yapılır.",
+      "B": "Kartın yeniden düzenlenmesi beklenir, bu süre içinde işlem yapılamaz.",
+      "C": "Yalnızca uyruğunda bulunulan devlet makamlarınca verilmiş kimlik belgesi yeterlidir.",
+      "D": "Mavi Kartlılar Kütüğünden alınacak kayıt örneği ile yabancı kimlik belgesi birlikte aranır.",
+      "E": "Nüfus aile kütüğünden alınacak kayıt örneği ile işlem yapılır."
+    },
+    "dogru": "D",
+    "aciklama": "İlgili maddenin yedinci fıkrasına göre maddenin sağladığı hakların kullanılmasında kural olarak MAVİ KARTIN İBRAZI YETERLİDİR. Kart ibraz edilemiyorsa KİMLİK PAYLAŞIMI SİSTEMİ aracılığıyla MAVİ KARTLILAR KÜTÜĞÜNDEN alınacak kayıt örneği İLE BİRLİKTE, uyruğunda bulunulan devlet makamlarınca verilmiş kimlik bilgilerini gösteren belge aranır. Sorunun tuzağı, iki belgeden yalnız birini yeterli saymaktır; fıkra bunları 'ile' bağlacıyla birbirine bağlamış, ikisini birlikte aramıştır. İkinci tuzak iki kütüğü karıştırmaktır: Mavi Kartlılar Kütüğü ile nüfus aile kütüğü ayrı kayıt sistemleridir ve vatandaşlığını kaybedenin aile kütüğündeki kaydı zaten kapatılmıştır, oradan alınacak bir örnek bu maddedeki işleve hizmet edemez. Kimlik bilgilerinde değişiklik olması hâlinde ise eski ve yeni bilgileri gösteren belgenin usulünce tasdik edilmiş Türkçe tercümesiyle birlikte ibrazı zorunlu tutulmuştur.",
+    "dayanak": "5901 sayılı Kanun md 28/7",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-16",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Kanunda sayılan eylemlerde bulundukları resmî makamlarca tespit edilen kişilerin Türk vatandaşlığı hangi makamın kararı ile kaybettirilebilir?",
+    "siklar": {
+      "A": "Cumhurbaşkanı",
+      "B": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü",
+      "C": "Vatandaşlık başvuru inceleme komisyonu",
+      "D": "İkamet edilen yer valiliği",
+      "E": "İçişleri Bakanlığı"
+    },
+    "dogru": "A",
+    "aciklama": "29 uncu maddenin birinci fıkrasına göre maddede sayılan eylemlerde bulundukları RESMÎ MAKAMLARCA TESPİT EDİLEN kişilerin Türk vatandaşlığı CUMHURBAŞKANI KARARI ile kaybettirilebilir. Hükmün özgün metninde karar 'Bakanlığın teklifi ve Bakanlar Kurulu kararı' ile alınmaktaydı; 2/7/2018 tarihli ve 700 sayılı KHK ile ibare Cumhurbaşkanı olarak değiştirilmiştir. Kaybettirmenin ihtiyari olduğu da metinden anlaşılır: şartlar gerçekleşse bile 'kaybettirilebilir' denilerek takdir tanınmıştır. Bakanlığın buradaki rolü karar vermek değil, süreci yürütmek ve bildirimleri almaktır.",
+    "dayanak": "5901 sayılı Kanun md 29/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-17",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, yabancı bir devletin Türkiye'nin menfaatlerine uymayan bir hizmetinde bulunan kişiye bu görevi bırakması gerektiği yurt içinde hangi makam tarafından bildirilir?",
+    "siklar": {
+      "A": "Dış temsilcilikler",
+      "B": "Emniyet genel müdürlüğü",
+      "C": "Cumhuriyet başsavcılığı",
+      "D": "Mülki idare amirleri",
+      "E": "Nüfus müdürlükleri"
+    },
+    "dogru": "D",
+    "aciklama": "Kaybettirmeyi düzenleyen maddenin birinci fıkrasının (a) bendine göre görevi bırakma bildirimi, YURT DIŞINDA DIŞ TEMSİLCİLİKLER, YURT İÇİNDE İSE MÜLKİ İDARE AMİRLERİ tarafından yapılır. Bendin ikili yapısı sınavda özellikle ters çevrilerek sorulur: dış temsilcilik şıkkı doğru bir makamdır, ancak sorulan yer bakımından yanlıştır. Sorunun tuzağı da budur; aday makamların adını hatırlar, hangisinin nerede görevli olduğunu ayırt edemez. Bildirimin kendisi kaybettirme için yeterli değildir: bildirim yapıldıktan sonra kişiye uygun bir süre tanınır ve ancak bu süre içinde görevi kendi isteğiyle bırakmayanlar bakımından kaybettirme yoluna gidilebilir. Bendin uygulanabilmesi için hizmetin YABANCI BİR DEVLETE ait olması ve TÜRKİYE'NİN MENFAATLERİNE UYMAMASI da ayrıca aranır. Cumhuriyet savcısı ve mahkemeye düşen bildirim görevi ise aynı maddenin bambaşka bir hâline ilişkindir ve bu bentle ilgisi yoktur.",
+    "dayanak": "5901 sayılı Kanun md 29/1-a",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-18",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, yabancı bir devletin Türkiye'nin menfaatlerine uymayan hizmetinde bulunan kişiye, bu görevi bırakması için verilecek süre en az ne kadar olmalıdır?",
+    "siklar": {
+      "A": "Bir yıl",
+      "B": "Bir ay",
+      "C": "İki ay",
+      "D": "Üç ay",
+      "E": "Altı ay"
+    },
+    "dogru": "D",
+    "aciklama": "Kaybettirmeyi düzenleyen maddenin birinci fıkrasının (a) bendine göre, görevi bırakmaları kendilerine bildirilenlere ÜÇ AYDAN AZ OLMAMAK ÜZERE uygun bir süre verilir; bu süre içinde kendi istekleriyle görevi bırakmayanların Türk vatandaşlığı kaybettirilebilir. Sürenin niteliği ayrı bir ayrıntıdır: bent bir ALT SINIR koymuştur, idare somut olayın gereğine göre daha uzun bir süre tanıyabilir; 'uygun bir süre' ibaresi bu takdiri ifade eder. Sorunun tuzağı, Kanunun kayıp bölümünde birbirine yakın birçok sürenin bulunması ve adayın bunlardan hangisinin bu bende ait olduğunu ayırt edememesidir. Bu nedenle kök okunurken sürenin hangi hâle bağlandığı dikkatle belirlenmelidir. Sürenin işlemeye başlaması da bildirime bağlıdır: bildirim yapılmadıkça süre işlemez ve kaybettirme yoluna gidilemez.",
+    "dayanak": "5901 sayılı Kanun md 29/1-a",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-19",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Türkiye ile savaş hâlinde bulunan bir devletin hizmetinde çalışmaya devam eden bir Türk vatandaşının bu davranışının vatandaşlığın kaybettirilmesi sebebi sayılmaması için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "Dış temsilciliğe bildirimde bulunulmuş olması",
+      "B": "Hizmetin askerî nitelikte olmaması",
+      "C": "Hizmetin ücretsiz olarak yürütülmesi",
+      "D": "İçişleri Bakanlığının izninin bulunması",
+      "E": "Cumhurbaşkanının izninin bulunması"
+    },
+    "dogru": "E",
+    "aciklama": "29 uncu maddenin birinci fıkrasının (b) bendi, Türkiye ile SAVAŞ HÂLİNDE bulunan bir devletin HER TÜRLÜ hizmetinde CUMHURBAŞKANININ İZNİ OLMAKSIZIN kendi istekleriyle çalışmaya devam edenleri kaybettirme sebebi sayar. Bendin kapsamı 'her türlü hizmet' olduğundan görevin askerî olup olmaması ya da ücretli yürütülüp yürütülmemesi sonucu değiştirmez; ayırt edici tek unsur İZİNDİR. Hükmün özgün metnindeki 'Bakanlar Kurulunun izni' ibaresi 700 sayılı KHK ile Cumhurbaşkanı olarak değiştirilmiştir. Aynı fıkranın (a) bendindeki bildirim usulü ise buraya değil, Türkiye'nin menfaatlerine uymayan hizmet hâline özgüdür.",
+    "dayanak": "5901 sayılı Kanun md 29/1-b",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-20",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre aşağıdakilerden hangisi Türk vatandaşlığının kaybettirilmesi sebeplerinden biri olarak sayılmıştır?",
+    "siklar": {
+      "A": "Türkiye dışında kesintisiz olarak beş yıldan uzun süre ikamet etmek",
+      "B": "Türkiye ile savaş hâlinde bulunan bir devletin hizmetinde izin alarak çalışmak",
+      "C": "İzin almaksızın yabancı bir devlet hizmetinde gönüllü olarak askerlik yapmak",
+      "D": "Yabancı bir devlet vatandaşlığını kazandığını süresinde bildirmemek",
+      "E": "Vatandaşlık başvurusunda yalan beyanda bulunmak"
+    },
+    "dogru": "C",
+    "aciklama": "Kaybettirmeyi düzenleyen maddenin birinci fıkrasının (c) bendine göre İZİN ALMAKSIZIN YABANCI BİR DEVLET HİZMETİNDE GÖNÜLLÜ OLARAK ASKERLİK YAPANLARIN Türk vatandaşlığı kaybettirilebilir. Bendin ayırt edici iki unsuru vardır: askerliğin GÖNÜLLÜ yapılması ve İZİN ALINMAMIŞ olması. Aynı fıkranın savaş hâline ilişkin bendinde de belirleyici unsur izindir; izin alınarak sürdürülen hizmet kaybettirme sebebi sayılmaz. Sorunun tuzağı budur: aday hizmetin niteliğine takılır, oysa hükmün eksenini izin oluşturur. Ayrım şuradadır: kaybettirme, kişinin vatandaşlığı kazandıktan SONRAKİ eylemlerine bağlanır ve doğumla vatandaş olanlar bakımından da işler. Yurt dışında uzun süre ikamet etmek ise Kanunda hiçbir şekilde kayıp sebebi sayılmamıştır.",
+    "dayanak": "5901 sayılı Kanun md 29/1-c",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-21",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Türk Ceza Kanununun 302, 309, 310, 311, 312, 313, 314 ve 315 inci maddelerinde yazılı suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen ve yabancı ülkede bulunması nedeniyle kendisine ulaşılamayan vatandaşlar, bu durumun öğrenilmesinden itibaren ne kadar süre içinde Bakanlığa bildirilir?",
+    "siklar": {
+      "A": "Üç ay",
+      "B": "Altı ay",
+      "C": "Bir yıl",
+      "D": "Bir ay",
+      "E": "İki ay"
+    },
+    "dogru": "D",
+    "aciklama": "Kaybettirmeyi düzenleyen maddenin ikinci fıkrasına göre, sayılan suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen ve yabancı ülkede bulunması nedeniyle kendisine ulaşılamayan vatandaşların durumu, SORUŞTURMA aşamasında Cumhuriyet savcısı, KOVUŞTURMA aşamasında mahkeme tarafından ÖĞRENİLMESİNDEN İTİBAREN BİR AY İÇİNDE, vatandaşlığın kaybettirilmesi amacıyla Bakanlığa bildirilir. Sürenin başlangıcı ayrı bir ayrıntıdır: suçun işlendiği ya da soruşturmanın başladığı tarih değil, durumun ÖĞRENİLDİĞİ an esas alınır. Sorunun tuzağı, aynı fıkrada birbiri ardına gelen iki ayrı sürenin bulunmasıdır; biri makamlara bildirim için, diğeri ilgiliye tanınan davranış süresi için öngörülmüştür ve aday bunları yer değiştirir. Bu nedenle kökte sürenin kime ve hangi işlem için verildiği dikkatle okunmalıdır. Bildirim yükümlülüğü ayrıca adli makamlara aittir; idarenin resen harekete geçmesi bu fıkrada öngörülmemiştir.",
+    "dayanak": "5901 sayılı Kanun md 29/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-22",
+    "articleNo": "29",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, Türk Ceza Kanununun belirli maddelerinde yazılı suçlar nedeniyle hakkında soruşturma veya kovuşturma yürütülen ve yabancı ülkede bulunması nedeniyle kendisine ulaşılamayan bir vatandaşın Türk vatandaşlığının kaybettirilebilmesi için aşağıdakilerden hangisi ARANMAZ?",
+    "siklar": {
+      "A": "Kanunda sayılan suçlardan biri nedeniyle soruşturma veya kovuşturma yürütülmesi",
+      "B": "İlgilinin yabancı ülkede bulunması nedeniyle kendisine ulaşılamaması",
+      "C": "Durumun kaybettirme amacıyla Bakanlığa bildirilmiş olması",
+      "D": "Resmî Gazetede yapılan yurda dön ilanına süresinde uyulmamış olması",
+      "E": "İlgili hakkındaki mahkûmiyet hükmünün kesinleşmiş olması"
+    },
+    "dogru": "E",
+    "aciklama": "Kaybettirmeyi düzenleyen maddenin ikinci fıkrası, kaybettirmeyi bir MAHKÛMİYETE değil, birlikte gerçekleşmesi gereken bir olgular zincirine bağlamıştır: fıkrada sayılan suçlardan soruşturma veya kovuşturma yürütülmesi, kişinin yabancı ülkede bulunması nedeniyle kendisine ulaşılamaması, durumun adli makamlarca Bakanlığa bildirilmesi ve nihayet Bakanlıkça Resmî Gazetede yapılan YURDA DÖN İLANINA rağmen kişinin süresinde dönmemesi. Bu şartlar gerçekleştiğinde vatandaşlık Cumhurbaşkanı kararıyla kaybettirilebilir. Sorunun tuzağı, kaybettirmeyi bir ceza yaptırımı gibi okuyup kesinleşmiş hüküm aramaktır; fıkra soruşturma veya kovuşturmanın VARLIĞI ile yurda dönmeme olgusunu yeterli görmüştür, kaybettirme bir ceza değil idari bir işlemdir. İkinci tuzak, yabancı devlet vatandaşlığının kazanılmış olmasını burada da şart sanmaktır; bu ölçüt Kanunun çıkma rejimine aittir, kaybettirmeye değil.",
+    "dayanak": "5901 sayılı Kanun md 29/2",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-23",
+    "articleNo": "30",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının kaybettirilmesi ne zaman hüküm ifade eder?",
+    "siklar": {
+      "A": "Kaybettirme kararının verildiği tarihten itibaren",
+      "B": "Kaybettirme kararının kesinleştiği tarihten itibaren",
+      "C": "İlgilinin nüfus kaydının kapatıldığı tarihten itibaren",
+      "D": "Kararın ilgiliye tebliğ edildiği tarihten itibaren",
+      "E": "Kararın Resmî Gazetede yayımlandığı tarihten itibaren"
+    },
+    "dogru": "E",
+    "aciklama": "Kaybettirmenin sonuçlarını düzenleyen maddenin birinci fıkrasına göre kaybettirme, CUMHURBAŞKANI KARARININ RESMÎ GAZETEDE YAYIMLANDIĞI TARİHTEN itibaren hüküm ifade eder. Kaybettirmenin ayrı düzenlenmesinin sebebi, kararın niteliği gereği Resmî Gazetede yayımlanmasıdır; nitekim Kanunun tebligata ilişkin maddesi de bu kararların yayımlandığı tarihte tebliğ edilmiş sayılacağını belirtir. Böylece yayım hem hüküm ifade anı hem de tebliğ anı olur; ayrıca bir tebligat yapılması aranmaz. Sorunun tuzağı, idari işlemlerde alışılmış olan 'karar tarihi' ya da 'tebliğ tarihi' ölçütünü buraya da taşımaktır; Kanun kayıp yollarının her biri için hüküm ifade anını AYRI AYRI belirlemiştir ve bunlar birbirinin yerine geçmez. Nüfus kaydının kapatılması ise sonucun kendisi değil, doğmuş bir sonucun kayıtlara yansımasıdır; bu nedenle hüküm ifade anını belirleyemez.",
+    "dayanak": "5901 sayılı Kanun md 30/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-24",
+    "articleNo": "30",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının kaybettirilmesi kararlarının eş ve çocuklara etkisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kaybettirme kararları şahsidir, ilgilinin eş ve çocuklarına tesir etmez.",
+      "B": "Kaybettirme kararı, ilgiliye bağlı olarak vatandaşlığı kazanan eş ve çocuklar hakkında da uygulanır.",
+      "C": "Kaybettirme kararı yalnızca ergin olmayan çocuklar hakkında uygulanır.",
+      "D": "Kaybettirme kararının eş ve çocuklara etkisi hâkim kararıyla belirlenir.",
+      "E": "Kaybettirme kararı eşe tesir eder, çocuklara tesir etmez."
+    },
+    "dogru": "A",
+    "aciklama": "Kaybettirmenin sonuçlarını düzenleyen maddenin ikinci fıkrası açıktır: KAYBETTİRME KARARLARI ŞAHSİDİR, İLGİLİNİN EŞ VE ÇOCUKLARINA TESİR ETMEZ. Bu kural, kaybettirmenin kişinin KENDİ EYLEMİNE bağlanmış bir sonuç olmasının doğal uzantısıdır; başkasının eyleminden dolayı kimsenin vatandaşlığı sona ermez. Sorunun tuzağı, Kanunun kayıp bölümündeki farklı kurumların aile üyeleri bakımından doğurduğu sonuçları birbirine karıştırmaktır: bazı yollarda karar yalnız kişiyle sınırlı kalır, bazılarında ise ilgiliye bağlı olarak vatandaşlık kazanmış olanlara da uzanır. Kaybettirmede bu mekanizmaların hiçbiri işlemez; hüküm mutlaktır ve istisnasızdır. Şahsilik ilkesi ayrıca çocuğun ergin olup olmamasına da bağlı değildir; fıkra çocuklar arasında hiçbir ayrım yapmamıştır.",
+    "dayanak": "5901 sayılı Kanun md 30/2",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-25",
+    "articleNo": "31",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığını kazanma kararının iptal edilebilmesi için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "İlgilinin yabancı devlet vatandaşlığını kazandığını süresinde bildirmemiş olması",
+      "B": "Kararın hukuki şartlar oluşmadan veya mükerrer olarak verilmiş olması",
+      "C": "Kararda sonradan anlaşılan maddi bir hata veya eksikliğin bulunması",
+      "D": "Kararın ilgilinin yalan beyanı veya önemli hususları gizlemesi sonucunda verilmiş olması",
+      "E": "İlgilinin izinsiz olarak yabancı bir devlet hizmetinde gönüllü askerlik yapmış olması"
+    },
+    "dogru": "D",
+    "aciklama": "İptali düzenleyen maddeye göre Türk vatandaşlığını kazanma kararı; İLGİLİNİN YALAN BEYANI veya VATANDAŞLIĞI KAZANMAYA ESAS TEŞKİL EDEN ÖNEMLİ HUSUSLARI GİZLEMESİ sonucunda vuku bulmuş ise KARARI VEREN MAKAM tarafından iptal edilir. Hüküm bağlı yetki doğurur; madde 'iptal edilir' demiş, idareye takdir bırakmamıştır. İptalin ekseni KAZANMA ANINDAKİ HİLEDİR: kişi kararı kendi kusurlu davranışıyla elde etmiştir. Sorunun tuzağı, Kanunun birbirine yakın duran üç kurumunu aynı sepete koymaktır; kararın sakatlığına, kararın yazımındaki eksikliğe ve kişinin sonraki eylemlerine bağlanan sonuçlar Kanunda AYRI maddelerde ve ayrı adlarla düzenlenmiştir. Bu nedenle bir sebebin hangi kuruma ait olduğu, sebebin ZAMANINA bakılarak ayırt edilir: kazanma anındaki hile iptale, kazanmadan sonraki eylem kaybettirmeye götürür. İptal yalnız sonradan kazananlar bakımından söz konusu olur; doğumla vatandaş olanlar için uygulanamaz.",
+    "dayanak": "5901 sayılı Kanun md 31/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-27",
+    "articleNo": "33",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre vatandaşlığı iptal edilenlerden mallarının tasfiyesi gerekli görülenler, Türkiye'deki mallarını en geç ne kadar süre içinde tasfiye etmek zorundadır?",
+    "siklar": {
+      "A": "Bir yıl",
+      "B": "İki yıl",
+      "C": "Bir ay",
+      "D": "Üç ay",
+      "E": "Altı ay"
+    },
+    "dogru": "A",
+    "aciklama": "Malların tasfiyesini düzenleyen maddenin birinci fıkrasına göre, vatandaşlığı iptal edilenlerden mallarının tasfiyesi gerekli görülenler EN GEÇ BİR YIL İÇİNDE Türkiye'deki mallarını tasfiye etmek zorundadır; aksi hâlde malları HAZİNECE SATILARAK bedelleri nam ve hesaplarına kamu haznedarlığı sistemine dahil bir KAMU BANKASINA yatırılır. Sorunun tuzağı, Kanunun kayıp bölümündeki çok sayıda süre arasından bu maddeye ait olanı seçebilmektir; süreler yakın değerlerde olduğu için aday hangi kuruma ait olduğunu ayırt edemediğinde yanılır. Bu rejim yalnız İPTAL bakımından öngörülmüştür; diğer kayıp yollarında malların tasfiyesi gibi bir yükümlülük yoktur.",
+    "dayanak": "5901 sayılı Kanun md 33/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-28",
+    "articleNo": "33",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, vatandaşlığı iptal edilen ve malları hakkında tasfiye öngörülen kişi iptal kararı aleyhine yargı yoluna başvurmuştur. Bu durumda aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Tasfiye süresi bir kat uzar.",
+      "B": "Tasfiye işlemleri yalnızca Bakanlığın onayı ile durdurulabilir.",
+      "C": "Yargı yoluna başvurulması tasfiyeyi etkilemez, tasfiye süresinde tamamlanır.",
+      "D": "Malların tasfiyesi dava sonuna bırakılır.",
+      "E": "Mallar derhâl Hazinece satılır, dava sonunda bedeli iade edilir."
+    },
+    "dogru": "D",
+    "aciklama": "33 üncü maddenin ikinci fıkrasına göre bu kişiler İPTAL KARARI ALEYHİNE YARGI YOLUNA BAŞVURDUKLARI TAKDİRDE MALLARIN TASFİYESİ DAVA SONUNA BIRAKILIR. Hüküm kendiliğinden işler; ayrıca bir idari onay ya da yürütmenin durdurulması kararı aranmaz. Buradaki tuzak, tasfiyenin dava boyunca sürdüğü ve sonucun yalnız bedel iadesiyle telafi edileceği düşüncesidir; Kanun bunun yerine tasfiyeyi bekletmeyi tercih etmiştir. Süre uzaması gibi bir düzenleme de metinde yoktur.",
+    "dayanak": "5901 sayılı Kanun md 33/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-29",
+    "articleNo": "34",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkını kullanarak Türk vatandaşlığından ayrılabilecek durumda olanlar, bu haklarını hangi süre içinde kullanabilirler?",
+    "siklar": {
+      "A": "Herhangi bir süreye bağlı olmaksızın her zaman",
+      "B": "Ergin olmalarından itibaren bir yıl içinde",
+      "C": "Ergin olmalarından itibaren iki yıl içinde",
+      "D": "Ergin olmalarından itibaren üç yıl içinde",
+      "E": "Ergin olmalarından itibaren beş yıl içinde"
+    },
+    "dogru": "D",
+    "aciklama": "Seçme hakkı ile kaybı düzenleyen maddenin birinci fıkrasına göre, maddede durumları belirtilenler ERGİN OLMALARINDAN İTİBAREN ÜÇ YIL İÇİNDE Türk vatandaşlığından ayrılabilirler. Süre hak düşürücü niteliktedir; bu nedenle hakkın süresiz kullanılabileceğini söyleyen seçenek yanlıştır, süre geçtikten sonra seçme hakkı ortadan kalkar. Sürenin BAŞLANGICI da ayrı bir ayrıntıdır: yabancı devlet vatandaşlığının kazanıldığı tarih değil, kişinin ERGİN OLDUĞU an esas alınır; çünkü hükmün mantığı, küçükken başkasının iradesiyle şekillenen vatandaşlık durumunu kişinin ergin olduktan sonra kendi iradesiyle seçmesine imkân tanımaktır. Sorunun tuzağı, Kanunun farklı kurumlarında geçen süreleri bu maddeye taşımaktır; aday değeri hatırlar ama hangi kuruma ait olduğunu ayırt edemez. Aynı süre Kanunun kazanma tarafında seçme hakkının kullanılması bakımından da simetrik biçimde öngörülmüştür.",
+    "dayanak": "5901 sayılı Kanun md 34/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-30",
+    "articleNo": "34",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre aşağıdakilerden hangisi seçme hakkını kullanarak Türk vatandaşlığından ayrılabilecek kişiler arasında açıkça sayılmamıştır?",
+    "siklar": {
+      "A": "Ana ya da babadan dolayı soy bağı nedeniyle Türk vatandaşı olanlardan doğum yeri esasına göre yabancı bir devlet vatandaşlığını kazananlar",
+      "B": "Evlat edinilme yoluyla Türk vatandaşlığını kazananlar",
+      "C": "Bir Türk vatandaşı ile evlenme yoluyla Türk vatandaşlığını kazananlar",
+      "D": "Herhangi bir şekilde Türk vatandaşlığını kazanmış ana veya babaya bağlı olarak Türk vatandaşlığını kazananlar",
+      "E": "Ana ya da babadan dolayı soy bağı nedeniyle doğumla Türk vatandaşı olanlardan yabancı ana veya babanın vatandaşlığını doğumla ya da sonradan kazananlar"
+    },
+    "dogru": "C",
+    "aciklama": "34 üncü maddenin birinci fıkrası seçme hakkı sahiplerini beş bent hâlinde sayar ve sayım sınırlıdır: soy bağı nedeniyle doğumla Türk vatandaşı olup yabancı ana veya babanın vatandaşlığını kazananlar; soy bağıyla Türk vatandaşı olup doğum yeri esasına göre yabancı vatandaşlık kazananlar; evlat edinilme yoluyla vatandaşlığı kazananlar; doğum yeri esasına göre Türk vatandaşı iken sonradan yabancı ana veya babasının vatandaşlığını kazananlar; herhangi bir şekilde Türk vatandaşlığını kazanmış ana veya babaya BAĞLI OLARAK vatandaşlığı kazananlar. EVLENME yoluyla vatandaşlığı kazananlar bu sayımda yer almaz. Sayımın ortak mantığı, kişinin vatandaşlığı kendi iradesiyle değil doğum ya da bir başkasına bağlılık nedeniyle kazanmış olmasıdır; evlenme yolunda ise vatandaşlık ilgilinin kendi başvurusuyla kazanılır.",
+    "dayanak": "5901 sayılı Kanun md 34/1",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-31",
+    "articleNo": "34",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkının kullanılmasının önündeki mutlak engel aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İlgilinin hakkında mali tahdit bulunması",
+      "B": "Kaybın ilgiliyi vatansız kılacak olması",
+      "C": "İlgilinin Türkiye'de ikamet ediyor olması",
+      "D": "İlgilinin askerlik çağında bulunması",
+      "E": "İlgilinin evli olması"
+    },
+    "dogru": "B",
+    "aciklama": "34 üncü maddenin ikinci fıkrasına göre maddedeki hükümler gereğince VATANDAŞLIĞIN KAYBI İLGİLİYİ VATANSIZ KILACAK İSE SEÇME HAKKI KULLANILAMAZ. Vatansızlığın önlenmesi Kanunun kayıp rejimindeki genel ilkesidir; çıkmanın sonuçlarını düzenleyen maddede de çocukları vatansız kılacak hâllerde madde hükümlerinin uygulanmayacağı belirtilmiştir. Çeldiriciler ise ÇIKMA yolunun şartlarından devşirilmiştir: aranan kişi olmamak ve mali ya da cezai tahdit bulunmamak çıkma izni için aranır, seçme hakkı için değil. Türkiye'de ikamet etmek veya evli olmak da seçme hakkını engellemez.",
+    "dayanak": "5901 sayılı Kanun md 34/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-32",
+    "articleNo": "35",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkı ile Türk vatandaşlığının kaybı ne zaman hüküm ifade eder?",
+    "siklar": {
+      "A": "Kayba ilişkin kararın Resmî Gazetede yayımlandığı tarihten itibaren",
+      "B": "İlgilinin ergin olduğu ve seçme hakkının doğduğu tarihten itibaren",
+      "C": "İlgilinin nüfus aile kütüğündeki kaydının kapatıldığı tarihten itibaren",
+      "D": "İlgilinin seçme hakkına ilişkin beyanda bulunduğu tarihten itibaren",
+      "E": "Hakkın kullanılma şartlarının varlığının tespitine ilişkin karar tarihinden itibaren"
+    },
+    "dogru": "E",
+    "aciklama": "Seçme hakkı ile kaybın sonuçlarını düzenleyen maddenin birinci fıkrasına göre bu yolla kayıp, BU HAKKIN KULLANILMASINA DAİR ŞARTLARIN VARLIĞININ TESPİTİNE İLİŞKİN KARAR TARİHİNDEN itibaren hüküm ifade eder. Kararın niteliği ayrı bir ayrıntıdır: idare burada bir izin vermez, yalnızca şartların bulunduğunu TESPİT eder; karar kurucu değil belirleyicidir, ancak sonucun doğması yine de bu karara bağlanmıştır. Sorunun tuzağı, seçme hakkını tek taraflı bir irade açıklaması sanıp ilgilinin beyan tarihini esas almaktır; beyan süreci başlatır, sonucu tek başına doğurmaz. İkinci tuzak, erginliği sonucun doğduğu an sanmaktır; erginlik, hakkın kullanılabileceği sürenin BAŞLANGICIDIR, kaybın anı değildir. Kanun kayıp yollarının her biri için hüküm ifade anını ayrı ayrı belirlemiştir ve bu anlar birbirinin yerine geçirilemez.",
+    "dayanak": "5901 sayılı Kanun md 35/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-33",
+    "articleNo": "35",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkını kullanarak Türk vatandaşlığından ayrılan kişilerin eşleri ve çocukları hakkında hangi hükümler uygulanır?",
+    "siklar": {
+      "A": "İptal kararının geçerliliği ve sonuçlarını düzenleyen hükümler",
+      "B": "Çıkmanın geçerliliği ve sonuçlarını düzenleyen hükümler",
+      "C": "Malların tasfiyesine ilişkin hükümler",
+      "D": "Türk vatandaşlığının ispatına ilişkin hükümler",
+      "E": "Kaybettirmenin geçerliliği ve sonuçlarını düzenleyen hükümler"
+    },
+    "dogru": "B",
+    "aciklama": "Seçme hakkı ile kaybın sonuçlarını düzenleyen maddenin ikinci fıkrası açık bir atıf yapar: seçme hakkını kullanarak Türk vatandaşlığından ayrılanların EŞLERİ VE ÇOCUKLARI hakkında, ÇIKMANIN geçerliliği ve sonuçlarını düzenleyen madde hükümleri uygulanır. Atfın bu yöne yapılmış olması tesadüfi değildir: seçme hakkı ile kayıp da çıkma gibi kişinin KENDİ İRADESİNE dayanır ve yaptırım niteliği taşımaz; bu nedenle aile üyeleri bakımından aynı rejime tabi tutulmuştur. Sorunun tuzağı, atfı kaybettirme ya da iptal maddelerine yapmaktır; bu iki kurum iradi olmayan yollardır ve aile üyeleri bakımından bambaşka sonuçlar doğurur, atıf oraya yapılsaydı sonuç tamamen değişirdi. Malların tasfiyesine ilişkin rejim ise yalnız vatandaşlığı İPTAL edilenler hakkında uygulanır ve bu maddeyle hiçbir ilgisi yoktur; ispat hükümleri de kayıp sonuçlarına ilişkin bir atfın konusu olamaz.",
+    "dayanak": "5901 sayılı Kanun md 35/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-34",
+    "articleNo": "36",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının ispatı ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Nüfus kayıtları, aksi sabit oluncaya kadar ilgilinin Türk vatandaşı olduğuna karine teşkil eder.",
+      "B": "Pasaport veya pasaport yerine geçen belgeler, aksi sabit oluncaya kadar ilgilinin Türk vatandaşı olduğuna karine teşkil eder.",
+      "C": "Nüfus cüzdanları, ilgilinin Türk vatandaşı olduğunun aksi ileri sürülemeyen kesin delilidir.",
+      "D": "Bir kişinin Türk vatandaşı olup olmadığı konusunda tereddüde düşülmesi hâlinde bu husus Bakanlıktan sorulur.",
+      "E": "Türk vatandaşlığının ispatı herhangi bir şekle tabi değildir."
+    },
+    "dogru": "C",
+    "aciklama": "36 ncı maddenin ikinci fıkrasında sayılan nüfus kayıtları, nüfus cüzdanları ile pasaport ve pasaport yerine geçen belgeler AKSİ SABİT OLUNCAYA KADAR karine teşkil eder; yani bunlar aksi ispatlanabilen adi karinelerdir, kesin delil değildir. Karine ile kesin delil arasındaki bu fark maddedeki tek ve asıl tuzaktır. Maddenin birinci fıkrasına göre ispat herhangi bir şekle tabi değildir; sayılan belgeler ispat yollarını sınırlamaz, yalnızca karine oluşturur. Tereddüt hâlinde ise durum BAKANLIKTAN sorulur; Kanunun 3 üncü maddesindeki tanım gereği bu Bakanlık İçişleri Bakanlığıdır.",
+    "dayanak": "5901 sayılı Kanun md 36",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-35",
+    "articleNo": "37",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının kazanılması ve kaybına ilişkin başvurular nereye ve nasıl yapılır?",
+    "siklar": {
+      "A": "Yurt içinde nüfus müdürlüklerine, yurt dışında dış temsilciliklere yalnızca bizzat",
+      "B": "Her hâlde doğrudan Bakanlığa bizzat veya vekâletname ile",
+      "C": "Yurt içinde ikamet edilen yer kaymakamlığına, yurt dışında dış temsilciliklere bizzat veya vekâletname ile",
+      "D": "Yurt içinde ikamet edilen yer valiliğine, yurt dışında dış temsilciliklere yalnızca bizzat",
+      "E": "Yurt içinde ikamet edilen yer valiliğine, yurt dışında dış temsilciliklere bizzat veya vekâletname ile"
+    },
+    "dogru": "E",
+    "aciklama": "Müracaat makamını düzenleyen maddeye göre Türk vatandaşlığının kazanılması ve kaybına ilişkin başvurular YURT İÇİNDE İKAMET EDİLEN YER VALİLİĞİNE, YURT DIŞINDA İSE DIŞ TEMSİLCİLİKLERE, BİZZAT VEYA BU HAKKIN KULLANILMASINA İLİŞKİN VEKÂLETNAME İLE yapılır. Maddenin birbirinden bağımsız iki unsuru vardır ve çeldiriciler bunlardan yalnız birini bozar: makam doğru verilip vekâletname imkânı kaldırılır ya da usul doğru verilip makam ilçe veya birim düzeyine indirilir. Sorunun tuzağı budur; aday doğru bildiği unsuru görünce şıkkı okumadan işaretler. Kanun vatandaşlık işlemlerinde muhatabı İL düzeyinde belirlemiştir, bu nedenle kaymakamlık ve nüfus müdürlüğü bu maddede başvuru makamı değildir. Vekâletnamenin niteliği de ayrı bir ayrıntıdır: genel vekâletname yetmez, vekâletnamenin BU HAKKIN KULLANILMASINA ÖZGÜ olması gerekir.",
+    "dayanak": "5901 sayılı Kanun md 37/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-36",
+    "articleNo": "39",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, bu Kanuna göre alınan kararlarda maddi bir hata veya eksikliğin bulunduğunun sonradan anlaşılması hâlinde düzeltme veya tamamlama kararı hangi makamca alınır?",
+    "siklar": {
+      "A": "Genel Müdürlükçe",
+      "B": "Cumhurbaşkanınca",
+      "C": "Kararı veren makamca",
+      "D": "İkamet edilen yer valiliğince",
+      "E": "Bakanlıkça"
+    },
+    "dogru": "A",
+    "aciklama": "39 uncu maddeye göre Kanuna göre alınan kararlarda maddi bir hata veya eksikliğin sonradan anlaşılması hâlinde, DAYANAĞINA UYGUN ŞEKİLDE GENEL MÜDÜRLÜKÇE düzeltme veya tamamlama kararı alınır. Kanunun 3 üncü maddesindeki tanıma göre Genel Müdürlük, Nüfus ve Vatandaşlık İşleri Genel Müdürlüğüdür. Buradaki tuzak, düzeltme yetkisinin asıl kararı veren makama ait olduğu varsayımıdır; 'kararı veren makam' ölçütü Kanunda yalnız İPTAL için kullanılmıştır. Ayrıca madde 19/10/2017 tarihli ve 7039 sayılı Kanunla başlığıyla birlikte değiştirilmiştir.",
+    "dayanak": "5901 sayılı Kanun md 39/1",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p2-37",
+    "articleNo": "40",
+    "kok": "Bir kişi hakkında Türk vatandaşlığının kazanılmasına ilişkin ikinci bir karar daha verilmiş olduğu sonradan anlaşılmıştır. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu karar bakımından ne yapılır?",
+    "siklar": {
+      "A": "Karar geri alınır.",
+      "B": "Karar, kararı veren makam tarafından iptal edilir.",
+      "C": "Karar hakkında Genel Müdürlükçe düzeltme kararı alınır.",
+      "D": "Karar hakkında Genel Müdürlükçe tamamlama kararı alınır.",
+      "E": "Sonraki karar kendiliğinden geçersiz sayılır."
+    },
+    "dogru": "A",
+    "aciklama": "Vatandaşlık kararlarının geri alınmasını düzenleyen maddeye göre, vatandaşlığın kazanılması veya kaybına ilişkin kararlar HUKUKİ ŞARTLAR OLUŞMADAN veya MÜKERRER OLARAK verildiği sonradan anlaşıldığı takdirde GERİ ALINIR. Vakadaki ayırt edici unsur, aynı kişi hakkında ikinci bir kararın daha verilmiş olmasıdır; bu, maddede açıkça sayılan MÜKERRERLİK hâlidir ve doğrudan geri almayı gerektirir. Geri almanın ayırt edici yanı, kusurun ilgilide değil İŞLEMİN KENDİSİNDE bulunmasıdır; kişi bakımından herhangi bir hile ya da gizleme aranmaz. Sorunun tuzağı, Kanunun ortak hükümlerinde yan yana duran kurumları birbirinin yerine koymaktır: kişinin kazanma aşamasındaki kusurlu davranışına bağlanan sonuç ile kararın yazımındaki eksikliğe bağlanan sonuç ayrı maddelerde ve ayrı adlarla düzenlenmiştir. Ölçüt sebebin kaynağıdır. Ayrıca mükerrer karar kendiliğinden hükümsüz hâle gelmez; ortadan kaldırılması için idarenin ayrı bir geri alma işlemi tesis etmesi gerekir.",
+    "dayanak": "5901 sayılı Kanun md 40/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p2-38",
+    "articleNo": "42",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığını kazanmak üzere başvuruda bulunan Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Türk vatandaşlığını kazanabilmeleri için Kuzey Kıbrıs Türk Cumhuriyeti vatandaşlığından çıkmaları şarttır.",
+      "B": "Türk vatandaşı olmak istediklerini yazılı olarak beyan ettikleri takdirde Türk vatandaşlığını kazanırlar.",
+      "C": "Türkiye'de kesintisiz beş yıl ikamet etmeleri şartıyla Türk vatandaşlığını kazanırlar.",
+      "D": "Ancak Cumhurbaşkanı kararı ile Türk vatandaşlığını kazanabilirler.",
+      "E": "Yalnızca bir Türk vatandaşı ile evlenmeleri hâlinde Türk vatandaşlığını kazanabilirler."
+    },
+    "dogru": "B",
+    "aciklama": "42 nci maddenin birinci fıkrasına göre başvuruda bulunan Kuzey Kıbrıs Türk Cumhuriyeti vatandaşları, TÜRK VATANDAŞI OLMAK İSTEDİKLERİNİ YAZILI OLARAK BEYAN ETTİKLERİ TAKDİRDE Türk vatandaşlığını kazanırlar; ayrıca ikamet, sağlık, geçim veya dil gibi genel şartlar aranmaz ve mevcut vatandaşlıklarından ayrılmaları istenmez. Bu, Kanunun en ayrıcalıklı kazanma yollarından biridir. Maddenin ikinci fıkrası ise önemli bir sınır getirir: Kuzey Kıbrıs Türk Cumhuriyeti vatandaşlığını SONRADAN KAZANMIŞ olanlar bu kolaylıktan yararlanamaz, onlar hakkında başvuru için aranan genel şartları düzenleyen 11 inci madde hükümleri uygulanır.",
+    "dayanak": "5901 sayılı Kanun md 42",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-39",
+    "articleNo": "43",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, mülga 1312 sayılı Türk Vatandaşlığı Kanununa göre vatandaşlıktan ıskat edilmiş kişilerin yeniden Türk vatandaşlığına alınması ile ilgili aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Bu kişiler, başvurmaları hâlinde yeniden Türk vatandaşlığına alınabilirler.",
+      "B": "Bu kişiler bakımından Türkiye'de ikamet etme şartı aranmaz.",
+      "C": "Yeniden vatandaşlığa alınma, Bakanlığın teklifi üzerine Cumhurbaşkanı kararı ile gerçekleşir.",
+      "D": "Millî güvenlik bakımından engel teşkil edecek hâli bulunanların talepleri Bakanlıkça reddedilir.",
+      "E": "Aynı usul, mülga 403 sayılı Kanunun bazı bentleri uyarınca vatandaşlığını kaybedenler için de öngörülmüştür."
+    },
+    "dogru": "C",
+    "aciklama": "İlgili maddenin ikinci fıkrasına göre mülga 1312 sayılı Kanuna göre vatandaşlıktan ıskat edilmiş kişiler, başvurmaları hâlinde MİLLÎ GÜVENLİK BAKIMINDAN ENGEL TEŞKİL EDECEK BİR HÂLİ BULUNMAMAK KAYDIYLA, TÜRKİYE'DE İKAMET ETME ŞARTI ARANMAKSIZIN BAKANLIK KARARI ile yeniden Türk vatandaşlığına alınabilirler. Aynı usul, maddenin birinci fıkrasında mülga 403 sayılı Kanunun belirli bentleri uyarınca vatandaşlığını kaybetmiş olanlar için de öngörülmüştür; üçüncü fıkra ise millî güvenlik bakımından engel hâli bulunanların taleplerinin Bakanlıkça reddedileceğini belirtir. Sorunun tuzağı, karar makamını yükseltmektir: Kanunun kayıp rejiminde bazı kararlar en üst makama bırakılmış olduğundan aday bu maddede de aynı makamı arar, oysa burada yetki Bakanlıktadır. İkinci tuzak, alınmanın kendiliğinden gerçekleştiği yanılgısıdır; madde 'alınabilirler' diyerek idareye takdir tanımıştır.",
+    "dayanak": "5901 sayılı Kanun md 43/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-40",
+    "articleNo": "44",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre, herhangi bir nedenle yabancı bir devlet vatandaşlığını kazanan kişilerin bu durumlarına ilişkin belgeleri ibraz etmeleri ve kayden aynı kişiler oldukları tespit edildiğinde ne yapılır?",
+    "siklar": {
+      "A": "Nüfus aile kütüklerindeki kayıtlarına çok vatandaşlığa sahip olduklarına dair açıklama yapılır.",
+      "B": "Türk vatandaşlıkları Cumhurbaşkanı kararı ile kendiliğinden kaybettirilir.",
+      "C": "Haklarında Bakanlıkça çıkma belgesi düzenlenerek vatandaşlık bağı sona erdirilir.",
+      "D": "Kayıtları nüfus aile kütüğünden Mavi Kartlılar Kütüğüne aktarılır.",
+      "E": "Nüfus aile kütüklerindeki kayıtları kapatılarak yabancı muamelesine tabi tutulurlar."
+    },
+    "dogru": "A",
+    "aciklama": "Çok vatandaşlığı düzenleyen maddeye göre, yabancı bir devlet vatandaşlığını herhangi bir nedenle kazananların bu duruma ilişkin belgeleri ibraz etmeleri ve yapılacak inceleme sonucunda KAYDEN AYNI KİŞİLER OLDUKLARININ TESPİTİ hâlinde, NÜFUS AİLE KÜTÜKLERİNDEKİ KAYITLARINA ÇOK VATANDAŞLIĞA SAHİP OLDUKLARINA DAİR AÇIKLAMA YAPILIR. Kanun çok vatandaşlığı yasaklamamış, yalnızca kayda geçirilmesini öngörmüştür; işlem bildirici niteliktedir ve kişinin Türk vatandaşlığı aynen devam eder. Sorunun tuzağı, yabancı vatandaşlık kazanmanın kendiliğinden Türk vatandaşlığını sona erdirdiği yanılgısıdır; Kanunda kayıp yolları sınırlı olarak sayılmıştır ve yabancı vatandaşlık kazanmak bunlardan biri değildir. Kayıt kapatma, çıkma belgesi düzenlenmesi ve Mavi Kart uygulaması ise ancak Türk vatandaşlığının gerçekten KAYBEDİLDİĞİ hâllerde gündeme gelir; burada tamamlanmış bir kayıp yoktur.",
+    "dayanak": "5901 sayılı Kanun md 44/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p2-41",
+    "articleNo": "45",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının sonradan kazanılmasına ilişkin verilen hizmet bedeli karşılığı kim tarafından belirlenir?",
+    "siklar": {
+      "A": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünce",
+      "B": "İkamet edilen yer valiliğince",
+      "C": "Bakanlık ve Maliye Bakanlığınca birlikte",
+      "D": "Yalnızca Bakanlıkça",
+      "E": "Cumhurbaşkanınca"
+    },
+    "dogru": "C",
+    "aciklama": "45 inci maddenin birinci fıkrasına göre Türk vatandaşlığının sonradan kazanılmasına ilişkin verilen hizmet bedeli karşılığı BAKANLIK VE MALİYE BAKANLIĞINCA BİRLİKTE belirlenir ve tahsil edilen tutarlar bütçeye gelir kaydedilir. Belirleme yetkisinin İKİ BAKANLIĞA BİRLİKTE verilmiş olması maddenin ayırt edici yanıdır; tek bir makama indirgeyen şıklar bu yüzden yanlıştır. Maddenin ikinci fıkrası ayrıca bir muafiyet getirir: 193 sayılı Gelir Vergisi Kanununa göre GELİRİ OLMAYANLAR ve kendileriyle birlikte işlem gören ERGİN OLMAYAN ÇOCUKLARI için hizmet bedeli alınmaz.",
+    "dayanak": "5901 sayılı Kanun md 45/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-42",
+    "articleNo": "46",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'nun uygulanmasına ilişkin usul ve esaslar hangi makam tarafından çıkarılacak yönetmelikle düzenlenir?",
+    "siklar": {
+      "A": "İçişleri Bakanlığı",
+      "B": "Cumhurbaşkanı",
+      "C": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü",
+      "D": "Türkiye Büyük Millet Meclisi",
+      "E": "Adalet Bakanlığı"
+    },
+    "dogru": "B",
+    "aciklama": "46 ncı maddeye göre Kanunun uygulanmasına ilişkin usul ve esaslar CUMHURBAŞKANI tarafından çıkarılacak YÖNETMELİKLE düzenlenir. Maddenin özgün metninde bu yetki Bakanlar Kuruluna aitti; 2/7/2018 tarihli ve 700 sayılı KHK ile ibare Cumhurbaşkanı olarak değiştirilmiştir, bu nedenle eski kaynaklardan çalışanların işaretlediği Bakanlar Kurulu cevabı artık geçerli değildir. Kanunun bazı teknik konularda Bakanlığa da düzenleme yetkisi verdiği unutulmamalıdır; ancak Kanunun uygulanmasına ilişkin GENEL yönetmelik Cumhurbaşkanınca çıkarılır. Yönetmeliğin hazırlanma süresi ise Geçici 2 nci maddede altı ay olarak öngörülmüştür.",
+    "dayanak": "5901 sayılı Kanun md 46/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p2-43",
+    "articleNo": "Ek 1",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'nun saklı nüfusa ilişkin hükmüne göre, onsekiz yaşını tamamlayıncaya kadar herhangi bir nedenle aile kütüklerine kaydedilmemiş ve yabancı bir devletle vatandaşlık bağı bulunmayan kişiler hangi şartla Türk vatandaşlığını kazanır?",
+    "siklar": {
+      "A": "Türkiye'de kesintisiz beş yıl ikamet ettiklerini nüfus kayıtlarıyla belgelemeleri hâlinde",
+      "B": "Ana veya baba, bunlar ölmüşse varsa kardeşleri ile hısımlığını gösterir tıbbî rapor ibraz etmeleri hâlinde",
+      "C": "Hısımlığın en az iki tanığın beyanı ile ispatlanması ve valilikçe onaylanması hâlinde",
+      "D": "Bakanlığın teklifi üzerine alınacak Cumhurbaşkanı kararı ile",
+      "E": "Mahkemeden alınacak hısımlık tespiti kararını ibraz etmeleri hâlinde"
+    },
+    "dogru": "B",
+    "aciklama": "Saklı nüfusu düzenleyen ek maddeye göre, onsekiz yaşını tamamlayıncaya kadar herhangi bir nedenle aile kütüklerine kaydedilmemiş olan ve YABANCI BİR DEVLETLE VATANDAŞLIK BAĞI BULUNMAYAN kişiler; ANA VEYA BABA, bunların ölmüş olması hâlinde VARSA KARDEŞLERİ ile hısımlığını gösterir TIBBÎ RAPOR ibraz etmeleri durumunda Türk vatandaşlığını kazanır. Maddenin iki ayırt edici yönü vardır: ispat aracı tanık beyanı ya da mahkeme kararı değil TIBBÎ RAPORDUR ve vatandaşlık ayrıca bir makam kararına gerek kalmaksızın şartların gerçekleşmesiyle KAZANILIR. Sorunun tuzağı, hısımlığın ispatını genel usul hukukunun araçlarıyla düşünmektir; hüküm biyolojik bağın tespitini esas aldığından tıbbî rapora bağlanmıştır. Kişinin yabancı bir devletle vatandaşlık bağının bulunmaması da hükmün ön koşuludur; bu bağ varsa madde hiç uygulanmaz. Rapor bakımından sıralama da bağlayıcıdır: önce ana veya baba, ancak onların ölmüş olması hâlinde kardeşler esas alınır.",
+    "dayanak": "5901 sayılı Kanun Ek md 1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "articleNo": "33",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre vatandaşlığı iptal edilenlerin malları ile ilgili aşağıdakilerden hangileri doğrudur?\nI. Vatandaşlığı iptal edilenler hakkında Yabancıların Türkiye'de İkamet ve Seyahatleri Hakkında Kanun hükümleri uygulanır.\nII. Malların tasfiyesinin gerekli görüldüğü hâller iptal kararında belirtilir.\nIII. Süresi içinde tasfiye edilmeyen mallar Hazinece satılarak bedelleri Hazineye gelir kaydedilir.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Malların tasfiyesini düzenleyen maddenin birinci fıkrası üç halkadan oluşur. Önce vatandaşlığı iptal edilenler hakkında 15/7/1950 tarihli ve 5683 sayılı YABANCILARIN TÜRKİYE'DE İKAMET VE SEYAHATLERİ HAKKINDA KANUN hükümlerinin uygulanacağı belirtilir; bu nedenle I doğrudur. Ardından malların tasfiyesinin gerekli görüldüğü hâllerde bu hususun İPTAL KARARINDA BELİRTİLECEĞİ düzenlenir; II de doğrudur ve maddenin en ince ayrıntısı buradadır: tasfiye zorunluluğu her iptal kararında kendiliğinden doğmaz, karara ayrıca yazılmış olmalıdır. III ise fıkranın son cümlesini bilinçli olarak bozmaktadır: süresi içinde tasfiye edilmeyen mallar gerçekten HAZİNECE SATILIR, ancak bedeller Hazineye gelir kaydedilmez; kişinin NAM VE HESABINA kamu haznedarlığı sistemine dahil bir KAMU BANKASINA yatırılır. Aradaki fark esaslıdır: Kanun bir müsadere değil, malvarlığı değerinin biçim değiştirerek korunmasını öngörmüştür. Bu malvarlığı rejimi yalnız iptal bakımından getirilmiştir.",
+    "dayanak": "5901 sayılı Kanun md 33/1",
+    "zorluk": "hard",
+    "tur": "onerme",
+    "id": "5901-p2-44"
+  },
+  {
+    "articleNo": "28",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'nun çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlere ilişkin 28 inci maddesi hükümleri bakımından aşağıdakilerden hangileri doğrudur?\nI. Bu kişilere kimlik numarası verilmez; işlemlerinde yalnızca Mavi Kart numarası kullanılır.\nII. Mavi Kartlılar Kütüğünün elektronik ortamda tutulmasına ilişkin usul ve esaslar Bakanlıkça belirlenir.\nIII. Kamu kurum ve kuruluşları, madde hükümlerinin uygulanması amacıyla her türlü tedbiri alır ve gerekli düzenlemeleri yapar.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "C",
+    "aciklama": "I yanlıştır ve maddenin sekizinci fıkrasını tersine çevirmektedir: bu kişilere Bakanlığın tespit edeceği esaslar çerçevesinde KİMLİK NUMARASI VERİLİR ve Türkiye Cumhuriyeti kimlik numarası aranan yerlerde bu numara kullanılır; yani kişi kimlik numarasız bırakılmaz, kendisine ayrı bir numara tahsis edilir. II doğrudur; dokuzuncu fıkraya göre Mavi Kartın düzenlenmesi ve dağıtılması ile Mavi Kartlılar Kütüğünün elektronik ortamda tutulmasına ilişkin usul ve esasları BAKANLIK belirler. III de doğrudur; onuncu fıkra kamu kurum ve kuruluşlarına maddenin uygulanması amacıyla her türlü tedbiri alma ve gerekli düzenlemeleri yapma ÖDEVİ yüklemiştir. Sorunun tuzağı, maddenin son fıkralarındaki düzenleme yetkilerini birbirine karıştırmaktır; maddenin teknik ve idari ayrıntıları Bakanlığa bırakılmış, buna karşılık haklardan yararlanacak altsoyun derecesine ilişkin yetki başka bir makama tanınmıştır. Bu iki yetki sınavda bilinçle yer değiştirilir. Ayrıca III bir hak değil bir ÖDEV düzenlemektedir; kök bu nedenle 'haklar' değil 'madde hükümleri' bakımından sorulmuştur.",
+    "dayanak": "5901 sayılı Kanun md 28/8-9-10",
+    "zorluk": "hard",
+    "tur": "onerme",
+    "id": "5901-p2-45"
+  }
+]

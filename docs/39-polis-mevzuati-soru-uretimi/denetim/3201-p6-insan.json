@@ -1,0 +1,30 @@
+[
+  {
+    "id": "3201-p6-03",
+    "not": "Kalite denetçisinin biçim ipucu itirazı (doğru cevap % 13,34 setteki tek küsuratlı değer ve aynı zamanda en uzun şık) kullanıcı onayıyla giderildi. Şıklar Ek 21'in kendi ikinci kuralından türetilen gerçek değerlerle değiştirildi: İçişleri Bakanı 'hizalarında gösterilen oranların en çok yarısına kadar' ilave ödeme yapabildiği için % 6,67 (13,34'ün yarısı), % 13,50 (27'nin), % 15,50 (31'in), % 17,50 (35'in) hepsi maddeden çıkan değerler. Beş şık da küsuratlı ve eş uzunlukta; ölçülen hata artık gerçek bir aday hatası (temel oran ile ilave ödeme tavanının karıştırılması). Açıklamadan 'Bu oran, Kanundaki tek KÜSURATLI yüzdedir' cümlesi (kusurun itirafı) ve q06'nın cevap bileşenini (%20) sızdıran cümle çıkarıldı. Soru YAYINDA olduğu için düzeltme bankada da uygulandı (doc39-yayindaki-soruyu-duzelt.ts), contentHash yenilendi, yayın bağı korundu."
+  },
+  {
+    "id": "3201-p6-05",
+    "not": "Dil denetçisinin taşınmış sızıntı itirazı giderildi (kalite ONAY vermişti). E şıkkı makam sorusu olmaktan çıkarıldı — q02 ve q03'ün açıklamaları 'İçişleri Bakanlığının belirleyeceği usul ve esaslara göre' diyerek makamı zaten veriyordu ve q03 yayında olduğu için düzeltme burada yapılmak zorundaydı. Yeni E, denetçinin birebir önerdiği kapsam ifadesi. Metinden doğrulandı: Ek 21 'büyük ölçekli yolsuzluk, terör VE BENZERİ faaliyetlere karşı' diyor, dolayısıyla 'yalnızca yolsuzluk ve terör' yanlıştır — olumsuz kökte aranan yanlış ifade budur. Kalan dört şık mevzuat denetçisince zaten doğrulanmıştı."
+  },
+  {
+    "id": "3201-p6-18",
+    "not": "Kalite denetçisinin itirazı ('yalnızca merkez teşkilatı' kalıbı dosyada üç kez ve üçünde de belirleyici tarafta) dil denetçisinin gerekçesiyle kapandı: dil, kalıbın q18'de METNİN KENDİ kapsam cümlesinden doğduğunu ve meşru olduğunu, kusurun q20'de bulunduğunu (orada maddenin ölçütü hizmet sınıfıdır, merkez/taşra ekseni fıkraya dışarıdan takılmıştır) gösterdi ve düzeltmeyi q20'ye yazdı. Üçüncü kullanım (q32) Ek 35 gerekçesiyle zaten yayından çekildi. q20 düzeltmesi uygulandığı için kalıp dosyada tek meşru kullanıma indi; q18'e dokunmaya gerek kalmadı."
+  },
+  {
+    "id": "3201-p6-20",
+    "not": "Dil denetçisinin kalıp itirazı birebir uygulandı (kalite ONAY vermişti): D şıkkı 'yalnızca merkez teşkilatı' kalıbından çıkarılıp metinde karşılığı olmayan idari bir çeldiriciye çevrildi. Metinden doğrulandı: Ek 29/2 personel sayısının hesabında 'Emniyet Hizmetleri Sınıfı DIŞINDAKİ kadro sayısı esas alınır' diyor; maddede kadro sayısını Cumhurbaşkanı kararına bağlayan hiçbir kayıt yok, dolayısıyla yeni D olumsuz kökte aranan yanlış ifadedir. Kalan dört şık değişmedi."
+  },
+  {
+    "id": "3201-p6-24",
+    "not": "Dil denetçisinin ikinci-yanlış itirazı giderildi (kalite ONAY vermişti). E, malullük ölçütünün yalnız ikinci yarısını veriyordu; metin iki unsuru 'VE' ile bağlıyor ('yaşamak için gereken hareketleri yapamayacak VE başkasının yardım ve desteğine muhtaç olacak derecede malul'), dolayısıyla eksik tanım olumsuz kökte savunulabilir ikinci bir yanlış doğuruyordu. E, Ek 30/2'nin iki unsurunu birlikte veren ifadeyle değiştirildi. Yan fayda: dil denetçisinin 'metinde geçmiyor, üretici kısaltması' dediği 'ağır malul' etiketi de bu şıktan kalktı. Doğru cevap (C) ve kalan şıklar değişmedi."
+  },
+  {
+    "id": "3201-p6-34",
+    "not": "Dil denetçisinin sahipsiz iyelik itirazı giderildi (kalite ONAY vermişti). Eski B'de tek cümlede üç 'aylık' vardı ve üçüncüsünün iyelik eki sahipsizdi; cümle dilbilgisel olarak başlangıç tarihini görev aylığına bağlamayı da kaldırıyordu, oysa o tarih SGK aylığına ait. Sorunun ölçtüğü ayrım tam bu iki tarih olduğu için belirsizlik ölçme eksenini bulanıklaştırıyordu. B, Ek 37/1'in lafzına birebir oturtuldu: metin 'bu aylığın bağlandığı tarihten itibaren görev aylıkları kesilir. Ancak … bağlanan aylığın başlangıç tarihine kadar yapılan ödemeler ilgililerden tahsil edilmez' diyor. Doğru cevap B olmaya devam ediyor; anlam değişmedi, belirsizlik kalktı."
+  },
+  {
+    "id": "3201-p6-36",
+    "not": "İKİ denetçinin (kalite ve dil) aynı itirazı — A ile D'nin birbirinin daraltılmış inkârı olması, adayı %50'ye daraltıyordu — dil denetçisinin önerdiği biçimde giderildi. D, aynanın dışına çıkarılıp maddenin başka bir fıkrasından alınan ve bu hâle uymayan bir çeldiriciyle değiştirildi. Metinden doğrulandı: Ek 37/3'teki 'en son görev yaptıkları birim tarafından incelenir' hükmü gaiplik SÜRECİNE değil, gaiplik kararından SONRA DÖNENLERE ilişkindir; dolayısıyla terfi ve özlük haklarının dondurulduğu döneme ilişkin bir soruda yanlış çeldiricidir. Doğru cevap A ('terfi ve özlük hakları dondurulur') Ek 37/2'nin son cümlesiyle birebir."
+  }
+]

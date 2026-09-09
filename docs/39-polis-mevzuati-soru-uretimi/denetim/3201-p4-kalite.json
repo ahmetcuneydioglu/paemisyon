@@ -1,0 +1,139 @@
+[
+ {
+  "id": "3201-p4-01",
+  "karar": "ONAY",
+  "gerekce": "Tur1'deki tek gerekçe (kökün md 81'in sonucunu basması ve q02/q03'e sızdırması) partiden q02 ve q03 çıkarılınca ortadan kalktı; md 81 artık tek soruyla temsil ediliyor. Beş şık da metinle uyumlu, doğru şık (92) en uzun değil (max 110). Kayda geçen tek şüphe: A ('iki şart birlikte aranır') ile D ('yalnız inzibati ceza gerektiriyorsa bu yola gidilmez') mantıken birbirinin sonucu; A'yı doğru bilen adayda D kendiliğinden doğrulanıyor. Ölçmeyi bozacak düzeyde değil, ama şık seti bir çeldirici kadar bilgi taşıyor."
+ },
+ {
+  "id": "3201-p4-04",
+  "karar": "REVIZYON",
+  "gerekce": "Hüküm ve doğru cevap yerinde (md 82'nin yürürlükteki tek fıkrası kursları ve yarışma sınavı/seçmelerini sayar; D'deki 'zorunlu ikinci bölge hizmeti yer değiştirmeleri' metinde yok). Tur1'de tespit edilen sızıntı (branş/asli memurluk cümlesi -> q09'un B ve C şıkları) açıklamadan tamamen silinmiş, dosyanın hiçbir yerine de taşınmamış — doğrulandı. Kalan kusur şık kurgusundadır: B şıkkı 'Kısa süreli durdurma cezası bakımından da AYNI ENGEL doğar', C 'ENGEL ... de kapsar', E 'ENGEL, cezanın süresi ile sınırlıdır' diyor; 'engel' kökte tanımlanmadığı için bu üç şıkkın göndermesi yalnız A şıkkıdır. Şıklar zincirleme birbirine bağlı, tek başına okunamıyor — beş şıklı çoktan seçmelide şık bağımsızlığı ilkesinin ihlali.",
+  "oneri": "B: 'Kısa süreli durdurma cezaları da derece yükselmesi kurslarına girmeyi önler'; C: 'Bu ceza, yarışma sınavı veya seçmelerine girmeyi de önler'; E: 'Bu engel, cezanın süresi ile sınırlıdır' biçiminde her şık kendi başına okunabilir hâle getirilsin. Şıkların hiçbiri 'aynı engel' gibi başka bir şıkka gönderme yapmasın."
+ },
+ {
+  "id": "3201-p4-05",
+  "karar": "ONAY",
+  "gerekce": "md 85/1 ile birebir. Tur1'deki tek not (kadro cetveli cümlesi q33'ün şıklarını zayıflatıyor) q33'ün partiden çıkarılmasıyla konusuz kaldı; cümle dosyada başka hiçbir sorunun cevabını vermiyor. Şıklar 39-58 karakter aralığında dengeli."
+ },
+ {
+  "id": "3201-p4-06",
+  "karar": "ONAY",
+  "gerekce": "md 85/4 ile birebir ('yılda en az bir kez'). Şık uzunlukları 12-13 karakter — dosyanın en dengeli seti, uzunluk ipucu yok. Açıklamadaki iki/üç/beş yıl karşılaştırmaları md 55'te gerçekten geçiyor; 'ÜÇ YIL' ibaresi q26'nın doğru cevabındaki üç yılla aynı sayı olsa da bağlam (rütbe terfii) tamamen farklı, sızıntı oluşturmuyor."
+ },
+ {
+  "id": "3201-p4-07",
+  "karar": "ONAY",
+  "gerekce": "md 85/3 ile birebir ('merkezde'). Bankada 'merkezde' kelimesi geçiyor (md 3 sorusu) ama bağlam jandarma-polis irtibatı; cevabı vermiyor. Not: 'medium' etiketi tek kelimelik konum bilgisi için yüksek, 'easy' daha doğru olurdu — kozmetik, itiraz sayılmadı."
+ },
+ {
+  "id": "3201-p4-08",
+  "karar": "ONAY",
+  "gerekce": "md 85/4 son cümlesiyle birebir (form ölçütleri EGM'ce). Yönetmelik yetkisi ile form yetkisi ayrımı gerçek ve sınavlık. Kayda geçen şüphe: q05'in kökü de sistemi EGM'nin stratejik planına bağladığı için dosyayı sırayla okuyan adayda EGM'ye yönelme eğilimi doğabilir; ancak q08'in şıkları arasında yönetmelik mercii (İçişleri Bakanlığı) de bulunduğundan ayrım hâlâ ölçülüyor."
+ },
+ {
+  "id": "3201-p4-09",
+  "karar": "ONAY",
+  "gerekce": "md 85/2'nin sayımıyla birebir; disiplin sayımda yok. Tur1'in gerekçesi olan q04 -> B/C sızıntısı kapatılmış ve başka bir soruya TAŞINMAMIŞ (dosyada 'asli memurluğa' ve 'branş' yalnız bu sorunun kendi metninde geçiyor — tarandı). Doğru şık 28 karakter, en uzun değil (34). Olumsuzluk 'SAYILMAMIŞTIR' biçiminde vurgulanmış."
+ },
+ {
+  "id": "3201-p4-10",
+  "karar": "RED",
+  "gerekce": "Tur1'deki banka çakışması B şıkkı değiştirilerek giderilmiş — doğrulandı: bankadaki md 86 sorusunun kökü ve dört şıkkı artık bu sorunun hiçbir şıkkıyla örtüşmüyor. Ancak sızıntı yok olmadı, DOSYA İÇİNE kaydı ve bu kez KÖKLERDEN geliyor: (1) q11'in kökü 'kendisine tevdi edilen görevleri cesaret, feragat, kahramanlık veya üstün başarı ile yerine getiren EGM personeline MADALYA verme yetkisi' diyerek bu sorunun C şıkkını ('...üstün başarı ile yerine getirenler' para ödülü alır) doğrudan eliyor; (2) q13'ün kökü yabancı devlet madalyasının bir TAKMA meselesi olduğunu kurarak D şıkkını ('Başka devletlerce madalya tevcih edilmiş olanlar' para ödülü alır) eliyor. Adayın önünde beş değil üç seçenek kalıyor. Bu iki kök yeniden yazılamaz (q11 ve q12 doğrudan o fıkranın konusudur), yani kusur açıklama silmekle giderilemez. Ayrıca md 86 partide 6 soruyla zaten aşırı temsil ediliyor ve bu soru setin en zayıfı: kökü kat aralığını (iki-beş kat) hazır verdiği için geriye yalnız 'hangi fiil grubu' eşleştirmesi kalıyor."
+ },
+ {
+  "id": "3201-p4-11",
+  "karar": "ONAY",
+  "gerekce": "md 86'nın 2024 ek fıkrasıyla birebir (İçişleri Bakanı). Tur1'de tespit edilen q11<->q13 ayna sızıntısı kapatılmış: her iki açıklamada da karşı sorunun makamı artık ADLANDIRILMIYOR ('oradaki onayın hangi idari düzeyde arandığına dikkat edilmelidir' / 'onayın hangi idari kademede arandığı ... farklılaşabilmektedir'). Brief'in koşullu kuralı gereği bu kabul edilebilir sınırda. Kayda geçen şüphe: iki cümle hâlâ karşılıklı işaret ediyor; ölçme değeri katmadıkları için tümüyle silinmeleri dosyayı daha güvenli yapardı."
+ },
+ {
+  "id": "3201-p4-12",
+  "karar": "ONAY",
+  "gerekce": "Üç madalya adı md 86'nın 2024 ek fıkrasıyla birebir. 'Veriliş sebebini madalya adı sanma' üzerine kurulu çeldiriciler dosyanın en iyi setlerinden. Not: doğru şık (23 karakter) tek başına en KISA şık; ters yönde zayıf bir ipucu, ayırt edici değil. q11'in kökü fıkranın sebep ibaresini bassa da bu, çeldiricileri güçlendiriyor, cevabı vermiyor."
+ },
+ {
+  "id": "3201-p4-13",
+  "karar": "ONAY",
+  "gerekce": "md 86 ile birebir ('İçişleri Bakanlığınca tasvip ve tescil edildikten sonra takılabilir'). Ayna sızıntısı q11 ile birlikte kapatılmış. Tur1'in ikinci gerekçesi olan uzunluk ipucu da giderilmiş: doğru şık 49, en uzun şık 54 karakter. 'Tasvip ve tescil' iki aşamalılığı artık C şıkkında da var, tek ayırt edici işaret olmaktan çıkmış."
+ },
+ {
+  "id": "3201-p4-14",
+  "karar": "ONAY",
+  "gerekce": "md 86 ile birebir ('bir defaya mahsus olmak üzere bütçeden'). Tur1'in iki isteği de yerine getirilmiş: zorluk 'medium'a çekilmiş ve Sandık gelirlerini haber veren cümle silinmiş — q23'ün gelir sayımını eleyecek hiçbir ifade kalmamış (tarandı; 'bağış ve yardımlar' bu açıklamada artık geçmiyor)."
+ },
+ {
+  "id": "3201-p4-15",
+  "karar": "ONAY",
+  "gerekce": "md 86'nın 2019 ek fıkrasıyla birebir. Tur1'de q30'un B şıkkını eleyen 'yönetmelik yetkisi başka bir merciye aittir' cümlesi silinmiş. Kayda geçen şüphe: aynı karşılaştırma ters yönden q30'un açıklamasında yeniden belirmiş ('Kanun bazı konularda Bakanlık düzeyinde düzenleme öngörürken Sandık rejiminde daha üst bir merci belirlemiştir'). Bu cümle hiçbir maddeyi adlandırmadığı ve Kanunda Bakanlık düzeyinde birden çok yönetmelik yetkisi bulunduğu (md 85 ve md 86) için bu sorunun cevabını tek başına belirlemiyor — sızıntı sayılmadı, ancak taşınma eğilimi kayda geçirildi."
+ },
+ {
+  "id": "3201-p4-17",
+  "karar": "REVIZYON",
+  "gerekce": "Doğru cevap ('Devlet') md 87 ile birebir ve hüküm bugün yürürlükte — bu soru p7/p8'de reddedilen 'tükenmiş geçiş hükmü' kategorisinde DEĞİL, dolayısıyla arkeoloji gerekçesiyle elenmez. Tur1'in sızıntı gerekçesi de giderilmiş (q19 çıkarıldı, kök tek kaleme indirildi, açıklamadaki tam liste sayımı kısaltıldı). Kalan kusur hukuki kapsamdadır: kök 'EMNİYET TEŞKİLATI MENSUPLARININ melbusat bedelleri' diyerek melbusatı bütün mensuplara teşmil ediyor; oysa md 87 melbusatı yalnız 'polis memur ve komiserlik derecelerine dahil olanlar' ile 'ayrıca yönetmelik ile kendilerine elbise ve teçhizat verilmesi kabul edilen' mensuplar bakımından Devlete yüklüyor (ilaç ve tedavi masrafları ise kayıtsızdır). Bu genelleme, aynı dosyadaki q18'in ölçtüğü ayrımın tam tersini öğretiyor: iki soru aynı hükmü çelişik biçimde anlatıyor.",
+  "oneri": "Kök şu şekilde daraltılsın: '... polis memur ve komiserlik derecelerine dâhil olanların melbusat (giyecek) bedelleri ile hastalananların ilaç ve tedavi masrafları umumiyetle kim tarafından karşılanır?' Bu düzeltme yapılmazsa soru q18 ile çeliştiği için partiden çıkarılmalıdır."
+ },
+ {
+  "id": "3201-p4-18",
+  "karar": "ONAY",
+  "gerekce": "md 87'deki 'ayrıca yönetmelik ile kendilerine elbise ve teçhizat verilmesi kabul edilen' kaydıyla birebir; iki gruplu yapı gerçek bir ayrım ölçüyor. Stil referansında da aynı tipte gerçek soru var ('... aşağıdakilerden hangisi ile belirlenir? C) Yönetmelik'), yani biçim sınav gerçeğine uygun. Doğru şık en kısa (12) — zayıf ters ipucu, itiraz düzeyinde değil."
+ },
+ {
+  "id": "3201-p4-21",
+  "karar": "RED",
+  "gerekce": "KAPATILMAMIŞ KÖK -> CEVAP SIZINTISI (tur1'de fark edilmemişti, revizyonda da giderilmedi). Bu sorunun doğru cevabı C: 'Emniyet Teşkilatı mensupları ile üyeliği devam ederken emekli olup katılım payını bırakanlardan'. q29'un kökü ise aynı grubu birebir tarif ediyor: 'Polis Bakım ve Yardım Sandığına üye iken emekli olan ve katılım payını Sandıkta bırakarak ÜYELİĞİNİ SÜRDÜREN bir kişi'. q29'un vakası, md 90/1'in ikinci üye grubunun varlığını ön kabul olarak veriyor; bu tek cümle q21'in A, B, D ve E şıklarının dördünü birden eliyor. Kusur açıklama düzeltmesiyle giderilemez: söz konusu ön kabul q29'un senaryosunun kurucu unsurudur ve çıkarılırsa q29 uygulanamaz hâle gelir. İkiliden zayıf olan bu soru elenmelidir (q29 vaka olarak hükmü uygulatıyor, q21 ise yalnız fıkrayı tanıtıyor). Ek gerekçe: md 90 partide 10 soruyla %37 pay alıyor; daraltma ilk buradan yapılmalıdır."
+ },
+ {
+  "id": "3201-p4-22",
+  "karar": "ONAY",
+  "gerekce": "md 90/2 ile birebir; E gerçekten yanlış ('mali VE İDARİ bakımdan özerk'). Tur1'in üç gerekçesinden ikisi giderilmiş: (1) doğru şık artık en uzun değil (92 / max 100); (2) q23 ve q28'in açıklamalarındaki özerklik-tüzel kişilik cümleleri silinmiş — dosyada 'özerk' kelimesi yalnız bu sorunun kendi metninde geçiyor (tarandı), yani sızıntı taşınmamış. D şıkkı ('evvelce kurulmuş Sandık') md 90 son cümlesiyle doğrulanıyor."
+ },
+ {
+  "id": "3201-p4-23",
+  "karar": "ONAY",
+  "gerekce": "Gelir sayımı md 90/2 ile birebir; hazine yardımı sayımda yok. Tur1'in gerekçesi olan 'mevcutlar ve alacaklar Devlet mallarına ait hak ve rüçhanları haizdir' cümlesi açıklamadan tamamen silinmiş ve q28'in cevabını veren hiçbir ifade dosyada kalmamış (tarandı: 'rüçhan' ve 'Devlet malları' yalnız q28'de geçiyor). Kayda geçen şüphe: D şıkkı 104 karakterle diğerlerinin (12-47) iki katından uzun; olumsuz kökte bu göze batan şık dikkat çekiyor — doğru cevap olmadığı için ipucu değeri ters yönde, ancak şık dengesi bozuk. Ayrıca olumsuzluk ('sayılmamıştır') q09'daki gibi büyük harfle vurgulanmamış."
+ },
+ {
+  "id": "3201-p4-24",
+  "karar": "ONAY",
+  "gerekce": "md 90/2 ile birebir (yüzde dokuz) ve matrah ikiliği doğru işleniyor. Şıklar 9-16 karakter, dengeli. q25'in kökü 'beş puana kadar' bandını verse de bu, aidat oranını (yüzde dokuz) ele vermiyor; açıklamadaki 'bu yetkinin hangi organa ait olduğu aynı fıkrada gösterilmiştir' cümlesi de q25'in cevabını adlandırmıyor."
+ },
+ {
+  "id": "3201-p4-25",
+  "karar": "ONAY",
+  "gerekce": "md 90/2 son cümlesiyle birebir (Sandık Genel Kurulu, beş puana kadar). Tur1'in notu gereği q30'un kökünü basan cümle kısaltılmış; kalan ifade ('başka bir merciye bırakılmıştır') makam adlandırmıyor. q30'un C şıkkının bu sorunun cevabıyla aynı kurumu göstermesi, iki sorunun birbirini çözdürmesi anlamına gelmiyor (q30'un cevabı Cumhurbaşkanı)."
+ },
+ {
+  "id": "3201-p4-26",
+  "karar": "ONAY",
+  "gerekce": "Dosyanın en iyi sorusu. Tarihler ve süre md 90'ın 2024 ek fıkrasıyla birebir; vaka gerçekten uygulama yaptırıyor ve sürenin başlangıcının Sandığa giriş olduğu ayrımını ölçüyor. Tur1'in notu doğrultusunda son cümle q27'nin A şıkkını artık adlandırmıyor ('sonraki girişliler bakımından Kanun farklı bir üyelik düzeni öngörmüştür' — daimi ortaklık ifadesi geçmiyor; tarandı: 'daimi' kelimesi dosyada yalnız q27'nin E şıkkında var)."
+ },
+ {
+  "id": "3201-p4-27",
+  "karar": "ONAY",
+  "gerekce": "md 90'ın 7159 sayılı Kanunla eklenen fıkrasıyla birebir ('görevleri süresince Sandığın daimi ortağıdır'). q26 ile oluşturduğu ikili artık karşılıklı cevap vermiyor: her iki açıklama da diğer rejimi yalnız 'farklı/daha esnek bir düzen' diye anıyor, içeriğini yazmıyor. Doğru şık 44 karakterle en kısa iki şıktan biri; uzunluk ipucu yok."
+ },
+ {
+  "id": "3201-p4-28",
+  "karar": "ONAY",
+  "gerekce": "md 90 ile birebir ('Devlet mallarına ait hak ve rüçhanları haizdir'). Tur1'in en net sızıntısı (q23'ün açıklaması cevabı birebir veriyordu) kapatılmış ve ifade dosyanın başka hiçbir yerine taşınmamış — tam metin taraması yapıldı. Bu sorunun kendi açıklamasındaki özerklik-tüzel kişilik cümlesi de kaldırılmış, q22'nin şıkları artık buradan elenmiyor."
+ },
+ {
+  "id": "3201-p4-29",
+  "karar": "ONAY",
+  "gerekce": "md 90'ın 2024 ek fıkrasıyla birebir; çalışan üye / emekli üye yardım paketi ayrımı ince ve gerçek bir ayrım, 'hard' yerinde. Vaka hükmü uygulatmak için gereken tek veriyi veriyor. Not: bu sorunun kökü q21'in cevabını verdiği için q21 elenmiştir; ikilinin korunacak tarafı budur."
+ },
+ {
+  "id": "3201-p4-30",
+  "karar": "ONAY",
+  "gerekce": "md 90 son fıkrasıyla birebir (Cumhurbaşkanı yönetmeliği). Tur1'in üç gerekçesi de karşılanmış: q15 ve q25'in 'başka bir merci' cümleleri artık B şıkkını elemiyor, q25 bu sorunun kökünü basmıyor ve doğru şık en uzun değil (47 / max 52; B ile eşit uzunlukta). Kayda geçen şüphe: açıklamadaki 'Kanun bazı konularda Bakanlık düzeyinde düzenleme öngörürken Sandık rejiminde daha üst bir merci belirlemiştir' cümlesi q15 yönünde zayıf bir işaret taşıyor; hiçbir maddeyi adlandırmadığı için itiraz sayılmadı, ancak silinmesi dosyayı daha temiz bırakır."
+ },
+ {
+  "id": "3201-p4-31",
+  "karar": "ONAY",
+  "gerekce": "md 91 ile birebir ve 'tercih edilir' (zorunluluk değil) vurgusu doğru. Tur1'in tek gerekçesi olan q20 -> cevap sızıntısı, q20'nin partiden çıkarılmasıyla ortadan kalktı; 'askerlik' kelimesi dosyada artık yalnız bu sorunun kendi metninde geçiyor (tarandı). Doğru şık 64 karakter, en uzun değil (66)."
+ },
+ {
+  "id": "3201-p4-35",
+  "karar": "ONAY",
+  "gerekce": "md 96 ile birebir; maddenin ağırlık merkezi olan olumsuz şartı ('emniyet teşkilatı ve münhal vazife bulunup bulunmamasıyla mukayyet olmaksızın') doğru yerden ölçüyor. Bu hüküm de yürürlüktedir — p7/p8'in 'tükenmiş geçici madde' RED ölçütü buraya uygulanmaz. Tur1'in E şıkkına ilişkin şüphesi giderildi: md 96 'kadroda gösterilen tahsisatile ... kullanabilir' dediğinden tahsisatın verilmesi yetkinin kullanılış şartıdır, dolayısıyla 'aranmaz' okunamaz; tek doğru cevap C'dir. Not: olumsuzluk ('aranmaz') q09'daki gibi büyük harfle vurgulanmamış — dosya genelinde birleştirilmeli."
+ }
+]

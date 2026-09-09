@@ -1,0 +1,155 @@
+[
+ {
+  "id": "3201-p7-01",
+  "articleNo": "Geçici 3",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nun geçici hükümlerinde gösterilen muadelet listesine göre, üçüncü komiserler hangi dereceye tekabül eder?",
+  "siklar": {
+   "A": "Komiser muavinliğine",
+   "B": "Komiserliğe",
+   "C": "Başkomiserliğe",
+   "D": "İkinci sınıf emniyet amirliğine",
+   "E": "Tetkik memurluğuna"
+  },
+  "dogru": "A",
+  "aciklama": "Geçici 3 üncü madde, Kanunun getirdiği yeni derecelerle o tarihte hizmette bulunan memurların unvanları arasında bir MUADELET (denklik) listesi kurar. Listenin komiser kademelerine ilişkin satırlarında üçüncü komiserler KOMİSER MUAVİNLİĞİNE, ikinci komiserler komiserliğe, birinci komiserler başkomiserliğe tekabül eder. Yani eski üçlü komiser sıralamasında sayı BÜYÜDÜKÇE derece DÜŞER; üçüncü komiser en alt kademedir ve bu yüzden en alt yeni unvan olan komiser muavinliğine denk gelir. Tuzak, sıra sayısının rütbe yüksekliği ile doğru orantılı sanılmasıdır: 'üçüncü' ibaresini gören aday listenin üçüncü satırındaki karşılığı, yani başkomiserliği işaretlemeye eğilimlidir; oysa o satır birinci komiserlere aittir. Sık karıştırılan komşu hüküm, bugün yürürlükte olan rütbe cetvelidir: yürürlükteki düzenlemede rütbe KOMİSER YARDIMCISI olarak adlandırılırken, geçici maddede dönemin terimi olan 'komiser muavinliği' kullanılmıştır. İki ibare aynı basamağı gösterir; birbirinden ayrı iki rütbe değildir ve muadelet listesi okunurken bu terim farkı gözden kaçırılmamalıdır. Listede unvanı ve muadelet derecesi gösterilen kadrolu memurlar, denk sayıldıkları YENİ derece maaşlarını alırlar; yani muadelet yalnız unvanı değil aylık derecesini de belirler.",
+  "dayanak": "3201 sayılı Kanun geçici md 3/1",
+  "zorluk": "easy",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "3201-p7-02",
+  "articleNo": "Geçici 3",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nun geçici hükümlerinde yer alan muadelet listesindeki eşleştirmelerden hangisi yanlıştır?",
+  "siklar": {
+   "A": "Birinci sınıf emniyet memuru — Birinci sınıf emniyet amirliği",
+   "B": "Üçüncü sınıf emniyet müdürlüğü — İkinci sınıf emniyet müdürlüğü",
+   "C": "İkinci sınıf emniyet memuru — İkinci sınıf emniyet amirliği",
+   "D": "Birinci sınıf emniyet müdürlüğü — İkinci sınıf emniyet müdürlüğü",
+   "E": "Merkez memuru — Tetkik başmemurluğu"
+  },
+  "dogru": "B",
+  "aciklama": "Muadelet listesinde emniyet müdürlükleri bakımından işleyen mantık, her sınıfın BİR ALT sınıfa denk sayılmasıdır: birinci sınıf emniyet müdürlüğü ikinci sınıfa, ikinci sınıf üçüncü sınıfa, üçüncü sınıf ise DÖRDÜNCÜ SINIF emniyet müdürlüğüne tekabül eder. Bu nedenle 'üçüncü sınıf emniyet müdürlüğü — ikinci sınıf emniyet müdürlüğü' eşleştirmesi YANLIŞTIR; denklik bir üst sınıfa değil, bir alt sınıfa doğrudur. Çeldirici bilinçli kurulmuştur: 'ikinci sınıf emniyet müdürlüğü' listede gerçekten bir karşılık olarak geçer, ama birinci sınıfın karşılığıdır, üçüncü sınıfın değil. Aday iki satırı üst üste bindirdiğinde yanılır. Diğer seçeneklerin tamamı listede aynen yer alır: emniyet MEMURU kademeleri için karşılık emniyet AMİRLİĞİ kademeleridir ve burada sınıf numarası KORUNUR (birinci sınıf memur birinci sınıf amirliğe, ikinci sınıf memur ikinci sınıf amirliğe). Görüldüğü gibi liste tek bir formüle indirgenemez: müdürlüklerde bir kademe DÜŞÜŞ, memurluk-amirlik geçişinde ise sınıf numarasının AYNEN korunması söz konusudur. Merkez memurluğu ise ayrı bir satırda tetkik başmemurluğuna denk sayılmıştır.",
+  "dayanak": "3201 sayılı Kanun geçici md 3/1",
+  "zorluk": "hard",
+  "tur": "ayrinti"
+ },
+ {
+  "id": "3201-p7-03",
+  "articleNo": "Geçici 3",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nun geçici hükümlerine göre, başkomiser olarak istihdam edilen polis merkez memurları, münhal vukuunda tercihan tayin edilmek üzere hangi rütbenin hakkını iktisap ederler?",
+  "siklar": {
+   "A": "Birinci sınıf emniyet amirliği",
+   "B": "Tetkik başmemurluğu",
+   "C": "Dördüncü sınıf emniyet müdürlüğü",
+   "D": "Komiserlik",
+   "E": "İkinci sınıf emniyet amirliği"
+  },
+  "dogru": "E",
+  "aciklama": "Geçici 3 üncü maddenin son fıkrası polis merkez memurları için iki ayrı sonuç öngörür: bunlar BAŞKOMİSER olarak istihdam edilirler ve ayrıca, münhal (boşalma) vukuunda TERCİHAN tayin edilmek üzere İKİNCİ SINIF EMNİYET AMİRLİĞİ hakkını iktisap ederler. Buradaki ayrım kritiktir: fiilen yürütülen görev başkomiserliktir; ikinci sınıf emniyet amirliği ise hemen doğan bir rütbe değil, kadro boşaldığında ÖNCELİK tanıyan kazanılmış bir HAKTIR. Tuzak, iki unsurun tek bir unvan sanılmasıdır; aday istihdam rütbesi ile iktisap edilen hakkı aynı kutuya koyarsa 'başkomiserlik' ya da onun bir üstü olan 'birinci sınıf emniyet amirliği' yönünde yanılır. Fıkra birinci sınıf değil, İKİNCİ sınıf emniyet amirliğini işaret etmektedir. Sık karıştırılan komşu hüküm, aynı maddenin muadelet listesindeki 'merkez memuru' satırıdır: liste 'merkez memuru' için başka bir karşılık gösterirken, 'polis merkez memurları' için bu ayrı ve özel fıkra sevk edilmiştir. Unvan benzerliği nedeniyle iki düzenleme birbirinin yerine kullanılamaz; özel fıkra listedeki genel denklikten bağımsızdır.",
+  "dayanak": "3201 sayılı Kanun geçici md 3/3",
+  "zorluk": "medium",
+  "tur": "ayrinti"
+ },
+ {
+  "id": "3201-p7-04",
+  "articleNo": "Geçici 6",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'na göre, askerlik hizmetlerini Emniyet Genel Müdürlüğü emrinde üniformalı polis olarak yapmak üzere seçilenler, askerlik eğitimini başarı ile bitirdikleri takdirde ne şekilde tayin olunurlar?",
+  "siklar": {
+   "A": "Polis memurluklarına stajyer olarak tayin olunurlar",
+   "B": "Polis memurluklarına asaleten tayin olunur, adaylık aranmaz",
+   "C": "Komiser yardımcılığına aday memur olarak atanırlar",
+   "D": "Çarşı ve mahalle bekçiliği kadrolarına atanırlar",
+   "E": "Muamelat memurluklarına derece maaşları ile tayin edilirler"
+  },
+  "dogru": "A",
+  "aciklama": "Geçici 6 ncı madde, askerlik hizmetini Emniyet Genel Müdürlüğü emrinde üniformalı polis olarak yapacakların seçimini ve sonrasını düzenler. Hüküm iki aşamalıdır: önce seçim yapılır, ardından askerlik EĞİTİMİNİ başarı ile bitirenler POLİS MEMURLUKLARINA STAJYER olarak tayin olunur. Ölçülen ayrıntı, tayinin ASALETEN değil STAJYER sıfatıyla yapılmasıdır; madde askerlik eğitimini başarıyla tamamlamayı tayin için yeterli görmüş, fakat kişiyi doğrudan asıl kadroya oturtmamıştır. Tuzak, 'başarı ile bitirdikleri takdirde' ibaresinin asalet anlamında okunmasıdır; başarı burada yalnızca tayine geçiş şartıdır. Sık karıştırılan komşu hüküm, rütbe terfilerini düzenleyen maddedeki amir yetiştirme yoludur: orada Polis Akademisi Başkanlığınca düzenlenen ilk derece amirlik eğitimini bitirenler KOMİSER YARDIMCILIĞI rütbesine atanır ve bu tamamen ayrı bir giriş kapısıdır. Askerlik hizmeti yoluyla teşkilata gelenler amir sınıfına değil, memur kadrolarına yönlendirilmiştir. Muamelat memurluğu ise yazı, hesap, fen ve muhabere işlerine ilişkin ayrı bir geçici düzenlemenin konusudur.",
+  "dayanak": "3201 sayılı Kanun geçici md 6",
+  "zorluk": "easy",
+  "tur": "dogrudan"
+ },
+ {
+  "id": "3201-p7-05",
+  "articleNo": "Geçici 7",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nun askerlik hizmetini emniyet teşkilatında yapacaklara ilişkin geçici hükümleriyle ilgili olarak aşağıdaki önermelerden hangisi ya da hangileri doğrudur?\nI. Seçim, sivil lise mezunları arasından yapılır.\nII. Seçilecek olanların, 3201 sayılı Kanunda yazılı vasıf ve şartları haiz olmaları gerekir.\nIII. Bu suretle hizmete alınanlar Emniyet Teşkilatı mensupları hakkındaki hükümlere tabi olmayıp, haklarında yalnızca askerlik mevzuatı uygulanır.",
+  "siklar": {
+   "A": "Yalnız I",
+   "B": "Yalnız III",
+   "C": "I ve II",
+   "D": "II ve III",
+   "E": "I, II ve III"
+  },
+  "dogru": "C",
+  "aciklama": "I ve II doğrudur: seçim SİVİL LİSE MEZUNLARI arasından yapılır ve bu kişilerin 3201 sayılı Kanunda yazılı vasıf ve şartları HAİZ olmaları aranır. Yani kaynak grup öğrenim durumuyla (lise mezunu, sivil), süzgeç ise Kanunun genel nitelik şartlarıyla belirlenmiştir; iki ölçüt birlikte uygulanır, biri diğerinin yerine geçmez. III YANLIŞTIR: Geçici 7 nci madde, bu suretle hizmete alınanların EMNİYET TEŞKİLATI MENSUPLARI HAKKINDAKİ HÜKÜMLERE TABİ olduğunu açıkça belirtir. Tuzak, hizmetin kaynağının askerlik yükümlülüğü olmasından hareketle kişinin teşkilat rejiminin dışında tutulduğu sanılmasıdır; kanun koyucu tam tersini yapmış, askerlik hizmetini teşkilat içinde gören kişiyi teşkilatın hukuki rejimine dahil etmiştir. Bu tercih önemlidir, çünkü disiplin, kıyafet ve özlük hükümlerinin uygulanabilmesi bu tabiiyete bağlıdır. Sık karıştırılan nokta, madde başlarında yer alan '... md. ile gelen geçici ... md. hükmü olup madde numarası teselsül ettirilmiştir' biçimindeki künyelerdir: bunlar maddenin nereden geldiğini gösteren KAYNAK BİLGİSİDİR, hüküm değildir ve önerme olarak sorulamaz.",
+  "dayanak": "3201 sayılı Kanun geçici md 6 ve geçici md 7",
+  "zorluk": "medium",
+  "tur": "onerme"
+ },
+ {
+  "id": "3201-p7-06",
+  "articleNo": "Geçici 8",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'na göre, askerlik hizmetini emniyet teşkilatında bitirip meslekte kalarak polis memurluğuna tayin olunanların, EMNİYET TEŞKİLATINDA GEÇEN muvazzaf askerlik hizmetleri bakımından aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "Kazanılmış hak aylığında değerlendirilir, kıdemde sayılmaz",
+   "B": "Atanılan ilk rütbede, adaylığın onanmasından sonra sayılır",
+   "C": "Toplamda üç yılı aşan kısmı terfilerde değerlendirilmez",
+   "D": "Kıdemde sayılır, ancak rütbe terfiinde dikkate alınmaz",
+   "E": "Kıdemlerinde ve rütbe terfilerinde sayılır"
+  },
+  "dogru": "E",
+  "aciklama": "Geçici 8 inci maddeye göre, askerlik hizmetini emniyet teşkilatında bitirenlerden meslekte kalanların TEŞKİLATTA GEÇEN muvazzaf askerlik hizmetleri KIDEM VE TERFİLERİNE SAYILIR. Hüküm ikisini birden söyler; kıdemle terfiden yalnız birini kapsayacak biçimde daraltılamaz, bu nedenle sadece kıdemi sayan seçenek KAPSAMI DARALTILMIŞ hâlidir ve yanlıştır. Asıl tuzak, iki ayrı rejimin karıştırılmasıdır. Rütbe terfilerini düzenleyen 55 inci maddede, EMNİYET TEŞKİLATINA GİRMEDEN ÖNCE yapılan askerlik hizmetinin atanılan ilk rütbede ve adaylığın onanmasından sonra fiilî çalışma süresinden sayılacağı belirtilmiştir. Bu hüküm, askerliğini teşkilat DIŞINDA yapmış olup sonradan mesleğe girenlere ilişkindir; buradaki soru ise askerliğini teşkilat İÇİNDE yapıp meslekte kalanları konu alır. Ayırt edici unsur, askerlik hizmetinin nerede geçtiğidir. Aynı maddede yer alan diğer sınırlamalar da başka konulara aittir: uzmanlık, yüksek lisans, doktora ve avukatlık stajı kazanılmış hak aylığında değerlendirilse dahi rütbe kıdeminde sayılmaz; yurt dışı görev, kurs, tedavi ve istirahat sürelerinin ise toplamda üç yılı aşan kısmı rütbe terfilerinde değerlendirilmez.",
+  "dayanak": "3201 sayılı Kanun geçici md 8",
+  "zorluk": "hard",
+  "tur": "kavram"
+ },
+ {
+  "id": "3201-p7-07",
+  "articleNo": "Geçici 8",
+  "kok": "Askerlik hizmetini Emniyet Genel Müdürlüğü emrinde üniformalı polis olarak emniyet teşkilatında tamamlayan bir kişi, hizmeti sona erdiğinde meslekte kalmak istediğini bildirmiştir. 3201 sayılı Emniyet Teşkilat Kanunu'na göre bu talep bakımından aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "Herhangi bir değerlendirme yapılmaksızın, talebi üzerine polis memurluğuna tayin olunur",
+   "B": "Durumu uygun görüldüğü takdirde polis memurluğuna tayin olunur",
+   "C": "Mesleğe girişteki yazılı ve sözlü sınavı yeniden kazanması hâlinde tayin edilebilir",
+   "D": "İlk derece amirlik eğitimini bitirmesi hâlinde komiser yardımcılığına atanabilir",
+   "E": "Yalnızca muamelat memurluğu kadrolarına tayin edilebilir"
+  },
+  "dogru": "B",
+  "aciklama": "Geçici 8 inci madde, askerlik hizmetini emniyet teşkilatında bitirenlerden meslekte kalmak isteyenlerin DURUMLARI UYGUN GÖRÜLDÜĞÜ TAKDİRDE polis memurluklarına tayin olunacağını öngörür. Buradaki 'uygun görüldüğü takdirde' ibaresi belirleyicidir: kişinin talebi tayin için tek başına yeterli değildir, idarenin bir DEĞERLENDİRME yapması ve olumlu kanaate varması gerekir. Yani madde bir HAK değil, şarta bağlı bir İMKÂN tanımıştır. Tuzak, askerliğini teşkilatta tamamlamış olmanın otomatik bir geçiş hakkı doğurduğunun sanılmasıdır; hüküm böyle bir kendiliğindenlik içermez. Öte yandan madde, kişiyi yeniden mesleğe giriş sürecine de sokmamaktadır; ayrıca bir giriş sınavını kazanma şartı aranmaz. Sık karıştırılan komşu hüküm, amir sınıfına geçişi düzenleyen rejimdir: ilk derece amirlik eğitimini bitirerek komiser yardımcılığına atanma, meslekte fiilen belli bir süreyi doldurmuş lisans mezunu polis memurları için öngörülmüş ayrı bir yoldur ve askerlik hizmetinin sonunda yapılan bu tayinle ilgisi yoktur. Tayin edilecek kadro, madde metninde açıkça POLİS MEMURLUĞU olarak gösterilmiştir.",
+  "dayanak": "3201 sayılı Kanun geçici md 8",
+  "zorluk": "medium",
+  "tur": "vaka"
+ },
+ {
+  "id": "3201-p7-08",
+  "articleNo": "Geçici 14",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nun geçici hükümlerine göre, madalya ve ödülleri düzenleyen 86 ncı maddede yer alan geriye yürüme kaydı bakımından esas alınacak tarih aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "15/6/1938",
+   "B": "8/8/1961",
+   "C": "14/7/1965",
+   "D": "1/1/1968",
+   "E": "28/12/1972"
+  },
+  "dogru": "D",
+  "aciklama": "86 ncı madde, madalya ve ödülleri düzenledikten sonra 'bu madde hükmü geriye yürür' kaydını taşır; ancak maddenin kendisi geriye yürümenin hangi tarihe kadar uzanacağını söylemez. Bu boşluğu geçici 14 üncü madde doldurur ve geriye yürüme tarihini 1/1/1968 olarak belirler. Sorunun ölçtüğü şey, bir kanunda geriye yürüme kaydı ile o kaydın BAŞLANGIÇ TARİHİNİN ayrı hükümlerde düzenlenebileceğidir; asıl maddeyi tek başına okuyan aday tarihi bulamaz. En güçlü tuzak, geriye yürümenin maddeyi DEĞİŞTİREN kanunun tarihinden başlatıldığının sanılmasıdır. Geriye yürüme kavramının anlamı zaten değişiklik tarihinden ÖNCEYE gitmektir; başlangıcın değişiklik tarihi olması hükmü anlamsız kılardı. Kanun metninde geçen diğer tarihler farklı düzenlemelere aittir ve bu kayıtla ilişkilendirilemez. Ayrıca dikkat edilmelidir ki 86 ncı madde sonradan birden çok kez değişikliğe uğramış, madalya türleri ve usul hükümleri eklenmiştir; geçici madde ile belirlenen tarih, geriye yürüme kaydının başlangıcını gösteren sabit bir ölçüt olarak yerinde kalmaktadır.",
+  "dayanak": "3201 sayılı Kanun geçici md 14",
+  "zorluk": "hard",
+  "tur": "ayrinti"
+ },
+ {
+  "id": "3201-p7-09",
+  "articleNo": "Geçici 15",
+  "kok": "3201 sayılı Emniyet Teşkilat Kanunu'nda, Ankara Asliye 4 üncü Hukuk Mahkemesinin kararı ile tescil olunan ve vakıf senedi Resmî Gazete'de yayımlanan hangi kuruluşun faaliyetine devam edeceği açıkça hükme bağlanmıştır?",
+  "siklar": {
+   "A": "Polis Bakım ve Yardım Sandığı",
+   "B": "Polis Moral Eğitim Merkezi",
+   "C": "Emniyet Teşkilatı Mensupları Yardımlaşma Sandığı",
+   "D": "Türk Polis Teşkilatını Güçlendirme Vakfı",
+   "E": "Türk Polis Teşkilatını Koruma Derneği"
+  },
+  "dogru": "D",
+  "aciklama": "Geçici 15 inci madde, mahkeme kararıyla tescil olunan ve vakıf senedi Resmî Gazete'de yayımlanan TÜRK POLİS TEŞKİLATINI GÜÇLENDİRME VAKFININ faaliyetine devam edeceğini açıkça hükme bağlar. Hüküm, adı geçen vakfın hukuki varlığını kanun düzeyinde teyit eder; bu yönüyle uygulama süresi dolmuş bir geçiş kaydı değil, bugün de sonuç doğuran bir düzenlemedir. Tuzak, kuruluş türünün karıştırılmasıdır: burada korunan bir DERNEK değil, bir VAKIFTIR ve bu ayrım Kanunun genel rejimi bakımından belirleyicidir. Emniyet Teşkilatı mensupları ile çarşı ve mahalle bekçileri kural olarak dernek kurucusu ve üyesi olamazken (spor dernekleri için istisna öngörülmüştür), vakıflar bakımından farklı bir rejim benimsenmiş; teşkilat mensuplarının vakıf kurucusu olabilmeleri ve vakıfların yönetim organlarında görev alabilmeleri Emniyet Genel Müdürünün teklifi ve İçişleri Bakanının iznine bağlanmıştır. Yani Kanun dernek yasağını sert, vakıf katılımını ise İZNE BAĞLI biçimde düzenlemiştir. Seçeneklerdeki diğer adlandırmalar bu geçici hükmün konusu değildir.",
+  "dayanak": "3201 sayılı Kanun geçici md 15",
+  "zorluk": "medium",
+  "tur": "dogrudan"
+ }
+]

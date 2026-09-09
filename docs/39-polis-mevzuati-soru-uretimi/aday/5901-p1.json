@@ -1,0 +1,614 @@
+[
+  {
+    "id": "5901-p1-01",
+    "articleNo": "3",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Kanunda geçen \"Genel Müdürlük\" ibaresi aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Emniyet Genel Müdürlüğünü",
+      "B": "Göç İdaresi Başkanlığını",
+      "C": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünü",
+      "D": "Konsolosluk İşleri Genel Müdürlüğünü",
+      "E": "İller İdaresi Genel Müdürlüğünü"
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 3 üncü maddesinde tanımlar sınırlı sayıda verilmiştir: Bakanlık İÇİŞLERİ BAKANLIĞINI, Genel Müdürlük ise NÜFUS VE VATANDAŞLIK İŞLERİ GENEL MÜDÜRLÜĞÜNÜ ifade eder. Tuzak, vatandaşlık işlerinin yabancılarla ilgili olması nedeniyle akla ilk gelen göç veya emniyet birimlerinin işaretlenmesidir; oysa Kanun tanım maddesinde tek bir genel müdürlüğü adlandırmıştır ve bu birim nüfus hizmetlerini yürüten birimdir.",
+    "dayanak": "5901 sayılı Kanun md 3/1-c",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-02",
+    "articleNo": "3",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'nun tanımlar maddesine göre \"çok vatandaşlık\" aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Bir yabancının birden çok devletin vatandaşlığına aynı anda sahip olmasını",
+      "B": "Bir devletin ülkesinde birden çok vatandaşlık rejiminin uygulanmasını",
+      "C": "Aynı ailede farklı devletlerin vatandaşı olan kişilerin bulunmasını",
+      "D": "Bir kişinin vatandaşlığını değiştirdikten sonra eski vatandaşlığını yeniden kazanmasını",
+      "E": "Türk vatandaşının aynı anda birden çok vatandaşlığa sahip olmasını"
+    },
+    "dogru": "E",
+    "aciklama": "Tanım, 5901 sayılı Kanunun 3 üncü maddesinin birinci fıkrasının (b) bendinde yer alır ve merkezinde TÜRK VATANDAŞI vardır: çok vatandaşlık, Türk vatandaşının AYNI ANDA birden çok vatandaşlığa sahip olmasıdır. Tuzak, tanımı herhangi bir kişiye genelleştirmektir; Kanun kavramı yabancılar için değil, Türk vatandaşının durumu için tanımlamıştır. Aynı maddede yabancı, Türkiye Cumhuriyeti Devleti ile vatandaşlık bağı BULUNMAYAN kişi olarak tanımlanmıştır; iki tanım birbirinin yerine kullanılamaz.",
+    "dayanak": "5901 sayılı Kanun md 3/1-b",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-03",
+    "articleNo": "4",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının kazanılmasına ve kaybına ilişkin hizmetlerin yürütülmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu hizmetler yurt içinde ve yurt dışında yalnızca Bakanlık tarafından yürütülür.",
+      "B": "Bu hizmetler yurt içinde valilikler, yurt dışında Bakanlık tarafından yürütülür.",
+      "C": "Bu hizmetler yurt içinde Bakanlık, yurt dışında dış temsilcilikler tarafından yürütülür.",
+      "D": "Bu hizmetler yurt içinde Bakanlık, yurt dışında ilgili ülke makamları tarafından yürütülür.",
+      "E": "Bu hizmetler yurt içinde ve yurt dışında dış temsilcilikler tarafından yürütülür."
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 4 üncü maddesi hizmetin yürütülmesini coğrafi olarak ikiye ayırır: YURT İÇİNDE BAKANLIK, YURT DIŞINDA DIŞ TEMSİLCİLİKLER. Tuzak, ilde yapılan işlemlerden hareketle yurt içi yetkiyi valiliklere bağlamaktır; ilde yürütülen iş, başvurunun şartları taşıyıp taşımadığının tespitine ilişkin inceleme aşamasıdır, hizmetin yürütülmesine ilişkin genel yetki maddesi ise Bakanlığı gösterir.",
+    "dayanak": "5901 sayılı Kanun md 4/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-04",
+    "articleNo": "6",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre doğumla kazanılan Türk vatandaşlığı ne zamandan itibaren hüküm ifade eder?",
+    "siklar": {
+      "A": "Soy bağının kurulduğu tarihten itibaren",
+      "B": "Nüfus kütüğüne tescil tarihinden itibaren",
+      "C": "Doğum anından itibaren",
+      "D": "Doğum bildiriminin yapıldığı tarihten itibaren",
+      "E": "Yetkili makam kararının verildiği tarihten itibaren"
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 6 ncı maddesine göre doğumla kazanılan Türk vatandaşlığı soy bağı veya doğum yeri esasına göre KENDİLİĞİNDEN kazanılır ve DOĞUM ANINDAN İTİBAREN hüküm ifade eder. Buradaki ayırt edici nokta, doğumla kazanmada herhangi bir makam kararına veya tescile ihtiyaç bulunmamasıdır; tescil yalnızca var olan durumu kayda geçirir. Tuzak, doğumla kazanmayı bir karara veya tescile bağlı saymaktır.",
+    "dayanak": "5901 sayılı Kanun md 6/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-05",
+    "articleNo": "9",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre aşağıdakilerden hangisi sonradan kazanılan Türk vatandaşlığının gerçekleşme yollarından biridir?",
+    "siklar": {
+      "A": "Soy bağı esası",
+      "B": "Doğum yeri esası",
+      "C": "Vatandaşlığa alınmanın iptali",
+      "D": "Seçme hakkının kullanılması",
+      "E": "Çıkma izni verilmesi"
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 9 uncu maddesi sonradan kazanmayı ÜÇ yola bağlar: YETKİLİ MAKAM KARARI, EVLAT EDİNİLME ve SEÇME HAKKININ KULLANILMASI. Soy bağı ve doğum yeri esası ise 6 ncı maddede DOĞUMLA kazanmanın esaslarıdır; kazanma yolu değil, doğumla kazanmanın dayanağıdır. Vatandaşlığa alınmanın iptali ile çıkma izni verilmesi ise Kanunun KAYIP hükümlerine aittir. Tuzak, üç ayrı başlığı (doğumla kazanma, sonradan kazanma, kayıp) tek listede birleştirmektir.",
+    "dayanak": "5901 sayılı Kanun md 9/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-06",
+    "articleNo": "7",
+    "kok": "Türk vatandaşı baba ile yabancı ananın evlilik birliği dışında dünyaya gelen çocuğu söz konusudur. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu çocuğun Türk vatandaşlığını kazanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Çocuk doğumla kendiliğinden Türk vatandaşı olur; başka bir işlem gerekmez.",
+      "B": "Çocuk ancak ergin olduktan sonra seçme hakkını kullanarak Türk vatandaşlığını kazanabilir.",
+      "C": "Çocuk ancak Türkiye'de doğmuş olması şartıyla Türk vatandaşlığını kazanır.",
+      "D": "Çocuk, ananın muvafakat etmesi hâlinde Türk vatandaşlığını kazanır.",
+      "E": "Çocuk, soy bağı kurulmasını sağlayan usul ve esasların yerine getirilmesi hâlinde Türk vatandaşlığını kazanır."
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 7 nci maddesi üç ihtimali ayırır. Evlilik birliği İÇİNDE Türk ana veya babadan doğan çocuk ile Türk ANA ve yabancı babadan evlilik dışı doğan çocuk doğrudan Türk vatandaşıdır. Buna karşılık TÜRK BABA ve yabancı anadan EVLİLİK DIŞI doğan çocuk için Kanun ek bir kayıt getirir: SOY BAĞI KURULMASINI SAĞLAYAN USUL VE ESASLARIN YERİNE GETİRİLMESİ. Tuzak, üç ihtimali tek kurala indirip her hâlde kendiliğinden kazanma sonucuna varmaktır; ananın vatandaşlığı ile babanın vatandaşlığı bu maddede aynı sonucu doğurmaz.",
+    "dayanak": "5901 sayılı Kanun md 7/3",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-08",
+    "articleNo": "8",
+    "kok": "Türkiye'de doğan bir çocuk, yabancı olan ana ve babasından dolayı doğumla herhangi bir ülkenin vatandaşlığını kazanamamıştır. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu çocuğun durumu için aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Çocuk, ergin olmasından itibaren seçme hakkını kullanarak Türk vatandaşlığını kazanabilir.",
+      "B": "Çocuk, ana ve babasının başvurusu üzerine Bakanlık kararı ile Türk vatandaşlığını kazanır.",
+      "C": "Çocuk, doğumdan itibaren Türk vatandaşıdır.",
+      "D": "Çocuk, Türkiye'de kesintisiz olarak ikamet etmesi şartıyla Türk vatandaşlığını kazanır.",
+      "E": "Çocuk, ancak bir Türk vatandaşı tarafından evlat edinilmesi hâlinde Türk vatandaşlığını kazanır."
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 8 inci maddesi VATANSIZLIĞI ÖNLEME amacı taşır: Türkiye'de doğan ve yabancı ana ve babasından dolayı doğumla herhangi bir ülkenin vatandaşlığını kazanamayan çocuk DOĞUMDAN İTİBAREN Türk vatandaşıdır. Burada başvuru, karar veya ikamet aranmaz; vatandaşlık kendiliğinden doğar. Tuzak, çocuğun ana ve babasının yabancı olmasından hareketle olayı sonradan kazanma yollarından birine sokmaktır; oysa doğum yeri esası doğumla kazanma başlığındadır ve ancak çocuk başka hiçbir devletin vatandaşlığını kazanamıyorsa devreye girer.",
+    "dayanak": "5901 sayılı Kanun md 8/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-09",
+    "articleNo": "8",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türkiye'de bulunmuş çocuk hakkında aşağıdaki karinelerden hangisi geçerlidir?",
+    "siklar": {
+      "A": "Ergin oluncaya kadar yabancı sayılır.",
+      "B": "Her hâlde Türkiye'de doğmuş sayılır.",
+      "C": "Ana ve babası bulunana kadar vatansız sayılır.",
+      "D": "Aksi sabit olmadıkça Türkiye'de doğmuş sayılır.",
+      "E": "Hâkim kararı verilinceye kadar doğum yeri belirsiz sayılır."
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 8 inci maddesinin ikinci fıkrası bir ADİ KARİNE koyar: Türkiye'de bulunmuş çocuk AKSİ SABİT OLMADIKÇA Türkiye'de doğmuş sayılır. Karinenin işlevi, doğum yeri esasının uygulanabilmesi için çocuğun nerede doğduğunun ispatlanamadığı hâllerde boşluğu doldurmaktır. Tuzak, 'aksi sabit olmadıkça' kaydını atlayıp karineyi kesin hâle getirmektir; karinenin aksi ispatlanabilir ve ispatlandığında karine uygulanmaz.",
+    "dayanak": "5901 sayılı Kanun md 8/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-10",
+    "articleNo": "10",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre yetkili makam kararı ile Türk vatandaşlığının kazanılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kanunda aranan şartları taşıyan yabancının talebi, ancak vatandaşlık başvuru inceleme komisyonu uygun görürse reddedilebilir.",
+      "B": "Şartları taşıyan yabancının talebi hakkında idarenin takdir yetkisi bulunmaz.",
+      "C": "Şartları taşıyan yabancının talebi yalnızca millî güvenlik gerekçesiyle reddedilebilir.",
+      "D": "Şartları taşıyan yabancı, başvuru tarihi itibarıyla kendiliğinden Türk vatandaşlığını kazanır.",
+      "E": "Kanunda aranan şartları taşımak, vatandaşlığın kazanılmasında kişiye mutlak bir hak sağlamaz."
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 10 uncu maddesi vatandaşlığa alınmanın hukuki niteliğini belirler: yabancı, Kanunda belirtilen şartları taşıması hâlinde yetkili makam kararıyla Türk vatandaşlığını KAZANABİLİR; ancak aranan şartları taşımak vatandaşlığın kazanılmasında kişiye MUTLAK BİR HAK SAĞLAMAZ. Yani şartlar bir zemin oluşturur, sonucu doğurmaz; idarenin takdir yetkisi saklıdır. Tuzak, şartların sağlanmasını otomatik bir kazanma sebebine dönüştürmektir.",
+    "dayanak": "5901 sayılı Kanun md 10/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-11",
+    "articleNo": "10",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre sonradan Türk vatandaşlığının kazanılmasında uygulanacak temel ilke ve esaslar nasıl belirlenir?",
+    "siklar": {
+      "A": "Dış temsilciliklerin görüşü alınmak suretiyle Genel Müdürlükçe",
+      "B": "Vatandaşlık başvuru inceleme komisyonunca",
+      "C": "Genel Müdürlüğün teklifi üzerine valiliklerce",
+      "D": "İlgili kamu kurum ve kuruluşlarının görüşleri alınmak suretiyle Bakanlıkça",
+      "E": "Bakanlığın teklifi üzerine Cumhurbaşkanınca"
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 10 uncu maddesinin ikinci fıkrasına göre sonradan Türk vatandaşlığının kazanılmasında uygulanacak TEMEL İLKE VE ESASLAR, İLGİLİ KAMU KURUM VE KURULUŞLARININ GÖRÜŞLERİ ALINMAK SURETİYLE BAKANLIKÇA belirlenir. Buradaki ayırt edici unsur, görüş almanın zorunlu ama belirleme yetkisinin tek elde, yani Bakanlıkta olmasıdır. Tuzak, ilke belirleme yetkisini bireysel başvuruları inceleyen ya da karara bağlayan makamlarla karıştırmaktır; ilke koyma ile somut başvuruyu karara bağlama Kanunda ayrı düzenlenmiştir.",
+    "dayanak": "5901 sayılı Kanun md 10/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-12",
+    "articleNo": "11",
+    "kok": "Daha önce hiç Türk vatandaşı olmamış ve Türk vatandaşı biriyle evli olmayan bir yabancı, on yıl önce Türkiye'ye gelip dört yıl ikamet etmiş, sonra ülkesine dönmüş ve üç yıl önce yeniden gelerek o tarihten beri kesintisiz Türkiye'de ikamet etmektedir. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu kişinin ikamet şartı bakımından durumu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Türkiye'de geçirdiği toplam süre beş yılı aştığından ikamet şartını sağlar.",
+      "B": "Başvurudan geriye doğru kesintisiz beş yıl bulunmadığından ikamet şartını sağlamaz.",
+      "C": "Son gelişinden itibaren kesintisiz üç yıl geçtiğinden ikamet şartını sağlar.",
+      "D": "İlk gelişinden itibaren geçen süre esas alınacağından ikamet şartını sağlar.",
+      "E": "Kesintiye rağmen iki yıl daha ikamet ederse geçmiş süreler yeniden hesaba katılır."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 11 inci maddesinin birinci fıkrasının (b) bendi ikamet şartını üç unsurla yazar: BAŞVURU TARİHİNDEN GERİYE DOĞRU, KESİNTİSİZ ve BEŞ YIL. Bu üç unsur birlikte arandığından, Türkiye'de geçirilen sürelerin TOPLAMI yeterli olsa bile araya giren ayrılık zinciri kırar; hesap her zaman başvuru tarihinden geriye doğru yapılır ve geriye doğru kesintisiz beş yıl bulunmalıdır. Örnekte geriye doğru kesintisiz süre üç yıldır. Tuzak, şartı 'toplam süre' şartına dönüştürmek ya da yeniden kazanma yolundaki daha kısa ikamet süresini ilk kez vatandaşlığa alınma başvurusuna taşımaktır.",
+    "dayanak": "5901 sayılı Kanun md 11/1-b",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-13",
+    "articleNo": "11",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığını kazanmak isteyen yabancılarda aranan şartlardan biri olan erginlik ve ayırt etme gücü hangi hukuka göre belirlenir?",
+    "siklar": {
+      "A": "Her hâlde Türk kanunlarına göre",
+      "B": "Kendi millî kanununa, vatansız ise mutad meskeni ülkesinin kanunlarına göre",
+      "C": "Her hâlde ikamet ettiği ülkenin kanunlarına göre",
+      "D": "Kendi millî kanununa, vatansız ise Türk kanunlarına göre",
+      "E": "Türk kanunlarına, vatansız ise doğduğu ülkenin kanunlarına göre"
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 11 inci maddesinin birinci fıkrasının (a) bendine göre yabancının ergin ve ayırt etme gücüne sahip olup olmadığı KENDİ MİLLÎ KANUNUNA, kişi VATANSIZ ise TÜRK KANUNLARINA göre belirlenir. Kural bir asıl ve bir tamamlayıcı bağlama noktasından oluşur: asıl olan kişinin vatandaşı olduğu devletin hukukudur, Türk hukuku ancak bağlanacak bir millî hukuk bulunmadığında devreye girer. Tuzak, kuralı tek bir hukuka indirgeyip her hâlde Türk hukukunu ya da her hâlde ikamet ülkesi hukukunu uygulamaktır.",
+    "dayanak": "5901 sayılı Kanun md 11/1-a",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-15",
+    "articleNo": "12",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre istisnai hâllerde Türk vatandaşlığının kazanılmasına ilişkin karar hangi makam tarafından verilir?",
+    "siklar": {
+      "A": "Vatandaşlık başvuru inceleme komisyonu",
+      "B": "İçişleri Bakanlığı",
+      "C": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü",
+      "D": "Cumhurbaşkanı",
+      "E": "Valilik"
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 12 nci maddesine göre istisnai hâllerde Türk vatandaşlığı CUMHURBAŞKANI KARARI ile kazanılır. Maddenin ilk hâlinde yetki Bakanlığın teklifi üzerine Bakanlar Kuruluna aitti; 700 sayılı Kanun Hükmünde Kararname ile bu ibare CUMHURBAŞKANI şeklinde değiştirilmiştir ve sınavda en sık yapılan hata mülga metni işaretlemektir. Kararı veren makam ile işlemi yürüten makam Kanunda ayrı düzenlenmiştir.",
+    "dayanak": "5901 sayılı Kanun md 12/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-16",
+    "articleNo": "12",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türkiye'ye sanayi tesisleri getiren veya bilimsel, teknolojik, ekonomik, sosyal, sportif, kültürel, sanatsal alanlarda olağanüstü hizmeti geçen kişilerin istisnai yoldan Türk vatandaşlığını kazanabilmesi için aşağıdakilerden hangisi aranır?",
+    "siklar": {
+      "A": "Dış temsilciliğin olumlu görüş bildirmesi",
+      "B": "Haklarında valilikçe uygunluk görüşü verilmesi",
+      "C": "Vatandaşlık başvuru inceleme komisyonunun oybirliğiyle karar vermesi",
+      "D": "Türkiye'de en az bir yıl ikamet etmiş olmaları",
+      "E": "Haklarında ilgili bakanlıklarca gerekçeli teklifte bulunulması"
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 12 nci maddesinin birinci fıkrasının (a) bendinde, olağanüstü hizmeti geçen ya da geçeceği düşünülen kişiler bakımından ek bir usul şartı vardır: haklarında İLGİLİ BAKANLIKLARCA GEREKÇELİ TEKLİFTE BULUNULMASI. Bu şart yalnızca (a) bendine özgüdür; aynı fıkranın diğer bentlerinde sayılan kişiler için böyle bir teklif aranmaz. Ayrıca istisnai hâllerin tamamı için ortak şart, MİLLÎ GÜVENLİK VE KAMU DÜZENİ bakımından engel teşkil edecek bir hâlin bulunmamasıdır. Tuzak, istisnai yolu ikamet şartına bağlamaktır; bu yolun anlamı zaten olağan şartlardan ayrılmasıdır.",
+    "dayanak": "5901 sayılı Kanun md 12/1-a",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-17",
+    "articleNo": "12",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre istisnai hâllerde Türk vatandaşlığını kazanabilecek kişiler arasında kanun metninde açıkça sayılanlardan olmayan aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Göçmen olarak kabul edilen kişiler",
+      "B": "Vatandaşlığa alınması zaruri görülen kişiler",
+      "C": "Turkuaz Kart sahibi yabancılar ile bunların yabancı eşi ve ergin olmayan veya bağımlı yabancı çocuğu",
+      "D": "Bir Türk vatandaşı ile evlenmiş olan yabancılar",
+      "E": "Türkiye'ye sanayi tesisleri getiren kişiler"
+    },
+    "dogru": "D",
+    "aciklama": "5901 sayılı Kanunun 12 nci maddesinin birinci fıkrası istisnai hâlleri dört bent hâlinde sayar: olağanüstü hizmeti geçen ya da geçeceği düşünülenler, 6458 sayılı Kanunun 31 inci maddesinin birinci fıkrasının (j) bendi uyarınca ikamet izni alanlar ile TURKUAZ KART sahipleri ve bunların belirtilen aile bireyleri, vatandaşlığa alınması ZARURİ görülenler ve GÖÇMEN olarak kabul edilenler. Evlilik bu listede yer almaz; evlenme yoluyla kazanma Kanunun ayrı bir maddesinde, kendi şartları ve kendi süresiyle düzenlenmiştir. Tuzak, iki farklı kazanma yolunu tek başlık altında toplamaktır.",
+    "dayanak": "5901 sayılı Kanun md 12/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-18",
+    "articleNo": "12",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre istisnai hâllerde vatandaşlık talebinde bulunanlardan millî güvenlik ve kamu düzeni bakımından engel teşkil edecek hâli bulunanların talepleri ne şekilde sonuçlandırılır?",
+    "siklar": {
+      "A": "Talepler engel hâli ortadan kalkıncaya kadar askıya alınır.",
+      "B": "Talepler valilikçe reddedilir.",
+      "C": "Talepler hakkında karar verilmek üzere Cumhurbaşkanına gönderilir.",
+      "D": "Talepler vatandaşlık başvuru inceleme komisyonunca reddedilir.",
+      "E": "Talepler Bakanlıkça reddedilir."
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 12 nci maddesinin ikinci fıkrası açık bir yetki kuralı koyar: millî güvenlik ve kamu düzeni bakımından engel teşkil edecek hâli bulunanların talepleri BAKANLIKÇA REDDEDİLİR. Böylece istisnai yolda olumlu karar ile olumsuz karar farklı makamlara bırakılmıştır; engel hâli tespit edilen dosya, olumlu karar mercisine hiç götürülmeden Bakanlık aşamasında sonlandırılır. Tuzak, ret yetkisini de olumlu kararı veren makama bağlamaktır. Talebin askıya alınması ise Kanunda öngörülmemiş bir sonuçtur.",
+    "dayanak": "5901 sayılı Kanun md 12/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-19",
+    "articleNo": "13",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre çıkma izni almak suretiyle Türk vatandaşlığını kaybedenlerin Türk vatandaşlığını yeniden kazanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Türkiye'de üç yıl ikamet etmek şartıyla Cumhurbaşkanı kararıyla yeniden kazanabilirler.",
+      "B": "Türkiye'de ikamet etme süresine bakılmaksızın Bakanlık kararıyla yeniden kazanabilirler.",
+      "C": "Türkiye'de kesintisiz beş yıl ikamet etmek şartıyla Bakanlık kararıyla yeniden kazanabilirler.",
+      "D": "Türkiye'de iki yıl ikamet etmek şartıyla Cumhurbaşkanı kararıyla yeniden kazanabilirler.",
+      "E": "Yalnızca seçme hakkını kullanmak suretiyle yeniden kazanabilirler."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 13 üncü maddesi yeniden kazanmanın İKAMET ŞARTI ARANMAYAN hâlini düzenler: çıkma izni almak suretiyle Türk vatandaşlığını kaybedenler ile ana veya babalarına bağlı olarak Türk vatandaşlığını kaybedenlerden seçme hakkını süresinde kullanmayanlar, TÜRKİYE'DE İKAMET ETME SÜRESİNE BAKILMAKSIZIN BAKANLIK KARARIYLA yeniden kazanabilirler. Ayırt edici iki nokta vardır: karar mercii Bakanlıktır ve ikamet aranmaz. Kanunun 14 üncü maddesi ise yeniden kazanmanın ikamet şartına BAĞLI hâlini ayrıca düzenlemiştir; iki maddenin karıştırılması bu konudaki klasik hatadır.",
+    "dayanak": "5901 sayılı Kanun md 13/1-a",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-20",
+    "articleNo": "13",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının ikamet şartı aranmaksızın yeniden kazanılmasında ilgililer bakımından aranan engel hâli aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kamu güvenliği ve genel sağlık bakımından engel teşkil edecek bir hali bulunmamak",
+      "B": "Genel sağlık bakımından tehlike teşkil eden bir hastalığı bulunmamak",
+      "C": "Kamu düzeni bakımından engel teşkil edecek bir hali bulunmamak",
+      "D": "Genel ahlak bakımından engel teşkil edecek bir hali bulunmamak",
+      "E": "Millî güvenlik bakımından engel teşkil edecek bir hali bulunmamak"
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 13 üncü maddesinin birinci fıkrası, ikamet şartı aranmaksızın yeniden kazanmayı tek bir olumsuz şarta bağlar: MİLLÎ GÜVENLİK BAKIMINDAN engel teşkil edecek bir hâlin bulunmaması. Buradaki ince ayrıntı, ölçütün 'kamu düzeni' unsurunu İÇERMEMESİDİR; Kanunun ilk kez vatandaşlığa alınmayı düzenleyen maddelerinde ölçüt millî güvenlik VE kamu düzeni olarak ikili yazılmışken, yeniden kazanma maddelerinde yalnız millî güvenlik ölçütü kullanılmıştır. Tuzak, her maddede aynı ikili ölçütün geçtiğini varsaymaktır.",
+    "dayanak": "5901 sayılı Kanun md 13/1",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-21",
+    "articleNo": "14",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının ikamet şartına bağlı olarak yeniden kazanılmasında aranan ikamet süresi kaç yıldır?",
+    "siklar": {
+      "A": "Bir",
+      "B": "İki",
+      "C": "Üç",
+      "D": "Beş",
+      "E": "Yedi"
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 14 üncü maddesine göre bu yoldan yeniden kazanma, millî güvenlik bakımından engel teşkil edecek bir hâlin bulunmaması ve TÜRKİYE'DE ÜÇ YIL İKAMET edilmesi şartına bağlıdır. Maddedeki ikamet süresi, ilk kez vatandaşlığa alınmada aranan ikamet süresinden daha kısadır; kişinin daha önce Türk vatandaşı olmuş olması bu farkı açıklar. Karıştırılan komşu hüküm, ilk kez vatandaşlığa alınmada aranan ikamet süresidir; o süre bu maddedekinden farklıdır.",
+    "dayanak": "5901 sayılı Kanun md 14/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-22",
+    "articleNo": "14",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının ikamet şartına bağlı olarak yeniden kazanılmasında karar mercii ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Vatandaşlığı kaybettirilenler de kaybedenler de, millî güvenlik bakımından engel hâli bulunmamak şartıyla yalnızca Bakanlık kararıyla yeniden kazanabilir.",
+      "B": "Vatandaşlığı kaybettirilenler Cumhurbaşkanı kararıyla, kaybedenler Bakanlık kararıyla yeniden kazanabilir.",
+      "C": "Vatandaşlığı kaybettirilenler Bakanlık kararıyla, kaybedenler Cumhurbaşkanı kararıyla yeniden kazanabilir.",
+      "D": "Her iki grup da, millî güvenlik bakımından engel hâli bulunmamak şartıyla yalnızca Cumhurbaşkanı kararıyla yeniden kazanabilir.",
+      "E": "Her iki grup için karar mercii valiliktir."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 14 üncü maddesi karar merciini kaybın sebebine göre ikiye ayırır: 29 uncu madde uyarınca Türk vatandaşlığı KAYBETTİRİLENLER CUMHURBAŞKANI kararıyla, 34 üncü madde uyarınca Türk vatandaşlığını KAYBEDENLER ise BAKANLIK kararıyla yeniden kazanabilirler. Ayrım mantıklıdır: vatandaşlığın kaybettirilmesi ağır bir işlem olduğundan geri dönüş de üst makama bırakılmıştır. Tuzak, iki grubu tek merciye bağlamak ya da mercileri yer değiştirmektir.",
+    "dayanak": "5901 sayılı Kanun md 14/1",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-23",
+    "articleNo": "15",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre bir yabancı için \"ikamet\" kavramı aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Türkiye'de taşınmaz maliki olarak bulunmayı",
+      "B": "Türkiye'de bir adrese kayıtlı bulunmayı",
+      "C": "Türkiye'de sürekli olarak bir işte çalışmayı",
+      "D": "Türkiye'de yerleşmeye karar verdiğini davranışlarıyla teyit etmeyi",
+      "E": "Türk kanunlarına uygun olarak Türkiye'de oturmayı"
+    },
+    "dogru": "E",
+    "aciklama": "5901 sayılı Kanunun 15 inci maddesi ikameti tek cümleyle tanımlar: bir yabancı için ikamet, TÜRK KANUNLARINA UYGUN OLARAK TÜRKİYE'DE OTURMAKTIR. Tanımın belirleyici unsuru HUKUKA UYGUNLUKTUR; fiilen Türkiye'de bulunmak, oturma hukuka uygun değilse ikamet sayılmaz. Tuzak, ikameti adres kaydı, çalışma veya mülkiyet gibi olgulara indirgemektir. Türkiye'de yerleşmeye karar verdiğini davranışlarıyla teyit etmek ise ikametin tanımı değil, başvuru şartları arasında ayrıca sayılan bağımsız bir şarttır.",
+    "dayanak": "5901 sayılı Kanun md 15/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-24",
+    "articleNo": "15",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığını kazanma talebinde bulunan yabancının, öngörülen sınırı aşmamak kaydıyla Türkiye dışında geçirdiği süreler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu süreler Kanunda öngörülen ikamet süreleri içinde değerlendirilir.",
+      "B": "Bu süreler ikamet süresinden düşülür ve süre yeniden başlar.",
+      "C": "Bu süreler ikamet süresini keser; kişi yeniden başvurmak zorundadır.",
+      "D": "Bu süreler yalnızca zorunlu sebeplerle yurt dışında bulunulmuşsa ikamet süresine sayılır.",
+      "E": "Bu süreler ikamet süresine sayılmaz, ancak başvuruyu engellemez."
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 15 inci maddesinin son cümlesi açıktır: Türkiye dışında geçirilen süreler BU KANUNDA ÖNGÖRÜLEN İKAMET SÜRELERİ İÇİNDE DEĞERLENDİRİLİR. Yani sınır aşılmadığı sürece yurt dışında geçen zaman ikamet süresini KESMEZ ve süreden düşülmez; hüküm, ikametin kesintisiz sayılmasını sağlayan bir tolerans kuralıdır. Tuzak, toleransı bir istisnaya dönüştürüp yurt dışında bulunmayı zorunlu sebep şartına bağlamaktır; Kanun sebep aramaz, yalnızca üst sınır koyar.",
+    "dayanak": "5901 sayılı Kanun md 15/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-25",
+    "articleNo": "16",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre evlenme yoluyla Türk vatandaşlığının kazanılması ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Bir Türk vatandaşı ile evlenme doğrudan Türk vatandaşlığını kazandırır.",
+      "B": "Başvuru sahiplerinde aile birliği içinde yaşama şartı aranır.",
+      "C": "Başvuru sahiplerinde evlilik birliği ile bağdaşmayacak bir faaliyette bulunmama şartı aranır.",
+      "D": "Başvuru sahiplerinde millî güvenlik ve kamu düzeni bakımından engel teşkil edecek bir hali bulunmama şartı aranır.",
+      "E": "Başvuruda bulunabilmek için evliliğin devam ediyor olması gerekir."
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 16 ncı maddesinin ilk cümlesi kuralı tersinden koyar: BİR TÜRK VATANDAŞI İLE EVLENME DOĞRUDAN TÜRK VATANDAŞLIĞINI KAZANDIRMAZ. Evlilik yalnızca başvuru hakkı doğuran bir sebeptir; belirli bir süreyi doldurmuş ve devam eden bir evlilik varsa yabancı BAŞVURUDA BULUNABİLİR ve maddede sayılan aile birliği içinde yaşama, evlilik birliğiyle bağdaşmayacak faaliyette bulunmama ve millî güvenlik ile kamu düzeni bakımından engel hâli bulunmama şartlarını taşıması aranır. Tuzak, evliliği kendiliğinden kazandırıcı bir sebep saymaktır.",
+    "dayanak": "5901 sayılı Kanun md 16/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-26",
+    "articleNo": "16",
+    "kok": "Bir Türk vatandaşı ile evli olan yabancı, evlenme yoluyla Türk vatandaşlığını kazanmak üzere usulüne uygun olarak başvurmuş; başvurudan sonra Türk vatandaşı eş vefat etmiştir. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu durumda aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Başvuru, evlilik sona erdiği için işlemden kaldırılır.",
+      "B": "Aile birliği içinde yaşama şartı aranmaz.",
+      "C": "Millî güvenlik ve kamu düzeni bakımından engel hâli bulunmama şartı aranmaz.",
+      "D": "Evlilik birliği ile bağdaşmayacak bir faaliyette bulunmama şartı aranmaz.",
+      "E": "Başvuru sahibi hakkında yalnızca istisnai hâllere ilişkin hükümler uygulanır."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 16 ncı maddesinin ikinci fıkrası, BAŞVURUDAN SONRA Türk vatandaşı eşin ÖLÜMÜ nedeniyle evliliğin sona ermesi hâlinde birinci fıkranın (a) bendindeki AİLE BİRLİĞİ İÇİNDE YAŞAMA şartının ARANMAYACAĞINI düzenler. Hüküm yalnızca bu tek şartı devre dışı bırakır; diğer şartlar yerinde kalır. İki sınır önemlidir: kolaylık ancak ÖLÜM sebebiyle sona erme hâlinde ve ancak BAŞVURUDAN SONRA gerçekleşmişse işler. Tuzak, ölümü başvurunun tümüyle düşmesi sebebi saymak ya da muafiyeti bütün şartlara yaymaktır.",
+    "dayanak": "5901 sayılı Kanun md 16/2",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-27",
+    "articleNo": "16",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre evlenme ile Türk vatandaşlığını kazanan yabancının, evlenmenin butlanına karar verilmesi hâlindeki durumu için aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Evlenmede iyiniyetli iseler Türk vatandaşlığını muhafaza ederler.",
+      "B": "Her hâlde Türk vatandaşlığını kaybederler.",
+      "C": "Türk vatandaşlığını muhafaza edip etmeyeceklerine Bakanlık karar verir.",
+      "D": "Türkiye'de ikamet etmeleri şartıyla Türk vatandaşlığını muhafaza ederler.",
+      "E": "Vatandaşlıkları, butlan kararının kesinleşmesinden itibaren askıya alınır."
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 16 ncı maddesinin üçüncü fıkrasına göre evlenme ile Türk vatandaşlığını kazanan yabancılar, evlenmenin BUTLANINA karar verilmesi hâlinde EVLENMEDE İYİNİYETLİ İSELER Türk vatandaşlığını MUHAFAZA EDERLER. Kural, geçersiz bir evliliğe güvenerek vatandaşlık kazanan kişinin korunmasına dayanır; ölçüt kişinin evlenme anındaki iyiniyetidir ve bu ölçüt karşılandığında sonuç kendiliğinden doğar, ayrı bir takdir kararına bağlanmaz. Tuzak, butlanı her hâlde vatandaşlığı sona erdiren bir sebep saymak ya da korumayı ikamet gibi ek şartlara bağlamaktır.",
+    "dayanak": "5901 sayılı Kanun md 16/3",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-28",
+    "articleNo": "17",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre Türk vatandaşlığının evlat edinilme ile kazanılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bir Türk vatandaşı tarafından evlat edinilen kişi, millî güvenlik ve kamu düzeni bakımından engel hâli bulunmamak şartıyla, ergin olup olmadığına bakılmaksızın Türk vatandaşlığını kazanır.",
+      "B": "Bir Türk vatandaşı tarafından evlat edinilen ergin olmayan kişi, karar tarihinden itibaren Türk vatandaşlığını kazanabilir.",
+      "C": "Bir Türk vatandaşı tarafından evlat edinilen ergin olmayan kişi, millî güvenlik bakımından engel hâli bulunmamak şartıyla Türkiye'de üç yıl ikamet etmek zorundadır.",
+      "D": "Bir Türk vatandaşı tarafından evlat edinilen kişi, ergin olduktan sonra seçme hakkını kullanmak suretiyle Türk vatandaşlığını kazanır.",
+      "E": "Evlat edinilme ile Türk vatandaşlığının kazanılması, evlat edinenin talebi üzerine Cumhurbaşkanı kararına bağlıdır."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 17 nci maddesi üç unsuru bir arada arar: evlat edinilenin ERGİN OLMAMASI, MİLLÎ GÜVENLİK VE KAMU DÜZENİ bakımından engel teşkil edecek bir hâlinin bulunmaması ve vatandaşlığın KARAR TARİHİNDEN İTİBAREN kazanılması. Ergin bir kişinin evlat edinilmesi bu maddeye dayanarak vatandaşlık kazandırmaz. Tuzak, evlat edinilmeyi bir ikamet süresine bağlamak ya da hükmü erginleri de kapsayacak biçimde genişletmektir; madde, korunmaya muhtaç küçüğün evlat edinenle aynı vatandaşlığa bağlanmasını amaçlar.",
+    "dayanak": "5901 sayılı Kanun md 17/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-29",
+    "articleNo": "18",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre vatandaşlık başvuru inceleme komisyonunun görevi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Komisyon, başvuru sahibinin Türk vatandaşlığını kazanıp kazanmayacağına dair nihai kararı verir.",
+      "B": "Komisyon, illerde oluşturulur ve başvuru için gerekli şartların taşınıp taşınmadığını tespit eder.",
+      "C": "Komisyon, Bakanlık bünyesinde oluşturulur ve dosyaları Cumhurbaşkanına sunar.",
+      "D": "Komisyon, yalnızca istisnai hâllerde vatandaşlık talebinde bulunanların dosyalarını inceler.",
+      "E": "Komisyon, yurt dışındaki başvuruların incelenmesi için dış temsilcilikler bünyesinde oluşturulur."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 18 inci maddesine göre başvuru için gerekli şartların taşınıp taşınmadığının TESPİTİ, İLLERDE OLUŞTURULAN vatandaşlık başvuru inceleme komisyonunca yapılır. Komisyonun işlevi TESPİTTİR, karar vermek değildir; nihai karar aşaması Kanunda ayrıca düzenlenmiştir. Komisyonun inceleme alanı da sınırlıdır: yalnızca 11 inci ve 16 ncı maddeler uyarınca, yani genel başvuru ve evlenme yolu ile vatandaşlık kazanmak isteyenlerin başvuruları. Tuzak, tespit yetkisini karar yetkisi sanmak veya komisyonu istisnai hâllerin merci hâline getirmektir.",
+    "dayanak": "5901 sayılı Kanun md 18/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5901-p1-30",
+    "articleNo": "19",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre yetkili makam kararı ile Türk vatandaşlığının kazanılmasında izlenen usul bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Başvuru için gerekli şartları taşıyanlar adına vatandaşlık dosyası düzenlenir ve karar verilmek üzere Bakanlığa gönderilir.",
+      "B": "Başvuru için gerekli şartları taşıyanlar adına düzenlenen dosya, karar verilmek üzere doğrudan Cumhurbaşkanlığına gönderilir.",
+      "C": "Şartları taşıyanların vatandaşlığı, dosya düzenlenmesiyle birlikte kendiliğinden kazanılır.",
+      "D": "Şartları taşımayanların talepleri hakkında karar verme yetkisi valiliğe aittir.",
+      "E": "Dosyalar hakkında nihai kararı Nüfus ve Vatandaşlık İşleri Genel Müdürlüğü verir."
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 19 uncu maddesine göre yetkili makam kararı ile vatandaşlık kazanmak isteyenlerden BAŞVURU İÇİN GEREKLİ ŞARTLARI TAŞIYANLAR adına VATANDAŞLIK DOSYASI DÜZENLENİR ve KARAR VERİLMEK ÜZERE BAKANLIĞA gönderilir; Bakanlıkça yapılan inceleme ve araştırma sonucunda durumu uygun bulunanlar BAKANLIK KARARI ile vatandaşlığı kazanabilir, uygun görülmeyenlerin talepleri ise Bakanlıkça reddedilir. Süreç böylece iki aşamalıdır: yerelde tespit, merkezde karar. Tuzak, dosyanın düzenlenmesini kazanma anı sanmak veya karar aşamasını başka bir merciye taşımaktır.",
+    "dayanak": "5901 sayılı Kanun md 19/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-31",
+    "articleNo": "19",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre istisnai hâllere ilişkin madde uyarınca Türk vatandaşlığını kazanma işlemleri hangi makam tarafından yürütülür?",
+    "siklar": {
+      "A": "Valilik",
+      "B": "Dış temsilcilikler",
+      "C": "Bakanlık",
+      "D": "Vatandaşlık başvuru inceleme komisyonu",
+      "E": "Genel Müdürlük"
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 19 uncu maddesinin ikinci fıkrası kısa ama sınavlık bir hükümdür: istisnai hâllere ilişkin madde uyarınca Türk vatandaşlığını kazanma İŞLEMLERİ BAKANLIKÇA YÜRÜTÜLÜR. Burada ayrım, İŞLEMİN YÜRÜTÜLMESİ ile KARARIN VERİLMESİ arasındadır: istisnai yolda hazırlık ve yürütme Bakanlığa aittir, karar ise Kanunun kendi maddesinde gösterilen üst makama bırakılmıştır. Tuzak, yürütme yetkisini genel başvuru yolundaki yerel inceleme yapısına benzeterek valiliğe ya da komisyona bağlamaktır; istisnai yolda ildeki komisyon aşaması bulunmaz.",
+    "dayanak": "5901 sayılı Kanun md 19/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-32",
+    "articleNo": "20",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre yetkili makam kararı ile Türk vatandaşlığının kazanılmasına ilişkin kararlar ne zamandan itibaren hüküm ifade eder?",
+    "siklar": {
+      "A": "Başvuru tarihinden itibaren",
+      "B": "Karar tarihinden itibaren",
+      "C": "Kararın ilgiliye tebliğ edildiği tarihten itibaren",
+      "D": "Nüfus kütüğüne tescil edildiği tarihten itibaren",
+      "E": "Kararın Resmî Gazete'de yayımlandığı tarihten itibaren"
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 20 nci maddesinin birinci fıkrasına göre Türk vatandaşlığının kazanılmasına ilişkin kararlar KARAR TARİHİNDEN İTİBAREN hüküm ifade eder. Kural geriye yürümez: başvuru ile karar arasındaki dönemde kişi henüz Türk vatandaşı sayılmaz. Tebliğ ve tescil ise sonucu doğuran değil, doğmuş sonucu ilgiliye bildiren ve kayda geçiren işlemlerdir. Tuzak, sonradan kazanmayı doğumla kazanmadaki geçmişe etkili sonuç ile karıştırmaktır; doğumla kazanmada vatandaşlık kendiliğinden doğar, burada ise bir karara dayanır.",
+    "dayanak": "5901 sayılı Kanun md 20/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-33",
+    "articleNo": "20",
+    "kok": "Yabancı bir kadın, yetkili makam kararı ile Türk vatandaşlığını kazanmıştır. Kadının yabancı olan eşi ise ayrıca bir başvuruda bulunmamıştır. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre eşin durumu bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Eş de kendiliğinden Türk vatandaşlığını kazanır.",
+      "B": "Kazanma eşin vatandaşlığına tesir etmez.",
+      "C": "Eş, kadının talebi üzerine Türk vatandaşlığını kazanır.",
+      "D": "Eş, evlilik devam ettiği sürece Türk vatandaşı sayılır.",
+      "E": "Eşin durumu hakkında hâkim kararına göre işlem yapılır."
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 20 nci maddesinin ikinci fıkrasının ilk cümlesi vatandaşlıkta KİŞİSELLİK İLKESİNİ koyar: yetkili makam kararı ile Türk vatandaşlığının kazanılması EŞİN VATANDAŞLIĞINA TESİR ETMEZ. Eş, ancak kendisi şartlarını taşıyarak ayrıca başvurursa vatandaşlık kazanabilir; kendiliğinden ya da diğer eşin talebiyle kazanma söz konusu değildir.",
+    "dayanak": "5901 sayılı Kanun md 20/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-34",
+    "articleNo": "20",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre yetkili makam kararı ile Türk vatandaşlığını kazanan ananın velayeti kendisinde bulunan çocuğu bakımından diğer eşin muvafakat vermemesi hâlinde nasıl işlem yapılır?",
+    "siklar": {
+      "A": "Ana veya babanın mutad meskeninin bulunduğu ülkedeki hâkim kararına göre",
+      "B": "Çocuğun vatandaşı olduğu devletin makamlarının izin kararına göre",
+      "C": "Vatandaşlık başvuru inceleme komisyonunun kararına göre",
+      "D": "Çocuğun bulunduğu yer valiliğinin kararına göre",
+      "E": "Bakanlığın vereceği karara göre"
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 20 nci maddesinin ikinci fıkrası çocuklar bakımından iki aşamalı bir çözüm kurar: velayeti kendisinde bulunan çocuk DİĞER EŞİN MUVAFAKATİ ile vatandaşlığı kazanır; MUVAFAKAT VERİLMEMESİ hâlinde iş kendiliğinden bitmez, ANA VEYA BABANIN MUTAD MESKENİNİN BULUNDUĞU ÜLKEDEKİ HÂKİM KARARINA göre işlem yapılır. Aynı fıkranın son cümlesine göre ana ve babanın BİRLİKTE kazanması hâlinde bu sorun hiç doğmaz. Tuzak, uyuşmazlığın çözümünü idari bir makama bağlamaktır; Kanun burada yargı merciini işaret eder.",
+    "dayanak": "5901 sayılı Kanun md 20/2",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-35",
+    "articleNo": "20",
+    "kok": "Ana ve babası yetkili makam kararı ile Türk vatandaşlığını kazandığı tarihte onlarla birlikte işlem görmeyen bir çocuk, ergin olduktan sonra Türk vatandaşlığını kazanmak üzere başvurmuştur. 5901 sayılı Türk Vatandaşlığı Kanunu'na göre bu kişi hakkında aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "Türk vatandaşlığını kazanmak isteyen yabancılarda başvuru için aranan şartlara ilişkin hükümler",
+      "B": "Seçme hakkı ile Türk vatandaşlığının kazanılmasına ilişkin hükümler",
+      "C": "Türk vatandaşlığının ikamet şartı aranmaksızın yeniden kazanılmasına ilişkin hükümler",
+      "D": "Türk vatandaşlığının kazanılmasında istisnai hâllere ilişkin hükümler",
+      "E": "Türk vatandaşlığının evlat edinilme ile kazanılmasına ilişkin hükümler"
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 20 nci maddesinin üçüncü fıkrasına göre ana veya babanın Türk vatandaşlığını kazandığı tarihte KENDİLERİ İLE BİRLİKTE İŞLEM GÖRMEYEN çocuklar, ergin olduktan sonra başvurduklarında haklarında 11 İNCİ MADDE HÜKÜMLERİ uygulanır. Yani bu kişiler ebeveynlerine bağlı bir kolaylıktan yararlanamaz; herkes gibi genel başvuru şartlarına tabi olurlar. Tuzak, kişinin ebeveyni üzerinden Türk vatandaşlığıyla bağ kurduğunu düşünerek onu seçme hakkı veya yeniden kazanma gibi ayrıcalıklı yollara sokmaktır; oysa bu kişi hiç Türk vatandaşı olmamıştır.",
+    "dayanak": "5901 sayılı Kanun md 20/3",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5901-p1-36",
+    "articleNo": "21",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre ana veya babalarına bağlı olarak Türk vatandaşlığını kaybeden çocuklar, seçme hakkını kullanmak suretiyle Türk vatandaşlığını hangi süre içinde kazanabilirler?",
+    "siklar": {
+      "A": "Ergin olmalarından itibaren bir yıl içinde",
+      "B": "Ergin olmalarından itibaren iki yıl içinde",
+      "C": "Ergin olmalarından itibaren üç yıl içinde",
+      "D": "Ergin olmalarından itibaren beş yıl içinde",
+      "E": "Vatandaşlığı kaybettikleri tarihten itibaren beş yıl içinde"
+    },
+    "dogru": "C",
+    "aciklama": "5901 sayılı Kanunun 21 inci maddesine göre ana veya babalarına bağlı olarak Türk vatandaşlığını kaybeden çocuklar, ERGİN OLMALARINDAN İTİBAREN ÜÇ YIL içinde seçme hakkını kullanmak suretiyle Türk vatandaşlığını kazanabilirler. Hükümde iki unsur birlikte sınanır: sürenin uzunluğu ve sürenin BAŞLANGICI. Başlangıç, vatandaşlığın kaybedildiği tarih değil, çocuğun ERGİN OLDUĞU tarihtir; çünkü hak, kişinin kendi iradesini kullanabilir hâle gelmesine bağlanmıştır. Karıştırılan komşu hüküm 13 üncü maddedir: bu süre içinde seçme hakkını kullanmayanlar için ayrıca ikamet şartı aranmaksızın yeniden kazanma imkânı öngörülmüştür.",
+    "dayanak": "5901 sayılı Kanun md 21/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5901-p1-38",
+    "articleNo": "22",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkı ile Türk vatandaşlığının kazanılması ne zamandan itibaren hüküm ifade eder?",
+    "siklar": {
+      "A": "Seçme hakkının kullanıldığı beyanın yapıldığı tarihten itibaren",
+      "B": "Bu hakkın kullanılmasına dair şartların tespitine ilişkin karar tarihinden itibaren",
+      "C": "Kişinin ergin olduğu tarihten itibaren",
+      "D": "Vatandaşlığın kaybedildiği tarihten itibaren geçmişe etkili olarak",
+      "E": "Nüfus kütüğüne tescil edildiği tarihten itibaren"
+    },
+    "dogru": "B",
+    "aciklama": "5901 sayılı Kanunun 22 nci maddesinin birinci fıkrasına göre seçme hakkı ile Türk vatandaşlığının kazanılması, BU HAKKIN KULLANILMASINA DAİR ŞARTLARIN TESPİTİNE İLİŞKİN KARAR TARİHİNDEN İTİBAREN hüküm ifade eder. Yani kişinin beyanı tek başına sonucu doğurmaz; beyan üzerine şartların taşınıp taşınmadığı tespit edilir ve hüküm bu TESPİT KARARININ tarihinden itibaren doğar. Tuzak, seçme hakkının kullanılmasını bozucu yenilik doğuran bir beyan sayıp sonucu beyan anına ya da kaybın gerçekleştiği ana bağlamaktır; Kanunda geçmişe etkili bir sonuç öngörülmemiştir.",
+    "dayanak": "5901 sayılı Kanun md 22/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5901-p1-39",
+    "articleNo": "22",
+    "kok": "5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçme hakkını kullanarak Türk vatandaşlığını kazanan kişilerin eşleri ve çocukları hakkında ne şekilde işlem yapılır?",
+    "siklar": {
+      "A": "Yetkili makam kararı ile kazanmanın geçerliliği ve sonuçlarına ilişkin madde hükümleri uygulanır.",
+      "B": "Eş ve çocuklar da seçme hakkını ayrıca kullanmak zorundadır.",
+      "C": "Eş ve çocuklar kendiliğinden Türk vatandaşlığını kazanır.",
+      "D": "Eş ve çocuklar hakkında evlat edinilme ile kazanmaya ilişkin hükümler uygulanır.",
+      "E": "Eş ve çocuklar hakkında istisnai hâllere ilişkin hükümler uygulanır."
+    },
+    "dogru": "A",
+    "aciklama": "5901 sayılı Kanunun 22 nci maddesinin ikinci fıkrası bir ATIF hükmüdür: seçme hakkını kullanarak Türk vatandaşlığını kazanan kişilerin EŞLERİ VE ÇOCUKLARI hakkında 20 nci madde hükümleri uygulanır. Böylece kişisellik ilkesi ve çocuklar bakımından öngörülen muvafakat düzeni seçme hakkı yolunda da aynen geçerli olur; Kanun aynı çözümü ikinci kez yazmak yerine atıf yapmıştır. Tuzak, atfın varlığını gözden kaçırıp eş ve çocuklar için kendiliğinden kazanma sonucuna varmak ya da onları da seçme hakkını kullanmak zorunda bırakmaktır.",
+    "dayanak": "5901 sayılı Kanun md 22/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  }
+]

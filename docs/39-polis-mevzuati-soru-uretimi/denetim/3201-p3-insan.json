@@ -1,0 +1,14 @@
+[
+  {
+    "id": "3201-p3-02",
+    "not": "Kalite denetçisinin ikinci tur itirazı yalnız açıklamadaki tek bir cümleyeydi: \"'Münhasıran' kelimesi hekimin yalnız bu işe tahsis edildiğini anlatır, ilgileneceği kişi çevresini daraltmaz.\" Denetçi bunun md 22'ye AYKIRI olduğunu gösterdi (zarf 'meşgul olmak' fiiline bağlı ve çevreyi tam da daraltıyor). Cümle silindi — denetçinin talimatı 'yeniden yazma, sadece sil' idi, aynen uygulandı. Kök, şıklar ve doğru cevap değişmedi; mevzuat ve dil denetçileri bu soruyu zaten ONAY'lamış, dört doğru şıkkı tek tek metinle doğrulamıştı."
+  },
+  {
+    "id": "3201-p3-04",
+    "not": "Kalite denetçisi revizyonun YENİ bir sızıntı doğurduğunu buldu: E çeldiricisi 'Bir senelik tecrübe devresini…' ve açıklamadaki 'md 47/2'de meslek haricinden alınanlar bakımından' ibaresi birlikte q16'nın tam sorusunu ve cevabını (Bir sene) veriyordu. Denetçinin iki önerisi de aynen uygulandı: E şıkkından sayı çıkarıldı ('Tecrübe devresini muvaffakiyetle tamamlamalarına'), açıklamadaki madde atfı 'kanunun başka bir maddesinde, meslek haricinden alınanlar bakımından' olarak genelleştirildi. NOT: ilk düzeltme denemesinde kullanılan regex açıklamayı cümle ortasından kesip bozuk metin bırakmıştı; fark edilip denetçinin önerdiği ifadeyle düzgün onarıldı. Doğru cevap (A) ve diğer şıklar değişmedi."
+  },
+  {
+    "id": "3201-p3-26",
+    "not": "Kalite denetçisinin itirazı kök sızıntısıydı: kökteki 'istifasının kabulünden iki sene sonra' sayısı q25'in cevabını (md 59/1, üç sene) beş şıktan bire indiriyordu. Denetçinin önerisi aynen uygulandı: kök 'istifasının kabulünden sonra kanunun tanıdığı süre içinde' oldu. Vakanın hukuki unsurları (süre içinde avdet + ikinci istifa) korundu; mevzuat denetçisi md 59/2 ile birebir uyumu, dil denetçisi de senaryonun yeterliliğini zaten doğrulamıştı. Şıklar ve doğru cevap (D) değişmedi."
+  }
+]
