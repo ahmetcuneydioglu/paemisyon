@@ -1,0 +1,529 @@
+[
+  {
+    "id": "5682-p1-01",
+    "articleNo": "1",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türk vatandaşları ve yabancıların Türkiye'ye girip çıkabilecekleri yolcu giriş - çıkış kapıları kim tarafından tayin olunur?",
+    "siklar": {
+      "A": "İçişleri Bakanlığı",
+      "B": "Bakanlar Kurulu",
+      "C": "Cumhurbaşkanı",
+      "D": "Dışişleri Bakanlığı",
+      "E": "Ticaret Bakanlığı"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 1 inci maddesine göre Türk vatandaşları ve yabancılar CUMHURBAŞKANINCA tayin olunan yolcu giriş - çıkış kapılarından Türkiye'ye girip çıkabilirler. Buradaki klasik tuzak, maddenin ESKİ METNİDİR: hüküm 2018 yılında 700 sayılı KHK ile değiştirilmeden önce kapıların 'İçişleri Bakanlığının teklifi üzerine BAKANLAR KURULUNCA' tayin edileceğini söylüyordu. Eski metni ezberleyen aday 'Bakanlar Kurulu' şıkkına düşer. İçişleri Bakanlığı ise kapıların tayin makamı değildir; aynı maddenin ikinci fıkrasında Bakanlığa yalnızca gümrük kapılarının AÇILIŞINDA görüş bildirme yetkisi tanınmıştır. Yani tayin ile açılış aşamasındaki görüş iki ayrı işlemdir.",
+    "dayanak": "5682 sayılı Kanun md 1/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-02",
+    "articleNo": "2",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, kanunlar ve milletlerarası anlaşmalarla tespit edilenlerden başka, Türk vatandaşları ile yabancılar için ne gibi belgelerin pasaport yerine geçerli kabul edilebileceği hususunda hangi makam veya makamlar karar almaya yetkilidir?",
+    "siklar": {
+      "A": "İçişleri Bakanlığı tek başına",
+      "B": "Dışişleri Bakanlığı tek başına",
+      "C": "Emniyet Genel Müdürlüğü",
+      "D": "İçişleri ve Dışişleri bakanlıkları müştereken",
+      "E": "Cumhurbaşkanı"
+    },
+    "dogru": "D",
+    "aciklama": "5682 sayılı Kanun'un 2 nci maddesinin son fıkrasına göre, kanunlar ve milletlerarası anlaşmalarla tespit edilenlerden başka hangi belgelerin pasaport yerine geçerli kabul edilebileceğine İÇİŞLERİ VE DIŞİŞLERİ BAKANLIKLARI MÜŞTEREKEN karar verir. Sorunun tuzağı yetkinin TEK BİR bakanlığa ait sanılmasıdır; hüküm ortak karar aramaktadır ve bakanlıklardan yalnız birinin kararı yeterli değildir. Ayrıca bu yetki, pasaport yerine geçerli vesikaların Kanun'un 12 nci maddesinde zaten sayılmış olan türlerini değiştirmez; oradaki liste kanunla belirlenmiştir, bakanlıkların ortak kararı ise kanunda ve anlaşmalarda sayılanların DIŞINDAKİ belgeler için işler.",
+    "dayanak": "5682 sayılı Kanun md 2/3",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-03",
+    "articleNo": "2",
+    "kok": "Yurt dışından uçakla gelen bir yolcu, havalimanında bagajının gümrük işlemlerini yaptırmak istemektedir. 5682 sayılı Pasaport Kanunu'na göre bu yolcu bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Gümrük işlemleri tamamlanmadan polis makamlarınca giriş işlemi yapılamaz.",
+      "B": "Gümrük ve diğer işlemlerin yapılabilmesi için polis makamlarınca giriş işlemlerinin bitirilmesi şarttır.",
+      "C": "Gümrük işlemleri ile giriş işlemleri birbirinden bağımsızdır; sıra bakımından bir zorunluluk yoktur.",
+      "D": "Gümrük işlemleri, yolcunun talebi hâlinde giriş işlemlerinden önce yapılabilir.",
+      "E": "Gümrük işlemlerinin önce yapılıp yapılmayacağına mahalli mülkiye amiri karar verir."
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 2 nci maddesinin ikinci fıkrası sırayı açıkça kurmuştur: gümrük ve diğer işlemlerin yapılabilmesi için POLİS MAKAMLARINCA giriş veya çıkış işlemlerinin BİTİRİLMESİ ŞARTTIR. Yani pasaport kontrolü öncelikli ve zorunlu aşamadır; gümrük işlemi ancak ondan sonra gelir. Tuzak, sıranın tersine çevrilmesi ya da 'yolcunun talebi' gibi bir istisna uydurulmasıdır; maddede böyle bir tercih hakkı yoktur. Aynı maddenin birinci fıkrası gereği yolcu, giriş - çıkış kapılarındaki polis makamlarına usulüne uygun ve muteber pasaport veya pasaport yerine geçerli bir vesika ibraz etmeye mecburdur.",
+    "dayanak": "5682 sayılı Kanun md 2/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p1-04",
+    "articleNo": "3",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, pasaportsuz veya vesikasız olarak Türkiye sınırlarına gelip Türk vatandaşlığını iddia edenlerden nüfus hüviyet varakasından başka vesika veya delil gösterenlerin bu vesika veya delillerinin kıymeti kim tarafından takdir edilir?",
+    "siklar": {
+      "A": "Polis",
+      "B": "Mahalli mülkiye amiri",
+      "C": "Nüfus müdürlüğü",
+      "D": "Dışişleri Bakanlığı",
+      "E": "Sulh ceza hâkimi"
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 3 üncü maddesinin (B) fıkrasına göre, nüfus hüviyet varakasından başka vesika veya delil gösterenlerin bu vesika veya delillerinin kıymeti POLİSÇE TAKDİR EDİLİR ve Türk vatandaşı olduklarına kanaat getirilmesi hâlinde Türkiye'ye kabul olunurlar. Sorunun tuzağı, aynı maddede geçen bir başka makam olan MAHALLİ MÜLKİYE AMİRİ ile karıştırılmasıdır; mülkiye amirinin buradaki rolü delil değerlendirmek değil, vatandaşlığı henüz sabit olmayan kişinin bekleyeceği yeri göstermektir. Buna karşılık (A) fıkrasındaki durumda takdir gerekmez: Türkiye Cumhuriyeti nüfus hüviyet cüzdanını veya hüviyet varakasını ibraz eden ve belgenin kendisine ait olduğu tahakkuk eden kişi doğrudan kabul edilir.",
+    "dayanak": "5682 sayılı Kanun md 3/B",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-05",
+    "articleNo": "3",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, nüfus hüviyet varakasından başka vesika veya delil göstererek Türk vatandaşlığını iddia eden kimseler, vatandaşlıkları usulü veçhile sabit oluncaya kadar icabederse nerede oturtulabilirler?",
+    "siklar": {
+      "A": "Geldikleri sınır kapısının bulunduğu ilçe merkezinde, kaymakamlıkça belirlenen otelde",
+      "B": "Göç idaresince işletilen geri gönderme merkezinde",
+      "C": "Yabancılar şube müdürlüğünce gösterilecek yerde",
+      "D": "Dışişleri Bakanlığınca gösterilecek yerde",
+      "E": "En yakın idare merkezine gönderilerek mahalli mülkiye amirinin göstereceği yerde"
+    },
+    "dogru": "E",
+    "aciklama": "5682 sayılı Kanun'un 3 üncü maddesine göre (B) fıkrasında bahis mevzuu kimseler, vatandaşlıkları en seri vasıta ile usulü veçhile sabit oluncaya kadar icabederse EN YAKIN İDARE MERKEZİNE gönderilerek MAHALLİ MÜLKİYE AMİRİNİN göstereceği yerde oturtulabilirler. İki ince ayrıntı sınavda gözden kaçar: birincisi hüküm 'oturtulabilirler' diyerek bunu ZORUNLU değil İHTİYARİ bir tedbir hâline getirmiştir; ikincisi bu tedbir yalnızca (B) fıkrası kapsamındaki, yani nüfus hüviyet cüzdanı dışında delil gösterenler için öngörülmüştür. Belgesi tahakkuk edip doğrudan kabul edilen kişiler bakımından böyle bir bekletme söz konusu değildir.",
+    "dayanak": "5682 sayılı Kanun md 3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-06",
+    "articleNo": "3",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, pasaportsuz olarak Türkiye sınırlarına gelip Türk vatandaşlığını iddia eden, ancak yapılan işlemler sonucunda Türk vatandaşlığı sabit olmayan kimseler hakkında ne yapılır?",
+    "siklar": {
+      "A": "Haklarında adli işlem yapılmak üzere Cumhuriyet başsavcılığına sevk edilirler.",
+      "B": "Kendilerine yabancılara mahsus pasaport verilerek ülkeye kabul edilirler.",
+      "C": "Vatandaşlıkları araştırılmak üzere süresiz olarak idare merkezinde bekletilirler.",
+      "D": "Geri çevrilirler.",
+      "E": "Kendilerine seyahat belgesi düzenlenerek geçici olarak ülkeye alınırlar."
+    },
+    "dogru": "D",
+    "aciklama": "5682 sayılı Kanun'un 3 üncü maddesinin son fıkrası kısa ve kesindir: TÜRK VATANDAŞLIĞI SABİT OLMAYANLAR GERİ ÇEVRİLİRLER. Maddenin kurduğu düzen üç aşamalıdır; belgesi tahakkuk edenler kabul edilir, delil gösterenler hakkında kanaat oluşuncaya kadar gerekirse bekletme tedbiri uygulanabilir, vatandaşlığı sabit olmayanlar ise geri çevrilir. Tuzak, bekletme tedbirinin SÜRESİZ bir tutma gibi sunulmasıdır; bekletme yalnızca vatandaşlık sabit oluncaya kadar geçerli geçici bir tedbirdir. Ayrıca madde bu kişiler bakımından bir ceza yaptırımı da öngörmez; buradaki işlem idari nitelikte olup ülkeye kabul edilmemekten ibarettir.",
+    "dayanak": "5682 sayılı Kanun md 3",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p1-07",
+    "articleNo": "5",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türk vatandaşlarının Türkiye'ye gelmeleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yurt dışında altı aydan fazla kalmışlarsa vize almakla yükümlüdürler.",
+      "B": "Vize almak mecburiyetine tabi değildirler.",
+      "C": "Ancak çifte vatandaşlığı bulunanlar vize mecburiyetinden muaftır.",
+      "D": "Vize mecburiyeti, İçişleri ve Dışişleri bakanlıklarının müşterek kararı ile kaldırılabilir.",
+      "E": "Vize yerine geçmek üzere hudut geçiş belgesi almakla yükümlüdürler."
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 5 inci maddesinin yürürlükte kalan hükmüne göre TÜRK VATANDAŞLARI TÜRKİYE'YE GELMEK İÇİN VİZE ALMAK MECBURİYETİNE TABİ DEĞİLDİRLER. Bu, vatandaşın ülkesine dönme hakkının doğal sonucudur ve süreye, ikamet yerine ya da başka bir vatandaşlığın bulunup bulunmamasına bağlı değildir; şıklardaki 'altı ay' ve 'çifte vatandaşlık' kayıtları maddede yer almayan uydurma sınırlamalardır. Maddenin yabancıların vizesine ilişkin ilk iki fıkrası ile Kanun'un vize ve girişi memnu kimselere ilişkin 6, 7, 8 inci maddeleri 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu ile MÜLGA olmuştur; yabancıların vize rejimi artık o Kanunda düzenlenmektedir.",
+    "dayanak": "5682 sayılı Kanun md 5",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-08",
+    "articleNo": "12",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, aşağıdakilerden hangisi Türkiye Cumhuriyeti namına verilecek pasaport nevilerinden biri DEĞİLDİR?",
+    "siklar": {
+      "A": "Diplomatik pasaportlar",
+      "B": "Hususi damgalı pasaportlar",
+      "C": "Hizmet damgalı pasaportlar",
+      "D": "Yabancılara mahsus pasaportlar",
+      "E": "Mürettebat damgalı pasaportlar"
+    },
+    "dogru": "E",
+    "aciklama": "5682 sayılı Kanun'un 12 nci maddesinin (A) bendinde pasaport nevileri BEŞ başlık hâlinde sayılmıştır: diplomatik pasaportlar, hususi damgalı pasaportlar, hizmet damgalı pasaportlar, umuma mahsus pasaportlar ve yabancılara mahsus pasaportlar. 'Mürettebat damgalı pasaport' diye bir nevi yoktur; bu şık, aynı maddenin (B) bendinde PASAPORT YERİNE GEÇERLİ VESİKALAR arasında sayılan 'demiryolu ve hava ulaşım araçları memur ve mürettebatına verilen vesikalar' ifadesinden türetilmiş bir tuzaktır. Adayın burada ayırması gereken sınır şudur: mürettebata verilen belge bir PASAPORT NEVİ değil, pasaportun yerini tutan bir VESİKADIR. Yabancılara mahsus pasaportlar ise adı yanıltıcı olsa da açıkça bir pasaport nevidir.",
+    "dayanak": "5682 sayılı Kanun md 12/A",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p1-09",
+    "articleNo": "12",
+    "kok": "5682 sayılı Pasaport Kanunu'nun pasaport nevilerini düzenleyen hükmüne göre, münferit veya müşterek olabileceği açıkça belirtilen pasaport nevi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Diplomatik pasaportlar",
+      "B": "Hususi damgalı pasaportlar",
+      "C": "Umuma mahsus pasaportlar",
+      "D": "Hizmet damgalı pasaportlar",
+      "E": "Yabancılara mahsus pasaportlar"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 12 nci maddesinin (A) bendinde pasaport nevileri sayılırken yalnızca UMUMA MAHSUS PASAPORTLARIN yanına '(Münferit veya müşterek olur)' kaydı düşülmüştür. Yani bir pasaportun birden fazla kişiyi kapsayacak şekilde müşterek düzenlenebilmesi imkânı kanun metninde sadece bu nevi bakımından öngörülmüştür. Tuzak, diplomatik ve hususi damgalı pasaportlardaki REFAKAT HANESİ uygulamasının müşterek pasaportla karıştırılmasıdır; refakat hanesi, hak sahibinin pasaportuna eş veya çocuğun kaydedilmesidir ve müşterek pasaportla aynı şey değildir.",
+    "dayanak": "5682 sayılı Kanun md 12/A",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-10",
+    "articleNo": "12",
+    "kok": "5682 sayılı Pasaport Kanunu'nda pasaport yerine geçerli vesikalar arasında AÇIKÇA SAYILANLARDAN olmayan belge aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Pasavanlar",
+      "B": "Hudut geçiş belgeleri",
+      "C": "İdari mektuplar",
+      "D": "Gemiadamı cüzdanları",
+      "E": "Nüfus hüviyet cüzdanları"
+    },
+    "dogru": "E",
+    "aciklama": "5682 sayılı Kanun'un 12 nci maddesinin (B) bendinde pasaport yerine geçerli vesikalar üç grup hâlinde sayılmıştır: pasavanlar, idari mektuplar ve hudut geçiş belgeleri; gemiadamı cüzdanları ile demiryolu ve hava ulaşım araçları memur ve mürettebatına verilen vesikalar; seyahat belgesi ve benzeri belgeler. NÜFUS HÜVİYET CÜZDANI bu listede yer almaz. Tuzak, nüfus hüviyet cüzdanının Kanun'un 3 üncü maddesinde geçmesidir; ancak orada cüzdan pasaport yerine geçerli bir seyahat vesikası olarak değil, pasaportsuz gelip Türk vatandaşlığını iddia eden kişinin VATANDAŞLIĞINI İSPAT aracı olarak anılmaktadır. Bu iki işlev birbirine karıştırılmamalıdır.",
+    "dayanak": "5682 sayılı Kanun md 12/B",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p1-11",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre diplomatik pasaportlar hangi makam veya makamlarca verilir?",
+    "siklar": {
+      "A": "İçişleri Bakanlığınca",
+      "B": "Dışişleri Bakanlığı ile yabancı memleketlerde Türkiye Cumhuriyeti büyükelçilik ve elçiliklerince",
+      "C": "Valiliklerce",
+      "D": "Cumhurbaşkanlığınca",
+      "E": "İl emniyet müdürlüklerince"
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin birinci fıkrasına göre diplomatik pasaportlar DIŞİŞLERİ BAKANLIĞI ile yabancı memleketlerde TÜRKİYE CUMHURİYETİ BÜYÜK ELÇİLİK VE ELÇİLİKLERİ tarafından verilir. Sınavda en çok yapılan hata, İçişleri Bakanlığını cevap sanmaktır; oysa İçişleri Bakanlığı hususi ve hizmet damgalı pasaportların verilmesinde yetkilidir, diplomatik pasaportta değil. Bu ayrımın mantığı, diplomatik pasaportun DIŞ TEMSİL ile bağlantılı olmasıdır: pasaportu veren makam da dış temsil teşkilatıdır. VALİLİKLER şıkkı da bilinçli bir tuzaktır; valiliklerin pasaport verme yetkisi diplomatik pasaportta değil, umuma mahsus pasaportlarda ve ancak İçişleri Bakanının vereceği yetkiye göre söz konusudur.",
+    "dayanak": "5682 sayılı Kanun md 13/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-12",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, muvakkat görev veya seyahat için yabancı ülkeye gidenlere verilecek diplomatik pasaportlar, bir seyahate mahsus olmak üzere veya azami ne kadar süre için verilir?",
+    "siklar": {
+      "A": "Altı ay",
+      "B": "İki sene",
+      "C": "Üç sene",
+      "D": "Dört sene",
+      "E": "Dışişleri Bakanlığınca tespit edilecek süre"
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin ikinci fıkrasına göre diplomatik pasaportlar, MUVAKKAT görev veya seyahat için gidenlere görevlerinin veya seyahatlerinin mahiyetine göre BİR SEYAHATE MAHSUS olmak üzere ya da AZAMİ İKİ SENE için verilir. Şıklardaki 'dört sene' rastgele bir sayı değil, tam olarak maddenin MÜLGA ESKİ METNİDİR: hüküm 6009 sayılı Kanunla değiştirilmeden önce pasaportların azami dört sene için muteber olmak üzere verilip icabında aynı müddetler için üç defa temdit olunacağını söylüyordu; eski metni ezberleyen aday burada yanılır. 'Dışişleri Bakanlığınca tespit edilecek süre' şıkkı da doğru bir bilgidir, ancak DAİMİ GÖREVLE gidenler içindir; soru muvakkat görevi sorduğu için bu şık kapsam dışıdır. Ayrım muvakkat görev ile daimi görev arasındadır.",
+    "dayanak": "5682 sayılı Kanun md 13/2",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-13",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre aşağıdakilerden hangisine diplomatik pasaport verilmez?",
+    "siklar": {
+      "A": "Valilere",
+      "B": "Büyükşehir belediye başkanlarına",
+      "C": "İlçe belediye başkanlarına",
+      "D": "Diyanet İşleri Başkanına",
+      "E": "Bakan yardımcılarına"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin üçüncü fıkrasında diplomatik pasaport verilecekler tek tek sayılmıştır; bu sayım içinde VALİLER, BÜYÜKŞEHİR BELEDİYE BAŞKANLARI, DİYANET İŞLERİ BAŞKANI ve BAKAN YARDIMCILARI açıkça yer alır. Buna karşılık İLÇE BELEDİYE BAŞKANLARI listede yoktur. Bu, sınavın en verimli tuzaklarından biridir: belediye başkanlığı unvanı aynı olsa da Kanun büyükşehir belediye başkanı ile diğer belediye başkanlarını AYRI hükümlere bağlamıştır. Büyükşehir belediye başkanları 13 üncü maddeye 6360 sayılı Kanunla eklenmiştir; il ve ilçe belediye başkanları ise Kanun'un 14 üncü maddesinde düzenlenmiş olup onların pasaportu diplomatik nevide değildir. Yani unvana değil, maddenin hangi kademeyi saydığına bakılmalıdır.",
+    "dayanak": "5682 sayılı Kanun md 13/3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p1-14",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre diplomatik pasaport verilecekler ile ilgili olarak aşağıda verilen önermelerden hangisi veya hangileri doğrudur?\nI. Siyasi kuryelere diplomatik pasaport verilir.\nII. Türkiye Büyük Millet Meclisi eski üyelerine diplomatik pasaport verilir.\nIII. Emeklilik sebebiyle görevinden ayrılmış birinci derece kadrolu Devlet memurlarına diplomatik pasaport verilir.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin üçüncü fıkrasında SİYASİ KURYELER sayımın son sırasında açıkça yer alır (I doğru). TÜRKİYE BÜYÜK MİLLET MECLİSİ ESKİ ÜYELERİ ibaresi ise fıkraya 7103 sayılı Kanunla eklenmiştir; aynı düzenlemeyle bu kişiler 14 üncü maddedeki hususi damgalı pasaport paragrafından çıkarılmıştır, yani hak sahipliği hususiden diplomatiğe TAŞINMIŞTIR (II doğru). Buna karşılık emeklilik sebebiyle görevinden ayrılmış Devlet memurları 13 üncü maddede sayılmaz; onların durumu 14 üncü maddede düzenlenmiştir ve aldıkları pasaport diplomatik değildir (III yanlış).",
+    "dayanak": "5682 sayılı Kanun md 13/3",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "5682-p1-15",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, diplomatik pasaport alan bir kimsenin ERGİN OLAN ve öğrenimi devam eden çocuğuna, sıfat ve vazifenin devamı süresince diplomatik pasaport verilebilmesi için aşağıdaki şartlardan hangisi ARANMAZ?",
+    "siklar": {
+      "A": "Öğrenimini Türkiye'de sürdürüyor olması",
+      "B": "Evli bulunmaması",
+      "C": "İş sahibi olmaması",
+      "D": "Anne veya babasının yanında yaşıyor olması",
+      "E": "25 yaşını ikmal etmemiş olması"
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin beşinci fıkrası, diplomatik pasaport alan kimselerin 'ergin olmayan veya ERGİN OLSALAR DAHİ yanlarında yaşayıp evli bulunmayan ve iş sahibi olmayan öğrenimi devam eden çocuklarına 25 YAŞININ İKMALİNE KADAR' diplomatik pasaport verileceğini söyler. Fıkranın kurgusu İKİ AYRI GRUP üzerinedir: ergin olmayan çocuklar için ayrıca bir şart aranmazken, ERGİN olan çocuk ancak yanlarında yaşıyor, evli değil, iş sahibi değil ve öğrenimi devam ediyorsa ve 25 yaşını ikmal etmemişse hak sahibidir. Soru bu ikinci gruba ilişkindir. Öğrenimin NEREDE sürdürüldüğü ise fıkrada hiçbir biçimde şart olarak aranmamıştır; öğrenimin yurt içinde ya da yurt dışında olması hakkı etkilemez. Tuzak, kanunda bulunmayan bir yer şartının, kanunda gerçekten bulunan dört şartın arasına yerleştirilmesidir.",
+    "dayanak": "5682 sayılı Kanun md 13/5",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-16",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre diplomatik pasaportların harç ve resim bakımından durumu ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Hiçbir harç veya resme tabi değildir.",
+      "B": "Harç ve resimden yalnızca daimi görevle gidenlere verilenler müstesnadır.",
+      "C": "Her hâlde harca tabidir; harç miktarı yarı oranında uygulanır.",
+      "D": "Hiçbir harca tabi değildir; ancak her hâlde resme tabidir.",
+      "E": "Harç ve resim muafiyetinin kapsamı Cumhurbaşkanı kararı ile belirlenir."
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin son fıkrasına göre diplomatik pasaportlar HİÇBİR HARÇ VEYA RESME TABİ DEĞİLDİR. Muafiyet mutlaktır; muvakkat ya da daimi görev ayrımına, bir orana veya idari bir karara bağlı değildir. Tuzak, muafiyetin bir kısım hak sahipleriyle sınırlıymış gibi sunulmasıdır. Aynı maddenin sondan bir önceki fıkrası ise şekle ilişkin bir zorunluluk getirir: diplomatik pasaportların, sahiplerinin veya varsa refakat hanesinde kayıtlı bulunanların birer kıta fotoğrafisini ihtiva etmesi lazımdır. Ayrıca Kanun'un harçlarla ilgili hükümleri 5887 sayılı Kanunla yürürlükten kaldırılmış olup pasaport harçları bugün 492 sayılı Harçlar Kanununda düzenlenmektedir.",
+    "dayanak": "5682 sayılı Kanun md 13/son",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-17",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, diplomatik pasaport verilmesini gerektiren vazifelerden başka herhangi bir resmî vazife ile veya kendi hesaplarına yabancı ülkelere gittiklerinde hususi damgalı pasaport verilecek Devlet memurları ve diğer kamu görevlileri, hangi kadrolarda bulunanlardır?",
+    "siklar": {
+      "A": "Yalnızca birinci derece kadrolarda bulunanlar",
+      "B": "Birinci ve ikinci derece kadrolarda bulunanlar",
+      "C": "Birinci, ikinci ve üçüncü derece kadrolarda bulunanlar",
+      "D": "Birinci, ikinci, üçüncü ve dördüncü derece kadrolarda bulunanlar",
+      "E": "Derecesine bakılmaksızın tüm Devlet memurları"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendine göre hususi damgalı pasaport; BİRİNCİ, İKİNCİ VE ÜÇÜNCÜ DERECE kadrolarda bulunan veya bu kadrolar karşılık gösterilmek ya da T.C. Emekli Sandığı ile ilgilendirilip emekli kesenekleri bu derecelerden kesilmek suretiyle sözleşmeli olarak çalıştırılan Devlet memurları ve diğer kamu görevlilerine, diplomatik pasaport verilmesini gerektiren vazifelerden başka herhangi bir resmî vazife ile veya kendi hesaplarına yabancı ülkelere gittikleri zaman verilir. Kadro derecesi eşiğini bir derece aşağı ya da yukarı kaydırmak klasik hatadır; sınır ÜÇÜNCÜ derecededir. Aynı bende göre bunlardan emeklilik veya çekilme sebepleri ile vazifelerinden ayrılmış olanlara da bu nevi pasaport verilir; yani hak, görevin sona ermesiyle otomatik olarak sönmez.",
+    "dayanak": "5682 sayılı Kanun md 14/A",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-18",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, baro levhasına yazılı avukatlara hususi damgalı pasaport verilebilmesi için aranan asgari kıdem süresi ne kadardır?",
+    "siklar": {
+      "A": "Beş yıl",
+      "B": "On yıl",
+      "C": "On beş yıl",
+      "D": "Yirmi yıl",
+      "E": "Yirmi beş yıl"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendine 7188 sayılı Kanunla eklenen paragrafa göre, baro levhasına yazılı olan ve EN AZ ON BEŞ YIL KIDEMİ bulunan avukatlara hususi damgalı pasaport verilebilir. Hüküm iki noktada dikkat ister. Birincisi ifade 'verilir' değil VERİLEBİLİR biçimindedir; yani mutlak bir hak değil, şartların varlığı hâlinde tanınan bir imkândır. İkincisi bir engel kaydı vardır: Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümünde tanımlanan suçlar ile Terörle Mücadele Kanunu kapsamına giren suçlardan dolayı soruşturma veya kovuşturma bulunmaması şarttır. Buna ilişkin usul ve esaslar ise ayrı bir düzenlemeye bırakılmıştır.",
+    "dayanak": "5682 sayılı Kanun md 14/A",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-20",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, hususi damgalı pasaport almaya hakkı bulunduğu sırada vefat eden bir kişinin dul eşi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Dul eşe hiçbir şekilde hususi damgalı pasaport verilemez.",
+      "B": "Dul eşe, başkası ile evlenmemiş olması kaydıyla aynı neviden pasaport verilmesi mümkündür.",
+      "C": "Dul eşe ancak bakmakla yükümlü olduğu çocuğu bulunması hâlinde aynı neviden pasaport verilir.",
+      "D": "Dul eşe, vefat tarihinden itibaren en çok iki yıl süreyle aynı neviden pasaport verilir.",
+      "E": "Dul eşe verilecek pasaportun nevine Dışişleri Bakanlığı karar verir."
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendine göre hususi damgalı pasaport alabilecek durumda bulunanların eşlerine de aynı nevi pasaport verilir; hususi damgalı pasaport almaya hakkı bulunduğu sırada vefat edenlerin DUL EŞLERİNE ise BAŞKASI İLE EVLENMEMİŞ İSE aynı neviden pasaport verilmesi MÜMKÜNDÜR. Buradaki tek şart yeniden evlenmemiş olmaktır; çocuk bulunması, bir süre sınırı ya da ayrı bir makam kararı hükümde yer almaz. İfadenin 'mümkündür' biçiminde kurulmuş olması da ayrıca dikkat çeker: sağ eş bakımından hak doğrudan tanınmışken, dul eş bakımından imkân tanınmıştır.",
+    "dayanak": "5682 sayılı Kanun md 14/A",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-21",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, yıllık ortalama ihracat değerlerine göre yapılan sınıflandırmada son üç yılda yıllık ortalama ihracat tutarı belirlenen değerin üzerinde olan firma yetkililerine, aranan şartları taşımaları kaydıyla ne kadar süreyle hususi damgalı pasaport verilebilir?",
+    "siklar": {
+      "A": "Altı ay",
+      "B": "Bir yıl",
+      "C": "İki yıl",
+      "D": "Dört yıl",
+      "E": "Beş yıl"
+    },
+    "dogru": "D",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendine 6728 sayılı Kanunla eklenen paragrafa göre, son üç yılda yıllık ortalama ihracat tutarı Cumhurbaşkanının belirleyeceği değerin üzerinde olan firma yetkililerine, Cumhurbaşkanınca belirlenen esaslara göre DÖRT YIL süreyle hususi damgalı pasaport verilebilir. Şıklardaki 'iki yıl' rastgele değildir: hükmün ilk hâlinde süre İKİ YIL iken 7196 sayılı Kanunla DÖRT YILA çıkarılmıştır; mülga metni ezberleyen aday burada yanılır. Paragraf ayrıca ağır bir sabıka kaydı süzgeci getirir: Türk Ceza Kanununun 53 üncü maddesinde belirtilen süreler geçmiş olsa bile kasten işlenen bir suçtan dolayı bir yıl veya daha fazla süreyle hapis cezasına ya da affa uğramış olsa bile Devletin güvenliğine karşı suçlar, zimmet, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, kaçakçılık gibi sayılan suçlardan mahkûm olmamak şarttır.",
+    "dayanak": "5682 sayılı Kanun md 14/A",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-23",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Bankacılık Düzenleme ve Denetleme Kurulu ile Tasarruf Mevduatı Sigorta Fonu Kurulu üyelerine hususi damgalı pasaport verilirken aşağıdakilerden hangisi ARANMAZ?",
+    "siklar": {
+      "A": "T.C. Emekli Sandığı ile ilgilendirilip emekli keseneklerinin bu derecelerden kesilmiş olması",
+      "B": "Diplomatik pasaport verilmesini gerektiren bir vazifesinin bulunmaması",
+      "C": "Yabancı bir ülkeye resmî vazife ile veya kendi hesabına gidiyor olması",
+      "D": "Mensup bulunduğu makamın yetkili amirinin başvuruda bulunmuş olması",
+      "E": "Hâlen kurul üyeliği sıfatının devam ediyor olması"
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendinin son cümlesi özel bir istisna getirir: Bankacılık Düzenleme ve Denetleme Kurulu ve Tasarruf Mevduatı Sigorta Fonu Kurulu üyeleri İLE VAKIF YÜKSEKÖĞRETİM KURUMLARINDA GÖREV YAPAN ÖĞRETİM ÜYELERİ için, T.C. EMEKLİ SANDIĞI İLE İLGİLENDİRİLME VE EMEKLİ KESENEKLERİNİN BU DERECELERDEN KESİLMESİ ŞARTI ARANMAZ. İstisnanın anlamı şudur: bendin genel kuralı, sözleşmeli çalıştırılanların hak sahibi olabilmesini emekli keseneğinin ilgili kadro derecelerinden kesilmesine bağlamıştır; sayılan gruplar bu teknik bağdan muaf tutulmuştur. Muafiyet YALNIZCA bu şarta ilişkindir; bendin geri kalan çerçevesi ile (C) bendindeki usul aynen işler: pasaport, diplomatik pasaport gerektiren vazifelerden başka bir sebeple yabancı ülkeye gidiş hâlinde ve mensup olunan makamın yetkili amirinin başvurusu üzerine verilir. Tuzak, teknik bir muafiyetin genel bir muafiyet gibi okunmasıdır.",
+    "dayanak": "5682 sayılı Kanun md 14/A, 14/C",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p1-24",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, kendilerine diplomatik veya hususi damgalı pasaport verilmesi mümkün olmayan kimselere; Hükümetçe, hususi idarelerce veya belediyelerce resmî vazife ile dış memleketlerde vazifeye alındıklarında hangi nevi pasaport verilir?",
+    "siklar": {
+      "A": "Umuma mahsus pasaport",
+      "B": "Hizmet damgalı pasaport",
+      "C": "Müşterek pasaport",
+      "D": "Yabancılara mahsus pasaport",
+      "E": "Hususi damgalı pasaport"
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (B) bendine göre HİZMET DAMGALI PASAPORTLAR; bu Kanun gereğince kendilerine diplomatik veya hususi damgalı pasaport verilmesi mümkün olmayan kimselere, Hükümetçe, hususi idarelerce veya belediyelerce RESMÎ VAZİFE İLE DIŞ MEMLEKETLERDE VAZİFEYE ALINDIKLARINDA verilir. Hükmün mantığı TAMAMLAYICILIKTIR: hizmet damgalı pasaport, resmî görevle yurt dışına çıkan ancak diplomatik ya da hususi pasaport şartlarını taşımayan kamu görevlilerinin boşluğunu doldurur. Bu nedenle hizmet damgalı pasaport iddiası, önce diğer iki nevinin şartlarının bulunmadığının tespitini gerektirir. Umuma mahsus pasaport ise resmî görev bağlantısı bulunmayan olağan hâllerin pasaportudur.",
+    "dayanak": "5682 sayılı Kanun md 14/B",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p1-25",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türkiye Cumhuriyetinin üyesi bulunduğu milletlerarası kuruluşlarda çalışanlara hizmet damgalı pasaport verilebilmesi için aranan şart aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Bu kuruluşlarda memur statüsünde çalışıyor olmak",
+      "B": "Hükümetçe resmî vazife ile dış memlekette vazifeye alınmış olmak",
+      "C": "Türk Hava Kurumu veya Türkiye Kızılay Cemiyetince görevlendirilmiş olmak",
+      "D": "Birinci, ikinci veya üçüncü derece kadroda bulunuyor olmak",
+      "E": "Hususi idarelerce veya belediyelerce görevlendirilmiş olmak"
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (B) bendinin ikinci paragrafına göre, Türkiye Cumhuriyetinin üyesi bulunduğu milletlerarası kuruluşlarda MEMUR STATÜSÜNDE ÇALIŞANLAR ile Türk Hava Kurumu ve Türkiye Kızılay Cemiyetince görevlendirilenlere hizmet damgalı pasaport verilir. Paragrafın ince noktası, iki grubun ŞARTININ AYNI OLMAMASIDIR: milletlerarası kuruluşlar bakımından kanun MEMUR STATÜSÜ arar, yani bu kuruluşlarda her sıfatla çalışan değil yalnız memur statüsündeki personel hak sahibidir; Türk Hava Kurumu ve Kızılay bakımından ise GÖREVLENDİRİLMİŞ OLMAK yeterlidir, ayrıca bir statü kaydı aranmaz. Tuzak, bir gruba ait kaydın diğerine taşınmasıdır. Kadro derecesi ölçütü ise bu paragrafa değil, hususi damgalı pasaporta ilişkin (A) bendine aittir.",
+    "dayanak": "5682 sayılı Kanun md 14/B",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-26",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre hususi ve hizmet damgalı pasaportlar, talep edenin mensup bulunduğu makamın yetkili amirinin başvurusu üzerine hangi makam tarafından verilir?",
+    "siklar": {
+      "A": "Dışişleri Bakanlığınca",
+      "B": "İçişleri Bakanlığınca",
+      "C": "Valiliklerce",
+      "D": "İl emniyet müdürlüklerince",
+      "E": "İlgilinin mensup olduğu kurumun kendisince"
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (C) bendine göre hususi ve hizmet damgalı pasaportlar, talep edenin mensup bulunduğu makamın YETKİLİ AMİRİNİN BAŞVURUSU üzerine İÇİŞLERİ BAKANLIĞINCA verilir. Buradaki iki unsuru birlikte hatırlamak gerekir: pasaportu veren makam İçişleri Bakanlığıdır, ancak süreç kişinin doğrudan müracaatıyla değil, mensup olduğu makamın yetkili amirinin yazılı başvurusuyla başlar. Aynı yazılı başvuru, (A) ve (B) bentlerinde yazılı eşlere ve çocuklara bu nevi pasaportların verilmesi veya çocukların refakat hanesine kaydı için de gereklidir. Bu düzenleme, diplomatik pasaportların veriliş usulünden bilinçli olarak ayrılmıştır.",
+    "dayanak": "5682 sayılı Kanun md 14/C",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-27",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, hususi ve hizmet damgalı pasaportların yabancı memleketlerde Türkiye Cumhuriyeti büyükelçilik ve elçiliklerince verilebilmesi için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "Yalnızca Dışişleri Bakanlığının talimatı",
+      "B": "Yalnızca İçişleri Bakanlığının muvafakati",
+      "C": "İçişleri Bakanlığının muvafakati ve Dışişleri Bakanlığının vereceği talimat",
+      "D": "Cumhurbaşkanının izni",
+      "E": "İlgilinin mensup olduğu bakanlığın talimatı"
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (C) bendine göre hususi ve hizmet damgalı pasaportlar, aynı şart dahilinde İÇİŞLERİ BAKANLIĞININ MUVAFAKATİ VE DIŞİŞLERİ BAKANLIĞININ VERECEĞİ TALİMAT üzerine Türkiye Cumhuriyeti büyükelçilik ve elçiliklerince de verilebilir. Yani yurt dışındaki temsilciliklerin yetkisi türetilmiş bir yetkidir ve İKİ AYRI İŞLEMİN birlikte bulunmasına bağlıdır; bakanlıklardan yalnız birinin işlemi yeterli değildir. 'Aynı şart dahilinde' ibaresi de ayrıca önemlidir: temsilcilik yoluyla verilmede de mensup olunan makamın yetkili amirinin başvurusu aranmaya devam eder. Aynı ikili mekanizma, süresi biten bu pasaportların uzatılmasında da işler.",
+    "dayanak": "5682 sayılı Kanun md 14/C",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-28",
+    "articleNo": "14",
+    "kok": "Emeklilik sebebiyle görevinden ayrılmış ve hususi damgalı pasaport almaya hak kazanmış bir kamu görevlisi, 5682 sayılı Pasaport Kanunu'na göre bu pasaportu alabilmek için ne yapmalıdır?",
+    "siklar": {
+      "A": "Durumunu gösteren belgelerle doğrudan İçişleri Bakanlığına müracaat etmelidir.",
+      "B": "Emekli olduğu kurumun yetkili amiri aracılığıyla başvurmalıdır.",
+      "C": "İkametgâhının bulunduğu valiliğe müracaat etmelidir.",
+      "D": "Durumunu gösteren belgelerle doğrudan Dışişleri Bakanlığına müracaat etmelidir.",
+      "E": "Sosyal Güvenlik Kurumu aracılığıyla başvurmalıdır."
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (C) bendinin son cümlesine göre, EMEKLİLİK VEYA ÇEKİLME sebepleri ile vazifelerinden ayrılmış olanların hususi damgalı pasaport alabilmeleri için durumlarını gösteren belgelerle DOĞRUDAN İÇİŞLERİ BAKANLIĞINA müracaat etmeleri lazımdır. Buradaki tuzak, aynı bentte görevdekiler için öngörülen usulün emeklilere de uygulandığının sanılmasıdır: görevde olanlar bakımından süreç mensup bulunulan makamın yetkili amirinin başvurusuyla işlerken, görevinden ayrılmış olanlar bakımından böyle bir amir bulunmadığı için kanun DOĞRUDAN MÜRACAAT yolunu açmıştır. Her iki hâlde de pasaportu veren makam değişmez.",
+    "dayanak": "5682 sayılı Kanun md 14/C",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p1-29",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre hususi damgalı pasaportlar, İçişleri Bakanlığınca belirlenecek sürelerde tanzim edilir. Buna göre bu pasaportlar için öngörülen asgari geçerlilik süresi ne kadardır?",
+    "siklar": {
+      "A": "Altı ay",
+      "B": "Bir yıl",
+      "C": "İki yıl",
+      "D": "Üç yıl",
+      "E": "Dört yıl"
+    },
+    "dogru": "A",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (C) bendine göre hususi damgalı pasaportlar ALTI AYDAN AZ OLMAMAK KAYDIYLA İçişleri Bakanlığınca belirlenecek sürelerde tanzim edilir. Yani kanun bir üst süre koymamış, yalnızca bir ALT SINIR belirleyip takdiri Bakanlığa bırakmıştır. Aynı alt sınır hizmet damgalı pasaportlar için de geçerlidir; ancak orada süre belirlenirken PASAPORT SAHİBİNİN GÖREVİNİN MÜDDETİ esas alınır, bu da hizmet damgalı pasaportun görevle bağlantılı niteliğini gösterir.",
+    "dayanak": "5682 sayılı Kanun md 14/C",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-30",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, süresi biten hususi ve hizmet damgalı pasaportların uzatılması ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Uzatma için de mensup bulunulan makamın yetkili amirinin başvurusu gereklidir.",
+      "B": "Uzatma, İçişleri Bakanlığının muvafakati ve Dışişleri Bakanlığının talimatı üzerine Türkiye Cumhuriyeti büyükelçilik ve elçiliklerince de yapılabilir.",
+      "C": "Uzatma, pasaportun tanzim edildiği müddetlerle aynı sürelerle yapılır.",
+      "D": "Süresi biten pasaportlar en fazla üç defa uzatılabilir.",
+      "E": "Pasaport sahibinin ve varsa refakat hanesine kayıtlı bulunanların birer fotoğrafının pasaporta yapıştırılması lazımdır."
+    },
+    "dogru": "D",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (C) bendine göre süresi biten hususi ve hizmet damgalı pasaportların, bendin birinci fıkrasında yazılı başvuru, İçişleri Bakanlığının muvafakati ve Dışişleri Bakanlığının vereceği talimat üzerine Türkiye Cumhuriyeti büyükelçilik ve elçiliklerince de aynı müddetler için BEŞER DEFA uzatılması mümkündür. Dolayısıyla uzatma sayısını üç ile sınırlayan (D) şıkkı yanlıştır. 'Üç defa' rakamı rastgele seçilmemiştir: 13 üncü maddenin MÜLGA eski metninde diplomatik pasaportların icabında aynı müddetler için ÜÇ DEFA temdit olunacağı yazıyordu; eski hükmü hatırlayan aday bu sayıyı yanlış maddeye taşır. Hükmün diğer unsurları şıklarda doğru aktarılmıştır: uzatma yetkisi yurt dışı temsilciliklere de tanınmıştır, yetkili amirin başvurusu uzatmada da aranır, uzatma pasaportun tanzim edildiği müddetlerle yapılır ve fotoğraf zorunluluğu devam eder.",
+    "dayanak": "5682 sayılı Kanun md 14/C",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-31",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, hizmet damgalı pasaport alanların yakınları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Eşlerine de hizmet damgalı pasaport verilir.",
+      "B": "Öğrenimi devam eden ve şartları taşıyan çocuklarına 25 yaşının ikmaline kadar hizmet damgalı pasaport verilir.",
+      "C": "Sürekli bakıma muhtaç olduğu sağlık kurulu raporu ile belgelenen çocuklarına hizmet damgalı pasaport verilir.",
+      "D": "Eş ve çocuklara pasaport verilmesi için de yazılı başvuruda bulunulması gerekir.",
+      "E": "Eş ve çocuklara verilecek pasaportlar, hak sahibinin pasaportundan bağımsız olarak azami dört yıl süreyle geçerlidir."
+    },
+    "dogru": "E",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (B) bendine göre hizmet damgalı pasaport alanların eşlerine; ergin olmayan veya ergin olsalar dahi yanlarında yaşayıp evli bulunmayan ve iş sahibi olmayan öğrenimi devam eden çocuklarına 25 yaşının ikmaline kadar; yine aynı şartları taşıyan ve bedensel, zihinsel veya ruhsal engellerinden en az biri nedeniyle sürekli bakıma muhtaç olduğu resmî sağlık kurumlarının düzenlediği sağlık kurulu raporu ile belgelenen çocuklarına da HAK SAHİBİ KİŞİNİN PASAPORTU İLE AYNI SÜRE GEÇERLİ hizmet damgalı pasaport verilir. Dolayısıyla yakınların pasaportu bağımsız bir süreye değil, hak sahibinin pasaportunun süresine BAĞLIDIR; (E) şıkkı bu bağı kopardığı için yanlıştır. Ayrıca (C) bendi gereğince eşlere ve çocuklara pasaport verilmesi veya çocukların refakat hanesine kaydı için de yazılı başvuru şarttır.",
+    "dayanak": "5682 sayılı Kanun md 14/B, 14/C",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p1-32",
+    "articleNo": "14",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, il ve ilçe belediye başkanlarına hususi damgalı pasaport hangi süreyle verilir?",
+    "siklar": {
+      "A": "Bir defaya mahsus olmak üzere ve süresiz",
+      "B": "Görevleri süresince",
+      "C": "Görevleri süresince ve görevin bitiminden itibaren iki yıl daha",
+      "D": "Seçildikleri tarihten itibaren dört yıl süreyle",
+      "E": "Yalnızca resmî bir görevle yurt dışına çıkacakları her seyahat için"
+    },
+    "dogru": "B",
+    "aciklama": "5682 sayılı Kanun'un 14 üncü maddesinin (A) bendinde yer alan ve 3868 sayılı Kanunla değiştirilen paragrafa göre İL VE İLÇE BELEDİYE BAŞKANLARINA GÖREVLERİ SÜRESİNCE hususi damgalı pasaport verilir. Bu paragraftaki 'Büyükşehir' ibaresi 6360 sayılı Kanunla metinden ÇIKARILMIŞTIR; çünkü büyükşehir belediye başkanları aynı düzenlemeyle Kanun'un 13 üncü maddesi kapsamına alınmıştır. Hükmün ince noktası, hakkın göreve bağlı ve görevle sınırlı olmasıdır; görev sona erdiğinde bu paragrafa dayanan hak da sona erer. Bununla birlikte aynı bentte ayrıca BİRİNCİ DERECE KADRO İLE EMEKLİLİĞE HAK KAZANMIŞ olan belediye başkanları için farklı bir dayanak öngörülmüştür; bu iki hâlin karıştırılmaması gerekir.",
+    "dayanak": "5682 sayılı Kanun md 14/A",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p1-33",
+    "articleNo": "13",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, diplomatik pasaport alabilecek durumda bulunan veya alan kimselerin eşleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Eşlere hiçbir hâlde diplomatik pasaport verilemez; ancak şartları varsa hususi damgalı pasaport verilebilir.",
+      "B": "Eşlere diplomatik pasaport, yalnızca hak sahibi ile birlikte yurt dışına çıkmaları hâlinde verilebilir.",
+      "C": "Sıfat veya vazifenin devamı süresince eşe diplomatik pasaport verilebilir ya da eş refakat hanesine kaydedilebilir.",
+      "D": "Eşlere diplomatik pasaport verilmesi Dışişleri Bakanlığının ayrı bir iznine bağlıdır.",
+      "E": "Eşlerin refakat hanesine kaydı mümkün değildir; her hâlde müstakil pasaport düzenlenir."
+    },
+    "dogru": "C",
+    "aciklama": "5682 sayılı Kanun'un 13 üncü maddesinin dördüncü fıkrasına göre, diplomatik pasaport alabilecek durumda bulunan veya alan kimselerin SIFAT VEYA VAZİFELERİ DEVAM ETTİĞİ MÜDDETÇE eşlerine dahi diplomatik pasaport verilmesi veya bunların eşlerinin pasaportlarının REFAKAT HANESİNE KAYIT EDİLMESİ MÜMKÜNDÜR. Hüküm iki alternatifi birlikte tanımıştır; idare, müstakil pasaport düzenlemek ile refakat hanesine kayıt arasında seçim yapabilir. Hakkın sınırı ise sıfat veya vazifenin devamıdır; bu sona erdiğinde eşin bağlı hakkı da sona erer. Fıkranın 'alabilecek durumda bulunan' ifadesi de dikkat çeker: hak sahibinin pasaportu fiilen almış olması şart değildir.",
+    "dayanak": "5682 sayılı Kanun md 13/4",
+    "zorluk": "medium",
+    "tur": "kavram"
+  }
+]

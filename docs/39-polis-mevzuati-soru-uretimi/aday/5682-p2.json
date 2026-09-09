@@ -1,0 +1,648 @@
+[
+  {
+    "id": "5682-p2-01",
+    "articleNo": "15",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türk vatandaşlarının umuma mahsus münferit ve müşterek pasaportlarının yurt içinde verilmesine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yalnızca Emniyet Genel Müdürlüğünce verilir.",
+      "B": "Dışişleri Bakanlığınca verilir.",
+      "C": "İçişleri ve Dışişleri bakanlıklarınca müştereken verilir.",
+      "D": "Nüfus ve Vatandaşlık İşleri Genel Müdürlüğünce verilir.",
+      "E": "İçişleri Bakanlığınca veya İçişleri Bakanının vereceği yetkiye göre valiliklerce verilir."
+    },
+    "dogru": "E",
+    "aciklama": "Umuma mahsus pasaportlar YURT İÇİNDE İçişleri Bakanlığınca, İçişleri Bakanının vereceği yetkiye göre VALİLİKLERCE; yabancı memleketlerde ise Türkiye Cumhuriyeti KONSOLOSLUKLARI tarafından verilir. Tuzak, umuma mahsus pasaportu Dışişleri Bakanlığına bağlamaktır: Dışişleri Bakanlığı ve yurtdışındaki büyükelçilik/elçilikler DİPLOMATİK pasaportun makamıdır. İki bakanlığın MÜŞTEREK karar aldığı hâller ise pasaport yerine geçerli belgelerin tespiti gibi ayrı konulardır.",
+    "dayanak": "5682 sayılı Kanun md 15/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-02",
+    "articleNo": "15",
+    "kok": "5682 sayılı Pasaport Kanunu'nun 15 inci maddesine göre, umuma mahsus pasaportlarda refakat hanesine kayıt ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Refakat hanesine kayıt, İçişleri Bakanlığının her başvuru için vereceği ayrı izne bağlıdır.",
+      "B": "Refakat hanesine yalnızca reşit olmayan erkek çocuklar kaydolunabilir.",
+      "C": "Pasaport sahibinin talebi üzerine reşit olmayan kız ve erkek çocukları kaydolunur.",
+      "D": "Refakat hanesine kayıt için çocuğun nüfus kaydının ayrıca konsolosluk kütüğüne geçirilmesi şarttır.",
+      "E": "Refakat hanesine kayıt işlemi yalnızca yabancı memleketlerdeki konsolosluklarca yapılabilir."
+    },
+    "dogru": "C",
+    "aciklama": "Kanunun 15 inci maddesindeki refakat kaydı İKİ UNSURLUDUR: işlem PASAPORT SAHİBİNİN TALEBİNE bağlıdır ve kapsam REŞİT OLMAYAN KIZ VE ERKEK ÇOCUKLARIDIR. Metin cinsiyet ayrımı yapmadığı gibi, kayıt için idarenin ayrı bir izni, mahkeme kararı yahut ek bir nüfus/konsolosluk işlemi de aramaz; kayıt, pasaportun düzenlenmesi işleminin içinde yer alan bağlı bir sonuçtur. TUZAK, kaydı idarenin re'sen yaptığı bir işlem sanmak (A), kapsamı tek cinsiyete daraltmak (B) veya kayıt için metinde bulunmayan bir usul şartı üretmektir (D, E). SIK KARIŞTIRILAN KOMŞU HÜKÜM: 'yabancılara mahsus' damgalı pasaportlarda refakat kaydının şartları BAŞKADIR — orada kaydedilecek kişinin pasaport sahibiyle TABİİYET bakımından aynı durumda bulunması, reşit olmaması ve iş sahibi olmaması aranır, ayrıca aynı durumdaki eş için de kayıt yapılabilir. Umuma mahsus pasaportta ise ölçüt yalnızca reşit olmama ve pasaport sahibinin talebidir. Bu maddede düzenlenen rejim KLASİK pasaportlara aittir; Kanunun ek maddelerinde elektronik pasaportlar için ayrı ve daha sınırlayıcı bir düzen öngörüldüğü unutulmamalıdır.",
+    "dayanak": "5682 sayılı Kanun md 15/2",
+    "zorluk": "easy",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-03",
+    "articleNo": "15",
+    "kok": "Bir Türk vatandaşının umuma mahsus pasaportunun refakat hanesinde kayıtlı bulunan çocuk, pasaport sahibi beraberinde olmaksızın bu pasaportla yurt dışına çıkmak istemektedir. 5682 sayılı Pasaport Kanunu'na göre bu durumda aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kanuni mümessilinin tasdikli muvafakatini ibraz ederek tek başına seyahat edebilir.",
+      "B": "Refakat kaydı silinmek suretiyle kendisine umuma mahsus müşterek pasaport düzenlenir.",
+      "C": "Kendisine bir ay süreli seyahat belgesi düzenlenerek çıkışına izin verilir.",
+      "D": "Pasaport sahibi beraberinde bulunmadıkça o pasaportla seyahat edemez.",
+      "E": "Bulunduğu yer valiliğinden alacağı izinle tek başına seyahat edebilir."
+    },
+    "dogru": "D",
+    "aciklama": "Refakat hanesine yazılı olanlar, adına pasaport verilmiş bulunan kimsenin BERABERİNDE BULUNMADIKÇA o pasaportla SEYAHAT EDEMEZ. Refakat kaydı, çocuğa bağımsız bir seyahat hakkı vermez; kayıt, pasaport sahibinin seyahatine bağlı ve ONA TABİ bir imkândır. Bu nedenle eksiklik, muvafakat, valilik izni veya herhangi bir idari tasarrufla giderilebilecek bir usul eksikliği DEĞİL, belgenin kullanım kapsamına ilişkin bir SINIRDIR. TUZAK, reşit olmayanların MÜSTAKİL pasaport başvurusunda aranan kanuni mümessil muvafakati kuralını buraya taşımaktır: o kural, çocuk ADINA AYRI BİR PASAPORT düzenlenmesi hâlinde işler ve refakat kaydını aşmaya yaramaz. SIK KARIŞTIRILAN KOMŞU HÜKÜM: yabancı memleketlerde yoksul kaldığı sabit olanlara verilen bir ay süreli seyahat belgesi, Türkiye'ye DÖNÜŞÜ teminen düzenlenen istisnai bir belgedir; yurt dışına çıkışı sağlamak için kullanılamaz. Aynı şekilde müşterek pasaport, en az beş kişilik bir kafile için düzenlenen ayrı bir nevidir; refakat kaydının tek taraflı olarak müşterek pasaporta dönüştürülmesi mümkün değildir.",
+    "dayanak": "5682 sayılı Kanun md 15/3",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p2-05",
+    "articleNo": "16",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, umuma mahsus müşterek pasaport verilebilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Toplu yolculuk eden ve en az 5 kişilik bir kafile teşkil eden Türk vatandaşlarına, istedikleri takdirde verilir.",
+      "B": "Toplu yolculuk eden en az 5 kişilik kafilelere, münferit pasaport almaları yasaklanarak zorunlu olarak verilir.",
+      "C": "Kafile şartı aranmaksızın aynı aileden olan herkese verilir.",
+      "D": "Yalnızca Milli Eğitim Bakanlığının müsaadesiyle gezi yapacak öğrenci kafilelerine verilir.",
+      "E": "Yabancı uyruklu kafilelere de aynı şartlarla verilebilir."
+    },
+    "dogru": "A",
+    "aciklama": "İki unsur birlikte aranır: TOPLU yolculuk eden ve EN AZ 5 KİŞİLİK kafile teşkil eden TÜRK VATANDAŞLARI, ve bu pasaport ancak İSTEDİKLERİ TAKDİRDE verilir. Tuzak, hükmü zorunluluk gibi okumaktır; müşterek pasaport bir seçenektir. Öğretmen, öğrenci ve sporcu kafilelerine ilişkin hüküm ise verilme şartını değil, harç muafiyetini düzenleyen ayrı bir fıkradır.",
+    "dayanak": "5682 sayılı Kanun md 16/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-06",
+    "articleNo": "16",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, umuma mahsus müşterek pasaportlar verildiği tarihten itibaren hangi sürelerle muteber olmak üzere düzenlenir?",
+    "siklar": {
+      "A": "1 ay, 3 ay ve 6 ay",
+      "B": "3 ay, 6 ay ve 1 yıl",
+      "C": "6 ay, 1 yıl ve 2 yıl",
+      "D": "3 ay, 1 yıl ve 5 yıl",
+      "E": "1 ay, 6 ay ve 1 yıl"
+    },
+    "dogru": "B",
+    "aciklama": "Umuma mahsus müşterek pasaportlar, verildiği tarihten itibaren 3 AY, 6 AY VE 1 YIL muteber olmak üzere düzenlenir. Bu, KAPALI bir listedir: idare bu üç seçenek dışında bir muteberlik süresi belirleyemez, sürenin alt sınırını serbestçe takdir de edemez. TUZAK, Kanunun başka pasaport nevileri için öngördüğü süreleri bu listeye karıştırmaktır — çeldiricilerdeki bir ay, altı ay ve iki yıl gibi değerlerin her biri Kanunun başka hükümlerinde gerçekten geçer, fakat müşterek pasaportun süre listesine ait değildir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: umuma mahsus MÜNFERİT pasaportlarda kanun koyucu kapalı bir liste değil, bir ASGARİ SINIR koymuş ve sürenin belirlenmesini İçişleri Bakanlığına bırakmıştır; 'yabancılara mahsus' damgalı pasaportlarda ise her nevi için ayrı bir süre rejimi vardır. Dolayısıyla adayın önce PASAPORT NEV'İNİ, sonra o nevide sürenin KAPALI LİSTE mi yoksa ASGARİ SINIR mı olduğunu ayırt etmesi gerekir; sayıyı doğru hatırlayıp rejimi karıştırmak en sık düşülen hatadır.",
+    "dayanak": "5682 sayılı Kanun md 16/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-07",
+    "articleNo": "16",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, umuma mahsus müşterek pasaportla seyahat eden bir kafileden yolculuk sırasında ayrılan kişi hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Müşterek pasaportun bir suretini alarak seyahatine devam edebilir.",
+      "B": "Ayrıca pasaport almaya mecburdur.",
+      "C": "Kafile başkanının yazılı izniyle müşterek pasaportu kullanmaya devam eder.",
+      "D": "Kendisine derhal seyahat belgesi düzenlenir.",
+      "E": "Müşterek pasaport iptal edilir ve kafilenin tamamı yeni pasaport alır."
+    },
+    "dogru": "B",
+    "aciklama": "Bu pasaportla seyahat hâlinde KAFİLEDEN AYRILANLAR AYRICA PASAPORT ALMAYA MECBURDUR. Müşterek pasaport kafileye bağlı bir belgedir; kafileden kopan kişi için hukuki geçerliliğini sürdürmez. Tuzak, kafileden ayrılmayı belge sureti veya idari izinle çözülebilir bir usul sorunu sanmaktır — Kanun burada doğrudan bir MECBURİYET öngörmüştür.",
+    "dayanak": "5682 sayılı Kanun md 16/4",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p2-08",
+    "articleNo": "16",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, ilmi tetkiklerde bulunmak veya yabancı memleketlerde yapılacak spor teması ve müsabakalarına iştirak etmek üzere kafile hâlinde gezi yapacak öğretmen, öğrenci ve sporculara verilecek pasaportların harçtan muaf olabilmesi için hangi makamın müsaadesi aranır?",
+    "siklar": {
+      "A": "İçişleri Bakanlığının",
+      "B": "Dışişleri Bakanlığının",
+      "C": "Milli Eğitim Bakanlığının",
+      "D": "Gençlik ve spor alanında yetkili valiliğin",
+      "E": "Emniyet Genel Müdürlüğünün"
+    },
+    "dogru": "C",
+    "aciklama": "İlmi tetkik, spor teması ve müsabakalarına katılım amaçlı kafile gezilerinde MİLLİ EĞİTİM BAKANLIĞININ MÜSAADESİ aranır ve bu pasaportlar HİÇBİR HARCA tabi değildir. Tuzak, pasaport konusunun genel yetkili bakanlığı olan İçişleri Bakanlığını buraya da yerleştirmektir; oysa bu fıkrada yetki, gezinin niteliğini takdir eden eğitim makamına verilmiştir.",
+    "dayanak": "5682 sayılı Kanun md 16/6",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-09",
+    "articleNo": "17",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, umuma mahsus pasaport almak isteyenlerin başvuru yerleri ve kendilerinden istenecek belgeler hangi makamca tespit edilir?",
+    "siklar": {
+      "A": "Emniyet Genel Müdürlüğünce",
+      "B": "İçişleri ve Dışişleri bakanlıklarınca müştereken",
+      "C": "Cumhurbaşkanınca",
+      "D": "Valiliklerce",
+      "E": "İçişleri Bakanlığınca"
+    },
+    "dogru": "E",
+    "aciklama": "Umuma mahsus pasaport başvurusunun YERİ ve İSTENECEK BELGELER İÇİŞLERİ BAKANLIĞINCA tespit edilir. Tuzak, aynı Kanunda gerçekten var olan başka yetki biçimlerini buraya taşımaktır: müşterek bakanlık kararı, pasaport yerine geçerli bazı belgelerin şekil ve tespitine ilişkindir; Cumhurbaşkanının yetkisi ise giriş-çıkış kapıları ve seyahat kısıtlaması gibi apayrı konulara ilişkindir.",
+    "dayanak": "5682 sayılı Kanun md 17/A",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-10",
+    "articleNo": "17",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, reşit olmayanların ve mahcurların yalnız seyahat etmek üzere pasaport alabilmeleri için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "Sulh hukuk mahkemesinden alınacak seyahat izni kararı",
+      "B": "Nüfus müdürlüğünce düzenlenecek vesayet belgesi",
+      "C": "Mahallin mülkiye amirinin yazılı onayı",
+      "D": "Kanuni mümessillerinin muvafakatini havi resmi bir makamdan tasdikli vesika",
+      "E": "Konsolosluk kütüğüne kayıt şartı"
+    },
+    "dogru": "D",
+    "aciklama": "Reşit olmayanlar ve mahcurlar YALNIZ SEYAHAT ETMEK üzere pasaport alacaklarsa, KANUNİ MÜMESSİLLERİNİN MUVAFAKATİNİ taşıyan ve RESMİ BİR MAKAMDAN TASDİKLİ vesika ibraz etmeleri gerekir. Aranan şey bir mahkeme kararı veya idari izin değil, kanuni temsilcinin tasdikli rızasıdır. Tuzak, muvafakat ile yargı kararını özdeşleştirmektir.",
+    "dayanak": "5682 sayılı Kanun md 17/C",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-11",
+    "articleNo": "17",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, yabancı ülke adli veya idari makamlarınca verilen velayet ya da vesayet kararlarının pasaport başvurularında kabul edilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Hiçbir şekilde kabul edilmez; mutlaka Türk mahkemesi kararı aranır.",
+      "B": "Türkiye'deki tüm pasaport başvurularında kabul edilir.",
+      "C": "Kararın verildiği ülkede bulunan Türkiye Cumhuriyeti dış temsilciliklerindeki pasaport başvurularında kabul edilebilir.",
+      "D": "Yalnızca İçişleri Bakanlığının her başvuru için ayrı ayrı vereceği onayla kabul edilir.",
+      "E": "Yalnızca yabancılara mahsus damgalı pasaport başvurularında kabul edilir."
+    },
+    "dogru": "C",
+    "aciklama": "Hüküm yer bakımından DAR tutulmuştur: yabancı ülke adli veya idari makamlarınca verilen velayet/vesayet kararları, KARARIN VERİLDİĞİ ÜLKEDEKİ Türkiye Cumhuriyeti DIŞ TEMSİLCİLİKLERİNE yapılan pasaport başvurularında kabul edilebilir. Tuzak, hükmü yurt içi başvurulara da yayarak kapsamı genişletmek ya da tamamen reddederek daraltmaktır.",
+    "dayanak": "5682 sayılı Kanun md 17/E",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-12",
+    "articleNo": "18",
+    "kok": "Tabiiyetsiz bulunan ve tabiiyet durumu muntazam olmadığı için fiilen tabiiyetsizlere uygulanan muameleye tabi tutulmasında zaruret görülen bir kimseye \"yabancılara mahsus\" damgalı pasaport düzenlenmiştir. 5682 sayılı Pasaport Kanunu'na göre bu belge bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Belge, hamiline Türk vatandaşlığını kazanma yolunda kazanılmış bir hak sağlar.",
+      "B": "Aynı belge, yabancı memleketlerde yoksul kalan Türk vatandaşlarına da düzenlenebilir.",
+      "C": "Belge yalnızca Türkiye'de doğmuş olan tabiiyetsizler bakımından düzenlenebilir.",
+      "D": "Belgenin düzenlenmesine Dışişleri Bakanlığı karar verir ve belge yalnız yurt içinde verilir.",
+      "E": "Belge İçişleri Bakanlığının kararıyla verilir ve hamili lehine bir hak iktisabı doğurmaz."
+    },
+    "dogru": "E",
+    "aciklama": "'Yabancılara mahsus' damgalı pasaport, tabiiyetsiz olan veya tabiiyet durumu muntazam olmadığı için fiilen tabiiyetsizlere uygulanan muameleye tabi tutulmasında İÇİŞLERİ BAKANLIĞINCA ZARURET GÖRÜLEN kimselere, gerektiğinde ANILAN BAKANLIĞIN KARARIYLA verilir. Belge, Türk vatandaşlığının iktisabı bakımından HERHANGİ BİR MANA TAŞIMAZ ve hamili lehine HERHANGİ BİR HAK İKTİSABINI TAZAMMUN ETMEZ; yani seyahat ihtiyacını karşılayan teknik bir belgedir, statü kazandıran bir vatandaşlık işlemi değildir. TUZAK, belgeyi vatandaşlığa geçiş yolunda bir kademe sanmak (A) veya verilme şartını doğum yerine bağlayarak kapsamı daraltmaktır (C). Karar makamı da İçişleri Bakanlığıdır; Dışişleri Bakanlığı yalnızca YURT DIŞINDA verilecek belgelerde talimat kanalıdır, kararın kaynağı değildir (D). SIK KARIŞTIRILAN KOMŞU HÜKÜM: yabancı memleketlerde yoksul kaldığı sabit olan TÜRK VATANDAŞLARINA verilen belge bu pasaport değildir; onlar zaten vatandaş olduğu için kendilerine dönüşlerini teminen ayrı bir seyahat belgesi düzenlenir. Belgenin muhatabı vatandaş değil, tabiiyeti bulunmayan ya da tabiiyeti şüpheli kimsedir.",
+    "dayanak": "5682 sayılı Kanun md 18/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p2-13",
+    "articleNo": "18",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, \"yabancılara mahsus\" damgalı pasaportlardan Türkiye'ye yalnız bir giriş veya Türkiye'den yalnız bir çıkış için muteber olanların, sahipleri tarafından bulunduğu memleketi terk etmek suretiyle kullanılması gereken süre, itası tarihinden itibaren ne kadardır?",
+    "siklar": {
+      "A": "Bir ay",
+      "B": "İki ay",
+      "C": "Üç ay",
+      "D": "Altı ay",
+      "E": "Bir yıl"
+    },
+    "dogru": "A",
+    "aciklama": "Tek giriş veya tek çıkış için verilen bu pasaportların, İTASI TARİHİNDEN İTİBAREN BİR AY içinde bulunulan memleketi terk etmek suretiyle kullanılması şarttır; aksi hâlde YENİLENMESİ gerekir. Çeldiricilerin tamamı aynı maddede ya da Kanunun diğer maddelerinde gerçekten geçen sürelerdir; bu nedenle kök, pasaportun tek giriş/tek çıkış nev'ini ve sürenin başlangıcını (ita tarihi) açıkça belirtmektedir.",
+    "dayanak": "5682 sayılı Kanun md 18/A",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-14",
+    "articleNo": "18",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, \"yabancılara mahsus\" damgalı pasaportlardan bir gidiş ve geliş için verilenler en az ne kadarlık süreyle geçerli olmak üzere tanzim edilir?",
+    "siklar": {
+      "A": "Bir aydan az olmamak kaydıyla",
+      "B": "İki aydan az olmamak kaydıyla",
+      "C": "Üç aydan az olmamak kaydıyla",
+      "D": "Altı aydan az olmamak kaydıyla",
+      "E": "Bir yıldan az olmamak kaydıyla"
+    },
+    "dogru": "C",
+    "aciklama": "Bir GİDİŞ VE GELİŞ için verilen 'yabancılara mahsus' damgalı pasaportlar, ÜÇ AYDAN AZ OLMAMAK kaydıyla İÇİŞLERİ BAKANLIĞININ TAKDİRİNE göre belirlenecek süreyle geçerli olmak üzere tanzim edilir. Buradaki üç ay bir SABİT süre değil, ASGARİ SINIRDIR: idare bunun altında bir geçerlilik süresi belirleyemez, üstünde belirleyebilir. TUZAK, aynı Kanunun başka nevileri için öngördüğü süreleri buraya taşımaktır; çeldiricilerdeki değerlerin her biri Kanunun başka hükümlerinde gerçekten geçmektedir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: 'yabancılara mahsus' damgalı pasaportun DİĞER nevinde — Türkiye'ye yalnız bir giriş veya Türkiye'den yalnız bir çıkış için verilenlerde — söz konusu olan bir GEÇERLİLİK SÜRESİ değil, belgenin KULLANILMA süresidir; orada hamilin belirli bir süre içinde bulunduğu memleketi terk etmesi şarttır, aksi hâlde belge yenilenir. Yani iki nevide de süre vardır ama biri belgenin ne kadar geçerli olacağını, diğeri hamilin ne kadar sürede harekete geçmesi gerektiğini gösterir; asgari süre ile hak düşürücü kullanma süresini birbirine karıştırmamak gerekir.",
+    "dayanak": "5682 sayılı Kanun md 18/B",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-15",
+    "articleNo": "18",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türkiye'ye yalnız bir giriş veya Türkiye'den yalnız bir çıkış için verilen \"yabancılara mahsus\" damgalı pasaportun yürürlüğünü kaybetmesinden itibaren belirli bir süre geçmişse yenilenmesi işlemi hangi makamın kararına bağlıdır ve bu süre nedir?",
+    "siklar": {
+      "A": "Bir ay geçmişse, valiliğin kararına",
+      "B": "İki ay geçmişse, İçişleri Bakanlığının kararına",
+      "C": "Üç ay geçmişse, Dışişleri Bakanlığının kararına",
+      "D": "Altı ay geçmişse, İçişleri Bakanlığının kararına",
+      "E": "Bir yıl geçmişse, Cumhurbaşkanının kararına"
+    },
+    "dogru": "B",
+    "aciklama": "Tek giriş/tek çıkış için verilen pasaportların yürürlüğünü kaybetmesi tarihinden itibaren İKİ AY geçmişse, yenilenmesi işlemi İÇİŞLERİ BAKANLIĞININ KARARINA bağlıdır. Soruda hem süre hem makam birlikte sorulduğu için ikisinin de tutması gerekir: çeldiricilerdeki süreler ve makamlar Kanunun başka hükümlerinde gerçekten geçen, fakat bu fıkraya ait olmayan değerlerdir.",
+    "dayanak": "5682 sayılı Kanun md 18/4",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-16",
+    "articleNo": "18",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, \"yabancılara mahsus\" damgalı pasaportlarda refakat hanesine kayıt bakımından aşağıdakilerden hangisi SÖYLENEMEZ?",
+    "siklar": {
+      "A": "Pasaport sahibiyle tabiiyet bakımından aynı durumda bulunan çocukların kaydı caizdir.",
+      "B": "Refakat hanesine kaydedilecek çocuğun reşit olmaması ve iş sahibi bulunmaması gerekir.",
+      "C": "Kocasıyla tabiiyet bakımından aynı durumda bulunan karısı hakkında da aynı işlem yapılabilir.",
+      "D": "Pasaportun, refakat hanesinde kayıtlı olanların birer kıta fotoğrafisini de ihtiva etmesi gerekir.",
+      "E": "Refakat hanesinde kayıtlı olanlar, pasaport sahibinden ayrı olarak da bu pasaportla seyahat edebilir."
+    },
+    "dogru": "E",
+    "aciklama": "Olumsuz kök, metne AYKIRI olan tek ifadeyi arar. Refakat hanesinde kayıtlı olanlar, pasaport sahibiyle SEYAHAT ETMEDİKLERİ TAKDİRDE o pasaportu KULLANAMAZ; (E) bu kuralı tam tersine çevirdiği için Kanunla bağdaşmaz. Diğer dört ifade maddede gerçekten yazılıdır: kaydın caiz olması için kaydedilecek kişinin pasaport sahibiyle TABİİYET BAKIMINDAN AYNI DURUMDA bulunması, REŞİT OLMAMASI ve İŞ SAHİBİ OLMAMASI aranır; aynı tabiiyet durumundaki eş için de aynı işlem yapılabilir; ayrıca belgenin, sahibinin ve varsa refakat hanesinde kayıtlı olanların birer kıta FOTOĞRAFİSİNİ ihtiva etmesi zorunludur. TUZAK, kayıt ile KULLANMA yetkisini özdeşleştirmektir: kayıt, kayıtlı kişiye pasaportu bağımsız biçimde kullanma yetkisi vermez, yalnız pasaport sahibiyle BİRLİKTE seyahati mümkün kılar. SIK KARIŞTIRILAN KOMŞU HÜKÜM: umuma mahsus pasaportlarda refakat kaydının şartları daha dardır — orada tabiiyet ve iş sahibi olmama gibi ölçütler değil, yalnızca reşit olmama ve pasaport sahibinin talebi aranır. Şartların iki rejim arasında taşınması sık yapılan bir hatadır.",
+    "dayanak": "5682 sayılı Kanun md 18/5-8",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-17",
+    "articleNo": "18",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, \"yabancılara mahsus\" damgalı pasaportların verilmesi usulü ve şekli bakımından aşağıdakilerden hangisi YANLIŞTIR?",
+    "siklar": {
+      "A": "Yurt içinde bu pasaportlar İçişleri Bakanlığı tarafından verilir.",
+      "B": "Yabancı memleketlerde Türkiye Cumhuriyeti konsolosluk makamları tarafından verilir.",
+      "C": "Konsolosluklarca verilmesi, İçişleri Bakanlığının talebi veya tasvibi üzerine Dışişleri Bakanlığınca verilecek talimata bağlıdır.",
+      "D": "Bu pasaportların, sahiplerinin birer kıta fotoğrafisini ihtiva etmesi gerekir.",
+      "E": "Konsolosluklar bu pasaportları, bulundukları ülke makamlarının muvafakatini alarak doğrudan düzenleyebilir."
+    },
+    "dogru": "E",
+    "aciklama": "Bu pasaport nevinde karar yetkisi ile düzenleme yetkisi BİRBİRİNDEN AYRILMIŞTIR. Yurt içinde belge İÇİŞLERİ BAKANLIĞINCA verilir; yabancı memleketlerde ise Türkiye Cumhuriyeti KONSOLOSLUK MAKAMLARI düzenler, fakat bunu kendi takdirleriyle değil, İÇİŞLERİ BAKANLIĞININ TALEBİ VEYA TASVİBİ üzerine DIŞİŞLERİ BAKANLIĞINCA verilecek TALİMATA istinaden yapar. (E) bu zincirin tamamını atlayıp konsolosluğa serbest bir yetki tanıdığı ve üstelik yetkiyi yabancı devlet makamlarının iznine bağladığı için yanlıştır. TUZAK, konsolosluğun belgeyi fiilen düzenleyen makam olmasından hareketle onu KARAR MERCİİ sanmaktır; konsolosluk burada uygulayıcıdır, Dışişleri Bakanlığı talimatı ileten makamdır, iradenin kaynağı ise İçişleri Bakanlığıdır. SIK KARIŞTIRILAN KOMŞU HÜKÜM: bu pasaportların fotoğraf zorunluluğu belgenin ŞEKİL şartıdır ve verme usulüyle ilgisi yoktur; ayrıca hangi makamın karar vereceği ile belgenin ne kadar süreyle geçerli olacağı ayrı sorunlardır — süre rejimi pasaportun nevine göre değişir, verme usulü ise her iki nevi için ortaktır.",
+    "dayanak": "5682 sayılı Kanun md 18/1-3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-18",
+    "articleNo": "19",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre pasavanlar veya benzeri belgeler kimlere ve nerede kullanılmak üzere verilir?",
+    "siklar": {
+      "A": "Yabancılara, Türkiye'nin tamamında pasaport yerine kullanılmak üzere",
+      "B": "Uluslararası ulaşım araçlarının mürettebatına, hudut kapılarından geçmek üzere",
+      "C": "Türk vatandaşlarına, tüm yabancı ülkelerde pasaport yerine kullanılmak üzere",
+      "D": "Hemhudut ülke vatandaşlarına, Türkiye'nin sınır illerinde ikamet etmek üzere",
+      "E": "Türk vatandaşlarına, Türkiye Cumhuriyeti ile hemhudut memleketlerin hudut mıntıkaları dahilinde pasaport yerine kullanılmak üzere"
+    },
+    "dogru": "E",
+    "aciklama": "Pasavanlar ve benzeri belgeler TÜRK VATANDAŞLARINA verilir ve Türkiye Cumhuriyeti ile HEMHUDUT memleketlerin HUDUT MINTIKALARI DAHİLİNDE pasaport yerine kullanılır. Belge hem kişi hem de coğrafi kapsam bakımından sınırlıdır. Tuzak, pasavanı genel bir pasaport muadili gibi göstererek kapsamı genişletmek ya da uluslararası ulaşım araçları personeline verilen ayrı belgelerle karıştırmaktır.",
+    "dayanak": "5682 sayılı Kanun md 19/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-19",
+    "articleNo": "19",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre pasavanların şekli, ita tarzı, muteberlik müddeti ve kimlere verileceği hangi esasa göre ve hangi makamlarca tespit edilir?",
+    "siklar": {
+      "A": "Alakalı Devletlerle yapılmış veya yapılacak anlaşmalara uygun olarak İçişleri ve Dışişleri bakanlıklarınca müştereken",
+      "B": "Alakalı Devletlerle yapılmış anlaşmalara uygun olarak, yalnız İçişleri Bakanlığınca ve valiliklerin görüşü alınarak",
+      "C": "Alakalı Devletlerle yapılmış anlaşmalara uygun olarak, yalnız Dışişleri Bakanlığınca ve tek taraflı biçimde",
+      "D": "Herhangi bir anlaşma şartı aranmaksızın, hudut illerinin valilikleri ile kaymakamlıklarınca müştereken",
+      "E": "Alakalı Devletlerle yapılmış anlaşmalar uyarınca, İçişleri Bakanlığının teklifi üzerine Cumhurbaşkanınca"
+    },
+    "dogru": "A",
+    "aciklama": "Pasavanların şekli, ita tarzı, muteberlik müddeti ve kimlere verileceği İKİ AŞAMALI bir ölçüte bağlanmıştır: önce Türkiye Cumhuriyeti ile ALAKALI DEVLETLER ARASINDA yapılmış veya yapılacak ANLAŞMALARIN HÜKÜMLERİNE UYGUNLUK, sonra İÇİŞLERİ VE DIŞİŞLERİ bakanlıklarınca MÜŞTEREKEN tespit. Bu ikili yapı tesadüfi değildir: pasavan, hudut mıntıkalarında pasaport yerine kullanılan bir sınır belgesi olduğu için hem iç güvenlik hem de milletlerarası taahhüt boyutu taşır; bu nedenle tek bir bakanlığın serbest takdirine bırakılmamıştır. TUZAK, anlaşma kaydını atlayıp yetkiyi tek makama vermek ya da yetkiyi mahallî idarelere indirmektir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: umuma mahsus pasaportlarda yetki tek bakanlıkta toplanmıştır ve orada anlaşma şartı aranmaz; müşterek yetki ile anlaşmaya uygunluk kaydı pasavana özgüdür. SIK KARIŞTIRILAN KOMŞU HÜKÜM: umuma mahsus pasaportlarda yetki tek bakanlıkta toplanmıştır; müşterek yetki ile anlaşmaya uygunluk kaydı pasavana özgüdür.",
+    "dayanak": "5682 sayılı Kanun md 19/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-20",
+    "articleNo": "19",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre pasavanlar ve benzeri belgelerin harç ve resim bakımından durumu nedir?",
+    "siklar": {
+      "A": "Hiçbir harç veya resme tabi değildir.",
+      "B": "Umuma mahsus pasaport harcının yarısına tabidir.",
+      "C": "Pasaport harcına değil, hususi tarifeleri mucibince resme ve harca tabidir.",
+      "D": "Yalnızca damga resmine tabidir.",
+      "E": "Harç tutarı her yıl İçişleri Bakanlığınca serbestçe belirlenir."
+    },
+    "dogru": "C",
+    "aciklama": "Pasavanlar ve benzeri belgeler PASAPORT HARCINA DEĞİL, HUSUSİ TARİFELERİ MUCİBİNCE resme ve harca tabidir. Tuzak, bu belgeleri tamamen harçtan muaf saymaktır; Kanunda tam muafiyet başka belgeler için öngörülmüştür. Buradaki fark muafiyet değil, FARKLI BİR TARİFEYE tabi olmaktır.",
+    "dayanak": "5682 sayılı Kanun md 19",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-21",
+    "articleNo": "20",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Türkiye karasuları dışına çıkan Türk gemilerinin Türk vatandaşı olan mürettebatına fotoğraflı \"Gemiadamı Cüzdanı\" hangi makamlarca düzenlenir?",
+    "siklar": {
+      "A": "Bölge liman ve deniz işleri müdürlüklerince",
+      "B": "Sahil güvenlik komutanlıklarınca",
+      "C": "İl emniyet müdürlüklerince",
+      "D": "Geminin bağlı olduğu şirketin idaresince",
+      "E": "Gümrük idarelerince"
+    },
+    "dogru": "A",
+    "aciklama": "Gemiadamı Cüzdanı, usulüne uygun olarak BÖLGE LİMAN VE DENİZ İŞLERİ MÜDÜRLÜKLERİNCE fotoğraflı olarak düzenlenir. Aynı maddede uçak mürettebatı belgesinin İDARELERİNCE, demiryolu personeli kimlik belgesinin ise anlaşmalarda öngörülen yetkili makamlarca düzenlendiği ayrıca yazılıdır; tuzak bu üç belgenin düzenleyicilerini birbirine karıştırmaktır.",
+    "dayanak": "5682 sayılı Kanun md 20/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-22",
+    "articleNo": "20",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre demiryolu personeli kimlik belgeleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Düzenlendiği anda pasaport yerine geçer.",
+      "B": "Pasaport yerine kullanılabilmesi İçişleri Bakanlığının her seferinde vereceği izne bağlıdır.",
+      "C": "Hiçbir hâlde pasaport yerine kullanılamaz.",
+      "D": "Anlaşmalarda öngörülen yetkili makamlarca tasdik edilmedikçe pasaport yerine kullanılamaz.",
+      "E": "Yalnızca hemhudut ülkelerin hudut mıntıkalarında pasaport yerine geçer."
+    },
+    "dogru": "D",
+    "aciklama": "Demiryolu personeli kimlik belgeleri, ANLAŞMALARDA ÖNGÖRÜLEN YETKİLİ MAKAMLARCA TASDİK EDİLMEDİKÇE pasaport yerine KULLANILAMAZ. Yani belge geçerlidir fakat pasaport işlevi TASDİK ŞARTINA bağlıdır. Tuzak, hükmü mutlak bir yasak gibi okumak ya da tasdik şartını görmezden gelip belgeye doğrudan pasaport gücü tanımaktır. Hudut mıntıkasıyla sınırlı kullanım ise pasavana ilişkin ayrı bir düzenlemedir.",
+    "dayanak": "5682 sayılı Kanun md 20/5",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-23",
+    "articleNo": "20",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, gemiadamı cüzdanı ve uçak mürettebatı belgesi düzenlemeye yetkili kurum ve kuruluşların yükümlülüğü aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İlgililerin sağlık durumlarını resmi sağlık kurulu raporuyla belgelemek",
+      "B": "İlgililerin Kanunun 22 nci maddesi kapsamındaki durumlarını yetkili merciden teyit etmek",
+      "C": "Düzenledikleri belgeleri Dışişleri Bakanlığına onaylatmak",
+      "D": "İlgililerin adli sicil kayıtlarını her yıl valiliğe bildirmek",
+      "E": "Belgeleri düzenlemeden önce Cumhurbaşkanının onayını almak"
+    },
+    "dogru": "B",
+    "aciklama": "Bu belgeleri düzenlemeye yetkili kurum ve kuruluşlar, ilgililerin Kanunun 22 NCİ MADDESİ kapsamındaki durumlarını YETKİLİ MERCİDEN TEYİT ETMEK ZORUNDADIR. Böylece pasaport verilmesi yasak olan hâllerin, pasaport yerine geçerli belgeler üzerinden dolanılması engellenmiştir. Tuzak, bu teyit yükümlülüğünü belgenin şekline veya onayına ilişkin bir usulle karıştırmaktır.",
+    "dayanak": "5682 sayılı Kanun md 20/5",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-24",
+    "articleNo": "20",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, yabancı gemi, hava ve demiryolu uluslararası ulaşım araçları memur ve mürettebatının yetkili makamlarca usulüne uygun düzenlenmiş vesikaları ile Türk karasuları ve liman şehirlerine girip çıkmaları hangi esasa bağlanmıştır?",
+    "siklar": {
+      "A": "Mütekabiliyet (karşılıklılık) esasına",
+      "B": "İçişleri Bakanlığının her sefer için vereceği izne",
+      "C": "Vize alma zorunluluğuna",
+      "D": "Geminin bayrağını taşıdığı devletin talebine",
+      "E": "Cumhurbaşkanı kararına"
+    },
+    "dogru": "A",
+    "aciklama": "Yabancı uluslararası ulaşım araçlarının memur ve mürettebatı, usulüne ve örneğine uygun vesikaları ile Türk karasuları ve liman şehirlerine KARŞILIKLILIK ESASINA GÖRE girip çıkabilirler. Tuzak, her giriş-çıkışı ayrı bir idari izne veya vizeye bağlamaktır; Kanun burada devletlerarası uygulamada esas olan mütekabiliyeti benimsemiştir.",
+    "dayanak": "5682 sayılı Kanun md 20/7",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-25",
+    "articleNo": "21",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, pasavanlar ile Türkiye dışına taşıma yapan ulaşım araçlarının memur ve mürettebatına verilen vesikaların verilişi sırasında, Kanunun aşağıdaki hükümlerinden hangileri de uygulanır?\nI. Umuma mahsus pasaportların alınması için aranan şartlara ilişkin hükümler\nII. Pasaport veya vesika verilmesi yasak olan hâllere ilişkin hükümler\nIII. Pasaport nevilerini sayan hükümler",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "C",
+    "aciklama": "Pasaport YERİNE GEÇERLİ vesikalar, pasaporttan daha hafif bir rejime tabi değildir: Kanun, bu belgelerin verilişi sırasında umuma mahsus PASAPORT ALMA ŞARTLARINA ve pasaport ya da vesika VERİLMESİ YASAK OLAN HÂLLERE ilişkin hükümlerin de tatbik olunacağını açıkça söyler. Böylece hakkında yurt dışına çıkış tahdidi bulunan bir kişi, pasaport alamadığı hâlde pasavan veya gemiadamı cüzdanı gibi bir belgeyle sınırı geçemez; atıf, sistemdeki bu boşluğu kapatma amacı taşır. III yanlıştır: pasaport nevilerini sayan hüküm bir SINIFLANDIRMA hükmüdür, verilişte uygulanacak bir şart getirmez; nitekim pasavan ve gemiadamı cüzdanı zaten pasaport nevi değil, pasaport yerine geçen vesikalardır. TUZAK, bu belgeleri idari kolaylık belgesi sayıp pasaport rejiminin dışında görmektir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: atıf yalnız VERİLİŞ şartlarına ilişkindir; bu vesikaların mali rejimi ayrı bir hükümde düzenlenmiştir ve buradaki atfın kapsamı dışındadır.",
+    "dayanak": "5682 sayılı Kanun md 21",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "5682-p2-26",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, aşağıdakilerden hangisine pasaport veya seyahat vesikası verilmeyeceği kanun metninde açıkça belirtilmiştir?",
+    "siklar": {
+      "A": "Kamu görevinden çekilmiş olanlara",
+      "B": "Askerlik hizmetini henüz yapmamış olanlara",
+      "C": "Yurt dışında bir yıldan fazla ikamet edenlere",
+      "D": "Yurt dışına çıkmaları mahkemelerce yasaklananlara",
+      "E": "Hakkında adli soruşturma başlatılan herkese"
+    },
+    "dogru": "D",
+    "aciklama": "Maddede pasaport veya seyahat vesikası verilmeyecekler arasında YURT DIŞINA ÇIKMALARI MAHKEMELERCE YASAKLANANLAR açıkça sayılmıştır. Diğer şıklar, kanun metninde yer almayan ve genel kanaatten türetilmiş kapsam genişletmeleridir; özellikle soruşturma başlatılmış olmak tek başına bir tahdit sebebi olarak sayılmamıştır.",
+    "dayanak": "5682 sayılı Kanun md 22/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-27",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, terör örgütlerine aidiyeti, iltisakı veya irtibatı belirlenen yurtdışındaki kuruluşlarla bağlantısı nedeniyle pasaport verilmeyecek kişiler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yalnızca bu kuruluşların kurucusu olduğu İçişleri Bakanlığınca tespit edilenler kapsamdadır.",
+      "B": "Yalnızca bu kuruluşlarda yönetici olduğu İçişleri Bakanlığınca tespit edilenler kapsamdadır.",
+      "C": "Bu kuruluşların kurucu ve yöneticisi olduğu veya buralarda çalıştığı İçişleri Bakanlığınca tespit edilenler kapsamdadır.",
+      "D": "Kapsam, yurt içindeki eğitim ve sağlık kuruluşlarında çalıştığı tespit edilenlerle sınırlıdır.",
+      "E": "Kapsama girenlerin tespiti Dışişleri Bakanlığınca yapılır ve yalnız yöneticiler kapsama girer."
+    },
+    "dogru": "C",
+    "aciklama": "Hüküm hem KURULUŞ hem KİŞİ bakımından GENİŞ tutulmuştur. Kuruluş yönünden: terör örgütlerine aidiyeti, iltisakı veya irtibatı belirlenen YURTDIŞINDAKİ her türlü eğitim, öğretim ve sağlık kuruluşları ile vakıf, dernek veya şirketler. Kişi yönünden: bu yerlerin KURUCU VE YÖNETİCİSİ OLANLAR ile BURALARDA ÇALIŞANLAR. Tespit yetkisi ise İÇİŞLERİ BAKANLIĞINDADIR. Üç unsurdan biri eksik kaldığında şık yanlışa döner; A ve B kişi kapsamını, D kuruluşların bulunduğu yeri daraltır, E tespit makamını değiştirir. TUZAK, hükmü yalnız yönetim kademesine özgü sanmaktır: metin, kurucu ve yönetici olmayan ÇALIŞANLARI da kapsama almıştır. SIK KARIŞTIRILAN KOMŞU HÜKÜM: aynı fıkranın diğer ucunda YARGI KARARINA dayanan bir yasak hâli vardır; oradaki ölçüt idari tespit değil mahkeme kararıdır ve bu ayrım, sonradan tanınabilecek istisnaların sınırını belirlediği için pratikte önemlidir. İdari tespite dayanan hâl ile yargı kararına dayanan hâli birbirine karıştırmamak gerekir.",
+    "dayanak": "5682 sayılı Kanun md 22/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-28",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, pasaport verilmesi yasak olan hâllerde zaruri hâllerde pasaport veya pasaport yerine geçen seyahat vesikası verilebilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Zaruri hâllerde, İçişleri Bakanının teklifi üzerine valiliklerce verilebilir.",
+      "B": "Mahkemelerce yasaklananlar dışında kalanlara, zaruri hâllerde Cumhurbaşkanının onayı ile verilebilir.",
+      "C": "Yalnızca mahkemelerce yasaklananlara, kararı veren mahkemenin onayı alınmak suretiyle verilebilir.",
+      "D": "Bu hâllerin hiçbirinde istisna tanınamaz; zaruret bulunsa dahi talep her hâlükârda reddedilir.",
+      "E": "Zaruret hâlinde, ilgilinin ikamet ettiği yer valiliğinin takdiri ve İçişleri Bakanlığının onayı ile verilebilir."
+    },
+    "dogru": "B",
+    "aciklama": "İstisna İKİ YÖNDEN sınırlıdır. KAPSAM bakımından: yabancı memleketlere gitmeleri MAHKEMELERCE YASAKLANANLAR DIŞINDA kalanlar için işler; yargı kararıyla konulmuş bir yasak idari bir onayla aşılamaz. USUL bakımından: yalnız ZARURİ HÂLLERDE ve CUMHURBAŞKANININ ONAYI ile uygulanır; onay yetkisi valiliklere, bakanlığa yahut mahkemeye devredilmiş değildir. TUZAK, istisnayı yargı kararını da kaldıracak biçimde genişletmek (A ve C tipi okumalar) veya onay makamını idarenin alt kademelerine indirmektir (E). D ise istisnanın varlığını tümden yok saydığı için metne aykırıdır: Kanun, mutlak bir yasak değil, dar ve şarta bağlı bir esneklik öngörmüştür. SIK KARIŞTIRILAN KOMŞU HÜKÜM: onay makamı, mevzuattaki değişiklikten önce farklı biçimde düzenlenmişti; MÜLGA metni hatırlayan aday, bugün yürürlükte olmayan makamı işaretleme riski taşır. Sorularda daima YÜRÜRLÜKTEKİ metin esas alınır. Ayrıca bu istisna yalnız belgenin verilmesine ilişkindir; tahdit kaydının kendisini ortadan kaldırmaz.",
+    "dayanak": "5682 sayılı Kanun md 22/1",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5682-p2-29",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, pasaport tahdidi uygulanacak kişilerin durumu bakımından aşağıdakilerden hangisi ilgili daireler tarafından mahallin polis makamlarına bildirilecek hususlar arasında yer almaz?",
+    "siklar": {
+      "A": "Adı ve soyadı",
+      "B": "Doğum yeri ve tarihi",
+      "C": "Ana ve baba adı ile nüfusa kayıtlı olduğu yer",
+      "D": "Tahdit sebebi",
+      "E": "Yurt dışında ikamet ettiği adres"
+    },
+    "dogru": "E",
+    "aciklama": "Bildirilecek hususlar maddede AÇIK ve SAYILI biçimde belirtilmiştir: açık kimlik (adı, soyadı, doğum yeri ve tarihi, ana ve baba adı ile nüfusa kayıtlı olduğu yer) ve TAHDİT SEBEBİ. Yurt dışı ikamet adresi bu listede yer almaz. Tuzak, uygulamada makul görünen fakat kanun metninde sayılmayan bir bilgiyi listeye eklemektir.",
+    "dayanak": "5682 sayılı Kanun md 22/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-30",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, tahdit bilgilerini alan ilgili polis makamları bu bilgileri hangi kanalla ve nerelere bildirir?",
+    "siklar": {
+      "A": "Bulunduğu yer valiliği kanalıyla; Dışişleri Bakanlığına, Göç İdaresi Başkanlığına ve şahsın nüfusa kayıtlı olduğu il emniyet müdürlüğüne",
+      "B": "Bağlı bulunduğu il emniyet müdürlüğü kanalıyla; hudut kapısı bulunan emniyet müdürlüklerine, şahsın nüfusa kayıtlı olduğu il emniyet müdürlüğüne ve Emniyet Genel Müdürlüğüne",
+      "C": "Bağlı bulunduğu kaymakamlık kanalıyla; il emniyet müdürlüğüne, Göç İdaresi Başkanlığına ve Emniyet Genel Müdürlüğüne",
+      "D": "Doğrudan Emniyet Genel Müdürlüğü kanalıyla; bütün valiliklere, kaymakamlıklara ve hudut kapısı bulunan emniyet müdürlüklerine",
+      "E": "Bağlı bulunduğu il emniyet müdürlüğü kanalıyla; yalnızca şahsın nüfusa kayıtlı olduğu il emniyet müdürlüğüne ve o ilin valiliğine"
+    },
+    "dogru": "B",
+    "aciklama": "Bildirim zincirinin İKİ ayrı unsuru vardır ve şıklar bu iki unsuru ayrı ayrı bozmaktadır. KANAL: ilgili polis makamları bildirimi doğrudan değil, BAĞLI BULUNDUĞU İL EMNİYET MÜDÜRLÜĞÜ üzerinden ve EN SERİ HABERLEŞME ARACIYLA YAZILI olarak yapar. MUHATAP: bildirim üç adrese birden gider — HUDUT KAPISI BULUNAN emniyet müdürlükleri, şahsın NÜFUSA KAYITLI OLDUĞU il emniyet müdürlüğü ve EMNİYET GENEL MÜDÜRLÜĞÜ. Üç muhatabın da sayılması tesadüf değildir: hudut kapıları fiilî çıkışı önlemek, nüfusa kayıtlı olunan il kişinin kayıtlı olduğu yerde işlemi görmek, Genel Müdürlük ise merkezî kaydı tutmak içindir. TUZAK, listeyi tek muhataba indirgemek (E) ya da il emniyet müdürlüğü kanalını atlayıp doğrudan bildirim yaptırmaktır (D). SIK KARIŞTIRILAN KOMŞU HÜKÜM: bu fıkra, tahdit bilgisinin EMNİYET TEŞKİLATI İÇİNDE dolaşımını düzenler; bir önceki aşamada ilgili dairelerin MAHALLİN POLİS MAKAMLARINA yaptığı bildirim ise ayrı bir işlemdir. Zincirin iki halkasını birbirine karıştırmamak gerekir.",
+    "dayanak": "5682 sayılı Kanun md 22/3",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-31",
+    "articleNo": "22",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, yurt dışında kalmalarında genel güvenlik bakımından mahzur bulunduğu tespit edilenlerin süresi dolan pasaportları hakkında ne yapılır?",
+    "siklar": {
+      "A": "Pasaportları yenilenir, ancak yalnız belli ülkeler için geçerli kılınır.",
+      "B": "Pasaportları yenilenmez ve kendilerine hiçbir belge verilmez.",
+      "C": "Pasaportları yenilenmez, kendilerine Türkiye'ye dönmeleri için seyahat vesikası verilir.",
+      "D": "Pasaportları altı ay süreyle temdit edilir.",
+      "E": "Pasaportları yenilenir, fakat refakat kaydı silinir."
+    },
+    "dogru": "C",
+    "aciklama": "Bu kişilerin SÜRELERİ DOLAN PASAPORTLARI YENİLENMEZ; ancak kendilerine TÜRKİYE'YE DÖNMELERİ İÇİN SEYAHAT VESİKASI verilir. Kural, kişiyi belgesiz bırakmak değil, seyahat imkânını YALNIZ DÖNÜŞ yönüyle sınırlamaktır. Tuzak, hükmü mutlak bir belge yasağı gibi okumak veya sınırlamayı belli ülkelere göre pasaport düzenlenmesine ilişkin ayrı bir yetkiyle karıştırmaktır.",
+    "dayanak": "5682 sayılı Kanun md 22/5",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-32",
+    "articleNo": "22",
+    "kok": "Bir Türk vatandaşı, bulunduğu yabancı ülkeden sınır dışı edilerek Türkiye'ye dönmüş ve bir süre sonra yeniden pasaport almak üzere başvurmuştur. 5682 sayılı Pasaport Kanunu'na göre bu kişi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Sınır dışı edilmiş olması sebebiyle kendisine hiçbir surette pasaport veya seyahat vesikası verilemez.",
+      "B": "Kendisine ancak Cumhurbaşkanının onayı alınmak suretiyle pasaport verilebilir.",
+      "C": "Çıkarılış sebebi göz önünde tutularak kendisine pasaport veya vesika verilmeyebilir.",
+      "D": "Kendisine yalnızca bir yıl süreli ve tek bir ülke için geçerli pasaport düzenlenir.",
+      "E": "Sınır dışı edilmiş olması, pasaport talebinin değerlendirilmesinde dikkate alınamaz."
+    },
+    "dogru": "C",
+    "aciklama": "Bu hâl, KESİN bir yasak değil TAKDİRE BAĞLI bir yetkidir. Bulundukları ülkelerden sınır dışı edilmiş olanlara, bu ülkelerden ÇIKARILIŞ SEBEPLERİ GÖZ ÖNÜNDE TUTULARAK pasaport veya vesika VERİLMEYEBİLİR. 'Verilmeyebilir' ifadesi idareye bir değerlendirme alanı bırakır: sınır dışı edilme tek başına otomatik bir engel değildir, sebebi tartılır. TUZAK, bu ifadeyi 'verilmez' biçiminde okuyup takdir yetkisini BAĞLI YETKİYE çevirmektir (A); karşı uçtaki hata ise sınır dışı edilmenin hiç dikkate alınamayacağını sanmaktır (E). Her iki uç da metne aykırıdır. SIK KARIŞTIRILAN KOMŞU HÜKÜM: aynı maddenin başında yer alan hâller gerçekten KESİN yasak niteliğindedir ve orada idarenin takdir alanı yoktur; ayrıca o kesin yasak hâllerinde dar bir istisna usulü öngörülmüşken, burada böyle bir onay mekanizmasına ihtiyaç duyulmamıştır — çünkü yetki zaten baştan takdiridir. Aynı maddede yer alan bu iki farklı yetki türünü (bağlı yetki ve takdir yetkisi) ayırt etmek, maddenin anahtarıdır.",
+    "dayanak": "5682 sayılı Kanun md 22/6",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5682-p2-33",
+    "articleNo": "23",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, harp tehlikesi veya memleket güvenliğine ya da sağlık durumuna dokunan diğer olağanüstü hâller dolayısıyla Türk vatandaşlarının yabancı memleketlere gitmelerini kısmen veya tamamen men etme yetkisi kime aittir?",
+    "siklar": {
+      "A": "İçişleri Bakanlığına",
+      "B": "Dışişleri Bakanlığına",
+      "C": "Cumhurbaşkanına",
+      "D": "Emniyet Genel Müdürlüğüne",
+      "E": "Valiliklere"
+    },
+    "dogru": "C",
+    "aciklama": "Harp tehlikesi, memleket güvenliği veya sağlık durumuna dokunan olağanüstü hâllerde Türk vatandaşlarının yabancı memleketlere gitmelerini KISMEN VEYA TAMAMEN MEN etme ve sadece BELLİ ÜLKELER İÇİN GEÇERLİ pasaport düzenlenmesine karar verme yetkisi CUMHURBAŞKANINA aittir. Tuzak, seyahat özgürlüğüne ilişkin bu genel ve ülke çapındaki yetkiyi, pasaport işlemlerini yürüten idari makamlara vermektir.",
+    "dayanak": "5682 sayılı Kanun md 23/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-34",
+    "articleNo": "23",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, harp tehlikesi, yabancı memleketlerde ortaya çıkabilecek dâhilî karışıklıklar veya salgın hastalıklar sebebiyle ya da siyasi veya ekonomik nedenlerle; dış memleketlerdeki pasaport vermeye yetkili Türkiye Cumhuriyeti makamlarının, TÜRK VATANDAŞLARINA verecekleri pasaportları yalnız belli memleketlere gitmek için muteber olacak şekilde tanzim edebilmeleri neye bağlıdır?",
+    "siklar": {
+      "A": "İçişleri Bakanlığının talimatı veya muvafakatine",
+      "B": "Dışişleri Bakanlığının talimatı veya muvafakatine",
+      "C": "Cumhurbaşkanının her başvuru için vereceği onaya",
+      "D": "Bulundukları ülke makamlarının talebine",
+      "E": "Hiçbir şarta bağlı olmaksızın kendi takdirlerine"
+    },
+    "dogru": "B",
+    "aciklama": "Hüküm, yurt dışındaki Türk temsilciliklerine tanınmış SINIRLI ve KOŞULLU bir yetkidir. Yetkinin üç unsuru vardır: SEBEP (harp tehlikesi, yabancı memleketlerde ortaya çıkabilecek dâhilî karışıklıklar, salgın hastalıklar veya siyasi ya da ekonomik nedenler), MUHATAP (Türk vatandaşları) ve USUL (DIŞİŞLERİ BAKANLIĞININ TALİMATI VEYA MUVAFAKATİ). Sebep bulunsa dahi yetkili makam kendi başına hareket edemez; işlem Dışişleri Bakanlığının talimatına ya da muvafakatine bağlıdır. TUZAK, yurt dışı teşkilatının bağlı olduğu bakanlığı değiştirmek veya makamlara serbest takdir tanımaktır. SIK KARIŞTIRILAN KOMŞU HÜKÜM: aynı maddenin diğer fıkrasında yetkili makam ve konu tamamen farklıdır — orada söz konusu olan, tekil pasaport işlemleri değil, Türk vatandaşlarının yabancı memleketlere gidişinin GENEL olarak kısmen veya tamamen sınırlandırılmasıdır ve bu, çok daha üst düzey bir karar merciine aittir. Aday, tek bir pasaportun kapsamının daraltılması ile ülke çapında bir seyahat sınırlaması getirilmesini birbirinden ayırmalıdır.",
+    "dayanak": "5682 sayılı Kanun md 23/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-35",
+    "articleNo": "27",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, yabancıların diplomatik pasaportları ile bu Kanunda derpiş olunan hususi ve servis damgalı pasaportlara tekabül eden pasaportlarının vizeleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Hiçbir harca veya resme tabi değildir.",
+      "B": "Yalnızca diplomatik pasaport vizeleri harçtan muaftır.",
+      "C": "Umuma mahsus pasaport vizesi ile aynı harca tabidir.",
+      "D": "Hususi tarifeleri mucibince resme tabidir.",
+      "E": "Harç muafiyeti mütekabiliyet şartına bağlıdır."
+    },
+    "dogru": "A",
+    "aciklama": "Yabancıların diplomatik pasaportları ile hususi ve servis damgalı pasaportlara tekabül eden pasaportlarının vizeleri HİÇBİR HARCA VEYA RESME TABİ DEĞİLDİR. Muafiyet üç pasaport türünü birden kapsar ve metinde herhangi bir karşılıklılık kaydına bağlanmamıştır. Tuzak, muafiyeti yalnız diplomatik pasaporta daraltmak ya da Kanunda başka bir belge için öngörülen 'hususi tarife' rejimini buraya taşımaktır.",
+    "dayanak": "5682 sayılı Kanun md 27",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-36",
+    "articleNo": "Ek 2",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, Kanunun uygulanması, pasaportların şekil ve muhtevalarının tespiti ile pasaport ve pasaport yerine geçerli belgelerin düzenlenmesine ait esasları belirleyecek yönetmelik hangi bakanlığın koordinatörlüğünde hazırlanır?",
+    "siklar": {
+      "A": "Dışişleri Bakanlığının",
+      "B": "İçişleri Bakanlığının",
+      "C": "Adalet Bakanlığının",
+      "D": "Ulaştırma Bakanlığının",
+      "E": "Maliye ve Gümrük Bakanlığının"
+    },
+    "dogru": "B",
+    "aciklama": "Söz konusu yönetmelik, İÇİŞLERİ BAKANLIĞININ KOORDİNATÖRLÜĞÜNDE, Dışişleri ile Maliye ve Gümrük bakanlıklarının İŞTİRAKİYLE hazırlanır. Tuzak, iştirak eden bakanlıklardan birini koordinatör sanmaktır: metin koordinatörlüğü ile katılımı ayrı ayrı düzenlemiştir.",
+    "dayanak": "5682 sayılı Kanun Ek md 2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-37",
+    "articleNo": "Ek 3",
+    "kok": "5682 sayılı Pasaport Kanunu'nda yer alan harç ve resimler için, aşağıdaki kanunlardan hangisinin pasaportlarla ilgili hükümleri uygulanır?",
+    "siklar": {
+      "A": "213 sayılı Vergi Usul Kanunu",
+      "B": "492 sayılı Harçlar Kanunu",
+      "C": "6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun",
+      "D": "5018 sayılı Kamu Malî Yönetimi ve Kontrol Kanunu",
+      "E": "488 sayılı Damga Vergisi Kanunu"
+    },
+    "dogru": "B",
+    "aciklama": "Pasaport Kanununda yer alan harç ve resimler bakımından 492 SAYILI HARÇLAR KANUNUNUN pasaportlarla ilgili hükümleri uygulanır. Bunun tarihsel bir sebebi vardır: Kanunun kendi bünyesindeki harç hükümleri zaman içinde yürürlükten kaldırılmış, konu bütünüyle Harçlar Kanununa bırakılmıştır. Bu yüzden Pasaport Kanununun çeşitli maddelerinin altında 'harca ilişkin hükümler mülga' kayıtları görülür; aday bu boşluğu, harcın hiç alınmadığı biçiminde okumamalıdır — harç alınır, fakat dayanağı başka bir kanundur. TUZAK, mali mevzuatın diğer temel kanunlarını buraya yerleştirmektir; bunlar vergilendirmenin usulü, kamu alacaklarının tahsili veya kamu mali yönetimi gibi başka alanları düzenler ve pasaport harcının kaynağı değildir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: Kanun bazı belgeler için harç MUAFİYETİ öngörür; yani genel atıf Harçlar Kanununadır, fakat Kanunun kendi içinde ayrık hâller de bulunur.",
+    "dayanak": "5682 sayılı Kanun Ek md 3",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5682-p2-38",
+    "articleNo": "Ek 4",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre, hususi damgalı pasaport almaya hakkı olan Devlet memurları ile subay ve astsubayların taşıdığı unvan ve/veya rütbeleri taşımakla beraber birinci, ikinci ve üçüncü derece kadroları almadan emekli olan veya ayrılanlar hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Emsal alınmak suretiyle bunlara da hususi damgalı pasaport verilir.",
+      "B": "Kadro derecesi şartı gerçekleşmediğinden bunlara hiçbir şekilde hususi pasaport verilemez.",
+      "C": "Bunlara hususi damgalı pasaport yerine hizmet damgalı pasaport verilir.",
+      "D": "Bunlara ancak Cumhurbaşkanının onayı alınmak suretiyle diplomatik pasaport verilir.",
+      "E": "Bunlara yalnızca görevde bulundukları süreyle sınırlı olmak üzere hususi pasaport verilir."
+    },
+    "dogru": "A",
+    "aciklama": "Kural, hususi damgalı pasaport hakkını KADRO DERECESİNE bağlayan genel düzenin yarattığı bir haksızlığı gidermek için konulmuştur. Genel düzende hak, birinci, ikinci ve üçüncü derece kadrolarda bulunmaya bağlıdır; oysa bazı memur, subay ve astsubaylar bu unvan veya rütbeleri fiilen taşıdıkları hâlde söz konusu kadrolara gelemeden emekli olmuş ya da ayrılmıştır. Kanun bunlar için EMSAL ölçütü getirir: DEVLET MEMURİYETİNDEKİ HİZMET SÜRELERİ ile TAŞIDIKLARI UNVAN VE/VEYA RÜTBELER itibarıyla BUGÜN hususi damgalı pasaport almaya hak kazananlar emsal alınır ve bunlara da HUSUSİ PASAPORT verilir. TUZAK, hükmü tamamen dışlayıcı okumak (B) ya da verilecek belgenin NEV'İNİ değiştirmektir (C, D). Emsal kuralı yeni bir pasaport türü yaratmaz, mevcut hususi pasaport hakkını genişletir. SIK KARIŞTIRILAN KOMŞU HÜKÜM: hizmet damgalı ve diplomatik pasaportların verilme ölçütleri bambaşkadır ve görevle bağlantılıdır; buradaki hak ise EMEKLİLİK VEYA AYRILMA sonrasına ilişkindir, bu nedenle görev süresiyle sınırlandırılamaz (E).",
+    "dayanak": "5682 sayılı Kanun Ek md 4",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5682-p2-39",
+    "articleNo": "Ek 6",
+    "kok": "5682 sayılı Pasaport Kanunu'na göre elektronik pasaportlarla ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Bu pasaportlarda refakate kayıt işlemi yapılamaz.\nII. Bu pasaportlar temdit edilemez.\nIII. Müşterek elektronik pasaport düzenlenebilir.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Kanun, elektronik pasaportlar için ÜÇ MUTLAK YASAK öngörmüştür: bu pasaportlarda REFAKATE KAYIT işlemi YAPILAMAZ, bu pasaportlar TEMDİT EDİLEMEZ ve MÜŞTEREK e-pasaport DÜZENLENEMEZ. Bu nedenle I ve II doğru, III yanlıştır. Yasakların ortak mantığı belgenin teknik yapısıdır: elektronik pasaport, tek bir kişinin biyometrik verisine bağlı olarak üretilen kişiselleştirilmiş bir belgedir; bu yapı, ne birden çok kişinin aynı belgede toplanmasına ne de basılı bir hanenin sonradan doldurulmasına ya da sürenin belge üzerinde uzatılmasına elverir. Sürenin dolması hâlinde belge uzatılmaz, YENİDEN düzenlenir. TUZAK, klasik pasaportlardaki usulleri elektronik pasaportlara taşımaktır: klasik umuma mahsus pasaportlarda talep üzerine refakat kaydı mümkündür ve müşterek pasaport ayrı bir nevi olarak düzenlenebilir; elektronik pasaportlarda bu imkânların hiçbiri bulunmaz. SIK KARIŞTIRILAN KOMŞU HÜKÜM: buradaki 'temdit edilemez' kaydı, Kanunun bazı hâllerde öngördüğü süre uzatımı imkânlarıyla karıştırılmamalıdır; o istisnalar klasik belgelere ilişkindir.",
+    "dayanak": "5682 sayılı Kanun Ek md 6",
+    "zorluk": "medium",
+    "tur": "onerme"
+  }
+]

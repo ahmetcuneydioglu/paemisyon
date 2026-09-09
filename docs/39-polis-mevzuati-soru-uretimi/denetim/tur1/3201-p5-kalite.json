@@ -1,0 +1,121 @@
+[
+ { "id": "3201-p5-01", "karar": "ONAY",
+   "gerekce": "Ek 1/1'in tek cümlelik hükmünü temiz ölçüyor; çeldiriciler (kaymakam, daire başkanı, emniyet müdürü, Teftiş Kurulu Başkanı) Kanunda gerçekten geçen kadrolar. Doğru şık en kısa şık ama fark küçük (16 vs 20-33) ve içerik ipucu vermiyor." },
+
+ { "id": "3201-p5-02", "karar": "REVIZYON",
+   "gerekce": "SIZINTI (kök -> cevap). Bu sorunun cevabı A 'Tıbbi, teknik ve malî hizmetler'. q03'ün KÖKÜ ise aynen şunu yazıyor: 'emniyet hizmetleri sınıfı dışından atama yapılan TIBBİ, TEKNİK VE MALÎ HİZMET KADROLARININ hizmet sınıfı...'. Aynı dosyadaki iki soru arka arkaya kullanıldığında q02 cevapsız kalmaz. Üreticinin 'dosya içi sızıntı taraması 0 sonuç' iddiası bu çift için yanlıştır.",
+   "oneri": "Ya q03'ün kökünü 'Ek 1 uyarınca emniyet hizmetleri sınıfı dışından atama yapılan kadroların hizmet sınıfı...' diye nötrleştir, ya da q02'yi soru havuzunda q03'ten ayrı bir bloğa yaz. Tercih: q03 kökünü nötrleştir (q02 daha zayıf ölçtüğü için değil, q03'ün ölçme değeri daha yüksek)." },
+
+ { "id": "3201-p5-03", "karar": "ONAY",
+   "gerekce": "Genel idare hizmetleri sınıfı + 'bu kadrolarda bulundukları süre boyunca' ikili ayrıntısı gerçek sınav malzemesi; çeldiriciler (teknik hizmetler, sağlık hizmetleri, önceki sınıfın korunması) makul hata üzerine kurulu. TEK ÇEKİNCE: kökü q02'nin cevabını veriyor (bkz. q02)." },
+
+ { "id": "3201-p5-04", "karar": "ONAY",
+   "gerekce": "Sınav makamının Polis Akademisi Başkanlığı olması klasik ve ayırt edici bir ayrıntı; EGM/İçişleri Bakanlığı çeldiricileri 'atamayı yapan sınavı da yapar' hatasına oturuyor. Açıklama rütbeleri bilinçle dışarıda bırakmış, q05'e sızıntı yok — bu doğru bir tercih." },
+
+ { "id": "3201-p5-05", "karar": "ONAY",
+   "gerekce": "Polis memuru + komiser yardımcısı listesi; 'komiser' ekleyen çeldirici tam da adayın düştüğü hata. Açıklaması q04'ün cevabını (Polis Akademisi Başkanlığı) vermeden 'bir sınav öngörülmüştür' demekle yetinmiş — hattın istediği disiplin." },
+
+ { "id": "3201-p5-06", "karar": "ONAY",
+   "gerekce": "Ölçme değeri sınırlı ama meşru: 'ücret idari işlemle değil BÜTÇE KANUNUYLA belirlenir' ayrımı gerçek bir hukuk tekniği ve yürürlükte. Çeldiriciler tek tip (hepsi idari işlem) olduğu için soru aslında 'kanun mu idari işlem mi' ikilisine iniyor; zorluk etiketi medium yerine easy olmalı." },
+
+ { "id": "3201-p5-07", "karar": "RED",
+   "gerekce": "ÖLÇME DEĞERİ YOK — arkeoloji. Hüküm, üniversitede aslî görevli öğretim üyesinin ÜNİVERSİTE TAZMİNATININ kesilmemesini düzenliyor ve yaptırımını 1959 tarihli 7244 sayılı Kanunun 3 üncü maddesine bağlıyor. Bir polis adayının ne meslekî ne sınav bakımından ihtiyaç duyacağı bir kural; muhatabı polis bile değil, üniversite öğretim üyesi. 3201-p7'de reddedilen kategoriyle birebir aynı. Ek 2'den zaten q06 var; blok temsili kaybı yok." },
+
+ { "id": "3201-p5-08", "karar": "RED",
+   "gerekce": "ÖLÇME DEĞERİ YOK — tükenmiş geçiş hükmü. Ek 3, 1972 tarihli 1649 sayılı Kanunun geçiş maddesi: 'bu kanunun yayımı tarihinden itibaren üç ay içinde yönetmelik çıkarılır'. Süre 54 yıl önce dolmuş, yönetmelik çıkmış, hüküm bugün hiçbir ilişkiye uygulanmıyor. Soru, hukuku değil kanun metninin fosilini ezberletiyor. Ayrıca sayısal çeldiricilerin Kanunun başka yerlerinde geçmesi (bir ay/iki ay/altı ay/bir yıl — metinde doğrulandı) hükmü ölçülebilir kılmıyor." },
+
+ { "id": "3201-p5-09", "karar": "ONAY",
+   "gerekce": "Ek 10'un üç katmanlı yasak yapısı (ad + eş anlam + ek) gerçek sınav malzemesi; 'yalnız aynen kullanma' çeldiricisi tam isabetli hata. Şık uzunlukları dengeli (53-73)." },
+
+ { "id": "3201-p5-10", "karar": "REVIZYON",
+   "gerekce": "İPUCU: kök vakayı kurarken kanunun istisna ifadesini BİREBİR tekrarlıyor ('polis emeklilerince kurulan bir dernek') ve A şıkkı aynı ifadeyi geri okuyor — hükmü hiç bilmeyen aday kök-şık eşleşmesinden cevabı bulur. İkinci ipucu yapısaldır: B, C, D, E'nin dördü de bir izin/şart getirirken A tek başına 'yasak dışıdır' der; klasik odd-one-out. Vaka kabuğu gerçek bir muhakeme de istemiyor (uygulanacak ayrık bir unsur yok).",
+   "oneri": "Vakayı istisnanın SINIRINDA kur: 'polis emeklilerinin de üye olduğu, ancak emekliler dışındaki kişilerce kurulmuş bir dernek' ya da 'emniyet mensuplarının kurduğu bir vakıf' yaz; böylece cevap istisnanın dar yorumundan çıksın. Şıkları da tek tip izin kalıbından kurtar." },
+
+ { "id": "3201-p5-11", "karar": "ONAY",
+   "gerekce": "Teklif-izin ikili usulü (EGM teklifi + İçişleri Bakanı izni) sağlam ve ayırt edici. ÇEKİNCE: kök 'Emniyet Teşkilatı mensupları İLE ÇARŞI VE MAHALLE BEKÇİLERİNİN...' diyerek bekçilerin kapsamda olduğunu açıkça yazıyor; bu, q14'ün aranan cevabını (D 'bekçiler kapsam dışındadır' yanlıştır) doğrudan ele veriyor. Düzeltme yükünü q14'e verdim." },
+
+ { "id": "3201-p5-12", "karar": "ONAY",
+   "gerekce": "Üyelik (bütün spor dernekleri) ile organda görev alma (yalnız teşkilat bünyesinde kurulmuş spor dernekleri) ayrımı dosyanın en değerli sorusu. ÇEKİNCE: doğru şık tek başına EN UZUN şık (60) ve A ile yalnız 'Emniyet Teşkilatı bünyesine' nitelemesi bakımından ayrılıyor — 'nitelemeli şık doğrudur' sezgisi işe yarıyor. A'yı 'Emniyet Genel Müdürlüğünce kurulmuş spor dernekleri' gibi eşit uzunlukta ve eşit nitelemeli yazmak ipucunu kapatır." },
+
+ { "id": "3201-p5-13", "karar": "ONAY",
+   "gerekce": "Disiplin/ceza/tedbir ayrımı gerçek bir kavram ölçümü; 'görevden uzaklaştırma bir tedbirdir' çeldiricisi iyi kurulmuş. NOT: kanun metni 'tüzük' diyor ama Emniyet Örgütü Disiplin Tüzüğü 7068 sayılı Kanunla yürürlükten kalktı; kök 'kanun metnine göre' dediği için soru geçerli, yine de yayında bu kaydın korunması şart." },
+
+ { "id": "3201-p5-14", "karar": "REVIZYON",
+   "gerekce": "İKİ AYRI KUSUR. (1) SIZINTI (kök -> cevap): aranan cevap D, yani 'çarşı ve mahalle bekçileri kapsam dışındadır' ifadesinin YANLIŞ olması. q11'in kökü bekçileri kapsam içinde açıkça sayıyor; q13'ün kökü de 'dernek ve vakıflara ilişkin yasaklar' diyerek A'yı doğruluyor. Aynı dosyada iki kök bu sorunun elemesini yapıyor. (2) TEKRAR: soru, q11 (vakıf izni), q12 (organda görev) ve q13'ün (yaptırım) konularını şık şık toplayan bir özet; Ek 11'den dördüncü soru olarak yeni bilgi katmıyor.",
+   "oneri": "Ya soruyu dosyadan çıkar (Ek 11 zaten 3 soruyla temsil ediliyor), ya da kapsamı değil ÜYELİK-ORGAN-VAKIF rejimlerinin karşılaştırmasını ölçen ve q11/q12 ile örtüşmeyen bir 'yanlıştır' sorusuna dönüştür." },
+
+ { "id": "3201-p5-15", "karar": "ONAY",
+   "gerekce": "İl merkezi/ilçe bağlılık ayrımı doğrudan ve gerçek. Açıklama, aynı cümledeki 'kadroları içinde özel timler de bulunan' ibaresini bilinçli olarak dışarıda bırakmış; q16'ya sızıntı yok — bu iyi." },
+
+ { "id": "3201-p5-16", "karar": "REVIZYON",
+   "gerekce": "SIZINTI (açıklama -> önerme). Açıklamanın son cümlesi: 'Sık karıştırılan komşu hüküm... orada özel timlerin yer almasını gerektirecek operasyonlar AYRI BİR BENT OLARAK ANILMIŞTIR.' q22'nin II numaralı öncülü kelimesi kelimesine budur ve doğrudur; okuyan aday q22'de II'yi işaretlemekte tereddüt etmez. Sızıntı çift yönlü: q22'nin açıklaması da '(g) bendi, çevik kuvvet KADROSUNDA ÖZEL TİM BULUNMASININ görev alanındaki karşılığıdır' diyerek bu sorunun cevabını (C) veriyor.",
+   "oneri": "Bu sorunun açıklamasındaki son iki cümleyi (komşu hüküm göndermesi) sil; q22'nin açıklamasındaki 'kadrosunda özel tim bulunması' gerekçesini de kaldır." },
+
+ { "id": "3201-p5-17", "karar": "ONAY",
+   "gerekce": "(a) bendinin 'KANUNA UYGUN toplantı' ölçütü, çevik kuvveti yalnız müdahale gücü sanan adayı gerçekten yakalıyor; toplantı hukukundan tanıdık ama bentte geçmeyen ölçütler (bildirim, açık/kapalı yer) iyi çeldirici. Doğru şık en kısa ama içerik ipucu yok." },
+
+ { "id": "3201-p5-18", "karar": "REVIZYON",
+   "gerekce": "SIZINTI (açıklama -> cevap). Açıklamanın son cümlesi: 'Maddenin son bendi, SAYILAN BU DURUMLARDA MEYDANA GELEN kanuna aykırı olaylara gerekirse zor kullanılarak müdahale edilmesini ayrıca düzenler.' q21'in aranan cevabı tam olarak budur (A: 'Kanunda çevik kuvvet için sayılan hâllerde meydana gelen olaylarla'). Sorunun kendi gövdesi temiz; kusur açıklamada.",
+   "oneri": "Son cümleyi çıkar veya 'zor kullanma yetkisi maddenin ayrı bir bendinde düzenlenmiştir' düzeyinde, kapsam belirtmeden bırak." },
+
+ { "id": "3201-p5-19", "karar": "REVIZYON",
+   "gerekce": "SIZINTI (şık + açıklama -> cevap). Çeldiricilerde 'Valinin yazılı istemde bulunması' ve 'İçişleri Bakanının onayının alınması' var; açıklama bunları 'çevik kuvvetin BAŞKA BİR İLDE görevlendirilmesine ilişkin ayrı bir ek maddenin öngördüğü usule aittir' diye adresliyor. Bu, q29'un cevabındaki iki halkayı (vali istemi, İçişleri Bakanı onayı) doğrulayıp B, C, D ve E'yi eliyor. Sorunun kendisi (yetersizlik şartı) sağlam.",
+   "oneri": "Açıklamadaki adres cümlesini 'bu unsurlar Kanunun başka hükümlerine aittir' şeklinde makam adı vermeden yaz; ya da çeldiricileri Ek 16 usul unsurları dışından seç." },
+
+ { "id": "3201-p5-20", "karar": "ONAY",
+   "gerekce": "(b) ve (d) bentleri doğru; yabancı öncül (ruhsat denetimi) makul çekicilikte. ÇEKİNCE: kökü q22'nin kökü ile KELİMESİ KELİMESİNE aynı — düzeltme yükünü q22'ye verdim." },
+
+ { "id": "3201-p5-21", "karar": "REVIZYON",
+   "gerekce": "YAPISAL İPUCU: B, C, D, E'nin dördü de 'Yalnız ...' diye başlayan daraltıcı şık; A tek başına genel/kapsayıcı şık. Sınav sezgisi 'dört daraltıcı bir genel varsa genel doğrudur' der ve hükmü hiç bilmeyen aday A'yı işaretler; hard etiketi bu yüzden gerçeği yansıtmıyor (fiilen easy). Üstüne q18'in açıklaması cevabı zaten yazıyor.",
+   "oneri": "Şık kalıbını kır: en az iki şıkkı da kapsayıcı yaz (ör. 'Kanuna aykırı her türlü olayla', 'Kolluk görevinin ifası sırasında karşılaşılan bütün olaylarla'), böylece ayrım 'genel mi dar mı' değil 'hangi genel' olsun." },
+
+ { "id": "3201-p5-22", "karar": "REVIZYON",
+   "gerekce": "İKİ KUSUR. (1) STENSİL: kökü q20 ile birebir aynı cümle; iki önerme sorusu aynı kalıpla, aynı öncül sayısıyla ve aynı hileyle (biri Kanunda hiç geçmeyen yabancı alan öncülü: q20'de ruhsat denetimi, burada gümrük kaçakçılığı) kurulmuş. Ek 13 bloğunda kök tekdüzeliği bu çiftte somutlaşıyor. (2) SIZINTI: açıklamadaki '(g) bendi... çevik kuvvet KADROSUNDA ÖZEL TİM BULUNMASININ görev alanındaki karşılığıdır' cümlesi q16'nın cevabını (özel timler kadro içindedir) veriyor.",
+   "oneri": "Kökü farklı bir kalıba çevir (ör. (e) bendindeki 'maddî VE MANEVÎ varlık' ayrıntısını boşluk doldurma ya da 'yanlıştır' formatında sor) ve açıklamadaki kadro göndermesini sil." },
+
+ { "id": "3201-p5-23", "karar": "ONAY",
+   "gerekce": "Ad ayrımı (illerde iki seçenek, ilçelerde tek ad) gerçek ve sık sorulan bir ayrıntı; teşkilat hukukundan tanıdık ama maddede geçmeyen unvanlar iyi çeldirici." },
+
+ { "id": "3201-p5-24", "karar": "ONAY",
+   "gerekce": "Plan (EGM) ile yönetmelik (Bakanlık) ve gereklilik değerlendirmesi (Bakanlık) arasındaki makam dağılımı sağlam bir ölçüm. Küçük çekince: açıklamanın 'Kanun çevik kuvvet için ayrıca bir yönetmelik de öngörmüştür, konusu... personel ve görev esaslarının kurala bağlanmasıdır' cümlesi q36'ya zayıf bir yön veriyor (cevabı vermiyor, alanı daraltıyor)." },
+
+ { "id": "3201-p5-25", "karar": "ONAY",
+   "gerekce": "'İllerin teşkilat, malzeme ve kadro esasları' ölçütü, akla ilk gelen nüfus/suç oranı/olay istatistiği çeldiricilerine karşı gerçek bir metin bilgisi ölçüyor. ÇEKİNCE: doğru şık tek başına en uzun (45 vs 29-38) ve tek üç öğeli liste; kısaltmak ya da bir çeldiriciyi de üç öğeli yapmak gerekir. Zorluk hard yerine medium." },
+
+ { "id": "3201-p5-26", "karar": "ONAY",
+   "gerekce": "Üç yıl doğrudan ve sınavlık. Sayısal çeldiricilerin Kanunda gerçekten geçtiği iddiasını doğruladım (iki yıl, dört yıl, beş yıl, altı yıl metinde mevcut). NOT: aynı cümlenin daha ayırt edici yarısı ('üç yıla KADAR uzatılabilir') hiçbir soruda ölçülmemiş; asıl tuzak orada." },
+
+ { "id": "3201-p5-27", "karar": "ONAY",
+   "gerekce": "'İdarenin gerekli görmesi VEYA personelin istemi' — bağlaç ölçümü meşru. İKİ ÇEKİNCE: doğru şık tek başına en uzun (51) ve tek 'veya'lı bileşik şık; ayrıca açıklama uzatmanın ölçüsünü 'kanunda gösterilen ölçüde' diye BULANIK bırakıyor, oysa metin 'üç yıla kadar' diyor — kaçınma kokan bir formülasyon, düzeltilmeli." },
+
+ { "id": "3201-p5-28", "karar": "ONAY",
+   "gerekce": "661 sayılı KHK ile eklenen özel harekat istisnası; 'özel tim = özel harekat branşı' karıştırması gerçek ve değerli bir tuzak. Olumsuz kök ('tabi olmayan') — üreticinin 1/36 sayımı bu soruyu atlamış, gerçek sayı 2/36." },
+
+ { "id": "3201-p5-29", "karar": "REVIZYON",
+   "gerekce": "SIZINTI (açıklama -> cevap). Açıklama: 'Fıkranın çok atlanan bir yönü daha vardır: görevlendirme yalnız çevik kuvvet birimleriyle sınırlı değildir, İHTİYAÇ GÖRÜLMESİ HÂLİNDE BAŞKA EMNİYET PERSONELİNİ DE KAPSAYABİLİR.' q33'ün aranan cevabı (C: 'Diğer emniyet hizmetleri sınıfı personeli de görevlendirilebilir') budur. Ek olarak q19'un açıklaması bu sorunun kendi cevabını (vali istemi + Bakan onayı) besliyor. Sorunun gövdesi sağlam; kusur açıklama zincirinde.",
+   "oneri": "Açıklamadaki kapsam genişlemesi cümlesini sil (q33 zaten onu ölçüyor) ve q19'un adres cümlesini nötrleştir." },
+
+ { "id": "3201-p5-30", "karar": "REVIZYON",
+   "gerekce": "AYNA ÇİFT + SIZINTI. q31 ile aynı fıkranın (Ek 16/2) iki yarısı: burada gidiş sevki, orada geriye sevk + beslenme-barınma. Açıklama daha ilk cümlede 'Fıkra gideri ikiye böler ve GİDİŞ ile KALIŞ-DÖNÜŞ için FARKLI valilikleri sorumlu tutar' diyor — bu tek cümle q31'de A, B, C ve E'yi eleyip D'yi bırakıyor. Karşılıklı olarak q31'in açıklaması da bu sorunun cevabını yazıyor. Brief'in 'ayna çift' uyarısının birebir örneği.",
+   "oneri": "İki sorudan birini kaldır (q31 vaka olduğu için o kalsın), ya da bu soruyu gider dağılımının TAMAMINI eşleştiren tek bir soruya dönüştürüp q31'i çıkar. Her hâlde iki açıklamadan diğerinin cevabını veren cümleler silinmeli." },
+
+ { "id": "3201-p5-31", "karar": "REVIZYON",
+   "gerekce": "Vaka kurgusu iyi ve üç kalemi tek yükümlüde toplayan cevap gerçek bir tuzak. Ancak (1) q30 ile aynı fıkrayı paylaşıyor, (2) açıklaması 'görev yerine SEVK, o kuvvetin bağlı olduğu il valiliğince' diyerek q30'un cevabını doğrudan veriyor, (3) B ve C şıkları gider dağılımının bölünebileceğini söyleyerek q30'un çözümüne yol gösteriyor.",
+   "oneri": "q30 kaldırılırsa bu soru olduğu gibi kalabilir; açıklamadaki gidiş sevki cümlesi yine de kısaltılmalı." },
+
+ { "id": "3201-p5-32", "karar": "ONAY",
+   "gerekce": "'Ödeme emri aranmaz' — malî usul istisnası özgün, kökte verilmemiş ve gerçekten ayırt edici; çeldiriciler (il özel idaresi mahsubu, bakan onayı, valiliklerden tahsil, Cumhurbaşkanı limiti) makul. Ek 16 bloğunun en temiz sorusu." },
+
+ { "id": "3201-p5-33", "karar": "ONAY",
+   "gerekce": "7196 sayılı Kanunla gelen kapsam genişlemesi güncel ve sınavlık. ÇEKİNCE: cevabı q29'un açıklaması ele veriyor (bkz. q29); düzeltme yükünü oraya verdim. Şık uzunlukları çok yakın (55-69), harf dağılımı sorunsuz." },
+
+ { "id": "3201-p5-34", "karar": "REVIZYON",
+   "gerekce": "ÖLÇME DEĞERİ DÜŞÜK + TAHMİN EDİLEBİLİR. Ek 17 tek cümlelik bir ilke hükmü; 'eğitimin amacı nedir' sorulduğunda terfi puanı, sicil-disiplin değerlendirmesi, yabancı dil ve branş aktarımı şıklarının hiçbiri 'eğitim amacı' olarak akla yatkın değil — hükmü hiç görmemiş aday da B'yi bulur. RED sınırında; kurtarılabilir olmasının tek sebebi 'bedenî VE FİKRÎ' ikilisinin gerçek bir boşluk doldurma malzemesi olması.",
+   "oneri": "Boşluk doldurmaya çevir: 'Polis çevik kuvvet birimlerinde görevli personel, hizmetin gerektirdiği - - - - kabiliyetlerinin geliştirilmesi amacıyla eğitime tabi tutulur' ve şıkları ikili kombinasyonlardan kur (bedenî ve fikrî / bedenî ve meslekî / fikrî ve teknik / bedenî ve ruhsal / meslekî ve teknik). Aksi hâlde dosyadan çıkar." },
+
+ { "id": "3201-p5-35", "karar": "RED",
+   "gerekce": "İKİ AYRI SEBEPLE. (1) ARKEOLOJİ: ölçülen bilgi, 1982'de çıkarılacak bir yönetmeliğin 1 Ocak 1983'te yürürlüğe konulacağı. Yönetmelik 43 yıl önce yürürlüğe girdi; tarih bugün hiçbir hukukî sonuç doğurmuyor, saf metin fosili. (2) ÇELDİRİCİ MİMARİSİ BOZUK: beş şıkkın DÖRDÜNDE tarih '1 Ocak 1983' — yani tarih boyutu fiilen verilmiş, soru yalnızca makamı ölçüyor; makam boyutunda da Valilikler ve Cumhurbaşkanlığı ciddiye alınacak çeldirici değil, soru A-B ikilisine iniyor. Ek 18 zaten q36 ile temsil ediliyor." },
+
+ { "id": "3201-p5-36", "karar": "ONAY",
+   "gerekce": "Dosyanın en iyi kurgulanmış sorularından: 'hangi husus KANUNDA, hangisi YÖNETMELİKTE' ayrımını ölçüyor ve çeldiricilerin üçü (fazla çalışma ücreti hariç) Kanunun başka ek maddelerinde gerçekten düzenlenmiş konular. ÇEKİNCE: doğru şık tek başına en uzun (66) — fark küçük ama q12, q14, q25, q27 ile birlikte bu eğilim dosyada tekrarlanıyor." }
+]

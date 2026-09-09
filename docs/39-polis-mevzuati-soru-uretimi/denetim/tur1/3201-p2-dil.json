@@ -1,0 +1,141 @@
+[
+  { "id": "3201-p2-01", "karar": "ONAY",
+    "gerekce": "Kök tek rütbeyi (Emniyet Amiri) ve tek yönü (hemen sonra gelen) daraltıyor; md 55/1 sayımında yalnız Dördüncü Sınıf Emniyet Müdürü karşılık geliyor. Başkomiser sayımda ÖNCE geldiği için ikinci doğru doğmuyor. Kök-şık uyumu tam." },
+
+  { "id": "3201-p2-02", "karar": "ONAY",
+    "gerekce": "Kök hem rütbeyi (Sınıf Üstü Emniyet Müdürü) hem iki sütunu birlikte istiyor; tablo satırı tek: Derece Üstü / Yaş Haddi. A şıkkı (2 - 2 yıl) tabloda gerçekten var ama Birinci Sınıf Emniyet Müdürü satırına ait olduğu için kök onu dışarıda bırakıyor. Şüphe notu: açıklamanın 'emniyet müdürü sınıfları 2, 3, 4 ve 5 inci meslek dereceleri karşılığında ve İKİ yıllık sürelerle yer alır' cümlesi eksik — Birinci Sınıf Emniyet Müdürü 1 inci derecede Yaş Haddi ile de tabloda yer alıyor; cevabı etkilemiyor ama açıklama tam değil." },
+
+  { "id": "3201-p2-03", "karar": "ONAY",
+    "gerekce": "Vaka, hükmü uygulamak için yeterli veriyi veriyor (rütbe adı + kesintisiz fiili çalışma) ve kök süreyi rütbeye bağlıyor; 'aynı süre başka rütbede de var' riski doğmuyor. Tabloda dört yıl yalnız Komiser Yardımcısı ve Komiser satırlarında; kök rütbeyi açıkça yazdığı için tek doğru." },
+
+  { "id": "3201-p2-04", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şık tek tek tabloyla doğrulandı: Başkomiser 3, Emniyet Amiri 3, İkinci Sınıf Emniyet Müdürü 2, Dördüncü Sınıf Emniyet Müdürü 2 — dördü de metne uygun. Yalnız D (Komiser - 3) yanlış; tabloda Komiser 4 yıl. Tek yanlış şık kuralı sağlanıyor." },
+
+  { "id": "3201-p2-06", "karar": "REVIZYON",
+    "gerekce": "İki-doğru sorunu yok; kusur ŞIK -> CEVAP SIZINTISI. Bu sorunun beş şıkkı (65, 75, 90, 100, 300) ile 3201-p2-07'nin şıkları birebir örtüşüyor: q07 şıkları 65'i Birinci, 75'i İkinci, 90'ı Üçüncü Sınıf Emniyet Müdürüne, 300'ü Emniyet Amirine bağlıyor. Aynı denemede q07'yi gören aday, bu soruyu mevzuatı hiç bilmeden eleme ile 100'e indirir.",
+    "oneri": "Ya çeldiricileri q07'de eşleşmeyen değerlerle kur (ör. 100, 110, 120, 130, 150 gibi maddede geçen ama oran tablosuna ait olmayan sayılar tuzak olarak), ya da q06 ile q07 aynı denemeye/alıştırma setine düşmesin diye işaretle." },
+
+  { "id": "3201-p2-07", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört eşleştirme oran tablosuyla doğrulandı: Birinci Sınıf 65, İkinci Sınıf 75, Emniyet Amiri 300, Üçüncü Sınıf 90 — dördü de doğru. Yanlış olan yalnız C (Başkomiser 320; metinde 310). Şüphe notu: bu sorunun şıkları 3201-p2-06'nın cevabını eleme yoluyla veriyor — bkz. q06 kararı; ikisi aynı sette kullanılmamalı." },
+
+  { "id": "3201-p2-08", "karar": "REVIZYON",
+    "gerekce": "Olumsuz kökün dört doğru şıkkı metinle doğrulandı (B, C, D, E hepsi md 55/3'te var; A gerçekten yanlış — 'küsurat dikkate alınmaz'). Dil kusuru E şıkkındadır: 'Bu tespitte hizmet ihtiyacı esas alınır' cümlesindeki 'bu tespit' göndermesi kendi içinde karşılıksız; anlamını yalnızca bir ÖNCEKİ şıktan (D) alıyor. Şıklar birbirinden bağımsız okunabilmelidir; belirsiz gönderim, şık sırası karıştığında E'yi anlamsızlaştırır.",
+    "oneri": "E şıkkını kendi kendine yeten hâle getir: 'Her amir rütbesinde bulunması gereken toplam personel sayısının tespitinde hizmet ihtiyacı esas alınır.'" },
+
+  { "id": "3201-p2-09", "karar": "ONAY",
+    "gerekce": "İKİ KURUL riski bakımından temiz: kök kurulun adını değil, yalnız o kurula ait olan İŞLEVİ (kadro sayılarını aşmamak kaydıyla yıllık personel sayısının hizmet ihtiyacına göre tespiti) tarif ediyor ve bu görev md 55/3'te yalnız Yüksek Değerlendirme Kuruluna verilmiş. Merkez Değerlendirme Kurulunun bu konuda hiçbir yetkisi yok; B çeldirici olarak kalıyor, ikinci doğru olmuyor." },
+
+  { "id": "3201-p2-10", "karar": "ONAY",
+    "gerekce": "Önermeler bağımsız ve tek anlamlı; kök 'kıdem sırasının tespiti' diyerek KIDEM kelimesinin iki anlamını (kıdem sırası / rütbe kıdemi) ayırmış. Sıralama md 55/5 ile birebir: terfi tarihi > performans puanı > başarı-üstün başarı belgesi > sicil numarası. Tek doğru sıra var, başka şık bu sırayı vermiyor. Küçük biçim notu: II bare bir isim tamlaması iken I, III ve IV karşılaştırmalı cümle; önermeler arası biçim birliği bozuk ama anlam belirsizliği doğurmuyor." },
+
+  { "id": "3201-p2-11", "karar": "ONAY",
+    "gerekce": "Kök istisna hâlini ('yıl içinde birden fazla toplanması hâlinde') açıkça daraltıyor, bu yüzden genel kural olan haziran ayı şıklarda bulunsa bile ikinci doğru doğmazdı; zaten şıklarda haziran yok. E ile D birbirine yakın ama farklı ('toplantının yapıldığı ay sonu' ≠ 'toplantıyı izleyen ayın sonu'), metin E'yi veriyor. 'Kurullar' ibaresi burada genel kullanılmış olsa da hüküm her iki kurul için ortak olduğundan kurul belirsizliği kusur değil." },
+
+  { "id": "3201-p2-12", "karar": "ONAY",
+    "gerekce": "Kurul adı kökte açıkça yazılı (Merkez Değerlendirme Kurulu), dolayısıyla iki-kurul riski kapalı. C şıkkı (Emniyet Amiri, Dördüncü ve Üçüncü Sınıf Emniyet Müdürü) Yüksek Değerlendirme Kurulunun alanı olduğu için doğru değil; kalan şıklar metinde hiç geçmeyen rütbe kümeleri. Tek doğru A." },
+
+  { "id": "3201-p2-13", "karar": "ONAY",
+    "gerekce": "Kurul adı kökte açık. Metin başkanı tek bir sıfatla belirlemiş: 'personel işlerinden sorumlu Genel Müdür Yardımcısı'. Personel Dairesi Başkanı ve Birinci Hukuk Müşaviri aynı kurulda ÜYE olduğu için çeldirici olarak makul ama başkan değil; Emniyet Genel Müdürü diğer kurulun başkanı. İkinci doğru yok." },
+
+  { "id": "3201-p2-14", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şıkkın dördü de md 55/7'de sayma yoluyla yer alıyor: Personel Dairesi Başkanı, Birinci Hukuk Müşaviri, Genel Müdürün uygun göreceği iki Daire Başkanı, Teftiş Kurulu Başkan Yardımcılarının biri. Polis Akademisi Başkanı yalnız Yüksek Değerlendirme Kurulunda geçiyor — bu, iki kurulun üye listelerinin ayrıldığı yerde kurulmuş sağlam bir olumsuz kök. Biçim notu: '...sayılanlardan olmayan aşağıdakilerden hangisidir' iki ayrı ayrılma hâli üst üste geliyor; 'aşağıdakilerden hangisi ... üyeleri arasında sayılmamıştır?' daha akıcı olurdu (q16 ve q45'te de aynı kalıp var)." },
+
+  { "id": "3201-p2-15", "karar": "ONAY",
+    "gerekce": "Kurul adı kökte açık ve sayı tek bir üye grubuna bağlanmış (İl Emniyet Müdürleri arasından seçilecek olanlar); metin 'iki İl Emniyet Müdürü' diyor. Polis Başmüfettişi için öngörülen 'bir' sayısı kökün kapsamı dışında kaldığı için ikinci doğru doğmuyor." },
+
+  { "id": "3201-p2-16", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Dört şıkkın dördü de md 55/8 üye sayımında birebir var: Özel Güvenlik Denetleme Başkanı, Teftiş Kurulu Başkanı, Birinci Hukuk Müşaviri, seçimle gelen bir Polis Başmüfettişi. Emniyet Müşaviri maddenin yalnız yirminci fıkrasında (hizmete devam ettirilebilecek unvanlar) geçiyor, kurul üyesi değil — ayrım net, iki-doğru riski yok." },
+
+  { "id": "3201-p2-17", "karar": "ONAY",
+    "gerekce": "Metin 'esaslar yönetmelikle düzenlenir' diyor; şıklar norm türleri olarak birbirini dışlıyor, 'Bakan onayı' ve 'genelge' normatif düzenleme olmadığı için ikinci doğru üretmiyor. Kök-şık uyumu ('... ile düzenlenir' + tekil isim) tüm şıklarda tutuyor." },
+
+  { "id": "3201-p2-18", "karar": "ONAY",
+    "gerekce": "Kök iki ayrı ayı sırasıyla ve rolleriyle (kurul toplantısı / topluca terfi) istiyor; metin mayıs ve haziran. Maddede geçen üçüncü ay olan mart (kıdem sırasının duyurulması) çeldirici olarak kullanılmış ama kökte istenen iki rolden hiçbirine karşılık gelmediği için ikinci doğru olmuyor. Kök 'kural olarak' diyerek istisna rejimini (q11) da dışarıda bırakmış — bu doğru bir daraltma." },
+
+  { "id": "3201-p2-19", "karar": "ONAY",
+    "gerekce": "Metin tek şart koyuyor: 'Bakanın onayı ile'. Emniyet Genel Müdürü kurullardan birinin başkanı olsa da bu yetki ona verilmemiş; kurul çoğunluğu şıkkı da metinde karşılıksız. Tek doğru D." },
+
+  { "id": "3201-p2-20", "karar": "ONAY",
+    "gerekce": "Metin 'kararlar oy çokluğu ile alınır' diyor; diğer dört şık nitelikli/ağırlıklı yeter sayı olup metinde hiç geçmiyor, dolayısıyla cevapsızlık ya da çift doğru riski yok. 'Kurullar' genel ifadesi burada da hükmün kendisi her iki kurul için ortak olduğundan kusur değil." },
+
+  { "id": "3201-p2-21", "karar": "ONAY",
+    "gerekce": "TERFİ ŞARTLARININ KÜMÜLATİF OLMASI riski bu soruda doğru yönetilmiş: kök tek bir şartı sormuyor, önerme kümesi içinden 'hangileri' diye soruyor, böylece birden çok gerçek şartın aynı anda doğru olması kusur değil ölçme unsuru hâline geliyor. I (a bendi), II (b bendi), III (c bendi) metinde aynen var; IV metinde terfi şartı değil, kıdem sırasında eşitlik bozucu ölçüt. III'ün kendi içinde 'Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için' kaydını taşıması, o şartın rütbeye özgü olmasından doğabilecek belirsizliği de kapatmış. Tek doğru B." },
+
+  { "id": "3201-p2-22", "karar": "REVIZYON",
+    "gerekce": "Hukuken tek doğru var (Polis Akademisi Başkanlığı) ve çeldiriciler ikinci doğru üretmiyor. Kusur anlatımdadır: kökte 'düzenlenecek yöneticilik eğitimi ... hangisi tarafından düzenlenir' — aynı fiil aynı cümlede iki kez, yakın tekrar ve döngüsel anlatım (yakın tekrar/anlatım bozukluğu).",
+    "oneri": "Kökü şöyle kur: '... Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için gerekli yöneticilik eğitimini düzenlemekle görevli olan aşağıdakilerden hangisidir?'" },
+
+  { "id": "3201-p2-23", "karar": "ONAY",
+    "gerekce": "Kök sınırı hem konuya (yazılı ve sözlü sınav) hem rütbeye (Dördüncü Sınıf Emniyet Müdürlüğü) hem birime (her personel) bağlamış; metindeki 'en fazla beş defa' tek karşılık. Şıklar sayı olduğu için maddedeki yıl değerleriyle (iki, üç, altı) karışma riski var ama hiçbiri sınav hakkı bakımından doğru değil, dolayısıyla ikinci doğru yok." },
+
+  { "id": "3201-p2-24", "karar": "ONAY",
+    "gerekce": "Kök hem çıkış rütbesini (İkinci Sınıf Emniyet Müdürü) hem varış rütbesini (Birinci Sınıf Emniyet Müdürü) yazdığı için MESLEK DERECESİ - RÜTBE karışması engellenmiş; metin 'ikinci meslek derecesi karşılığı görev unvanları' diyor. Şıklar sıra sayısı olduğu için birbirini dışlıyor." },
+
+  { "id": "3201-p2-25", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şıkkın dördü de md 55/13 ile doğrulandı: lisans mezunu polis memurları arasında sınav, yazılı ve sözlü sınavda başarı, ilk derece amirlik eğitimini bitirenlerin atanması, diğer niteliklerin yönetmelikle düzenlenmesi. Yalnız A yanlış (metin 'fiilen iki yılını dolduran'). Vaka değil doğrudan kural sorusu; belirsizlik yok." },
+
+  { "id": "3201-p2-26", "karar": "ONAY",
+    "gerekce": "İki-doğru bakımından en riskli şık C ('Kıdem sırasındaki yeri') tek tek denetlendi: md 55/4 kıdem sırasını yalnız KURULLARDA GÖRÜŞÜLME sırası için kullanıyor, terfiin kendisini liyakate bağlıyor; dolayısıyla C, 'terfide esas alınan' ölçüt değil. E ('meslek derecesinde geçen süre') metinde karşılıksız. Metin birebir 'bu rütbedeki fiili çalışma süresi esas alınır' dediği için tek doğru D. Kökün 'bir üst rütbeye terfiinde' kalıbı hükmün lafzıyla aynı — daraltma yeterli." },
+
+  { "id": "3201-p2-27", "karar": "ONAY",
+    "gerekce": "Doğru cevap metnin lafzıyla örtüşüyor: uzmanlık, yüksek lisans, DOKTORA ve avukatlık stajı 'rütbe kıdeminde değerlendirilmez'. Kalan dört şık aynı fıkrada 'o rütbedeki fiili çalışma süresi içinde değerlendirilir' denilen kalemler. Şüphe notu: aynı fıkra bu sürelerin 'toplamda üç yılı aşan kısmının' terfide değerlendirilmeyeceğini de söylüyor; çok dikkatli bir aday A/B/D/E için 'kısmen değerlendirilmez' itirazını kurabilir. Kökün 'rütbe kıdeminde' ifadesi metnin doktora cümlesinden alındığı, üç yıllık tavanın ise 'rütbe terfilerinde' ifadesiyle yazıldığı için itiraz zayıf kalıyor; yine de kök 'hiçbir şekilde değerlendirilmez' biçimine çevrilirse risk tamamen kapanır." },
+
+  { "id": "3201-p2-28", "karar": "REVIZYON",
+    "gerekce": "Sorunun kendi içinde iki-doğru ya da cevapsızlık sorunu yok (metin 'toplamda üç yılı aşan kısmı'). Kusur KÖK -> CEVAP SIZINTISIDIR: bu kök, yurt dışı misyon koruma, yurt dışı kurs, diğer görevler ile tedavi ve istirahat sürelerinin rütbe süresine SAYILDIĞINI olduğu gibi yazıyor. 3201-p2-27 tam olarak bunların sayılıp sayılmadığını soruyor; bu kökü gören aday q27'yi eleme ile çözer ve tek kalan doktora şıkkını işaretler.",
+    "oneri": "Kökü kısalt ve sızdıran sayımı kaldır: '... 13 üncü maddede sayılan rütbeler içerisinde geçirilen ve fiili çalışma süresinden sayılan sürelerin toplamda kaç yılı aşan kısmı rütbe terfilerinde değerlendirilmez?' Ayrıca q27 ile aynı denemeye düşmemesi işaretlensin." },
+
+  { "id": "3201-p2-29", "karar": "ONAY",
+    "gerekce": "Şıklar birbirini dışlıyor ve yalnız B metinle örtüşüyor ('atanılan ilk rütbede ve adaylığın onanmasından sonra fiili çalışma süresinden sayılır'). C ile B arasındaki fark ('adaylık süresi içinde' / 'adaylığın onanmasından sonra') metinde açıkça çözülmüş, bu yüzden çift doğru doğmuyor. A ile E metinde karşılıksız çeldiriciler." },
+
+  { "id": "3201-p2-30", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şıkkın dördü de md 55/16'da sayılı: paraya çevrilse veya ertelense dahi alınan hapis cezaları (A ve B), uzun ve kısa süreli durdurma cezaları (C), meslekten ve memuriyetten men cezaları (D). Yalnız taksirli suçtan alınan hapis cezası hükmün başındaki 'Taksirli suçlar hariç' kaydıyla dışarıda. A ve B'nin ikisi de aynı istisnadan (paraya çevirme/erteleme) türediği için birbirinin kopyası gibi durabilir ama ikisi de doğru şık olmadığından mantık kusuru doğurmuyor." },
+
+  { "id": "3201-p2-31", "karar": "REVIZYON",
+    "gerekce": "Vaka verisi yeterli ve cevap metnin 'HER yetersiz performans değerlendirme puanı rütbe terfiini bir yıl geciktirir' lafzıyla tutarlı; iki-doğru yok. Kusur AÇIKLAMA -> CEVAP SIZINTISIDIR: açıklamanın 'Sık karıştırılan komşu kural, aynı fıkrada sayılan ceza ve aylıksız izin hâlleridir: onlarda gecikme sabit bir yıl değil, doğrudan CEZA SÜRESİ KADARDIR' cümlesi, aynı dosyadaki 3201-p2-32'nin (altı ay aylıksız izin -> altı ay) cevabını doğrudan veriyor. İki soru birbirinin ayna çifti.",
+    "oneri": "Açıklamadan aylıksız izin göndermesini çıkar; komşu kural olarak yalnız ceza hâllerini an ('ceza hâllerinde gecikme sabit bir yıl değil, ceza süresi kadardır')." },
+
+  { "id": "3201-p2-32", "karar": "REVIZYON",
+    "gerekce": "Metin aylıksız izni terfii geri bıraktıran hâller arasında sayıyor, ancak gecikmenin ölçüsünü 'CEZA SÜRELERİ KADAR' diye yazıyor; aylıksız izin bir ceza olmadığı için hükmün lafzı bu hâlde ölçüyü doğrudan vermiyor. Açıklama ise metinde bulunmayan bir ibare kullanarak 'bu hâllerde gecikmenin SÜRE KADAR olacağını belirtir' diyor — bu, brief'in tarif ettiği açıklama itirafıdır: soru, metnin söylemediği bir genelleştirmeye dayanıyor. Cevapsız soru riski buradadır; A ('etkisi yoktur') metinle açıkça çeliştiği için ikinci doğru olmuyor, dolayısıyla RED değil REVIZYON. Ayrıca açıklama 'terfide bulunulan rütbedeki FİİLİ ÇALIŞMA süresinin esas alınması' cümlesiyle 3201-p2-26'nın cevabını da veriyor; q31 ile de ayna çifti oluşturuyor.",
+    "oneri": "Açıklamada hükmü aynen alıntıla ('...aylıksız izinde geçen süreler ... ceza süreleri kadar rütbe terfiini geri bıraktırır') ve aylıksız izin bakımından ölçünün iznin süresi olduğunu bu lafza dayandırarak açıkla; fiili çalışma süresi göndermesini kaldır." },
+
+  { "id": "3201-p2-33", "karar": "ONAY",
+    "gerekce": "Kök md 55/17'nin lafzını neredeyse aynen taşıyor ('diğer şartları taşımakla birlikte ... hizmet ihtiyacı sebebiyle kadrosuzluktan terfi edemeyen personel'), bu yüzden KADROSUZLUĞUN İKİ AYRI SONUCU birbirine karışmıyor. Şüphe notu: C şıkkı ('kadrosuzluk tazminatı ödenmek suretiyle emekliye sevk') maddenin 19-21 inci fıkralarında gerçek bir kurum; ancak o rejim beş yıllık süre, belirli rütbe grubu ve emeklilik şartı gibi kökte hiç verilmeyen ek unsurlara bağlı olduğundan bu kökle doğru hâle gelmiyor. Kök bu ayrımı taşıyabildiği için ONAY." },
+
+  { "id": "3201-p2-34", "karar": "ONAY",
+    "gerekce": "Kök rütbe grubunu tek tek sayarak (Emniyet Amirleri ile Dördüncü, Üçüncü ve İkinci Sınıf Emniyet Müdürleri) süreyi doğru hükme bağlamış; tablodaki en az bekleme süreleriyle karışma riski kapanmış. Metin beş yıl diyor, tek doğru D. Şüphe notu 1: bu sorunun cevabı 3201-p2-36'nın KÖKÜNDE açıkça yazılı ('beş yıl içinde bir üst rütbeye terfi edemeyen') — bkz. q36 kararı; ikisi aynı sette kullanılmamalı. Şüphe notu 2: kök tek cümlede çok uzun; 'kaç yıl' sorusu cümlenin ortasında kaldığı için okunurluk düşük." },
+
+  { "id": "3201-p2-35", "karar": "ONAY",
+    "gerekce": "İKİ KURUL riski denetlendi: maddenin hem 19 uncu hem 20 nci fıkrası kadrosuzluktan emekliye sevki aynı usule — Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayına — bağladığı için kökün rütbe grubunu daraltmaması kusur yaratmıyor; her iki okumada da cevap A. Merkez Değerlendirme Kuruluna bu konuda hiçbir yetki verilmediğinden B ikinci doğru olmuyor. D ('kurul kararı ile doğrudan') metinle çelişiyor." },
+
+  { "id": "3201-p2-36", "karar": "REVIZYON",
+    "gerekce": "Vaka tek anlamlı ve hükmü uygulamak için yeterli veriyi taşıyor (rütbe 19 uncu fıkra kapsamında, süre dolmuş, sevk uygun görülmemiş); cevap metinle birebir (iki yıl uzatılır, en fazla bir defa daha uzatılabilir) ve E dışında doğru şık yok. Kusur KÖK -> CEVAP SIZINTISIDIR: kök 'beş yıl içinde bir üst rütbeye terfi edemeyen' diyerek 3201-p2-34'ün doğru cevabını (Beş) olduğu gibi veriyor.",
+    "oneri": "Kökten sayıyı çıkar: 'Bulunduğu rütbede kanunda öngörülen süre içinde bir üst rütbeye terfi edemeyen bir Üçüncü Sınıf Emniyet Müdürünün...' Sayı vakanın çözümü için gerekli değil; alternatif olarak q34 ile aynı denemeye düşmemesi işaretlensin." },
+
+  { "id": "3201-p2-37", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört rütbenin dördü için de son fıkrada gerçekten bir oran öngörülmüş (Emniyet Amiri %110, Dördüncü Sınıf %120, Üçüncü Sınıf %130, Birinci Sınıf %150); Başkomiser sayımda hiç yok. Kadrosuzluk tazminatının beş sorusu içinde bu soru boyutunu (KAPSAM) kökte açıkça belirtiyor ('oranı ... öngörülmemiştir'), oran/ödeyen/süre soruları ile karışmıyor." },
+
+  { "id": "3201-p2-38", "karar": "ONAY",
+    "gerekce": "Kök 'en fazla bekleme süresi' diyerek tablodaki 'zorunlu en az bekleme süresi' ile karışmayı kapatmış ve rütbeyi (Birinci Sınıf Emniyet Müdürü) yazmış; metin altı yıl. Maddedeki diğer süreler (iki, beş) başka rejimlere ait olduğundan ikinci doğru doğmuyor." },
+
+  { "id": "3201-p2-39", "karar": "REVIZYON",
+    "gerekce": "Sorunun kendisinde iki-doğru yok: metin 'iki yılda bir Yüksek Değerlendirme Kurulu tarafından ayrıca karara bağlanır' diyor, kök hem aralığı hem mercii birlikte istiyor, Merkez Değerlendirme Kurulu bu rejimin hiç dışında. Kusur KÖK -> CEVAP SIZINTISIDIR: kök, Birinci Sınıf Emniyet Müdürlerinin kadrosuzluktan emekliye sevk edildiğini önvarsayım olarak yazıyor; 3201-p2-40 tam olarak bu sonucu soruyor (doğru cevap: 'Kadrosuzluk nedeniyle emekliye sevk edilirler'). Bu kökü okuyan aday q40'ı mevzuata bakmadan işaretler.",
+    "oneri": "Kökü sızdırmayan biçime çevir: 'Bulundukları rütbedeki en fazla bekleme süresi dolduğu hâlde hizmet ihtiyacı nedeniyle hizmete devam ettirilen Birinci Sınıf Emniyet Müdürlerinin durumu hangi aralıklarla ve hangi merci tarafından ayrıca karara bağlanır?' Ayrıca q40 ile aynı sette kullanılmasın." },
+
+  { "id": "3201-p2-40", "karar": "ONAY",
+    "gerekce": "Kök 'kural olarak' ve 'emeklilik şartlarını taşımaları kaydıyla' kayıtlarını koyarak C şıkkını (yaş haddine kadar görevde kalma) istisna alanına ittiği için çift doğru doğmuyor; C ancak sayılan unvanlarda fiilen görev yapanlar bakımından ve ayrı bir değerlendirmeyle mümkün. Tek doğru A. Şüphe notu: bu cevap 3201-p2-39'un kökünde önvarsayım olarak yazılı — bkz. q39 kararı." },
+
+  { "id": "3201-p2-41", "karar": "ONAY",
+    "gerekce": "Kadrosuzluk tazminatının hangi boyutunun sorulduğu kökte açık (ORAN) ve rütbe adı ile hesap tabanı ('en yüksek Devlet memuru aylığı, ek gösterge dâhil') birlikte verilmiş; metin Üçüncü Sınıf Emniyet Müdürleri için %130 diyor. Diğer dört oran başka rütbelere ait olduğundan ikinci doğru yok." },
+
+  { "id": "3201-p2-42", "karar": "ONAY",
+    "gerekce": "Metin ödeme ile finansmanı ayrı cümlelerde kuruyor: tazminat 'Sosyal Güvenlik Kurumunca ödenir', Kurum ise ödediğini 'Hazineden tahsil eder'. Kök 'ödenir' fiilini kullandığı için D (Hazine ve Maliye Bakanlığı) ikinci doğru olmuyor. Şüphe notu: 3201-p2-43'ün D şıkkı ('faturası karşılığında Hazineden tahsil edilir') bu ayrımı hatırlatarak bu sorunun cevabına dolaylı ipucu veriyor; ikisi aynı sette kullanılacaksa gözden geçirilsin." },
+
+  { "id": "3201-p2-43", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şıkkın dördü de son fıkrada birebir var: vergiye tabi olmama, ödemenin sevk tarihini takip eden ay başında başlaması, emekli aylığı + tazminat toplamının emsale yapılan toplam ödemeyi geçememesi, üçer aylık devreler hâlinde faturası karşılığında Hazineden tahsil. Yalnız E metnin tersi ('varislerine intikal etmez'). D şıkkında tahsil eden özne düşürülmüş ama edilgen cümle metinle çelişmiyor." },
+
+  { "id": "3201-p2-44", "karar": "ONAY",
+    "gerekce": "Kadrosuzluk tazminatının sorulan boyutu kökte açık (SÜRE). Metin iki katmanlı bir ölçü koyuyor ('yaş haddinden az olmamak üzere altmış yaşına kadar') ve E bu iki katmanı birlikte veriyor; C yalnız yaş haddini aldığı için eksik, dolayısıyla yanlış. Tek doğru E, cevapsızlık riski yok." },
+
+  { "id": "3201-p2-45", "karar": "ONAY",
+    "gerekce": "Olumsuz kök. Kalan dört şıkkın dördü de md 55/1 rütbe sayımında var; İl Emniyet Müdürü maddede yalnız görev unvanı olarak (kurul üyeliği ve hizmete devam ettirilecek unvanlar) geçiyor, rütbe listesinde yok. RÜTBE - UNVAN ayrımı kökte 'sayılan polis amiri rütbelerinden' ibaresiyle net kurulmuş. Biçim notu: q14 ve q16'daki gibi çift ayrılma hâli ('rütbelerden olmayan aşağıdakilerden hangisidir') kulağı tırmalıyor; 'aşağıdakilerden hangisi ... rütbelerden biri değildir?' daha akıcı." }
+]

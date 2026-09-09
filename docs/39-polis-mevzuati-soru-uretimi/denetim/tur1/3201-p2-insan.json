@@ -1,0 +1,6 @@
+[
+  {
+    "id": "3201-p2-05",
+    "not": "DOSYALAR ARASI MÜKERRER — insan taramasıyla bulundu, denetçi bulgusu değil. 3201-p1-30 (md 13) ile kökü BİREBİR aynıydı: 'Emniyet Amiri rütbesinin karşılığı olan meslek derecesi hangisidir?'. Eşleşme hem md 13 (rütbe/derece tablosu) hem md 55 (bekleme süreleri tablosu) içinde geçtiği için iki parti bağımsız olarak aynı soruyu üretmiş. Şık SIRALARI farklı olduğundan yazma scriptinin contentHash kontrolü bunu yakalayamazdı; banka mükerrer alacaktı. Eşleşmeyi KURAN madde md 13 olduğu için p1-30 korundu, p2-05 çıkarıldı."
+  }
+]

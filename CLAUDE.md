@@ -39,6 +39,11 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
 - Koç kuralları SUNUCUDA yaşar (`/me/coach`); istemciler kural bilmez.
 - Soru bankasının varlık nedeni "gerçek, kaynaklı çıkmış soru" güvenidir:
   AI soru üretimi yapılmaz; her sorunun kaynağı bankada KAYITLIDIR.
+  **İSTİSNA (9 Eyl 2026, Doc 39):** beş polis mevzuatı kanununda (3201, 7068,
+  5901, 5682, 2911) resmî madde metninden TÜRETİLMİŞ soru üretilebilir. Şartı:
+  soru ayırt edici bir `sourceLabel` taşır ("Mevzuat türetimi — <kanun> md <no>")
+  ve doğrudan yayına ÇIKMAZ, `in_review`'a düşer; yayın kararı insanındır.
+  Bu istisna yalnız bu beş kanunla sınırlıdır.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

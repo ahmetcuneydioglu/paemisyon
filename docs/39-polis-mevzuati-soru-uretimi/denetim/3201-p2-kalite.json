@@ -1,0 +1,209 @@
+[
+ {
+  "id": "3201-p2-02",
+  "karar": "REVIZYON",
+  "gerekce": "Biçim ipucu: doğru şık D (23 karakter) tek başına en uzun (A/B 9, C 13, E 19). Üstelik şık kümesinde \"Derece Üstü\" iki kez, \"Yaş Haddi\" iki kez geçiyor ve yalnız D'de birleşiyor; hükmü bilmeyen aday \"en çok tekrarlanan iki unsuru birleştir\" sezgisiyle doğrudan D'ye gider. 3201-p6'da RED'e götüren kalıbın (doğru şık hem ayrık değeri taşıyor hem en uzun) aynı ailesi. Hukuk doğru (55/2 tablosu son satır: Derece Üstü — Yaş Haddi); kusur ölçme değerinde.",
+  "oneri": "C'yi \"Derece Üstü - 2 yıl\", E'yi \"1 - Yaş Haddi\" yap; böylece her iki unsur da iki kez ve FARKLI eşleşmelerle geçer, yakınsama sezgisi çalışmaz. A ve B'yi de \"2 - Yaş Haddi\" / \"3 - 3 yıl\" gibi eş uzunluğa getir."
+ },
+ {
+  "id": "3201-p2-03",
+  "karar": "ONAY",
+  "gerekce": "Tablodaki tekrar eden satırı (Birinci Sınıf Emniyet Müdürü iki ayrı meslek derecesiyle iki kez) ölçen özgün soru; 55/2 tablosuyla birebir. Tur1'de q04 üzerinden gelen sızıntı q04'ün çıkarılmasıyla kapanmış, açıklama artık bekleme süresi değerlerini basmıyor — DOĞRULANDI. Şüphe kaydı: \"iki satırın bekleme süresi sütunları da birbirinden farklıdır\" cümlesi q02'nin şık kümesindeki \"yıl / Yaş Haddi\" ayrımını zayıfça çağrıştırıyor; cevabı vermiyor."
+ },
+ {
+  "id": "3201-p2-06",
+  "karar": "ONAY",
+  "gerekce": "GERÇEK VAKA: 200.000 rakamı değiştiğinde cevap değişir; senaryo çözümde fiilen rol oynuyor. İki adımlı hesap (toplam kadro × on binde oran) gerçek bir ölçme noktası; çeldiricilerin dördü de aynı tablonun başka satırlarından üretilmiş gerçek sayılar. Tur1'deki q07 ayna çifti q07'nin çıkarılmasıyla kapanmış, açıklama artık 65/75/90/300 değerlerini saymıyor — DOĞRULANDI. Bankadaki 7587 sorusu Komiser Yardımcısı satırını (330) veriyor, bu sorunun satırını (100) vermiyor; çatışma yok.",
+  "oneri": "Kökteki \"emniyet hizmetleri sınıfına ait toplam kadro sayısı\" ifadesi q08'in B ve E şıklarını doğruluyor; düzeltme q08 tarafında yapılmalı."
+ },
+ {
+  "id": "3201-p2-08",
+  "karar": "REVIZYON",
+  "gerekce": "İki kusur. (1) BİÇİM İPUCU: olumsuz kökte doğru şık A 43 karakter, dört çeldirici 78/91/93/98 karakter. Kümeden tek başına ve çarpıcı biçimde kısa olan şık, \"yanlış olanı\" arayan adayın ilk baktığı yerdir; hüküm bilinmeden bulunabiliyor. (2) ÖLÇME DEĞERİ: B (\"oranlar emniyet hizmetleri sınıfına ait toplam kadro sayısına göre uygulanır\"), C ve E şıklarının doğruluğu q06'nın kökünde ve açıklamasında zaten teyit ediliyor; soru fiilen A ile D arasında ikili seçime iniyor. Hüküm doğru (55/3: \"Hesaplamalarda küsurat dikkate alınmaz\").",
+  "oneri": "A'yı çeldiricilerle eş uzunluğa çıkar: \"Hesaplamalarda ortaya çıkan küsurat, bir üst tam sayıya tamamlanarak o rütbenin kadro tavanına eklenir.\" Ayrıca B şıkkını q06'nın kökünde geçmeyen bir unsurla değiştir (ör. \"Oranlar kanunla belirlenmiş olup değiştirilmesi kanun değişikliği gerektirir\")."
+ },
+ {
+  "id": "3201-p2-09",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/3'e 2019'da eklenen cümleyle birebir (\"her yıl Yüksek Değerlendirme Kurulu tarafından tespit edilir\"). Çeldiriciler gerçek makam karışıklığı üzerine kurulu. Şüphe kaydı: \"Genel Müdürlük Yüksek Değerlendirme Kurulu\" tam adı q15, q16 ve q17'nin köklerinde de geçiyor; ancak bu köklerin hiçbiri kurula kadro/personel sayısı tespiti yetkisi atfetmiyor, dolayısıyla Yüksek–Merkez ayrımı sızmıyor. İlişkisel kusur yok."
+ },
+ {
+  "id": "3201-p2-10",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. Kıdem sırası ölçüt sırası 55/5 ile birebir (terfi tarihi > performans puanı > başarı/üstün başarı belgesi > sicil numarası). İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor): şık kümesi yakınsama sezgisine açık — beş sıralamanın üçü \"II\" ile başlıyor, dördü \"I\" ile bitiyor. Hükmü bilmeyen aday yalnız bu iki çoğunluktan A ile B'ye iner (5 → 2) ve kalan ayrım III/IV yer değiştirmesinde yazı-tura olur. Esasa ilişkin kusur DEĞİL.",
+  "oneri": "Yeni soru üretilirken sıralama şıklarında ilk ve son öğeler eşit dağıtılmalı; bu soruya dokunma."
+ },
+ {
+  "id": "3201-p2-11",
+  "karar": "ONAY",
+  "gerekce": "VAKA değerlendirmesi: sınırda ama GEÇERLİ — \"olağan toplantısının dışında ikinci kez toplanma\" olgusu istisna dalını seçtiriyor; olgu değişirse cevap \"haziran\" olurdu. Tur1'de bu sorunun açıklamasının q19'un cevabını \"onay\" kelimesiyle daralttığı tespit edilmişti; yeni açıklamada \"onay\" hiç geçmiyor — GİDERİLDİĞİ DOĞRULANDI. Şüphe kaydı: q18'in (yayında) açıklamasındaki son cümle \"kurulların yıl içinde birden fazla toplandığı hâllerde terfi zamanı bu takvime bağlı kalmaz\" bu sorunun A şıkkını eliyor (5 → 4); q18 yayında olduğu için dokunulmuyor."
+ },
+ {
+  "id": "3201-p2-12",
+  "karar": "ONAY",
+  "gerekce": "GERÇEK VAKA: senaryodaki iki rütbe çözümün ayırt edici unsuru; rütbeler değişirse cevap değişir. 55/7 ve 55/8 ile birebir, ayrım çizgisi Başkomiser/Emniyet Amiri arasından geçiyor. E şıkkı meta/istisna tonunda ve 134 karakterle en uzun şık ama DOĞRU DEĞİL; uzunluk ipucu bu kez ters yönde çalışıyor, kusur değil. Bankadaki \"Yüksek Değerlendirme Kurulunun başkanı\" sorusu bu sorunun cevabını vermiyor (başkanlık sorulmuyor)."
+ },
+ {
+  "id": "3201-p2-13",
+  "karar": "RED",
+  "gerekce": "TEKRAR EDEN SIZINTI — tur1'de tam olarak bu kusur için REVIZYON almıştı ve kusur küçültülerek KORUNDU. Tur1: \"Açıklama Merkez Kurulun bütün üyelerini tek tek sayıyor… q14'ün dört çeldiricisinin dördü de orada üye olarak sayılıyor.\" Yeni açıklama listeyi kaldırmış ama \"Kurulun konusu personel işleri olduğu için doğrudan Personel Dairesi Başkanının başkanlık edeceği düşünülür; oysa o bu kurulda başkan değil ÜYEDİR\" cümlesiyle q14'ün A şıkkını (Personel Dairesi Başkanı) üye olarak doğruluyor; q14 5'ten 4'e iniyor. İkinci kusur: doğru şık B tek başına en uzun (50; C 48, E 45, D 22, A 20) ve tek NİTELEMELİ şık (\"personel işlerinden sorumlu\"); \"en ayrıntılı şık doğrudur\" sezgisi çalışıyor. Hüküm doğru (55/7).",
+  "oneri": "Kurtarma: açıklamadaki cümleyi \"oysa Kanun başkanlığı ona vermemiştir\" biçiminde değiştir (üyelik bilgisi silinir) ve C ile E şıklarına da niteleme ekle. Bu iki düzeltme yapılmadan yayına çıkmamalı."
+ },
+ {
+  "id": "3201-p2-14",
+  "karar": "ONAY",
+  "gerekce": "55/7'deki üye listesi kapalı ve Polis Akademisi Başkanı gerçekten orada yok (o, 55/8'deki Yüksek Kurulun üyesi). Çeldiricilerin dördü de fıkranın gerçek üyeleri, doldurma yok. UYARI: bu ONAY, q13'ün açıklamasındaki \"o bu kurulda başkan değil ÜYEDİR\" ibaresinin düzeltilmesine bağlıdır; düzeltilmezse A şıkkı dışarıdan doğrulandığı için soru dört şıkka iner.",
+  "oneri": "q13 düzeltilsin; bu soruya dokunulmasın."
+ },
+ {
+  "id": "3201-p2-15",
+  "karar": "ONAY",
+  "gerekce": "55/8 ile birebir (\"İl Emniyet Müdürleri arasından seçilecek iki İl Emniyet Müdürü\"). Tur1'deki İKİ YÖNLÜ sızıntı giderilmiş ve DOSYADAN DOĞRULANDI: (1) q16'nın açıklaması artık üyeleri saymıyor, \"iki İl Emniyet Müdürü\" ibaresi orada yok; (2) bu sorunun kendi açıklamasındaki \"ikincil mevzuata bırakılmıştır\" ibaresi kaldırılmış, yerine \"seçilecek kişiler … doğrudan İl Emniyet Müdürleri arasından belirlenir\" konmuş — q17'nin cevabını (Yönetmelik) artık vermiyor."
+ },
+ {
+  "id": "3201-p2-16",
+  "karar": "ONAY",
+  "gerekce": "55/8'deki üye listesi kapalı; Emniyet Müşaviri orada yok, o unvan 55/20'deki hizmete devam ettirilebilecek görevler arasında geçiyor — tuzak gerçek. Tur1'deki \"açıklama tüm üyeleri sayıyor\" kusuru giderilmiş, DOĞRULANDI. UYARI: kalan daralma q17'nin kökünden geliyor (E şıkkı dışarıdan üye olarak doğrulanıyor); düzeltme q17 tarafında. Ayrıca bankadaki yayımlanmış \"Yüksek Değerlendirme Kurulunun başkanı\" sorusu Teftiş Kurulu Başkanı ve Birinci Hukuk Müşavirini çeldirici olarak sıraladığı için B ve C'yi zayıfça üyeymiş gibi gösteriyor — ilişkisel, düşük şiddetli.",
+  "oneri": "q17'nin kökü düzeltilsin; bu soruya dokunulmasın."
+ },
+ {
+  "id": "3201-p2-17",
+  "karar": "REVIZYON",
+  "gerekce": "KÖK → CEVAP SIZINTISI (briefin uyardığı birinci alan). Kök \"Yüksek Değerlendirme Kurulunda görev yapacak Polis Başmüfettişi ile İl Emniyet Müdürlerinin seçimine ilişkin esaslar\" diyerek q16'nın E şıkkını (Seçimle gelen bir Polis Başmüfettişi) ÜYE olarak doğruluyor; q15'in kökü de İl Emniyet Müdürünü doğruluyor. q16 fiilen dört şıkka (A/B/C/D) iniyor. Sorunun kendi hükmü doğru (55/8 son cümle: \"seçimine ilişkin esaslar yönetmelikle düzenlenir\"). Tur1 bu sorunun kusurunu q15'in açıklamasında aramıştı; kök hiç incelenmemiş.",
+  "oneri": "Kökü unvansızlaştır: \"3201 sayılı Emniyet Teşkilat Kanunu'na göre Genel Müdürlük Yüksek Değerlendirme Kurulunda SEÇİMLE görev alacak üyelerin seçimine ilişkin esaslar aşağıdakilerden hangisi ile düzenlenir?\""
+ },
+ {
+  "id": "3201-p2-18",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. Mayıs–Haziran eşleşmesi 55/9 ve 55/10 ile birebir. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor), iki katmanlı: (1) BANKA ÇARPIŞMASI — bankada yayımlanmış \"[md 55] terfi ve atama ile ilgili hangisi yanlıştır\" sorusunun A şıkkı \"Terfiler, her yıl haziran ayında topluca yapılır\" (doğru çeldirici) cevabın Haziran yarısını hazır veriyor; aynı sorunun DOĞRU CEVABI olan B şıkkı \"Kurullar her yıl nisan ayında toplanır\" olduğu için Nisan da elenmiş oluyor. O bankayı çalışmış aday bu soruyu hüküm bilmeden çözer. (2) Açıklamanın son cümlesi q11'in A şıkkını eliyor. Esasa ilişkin kusur DEĞİL.",
+  "oneri": "Yeni parti üretilirken kurul ayı / terfi ayı konusu artık kapalı sayılmalı."
+ },
+ {
+  "id": "3201-p2-19",
+  "karar": "RED",
+  "gerekce": "SAHTE VAKA — revizyonun kendi doğurduğu kusur. Senaryo iki cümleden ibaret ve ikisi de hükmün VARSAYIMININ tekrarı: \"kurullar olağan toplantısını yaptı\" + \"yeniden toplanması gündeme geldi\" = 55/9'daki \"kurullar yıl içinde birden fazla toplanabilir\" şartının düz çevirisi. Ayırt edici hiçbir olgu yok; senaryoyu silip \"Kurulların yıl içinde birden fazla toplanabilmesi neye bağlıdır?\" diye sorsanız soru birebir aynı kalır — yani senaryo çözümde hiçbir rol oynamıyor. Üretici bu kusuru q03'te kendisi teşhis edip düz soruya çevirmişti; aynı kusuru burada kalıp çeşitliliği için ÜRETMİŞ. Hüküm doğru (55/9: \"Bakanın onayı ile\"). Ayrıca doğru şık D 15 karakterle tek başına en kısa (A 33, B 22, C 40, E 50).",
+  "oneri": "Düz soruya çevir ve `tur`'u `dogrudan` yap: \"…değerlendirme kurullarının yıl içinde birden fazla toplanıp terfi değerlendirmesine karar verebilmesi aşağıdakilerden hangisine bağlıdır?\" D şıkkını da \"İçişleri Bakanının onayına\" gibi eş uzunluğa getir."
+ },
+ {
+  "id": "3201-p2-20",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/9 ile birebir (\"kararlar oy çokluğu ile alınır\"); doğru şık C 14 karakterle A ile eşit en kısa, uzunluk ipucu yok. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor): bankada YAYIMLANMIŞ \"[md 55] … hangisi yanlıştır\" sorusunun DOĞRU CEVABI \"Kurullar her yıl nisan ayında toplanır ve kararlar OY BİRLİĞİ ile alınır\". O soruyu çözmüş aday kararların oy birliğiyle alınmadığını bilir; A elenir ve nitelikli çoğunluk seçenekleri de zayıflar. Bu sorunun ölçme değeri banka tarafından büyük ölçüde tüketilmiş. Esasa ilişkin kusur DEĞİL."
+ },
+ {
+  "id": "3201-p2-21",
+  "karar": "ONAY",
+  "gerekce": "Tur1'deki TAMLIK İMASI giderilmiş ve DOĞRULANDI: kök artık \"aranan şartlardır\" değil \"aranan şartlardandır\" diyor; böylece 55/11'in (d) bendinin sıralanmamış olması kusur olmaktan çıkıyor. Önermeler bağımsız ve tek anlamlı; IV (üstün başarı belgesi) gerçekten şart değil, 55/5'te kıdem sırası ölçütü. UYARI: kalan daralma q23'ün kökünden geliyor — q23 III. önermeyi kelimesi kelimesine içeriyor ve onu terfi şartı olarak doğruluyor; A ve C elenir, soru 5'ten 3'e iner. Düzeltme q23 tarafında verildi. Bu soru dosyanın en yüksek ölçme değerli maddelerinden biri, korunmalı.",
+  "oneri": "q23 dosyadan çıkarılsın; bu soru aynen kalsın."
+ },
+ {
+  "id": "3201-p2-22",
+  "karar": "ONAY",
+  "gerekce": "55/11-(d) ile birebir: yöneticilik eğitimini düzenleyecek makam Kanunda \"Polis Akademisi Başkanlığınca\" olarak yazılı. Çeldiriciler gerçek kurumsal karışıklık üzerine kurulu, doldurma yok; şık uzunlukları dengeli (18–27) ve doğru şık öne çıkmıyor. Şüphe kaydı: kök (d) bendini anıyor ama q21'in şık kümesinde (d) bendi karşılığı bir önerme YOK, bu yüzden q21'e sızıntı yapmıyor — kontrol edildi."
+ },
+ {
+  "id": "3201-p2-23",
+  "karar": "RED",
+  "gerekce": "İki gerekçe. (1) KÖK → CEVAP SIZINTISI: kök \"Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için yapılacak yazılı ve sözlü sınav\" ifadesini birebir içeriyor — bu, q21'in III. önermesinin kelimesi kelimesine aynısı ve onu terfi şartı olarak doğruluyor. q21'in A (\"Yalnız I\") ve C (\"I ve II\") şıkları elenir; dosyanın en değerli önerme sorusu 5'ten 3'e iner. (2) ÖLÇME DEĞERİ: ölçülen şey 2019'da eklenen bir ek cümledeki katılma SAYISI, saf ezber; aynı fıkradan (55/11) zaten q21 ve q22 var ve üçü birlikte dosyanın en kalabalık fıkra kümesini oluşturuyor. Tur1'deki zorluk etiketi kusuru düzeltilmiş (easy → medium) — DOĞRULANDI, ama asıl kusur duruyor.",
+  "oneri": "Dosyadan çıkar. İnsan q23'ü q21'e tercih ederse bu kez q21 çıkarılmalı — ikisi aynı sınavda bulunamaz."
+ },
+ {
+  "id": "3201-p2-24",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/12 ile birebir (\"terfien Birinci Sınıf Emniyet Müdürü rütbesinde ikinci meslek derecesi karşılığı görev unvanlarına atanabilirler\"). Şıklar çok kısa ve dengeli (6–11 karakter), ipucu yok. \"Rütbe adındaki birinci ile meslek derecesi aynı sanılır\" tuzağı gerçek bir aday hatası. İlişkisel kusur bulunamadı."
+ },
+ {
+  "id": "3201-p2-25",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/13 ile birebir: \"meslekte fiilen İKİ yılını dolduran lisans mezunu polis memurları\" — üç yıl Kanunda yok, (A) gerçekten yanlış. Diğer dört şık fıkranın gerçek unsurları. Şüphe kaydı: doğru şık A 49 karakterle en kısa, ama en yakın çeldiriciyle farkı 1 karakter (C 50); ipucu değil. İlişkisel kusur bulunamadı."
+ },
+ {
+  "id": "3201-p2-26",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/14 ile birebir. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor) — dosyanın en ağır sızıntı kümesi: doğru şıkkın tam metni (\"Bulunulan rütbedeki fiili çalışma süresi\") dosyada ÜÇ ayrı yerde hazır duruyor. (a) q28'in KÖKÜ: \"bulunulan rütbedeki fiili çalışma süresi içinde değerlendirilen sürelerin\" — birebir; (b) q27'nin açıklaması: \"o rütbedeki fiili çalışma süresi içinde değerlendirilir\"; (c) q29'un açıklaması: \"fiili çalışma süresinden sayılacağını\". q27 ve q29 da YAYINDA olduğu için dokunulamaz; giderilebilecek tek yer q28'in kökü. Esasa ilişkin kusur DEĞİL.",
+  "oneri": "q28'in kökü düzeltilsin; bu soruya dokunulmasın."
+ },
+ {
+  "id": "3201-p2-27",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/15 ile birebir (uzmanlık, yüksek lisans, doktora ve avukatlık stajı rütbe kıdemine sayılmaz; yurt dışı misyon koruma / kurs / tedavi / istirahat sayılır). İLİŞKİSEL KUSUR (dokunulmuyor): açıklaması q26'nın cevap ifadesini içeriyor (yukarı bak). Ayrıca \"görev, tedavi ve istirahat sürelerinin toplamı bakımından maddede ayrıca bir TAVAN öngörülmüştür\" cümlesi q28'in konusunu haber veriyor — ama sayıyı (üç yıl) vermediği ve q28'in kökü zaten tavanın varlığını söylediği için q28'in cevabı sızmıyor. Esasa ilişkin kusur yok."
+ },
+ {
+  "id": "3201-p2-28",
+  "karar": "RED",
+  "gerekce": "TAŞINMIŞ SIZINTI — bu hattın sekiz kez görülen kalıbının dokuzuncusu. Tur1 bu sorunun AÇIKLAMASINDAKİ sızıntıyı (iki ve beş yıllık süreler) tespit etmişti; üretici açıklamayı temizlemiş (DOĞRULANDI, o süreler artık geçmiyor) ama sızıntı KÖKTE duruyor ve bu kez YAYINDAKİ bir soruyu vuruyor: kök \"bulunulan rütbedeki fiili çalışma süresi içinde değerlendirilen sürelerin\" diyerek q26'nın doğru şıkkını (D: \"Bulunulan rütbedeki fiili çalışma süresi\") kelimesi kelimesine basıyor. q26 yayında ve dokunulamaz; dolayısıyla giderilebilecek tek nokta bu kök. Kendi hükmü doğru (55/15: \"toplamda üç yılı aşan kısmı\").",
+  "oneri": "Kurtarma: kökü ölçütü anmadan, hükmün öznesiyle yaz: \"…Kanunun 13 üncü maddesinde sayılan rütbeler içerisinde yapılan yurt dışı misyon koruma, yurt dışı kurs ve diğer görevler sebebiyle geçirilen süreler ile tedavi ve istirahat sürelerinin toplamda kaç yılı aşan kısmı rütbe terfilerinde değerlendirilmez?\""
+ },
+ {
+  "id": "3201-p2-29",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/15 son cümlesiyle birebir (\"atanılan ilk rütbede ve adaylığın onanmasından sonra fiili çalışma süresinden sayılır\"). Beş şık da tek tek yanlışlanabiliyor. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor): açıklaması \"fiili çalışma süresinden sayılacağını\" diyerek q26'nın cevap ifadesini tekrarlıyor. Şüphe: doğru şık B 59 karakter, D 74 ile en uzun ve doğru değil — uzunluk ipucu yok."
+ },
+ {
+  "id": "3201-p2-30",
+  "karar": "ONAY",
+  "gerekce": "55/16 ile birebir (\"Taksirli suçlar hariç, paraya çevrilse veya ertelense dahi alınan hapis cezaları…\"). Tur1'deki q32 sızıntısı DOĞRULANDI: açıklamada \"aylıksız izin\" ibaresi artık hiç geçmiyor ve q32 dosyadan çıkmış — zincir kapalı. Çeldiricilerin dördü de fıkranın gerçek unsurları. Şüphe kaydı: doğru şık E, A ve B ile aynı ailede (hapis cezası) olup C ve D disiplin cezası; üç-iki bölünmesi hafif bir yapısal ipucu veriyor, ama ayrım hükmün kendi ayrımı olduğu için kusur sayılmadı."
+ },
+ {
+  "id": "3201-p2-31",
+  "karar": "ONAY",
+  "gerekce": "GERÇEK VAKA: \"iki kez\" olgusu çözümü belirliyor, sayı değişirse cevap değişir. 55/16 ile birebir. Tur1'deki A şıkkı dengesizliği (42 karakter, kökle gramer uyumsuz) GİDERİLMİŞ ve DOĞRULANDI — şıklar artık 6–8 karakter arası ve hepsi süre. ÖLÇME DEĞERİ KAYDI (esasa ilişkin değil): bankada YAYIMLANMIŞ \"[md 55] … hangisi yanlıştır\" sorusunun C şıkkı hükmü tam metin basıyor (\"Her yetersiz performans değerlendirme puanı rütbe terfiini bir yıl geciktirir\"); bu soru o kuralın yalnızca çarpımını ekliyor. Bkz. rapordaki \"banka daha iyisini öldürdü mü\" bulgusu."
+ },
+ {
+  "id": "3201-p2-33",
+  "karar": "REVIZYON",
+  "gerekce": "YAYINDA — ESASA İLİŞKİN KUSUR (kullanıcı kuralının birinci kategorisi). Üreticinin bildirimi DOĞRULANDI: E şıkkı \"Terfi eden emsallerinin ek gösterge ve tazminatları ödenir\" diyor; 55/17 ise \"bir üst rütbeye terfi eden emsallerine ödenen ek gösterge, ZAM ve tazminatlar ödenir\" diyor. \"Zam\" kalemi düşmüş, yani DOĞRU ŞIK hükmü eksik aktarıyor. Kusur salt kozmetik değil: sorunun kendi açıklaması aynı kalemi \"EK GÖSTERGE, ZAM VE TAZMİNATLAR\" diye tam yazıyor — şık ile açıklama son kullanıcıya ÇELİŞKİLİ iki metin gösteriyor. Cevap harfi (E) değişmiyor, ikinci doğru şık doğmuyor. Hükmün kendisi dosyada başka soruya sızmıyor.",
+  "oneri": "Tek kelime: E şıkkını \"Terfi eden emsallerinin ek gösterge, zam ve tazminatları ödenir.\" yap. Düzeltilemiyorsa kullanıcı kuralı gereği yayından çekilmeli — kusur esasa ilişkindir."
+ },
+ {
+  "id": "3201-p2-34",
+  "karar": "ONAY",
+  "gerekce": "GERÇEK VAKA: 2018 haziran tarihi çözümü belirliyor, tarih değişirse cevap değişir. 55/19 ile birebir (beş yıl). Tur1'in en ağır sızıntısı GİDERİLMİŞ ve DOSYADAN DOĞRULANDI: q36'nın kökü artık \"beş yıl\" demiyor, \"Kanunda öngörülen süre içinde\" diyor — cevap artık hiçbir yerde yazılı değil. Şüphe kaydı: açıklaması kadrosuzluktan emekliye sevk mekanizmasını anlattığı için q40'ın (yayında) cevabını kolaylaştırıyor; ilişkisel, dosyadaki kadrosuzluk yığılmasının bir parçası (bkz. rapor)."
+ },
+ {
+  "id": "3201-p2-35",
+  "karar": "RED",
+  "gerekce": "SAHTE VAKA + AÇIKLAMA İTİRAFI — revizyonun kendi doğurduğu kusur. Senaryonun tek ayırt edici unsuru \"Emniyet Amiri\" rütbesi; oysa sorunun KENDİ AÇIKLAMASI bu unsurun çözümde hiçbir rol oynamadığını itiraf ediyor: \"İşlemin ilgilinin rütbesine göre kurul değiştirdiği de sanılır: … kadrosuzluk sebebiyle emekliye sevk teklifi rütbe ayrımı yapılmaksızın TEK BİR KURULA bırakılmıştır.\" Rütbeyi Birinci Sınıf Emniyet Müdürü yapsanız da cevap aynı (55/20 de aynı usulü öngörüyor) — senaryo inert. Geri kalanı düz bilgi sorusu; kalıp çeşitliliği için giydirilmiş. Hüküm doğru (55/19: Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayı). Ayrıca A/B (57) ve C/D (50) ikili ayna çift kurulmuş, E (42) tek başına dışarıda.",
+  "oneri": "Düz soruya çevir ve `tur`'u `dogrudan` yap: \"…hizmet ihtiyacı sebebiyle kadrosuzluktan emekliye sevk işlemi hangi usulle yapılır?\" Açıklamadaki itiraf cümlesini de çıkar."
+ },
+ {
+  "id": "3201-p2-36",
+  "karar": "REVIZYON",
+  "gerekce": "İki kusur. (1) ZAYIF/SAHTE VAKA: senaryo hükmün varsayımının (\"emekliye sevk edilmesi uygun görülmeyenler\") kelimesi kelimesine tekrarı; \"Dördüncü Sınıf Emniyet Müdürü\" tamamen dekoratif, çünkü aynı kural Emniyet Amiri ile Dördüncü, Üçüncü ve İkinci Sınıf Emniyet Müdürleri için ortak — rütbeyi değiştirseniz cevap değişmez. (2) BİÇİM İPUCU: beş şıkkın ÜÇÜ \"İki yıl uzatılır\" ile başlıyor (B, D, E); süre yakınsama sezgisiyle bedava geliyor, soru üçlü seçime iniyor ve gerçek ölçme yalnız kuyruğa (kaç defa daha) kalıyor. Tur1'in iki sızıntısı GİDERİLMİŞ ve DOĞRULANDI: kök artık q34'ün cevabını (beş yıl) basmıyor, açıklama q35'in cevabını vermeyip \"AYNI USULLE\" diyerek geçiştiriyor — iyi hijyen.",
+  "oneri": "B'yi \"Üç yıl uzatılır ve bir daha uzatılamaz\", D'yi \"Bir yıl uzatılır ve bu uzatma yaş haddine kadar tekrarlanabilir\" yap; böylece \"iki yıl\" beş şıkta bir kez geçer. Senaryodaki rütbeyi kaldırıp düz soru yap ya da `tur`'u `dogrudan` olarak işaretle."
+ },
+ {
+  "id": "3201-p2-37",
+  "karar": "ONAY",
+  "gerekce": "55/21'deki oran listesi Emniyet Amirinden Birinci Sınıf Emniyet Müdürüne kadar; Başkomiser gerçekten yok ve gerekçe sistematik (kadrosuzluk rejimi Emniyet Amirliğinden başlıyor). Tur1'deki q41 sızıntısı q41'in çıkarılmasıyla kapanmış — DOĞRULANDI, açıklama artık oranları saymıyor. Şüphe kaydı: doğru şık D 10 karakterle en kısa; ancak şıklar rütbe adı olduğu ve \"Başkomiser\" zaten en kısa rütbe adı olduğu için uzunluk hükmün kendi sonucu, ipucu değil."
+ },
+ {
+  "id": "3201-p2-38",
+  "karar": "ONAY",
+  "gerekce": "55/20 ile birebir (\"en fazla bekleme süresi altı yıldır\"). Tur1'deki iki sızıntı GİDERİLMİŞ ve DOSYADAN DOĞRULANDI: q34'ün açıklaması artık \"altı yıl\" demiyor (\"beş yıllık süre ise … bir ÜST sınırdır\" ile yetiniyor), q23'ün açıklaması da somut yıl vermeden \"Maddenin başka fıkralarındaki yıl değerleri\" diyor. q39 ve q40'ın kökleri \"en fazla bekleme süresi\" diyor ama sayıyı vermiyor — kontrol edildi. Şıklar kısa ve dengeli."
+ },
+ {
+  "id": "3201-p2-39",
+  "karar": "ONAY",
+  "gerekce": "55/20 son cümlesiyle birebir (\"iki yılda bir Yüksek Değerlendirme Kurulu tarafından ayrıca karara bağlanır\"). Şıklar süre × merci matrisi olarak kurulmuş, dördü de makul. Şüphe kaydı: doğru şık B 42 karakterle en uzun, ama E 41 karakter — fark bir karakter, ipucu değil. İkinci şüphe: dosyada \"iki yıl\" üç ayrı sorunun (q31, q36, q39) doğru cevabında geçiyor; aynı sınavda \"şüphede iki yıl de\" sezgisi oluşabilir, ancak üç soru üç ayrı fıkradan ve üç ayrı harfte (C, E, B)."
+ },
+ {
+  "id": "3201-p2-40",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/20 ile uyumlu; kökteki \"kural olarak\" ve \"emeklilik şartlarını taşımaları kaydıyla\" kayıtları C şıkkının (yaş haddine kadar devam) ikinci doğru olmasını engelliyor — istisna doğru biçimde dışarıda bırakılmış. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor): dosyada kadrosuzluk rejimi üzerine on soru var (q33, q34, q35, q36, q37, q38, q39, q40, q43, q44); özellikle q34, q35 ve q36'nın kök ve açıklamaları \"kadrosuzluktan emekliye sevk\" sonucunu tekrar tekrar kurduğu için bu sorunun cevabı büyük ölçüde bedava geliyor. Esasa ilişkin kusur DEĞİL."
+ },
+ {
+  "id": "3201-p2-43",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/21 son cümleleriyle birebir; (E) gerçekten yanlış (\"yaş haddinden önce ölenlerin varislerine intikal etmez\"). Dört çeldiricinin dördü de fıkranın gerçek cümleleri. Tur1'deki q42 sızıntısı q42'nin çıkarılmasıyla kapanmış — DOĞRULANDI (D şıkkını dışarıdan doğrulayan açıklama artık dosyada yok). İLİŞKİSEL KUSUR (dokunulmuyor): C şıkkının doğruluğu q44'ün açıklamasınca teyit ediliyor (\"tutar bakımından ise emsaline yapılan toplam ödemeye bağlanmıştır\"), soru 5'ten 4'e iniyor; q44 de yayında."
+ },
+ {
+  "id": "3201-p2-44",
+  "karar": "ONAY",
+  "gerekce": "YAYINDA. 55/21 ile birebir (\"rütbelerinin ve makamının yaş haddinden az olmamak üzere altmış yaşına kadar olan sürede\"). \"Az olmamak üzere\" kaydının taban mı tavan mı olduğu gerçek bir ölçme noktası. İLİŞKİSEL KUSUR (dokunulmuyor, listeleniyor), iki tane: (1) C şıkkı (\"Yalnızca rütbesinin yaş haddine kadar\") ile doğru şık E aynı unsurun sade ve kayıtlı iki hâli; \"daha kayıtlı şık doğrudur\" sezgisi hüküm bilinmeden E'ye götürüyor. (2) Açıklaması q43'ün C şıkkını dışarıdan doğruluyor. Esasa ilişkin kusur DEĞİL."
+ },
+ {
+  "id": "3201-p2-45",
+  "karar": "ONAY",
+  "gerekce": "55/1'deki rütbe sayımı ile birebir; İl Emniyet Müdürü gerçekten rütbe değil görev unvanı ve o unvan maddede 55/8 ile 55/20'de geçerek tuzağı gerçek kılıyor. Tur1'deki q01 sızıntısı q01'in dosyadan çıkarılmasıyla kapanmış — DOĞRULANDI, dokuz rütbeyi tam metin sayan açıklama artık dosyada yok. Şıklar dengeli (10–25), doğru şık öne çıkmıyor."
+ }
+]

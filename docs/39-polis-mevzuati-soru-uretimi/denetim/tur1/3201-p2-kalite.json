@@ -1,0 +1,249 @@
+[
+ {
+  "id": "3201-p2-01",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklama 55/1'deki DOKUZ rütbenin tamamını sırasıyla tam metin basıyor. Bu liste p2-45'in cevabını (İl Emniyet Müdürünün rütbe olmadığı) eleme yoluyla veriyor; ayrıca p2-12'nin doğru şıkkındaki 'Komiser Yardımcısı, Komiser ve Başkomiser' üçlüsünü de aynen içeriyor. Soru kendi başına iyi.",
+  "oneri": "Açıklamadan tam rütbe listesini çıkar; yalnız Emniyet Amiri-Dördüncü Sınıf EM komşuluğunu ve numaralandırma tuzağını anlat. p2-01 ile p2-45 aynı fıkranın (55/1) iki sorusu; ikisinden biri yeterli."
+ },
+ {
+  "id": "3201-p2-02",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklamadaki 'emniyet müdürü sınıfları 2, 3, 4 ve 5 inci meslek dereceleri karşılığında ve İKİ yıllık bekleme süreleriyle tabloda yer alır' cümlesi p2-04'ün C ve E şıklarını doğrulayarak o soruyu daraltıyor. Ayrıca bankadaki 'zorunlu en az bekleme süreleri aşağıdakilerin hangisinde doğru verilmiştir' sorusu aynı tabloyu zaten ölçüyor; dosya bu tabloyu üç kez (02-03-04) soruyor.",
+  "oneri": "Açıklamadan diğer satırların süre/derece değerlerini çıkar, yalnız 'süre sütununa yıl değil yaş haddi yazılı olması' tuzağında kal."
+ },
+ {
+  "id": "3201-p2-03",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklama 'Başkomiser ve Emniyet Amiri rütbelerinde bekleme süresi ÜÇ yıl, emniyet müdürü sınıflarında ise İKİ yıldır' diyerek p2-04'ün A, B, C ve E şıklarının dördünü birden doğrular; p2-04 saf elemeyle çözülür. Vaka kurgusu ayrıca gereksiz: 'ilk derece amirlik eğitimini tamamlayarak atanmış ve kesintisiz fiilen çalışmaya başlamıştır' bilgisi tablo değerini bulmaya hiçbir katkı sağlamıyor, kök süslü bir doğrudan sorudur.",
+  "oneri": "Açıklamadan komşu rütbelerin süre değerlerini çıkar; vaka giydirmesini kaldırıp doğrudan soru olarak etiketle veya vakaya gerçekten hüküm uygulatan bir unsur (ör. arada geçen aylıksız izin) ekle."
+ },
+ {
+  "id": "3201-p2-04",
+  "karar": "RED",
+  "gerekce": "Bankadaki md 55 tablo sorusunun KÖKÜ değerleri tam metin basıyor: 'I. Komiser 8 4  II. Başkomiser 7 3  III. Üçüncü Sınıf Emniyet Müdürü 4 2'. Bu soruyu çözen aday Komiser satırının 4 yıl olduğunu bankadan doğrudan okur; doğru cevap (D) hazır verilmiştir. Buna ek olarak p2-03'ün açıklaması aynı cevabı elemeyle veriyor ve soru, aynı tablonun dosya içindeki ÜÇÜNCÜ sorusudur (02, 03, 04). Üç kusur üst üste geldiği için ölçme değeri kalmamıştır.",
+  "oneri": "Çıkar. Tablo için dosyada tek soru bırak (p2-03 sadeleştirilmiş hâliyle yeterli)."
+ },
+ {
+  "id": "3201-p2-06",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklama '65, 75 ve 90 gibi değerler kendisinden daha üst emniyet müdürü sınıflarına aittir' ve '300 ... bir alt amirlik basamağının oranıdır' diyerek p2-07'nin A, B, D ve E şıklarını doğrular; p2-07 elemeyle çözülür. Sorunun kendisi metinle uyumlu (55/3: Dördüncü Sınıf EM 100).",
+  "oneri": "Açıklamadan çeldiricilerin hangi rütbeye ait olduğunu söyleyen cümleleri çıkar; yalnız 'oran rütbe yükseldikçe küçülür' ilkesini ve on binde/yüzde karıştırmasını bırak."
+ },
+ {
+  "id": "3201-p2-07",
+  "karar": "RED",
+  "gerekce": "p2-06 ile karşılıklı ayna çift. p2-06'nın şık kümesi (65, 75, 90, 100, 300) ile açıklaması bu sorunun A, B, D, E şıklarını doğrular; bu sorunun şıkları da p2-06'nın cevabını (100) eleme ile verir. İki soru aynı oran tablosunun tek bir hükmünü ölçüyor, biri diğerinin anahtarı. Ayrıca olumsuz kök yükünü de artırıyor.",
+  "oneri": "Çıkar; oran tablosu için p2-06 (açıklaması düzeltilmiş hâliyle) tek başına yeterli."
+ },
+ {
+  "id": "3201-p2-08",
+  "karar": "ONAY",
+  "gerekce": "Metinle uyumlu (55/3: 'Hesaplamalarda küsurat dikkate alınmaz'), çeldiriciler fıkranın gerçek cümlelerinden. Şüphe kaydı: D şıkkı, p2-09'un kökündeki 2019 ek cümlesinin neredeyse aynısı; iki soru aynı cümleyi paylaşıyor, aynı denemede yan yana düşmemeli."
+ },
+ {
+  "id": "3201-p2-09",
+  "karar": "ONAY",
+  "gerekce": "Metinle uyumlu (55/3 ek cümle: 'her yıl Yüksek Değerlendirme Kurulu tarafından tespit edilir'). Şüphe kaydı: doğru şıkkın tam adı 'Genel Müdürlük Yüksek Değerlendirme Kurulu' p2-15, p2-16 ve p2-17'nin KÖKLERİNDE ve bankadaki md 55 sorusunun kökünde aynen geçiyor; B şıkkındaki Merkez Kurul adı da p2-12'nin kökünde geçtiği için tek yönlü avantaj doğmuyor, ancak aynı oturumda çağrışım riski var."
+ },
+ {
+  "id": "3201-p2-10",
+  "karar": "ONAY",
+  "gerekce": "Kıdem sırası ölçüt sırası 55/5 ile birebir (terfi tarihi > performans puanı > başarı/üstün başarı belgesi > sicil numarası). Önermeler bağımsız ve tek anlamlı, çeldirici sıralamalar makul hata üzerine kurulu."
+ },
+ {
+  "id": "3201-p2-11",
+  "karar": "REVIZYON",
+  "gerekce": "Kendi açıklamasının son cümlesi ('kurulların olağan dışı toplanabilmesi ... kurulun kendi kararıyla değil ayrı bir onay şartına bağlanmıştır') p2-19'un cevabını 'onay' kelimesiyle daraltıyor ve E şıkkını eliyor. Karşılıklı olarak p2-19'un açıklaması da bu sorunun cevabını veriyor (aşağıya bak). Ayrıca 11-18-19 üçlüsü aynı fıkra çiftinin (55/9-10) üç sorusu.",
+  "oneri": "Açıklamanın son cümlesini kaldır. 11-18-19'dan birini çıkarmayı değerlendir."
+ },
+ {
+  "id": "3201-p2-12",
+  "karar": "ONAY",
+  "gerekce": "Metinle uyumlu (55/7). Şüphe kaydı: bankadaki md 55 sorusunun kökü 'emniyet amirleri ile dördüncü ve üçüncü sınıf emniyet müdürlerinin liyakat koşullarını belirlemek ve terfilerini önermek üzere oluşturulan Genel Müdürlük Yüksek Değerlendirme Kurulu' diyerek C şıkkının Yüksek Kurula ait olduğunu ele veriyor; en çekici çeldirici böylece eleniyor."
+ },
+ {
+  "id": "3201-p2-13",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklama Merkez Kurulun bütün üyelerini tek tek sayıyor ('Personel Dairesi Başkanı, Birinci Hukuk Müşaviri, Genel Müdürün uygun göreceği iki Daire Başkanı ile Teftiş Kurulu Başkan Yardımcılarının biri'). Bu liste p2-14'ün A, B, C, D şıklarının dördünü de doğrular ve cevabı (E) eleme ile verir. Soru kendi başına metinle uyumlu.",
+  "oneri": "Açıklamadaki üye listesini çıkar; 'Personel Dairesi Başkanı bu kurulda başkan değil üyedir' tuzağı liste vermeden de anlatılabilir."
+ },
+ {
+  "id": "3201-p2-14",
+  "karar": "REVIZYON",
+  "gerekce": "p2-13'ün açıklamasıyla tam sızdırılmış (yukarı bak): dört çeldiricinin dördü de orada üye olarak sayılıyor. Ayrıca p2-13 ile aynı fıkranın (55/7) ikinci sorusu ve olumsuz kök sayısını artırıyor. Hukuken doğru: 55/7 listesinde Polis Akademisi Başkanı yok, o 55/8'deki Yüksek Kurulda.",
+  "oneri": "p2-13'ün açıklaması düzeltilirse kalabilir; düzeltilmezse bu soruyu çıkar."
+ },
+ {
+  "id": "3201-p2-15",
+  "karar": "REVIZYON",
+  "gerekce": "İki yönlü sızıntı. (1) p2-16'nın açıklaması 'seçimle gelen bir Polis Başmüfettişi ve iki İl Emniyet Müdürü yer alır' diyerek bu sorunun cevabını (İki) doğrudan basıyor. (2) Bu sorunun kendi açıklaması 'seçimine ilişkin esaslar ikincil mevzuata bırakılmıştır' diyerek p2-17'nin cevabını (Yönetmelik) ele veriyor. 'easy' etiketi yerinde.",
+  "oneri": "Kendi açıklamasından 'ikincil mevzuata bırakılmıştır' cümlesini kaldır; p2-16'nın açıklamasından üye sayılarını çıkar."
+ },
+ {
+  "id": "3201-p2-16",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklama Yüksek Kurulun tüm üyelerini sayarken 'iki İl Emniyet Müdürü' diyerek p2-15'in cevabını doğrudan veriyor. Hukuken doğru (55/8 listesinde Emniyet Müşaviri yok; o unvan 55/20'deki hizmete devam listesinde geçiyor ve açıklama bunu doğru anlatıyor). Şıklar arasında E 64 karakterle diğerlerinin (16-31) iki katından uzun; denge bozuk ama doğru şık (D, 16 karakter) en kısa olduğu için ipucu vermiyor.",
+  "oneri": "Açıklamadaki üye listesinden sayıları (bir/iki) çıkar veya listeyi tümüyle kaldırıp yalnız Emniyet Müşavirliği tuzağını anlat."
+ },
+ {
+  "id": "3201-p2-17",
+  "karar": "REVIZYON",
+  "gerekce": "p2-15'in açıklamasındaki 'Polis Başmüfettişi ile İl Emniyet Müdürlerinin seçimine ilişkin esaslar ikincil mevzuata bırakılmıştır' cümlesi bu sorunun cevabını (Yönetmelik) fiilen veriyor; C, D, E şıkları böylece elenir. Hüküm doğru (55/8 son cümle).",
+  "oneri": "p2-15'in açıklaması düzeltilirse ONAY."
+ },
+ {
+  "id": "3201-p2-18",
+  "karar": "ONAY",
+  "gerekce": "Mayıs-Haziran eşleşmesi 55/9 ve 55/10 ile birebir; bankadaki 'kıdem sırası hangi ayda duyurulur' (mart) sorusuyla çakışmıyor, aksine onu tamamlıyor. Şüphe kaydı: son cümle ('kurulların yıl içinde birden fazla toplandığı hâllerde terfi zamanı bu takvime bağlı kalmaz') p2-11'e zayıf bir ipucu veriyor."
+ },
+ {
+  "id": "3201-p2-19",
+  "karar": "REVIZYON",
+  "gerekce": "Açıklamanın son cümlesi 'olağan takvim dışında toplanıldığında terfilerin yapılma zamanı da olağan aya bağlı kalmaz, TOPLANTIYA BAĞLANIR' diyerek p2-11'in doğru cevabını (Toplantının yapıldığı ay sonunda) veriyor. Hüküm doğru (55/9: 'Bakanın onayı ile').",
+  "oneri": "Açıklamanın son cümlesini kaldır."
+ },
+ {
+  "id": "3201-p2-20",
+  "karar": "ONAY",
+  "gerekce": "55/9 ile birebir ('kararlar oy çokluğu ile alınır'). Çeldiriciler kurul hukukundan gelen makul hatalar; doğru şık en kısa olduğu için uzunluk ipucu yok."
+ },
+ {
+  "id": "3201-p2-21",
+  "karar": "REVIZYON",
+  "gerekce": "Kök 'kurullarda personelin rütbe terfiinin görüşülebilmesi için AÇIKÇA ARANAN ŞARTLAR HANGİLERİDİR?' diyerek tamlık iması taşıyor; oysa 55/11'in (d) bendi (Polis Akademisi Başkanlığınca düzenlenecek yöneticilik eğitiminde başarı) önermeler arasında hiç yok. Aday 'şartların tamamı bunlar mı' diye tereddüde düşer. Cevap (B) yine de doğru; kusur ölçme değil ifade kusuru.",
+  "oneri": "Kökü 'aşağıdakilerden hangileri bu şartlardandır?' biçimine çevir; veya (d) bendini beşinci önerme olarak ekle."
+ },
+ {
+  "id": "3201-p2-22",
+  "karar": "ONAY",
+  "gerekce": "55/11-(d) ile birebir: eğitimi düzenleyen makam Kanunda Polis Akademisi Başkanlığı olarak yazılı. Çeldiriciler kurumsal karışıklık üzerine kurulu, doğru şık uzunluk bakımından öne çıkmıyor. p2-21'in açıklaması bu cevabı vermiyor (orada makam adı bilinçli olarak anılmamış) — bu doğru bir tercih."
+ },
+ {
+  "id": "3201-p2-23",
+  "karar": "REVIZYON",
+  "gerekce": "İki kusur: (1) Zorluk etiketi gerçeği yansıtmıyor — sınava en fazla beş defa katılma sınırı 55/11'e 2019'da eklenmiş bir ek cümle ayrıntısıdır, 'easy' değil en az 'medium'dur; dosyadaki diğer easy sorular (rütbe sırası, oy çokluğu, SGK) ile aynı sepete girmez. (2) Açıklamadaki 'iki, üç ve altı yıl gibi süreler ... bekleme, uzatma veya AZAMİ SÜRE kurallarına aittir' cümlesi altı yılı azami bekleme süresine bağlayarak p2-38'e ipucu veriyor.",
+  "oneri": "zorluk: medium yap; açıklamadaki sayı-tasnif cümlesini sadeleştir."
+ },
+ {
+  "id": "3201-p2-24",
+  "karar": "ONAY",
+  "gerekce": "55/12 ile birebir ('terfien Birinci Sınıf Emniyet Müdürü rütbesinde ikinci meslek derecesi karşılığı görev unvanlarına atanabilirler'). 'Rütbe adı ile meslek derecesi aynı sayı sanılır' tuzağı gerçek ve ölçen bir tuzak; şıklar dengeli."
+ },
+ {
+  "id": "3201-p2-25",
+  "karar": "ONAY",
+  "gerekce": "55/13 ile birebir: 'meslekte fiilen iki yılını dolduran lisans mezunu polis memurları' — üç yıl Kanunda yok, (A) yanlıştır. Diğer dört şık fıkranın gerçek unsurları. Doğru şık dört çeldiriciden kısa değil uzun değil; ipucu yok."
+ },
+ {
+  "id": "3201-p2-26",
+  "karar": "ONAY",
+  "gerekce": "55/14 ile birebir ('bu rütbedeki fiili çalışma süresi esas alınır'). Çeldiriciler kazanılmış hak aylığı / toplam hizmet / kıdem sırası gibi gerçekten karıştırılan kavramlardan; ölçme değeri yüksek."
+ },
+ {
+  "id": "3201-p2-27",
+  "karar": "ONAY",
+  "gerekce": "55/15 ile birebir: uzmanlık, yüksek lisans, doktora ve avukatlık stajı rütbe kıdeminde değerlendirilmez; yurt dışı misyon koruma, yurt dışı kurs, tedavi ve istirahat süreleri ise değerlendirilir. Şüphe kaydı: açıklamanın son cümlesi 'maddede ayrıca bir TAVAN öngörülmüştür' diyerek p2-28'in varlığını haber veriyor; sayı verilmediği için sızıntı sayılmaz ama ikisi aynı denemeye konmamalı."
+ },
+ {
+  "id": "3201-p2-28",
+  "karar": "REVIZYON",
+  "gerekce": "Hüküm doğru (55/15: 'toplamda üç yılı aşan kısmı'). Ancak açıklamadaki 'iki ve beş yıllık süreler maddede gerçekten geçer, fakat bunlar bekleme, uzatma ve KADROSUZLUK rejimine ait sürelerdir' cümlesi beş yılı doğrudan kadrosuzluk rejimine bağlayarak p2-34'ün cevabını daraltıyor. Ayrıca kök hükmün tamamını (yurt dışı misyon koruma, yurt dışı kurs ve diğer görevler, tedavi ve istirahat) tam metin yazdığı için p2-27'nin çeldirici mantığını da açık ediyor.",
+  "oneri": "Açıklamadaki sayı-tasnif cümlesini çıkar; kökü 'bu şekilde geçirilen sürelerin toplamda kaç yılı aşan kısmı' biçiminde kısalt."
+ },
+ {
+  "id": "3201-p2-29",
+  "karar": "ONAY",
+  "gerekce": "55/15 son cümlesiyle birebir ('atanılan ilk rütbede ve adaylığın onanmasından sonra fiili çalışma süresinden sayılır'). Beş şık da tek tek yanlışlanabiliyor, doğru şık uzunluk/üslup bakımından öne çıkmıyor. Dosyanın en temiz sorularından."
+ },
+ {
+  "id": "3201-p2-30",
+  "karar": "REVIZYON",
+  "gerekce": "Hüküm doğru (55/16: 'Taksirli suçlar hariç'). Ancak açıklama fıkrayı tam metin basarak 'aylıksız izinde geçen süreler ... CEZA SÜRELERİ KADAR rütbe terfiini geri bıraktırır' diyor; bu, p2-32'nin cevabını (altı ay aylıksız izin = altı ay geri bırakma) doğrudan veriyor. Bu hattın klasik kusuru: sızıntı zorunlu 'komşu hüküm' cümlesinden çıkıyor.",
+  "oneri": "Açıklamadan fıkranın tam sayımını çıkar; taksirli suç istisnası ile erteleme/paraya çevirme tuzağı yeterli."
+ },
+ {
+  "id": "3201-p2-31",
+  "karar": "REVIZYON",
+  "gerekce": "İki kusur: (1) A şıkkı ('Terfiinde herhangi bir gecikmeye yol açmaz', 42 karakter) kökün 'ne kadar geciktirir?' sorusuyla gramer olarak uyumsuz ve diğer dört şıktan (6-8 karakter) beş kat uzun — tek başına göze batan, elenmesi kolay bir çeldirici. (2) Açıklamadaki 'onlarda gecikme sabit bir yıl değil, doğrudan CEZA SÜRESİ KADARDIR' cümlesi p2-32'nin cevabını veriyor.",
+  "oneri": "A şıkkını 'Gecikme olmaz' gibi kısalt veya 'Altı ay' benzeri sayısal bir çeldiriciyle değiştir; açıklamadan aylıksız izin/ceza süresi kıyasını çıkar."
+ },
+ {
+  "id": "3201-p2-32",
+  "karar": "RED",
+  "gerekce": "Cevap iki ayrı sorunun açıklamasında yazılı: p2-30 'aylıksız izinde geçen süreler ... ceza süreleri kadar rütbe terfiini geri bıraktırır', p2-31 'onlarda gecikme ... doğrudan CEZA SÜRESİ KADARDIR'. Karşılıklı olarak bu sorunun açıklaması da p2-31'in cevabını ('sabit bir yıllık gecikme yalnızca performans değerlendirmesine ilişkin kuralda') veriyor. Sızıntıdan bağımsız olarak da ölçme değeri düşük: 'süre kadar' kuralının altı aya uygulanması tek adımlık bir işlem ve vaka kurgusu ek bir hüküm çalıştırmıyor.",
+  "oneri": "Çıkar; 55/16 için p2-30 ve (düzeltilmiş) p2-31 yeterli."
+ },
+ {
+  "id": "3201-p2-33",
+  "karar": "ONAY",
+  "gerekce": "55/17 ile uyumlu. Şüphe kaydı: E şıkkı 'ek gösterge ve tazminatları' diyor, metin ise 'ek gösterge, ZAM ve tazminatlar' diyor — 'zam' kelimesi düşmüş. Cevabı etkilemiyor ama şık metni hükmü eksik alıntılıyor; 'zam' eklenirse tam olur."
+ },
+ {
+  "id": "3201-p2-34",
+  "karar": "REVIZYON",
+  "gerekce": "Cevap (Beş) p2-36'nın KÖKÜNDE hazır yazılı: 'Bulunduğu rütbeye terfi ettiği tarihten itibaren BEŞ YIL içinde bir üst rütbeye terfi edemeyen bir Üçüncü Sınıf Emniyet Müdürünün...'. Bu, hattın uyardığı kök sızıntısının tam örneği. Ayrıca p2-28'in açıklaması beş yılı kadrosuzluk rejimine bağlayarak ikinci bir yol açıyor. Hüküm doğru (55/19). Açıklamanın 'altı yıllık süre ... ayrı bir rütbeye ilişkin özel bir azami bekleme kuralına aittir' cümlesi de p2-38'e sızdırıyor.",
+  "oneri": "p2-36'nın kökünden 'beş yıl' ibaresini çıkar; bu sorunun açıklamasından altı yıl göndermesini kaldır."
+ },
+ {
+  "id": "3201-p2-35",
+  "karar": "REVIZYON",
+  "gerekce": "Cevap p2-36'nın açıklamasında tam metin: 'AYNI USULLE, yani Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayıyla iki yıl uzatılır'. Ayrıca p2-39 ve p2-40'ın açıklamaları da aynı usulü tekrarlıyor. Hüküm doğru (55/19).",
+  "oneri": "p2-36'nın açıklamasından usul cümlesini çıkar ('aynı usulle' demekle yetin)."
+ },
+ {
+  "id": "3201-p2-36",
+  "karar": "REVIZYON",
+  "gerekce": "Dosyanın en çok sızdıran sorusu: KÖKÜ p2-34'ün cevabını (beş yıl), AÇIKLAMASI p2-35'in cevabını (Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayı) basıyor. Kendi hükmü doğru (55/19: iki yıl uzatma, en fazla bir defa daha). Vaka kurgusu gerçekten hüküm çalıştırıyor, bu yönüyle iyi.",
+  "oneri": "Kökü 'Kanunda öngörülen süre içinde bir üst rütbeye terfi edemeyen bir Üçüncü Sınıf Emniyet Müdürünün...' biçimine çevir; açıklamadan 'Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayıyla' ibaresini çıkarıp 'aynı usulle' de."
+ },
+ {
+  "id": "3201-p2-37",
+  "karar": "REVIZYON",
+  "gerekce": "p2-41'in açıklaması 'Oranlar Emniyet Amirliğinden Birinci Sınıf Emniyet Müdürlüğüne doğru onar puan artarak ilerler' diyerek tazminatın kapsamını (Emniyet Amiri ile Birinci Sınıf EM arası) veriyor; kapsamın dışındaki tek şık Başkomiser olduğu için cevap elemeyle çıkıyor. Karşılıklı olarak bu sorunun açıklaması da rütbe listesini + 'oran rütbe yükseldikçe artar' kuralını vererek p2-41'i çözüyor. Hüküm doğru (55/21).",
+  "oneri": "İki açıklamadan birinden kapsam/artış bilgisini çıkar; tercihen p2-41'in açıklamasından 'onar puan artarak ilerler' cümlesini kaldır."
+ },
+ {
+  "id": "3201-p2-38",
+  "karar": "REVIZYON",
+  "gerekce": "Hüküm doğru (55/20: altı yıl). Ancak p2-34'ün açıklaması altı yılı 'ayrı bir rütbeye ilişkin özel bir azami bekleme kuralı' olarak konumlandırıyor ve p2-23'ün açıklaması da altı yılı 'azami süre kuralına' bağlıyor; iki ayrı yerden aynı sayıya işaret ediliyor. Ayrıca 38-39-40 aynı fıkranın (55/20) üç sorusu.",
+  "oneri": "p2-34 ve p2-23'ün açıklamalarındaki altı yıl göndermelerini kaldır; 38-39-40'tan birini çıkarmayı değerlendir."
+ },
+ {
+  "id": "3201-p2-39",
+  "karar": "ONAY",
+  "gerekce": "55/20 son cümlesiyle birebir ('iki yılda bir Yüksek Değerlendirme Kurulu tarafından ayrıca karara bağlanır'). Şıklar süre x merci matrisi olarak kurulmuş, dördü de makul; doğru şık en uzun olanlardan biri ama tek başına en uzun değil."
+ },
+ {
+  "id": "3201-p2-40",
+  "karar": "ONAY",
+  "gerekce": "55/20 ile uyumlu ve kök 'kural olarak' + 'emeklilik şartlarını taşımaları kaydıyla' kayıtlarını taşıdığı için C şıkkı (yaş haddine kadar devam) ikinci doğru hâline gelmiyor — istisna doğru biçimde dışarıda bırakılmış. Açıklamanın 'üçüncü tuzak' cümlesi bu sınırı açıkça kabul ediyor, bu bir itiraf değil doğru bir kayıt."
+ },
+ {
+  "id": "3201-p2-41",
+  "karar": "REVIZYON",
+  "gerekce": "p2-37'nin açıklaması tazminat kapsamını beş rütbe olarak sayıyor ve 'oranı rütbe yükseldikçe artırmıştır' diyor; bu sorunun şıkları 110-150 arasında onar onar dizildiği için Üçüncü Sınıf EM'nin listedeki üçüncü sıra = 130 olduğu hesapla bulunur. Karşılıklı sızıntı. Hüküm doğru (55/21: %130).",
+  "oneri": "Açıklamadan 'Emniyet Amirliğinden Birinci Sınıf Emniyet Müdürlüğüne doğru onar puan artarak ilerler' cümlesini çıkar; p2-37 ile aynı denemeye koyma."
+ },
+ {
+  "id": "3201-p2-42",
+  "karar": "REVIZYON",
+  "gerekce": "Hüküm doğru (55/21: Sosyal Güvenlik Kurumunca ödenir). Ancak açıklamadaki 'ödediği tutarı ayrıca ve belirli devreler hâlinde faturası karşılığında Hazineden tahsil eder' cümlesi p2-43'ün D şıkkını doğru olarak ilan ediyor ve o soruyu bir şık daraltıyor. Ayrıca son cümle ('belirli bir yaş sınırına kadar ödenmesi öngörülmüştür') p2-44'e ipucu.",
+  "oneri": "Açıklamanın son iki cümlesini çıkar; SGK-Hazine ayrımını sayı ve devre vermeden anlat."
+ },
+ {
+  "id": "3201-p2-43",
+  "karar": "ONAY",
+  "gerekce": "55/21 son cümleleriyle birebir; (E) gerçekten yanlış ('yaş haddinden önce ölenlerin varislerine intikal etmez'). Dört çeldiricinin dördü de fıkranın gerçek cümleleri, doldurma yok. Şüphe kaydı: D şıkkı p2-42'nin açıklamasıyla doğrulanıyor (yukarı bak); ayrıca 37-41-42-43-44 ile aynı fıkradan beş soru çıkarılmış, bu küme aşırı yoğun."
+ },
+ {
+  "id": "3201-p2-44",
+  "karar": "ONAY",
+  "gerekce": "55/21 ile birebir ('rütbelerinin ve makamının yaş haddinden az olmamak üzere altmış yaşına kadar olan sürede'). 'Az olmamak üzere' kaydının taban mı tavan mı olduğu gerçek bir ölçme noktası; C ve A şıkları gerçekten çekici çeldiriciler."
+ },
+ {
+  "id": "3201-p2-45",
+  "karar": "REVIZYON",
+  "gerekce": "p2-01'in açıklaması 55/1'deki dokuz rütbeyi tam metin saydığı için A-D şıklarının rütbe olduğu orada doğrulanıyor; cevap (İl Emniyet Müdürü) elemeyle çıkıyor. Ayrıca p2-01 ile aynı fıkranın ikinci sorusu ve 'rütbe/unvan ayrımı' zaten p2-01'in açıklamasında işleniyor. Hüküm doğru: İl Emniyet Müdürü 55/1 listesinde yok, 55/8 ve 55/20'de unvan olarak geçiyor.",
+  "oneri": "p2-01'in açıklamasındaki tam rütbe listesi kaldırılırsa kalabilir; kaldırılmazsa 01 ve 45'ten birini çıkar."
+ }
+]
