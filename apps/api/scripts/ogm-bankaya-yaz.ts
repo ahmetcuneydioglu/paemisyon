@@ -34,7 +34,8 @@ import { questionFingerprint } from '../src/modules/admin/questions/import-parse
 
 const APPLY = process.env.APPLY === '1';
 const GECER = new Set(['ONAY', 'ONAY-HAKEM', 'ZAYIF']);
-/** Dersin TEK konusu (8 Eyl 2026'da üç kopya konu burada birleştirildi). */
+/** Varsayılan konu (İnkılap partileri). Aday kaydında `konuId` varsa O kullanılır:
+ *  Doc 40'ta sorular dört ayrı derse ve 70 konuluk ağaca dağılıyor. */
 const KONU_ID = '23d22785-351b-4f39-8516-a419e2c254c0';
 const KAYNAK = process.env.KAYNAK ?? 'MEB OGM Materyal soru bankası';
 /** Doğrudan yayına çıkacak kimlikler — geri kalanı onay kuyruğuna düşer. */
@@ -112,6 +113,10 @@ async function main() {
   console.log(`  bunun ${kullaniciElemis.length}'i kullanıcının PANELDEN ELEDİĞİ soru — geri yazılmıyor`);
   if (kullaniciElemis.length) console.log(`     ${kullaniciElemis.map((r) => r.id).join(' ')}`);
   console.log(`görselli           : ${yazilacak.filter((r) => r.gorselUrl).length}`);
+  const konusuz = yazilacak.filter((r) => !r.konuId);
+  if (konusuz.length) console.log(`  ! konuId'siz ${konusuz.length} soru varsayılan konuya gidecek: ${konusuz.map((r) => r.id).join(' ')}`);
+  const dersler = yazilacak.reduce<Record<string, number>>((a, r) => ({ ...a, [r.ders ?? '—']: (a[r.ders ?? '—'] ?? 0) + 1 }), {});
+  for (const [d, n] of Object.entries(dersler).sort((a, b) => b[1] - a[1])) console.log(`   ${String(n).padStart(3)}  ${d}`);
   const yayinlanacak = yazilacak.filter((r) => YAYIN.has(r.id));
   console.log(`YAZILACAK          : ${yazilacak.length}`);
   console.log(`  doğrudan YAYIN   : ${yayinlanacak.length}  ${yayinlanacak.map((r) => r.id).join(' ')}`);
@@ -127,7 +132,7 @@ async function main() {
   }));
   await prisma.$transaction(async (tx) => {
     await tx.question.createMany({
-      data: satirlar.map((r) => ({ id: r.questionId, topicId: KONU_ID, articleNo: null })),
+      data: satirlar.map((r) => ({ id: r.questionId, topicId: r.konuId ?? KONU_ID, articleNo: null })),
     });
     await tx.questionVersion.createMany({
       data: satirlar.map((r) => ({
