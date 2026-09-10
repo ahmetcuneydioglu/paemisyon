@@ -58,9 +58,24 @@ function birlestir(parti: string, anahtarYolu: string) {
     const uyarilar = [a.uyari, b.uyari, c?.uyari].filter(Boolean) as string[];
     const dusuk = [a.guven, b.guven, ...(c ? [c.guven] : [])].includes('dusuk');
 
+    // ESKIMIS ekseni (Doc 34'ten, Doc 39'da geri açıldı): sorular eski bir
+    // sınavdan geliyorsa denetçilerin anahtarla ayrışması iki anlama gelebilir.
+    // Kendi aralarında hemfikirler VE en az biri ayrışmayı mevzuat
+    // değişikliğiyle açıklıyorsa bu kusur değil GÜNCELLEME işidir.
+    const eskimeler = [a.eskime, b.eskime, c?.eskime].filter(Boolean) as string[];
+    // Eskimenin İKİ ayrı biçimi var ve aynı kararı doğurmazlar:
+    //   • cevabı değiştiren eskime  → ESKIMIS (anahtar güncellenmeli)
+    //   • metni eskiten eskime      → GUNCELLENECEK (cevap doğru ama soru
+    //     bugün var olmayan bir kurumu/adı gösteriyor; metin güncellenmeli)
+    // İkincisini ONAY saymak, adaya lağvedilmiş bir genel müdürlüğü şık diye
+    // göstermek demekti.
     const karar = mebUyuyor
-      ? (uyarilar.length ? 'UYARI' : dusuk ? 'ZAYIF' : 'ONAY')
-      : ikisiAyni ? 'ANAHTAR-SUPHELI' : 'CELISKI';
+      ? (uyarilar.length ? 'UYARI'
+        : eskimeler.length ? 'GUNCELLENECEK'
+        : dusuk ? 'ZAYIF' : 'ONAY')
+      : ikisiAyni
+        ? (eskimeler.length ? 'ESKIMIS' : 'ANAHTAR-SUPHELI')
+        : 'CELISKI';
 
     return {
       id, karar, mebCevabi: meb,
@@ -69,7 +84,7 @@ function birlestir(parti: string, anahtarYolu: string) {
       guven: [a.guven, b.guven, ...(c ? [c.guven] : [])],
       dayanak: a.dayanak, dayanak2: b.dayanak,
       gerekce: a.gerekce, gerekce2: b.gerekce, gerekce3: c?.gerekce ?? null,
-      uyarilar,
+      uyarilar, eskimeler,
     };
   });
 
@@ -88,16 +103,18 @@ function main() {
   for (const parti of partiler) {
     const kararlar = birlestir(parti, anahtarYolu);
     const say = (k: string) => kararlar.filter((x) => x.karar === k).length;
-    for (const k of ['ONAY', 'ZAYIF', 'UYARI', 'ANAHTAR-SUPHELI', 'CELISKI', 'EKSIK'])
+    for (const k of ['ONAY', 'ZAYIF', 'UYARI', 'GUNCELLENECEK', 'ESKIMIS', 'ANAHTAR-SUPHELI', 'CELISKI', 'EKSIK'])
       toplam[k] = (toplam[k] ?? 0) + say(k);
     console.log(
       `${parti}: ${kararlar.length} soru → ONAY ${say('ONAY')} · ZAYIF ${say('ZAYIF')} · ` +
-      `UYARI ${say('UYARI')} · ANAHTAR-ŞÜPHELİ ${say('ANAHTAR-SUPHELI')} · ÇELİŞKİ ${say('CELISKI')}`,
+      `UYARI ${say('UYARI')} · GÜNCELLENECEK ${say('GUNCELLENECEK')} · ESKİMİŞ ${say('ESKIMIS')} · ` +
+      `ANAHTAR-ŞÜPHELİ ${say('ANAHTAR-SUPHELI')} · ÇELİŞKİ ${say('CELISKI')}`,
     );
     for (const k of kararlar) {
       if (k.karar === 'ONAY') continue;
       console.log(`\n  ${k.id} [${k.karar}] meb=${k.mebCevabi} d1=${k.d1} d2=${k.d2}${(k as any).d3 ? ` d3=${(k as any).d3}` : ''} guven=${k.guven.join('/')}`);
       for (const u of k.uyarilar) console.log(`     ⚠ ${u}`);
+    for (const e of ((k as any).eskimeler ?? [])) console.log(`     ⏳ ESKİME: ${e}`);
     }
     console.log('');
   }
