@@ -1,0 +1,8 @@
+# Sayfa görüntüleri commit EDİLMEZ (27 MB). Kaynak PDF'ten yeniden üretilir:
+#   pdftoppm -r 200 -png "KPSS 2025 KAMU YÖNETİMİ.pdf" sayfa/s
+# Soru kırpımları (soru/) ve tarama kırpımları PLAN.md'deki adımlarla,
+# cevap anahtarı şeridi ise anahtar-40.json'a çıkarılmış hâliyle kayıtlı.
+sayfa/
+soru/
+tarama/
+anahtar/
