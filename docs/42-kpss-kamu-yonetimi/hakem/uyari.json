@@ -1,0 +1,53 @@
+[
+ {
+  "id": "q9",
+  "kok": "2820 sayılı Siyasi Partiler Kanunu'na göre bir siyasi partinin Türkiye Büyük Millet Meclisinde grup kurabilmesi için en az kaç milletvekili olmalıdır?",
+  "siklar": {
+   "A": "5",
+   "B": "10",
+   "C": "15",
+   "D": "20",
+   "E": "25"
+  },
+  "cevap": "D",
+  "uyarilar": [
+   "Kök 'grup kurabilmesi' hükmünü md 27'ye değil md 22'ye dayandırır; kökte madde no geçmediği için soru bozulmuyor."
+  ],
+  "eskimeler": [],
+  "guncellemeler": []
+ },
+ {
+  "id": "q22",
+  "kok": "657 sayılı Devlet Memurları Kanunu'na göre disiplin amirleri tarafından verilen uyarma cezasına karşı itiraz süresi, ceza kararının ilgiliye tebliğ tarihinden itibaren kaç gündür?",
+  "siklar": {
+   "A": "2",
+   "B": "3",
+   "C": "7",
+   "D": "15",
+   "E": "30"
+  },
+  "cevap": "C",
+  "uyarilar": [
+   "Kökte itiraz süresi 657 md 135'te düzenlenir; md 136 6111 s.K. ile mülgadır. Soru madde numarası vermediği için kusur değil, yalnız not."
+  ],
+  "eskimeler": [],
+  "guncellemeler": []
+ },
+ {
+  "id": "q24",
+  "kok": "Aşağıdakilerden hangisinin ayrı bir kamu tüzel kişiliği vardır?",
+  "siklar": {
+   "A": "Cumhurbaşkanlığı Genel Sekreterliği",
+   "B": "Cumhurbaşkanı Özel Kalem Müdürlüğü",
+   "C": "Cumhurbaşkanlığı Yüksek İstişare Kurulu",
+   "D": "Cumhurbaşkanlığı Yatırım ve Finans Ofisi",
+   "E": "Cumhurbaşkanlığı Güvenlik ve Dış Politikalar Kurulu"
+  },
+  "cevap": "D",
+  "uyarilar": [
+   "A şıkkındaki 'Cumhurbaşkanlığı Genel Sekreterliği' 2018'de kaldırılmış (yerine İdari İşler Başkanlığı) bir birimdir; cevabı etkilemiyor ama çeldirici bugün var olmayan bir kurumu gösteriyor."
+  ],
+  "eskimeler": [],
+  "guncellemeler": []
+ }
+]
