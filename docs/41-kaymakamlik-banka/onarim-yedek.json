@@ -1,0 +1,87 @@
+[
+ {
+  "id": "3ee990f5-dd5f-410c-851f-32d51ba1fc8d",
+  "onarim": {
+   "id": "3ee990f5",
+   "tur": "cevap",
+   "yeniDogruHarf": "A",
+   "gerekce": "k21-11: bankada isaretli D sikki 'Hatay Il Ozel Idaresi'; bu idare 6360 s.K. ile 2014te tuzel kisiligini yitirdi (Hatay buyuksehir). Sinav 2021de yapildigi icin bu mevzuat eskimesi degil, ice aktarimda yanlis harfin isaretlenmesi. Uc bagimsiz denetci ve iki hakem oybirligiyle dogru cevabin A (Iskenderun Belediyesi) oldugunu soyledi: Isyeri Acma ve Calisma Ruhsatlarina Iliskin Yonetmelik md 4/(a) uyarinca buyuksehirde buyuksehrin yetkili olmadigi sihhi isyeri ruhsatini ilce belediyesi verir. Kok ve sik metinleri aynen korundu; yalniz anahtar tasindi. Kullanici karari."
+  },
+  "oncekiSiklar": [
+   {
+    "id": "8f1bee0c-3031-46f1-8579-24255b03800d",
+    "label": "A",
+    "text": "İskenderun Belediyesi",
+    "isCorrect": false
+   },
+   {
+    "id": "aba7f729-a351-4a61-b794-fdb7178bcc34",
+    "label": "B",
+    "text": "Hatay Büyükşehir Belediyesi",
+    "isCorrect": false
+   },
+   {
+    "id": "b2635e3d-dc33-4373-b4f9-4b628fc6635d",
+    "label": "C",
+    "text": "İskenderun Kaymakamlığı",
+    "isCorrect": false
+   },
+   {
+    "id": "782d50b7-b04e-4cbc-b4b7-cd62b8958270",
+    "label": "D",
+    "text": "Hatay İl Özel İdaresi",
+    "isCorrect": true
+   },
+   {
+    "id": "ac5fa61d-eb83-40f7-a5b0-86f0abb4095e",
+    "label": "E",
+    "text": "Hatay Valiliği",
+    "isCorrect": false
+   }
+  ],
+  "oncekiKok": "Hatay'ın İskenderun ilçesinde belediye sınırları dışında bijuteri açmak isteyen bir kişiye, iş yeri açma ve çalışma ruhsatını verme yetkisi aşağıdakilerden hangisine aittir?"
+ },
+ {
+  "id": "5e0ea80a-93b0-42b5-848c-2c460f18953b",
+  "onarim": {
+   "id": "5e0ea80a",
+   "tur": "kok",
+   "eski": "Aile ve Sosyal Politikalar Bakanlığında",
+   "yeni": "Aile ve Sosyal Hizmetler Bakanlığında",
+   "gerekce": "k23-20: kokteki bakanlik 2018de kaldirildi; bugunku adi 73 s. CBK (21/4/2021) ile Aile ve Sosyal Hizmetler Bakanligi. Bakanlik adi sorunun kurgu dekoru — soru idari islemin YETKI unsurundaki sakatligi olcuyor ve cevap (B) etkilenmiyor. Iki hakem de ayni duzeltmeyi onerdi. Doc 40taki p6 (kararname adi) sinifi. Kullanici karari."
+  },
+  "oncekiSiklar": [
+   {
+    "id": "7c10a94b-ba97-4940-bbf0-2ea998bdb47c",
+    "label": "A",
+    "text": "Şekil",
+    "isCorrect": false
+   },
+   {
+    "id": "db9c63b5-87fe-40c7-a38f-025bcb9d0054",
+    "label": "B",
+    "text": "Yetki",
+    "isCorrect": true
+   },
+   {
+    "id": "8e9c38d1-26eb-46a6-abf8-34ccb73dec9a",
+    "label": "C",
+    "text": "Amaç",
+    "isCorrect": false
+   },
+   {
+    "id": "c97fd14d-6cad-4f1f-be9a-1cb3c426fc51",
+    "label": "D",
+    "text": "Konu",
+    "isCorrect": false
+   },
+   {
+    "id": "ec954136-69bd-49a6-b865-8656b943b147",
+    "label": "E",
+    "text": "Sebep",
+    "isCorrect": false
+   }
+  ],
+  "oncekiKok": "Aile ve Sosyal Politikalar Bakanlığında memur Cem'in mevzuat gereği disiplin amiri konumunda olan daire başkanı Ahmet'in, 10 gün süreli almış olduğu sağlık raporuyla hastalık iznine ayrılması nedeniyle yerine başka bir daire başkanı Burak görevlendiriliyor. Mazeretsiz ve izinsiz görev yerini terk ettiği gerekçesiyle bu 10 günlük süre içinde Ahmet tarafından Cem'e uyarma cezası veriliyor.\nBu uyarma cezası işleminin hangi unsurunda sakatlık bulunmaktadır?"
+ }
+]

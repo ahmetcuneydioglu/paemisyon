@@ -22,18 +22,24 @@ import { PrismaClient } from '@prisma/client';
 import { writeFileSync, appendFileSync } from 'fs';
 
 const p = new PrismaClient();
-const YEDEK = `${__dirname}/../../../docs/32-yayin-denetimi/arsiv-yedek.json`;
+// Hangi doc'un defterine yazilacagi kosuya gore degisir (Doc 32, Doc 41 ...).
+const DOC_DIR = process.env.DOC_DIR ?? '32-yayin-denetimi';
+const YEDEK = `${__dirname}/../../../docs/${DOC_DIR}/arsiv-yedek.json`;
 
 // [soru id oneki, sinif, gerekce]
 const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> = [
-  // [soru id oneki, sinif, gerekce] — her kosuda doldurulur.
-  ['e2d9ea9a', 'yigilma', "Denetci yigilma tespiti: 8d54c9c6 ile ayni kurali (TCK m.84/4'un kasten oldurme sayilan halleri) ayni onculu kalipla olcuyor; 'buyuk olcude mukerrer' notu dusuldu. m.84/4'un HER IKI halini (cebir/tehditle mecbur etme + algilama yetenegi gelismemis kisiyi sevk) birlikte olcen 8d54c9c6 birakildi."],
-  ['1f92fb14', 'yigilma', "Denetci yigilma tespiti: e2e7ba2d ile ayni kurali (TCK m.67/1 + CMK m.231/8-253/21 dava zamanasimini durduran nedenlerin sinirli sayimi) ayni onculu kalipla olcuyor. Basit yargilama usulu (CMK m.251) tuzagini da tasiyan e2e7ba2d birakildi."],
-  ['22316627', 'eskime', "AYM 8/10/2015 E.2014/140 K.2015/85 karariyla TCK m.53/1-b 'secme ve secilme ehliyeti' yonunden iptal edildi; hapis mahkumiyetinin kanuni sonucu olarak secme-secilme yoksunlugu artik dogmuyor. Bu, A (genel secimlerde oy kullanamaz) ve B (belediye baskan adayi olamaz) siklarini tartismali kiliyor; 'hangisi yanlistir' kokunde tek dogru cevap ilkesi zedeleniyor. Cozum 298 ve 2839 s.K. gibi TCK disi mevzuata bagli oldugundan ogrenciye bilgi kirliligi yaratir. Denetimde bir denetci kusurlu buldu; karsi-dogrulama 2/3 ile curuttu ama tam uzlasma saglanamadi — supheli soru bankada tutulmaz."],
-  ['9a55e230', 'yigilma', "Denetci yigilma tespiti: 79ee8bae ile ayni kurali (m.43/1 'degisik zamanlarda' kosulu + tamamlanmis hirsizlikta tesebbus olmamasi) ayni kurguyla (magazadan cok sayida esya alip bir kismini birakma) olcuyor. Daha zengin kurgulu 79ee8bae birakildi."],
-  ['40129ef0', 'yigilma', "Denetci yigilma tespiti: af7b2405 ile ayni kurali (hirsizlikta magdur zilyettir; tek zilyet + ayni anda alma = tek suc) ayni bicimde olcuyor. Sayisal celdirici tuzagi (1/10/30/300) daha ayirt edici olan af7b2405 birakildi."],
-  ['c95374ec', 'yigilma', "Denetci yigilma tespiti: 449f025a ile ayni kurali neredeyse birebir ayni olay kurgusuyla (otoparkta farkli kisilere ait araclardan calma) olcuyor. Gercek ictima kavramini da siklarinda tasiyan 449f025a birakildi."],
-  // ['d3f859a9', 'bozuk', "CMK m.231/6 HAGB kosullari arasinda 'yer almayan' olarak hem B (daha once HERHANGI BIR suctan mahkum olmama; metin yalnizca KASITLI suc arar) hem E (sanigin HAGB'yi kabul etmesi; rıza sarti 5728 s.K. ile metinden cikarilmis) gecerli cevap; tek dogru cevap ilkesi bozulmus. 3 karsi-dogrulayicinin ucu de iddiayi teyit etti (0/3 curutme)."],
+  // --- Doc 41 (Kaymakamlik bankasi, 10 Eyl 2026) ---
+  ['ca64bb8e', 'bozuk',
+    "k23-32: 'Il yonetimiyle ilgili asagidakilerden hangisi YANLISTIR?' kokunde hicbir sik " +
+    "kesin yanlis degil. Bankanin isaretledigi C ('iller ilcelere, ilceler de bucaklara " +
+    "bolunmustur') 5442 s.K. md 1'in yururlukteki lafzi — madde 12/5/1964-469/1 ile degistigi " +
+    "haliyle duruyor ve bucak hukumleri (md 41-56) hala yururlukte, yani C DOGRU bir ifade. " +
+    "Uc denetcinin isaret ettigi D ('merkez ilcenin yonetiminden vali sorumludur') ise 4483 " +
+    "s.K. md 3/(b)'deki 'ilde ve merkez ilcede gorevli memurlar hakkinda vali' hukmuyle " +
+    "desteklenebiliyor; A md 3, B kabul tarihi 10/6/1949, E md 2/A ile dogrulaniyor. Aday " +
+    "hangi sikki isaretlerse hakli olarak itiraz edebilir. Iki hakem de KUSURLU dedi ve " +
+    "duzeltme onermedi: sik kumesini onarmak soruyu yeniden yazmak olur. Hicbir denemede " +
+    "kullanilmamis. Kullanici karari."],
 ];
 
 (async () => {
@@ -80,7 +86,7 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
   // arsivlenmis sorular defterde hala 'belirsiz' gorunuyordu, ben de "arsivlenmesi
   // gerekenler kalmis" diye yanlis rapor verdim. Arsivleme ile defter kaydi ayni
   // islemde olmali; aksi halde iki kaynak birbirinden ayrisiyor.
-  const DEFTER = `${__dirname}/../../../docs/32-yayin-denetimi/ilerleme.jsonl`;
+  const DEFTER = `${__dirname}/../../../docs/${DOC_DIR}/ilerleme.jsonl`;
   const satirlar = plan.map((x) => JSON.stringify({
     id: x.r.id.slice(0, 8),
     konu: x.r.question.topic?.name ?? null,

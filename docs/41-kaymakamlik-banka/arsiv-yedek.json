@@ -1,0 +1,46 @@
+[
+ {
+  "sinif": "bozuk",
+  "gerekce": "k23-32: 'Il yonetimiyle ilgili asagidakilerden hangisi YANLISTIR?' kokunde hicbir sik kesin yanlis degil. Bankanin isaretledigi C ('iller ilcelere, ilceler de bucaklara bolunmustur') 5442 s.K. md 1'in yururlukteki lafzi — madde 12/5/1964-469/1 ile degistigi haliyle duruyor ve bucak hukumleri (md 41-56) hala yururlukte, yani C DOGRU bir ifade. Uc denetcinin isaret ettigi D ('merkez ilcenin yonetiminden vali sorumludur') ise 4483 s.K. md 3/(b)'deki 'ilde ve merkez ilcede gorevli memurlar hakkinda vali' hukmuyle desteklenebiliyor; A md 3, B kabul tarihi 10/6/1949, E md 2/A ile dogrulaniyor. Aday hangi sikki isaretlerse hakli olarak itiraz edebilir. Iki hakem de KUSURLU dedi ve duzeltme onermedi: sik kumesini onarmak soruyu yeniden yazmak olur. Hicbir denemede kullanilmamis. Kullanici karari.",
+  "arsivlenen": {
+   "id": "ca64bb8e-1778-429b-9fea-f5faa7139245",
+   "questionId": "0b8ee466-64d0-4ee6-be77-f242cb034a08",
+   "stem": "Türkiye'deki il yönetimiyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "BUCAK İDARELERİ 6552 sayılı Kanun ile KALDIRILMIŞTIR; bu nedenle 'ilçeler de bucaklara bölünmüştür' ifadesi güncel mevzuata aykırıdır ve C yanlıştır. Anayasa m.126'ya göre Türkiye, merkezi idare kuruluşu bakımından coğrafya durumuna, ekonomik şartlara ve kamu hizmetlerinin gereklerine göre illere; iller de diğer kademeli bölümlere ayrılır ve İLLERİN İDARESİ YETKİ GENİŞLİĞİ ESASINA DAYANIR. Anayasa'da açıkça düzenlenmiş tek taşra biçimi İL GENEL İDARESİDİR. İl ve ilçe kurulması, kaldırılması ve sınırlarının değiştirilmesi KANUNLA olur; merkez ilçenin ayrı bir kaymakamı bulunmadığından yönetiminden VALİ sorumludur.",
+   "sourceLabel": "2023 KAYMAKAMLIK SINAVI",
+   "options": [
+    {
+     "label": "A",
+     "text": "Yetki genişliği esasına dayanır.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Temel esasları 1949 yılında çıkarılan 5442 sayılı Kanun'la düzenlenmiştir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "İller, ilçelere; ilçeler de bucaklara bölünmüştür.",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "Merkez ilçenin yönetiminden vali sorumludur.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "İlçeler kanunla kurulur ve kaldırılır.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "İdare Hukuku"
+    }
+   }
+  }
+ }
+]
