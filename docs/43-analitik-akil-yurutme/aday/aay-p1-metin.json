@@ -1,0 +1,146 @@
+[
+ {
+  "id": "aay-p1-01",
+  "ortakMetin": "Bir polis merkezinde görevli Arda, Berk, Ceyda, Demir ve Esra adlı beş memur, Pazartesiden Cumaya kadar olan beş gün boyunca nöbet tutacaktır. Her gün yalnız bir memur nöbetçidir ve her memur yalnız bir gün nöbet tutar. Nöbet çizelgesi ile ilgili bilinenler şunlardır:\n- Ceyda, Arda’dan hemen sonraki gün nöbetçidir.\n- Berk, Demir’den daha erken bir günde nöbet tutar.\n- Esra Pazartesi günü nöbetçi değildir.\n- Demir Perşembe günü nöbetçi değildir.",
+  "kok": "Yukarıdaki bilgilere göre, Demir’in nöbet tutabileceği günler aşağıdakilerin hangisinde tam olarak verilmiştir?",
+  "siklar": {
+   "A": "Pazartesi, Çarşamba, Cuma",
+   "B": "Salı, Çarşamba, Cuma",
+   "C": "Çarşamba, Perşembe, Cuma",
+   "D": "Pazartesi, Salı, Çarşamba",
+   "E": "Salı, Perşembe, Cuma"
+  }
+ },
+ {
+  "id": "aay-p1-02",
+  "ortakMetin": "Bir polis merkezinde görevli Arda, Berk, Ceyda, Demir ve Esra adlı beş memur, Pazartesiden Cumaya kadar olan beş gün boyunca nöbet tutacaktır. Her gün yalnız bir memur nöbetçidir ve her memur yalnız bir gün nöbet tutar. Nöbet çizelgesi ile ilgili bilinenler şunlardır:\n- Ceyda, Arda’dan hemen sonraki gün nöbetçidir.\n- Berk, Demir’den daha erken bir günde nöbet tutar.\n- Esra Pazartesi günü nöbetçi değildir.\n- Demir Perşembe günü nöbetçi değildir.",
+  "kok": "Yukarıdaki bilgilere göre, Arda Çarşamba günü nöbetçi ise aşağıdakilerden hangisi kesinlikle doğrudur?",
+  "siklar": {
+   "A": "Esra Cuma günü nöbetçidir.",
+   "B": "Ceyda Cuma günü nöbetçidir.",
+   "C": "Demir Salı günü nöbetçidir.",
+   "D": "Berk Pazartesi günü nöbetçidir.",
+   "E": "Demir, Esra’dan daha erken bir günde nöbet tutar."
+  }
+ },
+ {
+  "id": "aay-p1-03",
+  "ortakMetin": "Bir polis merkezinde görevli Arda, Berk, Ceyda, Demir ve Esra adlı beş memur, Pazartesiden Cumaya kadar olan beş gün boyunca nöbet tutacaktır. Her gün yalnız bir memur nöbetçidir ve her memur yalnız bir gün nöbet tutar. Nöbet çizelgesi ile ilgili bilinenler şunlardır:\n- Ceyda, Arda’dan hemen sonraki gün nöbetçidir.\n- Berk, Demir’den daha erken bir günde nöbet tutar.\n- Esra Pazartesi günü nöbetçi değildir.\n- Demir Perşembe günü nöbetçi değildir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?",
+  "siklar": {
+   "A": "Berk Salı günü nöbetçidir.",
+   "B": "Esra Perşembe günü nöbetçidir.",
+   "C": "Berk Perşembe günü nöbetçidir.",
+   "D": "Arda Pazartesi günü nöbetçidir.",
+   "E": "Ceyda Cuma günü nöbetçidir."
+  }
+ },
+ {
+  "id": "aay-p1-04",
+  "ortakMetin": "Bir ilçe emniyet müdürlüğünde görevli Kaya, Levent, Melis, Nur, Onur ve Pelin adlı altı polis memuru Devriye, Çevik ve Trafik timlerine dağıtılmıştır. Devriye timinde üç, Çevik timinde iki, Trafik timinde bir memur vardır ve her memur yalnız bir timde görevlidir. Dağılım ile ilgili bilinenler şunlardır:\n- Kaya ile Levent aynı timdedir.\n- Onur Çevik timindedir.\n- Kaya Çevik timinde değildir.\n- Pelin Trafik timinde değildir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle doğrudur?",
+  "siklar": {
+   "A": "Melis Trafik timindedir.",
+   "B": "Pelin Çevik timindedir.",
+   "C": "Nur Devriye timindedir.",
+   "D": "Kaya Devriye timindedir.",
+   "E": "Levent Çevik timindedir."
+  }
+ },
+ {
+  "id": "aay-p1-05",
+  "ortakMetin": "Bir ilçe emniyet müdürlüğünde görevli Kaya, Levent, Melis, Nur, Onur ve Pelin adlı altı polis memuru Devriye, Çevik ve Trafik timlerine dağıtılmıştır. Devriye timinde üç, Çevik timinde iki, Trafik timinde bir memur vardır ve her memur yalnız bir timde görevlidir. Dağılım ile ilgili bilinenler şunlardır:\n- Kaya ile Levent aynı timdedir.\n- Onur Çevik timindedir.\n- Kaya Çevik timinde değildir.\n- Pelin Trafik timinde değildir.",
+  "kok": "Yukarıdaki bilgilere göre, Trafik timinde görevli olabilecek memurlar aşağıdakilerin hangisinde tam olarak verilmiştir?",
+  "siklar": {
+   "A": "Yalnız Melis",
+   "B": "Melis veya Pelin",
+   "C": "Melis veya Nur",
+   "D": "Yalnız Nur",
+   "E": "Nur veya Pelin"
+  }
+ },
+ {
+  "id": "aay-p1-06",
+  "ortakMetin": "Bir ilçe emniyet müdürlüğünde görevli Kaya, Levent, Melis, Nur, Onur ve Pelin adlı altı polis memuru Devriye, Çevik ve Trafik timlerine dağıtılmıştır. Devriye timinde üç, Çevik timinde iki, Trafik timinde bir memur vardır ve her memur yalnız bir timde görevlidir. Dağılım ile ilgili bilinenler şunlardır:\n- Kaya ile Levent aynı timdedir.\n- Onur Çevik timindedir.\n- Kaya Çevik timinde değildir.\n- Pelin Trafik timinde değildir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?",
+  "siklar": {
+   "A": "Kaya ile Nur aynı timdedir.",
+   "B": "Pelin Devriye timindedir.",
+   "C": "Nur Çevik timindedir.",
+   "D": "Melis ile Nur aynı timdedir.",
+   "E": "Melis Trafik timindedir."
+  }
+ },
+ {
+  "id": "aay-p1-07",
+  "ortakMetin": "Bir asayiş uygulamasında görevlendirilen Ekip 1, Ekip 2, Ekip 3 ve Ekip 4’e Mavi, Yeşil, Kırmızı ve Sarı telsiz kanallarından biri verilmiştir. Her ekibe yalnız bir kanal verilmiş, her kanal yalnız bir ekipte kullanılmıştır. Kanal dağılımı ile ilgili bilinenler şunlardır:\n- Ekip 1’e Mavi kanal verilmemiştir.\n- Ekip 3’e Sarı kanal verilmemiştir.\n- Kırmızı kanal, Ekip 2’ye ya da Ekip 4’e verilmiştir.",
+  "kok": "Yukarıdaki bilgilere göre, Ekip 1’e verilebilecek kanallar aşağıdakilerin hangisinde tam olarak verilmiştir?",
+  "siklar": {
+   "A": "Sarı veya Yeşil",
+   "B": "Mavi veya Yeşil",
+   "C": "Sarı veya Kırmızı",
+   "D": "Mavi veya Sarı",
+   "E": "Yeşil veya Kırmızı"
+  }
+ },
+ {
+  "id": "aay-p1-08",
+  "ortakMetin": "Bir asayiş uygulamasında görevlendirilen Ekip 1, Ekip 2, Ekip 3 ve Ekip 4’e Mavi, Yeşil, Kırmızı ve Sarı telsiz kanallarından biri verilmiştir. Her ekibe yalnız bir kanal verilmiş, her kanal yalnız bir ekipte kullanılmıştır. Kanal dağılımı ile ilgili bilinenler şunlardır:\n- Ekip 1’e Mavi kanal verilmemiştir.\n- Ekip 3’e Sarı kanal verilmemiştir.\n- Kırmızı kanal, Ekip 2’ye ya da Ekip 4’e verilmiştir.",
+  "kok": "Yukarıdaki bilgilere göre, Ekip 4’e Sarı kanal verilmişse aşağıdakilerden hangisi kesinlikle doğrudur?",
+  "siklar": {
+   "A": "Ekip 3’e Yeşil kanal verilmiştir.",
+   "B": "Ekip 1’e Mavi kanal verilmiştir.",
+   "C": "Ekip 2’ye Mavi kanal verilmiştir.",
+   "D": "Ekip 3’e Kırmızı kanal verilmiştir.",
+   "E": "Ekip 2’ye Kırmızı kanal verilmiştir."
+  }
+ },
+ {
+  "id": "aay-p1-09",
+  "ortakMetin": "Bir asayiş uygulamasında görevlendirilen Ekip 1, Ekip 2, Ekip 3 ve Ekip 4’e Mavi, Yeşil, Kırmızı ve Sarı telsiz kanallarından biri verilmiştir. Her ekibe yalnız bir kanal verilmiş, her kanal yalnız bir ekipte kullanılmıştır. Kanal dağılımı ile ilgili bilinenler şunlardır:\n- Ekip 1’e Mavi kanal verilmemiştir.\n- Ekip 3’e Sarı kanal verilmemiştir.\n- Kırmızı kanal, Ekip 2’ye ya da Ekip 4’e verilmiştir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?",
+  "siklar": {
+   "A": "Ekip 2’ye Sarı, Ekip 4’e Kırmızı kanal verilmiştir.",
+   "B": "Ekip 1’e Yeşil, Ekip 2’ye Mavi kanal verilmiştir.",
+   "C": "Ekip 1’e Yeşil, Ekip 3’e Mavi kanal verilmiştir.",
+   "D": "Ekip 3’e Yeşil, Ekip 4’e Kırmızı kanal verilmiştir.",
+   "E": "Ekip 1’e Sarı, Ekip 2’ye Kırmızı kanal verilmiştir."
+  }
+ },
+ {
+  "id": "aay-p1-10",
+  "ortakMetin": "Bir operasyonda Alfa, Bravo, Charlie ve Delta timlerinden hangilerinin görevlendirileceği belirlenecektir. Görevlendirme kuralları şunlardır:\n- Alfa görevlendirilirse Charlie de görevlendirilir.\n- Bravo ile Charlie birlikte görevlendirilemez.\n- Alfa ya da Bravo’dan en az biri görevlendirilir.\n- Delta görevlendirilirse Bravo da görevlendirilir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle doğrudur?",
+  "siklar": {
+   "A": "Charlie görevlendirilmemişse Alfa görevlendirilmiştir.",
+   "B": "Bravo görevlendirilmişse Delta da görevlendirilmiştir.",
+   "C": "Delta görevlendirilmemişse Charlie görevlendirilmiştir.",
+   "D": "Alfa görevlendirilmemişse Delta görevlendirilmiştir.",
+   "E": "Alfa görevlendirilmişse Bravo görevlendirilmemiştir."
+  }
+ },
+ {
+  "id": "aay-p1-11",
+  "ortakMetin": "Bir operasyonda Alfa, Bravo, Charlie ve Delta timlerinden hangilerinin görevlendirileceği belirlenecektir. Görevlendirme kuralları şunlardır:\n- Alfa görevlendirilirse Charlie de görevlendirilir.\n- Bravo ile Charlie birlikte görevlendirilemez.\n- Alfa ya da Bravo’dan en az biri görevlendirilir.\n- Delta görevlendirilirse Bravo da görevlendirilir.",
+  "kok": "Yukarıdaki bilgilere göre, Charlie timi görevlendirilmişse aşağıdakilerden hangisi kesinlikle doğrudur?",
+  "siklar": {
+   "A": "Delta görevlendirilmiştir.",
+   "B": "Yalnızca Charlie görevlendirilmiştir.",
+   "C": "Alfa görevlendirilmiştir.",
+   "D": "Alfa ile Bravo birlikte görevlendirilmiştir.",
+   "E": "Alfa ile Delta birlikte görevlendirilmiştir."
+  }
+ },
+ {
+  "id": "aay-p1-12",
+  "ortakMetin": "Bir operasyonda Alfa, Bravo, Charlie ve Delta timlerinden hangilerinin görevlendirileceği belirlenecektir. Görevlendirme kuralları şunlardır:\n- Alfa görevlendirilirse Charlie de görevlendirilir.\n- Bravo ile Charlie birlikte görevlendirilemez.\n- Alfa ya da Bravo’dan en az biri görevlendirilir.\n- Delta görevlendirilirse Bravo da görevlendirilir.",
+  "kok": "Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?",
+  "siklar": {
+   "A": "Alfa ile Charlie birlikte görevlendirilmiştir.",
+   "B": "Bravo ile Delta birlikte görevlendirilmiştir.",
+   "C": "Yalnızca Bravo görevlendirilmiştir.",
+   "D": "Alfa görevlendirilmemiştir.",
+   "E": "Charlie ile Delta birlikte görevlendirilmiştir."
+  }
+ }
+]
