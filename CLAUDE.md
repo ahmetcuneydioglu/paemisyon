@@ -45,7 +45,14 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   üretilebilir. Şartı:
   soru ayırt edici bir `sourceLabel` taşır ("Mevzuat türetimi — <kanun> md <no>")
   ve doğrudan yayına ÇIKMAZ, `in_review`'a düşer; yayın kararı insanındır.
-  Bu istisna yalnız bu beş kanunla sınırlıdır.
+  Bu istisna yalnız yukarıda sayılan mevzuatla sınırlıdır.
+  **İSTİSNA (11 Eyl 2026, Doc 43):** "Analitik Akıl Yürütme" konusunda
+  sentetik kurgulu soru üretilebilir. Bu istisnanın gerekçesi ötekinden
+  FARKLIDIR: burada türetilecek bir kaynak metin yoktur, güven kaynağa değil
+  KANITA dayanır. Şartı: sorunun tek cevaplı olduğu `aay-cozucu` ile öncüllerle
+  tutarlı BÜTÜN dünyalar sayılarak kanıtlanmış olmalı; kurgu hiçbir hukuk normu
+  öğretmemeli (nötr kurgu — nöbet, tim, kanal); soru "AI üretimi" ön ekli bir
+  `sourceLabel` taşımalı ve `in_review`'a düşmeli. Yayın kararı insanındır.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.
