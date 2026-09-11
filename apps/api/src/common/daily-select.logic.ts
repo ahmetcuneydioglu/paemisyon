@@ -1,4 +1,5 @@
 import type { Prisma } from '@prisma/client';
+import { IPTAL_EDILMEMIS } from './iptal-soru';
 
 /**
  * Günün Quizi — gün-tohumlu 10-soru seçimi (SAF mantık, birim testli).
@@ -20,6 +21,7 @@ export function dailyQuestionPoolWhere(): Prisma.QuestionWhereInput {
   return {
     deletedAt: null,
     currentVersionId: { not: null },
+    ...IPTAL_EDILMEMIS,
     topic: {
       deletedAt: null,
       isPremium: false,

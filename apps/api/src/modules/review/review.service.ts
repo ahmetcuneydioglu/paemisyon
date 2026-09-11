@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { iptalSoruIdleri } from '../../common/iptal-soru';
 
 /// Yanlışlarım & favoriler (Doc 7 §4.6).
 @Injectable()
@@ -7,8 +8,10 @@ export class ReviewService {
   constructor(private readonly prisma: PrismaService) {}
 
   async getWrongAnswers(userId: string) {
+    // İptal edilmiş soru defterde durmaz: kurumun geçersiz saydığı soruyu
+    // "tekrar et" diye önümüze koymak yanlışı kullanıcıya mal etmek olur.
     const rows = await this.prisma.wrongAnswer.findMany({
-      where: { userId, resolvedAt: null },
+      where: { userId, resolvedAt: null, questionId: { notIn: await iptalSoruIdleri(this.prisma) } },
       orderBy: { lastWrongAt: 'desc' },
       take: 50,
     });

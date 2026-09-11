@@ -6,6 +6,7 @@ import { UpsertExamDto } from '../dto/exam.dto';
 import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
 import { bayraklariHesapla, tekrarEdenKokler } from './exam-review.logic';
 import { PushService } from '../../notifications/push.service';
+import { IPTAL_EDILMEMIS } from '../../../common/iptal-soru';
 
 /**
  * Deneme yönetimi (Doc 18 §8). Kurallar:
@@ -282,6 +283,7 @@ export class AdminExamsService {
           topic: { courseId: mevcut.question.topic.courseId },
           deletedAt: null,
           currentVersionId: { not: null },
+          ...IPTAL_EDILMEMIS,
           id: { notIn: disari },
         },
         select: { id: true, currentVersionId: true, _count: { select: { examQuestions: true } } },
@@ -434,6 +436,7 @@ export class AdminExamsService {
           where: {
             deletedAt: null,
             currentVersionId: { not: null },
+            ...IPTAL_EDILMEMIS,
             topic: { courseId: { in: courseIds } },
           },
           select: {

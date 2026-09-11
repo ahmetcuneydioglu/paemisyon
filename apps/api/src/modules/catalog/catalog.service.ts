@@ -1,6 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
+import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 
 /// İçerik keşif okuması (Doc 7 §4.3): Modül → Ders → Konu.
 @Injectable()
@@ -224,7 +225,12 @@ export class CatalogService {
 
     // Yalnızca yayındaki sürümü olan sorular sayılır (Doc 6).
     const questionCount = await this.prisma.question.count({
-      where: { topicId: id, deletedAt: null, currentVersionId: { not: null } },
+      where: {
+        topicId: id,
+        deletedAt: null,
+        currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
+      },
     });
     return { ...topic, questionCount };
   }

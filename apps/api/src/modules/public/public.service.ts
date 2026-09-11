@@ -3,6 +3,7 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 
 /** Pazarlama sayfalarının tükettiği fiyat bilgisi (kimlik gerektirmez). */
 export interface PublicPricing {
@@ -71,6 +72,7 @@ export class PublicService {
       where: {
         deletedAt: null,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
         topic: {
           deletedAt: null,
           isPremium: false,
@@ -345,6 +347,7 @@ export class PublicService {
         topicId: { in: topics.map((t) => t.id) },
         deletedAt: null,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
       },
       _count: { _all: true },
     });
@@ -389,7 +392,12 @@ export class PublicService {
     // Örnek soru: en eski, kaynaklı olan tercih (SEO için sabit ve kanıtlı).
     // BİLİNÇLİ İSTİSNA: cevap + açıklama dahil (tam içerik indekslensin).
     const sample = await this.prisma.question.findFirst({
-      where: { topicId: topic.id, deletedAt: null, currentVersionId: { not: null } },
+      where: {
+        topicId: topic.id,
+        deletedAt: null,
+        currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
+      },
       orderBy: [{ createdAt: 'asc' }],
       select: {
         currentVersion: {
@@ -543,6 +551,7 @@ export class PublicService {
         deletedAt: null,
         articleNo: current.no,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
       },
       orderBy: { createdAt: 'asc' },
       select: { currentVersion: { select: { stem: true, sourceLabel: true } } },
@@ -639,7 +648,11 @@ export class PublicService {
                         _count: {
                           select: {
                             questions: {
-                              where: { deletedAt: null, currentVersionId: { not: null } },
+                              where: {
+                                deletedAt: null,
+                                currentVersionId: { not: null },
+                                ...IPTAL_EDILMEMIS,
+                              },
                             },
                           },
                         },
