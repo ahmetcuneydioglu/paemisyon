@@ -1,0 +1,478 @@
+[
+  {
+    "id": "arama-p1-01",
+    "articleNo": "8",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, aşağıdaki hâllerin hangisinde arama yapılabilmesi için ayrıca bir arama emri ya da kararı alınması gerekir?",
+    "siklar": {
+      "A": "Gözaltına alınan kişinin, nezarethaneye konmadan önce yapılan üst aramasında",
+      "B": "Kolluk tarafından doğrudan yakalanan kişinin kaba üst aramasında",
+      "C": "Şüphelinin, suç delillerinin elde edilmesi amacıyla konutunda yapılacak aramada",
+      "D": "Hakkında zorla getirme kararı bulunan kişinin yakalanması amacıyla aracında yapılacak aramada",
+      "E": "Suçüstü hâlinde yapılacak aramada"
+    },
+    "dogru": "C",
+    "aciklama": "Karara ya da yazılı emre dayanma kuralının istisnaları 8 inci maddede tek tek sayılmıştır: hakkında tutuklama kararı, yakalama emri veya zorla getirme kararı bulunan kişinin yakalanması amacıyla üstünde, konutunda, iş yerinde, yerleşim yerinde, eklentilerinde ve ARACINDA yapılacak aramada; yakalanan kişinin kendisine, başkalarına veya görevlilere zarar vermesini önlemeye yönelik KABA ÜST aramasında; gözaltına alınanın nezarethaneye konmadan önceki üst aramasında ve SUÇÜSTÜ hâlinde yapılan aramalarda ayrıca bir emir ya da karar aranmaz. Bu istisnaların ortak özelliği, aramanın delil araştırması değil YAKALAMA veya GÜVENLİK amacı taşımasıdır. C şıkkındaki hâl ise tam tersidir: amaç suç delillerinin elde edilmesidir ve arama kişinin özel hayatının çekirdeğini oluşturan kapalı bir alanda yapılacaktır; böyle bir arama ancak yetkili merciin kararına ya da yazılı emrine dayanabilir. Adayın en sık düştüğü yer, yakalama amacıyla konuta girmeyi delil arama amacıyla konuta girmekle eşitlemektir; birincisi 8 inci maddenin kapsamındadır, ikincisi değildir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 8",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "arama-p1-02",
+    "articleNo": "30",
+    "kok": "Hâkim kararına dayanılarak bir konutta arama yapılacaktır. Kolluk memurları gerekli güvenlik önlemlerini alarak kapıyı çalmış, arama kararını göstermiş ve bilgilendirme yapmış; buna rağmen kapı açılmamıştır. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bundan sonra nasıl hareket edilir?",
+    "siklar": {
+      "A": "Cumhuriyet savcısından ayrıca yazılı emir istenerek işleme devam edilir.",
+      "B": "Güç kullanılacağı ihtar edilir; kapı yine açılmazsa zorla girilerek arama yapılır.",
+      "C": "Aramadan vazgeçilerek durum, arama kararını veren hâkime bildirilir.",
+      "D": "Konutun zilyedine ulaşılıncaya kadar konuta giriş yapılmaz.",
+      "E": "Kolluk âmirinin sözlü emri alınarak kapı çilingir marifetiyle açtırılır."
+    },
+    "dogru": "B",
+    "aciklama": "Kapalı yerlerde aramanın icrası, 30 uncu maddede kademeli bir düzen olarak kurulmuştur: kolluk önce gerekli güvenlik önlemlerini alarak KAPIYI ÇALAR, mümkünse o yere girme izni verme yetkisine sahip kişilerle iletişim kurmaya çalışır ve arama kararını gösterir. Bilgilendirme yapıldıktan sonra kapı açılmazsa süreç kendiliğinden sona ermez; maddenin sözüyle GÜÇ KULLANILACAĞI İHTAR EDİLİR ve buna rağmen kapı açılmazsa zorla girilerek arama gerçekleştirilir. Aynı maddede aramaya karşı çıkılması hâlinde de durumun haklı kıldığı ölçüde güç kullanılarak direncin ortadan kaldırılabileceği, gücün KADEMELİ olarak artırılacağı belirtilmiştir. Bu nedenle ne yeni bir yazılı emir istenmesi ne de aramadan vazgeçilmesi söz konusudur: hâkim kararı zaten aramaya izin veren belgedir ve icra aşaması için ikinci bir merci onayı öngörülmemiştir. Adayın karıştırdığı nokta, kapının açılmamasını yeni bir yetki sorunu gibi okumaktır; oysa burada eksik olan bir yetki değil, kapının fiilen açılmasıdır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 30",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "arama-p1-03",
+    "articleNo": "5",
+    "kok": "I. Adlî arama, bir suça iştirak ettiği yönünde makul şüphe bulunan kimse hakkında da yapılabilir.\nII. Adlî aramada kişinin özel kâğıtları arama konusu yapılamaz.\nIII. Saklanan kimsenin yakalanması amacıyla yapılan araştırma işlemi de adlî arama sayılır.\nAdlî ve Önleme Aramaları Yönetmeliği’ne göre “adlî arama ve kapsamı” ile ilgili numaralanmış yargılar doğru (D) / yanlış (Y) olarak değerlendirildiğinde sıralama aşağıdakilerden hangisidir? (I-II-III)",
+    "siklar": {
+      "A": "D D D",
+      "B": "D Y D",
+      "C": "Y D D",
+      "D": "D D Y",
+      "E": "Y D Y"
+    },
+    "dogru": "B",
+    "aciklama": "Adlî aramanın 5 inci maddedeki tanımı üç unsuru bir arada taşır. Birincisi kişi bakımından kapsamdır: bir suç işlemek veya buna İŞTİRAK veyahut YATAKLIK etmek makul şüphesi altında bulunan kimse, SAKLANAN, şüpheli, sanık veya hükümlü. İkincisi amaçtır: bu kişilerin yakalanması ya da suçun iz, eser, emare veya delillerinin elde edilmesi. Üçüncüsü ise aramanın yöneleceği yer ve şeylerdir: konut, iş yeri, kişiye ait diğer yerler, kişinin üzeri, ÖZEL KÂĞITLARI, eşyası ve aracı. I numaralı yargı iştirak şüphesini, III numaralı yargı ise saklanan kimsenin yakalanması amacını karşılar; ikisi de tanımın içinde açıkça yer alır. II numaralı yargı ise kapsamı haksız yere daraltmaktadır: özel kâğıtlar, adlî aramanın konusu olabilecek şeyler arasında sayılmıştır. Özel kâğıtlar bakımından ayrı bir sınırlama bulunduğu doğrudur, ancak bu sınırlama aramanın hiç yapılamayacağı anlamına gelmez; kâğıtların okunması ve incelenmesi başka bir maddede ayrı bir rejime bağlanmıştır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 5",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "arama-p1-04",
+    "articleNo": "6",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre “makul şüphe” ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Makul şüphe, hayatın akışına göre somut olaylar karşısında genellikle duyulan şüphedir.",
+      "B": "Makul şüphede, ihbar veya şikâyeti destekleyen emarelerin var olması gerekir.",
+      "C": "Makul şüphe belirlenirken aramanın yapılacağı zaman ve yer göz önünde tutulur.",
+      "D": "Arama sonunda belirli bir şeyin bulunacağını öngörmeyi gerektiren somut olgular mevcut bulunmalıdır.",
+      "E": "Kolluk memurunun taşındığından şüphe ettiği eşyanın niteliği, makul şüphenin belirlenmesinde dikkate alınmaz."
+    },
+    "dogru": "E",
+    "aciklama": "Makul şüphe, 6 ncı maddede “hayatın akışına göre somut olaylar karşısında GENELLİKLE DUYULAN şüphe” olarak tanımlanır; maddenin devamı ise bu şüphenin nasıl belirleneceğini gösterir. Belirlemede aramanın yapılacağı ZAMAN ve YER, ilgili kişinin veya onunla birlikte olanların davranış, tutum ve biçimleri ile KOLLUK MEMURUNUN TAŞINDIĞINDAN ŞÜPHE ETTİĞİ EŞYANIN NİTELİĞİ gibi sebepler birlikte göz önünde tutulur. Ayrıca ihbar veya şikâyeti destekleyen emarelerin bulunması, şüphenin somut olgulara dayanması ve arama sonunda belirli bir şeyin bulunacağını ya da belirli bir kişinin yakalanacağını öngörmeyi gerektiren somut olguların mevcut olması aranır. Bu nedenle E şıkkı maddenin sözüne doğrudan aykırıdır: eşyanın niteliği dışlanan değil, sayılan ölçütlerden biridir. Sorunun ayırt edici yanı, makul şüphenin SOMUTLUK şartı ile ölçütlerin sayımını birbirine karıştırmamaktır; somutluk şüphenin niteliğine, sayım ise nelere bakılacağına ilişkindir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 6",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-05",
+    "articleNo": "9",
+    "kok": "Bir parkta işlenen yaralama olayının ardından olay yerine gelen kolluk görevlileri, herkesin girip çıkabildiği bu alanda sebep ve sonuç ilişkisini ortaya koyacak delillerin bulunması için bilimsel ve teknik araştırma işlemleri yapmak istemektedir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu işlemler bakımından aşağıdaki ifadelerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İşlemlerin yapılabilmesi sulh ceza hâkiminin kararına bağlıdır.",
+      "B": "İşlemlerin yapılabilmesi için Cumhuriyet savcısının yazılı emri gerekir.",
+      "C": "İşlemlerin yapılabilmesi için kolluk âmirinin yazılı emri gerekir.",
+      "D": "İşlemlerin yapılabilmesi için ayrıca bir emir veya karar gerekmez.",
+      "E": "İşlemlerin yapılabilmesi için mülkî âmirin yazılı emri gerekir."
+    },
+    "dogru": "D",
+    "aciklama": "Olay yeri inceleme, 9 uncu maddede aramadan ayrı bir işlem olarak düzenlenmiştir. Suç işlenen yerlerde sebep ve sonuç ilişkisini ortaya koyacak delillerin aranması, bulunması ve el konulması için geliştirilmiş BİLİMSEL VE TEKNİK araştırma işlemlerinin, HERKESİN GİRİP ÇIKABİLECEĞİ KAMUYA AÇIK ALANLARDA yapılması için bir emir veya karar gerekmez. Belirleyici olan işlemin adı değil, YAPILDIĞI YERİN NİTELİĞİDİR: park, meydan, cadde gibi kamuya açık bir alanda korunan bir mahremiyet alanına girilmediğinden ayrıca bir yetki belgesi aranmaz. Maddenin ikinci fıkrası ise bu alanların DIŞINDA kalan olay yeri inceleme işlemlerini yetki rejimine bağlar; dolayısıyla soruda yerin herkesin girip çıkabildiği bir yer olduğunun belirtilmesi, çözümü doğrudan birinci fıkraya kilitler. Adayın en sık yaptığı hata, olay yeri incelemesini niteliğine bakmaksızın adlî arama sayıp her durumda bir karar aramaktır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 9/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "arama-p1-06",
+    "articleNo": "12",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, adlî arama sonunda hakkında arama işlemi uygulanan kişiye talebi hâlinde verilecek belgede aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Aramada el konulan veya koruma altına alınan eşyanın listesi",
+      "B": "Aramada şüpheyi haklı kılan bir şey elde edilmemişse bu husus",
+      "C": "Arama kararının veya yazılı emrin tarih ve sayısı",
+      "D": "İlgilinin, el konulan eşyanın mülkiyetine ilişkin görüş ve iddiaları",
+      "E": "Soruşturma veya kovuşturma konusu fiilin niteliği"
+    },
+    "dogru": "C",
+    "aciklama": "Hakkında arama işlemi uygulanan kişiye TALEBİ HÂLİNDE verilecek belgenin içeriği 12 nci maddede sayılmıştır: aramanın hangi sebebe dayandığı, soruşturma veya kovuşturma konusu FİİLİN NİTELİĞİ, el konulan veya koruma altına alınan eşyanın LİSTESİ, şüpheyi haklı kılan bir şey elde edilmemişse bu husus ve ilgilinin el konulan eşyanın MÜLKİYETİNE ilişkin görüş ve iddiaları. Bu belge, kişinin kendi hukukî durumunu ve malvarlığı üzerindeki sonuçları öğrenmesine hizmet eder; bu yüzden içeriği kişiye dönüktür. Arama kararının veya yazılı emrin tarih ve sayısı ise bu sayımda yer almaz; o bilgi, işlemin idarî kaydını tutan başka belgelerin unsurudur. Sorunun ayırt edici noktası, ilgiliye verilen bu belgeyi kolluğun kendi düzenlediği kayıt ve tutanaklarla aynı şey sanmamaktır: ikisi farklı amaca hizmet eder ve içerikleri birebir örtüşmez. Maddenin ikinci fıkrasına göre ayrıca el konulan veya koruma altına alınan eşyanın tam bir listesi yapılarak resmî mühürle mühürlenir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 12",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-07",
+    "articleNo": "14",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre askerî mahallerde yapılacak arama nasıl yerine getirilir?",
+    "siklar": {
+      "A": "Askerî savcının talebi üzerine kolluk tarafından",
+      "B": "Cumhuriyet savcısının talep ve katılımı ile askerî makamlar tarafından",
+      "C": "Mülkî âmirin yazılı emri üzerine askerî makamlar tarafından",
+      "D": "Cumhuriyet savcısının denetiminde kolluk tarafından",
+      "E": "Hâkim kararı üzerine kolluk âmirinin denetiminde askerî personel tarafından"
+    },
+    "dogru": "B",
+    "aciklama": "Askerî mahallerde arama, 14 üncü maddede tek cümlelik bir özel rejime bağlanmıştır: bu arama, CUMHURİYET SAVCISININ TALEBİ VE KATILIMI ile ASKERÎ MAKAMLAR tarafından yerine getirilir. Hükmün iki ayağı vardır ve ikisi birlikte aranır; savcı hem işlemi talep eden hem de fiilen hazır bulunan makamdır, icra ise askerî makamlara bırakılmıştır. Bu düzenleme, askerî mahallin özel güvenlik rejimi ile soruşturmanın Cumhuriyet savcısı tarafından yürütülmesi ilkesini uzlaştırır. Adayın en sık düştüğü yanılgı, savcının “talep ve katılımı” ölçütünü başka bir maddede geçen “denetim” ölçütüyle karıştırıp aramayı kolluğa yaptırmaktır; askerî mahalde arama işlemini kolluk icra etmez.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 14",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-08",
+    "articleNo": "18",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’nde, şartları oluştuğunda kolluk tarafından kendiliğinden yapılabileceği AÇIKÇA SAYILAN denetim hâlleri arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Suç işlenmesini önlemek için kişilerden kimlik sorma",
+      "B": "Hudut kapılarından giriş çıkış yapanların pasaport denetimleri",
+      "C": "Gürültü yapanların men edilmesi",
+      "D": "İnternet kafelerin genel güvenlik ve asayiş yönünden denetimi",
+      "E": "Umuma açık eğlence yerlerinde bulunan kişilerin üstlerinin aranması"
+    },
+    "dogru": "E",
+    "aciklama": "Denetim ile arama arasındaki sınır 18 inci maddede çizilir. Madde, kolluğun ŞARTLARI OLUŞTUĞUNDA KENDİLİĞİNDEN yapabileceği işlemleri sayar; buradaki işlemler arama değil DENETİMDİR ve bu yüzden ayrıca bir karar veya yazılı emre bağlanmamıştır. Sayılanlar arasında umuma açık istirahat ve eğlence yerlerinin genel güvenlik ve asayiş yönünden denetimi, internet kafeler ve benzeri yerlerin denetimi, suç işlenmesini önlemek için KİMLİK SORMA, gürültü yapanların men edilmesi, motorlu araç ve sürücü belgelerinin denetimi, su üstü ve deniz araçlarının belgelerinin denetimi ile hudut kapılarında PASAPORT DENETİMİ bulunur. Buna karşılık bir yerde bulunan kişilerin ÜSTLERİNİN ARANMASI bu sayımda yer almaz; üst araması, kendi yetki rejimine tâbi bir arama işlemidir. Sorunun ayırt edici çizgisi tam buradadır: denetim, yerin işletilmesine ve belgelere yönelen bir kontroldür; işlem kişinin üstüne yöneldiğinde nitelik değiştirir ve artık kendiliğinden yapılabilecek bir denetim sayılmaz.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 18",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-09",
+    "articleNo": "24",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, önleme aramasının konusu ve kapsamı içinde olan, ancak suç unsuru oluşturmayan eşya hakkında ne yapılır?",
+    "siklar": {
+      "A": "Geçici olarak koruma altına alınır, arama sebebi sona erdiğinde ilgiliye teslim edilir.",
+      "B": "El konularak müsadere edilmek üzere kolluk biriminde muhafaza edilir.",
+      "C": "Resmî mühürle mühürlenerek görevli hâkimin onayına sunulur ve sonucuna göre işlem yapılır.",
+      "D": "Tutanağa geçirilmek suretiyle olay yerinde derhâl ilgilisine iade edilir.",
+      "E": "Zilyedinin rızası alınarak kolluk biriminde süresiz olarak muhafaza edilir."
+    },
+    "dogru": "A",
+    "aciklama": "Önleme aramasında ele geçen ama SUÇ UNSURU OLUŞTURMAYAN eşyanın âkıbeti, 24 üncü maddenin ikinci fıkrasında düzenlenmiştir. Böyle bir eşya, aramanın konusu ve kapsamı içinde olmak kaydıyla GEÇİCİ OLARAK KORUMA ALTINA ALINIR; aramaya sebep teşkil eden husus SONA ERDİĞİNDE ilgiliye teslim edilir. Hükmün mantığı önleme aramasının amacından çıkar: burada bir suç soruşturması yürütülmemekte, bir tehlike bertaraf edilmektedir; tehlike geçtiğinde eşyanın kişide bulunmasına engel bir sebep kalmaz. Bu yüzden koruma altına alma burada SÜRELİ ve GEÇİCİ bir tedbirdir, kalıcı bir mahrumiyet değildir. Adayın karıştırdığı kurum el koymadır: el koyma, suçun delili olabileceği veya müsadereye tâbi olduğu için bir eşya üzerinde zilyedin tasarruf yetkisinin RIZASI OLMAKSIZIN kaldırılmasıdır. Suç unsuru taşımayan bir eşyada el koymanın dayanağı yoktur; eşyanın olay yerinde hemen iade edilmesi de doğru değildir, çünkü aramaya sebep olan husus henüz sona ermemiştir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 24/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-10",
+    "articleNo": "25",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, 2935 sayılı Olağanüstü Hâl Kanunu kapsamında kişilerin üstünün ve eşyalarının aranması, ayrıca bir arama emri ya da kararı alınmaksızın aşağıdakilerden hangisinin emriyle yapılır?",
+    "siklar": {
+      "A": "İçişleri Bakanı",
+      "B": "Sıkıyönetim komutanı",
+      "C": "Olağanüstü Hâl Valisi",
+      "D": "Sulh ceza hâkimi",
+      "E": "Mülkî âmir"
+    },
+    "dogru": "C",
+    "aciklama": "Önleme aramasında ayrıca bir arama emri ya da kararı gerekmeyen hâller 25 inci maddede sayılmış, her bent kendi özel kanununa bağlanmıştır. İlgili bende göre 2935 sayılı Olağanüstü Hâl Kanununun 11 inci maddesi kapsamında kişilerin üstünün ve eşyalarının aranması OLAĞANÜSTÜ HÂL VALİSİNİN EMRİYLE yapılır. Hemen ardından gelen bent ise 1402 sayılı Sıkıyönetim Kanunu kapsamındaki aramaları SIKIYÖNETİM KOMUTANININ emrine bağlar. İki bent maddede yan yana durduğu için sınavda en çok bu ikisi karıştırılır; ayrım, olayda hangi olağanüstü yönetim usulünün uygulandığına bakılarak yapılır. Buradaki yetkinin özelliği, olağan dönemde önleme aramasının bağlı olduğu yetki rejiminden AYRI bir rejim oluşturmasıdır: 25 inci maddedeki bentler, ancak kendi kanunlarının uygulanma şartları gerçekleştiğinde devreye girer.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 25/1-c",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-11",
+    "articleNo": "25",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, aşağıdaki hâllerin hangisinde önleme araması yapılabilmesi için ayrıca bir arama emri ya da kararı gerekir?",
+    "siklar": {
+      "A": "Devletçe kamu hizmetine özgülenmiş binalara girenlerin üstlerinin aranmasında",
+      "B": "Sivil hava meydanlarında giren çıkan yolcuların üstünün ve eşyasının aranmasında",
+      "C": "Kanunların muhafaza altına alınmalarına olanak verdiği kişilerin üstlerinin aranmasında",
+      "D": "Bir sendikanın genel kurul toplantısının yapıldığı yerin yakın çevresinde üst aramasında",
+      "E": "Seçim mevzuatındaki silâh taşıma yasağı kapsamında şüphelenilen kişilerin üstlerinin aranmasında"
+    },
+    "dogru": "D",
+    "aciklama": "Hâkimden karar alınmasını gerektirmeyen önleme aramaları 25 inci maddede sınırlı olarak sayılmıştır. Bu sayımda; girişi ve çıkışı belirli kurallara tâbi tutulan, devletçe kamu hizmetine özgülenmiş bina ve tesislere girenlerin aranması, sivil hava meydanları, limanlar ve sınır kapılarında yolcuların X-ray cihazından geçirilerek gerektiğinde üstünün ve eşyasının aranması, kanunların MUHAFAZA ALTINA ALINMALARINA olanak verdiği kişilerin aranması ve seçim mevzuatındaki SİLÂH TAŞIMA YASAĞI kapsamında şüphelenilen kişilerin aranması yer alır. Bu hâllerin ortak yanı, aramanın ya bir tesise giriş rejiminden ya da özel bir kanunun kendi yetkisinden doğmasıdır. D şıkkındaki hâl ise bu listeye girmez: orası önleme aramasının YAPILABİLECEĞİ YERLER arasında sayılan bir yerdir, dolayısıyla aramanın genel yetki rejimine tâbidir ve usulüne uygun bir karara ya da yazılı emre dayanması gerekir. Adayın karıştırdığı nokta, bir yerde önleme aramasının yapılabilir olması ile o aramanın karar aranmaksızın yapılabilmesini aynı şey sanmaktır; birincisi yer sorunudur, ikincisi yetki sorunu.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 25/1",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "arama-p1-12",
+    "articleNo": "25",
+    "kok": "Umuma açık olmayan özel bir işletmenin girişinde, içeri girmek isteyenler üzerinde özel güvenlik görevlilerince kontrol yapılmak istenmiş; bir kişi kontrol edilmeyi kabul etmemiştir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kontrol, kolluk görevlilerince orantılı güç kullanılarak tamamlanır.",
+      "B": "Kişinin kimliği tespit edildikten sonra içeri girmesine izin verilir.",
+      "C": "Kontrolün yapılabilmesi için mülkî âmirden yazılı emir alınması gerekir.",
+      "D": "Kişi hakkında tutanak düzenlenerek durum Cumhuriyet başsavcılığına bildirilir.",
+      "E": "Kontrol edilmeyi kabul etmeyen kişi, bu gibi yerlere hiçbir surette giremez."
+    },
+    "dogru": "E",
+    "aciklama": "Umuma açık olan ya da olmayan özel işletmelerin, kurumların veya teşebbüslerin GİRİŞİNDEKİ kontroller, 25 inci maddenin ikinci fıkrasında kamusal bir arama yetkisi olarak değil, girişin şartı olarak kurulmuştur. Bu kontroller, buralara girmek isteyen kimselerin RIZASINA bağlıdır; kontrol edilmeyi kabul etmeyenler ise bu gibi yerlere giremezler. Yani rıza gösterilmemesi hâlinde ortaya çıkan sonuç bir zorlama değil, bir GİRİŞ ENGELİDİR: kimse kontrole zorlanamaz, ama kimse kontrolden kaçınarak da içeri giremez. Maddeye göre bu yerlerde kontrol esasta ÖZEL GÜVENLİK GÖREVLİLERİ tarafından yerine getirilir; ancak yerin ve katılanların taşıyabilecekleri özel niteliklere göre önleme araması kolluk güçlerince de yapılabilir. Adayın en sık düştüğü hata, girişteki rızaya dayalı kontrolü kamusal yetkiye dayanan önleme aramasıyla eşitleyip yazılı emir aramak ya da rıza vermeyen kişi hakkında adlî bir işlem başlatılacağını düşünmektir; oysa rıza vermemek başlı başına hukuka aykırı bir davranış değildir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 25/2",
+    "zorluk": "easy",
+    "tur": "vaka"
+  },
+  {
+    "id": "arama-p1-13",
+    "articleNo": "26",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre önleme araması tutanağı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Suç unsuruna rastlandığında tutanak, adlî arama tutanağındaki unsurları içerir.",
+      "B": "Tutanak, arama işlemine katılan kolluk görevlilerinin imzasıyla tamamlanmış sayılır.",
+      "C": "Tutanağın bir sureti ilgiliye ancak talebi hâlinde verilir.",
+      "D": "Suç unsuruna rastlanmadığı durumlarda ilgiliye kendiliğinden bir belge verilir.",
+      "E": "Tutanak, arama emrini veren mülkî âmir tarafından onaylanır."
+    },
+    "dogru": "A",
+    "aciklama": "Önleme araması, belgelendirme bakımından 26 ncı maddede ikiye ayrılır. Arama sırasında SUÇ UNSURUNA RASTLANDIĞINDA işlem tutanağa bağlanır ve bu tutanak, adlî arama tutanağı için öngörülen unsurları içerir; yani belgelendirme adlî rejimin standardına oturur. Tutanak, arama işlemine KATILMIŞ OLANLAR ve HAZIR BULUNANLARCA imzalanır — imza çevresi yalnızca görevlilerle sınırlı değildir — ve tutanağın bir sureti ilgiliye verilir; bunun için ayrıca talepte bulunulması gerekmez. Suç unsuruna rastlanmadığı durumlarda ise tutanak düzenlenmesi öngörülmemiştir; bu hâlde aranan kişiye ancak TALEBİ HÂLİNDE, arama kararı veya emrinin tarih ve sayısı ile aramanın tarih, saat ve yerini, aranan şahsın ve arayan görevlinin kimlik bilgilerini gösteren bir belge verilir. Adayın karıştırdığı eksen budur: suç unsuru bulunduğunda belge kendiliğinden, bulunmadığında ise talep üzerine verilir. Ayrıca maddede tutanağın herhangi bir idarî makamın onayına bağlandığına dair bir hüküm yoktur.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 26",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-14",
+    "articleNo": "27",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, kolluğun durdurma yetkisini kullanabilmesi için şüphenin hangi derecede bulunması gerekir?",
+    "siklar": {
+      "A": "Basit şüphe",
+      "B": "Yeterli şüphe",
+      "C": "“Umma” derecesinde makul şüphe",
+      "D": "Kuvvetli suç şüphesi",
+      "E": "Delillerle doğrulanmış kesin şüphe"
+    },
+    "dogru": "C",
+    "aciklama": "Kolluğun durdurma yetkisi 27 nci maddede dört amaca bağlanmıştır: bir suç veya kabahatin işlenmesini önlemek, kaçan faillerin yakalanmasını sağlamak ve faillerin kimliklerini tespit etmek, hakkında yakalama emri ya da zorla getirme kararı verilmiş kişileri tespit etmek veya kişilerin hayatı, vücut bütünlüğü ya da malvarlığı bakımından mevcut veya muhtemel bir tehlikeyi önlemek amaçlarıyla tanır. Bu yetkinin kullanılabilmesi için maddede aranan eşik “UMMA” DERECESİNDE MAKUL ŞÜPHEDİR. Madde bu eşiği iki yönden pekiştirir: somut emarelerle desteklenen şüphe bulunmadan, süreklilik arz edecek, fiilî durum ve keyfilik oluşturacak şekilde durdurma işlemi yapılamaz; ayrıca kolluğun tecrübesine ve içinde bulunulan durumdan edindiği izlenime dayanarak, kişinin bir suç işleyeceği veya işlediği ya da silâhlı olduğu ve hâlen tehlike yarattığı konusunda makul bir sebebin bulunması gerekir. Adayın sık yaptığı hata, durdurma için tutuklamada aranan “kuvvetli suç şüphesi” gibi ağır bir eşik aramaktır; durdurma bir koruma tedbiri değil, kısa süreli bir kontrol işlemidir ve eşiği daha düşüktür.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 27/2",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-15",
+    "articleNo": "27",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, usulüne uygun olarak durdurulan ve kendisine durdurma sebebi bildirilerek sorular yöneltilen kişinin cevap verme yükümlülüğü bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Şüpheye yol açan davranışlarına ilişkin sorulara da cevap vermekle yükümlüdür.",
+      "B": "Cevap vermediği takdirde hakkında yoklama biçiminde kontrol yapılır.",
+      "C": "Cevap vermemesi, durdurma süresinin kontrol için ayrılan süreyi aşmasını haklı kılar.",
+      "D": "Kimliğine ilişkin olanlar hariç, soruların hiçbirine cevap vermekle yükümlü değildir.",
+      "E": "Cevap vermediği sürece bulunduğu yerden ayrılmasına izin verilmez."
+    },
+    "dogru": "D",
+    "aciklama": "Durdurulan kişinin yükümlülüğü 27 nci maddede açık bir sınırla çizilmiştir. Kolluk, görevini yerine getirirken önce kendisinin kolluk görevlisi olduğunu belirleyen BELGEYİ GÖSTERİR, sonra durdurduğu kişiye DURDURMA SEBEBİNİ BİLDİRİR; şüpheye yol açan davranışlara ve durdurma sebebine ilişkin sorular sorabilir, kimliğin veya bulundurulması gerekli diğer belgelerin ibraz edilmesini isteyebilir. Ancak maddenin aynı fıkrası kişinin yükümlülüğünü açık bir sınırla çizer: kişi, KİMLİĞİNE İLİŞKİN OLANLAR HARİÇ, sorulan sorulara cevap vermekle yükümlü değildir. Yani kimlik bildirimi bir yükümlülük, diğer sorulara cevap ise bir tercihtir. Maddenin devamı da bu yorumu destekler: durdurma sebebini oluşturan şüphe, yapılan açıklamayla veya herhangi bir şekilde ortadan kalkarsa kişilerin gitmesine ve araçların ayrılmasına izin verilir; ayrıca durdurma süresi, durdurma sebebine esas teşkil eden işlemin gerçekleştirilmesi için zorunlu olan süreden fazla olamaz. Bu nedenle cevap verilmemesi ne süreyi uzatmanın ne de kişiyi bekletmenin gerekçesi yapılabilir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 27/5",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-16",
+    "articleNo": "27",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, durdurma üzerine yapılan yoklama biçimindeki kontrol ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kontrol, kişinin üst giysilerinden biri çıkarttırılmak suretiyle yapılır.",
+      "B": "Kontrol, kişinin cinsiyetinden bağımsız olarak görevli tarafından yapılır.",
+      "C": "Kontrol neticesinde suça ilişkin iz, eser ve delil elde edilse dahi kişi yakalanamaz.",
+      "D": "Kontrolden sonra, talep olmasa dahi olay yerinde derhâl bir tutanak düzenlenir.",
+      "E": "Belirli bir şeyin gizlendiği düşünülüyorsa daha geniş çaplı kontrol yapılabilir."
+    },
+    "dogru": "E",
+    "aciklama": "Durdurma üzerine yapılacak işlemler 27 nci maddede bentler hâlinde sayılmıştır. Kontrol, kişi üzerinde GİYSİLERİNDEN HERHANGİ BİRİSİ ÇIKARILMAKSIZIN, yoklama biçiminde yapılır; bu işlem sonucunda kişide silâh bulunduğu sonucunu çıkarmaya yeterli şüphe meydana gelirse memur kendiliğinden silâh ve diğer suç eşyası araması yapabilir. Yoklama suretiyle kontrol, KİŞİNİN CİNSİYETİNDE BULUNAN görevli tarafından ve kişiye en az sıkıntı verici şekilde yapılır; kontrolün konusu ve sebepleri ilgiliye açıklanır. Uyuşturucu gibi BELİRLİ BİR ŞEYİN kişinin herhangi bir yerinde gizlendiği düşünülüyorsa, daha geniş çaplı kontrol yapılabilir; makul sebep oluştuğunda daha geniş kapsamlı kontrol için kolluk aracından veya yakındaki kapalı bir yerden yararlanılabilir. Kontrol neticesinde suça ilişkin iz, eser, emare ve delil elde edilirse kişi yakalanır. Tutanak ise ancak TALEP ÜZERİNE olay yerinde derhâl düzenlenir; talep yoksa tutanak zorunluluğu doğmaz. Bu son ayrıntı, kontrolün arama gibi kendiliğinden belgelendirilen bir işlem sanılması yüzünden en çok yanlış işaretlenen noktadır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 27/7",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-17",
+    "articleNo": "27",
+    "kok": "Kolluk görevlileri, durdurdukları bir araçta silâh bulunduğu hususunda yeterli şüphe duymakta ve aracın dışarıdan bakıldığında içerisi görünmeyen bölümlerini aramak istemektedir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu arama için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "Sulh ceza hâkiminin kararı",
+      "B": "Mülkî âmirin görevlendireceği kolluk âmirinin yazılı emri",
+      "C": "Cumhuriyet savcısının yazılı emri",
+      "D": "Mülkî âmirin doğrudan kendisi tarafından verilecek yazılı arama emri",
+      "E": "Araç sürücüsünün yazılı rızası"
+    },
+    "dogru": "B",
+    "aciklama": "Tedbir alma yetkisi ile arama, 27 nci maddede birbirinden özenle ayrılmıştır. Kolluk, durdurduğu kişi üzerinde veya aracında silâh ya da tehlike oluşturan başka bir eşya bulunduğu hususunda YETERLİ ŞÜPHENİN varlığı hâlinde zarar verilmesini önlemeye yönelik tedbirleri alabilir; ancak bu amaçla kişinin üzerindeki elbisenin çıkarılması veya aracın DIŞARIDAN BAKILDIĞINDA İÇERİSİ GÖRÜNMEYEN bölümlerinin açılması istenemez. EL İLE DIŞTAN KONTROL hariç, kişinin üstünün ve eşyasının ya da aracın bu bölümlerinin ARANMASI ise ayrı bir yetkiye bağlanmıştır: İçişleri Bakanlığı tarafından belirlenecek esaslar dâhilinde MÜLKÎ ÂMİRİN GÖREVLENDİRECEĞİ KOLLUK ÂMİRİNİN yazılı emriyle, acele hâllerde ise sonradan yazıyla teyit edilmek üzere sözlü emriyle yapılabilir. Bu emirde aramanın sebebi, konusu ve kapsamı, yapılacağı yer, tarih ve emrin geçerlilik süresi ile aranacak kişinin açık kimliği ve aracın plaka, marka ve modeli açıkça gösterilir. Adayın en sık yanıldığı yer, yetkiyi doğrudan mülkî âmire ya da savcıya bağlamaktır; oysa emri veren makam mülkî âmirin GÖREVLENDİRDİĞİ kolluk âmiridir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 27/8",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "arama-p1-18",
+    "articleNo": "30",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, arama amacıyla kapalı yerlere ve eklentilerine, o yere girme izni verme yetkisine sahip kişilerle iletişim kurulmadan girilebilecek hâller arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Arama yapılacak yerin konut veya yerleşim yeri olarak kullanılmadığının bilinmesi",
+      "B": "Arama esnasında bu yerlerde kimsenin olmadığının anlaşılması",
+      "C": "Önceden bilgilendirmenin delil karartmasına yol açarak aramanın amacını tehlikeye sokacak olması",
+      "D": "Aramanın gece yapılacak olması",
+      "E": "Önceden bilgilendirmenin kolluk memurlarını veya diğer bireyleri tehlikeye düşürebilecek olması"
+    },
+    "dogru": "D",
+    "aciklama": "Kapalı yerlere girişte asıl kural iletişimdir: hâkim kararı veya kanunla yetkili kılınmış merciin yazılı emriyle yapılan aramalarda ya da karar alınmasını gerektirmeyen işlemlerde, MÜMKÜNSE o yere girme izni verme yetkisine sahip kişilerle iletişim kurulmasına çalışılır ve kolaylık gösterilmesi istenir. Bu kuralın istisnaları maddede üç bent hâlinde sayılmıştır: arama yapılacak yerin konut veya yerleşim yeri olarak KULLANILMADIĞININ BİLİNMESİ, arama esnasında o yerlerde KİMSENİN OLMADIĞININ anlaşılması ve önceden bilgilendirmenin DELİL KARARTMASINA yol açarak aramanın amacını tehlikeye sokacak ya da kolluk memurlarını veya diğer bireyleri TEHLİKEYE DÜŞÜREBİLECEK olması. Üçünün de ortak mantığı, iletişimin ya anlamsız ya da aramanın amacını boşa çıkaracak olmasıdır. Aramanın gece yapılacak olması ise bu bentlerde yer almaz; gece yapılan arama başka bir maddede kendi şartlarına bağlanmıştır ve bu şartların gerçekleşmesi, iletişim kurma yükümlülüğünü kendiliğinden ortadan kaldırmaz. Ayrıca gecikmesinde sakınca veya tehlike bulunması hâlinde bilgilendirme içeri girildikten SONRA da yapılabilir; yani kural büsbütün ortadan kalkmaz, sadece zamanı değişir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 30/4",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-19",
+    "articleNo": "30",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, aranacak yerin sahibi veya eşyanın zilyedi aramada hazır bulunmadığı takdirde, onun yerine hazır bulundurulacak kişiler arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Temsilcisi",
+      "B": "Ayırt etme gücüne sahip hısımlarından biri",
+      "C": "Kendisiyle birlikte oturmakta olan bir kişi",
+      "D": "Komşusu",
+      "E": "O yerin muhtarı veya ihtiyar heyetinden bir üye"
+    },
+    "dogru": "E",
+    "aciklama": "Aramada hazır bulundurulacaklara ilişkin bent, önce aslî kişiyi belirler: aranacak yerlerin SAHİBİ veya eşyanın ZİLYEDİ aramada hazır bulunabilir. Bu kişi bulunmazsa yerine geçecek olanlar sırayla sayılmıştır — TEMSİLCİSİ, AYIRT ETME GÜCÜNE SAHİP HISIMLARINDAN BİRİ, KENDİSİYLE BİRLİKTE OTURMAKTA OLAN BİR KİŞİ veya KOMŞUSU. Sayımın mantığı, aramanın o yerle fiilen ilgisi bulunan biri önünde yapılmasını sağlamaktır; bu yüzden listedeki herkes ya yerin hukukî durumuyla ya da fiilen orada bulunmakla bağlantılıdır. Muhtar ya da ihtiyar heyeti üyesi ise maddede sayılmamıştır; bu, başka usul hükümlerinden hatırlanan ve buraya taşınan yaygın bir yanılgıdır. Aynı bentte iki ayrıntı daha vardır: şüphelinin veya sanığın yakalanması ya da suç delillerinin elde edilmesi amacıyla BAŞKA BİR KİŞİNİN yerinde arama yapılıyorsa, zilyede veya yerine çağrılacak kişiye aramaya başlamadan önce aramanın amacı hakkında bilgi verilir; ayrıca kişinin AVUKATININ aramada hazır bulunmasına engel olunamaz.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 30",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-20",
+    "articleNo": "33",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre aramalara ilişkin kayıt defteri ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Her kolluk biriminde tutulur ve bilgisayar ortamında da tutulabilir.",
+      "B": "Bu defter yalnızca il emniyet müdürlüklerinde tutulur.",
+      "C": "Deftere, hâkim kararına dayanan aramalar dışındaki aramalar kaydedilmez.",
+      "D": "Defterdeki bilgiler istatistikî çalışmalarda kullanılamaz.",
+      "E": "Defter Cumhuriyet başsavcılığınca tutulur ve kolluk birimlerine gönderilir."
+    },
+    "dogru": "A",
+    "aciklama": "Arama işlemlerinin idarî denetimi, 33 üncü maddede bir kayıt yükümlülüğüyle sağlanır: HER KOLLUK BİRİMİNDE, Yönetmelik uyarınca yapılan aramalara ilişkin KARAR, YAZILI EMİR ve diğer bilgilerin kaydedileceği bir defter tutulur. Yükümlülük belirli bir teşkilat kademesine değil, her birime yüklenmiştir ve defterin kapsamı da hâkim kararına dayanan aramalarla sınırlı değildir; yazılı emre dayanan aramalar da deftere işlenir. Madde ayrıca defterin, silinme ve muhtemel bilgi kaybı riskine karşı gerekli önlemler alınmak ve bilgiler yedeklenmek suretiyle BİLGİSAYAR ORTAMINDA DA tutulabileceğini söyler; yani elektronik kayıt yasak değil, şarta bağlı olarak serbesttir. Defterdeki bilgilerin kullanım alanı ise sınırlıdır: bu bilgiler adlî ve idarî soruşturmalar, ilgilinin taleplerinin karşılanması ve İSTATİSTİKÎ ÇALIŞMALAR dışında kullanılamaz. Dolayısıyla istatistik, yasaklanan değil, açıkça izin verilen kullanım amaçlarından biridir; adayın en sık yanıldığı nokta da budur.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 33",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-21",
+    "articleNo": "32",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, nezarethanelerde yapılacak aramalar bakımından aşağıdakilerden hangisinin hükümleri saklıdır?",
+    "siklar": {
+      "A": "5271 sayılı Ceza Muhakemesi Kanunu",
+      "B": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu",
+      "C": "5442 sayılı İl İdaresi Kanunu",
+      "D": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği",
+      "E": "5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanun"
+    },
+    "dogru": "D",
+    "aciklama": "Nezarethane, 32 nci maddede tek cümlelik bir saklı tutma hükmüyle bu Yönetmeliğin genel arama rejiminin dışına çıkarılmıştır: nezarethanelerde yapılacak aramalar için YAKALAMA, GÖZALTINA ALMA VE İFADE ALMA YÖNETMELİĞİ hükümleri saklıdır. Hükmün mantığı, nezarethanenin bir arama yeri değil bir MUHAFAZA ORTAMI olması ve buradaki işlemlerin gözaltı usulünün parçası sayılmasıdır. Adayın en sık düştüğü yanılgı, sorunun cevabını bir KANUN sanmaktır; oysa saklı tutulan düzenleme bir yönetmeliktir ve bu Yönetmelikle aynı hiyerarşik düzeydedir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 32",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-22",
+    "articleNo": "7",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, adlî aramaya ilişkin talep, karar veya emirde aşağıdakilerden hangisine açıkça yer verilir?",
+    "siklar": {
+      "A": "Arama işlemini yerine getirecek kolluk görevlilerinin sicil numaralarına",
+      "B": "Aramada hazır bulundurulacak kişilerin kimlik bilgilerine",
+      "C": "Aranılacak eşyanın elde edilmesi hâlinde el konulup konulmayacağına",
+      "D": "Aramanın yalnızca bir kez yapılabileceğine",
+      "E": "Aramaya nezaret edecek Cumhuriyet savcısının adına"
+    },
+    "dogru": "C",
+    "aciklama": "Adlî arama talep, karar veya emrinin zorunlu içeriği 7 nci maddede dört kalem hâlinde belirlenmiştir: aramanın nedenini oluşturan FİİL; aranılacak kişi, aramanın yapılacağı konut veya diğer yerin ADRESİ ya da eşya; karar veya emrin geçerli olacağı ZAMAN SÜRESİ; ve aranılacak eşyanın elde edilmesi hâlinde EL KONULUP KONULMAYACAĞI. Bu son kalem, adlî arama emrinin en ayırt edici unsurudur: arama ile el koyma ayrı işlemler olduğu için, emri veren merci aramanın sonucunda doğacak müdahaleye de baştan izin verip vermediğini göstermek zorundadır. Buna karşılık aramayı fiilen yapacak görevlilerin kimlik ve sicil bilgileri, aramada hazır bulundurulacak kişiler veya nezaret edecek makamın adı bu sayımda yer almaz; bunlar aramanın İCRASINA ilişkin hususlardır ve yetki belgesinin içeriğini oluşturmaz. Aramanın kaç kez yapılabileceği de emirde gösterilmesi zorunlu bir unsur değildir; bu husus Yönetmelikte aramanın zamanına ilişkin ayrı bir kuralla düzenlenmiştir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 7",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-23",
+    "articleNo": "10",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, usulüne uygun yapılan bir aramada, yürütülen soruşturmayla ilgisi olmakla birlikte karar veya yazılı emirde konu edilmeyen bir delil elde edilmesi hâlinde yapılacak ilk işlem nedir?",
+    "siklar": {
+      "A": "Kolluk âmirinin sözlü emriyle el konularak tutanağa bağlanır.",
+      "B": "Koruma altına alınır ve durum Cumhuriyet başsavcılığına derhâl bildirilir.",
+      "C": "Arama kararının kapsamı dışında kaldığından bulunduğu yerde bırakılır.",
+      "D": "Aramaya ara verilerek yeni bir hâkim kararı alınıncaya kadar beklenir.",
+      "E": "Zilyedinin rızası alınarak teslim alınır ve ayrı bir listesi düzenlenir."
+    },
+    "dogru": "B",
+    "aciklama": "Yetki belgesiyle çizilen sınırın dışına taşan bulgular 10 uncu maddede düzenlenmiştir. Usulüne uygun yapılan bir aramada, yapılmakta olan soruşturma veya kovuşturmayla İLGİSİ OLMAKLA BİRLİKTE karar veya yazılı emirde konu edilmeyen ya da bu soruşturmayla ilgisi olmayıp BAŞKA BİR SUÇUN işlendiği şüphesini uyandırabilecek bir delil elde edilirse; bu delil önce KORUMA ALTINA ALINIR ve durum Cumhuriyet başsavcılığına DERHÂL BİLDİRİLİR. Sıralama önemlidir: kolluk kendiliğinden el koymaz, delili kaybolmaktan kurtaracak geçici tedbiri alır ve yetkili makamı haberdar eder. El koyma işlemini gerçekleştirmek için Cumhuriyet savcısından yeni bir YAZILI EMİR istenir; savcıya ulaşılamadığı hâllerde ise kolluk âmirinin YAZILI emriyle el koyma gerçekleştirilebilir. Adayın en sık yaptığı iki hata şudur: delili yerinde bırakıp aramayı tamamlamak ya da yeni bir emir beklemeden doğrudan el koymak. Ayrıca bu tür aramada, aramanın amacı ve konusu dışında ele geçirilen ve haklarında tutuklama veya yakalama kararı bulunan kişiler evrakıyla birlikte Cumhuriyet başsavcılığına sevk edilir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 10/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-24",
+    "articleNo": "31",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, konutta, iş yerinde veya diğer kapalı yerlerde gece adlî arama yapılabilecek hâller arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Suçüstü hâlinde",
+      "B": "Gecikmesinde sakınca bulunan hâlde",
+      "C": "Firar eden tutuklunun tekrar yakalanması hâlinde",
+      "D": "Kolluk âmirinin yazılı emrinin bulunması hâlinde",
+      "E": "Geceleyin herkesin girip çıkabileceği umuma açık istirahat ve eğlence yerlerinde"
+    },
+    "dogru": "D",
+    "aciklama": "Kapalı yerler bakımından 31 inci maddede iki ayrı yasak vardır ve bu yasakların kapsamı farklıdır. Birincisi zamana ilişkindir: konutta, iş yerinde veya diğer kapalı yerlerde adlî arama gece yapılamaz. İkincisi ise yetkiye ilişkindir ve zamandan bağımsızdır: bu yerlerde KOLLUK ÂMİRİNİN YAZILI EMRİYLE DE arama yapılamaz. Maddede sayılan istisnalar yalnızca birinci yasağı, yani gece yapılamama kuralını kaldırır; SUÇÜSTÜ hâli, GECİKMESİNDE SAKINCA bulunan hâl, FİRAR eden kişinin veya tutuklu ya da hükümlünün tekrar yakalanması hâli ve geceleyin herkesin girip çıkabileceği umuma açık istirahat ve eğlence yerleri bunlardır. Kolluk âmirinin yazılı emri ise bir istisna değil, maddenin doğrudan DIŞLADIĞI bir yetkidir; bu emir gece yapılan aramayı hukuka uygun hâle getirmez. Adayın buradaki yanılgısı, gece aramasının önündeki engeli bir yetki belgesiyle aşılabilir sanmaktır; oysa iki kural üst üste konulmuş olup istisnalar yalnızca zaman kuralına ilişkindir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 31",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p1-25",
+    "articleNo": "4",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ndeki “gecikmesinde sakınca bulunan hâl” tanımında yer alan aşağıdaki unsurlardan hangisi, adlî aramalar bakımından öngörülmüştür?",
+    "siklar": {
+      "A": "Suçun iz, eser, emare ve delillerinin kaybolması ihtimâlinin ortaya çıkması",
+      "B": "Suç işlenmesinin önlenememesi ihtimâlinin ortaya çıkması",
+      "C": "Genel sağlık ve genel ahlâkın tehlikeye girmesi veya zarar görmesi",
+      "D": "Taşınması yasak olan patlayıcı maddenin tespit edilememesi ihtimâlinin ortaya çıkması",
+      "E": "Başkalarının hak ve hürriyetlerinin korunmasının tehlikeye girmesi"
+    },
+    "dogru": "A",
+    "aciklama": "Tanımlar maddesi tek bir kavramı iki ayrı ölçüte göre tarif eder; sınavda en çok bu ikilik ölçülür. ADLÎ aramalar bakımından gecikmesinde sakınca bulunan hâl; derhâl işlem yapılmadığı takdirde suçun İZ, ESER, EMARE VE DELİLLERİNİN KAYBOLMASI veya ŞÜPHELİNİN KAÇMASI ya da KİMLİĞİNİN TESPİT EDİLEMEMESİ ihtimâlinin ortaya çıkması ve gerektiğinde hâkimden karar almak için vakit bulunmaması hâlidir. ÖNLEME aramaları bakımından ise ölçüt bambaşkadır: millî güvenlik ve kamu düzeninin, genel sağlık ve genel ahlâkın veya başkalarının hak ve hürriyetlerinin korunmasının tehlikeye girmesi ya da zarar görmesi, suç işlenmesinin önlenememesi, taşınması veya bulundurulması yasak olan silâh, patlayıcı madde veya eşyanın tespit edilememesi ihtimâlinin doğması aranır. Aradaki fark, iki arama türünün amacından çıkar: adlî aramada geçmişte işlenmiş bir suçun delili ve faili söz konusudur, önleme aramasında ise henüz gerçekleşmemiş bir tehlike. Bu yüzden A dışındaki bütün şıklar tanımın gerçek unsurlarıdır, ancak diğer kolun unsurlarıdır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 4",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "arama-p1-26",
+    "articleNo": "16",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, şüpheli veya sanık ile tanıklıktan çekinebilecek kimseler arasındaki mektup ve belgeler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Cumhuriyet savcısının yazılı emriyle el konulabilir.",
+      "B": "Ambalajlanıp mühürlenerek görevli hâkimin onayına sunulur.",
+      "C": "Kolluk tarafından incelenerek suçla ilgisi olup olmadığı tespit edilir.",
+      "D": "Zilyedinin rızası bulunması hâlinde koruma altına alınır.",
+      "E": "Bu kimselerin nezdinde bulundukça hiçbir şekilde el konulamaz."
+    },
+    "dogru": "E",
+    "aciklama": "Aramada ele geçen kâğıtlar bakımından, 16 ncı maddenin son fıkrasında mutlak bir koruma alanı kurulmuştur: şüpheli veya sanık ile Ceza Muhakemesi Kanununun ilgili maddelerine göre TANIKLIKTAN ÇEKİNEBİLECEK kimseler arasındaki mektuplara ve belgelere, bu kimselerin NEZDİNDE BULUNDUKÇA el konulamaz. Hükmün iki yönü vardır. Birincisi koruma kişiye değil İLİŞKİYE bağlıdır: korunan şey, tanıklıktan çekinme hakkı tanınan yakınlık ilişkisinin gizliliğidir. İkincisi ve daha çok gözden kaçanı, korumanın BULUNDUĞU YERE bağlı olmasıdır; “nezdinde bulundukça” kaydı, aynı belge o kimselerin elinden çıktığında korumanın da sona ereceğini gösterir. Bu yüzden hüküm, bir yetkiliden izin alınarak aşılabilecek bir usul kuralı değil, doğrudan el koymayı yasaklayan bir sınırdır; savcının yazılı emri de, hâkim onayı da bu sınırı kaldırmaz. Adayın karıştırdığı komşu ayrım, aynı maddede belge ve kâğıtların incelenmesine ilişkin olarak çizilen yetki sınırıdır; incelemenin kime ait olduğu ayrı bir meseledir, el koyma yasağı ise ondan bağımsız olarak işler.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 16",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-27",
+    "articleNo": "20",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, usulüne uygun olarak verilmiş bir önleme araması kararı veya emri üzerine yetkili âmirin, aramanın yapılması için kolluk memurlarına vereceği sözlü emirler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Emir derhâl yerine getirilir; bu konudaki emirlerin yazılı olarak verilmesi istenemez.",
+      "B": "Emir, yerine getirilmeden önce arama kararını veren hâkime bildirilir.",
+      "C": "Emrin yerine getirilmesinden doğabilecek sorumluluk, emri yerine getirene aittir.",
+      "D": "Sözlü emir, mülkî âmirin onayına sunulduktan sonra yerine getirilir.",
+      "E": "Sözlü emir, ancak gecikmesinde sakınca bulunan hâllerde verilebilir."
+    },
+    "dogru": "A",
+    "aciklama": "Yetki belgesi ile icra emri, 20 nci maddenin son fıkrasında birbirinden ayrılmıştır. Ortada USULÜNE UYGUN OLARAK VERİLMİŞ bir arama kararı veya emri zaten vardır; yetkili âmirin kolluk memurlarına verdiği sözlü emir, bu belgenin hayata geçirilmesine ilişkin bir icra talimatıdır. Bu nedenle söz konusu emirler DERHÂL yerine getirilir ve bu konudaki emirlerin YAZILI OLARAK VERİLMESİ İSTENEMEZ. Kural, aramanın zamanlamasına bağlı etkisinin kâğıt işlemleriyle yitirilmesini önlemeye yöneliktir. Buna karşılık madde, memuru sorumluluk altında bırakmaz: bu hâllerde emrin yerine getirilmesinden doğabilecek sorumluluk EMRİ VERENE aittir. Sorumluluğun emri verende olması, yazılı teyit isteme hakkının kaldırılmasının dengesidir. Adayın en sık düştüğü yanılgı, sözlü emri gecikmesinde sakınca bulunan hâllere özgü istisnaî bir usul sanmaktır; oysa burada sözlü emir, geçerli bir karar ya da emrin bulunduğu her durumda mümkündür ve ayrıca bir makamın onayına bağlanmamıştır.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 20",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p1-28",
+    "articleNo": "30",
+    "kok": "Bulundurulması suç teşkil eden eşyanın ele geçirilmesi amacıyla, usulüne uygun karara dayanılarak bir evde arama yapılmaktadır. Evde, haklarında ayrıca bir karar bulunmayan başka kişiler de bulunmaktadır. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu kişiler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kimlik bilgileri tespit edilerek tutanağa geçirilmekle yetinilir.",
+      "B": "Üstlerinin aranabilmesi için Cumhuriyet savcısından ayrıca yazılı emir istenir.",
+      "C": "Güvenliğin sağlanması veya suç eşyasının elde edilmesi amacıyla üstleri aranır.",
+      "D": "Aramanın bitmesine kadar evden çıkmalarına izin verilmez.",
+      "E": "Üst araması ancak kendi rızalarıyla yapılabilir."
+    },
+    "dogru": "C",
+    "aciklama": "Aramanın konusu BULUNDURULMASI SUÇ TEŞKİL EDEN EŞYA olduğunda, o evde bulunan kişilerin üstü GÜVENLİK veya SUÇ EŞYASININ ELDE EDİLMESİ amacıyla aranır; bu, 30 uncu maddede ayrıca hükme bağlanmıştır. Bu yetki, aramanın konusundan doğar: bulundurulması başlı başına suç oluşturan bir eşya söz konusu olduğunda, eşyanın orada bulunan herhangi bir kişinin üzerine geçirilmesi ihtimali aramanın amacını boşa çıkarır. Bu nedenle kişiler bakımından ayrıca bir emir veya karar öngörülmemiş, üst araması aramanın kendisinin bir parçası sayılmıştır; rıza şartına da bağlanmamıştır. Vakada iki unsur bu sonucu belirler: aramanın usulüne uygun bir karara dayanması ve konusunun bulundurulması suç teşkil eden eşya olması. Aramanın konusu değiştiğinde bu kişiler bakımından uygulanacak rejim de değişir; bu yüzden soruda aramanın NEYE YÖNELİK olduğu açıkça belirtilmiştir. Ayrıca arama, bulunması istenen şeyin boyutu ve niteliği göz önüne alınarak amaca ulaşmak için gerekli olan ÖLÇÜDE gerçekleştirilir ve aranacak yerde bulunanların özel hayatlarına azamî özen gösterilir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 30",
+    "zorluk": "hard",
+    "tur": "vaka"
+  }
+]

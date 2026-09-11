@@ -1,0 +1,148 @@
+[
+  {
+    "id": "7068-p4-01",
+    "karar": "REVIZYON",
+    "gerekce": "Kök-şık hâl uyumu bozuk: kök 'verebileceği kararlar arasında aşağıdakilerden hangisi YER ALMAZ?' diyerek yalın hâlde bir ad bekliyor, oysa beş şıkkın beşi de yönelme hâlinde ('...verilmesine', '...yetkisizliğine', '...genişletilmesine'). Şıklar md 27/1'deki 'karar verebilir' fiilinin tümleci olarak kurulmuş, kök ise 'yer almak' fiilini kullanıyor; 'kararlar arasında soruşturmanın genişletilmesine yer almaz' okunuşu bozuk. Olumsuzluk vurgusu (büyük harf YER ALMAZ) yeterli ve dosyadaki tek olumsuz kök olması tutarlılık sorunu doğurmuyor. Ayrıca p4-02'nin A ve E şıkları ('Yetkisizlik kararı vererek...', '...ceza verilmesine yer olmadığına karar verir') bu sorunun A ve C şıklarının gerçek karar türleri olduğunu dolaylı olarak doğruluyor; iki soru aynı denemeye düşerse aday beş şıktan ikisini eleyebilir.",
+    "oneri": "Kökü 'Disiplin kurulu, soruşturma sonucunda aşağıdakilerden hangisine KARAR VEREMEZ?' biçimine çevir; şıklar yönelme hâlinde olduğu gibi kalsın, hâl uyumu tam oturur ve olumsuzluk vurgusu korunur. Ayrıca p4-02'nin A ve E şıklarını, bu sorunun şıklarıyla birebir örtüşmeyen ifadelerle yaz (örn. 'Dosyayı yetkili kurula gönderir')."
+  },
+  {
+    "id": "7068-p4-02",
+    "karar": "ONAY",
+    "gerekce": "Vaka kurgusu doğru sıralı: olay önce, hukuki soru sonra. Ayırt edici unsur ('yine aynı kurulun görev alanına giren') kökte açıkça verilmiş ve çözümde gerçekten rol oynuyor; bu kayıt olmasa md 27/1'in yetkisizlik seçeneği devreye girerdi. Fazla veri yok. Kök 'kurul nasıl hareket eder?' ile beş şıkkın da geniş zaman çekimli fiil cümlesi olması uyumlu, şık uzunlukları dengeli (58-82). E şıkkı kısmi doğru gibi görünse de md 27/2 doğrudan 'buna uygun olan disiplin cezası tayin edilir' dediği için tek tam cevap C."
+  },
+  {
+    "id": "7068-p4-03",
+    "karar": "REVIZYON",
+    "gerekce": "Dosyadaki tek önerme sorusu ve önermeler birbirinden bağımsız değil: II ('gerekçede ... hususlar gösterilir') gerekçenin varlığını zorunlu kılar, yani II doğruysa I de zorunlu olarak doğrudur. Bu yüzden C şıkkı ('Yalnız II') mantıken imkânsız bir kombinasyondur ve şık seti bir kombinasyon boşluğu taşır. Buna ek olarak III'ün yanlışlığı 'YALNIZCA kurul başkanı tarafından imzalanır' biçimindeki mutlak kayıtla dışarıdan işaretlenmiş; aday mevzuatı bilmeden 'yalnızca'yı görüp III'ü eler, D ve E düşer, C zaten mantıken tutarsızdır ve cevap eleme yoluyla B'ye iner. Ölçme değeri, hükmü bilmekten çok kalıp okumaya kayıyor.",
+    "oneri": "III'ü mutlak kayıttan kurtar ve I/II'den bağımsız kıl: 'III. Karar, kurul başkanı ve raportör tarafından imzalanır.' (md 27/3 'başkan ve üyeler tarafından imzalanır' der; mutlak ifade içermez). Mantıken imkânsız olan C şıkkını da değiştir: A) Yalnız I · B) I ve II · C) II ve III · D) I ve III · E) I, II ve III."
+  },
+  {
+    "id": "7068-p4-04",
+    "karar": "ONAY",
+    "gerekce": "Kök tek anlamlı, şıklar homojen (hepsi 'sayı + ad' biçiminde kanun adı), doğru cevap uzunluk bakımından ortada. Kalan küçük risk: kök 'hangi kanunun hükümleri uygulanır?' derken şıklar yalın hâlde kanun adı; Türkçe test geleneğinde kabul gören bir kalıp olduğu için kusur saymadım. Açıklamanın 3201/926 anmaları başka sorulara sızıntı taşımıyor."
+  },
+  {
+    "id": "7068-p4-05",
+    "karar": "ONAY",
+    "gerekce": "Kök ile şıkların uyumu doğru ('hangisi doğrudur?' + tam cümle şıklar), şık uzunlukları dengeli (87-114), doğru cevap en uzun değil. Kalan küçük risk: A şıkkındaki 've kararı bekler' öbeğinde 'karar' sahipsiz kalıyor (hangi karar? onay kararı); anlam bağlamdan çıkarılabildiği için kusur saymadım. Ayrıca üç şıkta mutlak kayıt var (B 'ancak', C 'yalnızca'), fakat bunlar diğerlerinden üslupça ayrışmıyor."
+  },
+  {
+    "id": "7068-p4-06",
+    "karar": "REVIZYON",
+    "gerekce": "AÇIKLAMA SIZINTISI (bağımsız bulgu): açıklamadaki 'Önlem, teşkilattan ayrılmayla sonuçlanacak bir cezanın uygulanmasına kadar geçen dönem için düşünülmüştür' cümlesi, p4-05'in doğru cevabı olan E şıkkını ('...kararın onaylanarak uygulanmasına kadar uzaklaştırılabilir') neredeyse birebir tarif ediyor. Cümle bu sorunun çözümü için gerekli değil, kökün ötesine geçen dolgudur. Vaka kurgusu bunun dışında sağlam: olay önce, ayırt edici unsur ('daha hafif bir cezaya indirilerek onaylanmıştır') açık ve md 28/2'nin son cümlesindeki 'meslekten çıkarma cezası' şartı senaryoda doğru karşılanmış; fazla veri yok.",
+    "oneri": "Açıklamadan 'Önlem, teşkilattan ayrılmayla sonuçlanacak bir cezanın uygulanmasına kadar geçen dönem için düşünülmüştür; ceza hafifletilerek onaylandığında dayanağı ortadan kalkar.' cümlesini çıkar veya 'Ceza hafifletilerek onaylandığında önlemin dayanağı ortadan kalkar.' biçiminde kısalt."
+  },
+  {
+    "id": "7068-p4-07",
+    "karar": "REVIZYON",
+    "gerekce": "Kökte antesedansız (ileriye gönderimli) işaret sıfatı var: '...fiillerde, disiplin soruşturmasına BU SÜRE içinde başlanmadığı takdirde...' cümlesinde 'bu süre' henüz hiçbir süreden söz edilmemişken kullanılıyor; gönderim ancak ikinci cümlede ('Söz konusu süre ne kadardır?') tamamlanıyor. Aday kökü iki kez okumak zorunda kalıyor. Sızıntı taraması temiz çıktı: açıklama md 29/1-b'nin rakamını vermiyor ('daha uzun bir süre öngörmüştür') ve kökten 'öğrenildiği tarihten itibaren' kaydı çıkarılmış, böylece p4-09'un cevabı korunmuş. Kalan risk: açıklamanın son cümlesi ('bu sürenin hangi andan itibaren işlemeye başlayacağı fıkranın giriş cümlesinde ayrıca düzenlenmiştir') p4-09'un varlığını haber veren didaktik bir dolgudur, cevabını vermiyor.",
+    "oneri": "Kökü tek cümleye indir: '7068 sayılı Kanun'a göre; uyarma, kınama, aylıktan kesme ile kısa ve uzun süreli durdurma cezalarını gerektiren fiillerde, disiplin soruşturmasına ne kadarlık bir süre içinde başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar?' Açıklamanın son cümlesini de kısalt."
+  },
+  {
+    "id": "7068-p4-08",
+    "karar": "REVIZYON",
+    "gerekce": "p4-07 ile aynı yapısal kusur: kökte 'disiplin soruşturmasına BU SÜRE içinde başlanmadığı takdirde' derken 'bu süre'nin göndergesi cümlede yok, ancak sonraki cümlede beliriyor. İkiz iki soruda aynı bozukluğun tekrarlanması dosya genelinde kalıp izi de bırakıyor. Sızıntı taraması temiz: açıklama p4-07'nin 'bir ay' rakamını vermiyor ('aynı fıkranın diğer bendinde yazan süre') ve kökten 'öğrenildiği tarihten itibaren' kaydı çıkarılmış. Şık setleri de birbirini beslemiyor: p4-07'de 'Altı ay', p4-08'de 'Bir ay' yok, dolayısıyla iki soru karşılıklı ayna çift oluşturmuyor.",
+    "oneri": "Kökü tek cümleye indir: '...Devlet memurluğundan çıkarma cezasını gerektiren fiillerde, disiplin soruşturmasına ne kadarlık bir süre içinde başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar?'"
+  },
+  {
+    "id": "7068-p4-09",
+    "karar": "ONAY",
+    "gerekce": "Kök tek anlamlı, beş şık da '-dığı tarih' kalıbında homojen, doğru cevap en uzun şık olsa da fark 4 karakter (63'e 59) ve üslup ayrışması yok. Kalan risk: p4-10'un açıklamasındaki 'disiplin amirinin olayı geç öğrenmesi bu iki yılı uzatmaz' ifadesi, bu sorunun cevabındaki 'disiplin amiri tarafından öğrenilme' ölçütünü dolaylı olarak işaret ediyor; açıklamalar cevaplamadan sonra okunduğu için düşük riskli sayıp kusur saymadım."
+  },
+  {
+    "id": "7068-p4-10",
+    "karar": "ONAY",
+    "gerekce": "Kök 'fiillerin işlendiği tarihten itibaren ne kadar süre içinde disiplin cezası verilmediği takdirde' biçiminde tek anlamlı; başlangıç anı ('işlendiği tarih') kökte veriliyor, dolayısıyla md 29/1'in öğrenme ölçütüyle karışma riski yok. Şıklar homojen, uzunluk farkı yok. Kalan risk: açıklamadaki 'disiplin amirinin olayı geç öğrenmesi' ifadesi p4-09'un cevabına yönlendirici bir yan ışık taşıyor."
+  },
+  {
+    "id": "7068-p4-11",
+    "karar": "ONAY",
+    "gerekce": "Ayırt edici kavram ('KESİNTİSİZ') büyük harfle vurgulanmış; kök 'hangi tarihten itibaren işlemeye başlar?' ile şıkların ayrılma hâli tam uyumlu. Üç fiil tipi (tamamlanmış / kesintisiz / zincirleme) arasındaki ayrım net kurulmuş, A ve C şıkları gerçek ama başka fiil tipine ait ölçütler olduğu için makul çeldirici. Açıklama dosyanın en uzunlarından (984 karakter) ama başka sorunun cevabını taşımıyor."
+  },
+  {
+    "id": "7068-p4-12",
+    "karar": "ONAY",
+    "gerekce": "Üreticinin iddiası dosyadan doğrulandı: kökte iptal gerekçesinin adı geçmiyor, yalnızca 'zamanaşımı maddesinde sayılan gerekçelerden biriyle' deniyor; p4-13'ün cevabı korunmuş. Açıklama da gerekçeleri saymıyor. Kök 'merci aşağıdakilerden hangisidir?' ile şıkların yalın ad öbeği olması uyumlu. Kalan risk: senaryo tek cümlelik ve kişi/olay taşımıyor, dayanağa doğrudan atıf yapıyor; 'vaka' etiketi gerçekte 'kavram'a daha yakın, ama senaryodan gelen 'mahkeme tarafından iptal edilmiştir' unsuru çözümde gerçekten rol oynadığı için kusur saymadım. Doğru cevap en uzun şık, fark 5 karakter."
+  },
+  {
+    "id": "7068-p4-13",
+    "karar": "ONAY",
+    "gerekce": "Şıklar ikili eşleştirme kalıbında homojen, doğru cevap en uzun olsa da fark 8 karakter. D ile E'nin ikinci öğesi neredeyse aynı ('düzeltilebilir bir şekil noksanlığının bulunmuş olması' / '...bulunması'); bu örtüşme adayı ayırt edici birinci öğeye odakladığı için ölçmeye zarar vermiyor, ancak aynı unsurun iki şıkta farklı çekimle yazılması küçük bir homojenlik pürüzü. Kalan risk: açıklamanın 'Fıkranın bir bölümünün Anayasa Mahkemesince iptal edildikten sonra 2024 yılında yeniden düzenlendiği de hatırlanmalıdır' cümlesi ölçmeye katkısı olmayan didaktik meta cümledir."
+  },
+  {
+    "id": "7068-p4-14",
+    "karar": "ONAY",
+    "gerekce": "Kök 'ne kadar süre içinde karara bağlanır?' — süre kaydı tek anlamlı, azami süre okuması dışında bir okuma bırakmıyor ve karar süresi ile itiraz süresi kökte karışmıyor (özne 'yetkili merci' olarak açıkça verilmiş). Kalan riskler: (a) şık homojenliği hafif bozuk, dört şık gün cinsindenken E 'Dört ay'; (b) açıklamanın son cümlesi ('Merciin bu süre içinde vereceği kararın içeriği ve itiraz edene bildirilme usulü ise ayrı bir fıkrada düzenlenmiştir') p4-15'in varlığını haber veren dolgudur, cevabını vermiyor."
+  },
+  {
+    "id": "7068-p4-15",
+    "karar": "REVIZYON",
+    "gerekce": "İki dil kusuru birlikte: (1) Kök 'merciin YETKİSİ aşağıdakilerden hangisidir?' diyerek bir ad/ad öbeği bekliyor, oysa beş şıkkın beşi de çekimli fiil cümlesi ('...kaldırabilir', '...gönderir', '...erteleyebilir'); 'yetkisi ... cezayı hafifletebilir veya tamamen kaldırabilir' okunuşu bozuk. (2) A ile B birbirinin doğrudan tersi ('yalnızca tamamen kaldırabilir, hafifletme yetkisi yoktur' ↔ 'hafifletebilir veya tamamen kaldırabilir'); karşıt çift kuralı gereği aday doğru cevabın bu ikisinden biri olduğunu mevzuatı bilmeden sezebilir, üstelik A mutlak kayıt taşıdığı için kolayca elenir ve cevap fiilen tek şıkka iner.",
+    "oneri": "Kökü 'İtirazı inceleyen merci, itirazı haklı bulduğunda aşağıdakilerden hangisini yapabilir?' biçimine çevir (şıklar fiil cümlesi olarak kalabilir). A şıkkını karşıt ikizden çıkar: 'Cezayı kaldırmaksızın yalnızca yerine getirilmesini erteleyebilir' zaten E'de var; A yerine 'Cezayı kaldırır ve dosyayı yeniden soruşturma için iade eder' gibi bağımsız bir çeldirici kur."
+  },
+  {
+    "id": "7068-p4-16",
+    "karar": "ONAY",
+    "gerekce": "Kök 'başvurulabilecek yol aşağıdakilerden hangisidir?' ile şıkların ad öbeği kuruluşu ('...başvurusu', '...itiraz', '...dava', '...şikâyet') tam uyumlu; doğru cevap en kısa şık. Kökteki 'Bakan ile disiplin kurulları' sınırlaması md 30/5'i md 30/1'den ayırmaya yetiyor, dolayısıyla C şıkkı (BYDK'ya itiraz) belirsiz kalmıyor. Kurum adları resmî yazımda. Bankadaki iki md 30 sorusuyla (itiraz süresi / doğrudan verilen cezalar) konu çakışması yok."
+  },
+  {
+    "id": "7068-p4-17",
+    "karar": "REVIZYON",
+    "gerekce": "TEK ANLAMLILIK ANALİZİ (temiz): kök hesabı için gereken her veriyi tek anlamlı veriyor — tebliğ tarihi ('3 Mart günü tebliğ edilmiş') sürenin başlangıcını, itiraz tarihi ('20 Mart günü') bitişini sabitliyor; süre kaydı kökte verilmiyor, ölçülen bilgi zaten bu. İki farklı okuma sonucu değiştirmiyor: tebliğ günü sayılsa da sayılmasa da (12 veya 13 Mart), hatta bankadaki eski soruda geçen 'on beş gün' varsayımıyla bile (18 Mart) 20 Mart her hâlde süre dışında; hafta sonu/tatil sarkması da 7 günlük farkı kapatamaz. Yıl belirtilmemesi 3 Mart→20 Mart aynı ay içinde kaldığı için sorun yaratmıyor. Fazla veri yok: 'kınama' cezasının disiplin amirince verilmiş olması itiraz yolunun açıklığını, 'bir üst disiplin amirine yazılı olarak' kaydı itirazın usulünü kurar; ikisi de gerekli. KUSUR açıklamada: son cümle 'Kesinleşme ayrıca cezanın yerine getirilebilmesi bakımından da eşik oluşturur' p4-25'in doğru cevabını (C, 'Kesinleşmelerini müteakip') haber veriyor. Kalan risk: A ile B birbirinin tersi ('süresinde yapılmadığından' ↔ 'süresindedir'), vaka sorularında kaçınılmaz sayılabilir.",
+    "oneri": "Açıklamanın son cümlesini ('Kesinleşme ayrıca cezanın yerine getirilebilmesi bakımından da eşik oluşturur, dolayısıyla süreyi kaçırmanın etkisi yalnızca itiraz hakkıyla sınırlı kalmaz.') tamamen çıkar; açıklama zaten kesinleşme-ret ayrımıyla tamamlanıyor."
+  },
+  {
+    "id": "7068-p4-18",
+    "karar": "ONAY",
+    "gerekce": "Kök 'yetkili olanlar aşağıdakilerin hangisinde doğru verilmiştir?' ile şıkların ad öbeği kuruluşu uyumlu; doğru cevap en uzun ama fark 2 karakter, üslup ayrışması yok. Kalan riskler: (a) üç şık mutlak kayıt taşıyor ('Yalnızca', 'Yalnızca', 'yalnızca toplantı hâlinde'), üçü de yanlış — hat genelindeki örüntüyü besliyor; (b) E şıkkı ek bir kayıtla ('yalnızca toplantı hâlinde') diğerlerinden yapıca ayrılıyor; (c) açıklamanın son cümlesi ölçmeye katkısı olmayan didaktik kapanış."
+  },
+  {
+    "id": "7068-p4-19",
+    "karar": "REVIZYON",
+    "gerekce": "Kökteki alt sınır kaydı anlamca doğru kurulmuş — 'en az' açıkça yazıldığı için aday bunu üst sınır diye okuyamaz ve md 31/2'nin 'yedi günden az olamaz' hükmüyle örtüşür. Ancak kalıp dilbilgisi bakımından bozuk: 'süre en az ne kadar OLABİLİR?' ifadesinde alt sınır bildiren 'en az' ile imkân kipi 'olabilir' çelişiyor; alt sınır zorunluluk kipi ister ('olmalıdır'), imkân kipi ise üst sınır sorularının kalıbıdır ('en fazla ne kadar olabilir'). Dikkatli bir aday bu çelişkiden kökün hangi sınırı sorduğu konusunda bir an duraksayabilir.",
+    "oneri": "Kökü '...savunması için verilecek süre en az ne kadar olmalıdır?' biçiminde düzelt; şıklar ('Yedi gün' vb.) değişmeden kalır."
+  },
+  {
+    "id": "7068-p4-20",
+    "karar": "ONAY",
+    "gerekce": "Vaka kurgusu doğru sıralı ve ayırt edici unsur kökte açıkça veriliyor: 'usulüne uygun olarak savunma istenmiş' kaydı, md 31/1 (savunma alınmadan ceza verilemez) ile md 31/2 (süresinde savunma yapmayan vazgeçmiş sayılır) arasındaki ayrımı kuruyor ve A şıkkını doğru olmaktan çıkarıyor; bu kayıt olmasa A da savunulabilirdi. Fazla veri yok, süre rakamı verilmemiş — p4-19'un cevabı korunmuş. Kök 'bu durumun sonucu nedir?' ile tam cümle şıklar uyumlu; doğru cevap en kısa şık."
+  },
+  {
+    "id": "7068-p4-21",
+    "karar": "REVIZYON",
+    "gerekce": "Kök ve şıklar dil bakımından temiz: 'hangi andan itibaren kullanabilir?' ile beş şıkkın '-den itibaren' kalıbı tam uyumlu, şık uzunlukları neredeyse eşit (39-46). Kusur açıklamada: 'Kanun ayrıca belirli ağırlıktaki cezalarda ilgiliye ek imkânlar tanıyan ayrı bir fıkra öngörmüştür' cümlesi p4-22'nin ölçtüğü ayrımı (md 31/4'ün ağır iki cezaya özgü olması) önceden haber veriyor ve bu sorunun çözümü için gerekli değil.",
+    "oneri": "Açıklamanın son cümlesini çıkar; açıklama 'oysa metin hakkı soruşturma sürerken tanır.' cümlesiyle bitsin."
+  },
+  {
+    "id": "7068-p4-22",
+    "karar": "ONAY",
+    "gerekce": "Kök 'hangi personele tanınmıştır?' ile şıkların yönelme hâli tam uyumlu. D (doğru) ile E kapsayan-kapsanan ilişkisinde, A ile C ise aşırı genişletme yönünde; dört çeldirici de aynı hükmün sınırını farklı yönlerden zorladığı için mantıken tutarlı bir set. Kalan risk: A, C ve E mutlak/kapsayıcı kayıt taşıyor ('tamamına', 'tamamına', 'Yalnızca') ve üçü de yanlış; doğru cevap ise ne mutlak ne de bütünleyici bir kayıt taşıyor, bu üslup farkı tek başına belirleyici olmasa da eleme kolaylaştırıyor."
+  },
+  {
+    "id": "7068-p4-23",
+    "karar": "ONAY",
+    "gerekce": "Üreticinin iddiası doğrulandı: köke '-Kanunda ayrıca öngörülen özel hâl dışında-' kaydı konulmuş; bu kayıt olmadan p4-24'ün istisnası bu sorunun cevabını tartışmalı kılardı, dolayısıyla işlevsel ve zorunlu. Kök 'hangi andan itibaren başlar?' ile şıkların ayrılma hâli uyumlu; doğru cevap uzunluk sıralamasında ikinci. Kalan riskler: (a) tire içi kayıt kökü ağırlaştırıyor; (b) açıklamanın son cümlesi ('kökteki özel hâl dışında kaydı bu nedenle boş bir ifade değildir') bir meta cümledir ve p4-24'ün varlığını haber verir, ancak cevabını (üsse/limana dönme) vermez."
+  },
+  {
+    "id": "7068-p4-24",
+    "karar": "REVIZYON",
+    "gerekce": "Kökte gereksiz yineleme var: 'Sahil Güvenlik Komutanlığına ait SEYİR HÂLİNDEKİ bir botta görevli personele, BOT SEYİRDEYKEN disiplin cezası verilmiş' — aynı bilgi (seyir hâli) iki kez veriliyor; ayrıca 'seyirdeyken' biçimi resmî metindeki 'seyir hâlinde' kaydına göre konuşma diline kayıyor. Bunun dışında veri yeterliliği tam ve fazla veri yok: md 32/2'nin üç unsuru (SGK'ya ait olma, gemi/bot, seyir hâlinde verilmiş olma) ve md 32/1'in kesinleşme şartı ('ceza kesinleşmiştir') senaryoda tek tek karşılanmış, hepsi çözümde rol oynuyor. Şıklar 'hangi andan itibaren başlar?' köküyle uyumlu ve beşi de ayrılma hâlinde; B şıkkı senaryodaki araca uyarlanmış ('Botun bağlı bulunduğu üsse veya limana dönmesinden'), metnin 'geminin' ifadesiyle çelişmiyor.",
+    "oneri": "Kökü 'Sahil Güvenlik Komutanlığına ait bir botta görevli personele, bot seyir hâlindeyken disiplin cezası verilmiş ve ceza kesinleşmiştir.' biçiminde tek kayda indir."
+  },
+  {
+    "id": "7068-p4-25",
+    "karar": "REVIZYON",
+    "gerekce": "Doğru cevap ÜSLUPÇA ayrışıyor: dört çeldirici günlük yönetim dilinde ('Verildikleri tarihte derhal', 'İlgiliye tebliğ edildikleri anda', '...tüketilmesinden sonra', '...onaylandığı tarihte'), doğru cevap C ise metinden birebir alınmış tek 'kitabi' ifade ('Kesinleşmelerini müteakip'). Mevzuat kalıbını tanıyan aday hükmü bilmeden de C'yi işaretleyebilir. Buna kök-şık hâl uyumsuzluğu ekleniyor: kök 'hangi andan İTİBAREN yerine getirilir?' derken şıklar bulunma ('...tarihte', '...anda'), ayrılma ('...sonra') ve edat ('...müteakip') hâllerinde karışık kurulmuş.",
+    "oneri": "C şıkkını 'Kesinleştikleri andan itibaren' biçiminde yaz ve diğer şıkları da aynı kalıba çek: A 'Verildikleri andan itibaren', B 'İlgiliye tebliğ edildikleri andan itibaren', D 'İdari yargı yolunun tüketildiği andan itibaren', E 'Soruşturma raporunun onaylandığı andan itibaren'. Böylece hem üslup farkı hem hâl uyumsuzluğu kalkar."
+  },
+  {
+    "id": "7068-p4-26",
+    "karar": "ONAY",
+    "gerekce": "Kök 'ne zaman uygulanır?' ile beş şıkkın bulunma hâli tam uyumlu, şık uzunlukları dengeli. Kökteki 'kesinleşmiştir' kaydı fazla veri değil, md 33/2'nin ölçütünü işletmek için zorunlu. Kalan riskler: (a) bu zorunlu kayıt yine de p4-25'in cevabına ('Kesinleşmelerini müteakip') dolaylı destek verir — kaçınılmaz olduğu için kusur saymadım; (b) senaryoda kişi/olay yok, 'vaka' etiketi gerçekte 'dogrudan'a yakın; (c) açıklamanın son cümlesi ('Malî yılbaşı Kanunda hiçbir yerde uygulama anı olarak kullanılmamıştır') tek bir çeldiriciyi adıyla mahkûm eden bir dolgudur."
+  },
+  {
+    "id": "7068-p4-27",
+    "karar": "ONAY",
+    "gerekce": "Kök 'bildirileceği merciler bakımından aşağıdakilerden hangisi doğrudur?' ile tam cümle şıklar uyumlu; 'Devlet Personel Başkanlığı' yürürlükteki metindeki resmî adla yazılmış. Kalan riskler: (a) doğru cevap dosyanın en uzun şıkkı (126 karakter, ikinci 113) ve şık ortalamasının çok üzerinde; (b) A, B ve C tek katmanlı ve mutlak kayıtlı ('Bütün', 'yalnızca'), D ile E ise iki katmanlı ve 'ayrıca' yapılı — aday yapısal bakışla cevabı ikiye indirebilir. D'nin de iki katmanlı olması bu ipucunu tek başına belirleyici olmaktan çıkardığı için REVIZYON'a çevirmedim; yine de A/B/C'den birinin iki katmanlı bir yanlışa çevrilmesi seti dengelerdi."
+  }
+]

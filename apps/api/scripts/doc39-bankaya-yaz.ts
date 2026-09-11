@@ -14,6 +14,7 @@
  *
  *   npx tsx scripts/doc39-bankaya-yaz.ts <doc-dizini> <kanun-no>
  *   PARTI=3201-p1,3201-p4 npx tsx scripts/doc39-bankaya-yaz.ts …  (kapsamı daralt)
+ *   ONEK=performans ETIKET="Performans Değerlendirme Yönetmeliği" … <slug>  (numarasız mevzuat)
  *   APPLY=1 npx tsx scripts/doc39-bankaya-yaz.ts docs/39-… 2911
  */
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -33,11 +34,20 @@ type Aday = {
 
 async function main() {
   const [doc, kanunNo] = process.argv.slice(2);
-  if (!doc || !kanunNo) throw new Error('kullanım: doc39-bankaya-yaz.ts <doc-dizini> <kanun-no>');
+  if (!doc || !kanunNo) throw new Error('kullanım: doc39-bankaya-yaz.ts <doc-dizini> <kanun-no|slug>');
 
-  const leg = await prisma.legislation.findFirstOrThrow({ where: { number: kanunNo } });
-  if (!leg.topicId) throw new Error(`${kanunNo} kanununun bağlı konusu yok`);
-  const kisa = leg.shortName ?? `${kanunNo} sayılı Kanun`;
+  /**
+   * İkinci argüman kanun numarası ya da `Legislation.slug` olabilir. Yönetmelik
+   * gibi numarasız mevzuatta `number` boştur; dosya adı öneki de o zaman slug
+   * değil kısa bir ad olur (ör. "performans"), bu yüzden ETIKET/ONEK ile
+   * ayrıca verilebilir.
+   */
+  const leg = await prisma.legislation.findFirstOrThrow({
+    where: kanunNo.match(/^\d+$/) ? { number: kanunNo } : { slug: kanunNo },
+  });
+  if (!leg.topicId) throw new Error(`${kanunNo} mevzuatının bağlı konusu yok`);
+  const kisa = process.env.ETIKET ?? leg.shortName ?? (leg.number ? `${leg.number} sayılı Kanun` : leg.name);
+  const onek = process.env.ONEK ?? kanunNo;
 
   /**
    * PARTI ile kapsam tek bir partiye kilitlenir. Kanunun bütün partilerini
@@ -51,12 +61,12 @@ async function main() {
   if (partiler.length) console.log(`kapsam           : ${partiler.join(' ')}\n`);
 
   const karar = new Map<string, string>();
-  for (const f of readdirSync(`${doc}/denetim`).filter((x) => x.startsWith(`${kanunNo}-`) && x.endsWith('-karar.json') && kapsamda(x)))
+  for (const f of readdirSync(`${doc}/denetim`).filter((x) => x.startsWith(`${onek}-`) && x.endsWith('-karar.json') && kapsamda(x)))
     for (const k of JSON.parse(readFileSync(`${doc}/denetim/${f}`, 'utf8'))) karar.set(k.id, k.karar);
 
   const aday: Aday[] = [];
   const okunamayan: string[] = [];
-  for (const f of readdirSync(`${doc}/aday`).filter((x) => x.startsWith(`${kanunNo}-`) && x.endsWith('.json') && kapsamda(x))) {
+  for (const f of readdirSync(`${doc}/aday`).filter((x) => x.startsWith(`${onek}-`) && x.endsWith('.json') && kapsamda(x))) {
     // Bir üretici hâlâ yazıyorsa dosya yarım olabilir. Böyle bir dosyayı
     // ayrıştırmaya çalışmak scripti çökertir; atlamak güvenlidir çünkü o
     // partinin karar dosyası da yoktur (soruları KARARSIZ sayılıp elenir).

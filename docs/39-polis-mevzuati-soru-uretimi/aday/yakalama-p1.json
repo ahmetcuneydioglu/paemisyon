@@ -1,0 +1,529 @@
+[
+  {
+    "id": "yakalama-p1-01",
+    "articleNo": "4",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'nde tanımlanan \"gecikmesinde sakınca bulunan hâl\" aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Suç şüphesinin öğrenilmesinden iddianamenin kabulüne kadar geçen evreyi",
+      "B": "Yetkili merci önüne çıkarılması gereken kişinin, ilgili kurumca teslim alınana kadar alıkonulmasını",
+      "C": "Kişinin, hakkındaki işlemler tamamlanıncaya kadar kanunî süre içinde özgürlüğünün kısıtlanmasını",
+      "D": "Fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suçu",
+      "E": "Derhâl işlem yapılmazsa suç delillerinin kaybolması veya şüphelinin kaçması ihtimalinin doğmasını"
+    },
+    "dogru": "E",
+    "aciklama": "Gecikmesinde sakınca bulunan hâl, Yönetmeliğin tanımlar maddesinde bir ZAMAN BASKISI ölçütü olarak kurulmuştur: derhâl işlem yapılmazsa suçun iz, eser, emare ve delillerinin kaybolması veya şüphelinin kaçması ya da kimliğinin saptanamaması ihtimalinin ortaya çıkmasıdır. Kavramın ölçme değeri, kolluğun İZİN ALMADAN hareket edebildiği dar kapıyı açmasıdır; 5 inci maddede kolluğun Cumhuriyet savcısına veya âmirlerine müracaat imkânı olmayan hâllerde doğrudan yakalama yapabilmesi bu hâle bağlanmıştır. Adayın en çok karıştırdığı kavram SUÇÜSTÜ'dür: suçüstü, fiilin işlenme anı ile yakalama anı arasındaki yakınlığı anlatan bir OLGU durumudur (işlenmekte olan suç, henüz işlenmiş fiil, takip sonucu yakalama, fiilin pek az önce işlendiğini gösteren eşya veya delille yakalama); gecikmesinde sakınca bulunan hâl ise bir RİSK değerlendirmesidir ve suçüstü bulunmadan da doğabilir. Aynı maddede tanımlanan soruşturma, muhafaza altına alma ve gözaltına alma kavramları da bu tanımın yerine konulamaz; onlar sırasıyla bir evreyi, bir teslim sürecini ve alıkoymanın kendisini anlatır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 4",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-02",
+    "articleNo": "4",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, bir suçun tespiti veya aydınlatılmasına yönelik olarak müşteki ve suçtan zarar gören ile suç işleme şüphesi altında bulunmayan diğer kişilerin dinlenmesi ve tutanağa geçirilmesi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Bilgi alma",
+      "B": "İfade alma",
+      "C": "Sorgu",
+      "D": "Yer gösterme",
+      "E": "Muhafaza altına alma"
+    },
+    "dogru": "A",
+    "aciklama": "Dinleme işlemi, kimin dinlendiğine ve kimin dinlediğine göre üçe ayrılmıştır. BİLGİ ALMA, suç şüphesi ALTINDA BULUNMAYAN kişilerin (müşteki, suçtan zarar gören ve diğerleri) bir suçun tespiti veya aydınlatılmasına yönelik olarak dinlenip tutanağa geçirilmesidir. İFADE ALMA, ŞÜPHELİNİN kolluk görevlileri veya Cumhuriyet savcısı tarafından soruşturma konusu suçla ilgili dinlenmesidir; muhatabı şüphelidir ve yargı dışı bir makam tarafından yapılır. SORGU ise şüpheli veya sanığın HÂKİM VEYA MAHKEME tarafından soruşturma veya kovuşturma konusu suçla ilgili dinlenmesidir; kolluk sorgu yapamaz. Sınavda en sık düşülen hata, kollukta yapılan işlemi sorgu sanmaktır: muhatap ya da dinleyen makam değiştiği anda işlemin adı da değişir. Ayrım yalnızca terim meselesi de değildir; her üç işlemin tâbi olduğu usul, hazır bulunacak kişiler ve tutulacak tutanak birbirinden farklıdır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 4",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-03",
+    "articleNo": "4",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'nde geçen \"toplu suç\" kavramı aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Aralarında iştirak iradesi bulunan iki veya daha fazla kişi tarafından işlenen suçu",
+      "B": "Aralarında iştirak iradesi bulunmasa da üç veya daha fazla kişi tarafından işlenen suçu",
+      "C": "Aralarında iştirak iradesi bulunmasa da dört veya daha fazla kişi tarafından işlenen suçu",
+      "D": "Aralarında iştirak iradesi bulunan beş veya daha fazla kişi tarafından işlenen suçu",
+      "E": "Örgüt faaliyeti çerçevesinde altı veya daha fazla kişi tarafından işlenen suçu"
+    },
+    "dogru": "B",
+    "aciklama": "Tanım iki unsurdan oluşur ve sınav sorusu genellikle bunlardan birini bozarak kurulur. Birinci unsur SAYIDIR: üç veya daha fazla kişi. İkinci unsur, tanımın asıl ayırt edici yanıdır: aralarında İŞTİRAK İRADESİ BULUNMASA DA suç toplu sayılır. Yani failler arasında önceden anlaşma, iş bölümü veya örgütsel bağ aranmaz; aynı olayda üç kişinin fiilen birlikte hareket etmesi yeterlidir. Adayın en çok yaptığı hata, toplu suçu iştirak veya örgüt kavramına bağlamak, böylece tanımı gerçekte olduğundan dar tutmaktır. Kavramın pratik değeri, gözaltı rejiminde ayrı bir usul kapısı açmasıdır: suçun toplu olarak işlenmiş olması, gözaltı süresine ilişkin genel kuralın dışında bir imkânı gündeme getirir. Bu nedenle olayda kaç kişinin bulunduğu ve bunların birbiriyle bağlantısının aranıp aranmayacağı, gözaltı işlemlerinde yalnızca istatistik değil doğrudan hukukî bir ayrımdır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 4",
+    "zorluk": "easy",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-04",
+    "articleNo": "5",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, aşağıdaki hâllerden hangisinde herkes tarafından geçici olarak yakalama yapılabilir?",
+    "siklar": {
+      "A": "Kolluk kuvvetinin kanun ve usul dairesinde verdiği emre itaatsizlik edilmesi",
+      "B": "Halkın huzur ve sükûnunu bozan kişinin uyarılara rağmen hareketine devam etmesi",
+      "C": "Hakkında yetkili mercilerce verilmiş yakalama emri bulunan kişiye rastlanması",
+      "D": "Suçüstü bir fiilden dolayı izlenen kişinin kaçması ihtimalinin bulunması",
+      "E": "Hakkında yetkili merci tarafından verilmiş zorla getirme kararı bulunan kişiye rastlanması"
+    },
+    "dogru": "D",
+    "aciklama": "Yakalama yetkisi iki ayrı katmanda düzenler ve soru tam bu ayrımı ölçer. Geniş katman KOLLUK GÖREVLİLERİNE aittir: emre itaatsizlik edenler, mukavemette bulunanlar, hakkında yakalama emri veya tutuklama kararı bulunanlar, uyuşturucu ve uyarıcı madde alan, satan, bulunduran veya kullananlar, rezalet çıkaracak derecede sarhoş olanlar, halkın huzur ve sükûnunu bozup uyarıya rağmen devam edenler ve sayılan diğer kişiler bakımından yakalama yetkisi kolluk görevlilerine tanınmıştır. HERKESE tanınan yetki ise çok dardır ve yalnızca iki hâlle sınırlıdır; bunlardan biri, suçüstü bir fiilden dolayı izlenen kişinin kaçma ihtimalinin veya hemen kimliğinin belirlenememesi durumunun bulunmasıdır. Çeldiricilerin hepsi Yönetmelikte GERÇEKTEN yazan yakalama sebepleridir; yanlışlıkları sebebin varlığından değil, YETKİLİNİN kim olduğundan doğar. Ayrıca vatandaşın yaptığı yakalama GEÇİCİDİR: yakalanan kişi derhâl kolluk görevlilerine teslim edilir, vatandaşın kendisi gözaltı veya muhafaza rejimi uygulayamaz.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 5/3-b",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-05",
+    "articleNo": "5",
+    "kok": "Kimliğini bir belgeyle veya kolluk kuvvetince tanınmış ya da güvenilir kişilerin tanıklığı ile ispat edemeyen kişi hakkında, Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre kolluğun yetkisi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Gerçek kimliği ortaya çıkıncaya kadar yakalama ve muhafaza altına alma",
+      "B": "Cumhuriyet savcısının emri alınıncaya kadar gözaltına alma",
+      "C": "Adlî mercilere sevk edilinceye kadar nezarethaneye koyma",
+      "D": "Kimliği tespit edilinceye kadar hakkında zorla getirme kararı düzenleme",
+      "E": "Mülkî amirin onayı alınıncaya kadar ıslah kurumuna teslim etme"
+    },
+    "dogru": "A",
+    "aciklama": "Bu hükümde ölçülen şey, kişinin özgürlüğüne yapılan müdahalenin ADIDIR. Kimliğini belgeyle ya da kolluk kuvvetince tanınmış veya güvenilir kişilerin tanıklığıyla ispat edemeyenler ile gösterdikleri belgelerin doğruluğundan şüphe edilenler, aranan kişilerden olup olmadıkları anlaşılıncaya veya gerçek kimliği ortaya çıkıncaya kadar YAKALANIP MUHAFAZA ALTINA ALINABİLİR. Burada ortada bir suç isnadı ve soruşturma bulunmadığı için işlem GÖZALTI DEĞİLDİR; gözaltı, hakkındaki işlemlerin tamamlanması amacıyla yakalanan kişiye uygulanan ve hâkim önüne çıkarma ya da salıverme ile sonuçlanan bir rejimdir. Bu ayrım kaçırıldığında aday, kimlik tespiti için tutmayı gözaltı sanır ve gözaltına özgü usulleri buraya taşır. Hükmün iki ek kaydı vardır: tutma SÜRESİZ DEĞİLDİR, Yönetmelik bu tutma için azamî bir sınır koymuştur; ayrıca kişiye kimliğini ispatlaması hususunda GEREKLİ KOLAYLIK GÖSTERİLİR, yani kolluk pasif kalıp süreyi işletemez.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 5/2",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-06",
+    "articleNo": "5",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, soruşturma ve kovuşturması şikâyete bağlı olmakla birlikte, beden veya akıl hastalığı, malûllük veya güçsüzlükleri nedeniyle kendilerini idareden aciz bulunanlara karşı işlenen suçüstü hâllerinde kişinin yakalanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Mağdurun kanunî temsilcisinin şikâyeti aranır",
+      "B": "Yakalama için şikâyet şartı aranmaz",
+      "C": "Cumhuriyet savcısının yazılı izni aranır",
+      "D": "Sulh ceza hâkiminin vereceği karar aranır",
+      "E": "Mağdurun yazılı rızası aranır"
+    },
+    "dogru": "B",
+    "aciklama": "Kural olarak soruşturması ve kovuşturması şikâyete bağlı suçlarda ceza muhakemesi işlemleri şikâyetin varlığına dayanır. Yönetmelik bu genel kurala KORUMA AMAÇLI bir istisna getirmiştir: beden veya akıl hastalığı, malûllük ya da güçsüzlük nedeniyle kendisini idareden aciz bulunan kişilere karşı işlenen SUÇÜSTÜ hâllerinde şüphelinin yakalanması şikâyete bağlı değildir. İstisnanın gerekçesi açıktır; şikâyet hakkını kullanamayacak durumdaki mağdurun korumasız kalmasını önlemek için kolluğun harekete geçmesi şikâyetin beklenmesine bırakılmamıştır. İki sınır sınavda gözden kaçar. Birincisi, istisna yalnızca SUÇÜSTÜ hâlleriyle sınırlıdır; suçüstü bulunmayan bir olayda genel kural işlemeye devam eder. İkincisi, istisna yakalamayı serbest bırakır; mağdurun durumu ve suçun niteliği ne olursa olsun izin, karar veya rıza gibi ek bir makam onayı aranacağı yolundaki seçenekler metinde karşılığı olmayan eklemelerdir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 5/4",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-07",
+    "articleNo": "6",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yakalanan kişiye suç ayrımı gözetilmeksizin yakalama sebebi ve hakkındaki iddialar ile susma, müdafiden yararlanma ve yakalanmaya itiraz etme hakları ne şekilde bildirilir?",
+    "siklar": {
+      "A": "Yalnızca sözlü olarak bildirilir; talep edilmesi hâlinde ayrıca yazılı olarak verilir",
+      "B": "Yalnızca ifade alma işlemine başlanmadan önce yazılı olarak bildirilir",
+      "C": "Herhâlde yazılı, hemen mümkün olmaması hâlinde sözlü olarak derhâl bildirilir",
+      "D": "Nezarethaneye alınış sırasında gözaltı sorumlusunca sözlü olarak bildirilir",
+      "E": "Cumhuriyet savcısına bilgi verildikten sonra yazılı olarak bildirilir"
+    },
+    "dogru": "C",
+    "aciklama": "Hükmün ölçtüğü şey hakların İÇERİĞİ değil, bildirimin BİÇİMİ ve ZAMANIDIR. Yönetmelik asıl biçimi YAZILI olarak belirlemiş, sözlü bildirimi ise yalnızca yazılı bildirimin hemen mümkün olmadığı hâller için ikincil bir çare olarak bırakmıştır; her iki hâlde de bildirim DERHÂL yapılır, ifade alma anına veya savcıya bilgi verilmesine ertelenemez. Bildirimin kapsamına yakalama sebebi ve iddiaların yanında susma hakkı, müdafiden yararlanma hakkı, yakalanmaya itiraz etme hakkı, diğer kanunî haklar ve itiraz hakkının NASIL KULLANILACAĞI da girer; hakkı söyleyip kullanma yolunu söylememek bildirimi eksik bırakır. Hükmün kapsamı bakımından en kritik kayıt, bildirimin SUÇ AYRIMI GÖZETİLMEKSİZİN yapılmasıdır: suçun ağırlığına, niteliğine veya soruşturmanın gizliliğine dayanılarak hak bildirimi yapılmaması ya da ertelenmesi mümkün değildir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 6/4",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-08",
+    "articleNo": "6",
+    "kok": "Suçüstü hâlinde yakalanan bir kişi ve olay hakkında kolluk görevlileri Cumhuriyet savcısına hemen bilgi vermiş, Cumhuriyet savcısı da sözlü emir vermiştir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu emrin yerine getirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Emrin yazılı hâle getirilmesi beklenmeden sözlü emrin gereği yerine getirilir",
+      "B": "Sözlü emrin gereği, en yakın sulh ceza hâkimine bilgi verildikten sonra yerine getirilir",
+      "C": "Sözlü emir, ancak gecikmesinde sakınca bulunan hâllerde yerine getirilebilir",
+      "D": "Sözlü emrin gereği, ilgili kolluk âmirinin yazılı onayı alındıktan sonra yerine getirilir",
+      "E": "Sözlü emir tutanağa geçirilip yakalanan kişiye imzalatıldıktan sonra yerine getirilir"
+    },
+    "dogru": "A",
+    "aciklama": "Burada iki ayrı yükümlülük üst üste bindirir ve soru bunların hangisinin ÖNCE geldiğini ölçer. Cumhuriyet savcısının verdiği sözlü emir, en kısa zamanda YAZILI HÂLE dönüştürülür ve mümkünse en seri iletişim vasıtasıyla ilgili kolluğa bildirilir; bu mümkün değilse ilgili kolluk görevlilerince alınmasına hazır edilir. Ancak yazıya dökme yükümlülüğü emrin İCRASINI GECİKTİRMEZ: kolluk görevlisi emrin yazılı hâle getirilmesini beklemeden sözlü emrin gereğini yerine getirir. Yani yazılı hâl, işlemin geçerlilik şartı değil, sonradan tamamlanan bir BELGELENDİRME adımıdır. Adayın düştüğü tuzak, yazılılığı bir ön şart sanıp icrayı bekletmektir; bu, hükmün kurulduğu acil durumun mantığına terstir. Sözlü emrin uygulanabilmesi için ayrıca hâkime bilgi verilmesi, âmir onayı alınması veya yakalanan kişiye imzalatılması gibi bir aşama Yönetmelikte öngörülmemiştir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 6/8",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p1-09",
+    "articleNo": "7",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yakalanan veya tutuklanarak bir yerden diğer bir yere nakledilen kişilere kelepçe takılabilmesi aşağıdakilerden hangisine bağlıdır?",
+    "siklar": {
+      "A": "Yakalamaya konu suçun kanunda öngörülen cezasının üst sınırının beş yıl hapsi aşıyor olmasına",
+      "B": "Kişi hakkındaki gözaltı süresinin Cumhuriyet savcısı tarafından uzatılmış bulunmasına",
+      "C": "Cumhuriyet savcısının bu yönde yazılı olarak vermiş olduğu bir emrin bulunmasına",
+      "D": "Nakil güzergâhının il sınırları dışına çıkacak olmasına",
+      "E": "Kaçacağına ya da beden bütünlüğü bakımından tehlike arz ettiğine dair belirti bulunmasına"
+    },
+    "dogru": "E",
+    "aciklama": "Kelepçe, Yönetmelikte otomatik bir nakil tedbiri olarak değil, SOMUT BELİRTİYE bağlı bir güvenlik tedbiri olarak düzenlenmiştir. Takılabilmesi için ya kişinin kaçacağına ya da kendisinin veya başkalarının hayat ve beden bütünlükleri bakımından tehlike arz ettiğine ilişkin belirtilerin bulunması gerekir. Yani ölçüt kişinin O ANDAKİ durumudur; suçun ağırlığı, cezanın üst sınırı, nakil mesafesi ya da hakkındaki gözaltı işleminin ne kadar sürdüğü tek başına kelepçe sebebi değildir. Hükmün ikinci özelliği yetkiyi kolluğa bırakmasıdır: belirtilerin varlığını değerlendirmek için ayrıca hâkim kararı veya savcı emri aranmaz; buna karşılık belirti yoksa, emir verilmiş olması da kelepçeyi meşrulaştırmaz. Yönetmeliğin çocuklar bakımından bu konuda AYRI VE DAHA KATI bir düzenleme getirdiği unutulmamalıdır; kelepçe kuralı yetişkin ile çocuk için aynı değildir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 7",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-10",
+    "articleNo": "8",
+    "kok": "Yakalanan bir kişinin yanında başka kimse bulunmamakta ve kişi, yakalandığının haber verilmesini istediği yakınının telefon numarasını bilmemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre haber verme işlemi nasıl yapılır?",
+    "siklar": {
+      "A": "Haber verme, yakalananın yazılı beyanı esas alınarak posta yoluyla yapılır",
+      "B": "Haber verme, nezarethane sorumlusunun yazısıyla mülkî amirlik aracılığıyla yapılır",
+      "C": "Haber verme, yakınının bulunduğu yerin ilgili kolluğu vasıtasıyla yapılır",
+      "D": "Haber verme, yakalananın nüfusa kayıtlı olduğu yer muhtarlığına tebligat yapılarak sağlanır",
+      "E": "Haber verme, baro tarafından görevlendirilen müdafi eliyle sağlanır"
+    },
+    "dogru": "C",
+    "aciklama": "Haber verme bir sonuç yükümlülüğü olarak kurar ve olayın şartlarına göre KADEMELİ bir vasıta listesi verir. Yakalananın yanında bir kişi varsa haber o kişi vasıtasıyla verilir. Kişi suçun işlendiği veya yakalandığı yerde ikâmet ediyor ve haber vereceği yakınının telefon numarasını biliyorsa ya da bu numara kolluk vasıtasıyla sair suretle tespit edilebiliyorsa telefonla haber verilir. Numarayı bilmiyorsa devreye İLGİLİ YER KOLLUĞU girer; yani yakınının bulunduğu yerdeki kolluk birimi aracılığıyla haber ulaştırılır. Konutu suç yeri dışında ise telefonla veya kişinin adresinin bulunduğu yerle ilişki kurularak haber verilir. Adayın hatası, numara bilinmediğinde yükümlülüğün düştüğünü sanmaktır; oysa Yönetmelik tam da bu ihtimal için ayrı bir yol göstermiştir. Haber verme, yakalananın kendi seçtiği bir yakınına veya belirlediği kişiye, Cumhuriyet savcısının emriyle ve GECİKMEKSİZİN yapılır; posta, muhtarlık veya müdafi aracılığı gibi yollar metinde öngörülmemiştir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 8/1-c",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p1-11",
+    "articleNo": "8",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yakalanan veya gözaltına alınan kişi yabancı ise durumun vatandaşı olduğu ülkenin büyükelçiliği veya konsolosluğuna haber verilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kişinin bu yönde yazılı talepte bulunması hâlinde haber verilir",
+      "B": "Kişinin yazılı olarak karşı çıkmaması hâlinde haber verilir",
+      "C": "Vatandaşı olduğu ülkenin temsilciliğinin talepte bulunması hâlinde haber verilir",
+      "D": "Cumhuriyet savcısının uygun görmesi hâlinde haber verilir",
+      "E": "Kişi hakkında sınır dışı etme kararı alınmış olması hâlinde haber verilir"
+    },
+    "dogru": "B",
+    "aciklama": "Bu hüküm bir İTİRAZ ETMEDİKÇE BİLDİRİLİR sistemi kurar. Yakalanan veya gözaltına alınan kişi yabancı ise, kural olarak durumu vatandaşı olduğu ülkenin büyükelçiliği veya konsolosluğuna bildirilir; bildirimin yapılmaması ancak kişinin YAZILI OLARAK KARŞI ÇIKMASI hâlinde söz konusu olur. Sınavda en sık yapılan hata, sistemi tersine çevirip bildirimi kişinin TALEBİNE bağlamaktır; oysa talep aranmaz, susan yabancı bakımından bildirim yapılır, karşı çıkma ise sözlü olarak değil yazılı olarak ortaya konmalıdır. Bildirim yükümlülüğü kişinin hangi suçtan yakalandığına, hakkında idarî bir karar bulunup bulunmadığına veya temsilciliğin bir talebi olup olmadığına bağlı değildir. Yabancıya yapılan bu bildirim, kişinin kendi belirlediği bir yakınına haber verilmesi yükümlülüğünün YERİNE GEÇMEZ; ikisi birbirinden bağımsız olarak yerine getirilir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 8/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-12",
+    "articleNo": "9",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yakalanan kişinin hekim kontrolünden geçirilerek yakalanma anındaki sağlık durumunun belirlenmesi hangi hâllerde gereklidir?",
+    "siklar": {
+      "A": "Kişinin kronik bir rahatsızlığı bulunduğunu beyan etmesi hâlinde",
+      "B": "Kişinin nezarethanede bir günden fazla tutulacak olması hâlinde",
+      "C": "Kişinin yabancı olması veya kimliğinin henüz tespit edilememiş olması hâllerinde",
+      "D": "Kişinin müdafiinin bu yönde talepte bulunması hâlinde",
+      "E": "Kişinin gözaltına alınacak olması ya da zor kullanılarak yakalanması hâlinde"
+    },
+    "dogru": "E",
+    "aciklama": "Yakalanma anındaki sağlık durumunun tespiti, sonradan ortaya çıkacak yaralanma iddialarının hangi ana ait olduğunu belirlemeye yarayan bir BAŞLANGIÇ KAYDIDIR. Bu nedenle tespit, kişinin talebine veya şikâyetine değil iki objektif hâle bağlanmıştır: kişinin gözaltına alınacak olması ya da zor kullanılarak yakalanmış olması. Zor kullanılmışsa, gözaltına alınmayacak olsa bile tespit yapılır; gözaltına alınacaksa, hiç zor kullanılmamış olsa bile yapılır. Sağlık kontrolü tek seferlik de değildir: gözaltına alınan kişinin herhangi bir nedenle yerinin değiştirilmesi, gözaltı süresinin uzatılması, serbest bırakılması veya adlî mercilere sevk edilmesi işlemlerinden ÖNCE de sağlık durumu hekim raporu ile tespit edilir. Gözaltındayken sağlık durumu bozulanlar ile sağlık durumundan şüphe edilenler derhâl hekim kontrolünden geçirilir ve gerekiyorsa tedavileri yaptırılır. Tıbbî muayene, kontrol ve tedavi işlemleri adlî tıp kurumu veya resmî sağlık kuruluşlarınca yapılır. Muayenede esas olan hekim ile muayene edilen şahsın YALNIZ KALMASI ve muayenenin hekim hasta ilişkisi çerçevesinde yürütülmesidir; hekim kişisel güvenlik endişesini ileri sürerek muayenenin kolluk görevlisinin gözetiminde yapılmasını isteyebilir, bu istek belgelendirilerek yerine getirilir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 9/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-13",
+    "articleNo": "9",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, gözaltına alınan kişinin ifadesini alan veya soruşturmayı yürüten kolluk görevlisi ile bu kişiyi tıbbî muayeneye götüren kolluk görevlisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Aynı görevlinin her iki işlemi birlikte yürütmesi esastır",
+      "B": "Farklı olmaları zorunludur; bulunamazsa bu durum belgelendirilir",
+      "C": "Farklı olmaları, ancak müdafiin bu yönde talepte bulunması hâlinde aranır",
+      "D": "Farklı olmaları, gözaltı ve nezarethane sorumlusunun takdirine bırakılmıştır",
+      "E": "Farklı olmaları, kadın şüpheliler bakımından zorunlu tutulmuştur"
+    },
+    "dogru": "B",
+    "aciklama": "Hüküm, muayeneyi soruşturmadan ayırmayı amaçlayan bir GÜVENCE kuralıdır: ifadeyi alan ya da soruşturmayı yürüten görevlinin aynı zamanda kişiyi hekime götürmesi, muayenenin serbestliği bakımından sakınca doğurduğu için Yönetmelik bu iki görevlinin FARKLI OLMASINI ZORUNLU tutmuştur. Kural mutlak bir yasak değil, gerçekleşememesi hâlinde belgelendirme yükümlülüğü doğuran bir zorunluluktur: yalnızca PERSONEL YETERSİZLİĞİ nedeniyle farklı bir kolluk görevlisi bulunamıyorsa bu durum belgelendirilir. Sınavda iki hata yapılır. Birincisi, kuralı talebe bağlı sanmaktır; oysa ne şüphelinin ne de müdafiin talebi aranır, kural kendiliğinden işler. İkincisi, istisnayı genişletip yoğunluk, zaman darlığı veya âmir takdiri gibi sebepleri de belgelendirme kapsamına sokmaktır; metinde belgelendirmeye izin veren tek sebep personel yetersizliğidir. Kuralın kadın ya da erkek şüpheli ayrımıyla da ilgisi yoktur.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 9/4",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-14",
+    "articleNo": "9",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, muayene sırasında işkence, neticesi sebebiyle ağırlaşmış işkence veya eziyet suçlarının işlendiği yolunda herhangi bir bulguya rastlayan hekim ne yapar?",
+    "siklar": {
+      "A": "Keyfiyeti, rapor tamamlanmadan derhâl Cumhuriyet savcısına bildirir",
+      "B": "Durumu düzenlediği rapora işleyerek raporu gözaltı birimi âmirine verir",
+      "C": "Muayeneyi tamamlayıp durumu ilgili sağlık kuruluşunun başhekimliğine bildirir",
+      "D": "Keyfiyeti mülkî amire bildirerek soruşturma izni verilmesini ister",
+      "E": "Durumu nezarethane defterine kaydettirerek yapılacak denetimi bekler"
+    },
+    "dogru": "A",
+    "aciklama": "Hekime, adlî makamla doğrudan temas kuran bir BİLDİRİM yükümlülüğü yüklenmiştir. Muayene esnasında 5237 sayılı Türk Ceza Kanununda düzenlenen işkence, neticesi sebebiyle ağırlaşmış işkence ve eziyet suçlarının işlendiği yolunda herhangi bir bulguya rastlanırsa keyfiyet DERHÂL Cumhuriyet savcısına bildirilir; bildirim raporun tamamlanmasına, kuruma teslimine ya da başka bir makamın onayına bırakılmaz. Bunun sebebi zincirin kırılmasını önlemektir: bildirimin kolluk hiyerarşisi veya idarî makamlar üzerinden yapılması, bulgunun bildirildiği yeri şüphe altındaki birimin kendisi hâline getirebilir. Hekimin yükümlülüğü için kesin kanaate ulaşması da gerekmez; metin HERHANGİ BİR BULGU ifadesini kullanmıştır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 9/9",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-15",
+    "articleNo": "11",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, nezarethane işlemleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Aynı suçla ilgisi olanlar ile birbirine hasım olanlar bir araya konulmaz",
+      "B": "Nezarethanede zarurî hâller dışında beşten fazla kişi bir arada bulundurulmaz",
+      "C": "Tuvalet, temizlik gibi zorunlu ihtiyaçların giderilmesi görevli memurun gözetiminde sağlanır",
+      "D": "Gözaltındaki kişinin beslenme ve nakil giderleri kişinin kendisi veya yakınları tarafından karşılanır",
+      "E": "Saldırgan tutum ve davranışları kontrol altına alınamayan kişiler tıbbî müdahale için sağlık kuruluşlarına gönderilir"
+    },
+    "dogru": "D",
+    "aciklama": "Gözaltındaki kişinin beslenmesi, nakli, sağlığının korunması ve gerektiğinde tedavisi ile yakalandığının yakınlarına haber verilmesi giderleri, İLGİLİ BİRİMİN BAĞLI OLDUĞU BAKANLIĞIN bütçe ödeneklerinden karşılanır. Bu, gözaltının bir kamu tedbiri olmasının doğal sonucudur: özgürlüğü kısıtlanan kişi kendi geçimini sağlayamayacak durumdadır ve masrafın ona ya da yakınlarına yüklenmesi, tedbiri fiilen bir cezaya dönüştürür. Diğer seçenekler nezarethane işlemlerinin gerçek kurallarıdır. Nezarethanede kimlerin bir arada bulunamayacağı, kapasite sınırı, zorunlu ihtiyaçların görevli gözetiminde giderilmesi ve saldırgan tutumu kontrol altına alınamayan kişilerin sağlık kuruluşuna gönderilmesi ayrı ayrı düzenlenmiştir. Saldırganlık hâlinde izlenecek sıra da önemlidir: kişi ÖNCE SÖZLE kontrol altına alınmaya çalışılır, bu mümkün olmazsa hareketini giderecek derecede kuvvet kullanılabilir; zarurî olmadıkça, kendisinin veya başkasının hayatı, vücut bütünlüğü ya da sağlığı tehlikeye girmedikçe kuvvete başvurulmaz.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 11/h",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-16",
+    "articleNo": "12",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, aşağıdakilerden hangisi nezarethaneye alınanların kaydına ait defterde \"çıkış işlemleri\"nden biri değildir?",
+    "siklar": {
+      "A": "Sevk edildiği makam ile sevk evrakının tarihi ve sayısı",
+      "B": "Girişte alınan hekim raporunun tarihi ve sayısı",
+      "C": "Kontrol eden âmirin adı, soyadı, rütbesi ve imzası",
+      "D": "Kişinin kendisine teslim edilen malzemeler ve imzası",
+      "E": "Geçici ayrılışlar ile ilân, işlemler ve sonuç"
+    },
+    "dogru": "B",
+    "aciklama": "Nezarethaneye alınanların kaydına ait defter, gözaltı işleminin baştan sona izlenebilmesi için ZAMAN SIRASINA göre bölümlenmiştir; soruların çoğu bir kaydın hangi bölüme ait olduğunu ölçer. Defterin ilk bölümü KİMLİK BİLGİLERİDİR: adı ve soyadı, anne ve baba adı, cinsiyeti, doğum yeri ve tarihi, nüfusa kayıtlı olduğu yer, cilt, aile sıra ve kayıt numarası, yabancılar için pasaport numarası, ikâmet adresi, iş adresi ve telefon numaraları ile Türkiye Cumhuriyeti kimlik numarası. Girişte alınan hekim raporuna ilişkin bilgiler GİRİŞ İŞLEMLERİ bölümünde yer alır; bu bölümde ayrıca yakalamanın yeri, tarihi ve saati, nezarethaneye giriş tarihi ve saati, üst aramasında teslim alınan malzemeler ile giriş işlemini yapan görevlinin adı, soyadı, rütbesi ve imzası bulunur. ÇIKIŞ İŞLEMLERİ bölümü ise kişinin nezarethaneden ayrılışına ilişkin kayıtları taşır: çıkarıldığı tarih ve saat, sevk edildiği makam, sevk evrakının tarihi ve sayısı, teslim alan görevlinin bilgileri ve imzası, kişinin kendisine ya da görevliye teslim edilen malzemeler ve imzaları, geçici ayrılışlar, ilân, işlemler ve sonuç ile çıkış işlemini yapan görevlinin ve kontrol eden âmirin kimlik bilgileri ve imzaları. Defterin DENETİME TÂBİ olduğu ve zorunlu bilgiler dışında gerekli görülen başka bilgilere de yer verilebileceği ayrıca belirtilmiştir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 12/e",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-17",
+    "articleNo": "13",
+    "kok": "Gözaltı süresi, yakalama yerine en yakın hâkim veya mahkemeye gönderilmesi için zorunlu süre hariç, yakalama anından itibaren - - - - saati geçemez. Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre ise - - - - saatten fazla olamaz. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangileri getirilmelidir?",
+    "siklar": {
+      "A": "kırk sekiz - yirmi dört",
+      "B": "yirmi dört - yirmi dört",
+      "C": "otuz altı - on iki",
+      "D": "yirmi dört - on iki",
+      "E": "kırk sekiz - on iki"
+    },
+    "dogru": "D",
+    "aciklama": "Hükümde iki ayrı süre vardır ve sınav sorusu genellikle bunları birbirine karıştırtarak kurulur. Birincisi gözaltının kendi süresidir: yakalama anından itibaren yirmi dört saati geçemez. İkincisi yol süresidir: yakalama yerine en yakın hâkim veya mahkemeye gönderilme için zorunlu süre on iki saatten fazla olamaz. Yol süresi gözaltı süresinin İÇİNDE DEĞİL, DIŞINDADIR; hüküm bunu açıkça hariç tutmuştur, dolayısıyla iki süre birbirinden düşülmez. Başlangıç anı da ayrı bir ayrıntıdır: süre nezarethaneye girişten, ifadenin alınmasından ya da savcıya bilgi verilmesinden değil, YAKALAMA ANINDAN itibaren işler. Ayrıca yol süresi bir hak değil bir üst sınırdır; fiilen gerekmeyen bir yol süresi işletilerek gözaltı uzatılamaz. Toplu olarak işlenen suçlarda bu genel sürenin uzatılabildiği ayrı bir rejim bulunduğu, ancak bunun kendiliğinden değil yazılı emirle işlediği unutulmamalıdır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 13/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-18",
+    "articleNo": "14",
+    "kok": "Toplu olarak işlenen suçlarda, delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu nedeniyle Cumhuriyet savcısı gözaltı süresinin uzatılmasına yazılı olarak emir verebilir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu uzatma en çok ne kadar olabilir?",
+    "siklar": {
+      "A": "Her defasında bir günü geçmemek üzere dört gün",
+      "B": "Her defasında iki günü geçmemek üzere dört gün",
+      "C": "Her defasında bir günü geçmemek üzere üç gün",
+      "D": "Her defasında bir günü geçmemek üzere yedi gün",
+      "E": "Her defasında üç günü geçmemek üzere yedi gün"
+    },
+    "dogru": "C",
+    "aciklama": "Uzatma hükmü iki katmanlı bir sınır getirir ve soru çoğu zaman bu katmanlardan yalnızca birini doğru verip diğerini bozar. Birinci sınır TEK SEFERLİK uzatmanın üst ölçüsüdür: her defasında bir günü geçemez. İkinci sınır TOPLAM uzatmanın üst ölçüsüdür: üç gün. Yani savcı bir kalemde üç günlük uzatma emri veremez; her uzatmayı ayrı ayrı ve birer günü aşmayacak şekilde vermek zorundadır. Uzatmanın şartları da sınırlıdır: suçun toplu olarak işlenmiş olması ve delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğu aranır; bunlar yoksa gözaltı süresi uzatılamaz. Emir YAZILI olarak verilir ve gözaltına alınana DERHÂL TEBLİĞ edilir; tebliğ edilmeyen bir uzatma emri kişinin itiraz yolunu fiilen kapatır. Hükmün kapanış cümlesi de bir güvence taşır: kimse, bu süreler geçtikten sonra hâkim kararı olmaksızın hürriyetinden mahrum bırakılamaz.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 14/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-19",
+    "articleNo": "15",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yakalama veya gözaltına alma işlemine ya da gözaltı süresinin uzatılmasına ilişkin Cumhuriyet savcısının yazılı emrine karşı, yakalanan kişinin hemen serbest bırakılmasını sağlamak için sulh ceza hâkimine başvurabilecekler arasında aşağıdakilerden hangisi sayılmamıştır?",
+    "siklar": {
+      "A": "Yakalanan kişinin müdafii",
+      "B": "Yakalanan kişinin kanunî temsilcisi",
+      "C": "Yakalanan kişinin ikinci derecede kan hısımları",
+      "D": "Yakalanan kişinin eşi",
+      "E": "Yakalanan kişinin üçüncü derecede kan hısımı"
+    },
+    "dogru": "E",
+    "aciklama": "Başvuru hakkı burada KAPALI BİR ÇEVREYE tanımıştır: yakalanan kişinin kendisi, müdafii, kanunî temsilcisi, eşi ile birinci veya ikinci derecede kan hısımları. Kan hısımlığında sınır İKİNCİ DERECEDE biter; üçüncü derece kan hısımları ile kayın hısımları bu çevrenin dışındadır. Başvurunun konusu da üç işlemle sınırlıdır: yakalama işlemi, gözaltına alma işlemi ve gözaltı süresinin uzatılmasına ilişkin Cumhuriyet savcısının yazılı emri. Başvurunun muhatabı SULH CEZA HÂKİMİDİR ve amacı kişinin hemen serbest bırakılmasını sağlamaktır. Usul bakımından tek bir şekil şartı öngörülmemiş, buna karşılık idareye hız yükümlülüğü yüklenmiştir: yakalanan kişinin dilekçesi yetkili hâkime EN SERİ ŞEKİLDE ulaştırılır. Yani dilekçenin kolluk elinde bekletilmesi başlı başına bir aykırılıktır; başvurunun anlamı ancak gözaltı sürerken sonuç doğurmasındadır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 15",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-20",
+    "articleNo": "18",
+    "kok": "Gözaltı süresinin dolması üzerine serbest bırakılan bir kişi hakkında kolluk, yakalamaya neden olan aynı fiille ilgili olarak yeniden yakalama işlemi uygulamak istemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu işlem hangi şartla yapılabilir?",
+    "siklar": {
+      "A": "Yeni ve yeterli delil elde edilmesi hâlinde, ayrıca bir karara gerek olmaksızın",
+      "B": "Cumhuriyet savcısının kararının bulunması hâlinde, yeni delil aranmaksızın",
+      "C": "Serbest bırakılmasından itibaren gözaltı süresi kadar bir sürenin geçmiş olması hâlinde",
+      "D": "Yeni ve yeterli delil elde edilmesi ve Cumhuriyet savcısının kararı bulunması hâlinde",
+      "E": "Sulh ceza hâkiminin yeni bir yakalama kararı vermiş olması hâlinde"
+    },
+    "dogru": "D",
+    "aciklama": "Yeniden yakalama yasağı, gözaltı sürelerinin arka arkaya işletilerek fiilen uzatılmasını önleyen bir güvencedir. Gözaltı süresinin dolması veya sulh ceza hâkiminin kararı üzerine serbest bırakılan kişi hakkında, yakalamaya neden olan FİİLLE İLGİLİ olarak yeniden yakalama işlemi kural olarak UYGULANAMAZ. Yasağın kalkması iki şartın BİRLİKTE gerçekleşmesine bağlıdır: yeni ve yeterli delil elde edilmesi VE Cumhuriyet savcısının kararının bulunması. Bu şartlar seçimlik değildir; yalnızca yeni delil bulunması ya da yalnızca savcı kararı alınması yeterli olmaz. Adayın en sık düştüğü tuzak, delili tek başına yeterli sayıp karar şartını atlamaktır. Yasağın kapsamı da dikkat ister: yasak AYNI NEDENLE yakalamaya ilişkindir; kişinin bambaşka bir fiilden yakalanmasını engellemez. Ayrıca beklemekle yasak kendiliğinden kalkmaz; sürenin üzerinden ne kadar zaman geçtiğinin bu hükümde bir önemi yoktur.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 18",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p1-21",
+    "articleNo": "19",
+    "kok": "Fiili işlediği zaman - - - - yaşını doldurmamış olanlar ile - - - - yaşını doldurmamış sağır ve dilsizler suç nedeni ile yakalanamaz ve hiçbir suretle suç tespitinde kullanılamaz. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangileri getirilmelidir?",
+    "siklar": {
+      "A": "on iki - on beş",
+      "B": "on iki - on sekiz",
+      "C": "on beş - on sekiz",
+      "D": "on bir - on beş",
+      "E": "on beş - on iki"
+    },
+    "dogru": "A",
+    "aciklama": "Yönetmelik çocuklar bakımından yakalama ve ifade alma yetkilerini yaşa göre sınırlandırmıştır ve buradaki iki eşik birbirine karıştırılır. Genel eşik ON İKİ yaştır: fiili işlediği zaman on iki yaşını doldurmamış olanlar suç nedeni ile yakalanamaz. Sağır ve dilsizler bakımından ise eşik daha yukarı çekilmiştir; onlar için ölçüt ON BEŞ yaşını doldurmamış olmaktır. Eşiğin farklı olmasının sebebi, iletişim güçlüğünün ceza muhakemesi işlemlerinde ek bir korunma ihtiyacı doğurmasıdır. Belirleyici an da önemlidir: yaş, yakalama anına göre değil FİİLİN İŞLENDİĞİ ZAMANA göre hesaplanır; aradan geçen sürede yaşın büyümesi rejimi değiştirmez. Bu yaş gruplarındaki çocuklar suç nedeni ile yakalanamadıkları gibi hiçbir suretle suç tespitinde de kullanılamazlar. On iki yaşını doldurmuş ancak on sekiz yaşını doldurmamış olanlar ise suç sebebi ile yakalanabilirler; onlar hakkında Yönetmelikte ayrıntılı ve özel bir usul öngörülmüştür.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 19/a-1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-22",
+    "articleNo": "19",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, suç nedeni ile yakalanamayacak yaş grubunda bulunan bir çocuk hakkında kimlik ve suç tespiti amacıyla yakalama yapılması hâlinde aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Çocuk, Cumhuriyet savcısının emri alınıncaya kadar gözaltında tutulur",
+      "B": "Çocuk hakkında sulh ceza hâkiminden tedbir kararı alınmak üzere adliyeye sevk edilir",
+      "C": "Çocuk, ana-babası veya vasisi gelinceye kadar nezarethanede bekletilir",
+      "D": "Çocuk, kimlik tespitinden sonra kolluk tarafından doğrudan bir ıslah kurumuna teslim edilir",
+      "E": "Kimlik tespitinden hemen sonra serbest bırakılır, durum başsavcılığa bildirilir"
+    },
+    "dogru": "E",
+    "aciklama": "Bu yaş grubunda yakalamanın AMACI rejimi belirler. Suç nedeni ile yakalama yasaktır; buna karşılık kimlik ve suç tespiti amacı ile yakalama yapılabilir. Amaç dar olduğu için sonucu da dardır: çocuk, KİMLİK TESPİTİNDEN HEMEN SONRA serbest bırakılır. Yani bu yakalama bir gözaltına dönüşemez, nezarethanede bekletmeye, sevk etmeye ya da bir kuruma teslime dayanak yapılamaz. Tespit edilen kimlik ve suç boşa da düşmez; tedbir kararı alınmasına esas olmak üzere DERHÂL Cumhuriyet başsavcılığına bildirilir ve tedbir kararını mahkeme başkanı veya hâkim verir. Böylece çocuk hakkında ceza muhakemesi değil, KORUYUCU TEDBİR yolu işletilmiş olur. Adayın düştüğü tuzak, çocuğun serbest bırakılmasını dosyanın kapanması sanmak ya da tersine, bildirim yükümlülüğünden hareketle çocuğun adlî mercilere götürülmesi gerektiğini düşünmektir; Yönetmelik çocuğu serbest bırakıp EVRAKI yürütmeyi tercih etmiştir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 19/a-2",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-24",
+    "articleNo": "19",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, suç sebebi ile yakalanan çocuğun ana-babası veya vasisinin ifade alınırken hazır bulunabilmesi hangi şarta bağlıdır?",
+    "siklar": {
+      "A": "Çocuğun bu yönde talepte bulunmuş olmasına",
+      "B": "Ana-babası veya vasisinin çocuğa daha önce müdafi seçmemiş olmasına",
+      "C": "Yararına aykırılığın saptanmamış ve kanunî engel bulunmamasına",
+      "D": "Cumhuriyet savcısının bu yönde yazılı izin vermiş olmasına",
+      "E": "İfadenin kolluk tarafından değil, adliyede alınıyor olmasına"
+    },
+    "dogru": "C",
+    "aciklama": "Ana-baba veya vasinin ifade sırasında hazır bulunması, Yönetmelikte bir kural olarak kabul edilmiş, ancak İKİ NEGATİF ŞARTA bağlanmıştır: hazır bulunmanın ÇOCUĞUN YARARINA AYKIRI olduğunun saptanmamış olması ve kanunî bir engel bulunmaması. Şartların negatif kurulması yönü belirler: kural hazır bulunabilmedir, bunun engellenmesi için somut bir sakıncanın ortaya konması gerekir. Uygulamada bu ölçüt en çok, suçun mağduru ya da şüphelisi ile ana-baba arasında menfaat çatışması bulunan hâllerde işler. Çocuğun kendi talebi bir şart değildir; talep aranmadan da ana-baba hazır bulunabilir, buna karşılık yarara aykırılık saptanmışsa çocuk istese de hazır bulunamaz. Ayrı bir konu olan müdafi güvencesi ise bundan bağımsızdır: çocuk KENDİ TALEBİ OLMASA BİLE müdafiden yararlandırılır, ana-baba veya vasisi de ona müdafi seçebilir. Yani ana-babanın hazır bulunması müdafiin yerine geçen bir çözüm değildir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 19/b-4",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-25",
+    "articleNo": "20",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, müdafiin şüpheli veya sanıkla görüşme, ifade alma veya sorgu süresince yanında olma ve hukukî yardımda bulunma hakkı bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Soruşturmanın gizliliği kararı verilmesi hâlinde kovuşturma evresine kadar kısıtlanabilir",
+      "B": "Kovuşturma evresi bakımından engellenemez, soruşturma evresinde kısıtlanabilir",
+      "C": "Yetkili Cumhuriyet savcısının vereceği bir kararla geçici olarak kısıtlanabilir",
+      "D": "Soruşturma ve kovuşturma evrelerinin her aşamasında engellenemez ve kısıtlanamaz",
+      "E": "Sulh ceza hâkiminin vereceği kararla soruşturma evresinde askıya alınabilir"
+    },
+    "dogru": "D",
+    "aciklama": "Yönetmelik müdafiin savunma faaliyetini üç ayrı görünüme ayırıp üçünü birden koruma altına almıştır: şüpheli veya sanıkla GÖRÜŞME, İFADE ALMA veya SORGU SÜRESİNCE YANINDA OLMA ve HUKUKÎ YARDIMDA BULUNMA. Bu haklar soruşturma ve kovuşturma evrelerinin HER AŞAMASINDA engellenemez ve kısıtlanamaz. Hükmün ölçme değeri, korumanın bir makam kararına açık bırakılmamış olmasıdır: savcı emri, hâkim kararı ya da gizlilik gerekçesi bu üç hakkı askıya almanın dayanağı yapılamaz; evre farkı da bir ayrım yaratmaz. Aynı maddenin başlangıç hükmü, savunmanın kişiye bağlı olmadığını da gösterir: şüpheli veya sanık soruşturma ve kovuşturmanın her aşamasında bir veya birden fazla müdafiin yardımından yararlanabilir; kanunî temsilcisi varsa o da şüpheliye veya sanığa müdafi seçebilir. Yani müdafi seçme iradesi yalnızca şüphelinin tekelinde değildir. Müdafiin ifade sırasında hazır bulunabileceği sayısı ile hangi hâllerde talep aranmaksızın görevlendirme yapılacağı ise ayrı fıkralarda düzenlenmiştir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 20/3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-26",
+    "articleNo": "22",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, müdafiin soruşturma evresinde kollukta bulunan soruşturma dosyasını inceleyebilmesi için aşağıdakilerden hangisi gerekir?",
+    "siklar": {
+      "A": "Yetkili Cumhuriyet savcısının vereceği yazılı emir",
+      "B": "Sulh ceza hâkiminin bu yönde vereceği inceleme kararı",
+      "C": "Bağlı bulunduğu baro başkanlığının düzenleyeceği yazı",
+      "D": "Şüphelinin bu yönde vereceği yazılı muvafakat",
+      "E": "İlgili kolluk biriminin âmirinin vereceği inceleme onayı"
+    },
+    "dogru": "A",
+    "aciklama": "Müdafi, soruşturma evresinde dosya içeriğini inceleyebilir ve istediği belgelerin bir örneğini HARÇSIZ olarak alabilir; bu, savunmanın soruşturma evresindeki temel bilgi edinme yoludur. Yönetmelik dosyanın FİZİKÎ OLARAK NEREDE bulunduğuna göre bir usul farkı getirir: dosya kollukta ise inceleme için yetkili Cumhuriyet savcısının YAZILI EMRİ gerekir. Bunun sebebi soruşturmanın sahibinin savcı olmasıdır; kolluk, elindeki dosyayı kendi takdiriyle incelemeye açamaz, âmirinin onayı da savcı emrinin yerini tutmaz. Baro yazısı veya şüphelinin muvafakati de aranan bir şart değildir; müdafiin bu yetkisi görevinden doğar. İnceleme yetkisi evreye göre de genişler: müdafi, Cumhuriyet başsavcılığınca iddianamenin mahkemeye verildiği tarihten itibaren dosya içeriğini ve muhafaza altına alınmış delilleri inceleyebilir, bütün tutanak ve belgelerin örneklerini harçsız olarak alabilir. Maddenin tanıdığı haklardan suçtan zarar görenin VEKİLİ de yararlanır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 22/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-27",
+    "articleNo": "23",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, şüphelinin ifadesinin alınmasında kimliğine ilişkin sorular bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kimliğe ilişkin sorular, yakalama tutanağındaki bilgiler esas alınarak sorulmaz",
+      "B": "Kimliğe ilişkin sorulara cevap verilmesi, müdafiin hazır bulunmasına bağlıdır",
+      "C": "Şüpheli, kimliğine ilişkin soruları doğru olarak cevaplandırmakla yükümlüdür",
+      "D": "Kimlik tespiti ifade işleminden ayrı tutulur ve nezarethane girişinde yapılır",
+      "E": "Kimliğe ilişkin beyanlar, şüphelinin talebi hâlinde tutanağa geçirilmez"
+    },
+    "dogru": "C",
+    "aciklama": "İfade almanın ilk adımı şüphelinin kimliğinin saptanmasıdır ve burada şüpheliye bir YÜKÜMLÜLÜK yüklenmiştir: kimliğine ilişkin soruları DOĞRU OLARAK cevaplandırmak zorundadır. Bu, ifade rejiminin en çok karıştırılan ayrımıdır. Şüphelinin susma hakkı, YÜKLENEN SUÇ HAKKINDA açıklamada bulunmamaya ilişkindir; kim olduğunu gizlemeye ya da yanlış kimlik bildirmeye izin vermez. Kimliğin doğru saptanması yalnızca kayıt düzeni meselesi de değildir; haber verilecek yakının belirlenmesinden yaşa bağlı özel usullerin uygulanmasına kadar birçok güvence buna bağlıdır. Kimlik saptandıktan sonra kendisine yüklenen suç anlatılır, müdafi seçme hakkının bulunduğu ve müdafiin ifade sırasında hazır bulunabileceği bildirilir, açıklamada bulunmamasının kanunî hakkı olduğu söylenir, şüpheden kurtulması için somut delillerin toplanmasını isteyebileceği hatırlatılır ve kişisel ve ekonomik durumu hakkında bilgi alınır. Müdafiin rolü de sınırlıdır: SADECE HUKUKÎ YARDIMDA bulunabilir, şüpheliye sorulan soruya doğrudan cevap veremez ve onun yerini aldığı izlenimi veren bir müdahalede bulunamaz; buna karşılık beyanı ve her türlü müdahalesi tutanağa geçirilir. Bütün bu işlemler bir tutanağa bağlanır ve tutanakta, sayılan işlemlerin yerine getirilip getirilmediği de gösterilir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 23/a",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p1-28",
+    "articleNo": "24",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'nde, ifade veren şüphelinin beyanının özgür iradesine dayanmasını engelleyici nitelikte olduğu için yapılamayacağı açıkça sayılan bedensel veya ruhsal müdahaleler arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Yorma",
+      "B": "Aldatma",
+      "C": "Cebir veya tehditte bulunma yahut bazı araçları kullanma",
+      "D": "İlâç verme",
+      "E": "Kanuna aykırı yarar vaat etme"
+    },
+    "dogru": "E",
+    "aciklama": "Yasak usuller tek bir yığın hâlinde değil, İKİ AYRI KATEGORİDE düzenlemiştir ve soru bu ayrımı ölçer. Birinci kategori, beyanın özgür iradeye dayanmasını engelleyici nitelikteki BEDENSEL VEYA RUHSAL MÜDAHALELERDİR: kötü davranma, işkence, ilâç verme, yorma, aldatma, cebir veya tehditte bulunma ve bazı araçları kullanma bu kategoride sayılmıştır. İkinci kategori ise kişinin iradesini müdahaleyle değil ÖZENDİRMEYLE bozan davranıştır ve ayrı bir hüküm hâlinde kurulmuştur: kanuna aykırı bir yarar vaat edilemez. Yani yarar vaadi de yasaktır, ancak bedensel veya ruhsal müdahaleler listesinin içinde yer almaz. Adayın hatası, iki kategoriyi birleştirip hepsini aynı fıkrada sanmaktır. Ayrımın pratik değeri, yasağın kaynağının müdahale değil TELKİN olduğu hâllerde de ifadenin sakatlanmasıdır; listede sayılmamış olması yarar vaadini serbest bırakmaz.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 24/1",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p1-29",
+    "articleNo": "24",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yasak usullerle elde edilen ifadeler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Şüphelinin sonradan doğrulaması hâlinde delil olarak değerlendirilir",
+      "B": "İfade, rıza ile verilmiş olsa dahi hiçbir şekilde delil olarak değerlendirilemez",
+      "C": "Yalnızca ifadeyi alan görevli hakkında işlem yapılmasını gerektirir, ifade geçerli kalır",
+      "D": "Hâkim tarafından yeniden alınması hâlinde ilk ifade de geçerlilik kazanır",
+      "E": "İfade alınırken müdafi hazır bulunmuşsa delil olarak değerlendirilebilir"
+    },
+    "dogru": "B",
+    "aciklama": "Yasak usul yaptırımı, İRADEYE DEĞİL USULE bağlanmış mutlak bir değerlendirme yasağıdır: yasak usullerle elde edilen ifadeler RIZA İLE VERİLMİŞ OLSA DA delil olarak değerlendirilemez. Rızanın sonucu değiştirmemesinin sebebi açıktır; yasak usulün kendisi zaten iradeyi sakatlayan bir ortam yaratır, o ortamda verilen rıza da güvenilir sayılmaz. Bu nedenle şüphelinin sonradan beyanını doğrulaması, ifadenin müdafi huzurunda alınmış olması veya işlemi yapan görevli hakkında ayrıca işlem yapılması ifadeyi kullanılabilir hâle getirmez; sakatlık ifadenin kendisine yapışmıştır. Maddenin dayandığı ilke ilk cümlede kurulmuştur: ifade veren şüphelinin beyanı ÖZGÜR İRADESİNE dayanmalıdır. Aynı çerçevede kimse, kendisini veya kanunda gösterilen yakınlarını suçlayan bir beyanda bulunmaya ya da bu yolda delil göstermeye zorlanamaz; yani koruma yalnızca yöntemleri değil, beyana zorlamanın kendisini de kapsar.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 24/3",
+    "zorluk": "easy",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p1-30",
+    "articleNo": "24",
+    "kok": "Kollukta ifadesi alınan bir şüphelinin, aynı olayla ilgili olarak yeniden ifadesinin alınması ihtiyacı ortaya çıkmıştır. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu işlem kim tarafından yapılabilir?",
+    "siklar": {
+      "A": "İlk ifadeyi alan görevli dışındaki bir kolluk görevlisi tarafından yapılabilir",
+      "B": "Cumhuriyet savcısının yazılı emri üzerine kolluk görevlilerince yapılabilir",
+      "C": "Bu işlem ancak Cumhuriyet savcısının kendisi tarafından yapılabilir",
+      "D": "Adlî kolluk âmirinin görevlendireceği bir görevli tarafından yapılabilir",
+      "E": "Görevlendirilecek bir sulh ceza hâkimi eliyle yapılabilir"
+    },
+    "dogru": "C",
+    "aciklama": "Bu hüküm, aynı olayın tekrar tekrar sorulmasıyla şüphelinin yıpratılmasını ve beyanının zamanla değiştirilmesini önlemeye dönük bir güvencedir. Şüphelinin AYNI OLAYLA ilgili olarak yeniden ifadesinin alınması ihtiyacı ortaya çıktığında bu işlem ANCAK CUMHURİYET SAVCISI tarafından yapılabilir. Yani ikinci ifade yetkisi kollukta değildir; savcının yazılı emri de bu yetkiyi kolluğa devretmez, çünkü hüküm bir izin şartı değil bir MAKAM ŞARTI koymuştur. İfadeyi alan görevlinin değiştirilmesi de sonucu değiştirmez. Sınırın kapsamı iyi okunmalıdır: kısıtlama aynı olay bakımındandır; şüphelinin başka bir olayla ilgili ifadesinin kollukta alınmasına engel değildir. Uygulamada bu kural, ilk ifadesinde susma hakkını kullanan ya da lehine beyanda bulunan şüphelinin tekrar tekrar kolluğa çağrılmasının önüne geçer.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 24/4",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p1-31",
+    "articleNo": "27",
+    "kok": "Hakkındaki soruşturma sürerken gözaltında bulunan bir kişinin basın mensuplarının sorularını cevaplaması ve görüntülerinin alınması talep edilmektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu talep bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kişinin kendi rızasının bulunması hâlinde görüşme yapılabilir",
+      "B": "Kişinin basınla görüştürülmesine ve görüntülerinin alınmasına sebebiyet verilmez",
+      "C": "Cumhuriyet savcısının izniyle görüntü alınmasına imkân tanınabilir",
+      "D": "Müdafiin hazır bulunması şartıyla görüşme yapılmasına izin verilebilir",
+      "E": "Soruşturma evrakı yayımlanmadığı sürece görüşme yapılmasında bir sakınca bulunmaz"
+    },
+    "dogru": "B",
+    "aciklama": "Hüküm iki ilkeyi birleştirir: suçluluğu bir yargı hükmüne bağlanana kadar kişinin MASUMİYETİ esastır ve soruşturma evresi GİZLİDİR. Bu iki ilkenin sonucu, gözaltındaki kişinin kamuoyu önünde suçlu gibi gösterilmesini önleyen bir yasak demetidir: kişinin suçlu olarak kamuoyuna duyurulmasına, basın önüne çıkartılmasına, basınla sorulu cevaplı görüştürülmesine, görüntülerinin alınmasına ve teşhir edilmesine sebebiyet verilmez; soruşturma evrakı da HİÇBİR ŞEKİLDE yayımlanamaz. Yasağın niteliği burada kritiktir: koruma yalnızca kişinin menfaatine değil, soruşturmanın gizliliğine de dayandığı için kişinin RIZASI yasağı kaldırmaz; müdafiin hazır bulunması ya da bir makamın izin vermesi de dayanak olamaz. Metnin SEBEBİYET VERİLMEZ ifadesi de yükümlülüğün kapsamını genişletir: görevlilerden beklenen yalnızca böyle bir görüşmeyi kendilerinin düzenlememesi değil, gerçekleşmesine imkân veren ortamı da oluşturmamaktır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 27",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p1-32",
+    "articleNo": "28",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, Cumhuriyet savcısının yaptırabileceği yer gösterme işlemi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Hakkında tutuklama kararı verilmiş şüpheliye yaptırılamaz",
+      "B": "İşlem sırasında müdafiin hazır bulunması mümkün değildir",
+      "C": "İşlem tutanağa bağlanmaz, düzenlenen soruşturma raporunda belirtilmesi yeterlidir",
+      "D": "Kendisine yüklenen suç hakkında açıklamada bulunmuş şüpheliye yaptırılabilir",
+      "E": "İşlem, soruşturmanın gizliliği ilkesinin kapsamı dışında tutulmuştur"
+    },
+    "dogru": "D",
+    "aciklama": "Yer gösterme, şüphelinin beyanının maddî dünyada doğrulanmasına yarayan bir soruşturma işlemidir ve bu işlevi onun ÖN ŞARTINI belirler: Cumhuriyet savcısı, kendisine yüklenen suç hakkında AÇIKLAMADA BULUNMUŞ OLAN şüpheliye yer gösterme işlemi yaptırabilir. Açıklama yoksa gösterilecek bir beyan da yoktur; bu nedenle işlem, susma hakkını kullanan şüpheliyi konuşturmanın dolaylı bir yolu hâline getirilemez. Şüphelinin tutuklu olup olmaması ise bir şart değildir. İşlem soruşturmanın gizliliği ilkesine UYGUN OLARAK yerine getirilir; yani kamuya açık bir gösteriye dönüştürülemez. Müdafi, SORUŞTURMAYI GECİKTİRMEMEK KAYDIYLA yer gösterme sırasında hazır bulunabilir. İşlem ayrıca tutanağa bağlanır; tutanak işlemin yapıldığı yeri, zamanı ve işleme katılan veya ilgisi bulunan kimselerin isimlerini içerir, müdafi veya vekil sıfatıyla hazır bulunulmuşsa avukatın ismi ve imzası da yer alır, tutanağın ilgilileri ilgilendiren kısımları okunup imzalatılır ve imzadan kaçınma hâlinde nedenleri tutanağa geçirilir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 28",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  }
+]

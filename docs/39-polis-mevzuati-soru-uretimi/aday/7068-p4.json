@@ -1,0 +1,461 @@
+[
+  {
+    "id": "7068-p4-01",
+    "articleNo": "27",
+    "kok": "7068 sayılı Genel Kolluk Disiplin Hükümleri Hakkında Kanun'a göre, disiplin kurulu soruşturma sonucunda aşağıdakilerden hangisine KARAR VEREMEZ?",
+    "siklar": {
+      "A": "Disiplin cezası verilmesine yer olmadığına",
+      "B": "Karar verilmesine yer olmadığına",
+      "C": "Kurulun yetkisizliğine",
+      "D": "Soruşturmanın genişletilmesine",
+      "E": "Disiplin cezası verilmesine"
+    },
+    "dogru": "D",
+    "aciklama": "Kurulun soruşturma sonunda verebileceği kararlar sayılarak belirlenmiştir: disiplin cezası verilmesine yer olmadığı, karar verilmesine yer olmadığı, disiplin cezası verilmesi ve kurulun yetkisizliği. Liste kapalıdır, 've benzeri' türünden açık uçlu bir kayıt taşımaz. Soruşturmanın genişletilmesi ceza muhakemesi mantığından tanıdık geldiği için doğru sanılır; Kanun bunu kurulun karar seçenekleri arasında saymamıştır.",
+    "dayanak": "7068 sayılı Kanun md 27/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-02",
+    "articleNo": "27",
+    "kok": "7068 sayılı Kanun'a göre, soruşturma sonucunda fiilin, soruşturmaya konu edilenden farklı ancak yine disiplin kurulunun görev alanına giren bir disiplinsizliği oluşturduğu anlaşılırsa kurul nasıl hareket eder?",
+    "siklar": {
+      "A": "Dosyayı, fiilin niteliğini belirlemesi için yetkili kurula gönderir",
+      "B": "Yeni fiil için ayrı bir soruşturma açılmak üzere dosyayı iade eder",
+      "C": "Bu disiplinsizliğe uygun olan disiplin cezasını tayin eder",
+      "D": "Fiilin hukuki niteliğini belirlemesi için dosyayı üst disiplin amirine gönderir",
+      "E": "Fiili, soruşturma emrindeki nitelendirmeyle sınırlı olarak değerlendirir"
+    },
+    "dogru": "C",
+    "aciklama": "Soruşturma sonucunda fiilin başka bir disiplinsizliği oluşturduğu anlaşılırsa kurul buna uygun cezayı tayin eder; kurul, soruşturma emrindeki nitelendirmeyle değil fiille bağlıdır. Senaryodaki ayırt edici unsur, yeni nitelendirmenin AYNI KURULUN GÖREV ALANINA girmesidir; bu şart olmasaydı yetki sorunu doğar ve kurul kendi karar seçenekleri içinde buna göre hareket ederdi. Aday çoğunlukla nitelendirme değişikliğini yeni ve bağımsız bir soruşturma gerektiren bir durum sanır.",
+    "dayanak": "7068 sayılı Kanun md 27/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-03",
+    "articleNo": "27",
+    "kok": "Aşağıda 7068 sayılı Kanun'un disiplin kurulu kararlarının yazımına ilişkin hükümleri hakkında üç önerme verilmiştir.\nI. Disiplin kurulu kararları gerekçeli olarak yazılır.\nII. Ceza verilmesi hâlinde gerekçede disiplinsizlik unsurları ile ceza miktarının tayininde esas alınan hususlar gösterilir.\nIII. Karar, kurul başkanı ve raportör tarafından imzalanır.\nBuna göre önermelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Kurul kararları gerekçeli yazılır; ceza verilmesi hâlinde gerekçede disiplinsizlik unsurları ile ceza miktarının tayininde esas alınan hususlar gösterilir. İlk iki önerme metinle örtüşür. Üçüncüsü imza yönünden eksiktir: karar başkan ve üyeler tarafından imzalanır, imza yetkisi başkana özgülenmemiştir. Gerekçe yükümlülüğünün yalnız ağır cezalara özgü olduğu yönündeki yaygın kanı da metinde karşılık bulmaz.",
+    "dayanak": "7068 sayılı Kanun md 27/3",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "7068-p4-04",
+    "articleNo": "28",
+    "kok": "7068 sayılı Kanun'a göre, disiplin soruşturması nedeniyle görevden uzaklaştırma hususunda hangi kanunun hükümleri uygulanır?",
+    "siklar": {
+      "A": "657 sayılı Devlet Memurları Kanunu",
+      "B": "3201 sayılı Emniyet Teşkilat Kanunu",
+      "C": "926 sayılı Türk Silâhlı Kuvvetleri Personel Kanunu",
+      "D": "5442 sayılı İl İdaresi Kanunu",
+      "E": "6713 sayılı Kolluk Gözetim Komisyonu Kurulması Hakkında Kanun"
+    },
+    "dogru": "A",
+    "aciklama": "Görevden uzaklaştırma bu Kanunda baştan düzenlenmemiş, 657 sayılı Kanuna yollama yapılmıştır; önlemin şartları, süresi ve gözden geçirilmesi oradan okunur. Şıklardaki diğer kanunların hepsi 7068 sayılı Kanun metninde başka bağlamlarda anılır -3201 sayılı Kanunun bir maddesi bu Kanunla yürürlükten kaldırılmış, 926 sayılı Kanun terfi rejimi yönünden zikredilmiştir- ancak anılmış olmak, görevden uzaklaştırmada uygulanacak kanun olmak anlamına gelmez.",
+    "dayanak": "7068 sayılı Kanun md 28/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-05",
+    "articleNo": "28",
+    "kok": "7068 sayılı Kanun'a göre, disiplin kurullarınca haklarında meslekten çıkarma veya Devlet memurluğundan çıkarma cezası verilen personelin görevden uzaklaştırılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu personel, kurul kararının verilmesiyle birlikte kendiliğinden görevden uzaklaştırılmış sayılır ve kararı bekler",
+      "B": "Görevden uzaklaştırma, ancak ilgilinin idari yargı yoluna başvurması hâlinde uygulanabilir",
+      "C": "Görevden uzaklaştırma önlemi yalnızca Devlet memurluğundan çıkarma cezalarında uygulanabilir",
+      "D": "Görevden uzaklaştırma yetkisi, soruşturmayı yürütmekle görevlendirilen muhakkike aittir",
+      "E": "Görevi başında kalmasında sakınca görülenler, kararın onaylanarak uygulanmasına kadar uzaklaştırılabilir"
+    },
+    "dogru": "E",
+    "aciklama": "Bu hüküm, kurulca en ağır iki ceza verildikten sonra kararın onaylanıp uygulanmasına kadar geçen aralığı kapatır. İki unsuru birlikte aramak gerekir: ceza kurul tarafından verilmiş olacak ve ilgilinin görevi başında kalmasında SAKINCA GÖRÜLECEK. Adayı yanıltan en güçlü seçenek, ağır ceza verilmesini kendiliğinden bir uzaklaştırma sebebi saymaktır; oysa Kanun takdir gerektiren bir sakınca değerlendirmesi öngörmüş, önlemi zorunlu değil ihtiyari kılmıştır. İkinci yanılgı önlemi tek bir ceza türüne bağlamaktır: hüküm meslekten çıkarma ile Devlet memurluğundan çıkarma cezalarının ikisini de kapsar.",
+    "dayanak": "7068 sayılı Kanun md 28/2",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-06",
+    "articleNo": "28",
+    "kok": "Bir disiplin kurulu personel hakkında meslekten çıkarma cezası vermiş ve personel bu nedenle görevinden uzaklaştırılmıştır. Karar, onay aşamasında daha hafif bir cezaya indirilerek onaylanmıştır. 7068 sayılı Kanun'a göre görevden uzaklaştırma önlemi bakımından ne olur?",
+    "siklar": {
+      "A": "Görevden uzaklaştırma önlemi derhal kaldırılır",
+      "B": "Önlem, yeni cezanın yerine getirilmesi tamamlanıncaya kadar sürer",
+      "C": "Önlemin kaldırılması ilgilinin yazılı talebine bağlıdır",
+      "D": "Önlem ancak idari yargı kararıyla kaldırılabilir",
+      "E": "Önlemin devam edip etmeyeceğine disiplin kurulu yeniden karar verir"
+    },
+    "dogru": "A",
+    "aciklama": "Senaryodaki ayırt edici unsur, meslekten çıkarma cezasının onaylanması değil, DAHA HAFİF BİR CEZAYA İNDİRİLEREK onaylanmasıdır. Kanun bu hâl için tek sonuç öngörür: önlem derhal kaldırılır. Ceza hafifletilerek onaylandığında önlemin dayanağı ortadan kalkar. 'Kaldırılır' ile 'kaldırılabilir' arasındaki fark kaçırılırsa önlemin sürdürülmesi takdire bağlı sanılır; oysa hüküm idareye takdir bırakmamıştır.",
+    "dayanak": "7068 sayılı Kanun md 28/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "7068-p4-07",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre; uyarma, kınama, aylıktan kesme ile kısa ve uzun süreli durdurma cezalarını gerektiren fiillerde, disiplin soruşturmasına ne kadarlık bir süre içinde başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar?",
+    "siklar": {
+      "A": "On gün",
+      "B": "On beş gün",
+      "C": "Bir ay",
+      "D": "Dört ay",
+      "E": "Bir yıl"
+    },
+    "dogru": "C",
+    "aciklama": "Kanun, disiplin cezalarını zamanaşımı bakımından iki gruba ayırmış ve hafif ile orta ağırlıktaki cezaları -uyarma, kınama, aylıktan kesme, kısa ve uzun süreli durdurma- tek bir grupta toplayarak bunlar için soruşturmaya başlama süresini bir ay olarak belirlemiştir. Burada zamanaşımına uğrayan şey soruşturmanın kendisi değil, CEZA VERME YETKİSİDİR; süre içinde soruşturmaya başlanmışsa yetki korunur. Adayın en sık yaptığı hata bu süreyi cezanın verilmesi için öngörülen süreyle birlikte düşünmektir: Kanun soruşturmaya BAŞLAMA ile cezayı VERME için ayrı ölçüler kullanır. Sürenin hangi andan itibaren işlemeye başlayacağı fıkranın giriş cümlesinde ayrıca düzenlenmiştir; dolayısıyla yalnız rakamı bilmek yetmez.",
+    "dayanak": "7068 sayılı Kanun md 29/1-a",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-08",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre; meslekten çıkarma cezası ile Devlet memurluğundan çıkarma cezasını gerektiren fiillerde, disiplin soruşturmasına ne kadarlık bir süre içinde başlanmadığı takdirde disiplin cezası verme yetkisi zamanaşımına uğrar?",
+    "siklar": {
+      "A": "On beş gün",
+      "B": "Dört ay",
+      "C": "Altı ay",
+      "D": "On ay",
+      "E": "Bir yıl"
+    },
+    "dogru": "C",
+    "aciklama": "Teşkilattan ya da memuriyetten ayrılma sonucu doğuran iki ceza, soruşturmaya başlama zamanaşımı bakımından ayrı bir bentte toplanmış ve bunlar için altı aylık bir süre öngörülmüştür. Sürenin daha uzun tutulmasının nedeni işin niteliğidir: bu cezaları gerektiren fiiller çoğu zaman geniş bir araştırmayı ve çok sayıda kişinin dinlenmesini gerektirir, kısa bir süre yetkinin fiilen kullanılamamasına yol açardı. Aday burada iki hataya açıktır. Birincisi, bu süreyi hafif cezalarda geçerli olan ve aynı fıkranın diğer bendinde yazan süreyle karıştırmaktır; ikincisi, altı ayı cezanın verilmesi için tanınmış bir süre sanmaktır. Oysa süre yalnızca SORUŞTURMAYA BAŞLAMA anına ilişkindir; soruşturmanın tamamlanması ve cezanın verilmesi ayrı bir zamanaşımı kuralına tabidir.",
+    "dayanak": "7068 sayılı Kanun md 29/1-b",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-09",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre, disiplin soruşturmasına başlanması için öngörülen zamanaşımı sürelerinin başlangıcı olarak Kanunda hangi an esas alınmıştır?",
+    "siklar": {
+      "A": "Fiil hakkındaki ihbar veya şikâyetin kuruma ulaştığı tarih",
+      "B": "Soruşturma emrinin yetkili merci tarafından verildiği tarih",
+      "C": "Fiille ilgili adli soruşturmanın sonuçlandırıldığı tarih",
+      "D": "Personelin savunmasının alınmak üzere çağrıldığı tarih",
+      "E": "Fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarih"
+    },
+    "dogru": "E",
+    "aciklama": "Fıkranın giriş cümlesi, bentlerdeki sürelerin ortak başlangıcını belirler: fiilin işlendiğinin DİSİPLİN AMİRİ TARAFINDAN ÖĞRENİLDİĞİ tarih. İki ayrıntı ölçmenin özünü oluşturur. Birincisi, öğrenmenin kurumca değil disiplin amirince gerçekleşmiş olması aranır; bir ihbarın kurum kayıtlarına girmesi tek başına süreyi işletmez. İkincisi, öğrenme anı ile fiilin işlendiği an birbirinden farklı olabilir ve Kanun bu iki anı ayrı ayrı kullanır: soruşturmaya başlama süresi öğrenmeye, cezanın verilmesine ilişkin süre ise fiile bağlanmıştır. Adli soruşturmanın sonuçlanmasını beklemek de bir başlangıç ölçütü değildir; disiplin soruşturması adli süreçten bağımsız yürür.",
+    "dayanak": "7068 sayılı Kanun md 29/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-10",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre, disiplin cezasını gerektiren fiillerin işlendiği tarihten itibaren ne kadar süre içinde disiplin cezası verilmediği takdirde ceza verme yetkisi zamanaşımına uğrar?",
+    "siklar": {
+      "A": "Dört ay",
+      "B": "On ay",
+      "C": "Bir yıl",
+      "D": "İki yıl",
+      "E": "Beş yıl"
+    },
+    "dogru": "D",
+    "aciklama": "Bu, soruşturmaya başlama süresinden bağımsız işleyen ikinci ve mutlak sınırdır: fiilin işlendiği tarihten itibaren iki yıl içinde ceza verilmemişse yetki düşer. Süre fiile bağlandığı için olayın geç öğrenilmiş olması bu iki yılı uzatmaz; soruşturmaya süresinde başlanmış olması da yetmez, cezanın da bu süre içinde verilmiş olması gerekir. İki sürenin işlevi farklıdır: biri sürecin başlatılmasını, diğeri sonuçlandırılmasını disipline eder ve ikisi birlikte işler.",
+    "dayanak": "7068 sayılı Kanun md 29/2",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-11",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre zamanaşımı, KESİNTİSİZ suçlarda hangi tarihten itibaren işlemeye başlar?",
+    "siklar": {
+      "A": "Suçun işlenmeye başlandığı tarihten",
+      "B": "Kesintinin gerçekleştiği tarihten",
+      "C": "Son suçun işlendiği tarihten",
+      "D": "Soruşturmaya başlandığı tarihten",
+      "E": "Disiplin cezasının kesinleştiği tarihten"
+    },
+    "dogru": "B",
+    "aciklama": "Kanun zamanaşımının işlemeye başlaması için fiilin yapısına göre üçlü bir ayrım yapar: tamamlanmış suçlarda suçun işlendiği, kesintisiz suçlarda kesintinin gerçekleştiği, zincirleme suçlarda son suçun işlendiği tarih esas alınır. Kesintisiz suçun özelliği hukuka aykırı durumun zaman içinde sürmesidir; hukuka aykırılık devam ettiği sürece süre işlemeye başlamaz, çünkü henüz tamamlanmış bir geçmiş yoktur. Süreyi başlatan an, bu sürekliliğin kesildiği andır. Sorunun ayırt edici noktası da buradadır: A şıkkı tamamlanmış suça ait ölçütü kesintisiz suça taşır, C şıkkı ise zincirleme suça ait ölçütü buraya aktarır. İkisi de metinde gerçekten yazan ölçütlerdir, ancak başka fiil tipleri içindir; bu yüzden ezberden değil, fiilin yapısından hareket etmek gerekir. Soruşturmanın başlaması ya da cezanın kesinleşmesi gibi süreç anları ise bu fıkrada zamanaşımının başlangıcı olarak hiç kullanılmamıştır; bunlar sürecin sonraki halkalarıdır ve zamanaşımını değil, başka sonuçları doğurur.",
+    "dayanak": "7068 sayılı Kanun md 29/3",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "7068-p4-12",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre, disiplin cezasının mahkeme tarafından iptali üzerine yeniden değerlendirme yapmakla yetkili ve sorumlu merci aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Mahkeme kararının kesinleştiği tarihteki yetkili disiplin kurulu veya disiplin amiri",
+      "B": "İptal edilen cezayı ilk kez vermiş olan disiplin kurulu ya da disiplin amiri",
+      "C": "Cezanın türüne bakılmaksızın her hâlde Bakanlık Yüksek Disiplin Kurulu",
+      "D": "Personelin yeniden değerlendirme sırasında görev yaptığı birimin disiplin amiri",
+      "E": "İptal kararını veren mahkemenin kararında belirleyeceği disiplin kurulu"
+    },
+    "dogru": "A",
+    "aciklama": "Hükmün yetki ölçütü kişi ya da birim değil, TARİHTİR: yeniden değerlendirmeyi, mahkeme kararının kesinleştiği tarihte yetkili olan disiplin kurulu veya disiplin amiri yapar. Bu ölçüt bilinçli seçilmiştir; iptal davaları yıllar sürebildiği için cezayı ilk veren merci o tarihte artık yetkili olmayabilir, personel başka bir birime geçmiş olabilir. Kanun bu belirsizliği kesinleşme tarihine sabitleyerek çözer. Aday en çok B şıkkına yönelir, çünkü işlemi yapanın onu yeniden yapması sezgisel görünür; oysa metin yetkiyi geçmişteki merciye değil, kesinleşme anındaki yetkili merciye vermiştir. Yeniden değerlendirmenin ne kadarlık bir süre içinde yapılacağı ise aynı fıkrada ayrıca belirlenmiştir.",
+    "dayanak": "7068 sayılı Kanun md 29/4",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-13",
+    "articleNo": "29",
+    "kok": "7068 sayılı Kanun'a göre, disiplin cezasının mahkeme tarafından iptali hâlinde yetkili merciin yeniden değerlendirme yapmasını gerektiren iptal gerekçeleri aşağıdakilerin hangisinde birlikte ve doğru olarak verilmiştir?",
+    "siklar": {
+      "A": "Fiilin sabit görülmemesi – cezanın yetkisiz merci tarafından verilmiş olması",
+      "B": "Zamanaşımı süresinin geçmiş olması – savunmanın hiç alınmamış olması",
+      "C": "Cezanın ölçülülük ilkesine aykırı olması – soruşturmanın eksik bırakılması",
+      "D": "Fiilin sabit görülmemesi – düzeltilebilir bir şekil noksanlığının bulunmuş olması",
+      "E": "Fiilin hatalı olarak vasıflandırılması – düzeltilebilir bir şekil noksanlığının bulunması"
+    },
+    "dogru": "E",
+    "aciklama": "Yeniden değerlendirme imkânı her iptal kararına değil, yalnızca iki gerekçeye bağlanmıştır: fiilin hatalı vasıflandırılması ve düzeltilebilir bir şekil noksanlığının bulunması. Ortak yanları, ikisinin de fiilin varlığını tartışmaya açmamasıdır; birinde fiil doğru saptanmış ama yanlış adlandırılmıştır, diğerinde giderilebilir bir usul kusuru vardır. Her iki hâlde de idarenin yeniden karar vermesi, aynı olayın esastan hiç incelenmemiş olması sonucunu önler. Buna karşılık fiilin sabit görülmemesi esasa ilişkin bir iptaldir; orada ortada cezalandırılacak bir fiil bulunmadığı saptanmıştır ve yeniden değerlendirmenin konusu kalmaz. D şıkkı tam da bu nedenle en tehlikeli çeldiricidir: doğru gerekçelerden birini yanlış olanla eşleştirir ve yarısı tanıdık geldiği için seçilir. Fıkranın bir bölümünün Anayasa Mahkemesince iptal edildikten sonra 2024 yılında yeniden düzenlendiği de hatırlanmalıdır; sorulan, yürürlükteki metindir, iptal edilmiş eski hâli değil.",
+    "dayanak": "7068 sayılı Kanun md 29/4",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "7068-p4-14",
+    "articleNo": "30",
+    "kok": "7068 sayılı Kanun'a göre, disiplin cezasına yapılan itiraz yetkili merci tarafından ne kadar süre içinde karara bağlanır?",
+    "siklar": {
+      "A": "On gün",
+      "B": "On beş gün",
+      "C": "Yirmi gün",
+      "D": "Otuz gün",
+      "E": "Dört ay"
+    },
+    "dogru": "D",
+    "aciklama": "Kanun itiraz kurumunu iki ayrı süreyle çerçeveler: ilgilinin itiraz edebilmesi için bir süre, yetkili merciin bu itirazı karara bağlaması için başka bir süre öngörülmüştür. Sorulan ikincisidir ve otuz gündür. Bu ayrımı gözden kaçıran aday, ilgiliye tanınan süreyi merciin karar süresi sanarak yanılır; iki süre eşit değildir ve farklı fıkralarda düzenlenmiştir. Otuz günlük sürenin işlevi de dikkat ister: bu süre itirazın esasını incelemek için tanınmış bir azami süredir, itiraz hakkının kullanılmasıyla ilgili değildir. Merciin bu süre içinde vereceği kararın içeriği ve itiraz edene bildirilme usulü ise ayrı bir fıkrada düzenlenmiştir.",
+    "dayanak": "7068 sayılı Kanun md 30/2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-15",
+    "articleNo": "30",
+    "kok": "7068 sayılı Kanun'a göre, itirazı inceleyen merci itirazı haklı bulduğunda aşağıdakilerden hangisini yapabilir?",
+    "siklar": {
+      "A": "Cezanın türünü koruyarak yalnızca süresini kısaltabilir",
+      "B": "Cezayı hafifletebilir veya tamamen kaldırabilir",
+      "C": "Cezayı hafifletebilir, ancak kaldırması disiplin kurulunun onayına bağlıdır",
+      "D": "Dosyayı yeniden soruşturma yapılmak üzere cezayı veren merciye gönderir",
+      "E": "Cezanın türünü değiştirmeksizin yalnızca yerine getirilmesini erteleyebilir"
+    },
+    "dogru": "B",
+    "aciklama": "İtirazı inceleyen merci, itirazı haklı bulduğunda cezayı hafifletebilir ya da tamamen kaldırabilir; yetki yalnızca ilgilinin lehine sonuç doğuracak yönde kullanılabilir. İtiraz haklı görülmezse ret olunur ve karar itiraz edene bildirilerek süreç sonlanır. Aday ya mercii yalnızca onama-bozma yapan bir makam sanıp dosyayı iade ettiğini düşünür, ya da iki yetkiden birini yok sayar; metin ikisini birlikte ve seçimlik tanımıştır.",
+    "dayanak": "7068 sayılı Kanun md 30/3",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-16",
+    "articleNo": "30",
+    "kok": "7068 sayılı Kanun'a göre, Bakan ile disiplin kurulları tarafından verilen disiplin cezalarına karşı başvurulabilecek yol aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Cezayı veren merciye yapılacak yeniden inceleme başvurusu",
+      "B": "Bir üst disiplin amirine yapılacak yazılı itiraz",
+      "C": "Bakanlık Yüksek Disiplin Kuruluna yapılacak itiraz",
+      "D": "İdari yargıda açılacak iptal davası",
+      "E": "İçişleri Bakanlığı Teftiş Kuruluna yapılacak şikâyet"
+    },
+    "dogru": "D",
+    "aciklama": "İdari itiraz yolu disiplin amirlerinin verdiği cezalar için açılmış; Bakan ile disiplin kurullarının verdiği cezalarda bu yol kapatılarak yalnızca idari yargıya başvurulabileceği belirtilmiştir. Ayrımın mantığı kararı veren merciin konumudur: idari itiraz hiyerarşi içinde bir üst makamın denetimini varsayar, Bakan ile kurullar ise bu denetimin üstünde ya da dışındadır. Disiplin cezalarının tamamı için itiraz yolunun açık olduğu varsayılırsa yanılgıya düşülür; itiraz mercilerini sayan hükümler yalnızca disiplin amirlerince verilen cezalara ilişkindir. Bu ayrım pratik olarak da önemlidir, çünkü kurul cezasına idari itiraz edilmesi dava süresinin kaybına yol açabilir.",
+    "dayanak": "7068 sayılı Kanun md 30/5",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-17",
+    "articleNo": "30",
+    "kok": "Bir polis memuruna disiplin amiri tarafından verilen kınama cezası 3 Mart günü tebliğ edilmiş; memur bu cezaya karşı 20 Mart günü bir üst disiplin amirine yazılı olarak itirazda bulunmuştur. 7068 sayılı Kanun'a göre bu itiraz bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İtiraz süresinde yapılmadığından ceza kesinleşmiştir",
+      "B": "İtiraz süresindedir; üst disiplin amiri itirazı esastan inceler",
+      "C": "İtiraz süresi geçmiş olsa da merci itirazı esastan incelemek zorundadır",
+      "D": "İtiraz, süresine bakılmaksızın Bakanlık Yüksek Disiplin Kuruluna gönderilir",
+      "E": "İtiraz üzerine ceza kendiliğinden ortadan kalkar"
+    },
+    "dogru": "A",
+    "aciklama": "Disiplin amirlerinin verdiği cezalara karşı itiraz süresi, cezanın TEBLİĞ EDİLMESİNDEN itibaren on gündür. Olayda tebliğ 3 Mart, itiraz 20 Mart olduğuna göre süre dolmuştur. Kanun bu durumun sonucunu doğrudan yazar: süresi içinde itiraz edilmeyen cezalar kesinleşir. Yani süre kaçırıldığında sonuç, itirazın reddedilmesi değil cezanın kesinleşmesidir; bu iki sonuç sürekli birbirine karıştırılır, oysa ret esasa girilerek verilen bir karardır, kesinleşme ise esasa hiç girilmeden gerçekleşen bir hukuki sonuçtur. Süresi geçmiş bir itiraz, hangi merciye yapılırsa yapılsın esastan inceleme yükümlülüğü doğurmaz. İkinci dikkat noktası, sürenin cezanın verildiği tarihten değil tebliğ tarihinden işlemeye başlamasıdır; ilgilinin haberdar olmadığı bir işlem ona karşı süre işletmez.",
+    "dayanak": "7068 sayılı Kanun md 30/1",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "7068-p4-18",
+    "articleNo": "31",
+    "kok": "7068 sayılı Kanun'a göre, hakkında disiplin soruşturması yapılan personelden savunma istemeye yetkili olanlar aşağıdakilerin hangisinde doğru verilmiştir?",
+    "siklar": {
+      "A": "Hakkında soruşturma yapılan personelin disiplin amiri",
+      "B": "Disiplin amiri, kurul başkanı ya da başkanın görevlendireceği kurul üyesi",
+      "C": "Soruşturmayı yürütmekle görevlendirilen muhakkik ile üst disiplin amiri",
+      "D": "Personelin bağlı bulunduğu birimin en üst amiri ile yardımcısı",
+      "E": "Yetkili disiplin kurulu, toplantı hâlinde"
+    },
+    "dogru": "B",
+    "aciklama": "Savunma isteme yetkisi üç seçenekli olarak düzenlenmiştir: disiplin amiri, yetkili disiplin kurulunun başkanı ya da başkanın görevlendireceği kurul üyelerinden biri. Buradaki ölçme değeri üçüncü seçenektedir; kurul söz konusu olduğunda savunmanın mutlaka kurulca ya da başkanca alınması gerekmez, başkanın görevlendireceği bir üye de bu işlemi yapabilir. Aday çoğunlukla yetkiyi tek bir makama indirger ve ya yalnızca disiplin amirini ya da kurulun tamamını işaret eder. Metin ise soruşturmayı yürüten süjeye göre esnek bir yetki dağılımı kurmuştur. Savunma isteminin usulüne uygun yapılmış olması, hem savunma hakkının kullanılması hem de sonraki aşamalarda ilgiliye tanınan imkânlar bakımından belirleyicidir.",
+    "dayanak": "7068 sayılı Kanun md 31/2",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "7068-p4-19",
+    "articleNo": "31",
+    "kok": "7068 sayılı Kanun'a göre, hakkında disiplin soruşturması yapılan personele savunması için verilecek süre en az ne kadar olmalıdır?",
+    "siklar": {
+      "A": "Üç gün",
+      "B": "Beş gün",
+      "C": "Yedi gün",
+      "D": "On gün",
+      "E": "On beş gün"
+    },
+    "dogru": "C",
+    "aciklama": "Kanun savunma süresini sabit bir rakama bağlamamış, bir ALT SINIR koymuştur: süre yedi günden az olamaz. Daha uzun süre verilmesi mümkündür, yasak olan yedi günün altına inilmesidir; kökteki 'en az' kaydı bu yüzden belirleyicidir. Alt sınırın konulma nedeni, ilgilinin isnadı öğrenip yanıt hazırlayabilmesi için asgari bir zamana ihtiyaç duymasıdır.",
+    "dayanak": "7068 sayılı Kanun md 31/2",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-20",
+    "articleNo": "31",
+    "kok": "Hakkında disiplin soruşturması yürütülen bir personelden usulüne uygun olarak savunma istenmiş; personel kendisine tanınan süre içinde savunmasını yapmamıştır. 7068 sayılı Kanun'a göre bu durumun sonucu nedir?",
+    "siklar": {
+      "A": "Savunma alınamadığından hakkında disiplin cezası verilemez",
+      "B": "Savunma için ilgiliye ek süre verilmesi zorunludur",
+      "C": "Savunma, personelin vekilinden veya yakınlarından alınır",
+      "D": "Soruşturma dosyası işlemden kaldırılarak arşive gönderilir",
+      "E": "Personel savunma hakkından vazgeçmiş sayılır"
+    },
+    "dogru": "E",
+    "aciklama": "Kanun savunma alınmadan disiplin cezası verilemeyeceğini kural olarak koyduktan sonra, bu kuralın soruşturmayı kilitlemesini önleyen bir hüküm getirir: süresi içinde savunmasını yapmayan personel savunma hakkından vazgeçmiş sayılır. Buradaki ayrım, savunmanın İSTENMEMESİ ile savunmanın YAPILMAMASI arasındadır. Savunma hiç istenmemişse ceza verilemez; usulüne uygun istenmiş ama süresinde verilmemişse süreç işlemeye devam eder. Senaryodaki ayırt edici unsur da savunmanın usulüne uygun istenmiş olmasıdır. Ek süre verilmesi zorunluluğu ya da savunmanın başkasından alınması gibi bir çözüm metinde yoktur; vazgeçmiş sayılma, kanunun kendisinin öngördüğü sonuçtur.",
+    "dayanak": "7068 sayılı Kanun md 31/1-2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "7068-p4-21",
+    "articleNo": "31",
+    "kok": "7068 sayılı Kanun'a göre, hakkında disiplin soruşturması yapılan personel soruşturma evrakını inceleme hakkını hangi andan itibaren kullanabilir?",
+    "siklar": {
+      "A": "Soruşturma emrinin verilmesinden itibaren",
+      "B": "Kendisinden savunma istenmesinden itibaren",
+      "C": "Soruşturmanın tamamlanmasından itibaren",
+      "D": "Disiplin kurulunun toplanmasından itibaren",
+      "E": "Cezanın kendisine tebliğ edilmesinden itibaren"
+    },
+    "dogru": "B",
+    "aciklama": "Evrak inceleme hakkı soruşturmanın başlamasıyla değil, ilgiliden savunma istenmesiyle doğar. Kanun bu anı bilinçli seçmiştir: savunma isteminden önce dosyanın ilgiliye açılması delillerin karartılması riskini taşır, savunma istendikten sonra ise hakkın kullanılmaması savunmayı anlamsız kılar. Adayın kaçırdığı nokta genellikle hakkın soruşturmanın sonuna, hatta ceza aşamasına bırakıldığını sanmaktır; oysa metin hakkı soruşturma sürerken tanır. Bu hak, hakkında hangi ceza istenirse istensin soruşturulan her personel içindir.",
+    "dayanak": "7068 sayılı Kanun md 31/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "7068-p4-22",
+    "articleNo": "31",
+    "kok": "7068 sayılı Kanun'a göre, tanık dinletme ve disiplin kurulunda sözlü savunma yapma hakkı hangi personele tanınmıştır?",
+    "siklar": {
+      "A": "Hakkında disiplin soruşturması yürütülen personelin hepsine",
+      "B": "Hakkında kısa veya uzun süreli durdurma cezası istenen personele",
+      "C": "Hakkında disiplin kurulunca karar verilecek olan personelin tamamına",
+      "D": "Yalnızca hakkında meslekten çıkarma veya Devlet memurluğundan çıkarma cezası istenen personele",
+      "E": "Hakkında Devlet memurluğundan çıkarma cezası istenen personele"
+    },
+    "dogru": "D",
+    "aciklama": "Kanun, sonucu en ağır olan iki ceza bakımından savunma hakkını genişletir: hakkında meslekten çıkarma veya Devlet memurluğundan çıkarma cezası İSTENEN personel, evrak incelemenin yanı sıra tanık dinletme ve disiplin kurulunda kendisi ya da vekili aracılığıyla sözlü veya yazılı savunma yapma hakkına sahiptir. Ölçütün 'istenen ceza' olduğuna dikkat edilmelidir; hakkın doğması için sonunda o cezanın verilmiş olması gerekmez, teklif edilmiş olması yeterlidir. İki uçtaki çeldirici de aynı hatanın farklı yüzleridir: hakkı bütün soruşturmalara yaymak ya da yalnızca tek bir ceza türüne daraltmak. Kurulca karar verilecek olmak da tek başına bir ölçüt değildir, çünkü kurullar bu iki ceza dışında da karar verebilir.",
+    "dayanak": "7068 sayılı Kanun md 31/4",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-23",
+    "articleNo": "32",
+    "kok": "7068 sayılı Kanun'a göre, kesinleşen disiplin cezalarına karşı açılacak iptal davasında dava açma süresi -Kanunda ayrıca öngörülen özel hâl dışında- hangi andan itibaren başlar?",
+    "siklar": {
+      "A": "Cezanın disiplin amiri veya disiplin kurulunca verildiği tarihten",
+      "B": "Cezanın yerine getirildiği tarihten",
+      "C": "Kesinleşen cezanın personele tebliğ edildiği tarihten",
+      "D": "Disiplin kurulu kararının başkan ve üyelerce imzalandığı tarihten",
+      "E": "Cezaya karşı yapılan itirazın reddine karar verildiği tarihten"
+    },
+    "dogru": "C",
+    "aciklama": "Yargı denetimi maddesi iki şeyi birlikte söyler: iptal davası ancak KESİNLEŞEN cezalara karşı açılabilir ve dava açma süresi kesinleşen cezanın personele TEBLİĞİNDEN itibaren başlar. Ölçüt olarak tebliğin seçilmesi, sürenin ilgilinin fiilen öğrenmesine bağlanması içindir; kararın alındığı, imzalandığı ya da uygulandığı tarihler süreyi başlatmaz. Aday burada iki kavramı iç içe geçirir: kesinleşme cezanın dava edilebilir hâle gelmesini, tebliğ ise sürenin işlemeye başlamasını sağlar. İkisinin aynı gün gerçekleşmesi zorunlu değildir ve pratikte çoğu zaman gerçekleşmez. Kesinleşme aranmasının sonucu şudur: henüz idari denetimden geçmemiş bir cezaya karşı doğrudan dava açılamaz, önce o yolun tüketilmesi ya da o yola başvurulmaksızın cezanın kesinleşmiş olması gerekir. Kanun ayrıca, tebliğ ölçütünün fiilen uygulanamayacağı özel bir görev ortamı için farklı bir başlangıç anı öngörmüştür; kökteki 'özel hâl dışında' kaydı bu nedenle boş bir ifade değildir.",
+    "dayanak": "7068 sayılı Kanun md 32/1-2",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "7068-p4-24",
+    "articleNo": "32",
+    "kok": "Sahil Güvenlik Komutanlığına ait bir botta görevli personele, bot seyir hâlindeyken disiplin cezası verilmiş ve ceza kesinleşmiştir. 7068 sayılı Kanun'a göre bu cezaya karşı dava açma süresi hangi andan itibaren başlar?",
+    "siklar": {
+      "A": "Cezanın verildiği tarihten",
+      "B": "Botun bağlı bulunduğu üsse veya limana dönmesinden",
+      "C": "Personelin herhangi bir nedenle karaya çıktığı tarihten",
+      "D": "Seyir görevinin sona erdiğinin komutanlıkça duyurulmasından",
+      "E": "Cezanın Sahil Güvenlik Komutanlığınca onaylanmasından"
+    },
+    "dogru": "B",
+    "aciklama": "Yargı denetimi maddesinde tek bir istisna öngörülmüştür ve bu istisna Sahil Güvenlik Komutanlığının SEYİR HÂLİNDEKİ gemi ve botlarında verilen cezalara ilişkindir: dava açma süresi, geminin bağlı bulunduğu üsse veya limana dönmesiyle başlar. Gerekçesi fiilîdir; seyir sırasında personelin dava açma imkânı pratikte bulunmaz, genel ölçüt uygulansaydı süre ilgilinin elinde olmayan bir nedenle işlemiş olurdu. İstisnanın iki sınırı vardır ve senaryoda ikisi de açıkça verilmiştir: ceza seyir hâlindeyken verilmiş olacak, söz konusu araç Sahil Güvenlik Komutanlığına ait bir gemi ya da bot olacaktır. Bu unsurlardan biri eksikse genel kurala dönülür. Personelin başka bir sebeple karaya çıkması ya da görevin sona erdiğinin duyurulması metinde ölçüt olarak kullanılmamıştır; belirleyici olan, aracın üsse veya limana dönmesidir. İstisnanın diğer teşkilatlara ya da kara görevlerine genişletilmesi de mümkün değildir; hüküm hem kuruma hem araca hem de seyir hâline özgülenmiştir.",
+    "dayanak": "7068 sayılı Kanun md 32/2",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "7068-p4-25",
+    "articleNo": "33",
+    "kok": "7068 sayılı Kanun'a göre disiplin cezaları, kural olarak hangi andan itibaren yerine getirilir?",
+    "siklar": {
+      "A": "Verildikleri andan itibaren",
+      "B": "İlgiliye tebliğ edildikleri andan itibaren",
+      "C": "Kesinleştikleri andan itibaren",
+      "D": "İdari yargı yolunun tüketildiği andan itibaren",
+      "E": "Soruşturma raporunun onaylandığı andan itibaren"
+    },
+    "dogru": "C",
+    "aciklama": "Cezanın icrası kesinleşme şartına bağlanmıştır; kesinleşmemiş bir ceza yerine getirilemez. Kural, itiraz yolunu anlamlı kılar: henüz itiraz edilebilecek bir ceza uygulansaydı, itirazın kabulü hâlinde geri alınamaz sonuçlar doğardı. Aday sık sık kesinleşme ile tebliği aynı sayar; tebliğ kesinleşmenin bir aşamasıdır, kendisi değildir. İcrayı yargı sürecinin bitmesine bağlamak da metne aykırıdır.",
+    "dayanak": "7068 sayılı Kanun md 33/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-26",
+    "articleNo": "33",
+    "kok": "7068 sayılı Kanun'a göre aylıktan kesme cezası hangi tarihte uygulanır?",
+    "siklar": {
+      "A": "Kesinleşme tarihinde derhal",
+      "B": "Kesinleşmenin tebliğini takip eden ilk mesai gününde",
+      "C": "Cezanın verildiği ayın sonunda",
+      "D": "Kesinleşme tarihini takip eden aybaşında",
+      "E": "Kesinleşme tarihini takip eden malî yılbaşında"
+    },
+    "dogru": "D",
+    "aciklama": "Aylıktan kesme, niteliği gereği maaş ödeme dönemine bağlı olarak uygulanabilir; Kanun bu yüzden onu genel icra kuralından ayırıp kesinleşme tarihini takip eden aybaşına bağlamıştır. Ölçüt kesinleşme tarihidir; cezanın verildiği ya da tebliğ edildiği tarih değil. Malî yılbaşı Kanunda hiçbir yerde uygulama anı olarak kullanılmamıştır.",
+    "dayanak": "7068 sayılı Kanun md 33/2",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "7068-p4-27",
+    "articleNo": "33",
+    "kok": "7068 sayılı Kanun'a göre, verilen disiplin cezalarının bildirileceği merciler bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Disiplin cezaları Devlet Personel Başkanlığına bildirilir",
+      "B": "Cezalar yalnızca ilgilinin görev yaptığı birimin özlük kayıtlarına işlenir, ayrıca bildirim yapılmaz",
+      "C": "Disiplin cezaları Bakanlık Yüksek Disiplin Kuruluna bildirilir",
+      "D": "Cezalar üst disiplin amirine, aylıktan kesme cezaları ise ayrıca Sayıştaya ve ilgili muhasebe birimine bildirilir",
+      "E": "Verilen cezaların tamamı üst disiplin amirine, meslekten çıkarma ve Devlet memurluğundan çıkarma ayrıca Devlet Personel Başkanlığına bildirilir"
+    },
+    "dogru": "E",
+    "aciklama": "Bildirim rejimi iki katmanlıdır. Verilen disiplin cezalarının tamamı üst disiplin amirine bildirilir; buna ek olarak, memuriyet ya da meslekle ilişiği kesen iki ceza -meslekten çıkarma ve Devlet memurluğundan çıkarma- AYRICA Devlet Personel Başkanlığına bildirilir. 'Ayrıca' sözcüğü belirleyicidir: ikinci bildirim, birincisinin yerine geçmez, ona eklenir. Adayın hatası çoğunlukla iki katmandan birini yok saymak, yani ya bütün cezaları merkezî bir makama bildirilir sanmak ya da ek bildirimi hiç görmemektir. Ek bildirimin gerekçesi de bu iki cezanın kişinin kamu görevlisi olma sıfatını etkilemesidir; sonuç, ilgiliyi istihdam eden kurumun ötesine geçer.",
+    "dayanak": "7068 sayılı Kanun md 33/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  }
+]

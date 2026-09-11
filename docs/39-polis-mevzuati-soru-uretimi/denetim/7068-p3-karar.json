@@ -1,0 +1,329 @@
+[
+  {
+    "id": "7068-p3-01",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 13/2 birebir: EGM personeli icin ekli (3) sayili cizelge, JGK/SGK icin (4) sayili cizelge. Aciklamadaki '(1) ve (2) sayili cizelgeler ceza PUANLARININ hesaplanmasi usulune iliskindir ve kurum ayrimina gore ikiye bolunmustur' iddiasi md 12/3 ile dogrulandi (EGM icin (1), JGK/SGK icin (2)). E sikkindaki yonetmelik seceneginin md 35 ile karisma riski yok; md 13/2 acikca cizelgeyi gosteriyor.",
+      "kalite (onayladı, çekince): md 13/2 ile birebir; (1)-(2) sayılı çizelgelerin ceza puanı çizelgesi olduğu iddiası md 38/3 ve ek çizelge başlıklarıyla doğrulandı. Açıklama uzun (989 karakter, dosyanın en uzunu) ama sorulanın dışına çıkıp başka bir sorunun cevabını vermiyor.",
+      "dil (onayladı, çekince): Kök tek anlamlı, şıklar hâl bakımından uyumlu (hepsi bulunma hâli, 'gösterilmiştir' yüklemine bağlanıyor). A-D paralel, E ('yönetmelikte') farklı içerikte ama aynı hâlde; ölçme değerini bozmuyor. Açıklamadaki (1)/(2) sayılı çizelge iddiası md 12/3 ile doğrulandı. Şüphe notu: açıklama (4) sayılı çizelgeyi de adlandırıyor; dosyada bu hükmü soran ikinci soru yok, sızıntı doğmuyor."
+    ]
+  },
+  {
+    "id": "7068-p3-02",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 13/3 ikinci cumlesi birebir: 'Bakan ise Emniyet Genel Muduru, Jandarma Genel Komutani ve Sahil Guvenlik Komutani ile valilere gore bir ust disiplin amiridir.' Kaymakamlar bu sayimda yok (onlar icin ust amir vali, ayni fikranin ilk cumlesi) -> A elenir. D tek dogru.",
+      "kalite (onayladı, çekince): md 13/3; ayırt edici unsur (valilerin listede, kaymakamların dışında olması) doğru kurulmuş. p3-27'nin kökü aynı üçlüyü anıyor fakat p3-02'nin ayırt edici unsuru 've valiler' olduğu için cevap verilmiyor.",
+      "dil (onayladı, çekince): C ile D yalnız 'valiler' unsuruyla ayrışıyor; ayrım md 13/3 ile tek anlamlı. 'hangileri bakımından ... bir üst disiplin amiridir' kalıbı, şıkların çoğul kişi listeleri olmasıyla dilbilgisel olarak uyuşuyor. Kanun 'göre' derken kökün 'bakımından' demesi anlamı değiştirmiyor."
+    ]
+  },
+  {
+    "id": "7068-p3-03",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — İki mantık kusuru var. (1) Şık seti: I (md 13/4) ile II (md 13/5) birbirinden türetilemese de aynı yönde ve aynı yapıda iki 'geniş yetki' önermesi; birini doğru sayan aday ötekini de doğru sayar. Setin dört şıkkından ('Yalnız I', 'Yalnız III', 'I ve II', 'II ve III') A, B, D bu okumada kendiliğinden elenir; soru fiilen C-E ikilisine iner ve tek karar III'e kalır. (2) Bankada md 3'ü soran mevcut soru ('üst disiplin amirleri tanımında aşağıdaki unsurlardan hangisi aranmaz?') şıklarında hem 'makam, rütbe veya kıdemce büyük olunması' hem 'amirlik sıfatının bulunması' unsurunu doğru unsur olarak sayıyor; bu soruyu görmüş aday III'ün yanlışlığını doğrudan biliyor. İki kusur birleşince soru md 13/4 ve 13/5 bilgisini ölçmüyor. | öneri: III'ü md 13/1'den değil başka bir fıkradan türet (örn. 'III. Mensubu olduğu teşkilat dışında görev yapan personel hakkında disiplin soruşturması, mensubu olduğu teşkilat bünyesinde yapılır.' — md 13/6 uyarınca yanlış) ve şık setini 'A) Yalnız I, B) Yalnız II, C) I ve II, D) I ve III, E) I, II ve III' olarak kur; böylece I ile II'nin ayrı ayrı kararlaştırılması zorunlu hâle gelir.",
+      "İNSAN KARARI (itiraz kapatıldı): Dil denetçisinin iki itirazı (I ve II aynı yönde iki 'geniş yetki' önermesi; III bankadaki md 3 sorusundan hazır geliyor) uygulandı: III md 13/1'den çıkarılıp md 14/4'ten kuruldu, şık setine 'I ve III' eklendi. Üretici denetçinin örnek III'ünden (md 13/6) BİLİNÇLİ olarak saptı çünkü o önerme sızıntıyı p3-04'e taşıyacaktı — md 14/4 dosyada hiçbir sorunun konusu değil. Script'le doğrulandı.",
+      "mevzuat (onayladı, çekince): I = md 13/4 birebir (dogru). II = md 13/5 birebir (dogru). III md 13/1'e aykiri: metin 'makam, rutbe veya kidemce buyuk olmasi VE amir konumunda bulunmasi gerekir' der; iki sart birlikte aranir -> III yanlis. Cevap C dogru; dayanak (13/1, 13/4, 13/5) uc onermeyle birebir ortusuyor.",
+      "kalite (onayladı, çekince): md 13/1, 13/4, 13/5. Önermeler bağımsız ve tek anlamlı. Not: III'ün ölçtüğü 'üstlük + amirlik birlikte aranır' kuralı, bankadaki md 3 sorularıyla (bkz. 'üst disiplin amirleri tanımında hangi unsur aranmaz' ve şube müdürü/il emniyet müdürü vakası) kavramsal olarak örtüşüyor; aynı denemede yan yana kullanılmamalı."
+    ]
+  },
+  {
+    "id": "7068-p3-04",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — Vaka kurgusu sağlam: olay önce, hukuki soru sonra; ayırt edici unsur ('mensubu olduğu teşkilat dışında fiilen görev yapma') açıkça verilmiş ve çözümde gerçekten rol oynuyor; şıklar tam cümle olarak homojen; fazla veri yok. Kusur açıklamada: 'Seçeneklerin tamamı bu iki aşamadan birini doğru, diğerini yanlış kurar' cümlesi yanlıştır — D ve E şıklarında her iki aşama da yanlıştır. Ayrıca bu cümle şık setinin kurgusunu anlatan bir meta ifadedir; son kullanıcıya gösterilen açıklamada işi yoktur. | öneri: Açıklamadan 'Seçeneklerin tamamı bu iki aşamadan birini doğru, diğerini yanlış kurar.' cümlesini çıkar; yerine gerekiyorsa 'Yanlış şıklar bu iki aşamadan en az birini hatalı kurar.' yaz.",
+      "İNSAN KARARI (itiraz kapatıldı): Dil denetçisinin yanlış meta cümle itirazı uygulandı ('Seçeneklerin tamamı bu iki aşamadan birini doğru kurar' — D ve E'de iki aşama da yanlıştı). Ayrıca yeni mutlak ifade kuralı gereği B şıkkına md 13/6'nın istisnasızlığı ('her hâlde') taşındı ve C uzatılarak doğru şıkkın tek başına en uzun olması engellendi.",
+      "mevzuat (onayladı, çekince): md 13/6 iki asamayi ayirir: sorusturma 'fiilen gorevli oldugu teskilat bunyesinde yapilir', dosya 'mensubu oldugu teskilatin yetkili disiplin amiri ve kurullarina gonderilir'. B tam ortusuyor; C sadece ikinci asamayi bozuyor, A sadece birinciyi. Fikra 'gorevlendirme, atama veya herhangi bir nedenle' dedigi icin aciklamadaki 'gecici gorevlendirme ile atama arasinda fark gozetilmemistir' cumlesi de metne uygun.",
+      "kalite (onayladı, çekince): md 13/6 vakası; 'soruşturmayı yapma' ile 'karara bağlama' ayrımı gerçek bir ölçme eksenidir ve beş şıkkın tamamı bu iki aşamanın kombinasyonundan kuruluyor. Vaka, hükmü uygulamak için gereken veriyi (kadro teşkilatı + fiilen görev yapılan teşkilat) tam veriyor."
+    ]
+  },
+  {
+    "id": "7068-p3-05",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — Kök-şık mantık uyumsuzluğu: kök 'disiplin soruşturmasını hangi usulle YAPTIRIR?' diye soruyor, oysa doğru şık A'nın birinci unsuru 'bizzat'tır — bizzat yapmak yaptırmak değildir. Aynı uyumsuzluk C şıkkı ('yalnızca bizzat') için de geçerli. md 14/1'in yüklemi de 'yapar'dır. | öneri: Kökte 'yaptırır' yerine 'yapar' kullan: '... disiplin amiri, disiplin soruşturmasını hangi usulle yapar?'",
+      "İNSAN KARARI (itiraz kapatıldı): Dil denetçisinin yüklem itirazı uygulandı: kök 'yaptırır' → 'yapar' (md 14/1'in yüklemi ve 'bizzat' unsuruyla uyum). Hüküm ve cevap değişmedi.",
+      "mevzuat (onayladı, çekince): md 14/1 birebir: 'bizzat ya da yazili olarak gorevlendirecegi sorusturmacilar vasitasiyla'. 'Olayin arastirilmasinin gerektigine kanaat getirirse' sarti da metinde var, aciklama dogru. NOT: brief hatasi teyit edildi - md 14'un hicbir fikrasinda sure/gun/tarih hukmu YOKTUR (grep ile dogrulandi); uretici hakli.",
+      "kalite (onayladı, çekince): md 14/1; 'yazılı görevlendirme' ekseni doğru ve sınavlık. Çeldiriciler makul hata üzerine kurulu (sözlü görevlendirme, üst amir onayı)."
+    ]
+  },
+  {
+    "id": "7068-p3-06",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 14/2 ikinci cumlesi birebir: 'Ancak gerek gorulmesi halinde, heyet baskani haric olmak uzere hakkinda disiplin sorusturmasi yapilacak kisinin asti konumunda heyet uyeleri gorevlendirilebilir.' D verbatim. E 'baskan dahil' diyerek metnin tek istisnasini bozuyor, A istisnayi tumden yok sayiyor. Aciklamadaki 'yalniz heyet halinde yurutulen sorusturmalarda' ve 'tek kisilik sorusturmalarda mumkun degildir' cikarimlari metnin 'heyet uyeleri' ifadesinden dogru cikariliyor.",
+      "kalite (onayladı, çekince): md 14/2 ikinci cümlesi; D ve E arasındaki tek fark 'heyet başkanı hariç/dâhil' — temiz ayrım. A'daki mutlak ifade meşru çeldirici.",
+      "dil (onayladı, çekince): Doğru şık md 14/2'nin ikinci cümlesiyle birebir; 'heyet başkanı hariç olmak üzere' kaydı kökte değil şıkta tutulduğu için ipucu doğmuyor. Kalan risk (engelleyici değil): D ile E birbirinin tersi iki şıktır ('hariç' / 'dâhil') ve doğru cevap bu çiftin içindedir; aday seti iki şıkka indirebilir. A'daki 'hiçbir hâlde' mutlak ifadesi tek mutlak şık değil (B ve C de sınırlayıcı), bu yüzden tek başına ipucu vermiyor."
+    ]
+  },
+  {
+    "id": "7068-p3-07",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — İki dil kusuru. (1) B şıkkı kurumu resmî adıyla anmıyor: 'Jandarma ve Sahil Güvenlik Komutanlığı personeli' — md 14/2 'Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli' diyor; tek bir komutanlık varmış gibi okunabilen bir kısaltma. (2) Kökteki niteleme kapsamı karşılamıyor: hüküm yalnız 'hizmet sınıfı' üzerinden kurulmuş değildir — jandarma ve sahil güvenlik personeli bir hizmet sınıfı değil, teşkilat mensubiyeti ölçütüdür; doğru şıkkın kendisi de teşkilat adı taşıdığı için kök ile şık arasında kavram kayması oluşuyor. | öneri: B'yi 'Mülki idare amirliği ve emniyet hizmetleri sınıflarından olanlar ile Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeli dışında kimse görevlendirilemez.' yap; kökü '... soruşturmacı olarak görevlendirilebilecek personel bakımından Kanunun getirdiği sınırlama aşağıdakilerden hangisidir?' olarak sadeleştir.",
+      "İNSAN KARARI (itiraz kapatıldı): Mevzuat denetçisinin resmî ad itirazı (metin 'Jandarma GENEL Komutanlığı' diyor) ve dil denetçisinin kök itirazı birlikte uygulandı; B şıkkı mutlak ifade kuralına göre yeniden kuruldu ('hiçbir personel görevlendirilemez'), D md 14/2 lafzına yaklaştırılarak uzunluk dengelendi.",
+      "mevzuat (onayladı, çekince): md 14/2 son cumlesi: 'mulki idare amirligi hizmetleri sinifi ile ilgisine gore emniyet hizmetleri sinifindan olanlar ile Jandarma Genel Komutanligi ve Sahil Guvenlik Komutanligi personeli haricinde herhangi bir personel gorevlendirilemez.' B ortusuyor. Aciklamadaki 2018 degisikligi iddiasi dipnot 8 ile dogrulandi (18/10/2018 t. 7148 s. Kanun md 38); eski ibare 'emniyet hizmetleri, jandarma hizmetleri ve sahil guvenlik hizmetleri siniflarindan olanlar haricinde' idi, dolayisiyla mulga ibareyi hatirlayan adayin yanilmasi iddiasi da yerinde. D sikki, md 14/2 birinci cumlesindeki mufettis imkani sebebiyle yanlis (mufettis tek yol degil) - dogru elenir. KUCUK KUSUR (bloke etmez): B sikki 'Jandarma ve Sahil Guvenlik Komutanligi' diyerek metindeki 'Jandarma Genel Komutanligi ve Sahil Guvenlik Komutanligi' resmi adlarini kisaltiyor; birebir yazilmasi tercih edilir.",
+      "kalite (onayladı, çekince): md 14/2 üçüncü cümlesi; açıklamadaki 2018 değişikliği iddiası metindeki 8 nolu dipnotla (7148/38) doğrulandı. Doğru şık uzun ama dosyada en uzun şık değil."
+    ]
+  },
+  {
+    "id": "7068-p3-08",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 14/3 birebir: 'kendilerini gorevlendiren disiplin amiri adina'. Aciklamada sayilan yetkiler (bilgi/belge toplama, ifade alma, tanik dinleme, bilirkisi, kesif, hakim veya savci karari gerektirmeyen durumlarda kriminal inceleme, yazisma) ve 'Mufettislerin ozel mevzuatlarindan dogan yetkileri saklidir' cumlesi metinle birebir. ONEMLI: md 26/9 ayni yetki listesini disiplin KURULLARI icin tekrarlar; ancak 26/9'da 'adina' kaydi YOKTUR, bu soru tam da 'kimin adina' unsurunu olctugu icin 26/9 ikinci bir cevap uretmiyor. Soru bu sebeple guvenli.",
+      "kalite (onayladı, çekince): md 14/3; 'görevlendiren disiplin amiri adına' ekseni doğru. Açıklamadaki yetki listesi md 26/9'un da listesidir, fakat md 26/9 üzerine bu dosyada soru yok, sızıntı doğmuyor.",
+      "dil (onayladı, çekince): Şıklar 'kimin adına' sorusuna '... adına' kalıbıyla uyumlu; C ('kendi adlarına ve tamamen bağımsız olarak') kalıp dışına çıkıyor ama kök yüklemiyle yine uyumlu. Doğru şık en uzun şık değil. Açıklamadaki müfettiş ve kriminal inceleme kayıtları md 14/3 ile örtüşüyor ve dosyadaki başka bir sorunun cevabını vermiyor."
+    ]
+  },
+  {
+    "id": "7068-p3-09",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 14/5 birebir: '3/5/2016 tarihli ve 6713 sayili Kolluk Gozetim Komisyonu Kurulmasi Hakkinda Kanunun disiplin sorusturmasi islemleri ile ilgili hukumleri saklidir.' Aciklamanin 'seceneklerdeki diger kanunlarin hepsi 7068 metninde gecer' iddiasi dosyada tek tek dogrulandi (3201: 2 kez, 6413: 2, 3152: 1, 5442: 1). Metindeki diger saklilik kayitlari (md 12/4 sozlesmeli personel, md 14/3 mufettis ozel mevzuati) ad verilen bir kanuna baglanmadigi icin ikinci cevap dogurmuyor.",
+      "kalite (onayladı, çekince): md 14/5; 6713 doğru. Açıklamanın 'diğer kanunların hepsi 7068 metninde geçer' iddiası doğrulandı (6413 md 2, 3152 ve 3201/5442 yürürlükten kaldırma maddeleri). Kalan risk: saf kanun-numarası ezberi olduğu için md 14'ün en düşük ayırt ediciliğe sahip sorusu; deneme dizilirken md 14'ten en fazla dört soru alınacaksa ilk düşürülecek olan budur.",
+      "dil (onayladı, çekince): Kök tek anlamlı, şıklar homojen (hepsi 'sayı + ad' biçiminde kanun adı). Açıklamanın 'seçeneklerdeki diğer kanunların hepsi 7068 metninde geçer' iddiası doğrulandı: 6413 md 2'de, 3152 md 36'da, 3201 ve 5442 md 37'de geçiyor. Şüphe notu: kök uzun ve iki yan cümleli ('disiplin soruşturmasına ilişkin hükümleri bakımından ... disiplin soruşturması işlemleriyle ilgili hükümlerini'), aynı ibare iki kez dönüyor; kısaltılabilir ama anlam belirsizliği doğurmuyor."
+    ]
+  },
+  {
+    "id": "7068-p3-10",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 15/2 birebir: 'vekaleten, ikinci gorevle, gecici gorevle veya kanunlarda yazili diger hallerde yetkili olarak yurutenler de bu gorevi yuruttukleri surece disiplin amirlerine taninan yetkileri kullanabilirler.' E ortusuyor; C sikki metnin sayiminin tersini kuruyor, A ceza turu sinirlamasi metinde yok. NOT: bu sorunun cevabinin ozu 7068-p3-12'nin aciklamasinda tekrar anlatiliyor (bkz. p3-12 kaydi) - duzeltme orada.",
+      "kalite (onayladı, çekince): md 15/2 ile birebir; 'yetkinin sınırı zamandır' ekseni doğru. Not: B şıkkı, p3-11'in doğru cevabının (üst konumdaki disiplin amiri) kalıbını taşıyor; burada yanlış olduğu için p3-11 bakımından yanıltıcı değil, ters yönde zayıf bir gürültü yaratıyor.",
+      "dil (onayladı, çekince): Kök ve şıklar uyumlu, doğru şık md 15/2 ile örtüşüyor. Tek sorun bu sorunun kendisinden değil, p3-12'nin açıklamasından geliyor (orada işaretlendi): o açıklama bu sorunun cevabını ele veriyor. Bu soruda düzeltilecek bir şey yok."
+    ]
+  },
+  {
+    "id": "7068-p3-11",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 15/3 birebir: 'bosanmis olsalar dahi esleri veya IKINCI DERECEYE KADAR kan ve kayin hisimlari olan personel hakkinda... Bu hallerde, disiplin amirligi yetkisi, UST KONUMDAKI DISIPLIN AMIRI tarafindan kullanilir.' Kokteki 'ikinci derecede kayin hismi' fikranin kapsamina giriyor, A tek dogru. HISIMLIK UCLUSU KARSILASTIRMASI: md 14/4 ve md 15/3 AYNI formulu kullanir ('ikinci dereceye kadar kan ve kayin hisimlari'); md 26/6 farklidir ('birinci ve ikinci derece kan ve kayin hisimlari' + ayrica 'disiplin cezasi verdikleri ya da disiplin sorusturmasini yaptiklari personel'). Yani uretici 'uc fikrada uc farkli formul' derken abartmis: gercekte iki formul var (14/4 = 15/3, 26/6 ayri). Dereceyi cevap yapmama karari yine de dogru; bu soruda cevap SONUC (yetkinin ust amire gecmesi) oldugu icin formul farki soruyu etkilemiyor.",
+      "kalite (onayladı, çekince): md 15/3 vakası; 'ikinci derece kayın hısmı' senaryosu hükmün kapsamına giriyor ve yetkinin üst amire geçtiği sonucu metinde açıkça yazılı. Vaka hükmü uygulamak için yeterli veriyi veriyor.",
+      "dil (onayladı, çekince): Gerçek vaka: olay önce, hüküm sonra; ayırt edici unsur ('ikinci derecede kayın hısım' + 'maiyetinde') açıkça verilmiş ve md 15/3'ün her iki cümlesinin de uygulanmasını gerektiriyor; fazla veri yok, senaryo çözümde rol oynuyor. Doğru şık en kısa şık; uzunluk ipucu ters yönde çalışıyor, sorun değil. Kozmetik: E şıkkında 'Vali tarafından ... bir vali yardımcısı tarafından' biçiminde iki 'tarafından' üst üste geliyor; 'Valinin bu iş için görevlendireceği bir vali yardımcısı tarafından' daha temiz olur."
+    ]
+  },
+  {
+    "id": "7068-p3-12",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Hukuki cekirdek dogru: md 15/4 'Disiplin amirligi yetkisi devredilemez.' -> E. Kusur ACIKLAMADA ve baska sorulara SIZINTI niteliginde: (i) 'Devir yasagi ile disiplin amirligi gorevinin bir baskasi tarafindan yurutulmesi hali birbirine karistirilmamalidir; ikinci halde ortada bir devir yoktur, unvana ait gorevin kendisi hukuken bir baskasi tarafindan yurutulur ve yetki dogrudan o goreve bagli olarak dogar' cumlesi md 15/2'nin ozudur ve ayni dosyadaki 7068-p3-10'un cevabini (E sikki) verir. (ii) Son cumle 'ust disiplin amirinin yetkiyi kullanmasi... Kanunun kendisinden kaynaklanir' md 13/5'i soyleyerek 7068-p3-03'un onerme II'sinin DOGRU oldugunu ele verir. Bu hatta sizintinin dokuz kez yok edilmek yerine tasindigi biliniyor; burada kaynak aciklamadir. | öneri: Aciklamanin son iki cumlesini (\"Devir yasagi ile disiplin amirligi gorevinin bir baskasi tarafindan yurutulmesi hali...\" ile \"Kanun ayrica yetkinin yukari dogru kullanilmasini da devir saymaz...\") tumden sil. Yerine md 15/4 ile sinirli kalan tek cumle koy: \"Yasak mutlaktir; Kanun devir icin yazili sekil, ust amir onayi ya da ceza turune gore kismi devir gibi hicbir ara cozume yer vermemistir.\" Kok, siklar ve cevap aynen kalsin.",
+      "kalite: REVIZYON — SIZINTI (açıklama -> cevap). Kök yalnız md 15/4'ü (devir yasağı) soruyor; açıklamanın son iki cümlesi kökün ötesine geçip p3-10'un doğru cevabını ('unvana ait görevin bir başkası tarafından yürütülmesi hâlinde yetki doğrudan o göreve bağlı olarak doğar' = md 15/2) ve p3-11/p3-03'ün konusunu (üst disiplin amirinin yetkiyi Kanundan alması = md 13/5) açıkça anlatıyor. Hattın bilinen örüntüsü: sızıntı, açıklamanın dolgu cümlelerinden geliyor. | öneri: Açıklamayı 'Devir yasağı ile disiplin amirliği görevinin bir başkası tarafından yürütülmesi hâli birbirine karıştırılmamalıdır.' cümlesinde bitir; bu cümleden sonraki iki cümleyi (unvana ait görevin yürütülmesi + üst disiplin amirinin yetkisinin kaynağı) tamamen sil.",
+      "dil: REVIZYON — İki ayrı kusur. (1) Sızıntı: açıklamanın son iki cümlesi kökün sorduğunun ötesine geçen dolgu cümleleridir ve iki soruyu birden ele veriyor — 'unvana ait görevin kendisi hukuken bir başkası tarafından yürütülür ve yetki doğrudan o göreve bağlı olarak doğar' cümlesi p3-10'un cevabını (E), 'üst disiplin amirinin yetkiyi kullanması ... Kanunun kendisinden kaynaklanır' cümlesi ise p3-03'ün II. önermesinin doğruluğunu veriyor. (2) Biçim ipucu: A-D şıklarının dördü de '...devredilebilir' derken yalnız E '...devredilemez' diyor; doğru cevap tek yapısal aykırı şıkka düşüyor ve konu bilgisi olmayan aday da onu seçebilir. | öneri: Açıklamanın son iki cümlesini ('Devir yasağı ile ...' ve 'Kanun ayrıca ...') tamamen sil. Şık dengesi için bir çeldiriciyi olumsuz kalıba çevir, örn. B: 'Devredilemez; ancak disiplin amirinin izinli olduğu sürede yetki kendiliğinden yardımcısına geçer.'",
+      "İNSAN KARARI (itiraz kapatıldı): ÜÇ denetçinin ortak itirazı. Açıklamanın son iki dolgu cümlesi (md 15/2 özü = p3-10'un cevabı; md 13/5 = p3-03/II'nin doğruluğu) tümden silindi, yerine mevzuat denetçisinin yazdığı cümle kondu. Dilin şık dengesi önerisi de uygulandı; E şıkkı 'hiçbir şekilde devredilemez' ile mutlak ifade kuralına uydu. Doğrulandı: açıklama artık kökün sorduğu şeyin dışına çıkmıyor."
+    ]
+  },
+  {
+    "id": "7068-p3-13",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 16/1-(a) birebir: 'Il polis disiplin kurulu, VALI YARDIMCISININ BASKANLIGINDA... olusur.' B dogru. E sikki md 16/1-(a)-2'deki gercek uye tanimindan turetilmis makul celdirici. Vali kurul uyesi degil (onay makami, md 18/1-a) -> A elenir. Kucuk not: ayni denemede 7068-p3-15 ile birlikte cikarsa, p3-15'in C sikkindaki 'vali yardimcisi' ifadesi kurulda bir vali yardimcisi bulundugunu sezdirir; ancak baskanlik bilgisini vermedigi icin sizinti esigine ulasmiyor.",
+      "kalite (onayladı, çekince): md 16/1-(a); başkanlığın vali yardımcısında olması sınavlık ve temiz. Not: doğru cevap 'Vali yardımcısı' ile p3-15'in doğru cevabı ('... bağlı olduğu vali yardımcısı') aynı anahtar ifadeyi paylaşıyor; iki soru aynı denemede yan yana konmamalı (bkz. p3-15).",
+      "dil (onayladı, çekince): Kök tek anlamlı, şıklar 'kim başkanlık eder' sorusuna yalın adlarla uyumlu. Kalan risk bu soruda değil p3-15'te: onun açıklamasındaki 'aynı kurulda mülki idare kökenli iki kişi' cümlesi bu sorunun cevabını daraltıyor (orada işaretlendi)."
+    ]
+  },
+  {
+    "id": "7068-p3-14",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): DORT CELDIRICININ DORDU DE md 16/1-(a)'da BIREBIR uye olarak sayiliyor - tek tek dogrulandi: A 'Il hukuk isleri muduru' = (a)-1; D 'Emniyet muduru veya gorevlendirecegi mudur yardimcilarindan biri' = (a)-2 (metnin ilk yarisi birebir); B 'Asayis sube muduru' = (a)-3; C 'Personel sube muduru' = (a)-4. E 'Trafik sube muduru' metinde HIC gecmiyor -> tek dogru cevap E. Sayim sinirli sayidadir (kurul basaknligi ayrica vali yardimcisinda), genisletilemez. Bu hattin en pahali kusuru burada dogmamis.",
+      "kalite (onayladı, çekince): md 16/1-(a) sınırlı sayımı; dosyadaki tek olumsuz kök (1/37, oran sorunu yok) ve olumsuzluk 'SAYILMAMIŞTIR' ile açıkça vurgulanmış. Şık uzunluk dağılımı dengesiz (18-64) fakat uzun olan şık doğru değil, ipucu doğurmuyor.",
+      "dil (onayladı, çekince): Olumsuzluk vurgusu yeterli: 'SAYILMAMIŞTIR' hem büyük harfle hem cümle sonunda, yüklem konumunda; kökte olumsuzluğu gölgeleyecek ikinci bir olumsuz öge yok. Dosyadaki tek olumsuz kök olması tutarlılık sorunu doğurmuyor — oran 1/37, brief'in 1/4 eşiğinin çok altında ve bankadaki gerçek çıkmış sorularda da aynı kalıp ('sayılmamıştır') kullanılıyor. Şıklar dilbilgisi bakımından homojen (hepsi unvan öbeği, yalın hâl). Doğru şık (E) en kısa şık; uzunluk ipucu doğru cevaba çalışmıyor. Kalan risk: p3-15'in kökü 'il hukuk işleri müdürünün bulunmadığı durumda bu ÜYELİK' derken bu kişinin kurul üyesi olduğunu peşinen söylüyor ve buradaki A çeldiricisini eliyor; iki soru aynı formda kullanılmamalı."
+    ]
+  },
+  {
+    "id": "7068-p3-16",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 16/1-(b) birebir: 'kurum mudurunun baskanliginda, ayni kurumda gorevli personel arasinda en yuksek rutbeli, rutbelerde esitlik durumunda kidemli UC AMIR ile ayni kurumdaki ogretmenler arasindan EMNIYET GENEL MUDURU tarafindan secilen BIR KISI'. A sikki uc unsuru da dogru tasiyor. B ogretmen uyeyi dusurup dort amir yapiyor, E baskani disaridan getiriyor -> ikisi de yanlis. Aciklamadaki 'olcut once RUTBE, esitse KIDEM' sirasi metinle ayni.",
+      "kalite (onayladı, çekince): md 16/1-(b) ile birebir; 'öğretmen üye'nin Emniyet Genel Müdürünce seçilmesi ayırt edici ve sınavlık. Çeldiriciler (sırf amirlerden oluşan kurul, vali yardımcısı başkanlığı) makul hata üzerine kurulu.",
+      "dil (onayladı, çekince): Şıkların hepsi '... başkanlığında, ... oluşur' kalıbında; kök 'oluşumu bakımından hangisi doğrudur' ile uyumlu. Doğru şık en uzun şık değil (E ile hemen hemen eşit). Şüphe notu: doğru şık md 16/1-(b)'deki 'rütbelerde eşitlik durumunda kıdemli' kaydını taşımıyor, buna karşılık açıklama bu ölçütü ölçülen nokta gibi sunuyor ('önce RÜTBE, rütbeler eşitse KIDEM'); açıklama, şıkkın ölçmediği bir ayrıntıyı öğretiyor. Yanlış cevap doğurmadığı için engelleyici saymadım."
+    ]
+  },
+  {
+    "id": "7068-p3-17",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 16/1-(c) birebir: 'EGM Merkez Disiplin Kurulu, PERSONEL ISLERIYLE GOREVLI GENEL MUDUR YARDIMCISININ baskanliginda... olusur.' B dogru. Aciklamada sayilan dort uye de (c)-1..4 ile birebir ortusuyor; hukuk musavirinin 'Emniyet Genel Muduru tarafindan gorevlendirilecegi' kaydi da dogru. E sikki 'Birinci Hukuk Musaviri' md 16/1-(c)'de degil (c) disi kurulda (YDK) yer aldigi icin makul celdirici, ikinci cevap uretmiyor.",
+      "kalite (onayladı, çekince): md 16/1-(c); doğru. Not: doğru cevabın ifadesi ('Personel işleriyle görevli genel müdür yardımcısı') p3-25'te çeldirici B olarak aynen geçiyor. Orada yanlış cevap olduğu için doğrudan bir sızıntı doğurmuyor, kalan risk olarak kaydedildi.",
+      "dil (onayladı, çekince): Kök tek anlamlı (kurul adı tam), doğru şık md 16/1-(c) ile örtüşüyor, C ve D gerçek üyeler olduğu için makul çeldirici. Açıklama kurulun tüm üyelerini sayıyor ama dosyada Merkez Disiplin Kurulunun bileşimini soran ikinci bir soru yok; sızıntı doğmuyor."
+    ]
+  },
+  {
+    "id": "7068-p3-18",
+    "karar": "KABUL",
+    "itirazlar": [
+      "kalite: REVIZYON — SIZINTI (açıklama -> komşu sorunun çeldiricileri). Kök yalnız 'iki emniyet genel müdür yardımcısını kim görevlendirir' sorusunu soruyor; açıklama kökün ötesine geçip Yüksek Disiplin Kurulunun tam bileşimini (Emniyet Genel Müdürü başkan, Polis Teftiş Kurulu Başkanı, Birinci Hukuk Müşaviri) sayıyor. Bu dolgu, p3-17'nin (Merkez Disiplin Kurulu başkanı) D ve E çeldiricilerini — Polis Teftiş Kurulu kaynaklı başmüfettiş ve Birinci Hukuk Müşaviri — aday için değersizleştiriyor. | öneri: Açıklamayı görevlendirme yetkisiyle sınırla: kurul bileşimini sayan ilk cümleyi 'Bu iki emniyet genel müdür yardımcısını Emniyet Genel Müdürü değil Bakan görevlendirir.' ile değiştir; Polis Teftiş Kurulu Başkanı ve Birinci Hukuk Müşaviri isimlerini açıklamadan çıkar.",
+      "İNSAN KARARI (itiraz kapatıldı): Kalite denetçisinin itirazı uygulandı: açıklamadaki kurul bileşimi sayımı (Polis Teftiş Kurulu Başkanı, Birinci Hukuk Müşaviri) p3-17'nin D ve E çeldiricilerini değersizleştiriyordu; silindi. Açıklama artık yalnız görevlendirme yetkisiyle sınırlı.",
+      "mevzuat (onayladı, çekince): md 16/1-(ç)-1 birebir: 'BAKAN tarafindan gorevlendirilecek iki emniyet genel mudur yardimcisi.' A dogru. Aciklamadaki uye listesi ((ç)-1,2,3: iki EGM yardimcisi, Polis Teftis Kurulu Baskani, Birinci Hukuk Musaviri) ve baskanin Emniyet Genel Muduru olmasi metinle birebir. Kunye 'md 16/1-(ç)' bendi gosteriyor; alt bent (ç)-1 olarak yazilsa daha kesin olurdu - kusur degil.",
+      "dil (onayladı, çekince): Kök, hangi kurul ve hangi üye olduğunu tek anlamlı biçimde veriyor; şıklar 'kim tarafından görevlendirilir' sorusuna yalın makam adlarıyla uyumlu. 'Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulu' özel adı bu soruda yalnız kurulu adlandırmak için geçiyor, başka sorunun cevabını vermiyor."
+    ]
+  },
+  {
+    "id": "7068-p3-19",
+    "karar": "KABUL",
+    "itirazlar": [
+      "kalite: REVIZYON — BİÇİM İPUCU. Doğru şık 'Bakanlıkça' 10 karakter, diğer dört şık 26/33/41/49 karakter; doğru cevap dosyadaki en belirgin 'tek kelimelik en kısa şık' örneği. Kök ayrıca iki ayrı yetkiyi (hangi kurumda kurul kurulacağı + kurul kurulmayanların personeli) tek soruda topluyor, bu da uzun çeldiricileri zorluyor. Hüküm (md 16/2) doğru, kusur yalnız biçimsel. | öneri: Şıkları eş boya getir: B'yi 'Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulunca' yerine 'Yüksek Disiplin Kurulunca', D'yi 'İlgili kurumun bulunduğu ilin valiliğince' yerine 'Valilikçe', E'yi 'Polis Teftiş Kurulu Başkanlığınca' yerine 'Teftiş Kurulunca' yaz; doğru şıkkı 'Bakanlıkça' olarak bırak.",
+      "İNSAN KARARI (itiraz kapatıldı): Kalite denetçisinin ters yönlü uzunluk ipucu itirazı uygulandı (doğru şık 10 karakter, çeldiriciler 26–49). Şıklar eş boya getirildi; doğru şık artık tek başına en kısa değil.",
+      "mevzuat (onayladı, çekince): md 16/2 birebir: 'hangi egitim ve ogretim kurumunda polis disiplin kurulu olusturulacagi ve disiplin kurulu olusturulmayan egitim ve ogretim kurumlari personeli hakkinda karar vermeye yetkili kurullar, BAKANLIKCA belirlenir.' C dogru; metin bu yetkiyi EGM'ye, valilige ya da bir kurula vermemis -> A, B, D, E elenir.",
+      "dil (onayladı, çekince): Kök iki ayrı belirlemeyi ('hangi kurumda kurul oluşturulacağı' + 'kurul oluşturulmayan kurumların personeli hakkında yetkili kurullar') tek soruda topluyor; md 16/2 ikisini de aynı makama bağladığı için tek cevap doğuyor, ikinci okuma riski yok. Kök uzun ama ağır değil."
+    ]
+  },
+  {
+    "id": "7068-p3-20",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 17/1-(a)-1 birebir: 'Polis memurlari, carsi ve mahalle bekcileri ile emniyet hizmetleri sinifi disindaki memurlara BUTUN disiplin cezalarini' -> E. HUCRE TARAMASI: bu personel grubu + il emniyet kadrosu kombinasyonu md 17'de baska hicbir hucreye dusmuyor; (c)-3'teki 'polis memurlari ve EHS disindaki memurlar' yalniz EGM MERKEZ TESKILATI kadrosu icin, kok ise 'kuruldukları il emniyet kadrosundaki' diyor - ortusme yok. C sikki (a)-2'nin, B sikki (ç)-2'nin formulu; ikisi de baska personel gruplarina ait, bu grup icin yanlis. D sikkindaki 'Devlet memurlugundan cikarma' md 7/1'deki kapali disiplin cezasi katalogunda yer almiyor (md 9 ayri, yetki 657'ye birakilmis) ve D ayrica meslekten cikarmayi da disladigi icin kesin yanlis. 2019 degisikligi kaydi (Degisik:6/12/2019-7196/90) metinde mevcut.",
+      "kalite (onayladı, çekince): md 17/1-(a)-1 ile birebir; 2019 değişikliği (7196/90) metinde doğrulandı. Not: doğru şık hem en kısa (25 karakter, diğerleri 39-92) hem de en kapsayıcı ifade; iki test-wise sezgi ters yönde çalıştığı için ipucu değeri sıfırlanıyor, bu yüzden revizyon istemedim. Kalan risk olarak kaydedildi.",
+      "dil (onayladı, çekince): Kök hem kurulu hem personel grubunu tam sayarak hücreyi tek anlamlı belirliyor; 'kuruldukları il emniyet kadrosundaki' kaydı kökte açık, bu yüzden ikinci bir okuma doğmuyor. Şıklar 'hangi disiplin cezalarını verebilir' sorusuna belirtme hâliyle uyumlu. Kusur bu soruda değil p3-24'te: onun kökü bu sorunun cevabını ele veriyor (orada işaretlendi)."
+    ]
+  },
+  {
+    "id": "7068-p3-21",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 17/1-(b) birebir: egitim ve ogretim kurumlarindaki polis disiplin kurullari '...ile kurumda OGRENIM GOREN polis memuru ve adaylarina butun disiplin cezalarini' verir -> A. HUCRE TARAMASI: ogrenim gorenler (c)-1'in '8-5 meslek derecesi' olcutune girmez, (c)-3'un 'egitim ve ogretim kurumlari kadrolarindaki komiser yrd./komiser/baskomiser' sayimina da girmez -> ikinci hucre yok. Kokteki 'disiplin kurulu olusturulmus' kaydi md 16/2 nedeniyle zorunluydu ve dogru konulmus.",
+      "kalite (onayladı, çekince): md 17/1-(b); doğru. Üreticinin 'p3-20 -> p3-21 sızıntısı açıklama yeniden yazılarak kapatıldı' iddiası DOĞRULANDI: p3-20'nin açıklaması artık yalnız il polis disiplin kurulunun rütbe eksenli yetkisinden söz ediyor, eğitim ve öğretim kurumu kuruluna hiç değinmiyor; p3-21 bağımsız olarak çözülebiliyor.",
+      "dil (onayladı, çekince): Kökteki üç kayıt da açık: kurulun oluşturulmuş olduğu, kurumun eğitim ve öğretim kurumu olduğu ve personelin 'öğrenim gören' grupta bulunduğu. md 17/1-(b) öğrenim görenleri kadrolu personelden ayrı saydığı için (ç) bendindeki meslek derecesi ızgarası bu gruba uygulanamaz; ceza türü kökte belirtilmese de ikinci cevap doğmuyor. Şıklar homojen (hepsi kurul adı)."
+    ]
+  },
+  {
+    "id": "7068-p3-22",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — Vakanın iç tutarlılığı bozuk: '5'inci meslek derecesinde bulunan bir emniyet amiri' diye bir personel yoktur — 3201 sayılı Kanunun rütbe/meslek derecesi cetveline göre emniyet amiri 6'ncı meslek derecesidir, 5'inci meslek derecesi 4. Sınıf Emniyet Müdürüne karşılık gelir. Cevap her iki derecede de md 17/1-(ç)-1 kapsamında kaldığı için ikinci doğru cevap doğmuyor; kusur olgusal tutarlılıktadır ve teşkilat mevzuatını bilen adayı vakanın verisine güvenmemeye iter. İkinci kusur şık homojenliğinde: kök 'yetkili KURUL hangisidir' derken E şıkkı ('Polis Teftiş Kurulu Başkanlığı') bir disiplin kurulu değil, bir başkanlıktır; kendiliğinden elenen dolgu şıkkıdır. Ayrıca setin en doğal çeldiricisi olan Bakanlık Yüksek Disiplin Kurulu (md 17/2 uyarınca 1-4'üncü dereceler için yetkili) hiç yok. | öneri: Kökteki unvanı '4. Sınıf Emniyet Müdürü' yap (ya da unvanı büsbütün çıkarıp 'emniyet hizmetleri sınıfında ve 5'inci meslek derecesinde bulunan bir personel' de); E şıkkını 'Bakanlık Yüksek Disiplin Kurulu' ile değiştir.",
+      "İNSAN KARARI (itiraz kapatıldı): Dil denetçisinin KANUNLAR ARASI ÇELİŞKİ bulgusu düzeltildi — mevzuat denetçisinin kaçırdığı kusur. Kök '5'inci meslek derecesinde bulunan bir emniyet amiri' diyordu; 3201 md 13 cetveline göre emniyet amiri 6'ncı, 5'inci derece Dördüncü Sınıf Emniyet Müdürüdür. Kök buna göre düzeltildi ve hücre kontrolü yeniden yapıldı: (c)-1 ceza türünden, (c)-2 kadro+rütbeden, (c)-3 rütbeden, 17/2 dereceden, 17/3 hizmet sınıfından eleniyor → md 17/1-(ç)-1 tek hücre, cevap D korundu. E şıkkı da 'Polis Teftiş Kurulu Başkanlığı' (bir disiplin kurulu değil) yerine 'Bakanlık Yüksek Disiplin Kurulu' oldu.",
+      "mevzuat (onayladı, çekince): MD 17 YETKI IZGARASI HUCRE HUCRE SINANDI, KOK TEK HUCREYE DUSUYOR. Vaka: EGM merkez teskilati kadrosu + EHS + 5'inci meslek derecesi + meslekten cikarma. (ç)-1 birebir uyuyor: 'Genel Mudurluk, il, egitim ve ogretim kurumlari kadrolarindaki 8 inci meslek derecesinden 5 inci meslek derecesine (bu derece dahil) kadar olan personel hakkinda MESLEKTEN CIKARMA cezasini' -> EGM Yuksek Disiplin Kurulu (D). Rakip hucreler tek tek elendi: (c)-1 ayni derece araligini kapsar ama 'meslekten cikarma DISINDA kalan diger cezalar' der, ceza meslekten cikarma oldugu icin devre disi; (c)-2 yalniz IL emniyet kadrolarindaki komiser yrd./komiser/BASKOMISER icin, kadro da rutbe de tutmuyor; (c)-3 merkez teskilati icin komiser yrd./komiser/baskomiser ile polis memuru ve EHS DISINDAKI memurlari sayar, emniyet amiri bunlarin hicbiri degil; 17/2 yalniz 1-4'uncu meslek dereceleri icin; 17/3 EHS DISINDAN atananlar icin, personel EHS mensubu. Tek cevap D. URETICININ SILME GEREKCESI DOGRULANDI: baskomiser (6'nci meslek derecesi) uzerinden kurulan soru gercekten iki hucreye dusuyordu - merkez kadrosunda (c)-3 'butun disiplin cezalarini' (meslekten cikarma dahil) ile (ç)-1'in 8-5 araligi cakisiyor; il kadrosunda ise (c)-2 ile (ç)-1 cakisiyor. Uretici hakli ve dogru davranmis; 5'inci meslek derecesindeki emniyet amirine gecerek cakismayi kaldirmis.",
+      "kalite (onayladı, çekince): md 17/1-(ç)-1 vakası; vakadaki üç unsur (emniyet hizmetleri sınıfı, 5'inci meslek derecesi, meslekten çıkarma) hükmü uygulamak için yeterli ve gerekli. BANKA ÇAKIŞMASI kontrolü: bankadaki gerçek çıkmış soru 1-4'üncü meslek dereceleri içindir (cevap Bakanlık Yüksek Disiplin Kurulu); bu soru 8-5 bandını sorduğu için kök, şık ve cevap düzeyinde çakışma yok, çeldirici eleme de doğmuyor."
+    ]
+  },
+  {
+    "id": "7068-p3-23",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 17/3 birebir: 'EGM merkez ve tasra teskilatindaki tibbi, teknik ve mali hizmetler veren sube mudurlukleri ve daha ust kadrolara, emniyet hizmetleri sinifi disindan atama yapilmasi halinde... meslekten cikarma cezasi disindaki disiplin cezalari EMNIYET GENEL MUDURLUGU YUKSEK DISIPLIN KURULUNCA... verilir.' C dogru. Hucre kontrolu: personel EHS disindan atandigi icin 17/1'in meslek derecesine bagli hucreleri devreye girmiyor; 17/3 bu grup icin lex specialis. 2019 degisikligi kaydi metinde mevcut. Aciklama meslekten cikarma yetkisini isim vermeden 'bu kurulda degildir' diye biraktigi icin bankadaki gercek cikmis md 17 sorusunun cevabini da ele vermiyor - yerinde bir tercih.",
+      "kalite (onayladı, çekince): md 17/3 ile birebir; 2019 değişikliği (7196/90) doğrulandı. Açıklamanın 'meslekten çıkarma bakımından yetki bu kurulda değildir' cümlesi kendi kökünün sınırını çiziyor, başka bir sorunun cevabını vermiyor (17/3'ün meslekten çıkarma ayağı üzerine dosyada soru yok). Not: p3-22 ile aynı kurum doğru cevap oluyor; iki soru aynı denemede yan yana konmamalı.",
+      "dil (onayladı, çekince): Kök md 17/3'ün kapsam kayıtlarını (kadro düzeyi, hizmet sınıfı dışından atanma, ceza türü) eksiksiz taşıyor; hücre tek anlamlı. Şıklar homojen. Şüphe notu: kök 286 karakter ve tek soluk cümle; adayın okuma yükü yüksek, ancak kayıtların hiçbiri çıkarılamaz çünkü her biri hücreyi belirliyor."
+    ]
+  },
+  {
+    "id": "7068-p3-24",
+    "karar": "KABUL",
+    "itirazlar": [
+      "dil: REVIZYON — Kök→cevap sızıntısı: 'Bir il polis disiplin kurulu, il emniyet kadrosunda görevli bir POLİS MEMURU hakkında MESLEKTEN ÇIKARMA cezası verilmesine karar vermiştir' cümlesi, il polis disiplin kurulunun polis memuruna meslekten çıkarma cezası verebildiğini olgu olarak ortaya koyuyor — bu, p3-20'nin doğru cevabının ta kendisidir ('bütün disiplin cezalarını') ve p3-20'nin dört çeldiricisini birden eler. Vaka kurgusu bakımından ayrıca personel bilgisi çözüm için gerekli değildir: md 18/1-(a) kesinleşme usulünü kurulun ve cezanın kimliğine bağlar, personelin rütbesine değil; yani sızdıran veri aynı zamanda fazla veridir. | öneri: Kökten personel bilgisini çıkar: 'Bir il polis disiplin kurulu, hakkında disiplin soruşturması yürütülen bir personel hakkında meslekten çıkarma cezası verilmesine karar vermiştir.' Bu yapılamazsa p3-20 ile p3-24 aynı denemede/aynı formda kullanılmasın.",
+      "İNSAN KARARI (itiraz kapatıldı): Dil denetçisinin KÖK→CEVAP sızıntısı itirazı uygulandı: kökteki 'bir polis memuru hakkında meslekten çıkarma' cümlesi p3-20'nin doğru cevabını olgu olarak veriyor ve dört çeldiricisini birden eliyordu; üstelik personel bilgisi bu sorunun kendi çözümü için gereksizdi. Çıkarıldı. Script'le doğrulandı: 'polis memuru' ibaresi artık p3-20'yi besleyen bir bağlamda geçmiyor.",
+      "mevzuat (onayladı, çekince): md 18/1-(a) ikinci yarisi birebir: 'meslekten cikarma cezasi kararlari valinin ONERISI, Emniyet Genel Mudurlugu Yuksek Disiplin Kurulunun UYGUN GORUSU ve Bakanin ONAYIYLA' kesinlesir -> B. A sikki (valinin onayi) ayni bendin meslekten cikarma DISINDAKI kararlara iliskin yarisidir, bu vakada yanlis. Aciklamanin '2019 degisikligiyle uygun ibaresi eklendi' iddiasi dipnot 9 ile dogrulandi (6/12/2019 t. 7196 s. Kanun md 91: '(a) ve (b) bentlerine \"Yuksek Disiplin Kurulunun\" ibarelerinden sonra gelmek uzere \"uygun\" ibareleri eklenmistir').",
+      "kalite (onayladı, çekince): md 18/1-(a) ile birebir; üç aşamalı usul (öneri + uygun görüş + onay) doğru kurulmuş. Açıklamanın 'uygun görüş 2019'da eklendi' iddiası 9 nolu dipnotla doğrulandı (7196/91 ile 'uygun' ibaresi eklenmiş — ifade birebir değil ama özü doğru). Üreticinin 'p3-24/p3-25 şık-cevap çakışması giderildi' iddiası bu ikili bakımından DOĞRULANDI: p3-24'ün hiçbir şıkkı p3-25'in cevabını (Emniyet Genel Müdürünün onayı) içermiyor."
+    ]
+  },
+  {
+    "id": "7068-p3-25",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 18/1-(b) birebir: 'EGM Merkez Disiplin Kurulu ile egitim ve ogretim kurumlarindaki polis disiplin kurullarinin meslekten cikarma disindaki kararlari EMNIYET GENEL MUDURUNUN ONAYIYLA' kesinlesir -> D. C sikki 'oneri + Bakan onayi' formulunu (18/1-a'daki agir usul) yanlis kurula tasiyor, dogru elenir. UYARI (duzeltme p3-26'da): ayni dosyadaki 7068-p3-26'nin onerme II'si 'EGM Merkez Disiplin Kurulunca verilen ve EMNIYET GENEL MUDURU TARAFINDAN uygun gorulmeyen kararlar' diyerek bu sorunun cevabini (onay makaminin Emniyet Genel Muduru oldugunu) kokunde ele veriyor. Bu sorunun kendisinde kusur yok.",
+      "kalite (onayladı, çekince): md 18/1-(b) ile birebir. Ancak cevabı p3-26 ele veriyor — kusur p3-26'da olduğu için düzeltme oraya yazıldı; bu soru olduğu gibi kalabilir. Ayrıca çeldirici B, p3-17'nin doğru cevabının ifadesini taşıyor (kalan risk).",
+      "dil (onayladı, çekince): Kök 'meslekten çıkarma dışındaki kararlar' kaydını taşıdığı için hücre tek anlamlı; şıklar 'nasıl kesinleşir' sorusuna vasıta hâliyle uyumlu ('... onayıyla'). Sorunun kendisinde kusur yok; cevabı p3-26'nın II. önermesi veriyor (orada işaretlendi). Kozmetik not: açıklamanın son cümlesi ('kurula başkanlık eden makam ile kararı onaylayan makam Kanunda farklıdır') B çeldiricisini adlandırmadan eliyor; şık setinin kurgusunu anlatan bir meta cümledir, çıkarılabilir."
+    ]
+  },
+  {
+    "id": "7068-p3-26",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat: REVIZYON — Hukuki cekirdek dogru: I = md 18/3 birinci cumlesi birebir ('Il polis disiplin kurulunca verilen ve vali tarafindan uygun gorulmeyen kararlar EGM Yuksek Disiplin Kurulunca... kesin karara baglanir'); II = md 18/3 ikinci cumlesi birebir; III md 18/2'ye aykiri (dosya kurula iade edilmez, Bakanlik Yuksek Disiplin Kurulunca kesin karara baglanir) -> cevap C dogru. KUSUR SIZINTIDIR VE KOKTEDIR: onerme II'nin 'EMNIYET GENEL MUDURU tarafindan uygun gorulmeyen kararlar' ifadesi, EGM Merkez Disiplin Kurulu kararlarinin onay makaminin Emniyet Genel Muduru oldugunu dogrudan soyluyor; bu, ayni dosyadaki 7068-p3-25'in cevabi (D sikki) ile birebir aynidir. Ikincil olarak onerme I'in 'vali tarafindan uygun gorulmeyen' ifadesi, 7068-p3-24'un A celdiricisini (valinin onayi) mesrulastiran bir ipucu tasiyor. Bu hatta dokuz kez sizinti yok edilmek yerine tasindi; burada kaynak onermelerin kendisidir. | öneri: Onermeleri onay makamini adlandirmadan kur: II'yi \"Emniyet Genel Mudurlugu Merkez Disiplin Kurulunca verilen ve ONAY MAKAMINCA uygun gorulmeyen kararlar Bakanlik Yuksek Disiplin Kurulunca kesin karara baglanir.\" seklinde yaz; I'i de simetrik olarak \"Il polis disiplin kurulunca verilen ve onay makaminca uygun gorulmeyen kararlar Emniyet Genel Mudurlugu Yuksek Disiplin Kurulunca kesin karara baglanir.\" yap. Boylece md 18/3'un olctugu sey (uygun gorulmeyen dosyanin HANGI UST KURULA gittigi) korunur, onay makami bilgisi sizmaz. Cevap C degismez. Alternatif: p3-25 ile p3-26 ayni denemeye/alistirmaya birlikte dusmesin.",
+      "kalite: REVIZYON — SIZINTI (kök -> cevap ve açıklama -> cevap). Üreticinin p3-24/p3-25 için 'çakışma giderildi' iddiası EKSİK: çakışma p3-26'ya taşınmış. II numaralı önerme 'Emniyet Genel Müdürlüğü Merkez Disiplin Kurulunca verilen ve EMNİYET GENEL MÜDÜRÜ TARAFINDAN UYGUN GÖRÜLMEYEN kararlar...' diyerek Merkez Disiplin Kurulu kararlarının onay makamının Emniyet Genel Müdürü olduğunu varsayıyor; bu, p3-25'in doğru cevabının (D — Emniyet Genel Müdürünün onayıyla) tam kendisi. Aynı bilgi p3-26'nın açıklamasında da tekrarlanıyor ('Emniyet Genel Müdürünün uygun görmediği Merkez Disiplin Kurulu ... kararları'). Hükümler (md 18/2-18/3) doğru, kusur yalnız sızıntıdır. | öneri: II'yi onay makamını adlandırmadan yaz: 'Emniyet Genel Müdürlüğü Merkez Disiplin Kurulunca verilen ve onay makamınca uygun görülmeyen kararlar Bakanlık Yüksek Disiplin Kurulunca kesin karara bağlanır.' Açıklamada da 'Emniyet Genel Müdürünün uygun görmediği' ibaresini 'onay makamınca uygun görülmeyen' ile değiştir. I numaralı önermede 'vali' ibaresi kalabilir; vali onayı p3-24'te doğru cevap değil, çeldiricidir.",
+      "dil: REVIZYON — Üç önerme de tek tek doğru/yanlış diye kararlaştırılabiliyor ve I ile II birbirinden türetilemiyor; buna karşılık üç ayrı kusur var. (1) Sızıntı: II. önerme 'Emniyet Genel Müdürlüğü Merkez Disiplin Kurulunca verilen ve EMNİYET GENEL MÜDÜRÜ TARAFINDAN uygun görülmeyen kararlar' diyerek Merkez Disiplin Kurulunun onay makamının Emniyet Genel Müdürü olduğunu peşinen söylüyor; bu, p3-25'in doğru cevabının (D) tamamıdır. (2) I. önermedeki 'VALİ TARAFINDAN uygun görülmeyen' ibaresi de valinin il polis disiplin kurulu kararlarında onay makamı olduğunu doğruluyor ve p3-24'ün A çeldiricisini ('Valinin onayıyla') meşru hâle getiriyor — p3-24'te doğru cevap üç aşamalı usul olduğu için aday yanıltıcı bir destek alıyor. (3) Şık seti: I ve II md 18/3'ün aynı cümlesinin iki yarısıdır ve tıpatıp aynı kalıpta kurulmuştur ('X kurulunca verilen ve Y tarafından uygun görülmeyen kararlar Z kurulunca kesin karara bağlanır'); birini doğru sayan aday zorunlu olarak ötekini de doğru sayar. Bu okumada A, B ve D kendiliğinden elenir, soru fiilen 'C mi E mi' ikilisine iner ve tek karar III'e kalır. | öneri: II'de onay makamını anma: 'Emniyet Genel Müdürlüğü Merkez Disiplin Kurulunca verilen ve onay makamınca uygun görülmeyen kararlar Bakanlık Yüksek Disiplin Kurulunca kesin karara bağlanır.' I'i de aynı biçimde makamsızlaştır. Ayrıca I ile II'yi yapıca ayrıştır — birini md 18/1'den kurulmuş bir kesinleşme önermesine çevir (örn. 'I. Emniyet Genel Müdürlüğü Yüksek Disiplin Kurulunun kararları Bakanın onayıyla kesinleşir.' — doğru) — ve şık setine 'I ve III' seçeneğini ekle.",
+      "İNSAN KARARI (itiraz kapatıldı): ÜÇ denetçinin de itirazı. Mevzuat 'makam adlarını onay makamınca ile değiştir', dil 'I'i md 18/1'den kurulmuş farklı yapıda bir önermeye çevir ve sete I ve III ekle' demişti; İKİSİ BİRLİKTE uygulandı. I artık md 18/1-(c)'den (EGM Yüksek Disiplin Kurulu kararları Bakan onayıyla kesinleşir), II'de makam 'onay makamınca' oldu, şık setine 'I ve III' eklendi, cevap C. Script'le doğrulandı: 'Emniyet Genel Müdürünün' ifadesi artık dosyada yalnız p3-25'in kendi şıkkında geçiyor — p3-25'e giden sızıntı kapandı."
+    ]
+  },
+  {
+    "id": "7068-p3-27",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 25/1 birebir: 'Emniyet Genel Muduru, Jandarma Genel Komutani ve Sahil Guvenlik Komutaninin disiplin cezasini gerektiren fiilleri ogrenildiginde haklarinda BAKAN ONAYIYLA BAKANLIK MUFETTISLERI gorevlendirilir.' A dogru; C 'ilgili teskilatin mufettisleri' ve D 'Cumhurbaskani onayi' metinde yok. Aciklamanin ikinci yarisi md 25/2 ile birebir ortusuyor, dayanak kunyesi (25/1 ve 25/2) dogru.",
+      "kalite (onayladı, çekince): md 25/1 ile birebir; iki unsurun (Bakan onayı + Bakanlık müfettişleri) birlikte aranması gerçek ayırt edici. Kural emniyet teşkilatının en üst amirini de kapsadığı için ölçme değeri taşıyor. Not: kök, p3-28'in doğru cevabındaki üçlüyü öne çıkarıyor (kalan risk).",
+      "dil (onayladı, çekince): Kök tek anlamlı ('fiilleri öğrenildiğinde ... nasıl soruşturma başlatılır'), şıklar 'onay + görevlendirme' yapısında homojen; doğru şık en kısa şıklardan biri. Açıklamanın son cümlesi md 25/2'yi anlatarak kökün ötesine geçiyor, ancak dosyada 25/2'yi soran bir soru yok — bu kez sızıntıya dönüşmüyor."
+    ]
+  },
+  {
+    "id": "7068-p3-28",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 25/4 birebir: 'Bakanlik Yuksek Disiplin Kurulunun bu madde uyarinca yapilan gorusme ve toplantilarina EMNIYET GENEL MUDURLUGU, JANDARMA GENEL KOMUTANLIGI VE SAHIL GUVENLIK KOMUTANLIGINDAN GELEN UYELER katilamazlar.' E dogru. Aciklamadaki 'yasak yalniz oyu degil GORUSMEYE katilmayi da kapsar' cikarimi metnin 'gorusme ve toplantilarina' ifadesinden; 'yasak secici degildir, uc kurumun tamami' cikarimi da metnin sayimindan dogru.",
+      "kalite (onayladı, çekince): md 25/4 ile birebir; tarafsızlık kuralı ve 'yasak seçici değildir' vurgusu doğru. Kalan risk: p3-27'nin kökü aynı üçlüyü zaten anıyor, iki soru aynı denemede yan yana konmamalı.",
+      "dil (onayladı, çekince): Kök hem kurulu hem de 'kurumların en üst amirleri hakkındaki görevlerine ilişkin' kaydı taşıdığı için md 25/4'ün kapsamı dışına taşmıyor. Şıklar 'kimler katılamaz' çoğul sorusuna hepsi çoğul üye öbeğiyle cevap veriyor. Doğru şık en uzun şık değil (B daha uzun)."
+    ]
+  },
+  {
+    "id": "7068-p3-30",
+    "karar": "KABUL",
+    "itirazlar": [
+      "kalite: REVIZYON — Hüküm (md 26/1 birinci cümle) doğru ve soru sağlam; kusur açıklamanın son cümlesinde: 'Bu genel kuralın Kanunda ayrıca düzenlenmiş bir istisnası bulunmaktadır.' Bu cümle kökün sorduğunun ötesine geçen bir dolgudur ve doğrudan p3-31'i (mehil müddeti istisnası) haber verir — hattın dokuz kez tekrarlanan sızıntı örüntüsünün tam kalıbı. Cümle cevabı vermiyor ama aday için istisnanın varlığını ücretsiz bilgi hâline getiriyor. | öneri: Açıklamanın son cümlesini ('Bu genel kuralın Kanunda ayrıca düzenlenmiş bir istisnası bulunmaktadır.') sil; açıklama bir önceki cümlede bitsin.",
+      "İNSAN KARARI (itiraz kapatıldı): Kalite denetçisinin itirazı uygulandı: açıklamanın son cümlesi ('Bu genel kuralın Kanunda ayrıca düzenlenmiş bir istisnası bulunmaktadır') doğrudan p3-31'i haber veriyordu; silindi.",
+      "mevzuat (onayladı, çekince): md 26/1 birinci cumlesi birebir: 'Disiplin sorusturmasinin acilmasinda ve disiplin amiri veya disiplin kurulunun saptanmasinda disiplinsizlik yaptigi iddia edilen personelin FIILI ISLEDIGI TARIHTE CALISTIGI YER esas alinir.' D dogru. C sikki ('kadrosunun bulundugu yer') md 26/2 ve 26/3'teki 'asilin gorev unvani' / 'asil gorev ve sifatlari' olcutleriyle birebir ayni degil, ustelik onlar ozel hallere iliskin -> ikinci cevap dogurmuyor. Aciklamadaki 'bu genel kuralin Kanunda ayrica duzenlenmis bir istisnasi bulunmaktadir' cumlesi mehil muddetini isaret ediyor ama adini vermiyor; 7068-p3-31'in cevabini ele vermiyor - sinirda ama sizinti degil.",
+      "dil (onayladı, çekince): Kök md 26/1'in ilk cümlesini birebir karşılıyor, şıklar 'hangi yer' sorusuna hepsi yer öbeğiyle uyumlu. Kalan risk (engelleyici değil): açıklamanın son cümlesi 'Bu genel kuralın Kanunda ayrıca düzenlenmiş bir istisnası bulunmaktadır' diyerek kökün ötesine geçiyor ve p3-31'in varlığını haber veriyor; istisnanın içeriğini vermediği için cevap sızıntısı doğurmuyor, yine de çıkarılması daha temiz olur."
+    ]
+  },
+  {
+    "id": "7068-p3-31",
+    "karar": "KABUL",
+    "itirazlar": [
+      "kalite: REVIZYON — BİÇİM İPUCU. Hüküm (md 26/1 ikinci cümle) doğru. Doğru şık 'İlişik kestiği yerde' 20 karakter, diğerleri 27/31/36/48; ayrıca tek 'çıplak' ifade, diğer dördü açıklayıcı tamlamalarla uzatılmış. Üreticinin 'çeldirici uzunluklarını düzelttim' düzeltmesi bu soruda ters yönde çalışmış: en uzun şık sorununu kapatırken en kısa şık sorununu açmış. Dosya genelinde doğru şık 8/37 kez tek başına en kısa (%22, şansla aynı), bu yüzden sistematik değil, fakat p3-31 ve p3-19 tek tek göze batıyor. | öneri: Çeldiricileri kısalt, doğru şıkkı uzatma: B 'Yeni görev yerinde', C 'Mehil müddetini geçirdiği yerde', D 'Kadrosunun bulunduğu ilde', E 'Fiilin işlendiği yerde' yap; böylece beş şık 18-30 karakter bandında toplanır.",
+      "İNSAN KARARI (itiraz kapatıldı): Kalite ve dil denetçilerinin itirazları uygulandı: doğru şık 20 karakterle tek başına en kısaydı, çeldiriciler kısaltılarak bant 18–31'e getirildi. Doğru şık 'Her hâlde ilişik kestiği yerde' md 26/1'in istisnasız kaydını taşıdığı için mutlak ifade kuralına da uydu. Açıklamadan dilin şüphe duyduğu 'izinli olduğu ili terk etmiş olsa dahi' ibaresi atıldı.",
+      "mevzuat (onayladı, çekince): md 26/1 ikinci cumlesi birebir: 'Fiilin mehil muddetinde islenmesi halinde ILISIK KESTIGI YERDE gorevli kabul edilir.' A dogru; B, C, D, E metinde karsiliksiz. Aciklamadaki 'mehil muddetinin nerede gecirildigi onemsizdir' cikarimi metnin susmasindan degil, kuralin 'ilisik kestigi yer' seklindeki kesin baglantisindan dogru cikiyor.",
+      "dil (onayladı, çekince): Kök tek anlamlı; şıkların beşi de bulunma hâlinde yer öbeği, 'nerede görevli kabul edilir' yüklemine tam uyuyor. 'Mehil müddeti' terimi kökte tanımlanmadan kullanılıyor ama ölçülen bilgi zaten bu terimin hukuki sonucudur; kusur saymadım. Şüphe notu: açıklama 'personel izinli olduğu ili terk etmiş olsa dahi' derken mehil müddetini izinle eşitliyor; hukuken izin değildir, ifade gevşek."
+    ]
+  },
+  {
+    "id": "7068-p3-32",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/1 ucuncu cumlesi birebir: 'Ast memur ile ust memurun ayni fiile istiraki halinde yetkili disiplin kurulu, UST MEMUR hakkinda disiplin cezasi vermeye yetkili disiplin kuruludur.' C dogru. E sikki ('bir ust disiplin kurulu') metnin kurmadigi bir sicrama - dogru elenir. Kokte 'ayni disiplinsizlik fiiline birlikte istirak' ve amirlik iliskisi acikca verilmis, hukmun uygulanmasi icin yeterli veri var.",
+      "kalite (onayladı, çekince): md 26/1 üçüncü cümlesi; ast-üst iştiraki vakası hükmü uygulamak için yeterli veriyi (amirlik ilişkisi + aynı fiil) veriyor. Açıklamadaki 'kural bir üst kurula sıçrama getirmez' vurgusu E çeldiricisini kapatıyor, ikinci doğru şık riski yok.",
+      "dil (onayladı, çekince): Gerçek vaka: iştirak olgusu ve taraflar arasındaki ast-üst ilişkisi ayırt edici unsur olarak açıkça verilmiş, md 26/1'in üçüncü cümlesi bu iki veriye ihtiyaç duyuyor; fazla veri yok. Şıklar tam cümle olarak homojen; A ile C birbirinin karşıtı olmakla birlikte D ve E başka çözümler önerdiği için set iki şıkka inmiyor. Kök-şık uyumu ('nasıl belirlenir' → cümle şıkları) doğru."
+    ]
+  },
+  {
+    "id": "7068-p3-33",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/1 dorduncu cumlesi birebir: 'Disiplin konusu fiili isledikten sonra; rutbe veya kadro/gorev unvaninda degisiklik olan personel hakkinda karar vermeye yetkili disiplin amiri veya disiplin kurulu, personelin SON KADRO/GOREV UNVANI KARSILIGI RUTBE esas alinmak suretiyle tespit ve tayin olunur.' E dogru. A sikki ayni fikranin YER olcutunu rutbeye tasiyan bilincli tuzak, metinle celismiyor cunku iki olcut ayri cumlelerde. md 26/2 (vekaleten yurutenlerde asilin gorev unvani) burada uygulanmaz - vaka terfidir, vekalet degil. Aciklama yer olcutunun ne oldugunu SOYLEMEDEN farkli oldugunu belirtiyor; p3-30'a sizinti yok.",
+      "kalite (onayladı, çekince): md 26/1 dördüncü cümlesi ile birebir. A çeldiricisi p3-30'un doğru cevabının kalıbını taşıyor; bu bir sızıntı değil, tam tersine aday için kurulmuş meşru bir tuzak (yer ölçütü ile rütbe ölçütünün karıştırılması) ve iki soru birbirini beslemiyor. Not: 'hard' etiketi biraz ağır, hüküm doğrudan okunuyor; medium daha gerçekçi.",
+      "dil (onayladı, çekince): Vaka geçerli: fiil ile terfi arasındaki sıra ('işledikten sonra ... terfi etmiştir') ayırt edici unsurdur ve md 26/1'in son cümlesinin uygulanmasını gerektirir; senaryo çözümde rol oynuyor. Şıklar 'hangi ölçüt esas alınır' sorusuna hepsi ölçüt öbeğiyle uyumlu. Kalan risk (engelleyici değil): açıklamanın son cümlesi rütbe ölçütü ile yer ölçütünün farklı olduğunu söyleyerek p3-30'a işaret ediyor; p3-30'un cevabını vermediği için sızıntı saymadım."
+    ]
+  },
+  {
+    "id": "7068-p3-34",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/6 birebir: 'Disiplin kurulu uyeleri; bosanmis olsalar dahi esleri, birinci ve ikinci derece kan ve kayin hisimlari olan veya disiplin cezasi verdikleri ya da disiplin sorusturmasini yaptiklari personelin durumlarinin gorusulecegi toplantilara katilamazlar. Bu durumda GERI KALAN UYELERI ILE TOPLANAN KURUL EKSIKSIZ TOPLANMIS KABUL EDILIR.' B dogru; aciklamanin ikinci yasak sebebine (daha once ceza vermis/sorusturma yapmis olmak) iliskin cumlesi de metinle birebir. HISIMLIK UCLUSU NOTU: bu fikra 'birinci ve ikinci derece' der, md 14/4 ve 15/3 ise 'ikinci dereceye kadar' der; kok dereceyi hic zikretmeyip 'hisimligi nedeniyle' diyerek genel gectigi icin formul farki soruyu bozmuyor - uretici tercihi dogru. Sinirda nokta: md 26/5 uye yoklugunda yerine katilacaklarin her yil Aralik'ta belirlenecegini soyler, ancak 26/6 bu ozel hal icin acik varsayim koydugu icin lex specialis'tir; ustelik A sikki ikameyi 'ust disiplin amirince gorevlendirme' diye kurdugu icin 26/5'in mekanizmasiyla da ortusmuyor -> ikinci cevap dogmuyor.",
+      "kalite (onayladı, çekince): md 26/6; 'geri kalan üyeleri ile toplanan kurul eksiksiz toplanmış kabul edilir' hükmü birebir. Çeldiriciler (ikame üye, ertelenme, üst kurula gönderme) makul hata üzerine kurulu, doldurma değil.",
+      "dil (onayladı, çekince): Kök yasağın sebebini (hısımlık) ve sorulan noktayı (kurulun toplanması) tek anlamlı veriyor; şıklar tam cümle olarak homojen. Açıklamanın son cümlesi yasağın ikinci sebebini (daha önce ceza vermiş/soruşturma yapmış olmak) ekliyor; kökün ötesinde ama dosyada bunu soran ikinci soru olmadığı için sızıntı doğmuyor."
+    ]
+  },
+  {
+    "id": "7068-p3-35",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/7 birebir: 'Disiplin kurullarinda, kanuna uygun olarak bir sendikaya uye olan personelin sorusturma dosyasinin gorusulmesi sirasinda, PERSONELIN TALEBI halinde yetkili sendika temsilcisi de disiplin kuruluna UYE OLARAK katilir.' D dogru; iki unsur (talep sarti + uye sifati) birlikte olculuyor. C sikki sifati 'gozlemci'ye, B sikki talebi sendikaya kaydirarak metinden ayrilyor - ikisi de yanlis.",
+      "kalite (onayladı, çekince): md 26/7; iki unsur (personelin talebi + üye olarak katılım) birlikte ölçülüyor, C ile D arasındaki gözlemci/üye ayrımı gerçek ayırt edici. Şık uzunlukları bu soruda dosyanın en dengelisi (53-66). Not: 'hard' etiketi ağır, medium daha gerçekçi.",
+      "dil (onayladı, çekince): Kök iki değişkeni de (katılımın şartı ve sıfatı) açıkça soruyor; şıklar bu iki değişkenin dört kombinasyonunu düzenli biçimde geziyor, hepsi aynı kalıpta. İkinci doğru cevap riski yok: md 26/7 hem 'personelin talebi' hem 'üye olarak' kayıtlarını birlikte taşıyor."
+    ]
+  },
+  {
+    "id": "7068-p3-36",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/8 ilk iki cumlesi birebir: 'Disiplin kurullari SALT COGUNLUKLA toplanir. Kararlar OY COKLUGU ile alinir.' A dogru; C, D, E'deki esikler metinde yok. Aciklamadaki 'ceza turune gore degisen bir yeter sayi Kanunda ongorulmemistir' cikarimi md 26/8'in kayitsiz ifadesiyle uyumlu. 7068-p3-37 ile ayni fikradan uretilmis olmasina ragmen farkli cumleleri olcuyorlar ve karsilikli sizinti yok (p3-36'nin siklari cekimser/esitlik konusuna hic girmiyor, p3-37'nin siklari da yeter sayilara girmiyor).",
+      "kalite (onayladı, çekince): md 26/8 birinci-ikinci cümle; toplanma ve karar yeter sayısı ayrımı doğru. p3-37 ile aynı fıkradan gelse de farklı cümleleri ölçüyor (yeter sayısı vs. çekimser oy/eşitlik), tekrar değil; iki sorunun şıkları arasında da örtüşme yok.",
+      "dil (onayladı, çekince): Kök iki yeter sayıyı birlikte soruyor, şıklar ikisini de birlikte veriyor; kısmi doğru şık yok, yani 'iki şık birden doğru' riski kapalı. Kök-şık uyumu tam."
+    ]
+  },
+  {
+    "id": "7068-p3-37",
+    "karar": "KABUL",
+    "itirazlar": [
+      "mevzuat (onayladı, çekince): md 26/8 son iki cumlesi birebir: 'CEKIMSER OY KULLANILAMAZ. Oylarin esitligi halinde BASKANIN OYU YONUNDE karar alinmis sayilir.' C dogru; A ve E cekimser yasagini, B ve D esitlik cozumunu bozuyor -> dordu de kesin yanlis. Aciklamadaki 'baskanin oyu ikinci bir oy degildir' nitelemesi metnin 'baskanin oyu yonunde karar alinmis sayilir' ifadesiyle uyumlu; 'personelin lehine karar' ve 'ust kurula gonderme' cozumlerinin Kanunda bulunmadigi tespiti de dogru.",
+      "kalite (onayladı, çekince): md 26/8 üçüncü-dördüncü cümle; iki kuralın (çekimser yasağı + eşitlikte başkanın oyu) çapraz kombinasyonuyla kurulmuş temiz bir soru. Açıklamadaki 'başkanın oyu ikinci bir oy değildir' açıklaması metne aykırı değil, yorum niteliğinde.",
+      "dil (onayladı, çekince): Kök md 26/8'in son iki cümlesini birlikte ölçüyor, şıklar iki değişkeni düzenli olarak birleştiriyor. Kalan risk (engelleyici değil): A ile C birbirinin tersi çift ve doğru cevap bu çiftte; ayrıca beş şıkkın üçü 'çekimser oy kullanılamaz' dediği için çoğunluk kalıbı zayıf bir ipucu üretebilir. Bir çeldiriciyi 'kullanılabilir' kanadına taşımak dengeyi düzeltir. Ayrıca p3-36 ile aynı fıkradan geliyorlar; ikisi de aynı formda kullanılırsa konu tekrarı hissi doğar, cevap sızıntısı ise yok."
+    ]
+  }
+]

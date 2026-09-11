@@ -134,3 +134,25 @@ yazma):
 
 `articleNo` madde başlığındaki biçimin AYNISI olmalı ("10", "34/A", "Ek 1",
 "Geçici 2") — uydurma. `zorluk` = easy|medium|hard.
+
+## 12. Mutlak ifadeli şık kalıbı (10 Eyl 2026, ölçümle bulundu)
+
+**Kusur:** "yalnız / yalnızca / sadece / hiçbir / her hâlde / mutlaka / tamamen /
+asla / kesinlikle / daima / her zaman" gibi mutlak ifade taşıyan şıklar neredeyse
+her zaman çeldirici oluyor. Bankadaki 435 Doc 39 sorusunda ölçüldü:
+
+- mutlak ifadeli şık: **171**
+- bunların doğru cevap olanı: **5 (%2,9)** — şans düzeyi %20 olurdu
+- etkilenen soru: **100**; 95'inde aday ortalama **1,7 şıkkı** hükmü bilmeden eliyor
+
+Beş kanunun beşinde de aynı (%0–4,8), yani tek bir partinin kazası değil, üretim
+alışkanlığı. Sonuç: "mutlak ifadeli şıkkı ele" sezgisi 5 şıklık soruyu fiilen
+3 şıklığa indiriyor — ölçtüğümüz şey hukuk bilgisi olmaktan çıkıyor.
+
+**Kural:** mutlak ifadeyi çeldiricinin yanlışlık kaynağı olarak kullanma. Kanunun
+KENDİSİ mutlak hüküm kuruyorsa (ör. "devredilemez", "hiçbir şekilde", "yalnız …
+tarafından") o mutlak ifadeyi **doğru şıkka** koy. Çeldirici mutlak ifade
+taşıyacaksa, aynı soruda doğru şık da mutlak ifade taşımalı ki ipucu ölsün.
+Hedef: bir partide mutlak ifadeli şıkların en az beşte biri doğru cevap olmalı.
+
+Ölçüm: `apps/api/scripts/doc39-mutlak-ifade.ts`.

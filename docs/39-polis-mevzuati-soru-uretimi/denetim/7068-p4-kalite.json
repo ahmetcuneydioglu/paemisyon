@@ -1,0 +1,148 @@
+[
+  {
+    "id": "7068-p4-01",
+    "karar": "ONAY",
+    "gerekce": "md 27/1'in kapalı listesini ölçüyor; dört şık gerçekten Kanunda sayılan kararlar, D ise ceza muhakemesinden tanıdık gelen makul bir hata. Dosyadaki tek olumsuz kök (1/27 = %3,7), oran sorunu yok. Şık uzunlukları dengeli, doğru şık ne en uzun ne en kısa. Kalan risk: 'easy' etiketi sınırda — kapalı listenin dört üyesini birden bilmek gerekiyor, 'medium' daha gerçekçi olurdu."
+  },
+  {
+    "id": "7068-p4-02",
+    "karar": "REVIZYON",
+    "gerekce": "SAHTE VAKA. Senaryo, md 27/2'nin şart cümlesinin düzyazıya çevrilmiş hâlinden ibaret: 'fiilin, disiplin kurulunun görev alanına giren başka bir disiplinsizliği oluşturduğu anlaşılırsa'. Senaryoyu tamamen silip hükmü doğrudan sorsanız soru birebir aynı kalır — yani olay çözümde hiçbir rol oynamıyor, yalnızca 'vaka' etiketi kazandırıyor. Açıklama bunu kendisi itiraf ediyor: 'Senaryodaki ayırt edici unsur, yeni nitelendirmenin AYNI KURULUN GÖREV ALANINA girmesidir' — ayırt edici unsur diye gösterilen şey hükmün kendi şartı. Dosyadaki 7 vakadan (27 soruda %26) dördü bu kalıpta.",
+    "oneri": "İki yoldan biri: (a) `tur` alanını 'dogrudan' yapıp kökü 'Soruşturma sonucunda fiilin, disiplin kurulunun görev alanına giren başka bir disiplinsizliği oluşturduğu anlaşılırsa ne olur?' biçiminde sadeleştir — vaka kotası şişmesin; ya da (b) senaryoya çıkarım gerektiren bir olgu ekle (ör. 'kurul, fiili soruşturma emrinde kınama olarak nitelendirilmişken aylıktan kesmeyi gerektiren bir disiplinsizlik saymıştır') ve açıklamadaki 'Senaryodaki ayırt edici unsur…' cümlesini kaldır."
+  },
+  {
+    "id": "7068-p4-03",
+    "karar": "ONAY",
+    "gerekce": "md 27/3'ün üç ayrı kaydını (gerekçe zorunluluğu, gerekçenin içeriği, imza) tek soruda ölçüyor; önermeler bağımsız ve tek anlamlı, III metinle net biçimde çelişiyor ('başkan ve üyeler tarafından imzalanır'). Dosyadaki tek önerme sorusu, kalıp yığılması yok. Kalan risk (kozmetik): şık sıralaması alışılmış düzende değil — gerçek sınavlarda 'Yalnız I / Yalnız II / I ve II / II ve III / I, II ve III' sırası kullanılır; burada 'I ve II' B'ye, 'Yalnız II' C'ye konmuş. Ölçmeyi etkilemiyor ama dizgi standardı için düzeltilebilir."
+  },
+  {
+    "id": "7068-p4-04",
+    "karar": "ONAY",
+    "gerekce": "md 28/1'in yollama hükmü; PAEM/EGM sınavlarının klasik sorusu. Çeldiriciler doldurma değil: dördü de 7068 metninde gerçekten anılan kanunlar, yani aday 'metinde geçiyordu' sezgisiyle yanılabilir — makul hata üzerine kurulmuş. Şık uzunlukları dengeli, ipucu yok."
+  },
+  {
+    "id": "7068-p4-05",
+    "karar": "REVIZYON",
+    "gerekce": "SIZINTI (05 → 06). Doğru şık E, md 28/2 c.1'i neredeyse tam metin basıyor ('kararın onaylanarak uygulanmasına kadar') ve açıklama bunu üçüncü kez tekrarlıyor: 'önlem kararın onaylanarak uygulanmasına kadar sürecek'. Hemen ardından gelen p4-06, önlemin onaydan sonra ne olacağını soruyor ve B çeldiricisi 'Önlem, yeni cezanın yerine getirilmesi tamamlanıncaya kadar sürer' diyor — 05'i okuyan aday bu çeldiriciyi hükmü hiç bilmeden eler, A ('derhal kaldırılır') tek makul seçenek olarak kalır. İki soru da md 28/2'den ve arka arkaya; sızıntı deneme içinde sıra karışsa bile iki yönlü çalışıyor.",
+    "oneri": "Doğru şık E'yi hükmün süre kaydını basmayacak biçimde kısalt: 'Görevi başında kalmasında sakınca görülenler görevden uzaklaştırılabilir' (ayırt edici unsur zaten 'sakınca görülenler' + 'uzaklaştırılabilir' ihtiyariliğidir, A ile ayrım korunur). Açıklamadaki 've önlem kararın onaylanarak uygulanmasına kadar sürecek' ibaresini de kaldır."
+  },
+  {
+    "id": "7068-p4-06",
+    "karar": "ONAY",
+    "gerekce": "GERÇEK VAKA (dosyadaki üç gerçek vakadan biri). Olay önce, dayanak sonra; ayırt edici unsur — cezanın DAHA HAFİF BİR CEZAYA İNDİRİLEREK onaylanması — senaryoda açıkça veriliyor ve çözümde fiilen rol oynuyor: bu unsur olmasaydı md 28/2 c.2 hiç devreye girmezdi. 'kaldırılır / kaldırılabilir' ayrımı gerçek bir ölçme noktası. Doğru şık en kısa ama fark küçük (46 vs 48-67) ve sömürülebilir düzeyde değil. Not: bu sorunun cevabı p4-05'ten türetilebiliyor — düzeltme p4-05 tarafında önerildi."
+  },
+  {
+    "id": "7068-p4-07",
+    "karar": "REVIZYON",
+    "gerekce": "İKİ KUSUR. (1) SIZINTI (07 → 08): açıklamanın son bölümündeki 'Aynı fıkra, teşkilattan ayrılma sonucu doğuran cezalar için daha uzun bir süre öngörmüştür' cümlesi, bu sorunun sorduğu şeyin ötesine geçen bir dolgu ve p4-08'in A şıkkını ('On beş gün') hükmü bilmeden eletiyor — doğru cevap 'Bir ay' olduğuna göre 'daha uzun' kaydı on beş günü kesin olarak dışarı atıyor. Hattın on kez tekrarlanan kalıbı tam olarak bu: açıklamanın kökün sorduğunu aşan cümleleri. (2) KÖK KURULUŞU: 'disiplin soruşturmasına bu süre içinde başlanmadığı takdirde' — 'bu süre' henüz tanımlanmamış bir şeye geriye dönük gönderme yapıyor; gerçek sınav dili değil.",
+    "oneri": "(1) Açıklamadan 'Aynı fıkra, teşkilattan ayrılma sonucu doğuran cezalar için daha uzun bir süre öngörmüştür;' ibaresini tamamen çıkar (kalan 'sürenin hangi andan itibaren işleyeceği fıkranın giriş cümlesinde ayrıca düzenlenmiştir' kaydı p4-09'un cevabını vermediği için kalabilir). (2) Kökü şuna çevir: '…uyarma, kınama, aylıktan kesme ile kısa ve uzun süreli durdurma cezalarını gerektiren fiillerde, ne kadarlık süre içinde disiplin soruşturmasına başlanmadığı takdirde ceza verme yetkisi zamanaşımına uğrar?'"
+  },
+  {
+    "id": "7068-p4-08",
+    "karar": "ONAY",
+    "gerekce": "md 29/1-b'nin altı aylık süresi; 07 ile birlikte zamanaşımının çekirdek çifti ve iki ayrı bende dayandığı için tekrar değil. Açıklama p4-07'nin rakamını ('bir ay') vermiyor, yalnız 'aynı fıkranın diğer bendinde yazan süre' diyor — üreticinin iddiası bu yönde doğrulandı. Kalan riskler: (a) kökte aynı kataforik 'bu süre' kuruluşu var, p4-07 için önerilen düzeltme buna da uygulanmalı; (b) sızıntı p4-07 tarafından geliyor, düzeltme orada önerildi."
+  },
+  {
+    "id": "7068-p4-09",
+    "karar": "ONAY",
+    "gerekce": "md 29/1'in giriş cümlesindeki başlangıç anını ölçüyor; 07/08'in rakam sorularından bağımsız gerçek bir ölçme noktası (kurum değil disiplin amiri, öğrenme değil işlenme). Çeldiriciler makul: ihbarın kuruma ulaşması, soruşturma emri, adli soruşturmanın sonuçlanması — hepsi aday sezgisinde geçerli görünen anlar. Doğru şık en uzun ama fark 4 karakter (63 vs 54-59), ipucu değil. UYARI: bu sorunun cevabı p4-10'un açıklamasından türetilebiliyor; düzeltme p4-10 tarafında önerildi."
+  },
+  {
+    "id": "7068-p4-10",
+    "karar": "REVIZYON",
+    "gerekce": "SIZINTI (10 → 09). Açıklamadaki 'Süre fiile bağlandığı için DİSİPLİN AMİRİNİN OLAYI GEÇ ÖĞRENMESİ bu iki yılı uzatmaz' cümlesi, p4-09'un doğru cevabının anahtar ifadesini ('fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarih') olduğu gibi veriyor. Bu cümle p4-10'un kendi sorduğu şey (md 29/2'nin iki yıllık süresi) için gerekli değil — yine açıklamanın kökü aşan dolgusu. Deneme içinde sıra karıştığında 10'u okuyan aday 09'u bilgi olmadan çözer.",
+    "oneri": "Cümleyi failden arındır: 'Süre fiile bağlandığı için olayın geç öğrenilmiş olması bu iki yılı uzatmaz.' Aynı açıklamadaki 'soruşturmaya süresinde başlanmış olması da yetmez' kaydı kalabilir, o p4-07/08'in rakamlarını vermiyor."
+  },
+  {
+    "id": "7068-p4-11",
+    "karar": "ONAY",
+    "gerekce": "md 29/3'ün üçlü ayrımını ölçüyor; A ve C çeldiricileri metinde gerçekten yazan ama BAŞKA fiil tipine ait ölçütler — hattın en sağlam çeldirici kurgusu, doldurma değil. Sızıntı yok, ipucu yok. Kalan risk: 'hard' etiketi biraz yüksek; üç ölçüt aynı cümlede sayıldığı için metni okumuş aday için 'medium' düzeyinde. Açıklama 984 karakterle dosyanın en uzunu (bant 334-984), üçte biri tekrar; kısaltılabilir ama sızıntı taşımıyor."
+  },
+  {
+    "id": "7068-p4-12",
+    "karar": "REVIZYON",
+    "gerekce": "İKİ KUSUR. (1) SAHTE VAKA + KENDİNE GÖNDEREN KÖK: 'Bir disiplin cezası, 7068 sayılı Kanun'un zamanaşımı maddesinde sayılan gerekçelerden biriyle mahkeme tarafından iptal edilmiştir' — hiçbir olgu verilmiyor, üstelik kök hangi gerekçe olduğunu p4-13'ü korumak için bilerek gizliyor ve bunu 'maddede sayılan gerekçelerden biri' diye kendine gönderme yaparak yapıyor. Gerçek bir PAEM sorusu bu kuruluşu kullanmaz; senaryo çözümde sıfır rol oynuyor. (2) md 29 yedi soruyla temsil edilen madde ve fıkra dağılımı sağlıklı olsa da (29/1-a, 29/1-b, 29/1, 29/2, 29/3, 29/4 x2) 29/4'ten çıkan iki sorudan ölçme değeri düşük olanı budur: yetkili merci ölçütü (kesinleşme tarihi) p4-13'ün ölçtüğü gerekçe listesine göre daha yüzeysel ve tek kelimelik bir ayrıntı.",
+    "oneri": "`tur`u 'dogrudan'a çevir ve kökü olgu uydurmadan sadeleştir: 'Disiplin cezasının mahkeme tarafından iptali üzerine yeniden değerlendirme yapmakla yetkili ve sorumlu merci aşağıdakilerden hangisidir?' Böylece hem sahte senaryo hem de 'maddede sayılan gerekçeler' göndermesi kalkar, p4-13'ün korunması da bozulmaz. Parti kısaltılacaksa md 29'dan ilk düşecek soru budur."
+  },
+  {
+    "id": "7068-p4-13",
+    "karar": "ONAY",
+    "gerekce": "md 29/4'ün iki iptal gerekçesini eşleştirme kurgusuyla ölçüyor; D çeldiricisi (doğru gerekçelerden birini yanlışıyla eşleştirme) gerçekten en tehlikeli olanı ve makul hata üzerine kurulu. Doğru şık en uzun (89 vs 68-81) ama fark 8 karakter, sömürülebilir değil. Kalan riskler: (a) D 'bulunmuş olması', E 'bulunması' — aynı ibarenin iki farklı çekimi hafif bir üslup farkı yaratıyor, ikisini de 'bulunması' yapmak daha temiz; (b) açıklamanın son cümlesi (AYM iptali + 2024 yeniden düzenleme) adayın ölçülen bilgisiyle ilgisiz mevzuat kronolojisi, çıkarılabilir."
+  },
+  {
+    "id": "7068-p4-14",
+    "karar": "ONAY",
+    "gerekce": "md 30/2'nin otuz günlük karara bağlama süresi; itiraz süresiyle (on gün, md 30/1) karıştırılması gerçek ve sık bir hata. Üreticinin iddiası doğrulandı: açıklama itiraz süresini sayı vermeden anıyor ('ilgilinin itiraz edebilmesi için bir süre'), p4-17'nin çözümünü vermiyor. Kalan risk: açıklama 'iki süre eşit değildir' diyerek p4-17'de gerekli olmayan ama yine de bir sınır bilgisi veriyor; p4-17'nin şıklarında rakam olmadığı için sömürülemez."
+  },
+  {
+    "id": "7068-p4-15",
+    "karar": "ONAY",
+    "gerekce": "md 30/3'ün seçimlik yetkisini ölçüyor. MUTLAK İFADE KALIBI bakımından dosyanın DOĞRU örneği: doğru şık B'nin kendisi 'tamamen' taşıdığı için mutlak ifade filtresi burada işlemiyor — kural 12'nin istediği tam olarak bu. Kalan risk (itiraz değil): A ile B klasik bir 'ayna çift' (aynı yetkinin daraltılmış ve tam hâli) ve sınav sezgisi ayna çiftinin bir ucunu işaretlemeye yönlendirir; A'nın ayrıca mutlak ifadeli olması B'yi öne çıkarır. Doğru şık en kısa (47 vs 63-75), 16 karakterlik fark — tek başına belirleyici değil ama A'nın kuyruğu ('hafifletme yetkisi yoktur') kaldırılırsa denge iyileşir."
+  },
+  {
+    "id": "7068-p4-16",
+    "karar": "ONAY",
+    "gerekce": "md 30/5; idari itiraz yolunun kapalı olduğu hâli ölçüyor, gerçek sınav sorusu. Bankada md 30'a ait iki yayında soru var ama ikisi de itiraz MERCİLERİNİ (md 30/1) soruyor, bu soruyla çakışmıyor. Kalan riskler: (a) doğru şık en kısa (35 vs 48-57) ve tek isim tamlaması, diğerleri betimleyici cümle — hafif bir üslup farkı, D'yi biraz öne çıkarıyor; (b) açıklamanın 'itiraz mercilerini sayan hükümler yalnızca disiplin amirlerince verilen cezalara ilişkindir' cümlesi p4-17'nin D çeldiricisini eliyor, ancak o çeldirici zaten zayıf."
+  },
+  {
+    "id": "7068-p4-17",
+    "karar": "REVIZYON",
+    "gerekce": "SIZINTI (17 → 25). Açıklamanın son cümlesi — 'Kesinleşme ayrıca CEZANIN YERİNE GETİRİLEBİLMESİ bakımından da eşik oluşturur, dolayısıyla süreyi kaçırmanın etkisi yalnızca itiraz hakkıyla sınırlı kalmaz' — p4-25'in doğru cevabını ('Kesinleşmelerini müteakip', md 33/1) doğrudan veriyor. Cümle bu sorunun sorduğu şey (itiraz süresi ve kesinleşme) için gereksiz; klasik kökü aşan dolgu. Sorunun kendisi bu kusur dışında dosyanın en iyi vakası: tarihler somut (3 Mart tebliğ, 20 Mart itiraz), on günlük süre hesabı çözümde gerçekten iş yapıyor, 'itirazın reddi' ile 'cezanın kesinleşmesi' ayrımı gerçek bir ölçme noktası.",
+    "oneri": "Açıklamanın son cümlesini tamamen sil ('Kesinleşme ayrıca cezanın yerine getirilebilmesi… kalmaz.'). Açıklama zaten 935 karakterle bandın üst ucunda; bu kesim hem sızıntıyı hem şişkinliği giderir."
+  },
+  {
+    "id": "7068-p4-18",
+    "karar": "REVIZYON",
+    "gerekce": "MUTLAK İFADELİ ŞIK KALIBI — dosyanın en ağır üç vakasından biri. A ('Yalnızca…'), D ('Yalnızca…') ve E ('…yalnızca toplantı hâlinde') mutlak ifade taşıyor; doğru şık B ise taşımıyor. Hükmü hiç bilmeyen aday üç çeldiriciyi eleyip B ile C arasında kalıyor: soru fiilen 1/5'ten 1/2'ye iniyor. Dosya genelindeki ölçüm bunun tesadüf olmadığını gösteriyor (aşağıdaki dosya notuna bakınız): mutlak ifadeli 15 şıktan yalnız 1'i doğru cevap, %6,7 — şans düzeyi %20 olurdu.",
+    "oneri": "Kural 12 uyarınca ya çeldiricilerden mutlak ifadeyi kaldır ya da doğru şıkka taşı. Somut: A'yı 'Hakkında soruşturma yapılan personelin disiplin amiri', D'yi 'Personelin bağlı bulunduğu birimin en üst amiri ile yardımcısı', E'yi 'Yetkili disiplin kurulu, toplantı hâlinde' yap — dışlayıcılık zaten şıkkın kendisinden anlaşılıyor, 'Yalnızca' kelimesine gerek yok."
+  },
+  {
+    "id": "7068-p4-19",
+    "karar": "ONAY",
+    "gerekce": "md 31/2'nin alt sınırı; köke konan 'en az' kaydı hükmün 'yedi günden az olamaz' kuruluşunu doğru yansıtıyor ve soruyu tek anlamlı kılıyor. Kısa açıklama (349 karakter, bandın alt ucu) yerinde — ölçülen tek bir rakam, dolgu yok, bu yüzden sızıntı da yok. md 31'in beş sorusu içinde en dar kapsamlı olan bu, ancak çekirdek sınav bilgisi olduğu için ölçme değeri korunuyor."
+  },
+  {
+    "id": "7068-p4-20",
+    "karar": "ONAY",
+    "gerekce": "İNCE VAKA (gerçek/sahte sınırında). Senaryo md 31/2 c.3'ün şartını düzyazıya çeviriyor, ancak p4-02 ve p4-26'dan farklı olarak burada gerçek bir ayrım işliyor: savunmanın İSTENMEMESİ (md 31/1, ceza verilemez) ile süresinde YAPILMAMASI (md 31/2, vazgeçmiş sayılır) arasındaki ayrım A çeldiricisini gerçek bir tuzak hâline getiriyor, dolayısıyla senaryodaki 'usulüne uygun olarak' kaydı çözümde iş yapıyor. Kalan risk: açıklamadaki 'Senaryodaki ayırt edici unsur da savunmanın usulüne uygun istenmiş olmasıdır' cümlesi tam olarak sınanan şeyi söyleyip tuzağı sökmekte — çıkarılırsa soru güçlenir. md 31'in beş sorusu beş ayrı kayda dayanıyor (31/2 yetki, 31/2 süre, 31/1-2 vazgeçme, 31/3 evrak, 31/4 ağır ceza hakları); tekrar yok."
+  },
+  {
+    "id": "7068-p4-21",
+    "karar": "REVIZYON",
+    "gerekce": "SIZINTI (21 → 22). Açıklamanın son iki cümlesi — 'Bu hak, hakkında HANGİ CEZA İSTENİRSE İSTENSİN soruşturulan HER PERSONEL içindir; Kanun ayrıca BELİRLİ AĞIRLIKTAKİ CEZALARDA ilgiliye ek imkânlar tanıyan ayrı bir fıkra öngörmüştür' — p4-22'nin A ('personelin tamamına, ceza türüne bakılmaksızın') ve C ('kurulca karar verilecek olan personelin tamamına') şıklarını hükmü bilmeden eletiyor, üstelik doğru cevabın ('belirli iki ağır ceza') kategorisini de adres gösteriyor. Bu cümleler p4-21'in sorduğu şey (evrak incelemenin başlangıç anı, md 31/3) için tamamen gereksiz dolgu. Sorunun kendisi sağlam: md 31/3'ün 'savunma istenmesinden itibaren' ölçütü gerçek bir ölçme noktası, çeldiriciler süreç anlarından makul biçimde seçilmiş.",
+    "oneri": "Son iki cümleyi tek ve nötr bir cümleyle değiştir: 'Bu hak md 31/3 ile tanınmıştır ve başlangıç anı savunma istemine bağlıdır.' md 31/4'e yapılan gönderme tümüyle kaldırılmalı — p4-22 ile aynı dosyada olduğu sürece o gönderme her hâlde sızıntıdır."
+  },
+  {
+    "id": "7068-p4-22",
+    "karar": "REVIZYON",
+    "gerekce": "MUTLAK İFADELİ ŞIK KALIBI. A ('…ceza türüne bakılmaksızın', 'tamamına'), C ('…personelin tamamına') ve E ('Yalnızca…') mutlak ifade taşıyor; doğru şık D taşımıyor. Aday üç çeldiriciyi hükümsüz eleyip B ile D arasında kalıyor. Oysa md 31/4 hükmün KENDİSİ dışlayıcı bir hüküm ('Hakkında meslekten çıkarma cezası veya Devlet memurluğundan çıkarma cezası istenen personel…') — kural 12'nin dediği gibi bu dışlayıcılık doğru şıkka taşınmalıydı. Ayrıca p4-21'in açıklaması A ve C'yi zaten eliyor (düzeltme orada önerildi); iki kusur üst üste binince soru fiilen B/D ikilisine iniyor.",
+    "oneri": "Dışlayıcılığı doğru şıkka taşı: D'yi 'Yalnızca hakkında meslekten çıkarma veya Devlet memurluğundan çıkarma cezası istenen personele' yap. Buna karşılık E'yi 'Hakkında Devlet memurluğundan çıkarma cezası istenen personele' (mutlak ifade kaldırılmış) ve A'yı 'Hakkında disiplin soruşturması yürütülen personelin hepsine' biçiminde yeniden yaz; C zaten 'tamamına' ile kalabilir çünkü artık doğru şık da dışlayıcı ifade taşıyor."
+  },
+  {
+    "id": "7068-p4-23",
+    "karar": "ONAY",
+    "gerekce": "md 32/1-2'nin tebliğ ölçütünü ölçüyor; kesinleşme (dava edilebilirlik) ile tebliğ (sürenin işlemesi) ayrımı gerçek bir sınav noktası. Kökteki '-Kanunda ayrıca öngörülen özel hâl dışında-' kaydı hukuken zorunlu ve ikinci doğru cevabı önlüyor. Kalan riskler: (a) o parantez sınav diline biraz ağır kaçıyor, 'kural olarak' ifadesi daha doğal olurdu; (b) açıklamanın son cümlesi 'tebliğ ölçütünün fiilen uygulanamayacağı ÖZEL BİR GÖREV ORTAMI için farklı bir başlangıç anı öngörülmüştür' diyerek p4-24'ün varlığını haber veriyor — cevabını ('üsse veya limana dönme') vermediği için sızıntı eşiğini geçmiyor, ama p4-24 aynı dosyada olduğu sürece bu cümle gereksiz; (c) 'hard' etiketi yüksek, ölçülen tek şey tebliğ ölçütü."
+  },
+  {
+    "id": "7068-p4-24",
+    "karar": "ONAY",
+    "gerekce": "GERÇEK VAKA. Olay önce, dayanak sonra; istisnanın iki sınırı (SG'ye ait gemi/bot + seyir hâlinde verilme) senaryoda açıkça veriliyor ve çözümde iş yapıyor. KAPSAM DEĞERLENDİRMESİ (bağımsız kararım): md 32/2 c.2 emniyet personeline hiçbir zaman uygulanamayacak tek hüküm, ancak 7068 tüm genel kolluğu kapsayan tek metin ve PAEM/EGM sınavları 7068'i madde madde, istisnalarıyla birlikte soruyor — dolayısıyla ölçme değeri var ve md 11 vakasındaki gibi bir kapsam dışılık söz konusu değil (orada hüküm emniyeti hiç kapsamıyordu; burada hüküm 7068'in kendi içinde ve aday 7068'in tamamından sorumlu). Kalan risk: parti daraltılacaksa polis adayı için marjinal değeri nedeniyle ilk düşecek adaylardan biri budur; md 32 zaten iki soruyla temsil ediliyor ve p4-23 asıl kuralı ölçüyor. Açıklama 975 karakterle bandın tepesinde, son iki cümle kısaltılabilir."
+  },
+  {
+    "id": "7068-p4-25",
+    "karar": "ONAY",
+    "gerekce": "md 33/1'in tek cümlelik kuralı; kısa ve dolgusuz açıklama (396 karakter) doğru tercih. Üreticinin iddiası doğrulandı: açıklama aybaşı kuralını (md 33/2, p4-26) söylemiyor. Doğru şık en kısa (25 vs 27-58) ama şıkların hepsi kısa ve fark ölçülebilir bir ipucu üretmiyor. UYARI: bu sorunun cevabı p4-17'nin açıklamasından türetilebiliyor; düzeltme p4-17 tarafında önerildi."
+  },
+  {
+    "id": "7068-p4-26",
+    "karar": "REVIZYON",
+    "gerekce": "SAHTE VAKA. 'Bir personel hakkında verilen aylıktan kesme cezası kesinleşmiştir. Bu ceza ne zaman uygulanır?' — senaryo, md 33/2'nin şartından ('kesinleşme tarihini takip eden aybaşı') başka hiçbir olgu içermiyor; kişi, tarih, birim yok, çözümde değerlendirilecek bir şey yok. Vaka etiketi tümüyle biçimsel. Dosyadaki 7 vakadan (%26) dördü bu kalıpta ve bu, dördünün en zayıfı: p4-02 ve p4-12'de en azından bir hüküm eşleştirmesi var, burada yalnız bir rakam/an bilgisi sorulmuş, ayrıca 'easy' etiketiyle birlikte tam bir doğrudan bilgi sorusu.",
+    "oneri": "`tur` alanını 'dogrudan' yap ve kökü sadeleştir: '7068 sayılı Kanun'a göre aylıktan kesme cezası hangi tarihte uygulanır?' Vaka kotasını korumak isteniyorsa bunun yerine md 33 kapsamında gerçek bir senaryo kur (ör. kesinleşme ile aybaşı arasında personelin başka bir birime atanması gibi çözümde iş yapan bir olgu ekle)."
+  },
+  {
+    "id": "7068-p4-27",
+    "karar": "REVIZYON",
+    "gerekce": "İKİ KUSUR ÜST ÜSTE. (1) MUTLAK İFADELİ ŞIK KALIBI: A ('Bütün… yalnızca…'), B ('yalnızca…') ve C ('Bütün…') mutlak ifade taşıyor, doğru şık E taşımıyor — aday hükmü bilmeden üç çeldiriciyi eleyip D ile E arasında kalıyor. (2) BİÇİM İPUCU: doğru şık dosyanın en dengesiz şık setine sahip (E 126, D 113, B 100, A 72, C 68 karakter) ve E hem en uzun hem de tek 'iki katmanlı' şık; D ile E'nin yapısı aynı olduğu için aday 'iki katmanlı olan doğrudur' sezgisiyle zaten ikisine indiği yerde E'yi seçebiliyor. İkisi birlikte soruyu fiilen tahmin edilebilir kılıyor. Hükmün ölçme değeri gerçek (md 33/3'ün 'ayrıca' kaydı), kurgu düzeltilmeli.",
+    "oneri": "Mutlak ifadeyi doğru şıkka taşı ve şıkları kısalt: E'yi 'Verilen cezaların tamamı üst disiplin amirine, meslekten çıkarma ve Devlet memurluğundan çıkarma ayrıca Devlet Personel Başkanlığına bildirilir'; A'yı 'Disiplin cezaları Devlet Personel Başkanlığına bildirilir'; C'yi 'Disiplin cezaları Bakanlık Yüksek Disiplin Kuruluna bildirilir' yap. Böylece hem mutlak ifade filtresi kırılır hem şık uzunluk farkı 58'den ~20 karaktere iner."
+  }
+]
