@@ -20,6 +20,7 @@ import {
 } from '../admin/exams/exam-autofill.logic';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -146,6 +147,7 @@ export class QuizService {
         topicId: dto.topicId,
         deletedAt: null,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
         // Madde Atlası: maddeden tur — havuz tek maddeye daralır.
         ...(dto.articleNo ? { articleNo: dto.articleNo } : {}),
       };
@@ -155,6 +157,7 @@ export class QuizService {
       poolWhere = {
         deletedAt: null,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
         topic: {
           courseId: dto.courseId,
           deletedAt: null,
@@ -167,6 +170,7 @@ export class QuizService {
       poolWhere = {
         deletedAt: null,
         currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
         topic: {
           deletedAt: null,
           ...(isPremiumUser ? {} : { isPremium: false }),
@@ -193,6 +197,7 @@ export class QuizService {
           id: { in: wrongs.map((w) => w.questionId) },
           deletedAt: null,
           currentVersionId: { not: null },
+          ...IPTAL_EDILMEMIS,
           topic: {
             ...(isPremiumUser ? {} : { isPremium: false }),
             ...(preferredModuleId
@@ -222,6 +227,7 @@ export class QuizService {
           id: { in: marks.map((m) => m.questionId) },
           deletedAt: null,
           currentVersionId: { not: null },
+          ...IPTAL_EDILMEMIS,
           ...(isPremiumUser ? {} : { topic: { isPremium: false } }),
         },
         select: { id: true, currentVersionId: true, topicId: true },
@@ -378,6 +384,7 @@ export class QuizService {
           where: {
             deletedAt: null,
             currentVersionId: { not: null },
+            ...IPTAL_EDILMEMIS,
             topic: {
               courseId: { in: courseIds },
               deletedAt: null,
@@ -681,7 +688,12 @@ export class QuizService {
    *  kurallarıyla açılır — çöz → anlık geri bildirim + açıklama. */
   private async startSingleQuestion(userId: string, questionId: string, source?: string) {
     const q = await this.prisma.question.findFirst({
-      where: { id: questionId, deletedAt: null, currentVersionId: { not: null } },
+      where: {
+        id: questionId,
+        deletedAt: null,
+        currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
+      },
       select: { id: true, topicId: true, currentVersionId: true },
     });
     if (!q) throw new NotFoundException('Soru bulunamadı ya da yayında değil.');

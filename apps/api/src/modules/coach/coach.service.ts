@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { iptalSoruIdleri } from '../../common/iptal-soru';
 import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft } from '../progress/streak.logic';
@@ -160,7 +161,13 @@ export class CoachService {
       }),
       this.prisma.userStats.findUnique({ where: { userId: user.id } }),
       this.prisma.wrongAnswer.count({
-        where: { userId: user.id, resolvedAt: null },
+        // Tekrar turunun havuzuyla AYNI süzgeç — sayaç "1 yanlışın var" derken
+        // tur "kuyruk temiz" diyemez.
+        where: {
+          userId: user.id,
+          resolvedAt: null,
+          questionId: { notIn: await iptalSoruIdleri(this.prisma) },
+        },
       }),
       this.prisma.userTopicProgress.findFirst({
         where: {
