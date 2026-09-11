@@ -10,6 +10,13 @@
  *
  * SALT OKUMA.
  *   npx tsx scripts/kpss-mukerrer-tara.ts <doc-dizini>
+ *
+ * Doc 44 gibi, `dogru`/`konuId`/`ders`/`konu` alanları zaten dolu bir
+ * `aday.json` ile gelen partiler için:
+ *
+ *   npx tsx scripts/kpss-mukerrer-tara.ts <doc-dizini> --aday
+ *
+ * Bu kipte script SALT TARAR — aday dosyasını yeniden yazmaz.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { PrismaClient } from '@prisma/client';
@@ -38,9 +45,15 @@ async function main() {
   const doc = process.argv[2];
   if (!doc) throw new Error('kullanım: kpss-mukerrer-tara.ts <doc-dizini>');
 
-  const transkript = JSON.parse(readFileSync(`${doc}/transkript/a.json`, 'utf8'));
-  const anahtar: Record<string, string> = JSON.parse(readFileSync(`${doc}/anahtar-22.json`, 'utf8'));
-  const sinif: Record<string, any> = JSON.parse(readFileSync(`${doc}/siniflandirma.json`, 'utf8'));
+  const hazirAday = process.argv[3] === '--aday';
+  const transkript = JSON.parse(
+    readFileSync(hazirAday ? `${doc}/aday.json` : `${doc}/transkript/a.json`, 'utf8'));
+  const anahtar: Record<string, string> = hazirAday
+    ? Object.fromEntries(transkript.map((s: any) => [s.id, s.dogru]))
+    : JSON.parse(readFileSync(`${doc}/anahtar-22.json`, 'utf8'));
+  const sinif: Record<string, any> = hazirAday
+    ? Object.fromEntries(transkript.map((s: any) => [s.id, { konuId: s.konuId, ders: s.ders, konu: s.konu }]))
+    : JSON.parse(readFileSync(`${doc}/siniflandirma.json`, 'utf8'));
 
   const banka = await p.questionVersion.findMany({
     where: { status: { in: ['published', 'in_review', 'draft', 'archived'] } },
@@ -88,6 +101,8 @@ async function main() {
   const eksikAnahtar = temiz.filter((t) => !t.dogru);
   if (eksikAnahtar.length) throw new Error(`anahtarsız soru: ${eksikAnahtar.map((t) => t.id).join(', ')}`);
   console.log(`aday kalan       : ${temiz.length}`);
-  writeFileSync(`${doc}/aday.json`, JSON.stringify(temiz, null, 1));
+  // `--aday` kipinde dosya ZATEN elde kurulmuştu; üstüne yazmak sessizce
+  // alan kaybettirebilir (ör. transkriptçinin `not` alanı).
+  if (!hazirAday) writeFileSync(`${doc}/aday.json`, JSON.stringify(temiz, null, 1));
 }
 main().finally(() => p.$disconnect());
