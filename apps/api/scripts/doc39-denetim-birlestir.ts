@@ -16,7 +16,17 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
-const ROLLER = ['mevzuat', 'kalite', 'dil'] as const;
+/**
+ * Varsayılan üç rol. `ROLLER=mevzuat` ile daraltılabilir: bazı partilerde
+ * kalite ve dil rollerinin ÖLÇÜLEBİLİR kontrolleri (şema, beş şık, sızıntı
+ * taraması, mutlak ifade oranı, şık uzunluk ipucu, şablon izi, mükerrer)
+ * script'le yapılır ve ajan çalıştırılmaz. Bu, ajan maliyetini üçte bire
+ * indirir; karşılığında yalnız ajan gerektiren iş (kanun metnine basma)
+ * denetçiye kalır. Daraltma karar dosyasına AÇIKÇA yazılır — hangi rollerin
+ * ajanla, hangilerinin script'le denetlendiği kaybolmaz.
+ */
+const ROLLER = (process.env.ROLLER?.split(',').map((x) => x.trim()).filter(Boolean) ??
+  ['mevzuat', 'kalite', 'dil']) as unknown as readonly ('mevzuat' | 'kalite' | 'dil')[];
 type Karar = 'ONAY' | 'REVIZYON' | 'RED';
 type Satir = { id: string; karar: Karar; gerekce?: string; oneri?: string };
 

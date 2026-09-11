@@ -1,0 +1,120 @@
+[
+  {
+    "id": "7068-p5-01",
+    "karar": "REVIZYON",
+    "gerekce": "Sızıntı (kök → başka sorunun cevabı). p5-01'in kökü, p5-02'nin doğru cevabının tam metnini basıyor: 'Devlet memurluğundan çıkarma cezası uygulanacak fiiller ve bu cezayı verme yetkisi bakımından...'. p5-02'nin B şıkkı da aynen 'Devlet memurluğundan çıkarma'dır ve iki soru dosyada yan yana duruyor; p5-01 md 9'un konusunun bu ceza olduğunu ilan ettiği için p5-02'de aday doğru şıkka yönlendiriliyor. Üreticinin 'p5-01→p5-02 sızıntısı düzeltildi' beyanı dosyada karşılık bulmuyor. Ayrıca kök 'hangi kanun hükümleri uygulanır?' derken şıklar kanun ADI (yalın ad öbeği) veriyor; hafif kök-şık uyumsuzluğu.",
+    "oneri": "Kökteki ceza adını nötrleştir: '7068 sayılı Kanun'un 9 uncu maddesine göre, bu maddede düzenlenen disiplin cezasının uygulanacağı fiiller ve bu cezayı verme yetkisi bakımından hangi Kanun hükümleri uygulanır?' Alternatif olarak p5-01 ile p5-02 aynı denemeye/alıştırma bloğuna konulmasın."
+  },
+  {
+    "id": "7068-p5-02",
+    "karar": "ONAY",
+    "gerekce": "Gerçek vaka: olay önce, hukuki soru sonra; ayırt edici unsur ('üye olmadığı, ancak ilişki içerisinde bulunduğu') açıkça verilmiş ve md 9/1-a'daki 'bu yapılarla ilişki içerisinde bulunmak' ibaresinin çözümde gerçek rolü var. Fazla veri yok. Tek kalan not: E şıkkı ('Zam ve tazminatlar hariç brüt aylıktan onbeş güne kadar kesinti') ceza ADI değil ceza TANIMI olduğu için diğer dört şıkla homojen değil ve üslup farkıyla kolayca eleniyor; doğru cevap etkilenmediği için itiraz sayılmadı."
+  },
+  {
+    "id": "7068-p5-03",
+    "karar": "ONAY",
+    "gerekce": "Kök tek anlamlı, şıklar tamamen homojen (hepsi '<sayı> ay <kısa/uzun> süreli durdurma'), kök-şık uyumu tam. Kalan küçük not: açıklamadaki 'kanun burada ağırlaştırmanın ÜST SINIRINI dört ay kısa süreli durdurma olarak çizmiştir' cümlesi metinde karşılığı olmayan bir yorumdur; md 10/12 yalnızca 'dört ay kısa süreli durdurma cezası uygulanabilir' der. Cevabı etkilemiyor, açıklama diline ait."
+  },
+  {
+    "id": "7068-p5-04",
+    "karar": "ONAY",
+    "gerekce": "Beş şıkkın beşi de md 10'un ayrı fıkralarından; A (fıkra 1), B (fıkra 7), D (fıkra 4), E (fıkra 8) hepsi 'meslekten çıkarma' sonucuna bağlı, yalnız C (fıkra 10) 'daha ağır cezalardan birisi' der — tek cevap güvenli. Şıklar 'fiil + netice' kalıbında homojen. Kök uzun ama tek okumalı. Kalan risk (kozmetik): p5-03 ile birlikte 'md 10'daki kalıp dışı fıkrayı bul' eksenini iki kez ölçüyor."
+  },
+  {
+    "id": "7068-p5-05",
+    "karar": "REVIZYON",
+    "gerekce": "Dilbilgisel ipucu: kök 'hangi CEZALAR verilebilir?' diye çoğul soruyor; beş şıktan yalnız doğru cevap olan C birden çok ceza sayıyor (aylıktan kesme, kısa veya uzun süreli durdurma), B/D/E tek ceza içeriyor. Aday hükmü bilmese de çoğul ekinden C'ye yönelir. Ayrıca A şıkkı ('Uyarma cezası kınamaya, kınama cezası aylıktan kesmeye çevrilir') 'hangi cezalar verilebilir' sorusuna ceza adıyla değil bir çevirme işlemiyle cevap veriyor; kök-şık uyumu ve şık homojenliği bozuk. Kök 47 kelimelik tek cümle, ağır.",
+    "oneri": "Kökü çoğul ipucundan arındır: '...işlenmesi hâlinde, meydana gelen zarar ve tehlikenin ağırlığı da dikkate alınarak hangi ceza veya cezalar verilebilir?' — ya da 'bu fiiller bakımından öngörülen ağırlaştırma aşağıdakilerden hangisidir?' A şıkkını da ceza adı kalıbına çevir (örn. 'Yalnızca bir üst ceza olarak kınama cezası verilebilir')."
+  },
+  {
+    "id": "7068-p5-06",
+    "karar": "ONAY",
+    "gerekce": "OLUMSUZ KÖK — temiz. md 10/1 metni 'Devlet ya da kişiler zarara uğratılmış ya da hizmetin gecikmesine ya da durmasına neden olunmuşsa' der; kalan dört şıkkın DÖRDÜ DE (A Devletin zararı, B kişilerin zararı, C gecikme, D durma) fıkrada birebir yazılı, yalnız E (aksama) fıkrada yok. İki cevap riski yok. Olumsuzluk vurgusu ('AÇIKÇA' + büyük harfli 'DEĞİLDİR') yeterli ve p5-11 ile tutarlı. Kalan küçük not: kökteki 'doğmuş olması GEREKEN durumlar' ifadesi, fıkra alternatifleri 'ya da' ile bağladığı hâlde kümülatif bir okuma çağrıştırıyor; sorunun kendi açıklaması da sonda bunu itiraf ediyor ('sayılan sonuçlardan birinin doğması ağırlaştırmayı zorunlu kılmaz'). Çözümü etkilemediği için itiraz sayılmadı; istenirse 'doğmuş olması aranan neticeler' denebilir."
+  },
+  {
+    "id": "7068-p5-07",
+    "karar": "REVIZYON",
+    "gerekce": "İki cevap riski. Kök 'aşağıdakilerden hangisi MÜMKÜNDÜR?' diye soruyor, oysa md 10/2 emredici değil imkân tanıyıcı bir hüküm ('meslekten çıkarma cezası UYGULANABİLİR'). Ağırlaştırma uygulanmadığında fiilin taban cezası yürürlükte kalır; 'görev yerinden ayrılmak' fiilinin kanundaki tek karşılığı md 8/3'ün 7 nci bendi, yani aylıktan kesme (zam ve tazminatlar hariç brüt aylıktan onbeş güne kadar kesinti) olduğundan E şıkkı da 'mümkün'dür. Sorunun kendi açıklaması bunu itiraf ediyor: 'Fıkranın dili emredici değil, imkân tanıyıcıdır: ceza kendiliğinden meslekten çıkarmaya dönüşmez, uygulanabilir hâle gelir.' Ayrıca E şıkkı ceza adı değil ceza tanımı olduğu için homojen değil.",
+    "oneri": "Kökü tekilleştir: '...durumun niteliğine, ağırlığına ya da zararın derecesine göre uygulanabilecek EN AĞIR ceza aşağıdakilerden hangisidir?' Buna ek olarak E şıkkını 'Aylıktan kesme cezası verilir' gibi kesinlik iddiası taşıyan ve böylece açıkça yanlış olan bir kalıba çevir."
+  },
+  {
+    "id": "7068-p5-08",
+    "karar": "REVIZYON",
+    "gerekce": "Sahipsiz gönderme. Kök 'yalnız BU FIKRAYA özgü olup' diyor, ama kökte hiçbir fıkra anılmıyor; yalnız '10 uncu maddesinde' geçiyor. Göndergesi olmayan bir işaret sıfatı, aday için hangi fıkranın kastedildiğini bulmacaya çeviriyor. Ölçü doğru (md 10/6'daki 'fiilin konusunun önem ve değeri' gerçekten yalnız o fıkrada geçer, diğer dört ölçüt birden çok fıkrada var), tek cevap güvenli. Ayrıca 'yer almaz' yüklemi bu soruyu de facto ÜÇÜNCÜ olumsuz kök yapıyor; künye yalnız p5-06 ve p5-11'i olumsuz sayıyor (oran yine de 3/22 ile 1/4 sınırının altında).",
+    "oneri": "Kökü şöyle bağla: '...10 uncu maddesinin silahla dikkatsizlik, tedbirsizlik veya ihmal sonucu yaralamaya sebebiyet vermek fiiline ilişkin fıkrasında, meslekten çıkarma cezasının verilebilmesinde dikkate alınacak ölçütler sayılmıştır. Aşağıdakilerden hangisi yalnız bu fıkrada aranıp maddenin diğer fıkralarında yer almaz?'"
+  },
+  {
+    "id": "7068-p5-09",
+    "karar": "REVIZYON",
+    "gerekce": "Ayna çift / şık sızıntısı. p5-09'un tek gerçek zorluğu 'oniki saat' (A) ile 'yirmidört saat' (B) ayrımıdır; ancak hemen ardından gelen p5-10'un KÖKÜ 'tedbirinin süresinin oniki saati geçmesi hâlinde' diyerek oniki saatin süre sınırı değil bildirim eşiği olduğunu açıkça söylüyor ve p5-09'un A çeldiricisini bedavaya eliyor. Brief'teki 'q27 On beş gün ↔ q31 Bir ay' kalıbının aynısı. Kökün ve şıkların dili kendi başına temiz.",
+    "oneri": "İki soru birlikte yayınlanacaksa p5-09'un A şıkkını kanunda başka bir yerde geçen ama md 11 ile ilgisiz bir değerle değiştir (örn. 'Otuzaltı saat' yerine kanundaki bir başka süre) veya p5-09 ile p5-10'u aynı denemeye/oturuma koyma. p5-10'un kökünü bozmak çözüm değil, orada oniki saat sorunun kurucu unsurudur."
+  },
+  {
+    "id": "7068-p5-10",
+    "karar": "ONAY",
+    "gerekce": "Kök 'kime bilgi verilir?' diyor, beş şıkkın beşi de yönelme hâlinde ve iki muhatap sayan aynı kalıpta — kök-şık uyumu ve homojenlik tam. Doğru cevap md 11/2 ile birebir. Tek not: kökteki 'oniki saat' bilgisi p5-09 bakımından ipucu üretiyor (bkz. p5-09 gerekçesi); kusur p5-09 tarafında çözülmeli."
+  },
+  {
+    "id": "7068-p5-11",
+    "karar": "REVIZYON",
+    "gerekce": "OLUMSUZ KÖK — mantık ekseni temiz, DİL ekseni bozuk. Mantık: kalan dört şıkkın dördü de md 11/1'de yazılı (A ve B birlikte (a) bendini, C (b) bendini, D (c) bendini karşılıyor), yalnız E metinde yok; iki cevap riski yok. 'AÇIKÇA SAYILANLARDAN' kaydı yerinde ve gerekli, çünkü fıkra 'veya benzer bir amaçla' ile bittiği için liste kapalı değil; çift olumsuzluk da üretmiyor (tek olumsuzlama var). Ancak kayıt köke DİLBİLGİSEL olarak oturmuyor: '...durumlar arasında kanun metninde AÇIKÇA SAYILANLARDAN biri aşağıdakilerden hangisi DEĞİLDİR?' cümlesinde 'biri' ile 'hangisi' iki ayrı belirsiz özne olarak çakışıyor ve 'durumlar arasında ... sayılanlardan' halkası gereksiz katmerli.",
+    "oneri": "Kökü şu sıraya al: '7068 sayılı Kanun'a göre, aşağıdakilerden hangisi geçici olarak kontrol altına alma yetkisinin kullanılabileceği durumlar arasında kanun metninde AÇIKÇA sayılanlardan biri DEĞİLDİR?' — kayıt korunur, çift özne kalkar."
+  },
+  {
+    "id": "7068-p5-12",
+    "karar": "ONAY",
+    "gerekce": "Kök 'hangi hâlde kullanılabilir?' diyor, beş şıkkın beşi de bulunma hâlinde ortam/görev tanımı; uyum ve homojenlik tam. Doğru cevap md 11/1'in giriş cümlesiyle birebir, diğer dördü metinde karşılıksız — tek cevap. Kalan küçük not: C ve E şıkları ek bir şart cümleciği taşırken A, B, D taşımıyor; bu, kalıp farkı olarak zayıf bir ipucu üretebilir ama doğru cevap B olduğu için aleyhe işlemiyor."
+  },
+  {
+    "id": "7068-p5-13",
+    "karar": "REVIZYON",
+    "gerekce": "Açıklama → başka sorunun çeldiricilerini eliyor. Açıklamanın son cümlesi 'personelin aldığı cezaların hangi türden olduğu ayrıca aranmaz' diyor; p5-18 ise tam olarak ceza adedi ölçütünün ek şartını soruyor ve C ('en az üçünün aylıktan kesme olması') ile D ('en az ikisinin uzun süreli durdurma olması') çeldiricileri bire bir 'cezaların türü' şartıdır. Bu cümleyi okuyan aday p5-18'de beş şıktan ikisini bedavaya eler. Sorunun kendi kökü ve şıkları (hepsi yalın sayı adı) temiz, cevap md 12/1-a ile birebir.",
+    "oneri": "Açıklamanın son cümlesindeki '...ve personelin aldığı cezaların hangi türden olduğu ayrıca aranmaz' kısmını sil; 'Bu nedenle eşiklerden yalnız birinin gerçekleşmesi yeterlidir.' cümlesiyle bitir."
+  },
+  {
+    "id": "7068-p5-14",
+    "karar": "ONAY",
+    "gerekce": "Mantık ve dil temiz: kök 'yapılacak işlem aşağıdakilerden hangisidir?' diyor, beş şık da tam cümle/işlem kalıbında homojen; doğru cevap md 12/1-b + 'meslekten çıkarma cezası yetkili disiplin kurullarınca verilir' ile birebir, diğer dördü metinde karşılıksız. Fazla veri yok. Kalan not (kalite denetçisine): 'vaka' etiketi cömert — senaryo bir puan eşiğinin okunmasından ibaret, ayırt edici olgusal bir unsur taşımıyor; düz bilgi sorusuna kişi giydirilmiş hâline yakın."
+  },
+  {
+    "id": "7068-p5-15",
+    "karar": "ONAY",
+    "gerekce": "Kök tek anlamlı ('geriye doğru hesaplanacak sürenin BAŞLANGICI olarak hangi tarih esas alınır'), beş şık da 'tarih' kalıbında homojen ve birbirinin tersi şık yok. Doğru cevap md 12/1'in her iki bendindeki 'En son alınan disiplin cezasının kesinleştiği tarihten geriye doğru' ibaresiyle birebir; verilme/tebliğ/kesinleşme ayrımı makul hata üzerine kurulu. Dosyanın hiçbir yerinde bu üç tarihten hangisinin esas alındığı ele verilmiyor — p5-13 ve p5-14'ün kökleri 'son bir yıl / son beş yıl' derken başlangıç noktasını hiç anmıyor, sızıntı yok."
+  },
+  {
+    "id": "7068-p5-16",
+    "karar": "ONAY",
+    "gerekce": "Önerme sorusu kurallı: I, II, III birbirinden bağımsız, her biri tek hükme dayanıyor ve tek anlamlı; şıklar standart beşli kalıpta. II (md 12/3) ve III (md 12/4) metinle birebir, I ise md 12/2'nin 'en yüksek olanın puanı değerlendirmeye esas alınır' hükmüyle açıkça çelişiyor — cevap D güvenli. Kalan küçük not: açıklamada I'in yanlışlığı 'tek bir puanın esas alınması' diye anlatılmış; metnin ölçütü 'EN YÜKSEK olanın puanı'dır, bu ifade netleştirilebilir. Ayrıca II, p5-17'nin iki çizelge ayrımını önceden duyuruyor ama p5-17'nin cevabına (sayısal puan) dokunmuyor."
+  },
+  {
+    "id": "7068-p5-17",
+    "karar": "ONAY",
+    "gerekce": "Kökte teşkilat ve çizelge numarası açıkça belirtildiği için tek okumalı; şıklar yalın sayı adı, homojen. (1) sayılı çizelgede uzun süreli durdurma = 5 ✓ ve diğer dört değer gerçekten iki çizelgede başka cezaların karşılığı (2 kınama, 3 aylıktan kesme, 4 kısa süreli durdurma, 6 ise (2) sayılı çizelge) — çeldiriciler doldurma değil. Sızıntı yok."
+  },
+  {
+    "id": "7068-p5-18",
+    "karar": "ONAY",
+    "gerekce": "Kök tek anlamlı ve 'ek şart' araması net; şıklar 'Cezaların ...olması' kalıbında beşi de homojen, birbirinin tersi şık yok. Doğru cevap md 12/1'in 'en az iki farklı disiplin amirinden' ibaresiyle birebir. TEK RİSK kendi içinde değil, p5-13'ün açıklamasında: orası 'cezaların hangi türden olduğu ayrıca aranmaz' diyerek buradaki C ve D çeldiricilerini eliyor (düzeltme p5-13'te önerildi)."
+  },
+  {
+    "id": "7068-p5-19",
+    "karar": "ONAY",
+    "gerekce": "Kök 'hangi ceza GİBİ telakki edilir ve uygulanır?' diyor, beş şık da yalın ceza adı — uyum tam, homojenlik tam. Cevap md 34/2 ile birebir. Üreticinin 'p5-19 → p5-01 sızıntısı düzeltildi' beyanı dosyada doğrulanıyor: kök '657 sayılı' ibaresini taşımıyor, yalnız 'Devlet Memurları Kanunu'nda' diyor. Kalan zayıf iz: bu ifade yine de p5-01'in C şıkkının çekirdeğini ('Devlet Memurları Kanunu') anıyor; p5-01'in cevabı bir kanun adı olduğu için tam sıfırlanmış değil, ancak p5-19 dosyada p5-01'den çok sonra geldiğinden ve md 34 ile md 9'un bağı kurulmadığından itiraz sayılmadı."
+  },
+  {
+    "id": "7068-p5-20",
+    "karar": "ONAY",
+    "gerekce": "Kök 'nasıl düzenlenir?' diyor, beş şık da vasıta hâlinde ('-le/-la') — uyum kusursuz. Cevap md 35/1 ile birebir. Kalan not (kalite eksenine): doğru cevap aynı zamanda en uzun ve tek 'makam + düzenleme türü' ikilisini veren şık (41 karakter, en kısa şıkkın iki katı); uzunluk ipucu zayıf da olsa var. İstenirse B 'Cumhurbaşkanınca yürürlüğe konulan yönetmelikle' biçiminde uzatılıp denge kurulabilir."
+  },
+  {
+    "id": "7068-p5-21",
+    "karar": "ONAY",
+    "gerekce": "Kök polis adayı için anlaşılır: tek bir kurul ('il jandarma disiplin kurulu') ve tek bir karar türü ('meslekten çıkarma') anılıyor, makam adları birbirine karışmıyor; şıklar beşi de vasıta hâlinde ve 'öneri + uygun görüş + onay' üçlüsünü farklı dizilişlerle veren homojen kalıpta. Doğru cevap md 21/1-a ile birebir; vali ONAY değil ÖNERİ ayrımı metinden doğrulanıyor. Kalan not: açıklamadaki 'Emniyet teşkilatında da meslekten çıkarma kararları aynı üç aşamalı yapıyla kesinleşir' cümlesi yalnız il polis disiplin kurulu için doğrudur (md 18/1-a); md 18/1-b'de vali önerisi yoktur — cümle 'il polis disiplin kurulunda da' diye daraltılmalı."
+  },
+  {
+    "id": "7068-p5-22",
+    "karar": "REVIZYON",
+    "gerekce": "AÇIKLAMA İTİRAFI ve açıklama hatası. Açıklama 'Şıklarda bu isimlerin bulunması rastgele değildir; hepsi kurulun gerçek üyeleridir' diyor; oysa B şıkkındaki 'personel işlerinden sorumlu sahil güvenlik komutan yardımcısı' md 22/1-a'daki bölge komutanlığı disiplin kurulunun üyesi DEĞİLDİR — o, md 22/1-ç uyarınca Sahil Güvenlik Komutanlığı MERKEZ Disiplin Kurulunun BAŞKANIDIR. Kurulun üyeleri (a) bendinde tek tek sayılıdır: il hukuk işleri müdürü, bölge komutanı veya yardımcısı, personel işlerinden sorumlu şube müdürü, harekattan sorumlu şube müdürü. Kök ve şıklar bakımından mantık temiz (vali yardımcısı başkan, tek cevap), kusur açıklamada. Ayrıca B şıkkı en kısa şıkkın 4,4 katı uzunlukta; homojenlik bozuk ve 'komutan yardımcısı' ile 'şube müdürü' unvanları aday için karışabiliyor.",
+    "oneri": "Açıklamadaki 'hepsi kurulun gerçek üyeleridir' cümlesini düzelt: 'C ve D şıkları kurulun gerçek üyeleridir, A ise kurulda üye sıfatıyla yer alır; B şıkkındaki makam ise bu kurulun değil, Sahil Güvenlik Komutanlığı Merkez Disiplin Kurulunun başkanıdır.' B şıkkını da 'Personel işlerinden sorumlu komutan yardımcısı' biçiminde kısaltarak uzunluk dengesini kur."
+  }
+]

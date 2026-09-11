@@ -1,0 +1,478 @@
+[
+  {
+    "id": "2918-p2-01",
+    "articleNo": "46",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, aynı yönde ikiden fazla şeridi bulunan yollarda geçme dışında sağdan ikinci şeridi kullanmama zorunluluğu, aşağıdaki araçlardan hangisini kullanan sürücü bakımından getirilmiştir?",
+    "siklar": {
+      "A": "Otomobil",
+      "B": "Minibüs",
+      "C": "Çekici",
+      "D": "Panelvan",
+      "E": "Otobüs"
+    },
+    "dogru": "C",
+    "aciklama": "Şerit kullanımına ilişkin bu sınırlama herkese değil, belirli araç cinsleri DIŞINDA kalanlara getirilmiştir. Kanun sınırlamanın kapsamını olumsuz biçimde çizer: motosiklet, otomobil, kamyonet, panelvan, minibüs ve otobüs bu yükümlülüğün dışındadır; bunların dışında kalan araçlar, örneğin çekici, kamyon ve iş makineleri sınırlamaya tabidir. Sınırlama üç kademelidir: iki şeridi bulunan yollarda geçme ve dönme dışında soldaki şerit kullanılamaz; ikiden fazla şeridi bulunan yollarda geçme dışında sağdan ikinci şerit kullanılamaz; yine ikiden fazla şeritli yollarda sola dönme dışında en sağdaki iki şerit dışındaki şeritlere girilemez. Adayın en sık yaptığı hata, sayılan araç listesini yasağın MUHATABI sanmaktır; oysa liste yasağın istisnasıdır. Ayrıca sınırlamanın ölçütü aracın ağırlığı ya da tescil sınıfı değil, doğrudan maddede sayılan cins adlarıdır; kamyonet ile kamyon arasındaki ayrım burada belirleyici olur, çünkü kamyonet sayılanlar arasındadır, kamyon değildir.",
+    "dayanak": "2918 sayılı Kanun md 46/2-e",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-02",
+    "articleNo": "46",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, kanunda öngörülen şekil, şart ve usullere uygun olarak düzenlenen bir toplantı ve gösteri yürüyüşü esnasında sürücülerin araçlarını karayolu üzerinde durdurarak trafiğin akışını engellemesi hâlinde aşağıdakilerden hangisi geçerlidir?",
+    "siklar": {
+      "A": "90.000 Türk lirası idari para cezası uygulanır.",
+      "B": "İdari para cezası iki kat olarak uygulanır.",
+      "C": "Sürücü belgeleri altmış gün süreyle geri alınır.",
+      "D": "Araçlar altmış gün süre ile trafikten menedilir.",
+      "E": "Bu bentteki ihlale konu kabahat oluşmaz."
+    },
+    "dogru": "E",
+    "aciklama": "Araçların keyfi hareketlerle karayolu üzerinde durdurularak trafiğin akışının kısmen veya tamamen engellenmesi, 46 ncı maddenin ikinci fıkrasında ayrı bir bent olarak yasaklanmış ve ağır bir yaptırım paketine bağlanmıştır: idari para cezasının yanında sürücü belgesinin geri alınması ve aracın trafikten menedilmesi öngörülür; fiil otoyol, köprü, viyadük veya tünelde işlenirse bu süreler ve ceza iki kat uygulanır. Ancak maddenin son fıkrası bu bende özel bir sınır çizer: KANUNDA ÖNGÖRÜLEN ŞEKİL, ŞART VE USULLERE UYGUN olarak düzenlenen toplantı ve gösteri yürüyüşleri esnasında bu bentteki fiillerin işlenmesi hâlinde KABAHAT OLUŞMAZ. Yani ortada cezanın indirilmesi ya da ertelenmesi değil, kabahatin hiç doğmaması vardır. Ayırt edici unsur toplantının kanuna uygun biçimde düzenlenmiş olmasıdır; usulüne uygun olmayan bir eylem sırasında aynı fiil işlenirse istisna işlemez ve bendin tam yaptırımı uygulanır. İstisnanın kapsamı da dardır: yalnız bu bende özgüdür, maddenin diğer bentlerine ya da başka maddelerdeki durdurma yasaklarına genişletilemez.",
+    "dayanak": "2918 sayılı Kanun md 46 son fıkra",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-03",
+    "articleNo": "47",
+    "kok": "I. Trafik ışıkları\nII. Trafik işaret levhaları, cihazları ve yer işaretlemeleri\nIII. Trafiği düzenleme ve denetimle görevli trafik zabıtasının uyarı ve işaretleri\n2918 sayılı Karayolları Trafik Kanunu'na göre, karayolundan faydalananların uyacağı sıralama aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "I - II - III",
+      "B": "I - III - II",
+      "C": "II - I - III",
+      "D": "III - I - II",
+      "E": "III - II - I"
+    },
+    "dogru": "D",
+    "aciklama": "Kanun, karayolunu kullananlar için bir emir hiyerarşisi kurar ve bu hiyerarşi çatışma hâlinde hangi talimatın üstün geleceğini belirler. Sıralamada önce trafiği düzenleme ve denetimle görevli trafik zabıtası ile özel kıyafetli veya işaret taşıyan diğer yetkili kişilerin uyarı ve işaretleri gelir; sonra trafik ışıkları; sonra trafik işaret levhaları, cihazları ve yer işaretlemeleri; en sonda ise trafik güvenliği ve düzeni ile ilgili olan ve yönetmelikte gösterilen diğer kural, yasak, zorunluluk ve yükümlülükler. Bunun pratikteki karşılığı şudur: kavşakta ışık yeşil yansa bile görevlinin dur işareti varsa görevlinin işareti esastır; levhadaki hüküm ile ışığın verdiği talimat çatışırsa ışık üstün tutulur. Sıralamayı ters ezberleyen aday, ışığı en üste koyup görevliyi ikinci sıraya alır; maddedeki dizilim ise insan unsurunu bilinçli olarak en üste yerleştirmiştir, çünkü görevli ancak olağandışı bir durum varken sisteme müdahale eder.",
+    "dayanak": "2918 sayılı Kanun md 47/1",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "2918-p2-05",
+    "articleNo": "48",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, hususi otomobil dışındaki araçları alkollü olarak kullanan sürücüler bakımından promil alt sınırı kaç olarak uygulanır?",
+    "siklar": {
+      "A": "0.10",
+      "B": "0.20",
+      "C": "0.21",
+      "D": "0.50",
+      "E": "1.00"
+    },
+    "dogru": "C",
+    "aciklama": "Kanun, idari yaptırımın eşiğini araç türüne göre ikiye ayırır. Genel eşik 0.50 promildir: bu değerin üzerinde alkollü olarak araç kullandığı tespit edilen sürücüye, fiili bir suç oluştursa bile idari para cezası verilir ve sürücü belgesi altı ay süreyle geri alınır. Hususi otomobil DIŞINDAKİ araçları kullananlar bakımından ise aynı fıkra promil alt sınırını 0.21 olarak belirler; yani hususi olmayan araçlarda eşik belirgin biçimde aşağı çekilmiştir. Karıştırılan değer 0.20'dir: bu rakam maddenin başka bir fıkrasında, alkollü sürücünün TRAFİK KAZASINA SEBEBİYET VERMESİ hâlinde Türk Ceza Kanunu hükümlerinin ayrıca uygulanmasına ilişkin ölçüt olarak geçer. Yani 0.21 idari yaptırımın eşiği, 0.20 ise kaza hâlinde ceza hukuku sonucunun eşiğidir ve ikisi aynı fıkrada yer almaz. 1.00 promil ise yine ayrı bir fıkranın ölçütüdür ve doğrudan Türk Ceza Kanunu'nun ilgili maddesine gönderme yapar.",
+    "dayanak": "2918 sayılı Kanun md 48/5",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-06",
+    "articleNo": "48",
+    "kok": "Ölümle sonuçlanan bir trafik kazasına karışan sürücü, kolluğun teknik cihazla yaptığı alkol ölçümüne itiraz etmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu sürücü hakkında nasıl işlem yapılır?",
+    "siklar": {
+      "A": "İtiraz üzerine yapılan ölçüm geçersiz sayılır ve sürücü hakkında işlem yapılmaz.",
+      "B": "En yakın adli tıp kurumuna veya adli tabipliğe götürülerek vücudundan örnek alınır.",
+      "C": "Ölçüm, aynı teknik cihazla yirmi dört saat sonra kolluk tarafından tekrarlanır.",
+      "D": "Örnek alma işlemi, yalnızca kazanın meydana geldiği ilin adli tıp şube müdürlüğünde yapılabilir.",
+      "E": "Sürücünün yazılı rızası alınmadıkça vücudundan herhangi bir örnek alınamaz."
+    },
+    "dogru": "B",
+    "aciklama": "Kanun burada iki ayrı basamak kurar. Birinci basamakta ölçüm kolluk tarafından teknik cihazlar veya test kitleri ile yapılır; kişinin yaralanmalı ya da ölümlü bir kazaya veya kollukça müdahil olunan maddi hasarlı bir kazaya karışması hâlinde bu muayeneye tabi tutulması ZORUNLUDUR, yani sürücünün kabulüne bağlı değildir. İkinci basamak, cihazla yapılan ölçüme itiraz eden ya da cihazla ölçüm yapılmasına müsaade etmeyen sürücü içindir: bu sürücüler en yakın adli tıp kurumuna veya adli tabipliğe ya da Sağlık Bakanlığına bağlı sağlık kuruluşlarına götürülür ve vücutlarından kan, tükürük veya idrar gibi örnekler alınır. Bu işlem bakımından Ceza Muhakemesi Kanunu'nun beden muayenesine ilişkin 75 inci maddesi hükümleri, beşinci fıkrası hariç olmak üzere uygulanır. Kazada kişinin ölmesi veya teknik cihaza üfleyemeyecek kadar yaralanmış olması hâlinde de örnek aynı yolla alınır. İtiraz etmek ile ölçüme rıza göstermemek aynı fıkrada düzenlenmiş olup ikisi de aynı sonuca, örnek alınmasına bağlanmıştır. Ölçümde kullanılacak teknik cihazların ve test kitlerinin sahip olacağı asgari koşullar ile diğer usul ve esaslar ise yönetmelikte gösterilir. Sürücünün uyuşturucu veya uyarıcı madde kullandığından şüphe edilmesi hâlinde ayrıca adli kolluğa ilişkin hükümler devreye girer.",
+    "dayanak": "2918 sayılı Kanun md 48/3",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p2-08",
+    "articleNo": "48",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, alkollü olarak araç kullanması nedeniyle son ihlalin gerçekleştiği tarihten itibaren geriye doğru beş yıl içinde sürücü belgeleri ikinci defa geri alınan sürücüler aşağıdakilerden hangisine tabi tutulur?",
+    "siklar": {
+      "A": "Resmî sağlık kurumundan sağlık kurulu raporu alınmasına",
+      "B": "Psiko-teknik değerlendirmeye ve psikiyatri uzmanının muayenesine",
+      "C": "Sürücü kursuna devam edip sertifika sınavında başarılı olmaya",
+      "D": "Sürücü davranışlarını geliştirme eğitimine",
+      "E": "Trafik ve çevre bilgisi tazeleme sınavına"
+    },
+    "dogru": "D",
+    "aciklama": "Kanun, alkol nedeniyle sürücü belgesi geri alınan kişiler için tekerrür sayısına göre kademeli bir rehabilitasyon rejimi kurar. Beş yıllık dönem içinde belgesi İKİNCİ defa geri alınan sürücüler Sağlık Bakanlığınca, usul ve esasları İçişleri, Millî Eğitim ve Sağlık bakanlıklarınca çıkarılacak yönetmelikte gösterilen SÜRÜCÜ DAVRANIŞLARINI GELİŞTİRME EĞİTİMİNE tabi tutulur. Üç veya üçten fazla geri alma söz konusu olduğunda ise rejim ağırlaşır ve sürücü psiko-teknik değerlendirmeye ve psikiyatri uzmanının muayenesine tabi tutulur. İki basamağın yer değiştirmesi klasik bir hatadır: eğitim ikinci, klinik değerlendirme üçüncü ve sonraki tekerrürlere aittir. Bu rejim, aynı tekerrür kademelerine bağlanan idari para cezası ve geri alma süresinden bağımsızdır; yani sürücü hem artan tutarda cezaya ve uzayan geri alma süresine hem de bu işlemlere aynı anda muhatap olur. Sürücü belgelerinin herhangi bir nedenle geçici olarak geri alınmış olması hâlinde belirtilen süreler, geçici alma süresinin bitiminde başlar.",
+    "dayanak": "2918 sayılı Kanun md 48/11",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-09",
+    "articleNo": "51",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, hız sınırlarının aşılıp aşılmadığını tespit etmekte kullanılan cihazların yerini tespit veya sürücüyü ikaz eden cihazlara kim tarafından el konulur ve mülkiyetinin kamuya geçirilmesine kim karar verir?",
+    "siklar": {
+      "A": "Mülki amir",
+      "B": "Trafik zabıtası",
+      "C": "Cumhuriyet savcısı",
+      "D": "Sulh ceza hâkimi",
+      "E": "İl trafik komisyonu"
+    },
+    "dogru": "A",
+    "aciklama": "Hız denetim cihazlarının yerini tespit eden veya sürücüyü bunlara karşı ikaz eden cihazların imali, ithali ve araçlarda bulundurulması yasaktır. Kanun bu yasağı üç ayrı sonuca bağlar: cihazları imal ve ithal edenlere fiil başka bir suç oluştursa bile idari para cezası verilir, cihazı aracında bulunduran işletene daha düşük tutarda idari para cezası uygulanır ve son olarak cihazlara MÜLKİ AMİR tarafından el konularak yine MÜLKİ AMİR tarafından mülkiyetinin kamuya geçirilmesine karar verilir. Buradaki yetki, tespit ve tutanak işlemini yapan trafik zabıtasına ya da adli mercilere değil, doğrudan mülki idare amirine verilmiştir; el koyma ile mülkiyetin kamuya geçirilmesi kararının aynı makamda toplanmış olması maddenin ayırt edici yanıdır. Aday burada çoğu zaman kabahatler hukukundaki genel yetkiyi hatırlayıp adli mercii işaretler; oysa madde makamı açıkça yazmıştır. İmal ve ithal edenler ile aracında bulunduran işleten için öngörülen tutarların da birbirinden farklı olduğu gözden kaçırılmamalıdır.",
+    "dayanak": "2918 sayılı Kanun md 51 son fıkra",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-10",
+    "articleNo": "51",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, yerleşim yeri DIŞINDA yönetmelikte belirlenen hız sınırının aşılması nedeniyle idari para cezası uygulanabilmesi için aşımın en az hangi aralıkta olması gerekir?",
+    "siklar": {
+      "A": "6-10 km/s",
+      "B": "11-15 km/s",
+      "C": "16-20 km/s",
+      "D": "21-25 km/s",
+      "E": "26-30 km/s"
+    },
+    "dogru": "B",
+    "aciklama": "Hız ihlalinin cezalandırılmasında Kanun, yerleşim yeri içi ile yerleşim yeri dışı için iki ayrı cetvel kurar ve bu cetveller aynı yerden başlamaz. Yerleşim yeri içindeki cetvel 6-10 km/s aşımıyla başlar; yerleşim yeri dışındaki cetvel ise 11-15 km/s aşımıyla başlar. Yani şehirlerarası bir yolda 8 km/s'lik bir aşım cetvelin hiçbir diliminde yer almadığından bu fıkra uyarınca idari para cezası doğurmaz, oysa aynı aşım yerleşim yeri içinde ilk dilime girer. Dilim yapısı iki cetvelde aynıdır: ilk dört dilim beşer, sonraki dört dilim onar km/s aralıklarla ilerler; fark yalnızca cetvelin başladığı aşım miktarındadır. Adayın en sık düştüğü hata, iki cetveli tek bir cetvelmiş gibi ezberleyip yerleşim yeri dışında da 6-10 aralığından başlamaktır. Üst dilimlerin ihlali ayrıca sürücü belgesinin geri alınması sonucunu doğurur ve geri alma süresi dilime göre değişir.",
+    "dayanak": "2918 sayılı Kanun md 51/2-b",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-11",
+    "articleNo": "52",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'nda sürücülerin hızlarını azaltmak zorunda oldukları yerler açıkça sayılmıştır. Aşağıdakilerden hangisi bu Kanun'da AÇIKÇA SAYILANLARDAN biri değildir?",
+    "siklar": {
+      "A": "Kavşaklara yaklaşırken",
+      "B": "Tepe üstlerine yaklaşırken",
+      "C": "Hemzemin geçitlere yaklaşırken",
+      "D": "Bölünmüş karayoluna girerken",
+      "E": "Yapım ve onarım alanlarına girerken"
+    },
+    "dogru": "D",
+    "aciklama": "Madde, hız azaltma zorunluluğunu doğuran yerleri tek tek sayar: kavşaklara yaklaşırken, dönemeçlere girerken, tepe üstlerine yaklaşırken, dönemeçli yollarda ilerlerken, yaya geçitlerine, hemzemin geçitlere, tünellere, dar köprü ve menfezlere yaklaşırken ve yapım ile onarım alanlarına girerken. Bölünmüş karayoluna girmek bu sayımda yer almaz; bölünmüş yol, görüş ve karşı yön trafiği bakımından listedeki yerlerin taşıdığı riski tipik olarak taşımadığı için maddeye alınmamıştır. Aynı maddede sürücülere hızlarını aracın yük ve teknik özelliğine, görüş, yol, hava ve trafik durumunun gerektirdiği şartlara uydurma yükümlülüğü de getirilmiştir; bu genel yükümlülük somut bir yer saymaz, koşula bağlı bir davranış ölçütü koyar. Genel yükümlülüğü sayılan yerlerin listesiymiş gibi okuyan aday, listede olmayan her yeri de zorunluluk kapsamında sanır.",
+    "dayanak": "2918 sayılı Kanun md 52/1-a",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-12",
+    "articleNo": "53",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, dönel kavşaklardaki geriye dönüşlerde sürücüler, sola dönüş hâlindeki kurallara uymakla birlikte ayrıca aşağıdakilerden hangisine zorunludur?",
+    "siklar": {
+      "A": "Kavşağa orta adaya en uzak şeritten girmeye",
+      "B": "Dönüş boyunca dar bir kavisle dönmeye",
+      "C": "Kavşağa girmeden durup sağdan gelen bütün araçları geçirmeye",
+      "D": "Ada etrafında dönerken en dıştaki şeride geçmeye",
+      "E": "Orta ada etrafında dönerken gireceği yola yaklaşıncaya kadar şeridini muhafaza etmeye"
+    },
+    "dogru": "E",
+    "aciklama": "Madde dönüşleri dörde ayırır: sağa dönüş, sola dönüş, dönel kavşakta dönüş ve dönel kavşakta geriye dönüş. Dönel kavşaktaki geriye dönüş, sola dönüş hâlindeki kuralların tamamına tabidir; buna EK olarak sürücü, orta ada etrafında dönerken gireceği yola yaklaşıncaya kadar ŞERİDİNİ MUHAFAZA etmek zorundadır. Bu ek yükümlülüğün sebebi pratiktir: geriye dönüş, adanın etrafında en uzun yolu kat eden manevradır ve sürücü bu süre boyunca şerit değiştirirse ada içinde birden çok akımı keser. Dönel kavşaktaki olağan dönüşte ise sürücü orta adaya yakın şeritten kavşağa girer, ada etrafında dönerken gereksiz şerit değiştirmez ve çıkacağı yola yaklaşırken sağa dönüş işaretiyle birlikte sağa yaklaşarak kavşağı terk eder. Sağa dönüşün DAR, sola dönüşün GENİŞ kavisle yapılması kuralı da aynı maddede yer alır ve bu iki kavis birbiriyle karıştırılır. Sürücüler bütün dönüşlerde kurallara uygun geçiş yapan yayalara ve bisiklet yolundaki kullanıcılara ilk geçiş hakkını vermek zorundadır.",
+    "dayanak": "2918 sayılı Kanun md 53/1-d",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-13",
+    "articleNo": "54",
+    "kok": "Bir sürücü, önünde giden aracın sola dönüş işareti vererek yolun soluna yanaştığını görmüş ve bu aracı sağındaki şeritten geçmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu geçişin hukuki durumu nedir?",
+    "siklar": {
+      "A": "Kanuna uygundur; sola dönüş niyetini işaretle belirten aracın sağındaki şeritten geçilebilir.",
+      "B": "Kanuna aykırıdır; geçiş ancak geçilecek aracın solundaki şeritten yapılabilir.",
+      "C": "Kanuna aykırıdır; sağdan geçiş ancak bölünmüş karayollarında mümkündür.",
+      "D": "Kanuna aykırıdır; sağdan geçiş için banketten yararlanılması gerekir.",
+      "E": "Kanuna uygundur; şerit değiştirmeden diğer şeritten hızlı gitmek geçme sayılmaz."
+    },
+    "dogru": "A",
+    "aciklama": "Kural olarak geçme, geçilecek aracın SOLUNDAKİ şeritten yapılır; araçların sağından veya banketlerden yararlanmak suretiyle geçmek yasaktır. Madde bu yasağa dar bir istisna getirir: herhangi bir araç başka bir yola veya karayoluna bitişik bir mülke girmek ya da sola yanaşıp durmak için bu niyetini SOLA DÖNÜŞ İŞARETİ ile belirtmişse, bu aracın sağındaki şeritten geçilebilir. İstisnanın işleyebilmesi için niyetin işaretle açıkça belirtilmiş olması gerekir; öndeki araç yalnızca yavaşlamış ya da sola yaklaşmış, fakat işaret vermemişse istisna doğmaz ve sağdan geçiş yasak kalır. Olayda sürücü hem sola dönüş işaretini hem de sola yanaşmayı gözlemlediğinden geçiş kural dışı bir hâle girer. Bununla karıştırılan başka bir hüküm, gidişe ayrılmış yol bölümlerinde ŞERİT DEĞİŞTİRMEMEK şartıyla bir şeritteki taşıtların diğer şeritteki taşıtlardan hızlı gitmesinin geçme sayılmamasıdır; orada bir manevra değil, akımların doğal hız farkı vardır ve olayda sürücü şerit değiştirerek geçmiştir.",
+    "dayanak": "2918 sayılı Kanun md 54/1-a",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p2-14",
+    "articleNo": "54",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, aşağıdaki yerlerin hangisinde önde giden bir aracın geçilmesi yasaklanmamıştır?",
+    "siklar": {
+      "A": "Yaya ve okul geçitleri yaklaşımında",
+      "B": "Görüş yetersizliği olan dönemeçlerde",
+      "C": "Demiryolu geçitlerinde",
+      "D": "Her yönde ikişer şeridi bulunan bölünmüş bir karayolunun tünelinde",
+      "E": "Kavşaklarda"
+    },
+    "dogru": "D",
+    "aciklama": "Geçme yasağının yerleri sayılırken köprü ve tüneller bakımından maddeye özel bir kayıt konulmuştur: yasak, GİDİŞ VE GELİŞ İÇİN BİRER ŞERİDİ BULUNAN İKİ YÖNLÜ TRAFİĞİN KULLANILDIĞI köprü ve tüneller içindir. Dolayısıyla her yönde ikişer şeridi olan bölünmüş bir karayolunun tünelinde, bu fıkra bakımından bir geçme yasağı bulunmaz; orada karşı yön trafiğinin fiziken ayrılmış olması yasağın gerekçesini ortadan kaldırır. Elbette o tünelde bir trafik işaretiyle geçme yasaklanmışsa yasak işaretten doğar, maddeden değil. Sayılan diğer yerler koşulsuzdur: geçmenin herhangi bir trafik işaretiyle yasaklandığı yerler, görüş yetersizliği olan tepeler ve dönemeçler, yaya ve okul geçitleri yaklaşımı ile kavşaklar, demiryolu geçitleri ve bunların yaklaşımları. Adayın hatası, köprü ve tünel ifadesini şartından kopararak bütün köprü ve tünelleri mutlak yasak alanı sanmaktır; maddedeki nitelendirme yasağı belirli bir yol tipiyle sınırlar.",
+    "dayanak": "2918 sayılı Kanun md 54/1-b",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p2-15",
+    "articleNo": "55",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, duyulur ve görülür geçiş üstünlüğü işareti veren bir cankurtaran aracına taşıt yolu üzerinde yer açmayarak geçiş hakkı vermeyen sürücünün sürücü belgesi ne kadar süreyle geri alınır?",
+    "siklar": {
+      "A": "On beş gün",
+      "B": "Otuz gün",
+      "C": "Altmış gün",
+      "D": "Doksan gün",
+      "E": "İki yıl"
+    },
+    "dogru": "B",
+    "aciklama": "Geçiş üstünlüğüne sahip araçlara yol vermemek, hangi araca yol verilmediğine göre iki ayrı yaptırıma bağlanmıştır. Cankurtaran ve itfaiye araçları bakımından sonuç ağırdır: sürücüye yüksek tutarlı idari para cezası uygulanır, sürücü belgesi OTUZ GÜN süreyle geri alınır ve araç otuz gün süre ile trafikten menedilir. Geçiş üstünlüğü listesinin daha sonraki sıralarında yer alan araçlara yol vermeyen sürücü için ise yalnızca idari para cezası öngörülmüştür; belge geri alınmaz ve araç menedilmez. Bu ayrım gözden kaçırıldığında her geçiş üstünlüğü ihlali aynı sonuca bağlanmış olur. Beş yıl içinde bu madde kapsamında sürücü belgesi ikinci defa geri alınan kişinin belgesi ise iptal edilir.",
+    "dayanak": "2918 sayılı Kanun md 55/4",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-16",
+    "articleNo": "56",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, taşıt yolunun dar olduğu ve aksini gösteren bir trafik işaretinin bulunmadığı yerlerde aşağıdaki geçiş kolaylığı yükümlülüklerinden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kamyon sürücüsü, otobüse geçiş kolaylığı sağlar.",
+      "B": "Otomobil sürücüsü, minibüse geçiş kolaylığı sağlar.",
+      "C": "Minibüs sürücüsü, kamyonete geçiş kolaylığı sağlar.",
+      "D": "Lastik tekerlekli traktör sürücüsü, iş makinesine geçiş kolaylığı sağlar.",
+      "E": "Kamyonet sürücüsü, otobüse geçiş kolaylığı sağlar."
+    },
+    "dogru": "A",
+    "aciklama": "Madde, dar yol kesimlerinde kimin kime yol vereceğini sabit bir dizilimle çözer. Önce motorsuz araçları kullananlar motorlu araçlara geçiş kolaylığı sağlar. Motorlu araçlar arasında ise şu YAZILIŞ SIRASI esas alınır: otomobil, minibüs, kamyonet, otobüs, kamyon, arazi taşıtı, lastik tekerlekli traktör, iş makineleri. Kural, her aracın KENDİSİNDEN ÖNCEKİLERE geçiş kolaylığı sağlamasıdır; yani listede sonra gelen, önce gelene yol verir. Kamyon listede otobüsten sonra geldiği için otobüse yol verir. Aynı mantıkla kamyonet otomobil ve minibüse, iş makinesi ise kendisinden önceki bütün cinslere yol verir; buna karşılık otomobil listenin başında olduğundan hiçbirine geçiş kolaylığı sağlamakla yükümlü değildir. Adayın hatası sıralamayı ağırlık ya da boyut sezgisiyle kurmaktır; büyük araç küçüğe yol verir gibi bir ölçüt maddede yoktur, ölçüt yalnızca metindeki dizilimdir. Bu kural aksini gösteren bir trafik işareti bulunmaması hâlinde uygulanır.",
+    "dayanak": "2918 sayılı Kanun md 56/1-e",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-17",
+    "articleNo": "57",
+    "kok": "Bir sürücü, ışıklı trafik işareti geçişe izin verdiği hâlde kavşak çıkışındaki trafik yoğunluğu nedeniyle kavşak içinde durmak zorunda kalacağını görmüştür. 2918 sayılı Karayolları Trafik Kanunu'na göre bu sürücü nasıl hareket etmelidir?",
+    "siklar": {
+      "A": "Işık geçişe izin verdiği sürece kavşağa girebilir.",
+      "B": "Kavşağa girip diğer doğrultudaki trafiğe yol vererek bekleyebilir.",
+      "C": "Sesli uyarı vermek şartıyla kavşağa girebilir.",
+      "D": "Kavşağa girmesi yasaktır; yalnızca kavşak dışında bekleyebilir.",
+      "E": "Kavşağa girip aracını durdurarak trafik zabıtasının yönlendirmesini beklemelidir."
+    },
+    "dogru": "D",
+    "aciklama": "Kavşaklara ilişkin madde, ışığın verdiği izni tek başına yeterli saymaz. Işıklı trafik işaretleri izin verse bile trafik akımı sürücüyü kavşak içinde durmaya zorlayacak ya da diğer doğrultudaki trafiğin geçişine engel olacaksa, sürücülerin kavşağa girmeleri YASAKTIR. Kuralın amacı kavşak kilitlenmesini önlemektir: kavşak içinde kalan bir araç, yeşil ışığı yanan diğer doğrultuyu da fiilen durdurur ve tıkanma zincirleme büyür. Bu nedenle sürücünün yükümlülüğü, girmeden önce çıkışın boş olduğunu değerlendirmektir. Aynı maddede tamamlayıcı bir kural daha vardır: trafik zabıtası, yetkili kişi veya ışıklı işaretle yönetilen kavşaklarda sürücüler kavşağı en kısa zamanda geçmek zorundadır; gereksiz yere yavaşlamaları, durmaları, taşıttan inmeleri ve motoru durdurmaları yasaktır. Yani Kanun hem kavşağa gereksiz girişi hem de kavşakta gereksiz kalmayı yasaklar. Kavşağa yaklaşan sürücünün genel yükümlülüğü ise yavaşlamak, dikkatli olmak ve geçiş hakkı olan araçların önce geçmesine imkân vermektir.",
+    "dayanak": "2918 sayılı Kanun md 57/1-d",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-18",
+    "articleNo": "57",
+    "kok": "I. Bölünmüş yola çıkan sürücüler, bu yoldan geçen araçlara geçiş hakkı vermek zorundadır.\nII. Dönel kavşağa gelen sürücüler, dönel kavşak içindeki araçlara geçiş hakkı vermek zorundadır.\nIII. Anayoldan gelen sürücüler, tali yoldan anayola çıkan araçlara geçiş hakkı vermek zorundadır.\n2918 sayılı Karayolları Trafik Kanunu'na göre, trafik zabıtası, trafik işaret levhası veya ışıklı trafik işaret cihazı bulunmayan kavşaklarla ilgili yukarıdaki önermelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "İşaretsiz ve görevlisiz kavşaklarda geçiş hakkı, maddedeki dizilime göre belirlenir. Bu dizilime göre bütün sürücüler geçiş üstünlüğüne sahip araçlara ve doğru geçmekte olan tramvaylara; doğru geçen tramvay hattı bulunan karayoluna çıkan sürücüler bu yoldan gelen araçlara; bölünmüş yola çıkan sürücüler bu yoldan geçen araçlara; TALİ YOLDAN ANAYOLA çıkan sürücüler anayoldan gelen araçlara; dönel kavşağa gelen sürücüler dönel kavşak içindeki araçlara; bir iz veya mülkten çıkan sürücüler karayolundan gelen araçlara geçiş hakkı verir. Üçüncü önerme bu ilişkiyi ters çevirdiği için yanlıştır: yükümlülük anayoldaki sürücüde değil, tali yoldan çıkan sürücüdedir. Kural bir bütün olarak okunduğunda hepsinde aynı mantık işler; akış hâlindeki, düzeyi daha yüksek yola sonradan katılan taraf yol verir. Kavşak kollarının trafik yoğunluğu bakımından farklı oldukları işaretlerle belirlenmemişse ayrıca motorsuz araç sürücüleri motorlu araçlara, motorlu araçlardan soldaki de sağdan gelen araca geçiş hakkını vermek zorundadır.",
+    "dayanak": "2918 sayılı Kanun md 57/1-b",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "2918-p2-19",
+    "articleNo": "61",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, belirlenmiş yangın musluklarına her iki yönden kaç metrelik mesafe içinde park etmek yasaktır?",
+    "siklar": {
+      "A": "Beş",
+      "B": "On",
+      "C": "On beş",
+      "D": "Yirmi",
+      "E": "Yüz"
+    },
+    "dogru": "A",
+    "aciklama": "Park yasaklarının çoğu belirli bir nokta ile araç arasındaki mesafeye bağlanmıştır ve bu mesafeler birbirinden farklıdır. Belirlenmiş yangın musluklarında ölçü HER İKİ YÖNDEN BEŞ METREDİR; aynı beş metrelik ölçü, kamunun faydalandığı ve yönetmelikte belirtilen yerlerin giriş ve çıkış kapılarının her iki yönü için de geçerlidir. Buna karşılık kamu hizmeti yapan yolcu taşıtlarının duraklarını belirten levhalara iki yönden on beş metre, park için yer ayrılmamış alt geçit, üst geçit ve köprülerde ise bunlara on metre mesafe içinde park etmek yasaktır. Tek bir mesafeyi bütün noktalar için genellemek burada en sık yapılan hatadır. Ayrıca duraklamanın yasaklandığı bütün yerlerde park etmek de kendiliğinden yasaktır.",
+    "dayanak": "2918 sayılı Kanun md 61/1-d",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-20",
+    "articleNo": "65",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, azami yüklü ağırlığın yüzde kaçından fazla aşılması hâlinde fazla yük kanuna uygun hâle getirilmeden aracın yola devam etmesine izin verilmez?",
+    "siklar": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "dogru": "C",
+    "aciklama": "Azami yüklü ağırlığın aşılması iki ayrı sonuca bağlanmıştır. Birincisi paradır: aşımın oranına göre kademeli idari para cezası uygulanır ve bu ceza işleten ile gönderene AYRI AYRI verilir; kademeler yüzde on, yüzde on beş, yüzde yirmi, yüzde yirmi beş ve yüzde yirmi beşin üzeri olarak kurulmuştur. İkincisi ise aracın yolculuğunun kesilmesidir: azami yüklü ağırlığın YÜZDE YİRMİDEN FAZLA aşılması hâlinde fazla yük indirilerek hüküm uygun hâle getirilmeden aracın yola devam etmesine izin verilmez. Yani ceza kademesi ile yol kesme eşiği aynı sayı değildir; ceza en alttaki kademede bile doğar, yola devam yasağı ise ancak yüzde yirmilik eşik aşıldığında devreye girer. Aday bu ikisini birleştirip her fazla yüklemede aracın durdurulacağını sanır. Maddede ayrıca taşıma sınırı üstünde yolcu alınması hâlinde bütün sorumluluk ve giderler araç işletenine ait olmak üzere fazla yolcuların en yakın yerleşim biriminde indirileceği düzenlenmiştir.",
+    "dayanak": "2918 sayılı Kanun md 65/5",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-21",
+    "articleNo": "65/A",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, araçlarda kış lastiği kullanımını illerin hava ve iklim şartlarına göre araç cinslerine göre yılın belirli dönemi için zorunlu tutmaya hangi makam yetkilidir?",
+    "siklar": {
+      "A": "Ulaştırma ve Altyapı Bakanlığı",
+      "B": "İçişleri Bakanlığı",
+      "C": "Valilikler",
+      "D": "Karayolları Genel Müdürlüğü",
+      "E": "Cumhurbaşkanı"
+    },
+    "dogru": "A",
+    "aciklama": "Kış lastiği zorunluluğunu koyma yetkisi Ulaştırma ve Altyapı Bakanlığına aittir ve bu yetki üç ölçüte göre kullanılır: illerin hava ve iklim şartları, araç cinsleri ve yılın belirli dönemi. Bakanlık bu yetkisini VALİLİKLERE DEVREDEBİLİR; valiliğin yetkisi devre dayandığı için asli değil türevdir ve uygulamada kararı valilikten duyan aday valiliği asli yetkili sanır. Yükümlülüğe uymayan aracın İŞLETENİNE idari para cezası uygulanır ve bu araçların lastiklerini uygun hâle getirebilecekleri en yakın yerleşim birimine kadar gitmelerine izin verilir. Cumhurbaşkanının maddedeki rolü ise zorunluluğu koymak değil, öngörülen idari para cezasının tutarını azaltmak veya iki katına kadar artırmaktır.",
+    "dayanak": "2918 sayılı Kanun md 65/A-1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-22",
+    "articleNo": "66",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre elektrikli skuterlerle ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bisiklet şeridi bulunan yollarda bisiklet şeridinde sürülmesi yasaktır.",
+      "B": "Azami hız sınırı 90 km/s'nin altındaki bütün karayollarında kullanılabilir.",
+      "C": "Sürücüsünün manevra hâli dışında en az bir eli ile sürmesi yeterlidir.",
+      "D": "Yayaların kullanmasına ayrılmış yerlerde sürülmesi serbesttir.",
+      "E": "Sırtta taşınabilen kişisel eşya dışında hiçbir yük ve yolcu taşınamaz."
+    },
+    "dogru": "E",
+    "aciklama": "Elektrikli skutere ilişkin kurallar bisiklet ve motosikletle aynı maddede düzenlenmiş olsa da her araç için ayrı ölçütler taşır. Skuter bakımından taşıma yasağı mutlaktır: sırtta taşınabilen kişisel eşya dışında yük ve yolcu taşınması yasaktır, yani arkada oturma yeri bulunup bulunmaması sonucu değiştirmez. Kullanım alanı da sınırlıdır; skuter otoyolda, şehirler arası karayollarında ve azami hız sınırı 50 km/s'nin ÜZERİNDE olan karayollarında kullanılamaz, dolayısıyla ölçüt yolun adı kadar o yoldaki azami hız sınırıdır. Sürüş biçimi bakımından bisiklet sürenler için en az bir el yeterliyken, elektrikli skuter ve motorlu bisiklet sürenler manevra için işaret verme hâli dışında İKİ ELLE sürmek zorundadır. Ayrı bisiklet yolu veya bisiklet şeridi varsa skuterin taşıt yolunda sürülmesi yasaktır; yani bisiklet şeridi skuterin yasak alanı değil, asıl kullanım alanıdır. Bisiklet, elektrikli skuter, motorlu bisiklet ve motosikletlerin yayaların kullanmasına ayrılmış yerlerde sürülmesi de aynı bentte yasaklanmıştır.",
+    "dayanak": "2918 sayılı Kanun md 66/1-d",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-24",
+    "articleNo": "68",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre yayaların uyacakları kurallarla ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yayaların taşıt yolunu geçidin dışından geçmesi, yüz metre kadar mesafede geçit bulunmayan yerlerde dahi mümkün değildir.",
+      "B": "Bir yetkili yönetimindeki yaya kafileleri taşıt yolunun en sağ şeridinden fazlasını işgal edebilir.",
+      "C": "Yaya kafileleri dışındaki yayalar, yaya yolu ve banketi bulunmayan iki yönlü karayolunda taşıt yolunun sol kenarını izler.",
+      "D": "Yayaların yürümesine ayrılmış kısımların bulunmaması hâlinde yayalar bisiklet yolunu kullanamaz.",
+      "E": "Görüşün az olduğu hâllerde yaya kafilelerinin imkân oranında iki sıra hâlinde yürümesi zorunludur."
+    },
+    "dogru": "C",
+    "aciklama": "Yayaların kural olarak taşıt yolu bitişiğindeki yaya yolu, banket veya alanı kullanması gerekir. Bunların bulunmadığı hâllerde ise madde, aracın geliş yönünü görebilmeyi esas alan bir çözüm getirir: her iki tarafında yaya yolu ve banket bulunmayan veya kullanılır durumda olmayan, iki yönlü trafiğin kullanıldığı karayollarında yaya kafileleri DIŞINDAKİ yayalar taşıt yolunun SOL KENARINI izlemek zorundadır. Sol kenar tercihinin sebebi, yayanın kendisine doğru gelen trafiği görebilmesidir; kafileler ise bir yetkili yönetiminde ve düzenli biçimde yürüdüğünden bu kuralın dışında bırakılmıştır. Kafileler bakımından ölçü farklıdır: taşıt yolunun en sağ şeridinden fazlasını işgal etmemek ve gece ile görüşün az olduğu hâllerde imkân oranında TEK SIRA hâlinde yürümek gerekir. Yayaların yürümesine ayrılmış kısımlar yoksa yayalar, bisiklet trafiğine engel olmamak şartıyla bisiklet yolunu veya şeridini kullanabilir. Ayrıca yüz metre kadar mesafede yaya geçidi veya kavşak bulunmayan yerlerde yayalar, güvenliklerini sağladıktan sonra en kısa doğrultuda taşıt yolunu geçebilir.",
+    "dayanak": "2918 sayılı Kanun md 68/1-a",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p2-26",
+    "articleNo": "74",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, görevli bir kişi veya ışıklı trafik işareti bulunmayan ancak trafik işaret veya levhalarıyla belirlenmiş yaya geçitlerine yaklaşan sürücüler, buradan geçen ya da geçmek üzere bulunan yayalara karşı ne yapmak zorundadır?",
+    "siklar": {
+      "A": "Yavaşlamak ve dikkatli biçimde geçitten geçmek",
+      "B": "Sesli uyarıda bulunarak geçidin boşalmasını sağlamak",
+      "C": "Yavaşlamak ve durarak ilk geçiş hakkını vermek",
+      "D": "Yayanın taşıt yolunun ortasına gelmesini bekledikten sonra geçmek",
+      "E": "Okul geçitlerinde durmak, yaya geçitlerinde ise hızını azaltmak"
+    },
+    "dogru": "C",
+    "aciklama": "Maddenin ölçüsü yavaşlamak değil, DURMAKTIR. Sürücüler, görevli bir kişi veya ışıklı trafik işareti bulunmayan ancak trafik işareti ya da levhalarıyla belirlenmiş kavşak giriş ve çıkışları ile yaya veya okul geçitlerine yaklaşırken yavaşlamak ve varsa buralardan geçen veya GEÇMEK ÜZERE BULUNAN yayalara DURARAK ilk geçiş hakkını vermek zorundadır. İki unsur önemlidir: yükümlülük yalnız geçide adım atmış yaya için değil, geçmek üzere bekleyen yaya için de doğar; ayrıca kural yaya geçitleri ile okul geçitlerini birlikte kapsar ve ikisi arasında derece farkı yoktur. Görevli veya ışıklı işaret bulunan yerler madde kapsamı dışındadır; oralarda geçiş sırasını zaten görevli ya da ışık belirler.",
+    "dayanak": "2918 sayılı Kanun md 74/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-27",
+    "articleNo": "76",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, ışıklı işaret ve bariyerle donatılmamış demiryolu geçitlerinde sürücüler için hangi yükümlülük öngörülmüştür?",
+    "siklar": {
+      "A": "Geçidi, geçidin durumuna uygun bir hızla yavaşlayarak geçmek",
+      "B": "Geçmeden önce durmak ve demiryolu aracı yaklaşmadığına emin olduktan sonra geçmek",
+      "C": "Bariyer bulunmadığından sesli işaret vererek geçitten geçmek",
+      "D": "Geçide yaklaşırken şerit değiştirmemek ve takip mesafesini artırmak",
+      "E": "Geçidi ancak görevlinin vereceği işaret üzerine geçmek"
+    },
+    "dogru": "B",
+    "aciklama": "Madde demiryolu geçitlerini donanımına göre ikiye ayırır. Işıklı işaret veya bariyerle donatılmış geçitlerde sürücünün yükümlülüğü sistemin verdiği talimata uymaktır: geçidi durumuna uygun olmayan hızla geçmek, ışıklı ya da sesli işaretin vereceği dur talimatına uymamak ve taşıt yolu üzerine indirilmiş veya indirilmekte olan tam ya da yarım bariyerler varken geçide girmek yasaktır. Işıklı işaret ve bariyerle DONATILMAMIŞ geçitlerde ise güvenliği sağlama yükümlülüğü tümüyle sürücüye geçer: sürücüler geçmeden önce DURMAK ve herhangi bir demiryolu aracının yaklaşmadığına emin olduktan sonra geçmek zorundadır. Yavaşlamak burada yeterli değildir, çünkü donanımsız geçitte tren yaklaşımını bildiren başka bir uyarı kaynağı yoktur.",
+    "dayanak": "2918 sayılı Kanun md 76/1-b",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-28",
+    "articleNo": "79",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, karayolu üzeri park yerlerinde yetkisi olmadığı hâlde park ücreti alan veya almaya teşebbüs edenler hakkında, fiilleri daha ağır bir ceza gerektiren bir suç oluşturmadığı takdirde hangi yaptırım uygulanır?",
+    "siklar": {
+      "A": "46.000 Türk lirası idari para cezası",
+      "B": "86.900 Türk lirası idari para cezası",
+      "C": "Altı aydan iki yıla kadar hapis ve beş bin güne kadar adli para cezası",
+      "D": "Bir yıldan üç yıla kadar hapis cezası",
+      "E": "İki yıldan beş yıla kadar hapis ve beş bin güne kadar adli para cezası"
+    },
+    "dogru": "C",
+    "aciklama": "Karayolu üzeri park yerindeki araçlar için park ücretini yalnızca yetki ve sorumluluk alanına göre park yerini tespite yetkili idare ya da bu idare tarafından işletme izni verilen gerçek veya tüzel kişiler alabilir; bunlar dışında HİÇBİR gerçek veya tüzel kişi herhangi bir şekilde park ücreti alamaz. Erişme kontrollü karayolları hariç olmak üzere büyükşehirlerde yetkili idare büyükşehir belediyeleridir. Bu yasağa aykırı olarak park ücreti alan veya ALMAYA TEŞEBBÜS edenler, fiilleri daha ağır bir cezayı gerektiren bir suç oluşturmadığı takdirde altı aydan iki yıla kadar hapis ve beş bin güne kadar adli para cezası ile cezalandırılır. Buradaki yaptırımın idari değil ADLİ nitelikte olması maddenin ayırt edici yanıdır; aday kabahatler rejimine alışkın olduğu için sonucu idari para cezası sanır. Teşebbüsün tamamlanmış fiille aynı yaptırıma bağlanması da ayrıca dikkat edilmesi gereken bir noktadır: ücretin fiilen tahsil edilmiş olması aranmaz.",
+    "dayanak": "2918 sayılı Kanun md 79/2",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-29",
+    "articleNo": "81",
+    "kok": "İki araç arasında yalnız maddi hasarla sonuçlanan bir trafik kazası meydana gelmiş, kazaya dâhil kişilerin tümü yetkili ve görevli kişinin gelmesine lüzum görmemiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu kişiler nasıl hareket edebilir?",
+    "siklar": {
+      "A": "Kaza yerinden ancak sigorta şirketine bildirimde bulunduktan sonra ayrılabilirler.",
+      "B": "Zabıtaya telefonla bilgi vermek şartıyla kaza yerinden ayrılabilirler.",
+      "C": "Araçlarını bulundukları yerde bırakarak kaza yerinden ayrılabilirler.",
+      "D": "Durumu aralarında yazılı olarak saptamak suretiyle kaza yerinden ayrılabilirler.",
+      "E": "Kaza yerinden ayrılamaz, kaza tespit tutanağının düzenlenmesini beklerler."
+    },
+    "dogru": "D",
+    "aciklama": "Trafik kazasına karışanların kural olarak kazayı yetkili ve görevli memurlara bildirmesi, bunlar gelinceye kadar veya bunların iznini almadan kaza yerinden ayrılmaması gerekir. Madde bu kurala tek bir kapı açar: YALNIZ MADDİ HASAR meydana gelen kazalarda, kazaya dâhil kişilerin TÜMÜ yetkili ve görevli kişinin gelmesine lüzum görmezlerse, bunu aralarında YAZILI OLARAK saptamak suretiyle kaza yerinden ayrılabilirler. İstisnanın üç şartı da birlikte aranır: kazada ölüm ya da yaralanma bulunmayacak, kazaya dâhil kişilerin hepsi aynı yönde irade gösterecek ve durum yazılı biçimde tespit edilecektir. Taraflardan biri görevlinin gelmesini isterse ya da tespit yazılı yapılmazsa istisna işlemez ve genel kural devreye girer; sözlü mutabakat veya telefonla bildirim yazılı saptamanın yerini tutmaz. Kazaya karışanların diğer yükümlülükleri de aynı maddede sayılmıştır: hareket hâlindeyseler trafik için ek bir tehlike yaratmayacak şekilde hemen durmak, kaza mahallinde trafik güvenliği için gereken tedbirleri almak, sorumluluğun saptanmasında yararlı olacak kanıt ve izler dâhil kaza yerindeki durumu değiştirmemek ve istendiğinde kimlik, adres, sürücü ve tescil belgesi ile sigorta poliçesi bilgilerini bildirip göstermek. Sürücüsü veya mal sahibi bulunmayan bir araca ya da eşyaya zarar veren sürücü ise ilgilileri bulamazsa durumu tespit etmek, zarar verilen şey üzerine yazılı bilgi bırakmak ve ilgili zabıtaya en kısa zamanda bilgi vermek zorundadır.",
+    "dayanak": "2918 sayılı Kanun md 81/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p2-30",
+    "articleNo": "82",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, tesislerine ölüm veya yaralanma ile sonuçlanan bir kaza geçirmiş olduğu belli olan ya da üzerinde suç belirtisi bulunan bir araç gelen tamirhane, servis istasyonu ve garaj sahip ve sorumluları ne yapmak zorundadır?",
+    "siklar": {
+      "A": "Aracı onarmadan önce sigorta şirketinden yazılı onay almak",
+      "B": "Aracı en yakın trafik tescil kuruluşuna götürmek",
+      "C": "Aracın fotoğraflarını çekerek bir yıl süreyle saklamak",
+      "D": "Aracın sahibinden yazılı beyan alarak dosyada muhafaza etmek",
+      "E": "Gecikmeksizin zabıtaya haber vermek ve aracı bir deftere işlemek"
+    },
+    "dogru": "E",
+    "aciklama": "Madde, trafik kazalarına hemen el konmasını, ölü ve yaralıların taşınmasını, yaralıların tedavisini veya sanıkların yakalanmasını sağlamak amacıyla üç ayrı kesime yükümlülük getirir. Kaza yerinden geçmekte olan veya kazaya karışmış bulunan araç sürücüleri kaza mahallinde ilk yardım önlemlerini almak, en yakın zabıtaya veya sağlık kuruluşuna haber vermek ve yetkililerin talebi üzerine yaralıları en yakın sağlık kuruluşuna götürmek zorundadır. Şehirlerarası akaryakıt istasyonlarının sahip veya işletenleri belirlenen standartlara uygun ilk yardım malzemesini her an kullanılabilir durumda bulundurmakla yükümlüdür. Tamirhane, servis istasyonu ve garaj sahip ve sorumluları ise tesislerine ölüm ya da yaralanma ile sonuçlanan bir kaza geçirmiş olduğu belli olan veya üzerinde SUÇ BELİRTİSİ bulunan bir araç gelince GECİKMEKSİZİN ZABITAYA HABER VERMEK ve bunları BİR DEFTERE İŞLEMEK zorundadır. Yükümlülüğün iki ayağı birlikte aranır; yalnız bildirimde bulunup kayıt tutmamak da maddeye aykırılık oluşturur.",
+    "dayanak": "2918 sayılı Kanun md 82/1-c",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-31",
+    "articleNo": "83",
+    "kok": "Trafik kazalarına; adli yönden gereği yapılmak üzere - - - -, kazanın oluş nedenlerini, iz ve delillerini belirleyerek trafik kaza tespit tutanağı düzenlemek üzere de - - - - el konulur. 2918 sayılı Karayolları Trafik Kanunu'na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla hangileri getirilmelidir?",
+    "siklar": {
+      "A": "mahalli genel zabıtaca - trafik zabıtasınca",
+      "B": "trafik zabıtasınca - mahalli genel zabıtaca",
+      "C": "Cumhuriyet savcılığınca - trafik zabıtasınca",
+      "D": "mahalli genel zabıtaca - kaza tahkik memurluğunca",
+      "E": "trafik zabıtasınca - bilirkişi heyetince"
+    },
+    "dogru": "A",
+    "aciklama": "Kanun trafik kazasına el koymayı iki ayrı yöne böler ve her yönü ayrı bir kolluğa verir. Kazanın ADLİ yönü, yani suçun soruşturulmasına ilişkin gereğin yapılması MAHALLİ GENEL ZABITAYA aittir. Kazanın OLUŞ NEDENLERİNİN, iz ve delillerin belirlenerek trafik kaza tespit tutanağının düzenlenmesi ise TRAFİK ZABITASINA aittir. İkisinin yer değiştirmesi bu maddedeki klasik hatadır; aday tutanağı adli bir işlem sandığı için genel zabıtayı, oluş nedeninin araştırılmasını da soruşturma sayarak trafik zabıtasını yanlış tarafa yerleştirir. Bölünmenin mantığı uzmanlıktır: oluş nedeni ile iz ve delil değerlendirmesi teknik bir trafik incelemesiyken, adli gereğin yapılması genel kolluk görevidir. Görev bölüşümünün coğrafi bir istisnası da vardır: trafik zabıtasının görevli olmadığı veya bulunmadığı karayollarında meydana gelen kazalarda trafik kaza tespit tutanağı MAHALLİ GENEL ZABITACA düzenlenir ve bir örneği o yerin trafik zabıtasına gönderilir; yani orada genel zabıta her iki yönü birden üstlenir ve düzenlediği tutanağı trafik zabıtasına ulaştırmakla yükümlü olur. Trafik zabıtası ayrıca, usul kanunlarına göre görevlendirilirse trafik kazalarında bilirkişilik de yapar. Kaza tahkik memurluğu ile bilirkişilikte aranacak şartlar ve diğer esaslar yönetmelikte gösterilir.",
+    "dayanak": "2918 sayılı Kanun md 83/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p2-32",
+    "articleNo": "83",
+    "kok": "Ölümle sonuçlanan bir trafik kazası karayolunu trafiğe kapatmış, kaza can, mal ve trafik güvenliğini etkilemekte ve başka bir yoldan geçiş verilememektedir. Cumhuriyet savcısının gecikeceği anlaşılmıştır. 2918 sayılı Karayolları Trafik Kanunu'na göre nasıl hareket edilir?",
+    "siklar": {
+      "A": "Yol, Cumhuriyet savcısı olay yerine gelinceye kadar trafiğe kapalı tutulur.",
+      "B": "Yol, ancak karayolunun bağlı olduğu kuruluşun izniyle trafiğe açılabilir.",
+      "C": "Yol, bilirkişi incelemesi tamamlandıktan sonra trafiğe açılabilir.",
+      "D": "Yol, ancak maddi hasarlı kazalarda bu şekilde trafiğe açılabilir.",
+      "E": "Gerekli işaretlemeler yapılıp araç ve ölüler kenara alınarak, durum tutanakla tespit edildikten sonra yol açılır."
+    },
+    "dogru": "E",
+    "aciklama": "Karayolunun trafiğe kapanmasına ölümlü ve hayati tehlike yaratan yaralanmalı bir kaza neden olmuşsa, olay yerinin korunması ile yolun açılması arasındaki denge maddede özel olarak kurulmuştur. Dört şart birlikte gerçekleştiğinde yol açılabilir: kazanın ölümlü ya da hayati tehlike yaratan yaralanmalı olması, kazanın can, mal ve trafik güvenliğini etkilemesi, başka bir yoldan geçiş verilememesi ve Cumhuriyet savcısının GECİKECEĞİNİN anlaşılması. Bu şartlar varsa gerekli işaretlemeler yapılıp araç ve ölüler kenara alınarak durum bir tutanakla tespit edildikten sonra yol trafiğe açılır. Yani delil, olay yerinin korunmasıyla değil işaretleme ve tutanakla güvence altına alınır. Ayırt edici unsur savcının gecikecek olmasıdır; savcının kısa sürede geleceği anlaşılıyorsa bu usule başvurulamaz. Yalnız maddi hasarla sonuçlanan kazalar bakımından ise maddede farklı bir hüküm bulunur: tarafların anlaşması hâlinde ve fiil başka bir suç oluşturmuyorsa adli kovuşturma yapılmaz.",
+    "dayanak": "2918 sayılı Kanun md 83/5",
+    "zorluk": "hard",
+    "tur": "vaka"
+  }
+]

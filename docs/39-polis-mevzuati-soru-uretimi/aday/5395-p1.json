@@ -1,0 +1,427 @@
+[
+  {
+    "id": "5395-p1-01",
+    "articleNo": "3",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, “çocuk hâkimi” kavramı aşağıdakilerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Kovuşturma başlatılmış olanlar hariç, suça sürüklenen ve korunma ihtiyacı olan çocuklar hakkında tedbir kararı veren çocuk mahkemesi hâkimini",
+      "B": "Yalnızca korunma ihtiyacı olan çocuklar hakkında tedbir kararı vermekle görevlendirilen çocuk mahkemesi hâkimini",
+      "C": "Hakkında kovuşturma başlatılmış çocuklar dâhil olmak üzere bütün çocuklar hakkında tedbir kararı veren çocuk ağır ceza mahkemesi başkanını",
+      "D": "Çocuk ağır ceza mahkemesinde görev yapan ve çocuk mahkemelerince verilen tedbir kararlarını onaylayan hâkimi",
+      "E": "Çocuk mahkemesi kurulmamış yerlerde tedbir kararı vermekle görevli kılınan asliye hukuk mahkemesi hâkimini"
+    },
+    "dogru": "A",
+    "aciklama": "Kanunun tanımlar maddesinde çocuk hâkimi, tedbir kararı verme yetkisiyle tanımlanır: suça sürüklenen çocuklarla korunma ihtiyacı olan çocuklar hakkında uygulanacak TEDBİR KARARLARINI veren ÇOCUK MAHKEMESİ hâkimidir. Tanımın ayırt edici kaydı baştaki istisnadır: HAKKINDA KOVUŞTURMA BAŞLATILMIŞ OLANLAR bu kapsamın dışındadır. Yani çocuk hâkimi sıfatı, kovuşturma aşamasına geçilmemiş dosyalarla ve korunma ihtiyacı olan çocuklarla sınırlıdır; kamu davası açıldıktan sonra karar mercii artık davaya bakan mahkemedir. İki noktada daralma vardır: (1) kapsam bakımından tanım her iki çocuk grubunu da içerir, yalnız birine özgülenmiş değildir; (2) merci bakımından tanım ÇOCUK MAHKEMESİ hâkimini işaret eder, çocuk ağır ceza mahkemesini değil. Aynı maddede “Mahkeme” terimi ise çocuk mahkemeleri ile çocuk ağır ceza mahkemelerinin ikisini birden karşılar; adayın en sık karıştırdığı yer, “mahkeme” ile “çocuk hâkimi” terimlerinin bu farklı genişlikleridir.",
+    "dayanak": "5395 sayılı Kanun md 3/1-c",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "5395-p1-02",
+    "articleNo": "3",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’nda sosyal çalışma görevlisi tanımlanırken sayılan eğitim alanları arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Psikolojik danışmanlık ve rehberlik",
+      "B": "Aile ve tüketici bilimleri",
+      "C": "Çocuk gelişimi",
+      "D": "Hukuk",
+      "E": "Sosyoloji"
+    },
+    "dogru": "D",
+    "aciklama": "Sosyal çalışma görevlisi, meslek grubuyla değil MEZUN OLUNAN ALANLA tanımlanmıştır: psikolojik danışmanlık ve rehberlik, psikoloji, sosyoloji, çocuk gelişimi, öğretmenlik, aile ve tüketici bilimleri ve sosyal hizmet alanlarında eğitim veren kurumlardan mezun meslek mensupları bu sıfatı taşır. Sayım kapalıdır; “ve benzeri” türü bir açık uçlu kayıt taşımaz, dolayısıyla listede olmayan bir alan tanımın içine giremez. HUKUK bu alanlardan biri değildir ve olmaması tesadüf de değildir: bu görevlinin işlevi çocuğun bireysel özelliklerini ve sosyal çevresini değerlendirmektir, hukukî nitelendirme yapmak değil. Adayı yanıltan şey, görevlinin ceza muhakemesi içinde çalışıyor olmasıdır; ortamın hukukî olması, aranan eğitimin de hukuk olmasını gerektirmez. Tanımın 2012 değişikliğiyle bugünkü hâlini aldığını, listenin eski dar hâlini ezberleyenlerin de hata yaptığını eklemek gerekir.",
+    "dayanak": "5395 sayılı Kanun md 3/1-e",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-03",
+    "articleNo": "4",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’nun uygulanmasında gözetilecek temel ilkeler arasında aşağıdakilerden hangisi sayılmamıştır?",
+    "siklar": {
+      "A": "Çocuklar hakkında özgürlüğü kısıtlayıcı tedbirler ile hapis cezasına en son çare olarak başvurulması",
+      "B": "Çocuk hakkında verilen koruyucu ve destekleyici tedbir kararlarının giderlerinin Devletçe ödenmesi",
+      "C": "Çocuk ve ailesinin herhangi bir nedenle ayrımcılığa tâbi tutulmaması",
+      "D": "Çocuk ve ailesi bilgilendirilmek suretiyle karar sürecine katılımlarının sağlanması",
+      "E": "Yargılama ve kararların yerine getirilmesinde kimliğinin başkaları tarafından belirlenememesine yönelik önlemler alınması"
+    },
+    "dogru": "B",
+    "aciklama": "Temel ilkeler maddesi, Kanunun bütün uygulamasına yön veren ölçütleri (a)’dan (l)’ye kadar sayar: yaşama-gelişme-korunma-katılım haklarının güvencesi, çocuğun yarar ve esenliğinin gözetilmesi, ayrımcılık yasağı, çocuk ve ailenin bilgilendirilerek sürece katılması, kurumlar arası işbirliği, adil ve süratli usûl, özel ihtimam, eğitim ve kişiliğin desteklenmesi, özgürlüğü kısıtlayıcı tedbirler ile hapse EN SON ÇARE olarak başvurulması, kurumda bakım ve kurumda tutmanın son çare sayılması ve çocuğun kimliğinin başkalarınca belirlenememesi. Liste kapalıdır, benzeri bir ibareyle genişletilmemiştir. Yanlış seçenek de gerçek bir hükümdür, ama başka bir yerde durur: tedbir kararlarının giderlerinin Devletçe ödenmesi bir İLKE değil, Kanunun sonraki bölümünde yer alan MALÎ bir kuraldır; orada ayrıca, çocuğa bakmakla yükümlü kimsenin malî durumu müsaitse ödenen meblağ için ilgililere RÜCU edileceği de öngörülmüştür. Sınav bu ayrımı sever: ilkeler soyut ve yön verici, diğer hükümler ise somut usûl veya malî kurallardır.",
+    "dayanak": "5395 sayılı Kanun md 4/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-04",
+    "articleNo": "6",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, aşağıdakilerden hangisi korunma ihtiyacı olan çocuğu Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna bildirmekle yükümlü kılınanlar arasında açıkça sayılmıştır?",
+    "siklar": {
+      "A": "Muhtarlar",
+      "B": "Barolar",
+      "C": "Sivil toplum kuruluşları",
+      "D": "Yerel yönetimler",
+      "E": "Çocuğun birlikte yaşadığı komşuları"
+    },
+    "dogru": "C",
+    "aciklama": "Kanun bildirim yükümlüsü olanları tek tek sayar: adlî ve idarî merciler, kolluk görevlileri, sağlık ve eğitim kuruluşları ile SİVİL TOPLUM KURULUŞLARI. Sayım kapalıdır; genişletici bir kayıt taşımaz. Yükümlülüğün muhatapları görüldüğü gibi kurumsal aktörlerdir. Buna karşılık çocuğun kendisi ile çocuğun bakımından sorumlu kimseler bakımından Kanun yükümlülük değil YETKİ tanır: bunlar çocuğun korunma altına alınması amacıyla Kuruma BAŞVURABİLİR. “Bildirmekle yükümlüdür” ile “başvurabilir” aynı şey değildir. Bildirimin ardından Kurumun ödevi de nettir: kendisine bildirilen olaylarla ilgili gerekli araştırmayı DERHÂL yapar.",
+    "dayanak": "5395 sayılı Kanun md 6/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-05",
+    "articleNo": "8",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, koruyucu ve destekleyici tedbir kararlarının uygulanması, kararı veren hâkim veya mahkemece en geç hangi sürelerle incelettirilir?",
+    "siklar": {
+      "A": "On beş günlük",
+      "B": "Bir aylık",
+      "C": "Üçer aylık",
+      "D": "Bir yıllık",
+      "E": "İki yıllık"
+    },
+    "dogru": "C",
+    "aciklama": "Tedbir kararı verilmekle iş bitmez; Kanun kararı veren mercie sürekli bir denetim ödevi yükler ve bunun azami aralığını ÜÇER AY olarak belirler. “En geç” ibaresi önemlidir: daha sık inceleme yapılmasına engel yoktur, geç kalınmasına vardır. İncelemenin sonucuna göre hâkim veya mahkeme; denetim memurları, çocuğun velisi, vasisi, bakım ve gözetimini üstlenen kimseler, tedbiri yerine getiren kişi ve kuruluşun temsilcisi ile Cumhuriyet savcısının talebi üzerine ya da RE’SEN tedbiri kaldırabilir, süresini uzatabilir veya değiştirebilir. Aynı maddenin başında yetki kuralı da vardır: koruyucu ve destekleyici tedbirler, çocuğun menfaatleri bakımından kendisinin, ana, baba, vasisi veya birlikte yaşadığı kimselerin bulunduğu yerdeki çocuk hâkimince alınır. Kanunun içinde başka ödevler için başka aralıklar öngörülmüştür; bu sürelerin hangi ödeve ait olduğunu ayırmadan ezberlemek, bu tip sorularda en sık düşülen hatadır.",
+    "dayanak": "5395 sayılı Kanun md 8/2",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-06",
+    "articleNo": "11",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’nda düzenlenen koruyucu ve destekleyici tedbirler, suça sürüklenen ve ceza sorumluluğu olmayan çocuklar bakımından ne olarak anlaşılır?",
+    "siklar": {
+      "A": "Adlî kontrol tedbiri",
+      "B": "Çocuklara özgü güvenlik tedbiri",
+      "C": "Denetimli serbestlik tedbiri",
+      "D": "Kısa süreli hapis cezasına seçenek yaptırım",
+      "E": "Acil korunma tedbiri"
+    },
+    "dogru": "B",
+    "aciklama": "Kanun tek bir tedbir kataloğu kurar ve bu kataloğu, muhatabına göre farklı bir hukukî elbise giydirir. Danışmanlık, eğitim, bakım, sağlık ve barınma tedbirleri korunma ihtiyacı olan çocuk bakımından koruyucu ve destekleyici tedbirdir; suça sürüklenen ve CEZA SORUMLULUĞU OLMAYAN çocuk bakımından ise aynı tedbirler ÇOCUKLARA ÖZGÜ GÜVENLİK TEDBİRİ olarak anlaşılır. Böylece ceza sorumluluğu bulunmayan çocuk için ayrı bir tedbir listesi yazılmasına gerek kalmamıştır. Bu köprü hüküm, suça sürüklenen çocuğun aynı zamanda akıl hastası olması hâlinde de işler; Türk Ceza Kanununun akıl hastalığına ilişkin ilgili fıkraları kapsamına giren çocuklar hakkında çocuklara özgü güvenlik tedbirleri uygulanır. Ayırt edici ölçüt yaş değil, CEZA SORUMLULUĞUNUN BULUNMAMASIDIR; ceza sorumluluğu olan çocuk hakkında ise bu tedbirler güvenlik tedbiri sıfatıyla değil, kendi adlarıyla uygulanır.",
+    "dayanak": "5395 sayılı Kanun md 11/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "5395-p1-07",
+    "articleNo": "13",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, suça sürüklenen ve ceza sorumluluğu olmayan çocuklarla korunma ihtiyacı olan çocuklar hakkında tedbir kararı verilmesinde izlenecek usûl aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Cumhuriyet savcısının yazılı görüşü alınmak şartıyla duruşma yapılmaksızın karar verilir.",
+      "B": "Duruşma yapılması zorunludur; ancak çocuğun yararı gerektiriyorsa duruşma kapalı yapılır.",
+      "C": "Duruşma yapılmaksızın karar verilir; bu karar için çocuğun görüşünün alınması hiçbir hâlde mümkün değildir.",
+      "D": "Duruşma yapılmaksızın karar verilir; hâkim zaruret gördüğü hâllerde duruşma yapabilir.",
+      "E": "Sosyal inceleme raporu düzenlenmiş ise duruşma yapılır, düzenlenmemiş ise dosya üzerinden karar verilir."
+    },
+    "dogru": "D",
+    "aciklama": "Tedbir kararı bir ceza yargılaması değildir; Kanun bu nedenle asıl usûlü DURUŞMASIZ olarak kurmuş, duruşmayı hâkimin ZARURET GÖRDÜĞÜ hâllere bırakmıştır. Kural ile istisnanın yönü sınavda sıkça ters çevrilir: duruşma kural değil, istisnadır. Duruşmasız karar vermek dosyanın sessizce kapatılması anlamına da gelmez; kararın verilmesinden ÖNCE yeterli idrak gücüne sahip olan çocuğun GÖRÜŞÜ ALINIR, ilgililer dinlenebilir ve çocuk hakkında sosyal inceleme raporu düzenlenmesi istenebilir. Yani çocuğun görüşünün alınması bağlayıcı bir ödevdir, hâkimin takdirine bırakılmış değildir. Bu duruşmasız usûlün tek istisnası, mahkemenin korunma ihtiyacı olan çocuk hakkında Türk Medenî Kanunu hükümlerine göre velayet, vesayet, kayyım, nafaka ve kişisel ilişki konularında karar verdiği hâldir; orada iş medenî yargılama alanına taştığı için usûl de değişir.",
+    "dayanak": "5395 sayılı Kanun md 13/1-2",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-08",
+    "articleNo": "14",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu hükümlerine göre çocuk hâkimi tarafından alınan tedbir kararlarına karşı itiraz nereye yapılır?",
+    "siklar": {
+      "A": "Kararı veren çocuk hâkimine",
+      "B": "En yakın çocuk mahkemesine",
+      "C": "O yerdeki çocuk ağır ceza mahkemesine",
+      "D": "Kararın verildiği yer aile mahkemesine",
+      "E": "Bölge adliye mahkemesinin ilgili ceza dairesine"
+    },
+    "dogru": "B",
+    "aciklama": "Tedbir kararları kesin değildir; Kanun bunlara karşı İTİRAZ yolunu açık tutar. İtirazın usûlü Ceza Muhakemesi Kanununun itiraza ilişkin hükümlerine tâbidir, ancak mercii bu Kanunda özel olarak gösterilmiştir: EN YAKIN ÇOCUK MAHKEMESİ. Buradaki ölçüt coğrafîdir, hiyerarşik değil — itiraz üst dereceli bir mahkemeye değil, aynı düzeydeki en yakın çocuk mahkemesine yapılır. Aday genellikle genel ceza muhakemesindeki alışkanlıkla itirazı bir üst mercie taşımaya çalışır ve şıklardan birine kanar. Kanun yolunun konusu da dikkatle okunmalıdır: hüküm, ÇOCUK HÂKİMİ tarafından alınan TEDBİR KARARLARINI hedef alır; mahkemelerin esasa ilişkin hükümleri bu hükmün kapsamında değildir, onlar için genel kanun yolu rejimi işler.",
+    "dayanak": "5395 sayılı Kanun md 14/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-09",
+    "articleNo": "15",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, suça sürüklenen çocuk hakkındaki soruşturma kim tarafından yapılır?",
+    "siklar": {
+      "A": "Adli destek ve mağdur hizmetleri müdürlüğünce görevlendirilen uzman tarafından",
+      "B": "Kolluğun çocuk birimi amiri tarafından savcı adına",
+      "C": "Cumhuriyet başsavcısı tarafından bizzat",
+      "D": "Çocuk hâkimi tarafından bizzat",
+      "E": "Çocuk bürosunda görevli Cumhuriyet savcısı tarafından bizzat"
+    },
+    "dogru": "E",
+    "aciklama": "Suça sürüklenen çocuğun soruşturması hem uzmanlaşmış bir mercie hem de şahsî bir yürütme ödevine bağlanmıştır: soruşturmayı ÇOCUK BÜROSUNDA GÖREVLİ Cumhuriyet savcısı BİZZAT yapar. “Bizzat” kaydı, soruşturmanın bir bütün olarak başkasına gördürülmesini engeller; savcının kolluktan yardım istemesi elbette mümkündür. Aynı maddede iki tamamlayıcı kural vardır: çocuğun ifadesinin alınması veya diğer işlemler sırasında yanında sosyal çalışma görevlisi bulundurulabilir; ve savcı gerekli görürse koruyucu ve destekleyici tedbirlerin uygulanmasını ÇOCUK HÂKİMİNDEN isteyebilir. Yani savcı soruşturmayı yürütür, tedbire kendisi karar vermez.",
+    "dayanak": "5395 sayılı Kanun md 15/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-10",
+    "articleNo": "16",
+    "kok": "Bir ilçede kolluğun çocuk birimi kurulmamıştır. Bu ilçede işlenen bir suç nedeniyle bir çocuk gözaltına alınmıştır. 5395 sayılı Çocuk Koruma Kanunu’na göre bu çocuk nerede tutulur?",
+    "siklar": {
+      "A": "En yakın ildeki kolluğun çocuk birimine derhâl sevk edilerek orada tutulur.",
+      "B": "Adli destek ve mağdur hizmetleri müdürlüğünce belirlenen mekânda tutulur.",
+      "C": "Çocuk hâkimince karar verilinceye kadar Cumhuriyet başsavcılığında muhafaza edilir.",
+      "D": "Yanında sosyal çalışma görevlisi bulundurulması şartıyla yetişkinlerle aynı yerde tutulabilir.",
+      "E": "Bulunulan yerde, gözaltına alınan yetişkinlerden ayrı bir yerde tutulur."
+    },
+    "dogru": "E",
+    "aciklama": "Gözaltı bakımından Kanun iki kademeli bir kural kurar. Asıl kural, gözaltına alınan çocukların KOLLUĞUN ÇOCUK BİRİMİNDE tutulmasıdır. Çocuk biriminin BULUNMADIĞI yerlerde ise kural işlevsiz kalmaz, yerini ikinci kademeye bırakır: çocuklar, gözaltına alınan YETİŞKİNLERDEN AYRI bir yerde tutulur. Olayda ayırt edici unsur ilçede çocuk biriminin kurulmamış olmasıdır; bu tespit yapılmadan doğru kademeye geçilemez. Hükmün koruduğu değer açıktır — çocuğun yetişkin şüphelilerle temasının önlenmesi, Kanunun temel ilkeleri arasında yer alan “çocukların yetişkinlerden ayrı tutulması” ilkesinin gözaltı alanındaki somut karşılığıdır. Birimin bulunmaması, çocuğun başka bir ile sevkini ya da gözaltının Kuruma devrini gerektirmez; ayrılık şartına uyulduğu sürece işlem bulunulan yerde tamamlanır.",
+    "dayanak": "5395 sayılı Kanun md 16/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5395-p1-11",
+    "articleNo": "17",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, çocukların yetişkinlerle birlikte suç işlemesi hâli ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Soruşturma ve kovuşturma ayrı yürütülür.",
+      "B": "Çocuklar hakkında gerekli tedbirler uygulanmakla beraber, mahkeme lüzum gördüğü takdirde çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar bekletebilir.",
+      "C": "Davaların birlikte yürütülmesi zorunlu görülürse, genel mahkemelerde yargılamanın her aşamasında birleştirme kararı verilebilir.",
+      "D": "Birleştirme kararı verilebilmesi mahkemelerin uygun bulması şartına bağlıdır.",
+      "E": "Birleştirme kararı verilmesi hâlinde birleştirilen davalar her hâlde çocuk mahkemesinde görülür."
+    },
+    "dogru": "E",
+    "aciklama": "İştirak hâlinde işlenen suçlarda Kanunun asıl tercihi AYRILIKTIR: soruşturma ve kovuşturma ayrı yürütülür, böylece çocuk yetişkin sanıkların yargılamasının içine karışmaz. Ayrılık, çocuğun beklemesi anlamına da gelebilir; çocuk hakkında gerekli tedbirler uygulanmakla beraber mahkeme lüzum görürse çocuk hakkındaki yargılamayı genel mahkemedeki davanın sonucuna kadar bekletebilir. Bu bekletme bir zorunluluk değil, mahkemenin takdirindedir; “lüzum gördüğü takdirde” ibaresi bunu gösterir. Birleştirme ise istisnadır ve üç şarta bağlanmıştır: davaların birlikte yürütülmesinin ZORUNLU görülmesi, birleştirmenin GENEL MAHKEMELERDE ve yargılamanın HER AŞAMASINDA yapılabilmesi, MAHKEMELERİN UYGUN BULMASI. Bu üçüncü şart çoğu zaman gözden kaçar: birleştirme tek bir mahkemenin kararıyla değil, mahkemelerin uygun bulmasıyla mümkündür. Yanlış olan seçenek birleştirmenin SONUCUNA ilişkindir: birleştirilen davalar çocuk mahkemesinde değil, GENEL MAHKEMELERDE görülür. Bu sonuç, çocuklar hakkında açılan kamu davalarının bu Kanunla kurulan mahkemelerde görülmesi yolundaki genel kuralın açıkça saklı tuttuğu istisnadır; yani genel kural ile istisna aynı Kanunun içinde birbirine bağlanmıştır.",
+    "dayanak": "5395 sayılı Kanun md 17/3",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-12",
+    "articleNo": "18",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, çocuğun nakli sırasında zincir ve kelepçe kullanılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Suça sürüklenen çocuklara zincir ve kelepçe takılabilir, korunma ihtiyacı olan çocuklara takılamaz.",
+      "B": "Çocuklara ancak çocuk hâkiminin yazılı izniyle zincir ve kelepçe takılabilir.",
+      "C": "On beş yaşını doldurmuş çocuklara zincir ve kelepçe takılabilir.",
+      "D": "Çocuklara zincir, kelepçe ve benzeri aletler takılamaz; zorunlu hâllerde kolluk tarafından gerekli önlem alınabilir.",
+      "E": "Çocuklara zincir ve kelepçe takılabilmesi Cumhuriyet savcısının sözlü emrine bağlıdır."
+    },
+    "dogru": "D",
+    "aciklama": "Çocuğun nakli, Kanunun kolluğa doğrudan hitap ettiği en kesin hükümlerinden biridir: çocuklara zincir, kelepçe ve BENZERİ aletler TAKILAMAZ. Yasak alete göre değil, ete kemiğe bağlayıcı her araca göre kurulmuştur; “benzeri aletler” ibaresi listeyi açık tutar. Yasağın karşılığında Kanun kolluğu çaresiz de bırakmaz: ZORUNLU HÂLLERDE, çocuğun kaçmasını ya da kendisinin veya başkalarının hayat veya beden bütünlükleri bakımından doğabilecek tehlikeleri önlemek için kolluk tarafından gerekli önlem alınabilir. Dikkat edilmesi gereken, bu kaydın yasağa bir istisna getirmemesidir; kolluğa tanınan şey kelepçe yetkisi değil, orantılı başka önlemler alma yetkisidir. Yasak yaşa, çocuğun suça sürüklenmiş olup olmamasına veya bir merciin iznine de bağlanmamıştır; Kanun bu ayrımların hiçbirini yapmaz.",
+    "dayanak": "5395 sayılı Kanun md 18/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-13",
+    "articleNo": "19",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, çocuğa yüklenen suçtan dolayı kamu davasının açılmasının ertelenmesi kararı verilmesi hâlinde erteleme süresi kaç yıldır?",
+    "siklar": {
+      "A": "Bir",
+      "B": "İki",
+      "C": "Üç",
+      "D": "Beş",
+      "E": "Yedi"
+    },
+    "dogru": "C",
+    "aciklama": "Kamu davasının açılmasının ertelenmesinin ŞARTLARI bu Kanunda ayrıca sayılmamıştır; Ceza Muhakemesi Kanunundaki koşullar aranır. Bu Kanunun yaptığı tek şey, çocuklar bakımından SÜREYİ farklılaştırmaktır: erteleme süresi ÜÇ YILDIR. Yetişkinler için öngörülen süreyi hatırlayıp onu çocuğa uygulamak, bu maddede en sık yapılan hatadır — hüküm zaten yalnızca bu farkı yaratmak için yazılmıştır. Aynı maddenin sonradan eklenen ikinci fıkrası ise ölçütü değil, uygulanacak hapis cezası üst sınırını belirli bir yaş grubu için değiştirir; yani madde içinde iki ayrı sayısal ayarlama vardır ve bunların biri SÜREYE, öteki CEZA ÜST SINIRINA ilişkindir. Hükmün açıklanmasının geri bırakılmasında da çocuklar için üç yıllık bir süre öngörülmüştür; bu iki kurumun süreleri aynı olduğu için karıştırılmaları sonucu değiştirmez, ancak kurumların birbirinden ayrı olduğu unutulmamalıdır: biri kovuşturma öncesine, öteki yargılama sonrasına aittir.",
+    "dayanak": "5395 sayılı Kanun md 19/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-14",
+    "articleNo": "20",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’nun adlî kontrole ilişkin maddesinde, Ceza Muhakemesi Kanununda sayılanlara ek olarak açıkça sayılan tedbirler arasında aşağıdakilerden hangisi yer almaz?",
+    "siklar": {
+      "A": "Belirlenen çevre sınırları dışına çıkmamak",
+      "B": "Belirlenen bazı yerlere gidememek",
+      "C": "Belirlenen kişi ve kuruluşlarla ilişki kurmamak",
+      "D": "Ancak bazı yerlere gidebilmek",
+      "E": "Yurt dışına çıkamamak"
+    },
+    "dogru": "E",
+    "aciklama": "Adlî kontrol bakımından bu Kanun bağımsız bir katalog kurmaz; Ceza Muhakemesi Kanununun adlî kontrole ilişkin maddesinde sayılanlara EK OLARAK üç tedbir daha sayar: belirlenen çevre sınırları dışına çıkmamak; belirlenen bazı yerlere gidememek veya ancak bazı yerlere gidebilmek; belirlenen kişi ve kuruluşlarla ilişki kurmamak. Sorunun ayırt edici kaydı “bu Kanunda AÇIKÇA SAYILAN” ibaresidir. Yurt dışına çıkamamak gerçekten de suça sürüklenen çocuğa uygulanabilecek bir adlî kontrol tedbiridir, ancak kaynağı bu Kanunun sayımı değil, atıf yapılan genel hükümdür. Çocuklara özgü bu üç tedbirin ortak mantığı MEKÂN VE ÇEVRE denetimidir: çocuğu suça sürükleyen ortamdan uzaklaştırmayı hedefler, malî veya güvenceye dayalı yükümlülük getirmez. Ayrıca denetimli serbestlik müdürlüğünce takip edilen çocuk için adlî kontrol süresince rehberlik edecek bir uzman görevlendirilir ve ihtiyaç değerlendirmesine göre iyileştirme çalışmaları yürütülür.",
+    "dayanak": "5395 sayılı Kanun md 20/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-15",
+    "articleNo": "20",
+    "kok": "On altı yaşındaki suça sürüklenen bir çocuk hakkında soruşturma evresinde “belirlenen çevre sınırları dışına çıkmamak” şeklinde adlî kontrol tedbirine karar verilmiş, çocuk bu tedbire tekrar tekrar uymamıştır. 5395 sayılı Çocuk Koruma Kanunu’na göre bu durumda ne yapılabilir?",
+    "siklar": {
+      "A": "Adlî kontrol tedbiri kendiliğinden kalkar ve çocuk hakkında eğitim tedbirine karar verilir.",
+      "B": "Tedbirlere uyulmaması sebebiyle çocuk hakkında tutuklama kararı verilebilir.",
+      "C": "Çocuk hakkında acil korunma kararı alınması için çocuk hâkimine başvurulur.",
+      "D": "Çocuğun denetim altına alınmasına karar verilerek adlî kontrol sona erdirilir.",
+      "E": "Soruşturma durdurulur ve dosya sosyal inceleme sonuçlanıncaya kadar bekletilir."
+    },
+    "dogru": "B",
+    "aciklama": "Kanun, suça sürüklenen çocuk bakımından adlî kontrolü tutuklamanın önüne geçen bir basamak olarak kurgular; bu, özgürlüğü kısıtlayıcı tedbirlere en son çare olarak başvurulması ilkesinin doğrudan uygulamasıdır. Ancak basamak sonsuz değildir: bu tedbirlerden SONUÇ ALINAMAMASI, sonuç alınamayacağının anlaşılması VEYA TEDBİRLERE UYULMAMASI durumunda tutuklama kararı verilebilir. Olayda ayırt edici unsur, çocuğun tedbire tekrar tekrar uymamış olmasıdır; tek başına suçun ağırlığı ya da soruşturmanın seyri bu sonucu doğurmaz. Kanun, daha küçük yaş grubundaki çocuklar için cezanın üst sınırına bağlı ayrı bir tutuklama YASAĞI da öngörür; olaydaki çocuk o yaş grubunun dışında kaldığından bu yasak burada uygulanmaz.",
+    "dayanak": "5395 sayılı Kanun md 20/2",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "5395-p1-16",
+    "articleNo": "31",
+    "kok": "Çocuklarla ilgili kolluk görevi, - - - - kolluğun çocuk birimleri tarafından yerine getirilir. 5395 sayılı Çocuk Koruma Kanunu’na göre, bu hükümde boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?",
+    "siklar": {
+      "A": "öncelikle",
+      "B": "yalnızca",
+      "C": "istisnaen",
+      "D": "Cumhuriyet savcısının talebi hâlinde",
+      "E": "çocuk hâkiminin görevlendirmesiyle"
+    },
+    "dogru": "A",
+    "aciklama": "Hüküm bir uzmanlık önceliği kurar, bir tekel değil: çocuklarla ilgili kolluk görevi ÖNCELİKLE kolluğun çocuk birimleri tarafından yerine getirilir. “Öncelikle” ile “yalnızca” arasındaki fark bu maddede sonuç doğurur — çocuk birimi bulunmayan yerlerde genel kolluğun görev yapması Kanuna aykırılık oluşturmaz, birimin varlığı hâlinde ise görev ona aittir. Görevin doğması bir merciin talebine de bağlanmamıştır; birim, korunma ihtiyacı olan veya suça sürüklenen çocuk hakkında işleme başlandığı anda kendi görev alanına girmiş olur.",
+    "dayanak": "5395 sayılı Kanun md 31/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-17",
+    "articleNo": "31",
+    "kok": "Kolluğun çocuk birimi, suça sürüklenen bir çocuk hakkında işleme başlamıştır. Çocuğun birlikte yaşadığı amcasının çocuğu suça azmettirdiğinden şüphelenilmektedir. 5395 sayılı Çocuk Koruma Kanunu’na göre bildirim bakımından nasıl hareket edilir?",
+    "siklar": {
+      "A": "Şüphelenilen yakına hiçbir bilgi verilmez; bildirim diğer ilgililere yapılır.",
+      "B": "Şüphelenilen yakına da bildirim yapılır, ancak bildirimin içeriği sınırlı tutulur.",
+      "C": "Bildirim, çocuk hâkiminin izni alınmak şartıyla şüphelenilen yakına da yapılır.",
+      "D": "Şüphelenilen yakına bildirim yapılmakla birlikte baroya bildirim yapılmaz.",
+      "E": "Çocuk hakkında işlem tamamlanıncaya kadar hiç kimseye bildirim yapılmaz."
+    },
+    "dogru": "A",
+    "aciklama": "Kolluğun çocuk birimi, korunma ihtiyacı olan veya suça sürüklenen çocuk hakkında işleme başladığında durumu bildirmekle yükümlüdür ve bildirimin muhatapları tek tek gösterilmiştir: çocuğun veli veya vasisi veya çocuğun bakımını üstlenen kimse, BARO ve Sosyal Hizmetler ve Çocuk Esirgeme Kurumu; çocuk resmî bir kurumda kalıyorsa ayrıca kurum temsilcisi. Bildirim ödevinin tek sınırı, çocuğu SUÇA AZMETTİRDİĞİNDEN VEYA İSTİSMAR ETTİĞİNDEN ŞÜPHELENİLEN yakınlardır; bunlara bilgi verilmez. Olayda ayırt edici unsur amcanın azmettirdiğine dair şüphedir; bu şüphe olmasaydı yakın da bildirim muhatabı olurdu. Sınır kişiseldir, bildirim ödevini bütünüyle askıya almaz — şüphelenilen yakına bilgi verilmemesi, baroya ve Kuruma yapılacak bildirimi ortadan kaldırmaz. Bildirim ayrıca bir merciin iznine de bağlı değildir. Çocuğun kollukta bulunduğu sırada yanında yakınlarından birinin bulunmasına imkân sağlanması ise ayrı bir güvencedir.",
+    "dayanak": "5395 sayılı Kanun md 31/2",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "5395-p1-18",
+    "articleNo": "31",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, kolluğun çocuk birimlerindeki personele çocuk hukuku, çocuk suçluluğunun önlenmesi, çocuk gelişimi ve psikolojisi, sosyal hizmet gibi konularda eğitim kim tarafından verilir?",
+    "siklar": {
+      "A": "Adalet Bakanlığı tarafından",
+      "B": "Personelin kendi kurumları tarafından",
+      "C": "Aile ve Sosyal Hizmetler Bakanlığı tarafından",
+      "D": "Türkiye Adalet Akademisi tarafından",
+      "E": "Hâkimler ve Savcılar Yüksek Kurulu tarafından"
+    },
+    "dogru": "B",
+    "aciklama": "Kolluğun çocuk birimlerinde görev yapan personelin uzmanlaşması Kanunun ayrı bir fıkrasına bağlanmıştır ve eğitimin kaynağı bakımından tercih nettir: bu eğitim KENDİ KURUMLARI tarafından verilir. Kanun burada eğitimi dışarıdan bir mercie ihale etmemiş, kolluğun bağlı olduğu idareye kendi personelini yetiştirme ödevi yüklemiştir. Eğitimin konuları da sayılmıştır: çocuk hukuku, çocuk suçluluğunun önlenmesi, çocuk gelişimi ve psikolojisi, sosyal hizmet gibi konular. “Gibi” ibaresi listeyi açık tutar, yani sayılanlar sınırlayıcı değildir. Bu fıkra, birime verilen önceliğin nedenini de açıklar: birim, sadece bir isim değil, eğitimle donatılmış bir uzmanlık yapısı olarak tasarlanmıştır. Kanunun başka bir maddesinde yargı mensupları ve sosyal çalışma görevlileri için ayrı bir eğitim rejimi öngörülmüştür; bu iki rejimi birbirine karıştırmamak gerekir, çünkü muhatapları da eğitimi verecek merci de farklıdır.",
+    "dayanak": "5395 sayılı Kanun md 31/4",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-19",
+    "articleNo": "31",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, bir çocuğun korunma ihtiyacı içinde bulunduğunun tespiti üzerine, hakkında acil korunma kararı almak için beklemenin çocuğun yararına aykırı olacağını gösteren nedenlerin bulunması hâlinde kolluğun çocuk birimi ne yapar?",
+    "siklar": {
+      "A": "Çocuk hakkında koruyucu ve destekleyici tedbir kararı vererek uygulanmak üzere ilgili kuruma gönderir.",
+      "B": "Çocuğu doğrudan çocuk hâkimine sevk ederek tedbir kararı verilmesini talep eder.",
+      "C": "Çocuğu, hakkında karar verilinceye kadar kolluğun çocuk biriminde muhafaza eder.",
+      "D": "Çocuğu velisine teslim eder ve durumu Cumhuriyet başsavcılığına bildirmekle yetinir.",
+      "E": "Durumun gerektirdiği önlemleri alarak çocuğun güvenliğini sağlar ve mümkün olan en kısa sürede Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna teslim eder."
+    },
+    "dogru": "E",
+    "aciklama": "Bu fıkra, kolluğun çocuk birimine karar verme yetkisi değil, ARADAKİ BOŞLUĞU DOLDURMA ödevi verir. Şartı bellidir: çocuğun korunma ihtiyacı içinde bulunduğunun bildirimi ya da tespiti hâlinde, acil korunma kararı almak için BEKLEMENİN çocuğun yararına aykırı olacağını gösteren nedenlerin varlığı. Bu şart gerçekleştiğinde birim, durumun gerektirdiği önlemleri almak suretiyle çocuğun GÜVENLİĞİNİ SAĞLAR ve MÜMKÜN OLAN EN KISA SÜREDE Sosyal Hizmetler ve Çocuk Esirgeme Kurumuna TESLİM EDER. İki unsur birlikte aranır; yalnız güvenliğin sağlanması yeterli değildir, çocuğun elde tutulması hükmün amacına aykırıdır. Kolluğun burada yaptığı iş bir tedbir kararı vermek de değildir — tedbir kararı vermek hâkimin işidir; kolluk yalnızca hâkim kararına kadar geçen sürede çocuğu korumakta ve yetkili kuruma ulaştırmaktadır.",
+    "dayanak": "5395 sayılı Kanun md 31/5",
+    "zorluk": "hard",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-20",
+    "articleNo": "35",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, mahkeme veya çocuk hâkimi tarafından çocuk hakkında sosyal inceleme yaptırılmaması hâlinde ne yapılır?",
+    "siklar": {
+      "A": "Sosyal inceleme yaptırılmama gerekçesi kararda gösterilir.",
+      "B": "Cumhuriyet savcısının yazılı muvafakati alınır.",
+      "C": "Durum, adli destek ve mağdur hizmetleri müdürlüğüne bildirilir.",
+      "D": "Sosyal inceleme, kararın kesinleşmesinden sonra re’sen yaptırılır.",
+      "E": "Çocuğun kanunî temsilcisinin rızası dosyaya eklenir."
+    },
+    "dogru": "A",
+    "aciklama": "Sosyal inceleme bu Kanunda mutlak bir zorunluluk olarak değil, GEREKTİĞİNDE başvurulacak bir araç olarak düzenlenmiştir: mahkemeler, çocuk hâkimleri veya Cumhuriyet savcılarınca gerektiğinde çocuğun bireysel özelliklerini ve sosyal çevresini gösteren inceleme yaptırılır. Takdir yetkisi bulunduğu için Kanun bunun karşılığına bir DENETİM ARACI koymuştur: inceleme yaptırılmaması hâlinde GEREKÇESİ KARARDA GÖSTERİLİR. Böylece takdirin keyfîliğe dönüşmesi engellenir ve kanun yolunda denetlenebilir hâle gelir. Yükümlülüğün muhatabı kararı veren mercidir; başka bir makamın onayı, muvafakati ya da bildirim yapılması aranmaz. Aynı maddede zamanlamaya ilişkin bir esneklik de vardır: derhâl tedbir alınmasını gerektiren durumlarda sosyal inceleme DAHA SONRA da yaptırılabilir — yani aciliyet, incelemeden büsbütün vazgeçmeyi değil, sırayı değiştirmeyi haklı kılar.",
+    "dayanak": "5395 sayılı Kanun md 35/3",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-21",
+    "articleNo": "39",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, çocuğa uygulanacak denetimin yöntemini belirleyen plan, görevlendirmeyi takip eden kaç gün içinde hazırlanır?",
+    "siklar": {
+      "A": "Üç",
+      "B": "Beş",
+      "C": "On",
+      "D": "On beş",
+      "E": "Otuz"
+    },
+    "dogru": "C",
+    "aciklama": "Denetim, çocuk hakkında verilen kararın kâğıt üzerinde kalmamasını sağlayan aşamadır ve Kanun bu aşamayı bir PLANA bağlar. Planı denetim görevlisi tek başına değil, sosyal incelemeyi yapan uzman veya sosyal çalışma görevlisi ile BİRLİKTE hazırlar; süre ise GÖREVLENDİRMEYİ TAKİP EDEN ON GÜNDÜR. Sürenin başlangıcı dikkat ister: sayım tedbir kararının verildiği tarihten değil, denetim görevlisinin GÖREVLENDİRİLMESİNDEN işler. Plan kendiliğinden yürürlüğe girmez; mahkeme veya çocuk hâkimince ONAYLANDIKTAN SONRA derhâl uygulanır. Onay şartı, planın hazırlanmasındaki uzmanlıkla kararın yargısal denetimini bir arada tutar. Kanunun bu bölümünde denetim görevlisinin rapor verme ödevleri için ayrı aralıklar da öngörülmüştür; plan hazırlama süresi ile raporlama aralıklarının aynı şey olmadığına dikkat edilmelidir.",
+    "dayanak": "5395 sayılı Kanun md 39/1",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-22",
+    "articleNo": "41",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, sosyal inceleme raporu ile denetim planı ve raporu hakkında bilgi sahibi olunması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu belgeler yalnızca mahkemeye sunulur; çocuğun avukatı veya yasal temsilcisi örneğini alamaz.",
+      "B": "Çocuk ve avukatı hariç olmak üzere, ilgililerin bu belgeleri incelemesi kısmen veya tamamen yasaklanabilir.",
+      "C": "Çocuğun yararına aykırı olsa dahi belgelerin incelenmesi hiçbir şekilde sınırlandırılamaz.",
+      "D": "Belgelerin içeriği hakkında çocuğa bilgi verilmez, yalnızca yasal temsilcisi bilgilendirilir.",
+      "E": "Belgelerin bir örneği ancak Cumhuriyet savcısının yazılı izniyle avukata verilebilir."
+    },
+    "dogru": "B",
+    "aciklama": "Kanun burada iki yönlü bir denge kurar. Bir yandan bilgiye erişimi tanır: sosyal inceleme raporu ile denetim planı ve raporunun BİRER ÖRNEĞİNİ çocuğun avukatı veya yasal temsilcisi Cumhuriyet savcısından, mahkemeden veya çocuk hâkiminden alabilir; ayrıca ÇOCUĞA raporun içeriği hakkında bilgi verilir. Öte yandan bu erişim mutlak değildir: bu belgeler hakkında bilgi sahibi olmanın ÇOCUĞUN YARARINA AYKIRI olduğu kanaatine varılırsa incelenmesi KISMEN VEYA TAMAMEN yasaklanabilir. Sınırlamanın kapsamı dışında bırakılanlar açıkça gösterilmiştir: ÇOCUK VE AVUKATI. Yani yasaklama, çocuğun savunma hakkını kısmak için değil, çocuğu çevresindeki kişilerden korumak için öngörülmüştür. Belgelerin verilmesi bir merciin ayrıca iznine bağlanmamış, üç merciden herhangi birinden alınabileceği kabul edilmiştir.",
+    "dayanak": "5395 sayılı Kanun md 41/1-2",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "5395-p1-23",
+    "articleNo": "44",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu kapsamına giren görevlerle bağlantılı olarak kamu görevlileri hakkında aşağıdakilerden hangisi uygulanmaz?",
+    "siklar": {
+      "A": "4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümleri",
+      "B": "Ceza Muhakemesi Kanunu hükümleri",
+      "C": "Türk Ceza Kanunu hükümleri",
+      "D": "Türk Medenî Kanunu hükümleri",
+      "E": "Denetimli Serbestlik ve Yardım Merkezleri ile Koruma Kurulları Kanunu hükümleri"
+    },
+    "dogru": "A",
+    "aciklama": "Kanun, kapsamına giren görevlerle bağlantılı olarak kamu görevlileri hakkında 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümlerinin UYGULANMAYACAĞINI açıkça söyler. Sonucu somuttur: bu görevler sebebiyle işlenen fiillerde soruşturma izni alınması gerekmez, soruşturma genel hükümlere göre doğrudan yürütülür. Hükmün gerekçesi Kanunun bütününe yayılan aciliyet fikridir — çocuğun korunmasına ilişkin görevlerde izin usûlünün yaratacağı gecikme kabul edilmemiştir. Bu istisna yalnız izin usûlüne ilişkindir; kamu görevlisinin fiili elbette genel ceza ve muhakeme hükümlerine tâbidir. Kanunun ayrı bir maddesi ise hüküm bulunmayan hâllerde hangi kanunların uygulanacağını gösterir ve orada Ceza Muhakemesi Kanunu, Türk Medenî Kanunu ile ilgili diğer kanunlara yollama yapılır; yani bu Kanun genel mevzuatı dışlamaz, sadece izin usûlünü devre dışı bırakır.",
+    "dayanak": "5395 sayılı Kanun md 44/1",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-24",
+    "articleNo": "Ek 1",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’nun çalıştırma yasağını düzenleyen hükmünde, kesinleşmiş mahkûmiyet kararı bulunması hâlinde yasağa yol açan suçlar arasında aşağıdakilerden hangisi sayılmamıştır?",
+    "siklar": {
+      "A": "İnsan ticareti",
+      "B": "Müstehcenlik",
+      "C": "Yağma",
+      "D": "Reşit olmayanla cinsel ilişki",
+      "E": "Kasten öldürme"
+    },
+    "dogru": "C",
+    "aciklama": "Çalıştırma yasağı, çocukların yoğun olarak bulunduğu yerlerde çalışmayı belirli suçlardan kesinleşmiş mahkûmiyeti bulunanlara kapatır. Sayım kapalıdır ve şu suçlardan oluşur: cinsel saldırı, çocukların cinsel istismarı, reşit olmayanla cinsel ilişki, uyuşturucu veya uyarıcı madde imal ve ticareti, uyuşturucu veya uyarıcı madde kullanılmasını kolaylaştırma, müstehcenlik, fuhuş, insan ticareti ve kasten öldürme. Listenin ortak paydası cinsel dokunulmazlık, madde ve sömürü ile yaşam hakkına yönelik ağır suçlardır; malvarlığına karşı suçlar bu listeye alınmamıştır. YAĞMA ağır bir suç olmakla birlikte sayılanlar arasında değildir ve mahkûmiyeti tek başına bu yasağı doğurmaz. Yasağın kapsamı da geniş tutulmuştur: kişi bu iş yerlerini şahsen işletemeyeceği gibi buralarda çalıştırılamaz ve HERHANGİ BİR SIFATLA fiilen görev alamaz; kayıt, kamu ile özel sektör ve sivil toplum kuruluşlarına ait iş yerlerinin hepsini kapsar.",
+    "dayanak": "5395 sayılı Kanun Ek md 1/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "5395-p1-25",
+    "articleNo": "Ek 1",
+    "kok": "5395 sayılı Çocuk Koruma Kanunu’na göre, çalıştırma yasağına aykırı olarak işçi çalıştıran kişiye ilk aşamada hangi makam tarafından ne miktarda idari para cezası verilir?",
+    "siklar": {
+      "A": "Aile mahkemesi tarafından, iş yeri başına brüt asgari ücretin yedi katı tutarında",
+      "B": "Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin yedi katı tutarında",
+      "C": "Cumhuriyet başsavcılığı tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında",
+      "D": "Mahallîn mülki idare amiri tarafından, aykırı olarak çalıştırdığı her bir kişi başına brüt asgari ücretin üç katı tutarında",
+      "E": "Aile ve Sosyal Hizmetler Bakanlığı il müdürlüğü tarafından, iş yeri başına brüt asgari ücretin üç katı tutarında"
+    },
+    "dogru": "D",
+    "aciklama": "Yaptırım idarîdir ve kademelidir. İlk aşamada ceza, MAHALLÎN MÜLKİ İDARE AMİRİ tarafından, aykırı olarak çalıştırdığı HER BİR KİŞİ BAŞINA brüt asgari ücretin ÜÇ KATI tutarında verilir. Ölçü birimi iş yeri değil, KİŞİDİR; bu ayrım aynı iş yerinde birden çok kişi çalıştırıldığında sonucu doğrudan değiştirir. Cezayı veren merciin idare olması da rastlantı değildir: yaptırım bir ceza mahkûmiyeti değil, kabahat benzeri bir idarî yaptırımdır ve yargı mercilerince değil mülki idare tarafından uygulanır. Aykırılık, cezanın tebliğinden itibaren bir ay içinde giderilmezse ceza her bir kişi başına brüt asgari ücretin YEDİ KATINA çıkar; bu ikinci cezanın tebliğinden itibaren bir ay içinde de aykırılık giderilmemişse ilgili kamu kurum ve kuruluşlarınca verilen izin ve ruhsatlar derhâl iptal edilir. Yani para cezası tek başına nihai yaptırım değil, ruhsat iptaline giden yolun ilk basamağıdır. Aşamayı ayırt etmeden verilen cevap yanlış olur — kök “ilk aşamada” demektedir. Ayrıca yasak kapsamındaki kişilere bu iş yerlerinin açılması veya işletilmesi için baştan izin ve ruhsat verilmez; hâlihazırda işletildiği tespit edilirse devir için süre verilir ve bu sürede kişinin iş yerini fiilen işletmesine izin verilmez.",
+    "dayanak": "5395 sayılı Kanun Ek md 1/4",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  }
+]

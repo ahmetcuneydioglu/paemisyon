@@ -1,0 +1,427 @@
+[
+  {
+    "id": "2918-p1-01",
+    "articleNo": "4",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, aşağıdakilerden hangisi Karayolu Trafik Güvenliği Kurulunun görev ve yetkilerinden biridir?",
+    "siklar": {
+      "A": "Orman yollarında trafik güvenliği tedbirlerini almak ve aldırmak",
+      "B": "Trafik kazalarının azaltılmasına ilişkin önerilerde bulunmak",
+      "C": "Trafik işaretlerinin niteliklerini yönetmelikle göstermek",
+      "D": "Askeri araçların tescillerini yapmak ve plakalarını vermek",
+      "E": "Motorlu araçları belirli zamanlarda muayene ederek denetlemek"
+    },
+    "dogru": "B",
+    "aciklama": "Kurulun görev ve yetkileri dört başlıkla sayılmıştır: trafikle ilgili kuruluşlar arasında koordinasyon sağlanmasına ilişkin önerilerde bulunmak, TRAFİK KAZALARININ AZALTILMASINA İLİŞKİN ÖNERİLERDE BULUNMAK, uygulamada görülen aksaklıkları tespit etmek ve kendi görev alanına giren konularla ilgili yasal düzenlemeden kaynaklanan eksiklikleri belirlemek. Dördü de ÖNERİ, TESPİT ve BELİRLEME niteliğindedir; Kurulun sahada iş gören, belge veren ya da denetim yapan bir yürütme yetkisi yoktur. Sorunun tuzağı buradadır: çeldiricilerin tamamı gerçek ve yürürlükteki hükümlerdir, ancak hepsi başka kuruluşların icrai görevleridir. Orman yollarındaki tedbirler Tarım Orman ve Köyişleri Bakanlığına, trafik işaretlerinin niteliklerini gösteren yönetmelik Bayındırlık Bakanlığına, askeri araçların tescili Türk Silahlı Kuvvetlerine, araç muayenesi ise muayeneye yetkili kuruluşlara aittir. Kurulun adında 'güvenlik' geçmesi, onun trafik güvenliğiyle ilgili her işi yapabileceği izlenimini verir; oysa Kurul bir danışma ve koordinasyon organıdır.",
+    "dayanak": "2918 sayılı Kanun md 4/b",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p1-02",
+    "articleNo": "5",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, aşağıdakilerden hangisi İçişleri Bakanlığının görev ve yetkilerinden biri DEĞİLDİR?",
+    "siklar": {
+      "A": "El koyduğu trafik kazalarında trafik kaza tespit tutanağı düzenlemek",
+      "B": "Araçların tescil işlemlerini yaparak belge ve plakalarını vermek",
+      "C": "Karayolları üzerinde ilk yardım istasyonları kurmak ve bu istasyonlara gerekli personeli, araç ve gereci sağlamak",
+      "D": "Duran ve akan trafiği düzenlemek ve yönetmek",
+      "E": "Ülke çapında taşıtların ve sürücülerin sicillerini tutmak, bunlara ilişkin teknik ve hukuki değişiklikleri işlemek"
+    },
+    "dogru": "C",
+    "aciklama": "Trafik hizmetlerinin sahadaki yürütücüsü İçişleri Bakanlığıdır; Kanun bu Bakanlık için denetim, trafiğin düzenlenmesi ve yönetimi, kaza tespit tutanağı, tescil belge ve plakası verme, sürücü belgesi verme ile taşıt ve sürücü sicillerinin tutulması gibi işleri tek tek saymıştır. İlk yardım istasyonlarının kurulması ve bu istasyonlara personel, araç ve gereç sağlanması ise SAĞLIK BAKANLIĞININ görevidir. Karıştırma şuradan doğar: bu istasyonlar karayolu üzerine kurulur ve kazaya ilk müdahale çoğu zaman trafik ekibiyle birlikte yapılır, bu da hizmeti kolluk görevi gibi gösterir. Ayrıca İçişleri Bakanlığının görevleri arasında 'trafik kazası neticesinde hastalanan veya yaralananların bakımlarını sağlayacak tedbirlerin süratle alınmasına YARDIMCI OLMAK' vardır; yardımcı olmak ile hizmeti kurup işletmek aynı şey değildir. Bakanlığın buradaki rolü destekleyicidir, kurucu değil.",
+    "dayanak": "2918 sayılı Kanun md 5",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p1-03",
+    "articleNo": "6",
+    "kok": "Kavşakta trafiği yöneten bir trafik polisi, yol kenarındaki iş yerinde gerçekleşen kapkaç olayına tanık olur ve kaçmakta olan şüpheliyi yakalar. 2918 sayılı Karayolları Trafik Kanunu'na göre bu müdahale bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Trafik zabıtası, trafik suçları dışındaki suçlarda olay yerini ve şüpheliyi genel zabıtaya bildirmekle yetinir.",
+      "B": "Trafik zabıtasının genel zabıta görevi yapabilmesi, önceden verilmiş yazılı bir görevlendirmeye bağlıdır.",
+      "C": "Trafik zabıtası, ancak otoyol sorumluluk sahasında genel zabıta görevi yapabilir.",
+      "D": "Trafik zabıtası, görevi sırasında karşılaştığı acil ve zorunlu hâllerde genel zabıta görevi yapabilir.",
+      "E": "Trafik zabıtasının bu yetkiyi kullanması, olayın kendi sorumluluk sahasında gerçekleşmesine bağlıdır."
+    },
+    "dogru": "D",
+    "aciklama": "Trafik zabıtasına, görevi sırasında karşılaştığı ACİL VE ZORUNLU HÂLLERDE genel zabıta görevi yapma yetkisi doğrudan Kanunla tanınmıştır. Yetkinin kaynağı kanunun kendisidir; ayrıca bir görevlendirme, onay ya da karar aranmaz. Senaryodaki iki unsur bu yüzden önemlidir: memur GÖREVİ SIRASINDADIR ve olay kaçmakta olan şüpheli bakımından ACİL bir müdahale gerektirmektedir. Bu iki unsurdan biri yoksa hüküm devreye girmez. Tuzak, trafik zabıtasının uzmanlaşmış bir birim olmasından beslenir: aday, uzmanlaşmayı yetki daralması sanıp memuru trafik suçlarıyla sınırlı görür. Oysa Kanun tersini söyler; trafik zabıtası genel zabıta görevi yapmakla DA yetkilidir. Bu yetki, trafik zabıtasının genel zabıta hizmetlerinde çalıştırılmasını düzenleyen ayrı bir kuraldan farklıdır ve onunla karıştırılmamalıdır.",
+    "dayanak": "2918 sayılı Kanun md 6/a",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-04",
+    "articleNo": "6",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, trafik zabıtasının mülki idare amirlerince genel zabıta görevinde çalıştırılması ile araç, gereç ve özel teçhizatının kullanılmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Trafik zabıtasının araç, gereç ve özel teçhizatı, mülki idare amirinin onayıyla trafik hizmetleri dışında da kullanılabilir.",
+      "B": "Trafik zabıtasına genel zabıta görevi verilmesi, il trafik komisyonunun kararı ile mümkündür.",
+      "C": "Trafik zabıtasına genel zabıta görevi, yalnızca emniyet ve asayiş bakımından zorunlu görülen hâllerde verilebilir.",
+      "D": "Trafik zabıtasının özel teçhizatı, asayiş hizmetlerinde kullanılmak üzere genel zabıtaya devredilebilir.",
+      "E": "Trafik zabıtasına genel zabıta görevi verilmesi, o yerde trafik hizmetlerinin durdurulmasını gerektirir."
+    },
+    "dogru": "C",
+    "aciklama": "Hüküm bir yasak kuralı olarak kurulmuştur: mülki idare amirlerince, EMNİYET VE ASAYİŞ BAKIMINDAN ZORUNLU GÖRÜLEN HÂLLER DIŞINDA trafik zabıtasına genel zabıta görevi verilemez; araç, gereç ve özel teçhizatı da trafik hizmetleri dışında kullanılamaz. Yasak asıl, görevlendirme istisnadır. Her iki yasak da bu tek istisnaya bağlıdır. A şıkkı, kanunun aradığı emniyet ve asayiş zorunluluğunu tek başına mülki idare amirinin onayına indirdiği için yanlıştır. Hükmün amacı, trafik personelinin ve trafik için tahsis edilmiş kaynağın asıl hizmetten koparılmasını önlemektir; bu yüzden mülki idare amirinin takdiri kanunla daraltılmıştır. Görevlendirme kararı mülki idare amirine aittir; il trafik komisyonunun bu konuda bir yetkisi yoktur.",
+    "dayanak": "2918 sayılı Kanun md 6/a",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-05",
+    "articleNo": "6",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, otoyollardan sorumlu birimlerde görevli trafik zabıtasının sorumluluk sahası ile sınırlı olmak üzere genel zabıta olarak da görevlendirilebilmesi kimin uygun görmesine bağlıdır?",
+    "siklar": {
+      "A": "Valinin",
+      "B": "Emniyet Genel Müdürünün",
+      "C": "Karayolları Genel Müdürünün",
+      "D": "İl trafik komisyonunun",
+      "E": "İçişleri Bakanının"
+    },
+    "dogru": "E",
+    "aciklama": "Otoyollardan sorumlu birimlerde görevli trafik zabıtası, SORUMLULUK SAHASI İLE SINIRLI OLMAK ÜZERE ve İÇİŞLERİ BAKANININ UYGUN GÖRMESİ hâlinde genel zabıta olarak da görevlendirilebilir. Hükmün iki sınırı vardır: yer bakımından sorumluluk sahası, makam bakımından bakanın kendisi. Çeldiricilerin hepsi bu Kanunda gerçekten yetkili kılınmış makamlardır; tescil işlemlerinde yetkili Emniyet Genel Müdürlüğü ile özel yüklerin taşınmasında izin veren Karayolları Genel Müdürlüğü adayın zihninde hazır duran adaylardır. Aday burada iki hatadan birine düşer: görevlendirmeyi taşra makamına indirir ya da Emniyet teşkilatının kendi iç amirine bağlar. Kanun ise yetkiyi merkezde ve bakan düzeyinde tutmuştur; bu uygun görme olmadan otoyol trafik zabıtası genel zabıta olarak görevlendirilemez.",
+    "dayanak": "2918 sayılı Kanun md 6/a",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-06",
+    "articleNo": "6",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, genel zabıtanın trafiği düzenlemeye ve trafik suçlarına el koymaya görevli ve yetkili olabilmesi için aranan şart aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Trafik zabıtasının bulunmadığı veya yeterli olmadığı yerlerde bulunulması",
+      "B": "Görevlilerin trafik eğitimi almış subay, astsubay veya uzman jandarma olması",
+      "C": "Karayolunun yapım ve bakımından sorumlu kuruluşun talepte bulunması",
+      "D": "Trafik hizmetlerinin belediye sınırları dışında yürütülüyor olması",
+      "E": "Karayolu Trafik Güvenliği Kurulunca bu yönde karar alınmış olması"
+    },
+    "dogru": "A",
+    "aciklama": "Genel zabıtanın trafik hizmetlerini yürütme yetkisi TAMAMLAYICIDIR: trafik zabıtasının BULUNMADIĞI VEYA YETERLİ OLMADIĞI yerlerde, sorumluluk bölgesine göre ve ilgili mevzuatta belirtilen esas ve usullere uygun olarak trafiği düzenlemeye ve trafik suçlarına el koymaya görevli ve yetkilidir. Şart iki seçenekli olarak kurulmuştur; trafik zabıtasının hiç bulunmaması aranmaz, var olup yetersiz kalması da yeter. Adayın en sık yaptığı yanlış, yetkiyi tek başına 'trafik zabıtasının bulunmaması' hâline bağlamak ve yetersizlik hâlini gözden kaçırmaktır. (B) şıkkı ise bilinçli bir tuzaktır: bentte daha önce görevlilerin niteliğini sayan bir metin yer alıyordu, bu ibare mevzuat değişikliğiyle metinden çıkarılmıştır. Yürürlükten kalkmış lafza dayanan çeldiriciler, eski kaynaklardan çalışan adayı yakalar.",
+    "dayanak": "2918 sayılı Kanun md 6/b",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-07",
+    "articleNo": "7",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, Karayolları Genel Müdürlüğünün yapım ve bakımından sorumlu olduğu karayollarında yönetmelikte belirlenen hız sınırlarının üstünde veya altında hız sınırı belirleyip işaretleyebilmesi için aşağıdakilerden hangisi gereklidir?",
+    "siklar": {
+      "A": "İl trafik komisyonunun kararı",
+      "B": "Ulaştırma ve Altyapı Bakanlığının izni",
+      "C": "İçişleri Bakanlığının uygun görüşünün alınması",
+      "D": "Karayolu Trafik Güvenliği Kurulunun önerisi",
+      "E": "Valiliğin onayı"
+    },
+    "dogru": "C",
+    "aciklama": "Yetki Karayolları Genel Müdürlüğüne aittir, ancak tek başına kullanılamaz: yapım ve bakımından sorumlu olduğu karayollarında yönetmelikteki hız sınırlarının üstünde veya altında sınır belirleyip işaretlemek için İÇİŞLERİ BAKANLIĞININ UYGUN GÖRÜŞÜ alınmak zorundadır. Hükmün mantığı açıktır: yolun teknik özelliğini bilen kuruluş ile hız denetimini fiilen yapacak olan kolluğun bağlı bulunduğu bakanlık aynı kararda buluşturulmuştur. İki noktada hata yapılır. Birincisi, yetkinin bütün karayolları için tanındığını sanmaktır; oysa yetki YALNIZCA Genel Müdürlüğün yapım ve bakımından sorumlu olduğu yollarla sınırlıdır. İkincisi, hız sınırı yerel bir konu göründüğü için kararı taşra makamlarına bağlamaktır; kanun burada merkezî bir görüş şartı aramıştır ve valiliğin ya da il trafik komisyonunun onayından söz etmez.",
+    "dayanak": "2918 sayılı Kanun md 7/e",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-08",
+    "articleNo": "7",
+    "kok": "Bir karayolu denetiminde, Karayolları Genel Müdürlüğü görevlileri 2918 sayılı Kanun'un 47 nci maddesinin (b), (c) ve (d) bentlerinde belirtilen kural ihlallerinden birini tespit etmiştir. Aynı Kanun'a göre bu görevliler ne yapar?",
+    "siklar": {
+      "A": "İhlali il trafik komisyonuna bildirir ve komisyonun kararını bekler.",
+      "B": "Durumu bir tutanakla belirler ve en yakın trafik kuruluşuna teslim eder.",
+      "C": "Doğrudan trafik idari para cezası karar tutanağı düzenleyerek işlemi tamamlar.",
+      "D": "Sürücünün belgesini geri alarak belgeyi valiliğe gönderir.",
+      "E": "Aracı trafikten men eder ve en yakın muayene istasyonuna sevk eder."
+    },
+    "dogru": "B",
+    "aciklama": "Karayolları Genel Müdürlüğüne bu maddede iki farklı yetki tanınmıştır ve soru ikisinin sınırını ölçer. Sayılan bazı maddelere aykırı hareket edenler hakkında Genel Müdürlük doğrudan SUÇ VEYA CEZA TUTANAĞI düzenleyebilir. Buna karşılık 47 nci maddenin (b), (c) ve (d) bentlerindeki kural ihlallerinde yetkisi daha dardır: durumu yalnızca BİR TUTANAKLA BELİRLER ve gerekli işlemin yapılması için EN YAKIN TRAFİK KURULUŞUNA TESLİM eder. Yani burada tespit Genel Müdürlükte, işlem kolluktadır. Bütün bu yetkiler, maddede açıkça belirtildiği üzere TRAFİK ZABITASININ GÖREV VE YETKİLERİ SAKLI KALMAK ÜZERE tanınmıştır; Genel Müdürlüğün denetimi kolluğun yetkisini ortadan kaldırmaz. Adayın hatası, aynı maddede yer alan iki yetkiyi tek bir yetkiymiş gibi okuyup her ihlalde doğrudan ceza yazılabileceğini düşünmektir.",
+    "dayanak": "2918 sayılı Kanun md 7/j",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-09",
+    "articleNo": "8",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre Sağlık Bakanlığı, trafik kazalarında yaralanıp sağlık kuruluşlarına sevk edilenlerden kazanın sebep ve tesiriyle otuz gün içinde ölenlerin kayıtlarını tutar. Bu kayıtlar hangi kuruma ve hangi süre içinde bildirilir?",
+    "siklar": {
+      "A": "İçişleri Bakanlığına, on beş gün içinde",
+      "B": "Karayolları Genel Müdürlüğüne, takip eden ayın sonuna kadar",
+      "C": "İl trafik komisyonuna, otuz gün içinde",
+      "D": "Emniyet Genel Müdürlüğüne, takip eden ayın sonuna kadar",
+      "E": "Emniyet Genel Müdürlüğüne, üç ay içinde"
+    },
+    "dogru": "D",
+    "aciklama": "Hüküm üç unsuru birlikte taşır: ölümün kazanın sebep ve tesiriyle OTUZ GÜN İÇİNDE gerçekleşmiş olması, kaydın tutulması ve TAKİP EDEN AYIN SONUNA KADAR EMNİYET GENEL MÜDÜRLÜĞÜNE bildirilmesi. Otuz günlük süre bildirim süresi değil, ölümün kaza istatistiğine girip girmeyeceğini belirleyen NİTELEME ÖLÇÜSÜDÜR; bildirim süresi ise gün sayısıyla değil, takip eden ayın sonu denilerek takvimsel olarak belirlenmiştir. Soru bu iki süreyi ayırt edip etmediğinizi ölçer ve çeldiriciler otuz günü bildirim süresine kaydırarak kurulmuştur. Bildirimin Emniyet Genel Müdürlüğüne yapılması da tesadüf değildir: trafik kazası istatistiklerinin toplandığı ve değerlendirildiği yer trafik teşkilatıdır, hastanede sonradan gerçekleşen ölümler ise kaza yerinde tutulan tutanağa yansımaz. Bu bildirim, kaza kayıtlarının gerçek ölüm sayısıyla eşleşmesini sağlar.",
+    "dayanak": "2918 sayılı Kanun md 8/b",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-10",
+    "articleNo": "8",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, okul öncesi, okul içi ve okul dışı trafik eğitimini düzenleyen trafik genel eğitim planını hazırlamak ve ilgili kuruluşlarla iş birliği yaparak uygulamak hangi kurumun görevidir?",
+    "siklar": {
+      "A": "Millî Eğitim Bakanlığının",
+      "B": "İçişleri Bakanlığının",
+      "C": "Karayolları Genel Müdürlüğünün",
+      "D": "Belediyelerin",
+      "E": "İl ve ilçe trafik komisyonlarının"
+    },
+    "dogru": "A",
+    "aciklama": "Trafik eğitiminin üç halkası -okul öncesi, okul içi ve okul dışı- tek bir plan altında toplanmış, bu planın hazırlanması ile ilgili kuruluşlarla iş birliği yapılarak uygulanması MİLLÎ EĞİTİM BAKANLIĞINA verilmiştir. Bakanlığın bu maddedeki diğer görevleri de aynı eksende toplanır: sürücü kursu açmak, özel sürücü kursu açılmasına izin vermek ve bunları her safhada denetlemek. Planın adındaki 'genel' ibaresi, eğitimin yalnız sürücü adaylarını değil, henüz okula başlamamış çocuklardan okul dışındaki yetişkinlere kadar toplumun tamamını kapsamasını anlatır. Adayı yanıltan varsayım, trafik güvenliğiyle ilgili her görevin kolluğun bağlı olduğu bakanlıkta toplandığıdır; Kanunun kurduğu düzen ise iş bölümüne dayanır.",
+    "dayanak": "2918 sayılı Kanun md 8/a",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-11",
+    "articleNo": "5",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, araçlar üzerindeki haciz, rehin, ihtiyati tedbir ve belge iptali gibi kısıtlayıcı şerhlerin elektronik ortamda tutulan siciller üzerine işlenmesi ve kaldırılması işlemleri kimler tarafından elektronik sistemle yapılabilir?",
+    "siklar": {
+      "A": "Aracın kayıtlı olduğu ildeki ilgili trafik tescil kuruluşu",
+      "B": "Aracın kayıtlı olduğu ilin valiliği ile ildeki emniyet müdürlüğü",
+      "C": "Satış ve devir işlemini yapan noterler ile ilgili tescil büroları",
+      "D": "Emniyet Genel Müdürlüğü ile bağlı trafik tescil kuruluşları",
+      "E": "Şerhe karar veren yargı ve icra birimleri ile kamu kuruluşları"
+    },
+    "dogru": "E",
+    "aciklama": "Araçlar üzerindeki teknik veya hukuki değişikliklerin, sürücülere ait bilgilerdeki değişikliklerin ve haciz, rehin, ihtiyati tedbir, belge iptali gibi kısıtlayıcı şerhlerin elektronik sicile işlenmesi ve kaldırılması, KARARI VEREN MERCİİN KENDİSİ tarafından elektronik sistemle yapılabilir. Yani icra dairesi haczi, mahkeme ihtiyati tedbiri kendi sistemi üzerinden doğrudan sicile düşürebilir; şerhin tescil kuruluşuna yazıyla bildirilip orada elle işlenmesi beklenmez. Hükmün amacı, aracın hukuki durumunu gösteren kaydın gecikmesiz ve aracısız güncellenmesidir; sahadaki sorgulamada görülen kaydın gerçeği yansıtması buna bağlıdır. Çeldiriciler adayın alışkanlığını hedefler: tescile ilişkin her işlemin trafik tescil kuruluşunda tamamlandığı, noterin ise araçla ilgili her kaydın merkezinde durduğu izlenimi yaygındır. Kanun burada işlemin sahibini kaydı tutan kuruma değil, kararı veren birime bağlamıştır.",
+    "dayanak": "2918 sayılı Kanun md 5",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-12",
+    "articleNo": "10",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, belediye trafik şube müdürlüğü, şefliği veya memurluğunun kurulmasında aşağıdakilerden hangisi esas alınır?",
+    "siklar": {
+      "A": "İl trafik komisyonunun her yıl belirleyeceği kadro ve personel ölçüleri",
+      "B": "Ulaştırma ve Altyapı Bakanlığınca belirlenen kadro cetvelleri",
+      "C": "Hizmet kapasitesine göre İçişleri Bakanlığınca tespit edilecek ölçüler",
+      "D": "Belediye meclisinin kararı ve ardından alınacak valilik onayı",
+      "E": "Karayolları Genel Müdürlüğünün belirleyeceği yol uzunluğu ölçütü"
+    },
+    "dogru": "C",
+    "aciklama": "Her belediye başkanlığı bünyesinde bir trafik birimi kurulması Kanun gereğidir; kurulacak birimin düzeyi ise -müdürlük, şeflik ya da memurluk- belediyenin HİZMET KAPASİTESİNE göre belirlenir. Ölçüyü koyan makam İÇİŞLERİ BAKANLIĞIDIR; belediye kendi büyüklüğüne göre serbestçe karar veremez. Böylece küçük bir ilçe belediyesinde memurluk, büyük bir belediyede müdürlük kurulması sağlanırken, ülke genelinde ortak bir ölçü korunur. Adayın yanılgısı, birimin belediyeye ait olmasından hareketle kuruluş kararının da tümüyle belediyeye bırakıldığını düşünmektir. Kanun, belediyeye verilen görevlerin il ve ilçe trafik komisyonları ile mahallî trafik birimleriyle İŞ BİRLİĞİ YAPILARAK yürütülmesini öngörür; kuruluş ölçüsünün merkezden belirlenmesi de bu bütünlüğün parçasıdır.",
+    "dayanak": "2918 sayılı Kanun md 10/a",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-13",
+    "articleNo": "12",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, aşağıdakilerden hangisi il ve ilçe trafik komisyonlarının görev ve yetkilerindendir?",
+    "siklar": {
+      "A": "Trafik suçu işleyenler hakkında tutanak düzenlemek ve gerekli işlemleri takip etmek",
+      "B": "Sürücü adaylarının uygulamalı sınavlarını yapmak ve sertifika verilmesini sağlamak",
+      "C": "Karayolu yapısında yapılacak çalışmalar için ilgililere izin vermek",
+      "D": "Otopark olmaya müsait boş alan, arazi ve arsaları geçici otopark yeri olarak ilan etmek",
+      "E": "Araçların muayenesini yapan muayene istasyonlarını denetlemek"
+    },
+    "dogru": "D",
+    "aciklama": "Komisyonun görev alanı, il sınırları içindeki MAHALLÎ İHTİYAÇ VE ŞARTLARA göre trafik düzeni ve güvenliğini sağlayacak DÜZENLEYİCİ kararlar almaktır. Geçici otopark yeri ilan etmek ve bu yerlerin sahiplerine ya da üçüncü kişilere işletme izni vermek bu nitelikteki tipik bir yetkidir; komisyon ayrıca belediye sınırları içinde ticari amaçla çalıştırılacak yolcu ve yük taşıtları ile motorsuz taşıtların çalışma şekil ve şartlarını, çalışabilecekleri yerler ile güzergâhlarını tespit eder ve sayılarını belirler. Çeldiricilerin tamamı gerçek görevlerdir, ancak hiçbiri düzenleyici değil İCRAİ niteliktedir ve başka birimlere aittir: tutanak düzenleme ve takip trafik teşkilatına, sürücü adaylarının sınavı ve sertifikası eğitim alanında yetkili kılınan bakanlığa, karayolu yapısındaki çalışmalara izin yolun yapım ve bakımıyla görevli kuruluşa, muayene istasyonlarının denetimi ise ulaştırma alanındaki ilgili birime aittir. Komisyon karar alır; kararı bizzat uygulayan bir kolluk ya da denetim birimi değildir.",
+    "dayanak": "2918 sayılı Kanun md 12/b",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "2918-p1-14",
+    "articleNo": "21",
+    "kok": "Yapılan bir trafik denetiminde, kayıtlarda hurdaya çıkarılmış olduğu görülen bir aracın karayolunda sürüldüğü tespit edilmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu araç hakkında yapılacak işlem aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Araç, hurda kaydı silininceye kadar trafikten menedilir ve sonra sahibine teslim edilir.",
+      "B": "Araç en yakın muayene istasyonuna gönderilir ve muayene sonucuna göre işlem yapılır.",
+      "C": "Araç otuz gün süre ile trafikten menedilir, süre sonunda sahibine iade edilir.",
+      "D": "Araç trafikten menedilir ve tescil kaydı yeniden açılarak sahibi adına tescil edilir.",
+      "E": "Araç trafikten menedilir; mülki amir el koyar ve mülkiyeti kamuya geçer."
+    },
+    "dogru": "E",
+    "aciklama": "Hurdaya çıkarılmış araçların karayolunda sürülmesi Kanunla yasaklanmıştır ve yaptırım üç katmanlıdır: sürücüsüne idari para cezası verilir, araç TRAFİKTEN MENEDİLİR, ayrıca MÜLKİ AMİR TARAFINDAN EL KONULARAK ARACIN MÜLKİYETİ KAMUYA GEÇER. Buradaki ağırlık tesadüfi değildir; hurda kaydı aracın trafik hayatının hukuken sona erdiği anlamına gelir, bu nedenle aracın yeniden yola çıkarılması giderilebilir bir eksiklik değil, kalıcı bir aykırılıktır. Sorunun tuzağı tam bu ayrımdadır: Kanun'daki men işlemlerinin çoğu geçicidir ve eksiklik giderilince araç iade edilir; hurda aracın karayolunda sürülmesinde ise geri dönülecek bir eksiklik yoktur, çünkü kayıt zaten kapatılmıştır. Aday, alışılmış 'eksiklik giderilinceye kadar men' kalıbını buraya taşıdığında mülkiyetin kamuya geçmesi sonucunu gözden kaçırır.",
+    "dayanak": "2918 sayılı Kanun md 21",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-15",
+    "articleNo": "26",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, mevzuatta belirtilen ışıklı ve/veya sesli uyarı işareti veren cihazlarla ilgili olarak aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İl trafik komisyonunun uygun gördüğü araçlara takılabilir.",
+      "B": "Mevzuatta izin verilmeyen araçlara takılması ve kullanılması yasaktır.",
+      "C": "Ticari amaçla çalıştırılan araçlarda kullanılması serbesttir.",
+      "D": "Takılması, araç üzerindeki teknik değişiklik olarak tescil kayıtlarına işletilir.",
+      "E": "Kullanılabilmesi, aracın ayırım işaretleri arasında bu cihazın da sayılmasına bağlıdır."
+    },
+    "dogru": "B",
+    "aciklama": "İzin sistemi burada tersine kurulmuştur: ışıklı ve/veya sesli uyarı işareti veren cihazlar, mevzuatın izin verdiği araçlar dışında hiçbir araca takılamaz ve kullanılamaz. Yasağın kaynağı doğrudan kanundur; bir makamın vereceği izinle ya da aracın ticari niteliğiyle aşılamaz. Gerekçe kolluk açısından açıktır: bu cihazlar sürücülere ve yayalara yol verme talimatı taşıyan bir otorite işaretidir, yetkisiz araçlarda kullanılması hem trafik güvenliğini bozar hem de görevlinin işaretini etkisizleştirir. Cihazın izin verilen araçlarda dahi TAKILACAĞI YERLERİN DIŞINDA bulundurulması ve kullanılması ayrıca yaptırıma bağlanmıştır; yani izin verilmiş olmak, cihazın istenen yere konulabileceği anlamına gelmez.",
+    "dayanak": "2918 sayılı Kanun md 26",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-16",
+    "articleNo": "28",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, Emniyet, Jandarma ve Sahil Güvenlik araçlarının renklerine göre boyama şekli ile ayırım işaretleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Bu boyama şekli ve ayırım işaretleri, başka hiçbir resmî veya özel kuruluşun ya da kişinin aracında kullanılamaz.",
+      "B": "Bu boyama şekli, valiliğin izniyle diğer kamu kuruluşlarının araçlarında da kullanılabilir.",
+      "C": "Bu boyama şekline aykırı araçların sürücülerine ihtar edilir ve aykırılığı gidermeleri için süre verilir.",
+      "D": "Bu ayırım işaretleri, kamu hizmeti gören özel kuruluşların araçlarında da bulundurulabilir.",
+      "E": "Bu boyama şekli ve ayırım işaretleri, yalnızca il trafik komisyonu kararıyla başka araçlarda kullanılabilir."
+    },
+    "dogru": "A",
+    "aciklama": "Kolluk araçlarının görünürlüğü Kanunla koruma altına alınmıştır: Emniyet, Jandarma ve Sahil Güvenlik araçlarının renklerine göre boyama şekli ile ayırım işaretleri, diğer resmî ve özel kuruluşlarla gerçek ve tüzel kişilere ait araçlarda kullanılamaz. Bu bir izne bağlı yasak değil, MUTLAK bir yasaktır; valilik onayı ya da komisyon kararı gibi bir yolla aşılamaz. Korunan menfaat, vatandaşın karşısındaki aracın gerçekten kolluk aracı olduğuna güvenebilmesidir; benzer boyama, resmî araç görüntüsünün taklit edilmesine ve kişilerin durdurulmasına elverişli bir zemin yaratır. Yaptırım tarafında da aday hata yapmaya elverişlidir: aykırı boyanan veya ayırım işareti kullanan araçlar için ihtar ve düzeltme süresi öngörülmemiştir; bu araçlar AYKIRILIK GİDERİLİNCEYE KADAR TRAFİKTEN MEN edilir. Ayrıca Devlet malı araçların tescil plakalarının renginin ayrı olması, boyama ve ayırım işaretinden bağımsız bir kuraldır.",
+    "dayanak": "2918 sayılı Kanun md 28",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-17",
+    "articleNo": "36",
+    "kok": "Sürücü belgesi bulunmayan bir kişi, aracın işleteninin bilgisi ve izniyle motorlu aracı karayolunda kullanırken durdurulmuştur. 2918 sayılı Karayolları Trafik Kanunu'na göre araç işleteni bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "İşletene bir yaptırım uygulanmaz; sorumluluk aracı kullanan kişiye aittir.",
+      "B": "İşletene, sürücüye verilen cezanın iki katı tutarında idari para cezası verilir.",
+      "C": "İşletenin sürücü belgesi otuz gün süreyle geri alınır.",
+      "D": "İşletene de tescil plakası üzerinden idari para cezası verilir.",
+      "E": "İşleten hakkında tutanak düzenlenmekle yetinilir ve araç trafikten menedilir."
+    },
+    "dogru": "D",
+    "aciklama": "Maddede iki ayrı fiil birlikte yasaklanmıştır: motorlu araçların sürücü belgesi sahibi olmayan kişilerce karayollarında SÜRÜLMESİ ve SÜRÜLMESİNE İZİN VERİLMESİ. Bu nedenle olayda iki sorumlu vardır; belgesiz sürücüye idari para cezası verilirken, sürülmesine izin veren işletene de TESCİL PLAKASI ÜZERİNDEN idari para cezası verilir. Senaryoda işletenin bilgisi ve izninin açıkça belirtilmesi rastlantı değildir: izin unsuru yoksa işletenin sorumluluğu bu hükümden doğmaz. Tescil plakası üzerinden ceza verilmesi de ayrı bir incelik taşır; işleten olay yerinde bulunmadığı için ceza kişiye değil, araç kaydı üzerinden düzenlenir. Çeldiricilerdeki 'iki katı' ifadesi bilinçli seçilmiştir: bu Kanunda araç işletenine sürücü için belirlenen miktarın iki katı ceza verilen hâller vardır, ancak bunlar araçlarda bulundurulması zorunlu gereçlerle ilgili başka bir maddeye aittir.",
+    "dayanak": "2918 sayılı Kanun md 36",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-19",
+    "articleNo": "37",
+    "kok": "Sürücü belgesi almaları zorunlu olmamakla beraber; bisiklet kullananların - - - -, elektrikli bisiklet ve elektrikli skuter kullananların - - - -, motorsuz taşıtları kullananlar ile hayvan sürücülerinin - - - - yaşını bitirmiş olmaları zorunludur. 2918 sayılı Karayolları Trafik Kanunu'na göre yukarıdaki hükümde boş bırakılan yerlere sırasıyla aşağıdakilerden hangileri getirilmelidir?",
+    "siklar": {
+      "A": "11 - 13 - 15",
+      "B": "13 - 11 - 15",
+      "C": "13 - 15 - 11",
+      "D": "15 - 13 - 11",
+      "E": "11 - 15 - 13"
+    },
+    "dogru": "E",
+    "aciklama": "Sürücü belgesi aranmayan araç ve hayvan kullanımı için üç ayrı yaş eşiği konulmuştur: bisiklette 11, ELEKTRİKLİ BİSİKLET VE ELEKTRİKLİ SKUTERDE 15, motorsuz taşıtlar ile hayvan sürücülerinde 13 yaşın bitirilmiş olması. Sıralamanın mantığı aracın hız ve kütle kapasitesidir; en yüksek eşik, motor gücüyle hareket ettiği için kaza şiddeti en yüksek olan elektrikli bisiklet ve skutere aittir. Bu eşik Kanuna sonradan eklenmiştir ve eski kaynaklardan çalışan aday, elektrikli skuteri sıradan bisikletle aynı yaşa tabi sanarak yanılır. Yaş şartı tek başına yeterli de değildir: bu kişilerin ayrıca BEDENSEL VE RUHSAL BAKIMDAN SAĞLIKLI bulunmaları zorunludur. Şartları taşımayan kişilere araç kullandıranlar ile hayvanları tevdi edenler hakkında ayrıca para cezası öngörülmüştür; yani sorumluluk yalnız kullanan çocukta değil, imkânı sağlayan kişidedir.",
+    "dayanak": "2918 sayılı Kanun md 37",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-20",
+    "articleNo": "39",
+    "kok": "Yapılan bir denetimde, bir sürücünün geçerlilik süresi dolmuş sürücü belgesiyle araç kullandığı tespit edilmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu sürücü hakkında aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "İdari para cezası verilir ve sürücü belgesi geri alınır.",
+      "B": "İdari para cezası verilir ve araç trafikten menedilir.",
+      "C": "Sürücü belgesi, belgeyi veren kurumca iptal edilir.",
+      "D": "Sürücüye ihtar edilerek belgesini yenilemesi için süre verilir.",
+      "E": "Sürücü belgesi, psiko-teknik değerlendirme sonucuna göre otuz gün süreyle geri alınır."
+    },
+    "dogru": "A",
+    "aciklama": "Bu Kanunda sürücü belgeleri SÜRELİ olarak verilir; belgelerin geçerlilik süreleri ve yenilenmesinde aranacak şartlar yönetmelikle belirlenir ve bu şekilde yenilenen belgelerden harç alınmaz. Süresi dolmuş belgeyle araç kullanan sürücüye ise idari para cezası verilir VE SÜRÜCÜ BELGESİ GERİ ALINIR. Sorunun ayırt ettiği nokta budur: yaptırım tek başına para cezası değildir, belgenin fiilen elden alınması da sonuca dâhildir. Süresi dolmuş belge artık kişiye araç kullanma yetkisi vermediği için, belgenin sürücüde kalması denetimde yanıltıcı bir görüntü doğurur. Aday burada iki uçtan birine kayar: yenileme işlemini basit bir idari formalite sayıp yalnızca ihtar edileceğini düşünür ya da tersine, süre dolmasını belgenin geçersizliği sayıp doğrudan iptal sonucuna gider. Kanun ikisini de öngörmemiştir; süre dolması yenilenebilir bir eksikliktir, ancak yenileninceye kadar belge sürücüde bırakılmaz.",
+    "dayanak": "2918 sayılı Kanun md 39",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-21",
+    "articleNo": "41",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, sürücü belgesi alacaklarda aranan şartlardan herhangi biri mevcut olmadan veya bu şartların hileli yollarla temin edilmiş olduğunun anlaşılması hâlinde aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "Sürücü belgesi en çok bir yıl süreyle geri alınır.",
+      "B": "Sürücü belgesi sahibine yeniden teorik ve uygulamalı sınav şartı getirilir.",
+      "C": "Sürücü belgesinin geçerlilik süresi kısaltılarak yenilenmesi istenir.",
+      "D": "Sürücü belgesi, belge vermeye yetkili kurumca iptal edilir.",
+      "E": "Sürücü belgesi hakkında işlem yapılabilmesi mahkeme kararına bağlıdır."
+    },
+    "dogru": "D",
+    "aciklama": "Hüküm, belgenin doğduğu andaki sakatlığı hedef alır: aranan şartlardan biri hiç bulunmadan ya da şartlar hileli yolla sağlanmış gösterilerek belge alınmışsa, belge SÜRÜCÜ BELGESİ VERMEYE YETKİLİ KURUMCA İPTAL EDİLİR. İptal kararı için ayrıca bir mahkeme hükmü beklenmez; işlemi tesis eden idare, hukuka aykırı doğmuş belgeyi kendisi ortadan kaldırır. Ancak iptal ömür boyu bir yasak anlamına gelmez: kişi Kanun'daki şartlara uygun olarak yeniden sürücü sertifikası alırsa kendisine YENİDEN SÜRÜCÜ BELGESİ VERİLİR. Aday burada iki yönde hata yapar. Birincisi, hileli davranışın cezai boyutundan hareketle idari işlemin de yargı kararına bağlı olduğunu sanmaktır. İkincisi, iptali geçici bir tedbir gibi okuyup süre aramaktır; oysa iptalde geri verilecek bir belge kalmaz, yeni bir belge süreci baştan işletilir.",
+    "dayanak": "2918 sayılı Kanun md 41",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-22",
+    "articleNo": "41",
+    "kok": "Sürücü belgesini usulüne uygun olarak almış bir kişi, daha sonra 2918 sayılı Kanun'un sürücü adaylarında aradığı adli sicil şartına konu suçlardan biri nedeniyle mahkûm olmuştur. Aynı Kanun'a göre bu kişinin sürücü belgesi bakımından aşağıdakilerden hangisi uygulanır?",
+    "siklar": {
+      "A": "Sürücü belgesi, mahkemece bu yönde ayrıca karar verilmesi hâlinde geri alınır.",
+      "B": "Sürücü belgesi, 6 ncı maddede sayılan görevlilerce şart sağlanıncaya kadar geri alınır.",
+      "C": "Sürücü belgesi, belge vermeye yetkili kurumca ve süresiz olarak iptal edilir.",
+      "D": "Sürücü belgesi, hükmün kesinleşmesinden itibaren bir yıl süreyle geri alınır.",
+      "E": "Sürücü belgesine bir işlem yapılmaz; kişi yeniden sürücü kursuna yönlendirilir."
+    },
+    "dogru": "B",
+    "aciklama": "Adli sicil şartı, belgenin alındığı ana özgü bir giriş şartı değildir; belge alındıktan SONRA da aranmaya devam eder. Bu suçlardan biriyle mahkûmiyet hâlinde sürücü belgesi, bu Kanun'un 6 NCI MADDESİNDE SAYILAN GÖREVLİLER tarafından, aranan şart SAĞLANINCAYA KADAR GERİ ALINIR. İki ayrıntı sorunun kilidini oluşturur. Birincisi süre: geri alma sabit bir gün ya da ay sayısına değil, şartın yeniden sağlanmasına bağlanmıştır, yani sürenin sonunu kişinin adli durumu belirler. İkincisi yetkili: işlemi yapan makam belgeyi düzenleyen tescil birimi ya da mahkeme değil, Kanun'un trafik zabıtası ve genel zabıtayı düzenleyen maddesinde sayılan görevlilerdir; sürücü belgesi geri alma işlemleri Kanun'un pek çok maddesinde aynı göndermeyle bu görevlilere bırakılmıştır. Adayın en sık düştüğü hata, mahkûmiyeti doğrudan iptal sebebi sayarak sonucu geri dönülemez göstermektir.",
+    "dayanak": "2918 sayılı Kanun md 41",
+    "zorluk": "hard",
+    "tur": "vaka"
+  },
+  {
+    "id": "2918-p1-23",
+    "articleNo": "42",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, Emniyet Genel Müdürlüğünün motorlu araç sürücüsü ihtiyacını karşılamak üzere kendi personeline ve bağlı eğitim ve öğretim kurumlarında öğrenim görenlere verilecek motorlu taşıt sürücüsü sertifikası, illerde kimin onayı ile verilir?",
+    "siklar": {
+      "A": "İl emniyet müdürünün",
+      "B": "İl trafik komisyonunun",
+      "C": "İl millî eğitim müdürünün",
+      "D": "Emniyet Genel Müdürünün",
+      "E": "Valinin"
+    },
+    "dogru": "E",
+    "aciklama": "Kural olarak sertifika, sürücü kurslarında eğitim alıp yapılan sınavlarda başarılı olanlara verilir. Kanun bunun yanında teşkilatın kendi sürücü ihtiyacı için özel bir yol açmıştır: belirli eğitim programları çerçevesinde ve yönetmelikteki esaslara uygun olarak, İLLERDE VALİNİN ONAYI, MERKEZ TEŞKİLATI İÇİN EMNİYET GENEL MÜDÜRÜNÜN ONAYI ile Emniyet Genel Müdürlüğü personeline ve bağlı eğitim öğretim kurumlarında öğrenim görenlere, sürücü belgesine dönüştürülmek üzere sertifika verilir. Bunların sınavları da nitelikleri Emniyet Genel Müdürlüğünce belirlenen sınav sorumlularınca yapılır. Sorunun kilidi kökteki 'illerde' kaydıdır; onay makamı taşrada ve merkezde farklıdır ve çeldirici tam bu ikiliğin üzerine kurulmuştur. Ayrıca bu sertifika, kanunda sayılanlar dışında HİÇ KİMSEYE verilemez; jandarma teşkilatı için ise ayrı ve kendine özgü bir fıkra öngörülmüştür.",
+    "dayanak": "2918 sayılı Kanun md 42",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-24",
+    "articleNo": "43",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, er ve erbaş sınıfından askeri araç sürücülerine verilen belgelerin geçerliliği bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Sadece askeri araçlar için ve askerlik süresince geçerlidir.",
+      "B": "Askerlik süresince, her cins motorlu araç için geçerlidir.",
+      "C": "Terhisten sonra, sınıfına uygun sürücü belgesine dönüştürülünceye kadar geçerlidir.",
+      "D": "Askerlik süresi sona erdikten sonra da askeri araçlar bakımından geçerliliğini korur.",
+      "E": "Yalnızca Millî Savunma Bakanlığınca belirlenen yerlerde ve süresiz olarak geçerlidir."
+    },
+    "dogru": "A",
+    "aciklama": "Er ve erbaş sınıfından askeri araç sürücülerinin özel sınavları ile belge verme işlemlerinin usulü ve bu belgelerle hangi cins taşıtların nerelerde kullanılacağı Millî Savunma Bakanlığınca çıkarılacak yönetmelikte gösterilir. Kanun ise belgenin geçerliliğini iki yönden birden daraltır: belge SADECE ASKERİ ARAÇLAR için ve SADECE ASKERLİK SÜRESİNCE geçerlidir. Konu bakımından sınır araç, zaman bakımından sınır hizmet süresidir; ikisinden biri sona erdiğinde belge kendiliğinden geçerliliğini yitirir. Adayın hatası, askerlikte kazanılmış bir sürme yetkisinin terhisten sonra da bir biçimde sürdüğünü varsaymaktır.",
+    "dayanak": "2918 sayılı Kanun md 43",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "2918-p1-25",
+    "articleNo": "44",
+    "kok": "2918 sayılı Karayolları Trafik Kanunu'na göre, sürücü belgesi sahipleri ikamet adresi değişikliklerini belgeyi veren kuruluşa kaç gün içinde bildirmek zorundadır?",
+    "siklar": {
+      "A": "3",
+      "B": "15",
+      "C": "30",
+      "D": "60",
+      "E": "90"
+    },
+    "dogru": "C",
+    "aciklama": "İki yükümlülük birlikte getirilmiştir: ikamet adresi değişikliklerini belgeyi veren kuruluşa OTUZ GÜN İÇİNDE bildirmek ve araç kullanırken sürücü belgesini yanında bulundurup YETKİLİLERİN HER İSTEYİŞİNDE göstermek. Adres bildiriminin önemi, trafik idari para cezası ve diğer tebligatların ulaşabilmesidir; kayıtlı adres güncel değilse kişi kendisine yapılan işlemden haberdar olamaz. Çeldiricilerin tamamı bu Kanunda gerçekten geçen sürelerdir ve her biri başka bir yükümlülüğe aittir; araç kayıtlarına ilişkin bildirim, tescil ve müracaat süreleri birbirinden farklı belirlenmiştir. Süreyi ezberlerken kime, hangi olay için ve hangi kuruma karşı işlediğini birlikte tutmak gerekir.",
+    "dayanak": "2918 sayılı Kanun md 44/a",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "2918-p1-26",
+    "articleNo": "45",
+    "kok": "Bir trafik denetiminde görevliler, sürücü belgesi sahibi bir kişide sağlığı bakımından sürücülüğe engel aşikâr bir değişiklik bulunduğunu tespit etmiştir. 2918 sayılı Karayolları Trafik Kanunu'na göre bu durumda aşağıdakilerden hangisi yapılır?",
+    "siklar": {
+      "A": "Sürücü belgesi geri alınarak kişinin sağlık kuruluşlarında muayenesi istenir.",
+      "B": "Sürücü belgesi kişide bırakılarak kendisine sağlık raporu getirmesi için süre verilir.",
+      "C": "Sürücü belgesi, belge vermeye yetkili kurumca doğrudan iptal edilir.",
+      "D": "Kişi hakkında idari para cezası uygulanarak araç trafikten menedilir.",
+      "E": "Durum il trafik komisyonuna bildirilir ve komisyon kararına göre işlem yapılır."
+    },
+    "dogru": "A",
+    "aciklama": "Sürücülüğün sağlık boyutu, belge verildikten sonra da denetim altında tutulmuştur. Sürücü belgesi sahibi kişide sürücülüğe engel AŞİKÂR bir sağlık değişikliğinin görülmesi ve tespiti hâlinde, TRAFİK GÖREVLİLERİNCE sürücü belgesi geri alınır ve kişinin sağlık kuruluşlarında muayenesi istenir. İşlem geçicidir ve teşhis yetkisi vermez: görevlinin yaptığı, tıbbi bir karar değil, riski derhâl trafikten uzaklaştıran koruyucu bir tedbirdir. Nitekim sağlık şartları bakımından sürücülüğe engel bir hâlin bulunmadığı ya da mevcut hâlin sonradan ortadan kalktığı SAĞLIK RAPORUYLA tespit edilirse belge kişiye İADE EDİLİR. Kökteki 'aşikâr' kaydı belirleyicidir; hüküm her sağlık şikâyetinde değil, sürücülüğe engel olduğu dışarıdan görülebilen değişikliklerde uygulanır. Aday, tedbiri kalıcı bir sonuç sanıp iptale gittiğinde ya da hiçbir işlem yapılmayacağını düşündüğünde yanılır.",
+    "dayanak": "2918 sayılı Kanun md 45",
+    "zorluk": "medium",
+    "tur": "vaka"
+  }
+]
