@@ -40,6 +40,9 @@ const A: Array<[string, 'eskime' | 'kaynaksiz' | 'bozuk' | 'yigilma', string]> =
     "hangi sikki isaretlerse hakli olarak itiraz edebilir. Iki hakem de KUSURLU dedi ve " +
     "duzeltme onermedi: sik kumesini onarmak soruyu yeniden yazmak olur. Hicbir denemede " +
     "kullanilmamis. Kullanici karari."],
+  // [soru id oneki, sinif, gerekce] — her kosuda doldurulur.
+  // Onceki kosularin kayitlari docs/32-yayin-denetimi/ilerleme.jsonl defterinde.
+  ['b0ec805b', 'eskime', "AYM 5/11/2024 E.2024/66 K.2024/188 karariyla CMK m.250/12'deki 'sagir ve dilsizlik' ibaresi iptal edildi; karar 10/3/2025 Resmi Gazete'de yayimlandi ve dokuz ay sonra, 10/12/2025'te yururluge girdi. D sikki ('Yas kuculugu ve akil hastaligi ile sagir ve dilsizlik hallerinde uygulanmaz') bugun YANLIS; kokte istenen tek yanlis ifade C oldugu halde D de yanlis hale geldi, soru iki dogru cevapli. Ayrica banka kendi icinde CELISIYORDU: 301ab1ef ve 06d95467 (ikisi de yayinda) iptal sonrasi durumu dogru ogretiyor, bu soru tersini soyluyor. Hic cevaplanmamis ve hicbir sinava bagli degil."],
 ];
 
 (async () => {
