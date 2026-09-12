@@ -1,44 +1,44 @@
 [
  {
-  "sinif": "yigilma",
-  "gerekce": "Denetci yigilma tespiti: 8d54c9c6 ile ayni kurali (TCK m.84/4'un kasten oldurme sayilan halleri) ayni onculu kalipla olcuyor; 'buyuk olcude mukerrer' notu dusuldu. m.84/4'un HER IKI halini (cebir/tehditle mecbur etme + algilama yetenegi gelismemis kisiyi sevk) birlikte olcen 8d54c9c6 birakildi.",
+  "sinif": "eskime",
+  "gerekce": "AYM 5/11/2024 E.2024/66 K.2024/188 karariyla CMK m.250/12'deki 'sagir ve dilsizlik' ibaresi iptal edildi; karar 10/3/2025 Resmi Gazete'de yayimlandi ve dokuz ay sonra, 10/12/2025'te yururluge girdi. D sikki ('Yas kuculugu ve akil hastaligi ile sagir ve dilsizlik hallerinde uygulanmaz') bugun YANLIS; kokte istenen tek yanlis ifade C oldugu halde D de yanlis hale geldi, soru iki dogru cevapli. Ayrica banka kendi icinde CELISIYORDU: 301ab1ef ve 06d95467 (ikisi de yayinda) iptal sonrasi durumu dogru ogretiyor, bu soru tersini soyluyor. Hic cevaplanmamis ve hicbir sinava bagli degil.",
   "arsivlenen": {
-   "id": "e2d9ea9a-82f5-41c0-b492-219d0918c94c",
-   "questionId": "6d289cca-7eb0-4f2e-a811-86fb2fe7371a",
-   "stem": "I. Başkasını intihara azmettirme\nII. Başkasını intihara teşvik etme\nIII. Cebir veya tehdit kullanmak suretiyle kişiyi intihara mecbur etme\nIV. Başkasının intihar etmesi için araç sağlama\n5237 sayılı Türk Ceza Yasası'na göre yukarıdaki durumlardan hangilerinde kasten öldürme suçundan dolayı hüküm kurulur?",
-   "explanation": "DAYANAK: TCK m. 84/4 yalnızca iki hâlde faili kasten öldürmeden sorumlu tutar: algılama yeteneği gelişmemiş veya ortadan kaldırılmış kişiyi intihara sevk etmek ve CEBİR VEYA TEHDİT kullanarak kişiyi intihara mecbur etmek. Seçeneklerde bu hâllerden yalnız III. öncül bulunduğundan cevap B'dir. ÇELDİRİCİLER: I (azmettirme), II (teşvik) ve IV (intihar için araç sağlama, yani \"herhangi bir şekilde yardım\") m. 84/1 kapsamında intihara yönlendirme suçunu oluşturur ve iki yıldan beş yıla kadar hapisle cezalandırılır; intihar gerçekleşirse m. 84/2 gereği ceza dört yıldan on yıla çıkar, ama suç adı yine değişmez. Alenen teşvik ise m. 84/3'te üç yıldan sekiz yıla kadar hapis olarak ayrıca düzenlenmiştir. TUZAK: Ayrım iradenin kimde olduğuna dayanır; iradesi cebirle kırılan ya da algılama yeteneği bulunmayan mağdur, failin elinde araç sayıldığından fiil öldürmeye dönüşür.",
-   "sourceLabel": null,
+   "id": "b0ec805b-e38a-494c-abd1-10bf81175e63",
+   "questionId": "99cec670-f685-44df-9e12-3b8251692171",
+   "stem": "5271 sayılı CMK'ya göre seri muhakeme usulüyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Seri muhakeme usulünde yaptırım uygulanması, GÜVENLİK TEDBİRLERİNE İLİŞKİN HÜKÜMLERİN UYGULANMASINA ENGEL DEĞİLDİR (Ceza Muhakemesinde Seri Muhakeme Yönetmeliği m.5/9); bu nedenle C yanlıştır. Seri muhakeme, Cumhuriyet savcısının yürüttüğü soruşturma sonunda bazı suçlarda kamu davasının açılmasının ertelenmesine karar verilmediği takdirde, şüphelinin MÜDAFİİ HUZURUNDA bu usulü kabul etmesi şartıyla, savcının suçun cezasına yarı oranında indirim uygulayarak belirlediği yaptırımın mahkemece denetlenerek hüküm kurulması usulüdür. m.250/12 uyarınca bu usul yaş küçüklüğü, akıl hastalığı ile sağır ve dilsizlik hâllerinde ve kapsama girmeyen bir suçla birlikte işlenme hâlinde uygulanmaz; iştirak hâlinde ise tüm şüphelilerin kabulü gerekir. Önödeme ve uzlaştırma kapsamındaki suçlar da seri muhakemeye tâbi değildir.",
+   "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
    "options": [
     {
      "label": "A",
-     "text": "Yalnız I",
+     "text": "Soruşturma evresi sonunda Kanun'da sayılan suçlarla ilgili kamu davasının açılmasının ertelenmesine karar verilmediği takdirde uygulanır.",
      "isCorrect": false
     },
     {
      "label": "B",
-     "text": "Yalnız III",
-     "isCorrect": true
-    },
-    {
-     "label": "C",
-     "text": "I ve II",
+     "text": "Suçun iştirak hâlinde işlenmesi durumunda şüphelilerden biri bu usulü kabul etmezse diğerleri hakkında da uygulanmaz.",
      "isCorrect": false
     },
     {
+     "label": "C",
+     "text": "Bu usul kapsamında yaptırım uygulanması hâlinde ayrıca güvenlik tedbirine hükmolunmaz.",
+     "isCorrect": true
+    },
+    {
      "label": "D",
-     "text": "II ve III",
+     "text": "Yaş küçüklüğü ve akıl hastalığı ile sağır ve dilsizlik hâllerinde uygulanmaz.",
      "isCorrect": false
     },
     {
      "label": "E",
-     "text": "III ve IV",
+     "text": "Bu usul kapsamına giren bir suçun, kapsama girmeyen başka bir suçla birlikte işlenmiş olması hâlinde uygulanmaz.",
      "isCorrect": false
     }
    ],
    "question": {
-    "articleNo": "84",
+    "articleNo": "250",
     "topic": {
-     "name": "Türk Ceza Kanunu"
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
     }
    }
   }
