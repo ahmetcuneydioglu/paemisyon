@@ -1,0 +1,56 @@
+{
+  "sinav": "2024 KPSS A Grubu — Kamu Yönetimi alan sınavı (ÖSYM)",
+  "kaynakDosya": "KPSS 2024 Kamu Yönetimi.pdf (40 sayfa, taranmış görüntü, metin katmanı yok)",
+  "olcut": "Doc 42'nin ölçütü aynen uygulandı: siyasi düşünceler tarihi, siyaset bilimi metodolojisi, yönetim bilimi kuramı ve kentleşme/çevre müfredat dışıdır; Anayasa, mevzuat ve İnkılap Tarihi alınır.",
+  "kararlar": [
+    { "no": 1,  "al": false, "konu": "Yeni sağ ideolojisi", "gerekce": "siyasi düşünceler; müfredat dışı" },
+    { "no": 2,  "al": false, "konu": "Liberalizmin unsurları", "gerekce": "siyasi düşünceler; müfredat dışı" },
+    { "no": 3,  "al": false, "konu": "Thomas More — Ütopya", "gerekce": "siyasi düşünceler; müfredat dışı" },
+    { "no": 4,  "al": false, "konu": "Modern devletin özellikleri", "gerekce": "siyaset bilimi; müfredat dışı" },
+    { "no": 5,  "al": false, "konu": "Farabi — el-Medinetü'l-Fazıla", "gerekce": "İslam felsefesi; müfredat dışı" },
+    { "no": 6,  "al": false, "konu": "Reform hareketinin öncüleri", "gerekce": "Avrupa tarihi/düşünce; müfredat dışı" },
+    { "no": 7,  "al": false, "konu": "Aristoteles — politeia", "gerekce": "siyasi düşünceler; müfredat dışı" },
+    { "no": 8,  "al": false, "konu": "Hâkim parti sistemi", "gerekce": "siyaset bilimi; müfredat dışı. NOT: bu sorunun cevap anahtarı sayfada basılı DEĞİL" },
+
+    { "no": 9,  "al": true,  "ders": "Anayasa Hukuku", "konu": "Grev hakkının anayasal tanınması (1961)" },
+    { "no": 10, "al": true,  "ders": "Anayasa Hukuku", "konu": "Milletvekili seçilme yeterliği" },
+    { "no": 11, "al": false, "konu": "AYM ret kararı — 10 yıl", "gerekce": "MÜKERRER: bankada aynı olguyu soran soru yayında (çeldiricileri farklı)" },
+    { "no": 12, "al": true,  "ders": "Anayasa Hukuku", "konu": "AYM'nin görev ve yetkileri" },
+    { "no": 13, "al": true,  "ders": "Anayasa Hukuku", "konu": "OHAL süresinin uzatılması" },
+    { "no": 14, "al": false, "konu": "MGK'ya Cumhurbaşkanı yokluğunda başkanlık", "gerekce": "MÜKERRER: bankada bu soru İKİ kez var, ikisi de yayında" },
+
+    { "no": 15, "al": false, "konu": "Weber — ideal tip bürokrasi", "gerekce": "yönetim bilimi kuramı; müfredat dışı" },
+    { "no": 16, "al": false, "konu": "Woodrow Wilson — Yönetimin İncelenmesi", "gerekce": "yönetim bilimi tarihi; müfredat dışı" },
+    { "no": 17, "al": false, "konu": "Seri üretim / Fordizm", "gerekce": "yönetim bilimi; müfredat dışı" },
+    { "no": 18, "al": false, "konu": "Komuta birliği ilkesi", "gerekce": "yönetim bilimi; müfredat dışı" },
+    { "no": 19, "al": false, "konu": "Sokak düzeyi bürokrasisi", "gerekce": "kamu politikası kuramı; müfredat dışı" },
+
+    { "no": 20, "al": true,  "ders": "İdare Hukuku", "konu": "Yetki genişliği (tevsi-i mezuniyet)",
+      "not": "Kök tarihsel bir kanun metnini (1426 s. Vilâyet İdaresi Kanunu) okutuyor ama sorulan kavram — yetki genişliği — bugünkü İdare Hukuku müfredatının içinde. Denetçiler bu ayrımı değerlendirsin." },
+    { "no": 21, "al": true,  "ders": "İdare Hukuku", "konu": "4483 — soruşturma izni vermeye yetkili merciler" },
+    { "no": 22, "al": true,  "ders": "İdare Hukuku", "konu": "657 — süresinde işe başlamayanlar" },
+    { "no": 23, "al": true,  "ders": "İdare Hukuku", "konu": "233 s. KHK — KİT tanımları" },
+    { "no": 24, "al": true,  "ders": "Anayasa Hukuku", "konu": "Kamu tüzel kişiliğinin CBK ile kurulması" },
+    { "no": 25, "al": true,  "ders": "Anayasa Hukuku", "konu": "6216 — AYM üyeliğine seçilme yeterliği" },
+    { "no": 26, "al": true,  "ders": "İdare Hukuku", "konu": "Cumhurbaşkanlığı ofisleri",
+      "not": "GÜNCELLİK RİSKİ YÜKSEK: ofisler CBK ile kuruluyor ve 2024'ten bu yana değişmiş olabilir." },
+    { "no": 27, "al": true,  "ders": "İdare Hukuku", "konu": "5302 — il özel idaresi hizmet önceliği" },
+    { "no": 28, "al": true,  "ders": "İdare Hukuku", "konu": "5393 — uluslararası kuruluşlara üyelik izni",
+      "not": "GÜNCELLİK RİSKİ: şıklarda bakanlık adları geçiyor." },
+    { "no": 29, "al": true,  "ders": "İdare Hukuku", "konu": "5393 — belediye kurulmasının zorunlu olduğu yerler" },
+    { "no": 30, "al": true,  "ders": "İdare Hukuku", "konu": "İdari vesayet ilişkisi" },
+
+    { "no": 31, "al": false, "konu": "HABİTAT II Konferansı", "gerekce": "kentleşme; müfredat dışı" },
+    { "no": 32, "al": false, "konu": "Castells — bağımlı kentleşme", "gerekce": "kent sosyolojisi; müfredat dışı" },
+    { "no": 33, "al": false, "konu": "Kent yapısı kuramları", "gerekce": "kent sosyolojisi; müfredat dışı" },
+    { "no": 34, "al": false, "konu": "İmar planı — bölgeleme türleri", "gerekce": "imar/kentleşme; müfredat dışı" },
+    { "no": 35, "al": false, "konu": "Kalkınma planlarında çevre", "gerekce": "çevre politikası; müfredat dışı" },
+    { "no": 36, "al": false, "konu": "2872 s. Çevre Kanunu — çevre düzeni planları", "gerekce": "çevre mevzuatı; müfredatta yok" },
+
+    { "no": 37, "al": true,  "ders": "Atatürk İlkeleri ve İnkılap Tarihi", "konu": "II. Meşrutiyet dergileri ve siyasal akımlar" },
+    { "no": 38, "al": true,  "ders": "Atatürk İlkeleri ve İnkılap Tarihi", "konu": "Halkevleri (1932)" },
+    { "no": 39, "al": true,  "ders": "Atatürk İlkeleri ve İnkılap Tarihi", "konu": "1960-1970 arası başbakanlar" },
+    { "no": 40, "al": true,  "ders": "Atatürk İlkeleri ve İnkılap Tarihi", "konu": "Demokrat Parti dönemi siyasal gelişmeleri" }
+  ],
+  "ozet": { "toplam": 40, "alinan": 19, "mufredatDisi": 19, "mukerrer": 2 }
+}

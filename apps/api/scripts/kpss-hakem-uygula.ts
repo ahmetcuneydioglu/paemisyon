@@ -8,11 +8,17 @@
  * Hakemler ayrışırsa soru dışarıda kalır — ayrışmanın kendisi, kusurun
  * tartışmaya açık olduğunun kanıtıdır. Şüphe her zaman sorunun aleyhine.
  *
+ * `CELISKI` (denetçiler CEVAPTA ayrıştı) da hakeme gidebilir. Orada iki
+ * hakemin `TEMIZ` demesi yetmez: ikisinin de `dogruCevap` yazması, aynı harfi
+ * yazması ve bu harfin anahtarla uyuşması gerekir. Biri bile şaşarsa soru
+ * dışarıda kalır — cevabı tartışmalı bir soruyu bankaya koymak, kusurlu bir
+ * soruyu koymaktan farksızdır.
+ *
  *   npx tsx scripts/kpss-hakem-uygula.ts <doc-dizini>
  */
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 
-type Hakem = { id: string; karar: string; gerekce: string; duzeltilebilir?: string };
+type Hakem = { id: string; karar: string; gerekce: string; duzeltilebilir?: string; dogruCevap?: string };
 
 function main() {
   const doc = process.argv[2];
@@ -27,14 +33,24 @@ function main() {
 
   let temiz = 0, kusurlu = 0, ayrisan = 0;
   const satirlar: string[] = [];
-  for (const f of readdirSync(`${doc}/denetim`).filter((x) => /^k-\d+-karar\.json$/.test(x))) {
+  // Parti adları doc'tan doc'a değişiyor (`k-1`, `p1`…); karar dosyası olan
+  // her şey okunur.
+  for (const f of readdirSync(`${doc}/denetim`).filter((x) => /-karar\.json$/.test(x))) {
     const kararlar = JSON.parse(readFileSync(`${doc}/denetim/${f}`, 'utf8'));
     for (const k of kararlar) {
-      if (k.karar !== 'UYARI') continue;
+      if (k.karar !== 'UYARI' && k.karar !== 'CELISKI') continue;
+      const celiski = k.karar === 'CELISKI';
       const a = h1.get(k.id), b = h2.get(k.id);
       if (!a || !b) throw new Error(`${k.id}: hakem kararı eksik`);
-      const ikisiTemiz = a.karar === 'TEMIZ' && b.karar === 'TEMIZ';
+      let ikisiTemiz = a.karar === 'TEMIZ' && b.karar === 'TEMIZ';
       if (a.karar !== b.karar) ayrisan++;
+      if (celiski && ikisiTemiz) {
+        // Cevap uyuşmazlığında hakemin işi kusuru tartmak değil, doğru şıkkı
+        // söylemek. Söylemediyse ya da anahtardan şaşıyorsa soru girmez.
+        const uyum = a.dogruCevap && a.dogruCevap === b.dogruCevap && a.dogruCevap === k.osymCevabi;
+        if (uyum) k.onerilen = a.dogruCevap;
+        else ikisiTemiz = false;
+      }
       k.karar = ikisiTemiz ? 'ONAY-HAKEM' : 'KUSURLU';
       k.hakem = {
         h1: a.karar, h2: b.karar, gerekce: [a.gerekce, b.gerekce],
@@ -46,7 +62,7 @@ function main() {
     writeFileSync(`${doc}/denetim/${f}`, JSON.stringify(kararlar, null, 1));
   }
 
-  console.log(`uyarılı soru: ${temiz + kusurlu}`);
+  console.log(`hakeme giden soru: ${temiz + kusurlu}`);
   for (const s of satirlar.sort()) console.log(s);
   console.log(`\nbankaya girecek (ONAY-HAKEM): ${temiz}`);
   console.log(`dışarıda kalan (KUSURLU)    : ${kusurlu}${ayrisan ? `  — ${ayrisan}'i hakemlerin ayrışması yüzünden` : ''}`);
