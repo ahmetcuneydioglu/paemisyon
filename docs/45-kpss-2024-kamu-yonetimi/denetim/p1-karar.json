@@ -117,7 +117,7 @@
  },
  {
   "id": "q21",
-  "karar": "KUSURLU",
+  "karar": "ONAY-DUZELTME",
   "osymCevabi": "B",
   "onerilen": "B",
   "d1": "B",
@@ -153,7 +153,9 @@
     "E şıkkındaki unvan 'Cumhurbaşkanlığı İdari İşler Başkanı' → 'Cumhurbaşkanlığı Genel Sekreteri' (aynı makamın 7547 s. K. ile değişen adı; şık içeriği değişmez, güncellendiğinde tek doğru cevap yine B olur).",
     "E şıkkında 'Cumhurbaşkanlığı İdari İşler Başkanı' → 'Cumhurbaşkanlığı Genel Sekreteri' (7547 s.K. md 8 ile yapılan unvan değişikliği; aynı organın yeni adı, şık içeriği değişmez). Bu düzeltmeyle soru yeniden tek cevaplı (B) olur."
    ]
-  }
+  },
+  "oncekiKarar": "KUSURLU",
+  "duzeltmeNotu": "Kusur, 7547 s. Kanun'un değiştirdiği unvanın E şıkkında eski hâliyle kalmasıydı; iki hakem de aynı düzeltmeyi önerdi. Şık 'Cumhurbaşkanlığı Genel Sekreteri' olarak güncellendi (duzeltme.json / duzeltme-kaydi.json), soru yeniden tek cevaplı. Şık metnini değiştirme kararı kullanıcınındır — 12 Eyl 2026."
  },
  {
   "id": "q22",
