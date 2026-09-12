@@ -33,7 +33,11 @@ import { PrismaClient, Difficulty } from '@prisma/client';
 import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
 
 const APPLY = process.env.APPLY === '1';
-const GECER = new Set(['ONAY', 'ONAY-HAKEM', 'ZAYIF']);
+/** `ONAY-DUZELTME`: karar KUSURLU'ydu, kusur mevzuatın değiştirdiği bir ADIN
+ *  metinde eski hâliyle kalmasıydı ve KULLANICI o soru için düzeltmeyi açıkça
+ *  onayladı. Denetim izi silinmez — karar dosyasında `oncekiKarar` durur.
+ *  Bu değeri script kendiliğinden ÜRETMEZ; yalnız insan eliyle yazılır. */
+const GECER = new Set(['ONAY', 'ONAY-HAKEM', 'ZAYIF', 'ONAY-DUZELTME']);
 /** Varsayılan konu (İnkılap partileri). Aday kaydında `konuId` varsa O kullanılır:
  *  Doc 40'ta sorular dört ayrı derse ve 70 konuluk ağaca dağılıyor. */
 const KONU_ID = '23d22785-351b-4f39-8516-a419e2c254c0';
