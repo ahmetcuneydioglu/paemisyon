@@ -7,7 +7,12 @@ import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
 import { PushService } from '../notifications/push.service';
-import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+import {
+  FREE_DAILY_LIMIT_FALLBACK,
+  PERSONAL_EXAM_FREE_DAILY_FALLBACK,
+  PERSONAL_EXAM_FREE_MAX_QUESTIONS,
+  PERSONAL_EXAM_MAX_QUESTIONS,
+} from '../../common/plan.constants';
 
 /// GET/PATCH /api/v1/me — profil + entitlement (Doc 7 §4.2). Kimlik zorunlu.
 @Controller('me')
@@ -318,7 +323,8 @@ export class UsersController {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
 
-    const [profile, stats, streak, usage, freePlan, dailySession] = await Promise.all([
+    const [profile, stats, streak, usage, freePlan, dailySession, personalExamsToday] =
+      await Promise.all([
       this.prisma.user.findUnique({
         where: { id: user.id },
         select: {
@@ -337,6 +343,12 @@ export class UsersController {
         where: { userId: user.id, mode: 'daily', startedAt: { gte: today } },
         orderBy: { startedAt: 'desc' },
         select: { status: true },
+      }),
+      // Bugün başlatılan kişisel deneme sayısı (Doc 46). Tamamlanan değil
+      // BAŞLATILAN sayılır — sunucudaki kapı da aynı ölçüyü kullanır, arayüz
+      // farklı bir sayı gösterip kullanıcıyı yanıltmasın.
+      this.prisma.quizSession.count({
+        where: { userId: user.id, personalExam: true, startedAt: { gte: today } },
       }),
     ]);
 
@@ -360,6 +372,17 @@ export class UsersController {
         dailyLimit: user.isPremium ? null : (freePlan?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK),
       },
       daily: { playedToday: dailySession?.status === 'completed' },
+      // Kişisel deneme hakkı (Doc 46) — arayüz kilidi buradan kurar.
+      // dailyAllowance null = sınırsız (premium).
+      personalExam: {
+        usedToday: personalExamsToday,
+        dailyAllowance: user.isPremium
+          ? null
+          : (freePlan?.personalExamDailyLimit ?? PERSONAL_EXAM_FREE_DAILY_FALLBACK),
+        maxQuestions: user.isPremium
+          ? PERSONAL_EXAM_MAX_QUESTIONS
+          : PERSONAL_EXAM_FREE_MAX_QUESTIONS,
+      },
       stats: {
         totalSolved: stats?.totalSolved ?? 0,
         totalSessions: stats?.totalSessions ?? 0,

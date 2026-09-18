@@ -3,6 +3,7 @@ import type { CikmisSinavOzet } from "@/lib/public-api";
 import { Card } from "@/components/ui/card";
 import { EmptyState } from "@/components/empty-state";
 import { TurRozeti, turAciklamasi } from "./tur-rozeti";
+import { PremiumBadge } from "@/components/ui/premium-badge";
 
 /** En kalabalık üç dersi göster; kart bir tabloya dönüşmesin. */
 const ILK_DERSLER = 3;
@@ -58,7 +59,7 @@ export function SinavListesi({
                 </p>
               </div>
               <span className="flex shrink-0 items-center gap-1.5">
-                {s.isPremium && <PremiumRozeti />}
+                {s.isPremium && <PremiumBadge />}
                 <TurRozeti tur={s.tur} />
               </span>
             </div>
@@ -96,10 +97,3 @@ export function SinavListesi({
 }
 
 /** Dönem Premium'a özel: ziyaretçi tıklamadan önce bilmeli. */
-function PremiumRozeti() {
-  return (
-    <span className="rounded-sm bg-amber-100 px-1.5 py-0.5 text-[12px] font-bold text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
-      🔒 Premium
-    </span>
-  );
-}

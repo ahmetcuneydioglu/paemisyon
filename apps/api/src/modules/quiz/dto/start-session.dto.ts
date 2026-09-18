@@ -9,6 +9,7 @@ import {
   MaxLength,
   Min,
 } from 'class-validator';
+import { PERSONAL_EXAM_MAX_QUESTIONS } from '../../../common/plan.constants';
 
 export class StartSessionDto {
   @IsIn(['practice', 'exam', 'daily', 'review'])
@@ -59,11 +60,13 @@ export class StartSessionDto {
   @IsBoolean()
   personalExam?: boolean;
 
-  /// Üst sınır 120: kişisel deneme gerçek formatı (100 soru) sığmalı;
-  /// diğer modlarda pratik üst sınır zaten istemci tarafında 10-20'dir.
+  /// Üst sınır: kişisel deneme gerçek formatı (100 soru) sığmalı; diğer
+  /// modlarda pratik üst sınır zaten istemci tarafında 10-20'dir. ÜCRETSİZ
+  /// planda gerçek tavan 25'tir ve sunucuda uygulanır (Doc 46) — burası
+  /// mutlak tavan.
   @IsOptional()
   @IsInt()
   @Min(1)
-  @Max(120)
+  @Max(PERSONAL_EXAM_MAX_QUESTIONS)
   questionCount?: number;
 }

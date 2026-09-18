@@ -270,3 +270,210 @@ describe('QuizService.splitBySeen', () => {
     );
   });
 });
+
+// ── Kişisel deneme freemium kapısı (Doc 46) ──
+// Kişisel deneme mode='exam' olduğu için günlük kota muafiyetini devralıyor ve
+// premium kapısı taşımıyordu: ücretsiz kullanıcı günde sınırsız kez 100'lük
+// taze set çözebiliyordu. Kapı artık oturum BAŞLARKEN kurulur.
+
+const freeUser: AuthenticatedUser = {
+  id: '00000000-0000-0000-0000-0000000000f1',
+  email: 'ucretsiz@example.com',
+  roles: ['user'],
+  isPremium: false,
+};
+
+const MODULE_ID = '00000000-0000-0000-0000-0000000000m1'.replace(/m/g, 'b');
+const SECTION_ID = '00000000-0000-0000-0000-0000000000c1';
+const COURSE_ID = '00000000-0000-0000-0000-0000000000d1';
+
+function havuz(n: number) {
+  return Array.from({ length: n }, (_, i) => ({
+    id: `q-${i}`,
+    topicId: `t-${i % 5}`,
+    currentVersionId: `v-${i}`,
+  }));
+}
+
+function setupPersonal(opts: {
+  yarim?: {
+    id: string;
+    startedAt: Date;
+    totalQuestions: number;
+    plannedDurationSeconds: number | null;
+    questionOrder: string[];
+    answers: { questionId: string; selectedOptionId: string | null; isCorrect: boolean }[];
+  } | null;
+  bugunkuSayi?: number;
+  planLimit?: number | null;
+} = {}) {
+  const rows = havuz(150);
+  const prisma = {
+    user: { findUnique: jest.fn().mockResolvedValue({ preferredModuleId: MODULE_ID }) },
+    plan: {
+      findUnique: jest.fn().mockResolvedValue({
+        personalExamDailyLimit: opts.planLimit === undefined ? 1 : opts.planLimit,
+      }),
+    },
+    examSection: {
+      findMany: jest.fn().mockResolvedValue([
+        {
+          id: SECTION_ID,
+          weightPercent: 100,
+          sortOrder: 1,
+          courses: [{ courseId: COURSE_ID }],
+        },
+      ]),
+    },
+    quizAnswer: { findMany: jest.fn().mockResolvedValue([]) },
+    question: { findMany: jest.fn().mockResolvedValue(rows) },
+    questionVersion: {
+      findMany: jest.fn().mockImplementation(({ where }: { where: { id: { in: string[] } } }) =>
+        Promise.resolve(
+          where.id.in.map((id) => ({
+            id,
+            questionId: `q-${id.slice(2)}`,
+            stem: 'Soru kökü',
+            mediaUrl: null,
+            options: [{ id: `o-${id}`, label: 'A', text: 'Şık' }],
+          })),
+        ),
+      ),
+    },
+    quizSession: {
+      findFirst: jest.fn().mockResolvedValue(opts.yarim ?? null),
+      count: jest.fn().mockResolvedValue(opts.bugunkuSayi ?? 0),
+      create: jest.fn().mockImplementation(({ data }: { data: Record<string, unknown> }) =>
+        Promise.resolve({ id: 'yeni-oturum', mode: data.mode, ...data }),
+      ),
+    },
+  };
+  const service = new QuizService(
+    prisma as never,
+    {} as never,
+    {} as never,
+    { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
+  );
+  return { service, prisma };
+}
+
+const KISISEL = { mode: 'exam', personalExam: true } as const;
+
+describe('QuizService.startPersonalExam — freemium kapısı', () => {
+  it('ücretsiz kullanıcı günlük hakkını kullandıysa REDDEDİLİR', async () => {
+    const { service, prisma } = setupPersonal({ bugunkuSayi: 1 });
+
+    await expect(
+      service.startSession(freeUser, { ...KISISEL, questionCount: 25 } as never),
+    ).rejects.toMatchObject({
+      response: { code: 'PERSONAL_EXAM_LIMIT' },
+    });
+    expect(prisma.quizSession.create).not.toHaveBeenCalled();
+  });
+
+  it('premium kullanıcı aynı gün kaç kez açarsa açsın reddedilmez', async () => {
+    const { service, prisma } = setupPersonal({ bugunkuSayi: 7 });
+
+    const r = await service.startSession(premiumUser, {
+      ...KISISEL,
+      questionCount: 100,
+    } as never);
+
+    expect(r.questions).toHaveLength(100);
+    expect(prisma.quizSession.create).toHaveBeenCalled();
+    // Premium'da plan limiti hiç okunmaz — gereksiz sorgu yok.
+    expect(prisma.plan.findUnique).not.toHaveBeenCalled();
+  });
+
+  it('ücretsiz kullanıcı 100 soru isterse 25 soruyla açılır (eski istemci bozulmaz)', async () => {
+    const { service, prisma } = setupPersonal({ bugunkuSayi: 0 });
+
+    const r = await service.startSession(freeUser, {
+      ...KISISEL,
+      questionCount: 100,
+    } as never);
+
+    expect(r.questions).toHaveLength(25);
+    expect(prisma.quizSession.create).toHaveBeenCalledWith(
+      expect.objectContaining({
+        data: expect.objectContaining({ personalExam: true, totalQuestions: 25 }),
+      }),
+    );
+  });
+
+  it('açılan her kişisel deneme personalExam=true damgasıyla kaydedilir', async () => {
+    const { service, prisma } = setupPersonal({});
+    await service.startSession(premiumUser, { ...KISISEL, questionCount: 50 } as never);
+    expect(prisma.quizSession.create).toHaveBeenCalledWith(
+      expect.objectContaining({ data: expect.objectContaining({ personalExam: true }) }),
+    );
+  });
+
+  it('yarım kalan deneme YENİ hak saymaz — kaldığı yerden devam eder', async () => {
+    const { service, prisma } = setupPersonal({
+      bugunkuSayi: 1, // hak tükenmiş görünüyor…
+      yarim: {
+        id: 'yarim-oturum',
+        startedAt: new Date(Date.now() - 60_000), // 1 dk önce
+        totalQuestions: 25,
+        plannedDurationSeconds: 25 * 75,
+        questionOrder: Array.from({ length: 25 }, (_, i) => `v-${i}`),
+        answers: [{ questionId: 'q-0', selectedOptionId: 'o-1', isCorrect: true }],
+      },
+    });
+
+    // …ama devam eden oturum var: reddedilmez, aynı oturum döner.
+    // (startSession birleşik dönüş tipi taşıyor; devam dalını daraltıyoruz.)
+    const r = (await service.startSession(freeUser, {
+      ...KISISEL,
+      questionCount: 25,
+    } as never)) as {
+      sessionId: string;
+      resumed: boolean;
+      remainingSeconds: number;
+      givenAnswers: unknown[];
+    };
+
+    expect(r.sessionId).toBe('yarim-oturum');
+    expect(r.resumed).toBe(true);
+    expect(r.givenAnswers).toHaveLength(1);
+    expect(r.remainingSeconds).toBeLessThan(25 * 75);
+    expect(prisma.quizSession.create).not.toHaveBeenCalled();
+  });
+
+  it('süresi dolmuş yarım oturum kapatılır ve hakkı GERİ VERMEZ (reroll kapalı)', async () => {
+    const { service, prisma } = setupPersonal({
+      bugunkuSayi: 1,
+      yarim: {
+        id: 'suresi-dolmus',
+        startedAt: new Date(Date.now() - 10 * 60 * 60 * 1000), // 10 saat önce
+        totalQuestions: 25,
+        plannedDurationSeconds: 25 * 75,
+        questionOrder: Array.from({ length: 25 }, (_, i) => `v-${i}`),
+        answers: [],
+      },
+    });
+    const kapat = jest
+      .spyOn(service as unknown as { completeSession: () => Promise<unknown> }, 'completeSession')
+      .mockResolvedValue({});
+
+    await expect(
+      service.startSession(freeUser, { ...KISISEL, questionCount: 25 } as never),
+    ).rejects.toMatchObject({ response: { code: 'PERSONAL_EXAM_LIMIT' } });
+
+    expect(kapat).toHaveBeenCalledWith(freeUser.id, 'suresi-dolmus');
+    expect(prisma.quizSession.create).not.toHaveBeenCalled();
+  });
+
+  it('plan satırındaki limit okunur (panelden deploysuz ayarlanabilir)', async () => {
+    const { service, prisma } = setupPersonal({ bugunkuSayi: 2, planLimit: 3 });
+
+    const r = await service.startSession(freeUser, {
+      ...KISISEL,
+      questionCount: 25,
+    } as never);
+
+    expect(r.questions).toHaveLength(25);
+    expect(prisma.plan.findUnique).toHaveBeenCalledWith({ where: { key: 'free' } });
+  });
+});

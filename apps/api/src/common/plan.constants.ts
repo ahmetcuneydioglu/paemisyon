@@ -16,3 +16,25 @@ export const PREMIUM_PLAN_KEY = 'quarterly';
 
 /** Manuel premium süresi — 3 aylık abonelik karşılığı gün sayısı. */
 export const PREMIUM_GRANT_DAYS = 90;
+
+/**
+ * Kişisel deneme hakkı — ücretsiz plan (Doc 46, 18 Eyl 2026).
+ *
+ * Doğruluk kaynağı yine `plans` tablosudur (key='free',
+ * personal_exam_daily_limit); buradaki değer o satır okunamazsa devreye giren
+ * emniyet ağıdır. Premium'da limit yoktur (null = sınırsız).
+ */
+export const PERSONAL_EXAM_FREE_DAILY_FALLBACK = 1;
+
+/**
+ * Ücretsiz planda bir kişisel denemenin soru tavanı. İstemcide 50/100
+ * seçenekleri zaten kilitli görünür; bu, sunucudaki emniyet kilidi — dağıtılmış
+ * eski istemciler 100 gönderdiğinde hata yerine KIRPILIR (onları bozmamak için).
+ */
+export const PERSONAL_EXAM_FREE_MAX_QUESTIONS = 25;
+
+/**
+ * Bir kişisel denemenin mutlak soru tavanı (premium). Gerçek format 100 soru;
+ * 120 pay bırakır. DTO doğrulaması da bu sabiti kullanır — tek kaynak.
+ */
+export const PERSONAL_EXAM_MAX_QUESTIONS = 120;

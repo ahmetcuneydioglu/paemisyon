@@ -8,10 +8,14 @@ import '../../../core/error/failure.dart';
 import '../../../core/theme/accent_palette.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_tokens.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_skeleton.dart';
 import '../../../shared/widgets/micro_interactions.dart';
+import '../../../shared/widgets/premium_lock.dart';
+import '../../me/data/me_repository.dart';
+import '../../me/domain/dashboard_data.dart';
 import '../data/cikmis_sinav_repository.dart';
 import '../data/exams_repository.dart';
 import '../domain/exam_models.dart';
@@ -382,11 +386,11 @@ class _HeroExamCardState extends State<_HeroExamCard> {
 
 // ── BANA ÖZEL: kullanıcı tetiklemeli ağırlıklı deneme (Doc 18 devamı) ──
 
-class _PersonalExamCard extends StatelessWidget {
+class _PersonalExamCard extends ConsumerWidget {
   final Future<void> Function(String path, [Object? extra]) onOpen;
   const _PersonalExamCard({required this.onOpen});
 
-  Future<void> _pickCount(BuildContext context) async {
+  Future<void> _pickCount(BuildContext context, PersonalExamAllowance hak) async {
     final count = await showModalBottomSheet<int>(
       context: context,
       builder: (ctx) => SafeArea(
@@ -409,18 +413,34 @@ class _PersonalExamCard extends StatelessWidget {
               (50, 'Yarım format · ~1 saat'),
               (100, 'Gerçek format · ~2 saat'),
             ])
-              ListTile(
-                leading: const Icon(Icons.checklist_rounded),
-                title: Text('$n soru'),
-                subtitle: Text(sub),
-                onTap: () => Navigator.pop(ctx, n),
-              ),
+              // Tavanın üstündeki uzunluklar kilitlidir (Doc 46): satır pasif
+              // yapılmaz, Premium'a GÖTÜRÜR — kapalı bir kapı göstermek yerine
+              // nereden açıldığını söylemek daha dürüst.
+              if (n <= hak.maxQuestions)
+                ListTile(
+                  leading: const Icon(Icons.checklist_rounded),
+                  title: Text('$n soru'),
+                  subtitle: Text(sub),
+                  onTap: () => Navigator.pop(ctx, n),
+                )
+              else
+                ListTile(
+                  leading: const Icon(Icons.lock_rounded),
+                  title: Text('$n soru'),
+                  subtitle: Text(sub),
+                  trailing: const PremiumLockBadge(),
+                  onTap: () => Navigator.pop(ctx, -n), // negatif = paywall
+                ),
             const SizedBox(height: AppSpacing.sm),
           ],
         ),
       ),
     );
     if (count == null || !context.mounted) return;
+    if (count < 0) {
+      await onOpen('/paywall');
+      return;
+    }
     await onOpen('/quiz', {
       'personalExam': true,
       'topicName': 'Kişisel Deneme',
@@ -430,10 +450,15 @@ class _PersonalExamCard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final pal = AccentPalette.of(context);
+    // Hak bilgisi alınamazsa kısıtsız varsayılır: asıl kapı sunucudadır
+    // (startPersonalExam), ekran onu tekrar eden bir kural motoru değil.
+    final hak = ref.watch(dashboardProvider).valueOrNull?.personalExam ??
+        const PersonalExamAllowance.sinirsiz();
     return PressableScale(
-      onTap: () => _pickCount(context),
+      onTap: () =>
+          hak.hakkiBitti ? onOpen('/paywall') : _pickCount(context, hak),
       child: Container(
         margin: const EdgeInsets.only(
             top: AppSpacing.sm, bottom: AppSpacing.xs),
@@ -467,12 +492,29 @@ class _PersonalExamCard extends StatelessWidget {
                     'Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan. Sıralamaya girmez.',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
+                  // Ücretsiz planda kalan hak dürüstçe yazılır: kullanıcı
+                  // sheet'i açıp sunucudan hata yemesin (Doc 46).
+                  if (!hak.sinirsiz) ...[
+                    const SizedBox(height: AppSpacing.xs),
+                    Text(
+                      hak.hakkiBitti
+                          ? 'Bugünkü hakkını kullandın — yarın yenileniyor. Premium\'da sınırsız.'
+                          : 'Bugün ${hak.kalan} hakkın var · en çok ${hak.maxQuestions} soru',
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: context.tokens.inkSoft,
+                            fontWeight: FontWeight.w600,
+                          ),
+                    ),
+                  ],
                 ],
               ),
             ),
             const SizedBox(width: AppSpacing.xs),
-            Icon(Icons.chevron_right_rounded,
-                color: Theme.of(context).colorScheme.onSurfaceVariant),
+            if (hak.hakkiBitti)
+              const PremiumLockBadge(solid: true)
+            else
+              Icon(Icons.chevron_right_rounded,
+                  color: Theme.of(context).colorScheme.onSurfaceVariant),
           ],
         ),
       ),

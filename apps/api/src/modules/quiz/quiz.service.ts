@@ -19,7 +19,11 @@ import {
   type CandidateQuestion,
 } from '../admin/exams/exam-autofill.logic';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
-import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+import {
+  FREE_DAILY_LIMIT_FALLBACK,
+  PERSONAL_EXAM_FREE_DAILY_FALLBACK,
+  PERSONAL_EXAM_FREE_MAX_QUESTIONS,
+} from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
@@ -357,6 +361,48 @@ export class QuizService {
       );
     }
 
+    // ── Freemium kapısı (Doc 46) ──
+    // Kişisel deneme, mode='exam' olduğu için günlük soru kotası muafiyetini
+    // yan etki olarak devralıyordu ve premium kapısı hiç yoktu: ücretsiz
+    // kullanıcı günde sınırsız kez 100'lük taze set çözebiliyordu. Kapı burada,
+    // oturum BAŞLARKEN kurulur — kota muafiyeti bilerek korunur, çünkü denemeyi
+    // ortasından kesmek 2 Eyl 2026 kazasının ta kendisidir (bkz. submitAnswer).
+
+    // 1) Soru tavanı (ücretsiz). Fırlatmak yerine KIRPILIR: dağıtılmış eski
+    // istemciler 100 gönderebilir ve onları bozmak istemiyoruz. Yeni
+    // istemcilerde 50/100 ücretsiz kullanıcıya zaten kilitli görünür.
+    if (!user.isPremium) {
+      count = Math.min(count, PERSONAL_EXAM_FREE_MAX_QUESTIONS);
+    }
+
+    // 2) Yarım kalan deneme → kaldığı yerden devam (HERKES için). Sayfa
+    // yenilemek yeni oturum açıyordu: premium kullanıcı ilerlemesini
+    // kaybediyordu, ücretsiz kullanıcı ise hakkını bir yenilemeyle harcardı.
+    // Süre İLK başlangıçtan sayılır — çıkıp girmek ek süre kazandırmaz.
+    const devam = await this.resumePersonalExam(user.id, count);
+    if (devam) return devam;
+
+    // 3) Günlük hak (ücretsiz). BAŞLATILAN oturumlar sayılır, tamamlananlar
+    // değil: aksi hâlde "başlat → soruları gör → bırak → yeniden başlat" ile
+    // set yenilemek (reroll) serbest kalır, kapı hiçbir şey ifade etmezdi.
+    if (!user.isPremium) {
+      const limit = await this.personalExamDailyLimit();
+      const bugunku = await this.prisma.quizSession.count({
+        where: {
+          userId: user.id,
+          personalExam: true,
+          startedAt: { gte: QuizService.gununBasi() },
+        },
+      });
+      if (bugunku >= limit) {
+        throw new ForbiddenException({
+          code: 'PERSONAL_EXAM_LIMIT',
+          message:
+            'Bugünkü kişisel denemeni çözdün. Sınırsız kişisel deneme Premium’da — yarın yeni hakkın açılıyor.',
+        });
+      }
+    }
+
     const sections = await this.prisma.examSection.findMany({
       where: { examTypeId: profile.preferredModuleId, deletedAt: null },
       orderBy: { sortOrder: 'asc' },
@@ -457,6 +503,9 @@ export class QuizService {
       data: {
         userId: user.id,
         mode: 'exam',
+        // Kişisel deneme AÇIK işaretlenir: günlük hak sayımı ve devam etme
+        // bunun üstünden gider (Doc 46). Örtük çıkarım kırılgandı.
+        personalExam: true,
         totalQuestions: chosenIds.length,
         plannedDurationSeconds,
         questionOrder: chosenIds.map((c) => c.versionId),
@@ -467,6 +516,8 @@ export class QuizService {
       sessionId: session.id,
       mode: session.mode,
       plannedDurationSeconds,
+      remainingSeconds: plannedDurationSeconds,
+      resumed: false,
       questions: chosenIds.map((c) => {
         const v = byId.get(c.versionId)!;
         return {
@@ -477,7 +528,93 @@ export class QuizService {
           options: v.options,
         };
       }),
+      givenAnswers: [] as {
+        questionId: string;
+        selectedOptionId: string | null;
+        isCorrect: boolean;
+      }[],
     };
+  }
+
+  /** Günün başı (UTC) — günlük hak sayımının sınırı. */
+  private static gununBasi(): Date {
+    const t = new Date();
+    t.setUTCHours(0, 0, 0, 0);
+    return t;
+  }
+
+  /** Ücretsiz planın günlük kişisel deneme hakkı — 60 sn bellek önbelleği. */
+  private personalExamLimitCache: { limit: number; expiresAt: number } | null = null;
+
+  private async personalExamDailyLimit(): Promise<number> {
+    if (this.personalExamLimitCache && this.personalExamLimitCache.expiresAt > Date.now()) {
+      return this.personalExamLimitCache.limit;
+    }
+    const freePlan = await this.prisma.plan.findUnique({ where: { key: 'free' } });
+    const limit = freePlan?.personalExamDailyLimit ?? PERSONAL_EXAM_FREE_DAILY_FALLBACK;
+    this.personalExamLimitCache = { limit, expiresAt: Date.now() + 60_000 };
+    return limit;
+  }
+
+  /**
+   * Yarım kalan kişisel deneme varsa kaldığı yerden döndürür (Doc 46).
+   *
+   * Süresi dolmuşsa emeği çöpe atmadan KAPATILIR (neti kaydedilir) ve null
+   * döner — ama kapatılan oturum günlük hakkı iade ETMEZ: sayım başlatılan
+   * oturumlar üzerindendir, yoksa "bırak ve yeniden başlat" kapıyı delerdi.
+   *
+   * İstenen soru sayısı tutmuyorsa devam edilmez: kullanıcı bilerek farklı
+   * uzunlukta bir deneme istiyordur. (Ücretsizde sayı zaten 25'e kırpıldığı
+   * için bu dal pratikte premium'a aittir.)
+   */
+  private async resumePersonalExam(userId: string, count: number) {
+    const yarim = await this.prisma.quizSession.findFirst({
+      where: { userId, personalExam: true, status: 'in_progress' },
+      // EN ÇOK İLERLEYEN önce (arşiv denemesiyle aynı gerekçe): eski mükerrer
+      // oturumlarda "en son" kuralı 18 cevaplı dururken 2 cevaplıyı seçebilir.
+      orderBy: [{ answers: { _count: 'desc' } }, { startedAt: 'desc' }],
+      select: {
+        id: true,
+        startedAt: true,
+        totalQuestions: true,
+        plannedDurationSeconds: true,
+        questionOrder: true,
+        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+      },
+    });
+    if (!yarim) return null;
+
+    const planlanan =
+      yarim.plannedDurationSeconds ??
+      yarim.totalQuestions * QuizService.EXAM_SECONDS_PER_QUESTION;
+    const gecen = Math.floor((Date.now() - yarim.startedAt.getTime()) / 1000);
+    const kalan = planlanan - gecen;
+    const order = Array.isArray(yarim.questionOrder)
+      ? (yarim.questionOrder as string[])
+      : [];
+
+    if (kalan > 0 && order.length > 0) {
+      if (yarim.totalQuestions !== count) return null;
+      return {
+        sessionId: yarim.id,
+        mode: 'exam' as const,
+        plannedDurationSeconds: planlanan,
+        remainingSeconds: kalan,
+        resumed: true,
+        questions: await this.questionsFromVersionIds(order),
+        givenAnswers: yarim.answers,
+      };
+    }
+
+    // Süresi dolmuş: netiyle kapat, sonuç "Denemelerim"den görülebilsin.
+    try {
+      await this.completeSession(userId, yarim.id);
+    } catch (e) {
+      this.logger.warn(
+        `Kişisel deneme oturumu kapatılamadı ${yarim.id}: ${(e as Error).message}`,
+      );
+    }
+    return null;
   }
 
   /**
@@ -899,6 +1036,12 @@ export class QuizService {
     // sınavı tamamlayabilen tek kişi premium olandı, üç kişi kotasını gün içinde
     // tükettiği için tek soru bile işaretleyemedi. Kullanıcılar "işaretledim ama
     // kaydolmadı" diye bildirdi; sunucu gerçekten reddediyordu.
+    //
+    // KİŞİSEL DENEME de (mode='exam') bu muafiyetin içindedir ve bu BİLEREK
+    // böyledir (Doc 46): kotası yarılanmış kullanıcıyı 100 soruluk denemenin
+    // ortasında kesmek yukarıdaki kazanın aynısı olurdu. Kişisel denemenin
+    // kapısı BAŞLANGIÇTA kurulur — ücretsiz planda günde 1 hak, en çok 25 soru
+    // (startPersonalExam). Muafiyeti buradan daraltma; kapıyı orada ayarla.
     const gunlukLimiteTabi = session.mode !== 'deneme' && session.mode !== 'exam';
     if (!existing && gunlukLimiteTabi) {
       await this.enforceDailyLimit(user);

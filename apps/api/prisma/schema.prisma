@@ -579,6 +579,8 @@ model Plan {
   currency              String     @default("TRY")
   period                PlanPeriod @default(none)
   dailyQuestionLimit    Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
+  /// Günde kaç kişisel deneme açılabilir (Doc 46); null = sınırsız (premium).
+  personalExamDailyLimit Int?      @map("personal_exam_daily_limit")
   storeProductIdIos     String?    @map("store_product_id_ios")
   storeProductIdAndroid String?    @map("store_product_id_android")
   isActive              Boolean    @default(true) @map("is_active")
@@ -714,6 +716,10 @@ model QuizSession {
   plannedDurationSeconds Int?              @map("planned_duration_seconds")
   // Seçilen soruların sürüm id sırası (JSON dizi) — devam/kaldığı yerden (Doc 27).
   questionOrder          Json?             @map("question_order")
+  /// Kişisel deneme oturumu mu (Doc 46): hedef sınavın müfredat ağırlıklarıyla
+  /// kurulan, sıralamaya girmeyen set. Ücretsiz planda günde 1 hak — sayım bu
+  /// alandan gider. Örtük çıkarım (mode=exam + dört alan NULL) kırılgandı.
+  personalExam           Boolean           @default(false) @map("personal_exam")
   /// Seansın geliş kanalı ("notif" = bildirim derin bağlantısı) — ölçüm.
   source                 String?
   startedAt              DateTime          @default(now()) @map("started_at")
@@ -730,6 +736,8 @@ model QuizSession {
   @@unique([userId, examId])
   @@index([userId])
   @@index([examId, status])
+  // Günlük kişisel deneme hakkının sayımı.
+  @@index([userId, personalExam, startedAt])
   @@map("quiz_sessions")
 }
 

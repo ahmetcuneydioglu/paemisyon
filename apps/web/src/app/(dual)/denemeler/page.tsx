@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { api } from "@/lib/api";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamListItem, MyAttempt } from "@/lib/types";
+import type { MeDashboard } from "@/lib/public-api";
 import { ExamTable } from "@/components/exam-table";
 import { ExamCenter } from "@/components/exam/exam-center";
 
@@ -32,11 +33,15 @@ export default async function DenemelerPage() {
     // özel alanlar HEP null döner. Katılım bilgisi elle birleştirildiği için bu
     // fark uzun süre görünmedi; arşiv sonucu eklenince ortaya çıktı: kullanıcı
     // "arşiv sonucum" girişini hiç göremedi (7 Eylül 2026).
-    const [exams, attempts] = await Promise.all([
+    const [exams, attempts, dashboard] = await Promise.all([
       api<ExamListItem[]>("/exams").catch(() => publicExams),
       api<MyAttempt[]>("/exams/attempts/mine").catch(() => [] as MyAttempt[]),
+      // Kişisel deneme hakkı (Doc 46): kilit/kalan hak buradan kurulur.
+      // Çekilemezse kart eski hâliyle çizilir — sunucudaki kapı zaten asıl
+      // karar noktası; arayüz onu tekrar etmez, yalnız dürüstçe gösterir.
+      api<MeDashboard>("/me/dashboard").catch(() => null),
     ]);
-    return <ExamCenter exams={exams} attempts={attempts} />;
+    return <ExamCenter exams={exams} attempts={attempts} dashboard={dashboard} />;
   }
 
   return (

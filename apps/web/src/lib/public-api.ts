@@ -357,6 +357,22 @@ export interface MeProfile {
   validUntil: string | null;
 }
 
+/**
+ * GET /me/dashboard — web'de yalnız kişisel deneme hakkı için kullanılır
+ * (Doc 46). Mobil aynı uca `DashboardData` ile bağlanır; alanlar ortaktır.
+ */
+export interface MeDashboard {
+  isPremium: boolean;
+  today: { answered: number; dailyLimit: number | null };
+  daily: { playedToday: boolean };
+  personalExam: {
+    usedToday: number;
+    /** null = sınırsız (premium). */
+    dailyAllowance: number | null;
+    maxQuestions: number;
+  };
+}
+
 export interface BadgeCatalog {
   earnedCount: number;
   totalCount: number;

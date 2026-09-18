@@ -1,5 +1,8 @@
 import Link from "next/link";
 import type { ExamListItem, MyAttempt } from "@/lib/types";
+import type { MeDashboard } from "@/lib/public-api";
+import { PremiumBadge } from "@/components/ui/premium-badge";
+import { personalExamState } from "@/lib/personal-exam";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { CoachRail } from "@/components/shell/coach-rail";
@@ -13,9 +16,12 @@ import { formatDate, formatTime } from "@/lib/format";
 export function ExamCenter({
   exams,
   attempts,
+  dashboard = null,
 }: {
   exams: ExamListItem[];
   attempts: MyAttempt[];
+  /** Kişisel deneme hakkı (Doc 46); çekilemediyse kart kısıtsız çizilir. */
+  dashboard?: MeDashboard | null;
 }) {
   const active = exams.find((e) => e.state === "active");
   const upcoming = [...exams]
@@ -89,31 +95,7 @@ export function ExamCenter({
         )}
 
         {/* Bana özel deneme: randevu beklemeden, müfredat ağırlıklarıyla */}
-        <Card className="mb-5">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="min-w-0">
-              <p className="font-heading text-[15px] font-bold text-ink">
-                ⚡ Bana özel deneme
-              </p>
-              <p className="mt-0.5 text-[13px] text-ink-soft">
-                Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan.
-                Sıralamaya girmez.
-              </p>
-            </div>
-            <div className="flex gap-2">
-              {[25, 50, 100].map((n) => (
-                <ButtonLink
-                  key={n}
-                  href={`/sinav/kisisel?count=${n}`}
-                  variant={n === 100 ? "primary" : "secondary"}
-                  size="sm"
-                >
-                  {n} soru
-                </ButtonLink>
-              ))}
-            </div>
-          </div>
-        </Card>
+        <PersonalExamCard dashboard={dashboard} />
 
         {/* Yaklaşan takvim */}
         {upcoming.length > 1 && (
@@ -239,5 +221,77 @@ export function ExamCenter({
 
       <CoachRail />
     </div>
+  );
+}
+
+/**
+ * "Bana özel deneme" kartı (Doc 46 sonrası): ücretsiz planda günde 1 hak ve
+ * 25 soru tavanı vardır. Kilit arayüzde DÜRÜSTÇE gösterilir — kullanıcı
+ * butona basıp sunucudan hata yemesin. Asıl karar noktası yine sunucudur
+ * (startPersonalExam); burası onu tekrar eden bir kural motoru değil, aynaya
+ * bakan bir ekrandır: `dashboard` yoksa kart eski kısıtsız hâlinde çizilir.
+ */
+function PersonalExamCard({ dashboard }: { dashboard: MeDashboard | null }) {
+  const { sinirsiz, kalan, hakkiBitti, secenekler } = personalExamState(dashboard);
+
+  return (
+    <Card className="mb-5">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="min-w-0">
+          <p className="font-heading text-[15px] font-bold text-ink">⚡ Bana özel deneme</p>
+          <p className="mt-0.5 text-[13px] text-ink-soft">
+            Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan. Sıralamaya
+            girmez.
+          </p>
+          {!sinirsiz && (
+            <p className="mt-1.5 text-[13px] text-ink-soft">
+              {hakkiBitti ? (
+                <>Bugünkü hakkını kullandın — yarın yenileniyor.</>
+              ) : (
+                <>
+                  Bugün <strong className="text-ink">{kalan} hakkın</strong> var.
+                </>
+              )}{" "}
+              <Link href="/premium" className="font-bold text-brand hover:underline">
+                Premium&apos;da sınırsız
+              </Link>
+            </p>
+          )}
+        </div>
+
+        {hakkiBitti ? (
+          <ButtonLink href="/premium" size="sm">
+            Premium&apos;a geç
+          </ButtonLink>
+        ) : (
+          <div className="flex flex-wrap items-center gap-2">
+            {secenekler.map(({ sayi, kilitli, birincil }) =>
+              kilitli ? (
+                // Tavanın üstü: kapalı buton değil, Premium'a giden dürüst bir
+                // bağlantı — tıklanabilir olduğu için dokunma hedefi korunur.
+                <Link
+                  key={sayi}
+                  href="/premium"
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-dashed border-line px-3 text-[14px] font-bold text-ink-soft transition-colors hover:border-brand/50 hover:text-ink"
+                  title={`${sayi} soruluk kişisel deneme Premium'a özel`}
+                >
+                  {sayi} soru
+                  <PremiumBadge variant="soft" />
+                </Link>
+              ) : (
+                <ButtonLink
+                  key={sayi}
+                  href={`/sinav/kisisel?count=${sayi}`}
+                  variant={birincil ? "primary" : "secondary"}
+                  size="sm"
+                >
+                  {sayi} soru
+                </ButtonLink>
+              ),
+            )}
+          </div>
+        )}
+      </div>
+    </Card>
   );
 }
