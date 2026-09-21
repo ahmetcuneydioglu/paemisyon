@@ -16,13 +16,22 @@
  *     sessizce geçmesin (denetim-yayinla.ts'teki ölçütün aynısı).
  *   • Zaten yayındaki sürüm arşivlenir (sürümleme kuralı korunur).
  *
+ * İKİ AŞAMA, AYRI ANAHTARLAR — panelin iki ayrı düğmesiyle birebir aynı:
+ *   1. Soru sürümlerini yayına al (varsayılan).
+ *   2. DONEM=1 ile dönemin kendisini yayına al; public sayfa ancak o zaman
+ *      açılır. Ayrı tutuluyor çünkü sayfayı görünür yapmadan ÖNCE vitrin
+ *      seçilmeli ve motor bağlanmalı — yoksa aday boş bir sayfayla karşılaşır.
+ *
  *   npx tsx scripts/cikmis-sinav-yayinla.ts paem-10-2026
  *   APPLY=1 npx tsx scripts/cikmis-sinav-yayinla.ts paem-10-2026
+ *   APPLY=1 DONEM=1 npx tsx scripts/cikmis-sinav-yayinla.ts paem-10-2026
  */
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 const APPLY = process.env.APPLY === '1';
+/** Dönemin kendisini (public sayfayı) yayına alır — soru sürümlerinden ayrı karar. */
+const DONEM = process.env.DONEM === '1';
 
 /** Türkçe karakter YOĞUNLUĞU ölçütü: düzgün Türkçe metinde bu harfler
  *  ~%4-8 orandadır, eşik kasten çok düşük. Tek karakter aramak yetmiyor,
@@ -39,10 +48,12 @@ async function main() {
     where: { slug },
     select: {
       id: true, name: true, status: true,
+      examId: true,
       questions: {
         orderBy: { orderNo: 'asc' },
+        where: {},
         select: {
-          orderNo: true, cancelled: true,
+          orderNo: true, cancelled: true, publicly: true,
           question: {
             select: {
               id: true,
@@ -77,6 +88,8 @@ async function main() {
     yayinlanacak.push({ id: v.id, no: q.orderNo });
   }
 
+  const vitrin = sinav.questions.filter((q) => q.publicly).length;
+  console.log(`vitrinde     : ${vitrin} soru · motor: ${sinav.examId ? 'bağlı' : 'YOK'}`);
   console.log(`yayınlanacak : ${yayinlanacak.length}`);
   console.log(`zaten yayında: ${zaten.length}`);
   console.log(`engelli      : ${engel.length}`);
@@ -84,7 +97,9 @@ async function main() {
 
   if (!APPLY) return console.log('\n(kuru çalışma — APPLY=1 ile yayınlanır)');
   if (engel.length) throw new Error('engelli soru varken yayın yapılmaz');
-  if (!yayinlanacak.length) return console.log('\nyapılacak bir şey yok.');
+  // Yayınlanacak sürüm kalmamış olması DÖNEM aşamasını atlatmaz: script çoğu
+  // zaman iki kez çalışır (önce sürümler, vitrin/motor kurulduktan sonra dönem).
+  if (!yayinlanacak.length && !DONEM) return console.log('\nyapılacak bir şey yok.');
 
   const simdi = new Date();
   let n = 0;
@@ -114,7 +129,21 @@ async function main() {
     });
     n++;
   }
-  console.log(`\n✓ ${n} soru yayına alındı · ${slug}`);
-  console.log('Sıradaki: panelden "Yayına al" (dönem görünürlüğü) ve "Motora bağla".');
+  if (n) console.log(`\n✓ ${n} soru yayına alındı · ${slug}`);
+
+  if (!DONEM) {
+    return console.log(
+      '\nDönem hâlâ kapalı. Public sayfayı açmak için önce vitrini seç ve motora bağla,\n' +
+        `sonra: APPLY=1 DONEM=1 npx tsx scripts/cikmis-sinav-yayinla.ts ${slug}`,
+    );
+  }
+  // Sayfa görünür olmadan önce eksiksiz olmalı: boş bir vitrin ya da bağlanmamış
+  // bir motor, aramadan gelen adayı ilk ziyarette kaybettirir.
+  if (!vitrin) throw new Error('vitrinde soru yok — önce cikmis-vitrin-sec.ts çalıştır');
+  if (!sinav.examId) throw new Error('motor bağlı değil — önce cikmis-sinav-motora-bagla.ts çalıştır');
+  if (sinav.status === 'published') return console.log('\nDönem zaten yayında.');
+
+  await prisma.pastExam.update({ where: { id: sinav.id }, data: { status: 'published' } });
+  console.log(`\n✓ DÖNEM YAYINDA · /paem-cikmis-sorular/${slug}`);
 }
 main().finally(() => prisma.$disconnect());
