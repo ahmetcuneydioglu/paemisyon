@@ -1,0 +1,122 @@
+[
+ {
+  "no": 81,
+  "aciklama": "Bloğun \"Dönme Dolap ve Çarpışan Arabalara ikişer kişi binmiştir\" öncülü Korku Tüneli'ne tek kişi bırakır. Aynı oyuncağa binen Efe ile Mert ancak iki kişilik bir oyuncakta olabilir ve Çarpışan Arabalar'daki iki yerin biri Lale'nin olduğundan Efe ile Mert Dönme Dolap'tadır. Efe ile Mert farklı bilet türünde olduğuna göre biri Tam Gün, biri Yarım Gün'dür; geriye Gizem, Koray ve Lale'ye 2 Tam Gün + 1 Yarım Gün kalır. Gizem ile Koray aynı türde olduğu için ikisi birden Yarım Gün olamaz (o zaman Yarım Gün sayısı 3'e çıkardı), demek ki Gizem = Koray = Tam Gün, Lale = Yarım Gün'dür. Böylece Koray kesin Tam Gün'dür, Mert Tam Gün olabilir, Lale olamaz: I ve III (E).",
+  "kaynak": "öncül eleme (oyuncak kapasitesi + bilet sayısı kısıtı)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 82,
+  "aciklama": "Belirleyici öncül iki oyuncağa ikişer kişi binmiş olmasıdır: Çarpışan Arabalar'ın iki yerinden biri Lale'ye ait olduğu için orada tek yer kalır ve aynı oyuncağa binmesi gereken Efe ile Mert oraya sığmaz; ikisi de zorunlu olarak Dönme Dolap'tadır. Yani Efe'nin oyuncağı kesindir. Geriye Gizem ile Koray kalır, biri Çarpışan Arabalar'daki boş yere, diğeri tek kişilik Korku Tüneli'ne gider; ancak öncüllerin hiçbiri hangisinin nereye gittiğini söylemez, bilet bilgisi de (ikisi de Tam Gün) bu ayrımı yapmaya yaramaz. Bu yüzden yalnız Efe kesindir (A); II ve III'ü de işaretleyen şıklar bu belirsizliği atlar.",
+  "kaynak": "öncül eleme (zorunlu yerleşim)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 83,
+  "aciklama": "Öncüller tabloyu iki noktada açık bırakır: (1) Gizem ile Koray'dan hangisi Çarpışan Arabalar'da, hangisi Korku Tüneli'nde; (2) farklı bilet taşıyan Efe ile Mert'ten hangisi Tam Gün aldı. Geri kalan her şey öncüllerden çıkıyor (Efe ile Mert Dönme Dolap'ta, Lale Çarpışan Arabalar'da, Gizem ile Koray Tam Gün, Lale Yarım Gün). Tam belirlenim için bu iki boşluğu birden kapatan bilgi gerekir: Mert'in bileti ikincisini kapatır (Efe otomatik olarak diğer tür olur), Koray'ın bindiği oyuncak da birincisini (B). A ve D'deki bilet bilgileri ile E'nin tamamı zaten bilinen şeyleri tekrarlar; C'de ise Mert'in oyuncağı (Dönme Dolap) baştan bellidir, dolayısıyla yalnız bilet belirsizliğini kapatır.",
+  "kaynak": "öncül eleme (belirsizlik sayımı — yeterlilik sınaması)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 84,
+  "aciklama": "\"Mouse, yazıcı ve web kamerası farklı mağazalardan\" öncülü ile yazıcının Donanımhane'de olması, mouse ile web kamerasını Sanaltek ve Dijicep'e dağıtır; web kamerası Sanaltek'ten alınmadığına göre web kamerası Dijicep'te, mouse Sanaltek'tedir. Bu noktada Sanaltek'te monitör + mouse, Dijicep'te kulaklık + web kamerası, Donanımhane'de yazıcı vardır. Dijicep ile Donanımhane'nin ürün sayısı eşit olacağından klavye ile hoparlörden biri Sanaltek'e, diğeri Donanımhane'ye gitmek zorundadır (ikisi de aynı yere gitse eşitlik bozulur). Kök mouse ile hoparlörü aynı mağazaya bağladığı için hoparlör Sanaltek'te, klavye de Donanımhane'de, yani yazıcıyla aynı mağazadadır (A). Bu dünyada Sanaltek'ten üç, Dijicep'ten iki ürün alındığı için D ve E yanlıştır.",
+  "kaynak": "öncül eleme (eşit ürün sayısı kısıtı)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 85,
+  "aciklama": "Mouse'un yeri ek bir bilgiye gerek kalmadan belirlenir: mouse, yazıcı ve web kamerası farklı mağazalardan alındığı ve yazıcı Donanımhane'de olduğu için mouse ile web kamerası Sanaltek ile Dijicep'i paylaşır; \"web kamerasını Sanaltek'ten almamıştır\" öncülü de web kamerasını Dijicep'e, mouse'u Sanaltek'e sabitler. Bu yüzden A ve E baştan yanlış, B ise her durumda doğrudur. Geriye yalnız klavye ile hoparlörün yeri kalır; Dijicep ile Donanımhane'nin ürün sayısı eşit olacağından bunlardan biri Sanaltek'e, diğeri Donanımhane'ye düşer. Hoparlör bu iki dünyanın birinde Sanaltek'te, diğerinde Donanımhane'de olduğu için C kesin değildir; Dijicep'e hiç giremediğinden D zaten yanlıştır.",
+  "kaynak": "öncül eleme (kesinlik sınaması)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 86,
+  "aciklama": "Öncüller yerleşimi iki dünyaya indirir: monitör ve mouse Sanaltek'te, kulaklık ve web kamerası Dijicep'te, yazıcı Donanımhane'de sabittir; Dijicep ile Donanımhane'nin ürün sayısı eşit olacağından klavye ile hoparlörden biri Sanaltek'e, diğeri Donanımhane'ye düşer. Yani hoparlör ya Sanaltek'te ya Donanımhane'dedir, Dijicep'te asla bulunamaz; kulaklık ise öncülle Dijicep'e bağlı olduğundan kulaklık ile hoparlör aynı mağazadan alınmış olamaz (A). Çeldiriciler iki dünyadan birinde gerçekleşir: hoparlör Donanımhane'de iken B, klavye Sanaltek'te iken C, klavye Donanımhane'de iken D doğrudur. E'deki kulaklık ile web kamerası ise her iki dünyada da zaten aynı mağazadadır.",
+  "kaynak": "öncül eleme (olası dünyaların taranması)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 87,
+  "aciklama": "Ayşe = Ece ve Belinay = Derya öncülleri ikişerli iki grup kurar; Ece'de Safari bulunduğundan Ayşe–Ece ikilisi ya Safari+Rafting ya Safari+Yamaç'tır. Belirleyici öncül ise raftingin en çok seçilen aktivite olmasıdır. Ayşe–Ece Safari+Yamaç olsaydı, Ceyda da Safari seçtiğine göre safari 3'e çıkar, rafting ise en çok 3'te kalır ve öne geçemezdi; demek ki Ayşe = Ece = Safari+Rafting. Belinay–Derya'nın Safari içeren her seçimi ise safariyi 5 kişiye çıkarıp raftingi geçmesine engel olur, dolayısıyla onlara tek seçenek kalır: Rafting+Yamaç. Ceyda ise Safari'nin yanına raftingi de yamaç paraşütünü de alabilir. Kesin bilinenler Derya ile Ece'dir (E); Ceyda'yı kesin sayan şıklar hatalıdır.",
+  "kaynak": "öncül eleme (\"en çok seçilen\" kısıtı)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 88,
+  "aciklama": "Öncüller iki dünya bırakır: Ayşe = Ece = Safari+Rafting ve Belinay = Derya = Rafting+Yamaç sabittir, serbest kalan tek kişi Ceyda'dır ve o da Safari'nin yanına rafting ya da yamaç paraşütü alır. Kökteki \"toplam üç arkadaş aynı iki aktiviteyi yapmıştır\" bilgisi ancak Ceyda'nın da Safari+Rafting seçtiği dünyada sağlanır (Ayşe, Ece, Ceyda); öbür dünyada en büyük grup iki kişiliktir. Demek ki Ceyda rafting yapmaktadır (C). Aynı dünyada Ayşe yamaç paraşütü yapmaz (A yanlış), Derya yapar (B yanlış), Ece rafting yapar (D yanlış), Belinay'ın ikilisi Rafting+Yamaç olduğu için safari seçmemiştir (E yanlış).",
+  "kaynak": "öncül eleme (ek koşulla dünya seçimi)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 89,
+  "aciklama": "Raftingin en çok seçilen aktivite olması öncülü Ayşe = Ece = Safari+Rafting ve Belinay = Derya = Rafting+Yamaç'ı sabitler; geriye tek serbest kişi olarak Ceyda kalır ve onun Safari seçtiği zaten öncülle verilmiştir. Ceyda ikinci aktivite olarak ne seçerse seçsin safari yapanlar Ayşe, Ece ve Ceyda'dan ibaret kalır; yani safari sayısı her iki dünyada da 3'tür ve kesin olan tek ifade budur (D). Ceyda rafting seçerse rafting 5, yamaç paraşütü 2; yamaç paraşütü seçerse rafting 4, yamaç paraşütü 3 olur — bu yüzden A, B ve C kesin değildir. E ise hiçbir dünyada gerçekleşmez.",
+  "kaynak": "öncül eleme (dünyalar arası sabit sayım)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 90,
+  "aciklama": "Raftingin en çok seçilen aktivite olması öncülü Belinay = Derya ikilisini Rafting+Yamaç'a, Ayşe = Ece ikilisini Safari+Rafting'e sabitler. Belinay yamaç paraşütünü zaten kesin yapmaktadır, dolayısıyla \"seçmiş olabilir\" sorusunda sayılır. Ceyda'nın Safari yanındaki ikinci aktivitesi serbesttir ve yamaç paraşütünü seçtiği dünya da tutarlıdır: o dünyada rafting 4 kişiyle yine en çok seçilen aktivitedir. Ece ise her iki dünyada da Safari+Rafting yaptığı için yamaç paraşütüne giremez. Cevap I ve II (C); soru \"kesin\" değil \"olabilir\" dediği için Belinay'ın kesinliği onu elemez, aksine dâhil eder.",
+  "kaynak": "öncül eleme (olabilirlik sınaması)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 91,
+  "aciklama": "Kâr oranı satış fiyatı üzerinden değil maliyet üzerinden hesaplanır: 350 = maliyet × 1,25 olduğundan karışımın kilogram maliyeti 280 TL'dir. Karışımın maliyeti bileşenlerin ağırlıklı ortalamasıdır: (200x + 320y)/(x + y) = 280 ⇒ 200x + 320y = 280x + 280y ⇒ 40y = 80x ⇒ y = 2x (D). Denetim: x = 1, y = 2 için maliyet (200 + 640)/3 = 280 TL, satış 350 TL, kâr 70/280 = %25 ✓. Adayın takıldığı yer kârı satıştan düşüp maliyeti 350 × 0,75 = 262,5 TL almaktır; bu kurulum y ≈ 1,09x verir ve hiçbir şıkka oturmaz.",
+  "kaynak": "karışım maliyeti + maliyet üzerinden kâr oranı",
+  "kaynakUrl": null
+ },
+ {
+  "no": 92,
+  "aciklama": "Dizide sabit bir fark ya da sabit bir oran yoktur; kural, her adımda bir artan çarpan ile onu bir geriden izleyen çıkarmadır: 3·2 − 1 = 5, 5·3 − 2 = 13, 13·4 − 3 = 49. Sıradaki adımda çarpan 5, çıkan 4 olur: 49·5 − 4 = 241 (E). Aynı kural (a − 1)·n + 1 biçiminde de yazılabilir ve aynı sonucu verir: (49 − 1)·5 + 1 = 241. Yalnız çarpmayı uygulayıp 49·5 = 245 diyen aday şıklarda bu sayıyı bulamaz; çıkan sayının da her adımda 1 arttığını (1, 2, 3, 4) hesaba katmak gerekir. Şıklardaki diğer sayılar dizinin hiçbir adımıyla tutarlı değildir.",
+  "kaynak": "sayı dizisi kuralı (artan çarpan — artan çıkan)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 93,
+  "aciklama": "Çubuğun uzunluğuna L dersek 8 eşit parçada bir parça L/8, 16 eşit parçada L/16'dır. \"Her parça 12 cm daha kısa olsaydı 16 parça olurdu\" ifadesi bu iki uzunluğu birbirine bağlar: L/8 − 12 = L/16 ⇒ L/8 − L/16 = 12 ⇒ L/16 = 12 ⇒ L = 192 cm. Altı eşit parçaya ayrılınca bir parça 192/6 = 32 cm olur (B). Denetim: 192/8 = 24 cm, 24 − 12 = 12 cm ve 192/16 = 12 cm ✓. Sık yapılan hata 12 cm'yi çubuğun toplam kısalması sanmak ya da 8 parçalı hâldeki 24 cm'de durmaktır; soru 6 parçalı hâli istiyor.",
+  "kaynak": "eşit parça uzunluğu denklemi",
+  "kaynakUrl": null
+ },
+ {
+  "no": 94,
+  "aciklama": "İki kural örneklerden okunur. ✳: ortadaki rakam yazılır, yanına ilk ve son rakamın çarpımı eklenir — ✳743 → 4 ve 7·3 = 21, yani 421; ✳685 → 8 ve 6·5 = 30, yani 830. ●: ortadaki ile son rakamın toplamı yazılır, yanına ilk rakam eklenir — ●259 → 5 + 9 = 14 ve 2, yani 142; ●768 → 6 + 8 = 14 ve 7, yani 147. Kuralı verilen iç içe örnek doğrular: ●457 = (5 + 7) ve 4 = 124, ardından ✳124 = 2 ve 1·4 = 4 ⇒ 24 ✓. Aynı sırayla ✳863 = 6 ve 8·3 = 24 ⇒ 624; sonra ●624 = (2 + 4) ve 6 ⇒ 66 (A). İşlemleri dıştan içe uygulayan aday şaşar; önce parantez içindeki ✳ çalışır.",
+  "kaynak": "bağıntı kuralının örneklerden türetilmesi (iç içe örnekle doğrulama)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 95,
+  "aciklama": "Şekilde n×n birim karelik ızgaranın her birim kenarı bir kibrit çöpüdür: (n + 1) yatay çizginin her birinde n çöp, (n + 1) dikey çizginin her birinde n çöp bulunur; toplam 2n(n + 1). Formül verilen iki şekille sınanır: n = 2 için 2·2·3 = 12 ✓, n = 3 için 2·3·4 = 24 ✓. Buradan 2n(n + 1) = 312 ⇒ n(n + 1) = 156 = 12·13 ⇒ n = 12, yani 12×12 birimlik bir kare oluşturulur (B). Çeldirici, her kareyi 4 çöple sayıp 4n² = 312 kurmaktır; bu sayım iç çubukları iki kez saydığı için yanlıştır ve n² = 78 ile tam sayı bile vermez.",
+  "kaynak": "kibrit çöpü sayısı 2n(n+1)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 96,
+  "aciklama": "Ortalama hız, hızların aritmetik ortalaması değil toplam yolun toplam süreye bölümüdür; gidiş ile dönüş mesafeleri eşit olduğundan sonuç harmonik ortalamaya iner: 2·80·x/(80 + x) = 60. Buradan 160x = 4800 + 60x ⇒ 100x = 4800 ⇒ x = 48 km/sa (E). Denetim: tek yön 240 km alınırsa gidiş 240/80 = 3 saat, dönüş 240/48 = 5 saat; 480/8 = 60 km/sa ✓. (80 + x)/2 = 60 kurup x = 40 bulan aday A şıkkına düşer; mesafeler eşit olsa da düşük hızda daha çok zaman geçtiği için süreler eşit değildir ve basit ortalama geçersizdir.",
+  "kaynak": "harmonik ortalama (eşit mesafede ortalama hız)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 97,
+  "aciklama": "Yaş farkları sabittir: Galip doğduğunda Fatih 5, Halil 8 yaşında olduğuna göre Fatih = Galip + 5 ve Halil = Galip + 8'dir. Toplam koşulu (G + 5) + G + (G + 8) = 25 ⇒ 3G = 12 ⇒ Galip 4, Fatih 9, Halil 12 verir. Üçüncü koşul da tutar: Fatih ile Halil'in farkı 3, Galip'in yaşının yarısından 1 fazlası da 4/2 + 1 = 3 ✓. Soru bugünü değil geçmişi soruyor: Fatih'in Galip'in yaşında, yani 4 olduğu yıl bugünden 5 yıl öncedir ve o yıl Halil 12 − 5 = 7 yaşındadır (A). Bugünkü 12'yi ya da 8'i işaretleyen aday zaman kaydırmasını atlamış olur.",
+  "kaynak": "sabit yaş farkı denklemi",
+  "kaynakUrl": null
+ },
+ {
+  "no": 98,
+  "aciklama": "I. dizi ×3 ile −2'yi dönüşümlü uygular ve çarpmayla başlar: 2·3 = 6, 6 − 2 = 4, 4·3 = 12, 12 − 2 = 10… II. dizi aynı işlem çiftini kullanır ama çıkarmayla başlar: 5 − 2 = 3, 3·3 = 9, 9 − 2 = 7, 7·3 = 21… Yani aradaki ilişki \"aynı iki işlem, başlangıcı ters çevrilmiş\" olmasıdır. III. dizi ×2 ile −1'i dönüşümlü uygular ve çarpmayla başlar (3·2 = 6, 6 − 1 = 5, 5·2 = 10…); aranan dizi bu çifti çıkarmayla başlatmalıdır. D tam olarak budur: 7 − 1 = 6, 6·2 = 12, 12 − 1 = 11, 11·2 = 22, 22 − 1 = 21, 21·2 = 42. C sıralamayı doğru çevirir ama işlem çiftini ×3/−1 yapar, E ise ×2/−2 kullanır; ikisi de benzeşimi bozar.",
+  "kaynak": "dizi kuralı benzeşimi (işlem çifti + başlangıç işlemi)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 99,
+  "aciklama": "Kuyruğun başı gişe tarafıdır; Ahmet gişeden daha uzakta olduğuna göre Behçet, Ahmet'in önündedir. Ahmet baştan 13. ve aralarında 5 kişi varsa Behçet baştan 13 − 5 − 1 = 7. kişidir. Behçet aynı zamanda sondan 8. olduğuna göre toplam kişi sayısı 7 + 8 − 1 = 14'tür; Behçet iki sayımda da yer aldığı için 1 çıkarılır (A). Denetim: 14 kişilik kuyrukta 7. sıradaki Behçet gerçekten sondan 8.'dir ve 8–12. sıralardaki 5 kişi ikisinin arasında kalır ✓. Ahmet'i öne alan ters okuma Behçet'i 19. sıraya, toplamı 26'ya taşır; kökteki \"gişeden daha uzakta\" ifadesi tam da bu okumayı kapatmak için konmuştur.",
+  "kaynak": "kuyruk sıralaması (baştan/sondan sayımda ortak kişiyi bir kez sayma)",
+  "kaynakUrl": null
+ },
+ {
+  "no": 100,
+  "aciklama": "Önce birim hızlar bulunur: 6 işçi işi 10 günde bitiriyorsa iş 6·10 = 60 işçi-gün eder, yani 1 işçi günde işin 1/60'ını yapar; 5 çırak 18 günde bitiriyorsa iş 5·18 = 90 çırak-gün eder ve 1 çırak günde 1/90'ını yapar. Birlikte günlük hızları 1/60 + 1/90 = 3/180 + 2/180 = 1/36'dır, yani işin tamamını 36 günde bitirirler. İstenen işin 3/4'ü olduğuna göre süre 36 · 3/4 = 27 gündür (C). Çeldirici, verilen 10 ile 18 gününü doğrudan tek kişilik süre sanıp 1/10 + 1/18 kurmaktır; o günler 6 ve 5 kişilik ekiplere aittir, tek kişiye bölünmeden kullanılamaz.",
+  "kaynak": "iş-işçi (birim iş hızı) + işin kesirli kısmı",
+  "kaynakUrl": null
+ }
+]
