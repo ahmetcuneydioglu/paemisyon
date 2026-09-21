@@ -1,0 +1,222 @@
+[
+ {
+  "no": 81,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "DD ve ÇA 2'şer kişi ⇒ KT 1 kişi. Efe-Mert aynı oyuncakta ve o oyuncak 2 kişilik olmalı; ÇA'da Lale olduğu için Efe+Mert=Dönme Dolap. Efe ile Mert farklı bilet ⇒ 1 TG + 1 YG; kalan 3 TG'nin 2'si Gizem-Koray (aynı tür), aksi halde YG sayısı 3 olurdu ⇒ Gizem=Koray=TG, Lale=YG. Koray kesin TG, Mert TG olabilir, Lale olamaz.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 82,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Efe ve Mert zorunlu olarak Dönme Dolap'tadır (ÇA'yı Lale doldurduğu için 2 kişilik ikinci oyuncak DD'dir); Gizem ile Koray'dan biri ÇA'da biri KT'de olup hangisinin nerede olduğu belirlenemez. Dolayısıyla yalnız Efe'nin oyuncağı kesindir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 83,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Belirsiz kalan iki şey var: (1) Gizem/Koray'dan hangisi ÇA hangisi KT, (2) Efe/Mert'ten hangisi TG. Yalnız B şıkkı iki belirsizliği birden kapatır; A, D, E zaten bilinen bilgiyi (Gizem/Koray TG, Lale YG) tekrarlar, C'de Mert'in oyuncağı zaten bilinir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 84,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Mouse-yazıcı-webkamerası farklı mağazalardan ve yazıcı Donanımhane'de ⇒ mouse ile webkamerası S ve D'ye dağılır; webkamerası Sanaltek değil ⇒ webkamerası=Dijicep, mouse=Sanaltek. Eşit sayı (D=H) koşulu klavye/hoparlör için yalnız iki dünya bırakır: {klavye S, hoparlör H} veya {klavye H, hoparlör S}. Mouse ile hoparlör aynı mağazadan ⇒ hoparlör Sanaltek ⇒ klavye Donanımhane ⇒ klavye ile yazıcı aynı mağazada.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 85,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Mouse'un Sanaltek'te olduğu öncüllerden tek başına çıkar (webkamerası Sanaltek olamaz, mouse ve webkamerası yazıcıdan ve birbirinden farklı mağazada olmalı). Hoparlörün yeri (S ya da H) iki dünyada değiştiğinden C ve D kesin değildir; A ve E yanlıştır.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 86,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Kulaklık kesin Dijicep'te; hoparlör ise iki olası dünyada yalnız Donanımhane ya da Sanaltek'te olabilir, Dijicep'te hiç olamaz ⇒ bu çift aynı mağazadan olamaz. B, C, D dünyalardan birinde gerçekleşir; E (kulaklık+webkamerası) ise her zaman Dijicep'tedir.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 87,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Ayşe=Ece ve Belinay=Derya, Ceyda ile Ece'de Safari var. Rafting'in TEK BAŞINA en çok seçilen olması koşulu yalnız iki dünya bırakır: Ayşe=Ece=Safari+Rafting, Belinay=Derya=Rafting+Yamaç, Ceyda ise Safari+Rafting ya da Safari+Yamaç. Derya ile Ece her iki dünyada da sabit, Ceyda değil.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 88,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Üç kişinin aynı ikiliyi yapması yalnız Ceyda'nın da Safari+Rafting seçtiği dünyada mümkündür (Ayşe, Ece, Ceyda); diğer dünyada en büyük grup ikişer kişiliktir. O dünyada Ceyda Rafting yapar; Ayşe ve Ece yamaç paraşütü yapmaz, Derya yapar, Belinay Safari yapmaz.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 89,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "İki olası dünyada Safari sayısı her ikisinde de 3'tür (Ayşe, Ece + Ceyda). Rafting 5 ya da 4, yamaç paraşütü 2 ya da 3 olduğundan A, B, C kesin değildir; E yanlıştır.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 90,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm (öncüllerden türetildi)",
+  "kaynakUrl": null,
+  "gerekce": "Belinay her iki dünyada da Rafting+Yamaç yapar (kesin yapar, dolayısıyla yapabilir); Ceyda dünyalardan birinde Safari+Yamaç seçer; Ece ise her iki dünyada Safari+Rafting olduğu için yamaç paraşütü seçemez.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 91,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm (aritmetik — karışım ve kâr)",
+  "kaynakUrl": null,
+  "gerekce": "%25 kârla 350 TL ⇒ karışımın maliyeti 350/1,25 = 280 TL/kg. (200x + 320y)/(x+y) = 280 ⇒ 40y = 80x ⇒ y = 2x. Doğrulama: x=1, y=2 için maliyet (200+640)/3 = 280 ✓.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 92,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm (sayı dizisi kuralı)",
+  "kaynakUrl": null,
+  "gerekce": "Kural çarpanın artıp çıkanın izlediği düzendir: 3·2−1=5, 5·3−2=13, 13·4−3=49 ⇒ 49·5−4 = 241. Aynı sonuç (a−1)·n+1 biçiminde de çıkar: (13−1)·4+1=49, (49−1)·5+1=241. Diğer şıkların hiçbiri tutarlı bir kuralla üretilemiyor.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 93,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm (denklem)",
+  "kaynakUrl": null,
+  "gerekce": "L/8 − 12 = L/16 ⇒ L/16 = 12 ⇒ L = 192 cm. 6 eşit parça ⇒ 192/6 = 32 cm. Doğrulama: 192/8 = 24, 24−12 = 12 = 192/16 ✓.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 94,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (bağıntı kuralının öncüllerden türetilmesi)",
+  "kaynakUrl": null,
+  "gerekce": "✳ abc = b ile (a×c) yan yana yazılır: ✳743 → 4 ve 7·3=21 ⇒ 421; ✳685 → 8 ve 6·5=30 ⇒ 830. ● abc = (b+c) ile a yan yana yazılır: ●259 → 5+9=14 ve 2 ⇒ 142; ●768 → 6+8=14 ve 7 ⇒ 147. Kural verilen iç içe örnekle sınandı: ●457 = 12&4 = 124, ✳124 = 2 ve 1·4=4 ⇒ 24 ✓. Buradan ✳863 = 6 ve 8·3=24 ⇒ 624; ●624 = (2+4)=6 ve 6 ⇒ 66.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 95,
+  "cevap": "B",
+  "guven": "yuksek",
+  "kaynak": "çözüm (şekilden çıkarılan formül)",
+  "kaynakUrl": null,
+  "gerekce": "Şekil açıldı: n×n birim karelik ızgara 2n(n+1) kibrit çöpü ister (n=2 ⇒ 12 ✓, n=3 ⇒ 24 ✓). 2n(n+1) = 312 ⇒ n(n+1) = 156 ⇒ n = 12. Doğrulama: 2·12·13 = 312 ✓.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 96,
+  "cevap": "E",
+  "guven": "yuksek",
+  "kaynak": "çözüm (harmonik ortalama)",
+  "kaynakUrl": null,
+  "gerekce": "Eşit mesafede ortalama hız harmonik ortalamadır: 2·80·x/(80+x) = 60 ⇒ 160x = 4800 + 60x ⇒ x = 48. Doğrulama: d=240 km için 3 saat + 5 saat = 8 saat, 480/8 = 60 km/sa ✓.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 97,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (denklem)",
+  "kaynakUrl": null,
+  "gerekce": "Galip doğduğunda Fatih 5, Halil 8 ⇒ F = G+5, H = G+8. Toplam 3G+13 = 25 ⇒ G = 4, F = 9, H = 12. Üçüncü koşul da sağlanıyor: |9−12| = 3 = 4/2 + 1 ✓. Fatih 4 yaşındayken (5 yıl önce) Halil 12−5 = 7 yaşındaydı.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 98,
+  "cevap": "D",
+  "guven": "yuksek",
+  "kaynak": "çözüm (dizi kuralı benzeşimi)",
+  "kaynakUrl": null,
+  "gerekce": "I. dizi ×3 ile başlayıp −2 ile dönüşümlü ilerler (2·3=6, 6−2=4, …); II. dizi aynı iki işlemi ters sırayla, −2 ile başlayarak kullanır (5−2=3, 3·3=9, …). III. dizi ×2 ile başlayıp −1 ile dönüşümlüdür (3·2=6, 6−1=5, …); aynı iki işlemi −1 ile başlatan tek dizi D'dir (7−1=6, 6·2=12, 12−1=11, …). C işlem çifti ×3/−1, E ise ×2/−2 olduğu için benzeşimi bozar.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 99,
+  "cevap": "A",
+  "guven": "yuksek",
+  "kaynak": "çözüm (sıralama)",
+  "kaynakUrl": null,
+  "gerekce": "Kuyruğun başı gişedir; Ahmet gişeden daha uzakta olduğuna göre Behçet Ahmet'in önündedir. Ahmet baştan 13., aralarında 5 kişi ⇒ Behçet baştan 13−5−1 = 7. Behçet sondan 8. ⇒ toplam = 7+8−1 = 14. Doğrulama: 14 kişilik kuyrukta 8–12. sıradaki 5 kişi aralarındadır ✓. Ters okuma (Behçet arkada) 26 verir, şıklarda yoktur.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ },
+ {
+  "no": 100,
+  "cevap": "C",
+  "guven": "yuksek",
+  "kaynak": "çözüm (iş-işçi)",
+  "kaynakUrl": null,
+  "gerekce": "1 işçi günde 1/60, 1 çırak günde 1/90 iş yapar (6·10 = 60; 5·18 = 90). Birlikte 1/60 + 1/90 = 1/36. İşin 3/4'ü ⇒ (3/4)·36 = 27 gün. Doğrulama: 27 günde 27/36 = 3/4 ✓.",
+  "eskime": null,
+  "dogrulanamadi": false,
+  "uyari": null
+ }
+]

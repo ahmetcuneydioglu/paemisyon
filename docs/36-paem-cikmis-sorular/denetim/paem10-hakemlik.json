@@ -99,5 +99,146 @@
    "D": "Yoksullar",
    "E": "Yaşlılar"
   }
+ },
+ {
+  "no": 42,
+  "kararlar": [
+   "CELISKI",
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "E",
+  "guven": "orta",
+  "gerekce": "Makale kişi hak ve hürriyetlerinin korunması ile hukuki güvenliği ilkenin GEREKÇESİ olarak gösterir; geri alma, yargı kararı, kanun hükmü ve lehe işlemlerin tebliğden önce (imza anından) hüküm doğurması ise istisnalar arasında sayılır.",
+  "uyari": "İki şık savunulabilir. 'Kişi güvenliğini koruma amacı' ilkenin dayanağı olduğu için istisna sayılamaz (A). Ancak (E) 'Tebligattan önce hüküm doğurma' bazı ders notlarında ilkenin kendi ifadesi gibi okunabilir; o okumada cevap E olur. Kök, istisna listesinin hangi doktrin tasnifine göre kurulduğunu belirtmiyor.",
+  "eskime": null,
+  "kok": "Aşağıdakilerden hangisi bir idari işlemin geriye yürümezliği ilkesinin istisnalarından biri değildir?",
+  "siklar": {
+   "A": "Kişi güvenliğini koruma amacı",
+   "B": "Mahkemelerin iptal kararı",
+   "C": "Kanunla istisna getirilebilmesi",
+   "D": "Geri alınabilmesi",
+   "E": "Tebligattan önce hüküm doğurma"
+  }
+ },
+ {
+  "no": 44,
+  "kararlar": [
+   "CELISKI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "C",
+  "guven": "yuksek",
+  "gerekce": "Atatürk Kültür, Dil ve Tarih Yüksek Kurumu doğrudan Anayasa md 134 ile 'kamu tüzel kişiliğine sahip' olarak kurulmuştur; diğerlerinin tüzel kişiliğinin kaynağı kanun (ya da kanuna dayalı idari işlem) olup Anayasa değildir.",
+  "uyari": null,
+  "eskime": null,
+  "kok": "Aşağıdakilerden hangisi kamu tüzel kişiliğinin kaynağı bakımından diğerlerinden farklıdır?",
+  "siklar": {
+   "A": "Atatürk Kültür, Dil ve Tarih Yüksek Kurumu",
+   "B": "Trabzon Belediyesi",
+   "C": "Türkiye Petrolleri Anonim Ortaklığı",
+   "D": "Türkiye Radyo ve Televizyon Kurumu",
+   "E": "Anadolu Üniversitesi"
+  }
+ },
+ {
+  "no": 52,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "D",
+  "anahtar": "D",
+  "guven": "yuksek",
+  "gerekce": "Sözleşmenin onaylanmasına ilişkin karar ve resmî Türkçe metni 27 Ocak 1995 tarih ve 22184 sayılı Resmî Gazete'de yayımlanmıştır (4058 sayılı uygun bulma kanunu ise 11/12/1994'te yayımlanmıştı).",
+  "uyari": "Kökteki 'Resmi Gazete'de yayımlanarak iç hukukta yürürlüğe girmiştir' ibaresi iki tarihe işaret edebilir: uygun bulma kanunu 1994'te, Sözleşme metni 1995'te yayımlandı. Yayımlanan 'Sözleşme' olduğu için 1995 alınmıştır.",
+  "eskime": null,
+  "kok": "Birleşmiş Milletler Çocuk Hakları Sözleşmesi hangi yıl Resmi Gazete'de yayımlanarak iç hukukta yürürlüğe girmiştir?",
+  "siklar": {
+   "A": "1989",
+   "B": "1990",
+   "C": "1993",
+   "D": "1995",
+   "E": "1999"
+  }
+ },
+ {
+  "no": 56,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "D",
+  "anahtar": "D",
+  "guven": "yuksek",
+  "gerekce": "Sağlık hakkı devletten olumlu edim isteyen klasik bir ikinci kuşak (sosyal) haktır ve Anayasa'da da sosyal ve ekonomik haklar bölümünde düzenlenmiştir; çevre, gelişme ve iletişim hakları ise üçüncü kuşak dayanışma haklarıdır.",
+  "uyari": "Şık C 'bilgi edinme hakkı'nın kuşak aidiyeti doktrinde tartışmalıdır (kimi yazar iletişim hakkıyla birlikte üçüncü, kimi yazar birinci kuşakta sayar). Buna rağmen tek başına ikinci kuşak olduğu tartışmasız olan şık D'dir, dolayısıyla cevap değişmiyor.",
+  "eskime": null,
+  "kok": "Ortaya çıkış sıralarına göre tasnif edildiğinde aşağıdaki haklardan hangisi üçüncü kuşak haklardan biri değildir?",
+  "siklar": {
+   "A": "İletişim hakkı",
+   "B": "Çevre hakkı",
+   "C": "Bilgi edinme hakkı",
+   "D": "Sağlık hakkı",
+   "E": "Gelişme hakkı"
+  }
+ },
+ {
+  "no": 64,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "A",
+  "guven": "yuksek",
+  "gerekce": "1924 Anayasası md 88 \"Türkiye ahalisine din ve ırk farkı olmaksızın vatandaşlık itibarıyla (Türk) ıtlak olunur\" der; 1921 Anayasası'nda vatandaşlık tanımı yoktur.",
+  "uyari": "B ve C şıklarındaki parantez içi ifadeler bozuk ('1921 Anayasası diyebiliriz.', 'ya da (1876 Anayasası da denilebilir.)') — şık metinlerinde aktarım/dizgi kusuru var; cevabı etkilemiyor.",
+  "eskime": null,
+  "kok": "\"Türkiye ahalisine din ve ırk farkı olmaksızın vatandaşlık itibarıyla Türk denir.\"\n\nYukarıdaki vatandaşlık tanımı ilk kez aşağıdaki anayasal düzenlemelerden hangisinde yer almıştır?",
+  "siklar": {
+   "A": "1924 Teşkilat-ı Esasiye Kanunu'nda (1924 Anayasası)",
+   "B": "1921 Teşkilat-ı Esasiye Kanunu'nda (1921 Anayasası diyebiliriz.)",
+   "C": "1876 Kanun-ı Esasi'de ya da (1876 Anayasası da denilebilir.)",
+   "D": "1961 Anayasası'nda",
+   "E": "1982 Anayasası'nda"
+  }
+ },
+ {
+  "no": 70,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "A",
+  "guven": "yuksek",
+  "gerekce": "Konferansın birinci dönemi, Türk heyetinin kapitülasyonların sürdürülmesini ve Osmanlı borçlarının yükünü kabul etmemesi (yanı sıra Musul) yüzünden 4 Şubat 1923'te kesilmiştir.",
+  "uyari": "Kesintinin klasik nedenleri kapitülasyonlar, Osmanlı borçları ve Musul'dur; A şıkkı bunlardan ikisini kapsadığı için 'temel nedenlerden biri' ifadesiyle uyumludur, diğer şıklar tarihsel olarak yanlıştır.",
+  "eskime": null,
+  "kok": "Aşağıdakilerden hangisi Lozan Barış Konferansı görüşmelerinin 4 Şubat 1923'te kesintiye uğramasının temel nedenlerinden biridir?",
+  "siklar": {
+   "A": "Türk heyetinin kapitülasyonların devamını ve Osmanlı borçlarının tamamının ödenmesini kabul etmemesi",
+   "B": "İtilaf Devletlerinin Ankara'yı başkent olarak tanımak istememesi",
+   "C": "Azınlıkların statüsü konusunda uzlaşma sağlanamaması",
+   "D": "İtilaf Devletlerinin, Boğazların Türkiye'nin başkanlığındaki uluslararası bir komisyon tarafından yönetilmesini kabul etmemesi",
+   "E": "Suriye sınırı konusunda Fransa ile yaşanan görüş ayrılıkları"
+  }
+ },
+ {
+  "no": 78,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "C",
+  "anahtar": "C",
+  "guven": "yuksek",
+  "gerekce": "TUSAŞ'ın Kahramankazan tesislerinde düzenlenen törende EGM Havacılık Daire Başkanlığına teslim edilen İHA AKSUNGUR'dur (aynı törende T-129 ATAK ve T-70 helikopterleri de teslim edilmiştir).",
+  "uyari": "Aynı teslimatta ATAK da yer aldığı için E şıkkı dikkat dağıtıcıdır; ancak ATAK taarruz helikopteridir, kökteki 'insansız hava aracı' niteliği ayrımı kesinleştirir.",
+  "eskime": null,
+  "kok": "Türkiye'de milli imkânlarla üretilen ve Nisan 2026'da Türk Havacılık ve Uzay Sanayii tarafından Emniyet Genel Müdürlüğü (EGM) Havacılık Daire Başkanlığına teslim edilen insansız hava aracı (İHA) aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "ANKA",
+   "B": "AKINCI",
+   "C": "AKSUNGUR",
+   "D": "ARI – T38",
+   "E": "ATAK"
+  }
  }
 ]
