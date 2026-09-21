@@ -1,0 +1,103 @@
+[
+ {
+  "no": 7,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "A",
+  "guven": "yuksek",
+  "gerekce": "Md 5/A'da dijital risklerden korunma tedbiri, bildirilen cihazın hareketlerinin Bilgi Teknolojileri ve İletişim Kurumu ile Siber Güvenlik Başkanlığı tarafından 3 aydan az 2 yıldan fazla olmamak üzere takip yazılımlarıyla kurum denetimine açılmasını öngörür.",
+  "uyari": "Dayanak madde 8/8/2026 tarihli 7593 sayılı Kanunla eklenmiş çok yeni bir hükümdür; sınavdan yaklaşık altı hafta önce yürürlüğe girmiştir. Açıklama yazılırken madde numarasının 5/A olduğu (5 inci madde değil) vurgulanmalı.",
+  "eskime": null,
+  "kok": "5395 sayılı Çocuk Koruma Kanunu'na göre, yönlendirme tedbirlerinden 'dijital risklerden korunma tedbiri' kapsamında, bildirilen cihazın tedbir kararından sonraki hareketleri hangi kurumlar tarafından çeşitli takip yazılımlarıyla ilgili kurum denetimine açılır?",
+  "siklar": {
+   "A": "Bilgi Teknolojileri ve İletişim Kurumu / Siber Güvenlik Başkanlığı",
+   "B": "Bilgi Teknolojileri ve İletişim Kurumu / Adalet Bakanlığı",
+   "C": "Aile ve Sosyal Hizmetler Bakanlığı / Milli Eğitim Bakanlığı",
+   "D": "Emniyet Genel Müdürlüğü / Siber Güvenlik Başkanlığı",
+   "E": "İçişleri Bakanlığı / Ulaştırma ve Altyapı Bakanlığı"
+  }
+ },
+ {
+  "no": 14,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "E",
+  "anahtar": "E",
+  "guven": "yuksek",
+  "gerekce": "Md 102/2: ağır ceza mahkemesinin görevine giren işlerde uzatma süresi toplam üç yılı, TCK İkinci Kitap Dördüncü Kısım 4-7. bölüm suçları ile 3713 sayılı Kanun kapsamındaki suçlarda beş yılı geçemez.",
+  "uyari": "Kök biraz gevşek: kanun 'uzatma süresi toplam beş yılı geçemez' der; azami tutukluluk (2 yıl asıl + 5 yıl uzatma) 7 yıla kadar çıkabilir. Şıklarda 7 olmadığı için cevap tek (5), ancak açıklamada 'TMK suçlarında en fazla 5 yıl tutuklu kalınır' denmemeli.",
+  "eskime": null,
+  "kok": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, Terörle Mücadele Kanunu kapsamına giren suçlarda tutukluluk süresi zorunlu hallerde ve gerekçesi gösterilerek kaç yıla kadar uzatılabilir?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4",
+   "E": "5"
+  }
+ },
+ {
+  "no": 20,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "C",
+  "anahtar": "C",
+  "guven": "yuksek",
+  "gerekce": "Md 253/1-b, şikâyete bağlı olup olmadığına bakılmaksızın uzlaştırma kapsamındaki suçları sayar ve 8. sırada dolandırıcılık (TCK md 157) yer alır; ısrarlı takip (md 123/A) ve cinsel dokunulmazlığa karşı suçlar md 253/3 ile açıkça kapsam dışıdır.",
+  "uyari": "Şıktaki 'Dolandırıcılık' yalnız TCK md 157 basit dolandırıcılığı kapsar; nitelikli dolandırıcılık (md 158) uzlaştırmaya tabi değildir — açıklamada bu ayrım belirtilmeli.",
+  "eskime": null,
+  "kok": "5271 sayılı Ceza Muhakemesi Kanunu'na göre, aşağıdakilerden hangisi şikâyete bağlı olup olmadığına bakılmaksızın uzlaştırma kapsamına alınmış suçlardan biridir?",
+  "siklar": {
+   "A": "Zimmet suçu",
+   "B": "Israrlı takip suçu",
+   "C": "Dolandırıcılık",
+   "D": "İftira suçu",
+   "E": "Cinsel taciz"
+  }
+ },
+ {
+  "no": 25,
+  "kararlar": [
+   "CELISKI",
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "A",
+  "anahtar": "B",
+  "guven": "orta",
+  "gerekce": "Md 160/3 'Mükerrer oy vermeye teşebbüs eden veya veren kimse hakkında da ikinci fıkra hükmü uygulanır' diyerek teşebbüsü tamamlanmış suçla aynı cezaya bağlamıştır; teşebbüsün tipikliğe yazıldığı bu yapı kalkışma (teşebbüs) suçunun tanımıdır.",
+  "uyari": "Doktriner sınıflandırma sorusu; iki şık daha savunulabilir. (C) Tehlike suçu: seçim suçlarında somut bir zarar neticesi aranmadığı için soyut tehlike suçu sayılabilir. (B) Özgü suç: mükerrer oy fiilen ancak seçmen sıfatı taşıyan kişice işlenebilir denebilir — ancak kanun metni faili 'kimse' diye yazmış, özel bir fail niteliği aramamıştır, bu yüzden B'yi zayıf buluyorum. Kanun metninden doğrudan çıkan tek nitelik kalkışma suçudur.",
+  "eskime": null,
+  "kok": "14 Mayıs 2023 Milletvekili Genel Seçimlerinde mükerrer oy kullandığı sandık başkan ve üyeleri tarafından tespit edilen seçmen hakkında ceza davası açılmıştır.\n\nYukarıdaki olaya göre seçmenin işlediği suçun niteliği aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Kalkışma suçu",
+   "B": "Özgü suç",
+   "C": "Tehlike suçu",
+   "D": "Kesintisiz suç",
+   "E": "İhmali suç"
+  }
+ },
+ {
+  "no": 37,
+  "kararlar": [
+   "KUSUR-UYARISI"
+  ],
+  "denetciCevabi": "D",
+  "anahtar": "D",
+  "guven": "orta",
+  "gerekce": "Md 10/3 'çocuklar, yaşlılar, özürlüler, harp ve vazife şehitlerinin dul ve yetimleri ile malul ve gaziler' için alınacak tedbirleri eşitliğe aykırı saymaz; bu listede yer almayan tek grup yoksullardır.",
+  "uyari": "KÖKTE OLUMSUZLUK HATASI VAR. Kök 'hangisine yönelik olarak alınacak tedbirler eşitlik ilkesine aykırılık SAYILMAZ?' diye soruyor; oysa md 10/3 uyarınca A (vazife şehidinin çocuğu = yetimi), B (gaziler), C (harp şehidinin eşi = dulu) ve E (yaşlılar) şıklarının DÖRDÜ birden 'aykırı sayılmaz' kapsamındadır. Ayırt edici tek şık, md 10'da hiç geçmeyen 'yoksullar'dır. Yani soru ancak kök 'aykırılık SAYILIR' (veya '...sayılmayanlardan biri DEĞİLDİR') biçiminde okunursa tek cevaplı olur; D'yi bu okumayla verdim. Kök harfiyen okunursa D tek YANLIŞ şık olur ve sorunun dört doğru cevabı vardır. Ayrıca kökte alıntılanan metin yalnız md 10/1-2'dir; cevabın dayanağı olan md 10/3 fıkrası alıntıya hiç konmamış, bu da belirsizliği artırıyor. Soru iptale açık.",
+  "eskime": null,
+  "kok": "1982 Anayasası m. 10'a göre \"Herkes, dil, ırk, renk, cinsiyet, siyasi düşünce, felsefi inanç, din, mezhep ve benzeri sebeplerle ayırım gözetilmeksizin kanun önünde eşittir. Kadınlar ve erkekler eşit haklara sahiptir. Devlet, bu eşitliğin yaşama geçmesini sağlamakla yükümlüdür. Bu maksatla alınacak tedbirler eşitlik ilkesine aykırı olarak yorumlanamaz.\"\n\nBuna göre, 1982 Anayasası'nın 10. maddesi göz önünde bulundurulduğunda aşağıdakilerden hangisine yönelik olarak alınacak tedbirler eşitlik ilkesine aykırılık sayılmaz?",
+  "siklar": {
+   "A": "Vazife şehitlerinin çocukları",
+   "B": "Gaziler",
+   "C": "Harp şehitlerinin eşleri",
+   "D": "Yoksullar",
+   "E": "Yaşlılar"
+  }
+ }
+]
