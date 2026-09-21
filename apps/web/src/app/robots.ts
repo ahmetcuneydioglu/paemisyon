@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/profil", "/sinav", "/sonuc", "/siralama"],
       },
     ],
-    sitemap: `${config.siteUrl}/sitemap.xml`,
+    sitemap: `${config.canonicalOrigin}/sitemap.xml`,
   };
 }

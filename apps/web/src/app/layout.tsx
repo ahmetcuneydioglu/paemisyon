@@ -3,6 +3,7 @@ import { Open_Sans, Rubik } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { themeInitScript } from "@/lib/theme";
+import { config } from "@/lib/config";
 
 const rubik = Rubik({
   subsets: ["latin", "latin-ext"],
@@ -17,6 +18,10 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  // Göreli metadata adreslerinin (canonical, og:url, og:image) mutlak hâle
+  // geleceği köken. Bu satır olmadan canonical etiketi göreli basılıyordu;
+  // tarayıcı onu doğru çözse de arama motoruna mutlak adres vermek daha güvenli.
+  metadataBase: new URL(config.canonicalOrigin),
   title: { default: "Paemisyon Denemeler", template: "%s | Paemisyon" },
   description:
     "Polislik sınavlarına gerçek sınav formatında online deneme: canlı denemeler, sıralama ve soru incelemesi.",

@@ -11,7 +11,9 @@ import {
 
 /** Sitemap (Doc 23 SEO omurgası) — statik sayfalar + DB'den kanun ve madde sayfaları. */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = config.siteUrl;
+  // Arama motoruna verilen adresler canonical kökenden (www) üretilir; apex
+  // 308 ile oraya yönlendiği için apex listelemek her taramaya bir sıçrama ekler.
+  const base = config.canonicalOrigin;
   const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]);
   // Çıkmış sınav dönemleri (Doc 36) — yalnız yayındakiler döner.
   const { items: cikmisSinavlar } = await publicApiList<CikmisSinavOzet>(

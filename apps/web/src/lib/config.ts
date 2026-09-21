@@ -6,6 +6,25 @@
 export const config = {
   apiBaseUrl: process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:3000/api/v1",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://paemisyon.com",
+  /**
+   * Arama motorlarına verilen köken — sitemap, robots, canonical ve JSON-LD
+   * buradan üretilir.
+   *
+   * `siteUrl`'den AYRI duruyor ve bu bilinçli. Site gerçekte `www`'den servis
+   * ediliyor; apex 308 ile oraya yönlendiriyor (21 Eyl 2026'da ölçüldü), yani
+   * canonical host `www`. Sitemap apex adresleri listelediği sürece her tarama
+   * gereksiz bir yönlendirme sıçraması yapıyor.
+   *
+   * Peki neden tek değere indirmiyoruz: `siteUrl` aynı zamanda Supabase auth
+   * yönlendirmelerinde kullanılıyor (`authRedirectUrl`) ve oradaki köken
+   * Supabase'in izin verilen adres listesinde KAYITLI olmak zorunda. Kod
+   * tarafında `www`'ye çevirmek, allowlist'e eklenmeden önce e-posta doğrulama
+   * ve şifre sıfırlama bağlantılarını kırardı. Supabase panelinde
+   * `https://www.paemisyon.com/auth/callback` eklendikten sonra iki değer
+   * birleştirilebilir.
+   */
+  canonicalOrigin:
+    process.env.NEXT_PUBLIC_CANONICAL_ORIGIN ?? "https://www.paemisyon.com",
   /** App Store ürün sayfası (iOS 1.0 — 20 Ağu 2026'da yayında). */
   appStoreUrl: "https://apps.apple.com/tr/app/paemisyon/id6802087692",
   /** Google Play ürün sayfası — uygulama kimliği mobil build.gradle ile aynı. */
