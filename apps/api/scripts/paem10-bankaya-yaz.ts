@@ -136,10 +136,26 @@ async function main() {
     where: { slug: SLUG },
     select: {
       id: true, name: true, kind: true, status: true, heldOn: true, term: true,
+      summary: true, questionCount: true, analysis: true, isPremium: true,
       _count: { select: { questions: true } },
     },
   });
-  console.log('\nMEVCUT KAYIT:', mevcut ? JSON.stringify(mevcut) : 'yok');
+  if (!mevcut) console.log('\nMEVCUT KAYIT: yok');
+  else {
+    const { summary, analysis, ...k } = mevcut;
+    console.log('\nMEVCUT KAYIT:', JSON.stringify(k));
+    console.log(`  summary : ${summary ? `"${summary.slice(0, 150)}${summary.length > 150 ? '…' : ''}"` : 'yok'}`);
+    console.log(`  analysis: ${analysis ? JSON.stringify(analysis).slice(0, 200) : 'yok'}`);
+    // Sınav gecesi için yazılan tanıtım/analiz, resmî kitapçık geldikten sonra
+    // ESKİR: aday beyanına dayanan bir dağılımı resmî sınavın yanında tutmak,
+    // ölçtüğümüz şeyi olduğundan kesin gösterir. Script bunlara dokunmuyor;
+    // eskiyen varsa uyarıp insana bırakıyor.
+    if (analysis) console.log('  ⚠ analiz içeriği var — resmî sorular geldikten sonra gözden geçir.');
+    if (summary && /aday beyan|yaklaşık|güncellenecek|yayımlandığında/i.test(summary))
+      console.log('  → tanıtım metni sınav öncesi diline ait; yazma sırasında temizlenecek (PAEM 8/9\'da da yok).');
+    if (mevcut.questionCount !== 100)
+      console.log(`  ⚠ questionCount ${mevcut.questionCount} — 100 olmalı.`);
+  }
 
   if (!APPLY) return console.log('\n(kuru çalışma — APPLY=1 ile yazılır)');
   if (yazilacak.length !== 100) throw new Error(`100 soru bekleniyordu, ${yazilacak.length} hazır`);
@@ -151,10 +167,16 @@ async function main() {
   if (mevcut && mevcut._count.questions > 0)
     throw new Error(`${SLUG} zaten ${mevcut._count.questions} soru içeriyor — yazma iptal edildi.`);
 
+  // analiz → resmi geçişinde tanıtım metni TEMİZLENİR. Kayıt sınav gecesi
+  // için ayrılmıştı ve metni "resmî kitapçık yayımlandığında sorular
+  // cevaplarıyla birlikte eklenecek" diyor; sorular girdikten sonra bu cümle
+  // yanlış olur. Yerleşmiş resmî dönemlerde (PAEM 8, PAEM 9) tanıtım metni
+  // zaten yok — sayfanın başlığı ve soru listesi kendini anlatıyor. Panelden
+  // istendiği zaman yeniden yazılabilir.
   const sinav = await prisma.pastExam.upsert({
     where: { slug: SLUG },
-    update: { ...SINAV, heldOn },
-    create: { slug: SLUG, ...SINAV, heldOn, status: 'draft', sortOrder: 10 },
+    update: { ...SINAV, heldOn, summary: null, questionCount: 100 },
+    create: { slug: SLUG, ...SINAV, heldOn, questionCount: 100, status: 'draft', sortOrder: 10 },
   });
 
   let yazilan = 0;
