@@ -17,7 +17,9 @@ import { randomUUID } from 'node:crypto';
 import { PrismaClient, Difficulty } from '@prisma/client';
 import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
 
-const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
+// GUNCEL_KOK ile başka bir parti klasörü seçilir (ör. docs/35-guncel-kultur/parti-2);
+// varsayılan ilk partidir. Her parti kendi arastirma/parti/denetim/kurtarma alt klasörlerini taşır.
+const KOK = process.env.GUNCEL_KOK ?? '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 const APPLY = process.env.APPLY === '1';
 const GECER = new Set(['ONAY', 'ZAYIF']);
 /**
@@ -25,10 +27,14 @@ const GECER = new Set(['ONAY', 'ZAYIF']);
  * Yeni bir alan yazıldıktan sonra buraya eklenir.
  */
 const YAZILMIS = new Set(
-  (process.env.YAZILMIS ?? 'ekonomi-teknoloji-savunma,kultur-sanat-bilim,spor,turkiye-siyaset-mevzuat,uluslararasi')
+  (process.env.YAZILMIS ?? 'ekonomi-teknoloji-savunma,kultur-sanat-bilim,spor,turkiye-siyaset-mevzuat,uluslararasi,' +
+    // 2. parti (parti-2/, 23 Eyl 2026)
+    'savunma-2026,egm-ic-guvenlik,kurumlar-2026,uluslararasi-2026,spor-2026,vefat-2026,kultur-sanat-2026')
     .split(',').map((s) => s.trim()).filter(Boolean),
 );
-const prisma = new PrismaClient();
+// CLAUDE.md: scriptler tek bağlantıyla (Supabase pooler 15 slotu prod ile ortak).
+const DB = process.env.DATABASE_URL!;
+const prisma = new PrismaClient({ datasources: { db: { url: DB.includes('connection_limit') ? DB : `${DB}${DB.includes('?') ? '&' : '?'}connection_limit=1` } } });
 
 async function main() {
   const konuId = process.argv[2];

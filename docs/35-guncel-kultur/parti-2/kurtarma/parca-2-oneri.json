@@ -1,0 +1,83 @@
+[
+ {
+  "id": "kurumlar-2026-3",
+  "grup": "F",
+  "gerekce": "Soru bir bakanlık iç biriminin (genel müdürlük) CBK ile yapılan ad değişikliğini soruyor; kurum düzeyinde değil, ad değişikliği ayrıntısına ve CBK bent içeriğine dayanıyor — PLAN §1-2 ve partiye özel yönergeye göre kullanıcının reddettiği tip, elenmeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "kurumlar-2026-4",
+  "grup": "C",
+  "gerekce": "Kurum düzeyinde, görev → kurum adı kalıbında (P9#74) ve hüküm ayrıntısı gerektirmiyor; kökteki AYM iptali AA (28 Şubat 2024) ve AYM duyurusuyla doğrulandı, yalnız kurumun 2003'te kurulup 2018'de kapatıldığı hesaba katılarak 'kurulan' → 'yeniden kurulan' düzeltildi ve açıklama künyelendi.",
+  "duzeltme": {
+   "kok": "Anayasa Mahkemesinin, kuruluşunu düzenleyen Cumhurbaşkanlığı Kararnamesini iptal etmesinin ardından 27 Şubat 2025 tarihli Resmî Gazete'de yayımlanan kanunla Adalet Bakanlığıyla ilgili; bilimsel, idari ve mali özerkliğe sahip bir kamu tüzel kişisi olarak yeniden kurulan ve hâkim ve savcılara yönelik eğitim planlarını hazırlayıp uygulayan kurum hangisidir?",
+   "siklar": {
+    "A": "Hâkimler ve Savcılar Kurulu",
+    "B": "Türkiye Barolar Birliği",
+    "C": "Türkiye ve Orta Doğu Amme İdaresi Enstitüsü",
+    "D": "Türkiye Adalet Akademisi",
+    "E": "Yargıtay Başkanlığı"
+   },
+   "dogru": "D",
+   "aciklama": "Türkiye Adalet Akademisi, 27 Şubat 2025 tarihli Resmî Gazete'de yayımlanan 7540 sayılı Türkiye Adalet Akademisi Kanunu ile Adalet Bakanlığıyla ilgili, bilimsel, idari ve mali özerkliğe sahip bir kamu tüzel kişisi olarak yeniden kurulmuş; hâkim ve savcılara yönelik eğitim planlarını hazırlamak ve uygulamak Akademinin görevleri arasında sayılmıştır (Türkiye Adalet Akademisi, Tarihçe). Kanun, Anayasa Mahkemesinin hâkim ve savcıların eğitiminin kanunla düzenlenmesi gerektiği gerekçesiyle Akademiyi düzenleyen 2019 tarihli 34 sayılı Cumhurbaşkanlığı Kararnamesini iptal etmesi üzerine çıkarılmıştır (Anadolu Ajansı, 28 Şubat 2024). Tuzak: hâkim ve savcıların atama ve disiplin işlerini yürüten anayasal kurul HSK'dır; kamu yönetimi alanında eğitim veren TODAİE ise 2018'de kapatılmıştır.",
+   "dayanak": "7540 sayılı Kanun md 3, 4/1-a (RG 27.02.2025, 32826); AYM E.2019/72 (AA, 28.02.2024); taa.gov.tr Tarihçe"
+  },
+  "degisenler": [
+   "Kök: 'kamu tüzel kişisi olarak kurulan' → 'kamu tüzel kişisi olarak yeniden kurulan' (kurum 2003'te 4954 s. Kanunla kurulmuş, 2018'de 703 s. KHK ile kapatılmıştı)",
+   "Açıklama: AYM iptali künyelendi (AA 28.02.2024), tarihçe künyesi eklendi, TODAİE'nin 2018'de kapatıldığı tuzakta belirtildi"
+  ]
+ },
+ {
+  "id": "kurumlar-2026-5",
+  "grup": "F",
+  "gerekce": "Ayırt edicilik tümüyle 183 sayılı CBK'nin hangi kurulu yeni ekleyip hangilerinin adını değiştirdiğine (bent/madde içeriği, ad değişikliği ayrıntısı) dayanıyor; P9#74 kalıbında kurum düzeyinde bir soruya dönüştürülemiyor — kullanıcının reddettiği tip, elenmeli.",
+  "duzeltme": null,
+  "degisenler": []
+ },
+ {
+  "id": "savunma-2026-1",
+  "grup": "C",
+  "gerekce": "TARİH KAYMASI doğrulandı: sözleşmenin imzaları 29 Aralık 2025'te tamamlandı (TRT Haber 30.12.2025, Görgün; SSB 31.12.2025 duyurusu; TUSAŞ), 28 Nisan 2026 yalnız kamuoyuna duyuru töreni (TRT Haber 28.04.2026, Görgün: 'resmi imzayı önceden atmıştık'); olay HÜRJET'in manşet düzeyindeki ihracatı olarak P11 için güncelliğini koruduğundan kök doğru tarihle düzeltildi.",
+  "duzeltme": {
+   "kok": "TUSAŞ'ın geliştirdiği millî jet eğitim uçağı HÜRJET'in ihracatına ilişkin sözleşme 29 Aralık 2025'te imzalanmış, 28 Nisan 2026'da düzenlenen törenle de kamuoyuna duyurulmuştur. Teslimatlarına 2028'de başlanması planlanan 30 uçağın alıcısı olan NATO ve Avrupa Birliği üyesi ülke hangisidir?",
+   "siklar": {
+    "A": "İtalya",
+    "B": "İspanya",
+    "C": "Portekiz",
+    "D": "Macaristan",
+    "E": "Polonya"
+   },
+   "dogru": "B",
+   "aciklama": "HÜRJET'in İspanya'ya ihracına ilişkin 30 uçaklık, 2,6 milyar avroluk sözleşmenin imzaları 29 Aralık 2025'te tamamlanmış ve Savunma Sanayii Başkanlığı ihracatı 31 Aralık 2025'te duyurmuştur (TRT Haber, 30 Aralık 2025; SSB, 31 Aralık 2025). Sözleşme 28 Nisan 2026'da Madrid'in Getafe ilçesindeki Airbus tesislerinde TUSAŞ, Airbus ve İspanya Savunma Bakanlığı temsilcilerinin katıldığı törenle kamuoyuna duyurulmuş; teslimatların 2028'in son çeyreğinde başlayıp 2036'ya kadar sürmesi planlanmaktadır (TRT Haber, 28 Nisan 2026; TUSAŞ). Tuzak: Madrid töreni imza tarihi değil duyuru tarihidir; Haziran 2026'da Türkiye'nin savaş gemisi ihraç ettiği NATO ve AB üyesi ülke ise Romanya'dır.",
+   "dayanak": "SSB, 31.12.2025 'Tarihi HÜRJET İhracat Başarısı'; TRT Haber 30.12.2025 ve 28.04.2026 (Görgün); TUSAŞ haber"
+  },
+  "degisenler": [
+   "Kök: 'sözleşme 28 Nisan 2026'da imzalanmıştır' → 'sözleşme 29 Aralık 2025'te imzalanmış, 28 Nisan 2026'da düzenlenen törenle de kamuoyuna duyurulmuştur' (tören yeri kökte verilmedi, cevabı ele verirdi)",
+   "Kök: 'Teslimatı 2028'de başlayacak' → 'Teslimatlarına 2028'de başlanması planlanan' (P11 okuma tarihine uygun kip)",
+   "Açıklama: imza/duyuru ayrımı iki kaynakla künyelendi; doğrulanamayan 'Mayıs 2025 mutabakat zaptı' ve TUSAŞ'la çelişen '2030-2035' takvimi çıkarıldı"
+  ]
+ },
+ {
+  "id": "savunma-2026-2",
+  "grup": "C",
+  "gerekce": "'İlk ihracat' iddiası TRT'ye ek olarak AA ve DHA'nın (6 Mayıs 2026) doğrudan aktardığı Haluk Bayraktar beyanıyla teyit edildi, cevap tek; yalnız kökte anlaşmanın 'çerçeve anlaşması' niteliği ve iddianın Baykar açıklamasına dayandığı belirtildi, açıklamadaki doğrulanamayan/eskiyebilecek TSK teslimat hedefi çıkarıldı.",
+  "duzeltme": {
+   "kok": "6 Mayıs 2026'da İstanbul'da düzenlenen SAHA 2026 fuarında imzalanan çerçeve anlaşması, Baykar'ın açıklamasına göre Bayraktar KIZILELMA için imzalanan ilk ihracat anlaşması olmuştur. KIZILELMA'nın bu anlaşmayla ilk ihracat pazarı olan ülke hangisidir?",
+   "siklar": {
+    "A": "Azerbaycan",
+    "B": "Pakistan",
+    "C": "Malezya",
+    "D": "Endonezya",
+    "E": "Katar"
+   },
+   "dogru": "D",
+   "aciklama": "Baykar ile Endonezyalı PT Republik Aero Dirgantara (Republikorp) arasında 6 Mayıs 2026'da SAHA 2026'da imzalanan çerçeve anlaşması, Baykar Genel Müdürü Haluk Bayraktar'ın açıklamasına göre Bayraktar KIZILELMA için imzalanan ilk ihracat anlaşmasıdır (Anadolu Ajansı, 6 Mayıs 2026; DHA, 6 Mayıs 2026). Anlaşma, 2028'den itibaren teslim edilecek 12 uçaklık bir filoyu, 48 uçaklık ilave opsiyonu ve Endonezya'da yerel üretim ve bakım tesisi kurulmasını kapsar. Tuzak: Azerbaycan ve Pakistan Baykar'ın TB2 ve AKINCI gibi önceki platformlarının kullanıcılarıdır; KIZILELMA'nın ilk ihracat pazarı Endonezya'dır.",
+   "dayanak": "Anadolu Ajansı, 6.5.2026; DHA, 6.5.2026; TRT Haber, 6.5.2026 (Haluk Bayraktar beyanı)"
+  },
+  "degisenler": [
+   "Kök: 'imzalanan anlaşma' → 'imzalanan çerçeve anlaşması'; 'ilk ihracat anlaşması olmuştur' ifadesine 'Baykar'ın açıklamasına göre' eklendi",
+   "Açıklama: karşı tarafın Endonezyalı şirket olduğu ve çerçeve anlaşma niteliği korundu, 48 uçak opsiyonu AA/DHA ile teyitli; doğrulanamayan 'TSK'ya ilk seri teslimat 2026 hedefi' cümlesi çıkarıldı, tuzak yeniden yazıldı"
+  ]
+ }
+]

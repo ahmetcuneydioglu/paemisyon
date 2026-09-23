@@ -1,0 +1,193 @@
+{
+ "parca": 3,
+ "sorular": [
+  {
+   "id": "savunma-2026-3",
+   "alan": "savunma-2026",
+   "karar": "UYARI",
+   "kok": "20 Ağustos 2026'da Gölcük Tersanesi Komutanlığında, TEKNOFEST Mavi Vatan kapsamında TCG Oruçreis'te düzenlenen törenle envantere alınan Baykar üretimi insansız hava aracı hangisidir?",
+   "siklar": {
+    "A": "Bayraktar TB3",
+    "B": "Bayraktar AKINCI",
+    "C": "Bayraktar KALKAN",
+    "D": "Bayraktar KIZILELMA",
+    "E": "Bayraktar TB2"
+   },
+   "dogruCevap": "C",
+   "aciklama": "Bayraktar KALKAN DİHA (Dikey İniş Kalkışlı İnsansız Hava Aracı), 20 Ağustos 2026'da Millî Savunma Bakanı Yaşar Güler ile Savunma Sanayii Başkanı Haluk Görgün'ün katıldığı, TCG Oruçreis'te yapılan törenle envantere alınmıştır (Anadolu Ajansı ve TRT Haber, 20 Ağustos 2026). Dikey iniş-kalkış yaptığı için pist gerektirmez. Tuzak: tören bir gemide yapıldığı için akla gelen Bayraktar TB3, TCG ANADOLU'dan kalkan kısa pistli SİHA'dır ve bu törenin konusu değildir; KIZILELMA'nın yurt içi teslimatı ise ayrı bir süreçtir.",
+   "kaynak": "Anadolu Ajansı, 20 Ağustos 2026; ayrıca TRT Haber, 20 Ağustos 2026 (https://www.trthaber.com/haber/savunma/bayraktar-kalkan-dihanin-envantere-alinmasina-yonelik-toren-duzenlendi-954484.html)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/teknofest-mavi-vatanda-bayraktar-kalkan-dihanin-envantere-alinmasina-yonelik-toren-duzenlendi/4033044",
+   "olayTarihi": "2026-08-20",
+   "uyarilar": [
+    "Tek kaynak (TRT). MSB 20 ve 27 Ağustos haftalık basın bilgilendirmelerinde envantere alma geçmiyor (27 Ağustos bülteni yalnız KALKAN'ın TCG Anadolu ve TCG Burgazada'da test uçuşlarından söz ediyor); SSB 24 Ağustos bülteni de değinmiyor. İkinci resmî teyit bulunamadı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "TRT Haber, 20 Ağustos 2026, 'Bayraktar KALKAN DİHA'nın envantere alınmasına yönelik tören düzenlendi'",
+     "kaynakUrl": "https://www.trthaber.com/haber/savunma/bayraktar-kalkan-dihanin-envantere-alinmasina-yonelik-toren-duzenlendi-954484.html",
+     "gerekce": "TEKNOFEST Mavi Vatan açılışının ardından Bayraktar KALKAN DİHA'nın envantere alınması için TCG Oruçreis'te tören düzenlendi (yayım 20.08.2026). Törene MSB Bakanı Güler, SSB Başkanı Görgün ve Selçuk Bayraktar katıldı.",
+     "uyari": null
+    },
+    {
+     "cevap": "C",
+     "kaynak": "TRT Haber, 20 Ağustos 2026 'Bayraktar KALKAN DİHA'nın envantere alınmasına yönelik tören düzenlendi'",
+     "kaynakUrl": "https://www.trthaber.com/haber/savunma/bayraktar-kalkan-dihanin-envantere-alinmasina-yonelik-toren-duzenlendi-954484.html",
+     "gerekce": "20 Ağustos 2026'da TEKNOFEST Mavi Vatan kapsamında Gölcük Tersanesi Komutanlığında TCG Oruçreis'te Bayraktar KALKAN Dikey İniş Kalkışlı İHA'nın envantere alınmasına yönelik tören düzenlendi.",
+     "uyari": "Tek kaynak (TRT). MSB 20 ve 27 Ağustos haftalık basın bilgilendirmelerinde envantere alma geçmiyor (27 Ağustos bülteni yalnız KALKAN'ın TCG Anadolu ve TCG Burgazada'da test uçuşlarından söz ediyor); SSB 24 Ağustos bülteni de değinmiyor. İkinci resmî teyit bulunamadı."
+    }
+   ]
+  },
+  {
+   "id": "savunma-2026-4",
+   "alan": "savunma-2026",
+   "karar": "UYARI",
+   "kok": "17 Mart 2026'da Ulaştırma ve Altyapı Bakanlığında düzenlenen törenle, Sivil Havacılık Genel Müdürlüğünün Türkiye'de döner kanat kategorisinde ilk kez verdiği tip sertifikasını alan hava aracı hangisidir?",
+   "siklar": {
+    "A": "T129 ATAK",
+    "B": "T929 ATAK-II",
+    "C": "T-70 Genel Maksat Helikopteri",
+    "D": "AS532 Cougar",
+    "E": "T625 GÖKBEY"
+   },
+   "dogruCevap": "E",
+   "aciklama": "TUSAŞ'ın geliştirdiği genel maksat helikopteri T625 GÖKBEY'in tip sertifikası, 17 Mart 2026'da Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu tarafından Savunma Sanayii Başkanı Haluk Görgün'e teslim edilmiştir (Anadolu Ajansı, 17 Mart 2026). Sivil Havacılık Genel Müdürlüğü (SHGM), bunun Türkiye'de döner kanat kategorisinde verilen ilk tip sertifikası olduğunu açıklamış; sertifikasyon süreci yaklaşık on yıl sürmüştür (DHA, 17 Mart 2026). Tuzak: sertifikayı veren kurum Savunma Sanayii Başkanlığı değil SHGM'dir; SSB sertifikayı teslim alan taraftır.",
+   "kaynak": "Anadolu Ajansı, 17 Mart 2026; ayrıca DHA, 17 Mart 2026 (https://www.dha.com.tr/politika/bakan-uraloglu-gokbey-tip-sertifikasina-kavustu-2838371)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/savunma-sanayisi/gokbey-helikopteri-sertifika-teslim-toreni-gerceklestirildi/3868432",
+   "olayTarihi": "2026-03-17",
+   "uyarilar": [
+    "(1) TARİH: TUSAŞ töreni '16 Mart 2026 tarihinde' diye yazıyor. UAB haberi 17 Mart 2026 tarihli. Kökteki '17 Mart 2026'da düzenlenen törenle' ifadesi büyük olasılıkla haberin yayım tarihi; tören tarihi 16 Mart 2026 olarak düzeltilmeli ya da 'Mart 2026'da' yazılmalı. (2) 'İLK' İDDİASI: Kök bunu 'SHGM'nin Türkiye'de döner kanat kategorisinde ilk kez verdiği tip sertifikası' diye kuruyor. Kaynaklar yalnız 'sertifikayı alan ilk ve tek millî helikopter' ve 'sivil yolcu taşıyabilen ilk millî hava aracı' diyor (TUSAŞ). UAB de 'kendi ulusal otoritesiyle sertifikalandırabilen seçkin ülkeler arasına katıldı' diyor. SHGM'nin döner kanatta ilk kez tip sertifikası verdiği açıkça yazmıyor; kök 'millî helikopter' vurgusuyla yeniden kurulmalı.",
+    "Tarih nüansı: SHGM'ye göre tip sertifikası 16 Mart 2026'da SHGM'deki törenle TUSAŞ Genel Müdürüne verildi; 17 Mart'taki Bakanlık töreni sertifikanın SSB Başkanına takdimiydi. Kök '17 Mart ... törenle ... tip sertifikasını alan' diyor; cevabı değiştirmez ama açıklamada iki tören ayrımı yapılmalı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "kaynak": "TUSAŞ, 'T625 GÖKBEY'in sivil sertifikasyon süreci tamamlandı' (31.03.2026) + Ulaştırma ve Altyapı Bakanlığı haberi (17 Mart 2026)",
+     "kaynakUrl": "https://www.tusas.com/medya-merkezi/haberler/t625-gokbeyin-sivil-sertifikasyon-sureci-tamamlandi",
+     "gerekce": "SHGM, T625 GÖKBEY'e 'CS-29 Büyük Helikopter' sınıfında tip sertifikası verdi. Sertifika Ulaştırma ve Altyapı Bakanlığında düzenlenen törenle takdim edildi (UAB: https://www.uab.gov.tr/haberler/goekbey-helikopteri-ucus-onayini-aldi/).",
+     "uyari": "(1) TARİH: TUSAŞ töreni '16 Mart 2026 tarihinde' diye yazıyor. UAB haberi 17 Mart 2026 tarihli. Kökteki '17 Mart 2026'da düzenlenen törenle' ifadesi büyük olasılıkla haberin yayım tarihi; tören tarihi 16 Mart 2026 olarak düzeltilmeli ya da 'Mart 2026'da' yazılmalı. (2) 'İLK' İDDİASI: Kök bunu 'SHGM'nin Türkiye'de döner kanat kategorisinde ilk kez verdiği tip sertifikası' diye kuruyor. Kaynaklar yalnız 'sertifikayı alan ilk ve tek millî helikopter' ve 'sivil yolcu taşıyabilen ilk millî hava aracı' diyor (TUSAŞ). UAB de 'kendi ulusal otoritesiyle sertifikalandırabilen seçkin ülkeler arasına katıldı' diyor. SHGM'nin döner kanatta ilk kez tip sertifikası verdiği açıkça yazmıyor; kök 'millî helikopter' vurgusuyla yeniden kurulmalı."
+    },
+    {
+     "cevap": "E",
+     "kaynak": "SHGM, 'Türkiye'nin İlk Yerli Helikopteri Uçmaya Hazır' (17 Mart 2026) ve 'Gökbey Helikopterinin Tip Sertifikasını Bakan Uraloğlu Takdim Etti' (18 Mart 2026); TRT Haber 17 Mart 2026",
+     "kaynakUrl": "https://web.shgm.gov.tr/tr/haberler/7591-imzalar-shgmde-atildi-turkiye",
+     "gerekce": "SHGM: T625 GÖKBEY'e verilen tip sertifikası 'ülkemizde bir döner kanatlı hava aracına verilen ilk tip sertifikası'; TRT (https://www.trthaber.com/haber/gundem/bakan-uraloglu-gokbey-sadece-bir-helikopter-degil-milli-gururumuzdur-938138.html): Bakan Uraloğlu sertifikayı 17 Mart 2026'da Ulaştırma ve Altyapı Bakanlığındaki törenle takdim etti.",
+     "uyari": "Tarih nüansı: SHGM'ye göre tip sertifikası 16 Mart 2026'da SHGM'deki törenle TUSAŞ Genel Müdürüne verildi; 17 Mart'taki Bakanlık töreni sertifikanın SSB Başkanına takdimiydi. Kök '17 Mart ... törenle ... tip sertifikasını alan' diyor; cevabı değiştirmez ama açıklamada iki tören ayrımı yapılmalı."
+    }
+   ]
+  },
+  {
+   "id": "savunma-2026-5",
+   "alan": "savunma-2026",
+   "karar": "UYARI",
+   "kok": "7 Ağustos 2026'da imzalanan ve taraflardan herhangi birine yönelik silahlı saldırının tümüne yönelik saldırı sayılacağını öngören üçlü Ortak Savunma Anlaşması'nın Türkiye dışındaki tarafları hangileridir?",
+   "siklar": {
+    "A": "Suudi Arabistan ve Pakistan",
+    "B": "Azerbaycan ve Pakistan",
+    "C": "Suudi Arabistan ve Katar",
+    "D": "Katar ve Pakistan",
+    "E": "Suudi Arabistan ve Mısır"
+   },
+   "dogruCevap": "A",
+   "aciklama": "7 Ağustos 2026'da Mekke'deki Safa Sarayı'nda imzalanan Mekke Ortak Savunma Anlaşması'nın tarafları Türkiye, Suudi Arabistan ve Pakistan'dır; anlaşmayı Cumhurbaşkanı Recep Tayyip Erdoğan, Suudi Arabistan Veliaht Prensi ve Başbakanı Muhammed bin Selman ile Pakistan Başbakanı Şahbaz Şerif imzalamıştır (İletişim Başkanlığı; Anadolu Ajansı, 7 Ağustos 2026). Anlaşmaya göre üç devletten birine yönelik silahlı saldırı hepsine yönelik saldırı sayılır. Anlaşma, imzalandığı şehrin adıyla anılır; başkent Riyad'da değil Mekke'de imzalanmıştır.",
+   "kaynak": "T.C. Cumhurbaşkanlığı İletişim Başkanlığı, 7 Ağustos 2026; ayrıca Anadolu Ajansı, 7 Ağustos 2026 (https://www.aa.com.tr/tr/gundem/turkiye-suudi-arabistan-ve-pakistan-ortak-savunma-anlasmasi-imzaladi/4021014)",
+   "kaynakUrl": "https://www.iletisim.gov.tr/turkce/haberler/detay/turkiye-suudi-arabistan-ve-pakistan-arasinda-ortak-savunma-anlasmasi-imzalandi",
+   "olayTarihi": "2026-08-07",
+   "uyarilar": [
+    "Anlaşmanın resmî adı 'Mekke Ortak Savunma Anlaşması'; kök yalnız 'üçlü Ortak Savunma Anlaşması' diyor. Kolektif savunma maddesi MSB metninde geçmiyor, yalnız TRT'de teyit edildi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "TRT Haber, 31 Ağustos 2026 ('Mekke Ortak Savunma Anlaşması'nın ilk komite toplantısı İstanbul'da') + TRT Haber, 13 Ağustos 2026 (Cevdet Yılmaz)",
+     "kaynakUrl": "https://www.trthaber.com/haber/gundem/mekke-ortak-savunma-anlasmasinin-ilk-komite-toplantisi-istanbulda-955410.html",
+     "gerekce": "Cumhurbaşkanı Erdoğan, Suudi Arabistan Veliaht Prensi Muhammed bin Selman ve Pakistan Başbakanı Şahbaz Şerif 7 Ağustos'ta Mekke'de Ortak Savunma Anlaşması'nı imzaladı. Anlaşmaya göre taraflardan birine yapılan saldırı tüm taraflara yapılmış sayılıyor.",
+     "uyari": null
+    },
+    {
+     "cevap": "A",
+     "kaynak": "MSB, 13 Ağustos 2026 haftalık basın bilgilendirme toplantısı; TRT Haber foto galeri 7 ve 9 Ağustos 2026",
+     "kaynakUrl": "https://www.msb.gov.tr/SlaytHaber/9db56551f42d41d381abdba998d00944",
+     "gerekce": "MSB: 'Türkiye, Pakistan ve Suudi Arabistan arasında 7 Ağustos 2026 tarihinde imzalanan Mekke Ortak Savunma Anlaşması'; TRT (https://www.trthaber.com/foto-galeri/turkiye-suudi-arabistan-ve-pakistan-savunmada-is-birligini-guclendiriyor/77908.html): herhangi bir silahlı saldırı hepsine yönelik saldırı kabul edilecek.",
+     "uyari": "Anlaşmanın resmî adı 'Mekke Ortak Savunma Anlaşması'; kök yalnız 'üçlü Ortak Savunma Anlaşması' diyor. Kolektif savunma maddesi MSB metninde geçmiyor, yalnız TRT'de teyit edildi."
+    }
+   ]
+  },
+  {
+   "id": "spor-2026-3",
+   "alan": "spor-2026",
+   "karar": "UYARI",
+   "kok": "Eylül 2026'da Şili Rallisi'ni ikinci sırada tamamlayarak FIA Gençler Dünya Ralli Şampiyonası'nı (JWRC) kazanan ve bu şampiyonluğa ulaşan ilk Türk pilot olan sporcu kimdir?",
+   "siklar": {
+    "A": "Ali Türkkan",
+    "B": "Ayhancan Güven",
+    "C": "Burak Çukurova",
+    "D": "Cem Bölükbaşı",
+    "E": "Yağız Avcı"
+   },
+   "dogruCevap": "A",
+   "aciklama": "Castrol Ford Team Türkiye pilotu Ali Türkkan, sezonun son ayağı olan Şili Rallisi'ni (10-13 Eylül 2026) ikinci sırada bitirerek 2026 FIA Gençler Dünya Ralli Şampiyonu olmuş ve Türk otomobil sporları tarihinde JWRC şampiyonluğuna ulaşan ilk sürücü olmuştur (Anadolu Ajansı ve TRT Haber, 13 Eylül 2026). Son yarışa lider giren İsveçli Calle Carlberg'in kaza yaparak yarış dışı kalması şampiyonluğu Türkkan'a getirmiştir. Tuzak: diğer şıklardaki isimler de otomobil sporlarında yarışan Türk pilotlardır.",
+   "kaynak": "Anadolu Ajansı, 13 Eylül 2026; TRT Haber, 13 Eylül 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/spor/ali-turkkan-dunya-gencler-ralli-sampiyonasini-kazanan-ilk-turk-pilot-oldu/4056118",
+   "olayTarihi": "2026-09-13",
+   "uyarilar": [
+    "'İlk Türk pilot' iddiası yalnız TRT Haber'de açıkça geçiyor; TOSFED haberi 'Türk otomobil sporları tarihindeki en büyük başarı' diyor, 'ilk' demiyor. Kökteki 'Şili Rallisi'ni ikinci sırada tamamlayarak' ayrıntısı derece/sonuç ayrıntısıdır (PLAN §1.4'e yakın), cevap için gereksiz; çıkarılması önerilir.",
+    "Hafif: kökte yarış sıralaması ayrıntısı ('Şili Rallisi'ni ikinci sırada tamamlayarak') var; sorulmuyor ama PLAN §1-4'teki maç/sonuç ayrıntısı tipine yakın, kökten çıkarılması düşünülebilir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "A",
+     "kaynak": "TRT Haber, 13 Eylül 2026 'Ali Türkkan, Dünya Gençler Ralli Şampiyonu oldu' + TOSFED, 13 Eylül 2026 'Ali Türkkan Dünya Şampiyonu'",
+     "kaynakUrl": "https://www.trthaber.com/haber/spor/ali-turkkan-dunya-gencler-ralli-sampiyonu-oldu-956725.html",
+     "gerekce": "TRT Haber'e göre Ali Türkkan Şili Rallisi'ni ikinci bitirerek 2026 JWRC şampiyonu oldu ve 'JWRC şampiyonluğuna ulaşan ilk' Türk sürücü oldu; TOSFED şampiyonluğu teyit ediyor (https://www.tosfed.org.tr/ali-turkkan-dunya-sampiyonu/).",
+     "uyari": "'İlk Türk pilot' iddiası yalnız TRT Haber'de açıkça geçiyor; TOSFED haberi 'Türk otomobil sporları tarihindeki en büyük başarı' diyor, 'ilk' demiyor. Kökteki 'Şili Rallisi'ni ikinci sırada tamamlayarak' ayrıntısı derece/sonuç ayrıntısıdır (PLAN §1.4'e yakın), cevap için gereksiz; çıkarılması önerilir."
+    },
+    {
+     "cevap": "A",
+     "kaynak": "AA, 13 Eylül 2026; Gençlik ve Spor Bakanlığı, 13 Eylül 2026 tebrik mesajı",
+     "kaynakUrl": "https://www.aa.com.tr/tr/spor/ali-turkkan-dunya-gencler-ralli-sampiyonasini-kazanan-ilk-turk-pilot-oldu/4056118",
+     "gerekce": "AA, Ali Türkkan'ın sezonun son ayağı Şili Rallisi'ni ikinci bitirerek 2026 FIA JWRC şampiyonu olan ilk Türk pilot olduğunu yazıyor; GSB (https://gsb.gov.tr/tr/haber-detay/302984-bakan-baktan-dunya-gencler-ralli-sampiyonu-ali-turkkan-icin-tebrik-mesaji) şampiyonluğu ve 'ilk' niteliğini doğruluyor.",
+     "uyari": "Hafif: kökte yarış sıralaması ayrıntısı ('Şili Rallisi'ni ikinci sırada tamamlayarak') var; sorulmuyor ama PLAN §1-4'teki maç/sonuç ayrıntısı tipine yakın, kökten çıkarılması düşünülebilir."
+    }
+   ]
+  },
+  {
+   "id": "spor-2026-4",
+   "alan": "spor-2026",
+   "karar": "UYARI",
+   "kok": "21 Ağustos-3 Eylül 2026 tarihlerinde düzenlenen ve Türkiye'nin 334 sporcuyla katıldığı 20. Akdeniz Oyunları, İtalya'nın hangi kentinde yapılmıştır?",
+   "siklar": {
+    "A": "Bari",
+    "B": "Napoli",
+    "C": "Palermo",
+    "D": "Pescara",
+    "E": "Taranto"
+   },
+   "dogruCevap": "E",
+   "aciklama": "20. Akdeniz Oyunları 21 Ağustos-3 Eylül 2026'da İtalya'nın Taranto kentinde düzenlenmiş, Türkiye oyunlara 137'si kadın, 197'si erkek olmak üzere 334 sporcuyla katılmıştır (Anadolu Ajansı ve Gençlik ve Spor Bakanlığı Spor Hizmetleri Genel Müdürlüğü, 20 Ağustos 2026). Tuzak: İtalya oyunlara daha önce 1963'te Napoli, 1997'de Bari ve 2009'da Pescara'da ev sahipliği yapmıştı.",
+   "kaynak": "Anadolu Ajansı, 20 Ağustos 2026; Gençlik ve Spor Bakanlığı SHGM, 20 Ağustos 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/spor/2026-akdeniz-oyunlari-yarin-baslayacak/4032334",
+   "olayTarihi": "2026-08-21",
+   "uyarilar": [
+    "Kökteki '20.' sıra numarası ve 21 Ağustos-3 Eylül 2026 tarihleri yalnız Vikipedi ipucuyla örtüşüyor, birincil kaynakta (ta2026.com 403 verdi, TMOK/GSB/AA sayfalarında haber yok) doğrulanamadı; 'Türkiye'nin 334 sporcuyla katıldığı' sayısı hiçbir kaynakta doğrulanamadı — sayı kökten çıkarılmalı ya da TMOK/GSB duyurusuyla teyit edilmeli.",
+    "Hafif: AA/TMOK'a göre yarışmalar 'Taranto ve çevresindeki Puglia Bölgesi'ndeki tesislerde' yapıldı; çeldirici Bari da Puglia'da. Bari'de branş yapıldıysa 'hangi kentte yapılmıştır' ifadesi tartışmaya açılabilir, kök 'hangi kentin ev sahipliğinde' diye yazılırsa sorun kalmaz."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "kaynak": "Uluslararası Akdeniz Oyunları Komitesi (CIJM) resmî sitesi — 2026 Akdeniz Oyunları ev sahibi Taranto (İtalya)",
+     "kaynakUrl": "https://www.cijm.org.gr/",
+     "gerekce": "CIJM, 2026 Akdeniz Oyunlarının ev sahibinin Taranto (İtalya) olduğunu belirtiyor ve ta2026.com resmî sitesine bağlantı veriyor.",
+     "uyari": "Kökteki '20.' sıra numarası ve 21 Ağustos-3 Eylül 2026 tarihleri yalnız Vikipedi ipucuyla örtüşüyor, birincil kaynakta (ta2026.com 403 verdi, TMOK/GSB/AA sayfalarında haber yok) doğrulanamadı; 'Türkiye'nin 334 sporcuyla katıldığı' sayısı hiçbir kaynakta doğrulanamadı — sayı kökten çıkarılmalı ya da TMOK/GSB duyurusuyla teyit edilmeli."
+    },
+    {
+     "cevap": "E",
+     "kaynak": "AA, 20 Ağustos 2026 (TMOK açıklaması); Gençlik ve Spor Bakanlığı duyurusu; Taranto 2026 organizasyon sitesi",
+     "kaynakUrl": "https://www.aa.com.tr/tr/spor/2026-akdeniz-oyunlari-yarin-baslayacak/4032334",
+     "gerekce": "AA, 20. Akdeniz Oyunları'nın İtalya'nın Taranto kentinde 21 Ağustos-3 Eylül 2026 arasında yapılacağını ve Türkiye'nin 334 sporcuyla katılacağını yazıyor; GSB (https://gsb.gov.tr/tr/haber-detay/302555-bakan-bak-akdeniz-oyunlarinda-mucadele-edecek-milli-sporculara-basari-diledi) ve https://www.taranto2026.it/ doğruluyor.",
+     "uyari": "Hafif: AA/TMOK'a göre yarışmalar 'Taranto ve çevresindeki Puglia Bölgesi'ndeki tesislerde' yapıldı; çeldirici Bari da Puglia'da. Bari'de branş yapıldıysa 'hangi kentte yapılmıştır' ifadesi tartışmaya açılabilir, kök 'hangi kentin ev sahipliğinde' diye yazılırsa sorun kalmaz."
+    }
+   ]
+  }
+ ]
+}

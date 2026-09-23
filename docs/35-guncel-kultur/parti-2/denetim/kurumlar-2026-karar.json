@@ -1,0 +1,137 @@
+[
+ {
+  "id": "kurumlar-2026-1",
+  "alan": "kurumlar-2026",
+  "karar": "UYARI",
+  "uretilenCevap": "E",
+  "d1": "E",
+  "d2": "E",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "KAPSAM: iki olay da 2025'te (8 Ocak ve 25 Aralık 2025); PLAN §0 penceresi 1 Ocak–22 Eylül 2026. Ayrıca CBK görev bendi içeriğine dayanıyor (PLAN §1-2 mevzuat içeriği sınırına yakın). Çeldirici B (Dijital Dönüşüm Ofisi) 28 Mart 2025'te kapatıldı; aynı partideki kurumlar-2026-2 kökü bunu açıkça söylüyor — iki soru birlikte çıkarsa ipucu sızar. C (TÜRKSAT) e-Devlet'i fiilen işleten şirket olarak bilinir; kökteki 'CBK ile kurulan' kaydı onu dışlıyor, ikinci doğru değil.",
+   "Olay 2025'e ait (PLAN §0'daki 1 Ocak-22 Eylül 2026 penceresinin dışında; yalnız §3 kurumlar satırındaki '2025-2026' ifadesiyle kapsama giriyor). Kökün ikinci yarısı CBK görev bendinin içeriğini soruyor (PLAN §1.2 mevzuat içeriğine yakın). B şıkkı Dijital Dönüşüm Ofisi 28 Mart 2025'te kapatıldı; TÜRKSAT e-Devlet'i geçmişte işletti ama 2025'te kurulmadığı için ikinci doğru cevap değil."
+  ],
+  "denetciKaynaklari": [
+   "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf",
+   "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf"
+  ],
+  "gerekce": "177 sayılı CBK (8 Ocak 2025) Cumhurbaşkanlığına bağlı Siber Güvenlik Başkanlığını kurar; 192 sayılı CBK (25 Aralık 2025) md 4'e '(k) e-Devlet Kapısı ile dijital devlet ortak ürün, hizmet ve sistemlerini geliştirmek ve işletmek' bendini ekler. Kuruluş metni: https://www.resmigazete.gov.tr/eskiler/2025/01/20250108-1.pdf",
+  "meta": {
+   "aciklama": "Siber Güvenlik Başkanlığı, 8 Ocak 2025 tarihli Resmî Gazete'de yayımlanan 177 sayılı Cumhurbaşkanlığı Kararnamesi ile Cumhurbaşkanlığına bağlı, özel bütçeli ve merkezi Ankara'da bulunan bir kurum olarak kurulmuştur. 25 Aralık 2025 tarihli Resmî Gazete'de yayımlanan 192 sayılı Kararname ile Başkanlığa e-Devlet Kapısı ile dijital devlet ortak ürün, hizmet ve sistemlerini geliştirme ve işletme görevi verilmiş, Başkanlık da bu görevi üstlendiğini kendi sitesinde duyurmuştur. Tuzak: e-Devlet'le sık anılan Cumhurbaşkanlığı Dijital Dönüşüm Ofisi 28 Mart 2025'te kapatılmıştır.",
+   "kaynak": "Resmî Gazete, 8 Ocak 2025 (177 sayılı CBK) ve 25 Aralık 2025 (192 sayılı CBK); Siber Güvenlik Başkanlığı",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf",
+   "olayTarihi": "2025-12-25"
+  }
+ },
+ {
+  "id": "kurumlar-2026-2",
+  "alan": "kurumlar-2026",
+  "karar": "UYARI",
+  "uretilenCevap": "B",
+  "d1": "B",
+  "d2": "B",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "KAPSAM: olay 28 Mart 2025; PLAN §0 penceresi 1 Ocak–22 Eylül 2026 dışında. Kök, cevabı ele veriyor: 'Finans Ofisi kapatıldı, atıflar kendisine yapılmış sayılır' bilgisi adında 'Finans' geçen tek şıkkı (B) işaret ediyor — P9/P10 zorluk bandının altında kalabilir. Doğrulanmış kurum-düzeni ayrıntısı olarak CBK içeriğine dayanıyor (PLAN §1-2 sınırı).",
+   "Mevzuat içeriği sorusu: 'atıfların yapılmış sayılması' ve daire başkanlığı eklenmesi CBK hükmü ayrıntısı (PLAN §1.2 reddedilen tip). Olay 2025'e ait (2026 penceresi dışında). Kök cevabı ele veriyor: 'Finans Dairesi' ve 'Finans Ofisine yapılan atıflar' şıklar arasında adında 'Finans' ve 'Ofis' geçen tek kurumu gösteriyor; zorluk P9/P10 bandının altında kalabilir."
+  ],
+  "denetciKaynaklari": [
+   "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+   "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf"
+  ],
+  "gerekce": "183 sayılı CBK Yatırım Ofisinin adını 'Yatırım ve Finans Ofisi' yapar, 527/G'ye Finans Dairesi Başkanlığını (finansal sektör verileri, yeni finansal araçlar) ekler, Finans Ofisine yapılan atıfları Yatırım ve Finans Ofisine yönlendirir; geçici md 1 Dijital Dönüşüm, İnsan Kaynakları ve Finans ofislerini 'kapatılan ofisler' olarak düzenler.",
+  "meta": {
+   "aciklama": "28 Mart 2025 tarihli Resmî Gazete'de yayımlanan 183 sayılı Cumhurbaşkanlığı Kararnamesi ile Dijital Dönüşüm, Finans ve İnsan Kaynakları ofisleri kapatılmış, Yatırım Ofisinin adı Yatırım ve Finans Ofisi olarak değiştirilmiş ve bünyesine Finans Dairesi Başkanlığı eklenmiştir (Anadolu Ajansı, 28 Mart 2025). Böylece Cumhurbaşkanlığına bağlı dört ofisten yalnız Yatırım ve Finans Ofisi kalmıştır. Tuzak: kapatılan ofis Finans Ofisi'dir; finans görevlerini devralan kurum Hazine ve Maliye Bakanlığı değil, yeni adıyla Yatırım ve Finans Ofisi'dir.",
+   "kaynak": "Resmî Gazete, 28 Mart 2025 (183 sayılı CBK); Anadolu Ajansı, 28 Mart 2025",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+   "olayTarihi": "2025-03-28"
+  }
+ },
+ {
+  "id": "kurumlar-2026-3",
+  "alan": "kurumlar-2026",
+  "karar": "UYARI",
+  "uretilenCevap": "C",
+  "d1": "C",
+  "d2": "C",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "KAPSAM: olay 25 Aralık 2025; PLAN §0 penceresi (1 Ocak–22 Eylül 2026) dışında. Soru bir bakanlığın genel müdürlük düzeyindeki ad değişikliğini soruyor — P9#74 kalıbındaki kurum düzeyinin altında, CBK bent içeriğine dayalı teknik mevzuat ayrıntısı (PLAN §1-1/§1-2'ye yakın). Aynı CBK yeni (r) bendiyle veri merkezi ve bulut bilişim görevi de veriyor; şıklarda yok, ikinci doğru oluşmuyor.",
+   "Olay 2025'e ait (2026 penceresi dışında). Soru bakanlık içindeki bir genel müdürlüğün ad değişikliği; kurum düzeyinde değil, iç birim ayrıntısı (PLAN §1.2 CBK içeriği sınırında). İkinci doğru şık yok: aynı CBK'nin (r) bendi veri merkezi/bulut bilişim görevi ekliyor ama bu alan şıklarda bulunmuyor ve ada eklenmedi."
+  ],
+  "denetciKaynaklari": [
+   "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-12.pdf",
+   "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-12.pdf"
+  ],
+  "gerekce": "191 sayılı CBK 1 sayılı CBK md 387 ve 388/A'daki 'Milli Teknoloji' ibaresini 'Millî Teknoloji ve Yapay Zekâ' yapar ve (p) bendiyle yapay zekâ alanında politika/strateji oluşturma, 'ulusal ölçekte yönetişim ve koordinasyonu sağlama' görevini verir.",
+  "meta": {
+   "aciklama": "25 Aralık 2025 tarihli Resmî Gazete'de yayımlanan 191 sayılı Cumhurbaşkanlığı Kararnamesi ile Sanayi ve Teknoloji Bakanlığı'nın Millî Teknoloji Genel Müdürlüğü, Millî Teknoloji ve Yapay Zekâ Genel Müdürlüğü adını almıştır. Birime yapay zekâ alanında politika ve strateji oluşturma, ulusal ölçekte yönetişim ve koordinasyon ile veri merkezi ve bulut bilişim altyapısını geliştirme görevleri eklenmiş; yeni ad Bakanlığın teşkilat şemasında da yer almaktadır (Sanayi ve Teknoloji Bakanlığı). Tuzak: Genel Müdürlüğün görevleri arasında siber güvenlik ekosistemine katkı da sayılır, ancak yeni ada eklenen alan yapay zekâdır.",
+   "kaynak": "Resmî Gazete, 25 Aralık 2025 (191 sayılı CBK); Sanayi ve Teknoloji Bakanlığı teşkilat şeması",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-12.pdf",
+   "olayTarihi": "2025-12-25"
+  }
+ },
+ {
+  "id": "kurumlar-2026-4",
+  "alan": "kurumlar-2026",
+  "karar": "UYARI",
+  "uretilenCevap": "D",
+  "d1": "D",
+  "d2": "D",
+  "guven": [
+   "orta",
+   "orta"
+  ],
+  "uyarilar": [
+   "KAPSAM: olay 27 Şubat 2025; PLAN §0 penceresi (1 Ocak–22 Eylül 2026) dışında. Kökteki 'Anayasa Mahkemesinin kuruluş CBK'sini iptal etmesinin ardından' ifadesini bu turda açılan birincil kaynakla doğrulayamadım (Kanun metninde ve Akademinin tarihçe sayfasında bu iptalden söz edilmiyor) — güven bu yüzden orta; ifade doğrulanamıyorsa kökten çıkarılmalı. Kurum 2003'te 4954 sayılı Kanunla kurulmuş, 2018'de kapatılmış, 2025'te 'yeniden' kurulmuş; kökteki 'kurulan' yerine 'yeniden kurulan' daha doğru. Olgunun kendisi (7540, Adalet Bakanlığıyla ilgili, özerk, eğitim planları) teyitli.",
+   "Kökteki 'Anayasa Mahkemesinin, kuruluşunu düzenleyen CBK'yi iptal etmesinin ardından' önermesi açılan kaynaklarda DOĞRULANAMADI. Ne Kanun metni ne kurumun tarihçe sayfası AYM iptalinden söz ediyor; tarihçe 2018'de 703 s. KHK ile kapatılma ve 1 s. CBK md 60 ile Hâkim ve Savcı Eğitim Merkezinin kurulmasını anlatıyor. Güven bu yüzden 'orta'. Cevap D yine de tek doğru. Olay 2025'e ait (2026 penceresi dışında). C şıkkı TODAİE 2018'de kapatıldı; 'gerçek kurum' şartına uymayan bir çeldirici."
+  ],
+  "denetciKaynaklari": [
+   "https://www.resmigazete.gov.tr/eskiler/2025/02/20250227-4.htm",
+   "https://www.resmigazete.gov.tr/eskiler/2025/02/20250227-4.htm"
+  ],
+  "gerekce": "7540 sayılı Kanun md 3 'kamu tüzel kişiliğini haiz, bilimsel, idari ve mali özerkliği olan, özel bütçeli, Bakanlıkla ilgili' Türkiye Adalet Akademisini kurar; md 4/1-a 'hâkim ve savcılara yönelik eğitim planlarını hazırlamak, yayımlamak ve uygulamak' görevini verir. taa.gov.tr/sayfa/tarihce kurumun 27/02/2025 tarihli 7540 sayılı Kanunla 'yeniden kurulduğunu' doğruluyor.",
+  "meta": {
+   "aciklama": "Türkiye Adalet Akademisi, 27 Şubat 2025 tarihli Resmî Gazete'de yayımlanan 7540 sayılı Türkiye Adalet Akademisi Kanunu ile Adalet Bakanlığıyla ilgili, merkezi Ankara'da bulunan özerk bir kamu tüzel kişisi olarak kurulmuştur. Kanun teklifi TBMM Genel Kurulunda 13 Şubat 2025'te kabul edilmiş; düzenleme, Anayasa Mahkemesinin Akademiyi düzenleyen 34 sayılı Cumhurbaşkanlığı Kararnamesini iptal etmesi üzerine yapılmıştır (Anadolu Ajansı, 13 Şubat 2025). Tuzak: hâkim ve savcıların atama ve disiplin işlerini yürüten anayasal kurul HSK'dır; eğitim planlarını ise Akademi hazırlar ve uygular.",
+   "kaynak": "Resmî Gazete, 27 Şubat 2025 (7540 sayılı Kanun); Anadolu Ajansı, 13 Şubat 2025",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/02/20250227-4.htm",
+   "olayTarihi": "2025-02-27"
+  }
+ },
+ {
+  "id": "kurumlar-2026-5",
+  "alan": "kurumlar-2026",
+  "karar": "UYARI",
+  "uretilenCevap": "A",
+  "d1": "A",
+  "d2": "A",
+  "guven": [
+   "yuksek",
+   "yuksek"
+  ],
+  "uyarilar": [
+   "KAPSAM: olay 28 Mart 2025; PLAN §0 penceresi (1 Ocak–22 Eylül 2026) dışında. B, C, D çeldiricileri aynı CBK'yle adı değişen kurullar; kök 'yeni kurulan' ile 'adı değişen'i ayırdığı için tek cevaplı, ancak sorunun ayırt ediciliği CBK bent/madde içeriğine dayanıyor (PLAN §1-2 mevzuat içeriği sınırına yakın). Sağlık kurulunun eski adının 'Sağlık ve Gıda Politikaları Kurulu' olduğu bu turda eski metinle ayrıca karşılaştırılmadı; yeni 30/A maddesinin 'eklenmiş' olması Tarım ve Gıda'nın yeni olduğunu tek başına gösteriyor.",
+   "Mevzuat içeriği sorusu: politika kurullarının ad değişiklikleri CBK hükmü ayrıntısı (PLAN §1.2). Olay 2025'e ait (2026 penceresi dışında). Sağlık Politikaları Kurulunun eski adının 'Sağlık ve Gıda' olduğu 183 s. CBK metninde açıkça yazmıyor; Tarım ve Gıda kurulu bu kurulun bölünmesiyle doğduysa 'yeni kurulan' nitelemesi tartışmaya açık olabilir. Ancak CBK madde ekleme yoluyla yeni kurul oluşturduğu için A tek savunulabilir cevap."
+  ],
+  "denetciKaynaklari": [
+   "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+   "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf"
+  ],
+  "gerekce": "183 sayılı CBK md 2 politika kurulları listesine (g)'den sonra yeni bent olarak 'Tarım ve Gıda Politikaları Kurulu'nu ekler ve md 6 ile 1 sayılı CBK'ye yeni 30/A maddesini (Tarım ve Gıda Politikaları Kurulu) ekler; Sağlık (md 29), Sosyal ve Gençlik (md 30, eski 'Sosyal Politikalar') ile Yerel Yönetim ve Afet (md 31, eski 'Yerel Yönetim') kurulları mevcut maddelerin adı/metni değiştirilerek düzenlenir.",
+  "meta": {
+   "aciklama": "28 Mart 2025 tarihli Resmî Gazete'de yayımlanan 183 sayılı Cumhurbaşkanlığı Kararnamesi ile Tarım ve Gıda Politikaları Kurulu kurulmuş; gıda sağlığı ve güvenliği, su kaynaklarının etkin kullanımı, yerli gen kaynaklarının korunması ve biyogüvenlik alanlarında politika önerileri geliştirmekle görevlendirilmiştir (Anadolu Ajansı, 28 Mart 2025). Aynı düzenlemeyle Sağlık ve Gıda Politikaları Kurulu 'Sağlık Politikaları Kurulu', Sosyal Politikalar Kurulu 'Sosyal ve Gençlik Politikaları Kurulu', Yerel Yönetim Politikaları Kurulu ise 'Yerel Yönetim ve Afet Politikaları Kurulu' adını almıştır. Tuzak: bu üç kurul yeni değildir, yalnız adları değişmiştir; Güvenlik ve Dış Politikalar Kurulu ise 2018'den beri vardır.",
+   "kaynak": "Resmî Gazete, 28 Mart 2025 (183 sayılı CBK); Anadolu Ajansı, 28 Mart 2025",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/cumhurbaskanligina-bagli-ofis-ve-politika-kurullarina-iliskin-duzenlemeler-resmi-gazetede/3522186",
+   "olayTarihi": "2025-03-28"
+  }
+ }
+]

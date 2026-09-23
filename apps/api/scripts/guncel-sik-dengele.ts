@@ -16,7 +16,9 @@
  */
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
+// GUNCEL_KOK ile başka bir parti klasörü seçilir (ör. docs/35-guncel-kultur/parti-2);
+// varsayılan ilk partidir. Her parti kendi arastirma/parti/denetim/kurtarma alt klasörlerini taşır.
+const KOK = process.env.GUNCEL_KOK ?? '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 const APPLY = process.env.APPLY === '1';
 const HARF = ['A', 'B', 'C', 'D', 'E'];
 /**
@@ -28,6 +30,8 @@ const HARF = ['A', 'B', 'C', 'D', 'E'];
 const ATLA = new Set([
   'ekonomi-teknoloji-savunma', 'kultur-sanat-bilim', 'spor',
   'turkiye-siyaset-mevzuat', 'uluslararasi',
+  // 2. parti (parti-2/, 23 Eyl 2026)
+  'savunma-2026', 'egm-ic-guvenlik', 'kurumlar-2026', 'uluslararasi-2026', 'spor-2026', 'vefat-2026', 'kultur-sanat-2026',
 ]);
 
 /** Şıkların tamamı sayı/yıl mı — öyleyse sıra anlamlıdır. */

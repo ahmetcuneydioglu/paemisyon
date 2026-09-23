@@ -11,7 +11,9 @@
  *   CELISKI        denetçiler kendi aralarında ya da anahtarla ayrıştı
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
-const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
+// GUNCEL_KOK ile başka bir parti klasörü seçilir (ör. docs/35-guncel-kultur/parti-2);
+// varsayılan ilk partidir. Her parti kendi arastirma/parti/denetim/kurtarma alt klasörlerini taşır.
+const KOK = process.env.GUNCEL_KOK ?? '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 
 /**
  * TAMAMLANMIŞ ALANLAR — şık dengelemesi çalıştıktan sonra bu alanların
@@ -25,6 +27,8 @@ const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 const TAMAMLANDI = new Set([
   'ekonomi-teknoloji-savunma', 'kultur-sanat-bilim', 'spor',
   'turkiye-siyaset-mevzuat', 'uluslararasi',
+  // 2. parti (parti-2/, 23 Eyl 2026) — dengelendi ve yazıldı
+  'savunma-2026', 'egm-ic-guvenlik', 'kurumlar-2026', 'uluslararasi-2026', 'spor-2026', 'vefat-2026', 'kultur-sanat-2026',
 ]);
 
 const T: Record<string, number> = {};

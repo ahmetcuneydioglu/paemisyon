@@ -1,0 +1,191 @@
+{
+ "parca": 4,
+ "sorular": [
+  {
+   "id": "uluslararasi-2026-2",
+   "alan": "uluslararasi-2026",
+   "karar": "UYARI",
+   "kok": "Yaklaşık 25 yıl süren müzakerelerin ardından 17 Ocak 2026'da Asunción'da Avrupa Birliği ile Ortaklık Anlaşması ve Geçici Ticaret Anlaşması imzalayan Güney Amerika ekonomik bütünleşme örgütü hangisidir?",
+   "siklar": {
+    "A": "And Topluluğu",
+    "B": "Pasifik İttifakı",
+    "C": "Karayip Topluluğu (CARICOM)",
+    "D": "Güney Ortak Pazarı (MERCOSUR)",
+    "E": "Amerika Halkları İçin Bolivarcı İttifak (ALBA)"
+   },
+   "dogruCevap": "D",
+   "aciklama": "Avrupa Birliği ile Arjantin, Brezilya, Paraguay ve Uruguay'ın taraf olduğu MERCOSUR arasındaki Ortaklık Anlaşması ve Geçici Ticaret Anlaşması, yaklaşık 25 yıllık müzakerenin ardından 17 Ocak 2026'da Paraguay'ın başkenti Asunción'da imzalanmıştır (Avrupa Komisyonu, 17 Ocak 2026; AA, 17 Ocak 2026). İmza yürürlük demek değildir: anlaşmanın yürürlüğe girmesi için Avrupa Parlamentosu'nun onayı ve MERCOSUR ülkelerinin iç onay süreçleri gerekir. And Topluluğu ve Pasifik İttifakı da Güney Amerika'daki bölgesel örgütlerdir; karıştırılmamalıdır.",
+   "kaynak": "Avrupa Komisyonu, 17 Ocak 2026; Anadolu Ajansı, 17 Ocak 2026",
+   "kaynakUrl": "https://cyprus.representation.ec.europa.eu/news/eu-and-mercosur-sign-historic-and-ambitious-partnership-2026-01-17_en",
+   "olayTarihi": "2026-01-17",
+   "uyarilar": [
+    "Küçük: DG Trade müzakere başlangıcını 2000 veriyor (imzaya kadar ~26 yıl); kökteki 'yaklaşık 25 yıl' kabul edilebilir ama '25 yılı aşkın' daha isabetli olur."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "kaynak": "Avrupa Komisyonu basın bülteni IP/26/113, 17 Ocak 2026 ('EU and Mercosur sign historic and ambitious partnership') + DG Trade Mercosur sayfası",
+     "kaynakUrl": "https://ec.europa.eu/commission/presscorner/api/documents?reference=IP/26/113&language=en",
+     "gerekce": "Komisyon bülteni anlaşmanın 17 Ocak 2026'da Asunción'da imzalandığını; DG Trade sayfası EMPA ve iTA'nın 17 Ocak 2026'da imzalandığını ve müzakerelerin 2000'de başladığını söylüyor.",
+     "uyari": "Küçük: DG Trade müzakere başlangıcını 2000 veriyor (imzaya kadar ~26 yıl); kökteki 'yaklaşık 25 yıl' kabul edilebilir ama '25 yılı aşkın' daha isabetli olur."
+    },
+    {
+     "cevap": "D",
+     "kaynak": "Avrupa Komisyonu, SPEECH/26/141 ve STATEMENT/26/142 (17 Ocak 2026, Asunción); DG Trade Mercosur sayfası",
+     "kaynakUrl": "https://ec.europa.eu/commission/presscorner/api/documents?reference=SPEECH/26/141&language=en",
+     "gerekce": "Von der Leyen 17 Ocak 2026'da Asunción'daki imza töreninde konuştu ('after 25 years of work'); DG Trade sayfası AB ile Mercosur'un 17 Ocak 2026'da EMPA ve iTA'yı imzaladığını yazıyor.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "uluslararasi-2026-4",
+   "alan": "uluslararasi-2026",
+   "karar": "UYARI",
+   "kok": "Türkiye'nin Cumhurbaşkanı Yardımcısı Cevdet Yılmaz'la temsil edildiği Avrupa Siyasi Topluluğu 8. Zirvesi, 4 Mayıs 2026'da hangi başkentte düzenlenmiştir?",
+   "siklar": {
+    "A": "Tiflis",
+    "B": "Bakü",
+    "C": "Kişinev",
+    "D": "Tiran",
+    "E": "Erivan"
+   },
+   "dogruCevap": "E",
+   "aciklama": "Avrupa Siyasi Topluluğu'nun 8. Zirvesi 4 Mayıs 2026'da Ermenistan'ın başkenti Erivan'da toplanmış, Türkiye'yi Cumhurbaşkanı adına Cumhurbaşkanı Yardımcısı Cevdet Yılmaz temsil etmiştir (AA, Mayıs 2026; NATO, 4 Mayıs 2026). AA bu ziyareti Türkiye'den Ermenistan'a bu seviyede yapılan ilk ziyaret olarak duyurmuştur. Tiran, topluluğun Mayıs 2025'teki 6. zirvesine ev sahipliği yapmıştır; karıştırılmamalıdır.",
+   "kaynak": "Anadolu Ajansı, Mayıs 2026; NATO, 4 Mayıs 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-ermenistana-gidecek/3924838",
+   "olayTarihi": "2026-05-04",
+   "uyarilar": [
+    "Kökteki 'Cevdet Yılmaz'la temsil edildi' ve '8. Zirve' ayrıntıları bu turda birincil kaynakla doğrulanamadı (consilium/tccb/AA sayfaları açılmadı); yayından önce AA ya da Cumhurbaşkanlığı duyurusuyla teyit edilmeli. Cevap (Erivan) doğrulandı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "kaynak": "GOV.UK, 'European Political Community Summit in Armenia: UK statement to the OSCE' (7-8 Mayıs 2026) + GOV.UK 'PM meeting with Prime Minister Pashinyan of Armenia: 4 May 2026'",
+     "kaynakUrl": "https://www.gov.uk/government/speeches/european-political-community-summit-in-armenia-uk-statement-to-the-osce",
+     "gerekce": "İngiltere hükûmeti AST zirvesinin o hafta Erivan'da (4 Mayıs 2026) yapıldığını söylüyor; zirvenin 8. olduğu ve Türkiye'yi Cevdet Yılmaz'ın temsil ettiği yalnız Vikipedi'de görüldü, birincil kaynakta açılamadı.",
+     "uyari": "Kökteki 'Cevdet Yılmaz'la temsil edildi' ve '8. Zirve' ayrıntıları bu turda birincil kaynakla doğrulanamadı (consilium/tccb/AA sayfaları açılmadı); yayından önce AA ya da Cumhurbaşkanlığı duyurusuyla teyit edilmeli. Cevap (Erivan) doğrulandı."
+    },
+    {
+     "cevap": "E",
+     "kaynak": "Anadolu Ajansı, 4 Mayıs 2026 haberi; epcyerevan2026.am resmî zirve sitesi",
+     "kaynakUrl": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-guney-kafkasyada-baris-saglandikca-bolgede-yasayan-herkes-kazanacak/3926897",
+     "gerekce": "AA: Yılmaz, Cumhurbaşkanı Erdoğan'ı temsilen Ermenistan'ın başkenti Erivan'da düzenlenen Avrupa Siyasi Topluluğu 8. Zirvesi'ne katıldı; resmî site 8. zirveyi 4 Mayıs 2026 Erivan olarak veriyor.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "uluslararasi-2026-6",
+   "alan": "uluslararasi-2026",
+   "karar": "UYARI",
+   "kok": "29 Ağustos 2026'da yapılan halkoylamasında seçmenlerin yüzde 52,8'i, 2013'te askıya alınan Avrupa Birliği üyelik müzakerelerinin yeniden başlatılmasına \"hayır\" demiştir. Bu halkoylaması hangi ülkede yapılmıştır?",
+   "siklar": {
+    "A": "Norveç",
+    "B": "İzlanda",
+    "C": "İsviçre",
+    "D": "Moldova",
+    "E": "Lihtenştayn"
+   },
+   "dogruCevap": "B",
+   "aciklama": "İzlanda'da 29 Ağustos 2026'da yapılan halkoylamasında seçmenlerin yüzde 52,8'i AB ile 2013'te askıya alınan üyelik müzakerelerine dönülmesini reddetmiş, İzlanda Başbakanı hükümeti döneminde müzakerelere gidilmeyeceğini açıklamıştır (AA, 30 Ağustos 2026; İzlanda Hükümeti Dışişleri Bakanlığı, 1 Eylül 2026). Norveç de AB üyeliğini 1972 ve 1994 halkoylamalarında reddetmiştir; bu eski oylamalar 2026 halkoylamasıyla karıştırılmamalıdır. İzlanda, Avrupa Ekonomik Alanı ve Schengen Bölgesi'ndeki yerini korumaktadır.",
+   "kaynak": "Anadolu Ajansı, 30 Ağustos 2026; İzlanda Hükümeti Dışişleri Bakanlığı, 1 Eylül 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/dunya/izlanda-basbakani-frostadottir-referandumun-ardindan-ab-ile-muzakerelere-gidilmeyecegini-bildirdi/4041482",
+   "olayTarihi": "2026-08-29",
+   "uyarilar": [
+    "Kökteki '2013'te askıya alınan' ayrıntısı bu turda açılan birincil kaynakta ayrıca teyit edilmedi (cevabı etkilemez).",
+    "Kökteki 'müzakereler 2013'te askıya alındı' bilgisi açtığım resmî kaynaklarda doğrulanamadı (cevabı etkilemiyor). Kök yabancı ülkenin iç halkoylamasına ve yüzde ayrıntısına dayanıyor; PLAN §1.3 'yabancı ülke ayrıntısı' sınırına yakın, ancak sorulan olgu ülkedir, tek cevaplı."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "İzlanda Hükûmeti (Stjórnarráð), AB halkoylaması sayfası",
+     "kaynakUrl": "https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/",
+     "gerekce": "İzlanda hükûmeti: 29 Ağustos 2026 halkoylamasında seçmenlerin %52,8'i AB üyelik müzakerelerinin yeniden başlatılmasını reddetti, %47,2 evet, katılım %82,6.",
+     "uyari": "Kökteki '2013'te askıya alınan' ayrıntısı bu turda açılan birincil kaynakta ayrıca teyit edilmedi (cevabı etkilemez)."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "İzlanda Ulusal Seçim Kurulu (Landskjörstjórn) resmî sonuç duyurusu; İzlanda Hükûmeti, Dışişleri Bakanının AB'ye mektubu (8 Eylül 2026)",
+     "kaynakUrl": "https://island.is/s/landskjorstjorn/frett/landskjorstjorn-tilkynnir-nidurstodu-thjodaratkvaedagreidslu",
+     "gerekce": "Resmî sonuç: 29 Ağustos 2026 halkoylamasında Evet 105.338 (%47,2), Hayır 118.047 (%52,8); hükûmet mektubu müzakerelerin yeniden başlatılmayacağını bildiriyor.",
+     "uyari": "Kökteki 'müzakereler 2013'te askıya alındı' bilgisi açtığım resmî kaynaklarda doğrulanamadı (cevabı etkilemiyor). Kök yabancı ülkenin iç halkoylamasına ve yüzde ayrıntısına dayanıyor; PLAN §1.3 'yabancı ülke ayrıntısı' sınırına yakın, ancak sorulan olgu ülkedir, tek cevaplı."
+    }
+   ]
+  },
+  {
+   "id": "uluslararasi-2026-7",
+   "alan": "uluslararasi-2026",
+   "karar": "UYARI",
+   "kok": "BRICS'in 18. Liderler Zirvesi, 12-13 Eylül 2026 tarihlerinde hangi ülkenin dönem başkanlığında ve ev sahipliğinde yapılmıştır?",
+   "siklar": {
+    "A": "Brezilya",
+    "B": "Çin",
+    "C": "Güney Afrika",
+    "D": "Hindistan",
+    "E": "Rusya"
+   },
+   "dogruCevap": "D",
+   "aciklama": "BRICS'in 18. Liderler Zirvesi, Hindistan'ın 2026 dönem başkanlığında 12-13 Eylül 2026'da Yeni Delhi'de toplanmış ve Yeni Delhi Bildirisi kabul edilmiştir (Güney Afrika Hükümeti haber servisi SAnews, Eylül 2026; AA, 12 Eylül 2026). Bir önceki zirve 2025'te Brezilya'da (Rio de Janeiro), 2024 zirvesi ise Rusya'da (Kazan) yapılmıştır; yakın yılların ev sahipleri karıştırılmamalıdır.",
+   "kaynak": "Güney Afrika Hükümeti haber servisi (SAnews), Eylül 2026; Anadolu Ajansı, 12 Eylül 2026",
+   "kaynakUrl": "https://www.sanews.gov.za/south-africa/brics-summit-concludes-adoption-new-delhi-declaration-0",
+   "olayTarihi": "2026-09-12",
+   "uyarilar": [
+    "Zirvenin 12 Eylül tarihi birincil kaynakta görüldü; kökteki bitiş günü 13 Eylül açtığım resmî sayfalarda ayrıca teyit edilemedi."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "kaynak": "Güney Afrika Dışişleri (DIRCO), 'President Ramaphosa arrives in India for the 18th BRICS Summit', 11 Eylül 2026; Çin Dışişleri 13-14 Eylül 2026 haberleri",
+     "kaynakUrl": "https://dirco.gov.za/president-ramaphosa-arrives-in-india-for-the-18th-brics-summit/",
+     "gerekce": "DIRCO: zirve 12-13 Eylül 2026'da Yeni Delhi Bharat Mandapam'da 'India's Chairship' altında; Çin DB Xi'nin 18. BRICS Zirvesi'ne katılımını 13 Eylül 2026'da tamamladığını duyurdu (gerçekleşmiş olay).",
+     "uyari": null
+    },
+    {
+     "cevap": "D",
+     "kaynak": "BRICS India 2026 resmî sitesi; Hindistan Dışişleri Bakanlığı (MEA) ana sayfası",
+     "kaynakUrl": "https://brics2026.gov.in/",
+     "gerekce": "Resmî site 'India's BRICS Chairship 2026' ve '18th BRICS Summit' (Bharat Mandapam, Yeni Delhi) başlığını taşıyor; MEA 18. BRICS Zirvesi'ni 12 Eylül 2026 tarihiyle veriyor.",
+     "uyari": "Zirvenin 12 Eylül tarihi birincil kaynakta görüldü; kökteki bitiş günü 13 Eylül açtığım resmî sayfalarda ayrıca teyit edilemedi."
+    }
+   ]
+  },
+  {
+   "id": "vefat-2026-3",
+   "alan": "vefat-2026",
+   "karar": "UYARI",
+   "kok": "\"Evdeki Yabancı\" ve \"Sesim Bana Yetmiyor\" adlı öykü kitaplarının yazarı olan, Mart 1987'den itibaren yayımlanan Yedi İklim dergisinin kurucuları arasında yer alan ve Ağustos 2026'da İstanbul'da hayatını kaybeden yazar kimdir?",
+   "siklar": {
+    "A": "Cahit Zarifoğlu",
+    "B": "Rasim Özdenören",
+    "C": "Ali Haydar Haksal",
+    "D": "Nuri Pakdil",
+    "E": "Mehmet Akif İnan"
+   },
+   "dogruCevap": "C",
+   "aciklama": "Öykücü ve deneme yazarı Ali Haydar Haksal, Mart 1987'den itibaren yayımlanan Yedi İklim dergisinin kurucuları arasında yer almış, \"Sesim Bana Yetmiyor\" öykü kitabıyla 1987 Türkiye Yazarlar Birliği Hikâye Ödülü'nü almış ve 28 Ağustos 2026'da 75 yaşında İstanbul'da hayatını kaybetmiştir (Anadolu Ajansı ve TRT Haber, 28 Ağustos 2026). Çeldiricilerdeki yazarlar daha önce vefat etmiştir: Cahit Zarifoğlu 1987'de, Mehmet Akif İnan 2000'de, Nuri Pakdil 2019'da, Rasim Özdenören 2022'de. Tuzak: Haksal, Zarifoğlu, Özdenören ve İnan üzerine incelemeler yazmıştır; Yedi İklim'in kurucusu olan ve 2026'da vefat eden Haksal'dır.",
+   "kaynak": "Anadolu Ajansı, 28 Ağustos 2026; TRT Haber, 28 Ağustos 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/kultur/yazar-ali-haydar-haksal-vefat-etti/4039975",
+   "olayTarihi": "2026-08-28",
+   "uyarilar": [
+    "Kökteki 'Mart 1987' ayrıntısı açılan kaynaklarda yok; AA ve TRT yalnız '1987' diyor. Ay bilgisi birincil kaynakla doğrulanmadıysa kökte yalnız '1987' denmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "Anadolu Ajansı, 28 Ağustos 2026 + TRT Haber, 28 Ağustos 2026",
+     "kaynakUrl": "https://www.aa.com.tr/tr/kultur/yazar-ali-haydar-haksal-vefat-etti/4039975",
+     "gerekce": "AA ve TRT, Ali Haydar Haksal'ın 28 Ağustos 2026'da İstanbul'da öldüğünü bildiriyor. İki kaynak da ilk öykü kitabının 'Evdeki Yabancı' (1986) olduğunu, 'Sesim Bana Yetmiyor' ile 1987 TYB Öykü Ödülü'nü aldığını ve Yedi İklim'i 1987'de Osman Bayraktar, Mustafa Çelik ve Alim Kahraman ile birlikte kurduğunu yazıyor.",
+     "uyari": "Kökteki 'Mart 1987' ayrıntısı açılan kaynaklarda yok; AA ve TRT yalnız '1987' diyor. Ay bilgisi birincil kaynakla doğrulanmadıysa kökte yalnız '1987' denmeli."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "AA, 'Yazar Ali Haydar Haksal son yolculuğuna uğurlandı'; AA, 'İletişim Başkanı Duran'dan yazar Ali Haydar Haksal için başsağlığı mesajı'",
+     "kaynakUrl": "https://www.aa.com.tr/tr/kultur/yazar-ali-haydar-haksal-son-yolculuguna-ugurlandi/4041017",
+     "gerekce": "AA: Haksal 28 Ağustos 2026'da İstanbul'da vefat etti; ilk öykü kitabı 'Evdeki Yabancı' (1986), 'Sesim Bana Yetmiyor' ile 1987 TYB Hikâye Ödülü; Osman Bayraktar, Mustafa Çelik ve Alim Kahraman ile Mart 1987'de yayına başlayan Yedi İklim'in kurucuları arasında. İletişim Başkanlığı taziyesi (AA 4040454) vefatı ikinci kaynaktan doğruluyor; AA'nın saydığı kurucular arasında hiçbir çeldirici yok.",
+     "uyari": null
+    }
+   ]
+  }
+ ]
+}

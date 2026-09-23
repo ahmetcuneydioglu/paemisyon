@@ -1,0 +1,144 @@
+# Bankadaki güncel sorular — mükerrer denetimi için (23 Eyl 2026 dökümü)
+
+Bu olguları TEKRAR SORMA — farklı açıdan, farklı kökle bile. Aynı olayın başka bir yönünü sormak ancak olay gerçekten ikinci bir sınav bilgisi taşıyorsa kabul edilir.
+
+## A. Yayındaki "Güncel ve Kültürel Olaylar" soruları (96)
+
+- Havadan bağımsız tahrik sistemine sahip REİS sınıfının, Ağustos 2024'te Aksaz'da düzenlenen törenle Deniz Kuvvetleri Komutanlığına teslim edilen ilk denizaltısı hangisidir? → **TCG PİRİREİS**
+- Haziran 2026'da İstanbul Tersanesi Komutanlığı'nda düzenlenen törenle Türkiye, tarihinde ilk kez bir NATO ve Avrupa Birliği üyesi ülkeye savaş gemisi ihraç etmiştir. Bu ülke hangisidir? → **Romanya**
+- Dünyanın en prestijli uzay etkinliklerinden biri sayılan 77. Uluslararası Astronotik Kongresi (IAC 2026), 5-9 Ekim 2026 tarihlerinde Türkiye'de hangi ilde düzenlenecektir? → **Antalya**
+- 7-8 Temmuz 2026'da düzenlenen 36. NATO Zirvesi hangi şehirde yapılmıştır? → **Ankara**
+- 7593 sayılı Kanun'la Türk Ceza Kanunu'nun 31. maddesinde yapılan değişikliğe göre, fiili işlediği sırada on beş yaşını doldurmuş olup on sekiz yaşını doldurmamış çocuklar bakımından ağırlaştırılmış müebbet hapis cezasını gerektiren suçlarda verilecek ceza aral → **19 yıldan 27 yıla kadar hapis**
+- COP31'de ev sahipliği ve resmî başkanlık Türkiye'ye verilirken, iklim müzakerelerinin başkanlığını yürütme görevi hangi ülkeye bırakılmıştır? → **Avustralya**
+- 29 Nisan 2026 tarihli ve 2026/123 sayılı Cumhurbaşkanı Kararı ile Emniyet Genel Müdürlüğüne atanan isim aşağıdakilerden hangisidir? → **Ali Fidan**
+- 2026 Ankara NATO Zirvesi, Türkiye'nin ev sahipliği yaptığı ikinci NATO zirvesidir. Türkiye'de düzenlenen ilk NATO zirvesi hangi şehirde ve hangi yılda yapılmıştır? → **İstanbul, 2004**
+- Birleşmiş Milletler İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı (COP31) 9-20 Kasım 2026 tarihlerinde Türkiye'nin hangi ilinde düzenlenecektir? → **Antalya**
+- A Millî Futbol Takımı, 2026 FIFA Dünya Kupası D Grubu'ndaki tek galibiyetini hangi takımı yenerek almıştır? → **ABD**
+- Mayıs 2026'da İstanbul'da Beşiktaş Park'ta oynanan UEFA Avrupa Ligi finalini hangi takım kazanmıştır? → **Aston Villa**
+- Ağustos 2026'da İstanbul'da düzenlenen Avrupa Şampiyonası'nda altın madalya kazanarak Türkiye'ye modern pentatlon dalındaki ilk Avrupa şampiyonluğunu getiren sporcu kimdir? → **İlke Özyüksel Mihrioğlu**
+- 2026 Avrupa Güreş Şampiyonası'nda grekoromen 130 kiloda altın kazanarak 13. Avrupa şampiyonluğuna ulaşan ve bu dalda en çok Avrupa şampiyonluğu rekorunun tek sahibi olan Türk sporcu kimdir? → **Rıza Kayaalp**
+- 13 Mart 2026'da vefat eden, Osmanlı ve Türk modernleşmesi üzerine çalışmalarıyla tanınan, Topkapı Sarayı Müzesi müdürlüğü de yapmış tarihçi kimdir? → **İlber Ortaylı**
+- 26 Haziran 2026'da 77 yaşında hayatını kaybeden, Yeşilçam'ın başrol oyuncularından olan sanatçı kimdir? → **Kadir İnanır**
+- Türkiye, 6-22 Şubat 2026 tarihlerinde İtalya'da düzenlenen Milano-Cortina Kış Olimpiyat Oyunları'na kaç sporcuyla katılmış ve kaç madalya kazanmıştır? → **8 sporcu – madalya yok**
+- 21 Ocak 2026'da 97 yaşında vefat eden, Türk tiyatrosuna müzikal türünü kazandırmasıyla anılan oyuncu, yönetmen ve yazar kimdir? → **Haldun Dormen**
+- Türk Devletleri Teşkilatı Turizm Bakanları Toplantısı'nda alınan kararla 2026 yılı Türk Dünyası Turizm Başkenti ilan edilen şehir hangisidir? → **Ankara**
+- 76. Berlin Film Festivali'nde (2026) Emin Alper'in 'Kurtuluş' filmi hangi ödülü kazanmıştır? → **Gümüş Ayı Büyük Jüri Ödülü**
+- Şubat 2026'da düzenlenen 76. Berlin Film Festivali'nde Altın Ayı ödülünü kazanan yönetmen ve filmi hangisidir? → **İlker Çatak — Sarı Zarflar**
+- 2026 yılı Avrupa Kültür Başkenti unvanını hangi iki şehir taşımaktadır? → **Oulu (Finlandiya) ve Trenčín (Slovakya)**
+- 2026'da Busan'da toplanan UNESCO Dünya Mirası Komitesi oturumu sonunda Dünya Mirası Listesi'ne kaç yeni alan eklenmiş ve Türkiye'den listeye alan girmiş midir? → **25 yeni alan eklendi; Türkiye'den yeni alan girmedi**
+- UNESCO Dünya Mirası Komitesi'nin 2026'daki 48. oturumu hangi ülkede toplanmış ve 2027'deki 49. oturumun hangi şehirde yapılmasına karar verilmiştir? → **Güney Kore (Busan) — 2027'de İstanbul**
+- 2025 Nobel Ekonomi Ödülü (İsveç Merkez Bankası Ödülü) Joel Mokyr, Philippe Aghion ve Peter Howitt'e hangi konudaki çalışmaları nedeniyle verilmiştir? → **İnovasyonun sürdürülebilir ekonomik büyümeyi nasıl yarattığını açıklamaları**
+- John Clarke, Michel Devoret ve John Martinis'in paylaştığı 2025 Nobel Fizik Ödülü hangi keşfe verilmiştir? → **Bir elektrik devresinde makroskobik kuantum tünelleme ve enerji kuantalanmasının**
+- 2025 Nobel Fizyoloji veya Tıp Ödülü'ne konu olan keşif alanı aşağıdakilerden hangisidir? → **Periferik bağışıklık toleransı**
+- 2025 Nobel Kimya Ödülü, Susumu Kitagawa, Richard Robson ve Omar Yaghi'ye hangi alandaki çalışmaları nedeniyle verilmiştir? → **Metal-organik kafeslerin (MOF) geliştirilmesi**
+- 2025 Nobel Barış Ödülü kime verilmiştir? → **Venezuelalı muhalefet lideri María Corina Machado**
+- TÜİK'in 2025 yılı doğum istatistiklerine göre toplam doğurganlık hızının 3,15 çocukla en yüksek olduğu il hangisidir? → **Şanlıurfa**
+- TÜİK'in 21 Mayıs 2026'da açıkladığı Doğum İstatistikleri'ne göre Türkiye'de 2025 yılı toplam doğurganlık hızı (bir kadının doğurgan çağında dünyaya getirdiği ortalama çocuk sayısı) kaçtır? → **1,42**
+- TÜİK'in 2025 yılı nüfus verilerine göre nüfusu 1 milyonu aşarak Türkiye'de bu eşiği geçen ilk ilçe olan yerleşim yeri hangisidir? → **İstanbul-Esenyurt**
+- TÜİK'in 9 Şubat 2026'da yayımladığı Adrese Dayalı Nüfus Kayıt Sistemi sonuçlarına göre Türkiye'nin 31 Aralık 2025 itibarıyla nüfusu kaçtır? → **86 milyon 92 bin 168**
+- 19 Haziran 2026'da Halkalı-Arnavutköy kesiminin açılışıyla tamamlanan ve 69 kilometrelik uzunluğuyla "Türkiye'nin en uzun ve en hızlı metro hattı" olarak tanıtılan hat hangisidir? → **Gayrettepe-İstanbul Havalimanı-Halkalı Metro Hattı**
+- Türkiye'de 5G mobil haberleşme hizmeti operatörler tarafından ticari olarak hangi tarihte sunulmaya başlanmıştır? → **1 Nisan 2026**
+- 30 Mart 2026'da SpaceX'in Transporter-16 göreviyle uzaya gönderilen ve Türkiye'nin özel sektör uzay girişimlerinden birinin beşinci uydusu olan FGN-100-D3'ü geliştiren şirket hangisidir? → **Fergani Uzay**
+- Ocak 2026'da açıklanan verilere göre Türkiye'nin 2025 yılı savunma ve havacılık sanayii ihracatı ilk kez 10 milyar doları aşarak kaç dolar olarak gerçekleşmiştir? → **10 milyar 54 milyon dolar**
+- Temmuz 2025'te UNESCO Dünya Mirası Komitesi tarafından UNESCO Dünya Mirası Listesi'ne kaydedilen "Sardes Antik Kenti ve Bintepeler Lidya Tümülüsleri" aşağıdaki şehirlerin hangisinin sınırları içinde yer alır? → **Manisa**
+- Türkiye, 31 Ağustos 2026'da ABD'nin Ay ve derin uzay keşif programına ilişkin uluslararası ilkeler metnini imzalayarak bu belgeye taraf olan 71. ülke oldu. Türkiye'nin imzaladığı bu belge hangisidir? → **Artemis Anlaşmaları (Artemis Mutabakatı)**
+- Türkiye'nin millî imkânlarla geliştirilen ilk atomik saati 7 Temmuz 2026'da SpaceX'in Transporter-17 göreviyle uzaya gönderilmiştir. Bu atomik saatin ana yüklenicisi olan kurum hangisidir? → **TÜBİTAK Ulusal Metroloji Enstitüsü (UME)**
+- 2024 yılında müzik alanında Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülü’ne layık görülen sanatçı aşağıdakilerden hangisindedir? → **Ahmet Özhan**
+- Dünya Atletizm Şampiyonası, 13-21 Eylül 2025 tarihlerinde aşağıdaki şehirlerden hangisinde gerçekleştirilecektir? → **Tokyo**
+- ALTAY ana muharebe tankının 250 adetlik seri üretiminde ana yüklenici olan ve tankın ilk teslimatını gerçekleştiren firma hangisidir? → **BMC**
+- 15 Nisan 2023'te uzaya fırlatılan ve Türkiye'nin metre altı çözünürlüğe sahip ilk yerli yer gözlem uydusu olan uydu hangisidir? → **İMECE**
+- 14 Aralık 2022'de ilk uçuşunu gerçekleştiren, Türkiye'nin ilk insansız savaş uçağı hangisidir? → **Bayraktar KIZILELMA**
+- ASELSAN'ın geliştirdiği KORAL sistemi hangi alanda kullanılır? → **Kara konuşlu mobil radar elektronik harp sistemi**
+- TÜBİTAK SAGE tarafından geliştirilen millî hava-hava füzelerinden hangisi "görüş ötesi" (BVR) sınıfındadır? → **GÖKDOĞAN**
+- MİLGEM Projesi'nin ilk büyük ihracat başarısı sayılan ve Türkiye'de inşa edilen korvetlerin teslim edildiği ülke aşağıdakilerden hangisidir? → **Pakistan**
+- Türk Silahlı Kuvvetleri ve güvenlik birimlerinde yaygın olarak kullanılan EJDER YALÇIN 4x4 taktik tekerlekli zırhlı aracının üreticisi hangi firmadır? → **Nurol Makina**
+- TÜBİTAK SAGE tarafından geliştirilen ve Türkiye'nin ilk millî seyir füzesi ailesi olan SOM'un açılımı aşağıdakilerden hangisidir? → **Satha Atılan Orta Menzilli Mühimmat**
+- Ocak 2022'de hizmete giren ve millî imkânlarla üretilen Türkiye'nin ilk istihbarat gemisi olma özelliğini taşıyan Test ve Eğitim Gemisi hangisidir? → **TCG UFUK**
+- Türkiye'nin denizaltıyı yalnızca inşa etmekle kalmayıp tasarımını da tamamen kendi imkânlarıyla yapmayı hedefleyen millî denizaltı projesinin adı nedir? → **MİLDEN**
+- Türkiye’de 2030’lu yıllardan itibaren F-16 uçaklarının yerine kullanılacak 5. nesil bir savaş uçağı üretilmesi amacıyla millî imkânlarla geliştirilen ve ilk uçuşunu Şubat 2024’te gerçekleştiren savaş uçağı aşağıdakilerden hangisidir? → **KAAN**
+- ALTAY ana muharebe tankı için geliştirilen ve tankın dışa bağımlılığını sona erdirmesi hedeflenen yerli güç grubunun (motor-transmisyon) adı nedir? → **BATU**
+- Montaj ve entegrasyonu TUSAŞ'ın Uzay Sistemleri Entegrasyon ve Test Merkezi'nde tamamlanan, Türkiye'nin ilk yerli ve millî haberleşme uydusu hangisidir? → **TÜRKSAT 6A**
+- TUSAŞ üretimi T129 ATAK taarruz helikopterinin ilk ihracat teslimatı hangi ülkeye yapılmıştır? → **Filipinler**
+- Türkiye Uzay Ajansı hangi bakanlığın ilgili kuruluşudur? → **Sanayi ve Teknoloji Bakanlığı**
+- MİLGEM (Millî Gemi) Projesi kapsamında inşa edilen ve Ada sınıfı korvetlerin ilki olan, Türkiye'nin millî imkânlarla tasarladığı ilk savaş gemisi aşağıdakilerden hangisidir? → **TCG HEYBELİADA**
+- 19 Kasım 2024'te TCG ANADOLU'nun kısa pistinden kalkış ve iniş yaparak kısa pistli bir gemiden görev yapan dünyanın ilk silahlı insansız hava aracı unvanını alan platform hangisidir? → **Bayraktar TB3**
+- Türkiye'nin ilk astronotu Alper Gezeravcı, Uluslararası Uzay İstasyonu'na hangi görev kapsamında gitmiştir? → **Axiom Mission 3 (Ax-3)**
+- Savunma Sanayii Başkanlığı'nın 2025 Yılı Faaliyet Raporu'nda açıklanan, 2024 yılına ilişkin savunma sanayii yerlilik oranı yüzde kaçtır? → **%81,3**
+- Türk savunma sanayiinde tedarik kararlarını alan en üst karar organı olan Savunma Sanayii İcra Komitesi'ne kim başkanlık eder? → **Cumhurbaşkanı**
+- ROKETSAN'ın taarruz helikopteri, hafif taarruz uçağı ve kara/deniz platformlarından atılabilen, 0,5-8 km menzilli, görüntüleyen kızılötesi arayıcı başlıklı uzun menzilli tanksavar füze sistemi hangisidir? → **UMTAS**
+- Millî Muharip Uçak KAAN ilk uçuşunu hangi tarihte gerçekleştirmiştir? → **21 Şubat 2024**
+- 7 Kasım 1985'te kabul edilen ve bugün "Savunma Sanayii ile İlgili Bazı Düzenlemeler Hakkında Kanun" adıyla yürürlükte olan, Savunma Sanayii Başkanlığı'nın temelini oluşturan kanun kaç sayılıdır? → **3238**
+- ROKETSAN ürün kataloğuna göre, hipersonik seviyelere ulaşan seyir hızıyla stratejik hedeflere karşı kullanılan TAYFUN füzesinin menzili aşağıdakilerden hangisidir? → **280 km'nin üzerinde**
+- Savunma Sanayii Başkanlığı'nın yürüttüğü, uzun menzil ve yüksek irtifadaki muharip uçak, seyir füzesi ve İHA gibi hedeflere karşı geliştirilen SİPER hava savunma sistemi hangi üç kuruluşun iş birliğiyle geliştirilmektedir? → **ASELSAN – ROKETSAN – TÜBİTAK SAGE**
+- Şanghay İşbirliği Örgütü'nün kuruluşunun 25. yılına denk gelen ve 31 Ağustos - 1 Eylül 2026'da toplanan Devlet Başkanları Konseyi Zirvesi hangi şehirde yapılmıştır? → **Bişkek**
+- 3 Haziran 2026'daki oylamada Birleşmiş Milletler Güvenlik Konseyi'nin 2027-2028 dönemi geçici üyeliğine seçilen Orta Asya ülkesi hangisidir? → **Kırgızistan**
+- 2 Haziran 2026'da yapılan seçimle Birleşmiş Milletler Genel Kurulu'nun 81. dönem başkanlığına hangi ülkeden bir isim seçilmiştir? → **Bangladeş**
+- 27 Şubat 2026 tarihli Resmî Gazete'de yayımlanan 7574 sayılı Kanun'la Karayolları Trafik Kanunu'nda yapılan değişikliğe göre, tescil plakasının farklı okunmasına veya okunamamasına bilerek neden olacak şekilde plakasında ilk kez değişiklik yapan sürücüye uygul → **140.000 TL idari para cezası ve aracın 30 gün trafikten men edilmesi**
+- 11 Şubat 2026 tarihli Resmî Gazete'de yayımlanan Cumhurbaşkanlığı atama kararıyla İçişleri Bakanlığına ve Adalet Bakanlığına getirilen isimler sırasıyla hangileridir? → **Mustafa Çiftçi — Akın Gürlek**
+- 1 Temmuz 2026 tarihli Resmî Gazete'de yayımlanan 7587 sayılı Kanun ile 3201 sayılı Emniyet Teşkilat Kanunu'nun 55. maddesindeki tabloda Komiser Yardımcısı rütbesi için öngörülen azami oran on binde kaçtır? → **330**
+- 19 Temmuz 2026'da oynanan 2026 FIFA Dünya Kupası finalinde hangi ülke, hangi rakibini yenerek şampiyon olmuştur? → **İspanya – Arjantin'i**
+- TÜRKSOY Daimî Konseyi'nin kararıyla 2026 Türk Dünyası Kültür Başkenti ilan edilen şehir hangisidir? → **Andican (Özbekistan)**
+- 12 Nisan 2026'da yapılan Macaristan genel seçimini kazanarak Viktor Orban'ın 16 yıllık iktidarını sona erdiren muhalefet lideri kimdir? → **Peter Magyar**
+- Türk Devletleri Teşkilatı Devlet Başkanları Konseyi'nin 15 Mayıs 2026'da düzenlenen Gayriresmî Zirvesi'ne hangi ülke ev sahipliği yapmıştır? → **Kazakistan**
+- Haziran 2026'da ABD ile İran arasında Pakistan'ın arabuluculuğunda imzalanan ve savaşın sona erdirilmesi ile Hürmüz Boğazı'nın açılması gibi maddeler içeren 14 maddelik belge hangi adla anılmaktadır? → **İslamabad Mutabakatı**
+- 1 Temmuz 2026 itibarıyla Avrupa Birliği Konseyi dönem başkanlığını hangi ülke üstlenmiştir? → **İrlanda**
+- Enerji ve Tabii Kaynaklar Bakanlığı verilerine göre Türkiye'nin güneş enerjisi kurulu gücü Ocak 2026 sonu itibarıyla hangi düzeye ulaşmıştır? → **25 bin 827 megavat**
+- Ağustos 2026'da Enerji ve Tabii Kaynaklar Bakanlığı, günlük petrol üretiminin 83 bin 300 varile ulaşarak rekor kırdığını duyurdu. Bu üretimin yapıldığı, 2021'de keşfedilen ve Cumhuriyet tarihinin en büyük kara petrol keşfi sayılan saha hangi ilimizdedir? → **Şırnak**
+- 1 Mayıs 2026 itibarıyla Petrol İhraç Eden Ülkeler Örgütü (OPEC) üyeliğinden ayrılan ülke aşağıdakilerden hangisidir? → **Birleşik Arap Emirlikleri**
+- 7593 sayılı Kanun'la 6136 sayılı Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanun'a eklenen 13/A maddesine göre, ateşli silahını özen yükümlülüğüne aykırı biçimde muhafaza ederek çocuk tarafından ele geçirilmesine neden olan kişiye verilecek ceza n → **Bir yıldan üç yıla kadar hapis**
+- Emniyet Teşkilatındaki rütbe oranlarını yeniden belirleyen, internet haber sitelerine nitelik şartı getiren ve elektronik tebligat kapsamını genişleten "Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun" hangi numarayla ve hangi tarihte yayımlanmıştır? → **7587 sayılı Kanun — 1 Temmuz 2026**
+- 6-22 Şubat 2026 tarihleri arasında Kış Olimpiyat Oyunlarına ev sahipliği yapan iki şehir aşağıdakilerden hangisinde birlikte ve doğru olarak verilmiştir? → **Milano ve Cortina**
+- 7593 sayılı Kanun'la 5326 sayılı Kabahatler Kanunu'na "Amaç dışı bıçak taşıma" başlıklı 43/C maddesi eklenmiştir. Bu maddenin, bıçakların ruhsatlı yerler dışında satışı ve sergilenmesini yasaklayan (a) bendi hangi tarihte yürürlüğe girer? → **1 Aralık 2026**
+- Türkiye'de milli imkânlarla üretilen ve Nisan 2026'da Türk Havacılık ve Uzay Sanayii tarafından Emniyet Genel Müdürlüğü (EGM) Havacılık Daire Başkanlığına teslim edilen insansız hava aracı (İHA) aşağıdakilerden hangisidir? → **AKSUNGUR**
+- 2025 Nobel Edebiyat Ödülü'nü kazanan yazar ve bu yazarın uyruğu aşağıdakilerden hangisidir? → **László Krasznahorkai — Macar**
+- 7593 sayılı Kanun'la 5395 sayılı Çocuk Koruma Kanunu başta olmak üzere mevzuatta yer alan "suça sürüklenen çocuk" ibaresinin yerini alan başlıca ifade aşağıdakilerden hangisidir? → **Adli süreçteki çocuk**
+- TÜİK tarafından Şubat 2026'da yayımlanan Adrese Dayalı Nüfus Kayıt Sistemi sonuçlarına göre, Türkiye'de nüfusu 1 milyonu aşan ilk ilçe aşağıdakilerden hangisidir? → **Esenyurt**
+- Fransa ve Almanya arasındaki endüstriyel anlaşmazlıklar nedeniyle Haziran 2026'da durdurulduğu açıklanan Avrupa'nın yeni nesil hava muharebe sistemi projesi aşağıdakilerden hangisidir? → **Future Combat Air System (FCAS)**
+- ABD Başkanı Donald Trump'ın ulusal güvenlik meselesi olarak gördüğü ve ABD'nin kontrolüne girmesi gerektiğini savunduğu Grönland, aşağıdaki ülkelerden hangisine bağlı özerk bir bölgedir? → **Danimarka**
+- TUSAŞ'ın yüksek faydalı yük kapasiteli, sınıfının en uzun havada kalabilen insansız hava aracı olan ve Kasım 2023'te millî TEI-PD170 motoruyla 30 bin feet irtifada uçuş gerçekleştiren platformu hangisidir? → **AKSUNGUR**
+- 30 Aralık 2010'da ilk uçuşunu gerçekleştiren, orta irtifa uzun havada kalışlı (MALE) sınıfındaki millî insansız hava aracı ve üreticisi hangisidir? → **ANKA — TUSAŞ**
+- Avrupa sivil havacılık otoritesinden tip sertifikası alan ilk Türk uçağı hangisidir? → **HÜRKUŞ**
+- Yerli imkânlarla geliştirilip üretilen ilk genel maksat helikopteri olan T625 GÖKBEY, ilk uçuşunu hangi tarihte yapmıştır? → **6 Eylül 2018**
+- Millî Muharip Uçak KAAN'ın ana yüklenicisi olan kuruluş ile uçağın ait olduğu nesil aşağıdakilerden hangisinde birlikte doğru verilmiştir? → **TUSAŞ — 5. nesil**
+
+## B. Kullanıcının 5 Eylül 2026'da ELLE ARŞİVLEDİĞİ (reddettiği) 29 soru — bu tipleri ÜRETME
+
+- Milano-Cortina 2026 Kış Olimpiyatları'nda alp disiplini erkekler dev slalom altın madalyasını kazanarak ülkesine tarihindeki ilk Kış Olimpiyatları madalyasını getiren sporcunun ülkesi hangisidir?
+- 7595 sayılı Kanun'a göre kapsamdaki suçlardan toplam on beş yıldan fazla hapis cezası ile müebbet veya ağırlaştırılmış müebbet hapis cezasına mahkûm olan hükümlülerin cezalarının infazı kaç yıl süreyle ertelenir?
+- TÜBİTAK SAGE'nin geliştirdiği güdüm kitlerinden HGK ve KGK'nın açılımları sırasıyla aşağıdakilerden hangisidir?
+- ROKETSAN tarafından geliştirilen TEBER güdüm kitinin işlevi aşağıdakilerden hangisidir?
+- ASELSAN tarafından geliştirilen ve alçak irtifa hava savunmasında görev yapan KORKUT sisteminin namlu çapı kaç milimetredir?
+- ASELSAN, TUSAŞ, ROKETSAN ve HAVELSAN'ın çoğunluk hissesine sahip olan Türk Silahlı Kuvvetlerini Güçlendirme Vakfı, 17 Haziran 1987'de kaç sayılı kanunla kurulmuştur?
+- SIPRI'nin 1 Aralık 2025'te açıkladığı 2024 yılı "Dünyanın En Büyük 100 Silah Üreticisi" listesinde kaç Türk şirketi yer almış ve hangi Türk şirketi listeye ilk kez girmiştir?
+- 19 Kasım 2024'te TCG Anadolu'dan kalkış ve inişi başararak kısa güverteli gemiden iniş-kalkış yapan dünyanın ilk silahlı insansız hava aracı unvanını kazanan platform hangisidir?
+- Bayraktar AKINCI Taarruzi İnsansız Hava Aracı'nın ilk uçuş tarihi ile envantere giriş tarihi aşağıdakilerden hangisinde doğru verilmiştir?
+- Millî Uzay Programı'nda açıklanan hedeflerin sayısı ve programın birinci hedefi aşağıdakilerden hangisinde doğru verilmiştir?
+- MİLGEM Projesi'nin 5. gemisi olan ve Türkiye'nin millî imkânlarla ürettiği ilk fırkateyn kabul edilen TCG İSTANBUL (F-515), hangi sınıfın ilk gemisidir?
+- Türk Deniz Kuvvetleri'nin en büyük savaş gemisi olan TCG ANADOLU'nun resmî gemi sınıfı aşağıdakilerden hangisidir?
+- 2026 yılında UNESCO Dünya Mirası Listesi'ne tarihlerinde ilk kez bir alanla giren üç ülke aşağıdakilerden hangisinde birlikte verilmiştir?
+- Milano-Cortina 2026 Kış Olimpiyat Oyunları'nı madalya sıralamasında hangi ülke, kaç altın madalyayla birinci tamamlamıştır?
+- Milano-Cortina 2026'da tek bir Kış Olimpiyatı'nda altı altın madalya kazanarak bu alandaki rekoru kıran sporcu ve branşı aşağıdakilerden hangisidir?
+- ABD, Kanada ve Meksika'nın ortak ev sahipliğinde düzenlenen 2026 FIFA Dünya Kupası'nda uygulanan yeni format için aşağıdakilerden hangisi doğrudur?
+- A Millî Futbol Takımı'nı 24 yıl aradan sonra Dünya Kupası'na taşıyan, 31 Mart 2026'da Priştine'de oynanan play-off final maçındaki tek golü kaydeden futbolcu kimdir?
+- A Millî Kadın Voleybol Takımı'nın 26 Temmuz 2026'da Makao'da kazandığı FIVB Milletler Ligi şampiyonluğu ile ilgili aşağıdakilerden hangisi doğrudur?
+- PKK/KCK terör örgütüne ilişkin soruşturma, kovuşturma ve mahkûmiyet hükümlerinin infazının ertelenmesini düzenleyen ve 18 Ağustos 2026 tarihli Resmî Gazete'de yayımlanan "Millî Dayanışma ve Toplumsal Bütünleşmenin Güçlen
+- 7595 sayılı Millî Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun'un uygulanmasını takip ve değerlendirmekle görevli Kurula kim başkanlık eder?
+- 7595 sayılı Kanun'daki erteleme hükümlerinin uygulanabilmesi, örgütün fiilî varlığına son verdiğinin ve silahlarını teslim ettiğinin tespitine ilişkin hangi belgenin Resmî Gazete'de yayımlanmasına bağlanmıştır?
+- 9 Ağustos 2026 tarihli Resmî Gazete'de yayımlanan 199 sayılı Cumhurbaşkanlığı Kararnamesi hangi konuyu düzenlemektedir?
+- Portekiz'in 9 Mart 2026'da göreve başlayan yeni cumhurbaşkanı kimdir?
+- Deniz Kuvvetleri Komutanlığı Amfibi Deniz Piyade Tugayı için tedarik edilen, gemiden kıyıya yüzerek intikal edebilen Zırhlı Amfibi Hücum Aracı (ZAHA) hangi firma tarafından geliştirilmiştir?
+- TUSAŞ tarafından geliştirilen HÜRJET'in tipi ve ilk uçuş tarihi aşağıdakilerden hangisidir?
+- Yeni Tip Denizaltı Projesi kapsamında altı adet REİS sınıfı denizaltının inşa edildiği tersane aşağıdakilerden hangisidir?
+- Savunma Sanayii Başkanlığı 2025 Yılı Faaliyet Raporu'na göre, katmanlı hava savunma programı Çelik Kubbe kapsamında Türk Silahlı Kuvvetlerine ilk etapta kaç araçtan oluşan hava savunma, radar ve elektronik harp sistemi t
+- ROKETSAN tarafından geliştirilen ve hücumbot, korvet ile firkateynlere entegre edilebilen ATMACA gemisavar füzesinin üreticisince açıklanan menzili kaç kilometredir?
+- ROKETSAN tarafından geliştirilen HİSAR hava savunma füzesi ailesinde, 25 km'yi aşan menziliyle orta irtifa hava savunma görevini üstlenen versiyon hangisidir?
+
+## C. Genel Kültür konusunda 2025-2026 olgusu içeren sorular
+
+- 2025 yılı Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri'nde "Anadolu Arkeolojisi" alanında ödül alan isim aşağıdakilerden hangisidir? → **Prof. Dr. Fahri Işık**
+- Gurbet Kuşları, Ankara Ekspresi, Umutsuzlar, Acı Hayat ve Memleketim adlı filmlerin de aralarında bulunduğu çok sayıda filmde rol alarak Türk sinemasının bir dönemine damga vuran, Mart 2025’te hayatını kaybeden Yeşilçam’ → **Filiz Akın**
+- 2025 yılı Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri'nde "Bilim ve Kültür" alanında ödüle layık görülen isim aşağıdakilerden hangisidir? → **Prof. Dr. Süleyman Seyfi Öğün**
+- 2025 yılı Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri'nde "Müzik" alanında ödül alan besteci aşağıdakilerden hangisidir? → **Yalçın Tura**
+- 29 Ekim 2025 tarihli özel programda, Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri ile birlikte açıklanan Atatürk Uluslararası Barış Ödülü kime verilmiştir? → **Antonio Guterres**
+- 2025 yılı Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri'nde "Resim" alanında ödül alan ressam aşağıdakilerden hangisidir? → **Yalçın Gökçebağ**
+- 2025 yılı Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri'nde "Fotoğraf" alanındaki ödül, Gazze'de görev yapan hangi foto muhabirine verilmiştir? → **Ali Jadallah**

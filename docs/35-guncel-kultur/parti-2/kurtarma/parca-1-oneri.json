@@ -1,0 +1,83 @@
+[
+  {
+    "id": "egm-ic-guvenlik-1",
+    "grup": "C",
+    "gerekce": "Olgu ve cevap iki birincil kaynakla doğrulandı (İçişleri Bakanlığı ve AA/TRT, 2 Eylül 2026); yalnız kökteki 'envantere katılan' ifadesi Bakanlık metnindeki 'teslim edildi' anlatımına çekildi ve açıklamadaki doğrulanamayan 'Nisan 2026'da birer adet daha teslim' ayrıntısı Bakanlığın kendi rakamlarıyla değiştirildi.",
+    "duzeltme": {
+      "kok": "2 Eylül 2026'da Ankara'da düzenlenen törenle bu tipin ilk örneği Emniyet Genel Müdürlüğüne teslim edilen ve teşkilata toplam 18 adet teslim edilmesi planlanan helikopter aşağıdakilerden hangisidir?",
+      "siklar": {
+        "A": "T129 ATAK",
+        "B": "T70",
+        "C": "T625 GÖKBEY",
+        "D": "T929 ATAK-II",
+        "E": "Mi-17"
+      },
+      "dogru": "C",
+      "aciklama": "İlk yerli üretim T625 GÖKBEY helikopteri, 2 Eylül 2026'da TUSAŞ'ın Ankara Kahramankazan tesislerinde İçişleri Bakanı Mustafa Çiftçi'nin katıldığı törenle Emniyet Genel Müdürlüğüne teslim edilmiş; teşkilata toplam 18 GÖKBEY teslim edilecektir (İçişleri Bakanlığı ve Anadolu Ajansı, 2 Eylül 2026; Savunma Sanayii Başkanlığı haftalık bülteni, 7 Eylül 2026). Tuzak: T129 ATAK ve T70 de TUSAŞ üretimidir, ancak EGM envanterine daha önce girmiştir (Bakanlığa göre 6 T129 ve 5 T70); GÖKBEY'in ilk teslimatı ise Ekim 2024'te Jandarma Genel Komutanlığına yapılmıştı.",
+      "dayanak": "İçişleri Bakanlığı, 2 Eylül 2026 (https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-t625-gokbey-helikopterimiz-emniyet-teskilatimiza-hayirli-olsun); AA, 2 Eylül 2026 (https://www.aa.com.tr/tr/bilim-teknoloji/gokbey-helikopteri-emniyet-genel-mudurlugu-envanterine-katildi/4045331); TRT Haber, 2 Eylül 2026"
+    },
+    "degisenler": [
+      "Kök: 'Emniyet Genel Müdürlüğü envanterine bu tipin ilk örneği olarak katılan' → 'bu tipin ilk örneği Emniyet Genel Müdürlüğüne teslim edilen' (Bakanlık metni 'teslim edildi' diyor)",
+      "Açıklama: doğrulanamayan 'T129 ve T70'ten Nisan 2026'da birer adet daha teslim edildi' ayrıntısı çıkarıldı; yerine Bakanlığın verdiği envanter sayıları (6 T129, 5 T70) kondu; Jandarma teslimatına tarih (Ekim 2024) eklendi"
+    ]
+  },
+  {
+    "id": "egm-ic-guvenlik-2",
+    "grup": "C",
+    "gerekce": "Kökteki toplantı tarihi kaymış: İçişleri Bakanlığının toplantı haberi 10.09.2026 tarihli, Daily Sabah ve Hürriyet Daily News de toplantıyı 10 Eylül 2026'ya koyuyor; 11 Eylül yalnız Bakanın gazetecilere açıklamasının (AA/Bakanlık) tarihi, cevap değişmiyor.",
+    "duzeltme": {
+      "kok": "10 Eylül 2026'da Astana'da düzenlenen Türk Devletleri Teşkilatı İçişleri Bakanları 3. Toplantısı'nda Türkiye'nin, Türk devletleri arasında Interpol ve Europol benzeri bir kolluk iş birliği teşkilatı olarak kurulmasını teklif ettiği yapının adı nedir?",
+      "siklar": {
+        "A": "TÜRKPA",
+        "B": "TÜRKSOY",
+        "C": "AFRIPOL",
+        "D": "TÜRKPOL",
+        "E": "ASEANAPOL"
+      },
+      "dogru": "D",
+      "aciklama": "İçişleri Bakanı Mustafa Çiftçi, 10 Eylül 2026'da Astana'da düzenlenen Türk Devletleri Teşkilatı İçişleri Bakanları 3. Toplantısı'nda Türk devletleri arasında Interpol ve Europol benzeri bir teşkilat olarak TÜRKPOL'ün (Türk Devletleri Kolluk İş Birliği Ajansı) kurulmasını teklif etmiş; Kazakistan, Azerbaycan, Kırgızistan ve Özbekistan bakanları teklife olumlu yaklaşmıştır (İçişleri Bakanlığı, 10 ve 11 Eylül 2026; Anadolu Ajansı, 11 Eylül 2026). Eylül 2026 itibarıyla TÜRKPOL teklif aşamasındadır, kurulmuş bir teşkilat değildir. Tuzak: TÜRKPA Türk Devletleri Parlamenter Asamblesi, TÜRKSOY Uluslararası Türk Kültürü Teşkilatıdır; AFRIPOL ve ASEANAPOL ise Afrika ve Güneydoğu Asya'nın polis iş birliği yapılarıdır.",
+      "dayanak": "İçişleri Bakanlığı, 10.09.2026 (https://www.icisleri.gov.tr/bakanimiz-sayin-mustafa-ciftci-kazakistanda-turk-devletleri-teskilati-icisleri-bakanlari-3-toplantisina-katildi) ve 11.09.2026 (https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-turkpolun-kurulmasini-teklif-olarak-dile-getirdim); AA, 11 Eylül 2026; Daily Sabah, 10 Eylül 2026"
+    },
+    "degisenler": [
+      "Kök: '11 Eylül 2026'da' → '10 Eylül 2026'da' (toplantı tarihi; 11 Eylül açıklamanın yayın tarihi)",
+      "Açıklama: toplantı tarihi 10 Eylül olarak düzeltildi, TÜRKPOL'ün açılımı ve Bakanlık künyesi eklendi"
+    ]
+  },
+  {
+    "id": "kultur-sanat-2026-2",
+    "grup": "C",
+    "gerekce": "Cevap AA ile doğrulandı; ancak kökteki 'Türkiye Oscar Seçim Komitesi' adı ve '17 film' sayısı birincil kaynakta (AA) yok, cevabı etkilemediği için çıkarıldı, 'düzenlenecek/temsil edecek' gelecek kipi de P11'de (2027 ortası) geçmişte kalacağı için kipten bağımsız anlatıma çevrildi.",
+    "duzeltme": {
+      "kok": "Temmuz 2026'da, Mart 2027'deki 99. Akademi Ödülleri'nde (Oscar) \"En İyi Uluslararası Film\" kategorisinde Türkiye'nin adayı olarak belirlenen film hangisidir?",
+      "siklar": {
+        "A": "Kurtuluş",
+        "B": "Kesilmiş Bir Ağaç Gibi",
+        "C": "Hemme'nin Öldüğü Günlerden Biri",
+        "D": "Tavşan İmparatorluğu",
+        "E": "Sahibinden Rahmet"
+      },
+      "dogru": "B",
+      "aciklama": "Tunç Davut'un yönettiği TRT ortak yapımı \"Kesilmiş Bir Ağaç Gibi\", Temmuz 2026'da 14 Mart 2027'deki 99. Oscar'ın En İyi Uluslararası Film kategorisi için Türkiye'nin adayı olarak belirlenmiştir; film dünya prömiyerini Ekim 2025'te 62. Antalya Altın Portakal Film Festivali'nde yapmıştı (Anadolu Ajansı, 31 Temmuz 2026). Tuzak: Murat Fıratoğlu'nun \"Hemme'nin Öldüğü Günlerden Biri\" bir önceki yılın, yani 98. Oscar'ın (2026) Türkiye adayıdır; Emin Alper'in \"Kurtuluş\"u ise Şubat 2026'da Berlin'de Gümüş Ayı Jüri Büyük Ödülü'nü almıştır.",
+      "dayanak": "Anadolu Ajansı, 31 Temmuz 2026 (https://www.aa.com.tr/tr/kultur/trt-ortak-yapimi-kesilmis-bir-agac-gibi-turkiyenin-oscar-adayi-oldu/4014801)"
+    },
+    "degisenler": [
+      "Kök: 'Türkiye Oscar Seçim Komitesi'nin ... 17 film arasından seçtiği' çıkarıldı (kurul adı ve sayı birincil kaynakta yok)",
+      "Kök: 'Mart 2027'de düzenlenecek ... Türkiye'yi temsil edecek film' → 'Mart 2027'deki ... Türkiye'nin adayı olarak belirlenen film' (zaman kipi)",
+      "Açıklama: 'Türkiye'nin resmî adayı olarak belirlenmiştir' → 'Temmuz 2026'da 14 Mart 2027'deki 99. Oscar'ın ... için Türkiye'nin adayı olarak belirlenmiştir'; künyeden doğrulanamayan TRT Haber çıkarıldı; ödül adı 'Gümüş Ayı Jüri Büyük Ödülü' olarak düzeltildi"
+    ]
+  },
+  {
+    "id": "kurumlar-2026-1",
+    "grup": "F",
+    "gerekce": "Olay 2025'e ait ve kökün ayırt edici yarısı 192 sayılı CBK'nın 177 sayılı CBK md 4'e eklediği (k) görev bendine (e-Devlet Kapısı'nı geliştirme ve işletme) dayanıyor; bu CBK bent içeriği sorusu kullanıcının reddettiği tiptir (PLAN §1.2), bent çıkarılırsa 'Cumhurbaşkanlığına bağlı kurulan' kaydı ve kurum adı cevabı ele verir, elenmeli.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "kurumlar-2026-2",
+    "grup": "F",
+    "gerekce": "Olay 2025'e ait (183 sayılı CBK, 28 Mart 2025); soru 'kapatılan Finans Ofisine yapılan atıfların kendisine yapılmış sayılması' ve daire başkanlığı eklenmesi gibi CBK hüküm ayrıntısına ve ad değişikliğine dayanıyor (PLAN §1.2 reddedilen tip), üstelik kök 'Finans' ipucuyla cevabı ele veriyor; elenmeli.",
+    "duzeltme": null,
+    "degisenler": []
+  }
+]

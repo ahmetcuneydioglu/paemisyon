@@ -1,0 +1,194 @@
+{
+ "parca": 1,
+ "sorular": [
+  {
+   "id": "egm-ic-guvenlik-1",
+   "alan": "egm-ic-guvenlik",
+   "karar": "UYARI",
+   "kok": "2 Eylül 2026'da Ankara'da düzenlenen törenle Emniyet Genel Müdürlüğü envanterine bu tipin ilk örneği olarak katılan ve teşkilata toplam 18 adet teslim edilmesi planlanan helikopter aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "T129 ATAK",
+    "B": "T70",
+    "C": "T625 GÖKBEY",
+    "D": "T929 ATAK-II",
+    "E": "Mi-17"
+   },
+   "dogruCevap": "C",
+   "aciklama": "T625 GÖKBEY genel maksat helikopterinin Emniyet Genel Müdürlüğüne teslim edilen ilk örneği, 2 Eylül 2026'da TUSAŞ'ın Kahramankazan tesislerinde İçişleri Bakanı Mustafa Çiftçi'nin katıldığı törenle EGM envanterine girmiştir; teşkilata toplam 18 GÖKBEY teslim edilecektir (Anadolu Ajansı ve TRT Haber, 2 Eylül 2026; Savunma Sanayii Başkanlığı haftalık bülteni, 7 Eylül 2026). Tuzak: T129 ATAK ve T70 de EGM envanterindedir ve Nisan 2026'da birer adet daha teslim edilmiştir, ancak bu tipler EGM'ye ilk kez 2026'da girmemiştir; GÖKBEY ise daha önce Jandarma Genel Komutanlığına teslim edilmişti.",
+   "kaynak": "Anadolu Ajansı, 2 Eylül 2026; TRT Haber, 2 Eylül 2026 (https://www.trthaber.com/haber/gundem/gokbey-emniyet-genel-mudurlugu-envanterine-katildi-955678.html); SSB haftalık bülteni, 7 Eylül 2026 (https://www.ssb.gov.tr/haber/turk-savunma-sanayiinde-bu-hafta-neler-oldu-2026-09-07)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/bilim-teknoloji/gokbey-helikopteri-emniyet-genel-mudurlugu-envanterine-katildi/4045331",
+   "olayTarihi": "2026-09-02",
+   "uyarilar": [
+    "Kökte ufak bir abartı var: kaynak, ilk GÖKBEY'in 'teslimata hazır hâle geldiğini' ve teslimatın 'başladığını' söylüyor, envantere fiilen 'katıldığını' açıkça söylemiyor. Önerilen kök ifadesi: 'teslimatı başlayan'. Cevabı değiştirmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "C",
+     "kaynak": "İçişleri Bakanlığı, 2 Eylül 2026 haberi: \"Bakanımız Sayın Çiftçi: T625 GÖKBEY Helikopterimiz Emniyet Teşkilatımıza Hayırlı Olsun\"",
+     "kaynakUrl": "https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-t625-gokbey-helikopterimiz-emniyet-teskilatimiza-hayirli-olsun",
+     "gerekce": "Bakanlık, Ankara'da TUSAŞ tesislerindeki törende Emniyet Teşkilatı için toplam 18 adet T625 GÖKBEY'in bugünden itibaren teslim alınmaya başlandığını ve ilkinin teslimata hazır hâle geldiğini yazıyor; aynı metne göre EGM envanterinde zaten 6 T-129 ATAK ve 5 T-70 bulunuyor, bu yüzden 'bu tipin ilk örneği' ifadesi yalnız GÖKBEY'e uyuyor.",
+     "uyari": "Kökte ufak bir abartı var: kaynak, ilk GÖKBEY'in 'teslimata hazır hâle geldiğini' ve teslimatın 'başladığını' söylüyor, envantere fiilen 'katıldığını' açıkça söylemiyor. Önerilen kök ifadesi: 'teslimatı başlayan'. Cevabı değiştirmiyor."
+    },
+    {
+     "cevap": "C",
+     "kaynak": "İçişleri Bakanlığı, 02.09.2026 haberi: Bakanımız Sayın Çiftçi: T625 GÖKBEY Helikopterimiz Emniyet Teşkilatımıza Hayırlı Olsun (ikinci iz: AA, 2 Eylül 2026, 'GÖKBEY helikopteri, Emniyet Genel Müdürlüğü envanterine katıldı' — başlık Google News akışından görüldü)",
+     "kaynakUrl": "https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-t625-gokbey-helikopterimiz-emniyet-teskilatimiza-hayirli-olsun",
+     "gerekce": "Bakanlık haberi 2 Eylül 2026'da Ankara TUSAŞ'taki törende Emniyet Teşkilatı için toplam 18 adet T625 GÖKBEY'in teslim alınmaya başlandığını ve ilk GÖKBEY'in teslime hazır olduğunu söylüyor.",
+     "uyari": null
+    }
+   ]
+  },
+  {
+   "id": "egm-ic-guvenlik-2",
+   "alan": "egm-ic-guvenlik",
+   "karar": "UYARI",
+   "kok": "11 Eylül 2026'da Astana'da düzenlenen Türk Devletleri Teşkilatı İçişleri Bakanları 3. Toplantısı'nda Türkiye'nin, Türk devletleri arasında Interpol ve Europol benzeri bir kolluk iş birliği teşkilatı olarak kurulmasını teklif ettiği yapının adı nedir?",
+   "siklar": {
+    "A": "TÜRKPA",
+    "B": "TÜRKSOY",
+    "C": "AFRIPOL",
+    "D": "TÜRKPOL",
+    "E": "ASEANAPOL"
+   },
+   "dogruCevap": "D",
+   "aciklama": "İçişleri Bakanı Mustafa Çiftçi, 11 Eylül 2026'da Astana'daki Türk Devletleri Teşkilatı İçişleri Bakanları 3. Toplantısı'nda Interpol ve Europol benzeri bir TÜRKPOL teşkilatının kurulmasını teklif etmiş; Kazakistan, Azerbaycan, Kırgızistan ve Özbekistan bakanları teklife olumlu yaklaşmıştır (Anadolu Ajansı ve TRT Haber, 11 Eylül 2026). Eylül 2026 itibarıyla TÜRKPOL teklif aşamasındadır, kurulmuş bir teşkilat değildir. Tuzak: TÜRKPA Türk Devletleri Parlamenter Asamblesi, TÜRKSOY Uluslararası Türk Kültürü Teşkilatıdır; AFRIPOL ve ASEANAPOL ise Afrika ve Güneydoğu Asya'nın polis iş birliği yapılarıdır.",
+   "kaynak": "Anadolu Ajansı, 11 Eylül 2026; TRT Haber, 11 Eylül 2026 (https://www.trthaber.com/haber/gundem/turk-devletleri-arasinda-turkpol-kuruluyor-956570.html)",
+   "kaynakUrl": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-turk-devletleri-arasinda-turkpolun-kurulmasini-teklif-ettim/4054601",
+   "olayTarihi": "2026-09-11",
+   "uyarilar": [
+    "Tarih kayması olabilir: Astana'daki 3. toplantının haberi Bakanlık sitesinde 10.09.2026 tarihli (https://www.icisleri.gov.tr/bakanimiz-sayin-mustafa-ciftci-kazakistanda-turk-devletleri-teskilati-icisleri-bakanlari-3-toplantisina-katildi). Kökte yazan '11 Eylül' ise TÜRKPOL açıklamasının yayın tarihi. Toplantının hangi gün yapıldığı metinde açıkça yazmıyor, kontrol edilmeli; en güvenlisi kökte 'Eylül 2026'da' demek. Çeldirici ASEANAPOL kaynakta örnek model olarak geçiyor ama doğru cevap değil, sorun yok.",
+    "TARİH KAYMASI: kökte toplantının tarihi 11 Eylül 2026 deniyor, ama Bakanlığın toplantıya katılım haberi 10.09.2026 tarihli (https://www.icisleri.gov.tr/bakanimiz-sayin-mustafa-ciftci-kazakistanda-turk-devletleri-teskilati-icisleri-bakanlari-3-toplantisina-katildi) ve TÜRKPOL teklifi 10 Eylül 13:09 GMT'de basında (Daily Sabah) yer almış. 11 Eylül, basın açıklaması haberinin yayın tarihi. Kökte '10 Eylül 2026' ya da 'Eylül 2026' yazılmalı. Cevap değişmiyor."
+   ],
+   "denetciler": [
+    {
+     "cevap": "D",
+     "kaynak": "İçişleri Bakanlığı, 10 Eylül 2026 (Astana, TDT İçişleri Bakanları 3. Toplantısı) ve 11 Eylül 2026 (\"TÜRKPOL'ün kurulmasını teklif olarak dile getirdim\") haberleri",
+     "kaynakUrl": "https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-turkpolun-kurulmasini-teklif-olarak-dile-getirdim",
+     "gerekce": "Bakan, Türk devletleri arasında Interpol ve Europol benzeri TÜRKPOL'ün kurulmasını teklif ettiğini söylüyor; Astana toplantısı haberinde de TÜRKPOL'den 'Türk Devletleri Kolluk İş Birliği Ajansı' diye söz ediliyor.",
+     "uyari": "Tarih kayması olabilir: Astana'daki 3. toplantının haberi Bakanlık sitesinde 10.09.2026 tarihli (https://www.icisleri.gov.tr/bakanimiz-sayin-mustafa-ciftci-kazakistanda-turk-devletleri-teskilati-icisleri-bakanlari-3-toplantisina-katildi). Kökte yazan '11 Eylül' ise TÜRKPOL açıklamasının yayın tarihi. Toplantının hangi gün yapıldığı metinde açıkça yazmıyor, kontrol edilmeli; en güvenlisi kökte 'Eylül 2026'da' demek. Çeldirici ASEANAPOL kaynakta örnek model olarak geçiyor ama doğru cevap değil, sorun yok."
+    },
+    {
+     "cevap": "D",
+     "kaynak": "İçişleri Bakanlığı, 10.09.2026 (TDT İçişleri Bakanları 3. Toplantısı, Astana) ve 11.09.2026 (Bakanımız Sayın Çiftçi: TÜRKPOL'un Kurulmasını Teklif Olarak Dile Getirdim) haberleri",
+     "kaynakUrl": "https://www.icisleri.gov.tr/bakanimiz-sayin-ciftci-turkpolun-kurulmasini-teklif-olarak-dile-getirdim",
+     "gerekce": "Bakanlık metni Türk devletleri arasında 'Interpol ve Europol benzeri bir teşkilat olan TÜRKPOL'un kurulmasını' teklif ettiğini aktarıyor; 10.09 tarihli haber toplantının Astana'da yapıldığını ve TÜRKPOL'ün 'Türk Devletleri Kolluk İş Birliği Ajansı' olarak düşünüldüğünü belirtiyor.",
+     "uyari": "TARİH KAYMASI: kökte toplantının tarihi 11 Eylül 2026 deniyor, ama Bakanlığın toplantıya katılım haberi 10.09.2026 tarihli (https://www.icisleri.gov.tr/bakanimiz-sayin-mustafa-ciftci-kazakistanda-turk-devletleri-teskilati-icisleri-bakanlari-3-toplantisina-katildi) ve TÜRKPOL teklifi 10 Eylül 13:09 GMT'de basında (Daily Sabah) yer almış. 11 Eylül, basın açıklaması haberinin yayın tarihi. Kökte '10 Eylül 2026' ya da 'Eylül 2026' yazılmalı. Cevap değişmiyor."
+    }
+   ]
+  },
+  {
+   "id": "kultur-sanat-2026-2",
+   "alan": "kultur-sanat-2026",
+   "karar": "UYARI",
+   "kok": "Türkiye Oscar Seçim Komitesi'nin Temmuz 2026'da 17 film arasından seçtiği ve Mart 2027'de düzenlenecek 99. Akademi Ödülleri'nde (Oscar) \"En İyi Uluslararası Film\" kategorisinde Türkiye'yi temsil edecek film hangisidir?",
+   "siklar": {
+    "A": "Kurtuluş",
+    "B": "Kesilmiş Bir Ağaç Gibi",
+    "C": "Hemme'nin Öldüğü Günlerden Biri",
+    "D": "Tavşan İmparatorluğu",
+    "E": "Sahibinden Rahmet"
+   },
+   "dogruCevap": "B",
+   "aciklama": "Tunç Davut'un yönettiği TRT ortak yapımı \"Kesilmiş Bir Ağaç Gibi\", 99. Oscar'da En İyi Uluslararası Film kategorisinde Türkiye'nin resmî adayı olarak belirlenmiştir; film dünya prömiyerini Ekim 2025'te 62. Antalya Altın Portakal Film Festivali'nde yapmıştı (Anadolu Ajansı ve TRT Haber, 31 Temmuz 2026). Tuzak: Murat Fıratoğlu'nun \"Hemme'nin Öldüğü Günlerden Biri\" bir önceki yılın, yani 98. Oscar'ın (2026) Türkiye adayıdır; Emin Alper'in \"Kurtuluş\"u ise Şubat 2026'da Berlin'de Gümüş Ayı Büyük Jüri Ödülü'nü almıştır.",
+   "kaynak": "Anadolu Ajansı, 31 Temmuz 2026; TRT Haber, 31 Temmuz 2026",
+   "kaynakUrl": "https://www.aa.com.tr/tr/kultur/trt-ortak-yapimi-kesilmis-bir-agac-gibi-turkiyenin-oscar-adayi-oldu/4014801",
+   "olayTarihi": "2026-07-31",
+   "uyarilar": [
+    "(1) Kökteki 'Mart 2027'de düzenlenecek' ifadesi P11 (2027 ortası) okunduğunda geçmişte kalır; tören sonucu bilinir hale gelir — 'Mart 2027'deki 99. Akademi Ödülleri için' gibi zamandan bağımsız kurulmalı. (2) 'Türkiye Oscar Seçim Komitesi' adı açtığım AA/TRT metinlerinde geçmiyor; '17 film' sayısı yalnız Sözcü'de (AA/TRT'de yok) — kurum adı ve sayı birincil kaynakla teyit edilmeli ya da kökten çıkarılmalı. (3) Çeldirici 'Hemme'nin Öldüğü Günlerden Biri' bir önceki yılın (98. Oscar, Temmuz 2025) Türkiye adayı; tek doğru bozulmuyor ama dikkatli seçilmiş, sorun değil.",
+    "Küçük: kökteki '17 film arasından' sayısı AA metninde yok, yalnız ikincil basında (Halk TV, Sözcü başlıkları) geçiyor. 'Mart 2027'de düzenlenecek' ifadesi P11 (2027 ortası) okunurken geçmiş olacak; 'düzenlenen' ya da kipten bağımsız bir anlatım daha sağlam olur. Çeldirici 'Hemme'nin Öldüğü Günlerden Biri' bir önceki yılın (98. Oscar, Temmuz 2025) Türkiye adayı; kökteki '99.' ve 'Temmuz 2026' ayırt ettiği için ikinci doğru değil, ama çeldiricinin bir yıl önceki doğru cevap olduğu bilinmeli."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "Anadolu Ajansı, 31 Temmuz 2026: \"TRT ortak yapımı 'Kesilmiş Bir Ağaç Gibi' Türkiye'nin Oscar adayı oldu\"; TRT Haber, 31 Temmuz 2026; Sözcü, 31 Temmuz 2026 (17 film)",
+     "kaynakUrl": "https://www.aa.com.tr/tr/kultur/trt-ortak-yapimi-kesilmis-bir-agac-gibi-turkiyenin-oscar-adayi-oldu/4014801",
+     "gerekce": "AA ve TRT Haber: Tunç Davut'un 'Kesilmiş Bir Ağaç Gibi' filmi, 14 Mart 2027'deki 99. Akademi Ödülleri'nde En İyi Uluslararası Film dalında Türkiye'nin adayı olarak belirlendi; Sözcü 17 film arasından seçildiğini yazıyor.",
+     "uyari": "(1) Kökteki 'Mart 2027'de düzenlenecek' ifadesi P11 (2027 ortası) okunduğunda geçmişte kalır; tören sonucu bilinir hale gelir — 'Mart 2027'deki 99. Akademi Ödülleri için' gibi zamandan bağımsız kurulmalı. (2) 'Türkiye Oscar Seçim Komitesi' adı açtığım AA/TRT metinlerinde geçmiyor; '17 film' sayısı yalnız Sözcü'de (AA/TRT'de yok) — kurum adı ve sayı birincil kaynakla teyit edilmeli ya da kökten çıkarılmalı. (3) Çeldirici 'Hemme'nin Öldüğü Günlerden Biri' bir önceki yılın (98. Oscar, Temmuz 2025) Türkiye adayı; tek doğru bozulmuyor ama dikkatli seçilmiş, sorun değil."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "Anadolu Ajansı, 31 Temmuz 2026, \"TRT ortak yapımı 'Kesilmiş Bir Ağaç Gibi' Türkiye'nin Oscar adayı oldu\"",
+     "kaynakUrl": "https://www.aa.com.tr/tr/kultur/trt-ortak-yapimi-kesilmis-bir-agac-gibi-turkiyenin-oscar-adayi-oldu/4014801",
+     "gerekce": "AA: Tunç Davut'un 'Kesilmiş Bir Ağaç Gibi' filmi 99. Oscar Ödülleri (14 Mart 2027) En İyi Uluslararası Film kategorisinde Türkiye'nin adayı oldu (31 Temmuz 2026).",
+     "uyari": "Küçük: kökteki '17 film arasından' sayısı AA metninde yok, yalnız ikincil basında (Halk TV, Sözcü başlıkları) geçiyor. 'Mart 2027'de düzenlenecek' ifadesi P11 (2027 ortası) okunurken geçmiş olacak; 'düzenlenen' ya da kipten bağımsız bir anlatım daha sağlam olur. Çeldirici 'Hemme'nin Öldüğü Günlerden Biri' bir önceki yılın (98. Oscar, Temmuz 2025) Türkiye adayı; kökteki '99.' ve 'Temmuz 2026' ayırt ettiği için ikinci doğru değil, ama çeldiricinin bir yıl önceki doğru cevap olduğu bilinmeli."
+    }
+   ]
+  },
+  {
+   "id": "kurumlar-2026-1",
+   "alan": "kurumlar-2026",
+   "karar": "UYARI",
+   "kok": "8 Ocak 2025'te yayımlanan Cumhurbaşkanlığı Kararnamesi ile Cumhurbaşkanlığına bağlı olarak kurulan ve 25 Aralık 2025 tarihli Resmî Gazete'de yayımlanan Kararname ile e-Devlet Kapısı'nı geliştirme ve işletme görevi de verilen kurum aşağıdakilerden hangisidir?",
+   "siklar": {
+    "A": "Bilgi Teknolojileri ve İletişim Kurumu",
+    "B": "Cumhurbaşkanlığı Dijital Dönüşüm Ofisi",
+    "C": "TÜRKSAT A.Ş.",
+    "D": "TÜBİTAK",
+    "E": "Siber Güvenlik Başkanlığı"
+   },
+   "dogruCevap": "E",
+   "aciklama": "Siber Güvenlik Başkanlığı, 8 Ocak 2025 tarihli Resmî Gazete'de yayımlanan 177 sayılı Cumhurbaşkanlığı Kararnamesi ile Cumhurbaşkanlığına bağlı, özel bütçeli ve merkezi Ankara'da bulunan bir kurum olarak kurulmuştur. 25 Aralık 2025 tarihli Resmî Gazete'de yayımlanan 192 sayılı Kararname ile Başkanlığa e-Devlet Kapısı ile dijital devlet ortak ürün, hizmet ve sistemlerini geliştirme ve işletme görevi verilmiş, Başkanlık da bu görevi üstlendiğini kendi sitesinde duyurmuştur. Tuzak: e-Devlet'le sık anılan Cumhurbaşkanlığı Dijital Dönüşüm Ofisi 28 Mart 2025'te kapatılmıştır.",
+   "kaynak": "Resmî Gazete, 8 Ocak 2025 (177 sayılı CBK) ve 25 Aralık 2025 (192 sayılı CBK); Siber Güvenlik Başkanlığı",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf",
+   "olayTarihi": "2025-12-25",
+   "uyarilar": [
+    "KAPSAM: iki olay da 2025'te (8 Ocak ve 25 Aralık 2025); PLAN §0 penceresi 1 Ocak–22 Eylül 2026. Ayrıca CBK görev bendi içeriğine dayanıyor (PLAN §1-2 mevzuat içeriği sınırına yakın). Çeldirici B (Dijital Dönüşüm Ofisi) 28 Mart 2025'te kapatıldı; aynı partideki kurumlar-2026-2 kökü bunu açıkça söylüyor — iki soru birlikte çıkarsa ipucu sızar. C (TÜRKSAT) e-Devlet'i fiilen işleten şirket olarak bilinir; kökteki 'CBK ile kurulan' kaydı onu dışlıyor, ikinci doğru değil.",
+    "Olay 2025'e ait (PLAN §0'daki 1 Ocak-22 Eylül 2026 penceresinin dışında; yalnız §3 kurumlar satırındaki '2025-2026' ifadesiyle kapsama giriyor). Kökün ikinci yarısı CBK görev bendinin içeriğini soruyor (PLAN §1.2 mevzuat içeriğine yakın). B şıkkı Dijital Dönüşüm Ofisi 28 Mart 2025'te kapatıldı; TÜRKSAT e-Devlet'i geçmişte işletti ama 2025'te kurulmadığı için ikinci doğru cevap değil."
+   ],
+   "denetciler": [
+    {
+     "cevap": "E",
+     "kaynak": "Resmî Gazete 8 Ocak 2025 (Sayı 32776), 177 sayılı Siber Güvenlik Başkanlığı Hakkında CBK md 3; Resmî Gazete 25 Aralık 2025 (Sayı 33118), 192 sayılı CBK md 1",
+     "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf",
+     "gerekce": "177 sayılı CBK (8 Ocak 2025) Cumhurbaşkanlığına bağlı Siber Güvenlik Başkanlığını kurar; 192 sayılı CBK (25 Aralık 2025) md 4'e '(k) e-Devlet Kapısı ile dijital devlet ortak ürün, hizmet ve sistemlerini geliştirmek ve işletmek' bendini ekler. Kuruluş metni: https://www.resmigazete.gov.tr/eskiler/2025/01/20250108-1.pdf",
+     "uyari": "KAPSAM: iki olay da 2025'te (8 Ocak ve 25 Aralık 2025); PLAN §0 penceresi 1 Ocak–22 Eylül 2026. Ayrıca CBK görev bendi içeriğine dayanıyor (PLAN §1-2 mevzuat içeriği sınırına yakın). Çeldirici B (Dijital Dönüşüm Ofisi) 28 Mart 2025'te kapatıldı; aynı partideki kurumlar-2026-2 kökü bunu açıkça söylüyor — iki soru birlikte çıkarsa ipucu sızar. C (TÜRKSAT) e-Devlet'i fiilen işleten şirket olarak bilinir; kökteki 'CBK ile kurulan' kaydı onu dışlıyor, ikinci doğru değil."
+    },
+    {
+     "cevap": "E",
+     "kaynak": "Resmî Gazete 8 Ocak 2025 (32776), 177 sayılı Siber Güvenlik Başkanlığı Hakkında CBK md 3; Resmî Gazete 25 Aralık 2025 (33118), 192 sayılı CBK md 1 (177 s. CBK md 4/1-k eklendi)",
+     "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/12/20251225-13.pdf",
+     "gerekce": "177 s. CBK md 3 Siber Güvenlik Başkanlığını Cumhurbaşkanlığına bağlı olarak kuruyor (https://www.resmigazete.gov.tr/eskiler/2025/01/20250108-1.pdf); 192 s. CBK eklediği (k) bendiyle Başkanlığa 'e-Devlet Kapısı ile dijital devlet ortak ürün, hizmet ve sistemlerini geliştirmek ve işletmek' görevini veriyor.",
+     "uyari": "Olay 2025'e ait (PLAN §0'daki 1 Ocak-22 Eylül 2026 penceresinin dışında; yalnız §3 kurumlar satırındaki '2025-2026' ifadesiyle kapsama giriyor). Kökün ikinci yarısı CBK görev bendinin içeriğini soruyor (PLAN §1.2 mevzuat içeriğine yakın). B şıkkı Dijital Dönüşüm Ofisi 28 Mart 2025'te kapatıldı; TÜRKSAT e-Devlet'i geçmişte işletti ama 2025'te kurulmadığı için ikinci doğru cevap değil."
+    }
+   ]
+  },
+  {
+   "id": "kurumlar-2026-2",
+   "alan": "kurumlar-2026",
+   "karar": "UYARI",
+   "kok": "28 Mart 2025 tarihli Resmî Gazete'de yayımlanan Cumhurbaşkanlığı Kararnamesi ile Cumhurbaşkanlığı Dijital Dönüşüm, Finans ve İnsan Kaynakları ofisleri kapatılmıştır. Aynı düzenlemeyle bünyesine Finans Dairesi Başkanlığı eklenerek finansal sektörü izleme ve yeni finansal araçlar geliştirme görevleri verilen, mevzuatta kapatılan Finans Ofisine yapılan atıfların da kendisine yapılmış sayıldığı kurum hangisidir?",
+   "siklar": {
+    "A": "Strateji ve Bütçe Başkanlığı",
+    "B": "Yatırım ve Finans Ofisi",
+    "C": "Hazine ve Maliye Bakanlığı",
+    "D": "Türkiye Varlık Fonu",
+    "E": "Bankacılık Düzenleme ve Denetleme Kurumu"
+   },
+   "dogruCevap": "B",
+   "aciklama": "28 Mart 2025 tarihli Resmî Gazete'de yayımlanan 183 sayılı Cumhurbaşkanlığı Kararnamesi ile Dijital Dönüşüm, Finans ve İnsan Kaynakları ofisleri kapatılmış, Yatırım Ofisinin adı Yatırım ve Finans Ofisi olarak değiştirilmiş ve bünyesine Finans Dairesi Başkanlığı eklenmiştir (Anadolu Ajansı, 28 Mart 2025). Böylece Cumhurbaşkanlığına bağlı dört ofisten yalnız Yatırım ve Finans Ofisi kalmıştır. Tuzak: kapatılan ofis Finans Ofisi'dir; finans görevlerini devralan kurum Hazine ve Maliye Bakanlığı değil, yeni adıyla Yatırım ve Finans Ofisi'dir.",
+   "kaynak": "Resmî Gazete, 28 Mart 2025 (183 sayılı CBK); Anadolu Ajansı, 28 Mart 2025",
+   "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+   "olayTarihi": "2025-03-28",
+   "uyarilar": [
+    "KAPSAM: olay 28 Mart 2025; PLAN §0 penceresi 1 Ocak–22 Eylül 2026 dışında. Kök, cevabı ele veriyor: 'Finans Ofisi kapatıldı, atıflar kendisine yapılmış sayılır' bilgisi adında 'Finans' geçen tek şıkkı (B) işaret ediyor — P9/P10 zorluk bandının altında kalabilir. Doğrulanmış kurum-düzeni ayrıntısı olarak CBK içeriğine dayanıyor (PLAN §1-2 sınırı).",
+    "Mevzuat içeriği sorusu: 'atıfların yapılmış sayılması' ve daire başkanlığı eklenmesi CBK hükmü ayrıntısı (PLAN §1.2 reddedilen tip). Olay 2025'e ait (2026 penceresi dışında). Kök cevabı ele veriyor: 'Finans Dairesi' ve 'Finans Ofisine yapılan atıflar' şıklar arasında adında 'Finans' ve 'Ofis' geçen tek kurumu gösteriyor; zorluk P9/P10 bandının altında kalabilir."
+   ],
+   "denetciler": [
+    {
+     "cevap": "B",
+     "kaynak": "Resmî Gazete 28 Mart 2025 (Sayı 32855), 183 sayılı Bazı CBK'lerde Değişiklik Yapılmasına Dair CBK md 9-15, 20, 21",
+     "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+     "gerekce": "183 sayılı CBK Yatırım Ofisinin adını 'Yatırım ve Finans Ofisi' yapar, 527/G'ye Finans Dairesi Başkanlığını (finansal sektör verileri, yeni finansal araçlar) ekler, Finans Ofisine yapılan atıfları Yatırım ve Finans Ofisine yönlendirir; geçici md 1 Dijital Dönüşüm, İnsan Kaynakları ve Finans ofislerini 'kapatılan ofisler' olarak düzenler.",
+     "uyari": "KAPSAM: olay 28 Mart 2025; PLAN §0 penceresi 1 Ocak–22 Eylül 2026 dışında. Kök, cevabı ele veriyor: 'Finans Ofisi kapatıldı, atıflar kendisine yapılmış sayılır' bilgisi adında 'Finans' geçen tek şıkkı (B) işaret ediyor — P9/P10 zorluk bandının altında kalabilir. Doğrulanmış kurum-düzeni ayrıntısı olarak CBK içeriğine dayanıyor (PLAN §1-2 sınırı)."
+    },
+    {
+     "cevap": "B",
+     "kaynak": "Resmî Gazete 28 Mart 2025 (32855), 183 sayılı Bazı CBK'lerde Değişiklik Yapılmasına Dair CBK md 8-21",
+     "kaynakUrl": "https://www.resmigazete.gov.tr/eskiler/2025/03/20250328-11.pdf",
+     "gerekce": "183 s. CBK Yatırım Ofisini 'Yatırım ve Finans Ofisi' yapıyor, bünyesine 'Finans Dairesi Başkanlığı'nı ekliyor (finansal sektör analizi, yeni finansal araçlar), Finans Ofisine ve Yatırım Ofisine yapılan atıfları Yatırım ve Finans Ofisine yönlendiriyor (md 20); geçici md 1 Dijital Dönüşüm, İnsan Kaynakları ve Finans ofislerinin kapatıldığını gösteriyor.",
+     "uyari": "Mevzuat içeriği sorusu: 'atıfların yapılmış sayılması' ve daire başkanlığı eklenmesi CBK hükmü ayrıntısı (PLAN §1.2 reddedilen tip). Olay 2025'e ait (2026 penceresi dışında). Kök cevabı ele veriyor: 'Finans Dairesi' ve 'Finans Ofisine yapılan atıflar' şıklar arasında adında 'Finans' ve 'Ofis' geçen tek kurumu gösteriyor; zorluk P9/P10 bandının altında kalabilir."
+    }
+   ]
+  }
+ ]
+}

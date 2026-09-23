@@ -1,0 +1,91 @@
+[
+  {
+    "id": "savunma-2026-3",
+    "grup": "A",
+    "gerekce": "Tören, tarih, yer ve envantere alınan araç Anadolu Ajansı ve TRT Haber'in 20 Ağustos 2026 tarihli iki ayrı haberinde birebir doğrulandı; 'tek kaynak' uyarısı yersiz, cevap tek ve olay sorusu (katalog bilgisi değil).",
+    "duzeltme": {
+      "kok": null,
+      "siklar": {
+        "A": "Bayraktar TB3",
+        "B": "Bayraktar AKINCI",
+        "C": "Bayraktar KALKAN",
+        "D": "Bayraktar KIZILELMA",
+        "E": "Bayraktar TB2"
+      },
+      "dogru": "C",
+      "aciklama": "Bayraktar KALKAN DİHA (Dikey İniş Kalkışlı İnsansız Hava Aracı), 20 Ağustos 2026'da Millî Savunma Bakanı Yaşar Güler ile Savunma Sanayii Başkanı Haluk Görgün'ün katıldığı, TCG Oruçreis'te yapılan törenle envantere alınmıştır (Anadolu Ajansı ve TRT Haber, 20 Ağustos 2026). Dikey iniş-kalkış yaptığı için pist gerektirmez. Tuzak: tören bir gemide yapıldığı için akla gelen Bayraktar TB3, TCG ANADOLU'dan kalkan kısa pistli SİHA'dır ve bu törenin konusu değildir; KIZILELMA'nın yurt içi teslimatı ise ayrı bir süreçtir.",
+      "dayanak": "Anadolu Ajansı, 20 Ağustos 2026; TRT Haber, 20 Ağustos 2026"
+    },
+    "degisenler": []
+  },
+  {
+    "id": "savunma-2026-4",
+    "grup": "F",
+    "gerekce": "Partiye özel yönerge: aynı partide egm-ic-guvenlik-1'in cevabı da T625 GÖKBEY; aynı platformu iki kez sormak fazlalık, polis adayı için EGM sorusu daha değerli; ayrıca kökteki tören tarihi (sertifika 16 Mart'ta SHGM'de verildi, 17 Mart'ta Bakanlıkta takdim edildi) de düzeltme gerektiriyordu — soru elenir.",
+    "duzeltme": null,
+    "degisenler": []
+  },
+  {
+    "id": "savunma-2026-5",
+    "grup": "A",
+    "gerekce": "İletişim Başkanlığı ve AA metinleri tarih, yer, tarafları ve 'birine yönelik silahlı saldırı hepsine yönelik sayılır' hükmünü birebir veriyor; resmî adın ('Mekke') kökte geçmemesi kusur değil, yazılsa cevabı ele verirdi.",
+    "duzeltme": {
+      "kok": null,
+      "siklar": {
+        "A": "Suudi Arabistan ve Pakistan",
+        "B": "Azerbaycan ve Pakistan",
+        "C": "Suudi Arabistan ve Katar",
+        "D": "Katar ve Pakistan",
+        "E": "Suudi Arabistan ve Mısır"
+      },
+      "dogru": "A",
+      "aciklama": "7 Ağustos 2026'da Mekke'deki Safa Sarayı'nda imzalanan Mekke Ortak Savunma Anlaşması'nın tarafları Türkiye, Suudi Arabistan ve Pakistan'dır; anlaşmayı Cumhurbaşkanı Recep Tayyip Erdoğan, Suudi Arabistan Veliaht Prensi ve Başbakanı Muhammed bin Selman ile Pakistan Başbakanı Şahbaz Şerif imzalamıştır (İletişim Başkanlığı; Anadolu Ajansı, 7 Ağustos 2026). Anlaşmaya göre üç devletten birine yönelik silahlı saldırı hepsine yönelik saldırı sayılır. Anlaşma, imzalandığı şehrin adıyla anılır; başkent Riyad'da değil Mekke'de imzalanmıştır.",
+      "dayanak": "T.C. Cumhurbaşkanlığı İletişim Başkanlığı, 7 Ağustos 2026; Anadolu Ajansı, 7 Ağustos 2026"
+    },
+    "degisenler": []
+  },
+  {
+    "id": "spor-2026-3",
+    "grup": "C",
+    "gerekce": "'İlk Türk pilot' iddiası AA ve Gençlik ve Spor Bakanlığı ('rallide Türkiye'nin ilk dünya şampiyonluğu') ile ikinci birincil kaynaktan teyit edildi; kökteki yarış derecesi ayrıntısı (PLAN §1.4 tipi) çıkarıldı, açıklamadaki doğrulanamayan '10-13 Eylül' aralığı kaldırıldı.",
+    "duzeltme": {
+      "kok": "Eylül 2026'da FIA Gençler Dünya Ralli Şampiyonası'nı (JWRC) kazanarak bu şampiyonluğa ulaşan ilk Türk pilot olan sporcu kimdir?",
+      "siklar": {
+        "A": "Ali Türkkan",
+        "B": "Ayhancan Güven",
+        "C": "Burak Çukurova",
+        "D": "Cem Bölükbaşı",
+        "E": "Yağız Avcı"
+      },
+      "dogru": "A",
+      "aciklama": "Castrol Ford Team Türkiye pilotu Ali Türkkan, sezonun son ayağı olan Şili Rallisi'nin ardından 13 Eylül 2026'da 2026 FIA Gençler Dünya Ralli Şampiyonu olmuş ve bu şampiyonluğa ulaşan ilk Türk pilot olarak rallide Türkiye'ye ilk dünya şampiyonluğunu getirmiştir (Anadolu Ajansı ve Gençlik ve Spor Bakanlığı, 13 Eylül 2026). Son ayağa en yakın rakibi İsveçli Calle Carlberg'in önünde giren Türkkan, Carlberg'in kaza yaparak yarış dışı kalmasıyla şampiyonluğu kesinleştirmiştir. Tuzak: diğer şıklardaki isimler de otomobil sporlarında yarışan Türk pilotlardır.",
+      "dayanak": "Anadolu Ajansı, 13 Eylül 2026; Gençlik ve Spor Bakanlığı, 13 Eylül 2026"
+    },
+    "degisenler": [
+      "Kök: 'Şili Rallisi'ni ikinci sırada tamamlayarak FIA ... kazanan ve' → 'FIA ... kazanarak'",
+      "Açıklama: '(10-13 Eylül 2026)' tarih aralığı ve derece ayrıntısı çıkarıldı; 'ilk' iddiasının ikinci kaynağı (GSB) künyeye eklendi"
+    ]
+  },
+  {
+    "id": "spor-2026-4",
+    "grup": "C",
+    "gerekce": "Sıra numarası, tarihler ve 334 sporcu (137 kadın, 197 erkek) AA'nın 20 Ağustos 2026 haberinde doğrulandı; yarışmalar Puglia'daki başka tesislerde de yapıldığı için kök 'hangi kentinde' yerine 'hangi kentinin ev sahipliğinde' diye düzeltildi, açıklamadaki doğrulanamayan GSB künyesi çıkarıldı.",
+    "duzeltme": {
+      "kok": "21 Ağustos-3 Eylül 2026 tarihlerinde düzenlenen ve Türkiye'nin 334 sporcuyla katıldığı 20. Akdeniz Oyunları, İtalya'nın hangi kentinin ev sahipliğinde yapılmıştır?",
+      "siklar": {
+        "A": "Bari",
+        "B": "Napoli",
+        "C": "Palermo",
+        "D": "Pescara",
+        "E": "Taranto"
+      },
+      "dogru": "E",
+      "aciklama": "20. Akdeniz Oyunları 21 Ağustos-3 Eylül 2026'da İtalya'nın Taranto kentinin ev sahipliğinde yapılmış, yarışmalar Taranto ile çevresindeki Puglia Bölgesi tesislerinde düzenlenmiştir; Türkiye oyunlara 137'si kadın, 197'si erkek olmak üzere 334 sporcuyla katılmıştır (Anadolu Ajansı, 20 Ağustos 2026). Tuzak: İtalya oyunlara daha önce 1963'te Napoli, 1997'de Bari ve 2009'da Pescara'da ev sahipliği yapmıştı.",
+      "dayanak": "Anadolu Ajansı, 20 Ağustos 2026 (TMOK açıklaması)"
+    },
+    "degisenler": [
+      "Kök: 'İtalya'nın hangi kentinde yapılmıştır' → 'İtalya'nın hangi kentinin ev sahipliğinde yapılmıştır'",
+      "Açıklama: Puglia tesisleri notu eklendi; 'Gençlik ve Spor Bakanlığı Spor Hizmetleri Genel Müdürlüğü' künyesi çıkarıldı"
+    ]
+  }
+]

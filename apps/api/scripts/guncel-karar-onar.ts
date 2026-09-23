@@ -24,7 +24,9 @@
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
+// GUNCEL_KOK ile başka bir parti klasörü seçilir (ör. docs/35-guncel-kultur/parti-2);
+// varsayılan ilk partidir. Her parti kendi arastirma/parti/denetim/kurtarma alt klasörlerini taşır.
+const KOK = process.env.GUNCEL_KOK ?? '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 const APPLY = process.env.APPLY === '1';
 /** Dengeleme sonrası birleştiricinin bozduğu alanlar. */
 const ALANLAR = [

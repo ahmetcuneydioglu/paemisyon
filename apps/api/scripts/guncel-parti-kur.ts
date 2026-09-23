@@ -1,14 +1,21 @@
 /**
  * Doc 35 — araştırma çıktılarını KÖR denetim partilerine ayırır.
  * Cevap ve açıklama ayrı dosyaya konur; denetçi yalnız soruyu görür.
+ *
+ *   [GUNCEL_KOK=<parti klasörü>] npx tsx scripts/guncel-parti-kur.ts [alan]
  */
 import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
-const KOK = '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
+// GUNCEL_KOK ile başka bir parti klasörü seçilir (ör. docs/35-guncel-kultur/parti-2);
+// varsayılan ilk partidir. Her parti kendi arastirma/parti/denetim/kurtarma alt klasörlerini taşır.
+const KOK = process.env.GUNCEL_KOK ?? '/Users/ahmetcnd/Developer/paemisyon/docs/35-guncel-kultur';
 
 mkdirSync(`${KOK}/parti`, { recursive: true });
 mkdirSync(`${KOK}/denetim`, { recursive: true });
 let toplam = 0;
-for (const f of readdirSync(`${KOK}/arastirma`).filter((x) => x.endsWith('.json'))) {
+// Alan adı verilirse yalnız o alan işlenir: paralel üreticiler birbirinin yarım
+// yazılmış araştırma dosyasını okumasın.
+const TEK = process.argv[2];
+for (const f of readdirSync(`${KOK}/arastirma`).filter((x) => x.endsWith('.json') && (!TEK || x === `${TEK}.json`))) {
   const o = JSON.parse(readFileSync(`${KOK}/arastirma/${f}`, 'utf8'));
   const alan = f.replace('.json', '');
   const sorular = (o.sorular ?? []).map((s: any, i: number) => ({ ...s, id: `${alan}-${i + 1}` }));
