@@ -21,23 +21,26 @@
 import { randomUUID } from 'node:crypto';
 import { PrismaClient, Difficulty } from '@prisma/client';
 import { questionFingerprint } from '../src/modules/admin/questions/import-parser';
-import { cozumle } from './aay-cozucu';
-import { PARTI as P1 } from './aay-p1';
-import { PARTI as P2 } from './aay-p2';
-import { PARTI as P3 } from './aay-p3';
+import { pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+import { cozumle, type Bulmaca } from './aay-cozucu';
 
-const PARTILER: Record<string, typeof P1> = { 'aay-p1': P1, 'aay-p2': P2, 'aay-p3': P3 };
+type Soru = Bulmaca & { ortakMetin: string; kok: string; aciklama: string; zorluk: 'easy' | 'medium' | 'hard' };
+
 const HANGI = process.argv[2] ?? 'aay-p1';
-const PARTI = PARTILER[HANGI];
-if (!PARTI) throw new Error(`bilinmeyen parti: ${HANGI} (${Object.keys(PARTILER).join(', ')})`);
+if (!/^aay-p\d+$/.test(HANGI)) throw new Error(`parti adı aay-p<N> olmalı: ${HANGI}`);
 
 const APPLY = process.env.APPLY === '1';
 const KONU = 'Analitik Akıl Yürütme';
 const ETIKET = 'AI üretimi — Analitik akıl yürütme (çözücü kanıtlı)';
-const SIKLAR = ['A', 'B', 'C', 'D', 'E'] as const;
-const prisma = new PrismaClient();
+// CLAUDE.md: scriptler tek bağlantıyla (Supabase pooler 15 slotu prod ile ortak).
+const base = process.env.DATABASE_URL!;
+const url = base.includes('connection_limit') ? base : `${base}${base.includes('?') ? '&' : '?'}connection_limit=1`;
+const prisma = new PrismaClient({ datasources: { db: { url } } });
 
 async function main() {
+  // Parti dosyası adıyla yüklenir — yeni parti için bu script'e dokunmak gerekmez.
+  const PARTI: Soru[] = (await import(pathToFileURL(resolve(__dirname, `${HANGI}.ts`)).href)).PARTI;
   const konu = await prisma.topic.findFirstOrThrow({
     where: { name: KONU, deletedAt: null },
     select: { id: true, name: true, course: { select: { name: true } } },

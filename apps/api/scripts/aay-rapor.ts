@@ -1,16 +1,18 @@
 /** Partiyi insan okuyacak biçimde yazar: senaryo, soru, şıklar, cevap, dünya sayısı. */
 import { writeFileSync } from 'node:fs';
-import { cozumle } from './aay-cozucu';
-import { PARTI as P1 } from './aay-p1';
-import { PARTI as P2 } from './aay-p2';
-import { PARTI as P3 } from './aay-p3';
+import { pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+import { cozumle, type Bulmaca } from './aay-cozucu';
 
-const PARTILER: Record<string, typeof P1> = { 'aay-p1': P1, 'aay-p2': P2, 'aay-p3': P3 };
+type Soru = Bulmaca & { ortakMetin: string; kok: string };
+
+(async () => {
 const hangi = process.argv[2] ?? 'aay-p1';
-const PARTI = PARTILER[hangi];
-if (!PARTI) throw new Error(`bilinmeyen parti: ${hangi}`);
+if (!/^aay-p\d+$/.test(hangi)) throw new Error(`parti adı aay-p<N> olmalı: ${hangi}`);
+const PARTI: Soru[] = (await import(pathToFileURL(resolve(__dirname, `${hangi}.ts`)).href)).PARTI;
+const senaryoSayisi = new Set(PARTI.map((b) => b.ortakMetin)).size;
 
-const satir: string[] = [`# Analitik Akıl Yürütme · ${hangi === 'aay-p2' ? '2' : '1'}. parti`, '', '4 senaryo · 12 soru · hepsi kaba kuvvetle kanıtlandı.', ''];
+const satir: string[] = [`# Analitik Akıl Yürütme · ${hangi.replace('aay-p', '')}. parti`, '', `${senaryoSayisi} senaryo · ${PARTI.length} soru · hepsi kaba kuvvetle kanıtlandı.`, ''];
 let oncekiMetin = '';
 for (const b of PARTI) {
   const k = cozumle(b);
@@ -25,3 +27,4 @@ for (const b of PARTI) {
 const yol = `/Users/ahmetcnd/Developer/paemisyon/docs/43-analitik-akil-yurutme/${hangi}.md`;
 writeFileSync(yol, satir.join('\n'));
 console.log(`✓ ${PARTI.length} soru → ${yol}`);
+})();

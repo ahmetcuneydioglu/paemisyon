@@ -1,6 +1,6 @@
-# Analitik Akıl Yürütme · 1. parti
+# Analitik Akıl Yürütme · 3. parti
 
-4 senaryo · 12 soru · hepsi kaba kuvvetle kanıtlandı.
+12 senaryo · 12 soru · hepsi kaba kuvvetle kanıtlandı.
 
 ---
 
@@ -81,17 +81,17 @@
 
 ## Senaryo
 
-> Kuzeye doğru ilerleyen bir devriye aracı önce sağa, sonra yine sağa, en son da sola dönmüştür.
+> Kuzeye doğru ilerleyen bir devriye aracı önce sağa doğru 90 derece, ardından sola doğru 45 derece dönmüştür.
 
 ### aay-p3-05
 
 **Buna göre araç en son hangi yöne doğru ilerlemektedir?**
 
-- **A)** Güney
-- **B)** Batı
+- **A)** Kuzey
+- **B)** Doğu
 - **C)** Kuzeybatı
-- **D)** Kuzey
-- **E)** Doğu  ← **doğru**
+- **D)** Güneydoğu
+- **E)** Kuzeydoğu  ← **doğru**
 
 `KANIT` · 1 tutarlı dünya · tek doğru **E**
 
@@ -99,25 +99,25 @@
 
 ## Senaryo
 
-> Kaan, Lale ve Mert adlı üç memura Devriye, Büro ve Nöbet görevlerinden biri verilmiştir; her memur yalnız bir görev üstlenmiştir. Kaan Devriye görevinde değildir, Lale ise Nöbet görevindedir.
+> Kaan, Lale ve Mert adlı üç memura Devriye, Büro ve Nöbet görevlerinden biri verilmiştir; her memur yalnız bir görev üstlenmiştir. Ne Kaan ne de Lale Devriye görevindedir.
 
 ### aay-p3-06
 
 **Buna göre, aşağıdakilerden hangisi kesinlikle doğrudur?**
 
-- **A)** Kaan ile Mert aynı görevdedir.
-- **B)** Mert Büro görevindedir.
+- **A)** Lale Büro görevindedir.
+- **B)** Lale Nöbet görevindedir.
 - **C)** Mert Devriye görevindedir.  ← **doğru**
-- **D)** Kaan Nöbet görevindedir.
-- **E)** Lale Devriye görevindedir.
+- **D)** Kaan Büro görevindedir.
+- **E)** Kaan Nöbet görevindedir.
 
-`KANIT` · 1 tutarlı dünya · tek doğru **C**
+`KANIT` · 2 tutarlı dünya · tek doğru **C**
 
 ---
 
 ## Senaryo
 
-> Beş katlı bir binanın her katında A, B, C, D ve E birimlerinden biri bulunmaktadır. B, A’nın hemen üst katındadır. C en üst kattadır. D ise A’dan alt bir kattadır.
+> Beş katlı bir binanın her katında A, B, C, D ve E birimlerinden biri bulunmaktadır; her birim yalnız bir kattadır. B, A’nın hemen üst katındadır. C en üst kattadır. D ise A’dan alt bir kattadır.
 
 ### aay-p3-07
 
@@ -153,19 +153,19 @@
 
 ## Senaryo
 
-> Bir komisyona A, B, C ve D adaylarından tam olarak ikisi seçilecektir. A seçilirse B seçilemez. C seçilmezse D seçilmek zorundadır.
+> Bir komisyona A, B, C ve D adaylarından tam olarak ikisi seçilecektir. A seçilirse B seçilemez. C seçilirse D de seçilmek zorundadır.
 
 ### aay-p3-09
 
 **Buna göre, aşağıdakilerden hangisi kesinlikle doğrudur?**
 
-- **A)** B ile D birlikte seçilmiştir.
-- **B)** C ya da D’den en az biri seçilmiştir.  ← **doğru**
-- **C)** D seçilmiştir.
-- **D)** A seçilmiştir.
+- **A)** C ile D birlikte seçilmiştir.
+- **B)** D seçilmiştir.  ← **doğru**
+- **C)** A seçilmiştir.
+- **D)** B seçilmiştir.
 - **E)** C seçilmiştir.
 
-`KANIT` · 5 tutarlı dünya · tek doğru **B**
+`KANIT` · 3 tutarlı dünya · tek doğru **B**
 
 ---
 
@@ -211,12 +211,12 @@
 
 ### aay-p3-12
 
-**Buna göre, D kimin tam karşısında oturmaktadır?**
+**Buna göre, A’nın solunda kim oturmaktadır?**
 
 - **A)** C
-- **B)** B  ← **doğru**
+- **B)** D  ← **doğru**
 - **C)** Belirlenemez
-- **D)** A
-- **E)** Kimsenin
+- **D)** B
+- **E)** Kimse
 
 `KANIT` · 4 tutarlı dünya · tek doğru **B**

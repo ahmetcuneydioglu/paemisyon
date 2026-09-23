@@ -29,7 +29,7 @@
 **Yukarıdaki bilgilere göre, aşağıdaki ekiplerden hangi ikisi müsabakanın herhangi bir turunda karşılaşmış olamaz?**
 
 - **A)** Atmaca ve Kartal
-- **B)** Kartal ve Şahin
+- **B)** Yıldırım ve Kartal
 - **C)** Poyraz ve Yıldırım
 - **D)** Yıldırım ve Şahin
 - **E)** Atmaca ve Şimşek  ← **doğru**
@@ -54,7 +54,7 @@
 
 > Bir emniyet müdürlüğü binasının koridorunda karşılıklı altı oda vardır. Koridorun bir yanında soldan sağa 1, 2 ve 3 numaralı odalar; tam karşılarında ise 4, 5 ve 6 numaralı odalar bulunmaktadır: 1 numaralı odanın karşısı 4, 2 numaralı odanın karşısı 5, 3 numaralı odanın karşısı 6 numaralı odadır. Arşiv, Bilişim, Emanet, Nöbetçi, Santral ve Silahhane birimleri bu odalara birer birer yerleştirilmiştir. Yerleşim ile ilgili bilinenler şunlardır:
 > - Arşiv’in karşısındaki odada Emanet bulunmaktadır.
-> - Santral ile Bilişim yan yana odalardadır.
+> - Santral ile Bilişim aynı sırada ve ardışık numaralı odalardadır.
 > - Silahhane’nin karşısındaki odada Santral bulunmaktadır.
 > - Nöbetçi, 4, 5 veya 6 numaralı odalardan birindedir.
 
@@ -65,7 +65,7 @@
 - **A)** Arşiv 1 numaralı odadadır.
 - **B)** Emanet 6 numaralı odadadır.
 - **C)** Santral 2 numaralı odadadır.
-- **D)** Bilişim ile Nöbetçi aynı sıradaki odalardadır.
+- **D)** Arşiv ile Santral aynı sıradaki odalardadır.
 - **E)** Nöbetçi ile Silahhane aynı sıradaki odalardadır.  ← **doğru**
 
 `KANIT` · 8 tutarlı dünya · tek doğru **E**
@@ -86,11 +86,11 @@
 
 **Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?**
 
-- **A)** Bilişim’in karşısındaki odada Emanet bulunmaktadır.  ← **doğru**
-- **B)** Santral 1 numaralı odadadır.
-- **C)** Emanet 3 numaralı odadadır.
-- **D)** Silahhane 5 numaralı odadadır.
-- **E)** Arşiv 6 numaralı odadadır.
+- **A)** Nöbetçi ile Santral aynı sıradaki odalardadır.  ← **doğru**
+- **B)** Santral 3 numaralı odadadır.
+- **C)** Nöbetçi 6 numaralı odadadır.
+- **D)** Bilişim 3 numaralı odadadır.
+- **E)** Arşiv 1 numaralı odadadır.
 
 `KANIT` · 8 tutarlı dünya · tek doğru **A**
 
@@ -131,11 +131,11 @@
 
 **Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?**
 
-- **A)** Alfa ekibine 5 telsiz verilmiştir.
-- **B)** Beta ekibine 4 telsiz verilmiştir.
-- **C)** Beta ekibine 5 telsiz verilmiştir.  ← **doğru**
-- **D)** Beta ekibine 2 telsiz verilmiştir.
-- **E)** Alfa ekibine 7 telsiz verilmiştir.
+- **A)** Alfa ekibine 7 telsiz verilmiştir.
+- **B)** Alfa ekibine 4 telsiz verilmiştir.
+- **C)** Alfa ekibine 8 telsiz verilmiştir.  ← **doğru**
+- **D)** Alfa ekibine 5 telsiz verilmiştir.
+- **E)** Alfa ekibine 6 telsiz verilmiştir.
 
 `KANIT` · 4 tutarlı dünya · tek doğru **C**
 
@@ -163,15 +163,15 @@
 
 ### aay-p2-11
 
-**Yukarıdaki bilgilere göre, aşağıdakilerden hangisi kesinlikle yanlıştır?**
+**Yukarıdaki bilgilere göre, Kaçakçılık’ın brifingi de çevrim içi verilmişse, çevrim içi brifingler listenin başına alınıp diğer şubeler kendi aralarındaki sırayı koruduğunda Terörle kaçıncı sırada olur?**
 
-- **A)** Asayiş şubesi üçüncü sırada brifing vermiştir.  ← **doğru**
-- **B)** Asayiş şubesi birinci sırada brifing vermiştir.
-- **C)** Terörle’nin brifingi çevrim içi verilmiştir.
-- **D)** Narkotik şubesi ikinci sırada brifing vermiştir.
-- **E)** Kaçakçılık’ın brifingi çevrim içi verilmiştir.
+- **A)** Altıncı  ← **doğru**
+- **B)** İkinci
+- **C)** Beşinci
+- **D)** Üçüncü
+- **E)** Dördüncü
 
-`KANIT` · 4 tutarlı dünya · tek doğru **A**
+`KANIT` · 2 tutarlı dünya · tek doğru **A**
 
 ### aay-p2-12
 

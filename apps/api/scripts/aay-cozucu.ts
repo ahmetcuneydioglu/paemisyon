@@ -175,6 +175,77 @@ export const sabit =
   (f: (d: Dunya) => string | number): Iddia =>
   (ds) => ds.length > 0 && new Set(ds.map(f)).size === 1;
 
+/**
+ * Roma rakamlı öncül şıkkı ("I. Koray II. Lale III. Mert — hangileri … olabilir?").
+ *
+ * Şık bir ALT KÜMEDİR ve ancak özelliği sağlayan öncüllerin kümesi TAM OLARAK
+ * o alt küme ise doğrudur. Tek yönlü sınamak yetmez: "I ve III" doğruyken
+ * "Yalnız I" de "I sağlanıyor" diye geçerdi. `ozellik[i]` (i+1). öncülün
+ * iddiasıdır — "olabilir" için `bazi`, "kesin bilinir" için `sabit`, "kesin
+ * doğru" için `her` verilir; kip soruda, niceleyici spesifikasyonda durur.
+ */
+export const romen =
+  (ozellik: Iddia[], secili: number[]): Iddia =>
+  (ds) =>
+    ozellik.every((f, i) => f(ds) === secili.includes(i + 1));
+
+/** Roma rakamlı şık metni: [1] → "Yalnız I", [1, 3] → "I ve III", [1, 2, 3] → "I, II ve III". */
+export const romenMetin = (secili: number[]): string => {
+  const r = [...secili].sort((a, b) => a - b).map((i) => ['I', 'II', 'III', 'IV', 'V'][i - 1]);
+  if (r.length === 1) return `Yalnız ${r[0]}`;
+  return `${r.slice(0, -1).join(', ')} ve ${r[r.length - 1]}`;
+};
+
+/**
+ * Roma rakamlı sorunun beş şıkkı — KANONİK sırada, karıştırılmadan.
+ *
+ * Sınavda bu şıklar hep aynı düzende gelir (Yalnız I, Yalnız II, Yalnız III,
+ * I ve II, I ve III, II ve III, I, II ve III); karışık dizilmiş "II ve III /
+ * Yalnız I" adaya yapay görünür. Anahtar harfi, şık olarak SEÇİLEN beş alt
+ * kümeyle ayarlanır: doğru küme hangi dört çeldiriciyle birlikte seçilirse
+ * sıralamadaki yeri ona göre değişir.
+ */
+export function romenSik(
+  ozellik: Iddia[],
+  secimler: number[][],
+): { siklar: Bulmaca['siklar']; isaretli: string } {
+  if (secimler.length !== 5) throw new Error(`romenSik: ${secimler.length} seçim (5 olmalı)`);
+  const anahtar = (s: number[]) => [...s].sort((a, b) => a - b).join(',');
+  if (new Set(secimler.map(anahtar)).size !== 5) throw new Error('romenSik: aynı alt küme iki kez');
+  const sirali = [...secimler].sort((a, b) => a.length - b.length || anahtar(a).localeCompare(anahtar(b)));
+  const siklar = sirali.map((s, i) => ({ harf: 'ABCDE'[i], metin: romenMetin(s), iddia: romen(ozellik, s) }));
+  // Üretici doğruyu İLK seçim olarak verir (sik() ile aynı sözleşme); çözücü yine de kendisi bulur.
+  return { siklar, isaretli: 'ABCDE'[sirali.findIndex((s) => anahtar(s) === anahtar(secimler[0]))] };
+}
+
+/**
+ * "Tamamının belirlenebilmesi için aşağıdakilerden hangisinin bilinmesi
+ * yeterlidir?" şıkkı.
+ *
+ * Bilinecek bilgi (anahtar) HANGİ değeri alırsa alsın, o değerle tutarlı
+ * dünyalar tek bir çözüme inmeli. Adayın bilgiyi öğrenmeden önce değerini
+ * bilmediği için "bazı değerlerde yetiyor" yeterli sayılmaz — PAEM 10/83
+ * resmî anahtarı bu okumayla üretilir (aay-paem10-dogrula.ts).
+ *
+ * `temel` sorunun belirlenmesini istediği alanları seçer (varsayılan: bütün
+ * dünya). Türetilmiş yardımcı alanlar temelin fonksiyonuysa sonucu değiştirmez;
+ * değilse temel açıkça verilmelidir, yoksa aynı çözüm iki dünya sayılır.
+ */
+export const yeterli =
+  (
+    anahtar: (d: Dunya) => string | number,
+    temel: (d: Dunya) => string = (d) => JSON.stringify(Object.entries(d).sort(([a], [b]) => a.localeCompare(b))),
+  ): Iddia =>
+  (ds) => {
+    const grup = new Map<string | number, Set<string>>();
+    for (const d of ds) {
+      const k = anahtar(d);
+      if (!grup.has(k)) grup.set(k, new Set());
+      grup.get(k)!.add(temel(d));
+    }
+    return ds.length > 0 && [...grup.values()].every((s) => s.size === 1);
+  };
+
 /** Tam olarak şu küme seçilmiş mi — "sadece B ve D" tipi şıklar için. */
 export const kume =
   (adlar: string[], secili: string[]) =>
