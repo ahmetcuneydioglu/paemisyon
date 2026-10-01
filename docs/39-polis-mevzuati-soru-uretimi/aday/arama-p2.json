@@ -1,0 +1,138 @@
+[
+  {
+    "id": "arama-p2-01",
+    "articleNo": "11",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, adlî aramanın bir su üstü aracında yapılması hâlinde adlî arama tutanağında bu araca ilişkin olarak yer alması öngörülen bilgiler aşağıdakilerin hangisinde birlikte ve doğru olarak verilmiştir?",
+    "siklar": {
+      "A": "Cinsi, ismi, sahibi ve kullananı",
+      "B": "Cinsi, ismi, donatanı ve bağlama limanı",
+      "C": "Tonajı, acentesi, kaptanı ve arama mevkii",
+      "D": "İsmi, donatanı ve kaptanı",
+      "E": "Sahibi, kullananı, tonajı ve acentesi"
+    },
+    "dogru": "A",
+    "aciklama": "Yönetmeliğin 11 inci maddesi adlî arama tutanağında bulunacak bilgileri sayarken, aranan yerin ya da aracın niteliğine göre farklı bilgi setleri öngörür. Araçta yapılan aramada aracın plaka numarası ve markası, konut, işyeri ve eklentilerinde ise açık adres yazılır. SU ÜSTÜ ARACININ aranmasında tutanağa aracın CİNSİ, İSMİ, SAHİBİ ve KULLANANI geçirilir. DENİZ ARACININ aranması hâlinde liste belirgin biçimde uzar: cinsi ve isminin yanında DONATANI, BAĞLAMA LİMANI, TONAJI, ACENTESİ, KAPTANI ve ARAMA MEVKİİ de yazılır. Sorunun tuzağı bu iki listenin birbirine karıştırılmasıdır. Donatan, bağlama limanı, tonaj, acente ve kaptan gibi ticari denizcilik bilgileri su üstü aracı için değil deniz aracı için istenir; su üstü aracında ise 'sahibi ve kullananı' ile yetinilir. Tutanak aramaya katılanlar ve hazır bulunanlarca imzalanır; kaçakçılık suçlarına ilişkin tutanaklar ise 5607 sayılı Kanunun 11 ve 20 nci maddelerine göre düzenlenir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 11/2-e",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p2-02",
+    "articleNo": "15",
+    "kok": "I. Yanında bulunduran kişinin rızasıyla teslim etmediği, ispat aracı olarak yararlı görülen eşyaya el konulabilir.\nII. İspat aracı olarak yararlı görülen eşyayı yanında bulunduran kişi, talep üzerine bu eşyayı göstermek ve teslim etmekle yükümlüdür.\nIII. Cumhuriyet savcısına ulaşılamadığı hâllerde, arama sonucunda bulunan eşyaya kolluk âmirinin sözlü emriyle el konulabilir.\nAdlî ve Önleme Aramaları Yönetmeliği’nin “elkoyma, koruma altına alma” başlıklı hükmüne göre yukarıdaki yargılardan hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "C",
+    "aciklama": "I ve II numaralı yargılar Yönetmeliğin 15 inci maddesinin doğrudan karşılığıdır. İspat aracı olarak yararlı görülen ya da eşya veya kazanç müsaderesinin konusunu oluşturan malvarlığı değerleri KORUMA ALTINA ALINIR; bu tür eşyayı yanında bulunduran kişi talep üzerine onu GÖSTERMEK ve TESLİM ETMEKLE yükümlüdür ve eşyayı RIZASIYLA TESLİM ETMEZSE ona EL KONULABİLİR. Yükümlülük şüpheliyle sınırlanmamıştır; madde 'yanında bulunduran kişi' ifadesini kullanır. III numaralı yargı yetkili makamı doğru, emrin biçimini yanlış verir. Arama sonucunda el koyma hâkim kararıyla, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısının, savcıya ulaşılamadığı hâllerde ise kolluk âmirinin YAZILI emriyle gerçekleştirilebilir. Yazılı emrin yerine sözlü emri koymak bu maddenin klasik tuzağıdır. Maddenin son fıkrası ayrı bir ihtimali düzenler: evsafı belirlenen eşya kollukça BULUNAMAZ ve zilyet de teslimden kaçınırsa, 5271 sayılı Kanunun 60 ıncı maddesindeki disiplin hapsinin uygulanması amacıyla durum Cumhuriyet başsavcılığına bildirilir. Bu yol şüpheli, sanık ve tanıklıktan çekinebilecekler için işletilmez; eşyanın bulunduğu ve yalnız teslim edilmediği hâlde ise sorun el koyma yoluyla çözülür.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 15/1-4",
+    "zorluk": "medium",
+    "tur": "onerme"
+  },
+  {
+    "id": "arama-p2-03",
+    "articleNo": "17",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, bilgisayar veya bilgisayar kütüklerine el koyma işlemi sırasında yapılan yedekleme ve alınan yedek ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Yedekten kopya çıkarılıp verilmesi, şüphelinin veya vekilinin talebine bağlıdır.",
+      "B": "Yedekleme, sistemdeki verilerin tamamı veya bir kısmı üzerinden yapılabilir.",
+      "C": "Kopyanın şüpheliye verildiği husus tutanağa geçirilmez, soruşturma kaydına işlenir.",
+      "D": "Yedekleme, bilgisayar ağları ve çıkarılabilir donanımlar hakkında da uygulanır.",
+      "E": "Yedekten kâğıt ortamında çıktı alınarak şüpheliye veya vekiline verilir."
+    },
+    "dogru": "D",
+    "aciklama": "Bilgisayar veya bilgisayar kütüklerine el koyma işlemi sırasında sistemdeki BÜTÜN verilerin yedeklemesi yapılır ve 17 nci maddenin üçüncü fıkrası bu işlemin BİLGİSAYAR AĞLARI, diğer UZAK bilgisayar kütükleri ile ÇIKARILABİLİR DONANIMLAR hakkında da uygulanacağını açıkça söyler. Yedeklemenin kapsamını seçime bırakan şık aynı fıkrayı bozar: el koyma sırasında yedek, verilerin bir kısmı üzerinden değil TAMAMI üzerinden alınır. 'Tamamının veya bir kısmının' ifadesi maddenin son fıkrasına aittir ve el KOYMAKSIZIN alınan kopyayı düzenler; iki hükmün birbirine karıştırılması sorunun ilk tuzağıdır. Öteki üç şık dördüncü fıkrayı bozar. Alınan yedekten ELEKTRONİK ORTAMDA bir kopya çıkarılarak şüpheliye veya vekiline verilir; bu verme bir talep şartına bağlanmamıştır ve husus TUTANAĞA geçirilerek imza altına alınır. 'Talep hâlinde' kaydı, adlî arama sonunda ilgiliye verilen belge için öngörülmüştür; oradan buraya taşındığında şık yanlış olur. Kâğıt çıktısı da elektronik kopya kuralının yerine geçmez. Maddenin ikinci fıkrasına göre şifrenin çözülememesi veya gizlenmiş bilgilere ulaşılamaması hâlinde cihazlara el konulabilir; çözüm ve kopyalama tamamlanınca cihazlar gecikme olmaksızın iade edilir. Maddenin birinci fıkrası ise Danıştay İDDK'nın 23/1/2025 tarihli kararıyla yürütmesi durdurulan fıkradır; soru o fıkraya dayanmaz.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 17/3-4",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p2-04",
+    "articleNo": "21",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’nde özel güvenlik görevlilerinin yetkileri sayılırken kimlik sorma yetkisi, aşağıdakilerin hangisinde AÇIKÇA öngörülmüştür?",
+    "siklar": {
+      "A": "Koruma ve güvenliğini sağladıkları alanlara girmek isteyenler bakımından",
+      "B": "Yangın, deprem gibi tabiî afet durumlarında girdikleri işyeri ve konutlarda",
+      "C": "Umuma açık istirahat ve eğlence yerlerinin genel güvenlik denetiminde",
+      "D": "Yerleşim yerlerinin giriş ve çıkışlarında yapılan önleme amaçlı kontrollerde",
+      "E": "Konser ve sahne gösterisi gibi etkinlikler ile cenaze ve düğün törenlerinde"
+    },
+    "dogru": "E",
+    "aciklama": "Özel güvenlik görevlilerinin yetkileri 21 inci maddede dört bent hâlinde sayılmıştır ve KİMLİK SORMA bunlardan yalnız İKİSİNDE geçer: toplantı, konser, spor müsabakası, sahne gösterileri ve benzeri ETKİNLİKLER ile CENAZE VE DÜĞÜN TÖRENLERİ; bir de hava meydanı, liman, gar, istasyon ve terminal gibi TOPLU ULAŞIM TESİSLERİ. Sorunun asıl tuzağı ilk benttir. Koruma ve güvenliğini sağladıkları alanlara girmek isteyenler bakımından madde duyarlı kapıdan geçirme, üstlerini dedektörle kontrol etme ve eşyaları X-ray veya benzeri güvenlik sistemlerinden geçirme yetkilerini sayar; kimlik sorma bu bentte YER ALMAZ. Afet ve imdat hâline ilişkin bent ise görev alanındaki işyeri ve konutlara GİRME yetkisidir, kimlik sormayla ilgisi yoktur. Umuma açık istirahat ve eğlence yerlerinin denetimi 18 inci maddede kolluğun kendiliğinden yapabileceği denetimler arasında, yerleşim yerlerinin giriş ve çıkışları ise 19 uncu maddede önleme aramasının yapılabileceği yerler arasında sayılır; ikisi de özel güvenlik görevlisinin yetki listesine ait değildir. Kısacası özel güvenlik için kimlik sorma, etkinlik ve toplu ulaşım bağlamına bağlanmış bir yetkidir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 21",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "arama-p2-05",
+    "articleNo": "22",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, kolluk kuvvetlerinin dernek ve eklentilerine girebilmesi, burada arama yapabilmesi ve eşyaya el koyabilmesi için gereken hâkim kararının ya da gecikmesinde sakınca bulunan hâllerdeki yazılı emrin, Yönetmelikte AÇIKÇA sayılan hangi nedenlerden birine bağlı olması gerekir?",
+    "siklar": {
+      "A": "Millî güvenliğin veya genel ahlâkın korunması",
+      "B": "Kamu düzeninin korunması veya suç işlenmesinin önlenmesi",
+      "C": "Genel sağlığın veya başkalarının hak ve hürriyetlerinin korunması",
+      "D": "Taşınması veya bulundurulması yasak silâh ya da patlayıcının tespiti",
+      "E": "Suçun iz, eser, emare ve delillerinin elde edilmesi"
+    },
+    "dogru": "B",
+    "aciklama": "Derneklerde arama 22 nci maddede ayrı ve DAR bir nedene bağlanmıştır: kolluk kuvvetleri, KAMU DÜZENİNİN KORUNMASI veya SUÇ İŞLENMESİNİN ÖNLENMESİ nedenlerinden birine bağlı olarak usulüne göre verilmiş hâkim kararı ya da yine bu nedenlere bağlı olarak gecikmesinde sakınca bulunan hâllerde mülkî âmirin yazılı emri olmadıkça dernek ve eklentilerine giremez, arama yapamaz ve buradaki eşyaya el koyamaz. Çeldiricilerin kaynağı önleme aramasının genel amaç listesidir. Millî güvenlik, genel sağlık, genel ahlâk, başkalarının hak ve hürriyetlerinin korunması ile taşınması veya bulundurulması yasak silâh, patlayıcı madde veya eşyanın tespiti 19 uncu maddede önleme aramasının amaçları olarak sayılır; dernekler için ise madde bu listeden yalnız kamu düzeni ile suç önlemeyi almıştır. Suçun iz, eser, emare ve delillerinin elde edilmesi ise adlî aramanın tanımına aittir ve bu maddenin nedenleri arasında yoktur. Maddeye göre hâkim kararı, mülkî âmir tarafından dernek yöneticilerine YAZIYLA duyurulur.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 22/1",
+    "zorluk": "medium",
+    "tur": "kavram"
+  },
+  {
+    "id": "arama-p2-06",
+    "articleNo": "19",
+    "kok": "Adlî ve Önleme Aramaları Yönetmeliği’ne göre, spor müsabakalarıyla bağlantılı aramalar hakkında aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Seyirci, spor alanına alındıktan sonra tribün girişlerinde güvenlik güçlerince kontrol edilir.",
+      "B": "Turnike girişinde seyircinin beraberindeki eşyanın aranması, üst araması izninden ayrı bir karar gerektirir.",
+      "C": "Önleme araması, müsabakanın yapılacağı yere gidiş ve geliş güzergâhında da yapılabilir.",
+      "D": "Spor alanının çevresinde önleme araması, müsabaka sona erdikten sonra yapılamaz.",
+      "E": "Spor müsabakası için önleme araması kararı, kolluğun doğrudan hâkime başvurusu üzerine verilir."
+    },
+    "dogru": "C",
+    "aciklama": "Spor müsabakalarıyla bağlantılı önleme aramasının yer ve zaman bakımından kapsamını 19 uncu madde belirler. Önleme aramasının yapılabileceği yerleri sayan bu madde, 6222 sayılı Kanunun 12 nci maddesi kapsamında spor müsabakasının ÖNCESİNDE, ESNASINDA ve SONRASINDA, spor alanının ÇEVRESİNDE ve müsabakanın yapılacağı yere GİDİŞ VE GELİŞ GÜZERGÂHINDA önleme araması yapılabileceğini söyler. Yetki ne stadyumun çevresiyle sınırlıdır ne de müsabakanın bitişiyle sona erer; müsabaka sonrasını dışarıda bırakan şık bu yüzden yanlıştır. 23 üncü madde ise sıralamayı koyar: seyirci spor alanına, güvenlik güçlerince gerçekleştirilecek KONTROLDEN SONRA alınır; içeri alındıktan sonra yapılan kontrol bu kuralı tersine çevirir. Turnike girişindeki üst araması da 28 inci maddedeki genel usule tâbidir: üst araması sırasında kişinin BERABERİNDEKİ EŞYA da, mümkünse elektromanyetik cihazlarla, değilse beş duyu organı aracılığıyla aranır; eşya için ayrı bir karar aranmaz. Karar sürecinde ise kolluk hâkime doğrudan başvurmaz. Tehlikenin oluştuğunu gösteren belirlemeleri, önerdiği yer ve zamanla birlikte gerekçeleriyle o yerin MÜLKÎ ÂMİRİNE yazılı olarak iletir; talebi uygun bulan yetkili merci hâkimden arama kararı ister, gecikmesinde sakınca bulunan hâllerde ise yazılı arama emri verir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 19/2-i",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "arama-p2-07",
+    "articleNo": "28",
+    "kok": "Kolluk, bir kişinin kanunlara göre izin verilmeyecek bir şey taşıdığına ilişkin makul şüphe bulunduğunu ve aramanın amacına başka türlü ulaşılamayacağını değerlendirerek giysiler çıkartılmak suretiyle üst araması yapmaya karar vermiştir. Adlî ve Önleme Aramaları Yönetmeliği’ne göre bu aramanın yapılışıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Önce bedenin alt kısmındaki giysiler, bunlar giyildikten sonra da üst kısmındaki giysiler çıkarttırılır.",
+      "B": "Arama, ilgilinin rızası bulunması hâlinde karşı cinsten görevlilerce de yapılabilir.",
+      "C": "Arama, bedene dokunularak yapılan el ile kontrol biçiminde yürütülür.",
+      "D": "Giysiler çıkartılarak yapılan üst araması gece vakti yapılamaz.",
+      "E": "Aramanın gerekçesi ve nasıl yapılacağı, ilgiliye önceden birimin en üst kolluk âmirince bildirilir."
+    },
+    "dogru": "E",
+    "aciklama": "Giysiler çıkartılarak yapılan üst araması 28 inci maddede istisnai bir tedbir olarak düzenlenmiştir; ancak kişinin kanunlara göre izin verilmeyecek bir şeyi taşıdığına ilişkin makul şüphe bulunması ve aramanın amacına başka türlü ulaşılamaması hâlinde başvurulabilir. Arama yapılmadan ÖNCE, bu aramanın neden gerekli görüldüğü ve nasıl yapılacağı O BİRİMDE GÖREVLİ EN ÜST KOLLUK ÂMİRİ tarafından ilgiliye bildirilir. Arama AYNI CİNSİYETTEN görevlilerce ve kimsenin görmemesini sağlayacak tedbirler alınarak yapılır; metin bu kurala ilgilinin rızasına bağlı bir istisna tanımaz. Utanma duygusunu en az ihlâl etmek için ÖNCE bedenin ÜST kısmındaki giysiler çıkarttırılır, alt kısımdakiler ise üst giysiler yeniden giyildikten sonra çıkarttırılır; sıranın tersine çevrilmesi şıklardaki tuzaktır. Arama sırasında bedene DOKUNULMAMASI için özen gösterilir ve arama mümkün olduğunca kısa sürede bitirilir; bedene dokunarak el ile yapılan kontrol bu aramanın biçimi değildir. Maddenin son fıkrasına göre bu işlemler GECE DE yapılabilir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 28/9",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "arama-p2-08",
+    "articleNo": "29",
+    "kok": "Sahil güvenlik görevlileri, denizde durdurdukları şüpheli bir deniz aracında usulüne uygun karara dayanarak arama yapacaktır; ancak dalga ve rüzgâr, aramanın denizde yapılmasına imkân vermemektedir. Adlî ve Önleme Aramaları Yönetmeliği’nin bu durum için öngördüğü çözüm aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Deniz aracı en yakın ve uygun limana çekilerek arama limanda yapılabilir.",
+      "B": "Deniz aracı bağlama limanına çekilerek arama orada yapılır.",
+      "C": "Arama, deniz şartları elverişli hâle gelinceye kadar ertelenir ve araç denizde gözetim altında tutulur.",
+      "D": "Deniz aracının limana çekilebilmesi için Cumhuriyet savcısından ayrıca yazılı emir alınır.",
+      "E": "Arama, kaptanın rızası alınarak deniz aracının acentesinin bulunduğu limanda yapılır."
+    },
+    "dogru": "A",
+    "aciklama": "Deniz araçlarında aramanın yeri, 29 uncu maddede araç aramasına ilişkin genel kuraldan ayrılarak düzenlenmiştir. Araç araması kural olarak aracın ilk durdurulduğu yerde veya o yerin yakınında, mümkün olduğu kadar başkalarının göremeyeceği tarzda yapılır; detaylı inceleme gereken hâllerde araç başka yere götürülerek de aranabilir. Deniz aracı için madde ayrıca şunu söyler: DENİZ ŞARTLARI sebebiyle aramanın denizde mümkün olmaması veya deniz aracının AYRINTILI aranmasının gerektiği hâllerde şüpheli deniz aracı EN YAKIN VE UYGUN LİMANA çekilerek arama limanda yapılabilir. Hüküm aramanın ertelenmesini öngörmez ve limana çekme için savcılıktan ayrı bir emir aramaz. Aracın kayıtlı olduğu liman ya da acentesinin bulunduğu liman da ölçü değildir; ölçü yakınlık ve uygunluktur. Sık karıştırılan komşu kural üst ve eşya aramasıdır: 28 inci maddeye göre üst ve eşya araması başka yere götürülerek YAPILAMAZ, gerektiğinde kolluk aracından veya yakındaki kapalı bir yerden yararlanılır. Araçta ve deniz aracında ise yer değiştirmeye açıkça izin verilmiştir.",
+    "dayanak": "Adli ve Önleme Aramaları Yönetmeliği md 29/5",
+    "zorluk": "easy",
+    "tur": "vaka"
+  }
+]

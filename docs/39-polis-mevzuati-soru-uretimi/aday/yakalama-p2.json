@@ -1,0 +1,172 @@
+[
+  {
+    "id": "yakalama-p2-01",
+    "articleNo": "10",
+    "kok": "Kadın bir şüpheli gözaltına alınarak gözaltı birimine getirilmiştir; nöbetteki ekipte kadın kolluk görevlisi bulunmamaktadır. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre şüphelinin gözaltı birimindeki güvenlik araması bakımından aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Arama, bu amaçla görevlendirilecek başka bir kadın tarafından yapılır",
+      "B": "Arama, erkek bir görevli tarafından iki tanık hazır bulundurularak yapılır",
+      "C": "Arama yapılmaksızın şüpheli, gözetim altında nezarethaneye konulur",
+      "D": "Arama, Cumhuriyet savcısının yazılı emriyle erkek görevlice yapılır",
+      "E": "Arama, sağlık kuruluşunda kadın bir hekim tarafından yapılır"
+    },
+    "dogru": "A",
+    "aciklama": "Gözaltı birimine getirilen kişi, nezarethaneye ya da zorunlu hâllerde bu amaca tahsis edilen yerlere konulmadan önce usulünce aranır. Kadının üst veya vücudunun aranmasında Yönetmelik, aramayı yapacak kişinin CİNSİYETİNİ bağlayıcı bir şart olarak koymuştur: arama bir kadın görevli veya BU AMAÇLA GÖREVLENDİRİLECEK DİĞER BİR KADIN tarafından yapılır. Nöbetteki ekipte kadın görevli bulunmaması şartı ortadan kaldırmaz; çözüm, aramayı erkek görevliye bırakmak değil, aramayı yapmak üzere başka bir kadını görevlendirmektir. Aramadan vazgeçmek de bir seçenek değildir, çünkü arama nezarethaneye konulmanın ön şartıdır. Cumhuriyet savcısının emri ya da tanık bulundurulması, erkek görevlinin kadını aramasını meşrulaştıran bir istisna olarak metinde yer almaz. En sık karıştırılan komşu hüküm sağlık kontrolüdür: orada kadının muayenesinin kadın hekim tarafından yapılması KADININ TALEBİNE ve OLANAKLARIN ELVERMESİNE bağlanmıştır. Arama hükmünde ise ne talep aranır ne de bir olanak kaydı vardır; kural doğrudan uygulanır ve arama bir sağlık işlemi değildir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 10/a",
+    "zorluk": "easy",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p2-02",
+    "articleNo": "10",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, gözaltı birimine getirilen kişi hakkında uygulanan güvenlik araması ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Kişinin kemer ve kravatı, kendisi talep ederse muhafazaya alınır",
+      "B": "Üzerinden çıkan eşya ve para, tutanakla Cumhuriyet başsavcılığına teslim edilir",
+      "C": "Paranın nev'i, seri numarası ve miktarını gösteren tutanak düzenlenir",
+      "D": "Eşya için düzenlenen tutanakta markası değil, cinsi ve adedi gösterilir",
+      "E": "Düzenlenen tutanağın sureti kişiye verilmez, nezarethane defterine eklenir"
+    },
+    "dogru": "C",
+    "aciklama": "Üç bentten oluşan güvenlik araması hükmü, aramanın kendisinden çok SONRASINI düzenler. Kişinin üzerinden çıkan eşya ve para MUHAFAZA ALTINA ALINIR ve bunlar için bir tutanak düzenlenir; tutanağın içeriği metinde ayrıntılı olarak sayılmıştır. Para bakımından NEV'İ, SERİ NUMARASI VE MİKTARI, eşya bakımından ise VASIFLARI VE MARKASI yazılır; tutanakta yalnız tutarın ya da eşyanın cinsinin gösterilmesi bu sayımı karşılamaz. Tutanağın bir sureti ÜSTÜ ARANAN KİŞİYE verilir; suretin kişiye verilmediğini söyleyen şık hükmün son cümlesiyle doğrudan çelişir. Eşya ve paranın Cumhuriyet başsavcılığına teslimi de metinde öngörülmemiştir. Gözaltından çıkışı düzenleyen hüküm bunun tersini söyler: emanete alınan şahsî eşya ve para EKSİKSİZ OLARAK İLGİLİSİNE teslim edilir ve girişte tanzim edilen güvenlik araması tutanağına şerh düşülerek kendisine imzalatılır. Hükmün orta bendi ise talebe bağlı değildir: kişi, KENDİSİNE ZARAR VEREBİLECEK kemer, kravat, ip, kesici ve delici alet gibi nesnelerden arındırılır; metin bu işlemi kişinin isteğine bırakmaz. Bu arama, yakalama sırasında kişinin kaçmasını, kendisine veya başkalarına zarar vermesini önlemek için yapılan kaba üst aramasıyla da karıştırılmamalıdır; güvenlik araması gözaltı birimine getirilen kişi hakkında uygulanır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 10/b-c; md 17/6",
+    "zorluk": "hard",
+    "tur": "ayrinti"
+  },
+  {
+    "id": "yakalama-p2-03",
+    "articleNo": "16",
+    "kok": "Kovuşturma evresinde mahkemece hakkında yakalama emri verilen bir sanık, davanın görüldüğü yerden uzak bir ilde yakalanmıştır ve yirmi dört saat içinde yetkili mahkeme önüne çıkarılması mümkün görünmemektedir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre sanık hakkında nasıl işlem yapılır?",
+    "siklar": {
+      "A": "Yakalandığı yerdeki kolluk âmirinin kararıyla serbest bırakılır",
+      "B": "Cumhuriyet savcısının yazılı emriyle gözaltısı bir gün uzatılır",
+      "C": "Yetkili mahkemeye ulaştırılıncaya kadar nezarethanede tutulur",
+      "D": "Yakalandığı yerdeki asliye ceza mahkemesince tutuklanır",
+      "E": "Aynı süre içinde en yakın sulh ceza hâkimi önüne çıkarılır"
+    },
+    "dogru": "E",
+    "aciklama": "Hâkim veya mahkeme tarafından verilen yakalama emri üzerine yakalanan kişi için Yönetmelik iki kademeli bir güvence kurar. Asıl kural, kişinin en geç YİRMİ DÖRT SAAT içinde YETKİLİ hâkim veya mahkeme önüne çıkarılmasıdır. Bu mümkün değilse süre uzamaz; kişi AYNI SÜRE İÇİNDE en yakın sulh ceza hâkimi önüne çıkarılır. Sulh ceza hâkimi kişiyi serbest bırakmazsa, yetkili hâkim veya mahkemeye en kısa zamanda gönderilmek üzere tutuklanır. Hüküm soruşturma evresiyle sınırlı değildir; KOVUŞTURMA evresinde yakalanan sanık için de aynen uygulanır. Tuzak, bu durumu soruşturmayı tamamlamak için yürütülen gözaltıya benzetmektir: yakalama emri üzerine yakalanan kişi için Yönetmeliğin öngördüğü yol, kişinin hâkim önüne çıkarılmasıdır, gözaltı süresinin uzatılması değildir. Toplu suçlarda Cumhuriyet savcısının yazılı emriyle yapılan uzatma, soruşturma evresindeki şüpheliye ilişkin ayrı bir rejimdir ve mahkemenin yakalama emriyle yakalanan sanığa taşınamaz. Kişiyi yetkili mahkemeye ulaştırılıncaya kadar nezarethanede bekletmek ise yirmi dört saatlik sınırı anlamsız kılar. Makam da ayrıca önemlidir: kişinin önüne çıkarılacağı merci asliye ceza mahkemesi değil sulh ceza hâkimidir; kolluk âmirine ise mahkemenin yakalama emriyle yakalanan kişiyi serbest bırakma yetkisi tanınmamıştır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 16",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p2-04",
+    "articleNo": "17",
+    "kok": "Gözaltına alınan bir şüphelinin ifadesi alınmış ve kolluktaki işlemlerinin tamamı gözaltının dokuzuncu saatinde bitirilmiştir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre kolluk bu aşamada nasıl hareket eder?",
+    "siklar": {
+      "A": "Gözaltı süresi azamî olduğundan şüpheliyi sürenin sonuna kadar tutar",
+      "B": "Sevk için sulh ceza hâkiminin onayını alıncaya kadar şüpheliyi bekletir",
+      "C": "Sevki, ertesi günün mesai başlangıcına kadar erteler",
+      "D": "Gözaltı süresinin dolmasını beklemeden başsavcılığa derhâl sevk eder",
+      "E": "Şüpheliyi kendi kararıyla serbest bırakıp başsavcılığa bilgi verir"
+    },
+    "dogru": "D",
+    "aciklama": "Kolluk bakımından gözaltı süresi bir hak değil, bir ÜST SINIRDIR. Yönetmelik bunu açıkça söyler: gözaltı süreleri AZAMÎ sürelerdir ve gözaltına alınan kişilerin işlemlerinin EN KISA SÜREDE bitirilmesi esastır. Bu ilkenin somut sonucu sevk kuralıdır; işlemleri bitirilen kişi, gözaltı süresinin dolması beklenmeksizin kolluk kuvvetince ilgili Cumhuriyet başsavcılığına DERHÂL sevk edilir. Olayda işlemler dokuzuncu saatte tamamlandığına göre kalan süre kolluğun kullanabileceği bir kredi değildir; kişinin sürenin sonuna kadar nezarethanede tutulması, dayanağı kalmamış bir özgürlük kısıtlamasına dönüşür. En yaygın hata 'azamî' kelimesini ters okumaktır: azamî süre, o sürenin sonuna kadar beklenebileceğini değil, o süreyi AŞMANIN mümkün olmadığını anlatır. Sevk için ayrıca bir hâkim onayı aranmaz; sevkin bir sonraki mesai başlangıcına ertelenmesi de öngörülmemiştir, çünkü 'derhâl' ifadesi bekleme payı bırakmaz. Kolluğun kendi kararıyla serbest bırakma yapması ise ayrı bir hatadır: salıverme, gözaltına alınmayı gerektirecek bir nedenin tespit edilememesi veya yakalama sebebinin ortadan kalkması hâlinde, Cumhuriyet savcısının emri ile yapılır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 17/3-4",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p2-05",
+    "articleNo": "17",
+    "kok": "Gözaltı süresinin uzatılmasına ilişkin Cumhuriyet savcısının yazılı emrine karşı şüpheli hâkime başvurmuş; hâkim, şüphelinin ifadesi henüz alınmamışken serbest bırakılmasına karar vermiştir. Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre bu karar nasıl uygulanır?",
+    "siklar": {
+      "A": "Karar başsavcılığa derhâl iletilir, salıverme savcının onayına bağlıdır",
+      "B": "Karar derhâl uygulanır ve şüpheli gözaltından salıverilir",
+      "C": "Karar, savcının itiraz süresi geçtikten sonra uygulanır",
+      "D": "Karar, şüphelinin ifadesi alındıktan sonra uygulanır",
+      "E": "Karar, serbest bırakma tutanağı hâkimce onaylanınca uygulanır"
+    },
+    "dogru": "B",
+    "aciklama": "Hâkime başvuru yolu, yakalama, gözaltına alma veya gözaltı süresinin uzatılmasına ilişkin Cumhuriyet savcısı emrini HÂKİM DENETİMİNE açar; yakalanan kişi bu yola bizzat başvurabilir. Denetimin sonucu bekletilmez: savcının emrine karşı hâkime yapılan başvuru üzerine verilen serbest bırakma kararı DERHÂL UYGULANIR. Uygulama; savcının onayına, bir itiraz süresinin geçmesine, bir tutanağın onaylanmasına ya da kolluktaki işlemlerin tamamlanmasına bağlanmamıştır. Olayda ifadenin henüz alınmamış olması da sonucu değiştirmez; işlemleri tamamlamak gerekçesiyle kişi hâkim kararına rağmen alıkonulamaz. En güçlü tuzak, bu hâli kolluğun salıverme yaptığı öteki hâlle karıştırmaktır. Gözaltına alınmasını gerektirecek bir nedenin tespit edilememesi veya yakalama sebebinin ortadan kalkması hâlinde kişi CUMHURİYET SAVCISININ EMRİ İLE salıverilir; hâkim kararında ise Yönetmelik böyle bir ara adım öngörmez, çünkü denetlenen işlem zaten savcının emridir. Sevk veya serbest bırakma işlemi ve sebebi ayrıca Sevk/Serbest Bırakma Tutanağına bağlanır; ancak bu tutanak işlemin kaydıdır, kararın uygulanmasını bir hâkim onayına bağlayan bir aşama değildir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 17/5; md 15; md 17/1, 17/7",
+    "zorluk": "easy",
+    "tur": "vaka"
+  },
+  {
+    "id": "yakalama-p2-06",
+    "articleNo": "25",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, şüpheli sayısının çokluğu sebebiyle nezarethane imkânlarının yetersiz olması durumunda nezarethane dışındaki yerlerin kullanılabilmesi aşağıdakilerden hangisine bağlıdır?",
+    "siklar": {
+      "A": "Yerin, mülkî amirin onayıyla bu amaca tahsis edilmiş olmasına",
+      "B": "Yerin, nezarethane için öngörülen fizikî şartları taşımasına",
+      "C": "Kullanım için Cumhuriyet savcısının yazılı izninin alınmasına",
+      "D": "Yerin, kolluk biriminin hizmet binası içinde bulunmasına",
+      "E": "Kullanım için sulh ceza hâkiminin karar vermiş olmasına"
+    },
+    "dogru": "B",
+    "aciklama": "Nezarethane standartları Yönetmelikte asgarî ölçülerle tanımlanmıştır ve bu ölçüler şüpheli sayısı arttığında gevşemez. Hüküm, nezarethane imkânlarının şüpheli sayısının çokluğu sebebiyle yetersiz kalması durumunu açıkça düzenler: bu hâlde nezarethaneler için ÖNGÖRÜLEN FİZİKÎ ŞARTLARA SAHİP başka yerler de kullanılabilir. Yani Yönetmelik esneklik tanır, ama bu esnekliğin ölçütü YERİN NİTELİĞİDİR, bir makamın izni değil. Mülkî amirin onayı, Cumhuriyet savcısının yazılı izni ya da hâkim kararı, fizikî şartları taşımayan bir yeri nezarethaneye dönüştürmez; yerin kolluk binası içinde bulunması da tek başına bir ölçüt değildir. Adayın düştüğü tuzak, zorunluluk hâlinde standartların askıya alındığını sanmaktır; metin yetersizlik hâlinde bile kullanılacak yerin nezarethane şartlarını taşımasını arar. Kural, nezarethanede kişilerin nasıl bulundurulacağına ilişkin hükümlerle birlikte okunmalıdır: gözaltına alınanların yatmaları ve oturmaları için yeteri kadar sabit ve dayanıklı oturma yerleri bulundurulur, geceyi gözaltında geçirecekler için mevsim ve yerin maddî şartları dikkate alınarak yeterli battaniye ve yatak temin edilir. Mevcut nezarethanelerin standartlara uygun hâle getirilmesi ise bütçe imkânları çerçevesinde sağlanır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 25/1",
+    "zorluk": "medium",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p2-07",
+    "articleNo": "25",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, ifade alma odası olarak kullanılmasına özen gösterilen yerlerin nitelikleri arasında aşağıdakilerden hangisi SAYILMAMIŞTIR?",
+    "siklar": {
+      "A": "İç ve dış emniyeti sağlanmış bir yer olması",
+      "B": "Özel surette hazırlanmış bir yer olması",
+      "C": "Teknik donanıma sahip bir yer olması",
+      "D": "Bağımsız nitelikte bir yer olması",
+      "E": "Doğal ışıklandırması yeterli bir yer olması"
+    },
+    "dogru": "E",
+    "aciklama": "Aynı madde iki farklı mekânı iki farklı ölçüyle düzenler ve soru bu iki listenin birbirine karıştırılmasını ölçer. İfade alma odası için Yönetmelik dört nitelik sayar: İÇ VE DIŞ EMNİYETİ SAĞLANMIŞ, ÖZEL SURETTE HAZIRLANMIŞ, TEKNİK DONANIMLI ve BAĞIMSIZ yerlerin ifade alma odası olarak kullanılmasına özen gösterilir. Yeterli doğal ışıklandırma ve havalandırma ise ifade alma odasının değil NEZARETHANENİN şartıdır; nezarethanelerin taban alanı, yüksekliği ve duvarlar arası mesafesine ilişkin asgarî ölçülerin hemen ardından düzenlenmiştir. İki liste arasındaki fark mekânların işlevinden gelir: nezarethane kişinin saatlerce, çoğu zaman geceyi de geçirerek tutulduğu yer olduğundan yaşam koşulları öne çıkar; ifade alma odasında ise işlemin güvenliği, teknik kaydı ve bağımsızlığı esastır. Hükmün dili de dikkat ister: ifade alma odası nitelikleri 'özen gösterilir' kalıbıyla, yani nezarethane ölçüleri gibi kesin bir asgarî şart olarak değil, ulaşılması beklenen bir standart olarak kurulmuştur. Nezarethane girişine onaylanmış nezarethane talimatının asılması da ifade alma odasına değil nezarethaneye ilişkin bir yükümlülüktür.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 25/1, 25/6",
+    "zorluk": "hard",
+    "tur": "kavram"
+  },
+  {
+    "id": "yakalama-p2-08",
+    "articleNo": "26",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, Cumhuriyet başsavcıları veya görevlendirecekleri Cumhuriyet savcılarınca adlî görevlerinin gereği olarak gözaltı yerlerinde yapılan denetimle ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Denetim, gözaltı yerlerinin fizikî durumuyla sınırlı olup gözaltına alınma neden ve süreleri bu denetimin kapsamı dışındadır.\nII. Denetimin sonucu, Nezarethaneye Alınanların Kaydına Ait Deftere kaydedilir.\nIII. Yetkili ve görevli diğer mercilerin mevzuatta öngörülen denetim yetkileri saklıdır.",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "D",
+    "aciklama": "Nezarethane ve ifade alma odaları üzerinde Yönetmelik İKİ AYRI denetim kurar. Birincisi, standartlara uygunluğu sağlamak amacıyla kolluk kuvvetlerinin yetkili birimlerince yapılan denetimdir. İkincisi soruda sorulan ADLÎ denetimdir: Cumhuriyet başsavcıları veya görevlendirecekleri Cumhuriyet savcıları, adlî görevlerinin gereği olarak gözaltına alınan kişilerin bulundurulacakları nezarethaneleri, varsa ifade alma odalarını, bu kişilerin durumlarını, GÖZALTINA ALINMA NEDEN VE SÜRELERİNİ ve gözaltına alınma ile ilgili tüm kayıt ve işlemleri denetler. Bu nedenle I yanlıştır; savcı denetimi mekânın fizikî durumunu aşar ve gözaltının hukuka uygunluğunu da kapsar. II doğrudur: denetimin sonucu ayrı bir rapora değil, NEZARETHANEYE ALINANLARIN KAYDINA AİT DEFTERE kaydedilir; böylece gözaltı kayıtları ile bu kayıtların denetimi aynı belgede izlenebilir. III de doğrudur: yetkili ve görevli mercilerin mevzuatta öngörülen denetim yetkileri SAKLIDIR, yani savcı denetimi diğer denetimlerin yerine geçmez, onlarla birlikte yürür. Tuzak, fizikî denetim ile adlî denetimi aynı şey sanmak ya da savcı denetiminin bulunduğu yerde başka merciin denetleyemeyeceği yönünde bir öncelik ilişkisi kurmaktır.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 26",
+    "zorluk": "hard",
+    "tur": "onerme"
+  },
+  {
+    "id": "yakalama-p2-09",
+    "articleNo": "28",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, yer gösterme işlemi tutanağını işlemde hazır bulunan ilgililerden birinin imzalamaktan kaçınması hâlinde ne yapılır?",
+    "siklar": {
+      "A": "İmzadan kaçınmanın nedenleri yer gösterme tutanağına geçirilir",
+      "B": "Tutanak, iki tanığın imzasıyla tamamlanarak geçerlilik kazanır",
+      "C": "Yer gösterme işlemi müdafi huzurunda yeniden yaptırılır",
+      "D": "Tutanak düzenlenmemiş sayılır ve işlem ifade tutanağına işlenir",
+      "E": "Kaçınan ilgilinin imzası yerine müdafiin imzası alınır"
+    },
+    "dogru": "A",
+    "aciklama": "Yer gösterme tutanağı, işlemin sonradan tartışılmasını önleyen bir ispat belgesidir ve Yönetmelik bu belgenin içeriğini ayrıntılı biçimde düzenler. Tutanak işlemin yapıldığı yeri, zamanı ve işleme katılan veya ilgisi bulunan kimselerin isimlerini içerir; müdafi veya vekil sıfatıyla hazır bulunulan işlemlerde avukatın isim ve imzasına da yer verilir. İşlemde hazır bulunan ilgililerce onanmak üzere tutanağın kendilerini ilgilendiren kısımları okunur veya okumaları için kendilerine verilir; bu husus tutanağa yazılarak ilgililere imza ettirilir. İmzadan kaçınma tutanağı geçersiz kılmaz; bu hâlde yapılacak şey KAÇINMANIN NEDENLERİNİ TUTANAĞA GEÇİRMEKTİR. Tuzak, tutanağın geçerliliğini tanık imzasına ya da işlemin tekrarına bağlamaktır; Yönetmelik yer göstermede imzanın yerine geçecek bir tanık imzası öngörmez. Müdafiin imzası da kaçınan ilgilinin imzasının yerine geçmez; müdafi tutanağı kendi sıfatıyla imzalar.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 28",
+    "zorluk": "easy",
+    "tur": "dogrudan"
+  },
+  {
+    "id": "yakalama-p2-10",
+    "articleNo": "31",
+    "kok": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği'ne göre, Yönetmelikle kolluk kuvvetine verilen görevleri yerine getirecek personelin eğitimi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Eğitime katılacak personelin psiko-teknik testten geçirilmiş olması zorunludur",
+      "B": "Eğitimde başarı gösteremeyen personel hakkında disiplin hükümleri uygulanır",
+      "C": "Tekerrür ve tazeleme eğitimlerine katılan personele ayrıca sertifika verilmez",
+      "D": "Eğitimi bitirenlere verilecek sertifikanın şekli Adalet Bakanlığınca belirlenir",
+      "E": "Adalet Bakanlığı temsilcilerinin eğitime katılması öngörülmemiştir"
+    },
+    "dogru": "C",
+    "aciklama": "Personelin eğitimi hükmü; eğitime katılabilecek personeli, sertifikayı, başarısızlığın sonucunu ve özel eğitimleri ayrı ayrı düzenler, soru da bu ayrıntıları ölçer. Eğitimi başarı ile bitiren personele sertifika verilir; ancak TEKERRÜR VE TAZELEME gibi özel eğitimlere iştirak ettirilen personele AYRICA SERTİFİKA VERİLMEZ. Tuzak, her eğitimin sonunda yeni bir belge düzenlendiğini varsaymaktır. Sertifikanın şekli ve ebadı Adalet Bakanlığınca değil, ilgisine göre Jandarma Genel Komutanlığı, Emniyet Genel Müdürlüğü, Gümrük Müsteşarlığı ya da Sahil Güvenlik Komutanlığının EĞİTİM BİRİMLERİNCE belirlenir. Eğitime katılabilecek personel tecrübeli, suçluluk psikolojisinden anlayan, sabırlı, soğukkanlı ve kavrama kabiliyeti yüksek personel olarak tarif edilir; psiko-teknik testten geçirilmiş olmak bu sayımda TERCİHAN kaydıyla yer alır, yani zorunlu tutulmamıştır. Eğitimde başarı gösteremeyen personel hakkında disiplin hükümleri değil, HİZMET İÇİ EĞİTİM YÖNERGELERİNİN ilgili hükümleri uygulanır. Adalet Bakanlığı temsilcileri de ilgili personelin eğitimine katılabilir; bu katılım metinde açıkça öngörülmüştür. Hükmü önceleyen madde ise eğitimi bir ön şart olarak koyar: Yönetmelikle kolluk kuvvetine verilen görevleri yerine getiren personelin eğitim görmüş olması gerekir.",
+    "dayanak": "Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği md 31; md 30",
+    "zorluk": "medium",
+    "tur": "ayrinti"
+  }
+]

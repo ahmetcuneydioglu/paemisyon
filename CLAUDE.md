@@ -39,10 +39,15 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
 - Koç kuralları SUNUCUDA yaşar (`/me/coach`); istemciler kural bilmez.
 - Soru bankasının varlık nedeni "gerçek, kaynaklı çıkmış soru" güvenidir:
   AI soru üretimi yapılmaz; her sorunun kaynağı bankada KAYITLIDIR.
-  **İSTİSNA (9 Eyl 2026, Doc 39; 10 Eyl 2026'da genişletildi):** beş polis
-  mevzuatı kanununda (3201, 7068, 5901, 5682, 2911) ve EGM Kurum İçi Bireysel
-  Performans Değerlendirme Yönetmeliğinde resmî madde metninden TÜRETİLMİŞ soru
-  üretilebilir. Şartı:
+  **İSTİSNA (9 Eyl 2026, Doc 39; 10 ve 11 Eyl 2026'da genişletildi):** şu polis
+  mevzuatında resmî madde metninden TÜRETİLMİŞ soru üretilebilir: 3201, 7068,
+  5901, 5682, 2911, 2918 (Karayolları Trafik), 5395 (Çocuk Koruma), 6136
+  (Ateşli Silahlar ve Bıçaklar ile Diğer Aletler) ve 5326 (Kabahatler) sayılı
+  kanunlar; EGM Kurum İçi Bireysel Performans Değerlendirme Yönetmeliği;
+  Yakalama, Gözaltına Alma ve İfade Alma Yönetmeliği; Adli ve Önleme Aramaları
+  Yönetmeliği. (2918, 5395 ve son iki yönetmelik 11 Eyl 2026'da fiilen
+  eklendi, 23 Eyl 2026'da kullanıcı onayıyla metne işlendi; 6136 ve 5326
+  24 Eyl 2026'da kullanıcı onayıyla eklendi.) Şartı:
   soru ayırt edici bir `sourceLabel` taşır ("Mevzuat türetimi — <kanun> md <no>")
   ve doğrudan yayına ÇIKMAZ, `in_review`'a düşer; yayın kararı insanındır.
   Bu istisna yalnız yukarıda sayılan mevzuatla sınırlıdır.
@@ -53,6 +58,15 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   tutarlı BÜTÜN dünyalar sayılarak kanıtlanmış olmalı; kurgu hiçbir hukuk normu
   öğretmemeli (nötr kurgu — nöbet, tim, kanal); soru "AI üretimi" ön ekli bir
   `sourceLabel` taşımalı ve `in_review`'a düşmeli. Yayın kararı insanındır.
+  **İSTİSNA (23 Eyl 2026):** "Matematik ve Sayısal Mantık" konusunda sentetik
+  soru üretilebilir. Gerekçe Analitik Akıl Yürütme istisnasıyla aynıdır: kaynak
+  metin yoktur, güven KANITA dayanır. Şartı: doğru cevap bir betikle
+  HESAPLANMALI ve beş şıktan yalnız birinin bu değeri karşıladığı betikle
+  gösterilmeli (çözüm elle değil programla doğrulanır); soru yalnız metinle
+  (gerekirse metin içinde tabloyla) ifade edilebilmeli — şekil, çizim ya da
+  grafik görseli gerektiren tipler bu istisnaya girmez; kurgu hiçbir hukuk
+  normu öğretmemeli; soru "AI üretimi" ön ekli bir `sourceLabel` taşımalı ve
+  `in_review`'a düşmeli. Yayın kararı insanındır.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

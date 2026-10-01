@@ -1,0 +1,36 @@
+[
+  {
+    "id": "3201-p9-01",
+    "articleNo": "Ek 10",
+    "kok": "Aşağıda, adında \"polis\" sözcüğü geçen bir dergi çıkarmak isteyen kişi ve kuruluşlar sıralanmıştır. 3201 sayılı Emniyet Teşkilat Kanunu'na göre bunlardan hangisi bu dergiyi yayımlayabilir?",
+    "siklar": {
+      "A": "Görevdeki emniyet mensuplarının kurucusu olduğu bir vakıf",
+      "B": "Polis emeklilerinin ortak olduğu bir ticaret şirketi",
+      "C": "Dergiyi kendi adına çıkaran emekli bir polis memuru",
+      "D": "Polis emeklilerince kurulmuş bir sosyal dayanışma derneği",
+      "E": "Emniyet Genel Müdürlüğünden yazılı izin almış bir yayınevi"
+    },
+    "dogru": "D",
+    "aciklama": "Ek 10 uncu madde yasağı \"Polis emeklilerince kurulan derneklerin yayınları dışında\" kaydıyla başlatır ve muhatabını \"diğer gerçek veya tüzel kişiler\" olarak belirler. Bu istisnanın İKİ unsuru birlikte aranır: yayını çıkaran bir DERNEK olmalı ve bu dernek POLİS EMEKLİLERİNCE KURULMUŞ olmalıdır. Seçeneklerden yalnız D bu iki unsuru birlikte taşır. Sorunun asıl tuzağı istisnayı emekliliğe, yani KİŞİYE bağlı sanmaktır. Emekli bir polis, dernek çatısı olmaksızın dergiyi kendi adına çıkardığında \"diğer gerçek kişiler\" arasına girer (C); emeklilerin ortak olduğu ticaret şirketi de dernek olmadığı için \"diğer tüzel kişiler\" kapsamında kalır (B). A şıkkı Ek 11 inci maddeyle karıştırmaya dayanır: teşkilat mensuplarının vakıf kurucusu olabilmesi orada ayrı bir izin rejimine bağlanmıştır. O rejim vakfın KURULUŞUNA ilişkindir; kurulmuş vakıf ise Ek 10 bakımından \"diğer tüzel kişiler\" arasındadır ve yayın yasağından muaf değildir. E şıkkındaki idari izin ise maddede hiç öngörülmemiştir; Ek 10 hiçbir makama bu yasağı kaldırma yetkisi tanımaz. İki maddenin ekseni birbirinden farklıdır: Ek 11, GÖREVDEKİ mensupların dernek ve vakıflarla ilişkisini düzenleyen bir ÖRGÜTLENME hükmüdür; Ek 10 ise emeklilerin kurduğu derneklerin YAYINLARINI yasağın dışında tutan bir YAYIN hükmüdür. Birindeki izin ya da serbesti ötekine taşınmaz.",
+    "dayanak": "3201 sayılı Kanun md Ek 10",
+    "zorluk": "medium",
+    "tur": "vaka"
+  },
+  {
+    "id": "3201-p9-02",
+    "articleNo": "Ek 10",
+    "kok": "I. Adında \"polis\" sözcüğü geçen bir kitap yayımlanamaz.\nII. Resmî kıyafet üstüne takılan polis yıldızı, el ilanlarında sembol olarak kullanılamaz.\nIII. Bir şirket, \"emniyet\" sözcüğünün sonuna ek getirilerek oluşturulan bir adla gazete çıkarabilir.\n\n3201 sayılı Emniyet Teşkilat Kanunu'nun ek 10 uncu maddesine göre yukarıdaki ifadelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "dogru": "B",
+    "aciklama": "Maddede birbirinden bağımsız İKİ yasak vardır ve konuları farklıdır. Birincisi AD yasağıdır: \"polis\" veya \"emniyet\" adları, bunlarla eş anlama gelen adlar ve bu sözcüklerin BAŞ VE SONLARINA GETİRİLEN EKLERLE oluşturulan adlar kullanılarak DERGİ VE GAZETE yayımlanamaz. III bu yüzden yanlıştır: ekle türetilmiş ad yasağın dışında değildir, metinde AÇIKÇA sayılmıştır. İkincisi SEMBOL yasağıdır: emniyet hizmetleri sınıfı kıyafet yönetmeliğinde belirtilen ve resmî kıyafet üstüne takılan polis yıldızı; dergilerde, DUVAR VE EL İLANLARI ile diğer HER TÜRLÜ BASILILARDA sembol olarak kullanılamaz. II bu hükmün doğrudan uygulamasıdır. Sorunun tuzağı I. öncüldedir: geniş \"her türlü basılı\" listesi yıldız yasağına aittir, ad yasağının konusu ise dergi ve gazete ile sınırlıdır. Kitap dergi ya da gazete olmadığından adında \"polis\" sözcüğünün geçmesi bu maddeye aykırılık oluşturmaz; aynı kitabın kapağında polis yıldızı sembol olarak kullanılsaydı ise ikinci yasak devreye girerdi. İki yasağın kapsamını birbirine taşıyan aday ya I'i doğru sayar ya da yıldız yasağını dergilerle sınırlı sanıp II'yi eler.",
+    "dayanak": "3201 sayılı Kanun md Ek 10",
+    "zorluk": "hard",
+    "tur": "onerme"
+  }
+]

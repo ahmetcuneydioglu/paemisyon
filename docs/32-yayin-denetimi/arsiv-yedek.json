@@ -1,44 +1,220 @@
 [
  {
-  "sinif": "eskime",
-  "gerekce": "AYM 5/11/2024 E.2024/66 K.2024/188 karariyla CMK m.250/12'deki 'sagir ve dilsizlik' ibaresi iptal edildi; karar 10/3/2025 Resmi Gazete'de yayimlandi ve dokuz ay sonra, 10/12/2025'te yururluge girdi. D sikki ('Yas kuculugu ve akil hastaligi ile sagir ve dilsizlik hallerinde uygulanmaz') bugun YANLIS; kokte istenen tek yanlis ifade C oldugu halde D de yanlis hale geldi, soru iki dogru cevapli. Ayrica banka kendi icinde CELISIYORDU: 301ab1ef ve 06d95467 (ikisi de yayinda) iptal sonrasi durumu dogru ogretiyor, bu soru tersini soyluyor. Hic cevaplanmamis ve hicbir sinava bagli degil.",
+  "sinif": "bozuk",
+  "gerekce": "CMK 150 (soru 88b4187d, 'zorunlu mudafilik hallerinden biri DEGILDIR'): B sikki 'supheli veya sanigin sagir VEYA dilsiz olmasi' diyor; kanun 150/2 'sagir VE dilsiz'. Ayni Kanun md 234/2 magdur icin bilincli olarak 'sagir veya dilsiz' der — fark kapsami degistiriyor: yalniz sagir ya da yalniz dilsiz supheli 150/2'ye girmez, B de savunulabilir (cift cevap). Aciklama yalniz kaynak kitaba unite/sayfa atfi, kural ogretmiyor. Bankada lafza uygun ikiz soru var (10320c31). Iki bagimsiz curutucu ONAY. 7593 kaynakli degil.",
   "arsivlenen": {
-   "id": "b0ec805b-e38a-494c-abd1-10bf81175e63",
-   "questionId": "99cec670-f685-44df-9e12-3b8251692171",
-   "stem": "5271 sayılı CMK'ya göre seri muhakeme usulüyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
-   "explanation": "Seri muhakeme usulünde yaptırım uygulanması, GÜVENLİK TEDBİRLERİNE İLİŞKİN HÜKÜMLERİN UYGULANMASINA ENGEL DEĞİLDİR (Ceza Muhakemesinde Seri Muhakeme Yönetmeliği m.5/9); bu nedenle C yanlıştır. Seri muhakeme, Cumhuriyet savcısının yürüttüğü soruşturma sonunda bazı suçlarda kamu davasının açılmasının ertelenmesine karar verilmediği takdirde, şüphelinin MÜDAFİİ HUZURUNDA bu usulü kabul etmesi şartıyla, savcının suçun cezasına yarı oranında indirim uygulayarak belirlediği yaptırımın mahkemece denetlenerek hüküm kurulması usulüdür. m.250/12 uyarınca bu usul yaş küçüklüğü, akıl hastalığı ile sağır ve dilsizlik hâllerinde ve kapsama girmeyen bir suçla birlikte işlenme hâlinde uygulanmaz; iştirak hâlinde ise tüm şüphelilerin kabulü gerekir. Önödeme ve uzlaştırma kapsamındaki suçlar da seri muhakemeye tâbi değildir.",
-   "sourceLabel": "2022 ADLİ HÂKİMLİK SINAVI",
+   "id": "9f4b8ade-ec59-4553-9c36-6b936d5e4921",
+   "questionId": "88b4187d-3c19-43be-946d-d679ae07b080",
+   "stem": "Aşağıdakilerden hangisi CMK m. 150’de ifade edilen zorunlu müdafilik hâllerinden biri değildir?",
+   "explanation": "Ünite No:5 Sayfa No:14 Paragraf No:2 Açıklama:Sorunun doğru cevabı D seçeneği olarak güncellenmiştir.",
+   "sourceLabel": null,
    "options": [
     {
      "label": "A",
-     "text": "Soruşturma evresi sonunda Kanun'da sayılan suçlarla ilgili kamu davasının açılmasının ertelenmesine karar verilmediği takdirde uygulanır.",
+     "text": "Şüpheli veya sanığın on sekiz yaşını doldurmamış olması",
      "isCorrect": false
     },
     {
      "label": "B",
-     "text": "Suçun iştirak hâlinde işlenmesi durumunda şüphelilerden biri bu usulü kabul etmezse diğerleri hakkında da uygulanmaz.",
+     "text": "Şüpheli veya sanığın sağır veya dilsiz olması",
      "isCorrect": false
     },
     {
      "label": "C",
-     "text": "Bu usul kapsamında yaptırım uygulanması hâlinde ayrıca güvenlik tedbirine hükmolunmaz.",
-     "isCorrect": true
-    },
-    {
-     "label": "D",
-     "text": "Yaş küçüklüğü ve akıl hastalığı ile sağır ve dilsizlik hâllerinde uygulanmaz.",
+     "text": "Şüpheli veya sanığın kendisini savunamayacak derecede malul olması",
      "isCorrect": false
     },
     {
+     "label": "D",
+     "text": "Şüpheli veya sanığın müdafi seçebilecek maddi olanaktan yoksun olması",
+     "isCorrect": true
+    },
+    {
      "label": "E",
-     "text": "Bu usul kapsamına giren bir suçun, kapsama girmeyen başka bir suçla birlikte işlenmiş olması hâlinde uygulanmaz.",
+     "text": "İşlenen suçun alt sınırının beş yıldan fazla hapis cezasını gerektirmesi",
      "isCorrect": false
     }
    ],
    "question": {
-    "articleNo": "250",
+    "articleNo": "150",
     "topic": {
      "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "TCK 104 (soru dc9863af): kokte yas FAILE verilmis ('On yedi yasindaki Ahmet, ... kuzeni Burak ile'), dogru cevabi belirleyen MAGDURUN yasi yok. 104/1 magdurun 15-17 yasinda olmasina bagli; 15 alti TCK 103, 18+ suc yok. Aciklama kokte olmayan 'on bes yasini tamamlamis cocukla' varsayimina dayaniyor. Iki bagimsiz curutucu ONAY. 7593 kaynakli degil.",
+  "arsivlenen": {
+   "id": "1d44ce9f-8ae1-493d-aecc-9f58c5d9f65d",
+   "questionId": "dc9863af-8e73-40d5-98de-13d585bf667b",
+   "stem": "On yedi yaşındaki Ahmet, rızasını aldığı kuzeni Burak ile cinsel ilişkiye girmiştir. Ahmet hakkında soruşturma ve kovuşturma hangi usule tabidir?",
+   "explanation": "On beş yaşını tamamlamış çocukla cebir, tehdit ve hile olmaksızın cinsel ilişki TCK md. 104/1 kapsamındadır ve ŞİKÂYETE BAĞLIDIR. Kuzenler arasında evlenme yasağı bulunmadığından md. 104/2 uygulanmaz.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Reşit olmayanla cinsel ilişkinin temel şekli yönünden şikâyet üzerine yürütülür",
+     "isCorrect": true
+    },
+    {
+     "label": "B",
+     "text": "Reşit olmayanla cinsel ilişkinin nitelikli şekli yönünden şikâyet üzerine yürütülür",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Reşit olmayanla cinsel ilişkinin temel şekli yönünden resen yürütülür",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Çocukların cinsel istismarının temel şekli yönünden resen yürütülür",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Nitelikli cinsel saldırı yönünden resen yürütülür",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "104",
+    "topic": {
+     "name": "Türk Ceza Kanunu"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
+  "gerekce": "CMK 253/3 (soru 2b45b402, 'hangisi dogrudur'): isaretli D (253/4) dogru, ancak B ('kapsama girmeyen bir baska sucla birlikte islenmis olmasi durumunda da uzlastirma hukumleri uygulanabilir') de bugun DOGRU. B, 5918 (2009) tarihli mutlak yasagin olumsuzu olarak yazilmis; 7188 s.K. md 26 (17/10/2019) yasagi 'birlikte AYNI MAGDURA karsi' islenme haline daraltti, 7571 (2025) onodemelik sucla birlesmede de uzlasmayi acti. Aciklamanin kendi TUZAK cumlesi bunu kabul ediyor. Uc bagimsiz curutucu oybirligiyle cift cevap dedi. Kusur 7593 kaynakli degil, 2019'dan beri var.",
+  "arsivlenen": {
+   "id": "dcf3d91b-596d-4668-892a-43799e79831b",
+   "questionId": "2b45b402-360b-409a-ad15-ff80250e6191",
+   "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmayla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "explanation": "DAYANAK: CMK m.253/4, uzlaştırmaya gidilebilmesi için iki koşul arar: suçun uzlaşmaya TABİ olması ve KAMU DAVASI AÇILMASI İÇİN YETERLİ ŞÜPHENİN bulunması. Delil durumu iddianame düzenlemeye elverişli değilse dosya uzlaştırma bürosuna gönderilmez; bu yüzden D doğrudur. ÇELDİRİCİLER: (A) m.253/3, şikâyete bağlı olsa bile cinsel dokunulmazlığa karşı suçlarda, ısrarlı takip ve hakaret suçunda uzlaştırmayı YASAKLAR; (B) aynı fıkranın ek cümlesi kapsam dışı bir suçla birlikte AYNI MAĞDURA karşı işlenme hâlinde uzlaşma hükümlerini kapatır; (C) \"etkin pişmanlık hükümlerine yer verilen suçlar\" ibaresi 6763 sayılı Kanunla metinden ÇIKARILMIŞTIR, artık engel değildir; (E) m.253/7 mağdurların HEPSİNİN kabulünü arar, bir kısmı yetmez. TUZAK: (B)'deki yasak yalnız \"aynı mağdura karşı\" işlenme hâline özgüdür.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Cinsel dokunulmazlığa karşı suçlarda uzlaştırma yoluna gidilebilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Uzlaştırma kapsamına giren bir suçun, bu kapsama girmeyen bir başka suçla birlikte işlenmiş olması durumunda da uzlaştırma hükümleri uygulanabilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Etkin pişmanlık hükümlerine yer verilen suçlarda uzlaştırma yoluna gidilemez.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Uzlaştırma yoluna başvurabilmek için kamu davası açılması için yeterli şüphenin bulunması gerekir.",
+     "isCorrect": true
+    },
+    {
+     "label": "E",
+     "text": "Birden fazla kişinin mağduriyetine veya zarar görmesine neden olan bir suçtan dolayı uzlaştırma yoluna gidilebilmesi için mağdur veya suçtan zarar görenlerin bir kısmının uzlaştırmayı kabul etmesi yeterlidir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "253",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "CMK 253/19 (soru 7909166d): E sikki ('uzlastirmanin saglanmasi durumunda tazminat davasi acilamaz; acilmis davadan feragat edilmis sayilir') YANLIS diye isaretli, aciklama AYM 26/7/2023 E.2023/43 K.2023/141 iptalini gunumuz hukuku diye ogretiyor. Oysa 7531 s.K. md 16 (7/11/2024) kurali 'uzlasma aninda tespit edilemeyen veya sonradan ortaya cikan zararlar haric' kaydiyla YENIDEN getirdi; guncel 253/19 bu cumleyi iceriyor. E bugun genel kurali dogru ifade ediyor, A-D de dogru: soruda yanlis ifade kalmadi, anahtar dayanaksiz. Kusur 7593 kaynakli degil, 7531'den beri var; tam tur taramasinda ortaya cikti.",
+  "arsivlenen": {
+   "id": "bcec17f7-bde1-4622-8093-cf8abe535a8d",
+   "questionId": "7909166d-bb49-4f31-bb46-c17b27485c08",
+   "stem": "5271 sayılı Ceza Muhakemesi Yasası'na göre uzlaştırmanın sonuçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "explanation": "Uzlaştırmanın sağlanması, mağdurun özel hukuk yollarını tümüyle kapatmaz. CMK m.253/19'un son cümlesi, uzlaşmanın sağlanması hâlinde soruşturma konusu suç nedeniyle TAZMİNAT DAVASI AÇILAMAYACAĞINI ve açılmış davadan feragat edilmiş sayılacağını öngörmekteydi; ancak bu düzenleme Anayasa Mahkemesinin 26/7/2023 tarihli kararıyla İPTAL EDİLMİŞTİR. Dolayısıyla bugün uzlaşma, tazminat davası açma hakkını kendiliğinden ortadan kaldırmaz ve ilgili ifade yürürlükteki hukuku yansıtmaz. Diğer ifadeler geçerlidir: edim defaten yerine getirilirse kovuşturmaya yer olmadığı kararı verilir; edim ileri tarihe bırakılmış, taksite bağlanmış veya süreklilik gösteriyorsa kamu davasının açılmasının ertelenmesine karar verilir ve gerekler yerine getirilmezse kasıtlı suç işlenmesi koşulu aranmaksızın dava açılır; uzlaştırma raporu veya belgesi İcra ve İflas Kanunu m.38 anlamında ilam niteliğinde belge sayılır.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Uzlaştırma sonucunda şüphelinin edimini bir defada (defaten) yerine getirmesi durumunda, hakkında kovuşturmaya yer olmadığı kararı verilir.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Edimin yerine getirilmesinin ileri tarihe bırakılması, takside bağlanması veya süreklilik göstermesi durumunda, kovuşturmaya yer olmadığı kararı verilemez.",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Edimin yerine getirilmesinin takside bağlanması nedeniyle kamu davasının açılmasının ertelenmesi kararından sonra, uzlaştırmanın gereklerinin yerine getirilmemesi durumunda, erteleme süresi içinde kasıtlı bir suç işlenmesi koşulu aranmaksızın kamu davası açılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Şüphelinin, edimini yerine getirmemesi durumunda uzlaştırma raporu veya belgesi, İcra ve İflas Yasası'nın 38. maddesinde yazılı ilam niteliğinde belgelerden sayılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Uzlaştırmanın sağlanması durumunda, soruşturma konusu suç nedeniyle tazminat davası açılamaz; açılmış olan davadan feragat edilmiş sayılır.",
+     "isCorrect": true
+    }
+   ],
+   "question": {
+    "articleNo": "253",
+    "topic": {
+     "name": "5271 Sayılı Ceza Muhakemesi Kanunu (CMK)"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "eskime",
+  "gerekce": "PVSK Ek 7 (soru 80f4b7bb): 7590 s.K. (24/7/2026) telekomunikasyon islemleri ve CMK 135 dinlemelerinin yurutuldugu tek merkezi 'Bilgi Teknolojileri ve Iletisim Kurumu' bunyesinden 'Siber Guvenlik Baskanligi' bunyesine aldi. Isaretli dogru cevap C (BTK) bugun yanlis; yeni dogru cevap siklarda yok, soru cevapsiz kaldi. Bu bir GOREV DEVRI (BTK ayri kurum olarak suruyor, 5395 md 5/A iki kurumu yan yana sayiyor), ad degisikligi degil — ad/unvan istisnasiyla sik duzeltilemez.",
+  "arsivlenen": {
+   "id": "87575b23-b2a6-4db8-98ad-5e8b983af9c8",
+   "questionId": "80f4b7bb-e5ea-47b5-8ba6-5487465b730e",
+   "stem": "2559 sayılı Polis Vazife ve Salâhiyet Kanunu'na göre, Ek 7 nci madde kapsamındaki telekomünikasyon yoluyla yapılan iletişime ilişkin işlemler hangi kurum bünyesindeki tek bir merkezden yürütülür?",
+   "explanation": "PVSK Ek m.7'ye göre bu maddede belirtilen telekomünikasyon yoluyla yapılan iletişime ilişkin işlemler ile CMK m.135 kapsamında yapılacak dinlemeler, Bilgi Teknolojileri ve İletişim Kurumu bünyesinde tek bir merkezden yürütülür. Kararları yerine getiren birim (EGM İstihbarat Dairesi görevlileri) ile işlemlerin yürütüldüğü tek merkez birbirine karıştırılmamalıdır.",
+   "sourceLabel": "Özgün soru · PVSK Ek m.7",
+   "options": [
+    {
+     "label": "A",
+     "text": "Emniyet Genel Müdürlüğü İstihbarat Dairesi Başkanlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "Millî İstihbarat Teşkilatı",
+     "isCorrect": false
+    },
+    {
+     "label": "C",
+     "text": "Bilgi Teknolojileri ve İletişim Kurumu",
+     "isCorrect": true
+    },
+    {
+     "label": "D",
+     "text": "İçişleri Bakanlığı",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Adalet Bakanlığı",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": "Ek 7",
+    "topic": {
+     "name": "2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK)"
     }
    }
   }

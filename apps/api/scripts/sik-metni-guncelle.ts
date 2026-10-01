@@ -1,5 +1,5 @@
 /**
- * Bir sürümün TEK şıkkındaki ya da AÇIKLAMASINDAKİ bir ibareyi günceller.
+ * Bir sürümün TEK şıkkındaki, AÇIKLAMASINDAKİ ya da KÖKÜNDEKİ bir ibareyi günceller.
  *
  * Dar bir iş için dar bir araç: mevzuat bir kurumun/unvanın ADINI değiştirdiği
  * için şıkta bugün var olmayan bir ibare kalmışsa, o ibareyi yenisiyle
@@ -17,9 +17,10 @@
  *
  * Şık düzeltilirken AÇIKLAMA da unutulmamalı: açıklama çoğu zaman şıkkın
  * anlattığı kuralı tekrar eder ve yalnız şıkkı düzeltmek soruyu yarı yanlış
- * bırakır. Bu yüzden `<şık>` yerine `ACIKLAMA` yazılabiliyor.
+ * bırakır. Bu yüzden `<şık>` yerine `ACIKLAMA` yazılabiliyor; kanunla değişen bir terim
+ * kökte de geçiyorsa `KOK` (hash yeniden hesaplanır).
  *
- *   npx tsx scripts/sik-metni-guncelle.ts <versionId> <şık|ACIKLAMA> <eski> <yeni>
+ *   npx tsx scripts/sik-metni-guncelle.ts <versionId> <şık|ACIKLAMA|KOK> <eski> <yeni>
  *   GEREKCE="…" APPLY=1 … ile uygulanır
  */
 import { appendFileSync } from 'node:fs';
@@ -48,19 +49,21 @@ async function main() {
   });
   if (!s) throw new Error(`${versionId} bulunamadı`);
   const aciklamaKipi = sik === 'ACIKLAMA';
-  const o = aciklamaKipi ? null : s.options.find((x) => x.label === sik);
-  if (!aciklamaKipi && !o)
+  // KOK: kanunla adı değişen terim kökte de geçebilir (7593: "suça sürüklenen çocuk" → "adli süreçteki çocuk").
+  const kokKipi = sik === 'KOK';
+  const o = aciklamaKipi || kokKipi ? null : s.options.find((x) => x.label === sik);
+  if (!aciklamaKipi && !kokKipi && !o)
     throw new Error(`${sik} şıkkı yok (var olanlar: ${s.options.map((x) => x.label).join(', ')})`);
-  const kaynakMetin = aciklamaKipi ? (s.explanation ?? '') : o!.text;
+  const kaynakMetin = aciklamaKipi ? (s.explanation ?? '') : kokKipi ? s.stem : o!.text;
 
   const kez = kaynakMetin.split(eski).length - 1;
   if (kez !== 1) throw new Error(`${sik} içinde aranan ibare ${kez} kez geçiyor, tek olmalı → ${JSON.stringify(eski)}`);
   const yeniMetin = kaynakMetin.replace(eski, yeni);
 
-  // Açıklama `contentHash`'e girmez (hash kök + şıklardır); şık değişmediyse
+  // Açıklama `contentHash`'e girmez (hash kök + şıklardır); şık ya da kök değişmediyse
   // hash de değişmez.
   const yeniSiklar = s.options.map((x) => (o && x.id === o.id ? yeniMetin : x.text));
-  const yeniHash = questionFingerprint(s.stem, yeniSiklar);
+  const yeniHash = questionFingerprint(kokKipi ? yeniMetin : s.stem, yeniSiklar);
 
   console.log(`sürüm ${s.id} · durum=${s.status}${s.question.deletedAt ? ' · SİLİNMİŞ' : ''}`);
   console.log(`kök : ${s.stem.replace(/\s+/g, ' ').slice(0, 100)}`);
@@ -72,6 +75,8 @@ async function main() {
   await prisma.$transaction(async (tx) => {
     if (aciklamaKipi) {
       await tx.questionVersion.update({ where: { id: s.id }, data: { explanation: yeniMetin } });
+    } else if (kokKipi) {
+      await tx.questionVersion.update({ where: { id: s.id }, data: { stem: yeniMetin, contentHash: yeniHash } });
     } else {
       await tx.questionOption.update({ where: { id: o!.id }, data: { text: yeniMetin } });
       await tx.questionVersion.update({ where: { id: s.id }, data: { contentHash: yeniHash } });

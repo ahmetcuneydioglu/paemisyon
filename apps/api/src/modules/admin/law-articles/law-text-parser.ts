@@ -174,11 +174,16 @@ export function parseLawText(raw: string): ParsedArticle[] {
   return out.filter((a) => a.text.length > 0);
 }
 
-/** Deterministik madde sırası: sayısal *100 + harf eki; Ek/Geçici bloğu sona. */
+/**
+ * Deterministik madde sırası: sayısal *100 + harf eki; Ek/Geçici bloğu sona.
+ * Harf ekleri Latin sırasıyla gider (41/A…41/H, 41/İ); resmî metin dokuzuncu harfi
+ * Türkçe büyük "İ" ile yazıyor (5395 md 41/İ) — I sayılır, yoksa harfsiz md 41 ile çakışır.
+ */
 export function articleSortKey(no: string): number {
-  const m = /^(Ek|Geçici)?\s*(\d+)(?:\/([A-Z]))?/i.exec(no.trim());
+  const m = /^(Ek|Geçici)?\s*(\d+)(?:\/([A-Zİ]))?/i.exec(no.trim());
   if (!m) return 9_000_000;
-  const base = parseInt(m[2], 10) * 100 + (m[3] ? m[3].toUpperCase().charCodeAt(0) - 64 : 0);
+  const harf = m[3] === 'İ' ? 'I' : m[3]?.toUpperCase();
+  const base = parseInt(m[2], 10) * 100 + (harf ? harf.charCodeAt(0) - 64 : 0);
   const prefix = (m[1] ?? '').toLocaleLowerCase('tr');
   if (prefix === 'ek') return 1_000_000 + base;
   if (prefix === 'geçici') return 2_000_000 + base;
