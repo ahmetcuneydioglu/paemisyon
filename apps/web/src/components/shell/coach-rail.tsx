@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { api } from "@/lib/api";
-import type { ActiveSession, CoachBrief } from "@/lib/public-api";
+import { activeSessionHref, type ActiveSession, type CoachBrief } from "@/lib/public-api";
 import { webRoute } from "@/lib/routes";
 import { Card } from "@/components/ui/card";
 import { GoalProgress } from "@/components/ui/goal-progress";
@@ -27,7 +27,7 @@ export async function CoachRail() {
           {/* Devam eden tur pili (Doc 25 §7 emniyet 3) — her L2 sayfasında görünür */}
           {active?.resumable && (
             <Link
-              href={`/seans?resume=${active.sessionId}${active.scopeName ? `&scope=${encodeURIComponent(active.scopeName)}` : ""}`}
+              href={activeSessionHref(active)}
               className="tk-interactive flex items-center justify-between gap-2 rounded-full border border-warning/50 bg-warning/10 px-3 py-1.5 text-[12px] font-bold text-ink hover:border-warning"
             >
               <span className="tabular min-w-0 truncate">

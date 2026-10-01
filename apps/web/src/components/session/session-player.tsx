@@ -64,6 +64,8 @@ interface CompleteResponse {
 export interface SessionScope {
   topicId?: string;
   courseId?: string;
+  /** Seçili mevzuat turu (1 Eki 2026): kullanıcının işaretlediği konular. */
+  topicIds?: string[];
   articleNo?: string;
   /** 'review' = yanlış tekrarı · 'favorites' = favori reçetesi; varsayılan practice. */
   mode?: "practice" | "review" | "favorites";
@@ -188,6 +190,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         ...(isFav ? { fromBookmarks: true } : {}),
         ...(scope.topicId ? { topicId: scope.topicId } : {}),
         ...(scope.courseId ? { courseId: scope.courseId } : {}),
+        ...(scope.topicIds ? { topicIds: scope.topicIds } : {}),
         ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
         questionCount: scope.questionCount ?? 10,
       },
@@ -417,15 +420,22 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
 
   if (phase.kind === "error") {
     const isLimit = phase.code === "DAILY_LIMIT_REACHED";
+    // Premium kapısı (Doc 8): seçili mevzuat/konu premium'a aitse sunucu reddeder;
+    // burada suçlayıcı değil yönlendirici dil + Premium köprüsü.
+    const isPremium = phase.code === "PREMIUM_REQUIRED";
     return (
       <FocusFrame label={scope.label ?? "Koç turu"}>
         <div className="mx-auto max-w-md py-16 text-center">
           {/* Limit duvarı — Doc 25 akış H: "koç seni durdurmak istemiyor" çerçevesi */}
           <p className="text-3xl" aria-hidden>
-            {isLimit ? "🎯" : "⚠️"}
+            {isLimit ? "🎯" : isPremium ? "🔒" : "⚠️"}
           </p>
           <h1 className="mt-3 font-heading text-lg font-bold text-ink">
-            {isLimit ? "Bugünlük antrenman doldu" : "Bir sorun çıktı"}
+            {isLimit
+              ? "Bugünlük antrenman doldu"
+              : isPremium
+                ? "Bu kapsam Premium'a ait"
+                : "Bir sorun çıktı"}
           </h1>
           <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
             {isLimit
@@ -433,10 +443,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
               : phase.message}
           </p>
           <div className="mt-6 flex justify-center gap-3">
-            <ButtonLink href="/bugun" variant={isLimit ? "secondary" : "primary"}>
+            <ButtonLink href="/bugun" variant={isLimit || isPremium ? "secondary" : "primary"}>
               Bugün&apos;e dön
             </ButtonLink>
-            {isLimit && <ButtonLink href="/premium">Premium&apos;u incele</ButtonLink>}
+            {(isLimit || isPremium) && (
+              <ButtonLink href="/premium">Premium&apos;u incele</ButtonLink>
+            )}
           </div>
         </div>
       </FocusFrame>
@@ -455,6 +467,13 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         scopeLabel={scope.label}
         isReview={scope.mode === "review"}
         articles={[...seenArticles.values()]}
+        repeatHref={
+          scope.topicIds && scope.topicIds.length > 0
+            ? `/seans?topicIds=${scope.topicIds.join(",")}&count=${
+                scope.questionCount ?? 15
+              }&scope=${encodeURIComponent(scope.label ?? "Seçili mevzuat")}`
+            : undefined
+        }
       />
     );
   }
@@ -905,11 +924,14 @@ function SessionResult({
   scopeLabel,
   isReview,
   articles,
+  repeatHref,
 }: {
   result: CompleteResponse;
   scopeLabel?: string;
   isReview: boolean;
   articles: { lawSlug: string; no: string; slug: string }[];
+  /** Aynı kapsamla taze tur adresi (seçili mevzuat); yoksa düğme çıkmaz. */
+  repeatHref?: string;
 }) {
   const router = useRouter();
   const pct =
@@ -977,6 +999,17 @@ function SessionResult({
             >
               Yeni tur
             </Button>
+            {/* Seçili mevzuat turu: aynı kanun seçimiyle taze tur (seçim URL'de yaşar;
+                `n` nonce'u remount'u tetikler). */}
+            {repeatHref && (
+              <Button
+                variant="secondary"
+                size="lg"
+                onClick={() => router.push(`${repeatHref}&n=${Date.now()}`)}
+              >
+                Aynı seçimle yeni tur
+              </Button>
+            )}
           </div>
 
           {/* İlgili maddeleri oku (wireframe 09): bu turda geçen mevzuat maddeleri */}

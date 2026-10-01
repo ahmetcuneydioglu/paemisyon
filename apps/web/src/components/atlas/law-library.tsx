@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { MixedLawSessionCard } from "@/components/atlas/mixed-law-session-card";
+import { LawCardGrid } from "@/components/atlas/law-card";
+import { LawPicker } from "@/components/atlas/law-picker";
 import type { LawSummary } from "@/lib/public-api";
 
 /**
@@ -38,37 +38,13 @@ export function LawLibrary({ laws }: { laws: LawSummary[] }) {
                 <h2 className="font-heading text-lg font-bold text-ink">{course}</h2>
                 <span className="tk-caption shrink-0">{items.length} mevzuat</span>
               </div>
-              {isPoliceLaw && courseId && questionCount > 0 && (
-                <MixedLawSessionCard
-                  courseId={courseId}
-                  courseName={course}
-                  lawCount={items.length}
-                  questionCount={questionCount}
-                />
+              {/* Polis mevzuatı: karışık tur kartı + kanun seçerek çözme (1 Eki 2026).
+                  Seçici gezinme modunda aynı ızgarayı gösterir — anon/girişli ortak. */}
+              {isPoliceLaw && courseId && questionCount > 0 ? (
+                <LawPicker courseId={courseId} courseName={course} laws={items} />
+              ) : (
+                <LawCardGrid laws={items} />
               )}
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {items
-                  .sort((a, b) => b.questionCount - a.questionCount)
-                  .map((l) => (
-                    <Link
-                      key={l.slug}
-                      href={`/kanun/${l.slug}`}
-                      className="tk-interactive rounded-md border border-line bg-surface p-4 text-ink hover:border-brand hover:shadow-card"
-                    >
-                      <p className="mb-1 text-sm font-medium">{l.name}</p>
-                      <p className="text-xs text-ink-soft">
-                        {l.questionCount > 0 ? `${l.questionCount} çıkmış soru · ` : ""}
-                        {l.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(" · ") ||
-                          "müfredat konusu"}
-                      </p>
-                      {l.readable && (
-                        <span className="mt-2 inline-block rounded bg-brand/10 px-1.5 py-0.5 text-[11px] font-medium text-brand">
-                          📖 Tam metin
-                        </span>
-                      )}
-                    </Link>
-                  ))}
-              </div>
             </section>
           );
         })}

@@ -1,4 +1,4 @@
-import { BadRequestException } from '@nestjs/common';
+import { BadRequestException, ForbiddenException, NotFoundException } from '@nestjs/common';
 import { QuizService } from './quiz.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 
@@ -475,5 +475,162 @@ describe('QuizService.startPersonalExam — freemium kapısı', () => {
 
     expect(r.questions).toHaveLength(25);
     expect(prisma.plan.findUnique).toHaveBeenCalledWith({ where: { key: 'free' } });
+  });
+});
+
+// ── Seçili mevzuat turu (1 Eki 2026): tek konu ile tüm ders arasındaki kapsam ──
+
+const KONU_A = '00000000-0000-0000-0000-0000000000a1';
+const KONU_B = '00000000-0000-0000-0000-0000000000a2';
+const KONU_C = '00000000-0000-0000-0000-0000000000a3';
+
+function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
+  const konular = [KONU_A, KONU_B, KONU_C].map((id) => ({
+    id,
+    isPremium: id === opts.premiumKonu,
+  }));
+  // Havuz dengesiz: A'da 30, B'de 6, C'de 2 soru — dengeli seçim A'nın turu
+  // ele geçirmesini önlemeli.
+  const havuz = [
+    ...Array.from({ length: 30 }, (_, i) => ({
+      id: `a-${i}`,
+      topicId: KONU_A,
+      currentVersionId: `va-${i}`,
+    })),
+    ...Array.from({ length: 6 }, (_, i) => ({
+      id: `b-${i}`,
+      topicId: KONU_B,
+      currentVersionId: `vb-${i}`,
+    })),
+    ...Array.from({ length: 2 }, (_, i) => ({
+      id: `c-${i}`,
+      topicId: KONU_C,
+      currentVersionId: `vc-${i}`,
+    })),
+  ];
+  const prisma = {
+    topic: {
+      findMany: jest
+        .fn()
+        .mockImplementation(({ where }: { where: { id: { in: string[] } } }) =>
+          Promise.resolve(
+            konular.filter(
+              (k) => where.id.in.includes(k.id) && !(opts.eksikKonu && k.id === KONU_C),
+            ),
+          ),
+        ),
+    },
+    question: {
+      findMany: jest
+        .fn()
+        .mockImplementation(({ where }: { where: { topicId: { in: string[] } } }) =>
+          Promise.resolve(havuz.filter((q) => where.topicId.in.includes(q.topicId))),
+        ),
+    },
+    quizAnswer: { groupBy: jest.fn().mockResolvedValue([]) },
+    questionVersion: {
+      findMany: jest.fn().mockImplementation(({ where }: { where: { id: { in: string[] } } }) =>
+        Promise.resolve(
+          where.id.in.map((id) => ({
+            id,
+            questionId: id.slice(1),
+            stem: 'Soru kökü',
+            mediaUrl: null,
+            options: [{ id: `o-${id}`, label: 'A', text: 'Şık' }],
+          })),
+        ),
+      ),
+    },
+    quizSession: {
+      create: jest
+        .fn()
+        .mockImplementation(({ data }: { data: Record<string, unknown> }) =>
+          Promise.resolve({ id: 'secili-oturum', mode: data.mode, ...data }),
+        ),
+    },
+    user: { findUnique: jest.fn() },
+  };
+  const service = new QuizService(
+    prisma as never,
+    {} as never,
+    {} as never,
+    { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
+  );
+  return { service, prisma, havuz };
+}
+
+describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
+  it('topicIds ile topicId/courseId birlikte verilemez', async () => {
+    const { service } = setupSecili();
+    await expect(
+      service.startSession(premiumUser, {
+        mode: 'practice',
+        topicIds: [KONU_A, KONU_B],
+        courseId: COURSE_ID,
+      }),
+    ).rejects.toBeInstanceOf(BadRequestException);
+    await expect(
+      service.startSession(premiumUser, {
+        mode: 'practice',
+        topicIds: [KONU_A, KONU_B],
+        topicId: KONU_A,
+      }),
+    ).rejects.toBeInstanceOf(BadRequestException);
+  });
+
+  it('yalnız alıştırma modunda açılır (deneme reddedilir)', async () => {
+    const { service } = setupSecili();
+    await expect(
+      service.startSession(premiumUser, { mode: 'exam', topicIds: [KONU_A, KONU_B] }),
+    ).rejects.toBeInstanceOf(BadRequestException);
+  });
+
+  it('tekrar eden kimlikler tekilleştirilir; tek konuya düşerse reddedilir', async () => {
+    const { service } = setupSecili();
+    await expect(
+      service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_A] }),
+    ).rejects.toBeInstanceOf(BadRequestException);
+  });
+
+  it('seçimde bulunmayan konu → NotFound', async () => {
+    const { service } = setupSecili({ eksikKonu: true });
+    await expect(
+      service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_C] }),
+    ).rejects.toBeInstanceOf(NotFoundException);
+  });
+
+  it('ücretsiz kullanıcı premium konu seçerse PREMIUM_REQUIRED (sessizce elenmez)', async () => {
+    const { service } = setupSecili({ premiumKonu: KONU_B });
+    await expect(
+      service.startSession(freeUser, { mode: 'practice', topicIds: [KONU_A, KONU_B] }),
+    ).rejects.toBeInstanceOf(ForbiddenException);
+  });
+
+  it('havuz yalnız seçilen konulardan kurulur ve konular arasında dengelenir', async () => {
+    const { service, prisma } = setupSecili();
+    const res = await service.startSession(premiumUser, {
+      mode: 'practice',
+      topicIds: [KONU_A, KONU_B, KONU_C],
+      questionCount: 12,
+    });
+    expect(res.questions).toHaveLength(12);
+    const secilen = prisma.quizSession.create.mock.calls[0][0].data as {
+      topicIds: string[];
+      topicId: string | null;
+      courseId: string | null;
+      questionOrder: string[];
+    };
+    expect(secilen.topicIds).toEqual([KONU_A, KONU_B, KONU_C]);
+    expect(secilen.topicId).toBeNull();
+    expect(secilen.courseId).toBeNull();
+    // Dengeli seçim: C'nin 2, B'nin 6 sorusu da tura girer; A her şeyi kaplayamaz.
+    const sayim = { a: 0, b: 0, c: 0 };
+    for (const v of secilen.questionOrder) sayim[v[1] as 'a' | 'b' | 'c']++;
+    expect(sayim.c).toBe(2);
+    expect(sayim.b).toBeGreaterThanOrEqual(4);
+    expect(sayim.a).toBeLessThan(12);
+    // Havuz sorgusu yalnız seçilen konuları istemiş olmalı (ders geneline sızma yok).
+    const where = prisma.question.findMany.mock.calls[0][0].where as { topicId: { in: string[] } };
+    expect(where.topicId.in).toEqual([KONU_A, KONU_B, KONU_C]);
   });
 });

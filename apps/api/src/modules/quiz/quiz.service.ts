@@ -56,11 +56,15 @@ export class QuizService {
   async startSession(user: AuthenticatedUser, dto: StartSessionDto) {
     const userId = user.id;
     const count = dto.questionCount ?? 10;
+    // Kullanıcının BİLİNÇLİ seçtiği kapsam: tek konu, tüm ders ya da seçili
+    // mevzuat listesi. Kapsamsız akışlar (koç turu, günün sorusu, yanlış
+    // tekrarı, favoriler) bunların hiçbirini kabul etmez.
+    const acikKapsam = dto.topicId != null || dto.courseId != null || dto.topicIds != null;
 
     // Arşiv denemesi (Doc 18 devamı): biten denemenin SABİTLENMİŞ seti,
     // pratik olarak — resmî sıralamaya girmez, tekrarlanabilir.
     if (dto.archiveExamId != null) {
-      if (dto.mode !== 'exam' || dto.topicId != null || dto.courseId != null) {
+      if (dto.mode !== 'exam' || acikKapsam) {
         throw new BadRequestException(
           'Arşiv denemesi yalnız mode=exam ile ve kapsamsız başlatılır.',
         );
@@ -70,7 +74,7 @@ export class QuizService {
 
     // Kişisel deneme: hedef sınavın müfredat ağırlıklarıyla, süreli set.
     if (dto.personalExam === true) {
-      if (dto.mode !== 'exam' || dto.topicId != null || dto.courseId != null) {
+      if (dto.mode !== 'exam' || acikKapsam) {
         throw new BadRequestException(
           'Kişisel deneme yalnız mode=exam ile ve kapsamsız başlatılır.',
         );
@@ -87,7 +91,7 @@ export class QuizService {
 
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
     if (dto.mode === 'daily') {
-      if (dto.topicId != null || dto.courseId != null) {
+      if (acikKapsam) {
         throw new BadRequestException('Günün sorusu kapsam almaz (topicId/courseId verilmez).');
       }
       return this.startDailySession(userId, dto.source);
@@ -99,16 +103,28 @@ export class QuizService {
     if (dto.topicId != null && dto.courseId != null) {
       throw new BadRequestException('topicId ve courseId birlikte verilemez.');
     }
-    if (dto.mode === 'exam' && dto.topicId == null && dto.courseId == null) {
+    // Seçili mevzuat turu (1 Eki 2026): tek konu ile tüm ders arasındaki kapsam.
+    // Yalnız alıştırma; deneme sürümü ayrı karar (süre/sıralama kuralları).
+    let secilenKonular: string[] = [];
+    if (dto.topicIds != null) {
+      if (dto.topicId != null || dto.courseId != null) {
+        throw new BadRequestException('topicIds, topicId/courseId ile birlikte verilemez.');
+      }
+      if (dto.mode !== 'practice') {
+        throw new BadRequestException('Seçili mevzuat turu yalnız alıştırma modunda açılır.');
+      }
+      secilenKonular = [...new Set(dto.topicIds)];
+      if (secilenKonular.length < 2) {
+        throw new BadRequestException('En az iki farklı mevzuat seçilmeli.');
+      }
+    }
+    if (dto.mode === 'exam' && !acikKapsam) {
       throw new BadRequestException('Deneme için topicId veya courseId verilmeli.');
     }
-    if (dto.mode === 'review' && (dto.topicId != null || dto.courseId != null)) {
+    if (dto.mode === 'review' && acikKapsam) {
       throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
     }
-    if (
-      dto.fromBookmarks &&
-      (dto.mode !== 'practice' || dto.topicId != null || dto.courseId != null)
-    ) {
+    if (dto.fromBookmarks && (dto.mode !== 'practice' || acikKapsam)) {
       throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
     }
 
@@ -120,8 +136,7 @@ export class QuizService {
     // sınavının (preferredModule) müfredatıyla sınırlanır. Hedef seçilmemişse
     // eski davranış (tüm müfredat). Kütüphaneden BİLİNÇLİ konu/ders seçimi
     // filtrelenmez — kullanıcı ne istediğini biliyor.
-    const needsModuleScope =
-      dto.mode === 'review' || (dto.topicId == null && dto.courseId == null);
+    const needsModuleScope = dto.mode === 'review' || !acikKapsam;
     const preferredModuleId = needsModuleScope
       ? (
           await this.prisma.user.findUnique({
@@ -154,6 +169,30 @@ export class QuizService {
         ...IPTAL_EDILMEMIS,
         // Madde Atlası: maddeden tur — havuz tek maddeye daralır.
         ...(dto.articleNo ? { articleNo: dto.articleNo } : {}),
+      };
+    } else if (dto.topicIds != null) {
+      // Seçili mevzuat: kullanıcının işaretlediği konulardan karışık havuz.
+      // Premium kapısı tek konu yoluyla AYNI: seçimden biri premium ve
+      // kullanıcı ücretsizse reddedilir — sessizce elemek bilinçli seçimi
+      // bozar, kullanıcı "neden bu kanundan soru gelmedi" diye kalırdı.
+      const konular = await this.prisma.topic.findMany({
+        where: { id: { in: secilenKonular }, deletedAt: null },
+        select: { id: true, isPremium: true },
+      });
+      if (konular.length !== secilenKonular.length) {
+        throw new NotFoundException('Seçilen mevzuattan biri bulunamadı.');
+      }
+      if (!isPremiumUser && konular.some((k) => k.isPremium)) {
+        throw new ForbiddenException({
+          code: 'PREMIUM_REQUIRED',
+          message: 'Seçtiğin mevzuattan biri premium içeriktir.',
+        });
+      }
+      poolWhere = {
+        topicId: { in: secilenKonular },
+        deletedAt: null,
+        currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
       };
     } else if (dto.courseId != null) {
       // Ders geneli: dersin konularından karışık havuz; free kullanıcıya
@@ -253,9 +292,11 @@ export class QuizService {
         throw new NotFoundException(
           dto.topicId != null
             ? 'Bu konuda yayında soru yok.'
-            : dto.courseId != null
-              ? 'Bu derste yayında soru yok.'
-              : 'Yayında soru yok.',
+            : dto.topicIds != null
+              ? 'Seçtiğin mevzuatta yayında soru yok.'
+              : dto.courseId != null
+                ? 'Bu derste yayında soru yok.'
+                : 'Yayında soru yok.',
         );
       }
 
@@ -267,15 +308,15 @@ export class QuizService {
         dto.mode === 'exam' ? null : await this.splitBySeen(userId, pool);
 
       // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
-      // Ders kapsamı = konular arasında dengeli tur; tek konu havuzu baskılamaz.
-      // Tek konu ve deneme oturumları rastgele seçime devam eder.
-      if (dto.mode === 'practice' && dto.topicId == null && dto.courseId == null) {
+      // Ders kapsamı ve seçili mevzuat = konular arasında dengeli tur; tek konu
+      // havuzu baskılamaz. Tek konu ve deneme oturumları rastgele seçime devam eder.
+      if (dto.mode === 'practice' && !acikKapsam) {
         // Koç turunun "yanlış turu" dilimi görülmüş sorulara muhtaç:
         // havuzu daraltmak reçeteyi bozar, yalnız yeterli taze varsa daraltılır.
         const coachPool =
           fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
         chosen = await this.pickCoachMix(userId, coachPool, count);
-      } else if (dto.mode === 'practice' && dto.courseId != null) {
+      } else if (dto.mode === 'practice' && (dto.courseId != null || dto.topicIds != null)) {
         const balancePool =
           fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
         chosen = pickTopicBalanced(balancePool, count, (items) =>
@@ -317,6 +358,7 @@ export class QuizService {
         mode: dto.mode,
         topicId: dto.topicId ?? null,
         courseId: dto.courseId ?? null,
+        topicIds: secilenKonular,
         totalQuestions: chosen.length,
         plannedDurationSeconds,
         // Devam için soru sırası (Doc 27 §2.4): sürüm id dizisi.
@@ -1327,6 +1369,7 @@ export class QuizService {
         archiveExam: { select: { title: true } },
         topic: { select: { name: true } },
         course: { select: { name: true } },
+        topicIds: true,
         _count: { select: { answers: true } },
       },
     });
@@ -1338,7 +1381,12 @@ export class QuizService {
       answeredCount: session._count.answers,
       startedAt: session.startedAt,
       scopeName:
-        session.topic?.name ?? session.course?.name ?? session.archiveExam?.title ?? null,
+        session.topic?.name ??
+        session.course?.name ??
+        session.archiveExam?.title ??
+        (session.topicIds.length > 0 ? `${session.topicIds.length} seçili mevzuat` : null),
+      /** Seçili mevzuat turunun konuları — istemci "aynı seçimle yeni tur" kurar. */
+      topicIds: session.topicIds,
       /** Süreli oturumda kalan saniye; süresiz turda null. */
       remainingSeconds:
         session.plannedDurationSeconds != null

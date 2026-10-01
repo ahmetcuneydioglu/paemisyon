@@ -484,6 +484,8 @@ export class ProgressService {
         id: true,
         mode: true,
         topicId: true,
+        /** Seçili mevzuat turu (1 Eki 2026): geçmişte "N mevzuat" etiketi için. */
+        topicIds: true,
         totalQuestions: true,
         correctCount: true,
         score: true,

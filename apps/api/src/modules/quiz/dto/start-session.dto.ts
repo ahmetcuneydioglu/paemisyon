@@ -1,4 +1,7 @@
 import {
+  ArrayMaxSize,
+  ArrayMinSize,
+  IsArray,
   IsBoolean,
   IsIn,
   IsInt,
@@ -41,6 +44,17 @@ export class StartSessionDto {
   @IsOptional()
   @IsUUID()
   courseId?: string;
+
+  /// Seçili mevzuat turu (1 Eki 2026): kullanıcının seçtiği konulardan dengeli
+  /// karışık alıştırma — tek konu ile tüm ders arasındaki kapsam. Yalnız
+  /// mode=practice; topicId/courseId ile birlikte VERİLMEZ. Üst sınır bir
+  /// dersin konu sayısını rahat aşar (Polis Mevzuatı ~45).
+  @IsOptional()
+  @IsArray()
+  @ArrayMinSize(2)
+  @ArrayMaxSize(60)
+  @IsUUID('all', { each: true })
+  topicIds?: string[];
 
   /// Madde Atlası (Doc 25 §4): topicId ile birlikte — havuzu tek maddeye daraltır.
   @IsOptional()

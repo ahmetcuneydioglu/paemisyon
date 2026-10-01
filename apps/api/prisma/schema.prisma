@@ -700,6 +700,11 @@ model QuizSession {
   topicId                String?           @map("topic_id") @db.Uuid
   // Deneme sınavı kapsamı: ders geneli (konular karışık) — topicId yerine.
   courseId               String?           @map("course_id") @db.Uuid
+  /// Seçili mevzuat turu (1 Eki 2026, kullanıcı talebi): tek konu ile tüm ders
+  /// arasındaki kapsam — kullanıcının seçtiği konulardan dengeli karışık tur.
+  /// Dolu ise topicId/courseId NULL'dur. Geçmiş etiketi ve "aynı seçimle yeni
+  /// tur" için saklanır; devam etme questionOrder ile zaten bağımsız çalışır.
+  topicIds               String[]          @default([]) @map("topic_ids") @db.Uuid
   // Randevulu deneme (Doc 18): katılım = bu oturum. (userId, examId) tekildir.
   examId                 String?           @map("exam_id") @db.Uuid
   /// Arşivden çözülen deneme. examId'den AYRI: orası tekil (canlı katılım bir

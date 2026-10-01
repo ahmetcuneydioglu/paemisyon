@@ -155,6 +155,8 @@ export interface LawSummary {
   name: string;
   courseName: string;
   questionCount: number;
+  /** Premium konu mu — seçili mevzuat turunda rozet; kapı sunucuda (Doc 8). */
+  isPremium?: boolean;
   /** Yayınlanmış madde metni var mı — "Kanunu oku" için (Doc 25 §4 okuma katmanı). */
   readable?: boolean;
   exams: ExamContext[];
@@ -331,8 +333,24 @@ export interface ActiveSession {
   answeredCount: number;
   startedAt: string;
   scopeName: string | null;
+  /** Seçili mevzuat turunun konuları — bitişte "aynı seçimle yeni tur" için. */
+  topicIds?: string[];
   /** Eski (soru sırası kayıtsız) oturumlarda false — gerçek devam mümkün değil. */
   resumable: boolean;
+}
+
+/**
+ * Yarım turu kaldığı yerden açan adres — Bugün kartı ve koç rayı aynı
+ * bağlantıyı kurar. Seçili mevzuat turunda konu listesi de taşınır ki
+ * oynatıcı bitişte "aynı seçimle yeni tur" sunabilsin.
+ */
+export function activeSessionHref(active: ActiveSession): string {
+  const parts = [`resume=${active.sessionId}`];
+  if (active.scopeName) parts.push(`scope=${encodeURIComponent(active.scopeName)}`);
+  if (active.topicIds && active.topicIds.length > 0) {
+    parts.push(`topicIds=${active.topicIds.join(",")}`);
+  }
+  return `/seans?${parts.join("&")}`;
 }
 
 // ── Nöbet çizelgesi (Doc 27 W3/B): /progress/activity ──

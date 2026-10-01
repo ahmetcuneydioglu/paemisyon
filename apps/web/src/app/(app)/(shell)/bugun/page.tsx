@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { api } from "@/lib/api";
-import type { ActiveSession, ActivityDay, CoachBrief } from "@/lib/public-api";
+import {
+  activeSessionHref,
+  type ActiveSession,
+  type ActivityDay,
+  type CoachBrief,
+} from "@/lib/public-api";
 import type { ExamListItem } from "@/lib/types";
 import { Countdown } from "@/components/countdown";
 import { formatDate, formatTime } from "@/lib/format";
@@ -163,7 +168,7 @@ export default async function BugunPage() {
               </p>
               {active.resumable ? (
                 <Link
-                  href={`/seans?resume=${active.sessionId}${active.scopeName ? `&scope=${encodeURIComponent(active.scopeName)}` : ""}`}
+                  href={activeSessionHref(active)}
                   className="mt-2 inline-block text-[13px] font-bold text-brand hover:underline"
                 >
                   Kaldığın yerden devam et →

@@ -309,6 +309,9 @@ export class PublicService {
       select: {
         id: true,
         name: true,
+        // Seçili mevzuat turunda premium kanun rozeti için (1 Eki 2026);
+        // kapı sunucuda, rozet yalnız sürprizi önler.
+        isPremium: true,
         course: {
           select: {
             id: true,
@@ -378,6 +381,8 @@ export class PublicService {
       name: t.name,
       courseName: t.course.name,
       questionCount: t.questionCount,
+      /** Premium konu mu — seçili mevzuat turunda rozet (kapı sunucuda). */
+      isPremium: t.isPremium,
       /** Yayınlanmış madde metni var mı — "okunabilir" rozeti. */
       readable: readableIds.has(t.id),
       exams: this.examContexts(t.course.sections),

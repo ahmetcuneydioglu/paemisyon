@@ -306,6 +306,11 @@ Mekanizma — **Odak**:
 Kütüphane'den girilen her seans zaten doğal "odaklı seans"tır — aynı motor,
 farklı kapı. Ayrı bir "manuel mod" inşa edilmez.
 
+- **Seçili mevzuat (1 Eki 2026, kullanıcı talebi):** tek kanun ile tüm ders
+  arasında bir kapsam daha var — kullanıcı çalıştığı kanunları işaretler,
+  yalnız onlardan dengeli karışık tur çözer (`topicIds`, yalnız alıştırma).
+  Premium kanun seçimi sessizce elenmez, kapı açıkça söylenir. Önce web.
+
 ---
 
 ## 6. Web ↔ Mobil iş bölümü (Görev 7)

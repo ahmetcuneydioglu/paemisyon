@@ -15,6 +15,8 @@ export default async function SeansPage({
   const p = await searchParams;
   const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
   const count = Number.parseInt(one(p.count) ?? "", 10);
+  // Seçili mevzuat turu: virgülle ayrılmış konu kimlikleri (kural sunucuda).
+  const topicIds = (one(p.topicIds) ?? "").split(",").filter(Boolean);
 
   // Query seti değişince oynatıcı REMOUNT olur → taze tur başlar. Aksi halde
   // aynı /seans'a gitmek (ör. done ekranından "Yeni tur") remount tetiklemez
@@ -22,6 +24,7 @@ export default async function SeansPage({
   const sessionKey = [
     one(p.topicId),
     one(p.courseId),
+    one(p.topicIds),
     one(p.articleNo),
     one(p.mode),
     one(p.resume),
@@ -35,6 +38,7 @@ export default async function SeansPage({
       scope={{
         topicId: one(p.topicId),
         courseId: one(p.courseId),
+        topicIds: topicIds.length > 0 ? topicIds : undefined,
         articleNo: one(p.articleNo),
         mode:
           one(p.mode) === "review"
