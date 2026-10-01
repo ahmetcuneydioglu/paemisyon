@@ -1,11 +1,30 @@
 /**
- * Mevzuat Merkezi geçişi (Doc 29 P0-A): kanun-benzeri Topic'lerden kalıcı
- * `legislation` kayıtları üretir, mevcut law_articles satırlarını bağlar,
- * sortKey doldurur. Idempotent — tekrar çalıştırmak güvenli (slug upsert).
- *   APPLY=1 ile yazar; onsuz dry-run.
+ * Mevzuat Merkezi kimlik tutarlılığı (Doc 29 P0-A): kanun-benzeri her Topic'in
+ * TEK bir kalıcı `legislation` kaydı olmasını ve o kaydın slug'ının web'in
+ * ürettiği URL slug'ı (slugify(topic.name)) ile AYNI olmasını sağlar; konunun
+ * law_articles satırlarını kayda bağlar; yayın durumunu yansıtır.
+ *
+ * Neden: web /kanun/[slug] sayfaları slug'ı konu adından türetiyor, /oku ve
+ * arama paleti ise `legislation.slug` ile konuşuyor. İkisi ayrışınca sayfa
+ * 404 veriyor (1 Eki 2026'da 16 kanun/yönetmelikte görüldü: 8 slug farkı,
+ * 7 kayıt yok, 1 madde bağsız).
+ *
+ * Idempotent — tekrar çalıştırmak güvenli. Çözümleme sırası:
+ *   1. topicId ile mevcut kayıt → slug farklıysa YENİDEN ADLANDIR
+ *   2. slug ile mevcut, konusuz kayıt → konuya BAĞLA
+ *   3. hiçbiri → OLUŞTUR
+ * Çakışma (slug başka konunun kaydında) yazılmaz, raporlanır.
+ *
+ *   APPLY=1 ile yazar; onsuz dry-run (denetim raporu).
+ *   DB penceresi kuralı: connection_limit=1 (CLAUDE.md).
  */
 import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+
+const base = process.env.DATABASE_URL!;
+const url = base.includes('connection_limit')
+  ? base.replace(/connection_limit=\d+/, 'connection_limit=1')
+  : `${base}${base.includes('?') ? '&' : '?'}connection_limit=1`;
+const prisma = new PrismaClient({ datasources: { db: { url } } });
 
 // public.service LAW_NAME_RE + anayasa ("T.C. Anayasası" o desene uymuyor —
 // regex-kimlik borcunun kanıtı; kalıcı kayıt tam da bu yüzden gerekiyor).
@@ -61,87 +80,172 @@ const NAME_TO_NUMBER: [RegExp, string][] = [
 function identityOf(name: string): { shortName: string | null; number: string | null; aliases: string[] } {
   const num =
     /(\d{3,4})\s*say/i.exec(name)?.[1] ??
+    /^(\d{3,4})\s/.exec(name)?.[1] ??
     NAME_TO_NUMBER.find(([re]) => re.test(name))?.[1] ??
     null;
   if (num && KNOWN[num]) {
     const k = KNOWN[num];
     return { shortName: k.shortName, number: num, aliases: k.aliases };
   }
-  if (/anayasa/i.test(name)) {
+  if (/anayasa/i.test(name) && !/mahkemesi|değişiklik/i.test(name)) {
     return { shortName: 'Anayasa', number: null, aliases: ['anayasa', 'tc anayasası', '1982 anayasası'] };
   }
   return { shortName: null, number: num, aliases: [] };
 }
 
+type Durum = 'OK' | 'SLUG_FARKLI' | 'KONUSUZ_KAYIT' | 'KAYIT_YOK' | 'CAKISMA';
+
 async function main() {
   const apply = process.env.APPLY === '1';
-  const topics = await prisma.topic.findMany({
-    where: { deletedAt: null },
-    select: {
-      id: true,
-      name: true,
-      lawArticles: {
-        where: { deletedAt: null },
-        select: { id: true, articleNo: true, status: true, sourceUrl: true, lastVerifiedAt: true },
-      },
-    },
-  });
-  const lawTopics = topics.filter((t) => LAW_NAME_RE.test(t.name));
-  console.log(`kanun-benzeri konu: ${lawTopics.length}`);
 
-  let created = 0;
-  let linked = 0;
+  const [topics, legs] = await Promise.all([
+    prisma.topic.findMany({
+      where: { deletedAt: null },
+      select: {
+        id: true,
+        name: true,
+        lawArticles: {
+          where: { deletedAt: null },
+          select: {
+            id: true, articleNo: true, status: true, sourceUrl: true,
+            lastVerifiedAt: true, legislationId: true, sortKey: true,
+          },
+        },
+      },
+    }),
+    prisma.legislation.findMany({
+      where: { deletedAt: null },
+      select: { id: true, slug: true, name: true, topicId: true, status: true, officialSourceUrl: true, lastVerifiedAt: true },
+    }),
+  ]);
+  const lawTopics = topics.filter((t) => LAW_NAME_RE.test(t.name));
+  const byTopic = new Map(legs.filter((l) => l.topicId).map((l) => [l.topicId!, l]));
+  const bySlug = new Map(legs.map((l) => [l.slug, l]));
+  console.log(`kanun-benzeri konu: ${lawTopics.length} · legislation kaydı: ${legs.length}\n`);
+
+  const sayac: Record<Durum, number> = { OK: 0, SLUG_FARKLI: 0, KONUSUZ_KAYIT: 0, KAYIT_YOK: 0, CAKISMA: 0 };
+  let renamed = 0, created = 0, attached = 0, linked = 0, published = 0;
+
   for (const t of lawTopics) {
     const slug = slugify(t.name);
     const idn = identityOf(t.name);
-    const published = t.lawArticles.filter((a) => a.status === 'published');
-    const lastVerified = published
-      .map((a) => a.lastVerifiedAt)
-      .filter(Boolean)
-      .sort()
-      .pop() ?? null;
-    const sourceUrl = published.find((a) => a.sourceUrl)?.sourceUrl ?? null;
+    const pub = t.lawArticles.filter((a) => a.status === 'published');
+    const lastVerified = pub.map((a) => a.lastVerifiedAt).filter((d): d is Date => d != null)
+      .sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
+    const sourceUrl = pub.find((a) => a.sourceUrl)?.sourceUrl ?? null;
 
-    console.log(
-      `${slug} | ${idn.shortName ?? '-'} | no:${idn.number ?? '-'} | madde:${t.lawArticles.length} (yayın:${published.length})`,
-    );
-    if (!apply) continue;
+    const mevcut = byTopic.get(t.id) ?? null;
+    const slugSahibi = bySlug.get(slug) ?? null;
 
-    const leg = await prisma.legislation.upsert({
-      where: { slug },
-      update: {
-        name: t.name,
-        topicId: t.id,
-        // Tahribatsız: tanınmayan kanunda mevcut (elle girilmiş) kimlik korunur.
-        ...(idn.shortName ? { shortName: idn.shortName } : {}),
-        ...(idn.number ? { number: idn.number } : {}),
-        ...(idn.aliases.length > 0 ? { aliases: idn.aliases } : {}),
-      },
-      create: {
-        slug,
-        name: t.name,
-        type: /yönetmeli/i.test(t.name) ? 'yonetmelik' : 'kanun',
-        number: idn.number,
-        shortName: idn.shortName,
-        aliases: idn.aliases,
-        officialSourceUrl: sourceUrl,
-        lastVerifiedAt: lastVerified,
-        // Yayınlanmış maddesi olan kanun okunabilir → published.
-        status: published.length > 0 ? 'published' : 'draft',
-        topicId: t.id,
-      },
-    });
-    created++;
+    let durum: Durum;
+    if (mevcut && mevcut.slug === slug) durum = 'OK';
+    else if (mevcut) durum = slugSahibi && slugSahibi.id !== mevcut.id ? 'CAKISMA' : 'SLUG_FARKLI';
+    else if (slugSahibi) durum = slugSahibi.topicId == null ? 'KONUSUZ_KAYIT' : 'CAKISMA';
+    else durum = 'KAYIT_YOK';
+    sayac[durum]++;
+
+    const bagsiz = t.lawArticles.filter((a) => !mevcut || a.legislationId !== mevcut.id).length;
+    const yayinUyumsuz = mevcut != null && pub.length > 0 && mevcut.status !== 'published';
+    const not = [
+      durum !== 'OK' ? durum : '',
+      durum === 'SLUG_FARKLI' ? `(${mevcut!.slug} → ${slug})` : '',
+      durum === 'CAKISMA' ? `(slug "${slug}" başka kayıtta: ${slugSahibi!.topicId ?? 'konusuz'})` : '',
+      bagsiz > 0 ? `madde bağsız:${bagsiz}` : '',
+      yayinUyumsuz ? 'yayın durumu geri' : '',
+    ].filter(Boolean).join(' ');
+    const sessiz = durum === 'OK' && bagsiz === 0 && !yayinUyumsuz;
+    if (!sessiz || !apply) {
+      console.log(
+        `${sessiz ? '  ' : '!!'} ${slug} | ${idn.shortName ?? '-'} | no:${idn.number ?? '-'} | madde:${t.lawArticles.length} (yayın:${pub.length})${not ? ' | ' + not : ''}`,
+      );
+    }
+    if (!apply || durum === 'CAKISMA') continue;
+
+    // Tahribatsız kimlik: tanınmayan kanunda mevcut (elle girilmiş) kimlik korunur.
+    const kimlik = {
+      ...(idn.shortName ? { shortName: idn.shortName } : {}),
+      ...(idn.number ? { number: idn.number } : {}),
+      ...(idn.aliases.length > 0 ? { aliases: idn.aliases } : {}),
+    };
+
+    let leg: { id: string };
+    if (durum === 'OK' || durum === 'SLUG_FARKLI') {
+      leg = await prisma.legislation.update({
+        where: { id: mevcut!.id },
+        data: {
+          ...(durum === 'SLUG_FARKLI' ? { slug } : {}),
+          name: t.name,
+          ...kimlik,
+          ...(mevcut!.officialSourceUrl == null && sourceUrl ? { officialSourceUrl: sourceUrl } : {}),
+          ...(yayinUyumsuz ? { status: 'published', lastVerifiedAt: mevcut!.lastVerifiedAt ?? lastVerified } : {}),
+        },
+        select: { id: true },
+      });
+      if (durum === 'SLUG_FARKLI') renamed++;
+      if (yayinUyumsuz) published++;
+    } else if (durum === 'KONUSUZ_KAYIT') {
+      leg = await prisma.legislation.update({
+        where: { id: slugSahibi!.id },
+        data: {
+          topicId: t.id,
+          name: t.name,
+          ...kimlik,
+          ...(pub.length > 0 && slugSahibi!.status !== 'published' ? { status: 'published', lastVerifiedAt: lastVerified } : {}),
+        },
+        select: { id: true },
+      });
+      attached++;
+    } else {
+      leg = await prisma.legislation.create({
+        data: {
+          slug,
+          name: t.name,
+          type: /yönetmeli/i.test(t.name) ? 'yonetmelik' : 'kanun',
+          number: idn.number,
+          shortName: idn.shortName,
+          aliases: idn.aliases,
+          officialSourceUrl: sourceUrl,
+          lastVerifiedAt: lastVerified,
+          // Yayınlanmış maddesi olan kanun okunabilir → published.
+          status: pub.length > 0 ? 'published' : 'draft',
+          topicId: t.id,
+        },
+        select: { id: true },
+      });
+      created++;
+    }
 
     for (const a of t.lawArticles) {
+      if (a.legislationId === leg.id) continue;
       await prisma.lawArticle.update({
         where: { id: a.id },
-        data: { legislationId: leg.id, sortKey: articleSortKey(a.articleNo) },
+        data: {
+          legislationId: leg.id,
+          // Daha önce sıralanmış (ör. içe aktarımın verdiği) anahtar korunur.
+          ...(a.sortKey === 0 ? { sortKey: articleSortKey(a.articleNo) } : {}),
+        },
       });
       linked++;
     }
   }
-  console.log(apply ? `\nlegislation: ${created}, bağlanan madde: ${linked}` : '\n(dry-run — APPLY=1 ile yaz)');
+
+  // Konusu kanun-benzeri olmayan / konusuz / metinsiz kayıtlar — bilgi amaçlı.
+  const lawTopicIds = new Set(lawTopics.map((t) => t.id));
+  const yetim = legs.filter((l) => !l.topicId || !lawTopicIds.has(l.topicId));
+  if (yetim.length > 0) {
+    console.log('\nKonusu kanun-benzeri olmayan ya da konusuz legislation kayıtları (dokunulmadı):');
+    for (const l of yetim) {
+      const topicName = l.topicId ? topics.find((t) => t.id === l.topicId)?.name ?? '(silinmiş konu)' : '(konusuz)';
+      console.log(`   ${l.slug} | ${l.status} | konu: ${topicName}`);
+    }
+  }
+
+  console.log(`\nözet: ${Object.entries(sayac).map(([k, v]) => `${k}=${v}`).join(' · ')}`);
+  console.log(
+    apply
+      ? `yazıldı: yeniden adlandırılan ${renamed}, oluşturulan ${created}, konuya bağlanan ${attached}, yayına alınan ${published}, bağlanan madde ${linked}`
+      : '(dry-run — APPLY=1 ile yaz)',
+  );
   await prisma.$disconnect();
 }
 main();
