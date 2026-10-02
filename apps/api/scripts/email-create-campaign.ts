@@ -50,6 +50,7 @@ async function main() {
       sources: (opt('sources') ?? 'legacy_paem705').split(',').filter(Boolean),
       legacyYears: (opt('years') ?? '').split(',').filter(Boolean).map(Number),
       tags: (opt('tags') ?? '').split(',').filter(Boolean),
+      excludeCampaignIds: (opt('exclude') ?? '').split(',').filter(Boolean),
     },
     dailyCap: Number(opt('daily-cap') ?? 150),
     sendRatePerSec: Number(opt('rate') ?? 1),
@@ -74,6 +75,17 @@ async function main() {
   if (testTo) {
     const r = await campaigns.sendTest(c.id, testTo);
     console.log('test postası:', r.messageId);
+  }
+  const schedule = opt('schedule'); // ör. 2026-10-03T15:00 (İstanbul)
+  if (schedule) {
+    const at = new Date(`${schedule}:00+03:00`);
+    if (c.status !== 'test_sent' && c.status !== 'scheduled' && c.status !== 'draft')
+      throw new Error(`planlanamaz: ${c.status}`);
+    await prisma.emailCampaign.update({
+      where: { id: c.id },
+      data: { status: 'scheduled', scheduledAt: at },
+    });
+    console.log('PLANLANDI:', at.toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' }));
   }
   const start = opt('start');
   if (start) {

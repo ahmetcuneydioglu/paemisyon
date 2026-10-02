@@ -69,6 +69,16 @@ export class EmailSenderService {
           .catch((e) => this.logger.error(`Planlı başlatma: ${c.name}: ${(e as Error).message}`));
       }
 
+      const hour = Number(
+        new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Europe/Istanbul',
+          hour: '2-digit',
+          hour12: false,
+        }).format(new Date()),
+      );
+      if (hour < EMAIL_CONFIG.sendWindow.startHour || hour >= EMAIL_CONFIG.sendWindow.endHour)
+        return totals;
+
       const account = await this.ses.account();
       if (!account.sendingEnabled) return totals;
       const accountRemaining = Math.floor(
