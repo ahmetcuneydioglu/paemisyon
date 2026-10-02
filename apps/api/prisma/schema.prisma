@@ -133,6 +133,7 @@ model User {
   badges            UserBadge[]
   masterySnapshots  TopicMasterySnapshot[]
   pushTokens        PushToken[]
+  emailContacts     EmailContact[]
   preferredModule   ExamType?              @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
@@ -572,18 +573,18 @@ model LegalReference {
 // ─────────────────────────────────────────────
 
 model Plan {
-  id                    String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key                   String     @unique // free | quarterly | yearly | lifetime
-  name                  String
-  price                 Decimal?   @db.Decimal(10, 2)
-  currency              String     @default("TRY")
-  period                PlanPeriod @default(none)
-  dailyQuestionLimit    Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
+  id                     String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key                    String     @unique // free | quarterly | yearly | lifetime
+  name                   String
+  price                  Decimal?   @db.Decimal(10, 2)
+  currency               String     @default("TRY")
+  period                 PlanPeriod @default(none)
+  dailyQuestionLimit     Int?       @map("daily_question_limit") // free için sınır; premium null=sınırsız
   /// Günde kaç kişisel deneme açılabilir (Doc 46); null = sınırsız (premium).
-  personalExamDailyLimit Int?      @map("personal_exam_daily_limit")
-  storeProductIdIos     String?    @map("store_product_id_ios")
-  storeProductIdAndroid String?    @map("store_product_id_android")
-  isActive              Boolean    @default(true) @map("is_active")
+  personalExamDailyLimit Int?       @map("personal_exam_daily_limit")
+  storeProductIdIos      String?    @map("store_product_id_ios")
+  storeProductIdAndroid  String?    @map("store_product_id_android")
+  isActive               Boolean    @default(true) @map("is_active")
 
   subscriptions Subscription[]
 
@@ -668,10 +669,10 @@ model Exam {
 
   questions       ExamQuestion[]
   sessions        QuizSession[]
-  archiveSessions QuizSession[] @relation("ArchiveExam")
+  archiveSessions QuizSession[]  @relation("ArchiveExam")
   /// Doluysa bu Exam bir çıkmış sınavın motor kaydıdır (Doc 36) — deneme
   /// listesinde görünmez. Yabancı anahtar PastExam tarafındadır.
-  pastExam   PastExam?
+  pastExam        PastExam?
 
   @@index([status, startAt])
   @@map("exams")
@@ -730,12 +731,12 @@ model QuizSession {
   startedAt              DateTime          @default(now()) @map("started_at")
   completedAt            DateTime?         @map("completed_at")
 
-  user        User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  archiveExam Exam?  @relation("ArchiveExam", fields: [archiveExamId], references: [id])
-  topic   Topic?       @relation(fields: [topicId], references: [id])
-  course  Course?      @relation(fields: [courseId], references: [id])
-  exam    Exam?        @relation(fields: [examId], references: [id])
-  answers QuizAnswer[]
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  archiveExam Exam?        @relation("ArchiveExam", fields: [archiveExamId], references: [id])
+  topic       Topic?       @relation(fields: [topicId], references: [id])
+  course      Course?      @relation(fields: [courseId], references: [id])
+  exam        Exam?        @relation(fields: [examId], references: [id])
+  answers     QuizAnswer[]
 
   // NULL examId'ler Postgres'te tekilliğe takılmaz → yalnız denemelerde 1 katılım.
   @@unique([userId, examId])
@@ -1035,4 +1036,191 @@ model PastExamQuestion {
   @@unique([pastExamId, orderNo])
   @@index([questionId])
   @@map("past_exam_questions")
+}
+
+// ─────────────────────────────────────────────
+// E-posta modülü (docs/47-eposta-ses/02-tasarim.md §3)
+// Toplu bilgilendirme/pazarlama postaları Amazon SES ile. Bastırmanın tek
+// kaynağı SES hesap listesidir; email_contacts.status onun aynasıdır.
+// ─────────────────────────────────────────────
+
+enum EmailContactSource {
+  live_user // yeni sistemin kullanıcısı (users tablosu)
+  legacy_paem705 // eski paem705 dökümü; yeni sistemde hesabı yok
+  manual // admin elle ekledi
+}
+
+enum EmailContactStatus {
+  subscribed
+  unsubscribed // kişi kendi çıktı (hepsinden)
+  bounced // kalıcı bounce (SES hesap listesinde)
+  complained // spam işareti (SES hesap listesinde)
+  suppressed // üst üste geçici bounce ya da admin kararı
+}
+
+enum EmailTopic {
+  duyuru // ürün/uygulama bilgilendirmesi
+  kampanya // pazarlama
+}
+
+enum EmailCampaignStatus {
+  draft
+  test_sent
+  scheduled
+  sending
+  paused
+  completed
+  cancelled
+  failed
+}
+
+enum EmailSendStatus {
+  queued
+  claimed // işçi aldı; SES yanıtı henüz yok (10 dk'dan eskiyse "belirsiz")
+  sent
+  delivered
+  bounced
+  complained
+  failed
+  skipped // gönderim anında kişi artık abone değildi
+}
+
+enum EmailEventType {
+  send
+  delivery
+  bounce
+  complaint
+  reject
+  delivery_delay
+  click
+  rendering_failure
+}
+
+model EmailContact {
+  id                String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  /// Küçük harfe normalize edilmiş adres.
+  email             String             @unique
+  userId            String?            @map("user_id") @db.Uuid
+  displayName       String?            @map("display_name")
+  source            EmailContactSource
+  /// legacy_paem705 için eski kayıt yılı (kademeli gönderim).
+  legacyYear        Int?               @map("legacy_year")
+  status            EmailContactStatus @default(subscribed)
+  consentAt         DateTime?          @map("consent_at")
+  consentSource     String?            @map("consent_source")
+  unsubscribedAt    DateTime?          @map("unsubscribed_at")
+  unsubscribeReason String?            @map("unsubscribe_reason")
+  /// 32 bayt rastgele, base64url. Çıkış/tercih bağlantısının tek kimliği.
+  unsubscribeToken  String             @unique @map("unsubscribe_token")
+  softBounceCount   Int                @default(0) @map("soft_bounce_count")
+  lastSentAt        DateTime?          @map("last_sent_at")
+  lastEventAt       DateTime?          @map("last_event_at")
+  createdAt         DateTime           @default(now()) @map("created_at")
+  updatedAt         DateTime           @updatedAt @map("updated_at")
+
+  user        User?                  @relation(fields: [userId], references: [id], onDelete: SetNull)
+  preferences EmailTopicPreference[]
+  sends       EmailSend[]
+
+  @@index([status])
+  @@index([source, legacyYear])
+  @@index([userId])
+  @@map("email_contacts")
+}
+
+/// Satır yoksa konu için varsayılan ABONE. "Hepsinden çık" = contact.status.
+model EmailTopicPreference {
+  contactId  String     @map("contact_id") @db.Uuid
+  topic      EmailTopic
+  subscribed Boolean    @default(true)
+  updatedAt  DateTime   @updatedAt @map("updated_at")
+
+  contact EmailContact @relation(fields: [contactId], references: [id], onDelete: Cascade)
+
+  @@id([contactId, topic])
+  @@map("email_topic_preferences")
+}
+
+model EmailCampaign {
+  id                String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name              String
+  topic             EmailTopic
+  subject           String
+  previewText       String?             @map("preview_text")
+  fromName          String              @map("from_name")
+  fromEmail         String              @map("from_email")
+  replyTo           String?             @map("reply_to")
+  bodyMarkdown      String              @map("body_markdown")
+  /// Gönderim başlarken dondurulan HTML; sonradan gövde değişse de gidenler budur.
+  htmlSnapshot      String?             @map("html_snapshot")
+  status            EmailCampaignStatus @default(draft)
+  /// {source[], legacyYears[], excludeCampaignIds[]} — §5
+  audience          Json                @default("{}")
+  dailyCap          Int                 @default(150) @map("daily_cap")
+  sendRatePerSec    Decimal             @default(1) @map("send_rate_per_sec") @db.Decimal(6, 2)
+  scheduledAt       DateTime?           @map("scheduled_at")
+  startedAt         DateTime?           @map("started_at")
+  completedAt       DateTime?           @map("completed_at")
+  pausedReason      String?             @map("paused_reason")
+  createdBy         String              @map("created_by") @db.Uuid
+  // Olaylardan güncellenen önbellek sayaçları
+  targetedCount     Int                 @default(0) @map("targeted_count")
+  sentCount         Int                 @default(0) @map("sent_count")
+  deliveredCount    Int                 @default(0) @map("delivered_count")
+  bouncedCount      Int                 @default(0) @map("bounced_count")
+  complainedCount   Int                 @default(0) @map("complained_count")
+  unsubscribedCount Int                 @default(0) @map("unsubscribed_count")
+  createdAt         DateTime            @default(now()) @map("created_at")
+  updatedAt         DateTime            @updatedAt @map("updated_at")
+
+  sends EmailSend[]
+
+  @@index([status])
+  @@map("email_campaigns")
+}
+
+/// Kampanya × kişi. Tekillik ve çökme kurtarması burada (§4).
+model EmailSend {
+  id           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  campaignId   String          @map("campaign_id") @db.Uuid
+  contactId    String          @map("contact_id") @db.Uuid
+  /// Gönderim anındaki adres (kişi sonradan değişse de iz kalır).
+  email        String
+  status       EmailSendStatus @default(queued)
+  sesMessageId String?         @unique @map("ses_message_id")
+  attempts     Int             @default(0)
+  claimedAt    DateTime?       @map("claimed_at")
+  sentAt       DateTime?       @map("sent_at")
+  lastEventAt  DateTime?       @map("last_event_at")
+  error        String?
+  createdAt    DateTime        @default(now()) @map("created_at")
+
+  campaign EmailCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  contact  EmailContact  @relation(fields: [contactId], references: [id], onDelete: Cascade)
+  events   EmailEvent[]
+
+  @@unique([campaignId, contactId])
+  @@index([campaignId, status])
+  @@map("email_sends")
+}
+
+/// Ham SES olayı (SNS). 90 günden eskiler silinir; kampanya sayaçları kalır.
+model EmailEvent {
+  id           String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  sesMessageId String         @map("ses_message_id")
+  sendId       String?        @map("send_id") @db.Uuid
+  type         EmailEventType
+  /// bounce: Permanent/Transient + bounceSubType; complaint: feedback türü
+  subtype      String?
+  recipient    String
+  /// Kırpılmış: tanılama kodu, zaman damgaları. Kullanıcı aracısı/IP tutulmaz.
+  payload      Json?
+  occurredAt   DateTime       @map("occurred_at")
+  receivedAt   DateTime       @default(now()) @map("received_at")
+
+  send EmailSend? @relation(fields: [sendId], references: [id], onDelete: SetNull)
+
+  @@unique([sesMessageId, type, occurredAt])
+  @@index([type, occurredAt])
+  @@map("email_events")
 }
