@@ -66,3 +66,20 @@ describe('SNS imza', () => {
     expect(s).toBe('Message\nmsg\nMessageId\nm\nTimestamp\nts\nTopicArn\nt\nType\nNotification\n');
   });
 });
+
+describe('özel bloklar', () => {
+  it('kartlar, buton ve not blokları tablo HTML üretir; içerik temizlenir', () => {
+    const html = markdownToHtml(
+      'Giriş\n\n:::kartlar\nSINAV | Komiser **Yardımcılığı**\n8 ders · Mevzuat\n---\nSINAV | Misyon Koruma\n8 ders\n:::\n\n:::buton [App Store](https://apps.apple.com/x) [Play](https://play.google.com/y)\n:::\n\n:::not\nEski hesabın <script>x</script> aktarılmadı.\n:::\n\nSon',
+    );
+    expect(html).toContain('<p>Giriş</p>');
+    expect(html).toContain('Komiser <strong>Yardımcılığı</strong>');
+    expect(html).toContain('Misyon Koruma');
+    expect((html.match(/<table/g) ?? []).length).toBeGreaterThanOrEqual(5);
+    expect(html).toContain('href="https://apps.apple.com/x"');
+    expect(html).toContain('href="https://play.google.com/y"');
+    expect(html).not.toContain('<script');
+    expect(html).not.toContain('BLOKYERTUTUCU');
+    expect(html).toContain('<p>Son</p>');
+  });
+});
