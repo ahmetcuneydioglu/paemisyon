@@ -29,13 +29,13 @@ export const EMAIL_CONFIG = {
     iconUrl: 'https://www.paemisyon.com/apple-touch-icon.png',
     siteUrl: 'https://www.paemisyon.com',
     appStore: {
-      url: 'https://apps.apple.com/tr/app/paemisyon/id6802087692',
+      url: 'https://www.paemisyon.com/appstore',
       img: 'https://www.paemisyon.com/img/appStore.png',
       w: 96,
       h: 34,
     },
     playStore: {
-      url: 'https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon',
+      url: 'https://www.paemisyon.com/play',
       img: 'https://www.paemisyon.com/img/playStore.png',
       w: 114,
       h: 34,

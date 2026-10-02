@@ -17,6 +17,22 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Mağaza kısa bağlantıları (e-posta ve sosyal medya için sorgu dizgisiz adres).
+  async redirects() {
+    return [
+      {
+        source: "/play",
+        destination:
+          "https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon",
+        permanent: false,
+      },
+      {
+        source: "/appstore",
+        destination: "https://apps.apple.com/tr/app/paemisyon/id6802087692",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

@@ -93,3 +93,21 @@ describe('mağaza rozetleri', () => {
     expect(html).not.toContain('magazalar');
   });
 });
+
+describe('düğme stili', () => {
+  it('buton bağlantısına genel <a> stili binmez (metin beyaz kalır)', () => {
+    const html = renderCampaignHtml({
+      subject: 's',
+      previewText: null,
+      bodyMarkdown: ":::buton [Web'de aç](https://www.paemisyon.com)\n:::",
+      siteUrl: 'https://www.paemisyon.com',
+      fromName: 'P',
+    });
+    const btn = html.match(
+      /<a [^>]*href="https:\/\/www\.paemisyon\.com"[^>]*>Web(&#39;|')de aç<\/a>/,
+    );
+    expect(btn).not.toBeNull();
+    expect((btn![0].match(/style=/g) ?? []).length).toBe(1);
+    expect(btn![0]).toContain('color:#ffffff');
+  });
+});

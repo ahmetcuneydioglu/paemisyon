@@ -190,7 +190,7 @@ export function renderCampaignHtml(input: RenderInput): string {
       '<h3 style="margin:20px 0 8px;font-size:17px;line-height:1.3;color:#0b1f3a;">',
     )
     .replace(/<p>/g, '<p style="margin:0 0 14px;font-size:16px;line-height:1.6;color:#222222;">')
-    .replace(/<a /g, '<a style="color:#173f71;text-decoration:underline;" ')
+    .replace(/<a (?![^>]*\bstyle=)/g, '<a style="color:#173f71;text-decoration:underline;" ')
     .replace(
       /<(ul|ol)>/g,
       '<$1 style="margin:0 0 14px;padding-left:22px;font-size:16px;line-height:1.6;color:#222222;">',
