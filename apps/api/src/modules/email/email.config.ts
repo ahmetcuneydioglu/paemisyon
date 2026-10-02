@@ -23,6 +23,31 @@ export const EMAIL_CONFIG = {
     email: 'bilgi@duyuru.paemisyon.com',
     replyTo: 'destek@paemisyon.com',
   },
+  /** Şablon marka varlıkları (web'de yayımlı; posta istemcileri görseli https'ten yükler). */
+  brand: {
+    iconUrl: 'https://www.paemisyon.com/apple-touch-icon.png',
+    siteUrl: 'https://www.paemisyon.com',
+    appStore: {
+      url: 'https://apps.apple.com/tr/app/paemisyon/id6802087692',
+      img: 'https://www.paemisyon.com/img/appStore.png',
+      w: 96,
+      h: 34,
+    },
+    playStore: {
+      url: 'https://play.google.com/store/apps/details?id=com.paemisyon.paemisyon',
+      img: 'https://www.paemisyon.com/img/playStore.png',
+      w: 114,
+      h: 34,
+    },
+    social: [
+      { label: 'Telegram', href: 'https://t.me/paemvemisyon' },
+      {
+        label: 'Instagram',
+        href: 'https://instagram.com/paemvemisyon',
+        img: 'https://www.paemisyon.com/img/instagram.png',
+      },
+    ],
+  },
   /** Hesap 24 saat kotasının bu oranı dolunca işçi durur. */
   accountQuotaStopRatio: 0.8,
   /** Bir tick'te en çok bu kadar gönderim (işçi 30 sn'de bir çalışır). */

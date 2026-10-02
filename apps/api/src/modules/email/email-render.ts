@@ -1,5 +1,6 @@
 import { marked } from 'marked';
 import sanitizeHtml from 'sanitize-html';
+import { EMAIL_CONFIG } from './email.config';
 
 /**
  * Kampanya gövdesi: Markdown → temizlenmiş HTML → tablo düzenli posta şablonu.
@@ -105,6 +106,14 @@ function renderButtons(body: string): string {
         `<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:${i ? 8 : 4}px 0 ${i === links.length - 1 ? 18 : 0}px;"><tr><td align="center" bgcolor="${i === 0 ? BRAND.navy : '#ffffff'}" style="border-radius:8px;border:2px solid ${BRAND.navy};"><a href="${l[2]}" target="_blank" rel="noopener" style="display:inline-block;padding:12px 22px;font-family:${FONT};font-size:15px;font-weight:700;color:${i === 0 ? '#ffffff' : BRAND.navy};text-decoration:none;">${inline(l[1])}</a></td></tr></table>`,
     )
     .join('');
+}
+
+/** :::magazalar — App Store / Google Play rozetleri (web'deki PNG'ler). */
+function renderStores(): string {
+  const b = EMAIL_CONFIG.brand;
+  const badge = (x: { url: string; img: string; w: number; h: number }, alt: string) =>
+    `<td style="padding:4px 10px 4px 0;"><a href="${x.url}" target="_blank" rel="noopener"><img src="${x.img}" width="${x.w}" height="${x.h}" alt="${alt}" style="display:block;border:0;width:${x.w}px;height:${x.h}px;"></a></td>`;
+  return `<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:4px 0 18px;"><tr>${badge(b.appStore, "App Store'dan indir")}${badge(b.playStore, "Google Play'den indir")}</tr></table>`;
 }
 
 function renderNote(body: string): string {
@@ -220,7 +229,12 @@ ${preview ? `<div style="display:none;max-height:0;overflow:hidden;opacity:0;mso
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="bg" style="background:#eef1f6;">
 <tr><td align="center" style="padding:24px 12px;">
   <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;width:100%;">
-    <tr><td class="band" bgcolor="#173f71" style="background:#173f71;border-radius:12px 12px 0 0;padding:22px 32px;font-family:${FONT};font-size:22px;font-weight:800;letter-spacing:-.01em;color:#ffffff;">${esc(input.fromName)}</td></tr>
+    <tr><td class="band" bgcolor="#173f71" style="background:#173f71;border-radius:12px 12px 0 0;padding:18px 28px;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr>
+        <td style="padding-right:12px;"><a href="${esc(EMAIL_CONFIG.brand.siteUrl)}" target="_blank" rel="noopener"><img src="${EMAIL_CONFIG.brand.iconUrl}" width="44" height="44" alt="" style="display:block;border:0;border-radius:10px;width:44px;height:44px;"></a></td>
+        <td style="font-family:${FONT};font-size:22px;font-weight:800;letter-spacing:-.01em;color:#ffffff;">${esc(input.fromName)}</td>
+      </tr></table>
+    </td></tr>
     <tr><td class="card" style="background:#ffffff;border-radius:0 0 12px 12px;padding:32px;font-family:${FONT};">
       ${styledBody}
     </td></tr>
@@ -229,6 +243,7 @@ ${preview ? `<div style="display:none;max-height:0;overflow:hidden;opacity:0;mso
       Bu tür e-postaları artık almak istemiyorsan <a href="%%PREFERENCES_URL%%" style="color:#6b7280;text-decoration:underline;">tercihlerini güncelleyebilir</a>
       ya da <a href="%%UNSUBSCRIBE_URL%%" style="color:#6b7280;text-decoration:underline;">abonelikten çıkabilirsin</a>.<br>
       <a href="${esc(input.siteUrl)}" style="color:#6b7280;text-decoration:underline;">${esc(input.siteUrl.replace(/^https?:\/\//, ''))}</a>
+      ${EMAIL_CONFIG.brand.social.map((x) => ` · <a href="${esc(x.href)}" target="_blank" rel="noopener" style="color:#6b7280;text-decoration:underline;">${esc(x.label)}</a>`).join('')}
     </td></tr>
   </table>
 </td></tr>
