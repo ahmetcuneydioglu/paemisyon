@@ -83,3 +83,13 @@ describe('özel bloklar', () => {
     expect(html).toContain('<p>Son</p>');
   });
 });
+
+describe('mağaza rozetleri', () => {
+  it(':::magazalar App Store ve Google Play görsellerini bağlantıyla üretir', () => {
+    const html = markdownToHtml('A\n\n:::magazalar\n:::\n\nB');
+    expect(html).toContain('apps.apple.com');
+    expect(html).toContain('play.google.com');
+    expect(html).toContain('img/appStore.png');
+    expect(html).not.toContain('magazalar');
+  });
+});

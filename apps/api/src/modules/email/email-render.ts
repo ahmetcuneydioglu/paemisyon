@@ -123,7 +123,7 @@ function renderNote(body: string): string {
 function extractBlocks(md: string): { md: string; blocks: string[] } {
   const blocks: string[] = [];
   const out = md.replace(
-    /^:::(kartlar|buton|not)[ \t]*(.*)\n([\s\S]*?)^:::[ \t]*$/gm,
+    /^:::(kartlar|buton|not|magazalar)[ \t]*(.*)\n([\s\S]*?)^:::[ \t]*$/gm,
     (_m, kind: string, head: string, body: string) => {
       const content = kind === 'buton' ? `${head}\n${body}` : body;
       const html =
@@ -131,7 +131,9 @@ function extractBlocks(md: string): { md: string; blocks: string[] } {
           ? renderCards(content)
           : kind === 'buton'
             ? renderButtons(content)
-            : renderNote(content);
+            : kind === 'magazalar'
+              ? renderStores()
+              : renderNote(content);
       blocks.push(html);
       return `\n\nBLOKYERTUTUCU${blocks.length - 1}\n\n`;
     },
