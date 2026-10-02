@@ -78,10 +78,11 @@ export async function verifySnsMessage(
 ): Promise<boolean> {
   if (!msg?.Signature || !msg.SigningCertURL || !isValidCertUrl(msg.SigningCertURL)) return false;
   if (msg.SignatureVersion !== '1' && msg.SignatureVersion !== '2') return false;
-  const pem = await fetchCert(msg.SigningCertURL, fetchImpl);
   try {
+    const pem = await fetchCert(msg.SigningCertURL, fetchImpl);
     return verifyWithCert(msg, pem);
   } catch {
+    // Sertifika alınamadı ya da imza çözülemedi: doğrulanmamış sayılır (403), 500 değil.
     return false;
   }
 }
