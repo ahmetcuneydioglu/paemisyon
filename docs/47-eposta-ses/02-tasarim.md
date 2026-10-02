@@ -2,8 +2,11 @@
 
 Tarih: 2 Ekim 2026. Durum: kararlar A–E onaylandı (2 Eki 2026); **Faz 3 ve 4 kodlandı ve commit'lendi**
 (`fca4197`, `74c30f6`), migration canlıda, kişi listesi dolu (480 canlı + 3.980 eski), duman testi
-simülatörle geçti. Açık: Railway değişkenleri + dağıtım, SNS HTTPS aboneliği, Faz 5 admin ekranı,
-üretim erişimi (03-uretim-erisimi-basvurusu.md).
+simülatörle geçti. **2 Eki 2026 gece itibarıyla hepsi canlı:** Railway/Vercel dağıtıldı, SNS HTTPS aboneliği onaylı ve gerçek olaylar
+işleniyor, admin ekranı açık, SES üretim erişimi GRANTED (50.000/gün, 14/sn), Supabase Auth SMTP → SES
+(`hesap@paemisyon.com`, port 465, `paemisyon-smtp` IAM kullanıcısı; Türkçe şablonlar; şifre sıfırlama
+postası SES olaylarıyla doğrulandı). Kalan: ilk duyuru metni ve kademeli gönderim (§5), SMTP kullanıcısının
+politikasını daraltma (isteğe bağlı).
 
 ## 1. Keşif bulguları (canlı veriden, salt okunur)
 
