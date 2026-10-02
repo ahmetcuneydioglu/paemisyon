@@ -1,6 +1,9 @@
 # E-posta modülü tasarımı (Faz 3–5 onay belgesi)
 
-Tarih: 2 Ekim 2026. Durum: **onay bekliyor**, kod yazılmadı.
+Tarih: 2 Ekim 2026. Durum: kararlar A–E onaylandı (2 Eki 2026); **Faz 3 ve 4 kodlandı ve commit'lendi**
+(`fca4197`, `74c30f6`), migration canlıda, kişi listesi dolu (480 canlı + 3.980 eski), duman testi
+simülatörle geçti. Açık: Railway değişkenleri + dağıtım, SNS HTTPS aboneliği, Faz 5 admin ekranı,
+üretim erişimi (03-uretim-erisimi-basvurusu.md).
 
 ## 1. Keşif bulguları (canlı veriden, salt okunur)
 
