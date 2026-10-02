@@ -87,8 +87,8 @@ describe('özel bloklar', () => {
 describe('mağaza rozetleri', () => {
   it(':::magazalar App Store ve Google Play görsellerini bağlantıyla üretir', () => {
     const html = markdownToHtml('A\n\n:::magazalar\n:::\n\nB');
-    expect(html).toContain('apps.apple.com');
-    expect(html).toContain('play.google.com');
+    expect(html).toContain('paemisyon.com/appstore');
+    expect(html).toContain('paemisyon.com/play');
     expect(html).toContain('img/appStore.png');
     expect(html).not.toContain('magazalar');
   });
