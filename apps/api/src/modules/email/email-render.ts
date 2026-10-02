@@ -231,11 +231,8 @@ ${preview ? `<div style="display:none;max-height:0;overflow:hidden;opacity:0;mso
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="bg" style="background:#eef1f6;">
 <tr><td align="center" style="padding:24px 12px;">
   <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="max-width:600px;width:100%;">
-    <tr><td class="band" bgcolor="#173f71" style="background:#173f71;border-radius:12px 12px 0 0;padding:18px 28px;">
-      <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr>
-        <td style="padding-right:12px;"><a href="${esc(EMAIL_CONFIG.brand.siteUrl)}" target="_blank" rel="noopener"><img src="${EMAIL_CONFIG.brand.iconUrl}" width="44" height="44" alt="" style="display:block;border:0;border-radius:10px;width:44px;height:44px;"></a></td>
-        <td style="font-family:${FONT};font-size:22px;font-weight:800;letter-spacing:-.01em;color:#ffffff;">${esc(input.fromName)}</td>
-      </tr></table>
+    <tr><td class="band" bgcolor="#173f71" style="background:#173f71;border-radius:12px 12px 0 0;padding:20px 28px;">
+      <a href="${esc(EMAIL_CONFIG.brand.siteUrl)}" target="_blank" rel="noopener" style="text-decoration:none;"><img src="${EMAIL_CONFIG.brand.logoUrl}" width="${EMAIL_CONFIG.brand.logoW}" height="${EMAIL_CONFIG.brand.logoH}" alt="${esc(input.fromName)}" style="display:block;border:0;width:${EMAIL_CONFIG.brand.logoW}px;height:${EMAIL_CONFIG.brand.logoH}px;color:#ffffff;font-family:${FONT};font-size:22px;font-weight:800;"></a>
     </td></tr>
     <tr><td class="card" style="background:#ffffff;border-radius:0 0 12px 12px;padding:32px;font-family:${FONT};">
       ${styledBody}
