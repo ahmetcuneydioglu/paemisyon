@@ -12,6 +12,7 @@ import { AdminModule } from './modules/admin/admin.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { BillingModule } from './modules/billing/billing.module';
 import { CoachModule } from './modules/coach/coach.module';
+import { EmailModule } from './modules/email/email.module';
 import { ExamsModule } from './modules/exams/exams.module';
 import { CatalogModule } from './modules/catalog/catalog.module';
 import { HealthModule } from './modules/health/health.module';
@@ -75,6 +76,7 @@ import { UsersModule } from './modules/users/users.module';
     HealthModule,
     UsersModule,
     NotificationsModule,
+    EmailModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })

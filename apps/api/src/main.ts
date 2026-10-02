@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+import { text as textBody } from 'express';
 import { ValidationPipe, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AppModule } from './app.module';
@@ -43,6 +44,10 @@ async function bootstrap() {
 
   // API versiyonlama (Doc 7): tüm uçlar /api/v1 altında
   app.setGlobalPrefix('api/v1');
+
+  // Amazon SNS, SES olaylarını text/plain gövdeyle POST eder; varsayılan JSON
+  // ayrıştırıcı bunu okumaz. Yalnız bu yol için metin gövdesi kabul edilir.
+  app.use('/api/v1/email/ses-events', textBody({ type: '*/*', limit: '1mb' }));
 
   // Girdi doğrulama sınırda; iç katman temiz kalır (Doc 3)
   app.useGlobalPipes(

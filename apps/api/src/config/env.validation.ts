@@ -55,6 +55,29 @@ class EnvironmentVariables {
   @IsString()
   @IsOptional()
   BILLING_TRUST_LOCAL_STOREKIT?: string;
+
+  // E-posta (docs/47-eposta-ses). AWS anahtarları SDK'nın varsayılan zincirinden
+  // (AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY); yoksa SES sessizce kapalı.
+  @IsString()
+  @IsOptional()
+  AWS_REGION?: string;
+
+  @IsString()
+  @IsOptional()
+  EMAIL_SES_TOPIC_ARN?: string;
+
+  @IsString()
+  @IsOptional()
+  EMAIL_PUBLIC_BASE_URL?: string;
+
+  @IsString()
+  @IsOptional()
+  EMAIL_API_BASE_URL?: string;
+
+  // '0' → gönderici işçi ve bakım cron'u kapalı (lokal geliştirme).
+  @IsString()
+  @IsOptional()
+  EMAIL_WORKER?: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {
