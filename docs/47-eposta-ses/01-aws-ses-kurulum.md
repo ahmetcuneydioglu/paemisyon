@@ -74,13 +74,16 @@ CLI şu an kök hesap kimliğiyle çalışıyor. Yapılacak:
   "Version": "2012-10-17",
   "Statement": [
     { "Effect": "Allow", "Action": ["ses:SendEmail", "ses:SendRawEmail"], "Resource": "*",
-      "Condition": { "StringEquals": { "ses:configuration-set": ["paemisyon-islem", "paemisyon-duyuru"] } } },
+      "Condition": { "StringLike": { "ses:FromAddress": ["*@paemisyon.com", "*@duyuru.paemisyon.com"] } } },
     { "Effect": "Allow", "Action": ["ses:GetAccount", "ses:GetEmailIdentity", "ses:ListSuppressedDestinations",
       "ses:GetSuppressedDestination", "ses:PutSuppressedDestination", "ses:DeleteSuppressedDestination"], "Resource": "*" }
   ]
 }
 ```
 
+   **Not (2 Eki 2026):** ilk sürümde koşul `ses:configuration-set` idi; bu anahtar SES v2 `SendEmail`
+   çağrısında dolmadığı için izin hiç uygulanmıyordu (IAM simülasyonu: implicitDeny, eksik bağlam). Koşul
+   `ses:FromAddress` ile değiştirildi ve çalıştı.
 3. Security credentials → Create access key → "Application running outside AWS". Anahtar yalnız Railway
    (API) değişkenlerine girilir: `AWS_REGION`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`. Repoya ve
    `.env.example`'a değer yazılmaz.
