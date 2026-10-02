@@ -14,6 +14,7 @@ export type EmailContactStatus =
 export type Audience = {
   sources?: string[];
   legacyYears?: number[];
+  tags?: string[];
   excludeCampaignIds?: string[];
 };
 
@@ -120,6 +121,7 @@ export type EmailContact = {
   unsubscribedAt: string | null;
   lastSentAt: string | null;
   softBounceCount: number;
+  tags?: string[];
 };
 
 export const CAMPAIGN_STATUS: Record<

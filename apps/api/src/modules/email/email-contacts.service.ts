@@ -124,6 +124,7 @@ export class EmailContactsService {
     status?: EmailContactStatus;
     source?: string;
     legacyYear?: number;
+    tag?: string;
     search?: string;
     page?: number;
     pageSize?: number;
@@ -134,6 +135,7 @@ export class EmailContactsService {
       status: q.status,
       source: q.source as Prisma.EmailContactWhereInput['source'],
       legacyYear: q.legacyYear,
+      ...(q.tag ? { tags: { has: q.tag } } : {}),
       ...(q.search
         ? {
             OR: [
@@ -167,6 +169,7 @@ export class EmailContactsService {
         unsubscribedAt: c.unsubscribedAt,
         lastSentAt: c.lastSentAt,
         softBounceCount: c.softBounceCount,
+        tags: c.tags,
       })),
       meta: {
         page,

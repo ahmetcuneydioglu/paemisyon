@@ -29,6 +29,7 @@ export default function EmailContactsPage() {
   const [status, setStatus] = useState<"" | EmailContactStatus>("");
   const [source, setSource] = useState("");
   const [year, setYear] = useState("");
+  const [tag, setTag] = useState("");
   const [searchInput, setSearchInput] = useState("");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
@@ -37,6 +38,7 @@ export default function EmailContactsPage() {
   if (status) params.set("status", status);
   if (source) params.set("source", source);
   if (year) params.set("legacyYear", year);
+  if (tag) params.set("tag", tag);
   if (search) params.set("search", search);
 
   const q = useQuery({
@@ -133,6 +135,18 @@ export default function EmailContactsPage() {
               ))}
             </select>
           </label>
+          <label className="block">
+            <span className="block text-xs text-slate-500">Etiket</span>
+            <input
+              value={tag}
+              onChange={(e) => {
+                setTag(e.target.value.trim());
+                setPage(1);
+              }}
+              className="mt-1 w-40 rounded border border-slate-300 px-2 py-1"
+              placeholder="brevo_first300"
+            />
+          </label>
           <label className="block grow">
             <span className="block text-xs text-slate-500">
               Ara (e-posta / ad)
@@ -183,6 +197,8 @@ export default function EmailContactsPage() {
                       <td className="py-2 pr-3 text-xs">
                         {SOURCE_LABEL[c.source] ?? c.source}
                         {c.legacyYear ? ` · ${c.legacyYear}` : ""}
+                        {c.tags?.length ? ` · ${c.tags.join(", ")}` : ""}
+                        {c.tags?.length ? ` · ${c.tags.join(", ")}` : ""}
                       </td>
                       <td className="py-2 pr-3">
                         <span

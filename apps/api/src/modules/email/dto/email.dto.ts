@@ -30,6 +30,7 @@ export class UpdatePreferencesDto {
 export class AudienceDto {
   @IsOptional() @IsArray() @IsString({ each: true }) sources?: string[];
   @IsOptional() @IsArray() @IsInt({ each: true }) legacyYears?: number[];
+  @IsOptional() @IsArray() @IsString({ each: true }) tags?: string[];
   @IsOptional() @IsArray() @IsUUID('4', { each: true }) excludeCampaignIds?: string[];
 }
 
@@ -56,6 +57,7 @@ export class ContactsQueryDto {
   @IsOptional() @IsEnum(EmailContactStatus) status?: EmailContactStatus;
   @IsOptional() @IsString() source?: string;
   @IsOptional() @Type(() => Number) @IsInt() legacyYear?: number;
+  @IsOptional() @IsString() @MaxLength(60) tag?: string;
   @IsOptional() @IsString() @MaxLength(100) search?: string;
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) page?: number;
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) @Max(200) pageSize?: number;

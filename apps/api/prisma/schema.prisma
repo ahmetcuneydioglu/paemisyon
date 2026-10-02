@@ -1112,6 +1112,8 @@ model EmailContact {
   unsubscribeReason String?            @map("unsubscribe_reason")
   /// 32 bayt rastgele, base64url. Çıkış/tercih bağlantısının tek kimliği.
   unsubscribeToken  String             @unique @map("unsubscribe_token")
+  /// Serbest etiketler (ör. brevo_first300); kitle süzgecinde `tags` ile seçilir.
+  tags              String[]           @default([])
   softBounceCount   Int                @default(0) @map("soft_bounce_count")
   lastSentAt        DateTime?          @map("last_sent_at")
   lastEventAt       DateTime?          @map("last_event_at")

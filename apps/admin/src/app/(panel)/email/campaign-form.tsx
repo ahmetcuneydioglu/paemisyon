@@ -16,6 +16,7 @@ export type CampaignInput = {
   bodyMarkdown: string;
   sources: string[];
   legacyYears: number[];
+  tags: string;
   dailyCap: number;
   sendRatePerSec: number;
   scheduledAt: string;
@@ -32,6 +33,7 @@ export const EMPTY: CampaignInput = {
   bodyMarkdown: "# Merhaba {{ad}}\n\n",
   sources: ["legacy_paem705"],
   legacyYears: [2023],
+  tags: "",
   dailyCap: 150,
   sendRatePerSec: 1,
   scheduledAt: "",
@@ -49,6 +51,7 @@ export function fromCampaign(c: EmailCampaign): CampaignInput {
     bodyMarkdown: c.bodyMarkdown,
     sources: c.audience.sources ?? [],
     legacyYears: c.audience.legacyYears ?? [],
+    tags: (c.audience.tags ?? []).join(", "),
     dailyCap: c.dailyCap,
     sendRatePerSec: Number(c.sendRatePerSec),
     scheduledAt: c.scheduledAt ? toLocalInput(c.scheduledAt) : "",
@@ -84,6 +87,10 @@ export function toPayload(f: CampaignInput) {
     audience: {
       sources: f.sources,
       legacyYears: f.sources.includes("legacy_paem705") ? f.legacyYears : [],
+      tags: f.tags
+        .split(",")
+        .map((t) => t.trim())
+        .filter(Boolean),
     },
     dailyCap: f.dailyCap,
     sendRatePerSec: f.sendRatePerSec,
@@ -274,6 +281,16 @@ export function CampaignForm({
             ))}
           </div>
         )}
+        <label className="mt-3 block">
+          Etiket (virgülle; dolu ise YALNIZ bu etiketli kişiler, ör.{" "}
+          <code>brevo_first300</code>)
+          <input
+            disabled={locked}
+            value={f.tags}
+            onChange={(e) => set("tags", e.target.value)}
+            className={input}
+          />
+        </label>
         <p className="mt-2 text-xs text-slate-500">
           Yalnız abone olan ve bu konu kategorisini kapatmamış kişiler alır;
           bounce/şikâyet/bastırılmış adresler hiçbir zaman girmez.

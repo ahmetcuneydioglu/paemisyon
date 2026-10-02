@@ -10,6 +10,7 @@ import type { UpsertCampaignDto } from './dto/email.dto';
 export type Audience = {
   sources?: string[];
   legacyYears?: number[];
+  tags?: string[];
   excludeCampaignIds?: string[];
 };
 
@@ -31,6 +32,7 @@ export class EmailCampaignsService {
       preferences: { none: { topic, subscribed: false } },
       ...(sources.length ? { source: { in: sources } } : {}),
       ...(a.legacyYears?.length ? { legacyYear: { in: a.legacyYears } } : {}),
+      ...(a.tags?.length ? { tags: { hasSome: a.tags } } : {}),
       ...(a.excludeCampaignIds?.length
         ? { sends: { none: { campaignId: { in: a.excludeCampaignIds } } } }
         : {}),
