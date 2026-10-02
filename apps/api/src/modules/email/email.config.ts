@@ -50,7 +50,7 @@ export const EMAIL_CONFIG = {
     ],
   },
   /** Gönderim penceresi (İstanbul saati, [başlangıç, bitiş)). Dışında işçi kampanya göndermez; günlük tavan gece yarısı sıfırlandığı için kalan parti sabah gider. */
-  sendWindow: { startHour: 9, endHour: 21 },
+  sendWindow: { startHour: 15, endHour: 21 },
   /** Hesap 24 saat kotasının bu oranı dolunca işçi durur. */
   accountQuotaStopRatio: 0.8,
   /** Bir tick'te en çok bu kadar gönderim (işçi 30 sn'de bir çalışır). */
