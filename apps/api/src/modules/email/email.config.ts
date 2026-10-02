@@ -25,10 +25,8 @@ export const EMAIL_CONFIG = {
   },
   /** Şablon marka varlıkları (web'de yayımlı; posta istemcileri görseli https'ten yükler). */
   brand: {
-    /** Lacivert bant için BEYAZ logotip (webdeki mobileLogo.png, 137×40). */
-    logoUrl: 'https://www.paemisyon.com/img/mobileLogo.png',
-    logoW: 137,
-    logoH: 40,
+    /** Uygulama ikonu (lacivert kare, beyaz p); bantta beyaz kutu içinde gösterilir ki banda karışmasın. */
+    iconUrl: 'https://www.paemisyon.com/apple-touch-icon.png',
     siteUrl: 'https://www.paemisyon.com',
     appStore: {
       url: 'https://apps.apple.com/tr/app/paemisyon/id6802087692',
