@@ -23,7 +23,7 @@ kimlik ve yapılandırma seti. Secret değer içermez.
 | Kimlik | `duyuru.paemisyon.com` | Easy DKIM RSA 2048, MAIL FROM `bounce.duyuru.paemisyon.com`, varsayılan set `paemisyon-duyuru` |
 | Yapılandırma seti | `paemisyon-islem` | itibar metrikleri açık, bastırma BOUNCE+COMPLAINT |
 | Yapılandırma seti | `paemisyon-duyuru` | itibar metrikleri açık, bastırma BOUNCE+COMPLAINT |
-| SNS konusu | `ses-events-paemisyon` | iki setin olay hedefi: SEND, DELIVERY, BOUNCE, COMPLAINT, REJECT, DELIVERY_DELAY, CLICK, RENDERING_FAILURE |
+| SNS konusu | `ses-events-paemisyon` | iki setin olay hedefi: SEND, DELIVERY, BOUNCE, COMPLAINT, REJECT, DELIVERY_DELAY, RENDERING_FAILURE. **CLICK yok** (4 Eki 2026): açıkken SES her bağlantıyı ortak `*.awstrack.me` alan adına çeviriyordu; From ile uyumsuz, paylaşılan itibarlı bağlantı Gmail'de spam sinyali |
 
 Webhook aboneliği (HTTPS) Faz 4'te eklenir. OPEN olayı bilerek yok (açılma takibi kapalı).
 

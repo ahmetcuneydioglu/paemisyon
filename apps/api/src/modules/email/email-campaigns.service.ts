@@ -171,7 +171,11 @@ export class EmailCampaignsService {
     return { html, text: htmlToText(html) };
   }
 
-  /** Test postası: admin'in adresine, çıkış başlıkları olmadan, kampanya etiketiyle değil. */
+  /**
+   * Test postası: admin'in adresine, kampanya etiketiyle değil. Çıkış başlıkları canlı gönderimle
+   * aynı biçimde eklenir (Gmail toplu posta kuralı; test canlıyı temsil etmeli); `ornek` token'ı
+   * hiçbir kişiye karşılık gelmez, tek tık çıkış 404 döner ve kimseyi etkilemez.
+   */
   async sendTest(id: string, to: string) {
     const c = await this.prisma.emailCampaign.findUnique({ where: { id } });
     if (!c) throw new NotFoundException('Kampanya bulunamadı.');
@@ -191,6 +195,10 @@ export class EmailCampaignsService {
       html,
       text: htmlToText(html),
       configurationSet: EMAIL_CONFIG.configurationSets.duyuru,
+      unsubscribe: {
+        url: `${EMAIL_CONFIG.apiBaseUrl}/email/unsubscribe/ornek`,
+        mailto: `${EMAIL_CONFIG.defaultFrom.replyTo}?subject=abonelikten-cik`,
+      },
       tags: { campaign: 'test' },
     });
     if (c.status === 'draft')
