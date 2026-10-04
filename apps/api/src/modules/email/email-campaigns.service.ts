@@ -180,10 +180,12 @@ export class EmailCampaignsService {
    * aynı biçimde eklenir (Gmail toplu posta kuralı; test canlıyı temsil etmeli); `ornek` token'ı
    * hiçbir kişiye karşılık gelmez, tek tık çıkış 404 döner ve kimseyi etkilemez.
    */
-  async sendTest(id: string, to: string) {
+  async sendTest(id: string, to: string, fromOverride?: string) {
     const c = await this.prisma.emailCampaign.findUnique({ where: { id } });
     if (!c) throw new NotFoundException('Kampanya bulunamadı.');
-    this.assertFrom(c.fromEmail);
+    // Gönderen alan adı karşılaştırması için (ör. kök alan ile duyuru alt alanı A/B'si).
+    const fromEmail = fromOverride ?? c.fromEmail;
+    this.assertFrom(fromEmail);
     if (!this.ses.enabled) throw new BadRequestException('SES yapılandırılmadı.');
     const html = fillRecipient(this.render(c), {
       unsubscribeUrl: `${EMAIL_CONFIG.publicBaseUrl}/eposta/abonelik/ornek`,
@@ -193,7 +195,7 @@ export class EmailCampaignsService {
     });
     const r = await this.ses.send({
       fromName: c.fromName,
-      fromEmail: c.fromEmail,
+      fromEmail,
       to,
       replyTo: c.replyTo,
       subject: `[TEST] ${c.subject}`,

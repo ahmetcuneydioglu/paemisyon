@@ -6,6 +6,7 @@
  * Çalıştırma (apps/api içinden; AWS anahtarları ortamda, EMAIL_WORKER=0):
  *   npx ts-node scripts/email-send-test.ts                      # kampanyaları listeler
  *   npx ts-node scripts/email-send-test.ts <kampanyaId> <alıcı>  # test postası gönderir
+ *   npx ts-node scripts/email-send-test.ts <kampanyaId> <alıcı> <gönderen>  # gönderen alan A/B'si
  */
 import 'reflect-metadata';
 import { NestFactory } from '@nestjs/core';
@@ -15,7 +16,7 @@ import { EmailCampaignsService } from '../src/modules/email/email-campaigns.serv
 
 async function main() {
   process.env.EMAIL_WORKER = '0';
-  const [campaignId, to] = process.argv.slice(2);
+  const [campaignId, to, from] = process.argv.slice(2);
   const app = await NestFactory.createApplicationContext(AppModule, { logger: ['error', 'warn'] });
   try {
     const prisma = app.get(PrismaService);
@@ -28,8 +29,8 @@ async function main() {
       for (const c of list) console.log(`${c.id}  [${c.status}]  ${c.name} — ${c.subject}`);
       return;
     }
-    const r = await app.get(EmailCampaignsService).sendTest(campaignId, to);
-    console.log('gönderildi:', to, 'SES MessageId:', r.messageId);
+    const r = await app.get(EmailCampaignsService).sendTest(campaignId, to, from);
+    console.log('gönderildi:', to, from ? `(gönderen ${from})` : '', 'SES MessageId:', r.messageId);
   } finally {
     await app.close();
   }
