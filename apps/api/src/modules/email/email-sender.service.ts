@@ -128,6 +128,7 @@ export class EmailSenderService {
             template,
             { unsubscribeToken: s.unsubscribe_token, displayName: s.display_name },
             c.id,
+            s.id,
           );
           try {
             const r = await this.ses.send({

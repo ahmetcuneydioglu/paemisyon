@@ -7,6 +7,8 @@ import { fillRecipient, htmlToText, renderCampaignHtml } from './email-render';
 import { SesService } from './ses.service';
 import type { UpsertCampaignDto } from './dto/email.dto';
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 export type Audience = {
   sources?: string[];
   legacyYears?: number[];
@@ -157,6 +159,7 @@ export class EmailCampaignsService {
       bodyMarkdown: c.bodyMarkdown,
       siteUrl: EMAIL_CONFIG.publicBaseUrl,
       fromName: c.fromName,
+      clickBaseUrl: `${EMAIL_CONFIG.apiBaseUrl}/email/c`,
     });
   }
 
@@ -166,6 +169,7 @@ export class EmailCampaignsService {
     const html = fillRecipient(this.render(c), {
       unsubscribeUrl: `${EMAIL_CONFIG.publicBaseUrl}/eposta/abonelik/ornek`,
       preferencesUrl: `${EMAIL_CONFIG.publicBaseUrl}/eposta/abonelik/ornek`,
+      sendId: 'test',
       ad: 'Ayşe',
     });
     return { html, text: htmlToText(html) };
@@ -184,6 +188,7 @@ export class EmailCampaignsService {
     const html = fillRecipient(this.render(c), {
       unsubscribeUrl: `${EMAIL_CONFIG.publicBaseUrl}/eposta/abonelik/ornek`,
       preferencesUrl: `${EMAIL_CONFIG.publicBaseUrl}/eposta/abonelik/ornek`,
+      sendId: 'test',
       ad: 'Test',
     });
     const r = await this.ses.send({
@@ -317,12 +322,50 @@ export class EmailCampaignsService {
     template: string,
     contact: { unsubscribeToken: string; displayName: string | null },
     campaignId: string,
+    sendId: string,
   ) {
     const html = fillRecipient(template, {
       unsubscribeUrl: this.contacts.unsubscribeUrl(contact.unsubscribeToken, campaignId),
       preferencesUrl: this.contacts.preferencesUrl(contact.unsubscribeToken),
       ad: contact.displayName ?? '',
+      sendId,
     });
     return { html, text: htmlToText(html) };
+  }
+
+  /**
+   * Tıklama yönlendirmesi kaydı. Ham olay her tıklamada, kampanya sayacı alıcı başına
+   * bir kez (ilk tıklama) artar. Bilinmeyen/test kimliği sessizce yok sayılır;
+   * yönlendirme kayıttan bağımsızdır. IP/kullanıcı aracısı tutulmaz.
+   */
+  async recordClick(sendId: string, url: string) {
+    if (!UUID_RE.test(sendId)) return;
+    const s = await this.prisma.emailSend.findUnique({
+      where: { id: sendId },
+      select: { id: true, campaignId: true, email: true, sesMessageId: true },
+    });
+    if (!s?.sesMessageId) return;
+    const now = new Date();
+    await this.prisma.emailEvent
+      .create({
+        data: {
+          sesMessageId: s.sesMessageId,
+          sendId: s.id,
+          type: 'click',
+          recipient: s.email,
+          payload: { url, source: 'redirect' },
+          occurredAt: now,
+        },
+      })
+      .catch(() => undefined);
+    const first = await this.prisma.emailSend.updateMany({
+      where: { id: s.id, firstClickedAt: null },
+      data: { firstClickedAt: now },
+    });
+    if (first.count)
+      await this.prisma.emailCampaign.update({
+        where: { id: s.campaignId },
+        data: { clickedCount: { increment: 1 } },
+      });
   }
 }

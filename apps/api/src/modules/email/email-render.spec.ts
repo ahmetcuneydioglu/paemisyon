@@ -1,4 +1,10 @@
-import { fillRecipient, htmlToText, markdownToHtml, renderCampaignHtml } from './email-render';
+import {
+  fillRecipient,
+  htmlToText,
+  isTrackableUrl,
+  markdownToHtml,
+  renderCampaignHtml,
+} from './email-render';
 import { canonicalString, isValidCertUrl } from './sns-signature';
 import { maskEmail } from './email-contacts.service';
 
@@ -26,11 +32,50 @@ describe('e-posta şablonu', () => {
       unsubscribeUrl: 'https://api/u/t1',
       preferencesUrl: 'https://web/p/t1',
       ad: 'Ayşe <b>',
+      sendId: 'test',
     });
     expect(html).toContain('href="https://api/u/t1"');
     expect(html).toContain('Selam Ayşe &lt;b&gt;');
     expect(html).not.toContain('%%');
     expect(html).toContain('color-scheme');
+  });
+
+  it('tıklama ölçümü: kendi bağlantılarımız yönlendirmeden geçer, çıkış bağlantısı geçmez', () => {
+    const t = renderCampaignHtml({
+      subject: 'S',
+      bodyMarkdown: '[PAEM 10](https://www.paemisyon.com/paem-cikmis-sorular/paem-10-2026?a=1&b=2) [dış](https://example.com/x)',
+      siteUrl: 'https://paemisyon.com',
+      fromName: 'Paemisyon',
+      clickBaseUrl: 'https://api.paemisyon.com/api/v1/email/c',
+    });
+    const html = fillRecipient(t, {
+      unsubscribeUrl: 'https://api.paemisyon.com/api/v1/email/unsubscribe/t1',
+      preferencesUrl: 'https://paemisyon.com/eposta/abonelik/t1',
+      ad: '',
+      sendId: '6f1c2a9e-0000-4000-8000-000000000001',
+    });
+    expect(html).toContain(
+      'href="https://api.paemisyon.com/api/v1/email/c/6f1c2a9e-0000-4000-8000-000000000001?u=' +
+        encodeURIComponent('https://www.paemisyon.com/paem-cikmis-sorular/paem-10-2026?a=1&b=2') +
+        '"',
+    );
+    expect(html).toContain('href="https://example.com/x"');
+    expect(html).toContain('href="https://api.paemisyon.com/api/v1/email/unsubscribe/t1"');
+    expect(html).toContain('href="https://paemisyon.com/eposta/abonelik/t1"');
+    expect(html).not.toContain('awstrack');
+    expect(html).not.toContain('%%');
+  });
+
+  it('yönlendirme hedefi yalnız paemisyon.com ve marka hesapları', () => {
+    expect(isTrackableUrl('https://www.paemisyon.com/play')).toBe(true);
+    expect(isTrackableUrl('https://t.me/paemisyon')).toBe(true);
+    expect(isTrackableUrl('https://t.me/baskakanal')).toBe(false);
+    expect(isTrackableUrl('https://paemisyon.com.evil.com/')).toBe(false);
+    expect(isTrackableUrl('https://evilpaemisyon.com/')).toBe(false);
+    expect(isTrackableUrl('http://www.paemisyon.com/')).toBe(false);
+    expect(isTrackableUrl('https://x@www.paemisyon.com/')).toBe(false);
+    expect(isTrackableUrl('https://paemisyon.com/eposta/abonelik/t1')).toBe(false);
+    expect(isTrackableUrl('javascript:alert(1)')).toBe(false);
   });
 
   it('düz metin alternatifi bağlantı adresini korur', () => {

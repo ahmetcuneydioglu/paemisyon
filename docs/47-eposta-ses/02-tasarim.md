@@ -112,6 +112,12 @@ günlük oranlara bakıp artırır (otomatik katlama yok; karar insanın).
   **hepsinden çıkış**; 200 döner, kimlik göstermez. Hız sınırı IP başına 30/dk.
 - `GET /email/preferences/:token`, `PUT /email/preferences/:token` — web sayfası için (konu tercihleri,
   hepsinden çık). Token geçersizse 404, aynı mesaj.
+- `GET /email/c/:sendId?u=<hedef>` — birinci taraf tıklama ölçümü (4 Eki 2026). Şablon, paemisyon.com ve
+  marka sosyal hesaplarına giden bağlantıları buradan geçirir (çıkış/tercih bağlantıları hariç); hedef bu listede
+  değilse siteye düşer (açık yönlendirici değil). Ham olay `email_events` (type click, payload.source=redirect),
+  tekil sayaç `email_sends.first_clicked_at` → `email_campaigns.clicked_count`. SES CLICK izlemesi kapalı:
+  bağlantıları ortak `awstrack.me` alan adına çevirip Gmail itibarını bozuyordu. Not: Outlook Safe Links gibi
+  tarayıcılar bağlantıyı önceden açıp sayacı şişirebilir.
 - `POST /email/ses-events` — SNS. İmza `sns-validator` ile doğrulanır (sertifika yalnız
   `sns.eu-central-1.amazonaws.com`), `TopicArn` env ile birebir, `SubscriptionConfirmation` otomatik
   onaylanır, `Notification` içindeki SES olayı işlenir: bounce `Permanent` → kişi `bounced`; `Transient` →

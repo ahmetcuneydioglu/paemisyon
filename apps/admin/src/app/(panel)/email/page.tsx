@@ -190,6 +190,7 @@ export default function EmailPage() {
                   <th className="py-2 pr-3 text-right">Bounce</th>
                   <th className="py-2 pr-3 text-right">Şikâyet</th>
                   <th className="py-2 pr-3 text-right">Çıkış</th>
+                  <th className="py-2 pr-3 text-right">Tıklama</th>
                   <th className="py-2">Tarih</th>
                 </tr>
               </thead>
@@ -223,6 +224,7 @@ export default function EmailPage() {
                     <td className="py-2 pr-3 text-right">
                       {c.unsubscribedCount}
                     </td>
+                    <td className="py-2 pr-3 text-right">{c.clickedCount}</td>
                     <td className="py-2 text-xs text-slate-500">
                       {fmtDate(c.startedAt ?? c.createdAt)}
                     </td>

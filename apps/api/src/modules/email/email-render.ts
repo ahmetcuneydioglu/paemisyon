@@ -7,6 +7,7 @@ import { EMAIL_CONFIG } from './email.config';
  * Alıcıya özel alanlar şablonda yer tutucu kalır ve gönderim anında doldurulur:
  *   %%UNSUBSCRIBE_URL%%  tek tık çıkış (API), %%PREFERENCES_URL%% tercih sayfası (web),
  *   %%AD%%  kişinin adı (yoksa boş). Markdown içinde {{ad}} yazılabilir.
+ *   %%SEND_ID%%  tıklama yönlendirmesindeki gönderim kimliği (bkz. trackLinks).
  */
 export type RenderInput = {
   subject: string;
@@ -14,6 +15,8 @@ export type RenderInput = {
   bodyMarkdown: string;
   siteUrl: string;
   fromName: string;
+  /** Verilirse izlenebilir bağlantılar bu köke yönlendirilir (`<kök>/%%SEND_ID%%?u=…`). */
+  clickBaseUrl?: string;
 };
 
 const SANITIZE: sanitizeHtml.IOptions = {
@@ -205,7 +208,7 @@ export function renderCampaignHtml(input: RenderInput): string {
       '<img style="max-width:100%;height:auto;border:0;display:block;margin:0 0 14px;" ',
     );
 
-  return `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  const html = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -252,13 +255,52 @@ ${preview ? `<div style="display:none;max-height:0;overflow:hidden;opacity:0;mso
 </table>
 </body>
 </html>`;
+  return input.clickBaseUrl ? trackLinks(html, input.clickBaseUrl) : html;
 }
 
-export type RecipientFields = { unsubscribeUrl: string; preferencesUrl: string; ad: string };
+/**
+ * Tıklama yönlendirmesinin kabul ettiği hedefler: paemisyon.com (ve alt alanları) ile
+ * markanın sosyal hesapları. Uç açık yönlendiriciye dönmesin diye liste dışı hedef
+ * yönlendirilmez; çıkış/tercih bağlantıları ölçülmez.
+ */
+export function isTrackableUrl(raw: string): boolean {
+  let u: URL;
+  try {
+    u = new URL(raw);
+  } catch {
+    return false;
+  }
+  if (u.protocol !== 'https:' || u.username || u.password) return false;
+  if (EMAIL_CONFIG.brand.social.some((x) => x.href === raw)) return true;
+  const own = u.hostname === 'paemisyon.com' || u.hostname.endsWith('.paemisyon.com');
+  return own && !u.pathname.startsWith('/eposta/abonelik') && !u.pathname.startsWith('/api/');
+}
+
+/**
+ * Birinci taraf tıklama ölçümü: izlenebilir her `href` kendi API'mizden geçer.
+ * SES'in CLICK izlemesi bağlantıları ortak awstrack.me alan adına çevirip Gmail
+ * itibarını bozduğu için kapalı (4 Eki 2026); bağlantılar böylece paemisyon.com'da kalır.
+ */
+export function trackLinks(html: string, clickBaseUrl: string): string {
+  return html.replace(/href="(https:\/\/[^"]+)"/g, (m, href: string) => {
+    const url = href.replace(/&amp;/g, '&');
+    if (!isTrackableUrl(url)) return m;
+    return `href="${clickBaseUrl}/%%SEND_ID%%?u=${encodeURIComponent(url)}"`;
+  });
+}
+
+export type RecipientFields = {
+  unsubscribeUrl: string;
+  preferencesUrl: string;
+  ad: string;
+  /** Gerçek gönderimde email_sends.id; test/önizlemede `test` (tıklama kaydedilmez). */
+  sendId: string;
+};
 
 export function fillRecipient(template: string, f: RecipientFields): string {
   return template
     .replace(/%%UNSUBSCRIBE_URL%%/g, f.unsubscribeUrl)
     .replace(/%%PREFERENCES_URL%%/g, f.preferencesUrl)
-    .replace(/%%AD%%/g, esc(f.ad));
+    .replace(/%%AD%%/g, esc(f.ad))
+    .replace(/%%SEND_ID%%/g, encodeURIComponent(f.sendId));
 }

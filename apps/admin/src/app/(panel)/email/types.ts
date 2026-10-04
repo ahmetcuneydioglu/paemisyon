@@ -42,6 +42,8 @@ export type EmailCampaign = {
   bouncedCount: number;
   complainedCount: number;
   unsubscribedCount: number;
+  /** Tekil tıklayan alıcı (kendi yönlendirme ucumuz). */
+  clickedCount: number;
   createdAt: string;
 };
 

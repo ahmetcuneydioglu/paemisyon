@@ -161,7 +161,7 @@ export default function EmailCampaignPage() {
       {c.status !== "draft" && (
         <Card className="mb-4">
           <h2 className="mb-3 text-sm font-semibold">Gönderim</h2>
-          <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-6">
+          <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-7">
             <div>
               <div className="text-xs text-slate-500">Hedef</div>
               <div className="text-lg font-semibold">{c.targetedCount}</div>
@@ -193,6 +193,17 @@ export default function EmailCampaignPage() {
             <div>
               <div className="text-xs text-slate-500">Çıkış</div>
               <div className="text-lg font-semibold">{c.unsubscribedCount}</div>
+            </div>
+            <div>
+              <div className="text-xs text-slate-500">Tıklama</div>
+              <div className="text-lg font-semibold">
+                {c.clickedCount}
+                {c.deliveredCount > 0 && (
+                  <span className="ml-1 text-xs font-normal text-slate-500">
+                    %{((c.clickedCount / c.deliveredCount) * 100).toFixed(1)}
+                  </span>
+                )}
+              </div>
             </div>
           </div>
           <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-xs text-slate-600">

@@ -1,15 +1,36 @@
 import { Body, Controller, Get, Header, Param, Post, Put, Query, Redirect } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
+import { EmailCampaignsService } from './email-campaigns.service';
 import { EmailContactsService } from './email-contacts.service';
+import { EMAIL_CONFIG } from './email.config';
+import { isTrackableUrl } from './email-render';
 import { UpdatePreferencesDto } from './dto/email.dto';
 
 /**
- * Oturumsuz uçlar: çıkış ve tercih. Kimlik yalnız rastgele belirteçtir; yanıtlar
+ * Oturumsuz uçlar: çıkış, tercih ve tıklama yönlendirmesi. Kimlik yalnız rastgele belirteçtir; yanıtlar
  * adresi maskeli verir, geçersiz belirteçte tek tip 404.
  */
 @Controller('email')
 export class EmailPublicController {
-  constructor(private readonly contacts: EmailContactsService) {}
+  constructor(
+    private readonly contacts: EmailContactsService,
+    private readonly campaigns: EmailCampaignsService,
+  ) {}
+
+  /**
+   * Kampanya bağlantısı: tıklamayı kaydeder, hedefe 302 ile gönderir. Hedef yalnız
+   * paemisyon.com ve marka hesapları (açık yönlendirici değil); liste dışı hedef siteye düşer.
+   * Kayıt hatası yönlendirmeyi asla bozmaz.
+   */
+  @Get('c/:sendId')
+  @Throttle({ default: { ttl: 60_000, limit: 120 } })
+  @Header('Cache-Control', 'no-store')
+  @Redirect()
+  async click(@Param('sendId') sendId: string, @Query('u') u?: string) {
+    if (!u || !isTrackableUrl(u)) return { url: EMAIL_CONFIG.publicBaseUrl, statusCode: 302 };
+    await this.campaigns.recordClick(sendId, u).catch(() => undefined);
+    return { url: u, statusCode: 302 };
+  }
 
   /** RFC 8058 tek tık (Gmail/Yahoo "Abonelikten çık" düğmesi POST eder). */
   @Post('unsubscribe/:token')

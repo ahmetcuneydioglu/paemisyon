@@ -1172,6 +1172,8 @@ model EmailCampaign {
   bouncedCount      Int                 @default(0) @map("bounced_count")
   complainedCount   Int                 @default(0) @map("complained_count")
   unsubscribedCount Int                 @default(0) @map("unsubscribed_count")
+  /// Tekil tıklayan alıcı (kendi yönlendirme ucumuz, 4 Eki 2026; SES CLICK kapalı).
+  clickedCount      Int                 @default(0) @map("clicked_count")
   createdAt         DateTime            @default(now()) @map("created_at")
   updatedAt         DateTime            @updatedAt @map("updated_at")
 
@@ -1183,19 +1185,21 @@ model EmailCampaign {
 
 /// Kampanya × kişi. Tekillik ve çökme kurtarması burada (§4).
 model EmailSend {
-  id           String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  campaignId   String          @map("campaign_id") @db.Uuid
-  contactId    String          @map("contact_id") @db.Uuid
+  id             String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  campaignId     String          @map("campaign_id") @db.Uuid
+  contactId      String          @map("contact_id") @db.Uuid
   /// Gönderim anındaki adres (kişi sonradan değişse de iz kalır).
-  email        String
-  status       EmailSendStatus @default(queued)
-  sesMessageId String?         @unique @map("ses_message_id")
-  attempts     Int             @default(0)
-  claimedAt    DateTime?       @map("claimed_at")
-  sentAt       DateTime?       @map("sent_at")
-  lastEventAt  DateTime?       @map("last_event_at")
-  error        String?
-  createdAt    DateTime        @default(now()) @map("created_at")
+  email          String
+  status         EmailSendStatus @default(queued)
+  sesMessageId   String?         @unique @map("ses_message_id")
+  attempts       Int             @default(0)
+  claimedAt      DateTime?       @map("claimed_at")
+  sentAt         DateTime?       @map("sent_at")
+  lastEventAt    DateTime?       @map("last_event_at")
+  /// İlk tıklama; kampanyanın tekil tıklama sayacı buradan artar.
+  firstClickedAt DateTime?       @map("first_clicked_at")
+  error          String?
+  createdAt      DateTime        @default(now()) @map("created_at")
 
   campaign EmailCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
   contact  EmailContact  @relation(fields: [contactId], references: [id], onDelete: Cascade)
