@@ -6,10 +6,18 @@ import { config } from "@/lib/config";
 
 type Params = Promise<{ slug: string; no: string }>;
 
+/**
+ * ISR 24 saat (10 Ekim 2026): madde sayfaları `generateStaticParams` olmadan istek anında üretilir; binlerce madde
+ * adresini her gece gezen tarayıcılar 1 saatlik süreyle her saat yeni işlev çağrısı tetikliyordu (Vercel uyarısı:
+ * 5 saatte 33K çağrı). Madde metni ve soru sayıları günde bir tazelenir; içerik zaten günlük işlerle değişir.
+ */
+const MADDE_REVALIDATE_SECONDS = 86_400;
+
 async function getArticle(slug: string, no: string): Promise<LawArticleDetail | null> {
-  return publicApi<LawArticleDetail>(`/public/laws/${slug}/articles/${no}`, 3600).catch(
-    () => null,
-  );
+  return publicApi<LawArticleDetail>(
+    `/public/laws/${slug}/articles/${no}`,
+    MADDE_REVALIDATE_SECONDS,
+  ).catch(() => null);
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
