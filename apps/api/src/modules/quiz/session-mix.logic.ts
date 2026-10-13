@@ -112,3 +112,24 @@ export function pickTopicBalanced<T extends { id: string; topicId: string }>(
 
   return chosen;
 }
+
+/**
+ * Dönüş reçetesi (Doc 48 A6; Doc 24 §7.1): uzun aradan dönen adaya teşhis
+ * değil ÖZGÜVEN — güçlü konularından kısa tur. Güçlü konuda yeterli soru
+ * yoksa havuzun geri kalanıyla tamamlanır (tur yine istenen sayıda dolar).
+ */
+export function pickComeback<T extends { id: string; topicId: string }>(
+  pool: readonly T[],
+  strongTopicIds: ReadonlySet<string>,
+  count: number,
+  shuffle: (items: T[]) => T[],
+): T[] {
+  const guclu = shuffle(pool.filter((q) => strongTopicIds.has(q.topicId)));
+  const secilen = guclu.slice(0, count);
+  if (secilen.length < count) {
+    const alinan = new Set(secilen.map((q) => q.id));
+    const kalan = shuffle(pool.filter((q) => !alinan.has(q.id)));
+    secilen.push(...kalan.slice(0, count - secilen.length));
+  }
+  return secilen;
+}

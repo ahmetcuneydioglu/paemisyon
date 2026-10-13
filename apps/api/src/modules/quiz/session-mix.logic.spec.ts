@@ -1,4 +1,4 @@
-import { mixQuota, pickMix, pickTopicBalanced, type MixPools } from './session-mix.logic';
+import { mixQuota, pickMix, pickTopicBalanced, type MixPools, pickComeback } from './session-mix.logic';
 
 /** Deterministik "shuffle": sırayı korur — testler öngörülebilir. */
 const identity = <T>(a: T[]): T[] => a;
@@ -90,5 +90,26 @@ describe('pickTopicBalanced', () => {
       'a2',
     ]);
     expect(pickTopicBalanced(pool, 10, identity)).toHaveLength(4);
+  });
+});
+
+describe('pickComeback — dönüşte güçlü konudan kısa tur (Doc 24 §7.1)', () => {
+  const soru = (id: string, topicId: string) => ({ id, topicId });
+  const kimlik = <T,>(a: T[]) => a;
+
+  it('güçlü konulardan seçer', () => {
+    const pool = [soru('1', 'zayif'), soru('2', 'guclu'), soru('3', 'guclu'), soru('4', 'diger')];
+    expect(pickComeback(pool, new Set(['guclu']), 2, kimlik).map((q) => q.id)).toEqual(['2', '3']);
+  });
+
+  it('güçlü konu yetmezse havuzun geri kalanıyla tamamlar (tur dolar)', () => {
+    const pool = [soru('1', 'zayif'), soru('2', 'guclu'), soru('4', 'diger')];
+    const r = pickComeback(pool, new Set(['guclu']), 3, kimlik);
+    expect(r.map((q) => q.id)).toEqual(['2', '1', '4']);
+  });
+
+  it('güçlü konu hiç yoksa (yeni kullanıcı) taze havuzdan seçer', () => {
+    const pool = [soru('1', 'a'), soru('2', 'b')];
+    expect(pickComeback(pool, new Set(), 5, kimlik)).toHaveLength(2);
   });
 });

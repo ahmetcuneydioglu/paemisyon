@@ -11,7 +11,7 @@ import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.ser
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { mixQuota, pickMix, pickTopicBalanced } from './session-mix.logic';
+import { mixQuota, pickMix, pickTopicBalanced, pickComeback } from './session-mix.logic';
 // Ağırlıklı kota + konu-dengeli seçim admin autofill ile ORTAK saf mantık.
 import {
   allocateQuota,
@@ -25,7 +25,7 @@ import {
   PERSONAL_EXAM_FREE_MAX_QUESTIONS,
 } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
-import { enZayifKonular } from '../../common/zayif-konu';
+import { enGucluKonular, enZayifKonular } from '../../common/zayif-konu';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
@@ -125,6 +125,9 @@ export class QuizService {
     }
     if (dto.mode === 'review' && acikKapsam) {
       throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
+    }
+    if (dto.recipe === 'comeback' && (dto.mode !== 'practice' || acikKapsam || dto.fromBookmarks)) {
+      throw new BadRequestException('Dönüş reçetesi yalnız kapsamsız alıştırmada çalışır.');
     }
     if (dto.fromBookmarks && (dto.mode !== 'practice' || acikKapsam)) {
       throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
@@ -309,7 +312,10 @@ export class QuizService {
         // havuzu daraltmak reçeteyi bozar, yalnız yeterli taze varsa daraltılır.
         const coachPool =
           fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
-        chosen = await this.pickCoachMix(userId, coachPool, count);
+        chosen =
+          dto.recipe === 'comeback'
+            ? await this.pickComebackMix(userId, coachPool, count)
+            : await this.pickCoachMix(userId, coachPool, count);
       } else if (dto.mode === 'practice' && (dto.courseId != null || dto.topicIds != null)) {
         const balancePool =
           fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
@@ -1605,6 +1611,29 @@ export class QuizService {
    * Kullanıcı verisi 3 sorguyla toplanır; sınava ≤30 gün kala reçete tersine
    * döner (yeni konu durur, yanlış turu ağırlaşır).
    */
+  /** Dönüş reçetesi: kullanıcının en güçlü 3 konusundan (Doc 48 A6). */
+  private async pickComebackMix(
+    userId: string,
+    pool: { id: string; currentVersionId: string | null; topicId: string }[],
+    count: number,
+  ): Promise<{ id: string; currentVersionId: string | null; topicId: string }[]> {
+    const progress = await this.prisma.userTopicProgress.findMany({
+      where: { userId },
+      select: { topicId: true, solvedCount: true, correctCount: true },
+    });
+    const strong = new Set(
+      enGucluKonular(
+        progress.map((p) => ({
+          topicId: p.topicId,
+          solved: p.solvedCount,
+          accuracy: p.solvedCount > 0 ? p.correctCount / p.solvedCount : 0,
+        })),
+        3,
+      ).map((p) => p.topicId),
+    );
+    return pickComeback(pool, strong, count, (a) => this.shuffle(a));
+  }
+
   private async pickCoachMix(
     userId: string,
     pool: { id: string; currentVersionId: string | null; topicId: string }[],

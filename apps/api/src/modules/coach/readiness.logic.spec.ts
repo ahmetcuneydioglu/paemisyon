@@ -1,4 +1,4 @@
-import { enZayifKonular, zayifMi } from '../../common/zayif-konu';
+import { enGucluKonular, enZayifKonular, zayifMi } from '../../common/zayif-konu';
 import { buildReadiness, KonuIlerlemesi } from './readiness.logic';
 
 const konu = (over: Partial<KonuIlerlemesi> & { topicId: string }): KonuIlerlemesi => ({
@@ -25,6 +25,18 @@ describe('zayıf konu — tek eşik (≥10 çözülmüş ve < %60)', () => {
       { id: 'd', solved: 50, accuracy: 0.9 },
     ];
     expect(enZayifKonular(rows, 2).map((r) => r.id)).toEqual(['c', 'b']);
+  });
+});
+
+describe('güçlü konu — dönüş reçetesi kaynağı (≥10 çözülmüş ve ≥ %70)', () => {
+  it('eşik ve sıralama', () => {
+    const rows = [
+      { id: 'a', solved: 9, accuracy: 0.95 }, // az veri
+      { id: 'b', solved: 20, accuracy: 0.7 }, // tam eşik güçlü
+      { id: 'c', solved: 12, accuracy: 0.9 },
+      { id: 'd', solved: 40, accuracy: 0.69 },
+    ];
+    expect(enGucluKonular(rows, 3).map((r) => r.id)).toEqual(['c', 'b']);
   });
 });
 

@@ -30,3 +30,20 @@ export function enZayifKonular<T extends { solved: number; accuracy: number }>(
     .sort((a, b) => a.accuracy - b.accuracy || b.solved - a.solved)
     .slice(0, limit);
 }
+
+/** Güçlü konu: dönüş turunun (Doc 24 §7.1) kaynağı — en az bu kadar çözülmüş. */
+export const GUCLU_MIN_COZULEN = 10;
+
+/** Bu doğruluk oranı ve üstü güçlüdür (0..1). */
+export const GUCLU_DOGRULUK_ESIGI = 0.7;
+
+/** Güçlü olanlardan en yüksek doğruluklu `limit` tanesi; eşitlikte daha çok çözülen önce. */
+export function enGucluKonular<T extends { solved: number; accuracy: number }>(
+  rows: readonly T[],
+  limit: number,
+): T[] {
+  return rows
+    .filter((r) => r.solved >= GUCLU_MIN_COZULEN && r.accuracy >= GUCLU_DOGRULUK_ESIGI)
+    .sort((a, b) => b.accuracy - a.accuracy || b.solved - a.solved)
+    .slice(0, limit);
+}

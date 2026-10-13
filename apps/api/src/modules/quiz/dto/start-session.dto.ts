@@ -24,6 +24,13 @@ export class StartSessionDto {
   @IsBoolean()
   fromBookmarks?: boolean;
 
+  /// Karışım reçetesi (Doc 48 A6). 'comeback' = uzun aradan dönüşte güçlü
+  /// konulardan kısa tur (Doc 24 §7.1). Yalnız kapsamsız practice; verilmezse
+  /// koç karışımı.
+  @IsOptional()
+  @IsIn(['coach', 'comeback'])
+  recipe?: 'coach' | 'comeback';
+
   /// Turun geliş kanalı (ölçüm). 'notif' = bildirim derin bağlantısı;
   /// 'home_*' = mobil yeni anasayfa (Doc 48 — anasayfadan tur başlatma oranı
   /// bu alandan ölçülür). Serbest metin kabul edilmez: kanal listesi burada.
