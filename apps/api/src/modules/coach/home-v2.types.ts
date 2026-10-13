@@ -96,7 +96,9 @@ export type TodayTaskKind =
 
 /** Görev kartının altındaki EN ÇOK 1 ikincil satır (D4). */
 export interface TodayTaskSecondary {
-  kind: 'stale_session' | 'wrongs';
+  /** stale_session: 1–7 gün önce yarım kalan tur · wrongs: yanlış tekrarı ·
+   *  warmup: deneme günü kısa ısınma. */
+  kind: 'stale_session' | 'wrongs' | 'warmup';
   title: string;
   subtitle: string;
   actionLabel: string;

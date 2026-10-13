@@ -13,6 +13,8 @@ import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import type { DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
 import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
+import { computeTodayTask, YarimTur } from './today-task.logic';
+import { enGucluKonular } from '../../common/zayif-konu';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
 
@@ -176,6 +178,23 @@ export class CoachService {
       exam: ctx.home.exam,
       readiness: ctx.home.readiness,
       focus: ctx.home.focus,
+      // Doc 48 A4 — görev kartı + eylem çubuğu: etiket ve davranış tek nesnede.
+      todayTask: computeTodayTask({
+        now: ctx.now,
+        trHour: ctx.trHour,
+        goal: ctx.user.dailyGoal,
+        answeredToday: ctx.answeredToday,
+        totalSolved: ctx.stats.totalSolved,
+        daysSinceLastActivity: ctx.daysSinceLastActivity,
+        daysToExam: ctx.daysToExam,
+        weekly: ctx.weekly,
+        daysLeftInWeek: ctx.home.daysLeftInWeek,
+        exams: { live: ctx.exams.live, todayUpcoming: ctx.exams.todayUpcoming },
+        activeSession: ctx.home.activeSession,
+        focus: ctx.home.focus,
+        readiness: ctx.home.readiness,
+        strongestTopic: ctx.home.strongestTopic,
+      }),
     };
   }
 
@@ -253,6 +272,7 @@ export class CoachService {
       cikmisKartAcik,
       topicProgress,
       odakSatiri,
+      yarimTurlar,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -386,6 +406,24 @@ export class CoachService {
           topic: { select: { name: true, deletedAt: true } },
         },
       }),
+      // Yarım alıştırma/tekrar/günlük turları (görev kartı — Doc 48 §4). Deneme
+      // ve arşiv sınavı kendi kuralıyla yaşar (süreli), burada yok.
+      this.prisma.quizSession.findMany({
+        where: { userId: user.id, status: 'in_progress', mode: { in: ['practice', 'review', 'daily'] } },
+        orderBy: { startedAt: 'desc' },
+        take: 3,
+        select: {
+          id: true,
+          mode: true,
+          totalQuestions: true,
+          startedAt: true,
+          topicIds: true,
+          topic: { select: { name: true } },
+          course: { select: { name: true } },
+          _count: { select: { answers: true } },
+          answers: { orderBy: { answeredAt: 'desc' }, take: 1, select: { answeredAt: true } },
+        },
+      }),
     ]);
 
     // ── Deneme durumları ──
@@ -504,6 +542,38 @@ export class CoachService {
     // ── Günün odağı (Doc 48 A5): dünün odağı ya da silinmiş kapsam → koç ──
     const focus = odagiCoz(odakSatiri, todayUtc);
 
+    // ── Görev kartı girdileri (Doc 48 A4) ──
+    // En taze yarım tur: son cevaba göre (cevapsızsa başlangıca).
+    const activeSession: YarimTur | null =
+      yarimTurlar
+        .map((s) => ({
+          sessionId: s.id,
+          mode: s.mode as YarimTur['mode'],
+          total: s.totalQuestions,
+          answered: s._count.answers,
+          startedAt: s.startedAt,
+          lastActivityAt: s.answers[0]?.answeredAt ?? s.startedAt,
+          scopeName:
+            s.mode === 'review'
+              ? 'Yanlış turu'
+              : s.mode === 'daily'
+                ? 'Günün Quizi'
+                : (s.topic?.name ??
+                  s.course?.name ??
+                  (s.topicIds.length > 0 ? `${s.topicIds.length} seçili mevzuat` : 'Koç turu')),
+        }))
+        .sort((a, b) => b.lastActivityAt.getTime() - a.lastActivityAt.getTime())[0] ?? null;
+    const enGuclu = enGucluKonular(
+      topicProgress.map((t) => ({
+        name: t.topic.name,
+        solved: t.solvedCount,
+        accuracy: t.solvedCount > 0 ? t.correctCount / t.solvedCount : 0,
+      })),
+      1,
+    )[0];
+    // Haftanın bugün dahil kalan günü (Pzt başlangıçlı UTC hafta; Pazar = 1).
+    const daysLeftInWeek = 7 - ((todayUtc.getUTCDay() + 6) % 7);
+
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
     // tarih girmeyen aday da geri sayımı ve sınav modunu görür).
@@ -618,7 +688,14 @@ export class CoachService {
           }
         : null,
       volume: { last7, prev7 },
-      home: { exam, readiness, focus },
+      home: {
+        exam,
+        readiness,
+        focus,
+        activeSession,
+        strongestTopic: enGuclu ? { name: enGuclu.name, accuracy: enGuclu.accuracy } : null,
+        daysLeftInWeek,
+      },
     };
   }
 }
@@ -628,6 +705,9 @@ interface HomeRaw {
   exam: ExamInfo;
   readiness: Readiness;
   focus: DailyFocusView;
+  activeSession: YarimTur | null;
+  strongestTopic: { name: string; accuracy: number } | null;
+  daysLeftInWeek: number;
 }
 
 /** Varsayılan odak: koç seçer (Doc 25 §5). */
