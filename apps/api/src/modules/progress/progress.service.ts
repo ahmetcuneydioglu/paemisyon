@@ -28,7 +28,7 @@ export interface LeaderboardRow {
   lastActive: string | null;
 }
 
-type SessionForProgress = {
+export type SessionForProgress = {
   topicId: string | null;
   correctCount: number;
   wrongCount: number;
@@ -42,6 +42,22 @@ export class ProgressService {
 
   /** Quiz tamamlanınca çağrılır: stats + konu ilerlemesi + streak + yanlışlar güncellenir. */
   async recordSessionCompletion(userId: string, session: SessionForProgress) {
+    await this.recordSessionProgress(userId, session, { countSession: true, activity: true });
+  }
+
+  /**
+   * Tur kapanınca ilerleme yazımı — TEK çekirdek (Doc 48 B-3).
+   *  - Tamamlama: tur sayılır (totalSessions), aktiflik güvencesi yazılır.
+   *  - Terk (tek aktif tur / bayat tur): çözülen cevaplar EMEK olarak yazılır
+   *    (istatistik, konu ilerlemesi, yanlış listesi) ama tur sayısına girmez;
+   *    aktiflik YAZILMAZ — o gün zaten cevap anında yazıldı, bugün kapatılan
+   *    eski tur bugünü "aktif" gösteremez.
+   */
+  async recordSessionProgress(
+    userId: string,
+    session: SessionForProgress,
+    opts: { countSession: boolean; activity: boolean },
+  ) {
     const solved = session.correctCount + session.wrongCount; // boş hariç
     // Uygulama günü (TR 04.00 — Doc 48 D2): seri, sayaçla aynı günü okur.
     const today = gunAnahtari();
@@ -86,13 +102,13 @@ export class ProgressService {
         update: {
           totalSolved: { increment: solved },
           totalCorrect: { increment: session.correctCount },
-          totalSessions: { increment: 1 },
+          ...(opts.countSession ? { totalSessions: { increment: 1 } } : {}),
         },
         create: {
           userId,
           totalSolved: solved,
           totalCorrect: session.correctCount,
-          totalSessions: 1,
+          totalSessions: opts.countSession ? 1 : 0,
         },
       });
 
@@ -125,7 +141,7 @@ export class ProgressService {
       // Aktiflik asıl olarak CEVAP ANINDA yazılır (touchActivity — Doc 48 D3);
       // burada yalnız güvence: aynı gün etkisiz. Cevapsız bitirilen tur aktiflik
       // DEĞİLDİR (önceden boş tur da seriyi sayıyordu).
-      if (session.answers.length > 0) {
+      if (opts.activity && session.answers.length > 0) {
         const entitlement = await tx.entitlement.findUnique({ where: { userId } });
         const isPremium =
           entitlement?.isPremium === true &&

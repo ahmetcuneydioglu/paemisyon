@@ -28,6 +28,7 @@ import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { enGucluKonular, enZayifKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, gunMetni } from '../../common/gun';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
+import { YARIM_TUR_MODLARI, turuTerkEt } from './yarim-tur';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -352,6 +353,14 @@ export class QuizService {
     // Deneme sınavında planlı süre — sunucu aşımı reddeder (submitAnswer).
     const plannedDurationSeconds =
       dto.mode === 'exam' ? chosen.length * QuizService.EXAM_SECONDS_PER_QUESTION : null;
+
+    // TEK AKTİF TUR (Doc 48 B-3; 14 Eki 2026 kararı): yeni alıştırma/yanlış turu
+    // açılırken diğer yarım turlar kapanır, çözülenler emek olarak yazılır.
+    // Tur ancak soru seti kurulabildiyse buraya gelir — boş havuzda eski tur
+    // boşuna kapanmaz. Konu denemesi (exam) bu kurala girmez.
+    if (dto.mode === 'practice' || dto.mode === 'review') {
+      await this.yarimTurlariKapat(userId);
+    }
 
     const session = await this.prisma.quizSession.create({
       data: {
@@ -1212,7 +1221,9 @@ export class QuizService {
 
     // İDEMPOTENT: bitmiş oturuma ikinci çağrı istatistikleri ÇİFT SAYMAZ —
     // saklanan sonuç aynen döner (deneme finalize yarışları için kritik, Doc 18).
-    if (session.status === 'completed') {
+    // Kapatılmış (abandoned — tek aktif tur, Doc 48 B-3) tur da yeniden işlenmez:
+    // emeği kapanırken zaten yazıldı.
+    if (session.status !== 'in_progress') {
       return {
         sessionId,
         mode: session.mode,
@@ -1492,6 +1503,15 @@ export class QuizService {
     });
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
     return session;
+  }
+
+  /** Kullanıcının açık alıştırma/yanlış/günlük turlarını kapatır (tek aktif tur). */
+  private async yarimTurlariKapat(userId: string): Promise<void> {
+    const acik = await this.prisma.quizSession.findMany({
+      where: { userId, status: 'in_progress', mode: { in: [...YARIM_TUR_MODLARI] } },
+      select: { id: true },
+    });
+    for (const s of acik) await turuTerkEt(this.prisma, this.progress, s.id);
   }
 
   /** Ücretsiz plan limiti — 60 sn bellek önbelleği (admin değişikliği ≤60 sn'de yansır). */

@@ -669,16 +669,21 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
         .mockImplementation(({ data }: { data: Record<string, unknown> }) =>
           Promise.resolve({ id: 'secili-oturum', mode: data.mode, ...data }),
         ),
+      // Tek aktif tur: açık yarım tur yok (varsayılan).
+      findMany: jest.fn().mockResolvedValue([]),
+      findUnique: jest.fn().mockResolvedValue(null),
+      updateMany: jest.fn().mockResolvedValue({ count: 1 }),
     },
     user: { findUnique: jest.fn() },
   };
+  const progress = { recordSessionProgress: jest.fn().mockResolvedValue(undefined) };
   const service = new QuizService(
     prisma as never,
-    {} as never,
+    progress as never,
     {} as never,
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
   );
-  return { service, prisma, havuz };
+  return { service, prisma, havuz, progress };
 }
 
 describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
@@ -728,6 +733,57 @@ describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
     ).rejects.toBeInstanceOf(ForbiddenException);
   });
 
+  it('tek aktif tur: yeni alıştırma turu açılırken yarım tur kapanır, emeği yazılır (tur sayılmaz)', async () => {
+    const { service, prisma, progress } = setupSecili();
+    prisma.quizSession.findMany.mockResolvedValue([{ id: 'yarim' }]);
+    prisma.quizSession.findUnique.mockResolvedValue({
+      id: 'yarim',
+      userId: premiumUser.id,
+      status: 'in_progress',
+      topicId: null,
+      totalQuestions: 10,
+      questionOrder: ['v-a', 'v-b', 'v-c'],
+      answers: [
+        { questionId: 'q1', questionVersionId: 'v-a', isCorrect: true, selectedOptionId: 'o1' },
+        { questionId: 'q2', questionVersionId: 'v-b', isCorrect: false, selectedOptionId: 'o2' },
+        { questionId: 'qx', questionVersionId: 'baska-tur', isCorrect: true, selectedOptionId: 'o3' },
+      ],
+    });
+
+    await service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_B], questionCount: 4 });
+
+    expect(prisma.quizSession.updateMany).toHaveBeenCalledWith(
+      expect.objectContaining({
+        where: { id: 'yarim', status: 'in_progress' },
+        data: expect.objectContaining({ status: 'abandoned', correctCount: 1, wrongCount: 1, blankCount: 8 }),
+      }),
+    );
+    // Yalnız turun soru setindeki cevaplar; tur sayısına ve aktifliğe girmez.
+    expect(progress.recordSessionProgress).toHaveBeenCalledWith(
+      premiumUser.id,
+      expect.objectContaining({ correctCount: 1, wrongCount: 1, answers: expect.any(Array) }),
+      { countSession: false, activity: false },
+    );
+    expect(progress.recordSessionProgress.mock.calls[0][1].answers).toHaveLength(2);
+    // Kapanış yeni tur oluşturulmadan ÖNCE.
+    expect(prisma.quizSession.updateMany.mock.invocationCallOrder[0]).toBeLessThan(
+      prisma.quizSession.create.mock.invocationCallOrder[0],
+    );
+  });
+
+  it('yarışta tur başka yerde kapandıysa emek İKİNCİ kez yazılmaz', async () => {
+    const { service, prisma, progress } = setupSecili();
+    prisma.quizSession.findMany.mockResolvedValue([{ id: 'yarim' }]);
+    prisma.quizSession.findUnique.mockResolvedValue({
+      id: 'yarim', userId: premiumUser.id, status: 'in_progress', topicId: null, totalQuestions: 5,
+      questionOrder: null, answers: [{ questionId: 'q1', questionVersionId: 'v', isCorrect: true, selectedOptionId: 'o' }],
+    });
+    prisma.quizSession.updateMany.mockResolvedValue({ count: 0 });
+
+    await service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_B], questionCount: 4 });
+    expect(progress.recordSessionProgress).not.toHaveBeenCalled();
+  });
+
   it('geliş kanalı (source) alıştırma turuna da yazılır — anasayfa ölçümü', async () => {
     const { service, prisma } = setupSecili();
     await service.startSession(premiumUser, {
@@ -765,5 +821,25 @@ describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
     // Havuz sorgusu yalnız seçilen konuları istemiş olmalı (ders geneline sızma yok).
     const where = prisma.question.findMany.mock.calls[0][0].where as { topicId: { in: string[] } };
     expect(where.topicId.in).toEqual([KONU_A, KONU_B, KONU_C]);
+  });
+});
+
+describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (Doc 48 B-3)', () => {
+  it('abandoned tura "bitir" gelirse saklı sonuç döner, ilerleme ikinci kez yazılmaz', async () => {
+    const prisma = {
+      quizSession: {
+        findFirst: jest.fn().mockResolvedValue({
+          id: 's1', mode: 'practice', status: 'abandoned', totalQuestions: 10, correctCount: 3,
+          wrongCount: 1, blankCount: 6, score: null, durationSeconds: null, plannedDurationSeconds: null, answers: [],
+        }),
+        update: jest.fn(),
+      },
+    };
+    const progress = { recordSessionCompletion: jest.fn() };
+    const service = new QuizService(prisma as never, progress as never, {} as never, {} as never);
+    const r = await service.completeSession(premiumUser.id, 's1');
+    expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });
+    expect(prisma.quizSession.update).not.toHaveBeenCalled();
+    expect(progress.recordSessionCompletion).not.toHaveBeenCalled();
   });
 });
