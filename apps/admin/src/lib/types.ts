@@ -69,6 +69,8 @@ export interface CurriculumExamType {
   key: string;
   name: string;
   isActive: boolean;
+  /** Resmî sınav tarihi "YYYY-MM-DD" (Doc 48 A2); açıklanmamışsa null. */
+  examDate: string | null;
   sections: CurriculumSection[];
   weightTotal: number;
 }

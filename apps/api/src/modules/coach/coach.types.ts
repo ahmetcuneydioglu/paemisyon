@@ -1,4 +1,4 @@
-import type { BriefFlags } from './home-v2.types';
+import type { BriefFlags, ExamInfo } from './home-v2.types';
 
 /**
  * Kişisel Koç sözleşmesi (Doc 19 §2-3).
@@ -208,4 +208,6 @@ export interface CoachBrief {
   weeklyPhoto: { courseName: string; deltaPct: number }[];
   /** Doc 48 — istemci özellik bayrakları (eklemeli; eski istemciler okumaz). */
   flags: BriefFlags;
+  /** Doc 48 A2 — sınav geri sayımı (kişisel ?? resmî tarih). */
+  exam: ExamInfo;
 }

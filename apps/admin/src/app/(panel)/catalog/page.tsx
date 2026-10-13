@@ -59,6 +59,7 @@ export default function CatalogPage() {
               </h2>
               <AddSection examTypeId={e.id} invalidate={invalidate} />
             </div>
+            <ExamDateEditor examTypeId={e.id} value={e.examDate} invalidate={invalidate} />
             {e.sections.length === 0 && <p className="text-sm text-slate-400">Henüz bölüm yok.</p>}
             <div className="space-y-2">
               {e.sections.map((s, i) => (
@@ -448,6 +449,48 @@ function AddSection({ examTypeId, invalidate }: { examTypeId: string; invalidate
     >
       + Bölüm ekle
     </button>
+  );
+}
+
+/**
+ * Resmî sınav tarihi (Doc 48 A2): kendi tarihini girmemiş her aday geri sayımı
+ * ve sınav modunu (son 30 gün) bu tarihten görür. Yalnız admin değiştirir.
+ */
+function ExamDateEditor({
+  examTypeId,
+  value,
+  invalidate,
+}: {
+  examTypeId: string;
+  value: string | null;
+  invalidate: () => void;
+}) {
+  const [draft, setDraft] = useState(value ?? '');
+  const save = useMutation({
+    mutationFn: (examDate: string | null) =>
+      api(`/admin/catalog/exam-types/${examTypeId}`, { method: 'PATCH', body: { examDate } }),
+    onSuccess: invalidate,
+    onError: alertErr,
+  });
+  const dirty = (draft || null) !== value;
+  return (
+    <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
+      <span className="text-slate-500">Resmî sınav tarihi:</span>
+      <input
+        type="date"
+        value={draft}
+        onChange={(ev) => setDraft(ev.target.value)}
+        className="rounded-md border border-slate-300 px-2 py-1"
+      />
+      <button
+        disabled={!dirty || save.isPending}
+        onClick={() => save.mutate(draft || null)}
+        className="rounded-md border border-slate-300 px-3 py-1 font-medium hover:bg-slate-50 disabled:opacity-40"
+      >
+        Kaydet
+      </button>
+      {!value && <span className="text-xs text-slate-400">Açıklanmadı — geri sayım yalnız kişisel tarihi olanlarda görünür.</span>}
+    </div>
   );
 }
 

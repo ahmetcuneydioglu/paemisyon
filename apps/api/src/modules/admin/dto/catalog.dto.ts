@@ -2,11 +2,13 @@ import { Type } from 'class-transformer';
 import {
   IsArray,
   IsBoolean,
+  IsISO8601,
   IsInt,
   IsOptional,
   IsString,
   IsUUID,
   MinLength,
+  ValidateIf,
 } from 'class-validator';
 
 /// Ders artık KÜRESEL (Doc 21) — sınav türüne gömülü değil, bölümlerle bağlanır.
@@ -89,4 +91,13 @@ export class ReorderDto {
 
   @IsArray()
   ids!: string[]; // yeni sıra: dizideki index = sortOrder
+}
+
+/// Sınav türü güncelleme (Doc 48 A2): resmî sınav tarihi "YYYY-MM-DD".
+/// Alan ZORUNLU — null göndermek tarihi temizler; hiç göndermemek 400 döner
+/// (yanlışlıkla boş gövdeyle tarihin silinmesi engellenir).
+export class UpdateExamTypeDto {
+  @ValidateIf((_, v) => v !== null)
+  @IsISO8601({ strict: true })
+  examDate!: string | null;
 }

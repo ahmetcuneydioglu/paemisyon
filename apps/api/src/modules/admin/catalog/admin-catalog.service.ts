@@ -8,6 +8,7 @@ import {
   UpsertCourseDto,
   UpsertSectionDto,
   UpsertTopicDto,
+  UpdateExamTypeDto,
 } from '../dto/catalog.dto';
 
 /** Keyword listesini normalize eder: kırp, boşları at, tekilleştir. */
@@ -175,6 +176,7 @@ export class AdminCatalogService {
         key: e.key,
         name: e.name,
         isActive: e.isActive,
+        examDate: e.examDate ? e.examDate.toISOString().slice(0, 10) : null,
         sections: e.sections.map((s) => ({
           id: s.id,
           name: s.name,
@@ -189,6 +191,21 @@ export class AdminCatalogService {
       // Havuzdaki dersler (bölüme bağlı olmayanlar dahil — panelde bağlanabilir).
       coursePool: allCourses.map((c) => courseById.get(c.id)),
     };
+  }
+
+  // ── Sınav türü: resmî tarih (Doc 48 A2) ──
+  async updateExamType(actor: AuthenticatedUser, id: string, dto: UpdateExamTypeDto) {
+    const found = await this.prisma.examType.findUnique({ where: { id } });
+    if (!found) throw new NotFoundException('Sınav türü bulunamadı.');
+    const updated = await this.prisma.examType.update({
+      where: { id },
+      data: { examDate: dto.examDate ? new Date(`${dto.examDate.slice(0, 10)}T00:00:00Z`) : null },
+    });
+    await this.audit.log(actor, 'exam_type.update', 'exam_type', id, {
+      examDate: dto.examDate,
+      onceki: found.examDate ? found.examDate.toISOString().slice(0, 10) : null,
+    });
+    return { id: updated.id, examDate: updated.examDate?.toISOString().slice(0, 10) ?? null };
   }
 
   // ── Bölüm (ExamSection) CRUD ──

@@ -38,6 +38,7 @@ import {
   UpsertCourseDto,
   UpsertSectionDto,
   UpsertTopicDto,
+  UpdateExamTypeDto,
 } from './dto/catalog.dto';
 
 /**
@@ -190,6 +191,18 @@ export class AdminController {
   @Roles('admin', 'editor')
   curriculum() {
     return this.catalog.curriculum();
+  }
+
+  // ── Sınav türü: resmî tarih (Doc 48 A2) — geri sayım ve sınav modu herkes
+  //    için bundan beslenir; yalnız admin değiştirir, işlem kaydına yazılır.
+  @Patch('catalog/exam-types/:id')
+  @Roles('admin')
+  updateExamType(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: UpdateExamTypeDto,
+  ) {
+    return this.catalog.updateExamType(actor, id, dto);
   }
 
   // ── Bölüm (ExamSection) ──

@@ -6,6 +6,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft, liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import { computeRank, rankScore } from './rank.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
+import type { ExamInfo } from './home-v2.types';
 import { coachRules, motivationRule } from './rules';
 
 /** Haftalık aktif gün hedefi (v1 sabit; ileride kullanıcı ayarı olabilir). */
@@ -113,12 +114,18 @@ export class CoachService {
       // Haftalık fotoğraf (Doc 27 wireframe 02) — Bugün sağ kolonu.
       weeklyPhoto: ctx.weeklyPhoto,
       flags: { homeV2: homeV2Acik(await homeV2Herkese, user.roles) },
+      exam: ctx.home.exam,
     };
   }
 
   // ── Bağlam: kuralların okuduğu TÜM gerçek veri tek seferde ──
 
-  private async buildContext(user: AuthenticatedUser): Promise<CoachContext> {
+  /**
+   * Kuralların bağlamı + yeni anasayfanın (Doc 48) ham ekleri. `home` kurallara
+   * GİRMEZ (CoachContext'e eklenmez — kural spec'leri onu elle kurar); yalnız
+   * brief() yeni alanları kurarken okur.
+   */
+  private async buildContext(user: AuthenticatedUser): Promise<CoachContext & { home: HomeRaw }> {
     const now = new Date();
     const todayUtc = startOfUtcDay(now);
     const weekStart = startOfUtcWeek(now);
@@ -155,7 +162,7 @@ export class CoachService {
           dailyGoal: true,
           onboardingCompletedAt: true,
           targetExamDate: true,
-          preferredModule: { select: { name: true } },
+          preferredModule: { select: { name: true, examDate: true } },
         },
       }),
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -367,8 +374,18 @@ export class CoachService {
       : null;
 
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
-    const examDate = profile?.targetExamDate ?? null;
+    // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
+    // tarih girmeyen aday da geri sayımı ve sınav modunu görür).
+    const kisiselTarih = profile?.targetExamDate ?? null;
+    const resmiTarih = profile?.preferredModule?.examDate ?? null;
+    const examDate = kisiselTarih ?? resmiTarih;
     const daysToExam = examDate ? trDayDiff(now, examDate) : null;
+    const exam: ExamInfo = {
+      name: profile?.preferredModule?.name ?? null,
+      date: examDate ? examDate.toISOString().slice(0, 10) : null,
+      daysLeft: daysToExam != null && daysToExam >= 0 ? daysToExam : null,
+      source: kisiselTarih ? 'personal' : resmiTarih ? 'official' : null,
+    };
 
     // ── Tempo: son 7 gün vs önceki 7 gün soru hacmi (slump_watch) ──
     const sevenDaysAgo = todayUtc.getTime() - 7 * 86_400_000;
@@ -468,8 +485,14 @@ export class CoachService {
           }
         : null,
       volume: { last7, prev7 },
+      home: { exam },
     };
   }
+}
+
+/** Yeni anasayfanın (Doc 48) bağlamdan gelen ham ekleri. */
+interface HomeRaw {
+  exam: ExamInfo;
 }
 
 /**
