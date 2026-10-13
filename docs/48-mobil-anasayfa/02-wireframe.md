@@ -1,6 +1,6 @@
 # Doc 48 / Faz 2 — Low-fi Wireframe
 
-> Durum: **onay bekliyor** (14 Eki 2026). Figma:
+> Durum: **onaylandı — Yerleşim B** (14 Eki 2026). Figma:
 > https://www.figma.com/design/qHrLLOXtJSIqpKxTx2FrYi
 > Low-fi ve gri tonlu. Tek vurgu rengi birincil eylemi gösterir.
 > Cihaz 393×852 (iPhone 15). Renk, tipografi ve koyu tema Faz 3'te gelecek.
@@ -38,8 +38,10 @@
    yapılır ve köke dönülür. Kökteki birincil düğme seçimi söyler:
    "Başlat · 10 soru · Temel Haklar".
 
-## Karar bekleyen
+## Karar (kullanıcı, 14 Eki 2026)
 
-**A mı B mi?** Önerim B (gerekçe Figma'daki karşılaştırma kartında). Faz 3'te seçilen
-yerleşimin tasarım sistemi kurulur. Diğer yerleşim istenirse `home_v2` bayrağı altında
-A/B testine kalır.
+**Yerleşim B — Başparmak önce.**
+- Ana düğme ve odak, sekme çubuğunun hemen üstündeki sabit eylem çubuğunda durur.
+- Görev kartı bağlamı anlatır: başlık, gerekçe ve ilerleme.
+- A yerleşimi test için tutulmuyor.
+- Küçük ekran riski Faz 3'te çubuk yüksekliği ve Dynamic Type kurallarıyla yönetilecek.
