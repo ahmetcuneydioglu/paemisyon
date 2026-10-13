@@ -1,3 +1,4 @@
+import { gunAnahtari } from '../../common/gun';
 import type {
   DailyFocusView,
   Readiness,
@@ -77,6 +78,14 @@ const yuzde = (x: number) => `%${Math.round(x * 100)}`;
 const saat = (d: Date) =>
   d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
 
+/** Uygulama gününe göre zaman: bugünse "02:14", önceki günse "dün 22:10". */
+function zaman(d: Date, now: Date): string {
+  const fark = Math.round((gunAnahtari(now).getTime() - gunAnahtari(d).getTime()) / 86_400_000);
+  if (fark <= 0) return saat(d);
+  if (fark === 1) return `dün ${saat(d)}`;
+  return `${fark} gün önce`;
+}
+
 /** Odağın düğme etiketindeki kısa hali ("· Anayasa Hukuku"); koçta yok. */
 function odakEki(focus: DailyFocusView): string {
   return focus.label ? ` · ${focus.label}` : '';
@@ -113,7 +122,8 @@ const KOC: DailyFocusView = { kind: 'coach', courseId: null, topicId: null, labe
 /** Görev kartının altındaki tek ikincil satır (D4). */
 function ikincil(input: TodayTaskInput, birincilTur: boolean): TodayTaskSecondary | null {
   const tur = input.activeSession;
-  if (tur && !birincilTur) {
+  // Hiç cevaplanmamış eski tur "devam" değeri taşımaz (sunucu zaten kapatır).
+  if (tur && !birincilTur && tur.answered > 0) {
     const yas = input.now.getTime() - tur.lastActivityAt.getTime();
     if (yas >= TAZE_TUR_MS && yas < BAYAT_TUR_MS) {
       const gun = Math.max(1, Math.floor(yas / 86_400_000));
@@ -203,10 +213,27 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
   // 2) Taze yarım tur — görev kartının kendisi (S2: tek devam yolu).
   const tur = input.activeSession;
   if (tur && now.getTime() - tur.lastActivityAt.getTime() < TAZE_TUR_MS) {
+    if (tur.answered === 0) {
+      // Açılıp hiç cevaplanmamış tur "yarım" değil, hazır: aynı seti başlatır.
+      return {
+        kind: 'resume',
+        title: 'Turun hazır',
+        reason: `${tur.scopeName} · hazırlandı ${zaman(tur.startedAt, now)}`,
+        progress: null,
+        action: {
+          type: 'resume_session',
+          label: `Başla · ${tur.total} soru`,
+          sessionId: tur.sessionId,
+          source: 'home_resume',
+        },
+        finishSessionId: null,
+        secondary: null,
+      };
+    }
     return {
       kind: 'resume',
       title: 'Turun yarım kaldı',
-      reason: `${tur.scopeName} · başlangıç ${saat(tur.startedAt)}`,
+      reason: `${tur.scopeName} · son cevap ${zaman(tur.lastActivityAt, now)}`,
       // Kartta TEK ilerleme: turunki (günün halkası bu sırada gizli — Faz 2 karar 3).
       progress: { label: `${tur.answered}/${tur.total} soru`, answered: tur.answered, total: tur.total },
       action: devam(tur),

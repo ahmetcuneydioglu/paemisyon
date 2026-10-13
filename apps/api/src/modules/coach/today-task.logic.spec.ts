@@ -60,6 +60,29 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
     expect(t.secondary).toBeNull();
   });
 
+  it('yarım turun zamanı uygulama gününe göre: bugünse saat, önceki günse "dün"', () => {
+    const bugun = computeTodayTask(girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-14T03:14:00Z') }) }));
+    expect(bugun.reason).toBe('Koç turu · son cevap 06:14');
+    // 13 Eki 22:10 TR — önceki uygulama günü (24 saatten yeni, hâlâ taze).
+    const dun = computeTodayTask(girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-13T19:10:00Z') }) }));
+    expect(dun.kind).toBe('resume');
+    expect(dun.reason).toBe('Koç turu · son cevap dün 22:10');
+  });
+
+  it('hiç cevaplanmamış taze tur "yarım" değil "hazır": aynı seti başlatır', () => {
+    const t = computeTodayTask(girdi({ activeSession: tur({ answered: 0, scopeName: 'Polis Mevzuatı' }) }));
+    expect(t.title).toBe('Turun hazır');
+    expect(t.action).toMatchObject({ type: 'resume_session', label: 'Başla · 10 soru', sessionId: 's1' });
+    expect(t.progress).toBeNull();
+    expect(t.finishSessionId).toBeNull();
+  });
+
+  it('cevapsız eski tur ikincil satır olmaz; yanlışlar görünür', () => {
+    const bos = tur({ answered: 0, lastActivityAt: new Date(NOW.getTime() - 2 * 86_400_000) });
+    const t = computeTodayTask(girdi({ activeSession: bos, readiness: hazirlik({ unresolvedWrongCount: 8 }) }));
+    expect(t.secondary?.kind).toBe('wrongs');
+  });
+
   it('eski yarım tur (1–7 gün) görevi işgal etmez, ikincil satır olur', () => {
     const eski = tur({ lastActivityAt: new Date(NOW.getTime() - 3 * 86_400_000), answered: 1, total: 20 });
     const t = computeTodayTask(girdi({ activeSession: eski }));
