@@ -122,32 +122,16 @@ export class ProgressService {
             last_activity_at = now()`;
       }
 
-      // Streak + seri sigortası (Doc 24 §7.2, saf mantık: streak.logic.ts) —
-      // vardiyalı çalışan bir gece nöbetiyle seriyi yakmasın.
-      const streak = await tx.streak.findUnique({ where: { userId } });
-      const entitlement = await tx.entitlement.findUnique({ where: { userId } });
-      const isPremium =
-        entitlement?.isPremium === true &&
-        (entitlement.validUntil == null || entitlement.validUntil > new Date());
-      const update = computeStreakUpdate(streak, today, weeklyFreezeAllowance(isPremium));
-      await tx.streak.upsert({
-        where: { userId },
-        update: {
-          currentStreak: update.currentStreak,
-          longestStreak: update.longestStreak,
-          lastActiveDate: today,
-          freezeWeekStart: update.freezeWeekStart,
-          freezesUsed: update.freezesUsed,
-        },
-        create: {
-          userId,
-          currentStreak: update.currentStreak,
-          longestStreak: update.longestStreak,
-          lastActiveDate: today,
-          freezeWeekStart: update.freezeWeekStart,
-          freezesUsed: update.freezesUsed,
-        },
-      });
+      // Aktiflik asıl olarak CEVAP ANINDA yazılır (touchActivity — Doc 48 D3);
+      // burada yalnız güvence: aynı gün etkisiz. Cevapsız bitirilen tur aktiflik
+      // DEĞİLDİR (önceden boş tur da seriyi sayıyordu).
+      if (session.answers.length > 0) {
+        const entitlement = await tx.entitlement.findUnique({ where: { userId } });
+        const isPremium =
+          entitlement?.isPremium === true &&
+          (entitlement.validUntil == null || entitlement.validUntil > new Date());
+        await this.seriyiGuncelle(tx, userId, isPremium, today);
+      }
 
       // Yanlışlarım / çözüldü — cevap başına döngü yerine 2 toplu sorgu.
       if (wrongIds.length > 0) {
@@ -166,6 +150,36 @@ export class ProgressService {
         });
       }
     });
+  }
+
+  /**
+   * Aktiflik (Doc 48 D3): günün İLK sayılan cevabında çağrılır — seri ve "son
+   * aktif gün" cevap anında yazılır. Önceden yalnız tur tamamlanınca yazılıyordu;
+   * turu yarıda bırakan aday (turların çoğu!) pasif sayılıp "Hoş geldin" kartı
+   * görüyordu. Aynı gün ikinci çağrı etkisizdir.
+   */
+  async touchActivity(userId: string, isPremium: boolean, day: Date = gunAnahtari()): Promise<void> {
+    await this.seriyiGuncelle(this.prisma, userId, isPremium, day);
+  }
+
+  /** Seri + seri sigortası (Doc 24 §7.2; saf mantık streak.logic.ts) — tek çekirdek. */
+  private async seriyiGuncelle(
+    db: Pick<Prisma.TransactionClient, 'streak'>,
+    userId: string,
+    isPremium: boolean,
+    day: Date,
+  ): Promise<void> {
+    const streak = await db.streak.findUnique({ where: { userId } });
+    if (streak?.lastActiveDate && streak.lastActiveDate.getTime() === day.getTime()) return;
+    const update = computeStreakUpdate(streak, day, weeklyFreezeAllowance(isPremium));
+    const data = {
+      currentStreak: update.currentStreak,
+      longestStreak: update.longestStreak,
+      lastActiveDate: day,
+      freezeWeekStart: update.freezeWeekStart,
+      freezesUsed: update.freezesUsed,
+    };
+    await db.streak.upsert({ where: { userId }, update: data, create: { userId, ...data } });
   }
 
   /**

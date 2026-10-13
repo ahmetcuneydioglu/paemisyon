@@ -53,7 +53,8 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     // limitli $queryRaw (satır dönmezse limit dolu).
     plan: { findUnique: jest.fn().mockResolvedValue({ dailyQuestionLimit: 30 }) },
     $executeRaw: jest.fn().mockResolvedValue(1),
-    $queryRaw: jest.fn().mockResolvedValue([{ questions_answered: 1 }]),
+    // Sayaçlar günün toplamını döndürür (2 = günün ilk cevabı değil).
+    $queryRaw: jest.fn().mockResolvedValue([{ questions_answered: 1, total_answered: 2 }]),
   };
   // Kaynak etiketi görünürlüğü artık tek noktadan (showQuestionSource) okunur;
   // varsayılanı KAPALI. Testte AÇIK tutulur ki alan gerçekten dolduruluyor mu
@@ -62,8 +63,9 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     getBool: jest.fn().mockResolvedValue(true),
     showQuestionSource: jest.fn().mockResolvedValue(true),
   };
-  const service = new QuizService(prisma as never, {} as never, {} as never, settings as never);
-  return { service, prisma, settings, selectedId, correctId };
+  const progress = { touchActivity: jest.fn().mockResolvedValue(undefined) };
+  const service = new QuizService(prisma as never, progress as never, {} as never, settings as never);
+  return { service, prisma, settings, progress, selectedId, correctId };
 }
 
 describe('QuizService.submitAnswer', () => {
@@ -224,24 +226,24 @@ describe('QuizService.submitAnswer', () => {
  * aktivite şeridinin ve liderlik XP'sinin tek kaynağı. Premium dalı eskiden
  * erken dönüyordu ve premium kullanıcıların sayacı hep 0 kalıyordu.
  */
-describe('QuizService.submitAnswer — günlük sayaç', () => {
+describe('QuizService.submitAnswer — günlük sayaç ve aktiflik', () => {
   const SESSION = '00000000-0000-0000-0000-000000000006';
   const cevap = (selectedOptionId: string) => ({
     questionId: '00000000-0000-0000-0000-000000000002',
     questionVersionId: VERSION_ID,
     selectedOptionId,
   });
-  const sqlOf = (mock: jest.Mock) => (mock.mock.calls[0][0] as string[]).join('?');
+  const sqlOf = (mock: jest.Mock, i = 0) => (mock.mock.calls[i][0] as string[]).join('?');
 
   it('premium yeni cevap sayaca yazılır — limitsiz, kota sorgusu yok', async () => {
     const { service, prisma, selectedId } = setup();
 
     await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
 
-    expect(prisma.$executeRaw).toHaveBeenCalledTimes(1);
-    expect(sqlOf(prisma.$executeRaw)).toContain('daily_usage');
-    expect(sqlOf(prisma.$executeRaw)).not.toContain('WHERE');
-    expect(prisma.$queryRaw).not.toHaveBeenCalled();
+    expect(prisma.$queryRaw).toHaveBeenCalledTimes(1);
+    expect(sqlOf(prisma.$queryRaw)).toContain('questions_answered = daily_usage.questions_answered + 1');
+    expect(sqlOf(prisma.$queryRaw)).toContain('total_answered = daily_usage.total_answered + 1');
+    expect(sqlOf(prisma.$queryRaw)).not.toContain('WHERE daily_usage.questions_answered <');
     expect(prisma.plan.findUnique).not.toHaveBeenCalled();
     expect(prisma.quizAnswer.upsert).toHaveBeenCalledTimes(1);
   });
@@ -253,8 +255,8 @@ describe('QuizService.submitAnswer — günlük sayaç', () => {
     await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
     await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
 
-    expect(prisma.$executeRaw).not.toHaveBeenCalled();
     expect(prisma.$queryRaw).not.toHaveBeenCalled();
+    expect(prisma.$executeRaw).not.toHaveBeenCalled();
   });
 
   it.each(['exam', 'deneme'])('%s cevabı kotaya girmez, yalnız günün toplamına yazılır', async (mode) => {
@@ -271,50 +273,66 @@ describe('QuizService.submitAnswer — günlük sayaç', () => {
     await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
     await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
 
-    // Kota sorgusu ($queryRaw) hiç çalışmaz — canlı denemede kesilme yok.
-    expect(prisma.$queryRaw).not.toHaveBeenCalled();
-    // Her iki kullanıcıda da yalnız toplam sayaç artar.
-    expect(prisma.$executeRaw).toHaveBeenCalledTimes(2);
-    for (const call of prisma.$executeRaw.mock.calls) {
-      const sql = (call[0] as string[]).join('?');
-      expect(sql).toContain('SET total_answered = daily_usage.total_answered + 1');
-      expect(sql).not.toContain('questions_answered = daily_usage.questions_answered + 1');
+    // Kota kapısı hiç çalışmaz (canlı denemede kesilme yok); yalnız toplam artar.
+    expect(prisma.plan.findUnique).not.toHaveBeenCalled();
+    expect(prisma.$queryRaw).toHaveBeenCalledTimes(2);
+    for (let i = 0; i < 2; i++) {
+      expect(sqlOf(prisma.$queryRaw, i)).toContain('SET total_answered = daily_usage.total_answered + 1');
+      expect(sqlOf(prisma.$queryRaw, i)).not.toContain('questions_answered = daily_usage.questions_answered + 1');
     }
   });
 
-  it('kotaya tabi yeni cevap hem kotayı hem günün toplamını artırır', async () => {
-    const { service, prisma, selectedId } = setup();
-
-    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
-    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
-
-    const premiumSql = sqlOf(prisma.$executeRaw);
-    expect(premiumSql).toContain('questions_answered = daily_usage.questions_answered + 1');
-    expect(premiumSql).toContain('total_answered = daily_usage.total_answered + 1');
-    const freeSql = sqlOf(prisma.$queryRaw);
-    expect(freeSql).toContain('total_answered = daily_usage.total_answered + 1');
-    expect(freeSql).toContain('WHERE daily_usage.questions_answered <');
-  });
-
-  it('ücretsiz kullanıcı limitli sayaçla sayılır', async () => {
+  it('ücretsiz kullanıcı limitli sayaçla sayılır (kota + toplam)', async () => {
     const { service, prisma, selectedId } = setup();
 
     await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
 
     expect(prisma.$queryRaw).toHaveBeenCalledTimes(1);
     expect(sqlOf(prisma.$queryRaw)).toContain('WHERE daily_usage.questions_answered <');
-    expect(prisma.$executeRaw).not.toHaveBeenCalled();
+    expect(sqlOf(prisma.$queryRaw)).toContain('total_answered = daily_usage.total_answered + 1');
     expect(prisma.quizAnswer.upsert).toHaveBeenCalledTimes(1);
   });
 
   it('ücretsiz kullanıcının limiti doluysa reddedilir ve cevap KAYDEDİLMEZ', async () => {
-    const { service, prisma, selectedId } = setup();
+    const { service, prisma, progress, selectedId } = setup();
     prisma.$queryRaw.mockResolvedValue([]);
 
     await expect(
       service.submitAnswer(freeUser, SESSION, cevap(selectedId)),
     ).rejects.toMatchObject({ response: { code: 'DAILY_LIMIT_REACHED' } });
     expect(prisma.quizAnswer.upsert).not.toHaveBeenCalled();
+    expect(progress.touchActivity).not.toHaveBeenCalled();
+  });
+
+  it('günün İLK cevabı aktiflik yazar (seri cevap anında — Doc 48 D3); sonrakiler yazmaz', async () => {
+    const { service, prisma, progress, selectedId } = setup();
+    prisma.$queryRaw.mockResolvedValue([{ questions_answered: 1, total_answered: 1 }]);
+
+    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+    expect(progress.touchActivity).toHaveBeenNthCalledWith(1, premiumUser.id, true);
+    expect(progress.touchActivity).toHaveBeenNthCalledWith(2, freeUser.id, false);
+
+    progress.touchActivity.mockClear();
+    prisma.$queryRaw.mockResolvedValue([{ questions_answered: 7, total_answered: 7 }]);
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+    expect(progress.touchActivity).not.toHaveBeenCalled();
+  });
+
+  it('deneme cevabı da günün ilk cevabıysa aktiflik yazar', async () => {
+    const { service, prisma, progress, selectedId } = setup();
+    prisma.quizSession.findFirst.mockResolvedValue({
+      status: 'in_progress',
+      mode: 'deneme',
+      startedAt: new Date(),
+      plannedDurationSeconds: null,
+      questionOrder: [VERSION_ID],
+      exam: null,
+    });
+    prisma.$queryRaw.mockResolvedValue([{ total_answered: 1 }]);
+
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+    expect(progress.touchActivity).toHaveBeenCalledWith(freeUser.id, false);
   });
 });
 
