@@ -182,7 +182,10 @@ export class CoachService {
         include: { topic: { select: { id: true, name: true } } },
       }),
       this.prisma.exam.findMany({
-        where: { status: 'published', deletedAt: null },
+        // Çıkmış sınavın motor kaydı (Doc 36) randevulu deneme değildir: deneme
+        // listesiyle aynı süzgeç (exams.service), yoksa yeni bağlanan bir dönem
+        // 48 saat boyunca "Yeni deneme yayınlandı" kartı olarak görünürdü.
+        where: { status: 'published', deletedAt: null, pastExam: null },
         orderBy: { startAt: 'desc' },
         take: 20,
         include: { _count: { select: { questions: true } } },
