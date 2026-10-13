@@ -7,6 +7,7 @@ import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
 import { PushService } from '../notifications/push.service';
+import { liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import {
   FREE_DAILY_LIMIT_FALLBACK,
   PERSONAL_EXAM_FREE_DAILY_FALLBACK,
@@ -363,7 +364,7 @@ export class UsersController {
       preferredModule: profile?.preferredModule ?? null,
       isPremium: user.isPremium,
       streak: {
-        current: streak?.currentStreak ?? 0,
+        current: liveStreak(streak, today, weeklyFreezeAllowance(user.isPremium)),
         longest: streak?.longestStreak ?? 0,
       },
       today: {

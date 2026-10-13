@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { computeStreakUpdate } from './streak.logic';
+import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
 import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
@@ -133,7 +133,7 @@ export class ProgressService {
       const isPremium =
         entitlement?.isPremium === true &&
         (entitlement.validUntil == null || entitlement.validUntil > new Date());
-      const update = computeStreakUpdate(streak, today, isPremium ? 3 : 1);
+      const update = computeStreakUpdate(streak, today, weeklyFreezeAllowance(isPremium));
       await tx.streak.upsert({
         where: { userId },
         update: {
@@ -414,7 +414,7 @@ export class ProgressService {
     };
   }
 
-  async getSummary(userId: string) {
+  async getSummary(userId: string, isPremium: boolean) {
     const [stats, streak] = await Promise.all([
       this.prisma.userStats.findUnique({ where: { userId } }),
       this.prisma.streak.findUnique({ where: { userId } }),
@@ -428,7 +428,7 @@ export class ProgressService {
       totalCorrect: stats?.totalCorrect ?? 0,
       totalSessions: stats?.totalSessions ?? 0,
       accuracy,
-      currentStreak: streak?.currentStreak ?? 0,
+      currentStreak: liveStreak(streak, new Date(), weeklyFreezeAllowance(isPremium)),
       longestStreak: streak?.longestStreak ?? 0,
     };
   }

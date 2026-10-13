@@ -75,6 +75,39 @@ export function freezesLeft(
   return Math.max(0, weeklyAllowance - (sameWeek ? prev!.freezesUsed : 0));
 }
 
+/** Haftalık sigorta hakkı — tek kaynak (seri güncelleme, koç brief'i, gösterim). */
+export function weeklyFreezeAllowance(isPremium: boolean): number {
+  return isPremium ? 3 : 1;
+}
+
+/**
+ * Kullanıcıya GÖSTERİLECEK seri. Kayıtlı değer yalnız tur tamamlanınca
+ * güncellenir; okurken boşluk denetlenmezse kırılmış seri "🔥 N gün" diye
+ * görünmeye devam eder (14 Eki 2026'ya kadar böyleydi). Kurallar
+ * computeStreakUpdate ile birebir: bugün/dün aktif → seri yaşıyor; TAM 1 gün
+ * kaçtı ve haftalık hak var → bugün çalışırsa sigortayla yaşar, gösterilir;
+ * aksi halde bir sonraki tur seriyi 1'den başlatacak — şimdiden 0.
+ */
+export function liveStreak(
+  prev: Pick<
+    StreakState,
+    'currentStreak' | 'lastActiveDate' | 'freezeWeekStart' | 'freezesUsed'
+  > | null,
+  today: Date,
+  weeklyAllowance: number,
+): number {
+  if (!prev?.lastActiveDate || prev.currentStreak <= 0) return 0;
+  const diffDays = Math.round(
+    (startOfUtcDay(today).getTime() - startOfUtcDay(prev.lastActiveDate).getTime()) /
+      86_400_000,
+  );
+  if (diffDays <= 1) return prev.currentStreak;
+  if (diffDays === 2 && freezesLeft(prev, today, weeklyAllowance) > 0) {
+    return prev.currentStreak;
+  }
+  return 0;
+}
+
 export function startOfUtcDay(d: Date): Date {
   const x = new Date(d);
   x.setUTCHours(0, 0, 0, 0);

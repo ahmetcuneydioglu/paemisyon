@@ -1,4 +1,9 @@
-import { computeStreakUpdate, freezesLeft } from './streak.logic';
+import {
+  computeStreakUpdate,
+  freezesLeft,
+  liveStreak,
+  weeklyFreezeAllowance,
+} from './streak.logic';
 
 const D = (s: string) => new Date(`${s}T00:00:00.000Z`);
 
@@ -92,5 +97,65 @@ describe('freezesLeft', () => {
     expect(
       freezesLeft({ freezeWeekStart: D('2026-07-06'), freezesUsed: 3 }, D('2026-07-15'), 3),
     ).toBe(3);
+  });
+});
+
+// Gösterilen seri (14 Eki 2026): kayıtlı değer yalnız tur bitince güncellendiği
+// için kırılmış seri "🔥 N gün" diye görünmeye devam ediyordu.
+describe('liveStreak — gösterilen seri canlı seridir', () => {
+  it('hiç aktivite yoksa ya da seri 0 ise 0', () => {
+    expect(liveStreak(null, D('2026-07-15'), 1)).toBe(0);
+    expect(liveStreak(state({ currentStreak: 0 }), D('2026-07-13'), 1)).toBe(0);
+  });
+
+  it('bugün ya da dün aktif: kayıtlı seri', () => {
+    expect(liveStreak(state(), new Date('2026-07-13T21:40:00.000Z'), 1)).toBe(5);
+    expect(liveStreak(state(), D('2026-07-14'), 1)).toBe(5);
+  });
+
+  it('TAM 1 gün kaçtı + hak var: bugün çalışırsa yaşar, gösterilir', () => {
+    expect(liveStreak(state(), D('2026-07-15'), 1)).toBe(5);
+  });
+
+  it('TAM 1 gün kaçtı ama haftalık hak bitmiş: kırık (0)', () => {
+    const prev = state({ freezeWeekStart: D('2026-07-13'), freezesUsed: 1 });
+    expect(liveStreak(prev, D('2026-07-15'), 1)).toBe(0);
+  });
+
+  it('2+ gün kaçtı: sigorta kapsamı dışı, kırık (0)', () => {
+    expect(liveStreak(state(), D('2026-07-16'), 3)).toBe(0);
+  });
+
+  it('hafta dönümü: geçen haftanın harcanmış hakkı bu haftayı bağlamaz', () => {
+    // Paz aktif, Pzt kaçtı, Salı bakılıyor — hak geçen hafta harcanmıştı.
+    const prev = state({
+      lastActiveDate: D('2026-07-19'),
+      freezeWeekStart: D('2026-07-13'),
+      freezesUsed: 1,
+    });
+    expect(liveStreak(prev, D('2026-07-21'), 1)).toBe(5);
+  });
+
+  it('computeStreakUpdate ile tutarlı: gösterilen >0 ⇔ bugünkü tur seriyi sürdürür', () => {
+    const durumlar = [
+      state(),
+      state({ freezeWeekStart: D('2026-07-13'), freezesUsed: 1 }),
+      state({ currentStreak: 1 }),
+    ];
+    for (const prev of durumlar) {
+      for (const gun of ['2026-07-14', '2026-07-15', '2026-07-16', '2026-07-18']) {
+        for (const hak of [1, 3]) {
+          const surer = computeStreakUpdate(prev, D(gun), hak).currentStreak > 1;
+          expect(liveStreak(prev, D(gun), hak) > 0).toBe(surer);
+        }
+      }
+    }
+  });
+});
+
+describe('weeklyFreezeAllowance', () => {
+  it('ücretsiz 1, premium 3', () => {
+    expect(weeklyFreezeAllowance(false)).toBe(1);
+    expect(weeklyFreezeAllowance(true)).toBe(3);
   });
 });

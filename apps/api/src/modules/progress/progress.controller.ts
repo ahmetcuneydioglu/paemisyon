@@ -27,7 +27,7 @@ export class ProgressController {
 
   @Get('summary')
   summary(@CurrentUser() user: AuthenticatedUser) {
-    return this.progress.getSummary(user.id);
+    return this.progress.getSummary(user.id, user.isPremium);
   }
 
   @Get('topics')

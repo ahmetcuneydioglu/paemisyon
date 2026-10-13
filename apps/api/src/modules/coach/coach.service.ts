@@ -3,7 +3,7 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { iptalSoruIdleri } from '../../common/iptal-soru';
 import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { freezesLeft } from '../progress/streak.logic';
+import { freezesLeft, liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import { computeRank, rankScore } from './rank.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import { coachRules, motivationRule } from './rules';
@@ -288,6 +288,10 @@ export class CoachService {
         e.id !== todayUpcoming?.id, // aynı deneme iki kartta görünmesin
     );
 
+    // Gösterilen seri = CANLI seri (kayıtlı değer yalnız tur bitince güncellenir).
+    const freezeAllowance = weeklyFreezeAllowance(user.isPremium);
+    const currentStreak = liveStreak(streak, now, freezeAllowance);
+
     // ── Sıradaki rozet: kazanılmamışlar içinde tamamlanmaya en yakın ──
     const earned = new Set(earnedBadges.map((b) => b.badgeKey));
     const totalSolved = stats?.totalSolved ?? 0;
@@ -296,7 +300,7 @@ export class CoachService {
     const progressOf = (kind: string): number => {
       switch (kind) {
         case 'streak':
-          return streak?.currentStreak ?? 0;
+          return currentStreak;
         case 'solved':
           return totalSolved;
         case 'exam':
@@ -381,10 +385,10 @@ export class CoachService {
         preferredModuleName: profile?.preferredModule?.name ?? null,
       },
       streak: {
-        current: streak?.currentStreak ?? 0,
+        current: currentStreak,
         longest: streak?.longestStreak ?? 0,
         activeYesterday: daysSince === 1,
-        freezesLeft: freezesLeft(streak, now, user.isPremium ? 3 : 1),
+        freezesLeft: freezesLeft(streak, now, freezeAllowance),
       },
       answeredToday: todayUsage?.questionsAnswered ?? 0,
       stats: {
