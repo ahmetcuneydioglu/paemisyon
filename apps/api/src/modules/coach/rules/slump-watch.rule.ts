@@ -4,7 +4,7 @@ import { CoachRule } from '../coach.types';
 /// yarısının altına düştüyse tempo düşüşü var demektir. Ton: yoldaş, esnek —
 /// suç kullanıcıda değil; düşük eşikli dönüş teklif edilir.
 /// Guard'lar: önceki hafta anlamlı hacim (≥ 40 soru) olmalı (yeni kullanıcıyı
-/// yanlış alarmla üzme); comeback (≥3 gün sessizlik) bunu zaten ezer;
+/// yanlış alarmla üzme); comeback (≥5 gün sessizlik) bunu zaten ezer;
 /// sınav yaklaşırken (≤30 gün) exam_mode çerçevesi devralır.
 export const slumpWatchRule: CoachRule = (ctx) => {
   const { last7, prev7 } = ctx.volume;
@@ -18,6 +18,6 @@ export const slumpWatchRule: CoachRule = (ctx) => {
     title: 'Bu hafta yoğunsun galiba — tempo düşmüş',
     body: 'Sorun değil. Bugün 10 soru yeter; sen iste, yine artırırız.',
     cta: { label: '10 soruluk tur', route: '/quiz' },
-    meta: { suggestedCount: 10, last7, prev7 },
+    meta: { count: 10, suggestedCount: 10, last7, prev7 },
   };
 };

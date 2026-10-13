@@ -31,6 +31,11 @@ export const TUR_VARSAYILAN = 10;
 export const TUR_EN_AZ = 5;
 export const KISA_TUR = 5;
 
+/** Haftanın bugün dahil kalan günü (Pzt başlangıçlı UTC hafta; Pazar = 1). */
+export function haftadaKalanGun(now: Date): number {
+  return 7 - ((now.getUTCDay() + 6) % 7);
+}
+
 export interface YarimTur {
   sessionId: string;
   mode: 'practice' | 'review' | 'daily';

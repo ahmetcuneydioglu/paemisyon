@@ -126,27 +126,28 @@ describe('exam_today (kural 3)', () => {
   });
 });
 
-describe('streak_risk (kural 4)', () => {
+describe('streak_risk → haftalık hedef riski (Doc 48 D1)', () => {
+  // 2026-07-18 Cumartesi: haftada bugün dahil 2 gün kaldı.
   const risky = {
-    streak: { current: 7, longest: 10, activeYesterday: true, freezesLeft: 1 },
+    now: new Date('2026-07-18T16:00:00Z'),
+    weekly: { activeDays: 3, goalDays: 5 },
     answeredToday: 0,
     trHour: 19,
   };
-  it('akşam + dün aktif + bugün 0 soruda tetiklenir', () => {
+  it('akşam + bugün 0 + bugün de boş geçerse hedef tutmuyorsa tetiklenir; sayıyı taşır', () => {
     const c = streakRiskRule(ctx(risky));
-    expect(c?.title).toContain('7 günlük serin');
+    expect(c?.type).toBe('streak_risk');
+    expect(c?.body).toContain('3/5 gün');
+    expect(c?.meta).toMatchObject({ count: 5 });
+    expect(c?.cta?.label).toBe('Mini tur (5 soru)');
   });
-  it('18 öncesi, bugün çalışmışsa veya seri yoksa sessiz', () => {
+  it('18 öncesi, bugün çalışmışsa veya hedef hâlâ rahat erişilebilirse sessiz', () => {
     expect(streakRiskRule(ctx({ ...risky, trHour: 17 }))).toBeNull();
     expect(streakRiskRule(ctx({ ...risky, answeredToday: 3 }))).toBeNull();
-    expect(
-      streakRiskRule(
-        ctx({
-          ...risky,
-          streak: { current: 0, longest: 0, activeYesterday: true, freezesLeft: 1 },
-        }),
-      ),
-    ).toBeNull();
+    expect(streakRiskRule(ctx({ ...risky, weekly: { activeDays: 4, goalDays: 5 } }))).toBeNull();
+    expect(streakRiskRule(ctx({ ...risky, weekly: { activeDays: 5, goalDays: 5 } }))).toBeNull();
+    // Salı: 6 gün kaldı, 2 gün eksik — kaçacak bir şey yok.
+    expect(streakRiskRule(ctx({ ...risky, now: new Date('2026-07-14T16:00:00Z') }))).toBeNull();
   });
 });
 
@@ -235,18 +236,21 @@ describe('new_exam (kural 11)', () => {
 });
 
 describe('comeback (kural 12)', () => {
-  it('3+ gün aradan sonra birikim diliyle tetiklenir (suçlama yok — Doc 26)', () => {
+  it('5+ gün aradan sonra güçlü konudan kısa tur — borç dili yok (Doc 26, Doc 48 §9)', () => {
     const c = comebackRule(
       ctx({
-        daysSinceLastActivity: 4,
+        daysSinceLastActivity: 6,
         stats: { totalSolved: 2847, totalCorrect: 2000, totalSessions: 90 },
       }),
     );
     expect(c?.title).toContain('Hoş geldin');
-    expect(c?.body).toContain('2.847');
+    expect(c?.body).toBe('Güçlü konundan 5 soruluk tur hazır — 3 dakika.');
+    expect(c?.body).not.toContain('bekliyor');
     expect(c?.body).not.toContain('özledik');
+    expect(c?.meta).toEqual({ count: 5, recipe: 'comeback' });
   });
-  it('aktif kullanıcıda ve hiç aktivitesi olmayanda sessiz', () => {
+  it('4 günde, aktif kullanıcıda ve hiç aktivitesi olmayanda sessiz', () => {
+    expect(comebackRule(ctx({ daysSinceLastActivity: 4 }))).toBeNull();
     expect(comebackRule(ctx({ daysSinceLastActivity: 1 }))).toBeNull();
     expect(comebackRule(ctx({ daysSinceLastActivity: null }))).toBeNull();
   });

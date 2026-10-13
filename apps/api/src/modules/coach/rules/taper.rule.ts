@@ -23,7 +23,7 @@ export const taperRule: CoachRule = (ctx) => {
     body,
     // Sınav gününde CTA yok — ürün susmayı bilir (Doc 24 §1).
     cta: days === 0 ? undefined : { label: 'Kısa tur (5 soru)', route: '/review' },
-    meta: { daysToExam: days },
+    meta: { daysToExam: days, ...(days === 0 ? {} : { count: 5 }) },
   };
 };
 

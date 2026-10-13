@@ -13,7 +13,7 @@ import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import type { DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
 import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
-import { computeTodayTask, YarimTur } from './today-task.logic';
+import { computeTodayTask, haftadaKalanGun, YarimTur } from './today-task.logic';
 import { enGucluKonular } from '../../common/zayif-konu';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
@@ -571,8 +571,7 @@ export class CoachService {
       })),
       1,
     )[0];
-    // Haftanın bugün dahil kalan günü (Pzt başlangıçlı UTC hafta; Pazar = 1).
-    const daysLeftInWeek = 7 - ((todayUtc.getUTCDay() + 6) % 7);
+    const daysLeftInWeek = haftadaKalanGun(todayUtc);
 
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —

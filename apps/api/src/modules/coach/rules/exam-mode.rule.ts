@@ -20,6 +20,6 @@ export const examModeRule: CoachRule = (ctx) => {
       wrongs > 0
         ? { label: `Yanlış turunu başlat (${Math.min(wrongs, 20)})`, route: '/review' }
         : { label: 'Denemelere bak', route: '/denemeler' },
-    meta: { daysToExam: days, wrongCount: wrongs },
+    meta: { daysToExam: days, wrongCount: wrongs, ...(wrongs > 0 ? { count: Math.min(wrongs, 20) } : {}) },
   };
 };
