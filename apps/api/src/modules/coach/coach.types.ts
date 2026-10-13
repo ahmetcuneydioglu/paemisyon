@@ -1,4 +1,4 @@
-import type { BriefFlags, ExamInfo, Readiness } from './home-v2.types';
+import type { BriefFlags, DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
 
 /**
  * Kişisel Koç sözleşmesi (Doc 19 §2-3).
@@ -212,4 +212,6 @@ export interface CoachBrief {
   exam: ExamInfo;
   /** Doc 48 A3 — hazırlık bloğu (ders bazında doğruluk + en zayıf 3 konu). */
   readiness: Readiness;
+  /** Doc 48 A5 — günün odağı (geçici; ertesi gün koç). */
+  focus: DailyFocusView;
 }

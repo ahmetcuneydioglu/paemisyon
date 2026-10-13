@@ -134,6 +134,7 @@ model User {
   masterySnapshots  TopicMasterySnapshot[]
   pushTokens        PushToken[]
   emailContacts     EmailContact[]
+  dailyFocus        DailyFocus?
   preferredModule   ExamType?              @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
@@ -196,18 +197,18 @@ model UserRole {
 /// Yeni sınav türü eklemek = SATIR eklemek (şema değişikliği değil).
 /// Tablo adı geriye uyum için "modules" kaldı (veri migration'ı gerektirmez).
 model ExamType {
-  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  key         String   @unique // paem, misyon, pomem...
+  id          String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  key         String    @unique // paem, misyon, pomem...
   name        String
   description String?
   icon        String?
-  sortOrder   Int      @default(0) @map("sort_order")
+  sortOrder   Int       @default(0) @map("sort_order")
   /// Resmî sınav tarihi (Doc 48 A2). Kullanıcının kişisel tarihi varsa o geçerli;
   /// açıklanmamışsa NULL. Panelden (İçerik Ağacı) girilir.
   examDate    DateTime? @map("exam_date") @db.Date
-  isActive    Boolean  @default(true) @map("is_active")
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+  isActive    Boolean   @default(true) @map("is_active")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
 
   sections       ExamSection[]
   preferredUsers User[]
@@ -278,6 +279,7 @@ model Course {
   sections     ExamSectionCourse[]
   topics       Topic[]
   quizSessions QuizSession[]
+  dailyFocuses DailyFocus[]
 
   @@map("courses")
 }
@@ -309,6 +311,8 @@ model Topic {
   masterySnapshots TopicMasterySnapshot[]
   lawArticles      LawArticle[]
   legislation      Legislation?
+
+  dailyFocuses DailyFocus[]
 
   @@index([courseId])
   @@index([parentId])
@@ -1237,4 +1241,28 @@ model EmailEvent {
   @@unique([sesMessageId, type, occurredAt])
   @@index([type, occurredAt])
   @@map("email_events")
+}
+
+/// Günün odağı (Doc 48 A5; Doc 25 §5) — GEÇİCİ: yalnız `day` günü geçerli,
+/// ertesi gün okunurken koça döner. Kullanıcı başına tek satır.
+enum FocusKind {
+  coach
+  course
+  topic
+  wrongs
+}
+
+model DailyFocus {
+  userId    String    @id @map("user_id") @db.Uuid
+  day       DateTime  @db.Date
+  kind      FocusKind
+  courseId  String?   @map("course_id") @db.Uuid
+  topicId   String?   @map("topic_id") @db.Uuid
+  updatedAt DateTime  @default(now()) @updatedAt @map("updated_at")
+
+  user   User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course? @relation(fields: [courseId], references: [id], onDelete: SetNull)
+  topic  Topic?  @relation(fields: [topicId], references: [id], onDelete: SetNull)
+
+  @@map("daily_focus")
 }

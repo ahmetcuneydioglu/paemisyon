@@ -1,11 +1,17 @@
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft, liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import { computeRank, rankScore } from './rank.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
-import type { ExamInfo, Readiness } from './home-v2.types';
+import type { DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
+import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
@@ -24,6 +30,58 @@ export class CoachService {
     private readonly prisma: PrismaService,
     private readonly settings: SettingsService,
   ) {}
+
+  /**
+   * Günün odağı (Doc 48 A5; Doc 25 §5). Koç seçilirse satır silinir (varsayılan
+   * zaten koç). Premium konu sessizce kabul edilmez — kapı açıkça söylenir
+   * (seçili mevzuat turuyla aynı ilke).
+   */
+  async setFocus(user: AuthenticatedUser, dto: SetFocusDto): Promise<DailyFocusView> {
+    if (dto.kind === 'coach') {
+      await this.prisma.dailyFocus.deleteMany({ where: { userId: user.id } });
+      return KOC_ODAGI;
+    }
+    let courseId: string | null = null;
+    let topicId: string | null = null;
+    let label: string | null = null;
+    if (dto.kind === 'course') {
+      if (!dto.courseId || dto.topicId) {
+        throw new BadRequestException('Ders odağı için yalnız courseId verilir.');
+      }
+      const course = await this.prisma.course.findFirst({
+        where: { id: dto.courseId, deletedAt: null },
+        select: { id: true, name: true },
+      });
+      if (!course) throw new NotFoundException('Ders bulunamadı.');
+      courseId = course.id;
+      label = course.name;
+    } else if (dto.kind === 'topic') {
+      if (!dto.topicId) throw new BadRequestException('Konu odağı için topicId gerekir.');
+      const topic = await this.prisma.topic.findFirst({
+        where: { id: dto.topicId, deletedAt: null },
+        select: { id: true, name: true, isPremium: true, courseId: true },
+      });
+      if (!topic) throw new NotFoundException('Konu bulunamadı.');
+      if (topic.isPremium && !user.isPremium) {
+        throw new ForbiddenException({
+          code: 'PREMIUM_REQUIRED',
+          message: 'Bu konu premium içeriktir.',
+        });
+      }
+      topicId = topic.id;
+      courseId = topic.courseId;
+      label = topic.name;
+    } else if (dto.courseId || dto.topicId) {
+      throw new BadRequestException('Yanlışlarım odağı kimlik taşımaz.');
+    }
+    const data = { day: startOfUtcDay(new Date()), kind: dto.kind, courseId, topicId };
+    await this.prisma.dailyFocus.upsert({
+      where: { userId: user.id },
+      create: { userId: user.id, ...data },
+      update: data,
+    });
+    return { kind: dto.kind, courseId, topicId, label };
+  }
 
   async brief(user: AuthenticatedUser): Promise<CoachBrief> {
     // Ayar okuması 60 sn bellek önbelleğinden — ek gidiş-dönüş yok.
@@ -117,6 +175,7 @@ export class CoachService {
       flags: { homeV2: homeV2Acik(await homeV2Herkese, user.roles) },
       exam: ctx.home.exam,
       readiness: ctx.home.readiness,
+      focus: ctx.home.focus,
     };
   }
 
@@ -193,6 +252,7 @@ export class CoachService {
       cikmisCozumlerim,
       cikmisKartAcik,
       topicProgress,
+      odakSatiri,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -318,6 +378,14 @@ export class CoachService {
           topic: { select: { name: true, courseId: true, course: { select: { name: true } } } },
         },
       }),
+      // Günün odağı (Doc 48 A5) — yalnız bugün yazıldıysa geçerli.
+      this.prisma.dailyFocus.findUnique({
+        where: { userId: user.id },
+        include: {
+          course: { select: { name: true, deletedAt: true } },
+          topic: { select: { name: true, deletedAt: true } },
+        },
+      }),
     ]);
 
     // ── Deneme durumları ──
@@ -433,6 +501,9 @@ export class CoachService {
       unresolvedWrongCount,
     });
 
+    // ── Günün odağı (Doc 48 A5): dünün odağı ya da silinmiş kapsam → koç ──
+    const focus = odagiCoz(odakSatiri, todayUtc);
+
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
     // tarih girmeyen aday da geri sayımı ve sınav modunu görür).
@@ -547,7 +618,7 @@ export class CoachService {
           }
         : null,
       volume: { last7, prev7 },
-      home: { exam, readiness },
+      home: { exam, readiness, focus },
     };
   }
 }
@@ -556,6 +627,38 @@ export class CoachService {
 interface HomeRaw {
   exam: ExamInfo;
   readiness: Readiness;
+  focus: DailyFocusView;
+}
+
+/** Varsayılan odak: koç seçer (Doc 25 §5). */
+const KOC_ODAGI: DailyFocusView = { kind: 'coach', courseId: null, topicId: null, label: null };
+
+/**
+ * Kayıtlı odağı bugüne göre çözer — SAF (test için export). Odak geçicidir:
+ * başka günün kaydı ya da artık var olmayan kapsam koça döner.
+ */
+export function odagiCoz(
+  row: {
+    day: Date;
+    kind: DailyFocusView['kind'];
+    courseId: string | null;
+    topicId: string | null;
+    course: { name: string; deletedAt: Date | null } | null;
+    topic: { name: string; deletedAt: Date | null } | null;
+  } | null,
+  todayUtc: Date,
+): DailyFocusView {
+  if (!row || startOfUtcDay(row.day).getTime() !== todayUtc.getTime()) return KOC_ODAGI;
+  if (row.kind === 'topic') {
+    if (!row.topic || row.topic.deletedAt) return KOC_ODAGI;
+    return { kind: 'topic', courseId: row.courseId, topicId: row.topicId, label: row.topic.name };
+  }
+  if (row.kind === 'course') {
+    if (!row.course || row.course.deletedAt) return KOC_ODAGI;
+    return { kind: 'course', courseId: row.courseId, topicId: null, label: row.course.name };
+  }
+  if (row.kind === 'wrongs') return { kind: 'wrongs', courseId: null, topicId: null, label: null };
+  return KOC_ODAGI;
 }
 
 /**
