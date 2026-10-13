@@ -1,3 +1,5 @@
+import type { BriefFlags } from './home-v2.types';
+
 /**
  * Kişisel Koç sözleşmesi (Doc 19 §2-3).
  *
@@ -204,4 +206,6 @@ export interface CoachBrief {
   };
   /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi. */
   weeklyPhoto: { courseName: string; deltaPct: number }[];
+  /** Doc 48 — istemci özellik bayrakları (eklemeli; eski istemciler okumaz). */
+  flags: BriefFlags;
 }

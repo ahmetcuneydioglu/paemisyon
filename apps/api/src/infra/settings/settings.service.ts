@@ -11,6 +11,10 @@ export const SETTING_KEYS = {
   /// önce açılırsa güncellemeyen kullanıcı Denemeler listesine düşer ve
   /// kartın verdiği sözü ekranda bulamaz.
   coachCikmisSinavKarti: 'coach_cikmis_sinav_karti',
+  /// Mobil yeni anasayfa (Doc 48) herkese açık mı? Kapalıyken yalnız admin
+  /// rolü görür (önce admin, sonra herkes — 14 Eki 2026 kararı). Eski ekran
+  /// geri dönüş yolu olarak kalır; anahtar kapatılınca istemci ona döner.
+  mobilAnasayfaV2: 'mobil_anasayfa_v2',
 } as const;
 
 /**
@@ -21,6 +25,7 @@ export const SETTING_KEYS = {
  */
 export const SHOW_QUESTION_SOURCE_DEFAULT = false;
 export const COACH_CIKMIS_SINAV_KARTI_DEFAULT = false;
+export const MOBIL_ANASAYFA_V2_DEFAULT = false;
 
 const CACHE_MS = 60_000;
 
@@ -54,6 +59,11 @@ export class SettingsService {
       SETTING_KEYS.coachCikmisSinavKarti,
       COACH_CIKMIS_SINAV_KARTI_DEFAULT,
     );
+  }
+
+  /** Mobil yeni anasayfa herkese açık mı? Varsayılan KAPALI (admin yine görür). */
+  async mobilAnasayfaV2(): Promise<boolean> {
+    return this.getBool(SETTING_KEYS.mobilAnasayfaV2, MOBIL_ANASAYFA_V2_DEFAULT);
   }
 
   async getBool(key: string, fallback: boolean): Promise<boolean> {

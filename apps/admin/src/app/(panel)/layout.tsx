@@ -25,6 +25,7 @@ const NAV = [
   { href: "/email", label: "E-posta", icon: "✉️", adminOnly: true },
   { href: "/users", label: "Kullanıcılar", icon: "👥", adminOnly: true },
   { href: "/audit", label: "İşlem Kayıtları", icon: "📜", adminOnly: true },
+  { href: "/settings", label: "Ayarlar", icon: "⚙️", adminOnly: true },
 ] as const;
 
 /** Panel kabuğu: kenar menü + oturum/rol kapısı (Doc 9 §3, §6). */

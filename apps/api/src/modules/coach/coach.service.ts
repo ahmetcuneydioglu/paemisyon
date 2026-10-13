@@ -24,6 +24,8 @@ export class CoachService {
   ) {}
 
   async brief(user: AuthenticatedUser): Promise<CoachBrief> {
+    // Ayar okuması 60 sn bellek önbelleğinden — ek gidiş-dönüş yok.
+    const homeV2Herkese = this.settings.mobilAnasayfaV2();
     const ctx = await this.buildContext(user);
 
     let cards: CoachCard[] = coachRules
@@ -110,6 +112,7 @@ export class CoachService {
       },
       // Haftalık fotoğraf (Doc 27 wireframe 02) — Bugün sağ kolonu.
       weeklyPhoto: ctx.weeklyPhoto,
+      flags: { homeV2: homeV2Acik(await homeV2Herkese, user.roles) },
     };
   }
 
@@ -509,4 +512,12 @@ function trDayKey(d: Date): string {
 function trDayDiff(now: Date, target: Date): number {
   const day = (d: Date) => Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
   return day(target) - day(now);
+}
+
+/**
+ * Yeni anasayfa açık mı (Doc 48): panel anahtarı açıksa herkes, kapalıyken
+ * yalnız admin rolü (önce admin, sonra herkes — 14 Eki 2026 kararı).
+ */
+export function homeV2Acik(herkeseAcik: boolean, roles: readonly string[]): boolean {
+  return herkeseAcik || roles.includes('admin');
 }
