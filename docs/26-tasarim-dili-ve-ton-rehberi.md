@@ -74,55 +74,102 @@ büyütmek CLAUDE.md'deki "tek tasarım sistemi" kuralıyla çelişir.
 
 ## 3. Token sistemi
 
-### 3.1 Renk (semantic katman — ham ramp'ler AppColors'ta kalır)
+### 3.1 Renk — v2 (Doc 48 Faz 3, 14 Eki 2026; gerekçe ve ölçümler: Doc 48/03)
+
+**Tek vurgu + anlamsal renkler.** Bir ekranda tek vurgu rengi (`accent`) bulunur. Kullanıldığı yerler:
+- birincil eylem;
+- bağlantı;
+- seçim.
+
+`success`, `warning` ve `danger` yalnız durum bildirir. v1'deki `accentSession`, `accentLive`,
+`accentStreak` ve `accentAtlas` mobilde emekli oldu. Kategori ayrımı ikon ve metinle yapılır.
 
 | Token | Açık | Koyu | Kullanım |
 |---|---|---|---|
-| `brand` | #1B3A6B | #85B7EB | marka vurgusu, aktif tab, halka |
-| `surface` | #FFFFFF | #15171C | kart zemini |
-| `surfaceAlt` | #F4F6F9 | #1D2027 | sayfa zemini, zebra |
-| `ink` | #1A1C22 | #ECEEF2 | birincil metin |
-| `inkSoft` | #5B6070 | #9BA1AF | ikincil metin |
-| `line` | #E4E7EC | #2C3038 | ayırıcı, kart çerçevesi |
-| `success` | #2E7D5B | #5DCAA5 | doğru cevap, tamamlanan hedef |
-| `warning` | #B98900 | #FAC775 | seri riski, süre uyarısı |
-| `danger` | #C0392B | #E08578 | yanlış cevap, bozulan seri |
-| `accentSession` | blue400 | blue200 | seans/CTA ailesi |
-| `accentLive` | teal400 | teal200 | canlı deneme ailesi |
-| `accentStreak` | amber600 | amber100 | seri/rozet ailesi |
-| `accentAtlas` | purple600 | purple100 | mevzuat/atlas ailesi |
+| `bg` | #F3F5F8 | #0E1014 | sayfa zemini |
+| `surface` | #FFFFFF | #171A20 | kart |
+| `surfaceSunken` | #EEF1F5 | #1F232B | kart içi gömülü satır |
+| `ink` / `inkSecondary` / `inkTertiary` | #141821 / #4A5161 / #626A79 | #ECEEF2 / #B4BAC6 / #9097A5 | metin katmanları |
+| `line` / `lineStrong` / `track` | #E2E6EC / #8A919E / #E3E7ED | #2A2F38 / #6B7280 / #2A2F38 | ayırıcı, kontrol çerçevesi, ilerleme izi |
+| `accent` / `onAccent` / `accentSoft` | #1F55C0 / #FFFFFF / #E8EFFC | #8DB6F7 / #0B1426 / #1B2A45 | TEK vurgu ailesi |
+| `success` / `successSoft` | #1C7A50 / #E5F4EC | #5FD3A6 / #123128 | başarı |
+| `warning` / `warningSoft` | #8A5A00 / #FCF1DC | #F2C46B / #33280F | uyarı (zayıf konu, çevrimdışı) |
+| `danger` / `dangerSoft` | #B42318 / #FDECEA | #F28B80 / #3B1A17 | hata |
 
-Kurallar: koyu tema **naif ters çevirme değil** (ramp kuralı: açıkta 50 zemin/600
-metin, koyuda 800 zemin/100-200 metin — mevcut `app_colors.dart` kuralı aynen).
-Semantic renkler accent sayılmaz; bir ekranda en fazla 1 accent ailesi baskın olur.
+**Kurallar**
+- 44 metin–zemin çiftinin tamamı WCAG AA.
+- Renk tek başına anlam taşımaz.
+- Koyu tema ters çevirme değildir; koyuda gölge yok, katman farkı `surface`/`bg` ile kurulur.
+- Kaynak: `packages/tokens/design-tokens.json` → `v2` ve Figma "Renk" koleksiyonu
+  (Açık/Koyu). Web v1'de kalır; geçişi ayrı iştir.
 
-### 3.2 Tipografi
+### 3.2 Tipografi — v2
 
-Aile — mobil: iOS'ta SF Pro (sistem), Android'de Inter; web: mevcut Rubik
-(başlık) + Open Sans (gövde) yeni ekranlarda da kalır (marka sürekliliği; harf
-genişliği yakın). Ölçek (mobil pt / web rem):
+Font ailesi:
+- **iOS:** sistem fontu (SF Pro).
+- **Android ve Figma:** Inter.
+- **Web:** Rubik + Open Sans (değişmedi).
 
-| Token | Boyut | Ağırlık | Kullanım |
-|---|---|---|---|
-| `display` | 32 | 800 | seans sonucu skoru, net |
-| `title` | 22 | 700 | ekran başlığı |
-| `heading` | 17 | 650 | kart başlığı, soru kökü |
-| `body` | 15 | 400 | gövde, şık metni |
-| `label` | 13 | 600 | buton, sekme, rozet |
-| `caption` | 11 | 500 | kaynak etiketi, alt bilgi (UPPERCASE + %6 tracking) |
+Ölçek iOS Dynamic Type'ın 11 basamağıdır:
 
-Sayılar her yerde `tabular-nums`. Satır genişliği (web) ≤ 65ch.
+| Basamak | Boyut / satır yüksekliği | Ağırlık |
+|---|---|---|
+| largeTitle | 34/41 | 700 |
+| title1 | 28/34 | 700 |
+| title2 | 22/28 | 700 |
+| title3 | 20/25 | 600 |
+| headline | 17/22 | 600 |
+| body | 17/22 | 400 |
+| callout | 16/21 | 400 / 600 |
+| subheadline | 15/20 | 400 / 600 |
+| footnote | 13/18 | 400 / 600 |
+| caption1 | 12/16 | 500 |
+| caption2 | 11/13 | 500 |
 
-### 3.3 Spacing · radius · elevation
+Flutter rol eşlemesi ve platform izleme tablosu Doc 48/03 §2'de.
 
-- **Spacing:** 4pt ızgara — `xs 4 · sm 8 · md 12 · lg 16 · xl 24 · 2xl 32 · 3xl 48`
-  (mevcut `app_spacing.dart` bu ölçeğe eşitlenir). Kural: kardeş aralıkları
-  `gap`/`SizedBox` ile, tek tük margin ile değil.
-- **Radius:** `sm 8` (giriş alanı, çip) · `md 12` (kart) · `lg 20` (hero kart, sheet)
-  · `full` (pil/rozet). Tek ekranda en fazla 2 kademe.
-- **Elevation:** 2 seviye yeter — `card` (mevcut `--shadow-card` yumuşaklığında) ve
-  `overlay` (sheet/dialog). Gölge enflasyonu yok; koyu temada gölge yerine
-  `surface`↑ kontrastı.
+**Kurallar**
+1. Flutter `TextTheme`'in 15 rolünün hepsi açıkça tanımlanır, Material 3 varsayılanıyla merge
+   edilmez. v1'de gövde metni M3'ten +0,25…+0,5 harf aralığı devralıyordu.
+2. Harf aralığı yalnız izleme tablosundan gelir. Ad hoc `letterSpacing` yasak.
+3. BÜYÜK HARF + izleme kalıbı yoktur.
+4. Rakamlar `tabular-nums`. Web satır genişliği ≤ 65ch.
+
+### 3.3 Spacing · radius · boyut · elevation — v2
+
+**Boşluk** (4pt ızgarası):
+
+| xs | sm | md | lg | xl | 2xl | 3xl |
+|---|---|---|---|---|---|---|
+| 4 | 8 | 12 | 16 | 24 | 32 | 48 |
+
+Ekran ritmi:
+- kenar boşluğu lg;
+- bloklar arası xl;
+- blok içi md.
+
+Kardeş aralıkları `gap` ile verilir.
+
+**Yarıçap:**
+
+| Basamak | Değer | Kullanım |
+|---|---|---|
+| sm | 8 | iç öğe |
+| md | 12 | düğme, satır kutusu |
+| lg | 16 | kart |
+| xl | 20 | görev kartı, sheet |
+| full | — | pil |
+
+**Boyut:**
+- dokunma ≥ 44;
+- kontrol 52;
+- eylem çubuğu 76;
+- sekme çubuğu 83.
+
+**Elevation:**
+- `card` yalnız açık temada;
+- `overlay` sheet ve eylem çubuğunda;
+- koyuda gölge yok.
 
 ### 3.4 Motion
 
@@ -137,17 +184,28 @@ Kurallar: her etkileşimin `quick` geri bildirimi vardır (ilk günden — CLAUD
 `prefers-reduced-motion`/`disableAnimations` saygısı zorunlu; doğru/yanlış
 renk değişimi animasyonla değil ANINDA verilir (öğrenme anında gecikme olmaz).
 
-### 3.5 Icon sistemi
+### 3.5 Icon sistemi — v2
 
-- Mobil: **SF Symbols hissiyatlı tek set** — Flutter'da `CupertinoIcons` temel,
-  eksikler için tek stil dış set (Lucide). Karışık set yasak.
-- Web (yeni ekranlar): aynı Lucide seti inline SVG. Icomoon yalnız miras alanında.
-- Durum ikonları ton rehberindeki emoji eşleriyle karışmaz: UI ikonu çizgisel,
-  koç kartı içindeki durum işareti emoji — ikisi aynı satırda kullanılmaz.
+- **Tek set:** Lucide (ISC, 1.56.0). Çizgi kalınlığı 2.
+- **Boyutlar:** 16, 20, 24.
+- **Kapsam:** iOS, Android ve web'in yeni ekranları için aynı set. Yeni ekranlarda Material
+  ve Cupertino ikonları kullanılmaz.
+- **Durum işareti:** UI ikonu çizgiseldir. Koç kartı içindeki durum işareti emojidir; ikisi
+  aynı satırda kullanılmaz.
 
 ---
 
 ## 4. Component Library envanteri (öncelik sırasıyla)
+
+> **v2 (Doc 48 Faz 3):** mobil Bugün ekranı için bileşen seti ve Figma ↔ Flutter eşlemesi
+> Doc 48/03 §5'te. Değişen eşlemeler:
+> - `CoachCard` (hero) → `TaskCard`
+> - `SessionButton` → `ActionBar`
+> - `GoalProgress` / `MasteryBar` → `ProgressBar`
+> - `FocusSheet` → `AppSheet` + `SelectionList`
+> - `StreakBadge` Bugün'den Performans'a iner.
+>
+> Aşağıdaki tablo kalan ekranların envanteri olarak geçerli.
 
 Her bileşen: Flutter widget + web eşdeğeri, aynı token'lar, aynı ad. İlk dalga
 (çekirdek 8 ekranı karşılar):
@@ -181,10 +239,10 @@ Kabul kriteri (her bileşen için): iki tema ✓ · boş/uzun içerik ✓ · a11
 ## 5. Accessibility + responsive taban çizgisi
 
 - Kontrast: metin ≥4.5:1, büyük metin/ikon ≥3:1 — iki temada da ölçülür.
-- Her etkileşimli öğe: `Semantics` etiketi (Flutter) / görünür odak durumu (web).
+- Her etkileşimli öğe: `Semantics` etiketi (Flutter) / görünür odak durumu (web). Okuma sırası anlam sırasıdır: sabit eylem çubuğu görev kartından hemen sonra okunur (Doc 48/03 §5).
 - Renk tek başına anlam taşımaz: doğru/yanlış renk + ikon + metinle verilir
   (renk körü kullanıcı sınav kaybetmez).
-- Dynamic Type / font ölçekleme 1.3×'e kadar kırılmadan; responsive: 320pt
+- Dynamic Type / font ölçekleme **en büyük boyuta (AX5) kadar** kırılmadan (v2; metin kesilmez, sarar); responsive: 320pt
   telefon → tablet iki kolon (Bugün'de kartlar grid'e döner); web 360px → masaüstü.
 
 ---

@@ -1,6 +1,6 @@
 # Doc 48 / Faz 3 — Tasarım Sistemi v2 (mobil)
 
-> Durum: **onay bekliyor** (14 Eki 2026).
+> Durum: **onaylandı** (14 Eki 2026; vurgu rengi #1F55C0 / #8DB6F7 kullanıcı seçimi). Kanonik metin Doc 26 §3–§5'e işlendi; bu dosya gerekçe ve ölçüm kaydıdır.
 > Figma: https://www.figma.com/design/qHrLLOXtJSIqpKxTx2FrYi
 > Sayfalar: "Tasarım sistemi" (değişkenler, stiller, ikonlar, 18 bileşen) ve
 > "Hi-fi — Bugün" (B1 açık/koyu, B2 koyu, O1 ile O3 koyu).
