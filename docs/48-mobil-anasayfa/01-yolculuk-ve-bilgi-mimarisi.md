@@ -304,7 +304,7 @@ Sonuç: ekran 14 bölümden 4 bloğa iner. Birincil eylem 2'den 1'e, "devam" yol
 | Yarım tur (taze) | "Turun yarım kaldı · 7/20" | — | — | — |
 | Yarım tur (eski) | Normal kart + ikincil satır "2 Eki'de yarım kalan tur" | — | — | — |
 | Hedef tamam | "Bugünkü hedef tamam" + ikincil ekstra tur | Bugün dolu | Bu hafta değişimi | — |
-| İstikrar bozuldu / dönüş | "Hoş geldin · 5 soru" | Nötr çerçeve ("Toplam 47 aktif gün") | Değişmez | — |
+| İstikrar bozuldu / dönüş | "Kısa bir dönüş turu · 5 soru" | Nötr çerçeve ("Toplam 47 aktif gün") | Dersler görünür, **zayıf konular gizli** (Doc 24 §7.1: dönüşte güçlü konu) | — |
 | Çevrimdışı | Son bilinen durum (B7) + devre dışı CTA ve nedeni | Önbellekten | Önbellekten | Okuma önbelleği varsa açık |
 | Sınav modu (≤ 30 gün) / taper (≤ 3 gün) | Durum tablosuna göre (Doc 24 §3) | Geri sayım vurgulu | "Yeni konu yok — pekiştirme" | — |
 
