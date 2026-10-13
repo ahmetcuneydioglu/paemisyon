@@ -1,4 +1,4 @@
-import type { BriefFlags, ExamInfo } from './home-v2.types';
+import type { BriefFlags, ExamInfo, Readiness } from './home-v2.types';
 
 /**
  * Kişisel Koç sözleşmesi (Doc 19 §2-3).
@@ -89,7 +89,7 @@ export interface CoachContext {
   stats: { totalSolved: number; totalCorrect: number; totalSessions: number };
   /** Çözülmemiş yanlış sayısı (wrong_answers.resolvedAt IS NULL). */
   unresolvedWrongCount: number;
-  /** En zayıf konu (çözülen ≥ 10 ve mastery < 0.5 olanlardan en düşüğü). */
+  /** En zayıf konu — tek eşik `common/zayif-konu.ts` (≥10 çözülmüş, < %60), hedef sınav kapsamında. */
   weakestTopic: { topicId: string; name: string; mastery: number } | null;
   exams: {
     /** Şu an penceresi açık deneme (varsa) + kullanıcının durumu. */
@@ -210,4 +210,6 @@ export interface CoachBrief {
   flags: BriefFlags;
   /** Doc 48 A2 — sınav geri sayımı (kişisel ?? resmî tarih). */
   exam: ExamInfo;
+  /** Doc 48 A3 — hazırlık bloğu (ders bazında doğruluk + en zayıf 3 konu). */
+  readiness: Readiness;
 }

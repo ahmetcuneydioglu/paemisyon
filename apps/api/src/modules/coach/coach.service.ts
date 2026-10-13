@@ -1,12 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { iptalSoruIdleri } from '../../common/iptal-soru';
 import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft, liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import { computeRank, rankScore } from './rank.logic';
 import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
-import type { ExamInfo } from './home-v2.types';
+import type { ExamInfo, Readiness } from './home-v2.types';
+import { buildReadiness } from './readiness.logic';
+import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
 
 /** Haftalık aktif gün hedefi (v1 sabit; ileride kullanıcı ayarı olabilir). */
@@ -115,6 +116,7 @@ export class CoachService {
       weeklyPhoto: ctx.weeklyPhoto,
       flags: { homeV2: homeV2Acik(await homeV2Herkese, user.roles) },
       exam: ctx.home.exam,
+      readiness: ctx.home.readiness,
     };
   }
 
@@ -132,13 +134,49 @@ export class CoachService {
     const prevWeekStart = new Date(weekStart.getTime() - 7 * 86_400_000);
     const twoDaysAgo = new Date(now.getTime() - 48 * 3_600_000);
 
+    // Profil, hedef sınavı (kapsam) taşır: yanlış sayacı onu bekler ama
+    // aşağıdaki sorgu turunu bekletmez (paralel zincir — ek gidiş-dönüş yok).
+    const profileP = this.prisma.user.findUnique({
+      where: { id: user.id },
+      select: {
+        displayName: true,
+        dailyGoal: true,
+        onboardingCompletedAt: true,
+        targetExamDate: true,
+        preferredModuleId: true,
+        preferredModule: { select: { name: true, examDate: true } },
+      },
+    });
+    // Yanlış turunun GERÇEKTE sunabileceği yanlış sayısı (Doc 48 A3): turla
+    // aynı süzgeç (yanlis-havuzu.ts) — sayaç "4 yanlış" derken tur "kuyruk
+    // temiz" diyemez (ücretsiz 7 gün, premium konu, hedef sınav kapsamı).
+    const yanlisSayisiP = Promise.all([
+      profileP,
+      this.prisma.wrongAnswer.findMany({
+        where: yanlisKaydiFiltresi(user.id, user.isPremium, now.getTime()),
+        select: { questionId: true },
+      }),
+    ]).then(([p, wrongs]) =>
+      wrongs.length === 0
+        ? 0
+        : this.prisma.question.count({
+            where: {
+              id: { in: wrongs.map((w) => w.questionId) },
+              ...yanlisTuruSoruFiltresi({
+                isPremium: user.isPremium,
+                preferredModuleId: p?.preferredModuleId ?? null,
+              }),
+            },
+          }),
+    );
+
     const [
       profile,
       streak,
       todayUsage,
       stats,
       unresolvedWrongCount,
-      weakest,
+      moduleSections,
       exams,
       mySessions,
       denemeAgg,
@@ -154,39 +192,26 @@ export class CoachService {
       cikmisSinavlar,
       cikmisCozumlerim,
       cikmisKartAcik,
+      topicProgress,
     ] = await Promise.all([
-      this.prisma.user.findUnique({
-        where: { id: user.id },
-        select: {
-          displayName: true,
-          dailyGoal: true,
-          onboardingCompletedAt: true,
-          targetExamDate: true,
-          preferredModule: { select: { name: true, examDate: true } },
-        },
-      }),
+      profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
       this.prisma.dailyUsage.findUnique({
         where: { userId_usageDate: { userId: user.id, usageDate: todayUtc } },
       }),
       this.prisma.userStats.findUnique({ where: { userId: user.id } }),
-      this.prisma.wrongAnswer.count({
-        // Tekrar turunun havuzuyla AYNI süzgeç — sayaç "1 yanlışın var" derken
-        // tur "kuyruk temiz" diyemez.
-        where: {
-          userId: user.id,
-          resolvedAt: null,
-          questionId: { notIn: await iptalSoruIdleri(this.prisma) },
+      yanlisSayisiP,
+      // Hedef sınavın bölümleri → dersleri, müfredat sırasıyla (hazırlık bloğu).
+      // İlişkisel süzgeç: profil sonucunu beklemeden aynı turda çalışır.
+      this.prisma.examSection.findMany({
+        where: { deletedAt: null, examType: { preferredUsers: { some: { id: user.id } } } },
+        orderBy: { sortOrder: 'asc' },
+        select: {
+          courses: {
+            orderBy: { sortOrder: 'asc' },
+            select: { course: { select: { id: true, name: true, deletedAt: true } } },
+          },
         },
-      }),
-      this.prisma.userTopicProgress.findFirst({
-        where: {
-          userId: user.id,
-          solvedCount: { gte: 10 },
-          mastery: { lt: 0.5 },
-        },
-        orderBy: { mastery: 'asc' },
-        include: { topic: { select: { id: true, name: true } } },
       }),
       this.prisma.exam.findMany({
         // Çıkmış sınavın motor kaydı (Doc 36) randevulu deneme değildir: deneme
@@ -283,6 +308,16 @@ export class CoachService {
         select: { archiveExamId: true },
       }),
       this.settings.coachCikmisSinavKarti(),
+      // Konu birikimi — hazırlık bloğu ve zayıf konu (tek eşik, zayif-konu.ts).
+      this.prisma.userTopicProgress.findMany({
+        where: { userId: user.id, topic: { deletedAt: null } },
+        select: {
+          topicId: true,
+          solvedCount: true,
+          correctCount: true,
+          topic: { select: { name: true, courseId: true, course: { select: { name: true } } } },
+        },
+      }),
     ]);
 
     // ── Deneme durumları ──
@@ -373,6 +408,31 @@ export class CoachService {
       ? Math.floor((todayUtc.getTime() - startOfUtcDay(lastActive).getTime()) / 86_400_000)
       : null;
 
+    // ── Hazırlık (Doc 48 A3) — hedef sınavın dersleri + konu birikimi ──
+    const hedefDersler = profile?.preferredModuleId
+      ? [
+          ...new Map(
+            moduleSections
+              .flatMap((s) => s.courses)
+              .filter((sc) => sc.course.deletedAt == null)
+              .map((sc) => [sc.course.id, { courseId: sc.course.id, name: sc.course.name }]),
+          ).values(),
+        ]
+      : null;
+    const readiness: Readiness = buildReadiness({
+      courses: hedefDersler,
+      progress: topicProgress.map((t) => ({
+        topicId: t.topicId,
+        topicName: t.topic.name,
+        courseId: t.topic.courseId,
+        courseName: t.topic.course.name,
+        solved: t.solvedCount,
+        correct: t.correctCount,
+      })),
+      weeklyPhoto,
+      unresolvedWrongCount,
+    });
+
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
     // tarih girmeyen aday da geri sayımı ve sınav modunu görür).
@@ -422,11 +482,13 @@ export class CoachService {
         totalSessions: stats?.totalSessions ?? 0,
       },
       unresolvedWrongCount,
-      weakestTopic: weakest
+      // Koç kartı da hazırlık bloğuyla AYNI zayıf konuyu söyler (tek eşik, hedef
+      // sınav kapsamı — Doc 48 A3).
+      weakestTopic: readiness.weakest[0]
         ? {
-            topicId: weakest.topic.id,
-            name: weakest.topic.name,
-            mastery: Number(weakest.mastery),
+            topicId: readiness.weakest[0].topicId,
+            name: readiness.weakest[0].name,
+            mastery: readiness.weakest[0].accuracy,
           }
         : null,
       exams: {
@@ -485,7 +547,7 @@ export class CoachService {
           }
         : null,
       volume: { last7, prev7 },
-      home: { exam },
+      home: { exam, readiness },
     };
   }
 }
@@ -493,6 +555,7 @@ export class CoachService {
 /** Yeni anasayfanın (Doc 48) bağlamdan gelen ham ekleri. */
 interface HomeRaw {
   exam: ExamInfo;
+  readiness: Readiness;
 }
 
 /**

@@ -25,6 +25,8 @@ import {
   PERSONAL_EXAM_FREE_MAX_QUESTIONS,
 } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
+import { enZayifKonular } from '../../common/zayif-konu';
+import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
@@ -229,24 +231,16 @@ export class QuizService {
     if (dto.mode === 'review') {
       // Yanlış tekrarı reçetesi (Doc 24 §11): free = son 7 günün yanlışları,
       // premium = süresiz tekrar hafızası. En eski yanlış önce (unutma eğrisi).
-      const since = isPremiumUser ? undefined : new Date(Date.now() - 7 * 86_400_000);
+      // Süzgeç TEK yerde (yanlis-havuzu.ts): koçun "N yanlış" sayacı da onu okur.
       const wrongs = await this.prisma.wrongAnswer.findMany({
-        where: { userId, resolvedAt: null, ...(since ? { lastWrongAt: { gte: since } } : {}) },
+        where: yanlisKaydiFiltresi(userId, isPremiumUser),
         orderBy: { lastWrongAt: 'asc' },
         select: { questionId: true },
       });
       const questions = await this.prisma.question.findMany({
         where: {
           id: { in: wrongs.map((w) => w.questionId) },
-          deletedAt: null,
-          currentVersionId: { not: null },
-          ...IPTAL_EDILMEMIS,
-          topic: {
-            ...(isPremiumUser ? {} : { isPremium: false }),
-            ...(preferredModuleId
-              ? { course: { sections: { some: { section: moduleSection } } } }
-              : {}),
-          },
+          ...yanlisTuruSoruFiltresi({ isPremium: isPremiumUser, preferredModuleId }),
         },
         select: { id: true, currentVersionId: true, topicId: true },
       });
@@ -1638,13 +1632,13 @@ export class QuizService {
       trDayDiffQuiz(new Date(), profile.targetExamDate) <= 30 &&
       trDayDiffQuiz(new Date(), profile.targetExamDate) >= 0;
 
-    // Zayıf: yeterli veri (≥5 çözüm) + mastery < 0.6, en zayıf 5 konu.
+    // Zayıf: TEK eşik (common/zayif-konu.ts — koç kartı ve anasayfa hazırlık
+    // bloğuyla aynı tanım), en zayıf 5 konu.
     const weakTopicIds = new Set(
-      progress
-        .filter((p) => p.solvedCount >= 5 && Number(p.mastery) < 0.6)
-        .sort((a, b) => Number(a.mastery) - Number(b.mastery))
-        .slice(0, 5)
-        .map((p) => p.topicId),
+      enZayifKonular(
+        progress.map((p) => ({ topicId: p.topicId, solved: p.solvedCount, accuracy: Number(p.mastery) })),
+        5,
+      ).map((p) => p.topicId),
     );
     // Çok çalışılmış: ≥15 çözüm — "yeni" dilimi bunlardan kaçınır.
     const heavyTopicIds = new Set(
