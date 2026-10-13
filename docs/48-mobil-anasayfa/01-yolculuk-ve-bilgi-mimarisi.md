@@ -1,6 +1,6 @@
 # Doc 48 / Faz 1 — Mobil "Bugün": Aday Yolculuğu ve Bilgi Mimarisi
 
-> Durum: **taslak, onay bekliyor** (14 Eki 2026).
+> Durum: **onaylandı** (14 Eki 2026). Dört kararın dördü de öneri yönünde (§11).
 > Bağlam: Faz 0 keşfi (ekran haritası, veri envanteri) ve iki canlı düzeltme (premium
 > sayaç, canlı seri) tamamlandı. Bu doküman ekranın *ne söyleyeceğini* kurar; *nasıl
 > görüneceği* Faz 2 (Figma wireframe) ve Faz 3 (tasarım sistemi) işidir.
@@ -343,18 +343,11 @@ tasarlanacak. Bu Faz 2 ve Faz 5'in kabul ölçütüdür.
 
 ---
 
-## 11. Karar bekleyenler
+## 11. Kararlar (kullanıcı, 14 Eki 2026 — dördü de öneri yönünde)
 
-- **D1 — Tek istikrar ölçüsü.** Öneri: **haftalık aktif gün** ("Bu hafta 3/5 gün").
-  Günlük seri hesaplanmaya devam eder ama ana ekrandan Performans/Ben'e iner.
-  - Gerekçe: vardiyalı persona, 412 serinin 371'inin kırık olması ve Doc 24 §7.2.
-  - Bedel: akşamki `streak_risk` bildirimi "haftalık hedef" diline geçer.
-- **D2 — Gün sınırı.** Öneri: **TR saatiyle 04.00.**
-  - Gece nöbetinde 01.00'de çözülen soru "bugünün" sayılır; yorgun adayın seri ve
-    halkası gece yarısı sıfırlanmaz (Anki'nin bilinen tercihi).
-  - Bugün sınır UTC, yani TR 03.00.
-- **D3 — Aktiflik ve ilerleme ne zaman sayılır?** Öneri: **cevap anında.**
-  - Yarıda bırakılan tur da emek olarak sayılır.
-  - 4.353 cevaplık kayıp bir daha birikmez.
-- **D4 — Koç kartları.** Öneri: **görev kartı + en çok 1 ikincil satır.** Kalan kartlar
-  bağlamlarına taşınır.
+| # | Karar | Uygulama notu |
+|---|---|---|
+| D1 | **Tek istikrar ölçüsü: haftalık aktif gün** ("Bu hafta 3/5 gün"). Günlük seri hesaplanmaya devam eder, ana ekrandan Performans/Ben'e iner. | `streak_risk` kuralı ve bildirimi haftalık hedef diline geçer (Doc 26 tonu). |
+| D2 | **Gün sınırı: TR saatiyle 04.00.** | Sayaç, haftalık gün, seri ve ücretsiz kota aynı gün anahtarını kullanır. Tek yardımcı fonksiyon olur, geçmiş veriye dokunulmaz (B11). |
+| D3 | **Aktiflik ve ilerleme cevap anında sayılır.** 7 günden eski yarım tur kısmi tamamlanır. | B8. Seri ve "son aktivite" cevaptan beslenir; mastery, yanlış ve istatistik yazımı tamamlama dışına da taşınır. |
+| D4 | **Koç kartları: görev kartı + en çok 1 ikincil satır.** | B3; Doc 25 §2 Bölge 1 güncellenir. |
