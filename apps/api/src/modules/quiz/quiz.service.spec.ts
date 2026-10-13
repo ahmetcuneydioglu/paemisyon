@@ -49,6 +49,11 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     lawArticle: {
       findFirst: jest.fn().mockResolvedValue(null),
     },
+    // Günlük sayaç (daily_usage): premium koşulsuz $executeRaw, ücretsiz
+    // limitli $queryRaw (satır dönmezse limit dolu).
+    plan: { findUnique: jest.fn().mockResolvedValue({ dailyQuestionLimit: 30 }) },
+    $executeRaw: jest.fn().mockResolvedValue(1),
+    $queryRaw: jest.fn().mockResolvedValue([{ questions_answered: 1 }]),
   };
   // Kaynak etiketi görünürlüğü artık tek noktadan (showQuestionSource) okunur;
   // varsayılanı KAPALI. Testte AÇIK tutulur ki alan gerçekten dolduruluyor mu
@@ -210,6 +215,84 @@ describe('QuizService.submitAnswer', () => {
         selectedOptionId: selectedId,
       }),
     ).rejects.toBeInstanceOf(BadRequestException);
+    expect(prisma.quizAnswer.upsert).not.toHaveBeenCalled();
+  });
+});
+
+/**
+ * Günlük sayaç (14 Eki 2026): daily_usage Bugün halkasının, aktif günün,
+ * aktivite şeridinin ve liderlik XP'sinin tek kaynağı. Premium dalı eskiden
+ * erken dönüyordu ve premium kullanıcıların sayacı hep 0 kalıyordu.
+ */
+describe('QuizService.submitAnswer — günlük sayaç', () => {
+  const SESSION = '00000000-0000-0000-0000-000000000006';
+  const cevap = (selectedOptionId: string) => ({
+    questionId: '00000000-0000-0000-0000-000000000002',
+    questionVersionId: VERSION_ID,
+    selectedOptionId,
+  });
+  const sqlOf = (mock: jest.Mock) => (mock.mock.calls[0][0] as string[]).join('?');
+
+  it('premium yeni cevap sayaca yazılır — limitsiz, kota sorgusu yok', async () => {
+    const { service, prisma, selectedId } = setup();
+
+    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+
+    expect(prisma.$executeRaw).toHaveBeenCalledTimes(1);
+    expect(sqlOf(prisma.$executeRaw)).toContain('daily_usage');
+    expect(sqlOf(prisma.$executeRaw)).not.toContain('WHERE');
+    expect(prisma.$queryRaw).not.toHaveBeenCalled();
+    expect(prisma.plan.findUnique).not.toHaveBeenCalled();
+    expect(prisma.quizAnswer.upsert).toHaveBeenCalledTimes(1);
+  });
+
+  it('aynı soruya yeniden cevap sayılmaz', async () => {
+    const { service, prisma, selectedId } = setup();
+    prisma.quizAnswer.findUnique.mockResolvedValue({ id: 'onceki-cevap' });
+
+    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+
+    expect(prisma.$executeRaw).not.toHaveBeenCalled();
+    expect(prisma.$queryRaw).not.toHaveBeenCalled();
+  });
+
+  it.each(['exam', 'deneme'])('%s cevabı sayılmaz (kota muafiyetiyle aynı kapsam)', async (mode) => {
+    const { service, prisma, selectedId } = setup();
+    prisma.quizSession.findFirst.mockResolvedValue({
+      status: 'in_progress',
+      mode,
+      startedAt: new Date(),
+      plannedDurationSeconds: null,
+      questionOrder: [VERSION_ID],
+      exam: null,
+    });
+
+    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+
+    expect(prisma.$executeRaw).not.toHaveBeenCalled();
+    expect(prisma.$queryRaw).not.toHaveBeenCalled();
+  });
+
+  it('ücretsiz kullanıcı limitli sayaçla sayılır', async () => {
+    const { service, prisma, selectedId } = setup();
+
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+
+    expect(prisma.$queryRaw).toHaveBeenCalledTimes(1);
+    expect(sqlOf(prisma.$queryRaw)).toContain('WHERE daily_usage.questions_answered <');
+    expect(prisma.$executeRaw).not.toHaveBeenCalled();
+    expect(prisma.quizAnswer.upsert).toHaveBeenCalledTimes(1);
+  });
+
+  it('ücretsiz kullanıcının limiti doluysa reddedilir ve cevap KAYDEDİLMEZ', async () => {
+    const { service, prisma, selectedId } = setup();
+    prisma.$queryRaw.mockResolvedValue([]);
+
+    await expect(
+      service.submitAnswer(freeUser, SESSION, cevap(selectedId)),
+    ).rejects.toMatchObject({ response: { code: 'DAILY_LIMIT_REACHED' } });
     expect(prisma.quizAnswer.upsert).not.toHaveBeenCalled();
   });
 });

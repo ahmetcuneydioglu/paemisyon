@@ -1069,7 +1069,7 @@ export class QuizService {
       }
     }
 
-    // Yeni soru → freemium günlük limit (re-answer sayılmaz).
+    // Yeni soru → günlük sayaç; ücretsizde aynı zamanda kota (re-answer sayılmaz).
     //
     // DENEME ve EXAM modları MUAFTIR. Randevulu deneme ayrı bir üründür:
     // alıştırma kotasını tüketmesi de, sınavı ORTASINDAN KESMESİ de yanlıştır.
@@ -1085,8 +1085,11 @@ export class QuizService {
     // kapısı BAŞLANGIÇTA kurulur — ücretsiz planda günde 1 hak, en çok 25 soru
     // (startPersonalExam). Muafiyeti buradan daraltma; kapıyı orada ayarla.
     const gunlukLimiteTabi = session.mode !== 'deneme' && session.mode !== 'exam';
-    if (!existing && gunlukLimiteTabi) {
-      await this.enforceDailyLimit(user);
+    const gunlukSayilir = !existing && gunlukLimiteTabi;
+    // Ücretsizde sayaç aynı zamanda KOTA: cevap kaydedilmeden önce reddedebilmeli.
+    // Premium'da reddetme yok; sayaç aşağıda kayıtla paralel yazılır.
+    if (gunlukSayilir && !user.isPremium) {
+      await this.countDailyAnswer(user);
     }
     const correct = version.options.find((option) => option.isCorrect);
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
@@ -1142,6 +1145,7 @@ export class QuizService {
             },
           })
         : Promise.resolve(null),
+      gunlukSayilir && user.isPremium ? this.countDailyAnswer(user) : Promise.resolve(),
     ]);
 
     if (!givesFeedback) {
@@ -1497,12 +1501,30 @@ export class QuizService {
     return limit;
   }
 
-  private async enforceDailyLimit(user: AuthenticatedUser) {
-    if (user.isPremium) return; // guard hesapladı — sınırsız
-
-    const limit = await this.freeDailyLimit(); // çoğunlukla bellek, 0 sorgu
+  /**
+   * Yeni cevabı bugünkü sayaca yazar. daily_usage.questions_answered Bugün
+   * halkasının, haftalık aktif günün, aktivite şeridinin, rütbenin ve liderlik
+   * XP'sinin TEK kaynağıdır — herkes için yazılmalı. Ücretsiz planda sayaç aynı
+   * zamanda kotadır: limit doluysa artmaz ve DAILY_LIMIT_REACHED fırlatılır.
+   *
+   * 14 Eki 2026'ya kadar premium dalı burada erken dönüyordu (sayaç = kota
+   * sanılmıştı); premium kullanıcıların halkası, aktif günü ve şeridi hep 0'dı.
+   */
+  private async countDailyAnswer(user: AuthenticatedUser) {
     const today = new Date();
     today.setUTCHours(0, 0, 0, 0);
+
+    if (user.isPremium) {
+      // daily_limit kolonunu okuyan yok; ai-explain ile aynı yer tutucu yazılır.
+      await this.prisma.$executeRaw`
+        INSERT INTO daily_usage (user_id, usage_date, questions_answered, daily_limit)
+        VALUES (${user.id}::uuid, ${today}::date, 1, ${FREE_DAILY_LIMIT_FALLBACK})
+        ON CONFLICT (user_id, usage_date) DO UPDATE
+          SET questions_answered = daily_usage.questions_answered + 1`;
+      return;
+    }
+
+    const limit = await this.freeDailyLimit(); // çoğunlukla bellek, 0 sorgu
 
     // TEK atomik sorgu: satır yoksa aç, limiti aşmadıysa artır; aşıldıysa satır dönmez.
     const rows = await this.prisma.$queryRaw<{ questions_answered: number }[]>`
