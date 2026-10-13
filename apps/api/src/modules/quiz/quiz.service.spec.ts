@@ -257,7 +257,7 @@ describe('QuizService.submitAnswer — günlük sayaç', () => {
     expect(prisma.$queryRaw).not.toHaveBeenCalled();
   });
 
-  it.each(['exam', 'deneme'])('%s cevabı sayılmaz (kota muafiyetiyle aynı kapsam)', async (mode) => {
+  it.each(['exam', 'deneme'])('%s cevabı kotaya girmez, yalnız günün toplamına yazılır', async (mode) => {
     const { service, prisma, selectedId } = setup();
     prisma.quizSession.findFirst.mockResolvedValue({
       status: 'in_progress',
@@ -271,8 +271,29 @@ describe('QuizService.submitAnswer — günlük sayaç', () => {
     await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
     await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
 
-    expect(prisma.$executeRaw).not.toHaveBeenCalled();
+    // Kota sorgusu ($queryRaw) hiç çalışmaz — canlı denemede kesilme yok.
     expect(prisma.$queryRaw).not.toHaveBeenCalled();
+    // Her iki kullanıcıda da yalnız toplam sayaç artar.
+    expect(prisma.$executeRaw).toHaveBeenCalledTimes(2);
+    for (const call of prisma.$executeRaw.mock.calls) {
+      const sql = (call[0] as string[]).join('?');
+      expect(sql).toContain('SET total_answered = daily_usage.total_answered + 1');
+      expect(sql).not.toContain('questions_answered = daily_usage.questions_answered + 1');
+    }
+  });
+
+  it('kotaya tabi yeni cevap hem kotayı hem günün toplamını artırır', async () => {
+    const { service, prisma, selectedId } = setup();
+
+    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+
+    const premiumSql = sqlOf(prisma.$executeRaw);
+    expect(premiumSql).toContain('questions_answered = daily_usage.questions_answered + 1');
+    expect(premiumSql).toContain('total_answered = daily_usage.total_answered + 1');
+    const freeSql = sqlOf(prisma.$queryRaw);
+    expect(freeSql).toContain('total_answered = daily_usage.total_answered + 1');
+    expect(freeSql).toContain('WHERE daily_usage.questions_answered <');
   });
 
   it('ücretsiz kullanıcı limitli sayaçla sayılır', async () => {

@@ -213,16 +213,17 @@ export class CoachService {
         where: {
           userId: user.id,
           usageDate: { gte: weekStart },
-          questionsAnswered: { gt: 0 },
+          // Aktif gün = o gün en az 1 cevap (deneme dahil — Doc 48 A9).
+          totalAnswered: { gt: 0 },
         },
       }),
       // Toplam aktif gün (rütbe puanı — Doc 24 §5).
       this.prisma.dailyUsage.count({
-        where: { userId: user.id, questionsAnswered: { gt: 0 } },
+        where: { userId: user.id, totalAnswered: { gt: 0 } },
       }),
       this.prisma.dailyUsage.aggregate({
         where: { userId: user.id },
-        _max: { questionsAnswered: true },
+        _max: { totalAnswered: true },
       }),
       this.prisma.topicMasterySnapshot.findMany({
         where: { userId: user.id, weekStart: { in: [weekStart, prevWeekStart] } },
@@ -234,7 +235,7 @@ export class CoachService {
           userId: user.id,
           usageDate: { gte: new Date(todayUtc.getTime() - 14 * 86_400_000) },
         },
-        select: { usageDate: true, questionsAnswered: true },
+        select: { usageDate: true, totalAnswered: true },
       }),
       // Deneme sonrası (post_exam): son 48 saatte tamamlanmış randevulu deneme.
       this.prisma.quizSession.findFirst({
@@ -374,8 +375,8 @@ export class CoachService {
     let last7 = 0;
     let prev7 = 0;
     for (const u of recentUsage) {
-      if (u.usageDate.getTime() >= sevenDaysAgo) last7 += u.questionsAnswered;
-      else prev7 += u.questionsAnswered;
+      if (u.usageDate.getTime() >= sevenDaysAgo) last7 += u.totalAnswered;
+      else prev7 += u.totalAnswered;
     }
 
     return {
@@ -396,7 +397,8 @@ export class CoachService {
         activeYesterday: daysSince === 1,
         freezesLeft: freezesLeft(streak, now, freezeAllowance),
       },
-      answeredToday: todayUsage?.questionsAnswered ?? 0,
+      // Bugün halkası: günün TÜM yeni cevapları (deneme dahil — Doc 48 A9).
+      answeredToday: todayUsage?.totalAnswered ?? 0,
       stats: {
         totalSolved,
         totalCorrect: stats?.totalCorrect ?? 0,
@@ -451,7 +453,7 @@ export class CoachService {
       nextBadge,
       weekly: { activeDays: weeklyActive, goalDays: WEEKLY_GOAL_DAYS },
       activeDaysTotal,
-      maxDailyQuestions: maxDaily._max.questionsAnswered ?? 0,
+      maxDailyQuestions: maxDaily._max.totalAnswered ?? 0,
       courseTrend,
       weeklyPhoto,
       daysSinceLastActivity: daysSince,

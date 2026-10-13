@@ -630,7 +630,12 @@ model Entitlement {
 model DailyUsage {
   userId             String   @map("user_id") @db.Uuid
   usageDate          DateTime @map("usage_date") @db.Date
+  /// Ücretsiz plan KOTASI: yalnız kotaya tabi modların (practice/daily/review)
+  /// yeni cevapları. Deneme/exam muaf — halka/aktiflik için totalAnswered.
   questionsAnswered  Int      @default(0) @map("questions_answered")
+  /// Günün TÜM yeni cevapları (deneme dahil): halka, aktif gün, tempo, şerit
+  /// (Doc 48 A9). Kota kararında KULLANILMAZ.
+  totalAnswered      Int      @default(0) @map("total_answered")
   dailyLimit         Int      @map("daily_limit")
   // AI açıklama hakkı (Doc 24 §11: free günde 3, premium sınırsız).
   aiExplanationsUsed Int      @default(0) @map("ai_explanations_used")

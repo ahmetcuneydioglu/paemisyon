@@ -1093,6 +1093,9 @@ export class QuizService {
     if (gunlukSayilir && !user.isPremium) {
       await this.countDailyAnswer(user);
     }
+    // Deneme/exam yeni cevabı kotaya girmez ama günün toplamına girer
+    // (halka, aktif gün — Doc 48 A9); kayıtla paralel yazılır.
+    const toplamaSayilir = !existing && !gunlukLimiteTabi;
     const correct = version.options.find((option) => option.isCorrect);
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
 
@@ -1148,6 +1151,7 @@ export class QuizService {
           })
         : Promise.resolve(null),
       gunlukSayilir && user.isPremium ? this.countDailyAnswer(user) : Promise.resolve(),
+      toplamaSayilir ? this.countExamAnswer(user) : Promise.resolve(),
     ]);
 
     if (!givesFeedback) {
@@ -1519,10 +1523,11 @@ export class QuizService {
     if (user.isPremium) {
       // daily_limit kolonunu okuyan yok; ai-explain ile aynı yer tutucu yazılır.
       await this.prisma.$executeRaw`
-        INSERT INTO daily_usage (user_id, usage_date, questions_answered, daily_limit)
-        VALUES (${user.id}::uuid, ${today}::date, 1, ${FREE_DAILY_LIMIT_FALLBACK})
+        INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
+        VALUES (${user.id}::uuid, ${today}::date, 1, 1, ${FREE_DAILY_LIMIT_FALLBACK})
         ON CONFLICT (user_id, usage_date) DO UPDATE
-          SET questions_answered = daily_usage.questions_answered + 1`;
+          SET questions_answered = daily_usage.questions_answered + 1,
+              total_answered = daily_usage.total_answered + 1`;
       return;
     }
 
@@ -1530,10 +1535,11 @@ export class QuizService {
 
     // TEK atomik sorgu: satır yoksa aç, limiti aşmadıysa artır; aşıldıysa satır dönmez.
     const rows = await this.prisma.$queryRaw<{ questions_answered: number }[]>`
-      INSERT INTO daily_usage (user_id, usage_date, questions_answered, daily_limit)
-      VALUES (${user.id}::uuid, ${today}::date, 1, ${limit})
+      INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
+      VALUES (${user.id}::uuid, ${today}::date, 1, 1, ${limit})
       ON CONFLICT (user_id, usage_date) DO UPDATE
-        SET questions_answered = daily_usage.questions_answered + 1
+        SET questions_answered = daily_usage.questions_answered + 1,
+            total_answered = daily_usage.total_answered + 1
         WHERE daily_usage.questions_answered < ${limit}
       RETURNING questions_answered`;
     if (rows.length === 0) {
@@ -1542,6 +1548,21 @@ export class QuizService {
         message: `Bugünkü ücretsiz soru hakkın (${limit}) doldu. Sınırsız için Premium'a geç.`,
       });
     }
+  }
+
+  /**
+   * Deneme/exam yeni cevabı: KOTAYA girmez (canlı deneme ortasında kesilmez),
+   * ama günün toplamına girer — Bugün halkası ve aktif gün denemede çözülen
+   * soruyu da sayar (Doc 48 A9).
+   */
+  private async countExamAnswer(user: AuthenticatedUser) {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    await this.prisma.$executeRaw`
+      INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
+      VALUES (${user.id}::uuid, ${today}::date, 0, 1, ${FREE_DAILY_LIMIT_FALLBACK})
+      ON CONFLICT (user_id, usage_date) DO UPDATE
+        SET total_answered = daily_usage.total_answered + 1`;
   }
 
   private shuffle<T>(arr: T[]): T[] {

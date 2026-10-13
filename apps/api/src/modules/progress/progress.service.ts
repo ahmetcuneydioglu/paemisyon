@@ -213,7 +213,7 @@ export class ProgressService {
       }),
       this.prisma.dailyUsage.groupBy({
         by: ['userId'],
-        where: { userId: { in: ids }, questionsAnswered: { gt: 0 } },
+        where: { userId: { in: ids }, totalAnswered: { gt: 0 } },
         _count: { _all: true },
         _max: { usageDate: true },
       }),
@@ -392,7 +392,7 @@ export class ProgressService {
         where: { status: 'completed', startedAt: { gte: dayStart } },
       }),
       this.prisma.userStats.aggregate({ _sum: { totalSolved: true } }),
-      this.prisma.dailyUsage.count({ where: { questionsAnswered: { gt: 0 } } }),
+      this.prisma.dailyUsage.count({ where: { totalAnswered: { gt: 0 } } }),
       this.prisma.$queryRaw<{ display_name: string; points: number }[]>(Prisma.sql`
         WITH puanlanan AS (${this.puanlananOturumlar(
           Prisma.sql`AND qs.started_at >= ${dayStart}`,
@@ -463,10 +463,12 @@ export class ProgressService {
     const from = new Date(today.getTime() - (days - 1) * 86_400_000);
     const rows = await this.prisma.dailyUsage.findMany({
       where: { userId, usageDate: { gte: from } },
-      select: { usageDate: true, questionsAnswered: true },
+      select: { usageDate: true, totalAnswered: true },
     });
+    // Şerit günün TÜM cevaplarını gösterir (deneme dahil — Doc 48 A9); yanıt
+    // alanının adı istemci uyumu için aynı kalır.
     const byDay = new Map(
-      rows.map((r) => [r.usageDate.toISOString().slice(0, 10), r.questionsAnswered]),
+      rows.map((r) => [r.usageDate.toISOString().slice(0, 10), r.totalAnswered]),
     );
     return Array.from({ length: days }, (_, i) => {
       const d = new Date(from.getTime() + i * 86_400_000);
