@@ -689,6 +689,17 @@ describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
     ).rejects.toBeInstanceOf(ForbiddenException);
   });
 
+  it('geliş kanalı (source) alıştırma turuna da yazılır — anasayfa ölçümü', async () => {
+    const { service, prisma } = setupSecili();
+    await service.startSession(premiumUser, {
+      mode: 'practice',
+      topicIds: [KONU_A, KONU_B],
+      questionCount: 4,
+      source: 'home_weak_topic',
+    });
+    expect(prisma.quizSession.create.mock.calls[0][0].data.source).toBe('home_weak_topic');
+  });
+
   it('havuz yalnız seçilen konulardan kurulur ve konular arasında dengelenir', async () => {
     const { service, prisma } = setupSecili();
     const res = await service.startSession(premiumUser, {

@@ -363,6 +363,8 @@ export class QuizService {
         plannedDurationSeconds,
         // Devam için soru sırası (Doc 27 §2.4): sürüm id dizisi.
         questionOrder: chosen.map((q) => q.currentVersionId!),
+        // Geliş kanalı (ölçüm): anasayfa tur başlatma oranı bu kolondan.
+        source: dto.source ?? null,
       },
     });
 
