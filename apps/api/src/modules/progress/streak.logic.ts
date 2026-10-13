@@ -1,7 +1,8 @@
 /**
  * Seri + sigorta hesabı (Doc 24 §7.2, Doc 26 §5) — SAF fonksiyon, birim testli.
  * Kural: kaçan TAM 1 gün, haftalık hak varsa affedilir (free 1, premium 3);
- * 2+ gün boşluk sigorta kapsamı dışıdır. Hafta = Pzt başlangıçlı UTC.
+ * 2+ gün boşluk sigorta kapsamı dışıdır. Girdiler UYGULAMA GÜNÜ anahtarıdır
+ * (common/gun.ts — TR 04.00'te döner); hafta = o anahtarların Pazartesisi.
  */
 
 export interface StreakState {

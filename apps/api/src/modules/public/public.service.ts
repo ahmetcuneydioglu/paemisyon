@@ -4,6 +4,7 @@ import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.ser
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
+import { gunMetni } from '../../common/gun';
 
 /** Pazarlama sayfalarının tükettiği fiyat bilgisi (kimlik gerektirmez). */
 export interface PublicPricing {
@@ -66,7 +67,7 @@ export class PublicService {
   // (Railway kalıcı süreç → in-memory memo istekler arası yaşar).
   private qotdCache: { key: string; id: string } | null = null;
   private async questionOfDayId(): Promise<string> {
-    const dateKey = new Date().toISOString().slice(0, 10) + ':qotd';
+    const dateKey = gunMetni() + ':qotd';
     if (this.qotdCache?.key === dateKey) return this.qotdCache.id;
     const pool = await this.prisma.question.findMany({
       where: {
@@ -109,7 +110,7 @@ export class PublicService {
       },
     });
     return {
-      date: new Date().toISOString().slice(0, 10),
+      date: gunMetni(),
       topic: `${q.topic.course.name} / ${q.topic.name}`,
       versionId: q.currentVersion!.id,
       stem: q.currentVersion!.stem,
@@ -145,7 +146,7 @@ export class PublicService {
   // Liste cevapsız; cevap tek-tek revealDailyQuiz ile (yalnız bugünün 10'u).
   private dailyQuizCache: { key: string; ids: string[] } | null = null;
   private async dailyQuizIds(): Promise<string[]> {
-    const dateKey = new Date().toISOString().slice(0, 10);
+    const dateKey = gunMetni();
     if (this.dailyQuizCache?.key === dateKey) return this.dailyQuizCache.ids;
     const pool = await this.prisma.question.findMany({
       where: dailyQuestionPoolWhere(),
@@ -165,7 +166,7 @@ export class PublicService {
   private teaserCache: { key: string; rows: { date: string; teaser: string }[] } | null = null;
   async dailyTeasers(days: number) {
     const n = Math.min(Math.max(days, 1), 7);
-    const todayKey = new Date().toISOString().slice(0, 10);
+    const todayKey = gunMetni();
     const cacheKey = `${todayKey}:${n}`;
     if (this.teaserCache?.key === cacheKey) return this.teaserCache.rows;
 
@@ -177,7 +178,7 @@ export class PublicService {
     if (pool.length === 0) return [];
     const dates: string[] = [];
     for (let i = 0; i < n; i++) {
-      dates.push(new Date(Date.now() + i * 864e5).toISOString().slice(0, 10));
+      dates.push(gunMetni(new Date(Date.now() + i * 864e5)));
     }
     const firstIds = dates.map((d) => pickDailyIds(pool, d)[0]!.id);
     const stems = await this.prisma.question.findMany({
@@ -219,7 +220,7 @@ export class PublicService {
     // Deterministik sırayı koru (ids sırası).
     const ordered = ids.map((id) => byId.get(id)).filter((q) => q != null);
     return {
-      date: new Date().toISOString().slice(0, 10),
+      date: gunMetni(),
       count: ordered.length,
       questions: ordered.map((q) => ({
         questionId: q!.id,

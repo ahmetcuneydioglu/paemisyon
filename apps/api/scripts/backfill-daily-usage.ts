@@ -8,7 +8,8 @@
  * (ölçüm: 19 kullanıcı, 141 gün, 8.536 soru).
  *
  * Kaynak: quiz_answers ⨝ quiz_sessions — oturum+soru başına tek satır (yeniden
- * cevap sayılmaz), gün = answered_at'in UTC günü (sayaç da UTC gününe yazar).
+ * cevap sayılmaz), gün = UYGULAMA GÜNÜ: answered_at − 1 saat (TR 04.00 sınırı,
+ * common/gun.ts — canlı sayaçla aynı). 14 Eki 2026 öncesi koşular UTC günüydü.
  * Kota sayacı deneme/exam'ı saymaz; günlük toplam (A9) sayar.
  * Yazma: GREATEST(mevcut, sayım) — yalnız eksik günler artar, hiçbir sayı
  * azalmaz; idempotent, tekrar çalıştırmak güvenli.
@@ -46,7 +47,7 @@ interface EksikGun {
 async function main() {
   const eksik = await prisma.$queryRaw<EksikGun[]>`
     WITH sayim AS (
-      SELECT qs.user_id, qa.answered_at::date AS gun,
+      SELECT qs.user_id, (qa.answered_at - interval '1 hour')::date AS gun,
              count(*) FILTER (WHERE qs.mode NOT IN ('deneme', 'exam'))::int AS kota,
              count(*)::int AS toplam
       FROM quiz_answers qa
@@ -91,7 +92,7 @@ async function main() {
 
   const yazilan = await prisma.$executeRaw`
     INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
-    SELECT qs.user_id, qa.answered_at::date,
+    SELECT qs.user_id, (qa.answered_at - interval '1 hour')::date,
            count(*) FILTER (WHERE qs.mode NOT IN ('deneme', 'exam'))::int,
            count(*)::int,
            ${FREE_DAILY_LIMIT_FALLBACK}

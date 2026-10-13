@@ -2,6 +2,7 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { App, cert, initializeApp } from 'firebase-admin/app';
 import { getMessaging } from 'firebase-admin/messaging';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { gunBaslangici } from '../../common/gun';
 
 /**
  * FCM push göndericisi (Faz 2). Kimlik: FIREBASE_SERVICE_ACCOUNT_B64 env'i
@@ -126,8 +127,7 @@ export class PushService implements OnModuleInit {
     if (!this.app) {
       return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
     }
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunBaslangici(); // uygulama günü başladı mı (TR 04.00 — Doc 48 D2)
     const tokens = await this.prisma.pushToken.findMany({
       where:
         params.audience === 'inactive-today'

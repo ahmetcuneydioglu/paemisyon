@@ -10,6 +10,7 @@ import {
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
+import { gunAnahtari } from '../../common/gun';
 
 /** Free kullanıcının günlük AI açıklama hakkı (Doc 24 §11). Premium sınırsız. */
 const FREE_DAILY_AI_LIMIT = 3;
@@ -127,8 +128,7 @@ export class AiExplainService {
 
   /** Günlük hakkı atomik düşür; hak yoksa premium teklifi fırlat. */
   private async consumeDailyQuota(userId: string): Promise<number> {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunAnahtari(); // uygulama günü (TR 04.00 — Doc 48 D2)
     const rows = await this.prisma.$queryRaw<{ ai_explanations_used: number }[]>`
       UPDATE daily_usage SET ai_explanations_used = ai_explanations_used + 1
       WHERE user_id = ${userId}::uuid AND usage_date = ${today}
@@ -154,8 +154,7 @@ export class AiExplainService {
 
   /** Başarısız üretimde rezerve edilen hakkı geri ver (0'ın altına inmez). */
   private async refundDailyQuota(userId: string): Promise<void> {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunAnahtari(); // uygulama günü (TR 04.00 — Doc 48 D2)
     await this.prisma.$executeRaw`
       UPDATE daily_usage
       SET ai_explanations_used = GREATEST(ai_explanations_used - 1, 0)

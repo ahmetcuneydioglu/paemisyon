@@ -15,6 +15,7 @@ import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
 import { computeTodayTask, haftadaKalanGun, YarimTur } from './today-task.logic';
 import { enGucluKonular } from '../../common/zayif-konu';
+import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
 
@@ -76,7 +77,7 @@ export class CoachService {
     } else if (dto.courseId || dto.topicId) {
       throw new BadRequestException('Yanlışlarım odağı kimlik taşımaz.');
     }
-    const data = { day: startOfUtcDay(new Date()), kind: dto.kind, courseId, topicId };
+    const data = { day: gunAnahtari(), kind: dto.kind, courseId, topicId };
     await this.prisma.dailyFocus.upsert({
       where: { userId: user.id },
       create: { userId: user.id, ...data },
@@ -207,8 +208,11 @@ export class CoachService {
    */
   private async buildContext(user: AuthenticatedUser): Promise<CoachContext & { home: HomeRaw }> {
     const now = new Date();
-    const todayUtc = startOfUtcDay(now);
-    const weekStart = startOfUtcWeek(now);
+    // Uygulama günü ve haftası TR 04.00'te döner (Doc 48 D2 — common/gun.ts):
+    // sayaç, seri, odak ve haftalık gün aynı takvimi okur. Sınava kalan gün ve
+    // "bugünkü deneme" ise TR TAKVİM günüdür (trDayKey/trDayDiff) — kasıtlı.
+    const bugun = gunAnahtari(now);
+    const weekStart = haftaBasi(now);
     const prevWeekStart = new Date(weekStart.getTime() - 7 * 86_400_000);
     const twoDaysAgo = new Date(now.getTime() - 48 * 3_600_000);
 
@@ -277,7 +281,7 @@ export class CoachService {
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
       this.prisma.dailyUsage.findUnique({
-        where: { userId_usageDate: { userId: user.id, usageDate: todayUtc } },
+        where: { userId_usageDate: { userId: user.id, usageDate: bugun } },
       }),
       this.prisma.userStats.findUnique({ where: { userId: user.id } }),
       yanlisSayisiP,
@@ -312,7 +316,7 @@ export class CoachService {
         _max: { score: true },
       }),
       this.prisma.quizSession.findFirst({
-        where: { userId: user.id, mode: 'daily', startedAt: { gte: todayUtc } },
+        where: { userId: user.id, mode: 'daily', startedAt: { gte: gunBaslangici(now) } },
         orderBy: { startedAt: 'desc' },
         select: { status: true },
       }),
@@ -345,7 +349,7 @@ export class CoachService {
       this.prisma.dailyUsage.findMany({
         where: {
           userId: user.id,
-          usageDate: { gte: new Date(todayUtc.getTime() - 14 * 86_400_000) },
+          usageDate: { gte: new Date(bugun.getTime() - 14 * 86_400_000) },
         },
         select: { usageDate: true, totalAnswered: true },
       }),
@@ -445,7 +449,7 @@ export class CoachService {
 
     // Gösterilen seri = CANLI seri (kayıtlı değer yalnız tur bitince güncellenir).
     const freezeAllowance = weeklyFreezeAllowance(user.isPremium);
-    const currentStreak = liveStreak(streak, now, freezeAllowance);
+    const currentStreak = liveStreak(streak, bugun, freezeAllowance);
 
     // ── Sıradaki rozet: kazanılmamışlar içinde tamamlanmaya en yakın ──
     const earned = new Set(earnedBadges.map((b) => b.badgeKey));
@@ -511,7 +515,7 @@ export class CoachService {
     // ── Aktivite günleri (streak.lastActiveDate = @db.Date, UTC gün) ──
     const lastActive = streak?.lastActiveDate ?? null;
     const daysSince = lastActive
-      ? Math.floor((todayUtc.getTime() - startOfUtcDay(lastActive).getTime()) / 86_400_000)
+      ? Math.floor((bugun.getTime() - startOfUtcDay(lastActive).getTime()) / 86_400_000)
       : null;
 
     // ── Hazırlık (Doc 48 A3) — hedef sınavın dersleri + konu birikimi ──
@@ -540,7 +544,7 @@ export class CoachService {
     });
 
     // ── Günün odağı (Doc 48 A5): dünün odağı ya da silinmiş kapsam → koç ──
-    const focus = odagiCoz(odakSatiri, todayUtc);
+    const focus = odagiCoz(odakSatiri, bugun);
 
     // ── Görev kartı girdileri (Doc 48 A4) ──
     // En taze yarım tur: son cevaba göre (cevapsızsa başlangıca).
@@ -571,7 +575,7 @@ export class CoachService {
       })),
       1,
     )[0];
-    const daysLeftInWeek = haftadaKalanGun(todayUtc);
+    const daysLeftInWeek = haftadaKalanGun(bugun);
 
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
@@ -588,7 +592,7 @@ export class CoachService {
     };
 
     // ── Tempo: son 7 gün vs önceki 7 gün soru hacmi (slump_watch) ──
-    const sevenDaysAgo = todayUtc.getTime() - 7 * 86_400_000;
+    const sevenDaysAgo = bugun.getTime() - 7 * 86_400_000;
     let last7 = 0;
     let prev7 = 0;
     for (const u of recentUsage) {
@@ -612,7 +616,7 @@ export class CoachService {
         current: currentStreak,
         longest: streak?.longestStreak ?? 0,
         activeYesterday: daysSince === 1,
-        freezesLeft: freezesLeft(streak, now, freezeAllowance),
+        freezesLeft: freezesLeft(streak, bugun, freezeAllowance),
       },
       // Bugün halkası: günün TÜM yeni cevapları (deneme dahil — Doc 48 A9).
       answeredToday: todayUsage?.totalAnswered ?? 0,
@@ -725,9 +729,9 @@ export function odagiCoz(
     course: { name: string; deletedAt: Date | null } | null;
     topic: { name: string; deletedAt: Date | null } | null;
   } | null,
-  todayUtc: Date,
+  bugun: Date,
 ): DailyFocusView {
-  if (!row || startOfUtcDay(row.day).getTime() !== todayUtc.getTime()) return KOC_ODAGI;
+  if (!row || startOfUtcDay(row.day).getTime() !== bugun.getTime()) return KOC_ODAGI;
   if (row.kind === 'topic') {
     if (!row.topic || row.topic.deletedAt) return KOC_ODAGI;
     return { kind: 'topic', courseId: row.courseId, topicId: row.topicId, label: row.topic.name };
@@ -767,13 +771,6 @@ function startOfUtcDay(d: Date): Date {
   const x = new Date(d);
   x.setUTCHours(0, 0, 0, 0);
   return x;
-}
-
-/** Pazartesi başlangıçlı UTC hafta (snapshot konvansiyonu — Doc 19 §3.2). */
-function startOfUtcWeek(d: Date): Date {
-  const day = startOfUtcDay(d);
-  const offset = (day.getUTCDay() + 6) % 7; // Pzt=0 … Paz=6
-  return new Date(day.getTime() - offset * 86_400_000);
 }
 
 /** Türkiye günü anahtarı (UTC+3 sabit) — "bugün başlayacak" karşılaştırması. */

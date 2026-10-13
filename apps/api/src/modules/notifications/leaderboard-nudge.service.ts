@@ -2,6 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { PushService } from './push.service';
+import { gunBaslangici } from '../../common/gun';
 
 /**
  * "Seni geçti" akşam dürtmesi (rekabet döngüsü): günün sıralamasında bir üste
@@ -42,8 +43,7 @@ export class LeaderboardNudgeService {
     if (!dryRun && !this.push.enabled) {
       return { ok: false as const, error: 'Push yapılandırılmadı.' };
     }
-    const dayStart = new Date();
-    dayStart.setUTCHours(0, 0, 0, 0);
+    const dayStart = gunBaslangici(); // uygulama günü (TR 04.00 — Doc 48 D2)
 
     // Günün puan üreten turları — zaman çizelgesinin ham maddesi.
     const sessions = await this.prisma.quizSession.findMany({

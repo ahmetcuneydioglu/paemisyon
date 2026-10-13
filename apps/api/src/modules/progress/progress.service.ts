@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
+import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
 import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
@@ -34,12 +35,6 @@ type SessionForProgress = {
   answers: { questionId: string; isCorrect: boolean | null; selectedOptionId: string | null }[];
 };
 
-function startOfUtcDay(d: Date): Date {
-  const x = new Date(d);
-  x.setUTCHours(0, 0, 0, 0);
-  return x;
-}
-
 /// İlerleme kaydı ve okuması (Doc 6 §4.4, Doc 7 §4.5).
 @Injectable()
 export class ProgressService {
@@ -48,7 +43,8 @@ export class ProgressService {
   /** Quiz tamamlanınca çağrılır: stats + konu ilerlemesi + streak + yanlışlar güncellenir. */
   async recordSessionCompletion(userId: string, session: SessionForProgress) {
     const solved = session.correctCount + session.wrongCount; // boş hariç
-    const today = startOfUtcDay(new Date());
+    // Uygulama günü (TR 04.00 — Doc 48 D2): seri, sayaçla aynı günü okur.
+    const today = gunAnahtari();
 
     // PERFORMANS: eskiden konu başına 2 + cevap başına 1 ardışık sorgu vardı;
     // 100 soruluk bir denemede transaction ~35+ gidiş-dönüşe (Supabase pooler,
@@ -172,17 +168,18 @@ export class ProgressService {
     });
   }
 
-  /** Dönemin başlangıç anı (UTC); 'all' için alt sınır yoktur (null). */
+  /**
+   * Dönemin başlangıç ANI; 'all' için alt sınır yoktur (null). Uygulama günü
+   * TR 04.00'te döner (Doc 48 D2): gece nöbetindeki tur o günün liderliğine yazılır.
+   */
   private leaderboardFrom(period: LeaderboardPeriod): Date | null {
     if (period === 'all') return null;
-    const from = startOfUtcDay(new Date());
-    if (period === 'week') {
-      const mondayOffset = (from.getUTCDay() + 6) % 7; // Pzt = 0
-      from.setUTCDate(from.getUTCDate() - mondayOffset);
-    } else if (period === 'month') {
-      from.setUTCDate(1);
-    }
-    return from;
+    if (period === 'today') return gunBaslangici();
+    if (period === 'week') return haftaBaslangici();
+    // Ay: ayın ilk uygulama gününün başı (1'i TR 04.00).
+    const ayBasi = gunAnahtari();
+    ayBasi.setUTCDate(1);
+    return new Date(ayBasi.getTime() + GUN_KAYMASI_MS);
   }
 
   /** Verilen kullanıcılar için ömür-boyu kimlik verisini (rütbe/rozet/aktiflik) toplar. */
@@ -385,7 +382,7 @@ export class ProgressService {
 
   /** Sayfa özeti kartları: toplam aktif kullanıcı, bugünkü quiz, dağıtılan XP, günün lideri. */
   private async leaderboardStats() {
-    const dayStart = startOfUtcDay(new Date());
+    const dayStart = gunBaslangici();
     const [totalUsers, todayQuizCount, solvedAgg, activeDayRows, todayLeader] = await Promise.all([
       this.prisma.userStats.count({ where: { totalSessions: { gt: 0 } } }),
       this.prisma.quizSession.count({
@@ -428,7 +425,7 @@ export class ProgressService {
       totalCorrect: stats?.totalCorrect ?? 0,
       totalSessions: stats?.totalSessions ?? 0,
       accuracy,
-      currentStreak: liveStreak(streak, new Date(), weeklyFreezeAllowance(isPremium)),
+      currentStreak: liveStreak(streak, gunAnahtari(), weeklyFreezeAllowance(isPremium)),
       longestStreak: streak?.longestStreak ?? 0,
     };
   }
@@ -458,8 +455,7 @@ export class ProgressService {
 
   /** Son 14 günün günlük soru hacmi (daily_usage) — boş günler 0 ile doldurulur. */
   async getActivity(userId: string, days = 14) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunAnahtari(); // uygulama günü (TR 04.00 — Doc 48 D2)
     const from = new Date(today.getTime() - (days - 1) * 86_400_000);
     const rows = await this.prisma.dailyUsage.findMany({
       where: { userId, usageDate: { gte: from } },

@@ -26,6 +26,7 @@ import {
 } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { enGucluKonular, enZayifKonular } from '../../common/zayif-konu';
+import { gunAnahtari, gunBaslangici, gunMetni } from '../../common/gun';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
@@ -435,7 +436,7 @@ export class QuizService {
         where: {
           userId: user.id,
           personalExam: true,
-          startedAt: { gte: QuizService.gununBasi() },
+          startedAt: { gte: gunBaslangici() },
         },
       });
       if (bugunku >= limit) {
@@ -578,13 +579,6 @@ export class QuizService {
         isCorrect: boolean;
       }[],
     };
-  }
-
-  /** Günün başı (UTC) — günlük hak sayımının sınırı. */
-  private static gununBasi(): Date {
-    const t = new Date();
-    t.setUTCHours(0, 0, 0, 0);
-    return t;
   }
 
   /** Ücretsiz planın günlük kişisel deneme hakkı — 60 sn bellek önbelleği. */
@@ -818,11 +812,9 @@ export class QuizService {
   // dersler); günde 1 hak; herkese aynı set (tarih tohumlu → adil liderlik).
   // Seçim mantığı common/daily-select.logic'te — public "Günün Quizi" ile ortak.
   private async startDailySession(userId: string, source?: string) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
-
+    // Uygulama günü TR 04.00'te döner (Doc 48 D2 — common/gun.ts).
     const existing = await this.prisma.quizSession.findFirst({
-      where: { userId, mode: 'daily', startedAt: { gte: today } },
+      where: { userId, mode: 'daily', startedAt: { gte: gunBaslangici() } },
       orderBy: { startedAt: 'desc' },
     });
     if (existing?.status === 'completed') {
@@ -941,7 +933,8 @@ export class QuizService {
     }
 
     // Tarih tohumlu örneklem — herkes o gün aynı 10 soruyu görür (adil liderlik).
-    const dateKey = new Date().toISOString().slice(0, 10);
+    // Anahtar uygulama günü (TR 04.00) — public "Günün Quizi" ile AYNI fonksiyon.
+    const dateKey = gunMetni();
     const chosen = pickDailyIds(pool, dateKey);
 
     const versions = await this.prisma.questionVersion.findMany({
@@ -973,10 +966,8 @@ export class QuizService {
 
   /** Günün sorusu durumu (Home kartı): bugün oynandı mı, doğru muydu? */
   async getDailyStatus(userId: string) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
     const session = await this.prisma.quizSession.findFirst({
-      where: { userId, mode: 'daily', startedAt: { gte: today } },
+      where: { userId, mode: 'daily', startedAt: { gte: gunBaslangici() } },
       orderBy: { startedAt: 'desc' },
       select: { status: true, correctCount: true },
     });
@@ -1517,8 +1508,9 @@ export class QuizService {
    * sanılmıştı); premium kullanıcıların halkası, aktif günü ve şeridi hep 0'dı.
    */
   private async countDailyAnswer(user: AuthenticatedUser) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    // Uygulama günü TR 04.00'te döner (Doc 48 D2): gece nöbetinde 01.00'de
+    // çözülen soru o günün kotasına ve halkasına yazılır.
+    const today = gunAnahtari();
 
     if (user.isPremium) {
       // daily_limit kolonunu okuyan yok; ai-explain ile aynı yer tutucu yazılır.
@@ -1556,8 +1548,7 @@ export class QuizService {
    * soruyu da sayar (Doc 48 A9).
    */
   private async countExamAnswer(user: AuthenticatedUser) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunAnahtari();
     await this.prisma.$executeRaw`
       INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
       VALUES (${user.id}::uuid, ${today}::date, 0, 1, ${FREE_DAILY_LIMIT_FALLBACK})
@@ -1652,14 +1643,17 @@ export class QuizService {
       }),
       this.prisma.user.findUnique({
         where: { id: userId },
-        select: { targetExamDate: true },
+        select: { targetExamDate: true, preferredModule: { select: { examDate: true } } },
       }),
     ]);
 
+    // Sınav modu koçla AYNI tarihten: kişisel tarih yoksa resmî (Doc 48 A2) —
+    // koç "sınava 21 gün, yanlışlar ağırlıklı" derken karışım normal kalmasın.
+    const sinavTarihi = profile?.targetExamDate ?? profile?.preferredModule?.examDate ?? null;
     const examMode =
-      profile?.targetExamDate != null &&
-      trDayDiffQuiz(new Date(), profile.targetExamDate) <= 30 &&
-      trDayDiffQuiz(new Date(), profile.targetExamDate) >= 0;
+      sinavTarihi != null &&
+      trDayDiffQuiz(new Date(), sinavTarihi) <= 30 &&
+      trDayDiffQuiz(new Date(), sinavTarihi) >= 0;
 
     // Zayıf: TEK eşik (common/zayif-konu.ts — koç kartı ve anasayfa hazırlık
     // bloğuyla aynı tanım), en zayıf 5 konu.

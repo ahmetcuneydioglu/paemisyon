@@ -14,6 +14,7 @@ import {
   PERSONAL_EXAM_FREE_MAX_QUESTIONS,
   PERSONAL_EXAM_MAX_QUESTIONS,
 } from '../../common/plan.constants';
+import { gunAnahtari, gunBaslangici } from '../../common/gun';
 
 /// GET/PATCH /api/v1/me — profil + entitlement (Doc 7 §4.2). Kimlik zorunlu.
 @Controller('me')
@@ -333,8 +334,10 @@ export class UsersController {
   /// bugünkü kullanım. Mobil açılışta 4 ayrı çağrı yerine bunu kullanır.
   @Get('dashboard')
   async dashboard(@CurrentUser() user: AuthenticatedUser) {
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    // Uygulama günü TR 04.00'te döner (Doc 48 D2): satır anahtarı ve "bugün
+    // başlatılan" sınırı aynı günü göstermeli.
+    const today = gunAnahtari();
+    const todayStart = gunBaslangici();
 
     const [profile, stats, streak, usage, freePlan, dailySession, personalExamsToday] =
       await Promise.all([
@@ -353,7 +356,7 @@ export class UsersController {
       }),
       this.prisma.plan.findUnique({ where: { key: 'free' } }),
       this.prisma.quizSession.findFirst({
-        where: { userId: user.id, mode: 'daily', startedAt: { gte: today } },
+        where: { userId: user.id, mode: 'daily', startedAt: { gte: todayStart } },
         orderBy: { startedAt: 'desc' },
         select: { status: true },
       }),
@@ -361,7 +364,7 @@ export class UsersController {
       // BAŞLATILAN sayılır — sunucudaki kapı da aynı ölçüyü kullanır, arayüz
       // farklı bir sayı gösterip kullanıcıyı yanıltmasın.
       this.prisma.quizSession.count({
-        where: { userId: user.id, personalExam: true, startedAt: { gte: today } },
+        where: { userId: user.id, personalExam: true, startedAt: { gte: todayStart } },
       }),
     ]);
 

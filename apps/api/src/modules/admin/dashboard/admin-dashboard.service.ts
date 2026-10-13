@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
+import { gunAnahtari } from '../../../common/gun';
 
 /** Panel ana sayfası metrikleri (Doc 9 §5). Tek istekte özet. */
 @Injectable()
@@ -8,8 +9,7 @@ export class AdminDashboardService {
 
   async overview() {
     const since7d = new Date(Date.now() - 7 * 864e5);
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
+    const today = gunAnahtari(); // uygulama günü (TR 04.00 — Doc 48 D2)
 
     const [
       totalUsers,

@@ -3,6 +3,7 @@ import { PrismaService } from '../../../infra/prisma/prisma.service';
 import { AuditService } from '../audit.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../../common/plan.constants';
+import { gunAnahtari } from '../../../common/gun';
 
 /** Ücretsiz planın anahtarı — limit bu satırda yaşar. */
 const FREE_KEY = 'free';
@@ -137,8 +138,7 @@ export class AdminPlansService {
    * vermekten iyidir.
    */
   async limitEtkisi(yeniLimit: number) {
-    const bugun = new Date();
-    bugun.setUTCHours(0, 0, 0, 0);
+    const bugun = gunAnahtari(); // uygulama günü (TR 04.00 — Doc 48 D2)
     const [bugunAktif, etkilenen] = await Promise.all([
       this.prisma.dailyUsage.count({
         where: { usageDate: bugun, questionsAnswered: { gt: 0 } },
