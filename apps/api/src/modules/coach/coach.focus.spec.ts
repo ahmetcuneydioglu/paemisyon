@@ -1,6 +1,6 @@
 import { BadRequestException, ForbiddenException, NotFoundException } from '@nestjs/common';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { CoachService, odagiCoz } from './coach.service';
+import { CoachService, homeV2Acik, odagiCoz } from './coach.service';
 
 const D = (s: string) => new Date(`${s}T00:00:00.000Z`);
 const user = (isPremium: boolean): AuthenticatedUser => ({
@@ -110,5 +110,17 @@ describe('CoachService.setFocus', () => {
     await expect(service.setFocus(user(false), { kind: 'topic', topicId: KONU })).rejects.toBeInstanceOf(
       NotFoundException,
     );
+  });
+});
+
+describe('homeV2Acik — yeni anasayfa bayrağı (önce dar grup, sonra herkes)', () => {
+  it('anahtar kapalıyken yalnız admin ve beta görür', () => {
+    expect(homeV2Acik(false, ['user'])).toBe(false);
+    expect(homeV2Acik(false, ['user', 'beta'])).toBe(true);
+    expect(homeV2Acik(false, ['admin'])).toBe(true);
+    expect(homeV2Acik(false, ['editor'])).toBe(false);
+  });
+  it('anahtar açıkken herkes görür', () => {
+    expect(homeV2Acik(true, ['user'])).toBe(true);
   });
 });

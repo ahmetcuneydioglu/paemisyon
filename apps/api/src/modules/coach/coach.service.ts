@@ -789,8 +789,9 @@ function trDayDiff(now: Date, target: Date): number {
 
 /**
  * Yeni anasayfa açık mı (Doc 48): panel anahtarı açıksa herkes, kapalıyken
- * yalnız admin rolü (önce admin, sonra herkes — 14 Eki 2026 kararı).
+ * yalnız admin ve beta rolü (önce dar grup, sonra herkes — 14 Eki 2026 kararı).
+ * Beta rolü panel erişimi vermez; ön erişim için ayrı tutulur.
  */
 export function homeV2Acik(herkeseAcik: boolean, roles: readonly string[]): boolean {
-  return herkeseAcik || roles.includes('admin');
+  return herkeseAcik || roles.includes('admin') || roles.includes('beta');
 }

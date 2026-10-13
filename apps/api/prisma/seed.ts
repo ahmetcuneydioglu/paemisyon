@@ -13,6 +13,7 @@ async function main() {
   const roles = [
     { key: 'admin', name: 'Yönetici' },
     { key: 'editor', name: 'Editör' },
+    { key: 'beta', name: 'Beta test' }, // yeni anasayfa ön erişimi (Doc 48) — panel erişimi yok
     { key: 'user', name: 'Kullanıcı' },
   ];
   for (const r of roles) {
