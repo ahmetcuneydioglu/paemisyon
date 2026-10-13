@@ -31,7 +31,16 @@ export class UsersController {
   @Get('article-bookmarks')
   async articleBookmarks(@CurrentUser() user: AuthenticatedUser) {
     const rows = await this.prisma.articleBookmark.findMany({
-      where: { userId: user.id },
+      // Okuma ilerlemesiyle aynı yayın filtresi: açılamayacak (taslak/silinmiş)
+      // madde kısa yol olarak sunulmaz — dokununca 404 veren kısa yol güven kırar.
+      where: {
+        userId: user.id,
+        article: {
+          status: 'published',
+          deletedAt: null,
+          legislation: { status: 'published', deletedAt: null },
+        },
+      },
       orderBy: { createdAt: 'desc' },
       include: {
         article: {
@@ -53,6 +62,9 @@ export class UsersController {
           title: r.article.title,
           lawSlug: r.article.legislation!.slug,
           lawShort: r.article.legislation!.shortName ?? r.article.legislation!.name,
+          // Kısaltma tek başına bırakılmaz (Doc 48 Faz 2 karar 5): "TCK" yeni
+          // adaya kapalı; kısa yol kanunun tam adını da taşır.
+          lawName: r.article.legislation!.name,
           createdAt: r.createdAt.toISOString(),
         })),
     };
