@@ -33,7 +33,7 @@ export class YarimTurService {
       ) a ON true
       WHERE qs.status = 'in_progress'
         AND qs.mode IN ('practice', 'review', 'daily')
-        AND COALESCE(a.son, qs.started_at) < now() - make_interval(days => ${BAYAT_TUR_GUN})
+        AND COALESCE(a.son, qs.started_at) < now() - make_interval(days => ${BAYAT_TUR_GUN}::int)
       ORDER BY COALESCE(a.son, qs.started_at)
       LIMIT ${KOSU_SINIRI}`;
     let kapanan = 0;
