@@ -116,6 +116,36 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
     expect(t.secondary).toBeNull();
   });
 
+  it('S5 dönüş: bugün seçilmiş odak varsa ona uyulur (sessizce elenmez)', () => {
+    const konu: DailyFocusView = {
+      kind: 'topic',
+      courseId: 'c1',
+      topicId: 't1',
+      label: 'Temel Haklar ve Ödevler',
+    };
+    const t = computeTodayTask(girdi({ daysSinceLastActivity: 10, focus: konu }));
+    expect(t.kind).toBe('comeback');
+    expect(t.action).toEqual({
+      type: 'start_session',
+      label: 'Başla · 5 soru · Temel Haklar ve Ödevler',
+      count: 5,
+      recipe: 'coach',
+      focus: konu,
+      source: 'home_task',
+    });
+    expect(t.reason).toBe('Odak: Temel Haklar ve Ödevler. 5 soru — 3 dakika.');
+
+    // Yanlış odağı: sayı mevcut yanlışla sınırlı; yanlış kalmadıysa güçlü konu reçetesi.
+    const yanlis: DailyFocusView = { kind: 'wrongs', courseId: null, topicId: null, label: null };
+    const y = computeTodayTask(
+      girdi({ daysSinceLastActivity: 10, focus: yanlis, readiness: hazirlik({ unresolvedWrongCount: 3 }) }),
+    );
+    expect(y.action).toMatchObject({ label: 'Başla · 3 yanlış', count: 3, focus: yanlis });
+    const bos = computeTodayTask(girdi({ daysSinceLastActivity: 10, focus: yanlis }));
+    expect(bos.action).toMatchObject({ label: 'Başla · 5 soru', recipe: 'comeback' });
+    expect(bos.action.focus).toBeUndefined();
+  });
+
   it('dönüş eşiği: 4 gün normal, 5 gün dönüş (Doc 24 §3)', () => {
     expect(computeTodayTask(girdi({ daysSinceLastActivity: 4 })).kind).toBe('start');
     expect(computeTodayTask(girdi({ daysSinceLastActivity: 5 })).kind).toBe('comeback');

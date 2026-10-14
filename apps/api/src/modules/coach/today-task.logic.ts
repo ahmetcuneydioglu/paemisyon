@@ -255,9 +255,30 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
     };
   }
 
-  // 4) Uzun aradan dönüş — güçlü konudan kısa tur, suçluluk dili yok (S5).
+  // 4) Uzun aradan dönüş — kısa tur, suçluluk dili yok (S5). Kullanıcı bugün
+  // BİLİNÇLİ bir odak seçtiyse ona uyulur; seçim sessizce elenmez (14 Eki 2026
+  // E2E: konu seçilip "Başla"ya basılınca tur kapsamsız açılıyordu). Odak koçta
+  // ya da yanlış kalmamışsa güçlü konudan dönüş reçetesi.
   if (input.daysSinceLastActivity != null && input.daysSinceLastActivity >= DONUS_GUN) {
     const g = input.strongestTopic;
+    const odak = input.focus;
+    const yanlis = input.readiness.unresolvedWrongCount;
+    const odakli = odak.kind !== 'coach' && !(odak.kind === 'wrongs' && yanlis === 0);
+    if (odakli) {
+      const sayi = odak.kind === 'wrongs' ? Math.min(KISA_TUR, yanlis) : KISA_TUR;
+      return {
+        kind: 'comeback',
+        title: 'Kısa bir dönüş turu',
+        reason:
+          odak.kind === 'wrongs'
+            ? `Yanlışlarından ${sayi} tanesi — birkaç dakika.`
+            : `Odak: ${odak.label}. ${sayi} soru — 3 dakika.`,
+        progress: null,
+        action: baslat(sayi, odak),
+        finishSessionId: null,
+        secondary: null,
+      };
+    }
     return {
       kind: 'comeback',
       title: 'Kısa bir dönüş turu',
