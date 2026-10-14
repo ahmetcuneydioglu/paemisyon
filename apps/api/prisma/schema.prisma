@@ -272,6 +272,10 @@ model AuditLog {
 model Course {
   id        String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   name      String
+  /// Dersin ikonu (Doc 48 Faz 6.3): Lucide anahtarı ("scale", "shield"…); izinli
+  /// liste `src/common/course-icons.ts`. NULL'da istemci açık kitap çizer.
+  /// Panelden (İçerik Ağacı) değiştirilir.
+  icon      String?
   sortOrder Int       @default(0) @map("sort_order")
   createdAt DateTime  @default(now()) @map("created_at")
   deletedAt DateTime? @map("deleted_at")

@@ -21,7 +21,7 @@ export interface KonuIlerlemesi {
  *   null (ders listesi boş döner, en zayıf konular tüm birikimden seçilir).
  */
 export function buildReadiness(input: {
-  courses: { courseId: string; name: string }[] | null;
+  courses: { courseId: string; name: string; icon: string | null }[] | null;
   progress: readonly KonuIlerlemesi[];
   weeklyPhoto: readonly { courseName: string; deltaPct: number }[];
   unresolvedWrongCount: number;
@@ -45,6 +45,7 @@ export function buildReadiness(input: {
     return {
       courseId: c.courseId,
       name: c.name,
+      icon: c.icon,
       solved,
       correct,
       accuracy,

@@ -28,6 +28,9 @@ export type ReadinessCourseState = 'normal' | 'weak' | 'sparse';
 export interface ReadinessCourse {
   courseId: string;
   name: string;
+  /** Dersin ikonu — Lucide anahtarı (Doc 48 Faz 6.3; izinli liste
+   *  `common/course-icons.ts`). Atanmamışsa null: istemci açık kitap çizer. */
+  icon: string | null;
   solved: number;
   correct: number;
   /** 0..1 — hiç çözülmemişse null. Bileşik "hazır %" skoru YOK (Doc 48 İ6). */

@@ -64,6 +64,7 @@ export class CatalogService {
   /// Sınav türünün dersleri — MÜFREDAT bölümleri üzerinden (Doc 21).
   /// Yanıt şekli korunur ({id,name,sortOrder}: içerik dersi) + bölüm bağlamı
   /// eklenir (sectionName/weightPercent — istemciler ilerledikçe kullanır).
+  /// icon: Lucide anahtarı (Doc 48 Faz 6.3); null'da istemci açık kitap çizer.
   async getCourses(moduleId: string) {
     const sections = await this.prisma.examSection.findMany({
       where: { examTypeId: moduleId, deletedAt: null },
@@ -71,7 +72,7 @@ export class CatalogService {
       include: {
         courses: {
           orderBy: { sortOrder: 'asc' },
-          include: { course: { select: { id: true, name: true, deletedAt: true } } },
+          include: { course: { select: { id: true, name: true, icon: true, deletedAt: true } } },
         },
       },
     });
@@ -80,6 +81,7 @@ export class CatalogService {
     const out: {
       id: string;
       name: string;
+      icon: string | null;
       sortOrder: number;
       sectionName: string;
       weightPercent: number;
@@ -92,6 +94,7 @@ export class CatalogService {
         out.push({
           id: sc.course.id,
           name: sc.course.name,
+          icon: sc.course.icon,
           sortOrder: ++order,
           sectionName: s.name,
           weightPercent: s.weightPercent,

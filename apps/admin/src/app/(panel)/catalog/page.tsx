@@ -4,6 +4,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
+import { COURSE_ICON_OPTIONS, isKnownCourseIcon } from '@/lib/course-icons';
 import type {
   Curriculum,
   CurriculumCourse,
@@ -224,7 +225,7 @@ function SectionRow({
   );
 }
 
-/** Ders bloğu: ad + soru sayısı + paylaşım rozeti; açılınca konu ağacı. */
+/** Ders bloğu: ad + soru sayısı + paylaşım rozeti + ikon; açılınca konu ağacı. */
 function CourseBlock({
   course,
   open,
@@ -248,7 +249,7 @@ function CourseBlock({
 
   return (
     <div className="rounded-lg border border-slate-100">
-      <div className="flex items-center gap-2 px-3 py-2">
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 px-3 py-2">
         <button onClick={toggle} className="text-sm font-medium">
           {open ? '▾' : '▸'} {course.name}
         </button>
@@ -258,6 +259,9 @@ function CourseBlock({
             paylaşımlı ×{course.usedByExamTypeIds.length}
           </span>
         )}
+        {/* Anahtar = sunucudaki ikon: aynı ders birden çok bölümde ve havuzda
+            görünür; bir kopyada kaydedilince ötekilerin taslağı da sıfırlanır. */}
+        <CourseIconEditor key={course.icon ?? ''} course={course} invalidate={invalidate} />
         <div className="ml-auto flex gap-3 text-xs">
           <button
             onClick={() => {
@@ -491,6 +495,63 @@ function ExamDateEditor({
       </button>
       {!value && <span className="text-xs text-slate-400">Açıklanmadı — geri sayım yalnız kişisel tarihi olanlarda görünür.</span>}
     </div>
+  );
+}
+
+/**
+ * Ders ikonu (Doc 48 Faz 6.3): mobil anasayfa dersi bu ikonla çizer — renk tek
+ * vurgu, dersleri ikon ayırır. Boş seçim ikonu temizler; istemci açık kitap
+ * çizer. Kaydet yalnız değişiklik varken görünür (ağaçta onlarca ders var) ve
+ * seçicinin sağında belirir; seçici yerinden oynamaz.
+ */
+function CourseIconEditor({
+  course,
+  invalidate,
+}: {
+  course: CurriculumCourse;
+  invalidate: () => void;
+}) {
+  const [draft, setDraft] = useState(course.icon ?? '');
+  const save = useMutation({
+    // Ad zorunlu alan (UpsertCourseDto): mevcut ad değişmeden gider.
+    mutationFn: (icon: string | null) =>
+      api(`/admin/catalog/courses/${course.id}`, { method: 'PATCH', body: { name: course.name, icon } }),
+    onSuccess: invalidate,
+    onError: alertErr,
+  });
+  const dirty = (draft || null) !== course.icon;
+  return (
+    // min-w-0: dar ekranda seçici kartın dışına taşmak yerine daralır.
+    <span className="flex min-w-0 items-center gap-1.5 text-xs">
+      <label className="flex min-w-0 items-center gap-1 text-slate-500">
+        İkon
+        <select
+          value={draft}
+          onChange={(ev) => setDraft(ev.target.value)}
+          className="min-w-0 rounded-md border border-slate-300 px-1.5 py-0.5 text-slate-700"
+        >
+          <option value="">— (varsayılan: açık kitap)</option>
+          {COURSE_ICON_OPTIONS.map((o) => (
+            <option key={o.key} value={o.key}>
+              {o.label}
+            </option>
+          ))}
+          {/* API listesi bu panel sürümünden yeniyse kayıtlı anahtar yine görünsün. */}
+          {course.icon && !isKnownCourseIcon(course.icon) && (
+            <option value={course.icon}>{course.icon}</option>
+          )}
+        </select>
+      </label>
+      {dirty && (
+        <button
+          disabled={save.isPending}
+          onClick={() => save.mutate(draft || null)}
+          className="shrink-0 rounded-md border border-slate-300 px-2 py-0.5 font-medium hover:bg-slate-50 disabled:opacity-40"
+        >
+          Kaydet
+        </button>
+      )}
+    </span>
   );
 }
 

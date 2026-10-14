@@ -42,9 +42,9 @@ describe('güçlü konu — dönüş reçetesi kaynağı (≥10 çözülmüş ve
 
 describe('buildReadiness — hazırlık bloğu (Doc 48 §3 ③)', () => {
   const courses = [
-    { courseId: 'anayasa', name: 'Anayasa Hukuku' },
-    { courseId: 'cmk', name: 'Ceza Muhakemesi Hukuku' },
-    { courseId: 'ata', name: 'Atatürk İlkeleri ve İnkılap Tarihi' },
+    { courseId: 'anayasa', name: 'Anayasa Hukuku', icon: 'landmark' },
+    { courseId: 'cmk', name: 'Ceza Muhakemesi Hukuku', icon: 'scale' },
+    { courseId: 'ata', name: 'Atatürk İlkeleri ve İnkılap Tarihi', icon: null },
   ];
 
   it('ders bazında çözülen + doğru oranı ve durum (zayıf / az veri / normal)', () => {
@@ -68,6 +68,22 @@ describe('buildReadiness — hazırlık bloğu (Doc 48 §3 ③)', () => {
     expect(r.courses[0].deltaPct).toBe(4);
     expect(r.courses[1].deltaPct).toBeNull();
     expect(r.unresolvedWrongCount).toBe(4);
+  });
+
+  it('ders ikonu veriden aynen geçer; atanmamış ikon null kalır (istemci açık kitap çizer)', () => {
+    // İkon panelden yönetilir (Doc 48 Faz 6.3): sunucu varsayılan uydurmaz,
+    // birikim olsun olmasın her derste aynı değer döner.
+    const r = buildReadiness({
+      courses,
+      progress: [konu({ topicId: 'temel-haklar', solved: 26, correct: 10 })],
+      weeklyPhoto: [],
+      unresolvedWrongCount: 0,
+    });
+    expect(r.courses.map((c) => [c.courseId, c.icon])).toEqual([
+      ['anayasa', 'landmark'],
+      ['cmk', 'scale'],
+      ['ata', null],
+    ]);
   });
 
   it('hiç çözülmemiş ders: doğruluk null, durum az veri — sıfır yerine dürüst boşluk', () => {

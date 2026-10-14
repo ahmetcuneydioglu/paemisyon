@@ -294,7 +294,7 @@ export class CoachService {
         select: {
           courses: {
             orderBy: { sortOrder: 'asc' },
-            select: { course: { select: { id: true, name: true, deletedAt: true } } },
+            select: { course: { select: { id: true, name: true, icon: true, deletedAt: true } } },
           },
         },
       }),
@@ -526,7 +526,10 @@ export class CoachService {
             moduleSections
               .flatMap((s) => s.courses)
               .filter((sc) => sc.course.deletedAt == null)
-              .map((sc) => [sc.course.id, { courseId: sc.course.id, name: sc.course.name }]),
+              .map((sc) => [
+                sc.course.id,
+                { courseId: sc.course.id, name: sc.course.name, icon: sc.course.icon },
+              ]),
           ).values(),
         ]
       : null;

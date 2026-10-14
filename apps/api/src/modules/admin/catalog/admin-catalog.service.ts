@@ -69,6 +69,7 @@ export class AdminCatalogService {
       const courses: {
         id: string;
         name: string;
+        icon: string | null;
         sortOrder: number;
         topics: {
           id: string;
@@ -88,6 +89,7 @@ export class AdminCatalogService {
           courses.push({
             id: c.id,
             name: c.name,
+            icon: c.icon,
             sortOrder: ++order,
             topics: c.topics.map((t) => ({
               id: t.id,
@@ -163,6 +165,7 @@ export class AdminCatalogService {
       return {
         id: c.id,
         name: c.name,
+        icon: c.icon,
         questionCount: c.topics.reduce((s, t) => s + t._count.questions, 0),
         usedByExamTypeIds: [...usedByExams],
         topics: build(null),
@@ -261,19 +264,36 @@ export class AdminCatalogService {
   // ── Ders (küresel) CRUD ──
   async createCourse(actor: AuthenticatedUser, dto: UpsertCourseDto) {
     const course = await this.prisma.course.create({
-      data: { name: dto.name, sortOrder: dto.sortOrder ?? 0 }, // moduleId YOK (küresel)
+      // moduleId YOK (küresel). İkon verilmezse NULL: istemci açık kitap çizer.
+      data: { name: dto.name, sortOrder: dto.sortOrder ?? 0, icon: dto.icon ?? null },
     });
-    await this.audit.log(actor, 'course.create', 'course', course.id, { name: dto.name });
+    await this.audit.log(actor, 'course.create', 'course', course.id, {
+      name: dto.name,
+      ...(dto.icon ? { icon: dto.icon } : {}),
+    });
     return course;
   }
 
   async updateCourse(actor: AuthenticatedUser, id: string, dto: UpsertCourseDto) {
-    await this.ensure('course', id);
+    const found = await this.prisma.course.findFirst({ where: { id, deletedAt: null } });
+    if (!found) throw new NotFoundException('Kayıt bulunamadı.');
+    // İkon (Doc 48 Faz 6.3) yalnız gönderilince güncellenir — ad düzenlemesi
+    // ikonu silmesin; null ikonu temizler.
+    const ikonGeldi = dto.icon !== undefined;
     const course = await this.prisma.course.update({
       where: { id },
-      data: { name: dto.name, ...(dto.sortOrder !== undefined ? { sortOrder: dto.sortOrder } : {}) },
+      data: {
+        name: dto.name,
+        ...(dto.sortOrder !== undefined ? { sortOrder: dto.sortOrder } : {}),
+        ...(ikonGeldi ? { icon: dto.icon ?? null } : {}),
+      },
     });
-    await this.audit.log(actor, 'course.update', 'course', id, { name: dto.name });
+    await this.audit.log(actor, 'course.update', 'course', id, {
+      name: dto.name,
+      // Önceki değerle birlikte (exam_type.update deseni): neyden neye
+      // değiştiği kayıtta görünür, gerekirse elle geri alınır.
+      ...(ikonGeldi ? { icon: dto.icon ?? null, onceki: { icon: found.icon } } : {}),
+    });
     return course;
   }
 

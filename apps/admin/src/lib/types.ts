@@ -29,6 +29,8 @@ export interface CatalogTopic {
 export interface CatalogCourse {
   id: string;
   name: string;
+  /** Ders ikonu — Lucide anahtarı (Doc 48 Faz 6.3); atanmamışsa null. */
+  icon: string | null;
   sortOrder: number;
   topics: CatalogTopic[];
 }
@@ -53,6 +55,9 @@ export interface CurriculumTopic {
 export interface CurriculumCourse {
   id: string;
   name: string;
+  /** Ders ikonu — Lucide anahtarı (Doc 48 Faz 6.3; liste `course-icons.ts`).
+   *  Atanmamışsa null: istemci açık kitap çizer. */
+  icon: string | null;
   questionCount: number;
   usedByExamTypeIds: string[];
   topics: CurriculumTopic[];

@@ -2,6 +2,7 @@ import { Type } from 'class-transformer';
 import {
   IsArray,
   IsBoolean,
+  IsIn,
   IsISO8601,
   IsInt,
   IsOptional,
@@ -10,6 +11,7 @@ import {
   MinLength,
   ValidateIf,
 } from 'class-validator';
+import { COURSE_ICON_KEYS, type CourseIconKey } from '../../../common/course-icons';
 
 /// Ders artık KÜRESEL (Doc 21) — sınav türüne gömülü değil, bölümlerle bağlanır.
 export class UpsertCourseDto {
@@ -21,6 +23,14 @@ export class UpsertCourseDto {
   @Type(() => Number)
   @IsInt()
   sortOrder?: number;
+
+  /// Ders ikonu (Doc 48 Faz 6.3): Lucide anahtarı, izinli liste
+  /// `common/course-icons.ts`. Gönderilmezse DEĞİŞMEZ (ad düzenlemesi ikonu
+  /// silmesin); null ikonu temizler (istemci açık kitap çizer). @IsOptional
+  /// hem eksik alanı hem null'ı geçirir; @IsIn yalnız dolu değeri denetler.
+  @IsOptional()
+  @IsIn(COURSE_ICON_KEYS)
+  icon?: CourseIconKey | null;
 }
 
 /// Müfredat bölümü (Doc 21): sınav türünde görünen ders başlığı + ağırlık.
