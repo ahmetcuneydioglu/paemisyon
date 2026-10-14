@@ -334,3 +334,30 @@ export interface PlanLimitEtkisi {
   bugunAktifKullanici: number;
   aninaDuvaraCarpacak: number;
 }
+
+/** Gün × kaynak tur sayımı — /admin/metrics/home-v2 (Doc 48 Faz 5). */
+export interface HomeV2SourceDay {
+  /** Uygulama günü (TR 04.00'te döner), YYYY-MM-DD. */
+  day: string;
+  /** home_task | home_weak_topic | home_suggestion | notif | diger */
+  source: string;
+  started: number;
+  completed: number;
+  abandoned: number;
+  inProgress: number;
+}
+
+/** Ana sayfa turunun kapsamı — odak türleriyle aynı anahtarlar. */
+export type HomeV2Scope = 'coach' | 'course' | 'topic' | 'wrongs';
+
+/** Yeni mobil anasayfa metrikleri (Doc 48 Faz 5) — salt okuma. */
+export interface HomeV2Metrics {
+  days: number;
+  /** Pencerenin ilk uygulama günü, YYYY-MM-DD. */
+  from: string;
+  daily: HomeV2SourceDay[];
+  homeScope: { scope: HomeV2Scope; started: number; completed: number }[];
+  focusToday: { kind: string; users: number }[];
+  halfTours: { open: number; usersWithMultiple: number; oldestActivityDays: number | null };
+  cohort: { flagOn: boolean; betaOrAdminUsers: number };
+}

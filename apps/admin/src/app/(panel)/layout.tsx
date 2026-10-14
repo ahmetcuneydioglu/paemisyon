@@ -8,6 +8,12 @@ import { supabase } from "@/lib/supabase";
 
 const NAV = [
   { href: "/", label: "Dashboard", icon: "📊" },
+  {
+    href: "/metrics",
+    label: "Anasayfa Metrikleri",
+    icon: "📈",
+    adminOnly: true,
+  },
   { href: "/questions", label: "Sorular", icon: "❓" },
   { href: "/review", label: "Onay Kuyruğu", icon: "✅" },
   { href: "/reports", label: "Soru Bildirimleri", icon: "🚩" },
