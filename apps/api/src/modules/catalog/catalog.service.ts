@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
+import { zayifMi } from '../../common/zayif-konu';
 
 /// İçerik keşif okuması (Doc 7 §4.3): Modül → Ders → Konu.
 @Injectable()
@@ -142,9 +143,11 @@ export class CatalogService {
       return {
         ...t,
         solvedCount: p?.solvedCount ?? 0,
-        /** 0-100; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
+        /** 0-100 = doğru/çözülen; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
         mastery:
           p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,
+        /** Zayıf konu — tek eşik `common/zayif-konu.ts` (Doc 48: istemci kural bilmez). */
+        weak: p != null && zayifMi(p.solvedCount, Number(p.mastery)),
         // Kanun/yönetmelik bayrağı SUNUCUDA (Doc 28 P1-8): istemci regex'i
         // sökülür — Madde Atlası girişi ve web kanun sayfası köprüsü bununla.
         isLaw,
