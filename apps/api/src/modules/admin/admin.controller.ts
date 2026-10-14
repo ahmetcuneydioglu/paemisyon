@@ -2,9 +2,11 @@ import {
   BadRequestException,
   Body,
   Controller,
+  DefaultValuePipe,
   Delete,
   Get,
   Param,
+  ParseIntPipe,
   ParseUUIDPipe,
   Patch,
   Post,
@@ -23,6 +25,7 @@ import { LeaderboardNudgeService } from '../notifications/leaderboard-nudge.serv
 import { PushService } from '../notifications/push.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AdminDashboardService } from './dashboard/admin-dashboard.service';
+import { AdminMetricsService } from './dashboard/admin-metrics.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
@@ -51,6 +54,7 @@ import {
 export class AdminController {
   constructor(
     private readonly dashboard: AdminDashboardService,
+    private readonly metrics: AdminMetricsService,
     private readonly catalog: AdminCatalogService,
     private readonly questions: AdminQuestionsService,
     private readonly users: AdminUsersService,
@@ -151,7 +155,7 @@ export class AdminController {
   ///                             (Doc 36 §7.2). Ekranı içeren mağaza sürümü
   ///                             yayına çıkmadan AÇMA.
   ///   mobilAnasayfaV2         — mobil yeni anasayfa herkese (Doc 48); kapalıyken
-  ///                             yalnız admin rolü görür.
+  ///                             yalnız admin ve beta rolleri görür.
   @Patch('settings')
   @Roles('admin')
   async updateSettings(
@@ -177,6 +181,14 @@ export class AdminController {
   @Roles('admin', 'editor')
   overview() {
     return this.dashboard.overview();
+  }
+
+  /// Yeni anasayfa metrikleri (Doc 48 Faz 5) — salt okuma; gün 1–60 aralığına
+  /// kırpılır.
+  @Get('metrics/home-v2')
+  @Roles('admin')
+  homeV2Metrics(@Query('days', new DefaultValuePipe(14), ParseIntPipe) days: number) {
+    return this.metrics.homeV2(days);
   }
 
   // ── Katalog (içerik ağacı) ──

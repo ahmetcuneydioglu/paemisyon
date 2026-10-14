@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AdminController } from './admin.controller';
 import { AuditService } from './audit.service';
 import { AdminDashboardService } from './dashboard/admin-dashboard.service';
+import { AdminMetricsService } from './dashboard/admin-metrics.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
 import { AdminUsersService } from './users/admin-users.service';
@@ -30,6 +31,7 @@ import { ReportsModule } from '../reports/reports.module';
   providers: [
     AuditService,
     AdminDashboardService,
+    AdminMetricsService,
     AdminCatalogService,
     AdminQuestionsService,
     AdminUsersService,
