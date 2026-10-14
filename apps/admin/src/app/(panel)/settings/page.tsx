@@ -17,7 +17,8 @@ const SETTINGS: { key: keyof Settings; label: string; help: string }[] = [
     label: 'Mobil yeni anasayfa herkese açık',
     help:
       'Kapalıyken yeni "Bugün" ekranını yalnız admin ve beta hesapları görür (Doc 48). ' +
-      'Açınca tüm mobil kullanıcılar ~1 dk içinde yeni ekrana geçer; kapatınca eski ekrana dönerler.',
+      'Açınca, ekranı içeren sürümü (1.1.0+4 ve sonrası) kullananlar ~1 dk içinde yeni ekrana geçer; ' +
+      'eski sürümdekiler eski ekranda kalır. Kapatınca herkes eski ekrana döner.',
   },
   {
     key: 'coachCikmisSinavKarti',

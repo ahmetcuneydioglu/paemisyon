@@ -147,12 +147,12 @@ function Pano({ m }: { m: HomeV2Metrics }) {
     <>
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
         <Card>
-          <div className="text-sm text-slate-500">Yeni anasayfayı gören</div>
+          <div className="text-sm text-slate-500">Yeni anasayfaya erişimi olan</div>
           <div className="mt-1 text-2xl font-semibold">
             {m.cohort.flagOn ? 'Herkes' : `${m.cohort.betaOrAdminUsers} kişi`}
           </div>
           <div className="mt-0.5 text-xs text-slate-400">
-            {m.cohort.flagOn ? 'bayrak açık' : 'bayrak kapalı · admin + beta'} ·{' '}
+            {m.cohort.flagOn ? 'bayrak açık · yeni sürümü yükleyenler' : 'bayrak kapalı · admin + beta'} ·{' '}
             <Link href="/settings" className="underline hover:text-slate-600">
               Ayarlar
             </Link>
