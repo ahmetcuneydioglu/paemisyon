@@ -1,6 +1,6 @@
 import { BadRequestException, ForbiddenException, NotFoundException } from '@nestjs/common';
 import type { AuthenticatedUser } from '../auth/auth.types';
-import { CoachService, homeV2Acik, odagiCoz } from './coach.service';
+import { CoachService, hedefSinavTarihi, homeV2Acik, odagiCoz } from './coach.service';
 
 const D = (s: string) => new Date(`${s}T00:00:00.000Z`);
 const user = (isPremium: boolean): AuthenticatedUser => ({
@@ -122,5 +122,33 @@ describe('homeV2Acik — yeni anasayfa bayrağı (önce dar grup, sonra herkes)'
   });
   it('anahtar açıkken herkes görür', () => {
     expect(homeV2Acik(true, ['user'])).toBe(true);
+  });
+});
+
+describe('hedefSinavTarihi — kişisel öncelikli, eskimiş kişisel tarih resmîyi gölgelemez', () => {
+  // 14 Eki 2026 12.00 TR
+  const simdi = new Date('2026-10-14T09:00:00.000Z');
+  const RESMI = D('2027-06-20');
+
+  it('gelecek kişisel tarih resmîden önce gelir', () => {
+    expect(hedefSinavTarihi(D('2026-11-01'), RESMI, simdi)).toEqual({ date: D('2026-11-01'), source: 'personal' });
+  });
+
+  it('kişisel tarih yoksa resmî', () => {
+    expect(hedefSinavTarihi(null, RESMI, simdi)).toEqual({ date: RESMI, source: 'official' });
+    expect(hedefSinavTarihi(null, null, simdi)).toEqual({ date: null, source: null });
+  });
+
+  it('sınav sonrası pencere (14 gün) içinde kişisel tarih kalır — aftermath kartı çalışır', () => {
+    expect(hedefSinavTarihi(D('2026-09-30'), RESMI, simdi).source).toBe('personal'); // 14 gün önce
+  });
+
+  it('pencereyi aşmış kişisel tarih resmîye düşer', () => {
+    expect(hedefSinavTarihi(D('2026-09-29'), RESMI, simdi)).toEqual({ date: RESMI, source: 'official' }); // 15 gün
+    expect(hedefSinavTarihi(D('2026-09-19'), RESMI, simdi).source).toBe('official');
+  });
+
+  it('resmî tarih yoksa eski kişisel tarih aynen kalır (davranış değişmez)', () => {
+    expect(hedefSinavTarihi(D('2026-09-19'), null, simdi)).toEqual({ date: D('2026-09-19'), source: 'personal' });
   });
 });

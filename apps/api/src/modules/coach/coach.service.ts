@@ -18,6 +18,7 @@ import { enGucluKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
+import { AFTERMATH_PENCERE_GUN } from './rules/aftermath.rule';
 
 /** Haftalık aktif gün hedefi (v1 sabit; ileride kullanıcı ayarı olabilir). */
 const WEEKLY_GOAL_DAYS = 5;
@@ -580,15 +581,18 @@ export class CoachService {
     // ── Sınava kalan TR takvim günü (exam_mode/taper — Doc 25 §3) ──
     // Kişisel tarih varsa o; yoksa hedef sınavın RESMÎ tarihi (Doc 48 A2 —
     // tarih girmeyen aday da geri sayımı ve sınav modunu görür).
-    const kisiselTarih = profile?.targetExamDate ?? null;
-    const resmiTarih = profile?.preferredModule?.examDate ?? null;
-    const examDate = kisiselTarih ?? resmiTarih;
+    const hedef = hedefSinavTarihi(
+      profile?.targetExamDate ?? null,
+      profile?.preferredModule?.examDate ?? null,
+      now,
+    );
+    const examDate = hedef.date;
     const daysToExam = examDate ? trDayDiff(now, examDate) : null;
     const exam: ExamInfo = {
       name: profile?.preferredModule?.name ?? null,
       date: examDate ? examDate.toISOString().slice(0, 10) : null,
       daysLeft: daysToExam != null && daysToExam >= 0 ? daysToExam : null,
-      source: kisiselTarih ? 'personal' : resmiTarih ? 'official' : null,
+      source: hedef.source,
     };
 
     // ── Tempo: son 7 gün vs önceki 7 gün soru hacmi (slump_watch) ──
@@ -782,6 +786,26 @@ function trDayKey(d: Date): string {
 function trDayDiff(now: Date, target: Date): number {
   const day = (d: Date) => Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
   return day(target) - day(now);
+}
+
+/**
+ * Hedef sınav tarihi (Doc 48 A2): kişisel tarih önceliklidir. Ama sınav sonrası
+ * pencereyi (14 gün) aşmış geçmiş bir kişisel tarih artık hedef değildir; resmî
+ * tarih varsa ona düşülür. Aksi hâlde geçen dönemin tarihi, admin yeni resmî
+ * tarihi girdiğinde bile geri sayımı gölgeler (14 Eki 2026: kişisel tarihli 131
+ * kullanıcının 34'ünde tarih geçmişteydi). Resmî tarih yoksa davranış aynı kalır.
+ * (Test için export.)
+ */
+export function hedefSinavTarihi(
+  kisisel: Date | null,
+  resmi: Date | null,
+  now: Date,
+): { date: Date | null; source: ExamInfo['source'] } {
+  if (kisisel && trDayDiff(now, kisisel) >= -AFTERMATH_PENCERE_GUN) {
+    return { date: kisisel, source: 'personal' };
+  }
+  if (resmi) return { date: resmi, source: 'official' };
+  return kisisel ? { date: kisisel, source: 'personal' } : { date: null, source: null };
 }
 
 /**

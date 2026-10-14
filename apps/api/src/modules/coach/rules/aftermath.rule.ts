@@ -1,5 +1,8 @@
 import { CoachRule } from '../coach.types';
 
+/** Sınav sonrası sakin pencere (gün). Bunu aşan geçmiş tarih artık hedef değildir. */
+export const AFTERMATH_PENCERE_GUN = 14;
+
 /// Sınav sonrası (Doc 24 §3 `aftermath`): hedef sınav geçti. İlk 14 gün sonucun
 /// beklendiği/devrin yaşandığı sakin bir pencere — grind dili durur. Servis bu
 /// kart tetiklenince görev listesini bastırır (taper gibi). Ton (Doc 26 §1):
@@ -7,7 +10,7 @@ import { CoachRule } from '../coach.types';
 /// 14 günden sonra kart susar → kullanıcı yeni hedef belirleyene dek `normal`.
 export const aftermathRule: CoachRule = (ctx) => {
   const days = ctx.daysSinceExam;
-  if (days == null || days < 0 || days > 14) return null;
+  if (days == null || days < 0 || days > AFTERMATH_PENCERE_GUN) return null;
 
   const solved = ctx.stats.totalSolved;
   const title = days === 0 ? 'Sınavın bugündü — geçmiş olsun.' : 'Sınavın geçti — kolay gelsin.';
