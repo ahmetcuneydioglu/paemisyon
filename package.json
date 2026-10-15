@@ -1,0 +1,15 @@
+{
+  "name": "paemisyon-monorepo",
+  "private": true,
+  "description": "Kök orkestrasyon (Doc 49 A1). Uygulamalar bağımsız npm projeleridir; deploy kökleri (Railway apps/api, Vercel apps/admin ve apps/web) değişmesin diye hoisting YOK. Çalışma alanı bağlantısı (pnpm) gerektiğinde ayrı adımda, deploy ayarlarıyla birlikte yapılır.",
+  "engines": {
+    "node": ">=20 <23"
+  },
+  "scripts": {
+    "install:all": "npm ci --prefix apps/api && npm ci --prefix apps/admin && npm ci --prefix apps/web",
+    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/admin && npm run typecheck --prefix apps/web",
+    "lint": "npm run lint --prefix apps/admin && npm run lint --prefix apps/web && npx --prefix apps/api eslint \"apps/api/src/**/*.ts\"",
+    "test": "npm test --prefix apps/api && npm test --prefix apps/web",
+    "check": "npm run typecheck && npm run test"
+  }
+}

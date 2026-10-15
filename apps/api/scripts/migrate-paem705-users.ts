@@ -7,8 +7,8 @@
  * aynı e-postayla Google/Apple girişi kullanır.
  *
  * Kullanım (apps/api içinden):
- *   npx ts-node scripts/migrate-paem705-users.ts --dump ../../paem705.sql            # dry-run (rapor)
- *   npx ts-node scripts/migrate-paem705-users.ts --dump ../../paem705.sql --apply [--limit N]
+ *   npx ts-node scripts/migrate-paem705-users.ts --dump ../../../paemisyon-arsiv/paem705.sql            # dry-run (rapor)
+ *   npx ts-node scripts/migrate-paem705-users.ts --dump ../../../paemisyon-arsiv/paem705.sql --apply [--limit N]
  *   npx ts-node scripts/migrate-paem705-users.ts --rollback --yes                    # provayı geri al
  *
  * Güvence: idempotent (legacy_user_map + e-posta kontrolü) — iki kez çalıştırmak
@@ -27,7 +27,7 @@ const opt = (n: string) => {
   const i = args.indexOf(`--${n}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
-const DUMP = opt('dump') ?? '../../paem705.sql';
+const DUMP = opt('dump') ?? '../../../paemisyon-arsiv/paem705.sql';
 const APPLY = flag('apply');
 const ROLLBACK = flag('rollback');
 const LIMIT = opt('limit') ? Number(opt('limit')) : Infinity;

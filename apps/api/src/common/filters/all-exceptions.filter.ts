@@ -7,6 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
+import * as Sentry from '@sentry/nestjs';
 
 /**
  * Tüm hataları tutarlı { error: { code, message, details, trace_id } } formatına çevirir (Doc 7).
@@ -47,6 +48,11 @@ export class AllExceptionsFilter implements ExceptionFilter {
         `[${traceId}] ${request.method} ${request.url} → ${status}`,
         exception instanceof Error ? exception.stack : String(exception),
       );
+      // Yalnız sunucu hataları Sentry'ye gider (Doc 49 A1); 4xx beklenen akıştır.
+      // DSN yoksa SDK pasif, çağrı yok sayılır.
+      Sentry.captureException(exception, {
+        tags: { trace_id: traceId ?? 'yok', route: `${request.method} ${request.route?.path ?? request.url}` },
+      });
     }
 
     response.status(status).json({

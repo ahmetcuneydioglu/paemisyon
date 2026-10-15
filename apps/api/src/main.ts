@@ -1,3 +1,5 @@
+// Sentry SDK'sı her şeyden önce (Doc 49 A1). Yan etkili içe aktarma, sıra önemli.
+import './instrument';
 import { NestFactory } from '@nestjs/core';
 import { text as textBody } from 'express';
 import { ValidationPipe, Logger } from '@nestjs/common';

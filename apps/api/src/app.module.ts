@@ -2,6 +2,7 @@ import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
+import { SentryModule } from '@sentry/nestjs/setup';
 import { istekKimligi } from './common/istek-kimligi';
 import { ScheduleModule } from '@nestjs/schedule';
 import { validateEnv } from './config/env.validation';
@@ -28,6 +29,9 @@ import { UsersModule } from './modules/users/users.module';
 
 @Module({
   imports: [
+    // Sentry istek bağlamı (Doc 49 A1): DSN yoksa pasif. Hata yakalama
+    // AllExceptionsFilter'da açıkça yapılır; burada yalnız izleme bağlamı.
+    SentryModule.forRoot(),
     ConfigModule.forRoot({
       isGlobal: true,
       validate: validateEnv,

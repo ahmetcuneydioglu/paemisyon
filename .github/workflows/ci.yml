@@ -1,0 +1,62 @@
+# Doc 49 A1 (16 Eki 2026): ilk CI. Üç uygulama bağımsız npm projesi; her biri
+# kendi kilit dosyasıyla kurulur (deploy kökleriyle birebir). Amaç regresyonu
+# canlıdan önce görmek: tip denetimi, lint, birim testleri. Derleme (next build /
+# nest build) ortam değişkeni ister; şimdilik yalnız tip ve test.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api:
+    name: API (NestJS)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/api } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/api/package-lock.json }
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npm run typecheck
+      - run: npx eslint "src/**/*.ts"
+      - run: npm test -- --ci
+
+  admin:
+    name: Admin (Next.js)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/admin } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/admin/package-lock.json }
+      - run: npm ci
+      - run: npm run typecheck
+      # Lint henüz engellemez: main'de eslint-config-next'in React Compiler
+      # kurallarından 1 eski hata var (exams/[id] setState-in-effect); S2 admin
+      # 2.0'da sayfayla birlikte düzelir. Çıktı yine görünür.
+      - run: npm run lint
+        continue-on-error: true
+
+  web:
+    name: Web (Next.js)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/web } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/web/package-lock.json }
+      - run: npm ci
+      - run: npm run typecheck
+      # Lint henüz engellemez: main'de 5 eski React Compiler hatası var (sinav
+      # arsiv/kisisel Date.now render'da; sinav-quiz, push-opt-in, command-palette
+      # setState-in-effect). F7 web yeni deride ekranlarıyla birlikte düzelir.
+      - run: npm run lint
+        continue-on-error: true
+      - run: npm test

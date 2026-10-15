@@ -6,8 +6,8 @@
  *  - legacy_paem705: eski döküm; yeni sistemde hesabı olanlar canlı sayılır (karar A).
  *
  * Kullanım (apps/api içinden):
- *   npx ts-node scripts/import-email-contacts.ts --dump ../../paem705.sql           # prova (rapor)
- *   npx ts-node scripts/import-email-contacts.ts --dump ../../paem705.sql --apply
+ *   npx ts-node scripts/import-email-contacts.ts --dump ../../../paemisyon-arsiv/paem705.sql           # prova (rapor)
+ *   npx ts-node scripts/import-email-contacts.ts --dump ../../../paemisyon-arsiv/paem705.sql --apply
  *
  * Güvence: idempotent — var olan kişi yeniden yazılmaz, durumu DÜŞÜRÜLMEZ (çıkmış
  * kişi yeniden abone yapılmaz); yalnız boş ad/user_id tamamlanır. Pooler kuralı:
@@ -29,7 +29,7 @@ const opt = (n: string) => {
   const i = args.indexOf(`--${n}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
-const DUMP = opt('dump') ?? '../../paem705.sql';
+const DUMP = opt('dump') ?? '../../../paemisyon-arsiv/paem705.sql';
 const APPLY = flag('apply');
 
 function withSingleConnection(url: string | undefined): string | undefined {
