@@ -61,7 +61,9 @@ Tarih: 16 Ekim 2026. Dal `claude/a1-temel`. Plan: `00-plan.md` §3 A1.
 ## Doğrulama
 - API: typecheck temiz, 398 test geçti.
 - Admin ve web: typecheck temiz, lint yalnız eski hatalar, web 80 test geçti.
-- `next build --webpack` admin ve web için Sentry sarmalayıcısıyla derlendi (bkz. commit).
+- `next build --webpack` admin ve web için Sentry sarmalayıcısıyla derlendi. Web'de tek uyarı
+  Next'in kendi `constants.js` dosyasından (`process.features` Edge Runtime'da); derlemeyi
+  etkilemiyor, Sentry edge içe aktarımının izinde görünüyor; davranış değişikliği yok.
 - Admin `npm ci` yeni kilit dosyasıyla temiz kurulum yaptı.
 
 ## Dışarıda bırakılanlar
