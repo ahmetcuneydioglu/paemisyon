@@ -33,17 +33,17 @@ describe('bayraklariHesapla', () => {
 
   it('mevzuat dersinde madde bağı yoksa işaretler', () => {
     for (const ders of ['Ceza Hukuku', 'Anayasa Hukuku', 'Polis Mevzuatı', 'İdare Hukuku']) {
-      expect(
-        bayraklariHesapla({ ...temiz, courseName: ders, articleNo: null }, bos),
-      ).toContain('madde-yok');
+      expect(bayraklariHesapla({ ...temiz, courseName: ders, articleNo: null }, bos)).toContain(
+        'madde-yok',
+      );
     }
   });
 
   it('mevzuat DIŞI derste madde bağı beklemez', () => {
     for (const ders of ['Genel Kültür ve Analitik Düşünme', 'Silah Bilgisi', 'Protokol Bilgisi']) {
-      expect(
-        bayraklariHesapla({ ...temiz, courseName: ders, articleNo: null }, bos),
-      ).not.toContain('madde-yok');
+      expect(bayraklariHesapla({ ...temiz, courseName: ders, articleNo: null }, bos)).not.toContain(
+        'madde-yok',
+      );
     }
   });
 
@@ -89,8 +89,7 @@ describe('tekrarEdenKokler', () => {
   });
 
   it('yalnız SONU ayrışan uzun kökleri de yakalar (aynı sorunun iki kaydı)', () => {
-    const ortak =
-      'Anayasaya göre temel hak ve hürriyetlerin sınırlanmasında ölçülülük ilkesi';
+    const ortak = 'Anayasaya göre temel hak ve hürriyetlerin sınırlanmasında ölçülülük ilkesi';
     const kokler = tekrarEdenKokler([
       `${ortak} bakımından aşağıdakilerden hangisi söylenebilir?`,
       `${ortak} açısından hangisi doğrudur?`,

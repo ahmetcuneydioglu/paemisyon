@@ -62,7 +62,10 @@ describe('odagiCoz — günün odağı geçicidir (Doc 25 §5)', () => {
 describe('CoachService.setFocus', () => {
   function setup(topic: { isPremium: boolean } | null = { isPremium: false }) {
     const prisma = {
-      dailyFocus: { deleteMany: jest.fn().mockResolvedValue({}), upsert: jest.fn().mockResolvedValue({}) },
+      dailyFocus: {
+        deleteMany: jest.fn().mockResolvedValue({}),
+        upsert: jest.fn().mockResolvedValue({}),
+      },
       topic: {
         findFirst: jest
           .fn()
@@ -77,7 +80,9 @@ describe('CoachService.setFocus', () => {
 
   it('koç seçilince kayıt silinir', async () => {
     const { service, prisma } = setup();
-    await expect(service.setFocus(user(false), { kind: 'coach' })).resolves.toMatchObject({ kind: 'coach' });
+    await expect(service.setFocus(user(false), { kind: 'coach' })).resolves.toMatchObject({
+      kind: 'coach',
+    });
     expect(prisma.dailyFocus.deleteMany).toHaveBeenCalled();
     expect(prisma.dailyFocus.upsert).not.toHaveBeenCalled();
   });
@@ -85,31 +90,46 @@ describe('CoachService.setFocus', () => {
   it('konu odağı dersini de yazar ve etiketi döner', async () => {
     const { service, prisma } = setup();
     const r = await service.setFocus(user(false), { kind: 'topic', topicId: KONU });
-    expect(r).toEqual({ kind: 'topic', courseId: DERS, topicId: KONU, label: 'Temel Haklar ve Ödevler' });
-    expect(prisma.dailyFocus.upsert.mock.calls[0][0].create).toMatchObject({ kind: 'topic', courseId: DERS, topicId: KONU });
+    expect(r).toEqual({
+      kind: 'topic',
+      courseId: DERS,
+      topicId: KONU,
+      label: 'Temel Haklar ve Ödevler',
+    });
+    expect(prisma.dailyFocus.upsert.mock.calls[0][0].create).toMatchObject({
+      kind: 'topic',
+      courseId: DERS,
+      topicId: KONU,
+    });
   });
 
   it('ücretsiz kullanıcı premium konuyu seçerse PREMIUM_REQUIRED (sessizce elenmez)', async () => {
     const { service, prisma } = setup({ isPremium: true });
-    await expect(service.setFocus(user(false), { kind: 'topic', topicId: KONU })).rejects.toBeInstanceOf(
-      ForbiddenException,
-    );
+    await expect(
+      service.setFocus(user(false), { kind: 'topic', topicId: KONU }),
+    ).rejects.toBeInstanceOf(ForbiddenException);
     expect(prisma.dailyFocus.upsert).not.toHaveBeenCalled();
-    await expect(service.setFocus(user(true), { kind: 'topic', topicId: KONU })).resolves.toMatchObject({
+    await expect(
+      service.setFocus(user(true), { kind: 'topic', topicId: KONU }),
+    ).resolves.toMatchObject({
       kind: 'topic',
     });
   });
 
   it('alan uyumsuzluğu ve yok olan kapsam reddedilir', async () => {
     const { service } = setup(null);
-    await expect(service.setFocus(user(false), { kind: 'topic' })).rejects.toBeInstanceOf(BadRequestException);
-    await expect(service.setFocus(user(false), { kind: 'course' })).rejects.toBeInstanceOf(BadRequestException);
-    await expect(service.setFocus(user(false), { kind: 'wrongs', topicId: KONU })).rejects.toBeInstanceOf(
+    await expect(service.setFocus(user(false), { kind: 'topic' })).rejects.toBeInstanceOf(
       BadRequestException,
     );
-    await expect(service.setFocus(user(false), { kind: 'topic', topicId: KONU })).rejects.toBeInstanceOf(
-      NotFoundException,
+    await expect(service.setFocus(user(false), { kind: 'course' })).rejects.toBeInstanceOf(
+      BadRequestException,
     );
+    await expect(
+      service.setFocus(user(false), { kind: 'wrongs', topicId: KONU }),
+    ).rejects.toBeInstanceOf(BadRequestException);
+    await expect(
+      service.setFocus(user(false), { kind: 'topic', topicId: KONU }),
+    ).rejects.toBeInstanceOf(NotFoundException);
   });
 });
 
@@ -131,7 +151,10 @@ describe('hedefSinavTarihi — kişisel öncelikli, eskimiş kişisel tarih resm
   const RESMI = D('2027-06-20');
 
   it('gelecek kişisel tarih resmîden önce gelir', () => {
-    expect(hedefSinavTarihi(D('2026-11-01'), RESMI, simdi)).toEqual({ date: D('2026-11-01'), source: 'personal' });
+    expect(hedefSinavTarihi(D('2026-11-01'), RESMI, simdi)).toEqual({
+      date: D('2026-11-01'),
+      source: 'personal',
+    });
   });
 
   it('kişisel tarih yoksa resmî', () => {
@@ -144,11 +167,17 @@ describe('hedefSinavTarihi — kişisel öncelikli, eskimiş kişisel tarih resm
   });
 
   it('pencereyi aşmış kişisel tarih resmîye düşer', () => {
-    expect(hedefSinavTarihi(D('2026-09-29'), RESMI, simdi)).toEqual({ date: RESMI, source: 'official' }); // 15 gün
+    expect(hedefSinavTarihi(D('2026-09-29'), RESMI, simdi)).toEqual({
+      date: RESMI,
+      source: 'official',
+    }); // 15 gün
     expect(hedefSinavTarihi(D('2026-09-19'), RESMI, simdi).source).toBe('official');
   });
 
   it('resmî tarih yoksa eski kişisel tarih aynen kalır (davranış değişmez)', () => {
-    expect(hedefSinavTarihi(D('2026-09-19'), null, simdi)).toEqual({ date: D('2026-09-19'), source: 'personal' });
+    expect(hedefSinavTarihi(D('2026-09-19'), null, simdi)).toEqual({
+      date: D('2026-09-19'),
+      source: 'personal',
+    });
   });
 });

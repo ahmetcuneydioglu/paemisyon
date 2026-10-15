@@ -84,8 +84,7 @@ describe('calismaYanlisi', () => {
   it('harf büyük/küçük farkı önemsiz', async () => {
     const m = prismaMock({ bag: dogruB });
     expect(
-      (await servis(m).calismaYanlisi('u1', 'paem-9-2025', { sira: 9, harf: 'b' }))
-        .kaydedildi,
+      (await servis(m).calismaYanlisi('u1', 'paem-9-2025', { sira: 9, harf: 'b' })).kaydedildi,
     ).toBe(false);
   });
 
@@ -111,9 +110,11 @@ describe('calismaYanlisi', () => {
 
   it('yayına alınmamış soru reddedilir', async () => {
     await expect(
-      servis(
-        prismaMock({ bag: { ...dogruB, versiyonDurumu: 'in_review' } }),
-      ).calismaYanlisi('u1', 'paem-9-2025', { sira: 9, harf: 'A' }),
+      servis(prismaMock({ bag: { ...dogruB, versiyonDurumu: 'in_review' } })).calismaYanlisi(
+        'u1',
+        'paem-9-2025',
+        { sira: 9, harf: 'A' },
+      ),
     ).rejects.toThrow(NotFoundException);
   });
 
@@ -130,10 +131,10 @@ describe('calismaYanlisi', () => {
 describe('detailFull premium kapısı', () => {
   it('premium dönem, ücretsiz kullanıcıya kapalı', async () => {
     await expect(
-      servis(prismaMock({ donem: { isPremium: true } })).detailFull(
-        'paem-8-2024',
-        { id: 'u1', isPremium: false },
-      ),
+      servis(prismaMock({ donem: { isPremium: true } })).detailFull('paem-8-2024', {
+        id: 'u1',
+        isPremium: false,
+      }),
     ).rejects.toThrow(ForbiddenException);
   });
 

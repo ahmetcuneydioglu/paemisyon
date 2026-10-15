@@ -19,7 +19,14 @@ function kur(yarim: YarimSatir[] = [{ open: 0, users_with_multiple: 0, oldest: n
       if (q.sql.includes('WITH tur')) return yarim;
       if (q.sql.includes('starts_with')) return [{ scope: 'topic', started: 3, completed: 2 }];
       return [
-        { day: '2026-10-14', source: 'home_task', started: 5, completed: 4, abandoned: 0, inProgress: 1 },
+        {
+          day: '2026-10-14',
+          source: 'home_task',
+          started: 5,
+          completed: 4,
+          abandoned: 0,
+          inProgress: 1,
+        },
       ];
     }),
     dailyFocus: { groupBy: jest.fn(async () => [{ kind: 'topic', _count: { _all: 2 } }]) },

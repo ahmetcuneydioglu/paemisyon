@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
+import { SettingsService } from '../../infra/settings/settings.service';
 import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.logic';
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';

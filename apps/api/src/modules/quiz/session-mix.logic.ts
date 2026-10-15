@@ -15,7 +15,9 @@ export interface MixQuota {
   fresh: number;
 }
 
-export interface MixPools<T extends { id: string; topicId: string } = { id: string; topicId: string }> {
+export interface MixPools<
+  T extends { id: string; topicId: string } = { id: string; topicId: string },
+> {
   /** Havuzdaki tüm sorular (yayında + premium filtresi uygulanmış). */
   pool: T[];
   /** Kullanıcının çözülmemiş yanlış soruları (id seti). */
@@ -57,11 +59,17 @@ export function pickMix<T extends { id: string; topicId: string }>(
   };
 
   // 1) Yanlış tekrarı — öğrenme döngüsünün kalbi (yanıl → anla → tekrar).
-  take(pools.pool.filter((q) => pools.wrongIds.has(q.id)), quota.wrong);
+  take(
+    pools.pool.filter((q) => pools.wrongIds.has(q.id)),
+    quota.wrong,
+  );
 
   // 2) Zayıf konular.
   const weakRemaining = quota.wrong + quota.weak - chosen.length;
-  take(pools.pool.filter((q) => pools.weakTopicIds.has(q.topicId)), weakRemaining);
+  take(
+    pools.pool.filter((q) => pools.weakTopicIds.has(q.topicId)),
+    weakRemaining,
+  );
 
   // 3) Yeni/karışık — hem çok çalışılmış hem zayıf konulardan kaçınır
   //    (zayıf dilim kendi kotasını aldı; "yeni" gerçekten yeni olmalı).

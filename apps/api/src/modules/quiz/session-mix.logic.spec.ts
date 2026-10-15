@@ -1,4 +1,10 @@
-import { mixQuota, pickMix, pickTopicBalanced, type MixPools, pickComeback } from './session-mix.logic';
+import {
+  mixQuota,
+  pickMix,
+  pickTopicBalanced,
+  type MixPools,
+  pickComeback,
+} from './session-mix.logic';
 
 /** Deterministik "shuffle": sırayı korur — testler öngörülebilir. */
 const identity = <T>(a: T[]): T[] => a;
@@ -22,10 +28,15 @@ describe('mixQuota (Doc 25 §5 reçetesi)', () => {
 describe('pickMix', () => {
   const pools: MixPools = {
     pool: [
-      q('w1', 'tA'), q('w2', 'tA'), // yanlışlar
-      q('z1', 'tZ'), q('z2', 'tZ'), q('z3', 'tZ'), // zayıf konu
-      q('n1', 'tN'), q('n2', 'tN'), // yeni konu
-      q('h1', 'tH'), q('h2', 'tH'), // çok çalışılmış konu
+      q('w1', 'tA'),
+      q('w2', 'tA'), // yanlışlar
+      q('z1', 'tZ'),
+      q('z2', 'tZ'),
+      q('z3', 'tZ'), // zayıf konu
+      q('n1', 'tN'),
+      q('n2', 'tN'), // yeni konu
+      q('h1', 'tH'),
+      q('h2', 'tH'), // çok çalışılmış konu
     ],
     wrongIds: new Set(['w1', 'w2']),
     weakTopicIds: new Set(['tZ']),
@@ -70,7 +81,10 @@ describe('pickMix', () => {
 describe('pickTopicBalanced', () => {
   it('büyük konunun havuz ağırlığından etkilenmeden ilk turda farklı konular seçer', () => {
     const pool = [
-      q('a1', 'tA'), q('a2', 'tA'), q('a3', 'tA'), q('a4', 'tA'),
+      q('a1', 'tA'),
+      q('a2', 'tA'),
+      q('a3', 'tA'),
+      q('a4', 'tA'),
       q('b1', 'tB'),
       q('c1', 'tC'),
     ];
@@ -84,18 +98,14 @@ describe('pickTopicBalanced', () => {
   it('konular tükendiğinde ikinci tura geçer ve havuz kadar doldurur', () => {
     const pool = [q('a1', 'tA'), q('a2', 'tA'), q('a3', 'tA'), q('b1', 'tB')];
 
-    expect(pickTopicBalanced(pool, 3, identity).map((x) => x.id)).toEqual([
-      'a1',
-      'b1',
-      'a2',
-    ]);
+    expect(pickTopicBalanced(pool, 3, identity).map((x) => x.id)).toEqual(['a1', 'b1', 'a2']);
     expect(pickTopicBalanced(pool, 10, identity)).toHaveLength(4);
   });
 });
 
 describe('pickComeback — dönüşte güçlü konudan kısa tur (Doc 24 §7.1)', () => {
   const soru = (id: string, topicId: string) => ({ id, topicId });
-  const kimlik = <T,>(a: T[]) => a;
+  const kimlik = <T>(a: T[]) => a;
 
   it('güçlü konulardan seçer', () => {
     const pool = [soru('1', 'zayif'), soru('2', 'guclu'), soru('3', 'guclu'), soru('4', 'diger')];

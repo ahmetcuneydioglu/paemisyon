@@ -21,12 +21,18 @@ export class ReviewController {
   }
 
   @Post('bookmarks/:questionId')
-  add(@CurrentUser() user: AuthenticatedUser, @Param('questionId', ParseUUIDPipe) questionId: string) {
+  add(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('questionId', ParseUUIDPipe) questionId: string,
+  ) {
     return this.review.addBookmark(user.id, questionId);
   }
 
   @Delete('bookmarks/:questionId')
-  remove(@CurrentUser() user: AuthenticatedUser, @Param('questionId', ParseUUIDPipe) questionId: string) {
+  remove(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('questionId', ParseUUIDPipe) questionId: string,
+  ) {
     return this.review.removeBookmark(user.id, questionId);
   }
 }

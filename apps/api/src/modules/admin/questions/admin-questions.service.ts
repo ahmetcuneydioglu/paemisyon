@@ -221,15 +221,16 @@ export class AdminQuestionsService {
         data: {
           topicId: dto.topicId,
           // Madde Atlası: elle verilmediyse kökten otomatik tespit.
-          articleNo: dto.articleNo !== undefined
-            ? dto.articleNo.trim() || null
-            : detectArticleNo(dto.stem),
+          articleNo:
+            dto.articleNo !== undefined ? dto.articleNo.trim() || null : detectArticleNo(dto.stem),
         },
       });
       await this.createVersion(tx, q.id, 1, actor.id, dto);
       return q;
     });
-    await this.audit.log(actor, 'question.create', 'question', question.id, { topicId: dto.topicId });
+    await this.audit.log(actor, 'question.create', 'question', question.id, {
+      topicId: dto.topicId,
+    });
     return this.detail(question.id);
   }
 
@@ -262,8 +263,7 @@ export class AdminQuestionsService {
     }
 
     // Madde etiketi (Doc 25 §4): gönderildiyse güncelle ('' = temizle).
-    const articleNo =
-      dto.articleNo !== undefined ? dto.articleNo.trim() || null : undefined;
+    const articleNo = dto.articleNo !== undefined ? dto.articleNo.trim() || null : undefined;
 
     await this.prisma.$transaction(async (tx) => {
       if (topicChanged || articleNo !== undefined) {
@@ -286,9 +286,14 @@ export class AdminQuestionsService {
             difficulty: (dto.difficulty ?? 'medium') as Difficulty,
             ...(dto.mediaUrl !== undefined ? { mediaUrl: dto.mediaUrl.trim() || null } : {}),
             // Kaynak etiketi: dto sessizse korunur, '' temizler (Doc 49 A0 / T1).
-            ...(dto.sourceLabel !== undefined ? { sourceLabel: dto.sourceLabel.trim() || null } : {}),
+            ...(dto.sourceLabel !== undefined
+              ? { sourceLabel: dto.sourceLabel.trim() || null }
+              : {}),
             // İçerik değişti: parmak izi yenilenir (mükerrer tespiti güncel kalsın).
-            contentHash: questionFingerprint(dto.stem, dto.options.map((o) => o.text)),
+            contentHash: questionFingerprint(
+              dto.stem,
+              dto.options.map((o) => o.text),
+            ),
             status: 'draft', // in_review'da düzenleme onayı sıfırlar
             options: {
               create: dto.options.map((o, i) => ({
@@ -322,7 +327,9 @@ export class AdminQuestionsService {
       // Yeniden incelemeye gelen sürümün eski ret notu temizlenir.
       data: { status: 'in_review', reviewNote: null },
     });
-    await this.audit.log(actor, 'question.submit_review', 'question', id, { versionNo: version.versionNo });
+    await this.audit.log(actor, 'question.submit_review', 'question', id, {
+      versionNo: version.versionNo,
+    });
     return this.detail(id);
   }
 
@@ -350,7 +357,9 @@ export class AdminQuestionsService {
       });
       await tx.question.update({ where: { id }, data: { currentVersionId: version.id } });
     });
-    await this.audit.log(actor, 'question.approve', 'question', id, { versionNo: version.versionNo });
+    await this.audit.log(actor, 'question.approve', 'question', id, {
+      versionNo: version.versionNo,
+    });
     return this.detail(id);
   }
 
@@ -492,12 +501,16 @@ export class AdminQuestionsService {
               syntheticSkipped++;
               skipped.push({
                 questionId: v.questionId,
-                reason: 'Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz; tek tek incele.',
+                reason:
+                  'Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz; tek tek incele.',
               });
               continue;
             }
             if (v.options.filter((o) => o.isCorrect).length !== 1) {
-              skipped.push({ questionId: v.questionId, reason: 'Tam bir doğru şık işaretli değil.' });
+              skipped.push({
+                questionId: v.questionId,
+                reason: 'Tam bir doğru şık işaretli değil.',
+              });
               continue;
             }
             await tx.questionVersion.updateMany({
@@ -582,7 +595,10 @@ export class AdminQuestionsService {
     // Tekrar (mükerrer) tespiti (Doc 20 EK 2): parmak izi hesapla, bankaya ve
     // aynı dosyaya (batch) karşı kontrol et.
     const fingerprints = report.valid.map((row) =>
-      questionFingerprint(row.stem, row.options.map((o) => o.text)),
+      questionFingerprint(
+        row.stem,
+        row.options.map((o) => o.text),
+      ),
     );
     const bankLocation = await this.duplicateLocations(fingerprints);
     const seenInBatch = new Map<string, number>(); // hash -> ilk rowNo
@@ -687,43 +703,46 @@ export class AdminQuestionsService {
       row,
       questionId: randomUUID(),
       versionId: randomUUID(),
-      contentHash: questionFingerprint(row.stem, row.options.map((o) => o.text)),
+      contentHash: questionFingerprint(
+        row.stem,
+        row.options.map((o) => o.text),
+      ),
     }));
     await this.prisma.$transaction(
       async (tx) => {
-      await tx.question.createMany({
-        data: rowsToInsert.map((r) => ({
-          id: r.questionId,
-          topicId: params.assignments[r.row.rowNo],
-          // Madde Atlası: otomatik tespit (null olabilir; elle düzeltilebilir).
-          articleNo: detectArticleNo(r.row.stem),
-        })),
-      });
-      await tx.questionVersion.createMany({
-        data: rowsToInsert.map((r) => ({
-          id: r.versionId,
-          questionId: r.questionId,
-          versionNo: 1,
-          stem: r.row.stem,
-          explanation: r.row.explanation,
-          sourceLabel,
-          contentHash: r.contentHash,
-          difficulty: r.row.difficulty as Difficulty,
-          status: 'in_review' as const, // onay kuyruğuna düşer — doğrudan yayın YOK
-          authoredBy: actor.id,
-        })),
-      });
-      await tx.questionOption.createMany({
-        data: rowsToInsert.flatMap((r) =>
-          r.row.options.map((o, i) => ({
-            questionVersionId: r.versionId,
-            label: o.label,
-            text: o.text,
-            isCorrect: o.isCorrect,
-            sortOrder: i,
+        await tx.question.createMany({
+          data: rowsToInsert.map((r) => ({
+            id: r.questionId,
+            topicId: params.assignments[r.row.rowNo],
+            // Madde Atlası: otomatik tespit (null olabilir; elle düzeltilebilir).
+            articleNo: detectArticleNo(r.row.stem),
           })),
-        ),
-      });
+        });
+        await tx.questionVersion.createMany({
+          data: rowsToInsert.map((r) => ({
+            id: r.versionId,
+            questionId: r.questionId,
+            versionNo: 1,
+            stem: r.row.stem,
+            explanation: r.row.explanation,
+            sourceLabel,
+            contentHash: r.contentHash,
+            difficulty: r.row.difficulty as Difficulty,
+            status: 'in_review' as const, // onay kuyruğuna düşer — doğrudan yayın YOK
+            authoredBy: actor.id,
+          })),
+        });
+        await tx.questionOption.createMany({
+          data: rowsToInsert.flatMap((r) =>
+            r.row.options.map((o, i) => ({
+              questionVersionId: r.versionId,
+              label: o.label,
+              text: o.text,
+              isCorrect: o.isCorrect,
+              sortOrder: i,
+            })),
+          ),
+        });
       },
       // Büyük dosyada (1000 satır ≈ 5000 şık) uzak DB'ye 3 toplu INSERT
       // varsayılan 5 sn'yi aşabilir — açık sınır.
@@ -793,7 +812,9 @@ export class AdminQuestionsService {
       where: { contentHash: { in: uniq }, question: { deletedAt: null } },
       select: {
         contentHash: true,
-        question: { select: { topic: { select: { name: true, course: { select: { name: true } } } } } },
+        question: {
+          select: { topic: { select: { name: true, course: { select: { name: true } } } } },
+        },
       },
     });
     const map = new Map<string, string>();
@@ -858,14 +879,20 @@ export class AdminQuestionsService {
         explanation: dto.explanation ?? null,
         // Şekilli soruda görsel kaybolursa soru cevaplanamaz hâle gelir;
         // dto sessiz kaldığında önceki sürümden taşınır.
-        mediaUrl: dto.mediaUrl !== undefined ? dto.mediaUrl.trim() || null : (onceki?.mediaUrl ?? null),
+        mediaUrl:
+          dto.mediaUrl !== undefined ? dto.mediaUrl.trim() || null : (onceki?.mediaUrl ?? null),
         // Kaynak etiketi (Doc 49 A0 / T1): eski createVersion bunu DÜŞÜRÜYORDU —
         // yayındaki soru panelden düzenlenince etiket kayboluyordu. dto sessizse
         // önceki sürümden taşınır; '' bilinçli temizlemedir.
         sourceLabel:
-          dto.sourceLabel !== undefined ? dto.sourceLabel.trim() || null : (onceki?.sourceLabel ?? null),
+          dto.sourceLabel !== undefined
+            ? dto.sourceLabel.trim() || null
+            : (onceki?.sourceLabel ?? null),
         // Parmak izi her sürümde içerikten hesaplanır (mükerrer tespiti).
-        contentHash: questionFingerprint(dto.stem, dto.options.map((o) => o.text)),
+        contentHash: questionFingerprint(
+          dto.stem,
+          dto.options.map((o) => o.text),
+        ),
         difficulty: (dto.difficulty ?? 'medium') as Difficulty,
         status: 'draft',
         authoredBy: authorId,

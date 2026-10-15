@@ -7,7 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
+import { SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -145,12 +145,12 @@ export class QuizService {
     // filtrelenmez — kullanıcı ne istediğini biliyor.
     const needsModuleScope = dto.mode === 'review' || !acikKapsam;
     const preferredModuleId = needsModuleScope
-      ? (
+      ? ((
           await this.prisma.user.findUnique({
             where: { id: userId },
             select: { preferredModuleId: true },
           })
-        )?.preferredModuleId ?? null
+        )?.preferredModuleId ?? null)
       : null;
     const moduleSection = preferredModuleId
       ? { deletedAt: null, examTypeId: preferredModuleId }
@@ -303,8 +303,7 @@ export class QuizService {
       // Havuz "hiç görülmemiş" ve "görülmüş" diye ayrılır; seçim önce
       // görülmemişten yapılır. Deneme (exam) hariç: onun seti kendi kuralıyla
       // kurulur ve tekrar çözülebilir olması kasıtlıdır.
-      const fresh =
-        dto.mode === 'exam' ? null : await this.splitBySeen(userId, pool);
+      const fresh = dto.mode === 'exam' ? null : await this.splitBySeen(userId, pool);
 
       // Kapsamsız practice = KOÇ SEANSI (Doc 25 §5): karışım motoru reçete kurar.
       // Ders kapsamı ve seçili mevzuat = konular arasında dengeli tur; tek konu
@@ -312,18 +311,14 @@ export class QuizService {
       if (dto.mode === 'practice' && !acikKapsam) {
         // Koç turunun "yanlış turu" dilimi görülmüş sorulara muhtaç:
         // havuzu daraltmak reçeteyi bozar, yalnız yeterli taze varsa daraltılır.
-        const coachPool =
-          fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
+        const coachPool = fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
         chosen =
           dto.recipe === 'comeback'
             ? await this.pickComebackMix(userId, coachPool, count)
             : await this.pickCoachMix(userId, coachPool, count);
       } else if (dto.mode === 'practice' && (dto.courseId != null || dto.topicIds != null)) {
-        const balancePool =
-          fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
-        chosen = pickTopicBalanced(balancePool, count, (items) =>
-          this.shuffle(items),
-        );
+        const balancePool = fresh && fresh.unseen.length >= count ? fresh.unseen : pool;
+        chosen = pickTopicBalanced(balancePool, count, (items) => this.shuffle(items));
       } else if (fresh) {
         // Önce görülmemişler; yetmezse en ESKİ görülenlerle tamamlanır
         // (en son çözülen soru en son geri gelir).
@@ -478,8 +473,7 @@ export class QuizService {
     const pools = await Promise.all(
       sections.map(async (s) => {
         const courseIds = s.courses.map((c) => c.courseId);
-        if (courseIds.length === 0)
-          return { section: s, candidates: [] as CandidateQuestion[] };
+        if (courseIds.length === 0) return { section: s, candidates: [] as CandidateQuestion[] };
         const rows = await this.prisma.question.findMany({
           where: {
             deletedAt: null,
@@ -523,10 +517,7 @@ export class QuizService {
     );
     const chosenIds: { questionId: string; versionId: string }[] = [];
     for (const p of pools) {
-      const picked = pickSectionQuestions(
-        p.candidates,
-        quota.get(p.section.id) ?? 0,
-      );
+      const picked = pickSectionQuestions(p.candidates, quota.get(p.section.id) ?? 0);
       for (const id of picked) {
         const v = (p as { versionOf?: Map<string, string> }).versionOf?.get(id);
         if (v) chosenIds.push({ questionId: id, versionId: v });
@@ -551,8 +542,7 @@ export class QuizService {
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
 
-    const plannedDurationSeconds =
-      chosenIds.length * QuizService.EXAM_SECONDS_PER_QUESTION;
+    const plannedDurationSeconds = chosenIds.length * QuizService.EXAM_SECONDS_PER_QUESTION;
     const session = await this.prisma.quizSession.create({
       data: {
         userId: user.id,
@@ -632,13 +622,10 @@ export class QuizService {
     if (!yarim) return null;
 
     const planlanan =
-      yarim.plannedDurationSeconds ??
-      yarim.totalQuestions * QuizService.EXAM_SECONDS_PER_QUESTION;
+      yarim.plannedDurationSeconds ?? yarim.totalQuestions * QuizService.EXAM_SECONDS_PER_QUESTION;
     const gecen = Math.floor((Date.now() - yarim.startedAt.getTime()) / 1000);
     const kalan = planlanan - gecen;
-    const order = Array.isArray(yarim.questionOrder)
-      ? (yarim.questionOrder as string[])
-      : [];
+    const order = Array.isArray(yarim.questionOrder) ? (yarim.questionOrder as string[]) : [];
 
     if (kalan > 0 && order.length > 0) {
       if (yarim.totalQuestions !== count) return null;
@@ -657,9 +644,7 @@ export class QuizService {
     try {
       await this.completeSession(userId, yarim.id);
     } catch (e) {
-      this.logger.warn(
-        `Kişisel deneme oturumu kapatılamadı ${yarim.id}: ${(e as Error).message}`,
-      );
+      this.logger.warn(`Kişisel deneme oturumu kapatılamadı ${yarim.id}: ${(e as Error).message}`);
     }
     return null;
   }
@@ -812,7 +797,11 @@ export class QuizService {
       /** Süresi dolduğu için kapatılan önceki deneme — istemci haber verir. */
       expiredAttemptId,
       questions: sorular,
-      givenAnswers: [] as { questionId: string; selectedOptionId: string | null; isCorrect: boolean }[],
+      givenAnswers: [] as {
+        questionId: string;
+        selectedOptionId: string | null;
+        isCorrect: boolean;
+      }[],
     };
   }
 
@@ -1105,8 +1094,7 @@ export class QuizService {
     // anahtar SIZDIRILMAZ).
     const denemeModu = session.mode === 'deneme' || session.mode === 'exam';
     const givesFeedback =
-      session.mode !== 'exam' &&
-      !(session.mode === 'deneme' && !session.exam?.liveAnswerReveal);
+      session.mode !== 'exam' && !(session.mode === 'deneme' && !session.exam?.liveAnswerReveal);
     const question = version.question;
     const needsArticle =
       givesFeedback &&
@@ -1244,8 +1232,7 @@ export class QuizService {
     // engeller; eski/kirli veri de totalQuestions'ı aşamaz). questionOrder
     // null olan eski oturumlarda tüm cevaplar geçerli sayılır.
     const order = session.questionOrder;
-    const orderSet =
-      Array.isArray(order) && order.length > 0 ? new Set(order as string[]) : null;
+    const orderSet = Array.isArray(order) && order.length > 0 ? new Set(order as string[]) : null;
     const validAnswers = orderSet
       ? session.answers.filter((a) => orderSet.has(a.questionVersionId))
       : session.answers;
@@ -1254,8 +1241,7 @@ export class QuizService {
       session.totalQuestions,
     );
     const wrongCount = Math.min(
-      validAnswers.filter((a) => a.isCorrect === false && a.selectedOptionId != null)
-        .length,
+      validAnswers.filter((a) => a.isCorrect === false && a.selectedOptionId != null).length,
       session.totalQuestions - correctCount,
     );
     const blankCount = session.totalQuestions - correctCount - wrongCount;
@@ -1556,7 +1542,9 @@ export class QuizService {
     const limit = await this.freeDailyLimit(); // çoğunlukla bellek, 0 sorgu
 
     // TEK atomik sorgu: satır yoksa aç, limiti aşmadıysa artır; aşıldıysa satır dönmez.
-    const rows = await this.prisma.$queryRaw<{ questions_answered: number; total_answered: number }[]>`
+    const rows = await this.prisma.$queryRaw<
+      { questions_answered: number; total_answered: number }[]
+    >`
       INSERT INTO daily_usage (user_id, usage_date, questions_answered, total_answered, daily_limit)
       VALUES (${user.id}::uuid, ${today}::date, 1, 1, ${limit})
       ON CONFLICT (user_id, usage_date) DO UPDATE
@@ -1607,10 +1595,7 @@ export class QuizService {
    */
   private async splitBySeen<
     T extends { id: string; currentVersionId: string | null; topicId: string },
-  >(
-    userId: string,
-    pool: T[],
-  ): Promise<{ unseen: T[]; seenOldestFirst: T[] }> {
+  >(userId: string, pool: T[]): Promise<{ unseen: T[]; seenOldestFirst: T[] }> {
     const seen = await this.prisma.quizAnswer.groupBy({
       by: ['questionId'],
       where: { questionId: { in: pool.map((q) => q.id) }, session: { userId } },
@@ -1618,9 +1603,7 @@ export class QuizService {
     });
     if (seen.length === 0) return { unseen: pool, seenOldestFirst: [] };
 
-    const lastSeen = new Map(
-      seen.map((s) => [s.questionId, s._max.answeredAt?.getTime() ?? 0]),
-    );
+    const lastSeen = new Map(seen.map((s) => [s.questionId, s._max.answeredAt?.getTime() ?? 0]));
     const unseen: T[] = [];
     const seenItems: T[] = [];
     for (const q of pool) {
@@ -1692,7 +1675,11 @@ export class QuizService {
     // bloğuyla aynı tanım), en zayıf 5 konu.
     const weakTopicIds = new Set(
       enZayifKonular(
-        progress.map((p) => ({ topicId: p.topicId, solved: p.solvedCount, accuracy: Number(p.mastery) })),
+        progress.map((p) => ({
+          topicId: p.topicId,
+          solved: p.solvedCount,
+          accuracy: Number(p.mastery),
+        })),
         5,
       ).map((p) => p.topicId),
     );

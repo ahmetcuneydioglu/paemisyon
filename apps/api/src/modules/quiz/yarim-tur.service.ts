@@ -50,7 +50,8 @@ export class YarimTurService {
         this.logger.warn(`Yarım tur kapatılamadı (${id}): ${(e as Error).message}`);
       }
     }
-    if (kapanan > 0) this.logger.log(`Bayat yarım tur kapandı: ${kapanan} tur, ${cevap} cevap işlendi.`);
+    if (kapanan > 0)
+      this.logger.log(`Bayat yarım tur kapandı: ${kapanan} tur, ${cevap} cevap işlendi.`);
     return { kapanan, cevap };
   }
 }

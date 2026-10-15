@@ -8,11 +8,7 @@ import { GooglePlayVerifier } from './google-play-verifier.service';
 
 /** Abonelik/ödeme (Doc 15). Prisma + Auth global; guard'lar import'suz kullanılır. */
 @Module({
-  controllers: [
-    BillingController,
-    AppleNotificationsController,
-    GoogleNotificationsController,
-  ],
+  controllers: [BillingController, AppleNotificationsController, GoogleNotificationsController],
   providers: [BillingService, AppleVerifier, GooglePlayVerifier],
 })
 export class BillingModule {}

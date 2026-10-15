@@ -47,7 +47,10 @@ export async function turuTerkEt(
   const order = s.questionOrder;
   const orderSet = Array.isArray(order) && order.length > 0 ? new Set(order as string[]) : null;
   const gecerli = orderSet ? s.answers.filter((a) => orderSet.has(a.questionVersionId)) : s.answers;
-  const correctCount = Math.min(gecerli.filter((a) => a.isCorrect === true).length, s.totalQuestions);
+  const correctCount = Math.min(
+    gecerli.filter((a) => a.isCorrect === true).length,
+    s.totalQuestions,
+  );
   const wrongCount = Math.min(
     gecerli.filter((a) => a.isCorrect === false && a.selectedOptionId != null).length,
     s.totalQuestions - correctCount,

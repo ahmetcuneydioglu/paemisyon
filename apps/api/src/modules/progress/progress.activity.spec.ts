@@ -17,7 +17,11 @@ describe('ProgressService.touchActivity — aktiflik cevap anında (Doc 48 D3)',
     const { service, prisma } = setup(null);
     await service.touchActivity('u1', false, D('2026-10-14'));
     const arg = prisma.streak.upsert.mock.calls[0][0];
-    expect(arg.create).toMatchObject({ userId: 'u1', currentStreak: 1, lastActiveDate: D('2026-10-14') });
+    expect(arg.create).toMatchObject({
+      userId: 'u1',
+      currentStreak: 1,
+      lastActiveDate: D('2026-10-14'),
+    });
   });
 
   it('ertesi gün seri artar', async () => {

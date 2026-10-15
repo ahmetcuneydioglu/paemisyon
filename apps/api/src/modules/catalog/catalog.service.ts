@@ -54,8 +54,7 @@ export class CatalogService {
         ...m,
         questionCount: countOf.get(m.id) ?? 0,
         solvedCount: p?.solved ?? 0,
-        accuracy:
-          p && p.solved > 0 ? Math.round((p.correct / p.solved) * 100) : null,
+        accuracy: p && p.solved > 0 ? Math.round((p.correct / p.solved) * 100) : null,
         isPreferred: user?.preferredModuleId === m.id,
       };
     });
@@ -147,8 +146,7 @@ export class CatalogService {
         ...t,
         solvedCount: p?.solvedCount ?? 0,
         /** 0-100 = doğru/çözülen; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
-        mastery:
-          p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,
+        mastery: p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,
         /** Zayıf konu — tek eşik `common/zayif-konu.ts` (Doc 48: istemci kural bilmez). */
         weak: p != null && zayifMi(p.solvedCount, Number(p.mastery)),
         // Kanun/yönetmelik bayrağı SUNUCUDA (Doc 28 P1-8): istemci regex'i

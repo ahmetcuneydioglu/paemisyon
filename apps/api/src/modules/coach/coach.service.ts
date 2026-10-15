@@ -414,7 +414,11 @@ export class CoachService {
       // Yarım alıştırma/tekrar/günlük turları (görev kartı — Doc 48 §4). Deneme
       // ve arşiv sınavı kendi kuralıyla yaşar (süreli), burada yok.
       this.prisma.quizSession.findMany({
-        where: { userId: user.id, status: 'in_progress', mode: { in: ['practice', 'review', 'daily'] } },
+        where: {
+          userId: user.id,
+          status: 'in_progress',
+          mode: { in: ['practice', 'review', 'daily'] },
+        },
         orderBy: { startedAt: 'desc' },
         take: 3,
         select: {
@@ -668,10 +672,7 @@ export class CoachService {
       cikmisSinavlar: {
         kartAcik: cikmisKartAcik,
         cozulebilirSayisi: cikmisSinavlar.length,
-        toplamSoru: cikmisSinavlar.reduce(
-          (t, s) => t + (s.questionCount ?? s._count.questions),
-          0,
-        ),
+        toplamSoru: cikmisSinavlar.reduce((t, s) => t + (s.questionCount ?? s._count.questions), 0),
         cozulmemisEnYeni: (() => {
           const cozulen = new Set(cikmisCozumlerim.map((o) => o.archiveExamId));
           // Liste zaten yeniden eskiye sıralı; ilk çözülmemiş en yenisidir.

@@ -64,7 +64,12 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     showQuestionSource: jest.fn().mockResolvedValue(true),
   };
   const progress = { touchActivity: jest.fn().mockResolvedValue(undefined) };
-  const service = new QuizService(prisma as never, progress as never, {} as never, settings as never);
+  const service = new QuizService(
+    prisma as never,
+    progress as never,
+    {} as never,
+    settings as never,
+  );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
 
@@ -241,7 +246,9 @@ describe('QuizService.submitAnswer — günlük sayaç ve aktiflik', () => {
     await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
 
     expect(prisma.$queryRaw).toHaveBeenCalledTimes(1);
-    expect(sqlOf(prisma.$queryRaw)).toContain('questions_answered = daily_usage.questions_answered + 1');
+    expect(sqlOf(prisma.$queryRaw)).toContain(
+      'questions_answered = daily_usage.questions_answered + 1',
+    );
     expect(sqlOf(prisma.$queryRaw)).toContain('total_answered = daily_usage.total_answered + 1');
     expect(sqlOf(prisma.$queryRaw)).not.toContain('WHERE daily_usage.questions_answered <');
     expect(prisma.plan.findUnique).not.toHaveBeenCalled();
@@ -259,28 +266,35 @@ describe('QuizService.submitAnswer — günlük sayaç ve aktiflik', () => {
     expect(prisma.$executeRaw).not.toHaveBeenCalled();
   });
 
-  it.each(['exam', 'deneme'])('%s cevabı kotaya girmez, yalnız günün toplamına yazılır', async (mode) => {
-    const { service, prisma, selectedId } = setup();
-    prisma.quizSession.findFirst.mockResolvedValue({
-      status: 'in_progress',
-      mode,
-      startedAt: new Date(),
-      plannedDurationSeconds: null,
-      questionOrder: [VERSION_ID],
-      exam: null,
-    });
+  it.each(['exam', 'deneme'])(
+    '%s cevabı kotaya girmez, yalnız günün toplamına yazılır',
+    async (mode) => {
+      const { service, prisma, selectedId } = setup();
+      prisma.quizSession.findFirst.mockResolvedValue({
+        status: 'in_progress',
+        mode,
+        startedAt: new Date(),
+        plannedDurationSeconds: null,
+        questionOrder: [VERSION_ID],
+        exam: null,
+      });
 
-    await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
-    await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
+      await service.submitAnswer(premiumUser, SESSION, cevap(selectedId));
+      await service.submitAnswer(freeUser, SESSION, cevap(selectedId));
 
-    // Kota kapısı hiç çalışmaz (canlı denemede kesilme yok); yalnız toplam artar.
-    expect(prisma.plan.findUnique).not.toHaveBeenCalled();
-    expect(prisma.$queryRaw).toHaveBeenCalledTimes(2);
-    for (let i = 0; i < 2; i++) {
-      expect(sqlOf(prisma.$queryRaw, i)).toContain('SET total_answered = daily_usage.total_answered + 1');
-      expect(sqlOf(prisma.$queryRaw, i)).not.toContain('questions_answered = daily_usage.questions_answered + 1');
-    }
-  });
+      // Kota kapısı hiç çalışmaz (canlı denemede kesilme yok); yalnız toplam artar.
+      expect(prisma.plan.findUnique).not.toHaveBeenCalled();
+      expect(prisma.$queryRaw).toHaveBeenCalledTimes(2);
+      for (let i = 0; i < 2; i++) {
+        expect(sqlOf(prisma.$queryRaw, i)).toContain(
+          'SET total_answered = daily_usage.total_answered + 1',
+        );
+        expect(sqlOf(prisma.$queryRaw, i)).not.toContain(
+          'questions_answered = daily_usage.questions_answered + 1',
+        );
+      }
+    },
+  );
 
   it('ücretsiz kullanıcı limitli sayaçla sayılır (kota + toplam)', async () => {
     const { service, prisma, selectedId } = setup();
@@ -297,9 +311,9 @@ describe('QuizService.submitAnswer — günlük sayaç ve aktiflik', () => {
     const { service, prisma, progress, selectedId } = setup();
     prisma.$queryRaw.mockResolvedValue([]);
 
-    await expect(
-      service.submitAnswer(freeUser, SESSION, cevap(selectedId)),
-    ).rejects.toMatchObject({ response: { code: 'DAILY_LIMIT_REACHED' } });
+    await expect(service.submitAnswer(freeUser, SESSION, cevap(selectedId))).rejects.toMatchObject({
+      response: { code: 'DAILY_LIMIT_REACHED' },
+    });
     expect(prisma.quizAnswer.upsert).not.toHaveBeenCalled();
     expect(progress.touchActivity).not.toHaveBeenCalled();
   });
@@ -348,9 +362,11 @@ describe('QuizService.splitBySeen', () => {
   function service(seen: { questionId: string; at: string }[]) {
     const prisma = {
       quizAnswer: {
-        groupBy: jest.fn().mockResolvedValue(
-          seen.map((s) => ({ questionId: s.questionId, _max: { answeredAt: new Date(s.at) } })),
-        ),
+        groupBy: jest
+          .fn()
+          .mockResolvedValue(
+            seen.map((s) => ({ questionId: s.questionId, _max: { answeredAt: new Date(s.at) } })),
+          ),
       },
     };
     return {
@@ -417,18 +433,20 @@ function havuz(n: number) {
   }));
 }
 
-function setupPersonal(opts: {
-  yarim?: {
-    id: string;
-    startedAt: Date;
-    totalQuestions: number;
-    plannedDurationSeconds: number | null;
-    questionOrder: string[];
-    answers: { questionId: string; selectedOptionId: string | null; isCorrect: boolean }[];
-  } | null;
-  bugunkuSayi?: number;
-  planLimit?: number | null;
-} = {}) {
+function setupPersonal(
+  opts: {
+    yarim?: {
+      id: string;
+      startedAt: Date;
+      totalQuestions: number;
+      plannedDurationSeconds: number | null;
+      questionOrder: string[];
+      answers: { questionId: string; selectedOptionId: string | null; isCorrect: boolean }[];
+    } | null;
+    bugunkuSayi?: number;
+    planLimit?: number | null;
+  } = {},
+) {
   const rows = havuz(150);
   const prisma = {
     user: { findUnique: jest.fn().mockResolvedValue({ preferredModuleId: MODULE_ID }) },
@@ -465,9 +483,11 @@ function setupPersonal(opts: {
     quizSession: {
       findFirst: jest.fn().mockResolvedValue(opts.yarim ?? null),
       count: jest.fn().mockResolvedValue(opts.bugunkuSayi ?? 0),
-      create: jest.fn().mockImplementation(({ data }: { data: Record<string, unknown> }) =>
-        Promise.resolve({ id: 'yeni-oturum', mode: data.mode, ...data }),
-      ),
+      create: jest
+        .fn()
+        .mockImplementation(({ data }: { data: Record<string, unknown> }) =>
+          Promise.resolve({ id: 'yeni-oturum', mode: data.mode, ...data }),
+        ),
     },
   };
   const service = new QuizService(
@@ -746,16 +766,30 @@ describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
       answers: [
         { questionId: 'q1', questionVersionId: 'v-a', isCorrect: true, selectedOptionId: 'o1' },
         { questionId: 'q2', questionVersionId: 'v-b', isCorrect: false, selectedOptionId: 'o2' },
-        { questionId: 'qx', questionVersionId: 'baska-tur', isCorrect: true, selectedOptionId: 'o3' },
+        {
+          questionId: 'qx',
+          questionVersionId: 'baska-tur',
+          isCorrect: true,
+          selectedOptionId: 'o3',
+        },
       ],
     });
 
-    await service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_B], questionCount: 4 });
+    await service.startSession(premiumUser, {
+      mode: 'practice',
+      topicIds: [KONU_A, KONU_B],
+      questionCount: 4,
+    });
 
     expect(prisma.quizSession.updateMany).toHaveBeenCalledWith(
       expect.objectContaining({
         where: { id: 'yarim', status: 'in_progress' },
-        data: expect.objectContaining({ status: 'abandoned', correctCount: 1, wrongCount: 1, blankCount: 8 }),
+        data: expect.objectContaining({
+          status: 'abandoned',
+          correctCount: 1,
+          wrongCount: 1,
+          blankCount: 8,
+        }),
       }),
     );
     // Yalnız turun soru setindeki cevaplar; tur sayısına ve aktifliğe girmez.
@@ -775,12 +809,23 @@ describe('QuizService.startSession — seçili mevzuat (topicIds)', () => {
     const { service, prisma, progress } = setupSecili();
     prisma.quizSession.findMany.mockResolvedValue([{ id: 'yarim' }]);
     prisma.quizSession.findUnique.mockResolvedValue({
-      id: 'yarim', userId: premiumUser.id, status: 'in_progress', topicId: null, totalQuestions: 5,
-      questionOrder: null, answers: [{ questionId: 'q1', questionVersionId: 'v', isCorrect: true, selectedOptionId: 'o' }],
+      id: 'yarim',
+      userId: premiumUser.id,
+      status: 'in_progress',
+      topicId: null,
+      totalQuestions: 5,
+      questionOrder: null,
+      answers: [
+        { questionId: 'q1', questionVersionId: 'v', isCorrect: true, selectedOptionId: 'o' },
+      ],
     });
     prisma.quizSession.updateMany.mockResolvedValue({ count: 0 });
 
-    await service.startSession(premiumUser, { mode: 'practice', topicIds: [KONU_A, KONU_B], questionCount: 4 });
+    await service.startSession(premiumUser, {
+      mode: 'practice',
+      topicIds: [KONU_A, KONU_B],
+      questionCount: 4,
+    });
     expect(progress.recordSessionProgress).not.toHaveBeenCalled();
   });
 
@@ -829,8 +874,17 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
     const prisma = {
       quizSession: {
         findFirst: jest.fn().mockResolvedValue({
-          id: 's1', mode: 'practice', status: 'abandoned', totalQuestions: 10, correctCount: 3,
-          wrongCount: 1, blankCount: 6, score: null, durationSeconds: null, plannedDurationSeconds: null, answers: [],
+          id: 's1',
+          mode: 'practice',
+          status: 'abandoned',
+          totalQuestions: 10,
+          correctCount: 3,
+          wrongCount: 1,
+          blankCount: 6,
+          score: null,
+          durationSeconds: null,
+          plannedDurationSeconds: null,
+          answers: [],
         }),
         update: jest.fn(),
       },

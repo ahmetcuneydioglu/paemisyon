@@ -149,8 +149,9 @@ export class AdminPlansService {
     ]);
     return {
       yeniLimit,
-      mevcutLimit: (await this.prisma.plan.findUnique({ where: { key: FREE_KEY } }))
-        ?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK,
+      mevcutLimit:
+        (await this.prisma.plan.findUnique({ where: { key: FREE_KEY } }))?.dailyQuestionLimit ??
+        FREE_DAILY_LIMIT_FALLBACK,
       bugunAktifKullanici: bugunAktif,
       /** Yeni limitle BUGÜN anında duvara çarpacak kullanıcı sayısı. */
       aninaDuvaraCarpacak: etkilenen,

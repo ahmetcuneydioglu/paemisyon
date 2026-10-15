@@ -34,6 +34,8 @@ describe('uygulama günü — TR 04.00 (Doc 48 D2)', () => {
     expect(haftaBasi(tr('2026-10-14T10:00:00')).toISOString().slice(0, 10)).toBe('2026-10-12');
     expect(haftaBasi(tr('2026-10-12T03:30:00')).toISOString().slice(0, 10)).toBe('2026-10-05');
     expect(haftaBasi(tr('2026-10-12T04:30:00')).toISOString().slice(0, 10)).toBe('2026-10-12');
-    expect(haftaBaslangici(tr('2026-10-18T23:00:00')).toISOString()).toBe('2026-10-12T01:00:00.000Z');
+    expect(haftaBaslangici(tr('2026-10-18T23:00:00')).toISOString()).toBe(
+      '2026-10-12T01:00:00.000Z',
+    );
   });
 });

@@ -32,8 +32,7 @@ interface ServiceAccount {
 @Injectable()
 export class GooglePlayVerifier {
   private readonly logger = new Logger(GooglePlayVerifier.name);
-  private readonly packageName =
-    process.env.GOOGLE_PLAY_PACKAGE_NAME || 'com.paemisyon.paemisyon';
+  private readonly packageName = process.env.GOOGLE_PLAY_PACKAGE_NAME || 'com.paemisyon.paemisyon';
   private account: ServiceAccount | null = null;
   private token: { value: string; expiresAt: number } | null = null;
 
@@ -122,7 +121,10 @@ export class GooglePlayVerifier {
     const items = (d.lineItems as { productId?: string; expiryTime?: string }[]) ?? [];
     // Birden çok satır olabilir (yükseltme anı); en GEÇ biten geçerlidir.
     const latest = items
-      .map((i) => ({ productId: i.productId ?? '', exp: i.expiryTime ? new Date(i.expiryTime) : null }))
+      .map((i) => ({
+        productId: i.productId ?? '',
+        exp: i.expiryTime ? new Date(i.expiryTime) : null,
+      }))
       .sort((a, b) => (b.exp?.getTime() ?? 0) - (a.exp?.getTime() ?? 0))[0];
 
     // İptal edilmiş abonelik dönem sonuna kadar GEÇERLİDİR: erişim süre

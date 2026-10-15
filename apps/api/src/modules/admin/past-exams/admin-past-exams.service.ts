@@ -31,9 +31,7 @@ export function cozulebilirlikHesapla(s: {
   ).length;
   const engeller: string[] = [];
   if (s.kind !== 'resmi') {
-    engeller.push(
-      'Tür "konu analizi" — bu dönemin soruları yok, yalnız dağılım yayımlanır.',
-    );
+    engeller.push('Tür "konu analizi" — bu dönemin soruları yok, yalnız dağılım yayımlanır.');
   }
   if (s.status !== 'published') engeller.push('Dönem yayına alınmamış.');
   if (yayindaSoru === 0) engeller.push('Yayına alınmış (onaylanmış) sorusu yok.');
@@ -71,7 +69,9 @@ export class AdminPastExamsService {
           select: {
             publicly: true,
             cancelled: true,
-            question: { select: { currentVersion: { select: { status: true, explanation: true } } } },
+            question: {
+              select: { currentVersion: { select: { status: true, explanation: true } } },
+            },
           },
         },
       },
@@ -93,7 +93,9 @@ export class AdminPastExamsService {
       cancelledCount: s.questions.filter((q) => q.cancelled).length,
       /** Public sayfaya çıkmaya HAZIR soru: yayında ve açıklaması var. */
       readyCount: s.questions.filter(
-        (q) => q.question.currentVersion?.status === 'published' && q.question.currentVersion?.explanation,
+        (q) =>
+          q.question.currentVersion?.status === 'published' &&
+          q.question.currentVersion?.explanation,
       ).length,
       /** Public işaretli ama henüz yayına girmemiş soru — sayfada görünmez. */
       publicNotLive: s.questions.filter(
@@ -205,9 +207,7 @@ export class AdminPastExamsService {
         q.question.currentVersion?.status === 'published',
     );
     if (set.length === 0) {
-      throw new BadRequestException(
-        'Sette yayına alınmış soru yok — önce soruları onayla.',
-      );
+      throw new BadRequestException('Sette yayına alınmış soru yok — önce soruları onayla.');
     }
     const dakika = Math.round((set.length * SANIYE_SORU) / 60);
 
@@ -264,7 +264,10 @@ export class AdminPastExamsService {
       isPremium?: boolean;
     },
   ) {
-    const mevcut = await this.prisma.pastExam.findFirst({ where: { id, deletedAt: null }, select: { slug: true } });
+    const mevcut = await this.prisma.pastExam.findFirst({
+      where: { id, deletedAt: null },
+      select: { slug: true },
+    });
     if (!mevcut) throw new NotFoundException('Çıkmış sınav bulunamadı.');
     const sinav = await this.prisma.pastExam.update({
       where: { id },

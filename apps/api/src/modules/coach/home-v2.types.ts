@@ -89,13 +89,7 @@ export interface TodayTaskAction {
 }
 
 export type TodayTaskKind =
-  | 'exam'
-  | 'resume'
-  | 'first'
-  | 'comeback'
-  | 'weekly_risk'
-  | 'start'
-  | 'done';
+  'exam' | 'resume' | 'first' | 'comeback' | 'weekly_risk' | 'start' | 'done';
 
 /** Görev kartının altındaki EN ÇOK 1 ikincil satır (D4). */
 export interface TodayTaskSecondary {

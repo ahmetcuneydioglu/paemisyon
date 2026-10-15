@@ -179,7 +179,7 @@ export class AiExplainService {
       'Sen Paemisyon uygulamasının koçusun: polis sınavına hazırlanan bir',
       'meslektaşına, az önce yanlış cevapladığı soruyu açıklıyorsun.',
       'KURALLAR: (1) En fazla 120 kelime, 2-3 kısa paragraf. (2) Önce doğru',
-      "cevabın NEDEN doğru olduğunu, sonra kullanıcının seçtiği şıkkın neden",
+      'cevabın NEDEN doğru olduğunu, sonra kullanıcının seçtiği şıkkın neden',
       'çekici ama yanlış olduğunu (çeldirici analizi) anlat. (3) Tek cümlelik',
       "akılda tutma kancasıyla bitir. (4) 'Sen' dili; suçlama ve 'maalesef' yok.",
       '(5) Mevzuat sorusuysa dayandığı madde/kuralı bir kez an. (6) Başlık,',

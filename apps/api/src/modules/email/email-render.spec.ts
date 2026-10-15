@@ -43,7 +43,8 @@ describe('e-posta şablonu', () => {
   it('tıklama ölçümü: kendi bağlantılarımız yönlendirmeden geçer, çıkış bağlantısı geçmez', () => {
     const t = renderCampaignHtml({
       subject: 'S',
-      bodyMarkdown: '[PAEM 10](https://www.paemisyon.com/paem-cikmis-sorular/paem-10-2026?a=1&b=2) [dış](https://example.com/x)',
+      bodyMarkdown:
+        '[PAEM 10](https://www.paemisyon.com/paem-cikmis-sorular/paem-10-2026?a=1&b=2) [dış](https://example.com/x)',
       siteUrl: 'https://paemisyon.com',
       fromName: 'Paemisyon',
       clickBaseUrl: 'https://api.paemisyon.com/api/v1/email/c',

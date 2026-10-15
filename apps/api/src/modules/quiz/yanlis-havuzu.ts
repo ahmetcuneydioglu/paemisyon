@@ -11,7 +11,10 @@ import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
  */
 
 /** Ücretsiz plan yalnız son 7 günün yanlışlarını tekrar eder (Doc 24 §11). */
-export function yanlisTuruBaslangici(isPremium: boolean, now: number = Date.now()): Date | undefined {
+export function yanlisTuruBaslangici(
+  isPremium: boolean,
+  now: number = Date.now(),
+): Date | undefined {
   return isPremium ? undefined : new Date(now - 7 * 86_400_000);
 }
 

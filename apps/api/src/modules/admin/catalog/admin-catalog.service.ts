@@ -54,7 +54,10 @@ export class AdminCatalogService {
               include: {
                 course: {
                   include: {
-                    topics: { ...topicSelect, include: { ...topicSelect.include, parent: { select: { name: true } } } },
+                    topics: {
+                      ...topicSelect,
+                      include: { ...topicSelect.include, parent: { select: { name: true } } },
+                    },
                   },
                 },
               },
@@ -229,7 +232,11 @@ export class AdminCatalogService {
     await this.ensure('section', id);
     const section = await this.prisma.examSection.update({
       where: { id },
-      data: { name: dto.name, weightPercent: dto.weightPercent ?? 0, sortOrder: dto.sortOrder ?? 0 },
+      data: {
+        name: dto.name,
+        weightPercent: dto.weightPercent ?? 0,
+        sortOrder: dto.sortOrder ?? 0,
+      },
     });
     await this.audit.log(actor, 'section.update', 'exam_section', id, { name: dto.name });
     return section;
@@ -251,7 +258,9 @@ export class AdminCatalogService {
       update: { sortOrder: dto.sortOrder ?? 0 },
       create: { sectionId, courseId: dto.courseId, sortOrder: dto.sortOrder ?? 0 },
     });
-    await this.audit.log(actor, 'section.attach_course', 'exam_section', sectionId, { courseId: dto.courseId });
+    await this.audit.log(actor, 'section.attach_course', 'exam_section', sectionId, {
+      courseId: dto.courseId,
+    });
     return { attached: true };
   }
 

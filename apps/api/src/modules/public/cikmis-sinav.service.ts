@@ -182,7 +182,10 @@ export class CikmisSinavService {
                     stem: true,
                     explanation: true,
                     mediaUrl: true,
-                    options: { orderBy: { sortOrder: 'asc' }, select: { label: true, text: true, isCorrect: true } },
+                    options: {
+                      orderBy: { sortOrder: 'asc' },
+                      select: { label: true, text: true, isCorrect: true },
+                    },
                     legalReferences: { select: { citation: true, url: true } },
                   },
                 },
@@ -272,9 +275,7 @@ export class CikmisSinavService {
     if (!v || v.status !== 'published') {
       throw new NotFoundException('Soru yayında değil.');
     }
-    const secilen = v.options.find(
-      (o) => o.label.toUpperCase() === dto.harf.toUpperCase(),
-    );
+    const secilen = v.options.find((o) => o.label.toUpperCase() === dto.harf.toUpperCase());
     if (!secilen) throw new NotFoundException('Şık bu soruda yok.');
     if (secilen.isCorrect) return { kaydedildi: false }; // doğruysa defter dolmaz
 
@@ -324,7 +325,9 @@ export class CikmisSinavService {
       ozet: s.summary,
       soruSayisi: s.questionCount ?? (s.questions.length || null),
       acikSoru: s.questions.filter((q) => q.publicly).length,
-      dersDagilimi: [...dagilim].sort((a, b) => b[1] - a[1]).map(([ders, adet]) => ({ ders, adet })),
+      dersDagilimi: [...dagilim]
+        .sort((a, b) => b[1] - a[1])
+        .map(([ders, adet]) => ({ ders, adet })),
     };
   }
 }

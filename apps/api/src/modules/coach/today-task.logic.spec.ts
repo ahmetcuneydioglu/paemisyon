@@ -5,7 +5,15 @@ const NOW = new Date('2026-10-14T03:40:00.000Z'); // 06:40 TR, Çarşamba
 const KOC: DailyFocusView = { kind: 'coach', courseId: null, topicId: null, label: null };
 const hazirlik = (over: Partial<Readiness> = {}): Readiness => ({
   courses: [],
-  weakest: [{ topicId: 't1', name: 'Temel Haklar ve Ödevler', courseName: 'Anayasa Hukuku', accuracy: 0.38, solved: 26 }],
+  weakest: [
+    {
+      topicId: 't1',
+      name: 'Temel Haklar ve Ödevler',
+      courseName: 'Anayasa Hukuku',
+      accuracy: 0.38,
+      solved: 26,
+    },
+  ],
   unresolvedWrongCount: 0,
   ...over,
 });
@@ -41,7 +49,13 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
   it('S1 normal: 10 soruluk koç turu, gerekçe en zayıf konudan, etiket = davranış', () => {
     const t = computeTodayTask(girdi());
     expect(t.kind).toBe('start');
-    expect(t.action).toEqual({ type: 'start_session', label: 'Başla · 10 soru', count: 10, recipe: 'coach', source: 'home_task' });
+    expect(t.action).toEqual({
+      type: 'start_session',
+      label: 'Başla · 10 soru',
+      count: 10,
+      recipe: 'coach',
+      source: 'home_task',
+    });
     expect(t.reason).toBe('Ağırlık: Temel Haklar ve Ödevler (%38 doğru).');
     expect(t.progress).toEqual({ label: 'Bugün 0/20 soru', answered: 0, total: 20 });
   });
@@ -54,37 +68,57 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
   it('S2 taze yarım tur görev kartının kendisi; günün halkası gizli, çıkış bağlantısı var', () => {
     const t = computeTodayTask(girdi({ activeSession: tur() }));
     expect(t.kind).toBe('resume');
-    expect(t.action).toMatchObject({ type: 'resume_session', label: 'Devam et · 6 soru', sessionId: 's1' });
+    expect(t.action).toMatchObject({
+      type: 'resume_session',
+      label: 'Devam et · 6 soru',
+      sessionId: 's1',
+    });
     expect(t.progress).toEqual({ label: '4/10 soru', answered: 4, total: 10 });
     expect(t.finishSessionId).toBe('s1');
     expect(t.secondary).toBeNull();
   });
 
   it('yarım turun zamanı uygulama gününe göre: bugünse saat, önceki günse "dün"', () => {
-    const bugun = computeTodayTask(girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-14T03:14:00Z') }) }));
+    const bugun = computeTodayTask(
+      girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-14T03:14:00Z') }) }),
+    );
     expect(bugun.reason).toBe('Koç turu · son cevap 06:14');
     // 13 Eki 22:10 TR — önceki uygulama günü (24 saatten yeni, hâlâ taze).
-    const dun = computeTodayTask(girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-13T19:10:00Z') }) }));
+    const dun = computeTodayTask(
+      girdi({ activeSession: tur({ lastActivityAt: new Date('2026-10-13T19:10:00Z') }) }),
+    );
     expect(dun.kind).toBe('resume');
     expect(dun.reason).toBe('Koç turu · son cevap dün 22:10');
   });
 
   it('hiç cevaplanmamış taze tur "yarım" değil "hazır": aynı seti başlatır', () => {
-    const t = computeTodayTask(girdi({ activeSession: tur({ answered: 0, scopeName: 'Polis Mevzuatı' }) }));
+    const t = computeTodayTask(
+      girdi({ activeSession: tur({ answered: 0, scopeName: 'Polis Mevzuatı' }) }),
+    );
     expect(t.title).toBe('Turun hazır');
-    expect(t.action).toMatchObject({ type: 'resume_session', label: 'Başla · 10 soru', sessionId: 's1' });
+    expect(t.action).toMatchObject({
+      type: 'resume_session',
+      label: 'Başla · 10 soru',
+      sessionId: 's1',
+    });
     expect(t.progress).toBeNull();
     expect(t.finishSessionId).toBeNull();
   });
 
   it('cevapsız eski tur ikincil satır olmaz; yanlışlar görünür', () => {
     const bos = tur({ answered: 0, lastActivityAt: new Date(NOW.getTime() - 2 * 86_400_000) });
-    const t = computeTodayTask(girdi({ activeSession: bos, readiness: hazirlik({ unresolvedWrongCount: 8 }) }));
+    const t = computeTodayTask(
+      girdi({ activeSession: bos, readiness: hazirlik({ unresolvedWrongCount: 8 }) }),
+    );
     expect(t.secondary?.kind).toBe('wrongs');
   });
 
   it('eski yarım tur (1–7 gün) görevi işgal etmez, ikincil satır olur', () => {
-    const eski = tur({ lastActivityAt: new Date(NOW.getTime() - 3 * 86_400_000), answered: 1, total: 20 });
+    const eski = tur({
+      lastActivityAt: new Date(NOW.getTime() - 3 * 86_400_000),
+      answered: 1,
+      total: 20,
+    });
     const t = computeTodayTask(girdi({ activeSession: eski }));
     expect(t.kind).toBe('start');
     expect(t.secondary).toMatchObject({
@@ -101,7 +135,9 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
   });
 
   it('S4 ilk gün: 20 değil 10 soru, ikincil satır yok', () => {
-    const t = computeTodayTask(girdi({ totalSolved: 0, readiness: hazirlik({ weakest: [], unresolvedWrongCount: 3 }) }));
+    const t = computeTodayTask(
+      girdi({ totalSolved: 0, readiness: hazirlik({ weakest: [], unresolvedWrongCount: 3 }) }),
+    );
     expect(t.kind).toBe('first');
     expect(t.action.count).toBe(10);
     expect(t.secondary).toBeNull();
@@ -138,7 +174,11 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
     // Yanlış odağı: sayı mevcut yanlışla sınırlı; yanlış kalmadıysa güçlü konu reçetesi.
     const yanlis: DailyFocusView = { kind: 'wrongs', courseId: null, topicId: null, label: null };
     const y = computeTodayTask(
-      girdi({ daysSinceLastActivity: 10, focus: yanlis, readiness: hazirlik({ unresolvedWrongCount: 3 }) }),
+      girdi({
+        daysSinceLastActivity: 10,
+        focus: yanlis,
+        readiness: hazirlik({ unresolvedWrongCount: 3 }),
+      }),
     );
     expect(y.action).toMatchObject({ label: 'Başla · 3 yanlış', count: 3, focus: yanlis });
     const bos = computeTodayTask(girdi({ daysSinceLastActivity: 10, focus: yanlis }));
@@ -153,7 +193,9 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
 
   it('haftalık risk: akşam + bugün 0 + bugün kaçarsa hedef tutmaz', () => {
     // Cumartesi (2 gün kaldı), 3/5 aktif → 2 eksik ≥ 2 kalan: risk.
-    const t = computeTodayTask(girdi({ trHour: 20, weekly: { activeDays: 3, goalDays: 5 }, daysLeftInWeek: 2 }));
+    const t = computeTodayTask(
+      girdi({ trHour: 20, weekly: { activeDays: 3, goalDays: 5 }, daysLeftInWeek: 2 }),
+    );
     expect(t.kind).toBe('weekly_risk');
     expect(t.title).toBe('Bu haftanın 4. günü için');
     expect(t.action).toMatchObject({ label: 'Başla · 5 soru', count: 5 });
@@ -177,7 +219,16 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
     const t = computeTodayTask(
       girdi({
         activeSession: tur(),
-        exams: { live: { id: 'e1', title: 'Ekim Denemesi', endAt: NOW, attempted: false, inProgress: true }, todayUpcoming: null },
+        exams: {
+          live: {
+            id: 'e1',
+            title: 'Ekim Denemesi',
+            endAt: NOW,
+            attempted: false,
+            inProgress: true,
+          },
+          todayUpcoming: null,
+        },
       }),
     );
     expect(t.kind).toBe('exam');
@@ -186,15 +237,32 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
 
   it('bugün deneme var: ikincil satır kısa ısınma', () => {
     const t = computeTodayTask(
-      girdi({ exams: { live: null, todayUpcoming: { id: 'e2', title: 'Ekim Denemesi', startAt: new Date('2026-10-14T07:00:00Z') } } }),
+      girdi({
+        exams: {
+          live: null,
+          todayUpcoming: {
+            id: 'e2',
+            title: 'Ekim Denemesi',
+            startAt: new Date('2026-10-14T07:00:00Z'),
+          },
+        },
+      }),
     );
     expect(t.kind).toBe('exam');
     expect(t.title).toBe('Deneme bugün 10:00');
-    expect(t.secondary).toMatchObject({ kind: 'warmup', action: { count: 5, source: 'home_suggestion' } });
+    expect(t.secondary).toMatchObject({
+      kind: 'warmup',
+      action: { count: 5, source: 'home_suggestion' },
+    });
   });
 
   it('odak etikete ve eyleme yansır (Doc 25 §5)', () => {
-    const focus: DailyFocusView = { kind: 'topic', courseId: 'c1', topicId: 't9', label: 'Yürütme' };
+    const focus: DailyFocusView = {
+      kind: 'topic',
+      courseId: 'c1',
+      topicId: 't9',
+      label: 'Yürütme',
+    };
     const t = computeTodayTask(girdi({ focus }));
     expect(t.action).toMatchObject({ label: 'Başla · 10 soru · Yürütme', focus });
     expect(t.reason).toBe('Odak: Yürütme. Soruları koç seçiyor.');
@@ -202,20 +270,30 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
 
   it('yanlış odağı: yanlış sayısı kadar (≤20); yanlış kalmadıysa koça döner ve söyler', () => {
     const wrongs: DailyFocusView = { kind: 'wrongs', courseId: null, topicId: null, label: null };
-    const t = computeTodayTask(girdi({ focus: wrongs, readiness: hazirlik({ unresolvedWrongCount: 4 }) }));
+    const t = computeTodayTask(
+      girdi({ focus: wrongs, readiness: hazirlik({ unresolvedWrongCount: 4 }) }),
+    );
     expect(t.title).toBe('Yanlış turu');
     expect(t.action).toMatchObject({ label: 'Başla · 4 yanlış', count: 4, focus: wrongs });
-    const bos = computeTodayTask(girdi({ focus: wrongs, readiness: hazirlik({ unresolvedWrongCount: 0 }) }));
+    const bos = computeTodayTask(
+      girdi({ focus: wrongs, readiness: hazirlik({ unresolvedWrongCount: 0 }) }),
+    );
     expect(bos.reason).toBe('Çözülmemiş yanlışın kalmadı — koç karışık tur kurdu.');
     expect(bos.action.focus).toBeUndefined();
   });
 
   it('ikincil satır en çok 1: eski tur yanlışlardan önce gelir', () => {
     const eski = tur({ lastActivityAt: new Date(NOW.getTime() - 2 * 86_400_000) });
-    const t = computeTodayTask(girdi({ activeSession: eski, readiness: hazirlik({ unresolvedWrongCount: 9 }) }));
+    const t = computeTodayTask(
+      girdi({ activeSession: eski, readiness: hazirlik({ unresolvedWrongCount: 9 }) }),
+    );
     expect(t.secondary?.kind).toBe('stale_session');
     const t2 = computeTodayTask(girdi({ readiness: hazirlik({ unresolvedWrongCount: 9 }) }));
-    expect(t2.secondary).toMatchObject({ kind: 'wrongs', title: '9 çözülmemiş yanlış', subtitle: 'Yaklaşık 3 dakika' });
+    expect(t2.secondary).toMatchObject({
+      kind: 'wrongs',
+      title: '9 çözülmemiş yanlış',
+      subtitle: 'Yaklaşık 3 dakika',
+    });
   });
 
   it('sınav moduna (≤30 gün) gerekçe pekiştirmeyi söyler', () => {

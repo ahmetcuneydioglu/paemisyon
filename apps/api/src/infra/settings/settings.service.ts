@@ -55,10 +55,7 @@ export class SettingsService {
 
   /** Çıkmış sınav keşif kartı açık mı? Varsayılan KAPALI (mağaza sürümü şartı). */
   async coachCikmisSinavKarti(): Promise<boolean> {
-    return this.getBool(
-      SETTING_KEYS.coachCikmisSinavKarti,
-      COACH_CIKMIS_SINAV_KARTI_DEFAULT,
-    );
+    return this.getBool(SETTING_KEYS.coachCikmisSinavKarti, COACH_CIKMIS_SINAV_KARTI_DEFAULT);
   }
 
   /** Mobil yeni anasayfa herkese açık mı? Varsayılan KAPALI (admin yine görür). */
