@@ -90,7 +90,7 @@ export class AppleVerifier {
     const top = chain[chain.length - 1];
     const topIsRoot = top.raw.equals(this.rootCert.raw);
     if (!topIsRoot && !top.checkIssued(this.rootCert)) {
-      throw new UnauthorizedException('Zincir Apple Root CA G3\'e ulaşmıyor.');
+      throw new UnauthorizedException("Zincir Apple Root CA G3'e ulaşmıyor.");
     }
 
     // Geçerlilik tarihleri.
@@ -147,9 +147,7 @@ export class AppleVerifier {
     return {
       notificationType: String(payload.notificationType ?? ''),
       subtype: payload.subtype ? String(payload.subtype) : null,
-      signedTransactionInfo: data.signedTransactionInfo
-        ? String(data.signedTransactionInfo)
-        : null,
+      signedTransactionInfo: data.signedTransactionInfo ? String(data.signedTransactionInfo) : null,
     };
   }
 }

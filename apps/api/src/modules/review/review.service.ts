@@ -11,7 +11,11 @@ export class ReviewService {
     // İptal edilmiş soru defterde durmaz: kurumun geçersiz saydığı soruyu
     // "tekrar et" diye önümüze koymak yanlışı kullanıcıya mal etmek olur.
     const rows = await this.prisma.wrongAnswer.findMany({
-      where: { userId, resolvedAt: null, questionId: { notIn: await iptalSoruIdleri(this.prisma) } },
+      where: {
+        userId,
+        resolvedAt: null,
+        questionId: { notIn: await iptalSoruIdleri(this.prisma) },
+      },
       orderBy: { lastWrongAt: 'desc' },
       take: 50,
     });
@@ -54,7 +58,8 @@ export class ReviewService {
 
   /** Soru id'lerinden kök metin + konu adı (tek sorgu). */
   private async stems(ids: string[]) {
-    if (ids.length === 0) return new Map<string, { stem: string | null; topicName: string | null }>();
+    if (ids.length === 0)
+      return new Map<string, { stem: string | null; topicName: string | null }>();
     const questions = await this.prisma.question.findMany({
       where: { id: { in: ids } },
       select: {

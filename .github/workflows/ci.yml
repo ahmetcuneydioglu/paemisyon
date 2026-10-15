@@ -8,6 +8,8 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Elle tetikleme: ilk kurulumda ve bir koşuyu yinelemek için.
+  workflow_dispatch:
 
 concurrency:
   group: ci-${{ github.ref }}

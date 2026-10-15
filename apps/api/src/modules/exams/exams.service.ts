@@ -120,9 +120,10 @@ export class ExamsService {
       archiveOpenAfterEnd: e.archiveOpenAfterEnd,
       state: this.stateOf(e, now),
       participantCount: statOf.get(e.id)?._count._all ?? 0,
-      avgScore: statOf.get(e.id)?._avg.score != null
-        ? Math.round(Number(statOf.get(e.id)!._avg.score) * 100) / 100
-        : null,
+      avgScore:
+        statOf.get(e.id)?._avg.score != null
+          ? Math.round(Number(statOf.get(e.id)!._avg.score) * 100) / 100
+          : null,
       myAttempt: mineOf.get(e.id) ?? null,
       /** Arşivde çözdüysem son sonucum — "Arşiv sonucum" girişi bunun üstünden. */
       myArchiveAttempt: arsivOf.get(e.id)
@@ -192,9 +193,7 @@ export class ExamsService {
       }
       throw new ConflictException({
         code: existing ? 'EXAM_ALREADY_TAKEN' : 'EXAM_ENDED',
-        message: existing
-          ? 'Bu sınava katıldın — sonucuna bakabilirsin.'
-          : 'Sınav süresi doldu.',
+        message: existing ? 'Bu sınava katıldın — sonucuna bakabilirsin.' : 'Sınav süresi doldu.',
         details: existing ? { attemptId: existing.id } : undefined,
       });
     }
@@ -326,14 +325,26 @@ export class ExamsService {
     );
     const byTopic = new Map<
       string,
-      { topicId: string; topicName: string; correct: number; wrong: number; blank: number; total: number }
+      {
+        topicId: string;
+        topicName: string;
+        correct: number;
+        wrong: number;
+        blank: number;
+        total: number;
+      }
     >();
     for (const q of review) {
       const topic = topicOf.get(q.questionId);
       if (!topic) continue;
-      const b =
-        byTopic.get(topic.id) ??
-        { topicId: topic.id, topicName: topic.name, correct: 0, wrong: 0, blank: 0, total: 0 };
+      const b = byTopic.get(topic.id) ?? {
+        topicId: topic.id,
+        topicName: topic.name,
+        correct: 0,
+        wrong: 0,
+        blank: 0,
+        total: 0,
+      };
       const a = answerOf.get(q.questionId);
       b.total++;
       if (a?.isCorrect === true) b.correct++;
@@ -474,7 +485,14 @@ export class ExamsService {
   // ── Genel liderlik (eski lider-tablosu): tüm denemelerin ortalaması ──
   async globalLeaderboard(user?: AuthenticatedUser) {
     const rows = await this.prisma.$queryRaw<
-      { user_id: string; display_name: string; avatar_url: string | null; avg_score: number; attempts: number; total_correct: number }[]
+      {
+        user_id: string;
+        display_name: string;
+        avatar_url: string | null;
+        avg_score: number;
+        attempts: number;
+        total_correct: number;
+      }[]
     >`
       SELECT qs.user_id, u.display_name, u.avatar_url,
              AVG(qs.score)::float AS avg_score,
@@ -527,7 +545,9 @@ export class ExamsService {
     const sessions = await this.prisma.quizSession.findMany({
       where: { userId: user.id, examId: { not: null } },
       orderBy: { startedAt: 'desc' },
-      include: { exam: { select: { id: true, title: true, startAt: true, durationMinutes: true } } },
+      include: {
+        exam: { select: { id: true, title: true, startAt: true, durationMinutes: true } },
+      },
     });
     return sessions.map((s) => ({
       attemptId: s.id,
@@ -570,7 +590,9 @@ export class ExamsService {
       versionId: r.questionVersionId,
       stem: r.questionVersion.stem,
       mediaUrl: r.questionVersion.mediaUrl,
-      explanation: opts.withAnswers ? (r.questionVersion as { explanation?: string | null }).explanation ?? null : undefined,
+      explanation: opts.withAnswers
+        ? ((r.questionVersion as { explanation?: string | null }).explanation ?? null)
+        : undefined,
       source: opts.withAnswers
         ? ((r.questionVersion as { sourceLabel?: string | null }).sourceLabel ?? null)
         : undefined,

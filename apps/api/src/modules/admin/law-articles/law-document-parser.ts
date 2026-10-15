@@ -41,7 +41,15 @@ export interface ParsedDocument {
 /** TR-duyarlı gevşek normalize (kimlik karşılaştırması için). */
 function looseNorm(s: string): string {
   const map: Record<string, string> = {
-    ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u',
+    ç: 'c',
+    ğ: 'g',
+    ı: 'i',
+    ö: 'o',
+    ş: 's',
+    ü: 'u',
+    â: 'a',
+    î: 'i',
+    û: 'u',
   };
   return s
     .toLocaleLowerCase('tr-TR')
@@ -94,7 +102,12 @@ export function verifyLawIdentity(
 export function parseDocument(raw: string): ParsedDocument {
   const lines = raw.split('\n');
   const sections: ParsedSection[] = [];
-  const articles: { no: string; title: string | null; lines: string[]; sectionOrder: number | null }[] = [];
+  const articles: {
+    no: string;
+    title: string | null;
+    lines: string[];
+    sectionOrder: number | null;
+  }[] = [];
   let current: (typeof articles)[number] | null = null;
   let currentKisim: number | null = null;
   let currentSection: number | null = null;
@@ -140,9 +153,11 @@ export function parseDocument(raw: string): ParsedDocument {
     const am = ARTICLE_RE.exec(line.toLocaleLowerCase('tr'));
     if (am) {
       const label = am[1].replace(/\s+/, ' ');
-      const rawNo =
-        label.startsWith('ek') ? `ek ${am[2]}` :
-        label.startsWith('geçici') ? `geçici ${am[2]}` : am[2];
+      const rawNo = label.startsWith('ek')
+        ? `ek ${am[2]}`
+        : label.startsWith('geçici')
+          ? `geçici ${am[2]}`
+          : am[2];
       const no = canonicalArticleNo(rawNo);
       if (no) {
         // Kenar başlığı: hemen önceki kısa, noktasız satır (resmî düzen).

@@ -34,7 +34,15 @@ type LegislationRow = {
 /** TR-duyarlı normalize: küçült + aksan düşür (SQL tr_unaccent ile hizalı). */
 function norm(s: string): string {
   const map: Record<string, string> = {
-    ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u',
+    ç: 'c',
+    ğ: 'g',
+    ı: 'i',
+    ö: 'o',
+    ş: 's',
+    ü: 'u',
+    â: 'a',
+    î: 'i',
+    û: 'u',
   };
   return s
     .toLocaleLowerCase('tr-TR')
@@ -66,8 +74,15 @@ export class MevzuatService {
     const raw = await this.prisma.legislation.findMany({
       where: { deletedAt: null },
       select: {
-        id: true, slug: true, type: true, number: true, name: true,
-        shortName: true, aliases: true, topicId: true, lastVerifiedAt: true,
+        id: true,
+        slug: true,
+        type: true,
+        number: true,
+        name: true,
+        shortName: true,
+        aliases: true,
+        topicId: true,
+        lastVerifiedAt: true,
         _count: {
           select: {
             articles: { where: { status: 'published', deletedAt: null } },
@@ -178,8 +193,14 @@ export class MevzuatService {
       this.prisma.lawArticle.findMany({
         where: { legislationId: leg.id, status: 'published', deletedAt: null },
         select: {
-          articleNo: true, title: true, text: true, sectionId: true,
-          sourceName: true, sourceUrl: true, effectiveInfo: true, lastVerifiedAt: true,
+          articleNo: true,
+          title: true,
+          text: true,
+          sectionId: true,
+          sourceName: true,
+          sourceUrl: true,
+          effectiveInfo: true,
+          lastVerifiedAt: true,
         },
         orderBy: { sortKey: 'asc' },
       }),
@@ -253,8 +274,12 @@ export class MevzuatService {
 
     // 2) "cmk 90" / "pvsk 4/a" deseni → doğrudan madde isabeti.
     const directArticles: {
-      lawSlug: string; lawShort: string | null; no: string; slug: string;
-      title: string | null; headline: string;
+      lawSlug: string;
+      lawShort: string | null;
+      no: string;
+      slug: string;
+      title: string | null;
+      headline: string;
     }[] = [];
     const m = /^(.+?)\s+(\d+(?:\/[a-zA-ZçğıöşüÇĞİÖŞÜ])?|ek\s*\d+|geçici\s*\d+)$/i.exec(q);
     if (m) {
@@ -294,7 +319,13 @@ export class MevzuatService {
     const skipFts = directArticles.length > 0 || legMatches.some((x) => x.s >= 90);
     if (!skipFts) {
       const rows = await this.prisma.$queryRaw<
-        { article_no: string; title: string | null; slug: string; short_name: string | null; headline: string }[]
+        {
+          article_no: string;
+          title: string | null;
+          slug: string;
+          short_name: string | null;
+          headline: string;
+        }[]
       >(Prisma.sql`
         SELECT la.article_no, la.title, l.slug, l.short_name,
                ts_headline('simple', la.text,
@@ -335,9 +366,7 @@ export class MevzuatService {
               ) DESC
         LIMIT 3`);
       const bySlug = new Map(legs.map((l) => [l.slug, l]));
-      fuzzyLegs = rows
-        .map((r) => bySlug.get(r.slug))
-        .filter((x): x is LegislationRow => x != null);
+      fuzzyLegs = rows.map((r) => bySlug.get(r.slug)).filter((x): x is LegislationRow => x != null);
     }
 
     return {

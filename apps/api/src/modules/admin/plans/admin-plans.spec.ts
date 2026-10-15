@@ -6,11 +6,13 @@ import { AdminPlansService } from './admin-plans.service';
  * ticari çekirdeği; yanlış bir tık ürünü sessizce bedavaya çevirebilir.
  */
 
-function mock(plan: {
-  key: string;
-  dailyQuestionLimit?: number | null;
-  isActive?: boolean;
-} | null) {
+function mock(
+  plan: {
+    key: string;
+    dailyQuestionLimit?: number | null;
+    isActive?: boolean;
+  } | null,
+) {
   const yazilan: unknown[] = [];
   const prisma = {
     plan: {
@@ -50,24 +52,24 @@ describe('AdminPlansService.update', () => {
   it('ücretsiz plan KAPATILAMAZ — limit o satırda yaşıyor', async () => {
     // Kapanırsa sunucu emniyet ağı değerine düşer ve panelden yönetilemez.
     const { servis } = mock({ key: 'free', dailyQuestionLimit: 30 });
-    await expect(
-      servis.update(aktor, 'p1', { isActive: false }),
-    ).rejects.toThrow(BadRequestException);
+    await expect(servis.update(aktor, 'p1', { isActive: false })).rejects.toThrow(
+      BadRequestException,
+    );
   });
 
   it('ücretsiz planın limiti boş bırakılamaz — boş = sınırsız', async () => {
     // Ücretsiz katmanı kazara sınırsız yapmak ürünü sessizce bedavaya çevirir.
     const { servis } = mock({ key: 'free', dailyQuestionLimit: 30 });
-    await expect(
-      servis.update(aktor, 'p1', { dailyQuestionLimit: null }),
-    ).rejects.toThrow(BadRequestException);
+    await expect(servis.update(aktor, 'p1', { dailyQuestionLimit: null })).rejects.toThrow(
+      BadRequestException,
+    );
   });
 
   it('ücretli plana sayısal limit verilemez — premium sınırsızdır', async () => {
     const { servis } = mock({ key: 'quarterly', dailyQuestionLimit: null });
-    await expect(
-      servis.update(aktor, 'p1', { dailyQuestionLimit: 20 }),
-    ).rejects.toThrow(BadRequestException);
+    await expect(servis.update(aktor, 'p1', { dailyQuestionLimit: 20 })).rejects.toThrow(
+      BadRequestException,
+    );
   });
 
   it('ücretli plan kapatılabilir', async () => {
@@ -84,8 +86,6 @@ describe('AdminPlansService.update', () => {
 
   it('olmayan plan 404', async () => {
     const { servis } = mock(null);
-    await expect(servis.update(aktor, 'yok', { name: 'x' })).rejects.toThrow(
-      NotFoundException,
-    );
+    await expect(servis.update(aktor, 'yok', { name: 'x' })).rejects.toThrow(NotFoundException);
   });
 });

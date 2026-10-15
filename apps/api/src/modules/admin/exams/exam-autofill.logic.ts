@@ -21,10 +21,7 @@ export interface SectionCapacity {
  *  - Kapasite yüzünden dağıtılamayan pay, kapasitesi kalan bölümlere
  *    ağırlık sırasıyla aktarılır; toplam kapasite < istek ise eldeki kadar döner.
  */
-export function allocateQuota(
-  sections: SectionCapacity[],
-  total: number,
-): Map<string, number> {
+export function allocateQuota(sections: SectionCapacity[], total: number): Map<string, number> {
   const result = new Map<string, number>();
   const usable = sections.filter((s) => s.available > 0);
   if (usable.length === 0 || total <= 0) return result;

@@ -104,8 +104,7 @@ export class LeaderboardNudgeService {
       return false;
     };
 
-    const firstName = (dn: string | null) =>
-      (dn ?? '').trim().split(/\s+/)[0] || 'Bir rakip';
+    const firstName = (dn: string | null) => (dn ?? '').trim().split(/\s+/)[0] || 'Bir rakip';
 
     const candidates: { userId: string; rivalName: string; need: number }[] = [];
     for (let i = 1; i < finals.length; i++) {

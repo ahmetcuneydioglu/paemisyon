@@ -19,9 +19,11 @@ function makeService() {
   const prisma = {
     examType: { findFirst: jest.fn().mockResolvedValue({ id: 'M' }) },
     topic: {
-      findMany: jest.fn().mockResolvedValue([
-        { id: 'T1', name: 'Konu 1', matchKeywords: [], course: { name: 'Ders' } },
-      ]),
+      findMany: jest
+        .fn()
+        .mockResolvedValue([
+          { id: 'T1', name: 'Konu 1', matchKeywords: [], course: { name: 'Ders' } },
+        ]),
     },
     $transaction: async (cb: (tx: unknown) => Promise<void>) =>
       cb({
@@ -56,7 +58,7 @@ describe('AdminQuestionsService.import — çıkarma (Doc 20 ek)', () => {
     expect(writtenStems).toHaveLength(3);
   });
 
-  it('çıkarılan soru DB\'ye YAZILMAZ', async () => {
+  it("çıkarılan soru DB'ye YAZILMAZ", async () => {
     const { svc, writtenStems } = makeService();
     const r = await svc.import(actor, {
       ...base,

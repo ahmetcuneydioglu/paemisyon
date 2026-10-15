@@ -435,9 +435,7 @@ describe('cikmis_sinav (Doc 36 kesif karti)', () => {
   });
 
   it('hepsini cozmusse SUSAR — kalici vitrin Denemeler sekmesinde', () => {
-    expect(
-      cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, cozulmemisEnYeni: null } })),
-    ).toBeNull();
+    expect(cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, cozulmemisEnYeni: null } }))).toBeNull();
   });
 
   it('hic cikmis sinav yoksa kart yok', () => {
@@ -445,9 +443,7 @@ describe('cikmis_sinav (Doc 36 kesif karti)', () => {
   });
 
   it('panelden kapaliyken hic cikmaz — magaza surumu sarti', () => {
-    expect(
-      cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, kartAcik: false } })),
-    ).toBeNull();
+    expect(cikmisSinavRule(ctx({ cikmisSinavlar: { ...iki, kartAcik: false } }))).toBeNull();
   });
 
   it('tek donem varsa donemin adiyla anlatir', () => {

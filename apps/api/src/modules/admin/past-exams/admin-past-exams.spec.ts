@@ -42,9 +42,7 @@ describe('cozulebilirlikHesapla', () => {
   it('konu analizi dönemi ne çözülebilir ne bağlanabilir', () => {
     // Aday hatırlatmasından türetilen dağılıma "çıkmış sınav" demek bankanın
     // varlık nedenini harcar (Doc 36 §1) — düğme hiç etkinleşmemeli.
-    const c = cozulebilirlikHesapla(
-      donem({ kind: 'analiz', examId: null, questions: [] }),
-    );
+    const c = cozulebilirlikHesapla(donem({ kind: 'analiz', examId: null, questions: [] }));
     expect(c.cozulebilir).toBe(false);
     expect(c.motoraBaglanabilir).toBe(false);
     expect(c.engeller.join(' ')).toContain('konu analizi');

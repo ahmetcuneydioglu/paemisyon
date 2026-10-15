@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { AppleVerifier, VerifiedTransaction } from './apple-verifier.service';
+import { AppleVerifier } from './apple-verifier.service';
 import { GooglePlayVerifier } from './google-play-verifier.service';
 import { UserSyncService } from '../auth/user-sync.service';
 
@@ -86,10 +86,7 @@ export class BillingService {
     // sayıp kapatıyordu — ödenmiş premium buharlaşırdı.
     const plan = await this.prisma.plan.findFirst({
       where: {
-        OR: [
-          { storeProductIdIos: productId },
-          { storeProductIdAndroid: productId },
-        ],
+        OR: [{ storeProductIdIos: productId }, { storeProductIdAndroid: productId }],
       },
     });
     if (!plan) {
@@ -234,8 +231,7 @@ export class BillingService {
       payload.subscriptionNotification?.purchaseToken ??
       payload.oneTimeProductNotification?.purchaseToken;
     const productId =
-      payload.subscriptionNotification?.subscriptionId ??
-      payload.oneTimeProductNotification?.sku;
+      payload.subscriptionNotification?.subscriptionId ?? payload.oneTimeProductNotification?.sku;
     if (!token) return { ok: true }; // ilgilenmediğimiz bir bildirim tipi
 
     const sub = await this.prisma.subscription.findFirst({

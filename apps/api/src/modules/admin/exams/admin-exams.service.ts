@@ -213,7 +213,12 @@ export class AdminExamsService {
       exam,
       questionCount: sorular.length,
       // Ders bazlı dağılım — kota kontrolü panelde bunun üstünden yapılır.
-      dersDagilimi: [...sorular.reduce((m, q) => m.set(q.courseName, (m.get(q.courseName) ?? 0) + 1), new Map<string, number>())]
+      dersDagilimi: [
+        ...sorular.reduce(
+          (m, q) => m.set(q.courseName, (m.get(q.courseName) ?? 0) + 1),
+          new Map<string, number>(),
+        ),
+      ]
         .map(([courseName, count]) => ({ courseName, count }))
         .sort((a, b) => b.count - a.count),
       questions: sorular.map((q) => ({
@@ -405,12 +410,7 @@ export class AdminExamsService {
    * soru setini bu listeyle DEĞİŞTİR. Sonuç gerçek sınav bölüm sırasındadır;
    * admin isterse elden düzeltip yayınlar.
    */
-  async autofill(
-    actor: AuthenticatedUser,
-    id: string,
-    moduleId: string,
-    questionCount: number,
-  ) {
+  async autofill(actor: AuthenticatedUser, id: string, moduleId: string, questionCount: number) {
     const exam = await this.exists(id);
     if (exam.status !== 'draft') {
       throw new BadRequestException('Otomatik doldurma yalnız taslak denemede yapılabilir.');

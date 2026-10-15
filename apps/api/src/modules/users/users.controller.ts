@@ -1,4 +1,16 @@
-import { Body, Controller, Delete, Get, Param, ParseUUIDPipe, Patch, Post, Put, Query, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  ParseUUIDPipe,
+  Patch,
+  Post,
+  Put,
+  Query,
+  UseGuards,
+} from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
@@ -281,16 +293,12 @@ export class UsersController {
     if (!body.token) return { ok: false };
     // 'web' 5 Eylül 2026'da eklendi: kullanıcıların çoğu web'de ve o güne dek
     // bildirim yalnız 17 mobil cihaza gidebiliyordu.
-    const platform =
-      body.platform === 'android' || body.platform === 'web' ? body.platform : 'ios';
+    const platform = body.platform === 'android' || body.platform === 'web' ? body.platform : 'ios';
     return this.push.registerToken(user.id, body.token, platform);
   }
 
   @Delete('push-token')
-  removePushToken(
-    @CurrentUser() user: AuthenticatedUser,
-    @Body() body: { token?: string },
-  ) {
+  removePushToken(@CurrentUser() user: AuthenticatedUser, @Body() body: { token?: string }) {
     if (!body.token) return { ok: false };
     return this.push.removeToken(user.id, body.token);
   }
@@ -341,32 +349,32 @@ export class UsersController {
 
     const [profile, stats, streak, usage, freePlan, dailySession, personalExamsToday] =
       await Promise.all([
-      this.prisma.user.findUnique({
-        where: { id: user.id },
-        select: {
-          displayName: true,
-          onboardingCompletedAt: true,
-          preferredModule: { select: { id: true, name: true } },
-        },
-      }),
-      this.prisma.userStats.findUnique({ where: { userId: user.id } }),
-      this.prisma.streak.findUnique({ where: { userId: user.id } }),
-      this.prisma.dailyUsage.findUnique({
-        where: { userId_usageDate: { userId: user.id, usageDate: today } },
-      }),
-      this.prisma.plan.findUnique({ where: { key: 'free' } }),
-      this.prisma.quizSession.findFirst({
-        where: { userId: user.id, mode: 'daily', startedAt: { gte: todayStart } },
-        orderBy: { startedAt: 'desc' },
-        select: { status: true },
-      }),
-      // Bugün başlatılan kişisel deneme sayısı (Doc 46). Tamamlanan değil
-      // BAŞLATILAN sayılır — sunucudaki kapı da aynı ölçüyü kullanır, arayüz
-      // farklı bir sayı gösterip kullanıcıyı yanıltmasın.
-      this.prisma.quizSession.count({
-        where: { userId: user.id, personalExam: true, startedAt: { gte: todayStart } },
-      }),
-    ]);
+        this.prisma.user.findUnique({
+          where: { id: user.id },
+          select: {
+            displayName: true,
+            onboardingCompletedAt: true,
+            preferredModule: { select: { id: true, name: true } },
+          },
+        }),
+        this.prisma.userStats.findUnique({ where: { userId: user.id } }),
+        this.prisma.streak.findUnique({ where: { userId: user.id } }),
+        this.prisma.dailyUsage.findUnique({
+          where: { userId_usageDate: { userId: user.id, usageDate: today } },
+        }),
+        this.prisma.plan.findUnique({ where: { key: 'free' } }),
+        this.prisma.quizSession.findFirst({
+          where: { userId: user.id, mode: 'daily', startedAt: { gte: todayStart } },
+          orderBy: { startedAt: 'desc' },
+          select: { status: true },
+        }),
+        // Bugün başlatılan kişisel deneme sayısı (Doc 46). Tamamlanan değil
+        // BAŞLATILAN sayılır — sunucudaki kapı da aynı ölçüyü kullanır, arayüz
+        // farklı bir sayı gösterip kullanıcıyı yanıltmasın.
+        this.prisma.quizSession.count({
+          where: { userId: user.id, personalExam: true, startedAt: { gte: todayStart } },
+        }),
+      ]);
 
     const accuracy =
       stats && stats.totalSolved > 0
@@ -385,7 +393,9 @@ export class UsersController {
       today: {
         answered: usage?.questionsAnswered ?? 0,
         // premium'da limit yok (null) — UI sınırsız gösterir.
-        dailyLimit: user.isPremium ? null : (freePlan?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK),
+        dailyLimit: user.isPremium
+          ? null
+          : (freePlan?.dailyQuestionLimit ?? FREE_DAILY_LIMIT_FALLBACK),
       },
       daily: { playedToday: dailySession?.status === 'completed' },
       // Kişisel deneme hakkı (Doc 46) — arayüz kilidi buradan kurar.

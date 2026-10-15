@@ -99,8 +99,7 @@ export function liveStreak(
 ): number {
   if (!prev?.lastActiveDate || prev.currentStreak <= 0) return 0;
   const diffDays = Math.round(
-    (startOfUtcDay(today).getTime() - startOfUtcDay(prev.lastActiveDate).getTime()) /
-      86_400_000,
+    (startOfUtcDay(today).getTime() - startOfUtcDay(prev.lastActiveDate).getTime()) / 86_400_000,
   );
   if (diffDays <= 1) return prev.currentStreak;
   if (diffDays === 2 && freezesLeft(prev, today, weeklyAllowance) > 0) {

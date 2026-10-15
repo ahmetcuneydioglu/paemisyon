@@ -7,12 +7,7 @@
  */
 
 export type ExamReviewFlag =
-  | 'kaynak-yok'
-  | 'aciklama-yok'
-  | 'daha-once-kullanildi'
-  | 'benzer-kok'
-  | 'madde-yok'
-  | 'sik-bozuk';
+  'kaynak-yok' | 'aciklama-yok' | 'daha-once-kullanildi' | 'benzer-kok' | 'madde-yok' | 'sik-bozuk';
 
 export interface ReviewCandidate {
   stem: string;

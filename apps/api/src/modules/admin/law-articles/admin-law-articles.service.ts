@@ -183,13 +183,37 @@ export class AdminLawArticlesService {
   private async ensureLegislation(topicId: string, topicName: string) {
     const existing = await this.prisma.legislation.findUnique({ where: { topicId } });
     if (existing) return existing;
-    const slugify = (x: string) => x
-      .split('')
-      .map((ch) => (({ ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', Ç: 'c', Ğ: 'g', İ: 'i', I: 'i', Ö: 'o', Ş: 's', Ü: 'u', â: 'a', Â: 'a', î: 'i', û: 'u' } as Record<string, string>)[ch] ?? ch))
-      .join('')
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '');
+    const slugify = (x: string) =>
+      x
+        .split('')
+        .map(
+          (ch) =>
+            (
+              ({
+                ç: 'c',
+                ğ: 'g',
+                ı: 'i',
+                ö: 'o',
+                ş: 's',
+                ü: 'u',
+                Ç: 'c',
+                Ğ: 'g',
+                İ: 'i',
+                I: 'i',
+                Ö: 'o',
+                Ş: 's',
+                Ü: 'u',
+                â: 'a',
+                Â: 'a',
+                î: 'i',
+                û: 'u',
+              }) as Record<string, string>
+            )[ch] ?? ch,
+        )
+        .join('')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
     return this.prisma.legislation.create({
       data: {
         slug: slugify(topicName),
@@ -212,9 +236,10 @@ export class AdminLawArticlesService {
     });
     await this.prisma.legislation.update({
       where: { id: leg.id },
-      data: publishedCount > 0
-        ? { status: 'published', lastVerifiedAt: new Date() }
-        : { status: 'draft' },
+      data:
+        publishedCount > 0
+          ? { status: 'published', lastVerifiedAt: new Date() }
+          : { status: 'draft' },
     });
   }
 
@@ -456,8 +481,7 @@ export class AdminLawArticlesService {
             legislationId: legislation.id,
             heading: sec.heading,
             sortOrder: sec.order,
-            parentId:
-              sec.parentOrder != null ? sectionIds.get(sec.parentOrder) : null,
+            parentId: sec.parentOrder != null ? sectionIds.get(sec.parentOrder) : null,
           },
         });
         sectionIds.set(sec.order, row.id);

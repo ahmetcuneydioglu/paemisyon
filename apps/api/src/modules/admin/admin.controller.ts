@@ -162,7 +162,11 @@ export class AdminController {
   async updateSettings(
     @CurrentUser() actor: AuthenticatedUser,
     @Body()
-    body: { showQuestionSource?: boolean; coachCikmisSinavKarti?: boolean; mobilAnasayfaV2?: boolean },
+    body: {
+      showQuestionSource?: boolean;
+      coachCikmisSinavKarti?: boolean;
+      mobilAnasayfaV2?: boolean;
+    },
   ) {
     const degisenler: [string, boolean | undefined][] = [
       [SETTING_KEYS.showQuestionSource, body.showQuestionSource],

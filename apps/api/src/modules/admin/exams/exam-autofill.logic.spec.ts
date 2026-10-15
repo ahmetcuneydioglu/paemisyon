@@ -1,8 +1,4 @@
-import {
-  allocateQuota,
-  pickQuestions,
-  pickSectionQuestions,
-} from './exam-autofill.logic';
+import { allocateQuota, pickQuestions, pickSectionQuestions } from './exam-autofill.logic';
 
 describe('allocateQuota', () => {
   it('ağırlıklara orantılı dağıtır (PAEM benzeri: %30 + 7×%10)', () => {
@@ -117,8 +113,7 @@ describe('pickQuestions', () => {
     ];
     const picked = pickSectionQuestions(pool, 30, () => 0.5);
     expect(picked.length).toBe(30);
-    const countOf = (prefix: string) =>
-      picked.filter((id) => id.startsWith(prefix)).length;
+    const countOf = (prefix: string) => picked.filter((id) => id.startsWith(prefix)).length;
     // Küçük konu (6) tamamen girer; kalan 24 iki büyük konuya dengeli dağılır.
     expect(countOf('guncel')).toBe(6);
     expect(countOf('tarih')).toBe(12);

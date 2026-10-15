@@ -92,9 +92,7 @@ export class ProgressService {
     const wrongIds = session.answers
       .filter((a) => a.isCorrect === false && a.selectedOptionId != null)
       .map((a) => a.questionId);
-    const correctIds = session.answers
-      .filter((a) => a.isCorrect === true)
-      .map((a) => a.questionId);
+    const correctIds = session.answers.filter((a) => a.isCorrect === true).map((a) => a.questionId);
 
     await this.prisma.$transaction(async (tx) => {
       await tx.userStats.upsert({
@@ -174,7 +172,11 @@ export class ProgressService {
    * turu yarıda bırakan aday (turların çoğu!) pasif sayılıp "Hoş geldin" kartı
    * görüyordu. Aynı gün ikinci çağrı etkisizdir.
    */
-  async touchActivity(userId: string, isPremium: boolean, day: Date = gunAnahtari()): Promise<void> {
+  async touchActivity(
+    userId: string,
+    isPremium: boolean,
+    day: Date = gunAnahtari(),
+  ): Promise<void> {
     await this.seriyiGuncelle(this.prisma, userId, isPremium, day);
   }
 
@@ -421,9 +423,7 @@ export class ProgressService {
       this.prisma.userStats.aggregate({ _sum: { totalSolved: true } }),
       this.prisma.dailyUsage.count({ where: { totalAnswered: { gt: 0 } } }),
       this.prisma.$queryRaw<{ display_name: string; points: number }[]>(Prisma.sql`
-        WITH puanlanan AS (${this.puanlananOturumlar(
-          Prisma.sql`AND qs.started_at >= ${dayStart}`,
-        )})
+        WITH puanlanan AS (${this.puanlananOturumlar(Prisma.sql`AND qs.started_at >= ${dayStart}`)})
         SELECT u.display_name, SUM(p.correct_count)::int AS points
         FROM puanlanan p
         JOIN users u ON u.id = p.user_id AND u.deleted_at IS NULL

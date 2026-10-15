@@ -1,4 +1,14 @@
-import { IsBoolean, IsIn, IsInt, IsOptional, IsString, Max, MaxLength, Min, MinLength } from 'class-validator';
+import {
+  IsBoolean,
+  IsIn,
+  IsInt,
+  IsOptional,
+  IsString,
+  Max,
+  MaxLength,
+  Min,
+  MinLength,
+} from 'class-validator';
 
 /** Çıkmış sınav üstverisi (Doc 36). Tür (`kind`) ve slug DEĞİŞTİRİLEMEZ:
  *  tür dürüstlük rozetini belirliyor, slug ise yayımlanmış URL. */

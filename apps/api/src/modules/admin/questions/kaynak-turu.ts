@@ -18,7 +18,10 @@ export const KAYNAK_TURLERI: readonly KaynakTuru[] = ['gercek', 'turetim', 'ai',
 // bıraktığı birleşik nokta (U+0307) atılır. tr-TR küçültme KULLANILMAZ: "AI"
 // o yerelde "aı" olur ve ön ek eşleşmez.
 function sade(s: string): string {
-  return s.toLowerCase().normalize('NFD').replace(/\u0307/g, '');
+  return s
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\u0307/g, '');
 }
 const ONEK_AI = sade('ai üretimi');
 const ONEK_TURETIM = sade('mevzuat türetimi');

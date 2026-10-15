@@ -77,10 +77,7 @@ export class PushService implements OnModuleInit {
 
   /** Tek kullanıcının TÜM cihazlarına bildirim (kişiye özel metinle).
    *  Geçersiz token'lar silinir. */
-  async sendToUser(
-    userId: string,
-    params: { title: string; body: string; route?: string },
-  ) {
+  async sendToUser(userId: string, params: { title: string; body: string; route?: string }) {
     if (!this.app) {
       return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
     }
@@ -101,8 +98,7 @@ export class PushService implements OnModuleInit {
       const code = r.error?.code ?? '';
       if (
         !r.success &&
-        (code.includes('registration-token-not-registered') ||
-          code.includes('invalid-argument'))
+        (code.includes('registration-token-not-registered') || code.includes('invalid-argument'))
       ) {
         dead.push(tokens[j].token);
       }

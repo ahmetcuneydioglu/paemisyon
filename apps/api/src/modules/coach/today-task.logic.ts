@@ -62,7 +62,13 @@ export interface TodayTaskInput {
   /** Haftanın bugün dahil kalan günü (Pzt başlangıçlı; Pazar = 1). */
   daysLeftInWeek: number;
   exams: {
-    live: { id: string; title: string; endAt: Date; attempted: boolean; inProgress: boolean } | null;
+    live: {
+      id: string;
+      title: string;
+      endAt: Date;
+      attempted: boolean;
+      inProgress: boolean;
+    } | null;
     todayUpcoming: { id: string; title: string; startAt: Date } | null;
   };
   /** En yeni yarım alıştırma/tekrar/günlük turu (varsa). */
@@ -76,7 +82,11 @@ export interface TodayTaskInput {
 const yuzde = (x: number) => `%${Math.round(x * 100)}`;
 
 const saat = (d: Date) =>
-  d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
+  d.toLocaleTimeString('tr-TR', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Istanbul',
+  });
 
 /** Uygulama gününe göre zaman: bugünse "02:14", önceki günse "dün 22:10". */
 function zaman(d: Date, now: Date): string {
@@ -175,7 +185,12 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: 'Denemen yarım kaldı',
       reason: `${live.title} — süre dolmadan dön.`,
       progress: null,
-      action: { type: 'open_exams', label: 'Denemeye dön', route: `/denemeler/${live.id}`, source: 'home_task' },
+      action: {
+        type: 'open_exams',
+        label: 'Denemeye dön',
+        route: `/denemeler/${live.id}`,
+        source: 'home_task',
+      },
       finishSessionId: null,
       secondary: null,
     };
@@ -186,7 +201,12 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: 'Canlı deneme şu an açık',
       reason: `${live.title} · ${saat(live.endAt)} kadar katılabilirsin.`,
       progress: null,
-      action: { type: 'open_exams', label: 'Denemeye git', route: '/denemeler', source: 'home_task' },
+      action: {
+        type: 'open_exams',
+        label: 'Denemeye git',
+        route: '/denemeler',
+        source: 'home_task',
+      },
       finishSessionId: null,
       secondary: null,
     };
@@ -198,7 +218,12 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: `Deneme bugün ${saat(yaklasan.startAt)}`,
       reason: `${yaklasan.title}. Sabah ağır konu yok — kısa ısınma istersen aşağıda.`,
       progress: null,
-      action: { type: 'open_exams', label: 'Denemeyi gör', route: '/denemeler', source: 'home_task' },
+      action: {
+        type: 'open_exams',
+        label: 'Denemeyi gör',
+        route: '/denemeler',
+        source: 'home_task',
+      },
       finishSessionId: null,
       secondary: {
         kind: 'warmup',
@@ -235,7 +260,11 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: 'Turun yarım kaldı',
       reason: `${tur.scopeName} · son cevap ${zaman(tur.lastActivityAt, now)}`,
       // Kartta TEK ilerleme: turunki (günün halkası bu sırada gizli — Faz 2 karar 3).
-      progress: { label: `${tur.answered}/${tur.total} soru`, answered: tur.answered, total: tur.total },
+      progress: {
+        label: `${tur.answered}/${tur.total} soru`,
+        answered: tur.answered,
+        total: tur.total,
+      },
       action: devam(tur),
       finishSessionId: tur.sessionId,
       secondary: null,

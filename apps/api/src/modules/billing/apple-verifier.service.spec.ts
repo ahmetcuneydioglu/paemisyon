@@ -27,7 +27,11 @@ describe('AppleVerifier.decode', () => {
 });
 
 describe('AppleVerifier.verify — yerel StoreKit yolu', () => {
-  const local = { environment: 'LocalTesting', productId: 'com.paemisyon.premium.monthly', expiresDate: 1800000000000 };
+  const local = {
+    environment: 'LocalTesting',
+    productId: 'com.paemisyon.premium.monthly',
+    expiresDate: 1800000000000,
+  };
 
   it('trustLocal AÇIK → yerel işlem kabul + alanlar normalize', async () => {
     const v = makeVerifier(true);

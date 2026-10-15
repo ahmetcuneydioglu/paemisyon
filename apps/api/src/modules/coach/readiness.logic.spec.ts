@@ -53,8 +53,20 @@ describe('buildReadiness — hazırlık bloğu (Doc 48 §3 ③)', () => {
       progress: [
         konu({ topicId: 'temel-haklar', solved: 26, correct: 10 }),
         konu({ topicId: 'yurutme', solved: 18, correct: 8 }),
-        konu({ topicId: 'tutuklama', courseId: 'cmk', courseName: 'Ceza Muhakemesi Hukuku', solved: 40, correct: 30 }),
-        konu({ topicId: 'inkilap', courseId: 'ata', courseName: 'Atatürk İlkeleri ve İnkılap Tarihi', solved: 3, correct: 1 }),
+        konu({
+          topicId: 'tutuklama',
+          courseId: 'cmk',
+          courseName: 'Ceza Muhakemesi Hukuku',
+          solved: 40,
+          correct: 30,
+        }),
+        konu({
+          topicId: 'inkilap',
+          courseId: 'ata',
+          courseName: 'Atatürk İlkeleri ve İnkılap Tarihi',
+          solved: 3,
+          correct: 1,
+        }),
       ],
       weeklyPhoto: [{ courseName: 'Anayasa Hukuku', deltaPct: 4 }],
       unresolvedWrongCount: 4,
@@ -101,7 +113,13 @@ describe('buildReadiness — hazırlık bloğu (Doc 48 §3 ③)', () => {
         konu({ topicId: 'yasama', solved: 16, correct: 9 }), // %56
         konu({ topicId: 'yargi', solved: 14, correct: 9 }), // %64 — zayıf değil
         konu({ topicId: 'az-veri', solved: 9, correct: 0 }), // az veri — zayıf değil
-        konu({ topicId: 'kapsam-disi', courseId: 'misyon', courseName: 'Misyon', solved: 30, correct: 3 }),
+        konu({
+          topicId: 'kapsam-disi',
+          courseId: 'misyon',
+          courseName: 'Misyon',
+          solved: 30,
+          correct: 3,
+        }),
       ],
       weeklyPhoto: [],
       unresolvedWrongCount: 0,
@@ -113,7 +131,15 @@ describe('buildReadiness — hazırlık bloğu (Doc 48 §3 ③)', () => {
   it('hedef sınav seçilmemiş: ders listesi boş, zayıf konular tüm birikimden', () => {
     const r = buildReadiness({
       courses: null,
-      progress: [konu({ topicId: 'misyon-konu', courseId: 'misyon', courseName: 'Misyon', solved: 20, correct: 5 })],
+      progress: [
+        konu({
+          topicId: 'misyon-konu',
+          courseId: 'misyon',
+          courseName: 'Misyon',
+          solved: 20,
+          correct: 5,
+        }),
+      ],
       weeklyPhoto: [],
       unresolvedWrongCount: 0,
     });

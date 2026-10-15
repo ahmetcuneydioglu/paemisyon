@@ -21,10 +21,7 @@ export class CatalogController {
   }
 
   @Get('courses/:id/topics')
-  topics(
-    @Param('id', ParseUUIDPipe) id: string,
-    @CurrentUser() user: AuthenticatedUser,
-  ) {
+  topics(@Param('id', ParseUUIDPipe) id: string, @CurrentUser() user: AuthenticatedUser) {
     return this.catalog.getTopics(id, user.id);
   }
 
@@ -36,10 +33,7 @@ export class CatalogController {
   /// Madde Atlası — fetih haritası (Doc 25 §4): konunun etiketli maddeleri +
   /// kullanıcının madde bazlı fetih durumu.
   @Get('topics/:id/atlas')
-  atlas(
-    @Param('id', ParseUUIDPipe) id: string,
-    @CurrentUser() user: AuthenticatedUser,
-  ) {
+  atlas(@Param('id', ParseUUIDPipe) id: string, @CurrentUser() user: AuthenticatedUser) {
     return this.catalog.getTopicAtlas(id, user.id);
   }
 }

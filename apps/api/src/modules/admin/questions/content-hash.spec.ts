@@ -18,7 +18,10 @@ describe('questionFingerprint (Doc 20 EK 2 — tekrar tespiti)', () => {
 
   it('büyük/küçük harf farkı → AYNI parmak izi', () => {
     expect(questionFingerprint(stem, opts)).toBe(
-      questionFingerprint(stem.toLocaleUpperCase('tr-TR'), opts.map((o) => o.toLocaleUpperCase('tr-TR'))),
+      questionFingerprint(
+        stem.toLocaleUpperCase('tr-TR'),
+        opts.map((o) => o.toLocaleUpperCase('tr-TR')),
+      ),
     );
   });
 

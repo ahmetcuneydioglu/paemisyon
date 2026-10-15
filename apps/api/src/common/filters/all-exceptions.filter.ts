@@ -51,7 +51,10 @@ export class AllExceptionsFilter implements ExceptionFilter {
       // Yalnız sunucu hataları Sentry'ye gider (Doc 49 A1); 4xx beklenen akıştır.
       // DSN yoksa SDK pasif, çağrı yok sayılır.
       Sentry.captureException(exception, {
-        tags: { trace_id: traceId ?? 'yok', route: `${request.method} ${request.route?.path ?? request.url}` },
+        tags: {
+          trace_id: traceId ?? 'yok',
+          route: `${request.method} ${request.route?.path ?? request.url}`,
+        },
       });
     }
 

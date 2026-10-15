@@ -83,7 +83,11 @@ export class AdminUsersService {
         roles: { include: { role: { select: { key: true } } } },
         stats: true,
         streak: true,
-        subscriptions: { orderBy: { createdAt: 'desc' }, take: 10, include: { plan: { select: { key: true, name: true } } } },
+        subscriptions: {
+          orderBy: { createdAt: 'desc' },
+          take: 10,
+          include: { plan: { select: { key: true, name: true } } },
+        },
       },
     });
     if (!u) throw new NotFoundException('Kullanıcı bulunamadı.');
@@ -115,9 +119,15 @@ export class AdminUsersService {
     if (!u) throw new NotFoundException('Kullanıcı bulunamadı.');
     await this.prisma.user.update({ where: { id }, data: { status } });
     this.userSync.invalidate(id); // guard cache — anında yansısın
-    await this.audit.log(actor, `user.${status === 'suspended' ? 'suspend' : 'activate'}`, 'user', id, {
-      email: u.email,
-    });
+    await this.audit.log(
+      actor,
+      `user.${status === 'suspended' ? 'suspend' : 'activate'}`,
+      'user',
+      id,
+      {
+        email: u.email,
+      },
+    );
     return { id, status };
   }
 
@@ -136,10 +146,16 @@ export class AdminUsersService {
       create: { userId: id, isPremium, validUntil: isPremium ? until : null },
     });
     this.userSync.invalidate(id); // guard cache — anında yansısın
-    await this.audit.log(actor, isPremium ? 'user.grant_premium' : 'user.revoke_premium', 'user', id, {
-      email: u.email,
-      validUntil: until?.toISOString() ?? null,
-    });
+    await this.audit.log(
+      actor,
+      isPremium ? 'user.grant_premium' : 'user.revoke_premium',
+      'user',
+      id,
+      {
+        email: u.email,
+        validUntil: until?.toISOString() ?? null,
+      },
+    );
     return { id, isPremium, validUntil: isPremium ? until : null };
   }
 }
