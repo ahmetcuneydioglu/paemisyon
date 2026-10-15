@@ -62,6 +62,19 @@ export class UpsertQuestionDto {
   @MaxLength(16)
   articleNo?: string;
 
+  /**
+   * Kaynak etiketi (Doc 49 A0): sorunun geldiği sınav/kitap. undefined = dokunma
+   * (yeni sürümde öncekinden taşınır); '' = temizle. Son kullanıcıya gösterimi
+   * ayrı bir ayardır; burada yalnız editoryal kayıt tutulur.
+   */
+  @IsOptional()
+  @IsString()
+  @MaxLength(200)
+  sourceLabel?: string;
+
+  // Beş şık kuralı (8 Eyl 2026) serviste uygulanır: yeni soru tam 5 şık;
+  // eski 4 şıklı sorunun düzeltmesi mevcut sayıyı koruyabilir. DTO alt sınırı
+  // bu yüzden 2'de kalır.
   @IsArray()
   @ArrayMinSize(2)
   @ArrayMaxSize(5)

@@ -84,12 +84,29 @@ export interface Curriculum {
   coursePool: CurriculumCourse[];
 }
 
+/** Kaynak türü (Doc 49 A0): sunucu sourceLabel'dan türetir, istemci kural bilmez. */
+export type SourceKind = 'gercek' | 'turetim' | 'ai' | 'yok';
+export const SOURCE_KIND_LABEL: Record<SourceKind, string> = {
+  gercek: 'Gerçek kaynak',
+  turetim: 'Mevzuat türetimi',
+  ai: 'AI üretimi',
+  yok: 'Kaynaksız',
+};
+
 export interface QuestionListItem {
   id: string;
   topicId: string;
   topicName: string;
   courseName: string;
-  latestVersion: { versionNo: number; stem: string; status: ContentStatus; createdAt: string } | null;
+  latestVersion: {
+    versionNo: number;
+    stem: string;
+    status: ContentStatus;
+    createdAt: string;
+    sourceLabel: string | null;
+    reviewNote: string | null;
+  } | null;
+  sourceKind: SourceKind;
   publishedVersionNo: number | null;
   createdAt: string;
 }
@@ -115,6 +132,10 @@ export interface QuestionVersion {
   difficulty: Difficulty;
   /** Sorunun şekli/grafiği (Doc 36) — metinle anlaşılmayan sorularda zorunlu. */
   mediaUrl: string | null;
+  /** Kaynak etiketi (Doc 49 A0): panelde görünür ve düzenlenir; son kullanıcıya ayrı ayar. */
+  sourceLabel: string | null;
+  /** Ret notu (Doc 49 A0 / T5): reddedilen sürümün üstünde durur. */
+  reviewNote: string | null;
   status: ContentStatus;
   createdAt: string;
   publishedAt: string | null;

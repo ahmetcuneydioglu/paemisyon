@@ -28,6 +28,7 @@ import { AdminDashboardService } from './dashboard/admin-dashboard.service';
 import { AdminMetricsService } from './dashboard/admin-metrics.service';
 import { AdminCatalogService } from './catalog/admin-catalog.service';
 import { AdminQuestionsService } from './questions/admin-questions.service';
+import { kaynakTuruMu, type KaynakTuru } from './questions/kaynak-turu';
 import { AdminUsersService } from './users/admin-users.service';
 import { AdminLawArticlesService } from './law-articles/admin-law-articles.service';
 import { AuditService } from './audit.service';
@@ -318,13 +319,22 @@ export class AdminController {
     @Query('status') status?: ContentStatus,
     @Query('topicId') topicId?: string,
     @Query('search') search?: string,
+    @Query('sourceKind') sourceKind?: string,
     @Query('page') page?: string,
+    // Doc 49 A0 / T3: panel pageSize gönderiyordu, burada okunmuyordu — kuyruk
+    // 20'şer dönüyor, panel 50'şer sayfalıyor ve aradaki sorular atlanıyordu.
+    @Query('pageSize') pageSize?: string,
   ) {
+    if (sourceKind !== undefined && !kaynakTuruMu(sourceKind)) {
+      throw new BadRequestException('sourceKind: gercek | turetim | ai | yok');
+    }
     return this.questions.list({
       status,
       topicId,
       search,
+      sourceKind: sourceKind as KaynakTuru | undefined,
       page: page ? Number(page) : undefined,
+      pageSize: pageSize ? Number(pageSize) : undefined,
     });
   }
 

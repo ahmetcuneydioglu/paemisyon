@@ -5,19 +5,39 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
-import type { Paged, QuestionListItem } from '@/lib/types';
+import { SOURCE_KIND_LABEL, type Paged, type QuestionListItem, type SourceKind } from '@/lib/types';
 
 interface ReviewTopicSummary {
   topicId: string;
   topicName: string;
   courseName: string;
   count: number;
+  /** Kaynak türü kırılımı (Doc 49 A0): sentetik soru gerçek sorudan ayrı sayılır. */
+  byKind: Record<SourceKind, number>;
 }
 
 interface BulkApproveResult {
   topicName: string;
   approved: number;
   skipped: { questionId: string; reason: string }[];
+  /** Sentetik olduğu için toplu onayın atladığı soru sayısı. */
+  syntheticSkipped: number;
+}
+
+const KIND_ORDER: SourceKind[] = ['gercek', 'turetim', 'ai', 'yok'];
+const KIND_BADGE: Record<SourceKind, string> = {
+  gercek: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  turetim: 'bg-violet-50 text-violet-700 border-violet-200',
+  ai: 'bg-violet-50 text-violet-700 border-violet-200',
+  yok: 'bg-slate-100 text-slate-600 border-slate-200',
+};
+
+function bulkNotice(baslik: string, r: BulkApproveResult): string {
+  const parcalar = [`${r.approved} soru yayınlandı`];
+  if (r.syntheticSkipped > 0) parcalar.push(`${r.syntheticSkipped} sentetik soru atlandı (tek tek incele)`);
+  const digerAtlanan = r.skipped.length - r.syntheticSkipped;
+  if (digerAtlanan > 0) parcalar.push(`${digerAtlanan} soru atlandı (doğru şık eksik)`);
+  return `✅ ${baslik}: ${parcalar.join(', ')}.`;
 }
 
 /** Onay kuyruğu (Doc 9 §4.3): konu kartları + toplu onay (admin) + tekil inceleme. */
@@ -26,6 +46,7 @@ export default function ReviewQueuePage() {
   const [me, setMe] = useState<{ roles: string[] } | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [selectedTopic, setSelectedTopic] = useState<string>('');
+  const [kind, setKind] = useState<SourceKind | ''>('');
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 50;
 
@@ -40,10 +61,12 @@ export default function ReviewQueuePage() {
   });
 
   const list = useQuery({
-    queryKey: ['review-queue', selectedTopic, page],
+    queryKey: ['review-queue', selectedTopic, kind, page],
     queryFn: () =>
       api<Paged<QuestionListItem>>(
-        `/admin/questions?status=in_review&page=${page}&pageSize=${PAGE_SIZE}${selectedTopic ? `&topicId=${selectedTopic}` : ''}`,
+        `/admin/questions?status=in_review&page=${page}&pageSize=${PAGE_SIZE}` +
+          (selectedTopic ? `&topicId=${selectedTopic}` : '') +
+          (kind ? `&sourceKind=${kind}` : ''),
       ),
   });
 
@@ -58,11 +81,7 @@ export default function ReviewQueuePage() {
       qc.invalidateQueries({ queryKey: ['review-queue'] });
       qc.invalidateQueries({ queryKey: ['questions'] });
       qc.invalidateQueries({ queryKey: ['dashboard'] });
-      setNotice(
-        `✅ "${r.topicName}": ${r.approved} soru yayınlandı${
-          r.skipped.length > 0 ? `, ${r.skipped.length} soru atlandı (doğru şık eksik)` : ''
-        }.`,
-      );
+      setNotice(bulkNotice(`"${r.topicName}"`, r));
     },
   });
 
@@ -78,11 +97,7 @@ export default function ReviewQueuePage() {
       qc.invalidateQueries({ queryKey: ['review-queue'] });
       qc.invalidateQueries({ queryKey: ['questions'] });
       qc.invalidateQueries({ queryKey: ['dashboard'] });
-      setNotice(
-        `✅ Tüm kuyruk: ${r.approved} soru yayınlandı${
-          r.skipped.length > 0 ? `, ${r.skipped.length} soru atlandı (doğru şık eksik)` : ''
-        }.`,
-      );
+      setNotice(bulkNotice('Tüm kuyruk', r));
     },
   });
 
@@ -112,18 +127,35 @@ export default function ReviewQueuePage() {
     if (ok) bulkRejectAll.mutate();
   }
 
+  const sentetik = (t: { byKind: Record<SourceKind, number> }) => t.byKind.ai + t.byKind.turetim;
+
   function confirmBulk(t: ReviewTopicSummary) {
+    const gercek = t.count - sentetik(t);
     const ok = window.confirm(
-      `"${t.courseName} / ${t.topicName}" konusundaki ${t.count} sorunun TAMAMI yayına alınacak.\n\n` +
+      `"${t.courseName} / ${t.topicName}": ${gercek} gerçek kaynaklı soru yayına alınacak.\n\n` +
+        (sentetik(t) > 0
+          ? `${sentetik(t)} sentetik soru (AI üretimi / mevzuat türetimi) ATLANIR; onlar tek tek incelenir.\n\n`
+          : '') +
         'Örneklem kontrolü yaptıysan devam et. Bu işlem soruları uygulamada anında görünür yapar.',
     );
     if (ok) bulk.mutate(t.topicId);
   }
 
   const totalCount = summary.data?.reduce((sum, t) => sum + t.count, 0) ?? 0;
+  const totalByKind = (summary.data ?? []).reduce<Record<SourceKind, number>>(
+    (acc, t) => {
+      for (const k of KIND_ORDER) acc[k] += t.byKind[k];
+      return acc;
+    },
+    { gercek: 0, turetim: 0, ai: 0, yok: 0 },
+  );
+  const totalSentetik = totalByKind.ai + totalByKind.turetim;
   function confirmBulkAll() {
     const ok = window.confirm(
-      `Onay kuyruğundaki TÜM ${totalCount} soru (tüm konular) yayına alınacak.\n\n` +
+      `Onay kuyruğundaki ${totalCount - totalSentetik} gerçek kaynaklı soru (tüm konular) yayına alınacak.\n\n` +
+        (totalSentetik > 0
+          ? `${totalSentetik} sentetik soru ATLANIR; onlar tek tek incelenir.\n\n`
+          : '') +
         'Bu işlem soruları uygulamada anında görünür yapar. Devam edilsin mi?',
     );
     if (ok) bulkAll.mutate();
@@ -183,7 +215,14 @@ export default function ReviewQueuePage() {
               <div>
                 <div className="text-xs text-slate-400">{t.courseName}</div>
                 <div className="font-medium">{t.topicName}</div>
-                <div className="mt-1 text-sm text-slate-500">{t.count} soru bekliyor</div>
+                <div className="mt-1 text-sm text-slate-500">
+                  {t.count} soru bekliyor
+                  {sentetik(t) > 0 && (
+                    <span className="ml-2 rounded border border-violet-200 bg-violet-50 px-1.5 py-0.5 text-xs text-violet-700">
+                      {sentetik(t)} sentetik
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="mt-3 flex gap-2">
                 <button
@@ -212,11 +251,38 @@ export default function ReviewQueuePage() {
         </div>
       )}
 
+      {/* ── Kaynak türü filtresi (Doc 49 A0): sentetik soru gerçek sorudan ayrı incelenir ── */}
+      {totalCount > 0 && (
+        <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">
+          <span className="text-slate-500">Kaynak türü:</span>
+          <button
+            onClick={() => { setKind(''); setPage(1); }}
+            className={`rounded-full border px-3 py-1 font-medium ${kind === '' ? 'border-slate-800 bg-slate-800 text-white' : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'}`}
+          >
+            Tümü ({totalCount})
+          </button>
+          {KIND_ORDER.map((k) => (
+            <button
+              key={k}
+              onClick={() => { setKind(k); setPage(1); }}
+              className={`rounded-full border px-3 py-1 font-medium ${kind === k ? 'border-slate-800 bg-slate-800 text-white' : `${KIND_BADGE[k]} hover:opacity-80`}`}
+            >
+              {SOURCE_KIND_LABEL[k]} ({totalByKind[k]})
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* ── Tekil inceleme listesi (sayfalı) ── */}
+      {list.data && list.data.total === 0 && (kind || selectedTopic) && (
+        <Card>
+          <p className="text-sm text-slate-500">Bu filtrede bekleyen soru yok.</p>
+        </Card>
+      )}
       {list.data && list.data.total > 0 && (
         <>
           <h2 className="mb-3 text-sm font-semibold text-slate-700">
-            Tek tek incele{selectedTopic ? ' (filtreli)' : ''} — {list.data.total} soru
+            Tek tek incele{selectedTopic || kind ? ' (filtreli)' : ''} — {list.data.total} soru
           </h2>
           <Card className="p-0">
             <ul className="divide-y divide-slate-100">
@@ -230,8 +296,16 @@ export default function ReviewQueuePage() {
                       <div className="truncate text-sm font-medium">
                         {item.latestVersion?.stem}
                       </div>
-                      <div className="mt-0.5 text-xs text-slate-500">
-                        {item.courseName} / {item.topicName} · v{item.latestVersion?.versionNo}
+                      <div className="mt-0.5 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                        <span>
+                          {item.courseName} / {item.topicName} · v{item.latestVersion?.versionNo}
+                        </span>
+                        <span className={`rounded border px-1.5 py-0.5 ${KIND_BADGE[item.sourceKind]}`}>
+                          {SOURCE_KIND_LABEL[item.sourceKind]}
+                        </span>
+                        {item.latestVersion?.sourceLabel && (
+                          <span className="truncate text-slate-400">{item.latestVersion.sourceLabel}</span>
+                        )}
                       </div>
                     </div>
                     <span className="ml-4 shrink-0 text-sm text-indigo-600">İncele →</span>

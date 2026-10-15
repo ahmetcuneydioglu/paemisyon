@@ -163,6 +163,9 @@ export default function QuestionsPage() {
                       <Link href={`/questions/${item.id}`} className="block truncate font-medium text-indigo-700 hover:underline">
                         {item.latestVersion?.stem ?? '(boş)'}
                       </Link>
+                      <div className="mt-0.5 truncate text-xs text-slate-400">
+                        {item.latestVersion?.sourceLabel ?? 'kaynaksız'}
+                      </div>
                     </td>
                     <td className="px-3 py-3 text-slate-600">
                       {item.courseName} / {item.topicName}

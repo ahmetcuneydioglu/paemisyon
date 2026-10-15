@@ -12,6 +12,8 @@ import {
   suggestTopicForRow,
   type RowError,
 } from './import-parser';
+import { kaynakTuru, sentetikMi, type KaynakTuru } from './kaynak-turu';
+import { SIK_SAYISI, sikKuraliHatasi } from './sik-kurali';
 
 // Tek dosyada üst sınır. Yazma yolu satır sayısından bağımsız 3 toplu INSERT
 // olduğundan 1000 güvenli; sınırın amacı yalnız önizleme ekranını ve istek
@@ -52,21 +54,56 @@ export class AdminQuestionsService {
     return [...new Set([...sorular.map((r) => r.id), ...surumler.map((r) => r.question_id)])];
   }
 
-  // ── Liste (filtre: durum/konu/arama — Doc 9 §4.1) ──
+  // Sorunun EN GÜNCEL sürümü verilen durumdaysa soru kimliğini döndürür.
+  // Doc 49 A0 / T4: eski filtre `versions: { some: { status } }` idi; bu yüzden
+  // "Arşiv" seçilince, eski bir sürümü arşivlenmiş YAYINDAKİ sorular da
+  // listeye giriyordu. Prisma ilişki filtresi "en son sürüm" koşulunu
+  // ifade edemediğinden LATERAL alt sorgu kullanılır; parametreler bağlıdır.
+  private async enGuncelSurumuDurumdaOlanlar(
+    status: ContentStatus,
+    topicId?: string,
+  ): Promise<string[]> {
+    const rows = await this.prisma.$queryRaw<Array<{ id: string }>>`
+      SELECT q.id
+      FROM questions q
+      JOIN LATERAL (
+        SELECT v.status::text AS status
+        FROM question_versions v
+        WHERE v.question_id = q.id
+        ORDER BY v.version_no DESC
+        LIMIT 1
+      ) lv ON true
+      WHERE q.deleted_at IS NULL
+        AND lv.status = ${status}
+        AND (${topicId ?? null}::uuid IS NULL OR q.topic_id = ${topicId ?? null}::uuid)`;
+    return rows.map((r) => r.id);
+  }
+
+  // ── Liste (filtre: durum/konu/arama/kaynak türü — Doc 9 §4.1, Doc 49 A0) ──
   async list(params: {
     status?: ContentStatus;
     topicId?: string;
     search?: string;
+    /** Kaynak türü (Doc 49 A0): gercek | turetim | ai | yok. */
+    sourceKind?: KaynakTuru;
     page?: number;
     pageSize?: number;
   }) {
     const page = Math.max(1, params.page ?? 1);
     const pageSize = Math.min(100, Math.max(1, params.pageSize ?? 20));
 
-    // Filtre "sorunun en güncel sürümü" üstünden: durum/arama sürümlerde aranır.
+    // Arama sürüm metinlerinde yapılır (herhangi bir sürümün kökü eşleşebilir).
     const versionFilter: Prisma.QuestionVersionWhereInput = {};
-    if (params.status) versionFilter.status = params.status;
     if (params.search) versionFilter.stem = { contains: params.search, mode: 'insensitive' };
+
+    // Durum filtresi EN GÜNCEL sürüme göre. "Arşiv" iki hâli kapsar: soru
+    // arşivlenmiş (deleted_at dolu; başka hiçbir filtrede görünmez) ya da en
+    // güncel sürümü arşivde kalmış. Canlı ölçüm (16 Eki 2026): eski filtre 74
+    // soru gösteriyordu, bunların 62'si YAYINDAYDI.
+    const arsivFiltresi = params.status === 'archived';
+    const durumIdleri = params.status
+      ? await this.enGuncelSurumuDurumdaOlanlar(params.status, params.topicId)
+      : null;
 
     // Arama metni bir UUID ya da UUID ön eki ise, kök metni yerine KİMLİK araması
     // yapılır: hem question.id hem questionVersion.id denenir (inceleme raporları
@@ -79,12 +116,32 @@ export class AdminQuestionsService {
     // bir soruyu aradığında açık bir filtre yüzünden "bulunamadı" görmemelidir.
     // Eşleşme yoksa (ör. hex'e benzeyen normal bir kelime) metin aramasına düşülür.
     const where: Prisma.QuestionWhereInput = idIleBulunan?.length
-      ? { deletedAt: null, id: { in: idIleBulunan } }
+      ? { id: { in: idIleBulunan } }
       : {
-          deletedAt: null,
+          ...(arsivFiltresi
+            ? { OR: [{ deletedAt: { not: null } }, { id: { in: durumIdleri ?? [] } }] }
+            : { deletedAt: null, ...(durumIdleri ? { id: { in: durumIdleri } } : {}) }),
           ...(params.topicId ? { topicId: params.topicId } : {}),
-          ...(params.status || params.search ? { versions: { some: versionFilter } } : {}),
+          ...(params.search ? { versions: { some: versionFilter } } : {}),
         };
+
+    // Kaynak türü filtresi en güncel sürümün etiketine bakar. Etiket serbest
+    // metin olduğundan sınıflandırma uygulama tarafında (kaynakTuru) yapılır;
+    // bu yüzden filtre sayfalamadan ÖNCE kimlik listesine indirgenir.
+    let kaynakIdleri: string[] | null = null;
+    if (params.sourceKind) {
+      const adaylar = await this.prisma.question.findMany({
+        where,
+        select: {
+          id: true,
+          versions: { orderBy: { versionNo: 'desc' }, take: 1, select: { sourceLabel: true } },
+        },
+      });
+      kaynakIdleri = adaylar
+        .filter((q) => kaynakTuru(q.versions[0]?.sourceLabel) === params.sourceKind)
+        .map((q) => q.id);
+    }
+    const whereSon: Prisma.QuestionWhereInput = kaynakIdleri ? { id: { in: kaynakIdleri } } : where;
 
     // Sıralama: "Yayında" filtresinde en YENİ YAYINLANAN üstte (yayın anının
     // vekili: yayındaki sürümün createdAt'i — Question'da publishedAt yok).
@@ -96,17 +153,28 @@ export class AdminQuestionsService {
 
     const [questions, total] = await Promise.all([
       this.prisma.question.findMany({
-        where,
+        where: whereSon,
         orderBy,
         skip: (page - 1) * pageSize,
         take: pageSize,
         include: {
           topic: { select: { name: true, course: { select: { name: true } } } },
-          versions: { orderBy: { versionNo: 'desc' }, take: 1, select: { versionNo: true, stem: true, status: true, createdAt: true } },
+          versions: {
+            orderBy: { versionNo: 'desc' },
+            take: 1,
+            select: {
+              versionNo: true,
+              stem: true,
+              status: true,
+              createdAt: true,
+              sourceLabel: true,
+              reviewNote: true,
+            },
+          },
           currentVersion: { select: { versionNo: true, status: true } },
         },
       }),
-      this.prisma.question.count({ where }),
+      this.prisma.question.count({ where: whereSon }),
     ]);
 
     return {
@@ -116,6 +184,7 @@ export class AdminQuestionsService {
         topicName: q.topic.name,
         courseName: q.topic.course.name,
         latestVersion: q.versions[0] ?? null,
+        sourceKind: kaynakTuru(q.versions[0]?.sourceLabel),
         publishedVersionNo: q.currentVersion?.versionNo ?? null,
         createdAt: q.createdAt,
       })),
@@ -146,7 +215,7 @@ export class AdminQuestionsService {
 
   // ── Oluştur: soru + v1 taslak (Doc 9 §4.2) ──
   async create(actor: AuthenticatedUser, dto: UpsertQuestionDto) {
-    this.validateOptions(dto);
+    this.validateOptions(dto, SIK_SAYISI);
     const question = await this.prisma.$transaction(async (tx) => {
       const q = await tx.question.create({
         data: {
@@ -166,13 +235,21 @@ export class AdminQuestionsService {
 
   // ── Düzenle: taslak varsa güncelle, yoksa YENİ taslak sürüm aç (yayındaki bozulmaz) ──
   async update(actor: AuthenticatedUser, id: string, dto: UpsertQuestionDto) {
-    this.validateOptions(dto);
     const q = await this.prisma.question.findFirst({
       where: { id, deletedAt: null },
-      include: { versions: { orderBy: { versionNo: 'desc' }, take: 1 } },
+      include: {
+        versions: {
+          orderBy: { versionNo: 'desc' },
+          take: 1,
+          include: { options: { select: { id: true } } },
+        },
+      },
     });
     if (!q) throw new NotFoundException('Soru bulunamadı.');
     const latest = q.versions[0];
+    // Beş şık kuralı: hedef 5; eski 4 şıklı sorunun küçük düzeltmesi (yazım,
+    // unvan) mevcut sayıyı koruyabilir — düzeltme yüzünden soru kilitlenmesin.
+    this.validateOptions(dto, SIK_SAYISI, latest?.options.length);
 
     // Konu değiştirilebilir (Doc 20): panel dropdown'ı önceden sessizce yok
     // sayılıyordu. Yeni hedef konu geçerli olmalı.
@@ -208,6 +285,10 @@ export class AdminQuestionsService {
             explanation: dto.explanation ?? null,
             difficulty: (dto.difficulty ?? 'medium') as Difficulty,
             ...(dto.mediaUrl !== undefined ? { mediaUrl: dto.mediaUrl.trim() || null } : {}),
+            // Kaynak etiketi: dto sessizse korunur, '' temizler (Doc 49 A0 / T1).
+            ...(dto.sourceLabel !== undefined ? { sourceLabel: dto.sourceLabel.trim() || null } : {}),
+            // İçerik değişti: parmak izi yenilenir (mükerrer tespiti güncel kalsın).
+            contentHash: questionFingerprint(dto.stem, dto.options.map((o) => o.text)),
             status: 'draft', // in_review'da düzenleme onayı sıfırlar
             options: {
               create: dto.options.map((o, i) => ({
@@ -220,7 +301,10 @@ export class AdminQuestionsService {
           },
         });
       } else {
-        await this.createVersion(tx, id, (latest?.versionNo ?? 0) + 1, actor.id, dto, latest?.mediaUrl);
+        await this.createVersion(tx, id, (latest?.versionNo ?? 0) + 1, actor.id, dto, {
+          mediaUrl: latest?.mediaUrl ?? null,
+          sourceLabel: latest?.sourceLabel ?? null,
+        });
       }
     });
     await this.audit.log(actor, 'question.update', 'question', id);
@@ -235,7 +319,8 @@ export class AdminQuestionsService {
     }
     await this.prisma.questionVersion.update({
       where: { id: version.id },
-      data: { status: 'in_review' },
+      // Yeniden incelemeye gelen sürümün eski ret notu temizlenir.
+      data: { status: 'in_review', reviewNote: null },
     });
     await this.audit.log(actor, 'question.submit_review', 'question', id, { versionNo: version.versionNo });
     return this.detail(id);
@@ -289,19 +374,21 @@ export class AdminQuestionsService {
     return { ok: true };
   }
 
-  // ── Reddet: in_review → draft (not audit'e yazılır) ──
+  // ── Reddet: in_review → draft; not SORUDA saklanır (Doc 49 A0 / T5) ve
+  // audit'e de yazılır. Önceden yalnız audit'e yazılıyordu ve editöre ulaşmıyordu.
   async reject(actor: AuthenticatedUser, id: string, note?: string) {
     const version = await this.latestVersionOrThrow(id);
     if (version.status !== 'in_review') {
       throw new BadRequestException('Yalnızca incelemedeki sürüm reddedilebilir.');
     }
+    const temizNot = note?.trim() || null;
     await this.prisma.questionVersion.update({
       where: { id: version.id },
-      data: { status: 'draft' },
+      data: { status: 'draft', reviewNote: temizNot },
     });
     await this.audit.log(actor, 'question.reject', 'question', id, {
       versionNo: version.versionNo,
-      note: note ?? null,
+      note: temizNot,
     });
     return this.detail(id);
   }
@@ -336,17 +423,31 @@ export class AdminQuestionsService {
       select: {
         topicId: true,
         topic: { select: { name: true, course: { select: { name: true } } } },
+        versions: { orderBy: { versionNo: 'desc' }, take: 1, select: { sourceLabel: true } },
       },
     });
-    const byTopic = new Map<string, { topicId: string; topicName: string; courseName: string; count: number }>();
+    // Konu başına toplam + kaynak türü kırılımı (Doc 49 A0): panel sentetik
+    // soruyu gerçek sorudan ayırt edebilsin; toplu onay düğmesi buna göre konuşur.
+    const byTopic = new Map<
+      string,
+      {
+        topicId: string;
+        topicName: string;
+        courseName: string;
+        count: number;
+        byKind: Record<KaynakTuru, number>;
+      }
+    >();
     for (const q of questions) {
       const cur = byTopic.get(q.topicId) ?? {
         topicId: q.topicId,
         topicName: q.topic.name,
         courseName: q.topic.course.name,
         count: 0,
+        byKind: { gercek: 0, turetim: 0, ai: 0, yok: 0 },
       };
       cur.count++;
+      cur.byKind[kaynakTuru(q.versions[0]?.sourceLabel)]++;
       byTopic.set(q.topicId, cur);
     }
     return [...byTopic.values()].sort((a, b) => b.count - a.count);
@@ -377,6 +478,7 @@ export class AdminQuestionsService {
     });
 
     let approved = 0;
+    let syntheticSkipped = 0;
     const skipped: { questionId: string; reason: string }[] = [];
     const CHUNK = 25;
     for (let i = 0; i < versions.length; i += CHUNK) {
@@ -384,6 +486,16 @@ export class AdminQuestionsService {
       await this.prisma.$transaction(
         async (tx) => {
           for (const v of chunk) {
+            // Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz:
+            // CLAUDE.md istisnaları "yayın kararı insanındır" der — tek tek incelenir.
+            if (sentetikMi(v.sourceLabel)) {
+              syntheticSkipped++;
+              skipped.push({
+                questionId: v.questionId,
+                reason: 'Sentetik soru (AI üretimi / mevzuat türetimi) toplu onaylanmaz; tek tek incele.',
+              });
+              continue;
+            }
             if (v.options.filter((o) => o.isCorrect).length !== 1) {
               skipped.push({ questionId: v.questionId, reason: 'Tam bir doğru şık işaretli değil.' });
               continue;
@@ -411,8 +523,9 @@ export class AdminQuestionsService {
       topicName,
       approved,
       skipped: skipped.length,
+      syntheticSkipped,
     });
-    return { topicId: topicId ?? null, topicName, approved, skipped };
+    return { topicId: topicId ?? null, topicName, approved, skipped, syntheticSkipped };
   }
 
   /** Toplu RET: YALNIZ onay kuyruğundaki (in_review) sürümler draft'a döner.
@@ -713,10 +826,15 @@ export class AdminQuestionsService {
   }
 
   // ── Yardımcılar ──
-  private validateOptions(dto: UpsertQuestionDto) {
-    if (dto.options.length < 2 || dto.options.length > 5) {
-      throw new BadRequestException('Soru 2-5 arası şık içermeli.');
-    }
+  /**
+   * Şık kuralı (Doc 49 A0 / T2): hedef `hedefSik` (5). `mevcutSik` verilmişse
+   * (düzenleme) ve soru zaten daha az şıklıysa aynı sayı korunabilir; artırmak
+   * serbest, azaltmak yasak. Böylece eski dört şıklı soru düzeltilebilir ama
+   * yeni soru beş şıksız giremez.
+   */
+  private validateOptions(dto: UpsertQuestionDto, hedefSik: number, mevcutSik?: number) {
+    const hata = sikKuraliHatasi(dto.options.length, hedefSik, mevcutSik);
+    if (hata) throw new BadRequestException(hata);
     const correct = dto.options.filter((o) => o.isCorrect).length;
     if (correct !== 1) {
       throw new BadRequestException('Tam bir doğru şık işaretlenmeli.');
@@ -729,8 +847,8 @@ export class AdminQuestionsService {
     versionNo: number,
     authorId: string,
     dto: UpsertQuestionDto,
-    /** Önceki sürümün görseli — dto taşımıyorsa yeni sürüme kopyalanır. */
-    oncekiMediaUrl?: string | null,
+    /** Önceki sürümden taşınacaklar — dto sessizse yeni sürüme kopyalanır. */
+    onceki?: { mediaUrl?: string | null; sourceLabel?: string | null },
   ) {
     return tx.questionVersion.create({
       data: {
@@ -740,7 +858,14 @@ export class AdminQuestionsService {
         explanation: dto.explanation ?? null,
         // Şekilli soruda görsel kaybolursa soru cevaplanamaz hâle gelir;
         // dto sessiz kaldığında önceki sürümden taşınır.
-        mediaUrl: dto.mediaUrl !== undefined ? dto.mediaUrl.trim() || null : (oncekiMediaUrl ?? null),
+        mediaUrl: dto.mediaUrl !== undefined ? dto.mediaUrl.trim() || null : (onceki?.mediaUrl ?? null),
+        // Kaynak etiketi (Doc 49 A0 / T1): eski createVersion bunu DÜŞÜRÜYORDU —
+        // yayındaki soru panelden düzenlenince etiket kayboluyordu. dto sessizse
+        // önceki sürümden taşınır; '' bilinçli temizlemedir.
+        sourceLabel:
+          dto.sourceLabel !== undefined ? dto.sourceLabel.trim() || null : (onceki?.sourceLabel ?? null),
+        // Parmak izi her sürümde içerikten hesaplanır (mükerrer tespiti).
+        contentHash: questionFingerprint(dto.stem, dto.options.map((o) => o.text)),
         difficulty: (dto.difficulty ?? 'medium') as Difficulty,
         status: 'draft',
         authoredBy: authorId,

@@ -14,10 +14,14 @@ export interface QuestionFormValue {
   articleNo: string;
   /** Sorunun şekli/grafiği (Doc 36). Boş = görsel yok. */
   mediaUrl: string;
+  /** Kaynak etiketi (Doc 49 A0): sınav/kitap. Boş = kaynaksız. */
+  sourceLabel: string;
   options: QuestionOption[];
 }
 
 const LABELS = ['A', 'B', 'C', 'D', 'E'];
+/** Beş şık kuralı (8 Eyl 2026): yeni soru A–E ile açılır. */
+const SIK_SAYISI = 5;
 
 export function emptyQuestion(): QuestionFormValue {
   return {
@@ -27,16 +31,12 @@ export function emptyQuestion(): QuestionFormValue {
     difficulty: 'medium',
     articleNo: '',
     mediaUrl: '',
-    options: [
-      { label: 'A', text: '', isCorrect: true },
-      { label: 'B', text: '', isCorrect: false },
-      { label: 'C', text: '', isCorrect: false },
-      { label: 'D', text: '', isCorrect: false },
-    ],
+    sourceLabel: '',
+    options: LABELS.slice(0, SIK_SAYISI).map((label, i) => ({ label, text: '', isCorrect: i === 0 })),
   };
 }
 
-/** Soru formu (Doc 9 §4.2): kök, 2-5 şık (tek doğru), açıklama, zorluk, konu. */
+/** Soru formu (Doc 9 §4.2): kök, 5 şık (tek doğru), açıklama, zorluk, konu, kaynak. */
 export function QuestionForm({
   initial,
   submitLabel,
@@ -71,8 +71,11 @@ export function QuestionForm({
     set({ options: [...v.options, { label: LABELS[v.options.length], text: '', isCorrect: false }] });
   }
 
+  // Şık silme yalnız fazlalık varsa (5'ten çoğu olamaz) ya da eski 4 şıklı
+  // soruda mevcut sayının altına inmemek koşuluyla; sunucu da aynı kuralı uygular.
+  const minOptions = Math.min(SIK_SAYISI, initial.options.length);
   function removeOption(i: number) {
-    if (v.options.length <= 2) return;
+    if (v.options.length <= minOptions) return;
     const next = v.options.filter((_, j) => j !== i).map((o, j) => ({ ...o, label: LABELS[j] }));
     if (!next.some((o) => o.isCorrect)) next[0] = { ...next[0], isCorrect: true };
     set({ options: next });
@@ -148,9 +151,35 @@ export function QuestionForm({
         )}
       </div>
 
+      {/* Kaynak etiketi (Doc 49 A0 / T1): bankanın güven omurgası. Panelden
+          düzenlenen soru etiketini korur; son kullanıcıya gösterim ayrı ayardır. */}
+      <div>
+        <label className="block text-sm font-medium">
+          Kaynak etiketi <span className="text-slate-400">— sınav / kitap</span>
+        </label>
+        <input
+          type="text"
+          value={v.sourceLabel}
+          onChange={(e) => set({ sourceLabel: e.target.value })}
+          maxLength={200}
+          className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+          placeholder="ör. PAEM 9 — 2025 resmî sınav"
+        />
+        <p className="mt-1 text-xs text-slate-500">
+          Kullanıcıya gösterilmez; yalnız panelde ve denetimde kullanılır. Boş = kaynaksız.
+        </p>
+      </div>
+
       <div>
         <div className="mb-1 flex items-center justify-between">
-          <label className="text-sm font-medium">Şıklar (doğruyu işaretle)</label>
+          <label className="text-sm font-medium">
+            Şıklar (doğruyu işaretle)
+            {v.options.length < SIK_SAYISI && (
+              <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-800">
+                {v.options.length} şık — yeni sorular 5 şıklı olmalı
+              </span>
+            )}
+          </label>
           {v.options.length < 5 && (
             <button type="button" onClick={addOption} className="text-sm font-medium text-indigo-600 hover:underline">
               + Şık ekle
@@ -175,7 +204,7 @@ export function QuestionForm({
                 className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm"
                 placeholder={`${o.label} şıkkı`}
               />
-              {v.options.length > 2 && (
+              {v.options.length > minOptions && (
                 <button
                   type="button"
                   onClick={() => removeOption(i)}

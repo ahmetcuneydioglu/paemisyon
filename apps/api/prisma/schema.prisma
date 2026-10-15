@@ -536,6 +536,9 @@ model QuestionVersion {
   status      ContentStatus @default(draft)
   authoredBy  String?       @map("authored_by") @db.Uuid
   reviewedBy  String?       @map("reviewed_by") @db.Uuid
+  // Ret notu (Doc 49 A0): reddedilen sürümün üstünde durur, editöre panelde
+  // gösterilir; yeniden incelemeye gönderilince temizlenir.
+  reviewNote  String?       @map("review_note")
   publishedAt DateTime?     @map("published_at")
   archivedAt  DateTime?     @map("archived_at")
   createdAt   DateTime      @default(now()) @map("created_at")
