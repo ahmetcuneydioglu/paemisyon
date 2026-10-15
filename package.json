@@ -10,6 +10,8 @@
     "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/admin && npm run typecheck --prefix apps/web",
     "lint": "npm run lint --prefix apps/admin && npm run lint --prefix apps/web && npx --prefix apps/api eslint \"apps/api/src/**/*.ts\"",
     "test": "npm test --prefix apps/api && npm test --prefix apps/web",
-    "check": "npm run typecheck && npm run test"
+    "check": "npm run tokens:check && npm run typecheck && npm run test",
+    "tokens:build": "node packages/tokens/build.mjs",
+    "tokens:check": "node packages/tokens/build.mjs --check && node --test packages/tokens/"
   }
 }

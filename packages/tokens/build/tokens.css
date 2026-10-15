@@ -1,0 +1,147 @@
+/* ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v3.0.0, Nöbet). Yenile: node packages/tokens/build.mjs
+ */
+/* Varsayılan şema: dark. data-theme="light|dark" zorlar; yoksa sistem tercihi. */
+:root {
+  --color-bg: #17161A;
+  --color-surface: #221F25;
+  --color-surface-alt: #2C2830;
+  --color-ink: #F4EEE6;
+  --color-ink-soft: #A79F96;
+  --color-ink-subtle: #7C746C;
+  --color-line: #34303A;
+  --color-accent: #E3804F;
+  --color-accent-soft: #3A281F;
+  --color-accent-ink: #F2A47C;
+  --color-on-accent: #17161A;
+  --color-success: #8FB39A;
+  --color-success-soft: #243029;
+  --color-success-ink: #A6CDB1;
+  --color-warning: #E0B15A;
+  --color-warning-soft: #3A2F1C;
+  --color-warning-ink: #F0CB7E;
+  --color-danger: #E07A6B;
+  --color-danger-soft: #3F2422;
+  --color-danger-ink: #F3A396;
+  --color-focus-ring: #F2A47C;
+  --type-display-size: 64px;
+  --type-display-line: 60px;
+  --type-display-weight: 700;
+  --type-display-tracking: -0.04em;
+  --type-display-family: "Bricolage Grotesque", system-ui, sans-serif;
+  --type-title-size: 28px;
+  --type-title-line: 30px;
+  --type-title-weight: 700;
+  --type-title-tracking: -0.02em;
+  --type-title-family: "Bricolage Grotesque", system-ui, sans-serif;
+  --type-heading-size: 20px;
+  --type-heading-line: 26px;
+  --type-heading-weight: 600;
+  --type-heading-tracking: -0.01em;
+  --type-heading-family: "Bricolage Grotesque", system-ui, sans-serif;
+  --type-subhead-size: 15px;
+  --type-subhead-line: 20px;
+  --type-subhead-weight: 600;
+  --type-subhead-tracking: 0em;
+  --type-subhead-family: "Instrument Sans", system-ui, sans-serif;
+  --type-body-size: 16px;
+  --type-body-line: 25px;
+  --type-body-weight: 400;
+  --type-body-tracking: 0em;
+  --type-body-family: "Instrument Sans", system-ui, sans-serif;
+  --type-body-sm-size: 14px;
+  --type-body-sm-line: 20px;
+  --type-body-sm-weight: 400;
+  --type-body-sm-tracking: 0em;
+  --type-body-sm-family: "Instrument Sans", system-ui, sans-serif;
+  --type-label-size: 11px;
+  --type-label-line: 14px;
+  --type-label-weight: 600;
+  --type-label-tracking: 0.1em;
+  --type-label-family: "Instrument Sans", system-ui, sans-serif;
+  --type-stat-size: 22px;
+  --type-stat-line: 24px;
+  --type-stat-weight: 700;
+  --type-stat-tracking: -0.02em;
+  --type-stat-family: "Bricolage Grotesque", system-ui, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-screen-gutter: 20px;
+  --radius-control: 10px;
+  --radius-card: 14px;
+  --radius-sheet: 20px;
+  --radius-pill: 999px;
+  --motion-enter-ms: 180ms;
+  --motion-enter-ease: cubic-bezier(0, 0, 0.2, 1);
+  --motion-exit-ms: 140ms;
+  --motion-exit-ease: cubic-bezier(0.4, 0, 1, 1);
+  --motion-stagger-ms: 24ms;
+  --size-touch-target: 44px;
+  --size-icon: 24px;
+  --size-icon-stroke: 1.75;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Instrument Sans", system-ui, sans-serif;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --color-bg: #F1EDE9;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #E8E2DC;
+  --color-ink: #1F1C21;
+  --color-ink-soft: #6A6269;
+  --color-ink-subtle: #8D858C;
+  --color-line: #DBD4CE;
+  --color-accent: #B5532E;
+  --color-accent-soft: #F8E1D4;
+  --color-accent-ink: #9C4827;
+  --color-on-accent: #FFFFFF;
+  --color-success: #5F8A6B;
+  --color-success-soft: #E3EEE6;
+  --color-success-ink: #3F6A4C;
+  --color-warning: #A87530;
+  --color-warning-soft: #F7EAD2;
+  --color-warning-ink: #7A5416;
+  --color-danger: #B8453A;
+  --color-danger-soft: #F8DDD9;
+  --color-danger-ink: #8E2E25;
+  --color-focus-ring: #B5532E;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+  --color-bg: #F1EDE9;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #E8E2DC;
+  --color-ink: #1F1C21;
+  --color-ink-soft: #6A6269;
+  --color-ink-subtle: #8D858C;
+  --color-line: #DBD4CE;
+  --color-accent: #B5532E;
+  --color-accent-soft: #F8E1D4;
+  --color-accent-ink: #9C4827;
+  --color-on-accent: #FFFFFF;
+  --color-success: #5F8A6B;
+  --color-success-soft: #E3EEE6;
+  --color-success-ink: #3F6A4C;
+  --color-warning: #A87530;
+  --color-warning-soft: #F7EAD2;
+  --color-warning-ink: #7A5416;
+  --color-danger: #B8453A;
+  --color-danger-soft: #F8DDD9;
+  --color-danger-ink: #8E2E25;
+  --color-focus-ring: #B5532E;
+    color-scheme: light;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-enter-ms: 0ms;
+    --motion-exit-ms: 0ms;
+    --motion-stagger-ms: 0ms;
+  }
+}

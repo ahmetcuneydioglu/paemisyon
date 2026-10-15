@@ -16,6 +16,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  tokens:
+    name: Tasarım token'ları
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      # Üretilen css/ts/dart kaynakla eşit mi; kontrast ve tutarlılık testleri.
+      - run: node packages/tokens/build.mjs --check
+      - run: node --test packages/tokens/
+
   api:
     name: API (NestJS)
     runs-on: ubuntu-latest

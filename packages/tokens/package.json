@@ -1,0 +1,13 @@
+{
+  "name": "@paemisyon/tokens",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Paemisyon tasarım token'ları — tek kaynak (design-tokens.json) ve üretilen css/ts/dart (build/).",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}

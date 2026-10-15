@@ -40,14 +40,19 @@ ve 1 px çizgi ayrıştırır.
 | `inkSoft` | #A79F96 | #6A6269 | İkincil metin |
 | `inkSubtle` | #7C746C | #8D858C | Üçüncü ton: etiket, pasif sekme |
 | `line` | #34303A | #DBD4CE | Çizgiler, kart kenarı |
-| `accent` | #E3804F | #C9633A | Tek vurgu: birincil eylem, aktif, görev |
+| `accent` | #E3804F | #B5532E | Tek vurgu: birincil eylem, aktif, görev |
 | `accentSoft` | #3A281F | #F8E1D4 | Vurgu zemini (seçili şık, zayıf rozeti) |
-| `accentInk` | #F2A47C | #A54E2A | Vurgu zemini üstünde metin |
+| `accentInk` | #F2A47C | #9C4827 | Vurgu zemini üstünde metin |
 | `onAccent` | #17161A | #FFFFFF | Vurgu dolgu üstünde metin |
 | `success` | #8FB39A | #5F8A6B | Doğru, tamamlanan gün, başarı |
 | `successSoft` | #243029 | #E3EEE6 | Başarı zemini |
-| `warning` | #E0B15A | #B9853A | Zayıf ilerleme, dikkat |
+| `warning` | #E0B15A | #A87530 | Zayıf ilerleme, dikkat |
 | `danger` | #E07A6B | #B8453A | Yanlış cevap, geri dönüşsüz eylem |
+| `focusRing` | #F2A47C | #B5532E | Klavye odağı halkası |
+
+Soft/Ink türevleri (`successSoft/Ink`, `warningSoft/Ink`, `dangerSoft/Ink`) ve kontrast çiftleri
+`packages/tokens/design-tokens.json` içinde; 16 Eki kontrast testi açık temada üç değeri
+(accent, accentInk, warning) koyulaştırdı.
 
 Kurallar: ekranda tek vurgu (`accent`); ders rengi YOK, ders farkı ikonla (Doc 48 kararı
 korunur); durum yalnız renkle anlatılmaz, rozet metni ya da ikon eşlik eder; bütün metin
@@ -151,8 +156,8 @@ panel). Tek geliştirici olduğundan paralel ancak haftalık dilimlerle; her aş
 | # | Aşama | Çıktı | Süre (tahmin) | Kapanış ölçütü |
 |---|---|---|---|---|
 | A0 ✅ 16 Eki (dal `claude/a0-guven-onarimi`, deploy bekliyor) | **Güven onarımı** (2.0'dan bağımsız, hemen) | T1 sourceLabel kaybı, T2 beş şık zorunlu, T3 pageSize, T4 durum filtresi, T5 ret notu soruda; kuyrukta kaynak türü filtresi; AI/türetilmiş sorulara toplu onay engeli | 2–3 gün | Panelden düzenlenen soru etiketini korur; kuyruk kaynağa göre ayrışır |
-| A1 ✅ 16 Eki (dal `claude/a1-temel`, deploy bekliyor; Sentry DSN sahibinden) | Temel | pnpm workspace + CI (lint, typecheck, test) + Sentry (API/web/admin, sonra Expo) + kök temizliği (SQL dökümleri ve eski projeler şifreli arşive) | 3 gün | CI yeşil; dökümler repo dışında |
-| F0 | Kimlik belgesi + token v3 | Bu belge §1 onaylı; `packages/tokens` v3 ve üretim betiği (css/ts/dart); kontrast testi | 3–4 gün | Üç hedefe üretim çalışır |
+| A1 ✅ 16 Eki (canlıda; Sentry DSN sahibinden) | Temel | pnpm workspace + CI (lint, typecheck, test) + Sentry (API/web/admin, sonra Expo) + kök temizliği (SQL dökümleri ve eski projeler şifreli arşive) | 3 gün | CI yeşil; dökümler repo dışında |
+| F0 ✅ 16 Eki (dal `claude/f0-token-v3`) | Kimlik belgesi + token v3 | Bu belge §1 onaylı; `packages/tokens` v3 ve üretim betiği (css/ts/dart); kontrast testi | 3–4 gün | Üç hedefe üretim çalışır |
 | F1 | Expo iskelet | `apps/app`: router, tema, fontlar, Supabase oturumu, API istemcisi, hata/raporlama, 5 boş sekme | 1 hafta | Telefonda giriş yapılıp `/me/coach` çekiliyor |
 | F2 | Tasarım sistemi v3 | §1.4 temel bileşenler + bileşen galerisi ekranı (storybook yerine uygulama içi) | 1 hafta | Galeri açık/koyu, AX5 ve SE'de göz testinden geçti |
 | F3 | Bugün + Çalış | Bugün (8 durum), soru oturumu, sonuç, yanlış tekrarı girişi | 2–3 hafta | Beta hesabında gerçek veriyle, kullanıcıyla telefon turu |
