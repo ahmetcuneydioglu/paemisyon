@@ -74,9 +74,42 @@ Sıra: K1→K5, D1→D5, P1→P4, B1→B3; her blok simülatörde doğrulanır, 
   preferredModuleId, dailyGoal(5..200), targetExamDate|null`.
 - Mevzuat uçları girişsiz; `isPremium` bilgi amaçlı, kilit tur başlarken.
 
-## 5. Özellik eşitliği tablosu (Flutter → Expo)
+## 5. Özellik eşitliği tablosu (Flutter → Expo), 16 Eki 2026
 
-Blok kapandıkça doldurulur. Satır: özellik · Flutter · Expo · not.
+| Özellik | Flutter | Expo 2.0 | Not |
+|---|---|---|---|
+| Modül seçimi ekranı ("Hedefini seç") | ✓ | → Ayarlar'da çip | Kütüphane doğrudan tercih edilen sınavın dersleriyle açılır |
+| Dersler listesi | ✓ | ✓ `kutuphane/index` | doğruluk brief.readiness'tan, ölçüm yoksa "henüz çözülmedi" |
+| Ders detay (hakimiyet, konular, alt konular, tur, ders denemesi) | ✓ | ✓ `kutuphane/ders/[id]` | premium konu: rozet + kilit, kural sunucuda |
+| Konu sheet'i (alıştırma, konu denemesi, atlas, kanun metni) | ✓ | ✓ | kanun metni bağlantısı yeni |
+| Madde Atlası | ✓ | ✓ `kutuphane/atlas/[topicId]` | |
+| Mevzuat ana (kaldığın yer, kaydedilenler, öne çıkanlar, tür filtresi) | ✓ | ✓ `kutuphane/mevzuat/index` | CBK/genelge "yakında" yerine sunucuda varsa listelenir |
+| Mevzuat arama (350 ms, ≥2, ⟪⟫) | ✓ | ✓ aynı ekranda | ayrı rota yok |
+| Kanun detay + içindekiler sheet'i | ✓ | ✓ `kutuphane/mevzuat/[slug]` | |
+| Okuyucu: metin, bölümler, madde no'ya atlama, kaydet, not, paylaş, yazı boyu, ilerleme (20 sn) | ✓ | ✓ `oku/[slug]` | |
+| Okuyucu: metin vurgulama (highlight) | ✓ | ✗ | F5 (§6) |
+| Okuyucu: atlas fetih bayrağı madde başında | ✓ | ✗ | atlas ekranı var; okuyucuda bayrak F5 |
+| Yanlışlarım / Favoriler + tur | ✓ | ✓ `kutuphane/tekrar` | |
+| Denemeler listesi (canlı, sıradaki, yaklaşan, geçmiş) | ✓ | ✓ `denemeler/index` | geri sayımlar 1 sn |
+| Kişisel deneme (25/50/100, hak, kilit) | ✓ | ✓ sheet | |
+| Deneme koşucusu: süre, sayfa, bayrak, optik form, bitir onayı, anında kayıt | ✓ ayrı ekran | ✓ `seans` deneme modu | tek oynatıcı (Doc 25 K1) |
+| Canlı deneme: presence göstergesi (20 sn) | ✓ | ✗ | F5 (değer düşük, ağ maliyeti) |
+| Deneme sonucu: net, fark, D/Y/B, kaybettiren konular, zamanlama, cevap incelemesi, favori, hata bildir, sıralama | ✓ | ✓ `deneme-sonuc/[attemptId]` | |
+| Sıralama | ✓ | ✓ `denemeler/siralama/[examId]` | |
+| Çıkmış sınavlar liste / dönem / çalışma modu (yerel kayıt, yanlış bildirimi) | ✓ | ✓ `denemeler/cikmis/*` | |
+| Performans özet + 12 hafta ısı şeridi + konu haritası | ✓ | ✓ | |
+| Deneme net eğrisi, en zayıf 3 | web | ✓ | mobilde yeni |
+| Konu haritası ders filtresi + yalnız zayıf | web | ✓ `performans/konu-haritasi` | mobilde yeni |
+| Liderlik (bugün/hafta/ay/genel, podyum, benim sıram) | ✓ (3 dönem) | ✓ 4 dönem | |
+| Denemelerim listesi | web | ✓ `performans/denemelerim` | mobilde yeni |
+| Profil (kimlik, plan, ölçütler, sıradaki rozet, hızlı erişim) | ✓ | ✓ `ben/index` | rütbe kartı yok: home-v2 brief rütbe taşımıyor (V1.5) |
+| Ayarlar (ad, hedef sınav, tarih, günlük hedef, görünüm, şifre, yasal, çıkış, silme) | ✓ | ✓ `ben/ayarlar` | tarih metin alanı (GG.AA.YYYY); yerel tarih seçici dev client yeniden derlenince |
+| Günlük hatırlatma, push kaydı | ✓ | ✗ | F5 |
+| Rozetler | ✓ | ✓ `ben/rozetler` | |
+| Paywall / satın alma / geri yükleme | ✓ | durum ekranı `ben/uyelik` | IAP F5 |
+| Onboarding, tanıtım | ✓ | ✗ | F5 |
+| Çevrimdışı cevap kuyruğu | ✓ (alıştırma) | ✗ | F5 |
+| Soru içi favori ⭐, hata bildir, AI açıklama (alıştırmada) | ✓ | ✗ (incelemede var) | F5: oynatıcı araç satırı |
 
 ## 6. Dışarıda bırakılanlar (gerekçeli)
 
