@@ -71,3 +71,8 @@ Sürüm notu taslağı:
 - Build 2 Xcode aşamasında düştü: Sentry kaynak haritası yükleme betiği `SENTRY_AUTH_TOKEN`
   yokken derlemeyi kırıyor. EAS ortamına `SENTRY_DISABLE_AUTO_UPLOAD=true` eklendi (DSN/token
   girilince kaldırılır; çökme raporu yine çalışır, yalnız kaynak haritası yüklenmez). Build 3.
+- Build 3 (2.0.0 / 3) EAS'ta BAŞARILI. `eas submit` için ASC API anahtarı üretimi Apple'da 500
+  verdi; ASC › Users and Access › Integrations › App Store Connect API paneli de yüklenmiyor
+  (Apple tarafı). Geçici yol: IPA indirildi (`~/Downloads/paemisyon-2.0/`), **Transporter** ile
+  yüklendi. API anahtarı panel düzelince kurulur (`eas credentials` → ASC API Key) ve sonraki
+  gönderimler `eas submit` ile.
