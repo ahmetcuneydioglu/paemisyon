@@ -76,3 +76,5 @@ Sürüm notu taslağı:
   (Apple tarafı). Geçici yol: IPA indirildi (`~/Downloads/paemisyon-2.0/`), **Transporter** ile
   yüklendi. API anahtarı panel düzelince kurulur (`eas credentials` → ASC API Key) ve sonraki
   gönderimler `eas submit` ile.
+- 16 Eki 2026: 2.0.0 (3) TestFlight'ta "Ready to Submit"; iç test grubu **paemisyon** (1 test
+  kullanıcısı) otomatik aldı; What to Test (6 madde) girildi. Harici grup ve davetler sonraki adım.
