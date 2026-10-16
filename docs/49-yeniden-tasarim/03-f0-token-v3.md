@@ -33,10 +33,10 @@ edilir, tuval güncellenmedi. `00-plan.md` §1.1 tablosu güncellendi.
 ## Kullanım sözleşmesi
 
 - Değer değişikliği yalnız JSON'da; ardından `node packages/tokens/build.mjs` ve
-  `node --test packages/tokens/`; üretilenlerle birlikte commit.
+  `node --test packages/tokens/kontrast.test.mjs`; üretilenlerle birlikte commit.
 - Yeni bir metin/zemin çifti tasarıma girmeden önce `contrastPairs`'e eklenir.
 - `warning` ve `inkSubtle` küçük metinde kullanılmaz; `*Ink` türevleri kullanılır.
-- Expo (F1): `palette[scheme]`, `type` (RN'de `letterSpacing = tracking * size`),
+- Expo (F1): `palette[scheme]`, `typeRoles` (RN'de `letterSpacing = tracking * size`),
   `space`, `radius`, `motion`. Web (F7): `globals.css` içinden `tokens.css` import edilir ve
   Tailwind `@theme inline` köprüsü bu değişkenlere bağlanır.
 

@@ -25,7 +25,19 @@ jobs:
         with: { node-version: 22 }
       # Üretilen css/ts/dart kaynakla eşit mi; kontrast ve tutarlılık testleri.
       - run: node packages/tokens/build.mjs --check
-      - run: node --test packages/tokens/
+      - run: node --test packages/tokens/kontrast.test.mjs
+
+  app:
+    name: Mobil (Expo)
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/app } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/app/package-lock.json }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npx eslint .
 
   api:
     name: API (NestJS)

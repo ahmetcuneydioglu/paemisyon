@@ -7,11 +7,11 @@
   },
   "scripts": {
     "install:all": "npm ci --prefix apps/api && npm ci --prefix apps/admin && npm ci --prefix apps/web",
-    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/admin && npm run typecheck --prefix apps/web",
+    "typecheck": "npm run typecheck --prefix apps/api && npm run typecheck --prefix apps/admin && npm run typecheck --prefix apps/web && npm run typecheck --prefix apps/app",
     "lint": "npm run lint --prefix apps/admin && npm run lint --prefix apps/web && npx --prefix apps/api eslint \"apps/api/src/**/*.ts\"",
     "test": "npm test --prefix apps/api && npm test --prefix apps/web",
     "check": "npm run tokens:check && npm run typecheck && npm run test",
     "tokens:build": "node packages/tokens/build.mjs",
-    "tokens:check": "node packages/tokens/build.mjs --check && node --test packages/tokens/"
+    "tokens:check": "node packages/tokens/build.mjs --check && node --test packages/tokens/kontrast.test.mjs"
   }
 }

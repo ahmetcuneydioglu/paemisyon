@@ -114,19 +114,22 @@ export const palette = {
   dark: ${scheme('dark')},
   light: ${scheme('light')},
 } as const;
-export type Palette = typeof palette.dark;
-export type ColorName = keyof Palette;
+export type ColorName = keyof typeof palette.dark;
+/** Şemalar arası ortak tip: değerler şemaya göre değişir, anahtar kümesi aynıdır. */
+export type Palette = Record<ColorName, string>;
 
 export const fontFamily = {
   display: { name: '${tokens.typography.family.display.name}', weights: [${tokens.typography.family.display.weights.join(', ')}] },
   body: { name: '${tokens.typography.family.body.name}', weights: [${tokens.typography.family.body.weights.join(', ')}] },
 } as const;
 
-/** Boylar px; tracking em cinsinden (RN'de letterSpacing = tracking * size). */
-export const type = {
+/** Boylar px; tracking em cinsinden (RN'de letterSpacing = tracking * size).
+ *  Ad \`typeRoles\`: \`type\` adlı bir dışa aktarım, içe aktarımda \`{ type as x }\` yazımını
+ *  TypeScript'in tür-içe-aktarım sözdizimiyle çakıştırıyor. */
+export const typeRoles = {
 ${roles}
 } as const;
-export type TypeRole = keyof typeof type;
+export type TypeRole = keyof typeof typeRoles;
 
 export const dynamicType = { iosCurveAbovePt: ${tokens.typography.dynamicType.iosCurveAbovePt}, androidMaxScale: ${tokens.typography.dynamicType.androidMaxScale} } as const;
 

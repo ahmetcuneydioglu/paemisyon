@@ -53,16 +53,19 @@ export const palette = {
     focusRing: '#B5532E',
   },
 } as const;
-export type Palette = typeof palette.dark;
-export type ColorName = keyof Palette;
+export type ColorName = keyof typeof palette.dark;
+/** Şemalar arası ortak tip: değerler şemaya göre değişir, anahtar kümesi aynıdır. */
+export type Palette = Record<ColorName, string>;
 
 export const fontFamily = {
   display: { name: 'Bricolage Grotesque', weights: [600, 700] },
   body: { name: 'Instrument Sans', weights: [400, 500, 600, 700] },
 } as const;
 
-/** Boylar px; tracking em cinsinden (RN'de letterSpacing = tracking * size). */
-export const type = {
+/** Boylar px; tracking em cinsinden (RN'de letterSpacing = tracking * size).
+ *  Ad `typeRoles`: `type` adlı bir dışa aktarım, içe aktarımda `{ type as x }` yazımını
+ *  TypeScript'in tür-içe-aktarım sözdizimiyle çakıştırıyor. */
+export const typeRoles = {
     display: { family: 'display', size: 64, lineHeight: 60, weight: 700, tracking: -0.04, tabular: true },
     title: { family: 'display', size: 28, lineHeight: 30, weight: 700, tracking: -0.02, tabular: false },
     heading: { family: 'display', size: 20, lineHeight: 26, weight: 600, tracking: -0.01, tabular: false },
@@ -72,7 +75,7 @@ export const type = {
     label: { family: 'body', size: 11, lineHeight: 14, weight: 600, tracking: 0.1, tabular: false, uppercase: true },
     stat: { family: 'display', size: 22, lineHeight: 24, weight: 700, tracking: -0.02, tabular: true },
 } as const;
-export type TypeRole = keyof typeof type;
+export type TypeRole = keyof typeof typeRoles;
 
 export const dynamicType = { iosCurveAbovePt: 17, androidMaxScale: 1.3 } as const;
 

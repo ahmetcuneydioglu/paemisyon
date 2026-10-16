@@ -5,7 +5,7 @@ Tek kaynak `design-tokens.json`. Üç hedef `build/` altında ÜRETİLİR, elle 
 | Hedef | Tüketen | Nasıl |
 |---|---|---|
 | `build/tokens.css` | `apps/web`, `apps/admin` | `globals.css` içinden `@import` (F7 ile); CSS değişkenleri `--color-*`, `--type-*`, `--space-*`, `--radius-*`, `--motion-*` |
-| `build/tokens.ts` | Expo uygulaması (F1+), web bileşenleri | `palette`, `type`, `space`, `radius`, `motion`, `size`, `a11y` sabitleri; tipli |
+| `build/tokens.ts` | Expo uygulaması (F1+), web bileşenleri | `palette`, `typeRoles`, `space`, `radius`, `motion`, `size`, `a11y` sabitleri; tipli |
 | `build/tokens.dart` | Flutter (yalnız bakım süresince) | `NobetDark`, `NobetLight`, `NobetSpace`, `NobetRadius`, `NobetSize` |
 
 ## Komutlar
@@ -13,7 +13,7 @@ Tek kaynak `design-tokens.json`. Üç hedef `build/` altında ÜRETİLİR, elle 
 ```bash
 node packages/tokens/build.mjs          # üret
 node packages/tokens/build.mjs --check  # CI: üretilen kaynakla eşit mi
-node --test packages/tokens/            # kontrast ve tutarlılık testleri
+node --test packages/tokens/kontrast.test.mjs            # kontrast ve tutarlılık testleri
 ```
 
 Değer değiştirme akışı: JSON'u düzenle → `build.mjs` çalıştır → testler → üretilen
