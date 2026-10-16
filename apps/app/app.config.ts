@@ -25,7 +25,7 @@ const config: ExpoConfig = {
   locales: { tr: "./locales/tr.json" },
   ios: {
     bundleIdentifier: "com.paemisyon.paemisyon",
-    buildNumber: "1",
+    // buildNumber EAS'ta uzaktan tutulur (appVersionSource: remote); burada yazılmaz.
     // Ücretli takım (mağaza profillerinin takımı); kişisel takım yetenekleri imzalayamaz.
     appleTeamId: "3U4QPG9Q82",
     // FCM (sunucu firebase-admin ile gönderir); Flutter ile aynı Firebase projesi.

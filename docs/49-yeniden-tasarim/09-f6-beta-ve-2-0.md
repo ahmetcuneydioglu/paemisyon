@@ -61,4 +61,10 @@ Sürüm notu taslağı:
 
 ## 5. İlerleme
 
-(aşağıya işlenir)
+- 16 Eki 2026: EAS projesi @ahmetcnd/paemisyon (1c502a04-…); production/preview ortam
+  değişkenleri EAS'ta; Apple kimlik bilgileri EAS'ta (dağıtım sertifikası + profil yeni,
+  push anahtarı W94LUR5B6Y gys-mobil ile ortak — FCM için Firebase'deki anahtar geçerli).
+- İlk derleme (build 1) "Install dependencies"te düştü: Mac'te `expo install --fix` kilidi
+  yeniden yazınca `@emnapi/core|runtime` (wasm isteğe bağlı) girdileri düşmüş; EAS'ın npm 10.9
+  `npm ci` reddetti. Kural: **kilit yalnız node:22 konteynerinde üretilir, Mac'te npm install
+  sonrası yeniden üretilir.** Build 2 kuyruğa alındı.
