@@ -36,6 +36,14 @@ export class UpdateProfileDto {
   @Max(200)
   dailyGoal?: number;
 
+  /** Günlük çalışma süresi hedefi, dakika (Doc 49 S1-D). null = temizle. */
+  @IsOptional()
+  @ValidateIf((_, v) => v !== null)
+  @IsInt()
+  @Min(5)
+  @Max(600)
+  dailyMinutes?: number | null;
+
   /**
    * Hedef sınav tarihi, "YYYY-MM-DD" (Doc 25 §3: exam_mode/taper tetikleri).
    * null göndermek tarihi temizler ("sınav tarihim belli değil").

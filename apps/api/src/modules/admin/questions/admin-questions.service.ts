@@ -353,7 +353,12 @@ export class AdminQuestionsService {
       });
       await tx.questionVersion.update({
         where: { id: version.id },
-        data: { status: 'published', publishedAt: new Date(), reviewedBy: actor.id },
+        data: {
+          status: 'published',
+          publishedAt: new Date(),
+          reviewedBy: actor.id,
+          lastReviewedAt: new Date(),
+        },
       });
       await tx.question.update({ where: { id }, data: { currentVersionId: version.id } });
     });
@@ -393,7 +398,7 @@ export class AdminQuestionsService {
     const temizNot = note?.trim() || null;
     await this.prisma.questionVersion.update({
       where: { id: version.id },
-      data: { status: 'draft', reviewNote: temizNot },
+      data: { status: 'draft', reviewNote: temizNot, lastReviewedAt: new Date() },
     });
     await this.audit.log(actor, 'question.reject', 'question', id, {
       versionNo: version.versionNo,
@@ -519,7 +524,12 @@ export class AdminQuestionsService {
             });
             await tx.questionVersion.update({
               where: { id: v.id },
-              data: { status: 'published', publishedAt: new Date(), reviewedBy: actor.id },
+              data: {
+                status: 'published',
+                publishedAt: new Date(),
+                reviewedBy: actor.id,
+                lastReviewedAt: new Date(),
+              },
             });
             await tx.question.update({
               where: { id: v.questionId },

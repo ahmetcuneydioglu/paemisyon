@@ -17,7 +17,12 @@ export class UsersService {
   /** Onboarding (Doc 24 Gün 0 — 3 soru): sınav + tarih + günlük hedef; idempotent. */
   async completeOnboarding(
     userId: string,
-    dto: { moduleId: string; targetExamDate?: string | null; dailyGoal?: number },
+    dto: {
+      moduleId: string;
+      targetExamDate?: string | null;
+      dailyGoal?: number;
+      dailyMinutes?: number;
+    },
   ) {
     const module = await this.prisma.examType.findFirst({
       where: { id: dto.moduleId, isActive: true },
@@ -30,6 +35,7 @@ export class UsersService {
         preferredModuleId: dto.moduleId,
         onboardingCompletedAt: new Date(), // tekrar çağrılırsa tarih tazelenir, sorun değil
         dailyGoal: dto.dailyGoal,
+        dailyMinutes: dto.dailyMinutes,
         targetExamDate:
           dto.targetExamDate === undefined
             ? undefined
@@ -63,6 +69,7 @@ export class UsersService {
         avatarUrl: dto.avatarUrl,
         preferredModuleId: dto.preferredModuleId,
         dailyGoal: dto.dailyGoal,
+        dailyMinutes: dto.dailyMinutes,
         targetExamDate:
           dto.targetExamDate === undefined
             ? undefined
@@ -78,6 +85,7 @@ export class UsersService {
       avatarUrl: updated.avatarUrl,
       preferredModule: updated.preferredModule,
       dailyGoal: updated.dailyGoal,
+      dailyMinutes: updated.dailyMinutes,
       targetExamDate: updated.targetExamDate?.toISOString().slice(0, 10) ?? null,
     };
   }

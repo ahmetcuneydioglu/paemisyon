@@ -27,6 +27,11 @@ import {
   PERSONAL_EXAM_MAX_QUESTIONS,
 } from '../../common/plan.constants';
 import { gunAnahtari, gunBaslangici } from '../../common/gun';
+import {
+  OKUMA_KAYDI_TAVAN_SN,
+  calismaSaniyesi,
+  calismaSuresiEkle,
+} from '../../common/calisma-suresi';
 
 /// GET/PATCH /api/v1/me — profil + entitlement (Doc 7 §4.2). Kimlik zorunlu.
 @Controller('me')
@@ -235,9 +240,15 @@ export class UsersController {
   @Post('reading-progress')
   async saveReadingProgress(
     @CurrentUser() user: AuthenticatedUser,
-    @Body() body: { lawSlug?: string; no?: string },
+    @Body() body: { lawSlug?: string; no?: string; seconds?: number },
   ) {
     if (!body.lawSlug || !body.no) return { ok: false };
+    // Okuma süresi (Doc 49 S1-D, isteğe bağlı): günün çalışma süresine eklenir.
+    const okumaSn = calismaSaniyesi(
+      typeof body.seconds === 'number' ? body.seconds * 1000 : null,
+      OKUMA_KAYDI_TAVAN_SN,
+    );
+    if (okumaSn > 0) void calismaSuresiEkle(this.prisma, user.id, okumaSn);
     const leg = await this.prisma.legislation.findFirst({
       where: { slug: body.lawSlug, status: 'published', deletedAt: null },
       select: { id: true },
@@ -318,6 +329,7 @@ export class UsersController {
       onboardingCompleted: profile?.onboardingCompletedAt != null,
       preferredModule: profile?.preferredModule ?? null,
       dailyGoal: profile?.dailyGoal ?? 20,
+      dailyMinutes: profile?.dailyMinutes ?? null,
       targetExamDate: profile?.targetExamDate?.toISOString().slice(0, 10) ?? null,
       memberSince: profile?.createdAt?.toISOString() ?? null,
       roles: user.roles,
@@ -354,6 +366,7 @@ export class UsersController {
           select: {
             displayName: true,
             onboardingCompletedAt: true,
+            dailyMinutes: true,
             preferredModule: { select: { id: true, name: true } },
           },
         }),
@@ -392,6 +405,9 @@ export class UsersController {
       },
       today: {
         answered: usage?.questionsAnswered ?? 0,
+        /** Günün çalışma süresi ve dakika hedefi (Doc 49 S1-D) — koç "12/30 dk". */
+        studySeconds: usage?.studySeconds ?? 0,
+        dailyMinutes: profile?.dailyMinutes ?? null,
         // premium'da limit yok (null) — UI sınırsız gösterir.
         dailyLimit: user.isPremium
           ? null

@@ -175,4 +175,18 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   `POST /quiz/sessions/:id/answers {flagged?}` — yalnız açıkça gönderilince değişir
   (cevap güncellemesi bayrağı silmez); `GET /exams/attempts/:id` review satırına
   `flagged` eklendi. Spec: `lists.service.spec.ts` (4), ilgili 60 test yeşil. Backfill
-  gerekmez (boş başlar). İstemci tarafı F8'in işi.
+  gerekmez (boş başlar). İstemci tarafı F8'in işi. **Canlı doğrulama (17 Eki,
+  main f4bf00a, geçici hesapla):** liste aç/ekle/tekrar ekle (count sabit)/detay/
+  PATCH/sil, not PUT/GET/DELETE, 4. listede 403 `LIST_LIMIT_REACHED`, `listId` turu 2
+  soru açtı, `flagged:true` cevap sonrası bayraksız yeniden cevapta bayrak KORUNDU
+  (DB: flagged=true, yeni şık), `listId+topicId` 400; hesap `DELETE /me` ile silindi.
+- **S1-D günlük süre + inceleme damgası (17 Eki 2026):** `users.daily_minutes`,
+  `daily_usage.study_seconds`, `question_versions.last_reviewed_at` (migration
+  20261017150000). `PATCH /me` ve `POST /me/onboarding` `dailyMinutes` (5–600, PATCH'te
+  null temizler); `GET /me` ve `GET /me/dashboard.today` `dailyMinutes` + `studySeconds`
+  döner. Süre tek yardımcıdan yazılır (`common/calisma-suresi.ts`, atomik upsert, kota
+  sayaçlarına dokunmaz, hata yutulur): quiz cevabı `timeSpentMs` (cevap başına ≤10 dk,
+  yeniden cevapta da eklenir), `POST /me/reading-progress` isteğe bağlı `seconds`
+  (kayıt başına ≤30 dk). `lastReviewedAt`: panel yayına alma (tekil + toplu) ve
+  taslağa iade yazar; tazeleme betikleri ileride aynı alanı yazar. Backfill yok. Spec
+  `calisma-suresi.spec.ts` (2); ilgili 165 test yeşil.

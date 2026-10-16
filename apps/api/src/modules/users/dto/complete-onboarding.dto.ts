@@ -17,4 +17,11 @@ export class CompleteOnboardingDto {
   @Min(5)
   @Max(200)
   dailyGoal?: number;
+
+  /// Günlük çalışma süresi, dakika (Doc 49 S1-D): seçimin kendisi de saklanır.
+  @IsOptional()
+  @IsInt()
+  @Min(5)
+  @Max(600)
+  dailyMinutes?: number;
 }

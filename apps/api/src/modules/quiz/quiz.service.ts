@@ -27,6 +27,7 @@ import {
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { enGucluKonular, enZayifKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, gunMetni } from '../../common/gun';
+import { calismaSaniyesi, calismaSuresiEkle } from '../../common/calisma-suresi';
 import { tekrarKaydiFiltresi, yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
 import { hizliMi, srsGuncelle } from './srs';
 import { YARIM_TUR_MODLARI, turuTerkEt } from './yarim-tur';
@@ -1192,6 +1193,10 @@ export class QuizService {
           ? this.countExamAnswer(user)
           : Promise.resolve(null),
     ]);
+    // Günün çalışma süresi (Doc 49 S1-D): cevap süresi, cevap başına ≤10 dk; en iyi
+    // çaba, kritik yolu beklemez. Yeniden cevaplamada da eklenir (süre harcandı).
+    const cevapSn = calismaSaniyesi(dto.timeSpentMs);
+    if (cevapSn > 0) void calismaSuresiEkle(this.prisma, user.id, cevapSn);
     // Günün İLK cevabı → aktiflik (seri + son aktif gün) cevap anında (Doc 48 D3).
     // Sayaç atomik: iki eşzamanlı cevaptan yalnız biri 1 görür. Günde bir kez.
     if (gununIlkCevabi || gununToplami === 1) {
