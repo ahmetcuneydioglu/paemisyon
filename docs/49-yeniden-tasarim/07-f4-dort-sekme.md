@@ -111,6 +111,25 @@ Sıra: K1→K5, D1→D5, P1→P4, B1→B3; her blok simülatörde doğrulanır, 
 | Çevrimdışı cevap kuyruğu | ✓ (alıştırma) | ✗ | F5 |
 | Soru içi favori ⭐, hata bildir, AI açıklama (alıştırmada) | ✓ | ✗ (incelemede var) | F5: oynatıcı araç satırı |
 
+## 5a. Doğrulama (16 Eki 2026, iPhone 17, beta hesabı Lukas)
+
+- Kütüphane: dersler gerçek doğrulukla; "kaldığın yer" → okuyucu PVSK md. 4/A'ya atladı; madde
+  kaydet/kaldır sunucuya yazıldı; okuma ilerlemesi 20 sn sonra md. 5 olarak göründü; arama
+  "cmk 90" → CMK md. 90; ders detay (Ceza Hukuku %12, 41 soru, 34 açık yanlış) → konu sheet'i →
+  Madde Atlası (TCK 196 madde, 1 kısmi).
+- Denemeler: kişisel deneme kartı hakkı sunucudan (1/25); çıkmış sınavlar PAEM 10/9/8; PAEM 10
+  arşiv denemesi oynatıcıda açıldı (2:04:58, 100 soru), ilk şık 220 ms sonra ilerledi, optik
+  form, "Bitir" onayı (99 boş), sonuç ekranı (%0 doğruluk, kaybettiren konular, inceleme).
+- Performans: seri 2 (en uzun 17), %63, 1893 soru / 169 tur; 33/84 aktif gün; iki deneme neti.
+- Ben: profil (plan ücretsiz, 8/10 rozet, sıradaki "30 Gün Seri"), ayarlar formu.
+- Tip ve lint temiz (React Compiler kuralları: ref/`setState` effect dışında).
+
+## 5b. Figma aynası
+
+"Paemisyon 2.0 — Nöbet" dosyasına **F4 — Dört sekme** sayfası eklendi: aktif sekme varyantlı
+`TabBar / Sekmeler` seti; Kütüphane ana · ders detay · okuyucu; Denemeler ana · oynatıcı deneme
+modu · deneme sonucu; Performans ana · Ben profil · ayarlar (koyu). Açık tema koleksiyon modu.
+
 ## 6. Dışarıda bırakılanlar (gerekçeli)
 
 - Okuyucuda **metin vurgulama** (highlight): RN'de seçim ofseti güvenilir değil; F5'te
