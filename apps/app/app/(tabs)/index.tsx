@@ -1,104 +1,230 @@
-import { View } from "react-native";
-import { AppText, Card, Notice, Screen, Skeleton } from "@/components/ui";
-import { useCoachBrief, useMe } from "@/features/home/queries";
+import { useQueryClient } from "@tanstack/react-query";
+import { useRouter } from "expo-router";
+import { ChevronDown } from "lucide-react-native";
+import { useState } from "react";
+import { Pressable, View } from "react-native";
+import { CountdownHeader, CourseTile, TaskHero } from "@/components/domain";
+import { ActionBar, AppText, Badge, Button, Card, ListRow, Notice, Screen, Skeleton } from "@/components/ui";
+import { FocusSheet } from "@/features/home/focus-sheet";
+import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction } from "@/features/home/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
- * Bugün — F1 iskeleti: gerçek /me/coach verisiyle durum satırı ve görev kartı. Yerleşim B,
- * sekiz durum, odak sheet'i ve sabit eylem çubuğu F3'te tasarım sistemiyle gelir.
+ * Bugün — Yerleşim B (Doc 48/02 kararı): görev kartı bağlamı anlatır; birincil eylem ve odak
+ * sekme çubuğunun üstündeki sabit çubukta. Sekiz durum sunucunun `todayTask.kind` alanından
+ * çizilir; istemci kural bilmez. Çevrimdışı: son bilinen brief + devre dışı CTA ve nedeni.
  */
 export default function BugunScreen() {
-  const { space } = useTheme();
+  const router = useRouter();
+  const qc = useQueryClient();
+  const { colors, space } = useTheme();
   const me = useMe();
   const brief = useCoachBrief();
+  const [focusOpen, setFocusOpen] = useState(false);
+
+  const offline = brief.isError && brief.error instanceof NetworkError;
+  const data = brief.data; // hata durumunda da son bilinen veri (react-query önbelleği)
+  const task = data?.todayTask ?? null;
 
   const selamlama = (() => {
     const h = new Date().getHours();
     return h < 6 ? "İyi nöbetler" : h < 12 ? "Günaydın" : h < 18 ? "İyi günler" : "İyi akşamlar";
   })();
 
+  function run(action: TodayTaskAction) {
+    if (action.type === "open_exams") {
+      router.push("/(tabs)/denemeler");
+      return;
+    }
+    if (action.type === "resume_session" && action.sessionId) {
+      router.push({ pathname: "/seans", params: { resume: action.sessionId, source: action.source } });
+      return;
+    }
+    router.push({
+      pathname: "/seans",
+      params: {
+        source: action.source,
+        count: String(action.count ?? 10),
+        recipe: action.recipe ?? "",
+        focusKind: action.focus?.kind ?? "coach",
+        courseId: action.focus?.courseId ?? "",
+        topicId: action.focus?.topicId ?? "",
+      },
+    });
+  }
+
   return (
-    <Screen>
-      <View style={{ gap: space.s1 }}>
-        <AppText variant="bodySm" tone="soft">
-          {selamlama}
-          {me.data?.displayName ? `, ${me.data.displayName}` : ""}
-        </AppText>
-        <AppText variant="title">Bugün</AppText>
-      </View>
-
-      {brief.isPending ? (
-        <View style={{ gap: space.s3 }}>
-          <Skeleton height={76} radiusKey="card" />
-          <Skeleton height={160} radiusKey="card" />
+    <View style={{ flex: 1, backgroundColor: colors.bg }}>
+      <Screen style={{ paddingBottom: 140 }}>
+        <View style={{ gap: space.s1 }}>
+          <AppText variant="bodySm" tone="soft">
+            {selamlama}
+            {me.data?.displayName ? `, ${me.data.displayName}` : ""}
+          </AppText>
+          <AppText variant="title">Bugün</AppText>
         </View>
-      ) : brief.isError ? (
-        <Notice tone="error" title={brief.error instanceof NetworkError ? "Bağlantı yok" : "Koç yüklenemedi"}>
-          {brief.error instanceof ApiError ? `${brief.error.message} (${brief.error.code})` : brief.error.message}
-        </Notice>
-      ) : (
-        <>
-          <View style={{ flexDirection: "row", gap: space.s3 }}>
-            <Card style={{ flex: 1 }}>
-              <AppText variant="label" tone="subtle">
-                {brief.data.exam.name ?? "Hedef sınav"}
-              </AppText>
-              <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>
-                <AppText variant="stat">{brief.data.exam.daysLeft ?? "—"}</AppText>
-                <AppText variant="bodySm" tone="soft">
-                  gün
-                </AppText>
-              </View>
-            </Card>
-            <Card style={{ flex: 1 }}>
-              <AppText variant="label" tone="subtle">
-                Bu hafta
-              </AppText>
-              <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>
-                <AppText variant="stat">
-                  {brief.data.weeklyPhoto?.activeDays ?? 0}
-                  <AppText variant="stat" tone="subtle">
-                    /{brief.data.weeklyPhoto?.targetDays ?? 5}
-                  </AppText>
-                </AppText>
-                <AppText variant="bodySm" tone="soft">
-                  gün
-                </AppText>
-              </View>
-            </Card>
+
+        {offline ? (
+          <Notice tone="warning" title="Çevrimdışısın">
+            {data ? "Son bilinen durum gösteriliyor; yeni tur için bağlantı gerekiyor." : "Bağlantı gelince Bugün yüklenecek."}
+          </Notice>
+        ) : brief.isError ? (
+          <Notice tone="error" title="Koç yüklenemedi">
+            {brief.error instanceof ApiError ? `${brief.error.message} (${brief.error.code})` : brief.error.message}
+          </Notice>
+        ) : null}
+
+        {!data && brief.isPending ? (
+          <View style={{ gap: space.s3 }}>
+            <Skeleton height={64} radiusKey="card" />
+            <Skeleton height={180} radiusKey="card" />
+            <Skeleton height={220} radiusKey="card" />
           </View>
+        ) : data ? (
+          <>
+            <CountdownHeader
+              examName={data.exam.name}
+              daysLeft={data.exam.daysLeft}
+              activeDays={data.gamification?.weekly?.activeDays ?? 0}
+              targetDays={data.gamification?.weekly?.goalDays ?? 5}
+              todayIndex={todayIndexTr()}
+            />
 
-          <Card>
-            <AppText variant="label" tone="accentInk">
-              Bugünün görevi
-            </AppText>
-            <AppText variant="heading">{brief.data.todayTask?.title ?? "Görev hazırlanıyor"}</AppText>
-            {brief.data.todayTask?.subtitle ? (
-              <AppText variant="bodySm" tone="soft">
-                {brief.data.todayTask.subtitle}
-              </AppText>
-            ) : null}
-            <AppText variant="bodySm" tone="subtle">
-              Tür: {brief.data.todayTask?.kind ?? "yok"} · Çözülmemiş yanlış: {brief.data.readiness.unresolvedWrongCount}
-            </AppText>
-          </Card>
-
-          <Card tone="alt">
-            <AppText variant="label" tone="subtle">
-              Hazırlık
-            </AppText>
-            {brief.data.readiness.courses.slice(0, 4).map((c) => (
-              <View key={c.courseId} style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                <AppText variant="subhead">{c.name}</AppText>
-                <AppText variant="subhead" tone={c.state === "weak" ? "danger" : "soft"}>
-                  {c.accuracy == null ? "—" : `%${Math.round(c.accuracy * 100)}`}
-                </AppText>
+            {task ? (
+              <View style={{ gap: space.s2 }}>
+                <TaskHero
+                  kind={task.kind}
+                  title={task.title}
+                  body={task.reason}
+                  meta={task.action.type === "start_session" && task.action.count ? `${task.action.count} soru` : task.progress?.label ?? null}
+                  progress={task.progress ? { done: task.progress.answered, total: task.progress.total } : null}
+                />
+                {task.kind === "resume" && task.finishSessionId ? (
+                  <Button title="Şimdilik bitir, sonucu gör" variant="ghost" onPress={() => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } })} />
+                ) : null}
+                {task.secondary ? (
+                  <Card style={{ paddingVertical: 0 }}>
+                    <ListRow title={task.secondary.title} subtitle={task.secondary.subtitle} divider={false} onPress={() => run(task.secondary!.action)} trailing={<AppText variant="subhead" tone="accentInk">{task.secondary.actionLabel}</AppText>} chevron={false} />
+                  </Card>
+                ) : null}
               </View>
-            ))}
-          </Card>
-        </>
-      )}
-    </Screen>
+            ) : null}
+
+            {/* Hazırlık (Doc 48/02 karar 1–2): zayıf konular başta; dönüşte gizli. */}
+            <View style={{ gap: space.s2 }}>
+              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
+                <AppText variant="heading" accessibilityRole="header">
+                  Hazırlık
+                </AppText>
+                <Pressable accessibilityRole="button" onPress={() => router.push("/(tabs)/kutuphane")} hitSlop={8}>
+                  <AppText variant="subhead" tone="accentInk">
+                    Tüm dersler
+                  </AppText>
+                </Pressable>
+              </View>
+
+              {task?.kind !== "comeback" && data.readiness.weakest.length > 0 ? (
+                <Card style={{ paddingVertical: 0 }}>
+                  <View style={{ paddingTop: space.s3 }}>
+                    <AppText variant="label" tone="subtle">
+                      En zayıf {data.readiness.weakest.length} konu
+                    </AppText>
+                  </View>
+                  {data.readiness.weakest.map((t, i) => (
+                    <ListRow
+                      key={t.topicId}
+                      title={t.name}
+                      subtitle={`${t.courseName} · %${Math.round(t.accuracy * 100)} doğru`}
+                      divider={i < data.readiness.weakest.length - 1}
+                      chevron={false}
+                      trailing={
+                        <AppText variant="subhead" tone="accentInk">
+                          10 soru ›
+                        </AppText>
+                      }
+                      onPress={() =>
+                        router.push({ pathname: "/seans", params: { source: "home_weak_topic", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })
+                      }
+                    />
+                  ))}
+                </Card>
+              ) : null}
+
+              {data.readiness.courses.length > 0 ? (
+                <Card style={{ paddingVertical: space.s1 }}>
+                  {data.readiness.courses.map((c) => (
+                    <CourseTile key={c.courseId} name={c.name} icon={c.icon} accuracy={c.accuracy} solved={c.solved} state={c.state} onPress={() => router.push({ pathname: "/seans", params: { source: "home_suggestion", count: "10", focusKind: "course", courseId: c.courseId, topicId: "", recipe: "" } })} />
+                  ))}
+                </Card>
+              ) : (
+                <Card>
+                  <AppText variant="subhead">Henüz ölçüm yok</AppText>
+                  <AppText variant="bodySm" tone="soft">
+                    İlk turdan sonra dersler ve doğruluk burada görünür. Sıfır yazmıyoruz; henüz ölçülmedi.
+                  </AppText>
+                </Card>
+              )}
+            </View>
+          </>
+        ) : null}
+      </Screen>
+
+      {/* Yerleşim B: sabit eylem çubuğu — odak düğmesi + sunucunun verdiği birincil eylem. */}
+      {task ? (
+        <View style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
+          <BugunActionBar
+            label={task.action.label}
+            kind={task.kind}
+            focusLabel={data?.focus?.kind && data.focus.kind !== "coach" ? (data.focus.label ?? "Seçili") : "Koç"}
+            disabled={offline && task.action.type !== "resume_session"}
+            onFocus={() => setFocusOpen(true)}
+            onPress={() => run(task.action)}
+          />
+        </View>
+      ) : null}
+
+      <FocusSheet
+        visible={focusOpen}
+        onClose={() => {
+          setFocusOpen(false);
+          void qc.invalidateQueries({ queryKey: homeKeys.brief });
+        }}
+        focus={data?.focus ?? null}
+        moduleId={me.data?.preferredModule?.id}
+        unresolvedWrongCount={data?.readiness.unresolvedWrongCount ?? 0}
+        startLabel={task?.action.label ?? "Başlat"}
+        onStart={() => {
+          setFocusOpen(false);
+          if (task) run(task.action);
+        }}
+      />
+    </View>
+  );
+}
+
+function BugunActionBar({ label, kind, focusLabel, disabled, onFocus, onPress }: { label: string; kind: string; focusLabel: string; disabled: boolean; onFocus: () => void; onPress: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const showFocus = kind !== "resume" && kind !== "exam";
+  return (
+    <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: space.s3, backgroundColor: colors.bg, borderTopWidth: 0.5, borderTopColor: colors.line, flexDirection: "row", gap: space.s2 }}>
+      {showFocus ? (
+        <Pressable accessibilityRole="button" accessibilityLabel={`Odak: ${focusLabel}`} onPress={onFocus} style={({ pressed }) => ({ minHeight: 54, minWidth: 92, borderRadius: radius.card, borderWidth: 0.5, borderColor: colors.line, backgroundColor: colors.surface, paddingHorizontal: 12, justifyContent: "center", opacity: pressed ? 0.8 : 1 })}>
+          <AppText variant="label" tone="subtle">
+            Odak
+          </AppText>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 2 }}>
+            <AppText variant="subhead" numberOfLines={1} style={{ maxWidth: 110 }}>
+              {focusLabel}
+            </AppText>
+            <ChevronDown color={colors.inkSoft} size={16} strokeWidth={2} />
+          </View>
+        </Pressable>
+      ) : null}
+      <View style={{ flex: 1 }}>
+        <ActionBar title={label} onPress={onPress} variant={kind === "done" ? "secondary" : "primary"} />
+      </View>
+      {disabled ? <Badge tone="warning" style={{ position: "absolute", top: -10, right: space.screenGutter }}>Çevrimdışı</Badge> : null}
+    </View>
   );
 }

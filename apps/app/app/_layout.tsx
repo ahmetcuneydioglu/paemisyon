@@ -82,6 +82,9 @@ function RootNavigator() {
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="galeri" options={{ presentation: "modal" }} />
+        {/* Oynatıcılar tam ekran (Doc 25 §7); kaydırarak geri kapalı, çıkış onayla. */}
+        <Stack.Screen name="seans" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
+        <Stack.Screen name="sonuc" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
       </Stack>
     </View>
   );
