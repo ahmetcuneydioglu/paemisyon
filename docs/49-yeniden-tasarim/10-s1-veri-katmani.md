@@ -200,3 +200,7 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   **S1 kapanış:** beş migration prod'da sırayla (A 16 Eki, B–C 17 Eki, D–E bu push'la),
   mevcut uçların yanıt şekli değişmedi (yalnız alan EKLENDİ), Flutter 1.x ve Expo 2.0
   etkilenmedi; backfill raporu S1-B'de, diğer parçalar boş başlar.
+  **Canlı doğrulama (17 Eki, main aa94745, geçici hesapla):** iki migration prod'da;
+  `GET /me/plan` → `{plan:null}`; `PATCH /me dailyMinutes` 30 yazıldı, 3 → 400, null
+  temizledi; `GET /me` ve `dashboard.today` alanları döndü; okuma kaydı 120 sn + 99999 sn
+  → `studySeconds` 1920 (kayıt tavanı 1800 uygulandı). Hesap `DELETE /me` ile silindi.
