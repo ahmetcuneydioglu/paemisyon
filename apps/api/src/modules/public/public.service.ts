@@ -736,7 +736,7 @@ export function articleSlug(no: string): string {
 }
 
 /** Kök teaser'ı: kelime sınırında kes, tek satıra indir. */
-function truncate(s: string, max: number): string {
+export function truncate(s: string, max: number): string {
   const flat = s.replace(/\s+/g, ' ').trim();
   if (flat.length <= max) return flat;
   return `${flat.slice(0, max).replace(/\s+\S*$/, '')}…`;

@@ -1,0 +1,201 @@
+{
+  "ozet": {
+    "tarih": "2026-10-16T21:26:39.616Z",
+    "mod": "dry-run",
+    "etiketliSoru": 3879,
+    "soruDurumu": {
+      "published": 3878,
+      "versiyonsuz": 1
+    },
+    "baglananSoru": 3855,
+    "bag": {
+      "toplam": 3876,
+      "primary": 3855,
+      "related": 21
+    },
+    "tekMadde": 3841,
+    "listeMadde": 14,
+    "fikraEkiDusen": 1,
+    "kusur": {
+      "toplam": 24,
+      "nedenlere": {
+        "konuda_madde_yok": 23,
+        "madde_bulunamadi": 0,
+        "aralik": 1,
+        "bos": 0
+      }
+    },
+    "yazilan": 0,
+    "tablodaToplam": "tablo henüz yok"
+  },
+  "kusurlar": [
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Atatürk İlkeleri ve İnkılap Tarihi",
+      "articleNo": "24",
+      "questionId": "2ecb74f5-ad36-4fe4-bb86-99ee7a48b5fa",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Protokol Bilgisi",
+      "articleNo": "1",
+      "questionId": "86a8a8a6-adf1-4966-b7cc-b12ca96d006c",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Atatürk İlkeleri ve İnkılap Tarihi",
+      "articleNo": "7",
+      "questionId": "6ef70de5-3277-4a92-bb88-2a01ef864df1",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Protokol Bilgisi",
+      "articleNo": "24",
+      "questionId": "b8f4fcec-6fe4-45ce-a2e6-c18e1ed4fe60",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Protokol Bilgisi",
+      "articleNo": "22",
+      "questionId": "28564a9d-89e4-4545-8b7a-700cea332b3d",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Protokol Bilgisi",
+      "articleNo": "27",
+      "questionId": "ffd863fd-639c-40ba-b818-3eac5ad2c2e2",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Protokol Bilgisi",
+      "articleNo": "27",
+      "questionId": "16a22e9a-483c-4675-88d9-77d8b35a8cbe",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İdare Hukuku",
+      "articleNo": "6",
+      "questionId": "0dee6e7b-6348-4817-a33b-49106ad26426",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Genel Kültür",
+      "articleNo": "3",
+      "questionId": "d89e23a7-ee8c-497b-ae48-849ff1d727c4",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Anayasa",
+      "articleNo": "118",
+      "questionId": "f2ab681b-6fd8-4191-acd8-14047b2a7220",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Atatürk İlkeleri ve İnkılap Tarihi",
+      "articleNo": "2",
+      "questionId": "16cd3c7f-da6c-4a6f-967f-3a09eba02db7",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İnsan Hakları",
+      "articleNo": "4",
+      "questionId": "f0a6239e-c468-4ece-a924-06e6fa827a33",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "Genel Kültür",
+      "articleNo": "7",
+      "questionId": "b177b2f6-8631-4f64-9391-34c1f0a13a4e",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İnsan Hakları",
+      "articleNo": "59",
+      "questionId": "71d75220-a8f8-4355-acab-21fd919f2919",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İdare Hukuku",
+      "articleNo": "127",
+      "questionId": "15777d97-7df5-4e9a-ab2a-cc390b2d3dad",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İdare Hukuku",
+      "articleNo": "124",
+      "questionId": "23d79367-93f5-423a-86a8-b16c8a1561a8",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İdare Hukuku",
+      "articleNo": "48/6",
+      "questionId": "1d3d77b5-7179-4540-a138-8a33bf2a666a",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "İdare Hukuku",
+      "articleNo": "125",
+      "questionId": "1e31d171-b321-4c97-9056-91e8216ed398",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+      "articleNo": "102",
+      "questionId": "5cfebb57-09d1-4c5f-b207-5d09afcfd8cc",
+      "status": null
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+      "articleNo": "102",
+      "questionId": "bff6766d-8d5f-4f3a-86d4-fc7bdbad4524",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+      "articleNo": "102",
+      "questionId": "b178c67d-3862-4b54-b2be-c97565ecc70d",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+      "articleNo": "102",
+      "questionId": "1eb06eb0-11c8-4ac0-8906-778091424e42",
+      "status": "published"
+    },
+    {
+      "neden": "konuda_madde_yok",
+      "topic": "6458 Sayılı Yabancılar ve Uluslararası Koruma Kanunu",
+      "articleNo": "102",
+      "questionId": "068897c3-85b6-41e4-b97e-0d54c75bfecc",
+      "status": "published"
+    },
+    {
+      "neden": "aralik",
+      "topic": "Türk Ceza Kanunu",
+      "articleNo": "45-49",
+      "questionId": "51e1dcb6-4f61-4e3a-9d8a-291ab1789c44",
+      "status": "published"
+    }
+  ]
+}

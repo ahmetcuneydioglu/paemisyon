@@ -1,7 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { articleSlug } from './public.service';
+import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
+import { articleSlug, truncate } from './public.service';
 
 /**
  * Mevzuat Merkezi public uçları (Doc 29 §12). Kanun kimliği artık kalıcı
@@ -16,6 +17,8 @@ import { articleSlug } from './public.service';
 /** Highlight ayraçları — istemci bunlara bölerek vurgular (metinde geçmez). */
 export const HL_OPEN = '⟪';
 export const HL_CLOSE = '⟫';
+/** Madde soru listesinde en çok gösterilen önizleme (sayım `count` tam kalır). */
+export const ARTICLE_QUESTIONS_LIMIT = 20;
 
 type LegislationRow = {
   id: string;
@@ -184,6 +187,94 @@ export class MevzuatService {
         questionCount: qMap.get(a.articleNo) ?? 0,
       })),
     };
+  }
+
+  /**
+   * GET /public/mevzuat/:slug/:no/questions (Doc 49 S1-B §2) — maddeye BAĞLI
+   * (question_articles N:N) yayımlı soruların sayısı ve kök önizlemeleri.
+   * Anahtar/şık/açıklama yok (funnel ilkesi); kaynak etiketi yok (4 Eyl kararı).
+   * Girişliyse her soru için "çözdün / son cevabın doğru muydu" eklenir.
+   * Madde yalnız YAYIMLI metinler arasından çözülür — taslak madde sızmaz.
+   */
+  async articleQuestions(slug: string, articleSlug_: string, userId?: string) {
+    const leg = await this.bySlugOr404(slug);
+    const articles = await this.prisma.lawArticle.findMany({
+      where: { legislationId: leg.id, status: 'published', deletedAt: null },
+      select: { id: true, articleNo: true, title: true },
+    });
+    const article = articles.find((a) => articleSlug(a.articleNo) === articleSlug_);
+    if (!article) throw new NotFoundException('Madde bulunamadı.');
+
+    const baglar = await this.prisma.questionArticle.findMany({
+      where: {
+        lawArticleId: article.id,
+        question: {
+          deletedAt: null,
+          currentVersion: { is: { status: 'published' } },
+          ...IPTAL_EDILMEMIS,
+        },
+      },
+      select: {
+        relation: true,
+        question: {
+          select: {
+            id: true,
+            createdAt: true,
+            currentVersion: { select: { stem: true } },
+            topic: { select: { name: true } },
+          },
+        },
+      },
+    });
+    // Dayanak (primary) önce, sonra eskiden yeniye (SEO için sabit sıra).
+    baglar.sort(
+      (a, b) =>
+        Number(b.relation === 'primary') - Number(a.relation === 'primary') ||
+        a.question.createdAt.getTime() - b.question.createdAt.getTime(),
+    );
+    const sayfa = baglar.slice(0, ARTICLE_QUESTIONS_LIMIT);
+
+    const benim = userId
+      ? await this.sonCevaplar(
+          userId,
+          sayfa.map((b) => b.question.id),
+        )
+      : null;
+
+    return {
+      lawSlug: leg.slug,
+      lawName: leg.name,
+      no: article.articleNo,
+      slug: articleSlug(article.articleNo),
+      title: article.title,
+      count: baglar.length,
+      primaryCount: baglar.filter((b) => b.relation === 'primary').length,
+      items: sayfa.map((b) => ({
+        questionId: b.question.id,
+        relation: b.relation,
+        stem: truncate(b.question.currentVersion?.stem ?? '', 200),
+        topicName: b.question.topic.name,
+        me: benim ? (benim.get(b.question.id) ?? { solved: false, correct: null }) : undefined,
+      })),
+    };
+  }
+
+  /** Kullanıcının bu sorulara SON cevabı (çözdü mü, doğru muydu) — tek sorgu. */
+  private async sonCevaplar(userId: string, questionIds: string[]) {
+    const out = new Map<string, { solved: boolean; correct: boolean | null }>();
+    if (questionIds.length === 0) return out;
+    const rows = await this.prisma.quizAnswer.findMany({
+      where: {
+        questionId: { in: questionIds },
+        selectedOptionId: { not: null },
+        session: { userId },
+      },
+      orderBy: { answeredAt: 'desc' },
+      select: { questionId: true, isCorrect: true },
+    });
+    for (const r of rows)
+      if (!out.has(r.questionId)) out.set(r.questionId, { solved: true, correct: r.isCorrect });
+    return out;
   }
 
   /** GET /public/mevzuat/:slug/oku — okuyucu: tam metin + bölümler + soru sayıları. */

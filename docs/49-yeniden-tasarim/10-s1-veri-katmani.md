@@ -1,6 +1,6 @@
 # Doc 49 / 10 — S1: Veri katmanı 2.0 (spec onaylandı 16 Eki 2026)
 
-Tarih: 16 Ekim 2026. Dal `claude/s1-veri-katmani` (henüz açılmadı). Plan: `00-plan.md` §3 S1.
+Tarih: 16 Ekim 2026. Dal `claude/s1-veri-katmani`. Plan: `00-plan.md` §3 S1.
 Amaç: F8'in dört özelliğinin (haftalık plan, aralıklı tekrar, deneme serisi, mevzuat↔soru)
 ve talimat §6/§9/§12'nin ihtiyaç duyduğu tabloları ve uçları **istemciyi bozmadan** eklemek.
 Hepsi EKLEMELİ: mevcut kolon silinmez, mevcut uçların yanıt şekli değişmez; Flutter 1.x ve
@@ -132,3 +132,29 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   {mode:'review', pool:'due'}`; `GET /review/due` `{count, dueToday, nextDueAt, sample[]}`.
   Süzgeç tek yerde (`yanlis-havuzu.ts: tekrarKaydiFiltresi`). Backfill yok: hafıza canlıda
   ilk cevaplarla dolar (soğuk başlangıç kabul edildi; 90 günlük backfill isteğe bağlı).
+- **S1-B mevzuat↔soru (17 Eki 2026):** `question_articles` + `law_article_versions`
+  (migration 20261017090000; enum `QuestionArticleRelation primary|related`,
+  `QuestionArticleSource legacy_article_no|editor|script`). Spec'ten tek sapma:
+  `effective_from` NULL olabilir — backfill'de yürürlük tarihi bilinmiyor, uydurulmaz.
+  Etiket ayrıştırma saf fonksiyon `common/madde-no.ts` (+7 spec): liste "43, 141" →
+  43 primary, 141 related; "219/1" → fıkra eki düşer, madde 219 ("4/A" harfli ek
+  maddenin kendisidir, dokunulmaz); "45-49" aralık bağlanmaz. Uç
+  `GET /public/mevzuat/:slug/:no/questions` (OptionalJwt; `{count, primaryCount,
+  items[{questionId, relation, stem≤200, topicName, me?}]}`; anahtar/kaynak etiketi
+  yok; madde yalnız yayımlı metinler arasından, soru yalnız yayımlı + iptal edilmemiş;
+  +4 spec). **Kuru çalışma raporu (prod, 17 Eki, migration öncesi):**
+
+  | Ölçü | Değer |
+  |---|---|
+  | `articleNo` etiketli soru | 3879 (3878 yayımlı, 1 sürümsüz) |
+  | Bağlanacak soru / bağ | 3855 / 3876 (3855 primary + 21 related) |
+  | Tek madde / liste / fıkra eki düşen | 3841 / 14 / 1 |
+  | Rapora düşen | 24 — 23 "konuda madde yok", 1 aralık ("45-49", TCK) |
+  | Sürüm 1 yazılacak yayımlı madde | 4892 (66 mevzuat, boş metin 0) |
+
+  "Konuda madde yok" 23 soru: Atatürk İlkeleri (3), Genel Kültür (2), İnsan Hakları
+  (2), Protokol Bilgisi (5), İdare Hukuku (5), 6458 Yabancılar (4), "Anayasa" adlı
+  ikinci konu (1 — `T.C. Anayasası`'nın yanında metinsiz kopya; birleştirme adayı,
+  S1 kapsamı dışı). Ayrıntı: `s1b-soru-madde-raporu.json` (betik her koşuda yeniler).
+  Yazım (`APPLY=1`) migration prod'a çıktıktan sonra; `createMany skipDuplicates`
+  ile idempotent, editör bağını ezmez.

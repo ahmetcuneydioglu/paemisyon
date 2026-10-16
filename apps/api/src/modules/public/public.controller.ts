@@ -1,5 +1,8 @@
-import { Body, Controller, Get, Header, Param, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Header, Param, Post, Query, UseGuards } from '@nestjs/common';
 import { Throttle } from '@nestjs/throttler';
+import { OptionalJwtGuard } from '../auth/guards/optional-jwt.guard';
+import { CurrentUser } from '../auth/decorators/current-user.decorator';
+import type { AuthenticatedUser } from '../auth/auth.types';
 import { CikmisSinavService } from './cikmis-sinav.service';
 import { MevzuatService } from './mevzuat.service';
 import { PublicService } from './public.service';
@@ -59,6 +62,21 @@ export class PublicController {
   @Header('Cache-Control', CACHE_SLOW)
   mevzuatReader(@Param('slug') slug: string) {
     return this.mevzuat.reader(slug);
+  }
+
+  /**
+   * Maddeye bağlı yayımlı sorular (Doc 49 S1-B). Girişliyse "çözdün/doğru" durumu
+   * eklenir; bu yüzden paylaşımlı cache YOK (private, kısa).
+   */
+  @Get('mevzuat/:slug/:no/questions')
+  @UseGuards(OptionalJwtGuard)
+  @Header('Cache-Control', 'private, max-age=60')
+  mevzuatArticleQuestions(
+    @Param('slug') slug: string,
+    @Param('no') no: string,
+    @CurrentUser() user?: AuthenticatedUser,
+  ) {
+    return this.mevzuat.articleQuestions(slug, no, user?.id);
   }
 
   @Get('question-of-day')

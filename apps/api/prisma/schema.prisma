@@ -372,6 +372,8 @@ model LawArticle {
   bookmarks   ArticleBookmark[]
   highlights  ArticleHighlight[]
   notes       ArticleNote[]
+  questions   QuestionArticle[]
+  versions    LawArticleVersion[]
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
@@ -514,6 +516,7 @@ model Question {
   examQuestions  ExamQuestion[]
   pastExams      PastExamQuestion[]
   reviews        QuestionReview[]
+  articles       QuestionArticle[]
 
   @@index([topicId])
   @@index([topicId, articleNo])
@@ -905,6 +908,61 @@ model QuestionReview {
   @@id([userId, questionId])
   @@index([userId, dueAt])
   @@map("question_reviews")
+}
+
+// ── Mevzuat ↔ soru (Doc 49 S1-B, `10-s1-veri-katmani.md` §1.2) ──
+
+/// Soru–madde bağı: `primary` sorunun dayandığı madde, `related` yan dayanak.
+enum QuestionArticleRelation {
+  primary
+  related
+}
+
+/// Bağın kaynağı: eski `Question.articleNo` etiketinden türetildi / editör elle
+/// bağladı / betik (madde-oner vb.) önerdi. Güven ayrımı için saklanır.
+enum QuestionArticleSource {
+  legacy_article_no
+  editor
+  script
+}
+
+/// Soru ↔ madde N:N. `Question.articleNo` KALIR (atlas onu okur); yeni uçlar
+/// bu tabloyu okur. Backfill: `s1-question-article-backfill.ts`.
+model QuestionArticle {
+  questionId   String                  @map("question_id") @db.Uuid
+  lawArticleId String                  @map("law_article_id") @db.Uuid
+  relation     QuestionArticleRelation @default(primary)
+  source       QuestionArticleSource   @default(legacy_article_no)
+  createdAt    DateTime                @default(now()) @map("created_at")
+
+  question   Question   @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  lawArticle LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@id([questionId, lawArticleId])
+  @@index([lawArticleId])
+  @@map("question_articles")
+}
+
+/// Madde metni sürümü. `LawArticle.text` her zaman GÜNCEL sürümü yansıtır;
+/// burada tarihçe tutulur (S2: metin değişince yeni sürüm + bağlı soruların
+/// yeniden incelemesi). Backfill: yayımlı her maddenin bugünkü metni = sürüm 1.
+/// `effectiveFrom` bilinmiyorsa NULL — uydurulmaz (güven ilkesi).
+model LawArticleVersion {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  lawArticleId  String    @map("law_article_id") @db.Uuid
+  versionNo     Int       @map("version_no")
+  text          String
+  sourceName    String    @map("source_name")
+  sourceUrl     String?   @map("source_url")
+  effectiveFrom DateTime? @map("effective_from") @db.Date
+  effectiveTo   DateTime? @map("effective_to") @db.Date
+  verifiedAt    DateTime? @map("verified_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  lawArticle LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@unique([lawArticleId, versionNo])
+  @@map("law_article_versions")
 }
 
 /// AI açıklama önbelleği (Doc 24 §4 Faz 2): aynı soru+şık için BİR KEZ üretilir,
