@@ -190,3 +190,13 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   (kayıt başına ≤30 dk). `lastReviewedAt`: panel yayına alma (tekil + toplu) ve
   taslağa iade yazar; tazeleme betikleri ileride aynı alanı yazar. Backfill yok. Spec
   `calisma-suresi.spec.ts` (2); ilgili 165 test yeşil.
+- **S1-E haftalık plan iskeleti (17 Eki 2026):** `study_plans` + `study_plan_items`
+  (migration 20261017170000; enum `StudyPlanStatus active|archived`,
+  `StudyPlanItemStatus pending|done|skipped`; indeksler (user_id, status),
+  (plan_id, week_start)). `GET /me/plan`: aktif plan yoksa `{plan: null}` (404 DEĞİL —
+  istemci boş durumu çizer), varsa `{plan: {id, examDate, weeklyMinutes, createdAt,
+  revisedAt, currentWeekStart, thisWeek[], items[]}}`; hafta anahtarı Pazartesi (UTC
+  takvim günü, `haftaBasi`). Yazma uçları ve üretim algoritması F8-1. Spec 3.
+  **S1 kapanış:** beş migration prod'da sırayla (A 16 Eki, B–C 17 Eki, D–E bu push'la),
+  mevcut uçların yanıt şekli değişmedi (yalnız alan EKLENDİ), Flutter 1.x ve Expo 2.0
+  etkilenmedi; backfill raporu S1-B'de, diğer parçalar boş başlar.

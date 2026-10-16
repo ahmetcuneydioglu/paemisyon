@@ -135,6 +135,7 @@ model User {
   questionReviews   QuestionReview[]
   questionNotes     QuestionNote[]
   lists             UserList[]
+  studyPlans        StudyPlan[]
   questionReports   QuestionReport[]
   badges            UserBadge[]
   masterySnapshots  TopicMasterySnapshot[]
@@ -323,6 +324,8 @@ model Topic {
   legislation      Legislation?
 
   dailyFocuses DailyFocus[]
+
+  studyPlanItems StudyPlanItem[]
 
   @@index([courseId])
   @@index([parentId])
@@ -1023,6 +1026,56 @@ model UserListItem {
   @@id([listId, questionId])
   @@index([listId, addedAt])
   @@map("user_list_items")
+}
+
+// ── Haftalık plan (Doc 49 S1-E, `10-s1-veri-katmani.md` §1.6) — şema şimdi, servis F8 ──
+
+enum StudyPlanStatus {
+  active
+  archived
+}
+
+enum StudyPlanItemStatus {
+  pending
+  done
+  skipped
+}
+
+/// Kullanıcının haftalık çalışma planı. Kullanıcı başına en çok bir `active`
+/// plan (servis kuralı; revize = eskisi archived + yeni satır). Üretim algoritması F8.
+model StudyPlan {
+  id            String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId        String          @map("user_id") @db.Uuid
+  examDate      DateTime?       @map("exam_date") @db.Date
+  weeklyMinutes Int             @map("weekly_minutes")
+  status        StudyPlanStatus @default(active)
+  createdAt     DateTime        @default(now()) @map("created_at")
+  revisedAt     DateTime?       @map("revised_at")
+
+  user  User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items StudyPlanItem[]
+
+  @@index([userId, status])
+  @@map("study_plans")
+}
+
+/// Haftalık plan kalemi: hafta başı (Pazartesi) + konu + hedef/gerçekleşen.
+model StudyPlanItem {
+  id              String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  planId          String              @map("plan_id") @db.Uuid
+  weekStart       DateTime            @map("week_start") @db.Date
+  topicId         String              @map("topic_id") @db.Uuid
+  targetQuestions Int                 @default(0) @map("target_questions")
+  targetMinutes   Int                 @default(0) @map("target_minutes")
+  doneQuestions   Int                 @default(0) @map("done_questions")
+  doneMinutes     Int                 @default(0) @map("done_minutes")
+  status          StudyPlanItemStatus @default(pending)
+
+  plan  StudyPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
+  topic Topic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@index([planId, weekStart])
+  @@map("study_plan_items")
 }
 
 /// AI açıklama önbelleği (Doc 24 §4 Faz 2): aynı soru+şık için BİR KEZ üretilir,
