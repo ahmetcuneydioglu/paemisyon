@@ -11,3 +11,4 @@ export * from "./sheet";
 export * from "./empty-state";
 export * from "./icon-button";
 export * from "./action-bar";
+export * from "./section-header";

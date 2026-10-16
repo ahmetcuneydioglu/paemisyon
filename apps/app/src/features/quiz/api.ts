@@ -28,12 +28,20 @@ export interface QuizSession {
   remainingSeconds?: number | null;
 }
 
+/**
+ * Sunucu kuralları (quiz.service): `exam` için courseId|topicId ya da archiveExamId|personalExam;
+ * `review`/`daily` kapsamsız; `fromBookmarks` kapsamsız practice; `articleNo` topicId ile.
+ */
 export interface StartSessionBody {
-  mode: "practice" | "review";
+  mode: "practice" | "review" | "exam" | "daily";
   recipe?: "coach" | "comeback";
   source?: HomeSource | "notif";
   topicId?: string;
   courseId?: string;
+  articleNo?: string;
+  fromBookmarks?: boolean;
+  archiveExamId?: string;
+  personalExam?: boolean;
   questionCount?: number;
 }
 

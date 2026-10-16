@@ -85,6 +85,7 @@ function RootNavigator() {
         {/* Oynatıcılar tam ekran (Doc 25 §7); kaydırarak geri kapalı, çıkış onayla. */}
         <Stack.Screen name="seans" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="sonuc" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
+        <Stack.Screen name="oku/[slug]" options={{ presentation: "fullScreenModal" }} />
       </Stack>
     </View>
   );

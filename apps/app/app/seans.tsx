@@ -27,7 +27,7 @@ export default function SeansScreen() {
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string }>();
 
   const [phase, setPhase] = useState<Phase>("loading");
   const [error, setError] = useState<string | null>(null);
@@ -50,12 +50,17 @@ export default function SeansScreen() {
           const first = s.questions.findIndex((q) => !answered.has(q.questionId));
           if (active) setIndex(first < 0 ? s.questions.length : first);
         } else {
-          const body: StartSessionBody = { mode: p.focusKind === "wrongs" ? "review" : "practice", source: (p.source as StartSessionBody["source"]) ?? "home_task" };
+          const mode: StartSessionBody["mode"] = p.mode === "exam" || p.mode === "review" || p.mode === "practice" ? p.mode : p.focusKind === "wrongs" ? "review" : "practice";
+          const body: StartSessionBody = { mode };
+          // `source` yalnız Bugün kanallarında (sunucu enum'u); Kütüphane girişleri kaynaksız.
+          if (p.source) body.source = p.source as StartSessionBody["source"];
           const count = Number(p.count);
           if (Number.isFinite(count) && count > 0) body.questionCount = count;
           if (p.recipe === "coach" || p.recipe === "comeback") body.recipe = p.recipe;
           if (p.focusKind === "topic" && p.topicId) body.topicId = p.topicId;
           if (p.focusKind === "course" && p.courseId) body.courseId = p.courseId;
+          if (p.articleNo && body.topicId) body.articleNo = p.articleNo;
+          if (p.fromBookmarks === "1") body.fromBookmarks = true;
           s = await quizApi.start(body);
         }
         if (!active) return;
