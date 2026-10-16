@@ -26,6 +26,11 @@ const config: ExpoConfig = {
   ios: {
     bundleIdentifier: "com.paemisyon.paemisyon",
     buildNumber: "1",
+    // Ücretli takım (mağaza profillerinin takımı); kişisel takım yetenekleri imzalayamaz.
+    appleTeamId: "3U4QPG9Q82",
+    // FCM (sunucu firebase-admin ile gönderir); Flutter ile aynı Firebase projesi.
+    googleServicesFile: "./GoogleService-Info.plist",
+    entitlements: { "aps-environment": "production" },
     supportsTablet: false,
     config: { usesNonExemptEncryption: false },
     // Universal link: paemisyon.com'daki bildirim ve paylaşım bağlantıları uygulamada açılır.
@@ -61,6 +66,14 @@ const config: ExpoConfig = {
   },
   plugins: [
     "expo-router",
+    // RNFirebase statik framework ister; diğer paketler (Sentry, Google girişi) uyumlu.
+    ["expo-build-properties", { ios: { useFrameworks: "static" } }],
+    // SPM kapalı: statik framework ile Firebase kopyaları çakışır (RNFirebase 26 uyarısı).
+    ["@react-native-firebase/app", { ios: { disableSPM: true } }],
+    "@react-native-firebase/messaging",
+    "./plugins/with-firebase-configure.js",
+    ["expo-notifications", { color: "#E3804F", defaultChannel: "default" }],
+    "expo-iap",
     ["expo-secure-store", { faceIDPermission: false }],
     "expo-dev-client",
     "expo-apple-authentication",

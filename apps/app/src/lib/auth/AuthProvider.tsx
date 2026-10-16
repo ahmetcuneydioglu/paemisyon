@@ -2,6 +2,7 @@ import type { Session } from "@supabase/supabase-js";
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { queryClient } from "@/lib/query";
 import { supabase } from "@/lib/supabase";
+import { unregisterPushToken } from "../push";
 import { signOutFromProviders } from "./social";
 
 type AuthState =
@@ -37,6 +38,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     () => ({
       ...state,
       signOut: async () => {
+        // Push jetonu bu hesaptan düşsün (başka hesapla girişte yeniden kaydedilir).
+        await unregisterPushToken().catch(() => {});
         await supabase.auth.signOut();
         await signOutFromProviders();
       },

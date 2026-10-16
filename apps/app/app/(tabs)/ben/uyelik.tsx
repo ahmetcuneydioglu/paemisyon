@@ -1,6 +1,7 @@
+import { useRouter } from "expo-router";
 import { Check } from "lucide-react-native";
-import { View } from "react-native";
-import { AppText, Badge, Card, Notice, Screen, Skeleton } from "@/components/ui";
+import { Linking, Platform, View } from "react-native";
+import { AppText, Badge, Button, Card, Notice, Screen, Skeleton } from "@/components/ui";
 import { useMeFull } from "@/features/me/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -11,6 +12,7 @@ const VALUE = ["Sınırsız soru ve tur", "Süresiz tekrar hafızası (ücretsiz
  * yükleme ve mağaza bağlantısı F5 (expo-iap) ile gelir. Fiyat burada yazılmaz (tek kaynak mağaza).
  */
 export default function UyelikScreen() {
+  const router = useRouter();
   const { colors, space } = useTheme();
   const me = useMeFull();
   const d = me.data;
@@ -44,13 +46,12 @@ export default function UyelikScreen() {
             ))}
           </Card>
           {!d.isPremium ? (
-            <Notice tone="info" title="Satın alma yakında">
-              Mağaza içi satın alma ve geri yükleme 2.0 ile bu ekrana geliyor. Mevcut aboneliğin varsa aynı hesapla otomatik tanınır.
-            </Notice>
+            <>
+              <Button title="Premium'a geç" onPress={() => router.push("/paywall")} />
+              <Button title="Satın alımları geri yükle" variant="ghost" onPress={() => router.push("/paywall")} />
+            </>
           ) : (
-            <AppText variant="bodySm" tone="subtle">
-              Aboneliği yönetmek için App Store / Google Play hesap ayarlarını kullan.
-            </AppText>
+            <Button title="Aboneliği yönet" variant="secondary" onPress={() => void Linking.openURL(Platform.OS === "ios" ? "https://apps.apple.com/account/subscriptions" : "https://play.google.com/store/account/subscriptions")} />
           )}
         </>
       ) : null}

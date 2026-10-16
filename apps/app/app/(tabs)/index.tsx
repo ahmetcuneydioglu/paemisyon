@@ -8,6 +8,7 @@ import { ActionBar, AppText, Badge, Button, Card, ListRow, Notice, Screen, Skele
 import { FocusSheet } from "@/features/home/focus-sheet";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction } from "@/features/home/queries";
 import { ApiError, NetworkError } from "@/lib/api";
+import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -22,6 +23,7 @@ export default function BugunScreen() {
   const me = useMe();
   const brief = useCoachBrief();
   const [focusOpen, setFocusOpen] = useState(false);
+  const pending = usePendingAnswers();
 
   const offline = brief.isError && brief.error instanceof NetworkError;
   const data = brief.data; // hata durumunda da son bilinen veri (react-query önbelleği)
@@ -65,6 +67,15 @@ export default function BugunScreen() {
           <AppText variant="title">Bugün</AppText>
         </View>
 
+        {pending > 0 ? (
+          <Card tone="alt" style={{ gap: space.s2 }}>
+            <AppText variant="subhead">{pending} cevap gönderilmeyi bekliyor</AppText>
+            <AppText variant="bodySm" tone="soft">
+              Çevrimdışı çözdüklerin cihazda; bağlantı gelince kendiliğinden gider.
+            </AppText>
+            <Button title="Şimdi gönder" variant="secondary" onPress={() => void flushQueue().then(() => qc.invalidateQueries({ queryKey: homeKeys.brief }))} />
+          </Card>
+        ) : null}
         {offline ? (
           <Notice tone="warning" title="Çevrimdışısın">
             {data ? "Son bilinen durum gösteriliyor; yeni tur için bağlantı gerekiyor." : "Bağlantı gelince Bugün yüklenecek."}

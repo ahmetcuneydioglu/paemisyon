@@ -10,6 +10,7 @@ import { examApi, examKeys, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
 import { ApiError, NetworkError } from "@/lib/api";
+import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -33,7 +34,9 @@ export default function SeansScreen() {
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space, radius } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; exam?: string; archiveExamId?: string; personalExam?: string; title?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; exam?: string; archiveExamId?: string; personalExam?: string; title?: string; questionId?: string }>();
+  const [premiumGate, setPremiumGate] = useState(false);
+  const [queuedNote, setQueuedNote] = useState(false);
 
   const [phase, setPhase] = useState<Phase>("loading");
   const [error, setError] = useState<string | null>(null);
@@ -71,16 +74,17 @@ export default function SeansScreen() {
           s = { sessionId: r.sessionId, mode: "deneme", plannedDurationSeconds: null, questions: r.questions, givenAnswers: r.givenAnswers.map((a) => ({ ...a, isCorrect: null })), endsAt: r.endsAt };
           if (active) setTitle(r.title);
         } else {
-          const mode: StartSessionBody["mode"] = p.mode === "exam" || p.mode === "review" || p.mode === "practice" ? p.mode : p.focusKind === "wrongs" ? "review" : "practice";
+          const mode: StartSessionBody["mode"] = p.mode === "exam" || p.mode === "review" || p.mode === "practice" || p.mode === "daily" ? p.mode : p.focusKind === "wrongs" ? "review" : "practice";
           const body: StartSessionBody = { mode };
           // `source` yalnız Bugün kanallarında (sunucu enum'u); Kütüphane girişleri kaynaksız.
           if (p.source) body.source = p.source as StartSessionBody["source"];
           const count = Number(p.count);
           if (Number.isFinite(count) && count > 0) body.questionCount = count;
           if (p.recipe === "coach" || p.recipe === "comeback") body.recipe = p.recipe;
-          if (p.archiveExamId) body.archiveExamId = p.archiveExamId;
+          if (p.questionId) body.questionId = p.questionId;
+          else if (p.archiveExamId) body.archiveExamId = p.archiveExamId;
           else if (p.personalExam === "1") body.personalExam = true;
-          else {
+          else if (mode !== "daily") {
             if (p.focusKind === "topic" && p.topicId) body.topicId = p.topicId;
             if (p.focusKind === "course" && p.courseId) body.courseId = p.courseId;
             if (p.articleNo && body.topicId) body.articleNo = p.articleNo;
@@ -115,6 +119,7 @@ export default function SeansScreen() {
       } catch (e) {
         if (!active) return;
         setError(describe(e));
+        if (e instanceof ApiError && (e.code === "PREMIUM_REQUIRED" || e.code === "PERSONAL_EXAM_LIMIT")) setPremiumGate(true);
         setPhase("error");
       }
     })();
@@ -174,8 +179,17 @@ export default function SeansScreen() {
       if ("isCorrect" in fb) setFeedback(fb);
       else next();
     } catch (e) {
+      if (e instanceof NetworkError) {
+        // Çevrimdışı: cevap kuyruğa, geri bildirimsiz ileri (bağlantı gelince gönderilir).
+        await enqueueAnswer({ sessionId: session.sessionId, questionId: question.questionId, versionId: question.versionId, selectedOptionId: optionId, timeSpentMs: saat.simdi() - shownAt.current });
+        setQueuedNote(true);
+        next();
+        return;
+      }
       setSelected(null);
-      Alert.alert("Cevap kaydedilemedi", e instanceof ApiError && e.code === "DAILY_LIMIT_REACHED" ? "Günlük soru hakkın doldu; yarın devam et." : e instanceof Error ? e.message : "Yeniden dene.");
+      if (e instanceof ApiError && e.code === "DAILY_LIMIT_REACHED") {
+        Alert.alert("Günlük soru hakkın doldu", "Yarın devam edebilirsin; Premium'da sınır yok.", [{ text: "Tamam", style: "cancel" }, { text: "Premium'u gör", onPress: () => router.push("/paywall") }]);
+      } else Alert.alert("Cevap kaydedilemedi", e instanceof Error ? e.message : "Yeniden dene.");
     } finally {
       setSubmitting(false);
     }
@@ -197,6 +211,13 @@ export default function SeansScreen() {
     if (!session) return;
     setPhase("finishing");
     try {
+      // Kuyrukta cevap varsa önce o gitsin; gitmezse tur sunucuda yarım kalır (Bugün'den devam).
+      const q = await flushQueue();
+      if (q.stoppedByNetwork) {
+        setError("Bağlantı yok; cevapların cihazda saklandı, bağlantı gelince gönderilir. Tura Bugün'den devam edebilirsin.");
+        setPhase("error");
+        return;
+      }
       await completeAndGo(session.sessionId, false, false);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Tur bitirilemedi.");
@@ -342,9 +363,10 @@ export default function SeansScreen() {
         </View>
       ) : phase === "error" ? (
         <View style={{ padding: space.screenGutter, gap: space.s3 }}>
-          <Notice tone="error" title={isExam ? "Deneme açılamadı" : "Tur açılamadı"}>
+          <Notice tone={premiumGate ? "warning" : "error"} title={premiumGate ? "Premium gerekiyor" : isExam ? "Deneme açılamadı" : "Tur açılamadı"}>
             {error}
           </Notice>
+          {premiumGate ? <Button title="Premium'u gör" onPress={() => router.replace("/paywall")} /> : null}
           <Button title="Geri dön" variant="secondary" onPress={() => router.back()} />
         </View>
       ) : question ? (
@@ -353,6 +375,7 @@ export default function SeansScreen() {
             {isExam && saveState[question.questionId] === "failed" ? (
               <Notice tone="warning">Cevap kaydedilemedi; şıkka yeniden dokun ya da bağlantıyı kontrol et.</Notice>
             ) : null}
+            {queuedNote && !isExam ? <Notice tone="info">Çevrimdışısın; cevapların cihazda saklanıyor, bağlantı gelince gönderilecek. Geri bildirim o zaman görünür.</Notice> : null}
             <QuestionStem index={index + 1} total={total} stem={question.stem} />
             {question.options.map((o) => (
               <QuestionOption key={o.id} label={o.label} text={o.text} state={optionState(o.id)} onPress={() => (isExam ? pick(o.id) : void answer(o.id))} />

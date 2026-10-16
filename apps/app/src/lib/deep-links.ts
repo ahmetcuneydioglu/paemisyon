@@ -1,0 +1,37 @@
+/**
+ * Push `data.route` ve `paemisyon.com/bildirim?git=` sözlüğü → uygulama yolu (tek tablo).
+ * Sunucu/panel değerleri: daily-quiz, denemeler, leaderboard, question:<uuid>, boş (aç).
+ * Koç CTA'larının eğik çizgili yolları da (/quiz, /review, /catalog, /denemeler, /denemeler/<id>)
+ * burada eşlenir. Bilinmeyen değer Bugün'e düşer (kayıp iş yok, sürpriz yok).
+ */
+export type AppHref = { pathname: string; params?: Record<string, string> };
+
+const UUID = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+
+export function routeToHref(route: string | null | undefined): AppHref {
+  const r = (route ?? "").trim();
+  if (!r) return { pathname: "/(tabs)" };
+  if (r === "daily-quiz") return { pathname: "/seans", params: { mode: "daily", count: "10", source: "notif" } };
+  if (r === "denemeler" || r === "/denemeler") return { pathname: "/(tabs)/denemeler" };
+  if (r === "leaderboard" || r === "/leaderboard") return { pathname: "/(tabs)/performans/liderlik" };
+  const q = r.match(/^question:(.+)$/);
+  if (q && UUID.test(q[1]!)) return { pathname: "/seans", params: { mode: "practice", questionId: q[1]!, count: "1", source: "notif" } };
+  const exam = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})$/);
+  if (exam) return { pathname: "/seans", params: { exam: exam[1]! } };
+  if (r === "/quiz") return { pathname: "/seans", params: { mode: "practice", count: "10", source: "notif" } };
+  if (r === "/review") return { pathname: "/(tabs)/kutuphane/tekrar", params: { sekme: "yanlislar" } };
+  if (r === "/catalog") return { pathname: "/(tabs)/kutuphane" };
+  if (r === "/onboarding") return { pathname: "/onboarding" };
+  return { pathname: "/(tabs)" };
+}
+
+/** `https://paemisyon.com/bildirim?git=<route>` → route; başka URL'de null. */
+export function routeFromUrl(url: string): string | null {
+  try {
+    const u = new URL(url);
+    if (!/(^|\.)paemisyon\.com$/.test(u.hostname) || !u.pathname.startsWith("/bildirim")) return null;
+    return u.searchParams.get("git") ?? "";
+  } catch {
+    return null;
+  }
+}

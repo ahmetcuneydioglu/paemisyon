@@ -60,7 +60,7 @@ export default function DenemelerScreen() {
           <AppText variant="bodySm" tone="soft">
             {dash.isPending ? "Hak kontrol ediliyor…" : peLeft == null ? "Sınırsız · 120 soruya kadar" : peLeft === 0 ? "Bugünkü hakkın doldu; yarın yenilenir. Premium'da sınırsız." : `Bugün ${peLeft} hakkın var · ${pe?.maxQuestions ?? 25} soruya kadar`}
           </AppText>
-          <Button title="Deneme kur" onPress={() => setPersonalOpen(true)} disabled={peLeft === 0} />
+          <Button title={peLeft === 0 ? "Premium'da sınırsız" : "Deneme kur"} onPress={() => (peLeft === 0 ? router.push("/paywall") : setPersonalOpen(true))} />
         </Card>
 
         {solvablePast.length > 0 ? (
@@ -186,7 +186,10 @@ export default function DenemelerScreen() {
               divider={n !== 100}
               onPress={
                 locked
-                  ? undefined
+                  ? () => {
+                      setPersonalOpen(false);
+                      router.push("/paywall");
+                    }
                   : () => {
                       setPersonalOpen(false);
                       router.push({ pathname: "/seans", params: { personalExam: "1", mode: "exam", count: String(n) } });

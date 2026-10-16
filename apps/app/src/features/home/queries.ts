@@ -87,8 +87,8 @@ export interface Me {
   preferredModule: { id: string; name: string } | null;
 }
 
-export function useMe() {
-  return useQuery({ queryKey: homeKeys.me, queryFn: () => api<Me>("/me") });
+export function useMe(enabled = true) {
+  return useQuery({ queryKey: homeKeys.me, queryFn: () => api<Me>("/me"), enabled });
 }
 
 /** PUT /me/focus — günün odağı; yanıt brief.focus ile aynı şekil. Brief yeniden çekilir (CTA değişir). */

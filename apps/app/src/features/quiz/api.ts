@@ -40,6 +40,8 @@ export interface StartSessionBody {
   source?: HomeSource | "notif";
   topicId?: string;
   courseId?: string;
+  /** Tek soru (push derin bağlantısı); diğer kapsamları ezer. */
+  questionId?: string;
   articleNo?: string;
   fromBookmarks?: boolean;
   archiveExamId?: string;
