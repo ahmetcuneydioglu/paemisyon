@@ -99,7 +99,9 @@ const config: ExpoConfig = {
     ],
   ],
   experiments: { typedRoutes: true },
-  extra: { eas: { projectId: (process.env.EAS_PROJECT_ID ?? "").trim() || undefined } },
+  owner: "ahmetcnd",
+  // EAS projesi (F6): canahmettt@gmail.com hesabı; derleme ve gönderim buradan.
+  extra: { eas: { projectId: "1c502a04-6223-44f3-a0dd-558de040cae6" } },
 };
 
 export default config;
