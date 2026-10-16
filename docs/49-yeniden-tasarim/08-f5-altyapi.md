@@ -53,3 +53,28 @@ C. Paywall + IAP + geri yükleme + bekleyen işlem senkronu + hata yönlendirmel
 D. Push kaydı + tıklama yönlendirmesi + derin bağlantı + günlük hatırlatma (Ayarlar).
 E. Çevrimdışı cevap kuyruğu (alıştırma) + Bugün'de bekleyen sayacı.
 F. Doğrulama (sandbox hesabı gerekir — kullanıcı), Figma (tanıtım, onboarding, paywall), belge.
+
+## 4. Uygulama ve doğrulama (16 Eki 2026)
+
+Yazılanlar: `app/tanitim.tsx`, `app/onboarding.tsx`, `app/paywall.tsx`; `src/features/billing/
+{queries,store}.ts` (expo-iap, doğrula-sonra-bitir, geri yükle, bekleyen senkron); `src/lib/
+{push,deep-links,reminders,offline-queue,intro-seen}.ts`; kök `AppServices` (mağaza senkronu,
+push kaydı/yönlendirme, kuyruk boşaltma, hatırlatma penceresi); `plugins/with-firebase-configure.js`
+(SDK 58 Swift AppDelegate'e `FirebaseApp.configure()`); RNFirebase `ios.disableSPM`.
+
+- Dev client yeni yerel modüllerle simülatöre ve telefona yeniden derlendi (takım 3U4QPG9Q82).
+- Tanıtım: 5 slayt, Atla → giriş; bayrak cihazda kaldı (yeniden açılışta tanıtım gelmedi).
+- Paywall: planlar sunucudan (yearly/lifetime, ürün kimlikleri dolu), fiyat StoreKit'ten
+  ($9.99 / $34.99 — simülatörde ABD vitrini), yıllık ön seçili, aylık karşılık hesaplandı.
+- Ayarlar › Bildirimler: hatırlatma açıldı, saat çipleri; "Koç bildirimleri: Açık".
+- Deep-link testi `node --test src/lib/deep-links.test.mjs` yeşil; tip/lint temiz.
+
+**Doğrulanmadı (kullanıcı gerekir):** sandbox satın alma ve geri yükleme (App Store sandbox
+hesabı); telefonda FCM jeton kaydı ve panelden gönderilen push'un tıklanması; çevrimdışı kuyruk
+(simülatörde ağ kesilemedi). Onboarding yalnız yeni hesapla görünür (beta hesabı tamamlamış).
+
+## 5. Açık işler
+
+- Android: `google-services.json` repoda yok (Flutter'da da yok) → Android derlemesi F6'da.
+- Evrensel bağlantı için `apps/web` `.well-known/apple-app-site-association` henüz yok.
+- Soru içi favori/hata bildir/AI açıklama (alıştırma oynatıcısı araç satırı) → F6 öncesi.
