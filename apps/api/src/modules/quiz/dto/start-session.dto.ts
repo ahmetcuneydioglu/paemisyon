@@ -18,6 +18,12 @@ export class StartSessionDto {
   @IsIn(['practice', 'exam', 'daily', 'review'])
   mode!: 'practice' | 'exam' | 'daily' | 'review';
 
+  /// Tekrar havuzu (Doc 49 S1-A): yalnız mode=review ile. 'wrongs' (varsayılan) =
+  /// çözülmemiş yanlışlar; 'due' = aralıklı tekrarda süresi gelen sorular.
+  @IsOptional()
+  @IsIn(['wrongs', 'due'])
+  pool?: 'wrongs' | 'due';
+
   /// Favori (yer imi) reçetesi: havuz = kullanıcının favorileri (Doc 25 §2).
   /// Yalnız practice modunda, kapsamsız (topic/course verilmez).
   @IsOptional()

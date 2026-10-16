@@ -52,3 +52,21 @@ export function yanlisTuruSoruFiltresi(o: {
     },
   };
 }
+
+/**
+ * Süresi gelen tekrar kayıtlarının süzgeci (Doc 49 S1-A). Ücretsiz planda pencere yanlış
+ * turuyla AYNI (son 7 gün — son görülme tarihine göre); premium süresiz. Soru tarafı süzgeci
+ * yine `yanlisTuruSoruFiltresi` (iptal, premium konu, hedef sınav kapsamı).
+ */
+export function tekrarKaydiFiltresi(
+  userId: string,
+  isPremium: boolean,
+  now: number = Date.now(),
+): Prisma.QuestionReviewWhereInput {
+  const since = yanlisTuruBaslangici(isPremium, now);
+  return {
+    userId,
+    dueAt: { lte: new Date(now) },
+    ...(since ? { lastReviewedAt: { gte: since } } : {}),
+  };
+}

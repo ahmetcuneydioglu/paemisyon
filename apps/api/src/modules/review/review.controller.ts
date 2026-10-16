@@ -15,6 +15,12 @@ export class ReviewController {
     return this.review.getWrongAnswers(user.id);
   }
 
+  /// Aralıklı tekrar: süresi gelenlerin özeti (Doc 49 S1-A).
+  @Get('due')
+  due(@CurrentUser() user: AuthenticatedUser) {
+    return this.review.getDue({ id: user.id, isPremium: user.isPremium });
+  }
+
   @Get('bookmarks')
   bookmarks(@CurrentUser() user: AuthenticatedUser) {
     return this.review.getBookmarks(user.id);

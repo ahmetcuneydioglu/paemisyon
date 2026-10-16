@@ -1,6 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { iptalSoruIdleri } from '../../common/iptal-soru';
+import { tekrarKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
+import { gunBaslangici } from '../../common/gun';
 
 /// Yanlışlarım & favoriler (Doc 7 §4.6).
 @Injectable()
@@ -26,6 +28,59 @@ export class ReviewService {
       stem: stems.get(r.questionId)?.stem ?? null,
       topicName: stems.get(r.questionId)?.topicName ?? null,
     }));
+  }
+
+  /**
+   * Süresi gelen tekrar özeti (Doc 49 S1-A). Sayım ve örnek, tur havuzuyla aynı süzgeçten
+   * (tek tanım); `nextDueAt` bugün boşsa bir sonraki vadeyi söyler. İstemci "N soru hazır /
+   * sıradaki yarın" diyebilir; sıfır uydurulmaz.
+   */
+  async getDue(user: { id: string; isPremium: boolean }) {
+    const now = Date.now();
+    const profile = await this.prisma.user.findUnique({
+      where: { id: user.id },
+      select: { preferredModuleId: true },
+    });
+    const soruSuzgeci = yanlisTuruSoruFiltresi({
+      isPremium: user.isPremium,
+      preferredModuleId: profile?.preferredModuleId ?? null,
+    });
+    const due = await this.prisma.questionReview.findMany({
+      where: tekrarKaydiFiltresi(user.id, user.isPremium, now),
+      orderBy: { dueAt: 'asc' },
+      select: { questionId: true, dueAt: true },
+      take: 500,
+    });
+    const uygun = due.length
+      ? await this.prisma.question.findMany({
+          where: { id: { in: due.map((d) => d.questionId) }, ...soruSuzgeci },
+          select: { id: true },
+        })
+      : [];
+    const uygunSet = new Set(uygun.map((q) => q.id));
+    const liste = due.filter((d) => uygunSet.has(d.questionId));
+    const bugunBasi = gunBaslangici(new Date(now)).getTime();
+    const dueToday = liste.filter((d) => d.dueAt.getTime() >= bugunBasi).length;
+    const sample = liste.slice(0, 5);
+    const stems = await this.stems(sample.map((s) => s.questionId));
+    const next = liste.length
+      ? null
+      : await this.prisma.questionReview.findFirst({
+          where: { userId: user.id, dueAt: { gt: new Date(now) } },
+          orderBy: { dueAt: 'asc' },
+          select: { dueAt: true },
+        });
+    return {
+      count: liste.length,
+      dueToday,
+      nextDueAt: liste.length ? liste[0]!.dueAt.toISOString() : (next?.dueAt.toISOString() ?? null),
+      sample: sample.map((s) => ({
+        questionId: s.questionId,
+        stem: stems.get(s.questionId)?.stem ?? null,
+        topicName: stems.get(s.questionId)?.topicName ?? null,
+        dueAt: s.dueAt.toISOString(),
+      })),
+    };
   }
 
   async getBookmarks(userId: string) {

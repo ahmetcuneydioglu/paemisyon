@@ -129,6 +129,7 @@ model User {
   articleNotes      ArticleNote[]
   readingProgress   ReadingProgress[]
   wrongAnswers      WrongAnswer[]
+  questionReviews   QuestionReview[]
   questionReports   QuestionReport[]
   badges            UserBadge[]
   masterySnapshots  TopicMasterySnapshot[]
@@ -512,6 +513,7 @@ model Question {
   currentVersion QuestionVersion?   @relation("CurrentVersion", fields: [currentVersionId], references: [id])
   examQuestions  ExamQuestion[]
   pastExams      PastExamQuestion[]
+  reviews        QuestionReview[]
 
   @@index([topicId])
   @@index([topicId, articleNo])
@@ -880,6 +882,29 @@ model WrongAnswer {
 
   @@id([userId, questionId])
   @@map("wrong_answers")
+}
+
+/// Aralıklı tekrar hafızası (Doc 49 S1-A, 16 Eki 2026). SM-2 sadeleştirilmiş: her
+/// cevapta güncellenir (boş cevap hariç; deneme dahil — bilgi bilgidir). WrongAnswer
+/// KORUNUR (koç sayacı, ücretsiz 7 gün penceresi); burası "ne zaman tekrar" sorusunu
+/// cevaplar. Algoritma: quiz/srs.ts (saf fonksiyon, spec'li).
+model QuestionReview {
+  userId         String   @map("user_id") @db.Uuid
+  questionId     String   @map("question_id") @db.Uuid
+  ease           Decimal  @default(2.5) @db.Decimal(3, 2)
+  intervalDays   Int      @default(0) @map("interval_days")
+  reps           Int      @default(0)
+  lapses         Int      @default(0)
+  dueAt          DateTime @map("due_at")
+  lastReviewedAt DateTime @default(now()) @map("last_reviewed_at")
+  lastResult     Boolean  @map("last_result")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+  @@index([userId, dueAt])
+  @@map("question_reviews")
 }
 
 /// AI açıklama önbelleği (Doc 24 §4 Faz 2): aynı soru+şık için BİR KEZ üretilir,

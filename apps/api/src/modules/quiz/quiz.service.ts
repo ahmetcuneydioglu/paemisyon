@@ -27,7 +27,8 @@ import {
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { enGucluKonular, enZayifKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, gunMetni } from '../../common/gun';
-import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
+import { tekrarKaydiFiltresi, yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from './yanlis-havuzu';
+import { hizliMi, srsGuncelle } from './srs';
 import { YARIM_TUR_MODLARI, turuTerkEt } from './yarim-tur';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
@@ -127,6 +128,9 @@ export class QuizService {
     }
     if (dto.mode === 'review' && acikKapsam) {
       throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
+    }
+    if (dto.pool && dto.mode !== 'review') {
+      throw new BadRequestException('Tekrar havuzu yalnız review modunda seçilir.');
     }
     if (dto.recipe === 'comeback' && (dto.mode !== 'practice' || acikKapsam || dto.fromBookmarks)) {
       throw new BadRequestException('Dönüş reçetesi yalnız kapsamsız alıştırmada çalışır.');
@@ -233,7 +237,31 @@ export class QuizService {
     }
 
     let chosen: { id: string; currentVersionId: string | null; topicId: string }[];
-    if (dto.mode === 'review') {
+    if (dto.mode === 'review' && dto.pool === 'due') {
+      // Süresi gelen tekrar (Doc 49 S1-A): aralıklı tekrar hafızasından, en eski vade önce.
+      // Ücretsiz pencere ve soru süzgeci yanlış turuyla aynı yardımcılardan (tek tanım).
+      const due = await this.prisma.questionReview.findMany({
+        where: tekrarKaydiFiltresi(userId, isPremiumUser),
+        orderBy: { dueAt: 'asc' },
+        select: { questionId: true },
+        take: 500,
+      });
+      const questions = await this.prisma.question.findMany({
+        where: {
+          id: { in: due.map((d) => d.questionId) },
+          ...yanlisTuruSoruFiltresi({ isPremium: isPremiumUser, preferredModuleId }),
+        },
+        select: { id: true, currentVersionId: true, topicId: true },
+      });
+      const orderOf = new Map(due.map((d, i) => [d.questionId, i]));
+      const pool = [...questions].sort(
+        (a, b) => (orderOf.get(a.id) ?? 0) - (orderOf.get(b.id) ?? 0),
+      );
+      if (pool.length === 0) {
+        throw new NotFoundException('Bugün süresi gelen tekrar yok. 🎉');
+      }
+      chosen = pool.slice(0, count);
+    } else if (dto.mode === 'review') {
       // Yanlış tekrarı reçetesi (Doc 24 §11): free = son 7 günün yanlışları,
       // premium = süresiz tekrar hafızası. En eski yanlış önce (unutma eğrisi).
       // Süzgeç TEK yerde (yanlis-havuzu.ts): koçun "N yanlış" sayacı da onu okur.
@@ -1150,6 +1178,14 @@ export class QuizService {
     if (gununIlkCevabi || gununToplami === 1) {
       await this.progress.touchActivity(user.id, user.isPremium);
     }
+    // Aralıklı tekrar hafızası (Doc 49 S1-A): boş cevap hariç her cevapta, cevabın
+    // kritik yolunu beklemeden (en iyi çaba; hata geri bildirimi etkilemez).
+    if (dto.selectedOptionId != null) {
+      void this.tekrarHafizasiniGuncelle(userId, dto.questionId, isCorrect, dto.timeSpentMs).catch(
+        (e: unknown) =>
+          this.logger.warn(`SRS güncellenemedi: ${e instanceof Error ? e.message : e}`),
+      );
+    }
 
     if (!givesFeedback) {
       return { recorded: true };
@@ -1197,6 +1233,57 @@ export class QuizService {
       // ürünün güven vaadidir ve panelden yönetilir.
       source: denemeModu || !showSource ? null : (version?.sourceLabel ?? null),
     };
+  }
+
+  /**
+   * QuestionReview upsert (quiz/srs.ts). reps >= 2 olunca açık WrongAnswer kaydı çözüldü
+   * sayılır (mevcut "doğru çözünce çözüldü" kuralını genişletir, daraltmaz).
+   */
+  private async tekrarHafizasiniGuncelle(
+    userId: string,
+    questionId: string,
+    isCorrect: boolean,
+    timeSpentMs?: number | null,
+  ) {
+    const now = new Date();
+    const [onceki, me] = await Promise.all([
+      this.prisma.questionReview.findUnique({
+        where: { userId_questionId: { userId, questionId } },
+      }),
+      this.prisma.user.findUnique({ where: { id: userId }, select: { targetExamDate: true } }),
+    ]);
+    const yeni = srsGuncelle(
+      onceki
+        ? {
+            ease: Number(onceki.ease),
+            intervalDays: onceki.intervalDays,
+            reps: onceki.reps,
+            lapses: onceki.lapses,
+          }
+        : null,
+      isCorrect,
+      { now, examDate: me?.targetExamDate ?? null, fast: hizliMi(timeSpentMs) },
+    );
+    const data = {
+      ease: yeni.ease,
+      intervalDays: yeni.intervalDays,
+      reps: yeni.reps,
+      lapses: yeni.lapses,
+      dueAt: yeni.dueAt,
+      lastReviewedAt: now,
+      lastResult: isCorrect,
+    };
+    await this.prisma.questionReview.upsert({
+      where: { userId_questionId: { userId, questionId } },
+      update: data,
+      create: { userId, questionId, ...data },
+    });
+    if (isCorrect && yeni.reps >= 2) {
+      await this.prisma.wrongAnswer.updateMany({
+        where: { userId, questionId, resolvedAt: null },
+        data: { resolvedAt: now },
+      });
+    }
   }
 
   /** Oturumu bitir: skor + doğru/yanlış/boş (sunucuda hesaplanır). */

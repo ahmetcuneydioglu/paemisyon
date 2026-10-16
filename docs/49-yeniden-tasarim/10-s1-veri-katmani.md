@@ -1,4 +1,4 @@
-# Doc 49 / 10 — S1: Veri katmanı 2.0 (spec, onay bekliyor)
+# Doc 49 / 10 — S1: Veri katmanı 2.0 (spec onaylandı 16 Eki 2026)
 
 Tarih: 16 Ekim 2026. Dal `claude/s1-veri-katmani` (henüz açılmadı). Plan: `00-plan.md` §3 S1.
 Amaç: F8'in dört özelliğinin (haftalık plan, aralıklı tekrar, deneme serisi, mevzuat↔soru)
@@ -123,3 +123,12 @@ Koç brief'ine eklemeli alan: `readiness.dueCount` (istemci göstermeye hazır o
 S1-A SRS (3 gün) → S1-B mevzuat↔soru (3 gün, backfill raporu) → S1-C not/liste/bayrak
 (2 gün) → S1-D süre + lastReviewedAt (1 gün) → S1-E plan iskeleti (1 gün). Her parça ayrı
 commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
+
+## 6. İlerleme
+
+- **S1-A SRS (16 Eki 2026):** `question_reviews` tablosu (migration 20261016180000),
+  `quiz/srs.ts` saf fonksiyon + 8 spec; `submitAnswer` boş olmayan her cevapta upsert (en iyi
+  çaba, kritik yolu beklemez); reps ≥ 2 → açık WrongAnswer çözüldü; `POST /quiz/sessions
+  {mode:'review', pool:'due'}`; `GET /review/due` `{count, dueToday, nextDueAt, sample[]}`.
+  Süzgeç tek yerde (`yanlis-havuzu.ts: tekrarKaydiFiltresi`). Backfill yok: hafıza canlıda
+  ilk cevaplarla dolar (soğuk başlangıç kabul edildi; 90 günlük backfill isteğe bağlı).
