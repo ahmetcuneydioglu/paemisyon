@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import { View } from "react-native";
 import { AppText, Button, Card, Screen } from "@/components/ui";
 import { useMe } from "@/features/home/queries";
@@ -8,6 +9,7 @@ import { useTheme, type ThemePreference } from "@/theme/ThemeProvider";
 export default function BenScreen() {
   const auth = useAuth();
   const me = useMe();
+  const router = useRouter();
   const { preference, setPreference, space } = useTheme();
   const options: { value: ThemePreference; label: string }[] = [
     { value: "system", label: "Sistem" },
@@ -36,6 +38,14 @@ export default function BenScreen() {
           ))}
         </View>
       </Card>
+      {__DEV__ ? (
+        <Card>
+          <AppText variant="label" tone="subtle">
+            Geliştirici
+          </AppText>
+          <Button title="Bileşen galerisi" variant="secondary" onPress={() => router.push("/galeri")} />
+        </Card>
+      ) : null}
       <Button title="Çıkış yap" variant="ghost" onPress={() => void auth.signOut()} />
     </Screen>
   );

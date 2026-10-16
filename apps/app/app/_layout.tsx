@@ -70,6 +70,8 @@ function RootNavigator() {
 
   useEffect(() => {
     if (auth.status === "loading") return;
+    // Bileşen galerisi yalnız geliştirme derlemesinde ve oturumsuz da açılır (göz testi).
+    if (__DEV__ && group === "galeri") return;
     if (auth.status === "signedOut" && group !== "(auth)") router.replace("/(auth)/login");
     if (auth.status === "signedIn" && (group === "(auth)" || group === undefined)) router.replace("/(tabs)");
   }, [auth.status, group, router]);
@@ -79,6 +81,7 @@ function RootNavigator() {
       <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="galeri" options={{ presentation: "modal" }} />
       </Stack>
     </View>
   );

@@ -159,7 +159,7 @@ panel). Tek geliştirici olduğundan paralel ancak haftalık dilimlerle; her aş
 | A1 ✅ 16 Eki (canlıda; Sentry DSN sahibinden) | Temel | pnpm workspace + CI (lint, typecheck, test) + Sentry (API/web/admin, sonra Expo) + kök temizliği (SQL dökümleri ve eski projeler şifreli arşive) | 3 gün | CI yeşil; dökümler repo dışında |
 | F0 ✅ 16 Eki (dal `claude/f0-token-v3`) | Kimlik belgesi + token v3 | Bu belge §1 onaylı; `packages/tokens` v3 ve üretim betiği (css/ts/dart); kontrast testi | 3–4 gün | Üç hedefe üretim çalışır |
 | F1 ✅ 16 Eki (simülatörde gerçek girişle doğrulandı) | Expo iskelet | `apps/app`: router, tema, fontlar, Supabase oturumu, API istemcisi, hata/raporlama, 5 boş sekme | 1 hafta | Telefonda giriş yapılıp `/me/coach` çekiliyor |
-| F2 | Tasarım sistemi v3 | §1.4 temel bileşenler + bileşen galerisi ekranı (storybook yerine uygulama içi) | 1 hafta | Galeri açık/koyu, AX5 ve SE'de göz testinden geçti |
+| F2 ✅ 16 Eki (galeri açık/koyu, AX, SE) | Tasarım sistemi v3 | §1.4 temel bileşenler + bileşen galerisi ekranı (storybook yerine uygulama içi) | 1 hafta | Galeri açık/koyu, AX5 ve SE'de göz testinden geçti |
 | F3 | Bugün + Çalış | Bugün (8 durum), soru oturumu, sonuç, yanlış tekrarı girişi | 2–3 hafta | Beta hesabında gerçek veriyle, kullanıcıyla telefon turu |
 | F4 | Denemeler + Kütüphane + Performans + Ben | Deneme listesi/koşucu/sonuç/sıralama/çıkmış sınavlar, dersler/konu/atlas, mevzuat okuyucu, yanlışlar/favoriler, performans ekranları, profil/ayarlar/rozetler/üyelik | 3–4 hafta | `01-denetim.md` mobil envanterine göre özellik eşitliği tablosu dolu |
 | F5 | Altyapı tamamlama | IAP + geri yükleme, push, çevrimdışı, derin bağlantı, paylaşım, tanıtım/onboarding, paywall | 2 hafta | Mağaza kontrol listesi (Doc 28 ASC kuralları) yeşil |

@@ -43,10 +43,12 @@ export function AppText({
 
 /* ---------------------------------------------------------------- Ekran */
 
-export function Screen({ children, scroll = true, padded = true, style }: { children: ReactNode; scroll?: boolean; padded?: boolean; style?: StyleProp<ViewStyle> }) {
+/** `inset="none"`: modal/sheet sunumunda sistem zaten üst boşluk bırakır. */
+export function Screen({ children, scroll = true, padded = true, inset = "safe", style }: { children: ReactNode; scroll?: boolean; padded?: boolean; inset?: "safe" | "none"; style?: StyleProp<ViewStyle> }) {
   const { colors, space } = useTheme();
   const insets = useSafeAreaInsets();
-  const padding = padded ? { paddingHorizontal: space.screenGutter, paddingTop: insets.top + space.s4, paddingBottom: space.s8 } : { paddingTop: insets.top };
+  const top = inset === "safe" ? insets.top + space.s4 : space.s4;
+  const padding = padded ? { paddingHorizontal: space.screenGutter, paddingTop: top, paddingBottom: space.s8 } : { paddingTop: top };
   if (!scroll) return <View style={[{ flex: 1, backgroundColor: colors.bg }, padding, style]}>{children}</View>;
   return (
     <ScrollView style={{ flex: 1, backgroundColor: colors.bg }} contentContainerStyle={[padding, { gap: space.s5 }, style]} keyboardShouldPersistTaps="handled" contentInsetAdjustmentBehavior="never">
