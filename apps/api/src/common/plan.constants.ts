@@ -38,3 +38,10 @@ export const PERSONAL_EXAM_FREE_MAX_QUESTIONS = 25;
  * 120 pay bırakır. DTO doğrulaması da bu sabiti kullanır — tek kaynak.
  */
 export const PERSONAL_EXAM_MAX_QUESTIONS = 120;
+
+/**
+ * Kişisel listeler — ücretsiz plan tavanı (Doc 49 S1-C): 3 liste, liste başına
+ * 50 soru. Premium'da sınır yok. Sunucuda uygulanır; istemci yalnız gösterir.
+ */
+export const FREE_LIST_LIMIT = 3;
+export const FREE_LIST_ITEM_LIMIT = 50;

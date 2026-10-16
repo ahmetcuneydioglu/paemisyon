@@ -298,7 +298,13 @@ export class ExamsService {
     });
     const answers = await this.prisma.quizAnswer.findMany({
       where: { sessionId: session.id },
-      select: { questionId: true, selectedOptionId: true, isCorrect: true, timeSpentMs: true },
+      select: {
+        questionId: true,
+        selectedOptionId: true,
+        isCorrect: true,
+        timeSpentMs: true,
+        flagged: true,
+      },
     });
     const answerOf = new Map(answers.map((a) => [a.questionId, a]));
     // Randevulu denemede KAYNAK ETİKETİ GÖSTERİLMEZ (kullanıcı kararı,
@@ -311,6 +317,8 @@ export class ExamsService {
       ...q,
       source: null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
+      /** "Emin değilim" bayrağı (Doc 49 S1-C) — sonuç ekranında "bayrakladığın sorular". */
+      flagged: answerOf.get(q.questionId)?.flagged ?? false,
     }));
 
     // Derin analiz (Doc 25 wireframe 08): konu bazlı kırılım — "kaybın nereden?"

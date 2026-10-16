@@ -30,6 +30,12 @@ export class StartSessionDto {
   @IsBoolean()
   fromBookmarks?: boolean;
 
+  /// Kişisel liste reçetesi (Doc 49 S1-C): havuz = listedeki sorular, en yeni
+  /// eklenen önce. Yalnız kapsamsız practice; fromBookmarks ile birlikte verilmez.
+  @IsOptional()
+  @IsUUID()
+  listId?: string;
+
   /// Karışım reçetesi (Doc 48 A6). 'comeback' = uzun aradan dönüşte güçlü
   /// konulardan kısa tur (Doc 24 §7.1). Yalnız kapsamsız practice; verilmezse
   /// koç karışımı.

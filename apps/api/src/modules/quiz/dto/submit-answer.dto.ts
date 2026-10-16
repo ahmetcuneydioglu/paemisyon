@@ -1,4 +1,4 @@
-import { IsInt, IsOptional, IsUUID, Min } from 'class-validator';
+import { IsBoolean, IsInt, IsOptional, IsUUID, Min } from 'class-validator';
 
 export class SubmitAnswerDto {
   @IsUUID()
@@ -15,4 +15,10 @@ export class SubmitAnswerDto {
   @IsInt()
   @Min(0)
   timeSpentMs?: number;
+
+  /// "Emin değilim" bayrağı (Doc 49 S1-C) — sunucuda kalıcı; verilmezse önceki
+  /// değer korunur (cevap güncellemesi bayrağı silmez).
+  @IsOptional()
+  @IsBoolean()
+  flagged?: boolean;
 }

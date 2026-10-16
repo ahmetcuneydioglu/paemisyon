@@ -130,6 +130,8 @@ model User {
   readingProgress   ReadingProgress[]
   wrongAnswers      WrongAnswer[]
   questionReviews   QuestionReview[]
+  questionNotes     QuestionNote[]
+  lists             UserList[]
   questionReports   QuestionReport[]
   badges            UserBadge[]
   masterySnapshots  TopicMasterySnapshot[]
@@ -517,6 +519,8 @@ model Question {
   pastExams      PastExamQuestion[]
   reviews        QuestionReview[]
   articles       QuestionArticle[]
+  userNotes      QuestionNote[]
+  listItems      UserListItem[]
 
   @@index([topicId])
   @@index([topicId, articleNo])
@@ -806,6 +810,8 @@ model QuizAnswer {
   isCorrect         Boolean? @map("is_correct")
   answeredAt        DateTime @default(now()) @map("answered_at")
   timeSpentMs       Int?     @map("time_spent_ms")
+  /// "Emin değilim" bayrağı (Doc 49 S1-C) — denemede kalıcı; sonuç ekranında listelenir.
+  flagged           Boolean  @default(false)
 
   session QuizSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 
@@ -963,6 +969,51 @@ model LawArticleVersion {
 
   @@unique([lawArticleId, versionNo])
   @@map("law_article_versions")
+}
+
+// ── Soru notu, kişisel liste (Doc 49 S1-C, `10-s1-veri-katmani.md` §1.3) ──
+
+/// Kullanıcının soruya kişisel notu (≤2000 karakter; DTO sınırlar).
+model QuestionNote {
+  userId     String   @map("user_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  text       String
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+  @@map("question_notes")
+}
+
+/// Kişisel soru listesi. Ücretsiz: 3 liste × 50 soru (plan.constants); premium sınırsız.
+model UserList {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  name      String
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user  User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items UserListItem[]
+
+  @@index([userId, sortOrder])
+  @@map("user_lists")
+}
+
+model UserListItem {
+  listId     String   @map("list_id") @db.Uuid
+  questionId String   @map("question_id") @db.Uuid
+  addedAt    DateTime @default(now()) @map("added_at")
+
+  list     UserList @relation(fields: [listId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([listId, questionId])
+  @@index([listId, addedAt])
+  @@map("user_list_items")
 }
 
 /// AI açıklama önbelleği (Doc 24 §4 Faz 2): aynı soru+şık için BİR KEZ üretilir,

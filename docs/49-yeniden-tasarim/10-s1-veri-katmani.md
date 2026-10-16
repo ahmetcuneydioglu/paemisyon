@@ -162,3 +162,17 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   Canlı doğrulama: `GET /public/mevzuat/turk-ceza-kanunu/43/questions` → count 46,
   primaryCount 46, girişsizde `me` yok; bilinmeyen madde 404; health 200. Betikler
   `createMany skipDuplicates` ile idempotent, editör bağını ezmez.
+- **S1-C not / liste / bayrak (17 Eki 2026):** `question_notes`, `user_lists`,
+  `user_list_items`, `quiz_answers.flagged` (migration 20261017120000, eklemeli).
+  Yeni modül `lists` (`@Controller('me')`): `GET/PUT/DELETE /me/questions/:id/note`
+  (metin ≤2000), `GET /me/questions/:id/lists`, `GET/POST /me/lists`,
+  `GET/PATCH/DELETE /me/lists/:id`, `POST/DELETE /me/lists/:id/items/:questionId`.
+  Sınırlar sunucuda, `plan.constants` tek kaynak: ücretsiz 3 liste × 50 soru
+  (`LIST_LIMIT_REACHED` / `LIST_ITEM_LIMIT_REACHED`, 403), premium sınırsız; liste
+  yanıtı `limits {maxLists, maxItemsPerList}` taşır. Sahiplik her işlemde userId ile —
+  başkasının listesi 404. Tur: `POST /quiz/sessions {mode:'practice', listId}` (favori
+  reçetesiyle aynı dal; kapsamsız, premium konu süzgeci aynı). Bayrak:
+  `POST /quiz/sessions/:id/answers {flagged?}` — yalnız açıkça gönderilince değişir
+  (cevap güncellemesi bayrağı silmez); `GET /exams/attempts/:id` review satırına
+  `flagged` eklendi. Spec: `lists.service.spec.ts` (4), ilgili 60 test yeşil. Backfill
+  gerekmez (boş başlar). İstemci tarafı F8'in işi.

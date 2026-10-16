@@ -138,6 +138,9 @@ export class QuizService {
     if (dto.fromBookmarks && (dto.mode !== 'practice' || acikKapsam)) {
       throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
     }
+    if (dto.listId != null && (dto.mode !== 'practice' || acikKapsam || dto.fromBookmarks)) {
+      throw new BadRequestException('Liste turu yalnız kapsamsız practice modunda çalışır.');
+    }
 
     // Premium kapısı SUNUCUDA (Doc 8). Guard isPremium'u zaten hesapladı — ekstra sorgu yok.
     const isPremiumUser = user.isPremium;
@@ -285,13 +288,22 @@ export class QuizService {
         throw new NotFoundException('Tekrar edilecek yanlışın yok — kuyruk temiz. 🎉');
       }
       chosen = pool.slice(0, count);
-    } else if (dto.fromBookmarks) {
+    } else if (dto.fromBookmarks || dto.listId != null) {
       // Favori reçetesi (Doc 25 §2): havuz = kullanıcının yer imleri, en yeni önce.
-      const marks = await this.prisma.bookmark.findMany({
-        where: { userId },
-        orderBy: { createdAt: 'desc' },
-        select: { questionId: true },
-      });
+      // Liste reçetesi (Doc 49 S1-C): havuz = kişisel listenin soruları, aynı sıra.
+      // Liste sahipliği süzgeçte (list.userId) — başkasının listesi "bulunamadı".
+      const marks =
+        dto.listId != null
+          ? await this.prisma.userListItem.findMany({
+              where: { listId: dto.listId, list: { userId } },
+              orderBy: { addedAt: 'desc' },
+              select: { questionId: true },
+            })
+          : await this.prisma.bookmark.findMany({
+              where: { userId },
+              orderBy: { createdAt: 'desc' },
+              select: { questionId: true },
+            });
       const questions = await this.prisma.question.findMany({
         where: {
           id: { in: marks.map((m) => m.questionId) },
@@ -307,7 +319,11 @@ export class QuizService {
         (a, b) => (orderOf.get(a.id) ?? 0) - (orderOf.get(b.id) ?? 0),
       );
       if (pool.length === 0) {
-        throw new NotFoundException('Favorine eklediğin çözülebilir soru yok.');
+        throw new NotFoundException(
+          dto.listId != null
+            ? 'Bu listede çözülebilir soru yok.'
+            : 'Favorine eklediğin çözülebilir soru yok.',
+        );
       }
       chosen = pool.slice(0, count);
     } else {
@@ -1140,6 +1156,8 @@ export class QuizService {
           selectedOptionId: dto.selectedOptionId ?? null,
           isCorrect,
           timeSpentMs: dto.timeSpentMs ?? null,
+          // Bayrak yalnız açıkça gönderilince değişir (Doc 49 S1-C).
+          ...(dto.flagged != null ? { flagged: dto.flagged } : {}),
         },
         create: {
           sessionId,
@@ -1148,6 +1166,7 @@ export class QuizService {
           selectedOptionId: dto.selectedOptionId ?? null,
           isCorrect,
           timeSpentMs: dto.timeSpentMs ?? null,
+          flagged: dto.flagged ?? false,
         },
       }),
       needsArticle

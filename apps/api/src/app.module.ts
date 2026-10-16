@@ -25,6 +25,7 @@ import { QuestionsModule } from './modules/questions/questions.module';
 import { QuizModule } from './modules/quiz/quiz.module';
 import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
+import { ListsModule } from './modules/lists/lists.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -69,6 +70,7 @@ import { UsersModule } from './modules/users/users.module';
     QuizModule,
     ProgressModule,
     ReviewModule,
+    ListsModule,
     ReportsModule,
     BillingModule,
     CoachModule,
