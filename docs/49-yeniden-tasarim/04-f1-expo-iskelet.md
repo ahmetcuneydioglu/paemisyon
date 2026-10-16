@@ -51,9 +51,10 @@ ile sonraki kurulumlar sessizce boşa gider.
   (Xcode 27). Metro paketledi (4070 modül), giriş ekranı açıldı.
 - Açık ve koyu temada Nöbet paleti ve Bricolage/Instrument fontları ekranda doğrulandı
   (simülatör görünümü değiştirilerek canlı geçiş).
-- **Açık:** gerçek hesapla giriş ve `/me/coach` çekimi ürün sahibinin simülatörde oturum
-  açmasını bekliyor (şifre bu ortamda girilmez). Giriş sonrası Bugün ekranı sunucu
-  verisini (geri sayım, haftalık gün, görev, hazırlık) göstermelidir.
+- Ürün sahibi simülatörde beta hesabıyla giriş yaptı: Bugün ekranı gerçek `/me/coach`
+  verisini çizdi (dönüş görevi "Kısa bir dönüş turu", çözülmemiş yanlış sayısı, dört dersin
+  hazırlık yüzdeleri ve zayıf renk durumu, haftalık 0/5). Geri sayım "—": `ExamType.examDate`
+  canlıda girili değil (denetim §7); panelden tarih girilince dolar. **F1 kapandı.**
 
 ## Dışarıda bırakılanlar (plan gereği)
 
