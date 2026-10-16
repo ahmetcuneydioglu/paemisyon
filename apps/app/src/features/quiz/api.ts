@@ -26,6 +26,8 @@ export interface QuizSession {
   /** resume: verilen cevaplar. */
   givenAnswers?: { questionId: string; selectedOptionId: string | null; isCorrect: boolean | null }[];
   remainingSeconds?: number | null;
+  /** Canlı deneme: pencerenin küresel bitişi (exams/:id/start). */
+  endsAt?: string;
 }
 
 /**

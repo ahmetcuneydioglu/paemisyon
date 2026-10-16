@@ -86,6 +86,7 @@ function RootNavigator() {
         <Stack.Screen name="seans" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="sonuc" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="oku/[slug]" options={{ presentation: "fullScreenModal" }} />
+        <Stack.Screen name="deneme-sonuc/[attemptId]" options={{ headerShown: true }} />
       </Stack>
     </View>
   );

@@ -13,7 +13,7 @@ import { useTheme } from "@/theme/ThemeProvider";
  */
 export default function DersScreen() {
   const router = useRouter();
-  const { colors, space } = useTheme();
+  const { space } = useTheme();
   const p = useLocalSearchParams<{ id: string; name?: string }>();
   const q = useCourseTopics(p.id ?? null);
   const [picked, setPicked] = useState<CatalogTopic | null>(null);
