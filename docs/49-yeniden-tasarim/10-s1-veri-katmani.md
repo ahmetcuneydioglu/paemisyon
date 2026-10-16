@@ -156,5 +156,9 @@ commit ve deploy; parça sonunda prod'da spec ve backfill raporu.
   (2), Protokol Bilgisi (5), İdare Hukuku (5), 6458 Yabancılar (4), "Anayasa" adlı
   ikinci konu (1 — `T.C. Anayasası`'nın yanında metinsiz kopya; birleştirme adayı,
   S1 kapsamı dışı). Ayrıntı: `s1b-soru-madde-raporu.json` (betik her koşuda yeniler).
-  Yazım (`APPLY=1`) migration prod'a çıktıktan sonra; `createMany skipDuplicates`
-  ile idempotent, editör bağını ezmez.
+  **Yazım (prod, 17 Eki 2026 01:03 TSİ, main cd9f7f7 deploy + migration sonrası):**
+  `question_articles` 3876 satır (3855 soru; 21 related), `law_article_versions` 4892
+  satır — kuru raporla birebir; sürüm 1 metni `law_articles.text` ile farksız (0 fark).
+  Canlı doğrulama: `GET /public/mevzuat/turk-ceza-kanunu/43/questions` → count 46,
+  primaryCount 46, girişsizde `me` yok; bilinmeyen madde 404; health 200. Betikler
+  `createMany skipDuplicates` ile idempotent, editör bağını ezmez.
