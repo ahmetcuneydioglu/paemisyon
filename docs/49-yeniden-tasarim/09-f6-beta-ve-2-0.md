@@ -68,3 +68,6 @@ Sürüm notu taslağı:
   yeniden yazınca `@emnapi/core|runtime` (wasm isteğe bağlı) girdileri düşmüş; EAS'ın npm 10.9
   `npm ci` reddetti. Kural: **kilit yalnız node:22 konteynerinde üretilir, Mac'te npm install
   sonrası yeniden üretilir.** Build 2 kuyruğa alındı.
+- Build 2 Xcode aşamasında düştü: Sentry kaynak haritası yükleme betiği `SENTRY_AUTH_TOKEN`
+  yokken derlemeyi kırıyor. EAS ortamına `SENTRY_DISABLE_AUTO_UPLOAD=true` eklendi (DSN/token
+  girilince kaldırılır; çökme raporu yine çalışır, yalnız kaynak haritası yüklenmez). Build 3.
