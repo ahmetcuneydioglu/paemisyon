@@ -9,8 +9,23 @@ Doc 48'in onaylı wireframe'leri (`qHrLLOXtJSIqpKxTx2FrYi`, sayfa "Wireframe —
 yerleşim referansı olarak okundu: B1–B8 (Yerleşim B, sekiz durum) ve O1–O4 (odak akışı).
 Nöbet dili bu yerleşimlerin üstüne giydirildi; Faz 2 karar listesi (zayıf konular başta,
 dönüşte gizli, kartta tek ilerleme, "Şimdilik bitir" bağlantısı, odak üç satır, ders→konu
-inişi aynı sheet'te, kök düğme seçimi söyler) birebir uygulandı. Kapanan ekranlar aynı
-dosyaya Nöbet aynası olarak yazılır (bkz. §Figma aynası).
+inişi aynı sheet'te, kök düğme seçimi söyler) birebir uygulandı.
+
+## Figma aynası — "Paemisyon 2.0 — Nöbet"
+
+Dosya: <https://www.figma.com/design/1YZRWO3azniW8NU5CvV1BZ> (16 Eki 2026, Plugin API ile
+`packages/tokens/design-tokens.json`'dan üretildi; tek kaynak kod tarafındaki JSON'dur).
+
+- **Foundations — Nöbet** sayfası: `Nöbet / Color` koleksiyonu (Dark/Light modları, 21 renk,
+  kapsamlar ve `var(--color-*)` kod sözdizimi), `Nöbet / Spacing`, `Nöbet / Radius`; metin stilleri
+  `Nöbet/display … stat` + `button`, `badge` (Bricolage Grotesque / Instrument Sans). Renk, tip, boşluk
+  ve yarıçap örnek sayfaları.
+- **F3 — Bugün ve Çalış** sayfası: Kit (Button Primary/Secondary/Ghost, Badge 5 ton, QuestionOption
+  6 durum, TabBar — hepsi değişkene bağlı, metin özellikleri var); Bugün normal/dönüş/yarım tur
+  (koyu) + normal (açık); Odak sheet kök ve konu düzeyi; Seans geri bildirim durumu (koyu/açık);
+  Sonuç (koyu/açık). Açık tema ayrı çizim değil, koleksiyon modu değişimidir.
+- Kullanım: yeni ekran Figma'da kit'ten kurulur, koda `apps/app/src/components` ile aynı adlarla
+  geçer. Token değişince önce JSON, sonra Figma değişkenleri (betikle) güncellenir.
 
 ## Bugün (`app/(tabs)/index.tsx`)
 
