@@ -26,14 +26,22 @@ const STATIC_ITEMS: Item[] = [
   { group: "Sayfalar", label: "Kütüphane", href: "/kutuphane" },
   { group: "Sayfalar", label: "Mevzuat — Madde Atlası", href: "/kanunlar" },
   { group: "Sayfalar", label: "Denemeler", href: "/denemeler" },
-  { group: "Sayfalar", label: "PAEM Çıkmış Sorular", href: "/paem-cikmis-sorular" },
+  {
+    group: "Sayfalar",
+    label: "PAEM Çıkmış Sorular",
+    href: "/paem-cikmis-sorular",
+  },
   { group: "Sayfalar", label: "Performans", href: "/performans" },
   {
     group: "Sayfalar",
     label: "Konu haritası",
     href: "/performans/konu-haritasi",
   },
-  { group: "Sayfalar", label: "Liderlik Tablosu — sıralama", href: "/liderlik" },
+  {
+    group: "Sayfalar",
+    label: "Liderlik Tablosu — sıralama",
+    href: "/liderlik",
+  },
   { group: "Sayfalar", label: "Premium", href: "/premium" },
   { group: "Sayfalar", label: "Profil", href: "/profil" },
   {
@@ -60,17 +68,19 @@ export function CommandPalette() {
   const [query, setQuery] = useState("");
   const [cursor, setCursor] = useState(0);
   const [dynamic, setDynamic] = useState<Item[] | null>(null);
-  const [remote, setRemote] = useState<Item[]>([]);
+  // Sunucu isabetleri sorguya BAĞLI tutulur: sorgu değişince eski sonuç türetilerek
+  // düşer (effect içinde setState gerekmez — React Compiler kuralı).
+  const [remoteState, setRemoteState] = useState<{ q: string; items: Item[] }>({
+    q: "",
+    items: [],
+  });
   const inputRef = useRef<HTMLInputElement>(null);
   const loadingRef = useRef(false);
 
   // Mevzuat sunucu araması (Doc 29 §28): "cmk 90" paleti maddeye götürür.
   useEffect(() => {
     const q = query.trim();
-    if (q.length < 2) {
-      setRemote([]);
-      return;
-    }
+    if (q.length < 2) return;
     const t = setTimeout(() => {
       void fetch(
         `${config.apiBaseUrl}/public/mevzuat/search?q=${encodeURIComponent(q)}`,
@@ -88,16 +98,17 @@ export function CommandPalette() {
               }[];
             };
           }) => {
-            setRemote(
-              (json.data?.articles ?? []).slice(0, 6).map((a) => ({
+            setRemoteState({
+              q,
+              items: (json.data?.articles ?? []).slice(0, 6).map((a) => ({
                 group: "Maddeler" as const,
                 label: `${a.lawShort ?? a.lawSlug} · Madde ${a.no}${a.title ? ` — ${a.title}` : ""}`,
                 href: `/kanun/${a.lawSlug}/oku#m-${a.slug}`,
               })),
-            );
+            });
           },
         )
-        .catch(() => setRemote([]));
+        .catch(() => setRemoteState({ q, items: [] }));
     }, 300);
     return () => clearTimeout(t);
   }, [query]);
@@ -185,6 +196,7 @@ export function CommandPalette() {
     setCursor(0);
   }, []);
 
+  const remote = remoteState.q === query.trim() ? remoteState.items : [];
   const results = useMemo(() => {
     const all = [...STATIC_ITEMS, ...(dynamic ?? [])];
     const q = norm(query).trim();
@@ -214,11 +226,11 @@ export function CommandPalette() {
       role="dialog"
       aria-modal="true"
       aria-label="Komut paleti"
-      className="fixed inset-0 z-50 bg-ink/40 p-4 pt-[12vh]"
+      className="fixed inset-0 z-50 bg-black/50 p-4 pt-[12vh]"
       onClick={close}
     >
       <div
-        className="mx-auto w-full max-w-lg overflow-hidden rounded-lg border border-line bg-surface shadow-xl"
+        className="mx-auto w-full max-w-lg overflow-hidden rounded-sheet border border-line bg-surface"
         onClick={(e) => e.stopPropagation()}
       >
         <input
@@ -243,7 +255,7 @@ export function CommandPalette() {
           }}
           placeholder="Ara: kanun, ders, sayfa, eylem…  (örn. pvsk)"
           aria-label="Ara"
-          className="w-full border-b border-line bg-transparent px-4 py-3.5 text-[15px] text-ink outline-none placeholder:text-ink-soft"
+          className="type-body w-full border-b border-line bg-transparent px-4 py-3.5 text-ink outline-none placeholder:text-ink-subtle"
         />
         <ul
           role="listbox"
@@ -261,14 +273,18 @@ export function CommandPalette() {
                 onClick={() => go(r)}
                 onMouseEnter={() => setCursor(i)}
                 className={[
-                  "flex w-full cursor-pointer items-center gap-3 rounded-sm px-3 py-2.5 text-left text-[14px]",
-                  i === cursor ? "bg-brand/10 text-brand" : "text-ink",
+                  "flex w-full cursor-pointer items-center gap-3 rounded-control px-3 py-2.5 text-left text-[14px]",
+                  i === cursor ? "bg-accent-soft text-accent-ink" : "text-ink",
                 ].join(" ")}
               >
-                <span className="tk-caption w-16 shrink-0">{r.group}</span>
+                <span className="type-label w-16 shrink-0 text-ink-subtle">
+                  {r.group}
+                </span>
                 <span className="min-w-0 flex-1 truncate">{r.label}</span>
                 {r.hint && (
-                  <span className="tk-caption shrink-0">{r.hint}</span>
+                  <span className="type-body-sm shrink-0 text-ink-subtle">
+                    {r.hint}
+                  </span>
                 )}
               </button>
             </li>
@@ -279,7 +295,7 @@ export function CommandPalette() {
             </li>
           )}
         </ul>
-        <p className="tk-caption border-t border-line px-4 py-2">
+        <p className="type-label border-t border-line px-4 py-2 text-ink-subtle">
           ↑↓ gez · ⏎ git · Esc kapat
         </p>
       </div>

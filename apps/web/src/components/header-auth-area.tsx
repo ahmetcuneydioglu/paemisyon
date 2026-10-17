@@ -26,7 +26,7 @@ export function HeaderAuthArea() {
         <form action={signOut}>
           <button
             type="submit"
-            className="tk-interactive cursor-pointer rounded-sm px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink"
+            className="tk-interactive cursor-pointer rounded-control px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink"
           >
             Çıkış
           </button>

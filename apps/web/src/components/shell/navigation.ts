@@ -25,8 +25,8 @@ export interface NavItem {
 
 /**
  * Ürünün ana bölgeleri — web ve mobil navigasyonun tek kaynağı.
- * Mobil alt bar altı bölge gösterir (`grid-cols-6`); yedincisi sığmadığı için
- * bir bölge eklenecekse ya `desktopOnly` olur ya da yerini başkasına verir.
+ * Mobil alt bar beş bölge gösterir (Expo sekme çubuğuyla aynı); bir bölge
+ * eklenecekse ya `desktopOnly` olur ya da yerini başkasına verir.
  */
 export const APP_NAV_ITEMS: NavItem[] = [
   // Liderlik tablosu Bugün'ün altına alındı (kullanıcı kararı): günlük
@@ -74,13 +74,15 @@ export const APP_NAV_ITEMS: NavItem[] = [
     also: ["/sinav", "/sonuc", "/siralama"],
   },
   // Çıkmış sorular kendi bölgesi (kullanıcı kararı): sınav öncesi her gün
-  // açılan içerik, denemenin alt başlığı olarak gömülmez. Mobil alt barda da
-  // yer alır — oradaki yerini liderlik tablosuna verdi.
+  // açılan içerik, denemenin alt başlığı olarak gömülmez. Mobil alt bar Expo
+  // sekme çubuğuyla aynı BEŞ bölgeyi taşır (Doc 49/11 W-C); çıkmış sorulara dar
+  // ekranda Kütüphane ve ⌘K üzerinden gidilir.
   {
     href: "/paem-cikmis-sorular",
     label: "Çıkmış Sorular",
     icon: "archive",
     also: [],
+    desktopOnly: true,
   },
   {
     href: "/performans",

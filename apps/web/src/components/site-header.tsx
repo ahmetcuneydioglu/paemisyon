@@ -24,7 +24,7 @@ export function SiteHeader() {
   const authArea = <HeaderAuthArea />;
 
   return (
-    <header className="tk-scope sticky top-0 z-30 border-b border-line bg-surface/95 font-body backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-line bg-surface/95 backdrop-blur">
       <div className="relative mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
         <Link href="/" aria-label="Paemisyon ana sayfa">
           <BrandMark />

@@ -3,6 +3,8 @@
  * tüm veri uçları ayrıca JWT doğrular. Kabuk alt gruplarda —
  * (shell) = L2 sidebar'lı çalışma alanı · tur = L3 odak (kabuksuz).
  */
-export default function AppLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <div className="tk-scope min-h-screen font-body">{children}</div>;
+export default function AppLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return <div className="min-h-screen">{children}</div>;
 }

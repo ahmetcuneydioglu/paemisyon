@@ -9,7 +9,7 @@ export function LinkPendingIndicator() {
 
   return (
     <span
-      className="pointer-events-none absolute inset-x-2 bottom-0 h-0.5 overflow-hidden rounded-full bg-brand/20"
+      className="pointer-events-none absolute inset-x-2 bottom-0 h-0.5 overflow-hidden rounded-full bg-accent/20"
       role="status"
       aria-label="Sayfa açılıyor"
     >

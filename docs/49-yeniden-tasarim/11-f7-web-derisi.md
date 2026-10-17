@@ -205,3 +205,17 @@ dalların bekleyen commit'lerine dokunulmaz.
   diyalog açılıp Esc ile kapanıyor, popover dış tıklamayla kapanıyor; tek düzeltme `type-display`
   telefonda taşıyordu → `clamp(40px, 9vw, token)`. typecheck/eslint/80 vitest/tokens:check
   (0 hata) yeşil. Girişli kabukta `/tasarim` kontrolü kullanıcı girişiyle.
+- **W-C Kabuk (17 Eki 2026):** L2 — `Sidebar` 64 px ikon rayı (md) / 240 px tam (xl), aktif
+  öğe `accentSoft`+`accentInk`+bakır çizgi, `lucide` ikon seti (`NavigationIcon` sarmalayıcı,
+  Expo ile aynı); yeni `TopStrip` (bölge adı · ⌘K · "devam et" pili `/quiz/active-session` ·
+  tema · profil; ≥md), `MobileAppHeader` + `MobileBottomNavigation` **5 bölge** (Expo TabBar
+  ile aynı; Çıkmış Sorular dar ekranda Kütüphane/⌘K üzerinden), `CoachRail` 320 px kit
+  bileşenleriyle (≤2 kart + hedef `ProgressBar`; `RailToggle` panel ikonlarıyla, durum
+  kalıcı). L3 — yeni `FocusFrame` (ince şerit: çıkış · bağlam · ilerleme · süre; ≤65ch
+  içerik; sağ yardımcı panel) W-D oynatıcıları için. L4 — `ThreePane` 256/akışkan/320, dar
+  ekranda ağaç çekmece. L1 — `SiteHeader/SiteNav/SiteFooter` v3 sınıfları (lucide menü),
+  `tk-scope` kabukları kalktı. ⌘K görünümü v3 (`accentSoft` seçili satır) ve eski
+  setState-in-effect lint hatası giderildi. `/tasarim` middleware korumasına alındı.
+  **Doğrulama:** public header/footer ve dar ekran menüsü önizlemede; typecheck, 80 vitest,
+  tokens:check 0 hata; girişli L2/⌘K/ray görünümü panelde oturum açılınca bakılacak
+  (şu an panelde çerez yok).

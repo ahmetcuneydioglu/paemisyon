@@ -7,7 +7,11 @@ import { config as appConfig } from "./lib/config";
  * her istekte sessizce yeniler; korumalı sayfalar yönlendirmeyi kendisi yapar.
  */
 export async function middleware(request: NextRequest) {
-  const refreshedCookies: { name: string; value: string; options: CookieOptions }[] = [];
+  const refreshedCookies: {
+    name: string;
+    value: string;
+    options: CookieOptions;
+  }[] = [];
   const supabase = createServerClient(
     appConfig.supabaseUrl,
     appConfig.supabaseAnonKey,
@@ -31,6 +35,7 @@ export async function middleware(request: NextRequest) {
 
   const protectedPrefixes = [
     "/bugun",
+    "/tasarim", // bileşen galerisi (Doc 49/11) — girişsiz 404 yerine girişe yönlendir
     "/calisma", // kanun/SEO sayfalarının girişli app-kabuğu sürümleri (rewrite hedefi)
     "/cikmis-sinav", // çıkmış sınav çalışma modu (Doc 36) — public vitrin /paem-cikmis-sorular
     "/kutuphane",

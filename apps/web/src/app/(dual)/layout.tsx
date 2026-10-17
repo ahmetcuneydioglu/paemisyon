@@ -25,7 +25,7 @@ export default async function DualLayout({
   }
 
   return (
-    <div className="tk-scope min-h-screen font-body">
+    <div className="min-h-screen">
       <AppShell>{children}</AppShell>
     </div>
   );

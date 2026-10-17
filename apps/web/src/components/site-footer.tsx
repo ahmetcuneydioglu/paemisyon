@@ -3,7 +3,10 @@ import { BrandMark } from "@/components/brand-mark";
 import { ContactChannels } from "@/components/contact-channels";
 import { StoreBadges } from "@/components/store-badges";
 
-const GROUPS: { title: string; links: { href: string; label: string; external?: boolean }[] }[] = [
+const GROUPS: {
+  title: string;
+  links: { href: string; label: string; external?: boolean }[];
+}[] = [
   {
     title: "Çalış",
     links: [
@@ -28,7 +31,11 @@ const GROUPS: { title: string; links: { href: string; label: string; external?: 
     links: [
       { href: "/gizlilik", label: "Gizlilik (KVKK)" },
       { href: "/kosullar", label: "Kullanım Koşulları" },
-      { href: "mailto:destek@paemisyon.com", label: "İletişim", external: true },
+      {
+        href: "mailto:destek@paemisyon.com",
+        label: "İletişim",
+        external: true,
+      },
       { href: "/soru-oner", label: "Soru Öner" },
     ],
   },
@@ -37,20 +44,20 @@ const GROUPS: { title: string; links: { href: string; label: string; external?: 
 /** Alt bilgi (L1 Kapı) — iç bağlantı örgüsünün son halkası + yasal zorunluluklar. */
 export function SiteFooter() {
   return (
-    <footer className="tk-scope border-t border-line bg-surface font-body">
+    <footer className="border-t border-line bg-surface">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <BrandMark glyphClassName="size-6" textClassName="text-[15px]" />
           <p className="mt-2 max-w-[28ch] text-[13px] leading-relaxed text-ink-soft">
-            Polis sınavlarına hazırlığın merkezi: kaynaklı çıkmış sorular, canlı denemeler,
-            kişisel koç.
+            Polis sınavlarına hazırlığın merkezi: kaynaklı çıkmış sorular, canlı
+            denemeler, kişisel koç.
           </p>
           <ContactChannels variant="inline" className="mt-3" />
           <StoreBadges className="mt-4" width={124} wrap />
         </div>
         {GROUPS.map((g) => (
           <nav key={g.title} aria-label={g.title}>
-            <p className="tk-caption mb-3">{g.title}</p>
+            <p className="type-label mb-3 text-ink-subtle">{g.title}</p>
             <ul className="space-y-2 text-[14px]">
               {g.links.map((l) => (
                 <li key={l.href}>
@@ -59,7 +66,10 @@ export function SiteFooter() {
                       {l.label}
                     </a>
                   ) : (
-                    <Link href={l.href} className="text-ink-soft hover:text-ink">
+                    <Link
+                      href={l.href}
+                      className="text-ink-soft hover:text-ink"
+                    >
                       {l.label}
                     </Link>
                   )}
@@ -71,8 +81,9 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-line">
         <p className="mx-auto max-w-6xl px-4 py-4 text-[12px] text-ink-soft">
-          © {new Date().getFullYear()} Paemisyon — Tüm hakları saklıdır. Resmî kurumlarla
-          bağlantılı değildir; sorular kaynak etiketli gerçek sınav sorularıdır.
+          © {new Date().getFullYear()} Paemisyon — Tüm hakları saklıdır. Resmî
+          kurumlarla bağlantılı değildir; sorular kaynak etiketli gerçek sınav
+          sorularıdır.
         </p>
       </div>
     </footer>

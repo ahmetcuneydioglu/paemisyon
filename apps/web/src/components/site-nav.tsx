@@ -4,6 +4,7 @@ import Link from "next/link";
 import { StoreBadges } from "./store-badges";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 
 export interface NavItem {
@@ -12,7 +13,13 @@ export interface NavItem {
 }
 
 /** Public üst nav — masaüstünde yatay linkler, mobilde açılır menü (L1 Kapı). */
-export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React.ReactNode }) {
+export function SiteNav({
+  items,
+  authArea,
+}: {
+  items: NavItem[];
+  authArea: React.ReactNode;
+}) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const first = useRef(true);
@@ -30,17 +37,18 @@ export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React
     <>
       <nav className="hidden items-center gap-1 md:flex" aria-label="Site">
         {items.map((n) => {
-          const active = pathname === n.href || pathname.startsWith(n.href + "/");
+          const active =
+            pathname === n.href || pathname.startsWith(n.href + "/");
           return (
             <Link
               key={n.href}
               href={n.href}
               aria-current={active ? "page" : undefined}
               className={[
-                "tk-interactive rounded-sm px-3 py-2 text-[14px]",
+                "tk-interactive rounded-control px-3 py-2 text-[14px]",
                 active
-                  ? "font-bold text-brand"
-                  : "text-ink-soft hover:bg-line/40 hover:text-ink",
+                  ? "bg-accent-soft font-semibold text-accent-ink"
+                  : "text-ink-soft hover:bg-surface-alt hover:text-ink",
               ].join(" ")}
             >
               {n.label}
@@ -54,13 +62,13 @@ export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-label="Menü"
-        className="tk-interactive grid size-9 cursor-pointer place-items-center rounded-sm text-ink md:hidden"
+        className="tk-interactive grid size-11 cursor-pointer place-items-center rounded-control text-ink md:hidden"
       >
-        <span aria-hidden>{open ? "✕" : "☰"}</span>
+        {open ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
       </button>
 
       {open && (
-        <div className="absolute inset-x-0 top-full z-40 border-b border-line bg-surface shadow-lg md:hidden">
+        <div className="absolute inset-x-0 top-full z-40 border-b border-line bg-surface md:hidden">
           <div className="flex items-center justify-between gap-3 border-b border-line px-3 py-3">
             <p className="text-[13px] font-medium leading-snug text-ink">
               Mobil uygulama
@@ -75,7 +83,7 @@ export function SiteNav({ items, authArea }: { items: NavItem[]; authArea: React
               <Link
                 key={n.href}
                 href={n.href}
-                className="rounded-sm px-3 py-2.5 text-[15px] text-ink hover:bg-line/40"
+                className="rounded-control px-3 py-2.5 text-[15px] text-ink hover:bg-surface-alt"
               >
                 {n.label}
               </Link>

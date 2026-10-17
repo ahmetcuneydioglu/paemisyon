@@ -4,26 +4,33 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "@/app/(auth)/actions";
 import { BrandGlyph, BrandMark } from "@/components/brand-mark";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { KeyHint } from "@/components/ui/key-hint";
+import { LinkPendingIndicator } from "@/components/ui/link-pending-indicator";
+import { cn } from "@/lib/cn";
 import { CMDK_EVENT } from "./command-palette";
 import { NavigationIcon } from "./navigation-icon";
 import { APP_NAV_ITEMS, isNavItemActive } from "./navigation";
-import { LinkPendingIndicator } from "@/components/ui/link-pending-indicator";
 
-/** Tablet: etiketli navigasyon rayı · geniş ekran: tam sidebar ve alt ağaç. */
+/**
+ * Sol sidebar (Doc 27 L2): 768–1279 ikon rayı (64 px), ≥1280 tam sidebar (240 px)
+ * ve bölge içi alt başlıklar. Aktif öğe `accentSoft` zemin + `accentInk` metin +
+ * sol bakır çizgi (renk tek başına değil: aria-current da var).
+ */
 export function Sidebar() {
   const pathname = usePathname();
+  const item =
+    "tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-control px-1 text-[11px] font-semibold xl:min-h-0 xl:flex-row xl:justify-start xl:gap-3 xl:px-3 xl:py-2.5 xl:text-[14px]";
 
   return (
-    <aside className="sticky top-0 hidden h-dvh w-24 shrink-0 flex-col border-r border-line bg-surface md:flex min-[1200px]:w-56">
+    <aside className="sticky top-0 hidden h-dvh w-16 shrink-0 flex-col border-r border-line bg-surface md:flex xl:w-60">
       <Link
         href="/bugun"
         aria-label="Paemisyon ana sayfa"
-        className="flex h-16 items-center justify-center min-[1200px]:justify-start min-[1200px]:px-5"
+        className="flex h-14 items-center justify-center xl:justify-start xl:px-5"
       >
-        <BrandGlyph className="size-9 min-[1200px]:hidden" />
+        <BrandGlyph className="size-8 xl:hidden" />
         <BrandMark
-          className="hidden min-[1200px]:inline-flex"
+          className="hidden xl:inline-flex"
           glyphClassName="size-6"
           textClassName="text-[15px]"
         />
@@ -32,49 +39,51 @@ export function Sidebar() {
       <button
         type="button"
         onClick={() => window.dispatchEvent(new CustomEvent(CMDK_EVENT))}
-        className="tk-interactive mx-2 mb-3 flex min-h-12 cursor-pointer flex-col items-center justify-center gap-1 rounded-md border border-line px-1 text-[11px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink min-[1200px]:mx-3 min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-between min-[1200px]:gap-2 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-[13px] min-[1200px]:font-normal"
+        className="tk-interactive mx-2 mb-2 flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-control border border-line text-ink-soft hover:border-ink-soft hover:text-ink xl:mx-3 xl:justify-between xl:px-3"
         aria-label="Ara — komut paleti"
       >
         <NavigationIcon name="search" className="size-5 shrink-0" />
-        <span className="min-[1200px]:flex-1 min-[1200px]:text-left">Ara</span>
-        <kbd className="tk-caption hidden min-[1200px]:inline" aria-hidden>
-          ⌘K
-        </kbd>
+        <span className="hidden flex-1 text-left text-[13px] xl:inline">
+          Ara
+        </span>
+        <KeyHint keys="⌘K" className="hidden xl:inline-block" />
       </button>
 
       <nav
-        className="flex flex-col gap-1 px-2 min-[1200px]:px-3"
+        className="flex flex-col gap-0.5 px-2 xl:px-3"
         aria-label="Ana bölgeler"
       >
-        {APP_NAV_ITEMS.map((item) => {
-          const active = isNavItemActive(item, pathname);
+        {APP_NAV_ITEMS.map((it) => {
+          const active = isNavItemActive(it, pathname);
           return (
-            <div key={item.href}>
+            <div key={it.href}>
               <Link
-                href={item.href}
+                href={it.href}
                 aria-current={active ? "page" : undefined}
-                title={item.label}
-                className={[
-                  "tk-interactive relative flex min-h-14 flex-col items-center justify-center gap-1 rounded-md px-1 text-[11px] font-semibold min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2.5 min-[1200px]:text-[14px]",
+                title={it.label}
+                className={cn(
+                  item,
                   active
-                    ? "bg-brand/10 text-brand"
-                    : "text-ink-soft hover:bg-line/40 hover:text-ink",
-                ].join(" ")}
-              >
-                {active && (
-                  <span className="absolute left-0 top-1/2 h-7 w-0.5 -translate-y-1/2 rounded-full bg-brand" />
+                    ? "bg-accent-soft text-accent-ink"
+                    : "text-ink-soft hover:bg-surface-alt hover:text-ink",
                 )}
+              >
+                {active ? (
+                  <span className="absolute top-1/2 left-0 h-6 w-0.5 -translate-y-1/2 rounded-full bg-accent" />
+                ) : null}
                 <NavigationIcon
-                  name={item.icon}
+                  name={it.icon}
                   className="size-[22px] shrink-0"
+                  strokeWidth={active ? 2 : 1.75}
                 />
-                <span>{item.label}</span>
+                <span className="max-w-full truncate xl:max-w-none">
+                  {it.label}
+                </span>
                 <LinkPendingIndicator />
               </Link>
-
-              {active && item.children && (
-                <div className="mt-0.5 mb-1 ml-6 hidden flex-col gap-0.5 border-l border-line pl-2 min-[1200px]:flex">
-                  {item.children.map((child) => {
+              {active && it.children ? (
+                <div className="mt-0.5 mb-1 ml-6 hidden flex-col gap-0.5 border-l border-line pl-2 xl:flex">
+                  {it.children.map((child) => {
                     const childActive =
                       !child.href.includes("?") && pathname === child.href;
                     return (
@@ -82,12 +91,12 @@ export function Sidebar() {
                         key={child.href}
                         href={child.href}
                         aria-current={childActive ? "page" : undefined}
-                        className={[
-                          "tk-interactive relative rounded-sm px-2 py-1.5 text-[13px]",
+                        className={cn(
+                          "tk-interactive relative rounded-control px-2 py-1.5 text-[13px]",
                           childActive
-                            ? "font-bold text-brand"
-                            : "text-ink-soft hover:bg-line/40 hover:text-ink",
-                        ].join(" ")}
+                            ? "font-semibold text-accent-ink"
+                            : "text-ink-soft hover:bg-surface-alt hover:text-ink",
+                        )}
                       >
                         {child.label}
                         <LinkPendingIndicator />
@@ -95,23 +104,23 @@ export function Sidebar() {
                     );
                   })}
                 </div>
-              )}
+              ) : null}
             </div>
           );
         })}
       </nav>
 
-      <div className="mt-auto space-y-1 border-t border-line px-2 py-3 min-[1200px]:px-3">
-        <div className="mb-2 hidden min-[1200px]:block">
-          <ThemeToggle />
-        </div>
+      <div className="mt-auto flex flex-col gap-0.5 border-t border-line px-2 py-3 xl:px-3">
         <UtilityLink href="/premium" icon="premium" label="Premium" />
         <UtilityLink href="/sss" icon="help" label="Yardım ve SSS" />
         <form action={signOut}>
           <button
             type="submit"
             title="Çıkış yap"
-            className="tk-interactive flex min-h-12 w-full flex-col items-center justify-center gap-1 rounded-md text-[10px] font-semibold text-ink-soft hover:bg-danger/5 hover:text-danger min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-[13px]"
+            className={cn(
+              item,
+              "w-full cursor-pointer text-ink-soft hover:bg-danger-soft hover:text-danger-ink",
+            )}
           >
             <NavigationIcon name="logout" className="size-5 shrink-0" />
             <span>Çıkış</span>
@@ -135,10 +144,10 @@ function UtilityLink({
     <Link
       href={href}
       title={label}
-      className="tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-md text-center text-[10px] font-semibold text-ink-soft hover:bg-line/40 hover:text-ink min-[1200px]:min-h-0 min-[1200px]:flex-row min-[1200px]:justify-start min-[1200px]:gap-3 min-[1200px]:px-2.5 min-[1200px]:py-2 min-[1200px]:text-left min-[1200px]:text-[13px]"
+      className="tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-control text-center text-[10px] font-semibold text-ink-soft hover:bg-surface-alt hover:text-ink xl:min-h-0 xl:flex-row xl:justify-start xl:gap-3 xl:px-3 xl:py-2 xl:text-left xl:text-[13px]"
     >
       <NavigationIcon name={icon} className="size-5 shrink-0" />
-      <span>{label}</span>
+      <span className="max-w-full truncate xl:max-w-none">{label}</span>
       <LinkPendingIndicator />
     </Link>
   );
