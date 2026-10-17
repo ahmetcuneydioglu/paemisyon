@@ -219,3 +219,20 @@ dalların bekleyen commit'lerine dokunulmaz.
   **Doğrulama:** public header/footer ve dar ekran menüsü önizlemede; typecheck, 80 vitest,
   tokens:check 0 hata; girişli L2/⌘K/ray görünümü panelde oturum açılınca bakılacak
   (şu an panelde çerez yok).
+- **W-D Bugün + Seans + Deneme + Sonuç (18 Eki 2026):** Bugün sayfası v3 (hero kart tek
+  vurgu, `CoachCard` lucide ikonlu, `GoalProgress`/`ProgressBar`, nöbet çizelgesi success/
+  accent tonları, rütbe/rekor/premium kartları korunarak), `FocusPicker` popover görünümü
+  v3, `ExamBanner`/`PushOptIn`/`StreakBadge`/`ExplanationBox` kit diliyle (emoji yok).
+  Seans oynatıcı: `shell/FocusFrame` (yerel kopya silindi), `QuestionStem`+`QuestionOption`
+  (6 durum: doğru/yanlış/kaçırılan), `SegmentBar` ilerleme, çıkış `Dialog`, hatalar `Notice`,
+  yardımcı panelde tur akışı + madde inspector + **kalıcı soru notu** (S1-C
+  `GET/PUT/DELETE /me/questions/:id/note`, 800 ms gecikmeli, boşsa siler; eski "oturum içi
+  karalama" kalktı). Deneme oynatıcı: `FocusFrame` (süre sağda, son 10 dk warning), optik
+  panel v3, **"emin değilim" bayrağı sunucuda kalıcı** (S1-C `flagged`; mevcut cevap
+  korunarak yazılır; API `/exams/:id/start` ve devam yükleri `flagged` döner — apps/api
+  değişikliği bu dalda). Sonuç: `type-display` net, `Badge` delta, `DataTable` kırılımı,
+  "emin olmadığın sorular" kartı + `ReviewList` `QuestionOption` ile bayrak rozeti.
+  typecheck/eslint/80 vitest/tokens:check yeşil (geçiş adı 881 → 705). **Göz testi
+  bekliyor:** bu ekranlar girişli; paneldeki localhost:3012 sekmesinde oturum çerezi
+  oluşmadı (POST /giris 303 dönüyor, ardından /bugun tekrar girişe atıyor — sebep
+  araştırılacak; TopStrip bayat-manifest hatası sunucu yeniden başlatılarak giderildi).

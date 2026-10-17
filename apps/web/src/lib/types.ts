@@ -19,6 +19,8 @@ export interface ReviewQuestion {
   source?: string | null;
   options: ReviewOption[];
   selectedOptionId?: string | null;
+  /** "Emin değilim" bayrağı — sunucuda kalıcı (Doc 49 S1-C). */
+  flagged?: boolean;
 }
 export interface AttemptResult {
   attemptId: string;
@@ -33,7 +35,11 @@ export interface AttemptResult {
   durationSeconds: number | null;
   completedAt: string | null;
   /** Süre yönetimi şeridi (wireframe 11): soru sırasına göre harcanan süre. */
-  timing?: { order: number; timeSpentMs: number | null; status: "correct" | "wrong" | "blank" }[];
+  timing?: {
+    order: number;
+    timeSpentMs: number | null;
+    status: "correct" | "wrong" | "blank";
+  }[];
   /** Derin analiz (wireframe 08): konu kırılımı — en çok kaybettiren üstte. */
   topicBreakdown?: {
     topicId: string;
@@ -72,7 +78,12 @@ export interface GlobalRankRow {
 }
 export interface MyAttempt {
   attemptId: string;
-  exam: { id: string; title: string; startAt: string; durationMinutes: number } | null;
+  exam: {
+    id: string;
+    title: string;
+    startAt: string;
+    durationMinutes: number;
+  } | null;
   status: "in_progress" | "completed" | "abandoned";
   correctCount: number;
   wrongCount: number;
@@ -97,7 +108,10 @@ export interface ExamListItem {
   state: ExamState;
   participantCount: number;
   avgScore: number | null;
-  myAttempt: { id: string; status: "in_progress" | "completed" | "abandoned" } | null;
+  myAttempt: {
+    id: string;
+    status: "in_progress" | "completed" | "abandoned";
+  } | null;
   /** Arşivde çözdüysem son sonucum — "arşiv sonucum" girişi bunun üstünden. */
   myArchiveAttempt: {
     id: string;

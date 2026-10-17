@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { apiClient } from "@/lib/api-client";
 import { config } from "@/lib/config";
+import { ChevronDown, ChevronRight, Lock } from "lucide-react";
 
 interface Module {
   id: string;
@@ -32,7 +33,12 @@ type Step =
   | { kind: "root" }
   | { kind: "modules"; wantTopic: boolean }
   | { kind: "courses"; moduleId: string; wantTopic: boolean; items?: Course[] }
-  | { kind: "topics"; courseId: string; courseName: string; items?: TopicNode[] }
+  | {
+      kind: "topics";
+      courseId: string;
+      courseName: string;
+      items?: TopicNode[];
+    }
   | { kind: "laws"; items?: Law[] };
 
 /**
@@ -52,7 +58,8 @@ export function FocusPicker() {
   useEffect(() => {
     if (!open) return;
     const onDown = (e: MouseEvent) => {
-      if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(false);
+      if (rootRef.current && !rootRef.current.contains(e.target as Node))
+        setOpen(false);
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
@@ -90,7 +97,9 @@ export function FocusPicker() {
     setError(null);
     setStep({ kind: "courses", moduleId, wantTopic });
     try {
-      const items = await apiClient<Course[]>(`/catalog/modules/${moduleId}/courses`);
+      const items = await apiClient<Course[]>(
+        `/catalog/modules/${moduleId}/courses`,
+      );
       setStep({ kind: "courses", moduleId, wantTopic, items });
     } catch {
       setError("Dersler yüklenemedi. Tekrar dene.");
@@ -133,7 +142,7 @@ export function FocusPicker() {
   }
 
   const itemCls =
-    "tk-interactive flex w-full cursor-pointer items-center justify-between gap-2 rounded-sm px-3 py-2.5 text-left text-[14px] text-ink hover:bg-line/40";
+    "tk-interactive flex min-h-11 w-full cursor-pointer items-center justify-between gap-2 rounded-control px-3 py-2 text-left type-body-sm text-ink hover:bg-surface-alt";
 
   return (
     <div className="relative" ref={rootRef}>
@@ -145,51 +154,93 @@ export function FocusPicker() {
         }}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="tk-interactive cursor-pointer text-[13px] text-ink-soft hover:text-ink"
+        className="tk-interactive inline-flex h-11 cursor-pointer items-center gap-1.5 rounded-control px-3 type-body-sm text-ink-soft hover:bg-surface-alt hover:text-ink"
       >
-        Odak: Koç seçiyor <span aria-hidden>▾</span>
+        Odak: Koç seçiyor <ChevronDown size={16} aria-hidden />
       </button>
 
       {open && (
         <div
           role="dialog"
           aria-label="Bugünkü turun kapsamı"
-          className="absolute left-0 top-full z-30 mt-2 w-80 rounded-lg border border-line bg-surface p-2 shadow-lg"
+          className="absolute top-full left-0 z-30 mt-2 w-80 rounded-card border border-line bg-surface p-2"
         >
-          <p className="tk-caption px-3 pb-1 pt-2">Bugünkü turun kapsamı</p>
+          <p className="type-label px-3 pt-2 pb-1 text-ink-subtle">
+            Bugünkü turun kapsamı
+          </p>
 
-          {error && <p className="px-3 py-1 text-[13px] text-danger">{error}</p>}
+          {error && (
+            <p className="type-body-sm px-3 py-1 text-danger-ink">{error}</p>
+          )}
 
           {step.kind === "root" && (
             <div className="flex flex-col">
-              <button type="button" className={itemCls} onClick={() => start(new URLSearchParams())}>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() => start(new URLSearchParams())}
+              >
                 <span>
-                  <span className="font-bold">Koç seçsin</span>
-                  <span className="block text-[12px] text-ink-soft">
+                  <span className="type-subhead">Koç seçsin</span>
+                  <span className="type-body-sm block text-ink-soft">
                     Zayıf konuların + yanlışların + yeni sorular
                   </span>
                 </span>
-                <span className="tk-caption shrink-0">varsayılan</span>
+                <span className="type-label shrink-0 text-ink-subtle">
+                  varsayılan
+                </span>
               </button>
-              <button type="button" className={itemCls} onClick={() => void enterModules(false)}>
-                Ders seç… <span aria-hidden>›</span>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() => void enterModules(false)}
+              >
+                Ders seç…{" "}
+                <ChevronRight
+                  size={16}
+                  className="shrink-0 text-ink-subtle"
+                  aria-hidden
+                />
               </button>
-              <button type="button" className={itemCls} onClick={() => void enterModules(true)}>
-                Konu seç… <span aria-hidden>›</span>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() => void enterModules(true)}
+              >
+                Konu seç…{" "}
+                <ChevronRight
+                  size={16}
+                  className="shrink-0 text-ink-subtle"
+                  aria-hidden
+                />
               </button>
-              <button type="button" className={itemCls} onClick={() => void enterLaws()}>
-                Kanun seç… <span aria-hidden>›</span>
+              <button
+                type="button"
+                className={itemCls}
+                onClick={() => void enterLaws()}
+              >
+                Kanun seç…{" "}
+                <ChevronRight
+                  size={16}
+                  className="shrink-0 text-ink-subtle"
+                  aria-hidden
+                />
               </button>
               <button
                 type="button"
                 className={itemCls}
                 onClick={() =>
-                  start(new URLSearchParams({ mode: "review", scope: "Yanlış tekrarı" }))
+                  start(
+                    new URLSearchParams({
+                      mode: "review",
+                      scope: "Yanlış tekrarı",
+                    }),
+                  )
                 }
               >
                 <span>
                   Sadece yanlışlarım
-                  <span className="block text-[12px] text-ink-soft">
+                  <span className="type-body-sm block text-ink-soft">
                     En eski yanlışların önce — doğru çözersen kuyruktan düşer
                   </span>
                 </span>
@@ -198,13 +249,19 @@ export function FocusPicker() {
                 type="button"
                 className={itemCls}
                 onClick={() =>
-                  start(new URLSearchParams({ mode: "favorites", scope: "Favorilerim" }))
+                  start(
+                    new URLSearchParams({
+                      mode: "favorites",
+                      scope: "Favorilerim",
+                    }),
+                  )
                 }
               >
                 Favorilerim
               </button>
-              <p className="px-3 pb-2 pt-1.5 text-[12px] leading-relaxed text-ink-soft">
-                Odak bugünlük geçerli; kapsam içindeki soruları yine koç karıştırır.
+              <p className="type-body-sm px-3 pt-1.5 pb-2 text-ink-subtle">
+                Odak bugünlük geçerli; kapsam içindeki soruları yine koç
+                karıştırır.
               </p>
             </div>
           )}
@@ -218,7 +275,12 @@ export function FocusPicker() {
                   className={itemCls}
                   onClick={() => void enterCourses(m.id, step.wantTopic)}
                 >
-                  {m.name} <span aria-hidden>›</span>
+                  {m.name}{" "}
+                  <ChevronRight
+                    size={16}
+                    className="shrink-0 text-ink-subtle"
+                    aria-hidden
+                  />
                 </button>
               ))}
             </div>
@@ -226,7 +288,11 @@ export function FocusPicker() {
 
           {step.kind === "courses" && (
             <div className="flex max-h-80 flex-col overflow-y-auto">
-              {!step.items && <p className="px-3 py-2 text-[13px] text-ink-soft">Yükleniyor…</p>}
+              {!step.items && (
+                <p className="type-body-sm px-3 py-2 text-ink-soft">
+                  Yükleniyor…
+                </p>
+              )}
               {step.items?.map((c) => (
                 <button
                   key={c.id}
@@ -235,11 +301,18 @@ export function FocusPicker() {
                   onClick={() =>
                     step.wantTopic
                       ? void enterTopics(c.id, c.name)
-                      : start(new URLSearchParams({ courseId: c.id, scope: c.name }))
+                      : start(
+                          new URLSearchParams({
+                            courseId: c.id,
+                            scope: c.name,
+                          }),
+                        )
                   }
                 >
                   <span className="min-w-0 truncate">{c.name}</span>
-                  <span className="tk-caption shrink-0">%{c.weightPercent}</span>
+                  <span className="type-label shrink-0 text-ink-subtle">
+                    %{c.weightPercent}
+                  </span>
                 </button>
               ))}
             </div>
@@ -247,20 +320,33 @@ export function FocusPicker() {
 
           {step.kind === "laws" && (
             <div className="flex max-h-80 flex-col overflow-y-auto">
-              {!step.items && <p className="px-3 py-2 text-[13px] text-ink-soft">Yükleniyor…</p>}
+              {!step.items && (
+                <p className="type-body-sm px-3 py-2 text-ink-soft">
+                  Yükleniyor…
+                </p>
+              )}
               {step.items?.map((l) => (
                 <button
                   key={l.slug}
                   type="button"
                   className={itemCls}
-                  onClick={() => start(new URLSearchParams({ topicId: l.topicId, scope: l.name }))}
+                  onClick={() =>
+                    start(
+                      new URLSearchParams({
+                        topicId: l.topicId,
+                        scope: l.name,
+                      }),
+                    )
+                  }
                 >
                   <span className="min-w-0 truncate">{l.name}</span>
-                  <span className="tk-caption shrink-0">{l.questionCount} soru</span>
+                  <span className="type-label shrink-0 text-ink-subtle">
+                    {l.questionCount} soru
+                  </span>
                 </button>
               ))}
               {step.items?.length === 0 && (
-                <p className="px-3 py-2 text-[13px] text-ink-soft">
+                <p className="type-body-sm px-3 py-2 text-ink-soft">
                   Henüz sorusu olan kanun yok.
                 </p>
               )}
@@ -269,25 +355,37 @@ export function FocusPicker() {
 
           {step.kind === "topics" && (
             <div className="flex max-h-80 flex-col overflow-y-auto">
-              {!step.items && <p className="px-3 py-2 text-[13px] text-ink-soft">Yükleniyor…</p>}
-              {step.items?.flatMap((t) => [t, ...(t.children ?? [])]).map((t) => (
-                <button
-                  key={t.id}
-                  type="button"
-                  className={itemCls}
-                  onClick={() =>
-                    start(
-                      new URLSearchParams({
-                        topicId: t.id,
-                        scope: `${step.courseName} · ${t.name}`,
-                      }),
-                    )
-                  }
-                >
-                  <span className="min-w-0 truncate">{t.name}</span>
-                  {t.isPremium && <span className="tk-caption shrink-0">🔒</span>}
-                </button>
-              ))}
+              {!step.items && (
+                <p className="type-body-sm px-3 py-2 text-ink-soft">
+                  Yükleniyor…
+                </p>
+              )}
+              {step.items
+                ?.flatMap((t) => [t, ...(t.children ?? [])])
+                .map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    className={itemCls}
+                    onClick={() =>
+                      start(
+                        new URLSearchParams({
+                          topicId: t.id,
+                          scope: `${step.courseName} · ${t.name}`,
+                        }),
+                      )
+                    }
+                  >
+                    <span className="min-w-0 truncate">{t.name}</span>
+                    {t.isPremium && (
+                      <Lock
+                        size={14}
+                        className="shrink-0 text-ink-subtle"
+                        aria-label="premium"
+                      />
+                    )}
+                  </button>
+                ))}
             </div>
           )}
         </div>

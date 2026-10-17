@@ -1,12 +1,17 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { ChevronLeft, ChevronRight, Flag } from "lucide-react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
-import { OptionRow } from "@/components/ui/option-row";
+import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import { Dialog } from "@/components/ui/dialog";
+import { KeyHint } from "@/components/ui/key-hint";
+import { Notice } from "@/components/ui/notice";
+import { QuestionOption, QuestionStem } from "@/components/ui/question";
+import { FocusFrame } from "@/components/shell/focus-frame";
 
 export interface StartPayload {
   sessionId: string;
@@ -22,7 +27,12 @@ export interface StartPayload {
     mediaUrl: string | null;
     options: { id: string; label: string; text: string }[];
   }[];
-  givenAnswers: { questionId: string; selectedOptionId: string | null }[];
+  /** flagged: "emin değilim" bayrağı sunucuda kalıcı (Doc 49 S1-C). */
+  givenAnswers: {
+    questionId: string;
+    selectedOptionId: string | null;
+    flagged?: boolean;
+  }[];
 }
 
 type SaveState = "saved" | "saving" | "failed";
@@ -58,8 +68,14 @@ export function ExamPlayer({
   // Hepsini "bağlantını kontrol et" diye göstermek 2 Eylül 2026 denemesinde
   // gerçek sebebi (403 DAILY_LIMIT_REACHED) saatlerce gizledi.
   const [saveError, setSaveError] = useState<Record<string, string>>({});
-  // "Emin değilim" bayrağı yalnız oturum içi taktik aracıdır — sunucuya yazılmaz.
-  const [flags, setFlags] = useState<Set<string>>(new Set());
+  // "Emin değilim" bayrağı SUNUCUDA kalıcı (Doc 49 S1-C): cihaz değişince kaybolmaz,
+  // sonuç ekranında "bayrakladığın sorular" listelenir. Cevap satırıyla birlikte yazılır.
+  const [flags, setFlags] = useState<Set<string>>(
+    () =>
+      new Set(
+        start.givenAnswers.filter((a) => a.flagged).map((a) => a.questionId),
+      ),
+  );
   const [finishOpen, setFinishOpen] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
@@ -83,16 +99,19 @@ export function ExamPlayer({
     // doğrularını ve yanlışlarını tek tek inceleyebilmeli — /sonuc sayfası
     // arşiv oturumlarını da açar (exams.service.getAttempt).
     try {
-      await apiClient(`/quiz/sessions/${start.sessionId}/complete`, { method: "POST" });
+      await apiClient(`/quiz/sessions/${start.sessionId}/complete`, {
+        method: "POST",
+      });
     } catch {
       // Sonuç sayfası tembel finalize eder — yine de gidilir.
     }
     router.replace(`/sonuc/${start.sessionId}`);
-  }, [router, start.sessionId, archive]);
+  }, [router, start.sessionId]);
 
   // ── Sayaç: sunucunun bitiş anına ──
   useEffect(() => {
-    const compute = () => Math.max(0, new Date(start.endsAt).getTime() - Date.now());
+    const compute = () =>
+      Math.max(0, new Date(start.endsAt).getTime() - Date.now());
     const tick = () => {
       const ms = compute();
       setTimeLeft(ms);
@@ -136,7 +155,8 @@ export function ExamPlayer({
         setSaveState((p) => ({ ...p, [questionId]: "saved" }));
         setSaveError((p) => {
           if (p[questionId] == null) return p;
-          const { [questionId]: _drop, ...rest } = p;
+          const rest = { ...p };
+          delete rest[questionId];
           return rest;
         });
       } catch (e) {
@@ -148,11 +168,14 @@ export function ExamPlayer({
         // Sunucu bir gerekçe verdiyse ONU göster; yalnız gerçek ağ/bilinmeyen
         // hatalarda bağlantı metnine düş.
         const sunucuMesaji =
-          e instanceof ApiClientError && e.message.trim().length > 0 ? e.message.trim() : null;
+          e instanceof ApiClientError && e.message.trim().length > 0
+            ? e.message.trim()
+            : null;
         setSaveError((p) => ({
           ...p,
           [questionId]:
-            sunucuMesaji ?? "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç.",
+            sunucuMesaji ??
+            "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç.",
         }));
       }
     },
@@ -174,14 +197,32 @@ export function ExamPlayer({
     shownAtRef.current = Date.now();
   }, [index]);
 
-  const toggleFlag = useCallback((questionId: string) => {
-    setFlags((p) => {
-      const n = new Set(p);
-      if (n.has(questionId)) n.delete(questionId);
-      else n.add(questionId);
-      return n;
-    });
-  }, []);
+  const toggleFlag = useCallback(
+    (questionId: string) => {
+      const item = start.questions.find((x) => x.questionId === questionId);
+      if (!item) return;
+      const next = !flags.has(questionId);
+      setFlags((p) => {
+        const n = new Set(p);
+        if (next) n.add(questionId);
+        else n.delete(questionId);
+        return n;
+      });
+      // Mevcut cevap korunarak yalnız bayrak yazılır (boşsa boş satır açılır — boş zaten boştur).
+      apiClient(`/quiz/sessions/${start.sessionId}/answers`, {
+        method: "POST",
+        body: {
+          questionId,
+          questionVersionId: item.versionId,
+          selectedOptionId: answers[questionId] ?? null,
+          flagged: next,
+        },
+      }).catch(() => {
+        // En iyi çaba: bayrak taktik araçtır; sunucu yazamazsa oturum içi durur.
+      });
+    },
+    [flags, answers, start.questions, start.sessionId],
+  );
 
   // ── Klavye ──
   useEffect(() => {
@@ -192,14 +233,17 @@ export function ExamPlayer({
       if (e.key === "ArrowRight") setIndex((i) => Math.min(total - 1, i + 1));
       else if (e.key === "ArrowLeft") setIndex((i) => Math.max(0, i - 1));
       else if (e.key === "Escape") setFinishOpen(true);
-      else if (e.key.toLocaleLowerCase("tr-TR") === "f") toggleFlag(q.questionId);
+      else if (e.key.toLocaleLowerCase("tr-TR") === "f")
+        toggleFlag(q.questionId);
       else {
         const num = Number.parseInt(e.key, 10);
         let opt: { id: string } | undefined;
         if (num >= 1 && num <= q.options.length) opt = q.options[num - 1];
         else {
           const letter = e.key.toLocaleUpperCase("tr-TR");
-          opt = q.options.find((o) => o.label.toLocaleUpperCase("tr-TR") === letter);
+          opt = q.options.find(
+            (o) => o.label.toLocaleUpperCase("tr-TR") === letter,
+          );
         }
         if (opt) void saveAnswer(q.questionId, q.versionId, opt.id);
       }
@@ -219,188 +263,190 @@ export function ExamPlayer({
   }, [timeLeft]);
   const lowTime = timeLeft !== null && timeLeft <= 10 * 60_000;
 
-  // ── Arşiv sonucu — yerinde özet (resmî sıralamaya girmez) ──
-  return (
-    <div className="min-h-screen">
-      <header className="sticky top-0 z-20 flex items-center gap-4 border-b border-line bg-surface px-4 py-2.5">
-        <p className="tk-caption min-w-0 flex-1 truncate normal-case tracking-normal">
-          {start.title} · {archive ? "arşiv denemesi (sıralamasız)" : "Türkiye geneli canlı deneme"}
+  const optik = (
+    <div className="flex flex-col gap-3">
+      <Card className="flex flex-col gap-2">
+        <span className="type-label text-ink-subtle">Optik form</span>
+        <div className="grid grid-cols-8 gap-1.5 lg:grid-cols-6 xl:grid-cols-8">
+          {start.questions.map((item, i) => {
+            const filled = !!answers[item.questionId];
+            const flagged = flags.has(item.questionId);
+            return (
+              <button
+                key={item.questionId}
+                type="button"
+                onClick={() => setIndex(i)}
+                aria-label={`Soru ${item.order}${filled ? ", dolu" : ", boş"}${flagged ? ", bayraklı" : ""}`}
+                aria-current={i === index ? "true" : undefined}
+                className={cn(
+                  "tk-interactive grid aspect-square cursor-pointer place-items-center rounded-control text-[11px] font-semibold",
+                  i === index && "ring-2 ring-accent",
+                  flagged
+                    ? "bg-warning-soft text-warning-ink"
+                    : filled
+                      ? "bg-accent-soft text-accent-ink"
+                      : "bg-surface-alt text-ink-soft",
+                )}
+              >
+                {item.order}
+              </button>
+            );
+          })}
+        </div>
+        <p className="type-body-sm tabular text-ink-soft">
+          dolu {answeredCount} · bayraklı {flaggedCount} · boş{" "}
+          {total - answeredCount}
         </p>
-        <span className="tabular text-[13px] text-ink-soft">
+        {timeLeft !== null && total - answeredCount > 0 && (
+          <p className="type-body-sm tabular text-ink-subtle">
+            kalan öneri: boş soru başına ~
+            {Math.max(1, Math.floor(timeLeft / 1000 / (total - answeredCount)))}{" "}
+            sn
+          </p>
+        )}
+      </Card>
+      <Button
+        variant="destructive"
+        className="w-full"
+        onClick={() => setFinishOpen(true)}
+      >
+        Sınavı bitir
+      </Button>
+      <p className="type-body-sm text-ink-subtle">
+        ←/→ soru · 1–5 işaretle · F bayrak. Cevapların anında kaydedilir; sayfa
+        kapansa da kaldığın yerden devam edersin.
+      </p>
+    </div>
+  );
+
+  return (
+    <FocusFrame
+      context={`${start.title} · ${archive ? "arşiv denemesi (sıralamasız)" : "Türkiye geneli canlı deneme"}`}
+      progress={
+        <span className="type-body-sm tabular text-ink-soft">
           {answeredCount}/{total} dolu
         </span>
+      }
+      timer={
         <span
           role="timer"
           aria-label="Kalan süre"
-          className={[
-            "tabular rounded-full border px-3 py-1 text-[14px] font-bold",
-            lowTime ? "border-warning/60 bg-warning/10 text-warning" : "border-line text-ink",
-          ].join(" ")}
+          className={cn(
+            "rounded-pill px-3 py-1 text-[15px]",
+            lowTime ? "bg-warning-soft text-warning-ink" : "text-ink",
+          )}
         >
-          ⏱ {timeText}
+          {timeText}
         </span>
-      </header>
+      }
+      onExit={() => setFinishOpen(true)}
+      aside={optik}
+      asideLabel="Optik form"
+    >
+      <div className="flex flex-col gap-5">
+        <QuestionStem index={q.order} total={total} stem={q.stem} />
+        {q.mediaUrl && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={q.mediaUrl}
+            alt="Soru görseli"
+            className="max-h-72 rounded-card border border-line"
+          />
+        )}
 
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-8 lg:grid-cols-[1fr_260px]">
-        {/* Soru alanı */}
-        <div className="max-w-[65ch]">
-          <p className="tk-caption">
-            Soru {q.order} / {total}
-          </p>
-          <p className="mt-2 whitespace-pre-line text-[17px] leading-relaxed text-ink">{q.stem}</p>
-          {q.mediaUrl && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={q.mediaUrl}
-              alt="Soru görseli"
-              className="mt-3 max-h-72 rounded-md border border-line"
+        <div
+          className="flex flex-col gap-2"
+          role="radiogroup"
+          aria-label={`Soru ${q.order}`}
+        >
+          {q.options.map((o, i) => (
+            <QuestionOption
+              key={o.id}
+              label={o.label}
+              text={o.text}
+              state={answers[q.questionId] === o.id ? "selected" : "default"}
+              keyHint={String(i + 1)}
+              onSelect={() => void saveAnswer(q.questionId, q.versionId, o.id)}
             />
-          )}
-
-          <div className="mt-5 space-y-2" role="radiogroup" aria-label={`Soru ${q.order}`}>
-            {q.options.map((o, i) => (
-              <OptionRow
-                key={o.id}
-                label={o.label}
-                text={o.text}
-                state={answers[q.questionId] === o.id ? "selected" : "idle"}
-                keyHint={String(i + 1)}
-                onSelect={() => void saveAnswer(q.questionId, q.versionId, o.id)}
-              />
-            ))}
-          </div>
-          {saveState[q.questionId] === "failed" && (
-            <p className="mt-2 text-[13px] font-semibold text-danger" role="alert">
-              {saveError[q.questionId] ??
-                "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç."}
-            </p>
-          )}
-
-          <div className="mt-6 flex items-center justify-between gap-3">
-            <Button
-              variant="secondary"
-              onClick={() => setIndex((i) => Math.max(0, i - 1))}
-              disabled={index === 0}
-            >
-              ← önceki
-            </Button>
-            <Button
-              variant={flags.has(q.questionId) ? "primary" : "ghost"}
-              onClick={() => toggleFlag(q.questionId)}
-              aria-pressed={flags.has(q.questionId)}
-              className={flags.has(q.questionId) ? "bg-warning text-surface hover:opacity-90" : ""}
-            >
-              ⚑ emin değilim
-            </Button>
-            <Button
-              variant="secondary"
-              onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
-              disabled={index === total - 1}
-            >
-              sonraki →
-            </Button>
-          </div>
+          ))}
         </div>
+        {saveState[q.questionId] === "failed" && (
+          <Notice tone="error">
+            {saveError[q.questionId] ??
+              "Cevap kaydedilemedi — bağlantını kontrol edip tekrar seç."}
+          </Notice>
+        )}
 
-        {/* Optik form paneli */}
-        <aside>
-          <div className="sticky top-16 space-y-3">
-            <Card>
-              <CardTitle className="text-[13px]">Optik form</CardTitle>
-              <div className="mt-2 grid grid-cols-8 gap-1.5 lg:grid-cols-6 xl:grid-cols-8">
-                {start.questions.map((item, i) => {
-                  const filled = !!answers[item.questionId];
-                  const flagged = flags.has(item.questionId);
-                  return (
-                    <button
-                      key={item.questionId}
-                      type="button"
-                      onClick={() => setIndex(i)}
-                      aria-label={`Soru ${item.order}${filled ? ", dolu" : ", boş"}${flagged ? ", bayraklı" : ""}`}
-                      aria-current={i === index ? "true" : undefined}
-                      className={[
-                        "tk-interactive grid aspect-square cursor-pointer place-items-center rounded text-[11px] font-bold",
-                        i === index ? "ring-2 ring-brand" : "",
-                        flagged
-                          ? "bg-warning/25 text-warning"
-                          : filled
-                            ? "bg-session/25 text-ink"
-                            : "bg-line text-ink-soft",
-                      ].join(" ")}
-                    >
-                      {item.order}
-                    </button>
-                  );
-                })}
-              </div>
-              <p className="tabular mt-2 text-[12px] text-ink-soft">
-                dolu {answeredCount} · ⚑ {flaggedCount} · boş {total - answeredCount}
-              </p>
-              {/* Süre yönetimi önerisi (wireframe 10): sakin, sayısal, panik yok */}
-              {timeLeft !== null && total - answeredCount > 0 && (
-                <p className="tabular mt-1 text-[12px] text-ink-soft">
-                  kalan öneri: boş soru başına ~
-                  {Math.max(1, Math.floor(timeLeft / 1000 / (total - answeredCount)))}
-                  sn
-                </p>
-              )}
-            </Card>
-            <Button variant="danger" className="w-full" onClick={() => setFinishOpen(true)}>
-              Sınavı bitir
-            </Button>
-            <p className="tk-caption leading-relaxed">
-              ←/→ soru · 1-5 işaretle · F bayrak. Cevapların anında kaydedilir; sayfa kapansa
-              da kaldığın yerden devam edersin.
-            </p>
-          </div>
-        </aside>
+        <div className="flex items-center justify-between gap-3">
+          <Button
+            variant="secondary"
+            leadingIcon={<ChevronLeft size={18} aria-hidden />}
+            onClick={() => setIndex((i) => Math.max(0, i - 1))}
+            disabled={index === 0}
+          >
+            Önceki
+          </Button>
+          <Button
+            variant={flags.has(q.questionId) ? "primary" : "ghost"}
+            onClick={() => toggleFlag(q.questionId)}
+            aria-pressed={flags.has(q.questionId)}
+            leadingIcon={<Flag size={18} aria-hidden />}
+          >
+            Emin değilim <KeyHint keys="F" />
+          </Button>
+          <Button
+            variant="secondary"
+            onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
+            disabled={index === total - 1}
+          >
+            Sonraki <ChevronRight size={18} aria-hidden />
+          </Button>
+        </div>
       </div>
 
-      {/* Bitirme diyaloğu */}
-      {finishOpen && (
-        <div
-          role="alertdialog"
-          aria-modal="true"
-          aria-label="Sınavı bitir"
-          className="fixed inset-0 z-50 grid place-items-center bg-ink/40 p-4"
-        >
-          <Card className="w-full max-w-sm p-6">
-            <CardTitle>Sınavı bitiriyor musun?</CardTitle>
-            <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
-              {total - answeredCount > 0 && (
+      <Dialog
+        open={finishOpen}
+        onClose={() => setFinishOpen(false)}
+        title="Sınavı bitiriyor musun?"
+        size="sm"
+        footer={
+          <div className="flex justify-end gap-2">
+            <Button variant="ghost" onClick={() => setFinishOpen(false)}>
+              Devam et
+            </Button>
+            <Button
+              variant="destructive"
+              disabled={finishing}
+              loading={finishing}
+              onClick={() => void retryFailedThen(() => void finish())}
+            >
+              Kaydet ve bitir
+            </Button>
+          </div>
+        }
+      >
+        <p className="type-body text-ink-soft">
+          {total - answeredCount > 0 && (
+            <>
+              <b className="text-danger-ink">{total - answeredCount} boş</b>
+              {flaggedCount > 0 && (
                 <>
-                  <b className="text-danger">{total - answeredCount} boş</b>
-                  {flaggedCount > 0 && (
-                    <>
-                      {" "}
-                      ve <b className="text-warning">{flaggedCount} bayraklı</b>
-                    </>
-                  )}{" "}
-                  sorun var.{" "}
+                  {" "}
+                  ve <b className="text-warning-ink">{flaggedCount} bayraklı</b>
                 </>
-              )}
-              {total - answeredCount === 0 && flaggedCount > 0 && (
-                <>
-                  <b className="text-warning">{flaggedCount} bayraklı</b> sorun var.{" "}
-                </>
-              )}
-              Bitirdikten sonra cevap değiştirilemez.
-            </p>
-            <div className="mt-5 flex justify-end gap-2">
-              <Button variant="ghost" onClick={() => setFinishOpen(false)}>
-                Devam et
-              </Button>
-              <Button
-                variant="danger"
-                disabled={finishing}
-                onClick={() => void retryFailedThen(() => void finish())}
-              >
-                {finishing ? "Bitiriliyor…" : "Kaydet ve bitir"}
-              </Button>
-            </div>
-          </Card>
-        </div>
-      )}
-    </div>
+              )}{" "}
+              sorun var.{" "}
+            </>
+          )}
+          {total - answeredCount === 0 && flaggedCount > 0 && (
+            <>
+              <b className="text-warning-ink">{flaggedCount} bayraklı</b> sorun
+              var.{" "}
+            </>
+          )}
+          Bitirdikten sonra cevap değiştirilemez.
+        </p>
+      </Dialog>
+    </FocusFrame>
   );
 }

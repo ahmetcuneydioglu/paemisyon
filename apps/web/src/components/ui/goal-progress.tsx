@@ -1,4 +1,7 @@
-/** Günlük hedef çubuğu (Doc 26 #3): çubuk + `8/20` etiketi. */
+import { Check } from "lucide-react";
+import { ProgressBar } from "./progress";
+
+/** Günlük hedef çubuğu: etiket + `8/20` + çubuk; tamamlanınca adaçayı ve onay ikonu. */
 export function GoalProgress({
   answered,
   goal,
@@ -8,35 +11,29 @@ export function GoalProgress({
   goal: number;
   label?: string;
 }) {
-  const pct = Math.min(100, Math.round((answered / Math.max(1, goal)) * 100));
   const done = answered >= goal && goal > 0;
   return (
-    <div>
-      <div className="mb-1.5 flex items-baseline justify-between">
-        <span className="tk-caption">{label}</span>
-        <span className="tabular text-[13px] font-bold text-ink">
+    <div className="flex flex-col gap-2">
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="type-label text-ink-subtle">{label}</span>
+        <span className="type-subhead tabular inline-flex items-center gap-1 text-ink">
           {answered}
           <span className="font-normal text-ink-soft">/{goal} soru</span>
-          {done && (
-            <span className="ml-1.5 text-success" aria-label="hedef tamamlandı">
-              ✓
-            </span>
-          )}
+          {done ? (
+            <Check
+              size={14}
+              className="text-success"
+              aria-label="hedef tamamlandı"
+            />
+          ) : null}
         </span>
       </div>
-      <div
-        className="h-2 overflow-hidden rounded-full bg-line"
-        role="progressbar"
-        aria-valuenow={answered}
-        aria-valuemin={0}
-        aria-valuemax={goal}
-        aria-label={label}
-      >
-        <div
-          className={["h-full rounded-full transition-[width] duration-500", done ? "bg-success" : "bg-session"].join(" ")}
-          style={{ width: `${pct}%` }}
-        />
-      </div>
+      <ProgressBar
+        value={answered / Math.max(1, goal)}
+        tone={done ? "success" : "accent"}
+        height={6}
+        label={label}
+      />
     </div>
   );
 }

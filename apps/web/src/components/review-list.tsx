@@ -1,12 +1,16 @@
+import { Flag } from "lucide-react";
 import type { ReviewQuestion } from "@/lib/types";
-import { OptionRow, type OptionState } from "@/components/ui/option-row";
+import { Badge } from "@/components/ui/badge";
+import {
+  QuestionOption,
+  type QuestionOptionState,
+} from "@/components/ui/question";
 
 /**
- * Cevap incelemesi — tur/deneme oynatıcısıyla AYNI tasarım dili (tk token
- * + OptionRow durumları). Eski 2 sütunlu miras düzen (QuestionColumns +
- * option-bar CSS'i) söküldü: kartlar grid'de bağımsızdır, iç içe geçmez,
- * mobilde tek sütuna düşer. showAnswers=false ise (sınav-sonrası serbest
- * görüntüleme) cevap anahtarı ve açıklama gösterilmez.
+ * Cevap incelemesi — oynatıcıyla AYNI dil (QuestionOption durumları). Kartlar grid'de
+ * bağımsız, mobilde tek sütun. showAnswers=false ise (sınav sonrası serbest görüntüleme)
+ * cevap anahtarı ve açıklama gösterilmez. Kaynak etiketi panel ayarına bağlı (sunucu null
+ * gönderir); denemede her zaman kapalı.
  */
 export function ReviewList({
   questions,
@@ -16,15 +20,15 @@ export function ReviewList({
   showAnswers: boolean;
 }) {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       {showAnswers && (
-        <div
-          className="mb-4 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-ink-soft"
-          aria-hidden
-        >
-          <Legend className="border-success bg-success/10" label="Doğru cevap" />
-          <Legend className="border-danger bg-danger/10" label="Senin yanlış cevabın" />
-          <Legend className="border-warning bg-warning/10" label="Boş bıraktığın" />
+        <div className="flex flex-wrap items-center gap-2" aria-hidden>
+          <Badge tone="success">doğru cevap</Badge>
+          <Badge tone="danger">senin yanlışın</Badge>
+          <Badge tone="warning">boş bıraktığın</Badge>
+          <Badge tone="neutral">
+            <Flag size={12} aria-hidden /> emin değildim
+          </Badge>
         </div>
       )}
 
@@ -34,12 +38,20 @@ export function ReviewList({
           return (
             <article
               key={q.questionId}
-              className="rounded-md border border-line bg-surface p-4"
+              className="flex flex-col gap-3 rounded-card border border-line bg-surface p-4"
               aria-label={`Soru ${q.order}`}
             >
-              <p className="whitespace-pre-line text-[15px] leading-relaxed text-ink">
-                <span className="tabular font-bold">{q.order}.</span> {q.stem}
-              </p>
+              <div className="flex items-start justify-between gap-2">
+                <p className="type-body whitespace-pre-line text-ink">
+                  <span className="tabular font-semibold">{q.order}.</span>{" "}
+                  {q.stem}
+                </p>
+                {q.flagged ? (
+                  <Badge tone="neutral">
+                    <Flag size={12} aria-hidden /> emin değildim
+                  </Badge>
+                ) : null}
+              </div>
               {q.mediaUrl && (
                 // Saklı medya URL'i (bilinmeyen host) — optimizer'a açılmaz.
                 // eslint-disable-next-line @next/next/no-img-element
@@ -48,61 +60,51 @@ export function ReviewList({
                   alt="Soru görseli"
                   loading="lazy"
                   decoding="async"
-                  className="mt-2 max-h-64 rounded-sm border border-line"
+                  className="max-h-64 rounded-card border border-line"
                 />
               )}
 
-              <div className="mt-3 space-y-1.5">
+              <div className="flex flex-col gap-1.5">
                 {q.options.map((o) => {
                   const chosen = q.selectedOptionId === o.id;
-                  let state: OptionState = "dim";
+                  let state: QuestionOptionState = "disabled";
                   if (showAnswers) {
-                    if (o.isCorrect) state = "correct";
-                    else if (chosen) state = "wrong";
+                    if (o.isCorrect) state = chosen ? "correct" : "missed";
+                    else if (chosen) state = "incorrect";
                   } else if (chosen) {
                     state = "selected";
                   }
                   return (
-                    <OptionRow
+                    <QuestionOption
                       key={o.id}
                       label={o.label}
                       text={o.text}
                       state={state}
-                      disabled
                     />
                   );
                 })}
               </div>
 
               {showAnswers && blank && (
-                <p className="mt-2 text-[12px] font-bold text-warning">
+                <p className="type-body-sm text-warning-ink">
                   Bu soruyu boş bıraktın.
                 </p>
               )}
               {showAnswers && q.explanation && (
-                <div className="mt-3 rounded-sm bg-surface-alt p-3">
-                  <p className="tk-caption">Açıklama</p>
-                  <p className="mt-1 text-[13px] leading-relaxed text-ink">
-                    {q.explanation}
-                  </p>
+                <div className="flex flex-col gap-1 rounded-control bg-surface-alt p-3">
+                  <span className="type-label text-ink-subtle">Açıklama</span>
+                  <p className="type-body-sm text-ink">{q.explanation}</p>
                 </div>
               )}
               {showAnswers && q.source && (
-                <p className="tk-caption mt-2">Kaynak: {q.source}</p>
+                <p className="type-body-sm text-ink-subtle">
+                  Kaynak: {q.source}
+                </p>
               )}
             </article>
           );
         })}
       </div>
     </div>
-  );
-}
-
-function Legend({ className, label }: { className: string; label: string }) {
-  return (
-    <span className="flex items-center gap-1.5">
-      <span className={`inline-block h-3.5 w-6 rounded-sm border ${className}`} />
-      {label}
-    </span>
   );
 }

@@ -1,20 +1,31 @@
 import Link from "next/link";
+import {
+  ArrowRight,
+  BarChart3,
+  Flame,
+  Hand,
+  Medal,
+  RotateCcw,
+  Target,
+  Trophy,
+  type LucideIcon,
+} from "lucide-react";
 import { Card } from "./card";
 
-const typeIcon: Record<string, string> = {
-  quick_review: "🔁",
-  weak_topic: "📉",
-  streak_risk: "⚠️",
-  exam_today: "🏆",
-  exam_upcoming: "🏆",
-  exam_result: "🏆",
-  badge_progress: "🎖",
-  comeback: "👋",
+const typeIcon: Record<string, LucideIcon> = {
+  quick_review: RotateCcw,
+  weak_topic: BarChart3,
+  streak_risk: Flame,
+  exam_today: Trophy,
+  exam_upcoming: Trophy,
+  exam_result: Trophy,
+  badge_progress: Medal,
+  comeback: Hand,
 };
 
 /**
  * Koç destek kartı (Doc 26 #1, support varyantı): tip ikonlu, tek mesaj, tek CTA.
- * Metin SUNUCUDAN gelir (/me/coach) — istemci kural bilmez.
+ * Metin SUNUCUDAN gelir (/me/coach) — istemci kural bilmez. Emoji yok; lucide.
  */
 export function CoachCard({
   type,
@@ -27,27 +38,28 @@ export function CoachCard({
   title: string;
   body?: string;
   cta?: { label: string; route: string };
-  /** Mobil route'larını web karşılığına eşler. Bazı kartlarda hedefi rota
-   *  değil kart TİPİ belirler (bkz. cikmis_sinav — Doc 36 §7.2). */
   routeMapper: (route: string, type?: string) => string;
 }) {
-  const icon = typeIcon[type] ?? (type.startsWith("exam") ? "🏆" : "🎯");
+  const Icon = typeIcon[type] ?? (type.startsWith("exam") ? Trophy : Target);
   return (
     <Card className="flex items-start gap-3">
-      <span className="mt-0.5 text-xl" aria-hidden>
-        {icon}
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-control bg-surface-alt text-ink-soft">
+        <Icon size={20} strokeWidth={1.75} aria-hidden />
       </span>
       <div className="min-w-0 flex-1">
-        <p className="font-heading text-[15px] font-bold text-ink">{title}</p>
-        {body && <p className="mt-0.5 text-[13px] leading-relaxed text-ink-soft">{body}</p>}
-        {cta && (
+        <p className="type-subhead text-ink">{title}</p>
+        {body ? (
+          <p className="type-body-sm mt-0.5 text-ink-soft">{body}</p>
+        ) : null}
+        {cta ? (
           <Link
             href={routeMapper(cta.route, type)}
-            className="mt-2 inline-block text-[13px] font-bold text-brand hover:underline"
+            className="type-subhead mt-2 inline-flex items-center gap-1 text-accent-ink hover:underline"
           >
-            {cta.label} →
+            {cta.label}
+            <ArrowRight size={14} aria-hidden />
           </Link>
-        )}
+        ) : null}
       </div>
     </Card>
   );

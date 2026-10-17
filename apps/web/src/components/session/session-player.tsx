@@ -3,11 +3,32 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import {
+  ArrowRight,
+  Bookmark,
+  BookmarkCheck,
+  Brain,
+  Flag,
+  Scale,
+  X,
+} from "lucide-react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
-import { OptionRow, type OptionState } from "@/components/ui/option-row";
-import { ExplanationBox } from "@/components/ui/explanation-box";
+import { cn } from "@/lib/cn";
+import { Badge } from "@/components/ui/badge";
 import { Button, ButtonLink } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
+import { Dialog } from "@/components/ui/dialog";
+import { ExplanationBox } from "@/components/ui/explanation-box";
+import { KeyHint } from "@/components/ui/key-hint";
+import { Notice } from "@/components/ui/notice";
+import {
+  QuestionOption,
+  QuestionStem,
+  type QuestionOptionState,
+} from "@/components/ui/question";
+import { SegmentBar } from "@/components/ui/progress";
+import { Skeleton } from "@/components/ui/skeleton";
+import { FocusFrame } from "@/components/shell/focus-frame";
 
 /** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
 function fmtVerifiedDate(iso: string): string {
@@ -57,7 +78,9 @@ interface CompleteResponse {
   blankCount: number;
   score: number;
   durationSeconds: number;
-  topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null;
+  topicBreakdown:
+    | { topicId: string; topicName: string; correct: number; total: number }[]
+    | null;
   earnedBadges: { key: string; name: string }[];
 }
 
@@ -80,7 +103,11 @@ interface ResumeResponse {
   sessionId: string;
   mode: string;
   questions: SessionQuestion[];
-  givenAnswers: { questionId: string; selectedOptionId: string | null; isCorrect: boolean | null }[];
+  givenAnswers: {
+    questionId: string;
+    selectedOptionId: string | null;
+    isCorrect: boolean | null;
+  }[];
 }
 
 type Phase =
@@ -99,17 +126,23 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ kind: "loading" });
   const [index, setIndex] = useState(0);
-  const [feedback, setFeedback] = useState<Record<string, AnswerFeedback & { selected: string }>>(
-    {},
-  );
+  const [feedback, setFeedback] = useState<
+    Record<string, AnswerFeedback & { selected: string }>
+  >({});
   const [pendingAnswer, setPendingAnswer] = useState<{
     questionId: string;
     optionId: string;
   } | null>(null);
   const [answerError, setAnswerError] = useState<string | null>(null);
   const [exitAsk, setExitAsk] = useState(false);
-  // Oturum içi not (wireframe 08): kaydedilmez, turla yaşar.
-  const [note, setNote] = useState("");
+  // Soru notu (Doc 49 S1-C): kullanıcının soruya kişisel notu; sunucuda KALICI
+  // (PUT /me/questions/:id/note, 800 ms gecikmeli). Soru başına tutulur.
+  const [notes, setNotes] = useState<Record<string, string>>({});
+  // Not kayıt durumu soru başına tutulur: soru değişince sıfırlamak gerekmez.
+  const [noteStates, setNoteStates] = useState<
+    Record<string, "saving" | "saved" | "error">
+  >({});
+  const noteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   // Favoriler (F) — bookmark API'sine yazılır; oturum içi anlık durum.
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   // "M ile aç" — ilgili maddeyi sağ panelde göster (turdan çıkmadan, Doc 27 §3.6).
@@ -120,7 +153,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     Record<
       string,
       | { status: "busy" }
-      | { status: "done"; text: string; cached: boolean; remainingToday: number | null }
+      | {
+          status: "done";
+          text: string;
+          cached: boolean;
+          remainingToday: number | null;
+        }
       | { status: "error"; message: string; limit: boolean }
     >
   >({});
@@ -150,7 +188,8 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       // Kaldığı yerden devam: aynı set + verilen cevaplar (Doc 27 §2.4).
       apiClient<ResumeResponse>(`/quiz/sessions/${scope.resumeId}/resume`)
         .then((res) => {
-          const seeded: Record<string, AnswerFeedback & { selected: string }> = {};
+          const seeded: Record<string, AnswerFeedback & { selected: string }> =
+            {};
           for (const a of res.givenAnswers) {
             if (a.selectedOptionId == null) continue;
             seeded[a.questionId] = {
@@ -165,8 +204,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
             };
           }
           setFeedback(seeded);
-          const firstUnanswered = res.questions.findIndex((q) => !seeded[q.questionId]);
-          setIndex(firstUnanswered >= 0 ? firstUnanswered : res.questions.length - 1);
+          const firstUnanswered = res.questions.findIndex(
+            (q) => !seeded[q.questionId],
+          );
+          setIndex(
+            firstUnanswered >= 0 ? firstUnanswered : res.questions.length - 1,
+          );
           questionShownAt.current = Date.now();
           setPhase({
             kind: "playing",
@@ -218,8 +261,49 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     };
   }, []);
 
-  const data = phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
+  const data =
+    phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
   const question = data?.questions[index] ?? null;
+  const currentQuestionId = question?.questionId ?? null;
+
+  // Soru değişince kayıtlı notu getir (bir kez; bellekte varsa istek yok).
+  useEffect(() => {
+    if (!currentQuestionId) return;
+    let alive = true;
+    apiClient<{ text: string | null }>(
+      `/me/questions/${currentQuestionId}/note`,
+    )
+      .then((r) => {
+        if (!alive || r.text == null) return;
+        setNotes((n) =>
+          n[currentQuestionId] != null
+            ? n
+            : { ...n, [currentQuestionId]: r.text! },
+        );
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [currentQuestionId]);
+
+  const noteDegisti = useCallback((questionId: string, text: string) => {
+    setNotes((n) => ({ ...n, [questionId]: text }));
+    setNoteStates((st) => ({ ...st, [questionId]: "saving" }));
+    if (noteTimer.current) clearTimeout(noteTimer.current);
+    noteTimer.current = setTimeout(() => {
+      const istek =
+        text.trim().length === 0
+          ? apiClient(`/me/questions/${questionId}/note`, { method: "DELETE" })
+          : apiClient(`/me/questions/${questionId}/note`, {
+              method: "PUT",
+              body: { text: text.slice(0, 2000) },
+            });
+      istek
+        .then(() => setNoteStates((st) => ({ ...st, [questionId]: "saved" })))
+        .catch(() => setNoteStates((st) => ({ ...st, [questionId]: "error" })));
+    }, 800);
+  }, []);
   const currentFeedback = question ? feedback[question.questionId] : undefined;
   const answeredCount = data ? Object.keys(feedback).length : 0;
   const isLast = data != null && index === data.questions.length - 1;
@@ -227,27 +311,36 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   // ── Cevap gönder (tıklama veya klavye) ──
   const submit = useCallback(
     async (optionId: string) => {
-      if (!data || !question || currentFeedback || answerInFlight.current) return;
+      if (!data || !question || currentFeedback || answerInFlight.current)
+        return;
       answerInFlight.current = true;
       setAnswerError(null);
       setPendingAnswer({ questionId: question.questionId, optionId });
       try {
-        const fb = await apiClient<AnswerFeedback>(`/quiz/sessions/${data.sessionId}/answers`, {
-          method: "POST",
-          body: {
-            questionId: question.questionId,
-            questionVersionId: question.versionId,
-            selectedOptionId: optionId,
-            timeSpentMs: Date.now() - questionShownAt.current,
+        const fb = await apiClient<AnswerFeedback>(
+          `/quiz/sessions/${data.sessionId}/answers`,
+          {
+            method: "POST",
+            body: {
+              questionId: question.questionId,
+              questionVersionId: question.versionId,
+              selectedOptionId: optionId,
+              timeSpentMs: Date.now() - questionShownAt.current,
+            },
           },
-        });
-        setFeedback((f) => ({ ...f, [question.questionId]: { ...fb, selected: optionId } }));
+        );
+        setFeedback((f) => ({
+          ...f,
+          [question.questionId]: { ...fb, selected: optionId },
+        }));
       } catch (e: unknown) {
         const err = e instanceof ApiClientError ? e : null;
         if (err?.code === "DAILY_LIMIT_REACHED") {
           setPhase({ kind: "error", code: err.code, message: err.message });
         } else {
-          setAnswerError(err?.message ?? "Cevap kaydedilemedi. Tekrar deneyebilirsin.");
+          setAnswerError(
+            err?.message ?? "Cevap kaydedilemedi. Tekrar deneyebilirsin.",
+          );
         }
       } finally {
         answerInFlight.current = false;
@@ -298,7 +391,9 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         else n.add(questionId);
         return n;
       });
-      apiClient(`/review/bookmarks/${questionId}`, { method: has ? "DELETE" : "POST" }).catch(() => {
+      apiClient(`/review/bookmarks/${questionId}`, {
+        method: has ? "DELETE" : "POST",
+      }).catch(() => {
         setBookmarks((s) => {
           const n = new Set(s);
           if (has) n.add(questionId);
@@ -324,7 +419,10 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
           method: "POST",
           body: { versionId: q.versionId, chosenOptionId },
         });
-        setAiState((s) => ({ ...s, [q.questionId]: { status: "done", ...res } }));
+        setAiState((s) => ({
+          ...s,
+          [q.questionId]: { status: "done", ...res },
+        }));
       } catch (e: unknown) {
         const err = e instanceof ApiClientError ? e : null;
         setAiState((s) => ({
@@ -395,7 +493,9 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       if (num >= 1 && num <= q.options.length) opt = q.options[num - 1];
       else {
         const letter = e.key.toLocaleUpperCase("tr-TR");
-        opt = q.options.find((o) => o.label.toLocaleUpperCase("tr-TR") === letter);
+        opt = q.options.find(
+          (o) => o.label.toLocaleUpperCase("tr-TR") === letter,
+        );
       }
       if (opt) void submit(opt.id);
     }
@@ -407,11 +507,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
 
   if (phase.kind === "loading") {
     return (
-      <FocusFrame label={scope.label ?? "Koç turu"}>
-        <div className="mx-auto max-w-2xl space-y-3 py-10" aria-busy>
-          <div className="h-5 w-2/3 animate-pulse rounded-sm bg-line" />
-          {[0, 1, 2, 3].map((i) => (
-            <div key={i} className="h-12 animate-pulse rounded-sm bg-line" />
+      <FocusFrame context={scope.label ?? "Koç turu"} exitHref="/bugun">
+        <div className="flex flex-col gap-3 py-6" aria-busy>
+          <Skeleton className="h-4 w-24" />
+          <Skeleton className="h-6 w-2/3" />
+          {[0, 1, 2, 3, 4].map((i) => (
+            <Skeleton key={i} className="h-14" radius="card" />
           ))}
         </div>
       </FocusFrame>
@@ -424,26 +525,28 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     // burada suçlayıcı değil yönlendirici dil + Premium köprüsü.
     const isPremium = phase.code === "PREMIUM_REQUIRED";
     return (
-      <FocusFrame label={scope.label ?? "Koç turu"}>
-        <div className="mx-auto max-w-md py-16 text-center">
-          {/* Limit duvarı — Doc 25 akış H: "koç seni durdurmak istemiyor" çerçevesi */}
-          <p className="text-3xl" aria-hidden>
-            {isLimit ? "🎯" : isPremium ? "🔒" : "⚠️"}
-          </p>
-          <h1 className="mt-3 font-heading text-lg font-bold text-ink">
+      <FocusFrame context={scope.label ?? "Koç turu"} exitHref="/bugun">
+        <div className="mx-auto flex max-w-md flex-col items-center gap-3 py-16 text-center">
+          <Badge tone={isLimit ? "accent" : isPremium ? "neutral" : "danger"}>
+            {isLimit ? "Günlük hak" : isPremium ? "Premium" : "Hata"}
+          </Badge>
+          <h1 className="type-heading text-ink">
             {isLimit
               ? "Bugünlük antrenman doldu"
               : isPremium
                 ? "Bu kapsam Premium'a ait"
                 : "Bir sorun çıktı"}
           </h1>
-          <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
+          <p className="type-body text-ink-soft">
             {isLimit
               ? "Koç seni durdurmak istemiyor — ama ücretsiz günlük hak burada bitiyor. Premium'la sınır kalkar; emeğin ve haritan seni bekliyor."
               : phase.message}
           </p>
-          <div className="mt-6 flex justify-center gap-3">
-            <ButtonLink href="/bugun" variant={isLimit || isPremium ? "secondary" : "primary"}>
+          <div className="mt-3 flex flex-wrap justify-center gap-3">
+            <ButtonLink
+              href="/bugun"
+              variant={isLimit || isPremium ? "secondary" : "primary"}
+            >
               Bugün&apos;e dön
             </ButtonLink>
             {(isLimit || isPremium) && (
@@ -457,9 +560,16 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
 
   if (phase.kind === "done") {
     // Bu turda karşılaşılan tekil maddeler (İlgili maddeleri oku için).
-    const seenArticles = new Map<string, { lawSlug: string; no: string; slug: string }>();
+    const seenArticles = new Map<
+      string,
+      { lawSlug: string; no: string; slug: string }
+    >();
     for (const f of Object.values(feedback)) {
-      if (f.relatedArticle) seenArticles.set(`${f.relatedArticle.lawSlug}/${f.relatedArticle.slug}`, f.relatedArticle);
+      if (f.relatedArticle)
+        seenArticles.set(
+          `${f.relatedArticle.lawSlug}/${f.relatedArticle.slug}`,
+          f.relatedArticle,
+        );
     }
     return (
       <SessionResult
@@ -481,444 +591,443 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   // playing / finishing
   const fb = currentFeedback;
 
+  const total = data!.questions.length;
+  const context =
+    scope.label ??
+    (scope.mode === "review"
+      ? "Yanlış tekrarı — en eski yanlışların önce"
+      : scope.mode === "favorites"
+        ? "Favorilerim — yıldızladığın sorular"
+        : "Koç turu — zayıf konuların, yanlışların ve yeni sorular");
+  const yanPanel = (
+    <div className="flex flex-col gap-3">
+      <Card className="flex flex-col gap-2">
+        <span className="type-label text-ink-subtle">Tur akışı</span>
+        <div className="grid grid-cols-5 gap-1.5" aria-hidden>
+          {data!.questions.map((q, i) => {
+            const f = feedback[q.questionId];
+            return (
+              <span
+                key={q.questionId}
+                className={cn(
+                  "grid aspect-square place-items-center rounded-control text-[11px] font-semibold",
+                  i === index && "ring-2 ring-accent",
+                  f
+                    ? f.isCorrect
+                      ? "bg-success-soft text-success-ink"
+                      : "bg-danger-soft text-danger-ink"
+                    : "bg-surface-alt text-ink-soft",
+                )}
+              >
+                {f ? (f.isCorrect ? "✓" : "✗") : i + 1}
+              </span>
+            );
+          })}
+        </div>
+        <p className="type-body-sm tabular text-ink-soft">
+          {answeredCount} cevaplandı
+        </p>
+      </Card>
+
+      {maddeOpen && fb?.relatedArticle ? (
+        <Card className="flex flex-col gap-1 border-accent/40">
+          <div className="flex items-start justify-between gap-2">
+            <span className="type-label inline-flex items-center gap-1 text-accent-ink">
+              <Scale size={12} aria-hidden /> İlgili madde ·{" "}
+              {fb.relatedArticle.no}
+            </span>
+            <button
+              type="button"
+              onClick={() => setMaddeOpen(false)}
+              aria-label="Kapat"
+              className="text-ink-subtle hover:text-ink"
+            >
+              <X size={16} aria-hidden />
+            </button>
+          </div>
+          {fb.legalReference ? (
+            <p className="type-body-sm text-ink-soft">{fb.legalReference}</p>
+          ) : null}
+          <Link
+            href={`/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`}
+            target="_blank"
+            className="type-subhead mt-1 inline-flex items-center gap-1 text-accent-ink hover:underline"
+          >
+            Maddeyi Atlas&apos;ta aç <ArrowRight size={14} aria-hidden />
+          </Link>
+        </Card>
+      ) : null}
+
+      <Card className="flex flex-col gap-1.5">
+        <div className="flex items-baseline justify-between">
+          <label htmlFor="soru-notu" className="type-label text-ink-subtle">
+            Notum
+          </label>
+          <span className="type-body-sm text-ink-subtle" aria-live="polite">
+            {noteStates[question!.questionId] === "saving"
+              ? "kaydediliyor…"
+              : noteStates[question!.questionId] === "saved"
+                ? "kaydedildi"
+                : noteStates[question!.questionId] === "error"
+                  ? "kaydedilemedi"
+                  : ""}
+          </span>
+        </div>
+        <textarea
+          id="soru-notu"
+          value={notes[question!.questionId] ?? ""}
+          onChange={(e) => noteDegisti(question!.questionId, e.target.value)}
+          onKeyDown={(e) => e.stopPropagation()}
+          placeholder="Bu soruya özel notun — hesabında saklanır"
+          rows={3}
+          maxLength={2000}
+          className="type-body-sm w-full resize-y rounded-control border border-line bg-surface-alt p-2.5 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
+        />
+      </Card>
+      <p className="type-body-sm text-ink-subtle">
+        1–5 şık · ⏎ sonraki · F favori · M madde · Esc çıkış
+      </p>
+    </div>
+  );
+
   return (
     <FocusFrame
-      label={
-        scope.label ??
-        (scope.mode === "review"
-          ? "Yanlış tekrarı — en eski yanlışların önce"
-          : scope.mode === "favorites"
-            ? "Favorilerim — yıldızladığın sorular"
-            : "Koç turu — zayıf konuların, yanlışların ve yeni sorular")
-      }
-      right={
-        <span className="tabular rounded-full border border-line px-3 py-1 text-[13px] font-bold text-ink">
-          {Math.min(index + 1, data!.questions.length)} / {data!.questions.length}
-        </span>
+      context={context}
+      progress={
+        <div className="flex items-center gap-3">
+          <SegmentBar total={total} done={answeredCount} className="w-32" />
+          <span className="type-body-sm tabular text-ink-soft">
+            {Math.min(index + 1, total)}/{total}
+          </span>
+        </div>
       }
       onExit={() => setExitAsk(true)}
+      aside={yanPanel}
     >
-      <div className="mx-auto grid max-w-5xl gap-8 px-6 lg:grid-cols-[1fr_220px]">
-        {/* Soru alanı (≤65ch) */}
-        <div className="max-w-[65ch]">
-          <p className="tk-caption">Soru {index + 1}</p>
-          <p className="mt-2 whitespace-pre-line text-[17px] leading-relaxed text-ink">{question!.stem}</p>
-          {question!.mediaUrl && (
-            // Soru medyası keyfi bir saklı URL'dir (bilinmeyen host) — next/image
-            // optimizer'ını her host'a açmak güvenlik anti-pattern'i olurdu; bunun
-            // yerine ham <img> sertleştirilir (lazy + async decode, CLS güvenli).
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={question!.mediaUrl}
-              alt="Soru görseli"
-              loading="lazy"
-              decoding="async"
-              className="mt-3 max-h-72 rounded-md border border-line"
-            />
-          )}
+      <div className="flex flex-col gap-5">
+        <QuestionStem index={index + 1} total={total} stem={question!.stem} />
+        <div className="hidden"></div>
+        {question!.mediaUrl && (
+          // Soru medyası keyfi bir saklı URL'dir (bilinmeyen host) — next/image
+          // optimizer'ını her host'a açmak güvenlik anti-pattern'i olurdu; bunun
+          // yerine ham <img> sertleştirilir (lazy + async decode, CLS güvenli).
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={question!.mediaUrl}
+            alt="Soru görseli"
+            loading="lazy"
+            decoding="async"
+            className="max-h-72 rounded-card border border-line"
+          />
+        )}
 
-          <div className="mt-5 space-y-2">
-            {question!.options.map((o, i) => {
-              let state: OptionState = "idle";
-              if (fb) {
-                if (o.id === fb.correctOptionId) state = "correct";
-                else if (o.id === fb.selected) state = "wrong";
-                else state = "dim";
-              } else if (pendingAnswer?.questionId === question!.questionId) {
-                state = o.id === pendingAnswer.optionId ? "selected" : "dim";
-              }
-              return (
-                <OptionRow
-                  key={o.id}
-                  label={o.label}
-                  text={o.text}
-                  state={state}
-                  keyHint={String(i + 1)}
-                  disabled={!!fb || pendingAnswer != null}
-                  onSelect={() => void submit(o.id)}
-                />
-              );
-            })}
-          </div>
-
-          {pendingAnswer?.questionId === question!.questionId && (
-            <p className="mt-2 text-[13px] font-medium text-session" role="status" aria-live="polite">
-              Cevabın kontrol ediliyor…
-            </p>
-          )}
-          {answerError && (
-            <p className="mt-2 text-[13px] font-medium text-danger" role="alert">
-              {answerError}
-            </p>
-          )}
-
-          {fb && (
-            <div className="mt-4 space-y-4">
-              <ExplanationBox
-                isCorrect={fb.isCorrect}
-                explanation={fb.explanation}
-                source={fb.source}
-                legalReference={fb.legalReference}
-                lawHref={
-                  fb.relatedArticle
-                    ? `/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`
-                    : null
+        <div
+          className="flex flex-col gap-2"
+          role="radiogroup"
+          aria-label={`Soru ${index + 1} şıkları`}
+        >
+          {question!.options.map((o, i) => {
+            let state: QuestionOptionState = "default";
+            if (fb) {
+              if (o.id === fb.correctOptionId)
+                state = o.id === fb.selected ? "correct" : "missed";
+              else if (o.id === fb.selected) state = "incorrect";
+              else state = "disabled";
+            } else if (pendingAnswer?.questionId === question!.questionId) {
+              state = o.id === pendingAnswer.optionId ? "selected" : "disabled";
+            }
+            return (
+              <QuestionOption
+                key={o.id}
+                label={o.label}
+                text={o.text}
+                state={state}
+                keyHint={String(i + 1)}
+                onSelect={
+                  !fb && pendingAnswer == null
+                    ? () => void submit(o.id)
+                    : undefined
                 }
               />
-              {/* İlgili maddenin resmî metni (Doc 25 §4) — açıklamanın hemen altında,
-                  yayınlanmışsa otomatik; birebir metin + kaynak künyesi. */}
-              {fb.relatedArticle?.text && (
-                <Card className="border-atlas/40">
-                  <CardTitle className="text-[13px] text-atlas">
-                    İlgili madde · {fb.relatedArticle.no}
-                  </CardTitle>
-                  <div className="mt-2 whitespace-pre-line text-[14px] leading-relaxed text-ink">
-                    {fb.relatedArticle.text.body}
-                  </div>
-                  <p className="tk-caption mt-2">
-                    Kaynak:{" "}
-                    {fb.relatedArticle.text.sourceUrl ? (
-                      <a
-                        href={fb.relatedArticle.text.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-ink"
-                      >
-                        {fb.relatedArticle.text.source}
-                      </a>
-                    ) : (
-                      fb.relatedArticle.text.source
-                    )}
-                    {fb.relatedArticle.text.effectiveInfo ? (
-                      <> · {fb.relatedArticle.text.effectiveInfo}</>
-                    ) : null}
-                    {fb.relatedArticle.text.verifiedAt ? (
-                      <> · {fmtVerifiedDate(fb.relatedArticle.text.verifiedAt)} itibarıyla</>
-                    ) : null}
-                  </p>
-                </Card>
-              )}
-              {/* AI koç (Doc 28 P3-21): yalnız yanlış cevapta — "neden bu çeldirici?" */}
-              {!fb.isCorrect &&
-                (() => {
-                  const ai = aiState[question!.questionId];
-                  if (!ai) {
-                    return (
-                      <button
-                        type="button"
-                        onClick={() => askCoach(question!, fb.selected)}
-                        className="tk-interactive flex w-full items-center gap-2 rounded-md border border-brand/40 bg-brand/5 px-4 py-3 text-left text-[14px] font-bold text-brand hover:border-brand"
-                      >
-                        <span aria-hidden>🧠</span> Koça sor: Neden yanlış?
-                      </button>
-                    );
-                  }
-                  if (ai.status === "busy") {
-                    return (
-                      <p
-                        className="rounded-md border border-brand/30 bg-brand/5 px-4 py-3 text-[14px] text-ink-soft"
-                        role="status"
-                        aria-live="polite"
-                      >
-                        Koç düşünüyor…
-                      </p>
-                    );
-                  }
-                  if (ai.status === "error") {
-                    return (
-                      <div className="rounded-md border border-line bg-surface-alt px-4 py-3 text-[14px] text-ink-soft">
-                        {ai.message}
-                        {ai.limit && (
-                          <>
-                            {" "}
-                            <Link href="/premium" className="font-bold text-brand hover:underline">
-                              Premium&apos;la sınırsız →
-                            </Link>
-                          </>
-                        )}
-                      </div>
-                    );
-                  }
-                  return (
-                    <Card className="border-brand/40">
-                      <CardTitle className="text-[13px] text-brand">Koç · çeldirici analizi</CardTitle>
-                      <div className="mt-2 whitespace-pre-line text-[14px] leading-relaxed text-ink">
-                        {ai.text}
-                      </div>
-                      {ai.remainingToday != null && (
-                        <p className="tk-caption mt-2">Bugün kalan koç hakkı: {ai.remainingToday}</p>
-                      )}
-                    </Card>
-                  );
-                })()}
-              {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir (wireframe 08) */}
-              <div className="flex flex-wrap items-center justify-end gap-2">
-                <button
-                  type="button"
-                  onClick={() => toggleBookmark(question!.questionId)}
-                  aria-pressed={bookmarks.has(question!.questionId)}
-                  className={[
-                    "tk-caption rounded-full border px-2.5 py-1",
-                    bookmarks.has(question!.questionId)
-                      ? "border-streak/60 bg-streak/10 text-streak"
-                      : "border-line hover:text-ink",
-                  ].join(" ")}
-                >
-                  {bookmarks.has(question!.questionId) ? "★ Favoride" : "☆ Favorile (F)"}
-                </button>
-                {fb.relatedArticle && (
-                  <button
-                    type="button"
-                    onClick={() => setMaddeOpen((v) => !v)}
-                    aria-pressed={maddeOpen}
-                    className={[
-                      "tk-caption rounded-full border px-2.5 py-1",
-                      maddeOpen
-                        ? "border-atlas/60 bg-atlas/10 text-atlas"
-                        : "border-line hover:text-ink",
-                    ].join(" ")}
-                  >
-                    ⚖ İlgili madde: {fb.relatedArticle.no} (M)
-                  </button>
-                )}
-                <button
-                  type="button"
-                  onClick={() => {
-                    setReportOpen((v) => !v);
-                    if (!reportOpen) setReportState("idle");
-                  }}
-                  aria-expanded={reportOpen}
-                  className={[
-                    "tk-caption rounded-full border px-2.5 py-1",
-                    reportOpen
-                      ? "border-danger/60 bg-danger/10 text-danger"
-                      : "border-line hover:text-ink",
-                  ].join(" ")}
-                >
-                  ⚑ Hata bildir
-                </button>
-              </div>
-              {/* Yerinde hata bildir paneli — turdan çıkmadan (Doc 27 §3.6) */}
-              {reportOpen && (
-                <div className="rounded-sm border border-danger/30 bg-danger/5 p-3">
-                  {reportState === "done" || reportState === "already" ? (
-                    <p className="text-[13px] font-semibold text-success" role="status">
-                      {reportState === "already"
-                        ? "Bu soruyu zaten bildirmiştin — teşekkürler."
-                        : "Bildirimin alındı. Editör ekibi inceleyecek, teşekkürler."}
-                    </p>
-                  ) : (
-                    <>
-                      <label
-                        htmlFor="report-message"
-                        className="text-[13px] font-semibold text-ink"
-                      >
-                        Bu soruda ne yanlış?
-                      </label>
-                      <textarea
-                        id="report-message"
-                        value={reportText}
-                        onChange={(e) => setReportText(e.target.value)}
-                        rows={2}
-                        maxLength={500}
-                        placeholder="ör. cevap anahtarı yanlış, yazım hatası, şık eksik…"
-                        className="mt-1 w-full rounded-sm border border-line bg-surface px-2.5 py-1.5 text-[13px] text-ink outline-none focus:border-danger"
-                      />
-                      <div className="mt-2 flex flex-wrap items-center gap-2">
-                        <Button
-                          size="sm"
-                          variant="danger"
-                          onClick={() => submitReport(question!.questionId)}
-                          disabled={reportText.trim().length < 5 || reportState === "busy"}
-                        >
-                          {reportState === "busy" ? "Gönderiliyor…" : "Bildir"}
-                        </Button>
-                        <button
-                          type="button"
-                          onClick={() => setReportOpen(false)}
-                          className="tk-caption text-ink-soft hover:text-ink"
-                        >
-                          Vazgeç
-                        </button>
-                        {reportState === "error" && (
-                          <span className="text-[12px] font-semibold text-danger">
-                            Gönderilemedi, tekrar dene.
-                          </span>
-                        )}
-                      </div>
-                    </>
-                  )}
-                </div>
-              )}
-              <div className="flex justify-end">
-                <Button size="lg" onClick={next} disabled={phase.kind === "finishing"}>
-                  {isLast ? "Turu bitir" : "Sonraki soru"}
-                  <kbd className="rounded border border-current/30 px-1.5 text-[11px]" aria-hidden>
-                    ⏎
-                  </kbd>
-                </Button>
-              </div>
-            </div>
-          )}
+            );
+          })}
         </div>
 
-        {/* Yardımcı panel: tur akışı + kısayollar */}
-        <aside className="max-lg:hidden">
-          <Card>
-            <CardTitle className="text-[13px]">Tur akışı</CardTitle>
-            <div className="mt-2 grid grid-cols-5 gap-1.5" aria-hidden>
-              {data!.questions.map((q, i) => {
-                const f = feedback[q.questionId];
-                return (
-                  <span
-                    key={q.questionId}
-                    className={[
-                      "grid aspect-square place-items-center rounded text-[11px] font-bold",
-                      i === index ? "ring-2 ring-brand" : "",
-                      f
-                        ? f.isCorrect
-                          ? "bg-success/20 text-success"
-                          : "bg-danger/20 text-danger"
-                        : "bg-line text-ink-soft",
-                    ].join(" ")}
-                  >
-                    {f ? (f.isCorrect ? "✓" : "✗") : i + 1}
-                  </span>
-                );
-              })}
-            </div>
-            <p className="tabular mt-2 text-[12px] text-ink-soft">{answeredCount} cevaplandı</p>
-          </Card>
-
-          {/* İlgili madde inspector'ı — M ile açılır, turdan çıkmadan (Doc 27 §3.6) */}
-          {maddeOpen && fb?.relatedArticle && (
-            <Card className="mt-3 border-atlas/40">
-              <div className="flex items-start justify-between gap-2">
-                <CardTitle className="text-[13px] text-atlas">
-                  İlgili madde · {fb.relatedArticle.no}
-                </CardTitle>
-                <button
-                  type="button"
-                  onClick={() => setMaddeOpen(false)}
-                  aria-label="Kapat"
-                  className="tk-caption hover:text-ink"
-                >
-                  ✕
-                </button>
-              </div>
-              {fb.legalReference && (
-                <p className="mt-1 text-[13px] text-ink-soft">{fb.legalReference}</p>
-              )}
-              <Link
-                href={`/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`}
-                target="_blank"
-                className="mt-2 inline-block text-[13px] font-bold text-atlas hover:underline"
-              >
-                Maddeyi Atlas&apos;ta aç →
-              </Link>
-            </Card>
-          )}
-
-          <Card className="mt-3">
-            <CardTitle className="text-[13px]">Not</CardTitle>
-            <textarea
-              value={note}
-              onChange={(e) => setNote(e.target.value)}
-              onKeyDown={(e) => e.stopPropagation()}
-              placeholder="Oturum içi karalama — kaydedilmez"
-              rows={3}
-              aria-label="Oturum içi not"
-              className="mt-1.5 w-full resize-y rounded-sm border border-line bg-surface-alt p-2 text-[13px] text-ink outline-none placeholder:text-ink-soft focus:border-brand"
-            />
-          </Card>
-          <p className="tk-caption mt-3 leading-relaxed">
-            1–4 şık · ⏎ sonraki · F favori · M madde · Esc çıkış
+        {pendingAnswer?.questionId === question!.questionId && (
+          <p
+            className="type-body-sm text-ink-soft"
+            role="status"
+            aria-live="polite"
+          >
+            Cevabın kontrol ediliyor…
           </p>
-        </aside>
+        )}
+        {answerError && <Notice tone="error">{answerError}</Notice>}
+
+        {fb && (
+          <div className="flex flex-col gap-4">
+            <ExplanationBox
+              isCorrect={fb.isCorrect}
+              explanation={fb.explanation}
+              source={fb.source}
+              legalReference={fb.legalReference}
+              lawHref={
+                fb.relatedArticle
+                  ? `/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`
+                  : null
+              }
+            />
+            {/* İlgili maddenin resmî metni (Doc 25 §4) — açıklamanın hemen altında,
+                yayınlanmışsa otomatik; birebir metin + kaynak künyesi. */}
+            {fb.relatedArticle?.text && (
+              <Card className="flex flex-col gap-2 border-accent/40">
+                <span className="type-label inline-flex items-center gap-1 text-accent-ink">
+                  <Scale size={12} aria-hidden /> İlgili madde ·{" "}
+                  {fb.relatedArticle.no}
+                </span>
+                <div className="type-body-sm whitespace-pre-line text-ink">
+                  {fb.relatedArticle.text.body}
+                </div>
+                <p className="type-body-sm text-ink-subtle">
+                  Kaynak:{" "}
+                  {fb.relatedArticle.text.sourceUrl ? (
+                    <a
+                      href={fb.relatedArticle.text.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-ink"
+                    >
+                      {fb.relatedArticle.text.source}
+                    </a>
+                  ) : (
+                    fb.relatedArticle.text.source
+                  )}
+                  {fb.relatedArticle.text.effectiveInfo ? (
+                    <> · {fb.relatedArticle.text.effectiveInfo}</>
+                  ) : null}
+                  {fb.relatedArticle.text.verifiedAt ? (
+                    <>
+                      {" "}
+                      · {fmtVerifiedDate(
+                        fb.relatedArticle.text.verifiedAt,
+                      )}{" "}
+                      itibarıyla
+                    </>
+                  ) : null}
+                </p>
+              </Card>
+            )}
+            {/* AI koç (Doc 28 P3-21): yalnız yanlış cevapta — "neden bu çeldirici?" */}
+            {!fb.isCorrect &&
+              (() => {
+                const ai = aiState[question!.questionId];
+                if (!ai) {
+                  return (
+                    <Button
+                      variant="secondary"
+                      className="w-full justify-start"
+                      leadingIcon={<Brain size={18} aria-hidden />}
+                      onClick={() => askCoach(question!, fb.selected)}
+                    >
+                      Koça sor: Neden yanlış?
+                    </Button>
+                  );
+                }
+                if (ai.status === "busy") {
+                  return (
+                    <p
+                      className="type-body-sm rounded-card bg-surface-alt px-4 py-3 text-ink-soft"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      Koç düşünüyor…
+                    </p>
+                  );
+                }
+                if (ai.status === "error") {
+                  return (
+                    <Notice tone="info">
+                      {ai.message}
+                      {ai.limit && (
+                        <>
+                          {" "}
+                          <Link
+                            href="/premium"
+                            className="font-semibold text-accent-ink hover:underline"
+                          >
+                            Premium&apos;la sınırsız
+                          </Link>
+                        </>
+                      )}
+                    </Notice>
+                  );
+                }
+                return (
+                  <Card className="flex flex-col gap-2 border-accent/40">
+                    <span className="type-label inline-flex items-center gap-1 text-accent-ink">
+                      <Brain size={12} aria-hidden /> Koç · çeldirici analizi
+                    </span>
+                    <div className="type-body-sm whitespace-pre-line text-ink">
+                      {ai.text}
+                    </div>
+                    {ai.remainingToday != null && (
+                      <p className="type-body-sm text-ink-subtle">
+                        Bugün kalan koç hakkı: {ai.remainingToday}
+                      </p>
+                    )}
+                  </Card>
+                );
+              })()}
+            {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir */}
+            <div className="flex flex-wrap items-center justify-end gap-2">
+              <Button
+                size="sm"
+                variant={
+                  bookmarks.has(question!.questionId) ? "primary" : "secondary"
+                }
+                aria-pressed={bookmarks.has(question!.questionId)}
+                leadingIcon={
+                  bookmarks.has(question!.questionId) ? (
+                    <BookmarkCheck size={16} aria-hidden />
+                  ) : (
+                    <Bookmark size={16} aria-hidden />
+                  )
+                }
+                onClick={() => toggleBookmark(question!.questionId)}
+              >
+                {bookmarks.has(question!.questionId) ? "Favoride" : "Favorile"}{" "}
+                <KeyHint keys="F" />
+              </Button>
+              {fb.relatedArticle && (
+                <Button
+                  size="sm"
+                  variant={maddeOpen ? "primary" : "secondary"}
+                  aria-pressed={maddeOpen}
+                  leadingIcon={<Scale size={16} aria-hidden />}
+                  onClick={() => setMaddeOpen((v) => !v)}
+                >
+                  Madde {fb.relatedArticle.no} <KeyHint keys="M" />
+                </Button>
+              )}
+              <Button
+                size="sm"
+                variant="ghost"
+                aria-expanded={reportOpen}
+                leadingIcon={<Flag size={16} aria-hidden />}
+                onClick={() => {
+                  setReportOpen((v) => !v);
+                  if (!reportOpen) setReportState("idle");
+                }}
+              >
+                Hata bildir
+              </Button>
+            </div>
+            {/* Yerinde hata bildir paneli — turdan çıkmadan (Doc 27 §3.6) */}
+            {reportOpen && (
+              <Card tone="alt" className="flex flex-col gap-2">
+                {reportState === "done" || reportState === "already" ? (
+                  <p className="type-body-sm text-success-ink" role="status">
+                    {reportState === "already"
+                      ? "Bu soruyu zaten bildirmiştin — teşekkürler."
+                      : "Bildirimin alındı. Editör ekibi inceleyecek, teşekkürler."}
+                  </p>
+                ) : (
+                  <>
+                    <label
+                      htmlFor="report-message"
+                      className="type-subhead text-ink"
+                    >
+                      Bu soruda ne yanlış?
+                    </label>
+                    <textarea
+                      id="report-message"
+                      value={reportText}
+                      onChange={(e) => setReportText(e.target.value)}
+                      rows={2}
+                      maxLength={500}
+                      placeholder="ör. cevap anahtarı yanlış, yazım hatası, şık eksik…"
+                      className="type-body-sm w-full rounded-control border border-line bg-surface px-2.5 py-2 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
+                    />
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Button
+                        size="sm"
+                        variant="destructive"
+                        onClick={() => submitReport(question!.questionId)}
+                        disabled={
+                          reportText.trim().length < 5 || reportState === "busy"
+                        }
+                        loading={reportState === "busy"}
+                      >
+                        Bildir
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => setReportOpen(false)}
+                      >
+                        Vazgeç
+                      </Button>
+                      {reportState === "error" && (
+                        <span className="type-body-sm text-danger-ink">
+                          Gönderilemedi, tekrar dene.
+                        </span>
+                      )}
+                    </div>
+                  </>
+                )}
+              </Card>
+            )}
+            <div className="flex justify-end">
+              <Button
+                size="lg"
+                onClick={next}
+                disabled={phase.kind === "finishing"}
+              >
+                {isLast ? "Turu bitir" : "Sonraki soru"} <KeyHint keys="⏎" />
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Çıkış diyaloğu — ilerleme kaybolmaz (cevaplar sunucuda) */}
-      {exitAsk && (
-        <div
-          role="alertdialog"
-          aria-modal="true"
-          aria-label="Turdan çık"
-          className="fixed inset-0 z-50 grid place-items-center bg-ink/40 p-4"
-        >
-          <Card className="w-full max-w-sm p-6">
-            <CardTitle>Turdan çıkıyor musun?</CardTitle>
-            <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
-              Cevapların kaydedildi; hedefe sayılması için turun tamamlanması gerekir.
-            </p>
-            <div className="mt-5 flex justify-end gap-2">
-              <Button variant="ghost" onClick={() => setExitAsk(false)}>
-                Devam et
+      <Dialog
+        open={exitAsk}
+        onClose={() => setExitAsk(false)}
+        title="Turdan çıkıyor musun?"
+        size="sm"
+        footer={
+          <div className="flex flex-wrap justify-end gap-2">
+            <Button variant="ghost" onClick={() => setExitAsk(false)}>
+              Devam et
+            </Button>
+            {answeredCount > 0 && (
+              <Button
+                variant="secondary"
+                onClick={() => {
+                  setExitAsk(false);
+                  void complete();
+                }}
+              >
+                Bitir ve sonucu gör
               </Button>
-              {answeredCount > 0 && (
-                <Button
-                  variant="secondary"
-                  onClick={() => {
-                    setExitAsk(false);
-                    void complete();
-                  }}
-                >
-                  Bitir ve sonucu gör
-                </Button>
-              )}
-              <Button variant="danger" onClick={() => router.push("/bugun")}>
-                Çık
-              </Button>
-            </div>
-          </Card>
-        </div>
-      )}
+            )}
+            <Button variant="destructive" onClick={() => router.push("/bugun")}>
+              Çık
+            </Button>
+          </div>
+        }
+      >
+        <p className="type-body text-ink-soft">
+          Cevapların kaydedildi; hedefe sayılması için turun tamamlanması
+          gerekir.
+        </p>
+      </Dialog>
     </FocusFrame>
   );
 }
 
-/** L3 odak çerçevesi: ince üst şerit (çıkış · bağlam · sağ uç), kabuk yok. */
-function FocusFrame({
-  label,
-  right,
-  onExit,
-  children,
-}: {
-  label: string;
-  right?: React.ReactNode;
-  onExit?: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="min-h-screen">
-      <header className="sticky top-0 z-20 flex items-center gap-4 border-b border-line bg-surface px-4 py-2.5">
-        {onExit ? (
-          <button
-            type="button"
-            onClick={onExit}
-            aria-label="Turdan çık"
-            className="tk-interactive grid size-8 cursor-pointer place-items-center rounded-sm text-ink-soft hover:bg-line/40 hover:text-ink"
-          >
-            ✕
-          </button>
-        ) : (
-          <Link
-            href="/bugun"
-            aria-label="Bugün'e dön"
-            className="tk-interactive grid size-8 place-items-center rounded-sm text-ink-soft hover:bg-line/40 hover:text-ink"
-          >
-            ✕
-          </Link>
-        )}
-        {/* Reçete şeffaflığı — tek satır (Doc 24 §9) */}
-        <p className="tk-caption min-w-0 flex-1 truncate normal-case tracking-normal">{label}</p>
-        {right}
-      </header>
-      <div className="py-8">{children}</div>
-    </div>
-  );
-}
-
-/** Tur Sonucu (Doc 27 §3.7, wireframe 09): skor + kırılım + tek eve dönüş çapası. */
+/** Tur Sonucu (Doc 27 §3.7): skor + koç yorumu + konu kırılımı + tek eve dönüş çapası. */
 function SessionResult({
   result,
   scopeLabel,
@@ -944,34 +1053,41 @@ function SessionResult({
     .sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
 
   return (
-    <FocusFrame label={scopeLabel ?? "Tur sonucu"}>
-      <div className="mx-auto grid max-w-4xl gap-4 px-6 lg:grid-cols-2">
-        <div className="space-y-4">
-          <Card className="p-6 text-center">
-            <p className="tk-caption">
+    <FocusFrame context={scopeLabel ?? "Tur sonucu"} exitHref="/bugun">
+      <div className="grid gap-4 lg:grid-cols-2 lg:[&>*]:min-w-0">
+        <div className="flex flex-col gap-4">
+          <Card className="flex flex-col items-center gap-1 p-6 text-center">
+            <span className="type-label text-ink-subtle">
               {scopeLabel ?? "Koç turu"} · {minutes} dk
-            </p>
-            <p className="tabular mt-2 font-heading text-5xl font-bold text-ink">
+            </span>
+            <p className="type-display tabular text-ink">
               {result.correctCount}
-              <span className="text-2xl text-ink-soft">/{result.totalQuestions}</span>
+              <span className="type-title text-ink-soft">
+                /{result.totalQuestions}
+              </span>
             </p>
-            <p className="tabular mt-1 text-[14px] text-ink-soft">doğruluk %{pct}</p>
+            <span className="type-body-sm tabular text-ink-soft">
+              doğruluk %{pct}
+            </span>
             {result.earnedBadges.length > 0 && (
-              <p className="mt-3 rounded-md bg-streak/10 px-3 py-2 text-[14px] font-bold text-streak">
-                🎖 Yeni rozet: {result.earnedBadges.map((b) => b.name).join(", ")}
-              </p>
+              <Badge tone="accent" className="mt-2">
+                Yeni rozet: {result.earnedBadges.map((b) => b.name).join(", ")}
+              </Badge>
             )}
           </Card>
 
-          {/* Koç yorumu — rakam konuşur (Doc 26 dil kuralı 1) */}
-          <Card className="border-brand/30">
-            <CardTitle className="text-[13px] text-brand">Koç</CardTitle>
-            <p className="mt-1 text-[15px] leading-relaxed text-ink">
+          <Card className="flex flex-col gap-1 border-accent/40">
+            <span className="type-label text-accent-ink">Koç</span>
+            <p className="type-body text-ink">
               {result.wrongCount > 0
                 ? `${result.wrongCount} yanlışını yanlış havuzuna ekledim — tekrarında karşına çıkacaklar.`
                 : "Tam isabet. Yarın yeni sorularla devam."}
               {weakest && weakest.correct / weakest.total < 0.6 && (
-                <> En çok {weakest.topicName} zorladı ({weakest.correct}/{weakest.total}).</>
+                <>
+                  {" "}
+                  En çok {weakest.topicName} zorladı ({weakest.correct}/
+                  {weakest.total}).
+                </>
               )}
             </p>
           </Card>
@@ -980,7 +1096,6 @@ function SessionResult({
             <ButtonLink href="/bugun" size="lg">
               Bugün&apos;e dön
             </ButtonLink>
-            {/* Yanlış varsa (ve zaten tekrar turu değilse) doğrudan review'a köprü */}
             {result.wrongCount > 0 && !isReview && (
               <ButtonLink
                 href={`/seans?mode=review&scope=${encodeURIComponent("Yanlış tekrarı")}`}
@@ -990,8 +1105,7 @@ function SessionResult({
                 Yanlışları şimdi tekrar et
               </ButtonLink>
             )}
-            {/* Değişen `n` nonce'u → yeni URL + yeni key → oynatıcı remount →
-                sunucudan taze (shuffle'lı) koç turu. Aynı /seans'a Link no-op olurdu. */}
+            {/* Değişen `n` nonce'u → yeni URL + yeni key → oynatıcı remount → taze tur. */}
             <Button
               variant="ghost"
               size="lg"
@@ -999,8 +1113,6 @@ function SessionResult({
             >
               Yeni tur
             </Button>
-            {/* Seçili mevzuat turu: aynı kanun seçimiyle taze tur (seçim URL'de yaşar;
-                `n` nonce'u remount'u tetikler). */}
             {repeatHref && (
               <Button
                 variant="secondary"
@@ -1012,18 +1124,19 @@ function SessionResult({
             )}
           </div>
 
-          {/* İlgili maddeleri oku (wireframe 09): bu turda geçen mevzuat maddeleri */}
           {articles.length > 0 && (
-            <Card>
-              <CardTitle className="text-[13px]">İlgili maddeleri oku</CardTitle>
-              <div className="mt-2 flex flex-wrap gap-2">
+            <Card className="flex flex-col gap-2">
+              <span className="type-label text-ink-subtle">
+                İlgili maddeleri oku
+              </span>
+              <div className="flex flex-wrap gap-2">
                 {articles.slice(0, 6).map((a) => (
                   <Link
                     key={`${a.lawSlug}/${a.slug}`}
                     href={`/kanun/${a.lawSlug}/madde/${a.slug}`}
-                    className="tk-caption rounded-full border border-atlas/40 bg-atlas/5 px-2.5 py-1 text-atlas hover:border-atlas"
+                    className="inline-flex h-9 items-center gap-1 rounded-pill border border-line px-3 text-[13px] font-semibold text-accent-ink hover:border-ink-soft"
                   >
-                    ⚖ madde {a.no}
+                    <Scale size={14} aria-hidden /> madde {a.no}
                   </Link>
                 ))}
               </div>
@@ -1031,27 +1144,38 @@ function SessionResult({
           )}
         </div>
 
-        <Card>
-          <CardTitle className="text-[13px]">Konu kırılımı</CardTitle>
+        <Card className="flex flex-col gap-2">
+          <span className="type-label text-ink-subtle">Konu kırılımı</span>
           {result.topicBreakdown && result.topicBreakdown.length > 0 ? (
-            <table className="mt-2 w-full text-[14px]">
+            <table className="w-full">
               <thead>
-                <tr className="tk-caption border-b border-line text-left">
-                  <th className="py-1.5 font-semibold">Konu</th>
-                  <th className="py-1.5 text-right font-semibold">Doğru</th>
+                <tr className="border-b border-line text-left">
+                  <th className="type-label py-2 text-ink-subtle">Konu</th>
+                  <th className="type-label py-2 text-right text-ink-subtle">
+                    Doğru
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {result.topicBreakdown.map((t) => {
                   const ratio = t.total > 0 ? t.correct / t.total : 0;
                   return (
-                    <tr key={t.topicId} className="border-b border-line last:border-0">
-                      <td className="py-2 pr-2 text-ink">{t.topicName}</td>
+                    <tr
+                      key={t.topicId}
+                      className="border-b border-line last:border-0"
+                    >
+                      <td className="type-body-sm py-2.5 pr-2 text-ink">
+                        {t.topicName}
+                      </td>
                       <td
-                        className={[
-                          "tabular py-2 text-right font-bold",
-                          ratio < 0.4 ? "text-danger" : ratio < 0.6 ? "text-warning" : "text-success",
-                        ].join(" ")}
+                        className={cn(
+                          "type-subhead tabular py-2.5 text-right",
+                          ratio < 0.4
+                            ? "text-danger-ink"
+                            : ratio < 0.6
+                              ? "text-warning-ink"
+                              : "text-success-ink",
+                        )}
                       >
                         {t.correct}/{t.total}
                       </td>
@@ -1061,7 +1185,7 @@ function SessionResult({
               </tbody>
             </table>
           ) : (
-            <p className="mt-2 text-[14px] text-ink-soft">
+            <p className="type-body-sm text-ink-soft">
               Tek konuluk tur — kırılım yok. Doğru {result.correctCount}, yanlış{" "}
               {result.wrongCount}, boş {result.blankCount}.
             </p>

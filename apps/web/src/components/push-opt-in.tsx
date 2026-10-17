@@ -47,7 +47,10 @@ export function PushOptIn() {
   useEffect(() => {
     if (durum !== "verildi") return;
     pushAboneOl((token) =>
-      apiClient("/me/push-token", { method: "POST", body: { token, platform: "web" } }),
+      apiClient("/me/push-token", {
+        method: "POST",
+        body: { token, platform: "web" },
+      }),
     ).catch(() => undefined);
   }, [durum]);
 
@@ -57,7 +60,10 @@ export function PushOptIn() {
     setGonderiliyor(true);
     try {
       const token = await pushAboneOl((t) =>
-        apiClient("/me/push-token", { method: "POST", body: { token: t, platform: "web" } }),
+        apiClient("/me/push-token", {
+          method: "POST",
+          body: { token: t, platform: "web" },
+        }),
       );
       setSonuc(token ? "ok" : "reddedildi");
     } catch {
@@ -69,19 +75,19 @@ export function PushOptIn() {
 
   if (sonuc === "ok") {
     return (
-      <p className="mb-4 rounded-md border border-success/40 bg-success/10 px-4 py-3 text-[13px] text-ink">
+      <p className="type-body-sm mb-4 rounded-card bg-success-soft px-4 py-3 text-success-ink">
         Tamam — canlı deneme başlamadan haber vereceğiz.
       </p>
     );
   }
 
   return (
-    <section className="mb-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 rounded-md border border-line bg-surface px-4 py-3">
+    <section className="mb-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 rounded-card border border-line bg-surface px-4 py-3">
       <div className="min-w-0">
-        <p className="text-[14px] font-bold text-ink">
+        <p className="type-subhead text-ink">
           Canlı deneme başlayınca haber verelim mi?
         </p>
-        <p className="mt-0.5 text-[13px] text-ink-soft">
+        <p className="type-body-sm mt-0.5 text-ink-soft">
           {sonuc === "reddedildi"
             ? "Tarayıcı izni verilmedi. Adres çubuğundaki kilit simgesinden bildirimlere izin verip tekrar deneyebilirsin."
             : sonuc === "hata"

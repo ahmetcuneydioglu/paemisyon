@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, Medal, Pause, Trophy } from "lucide-react";
 import { api } from "@/lib/api";
 import {
   activeSessionHref,
@@ -11,12 +12,14 @@ import type { ExamListItem } from "@/lib/types";
 import { Countdown } from "@/components/countdown";
 import { formatDate, formatTime } from "@/lib/format";
 import { webRoute } from "@/lib/routes";
-import { Card, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/cn";
+import { Card } from "@/components/ui/card";
 import { CoachCard } from "@/components/ui/coach-card";
 import { GoalProgress } from "@/components/ui/goal-progress";
+import { ProgressBar } from "@/components/ui/progress";
+import { ButtonLink } from "@/components/ui/button";
 import { StoreBadges } from "@/components/store-badges";
 import { StreakBadge } from "@/components/ui/streak-badge";
-import { ButtonLink } from "@/components/ui/button";
 import { FocusPicker } from "@/components/bugun/focus-picker";
 import { ExamBanner, bannerExam } from "@/components/exam-banner";
 import { PushOptIn } from "@/components/push-opt-in";
@@ -25,20 +28,21 @@ export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
 /**
- * Bugün — girişli ana sayfa (Doc 27 §3.2, wireframe 02).
- * Sahne koçundur: hero = durum makinesinin kartı (/me/coach), yanı günün özeti.
+ * Bugün — girişli ana sayfa (Doc 27 §3.2). Sahne koçundur: hero = durum
+ * makinesinin kartı (/me/coach), yanı günün özeti. Koç rayı burada YOK.
+ * Görünüm v3 "Nöbet" (Doc 49/11 W-D): tek vurgu, rozet/ikon eşlikli durum.
  */
 export default async function BugunPage() {
   const [brief, exams, active, activity] = await Promise.all([
     api<CoachBrief>("/me/coach"),
-    api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
-      () => [] as ExamListItem[],
-    ),
+    api<ExamListItem[]>("/exams", {
+      auth: false,
+      next: { revalidate: 30 },
+    }).catch(() => [] as ExamListItem[]),
     api<ActiveSession | null>("/quiz/active-session").catch(() => null),
     api<ActivityDay[]>("/progress/activity").catch(() => [] as ActivityDay[]),
   ]);
   const { today, gamification, greeting } = brief;
-  // Hero = durum makinesinin en öncelikli kartı (Doc 25 Karar 3); kalanlar destek.
   const [hero, ...cards] = brief.cards;
   const rank = gamification.rank;
   const rankPct =
@@ -46,7 +50,9 @@ export default async function BugunPage() {
       ? Math.min(
           100,
           Math.round(
-            ((rank.score - rank.minScore) / Math.max(1, rank.next.minScore - rank.minScore)) * 100,
+            ((rank.score - rank.minScore) /
+              Math.max(1, rank.next.minScore - rank.minScore)) *
+              100,
           ),
         )
       : 100;
@@ -54,45 +60,43 @@ export default async function BugunPage() {
     .filter((e) => e.state === "upcoming")
     .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
   const liveExam = exams.find((e) => e.state === "active");
-  // Canlı ya da 24 saat içinde başlayacak deneme sayfanın EN ÜSTÜNE şerit olur:
-  // web'de push yok, o gün uygulamayı açan herkesin gördüğü tek duyuru kanalı bu.
   const serit = bannerExam(exams);
   const week = activity.slice(-7);
   const dayShort = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
+  const sectionLabel = "type-label text-ink-subtle";
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-6">
+    <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
       {serit && <ExamBanner exam={serit} />}
-      {/* Bildirim ön-sorusu şeridin ALTINDA: kullanıcı önce "deneme var" bilgisini
-          görsün, sonra "haber vereyim mi" sorusu anlam kazansın. */}
       <PushOptIn />
 
-      {/* Üst şerit: selamlama + seri */}
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <h1 className="font-heading text-xl font-bold text-ink">
-          {greeting.displayName ? `Merhaba, ${greeting.displayName}` : "Merhaba"}
+        <h1 className="type-title text-ink">
+          {greeting.displayName
+            ? `Merhaba, ${greeting.displayName}`
+            : "Merhaba"}
         </h1>
         <div className="flex items-center gap-3">
-          {/* Girişli kullanıcı da uygulamayı bulabilsin: web'de çalışan aday
-              genelde native sürümü olduğunu bilmiyor. Seri rozetiyle aynı
-              hizada ama daha sessiz (küçük ölçek). */}
-          <StoreBadges width={96} />
-          <StreakBadge days={today.streak.current} atRisk={today.streak.atRisk} />
+          <StoreBadges width={96} className="hidden sm:inline-flex" />
+          <StreakBadge
+            days={today.streak.current}
+            atRisk={today.streak.atRisk}
+          />
         </div>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
-        {/* Sol sahne (8 kolon): hero + destek kartları */}
-        <div className="space-y-4 lg:col-span-2">
-          <Card className="border-brand/30 p-6">
-            <span className="tk-caption text-brand">Koç</span>
-            <p className="mt-1.5 font-heading text-lg font-bold leading-snug text-ink">
+        {/* Sol sahne (8 kolon): hero + destek kartları + nöbet çizelgesi */}
+        <div className="flex flex-col gap-4 lg:col-span-2">
+          <Card className="flex flex-col gap-3 p-6">
+            <span className="type-label text-accent-ink">Koç</span>
+            <p className="type-heading text-ink">
               {hero?.title ?? "Bugün senin için bir tur hazır."}
             </p>
-            {hero?.body && (
-              <p className="mt-1 text-[14px] leading-relaxed text-ink-soft">{hero.body}</p>
-            )}
-            <div className="mt-4 flex flex-wrap items-center gap-3">
+            {hero?.body ? (
+              <p className="type-body text-ink-soft">{hero.body}</p>
+            ) : null}
+            <div className="mt-2 flex flex-wrap items-center gap-3">
               <ButtonLink href={webRoute(brief.primaryAction.route)} size="lg">
                 Bugün Çalış
               </ButtonLink>
@@ -100,7 +104,7 @@ export default async function BugunPage() {
             </div>
           </Card>
 
-          {cards.length > 0 && (
+          {cards.length > 0 ? (
             <div className="grid gap-3 sm:grid-cols-2">
               {cards.map((c) => (
                 <CoachCard
@@ -113,87 +117,107 @@ export default async function BugunPage() {
                 />
               ))}
             </div>
-          )}
+          ) : null}
 
-          {/* Son 7 gün — nöbet çizelgesi (wireframe 02): boş gün suçlanmaz */}
-          {week.length === 7 && (
-            <Card>
-              <CardTitle className="text-[13px]">Son 7 gün — nöbet çizelgesi</CardTitle>
-              <div className="mt-3 flex gap-2">
+          {week.length === 7 ? (
+            <Card className="flex flex-col gap-3">
+              <span className={sectionLabel}>Son 7 gün · nöbet çizelgesi</span>
+              <div className="flex gap-2">
                 {week.map((d, i) => {
                   const isToday = i === week.length - 1;
-                  const dow = dayShort[new Date(d.date + "T00:00:00Z").getUTCDay()];
+                  const dow =
+                    dayShort[new Date(d.date + "T00:00:00Z").getUTCDay()];
+                  const active = d.questionsAnswered > 0;
                   return (
                     <div
                       key={d.date}
-                      className={[
-                        "flex-1 rounded-sm border py-2 text-center",
+                      className={cn(
+                        "flex-1 rounded-control border py-2 text-center",
                         isToday
-                          ? "border-brand"
-                          : d.questionsAnswered > 0
-                            ? "border-line bg-session/10"
+                          ? "border-accent bg-accent-soft"
+                          : active
+                            ? "border-success/40 bg-success-soft"
                             : "border-dashed border-line",
-                      ].join(" ")}
+                      )}
                     >
-                      <p className="tk-caption">{isToday ? "Bugün" : dow}</p>
                       <p
-                        className={[
-                          "tabular mt-0.5 text-[14px] font-bold",
-                          d.questionsAnswered > 0 ? "text-ink" : "text-ink-soft",
-                        ].join(" ")}
+                        className={cn(
+                          "type-label",
+                          isToday ? "text-accent-ink" : "text-ink-subtle",
+                        )}
                       >
-                        {d.questionsAnswered > 0 ? d.questionsAnswered : "—"}
+                        {isToday ? "Bugün" : dow}
+                      </p>
+                      <p
+                        className={cn(
+                          "type-subhead tabular mt-0.5",
+                          active
+                            ? isToday
+                              ? "text-accent-ink"
+                              : "text-success-ink"
+                            : "text-ink-subtle",
+                        )}
+                      >
+                        {active ? d.questionsAnswered : "—"}
                       </p>
                     </div>
                   );
                 })}
               </div>
             </Card>
-          )}
+          ) : null}
         </div>
 
-        {/* Sağ kolon (4 kolon): günün özeti — salt okunur, en fazla 4 kart */}
-        <div className="space-y-3">
+        {/* Sağ kolon (4 kolon): günün özeti — salt okunur */}
+        <div className="flex flex-col gap-3">
           <Card>
             <GoalProgress answered={today.answered} goal={today.goal} />
           </Card>
 
-          {/* Devam eden tur çapası (Doc 25 §7 emniyet 3): kayıp iş = kayıp güven */}
-          {active && (
-            <Card className="border-warning/50">
-              <CardTitle className="text-[13px]">⏸ Devam eden tur</CardTitle>
-              <p className="tabular mt-1 text-[13px] text-ink-soft">
-                {active.scopeName ?? (active.mode === "review" ? "Yanlış tekrarı" : "Koç turu")}{" "}
+          {active ? (
+            <Card className="flex flex-col gap-1 border-warning/40">
+              <span className="type-label inline-flex items-center gap-1.5 text-warning-ink">
+                <Pause size={12} aria-hidden /> Devam eden tur
+              </span>
+              <p className="type-body-sm tabular text-ink-soft">
+                {active.scopeName ??
+                  (active.mode === "review"
+                    ? "Yanlış tekrarı"
+                    : "Koç turu")}{" "}
                 · {active.answeredCount}/{active.totalQuestions} soruda kaldın
               </p>
               {active.resumable ? (
                 <Link
                   href={activeSessionHref(active)}
-                  className="mt-2 inline-block text-[13px] font-bold text-brand hover:underline"
+                  className="type-subhead mt-1 inline-flex items-center gap-1 text-accent-ink hover:underline"
                 >
-                  Kaldığın yerden devam et →
+                  Kaldığın yerden devam et <ArrowRight size={14} aria-hidden />
                 </Link>
               ) : (
-                <p className="tk-caption mt-2">
+                <p className="type-body-sm text-ink-subtle">
                   Eski sürümden yarım oturum — yeni tur başlatman yeterli.
                 </p>
               )}
             </Card>
-          )}
+          ) : null}
 
-          {/* Haftalık fotoğraf (wireframe 02): ders bazlı mastery değişimi */}
-          {brief.weeklyPhoto && brief.weeklyPhoto.length > 0 && (
-            <Card>
-              <CardTitle className="text-[13px]">Haftalık fotoğraf</CardTitle>
-              <ul className="mt-2 space-y-1">
+          {brief.weeklyPhoto && brief.weeklyPhoto.length > 0 ? (
+            <Card className="flex flex-col gap-2">
+              <span className={sectionLabel}>Haftalık fotoğraf</span>
+              <ul className="flex flex-col gap-1.5">
                 {brief.weeklyPhoto.slice(0, 4).map((c) => (
-                  <li key={c.courseName} className="flex items-center justify-between gap-2 text-[13px]">
-                    <span className="min-w-0 truncate text-ink-soft">{c.courseName}</span>
+                  <li
+                    key={c.courseName}
+                    className="flex items-center justify-between gap-2"
+                  >
+                    <span className="type-body-sm min-w-0 truncate text-ink-soft">
+                      {c.courseName}
+                    </span>
                     <span
-                      className={[
-                        "tabular shrink-0 font-bold",
-                        c.deltaPct > 0 ? "text-success" : "text-danger",
-                      ].join(" ")}
+                      className={cn(
+                        "type-subhead tabular shrink-0",
+                        c.deltaPct > 0 ? "text-success-ink" : "text-danger-ink",
+                      )}
                     >
                       %{Math.abs(c.deltaPct)} {c.deltaPct > 0 ? "↑" : "↓"}
                     </span>
@@ -202,121 +226,148 @@ export default async function BugunPage() {
               </ul>
               <Link
                 href="/performans/konu-haritasi"
-                className="tk-caption mt-2 inline-block text-brand hover:underline"
+                className="type-body-sm inline-flex items-center gap-1 text-accent-ink hover:underline"
               >
-                Konu haritasında incele →
+                Konu haritasında incele <ArrowRight size={14} aria-hidden />
               </Link>
             </Card>
-          )}
+          ) : null}
 
-          {gamification.nextBadge && (
-            <Card>
-              <CardTitle className="text-[13px]">🎖 Sıradaki rozet</CardTitle>
-              <p className="mt-1 text-[13px] text-ink-soft">{gamification.nextBadge.name}</p>
-              <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-line">
-                <div
-                  className="h-full rounded-full bg-atlas"
-                  style={{
-                    width: `${Math.min(100, Math.round((gamification.nextBadge.progress / Math.max(1, gamification.nextBadge.target)) * 100))}%`,
-                  }}
-                />
-              </div>
-              <p className="tabular mt-1 text-[11px] text-ink-soft">
-                {gamification.nextBadge.progress}/{gamification.nextBadge.target}
+          {gamification.nextBadge ? (
+            <Card className="flex flex-col gap-2">
+              <span
+                className={cn(sectionLabel, "inline-flex items-center gap-1.5")}
+              >
+                <Medal size={12} aria-hidden /> Sıradaki rozet
+              </span>
+              <p className="type-body-sm text-ink">
+                {gamification.nextBadge.name}
+              </p>
+              <ProgressBar
+                value={
+                  gamification.nextBadge.progress /
+                  Math.max(1, gamification.nextBadge.target)
+                }
+                height={4}
+                label="Rozet ilerlemesi"
+              />
+              <p className="type-body-sm tabular text-ink-subtle">
+                {gamification.nextBadge.progress}/
+                {gamification.nextBadge.target}
               </p>
             </Card>
-          )}
+          ) : null}
 
-          {/* Sıradaki canlı deneme (wireframe 02 sağ kolon). Şerit aynı
-              denemeyi zaten duyuruyorsa tekrar edilmez. */}
-          {(liveExam || nextExam) && serit?.id !== (liveExam ?? nextExam)?.id && (
-            <Card className={liveExam ? "border-live/50" : undefined}>
-              <CardTitle className="text-[13px]">
-                {liveExam ? "● Canlı deneme sürüyor" : "🏆 Sıradaki canlı deneme"}
-              </CardTitle>
+          {(liveExam || nextExam) &&
+          serit?.id !== (liveExam ?? nextExam)?.id ? (
+            <Card
+              className={cn(
+                "flex flex-col gap-1",
+                liveExam && "border-success/40",
+              )}
+            >
+              <span
+                className={cn(
+                  sectionLabel,
+                  "inline-flex items-center gap-1.5",
+                  liveExam && "text-success-ink",
+                )}
+              >
+                {liveExam ? (
+                  <span
+                    aria-hidden
+                    className="inline-block size-2 rounded-full bg-success motion-safe:animate-pulse"
+                  />
+                ) : (
+                  <Trophy size={12} aria-hidden />
+                )}
+                {liveExam ? "Canlı deneme sürüyor" : "Sıradaki canlı deneme"}
+              </span>
               {liveExam ? (
                 <>
-                  <p className="mt-1 text-[13px] text-ink-soft">{liveExam.title}</p>
+                  <p className="type-body-sm text-ink-soft">{liveExam.title}</p>
                   <Link
                     href="/denemeler"
-                    className="mt-2 inline-block text-[13px] font-bold text-live hover:underline"
+                    className="type-subhead mt-1 inline-flex items-center gap-1 text-success-ink hover:underline"
                   >
-                    Hemen katıl →
+                    Hemen katıl <ArrowRight size={14} aria-hidden />
                   </Link>
                 </>
-              ) : (
-                nextExam && (
-                  <>
-                    <p className="mt-1 text-[13px] text-ink-soft">
-                      {nextExam.title} · {formatDate(nextExam.startAt)}{" "}
-                      {formatTime(nextExam.startAt)}
-                    </p>
-                    <div className="mt-2 text-[13px] font-bold text-ink">
-                      <Countdown target={nextExam.startAt} />
-                    </div>
-                  </>
-                )
-              )}
-            </Card>
-          )}
-
-          {/* Rütbe ilerlemesi (Doc 24 §5) */}
-          {rank && (
-            <Card>
-              <CardTitle className="text-[13px]">Rütbe: {rank.name}</CardTitle>
-              {rank.next ? (
+              ) : nextExam ? (
                 <>
-                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-line">
-                    <div
-                      className="h-full rounded-full bg-streak"
-                      style={{ width: `${rankPct}%` }}
-                    />
-                  </div>
-                  <p className="tabular mt-1 text-[11px] text-ink-soft">
-                    {rank.next.name} rütbesine {Math.max(0, rank.next.minScore - rank.score)} puan
+                  <p className="type-body-sm text-ink-soft">
+                    {nextExam.title} · {formatDate(nextExam.startAt)}{" "}
+                    {formatTime(nextExam.startAt)}
                   </p>
+                  <div className="type-subhead mt-1 text-ink">
+                    <Countdown target={nextExam.startAt} />
+                  </div>
                 </>
+              ) : null}
+            </Card>
+          ) : null}
+
+          {rank ? (
+            <Card className="flex flex-col gap-2">
+              <span className={sectionLabel}>Rütbe</span>
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="type-subhead text-ink">{rank.name}</span>
+                {rank.next ? (
+                  <span className="type-body-sm tabular text-ink-soft">
+                    {rank.score}/{rank.next.minScore}
+                  </span>
+                ) : null}
+              </div>
+              <ProgressBar
+                value={rankPct / 100}
+                height={4}
+                label="Rütbe ilerlemesi"
+              />
+              {rank.next ? (
+                <p className="type-body-sm text-ink-subtle">
+                  {rank.next.name} rütbesine{" "}
+                  {Math.max(0, rank.next.minScore - rank.score)} puan
+                </p>
               ) : (
-                <p className="mt-1 text-[13px] text-ink-soft">En yüksek rütbedesin.</p>
+                <p className="type-body-sm text-ink-subtle">
+                  En yüksek rütbedesin.
+                </p>
               )}
             </Card>
-          )}
+          ) : null}
 
-          <Card>
-            <CardTitle className="text-[13px]">Rekorların</CardTitle>
-            <dl className="tabular mt-2 space-y-1.5 text-[13px] text-ink-soft">
-              <div className="flex justify-between">
-                <dt>Bu hafta</dt>
-                <dd className="font-bold text-ink">
-                  {gamification.weekly.activeDays}/{gamification.weekly.goalDays} aktif gün
-                </dd>
-              </div>
-              <div className="flex justify-between">
-                <dt>En iyi net</dt>
-                <dd className="font-bold text-ink">{gamification.records.bestNet ?? "—"}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt>En uzun seri</dt>
-                <dd className="font-bold text-ink">{gamification.records.longestStreak} gün</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt>Günlük rekor</dt>
-                <dd className="font-bold text-ink">
-                  {gamification.records.maxDailyQuestions} soru
-                </dd>
-              </div>
+          <Card className="flex flex-col gap-2">
+            <span className={sectionLabel}>Rekorların</span>
+            <dl className="type-body-sm tabular flex flex-col gap-1.5 text-ink-soft">
+              {[
+                [
+                  "Bu hafta",
+                  `${gamification.weekly.activeDays}/${gamification.weekly.goalDays} aktif gün`,
+                ],
+                ["En iyi net", gamification.records.bestNet ?? "—"],
+                ["En uzun seri", `${gamification.records.longestStreak} gün`],
+                [
+                  "Günlük rekor",
+                  `${gamification.records.maxDailyQuestions} soru`,
+                ],
+              ].map(([k, v]) => (
+                <div key={String(k)} className="flex justify-between gap-2">
+                  <dt>{k}</dt>
+                  <dd className="font-semibold text-ink">{v}</dd>
+                </div>
+              ))}
             </dl>
           </Card>
 
-          {!greeting.isPremium && (
+          {!greeting.isPremium ? (
             <Link
               href="/premium"
-              className="tk-interactive block rounded-md border border-dashed border-line p-4 text-[13px] text-ink-soft hover:border-ink-soft"
+              className="tk-interactive type-body-sm block rounded-card border border-dashed border-line p-4 text-ink-soft hover:border-ink-soft"
             >
-              <span className="font-bold text-ink">Premium</span> — koçun tam beyni: sınırsız
-              soru, tam tekrar hafızası. →
+              <span className="type-subhead text-ink">Premium</span> — koçun tam
+              beyni: sınırsız soru, tam tekrar hafızası.
             </Link>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

@@ -1,21 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Clock, Flag } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
 import type { AttemptResult, MyAttempt } from "@/lib/types";
-import { Card, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/cn";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { DataTable } from "@/components/ui/data-table";
+import { EmptyState } from "@/components/ui/empty-state";
 import { ReviewList } from "@/components/review-list";
 import { TimingStrip } from "@/components/exam/timing-strip";
 
-export const metadata: Metadata = { title: "Sınav Sonucu", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Sınav Sonucu",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 /**
- * Deneme Sonucu + Derin Analiz (Doc 27 §3.8, wireframe 11). Şok değil yol
- * haritası: önce kendi kıyasın ve kapatılabilir kayıplar, sıralama sonra.
- * Her kayıp satırı eyleme bağlanır — tek tık kapatma turu (/seans).
+ * Deneme Sonucu + Derin Analiz (Doc 27 §3.8). Şok değil yol haritası: önce kendi
+ * kıyasın ve kapatılabilir kayıplar, sıralama sonra. Her kayıp satırı eyleme bağlanır.
+ * "Emin değilim" bayrakları (S1-C) ayrı listelenir.
  */
-export default async function SonucPage({ params }: { params: Promise<{ attemptId: string }> }) {
+export default async function SonucPage({
+  params,
+}: {
+  params: Promise<{ attemptId: string }>;
+}) {
   const { attemptId } = await params;
 
   let result: AttemptResult;
@@ -26,17 +39,17 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
       const examId = (e.details as { examId?: string } | undefined)?.examId;
       return (
         <div className="grid min-h-[70vh] place-items-center px-4">
-          <Card className="w-full max-w-md p-8 text-center">
-            <p className="text-3xl" aria-hidden>⏱</p>
-            <CardTitle className="mt-3 text-[17px]">Sınav devam ediyor</CardTitle>
-            <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
-              Süre dolmadan sonuç açılmaz — herkese aynı anda, adil.
-            </p>
-            {examId && (
-              <div className="mt-6">
-                <ButtonLink href={`/sinav/${examId}`}>Sınava dön</ButtonLink>
-              </div>
-            )}
+          <Card className="w-full max-w-md">
+            <EmptyState
+              icon={Clock}
+              title="Sınav devam ediyor"
+              body="Süre dolmadan sonuç açılmaz — herkese aynı anda, adil."
+              action={
+                examId ? (
+                  <ButtonLink href={`/sinav/${examId}`}>Sınava dön</ButtonLink>
+                ) : undefined
+              }
+            />
           </Card>
         </div>
       );
@@ -44,91 +57,131 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
     throw e;
   }
 
-  // Kıyas önce kendinle (Doc 24 §2): bir önceki tamamlanmış denemeyle net farkı.
-  const mine = await api<MyAttempt[]>("/exams/attempts/mine").catch(() => [] as MyAttempt[]);
+  const mine = await api<MyAttempt[]>("/exams/attempts/mine").catch(
+    () => [] as MyAttempt[],
+  );
   const completedMine = mine
     .filter((a) => a.status === "completed" && a.score != null)
     .sort((a, b) => +new Date(a.startedAt) - +new Date(b.startedAt));
   const myIndex = completedMine.findIndex((a) => a.attemptId === attemptId);
   const prev = myIndex > 0 ? completedMine[myIndex - 1] : null;
   const delta =
-    prev != null && result.score != null ? result.score - Number(prev.score) : null;
+    prev != null && result.score != null
+      ? result.score - Number(prev.score)
+      : null;
 
   const breakdown = result.topicBreakdown ?? [];
   const losers = breakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 3);
   const lostTotal = breakdown.reduce((s, t) => s + t.wrong + t.blank, 0);
   const lostInTop3 = losers.reduce((s, t) => s + t.wrong + t.blank, 0);
   const minutes =
-    result.durationSeconds != null ? Math.max(1, Math.round(result.durationSeconds / 60)) : null;
+    result.durationSeconds != null
+      ? Math.max(1, Math.round(result.durationSeconds / 60))
+      : null;
+  const flagged = result.review.filter((q) => q.flagged);
+  const fmt = (n: number) => n.toFixed(2).replace(/\.?0+$/, "");
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-6">
-      <nav className="tk-caption mb-3" aria-label="breadcrumb">
-        <Link href="/denemeler" className="hover:text-ink">Denemeler</Link> ›{" "}
-        {result.exam.title} › Analiz
-      </nav>
+    <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
+      <Breadcrumb
+        className="mb-4"
+        items={[
+          { label: "Denemeler", href: "/denemeler" },
+          { label: result.exam.title },
+          { label: "Analiz" },
+        ]}
+      />
 
       <div className="grid gap-4 lg:grid-cols-[1fr_1.4fr]">
         {/* Sol: skor + koç + eylemler */}
-        <div className="space-y-4">
-          <Card className="p-6 text-center">
-            <span className="tk-caption">
+        <div className="flex flex-col gap-4">
+          <Card className="flex flex-col items-center gap-1 p-6 text-center">
+            <span className="type-label text-ink-subtle">
               {result.exam.title}
-              {minutes && ` · ${minutes} dk`}
+              {minutes ? ` · ${minutes} dk` : ""}
             </span>
-            <p className="tabular mt-2 font-heading text-5xl font-bold text-ink">
-              {result.score != null ? result.score.toFixed(2) : "—"}
+            <p className="type-display tabular text-ink">
+              {result.score != null ? fmt(result.score) : "—"}
             </p>
-            <p className="tk-caption mt-1">NET (doğru − yanlış/4)</p>
-            {delta != null && (
-              <p
-                className={[
-                  "tabular mt-1.5 text-[13px] font-bold",
-                  delta > 0 ? "text-success" : delta < 0 ? "text-warning" : "text-ink-soft",
-                ].join(" ")}
+            <span className="type-label text-ink-subtle">
+              NET (doğru − yanlış/4)
+            </span>
+            {delta != null ? (
+              <Badge
+                tone={delta > 0 ? "success" : delta < 0 ? "warning" : "neutral"}
               >
                 geçen denemeden {delta > 0 ? "+" : ""}
-                {delta.toFixed(2).replace(/\.?0+$/, "")} net
-              </p>
-            )}
-            {myIndex === 0 && (
-              <p className="tk-caption mt-1.5">ilk denemen — kıyas çizgin buradan başlıyor</p>
-            )}
-            <div className="mt-4 grid grid-cols-3 gap-2 text-[13px]">
-              <div className="rounded-sm bg-success/10 py-2">
-                <p className="tabular font-bold text-success">{result.correctCount}</p>
-                <p className="text-ink-soft">doğru</p>
-              </div>
-              <div className="rounded-sm bg-danger/10 py-2">
-                <p className="tabular font-bold text-danger">{result.wrongCount}</p>
-                <p className="text-ink-soft">yanlış</p>
-              </div>
-              <div className="rounded-sm bg-line/60 py-2">
-                <p className="tabular font-bold text-ink">{result.blankCount}</p>
-                <p className="text-ink-soft">boş</p>
-              </div>
+                {fmt(delta)} net
+              </Badge>
+            ) : null}
+            {myIndex === 0 ? (
+              <span className="type-body-sm text-ink-subtle">
+                ilk denemen — kıyas çizgin buradan başlıyor
+              </span>
+            ) : null}
+            <div className="mt-3 grid w-full grid-cols-3 gap-2">
+              {[
+                [
+                  "doğru",
+                  result.correctCount,
+                  "bg-success-soft text-success-ink",
+                ],
+                ["yanlış", result.wrongCount, "bg-danger-soft text-danger-ink"],
+                ["boş", result.blankCount, "bg-surface-alt text-ink"],
+              ].map(([k, v, cls]) => (
+                <div
+                  key={String(k)}
+                  className={cn(
+                    "flex flex-col rounded-control py-2",
+                    String(cls),
+                  )}
+                >
+                  <span className="type-stat tabular">{v}</span>
+                  <span className="type-body-sm">{k}</span>
+                </div>
+              ))}
             </div>
           </Card>
 
-          {losers.length > 0 && (
-            <Card className="border-brand/30">
-              <CardTitle className="text-[13px] text-brand">Koç</CardTitle>
-              <p className="mt-1 text-[15px] leading-relaxed text-ink">
+          {losers.length > 0 ? (
+            <Card className="flex flex-col gap-1 border-accent/40">
+              <span className="type-label text-accent-ink">Koç</span>
+              <p className="type-body text-ink">
                 {lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
                   ? `Kaybının %${Math.round((lostInTop3 / lostTotal) * 100)}'i ${losers.length} konudan — sıralamaya değil şu tabloya bak, hepsi kapatılabilir.`
                   : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma turu hazır."}
               </p>
             </Card>
-          )}
+          ) : null}
+
+          {flagged.length > 0 ? (
+            <Card className="flex flex-col gap-2">
+              <span className="type-label inline-flex items-center gap-1.5 text-ink-subtle">
+                <Flag size={12} aria-hidden /> Emin olmadığın sorular
+              </span>
+              <p className="type-body-sm text-ink-soft">
+                {flagged.length} soruyu bayraklamıştın;{" "}
+                {
+                  flagged.filter((q) =>
+                    q.options.some(
+                      (o) => o.isCorrect && o.id === q.selectedOptionId,
+                    ),
+                  ).length
+                }{" "}
+                tanesi doğruymuş. Aşağıda işaretli.
+              </p>
+            </Card>
+          ) : null}
 
           <div className="flex flex-wrap gap-3">
-            {/* Arşiv çözümü resmî sıralamaya GİRMEZ: çıkmış sınavların canlı
-                penceresi hiç açılmadığı için o tablo kalıcı olarak boştur. */}
-            {!result.isArchive && (
-              <ButtonLink href={`/siralama/${result.exam.id}`} variant="secondary">
+            {!result.isArchive ? (
+              <ButtonLink
+                href={`/siralama/${result.exam.id}`}
+                variant="secondary"
+              >
                 Sıralamayı gör
               </ButtonLink>
-            )}
+            ) : null}
             <ButtonLink href="/denemeler" variant="secondary">
               Denemeler
             </ButtonLink>
@@ -139,63 +192,83 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
         </div>
 
         {/* Sağ: kayıp tablosu — her satır eyleme bağlı */}
-        <Card>
-          <CardTitle>Konu kırılımı — kaybettirenler üstte</CardTitle>
-          {breakdown.length > 0 ? (
-            <table className="mt-2 w-full text-[14px]">
-              <thead>
-                <tr className="tk-caption border-b border-line text-left">
-                  <th className="py-2 font-semibold">Konu</th>
-                  <th className="py-2 text-right font-semibold">D</th>
-                  <th className="py-2 text-right font-semibold">Y</th>
-                  <th className="py-2 text-right font-semibold">B</th>
-                  <th className="py-2 text-right font-semibold">Kayıp net</th>
-                  <th className="py-2" />
-                </tr>
-              </thead>
-              <tbody>
-                {breakdown.map((t) => {
-                  // Kayıp net = yanlışın kendisi + götürdüğü çeyrekler + boşlar.
+        <div className="flex flex-col gap-2">
+          <h2 className="type-heading text-ink">
+            Konu kırılımı — kaybettirenler üstte
+          </h2>
+          <DataTable
+            caption="Konu kırılımı"
+            rows={breakdown}
+            rowKey={(t) => t.topicId}
+            empty="Konu kırılımı bu deneme için yok."
+            columns={[
+              {
+                key: "konu",
+                header: "Konu",
+                cell: (t) => (
+                  <span className="type-subhead text-ink">{t.topicName}</span>
+                ),
+              },
+              {
+                key: "d",
+                header: "D",
+                align: "right",
+                cell: (t) => (
+                  <span className="text-success-ink">{t.correct}</span>
+                ),
+              },
+              {
+                key: "y",
+                header: "Y",
+                align: "right",
+                cell: (t) => <span className="text-danger-ink">{t.wrong}</span>,
+              },
+              {
+                key: "b",
+                header: "B",
+                align: "right",
+                hideBelowMd: true,
+                cell: (t) => <span className="text-ink-soft">{t.blank}</span>,
+              },
+              {
+                key: "kayip",
+                header: "Kayıp net",
+                align: "right",
+                cell: (t) => {
                   const lostNet = t.wrong * 1.25 + t.blank;
                   return (
-                    <tr key={t.topicId} className="border-b border-line last:border-0">
-                      <td className="py-2.5 pr-2 text-ink">{t.topicName}</td>
-                      <td className="tabular py-2.5 text-right text-success">{t.correct}</td>
-                      <td className="tabular py-2.5 text-right text-danger">{t.wrong}</td>
-                      <td className="tabular py-2.5 text-right text-ink-soft">{t.blank}</td>
-                      <td className="tabular py-2.5 text-right font-bold text-ink">
-                        {lostNet > 0 ? `−${String(lostNet.toFixed(2)).replace(/\.?0+$/, "")}` : "0"}
-                      </td>
-                      <td className="py-2.5 pl-2 text-right">
-                        {t.wrong + t.blank > 0 && (
-                          <Link
-                            href={`/seans?topicId=${t.topicId}&scope=${encodeURIComponent(`${t.topicName} · kapatma`)}`}
-                            className="tk-interactive inline-block rounded-full border border-line px-3 py-1 text-[12px] font-bold text-ink-soft hover:border-brand hover:text-brand"
-                          >
-                            kapat
-                          </Link>
-                        )}
-                      </td>
-                    </tr>
+                    <span className="font-semibold text-ink">
+                      {lostNet > 0 ? `−${fmt(lostNet)}` : "0"}
+                    </span>
                   );
-                })}
-              </tbody>
-            </table>
-          ) : (
-            <p className="mt-2 text-[14px] text-ink-soft">Konu kırılımı bu deneme için yok.</p>
-          )}
-          <p className="tk-caption mt-3">
-            Kayıp net = yanlış×1,25 + boş. &quot;kapat&quot; o konudan akıllı tur başlatır;
-            yanlışların zaten tekrar kuyruğunda.
+                },
+              },
+              {
+                key: "eylem",
+                header: "",
+                align: "right",
+                cell: (t) =>
+                  t.wrong + t.blank > 0 ? (
+                    <Link
+                      href={`/seans?topicId=${t.topicId}&scope=${encodeURIComponent(`${t.topicName} · kapatma`)}`}
+                      className="tk-interactive inline-flex h-9 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
+                    >
+                      Kapat
+                    </Link>
+                  ) : null,
+              },
+            ]}
+          />
+          <p className="type-body-sm text-ink-subtle">
+            Kayıp net = yanlış×1,25 + boş. &quot;Kapat&quot; o konudan akıllı
+            tur başlatır; yanlışların zaten tekrar kuyruğunda.
           </p>
-        </Card>
+        </div>
       </div>
 
-      {/* Süre yönetimi şeridi (wireframe 11): soru sırasına göre harcanan süre */}
       <TimingStrip timing={result.timing ?? []} />
 
-      {/* Cevap incelemesi — oynatıcıyla aynı tasarım dili (kartlar kendi kabuğunu taşır) */}
-      <h2 className="mb-3 mt-8 font-heading text-lg font-bold text-ink">Cevap incelemesi</h2>
+      <h2 className="type-heading mt-8 mb-3 text-ink">Cevap incelemesi</h2>
       <ReviewList questions={result.review} showAnswers />
     </div>
   );

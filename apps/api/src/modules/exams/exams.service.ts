@@ -245,7 +245,8 @@ export class ExamsService {
     const given = existing
       ? await this.prisma.quizAnswer.findMany({
           where: { sessionId: session.id },
-          select: { questionId: true, selectedOptionId: true },
+          // flagged: "emin değilim" bayrağı kalıcı (Doc 49 S1-C) — devamda geri gelir.
+          select: { questionId: true, selectedOptionId: true, flagged: true },
         })
       : [];
 

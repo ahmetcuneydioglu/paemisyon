@@ -32,22 +32,24 @@ export function ExamBanner({ exam }: { exam: ExamListItem }) {
     <section
       aria-labelledby="deneme-serit-baslik"
       className={[
-        "mb-4 rounded-md border p-4 sm:p-5",
-        canli ? "border-live/50 bg-live/10" : "border-brand/40 bg-brand/5",
+        "mb-4 rounded-card border p-4 sm:p-5",
+        canli
+          ? "border-success/40 bg-success-soft"
+          : "border-accent/40 bg-accent-soft",
       ].join(" ")}
     >
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
         <div className="min-w-0">
           <span
             className={[
-              "tk-caption inline-flex items-center gap-1.5",
-              canli ? "text-live" : "text-brand",
+              "type-label inline-flex items-center gap-1.5",
+              canli ? "text-success-ink" : "text-accent-ink",
             ].join(" ")}
           >
             {canli && (
               <span
                 aria-hidden
-                className="inline-block size-2 rounded-full bg-live motion-safe:animate-pulse"
+                className="inline-block size-2 rounded-full bg-success motion-safe:animate-pulse"
               />
             )}
             {canli
@@ -57,14 +59,11 @@ export function ExamBanner({ exam }: { exam: ExamListItem }) {
                 : "Yaklaşan canlı deneme"}
           </span>
 
-          <h2
-            id="deneme-serit-baslik"
-            className="mt-1 font-heading text-lg font-bold leading-snug text-ink"
-          >
+          <h2 id="deneme-serit-baslik" className="type-heading mt-1 text-ink">
             {exam.title}
           </h2>
 
-          <p className="tabular mt-1 text-[13px] text-ink-soft">
+          <p className="type-body-sm tabular mt-1 text-ink-soft">
             {canli ? (
               <>
                 {exam.questionCount} soru · {exam.durationMinutes} dk ·{" "}
@@ -75,14 +74,14 @@ export function ExamBanner({ exam }: { exam: ExamListItem }) {
             ) : (
               <>
                 {formatTime(exam.startAt)}
-                {gun == null && ` · ${formatDate(exam.startAt)}`} · {exam.questionCount} soru ·{" "}
-                {exam.durationMinutes} dk
+                {gun == null && ` · ${formatDate(exam.startAt)}`} ·{" "}
+                {exam.questionCount} soru · {exam.durationMinutes} dk
               </>
             )}
           </p>
 
           {!canli && (
-            <p className="mt-1 text-[13px] font-bold text-ink">
+            <p className="type-subhead mt-1 text-ink">
               Başlamasına <Countdown target={exam.startAt} variant="inline" />
             </p>
           )}
@@ -104,7 +103,10 @@ export function ExamBanner({ exam }: { exam: ExamListItem }) {
       {exam.isPremium && (
         <p className="mt-3 text-[12px] text-ink-soft">
           Bu deneme premium üyelere özeldir.{" "}
-          <Link href="/premium" className="font-bold text-brand hover:underline">
+          <Link
+            href="/premium"
+            className="font-semibold text-accent-ink hover:underline"
+          >
             Premium&apos;a geç
           </Link>
         </p>

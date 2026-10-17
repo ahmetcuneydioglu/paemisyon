@@ -661,7 +661,9 @@ export class QuizService {
         totalQuestions: true,
         plannedDurationSeconds: true,
         questionOrder: true,
-        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+        answers: {
+          select: { questionId: true, selectedOptionId: true, isCorrect: true, flagged: true },
+        },
       },
     });
     if (!yarim) return null;
@@ -781,7 +783,9 @@ export class QuizService {
         startedAt: true,
         plannedDurationSeconds: true,
         questionOrder: true,
-        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+        answers: {
+          select: { questionId: true, selectedOptionId: true, isCorrect: true, flagged: true },
+        },
       },
     });
 
@@ -1531,7 +1535,9 @@ export class QuizService {
         questionOrder: true,
         startedAt: true,
         plannedDurationSeconds: true,
-        answers: { select: { questionId: true, selectedOptionId: true, isCorrect: true } },
+        answers: {
+          select: { questionId: true, selectedOptionId: true, isCorrect: true, flagged: true },
+        },
       },
     });
     if (!session) throw new NotFoundException('Oturum bulunamadı.');
