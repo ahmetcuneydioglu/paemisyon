@@ -254,3 +254,9 @@ dalların bekleyen commit'lerine dokunulmaz.
   `connection_limit=4`) bağlandı; paneldeki giriş sorunu kullanıcının Chrome'da oturum
   açmasından kaynaklanıyordu (panelde form girişi çalıştı). Uyarı: 657 DMK disiplin cezası
   sorusu (eşlerin çocuklarının faaliyetini bildirmeme) DÖRT şıklı — Beş Şık Kuralı listesine.
+- **Ara deploy 1 (18 Eki 2026, main b0983a5 — W-A…W-D):** Vercel ve Railway çıktı. Canlı
+  kontrol: `/giris` v3 (gövde #17161A, Instrument Sans), public sayfalar açık miras kabukta;
+  API `GET /exams/attempts/:id` kişisel deneme için geçici hesapla 200 (`isPersonal`, 3 soru,
+  1 bayrak) — canlıdaki hata kapandı. Test verisi: Lukas hesabındaki 2 tur, 3 yanlış, 3 SRS
+  kaydı, not, günün kullanım satırı silindi; `user_stats` (−3 soru, −1 oturum) ve seri
+  (3→2, son aktif gün 16 Eki) test öncesine döndürüldü. Geçici hesaplar silindi.
