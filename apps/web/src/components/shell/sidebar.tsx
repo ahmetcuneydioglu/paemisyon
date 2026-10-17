@@ -76,9 +76,7 @@ export function Sidebar() {
                   className="size-[22px] shrink-0"
                   strokeWidth={active ? 2 : 1.75}
                 />
-                <span className="max-w-full truncate xl:max-w-none">
-                  {it.label}
-                </span>
+                <span className="hidden xl:inline">{it.label}</span>
                 <LinkPendingIndicator />
               </Link>
               {active && it.children ? (
