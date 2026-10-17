@@ -23,7 +23,8 @@ eşiğini geçmediği her PR'ı düşürür.
 ## Kurallar (Doc 49 §1)
 
 - Koyu tema birincil, açık türev. `defaultScheme` JSON'da; CSS'te `data-theme` zorlar,
-  yoksa sistem tercihi izlenir.
+  yoksa sistem tercihi izlenir. `.theme-light` / `.theme-dark` sınıfları bir ALT AĞAÇTA
+  şemayı zorlar (F7 geçişinde miras public sayfalar; kalıcı tasarımda kullanılmaz).
 - Tek vurgu (`accent`). Ders rengi yok; ders farkı ikonla.
 - Durum yalnız renkle anlatılmaz. `warning` ve `inkSubtle` metin olarak yalnız 24 px+
   (large) boylarda; küçük metin için `*Ink` türevleri (`warningInk` vb.) kullanılır.

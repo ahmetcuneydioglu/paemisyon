@@ -162,3 +162,29 @@ dalların bekleyen commit'lerine dokunulmaz.
   hata). Azaltma: W-F bitene kadar `(site)` `legacy.css` ile kendi zeminini zorlar.
 - Font değişimi CLS/LCP: `next/font` + `swap` + alt yazı tipi ölçüleri; Lighthouse kapısı.
 - Vercel sessiz durma (hafıza): deploy sonrası canlı tur zorunlu.
+
+## 7. İlerleme
+
+- **W-A Token köprüsü ve tema (17 Eki 2026):** `globals.css` yeniden yazıldı — `tokens.css`
+  import (göreli yol, paket kökünden), `@theme inline` v3 köprüsü (renk/yarıçap/font/
+  spacing=4px), sekiz `type-*` utility, gövde v3 (koyu birincil), global `:focus-visible`
+  = `focusRing`. Fontlar `next/font`: Bricolage Grotesque 600/700 + Instrument Sans
+  400/500/600 (`swap`); Rubik/Open Sans kalktı. Tema: `system|light|dark`, varsayılan sistem,
+  saat tabanlı "auto" kalktı (eski kayıt sistem sayılır), ThemeProvider zamanlayıcısız.
+  **Geçiş katmanı (W-E/W-F'de silinir):** v2 Tailwind adları (`brand`, `session/live/streak/
+  atlas` → `accent`; `rounded-sm/md/lg` → control/card/sheet; `font-heading` → display) ve
+  inline stil kullanan 7 dosya için `--tk-*` → v3 eşlemesi; `.tk-caption` = label rolü;
+  miras "Denemeler" paleti ve eski desenler `legacy.css`'e taşındı; `(site)` ve girişsiz
+  `(dual)` kabuğu `theme-light legacy-light` ile açık zemini zorlar (public sayfalar W-F'ye
+  kadar açık; landing'in gece koyulaşması geçici olarak durdu). Token paketi: `build.mjs`
+  `.theme-light/.theme-dark` alt-ağaç sınıfları üretir (39 kontrast testi yeşil).
+  **Kapı:** `apps/web/scripts/tokens-check.mjs` (`npm run tokens:check`, CI web işine
+  eklendi): ham hex ve `--tk-` hata (izin listesi: logo, Google düğmesi, lig kademeleri,
+  landing degrade — W-F'de boşalır), geçiş adları ve Tailwind hazır paleti sayılır
+  (bugün 881; `--strict` W-F'de). Düzeltilen tuzak: `--color-*: initial` sıfırlaması
+  `legacy.css` @theme paletini de siliyordu → public sayfalarda metin soluk; sıfırlama
+  kaldırıldı, hazır palet disiplini kapıya taşındı.
+  **Doğrulama (worktree önizleme :3012, prod API):** `/giris` koyu (#17161A gövde, Instrument/
+  Bricolage) ve açık (`data-theme=light` → #F1EDE9); landing, `/denemeler`, `/kanun/2559…`
+  açık miras kabukta okunur; typecheck, 80 vitest, tokens:check 0 hata. Girişli kabuk
+  (Bugün vb.) W-C'de kullanıcı girişiyle bakılacak.

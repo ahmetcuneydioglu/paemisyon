@@ -1,25 +1,25 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { THEME_KEY, type ThemeMode } from "@/lib/theme";
+import { THEME_KEY, normalizeMode, type ThemeMode } from "@/lib/theme";
 import { THEME_EVENT } from "./theme-provider";
 
 const OPTIONS: { mode: ThemeMode; label: string; icon: string }[] = [
-  { mode: "auto", label: "Oto", icon: "◐" },
+  { mode: "system", label: "Sistem", icon: "◐" },
   { mode: "light", label: "Açık", icon: "☀" },
   { mode: "dark", label: "Koyu", icon: "☾" },
 ];
 
 /**
- * Tema geçişi (Doc 26): Oto (gündüz/gece) · Açık · Koyu. Seçim localStorage'da;
- * ThemeProvider anında uygular. Varsayılan Oto.
+ * Tema geçişi (Doc 49/11 karar 1): Sistem · Açık · Koyu. Seçim localStorage'da;
+ * ThemeProvider anında uygular. Varsayılan Sistem (koyu birincil tasarım).
  */
 export function ThemeToggle({ compact = false }: { compact?: boolean }) {
-  const [mode, setMode] = useState<ThemeMode>("auto");
+  const [mode, setMode] = useState<ThemeMode>("system");
 
   useEffect(() => {
     const t = setTimeout(
-      () => setMode((localStorage.getItem(THEME_KEY) as ThemeMode | null) ?? "auto"),
+      () => setMode(normalizeMode(localStorage.getItem(THEME_KEY))),
       0,
     );
     return () => clearTimeout(t);
@@ -44,10 +44,12 @@ export function ThemeToggle({ compact = false }: { compact?: boolean }) {
           role="radio"
           aria-checked={mode === o.mode}
           onClick={() => pick(o.mode)}
-          title={o.mode === "auto" ? "Otomatik — gündüz açık, gece koyu" : o.label}
+          title={o.mode === "system" ? "Cihaz tercihini izle" : o.label}
           className={[
             "tk-interactive cursor-pointer rounded-full px-2 py-1 text-[12px] font-bold",
-            mode === o.mode ? "bg-brand/10 text-brand" : "text-ink-soft hover:text-ink",
+            mode === o.mode
+              ? "bg-accent-soft text-accent-ink"
+              : "text-ink-soft hover:text-ink",
           ].join(" ")}
         >
           <span aria-hidden>{o.icon}</span>

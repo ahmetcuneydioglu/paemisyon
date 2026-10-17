@@ -1,398 +1,193 @@
 @import "tailwindcss";
+/* Tasarım token'ları v3 "Nöbet" — TEK KAYNAK packages/tokens/design-tokens.json
+   (Doc 49 F0 sözleşmesi, F7 W-A). Değer burada yazılmaz; JSON'da değişir,
+   `node packages/tokens/build.mjs` üretir. */
+@import "../../../../packages/tokens/build/tokens.css";
+/* Miras palet ve desenler — W-F sonunda bu satır ve dosya silinir. */
+@import "./legacy.css";
 
-/* ─────────────────────────────────────────────────────────────
-   Paemisyon Denemeler — tasarım token'ları
-   Kaynak: eski tema styles.css (Doc 18 §4 sadakat planı).
-   Renk/tipografi/buton dili birebir korunur.
-───────────────────────────────────────────────────────────── */
-@theme {
-  --color-navy: #173f71;        /* birincil: buton, thead, başlık bandı */
-  --color-navy-dark: #052c5c;   /* nav bar, head2 bandı */
-  --color-navy-deep: #082243;   /* puan kutusu */
-  --color-green: #60b500;       /* doğru / başlat */
-  --color-green-btn2: #6b9b26;
-  --color-red: #ce3d3d;         /* yanlış / bitir */
-  --color-yellow: #ffcb08;      /* sayaç pili / boş */
-  --color-orange: #de8822;      /* btn2 turuncu */
-  --color-blue-blank: #5792ff;  /* boş cevap metni */
-  --color-grey-bg: #f7f7f7;     /* zemin / zebra */
-  --color-border: #e8e8e8;
-  --color-border-soft: #efeeee;
-  --color-text: #444444;
-
-  --font-heading: var(--font-rubik);
-  --font-body: var(--font-open-sans);
-
-  --shadow-card: 0px 5px 14px 0px rgba(24, 23, 28, 0.05);
-}
-
-/* ─────────────────────────────────────────────────────────────
-   Yeni tasarım dili token'ları (Doc 26 §3) — kaynak:
-   packages/tokens/design-tokens.json. YENİ ekranlar (koç, seans,
-   atlas, performans) bunları kullanır; yukarıdaki eski palet
-   "Denemeler mirası"dır ve kademeli emekli edilir.
-───────────────────────────────────────────────────────────── */
+/* Fontlar next/font ile paketlenir (layout.tsx); token ailesi o değişkenlere bağlanır. */
 :root {
-  --tk-brand: #1b3a6b;
-  --tk-surface: #ffffff;
-  --tk-surface-alt: #f4f6f9;
-  --tk-ink: #1a1c22;
-  --tk-ink-soft: #5b6070;
-  --tk-line: #e4e7ec;
-  --tk-success: #2e7d5b;
-  --tk-warning: #b98900;
-  --tk-danger: #c0392b;
-  --tk-accent-session: #378add;
-  --tk-accent-live: #1d9e75;
-  --tk-accent-streak: #854f0b;
-  --tk-accent-atlas: #534ab7;
-  --tk-radius-sm: 8px;
-  --tk-radius-md: 12px;
-  --tk-radius-lg: 20px;
-  --tk-motion-quick: 150ms;
-  --tk-motion-standard: 250ms;
-  --tk-ease-standard: cubic-bezier(0.65, 0, 0.35, 1);
-}
-/* Koyu tema token'ları. Tema ThemeProvider tarafından <html data-theme> ile
-   sürülür (gündüz/gece otomatik + manuel geçiş, Doc 26 dark-mode kuralı).
-   Media query yalnız JS öncesi / JS'siz taban çizgisidir. */
-:root[data-theme="dark"],
-:root[data-theme="dark"] .tk-scope {
-  --tk-brand: #85b7eb;
-  --tk-surface: #15171c;
-  --tk-surface-alt: #1d2027;
-  --tk-ink: #eceef2;
-  --tk-ink-soft: #9ba1af;
-  --tk-line: #2c3038;
-  --tk-success: #5dcaa5;
-  --tk-warning: #fac775;
-  --tk-danger: #e08578;
-  --tk-accent-session: #85b7eb;
-  --tk-accent-live: #5dcaa5;
-  --tk-accent-streak: #fac775;
-  --tk-accent-atlas: #cecbf6;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --tk-brand: #85b7eb;
-    --tk-surface: #15171c;
-    --tk-surface-alt: #1d2027;
-    --tk-ink: #eceef2;
-    --tk-ink-soft: #9ba1af;
-    --tk-line: #2c3038;
-    --tk-success: #5dcaa5;
-    --tk-warning: #fac775;
-    --tk-danger: #e08578;
-    --tk-accent-session: #85b7eb;
-    --tk-accent-live: #5dcaa5;
-    --tk-accent-streak: #fac775;
-    --tk-accent-atlas: #cecbf6;
-  }
-}
-/* Koyu tema YALNIZ tk-scope alt ağaçlarına uygulanır; her tk-scope kabuğu kendi
-   zemin/metin rengini kurar (.tk-scope). Gövdeye global koyu renk BASMAYIZ:
-   miras (eski palet) sayfalar bg-white kartlar + koyu metin kullanır; global
-   açık metin bunları beyaz üstünde okunmaz (silik) yapardı — bildirilen hata buydu.
-   Böylece miras/public sayfalar açık temada okunur kalır; tk-scope kabuklar
-   (landing, app) tam ekran olduğundan kendi koyu zeminlerini kaplar. */
-
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --tk-motion-quick: 0ms;
-    --tk-motion-standard: 0ms;
-  }
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-body: var(--font-instrument), system-ui, sans-serif;
 }
 
 /* ─────────────────────────────────────────────────────────────
-   Token → Tailwind köprüsü (Doc 26 §3 → Doc 27 W1).
-   Yeni ekranlar yalnız bu adları kullanır: bg-surface, text-ink,
-   border-line, text-brand, bg-session… Ham hex YASAK.
+   Token → Tailwind köprüsü (inline: utility doğrudan :root değişkenini okur,
+   tema geçişi CSS'te kalır). Yeni ekranlar YALNIZ bu adları kullanır:
+   bg-bg · bg-surface · bg-surface-alt · text-ink · text-ink-soft · text-ink-subtle
+   border-line · bg-accent · bg-accent-soft · text-accent-ink · text-on-accent
+   success/warning/danger (+ -soft, -ink) · ring-focus-ring
+   rounded-control · rounded-card · rounded-sheet · rounded-pill
+   font-display · font-body · type-* (aşağıda). Ham hex YASAK (tokens:check).
 ───────────────────────────────────────────────────────────── */
 @theme inline {
-  --color-brand: var(--tk-brand);
-  --color-surface: var(--tk-surface);
-  --color-surface-alt: var(--tk-surface-alt);
-  --color-ink: var(--tk-ink);
-  --color-ink-soft: var(--tk-ink-soft);
-  --color-line: var(--tk-line);
-  --color-success: var(--tk-success);
-  --color-warning: var(--tk-warning);
-  --color-danger: var(--tk-danger);
-  --color-session: var(--tk-accent-session);
-  --color-live: var(--tk-accent-live);
-  --color-streak: var(--tk-accent-streak);
-  --color-atlas: var(--tk-accent-atlas);
-  --radius-sm: var(--tk-radius-sm);
-  --radius-md: var(--tk-radius-md);
-  --radius-lg: var(--tk-radius-lg);
+  /* Tailwind'in hazır paleti (red-500 vb.) sıfırlanmaz — sıfırlama legacy.css'in
+     @theme paletini de siliyordu (public sayfalarda metin soluk kaldı, 17 Eki).
+     Hazır palet kullanımı tokens:check'te HATADIR. */
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-alt: var(--color-surface-alt);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-subtle: var(--color-ink-subtle);
+  --color-line: var(--color-line);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-ink: var(--color-accent-ink);
+  --color-on-accent: var(--color-on-accent);
+  --color-success: var(--color-success);
+  --color-success-soft: var(--color-success-soft);
+  --color-success-ink: var(--color-success-ink);
+  --color-warning: var(--color-warning);
+  --color-warning-soft: var(--color-warning-soft);
+  --color-warning-ink: var(--color-warning-ink);
+  --color-danger: var(--color-danger);
+  --color-danger-soft: var(--color-danger-soft);
+  --color-danger-ink: var(--color-danger-ink);
+  --color-focus-ring: var(--color-focus-ring);
+
+  --radius-control: var(--radius-control);
+  --radius-card: var(--radius-card);
+  --radius-sheet: var(--radius-sheet);
+  --radius-pill: var(--radius-pill);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --spacing: var(--space-1); /* 4px taban — Tailwind p-4 = 16px = space-4 */
+
+  --ease-enter: var(--motion-enter-ease);
+  --ease-exit: var(--motion-exit-ease);
+
+  /* ── GEÇİŞ TAKMA ADLARI (v2 → v3). W-E/W-F'de kullanım bitince SİLİNİR.
+     Dört vurgu tek vurguya iner (karar 3); brand = accent; eski yarıçaplar. ── */
+  --color-brand: var(--color-accent);
+  --color-session: var(--color-accent);
+  --color-live: var(--color-accent);
+  --color-streak: var(--color-accent);
+  --color-atlas: var(--color-accent);
+  --radius-sm: var(--radius-control);
+  --radius-md: var(--radius-card);
+  --radius-lg: var(--radius-sheet);
+  --font-heading: var(--font-display);
 }
 
-/* Yeni ekran taban yüzeyi: app kabuğu koyu temada da doğru zemini alır. */
-.tk-scope {
-  background: var(--tk-surface-alt);
-  color: var(--tk-ink);
-  font-size: 15px;
+/* Tipografi rolleri — Expo `AppText variant` ile aynı sekiz ad (Doc 49/05). */
+@utility type-display {
+  font: var(--type-display-weight)
+    var(--type-display-size)/var(--type-display-line) var(--font-display);
+  letter-spacing: var(--type-display-tracking);
 }
-.tk-scope :focus-visible {
-  outline: 2px solid var(--tk-brand);
+@utility type-title {
+  font: var(--type-title-weight) var(--type-title-size)/var(--type-title-line)
+    var(--font-display);
+  letter-spacing: var(--type-title-tracking);
+}
+@utility type-heading {
+  font: var(--type-heading-weight)
+    var(--type-heading-size)/var(--type-heading-line) var(--font-display);
+  letter-spacing: var(--type-heading-tracking);
+}
+@utility type-subhead {
+  font: var(--type-subhead-weight)
+    var(--type-subhead-size)/var(--type-subhead-line) var(--font-body);
+  letter-spacing: var(--type-subhead-tracking);
+}
+@utility type-body {
+  font: var(--type-body-weight) var(--type-body-size)/var(--type-body-line)
+    var(--font-body);
+  letter-spacing: var(--type-body-tracking);
+}
+@utility type-body-sm {
+  font: var(--type-body-sm-weight)
+    var(--type-body-sm-size)/var(--type-body-sm-line) var(--font-body);
+  letter-spacing: var(--type-body-sm-tracking);
+}
+@utility type-label {
+  font: var(--type-label-weight) var(--type-label-size)/var(--type-label-line)
+    var(--font-body);
+  letter-spacing: var(--type-label-tracking);
+  text-transform: uppercase;
+}
+@utility type-stat {
+  font: var(--type-stat-weight) var(--type-stat-size)/var(--type-stat-line)
+    var(--font-display);
+  letter-spacing: var(--type-stat-tracking);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Taban ── */
+html {
+  background: var(--color-bg);
+}
+body {
+  font: var(--type-body-weight) var(--type-body-size)/var(--type-body-line)
+    var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
   border-radius: 4px;
 }
-.tk-scope .tabular { font-variant-numeric: tabular-nums; }
-
-/* caption stili (Doc 26 tipografi: 11/500 UPPERCASE %6 tracking)
-   `@layer components` ŞART: Tailwind utility'leri `@layer utilities` içinde yaşar
-   ve KATMANSIZ bir kural, özgüllüğünden bağımsız olarak her katmanlı kuralı yener.
-   Bu kural katmansız kaldığı sürece yanına yazılan `text-brand`/`text-atlas`/
-   `text-surface` sessizce yutuluyordu — ölçülen vaka: bg-brand üstünde text-surface
-   rozet, kontrast 1.23:1 (WCAG AA 4.5:1). Katmana alınınca utility'ler kazanır;
-   renk verilmeyen .tk-caption yine ink-soft kalır. */
-@layer components {
-  .tk-caption {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--tk-ink-soft);
-  }
+.tabular {
+  font-variant-numeric: tabular-nums;
 }
 
-/* Kart geçişleri — quick geri bildirim (Doc 26 §3.4) */
+/* ── Geçiş yardımcıları (v2 adları; W-C/W-E'de kaldırılır) ── */
+/* v2 `--tk-*` değişkenleri: inline stil kullanan 7 dosya (law-reader, leaderboard,
+   exam-center, plan-card, question-of-day, kanun public) W-E/W-F'de v3 sınıflarına
+   geçene dek burada v3'e eşlenir. tokens:check bunları "geçiş" sayar. */
+:root {
+  --tk-brand: var(--color-accent);
+  --tk-surface: var(--color-surface);
+  --tk-surface-alt: var(--color-surface-alt);
+  --tk-ink: var(--color-ink);
+  --tk-ink-soft: var(--color-ink-soft);
+  --tk-line: var(--color-line);
+  --tk-success: var(--color-success);
+  --tk-warning: var(--color-warning);
+  --tk-danger: var(--color-danger);
+  --tk-accent-session: var(--color-accent);
+  --tk-accent-live: var(--color-accent);
+  --tk-accent-streak: var(--color-accent);
+  --tk-accent-atlas: var(--color-accent);
+  --tk-radius-sm: var(--radius-control);
+  --tk-radius-md: var(--radius-card);
+  --tk-radius-lg: var(--radius-sheet);
+  --tk-motion-quick: var(--motion-exit-ms);
+  --tk-motion-standard: var(--motion-enter-ms);
+  --tk-ease-standard: var(--motion-enter-ease);
+}
+/* .tk-scope artık zemin KURMAZ: gövde v3 zeminini taşır. Sınıf kaldırılana dek boş. */
+.tk-scope {
+}
+@layer components {
+  /* v2 caption → v3 label rolü */
+  .tk-caption {
+    font: var(--type-label-weight) var(--type-label-size)/var(--type-label-line)
+      var(--font-body);
+    letter-spacing: var(--type-label-tracking);
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+  }
+}
 .tk-interactive {
   transition:
-    background-color var(--tk-motion-quick) ease-out,
-    border-color var(--tk-motion-quick) ease-out,
-    color var(--tk-motion-quick) ease-out,
-    transform var(--tk-motion-quick) ease-out;
-}
-
-/* Icomoon — eski sitenin ikon fontu, birebir aynı glifler */
-@font-face {
-  font-family: "icomoon";
-  src: url("/fonts/icomoon/icomoon.woff") format("woff"),
-       url("/fonts/icomoon/icomoon.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^="icon-"], [class*=" icon-"] {
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-.icon-test:before { content: "\e900"; }
-.icon-calendar:before { content: "\e901"; }
-.icon-null:before { content: "\e902"; }
-.icon-information:before { content: "\e903"; }
-.icon-email:before { content: "\e904"; }
-.icon-fast-forward:before { content: "\e905"; }
-.icon-lock:before { content: "\e906"; }
-.icon-call:before { content: "\e907"; }
-.icon-down-arrow:before { content: "\e908"; }
-.icon-photo:before { content: "\e909"; }
-.icon-instagram:before { content: "\e90a"; }
-.icon-user:before { content: "\e90b"; }
-.icon-enter:before { content: "\e90c"; }
-.icon-question:before { content: "\e90d"; }
-.icon-menu:before { content: "\e90e"; }
-.icon-timer:before { content: "\e90f"; }
-.icon-add-user:before { content: "\e910"; }
-.icon-x:before { content: "\e911"; }
-
-/* ── Taban ── */
-body {
-  font-family: var(--font-body), system-ui, sans-serif;
-  font-size: 14px;
-  color: var(--color-text);
-  background: #fff;
-}
-h1, h2, h3, h4, .font-heading {
-  font-family: var(--font-heading), system-ui, sans-serif;
-}
-
-/* ── Eski tasarım dilinin çekirdek desenleri ── */
-
-/* Tam genişlik lacivert başlık bandı (eski .head2) */
-.head2 {
-  background: var(--color-navy-dark);
-  color: #fff;
-  text-align: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 18px;
-  padding: 10px 15px;
-}
-
-/* İkonlu büyük ortalanmış başlık (eski .head3) */
-.head3 {
-  text-align: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--color-text);
-}
-.head3 i {
-  display: block;
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: var(--color-navy);
-}
-
-/* Kart (eski .content) */
-.card-content {
-  background: #fff;
-  box-shadow: var(--shadow-card);
-  padding: 30px 70px;
-}
-@media (max-width: 768px) { .card-content { padding: 20px 15px; } }
-
-/* Köşesiz, hover'da renk tersine dönen butonlar (eski .btn) */
-.btn-old {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-  padding: 10px 24px;
-  border-radius: 0;
-  cursor: pointer;
-  text-align: center;
-  transition: background .15s, color .15s;
-}
-.btn-old-navy  { background: var(--color-navy);  border: 3px solid var(--color-navy); }
-.btn-old-navy:hover  { background: transparent; color: var(--color-navy); }
-.btn-old-green { background: var(--color-green); border: 3px solid var(--color-green); }
-.btn-old-green:hover { background: transparent; color: var(--color-green); }
-.btn-old-red   { background: var(--color-red);   border: 3px solid var(--color-red); }
-.btn-old-red:hover   { background: transparent; color: var(--color-red); }
-
-/* Tablo aksiyon butonları (eski .btn2) */
-.btn2 {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 13px;
-  color: #fff;
-  padding: 3px 20px;
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-  transition: border-radius .2s, box-shadow .2s;
-}
-.btn2:hover { border-radius: 5px; box-shadow: 0 0 5px rgba(24,23,28,.5); }
-.btn2-orange { background: var(--color-orange); }
-.btn2-green  { background: var(--color-green-btn2); }
-.btn2-red    { background: var(--color-red); }
-.btn2[aria-disabled="true"] { opacity: .85; cursor: default; }
-.btn2[aria-disabled="true"]:hover { border-radius: 0; box-shadow: none; }
-
-/* Deneme listesi tablosu (eski #exams table) */
-.exam-table { width: 100%; border-collapse: collapse; }
-.exam-table thead th {
-  background: var(--color-navy);
-  color: #fff;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 14px;
-  padding: 10px 12px;
-  text-align: left;
-}
-.exam-table tbody td { padding: 10px 12px; font-size: 14px; color: var(--color-text); }
-.exam-table tbody tr:nth-child(odd) { background: var(--color-grey-bg); }
-.exam-table tbody td:last-child { text-align: right; }
-
-/* Mobil: tablo → blok düzeni (eski davranış + data-label düzeltmesi) */
-@media (max-width: 768px) {
-  .exam-table thead { display: none; }
-  .exam-table tbody tr { display: block; padding: 10px 0; border-bottom: 1px solid var(--color-border); }
-  .exam-table tbody td { display: block; text-align: left !important; padding: 4px 12px; }
-  .exam-table tbody td[data-label]:before {
-    content: attr(data-label) ": ";
-    font-family: var(--font-heading);
-    font-weight: 700;
-  }
-}
-
-/* Sarı sayaç pili (eski #exam .bottom timer) */
-.timer-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--color-yellow);
-  color: #000;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 26px;
-  padding: 6px 18px;
-}
-
-/* ── Sınav ekranı (eski #exam — Doc 18 §4.1) ── */
-/* Kağıt/kitapçık hissi: 145KB tekrar eden gölge PNG'si yerine saf CSS yükselti
-   + yumuşak kenar gölgeleri (0 bayt, retina-net). */
-.exam-panel {
-  background:
-    linear-gradient(to right, rgba(16, 24, 40, 0.05), transparent 28px),
-    linear-gradient(to left, rgba(16, 24, 40, 0.05), transparent 28px),
-    #fff;
-  border-radius: 10px;
-  box-shadow:
-    0 1px 2px rgba(16, 24, 40, 0.06),
-    0 12px 32px -14px rgba(16, 24, 40, 0.18);
-}
-.exam-columns { position: relative; }
-@media (min-width: 768px) {
-  /* Ortadaki 2px dikey ayraç (eski .quest divider) */
-  .exam-columns:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--color-text);
-  }
-}
-
-.question-block { margin-bottom: 28px; }
-.question-block > p { color: #000; font-size: 14px; margin-bottom: 10px; }
-
-/* Şık barı (eski label bar) */
-.option-bar {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  width: 100%;
-  text-align: left;
-  background: rgba(246, 246, 246, 0.45);
-  border: 1px solid var(--color-border-soft);
-  padding: 9px;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: var(--color-text);
-  cursor: pointer;
-  transition: background .1s, color .1s;
-}
-.option-bar b { min-width: 18px; }
-/* Hover yalnız etkileşimli sınav butonlarında — inceleme (statik div) barları hover almaz. */
-button.option-bar:hover:not(:disabled) { background: #ececec; }
-.option-bar[aria-checked="true"] { background: #5f5f5f; color: #fff; border-color: #5f5f5f; }
-/* İnceleme durumları (sıralama önemli: aria-checked'i ezmeli) */
-.option-bar.opt-chosen { background: #d8d8d8; color: var(--color-text); border-color: #cfcfcf; }
-.option-bar.opt-true  { background: var(--color-green); color: #fff; border-color: var(--color-green); }
-.option-bar.opt-false { background: var(--color-red);   color: #fff; border-color: var(--color-red); }
-.option-bar--static { cursor: default; }
-.option-bar:disabled { cursor: default; }
-
-/* Sabit alt bar (eski #exam .bottom) */
-.exam-bottom {
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  z-index: 40;
-  background: #fff;
-  border-top: 1px solid var(--color-border);
-  box-shadow: 0 -4px 12px rgba(24, 23, 28, 0.08);
+    background-color var(--motion-enter-ms) var(--motion-enter-ease),
+    border-color var(--motion-enter-ms) var(--motion-enter-ease),
+    color var(--motion-enter-ms) var(--motion-enter-ease),
+    transform var(--motion-enter-ms) var(--motion-enter-ease);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -400,44 +195,83 @@ button.option-bar:hover:not(:disabled) { background: #ececec; }
    Hepsi prefers-reduced-motion altında devre dışıdır.
 ───────────────────────────────────────────────────────────── */
 @keyframes lb-row-in {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes lb-xp-fill {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 @keyframes lb-halo-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 208, 92, 0.0); }
-  50%      { box-shadow: 0 0 22px 4px rgba(255, 208, 92, 0.45); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 208, 92, 0);
+  }
+  50% {
+    box-shadow: 0 0 22px 4px rgba(255, 208, 92, 0.45);
+  }
 }
 @keyframes lb-crown-float {
-  0%, 100% { transform: translate(-50%, 0); }
-  50%      { transform: translate(-50%, -3px); }
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -3px);
+  }
 }
 @keyframes lb-shimmer-move {
-  from { background-position: -200% 0; }
-  to   { background-position: 200% 0; }
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
 }
 
-.lb-row { animation: lb-row-in 320ms var(--tk-ease-standard) both; }
-.lb-xp-fill { transform-origin: left center; animation: lb-xp-fill 900ms var(--tk-ease-standard) both; }
-.lb-halo { animation: lb-halo-pulse 2.6s ease-in-out infinite; }
-.lb-crown { animation: lb-crown-float 2.6s ease-in-out infinite; }
+.lb-row {
+  animation: lb-row-in 320ms var(--motion-enter-ease) both;
+}
+.lb-xp-fill {
+  transform-origin: left center;
+  animation: lb-xp-fill 900ms var(--motion-enter-ease) both;
+}
+.lb-halo {
+  animation: lb-halo-pulse 2.6s ease-in-out infinite;
+}
+.lb-crown {
+  animation: lb-crown-float 2.6s ease-in-out infinite;
+}
 .lb-shimmer {
   background-image: linear-gradient(
     90deg,
-    color-mix(in srgb, var(--tk-ink) 6%, transparent) 25%,
-    color-mix(in srgb, var(--tk-ink) 12%, transparent) 37%,
-    color-mix(in srgb, var(--tk-ink) 6%, transparent) 63%
+    color-mix(in srgb, var(--color-ink) 6%, transparent) 25%,
+    color-mix(in srgb, var(--color-ink) 12%, transparent) 37%,
+    color-mix(in srgb, var(--color-ink) 6%, transparent) 63%
   );
   background-size: 200% 100%;
   animation: lb-shimmer-move 1.4s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lb-row, .lb-xp-fill, .lb-halo, .lb-crown, .lb-shimmer {
+  .lb-row,
+  .lb-xp-fill,
+  .lb-halo,
+  .lb-crown,
+  .lb-shimmer {
     animation: none;
   }
-  .lb-xp-fill { transform: scaleX(1); }
+  .lb-xp-fill {
+    transform: scaleX(1);
+  }
 }

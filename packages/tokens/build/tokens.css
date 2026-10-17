@@ -1,6 +1,7 @@
 /* ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v3.0.0, Nöbet). Yenile: node packages/tokens/build.mjs
  */
-/* Varsayılan şema: dark. data-theme="light|dark" zorlar; yoksa sistem tercihi. */
+/* Varsayılan şema: dark. data-theme="light|dark" zorlar; yoksa sistem tercihi.
+   .theme-light / .theme-dark sınıfları bir alt ağaçta şemayı zorlar (F7 geçişi: miras public sayfalar). */
 :root {
   --color-bg: #17161A;
   --color-surface: #221F25;
@@ -88,7 +89,8 @@
   --font-body: "Instrument Sans", system-ui, sans-serif;
   color-scheme: dark;
 }
-:root[data-theme="light"] {
+:root[data-theme="light"],
+.theme-light {
   --color-bg: #F1EDE9;
   --color-surface: #FFFFFF;
   --color-surface-alt: #E8E2DC;
@@ -111,6 +113,31 @@
   --color-danger-ink: #8E2E25;
   --color-focus-ring: #B5532E;
   color-scheme: light;
+}
+/* Alt ağaçta varsayılan şemayı geri zorlamak için (ör. miras sayfalar içinde). */
+.theme-dark {
+  --color-bg: #17161A;
+  --color-surface: #221F25;
+  --color-surface-alt: #2C2830;
+  --color-ink: #F4EEE6;
+  --color-ink-soft: #A79F96;
+  --color-ink-subtle: #7C746C;
+  --color-line: #34303A;
+  --color-accent: #E3804F;
+  --color-accent-soft: #3A281F;
+  --color-accent-ink: #F2A47C;
+  --color-on-accent: #17161A;
+  --color-success: #8FB39A;
+  --color-success-soft: #243029;
+  --color-success-ink: #A6CDB1;
+  --color-warning: #E0B15A;
+  --color-warning-soft: #3A2F1C;
+  --color-warning-ink: #F0CB7E;
+  --color-danger: #E07A6B;
+  --color-danger-soft: #3F2422;
+  --color-danger-ink: #F3A396;
+  --color-focus-ring: #F2A47C;
+  color-scheme: dark;
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {

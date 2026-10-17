@@ -50,7 +50,8 @@ function css() {
     .join('\n');
   const dark = tokens.identity.defaultScheme === 'dark';
   return `${HEADER('/*')} */
-/* Varsayılan şema: ${tokens.identity.defaultScheme}. data-theme="light|dark" zorlar; yoksa sistem tercihi. */
+/* Varsayılan şema: ${tokens.identity.defaultScheme}. data-theme="light|dark" zorlar; yoksa sistem tercihi.
+   .theme-light / .theme-dark sınıfları bir alt ağaçta şemayı zorlar (F7 geçişi: miras public sayfalar). */
 :root {
 ${vars(tokens.identity.defaultScheme)}
 ${type}
@@ -65,9 +66,15 @@ ${motion}
   --font-body: "${tokens.typography.family.body.name}", ${tokens.typography.family.body.fallback};
   color-scheme: ${tokens.identity.defaultScheme};
 }
-:root[data-theme="${dark ? 'light' : 'dark'}"] {
+:root[data-theme="${dark ? 'light' : 'dark'}"],
+.theme-${dark ? 'light' : 'dark'} {
 ${vars(dark ? 'light' : 'dark')}
   color-scheme: ${dark ? 'light' : 'dark'};
+}
+/* Alt ağaçta varsayılan şemayı geri zorlamak için (ör. miras sayfalar içinde). */
+.theme-${tokens.identity.defaultScheme} {
+${vars(tokens.identity.defaultScheme)}
+  color-scheme: ${tokens.identity.defaultScheme};
 }
 @media (prefers-color-scheme: ${dark ? 'light' : 'dark'}) {
   :root:not([data-theme="${tokens.identity.defaultScheme}"]) {

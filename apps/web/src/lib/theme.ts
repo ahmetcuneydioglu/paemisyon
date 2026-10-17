@@ -1,23 +1,22 @@
 /**
- * Tema modu: "auto" (gündüz/gece — saate göre), "light", "dark".
- * Varsayılan "auto": tüm cihazlarda tutarlı, gündüz açık / gece koyu.
+ * Tema modu (Doc 49/11 karar 1): "system" (cihaz tercihi — varsayılan; koyu birincil
+ * tasarım, tokens.css `prefers-color-scheme` ile), "light", "dark" (kalıcı seçim).
+ * Eski "auto" (saate göre) kaldırıldı; kayıtlı "auto" sistem sayılır.
  */
-export type ThemeMode = "auto" | "light" | "dark";
+export type ThemeMode = "system" | "light" | "dark";
 export const THEME_KEY = "tk-theme";
 
-/** Gece penceresi: 19.00–07.00 arası koyu (yerel saat). */
-export function isNightHour(d = new Date()): boolean {
-  const h = d.getHours();
-  return h >= 19 || h < 7;
+export function normalizeMode(raw: string | null | undefined): ThemeMode {
+  return raw === "light" || raw === "dark" ? raw : "system";
 }
 
-export function resolveTheme(mode: ThemeMode): "light" | "dark" {
-  if (mode === "light" || mode === "dark") return mode;
-  return isNightHour() ? "dark" : "light";
+/** data-theme değeri: açık seçimde zorlanır, sistemde kaldırılır (CSS medya sorgusu karar verir). */
+export function themeAttribute(mode: ThemeMode): "light" | "dark" | null {
+  return mode === "system" ? null : mode;
 }
 
 /**
- * <head>'e gömülecek boya-öncesi script (flash yok). ThemeProvider'dan bağımsız
- * çalışır; localStorage'daki modu okuyup <html data-theme> ayarlar.
+ * <head>'e gömülecek boya-öncesi script (flash yok). localStorage'daki modu okur;
+ * light/dark ise <html data-theme> ayarlar, sistemde özniteliği kaldırır.
  */
-export const themeInitScript = `(function(){try{var m=localStorage.getItem('${THEME_KEY}')||'auto';var t;if(m==='light'||m==='dark'){t=m}else{var h=new Date().getHours();t=(h>=19||h<7)?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){}})();`;
+export const themeInitScript = `(function(){try{var m=localStorage.getItem('${THEME_KEY}');var d=document.documentElement;if(m==='light'||m==='dark'){d.dataset.theme=m}else{delete d.dataset.theme}}catch(e){}})();`;

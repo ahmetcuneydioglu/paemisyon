@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "tokens:check": "node scripts/tokens-check.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^11.8.0",

@@ -16,7 +16,7 @@ export default async function DualLayout({
 
   if (!user) {
     return (
-      <div className="flex min-h-screen flex-col">
+      <div className="theme-light legacy-light flex min-h-screen flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
