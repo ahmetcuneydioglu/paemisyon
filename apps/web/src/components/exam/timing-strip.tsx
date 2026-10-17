@@ -19,7 +19,9 @@ const statusTone: Record<TimingCell["status"], string> = {
  * suçlama yok). Süre verisi olmayan eski denemelerde dürüst boş durum.
  */
 export function TimingStrip({ timing }: { timing: TimingCell[] }) {
-  const timed = timing.filter((t) => t.timeSpentMs != null && t.timeSpentMs > 0);
+  const timed = timing.filter(
+    (t) => t.timeSpentMs != null && t.timeSpentMs > 0,
+  );
   if (timing.length === 0) return null;
 
   if (timed.length === 0) {
@@ -27,8 +29,8 @@ export function TimingStrip({ timing }: { timing: TimingCell[] }) {
       <Card className="mt-4">
         <CardTitle>Süre yönetimi</CardTitle>
         <p className="mt-1 text-[14px] text-ink-soft">
-          Bu denemede soru başına süre verisi yok — bundan sonraki denemelerde otomatik
-          toplanır ve şerit burada oluşur.
+          Bu denemede soru başına süre verisi yok — bundan sonraki denemelerde
+          otomatik toplanır ve şerit burada oluşur.
         </p>
       </Card>
     );
@@ -47,7 +49,7 @@ export function TimingStrip({ timing }: { timing: TimingCell[] }) {
     <Card className="mt-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <CardTitle>Süre yönetimi</CardTitle>
-        <span className="tabular tk-caption">
+        <span className="tabular type-label text-ink-subtle">
           soru başına ort. {sec(avg)}sn · {timed.length} soruda ölçüldü
         </span>
       </div>
@@ -66,7 +68,11 @@ export function TimingStrip({ timing }: { timing: TimingCell[] }) {
             <div
               key={t.order}
               title={`Soru ${t.order}: ${t.timeSpentMs != null ? `${sec(t.timeSpentMs)}sn` : "ölçüm yok"} · ${
-                t.status === "correct" ? "doğru" : t.status === "wrong" ? "yanlış" : "boş"
+                t.status === "correct"
+                  ? "doğru"
+                  : t.status === "wrong"
+                    ? "yanlış"
+                    : "boş"
               }`}
               className={[
                 "min-w-[7px] flex-1 rounded-t-sm",
@@ -79,14 +85,17 @@ export function TimingStrip({ timing }: { timing: TimingCell[] }) {
         })}
       </div>
       <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
-        <p className="tk-caption">
-          <span className="text-success">■ doğru</span> · <span className="text-danger">■ yanlış</span>{" "}
-          · ■ boş · <span className="text-warning">□ ortalamanın 1,5 katından yavaş</span>
+        <p className="type-label text-ink-subtle">
+          <span className="text-success">■ doğru</span> ·{" "}
+          <span className="text-danger">■ yanlış</span> · ■ boş ·{" "}
+          <span className="text-warning">□ ortalamanın 1,5 katından yavaş</span>
         </p>
         {slow.length > 0 && (
           <p className="tabular text-[12px] text-ink-soft">
             En çok zaman yiyenler:{" "}
-            {slow.map((t) => `S${t.order} (${sec(t.timeSpentMs!)}sn)`).join(" · ")}
+            {slow
+              .map((t) => `S${t.order} (${sec(t.timeSpentMs!)}sn)`)
+              .join(" · ")}
           </p>
         )}
       </div>

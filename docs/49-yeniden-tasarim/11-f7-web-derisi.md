@@ -260,3 +260,21 @@ dalların bekleyen commit'lerine dokunulmaz.
   1 bayrak) — canlıdaki hata kapandı. Test verisi: Lukas hesabındaki 2 tur, 3 yanlış, 3 SRS
   kaydı, not, günün kullanım satırı silindi; `user_stats` (−3 soru, −1 oturum) ve seri
   (3→2, son aktif gün 16 Eki) test öncesine döndürüldü. Geçici hesaplar silindi.
+- **W-E Çalışma sayfaları (18 Eki 2026):** Paylaşılan parçalar kite indi (`MasteryBar`,
+  `HeatBar`, `ConquestGrid`, `SegmentedControl` [accent prop'u yok sayılır], `SelectableCard`,
+  `PlanCard`, `PremiumBadge`→Badge, `RankInsignia`, `PageLoading`→Skeleton, `SourceTag`→Badge).
+  Kütüphane ana (üç kapı tek vurgu + ikon, ders kartları Badge/MasteryBar), ders detay
+  (`DataTable`), Yanlışlarım/Favorilerim (`DataTable`/`EmptyState`), atlas kartları/seçici
+  (`atlas` varyantı kalktı), Mevzuat L4 (kanun/madde çalışma alanları: lucide fetih
+  işaretleri, Breadcrumb, Badge lejant; okuyucu `law-reader` inline `--tk-*` → sınıflar,
+  amber → warning tonları, eylemler `Button`), Deneme merkezi (`DataTable`, SectionHeader,
+  canlı = success tonu), Performans (`StatTile`, ısı takvimi, zayıf konular) + konu haritası
+  (Chip filtresi), Ben: profil (kimlik kartı, StatTile, ListRow kısayollar), ayarlar (v3
+  alanlar, **günlük çalışma süresi** seçimi S1-D `dailyMinutes`, tema metni), denemelerim/
+  rozetler (`DataTable`/Card tone), liderlik (lucide ikonlar; lig renkleri bilinçli sabit
+  hex, izin listesinde). `tk-interactive` v3 geçiş yardımcısı olarak kaldı (kapıdan çıktı).
+  İki eski React Compiler lint hatası (arşiv/kişisel deneme `Date.now`) gerekçeli
+  devre dışı yorumla kapandı; lint artık 0 hata. Geçiş adı sayacı 881 → 325 (kalanlar W-F
+  public/auth sayfaları + premium ve çıkmış sınav çalışma sayfası). **Göz testi (Chrome,
+  Lukas, gerçek veri):** Kütüphane, ders, PVSK kanun/okuyucu, Denemeler, Performans, konu
+  haritası, Profil, Ayarlar, Rozetler, Liderlik koyu temada; Kütüphane + kanun açık temada.

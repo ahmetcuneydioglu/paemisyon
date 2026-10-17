@@ -67,6 +67,9 @@ export default async function KisiselSinavPage({
     sessionId: start.sessionId,
     examId: "kisisel",
     title: "Kişisel Deneme",
+    // Sunucu bileşeni + force-dynamic: bitiş anı İSTEK anından kurulur (kalan süre
+    // sunucudan gelir). İstemci saf-render kuralı burada geçerli değil.
+    // eslint-disable-next-line react-hooks/purity
     endsAt: new Date(Date.now() + kalanSaniye * 1000).toISOString(),
     liveAnswerReveal: false,
     questions: start.questions.map((q, i) => ({ order: i + 1, ...q })),

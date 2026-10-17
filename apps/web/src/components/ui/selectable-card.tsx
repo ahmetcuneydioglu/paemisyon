@@ -1,18 +1,8 @@
 "use client";
 
+import { Check } from "lucide-react";
 import type { ReactNode } from "react";
-
-type Accent = "brand" | "atlas";
-
-const seciliYuzey: Record<Accent, string> = {
-  brand: "border-brand bg-brand/5",
-  atlas: "border-atlas bg-atlas/5",
-};
-
-const isaretKutusu: Record<Accent, string> = {
-  brand: "border-brand bg-brand text-surface",
-  atlas: "border-atlas bg-atlas text-surface",
-};
+import { cn } from "@/lib/cn";
 
 /**
  * Seçilebilir kart — çoklu seçim listelerinin yapı taşı (Doc 26 kart yüzeyi +
@@ -28,7 +18,6 @@ export function SelectableCard({
   onToggle,
   disabled = false,
   disabledHint,
-  accent = "brand",
   label,
   className = "",
   children,
@@ -38,7 +27,8 @@ export function SelectableCard({
   disabled?: boolean;
   /** Pasif kartın içinde görünen kısa açıklama (ör. "Henüz çıkmış soru yok"). */
   disabledHint?: string;
-  accent?: Accent;
+  /** @deprecated v2 — tek vurgu; yok sayılır. */
+  accent?: "brand" | "atlas";
   /** Ekran okuyucu etiketi — görünen metin yeterince açıklayıcı değilse. */
   label?: string;
   className?: string;
@@ -52,27 +42,29 @@ export function SelectableCard({
       aria-label={label}
       disabled={disabled}
       onClick={onToggle}
-      className={[
-        "tk-interactive relative flex min-h-11 w-full cursor-pointer flex-col items-start rounded-md border p-4 pr-12 text-left text-ink",
-        selected ? seciliYuzey[accent] : "border-line bg-surface hover:border-ink-soft",
-        disabled ? "cursor-not-allowed opacity-50" : "",
+      className={cn(
+        "tk-interactive relative flex min-h-11 w-full cursor-pointer flex-col items-start rounded-card border p-4 pr-12 text-left text-ink",
+        selected
+          ? "border-accent bg-accent-soft"
+          : "border-line bg-surface hover:border-ink-soft",
+        disabled && "cursor-not-allowed opacity-50",
         className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      )}
     >
       <span
         aria-hidden
-        className={[
-          "absolute top-4 right-4 flex size-5 items-center justify-center rounded-sm border text-[12px] font-bold",
-          selected ? isaretKutusu[accent] : "border-line bg-surface",
-        ].join(" ")}
+        className={cn(
+          "absolute top-4 right-4 flex size-5 items-center justify-center rounded-[6px] border",
+          selected
+            ? "border-accent bg-accent text-on-accent"
+            : "border-line bg-surface",
+        )}
       >
-        {selected ? "✓" : ""}
+        {selected ? <Check size={14} strokeWidth={2.5} /> : null}
       </span>
       {children}
       {disabled && disabledHint && (
-        <span className="mt-2 text-[11px] text-ink-soft">{disabledHint}</span>
+        <span className="type-body-sm mt-2 text-ink-soft">{disabledHint}</span>
       )}
     </button>
   );

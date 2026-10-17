@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ClipboardCheck } from "lucide-react";
 import { api } from "@/lib/api";
 import type { MyAttempt } from "@/lib/types";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
+import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { DataTable } from "@/components/ui/data-table";
+import { EmptyState } from "@/components/ui/empty-state";
 import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = {
@@ -14,82 +19,89 @@ export const dynamic = "force-dynamic";
 export default async function MyExamsPage() {
   const attempts = await api<MyAttempt[]>("/exams/attempts/mine");
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6">
-      <Link
-        href="/profil"
-        className="text-[13px] font-bold text-brand hover:underline"
-      >
-        ← Profile dön
-      </Link>
-      <div className="mt-4">
-        <h1 className="font-heading text-2xl font-bold text-ink">
-          Denemelerim
-        </h1>
-        <p className="mt-1 text-[14px] text-ink-soft">
-          Web ve mobildeki bütün deneme geçmişin.
-        </p>
-      </div>
+    <div className="mx-auto max-w-5xl px-4 py-6 md:px-6">
+      <Breadcrumb
+        className="mb-3"
+        items={[{ label: "Ben", href: "/profil" }, { label: "Denemelerim" }]}
+      />
+      <h1 className="type-title text-ink">Denemelerim</h1>
+      <p className="type-body-sm mt-1 mb-5 text-ink-soft">
+        Web ve mobildeki bütün deneme geçmişin.
+      </p>
       {attempts.length === 0 ? (
-        <Card className="mt-5 py-10 text-center">
-          <p className="font-heading text-[15px] font-bold text-ink">
-            Henüz deneme çözmedin
-          </p>
-          <p className="mt-1 text-[13px] text-ink-soft">
-            İlk denemenden sonra gelişim arşivin burada başlayacak.
-          </p>
-          <Link
-            href="/denemeler"
-            className="mt-4 inline-block text-[13px] font-bold text-brand hover:underline"
-          >
-            Denemelere git →
-          </Link>
+        <Card>
+          <EmptyState
+            icon={ClipboardCheck}
+            title="Henüz deneme çözmedin"
+            body="İlk denemenden sonra gelişim arşivin burada başlayacak."
+            action={<ButtonLink href="/denemeler">Denemelere git</ButtonLink>}
+          />
         </Card>
       ) : (
-        <div className="mt-5 space-y-2">
-          {attempts.map((attempt) => (
-            <Card
-              key={attempt.attemptId}
-              className="flex flex-wrap items-center gap-4"
-            >
-              <div className="min-w-0 flex-1">
-                <p className="truncate font-heading text-[14px] font-bold text-ink">
-                  {attempt.exam?.title ?? "Deneme"}
-                </p>
-                <p className="mt-1 text-[12px] text-ink-soft">
-                  {formatDate(attempt.startedAt)} ·{" "}
-                  {attempt.status === "completed"
-                    ? "Tamamlandı"
-                    : "Devam ediyor"}
-                </p>
-              </div>
-              <div className="text-right">
-                <span className="tk-caption">Net</span>
-                <p className="tabular font-heading text-lg font-bold text-ink">
-                  {attempt.score != null ? attempt.score.toFixed(2) : "—"}
-                </p>
-              </div>
-              {attempt.status === "completed" ? (
-                <Link
-                  href={`/sonuc/${attempt.attemptId}`}
-                  className="tk-interactive rounded-sm border border-line px-3 py-2 text-[13px] font-bold text-brand hover:border-brand"
-                >
-                  Sonucu aç
-                </Link>
-              ) : (
-                <Link
-                  href={
-                    attempt.exam?.id
-                      ? `/sinav/${attempt.exam.id}`
-                      : "/denemeler"
-                  }
-                  className="tk-interactive rounded-sm border border-line px-3 py-2 text-[13px] font-bold text-brand hover:border-brand"
-                >
-                  Devam et
-                </Link>
-              )}
-            </Card>
-          ))}
-        </div>
+        <DataTable
+          caption="Deneme geçmişim"
+          rows={attempts}
+          rowKey={(a) => a.attemptId}
+          columns={[
+            {
+              key: "deneme",
+              header: "Deneme",
+              cell: (a) => (
+                <span className="type-subhead text-ink">
+                  {a.exam?.title ?? "Deneme"}
+                </span>
+              ),
+            },
+            {
+              key: "tarih",
+              header: "Tarih",
+              hideBelowMd: true,
+              cell: (a) => formatDate(a.startedAt),
+            },
+            {
+              key: "durum",
+              header: "Durum",
+              cell: (a) =>
+                a.status === "completed" ? (
+                  <Badge tone="success">Tamamlandı</Badge>
+                ) : (
+                  <Badge tone="warning">Devam ediyor</Badge>
+                ),
+            },
+            {
+              key: "net",
+              header: "Net",
+              align: "right",
+              cell: (a) => (
+                <span className="type-subhead text-ink">
+                  {a.score != null ? a.score.toFixed(2) : "—"}
+                </span>
+              ),
+            },
+            {
+              key: "eylem",
+              header: "",
+              align: "right",
+              cell: (a) =>
+                a.status === "completed" ? (
+                  <ButtonLink
+                    href={`/sonuc/${a.attemptId}`}
+                    variant="secondary"
+                    size="sm"
+                  >
+                    Sonucu aç
+                  </ButtonLink>
+                ) : (
+                  <ButtonLink
+                    href={a.exam?.id ? `/sinav/${a.exam.id}` : "/denemeler"}
+                    size="sm"
+                  >
+                    Devam et
+                  </ButtonLink>
+                ),
+            },
+          ]}
+        />
       )}
     </div>
   );

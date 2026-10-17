@@ -7,7 +7,11 @@ import { supabaseBrowser } from "@/lib/supabase/client";
 import type { MeProfile } from "@/lib/public-api";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
+import { Notice } from "@/components/ui/notice";
 import { ThemeToggle } from "@/components/theme-toggle";
+
+const INPUT =
+  "type-body mt-1 h-11 w-full rounded-control border border-line bg-surface px-3.5 text-ink outline-none focus:border-ink-soft";
 
 type ModuleOption = { id: string; name: string };
 
@@ -50,6 +54,10 @@ export function ProfileSettingsForm({
           displayName: String(formData.get("displayName") ?? "").trim(),
           preferredModuleId: String(formData.get("preferredModuleId") ?? ""),
           dailyGoal: Number(formData.get("dailyGoal")),
+          // Günlük süre (Doc 49 S1-D): boş bırakılırsa temizlenir.
+          dailyMinutes: formData.get("dailyMinutes")
+            ? Number(formData.get("dailyMinutes"))
+            : null,
           targetExamDate: String(formData.get("targetExamDate") ?? "") || null,
         },
       });
@@ -113,10 +121,10 @@ export function ProfileSettingsForm({
   }
 
   return (
-    <div className="space-y-4">
+    <div className="flex flex-col gap-4">
       <Card>
         <CardTitle>Profil ve çalışma hedefi</CardTitle>
-        <p className="mt-1 text-[13px] text-ink-soft">
+        <p className="type-body-sm mt-1 text-ink-soft">
           Koçun önerilerini bu bilgilerle kişiselleştirir.
         </p>
         <form action={save} className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -128,14 +136,12 @@ export function ProfileSettingsForm({
             maxLength={128}
           />
           <label className="block">
-            <span className="text-[13px] font-semibold text-ink">
-              Hedef sınav
-            </span>
+            <span className="type-subhead text-ink">Hedef sınav</span>
             <select
               name="preferredModuleId"
               defaultValue={profile.preferredModule?.id ?? ""}
               required
-              className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
+              className={INPUT}
             >
               <option value="" disabled>
                 Seç…
@@ -148,16 +154,14 @@ export function ProfileSettingsForm({
             </select>
           </label>
           <label className="block">
-            <span className="text-[13px] font-semibold text-ink">
-              Hedef sınav tarihi
-            </span>
+            <span className="type-subhead text-ink">Hedef sınav tarihi</span>
             <input
               name="targetExamDate"
               type="date"
               defaultValue={profile.targetExamDate ?? ""}
-              className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
+              className={INPUT}
             />
-            <span className="mt-1 block text-[11px] text-ink-soft">
+            <span className="type-body-sm mt-1 block text-ink-subtle">
               Belli değilse boş bırakabilirsin.
             </span>
           </label>
@@ -169,9 +173,28 @@ export function ProfileSettingsForm({
             min={5}
             max={200}
           />
+          <label className="block">
+            <span className="type-subhead text-ink">Günlük çalışma süresi</span>
+            <select
+              name="dailyMinutes"
+              defaultValue={
+                profile.dailyMinutes ? String(profile.dailyMinutes) : ""
+              }
+              className={INPUT}
+            >
+              <option value="">Seçilmedi</option>
+              <option value="15">15 dakika</option>
+              <option value="30">30 dakika</option>
+              <option value="60">60 dakika</option>
+              <option value="90">90 dakika</option>
+            </select>
+            <span className="type-body-sm mt-1 block text-ink-subtle">
+              Koç &quot;bugün 12/30 dk&quot; diyebilsin diye.
+            </span>
+          </label>
           <div className="sm:col-span-2 flex flex-wrap items-center gap-3">
-            <Button type="submit" disabled={busy}>
-              {busy ? "Kaydediliyor…" : "Değişiklikleri kaydet"}
+            <Button type="submit" disabled={busy} loading={busy}>
+              Değişiklikleri kaydet
             </Button>
             {message && <Status value={message} />}
           </div>
@@ -182,8 +205,8 @@ export function ProfileSettingsForm({
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <CardTitle>Görünüm</CardTitle>
-            <p className="mt-1 text-[13px] text-ink-soft">
-              Cihaz saatine göre otomatik veya elle seç.
+            <p className="type-body-sm mt-1 text-ink-soft">
+              Cihaz tercihini izle ya da açık/koyu temayı elle seç.
             </p>
           </div>
           <ThemeToggle />
@@ -211,8 +234,13 @@ export function ProfileSettingsForm({
             autoComplete="new-password"
           />
           <div className="sm:col-span-2 flex flex-wrap items-center gap-3">
-            <Button type="submit" variant="secondary" disabled={passwordBusy}>
-              {passwordBusy ? "Güncelleniyor…" : "Şifreyi değiştir"}
+            <Button
+              type="submit"
+              variant="secondary"
+              disabled={passwordBusy}
+              loading={passwordBusy}
+            >
+              Şifreyi değiştir
             </Button>
             {passwordMessage && <Status value={passwordMessage} />}
           </div>
@@ -223,7 +251,7 @@ export function ProfileSettingsForm({
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <CardTitle>Oturum</CardTitle>
-            <p className="mt-1 text-[13px] text-ink-soft">
+            <p className="type-body-sm mt-1 text-ink-soft">
               Bu cihazdaki oturumunu kapat. Hesabın ve ilerlemen korunur.
             </p>
           </div>
@@ -232,39 +260,39 @@ export function ProfileSettingsForm({
             variant="secondary"
             onClick={logout}
             disabled={logoutBusy}
+            loading={logoutBusy}
           >
-            {logoutBusy ? "Çıkış yapılıyor…" : "Çıkış yap"}
+            Çıkış yap
           </Button>
         </div>
       </Card>
 
-      <Card className="border-danger/30">
-        <CardTitle className="text-danger">Hesabı sil</CardTitle>
-        <p className="mt-2 text-[13px] leading-relaxed text-ink-soft">
+      <Card className="border-danger/40">
+        <CardTitle className="text-danger-ink">Hesabı sil</CardTitle>
+        <p className="type-body-sm mt-2 text-ink-soft">
           Kişisel bilgilerin anonimleştirilir, giriş erişimin kapatılır ve
           aboneliğin sonlandırılır. Yasal/istatistiksel bütünlük için kişisel
           olmayan anonim kayıtlar korunabilir. Bu işlem geri alınamaz.
         </p>
         <label className="mt-4 block max-w-xs">
-          <span className="text-[13px] font-semibold text-ink">
-            Onaylamak için SİL yaz
-          </span>
+          <span className="type-subhead text-ink">Onaylamak için SİL yaz</span>
           <input
             value={deleteText}
             onChange={(event) => setDeleteText(event.target.value)}
-            className="mt-1 h-11 w-full rounded-sm border border-danger/40 bg-surface px-3 text-[14px] text-ink outline-none focus:border-danger"
+            className="type-body mt-1 h-11 w-full rounded-control border border-danger/40 bg-surface px-3.5 text-ink outline-none focus:border-danger"
           />
         </label>
         <Button
           type="button"
-          variant="danger"
+          variant="destructive"
           className="mt-3"
           disabled={
             deleteBusy || deleteText.trim().toLocaleUpperCase("tr-TR") !== "SİL"
           }
+          loading={deleteBusy}
           onClick={deleteAccount}
         >
-          {deleteBusy ? "Siliniyor…" : "Hesabımı kalıcı olarak sil"}
+          Hesabımı kalıcı olarak sil
         </Button>
       </Card>
     </div>
@@ -282,28 +310,21 @@ function Field({
 >) {
   return (
     <label className="block">
-      <span className="text-[13px] font-semibold text-ink">{label}</span>
+      <span className="type-subhead text-ink">{label}</span>
       <input
         name={name}
         type={type}
         required={type !== "date"}
         {...props}
-        className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
+        className={INPUT}
       />
     </label>
   );
 }
 function Status({ value }: { value: { kind: "ok" | "error"; text: string } }) {
   return (
-    <p
-      className={
-        value.kind === "ok"
-          ? "text-[13px] font-semibold text-success"
-          : "text-[13px] font-semibold text-danger"
-      }
-      role="status"
-    >
+    <Notice tone={value.kind === "ok" ? "success" : "error"} className="py-2">
       {value.text}
-    </p>
+    </Notice>
   );
 }

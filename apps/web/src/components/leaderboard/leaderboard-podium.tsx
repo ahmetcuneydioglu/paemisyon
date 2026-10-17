@@ -1,9 +1,8 @@
 import type { LeaderboardRow } from "@/lib/public-api";
 import { LeaderboardAvatar } from "./leaderboard-avatar";
 import { RankTierBadge } from "./rank-tier-badge";
+import { Crown } from "lucide-react";
 import { rankTier } from "./rank-tier";
-
-const MEDALS = ["🥇", "🥈", "🥉"];
 
 function PodiumSlot({ row, place }: { row: LeaderboardRow; place: 0 | 1 | 2 }) {
   const first = place === 0;
@@ -11,9 +10,9 @@ function PodiumSlot({ row, place }: { row: LeaderboardRow; place: 0 | 1 | 2 }) {
   return (
     <div
       className={[
-        "tk-interactive flex min-w-0 flex-col items-center rounded-lg border bg-surface px-3 pb-4 text-center hover:-translate-y-1",
-        first ? "pt-8 shadow-card" : "pt-5",
-        row.isMe ? "border-brand" : "border-line",
+        "tk-interactive flex min-w-0 flex-col items-center rounded-card border bg-surface px-3 pb-4 text-center",
+        first ? "pt-8" : "pt-5",
+        row.isMe ? "border-accent" : "border-line",
       ].join(" ")}
       style={{
         // Kürsü yüksekliği: 1. daha yüksek oturur (kürsü hissi).
@@ -23,11 +22,20 @@ function PodiumSlot({ row, place }: { row: LeaderboardRow; place: 0 | 1 | 2 }) {
     >
       <div className="relative">
         {first && (
-          <span className="lb-crown absolute -top-7 left-1/2 -translate-x-1/2 text-2xl" aria-hidden>
-            👑
+          <span
+            className="lb-crown absolute -top-7 left-1/2 -translate-x-1/2 text-accent"
+            aria-hidden
+          >
+            <Crown size={24} strokeWidth={2} />
           </span>
         )}
-        <span className={first ? "lb-halo relative inline-block rounded-full" : "inline-block"}>
+        <span
+          className={
+            first
+              ? "lb-halo relative inline-block rounded-full"
+              : "inline-block"
+          }
+        >
           <LeaderboardAvatar
             name={row.displayName}
             avatarUrl={row.avatarUrl}
@@ -36,28 +44,33 @@ function PodiumSlot({ row, place }: { row: LeaderboardRow; place: 0 | 1 | 2 }) {
           />
         </span>
         <span
-          className="absolute -bottom-1 -right-1 flex size-6 items-center justify-center rounded-full border border-line bg-surface text-sm shadow-card"
+          className="type-label absolute -right-1 -bottom-1 flex size-6 items-center justify-center rounded-full border border-line bg-surface text-ink"
           aria-hidden
         >
-          {MEDALS[place]}
+          {place + 1}
         </span>
       </div>
 
       <p
         className={[
-          "mt-3 max-w-full truncate font-heading font-bold text-ink",
-          first ? "text-base" : "text-sm",
+          "mt-3 max-w-full truncate text-ink",
+          first ? "type-heading" : "type-subhead",
         ].join(" ")}
         title={row.displayName}
       >
         {row.displayName}
       </p>
       <div className="mt-1.5">
-        <RankTierBadge level={row.level} rankName={row.rankName} size="sm" showLeague={false} />
+        <RankTierBadge
+          level={row.level}
+          rankName={row.rankName}
+          size="sm"
+          showLeague={false}
+        />
       </div>
-      <p className="mt-2 font-heading text-lg font-bold tabular text-ink">
+      <p className="type-stat mt-2 text-ink">
         {row.points.toLocaleString("tr-TR")}
-        <span className="ml-1 text-xs font-normal text-ink-soft">puan</span>
+        <span className="type-body-sm ml-1 text-ink-soft">puan</span>
       </p>
     </div>
   );

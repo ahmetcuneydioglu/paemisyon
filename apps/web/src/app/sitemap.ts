@@ -14,7 +14,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Arama motoruna verilen adresler canonical kökenden (www) üretilir; apex
   // 308 ile oraya yönlendiği için apex listelemek her taramaya bir sıçrama ekler.
   const base = config.canonicalOrigin;
-  const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(() => [] as LawSummary[]);
+  const laws = await publicApi<LawSummary[]>("/public/laws", 3600).catch(
+    () => [] as LawSummary[],
+  );
   // Çıkmış sınav dönemleri (Doc 36) — yalnız yayındakiler döner.
   const { items: cikmisSinavlar } = await publicApiList<CikmisSinavOzet>(
     "/public/cikmis-sinavlar",
@@ -25,7 +27,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const details = await Promise.all(
     laws
       .filter((l) => l.questionCount > 0)
-      .map((l) => publicApi<LawDetail>(`/public/laws/${l.slug}`, 3600).catch(() => null)),
+      .map((l) =>
+        publicApi<LawDetail>(`/public/laws/${l.slug}`, 3600).catch(() => null),
+      ),
   );
   const articlePages: MetadataRoute.Sitemap = details
     .filter((d): d is LawDetail => d != null)
@@ -43,9 +47,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/kanunlar`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/paem`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/misyon`, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${base}/hesaplayici/paem-puan`, changeFrequency: "monthly", priority: 0.7 },
+    {
+      url: `${base}/hesaplayici/paem-puan`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
     { url: `${base}/denemeler`, changeFrequency: "daily", priority: 0.8 },
-    { url: `${base}/paem-cikmis-sorular`, changeFrequency: "weekly", priority: 0.9 },
+    {
+      url: `${base}/paem-cikmis-sorular`,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     { url: `${base}/premium`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/lider-tablosu`, changeFrequency: "daily", priority: 0.5 },
     { url: `${base}/sss`, changeFrequency: "monthly", priority: 0.5 },
@@ -77,5 +89,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...cikmisPages, ...lawPages, ...readingPages, ...articlePages];
+  return [
+    ...staticPages,
+    ...cikmisPages,
+    ...lawPages,
+    ...readingPages,
+    ...articlePages,
+  ];
 }

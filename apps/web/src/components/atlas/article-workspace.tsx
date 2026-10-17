@@ -1,10 +1,13 @@
 import Link from "next/link";
 import type { LawArticleDetail, TopicAtlas } from "@/lib/public-api";
 import { ThreePane } from "@/components/shell/three-pane";
-import { Card, CardTitle } from "@/components/ui/card";
+import { ArrowLeft, ArrowRight, Check, Circle, CircleDot } from "lucide-react";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
-import { SourceTag } from "@/components/ui/source-tag";
+import { Card, CardTitle } from "@/components/ui/card";
 import { HeatBar } from "@/components/ui/heat-bar";
+import { SourceTag } from "@/components/ui/source-tag";
+import { cn } from "@/lib/cn";
 
 /** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
 function formatVerifiedDate(iso: string): string {
@@ -26,13 +29,18 @@ export function ArticleWorkspace({
   atlas: TopicAtlas | null;
 }) {
   const mine = atlas?.articles.find((a) => a.no === article.no) ?? null;
-  const maxHeat = article.siblings.reduce((m, s) => Math.max(m, s.questionCount), 0);
+  const maxHeat = article.siblings.reduce(
+    (m, s) => Math.max(m, s.questionCount),
+    0,
+  );
   const atlasOf = new Map(atlas?.articles.map((a) => [a.no, a]) ?? []);
 
   const tree = (
     <div>
-      <p className="tk-caption mb-2">{article.lawName.split(" ")[0]} maddeleri</p>
-      <ul className="max-h-[70vh] space-y-0.5 overflow-y-auto pr-1">
+      <p className="type-label mb-2 text-ink-subtle">
+        {article.lawName.split(" ")[0]} maddeleri
+      </p>
+      <ul className="flex flex-col gap-0.5">
         {article.siblings.map((s) => {
           const st = atlasOf.get(s.no);
           const current = s.no === article.no;
@@ -41,22 +49,39 @@ export function ArticleWorkspace({
               <Link
                 href={`/kanun/${article.lawSlug}/madde/${s.slug}`}
                 aria-current={current ? "page" : undefined}
-                className={[
-                  "tk-interactive flex items-center gap-2 rounded-sm px-2 py-1.5 text-[13px]",
-                  current ? "bg-brand/10 font-bold text-brand" : "text-ink hover:bg-line/40",
-                ].join(" ")}
+                className={cn(
+                  "tk-interactive flex min-h-9 items-center gap-2 rounded-control px-2 py-1.5 text-[13px]",
+                  current
+                    ? "bg-accent-soft font-semibold text-accent-ink"
+                    : "text-ink hover:bg-surface-alt",
+                )}
               >
-                <span
-                  className={[
-                    "w-3 shrink-0",
-                    st?.conquered ? "text-success" : st && st.clearedCount > 0 ? "text-warning" : "text-ink-soft",
-                  ].join(" ")}
-                  aria-hidden
-                >
-                  {st?.conquered ? "✓" : st && st.clearedCount > 0 ? "◐" : "○"}
-                </span>
+                {st?.conquered ? (
+                  <Check
+                    size={14}
+                    strokeWidth={2.5}
+                    className="shrink-0 text-success"
+                    aria-label="fethedildi"
+                  />
+                ) : st && st.clearedCount > 0 ? (
+                  <CircleDot
+                    size={14}
+                    className="shrink-0 text-warning"
+                    aria-label="kısmen"
+                  />
+                ) : (
+                  <Circle
+                    size={14}
+                    className="shrink-0 text-ink-subtle"
+                    aria-label="çalışılmadı"
+                  />
+                )}
                 <span className="w-12 shrink-0 font-mono">m.{s.no}</span>
-                <HeatBar count={s.questionCount} max={maxHeat} className="flex-1" />
+                <HeatBar
+                  count={s.questionCount}
+                  max={maxHeat}
+                  className="flex-1"
+                />
               </Link>
             </li>
           );
@@ -66,26 +91,29 @@ export function ArticleWorkspace({
   );
 
   const body = (
-    <div className="space-y-4">
-      <nav className="tk-caption" aria-label="breadcrumb">
-        <Link href="/kutuphane" className="hover:text-ink">Kütüphane</Link> ›{" "}
-        <Link href="/kanunlar" className="hover:text-ink">Mevzuat</Link> ›{" "}
-        <Link href={`/kanun/${article.lawSlug}`} className="hover:text-ink">
-          {article.lawName.split(" ")[0]}
-        </Link>{" "}
-        › m.{article.no}
-      </nav>
-      <h1 className="font-heading text-xl font-bold text-ink">
+    <div className="flex flex-col gap-4">
+      <Breadcrumb
+        items={[
+          { label: "Kütüphane", href: "/kutuphane" },
+          { label: "Mevzuat", href: "/kanunlar" },
+          {
+            label: article.lawName.split(" ")[0],
+            href: `/kanun/${article.lawSlug}`,
+          },
+          { label: `m.${article.no}` },
+        ]}
+      />
+      <h1 className="type-title text-ink">
         {article.lawName} — Madde {article.no}
       </h1>
 
       {article.text && (
         <Card>
           <CardTitle>Resmî madde metni</CardTitle>
-          <div className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-ink">
+          <div className="type-body mt-2 whitespace-pre-line text-ink">
             {article.text.body}
           </div>
-          <p className="tk-caption mt-3">
+          <p className="type-body-sm mt-3 text-ink-subtle">
             Kaynak:{" "}
             {article.text.sourceUrl ? (
               <a
@@ -99,9 +127,15 @@ export function ArticleWorkspace({
             ) : (
               article.text.source
             )}
-            {article.text.effectiveInfo ? <> · {article.text.effectiveInfo}</> : null}
+            {article.text.effectiveInfo ? (
+              <> · {article.text.effectiveInfo}</>
+            ) : null}
             {article.text.verifiedAt ? (
-              <> · {formatVerifiedDate(article.text.verifiedAt)} itibarıyla doğrulandı</>
+              <>
+                {" "}
+                · {formatVerifiedDate(article.text.verifiedAt)} itibarıyla
+                doğrulandı
+              </>
             ) : null}
           </p>
         </Card>
@@ -109,10 +143,15 @@ export function ArticleWorkspace({
 
       <Card>
         <CardTitle>Madde künyesi</CardTitle>
-        <p className="mt-2 text-[15px] leading-relaxed text-ink">
-          Bu maddeden <b className="tabular">{article.questionCount}</b> kaynaklı çıkmış soru var
+        <p className="type-body mt-2 text-ink">
+          Bu maddeden <b className="tabular">{article.questionCount}</b>{" "}
+          kaynaklı çıkmış soru var
           {article.sources.length > 0 && (
-            <> — sınav dağılımı aşağıda. Sorular gerçek sınavlardan; AI üretimi değildir.</>
+            <>
+              {" "}
+              — sınav dağılımı aşağıda. Sorular gerçek sınavlardan; AI üretimi
+              değildir.
+            </>
           )}
           .
         </p>
@@ -121,7 +160,9 @@ export function ArticleWorkspace({
             {article.sources.map((s) => (
               <li key={s.source} className="flex items-center gap-1.5">
                 <SourceTag source={s.source} />
-                <span className="tabular text-[12px] text-ink-soft">×{s.count}</span>
+                <span className="type-body-sm tabular text-ink-soft">
+                  ×{s.count}
+                </span>
               </li>
             ))}
           </ul>
@@ -131,15 +172,19 @@ export function ArticleWorkspace({
       {article.previews.length > 0 && (
         <Card>
           <CardTitle>Bu maddeden çıkmış soru örnekleri</CardTitle>
-          <ul className="mt-2 space-y-3">
+          <ul className="mt-2 flex flex-col gap-3">
             {article.previews.map((p) => (
-              <li key={p} className="border-l-2 border-atlas/40 pl-3 text-[14px] leading-relaxed text-ink-soft">
+              <li
+                key={p}
+                className="type-body-sm border-l-2 border-accent/40 pl-3 text-ink-soft"
+              >
                 {p}
               </li>
             ))}
           </ul>
-          <p className="tk-caption mt-3">
-            Tam metin ve cevaplar tur içinde — çözerken açıklama + kaynakla birlikte.
+          <p className="type-body-sm mt-3 text-ink-subtle">
+            Tam metin ve cevaplar tur içinde — çözerken açıklama + kaynakla
+            birlikte.
           </p>
         </Card>
       )}
@@ -148,9 +193,9 @@ export function ArticleWorkspace({
         {article.neighbors.prev ? (
           <Link
             href={`/kanun/${article.lawSlug}/madde/${article.neighbors.prev.slug}`}
-            className="text-[13px] font-bold text-ink-soft hover:text-ink"
+            className="type-subhead inline-flex items-center gap-1 text-ink-soft hover:text-ink"
           >
-            ← m.{article.neighbors.prev.no}
+            <ArrowLeft size={16} aria-hidden /> m.{article.neighbors.prev.no}
           </Link>
         ) : (
           <span />
@@ -158,9 +203,9 @@ export function ArticleWorkspace({
         {article.neighbors.next ? (
           <Link
             href={`/kanun/${article.lawSlug}/madde/${article.neighbors.next.slug}`}
-            className="text-[13px] font-bold text-ink-soft hover:text-ink"
+            className="type-subhead inline-flex items-center gap-1 text-ink-soft hover:text-ink"
           >
-            m.{article.neighbors.next.no} →
+            m.{article.neighbors.next.no} <ArrowRight size={16} aria-hidden />
           </Link>
         ) : (
           <span />
@@ -170,25 +215,31 @@ export function ArticleWorkspace({
   );
 
   const inspector = (
-    <div className="space-y-3">
-      <h4 className="tk-caption">m.{article.no} — benim durumum</h4>
+    <div className="flex flex-col gap-3">
+      <h4 className="type-label text-ink-subtle">
+        m.{article.no} — benim durumum
+      </h4>
       <Card>
         {mine ? (
-          <p className="text-[13px] leading-relaxed text-ink-soft">
+          <p className="type-body-sm text-ink-soft">
             {mine.conquered ? (
               <>
-                <b className="text-success">✓ Fethedildi</b> — {mine.questionCount} sorunun tamamını
-                en az bir kez doğru çözdün.
+                <b className="text-success-ink">Fethedildi</b> —{" "}
+                {mine.questionCount} sorunun tamamını en az bir kez doğru
+                çözdün.
               </>
             ) : (
               <>
-                <b className="text-ink">{mine.clearedCount}/{mine.questionCount}</b> soru temizlendi
-                — {mine.questionCount - mine.clearedCount} soru kaldı.
+                <b className="text-ink">
+                  {mine.clearedCount}/{mine.questionCount}
+                </b>{" "}
+                soru temizlendi — {mine.questionCount - mine.clearedCount} soru
+                kaldı.
               </>
             )}
           </p>
         ) : (
-          <p className="text-[13px] leading-relaxed text-ink-soft">
+          <p className="type-body-sm text-ink-soft">
             Bu maddeyi henüz hiç çalışmadın — ilk turun haritayı başlatır.
           </p>
         )}
@@ -201,9 +252,11 @@ export function ArticleWorkspace({
         Bu maddeden {Math.min(10, article.questionCount)} soru çöz
       </ButtonLink>
       <Card>
-        <p className="text-[13px] leading-relaxed text-ink-soft">
+        <p className="type-body-sm text-ink-soft">
           Sınav bağlamı:{" "}
-          {article.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(" · ") || "—"}
+          {article.exams
+            .map((e) => `${e.examName} %${e.weightPercent}`)
+            .join(" · ") || "—"}
         </p>
       </Card>
     </div>

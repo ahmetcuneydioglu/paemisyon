@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { api } from "@/lib/api";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { getPricing, formatPrice, monthlyEquivalent, periodLabel, primaryPlan } from "@/lib/pricing";
+import {
+  getPricing,
+  formatPrice,
+  monthlyEquivalent,
+  periodLabel,
+  primaryPlan,
+} from "@/lib/pricing";
 import type { MeProfile } from "@/lib/public-api";
 import { CONTACT } from "@/lib/contact";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -19,16 +25,50 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 /** Doc 24 §11 tablosu — dürüst karşılaştırma, karanlık desen yok. */
-function rows(freeDailyLimit: number): { feature: string; free: string; premium: string }[] {
+function rows(
+  freeDailyLimit: number,
+): { feature: string; free: string; premium: string }[] {
   return [
-    { feature: "Günlük soru", free: `${freeDailyLimit} soru`, premium: "Sınırsız" },
-    { feature: "Koç", free: "Temel kartlar (seri, hedef, deneme)", premium: "Tam koç: zayıf konu planı, madde bazlı tekrar" },
-    { feature: "Yanlış tekrarı", free: "Son 7 günün yanlışları", premium: "Süresiz tekrar hafızası (spaced repetition)" },
-    { feature: "AI açıklaması", free: "Günde 3", premium: "Sınırsız + madde sadeleştirme" },
-    { feature: "Haftalık rapor", free: "Özet kart", premium: "Doğal dilli koç raporu + gelişim arşivi" },
-    { feature: "Deneme", free: "Canlı denemelere katılım", premium: "+ Geçmiş arşivi ve sınırsız prova" },
-    { feature: "Seri sigortası", free: "Haftada 1", premium: "Haftada 3 (vardiya dostu)" },
-    { feature: "Rütbe ve rozetler", free: "✓ herkese", premium: "✓ herkese — satılmaz" },
+    {
+      feature: "Günlük soru",
+      free: `${freeDailyLimit} soru`,
+      premium: "Sınırsız",
+    },
+    {
+      feature: "Koç",
+      free: "Temel kartlar (seri, hedef, deneme)",
+      premium: "Tam koç: zayıf konu planı, madde bazlı tekrar",
+    },
+    {
+      feature: "Yanlış tekrarı",
+      free: "Son 7 günün yanlışları",
+      premium: "Süresiz tekrar hafızası (spaced repetition)",
+    },
+    {
+      feature: "AI açıklaması",
+      free: "Günde 3",
+      premium: "Sınırsız + madde sadeleştirme",
+    },
+    {
+      feature: "Haftalık rapor",
+      free: "Özet kart",
+      premium: "Doğal dilli koç raporu + gelişim arşivi",
+    },
+    {
+      feature: "Deneme",
+      free: "Canlı denemelere katılım",
+      premium: "+ Geçmiş arşivi ve sınırsız prova",
+    },
+    {
+      feature: "Seri sigortası",
+      free: "Haftada 1",
+      premium: "Haftada 3 (vardiya dostu)",
+    },
+    {
+      feature: "Rütbe ve rozetler",
+      free: "✓ herkese",
+      premium: "✓ herkese — satılmaz",
+    },
   ];
 }
 
@@ -77,9 +117,9 @@ export default async function PremiumPage() {
             Koçun tam beynini aç
           </h1>
           <p className="mx-auto mt-2 max-w-[52ch] text-[15px] leading-relaxed text-ink-soft">
-            Ücretsiz katman gerçek antrenman verir — Premium, seni tanıyan koçun tamamını:
-            plan, süresiz tekrar hafızası, sınırsız açıklama. Bir dershanenin günlük çayı
-            parasına, seni tanıyan antrenör.
+            Ücretsiz katman gerçek antrenman verir — Premium, seni tanıyan koçun
+            tamamını: plan, süresiz tekrar hafızası, sınırsız açıklama. Bir
+            dershanenin günlük çayı parasına, seni tanıyan antrenör.
           </p>
         </header>
 
@@ -96,11 +136,14 @@ export default async function PremiumPage() {
             </h2>
             <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
               {me?.validUntil
-                ? `Erişimin ${new Date(me.validUntil).toLocaleDateString("tr-TR", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })} tarihine kadar geçerli. Süre bitmeden yenilemek için bize yazman yeterli.`
+                ? `Erişimin ${new Date(me.validUntil).toLocaleDateString(
+                    "tr-TR",
+                    {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    },
+                  )} tarihine kadar geçerli. Süre bitmeden yenilemek için bize yazman yeterli.`
                 : "Erişimin süresiz. Koçun tam beyni açık."}
             </p>
             <div className="mt-5">
@@ -129,11 +172,16 @@ export default async function PremiumPage() {
                   <ContactChannels />
                 ) : (
                   <div className="flex flex-col items-center gap-3">
-                    <ButtonLink href="/kayit" size="lg" className="w-full sm:w-auto">
+                    <ButtonLink
+                      href="/kayit"
+                      size="lg"
+                      className="w-full sm:w-auto"
+                    >
                       Önce ücretsiz kaydol
                     </ButtonLink>
                     <p className="text-[13px] text-ink-soft">
-                      Premium bir hesaba tanımlanır — önce hesabını aç, sonra bize yaz.
+                      Premium bir hesaba tanımlanır — önce hesabını aç, sonra
+                      bize yaz.
                     </p>
                   </div>
                 )}
@@ -145,12 +193,15 @@ export default async function PremiumPage() {
         {/* ── Nasıl alınır (manuel akış) ── */}
         {!alreadyPremium && (
           <section className="mt-10" aria-labelledby="nasil-alinir">
-            <h2 id="nasil-alinir" className="text-center font-heading text-lg font-bold text-ink">
+            <h2
+              id="nasil-alinir"
+              className="text-center font-heading text-lg font-bold text-ink"
+            >
               Nasıl premium olurum?
             </h2>
             <p className="mx-auto mt-2 max-w-[52ch] text-center text-[14px] leading-relaxed text-ink-soft">
-              Uygulama içi satın alma yok. Ödemeyi doğrudan bizimle yapıyorsun, hesabını
-              elimizle açıyoruz — arada mağaza komisyonu yok.
+              Uygulama içi satın alma yok. Ödemeyi doğrudan bizimle yapıyorsun,
+              hesabını elimizle açıyoruz — arada mağaza komisyonu yok.
             </p>
 
             <ol className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -159,7 +210,9 @@ export default async function PremiumPage() {
                   <Card className="h-full">
                     <p className="tk-caption text-brand">{i + 1}. adım</p>
                     <CardTitle className="mt-1">{s.title}</CardTitle>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">{s.body}</p>
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">
+                      {s.body}
+                    </p>
                   </Card>
                 </li>
               ))}
@@ -175,14 +228,16 @@ export default async function PremiumPage() {
               {me?.email ? (
                 <>
                   Yazarken hesap e-postanı da ilet:{" "}
-                  <strong className="font-semibold text-ink">{me.email}</strong> — premiumu bu
-                  hesaba tanımlıyoruz.
+                  <strong className="font-semibold text-ink">{me.email}</strong>{" "}
+                  — premiumu bu hesaba tanımlıyoruz.
                 </>
               ) : (
                 <>
                   Premium bir hesaba tanımlandığı için önce{" "}
-                  <strong className="font-semibold text-ink">ücretsiz kaydol</strong>, sonra bize
-                  yazarken hesap e-postanı ilet.
+                  <strong className="font-semibold text-ink">
+                    ücretsiz kaydol
+                  </strong>
+                  , sonra bize yazarken hesap e-postanı ilet.
                 </>
               )}
             </p>
@@ -191,7 +246,10 @@ export default async function PremiumPage() {
 
         {/* ── Dürüst karşılaştırma ── */}
         <section className="mt-10" aria-labelledby="karsilastirma">
-          <h2 id="karsilastirma" className="mb-3 text-center font-heading text-lg font-bold text-ink">
+          <h2
+            id="karsilastirma"
+            className="mb-3 text-center font-heading text-lg font-bold text-ink"
+          >
             Ücretsiz ve Premium
           </h2>
           {/* Mobilde satırlar bloklara açılır (yan kaydırma yok); sm+ gerçek tablo.
@@ -208,14 +266,29 @@ export default async function PremiumPage() {
                 Ücretsiz ve Premium katmanların özellik karşılaştırması
               </caption>
               <thead role="rowgroup" className="hidden sm:table-header-group">
-                <tr role="row" className="tk-caption border-b border-line text-left">
-                  <th role="columnheader" scope="col" className="px-4 py-3 font-semibold">
+                <tr
+                  role="row"
+                  className="tk-caption border-b border-line text-left"
+                >
+                  <th
+                    role="columnheader"
+                    scope="col"
+                    className="px-4 py-3 font-semibold"
+                  >
                     Özellik
                   </th>
-                  <th role="columnheader" scope="col" className="px-4 py-3 font-semibold">
+                  <th
+                    role="columnheader"
+                    scope="col"
+                    className="px-4 py-3 font-semibold"
+                  >
                     Ücretsiz
                   </th>
-                  <th role="columnheader" scope="col" className="px-4 py-3 font-semibold text-brand">
+                  <th
+                    role="columnheader"
+                    scope="col"
+                    className="px-4 py-3 font-semibold text-brand"
+                  >
                     Premium
                   </th>
                 </tr>
@@ -254,8 +327,8 @@ export default async function PremiumPage() {
             </table>
           </Card>
           <p className="mt-3 text-center text-[13px] leading-relaxed text-ink-soft">
-            Ücretsiz katman vitrin değil: günde {pricing.freeDailyLimit} soru, günün quizi ve
-            canlı denemeler herkese açık.
+            Ücretsiz katman vitrin değil: günde {pricing.freeDailyLimit} soru,
+            günün quizi ve canlı denemeler herkese açık.
           </p>
         </section>
 

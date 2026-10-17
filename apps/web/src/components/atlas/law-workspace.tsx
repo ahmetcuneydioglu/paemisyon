@@ -3,15 +3,43 @@ import { articleSlug, type LawDetail, type TopicAtlas } from "@/lib/public-api";
 import { ThreePane } from "@/components/shell/three-pane";
 import { ConquestGrid } from "@/components/ui/conquest-grid";
 import { HeatBar } from "@/components/ui/heat-bar";
-import { Card, CardTitle } from "@/components/ui/card";
+import { BookOpen, Check, Circle, CircleDot } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
+import { Card, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/cn";
 
-/** Madde satırının fetih işareti: ✓ fethedildi · ◐ kısmi · ○ hiç. */
-function conquestMark(a: { conquered: boolean; clearedCount: number } | undefined) {
-  if (!a) return { mark: "○", cls: "text-ink-soft" };
-  if (a.conquered) return { mark: "✓", cls: "text-success" };
-  if (a.clearedCount > 0) return { mark: "◐", cls: "text-warning" };
-  return { mark: "○", cls: "text-ink-soft" };
+/** Madde satırının fetih işareti: fethedildi (onay) · kısmi (yarım) · hiç (boş). */
+function ConquestMark({
+  a,
+}: {
+  a: { conquered: boolean; clearedCount: number } | undefined;
+}) {
+  if (a?.conquered)
+    return (
+      <Check
+        size={14}
+        strokeWidth={2.5}
+        className="shrink-0 text-success"
+        aria-label="fethedildi"
+      />
+    );
+  if (a && a.clearedCount > 0)
+    return (
+      <CircleDot
+        size={14}
+        className="shrink-0 text-warning"
+        aria-label="kısmen çalışıldı"
+      />
+    );
+  return (
+    <Circle
+      size={14}
+      className="shrink-0 text-ink-subtle"
+      aria-label="çalışılmadı"
+    />
+  );
 }
 
 /**
@@ -32,42 +60,51 @@ export function LawWorkspace({
   const atlasOf = new Map(atlas?.articles.map((a) => [a.no, a]) ?? []);
   // Ağaç madde no sırasında; ısı sıralaması makale panosunda ayrıca verilir.
   const treeArticles = [...law.articles].sort(
-    (a, b) => (Number.parseInt(a.no, 10) || 9999) - (Number.parseInt(b.no, 10) || 9999),
+    (a, b) =>
+      (Number.parseInt(a.no, 10) || 9999) - (Number.parseInt(b.no, 10) || 9999),
   );
-  const maxHeat = law.articles.reduce((m, a) => Math.max(m, a.questionCount), 0);
+  const maxHeat = law.articles.reduce(
+    (m, a) => Math.max(m, a.questionCount),
+    0,
+  );
   const conquered = atlas?.conqueredCount ?? 0;
 
   const tree = (
     <div>
-      <p className="tk-caption mb-2">
+      <p className="type-label mb-2 text-ink-subtle">
         {law.name.split(" ")[0]} ·{" "}
-        {law.articles.length > 0 ? `${law.articles.length} etiketli madde` : "madde ağacı"}
+        {law.articles.length > 0
+          ? `${law.articles.length} etiketli madde`
+          : "madde ağacı"}
       </p>
       {law.articles.length === 0 && (
-        <p className="rounded-sm border border-dashed border-line p-3 text-[12px] leading-relaxed text-ink-soft">
-          Bu kanunun soruları madde madde etiketlenince ağaç burada açılacak; ısı ve fetih
-          haritası da onunla gelecek.
+        <p className="type-body-sm rounded-control border border-dashed border-line p-3 text-ink-soft">
+          Bu kanunun soruları madde madde etiketlenince ağaç burada açılacak;
+          ısı ve fetih haritası da onunla gelecek.
         </p>
       )}
-      <ul className="max-h-[70vh] space-y-0.5 overflow-y-auto pr-1">
+      <ul className="flex flex-col gap-0.5">
         {treeArticles.map((a) => {
-          const st = conquestMark(atlasOf.get(a.no));
           const current = a.no === currentArticleNo;
           return (
             <li key={a.no}>
               <Link
                 href={`/kanun/${law.slug}/madde/${articleSlug(a.no)}`}
                 aria-current={current ? "page" : undefined}
-                className={[
-                  "tk-interactive flex items-center gap-2 rounded-sm px-2 py-1.5 text-[13px]",
-                  current ? "bg-brand/10 font-bold text-brand" : "text-ink hover:bg-line/40",
-                ].join(" ")}
+                className={cn(
+                  "tk-interactive flex min-h-9 items-center gap-2 rounded-control px-2 py-1.5 text-[13px]",
+                  current
+                    ? "bg-accent-soft font-semibold text-accent-ink"
+                    : "text-ink hover:bg-surface-alt",
+                )}
               >
-                <span className={["w-3 shrink-0", st.cls].join(" ")} aria-hidden>
-                  {st.mark}
-                </span>
+                <ConquestMark a={atlasOf.get(a.no)} />
                 <span className="w-12 shrink-0 font-mono">m.{a.no}</span>
-                <HeatBar count={a.questionCount} max={maxHeat} className="flex-1" />
+                <HeatBar
+                  count={a.questionCount}
+                  max={maxHeat}
+                  className="flex-1"
+                />
                 <span className="tabular w-6 shrink-0 text-right text-[11px] text-ink-soft">
                   {a.questionCount}
                 </span>
@@ -79,41 +116,62 @@ export function LawWorkspace({
     </div>
   );
 
-  const top5 = [...law.articles].sort((a, b) => b.questionCount - a.questionCount).slice(0, 5);
+  const top5 = [...law.articles]
+    .sort((a, b) => b.questionCount - a.questionCount)
+    .slice(0, 5);
   const top5Share =
     law.questionCount > 0
-      ? Math.round((top5.reduce((s, a) => s + a.questionCount, 0) / law.questionCount) * 100)
+      ? Math.round(
+          (top5.reduce((s, a) => s + a.questionCount, 0) / law.questionCount) *
+            100,
+        )
       : 0;
 
   const article = (
-    <div className="space-y-4">
-      <nav className="tk-caption" aria-label="breadcrumb">
-        <Link href="/kutuphane" className="hover:text-ink">Kütüphane</Link> ›{" "}
-        <Link href="/kanunlar" className="hover:text-ink">Mevzuat</Link> › {law.name}
-      </nav>
-      <h1 className="font-heading text-xl font-bold text-ink">{law.name}</h1>
+    <div className="flex flex-col gap-4">
+      <Breadcrumb
+        items={[
+          { label: "Kütüphane", href: "/kutuphane" },
+          { label: "Mevzuat", href: "/kanunlar" },
+          { label: law.name },
+        ]}
+      />
+      <h1 className="type-title text-ink">{law.name}</h1>
 
       {/* Kanunu oku (Doc 25 §4 okuma katmanı) — tam metin varsa, tek giriş. */}
       {law.readable && (
-        <ButtonLink href={`/kanun/${law.slug}/oku`} variant="secondary" size="lg">
-          📖 Kanunun güncel tam metnini oku
+        <ButtonLink
+          href={`/kanun/${law.slug}/oku`}
+          variant="secondary"
+          size="lg"
+          className="self-start"
+          leadingIcon={<BookOpen size={18} aria-hidden />}
+        >
+          Kanunun güncel tam metnini oku
         </ButtonLink>
       )}
 
       {top5.length > 0 && (
         <Card>
           <CardTitle>
-            Isı haritası: soruların %{top5Share}&apos;i şu {top5.length} maddeden
+            Isı haritası: soruların %{top5Share}&apos;i şu {top5.length}{" "}
+            maddeden
           </CardTitle>
-          <ul className="mt-3 space-y-2">
+          <ul className="mt-3 flex flex-col gap-1">
             {top5.map((a) => (
               <li key={a.no}>
                 <Link
                   href={`/kanun/${law.slug}/madde/${articleSlug(a.no)}`}
-                  className="tk-interactive flex items-center gap-3 rounded-sm px-1 py-1 text-[13px] hover:bg-line/30"
+                  className="tk-interactive flex min-h-9 items-center gap-3 rounded-control px-1.5 py-1 text-[13px] hover:bg-surface-alt"
                 >
-                  <span className="w-14 shrink-0 font-mono font-bold text-ink">m.{a.no}</span>
-                  <HeatBar count={a.questionCount} max={top5[0].questionCount} className="flex-1" />
+                  <span className="w-14 shrink-0 font-mono font-semibold text-ink">
+                    m.{a.no}
+                  </span>
+                  <HeatBar
+                    count={a.questionCount}
+                    max={top5[0].questionCount}
+                    className="flex-1"
+                  />
                   <span className="tabular w-14 shrink-0 text-right text-ink-soft">
                     {a.questionCount} soru
                   </span>
@@ -126,8 +184,10 @@ export function LawWorkspace({
 
       {law.articles.length === 0 && (
         <Card>
-          <CardTitle>Bu kanunda {law.questionCount} kaynaklı çıkmış soru</CardTitle>
-          <p className="mt-1 text-[14px] leading-relaxed text-ink-soft">
+          <CardTitle>
+            Bu kanunda {law.questionCount} kaynaklı çıkmış soru
+          </CardTitle>
+          <p className="type-body-sm mt-1 text-ink-soft">
             {law.questionCount > 0
               ? "Madde bazlı ısı ve fetih haritası, sorular madde etiketi kazandıkça burada belirecek. Şimdiden kanun genelinde çalışabilirsin."
               : "Bu mevzuatın çıkmış soruları bankaya eklendikçe burada görünecek — koçun eklendiğinde haber verir."}
@@ -138,9 +198,10 @@ export function LawWorkspace({
       {atlas && atlas.articles.length > 0 && (
         <Card>
           <CardTitle>
-            Fetih haritası — {conquered}/{atlas.articles.length} madde fethedildi
+            Fetih haritası — {conquered}/{atlas.articles.length} madde
+            fethedildi
           </CardTitle>
-          <p className="mb-3 mt-0.5 text-[13px] text-ink-soft">
+          <p className="type-body-sm mt-0.5 mb-3 text-ink-soft">
             Fetih = maddenin tüm çıkmış soruları en az bir kez doğru çözüldü.
           </p>
           <ConquestGrid
@@ -153,10 +214,11 @@ export function LawWorkspace({
               current: a.no === currentArticleNo,
             }))}
           />
-          <p className="tk-caption mt-3">
-            <span className="text-success">✓ yeşil</span> fethedildi ·{" "}
-            <span className="text-warning">◐ sarı</span> kısmi · gri hiç çalışılmadı
-          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Badge tone="success">fethedildi</Badge>
+            <Badge tone="warning">kısmi</Badge>
+            <Badge>çalışılmadı</Badge>
+          </div>
         </Card>
       )}
 
@@ -177,36 +239,53 @@ export function LawWorkspace({
     atlas && atlas.articles.length > 0
       ? Math.round(
           (atlas.articles.reduce((s, a) => s + a.clearedCount, 0) /
-            Math.max(1, atlas.articles.reduce((s, a) => s + a.questionCount, 0))) * 100,
+            Math.max(
+              1,
+              atlas.articles.reduce((s, a) => s + a.questionCount, 0),
+            )) *
+            100,
         )
       : null;
 
   const inspector = (
-    <div className="space-y-3">
-      <h4 className="tk-caption">Benim {law.name.split(" ")[0]} durumum</h4>
-      <Card>
-        <p className="text-[13px] text-ink-soft">Temizlenen soru</p>
-        <p className="tabular font-heading text-lg font-bold text-ink">
+    <div className="flex flex-col gap-3">
+      <h4 className="type-label text-ink-subtle">
+        Benim {law.name.split(" ")[0]} durumum
+      </h4>
+      <Card className="flex flex-col gap-1">
+        <span className="type-label text-ink-subtle">Temizlenen soru</span>
+        <p className="type-stat tabular text-ink">
           {atlas ? atlas.articles.reduce((s, a) => s + a.clearedCount, 0) : 0}
-          <span className="text-[13px] font-normal text-ink-soft">/{law.questionCount}</span>
-          {accuracy != null && <span className="ml-2 text-[13px] text-ink-soft">%{accuracy}</span>}
+          <span className="type-body-sm text-ink-soft">
+            /{law.questionCount}
+          </span>
+          {accuracy != null && (
+            <span className="type-body-sm ml-2 text-ink-soft">%{accuracy}</span>
+          )}
         </p>
       </Card>
       {atlas && atlas.articles.length > 0 && (
         <Card>
-          <p className="text-[13px] leading-relaxed text-ink-soft">
-            Fetih: <b className="text-ink">{conquered}/{atlas.articles.length}</b> madde —{" "}
+          <p className="type-body-sm text-ink-soft">
+            Fetih:{" "}
+            <b className="text-ink">
+              {conquered}/{atlas.articles.length}
+            </b>{" "}
+            madde —{" "}
             {atlas.articles.length - conquered > 0
               ? `"${law.name.split(" ")[0]} Fatihi" rozetine ${atlas.articles.length - conquered} madde kaldı.`
-              : "kanun fethedildi 🎉"}
+              : "kanun fethedildi."}
           </p>
         </Card>
       )}
       <Card>
-        <p className="text-[13px] leading-relaxed text-ink-soft">
+        <p className="type-body-sm text-ink-soft">
           Sınav bağlamı:{" "}
-          {law.exams.map((e) => `${e.examName} · ${e.sectionName} · %${e.weightPercent}`).join(" — ") ||
-            "müfredat dışı"}
+          {law.exams
+            .map(
+              (e) => `${e.examName} · ${e.sectionName} · %${e.weightPercent}`,
+            )
+            .join(" — ") || "müfredat dışı"}
         </p>
       </Card>
     </div>

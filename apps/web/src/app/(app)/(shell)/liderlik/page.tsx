@@ -3,7 +3,10 @@ import { api } from "@/lib/api";
 import type { LeaderboardBoard } from "@/lib/public-api";
 import { LeaderboardView } from "@/components/leaderboard/leaderboard-view";
 
-export const metadata: Metadata = { title: "Liderlik Tablosu", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Liderlik Tablosu",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 const EMPTY: LeaderboardBoard = {
@@ -18,18 +21,17 @@ const EMPTY: LeaderboardBoard = {
  * İlk veri sunucuda çekilir (hızlı ilk boya); dönem sekmeleri istemcide tazeler.
  */
 export default async function LiderlikPage() {
-  const board = await api<LeaderboardBoard>("/progress/leaderboard?period=today").catch(
-    () => EMPTY,
-  );
+  const board = await api<LeaderboardBoard>(
+    "/progress/leaderboard?period=today",
+  ).catch(() => EMPTY);
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 py-6 sm:py-8">
+    <div className="mx-auto w-full max-w-5xl px-4 py-6 md:px-6">
       <header className="mb-6">
-        <h1 className="font-heading text-2xl font-bold text-ink sm:text-3xl">
-          🏆 Quiz Liderlik Tablosu
-        </h1>
-        <p className="mt-1 max-w-2xl text-sm text-ink-soft sm:text-base">
-          Quiz çözdükçe puan kazan, seviyeni yükselt ve Türkiye genelindeki diğer adaylarla yarış.
+        <h1 className="type-title text-ink">Quiz Liderlik Tablosu</h1>
+        <p className="type-body-sm mt-1 max-w-2xl text-ink-soft">
+          Quiz çözdükçe puan kazan, seviyeni yükselt ve Türkiye genelindeki
+          diğer adaylarla yarış.
         </p>
       </header>
 

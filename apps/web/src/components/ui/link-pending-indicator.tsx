@@ -13,7 +13,7 @@ export function LinkPendingIndicator() {
       role="status"
       aria-label="Sayfa açılıyor"
     >
-      <span className="block h-full w-1/2 animate-pulse rounded-full bg-brand motion-reduce:animate-none" />
+      <span className="block h-full w-1/2 animate-pulse rounded-full bg-accent motion-reduce:animate-none" />
     </span>
   );
 }

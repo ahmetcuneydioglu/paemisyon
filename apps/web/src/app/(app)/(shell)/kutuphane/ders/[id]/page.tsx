@@ -1,26 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Lock } from "lucide-react";
 import { api } from "@/lib/api";
-import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/cn";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
+import { DataTable } from "@/components/ui/data-table";
 import { MasteryBar } from "@/components/ui/mastery-bar";
 import { CoachRail } from "@/components/shell/coach-rail";
 
 export const metadata: Metadata = { title: "Ders", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
-interface TopicNode {
+interface TopicLeaf {
   id: string;
   name: string;
   isPremium: boolean;
   solvedCount: number;
   mastery: number | null;
-  children: { id: string; name: string; isPremium: boolean; solvedCount: number; mastery: number | null }[];
+}
+interface TopicNode extends TopicLeaf {
+  children: TopicLeaf[];
 }
 interface TopicsResponse {
   topics: TopicNode[];
-  summary: { solvedCount: number; mastery: number | null; unresolvedWrongCount: number };
+  summary: {
+    solvedCount: number;
+    mastery: number | null;
+    unresolvedWrongCount: number;
+  };
 }
 interface Module {
   id: string;
@@ -33,11 +43,14 @@ interface Course {
   weightPercent: number;
 }
 
-/** Ders adını çöz: tercih edilen sınavın ders listesinde ara (ekstra endpoint istemez). */
 async function findCourse(courseId: string): Promise<Course | null> {
   const modules = await api<Module[]>("/catalog/modules");
-  for (const m of [...modules].sort((a, b) => Number(b.isPreferred) - Number(a.isPreferred))) {
-    const courses = await api<Course[]>(`/catalog/modules/${m.id}/courses`).catch(() => []);
+  for (const m of [...modules].sort(
+    (a, b) => Number(b.isPreferred) - Number(a.isPreferred),
+  )) {
+    const courses = await api<Course[]>(
+      `/catalog/modules/${m.id}/courses`,
+    ).catch(() => []);
     const hit = courses.find((c) => c.id === courseId);
     if (hit) return hit;
   }
@@ -45,11 +58,14 @@ async function findCourse(courseId: string): Promise<Course | null> {
 }
 
 /**
- * Ders detay — öğrenme merkezi (Doc 27 §3.3, wireframe 05): dersin tek yaşayan
- * mekânı. Konular tablosu + benim durumum; her satırdan tek tıkla tur
- * (2 dokunuş kuralı — Doc 25 Karar 2).
+ * Ders detay — öğrenme merkezi (Doc 27 §3.3): konular tablosu + benim durumum;
+ * her satırdan tek tıkla tur (2 dokunuş kuralı — Doc 25 Karar 2).
  */
-export default async function DersPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function DersPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const [course, data] = await Promise.all([
     findCourse(id),
@@ -61,33 +77,47 @@ export default async function DersPage({ params }: { params: Promise<{ id: strin
     { ...t, depth: 0 },
     ...t.children.map((c) => ({ ...c, depth: 1 })),
   ]);
+  const s = data.summary;
 
   return (
-    <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
       <div className="min-w-0 flex-1">
-        <nav className="tk-caption mb-3" aria-label="breadcrumb">
-          <Link href="/kutuphane" className="hover:text-ink">Kütüphane</Link> › Dersler ›{" "}
-          {course.name}
-        </nav>
+        <Breadcrumb
+          className="mb-3"
+          items={[
+            { label: "Kütüphane", href: "/kutuphane" },
+            { label: "Dersler", href: "/kutuphane" },
+            { label: course.name },
+          ]}
+        />
 
         <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <h1 className="font-heading text-xl font-bold text-ink">
-              {course.name}{" "}
-              <span className="tk-caption ml-1 rounded-full border border-line px-2 py-0.5 align-middle">
+          <div className="flex flex-col gap-1.5">
+            <div className="flex flex-wrap items-center gap-2">
+              <h1 className="type-title text-ink">{course.name}</h1>
+              <Badge>
                 %{course.weightPercent}
-                {course.sectionName !== course.name && <> · {course.sectionName}</>}
-              </span>
-            </h1>
-            <p className="mt-1 text-[13px] text-ink-soft">
-              {data.summary.solvedCount > 0 ? (
+                {course.sectionName !== course.name
+                  ? ` · ${course.sectionName}`
+                  : ""}
+              </Badge>
+            </div>
+            <p className="type-body-sm text-ink-soft">
+              {s.solvedCount > 0 ? (
                 <>
-                  Bu derste <b className="tabular text-ink">{data.summary.solvedCount}</b> soru
-                  çözdün · doğruluk{" "}
-                  <b className="tabular text-ink">%{data.summary.mastery ?? 0}</b>
-                  {data.summary.unresolvedWrongCount > 0 && (
-                    <> · <b className="tabular text-danger">{data.summary.unresolvedWrongCount}</b> çözülmemiş yanlış</>
-                  )}
+                  Bu derste <b className="tabular text-ink">{s.solvedCount}</b>{" "}
+                  soru çözdün · doğruluk{" "}
+                  <b className="tabular text-ink">%{s.mastery ?? 0}</b>
+                  {s.unresolvedWrongCount > 0 ? (
+                    <>
+                      {" "}
+                      ·{" "}
+                      <b className="tabular text-danger-ink">
+                        {s.unresolvedWrongCount}
+                      </b>{" "}
+                      çözülmemiş yanlış
+                    </>
+                  ) : null}
                 </>
               ) : (
                 <>Bu derse henüz başlamadın — ilk tur haritanı başlatır.</>
@@ -101,51 +131,60 @@ export default async function DersPage({ params }: { params: Promise<{ id: strin
           </ButtonLink>
         </div>
 
-        <Card className="overflow-x-auto p-0">
-          <table className="w-full text-[14px]">
-            <thead>
-              <tr className="tk-caption border-b border-line text-left">
-                <th className="px-4 py-2.5 font-semibold">Konu</th>
-                <th className="px-3 py-2.5 text-right font-semibold">Çözülen</th>
-                <th className="px-3 py-2.5 font-semibold">Doğruluğum</th>
-                <th className="px-4 py-2.5" />
-              </tr>
-            </thead>
-            <tbody>
-              {flat.map((t) => (
-                <tr key={t.id} className="border-b border-line last:border-0">
-                  <td
-                    className={["px-4 py-2.5 text-ink", t.depth ? "pl-8 text-ink-soft" : "font-medium"].join(" ")}
-                  >
-                    {t.name}
-                    {t.isPremium && (
-                      <span className="ml-1.5" title="Premium konu" aria-label="premium">🔒</span>
-                    )}
-                  </td>
-                  <td className="tabular px-3 py-2.5 text-right text-ink-soft">
-                    {t.solvedCount > 0 ? t.solvedCount : "—"}
-                  </td>
-                  <td className="px-3 py-2.5">
-                    <MasteryBar value={t.mastery} />
-                  </td>
-                  <td className="px-4 py-2.5 text-right">
-                    <Link
-                      href={`/seans?topicId=${t.id}&scope=${encodeURIComponent(`${course.name} · ${t.name}`)}`}
-                      className="tk-interactive inline-block rounded-full border border-line px-3 py-1 text-[12px] font-bold text-ink-soft hover:border-brand hover:text-brand"
-                    >
-                      {t.solvedCount > 0 ? "çalış" : "başla"}
-                    </Link>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          {flat.length === 0 && (
-            <p className="p-6 text-center text-[14px] text-ink-soft">
-              Bu dersin konuları hazırlanıyor.
-            </p>
-          )}
-        </Card>
+        <DataTable
+          caption={`${course.name} konuları`}
+          rows={flat}
+          rowKey={(t) => t.id}
+          empty="Bu dersin konuları hazırlanıyor."
+          columns={[
+            {
+              key: "konu",
+              header: "Konu",
+              cell: (t) => (
+                <span
+                  className={cn(
+                    "inline-flex items-center gap-1.5",
+                    t.depth ? "pl-4 text-ink-soft" : "type-subhead text-ink",
+                  )}
+                >
+                  {t.name}
+                  {t.isPremium ? (
+                    <Lock
+                      size={14}
+                      className="text-ink-subtle"
+                      aria-label="premium konu"
+                    />
+                  ) : null}
+                </span>
+              ),
+            },
+            {
+              key: "cozulen",
+              header: "Çözülen",
+              align: "right",
+              hideBelowMd: true,
+              cell: (t) => (t.solvedCount > 0 ? t.solvedCount : "—"),
+            },
+            {
+              key: "dogruluk",
+              header: "Doğruluğum",
+              cell: (t) => <MasteryBar value={t.mastery} />,
+            },
+            {
+              key: "eylem",
+              header: "",
+              align: "right",
+              cell: (t) => (
+                <Link
+                  href={`/seans?topicId=${t.id}&scope=${encodeURIComponent(`${course.name} · ${t.name}`)}`}
+                  className="tk-interactive inline-flex h-9 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
+                >
+                  {t.solvedCount > 0 ? "Çalış" : "Başla"}
+                </Link>
+              ),
+            },
+          ]}
+        />
       </div>
 
       <CoachRail />

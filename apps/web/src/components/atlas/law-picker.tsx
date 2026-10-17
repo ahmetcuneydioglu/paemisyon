@@ -6,6 +6,7 @@ import { MixedLawSessionCard } from "@/components/atlas/mixed-law-session-card";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { SegmentedControl } from "@/components/ui/segmented-control";
 import { SelectableCard } from "@/components/ui/selectable-card";
+import { ArrowRight } from "lucide-react";
 import type { LawSummary } from "@/lib/public-api";
 
 const ADETLER = [10, 15, 25] as const;
@@ -21,7 +22,9 @@ function depodanOku(courseId: string): string[] {
   try {
     const ham = localStorage.getItem(depoAnahtari(courseId));
     const liste: unknown = ham ? JSON.parse(ham) : null;
-    return Array.isArray(liste) ? liste.filter((x): x is string => typeof x === "string") : [];
+    return Array.isArray(liste)
+      ? liste.filter((x): x is string => typeof x === "string")
+      : [];
   } catch {
     return []; // gizli sekme / depolama kapalı — boş başla
   }
@@ -119,9 +122,12 @@ export function LawPicker({
 
       {secimModu ? (
         <>
-          <p className="mb-3 text-[13px] leading-relaxed text-ink-soft" id={`secim-aciklama-${courseId}`}>
-            Çalıştığın kanunları işaretle; tur yalnız onlardan, kanunlar arasında dengeli kurulur.
-            En az {EN_AZ_MEVZUAT} kanun seç.
+          <p
+            className="type-body-sm mb-3 text-ink-soft"
+            id={`secim-aciklama-${courseId}`}
+          >
+            Çalıştığın kanunları işaretle; tur yalnız onlardan, kanunlar
+            arasında dengeli kurulur. En az {EN_AZ_MEVZUAT} kanun seç.
             {secili.length > 0 && " Son seçimin hatırlandı."}
           </p>
           <div
@@ -133,7 +139,6 @@ export function LawPicker({
             {sirali.map((l) => (
               <SelectableCard
                 key={l.slug}
-                accent="atlas"
                 selected={seciliKume.has(l.topicId)}
                 disabled={l.questionCount === 0}
                 disabledHint="Henüz çıkmış soru yok"
@@ -146,21 +151,21 @@ export function LawPicker({
           </div>
 
           {/* Yapışkan özet çubuğu — seçim ne kadar uzun olursa olsun eylem elin altında. */}
-          <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-card backdrop-blur">
+          <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur">
             {/* Telefonda iki satır (özet + eylemler), geniş ekranda tek satır —
                 çubuk içeriği örtmesin diye kompakt tutulur. */}
             <div className="mx-auto flex max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
               <div className="flex items-center justify-between gap-2">
-                <p className="text-[13px] text-ink" aria-live="polite">
+                <p className="type-body-sm text-ink" aria-live="polite">
                   {secili.length < EN_AZ_MEVZUAT ? (
                     <>
-                      <strong>{secili.length} mevzuat</strong> seçildi · en az {EN_AZ_MEVZUAT}{" "}
-                      kanun gerekir
+                      <strong>{secili.length} mevzuat</strong> seçildi · en az{" "}
+                      {EN_AZ_MEVZUAT} kanun gerekir
                     </>
                   ) : (
                     <>
-                      <strong>{secili.length} mevzuat</strong> · {seciliSoru} çıkmış soru ·{" "}
-                      {count} soruluk tur
+                      <strong>{secili.length} mevzuat</strong> · {seciliSoru}{" "}
+                      çıkmış soru · {count} soruluk tur
                     </>
                   )}
                 </p>
@@ -179,7 +184,6 @@ export function LawPicker({
               <div className="flex items-center gap-2">
                 <SegmentedControl<Adet>
                   label="Soru sayısı"
-                  accent="atlas"
                   value={adet}
                   onChange={setAdet}
                   options={ADETLER.map((a) => ({ value: a, label: String(a) }))}
@@ -188,18 +192,16 @@ export function LawPicker({
                 {baslatilabilir ? (
                   <ButtonLink
                     href={href}
-                    variant="atlas"
                     size="lg"
                     className="flex-1 whitespace-nowrap sm:flex-none"
                   >
                     <span className="sm:hidden">Çözmeye başla</span>
                     <span className="max-sm:hidden">Seçili mevzuattan çöz</span>
-                    <span aria-hidden>→</span>
+                    <ArrowRight size={18} aria-hidden />
                   </ButtonLink>
                 ) : (
                   <Button
                     type="button"
-                    variant="atlas"
                     size="lg"
                     disabled
                     className="flex-1 whitespace-nowrap sm:flex-none"

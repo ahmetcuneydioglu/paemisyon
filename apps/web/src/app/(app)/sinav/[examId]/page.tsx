@@ -12,16 +12,24 @@ export const dynamic = "force-dynamic";
  * Sınav çözme — L3 odak (Doc 27 §3.8). Kimlik (app) layout'unda garanti.
  * Oturum SUNUCUDA başlatılır/devam ettirilir; hata kodları ekranlara eşlenir.
  */
-export default async function SinavPage({ params }: { params: Promise<{ examId: string }> }) {
+export default async function SinavPage({
+  params,
+}: {
+  params: Promise<{ examId: string }>;
+}) {
   const { examId } = await params;
 
   let start: StartPayload;
   try {
-    start = await api<StartPayload>(`/exams/${examId}/start`, { method: "POST" });
+    start = await api<StartPayload>(`/exams/${examId}/start`, {
+      method: "POST",
+    });
   } catch (e) {
     if (e instanceof ApiError) {
-      const attemptId = (e.details as { attemptId?: string } | undefined)?.attemptId;
-      if (e.code === "EXAM_ALREADY_TAKEN" && attemptId) redirect(`/sonuc/${attemptId}`);
+      const attemptId = (e.details as { attemptId?: string } | undefined)
+        ?.attemptId;
+      if (e.code === "EXAM_ALREADY_TAKEN" && attemptId)
+        redirect(`/sonuc/${attemptId}`);
       return <ExamBlocked code={e.code} message={e.message} />;
     }
     throw e;
@@ -46,7 +54,9 @@ function ExamBlocked({ code, message }: { code: string; message: string }) {
           {icon}
         </p>
         <CardTitle className="mt-3 text-[17px]">{title}</CardTitle>
-        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{message}</p>
+        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+          {message}
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ButtonLink
             href="/denemeler"

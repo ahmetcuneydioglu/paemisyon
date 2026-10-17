@@ -1,29 +1,45 @@
+import { cn } from "@/lib/cn";
+
 /**
- * Hakimiyet çubuğu (Doc 26 #10): % + renk eşiği (danger<40, warning<60).
- * Renk tek başına anlam taşımaz — yüzde her zaman sayıyla yazılır (a11y).
- * `value === null` → hiç çalışılmamış ("yeni"), %0 ile karıştırılmaz.
+ * Hakimiyet çubuğu: % + eşik tonu (danger<40, warning<60, success). Renk tek başına
+ * anlam taşımaz — yüzde her zaman sayıyla yazılır. `value === null` → "—" (yeni).
  */
-export function MasteryBar({ value, className }: { value: number | null; className?: string }) {
+export function MasteryBar({
+  value,
+  className,
+}: {
+  value: number | null;
+  className?: string;
+}) {
   if (value == null) {
     return (
-      <span className={["tk-caption", className].filter(Boolean).join(" ")}>—</span>
+      <span className={cn("type-label text-ink-subtle", className)}>—</span>
     );
   }
-  const tone = value < 40 ? "bg-danger" : value < 60 ? "bg-warning" : "bg-success";
-  const text = value < 40 ? "text-danger" : value < 60 ? "text-warning" : "text-success";
+  const fill =
+    value < 40 ? "bg-danger" : value < 60 ? "bg-warning" : "bg-success";
+  const text =
+    value < 40
+      ? "text-danger-ink"
+      : value < 60
+        ? "text-warning-ink"
+        : "text-success-ink";
   return (
-    <span className={["flex items-center gap-2", className].filter(Boolean).join(" ")}>
+    <span className={cn("inline-flex items-center gap-2", className)}>
       <span
-        className="h-1.5 w-16 overflow-hidden rounded-full bg-line"
+        className="h-1.5 w-16 overflow-hidden rounded-pill bg-surface-alt"
         role="meter"
         aria-valuenow={value}
         aria-valuemin={0}
         aria-valuemax={100}
         aria-label={`Hakimiyet yüzde ${value}`}
       >
-        <span className={["block h-full rounded-full", tone].join(" ")} style={{ width: `${value}%` }} />
+        <span
+          className={cn("block h-full rounded-pill", fill)}
+          style={{ width: `${value}%` }}
+        />
       </span>
-      <span className={["tabular text-[13px] font-bold", text].join(" ")}>%{value}</span>
+      <span className={cn("type-subhead tabular", text)}>%{value}</span>
     </span>
   );
 }

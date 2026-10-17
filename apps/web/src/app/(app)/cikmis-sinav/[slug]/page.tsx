@@ -126,7 +126,9 @@ function PremiumKapisi({ mesaj }: { mesaj: string }) {
         <h1 className="mt-3 font-heading text-[17px] font-bold text-ink">
           Premium çıkmış sınav
         </h1>
-        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{mesaj}</p>
+        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+          {mesaj}
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>
           <ButtonLink href="/paem-cikmis-sorular" variant="secondary">

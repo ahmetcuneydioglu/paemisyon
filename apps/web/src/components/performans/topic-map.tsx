@@ -2,7 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { Card } from "@/components/ui/card";
+import { ChevronDown, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/cn";
+import { Chip } from "@/components/ui/chip";
 import { MasteryBar } from "@/components/ui/mastery-bar";
 
 export interface TopicProgressRow {
@@ -15,9 +17,9 @@ export interface TopicProgressRow {
 }
 
 /**
- * Konu Haritası — genişleyebilir mastery tablosu (Doc 27 §3.9, wireframe 12).
- * Ders → konu kırılımı; filtreler webe özgü ("yalnız zayıflar" açılışta KAPALI —
- * önce dürüst genel fotoğraf). Kırmızı hücreden tek tık kapatma turu.
+ * Konu Haritası — genişleyebilir hakimiyet tablosu (Doc 27 §3.9). Ders → konu kırılımı;
+ * "yalnız zayıflar" açılışta KAPALI (önce dürüst genel fotoğraf). Kırmızı satırdan tek tık
+ * kapatma turu.
  */
 export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
   const [onlyWeak, setOnlyWeak] = useState(false);
@@ -62,28 +64,20 @@ export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
     });
   }
 
+  const th = "type-label px-3 py-3 text-ink-subtle";
   return (
-    <div>
-      {/* Filtre çubuğu */}
-      <div className="mb-3 flex flex-wrap items-center gap-2">
-        <button
-          type="button"
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <Chip
+          label="Yalnız zayıflar (<%60)"
+          selected={onlyWeak}
           onClick={() => setOnlyWeak((v) => !v)}
-          aria-pressed={onlyWeak}
-          className={[
-            "tk-interactive cursor-pointer rounded-full border px-3 py-1 text-[13px] font-bold",
-            onlyWeak
-              ? "border-danger bg-danger/10 text-danger"
-              : "border-line text-ink-soft hover:text-ink",
-          ].join(" ")}
-        >
-          Yalnız zayıflar (&lt;%60)
-        </button>
+        />
         <select
           value={courseFilter}
           onChange={(e) => setCourseFilter(e.target.value)}
           aria-label="Ders filtresi"
-          className="cursor-pointer rounded-full border border-line bg-surface px-3 py-1 text-[13px] font-bold text-ink-soft"
+          className="type-subhead h-11 cursor-pointer rounded-pill border border-line bg-surface px-3.5 text-ink outline-none focus:border-ink-soft"
         >
           <option value="">Ders: tümü</option>
           {courses.map((c) => (
@@ -92,58 +86,72 @@ export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
             </option>
           ))}
         </select>
-        <span className="tk-caption ml-auto">
-          {rows.length} konu izleniyor · renk + ok + sayı birlikte okunur
+        <span className="type-body-sm ml-auto text-ink-subtle">
+          {rows.length} konu izleniyor · renk + sayı birlikte okunur
         </span>
       </div>
 
-      <Card className="p-0">
-        <table className="w-full text-[14px]">
+      <div className="overflow-x-auto rounded-card border border-line bg-surface">
+        <table className="w-full border-collapse">
           <thead>
-            <tr className="tk-caption border-b border-line text-left">
-              <th className="w-8 px-3 py-2.5" />
-              <th className="py-2.5 font-semibold">Ders / konu</th>
-              <th className="px-3 py-2.5 text-right font-semibold">Çözülen</th>
-              <th className="px-3 py-2.5 font-semibold">Doğruluk</th>
-              <th className="px-4 py-2.5" />
+            <tr className="border-b border-line text-left">
+              <th className={cn(th, "w-10")} />
+              <th className={th}>Ders / konu</th>
+              <th className={cn(th, "text-right")}>Çözülen</th>
+              <th className={th}>Doğruluk</th>
+              <th className={th} />
             </tr>
           </thead>
           <tbody>
             {visible.map((c) => {
-              const open = openCourses.has(c.name) || !!courseFilter || onlyWeak;
+              const open =
+                openCourses.has(c.name) || !!courseFilter || onlyWeak;
               return [
                 <tr
                   key={c.name}
-                  className="tk-interactive cursor-pointer border-b border-line hover:bg-line/20"
+                  className="tk-interactive cursor-pointer border-b border-line hover:bg-surface-alt/60"
                   onClick={() => toggle(c.name)}
                 >
-                  <td className="px-3 py-2.5 text-ink-soft" aria-hidden>
-                    {open ? "▾" : "▸"}
+                  <td className="px-3 py-3 text-ink-subtle" aria-hidden>
+                    {open ? (
+                      <ChevronDown size={16} />
+                    ) : (
+                      <ChevronRight size={16} />
+                    )}
                   </td>
-                  <td className="py-2.5 font-bold text-ink">{c.name}</td>
-                  <td className="tabular px-3 py-2.5 text-right text-ink-soft">{c.solved}</td>
-                  <td className="px-3 py-2.5">
+                  <td className="type-subhead py-3 text-ink">{c.name}</td>
+                  <td className="type-body-sm tabular px-3 py-3 text-right text-ink-soft">
+                    {c.solved}
+                  </td>
+                  <td className="px-3 py-3">
                     <MasteryBar value={c.solved > 0 ? c.mastery : null} />
                   </td>
                   <td />
                 </tr>,
                 ...(open
                   ? c.topics.map((t) => (
-                      <tr key={t.topicId} className="border-b border-line last:border-0">
+                      <tr
+                        key={t.topicId}
+                        className="border-b border-line last:border-0"
+                      >
                         <td />
-                        <td className="py-2 pl-4 text-ink-soft">{t.topicName}</td>
-                        <td className="tabular px-3 py-2 text-right text-ink-soft">
+                        <td className="type-body-sm py-2.5 pl-4 text-ink-soft">
+                          {t.topicName}
+                        </td>
+                        <td className="type-body-sm tabular px-3 py-2.5 text-right text-ink-soft">
                           {t.solvedCount}
                         </td>
-                        <td className="px-3 py-2">
-                          <MasteryBar value={t.solvedCount > 0 ? t.mastery : null} />
+                        <td className="px-3 py-2.5">
+                          <MasteryBar
+                            value={t.solvedCount > 0 ? t.mastery : null}
+                          />
                         </td>
-                        <td className="px-4 py-2 text-right">
+                        <td className="px-3 py-2.5 text-right">
                           <Link
                             href={`/seans?topicId=${t.topicId}&scope=${encodeURIComponent(`${t.topicName} · kapatma`)}`}
-                            className="tk-interactive inline-block rounded-full border border-line px-3 py-1 text-[12px] font-bold text-ink-soft hover:border-brand hover:text-brand"
+                            className="tk-interactive inline-flex h-9 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
                           >
-                            kapat
+                            Kapat
                           </Link>
                         </td>
                       </tr>
@@ -153,14 +161,14 @@ export function TopicMap({ rows }: { rows: TopicProgressRow[] }) {
             })}
           </tbody>
         </table>
-        {visible.length === 0 && (
-          <p className="p-6 text-center text-[14px] text-ink-soft">
+        {visible.length === 0 ? (
+          <p className="type-body-sm p-6 text-center text-ink-soft">
             {onlyWeak
               ? "Bu filtrede zayıf konu yok — harita temiz görünüyor."
               : "Henüz izlenecek konu verisi yok — birkaç tur sonra harita burada oluşur."}
           </p>
-        )}
-      </Card>
+        ) : null}
+      </div>
     </div>
   );
 }

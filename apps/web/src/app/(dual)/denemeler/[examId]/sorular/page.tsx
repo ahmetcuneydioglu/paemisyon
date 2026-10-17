@@ -4,7 +4,10 @@ import type { ReviewQuestion } from "@/lib/types";
 import { EmptyState } from "@/components/empty-state";
 import { ReviewList } from "@/components/review-list";
 
-export const metadata: Metadata = { title: "Sınav Soruları", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Sınav Soruları",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 interface BrowsePayload {
@@ -14,7 +17,11 @@ interface BrowsePayload {
 }
 
 /** Sınav sonrası serbest görüntüleme — eski /sorular (Doc 18 §7). Cevap anahtarı YOK. */
-export default async function SorularPage({ params }: { params: Promise<{ examId: string }> }) {
+export default async function SorularPage({
+  params,
+}: {
+  params: Promise<{ examId: string }>;
+}) {
   const { examId } = await params;
   let data: BrowsePayload;
   try {
@@ -27,7 +34,11 @@ export default async function SorularPage({ params }: { params: Promise<{ examId
     return (
       <div>
         <h2 className="head2">Sınav Soruları</h2>
-        <EmptyState icon="icon-question" title="Görüntülenemiyor" message={msg} />
+        <EmptyState
+          icon="icon-question"
+          title="Görüntülenemiyor"
+          message={msg}
+        />
       </div>
     );
   }
@@ -35,8 +46,9 @@ export default async function SorularPage({ params }: { params: Promise<{ examId
   return (
     <div>
       <h2 className="head2">{data.title} — Sorular</h2>
-      <p className="mx-auto max-w-3xl px-4 pt-4 text-center text-[13px] text-neutral-500">
-        Bu ekranda sorular incelemelik olarak gösterilir; doğru cevaplar yer almaz.
+      <p className="mx-auto max-w-3xl px-4 pt-4 text-center text-[13px] text-ink-soft">
+        Bu ekranda sorular incelemelik olarak gösterilir; doğru cevaplar yer
+        almaz.
       </p>
       <div className="mx-auto max-w-6xl px-4 py-4">
         <ReviewList questions={data.questions} showAnswers={false} />

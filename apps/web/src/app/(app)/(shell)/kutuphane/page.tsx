@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight, RotateCcw, Scale, Star } from "lucide-react";
 import { api } from "@/lib/api";
+import { cn } from "@/lib/cn";
+import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MasteryBar } from "@/components/ui/mastery-bar";
 import { CoachRail } from "@/components/shell/coach-rail";
 
-export const metadata: Metadata = { title: "Kütüphane", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Kütüphane",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 interface Module {
@@ -30,9 +36,9 @@ interface TopicProgressRow {
 }
 
 /**
- * Kütüphane ana (Doc 27 §3.3, wireframe 04): kapsam haritası — dersler
- * müfredat ağırlığına göre, her kartta benim durumum. Mevzuat rafı ayrı kapı.
- * Koç rayı ilk kez burada (onay: yalnız L2).
+ * Kütüphane ana (Doc 27 §3.3): kapsam haritası — dersler müfredat ağırlığına göre,
+ * her kartta benim durumum. Üç kapı (Mevzuat, Yanlışlarım, Favorilerim) tek vurgu
+ * diliyle; ikon farkı, renk farkı değil (Doc 49 §1.1).
  */
 export default async function KutuphanePage({
   searchParams,
@@ -44,7 +50,9 @@ export default async function KutuphanePage({
 
   const [modules, progress, wrongs] = await Promise.all([
     api<Module[]>("/catalog/modules"),
-    api<TopicProgressRow[]>("/progress/topics").catch(() => [] as TopicProgressRow[]),
+    api<TopicProgressRow[]>("/progress/topics").catch(
+      () => [] as TopicProgressRow[],
+    ),
     api<{ questionId: string }[]>("/review/wrong-answers").catch(
       () => [] as { questionId: string }[],
     ),
@@ -57,7 +65,6 @@ export default async function KutuphanePage({
     ? await api<Course[]>(`/catalog/modules/${current.id}/courses`)
     : [];
 
-  // Ders bazlı benim durumum: konu ilerlemelerini derse topla.
   const byCourse = new Map<string, { solved: number; correct: number }>();
   for (const r of progress) {
     const acc = byCourse.get(r.courseName) ?? { solved: 0, correct: 0 };
@@ -70,111 +77,120 @@ export default async function KutuphanePage({
     return p && p.solved > 0 ? Math.round((p.correct / p.solved) * 100) : null;
   };
 
+  const gates = [
+    {
+      href: "/kanunlar",
+      icon: Scale,
+      title: "Mevzuat — Madde Atlası",
+      body: "Kanun kanun ısı haritası ve fetih ilerlemen.",
+    },
+    {
+      href: "/kutuphane/yanlislar",
+      icon: RotateCcw,
+      title: "Yanlışlarım",
+      body:
+        wrongs.length > 0
+          ? `${wrongs.length} soru kuyrukta — doğru çözünce düşer.`
+          : "Kuyruk temiz — sistem yanlışlarını unutmaz.",
+    },
+    {
+      href: "/kutuphane/favoriler",
+      icon: Star,
+      title: "Favorilerim",
+      body: "Yıldızladığın sorular — toplu çöz.",
+    },
+  ];
+
   return (
-    <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
       <div className="min-w-0 flex-1">
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
-          <h1 className="font-heading text-xl font-bold text-ink">Kütüphane</h1>
-          {modules.length > 1 && (
+          <h1 className="type-title text-ink">Kütüphane</h1>
+          {modules.length > 1 ? (
             <nav className="flex gap-1.5" aria-label="Sınav bağlamı">
-              {modules.map((m) => (
-                <Link
-                  key={m.id}
-                  href={`/kutuphane?sinav=${m.key}`}
-                  aria-current={m.id === current?.id ? "page" : undefined}
-                  className={[
-                    "tk-interactive rounded-full border px-3 py-1 text-[13px] font-bold",
-                    m.id === current?.id
-                      ? "border-brand bg-brand/10 text-brand"
-                      : "border-line text-ink-soft hover:text-ink",
-                  ].join(" ")}
-                >
-                  {m.name}
-                </Link>
-              ))}
+              {modules.map((m) => {
+                const active = m.id === current?.id;
+                return (
+                  <Link
+                    key={m.id}
+                    href={`/kutuphane?sinav=${m.key}`}
+                    aria-current={active ? "page" : undefined}
+                    className={cn(
+                      "tk-interactive inline-flex h-10 items-center rounded-pill border px-3.5 type-subhead",
+                      active
+                        ? "border-accent bg-accent text-on-accent"
+                        : "border-line text-ink hover:border-ink-soft",
+                    )}
+                  >
+                    {m.name}
+                  </Link>
+                );
+              })}
             </nav>
-          )}
+          ) : null}
         </div>
 
-        {/* Kütüphane kapıları: Mevzuat (taç) + Yanlışlarım + Favorilerim */}
-        <div className="mb-5 grid gap-3 lg:grid-cols-3">
-          <Link
-            href="/kanunlar"
-            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-atlas/40 bg-atlas/5 p-4 hover:border-atlas"
-          >
-            <span>
-              <span className="font-heading text-[15px] font-bold text-ink">
-                ⚖️ Mevzuat — Madde Atlası
+        <div className="mb-6 grid gap-3 lg:grid-cols-3">
+          {gates.map(({ href, icon: Icon, title, body }) => (
+            <Link
+              key={href}
+              href={href}
+              className="tk-interactive flex items-center gap-3 rounded-card border border-line bg-surface p-4 hover:border-ink-soft"
+            >
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-control bg-accent-soft text-accent-ink">
+                <Icon size={20} strokeWidth={1.75} aria-hidden />
               </span>
-              <span className="mt-0.5 block text-[13px] text-ink-soft">
-                Kanun kanun ısı haritası ve fetih ilerlemen.
+              <span className="min-w-0 flex-1">
+                <span className="type-subhead block text-ink">{title}</span>
+                <span className="type-body-sm block text-ink-soft">{body}</span>
               </span>
-            </span>
-            <span aria-hidden className="text-atlas">→</span>
-          </Link>
-          <Link
-            href="/kutuphane/yanlislar"
-            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-danger/30 bg-danger/5 p-4 hover:border-danger/60"
-          >
-            <span>
-              <span className="font-heading text-[15px] font-bold text-ink">
-                🔁 Yanlışlarım
-              </span>
-              <span className="mt-0.5 block text-[13px] text-ink-soft">
-                {wrongs.length > 0
-                  ? `${wrongs.length} soru kuyrukta — doğru çözünce düşer.`
-                  : "Kuyruk temiz — sistem yanlışlarını unutmaz."}
-              </span>
-            </span>
-            <span aria-hidden className="text-danger">→</span>
-          </Link>
-          <Link
-            href="/kutuphane/favoriler"
-            className="tk-interactive flex items-center justify-between gap-3 rounded-md border border-streak/40 bg-streak/5 p-4 hover:border-streak"
-          >
-            <span>
-              <span className="font-heading text-[15px] font-bold text-ink">★ Favorilerim</span>
-              <span className="mt-0.5 block text-[13px] text-ink-soft">
-                Yıldızladığın sorular — toplu çöz.
-              </span>
-            </span>
-            <span aria-hidden className="text-streak">→</span>
-          </Link>
+              <ArrowRight
+                size={18}
+                className="shrink-0 text-ink-subtle"
+                aria-hidden
+              />
+            </Link>
+          ))}
         </div>
 
-        <p className="tk-caption mb-3">
+        <p className="type-label mb-3 text-ink-subtle">
           {current?.name} müfredatı · bölüm ağırlığına göre
         </p>
         <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {[...courses]
             .sort((a, b) => b.weightPercent - a.weightPercent)
             .map((c) => (
-              <Link key={c.id} href={`/kutuphane/ders/${c.id}`} className="group">
-                <Card className="tk-interactive h-full group-hover:border-ink-soft">
+              <Link
+                key={c.id}
+                href={`/kutuphane/ders/${c.id}`}
+                className="group"
+              >
+                <Card className="tk-interactive flex h-full flex-col gap-3 group-hover:border-ink-soft">
                   <div className="flex items-start justify-between gap-2">
-                    <p className="font-heading text-[15px] font-bold leading-snug text-ink">
-                      {c.name}
-                    </p>
-                    <span className="tk-caption shrink-0 rounded-full border border-line px-2 py-0.5">
-                      %{c.weightPercent}
-                    </span>
+                    <p className="type-subhead text-ink">{c.name}</p>
+                    <Badge>%{c.weightPercent}</Badge>
                   </div>
-                  {c.sectionName !== c.name && (
-                    <p className="mt-1 text-[12px] text-ink-soft">{c.sectionName}</p>
-                  )}
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="tk-caption">benim durumum</span>
+                  {c.sectionName !== c.name ? (
+                    <p className="type-body-sm -mt-2 text-ink-soft">
+                      {c.sectionName}
+                    </p>
+                  ) : null}
+                  <div className="mt-auto flex items-center justify-between">
+                    <span className="type-label text-ink-subtle">
+                      benim durumum
+                    </span>
                     <MasteryBar value={masteryOf(c.name)} />
                   </div>
                 </Card>
               </Link>
             ))}
         </div>
-        {courses.length === 0 && (
-          <Card className="border-dashed text-center text-[14px] text-ink-soft">
-            Bu sınavın müfredatı hazırlanıyor — koçun eklendiğinde haber verecek.
+        {courses.length === 0 ? (
+          <Card className="type-body-sm border-dashed text-center text-ink-soft">
+            Bu sınavın müfredatı hazırlanıyor — koçun eklendiğinde haber
+            verecek.
           </Card>
-        )}
+        ) : null}
       </div>
 
       <CoachRail />

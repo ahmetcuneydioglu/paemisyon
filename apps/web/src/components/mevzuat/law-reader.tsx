@@ -5,6 +5,17 @@ import Link from "next/link";
 import { apiClient } from "@/lib/api-client";
 import { ThreePane } from "@/components/shell/three-pane";
 import type { MevzuatReading } from "@/lib/public-api";
+import {
+  Bookmark,
+  BookmarkCheck,
+  ExternalLink,
+  Highlighter,
+  StickyNote,
+  Target,
+} from "lucide-react";
+import { cn } from "@/lib/cn";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 /**
  * Girişli okuyucu (Doc 29 §33): AĞAÇ (içindekiler) | MADDELER | INSPECTOR
@@ -20,11 +31,16 @@ interface Highlight {
 }
 
 /** Seçimin, madde metin kabı içindeki karakter aralığı (mark'lar hesaba katılır). */
-function selectionOffsets(container: HTMLElement): { start: number; end: number } | null {
+function selectionOffsets(
+  container: HTMLElement,
+): { start: number; end: number } | null {
   const sel = window.getSelection();
   if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
   const range = sel.getRangeAt(0);
-  if (!container.contains(range.startContainer) || !container.contains(range.endContainer)) {
+  if (
+    !container.contains(range.startContainer) ||
+    !container.contains(range.endContainer)
+  ) {
     return null;
   }
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
@@ -42,7 +58,9 @@ function selectionOffsets(container: HTMLElement): { start: number; end: number 
 
 export function LawReader({ law }: { law: MevzuatReading }) {
   const [bookmarked, setBookmarked] = useState<Set<string>>(new Set());
-  const [highlights, setHighlights] = useState<Map<string, Highlight[]>>(new Map());
+  const [highlights, setHighlights] = useState<Map<string, Highlight[]>>(
+    new Map(),
+  );
   const [notes, setNotes] = useState<Map<string, string>>(new Map());
   const [noteEditing, setNoteEditing] = useState<string | null>(null);
   const [noteDraft, setNoteDraft] = useState("");
@@ -62,16 +80,21 @@ export function LawReader({ law }: { law: MevzuatReading }) {
 
   // Kayıtlı maddeler + işaret/not katmanı.
   useEffect(() => {
-    apiClient<{ items: { lawSlug: string; no: string }[] }>("/me/article-bookmarks")
+    apiClient<{ items: { lawSlug: string; no: string }[] }>(
+      "/me/article-bookmarks",
+    )
       .then((r) =>
         setBookmarked(
-          new Set(r.items.filter((b) => b.lawSlug === law.slug).map((b) => b.no)),
+          new Set(
+            r.items.filter((b) => b.lawSlug === law.slug).map((b) => b.no),
+          ),
         ),
       )
       .catch(() => {});
-    apiClient<{ highlights: Highlight[]; notes: { no: string; text: string }[] }>(
-      `/me/article-annotations?lawSlug=${encodeURIComponent(law.slug)}`,
-    )
+    apiClient<{
+      highlights: Highlight[];
+      notes: { no: string; text: string }[];
+    }>(`/me/article-annotations?lawSlug=${encodeURIComponent(law.slug)}`)
       .then((r) => {
         const byNo = new Map<string, Highlight[]>();
         for (const h of r.highlights) {
@@ -104,7 +127,13 @@ export function LawReader({ law }: { law: MevzuatReading }) {
           const next = new Map(m);
           next.set(p.no, [
             ...(next.get(p.no) ?? []),
-            { id: r.id!, no: p.no, startOffset: p.start, endOffset: p.end, snippet: p.snippet },
+            {
+              id: r.id!,
+              no: p.no,
+              startOffset: p.start,
+              endOffset: p.end,
+              snippet: p.snippet,
+            },
           ]);
           return next;
         });
@@ -115,10 +144,15 @@ export function LawReader({ law }: { law: MevzuatReading }) {
   const removeHighlight = (no: string, id: string) => {
     setHighlights((m) => {
       const next = new Map(m);
-      next.set(no, (next.get(no) ?? []).filter((h) => h.id !== id));
+      next.set(
+        no,
+        (next.get(no) ?? []).filter((h) => h.id !== id),
+      );
       return next;
     });
-    apiClient(`/me/article-highlights/${id}`, { method: "DELETE" }).catch(() => {});
+    apiClient(`/me/article-highlights/${id}`, { method: "DELETE" }).catch(
+      () => {},
+    );
   };
 
   const saveNote = (no: string) => {
@@ -143,7 +177,10 @@ export function LawReader({ law }: { law: MevzuatReading }) {
     for (const h of hs) {
       let { startOffset: s0, endOffset: e0 } = h;
       const valid =
-        s0 >= 0 && e0 <= a.text.length && e0 > s0 && a.text.slice(s0, e0) === h.snippet;
+        s0 >= 0 &&
+        e0 <= a.text.length &&
+        e0 > s0 &&
+        a.text.slice(s0, e0) === h.snippet;
       if (!valid) {
         const idx = h.snippet ? a.text.indexOf(h.snippet) : -1;
         if (idx < 0) continue;
@@ -163,7 +200,7 @@ export function LawReader({ law }: { law: MevzuatReading }) {
           key={id}
           title="İşareti kaldırmak için tıkla"
           onClick={() => removeHighlight(a.no, id)}
-          className="cursor-pointer rounded-sm bg-amber-200/70 px-0.5 dark:bg-amber-500/30"
+          className="cursor-pointer rounded-[4px] bg-warning-soft px-0.5 text-warning-ink"
         >
           {a.text.slice(s0, e0)}
         </mark>,
@@ -176,7 +213,9 @@ export function LawReader({ law }: { law: MevzuatReading }) {
 
   // Görünür madde takibi → okuma konumu (devam et) — 15 sn'de bir kaydet.
   useEffect(() => {
-    const articles = Array.from(document.querySelectorAll<HTMLElement>("[data-madde]"));
+    const articles = Array.from(
+      document.querySelectorAll<HTMLElement>("[data-madde]"),
+    );
     if (articles.length === 0) return;
     const observer = new IntersectionObserver(
       (entries) => {
@@ -228,7 +267,7 @@ export function LawReader({ law }: { law: MevzuatReading }) {
 
   // ── AĞAÇ: bölüm başlıklı içindekiler ──
   const tree = (
-    <div className="max-h-[80vh] overflow-y-auto pr-1 text-sm">
+    <div className="pr-1">
       {law.articles.map((a, i) => {
         const prev = i > 0 ? law.articles[i - 1] : null;
         const heading =
@@ -238,17 +277,16 @@ export function LawReader({ law }: { law: MevzuatReading }) {
         return (
           <div key={a.slug}>
             {heading && (
-              <p className="tk-caption mt-3 mb-1 text-[10px] font-semibold tracking-wide">
-                {heading.toLocaleUpperCase("tr-TR")}
-              </p>
+              <p className="type-label mt-3 mb-1 text-ink-subtle">{heading}</p>
             )}
             <a
               href={`#m-${a.slug}`}
-              className={`block truncate rounded px-2 py-1 text-xs ${
+              className={cn(
+                "block truncate rounded-control px-2 py-1 text-[13px]",
                 activeNo === a.no
-                  ? "bg-(--tk-brand)/10 font-semibold text-(--tk-brand)"
-                  : "text-(--tk-ink-soft) hover:bg-(--tk-surface-alt)"
-              }`}
+                  ? "bg-accent-soft font-semibold text-accent-ink"
+                  : "text-ink-soft hover:bg-surface-alt",
+              )}
               title={a.title ?? undefined}
             >
               m.{a.no}
@@ -263,15 +301,15 @@ export function LawReader({ law }: { law: MevzuatReading }) {
   // ── MADDELER ──
   const article = (
     <div>
-      <h1 className="tk-title mb-1">{law.name}</h1>
-      <p className="tk-caption mb-6">
+      <h1 className="type-title mb-1 text-ink">{law.name}</h1>
+      <p className="type-body-sm mb-6 text-ink-subtle">
         Kaynak: {law.source}
         {law.effectiveInfo ? ` · ${law.effectiveInfo}` : ""}
         {law.verifiedAt
           ? ` · ${law.verifiedAt.slice(0, 10).split("-").reverse().join(".")} itibarıyla doğrulandı`
           : ""}
       </p>
-      <div className="space-y-8">
+      <div className="flex flex-col gap-8">
         {law.articles.map((a, i) => {
           const prev = i > 0 ? law.articles[i - 1] : null;
           const heading =
@@ -287,16 +325,20 @@ export function LawReader({ law }: { law: MevzuatReading }) {
               className="scroll-mt-20"
             >
               {heading && (
-                <p className="mb-3 mt-6 border-b border-(--tk-line) pb-1 text-xs font-bold tracking-widest text-(--tk-brand)">
-                  {heading.toLocaleUpperCase("tr-TR")}
+                <p className="type-label mt-6 mb-3 border-b border-line pb-1 text-accent-ink">
+                  {heading}
                 </p>
               )}
               <div className="mb-1 flex items-baseline gap-3">
-                <h2 className="tk-heading text-(--tk-brand)">MADDE {a.no}</h2>
-                {a.title && <span className="tk-caption">{a.title}</span>}
+                <h2 className="type-heading text-accent-ink">Madde {a.no}</h2>
+                {a.title && (
+                  <span className="type-body-sm text-ink-subtle">
+                    {a.title}
+                  </span>
+                )}
               </div>
               <div
-                className="whitespace-pre-line text-[16px] leading-[1.65] text-(--tk-ink)"
+                className="type-body max-w-[65ch] whitespace-pre-line text-ink"
                 onMouseUp={(e) => {
                   const offs = selectionOffsets(e.currentTarget);
                   if (offs) {
@@ -314,11 +356,11 @@ export function LawReader({ law }: { law: MevzuatReading }) {
                 {renderText(a)}
               </div>
               {notes.get(a.no) != null && noteEditing !== a.no && (
-                <div className="mt-2 border-l-[3px] border-amber-400 bg-amber-50 p-3 dark:bg-amber-500/10">
-                  <p className="mb-1 text-[10px] font-bold tracking-widest text-amber-600">
-                    📝 NOTUM
+                <div className="mt-2 rounded-control border-l-[3px] border-warning bg-warning-soft p-3">
+                  <p className="type-label mb-1 inline-flex items-center gap-1 text-warning-ink">
+                    <StickyNote size={12} aria-hidden /> Notum
                   </p>
-                  <p className="whitespace-pre-line text-sm text-(--tk-ink)">
+                  <p className="type-body-sm whitespace-pre-line text-ink">
                     {notes.get(a.no)}
                   </p>
                 </div>
@@ -331,64 +373,65 @@ export function LawReader({ law }: { law: MevzuatReading }) {
                     onChange={(e) => setNoteDraft(e.target.value)}
                     maxLength={2000}
                     rows={3}
-                    className="w-full rounded border border-(--tk-line) bg-(--tk-surface) p-2 text-sm text-(--tk-ink)"
+                    className="type-body-sm w-full rounded-control border border-line bg-surface p-2.5 text-ink outline-none focus:border-ink-soft"
                     placeholder='Örn. "Yakalama şartlarını tekrar çalış."'
                   />
-                  <div className="mt-1 flex justify-end gap-2 text-xs">
-                    <button
-                      type="button"
-                      className="text-(--tk-ink-soft)"
+                  <div className="mt-1 flex justify-end gap-2">
+                    <Button
+                      size="sm"
+                      variant="ghost"
                       onClick={() => setNoteEditing(null)}
                     >
                       Vazgeç
-                    </button>
-                    <button
-                      type="button"
-                      className="font-semibold text-(--tk-brand)"
-                      onClick={() => saveNote(a.no)}
-                    >
+                    </Button>
+                    <Button size="sm" onClick={() => saveNote(a.no)}>
                       Kaydet
-                    </button>
+                    </Button>
                   </div>
                 </div>
               )}
-              <div className="mt-2 flex items-center gap-4 text-xs">
-                <button
-                  type="button"
+              <div className="mt-2 flex flex-wrap items-center gap-1">
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  aria-pressed={isBookmarked}
+                  leadingIcon={
+                    isBookmarked ? (
+                      <BookmarkCheck size={16} aria-hidden />
+                    ) : (
+                      <Bookmark size={16} aria-hidden />
+                    )
+                  }
                   onClick={() => toggleBookmark(a.no)}
-                  className={`font-semibold ${
-                    isBookmarked ? "text-(--tk-brand)" : "text-(--tk-ink-soft)"
-                  } hover:text-(--tk-brand)`}
                 >
-                  {isBookmarked ? "🔖 Kaydedildi" : "📑 Kaydet"}
-                </button>
+                  {isBookmarked ? "Kaydedildi" : "Kaydet"}
+                </Button>
                 {pendingSel?.no === a.no && (
-                  <button
-                    type="button"
+                  <Button
+                    size="sm"
+                    leadingIcon={<Highlighter size={16} aria-hidden />}
                     onClick={addHighlight}
-                    className="rounded bg-amber-400/90 px-2 py-0.5 font-semibold text-amber-950"
                   >
-                    🖍 İşaretle
-                  </button>
+                    İşaretle
+                  </Button>
                 )}
-                <button
-                  type="button"
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  leadingIcon={<StickyNote size={16} aria-hidden />}
                   onClick={() => {
                     setNoteDraft(notes.get(a.no) ?? "");
                     setNoteEditing(noteEditing === a.no ? null : a.no);
                   }}
-                  className={`font-semibold ${
-                    notes.has(a.no) ? "text-amber-600" : "text-(--tk-ink-soft)"
-                  } hover:text-amber-600`}
                 >
-                  {notes.has(a.no) ? "📝 Notum" : "📝 Not"}
-                </button>
+                  {notes.has(a.no) ? "Notum" : "Not"}
+                </Button>
                 {a.questionCount > 0 && (
                   <Link
                     href={`/kanun/${law.slug}/madde/${a.slug}`}
-                    className="text-(--tk-ink-soft) hover:text-(--tk-brand)"
+                    className="tk-interactive inline-flex h-9 items-center gap-1.5 rounded-control px-3 text-[13px] text-ink-soft hover:bg-surface-alt hover:text-ink"
                   >
-                    🎯 {a.questionCount} soru
+                    <Target size={16} aria-hidden /> {a.questionCount} soru
                   </Link>
                 )}
               </div>
@@ -402,11 +445,11 @@ export function LawReader({ law }: { law: MevzuatReading }) {
   // ── INSPECTOR ──
   const savedHere = law.articles.filter((a) => bookmarked.has(a.no));
   const inspector = (
-    <div className="space-y-4">
-      <div className="rounded-xl border border-(--tk-line) bg-(--tk-surface) p-4">
-        <p className="tk-caption mb-2">BU KANUNDA KAYDETTİKLERİN</p>
+    <div className="flex flex-col gap-3">
+      <Card className="flex flex-col gap-2">
+        <p className="type-label text-ink-subtle">Bu kanunda kaydettiklerin</p>
         {savedHere.length === 0 ? (
-          <p className="text-xs text-(--tk-ink-soft)">
+          <p className="type-body-sm text-ink-soft">
             Henüz yok — madde altındaki “Kaydet” ile işaretle.
           </p>
         ) : (
@@ -415,35 +458,42 @@ export function LawReader({ law }: { law: MevzuatReading }) {
               <a
                 key={a.slug}
                 href={`#m-${a.slug}`}
-                className="rounded border border-(--tk-line) px-2 py-0.5 font-mono text-xs text-(--tk-ink-soft) hover:border-(--tk-brand) hover:text-(--tk-brand)"
+                className="tk-interactive inline-flex h-8 items-center rounded-pill border border-line px-2.5 font-mono text-[12px] text-ink-soft hover:border-ink-soft hover:text-ink"
               >
                 m.{a.no}
               </a>
             ))}
           </div>
         )}
-      </div>
-      <div className="rounded-xl border border-(--tk-line) bg-(--tk-surface) p-4">
-        <p className="tk-caption mb-2">ÇALIŞ</p>
+      </Card>
+      <Card className="flex flex-col gap-2">
+        <p className="type-label text-ink-subtle">Çalış</p>
         <Link
           href={`/kanun/${law.slug}`}
-          className="block text-sm font-semibold text-(--tk-brand) hover:underline"
+          className="type-subhead text-accent-ink hover:underline"
         >
-          Madde Atlası + kanun turu →
+          Madde Atlası + kanun turu
         </Link>
-      </div>
+      </Card>
       {law.sourceUrl && (
         <a
           href={law.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="tk-caption block hover:underline"
+          className="type-body-sm inline-flex items-center gap-1 text-ink-subtle hover:text-ink hover:underline"
         >
-          Resmî Kaynak ({law.source}) ↗
+          Resmî kaynak ({law.source}) <ExternalLink size={12} aria-hidden />
         </a>
       )}
     </div>
   );
 
-  return <ThreePane tree={tree} treeLabel="İçindekiler" article={article} inspector={inspector} />;
+  return (
+    <ThreePane
+      tree={tree}
+      treeLabel="İçindekiler"
+      article={article}
+      inspector={inspector}
+    />
+  );
 }

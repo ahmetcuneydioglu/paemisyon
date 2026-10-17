@@ -4,7 +4,10 @@ import { ExamPlayer, type StartPayload } from "@/components/exam/exam-player";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 
-export const metadata: Metadata = { title: "Arşiv Denemesi", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Arşiv Denemesi",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 /** /quiz/sessions (archiveExamId) yanıtı → ExamPlayer StartPayload eşlemesi. */
@@ -49,7 +52,8 @@ export default async function ArsivSinavPage({
     title = exam.title;
     start = session;
   } catch (e) {
-    if (e instanceof ApiError) return <ArchiveBlocked code={e.code} message={e.message} />;
+    if (e instanceof ApiError)
+      return <ArchiveBlocked code={e.code} message={e.message} />;
     throw e;
   }
 
@@ -60,6 +64,9 @@ export default async function ArsivSinavPage({
     sessionId: start.sessionId,
     examId,
     title,
+    // Sunucu bileşeni + force-dynamic: bitiş anı İSTEK anından kurulur (kalan süre
+    // sunucudan gelir). İstemci saf-render kuralı burada geçerli değil.
+    // eslint-disable-next-line react-hooks/purity
     endsAt: new Date(Date.now() + kalan * 1000).toISOString(),
     liveAnswerReveal: false,
     questions: start.questions.map((q, i) => ({ order: i + 1, ...q })),
@@ -81,7 +88,9 @@ function ArchiveBlocked({ code, message }: { code: string; message: string }) {
           {icon}
         </p>
         <CardTitle className="mt-3 text-[17px]">{heading}</CardTitle>
-        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{message}</p>
+        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+          {message}
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <ButtonLink
             href="/denemeler"

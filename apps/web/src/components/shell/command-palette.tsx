@@ -196,8 +196,8 @@ export function CommandPalette() {
     setCursor(0);
   }, []);
 
-  const remote = remoteState.q === query.trim() ? remoteState.items : [];
   const results = useMemo(() => {
+    const remote = remoteState.q === query.trim() ? remoteState.items : [];
     const all = [...STATIC_ITEMS, ...(dynamic ?? [])];
     const q = norm(query).trim();
     if (!q) return all.slice(0, 9);
@@ -208,7 +208,7 @@ export function CommandPalette() {
     });
     // Sunucu isabetleri zaten eşleşmiş (tam-metin dahil) — filtreden muaf.
     return [...remote, ...local].slice(0, 9);
-  }, [query, dynamic, remote]);
+  }, [query, dynamic, remoteState]);
 
   const go = useCallback(
     (item: Item | undefined) => {

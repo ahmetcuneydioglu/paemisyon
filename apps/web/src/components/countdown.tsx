@@ -51,8 +51,15 @@ export function Countdown({
 
   if (variant === "inline") {
     // Sıfır olan baştaki birimler gizlenir: "0 gün 4 sa" yerine "4 sa".
-    const gosterilecek = units.filter((u, i) => u.v > 0 || units.slice(0, i).some((x) => x.v > 0));
-    const kisa: Record<string, string> = { Gün: "gün", Saat: "sa", Dakika: "dk", Saniye: "sn" };
+    const gosterilecek = units.filter(
+      (u, i) => u.v > 0 || units.slice(0, i).some((x) => x.v > 0),
+    );
+    const kisa: Record<string, string> = {
+      Gün: "gün",
+      Saat: "sa",
+      Dakika: "dk",
+      Saniye: "sn",
+    };
     return (
       <span className="tabular" role="timer" aria-live="off">
         {(gosterilecek.length ? gosterilecek : units.slice(-1))
@@ -66,11 +73,16 @@ export function Countdown({
   return (
     <div className="flex justify-center gap-3" role="timer" aria-live="off">
       {units.map((u) => (
-        <div key={u.l} className="min-w-[72px] bg-(--color-navy-deep) px-3 py-2 text-center">
-          <div className="font-heading text-3xl font-bold text-(--color-yellow) tabular-nums">
+        <div
+          key={u.l}
+          className="min-w-[72px] bg-(--color-navy-deep) px-3 py-2 text-center"
+        >
+          <div className="font-display text-3xl font-bold text-(--color-yellow) tabular-nums">
             {String(u.v).padStart(2, "0")}
           </div>
-          <div className="text-[11px] font-semibold tracking-wide text-white/80">{u.l}</div>
+          <div className="text-[11px] font-semibold tracking-wide text-white/80">
+            {u.l}
+          </div>
         </div>
       ))}
     </div>

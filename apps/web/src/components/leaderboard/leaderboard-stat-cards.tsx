@@ -1,31 +1,24 @@
+import { Crown, Sparkles, Users, Zap, type LucideIcon } from "lucide-react";
 import type { LeaderboardBoard } from "@/lib/public-api";
 
 function StatCard({
-  icon,
+  icon: Icon,
   label,
   value,
-  accent,
 }: {
-  icon: string;
+  icon: LucideIcon;
   label: string;
   value: string;
-  accent: string;
 }) {
   return (
-    <div className="tk-interactive relative overflow-hidden rounded-lg border border-line bg-surface p-4 hover:-translate-y-0.5 hover:shadow-card">
-      {/* Yumuşak renk vurgusu — glass hissi */}
-      <span
-        className="pointer-events-none absolute -right-6 -top-6 size-20 rounded-full opacity-20 blur-xl"
-        style={{ background: accent }}
-        aria-hidden
-      />
+    <div className="flex flex-col gap-2 rounded-card border border-line bg-surface p-4">
       <div className="flex items-center gap-2">
-        <span className="text-lg" aria-hidden>
-          {icon}
+        <span className="flex size-7 items-center justify-center rounded-control bg-accent-soft text-accent-ink">
+          <Icon size={14} strokeWidth={2} aria-hidden />
         </span>
-        <p className="tk-caption">{label}</p>
+        <p className="type-label text-ink-subtle">{label}</p>
       </div>
-      <p className="mt-2 truncate font-heading text-2xl font-bold tabular text-ink" title={value}>
+      <p className="type-stat truncate text-ink" title={value}>
         {value}
       </p>
     </div>
@@ -33,33 +26,33 @@ function StatCard({
 }
 
 /** Sayfa özeti — dört canlı istatistik kartı (gerçek veri). */
-export function LeaderboardStatCards({ stats }: { stats: LeaderboardBoard["stats"] }) {
+export function LeaderboardStatCards({
+  stats,
+}: {
+  stats: LeaderboardBoard["stats"];
+}) {
   const nf = (n: number) => n.toLocaleString("tr-TR");
   return (
     <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
       <StatCard
-        icon="👥"
+        icon={Users}
         label="Toplam Yarışmacı"
         value={nf(stats.totalUsers)}
-        accent="var(--tk-accent-session)"
       />
       <StatCard
-        icon="⚡"
+        icon={Zap}
         label="Bugünkü Quiz"
         value={nf(stats.todayQuizCount)}
-        accent="var(--tk-accent-live)"
       />
       <StatCard
-        icon="✨"
+        icon={Sparkles}
         label="Dağıtılan XP"
         value={nf(stats.totalXp)}
-        accent="var(--tk-accent-atlas)"
       />
       <StatCard
-        icon="👑"
+        icon={Crown}
         label="Günün Lideri"
         value={stats.todaysLeader ?? "—"}
-        accent="var(--tk-accent-streak)"
       />
     </div>
   );

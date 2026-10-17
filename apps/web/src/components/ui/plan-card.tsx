@@ -1,12 +1,12 @@
+import { Check } from "lucide-react";
 import type { ReactNode } from "react";
+import { cn } from "@/lib/cn";
+import { Badge } from "./badge";
 
 /**
- * Fiyat/plan kartı — tek ekrana özel değil: `highlight` ve `badge` varyantlarıyla
- * hem tek planlı premium sayfasında hem ileride çok planlı listede kullanılır.
- *
- * a11y: rozet rengi TEK BAŞINA anlam taşımaz (metin de var); fiyat `tabular`
- * ile hizalanır (yalnız .tk-scope altında etkin — sayfa kabuğu bunu sağlar).
- * Tipografi: `font-heading` yalnız 700 ağırlığında yüklü → daima `font-bold`.
+ * Fiyat/plan kartı — `highlight` ve `badge` varyantlarıyla tek planlı premium
+ * sayfasında ve çok planlı listede kullanılır. Rozet rengi tek başına anlam
+ * taşımaz (metin var); fiyat tabular.
  */
 export function PlanCard({
   name,
@@ -20,11 +20,8 @@ export function PlanCard({
   className,
 }: {
   name: string;
-  /** Biçimlenmiş fiyat, ör. "499,99 TL" */
   price: string;
-  /** "/ 3 ay" olarak basılır */
   periodLabel?: string;
-  /** Fiyatın altındaki açıklama, ör. "Ayda 166,66 TL" */
   note?: string;
   badge?: string;
   features?: string[];
@@ -33,49 +30,44 @@ export function PlanCard({
   className?: string;
 }) {
   return (
-    // aria-label YOK: aynı metni taşıyan <h2> zaten bölümü adlandırıyor; ikisi
-    // birlikte ekran okuyucuda plan adını arka arkaya iki kez duyururdu.
     <section
-      className={[
-        "tk-interactive relative rounded-lg border bg-surface p-6 text-center",
-        highlight ? "border-brand shadow-[0_1px_24px_-8px_var(--tk-brand)]" : "border-line",
+      className={cn(
+        "relative flex flex-col items-center rounded-sheet border bg-surface p-6 text-center",
+        highlight ? "border-accent" : "border-line",
         className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    >
-      {badge && (
-        <p className="tk-caption mx-auto mb-3 inline-block rounded-sm bg-brand px-2.5 py-1 text-surface">
-          {badge}
-        </p>
       )}
-
-      <h2 className="font-heading text-[17px] font-bold text-ink">{name}</h2>
-
+    >
+      {badge ? (
+        <Badge tone="accent" className="mb-3">
+          {badge}
+        </Badge>
+      ) : null}
+      <h2 className="type-heading text-ink">{name}</h2>
       <p className="mt-2 flex items-baseline justify-center gap-1.5">
-        <span className="tabular font-heading text-[34px] font-bold leading-none text-ink">
-          {price}
-        </span>
-        {periodLabel && (
-          <span className="text-[15px] text-ink-soft">/ {periodLabel}</span>
-        )}
+        <span className="type-title tabular text-ink">{price}</span>
+        {periodLabel ? (
+          <span className="type-body text-ink-soft">/ {periodLabel}</span>
+        ) : null}
       </p>
-      {note && <p className="tabular mt-1.5 text-[13px] text-ink-soft">{note}</p>}
-
-      {features && features.length > 0 && (
-        <ul className="mx-auto mt-5 max-w-[34ch] space-y-2 text-left text-[14px] text-ink">
+      {note ? (
+        <p className="type-body-sm tabular mt-1.5 text-ink-soft">{note}</p>
+      ) : null}
+      {features && features.length > 0 ? (
+        <ul className="mx-auto mt-5 flex max-w-[34ch] flex-col gap-2 text-left">
           {features.map((f) => (
-            <li key={f} className="flex gap-2.5">
-              <span aria-hidden className="mt-0.5 font-bold text-success">
-                ✓
-              </span>
-              <span className="leading-relaxed">{f}</span>
+            <li key={f} className="type-body-sm flex gap-2.5 text-ink">
+              <Check
+                size={16}
+                strokeWidth={2.25}
+                className="mt-0.5 shrink-0 text-success"
+                aria-hidden
+              />
+              <span>{f}</span>
             </li>
           ))}
         </ul>
-      )}
-
-      {children && <div className="mt-6">{children}</div>}
+      ) : null}
+      {children ? <div className="mt-6 w-full">{children}</div> : null}
     </section>
   );
 }

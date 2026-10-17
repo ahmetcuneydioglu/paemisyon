@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { RotateCcw } from "lucide-react";
 import { api } from "@/lib/api";
-import { Card, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { DataTable } from "@/components/ui/data-table";
+import { EmptyState } from "@/components/ui/empty-state";
 import { CoachRail } from "@/components/shell/coach-rail";
 
-export const metadata: Metadata = { title: "Yanlışlarım", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Yanlışlarım",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 interface WrongRow {
@@ -16,95 +23,115 @@ interface WrongRow {
 }
 
 /**
- * Yanlışlarım (Doc 25 Bölge 2): tüm çözülmemiş yanlışların tek kuyruğu.
- * "Hatalarım kaybolmasın" — doğru çözülen soru kuyruktan kendiliğinden düşer.
- * Free: tekrar turu son 7 günün yanlışlarından; premium: süresiz hafıza.
+ * Yanlışlarım: tüm çözülmemiş yanlışların tek kuyruğu. Doğru çözülen soru kuyruktan
+ * düşer. Ücretsiz: tekrar turu son 7 günün yanlışlarından; premium süresiz.
  */
 export default async function YanlislarPage() {
-  const rows = await api<WrongRow[]>("/review/wrong-answers").catch(() => [] as WrongRow[]);
+  const rows = await api<WrongRow[]>("/review/wrong-answers").catch(
+    () => [] as WrongRow[],
+  );
   const byTopic = new Map<string, number>();
-  for (const r of rows) {
-    const t = r.topicName ?? "Diğer";
-    byTopic.set(t, (byTopic.get(t) ?? 0) + 1);
-  }
-  const topTopics = [...byTopic.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4);
+  for (const r of rows)
+    byTopic.set(
+      r.topicName ?? "Diğer",
+      (byTopic.get(r.topicName ?? "Diğer") ?? 0) + 1,
+    );
+  const topTopics = [...byTopic.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 4);
+  const n = Math.min(10, rows.length);
 
   return (
-    <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
       <div className="min-w-0 flex-1">
-        <nav className="tk-caption mb-3" aria-label="breadcrumb">
-          <Link href="/kutuphane" className="hover:text-ink">Kütüphane</Link> › Yanlışlarım
-        </nav>
-
+        <Breadcrumb
+          className="mb-3"
+          items={[
+            { label: "Kütüphane", href: "/kutuphane" },
+            { label: "Yanlışlarım" },
+          ]}
+        />
         <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <h1 className="font-heading text-xl font-bold text-ink">Yanlışlarım</h1>
-            <p className="mt-1 text-[13px] text-ink-soft">
+          <div className="flex flex-col gap-1">
+            <h1 className="type-title text-ink">Yanlışlarım</h1>
+            <p className="type-body-sm text-ink-soft">
               {rows.length > 0 ? (
                 <>
-                  Kuyrukta <b className="tabular text-ink">{rows.length}</b> soru — doğru
-                  çözdüğünde kendiliğinden düşer.
-                  {topTopics.length > 0 && (
-                    <> En çok: {topTopics.map(([t, n]) => `${t} (${n})`).join(" · ")}.</>
-                  )}
+                  Kuyrukta <b className="tabular text-ink">{rows.length}</b>{" "}
+                  soru — doğru çözdüğünde kendiliğinden düşer.
+                  {topTopics.length > 0 ? (
+                    <>
+                      {" "}
+                      En çok:{" "}
+                      {topTopics.map(([t, c]) => `${t} (${c})`).join(" · ")}.
+                    </>
+                  ) : null}
                 </>
               ) : (
-                <>Kuyruk temiz — yanlışların buraya düşer, sistem onları unutmaz.</>
+                <>
+                  Kuyruk temiz — yanlışların buraya düşer, sistem onları
+                  unutmaz.
+                </>
               )}
             </p>
           </div>
-          {rows.length > 0 && (
+          {rows.length > 0 ? (
             <ButtonLink
-              href={`/seans?mode=review&count=${Math.min(10, rows.length)}&scope=${encodeURIComponent("Yanlış tekrarı")}`}
+              href={`/seans?mode=review&count=${n}&scope=${encodeURIComponent("Yanlış tekrarı")}`}
             >
-              {Math.min(10, rows.length)} soruluk tekrar turu
+              {n} soruluk tekrar turu
             </ButtonLink>
-          )}
+          ) : null}
         </div>
 
         {rows.length > 0 ? (
-          <Card className="p-0">
-            <table className="w-full text-[14px]">
-              <thead>
-                <tr className="tk-caption border-b border-line text-left">
-                  <th className="px-4 py-2.5 font-semibold">Soru</th>
-                  <th className="px-3 py-2.5 font-semibold">Konu</th>
-                  <th className="px-4 py-2.5 text-right font-semibold">Yanlış</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r) => (
-                  <tr key={r.questionId} className="border-b border-line last:border-0">
-                    <td className="max-w-[48ch] px-4 py-2.5 text-ink">
-                      <span className="line-clamp-2">{r.stem ?? "—"}</span>
-                    </td>
-                    <td className="whitespace-nowrap px-3 py-2.5 text-ink-soft">
-                      {r.topicName ?? "—"}
-                    </td>
-                    <td className="tabular px-4 py-2.5 text-right font-bold text-danger">
-                      ×{r.wrongCount}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </Card>
+          <DataTable
+            caption="Çözülmemiş yanlışlar"
+            rows={rows}
+            rowKey={(r) => r.questionId}
+            columns={[
+              {
+                key: "soru",
+                header: "Soru",
+                cell: (r) => (
+                  <span className="line-clamp-2 max-w-[52ch] text-ink">
+                    {r.stem ?? "—"}
+                  </span>
+                ),
+              },
+              {
+                key: "konu",
+                header: "Konu",
+                hideBelowMd: true,
+                cell: (r) => (
+                  <span className="whitespace-nowrap text-ink-soft">
+                    {r.topicName ?? "—"}
+                  </span>
+                ),
+              },
+              {
+                key: "yanlis",
+                header: "Yanlış",
+                align: "right",
+                cell: (r) => <Badge tone="danger">×{r.wrongCount}</Badge>,
+              },
+            ]}
+          />
         ) : (
-          <Card className="border-dashed p-8 text-center">
-            <p className="text-2xl" aria-hidden>✨</p>
-            <CardTitle className="mt-2">Çözülmemiş yanlışın yok</CardTitle>
-            <p className="mx-auto mt-1 max-w-[44ch] text-[14px] text-ink-soft">
-              Turlarda yanlış yaptığın her soru buraya düşer; doğru çözene kadar seni bekler.
-            </p>
-            <div className="mt-4">
-              <ButtonLink href="/seans" variant="secondary">
-                Koç turu başlat
-              </ButtonLink>
-            </div>
+          <Card className="border-dashed">
+            <EmptyState
+              icon={RotateCcw}
+              title="Çözülmemiş yanlışın yok"
+              body="Turlarda yanlış yaptığın her soru buraya düşer; doğru çözene kadar seni bekler."
+              action={
+                <ButtonLink href="/seans" variant="secondary">
+                  Koç turu başlat
+                </ButtonLink>
+              }
+            />
           </Card>
         )}
       </div>
-
       <CoachRail />
     </div>
   );

@@ -34,7 +34,7 @@ const GECIS = [
   /\b(?:bg|text|border|ring|from|to)-(?:navy|brand|session|live|streak|atlas|grey-bg)\b/g,
   /\bfont-heading\b/g,
   /\brounded-(?:sm|md|lg)\b/g,
-  /\btk-(?:scope|caption|interactive)\b/g,
+  /\btk-(?:scope|caption)\b/g, // tk-interactive v3 geçiş yardımcısı olarak kalır
   /\btext-text\b|\bborder-border\b|\bshadow-card\b/g,
 ];
 /* W-F'de boşalacak ham hex izinleri (gerekçe yanında). */

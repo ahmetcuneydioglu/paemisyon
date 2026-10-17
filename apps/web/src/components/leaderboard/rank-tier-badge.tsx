@@ -13,12 +13,14 @@ export function RankTierBadge({
   size?: "sm" | "md";
 }) {
   const tier = rankTier(level);
-  const pad = size === "sm" ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-[12px]";
+  const pad =
+    size === "sm" ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-[12px]";
   return (
     <span
-      className={["inline-flex items-center gap-1.5 rounded-full font-heading font-bold", pad].join(
-        " ",
-      )}
+      className={[
+        "inline-flex items-center gap-1.5 rounded-pill font-body font-semibold",
+        pad,
+      ].join(" ")}
       style={{ background: tierGradient(tier), color: tier.ink }}
       title={`${rankName} · ${tier.league} Lig`}
     >
@@ -44,7 +46,7 @@ export function XpProgress({ xp, level }: { xp: number; level: number }) {
     <div>
       <div
         className="h-2 w-full overflow-hidden rounded-full"
-        style={{ background: "color-mix(in srgb, var(--tk-ink) 10%, transparent)" }}
+        style={{ background: "var(--color-surface-alt)" }}
         role="progressbar"
         aria-valuenow={pct}
         aria-valuemin={0}
@@ -55,9 +57,9 @@ export function XpProgress({ xp, level }: { xp: number; level: number }) {
           style={{ width: `${pct}%`, background: tierGradient(tier) }}
         />
       </div>
-      <p className="tk-caption mt-1 normal-case tracking-normal">
+      <p className="type-body-sm mt-1 text-ink-subtle">
         {nextMin == null
-          ? "En yüksek rütbe 🎖️"
+          ? "En yüksek rütbe"
           : `Bir üst rütbeye ${toNext.toLocaleString("tr-TR")} XP`}
       </p>
     </div>

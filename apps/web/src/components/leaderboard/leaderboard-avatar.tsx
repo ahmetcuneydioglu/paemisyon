@@ -55,7 +55,7 @@ export function LeaderboardAvatar({
       ) : (
         <span
           className={[
-            "flex h-full w-full items-center justify-center rounded-full font-heading font-bold",
+            "flex h-full w-full items-center justify-center rounded-full font-display font-bold",
             s.text,
           ].join(" ")}
           style={{ background: grad, color: tier.ink }}

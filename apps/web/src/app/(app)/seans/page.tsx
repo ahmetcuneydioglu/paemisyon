@@ -13,7 +13,8 @@ export default async function SeansPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const p = await searchParams;
-  const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+  const one = (v: string | string[] | undefined) =>
+    Array.isArray(v) ? v[0] : v;
   const count = Number.parseInt(one(p.count) ?? "", 10);
   // Seçili mevzuat turu: virgülle ayrılmış konu kimlikleri (kural sunucuda).
   const topicIds = (one(p.topicIds) ?? "").split(",").filter(Boolean);
@@ -48,7 +49,9 @@ export default async function SeansPage({
               : undefined,
         resumeId: one(p.resume),
         label: one(p.scope),
-        questionCount: Number.isFinite(count) ? Math.min(50, Math.max(1, count)) : undefined,
+        questionCount: Number.isFinite(count)
+          ? Math.min(50, Math.max(1, count))
+          : undefined,
       }}
     />
   );

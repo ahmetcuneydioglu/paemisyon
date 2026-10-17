@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { publicApi, type LawArticleDetail, type TopicAtlas } from "@/lib/public-api";
+import {
+  publicApi,
+  type LawArticleDetail,
+  type TopicAtlas,
+} from "@/lib/public-api";
 import { api } from "@/lib/api";
 import { ArticleWorkspace } from "@/components/atlas/article-workspace";
 
@@ -20,8 +24,8 @@ export default async function CalismaMaddePage({ params }: { params: Params }) {
     3600,
   ).catch(() => null);
   if (!a) notFound();
-  const atlas = await api<TopicAtlas>(`/catalog/topics/${a.topicId}/atlas`).catch(
-    () => null,
-  );
+  const atlas = await api<TopicAtlas>(
+    `/catalog/topics/${a.topicId}/atlas`,
+  ).catch(() => null);
   return <ArticleWorkspace article={a} atlas={atlas} />;
 }

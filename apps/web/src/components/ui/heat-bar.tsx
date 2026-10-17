@@ -1,7 +1,6 @@
-/**
- * Madde ısı çubuğu (Doc 26 #12): bu maddeden kaç soru çıkmış — kanun içi
- * en yüksek değere oranlanır. Girişsiz sayfada da çalışır (kişisel veri yok).
- */
+import { cn } from "@/lib/cn";
+
+/** Madde ısı çubuğu: bu maddeden kaç soru çıkmış — kanun içi en yüksek değere oranlı. */
 export function HeatBar({
   count,
   max,
@@ -14,13 +13,19 @@ export function HeatBar({
   const ratio = max > 0 ? count / max : 0;
   return (
     <span
-      className={["h-2 overflow-hidden rounded-full bg-line", className].filter(Boolean).join(" ")}
+      className={cn(
+        "h-2 overflow-hidden rounded-pill bg-surface-alt",
+        className,
+      )}
       role="img"
       aria-label={`${count} çıkmış soru`}
     >
       <span
-        className="block h-full rounded-full bg-atlas"
-        style={{ width: `${Math.max(6, ratio * 100)}%`, opacity: 0.35 + 0.65 * ratio }}
+        className="block h-full rounded-pill bg-accent"
+        style={{
+          width: `${Math.max(6, ratio * 100)}%`,
+          opacity: 0.35 + 0.65 * ratio,
+        }}
       />
     </span>
   );

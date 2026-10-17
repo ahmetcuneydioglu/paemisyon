@@ -15,10 +15,12 @@ type Params = Promise<{ slug: string }>;
  */
 export default async function CalismaKanunPage({ params }: { params: Params }) {
   const { slug } = await params;
-  const law = await publicApi<LawDetail>(`/public/laws/${slug}`, 3600).catch(() => null);
-  if (!law) notFound();
-  const atlas = await api<TopicAtlas>(`/catalog/topics/${law.topicId}/atlas`).catch(
+  const law = await publicApi<LawDetail>(`/public/laws/${slug}`, 3600).catch(
     () => null,
   );
+  if (!law) notFound();
+  const atlas = await api<TopicAtlas>(
+    `/catalog/topics/${law.topicId}/atlas`,
+  ).catch(() => null);
   return <LawWorkspace law={law} atlas={atlas} />;
 }

@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { apiClient } from "@/lib/api-client";
 import type { LeaderboardBoard, LeaderboardPeriod } from "@/lib/public-api";
+import { Flag, Search } from "lucide-react";
+import { Notice } from "@/components/ui/notice";
+import { EmptyState } from "@/components/ui/empty-state";
 import { LeaderboardPeriodTabs } from "./leaderboard-period-tabs";
 import { LeaderboardStatCards } from "./leaderboard-stat-cards";
 import { LeaderboardPodium } from "./leaderboard-podium";
@@ -40,7 +43,9 @@ export function LeaderboardView({
     setLoading(true);
     setError(false);
     try {
-      const data = await apiClient<LeaderboardBoard>(`/progress/leaderboard?period=${next}`);
+      const data = await apiClient<LeaderboardBoard>(
+        `/progress/leaderboard?period=${next}`,
+      );
       setBoard(data);
     } catch {
       setError(true);
@@ -51,30 +56,38 @@ export function LeaderboardView({
 
   const q = query.trim().toLocaleLowerCase("tr-TR");
   const filtered = q
-    ? board.top.filter((r) => r.displayName.toLocaleLowerCase("tr-TR").includes(q))
+    ? board.top.filter((r) =>
+        r.displayName.toLocaleLowerCase("tr-TR").includes(q),
+      )
     : null;
 
   const podium = board.top.slice(0, 3);
   const rest = board.top.slice(3);
 
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col gap-6">
       <LeaderboardStatCards stats={board.stats} />
 
       {/* Kontroller: dönem sekmeleri + arama */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <LeaderboardPeriodTabs value={period} onChange={switchPeriod} disabled={loading} />
+        <LeaderboardPeriodTabs
+          value={period}
+          onChange={switchPeriod}
+          disabled={loading}
+        />
         <div className="relative sm:w-64">
-          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" aria-hidden>
-            🔍
-          </span>
+          <Search
+            size={16}
+            className="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-ink-subtle"
+            aria-hidden
+          />
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Yarışmacı ara…"
             aria-label="Yarışmacı ara"
-            className="tk-interactive w-full rounded-lg border border-line bg-surface py-2 pl-9 pr-3 text-sm text-ink outline-none placeholder:text-ink-soft focus:border-brand"
+            className="type-body-sm h-11 w-full rounded-control border border-line bg-surface pr-3 pl-9 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
           />
         </div>
       </div>
@@ -82,29 +95,23 @@ export function LeaderboardView({
       {loading ? (
         <LeaderboardSkeleton />
       ) : error ? (
-        <div className="rounded-lg border border-danger/40 bg-surface p-6 text-center text-sm text-danger">
-          Sıralama yüklenemedi. Lütfen tekrar dene.
-        </div>
+        <Notice tone="error">Sıralama yüklenemedi. Lütfen tekrar dene.</Notice>
       ) : (
-        <div key={period} className="space-y-6">
+        <div key={period} className="flex flex-col gap-6">
           {filtered ? (
             <div>
-              <p className="mb-3 text-sm text-ink-soft">
+              <p className="type-body-sm mb-3 text-ink-soft">
                 “{query}” için {filtered.length} sonuç
               </p>
               <LeaderboardTable rows={filtered} />
             </div>
           ) : board.top.length === 0 ? (
-            <div className="rounded-lg border border-dashed border-line bg-surface p-10 text-center">
-              <p className="text-2xl" aria-hidden>
-                🏁
-              </p>
-              <p className="mt-2 font-heading font-bold text-ink">
-                {PERIOD_LABEL[period]} için henüz sıralama yok
-              </p>
-              <p className="mt-1 text-sm text-ink-soft">
-                İlk quizi çöz, tabloyu sen başlat.
-              </p>
+            <div className="rounded-card border border-dashed border-line bg-surface">
+              <EmptyState
+                icon={Flag}
+                title={`${PERIOD_LABEL[period]} için henüz sıralama yok`}
+                body="İlk quizi çöz, tabloyu sen başlat."
+              />
             </div>
           ) : (
             <>

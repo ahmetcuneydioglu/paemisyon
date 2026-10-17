@@ -1,10 +1,13 @@
 import Link from "next/link";
 import type { ExamListItem, MyAttempt } from "@/lib/types";
 import type { MeDashboard } from "@/lib/public-api";
+import { ArrowRight, Zap } from "lucide-react";
 import { PremiumBadge } from "@/components/ui/premium-badge";
 import { personalExamState } from "@/lib/personal-exam";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
+import { DataTable } from "@/components/ui/data-table";
+import { SectionHeader } from "@/components/ui/section-header";
 import { CoachRail } from "@/components/shell/coach-rail";
 import { Countdown } from "@/components/countdown";
 import { formatDate, formatTime } from "@/lib/format";
@@ -34,33 +37,37 @@ export function ExamCenter({
   const myCompleted = attempts
     .filter((a) => a.status === "completed" && a.score != null)
     .sort((a, b) => +new Date(a.startedAt) - +new Date(b.startedAt));
-  const maxScore = myCompleted.reduce((m, a) => Math.max(m, Number(a.score)), 0);
+  const maxScore = myCompleted.reduce(
+    (m, a) => Math.max(m, Number(a.score)),
+    0,
+  );
 
   return (
-    <div className="mx-auto flex max-w-7xl gap-6 px-6 py-6">
+    <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
       <div className="min-w-0 flex-1">
-        <h1 className="mb-5 font-heading text-xl font-bold text-ink">Denemeler</h1>
+        <h1 className="type-title mb-5 text-ink">Denemeler</h1>
 
         {/* Hero: canlı > sıradaki > sakin boşluk */}
         {active ? (
-          <Card className="mb-5 border-live/50 p-6">
-            {/* Nokta rengi durum sinyali (metin değil, 3:1 yeterli); METİN ink-soft
-                kalır — açık temada --tk-accent-live 11px için 3.39:1 ile AA'yı
-                geçmiyor. Renk tek başına anlam taşımıyor: "Canlı" yazısı da var. */}
-            <span className="tk-caption">
-              <span aria-hidden className="text-live">
-                ●
-              </span>{" "}
+          <Card className="mb-5 flex flex-col gap-1 border-success/40 p-6">
+            <span className="type-label inline-flex items-center gap-1.5 text-success-ink">
+              <span
+                aria-hidden
+                className="inline-block size-2 rounded-full bg-success motion-safe:animate-pulse"
+              />
               Canlı — şu an devam ediyor
             </span>
-            <p className="mt-1 font-heading text-lg font-bold text-ink">{active.title}</p>
-            <p className="mt-0.5 text-[13px] text-ink-soft">
+            <p className="type-heading text-ink">{active.title}</p>
+            <p className="type-body-sm text-ink-soft">
               {active.questionCount} soru · {active.durationMinutes} dk ·{" "}
               {active.participantCount} katılımcı
             </p>
-            <div className="mt-4">
+            <div className="mt-3">
               {active.myAttempt?.status === "completed" ? (
-                <ButtonLink href={`/sonuc/${active.myAttempt.id}`} variant="secondary">
+                <ButtonLink
+                  href={`/sonuc/${active.myAttempt.id}`}
+                  variant="secondary"
+                >
                   Sonucumu gör
                 </ButtonLink>
               ) : (
@@ -71,25 +78,28 @@ export function ExamCenter({
             </div>
           </Card>
         ) : next ? (
-          <Card className="mb-5 border-brand/30 p-6">
-            <span className="tk-caption text-brand">Sıradaki canlı deneme</span>
-            <p className="mt-1 font-heading text-lg font-bold text-ink">{next.title}</p>
-            <p className="mt-0.5 text-[13px] text-ink-soft">
-              {formatDate(next.startAt)} · {formatTime(next.startAt)} · {next.questionCount} soru
-              · {next.durationMinutes} dk
+          <Card className="mb-5 flex flex-col gap-1 border-accent/40 p-6">
+            <span className="type-label text-accent-ink">
+              Sıradaki canlı deneme
+            </span>
+            <p className="type-heading text-ink">{next.title}</p>
+            <p className="type-body-sm text-ink-soft">
+              {formatDate(next.startAt)} · {formatTime(next.startAt)} ·{" "}
+              {next.questionCount} soru · {next.durationMinutes} dk
             </p>
-            <div className="mt-3 text-[15px] font-bold text-ink">
+            <div className="type-subhead mt-2 text-ink">
               <Countdown target={next.startAt} />
             </div>
-            <p className="mt-2 text-[13px] text-ink-soft">
-              Başladığında bu sayfadan tek tıkla girersin — Türkiye geneli eşzamanlı, sıralamalı.
+            <p className="type-body-sm mt-1 text-ink-soft">
+              Başladığında bu sayfadan tek tıkla girersin — Türkiye geneli
+              eşzamanlı, sıralamalı.
             </p>
           </Card>
         ) : (
           <Card className="mb-5 border-dashed p-6 text-center">
-            <p className="text-[14px] text-ink-soft">
-              Şu an planlanmış canlı deneme yok. Yeni deneme açıldığında koçun Bugün&apos;de
-              haber verir; sen de buradan takip edebilirsin.
+            <p className="type-body-sm text-ink-soft">
+              Şu an planlanmış canlı deneme yok. Yeni deneme açıldığında koçun
+              Bugün&apos;de haber verir; sen de buradan takip edebilirsin.
             </p>
           </Card>
         )}
@@ -99,16 +109,19 @@ export function ExamCenter({
 
         {/* Yaklaşan takvim */}
         {upcoming.length > 1 && (
-          <section className="mb-5">
-            <h2 className="tk-caption mb-2">Takvim</h2>
+          <section className="mb-5 flex flex-col gap-2">
+            <SectionHeader title="Takvim" />
             <div className="grid gap-3 sm:grid-cols-2">
               {upcoming.slice(1).map((e) => (
-                <Card key={e.id}>
-                  <p className="font-heading text-[14px] font-bold text-ink">{e.title}</p>
-                  <p className="mt-0.5 text-[13px] text-ink-soft">
-                    {formatDate(e.startAt)} · {formatTime(e.startAt)} · {e.questionCount} soru
-                    {e.isPremium && " · 🔒 premium"}
+                <Card key={e.id} className="flex flex-col gap-1">
+                  <p className="type-subhead text-ink">{e.title}</p>
+                  <p className="type-body-sm text-ink-soft">
+                    {formatDate(e.startAt)} · {formatTime(e.startAt)} ·{" "}
+                    {e.questionCount} soru
                   </p>
+                  {e.isPremium ? (
+                    <PremiumBadge variant="soft" className="self-start" />
+                  ) : null}
                 </Card>
               ))}
             </div>
@@ -116,96 +129,102 @@ export function ExamCenter({
         )}
 
         {/* Geçmiş denemeler */}
-        <section>
-          <div className="mb-2 flex items-center justify-between">
-            <h2 className="tk-caption">Geçmiş denemeler</h2>
-            <Link href="/profil/denemelerim" className="text-[13px] font-bold text-brand hover:underline">
-              Denemelerim →
-            </Link>
-          </div>
-          <Card className="overflow-x-auto p-0">
-            <table className="w-full text-[14px]">
-              <thead>
-                <tr className="tk-caption border-b border-line text-left">
-                  <th className="px-4 py-2.5 font-semibold">Deneme</th>
-                  <th className="px-3 py-2.5 text-right font-semibold">Tarih</th>
-                  <th className="px-3 py-2.5 text-right font-semibold">Katılım</th>
-                  <th className="px-3 py-2.5 text-right font-semibold">Ortalama</th>
-                  <th className="px-4 py-2.5 text-right font-semibold">Benim</th>
-                </tr>
-              </thead>
-              <tbody>
-                {past.map((e) => (
-                  <tr key={e.id} className="border-b border-line last:border-0">
-                    <td className="px-4 py-2.5 font-medium text-ink">{e.title}</td>
-                    <td className="tabular px-3 py-2.5 text-right text-ink-soft">
-                      {formatDate(e.startAt)}
-                    </td>
-                    <td className="tabular px-3 py-2.5 text-right text-ink-soft">
-                      {e.participantCount}
-                    </td>
-                    <td className="tabular px-3 py-2.5 text-right text-ink-soft">
-                      {e.avgScore != null ? Number(e.avgScore).toFixed(1) : "—"}
-                    </td>
-                    <td className="px-4 py-2.5 text-right">
-                      <span className="inline-flex items-center gap-3">
-                        {e.myAttempt?.status === "completed" && (
-                          <Link
-                            href={`/sonuc/${e.myAttempt.id}`}
-                            className="text-[13px] font-bold text-brand hover:underline"
-                          >
-                            sonucum →
-                          </Link>
-                        )}
-                        {/* Arşivde çözdüysem sonucuma DÖNEBİLMELİYİM. Bu kapı
-                            yoktu: bir kullanıcı 100 soruyu çözüp sonucunu bir
-                            kez gördü, sonra ararken 40 dakikada 20'den fazla
-                            boş oturum açtı ve her seferinde 0/100 gördü. */}
-                        {e.myArchiveAttempt && (
-                          <Link
-                            href={`/sonuc/${e.myArchiveAttempt.id}`}
-                            className="text-[13px] font-bold text-brand hover:underline"
-                          >
-                            arşiv sonucum →
-                          </Link>
-                        )}
-                        {/* Arşiv modu: aynı set + süre, sıralamasız pratik.
-                            Denemeye özel anahtar kapalıysa giriş çizilmez —
-                            tekrar yayınlanacak denemenin soruları önceden
-                            çalışılmasın. */}
-                        {e.archiveOpenAfterEnd && (
-                          <Link
-                            href={`/sinav/arsiv/${e.id}`}
-                            className="text-[13px] font-bold text-ink-soft hover:text-ink hover:underline"
-                          >
-                            arşivde çöz →
-                          </Link>
-                        )}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            {past.length === 0 && (
-              <p className="p-6 text-center text-[14px] text-ink-soft">Henüz geçmiş deneme yok.</p>
-            )}
-          </Card>
+        <section className="flex flex-col gap-2">
+          <SectionHeader
+            title="Geçmiş denemeler"
+            action={{ label: "Denemelerim", href: "/profil/denemelerim" }}
+          />
+          <DataTable
+            caption="Geçmiş denemeler"
+            rows={past}
+            rowKey={(e) => e.id}
+            empty="Henüz geçmiş deneme yok."
+            columns={[
+              {
+                key: "deneme",
+                header: "Deneme",
+                cell: (e) => (
+                  <span className="type-subhead text-ink">{e.title}</span>
+                ),
+              },
+              {
+                key: "tarih",
+                header: "Tarih",
+                align: "right",
+                hideBelowMd: true,
+                cell: (e) => formatDate(e.startAt),
+              },
+              {
+                key: "katilim",
+                header: "Katılım",
+                align: "right",
+                hideBelowMd: true,
+                cell: (e) => e.participantCount,
+              },
+              {
+                key: "ort",
+                header: "Ortalama",
+                align: "right",
+                cell: (e) =>
+                  e.avgScore != null ? Number(e.avgScore).toFixed(1) : "—",
+              },
+              {
+                key: "benim",
+                header: "Benim",
+                align: "right",
+                cell: (e) => (
+                  <span className="inline-flex flex-wrap items-center justify-end gap-x-3 gap-y-1">
+                    {e.myAttempt?.status === "completed" ? (
+                      <Link
+                        href={`/sonuc/${e.myAttempt.id}`}
+                        className="type-subhead inline-flex items-center gap-1 text-accent-ink hover:underline"
+                      >
+                        sonucum <ArrowRight size={14} aria-hidden />
+                      </Link>
+                    ) : null}
+                    {/* Arşivde çözdüysem sonucuma DÖNEBİLMELİYİM (6 Eyl 2026 vakası). */}
+                    {e.myArchiveAttempt ? (
+                      <Link
+                        href={`/sonuc/${e.myArchiveAttempt.id}`}
+                        className="type-subhead inline-flex items-center gap-1 text-accent-ink hover:underline"
+                      >
+                        arşiv sonucum <ArrowRight size={14} aria-hidden />
+                      </Link>
+                    ) : null}
+                    {/* Arşiv modu: aynı set + süre, sıralamasız pratik; anahtar kapalıysa çizilmez. */}
+                    {e.archiveOpenAfterEnd ? (
+                      <Link
+                        href={`/sinav/arsiv/${e.id}`}
+                        className="type-subhead text-ink-soft hover:text-ink hover:underline"
+                      >
+                        arşivde çöz
+                      </Link>
+                    ) : null}
+                  </span>
+                ),
+              },
+            ]}
+          />
         </section>
 
         {/* Gelişim çizgim (net trendi) */}
         {myCompleted.length >= 2 && (
-          <section className="mt-5">
-            <h2 className="tk-caption mb-2">Gelişim çizgim — son {myCompleted.length} deneme</h2>
+          <section className="mt-5 flex flex-col gap-2">
+            <SectionHeader
+              title={`Gelişim çizgim — son ${myCompleted.length} deneme`}
+            />
             <Card>
               <div className="flex items-end gap-2" aria-hidden>
                 {myCompleted.slice(-12).map((a) => (
-                  <div key={a.attemptId} className="flex flex-1 flex-col items-center gap-1">
-                    <span className="tabular text-[11px] text-ink-soft">
+                  <div
+                    key={a.attemptId}
+                    className="flex flex-1 flex-col items-center gap-1"
+                  >
+                    <span className="type-body-sm tabular text-ink-soft">
                       {Number(a.score).toFixed(0)}
                     </span>
                     <div
-                      className="w-full rounded-t-sm bg-live/70"
+                      className="w-full rounded-t-[4px] bg-accent/70"
                       style={{
                         height: `${Math.max(8, (Number(a.score) / Math.max(1, maxScore)) * 72)}px`,
                       }}
@@ -213,7 +232,9 @@ export function ExamCenter({
                   </div>
                 ))}
               </div>
-              <p className="tk-caption mt-2">puanlar deneme NET&apos;i (doğru − yanlış/4)</p>
+              <p className="type-body-sm mt-2 text-ink-subtle">
+                puanlar deneme NET&apos;i (doğru − yanlış/4)
+              </p>
             </Card>
           </section>
         )}
@@ -232,27 +253,35 @@ export function ExamCenter({
  * bakan bir ekrandır: `dashboard` yoksa kart eski kısıtsız hâlinde çizilir.
  */
 function PersonalExamCard({ dashboard }: { dashboard: MeDashboard | null }) {
-  const { sinirsiz, kalan, hakkiBitti, secenekler } = personalExamState(dashboard);
+  const { sinirsiz, kalan, hakkiBitti, secenekler } =
+    personalExamState(dashboard);
 
   return (
     <Card className="mb-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="font-heading text-[15px] font-bold text-ink">⚡ Bana özel deneme</p>
-          <p className="mt-0.5 text-[13px] text-ink-soft">
-            Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan. Sıralamaya
-            girmez.
+          <p className="type-subhead inline-flex items-center gap-1.5 text-ink">
+            <Zap size={16} className="text-accent" aria-hidden /> Bana özel
+            deneme
+          </p>
+          <p className="type-body-sm mt-0.5 text-ink-soft">
+            Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan.
+            Sıralamaya girmez.
           </p>
           {!sinirsiz && (
-            <p className="mt-1.5 text-[13px] text-ink-soft">
+            <p className="type-body-sm mt-1.5 text-ink-soft">
               {hakkiBitti ? (
                 <>Bugünkü hakkını kullandın — yarın yenileniyor.</>
               ) : (
                 <>
-                  Bugün <strong className="text-ink">{kalan} hakkın</strong> var.
+                  Bugün <strong className="text-ink">{kalan} hakkın</strong>{" "}
+                  var.
                 </>
               )}{" "}
-              <Link href="/premium" className="font-bold text-brand hover:underline">
+              <Link
+                href="/premium"
+                className="font-semibold text-accent-ink hover:underline"
+              >
                 Premium&apos;da sınırsız
               </Link>
             </p>
@@ -272,7 +301,7 @@ function PersonalExamCard({ dashboard }: { dashboard: MeDashboard | null }) {
                 <Link
                   key={sayi}
                   href="/premium"
-                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-dashed border-line px-3 text-[14px] font-bold text-ink-soft transition-colors hover:border-brand/50 hover:text-ink"
+                  className="tk-interactive inline-flex min-h-11 items-center gap-1.5 rounded-control border border-dashed border-line px-3 type-subhead text-ink-soft hover:border-ink-soft hover:text-ink"
                   title={`${sayi} soruluk kişisel deneme Premium'a özel`}
                 >
                   {sayi} soru

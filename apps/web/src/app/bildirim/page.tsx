@@ -20,7 +20,10 @@ export default async function BildirimPage({
   const { git } = await searchParams;
   // Açık yönlendirme koruması: yalnız uygulama içi göreli yollar.
   const guvenli =
-    typeof git === "string" && git.startsWith("/") && !git.startsWith("//") && !git.includes("\\")
+    typeof git === "string" &&
+    git.startsWith("/") &&
+    !git.startsWith("//") &&
+    !git.includes("\\")
       ? git
       : "/bugun";
   redirect(webRoute(guvenli));

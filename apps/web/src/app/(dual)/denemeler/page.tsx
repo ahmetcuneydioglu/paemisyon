@@ -21,9 +21,10 @@ export const dynamic = "force-dynamic";
  */
 export default async function DenemelerPage() {
   const [publicExams, user] = await Promise.all([
-    api<ExamListItem[]>("/exams", { auth: false, next: { revalidate: 30 } }).catch(
-      () => [] as ExamListItem[],
-    ),
+    api<ExamListItem[]>("/exams", {
+      auth: false,
+      next: { revalidate: 30 },
+    }).catch(() => [] as ExamListItem[]),
     getCurrentUser(),
   ]);
 
@@ -41,7 +42,9 @@ export default async function DenemelerPage() {
       // karar noktası; arayüz onu tekrar etmez, yalnız dürüstçe gösterir.
       api<MeDashboard>("/me/dashboard").catch(() => null),
     ]);
-    return <ExamCenter exams={exams} attempts={attempts} dashboard={dashboard} />;
+    return (
+      <ExamCenter exams={exams} attempts={attempts} dashboard={dashboard} />
+    );
   }
 
   return (

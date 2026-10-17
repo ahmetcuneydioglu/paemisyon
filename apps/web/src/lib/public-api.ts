@@ -34,7 +34,10 @@ export async function publicApiList<T>(
   revalidateSeconds = 3600,
 ): Promise<{ items: T[]; erisilemedi: boolean }> {
   try {
-    return { items: await publicApi<T[]>(path, revalidateSeconds), erisilemedi: false };
+    return {
+      items: await publicApi<T[]>(path, revalidateSeconds),
+      erisilemedi: false,
+    };
   } catch {
     try {
       return { items: await publicApi<T[]>(path, 60), erisilemedi: false };
@@ -178,7 +181,12 @@ export interface LawDetail extends LawSummary {
   } | null;
   /** Madde Isı Haritası (Doc 25 §4): madde → çıkmış soru sayısı, çoktan aza.
    *  hasText: o maddenin yayınlanmış resmî metni var mı (okuma katmanı). */
-  articles: { no: string; slug: string; questionCount: number; hasText: boolean }[];
+  articles: {
+    no: string;
+    slug: string;
+    questionCount: number;
+    hasText: boolean;
+  }[];
   related: { slug: string; name: string; questionCount: number }[];
 }
 
@@ -346,7 +354,8 @@ export interface ActiveSession {
  */
 export function activeSessionHref(active: ActiveSession): string {
   const parts = [`resume=${active.sessionId}`];
-  if (active.scopeName) parts.push(`scope=${encodeURIComponent(active.scopeName)}`);
+  if (active.scopeName)
+    parts.push(`scope=${encodeURIComponent(active.scopeName)}`);
   if (active.topicIds && active.topicIds.length > 0) {
     parts.push(`topicIds=${active.topicIds.join(",")}`);
   }
@@ -368,6 +377,8 @@ export interface MeProfile {
   onboardingCompleted: boolean;
   preferredModule: { id: string; name: string } | null;
   dailyGoal: number;
+  /** Günlük çalışma süresi hedefi, dk (Doc 49 S1-D); null = seçilmedi. */
+  dailyMinutes: number | null;
   targetExamDate: string | null;
   memberSince: string | null;
   roles: string[];

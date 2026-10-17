@@ -22,7 +22,7 @@ export function LeaderboardPeriodTabs({
     <div
       role="tablist"
       aria-label="Sıralama dönemi"
-      className="inline-flex w-full gap-1 rounded-lg border border-line bg-surface p-1 sm:w-auto"
+      className="inline-flex w-full gap-0.5 rounded-control border border-line bg-surface p-0.5 sm:w-auto"
     >
       {TABS.map((t) => {
         const active = t.key === value;
@@ -34,10 +34,10 @@ export function LeaderboardPeriodTabs({
             disabled={disabled}
             onClick={() => onChange(t.key)}
             className={[
-              "tk-interactive flex-1 whitespace-nowrap rounded-md px-3 py-1.5 text-[13px] font-heading font-bold sm:flex-none",
+              "tk-interactive type-subhead h-10 flex-1 whitespace-nowrap rounded-[8px] px-3 sm:flex-none",
               active
-                ? "bg-brand text-surface shadow-card"
-                : "text-ink-soft hover:bg-line/40 hover:text-ink",
+                ? "bg-accent text-on-accent"
+                : "text-ink-soft hover:bg-surface-alt hover:text-ink",
               disabled ? "cursor-not-allowed opacity-60" : "",
             ].join(" ")}
           >

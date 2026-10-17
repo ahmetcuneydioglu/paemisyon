@@ -1,4 +1,6 @@
-/** Mesleki kimlik rozeti — profil ve terfi yüzeylerinde ortak kullanılır. */
+import { cn } from "@/lib/cn";
+
+/** Rütbe nişanı — profil ve terfi yüzeylerinde ortak. */
 export function RankInsignia({
   level,
   name,
@@ -8,7 +10,7 @@ export function RankInsignia({
   name: string;
   size?: "sm" | "md" | "lg";
 }) {
-  const dimensions =
+  const dims =
     size === "lg"
       ? "size-20 text-2xl"
       : size === "sm"
@@ -16,14 +18,14 @@ export function RankInsignia({
         : "size-14 text-lg";
   return (
     <div
-      className={[
-        "relative flex shrink-0 items-center justify-center rounded-full border-2 border-brand/30 bg-brand/10 font-heading font-bold text-brand",
-        dimensions,
-      ].join(" ")}
+      className={cn(
+        "relative flex shrink-0 items-center justify-center rounded-full border-2 border-accent/40 bg-accent-soft font-display font-bold text-accent-ink",
+        dims,
+      )}
       aria-label={`${name}, seviye ${level}`}
     >
       <span aria-hidden>{level}</span>
-      <span className="absolute -bottom-1 rounded-full bg-brand px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-surface">
+      <span className="type-label absolute -bottom-1.5 rounded-pill bg-accent px-1.5 py-0.5 text-[9px] text-on-accent">
         Rütbe
       </span>
     </div>
