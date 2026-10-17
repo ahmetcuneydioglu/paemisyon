@@ -313,3 +313,11 @@ dalların bekleyen commit'lerine dokunulmaz.
   4 Eyl 2026 kararıyla çelişiyordu → "kaynağı bankada kayıtlıdır"; `kosullar` §5'teki aynı
   cümle yasal metin olduğu için dokunulmadı (kullanıcı kararı). W-G kalanlar: Lighthouse,
   axe taraması, Figma aynası.
+- **Ara deploy 2 (18 Eki 2026, main 57bad57 — W-E + W-F):** Vercel READY (fra1, ~40 sn),
+  paemisyon.com alias'landı. Canlı göz testi (panel, girişsiz, koyu): landing hero quiz,
+  PAEM 10 çıkmış sınav detayı, denemeler tablosu yeni deride; `legacy-light` sarmalayıcı ve
+  icomoon isteği yok. Not: `curl` ile 20 rotalık tarama Vercel bot sınavına takıldı
+  (`x-vercel-mitigated: challenge` → 429); uygulama hatası değil, tarayıcıdan 200. CI: web
+  işi `npm ci` aşamasında düşüyordu (macOS kilidinde `@emnapi/runtime` yok; push'tan önceki
+  iki main koşusu da aynı sebeple kırmızıydı) → kilit `docker run node:22 npm install
+  --package-lock-only` ile yenilendi (bkz. A1 notu), ayrı commit, push onayı bekliyor.
