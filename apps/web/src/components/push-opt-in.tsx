@@ -39,7 +39,12 @@ export function PushOptIn() {
   // Durum yalnız istemcide bilinir (Notification API) — sunucu render'ında
   // hiçbir şey çizilmez, böylece hidrasyon uyuşmazlığı olmaz.
   useEffect(() => {
-    setDurum(ertelenmisMi() ? "reddedildi" : pushDurumu());
+    // Bir sonraki tick'te: hidrasyon sonrası senkron setState yasağı (React Compiler).
+    const id = setTimeout(
+      () => setDurum(ertelenmisMi() ? "reddedildi" : pushDurumu()),
+      0,
+    );
+    return () => clearTimeout(id);
   }, []);
 
   // İzin daha önce verilmişse token'ı sessizce tazele: tarayıcı token'ları

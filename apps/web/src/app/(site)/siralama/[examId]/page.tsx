@@ -1,60 +1,85 @@
 import type { Metadata } from "next";
+import { Timer, Trophy, Users } from "lucide-react";
 import { api } from "@/lib/api";
 import type { Leaderboard } from "@/lib/types";
-import { EmptyState } from "@/components/empty-state";
 import { ExamRankTable, Podium } from "@/components/rank-table";
+import { EmptyState } from "@/components/ui/empty-state";
+import { Notice } from "@/components/ui/notice";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 import { formatDate, formatTime } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Sınav Sıralaması" };
 export const dynamic = "force-dynamic";
 
-/** Deneme sıralaması — eski siralama.php (Doc 18 §2.5). Public; pencere kapanınca. */
-export default async function SiralamaPage({ params }: { params: Promise<{ examId: string }> }) {
+/** Deneme sıralaması (Doc 18 §2.5). Public; pencere kapanınca. */
+export default async function SiralamaPage({
+  params,
+}: {
+  params: Promise<{ examId: string }>;
+}) {
   const { examId } = await params;
-  const lb = await api<Leaderboard>(`/exams/${examId}/leaderboard`).catch(() => null);
+  const lb = await api<Leaderboard>(`/exams/${examId}/leaderboard`).catch(
+    () => null,
+  );
+
+  const intro = (
+    <PageIntro
+      breadcrumb={[
+        { label: "Denemeler", href: "/denemeler" },
+        { label: "Sıralama" },
+      ]}
+      eyebrow="Deneme"
+      title="Sınav sıralaması"
+    />
+  );
 
   if (!lb) {
     return (
-      <div>
-        <h2 className="head2">Sınav Sıralaması</h2>
-        <EmptyState title="Sıralama bulunamadı" message="Bu denemeye ait sıralama görüntülenemiyor." />
-      </div>
+      <PageFrame className="flex flex-col gap-6">
+        {intro}
+        <EmptyState
+          icon={Trophy}
+          title="Sıralama bulunamadı"
+          body="Bu denemeye ait sıralama görüntülenemiyor."
+        />
+      </PageFrame>
     );
   }
 
   if (!lb.available) {
     return (
-      <div>
-        <h2 className="head2">Sınav Sıralaması</h2>
+      <PageFrame className="flex flex-col gap-6">
+        {intro}
         <EmptyState
-          icon="icon-timer"
+          icon={Timer}
           title="Sıralama henüz açık değil"
-          message={`Sıralama, sınav süresi bitince (${formatDate(lb.endAt)} ${formatTime(lb.endAt)}) açılacak.`}
+          body={`Sıralama, sınav süresi bitince (${formatDate(lb.endAt)} ${formatTime(lb.endAt)}) açılacak.`}
         />
-      </div>
+      </PageFrame>
     );
   }
 
   return (
-    <div>
-      <h2 className="head2">Sınav Sıralaması</h2>
+    <PageFrame className="flex flex-col gap-6">
+      {intro}
       {lb.top.length === 0 ? (
         <EmptyState
-          icon="icon-user"
+          icon={Users}
           title="Katılım yok"
-          message="Bu denemeyi henüz tamamlayan olmadı."
+          body="Bu denemeyi henüz tamamlayan olmadı."
         />
       ) : (
-        <div className="pb-10">
+        <>
           <Podium rows={lb.top} />
           {lb.me && !lb.top.slice(0, 3).some((r) => r.isMe) && (
-            <p className="mb-2 text-center text-sm font-semibold text-(--color-navy)">
-              🎯 Senin sıran: #{lb.me.rank} · {lb.me.score.toFixed(2)} net
-            </p>
+            <Notice tone="info" className="mx-auto w-full max-w-3xl">
+              Senin sıran: <b className="font-semibold">#{lb.me.rank}</b> ·{" "}
+              {lb.me.score.toFixed(2)} net
+            </Notice>
           )}
           <ExamRankTable rows={lb.top} />
-        </div>
+        </>
       )}
-    </div>
+    </PageFrame>
   );
 }

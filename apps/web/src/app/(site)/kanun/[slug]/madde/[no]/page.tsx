@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft, ArrowRight, Flame } from "lucide-react";
 import { publicApi, type LawArticleDetail } from "@/lib/public-api";
 import { config } from "@/lib/config";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { ButtonLink } from "@/components/ui/button";
+import { SectionHeader } from "@/components/ui/section-header";
+import { cn } from "@/lib/cn";
 
 type Params = Promise<{ slug: string; no: string }>;
 
@@ -13,14 +20,21 @@ type Params = Promise<{ slug: string; no: string }>;
  */
 const MADDE_REVALIDATE_SECONDS = 86_400;
 
-async function getArticle(slug: string, no: string): Promise<LawArticleDetail | null> {
+async function getArticle(
+  slug: string,
+  no: string,
+): Promise<LawArticleDetail | null> {
   return publicApi<LawArticleDetail>(
     `/public/laws/${slug}/articles/${no}`,
     MADDE_REVALIDATE_SECONDS,
   ).catch(() => null);
 }
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
   const { slug, no } = await params;
   const a = await getArticle(slug, no);
   if (!a) return { title: "Madde bulunamadı" };
@@ -50,131 +64,140 @@ export default async function MaddePage({ params }: { params: Params }) {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <PageFrame className="flex flex-col gap-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <nav className="mb-4 text-sm text-gray-500">
-        <Link href="/kanunlar" className="hover:underline">Kanun Kütüphanesi</Link> ›{" "}
-        <Link href={`/kanun/${a.lawSlug}`} className="hover:underline">{a.lawName}</Link> ›{" "}
-        <span className="font-medium text-gray-700">m.{a.no}</span>
-      </nav>
-
-      <div className="mb-2 flex flex-wrap items-center gap-3">
-        <h1 className="font-heading text-2xl font-bold text-(--color-navy)">
-          Madde {a.no}
-        </h1>
-        <span className="rounded-full bg-(--tk-accent-atlas)/10 px-3 py-1 text-sm font-medium"
-          style={{ color: "var(--tk-accent-atlas)" }}>
-          🔥 {a.questionCount} çıkmış soru
-        </span>
-      </div>
-      <p className="mb-6 text-gray-600">{a.lawName} · {a.courseName}</p>
-
-      {/* Sınav bağlamı */}
-      <div className="mb-6 flex flex-wrap gap-2">
-        {a.exams.map((e) => (
-          <span
-            key={e.examKey + e.sectionName}
-            className="rounded-full bg-(--color-navy)/10 px-3 py-1 text-sm font-medium text-(--color-navy)"
-          >
-            {e.examName} · %{e.weightPercent}
-          </span>
-        ))}
-      </div>
+      <PageIntro
+        breadcrumb={[
+          { label: "Kanun Kütüphanesi", href: "/kanunlar" },
+          { label: a.lawName, href: `/kanun/${a.lawSlug}` },
+          { label: `m.${a.no}` },
+        ]}
+        eyebrow={`${a.lawName} · ${a.courseName}`}
+        title={`Madde ${a.no}`}
+        meta={
+          <>
+            <Badge tone="warning">
+              <Flame size={12} aria-hidden /> {a.questionCount} çıkmış soru
+            </Badge>
+            {a.exams.map((e) => (
+              <Badge key={e.examKey + e.sectionName} tone="accent">
+                {e.examName} · %{e.weightPercent}
+              </Badge>
+            ))}
+          </>
+        }
+      />
 
       {/* Sınav geçmişi — hangi sınavda kaç kez */}
       {a.sources.length > 0 && (
-        <section className="mb-6 rounded-xl border border-gray-200 bg-white p-6">
-          <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
+        <Card className="flex flex-col gap-3 p-5 sm:p-6">
+          <h2 className="type-heading text-ink">
             Bu madde hangi sınavlarda soruldu?
           </h2>
-          <ul className="space-y-1.5 text-sm">
+          <ul className="flex flex-col divide-y divide-line">
             {a.sources.map((s) => (
-              <li key={s.source} className="flex items-center justify-between">
-                <span>{s.source}</span>
-                <span className="font-medium text-gray-500">
+              <li
+                key={s.source}
+                className="type-body-sm flex items-center justify-between gap-3 py-2"
+              >
+                <span className="text-ink">{s.source}</span>
+                <span className="tabular shrink-0 font-semibold text-ink-soft">
                   {s.count} soru
                 </span>
               </li>
             ))}
           </ul>
-        </section>
+        </Card>
       )}
 
       {/* Teaser kökler — cevap/şık YOK (banka sızdırma politikası) */}
       {a.previews.length > 0 && (
-        <section className="mb-6 rounded-xl border border-gray-200 bg-white p-6">
-          <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
-            Örnek soru kökleri
-          </h2>
-          <ul className="space-y-3">
+        <Card className="flex flex-col gap-4 p-5 sm:p-6">
+          <h2 className="type-heading text-ink">Örnek soru kökleri</h2>
+          <ul className="flex flex-col gap-3">
             {a.previews.map((p, i) => (
-              <li key={i} className="rounded-lg bg-gray-50 p-4 text-sm italic text-gray-700">
+              <li
+                key={i}
+                className="type-body-sm rounded-control border-l-2 border-accent bg-surface-alt p-4 text-ink"
+              >
                 “{p}”
               </li>
             ))}
           </ul>
-          <div className="mt-4 flex flex-wrap items-center gap-3">
-            <Link href="/kayit" className="btn2 btn2-green">
+          <div className="flex flex-wrap items-center gap-3">
+            <ButtonLink href="/kayit">
               {a.questionCount} sorunun tamamını çöz — ücretsiz kayıt ol
-            </Link>
-            <span className="text-xs text-gray-400">
+            </ButtonLink>
+            <span className="type-body-sm text-ink-subtle">
               Cevaplar ve açıklamalar uygulamada.
             </span>
           </div>
-        </section>
+        </Card>
       )}
 
       {/* Komşu madde gezinme */}
-      <div className="mb-6 flex items-center justify-between text-sm">
+      <nav
+        className="flex items-center justify-between gap-3"
+        aria-label="Komşu maddeler"
+      >
         {a.neighbors.prev ? (
-          <Link
+          <ButtonLink
             href={`/kanun/${a.lawSlug}/madde/${a.neighbors.prev.slug}`}
-            className="font-bold text-(--color-navy) hover:underline"
+            variant="secondary"
+            size="sm"
+            leadingIcon={<ArrowLeft size={16} aria-hidden />}
           >
-            ← m.{a.neighbors.prev.no}
-          </Link>
+            m.{a.neighbors.prev.no}
+          </ButtonLink>
         ) : (
           <span />
         )}
         {a.neighbors.next ? (
-          <Link
+          <ButtonLink
             href={`/kanun/${a.lawSlug}/madde/${a.neighbors.next.slug}`}
-            className="font-bold text-(--color-navy) hover:underline"
+            variant="secondary"
+            size="sm"
           >
-            m.{a.neighbors.next.no} →
-          </Link>
+            m.{a.neighbors.next.no} <ArrowRight size={16} aria-hidden />
+          </ButtonLink>
         ) : (
           <span />
         )}
-      </div>
+      </nav>
 
       {/* Kanunun diğer etiketli maddeleri */}
       {a.siblings.length > 1 && (
-        <section>
-          <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
-            {a.lawName} — soru çıkan maddeler
-          </h2>
+        <section className="flex flex-col gap-3">
+          <SectionHeader title={`${a.lawName} — soru çıkan maddeler`} />
           <div className="flex flex-wrap gap-2">
-            {a.siblings.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/kanun/${a.lawSlug}/madde/${s.slug}`}
-                className={`rounded-full border px-3 py-1 text-sm transition hover:border-(--color-navy) ${
-                  s.no === a.no
-                    ? "border-(--color-navy) bg-(--color-navy)/10 font-bold text-(--color-navy)"
-                    : "border-gray-200 text-gray-600"
-                }`}
-              >
-                m.{s.no} <span className="text-xs text-gray-400">({s.questionCount})</span>
-              </Link>
-            ))}
+            {a.siblings.map((s) => {
+              const current = s.no === a.no;
+              return (
+                <Link
+                  key={s.slug}
+                  href={`/kanun/${a.lawSlug}/madde/${s.slug}`}
+                  aria-current={current ? "page" : undefined}
+                  className={cn(
+                    "tk-interactive inline-flex min-h-9 items-center gap-1 rounded-pill border px-3 type-body-sm",
+                    current
+                      ? "border-accent bg-accent-soft font-semibold text-accent-ink"
+                      : "border-line text-ink-soft hover:border-ink-soft hover:text-ink",
+                  )}
+                >
+                  m.{s.no}{" "}
+                  <span className="tabular text-ink-subtle">
+                    ({s.questionCount})
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}
-    </div>
+    </PageFrame>
   );
 }

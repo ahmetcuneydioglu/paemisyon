@@ -3,14 +3,12 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 /**
- * Bir sonraki denemeye geri sayım — eski ana sayfa #clock (gün/saat/dk/sn).
- * Süre dolunca sayfayı tazeler (liste durumları sunucudan yeniden hesaplanır).
- */
-/**
- * `blocks` (varsayılan): eski ana sayfanın 4 kutulu büyük sayacı.
- * `inline`: tek satır, dar alanlar için ("4 sa 59 dk"). Duyuru şeridi bunu
- * kullanır — kutulu sürüm 330px genişlik istiyor ve mobilde şeridin çağrı
- * düğmesini ekran dışına itiyordu.
+ * Bir sonraki denemeye geri sayım (gün/saat/dk/sn). Süre dolunca sayfayı tazeler
+ * (liste durumları sunucudan yeniden hesaplanır).
+ *
+ * `blocks` (varsayılan): dört kutulu büyük sayaç — token yüzeyinde, `type-stat` rakam.
+ * `inline`: tek satır, dar alanlar için ("4 sa 59 dk"). Duyuru şeridi bunu kullanır —
+ * kutulu sürüm 330px genişlik istiyor ve mobilde şeridin çağrı düğmesini ekran dışına itiyordu.
  */
 export function Countdown({
   target,
@@ -71,18 +69,20 @@ export function Countdown({
   }
 
   return (
-    <div className="flex justify-center gap-3" role="timer" aria-live="off">
+    <div
+      className="flex justify-center gap-2 sm:gap-3"
+      role="timer"
+      aria-live="off"
+    >
       {units.map((u) => (
         <div
           key={u.l}
-          className="min-w-[72px] bg-(--color-navy-deep) px-3 py-2 text-center"
+          className="min-w-[64px] rounded-card border border-line bg-surface-alt px-2 py-2 text-center sm:min-w-[72px] sm:px-3"
         >
-          <div className="font-display text-3xl font-bold text-(--color-yellow) tabular-nums">
+          <div className="type-stat text-ink">
             {String(u.v).padStart(2, "0")}
           </div>
-          <div className="text-[11px] font-semibold tracking-wide text-white/80">
-            {u.l}
-          </div>
+          <div className="type-label text-ink-subtle">{u.l}</div>
         </div>
       ))}
     </div>

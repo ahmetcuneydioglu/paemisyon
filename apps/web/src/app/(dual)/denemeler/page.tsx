@@ -5,6 +5,12 @@ import type { ExamListItem, MyAttempt } from "@/lib/types";
 import type { MeDashboard } from "@/lib/public-api";
 import { ExamTable } from "@/components/exam-table";
 import { ExamCenter } from "@/components/exam/exam-center";
+import {
+  PageFrame,
+  PageIntro,
+  ClosingCta,
+} from "@/components/public/page-frame";
+import { ButtonLink } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Denemeler",
@@ -17,7 +23,7 @@ export const dynamic = "force-dynamic";
 
 /**
  * Deneme merkezi (Doc 27 §3.8) — aynı URL iki derinlik:
- * girişsiz → miras tablo (SEO), girişli → takvim + geri sayım + gelişim çizgim.
+ * girişsiz → liste (SEO), girişli → takvim + geri sayım + gelişim çizgim.
  */
 export default async function DenemelerPage() {
   const [publicExams, user] = await Promise.all([
@@ -48,11 +54,18 @@ export default async function DenemelerPage() {
   }
 
   return (
-    <div>
-      <h2 className="head2">Sınavlar</h2>
-      <div className="mx-auto max-w-6xl px-4 py-8">
-        <ExamTable exams={publicExams} loggedIn={false} />
-      </div>
-    </div>
+    <PageFrame width="wide" className="flex flex-col gap-6">
+      <PageIntro
+        eyebrow="Canlı denemeler"
+        title="Deneme sınavları"
+        lead="Türkiye genelinde aynı anda yarış; süre bitince netini ve sıralamanı gör. Katılım için ücretsiz hesap yeterli."
+      />
+      <ExamTable exams={publicExams} loggedIn={false} />
+      <ClosingCta
+        title="Sıradaki denemeye hazır ol"
+        body="Kayıt ol, deneme günü hatırlatma al; sonuçların ve yanlışların hesabında birikir."
+        actions={<ButtonLink href="/kayit">Ücretsiz kayıt ol</ButtonLink>}
+      />
+    </PageFrame>
   );
 }

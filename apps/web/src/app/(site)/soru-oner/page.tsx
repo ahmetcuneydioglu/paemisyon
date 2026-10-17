@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { api } from "@/lib/api";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import type { PublicCatalogModule } from "@/lib/types";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 import { SuggestForm } from "./suggest-form";
 
 export const metadata: Metadata = { title: "Soru Öner" };
@@ -18,12 +19,13 @@ export default async function SoruOnerPage() {
   }).catch(() => [] as PublicCatalogModule[]);
 
   return (
-    <div>
-      <h2 className="head2">Soru Öner</h2>
-      <p className="mx-auto max-w-2xl px-4 pt-4 text-center text-[13px] text-neutral-500">
-        Bildiğin güzel bir soruyu paylaş — editör onayından geçince soru bankasına eklenir.
-      </p>
+    <PageFrame width="narrow" className="flex flex-col gap-6">
+      <PageIntro
+        eyebrow="Katkı"
+        title="Soru öner"
+        lead="Bildiğin güzel bir soruyu paylaş — editör onayından geçince soru bankasına eklenir."
+      />
       <SuggestForm catalog={catalog} />
-    </div>
+    </PageFrame>
   );
 }

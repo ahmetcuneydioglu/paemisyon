@@ -1,11 +1,16 @@
-import Link from "next/link";
+import { CalendarX } from "lucide-react";
 import type { ExamListItem } from "@/lib/types";
 import { formatDate, formatTimeRange } from "@/lib/format";
+import { DataTable, type Column } from "@/components/ui/data-table";
+import { ButtonLink } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { PremiumBadge } from "@/components/ui/premium-badge";
+import { EmptyState } from "@/components/ui/empty-state";
 
 /**
- * Deneme listesi — eski sinavlar.php tablosu birebir (Doc 18 §4.1):
- * lacivert thead, zebra satırlar, sağa yaslı 3-durumlu btn2 aksiyonları.
- * Mobilde bloklaşır (data-label düzeltmesiyle).
+ * Deneme listesi — girişsiz "Denemeler" vitrini (Doc 27 §3.8). Kit tablosu üstünde:
+ * dar ekranda tarih/saat sütunları gizlenir, bilgi başlık hücresine iner; sağda
+ * üç durumlu eylem (başlamadı / başlat-devam / sıralama-sorular-sonuç).
  */
 export function ExamTable({
   exams,
@@ -16,107 +21,156 @@ export function ExamTable({
 }) {
   if (exams.length === 0) {
     return (
-      <p className="py-16 text-center text-sm text-neutral-500">
-        Henüz yayınlanmış deneme yok — yenileri eklendiğinde burada listelenecek.
-      </p>
+      <EmptyState
+        icon={CalendarX}
+        title="Henüz yayınlanmış deneme yok"
+        body="Yenileri eklendiğinde burada listelenecek."
+      />
     );
   }
+  const total = exams.length;
+  const columns: Column<ExamListItem>[] = [
+    {
+      key: "no",
+      header: "No",
+      width: "3.5rem",
+      align: "center",
+      hideBelowMd: true,
+      cell: (e) => (
+        <span className="tabular text-ink-soft">
+          {total - exams.indexOf(e)}
+        </span>
+      ),
+    },
+    {
+      key: "title",
+      header: "Deneme",
+      cell: (e) => (
+        <div className="flex flex-col gap-1">
+          <span className="flex flex-wrap items-center gap-2">
+            <span className="type-subhead text-ink">{e.title}</span>
+            {e.isPremium ? <PremiumBadge variant="soft" /> : null}
+          </span>
+          <span className="type-body-sm text-ink-soft">
+            {e.questionCount} soru · {e.durationMinutes} dk
+            <span className="md:hidden">
+              {" "}
+              · {formatDate(e.startAt)} {formatTimeRange(e.startAt, e.endAt)}
+            </span>
+          </span>
+        </div>
+      ),
+    },
+    {
+      key: "date",
+      header: "Tarih",
+      hideBelowMd: true,
+      cell: (e) => <span className="tabular">{formatDate(e.startAt)}</span>,
+    },
+    {
+      key: "time",
+      header: "Sınav saati",
+      hideBelowMd: true,
+      cell: (e) => (
+        <span className="tabular">{formatTimeRange(e.startAt, e.endAt)}</span>
+      ),
+    },
+    {
+      key: "stats",
+      header: "Katılım / Ort.",
+      align: "right",
+      hideBelowMd: true,
+      cell: (e) => (
+        <span className="tabular">
+          {e.participantCount} /{" "}
+          {e.avgScore != null ? e.avgScore.toFixed(2) : "—"}
+        </span>
+      ),
+    },
+    {
+      key: "actions",
+      header: <span className="sr-only">İşlemler</span>,
+      align: "right",
+      cell: (e) => <ExamActions exam={e} loggedIn={loggedIn} />,
+    },
+  ];
   return (
-    <table className="exam-table">
-      <thead>
-        <tr>
-          <th className="w-12">No</th>
-          <th>Deneme</th>
-          <th>Tarih</th>
-          <th>Sınav Saati</th>
-          <th>Katılım / Ortalama</th>
-          <th aria-label="İşlemler" />
-        </tr>
-      </thead>
-      <tbody>
-        {exams.map((e, i) => (
-          <tr key={e.id}>
-            <td data-label="No">{exams.length - i}</td>
-            <td data-label="Deneme" className="font-semibold">
-              {e.title}
-              {e.isPremium && (
-                <span className="ml-2 inline-flex items-center gap-1 bg-(--color-navy) px-2 py-0.5 text-[11px] font-bold text-(--color-yellow)">
-                  <i className="icon-lock text-[10px]" aria-hidden /> PREMIUM
-                </span>
-              )}
-              <span className="ml-2 text-[12px] font-normal text-neutral-500">
-                {e.questionCount} soru · {e.durationMinutes} dk
-              </span>
-            </td>
-            <td data-label="Tarih">{formatDate(e.startAt)}</td>
-            <td data-label="Sınav Saati">{formatTimeRange(e.startAt, e.endAt)}</td>
-            <td data-label="Katılım / Ortalama">
-              {e.participantCount} / {e.avgScore != null ? e.avgScore.toFixed(2) : "—"}
-            </td>
-            <td>
-              <ExamActions exam={e} loggedIn={loggedIn} />
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <DataTable
+      columns={columns}
+      rows={exams}
+      rowKey={(e) => e.id}
+      caption="Deneme sınavları: tarih, katılım ve işlemler"
+    />
   );
 }
 
-/** Eski 3-durumlu buton mantığı + kendi katılım durumun (Doc 18 §3). */
-function ExamActions({ exam, loggedIn }: { exam: ExamListItem; loggedIn: boolean }) {
+/** Üç durumlu eylem mantığı + kendi katılım durumun (Doc 18 §3). */
+function ExamActions({
+  exam,
+  loggedIn,
+}: {
+  exam: ExamListItem;
+  loggedIn: boolean;
+}) {
   // Sunucu bileşeni + force-dynamic sayfa: istek anının saatini okumak kasıtlı
   // (eski "Devam Ediyor" eşiği). İstemci saf-render kuralı burada geçerli değil.
   // eslint-disable-next-line react-hooks/purity
-  const startedLongAgo = Date.now() - new Date(exam.startAt).getTime() > 30 * 60_000;
+  const now = Date.now();
+  const startedLongAgo = now - new Date(exam.startAt).getTime() > 30 * 60_000;
 
   if (exam.state === "upcoming") {
-    return (
-      <span className="btn2 btn2-orange" aria-disabled="true">
-        Sınav Başlamadı
-      </span>
-    );
+    return <Badge>Başlamadı</Badge>;
   }
 
   if (exam.state === "active") {
     if (exam.myAttempt?.status === "completed") {
       return (
-        <Link href={`/sonuc/${exam.myAttempt.id}`} className="btn2 btn2-red">
+        <ButtonLink
+          href={`/sonuc/${exam.myAttempt.id}`}
+          size="sm"
+          variant="secondary"
+        >
           Sonucum
-        </Link>
+        </ButtonLink>
       );
     }
     const label = exam.myAttempt
-      ? "Devam Et"
+      ? "Devam et"
       : startedLongAgo
-        ? "Sınav Devam Ediyor"
-        : "Sınavı Başlat";
+        ? "Sınav devam ediyor"
+        : "Sınavı başlat";
     return (
-      <Link href={loggedIn ? `/sinav/${exam.id}` : "/giris"} className="btn2 btn2-green">
+      <ButtonLink href={loggedIn ? `/sinav/${exam.id}` : "/giris"} size="sm">
         {label}
-      </Link>
+      </ButtonLink>
     );
   }
 
   // ended
   return (
-    <span className="inline-flex flex-wrap justify-end gap-1.5">
-      <Link href={`/siralama/${exam.id}`} className="btn2 btn2-orange">
+    <span className="inline-flex flex-col items-end gap-1.5 md:flex-row md:flex-wrap md:justify-end">
+      <ButtonLink href={`/siralama/${exam.id}`} size="sm" variant="secondary">
         Sıralama
-      </Link>
+      </ButtonLink>
       {exam.questionsOpenAfterEnd && (
-        <Link href={`/denemeler/${exam.id}/sorular`} className="btn2 btn2-green">
+        <ButtonLink
+          href={`/denemeler/${exam.id}/sorular`}
+          size="sm"
+          variant="ghost"
+        >
           Sorular
-        </Link>
+        </ButtonLink>
       )}
       {exam.myAttempt ? (
-        <Link href={`/sonuc/${exam.myAttempt.id}`} className="btn2 btn2-red">
-          Sınav Bitti
-        </Link>
+        <ButtonLink
+          href={`/sonuc/${exam.myAttempt.id}`}
+          size="sm"
+          variant="ghost"
+        >
+          Sonucum
+        </ButtonLink>
       ) : (
-        <span className="btn2 btn2-red" aria-disabled="true">
-          Sınav Bitti
-        </span>
+        <Badge>Bitti</Badge>
       )}
     </span>
   );

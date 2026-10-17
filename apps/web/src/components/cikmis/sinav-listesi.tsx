@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { FileText } from "lucide-react";
 import type { CikmisSinavOzet } from "@/lib/public-api";
 import { Card } from "@/components/ui/card";
-import { EmptyState } from "@/components/empty-state";
-import { TurRozeti, turAciklamasi } from "./tur-rozeti";
+import { EmptyState } from "@/components/ui/empty-state";
+import { Badge } from "@/components/ui/badge";
 import { PremiumBadge } from "@/components/ui/premium-badge";
+import { TurRozeti, turAciklamasi } from "./tur-rozeti";
 
 /** En kalabalık üç dersi göster; kart bir tabloya dönüşmesin. */
 const ILK_DERSLER = 3;
@@ -26,15 +28,15 @@ export function SinavListesi({
   if (!sinavlar.length) {
     return erisilemedi ? (
       <EmptyState
-        icon="icon-doc"
+        icon={FileText}
         title="Liste şu an yüklenemedi"
-        message="Geçici bir aksaklık; birkaç dakika içinde tekrar dener misin?"
+        body="Geçici bir aksaklık; birkaç dakika içinde tekrar dener misin?"
       />
     ) : (
       <EmptyState
-        icon="icon-doc"
+        icon={FileText}
         title="Henüz yayında dönem yok"
-        message="Çıkmış sınavlar hazırlanıyor; en kısa sürede burada olacak."
+        body="Çıkmış sınavlar hazırlanıyor; en kısa sürede burada olacak."
       />
     );
   }
@@ -45,46 +47,49 @@ export function SinavListesi({
         <li key={s.slug}>
           <Card className="relative flex h-full flex-col gap-3 transition-colors hover:border-ink-soft">
             <div className="flex items-start justify-between gap-3">
-              <div>
-                <h2 className="font-heading text-[17px] font-bold text-ink">
+              <div className="min-w-0">
+                <h2 className="type-heading text-ink">
                   <Link
                     href={`/paem-cikmis-sorular/${s.slug}`}
-                    className="tk-interactive after:absolute after:inset-0"
+                    className="after:absolute after:inset-0 after:rounded-card"
                   >
                     {s.donem ? `PAEM ${s.donem}. Dönem` : s.ad}
                   </Link>
                 </h2>
-                <p className="mt-0.5 text-[13px] text-ink-soft">
-                  {s.tarih ? new Date(s.tarih).getFullYear() : "Tarih bilinmiyor"} · {s.kurum}
+                <p className="type-body-sm mt-0.5 text-ink-soft">
+                  {s.tarih
+                    ? new Date(s.tarih).getFullYear()
+                    : "Tarih bilinmiyor"}{" "}
+                  · {s.kurum}
                 </p>
               </div>
               <span className="flex shrink-0 items-center gap-1.5">
-                {s.isPremium && <PremiumBadge />}
+                {s.isPremium && <PremiumBadge variant="soft" />}
                 <TurRozeti tur={s.tur} />
               </span>
             </div>
 
-            <p className="text-[13px] leading-relaxed text-ink-soft">{turAciklamasi(s.tur)}</p>
+            <p className="type-body-sm text-ink-soft">{turAciklamasi(s.tur)}</p>
 
             {s.dersDagilimi.length > 0 && (
               <ul className="flex flex-wrap gap-1.5">
                 {s.dersDagilimi.slice(0, ILK_DERSLER).map((d) => (
-                  <li
-                    key={d.ders}
-                    className="rounded-sm bg-line/40 px-2 py-1 text-[12px] text-ink-soft"
-                  >
-                    {d.ders} <span className="font-bold text-ink">{d.adet}</span>
+                  <li key={d.ders}>
+                    <Badge>
+                      {d.ders}{" "}
+                      <span className="font-semibold text-ink">{d.adet}</span>
+                    </Badge>
                   </li>
                 ))}
                 {s.dersDagilimi.length > ILK_DERSLER && (
-                  <li className="px-1 py-1 text-[12px] text-ink-soft">
+                  <li className="type-body-sm px-1 py-0.5 text-ink-subtle">
                     +{s.dersDagilimi.length - ILK_DERSLER} ders
                   </li>
                 )}
               </ul>
             )}
 
-            <p className="mt-auto pt-1 text-[13px] font-bold text-brand">
+            <p className="type-subhead mt-auto pt-1 text-accent-ink">
               {s.tur === "resmi"
                 ? `${s.soruSayisi ?? 0} soru · ${s.acikSoru} tanesini burada çöz`
                 : `${s.soruSayisi ?? 0} sorunun konu dağılımı`}
@@ -95,5 +100,3 @@ export function SinavListesi({
     </ul>
   );
 }
-
-/** Dönem Premium'a özel: ziyaretçi tıklamadan önce bilmeli. */

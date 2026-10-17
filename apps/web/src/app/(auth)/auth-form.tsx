@@ -38,17 +38,17 @@ export function AuthForm({
   if (state.verificationRequired) {
     return (
       <div className="w-full max-w-md">
-        <div className="rounded-lg border border-success/30 bg-surface p-6 shadow-sm">
+        <div className="rounded-sheet border border-success/30 bg-surface p-6">
           <div
-            className="flex size-11 items-center justify-center rounded-full bg-success/10 text-xl text-success"
+            className="flex size-11 items-center justify-center rounded-full bg-success-soft text-xl text-success-ink"
             aria-hidden
           >
             ✓
           </div>
-          <h1 className="mt-4 font-heading text-xl font-bold text-ink">
+          <h1 className="mt-4 type-heading text-ink">
             E-postanı doğrula
           </h1>
-          <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+          <p className="mt-2 type-body-sm text-ink-soft">
             {state.notice}
           </p>
           <p className="mt-2 break-all text-[13px] font-semibold text-ink">
@@ -69,7 +69,7 @@ export function AuthForm({
             <p
               className={[
                 "mt-3 text-[13px]",
-                resendState.error ? "text-danger" : "text-success",
+                resendState.error ? "text-danger-ink" : "text-success-ink",
               ].join(" ")}
               role="status"
             >
@@ -78,7 +78,7 @@ export function AuthForm({
           )}
           <Link
             href="/giris"
-            className="mt-5 inline-block text-[13px] font-bold text-brand hover:underline"
+            className="mt-5 inline-block text-[13px] font-bold text-accent-ink hover:underline"
           >
             Giriş sayfasına dön →
           </Link>
@@ -90,19 +90,19 @@ export function AuthForm({
   return (
     <div className="w-full max-w-md">
       <div className="mb-6">
-        <span className="tk-caption text-brand">
+        <span className="type-label text-accent-ink">
           Tek hesap · tüm platformlar
         </span>
-        <h1 className="mt-1 font-heading text-2xl font-bold text-ink">
+        <h1 className="mt-1 type-title text-ink">
           {isLogin ? "Tekrar hoş geldin" : "Hazırlığına bugün başla"}
         </h1>
-        <p className="mt-2 text-[14px] text-ink-soft">
+        <p className="mt-2 type-body-sm text-ink-soft">
           {isLogin
             ? "Koçun ve ilerlemen seni bekliyor."
             : "PAEM ve Misyon hazırlığın aynı hesapta, her cihazda."}
         </p>
       </div>
-      <div className="space-y-5 rounded-lg border border-line bg-surface p-6 shadow-sm">
+      <div className="space-y-5 rounded-sheet border border-line bg-surface p-6">
       <form action={action} className="space-y-4">
         <input type="hidden" name="next" value={next} />
         {!isLogin && (
@@ -128,7 +128,7 @@ export function AuthForm({
           />
           {!isLogin && oneri && !oneriKapali && (
             <div
-              className="mt-2 rounded-sm border border-warning/40 bg-warning/10 px-3 py-2"
+              className="mt-2 rounded-control border border-warning/40 bg-warning-soft px-3 py-2"
               role="status"
             >
               <p className="text-[13px] text-ink">{oneri.mesaj}</p>
@@ -136,7 +136,7 @@ export function AuthForm({
                 <button
                   type="button"
                   onClick={() => setEmail(oneri.oneri)}
-                  className="tk-interactive min-h-11 rounded-sm bg-brand px-3 text-[13px] font-bold text-surface hover:opacity-90"
+                  className="tk-interactive min-h-11 rounded-control bg-accent px-3 text-[13px] font-semibold text-on-accent hover:brightness-110"
                 >
                   {oneri.oneri} olarak düzelt
                 </button>
@@ -162,13 +162,13 @@ export function AuthForm({
             {isLogin && (
               <Link
                 href="/sifremi-unuttum"
-                className="text-[12px] font-bold text-brand hover:underline"
+                className="text-[12px] font-bold text-accent-ink hover:underline"
               >
                 Şifremi unuttum
               </Link>
             )}
           </div>
-          <div className="mt-1 flex h-11 items-center rounded-sm border border-line bg-surface px-3 focus-within:border-brand">
+          <div className="mt-1 flex h-11 items-center rounded-control border border-line bg-surface px-3 focus-within:border-accent">
             <input
               id="auth-password"
               required
@@ -193,7 +193,7 @@ export function AuthForm({
         </div>
         {state.error && (
           <p
-            className="rounded-sm bg-danger/10 px-3 py-2 text-[13px] font-semibold text-danger"
+            className="rounded-control bg-danger-soft px-3 py-2 text-[13px] font-semibold text-danger-ink"
             role="alert"
           >
             {state.error}
@@ -212,7 +212,7 @@ export function AuthForm({
             <>
               Hesabın yok mu?{" "}
               <Link
-                className="font-bold text-brand hover:underline"
+                className="font-bold text-accent-ink hover:underline"
                 href="/kayit"
               >
                 Kayıt ol
@@ -222,7 +222,7 @@ export function AuthForm({
             <>
               Zaten üye misin?{" "}
               <Link
-                className="font-bold text-brand hover:underline"
+                className="font-bold text-accent-ink hover:underline"
                 href="/giris"
               >
                 Giriş yap
@@ -281,7 +281,7 @@ function Field(props: {
                 props.onValueChange!(e.target.value),
             }
           : { defaultValue: props.defaultValue })}
-        className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
+        className="mt-1 h-11 w-full rounded-control border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-accent"
       />
     </div>
   );

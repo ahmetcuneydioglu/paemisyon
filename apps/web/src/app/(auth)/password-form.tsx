@@ -18,18 +18,18 @@ export function PasswordForm({ mode }: { mode: "request" | "update" }) {
   );
   return (
     <div className="w-full max-w-md">
-      <span className="tk-caption text-brand">Hesap güvenliği</span>
-      <h1 className="mt-1 font-heading text-2xl font-bold text-ink">
+      <span className="type-label text-accent-ink">Hesap güvenliği</span>
+      <h1 className="mt-1 type-title text-ink">
         {isUpdate ? "Yeni şifreni belirle" : "Şifreni yenile"}
       </h1>
-      <p className="mt-2 text-[14px] text-ink-soft">
+      <p className="mt-2 type-body-sm text-ink-soft">
         {isUpdate
           ? "Güçlü ve başka yerde kullanmadığın bir şifre seç."
           : "E-posta adresine güvenli bir yenileme bağlantısı gönderelim."}
       </p>
       <form
         action={action}
-        className="mt-6 space-y-4 rounded-lg border border-line bg-surface p-6 shadow-sm"
+        className="mt-6 space-y-4 rounded-sheet border border-line bg-surface p-6"
       >
         {!isUpdate ? (
           <Field
@@ -47,7 +47,7 @@ export function PasswordForm({ mode }: { mode: "request" | "update" }) {
               >
                 Yeni şifre
               </label>
-              <div className="mt-1 flex h-11 rounded-sm border border-line px-3 focus-within:border-brand">
+              <div className="mt-1 flex h-11 rounded-control border border-line px-3 focus-within:border-accent">
                 <input
                   id="new-password"
                   name="password"
@@ -78,10 +78,10 @@ export function PasswordForm({ mode }: { mode: "request" | "update" }) {
         {(state.error || state.notice) && (
           <p
             className={[
-              "rounded-sm px-3 py-2 text-[13px]",
+              "rounded-control px-3 py-2 text-[13px]",
               state.error
-                ? "bg-danger/10 text-danger"
-                : "bg-success/10 text-success",
+                ? "bg-danger-soft text-danger-ink"
+                : "bg-success-soft text-success-ink",
             ].join(" ")}
             role="status"
           >
@@ -97,7 +97,7 @@ export function PasswordForm({ mode }: { mode: "request" | "update" }) {
         </Button>
         <Link
           href="/giris"
-          className="block text-center text-[13px] font-bold text-brand hover:underline"
+          className="block text-center text-[13px] font-bold text-accent-ink hover:underline"
         >
           Giriş sayfasına dön
         </Link>
@@ -134,7 +134,7 @@ function Field({
         required
         minLength={minLength}
         autoComplete={autoComplete}
-        className="mt-1 h-11 w-full rounded-sm border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-brand"
+        className="mt-1 h-11 w-full rounded-control border border-line bg-surface px-3 text-[14px] text-ink outline-none focus:border-accent"
       />
     </div>
   );

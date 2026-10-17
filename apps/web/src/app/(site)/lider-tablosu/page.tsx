@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Users } from "lucide-react";
 import { api } from "@/lib/api";
 import type { GlobalRankRow } from "@/lib/types";
-import { EmptyState } from "@/components/empty-state";
 import { GlobalRankTable, Podium } from "@/components/rank-table";
+import { EmptyState } from "@/components/ui/empty-state";
+import { Notice } from "@/components/ui/notice";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 
 export const metadata: Metadata = {
   title: "Genel Lider Tablosu",
@@ -17,30 +20,40 @@ interface GlobalBoard {
   participantCount: number;
 }
 
-/** Genel liderlik — eski lider-tablosu.php (Doc 18 §2.6). Tüm denemelerin ortalaması. */
+/** Genel liderlik (Doc 18 §2.6). Tüm denemelerin ortalaması. */
 export default async function LiderTablosuPage() {
-  const board = await api<GlobalBoard>("/exams/leaderboard/global").catch(() => null);
+  const board = await api<GlobalBoard>("/exams/leaderboard/global").catch(
+    () => null,
+  );
 
   return (
-    <div>
-      <h2 className="head2">Genel Lider Tablosu</h2>
+    <PageFrame className="flex flex-col gap-6">
+      <PageIntro
+        eyebrow="Tüm denemeler"
+        title="Genel lider tablosu"
+        lead="Tamamlanan denemelerin ortalama netine göre sıralama."
+        meta={
+          board ? <span>{board.participantCount} katılımcı</span> : undefined
+        }
+      />
       {!board || board.top.length === 0 ? (
         <EmptyState
-          icon="icon-user"
+          icon={Users}
           title="Henüz sıralama yok"
-          message="Denemeler tamamlandıkça genel sıralama burada oluşacak."
+          body="Denemeler tamamlandıkça genel sıralama burada oluşacak."
         />
       ) : (
-        <div className="pb-10">
+        <>
           <Podium rows={board.top} />
           {board.me && !board.top.slice(0, 3).some((r) => r.isMe) && (
-            <p className="mb-2 text-center text-sm font-semibold text-(--color-navy)">
-              🎯 Senin sıran: #{board.me.rank} · {board.me.avgScore.toFixed(2)} ortalama net
-            </p>
+            <Notice tone="info" className="mx-auto w-full max-w-3xl">
+              Senin sıran: <b className="font-semibold">#{board.me.rank}</b> ·{" "}
+              {board.me.avgScore.toFixed(2)} ortalama net
+            </Notice>
           )}
           <GlobalRankTable rows={board.top} />
-        </div>
+        </>
       )}
-    </div>
+    </PageFrame>
   );
 }

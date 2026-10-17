@@ -1,100 +1,159 @@
 import type { GlobalRankRow, RankRow } from "@/lib/types";
+import { cn } from "@/lib/cn";
+import { DataTable, type Column } from "@/components/ui/data-table";
 
-const MEDAL = ["🥇", "🥈", "🥉"];
-
-/** İlk-3 podyum + tablo — eski siralama.php / lider-tablosu.php ortak deseni. */
+/**
+ * İlk-3 podyum + tablo — deneme sıralaması ve genel lider tablosu ortak deseni.
+ * Podyum 2-1-3 dizilir; birinci kart vurgu çizgisiyle öne çıkar. Sıra rakamı
+ * rozet olarak basılır (madalya emojisi değil — koyu temada ve ekran okuyucuda
+ * tutarlı).
+ */
 export function Podium({ rows }: { rows: (RankRow | GlobalRankRow)[] }) {
   const top3 = rows.slice(0, 3);
   if (top3.length === 0) return null;
-  // Podyum düzeni: 2 - 1 - 3
   const order = [top3[1], top3[0], top3[2]].filter(Boolean);
   return (
-    <div className="mx-auto flex max-w-3xl items-end justify-center gap-3 px-4 py-8">
+    <ol
+      className="mx-auto grid max-w-3xl grid-cols-3 items-end gap-2 sm:gap-3"
+      aria-label="İlk üç"
+    >
       {order.map((r) => {
-        const isFirst = r.rank === 1;
+        const first = r.rank === 1;
         return (
-          <div
+          <li
             key={r.rank}
-            className={`card-content flex-1 text-center ${isFirst ? "-mt-4 py-6" : "py-4"}`}
+            className={cn(
+              "flex min-w-0 flex-col items-center gap-1 rounded-card border bg-surface px-2 text-center",
+              first ? "border-accent py-6" : "border-line py-4",
+              r.isMe && "ring-2 ring-focus-ring",
+            )}
           >
-            <div className="text-3xl">{MEDAL[r.rank - 1]}</div>
-            <div className="font-heading mt-2 truncate font-bold">{r.displayName}</div>
-            <div className="mt-1 text-2xl font-bold text-(--color-navy)">
+            <span
+              className={cn(
+                "flex size-9 items-center justify-center rounded-full type-subhead",
+                first
+                  ? "bg-accent text-on-accent"
+                  : "bg-surface-alt text-ink-soft",
+              )}
+              aria-label={`${r.rank}. sıra`}
+            >
+              {r.rank}
+            </span>
+            <span className="type-subhead mt-1 w-full truncate text-ink">
+              {r.displayName}
+            </span>
+            <span className="type-stat text-ink">
               {"score" in r ? r.score.toFixed(2) : r.avgScore.toFixed(2)}
-            </div>
-            <div className="text-[12px] text-neutral-500">
+            </span>
+            <span className="type-body-sm text-ink-soft">
               {"correctCount" in r
-                ? `${r.correctCount}D / ${r.wrongCount}Y`
+                ? `${r.correctCount} D / ${r.wrongCount} Y`
                 : `${r.attempts} deneme`}
-            </div>
-          </div>
+            </span>
+          </li>
         );
       })}
-    </div>
+    </ol>
   );
 }
 
+function nameCell(r: { displayName: string; isMe: boolean }) {
+  return (
+    <span className="type-subhead text-ink">
+      {r.displayName}
+      {r.isMe ? (
+        <span className="type-body-sm ml-1.5 text-accent-ink">(sen)</span>
+      ) : null}
+    </span>
+  );
+}
+const meRow = (r: { isMe: boolean }) => (r.isMe ? "bg-accent-soft" : undefined);
+
 /** Deneme sıralama tablosu (NET + D/Y/B + süre). */
 export function ExamRankTable({ rows }: { rows: RankRow[] }) {
+  const columns: Column<RankRow>[] = [
+    {
+      key: "rank",
+      header: "#",
+      width: "3rem",
+      align: "center",
+      cell: (r) => <span className="tabular">{r.rank}</span>,
+    },
+    { key: "name", header: "Kullanıcı", cell: nameCell },
+    {
+      key: "net",
+      header: "Net",
+      align: "right",
+      cell: (r) => r.score.toFixed(2),
+    },
+    {
+      key: "dyb",
+      header: "D / Y / B",
+      align: "right",
+      hideBelowMd: true,
+      cell: (r) => `${r.correctCount} / ${r.wrongCount} / ${r.blankCount}`,
+    },
+    {
+      key: "dur",
+      header: "Süre",
+      align: "right",
+      hideBelowMd: true,
+      cell: (r) => formatDuration(r.durationSeconds),
+    },
+  ];
   return (
-    <table className="exam-table mx-auto max-w-3xl">
-      <thead>
-        <tr>
-          <th className="w-12">#</th>
-          <th>Kullanıcı</th>
-          <th>Net</th>
-          <th>D / Y / B</th>
-          <th>Süre</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((r) => (
-          <tr key={r.rank} className={r.isMe ? "!bg-(--color-navy) [&>td]:!text-white" : ""}>
-            <td data-label="#">{r.rank}</td>
-            <td data-label="Kullanıcı" className="font-semibold">
-              {r.displayName}
-              {r.isMe && <span className="ml-1 text-xs">(sen)</span>}
-            </td>
-            <td data-label="Net">{r.score.toFixed(2)}</td>
-            <td data-label="D / Y / B">
-              {r.correctCount} / {r.wrongCount} / {r.blankCount}
-            </td>
-            <td data-label="Süre">{formatDuration(r.durationSeconds)}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <DataTable
+      columns={columns}
+      rows={rows}
+      rowKey={(r) => String(r.rank)}
+      rowClassName={meRow}
+      caption="Deneme sıralaması"
+      className="mx-auto max-w-3xl"
+    />
   );
 }
 
 /** Genel liderlik tablosu (ortalama NET + deneme sayısı). */
 export function GlobalRankTable({ rows }: { rows: GlobalRankRow[] }) {
+  const columns: Column<GlobalRankRow>[] = [
+    {
+      key: "rank",
+      header: "#",
+      width: "3rem",
+      align: "center",
+      cell: (r) => <span className="tabular">{r.rank}</span>,
+    },
+    { key: "name", header: "Kullanıcı", cell: nameCell },
+    {
+      key: "avg",
+      header: "Ortalama net",
+      align: "right",
+      cell: (r) => r.avgScore.toFixed(2),
+    },
+    {
+      key: "att",
+      header: "Deneme",
+      align: "right",
+      hideBelowMd: true,
+      cell: (r) => r.attempts,
+    },
+    {
+      key: "cor",
+      header: "Toplam doğru",
+      align: "right",
+      hideBelowMd: true,
+      cell: (r) => r.totalCorrect,
+    },
+  ];
   return (
-    <table className="exam-table mx-auto max-w-3xl">
-      <thead>
-        <tr>
-          <th className="w-12">#</th>
-          <th>Kullanıcı</th>
-          <th>Ortalama Net</th>
-          <th>Deneme</th>
-          <th>Toplam Doğru</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((r) => (
-          <tr key={r.rank} className={r.isMe ? "!bg-(--color-navy) [&>td]:!text-white" : ""}>
-            <td data-label="#">{r.rank}</td>
-            <td data-label="Kullanıcı" className="font-semibold">
-              {r.displayName}
-              {r.isMe && <span className="ml-1 text-xs">(sen)</span>}
-            </td>
-            <td data-label="Ortalama Net">{r.avgScore.toFixed(2)}</td>
-            <td data-label="Deneme">{r.attempts}</td>
-            <td data-label="Toplam Doğru">{r.totalCorrect}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <DataTable
+      columns={columns}
+      rows={rows}
+      rowKey={(r) => String(r.rank)}
+      rowClassName={meRow}
+      caption="Genel lider tablosu"
+      className="mx-auto max-w-3xl"
+    />
   );
 }
 

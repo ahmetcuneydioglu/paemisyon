@@ -3,8 +3,6 @@
    (Doc 49 F0 sözleşmesi, F7 W-A). Değer burada yazılmaz; JSON'da değişir,
    `node packages/tokens/build.mjs` üretir. */
 @import "../../../../packages/tokens/build/tokens.css";
-/* Miras palet ve desenler — W-F sonunda bu satır ve dosya silinir. */
-@import "./legacy.css";
 
 /* Fontlar next/font ile paketlenir (layout.tsx); token ailesi o değişkenlere bağlanır. */
 :root {
@@ -22,9 +20,8 @@
    font-display · font-body · type-* (aşağıda). Ham hex YASAK (tokens:check).
 ───────────────────────────────────────────────────────────── */
 @theme inline {
-  /* Tailwind'in hazır paleti (red-500 vb.) sıfırlanmaz — sıfırlama legacy.css'in
-     @theme paletini de siliyordu (public sayfalarda metin soluk kaldı, 17 Eki).
-     Hazır palet kullanımı tokens:check'te HATADIR. */
+  /* Tailwind'in hazır paleti (red-500 vb.) burada sıfırlanmaz; kullanımı
+     tokens:check'te (strict) HATADIR. */
   --color-bg: var(--color-bg);
   --color-surface: var(--color-surface);
   --color-surface-alt: var(--color-surface-alt);
@@ -61,17 +58,6 @@
   --ease-enter: var(--motion-enter-ease);
   --ease-exit: var(--motion-exit-ease);
 
-  /* ── GEÇİŞ TAKMA ADLARI (v2 → v3). W-E/W-F'de kullanım bitince SİLİNİR.
-     Dört vurgu tek vurguya iner (karar 3); brand = accent; eski yarıçaplar. ── */
-  --color-brand: var(--color-accent);
-  --color-session: var(--color-accent);
-  --color-live: var(--color-accent);
-  --color-streak: var(--color-accent);
-  --color-atlas: var(--color-accent);
-  --radius-sm: var(--radius-control);
-  --radius-md: var(--radius-card);
-  --radius-lg: var(--radius-sheet);
-  --font-heading: var(--font-display);
 }
 
 /* Tipografi rolleri — Expo `AppText variant` ile aynı sekiz ad (Doc 49/05). */
@@ -145,50 +131,65 @@ h4 {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── Geçiş yardımcıları (v2 adları; W-C/W-E'de kaldırılır) ── */
-/* v2 `--tk-*` değişkenleri: inline stil kullanan 7 dosya (law-reader, leaderboard,
-   exam-center, plan-card, question-of-day, kanun public) W-E/W-F'de v3 sınıflarına
-   geçene dek burada v3'e eşlenir. tokens:check bunları "geçiş" sayar. */
-:root {
-  --tk-brand: var(--color-accent);
-  --tk-surface: var(--color-surface);
-  --tk-surface-alt: var(--color-surface-alt);
-  --tk-ink: var(--color-ink);
-  --tk-ink-soft: var(--color-ink-soft);
-  --tk-line: var(--color-line);
-  --tk-success: var(--color-success);
-  --tk-warning: var(--color-warning);
-  --tk-danger: var(--color-danger);
-  --tk-accent-session: var(--color-accent);
-  --tk-accent-live: var(--color-accent);
-  --tk-accent-streak: var(--color-accent);
-  --tk-accent-atlas: var(--color-accent);
-  --tk-radius-sm: var(--radius-control);
-  --tk-radius-md: var(--radius-card);
-  --tk-radius-lg: var(--radius-sheet);
-  --tk-motion-quick: var(--motion-exit-ms);
-  --tk-motion-standard: var(--motion-enter-ms);
-  --tk-ease-standard: var(--motion-enter-ease);
-}
-/* .tk-scope artık zemin KURMAZ: gövde v3 zeminini taşır. Sınıf kaldırılana dek boş. */
-.tk-scope {
-}
-@layer components {
-  /* v2 caption → v3 label rolü */
-  .tk-caption {
-    font: var(--type-label-weight) var(--type-label-size)/var(--type-label-line)
-      var(--font-body);
-    letter-spacing: var(--type-label-tracking);
-    text-transform: uppercase;
-    color: var(--color-ink-soft);
-  }
-}
+/* Etkileşimli yüzeylerde ortak geçiş süresi/eğrisi (v3 yardımcısı). */
 .tk-interactive {
   transition:
     background-color var(--motion-enter-ms) var(--motion-enter-ease),
     border-color var(--motion-enter-ms) var(--motion-enter-ease),
     color var(--motion-enter-ms) var(--motion-enter-ease),
     transform var(--motion-enter-ms) var(--motion-enter-ease);
+}
+
+/* ── Düzyazı belgeler (gizlilik, koşullar, hesap silme): Prose bileşeni ── */
+@layer components {
+  .doc-prose {
+    max-width: 72ch;
+    color: var(--color-ink-soft);
+    font: var(--type-body-weight) var(--type-body-size)/var(--type-body-line)
+      var(--font-body);
+  }
+  .doc-prose section + section {
+    margin-top: 2rem;
+  }
+  .doc-prose h2 {
+    font: var(--type-heading-weight)
+      var(--type-heading-size)/var(--type-heading-line) var(--font-display);
+    letter-spacing: var(--type-heading-tracking);
+    color: var(--color-ink);
+    margin-bottom: 0.5rem;
+  }
+  .doc-prose p + p,
+  .doc-prose p + ul,
+  .doc-prose p + ol,
+  .doc-prose ul + p,
+  .doc-prose ol + p {
+    margin-top: 0.625rem;
+  }
+  .doc-prose ul,
+  .doc-prose ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-left: 1.25rem;
+  }
+  .doc-prose ul {
+    list-style: disc;
+  }
+  .doc-prose ol {
+    list-style: decimal;
+  }
+  .doc-prose strong {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+  .doc-prose a {
+    color: var(--color-accent-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .doc-prose a:hover {
+    color: var(--color-ink);
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────

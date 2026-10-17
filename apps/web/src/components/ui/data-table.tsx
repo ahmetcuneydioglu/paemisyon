@@ -22,6 +22,7 @@ export function DataTable<T>({
   caption,
   empty,
   dense = false,
+  rowClassName,
   className,
 }: {
   columns: Column<T>[];
@@ -30,6 +31,8 @@ export function DataTable<T>({
   caption?: string;
   empty?: ReactNode;
   dense?: boolean;
+  /** Satıra özel sınıf (ör. "sen" satırını vurgulamak). */
+  rowClassName?: (row: T) => string | undefined;
   className?: string;
 }) {
   const alignClass = (a?: Column<T>["align"]) =>
@@ -79,7 +82,10 @@ export function DataTable<T>({
             rows.map((r) => (
               <tr
                 key={rowKey(r)}
-                className="border-b border-line last:border-b-0 hover:bg-surface-alt/50"
+                className={cn(
+                  "border-b border-line last:border-b-0 hover:bg-surface-alt/50",
+                  rowClassName?.(r),
+                )}
               >
                 {columns.map((c) => (
                   <td

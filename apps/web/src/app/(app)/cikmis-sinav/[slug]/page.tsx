@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Lock } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
 import type { CikmisSinavDetay } from "@/lib/public-api";
 import { SinavQuiz } from "@/components/cikmis/sinav-quiz";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { EmptyState } from "@/components/ui/empty-state";
 
 export const metadata: Metadata = {
   title: "Çıkmış Sınav — Çalışma Modu",
@@ -41,12 +43,10 @@ export default async function CikmisSinavCalismaPage({
   }
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6 px-4 py-6">
-      <header className="space-y-2">
-        <h1 className="font-heading text-2xl font-bold leading-tight text-brand">
-          {sinav.ad}
-        </h1>
-        <p className="text-[14px] leading-relaxed text-ink-soft">
+    <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-6">
+      <header className="flex flex-col gap-2">
+        <h1 className="type-title text-ink">{sinav.ad}</h1>
+        <p className="type-body-sm text-ink-soft">
           Sınavın tamamı — {sinav.sorular.length} soru, cevaplarıyla ve
           dayanaklarıyla. Süre tutarak çözmek istersen sınav modunu seç.
         </p>
@@ -55,7 +55,7 @@ export default async function CikmisSinavCalismaPage({
             biri dokununca SESSİZCE sıfırdan yeni sınav başlıyordu
             (7 Eyl 2026 bildirimi). Tekrar çözmek meşru ama bilerek seçilmeli. */}
         {sinav.examId && (
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 pt-1">
             {sinav.devamEden ? (
               <ButtonLink href={`/sinav/arsiv/${sinav.examId}`}>
                 Kaldığın yerden devam et ({sinav.devamEden.cevaplanan}/
@@ -93,16 +93,14 @@ export default async function CikmisSinavCalismaPage({
         examId={sinav.examId}
         baslik={`${sinav.sorular.length} soru — çöz, hemen gör`}
         sonKart={
-          <Card className="border-brand/30 bg-brand/5">
-            <h3 className="font-heading text-[17px] font-bold text-ink">
-              Sınavın tamamını gördün
-            </h3>
-            <p className="mt-1 max-w-[60ch] text-[14px] leading-relaxed text-ink-soft">
+          <Card tone="accent" className="flex flex-col gap-3 p-5">
+            <h3 className="type-heading text-ink">Sınavın tamamını gördün</h3>
+            <p className="type-body-sm max-w-[60ch] text-ink-soft">
               Aynı seti süre tutarak çözmek netini gösterir; yanlışların çalışma
               defterine düşer.
             </p>
             {sinav.examId && (
-              <div className="mt-3">
+              <div>
                 <ButtonLink href={`/sinav/arsiv/${sinav.examId}`} size="lg">
                   Sınav gibi çöz
                 </ButtonLink>
@@ -119,22 +117,20 @@ export default async function CikmisSinavCalismaPage({
 function PremiumKapisi({ mesaj }: { mesaj: string }) {
   return (
     <div className="mx-auto grid min-h-[60vh] max-w-md place-items-center px-4">
-      <Card className="w-full p-8 text-center">
-        <p className="text-3xl" aria-hidden>
-          🔒
-        </p>
-        <h1 className="mt-3 font-heading text-[17px] font-bold text-ink">
-          Premium çıkmış sınav
-        </h1>
-        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
-          {mesaj}
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>
-          <ButtonLink href="/paem-cikmis-sorular" variant="secondary">
-            Diğer dönemler
-          </ButtonLink>
-        </div>
+      <Card className="w-full p-6">
+        <EmptyState
+          icon={Lock}
+          title="Premium çıkmış sınav"
+          body={mesaj}
+          action={
+            <div className="flex flex-wrap justify-center gap-2">
+              <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>
+              <ButtonLink href="/paem-cikmis-sorular" variant="secondary">
+                Diğer dönemler
+              </ButtonLink>
+            </div>
+          }
+        />
       </Card>
     </div>
   );

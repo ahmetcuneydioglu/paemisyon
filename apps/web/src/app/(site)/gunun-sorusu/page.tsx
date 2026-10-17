@@ -3,6 +3,7 @@ import Link from "next/link";
 import { publicApi, type DailyQuiz } from "@/lib/public-api";
 import { DailyQuizCard } from "@/components/daily-quiz";
 import { getPricing } from "@/lib/pricing";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 
 export const metadata: Metadata = {
   title: "Günün Quizi — 10 Çıkmış Polis Sınavı Sorusu",
@@ -22,24 +23,27 @@ export default async function GununQuiziPage() {
   ]);
 
   return (
-    <div className="bg-(--color-navy-dark) px-4 py-12">
-      <div className="mx-auto max-w-2xl text-center">
-        <h1 className="font-heading mb-2 text-2xl font-bold text-white">🎯 Günün Quizi</h1>
-        <p className="mb-8 text-white/70">
-          Her gün müfredattan 10 kaynaklı çıkmış soru. Yarın yenisi burada.
+    <PageFrame width="narrow" className="flex flex-col gap-8">
+      <PageIntro
+        align="center"
+        eyebrow="Her gün yeni"
+        title="Günün Quizi"
+        lead="Her gün müfredattan 10 kaynaklı çıkmış soru. Yarın yenisi burada."
+      />
+      {quiz && quiz.count > 0 ? (
+        <DailyQuizCard quiz={quiz} freeDailyLimit={pricing.freeDailyLimit} />
+      ) : (
+        <p className="type-body text-center text-ink-soft">
+          Günün quizi şu an yüklenemedi —{" "}
+          <Link
+            href="/denemeler"
+            className="font-semibold text-accent-ink underline"
+          >
+            denemelere göz at
+          </Link>
+          .
         </p>
-        {quiz && quiz.count > 0 ? (
-          <DailyQuizCard quiz={quiz} freeDailyLimit={pricing.freeDailyLimit} />
-        ) : (
-          <p className="text-white/70">
-            Günün quizi şu an yüklenemedi —{" "}
-            <Link href="/denemeler" className="font-bold text-white underline">
-              denemelere göz at
-            </Link>
-            .
-          </p>
-        )}
-      </div>
-    </div>
+      )}
+    </PageFrame>
   );
 }

@@ -1,6 +1,9 @@
 import type { CikmisSinavDetay } from "@/lib/public-api";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Notice } from "@/components/ui/notice";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 import { SinavQuiz } from "./sinav-quiz";
 import { TurRozeti, turAciklamasi } from "./tur-rozeti";
 
@@ -12,50 +15,53 @@ import { TurRozeti, turAciklamasi } from "./tur-rozeti";
  */
 export function SinavDetay({ sinav }: { sinav: CikmisSinavDetay }) {
   const resmi = sinav.tur === "resmi";
-  // `.tk-scope`: yeni ekranların taban yüzeyi (Doc 26) — koyu temada zemini
-  // ve token'ları verir. Okuma sayfası olduğu için genişlik dar tutuldu.
   return (
-    <div className="tk-scope bg-surface-alt">
-      <article className="mx-auto max-w-3xl space-y-6 px-4 py-8 text-ink">
-        <header className="space-y-3">
-          <TurRozeti tur={sinav.tur} />
-          <h1 className="font-heading text-2xl font-bold leading-tight text-brand sm:text-[30px]">
-            {sinav.ad}
-          </h1>
-          <p className="max-w-[68ch] text-[15px] leading-relaxed text-ink-soft">
-            {sinav.ozet ?? turAciklamasi(sinav.tur)}
-          </p>
-          <dl className="flex flex-wrap gap-x-6 gap-y-1 text-[13px] text-ink-soft">
-            <div className="flex gap-1.5">
-              <dt>Kurum:</dt>
-              <dd className="font-bold text-ink">{sinav.kurum}</dd>
-            </div>
-            {sinav.tarih && (
+    <PageFrame width="narrow">
+      <article className="flex flex-col gap-8">
+        <PageIntro
+          breadcrumb={[
+            { label: "Çıkmış Sorular", href: "/paem-cikmis-sorular" },
+            { label: "PAEM" },
+            { label: sinav.ad },
+          ]}
+          eyebrow={<TurRozeti tur={sinav.tur} />}
+          title={sinav.ad}
+          lead={sinav.ozet ?? turAciklamasi(sinav.tur)}
+          meta={
+            <dl className="flex flex-wrap gap-x-6 gap-y-1">
               <div className="flex gap-1.5">
-                <dt>Tarih:</dt>
-                <dd className="font-bold text-ink">
-                  {new Date(sinav.tarih).toLocaleDateString("tr-TR", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })}
-                </dd>
+                <dt>Kurum:</dt>
+                <dd className="font-semibold text-ink">{sinav.kurum}</dd>
               </div>
-            )}
-            {sinav.soruSayisi !== null && (
-              <div className="flex gap-1.5">
-                <dt>Soru:</dt>
-                <dd className="font-bold text-ink">{sinav.soruSayisi}</dd>
-              </div>
-            )}
-            {sinav.iptalSayisi > 0 && (
-              <div className="flex gap-1.5">
-                <dt>İptal edilen:</dt>
-                <dd className="font-bold text-ink">{sinav.iptalSayisi}</dd>
-              </div>
-            )}
-          </dl>
-        </header>
+              {sinav.tarih && (
+                <div className="flex gap-1.5">
+                  <dt>Tarih:</dt>
+                  <dd className="font-semibold text-ink">
+                    {new Date(sinav.tarih).toLocaleDateString("tr-TR", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </dd>
+                </div>
+              )}
+              {sinav.soruSayisi !== null && (
+                <div className="flex gap-1.5">
+                  <dt>Soru:</dt>
+                  <dd className="font-semibold text-ink">{sinav.soruSayisi}</dd>
+                </div>
+              )}
+              {sinav.iptalSayisi > 0 && (
+                <div className="flex gap-1.5">
+                  <dt>İptal edilen:</dt>
+                  <dd className="font-semibold text-ink">
+                    {sinav.iptalSayisi}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          }
+        />
 
         <KonuDagilimi sinav={sinav} />
 
@@ -69,12 +75,12 @@ export function SinavDetay({ sinav }: { sinav: CikmisSinavDetay }) {
         )}
 
         {resmi && sinav.sorular.length === 0 && sinav.kapaliSoru > 0 && (
-          <Card className="flex flex-col items-start gap-3 border-brand/30 bg-brand/5">
+          <Card tone="accent" className="flex flex-col items-start gap-3 p-5">
             <div>
-              <h2 className="font-heading text-[17px] font-bold text-ink">
+              <h2 className="type-heading text-ink">
                 {sinav.kapaliSoru} soru uygulamada
               </h2>
-              <p className="mt-1 max-w-[60ch] text-[14px] leading-relaxed text-ink-soft">
+              <p className="type-body-sm mt-1 max-w-[60ch] text-ink-soft">
                 Sınavın tamamını süre tutarak çöz, netini gör, yanlışların
                 çalışma defterine düşsün.
               </p>
@@ -85,7 +91,7 @@ export function SinavDetay({ sinav }: { sinav: CikmisSinavDetay }) {
           </Card>
         )}
       </article>
-    </div>
+    </PageFrame>
   );
 }
 
@@ -96,42 +102,58 @@ function KonuDagilimi({ sinav }: { sinav: CikmisSinavDetay }) {
   if (!sinav.dersDagilimi.length) return null;
 
   return (
-    <section className="space-y-3">
-      <h2 className="font-heading text-[19px] font-bold text-ink">Konu dağılımı</h2>
+    <section className="flex flex-col gap-3">
+      <h2 className="type-heading text-ink">Konu dağılımı</h2>
       {sinav.analiz?.uyari && (
-        <p className="rounded-md border border-atlas/30 bg-atlas/5 p-3 text-[13px] leading-relaxed text-ink-soft">
+        <Notice tone="warning">
           {sinav.analiz.uyari}
-          {sinav.analiz.kaynak && (
-            <>
-              {" "}
-              <span className="text-ink-soft">Kaynak: {sinav.analiz.kaynak}.</span>
-            </>
-          )}
-        </p>
+          {sinav.analiz.kaynak && <> Kaynak: {sinav.analiz.kaynak}.</>}
+        </Notice>
       )}
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[420px] border-collapse text-[14px]">
+      <div className="overflow-x-auto rounded-card border border-line bg-surface">
+        <table className="w-full min-w-[420px] border-collapse">
           <caption className="sr-only">Derslere göre soru sayısı</caption>
           <thead>
-            <tr className="border-b border-line text-left text-[12px] uppercase tracking-wide text-ink-soft">
-              <th scope="col" className="py-2 font-heading font-bold">Ders</th>
-              <th scope="col" className="py-2 text-right font-heading font-bold">Soru</th>
-              <th scope="col" className="w-1/2 py-2 pl-4 font-heading font-bold">Pay</th>
+            <tr className="border-b border-line text-left">
+              <th scope="col" className="type-label px-4 py-3 text-ink-subtle">
+                Ders
+              </th>
+              <th
+                scope="col"
+                className="type-label px-4 py-3 text-right text-ink-subtle"
+              >
+                Soru
+              </th>
+              <th
+                scope="col"
+                className="type-label w-1/2 px-4 py-3 text-ink-subtle"
+              >
+                Pay
+              </th>
             </tr>
           </thead>
           <tbody>
             {sinav.dersDagilimi.map((d) => (
-              <tr key={d.ders} className="border-b border-line/60">
-                <th scope="row" className="py-2 pr-3 text-left font-normal text-ink">
+              <tr key={d.ders} className="border-b border-line last:border-b-0">
+                <th
+                  scope="row"
+                  className="type-body-sm px-4 py-2.5 text-left font-normal text-ink"
+                >
                   {d.ders}
                 </th>
-                <td className="py-2 text-right font-heading font-bold text-ink">{d.adet}</td>
-                <td className="py-2 pl-4">
-                  <span
-                    className="block h-2 rounded-sm bg-brand/70"
-                    style={{ width: `${Math.round((d.adet / toplam) * 100)}%` }}
-                    aria-hidden
-                  />
+                <td className="type-subhead tabular px-4 py-2.5 text-right text-ink">
+                  {d.adet}
+                </td>
+                <td className="px-4 py-2.5">
+                  <span className="block h-2 overflow-hidden rounded-pill bg-surface-alt">
+                    <span
+                      className="block h-full rounded-pill bg-accent"
+                      style={{
+                        width: `${Math.round((d.adet / toplam) * 100)}%`,
+                      }}
+                      aria-hidden
+                    />
+                  </span>
                 </td>
               </tr>
             ))}
@@ -140,14 +162,17 @@ function KonuDagilimi({ sinav }: { sinav: CikmisSinavDetay }) {
       </div>
 
       {kanun && Object.keys(kanun).length > 0 && (
-        <details className="rounded-md border border-line bg-surface p-4">
-          <summary className="cursor-pointer font-heading text-[14px] font-bold text-ink">
+        <details className="rounded-card border border-line bg-surface p-4">
+          <summary className="type-subhead cursor-pointer text-ink">
             Polis Mevzuatı kanun kırılımı
           </summary>
           <ul className="mt-3 flex flex-wrap gap-1.5">
             {Object.entries(kanun).map(([no, adet]) => (
-              <li key={no} className="rounded-sm bg-line/40 px-2 py-1 text-[13px] text-ink-soft">
-                {no} sayılı Kanun <span className="font-bold text-ink">{adet}</span>
+              <li key={no}>
+                <Badge>
+                  {no} sayılı Kanun{" "}
+                  <span className="font-semibold text-ink">{adet}</span>
+                </Badge>
               </li>
             ))}
           </ul>

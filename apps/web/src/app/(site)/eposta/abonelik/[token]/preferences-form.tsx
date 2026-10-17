@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { config } from "@/lib/config";
+import { Button } from "@/components/ui/button";
+import { Notice } from "@/components/ui/notice";
 
 export type Preferences = {
   emailMasked: string;
@@ -74,50 +76,52 @@ export function PreferencesForm({
     prefs.status === "suppressed";
 
   return (
-    <div className="space-y-6 text-[15px] leading-relaxed text-gray-700">
-      <p className="text-sm text-neutral-500">Adres: {prefs.emailMasked}</p>
-
+    <div className="flex flex-col gap-5">
       {prefs.status === "unsubscribed" && (
-        <div className="rounded-md border border-(--color-border) bg-(--color-grey-bg) px-4 py-3 text-sm">
-          Bu adrese artık e-posta göndermiyoruz.{" "}
-          {prefs.canResubscribe && (
-            <button
-              type="button"
-              disabled={busy}
-              onClick={() => run({ aboneOl: true }, "Yeniden abone oldun.")}
-              className="font-semibold text-(--color-navy) underline disabled:opacity-50"
-            >
-              Yeniden abone ol
-            </button>
-          )}
-        </div>
+        <Notice
+          tone="info"
+          action={
+            prefs.canResubscribe ? (
+              <Button
+                variant="secondary"
+                size="sm"
+                disabled={busy}
+                onClick={() => run({ aboneOl: true }, "Yeniden abone oldun.")}
+              >
+                Yeniden abone ol
+              </Button>
+            ) : undefined
+          }
+        >
+          Bu adrese artık e-posta göndermiyoruz.
+        </Notice>
       )}
 
       {blocked && (
-        <div className="rounded-md border border-(--color-border) bg-(--color-grey-bg) px-4 py-3 text-sm">
+        <Notice tone="warning">
           Bu adrese gönderim durduruldu (posta teslim edilemedi ya da istenmeyen
           olarak işaretlendi). Yeniden almak istersen{" "}
           <a className="underline" href="mailto:destek@paemisyon.com">
             destek@paemisyon.com
-          </a>
+          </a>{" "}
           adresine yaz.
-        </div>
+        </Notice>
       )}
 
       {prefs.status === "subscribed" && (
         <>
-          <fieldset className="space-y-3">
-            <legend className="mb-1 text-sm font-medium">
+          <fieldset className="flex flex-col gap-2">
+            <legend className="type-subhead mb-2 text-ink">
               Hangi e-postaları almak istersin?
             </legend>
             {TOPICS.map((t) => (
               <label
                 key={t.key}
-                className="flex cursor-pointer items-start gap-3 rounded-md border border-(--color-border) px-4 py-3"
+                className="tk-interactive flex cursor-pointer items-start gap-3 rounded-card border border-line bg-surface px-4 py-3 hover:border-ink-soft has-[:checked]:border-accent"
               >
                 <input
                   type="checkbox"
-                  className="mt-1"
+                  className="mt-1 size-4 accent-accent"
                   checked={prefs.topics[t.key]}
                   disabled={busy}
                   onChange={(e) =>
@@ -127,11 +131,9 @@ export function PreferencesForm({
                     )
                   }
                 />
-                <span>
-                  <span className="block text-[14px] font-bold text-(--color-ink)">
-                    {t.title}
-                  </span>
-                  <span className="block text-[13px] text-(--color-ink-soft)">
+                <span className="flex flex-col">
+                  <span className="type-subhead text-ink">{t.title}</span>
+                  <span className="type-body-sm text-ink-soft">
                     {t.description}
                   </span>
                 </span>
@@ -139,21 +141,21 @@ export function PreferencesForm({
             ))}
           </fieldset>
 
-          <div className="border-t border-(--color-border) pt-5">
-            <button
-              type="button"
+          <div className="flex flex-col gap-2 border-t border-line pt-5">
+            <Button
+              variant="danger"
               disabled={busy}
+              className="self-start"
               onClick={() =>
                 run(
                   { aboneOl: false },
                   "Abonelikten çıktın. Artık e-posta almayacaksın.",
                 )
               }
-              className="rounded-md border border-(--color-border) px-4 py-2 text-sm font-semibold text-(--color-red) disabled:opacity-50"
             >
               Bütün e-postaları durdur
-            </button>
-            <p className="mt-2 text-[12px] text-neutral-500">
+            </Button>
+            <p className="type-body-sm text-ink-subtle">
               Hesap doğrulama ve şifre sıfırlama gibi işlem e-postaları bundan
               etkilenmez.
             </p>
@@ -161,12 +163,8 @@ export function PreferencesForm({
         </>
       )}
 
-      {note && (
-        <p className="text-sm font-medium text-(--color-green)">{note}</p>
-      )}
-      {error && (
-        <p className="text-sm font-semibold text-(--color-red)">{error}</p>
-      )}
+      {note && <Notice tone="success">{note}</Notice>}
+      {error && <Notice tone="error">{error}</Notice>}
     </div>
   );
 }

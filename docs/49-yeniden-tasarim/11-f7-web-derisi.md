@@ -278,3 +278,38 @@ dalların bekleyen commit'lerine dokunulmaz.
   public/auth sayfaları + premium ve çıkmış sınav çalışma sayfası). **Göz testi (Chrome,
   Lukas, gerçek veri):** Kütüphane, ders, PVSK kanun/okuyucu, Denemeler, Performans, konu
   haritası, Profil, Ayarlar, Rozetler, Liderlik koyu temada; Kütüphane + kanun açık temada.
+- **W-F Kapı cilası ve miras paletin emekliliği (18 Eki 2026):** 44 public/auth/çıkmış
+  sınav dosyası v3'e geçti. Ortak parçalar: `components/public/page-frame.tsx`
+  (`PageFrame` üç genişlik, `PageIntro` kırıntı+etiket+başlık+meta+eylem — eski `.head2`
+  bandının yerine, `ClosingCta`, `Prose` → `globals.css .doc-prose` düzyazı ritmi).
+  Landing: hero `bg-surface-alt` + `type-display`, günün quizi kartı
+  `QuestionStem`/`QuestionOption`/`ProgressBar`/`Notice` ile (seans oynatıcıyla aynı şık
+  dili; "kaçırılan doğru" durumu), kanıt/kanun/rehber kartları tek `LinkCard`, fiyat
+  kartları `Card tone`. Kanun/madde/oku public sayfaları: `Breadcrumb`, `Badge` sınav
+  bağlamı, ısı çubuğu token, komşu madde `ButtonLink`, içindekiler çipleri. Çıkmış sınavlar:
+  `TurRozeti`→`Badge`+lucide, liste kartları, detay `PageIntro`, quiz `QuestionOption`
+  (6 durum) + `Notice` açıklama; `ui/option-row.tsx` silindi. Denemeler (girişsiz)
+  `ExamTable`→`DataTable` (dar ekranda tarih başlık hücresine iner, eylemler dikey), sıralama/
+  lider tablosu `Podium` (sıra rozeti, "sen" halkası) + `DataTable rowClassName` (yeni prop),
+  kök `components/empty-state.tsx` silindi (kit `EmptyState` + lucide). Rehber (`/paem`,
+  `/misyon`) ağırlık çubuğu tek vurgunun kademeleri (hsl üretimi kalktı), hesaplayıcı
+  `StatTile`, SSS/gizlilik/koşullar/hesap-sil `Prose`, soru-öner formu kit alanları (beş
+  şıkla başlar), e-posta tercihleri `Notice`/`Button`, auth formları ve sosyal düğmeler v3
+  adları, `Countdown` token kutuları, `question-of-day.tsx` (kullanılmıyordu) silindi.
+  **Emeklilik:** `legacy.css` + `public/fonts/icomoon/*` silindi; `(site)` ve `(dual)`
+  kabuklarındaki `theme-light legacy-light` sarmalayıcısı kalktı → public sayfalar
+  kullanıcının temasını izler (koyu birincil); `globals.css`'ten geçiş takma adları
+  (`brand/session/live/streak/atlas`, `rounded-sm/md/lg`, `font-heading`), `--tk-*` köprüsü,
+  `.tk-scope`, `.tk-caption` silindi. **Kapı:** `tokens-check` artık varsayılan strict
+  (`--lax` yalnız yerel keşif), dosya bazlı `HEX_IZIN` kalktı; logo (6 renk), Google "G"
+  (4) ve lig madalya renkleri satır içi `tokens-check: izin — <gerekçe>` işaretiyle kaldı.
+  Sonuç: hata 0, geçiş adı 0 (325 → 0). `push-opt-in` ve `sinav-quiz`'deki son iki
+  setState-in-effect hatası ertelenmiş okuma ile kapandı → eslint 0 hata; CI'da lint artık
+  **engelleyici** (`continue-on-error` kalktı). typecheck/80 vitest/token build yeşil.
+  **Göz testi (panel, girişsiz, :3012 → :3005):** landing (koyu masaüstü + açık mobil),
+  kanun/madde/oku, çıkmış sınav listesi+detay (şık tıklama: yanlış kırmızı, kaçırılan doğru
+  yeşil, açıklama), denemeler (masaüstü + mobil), giriş, gizlilik, hesaplayıcı, PAEM rehberi;
+  20 public rota 200. Not: SSS ve landing metnindeki "kaynağı sorunun üzerinde yazar" ifadesi
+  4 Eyl 2026 kararıyla çelişiyordu → "kaynağı bankada kayıtlıdır"; `kosullar` §5'teki aynı
+  cümle yasal metin olduğu için dokunulmadı (kullanıcı kararı). W-G kalanlar: Lighthouse,
+  axe taraması, Figma aynası.

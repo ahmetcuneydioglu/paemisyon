@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageFrame, PageIntro, Prose } from "@/components/public/page-frame";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -20,24 +21,19 @@ export const metadata: Metadata = {
  */
 export default function HesapSilPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10">
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
-        Hesabımı Sil
-      </h1>
-      <p className="mb-8 text-sm text-gray-500">
-        Paemisyon · com.paemisyon.paemisyon
-      </p>
+    <PageFrame width="narrow" className="flex flex-col gap-8">
+      <PageIntro title="Hesabımı Sil" meta={<span>Paemisyon · com.paemisyon.paemisyon</span>} />
 
-      <div className="space-y-8 text-[15px] leading-relaxed text-gray-700">
+      <Prose>
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             1. Uygulama içinden silme (en hızlısı)
           </h2>
-          <p className="mb-3">
+          <p>
             Hesabınızı istediğiniz an kendiniz silebilirsiniz; kimseden onay
             beklemenize gerek yoktur:
           </p>
-          <ol className="list-decimal space-y-1 pl-5">
+          <ol>
             <li>Paemisyon uygulamasını açın ve giriş yapın.</li>
             <li>
               Alt menüden <strong>Ben</strong> sekmesine, ardından sağ üstteki
@@ -49,13 +45,13 @@ export default function HesapSilPage() {
               dokunun ve onaylayın.
             </li>
           </ol>
-          <p className="mt-3">
+          <p>
             İşlem anında tamamlanır ve geri alınamaz.
           </p>
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             2. Uygulamayı kurmadan silme talebi
           </h2>
           <p>
@@ -63,7 +59,7 @@ export default function HesapSilPage() {
             kayıtlı olduğu e-posta adresinden{" "}
             <a
               href="mailto:destek@paemisyon.com?subject=Hesap%20silme%20talebi"
-              className="font-medium text-(--color-navy) underline"
+             
             >
               destek@paemisyon.com
             </a>{" "}
@@ -75,14 +71,14 @@ export default function HesapSilPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             3. Hangi veriler silinir?
           </h2>
-          <p className="mb-2">
+          <p>
             Silme işleminde aşağıdaki kişisel veriler <strong>kalıcı olarak
             kaldırılır</strong>:
           </p>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>E-posta adresiniz ve görünen adınız</li>
             <li>Profil fotoğrafınız</li>
             <li>
@@ -95,7 +91,7 @@ export default function HesapSilPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             4. Hangi veriler anonim olarak kalır?
           </h2>
           <p>
@@ -105,7 +101,7 @@ export default function HesapSilPage() {
             değildir; hiçbir şekilde sizinle ilişkilendirilemez. Amaçları soru
             bankasının zorluk ölçümü ve platform genel istatistikleridir.
           </p>
-          <p className="mt-3">
+          <p>
             Ayrıca mevzuatın zorunlu kıldığı hallerde (ör. satın alma ve fatura
             kayıtları) ilgili belgeler yasal saklama süreleri boyunca tutulur.
             Bu süreler dolduğunda kayıtlar silinir.
@@ -113,7 +109,7 @@ export default function HesapSilPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             5. Aboneliğinizi ayrıca iptal edin
           </h2>
           <p>
@@ -121,7 +117,7 @@ export default function HesapSilPage() {
             <strong>etmez</strong>. Aktif bir aboneliğiniz varsa iptalini kendi
             mağaza hesabınızdan yapmalısınız:
           </p>
-          <ul className="mt-2 list-disc space-y-1 pl-5">
+          <ul>
             <li>
               <strong>Android:</strong> Google Play → Profil → Ödemeler ve
               abonelikler → Abonelikler
@@ -133,28 +129,28 @@ export default function HesapSilPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             6. Sorularınız için
           </h2>
           <p>
             Verilerinizle ilgili tüm talepleriniz (erişim, düzeltme, silme) için{" "}
             <a
               href="mailto:destek@paemisyon.com"
-              className="font-medium text-(--color-navy) underline"
+             
             >
               destek@paemisyon.com
             </a>
             . Ayrıntılar için{" "}
             <Link
               href="/gizlilik"
-              className="font-medium text-(--color-navy) underline"
+             
             >
               Gizlilik Politikası ve KVKK Aydınlatma Metni
             </Link>
             .
           </p>
         </section>
-      </div>
-    </div>
+      </Prose>
+    </PageFrame>
   );
 }

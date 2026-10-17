@@ -79,10 +79,7 @@ jobs:
         with: { node-version: 22, cache: npm, cache-dependency-path: apps/web/package-lock.json }
       - run: npm ci
       - run: npm run typecheck
-      # Lint henüz engellemez: main'de 5 eski React Compiler hatası var (sinav
-      # arsiv/kisisel Date.now render'da; sinav-quiz, push-opt-in, command-palette
-      # setState-in-effect). F7 web yeni deride ekranlarıyla birlikte düzelir.
+      # Lint engeller (F7 W-F'den beri sıfır hata).
       - run: npm run lint
-        continue-on-error: true
       - run: npm test
       - run: npm run tokens:check

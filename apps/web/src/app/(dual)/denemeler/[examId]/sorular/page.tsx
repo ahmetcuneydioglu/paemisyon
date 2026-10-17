@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { HelpCircle } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
 import type { ReviewQuestion } from "@/lib/types";
-import { EmptyState } from "@/components/empty-state";
 import { ReviewList } from "@/components/review-list";
+import { EmptyState } from "@/components/ui/empty-state";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
 
 export const metadata: Metadata = {
   title: "Sınav Soruları",
@@ -32,27 +34,28 @@ export default async function SorularPage({
         ? "Bu denemenin soruları görüntülemeye açık değil (sınav bitmemiş ya da kapalı)."
         : "Sorular görüntülenemiyor.";
     return (
-      <div>
-        <h2 className="head2">Sınav Soruları</h2>
+      <PageFrame width="narrow">
         <EmptyState
-          icon="icon-question"
-          title="Görüntülenemiyor"
-          message={msg}
+          icon={HelpCircle}
+          title="Sorular görüntülenemiyor"
+          body={msg}
         />
-      </div>
+      </PageFrame>
     );
   }
 
   return (
-    <div>
-      <h2 className="head2">{data.title} — Sorular</h2>
-      <p className="mx-auto max-w-3xl px-4 pt-4 text-center text-[13px] text-ink-soft">
-        Bu ekranda sorular incelemelik olarak gösterilir; doğru cevaplar yer
-        almaz.
-      </p>
-      <div className="mx-auto max-w-6xl px-4 py-4">
-        <ReviewList questions={data.questions} showAnswers={false} />
-      </div>
-    </div>
+    <PageFrame width="wide" className="flex flex-col gap-6">
+      <PageIntro
+        breadcrumb={[
+          { label: "Denemeler", href: "/denemeler" },
+          { label: data.title },
+          { label: "Sorular" },
+        ]}
+        title={`${data.title} — Sorular`}
+        lead="Bu ekranda sorular incelemelik olarak gösterilir; doğru cevaplar yer almaz."
+      />
+      <ReviewList questions={data.questions} showAnswers={false} />
+    </PageFrame>
   );
 }

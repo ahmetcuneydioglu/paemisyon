@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageFrame, PageIntro, Prose } from "@/components/public/page-frame";
 
 export const metadata: Metadata = {
   title: "Gizlilik Politikası ve KVKK Aydınlatma Metni",
@@ -14,32 +15,29 @@ export const metadata: Metadata = {
  */
 export default function GizlilikPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10">
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
-        Gizlilik Politikası ve KVKK Aydınlatma Metni
-      </h1>
-      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 21 Temmuz 2026</p>
+    <PageFrame width="narrow" className="flex flex-col gap-8">
+      <PageIntro title="Gizlilik Politikası ve KVKK Aydınlatma Metni" meta={<span>Son güncelleme: 21 Temmuz 2026</span>} />
 
-      <div className="space-y-8 text-[15px] leading-relaxed text-gray-700">
+      <Prose>
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             1. Veri Sorumlusu
           </h2>
           <p>
             Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu
             (&quot;KVKK&quot;) uyarınca, <strong>Paemisyon</strong> (&quot;Platform&quot;)
             tarafından veri sorumlusu sıfatıyla hazırlanmıştır. Sorularınız için:{" "}
-            <a href="mailto:destek@paemisyon.com" className="font-medium text-(--color-navy) underline">
+            <a href="mailto:destek@paemisyon.com">
               destek@paemisyon.com
             </a>
           </p>
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             2. Hangi Verileri İşliyoruz?
           </h2>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>
               <strong>Kimlik ve iletişim:</strong> ad-soyad / görünen ad, e-posta
               adresi (kayıt sırasında siz verirsiniz).
@@ -66,10 +64,10 @@ export default function GizlilikPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             3. İşleme Amaçları ve Hukuki Sebepler
           </h2>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>
               Hesabınızın oluşturulması ve hizmetin sunulması — KVKK m.5/2(c):
               sözleşmenin kurulması ve ifası.
@@ -86,21 +84,21 @@ export default function GizlilikPage() {
               Yasal yükümlülüklerin yerine getirilmesi — KVKK m.5/2(ç).
             </li>
           </ul>
-          <p className="mt-2">
+          <p>
             Verileriniz pazarlama amacıyla üçüncü kişilere <strong>satılmaz</strong>{" "}
             ve reklam ağlarıyla paylaşılmaz.
           </p>
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             4. Verilerin Aktarıldığı Taraflar
           </h2>
-          <p className="mb-2">
+          <p>
             Hizmetin çalışması için verileriniz, veri işleyen sıfatıyla hizmet
             aldığımız aşağıdaki altyapı sağlayıcılarında barındırılır:
           </p>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>
               <strong>Supabase</strong> (veritabanı ve kimlik doğrulama — sunucular
               AB/Frankfurt bölgesindedir),
@@ -120,7 +118,7 @@ export default function GizlilikPage() {
               <strong>kimliğiniz veya kişisel verileriniz iletilmez</strong>).
             </li>
           </ul>
-          <p className="mt-2">
+          <p>
             Sunucuların bir kısmı yurt dışında bulunduğundan, kayıt olarak
             hizmeti kullanmanız kapsamında verileriniz KVKK m.9 çerçevesinde yurt
             dışına aktarılmaktadır.
@@ -128,7 +126,7 @@ export default function GizlilikPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             5. Saklama Süresi
           </h2>
           <p>
@@ -141,7 +139,7 @@ export default function GizlilikPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             6. Çerezler
           </h2>
           <p>
@@ -152,10 +150,10 @@ export default function GizlilikPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             7. KVKK m.11 Kapsamındaki Haklarınız
           </h2>
-          <p className="mb-2">
+          <p>
             Kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi
             talep etme, düzeltilmesini veya silinmesini isteme, aktarıldığı
             üçüncü kişileri bilme ve zarara uğramanız hâlinde giderilmesini talep
@@ -163,14 +161,14 @@ export default function GizlilikPage() {
           </p>
           <p>
             Başvurularınızı{" "}
-            <a href="mailto:destek@paemisyon.com" className="font-medium text-(--color-navy) underline">
+            <a href="mailto:destek@paemisyon.com">
               destek@paemisyon.com
             </a>{" "}
             adresine iletebilirsiniz. Hesap silme işlemini ayrıca uygulama içinden
             (Profil → Hesabı Sil) anında yapabilirsiniz.
           </p>
         </section>
-      </div>
-    </div>
+      </Prose>
+    </PageFrame>
   );
 }

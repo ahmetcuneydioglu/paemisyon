@@ -108,15 +108,15 @@ export default async function PremiumPage() {
   const alreadyPremium = me?.isPremium === true;
 
   return (
-    <div className={userId ? "" : "tk-scope font-body"}>
+    <div>
       <div className="mx-auto max-w-4xl px-6 py-10">
         {/* ── Başlık ── */}
         <header className="text-center">
-          <span className="tk-caption text-brand">Premium</span>
-          <h1 className="mt-1 font-heading text-2xl font-bold text-ink">
+          <span className="type-label text-accent-ink">Premium</span>
+          <h1 className="mt-1 type-title text-ink">
             Koçun tam beynini aç
           </h1>
-          <p className="mx-auto mt-2 max-w-[52ch] text-[15px] leading-relaxed text-ink-soft">
+          <p className="mx-auto mt-2 max-w-[52ch] type-body text-ink-soft">
             Ücretsiz katman gerçek antrenman verir — Premium, seni tanıyan koçun
             tamamını: plan, süresiz tekrar hafızası, sınırsız açıklama. Bir
             dershanenin günlük çayı parasına, seni tanıyan antrenör.
@@ -131,10 +131,10 @@ export default async function PremiumPage() {
             </p>
             {/* h2: sayfada h1'den sonra gelen ilk başlık — CardTitle (h3) kullanılsaydı
                 başlık sırası h1 → h3 → h2 diye atlardı. */}
-            <h2 className="mt-2 font-heading text-[15px] font-bold text-ink">
+            <h2 className="mt-2 type-subhead text-ink">
               Premium hesabın aktif
             </h2>
-            <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+            <p className="mt-2 type-body-sm text-ink-soft">
               {me?.validUntil
                 ? `Erişimin ${new Date(me.validUntil).toLocaleDateString(
                     "tr-TR",
@@ -179,7 +179,7 @@ export default async function PremiumPage() {
                     >
                       Önce ücretsiz kaydol
                     </ButtonLink>
-                    <p className="text-[13px] text-ink-soft">
+                    <p className="type-body-sm text-ink-soft">
                       Premium bir hesaba tanımlanır — önce hesabını aç, sonra
                       bize yaz.
                     </p>
@@ -195,11 +195,11 @@ export default async function PremiumPage() {
           <section className="mt-10" aria-labelledby="nasil-alinir">
             <h2
               id="nasil-alinir"
-              className="text-center font-heading text-lg font-bold text-ink"
+              className="text-center type-heading text-ink"
             >
               Nasıl premium olurum?
             </h2>
-            <p className="mx-auto mt-2 max-w-[52ch] text-center text-[14px] leading-relaxed text-ink-soft">
+            <p className="mx-auto mt-2 max-w-[52ch] text-center type-body-sm text-ink-soft">
               Uygulama içi satın alma yok. Ödemeyi doğrudan bizimle yapıyorsun,
               hesabını elimizle açıyoruz — arada mağaza komisyonu yok.
             </p>
@@ -208,9 +208,9 @@ export default async function PremiumPage() {
               {STEPS.map((s, i) => (
                 <li key={s.title}>
                   <Card className="h-full">
-                    <p className="tk-caption text-brand">{i + 1}. adım</p>
+                    <p className="type-label text-accent-ink">{i + 1}. adım</p>
                     <CardTitle className="mt-1">{s.title}</CardTitle>
-                    <p className="mt-1.5 text-[13px] leading-relaxed text-ink-soft">
+                    <p className="mt-1.5 type-body-sm text-ink-soft">
                       {s.body}
                     </p>
                   </Card>
@@ -224,7 +224,7 @@ export default async function PremiumPage() {
 
             {/* Manuel akışta eşleştirme hesap e-postası üzerinden yapılır: girişli
                 kullanıcı kendi adresini görür, girişsiz ziyaretçi önce kaydolmalı. */}
-            <p className="mt-4 text-center text-[13px] leading-relaxed text-ink-soft">
+            <p className="mt-4 text-center type-body-sm text-ink-soft">
               {me?.email ? (
                 <>
                   Yazarken hesap e-postanı da ilet:{" "}
@@ -248,7 +248,7 @@ export default async function PremiumPage() {
         <section className="mt-10" aria-labelledby="karsilastirma">
           <h2
             id="karsilastirma"
-            className="mb-3 text-center font-heading text-lg font-bold text-ink"
+            className="mb-3 text-center type-heading text-ink"
           >
             Ücretsiz ve Premium
           </h2>
@@ -268,7 +268,7 @@ export default async function PremiumPage() {
               <thead role="rowgroup" className="hidden sm:table-header-group">
                 <tr
                   role="row"
-                  className="tk-caption border-b border-line text-left"
+                  className="type-label border-b border-line text-left"
                 >
                   <th
                     role="columnheader"
@@ -287,7 +287,7 @@ export default async function PremiumPage() {
                   <th
                     role="columnheader"
                     scope="col"
-                    className="px-4 py-3 font-semibold text-brand"
+                    className="px-4 py-3 font-semibold text-accent-ink"
                   >
                     Premium
                   </th>
@@ -317,7 +317,7 @@ export default async function PremiumPage() {
                     <td
                       role="cell"
                       data-label="Premium:"
-                      className="block px-4 pt-1.5 pb-3 font-medium text-ink before:mr-1.5 before:font-semibold before:text-brand before:content-[attr(data-label)] sm:table-cell sm:py-3 sm:before:content-none"
+                      className="block px-4 pt-1.5 pb-3 font-medium text-ink before:mr-1.5 before:font-semibold before:text-accent-ink before:content-[attr(data-label)] sm:table-cell sm:py-3 sm:before:content-none"
                     >
                       {r.premium}
                     </td>
@@ -326,7 +326,7 @@ export default async function PremiumPage() {
               </tbody>
             </table>
           </Card>
-          <p className="mt-3 text-center text-[13px] leading-relaxed text-ink-soft">
+          <p className="mt-3 text-center type-body-sm text-ink-soft">
             Ücretsiz katman vitrin değil: günde {pricing.freeDailyLimit} soru,
             günün quizi ve canlı denemeler herkese açık.
           </p>

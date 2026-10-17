@@ -4,6 +4,15 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { config } from "@/lib/config";
 import type { DailyQuiz } from "@/lib/public-api";
+import { Card } from "@/components/ui/card";
+import { Button, ButtonLink } from "@/components/ui/button";
+import { ProgressBar } from "@/components/ui/progress";
+import { Notice } from "@/components/ui/notice";
+import {
+  QuestionOption,
+  QuestionStem,
+  type QuestionOptionState,
+} from "@/components/ui/question";
 
 interface RevealResult {
   isCorrect: boolean;
@@ -16,6 +25,9 @@ interface RevealResult {
  * Günün Quizi (Doc 23 funnel) — girişsiz ana sayfanın kancası: 10 kaynaklı çıkmış
  * soru SAYFADA tek tek çözülür (cevap seçilince sunucudan açıklama), sonunda
  * skor + kayıt/giriş duvarı. Girişli `daily` turuyla AYNI 10 soru.
+ *
+ * Görünüm kit üstünde (W-F): seans oynatıcıyla aynı şık satırı ve kök; böylece
+ * ziyaretçi kayıt olunca tanıdık bir ekranla karşılaşır.
  */
 export function DailyQuizCard({
   quiz,
@@ -78,99 +90,111 @@ export function DailyQuizCard({
   if (done) {
     const pct = quiz.count > 0 ? Math.round((score / quiz.count) * 100) : 0;
     return (
-      <div className="mx-auto max-w-2xl rounded-xl border border-white/20 bg-white/10 p-6 text-center backdrop-blur">
-        <p className="text-sm text-white/70">Günün Quizini tamamladın 🎉</p>
-        <p className="mt-2 font-heading text-4xl font-bold text-white">
+      <Card className="mx-auto flex max-w-2xl flex-col items-center gap-3 p-6 text-center">
+        <span className="type-label text-accent-ink">
+          Günün Quizini tamamladın
+        </span>
+        <p className="type-stat text-[40px] leading-none text-ink">
           {score}
-          <span className="text-2xl text-white/60">/{quiz.count}</span>
+          <span className="text-ink-subtle">/{quiz.count}</span>
         </p>
-        <p className="mt-1 text-sm text-white/70">doğruluk %{pct}</p>
+        <p className="type-body-sm text-ink-soft">doğruluk %{pct}</p>
         {isLoggedIn ? (
-          <Link
-            href="/bugun"
-            className="mt-5 inline-block rounded-sm bg-white px-6 py-3 font-heading text-[15px] font-bold text-brand"
-          >
-            Bugün&apos;e devam et →
-          </Link>
+          <ButtonLink href="/bugun" size="lg" className="mt-2">
+            Bugün&apos;e devam et
+          </ButtonLink>
         ) : (
-          <div className="mt-5 flex flex-col items-center gap-3">
-            <Link
-              href="/kayit"
-              className="rounded-sm bg-white px-6 py-3 font-heading text-[15px] font-bold text-brand"
-            >
+          <div className="mt-2 flex flex-col items-center gap-3">
+            <ButtonLink href="/kayit" size="lg">
               Ücretsiz kaydol — günde {freeDailyLimit} soru + koç + seri
-            </Link>
-            <span className="text-xs text-white/70">
+            </ButtonLink>
+            <span className="type-body-sm text-ink-soft">
               Zaten üye misin?{" "}
-              <Link href="/giris" className="font-bold text-white underline">
+              <Link
+                href="/giris"
+                className="font-semibold text-accent-ink hover:underline"
+              >
                 Giriş yap
               </Link>
             </span>
           </div>
         )}
-      </div>
+      </Card>
     );
   }
 
+  const correctLabel =
+    result?.correctOptionId && q
+      ? q.options.find((o) => o.id === result.correctOptionId)?.label
+      : undefined;
+
+  const stateOf = (id: string): QuestionOptionState => {
+    if (!result) return chosen === id ? "selected" : "default";
+    if (id === result.correctOptionId)
+      return id === chosen ? "correct" : "missed";
+    if (id === chosen) return "incorrect";
+    return "disabled";
+  };
+
   return (
-    <div className="mx-auto max-w-2xl rounded-xl border border-white/20 bg-white/10 p-6 text-left backdrop-blur">
-      <div className="mb-3 flex items-center justify-between gap-3 text-sm text-white/70">
-        <span className="shrink-0">🎯 Günün Quizi</span>
-        <span className="min-w-0 truncate text-right">
-          {index + 1}/{quiz.count} · {[...new Set(q!.topic.split(" / "))].join(" / ")}
-        </span>
-      </div>
-      {/* İlerleme çubuğu */}
-      <div className="mb-4 h-1 overflow-hidden rounded-full bg-white/15">
-        <div
-          className="h-full rounded-full bg-white/70 transition-all"
-          style={{ width: `${quiz.count > 0 ? (index / quiz.count) * 100 : 0}%` }}
+    <Card className="mx-auto flex max-w-2xl flex-col gap-4 p-5 text-left sm:p-6">
+      <div className="flex flex-col gap-2">
+        <div className="flex items-center justify-between gap-3">
+          <span className="type-label text-accent-ink">Günün Quizi</span>
+          <span className="type-label tabular text-ink-subtle">
+            {index + 1}/{quiz.count}
+          </span>
+        </div>
+        <ProgressBar
+          value={quiz.count > 0 ? index / quiz.count : 0}
+          height={4}
+          label="Quiz ilerlemesi"
         />
       </div>
-      <p className="mb-4 whitespace-pre-line font-medium text-white">{q!.stem}</p>
-      <div className="space-y-2" role="radiogroup" aria-label="Günün quizi şıkları">
-        {q!.options.map((o) => {
-          let cls = "border-white/25 bg-white/5 hover:bg-white/15";
-          if (result) {
-            if (o.id === result.correctOptionId) cls = "border-emerald-400 bg-emerald-500/30";
-            else if (o.id === chosen) cls = "border-red-400 bg-red-500/30";
-            else cls = "border-white/15 bg-white/5 opacity-60";
-          }
-          return (
-            <button
-              key={o.id}
-              onClick={() => pick(o.id)}
-              disabled={!!result || busy}
-              className={`block w-full rounded-lg border px-4 py-2.5 text-left text-sm text-white transition ${cls}`}
-              role="radio"
-              aria-checked={chosen === o.id}
-            >
-              <b>{o.label})</b> {o.text}
-            </button>
-          );
-        })}
+      <QuestionStem
+        index={index + 1}
+        total={quiz.count}
+        topic={[...new Set(q!.topic.split(" / "))].join(" / ")}
+        stem={q!.stem}
+      />
+      <div
+        className="flex flex-col gap-2"
+        role="radiogroup"
+        aria-label="Günün quizi şıkları"
+      >
+        {q!.options.map((o) => (
+          <QuestionOption
+            key={o.id}
+            label={o.label}
+            text={o.text}
+            state={stateOf(o.id)}
+            onSelect={!result && !busy ? () => pick(o.id) : undefined}
+          />
+        ))}
       </div>
 
       {result && (
-        <div className="mt-4 rounded-lg bg-white/10 p-4 text-sm text-white">
-          <p className="mb-1 font-bold">
-            {result.isCorrect ? "🎉 Doğru! Harikasın." : "Yanlış — ama artık biliyorsun."}
-          </p>
-          {result.explanation && (
-            <p className="text-white/85">Açıklama: {result.explanation}</p>
-          )}
-          {result.source && (
-            <p className="mt-1 text-xs text-white/60">Kaynak: {result.source}</p>
-          )}
-          <button
-            type="button"
-            onClick={next}
-            className="mt-3 rounded-sm bg-white px-4 py-2 font-heading text-[13px] font-bold text-brand"
-          >
-            {index + 1 < quiz.count ? "Sonraki soru →" : "Sonucu gör →"}
-          </button>
-        </div>
+        <Notice
+          tone={result.isCorrect ? "success" : "error"}
+          title={
+            result.isCorrect
+              ? "Doğru"
+              : `Yanlış${correctLabel ? ` — doğru cevap ${correctLabel}` : ""}`
+          }
+          action={
+            <Button onClick={next} size="md">
+              {index + 1 < quiz.count ? "Sonraki soru" : "Sonucu gör"}
+            </Button>
+          }
+        >
+          {result.explanation ? (
+            <p className="whitespace-pre-line">{result.explanation}</p>
+          ) : null}
+          {result.source ? (
+            <p className="mt-1 text-ink-soft">Kaynak: {result.source}</p>
+          ) : null}
+        </Notice>
       )}
-    </div>
+    </Card>
   );
 }

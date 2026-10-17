@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
+import { StatTile } from "@/components/ui/stat-tile";
 
 interface SectionInput {
   name: string;
@@ -19,11 +20,16 @@ export function ScoreCalculator({
   sections: SectionInput[];
   totalQuestions: number;
 }) {
-  const [rows, setRows] = useState(sections.map(() => ({ correct: "", wrong: "" })));
+  const [rows, setRows] = useState(
+    sections.map(() => ({ correct: "", wrong: "" })),
+  );
   const [penalty, setPenalty] = useState(true);
+  const penaltyId = useId();
 
   function setCell(i: number, field: "correct" | "wrong", value: string) {
-    setRows((prev) => prev.map((r, j) => (j === i ? { ...r, [field]: value } : r)));
+    setRows((prev) =>
+      prev.map((r, j) => (j === i ? { ...r, [field]: value } : r)),
+    );
   }
 
   const perSection = sections.map((s, i) => {
@@ -36,61 +42,105 @@ export function ScoreCalculator({
   });
 
   const totalNet = perSection.reduce((sum, s) => sum + s.net, 0);
-  const weighted =
-    perSection.reduce((sum, s) => sum + s.ratio * s.weightPercent, 0);
+  const weighted = perSection.reduce(
+    (sum, s) => sum + s.ratio * s.weightPercent,
+    0,
+  );
   const anyInput = rows.some((r) => r.correct !== "" || r.wrong !== "");
 
+  const inputClass =
+    "tabular h-11 w-20 rounded-control border border-line bg-surface px-2 text-ink outline-none focus:border-ink-soft";
+
   return (
-    <div>
-      <label className="mb-4 flex items-center gap-2 text-sm text-gray-600">
+    <div className="flex flex-col gap-5">
+      <label
+        htmlFor={penaltyId}
+        className="type-body-sm flex min-h-11 items-center gap-2 text-ink"
+      >
         <input
+          id={penaltyId}
           type="checkbox"
+          className="size-4 accent-accent"
           checked={penalty}
           onChange={(e) => setPenalty(e.target.checked)}
         />
         4 yanlış 1 doğruyu götürsün
       </label>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+      <div className="overflow-x-auto rounded-card border border-line bg-surface">
+        <table className="w-full border-collapse">
+          <caption className="sr-only">
+            Bölüm bazında doğru, yanlış ve net
+          </caption>
           <thead>
-            <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
-              <th className="py-2 pr-2">Bölüm</th>
-              <th className="w-20 py-2 pr-2">Ağırlık</th>
-              <th className="w-24 py-2 pr-2">Doğru</th>
-              <th className="w-24 py-2 pr-2">Yanlış</th>
-              <th className="w-20 py-2 text-right">Net</th>
+            <tr className="border-b border-line text-left">
+              <th scope="col" className="type-label px-4 py-3 text-ink-subtle">
+                Bölüm
+              </th>
+              <th
+                scope="col"
+                className="type-label w-20 px-4 py-3 text-ink-subtle"
+              >
+                Ağırlık
+              </th>
+              <th
+                scope="col"
+                className="type-label w-28 px-4 py-3 text-ink-subtle"
+              >
+                Doğru
+              </th>
+              <th
+                scope="col"
+                className="type-label w-28 px-4 py-3 text-ink-subtle"
+              >
+                Yanlış
+              </th>
+              <th
+                scope="col"
+                className="type-label w-20 px-4 py-3 text-right text-ink-subtle"
+              >
+                Net
+              </th>
             </tr>
           </thead>
           <tbody>
             {perSection.map((s, i) => (
-              <tr key={s.name} className="border-b border-gray-100">
-                <td className="py-2 pr-2">{s.name}</td>
-                <td className="py-2 pr-2 text-gray-500">%{s.weightPercent}</td>
-                <td className="py-2 pr-2">
+              <tr key={s.name} className="border-b border-line last:border-b-0">
+                <th
+                  scope="row"
+                  className="type-body-sm px-4 py-2 text-left font-normal text-ink"
+                >
+                  {s.name}
+                </th>
+                <td className="type-body-sm tabular px-4 py-2 text-ink-soft">
+                  %{s.weightPercent}
+                </td>
+                <td className="px-4 py-2">
                   <input
                     type="number"
                     min={0}
                     inputMode="numeric"
                     value={rows[i].correct}
                     onChange={(e) => setCell(i, "correct", e.target.value)}
-                    className="w-20 rounded border border-gray-300 px-2 py-1"
+                    className={inputClass}
                     aria-label={`${s.name} doğru sayısı`}
                   />
                 </td>
-                <td className="py-2 pr-2">
+                <td className="px-4 py-2">
                   <input
                     type="number"
                     min={0}
                     inputMode="numeric"
                     value={rows[i].wrong}
                     onChange={(e) => setCell(i, "wrong", e.target.value)}
-                    className="w-20 rounded border border-gray-300 px-2 py-1"
+                    className={inputClass}
                     aria-label={`${s.name} yanlış sayısı`}
                   />
                 </td>
-                <td className="py-2 text-right font-medium">
-                  {rows[i].correct !== "" || rows[i].wrong !== "" ? s.net.toFixed(2) : "—"}
+                <td className="type-subhead tabular px-4 py-2 text-right text-ink">
+                  {rows[i].correct !== "" || rows[i].wrong !== ""
+                    ? s.net.toFixed(2)
+                    : "—"}
                 </td>
               </tr>
             ))}
@@ -98,24 +148,24 @@ export function ScoreCalculator({
         </table>
       </div>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-gray-200 bg-white p-5 text-center">
-          <p className="text-sm text-gray-500">Toplam Net</p>
-          <p className="font-heading text-3xl font-bold text-(--color-navy)">
-            {anyInput ? totalNet.toFixed(2) : "—"}
-          </p>
-        </div>
-        <div className="rounded-xl border border-gray-200 bg-white p-5 text-center">
-          <p className="text-sm text-gray-500">Ağırlıklı Skor (100 üzerinden, tahminî)</p>
-          <p className="font-heading text-3xl font-bold text-(--color-navy)">
-            {anyInput ? weighted.toFixed(1) : "—"}
-          </p>
-        </div>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <StatTile
+          label="Toplam net"
+          value={anyInput ? totalNet.toFixed(2) : null}
+          emphasis
+        />
+        <StatTile
+          label="Ağırlıklı skor"
+          value={anyInput ? weighted.toFixed(1) : null}
+          unit="/ 100"
+          hint="tahminî"
+        />
       </div>
 
-      <p className="mt-4 text-xs text-gray-400">
-        Bu hesap bölüm ağırlıklarına dayalı bir tahmindir; resmî değerlendirme formülü değildir.
-        Bölüm soru sayıları toplam soru sayısının ağırlığa göre dağılımından yaklaşık hesaplanır.
+      <p className="type-body-sm text-ink-subtle">
+        Bu hesap bölüm ağırlıklarına dayalı bir tahmindir; resmî değerlendirme
+        formülü değildir. Bölüm soru sayıları toplam soru sayısının ağırlığa
+        göre dağılımından yaklaşık hesaplanır.
       </p>
     </div>
   );

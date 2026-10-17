@@ -1,5 +1,36 @@
 import Link from "next/link";
 import type { ExamGuide } from "@/lib/public-api";
+import {
+  PageFrame,
+  PageIntro,
+  ClosingCta,
+} from "@/components/public/page-frame";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ButtonLink } from "@/components/ui/button";
+
+/**
+ * Bölüm payları tek vurgu renginin kademeleriyle çizilir (karar 3: dört vurgu
+ * tek vurguya indi). Sıra, ağırlık sırasıdır; renk tek başına anlam taşımaz —
+ * etiket ve yüzde her dilimde yazılıdır.
+ */
+const SEGMENT_OPACITY = [
+  "bg-accent",
+  "bg-accent/80",
+  "bg-accent/60",
+  "bg-accent/45",
+  "bg-accent/30",
+  "bg-accent/20",
+];
+/* Soluk dilimlerde koyu "on-accent" metin kaybolur; orada zemin rengine göre okunur mürekkep kullanılır. */
+const SEGMENT_TEXT = [
+  "text-on-accent",
+  "text-on-accent",
+  "text-ink",
+  "text-ink",
+  "text-ink",
+  "text-ink",
+];
 
 /**
  * Sınav rehberi gövdesi (Doc 23): bölüm ağırlıkları + ders/konu envanteri,
@@ -7,113 +38,128 @@ import type { ExamGuide } from "@/lib/public-api";
  */
 export function ExamGuideBody({ guide }: { guide: ExamGuide }) {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
-        {guide.name} Sınavı Rehberi
-      </h1>
-      {guide.description && <p className="mb-4 text-gray-600">{guide.description}</p>}
-      <p className="mb-8 text-sm text-gray-500">
-        {guide.sections.length} bölüm · Paemisyon bankasında {guide.totalQuestions} kaynaklı çıkmış
-        soru
-      </p>
+    <PageFrame className="flex flex-col gap-8">
+      <PageIntro
+        eyebrow="Sınav rehberi"
+        title={`${guide.name} Sınavı Rehberi`}
+        lead={guide.description ?? undefined}
+        meta={
+          <span>
+            {guide.sections.length} bölüm · Paemisyon bankasında{" "}
+            {guide.totalQuestions} kaynaklı çıkmış soru
+          </span>
+        }
+      />
 
       {/* Ağırlık çubuğu */}
-      <div className="mb-8">
-        <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
-          Bölümler ve ağırlıkları
-        </h2>
-        <div className="flex h-8 w-full overflow-hidden rounded-lg">
+      <section className="flex flex-col gap-3">
+        <h2 className="type-heading text-ink">Bölümler ve ağırlıkları</h2>
+        <div
+          className="flex h-8 w-full overflow-hidden rounded-pill bg-surface-alt"
+          role="img"
+          aria-label="Bölüm ağırlıkları"
+        >
           {guide.sections.map((s, i) => (
             <div
               key={s.name}
-              className="flex items-center justify-center text-[11px] font-bold text-white"
-              style={{
-                width: `${s.weightPercent}%`,
-                background: `hsl(${210 + i * 24} 55% ${38 + (i % 3) * 8}%)`,
-              }}
+              className={[
+                "flex items-center justify-center overflow-hidden type-label",
+                SEGMENT_OPACITY[i % SEGMENT_OPACITY.length],
+                SEGMENT_TEXT[i % SEGMENT_TEXT.length],
+              ].join(" ")}
+              style={{ width: `${s.weightPercent}%` }}
               title={`${s.name} %${s.weightPercent}`}
             >
               %{s.weightPercent}
             </div>
           ))}
         </div>
-        <ul className="mt-3 grid gap-1 text-sm text-gray-600 sm:grid-cols-2">
+        <ul className="grid gap-1 sm:grid-cols-2">
           {guide.sections.map((s, i) => (
-            <li key={s.name} className="flex items-center gap-2">
+            <li
+              key={s.name}
+              className="type-body-sm flex items-center gap-2 text-ink-soft"
+            >
               <span
-                className="inline-block h-3 w-3 shrink-0 rounded-sm"
-                style={{ background: `hsl(${210 + i * 24} 55% ${38 + (i % 3) * 8}%)` }}
+                className={[
+                  "inline-block size-3 shrink-0 rounded-[3px]",
+                  SEGMENT_OPACITY[i % SEGMENT_OPACITY.length],
+                ].join(" ")}
+                aria-hidden
               />
               {s.name} — %{s.weightPercent}
             </li>
           ))}
         </ul>
-      </div>
+      </section>
 
       {/* Bölüm detayları */}
-      {guide.sections.map((s) => (
-        <section key={s.name} className="mb-6 rounded-xl border border-gray-200 bg-white p-5">
-          <div className="mb-2 flex items-center justify-between">
-            <h3 className="font-heading font-bold text-(--color-navy)">{s.name}</h3>
-            <span className="rounded-full bg-(--color-navy)/10 px-2.5 py-0.5 text-xs font-bold text-(--color-navy)">
-              %{s.weightPercent}
-            </span>
-          </div>
-          {s.courses.map((c) => (
-            <div key={c.name} className="mt-3 border-t border-gray-100 pt-3">
-              <p className="text-sm font-medium">
-                {c.name}
-                <span className="ml-2 text-xs text-gray-500">
-                  {c.topicCount} konu{c.questionCount > 0 ? ` · ${c.questionCount} çıkmış soru` : ""}
-                </span>
-              </p>
-              {c.lawTopics.length > 0 && (
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {c.lawTopics.map((t) => (
-                    <Link
-                      key={t.slug}
-                      href={`/kanun/${t.slug}`}
-                      className="rounded-full border border-gray-200 px-2.5 py-0.5 text-xs text-gray-600 transition hover:border-(--color-navy) hover:text-(--color-navy)"
-                    >
-                      {t.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+      <div className="flex flex-col gap-4">
+        {guide.sections.map((s) => (
+          <Card key={s.name} className="flex flex-col gap-3 p-5">
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="type-heading text-ink">{s.name}</h3>
+              <Badge tone="accent">%{s.weightPercent}</Badge>
             </div>
-          ))}
-        </section>
-      ))}
+            {s.courses.map((c) => (
+              <div
+                key={c.name}
+                className="flex flex-col gap-2 border-t border-line pt-3"
+              >
+                <p className="type-subhead text-ink">
+                  {c.name}
+                  <span className="type-body-sm ml-2 font-normal text-ink-soft">
+                    {c.topicCount} konu
+                    {c.questionCount > 0
+                      ? ` · ${c.questionCount} çıkmış soru`
+                      : ""}
+                  </span>
+                </p>
+                {c.lawTopics.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5">
+                    {c.lawTopics.map((t) => (
+                      <Link
+                        key={t.slug}
+                        href={`/kanun/${t.slug}`}
+                        className="tk-interactive inline-flex min-h-8 items-center rounded-pill border border-line px-2.5 type-body-sm text-ink-soft hover:border-ink-soft hover:text-ink"
+                      >
+                        {t.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </Card>
+        ))}
+      </div>
 
       {/* Çıkmış sınavlara iç bağlantı (Doc 36): rehber sayfası bu ürünün en
           doğal giriş kapısı — arayan aday önce "PAEM nedir"e, sonra "ne
           çıkmış"a bakıyor. */}
       {guide.key === "paem" && (
-        <div className="mt-8 rounded-xl border border-(--color-border) p-5">
-          <p className="font-heading mb-1 text-base font-bold">
-            PAEM&apos;de gerçekten ne çıktı?
-          </p>
-          <p className="mb-3 text-sm text-(--color-text)">
-            Yayımlanmış dönemlerin soruları cevaplarıyla ve kanun dayanaklarıyla,
-            yayımlanmayanların konu dağılımı dönem dönem burada.
-          </p>
-          <Link href="/paem-cikmis-sorular" className="btn2">
-            PAEM Çıkmış Sorular →
-          </Link>
-        </div>
+        <Card className="flex flex-col items-start gap-3 p-5">
+          <div>
+            <h2 className="type-heading text-ink">
+              PAEM&apos;de gerçekten ne çıktı?
+            </h2>
+            <p className="type-body-sm mt-1 max-w-[60ch] text-ink-soft">
+              Yayımlanmış dönemlerin soruları cevaplarıyla ve kanun
+              dayanaklarıyla, yayımlanmayanların konu dağılımı dönem dönem
+              burada.
+            </p>
+          </div>
+          <ButtonLink href="/paem-cikmis-sorular" variant="secondary">
+            PAEM Çıkmış Sorular
+          </ButtonLink>
+        </Card>
       )}
 
-      <div className="mt-8 rounded-xl bg-(--color-navy) p-6 text-center text-white">
-        <p className="font-heading mb-3 text-lg font-bold">
-          {guide.name} hazırlığına bugün başla
-        </p>
-        <p className="mb-4 text-sm text-white/80">
-          Kaynaklı çıkmış sorular, canlı denemeler ve seni tanıyan kişisel koç — ücretsiz.
-        </p>
-        <Link href="/kayit" className="btn2 btn2-green">
-          Ücretsiz Kayıt Ol
-        </Link>
-      </div>
-    </div>
+      <ClosingCta
+        title={`${guide.name} hazırlığına bugün başla`}
+        body="Kaynaklı çıkmış sorular, canlı denemeler ve seni tanıyan kişisel koç — ücretsiz."
+        actions={<ButtonLink href="/kayit">Ücretsiz kayıt ol</ButtonLink>}
+      />
+    </PageFrame>
   );
 }

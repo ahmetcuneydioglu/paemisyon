@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BookOpen } from "lucide-react";
 import {
   articleSlug,
   publicApi,
@@ -8,6 +9,15 @@ import {
   type LawSummary,
 } from "@/lib/public-api";
 import { config } from "@/lib/config";
+import {
+  PageFrame,
+  PageIntro,
+  ClosingCta,
+} from "@/components/public/page-frame";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { ButtonLink } from "@/components/ui/button";
+import { SectionHeader } from "@/components/ui/section-header";
 
 type Params = Promise<{ slug: string }>;
 
@@ -23,15 +33,23 @@ export async function generateStaticParams() {
   return laws.map((l) => ({ slug: l.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
   const { slug } = await params;
   const law = await getLaw(slug);
   if (!law) return { title: "Kanun bulunamadı" };
-  const examStr = law.exams.map((e) => `${e.examName} %${e.weightPercent}`).join(", ");
+  const examStr = law.exams
+    .map((e) => `${e.examName} %${e.weightPercent}`)
+    .join(", ");
   return {
     title: `${law.name} — Çıkmış Sorular ve Sınav Ağırlığı`,
     description: `${law.name}: ${examStr || "polis sınavı müfredatı"} kapsamında${
-      law.questionCount > 0 ? `, ${law.questionCount} kaynaklı çıkmış soru ile` : ""
+      law.questionCount > 0
+        ? `, ${law.questionCount} kaynaklı çıkmış soru ile`
+        : ""
     } konu çalış. Örnek soru ve açıklaması sayfada.`,
     alternates: { canonical: `/kanun/${slug}` },
   };
@@ -64,14 +82,21 @@ export default async function KanunPage({ params }: { params: Params }) {
             suggestedAnswer: q.options
               .filter((o) => !o.isCorrect)
               .map((o) => ({ "@type": "Answer", text: o.text })),
-            acceptedAnswer: correct ? { "@type": "Answer", text: correct.text } : undefined,
+            acceptedAnswer: correct
+              ? { "@type": "Answer", text: correct.text }
+              : undefined,
           },
         ],
       }
     : null;
 
+  const kayitMetni =
+    law.questionCount > 1
+      ? `${law.questionCount} sorunun tamamını çöz — ücretsiz kayıt ol`
+      : "Ücretsiz kayıt ol, çalışmaya başla";
+
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <PageFrame className="flex flex-col gap-8">
       {jsonLd && (
         <script
           type="application/ld+json"
@@ -79,53 +104,55 @@ export default async function KanunPage({ params }: { params: Params }) {
         />
       )}
 
-      <nav className="mb-4 text-sm text-gray-500">
-        <Link href="/kanunlar" className="hover:underline">Kanun Kütüphanesi</Link> ›{" "}
-        <span>{law.courseName}</span>
-      </nav>
-
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">{law.name}</h1>
-
-      {/* Sınav bağlamı — adayın ilk sorusu: "bu benim sınavımda çıkıyor mu?" */}
-      <div className="mb-6 flex flex-wrap gap-2">
-        {law.exams.map((e) => (
-          <span
-            key={e.examKey + e.sectionName}
-            className="rounded-full bg-(--color-navy)/10 px-3 py-1 text-sm font-medium text-(--color-navy)"
-          >
-            {e.examName} · {e.sectionName} · %{e.weightPercent}
-          </span>
-        ))}
-        {law.questionCount > 0 && (
-          <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-700">
-            {law.questionCount} kaynaklı çıkmış soru
-          </span>
-        )}
-      </div>
-
-      {/* Kanunu oku (Doc 25 §4 okuma katmanı) — yayınlanmış tam metin varsa */}
-      {law.readable && (
-        <div className="mb-8">
-          <Link
-            href={`/kanun/${slug}/oku`}
-            className="inline-flex items-center gap-2 rounded-lg bg-(--color-navy) px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
-          >
-            📖 Kanunun güncel tam metnini oku
-          </Link>
-        </div>
-      )}
+      <PageIntro
+        breadcrumb={[
+          { label: "Kanun Kütüphanesi", href: "/kanunlar" },
+          { label: law.courseName },
+          { label: law.name },
+        ]}
+        eyebrow={law.courseName}
+        title={law.name}
+        meta={
+          <>
+            {/* Sınav bağlamı — adayın ilk sorusu: "bu benim sınavımda çıkıyor mu?" */}
+            {law.exams.map((e) => (
+              <Badge key={e.examKey + e.sectionName} tone="accent">
+                {e.examName} · {e.sectionName} · %{e.weightPercent}
+              </Badge>
+            ))}
+            {law.questionCount > 0 && (
+              <Badge tone="success">
+                {law.questionCount} kaynaklı çıkmış soru
+              </Badge>
+            )}
+          </>
+        }
+        actions={
+          law.readable ? (
+            <ButtonLink
+              href={`/kanun/${slug}/oku`}
+              variant="secondary"
+              leadingIcon={<BookOpen size={18} aria-hidden />}
+            >
+              Kanunun güncel tam metnini oku
+            </ButtonLink>
+          ) : undefined
+        }
+      />
 
       {/* Madde Isı Haritası (Doc 25 §4) — hangi maddeden kaç soru çıkmış */}
       {law.articles.length > 0 && (
-        <section className="mb-8 rounded-xl border border-gray-200 bg-white p-6">
-          <h2 className="font-heading mb-1 text-lg font-bold text-(--color-navy)">
-            En çok soru çıkan maddeler
-          </h2>
-          <p className="mb-4 text-sm text-gray-500">
-            Kaynaklı çıkmış sorulardan üretilen dağılım — hangi maddeye
-            yoğunlaşman gerektiğini gösterir.
-          </p>
-          <ul className="space-y-2">
+        <Card className="flex flex-col gap-4 p-5 sm:p-6">
+          <div>
+            <h2 className="type-heading text-ink">
+              En çok soru çıkan maddeler
+            </h2>
+            <p className="type-body-sm mt-1 text-ink-soft">
+              Kaynaklı çıkmış sorulardan üretilen dağılım — hangi maddeye
+              yoğunlaşman gerektiğini gösterir.
+            </p>
+          </div>
+          <ol className="flex flex-col gap-1">
             {law.articles.slice(0, 10).map((a) => {
               const max = law.articles[0].questionCount;
               const ratio = max > 0 ? a.questionCount / max : 0;
@@ -133,103 +160,123 @@ export default async function KanunPage({ params }: { params: Params }) {
                 <li key={a.no}>
                   <Link
                     href={`/kanun/${slug}/madde/${articleSlug(a.no)}`}
-                    className="flex items-center gap-3 rounded px-1 py-0.5 text-sm transition hover:bg-gray-50"
+                    className="tk-interactive flex min-h-11 items-center gap-3 rounded-control px-2 type-body-sm text-ink hover:bg-surface-alt"
                   >
-                    <span className="w-14 shrink-0 font-mono font-medium">m.{a.no}</span>
-                    <span className="h-2.5 flex-1 overflow-hidden rounded bg-gray-100">
+                    <span className="w-14 shrink-0 font-mono font-medium">
+                      m.{a.no}
+                    </span>
+                    <span className="h-2.5 flex-1 overflow-hidden rounded-pill bg-surface-alt">
                       <span
-                        className="block h-full rounded"
-                        style={{
-                          width: `${Math.max(8, ratio * 100)}%`,
-                          background:
-                            ratio >= 0.6 ? "var(--tk-accent-atlas)" : "color-mix(in srgb, var(--tk-accent-atlas) 40%, transparent)",
-                        }}
+                        className={[
+                          "block h-full rounded-pill",
+                          ratio >= 0.6 ? "bg-accent" : "bg-accent/40",
+                        ].join(" ")}
+                        style={{ width: `${Math.max(8, ratio * 100)}%` }}
                       />
                     </span>
-                    <span className="w-8 shrink-0 text-right text-gray-500">
+                    <span className="tabular w-8 shrink-0 text-right text-ink-soft">
                       {a.questionCount}
                     </span>
                   </Link>
                 </li>
               );
             })}
-          </ul>
+          </ol>
           {law.articles.length > 10 && (
-            <p className="mt-3 text-xs text-gray-400">
+            <p className="type-body-sm text-ink-subtle">
               + {law.articles.length - 10} madde daha — tamamı uygulamada.
             </p>
           )}
-        </section>
+        </Card>
       )}
 
       {/* Örnek çıkmış soru */}
       {q ? (
-        <section className="mb-8 rounded-xl border border-gray-200 bg-white p-6">
-          <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
-            Örnek çıkmış soru
-          </h2>
-          <p className="mb-3 whitespace-pre-line font-medium">{q.stem}</p>
-          <ul className="mb-4 space-y-1.5 text-sm">
+        <Card className="flex flex-col gap-4 p-5 sm:p-6">
+          <h2 className="type-heading text-ink">Örnek çıkmış soru</h2>
+          <p className="type-body whitespace-pre-line text-ink">{q.stem}</p>
+          <ul className="flex flex-col gap-1.5">
             {q.options.map((o) => (
-              <li key={o.id}>
-                <b>{o.label})</b> {o.text}
+              <li
+                key={o.id}
+                className="type-body-sm flex gap-3 rounded-control border border-line px-3 py-2 text-ink"
+              >
+                <span className="shrink-0 font-semibold text-ink-soft">
+                  {o.label})
+                </span>
+                <span>{o.text}</span>
               </li>
             ))}
           </ul>
-          <details className="rounded-lg bg-gray-50 p-3 text-sm">
-            <summary className="cursor-pointer font-bold text-(--color-navy)">
+          <details className="rounded-control bg-surface-alt p-3">
+            <summary className="type-subhead cursor-pointer text-accent-ink">
               Cevabı ve açıklamayı göster
             </summary>
-            <div className="mt-2 space-y-1">
+            <div className="type-body-sm mt-2 flex flex-col gap-1 text-ink">
               {correct && (
                 <p>
-                  Doğru cevap: <b>{correct.label}) {correct.text}</b>
+                  Doğru cevap:{" "}
+                  <b className="font-semibold">
+                    {correct.label}) {correct.text}
+                  </b>
                 </p>
               )}
-              {q.explanation && <p className="text-gray-600">{q.explanation}</p>}
-              {q.source && <p className="text-xs text-gray-400">Kaynak: {q.source}</p>}
+              {q.explanation && (
+                <p className="text-ink-soft">{q.explanation}</p>
+              )}
             </div>
           </details>
-          <div className="mt-4">
-            <Link href="/kayit" className="btn2 btn2-green">
-              {law.questionCount > 1
-                ? `${law.questionCount} sorunun tamamını çöz — ücretsiz kayıt ol`
-                : "Ücretsiz kayıt ol, çalışmaya başla"}
-            </Link>
+          <div>
+            <ButtonLink href="/kayit">{kayitMetni}</ButtonLink>
           </div>
-        </section>
+        </Card>
       ) : (
-        <section className="mb-8 rounded-xl border border-dashed border-gray-300 p-6 text-sm text-gray-500">
-          Bu mevzuatın çıkmış soruları yakında ekleniyor. Müfredattaki yeri yukarıda —{" "}
-          <Link href="/kayit" className="font-bold text-(--color-navy) hover:underline">
+        <Card
+          tone="alt"
+          className="type-body-sm border-dashed p-5 text-ink-soft"
+        >
+          Bu mevzuatın çıkmış soruları yakında ekleniyor. Müfredattaki yeri
+          yukarıda —{" "}
+          <Link
+            href="/kayit"
+            className="font-semibold text-accent-ink hover:underline"
+          >
             kayıt ol
           </Link>
           , eklendiğinde koçun sana haber versin.
-        </section>
+        </Card>
       )}
 
       {/* İlgili mevzuat — iç bağlantı ağı */}
       {law.related.length > 0 && (
-        <section>
-          <h2 className="font-heading mb-3 text-lg font-bold text-(--color-navy)">
-            {law.courseName} dersindeki diğer mevzuat
-          </h2>
+        <section className="flex flex-col gap-3">
+          <SectionHeader title={`${law.courseName} dersindeki diğer mevzuat`} />
           <div className="grid gap-3 sm:grid-cols-2">
             {law.related.map((r) => (
               <Link
                 key={r.slug}
                 href={`/kanun/${r.slug}`}
-                className="rounded-lg border border-gray-200 bg-white p-3 text-sm transition hover:border-(--color-navy)"
+                className="tk-interactive flex items-baseline justify-between gap-3 rounded-card border border-line bg-surface p-4 hover:border-ink-soft"
               >
-                <span className="font-medium">{r.name}</span>
+                <span className="type-subhead text-ink">{r.name}</span>
                 {r.questionCount > 0 && (
-                  <span className="ml-2 text-xs text-gray-500">{r.questionCount} soru</span>
+                  <span className="type-body-sm shrink-0 text-ink-soft">
+                    {r.questionCount} soru
+                  </span>
                 )}
               </Link>
             ))}
           </div>
         </section>
       )}
-    </div>
+
+      {!q && law.readable ? null : (
+        <ClosingCta
+          title="Bu kanunu koçunla çalış"
+          body="Madde madde ilerle, yanlışların tekrar listesine düşsün, sınava yakın tekrar gelsin."
+          actions={<ButtonLink href="/kayit">Ücretsiz başla</ButtonLink>}
+        />
+      )}
+    </PageFrame>
   );
 }

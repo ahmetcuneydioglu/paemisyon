@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PageFrame, PageIntro, Prose } from "@/components/public/page-frame";
 import Link from "next/link";
 import { CONTACT_HANDLE } from "@/lib/contact";
 
@@ -11,15 +12,12 @@ export const metadata: Metadata = {
 
 export default function KosullarPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-10">
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
-        Kullanım Koşulları
-      </h1>
-      <p className="mb-8 text-sm text-gray-500">Son güncelleme: 21 Temmuz 2026</p>
+    <PageFrame width="narrow" className="flex flex-col gap-8">
+      <PageIntro title="Kullanım Koşulları" meta={<span>Son güncelleme: 21 Temmuz 2026</span>} />
 
-      <div className="space-y-8 text-[15px] leading-relaxed text-gray-700">
+      <Prose>
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             1. Hizmetin Tanımı
           </h2>
           <p>
@@ -32,7 +30,7 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             2. Resmî Kurumlarla İlişki — Önemli Uyarı
           </h2>
           <p>
@@ -47,10 +45,10 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             3. Hesap ve Kullanım Kuralları
           </h2>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>Hesap bilgilerinizin gizliliğinden siz sorumlusunuz.</li>
             <li>
               Hesap kişiseldir; paylaşılamaz, devredilemez, ticari amaçla
@@ -68,10 +66,10 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             4. Premium Abonelik
           </h2>
-          <ul className="list-disc space-y-1 pl-5">
+          <ul>
             <li>
               Premium, <strong>3 aylık tek paket</strong> olarak sunulur. Uygulama
               içi satın alma yoktur: talebinizi Telegram veya Instagram hesabımız
@@ -102,7 +100,7 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             5. İçerik ve Fikri Haklar
           </h2>
           <p>
@@ -115,7 +113,7 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             6. Sorumluluğun Sınırlandırılması
           </h2>
           <p>
@@ -128,22 +126,22 @@ export default function KosullarPage() {
         </section>
 
         <section>
-          <h2 className="font-heading mb-2 text-lg font-bold text-(--color-navy)">
+          <h2>
             7. Değişiklikler ve İletişim
           </h2>
           <p>
             Bu koşullar güncellenebilir; önemli değişiklikler Platform üzerinden
             duyurulur. Kişisel verilerin işlenmesine ilişkin esaslar{" "}
-            <Link href="/gizlilik" className="font-medium text-(--color-navy) underline">
+            <Link href="/gizlilik">
               Gizlilik Politikası
             </Link>
             &apos;nda düzenlenmiştir. Sorularınız için:{" "}
-            <a href="mailto:destek@paemisyon.com" className="font-medium text-(--color-navy) underline">
+            <a href="mailto:destek@paemisyon.com">
               destek@paemisyon.com
             </a>
           </p>
         </section>
-      </div>
-    </div>
+      </Prose>
+    </PageFrame>
   );
 }

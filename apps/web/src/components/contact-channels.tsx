@@ -29,7 +29,7 @@ export function ContactChannels({
             href={c.href}
             target="_blank"
             rel="noreferrer"
-            className="tk-interactive inline-flex min-h-11 items-center gap-2 rounded-sm border border-line px-3 text-[13px] text-ink-soft hover:border-ink-soft hover:text-ink"
+            className="tk-interactive inline-flex min-h-11 items-center gap-2 rounded-control border border-line px-3 text-[13px] text-ink-soft hover:border-ink-soft hover:text-ink"
           >
             <ChannelIcon channel={c.key as ChannelKey} size={16} />
             {/* Kanal adı METİNDE olmalı: ikon aria-hidden ve iki kanalın kullanıcı
@@ -54,17 +54,17 @@ export function ContactChannels({
           target="_blank"
           rel="noreferrer"
           className={[
-            "tk-interactive inline-flex h-12 items-center justify-center gap-2 rounded-sm px-6",
-            "font-heading text-[15px] font-bold active:scale-[0.99]",
+            "tk-interactive inline-flex h-12 items-center justify-center gap-2 rounded-control px-6",
+            "type-subhead active:scale-[0.99]",
             i === 0
-              ? "bg-brand text-surface hover:opacity-90"
+              ? "bg-accent text-on-accent hover:brightness-110"
               : "border border-line bg-surface text-ink hover:border-ink-soft",
           ].join(" ")}
         >
           <ChannelIcon channel={c.key as ChannelKey} />
           <span>
             {c.label}
-            <span className="ml-1.5 font-body text-[13px] font-normal opacity-80">{c.handle}</span>
+            <span className="ml-1.5 text-[13px] font-normal opacity-80">{c.handle}</span>
           </span>
         </a>
       ))}

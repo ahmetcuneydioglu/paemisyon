@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { config } from "@/lib/config";
+import { PageFrame, PageIntro } from "@/components/public/page-frame";
+import { Notice } from "@/components/ui/notice";
 import { PreferencesForm, type Preferences } from "./preferences-form";
 
 export const metadata: Metadata = {
@@ -31,14 +33,18 @@ export default async function EpostaAbonelikPage({
   } | null;
 
   return (
-    <div className="mx-auto max-w-xl px-4 py-12">
-      <h1 className="font-heading mb-2 text-2xl font-bold text-(--color-navy)">
-        E-posta tercihlerin
-      </h1>
+    <PageFrame width="narrow" className="flex max-w-xl flex-col gap-6">
+      <PageIntro
+        eyebrow="E-posta"
+        title="E-posta tercihlerin"
+        meta={
+          json?.data ? <span>Adres: {json.data.emailMasked}</span> : undefined
+        }
+      />
       {json?.data ? (
         <PreferencesForm token={token} initial={json.data} />
       ) : (
-        <p className="mt-4 text-sm text-(--color-red)">
+        <Notice tone="error">
           Tercihler şu anda yüklenemedi. Birkaç dakika sonra tekrar dene;
           e-posta almak istemiyorsan{" "}
           <a
@@ -48,8 +54,8 @@ export default async function EpostaAbonelikPage({
             destek@paemisyon.com
           </a>{" "}
           adresine yaz.
-        </p>
+        </Notice>
       )}
-    </div>
+    </PageFrame>
   );
 }
