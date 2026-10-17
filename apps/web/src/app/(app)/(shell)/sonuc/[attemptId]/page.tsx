@@ -92,9 +92,9 @@ export default async function SonucPage({
         ]}
       />
 
-      <div className="grid gap-4 lg:grid-cols-[1fr_1.4fr]">
-        {/* Sol: skor + koç + eylemler */}
-        <div className="flex flex-col gap-4">
+      <div className="grid items-start gap-4 lg:grid-cols-[1fr_1.4fr]">
+        {/* Sol: skor + koç + eylemler — uzun tabloya eşlik etsin diye yapışkan */}
+        <div className="flex flex-col gap-4 lg:sticky lg:top-20">
           <Card className="flex flex-col items-center gap-1 p-6 text-center">
             <span className="type-label text-ink-subtle">
               {result.exam.title}

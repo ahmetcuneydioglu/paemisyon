@@ -17,6 +17,8 @@ export function FocusFrame({
   children,
   aside,
   asideLabel = "Yardımcı panel",
+  /** Sonuç/analiz ekranları: içerik 65ch'e kilitlenmez, tam genişlik kullanır. */
+  wide = false,
   className,
 }: {
   /** "Bugün: CMK ağırlıklı — 3 haftadır düşüş" gibi tek satır reçete şeffaflığı. */
@@ -28,6 +30,7 @@ export function FocusFrame({
   children: ReactNode;
   aside?: ReactNode;
   asideLabel?: string;
+  wide?: boolean;
   className?: string;
 }) {
   const exitCls =
@@ -60,7 +63,9 @@ export function FocusFrame({
         ) : null}
       </header>
       <div className="mx-auto flex w-full max-w-6xl flex-1 gap-8 px-4 py-6 md:px-6">
-        <main className="min-w-0 flex-1 lg:max-w-[65ch]">{children}</main>
+        <main className={cn("min-w-0 flex-1", !wide && "lg:max-w-[65ch]")}>
+          {children}
+        </main>
         {aside ? (
           <aside
             aria-label={asideLabel}

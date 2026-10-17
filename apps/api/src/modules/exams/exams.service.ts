@@ -268,15 +268,30 @@ export class ExamsService {
     // burada incelenir. Arşiv çözen kullanıcının sonucuna dönebileceği tek
     // kapı buydu ve yoktu: bir kullanıcı sonucunu ararken 40 dakikada 20'den
     // fazla boş oturum açtı (6 Eylül 2026).
+    // KİŞİSEL deneme (Doc 46) de buradan incelenir: exam satırı yoktur, set
+    // oturumun kendi questionOrder'ındadır. 18 Eki 2026'ya kadar bu uç kişisel
+    // denemeyi "Katılım bulunamadı" ile reddediyordu — web oynatıcısı bitişte
+    // /sonuc'a yönlendirdiği için kullanıcı sonucunu hiç göremiyordu.
     const session = await this.prisma.quizSession.findFirst({
       where: {
         id: attemptId,
         userId: user.id,
-        OR: [{ examId: { not: null } }, { archiveExamId: { not: null } }],
+        OR: [{ examId: { not: null } }, { archiveExamId: { not: null } }, { personalExam: true }],
       },
       include: { exam: true, archiveExam: true },
     });
-    const exam = session?.exam ?? session?.archiveExam ?? null;
+    const kisisel = session?.personalExam === true && !session.exam && !session.archiveExam;
+    const exam =
+      session?.exam ??
+      session?.archiveExam ??
+      (session && kisisel
+        ? {
+            id: session.id,
+            title: 'Kişisel Deneme',
+            startAt: session.startedAt,
+            durationMinutes: Math.max(1, Math.round((session.plannedDurationSeconds ?? 0) / 60)),
+          }
+        : null);
     if (!session || !exam) throw new NotFoundException('Katılım bulunamadı.');
     const arsiv = session.examId == null;
 
@@ -314,7 +329,10 @@ export class ExamsService {
     // ve kaynağını dağıtmak istemiyoruz. Alıştırma ve public akışlarda etiket
     // yerinde duruyor — orada "gerçek, kaynaklı çıkmış soru" güveni anlatılır;
     // oradaki görünürlük panelden (Sorular > kaynak etiketi) yönetiliyor.
-    const review = (await this.examQuestions(exam.id, { withAnswers: true })).map((q) => ({
+    const sorular = kisisel
+      ? await this.sessionQuestions(session.questionOrder)
+      : await this.examQuestions(exam.id, { withAnswers: true });
+    const review = sorular.map((q) => ({
       ...q,
       source: null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
@@ -383,8 +401,10 @@ export class ExamsService {
 
     return {
       attemptId: session.id,
-      /** Arşiv çözümü sıralamaya girmez — istemci rozeti buna göre çizer. */
+      /** Arşiv/kişisel çözüm sıralamaya girmez — istemci rozeti buna göre çizer. */
       isArchive: arsiv,
+      /** Kişisel deneme (Doc 46): kullanıcının kendi müfredat ağırlıklı seti. */
+      isPersonal: kisisel,
       exam: {
         id: exam.id,
         title: exam.title,
@@ -572,6 +592,44 @@ export class ExamsService {
   }
 
   // ── Yardımcı: sabitlenmiş sürümlerden soru yükü ──
+  /** Kişisel deneme: set `questionOrder`'daki sürüm kimlikleridir (ExamQuestion satırı yok). */
+  private async sessionQuestions(questionOrder: unknown) {
+    const ids = Array.isArray(questionOrder) ? (questionOrder as string[]) : [];
+    if (ids.length === 0) return [];
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: ids } },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        explanation: true,
+        sourceLabel: true,
+        options: {
+          orderBy: { sortOrder: 'asc' },
+          select: { id: true, label: true, text: true, isCorrect: true },
+        },
+      },
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    return ids.flatMap((id, i) => {
+      const v = byId.get(id);
+      if (!v) return [];
+      return [
+        {
+          order: i + 1,
+          questionId: v.questionId,
+          versionId: v.id,
+          stem: v.stem,
+          mediaUrl: v.mediaUrl,
+          explanation: v.explanation ?? null,
+          source: v.sourceLabel ?? null,
+          options: v.options,
+        },
+      ];
+    });
+  }
+
   private async examQuestions(examId: string, opts: { withAnswers: boolean }) {
     const rows = await this.prisma.examQuestion.findMany({
       where: { examId },

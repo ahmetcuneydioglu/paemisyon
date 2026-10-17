@@ -46,14 +46,24 @@ type SaveState = "saved" | "saving" | "failed";
  */
 /** Arşiv modunda tamamlanınca gösterilen yerinde sonuç (resmî /sonuc yok). */
 
+export type ExamKind = "live" | "archive" | "personal";
+const KIND_LABEL: Record<ExamKind, string> = {
+  live: "Türkiye geneli canlı deneme",
+  archive: "arşiv denemesi (sıralamasız)",
+  personal: "kişisel deneme (sıralamasız)",
+};
+
 export function ExamPlayer({
   start,
   archive = false,
+  kind,
 }: {
   start: StartPayload;
-  /** Arşiv denemesi: sıralamasız pratik — bitişte /sonuc yerine yerinde özet. */
+  /** Eski ad: arşiv/kişisel deneme (sıralamasız). `kind` verilmezse archive → "archive". */
   archive?: boolean;
+  kind?: ExamKind;
 }) {
+  const examKind: ExamKind = kind ?? (archive ? "archive" : "live");
   const router = useRouter();
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>(() =>
@@ -321,7 +331,7 @@ export function ExamPlayer({
 
   return (
     <FocusFrame
-      context={`${start.title} · ${archive ? "arşiv denemesi (sıralamasız)" : "Türkiye geneli canlı deneme"}`}
+      context={`${start.title} · ${KIND_LABEL[examKind]}`}
       progress={
         <span className="type-body-sm tabular text-ink-soft">
           {answeredCount}/{total} dolu

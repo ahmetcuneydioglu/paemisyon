@@ -19,7 +19,7 @@ import { APP_NAV_ITEMS, isNavItemActive } from "./navigation";
 export function Sidebar() {
   const pathname = usePathname();
   const item =
-    "tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-control px-1 text-[11px] font-semibold xl:min-h-0 xl:flex-row xl:justify-start xl:gap-3 xl:px-3 xl:py-2.5 xl:text-[14px]";
+    "tk-interactive relative flex min-h-11 items-center justify-center rounded-control px-1 text-[14px] font-semibold xl:min-h-0 xl:justify-start xl:gap-3 xl:px-3 xl:py-2.5";
 
   return (
     <aside className="sticky top-0 hidden h-dvh w-16 shrink-0 flex-col border-r border-line bg-surface md:flex xl:w-60">
@@ -123,7 +123,7 @@ export function Sidebar() {
             )}
           >
             <NavigationIcon name="logout" className="size-5 shrink-0" />
-            <span>Çıkış</span>
+            <span className="hidden xl:inline">Çıkış</span>
           </button>
         </form>
       </div>
@@ -144,10 +144,10 @@ function UtilityLink({
     <Link
       href={href}
       title={label}
-      className="tk-interactive relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-control text-center text-[10px] font-semibold text-ink-soft hover:bg-surface-alt hover:text-ink xl:min-h-0 xl:flex-row xl:justify-start xl:gap-3 xl:px-3 xl:py-2 xl:text-left xl:text-[13px]"
+      className="tk-interactive relative flex min-h-11 items-center justify-center rounded-control text-[13px] font-semibold text-ink-soft hover:bg-surface-alt hover:text-ink xl:min-h-0 xl:justify-start xl:gap-3 xl:px-3 xl:py-2 xl:text-left"
     >
       <NavigationIcon name={icon} className="size-5 shrink-0" />
-      <span className="max-w-full truncate xl:max-w-none">{label}</span>
+      <span className="hidden xl:inline">{label}</span>
       <LinkPendingIndicator />
     </Link>
   );

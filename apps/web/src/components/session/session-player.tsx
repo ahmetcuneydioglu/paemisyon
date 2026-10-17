@@ -1053,8 +1053,8 @@ function SessionResult({
     .sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
 
   return (
-    <FocusFrame context={scopeLabel ?? "Tur sonucu"} exitHref="/bugun">
-      <div className="grid gap-4 lg:grid-cols-2 lg:[&>*]:min-w-0">
+    <FocusFrame context={scopeLabel ?? "Tur sonucu"} exitHref="/bugun" wide>
+      <div className="grid items-start gap-4 lg:grid-cols-[1fr_1.2fr] lg:[&>*]:min-w-0">
         <div className="flex flex-col gap-4">
           <Card className="flex flex-col items-center gap-1 p-6 text-center">
             <span className="type-label text-ink-subtle">

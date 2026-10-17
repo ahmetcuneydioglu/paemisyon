@@ -236,3 +236,21 @@ dalların bekleyen commit'lerine dokunulmaz.
   bekliyor:** bu ekranlar girişli; paneldeki localhost:3012 sekmesinde oturum çerezi
   oluşmadı (POST /giris 303 dönüyor, ardından /bugun tekrar girişe atıyor — sebep
   araştırılacak; TopStrip bayat-manifest hatası sunucu yeniden başlatılarak giderildi).
+  **Canlı göz testi (18 Eki 2026, gerçek veri):** Kullanıcının Chrome'unda (Lukas hesabı)
+  Bugün, Kütüphane + koç rayı, ⌘K, koyu/açık geçişi, /tasarim, 3 soruluk koç turu (not
+  "kaydedildi" → `question_notes` satırı doğrulandı), tur sonucu, geçmiş deneme analizi.
+  Panelde geçici test hesabıyla (localhost, sonradan silindi) kişisel deneme: optik panel,
+  F bayrağı sunucuda (`quiz_answers.flagged` 2 satır), sayfa yenilenince geri geldi,
+  sonuçta "emin olmadığın sorular" kartı + inceleme rozetleri. **Bulgular ve düzeltmeler:**
+  (1) `GET /exams/attempts/:id` kişisel denemeyi "Katılım bulunamadı" ile reddediyordu —
+  main'de de var, canlıda kişisel deneme bitiren web kullanıcısı sonucunu göremiyordu;
+  API'de `personalExam` oturumları `questionOrder`'dan incelemeyle açıldı (`isPersonal`
+  alanı eklendi). (2) Oynatıcı başlığı kişisel denemede "arşiv denemesi" diyordu →
+  `kind` prop (live/archive/personal). (3) Sidebar ikon rayında (md–xl) etiketler 64 px'e
+  sığmıyordu → yalnız ikon + title. (4) Üst şerit bölge adı /tasarim'da "Bugün" düşüyordu
+  → bölge dışı yollarda boş. (5) Tur sonucu 65ch'e sıkışıyordu → `FocusFrame wide`; deneme
+  analizinde skor sütunu yapışkan. **Ortam notları:** prod API `localhost` kaynağına CORS
+  vermiyor (tarayıcı istekleri düşer) → önizleme bu dalın API'sine (:3005,
+  `connection_limit=4`) bağlandı; paneldeki giriş sorunu kullanıcının Chrome'da oturum
+  açmasından kaynaklanıyordu (panelde form girişi çalıştı). Uyarı: 657 DMK disiplin cezası
+  sorusu (eşlerin çocuklarının faaliyetini bildirmeme) DÖRT şıklı — Beş Şık Kuralı listesine.

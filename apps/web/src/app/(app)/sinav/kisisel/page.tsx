@@ -4,7 +4,10 @@ import { ExamPlayer, type StartPayload } from "@/components/exam/exam-player";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 
-export const metadata: Metadata = { title: "Kişisel Deneme", robots: { index: false } };
+export const metadata: Metadata = {
+  title: "Kişisel Deneme",
+  robots: { index: false },
+};
 export const dynamic = "force-dynamic";
 
 interface PersonalStart {
@@ -44,7 +47,11 @@ export default async function KisiselSinavPage({
   try {
     start = await api<PersonalStart>("/quiz/sessions", {
       method: "POST",
-      body: JSON.stringify({ mode: "exam", personalExam: true, questionCount: count }),
+      body: JSON.stringify({
+        mode: "exam",
+        personalExam: true,
+        questionCount: count,
+      }),
     });
   } catch (e) {
     if (e instanceof ApiError)
@@ -54,7 +61,8 @@ export default async function KisiselSinavPage({
 
   // Bitiş anı KALAN süreden kurulur: yarım kalan deneme kaldığı yerden devam
   // ederken süre ilk başlangıçtan sayılır — çıkıp girmek ek süre kazandırmaz.
-  const kalanSaniye = start.remainingSeconds ?? start.plannedDurationSeconds ?? 0;
+  const kalanSaniye =
+    start.remainingSeconds ?? start.plannedDurationSeconds ?? 0;
   const payload: StartPayload = {
     sessionId: start.sessionId,
     examId: "kisisel",
@@ -65,10 +73,16 @@ export default async function KisiselSinavPage({
     givenAnswers: start.givenAnswers ?? [],
   };
 
-  return <ExamPlayer start={payload} archive />;
+  return <ExamPlayer start={payload} kind="personal" />;
 }
 
-function PersonalBlocked({ message, code }: { message: string; code?: string }) {
+function PersonalBlocked({
+  message,
+  code,
+}: {
+  message: string;
+  code?: string;
+}) {
   // Günlük hak bitti: bu bir hata değil, planın sınırı. Ton da öyle olmalı —
   // uyarı üçgeni yerine kilit, "dön" yerine Premium'a giden asıl eylem.
   const hakBitti = code === "PERSONAL_EXAM_LIMIT";
@@ -81,10 +95,17 @@ function PersonalBlocked({ message, code }: { message: string; code?: string }) 
         <CardTitle className="mt-3 text-[17px]">
           {hakBitti ? "Bugünkü hakkını kullandın" : "Kişisel deneme açılamadı"}
         </CardTitle>
-        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">{message}</p>
+        <p className="mt-2 text-[14px] leading-relaxed text-ink-soft">
+          {message}
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
-          {hakBitti && <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>}
-          <ButtonLink href="/denemeler" variant={hakBitti ? "secondary" : "primary"}>
+          {hakBitti && (
+            <ButtonLink href="/premium">Premium&apos;a geç</ButtonLink>
+          )}
+          <ButtonLink
+            href="/denemeler"
+            variant={hakBitti ? "secondary" : "primary"}
+          >
             Denemelere dön
           </ButtonLink>
         </div>

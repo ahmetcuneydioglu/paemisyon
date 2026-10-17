@@ -103,6 +103,11 @@ export function isNavItemActive(item: NavItem, pathname: string): boolean {
   );
 }
 
+/** Yol bir bölgeye düşmüyorsa (ör. /tasarim) undefined — üst şerit o zaman ad basmaz. */
+export function findNavItem(pathname: string): NavItem | undefined {
+  return APP_NAV_ITEMS.find((item) => isNavItemActive(item, pathname));
+}
+
 export function activeNavItem(pathname: string): NavItem {
   return (
     APP_NAV_ITEMS.find((item) => isNavItemActive(item, pathname)) ??
