@@ -76,8 +76,9 @@
 
 /* Tipografi rolleri — Expo `AppText variant` ile aynı sekiz ad (Doc 49/05). */
 @utility type-display {
-  font: var(--type-display-weight)
-    var(--type-display-size)/var(--type-display-line) var(--font-display);
+  /* Dar ekranda token tavanının altına iner (64px telefonda taşar); tavan token. */
+  font: var(--type-display-weight) clamp(40px, 9vw, var(--type-display-size)) /
+    0.95 var(--font-display);
   letter-spacing: var(--type-display-tracking);
 }
 @utility type-title {

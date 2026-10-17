@@ -188,3 +188,20 @@ dalların bekleyen commit'lerine dokunulmaz.
   Bricolage) ve açık (`data-theme=light` → #F1EDE9); landing, `/denemeler`, `/kanun/2559…`
   açık miras kabukta okunur; typecheck, 80 vitest, tokens:check 0 hata. Girişli kabuk
   (Bugün vb.) W-C'de kullanıcı girişiyle bakılacak.
+- **W-B Bileşen kiti v3 (17 Eki 2026):** `components/ui` altında Expo adlarıyla 21 parça:
+  `Text` (8 rol × 9 ton, `as`), `Card` (surface/alt/accent), `Button`/`ButtonLink`
+  (primary/secondary/ghost/destructive; sm 36 · md 44 · lg 48; loading, leadingIcon;
+  `danger`/`atlas` v2 takma adları W-E'ye kadar), `IconButton` (44 px, zorunlu etiket),
+  `TextField` (etiket/hata/ipucu/trailing), `Notice` (4 ton), `Badge` (5 ton), `Chip`,
+  `ProgressBar`/`SegmentBar`/`WeekDots`, `ListRow` (href/onClick/statik), `StatTile`,
+  `EmptyState`, `Skeleton`, `SectionHeader`, `ActionBar` (dar ekranda yapışkan), `KeyHint`,
+  `Breadcrumb`, `Dialog` (yerel <dialog>: odak tuzağı/Esc/arka plan tarayıcıdan; dar ekranda
+  alttan sayfa), `Popover` (dış tıklama/Esc), `QuestionStem` + `QuestionOption` (6 durum,
+  ikon+renk, klavye ipucu, `radio` semantiği), `DataTable` (web'e özgü; `hideBelowMd`).
+  Barrel `components/ui/index.ts`; `lib/cn.ts`; ikonlar `lucide-react`. Eski `OptionRow`,
+  `GoalProgress`, `MasteryBar`, `SegmentedControl`, `CoachCard`… yerinde duruyor, W-D/W-E'de
+  bu kite iner. Galeri: `/(app)/(shell)/tasarim` — `/me` rolleri `admin|beta` değilse 404.
+  **Göz testi (önizleme :3012, geçici girişsiz rota ile, silindi):** koyu + açık, 375 px,
+  diyalog açılıp Esc ile kapanıyor, popover dış tıklamayla kapanıyor; tek düzeltme `type-display`
+  telefonda taşıyordu → `clamp(40px, 9vw, token)`. typecheck/eslint/80 vitest/tokens:check
+  (0 hata) yeşil. Girişli kabukta `/tasarim` kontrolü kullanıcı girişiyle.
