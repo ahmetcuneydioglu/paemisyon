@@ -320,4 +320,5 @@ dalların bekleyen commit'lerine dokunulmaz.
   (`x-vercel-mitigated: challenge` → 429); uygulama hatası değil, tarayıcıdan 200. CI: web
   işi `npm ci` aşamasında düşüyordu (macOS kilidinde `@emnapi/runtime` yok; push'tan önceki
   iki main koşusu da aynı sebeple kırmızıydı) → kilit `docker run node:22 npm install
-  --package-lock-only` ile yenilendi (bkz. A1 notu), ayrı commit, push onayı bekliyor.
+  --package-lock-only` ile yenilendi (bkz. A1 notu); 02270a5 main'de, CI beş iş yeşil
+  (web işi lint dahil ilk kez engelleyici modda geçti).
