@@ -134,3 +134,33 @@ Kapanış ölçütü: beta hesabında (Lukas) gerçek tarihle plan kuruldu, bir 
 başlayıp sayaç ilerledi, cron'la hafta kapanıp revizyon üretildi; Expo + web aynı brief'i
 çiziyor; CLAUDE.md kuralları (kural sunucuda, kaynak etiketi yok, tokens/kit) ihlalsiz.
 Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
+
+## 8. İlerleme
+
+- **Onay (18 Eki 2026):** plan ve §6 önerileri (Premium sınırı dahil) olduğu gibi onaylandı.
+  Dal `claude/f8a-planim`.
+- **P-A API (18 Eki 2026, 9439d54):** migration `20261018120000_study_plan_kind_exam_type`
+  (kalem türü `topic|review|mock`, `topic_id` NULL'a izin, `done_seconds` gerçek sayaç —
+  `done_minutes` türetilmiş; `study_plans.exam_type_id`, `horizon_weeks`). `plan.logic.ts`
+  saf: ufuk (tarih yoksa 12 hafta, tavan 26), evre haftanın son gününe göre, konu puanı =
+  bölüm ağırlığı × bölüm içi soru payı × (1,6 − mastery) (+%20 ≥5 yanlış), 20 dk taban /
+  90 dk tavan / konu en çok 2 hafta, bölüm dengeli yerleştirme, premium exam_mode %30 tekrar
+  + %20 deneme, taper yarı bütçe; 12 birim testi. `PlanService`: `GET /me/plan` (haftalar
+  `past|current|future`, ücretsizde gelecek haftalar kilitli ve kalemsiz, kapsam yüzdesi,
+  plan dışı soru sayısı, sıradaki kalem = oransal en geride), `GET /me/plan/defaults`,
+  `POST /me/plan` (önceki aktif plan arşivlenir; tarih `User.targetExamDate`'e de yazılır —
+  tek kaynak), `PATCH /me/plan` (bu hafta dahil yeniden üretim, bu haftanın sayaçları
+  devredilir), `DELETE /me/plan`. Kancalar: `submitAnswer` → mod'a göre kalem
+  (practice/daily → konu, review → tekrar, exam/deneme → deneme) atomik SQL ile sayaç +
+  `done` geçişi; okuyucu `POST /me/reading-progress` → kanunun konusu. Cron Pazartesi
+  04:40 TR (uygulama haftası 04:00'te döner, mastery fotoğrafı 04:30): geçen hafta kapanır
+  (`done`/`skipped`), premium planlar taşımayla yeniden üretilir, sınavı geçen plan
+  arşivlenir. Koç: `CoachContext.plan` / `CoachBrief.plan` (kompakt özet), `plan_week`
+  (öncelik 70, hedef dolunca 40, plan bitince yenileme daveti) ve `plan_offer` (plan yok +
+  onboarding + ≥10 soru; tempo düşüşünde 55) kartları; `hedefSinavTarihi` döngüsüz
+  `coach/hedef-sinav.ts`'e taşındı. API: 441 test yeşil, typecheck ve lint temiz.
+  **E2E bekliyor:** yerel API (:3005) prod pooler'a bağlı; migration henüz uygulanmadı
+  (`prisma migrate status`: 1 bekleyen). Betik hazır (`scratchpad/f8a-plan-e2e.mjs`:
+  geçici hesap → onboarding → plan kur → kalemden tur → sayaç → okuma → koç → revizyon →
+  arşiv → `DELETE /me`). Not: `todayTask`'ın plan kaleminden konu seçmesi P-A'da YAPILMADI
+  (görev motoru spec'i geniş; P-B/P-C ile birlikte ele alınacak).
