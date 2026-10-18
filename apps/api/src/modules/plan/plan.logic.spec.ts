@@ -1,4 +1,5 @@
 import {
+  dakikaDagit,
   haftaButcesi,
   haftaEvresi,
   haftaKapanisiTasimasi,
@@ -170,22 +171,21 @@ describe('plan.logic (Doc 49/12 F8-A)', () => {
     expect(ilk.size).toBeGreaterThanOrEqual(2);
   });
 
-  it('plan: taşınan dakika konunun payına eklenir', () => {
-    const inp = {
-      startWeek: W0,
-      examDate: null,
-      weeklyMinutes: 300,
-      topics: MUFREDAT,
-      isPremium: true,
-    };
-    const yok = planUret(inp);
-    const var_ = planUret({ ...inp, carryOver: new Map([['kabahat', 40]]) });
-    const dk = (d: typeof yok) =>
-      d.weeks
-        .flatMap((w) => w.items)
-        .filter((i) => i.topicId === 'kabahat')
-        .reduce((s, i) => s + i.targetMinutes, 0);
-    expect(dk(var_)).toBeGreaterThan(dk(yok));
+  it('taşınan dakika konunun payına eklenir ve bütçenin içinden gelir', () => {
+    const konular = [
+      { topicId: 'a', score: 0.5, ek: 0 },
+      { topicId: 'b', score: 0.3, ek: 0 },
+      { topicId: 'c', score: 0.2, ek: 0 },
+    ];
+    const yok = dakikaDagit(konular, 300, 1000);
+    const var_ = dakikaDagit(
+      konular.map((k) => (k.topicId === 'c' ? { ...k, ek: 40 } : k)),
+      300,
+      1000,
+    );
+    expect(var_.get('c')!).toBeGreaterThan(yok.get('c')!);
+    const toplam = (m: Map<string, number>) => [...m.values()].reduce((x, y) => x + y, 0);
+    expect(Math.abs(toplam(var_) - 300)).toBeLessThanOrEqual(10);
   });
 
   it('kalem bitti: soru VEYA dakika hedefi; sıfır hedef sayılmaz', () => {

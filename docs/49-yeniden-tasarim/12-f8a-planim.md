@@ -164,3 +164,19 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   geçici hesap → onboarding → plan kur → kalemden tur → sayaç → okuma → koç → revizyon →
   arşiv → `DELETE /me`). Not: `todayTask`'ın plan kaleminden konu seçmesi P-A'da YAPILMADI
   (görev motoru spec'i geniş; P-B/P-C ile birlikte ele alınacak).
+- **Migration prod'da + E2E (18 Eki 2026):** kullanıcı onayıyla `prisma migrate deploy`
+  yerelden (`connection_limit=1`) koşuldu; 50/50 migration uygulandı. E2E (`:3005`, geçici
+  hesap, PAEM, 300 dk/hafta, sınav +70 gün): plan 11 hafta (6 build, 4 exam_mode, 1 taper),
+  bu hafta 5 kalem, ücretsizde gelecek haftalar kilitli; kalemden başlatılan practice turunda
+  3 cevap (45 sn) → kalem `doneQuestions 3 / doneMinutes 2`; okuma 300 sn 201; koç brief'inde
+  `plan` ve `plan_week` kartı; `PATCH 600` → bu hafta 590 dk hedef, 3 soru korundu;
+  geçmiş tarih 400; arşiv → `{plan:null}`; `DELETE /me`. **Bulgu ve düzeltme:** ilk
+  dağıtım kapsamı %32'de bırakıyordu (büyük konular tavana çarpıyor, artan bütçe boşa
+  gidiyordu, küçük konular 20 dk tabanın altında düşüyordu) → **su doldurma** dağıtımı
+  (`dakikaDagit`: tavanı aşan kırpılır ve artan yeniden dağıtılır, taban altı en düşük
+  puandan düşer) + sığmayan parça en büyük boşluğa kırpılarak girer: gerçek müfredatta kapsam
+  %50, hafta doluluğu %97–100; taşınan dakika sabit haftalık bütçenin içinden gelir.
+  Haftalık revizyon cron'u stub Prisma ile 3 birim testiyle doğrulandı (kapanış, premium
+  yeniden üretim + taşıma + `revisedAt`, sınavı geçen plan arşivi). Not: `nextItem`
+  "oransal en geride" kuralıyla 3 cevaptan sonra başka konuya geçti — P-B/P-C'de
+  "başlanmış ama bitmemiş kalem önce" tercihi değerlendirilecek.

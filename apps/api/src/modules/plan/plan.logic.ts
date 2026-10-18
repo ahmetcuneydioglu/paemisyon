@@ -160,6 +160,57 @@ export function haftaButcesi(
   return isPremium ? { topic: 0, review: yarim, mock: 0 } : { topic: yarim, review: 0, mock: 0 };
 }
 
+/**
+ * Su doldurma: toplam dakika puan oranında dağıtılır; tavanı (2 × 90) aşanlar
+ * tavana kırpılır ve artan, kalanlara yeniden dağıtılır; tabanın (20) altında
+ * kalanlar düşer ve payları yine dağıtılır. Böylece bütçe boşa gitmez ve kapsam,
+ * bütçenin gerçekten izin verdiği kadar geniş olur. Deterministik.
+ */
+export function dakikaDagit(
+  konular: readonly { topicId: string; score: number; ek: number }[],
+  toplamDk: number,
+  tavan: number = KALEM_TAVAN_DK * KONU_EN_COK_HAFTA,
+): Map<string, number> {
+  let aktif = konular.filter((k) => k.score > 0);
+  const sonuc = new Map<string, number>();
+  // Taşınan dakika bütçenin İÇİNDEN gelir (haftalık süre sabittir): payı
+  // dağıtmadan önce düşülür, sonra konusuna eklenir.
+  let kalan = toplamDk - aktif.reduce((a, k) => a + k.ek, 0);
+  for (let tur = 0; tur < 100 && aktif.length > 0 && kalan > 0; tur++) {
+    const puanToplam = aktif.reduce((a, k) => a + k.score, 0);
+    const taslak = aktif.map((k) => ({ k, dk: Math.round((kalan * k.score) / puanToplam) + k.ek }));
+    const tavanAsan = taslak.filter((t) => t.dk > tavan);
+    const tabanAlti = taslak.filter((t) => t.dk < KALEM_TABAN_DK);
+    if (tavanAsan.length === 0 && tabanAlti.length === 0) {
+      for (const t of taslak) sonuc.set(t.k.topicId, Math.round(t.dk / 5) * 5);
+      return sonuc;
+    }
+    if (tavanAsan.length) {
+      for (const t of tavanAsan) {
+        sonuc.set(t.k.topicId, tavan);
+        kalan -= tavan - t.k.ek;
+      }
+      const sabit = new Set(tavanAsan.map((t) => t.k.topicId));
+      aktif = aktif.filter((k) => !sabit.has(k.topicId));
+      continue;
+    }
+    // Yalnız taban altı kalanlar var: en düşük puanlı yarısını düşür, yeniden dağıt
+    // (teker teker düşürmek onlarca tur sürer; yarı yarıya düşürmek aynı sonuca yakınsar).
+    const dusecek = [...tabanAlti]
+      .sort((a, b) => a.k.score - b.k.score || a.k.topicId.localeCompare(b.k.topicId))
+      .slice(0, Math.ceil(tabanAlti.length / 2))
+      .map((t) => t.k.topicId);
+    const dusen = new Set(dusecek);
+    aktif = aktif.filter((k) => !dusen.has(k.topicId));
+  }
+  // Son tur: kalan aktifler oranla alır.
+  const puanToplam = aktif.reduce((a, k) => a + k.score, 0);
+  for (const k of aktif) {
+    sonuc.set(k.topicId, Math.round(((kalan * k.score) / (puanToplam || 1) + k.ek) / 5) * 5);
+  }
+  return sonuc;
+}
+
 interface Parca {
   topicId: string;
   sectionId: string;
@@ -182,15 +233,26 @@ export function planUret(input: PlanInput): PlanDraft {
   const toplamKonuDk = butceler.reduce((a, b) => a + b.topic, 0);
 
   const puanlar = konuPuanlari(input.topics);
+  // Parça tavanı haftalık konu bütçesini aşamaz (60 dk/hafta planında 90 dk'lık kalem olmaz).
+  const parcaTavan = Math.max(
+    KALEM_TABAN_DK,
+    Math.min(KALEM_TAVAN_DK, Math.max(0, ...butceler.map((b) => b.topic))),
+  );
+  const dagilim = dakikaDagit(
+    puanlar.map((p) => ({
+      topicId: p.topicId,
+      score: p.score,
+      ek: input.carryOver?.get(p.topicId) ?? 0,
+    })),
+    toplamKonuDk,
+    parcaTavan * KONU_EN_COK_HAFTA,
+  );
   const parcalar: Parca[] = [];
-  let kapsananKonu = 0;
+  const yerlesenKonular = new Set<string>();
   for (const p of puanlar) {
-    let dk = Math.round(toplamKonuDk * p.score);
-    dk += input.carryOver?.get(p.topicId) ?? 0;
-    dk = Math.min(dk, KALEM_TAVAN_DK * KONU_EN_COK_HAFTA);
+    const dk = dagilim.get(p.topicId) ?? 0;
     if (dk < KALEM_TABAN_DK) continue;
-    kapsananKonu++;
-    if (dk > KALEM_TAVAN_DK) {
+    if (dk > parcaTavan) {
       const ilk = Math.ceil(dk / 2 / 5) * 5;
       parcalar.push({ ...p, dk: ilk }, { ...p, dk: dk - ilk });
     } else {
@@ -203,13 +265,13 @@ export function planUret(input: PlanInput): PlanDraft {
   const haftaBolumleri = butceler.map(() => new Map<string, number>());
   const kalemler: PlanItemDraft[][] = butceler.map(() => []);
 
-  for (const parca of parcalar) {
+  for (let parca of parcalar) {
     let secim = -1;
     let enIyi = Number.POSITIVE_INFINITY;
     for (let i = 0; i < haftalar.length; i++) {
       const kapasite = butceler[i].topic;
       if (kapasite <= 0 || haftaKonulari[i].has(parca.topicId)) continue;
-      if (yuk[i] + parca.dk > kapasite && yuk[i] > 0) continue;
+      if (yuk[i] + parca.dk > kapasite) continue;
       // Aynı bölüm o haftada varsa ceza: haftalar derse boğulmasın.
       const bolumSayisi = haftaBolumleri[i].get(parca.sectionId) ?? 0;
       const maliyet = yuk[i] / kapasite + bolumSayisi * 0.35 + i * 0.001;
@@ -218,8 +280,23 @@ export function planUret(input: PlanInput): PlanDraft {
         secim = i;
       }
     }
-    if (secim < 0) continue; // ufukta yer kalmadı — kapsam yüzdesi bunu yansıtır
+    if (secim < 0) {
+      // Bütün olarak sığmıyor: en büyük boşluğa kırpılarak girer (≥ taban), kalanı düşer.
+      let enBos = -1;
+      let bos = 0;
+      for (let i = 0; i < haftalar.length; i++) {
+        const kalan = butceler[i].topic - yuk[i];
+        if (!haftaKonulari[i].has(parca.topicId) && kalan > bos) {
+          bos = kalan;
+          enBos = i;
+        }
+      }
+      if (enBos < 0 || bos < KALEM_TABAN_DK) continue;
+      parca = { ...parca, dk: Math.floor(bos / 5) * 5 };
+      secim = enBos;
+    }
     yuk[secim] += parca.dk;
+    yerlesenKonular.add(parca.topicId);
     haftaKonulari[secim].add(parca.topicId);
     haftaBolumleri[secim].set(
       parca.sectionId,
@@ -257,9 +334,10 @@ export function planUret(input: PlanInput): PlanDraft {
   return {
     weeks,
     coverage: {
-      topics: kapsananKonu,
+      topics: yerlesenKonular.size,
       syllabusTopics,
-      pctOfSyllabus: syllabusTopics > 0 ? Math.round((kapsananKonu / syllabusTopics) * 100) : 0,
+      pctOfSyllabus:
+        syllabusTopics > 0 ? Math.round((yerlesenKonular.size / syllabusTopics) * 100) : 0,
     },
   };
 }
