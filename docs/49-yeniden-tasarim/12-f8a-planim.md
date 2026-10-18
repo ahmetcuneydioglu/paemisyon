@@ -256,3 +256,9 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   kırıyor ve kutunun dışına taşıyor (`TextField`/login, F8-A dışı). Kalan: kullanıcının
   telefonunda beta turu, Figma aynası, `kosullar` §5 kararı. Geçici hesaplar `DELETE /me`
   ile silindi; Lukas'ın planı gerçek tarihle duruyor.
+- **Deploy (18 Eki 2026, 20:19 TR):** `claude/f8a-planim` tek push'la `origin/main`'e
+  (e24d87c → 5532efd, 8 commit: P-A–P-D + 8e8d1f2 docs). CI 5532efd yeşil. Railway API
+  birkaç dakikada yeni rotaları servis etti (`/me/plan` 401, bilinmeyen rota 404 —
+  yani rota var). Vercel `dpl_G3Ep1cVF…` READY (fra1, build 41 sn). Canlı: Lukas'ın
+  hesabıyla `www.paemisyon.com/planim` gerçek planı çizdi (26 hafta, %89 kapsam, 2/600
+  soru, "Son yenileme 18 Ekim"). Mobil tarafı (Expo) sonraki beta build'iyle gider.
