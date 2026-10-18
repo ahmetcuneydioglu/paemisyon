@@ -341,3 +341,9 @@ dalların bekleyen commit'lerine dokunulmaz.
   tarama panelde axe-core 4.10.2 enjekte edilerek yapıldı. **Figma aynası:** Figma MCP yetki
   istiyor; aktarım bekliyor (kullanıcı yetkilendirince). Not: landing quizinde 7068 disiplin
   sorusu dört şıklı göründü (Beş Şık Kuralı listesi).
+- **Ara deploy 3 (18 Eki 2026, main e24d87c — W-G):** CI beş iş yeşil; Vercel READY (fra1,
+  ~40 sn). Canlı kontrol (panel, koyu): `--color-ink-subtle` #908880 servis ediliyor; landing
+  ve madde sayfasında axe (WCAG 2.1 AA) 0 ihlal — `label-content-name-mismatch` ve
+  `color-contrast` bulguları canlıda kapandı. F7'den kalan tek açık iş Figma aynası (MCP
+  yetkisi). F7 ölçütleri (§0): token kapısı strict yeşil, miras palet yok, public/app tüm
+  ekranlar v3, Lighthouse ≥95, axe 0 — **F7 kapanışa hazır**; kapanış kararı kullanıcının.
