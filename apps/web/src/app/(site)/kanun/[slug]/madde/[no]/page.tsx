@@ -189,7 +189,12 @@ export default async function MaddePage({ params }: { params: Params }) {
                   )}
                 >
                   m.{s.no}{" "}
-                  <span className="tabular text-ink-subtle">
+                  <span
+                    className={cn(
+                      "tabular",
+                      current ? "text-accent-ink" : "text-ink-subtle",
+                    )}
+                  >
                     ({s.questionCount})
                   </span>
                 </Link>

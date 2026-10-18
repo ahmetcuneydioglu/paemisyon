@@ -12,7 +12,7 @@ class NobetDark {
   static const Color surfaceAlt = Color(0xFF2C2830);
   static const Color ink = Color(0xFFF4EEE6);
   static const Color inkSoft = Color(0xFFA79F96);
-  static const Color inkSubtle = Color(0xFF7C746C);
+  static const Color inkSubtle = Color(0xFF908880);
   static const Color line = Color(0xFF34303A);
   static const Color accent = Color(0xFFE3804F);
   static const Color accentSoft = Color(0xFF3A281F);
@@ -37,7 +37,7 @@ class NobetLight {
   static const Color surfaceAlt = Color(0xFFE8E2DC);
   static const Color ink = Color(0xFF1F1C21);
   static const Color inkSoft = Color(0xFF6A6269);
-  static const Color inkSubtle = Color(0xFF8D858C);
+  static const Color inkSubtle = Color(0xFF6F676E);
   static const Color line = Color(0xFFDBD4CE);
   static const Color accent = Color(0xFFB5532E);
   static const Color accentSoft = Color(0xFFF8E1D4);

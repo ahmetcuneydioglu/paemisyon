@@ -322,3 +322,22 @@ dalların bekleyen commit'lerine dokunulmaz.
   iki main koşusu da aynı sebeple kırmızıydı) → kilit `docker run node:22 npm install
   --package-lock-only` ile yenilendi (bkz. A1 notu); 02270a5 main'de, CI beş iş yeşil
   (web işi lint dahil ilk kez engelleyici modda geçti).
+- **W-G Doğrulama (18 Eki 2026):** **Lighthouse (canlı, mobil):** landing perf 95–96 /
+  a11y 96 / BP 100 / SEO 100, LCP 2,5 s, CLS 0 (ilk soğuk koşu 81 / LCP 4,4 s — ISR
+  tazeleme + TTFB 1,1 s; ikinci ve üçüncü koşu 160–700 ms TTFB); kanun sayfası 97/96/100/100,
+  LCP 2,3 s. **axe (WCAG 2.1 AA, panelde 9 sayfa, koyu+açık):** iki bulgu türü: (1)
+  `color-contrast` — `inkSubtle` token'ı küçük etikette 3,5:1'de kalıyordu (rol notu "yalnız
+  24 px+" diyordu ama web 126 yerde `type-label` ile kullanıyor; Expo'da da 4 kullanım) →
+  **token düzeltildi:** koyu #7C746C→#908880, açık #8D858C→#6F676E; kontrast çiftleri
+  bg/surface için `text` (≥4,5), surfaceAlt için `large`; 41 test yeşil, build/ yenilendi
+  (css/ts/dart — Expo da alır). Kalan tek istisna madde sayfasında seçili çipin sayacı
+  (accent-soft zemin) → `text-accent-ink`. (2) `label-content-name-mismatch` —
+  `QuestionOption` erişilebilir adı "A şıkkı, …" görünen "A …" metnini içermiyordu →
+  `"A <metin>, durum"`. Sonuç: 9 sayfada 0 ihlal. **Klavye:** landing'de sekme sırası
+  başlık → tema → giriş/kayıt → quiz şıkları; odak halkası `focus-ring` görünür (outline
+  solid, #F2A47C); Enter ile şık cevaplanıyor. **reduced-motion:** tokens.css hareket
+  sürelerini 0'a çeker, lider tablosu animasyonları kapanır; `animate-spin/pulse` yalnız
+  yükleme göstergelerinde (7 yer). axe CLI chromedriver uyumsuzluğundan (Chrome 155) çalışmadı;
+  tarama panelde axe-core 4.10.2 enjekte edilerek yapıldı. **Figma aynası:** Figma MCP yetki
+  istiyor; aktarım bekliyor (kullanıcı yetkilendirince). Not: landing quizinde 7068 disiplin
+  sorusu dört şıklı göründü (Beş Şık Kuralı listesi).

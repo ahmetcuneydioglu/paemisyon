@@ -130,7 +130,9 @@ export function QuestionOption({
       type="button"
       role={interactive ? "radio" : undefined}
       aria-checked={interactive ? state === "selected" : undefined}
-      aria-label={`${label} şıkkı, ${text}${a11y[state] ? `, ${a11y[state]}` : ""}`}
+      // Görünen metin ("A Lüksemburg") erişilebilir adın İÇİNDE olmalı (WCAG 2.5.3,
+      // axe label-content-name-mismatch); durum sona eklenir.
+      aria-label={`${label} ${text}${a11y[state] ? `, ${a11y[state]}` : ""}`}
       disabled={!interactive}
       onClick={onSelect}
       className={cn(
