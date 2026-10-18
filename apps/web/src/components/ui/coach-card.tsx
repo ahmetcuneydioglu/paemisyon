@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   ArrowRight,
   BarChart3,
+  CalendarDays,
   Flame,
   Hand,
   Medal,
@@ -21,6 +22,8 @@ const typeIcon: Record<string, LucideIcon> = {
   exam_result: Trophy,
   badge_progress: Medal,
   comeback: Hand,
+  plan_week: CalendarDays,
+  plan_offer: CalendarDays,
 };
 
 /**

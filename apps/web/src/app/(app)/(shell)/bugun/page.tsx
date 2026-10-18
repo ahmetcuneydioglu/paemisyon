@@ -23,6 +23,7 @@ import { StreakBadge } from "@/components/ui/streak-badge";
 import { FocusPicker } from "@/components/bugun/focus-picker";
 import { ExamBanner, bannerExam } from "@/components/exam-banner";
 import { PushOptIn } from "@/components/push-opt-in";
+import { PlanWeekCard } from "@/components/plan/plan-week-card";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -43,7 +44,9 @@ export default async function BugunPage() {
     api<ActivityDay[]>("/progress/activity").catch(() => [] as ActivityDay[]),
   ]);
   const { today, gamification, greeting } = brief;
-  const [hero, ...cards] = brief.cards;
+  // Plan kartları kendi bileşeniyle çizilir (PlanWeekCard); koç listesine girmez.
+  const planOffer = brief.cards.some((c) => c.type === "plan_offer");
+  const [hero, ...cards] = brief.cards.filter((c) => c.type !== "plan_week" && c.type !== "plan_offer");
   const rank = gamification.rank;
   const rankPct =
     rank?.next != null
@@ -103,6 +106,9 @@ export default async function BugunPage() {
               <FocusPicker />
             </div>
           </Card>
+
+          {/* Haftalık plan (Doc 49/12 F8-A): özet sunucudan; plan yoksa koçun daveti varsa kart. */}
+          {hero?.type !== "comeback" ? <PlanWeekCard plan={brief.plan} offer={planOffer} /> : null}
 
           {cards.length > 0 ? (
             <div className="grid gap-3 sm:grid-cols-2">

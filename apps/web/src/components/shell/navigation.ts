@@ -36,9 +36,10 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/bugun",
     label: "Bugün",
     icon: "today",
-    also: ["/liderlik"],
+    also: ["/liderlik", "/planim"],
     children: [
       { href: "/bugun", label: "Bugünün planı" },
+      { href: "/planim", label: "Haftalık plan" },
       { href: "/liderlik", label: "Liderlik tablosu" },
     ],
   },

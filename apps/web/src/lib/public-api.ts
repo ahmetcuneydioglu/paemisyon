@@ -456,4 +456,81 @@ export interface CoachBrief {
   };
   /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi (%). */
   weeklyPhoto?: { courseName: string; deltaPct: number }[];
+  /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */
+  plan?: PlanBrief | null;
+}
+
+// ── Haftalık plan (Doc 49/12 F8-A; API: plan.service.ts) — karar sunucuda ──
+export type PlanPhase = "build" | "exam_mode" | "taper";
+export type PlanItemKind = "topic" | "review" | "mock";
+export type PlanItemStatus = "pending" | "done" | "skipped";
+export interface PlanItem {
+  id: string;
+  kind: PlanItemKind;
+  topicId: string | null;
+  topicName: string | null;
+  courseName: string | null;
+  targetMinutes: number;
+  targetQuestions: number;
+  doneMinutes: number;
+  doneQuestions: number;
+  remainingMinutes: number;
+  status: PlanItemStatus;
+}
+export interface PlanSummary {
+  targetMinutes: number;
+  doneMinutes: number;
+  targetQuestions: number;
+  doneQuestions: number;
+  pct: number;
+}
+export interface PlanWeek {
+  weekStart: string;
+  phase: PlanPhase;
+  state: "past" | "current" | "future";
+  /** Ücretsiz planda gelecek haftalar kilitli: kalem listesi boş gelir. */
+  locked: boolean;
+  summary: PlanSummary;
+  itemCount: number;
+  items: PlanItem[];
+}
+export interface Plan {
+  id: string;
+  examDate: string | null;
+  examTypeId: string | null;
+  weeklyMinutes: number;
+  horizonWeeks: number;
+  createdAt: string;
+  revisedAt: string | null;
+  currentWeekStart: string;
+  phase: PlanPhase;
+  ended: boolean;
+  coverage: { topics: number; syllabusTopics: number; pctOfSyllabus: number };
+  thisWeek: PlanWeek & { summary: PlanSummary & { offPlanQuestions: number } };
+  weeks: PlanWeek[];
+  nextItem: PlanItem | null;
+  premiumLocked: boolean;
+  suggestions: ("exam_date" | "premium")[];
+}
+export interface PlanBrief {
+  exists: true;
+  phase: PlanPhase;
+  weekStart: string;
+  summary: PlanSummary;
+  nextItem: {
+    id: string;
+    kind: PlanItemKind;
+    topicId: string | null;
+    topicName: string | null;
+    remainingMinutes: number;
+  } | null;
+  ended: boolean;
+}
+export interface PlanDefaults {
+  examTypeId: string | null;
+  examTypeName: string | null;
+  examDate: string | null;
+  examDateSource: "personal" | "official" | null;
+  suggestedWeeklyMinutes: number;
+  dailyMinutes: number | null;
 }

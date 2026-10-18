@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, RotateCcw, Scale, Star } from "lucide-react";
+import { ArrowRight, CalendarDays, RotateCcw, Scale, Star } from "lucide-react";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
@@ -79,6 +79,12 @@ export default async function KutuphanePage({
 
   const gates = [
     {
+      href: "/planim",
+      icon: CalendarDays,
+      title: "Haftalık planım",
+      body: "Bu haftanın kalemleri ve sınava kadar dağılım.",
+    },
+    {
       href: "/kanunlar",
       icon: Scale,
       title: "Mevzuat — Madde Atlası",
@@ -130,7 +136,7 @@ export default async function KutuphanePage({
           ) : null}
         </div>
 
-        <div className="mb-6 grid gap-3 lg:grid-cols-3">
+        <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {gates.map(({ href, icon: Icon, title, body }) => (
             <Link
               key={href}

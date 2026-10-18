@@ -203,3 +203,26 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   paste izni iletişim kutusu ilk seferde. Kalan: iPhone SE/16 Pro Max turu ve kullanıcının
   telefonunda beta turu (P-D), Ayarlar satırının ekran görüntüsü, `todayTask` plan kalemi
   tercihi (P-C ile).
+- **P-C Web (18 Eki 2026):** `lib/public-api.ts` Plan tipleri (+ `CoachBrief.plan`),
+  `lib/plan.ts` (evre/kalem/süre/tarih sözlükleri; kalemden tur bağlantısı: konu →
+  `/seans?topicId&count=5–20&scope&n`, tekrar → `/seans?mode=review`, deneme → `/denemeler`),
+  `components/plan/PlanWeekCard` (Bugün: hero'nun altında; plan yoksa sunucunun `plan_offer`
+  kartı varsa davet → `/planim?kur=1`; `plan_week`/`plan_offer` koç kartları listeden
+  süzülür, ikon haritasına `CalendarDays` eklendi), `components/plan/plan-dialog.tsx`
+  (`PlanDialogButton` kur/yenile: süre çipleri + GG.AA.YYYY tarih + "belli değil";
+  başarıda `autoOpen` ise `/planim`'e `replace`, değilse `refresh` — ikisi birden eski boş
+  durumu gösteriyordu; `PlanArchiveButton` onaylı kaldırma), `(shell)/planim/page.tsx`
+  (force-dynamic; boş durum + kur diyaloğu `?kur=1`'le açılır; başlıkta evre rozeti,
+  yenile/kaldır; sınav tarihi yok / plan bitti uyarıları; "Bu hafta" kartı yüzde + çubuk +
+  tür dökümü; hafta şeridi `?hafta=` bağlantılı — geçmiş soluk, kilitli kilit ikonlu —;
+  seçili haftanın kalemleri `ListRow` (bu hafta ve bitmemişse tıklanır, sağda kalan/ilerleme);
+  kilitli haftada Premium kapısı → `/premium`; sağ sütun `StatTile` hafta/kapsam + plan
+  ayrıntıları). Navigasyon: Bugün altına "Haftalık plan" çocuk bağlantısı (`also: /planim`),
+  Kütüphane'de ilk kapı "Haftalık planım" (`CalendarDays`; ızgara `lg:grid-cols-4`).
+  **Doğrulama:** `tsc` 0, eslint 0, `tokens-check` 209 dosya/0 hata, vitest 80/80.
+  **Göz testi (pane, :3012 → yerel API :3005, geçici hesap, koyu tema):** boş durum → kur
+  (2 sa 30 dk) → Bugün kartı → Planım (masaüstü ve 375 px); yenile diyaloğu 5 sa → sayfa
+  "5 sa / 300 soru" ile tazelendi; Kütüphane kapısı; mobilde yatay taşma vardı — kalem
+  satırının sağ sütunu ve hafta şeridi (`min-w-0`) ile kapandı (`scrollWidth` = 375).
+  Geçici hesap `DELETE /me` ile silindi (auth kaydı da gitti). Kalan: canlı doğrulama,
+  `todayTask` plan kalemi tercihi ve `nextItem` "başlanmış önce" kuralı (P-D).
