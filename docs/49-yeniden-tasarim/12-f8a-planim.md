@@ -1,0 +1,136 @@
+# Doc 49/12 — F8-A "Planım": geri sayımlı haftalık çalışma planı
+
+Durum: **plan, onay bekliyor** (18 Eki 2026). Kaynaklar: `00-plan.md` F8 satırı (sıra: haftalık
+plan → aralıklı tekrar → deneme serisi → mevzuat↔soru), `01-denetim.md` §4 satır 10 ("günlük süre
+girdisi kullanılmıyor; haftalık plan yok; gün kaçırınca yeniden planlama yok"), `10-s1-veri-katmani.md`
+§1.6 (`study_plans` / `study_plan_items` şeması ve `GET /me/plan` iskeleti canlıda), Doc 24 §11
+(premium anı: "sana haftalık plan çıkarayım mı?"), Doc 24 §13 (üç soru), Doc 25 §3 (koç durum
+makinesi: `exam_mode` son 30 gün, `taper` son 3 gün).
+
+## 0. Amaç ve üç soru
+
+Aday "bugün ne çalışayım" sorusunu her gün yeniden sormasın; sınava kalan haftalar, haftalık
+ayırabildiği süre ve zayıf konuları tek bir takvime dönüşsün. Koç bugüne kadar **günü**
+yönetiyordu (görev motoru); Planım **haftaları** yönetir ve günün görevine kaynak olur.
+
+| Doc 24 §13 sorusu | Cevap |
+|---|---|
+| Net'ini artırıyor mu? | Süre, sınav ağırlığı ve zayıflığa göre dağıtılan konu hedefleri; sınava 30 gün kala yeni konu durur, tekrar/deneme ağırlık kazanır. |
+| Her gün dönmesini sağlıyor mu? | Haftalık ilerleme halkası Bugün'de; eksik kalan hafta cezalandırılmadan sonraki haftalara yayılır (comeback diliyle). |
+| Güvenini büyütüyor mu? | "Sınava kadar müfredatın %x'ini bitireceksin" cümlesi rakamla; plan koçun sözü, istemci kural bilmez (CLAUDE.md). |
+
+## 1. Girdiler
+
+- **Sınav tarihi:** `hedefSinavTarihi(kişisel, resmî)` (koçla aynı önceliklendirme). Tarih
+  yoksa plan **12 haftalık yuvarlanan** ufukla kurulur ve ekranda "tarih girersen sınava göre
+  ayarlarım" ucu durur.
+- **Haftalık süre:** plan kurulurken kullanıcı seçer (1–14 saat/hafta, 30 dk adım); ön değer
+  `User.dailyMinutes × 5` (onboarding'deki günlük dakika — S1-D), yoksa `dailyGoal`
+  10/20/40 soru → 15/30/60 dk × 5. Böylece denetimde "kullanılmıyor" denen girdi işe koşulur.
+- **Müfredat ve ağırlık:** hedef sınav türünün `ExamSection.weightPercent` → `ExamSectionCourse`
+  → ders → yaprak konular (`Topic`, silinmemiş, yayımlı sorusu olan). Konu payı = ders payı ×
+  (konunun yayımlı soru sayısı / dersin toplamı).
+- **Kullanıcı durumu:** `UserTopicProgress` (çözülen, doğru, mastery), çözülmemiş yanlış sayısı,
+  SRS `question_reviews` vadesi (varsa; S1-A canlıda).
+- **Premium:** `isPremium` (bkz. §6 karar).
+
+## 2. Üretim algoritması (saf fonksiyon, `plan.logic.ts`, birim testli)
+
+1. **Ufuk:** `haftaBasi(bugün)`'den sınav haftasına kadar (üst sınır 26 hafta; tarih yoksa 12).
+   Her hafta bir **evre** alır: `build` (sınava >30 gün), `exam_mode` (≤30 gün), `taper`
+   (son 3 günü içeren hafta). Evre, haftanın son günüyle belirlenir.
+2. **Haftalık bütçe:** `weeklyMinutes`. `exam_mode`'da %50'si tekrar+deneme kalemine ayrılır
+   (`topicId` yerine `kind: 'review' | 'mock'`; şema için §4), `taper`'da bütçe yarıya iner ve
+   yalnız tekrar kalır.
+3. **Konu puanı:** `puan = bölümPayı × konuPayı × ihtiyaç`, `ihtiyaç = 1.6 − mastery`
+   (hiç çözülmemiş konu `mastery=0` → 1.6; %90 ustalık → 0.7). Yanlış sayısı ≥5 olan konuya
+   +%20. Puanlar normalize edilir; `build` evresinde toplam bütçe haftalara eşit, konular
+   puan oranında dakika alır.
+4. **Yerleştirme:** konular puan sırasıyla, **her hafta her bölümden en az bir konu** gelecek
+   şekilde dönüşümlü dağıtılır (adayın haftası tek derse boğulmaz). Kalem alt sınırı 20 dk;
+   altına düşen konular birleşik "karışık tekrar" kalemine girer. Bir konu, puanı büyükse
+   iki haftada tekrar gelebilir (ilk geçiş + pekiştirme), üçüncü kez gelmez.
+5. **Soru hedefi:** `targetQuestions = round5(targetMinutes / 1.0)` (ortalama cevap ~60 sn;
+   `timeSpentMs` ortalaması kullanıcıda varsa onunla; 30–120 sn aralığına kırpılır).
+6. **Çıktı:** `{ weeks: [{ weekStart, phase, items: [{topicId|kind, targetMinutes,
+   targetQuestions}] }], coverage: { topics, pctOfSyllabus } }`. Deterministik: aynı girdi aynı
+   plan (test edilebilirlik; rastgelelik yok).
+
+## 3. İlerleme ve revizyon
+
+- **Sayaçlar:** `QuizService.submitAnswer` (practice/daily/review/due modları) cevabın
+  konusunu bulur; o haftanın eşleşen kalemine `doneQuestions += 1`, `doneMinutes +=
+  min(timeSpent, 10 dk)`. Eşleşen kalem yoksa haftanın "serbest" sayaçlarına yazılır (plan
+  özetinde "plan dışı 12 soru" dürüstçe görünür). Okuyucu ilerlemesi (`seconds`) kanun →
+  konu eşlemesiyle `doneMinutes`'e. `exam_mode`'daki `review`/`mock` kalemleri sırasıyla
+  SRS/yanlış turları ve deneme katılımıyla dolar.
+- **Durum:** kalem `done` = soru VEYA dakika hedefinin ≥%100'ü; hafta geçince `pending`
+  kalanlar `skipped` olur, **eksik dakika** sonraki haftaya %50 ile taşınır (tamamı
+  taşınsaydı iki kaçırılan hafta üçüncüyü ezerdi).
+- **Haftalık revizyon (cron, Pazartesi 03:00 TR, `connection_limit=1` kuralıyla ayrı
+  işlem):** geçen haftayı kapatır, taze mastery ile **gelecek haftaları yeniden üretir**
+  (geçmiş haftalar değişmez — kullanıcı tarihçesini görür). `revisedAt` güncellenir.
+- **Anında revizyon:** sınav tarihi, haftalık süre veya hedef sınav türü değişince gelecek
+  haftalar yeniden üretilir (`PATCH /me/plan`). 7+ gün hiç aktivite yoksa koçun `comeback`
+  kartı planı da yumuşatır: bir sonraki haftanın bütçesi %60'a iner.
+
+## 4. Veri ve uçlar
+
+- **Şema eki (migration):** `study_plan_items.kind` enum `topic|review|mock` (varsayılan
+  `topic`), `topic_id` NULL'a izin (review/mock için), `study_plans.exam_type_id`,
+  `study_plans.horizon_weeks`; `study_plans.status` `active|archived` kalır. Geriye uyumlu,
+  eklemeli (S1 kuralı).
+- `GET /me/plan` (var) → zenginleşir: `plan.phase`, `plan.coverage`, `plan.thisWeek.summary
+  { targetMinutes, doneMinutes, targetQuestions, doneQuestions, offPlanQuestions }`,
+  `plan.weeks[]` (hafta özetleri), `plan.suggestions` (tarih yoksa "tarih gir").
+- `POST /me/plan { weeklyMinutes, examDate? }` → aktif planı arşivler, yenisini üretir
+  (idempotent değil; istemci onay sorar). `PATCH /me/plan { weeklyMinutes?, examDate? }`
+  → gelecek haftaları yeniden üretir. `DELETE /me/plan` → arşivler.
+- `POST /quiz/sessions { mode:'practice', topicId, planItemId }` → tur kalemden başlar;
+  `planItemId` yalnız izleme amaçlı (sunucu konuyu kalemden doğrular).
+- **Koç brief'i (eklemeli):** `plan: { exists, thisWeek: summary, nextItem: {topicName,
+  remainingMinutes}, phase } | null`; yeni kart `plan_week` (hafta %x, "sıradaki: CMK 35 dk")
+  ve plan yoksa `plan_offer` kartı (`slump_watch` ve `onboarding` sonrası; Doc 24 §11
+  anı). Görev motoru (`computeTodayTask`) plan varsa önce bu haftanın en geride kalemini
+  önerir (reçete değişmez, yalnız konu seçimi plandan gelir).
+- Sunucu kuralı: istemciler evre/eşik bilmez; her metin ve yüzde brief'ten gelir.
+
+## 5. İstemci
+
+- **Expo (`apps/app`):** Bugün'e `PlanWeekCard` (halka + sıradaki kalem + "Planım" ucu);
+  yeni rota `app/planim.tsx` (hafta şeridi `WeekDots`/`SegmentBar`, bu haftanın kalemleri
+  `ListRow` + ilerleme, "başlat" → `seans`), `planim/kur.tsx` sheet (haftalık süre seçici
+  `SegmentedControl`, tarih `Chip`, özet cümle "sınava kadar müfredatın %x'i"); Ayarlar'da
+  "Planı yenile / kaldır". Onboarding sonunda "plan kurayım mı?" adımı (atlanabilir).
+- **Web (`apps/web`):** `/bugun`'e aynı kart (kit: `Card`, `ProgressBar`, `ListRow`);
+  `/planim` L2 sayfası (`PageIntro`, hafta tablosu `DataTable`, kalemler, kur/yenile
+  `Dialog`). Kütüphane ana sayfasına "Planım" kapısı. Kaynak etiketi hiçbir yerde yok.
+- Boş durumlar: plan yok (kur), tarih yok (yuvarlanan ufuk uyarısı), hafta bitti (özet +
+  sonraki hafta), sınav geçti (plan arşivlenir, "yeni dönem" önerisi).
+
+## 6. Açık kararlar (onayla birlikte)
+
+1. **Premium sınırı.** Doc 24 §11 tablosu "zayıf konu planı"nı premiumda sayıyor. Öneri:
+   plan kurma ve bu haftanın görünümü **herkese** (alışkanlık = her gün dönme); **gelecek
+   haftalar, otomatik haftalık revizyon ve exam_mode tekrar/deneme kalemleri Premium**.
+   Ücretsizde plan yalnız kurulduğu gün üretilir ve ileri haftalar bulanık/kilitli görünür.
+2. **Haftanın başı Pazartesi (UTC gün)** — S1-E iskeletiyle aynı; vardiya düzeni (Doc 24 §13
+   "vardiyaya duyarlı koç") bu belgede YOK, ayrı özellik.
+3. **Deneme kalemi** canlı deneme takvimine bağlanmaz (F8-C deneme serisinde); şimdilik
+   kişisel deneme sayılır.
+4. **Cron yeri:** Railway'deki mevcut zamanlayıcı altyapısı (haftalık rapor cron'u gibi)
+   kullanılır; yoksa `@nestjs/schedule`.
+
+## 7. İş paketleri ve kapanış
+
+| Paket | İş | Süre |
+|---|---|---|
+| P-A API | migration, `plan.logic.ts` (üretim/revizyon, 20+ birim testi), uçlar, `submitAnswer` + okuyucu kancaları, cron, koç kartları | 2 gün |
+| P-B Expo | PlanWeekCard, `/planim`, kur sheet, onboarding adımı, Ayarlar | 1,5 gün |
+| P-C Web | `/bugun` kartı, `/planim`, Kütüphane kapısı | 1 gün |
+| P-D Doğrulama | geçici hesapla E2E (kur → tur → sayaç → hafta kapat → revizyon), beta hesabında gerçek plan, docs | 0,5 gün |
+
+Kapanış ölçütü: beta hesabında (Lukas) gerçek tarihle plan kuruldu, bir tur plan kaleminden
+başlayıp sayaç ilerledi, cron'la hafta kapanıp revizyon üretildi; Expo + web aynı brief'i
+çiziyor; CLAUDE.md kuralları (kural sunucuda, kaynak etiketi yok, tokens/kit) ihlalsiz.
+Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
