@@ -262,3 +262,10 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   yani rota var). Vercel `dpl_G3Ep1cVF…` READY (fra1, build 41 sn). Canlı: Lukas'ın
   hesabıyla `www.paemisyon.com/planim` gerçek planı çizdi (26 hafta, %89 kapsam, 2/600
   soru, "Son yenileme 18 Ekim"). Mobil tarafı (Expo) sonraki beta build'iyle gider.
+- **Kalanlar turu (18 Eki 2026, akşam):** SE giriş alanı bulgusu kapandı — kök neden
+  `TextField`'daki `type.body` `lineHeight` paragraf stili: iOS'ta alan odak dışına çıkınca
+  uzun tek satır metin sarıp kutunun dışına taşıyordu; `multiline={false}` /
+  `numberOfLines={1}` çare olmadı, `lineHeight: undefined` ile metin tek satırda üç noktayla
+  kesiliyor (SE'de doğrulandı). Mobil beta build (EAS production, iOS) Claude tarafından
+  BAŞLATILAMADI (otomatik mod sınıflandırıcısı production deploy'u reddetti) — komut
+  kullanıcıya bırakıldı. Figma aynası: Figma MCP yetkisi yok, bekliyor.
