@@ -109,6 +109,11 @@ export class UsersService {
         preferredModuleId: null,
       },
     });
+    // Haftalık plan cron'u silinmiş hesabı dolaşmasın (F8-A P-D).
+    await this.prisma.studyPlan.updateMany({
+      where: { userId: user.id, status: 'active' },
+      data: { status: 'archived' },
+    });
     // Cihaz-dışı erişim kalmasın: entitlement kapat.
     await this.prisma.entitlement.updateMany({
       where: { userId: user.id },

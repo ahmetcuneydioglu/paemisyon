@@ -201,6 +201,7 @@ export class CoachService {
         focus: ctx.home.focus,
         readiness: ctx.home.readiness,
         strongestTopic: ctx.home.strongestTopic,
+        plan: ctx.plan ? { nextItem: ctx.plan.nextItem } : null,
       }),
     };
   }

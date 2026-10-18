@@ -226,3 +226,33 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   satırının sağ sütunu ve hafta şeridi (`min-w-0`) ile kapandı (`scrollWidth` = 375).
   Geçici hesap `DELETE /me` ile silindi (auth kaydı da gitti). Kalan: canlı doğrulama,
   `todayTask` plan kalemi tercihi ve `nextItem` "başlanmış önce" kuralı (P-D).
+- **P-D Doğrulama (18 Eki 2026):** **Beta hesabı (Lukas, Chrome'da :3012 → yerel API :3005,
+  prod DB):** `/planim?kur=1` varsayılanlarla kuruldu — 5 sa/hafta, hedef tarih 12.06.2027
+  (hesaptaki gerçek tarih) → 26 hafta, kapsam %89 (59/66 konu), bu hafta 4 kalem, plan dışı
+  30 soru. Genel Kültür kaleminden tur açıldı (`/seans?topicId…count=20`), 2 cevap → Planım
+  "2 / 600 soru"; Bugün plan kartında "Sıradaki: Genel Kültür" (başlanmış önce). **Cron
+  gerçek koşu** (`scripts/plan-revizyon-kos.ts`, connection_limit=1): kuru koşu 3 aktif plan
+  gösterdi — ikisi SİLİNMİŞ geçici hesaplara aitti (hesap silme PII anonimleştirir, satırı
+  silmez; plan aktif kalıyordu). Düzeltme: cron `user.status = deleted` planı arşivler,
+  `deleteAccount` aktif planı arşivler (spec'ler güncellendi). Gerçek koşu: `{kapanan:0,
+  yenilenen:0, arsivlenen:2}`. Ardından `--now=2026-10-19T02:00Z` (Pazartesi 05:00 TR)
+  ile hafta kapanışı: `{kapanan:4}` — Planım'da 4 kalem "Geçti"; "Planı yenile" (PATCH)
+  ile hafta yeniden üretildi, sayaçlar devredildi (2 soru korundu), "Son yenileme 18 Ekim".
+  **Karar — sıradaki kalem:** başlanmış ama bitmemiş kalem önce gelir (ilerlemesi en yüksek
+  olan); hiçbiri başlanmamışsa oransal en geride. Kalem sıralaması `id` ile kararlı hale
+  getirildi (eşit hedefli kalemler her istekte yer değiştiriyordu). **Karar — Bugün
+  görevi:** kullanıcı odak seçmediyse (koç) ve planın sıradaki kalemi KONU ise bugünün turu
+  o konudan açılır ("Planında bu hafta: X. N dk kaldı."); seçilen odak plana baskındır;
+  tekrar/deneme kalemleri Bugün'deki plan kartından başlar (4 yeni spec). API 449 test.
+  **Simülatör turu (iPhone SE 3. nesil 375×667 ve iPhone 17 Pro Max 440×956 — 16 Pro Max
+  kurulu değil; geçici hesap, dev client + Metro :8082 → :3005):** giriş, Kütüphane,
+  `/planim?kur=1` sheet (SE'de sığıyor, buton sabit), plan kur, Planım (hafta şeridi,
+  kalemler, Plan kartı, kaldır onayı), Bugün plan kartı (iki boyda), kaldır → boş durum.
+  **Bulgu + düzeltme:** başka cihazda kurulan plan uygulamayı öne alınca görünmüyordu —
+  React Native'de React Query'nin odak yöneticisi bağlı değildi; `lib/query.ts` AppState'i
+  `focusManager`'a bağladı (staleTime 30 sn sonrası ön plana dönüşte tazeleme). Doğrulandı:
+  Pro Max arka planda, SE'de plan kaldırıldı, Pro Max öne alınınca kart kalktı.
+  **Bulgu (kapsam dışı, not):** SE'de giriş ekranı e-posta alanı uzun adreste satır
+  kırıyor ve kutunun dışına taşıyor (`TextField`/login, F8-A dışı). Kalan: kullanıcının
+  telefonunda beta turu, Figma aynası, `kosullar` §5 kararı. Geçici hesaplar `DELETE /me`
+  ile silindi; Lukas'ın planı gerçek tarihle duruyor.

@@ -1,4 +1,5 @@
-import { QueryClient } from "@tanstack/react-query";
+import { QueryClient, focusManager } from "@tanstack/react-query";
+import { AppState, Platform } from "react-native";
 import { ApiError } from "./api";
 
 export const queryClient = new QueryClient({
@@ -10,3 +11,13 @@ export const queryClient = new QueryClient({
     },
   },
 });
+
+// React Native'de "pencere odağı" yok: uygulama ön plana dönünce bayat sorgular
+// (brief, plan, me) kendiliğinden tazelensin — başka cihazda kurulan plan ya da
+// Pazartesi revizyonu uygulamayı yeniden açınca görünsün (F8-A P-D bulgusu).
+if (Platform.OS !== "web") {
+  focusManager.setEventListener((handleFocus) => {
+    const sub = AppState.addEventListener("change", (state) => handleFocus(state === "active"));
+    return () => sub.remove();
+  });
+}

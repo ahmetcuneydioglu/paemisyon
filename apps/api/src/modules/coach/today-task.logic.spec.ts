@@ -42,7 +42,50 @@ const girdi = (over: Partial<TodayTaskInput> = {}): TodayTaskInput => ({
   focus: KOC,
   readiness: hazirlik(),
   strongestTopic: { name: 'Kasten Öldürme', accuracy: 0.7 },
+  plan: null,
   ...over,
+});
+
+describe('computeTodayTask — plan kalemi (F8-A P-D)', () => {
+  const plan = {
+    nextItem: { kind: 'topic' as const, topicId: 't-cmk', topicName: 'CMK', remainingMinutes: 45 },
+  };
+  it('koç odağında plan konu kalemi varsa bugünün turu o konudan açılır', () => {
+    const t = computeTodayTask(girdi({ plan }));
+    expect(t.kind).toBe('start');
+    expect(t.action).toEqual({
+      type: 'start_session',
+      label: 'Başla · 10 soru · CMK',
+      count: 10,
+      recipe: 'coach',
+      focus: { kind: 'topic', courseId: null, topicId: 't-cmk', label: 'CMK' },
+      source: 'home_task',
+    });
+    expect(t.reason).toBe('Planında bu hafta: CMK. 45 dk kaldı.');
+  });
+  it('kullanıcının seçtiği odak plana baskındır', () => {
+    const odak: DailyFocusView = {
+      kind: 'course',
+      courseId: 'c1',
+      topicId: null,
+      label: 'Anayasa',
+    };
+    const t = computeTodayTask(girdi({ plan, focus: odak }));
+    expect(t.action.focus).toEqual(odak);
+    expect(t.reason).toBe('Odak: Anayasa. Soruları koç seçiyor.');
+  });
+  it('tekrar/deneme kalemi ya da kalem yoksa koç turu değişmez', () => {
+    const tekrar = {
+      nextItem: { kind: 'review' as const, topicId: null, topicName: null, remainingMinutes: 30 },
+    };
+    expect(computeTodayTask(girdi({ plan: tekrar })).action.focus).toBeUndefined();
+    expect(computeTodayTask(girdi({ plan: { nextItem: null } })).action.focus).toBeUndefined();
+  });
+  it('hedef tamamsa ekstra tur da plan konusundan', () => {
+    const t = computeTodayTask(girdi({ plan, answeredToday: 20 }));
+    expect(t.kind).toBe('done');
+    expect(t.action.label).toBe('Ekstra tur · 10 soru · CMK');
+  });
 });
 
 describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {

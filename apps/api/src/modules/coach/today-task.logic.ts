@@ -77,6 +77,19 @@ export interface TodayTaskInput {
   readiness: Readiness;
   /** Dönüş gerekçesi için en güçlü konu (varsa). */
   strongestTopic: { name: string; accuracy: number } | null;
+  /**
+   * Haftalık planın sıradaki kalemi (F8-A P-D): kullanıcı bugün bilinçli bir odak
+   * seçmediyse (koç) ve plan bir KONU kalemi gösteriyorsa bugünün turu oradan açılır.
+   * Tekrar/deneme kalemleri buraya girmez — onların yolu Bugün'deki plan kartıdır.
+   */
+  plan: {
+    nextItem: {
+      kind: 'topic' | 'review' | 'mock';
+      topicId: string | null;
+      topicName: string | null;
+      remainingMinutes: number;
+    } | null;
+  } | null;
 }
 
 const yuzde = (x: number) => `%${Math.round(x * 100)}`;
@@ -97,6 +110,18 @@ function zaman(d: Date, now: Date): string {
 }
 
 /** Odağın düğme etiketindeki kısa hali ("· Anayasa Hukuku"); koçta yok. */
+/** Koç odağındayken planın konu kalemi varsa odak o konudur; aksi halde seçilen odak. */
+function etkinOdak(input: TodayTaskInput): { focus: DailyFocusView; plandan: boolean } {
+  const k = input.plan?.nextItem;
+  if (input.focus.kind === 'coach' && k && k.kind === 'topic' && k.topicId) {
+    return {
+      focus: { kind: 'topic', courseId: null, topicId: k.topicId, label: k.topicName },
+      plandan: true,
+    };
+  }
+  return { focus: input.focus, plandan: false };
+}
+
 function odakEki(focus: DailyFocusView): string {
   return focus.label ? ` · ${focus.label}` : '';
 }
@@ -335,7 +360,7 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: `Bu haftanın ${activeDays + 1}. günü için`,
       reason: '5 soru yeter — haftalık hedefin yolunda kalır.',
       progress: gunlukIlerleme,
-      action: baslat(KISA_TUR, input.focus),
+      action: baslat(KISA_TUR, etkinOdak(input).focus),
       finishSessionId: null,
       secondary: ikincil(input, false),
     };
@@ -348,7 +373,7 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       title: 'Bugünkü hedef tamam',
       reason: `${goal}/${goal} — yarın görüşürüz.`,
       progress: gunlukIlerleme,
-      action: baslat(TUR_VARSAYILAN, input.focus, { prefix: 'Ekstra tur' }),
+      action: baslat(TUR_VARSAYILAN, etkinOdak(input).focus, { prefix: 'Ekstra tur' }),
       finishSessionId: null,
       secondary: ikincil(input, false),
     };
@@ -356,10 +381,13 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
 
   // 7) Normal: bugünün turu — iki tur ≈ hedef (Doc 48 §4 tur boyu).
   const kalan = goal - answeredToday;
-  const focus = input.focus;
+  const { focus, plandan } = etkinOdak(input);
   let count = Math.max(TUR_EN_AZ, Math.min(TUR_VARSAYILAN, kalan));
   let reason: string;
-  if (focus.kind === 'wrongs') {
+  if (plandan) {
+    const dk = input.plan!.nextItem!.remainingMinutes;
+    reason = `Planında bu hafta: ${focus.label}. ${dk} dk kaldı.`;
+  } else if (focus.kind === 'wrongs') {
     const n = input.readiness.unresolvedWrongCount;
     if (n === 0) {
       // Yanlış kalmadıysa odak boşa düşmez: koç turuna döner ve bunu söyler.

@@ -133,7 +133,10 @@ export class PlanService {
         horizonWeeks: true,
         createdAt: true,
         revisedAt: true,
-        items: { orderBy: [{ weekStart: 'asc' }, { targetMinutes: 'desc' }], select: KALEM_SELECT },
+        items: {
+          orderBy: [{ weekStart: 'asc' }, { targetMinutes: 'desc' }, { id: 'asc' }],
+          select: KALEM_SELECT,
+        },
       },
     });
     if (!plan) return { plan: null };
@@ -220,7 +223,7 @@ export class PlanService {
         examDate: true,
         items: {
           where: { weekStart: buHafta },
-          orderBy: { targetMinutes: 'desc' },
+          orderBy: [{ targetMinutes: 'desc' }, { id: 'asc' }],
           select: KALEM_SELECT,
         },
         _count: { select: { items: { where: { weekStart: { gte: buHafta } } } } },
@@ -420,13 +423,15 @@ export class PlanService {
         examDate: true,
         examTypeId: true,
         weeklyMinutes: true,
-        user: { select: { entitlement: { select: { isPremium: true, validUntil: true } } } },
+        user: {
+          select: { status: true, entitlement: { select: { isPremium: true, validUntil: true } } },
+        },
       },
     });
     const sonuc = { kapanan: 0, yenilenen: 0, arsivlenen: 0 };
     for (const p of planlar) {
-      // Sınav geçtiyse plan biter.
-      if (p.examDate && p.examDate.getTime() < buHafta.getTime()) {
+      // Hesap silinmişse (KVKK: satır anonimleşir, silinmez) ya da sınav geçtiyse plan biter.
+      if (p.user.status === 'deleted' || (p.examDate && p.examDate.getTime() < buHafta.getTime())) {
         await this.prisma.studyPlan.update({ where: { id: p.id }, data: { status: 'archived' } });
         sonuc.arsivlenen++;
         continue;
@@ -804,15 +809,19 @@ function kalemGorunumu(i: KalemSatiri): PlanItemView {
   };
 }
 
-/** Bu haftanın bitmemiş kalemleri içinde oransal olarak en geride olanı. */
+/**
+ * Bu haftanın sıradaki kalemi (P-D kararı, 18 Eki 2026): başlanmış ama bitmemiş
+ * kalem varsa o önce gelir — ilerlemesi en yüksek olanı (başladığını bitir);
+ * hiçbiri başlanmamışsa oransal olarak en geride olan (büyük hedef önce).
+ */
 function siradakiKalem(items: PlanItemView[]): PlanItemView | null {
   const acik = items.filter((i) => i.status === 'pending' && i.remainingMinutes > 0);
   if (!acik.length) return null;
-  return [...acik].sort((a, b) => {
-    const oa = a.targetMinutes ? a.doneMinutes / a.targetMinutes : 1;
-    const ob = b.targetMinutes ? b.doneMinutes / b.targetMinutes : 1;
-    return oa - ob || b.targetMinutes - a.targetMinutes;
-  })[0];
+  const oran = (i: PlanItemView) => (i.targetMinutes ? i.doneMinutes / i.targetMinutes : 1);
+  const baslanmis = acik.filter((i) => i.doneMinutes > 0 || i.doneQuestions > 0);
+  if (baslanmis.length)
+    return [...baslanmis].sort((a, b) => oran(b) - oran(a) || b.targetMinutes - a.targetMinutes)[0];
+  return [...acik].sort((a, b) => oran(a) - oran(b) || b.targetMinutes - a.targetMinutes)[0];
 }
 
 function tarih(d: Date): string {
