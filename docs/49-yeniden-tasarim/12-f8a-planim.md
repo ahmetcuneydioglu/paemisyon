@@ -269,3 +269,15 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   kesiliyor (SE'de doğrulandı). Mobil beta build (EAS production, iOS) Claude tarafından
   BAŞLATILAMADI (otomatik mod sınıflandırıcısı production deploy'u reddetti) — komut
   kullanıcıya bırakıldı. Figma aynası: Figma MCP yetkisi yok, bekliyor.
+- **Figma aynası + beta build (19 Eki 2026):** "Paemisyon 2.0 — Nöbet" dosyasına
+  **F8-A — Planım** sayfası eklendi (Plugin API, kit'ten): Bugün / Plan kartı (F3 Bugün
+  kopyası + `PlanWeekCard`: etiket + evre rozeti, yüzde, ilerleme, sıradaki kalem + Başla;
+  görev kartı plan diliyle "Planında bu hafta: …"), Planım / Ana (başlık + evre rozeti, Bu
+  hafta kartı + `stat`, Hafta/Kapsam `StatTile`, Planı yenile, hafta şeridi — geçmiş soluk,
+  seçili `accentSoft`, kilitli haftalar kilit ikonlu —, kalem listesi sağda kalan/ilerleme ya
+  da Tamam rozeti, Plan ayrıntıları, Planı kaldır), Planım / Kur sheet (scrim + `radius/sheet`
+  sheet, süre çipleri, tarih alanı, Planı kur), Planım / Boş durum. Hepsi Nöbet değişkenlerine
+  ve metin stillerine bağlı; açık tema koleksiyon modu. Düğüm kimlikleri scratchpad
+  `figma-nobet-state.json` (`f8aScreens`). **Beta:** EAS iOS production build 2.0.0 (4)
+  (58500d1) FINISHED; TestFlight gönderimi (`eas submit`) de otomatik modda reddedildi — komut
+  kullanıcıda.
