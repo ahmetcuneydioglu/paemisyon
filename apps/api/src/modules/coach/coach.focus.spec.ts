@@ -75,7 +75,10 @@ describe('CoachService.setFocus', () => {
       },
       course: { findFirst: jest.fn().mockResolvedValue({ id: DERS, name: 'Anayasa Hukuku' }) },
     };
-    return { service: new CoachService(prisma as never, {} as never), prisma };
+    return {
+      service: new CoachService(prisma as never, {} as never, { ozet: async () => null } as never),
+      prisma,
+    };
   }
 
   it('koç seçilince kayıt silinir', async () => {

@@ -20,6 +20,8 @@ import { weakTopicRule } from './rules/weak-topic.rule';
 import { onboardingRule } from './rules/onboarding.rule';
 import { postExamRule } from './rules/post-exam.rule';
 import { aftermathRule } from './rules/aftermath.rule';
+import { planOfferRule } from './rules/plan-offer.rule';
+import { planWeekRule } from './rules/plan-week.rule';
 
 /** Nötr bağlam: hiçbir kural tetiklenmez; testler tek alanı değiştirir. */
 function ctx(over: Partial<CoachContext> = {}): CoachContext {
@@ -64,6 +66,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     daysSinceExam: null,
     recentDeneme: null,
     volume: { last7: 0, prev7: 0 },
+    plan: null,
     ...over,
   };
 }
@@ -467,5 +470,62 @@ describe('cikmis_sinav (Doc 36 kesif karti)', () => {
     const c = cikmisSinavRule(ctx({ cikmisSinavlar: iki }))!;
     expect(c.priority).toBeLessThan(75); // goal_remaining
     expect(c.priority).toBeGreaterThan(55); // daily_quiz
+  });
+});
+
+describe('plan kuralları (Doc 49/12 F8-A)', () => {
+  const plan = {
+    exists: true as const,
+    phase: 'build' as const,
+    weekStart: '2026-07-13',
+    summary: {
+      targetMinutes: 300,
+      doneMinutes: 90,
+      targetQuestions: 300,
+      doneQuestions: 80,
+      pct: 30,
+    },
+    nextItem: {
+      id: 'i1',
+      kind: 'topic' as const,
+      topicId: 't1',
+      topicName: 'CMK',
+      remainingMinutes: 35,
+    },
+    ended: false,
+  };
+  it('plan_week: yüzde + sıradaki kalem; hedef dolunca önceliği düşer', () => {
+    const c = planWeekRule(ctx({ plan }))!;
+    expect(c.type).toBe('plan_week');
+    expect(c.title).toBe('Haftalık plan %30');
+    expect(c.body).toContain('CMK · 35 dk');
+    expect(c.priority).toBe(70);
+    const tam = planWeekRule(
+      ctx({ plan: { ...plan, summary: { ...plan.summary, pct: 100 }, nextItem: null } }),
+    )!;
+    expect(tam.priority).toBe(40);
+    expect(tam.cta?.route).toBe('/planim');
+  });
+  it('plan_week: plan bitince yenileme daveti; plan yoksa kart yok', () => {
+    expect(planWeekRule(ctx({ plan: { ...plan, ended: true } }))!.meta).toEqual({ ended: true });
+    expect(planWeekRule(ctx())).toBeNull();
+  });
+  it('plan_offer: plan yok + onboarding bitti + ≥10 soru; tempo düşüşünde öne çıkar', () => {
+    expect(planOfferRule(ctx())).toBeNull();
+    const c = planOfferRule(
+      ctx({ stats: { totalSolved: 12, totalCorrect: 6, totalSessions: 2 } }),
+    )!;
+    expect(c.type).toBe('plan_offer');
+    expect(c.priority).toBe(35);
+    const d = planOfferRule(
+      ctx({
+        stats: { totalSolved: 12, totalCorrect: 6, totalSessions: 2 },
+        volume: { last7: 2, prev7: 20 },
+      }),
+    )!;
+    expect(d.priority).toBe(55);
+    expect(
+      planOfferRule(ctx({ plan, stats: { totalSolved: 12, totalCorrect: 6, totalSessions: 2 } })),
+    ).toBeNull();
   });
 });

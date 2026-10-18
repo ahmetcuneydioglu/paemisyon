@@ -18,7 +18,10 @@ import { enGucluKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
-import { AFTERMATH_PENCERE_GUN } from './rules/aftermath.rule';
+import { PlanService } from '../plan/plan.service';
+import { hedefSinavTarihi } from './hedef-sinav';
+
+export { hedefSinavTarihi };
 
 /** Haftalık aktif gün hedefi (v1 sabit; ileride kullanıcı ayarı olabilir). */
 const WEEKLY_GOAL_DAYS = 5;
@@ -33,6 +36,7 @@ export class CoachService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly settings: SettingsService,
+    private readonly plan: PlanService,
   ) {}
 
   /**
@@ -180,6 +184,7 @@ export class CoachService {
       exam: ctx.home.exam,
       readiness: ctx.home.readiness,
       focus: ctx.home.focus,
+      plan: ctx.plan,
       // Doc 48 A4 — görev kartı + eylem çubuğu: etiket ve davranış tek nesnede.
       todayTask: computeTodayTask({
         now: ctx.now,
@@ -278,6 +283,7 @@ export class CoachService {
       topicProgress,
       odakSatiri,
       yarimTurlar,
+      planOzeti,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -433,6 +439,8 @@ export class CoachService {
           answers: { orderBy: { answeredAt: 'desc' }, take: 1, select: { answeredAt: true } },
         },
       }),
+      // Haftalık plan özeti (Doc 49/12 F8-A): kart + brief.plan; yoksa null.
+      this.plan.ozet(user.id, now),
     ]);
 
     // ── Deneme durumları ──
@@ -699,6 +707,7 @@ export class CoachService {
           }
         : null,
       volume: { last7, prev7 },
+      plan: planOzeti,
       home: {
         exam,
         readiness,
@@ -790,26 +799,6 @@ function trDayKey(d: Date): string {
 function trDayDiff(now: Date, target: Date): number {
   const day = (d: Date) => Math.floor((d.getTime() + 3 * 3_600_000) / 86_400_000);
   return day(target) - day(now);
-}
-
-/**
- * Hedef sınav tarihi (Doc 48 A2): kişisel tarih önceliklidir. Ama sınav sonrası
- * pencereyi (14 gün) aşmış geçmiş bir kişisel tarih artık hedef değildir; resmî
- * tarih varsa ona düşülür. Aksi hâlde geçen dönemin tarihi, admin yeni resmî
- * tarihi girdiğinde bile geri sayımı gölgeler (14 Eki 2026: kişisel tarihli 131
- * kullanıcının 34'ünde tarih geçmişteydi). Resmî tarih yoksa davranış aynı kalır.
- * (Test için export.)
- */
-export function hedefSinavTarihi(
-  kisisel: Date | null,
-  resmi: Date | null,
-  now: Date,
-): { date: Date | null; source: ExamInfo['source'] } {
-  if (kisisel && trDayDiff(now, kisisel) >= -AFTERMATH_PENCERE_GUN) {
-    return { date: kisisel, source: 'personal' };
-  }
-  if (resmi) return { date: resmi, source: 'official' };
-  return kisisel ? { date: kisisel, source: 'personal' } : { date: null, source: null };
 }
 
 /**

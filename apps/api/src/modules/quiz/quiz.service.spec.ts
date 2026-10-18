@@ -2,6 +2,9 @@ import { BadRequestException, ForbiddenException, NotFoundException } from '@nes
 import { QuizService } from './quiz.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 
+/** Plan kancası (F8-A) — testte sessiz. */
+const planStub = { cevapKaydet: async () => undefined } as never;
+
 const premiumUser: AuthenticatedUser = {
   id: '00000000-0000-0000-0000-000000000001',
   email: 'aday@example.com',
@@ -69,6 +72,7 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     progress as never,
     {} as never,
     settings as never,
+    planStub,
   );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
@@ -370,7 +374,7 @@ describe('QuizService.splitBySeen', () => {
       },
     };
     return {
-      svc: new QuizService(prisma as never, {} as never, {} as never, {} as never),
+      svc: new QuizService(prisma as never, {} as never, {} as never, {} as never, planStub),
       prisma,
     };
   }
@@ -495,6 +499,7 @@ function setupPersonal(
     {} as never,
     {} as never,
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
+    planStub,
   );
   return { service, prisma };
 }
@@ -702,6 +707,7 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
     progress as never,
     {} as never,
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
+    planStub,
   );
   return { service, prisma, havuz, progress };
 }
@@ -890,7 +896,13 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
       },
     };
     const progress = { recordSessionCompletion: jest.fn() };
-    const service = new QuizService(prisma as never, progress as never, {} as never, {} as never);
+    const service = new QuizService(
+      prisma as never,
+      progress as never,
+      {} as never,
+      {} as never,
+      planStub,
+    );
     const r = await service.completeSession(premiumUser.id, 's1');
     expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });
     expect(prisma.quizSession.update).not.toHaveBeenCalled();

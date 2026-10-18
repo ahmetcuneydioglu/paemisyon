@@ -219,6 +219,7 @@ model ExamType {
 
   sections       ExamSection[]
   preferredUsers User[]
+  studyPlans     StudyPlan[]
 
   @@map("modules")
 }
@@ -1041,6 +1042,13 @@ enum StudyPlanItemStatus {
   skipped
 }
 
+/// Plan kalemi türü (Doc 49/12 F8-A): konu çalışması, tekrar (SRS/yanlış), deneme.
+enum StudyPlanItemKind {
+  topic
+  review
+  mock
+}
+
 /// Kullanıcının haftalık çalışma planı. Kullanıcı başına en çok bir `active`
 /// plan (servis kuralı; revize = eskisi archived + yeni satır). Üretim algoritması F8.
 model StudyPlan {
@@ -1051,9 +1059,16 @@ model StudyPlan {
   status        StudyPlanStatus @default(active)
   createdAt     DateTime        @default(now()) @map("created_at")
   revisedAt     DateTime?       @map("revised_at")
+  /// Planın kurulduğu hedef sınav türü (müfredat/ağırlık kaynağı). Kullanıcı
+  /// sınav türünü değiştirirse plan yeniden kurulur (F8-A §3).
+  examTypeId    String?         @map("exam_type_id") @db.Uuid
+  /// Ufuk: sınav tarihi yoksa yuvarlanan 12 hafta; tarih varsa sınava kalan
+  /// hafta (tavan 26). Okuma ucu evreyi buradan ve examDate'ten türetir.
+  horizonWeeks  Int             @default(12) @map("horizon_weeks")
 
-  user  User            @relation(fields: [userId], references: [id], onDelete: Cascade)
-  items StudyPlanItem[]
+  user     User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  examType ExamType?       @relation(fields: [examTypeId], references: [id], onDelete: SetNull)
+  items    StudyPlanItem[]
 
   @@index([userId, status])
   @@map("study_plans")
@@ -1064,15 +1079,20 @@ model StudyPlanItem {
   id              String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   planId          String              @map("plan_id") @db.Uuid
   weekStart       DateTime            @map("week_start") @db.Date
-  topicId         String              @map("topic_id") @db.Uuid
+  /// `topic` kalemlerinde dolu; `review`/`mock` kalemlerinde NULL (F8-A §4).
+  topicId         String?             @map("topic_id") @db.Uuid
+  kind            StudyPlanItemKind   @default(topic)
   targetQuestions Int                 @default(0) @map("target_questions")
   targetMinutes   Int                 @default(0) @map("target_minutes")
   doneQuestions   Int                 @default(0) @map("done_questions")
+  /// Türetilmiş: floor(doneSeconds / 60) — aynı UPDATE'te yazılır (istemci sözleşmesi dakika).
   doneMinutes     Int                 @default(0) @map("done_minutes")
+  /// Gerçek sayaç (saniye): 45 sn'lik cevaplar dakikaya yuvarlanıp şişmesin.
+  doneSeconds     Int                 @default(0) @map("done_seconds")
   status          StudyPlanItemStatus @default(pending)
 
   plan  StudyPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
-  topic Topic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  topic Topic?    @relation(fields: [topicId], references: [id], onDelete: Cascade)
 
   @@index([planId, weekStart])
   @@map("study_plan_items")

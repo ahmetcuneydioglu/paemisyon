@@ -18,6 +18,8 @@ import { weakTopicRule } from './weak-topic.rule';
 import { onboardingRule } from './onboarding.rule';
 import { postExamRule } from './post-exam.rule';
 import { aftermathRule } from './aftermath.rule';
+import { planOfferRule } from './plan-offer.rule';
+import { planWeekRule } from './plan-week.rule';
 
 export { motivationRule } from './motivation.rule';
 
@@ -43,4 +45,6 @@ export const coachRules: CoachRule[] = [
   slumpWatchRule,
   aftermathRule,
   cikmisSinavRule,
+  planWeekRule,
+  planOfferRule,
 ];

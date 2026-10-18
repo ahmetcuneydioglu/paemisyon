@@ -1,3 +1,4 @@
+import type { PlanBrief } from '../plan/plan.service';
 import type { BriefFlags, DailyFocusView, ExamInfo, Readiness, TodayTask } from './home-v2.types';
 
 /**
@@ -28,6 +29,8 @@ export type CoachCardType =
   | 'post_exam'
   | 'aftermath'
   | 'cikmis_sinav'
+  | 'plan_week'
+  | 'plan_offer'
   | 'motivation';
 
 /**
@@ -161,6 +164,8 @@ export interface CoachContext {
   recentDeneme: { examId: string | null; title: string; wrongCount: number } | null;
   /** Tempo sinyali (Doc 24 §1/90. gün): son 7 gün vs önceki 7 gün soru hacmi. */
   volume: { last7: number; prev7: number };
+  /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null. */
+  plan: PlanBrief | null;
 }
 
 /** Kural: saf fonksiyon — tetiklenmezse null. Yenisini eklemek = yeni dosya. */
@@ -216,4 +221,6 @@ export interface CoachBrief {
   focus: DailyFocusView;
   /** Doc 48 A4 — görev kartı + tek birincil eylem (durum tablosu §4). */
   todayTask: TodayTask;
+  /** Doc 49/12 F8-A — haftalık plan özeti (Bugün kartı bunu çizer); plan yoksa null. */
+  plan: PlanBrief | null;
 }

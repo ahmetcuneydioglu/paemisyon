@@ -12,6 +12,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { PlanService } from '../plan/plan.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../auth/auth.types';
@@ -41,6 +42,7 @@ export class UsersController {
     private readonly prisma: PrismaService,
     private readonly users: UsersService,
     private readonly push: PushService,
+    private readonly plan: PlanService,
   ) {}
 
   // ── Mevzuat Merkezi (Doc 29 §14): madde favorisi + okuma konumu ──
@@ -254,6 +256,8 @@ export class UsersController {
       select: { id: true },
     });
     if (!leg) return { ok: false };
+    // Haftalık plan (F8-A): kanunun konusu bu haftanın kalemindeyse okuma süresi işler.
+    if (okumaSn > 0) void this.plan.okumaKaydet(user.id, leg.id, okumaSn);
     await this.prisma.readingProgress.upsert({
       where: { userId_legislationId: { userId: user.id, legislationId: leg.id } },
       update: { articleNo: body.no.slice(0, 16) },

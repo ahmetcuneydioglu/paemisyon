@@ -34,6 +34,7 @@ import { YARIM_TUR_MODLARI, turuTerkEt } from './yarim-tur';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
+import { PlanService } from '../plan/plan.service';
 
 /** Kanun konusu tespiti (public.service ile aynı desen). */
 const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
@@ -51,6 +52,7 @@ export class QuizService {
     private readonly progress: ProgressService,
     private readonly badges: BadgeService,
     private readonly settings: SettingsService,
+    private readonly plan: PlanService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -1201,6 +1203,15 @@ export class QuizService {
     // çaba, kritik yolu beklemez. Yeniden cevaplamada da eklenir (süre harcandı).
     const cevapSn = calismaSaniyesi(dto.timeSpentMs);
     if (cevapSn > 0) void calismaSuresiEkle(this.prisma, user.id, cevapSn);
+    // Haftalık plan kalemi (Doc 49/12 F8-A §3): konu/tekrar/deneme kalemine soru ve
+    // süre işler; en iyi çaba, kritik yolu beklemez.
+    void this.plan.cevapKaydet(
+      user.id,
+      session.mode,
+      question?.topic?.id ?? null,
+      cevapSn,
+      !existing,
+    );
     // Günün İLK cevabı → aktiflik (seri + son aktif gün) cevap anında (Doc 48 D3).
     // Sayaç atomik: iki eşzamanlı cevaptan yalnız biri 1 görür. Günde bir kez.
     if (gununIlkCevabi || gununToplami === 1) {
