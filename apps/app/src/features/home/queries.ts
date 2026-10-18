@@ -1,5 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import type { PlanBrief } from "@/features/plan/queries";
 
 /**
  * /me/coach sözleşmesi — F3'te kullanılan alanlar (API: coach/home-v2.types.ts). Karar
@@ -13,7 +14,7 @@ export interface DailyFocus {
   label: string | null;
 }
 
-export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion";
+export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan";
 
 export interface TodayTaskAction {
   type: "start_session" | "resume_session" | "open_exams";
@@ -71,6 +72,10 @@ export interface CoachBrief {
   focus: DailyFocus | null;
   todayTask: TodayTask | null;
   gamification?: { weekly?: { activeDays: number; goalDays: number } };
+  /** Koç kartları (yalnız tip ve metin okunur; Bugün görev motorunu çizer). */
+  cards?: { type: string; title: string; body?: string }[];
+  /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */
+  plan?: PlanBrief | null;
 }
 
 export const homeKeys = { brief: ["me", "coach"] as const, me: ["me"] as const };

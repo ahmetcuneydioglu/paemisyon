@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { BookOpen, RotateCcw, Search, Star } from "lucide-react-native";
+import { BookOpen, RotateCcw, Search, Star, CalendarDays } from "lucide-react-native";
 import { View } from "react-native";
 import { CourseTile, LegislationRow } from "@/components/domain";
 import { AppText, Card, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
@@ -95,6 +95,7 @@ export default function KutuphaneScreen() {
       <View style={{ gap: space.s2 }}>
         <SectionHeader title="Tekrar" />
         <Card style={{ paddingVertical: 0 }}>
+          <ListRow title="Haftalık planım" subtitle="Bu haftanın kalemleri ve sınava kadar dağılım" leading={<CalendarDays color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/planim")} />
           <ListRow
             title="Yanlışlarım"
             subtitle={wrongs.isPending ? "Yükleniyor…" : wrongs.isError ? "Yüklenemedi" : wrongs.data.length === 0 ? "Çözülmemiş yanlışın yok" : `${wrongs.data.length} çözülmemiş yanlış`}

@@ -180,3 +180,26 @@ Dal: `claude/f8a-planim` (aynı worktree); push öncesi onay.
   yeniden üretim + taşıma + `revisedAt`, sınavı geçen plan arşivi). Not: `nextItem`
   "oransal en geride" kuralıyla 3 cevaptan sonra başka konuya geçti — P-B/P-C'de
   "başlanmış ama bitmemiş kalem önce" tercihi değerlendirilecek.
+- **P-B Expo (18 Eki 2026):** `features/plan/queries.ts` (tipler + `usePlan`, `usePlanDefaults`,
+  `useCreatePlan/useRevisePlan/useArchivePlan`; mutasyonlar brief ve me'yi tazeler; evre/kalem
+  başlığı/süre sözlükleri), `domain/PlanWeekCard` (Bugün: yüzde, evre rozeti, ilerleme, sıradaki
+  kalem + Başla; plan yoksa sunucunun `plan_offer` kartı varsa davet), `app/planim.tsx` (başlık
+  `useStackOptions`, bu hafta özeti + `StatTile` hafta/kapsam, hafta şeridi — geçmiş soluk /
+  bu hafta vurgulu / kilitli haftalar kilit ikonlu —, seçili haftanın kalemleri ilerleme
+  çubuğuyla, kilitli haftada Premium kapısı → `/paywall`, plan dışı soru notu, Plan kartı:
+  süre/tarih/kapsam/yenileme, "Planı kaldır" onaylı; boş durum + kur; `?kur=1` sheet'i açar),
+  `features/plan/plan-sheet.tsx` (kur/yenile: haftalık süre çipleri — mevcut/önerilen değer
+  listede yoksa eklenir —, tarih GG.AA.YYYY ya da "belli değil", özet metinler), onboarding
+  **4. adım** "Haftalık plan çıkarayım mı?" (varsayılan evet; `dailyMinutes` da gönderilir;
+  plan kurulduktan sonra brief `refetchType: "all"` ile tazelenir — ilk açılışta kart eksik
+  kalıyordu), Ayarlar › Hedef altında ve Kütüphane › Tekrar'da "Haftalık planım" girişi,
+  kök Stack'te `planim`. API: `StartSessionDto.source` `plan` değerini kabul eder
+  (`HomeSource`'a eklendi). Kalemden tur: konu → `seans` (`source: plan`, kalan soru 5–20),
+  tekrar → `seans mode=review`, deneme → Denemeler sekmesi. **Göz testi (iPhone 17 sim,
+  dev client + Metro :8082, yerel API :3005, geçici hesap):** onboarding 4 adım, Bugün plan
+  kartı (açık/koyu), Planım (açık/koyu), yenile sheet'i (koyu), Kütüphane girişi; `source:
+  plan` ile tur 201. Sim tuzakları: `text` eylemi panoya yazmıyor → `xcrun simctl pbcopy`
+  + uzun basış "Yapıştır" (140 ms dokunuş); dev-launcher balonu "Atla"yı örter (sürüklenir);
+  paste izni iletişim kutusu ilk seferde. Kalan: iPhone SE/16 Pro Max turu ve kullanıcının
+  telefonunda beta turu (P-D), Ayarlar satırının ekran görüntüsü, `todayTask` plan kalemi
+  tercihi (P-C ile).

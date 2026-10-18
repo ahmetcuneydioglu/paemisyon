@@ -6,6 +6,7 @@ import { AppText, Button, Card, Chip, ListRow, Notice, Screen, SegmentBar, Skele
 import { useModules } from "@/features/catalog/queries";
 import { homeKeys } from "@/features/home/queries";
 import { api } from "@/lib/api";
+import { useCreatePlan } from "@/features/plan/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -29,24 +30,34 @@ export default function OnboardingScreen() {
   const [date, setDate] = useState("");
   const [noDate, setNoDate] = useState(false);
   const [goal, setGoal] = useState<number>(20);
+  // 4. adım (Doc 49/12 F8-A): haftalık plan daveti — atlanabilir.
+  const [planIstiyor, setPlanIstiyor] = useState(true);
+  const createPlan = useCreatePlan();
 
   const iso = trToIso(date);
   const dateInvalid = date.trim() !== "" && !iso;
 
   const complete = useMutation({
-    mutationFn: (body: { moduleId: string; targetExamDate?: string | null; dailyGoal?: number }) => api<{ onboardingCompleted: true }>("/me/onboarding", { method: "POST", body }),
+    mutationFn: (body: { moduleId: string; targetExamDate?: string | null; dailyGoal?: number; dailyMinutes?: number }) => api<{ onboardingCompleted: true }>("/me/onboarding", { method: "POST", body }),
     onSuccess: () => {
       void qc.invalidateQueries({ queryKey: homeKeys.me });
       void qc.invalidateQueries({ queryKey: homeKeys.brief });
     },
   });
 
+  const dailyMinutes = goal >= 40 ? 60 : goal >= 20 ? 30 : 15;
   const submit = (patrol: boolean) => {
     if (!moduleId) return;
     complete.mutate(
-      { moduleId, targetExamDate: noDate ? null : iso, dailyGoal: goal },
+      { moduleId, targetExamDate: noDate ? null : iso, dailyGoal: goal, dailyMinutes },
       {
-        onSuccess: () => {
+        onSuccess: async () => {
+          // Plan istendiyse onboarding'in verdiği süre/tarihle kurulur; hata akışı KESMEZ
+          // (Bugün'de koçun daveti yine çıkar).
+          if (planIstiyor) await createPlan.mutateAsync({}).catch(() => undefined);
+          // Bugün açılmadan brief TAZE olsun: onboarding sırasında başlayan eski bir istek plan
+          // kartı olmadan dönebiliyordu (göz testi, 18 Eki 2026). Pasif sorgu da yenilenir.
+          await qc.invalidateQueries({ queryKey: homeKeys.brief, refetchType: "all" });
           router.replace("/(tabs)");
           if (patrol) router.push({ pathname: "/seans", params: { mode: "practice", count: "10", source: "home_task", focusKind: "coach", courseId: "", topicId: "", recipe: "" } });
         },
@@ -57,9 +68,9 @@ export default function OnboardingScreen() {
   return (
     <Screen style={{ paddingBottom: space.s8 }}>
       <View style={{ gap: space.s2 }}>
-        <SegmentBar total={3} done={step + 1} />
+        <SegmentBar total={4} done={step + 1} />
         <AppText variant="label" tone="subtle">
-          Adım {step + 1}/3
+          Adım {step + 1}/4
         </AppText>
       </View>
 
@@ -118,7 +129,7 @@ export default function OnboardingScreen() {
           <Button title="Devam et" disabled={!(iso || noDate)} onPress={() => setStep(2)} />
           <Button title="Geri" variant="ghost" onPress={() => setStep(0)} />
         </>
-      ) : (
+      ) : step === 2 ? (
         <>
           <View style={{ gap: space.s1 }}>
             <AppText variant="title">Günde ne kadar vakit ayırabilirsin?</AppText>
@@ -131,13 +142,28 @@ export default function OnboardingScreen() {
               <ListRow key={t.goal} title={t.minutes} subtitle={t.label} divider={i < TEMPO.length - 1} chevron={false} onPress={() => setGoal(t.goal)} trailing={<Chip label={`${t.goal} soru`} selected={goal === t.goal} onPress={() => setGoal(t.goal)} />} />
             ))}
           </Card>
+          <Button title="Devam et" onPress={() => setStep(3)} />
+          <Button title="Geri" variant="ghost" onPress={() => setStep(1)} />
+        </>
+      ) : (
+        <>
+          <View style={{ gap: space.s1 }}>
+            <AppText variant="title">Haftalık plan çıkarayım mı?</AppText>
+            <AppText variant="bodySm" tone="soft">
+              Haftada yaklaşık {dailyMinutes * 5} dakikayı sınav ağırlığına ve zayıf noktalarına göre konulara dağıtırım; her Pazartesi yenilerim.
+            </AppText>
+          </View>
+          <Card style={{ paddingVertical: 0 }}>
+            <ListRow title="Evet, planı kur" subtitle={noDate || !iso ? "Tarih yok: 12 haftalık plan; tarihi girince sınava göre ayarlanır." : "Sınav tarihine kadar haftalara dağıtılır."} chevron={false} onPress={() => setPlanIstiyor(true)} trailing={<Chip label="Önerilen" selected={planIstiyor} onPress={() => setPlanIstiyor(true)} />} />
+            <ListRow title="Şimdi değil" subtitle="İstediğin zaman Bugün’den ya da Ayarlar’dan kurabilirsin." divider={false} chevron={false} onPress={() => setPlanIstiyor(false)} trailing={<Chip label="Geç" selected={!planIstiyor} onPress={() => setPlanIstiyor(false)} />} />
+          </Card>
           <AppText variant="bodySm" tone="soft">
             Sırada: İlk Devriye, 10 soruluk kısa bir tur. Not için değil, nereden başlayacağımızı görmek için.
           </AppText>
           {complete.isError ? <Notice tone="error">{complete.error.message}</Notice> : null}
-          <Button title="İlk Devriye’ye çık · 10 soru" loading={complete.isPending} onPress={() => submit(true)} />
-          <Button title="Şimdilik geç" variant="ghost" disabled={complete.isPending} onPress={() => submit(false)} />
-          <Button title="Geri" variant="ghost" onPress={() => setStep(1)} />
+          <Button title="İlk Devriye’ye çık · 10 soru" loading={complete.isPending || createPlan.isPending} onPress={() => submit(true)} />
+          <Button title="Şimdilik geç" variant="ghost" disabled={complete.isPending || createPlan.isPending} onPress={() => submit(false)} />
+          <Button title="Geri" variant="ghost" onPress={() => setStep(2)} />
         </>
       )}
     </Screen>

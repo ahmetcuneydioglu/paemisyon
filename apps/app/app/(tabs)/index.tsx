@@ -3,7 +3,7 @@ import { useRouter } from "expo-router";
 import { ChevronDown } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, View } from "react-native";
-import { CountdownHeader, CourseTile, TaskHero } from "@/components/domain";
+import { CountdownHeader, CourseTile, PlanWeekCard, TaskHero } from "@/components/domain";
 import { ActionBar, AppText, Badge, Button, Card, ListRow, Notice, Screen, Skeleton } from "@/components/ui";
 import { FocusSheet } from "@/features/home/focus-sheet";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction } from "@/features/home/queries";
@@ -120,6 +120,24 @@ export default function BugunScreen() {
                   </Card>
                 ) : null}
               </View>
+            ) : null}
+
+            {/* Haftalık plan (Doc 49/12 F8-A): özet sunucudan; plan yoksa koçun daveti varsa kart. */}
+            {task?.kind !== "comeback" ? (
+              <PlanWeekCard
+                plan={data.plan ?? null}
+                offer={Boolean(data.cards?.some((c) => c.type === "plan_offer"))}
+                onOpen={() => router.push(data.plan ? "/planim" : { pathname: "/planim", params: { kur: "1" } })}
+                onStart={(item) => {
+                  if (item.kind === "topic" && item.topicId) {
+                    router.push({ pathname: "/seans", params: { source: "plan", count: String(Math.max(5, Math.min(20, item.remainingMinutes))), focusKind: "topic", topicId: item.topicId, courseId: "", recipe: "" } });
+                  } else if (item.kind === "review") {
+                    router.push({ pathname: "/seans", params: { mode: "review", source: "plan", count: "10", focusKind: "wrongs", courseId: "", topicId: "", recipe: "" } });
+                  } else {
+                    router.push("/(tabs)/denemeler");
+                  }
+                }}
+              />
             ) : null}
 
             {/* Hazırlık (Doc 48/02 karar 1–2): zayıf konular başta; dönüşte gizli. */}

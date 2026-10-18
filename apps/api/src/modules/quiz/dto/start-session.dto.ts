@@ -47,7 +47,7 @@ export class StartSessionDto {
   /// 'home_*' = mobil yeni anasayfa (Doc 48 — anasayfadan tur başlatma oranı
   /// bu alandan ölçülür). Serbest metin kabul edilmez: kanal listesi burada.
   @IsOptional()
-  @IsIn(['notif', 'home_task', 'home_resume', 'home_weak_topic', 'home_suggestion'])
+  @IsIn(['notif', 'home_task', 'home_resume', 'home_weak_topic', 'home_suggestion', 'plan'])
   source?: string;
 
   /// Tek soruluk bildirim turu (Faz 2 push derin bağlantısı): verilirse

@@ -154,6 +154,9 @@ function AyarlarForm({ d }: { d: MeFull }) {
                 {update.isError ? <Notice tone="error">{update.error.message}</Notice> : null}
                 <Button title="Kaydet" disabled={!dirty || dateInvalid} loading={update.isPending} onPress={save} />
               </Card>
+              <Card style={{ paddingVertical: 0 }}>
+                <ListRow title="Haftalık planım" subtitle="Sınava kadar konuların haftalara dağılımı" divider={false} onPress={() => router.push("/planim")} />
+              </Card>
             </View>
 
             <View style={{ gap: space.s2 }}>

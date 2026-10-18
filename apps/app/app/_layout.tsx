@@ -111,6 +111,7 @@ function RootNavigator() {
         <Stack.Screen name="sonuc" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="oku/[slug]" options={{ presentation: "fullScreenModal" }} />
         <Stack.Screen name="paywall" options={{ presentation: "modal" }} />
+        <Stack.Screen name="planim" options={{ headerShown: true, title: "Planım" }} />
         <Stack.Screen name="deneme-sonuc/[attemptId]" options={{ headerShown: true }} />
       </Stack>
     </View>

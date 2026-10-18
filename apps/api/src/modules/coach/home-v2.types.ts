@@ -69,7 +69,7 @@ export interface DailyFocusView {
 }
 
 /** Turun geliş kanalı (ölçüm — startSession.source). */
-export type HomeSource = 'home_task' | 'home_resume' | 'home_weak_topic' | 'home_suggestion';
+export type HomeSource = 'home_task' | 'home_resume' | 'home_weak_topic' | 'home_suggestion' | 'plan';
 
 export interface TodayTaskAction {
   type: 'start_session' | 'resume_session' | 'open_exams';

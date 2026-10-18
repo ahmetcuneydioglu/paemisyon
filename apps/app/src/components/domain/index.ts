@@ -5,3 +5,4 @@ export * from "./countdown-header";
 export * from "./course-tile";
 export * from "./question";
 export * from "./legislation-row";
+export * from "./plan-week-card";
