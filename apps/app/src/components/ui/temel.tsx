@@ -128,7 +128,9 @@ export function TextField({ label, error, style, ...props }: { label: string; er
         placeholderTextColor={colors.inkSubtle}
         style={[
           type.body,
-          { minHeight: 52, borderRadius: radius.control, borderWidth: 1, borderColor: error ? colors.danger : colors.line, backgroundColor: colors.surface, color: colors.ink, paddingHorizontal: space.s4 },
+          // lineHeight paragraf stili iOS'ta odak dışındaki tek satırlı alanı sardırıp
+          // kutunun dışına taşırıyordu (SE 375 pt, 18 Eki 2026) — alanlarda kullanılmaz.
+          { lineHeight: undefined, minHeight: 52, borderRadius: radius.control, borderWidth: 1, borderColor: error ? colors.danger : colors.line, backgroundColor: colors.surface, color: colors.ink, paddingHorizontal: space.s4 },
           style,
         ]}
         {...props}
