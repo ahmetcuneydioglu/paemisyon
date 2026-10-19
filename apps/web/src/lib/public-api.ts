@@ -415,9 +415,13 @@ export interface BadgeCatalog {
 }
 
 // ── Koç (girişli ana sayfa) — /me/coach yanıtının web'de kullanılan kısmı ──
+export type WeekDayState = "done" | "missed" | "today" | "future";
+
 export interface CoachBrief {
   greeting: { displayName: string | null; isPremium: boolean };
   daysToExam: number | null;
+  /** Hedef sınav (Doc 48): ad, YYYY-MM-DD tarih, kalan TR takvim günü; tarih yoksa null'lar. */
+  exam?: { name: string | null; date: string | null; daysLeft: number | null; source: "personal" | "official" | null };
   today: {
     goal: number;
     answered: number;
@@ -452,7 +456,8 @@ export interface CoachBrief {
       longestStreak: number;
       maxDailyQuestions: number;
     };
-    weekly: { activeDays: number; goalDays: number };
+    /** `days`: Pzt→Paz 7 günlük nöbet çizelgesi (Doc 49/13 F9-B); eski sunucuda alan yok. */
+    weekly: { activeDays: number; goalDays: number; days?: WeekDayState[] };
   };
   /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi (%). */
   weeklyPhoto?: { courseName: string; deltaPct: number }[];
@@ -524,6 +529,8 @@ export interface PlanBrief {
     topicName: string | null;
     remainingMinutes: number;
   } | null;
+  /** Bu haftanın kalemleri (vardiya listesi — Doc 49/13); eski sunucuda alan yok. */
+  items?: Pick<PlanItem, "id" | "kind" | "topicId" | "topicName" | "courseName" | "targetMinutes" | "doneMinutes" | "remainingMinutes" | "status">[];
   ended: boolean;
 }
 export interface PlanDefaults {

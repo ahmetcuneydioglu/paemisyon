@@ -129,3 +129,20 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   5→15 cevap): `first` ve `start` durumları, ikincil "9 çözülmemiş yanlış · Tekrar et",
   çöken başlık, vardiya listesi 2 kalem, çizelge Pzt ✓. `done` durumu ücretsiz günlük kota
   (15) yüzünden üretilemedi — görsel P-D turunda beta hesabında bakılacak. Push yok.
+- **F9-D Web Bugün (20 Eki 2026):** `components/bugun/CountdownHero` (panel, `type-hero`
+  clamp 72–120 px, tarih yoksa "Tarih bekleniyor" + `/profil`), `WeekStrip7`, `HeroCollapse`
+  (istemci; IntersectionObserver, afiş çıkınca `top-14` yapışkan ince satır "235 gün · PAEM" —
+  kabuk başlığının altına), `components/plan/PlanShiftList` (vardiya listesi; davet hâli
+  korunur), `type-brand` marka sözcüğü + serif selam; sol kolon: afiş → çizelge → hedef satırı
+  → görev kartı (başlık `type-title` Lora, CTA sunucu etiketi + Odak) → plan → koç kartları;
+  eski "son 7 gün" kartı ve `/progress/activity` çağrısı kalktı (çizelge `weekly.days`;
+  eski sunucu için `yedekGunler`). Tipler: `CoachBrief.exam`, `weekly.days`,
+  `PlanBrief.items`, `WeekDayState`. Tailwind: `panel`/`panel-ink`/`panel-soft` renkleri,
+  `rounded-panel`. Mobilde mağaza rozetleri `md:` altında gizli, marka satırı tek satır.
+  **Doğrulama:** tsc 0, eslint 0, tokens-check 213/0, vitest 80/80; panelde geçici hesapla
+  masaüstü + 375 px, açık + koyu; çöken başlık çalışıyor; `/kanunlar`, `/paem-cikmis-sorular`,
+  `/kanun/2559` yeni paletle sorunsuz. Kit galerisi `/tasarim` admin/beta rolü istiyor —
+  geçici hesapla açılamadı (canlıda kullanıcı hesabıyla bakılacak). **axe (WCAG 2.1 AA,
+  axe-core 4.10.2 enjekte):** `/bugun` koyu 0, `/planim` koyu 0; açıkta tek bulgu `KeyHint`
+  (⌘K) `inkSubtle`/`surfaceAlt` 3,76 → `inkSoft` yapıldı. Lighthouse canlıda (dev sunucu
+  temsilî değil) deploy sonrası koşulacak. Push yok — A+B+D birlikte.

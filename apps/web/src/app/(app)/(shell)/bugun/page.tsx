@@ -5,7 +5,6 @@ import { api } from "@/lib/api";
 import {
   activeSessionHref,
   type ActiveSession,
-  type ActivityDay,
   type CoachBrief,
 } from "@/lib/public-api";
 import type { ExamListItem } from "@/lib/types";
@@ -23,7 +22,11 @@ import { StreakBadge } from "@/components/ui/streak-badge";
 import { FocusPicker } from "@/components/bugun/focus-picker";
 import { ExamBanner, bannerExam } from "@/components/exam-banner";
 import { PushOptIn } from "@/components/push-opt-in";
-import { PlanWeekCard } from "@/components/plan/plan-week-card";
+import { PlanShiftList } from "@/components/plan/plan-shift-list";
+import { CountdownHero } from "@/components/bugun/countdown-hero";
+import { WeekStrip7 } from "@/components/bugun/week-strip7";
+import { HeroCollapse } from "@/components/bugun/hero-collapse";
+import type { WeekDayState } from "@/lib/public-api";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -33,20 +36,48 @@ export const dynamic = "force-dynamic";
  * makinesinin kartı (/me/coach), yanı günün özeti. Koç rayı burada YOK.
  * Görünüm v3 "Nöbet" (Doc 49/11 W-D): tek vurgu, rozet/ikon eşlikli durum.
  */
+
+/** Eski sunucu `weekly.days` vermiyorsa aktif gün sayısından türetilen çizelge (TR takvimi, Pzt=0). */
+function yedekGunler(activeDays: number): WeekDayState[] {
+  const tr = new Date(Date.now() + 3 * 3600 * 1000 - 4 * 3600 * 1000);
+  const today = (tr.getUTCDay() + 6) % 7;
+  return Array.from({ length: 7 }, (_, i) =>
+    i < activeDays
+      ? "done"
+      : i === today
+        ? "today"
+        : i < today
+          ? "missed"
+          : "future",
+  );
+}
+function tarihEtiketi(iso: string | null | undefined): string | null {
+  if (!iso) return null;
+  const d = new Date(`${iso}T00:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? null
+    : d.toLocaleDateString("tr-TR", {
+        day: "numeric",
+        month: "long",
+        timeZone: "UTC",
+      });
+}
+
 export default async function BugunPage() {
-  const [brief, exams, active, activity] = await Promise.all([
+  const [brief, exams, active] = await Promise.all([
     api<CoachBrief>("/me/coach"),
     api<ExamListItem[]>("/exams", {
       auth: false,
       next: { revalidate: 30 },
     }).catch(() => [] as ExamListItem[]),
     api<ActiveSession | null>("/quiz/active-session").catch(() => null),
-    api<ActivityDay[]>("/progress/activity").catch(() => [] as ActivityDay[]),
   ]);
-  const { today, gamification, greeting } = brief;
+  const { today, gamification, greeting, exam } = brief;
   // Plan kartları kendi bileşeniyle çizilir (PlanWeekCard); koç listesine girmez.
   const planOffer = brief.cards.some((c) => c.type === "plan_offer");
-  const [hero, ...cards] = brief.cards.filter((c) => c.type !== "plan_week" && c.type !== "plan_offer");
+  const [hero, ...cards] = brief.cards.filter(
+    (c) => c.type !== "plan_week" && c.type !== "plan_offer",
+  );
   const rank = gamification.rank;
   const rankPct =
     rank?.next != null
@@ -64,8 +95,6 @@ export default async function BugunPage() {
     .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
   const liveExam = exams.find((e) => e.state === "active");
   const serit = bannerExam(exams);
-  const week = activity.slice(-7);
-  const dayShort = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
   const sectionLabel = "type-label text-ink-subtle";
 
   return (
@@ -73,42 +102,79 @@ export default async function BugunPage() {
       {serit && <ExamBanner exam={serit} />}
       <PushOptIn />
 
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <h1 className="type-title text-ink">
+      <div className="mb-6 flex flex-col gap-1">
+        <div className="flex flex-nowrap items-baseline justify-between gap-3">
+          <span className="type-brand text-ink">paemisyon</span>
+          <div className="flex items-center gap-3">
+            <StoreBadges width={96} className="hidden md:inline-flex" />
+            <StreakBadge
+              days={today.streak.current}
+              atRisk={today.streak.atRisk}
+            />
+          </div>
+        </div>
+        <h1 className="type-brand font-normal text-ink">
           {greeting.displayName
             ? `Merhaba, ${greeting.displayName}`
             : "Merhaba"}
         </h1>
-        <div className="flex items-center gap-3">
-          <StoreBadges width={96} className="hidden sm:inline-flex" />
-          <StreakBadge
-            days={today.streak.current}
-            atRisk={today.streak.atRisk}
-          />
-        </div>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
         {/* Sol sahne (8 kolon): hero + destek kartları + nöbet çizelgesi */}
-        <div className="flex flex-col gap-4 lg:col-span-2">
+        <div className="flex flex-col gap-5 lg:col-span-2">
+          {/* v4 "Nöbet defteri" (Doc 49/13 §2): afiş → çizelge → hedef → görev → plan. */}
+          <HeroCollapse
+            label={
+              exam?.daysLeft != null
+                ? `${exam.daysLeft} gün${exam.name ? ` · ${exam.name}` : ""}`
+                : "Bugün"
+            }
+          >
+            <CountdownHero
+              examName={exam?.name ?? null}
+              examDateLabel={tarihEtiketi(exam?.date)}
+              daysLeft={exam?.daysLeft ?? brief.daysToExam ?? null}
+              activeDays={gamification.weekly.activeDays}
+              goalDays={gamification.weekly.goalDays}
+            />
+          </HeroCollapse>
+
+          <WeekStrip7
+            days={
+              gamification.weekly.days ??
+              yedekGunler(gamification.weekly.activeDays)
+            }
+          />
+
+          <p className="type-body-sm flex items-center gap-3 text-ink-soft">
+            <span aria-hidden className="h-5 w-0.5 bg-accent" />
+            Bugünkü hedef {Math.min(today.answered, today.goal)}/{today.goal}{" "}
+            soru
+          </p>
+
           <Card className="flex flex-col gap-3 p-6">
-            <span className="type-label text-accent-ink">Koç</span>
-            <p className="type-heading text-ink">
+            <span className="type-label text-accent-ink">
+              {hero?.title ? "Bugünün görevi" : "Koç"}
+            </span>
+            <p className="type-title text-ink">
               {hero?.title ?? "Bugün senin için bir tur hazır."}
             </p>
             {hero?.body ? (
-              <p className="type-body text-ink-soft">{hero.body}</p>
+              <p className="type-body-sm text-ink-soft">{hero.body}</p>
             ) : null}
-            <div className="mt-2 flex flex-wrap items-center gap-3">
+            <div className="mt-1 flex flex-wrap items-center gap-3">
               <ButtonLink href={webRoute(brief.primaryAction.route)} size="lg">
-                Bugün Çalış
+                {brief.primaryAction.label || "Bugün Çalış"}
               </ButtonLink>
               <FocusPicker />
             </div>
           </Card>
 
-          {/* Haftalık plan (Doc 49/12 F8-A): özet sunucudan; plan yoksa koçun daveti varsa kart. */}
-          {hero?.type !== "comeback" ? <PlanWeekCard plan={brief.plan} offer={planOffer} /> : null}
+          {/* Haftalık plan (Doc 49/12 F8-A) — vardiya listesi; dönüş gününde gizli. */}
+          {hero?.type !== "comeback" ? (
+            <PlanShiftList plan={brief.plan} offer={planOffer} />
+          ) : null}
 
           {cards.length > 0 ? (
             <div className="grid gap-3 sm:grid-cols-2">
@@ -123,54 +189,6 @@ export default async function BugunPage() {
                 />
               ))}
             </div>
-          ) : null}
-
-          {week.length === 7 ? (
-            <Card className="flex flex-col gap-3">
-              <span className={sectionLabel}>Son 7 gün · nöbet çizelgesi</span>
-              <div className="flex gap-2">
-                {week.map((d, i) => {
-                  const isToday = i === week.length - 1;
-                  const dow =
-                    dayShort[new Date(d.date + "T00:00:00Z").getUTCDay()];
-                  const active = d.questionsAnswered > 0;
-                  return (
-                    <div
-                      key={d.date}
-                      className={cn(
-                        "flex-1 rounded-control border py-2 text-center",
-                        isToday
-                          ? "border-accent bg-accent-soft"
-                          : active
-                            ? "border-success/40 bg-success-soft"
-                            : "border-dashed border-line",
-                      )}
-                    >
-                      <p
-                        className={cn(
-                          "type-label",
-                          isToday ? "text-accent-ink" : "text-ink-subtle",
-                        )}
-                      >
-                        {isToday ? "Bugün" : dow}
-                      </p>
-                      <p
-                        className={cn(
-                          "type-subhead tabular mt-0.5",
-                          active
-                            ? isToday
-                              ? "text-accent-ink"
-                              : "text-success-ink"
-                            : "text-ink-subtle",
-                        )}
-                      >
-                        {active ? d.questionsAnswered : "—"}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </Card>
           ) : null}
         </div>
 

@@ -12,7 +12,7 @@ export function KeyHint({
     <kbd
       aria-hidden
       className={cn(
-        "hidden rounded-[6px] border border-line bg-surface-alt px-1.5 py-0.5 font-body text-[11px] leading-4 font-semibold text-ink-subtle md:inline-block",
+        "hidden rounded-[6px] border border-line bg-surface-alt px-1.5 py-0.5 font-body text-[11px] leading-4 font-semibold text-ink-soft md:inline-block",
         className,
       )}
     >
