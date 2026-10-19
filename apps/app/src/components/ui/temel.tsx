@@ -13,7 +13,7 @@ import { size, type TypeRole } from "@/theme/tokens";
 
 /* ---------------------------------------------------------------- Metin */
 
-export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "success" | "danger" | "onAccent";
+export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "success" | "danger" | "onAccent" | "panelInk" | "panelSoft";
 
 /** `variant` tipografi rolüdür; RN `Text`in kendi `role` (erişilebilirlik) prop'u ayrı kalır. */
 export function AppText({
@@ -33,6 +33,8 @@ export function AppText({
     : tone === "success" ? colors.success
     : tone === "danger" ? colors.danger
     : tone === "onAccent" ? colors.onAccent
+    : tone === "panelInk" ? colors.panelInk
+    : tone === "panelSoft" ? colors.panelSoft
     : colors.ink;
   return (
     <Text {...props} maxFontSizeMultiplier={type[role].fontSize > 17 ? 1.35 : 2} style={[type[role], { color }, style]}>

@@ -27,6 +27,8 @@ export interface TodayTaskAction {
   source: HomeSource;
 }
 
+export type WeekDayState = "done" | "missed" | "today" | "future";
+
 export type TodayTaskKind = "exam" | "resume" | "first" | "comeback" | "weekly_risk" | "start" | "done";
 
 export interface TodayTaskSecondary {
@@ -71,7 +73,9 @@ export interface CoachBrief {
   readiness: { courses: ReadinessCourse[]; weakest: ReadinessTopic[]; unresolvedWrongCount: number };
   focus: DailyFocus | null;
   todayTask: TodayTask | null;
-  gamification?: { weekly?: { activeDays: number; goalDays: number } };
+  today?: { goal: number; answered: number; streak?: { current: number; longest: number } };
+  /** `days`: Pzt→Paz 7 günlük nöbet çizelgesi (Doc 49/13 F9-B); eski sunucuda alan yok. */
+  gamification?: { weekly?: { activeDays: number; goalDays: number; days?: WeekDayState[] } };
   /** Koç kartları (yalnız tip ve metin okunur; Bugün görev motorunu çizer). */
   cards?: { type: string; title: string; body?: string }[];
   /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */

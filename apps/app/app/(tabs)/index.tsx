@@ -2,37 +2,103 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
 import { ChevronDown } from "lucide-react-native";
 import { useState } from "react";
-import { Pressable, View } from "react-native";
-import { CountdownHeader, CourseTile, PlanWeekCard, TaskHero } from "@/components/domain";
-import { ActionBar, AppText, Badge, Button, Card, ListRow, Notice, Screen, Skeleton } from "@/components/ui";
+import { Animated, Pressable, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import {
+  CountdownHero,
+  CourseTile,
+  PlanShiftList,
+  TaskHero,
+  WeekStrip7,
+} from "@/components/domain";
+import {
+  ActionBar,
+  AppText,
+  Badge,
+  Button,
+  Card,
+  ListRow,
+  Notice,
+  Skeleton,
+} from "@/components/ui";
 import { FocusSheet } from "@/features/home/focus-sheet";
-import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction } from "@/features/home/queries";
+import {
+  homeKeys,
+  todayIndexTr,
+  useCoachBrief,
+  useMe,
+  type TodayTaskAction,
+  type WeekDayState,
+} from "@/features/home/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
+import { fontFamily } from "@/theme/tokens";
+
+/** Hero'nun (sayı kartı) başlığa çöktüğü kaydırma aralığı (pt). */
+const COLLAPSE_FROM = 150;
+const COLLAPSE_TO = 230;
+
+function tarihEtiketi(iso: string | null): string | null {
+  if (!iso) return null;
+  const d = new Date(`${iso}T00:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? null
+    : d.toLocaleDateString("tr-TR", {
+        day: "numeric",
+        month: "long",
+        timeZone: "UTC",
+      });
+}
+
+/** Eski sunucu `weekly.days` vermiyorsa aktif gün sayısından türetilen çizelge. */
+function yedekGunler(activeDays: number, todayIndex: number): WeekDayState[] {
+  return Array.from({ length: 7 }, (_, i) =>
+    i < activeDays
+      ? "done"
+      : i === todayIndex
+        ? "today"
+        : i < todayIndex
+          ? "missed"
+          : "future",
+  );
+}
 
 /**
- * Bugün — Yerleşim B (Doc 48/02 kararı): görev kartı bağlamı anlatır; birincil eylem ve odak
- * sekme çubuğunun üstündeki sabit çubukta. Sekiz durum sunucunun `todayTask.kind` alanından
- * çizilir; istemci kural bilmez. Çevrimdışı: son bilinen brief + devre dışı CTA ve nedeni.
+ * Bugün — v4 "Nöbet defteri" yerleşimi (Doc 49/13 §2): marka + seri, serif selam, lacivert
+ * geri sayım afişi, 7 günlük nöbet çizelgesi, günlük hedef satırı, düğmesiz görev kartı,
+ * haftalık plan vardiya listesi, çizgili Hazırlık/Derslerin, kapanış cümlesi. Tek birincil
+ * eylem alttaki sabit çubukta; sekiz görev durumu sunucunun `todayTask.kind` alanından.
+ * Kaydırınca afiş ince başlığa çöker. Çevrimdışı: son bilinen brief + devre dışı CTA.
  */
 export default function BugunScreen() {
   const router = useRouter();
   const qc = useQueryClient();
   const { colors, space } = useTheme();
+  const insets = useSafeAreaInsets();
   const me = useMe();
   const brief = useCoachBrief();
   const [focusOpen, setFocusOpen] = useState(false);
   const pending = usePendingAnswers();
+  const [scrollY] = useState(() => new Animated.Value(0));
 
   const offline = brief.isError && brief.error instanceof NetworkError;
   const data = brief.data; // hata durumunda da son bilinen veri (react-query önbelleği)
   const task = data?.todayTask ?? null;
+  const weekly = data?.gamification?.weekly;
+  const days =
+    weekly?.days ?? yedekGunler(weekly?.activeDays ?? 0, todayIndexTr());
+  const streak = data?.today?.streak?.current ?? 0;
+  const goal = data?.today?.goal ?? task?.progress?.total ?? null;
+  const answered = data?.today?.answered ?? task?.progress?.answered ?? 0;
 
-  const selamlama = (() => {
-    const h = new Date().getHours();
-    return h < 6 ? "İyi nöbetler" : h < 12 ? "Günaydın" : h < 18 ? "İyi günler" : "İyi akşamlar";
-  })();
+  // Çöken başlık: sayı kartı yukarı kayınca ince "184 gün · PAEM 2027" satırı belirir.
+  const headerOpacity = scrollY.interpolate({
+    inputRange: [COLLAPSE_FROM, COLLAPSE_TO],
+    outputRange: [0, 1],
+    extrapolate: "clamp",
+  });
+  const headerHeight = insets.top + 44;
 
   function run(action: TodayTaskAction) {
     if (action.type === "open_exams") {
@@ -40,7 +106,10 @@ export default function BugunScreen() {
       return;
     }
     if (action.type === "resume_session" && action.sessionId) {
-      router.push({ pathname: "/seans", params: { resume: action.sessionId, source: action.source } });
+      router.push({
+        pathname: "/seans",
+        params: { resume: action.sessionId, source: action.source },
+      });
       return;
     }
     router.push({
@@ -56,51 +125,125 @@ export default function BugunScreen() {
     });
   }
 
+  const serif400 = { fontFamily: fontFamily.display[400] } as const;
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <Screen style={{ paddingBottom: 140 }}>
+      <Animated.ScrollView
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          { useNativeDriver: true },
+        )}
+        scrollEventThrottle={16}
+        keyboardShouldPersistTaps="handled"
+        contentInsetAdjustmentBehavior="never"
+        contentContainerStyle={{
+          paddingHorizontal: space.screenGutter,
+          paddingTop: insets.top + space.s4,
+          paddingBottom: 150,
+          gap: space.s5,
+        }}
+      >
+        {/* Üst satır: marka sözcüğü + seri. */}
         <View style={{ gap: space.s1 }}>
-          <AppText variant="bodySm" tone="soft">
-            {selamlama}
-            {me.data?.displayName ? `, ${me.data.displayName}` : ""}
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "baseline",
+              justifyContent: "space-between",
+            }}
+          >
+            <AppText variant="brand" accessibilityRole="header">
+              paemisyon
+            </AppText>
+            {streak > 0 ? (
+              <AppText variant="bodySm" tone="soft">
+                Seri · {streak} gün
+              </AppText>
+            ) : null}
+          </View>
+          <AppText variant="brand" style={serif400}>
+            {me.data?.displayName
+              ? `Merhaba, ${me.data.displayName}`
+              : "Merhaba"}
           </AppText>
-          <AppText variant="title">Bugün</AppText>
         </View>
 
         {pending > 0 ? (
           <Card tone="alt" style={{ gap: space.s2 }}>
-            <AppText variant="subhead">{pending} cevap gönderilmeyi bekliyor</AppText>
-            <AppText variant="bodySm" tone="soft">
-              Çevrimdışı çözdüklerin cihazda; bağlantı gelince kendiliğinden gider.
+            <AppText variant="subhead">
+              {pending} cevap gönderilmeyi bekliyor
             </AppText>
-            <Button title="Şimdi gönder" variant="secondary" onPress={() => void flushQueue().then(() => qc.invalidateQueries({ queryKey: homeKeys.brief }))} />
+            <AppText variant="bodySm" tone="soft">
+              Çevrimdışı çözdüklerin cihazda; bağlantı gelince kendiliğinden
+              gider.
+            </AppText>
+            <Button
+              title="Şimdi gönder"
+              variant="secondary"
+              onPress={() =>
+                void flushQueue().then(() =>
+                  qc.invalidateQueries({ queryKey: homeKeys.brief }),
+                )
+              }
+            />
           </Card>
         ) : null}
         {offline ? (
           <Notice tone="warning" title="Çevrimdışısın">
-            {data ? "Son bilinen durum gösteriliyor; yeni tur için bağlantı gerekiyor." : "Bağlantı gelince Bugün yüklenecek."}
+            {data
+              ? "Son bilinen durum gösteriliyor; yeni tur için bağlantı gerekiyor."
+              : "Bağlantı gelince Bugün yüklenecek."}
           </Notice>
         ) : brief.isError ? (
           <Notice tone="error" title="Koç yüklenemedi">
-            {brief.error instanceof ApiError ? `${brief.error.message} (${brief.error.code})` : brief.error.message}
+            {brief.error instanceof ApiError
+              ? `${brief.error.message} (${brief.error.code})`
+              : brief.error.message}
           </Notice>
         ) : null}
 
         {!data && brief.isPending ? (
           <View style={{ gap: space.s3 }}>
-            <Skeleton height={64} radiusKey="card" />
             <Skeleton height={180} radiusKey="card" />
-            <Skeleton height={220} radiusKey="card" />
+            <Skeleton height={72} radiusKey="control" />
+            <Skeleton height={140} radiusKey="card" />
           </View>
         ) : data ? (
           <>
-            <CountdownHeader
+            <CountdownHero
               examName={data.exam.name}
+              examDateLabel={tarihEtiketi(data.exam.date)}
               daysLeft={data.exam.daysLeft}
-              activeDays={data.gamification?.weekly?.activeDays ?? 0}
-              targetDays={data.gamification?.weekly?.goalDays ?? 5}
-              todayIndex={todayIndexTr()}
+              activeDays={
+                weekly?.activeDays ?? days.filter((d) => d === "done").length
+              }
+              goalDays={weekly?.goalDays ?? 5}
+              onPickDate={() => router.push("/(tabs)/ben/ayarlar")}
             />
+
+            <WeekStrip7 days={days} />
+
+            {goal != null ? (
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: space.s3,
+                }}
+              >
+                <View
+                  style={{
+                    width: 2,
+                    alignSelf: "stretch",
+                    backgroundColor: colors.accent,
+                  }}
+                />
+                <AppText variant="bodySm" tone="soft">
+                  Bugünkü hedef {Math.min(answered, goal)}/{goal} soru
+                </AppText>
+              </View>
+            ) : null}
 
             {task ? (
               <View style={{ gap: space.s2 }}>
@@ -108,31 +251,87 @@ export default function BugunScreen() {
                   kind={task.kind}
                   title={task.title}
                   body={task.reason}
-                  meta={task.action.type === "start_session" && task.action.count ? `${task.action.count} soru` : task.progress?.label ?? null}
-                  progress={task.progress ? { done: task.progress.answered, total: task.progress.total } : null}
+                  progress={
+                    task.kind === "resume" && task.progress
+                      ? {
+                          done: task.progress.answered,
+                          total: task.progress.total,
+                        }
+                      : null
+                  }
+                  compact
                 />
                 {task.kind === "resume" && task.finishSessionId ? (
-                  <Button title="Şimdilik bitir, sonucu gör" variant="ghost" onPress={() => router.push({ pathname: "/sonuc", params: { sessionId: task.finishSessionId! } })} />
+                  <Button
+                    title="Şimdilik bitir, sonucu gör"
+                    variant="ghost"
+                    onPress={() =>
+                      router.push({
+                        pathname: "/sonuc",
+                        params: { sessionId: task.finishSessionId! },
+                      })
+                    }
+                  />
                 ) : null}
                 {task.secondary ? (
-                  <Card style={{ paddingVertical: 0 }}>
-                    <ListRow title={task.secondary.title} subtitle={task.secondary.subtitle} divider={false} onPress={() => run(task.secondary!.action)} trailing={<AppText variant="subhead" tone="accentInk">{task.secondary.actionLabel}</AppText>} chevron={false} />
-                  </Card>
+                  <ListRow
+                    title={task.secondary.title}
+                    subtitle={task.secondary.subtitle}
+                    divider
+                    onPress={() => run(task.secondary!.action)}
+                    trailing={
+                      <AppText variant="subhead" tone="accentInk">
+                        {task.secondary.actionLabel}
+                      </AppText>
+                    }
+                    chevron={false}
+                  />
                 ) : null}
               </View>
             ) : null}
 
-            {/* Haftalık plan (Doc 49/12 F8-A): özet sunucudan; plan yoksa koçun daveti varsa kart. */}
+            {/* Haftalık plan (Doc 49/12 F8-A) — vardiya listesi; dönüş gününde gizli. */}
             {task?.kind !== "comeback" ? (
-              <PlanWeekCard
+              <PlanShiftList
                 plan={data.plan ?? null}
-                offer={Boolean(data.cards?.some((c) => c.type === "plan_offer"))}
-                onOpen={() => router.push(data.plan ? "/planim" : { pathname: "/planim", params: { kur: "1" } })}
+                offer={Boolean(
+                  data.cards?.some((c) => c.type === "plan_offer"),
+                )}
+                onOpen={() =>
+                  router.push(
+                    data.plan
+                      ? "/planim"
+                      : { pathname: "/planim", params: { kur: "1" } },
+                  )
+                }
                 onStart={(item) => {
                   if (item.kind === "topic" && item.topicId) {
-                    router.push({ pathname: "/seans", params: { source: "plan", count: String(Math.max(5, Math.min(20, item.remainingMinutes))), focusKind: "topic", topicId: item.topicId, courseId: "", recipe: "" } });
+                    router.push({
+                      pathname: "/seans",
+                      params: {
+                        source: "plan",
+                        count: String(
+                          Math.max(5, Math.min(20, item.remainingMinutes)),
+                        ),
+                        focusKind: "topic",
+                        topicId: item.topicId,
+                        courseId: "",
+                        recipe: "",
+                      },
+                    });
                   } else if (item.kind === "review") {
-                    router.push({ pathname: "/seans", params: { mode: "review", source: "plan", count: "10", focusKind: "wrongs", courseId: "", topicId: "", recipe: "" } });
+                    router.push({
+                      pathname: "/seans",
+                      params: {
+                        mode: "review",
+                        source: "plan",
+                        count: "10",
+                        focusKind: "wrongs",
+                        courseId: "",
+                        topicId: "",
+                        recipe: "",
+                      },
+                    });
                   } else {
                     router.push("/(tabs)/denemeler");
                   }
@@ -140,72 +339,167 @@ export default function BugunScreen() {
               />
             ) : null}
 
-            {/* Hazırlık (Doc 48/02 karar 1–2): zayıf konular başta; dönüşte gizli. */}
+            {/* Hazırlık (Doc 48/02 karar 1–2): zayıf konular başta; dönüşte ve ölçüm yokken gizli. Çizgili liste, kart yok. */}
+            {data.readiness.weakest.length > 0 ? (
+              <View style={{ gap: space.s2 }}>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "baseline",
+                  }}
+                >
+                  <AppText variant="heading" accessibilityRole="header">
+                    Hazırlık
+                  </AppText>
+                  {data.readiness.weakest.length > 0 ? (
+                    <AppText variant="bodySm" tone="subtle">
+                      En zayıf {data.readiness.weakest.length} konu
+                    </AppText>
+                  ) : null}
+                </View>
+                {data.readiness.weakest.length > 0 ? (
+                  <View>
+                    {data.readiness.weakest.map((t, i) => (
+                      <ListRow
+                        key={t.topicId}
+                        title={t.name}
+                        subtitle={`${t.courseName} · %${Math.round(t.accuracy * 100)} doğru`}
+                        divider={i < data.readiness.weakest.length - 1}
+                        chevron={false}
+                        trailing={
+                          <AppText variant="subhead" tone="accentInk">
+                            10 soru ›
+                          </AppText>
+                        }
+                        onPress={() =>
+                          router.push({
+                            pathname: "/seans",
+                            params: {
+                              source: "home_weak_topic",
+                              count: "10",
+                              focusKind: "topic",
+                              topicId: t.topicId,
+                              courseId: "",
+                              recipe: "",
+                            },
+                          })
+                        }
+                      />
+                    ))}
+                  </View>
+                ) : null}
+              </View>
+            ) : null}
+
             <View style={{ gap: space.s2 }}>
-              <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "baseline",
+                }}
+              >
                 <AppText variant="heading" accessibilityRole="header">
-                  Hazırlık
+                  Derslerin
                 </AppText>
-                <Pressable accessibilityRole="button" onPress={() => router.push("/(tabs)/kutuphane")} hitSlop={8}>
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => router.push("/(tabs)/kutuphane")}
+                  hitSlop={8}
+                >
                   <AppText variant="subhead" tone="accentInk">
                     Tüm dersler
                   </AppText>
                 </Pressable>
               </View>
-
-              {task?.kind !== "comeback" && data.readiness.weakest.length > 0 ? (
-                <Card style={{ paddingVertical: 0 }}>
-                  <View style={{ paddingTop: space.s3 }}>
-                    <AppText variant="label" tone="subtle">
-                      En zayıf {data.readiness.weakest.length} konu
-                    </AppText>
-                  </View>
-                  {data.readiness.weakest.map((t, i) => (
-                    <ListRow
-                      key={t.topicId}
-                      title={t.name}
-                      subtitle={`${t.courseName} · %${Math.round(t.accuracy * 100)} doğru`}
-                      divider={i < data.readiness.weakest.length - 1}
-                      chevron={false}
-                      trailing={
-                        <AppText variant="subhead" tone="accentInk">
-                          10 soru ›
-                        </AppText>
-                      }
+              {data.readiness.courses.length > 0 ? (
+                <View>
+                  {data.readiness.courses.map((c) => (
+                    <CourseTile
+                      key={c.courseId}
+                      name={c.name}
+                      icon={c.icon}
+                      accuracy={c.accuracy}
+                      solved={c.solved}
+                      state={c.state}
                       onPress={() =>
-                        router.push({ pathname: "/seans", params: { source: "home_weak_topic", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })
+                        router.push({
+                          pathname: "/seans",
+                          params: {
+                            source: "home_suggestion",
+                            count: "10",
+                            focusKind: "course",
+                            courseId: c.courseId,
+                            topicId: "",
+                            recipe: "",
+                          },
+                        })
                       }
                     />
                   ))}
-                </Card>
-              ) : null}
-
-              {data.readiness.courses.length > 0 ? (
-                <Card style={{ paddingVertical: space.s1 }}>
-                  {data.readiness.courses.map((c) => (
-                    <CourseTile key={c.courseId} name={c.name} icon={c.icon} accuracy={c.accuracy} solved={c.solved} state={c.state} onPress={() => router.push({ pathname: "/seans", params: { source: "home_suggestion", count: "10", focusKind: "course", courseId: c.courseId, topicId: "", recipe: "" } })} />
-                  ))}
-                </Card>
+                </View>
               ) : (
-                <Card>
-                  <AppText variant="subhead">Henüz ölçüm yok</AppText>
-                  <AppText variant="bodySm" tone="soft">
-                    İlk turdan sonra dersler ve doğruluk burada görünür. Sıfır yazmıyoruz; henüz ölçülmedi.
-                  </AppText>
-                </Card>
+                <AppText variant="bodySm" tone="soft">
+                  İlk turdan sonra dersler ve doğruluk burada görünür. Sıfır
+                  yazmıyoruz; henüz ölçülmedi.
+                </AppText>
               )}
             </View>
+
+            <AppText
+              variant="brand"
+              tone="soft"
+              style={[serif400, { paddingTop: space.s2 }]}
+            >
+              Az ama her gün.
+            </AppText>
           </>
         ) : null}
-      </Screen>
+      </Animated.ScrollView>
 
-      {/* Yerleşim B: sabit eylem çubuğu — odak düğmesi + sunucunun verdiği birincil eylem. */}
+      {/* Çöken başlık: hero kaydırılınca ince satır (Doc 49/13 §2 madde 7). */}
+      {data?.exam.daysLeft != null ? (
+        <Animated.View
+          pointerEvents="none"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: headerHeight,
+            paddingTop: insets.top,
+            paddingHorizontal: space.screenGutter,
+            justifyContent: "center",
+            backgroundColor: colors.bg,
+            borderBottomWidth: 0.5,
+            borderBottomColor: colors.line,
+            opacity: headerOpacity,
+          }}
+        >
+          <AppText
+            variant="brand"
+            tone="accentInk"
+            style={serif400}
+            numberOfLines={1}
+          >
+            {data.exam.daysLeft} gün
+            {data.exam.name ? ` · ${data.exam.name}` : ""}
+          </AppText>
+        </Animated.View>
+      ) : null}
+
+      {/* Yerleşim B: sabit eylem çubuğu — odak düğmesi + sunucunun verdiği birincil eylem (ekranda tek "Başla"). */}
       {task ? (
         <View style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
           <BugunActionBar
             label={task.action.label}
             kind={task.kind}
-            focusLabel={data?.focus?.kind && data.focus.kind !== "coach" ? (data.focus.label ?? "Seçili") : "Koç"}
+            focusLabel={
+              data?.focus?.kind && data.focus.kind !== "coach"
+                ? (data.focus.label ?? "Seçili")
+                : "Koç"
+            }
             disabled={offline && task.action.type !== "resume_session"}
             onFocus={() => setFocusOpen(true)}
             onPress={() => run(task.action)}
@@ -232,18 +526,62 @@ export default function BugunScreen() {
   );
 }
 
-function BugunActionBar({ label, kind, focusLabel, disabled, onFocus, onPress }: { label: string; kind: string; focusLabel: string; disabled: boolean; onFocus: () => void; onPress: () => void }) {
+function BugunActionBar({
+  label,
+  kind,
+  focusLabel,
+  disabled,
+  onFocus,
+  onPress,
+}: {
+  label: string;
+  kind: string;
+  focusLabel: string;
+  disabled: boolean;
+  onFocus: () => void;
+  onPress: () => void;
+}) {
   const { colors, radius, space } = useTheme();
   const showFocus = kind !== "resume" && kind !== "exam";
   return (
-    <View style={{ paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: space.s3, backgroundColor: colors.bg, borderTopWidth: 0.5, borderTopColor: colors.line, flexDirection: "row", gap: space.s2 }}>
+    <View
+      style={{
+        paddingHorizontal: space.screenGutter,
+        paddingTop: space.s3,
+        paddingBottom: space.s3,
+        backgroundColor: colors.bg,
+        borderTopWidth: 0.5,
+        borderTopColor: colors.line,
+        flexDirection: "row",
+        gap: space.s2,
+      }}
+    >
       {showFocus ? (
-        <Pressable accessibilityRole="button" accessibilityLabel={`Odak: ${focusLabel}`} onPress={onFocus} style={({ pressed }) => ({ minHeight: 54, minWidth: 92, borderRadius: radius.card, borderWidth: 0.5, borderColor: colors.line, backgroundColor: colors.surface, paddingHorizontal: 12, justifyContent: "center", opacity: pressed ? 0.8 : 1 })}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`Odak: ${focusLabel}`}
+          onPress={onFocus}
+          style={({ pressed }) => ({
+            minHeight: 54,
+            minWidth: 92,
+            borderRadius: radius.card,
+            borderWidth: 0.5,
+            borderColor: colors.line,
+            backgroundColor: colors.surface,
+            paddingHorizontal: 12,
+            justifyContent: "center",
+            opacity: pressed ? 0.8 : 1,
+          })}
+        >
           <AppText variant="label" tone="subtle">
             Odak
           </AppText>
           <View style={{ flexDirection: "row", alignItems: "center", gap: 2 }}>
-            <AppText variant="subhead" numberOfLines={1} style={{ maxWidth: 110 }}>
+            <AppText
+              variant="subhead"
+              numberOfLines={1}
+              style={{ maxWidth: 110 }}
+            >
               {focusLabel}
             </AppText>
             <ChevronDown color={colors.inkSoft} size={16} strokeWidth={2} />
@@ -251,9 +589,20 @@ function BugunActionBar({ label, kind, focusLabel, disabled, onFocus, onPress }:
         </Pressable>
       ) : null}
       <View style={{ flex: 1 }}>
-        <ActionBar title={label} onPress={onPress} variant={kind === "done" ? "secondary" : "primary"} />
+        <ActionBar
+          title={label}
+          onPress={onPress}
+          variant={kind === "done" ? "secondary" : "primary"}
+        />
       </View>
-      {disabled ? <Badge tone="warning" style={{ position: "absolute", top: -10, right: space.screenGutter }}>Çevrimdışı</Badge> : null}
+      {disabled ? (
+        <Badge
+          tone="warning"
+          style={{ position: "absolute", top: -10, right: space.screenGutter }}
+        >
+          Çevrimdışı
+        </Badge>
+      ) : null}
     </View>
   );
 }

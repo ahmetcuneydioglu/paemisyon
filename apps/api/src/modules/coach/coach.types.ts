@@ -1,4 +1,5 @@
 import type { PlanBrief } from '../plan/plan.service';
+import type { HaftaGunDurumu } from './hafta-gunleri';
 import type { BriefFlags, DailyFocusView, ExamInfo, Readiness, TodayTask } from './home-v2.types';
 
 /**
@@ -207,7 +208,8 @@ export interface CoachBrief {
       longestStreak: number;
       maxDailyQuestions: number;
     };
-    weekly: { activeDays: number; goalDays: number };
+    /** `days`: Pzt→Paz 7 günlük nöbet çizelgesi (Doc 49/13 F9-B). */
+    weekly: { activeDays: number; goalDays: number; days: HaftaGunDurumu[] };
   };
   /** Haftalık fotoğraf (Doc 27 wireframe 02): ders bazlı mastery değişimi. */
   weeklyPhoto: { courseName: string; deltaPct: number }[];

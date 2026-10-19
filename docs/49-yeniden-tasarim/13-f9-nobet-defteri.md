@@ -112,3 +112,20 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   yükleme listesi, `tokens.ts` aile haritası (display 400/500/600), mevzuat ekranındaki sabit
   font adı haritaya bağlandı; tsc/eslint temiz; SE simülatöründe giriş ekranı Lora başlık +
   Inter gövde + kağıt zemin ile açıldı. Push yok — plan gereği A, B ile birlikte yayınlanır.
+- **F9-B Bugün yeniden (20 Eki 2026):** **API:** `coach/hafta-gunleri.ts` (saf, 3 spec) —
+  `gamification.weekly.days` Pzt→Paz `done|missed|today|future` (DailyUsage günleri, uygulama
+  günü TR 04:00; `HomeRaw.weekDays` üzerinden brief'e, kurallara girmez); `PlanBrief.items`
+  (bu haftanın kompakt kalemleri — vardiya listesi için); `GUN_MS` dışa açıldı; 452 test.
+  **Expo:** `CountdownHero` (panel, `hero` rolü, SE'de 96 pt; Lora üst çıkıntısı için satır
+  1,04×boy — 0,9'da rakamın tepesi kırpılıyordu; tarih yoksa "Tarih bekleniyor" + Ayarlar
+  bağlantısı), `WeekStrip7` (7 kutu, 44 pt; ✓ / altın bugün / boş), günlük hedef satırı,
+  `TaskHero compact` (meta rozeti yok; eylem alt çubukta), `PlanShiftList` (sol altın çizgi,
+  kalan dk / Tamam, ince ilerleme; davet hâli korunur), Hazırlık yalnız zayıf konu varken
+  çizgili liste, "Derslerin" + "Az ama her gün.", üstte `brand` sözcüğü + "Seri · N gün",
+  serif selam; kaydırınca hero RN `Animated` ile ince başlığa çöker ("235 gün · PAEM",
+  150→230 pt); `AppText` tonları `panelInk`/`panelSoft`; eski sunucu için `yedekGunler`
+  türetimi. Ben sekmesi ikonu kodda zaten lucide `user` (bozukluk yalnız Figma'daydı).
+  **Doğrulama:** tsc/eslint temiz; iPhone 17 ve SE, açık+koyu, geçici hesap (plan 26 hafta,
+  5→15 cevap): `first` ve `start` durumları, ikincil "9 çözülmemiş yanlış · Tekrar et",
+  çöken başlık, vardiya listesi 2 kalem, çizelge Pzt ✓. `done` durumu ücretsiz günlük kota
+  (15) yüzünden üretilemedi — görsel P-D turunda beta hesabında bakılacak. Push yok.

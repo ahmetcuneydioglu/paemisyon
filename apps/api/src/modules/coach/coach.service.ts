@@ -16,6 +16,7 @@ import { buildReadiness } from './readiness.logic';
 import { computeTodayTask, haftadaKalanGun, YarimTur } from './today-task.logic';
 import { enGucluKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
+import { haftaGunleri, type HaftaGunDurumu } from './hafta-gunleri';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
 import { PlanService } from '../plan/plan.service';
@@ -176,7 +177,7 @@ export class CoachService {
           longestStreak: ctx.streak.longest,
           maxDailyQuestions: ctx.maxDailyQuestions,
         },
-        weekly: ctx.weekly,
+        weekly: { ...ctx.weekly, days: ctx.home.weekDays },
       },
       // Haftalık fotoğraf (Doc 27 wireframe 02) — Bugün sağ kolonu.
       weeklyPhoto: ctx.weeklyPhoto,
@@ -272,7 +273,7 @@ export class CoachService {
       dailySession,
       badgeCatalog,
       earnedBadges,
-      weeklyActive,
+      weeklyUsage,
       activeDaysTotal,
       maxDaily,
       snapshots,
@@ -333,13 +334,14 @@ export class CoachService {
         where: { userId: user.id },
         select: { badgeKey: true },
       }),
-      this.prisma.dailyUsage.count({
+      this.prisma.dailyUsage.findMany({
         where: {
           userId: user.id,
           usageDate: { gte: weekStart },
           // Aktif gün = o gün en az 1 cevap (deneme dahil — Doc 48 A9).
           totalAnswered: { gt: 0 },
         },
+        select: { usageDate: true },
       }),
       // Toplam aktif gün (rütbe puanı — Doc 24 §5).
       this.prisma.dailyUsage.count({
@@ -691,7 +693,7 @@ export class CoachService {
       },
       dailyQuizPlayed: dailySession?.status === 'completed',
       nextBadge,
-      weekly: { activeDays: weeklyActive, goalDays: WEEKLY_GOAL_DAYS },
+      weekly: { activeDays: weeklyUsage.length, goalDays: WEEKLY_GOAL_DAYS },
       activeDaysTotal,
       maxDailyQuestions: maxDaily._max.totalAnswered ?? 0,
       courseTrend,
@@ -716,6 +718,12 @@ export class CoachService {
         activeSession,
         strongestTopic: enGuclu ? { name: enGuclu.name, accuracy: enGuclu.accuracy } : null,
         daysLeftInWeek,
+        // 7 günlük nöbet çizelgesi (Doc 49/13 F9-B): kurallara girmez, Bugün çizer.
+        weekDays: haftaGunleri(
+          weeklyUsage.map((r) => r.usageDate),
+          bugun,
+          weekStart,
+        ),
       },
     };
   }
@@ -729,6 +737,7 @@ interface HomeRaw {
   activeSession: YarimTur | null;
   strongestTopic: { name: string; accuracy: number } | null;
   daysLeftInWeek: number;
+  weekDays: HaftaGunDurumu[];
 }
 
 /** Varsayılan odak: koç seçer (Doc 25 §5). */

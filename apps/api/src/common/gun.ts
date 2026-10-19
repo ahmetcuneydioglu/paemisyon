@@ -23,7 +23,7 @@
 /** Gün sınırının UTC gece yarısından kayması: TR 04.00 = UTC 01.00. */
 export const GUN_KAYMASI_MS = 3_600_000;
 
-const GUN_MS = 86_400_000;
+export const GUN_MS = 86_400_000;
 
 /** Uygulama günü anahtarı (UTC gece yarısı Date) — @db.Date kolonları için. */
 export function gunAnahtari(t: Date = new Date()): Date {

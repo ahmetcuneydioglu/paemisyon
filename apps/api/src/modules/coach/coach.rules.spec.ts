@@ -492,6 +492,7 @@ describe('plan kuralları (Doc 49/12 F8-A)', () => {
       topicName: 'CMK',
       remainingMinutes: 35,
     },
+    items: [],
     ended: false,
   };
   it('plan_week: yüzde + sıradaki kalem; hedef dolunca önceliği düşer', () => {

@@ -24,6 +24,7 @@ export function TaskHero({
   body,
   meta,
   progress,
+  compact = false,
 }: {
   kind: TaskKind;
   title: string;
@@ -31,6 +32,8 @@ export function TaskHero({
   /** "12 soru · 9 dk" gibi; sunucudan gelen sayılarla kurulur. */
   meta?: string | null;
   progress?: { done: number; total: number } | null;
+  /** v4 "Nöbet defteri" (Doc 49/13): sakin kart — meta rozeti yok, başlık serif, eylem alt çubukta. */
+  compact?: boolean;
 }) {
   const { space } = useTheme();
   const done = kind === "done";
@@ -40,7 +43,7 @@ export function TaskHero({
         <AppText variant="label" tone={done ? "success" : "accentInk"}>
           {KIND_LABEL[kind]}
         </AppText>
-        {meta ? <Badge tone="neutral">{meta}</Badge> : null}
+        {meta && !compact ? <Badge tone="neutral">{meta}</Badge> : null}
       </View>
       <AppText variant="title">{title}</AppText>
       {body ? (

@@ -85,6 +85,18 @@ export interface PlanBrief {
     topicName: string | null;
     remainingMinutes: number;
   } | null;
+  /** Bu haftanın kalemleri, kompakt (Bugün'deki vardiya listesi — Doc 49/13 F9-B). */
+  items: {
+    id: string;
+    kind: StudyPlanItemKind;
+    topicId: string | null;
+    topicName: string | null;
+    courseName: string | null;
+    targetMinutes: number;
+    doneMinutes: number;
+    remainingMinutes: number;
+    status: PlanItemView['status'];
+  }[];
   ended: boolean;
 }
 
@@ -246,6 +258,17 @@ export class PlanService {
             remainingMinutes: next.remainingMinutes,
           }
         : null,
+      items: items.map((i) => ({
+        id: i.id,
+        kind: i.kind,
+        topicId: i.topicId,
+        topicName: i.topicName,
+        courseName: i.courseName,
+        targetMinutes: i.targetMinutes,
+        doneMinutes: i.doneMinutes,
+        remainingMinutes: i.remainingMinutes,
+        status: i.status,
+      })),
       ended:
         (plan.examDate != null && plan.examDate.getTime() < buHafta.getTime()) ||
         plan._count.items === 0,
