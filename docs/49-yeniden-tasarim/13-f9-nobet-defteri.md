@@ -146,3 +146,13 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   axe-core 4.10.2 enjekte):** `/bugun` koyu 0, `/planim` koyu 0; açıkta tek bulgu `KeyHint`
   (⌘K) `inkSubtle`/`surfaceAlt` 3,76 → `inkSoft` yapıldı. Lighthouse canlıda (dev sunucu
   temsilî değil) deploy sonrası koşulacak. Push yok — A+B+D birlikte.
+- **Ara deploy 1 (20 Eki 2026, 02:45 TR):** `claude/f9-defter-derisi` tek push'la `origin/main`'e
+  (58500d1 → 3b13318: plan + A + B + D + F8 docs). CI yeşil; Vercel READY (fra1, ~40 sn);
+  Railway yeni brief alanlarını veriyor. **Canlı (Lukas, Chrome):** `/bugun` yeni deri — 235
+  gün afişi, çizelge (Pzt ✓), 1/40 hedef, görev kartı, 4 kalemli vardiya listesi, çöken başlık;
+  `/planim` (hafta 2/26, Pazartesi cron'u 1. haftayı kapatmış) ve `/kutuphane` yeni paletle.
+  **Lighthouse (canlı, mobil):** landing 100/100/100/100, LCP 1,5 s, CLS 0 (F7'de 95–97);
+  `/kanun/5302` 100/100/100/100, LCP 1,9 s; `/giris` perf 89 (LCP 3,7 s), SEO 66 (giriş sayfası
+  noindex — beklenen). Landing'de `label-content-name-mismatch` tek uyarı (F7'den kalma,
+  mağaza rozeti; F9-C web geçişinde bakılacak). Not: Kütüphane kapı kartları 1280 px'te dört
+  kolon dar kalıyor (F9-C). Mobil yeni deri için beta build gerekli (F9-E, kullanıcı koşar).
