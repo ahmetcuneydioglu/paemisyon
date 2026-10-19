@@ -11,8 +11,8 @@ export type { ColorName, Palette, Scheme, TypeRole };
 
 /** `@expo-google-fonts` paket adları; `useFonts` ile yüklenir (app/_layout.tsx). */
 export const fontFamily = {
-  display: { 600: "BricolageGrotesque_600SemiBold", 700: "BricolageGrotesque_700Bold" },
-  body: { 400: "InstrumentSans_400Regular", 500: "InstrumentSans_500Medium", 600: "InstrumentSans_600SemiBold", 700: "InstrumentSans_700Bold" },
+  display: { 400: "Lora_400Regular", 500: "Lora_500Medium", 600: "Lora_600SemiBold" },
+  body: { 400: "Inter_400Regular", 500: "Inter_500Medium", 600: "Inter_600SemiBold", 700: "Inter_700Bold" },
 } as const;
 
 type RoleStyle = TextStyle & { fontSize: number; lineHeight: number; fontFamily: string };

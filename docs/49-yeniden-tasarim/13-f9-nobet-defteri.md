@@ -97,4 +97,18 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
 
 ## 5. İlerleme
 
-- (boş)
+- **Onay (20 Eki 2026):** plan onaylandı; Lora başlık ağırlığı 600.
+- **F9-A Token v4 (20 Eki 2026):** `design-tokens.json` 4.0.0 — kimlik "Nöbet defteri", §1
+  paleti (+ `panel`/`panelInk`/`panelSoft`), kontrast çiftleri yeniden (altın metin çifti yok;
+  `accentInk`, `panel*`, `accent/panel` eklendi), aileler Lora 400/500/600 + Inter
+  400/500/600/700, roller `hero` (120/108, test 0,9 kuralı: Figma'daki 136/113 oranı
+  test tarafından reddedildi) ve `brand`; `display` 500, `title` 24/29 600, `heading` 20/27,
+  `stat` 600; `radius.card` 10, `radius.panel` 4. Build css/ts/dart yenilendi, kontrast testi
+  47/47. **Web:** `layout.tsx` next/font Lora+Inter (`--font-lora`/`--font-inter`),
+  `globals.css` aile bağları + `type-hero`/`type-brand` yardımcıları + `--radius-panel`;
+  tsc 0, tokens-check 209/0, vitest 80/80; :3012'de ana sayfa lacivert zemin, altın vurgu,
+  Lora başlık doğrulandı. **Expo:** `@expo-google-fonts/lora` + `inter` (eski iki paket
+  kaldırıldı; kilit docker node:22'de yenilendi, @emnapi girdisi yerinde), `_layout.tsx`
+  yükleme listesi, `tokens.ts` aile haritası (display 400/500/600), mevzuat ekranındaki sabit
+  font adı haritaya bağlandı; tsc/eslint temiz; SE simülatöründe giriş ekranı Lora başlık +
+  Inter gövde + kağıt zemin ile açıldı. Push yok — plan gereği A, B ile birlikte yayınlanır.

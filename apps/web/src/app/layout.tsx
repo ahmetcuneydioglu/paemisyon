@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { themeInitScript } from "@/lib/theme";
 import { config } from "@/lib/config";
 
-// v3 "Nöbet" tipografisi (Doc 49 §1.2): display/title/heading Bricolage Grotesque,
-// gövde Instrument Sans. Token ailesi globals.css'te bu değişkenlere bağlanır.
-const bricolage = Bricolage_Grotesque({
-  subsets: ["latin", "latin-ext"],
-  weight: ["600", "700"],
-  variable: "--font-bricolage",
-  display: "swap",
-});
-const instrument = Instrument_Sans({
+// v4 "Nöbet defteri" tipografisi (Doc 49/13 §1): hero/display/title/heading/stat/brand Lora,
+// gövde Inter. Token ailesi globals.css'te bu değişkenlere bağlanır.
+const lora = Lora({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600"],
-  variable: "--font-instrument",
+  variable: "--font-lora",
+  display: "swap",
+});
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
   display: "swap",
 });
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
-      className={`${bricolage.variable} ${instrument.variable}`}
+      className={`${lora.variable} ${inter.variable}`}
       suppressHydrationWarning
     >
       <head>

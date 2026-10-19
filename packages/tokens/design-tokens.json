@@ -1,78 +1,372 @@
 {
   "$description": "Paemisyon tasarım token'ları v3 — 'Nöbet' görsel kimliği (Doc 49 §1, 16 Eki 2026). TEK KAYNAK: bu dosya elle düzenlenir, build/ altındaki css/ts/dart `node build.mjs` ile ÜRETİLİR ve elle düzenlenmez. Koyu tema birincildir, açık tema türevdir.",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "identity": {
-    "name": "Nöbet",
-    "summary": "Gece nöbetinde, loş ışıkta çalışan birinin uygulaması. Sıcak kömür zemin, bakır ışık, adaçayı yeşili. Rakamlar büyük ve net, metin kısa. Enerjik ama bağırmayan bir ciddiyet; gölge yok, yüzey tonu farkı ve 1 px çizgi ayrıştırır.",
+    "name": "Nöbet defteri",
+    "summary": "Gece nöbetinde defter tutan birinin uygulaması: lacivert gece zemini, tek altın ışık, serif (Lora) başlıklar ve editoryal boşluk. Ekranın karakteri dev geri sayım rakamı ve 7 günlük nöbet çizelgesi. Gölge yok; yüzey tonu farkı ve 1 px çizgi ayrıştırır. Açık tema kağıt beyazı; lacivert panel orada da kalır. (v4, 20 Eki 2026 — Figma PaemisyonNew nihai Bugün'den.)",
     "defaultScheme": "dark",
     "rules": [
       "Ekranda tek vurgu (accent); ders rengi yok, ders farkı ikonla.",
       "Durum yalnız renkle anlatılmaz; rozet metni ya da ikon eşlik eder.",
       "Metin çiftleri >= 4.5:1, 24 px ve üstü >= 3:1 (kontrast testi build'de koşar).",
-      "Gölge kullanılmaz; yüzeyler ton farkı ve line ile ayrışır."
+      "Gölge kullanılmaz; yüzeyler ton farkı ve line ile ayrışır.",
+      "Altın (accent) açık temada yalnız dolgu, çizgi ve düğme zeminidir; metin olarak accentInk (kahve) kullanılır.",
+      "Panel (lacivert blok) iki temada da aynı kalır: geri sayım kartı gibi tek bir vurgu bloğu için; içindeki metin panelInk/panelSoft."
     ]
   },
   "color": {
-    "bg":          { "dark": "#17161A", "light": "#F1EDE9", "$role": "Ekran zemini" },
-    "surface":     { "dark": "#221F25", "light": "#FFFFFF", "$role": "Kart, satır, sayfa" },
-    "surfaceAlt":  { "dark": "#2C2830", "light": "#E8E2DC", "$role": "Rozet zemini, ikincil kutu, ilerleme rayı" },
-    "ink":         { "dark": "#F4EEE6", "light": "#1F1C21", "$role": "Birincil metin" },
-    "inkSoft":     { "dark": "#A79F96", "light": "#6A6269", "$role": "İkincil metin" },
-    "inkSubtle":   { "dark": "#908880", "light": "#6F676E", "$role": "Üçüncü ton: etiket, sayaç, pasif sekme. bg ve surface üstünde AA metin (≥4.5); surfaceAlt üstünde yalnız 18 px+ ya da dekoratif (F7 W-G: eski değer 3.5:1'de kalıyordu)" },
-    "line":        { "dark": "#34303A", "light": "#DBD4CE", "$role": "Çizgiler, kart kenarı" },
-    "accent":      { "dark": "#E3804F", "light": "#B5532E", "$role": "Tek vurgu: birincil eylem, aktif, görev" },
-    "accentSoft":  { "dark": "#3A281F", "light": "#F8E1D4", "$role": "Vurgu zemini (seçili şık, zayıf rozeti)" },
-    "accentInk":   { "dark": "#F2A47C", "light": "#9C4827", "$role": "Vurgu zemini üstünde metin" },
-    "onAccent":    { "dark": "#17161A", "light": "#FFFFFF", "$role": "Vurgu dolgu üstünde metin" },
-    "success":     { "dark": "#8FB39A", "light": "#5F8A6B", "$role": "Doğru, tamamlanan gün, başarı" },
-    "successSoft": { "dark": "#243029", "light": "#E3EEE6", "$role": "Başarı zemini" },
-    "successInk":  { "dark": "#A6CDB1", "light": "#3F6A4C", "$role": "Başarı zemini üstünde metin" },
-    "warning":     { "dark": "#E0B15A", "light": "#A87530", "$role": "Zayıf ilerleme, dikkat (metin olarak yalnız 24 px+)" },
-    "warningSoft": { "dark": "#3A2F1C", "light": "#F7EAD2", "$role": "Uyarı zemini" },
-    "warningInk":  { "dark": "#F0CB7E", "light": "#7A5416", "$role": "Uyarı zemini üstünde metin" },
-    "danger":      { "dark": "#E07A6B", "light": "#B8453A", "$role": "Yanlış cevap, geri dönüşsüz eylem" },
-    "dangerSoft":  { "dark": "#3F2422", "light": "#F8DDD9", "$role": "Hata zemini" },
-    "dangerInk":   { "dark": "#F3A396", "light": "#8E2E25", "$role": "Hata zemini üstünde metin" },
-    "focusRing":   { "dark": "#F2A47C", "light": "#B5532E", "$role": "Klavye odağı halkası" }
+    "bg": {
+      "dark": "#121A26",
+      "light": "#FFFCF6",
+      "$role": "Ekran zemini (gece laciverti / kağıt)"
+    },
+    "surface": {
+      "dark": "#1E2B3C",
+      "light": "#FFFFFF",
+      "$role": "Kart, satır, sayfa"
+    },
+    "surfaceAlt": {
+      "dark": "#28374A",
+      "light": "#EAE5DA",
+      "$role": "Rozet zemini, ikincil kutu, ilerleme rayı, tamamlanan gün kutusu"
+    },
+    "ink": {
+      "dark": "#F5F0E5",
+      "light": "#1B293B",
+      "$role": "Birincil metin"
+    },
+    "inkSoft": {
+      "dark": "#BAC4D0",
+      "light": "#596371",
+      "$role": "İkincil metin"
+    },
+    "inkSubtle": {
+      "dark": "#94A0B0",
+      "light": "#6B7482",
+      "$role": "Üçüncü ton: etiket, sayaç, pasif sekme; bg/surface üstünde AA, surfaceAlt üstünde yalnız 18 px+"
+    },
+    "line": {
+      "dark": "#394657",
+      "light": "#D9D7CF",
+      "$role": "Çizgiler, kart kenarı"
+    },
+    "accent": {
+      "dark": "#E8B46C",
+      "light": "#E8B46C",
+      "$role": "Tek vurgu: altın. Düğme zemini, bugün kutusu, ilerleme dolgusu; açık temada metin olarak KULLANILMAZ"
+    },
+    "accentSoft": {
+      "dark": "#2E3447",
+      "light": "#F6E9D2",
+      "$role": "Vurgu zemini (seçili şık, zayıf rozeti)"
+    },
+    "accentInk": {
+      "dark": "#E8B46C",
+      "light": "#8B5E23",
+      "$role": "Vurgu metni: koyuda altın, açıkta kahve"
+    },
+    "onAccent": {
+      "dark": "#1B293B",
+      "light": "#1B293B",
+      "$role": "Altın dolgu üstünde metin (lacivert)"
+    },
+    "panel": {
+      "dark": "#1E2B3C",
+      "light": "#1B293B",
+      "$role": "Lacivert blok (geri sayım kartı); iki temada da koyu"
+    },
+    "panelInk": {
+      "dark": "#F5F0E5",
+      "light": "#F5F0E5",
+      "$role": "Panel üstü birincil metin"
+    },
+    "panelSoft": {
+      "dark": "#BAC4D0",
+      "light": "#BAC4D0",
+      "$role": "Panel üstü ikincil metin"
+    },
+    "success": {
+      "dark": "#8FB39A",
+      "light": "#5F8A6B",
+      "$role": "Doğru, tamamlanan sonuç, başarı"
+    },
+    "successSoft": {
+      "dark": "#213229",
+      "light": "#E3EEE6",
+      "$role": "Başarı zemini"
+    },
+    "successInk": {
+      "dark": "#A6CDB1",
+      "light": "#3F6A4C",
+      "$role": "Başarı zemini üstünde metin"
+    },
+    "warning": {
+      "dark": "#E0B15A",
+      "light": "#A87530",
+      "$role": "Zayıf ilerleme, dikkat (metin olarak yalnız 18 px+)"
+    },
+    "warningSoft": {
+      "dark": "#3A3220",
+      "light": "#F7EAD2",
+      "$role": "Uyarı zemini"
+    },
+    "warningInk": {
+      "dark": "#F0CB7E",
+      "light": "#7A5416",
+      "$role": "Uyarı zemini üstünde metin"
+    },
+    "danger": {
+      "dark": "#E07A6B",
+      "light": "#B8453A",
+      "$role": "Yanlış, silme, hata"
+    },
+    "dangerSoft": {
+      "dark": "#3F2630",
+      "light": "#F8DDD9",
+      "$role": "Hata zemini"
+    },
+    "dangerInk": {
+      "dark": "#F3A396",
+      "light": "#8E2E25",
+      "$role": "Hata zemini üstünde metin"
+    },
+    "focusRing": {
+      "dark": "#E8B46C",
+      "light": "#8B5E23",
+      "$role": "Klavye odağı halkası"
+    }
   },
   "contrastPairs": {
-    "$description": "Build'de doğrulanan metin/zemin çiftleri. size: 'text' >= 4.5, 'large' >= 3.0 (24 px+ ya da 19 px kalın).",
+    "$description": "Build'de doğrulanan metin/zemin çiftleri. size: 'text' >= 4.5, 'large' >= 3.0. v4: accent (altın) metin çifti YOK — açık temada metin değildir; metin için accentInk.",
     "pairs": [
-      { "fg": "ink",        "bg": "bg",          "size": "text" },
-      { "fg": "ink",        "bg": "surface",     "size": "text" },
-      { "fg": "ink",        "bg": "surfaceAlt",  "size": "text" },
-      { "fg": "inkSoft",    "bg": "bg",          "size": "text" },
-      { "fg": "inkSoft",    "bg": "surface",     "size": "text" },
-      { "fg": "inkSoft",    "bg": "surfaceAlt",  "size": "text" },
-      { "fg": "inkSubtle",  "bg": "bg",          "size": "text" },
-      { "fg": "inkSubtle",  "bg": "surface",     "size": "text" },
-      { "fg": "inkSubtle",  "bg": "surfaceAlt",  "size": "large" },
-      { "fg": "accent",     "bg": "bg",          "size": "large" },
-      { "fg": "accent",     "bg": "surface",     "size": "large" },
-      { "fg": "accentInk",  "bg": "accentSoft",  "size": "text" },
-      { "fg": "onAccent",   "bg": "accent",      "size": "text" },
-      { "fg": "success",    "bg": "bg",          "size": "large" },
-      { "fg": "successInk", "bg": "successSoft", "size": "text" },
-      { "fg": "warning",    "bg": "bg",          "size": "large" },
-      { "fg": "warningInk", "bg": "warningSoft", "size": "text" },
-      { "fg": "danger",     "bg": "bg",          "size": "large" },
-      { "fg": "dangerInk",  "bg": "dangerSoft",  "size": "text" }
+      {
+        "fg": "ink",
+        "bg": "bg",
+        "size": "text"
+      },
+      {
+        "fg": "ink",
+        "bg": "surface",
+        "size": "text"
+      },
+      {
+        "fg": "ink",
+        "bg": "surfaceAlt",
+        "size": "text"
+      },
+      {
+        "fg": "inkSoft",
+        "bg": "bg",
+        "size": "text"
+      },
+      {
+        "fg": "inkSoft",
+        "bg": "surface",
+        "size": "text"
+      },
+      {
+        "fg": "inkSoft",
+        "bg": "surfaceAlt",
+        "size": "text"
+      },
+      {
+        "fg": "inkSubtle",
+        "bg": "bg",
+        "size": "text"
+      },
+      {
+        "fg": "inkSubtle",
+        "bg": "surface",
+        "size": "text"
+      },
+      {
+        "fg": "inkSubtle",
+        "bg": "surfaceAlt",
+        "size": "large"
+      },
+      {
+        "fg": "accentInk",
+        "bg": "bg",
+        "size": "text"
+      },
+      {
+        "fg": "accentInk",
+        "bg": "surface",
+        "size": "text"
+      },
+      {
+        "fg": "accentInk",
+        "bg": "accentSoft",
+        "size": "text"
+      },
+      {
+        "fg": "onAccent",
+        "bg": "accent",
+        "size": "text"
+      },
+      {
+        "fg": "panelInk",
+        "bg": "panel",
+        "size": "text"
+      },
+      {
+        "fg": "panelSoft",
+        "bg": "panel",
+        "size": "text"
+      },
+      {
+        "fg": "accent",
+        "bg": "panel",
+        "size": "large"
+      },
+      {
+        "fg": "success",
+        "bg": "bg",
+        "size": "large"
+      },
+      {
+        "fg": "successInk",
+        "bg": "successSoft",
+        "size": "text"
+      },
+      {
+        "fg": "warning",
+        "bg": "bg",
+        "size": "large"
+      },
+      {
+        "fg": "warningInk",
+        "bg": "warningSoft",
+        "size": "text"
+      },
+      {
+        "fg": "danger",
+        "bg": "bg",
+        "size": "large"
+      },
+      {
+        "fg": "dangerInk",
+        "bg": "dangerSoft",
+        "size": "text"
+      }
     ]
   },
   "typography": {
     "family": {
-      "display": { "name": "Bricolage Grotesque", "fallback": "system-ui, sans-serif", "weights": [600, 700], "source": "Google Fonts, latin-ext" },
-      "body":    { "name": "Instrument Sans",     "fallback": "system-ui, sans-serif", "weights": [400, 500, 600, 700], "source": "Google Fonts, latin-ext" }
+      "display": {
+        "name": "Lora",
+        "fallback": "Georgia, 'Times New Roman', serif",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "Google Fonts, latin-ext"
+      },
+      "body": {
+        "name": "Inter",
+        "fallback": "system-ui, sans-serif",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "source": "Google Fonts, latin-ext"
+      }
     },
     "roles": {
-      "display": { "family": "display", "size": 64, "lineHeight": 60, "weight": 700, "tracking": -0.04, "tabular": true,  "$role": "Geri sayım rakamı" },
-      "title":   { "family": "display", "size": 28, "lineHeight": 30, "weight": 700, "tracking": -0.02, "tabular": false, "$role": "Görev başlığı" },
-      "heading": { "family": "display", "size": 20, "lineHeight": 26, "weight": 600, "tracking": -0.01, "tabular": false, "$role": "Bölüm başlığı" },
-      "subhead": { "family": "body",    "size": 15, "lineHeight": 20, "weight": 600, "tracking": 0,     "tabular": false, "$role": "Satır başlığı" },
-      "body":    { "family": "body",    "size": 16, "lineHeight": 25, "weight": 400, "tracking": 0,     "tabular": false, "$role": "Soru metni ve mevzuat okuma" },
-      "bodySm":  { "family": "body",    "size": 14, "lineHeight": 20, "weight": 400, "tracking": 0,     "tabular": false, "$role": "Açıklama" },
-      "label":   { "family": "body",    "size": 11, "lineHeight": 14, "weight": 600, "tracking": 0.10,  "tabular": false, "uppercase": true, "$role": "Büyük harf etiket" },
-      "stat":    { "family": "display", "size": 22, "lineHeight": 24, "weight": 700, "tracking": -0.02, "tabular": true,  "$role": "Kutu içi yüzde" }
+      "hero": {
+        "family": "display",
+        "size": 120,
+        "lineHeight": 108,
+        "weight": 500,
+        "tracking": -0.03,
+        "tabular": true,
+        "$role": "Bugün geri sayım rakamı (dar ekranda 96)"
+      },
+      "display": {
+        "family": "display",
+        "size": 64,
+        "lineHeight": 60,
+        "weight": 500,
+        "tracking": -0.03,
+        "tabular": true,
+        "$role": "Büyük rakam (sonuç, performans)"
+      },
+      "title": {
+        "family": "display",
+        "size": 24,
+        "lineHeight": 29,
+        "weight": 600,
+        "tracking": -0.01,
+        "tabular": false,
+        "$role": "Görev başlığı"
+      },
+      "heading": {
+        "family": "display",
+        "size": 20,
+        "lineHeight": 27,
+        "weight": 600,
+        "tracking": 0,
+        "tabular": false,
+        "$role": "Bölüm başlığı"
+      },
+      "subhead": {
+        "family": "body",
+        "size": 15,
+        "lineHeight": 20,
+        "weight": 600,
+        "tracking": 0,
+        "tabular": false,
+        "$role": "Satır başlığı"
+      },
+      "body": {
+        "family": "body",
+        "size": 16,
+        "lineHeight": 25,
+        "weight": 400,
+        "tracking": 0,
+        "tabular": false,
+        "$role": "Soru metni ve mevzuat okuma"
+      },
+      "bodySm": {
+        "family": "body",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 400,
+        "tracking": 0,
+        "tabular": false,
+        "$role": "Açıklama"
+      },
+      "label": {
+        "family": "body",
+        "size": 11,
+        "lineHeight": 14,
+        "weight": 600,
+        "tracking": 0.1,
+        "tabular": false,
+        "uppercase": true,
+        "$role": "Büyük harf etiket"
+      },
+      "stat": {
+        "family": "display",
+        "size": 22,
+        "lineHeight": 24,
+        "weight": 600,
+        "tracking": -0.01,
+        "tabular": true,
+        "$role": "Kutu içi yüzde"
+      },
+      "brand": {
+        "family": "display",
+        "size": 20,
+        "lineHeight": 27,
+        "weight": 600,
+        "tracking": 0,
+        "tabular": false,
+        "$role": "Marka sözcüğü \"paemisyon\" (küçük harf, metin)"
+      }
     },
     "$trackingUnit": "em",
     "dynamicType": {
@@ -81,14 +375,47 @@
       "androidMaxScale": 1.3
     }
   },
-  "spacing": { "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "12": 48, "$screenGutter": 20 },
-  "radius": { "control": 10, "card": 14, "sheet": 20, "pill": 999 },
-  "size": { "touchTarget": 44, "icon": 24, "iconStroke": 1.75, "tabBarItems": 5 },
+  "spacing": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "12": 48,
+    "$screenGutter": 20
+  },
+  "radius": {
+    "panel": 4,
+    "control": 10,
+    "card": 10,
+    "sheet": 20,
+    "pill": 999
+  },
+  "size": {
+    "touchTarget": 44,
+    "icon": 24,
+    "iconStroke": 1.75,
+    "tabBarItems": 5
+  },
   "motion": {
-    "enter": { "ms": 180, "easing": "cubic-bezier(0, 0, 0.2, 1)" },
-    "exit":  { "ms": 140, "easing": "cubic-bezier(0.4, 0, 1, 1)" },
-    "stagger": { "ms": 24 },
+    "enter": {
+      "ms": 180,
+      "easing": "cubic-bezier(0, 0, 0.2, 1)"
+    },
+    "exit": {
+      "ms": 140,
+      "easing": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "stagger": {
+      "ms": 24
+    },
     "$reducedMotion": "Yalnız opaklık; hareket yok."
   },
-  "a11y": { "minTouchTarget": 44, "minContrastText": 4.5, "minContrastLarge": 3.0 }
+  "a11y": {
+    "minTouchTarget": 44,
+    "minContrastText": 4.5,
+    "minContrastLarge": 3.0
+  }
 }

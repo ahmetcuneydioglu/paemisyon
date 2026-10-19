@@ -1,48 +1,54 @@
-// ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v3.0.0, Nöbet). Yenile: node packages/tokens/build.mjs
+// ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v4.0.0, Nöbet defteri). Yenile: node packages/tokens/build.mjs
 
 import 'dart:ui';
 
-const String tokenVersion = '3.0.0';
-const String identityName = 'Nöbet';
+const String tokenVersion = '4.0.0';
+const String identityName = 'Nöbet defteri';
 
 class NobetDark {
   NobetDark._();
-  static const Color bg = Color(0xFF17161A);
-  static const Color surface = Color(0xFF221F25);
-  static const Color surfaceAlt = Color(0xFF2C2830);
-  static const Color ink = Color(0xFFF4EEE6);
-  static const Color inkSoft = Color(0xFFA79F96);
-  static const Color inkSubtle = Color(0xFF908880);
-  static const Color line = Color(0xFF34303A);
-  static const Color accent = Color(0xFFE3804F);
-  static const Color accentSoft = Color(0xFF3A281F);
-  static const Color accentInk = Color(0xFFF2A47C);
-  static const Color onAccent = Color(0xFF17161A);
+  static const Color bg = Color(0xFF121A26);
+  static const Color surface = Color(0xFF1E2B3C);
+  static const Color surfaceAlt = Color(0xFF28374A);
+  static const Color ink = Color(0xFFF5F0E5);
+  static const Color inkSoft = Color(0xFFBAC4D0);
+  static const Color inkSubtle = Color(0xFF94A0B0);
+  static const Color line = Color(0xFF394657);
+  static const Color accent = Color(0xFFE8B46C);
+  static const Color accentSoft = Color(0xFF2E3447);
+  static const Color accentInk = Color(0xFFE8B46C);
+  static const Color onAccent = Color(0xFF1B293B);
+  static const Color panel = Color(0xFF1E2B3C);
+  static const Color panelInk = Color(0xFFF5F0E5);
+  static const Color panelSoft = Color(0xFFBAC4D0);
   static const Color success = Color(0xFF8FB39A);
-  static const Color successSoft = Color(0xFF243029);
+  static const Color successSoft = Color(0xFF213229);
   static const Color successInk = Color(0xFFA6CDB1);
   static const Color warning = Color(0xFFE0B15A);
-  static const Color warningSoft = Color(0xFF3A2F1C);
+  static const Color warningSoft = Color(0xFF3A3220);
   static const Color warningInk = Color(0xFFF0CB7E);
   static const Color danger = Color(0xFFE07A6B);
-  static const Color dangerSoft = Color(0xFF3F2422);
+  static const Color dangerSoft = Color(0xFF3F2630);
   static const Color dangerInk = Color(0xFFF3A396);
-  static const Color focusRing = Color(0xFFF2A47C);
+  static const Color focusRing = Color(0xFFE8B46C);
 }
 
 class NobetLight {
   NobetLight._();
-  static const Color bg = Color(0xFFF1EDE9);
+  static const Color bg = Color(0xFFFFFCF6);
   static const Color surface = Color(0xFFFFFFFF);
-  static const Color surfaceAlt = Color(0xFFE8E2DC);
-  static const Color ink = Color(0xFF1F1C21);
-  static const Color inkSoft = Color(0xFF6A6269);
-  static const Color inkSubtle = Color(0xFF6F676E);
-  static const Color line = Color(0xFFDBD4CE);
-  static const Color accent = Color(0xFFB5532E);
-  static const Color accentSoft = Color(0xFFF8E1D4);
-  static const Color accentInk = Color(0xFF9C4827);
-  static const Color onAccent = Color(0xFFFFFFFF);
+  static const Color surfaceAlt = Color(0xFFEAE5DA);
+  static const Color ink = Color(0xFF1B293B);
+  static const Color inkSoft = Color(0xFF596371);
+  static const Color inkSubtle = Color(0xFF6B7482);
+  static const Color line = Color(0xFFD9D7CF);
+  static const Color accent = Color(0xFFE8B46C);
+  static const Color accentSoft = Color(0xFFF6E9D2);
+  static const Color accentInk = Color(0xFF8B5E23);
+  static const Color onAccent = Color(0xFF1B293B);
+  static const Color panel = Color(0xFF1B293B);
+  static const Color panelInk = Color(0xFFF5F0E5);
+  static const Color panelSoft = Color(0xFFBAC4D0);
   static const Color success = Color(0xFF5F8A6B);
   static const Color successSoft = Color(0xFFE3EEE6);
   static const Color successInk = Color(0xFF3F6A4C);
@@ -52,7 +58,7 @@ class NobetLight {
   static const Color danger = Color(0xFFB8453A);
   static const Color dangerSoft = Color(0xFFF8DDD9);
   static const Color dangerInk = Color(0xFF8E2E25);
-  static const Color focusRing = Color(0xFFB5532E);
+  static const Color focusRing = Color(0xFF8B5E23);
 }
 
 class NobetSpace {
@@ -70,8 +76,9 @@ class NobetSpace {
 
 class NobetRadius {
   NobetRadius._();
+  static const double panel = 4;
   static const double control = 10;
-  static const double card = 14;
+  static const double card = 10;
   static const double sheet = 20;
   static const double pill = 999;
 }

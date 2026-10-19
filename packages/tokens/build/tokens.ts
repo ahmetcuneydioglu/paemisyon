@@ -1,46 +1,52 @@
-// ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v3.0.0, Nöbet). Yenile: node packages/tokens/build.mjs
+// ÜRETİLMİŞ DOSYA — elle düzenleme. Kaynak: packages/tokens/design-tokens.json (v4.0.0, Nöbet defteri). Yenile: node packages/tokens/build.mjs
 
-export const tokenVersion = '3.0.0' as const;
-export const identityName = 'Nöbet' as const;
+export const tokenVersion = '4.0.0' as const;
+export const identityName = 'Nöbet defteri' as const;
 export type Scheme = 'dark' | 'light';
 export const defaultScheme: Scheme = 'dark';
 
 export const palette = {
   dark: {
-    bg: '#17161A',
-    surface: '#221F25',
-    surfaceAlt: '#2C2830',
-    ink: '#F4EEE6',
-    inkSoft: '#A79F96',
-    inkSubtle: '#908880',
-    line: '#34303A',
-    accent: '#E3804F',
-    accentSoft: '#3A281F',
-    accentInk: '#F2A47C',
-    onAccent: '#17161A',
+    bg: '#121A26',
+    surface: '#1E2B3C',
+    surfaceAlt: '#28374A',
+    ink: '#F5F0E5',
+    inkSoft: '#BAC4D0',
+    inkSubtle: '#94A0B0',
+    line: '#394657',
+    accent: '#E8B46C',
+    accentSoft: '#2E3447',
+    accentInk: '#E8B46C',
+    onAccent: '#1B293B',
+    panel: '#1E2B3C',
+    panelInk: '#F5F0E5',
+    panelSoft: '#BAC4D0',
     success: '#8FB39A',
-    successSoft: '#243029',
+    successSoft: '#213229',
     successInk: '#A6CDB1',
     warning: '#E0B15A',
-    warningSoft: '#3A2F1C',
+    warningSoft: '#3A3220',
     warningInk: '#F0CB7E',
     danger: '#E07A6B',
-    dangerSoft: '#3F2422',
+    dangerSoft: '#3F2630',
     dangerInk: '#F3A396',
-    focusRing: '#F2A47C',
+    focusRing: '#E8B46C',
   },
   light: {
-    bg: '#F1EDE9',
+    bg: '#FFFCF6',
     surface: '#FFFFFF',
-    surfaceAlt: '#E8E2DC',
-    ink: '#1F1C21',
-    inkSoft: '#6A6269',
-    inkSubtle: '#6F676E',
-    line: '#DBD4CE',
-    accent: '#B5532E',
-    accentSoft: '#F8E1D4',
-    accentInk: '#9C4827',
-    onAccent: '#FFFFFF',
+    surfaceAlt: '#EAE5DA',
+    ink: '#1B293B',
+    inkSoft: '#596371',
+    inkSubtle: '#6B7482',
+    line: '#D9D7CF',
+    accent: '#E8B46C',
+    accentSoft: '#F6E9D2',
+    accentInk: '#8B5E23',
+    onAccent: '#1B293B',
+    panel: '#1B293B',
+    panelInk: '#F5F0E5',
+    panelSoft: '#BAC4D0',
     success: '#5F8A6B',
     successSoft: '#E3EEE6',
     successInk: '#3F6A4C',
@@ -50,7 +56,7 @@ export const palette = {
     danger: '#B8453A',
     dangerSoft: '#F8DDD9',
     dangerInk: '#8E2E25',
-    focusRing: '#B5532E',
+    focusRing: '#8B5E23',
   },
 } as const;
 export type ColorName = keyof typeof palette.dark;
@@ -58,22 +64,24 @@ export type ColorName = keyof typeof palette.dark;
 export type Palette = Record<ColorName, string>;
 
 export const fontFamily = {
-  display: { name: 'Bricolage Grotesque', weights: [600, 700] },
-  body: { name: 'Instrument Sans', weights: [400, 500, 600, 700] },
+  display: { name: 'Lora', weights: [400, 500, 600] },
+  body: { name: 'Inter', weights: [400, 500, 600, 700] },
 } as const;
 
 /** Boylar px; tracking em cinsinden (RN'de letterSpacing = tracking * size).
  *  Ad `typeRoles`: `type` adlı bir dışa aktarım, içe aktarımda `{ type as x }` yazımını
  *  TypeScript'in tür-içe-aktarım sözdizimiyle çakıştırıyor. */
 export const typeRoles = {
-    display: { family: 'display', size: 64, lineHeight: 60, weight: 700, tracking: -0.04, tabular: true },
-    title: { family: 'display', size: 28, lineHeight: 30, weight: 700, tracking: -0.02, tabular: false },
-    heading: { family: 'display', size: 20, lineHeight: 26, weight: 600, tracking: -0.01, tabular: false },
+    hero: { family: 'display', size: 120, lineHeight: 108, weight: 500, tracking: -0.03, tabular: true },
+    display: { family: 'display', size: 64, lineHeight: 60, weight: 500, tracking: -0.03, tabular: true },
+    title: { family: 'display', size: 24, lineHeight: 29, weight: 600, tracking: -0.01, tabular: false },
+    heading: { family: 'display', size: 20, lineHeight: 27, weight: 600, tracking: 0, tabular: false },
     subhead: { family: 'body', size: 15, lineHeight: 20, weight: 600, tracking: 0, tabular: false },
     body: { family: 'body', size: 16, lineHeight: 25, weight: 400, tracking: 0, tabular: false },
     bodySm: { family: 'body', size: 14, lineHeight: 20, weight: 400, tracking: 0, tabular: false },
     label: { family: 'body', size: 11, lineHeight: 14, weight: 600, tracking: 0.1, tabular: false, uppercase: true },
-    stat: { family: 'display', size: 22, lineHeight: 24, weight: 700, tracking: -0.02, tabular: true },
+    stat: { family: 'display', size: 22, lineHeight: 24, weight: 600, tracking: -0.01, tabular: true },
+    brand: { family: 'display', size: 20, lineHeight: 27, weight: 600, tracking: 0, tabular: false },
 } as const;
 export type TypeRole = keyof typeof typeRoles;
 
@@ -92,8 +100,9 @@ export const space = {
 } as const;
 
 export const radius = {
+    panel: 4,
     control: 10,
-    card: 14,
+    card: 10,
     sheet: 20,
     pill: 999,
 } as const;

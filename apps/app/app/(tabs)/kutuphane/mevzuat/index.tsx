@@ -6,6 +6,7 @@ import { LegislationRow } from "@/components/domain";
 import { AppText, Badge, Card, Chip, EmptyState, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
 import { TYPE_LABEL, useArticleBookmarks, useMevzuatList, useMevzuatSearch, useReadingProgress, type LegislationType } from "@/features/mevzuat/queries";
 import { useTheme } from "@/theme/ThemeProvider";
+import { fontFamily } from "@/theme/tokens";
 
 const HINTS = ["PVSK", "cmk 90", "zor kullanma", "kimlik sorma", "gözaltı", "yakalama"];
 
@@ -178,7 +179,7 @@ function Headline({ text }: { text: string }) {
     <AppText variant="bodySm" tone="soft" numberOfLines={2}>
       {parts.map((part, i) =>
         part.startsWith("⟪") ? (
-          <AppText key={i} variant="bodySm" tone="accentInk" style={{ fontFamily: "InstrumentSans_600SemiBold" }}>
+          <AppText key={i} variant="bodySm" tone="accentInk" style={{ fontFamily: fontFamily.body[600] }}>
             {part.slice(1, -1)}
           </AppText>
         ) : (

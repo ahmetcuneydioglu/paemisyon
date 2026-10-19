@@ -1,5 +1,5 @@
-import { BricolageGrotesque_600SemiBold, BricolageGrotesque_700Bold } from "@expo-google-fonts/bricolage-grotesque";
-import { InstrumentSans_400Regular, InstrumentSans_500Medium, InstrumentSans_600SemiBold, InstrumentSans_700Bold, useFonts } from "@expo-google-fonts/instrument-sans";
+import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_700Bold, useFonts } from "@expo-google-fonts/inter";
+import { Lora_400Regular, Lora_500Medium, Lora_600SemiBold } from "@expo-google-fonts/lora";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Stack, useRouter, useSegments } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
@@ -28,12 +28,13 @@ initSentry();
 
 function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
-    BricolageGrotesque_600SemiBold,
-    BricolageGrotesque_700Bold,
-    InstrumentSans_400Regular,
-    InstrumentSans_500Medium,
-    InstrumentSans_600SemiBold,
-    InstrumentSans_700Bold,
+    Lora_400Regular,
+    Lora_500Medium,
+    Lora_600SemiBold,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
+    Inter_700Bold,
   });
   const ready = fontsLoaded || Boolean(fontError);
 

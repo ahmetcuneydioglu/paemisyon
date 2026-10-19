@@ -6,8 +6,8 @@
 
 /* Fontlar next/font ile paketlenir (layout.tsx); token ailesi o değişkenlere bağlanır. */
 :root {
-  --font-display: var(--font-bricolage), system-ui, sans-serif;
-  --font-body: var(--font-instrument), system-ui, sans-serif;
+  --font-display: var(--font-lora), Georgia, serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -44,6 +44,7 @@
   --color-danger-ink: var(--color-danger-ink);
   --color-focus-ring: var(--color-focus-ring);
 
+  --radius-panel: var(--radius-panel);
   --radius-control: var(--radius-control);
   --radius-card: var(--radius-card);
   --radius-sheet: var(--radius-sheet);
@@ -103,6 +104,18 @@
     var(--font-display);
   letter-spacing: var(--type-stat-tracking);
   font-variant-numeric: tabular-nums;
+}
+/* v4 (Doc 49/13): Bugün geri sayım rakamı ve marka sözcüğü. */
+@utility type-hero {
+  font: var(--type-hero-weight) clamp(72px, 24vw, var(--type-hero-size)) /
+    0.87 var(--font-display);
+  letter-spacing: var(--type-hero-tracking);
+  font-variant-numeric: tabular-nums;
+}
+@utility type-brand {
+  font: var(--type-brand-weight) var(--type-brand-size)/var(--type-brand-line)
+    var(--font-display);
+  letter-spacing: var(--type-brand-tracking);
 }
 
 /* ── Taban ── */
