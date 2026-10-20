@@ -8,6 +8,7 @@ export default function KutuphaneLayout() {
     <Stack screenOptions={options}>
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="ders/[id]" options={{ title: "Ders" }} />
+      <Stack.Screen name="konu/[topicId]" options={{ title: "Konu" }} />
       <Stack.Screen name="atlas/[topicId]" options={{ title: "Madde Atlası" }} />
       <Stack.Screen name="mevzuat/index" options={{ title: "Mevzuat" }} />
       <Stack.Screen name="mevzuat/[slug]" options={{ title: "Kanun" }} />

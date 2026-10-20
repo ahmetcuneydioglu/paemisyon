@@ -9,3 +9,5 @@ export * from "./plan-week-card";
 export * from "./countdown-hero";
 export * from "./week-strip7";
 export * from "./plan-shift-list";
+export * from "./room-stat-panel";
+export * from "./coach-line";

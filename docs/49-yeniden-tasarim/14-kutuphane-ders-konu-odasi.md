@@ -25,3 +25,27 @@ bazlı tur geçmişi tutulmuyor; sonra).
 | K4 | Bilgi kartları — ayrı plan (dayanaklı, önceden üretilmiş, insan onaylı) | — |
 
 ## İlerleme
+- **K1 API (20 Eki 2026, 52a2a6b):** `modules/rooms` — `GET /me/course-room/:courseId`
+  (ders: doğruluk/çözülen/band, hedef sınavdaki bölüm payı, en zayıf konu, koç cümlesi,
+  konular + alt konular [solved, accuracyPct, band, inPlanThisWeek, isPremium, isLaw,
+  lawSlug], araçlar: açık yanlış, favori (herhangi listedeki tekil soru), yayımlı mevzuat
+  madde sayısına göre), `GET /me/topic-room/:topicId` (konu özeti, plan bağı + kalan dk,
+  son 5 cevaptan koç cümlesi, yanlış/favori, ilgili madde aralığı). `rooms.logic` saf (band
+  tek eşik `zayif-konu.ts`: <10 çözüm sparse, zayıf <%60, güçlü ≥%70; 5 spec). Tur
+  kaynakları `course_room`/`topic_room`. E2E yerel API: boş ders → "ilk turun seni bekliyor",
+  12 cevap sonrası %33/weak, koç "12 sorunun 4'ü doğru", konu odası "Son 5 cevabın 1'i doğru",
+  404 doğru. Not: Anayasa Hukuku'na 12 mevzuat bağlı — istemci 3 ana metin + "N mevzuat
+  daha" gösterir. API 457 test.
+- **K2 Expo (20 Eki 2026):** `kutuphane/ders/[id]` ders odası olarak yeniden (eski sheet'li
+  ders detayı kalktı): `RoomStatPanel` (panel; yüzde yoksa "Henüz çözülmedi"), `CoachLine`,
+  konu satırları (ince ilerleme, band tonu sunucudan, Premium kilidi, "Planında" rozeti,
+  alt konular girintili) → konu odası, Araçlar (yanlışlar → review turu, favoriler → Tekrar,
+  en çok 3 mevzuat + "N mevzuat daha"), sabit "Başla · 10 soru · <ders>". Yeni
+  `kutuphane/konu/[topicId]`: panel (ders adı etiket), koç cümlesi, Bu konuda (yanlışlar,
+  favoriler, ilgili maddeler → Madde Atlası), plan kalan dk, sabit "Başla · 10 soru · <konu>"
+  + ikincil "Yanlışları çöz · N". Etiketlerde ek yok (ünlü uyumu). Bilgi kartları ve tur
+  geçmişi yok. `features/rooms/queries.ts` (tipler, hook'lar, `bandTone`). **Göz testi
+  (iPhone 17, yerel API, geçici hesap):** ders odası %33/weak, koç cümlesi, 16 konu, araçlar;
+  konu odası "Son 5 cevabın 1'i doğru", yanlış 8; Başla → 10 soruluk tur, DB'de
+  `source=topic_room`. Bugün görevi de planın konusunu gösterdi ("Planında bu hafta: Genel
+  Kültür" / "Başla · 8 soru · Genel Kültür"). Kalan: telefon turu, web (K3).

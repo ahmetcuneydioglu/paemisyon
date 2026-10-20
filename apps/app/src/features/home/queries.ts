@@ -14,7 +14,7 @@ export interface DailyFocus {
   label: string | null;
 }
 
-export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan";
+export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room";
 
 export interface TodayTaskAction {
   type: "start_session" | "resume_session" | "open_exams";
