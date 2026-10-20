@@ -285,7 +285,11 @@ export class QuizService {
           id: { in: wrongs.map((w) => w.questionId) },
           ...yanlisTuruSoruFiltresi({ isPremium: isPremiumUser, preferredModuleId }),
           // Ders/konu odasından gelen yanlış turu o kapsamla sınırlı.
-          ...(dto.topicId ? { topicId: dto.topicId } : dto.courseId ? { topic: { courseId: dto.courseId } } : {}),
+          ...(dto.topicId
+            ? { topicId: dto.topicId }
+            : dto.courseId
+              ? { topic: { courseId: dto.courseId } }
+              : {}),
         },
         select: { id: true, currentVersionId: true, topicId: true },
       });
