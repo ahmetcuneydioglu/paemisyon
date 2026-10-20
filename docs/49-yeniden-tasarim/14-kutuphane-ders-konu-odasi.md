@@ -74,3 +74,10 @@ bazlı tur geçmişi tutulmuyor; sonra).
   375 px taşma yok, axe koyu+açık 0; ders kapsamlı yanlış turu `/seans`'ta 201 ile açıldı.
   Kalan: push (API+web+mobil birlikte), bilgi kartları planı (K4), web Kütüphane kapı
   kartları 1280 px (F9-E ile).
+- **Deploy (20 Eki 2026, 04:55 TR):** 6 commit tek push'la `origin/main`'e (7a21e5e → 9f448ee).
+  Vercel READY (~40 sn), Railway `/me/course-room` 401 (rota canlı). CI: API lint'te tek
+  prettier hatası (quiz.service kapsam satırı) → f889cf0 ile düzeltildi, push bekliyor; diğer
+  dört iş yeşil. **Canlı (Lukas, Chrome):** ders odası Anayasa Hukuku %41 · 32 soru, Sınavda
+  %10, 16 konu (en zayıf yok — hiçbir konuda ≥10 çözüm, kural gereği), araçlar; konu odası
+  Anayasa %75 · 8 soru · 6 doğru, "Az veri var…", Yanlışların 2, "Yanlışları çöz · 2".
+  Telefon canlı API'ye geri alındı (`.env.local` prod, Metro LAN).
