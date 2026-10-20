@@ -46,7 +46,7 @@ export function CountdownHero({
           </AppText>
           {onPickDate ? (
             <Pressable accessibilityRole="button" onPress={onPickDate} hitSlop={8} style={{ alignSelf: "flex-start", minHeight: 44, justifyContent: "center" }}>
-              <AppText variant="subhead" tone="accent">
+              <AppText variant="subhead" tone="gold">
                 Hedef tarihini seç ›
               </AppText>
             </Pressable>
@@ -54,7 +54,7 @@ export function CountdownHero({
         </View>
       ) : (
         <>
-          <AppText variant="hero" tone="accent" style={{ fontSize: heroSize, lineHeight: heroLine }} maxFontSizeMultiplier={1}>
+          <AppText variant="hero" tone="gold" style={{ fontSize: heroSize, lineHeight: heroLine }} maxFontSizeMultiplier={1}>
             {daysLeft > 999 ? "999+" : String(daysLeft)}
           </AppText>
           <View style={{ flexDirection: "row", alignItems: "baseline", justifyContent: "space-between", gap: space.s3 }}>

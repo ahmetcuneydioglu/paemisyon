@@ -13,7 +13,9 @@ import { size, type TypeRole } from "@/theme/tokens";
 
 /* ---------------------------------------------------------------- Metin */
 
-export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "success" | "danger" | "onAccent" | "panelInk" | "panelSoft";
+/** `accent`: vurgu METNİ — koyuda altın, açıkta kahve (token accentInk; altın açıkta okunmaz, Doc 49/13 §4).
+ *  `gold`: ham altın — yalnız koyu panel üstünde (geri sayım rakamı). */
+export type Tone = "ink" | "soft" | "subtle" | "accent" | "accentInk" | "gold" | "success" | "danger" | "onAccent" | "panelInk" | "panelSoft";
 
 /** `variant` tipografi rolüdür; RN `Text`in kendi `role` (erişilebilirlik) prop'u ayrı kalır. */
 export function AppText({
@@ -28,8 +30,9 @@ export function AppText({
   const color =
     tone === "soft" ? colors.inkSoft
     : tone === "subtle" ? colors.inkSubtle
-    : tone === "accent" ? colors.accent
+    : tone === "accent" ? colors.accentInk
     : tone === "accentInk" ? colors.accentInk
+    : tone === "gold" ? colors.accent
     : tone === "success" ? colors.success
     : tone === "danger" ? colors.danger
     : tone === "onAccent" ? colors.onAccent

@@ -30,8 +30,8 @@ export function StatTile({
   const valueTone = value == null ? "subtle" : tone === "danger" ? "danger" : tone === "warning" ? "accentInk" : emphasis ? "accent" : "ink";
   return (
     <View style={[{ flex: 1, backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.line, padding: space.s4, gap: 6, minWidth: 0 }, style]}>
-      {/* Büyük yazıda etiket kırpılmasın: iki satıra sarar. */}
-      <AppText variant="label" tone="subtle" numberOfLines={2}>
+      {/* Tek sözcüklü etiket dar kutuda ("DOĞRULUK", SE'de üç kutu) ortadan kırılıyordu: tek satır, sığmazsa %85'e kadar küçülür. */}
+      <AppText variant="label" tone="subtle" numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.85}>
         {label}
       </AppText>
       <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>

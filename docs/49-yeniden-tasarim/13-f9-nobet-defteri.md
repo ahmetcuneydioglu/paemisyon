@@ -156,3 +156,17 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   noindex — beklenen). Landing'de `label-content-name-mismatch` tek uyarı (F7'den kalma,
   mağaza rozeti; F9-C web geçişinde bakılacak). Not: Kütüphane kapı kartları 1280 px'te dört
   kolon dar kalıyor (F9-C). Mobil yeni deri için beta build gerekli (F9-E, kullanıcı koşar).
+- **F9-C Diğer mobil ekranlar (20 Eki 2026):** iPhone 17 (açık) + SE (koyu), yerel API,
+  geçici hesap. Gezilen: Bugün, Kütüphane, Mevzuat listesi, Denemeler, Performans, Liderlik,
+  Ben, Ayarlar, Planım, Seans (soru + geri bildirim), Paywall; onboarding tamamlanmış
+  hesapta Bugün'e döner. Palet/font geçişi kit üzerinden otomatik; iki kusur bulundu ve
+  düzeltildi: (1) **Altın metin açık temada okunmuyordu** (paywall fiyatı, liderlik sırası,
+  deneme sonucu, tanıtım, giriş etiketi — `tone="accent"`): `AppText` `accent` tonu artık
+  `accentInk`'e çözülür (koyuda altın, açıkta kahve; §4 kuralı kodda); ham altın için yeni
+  `gold` tonu yalnız panel üstünde (`CountdownHero`). (2) **StatTile etiketi** dar kutuda
+  ortadan kırılıyordu ("DOĞRULU K", SE Performans): tek satır + `adjustsFontSizeToFit`
+  (%85). Ayrıca `Button` ghost ve `ProgressBar` zaten `accentInk`/dolgu kullanıyor — dokunulmadı.
+  Not: dev client bir kez asıldı (deep link ve dokunuş yanıtsız), `simctl terminate` ile
+  yeniden açıldı — uygulama kusuru değil. Kalan: Sonuç ve deneme-sonuç ekranları gerçek
+  turla görülmedi (altın rakam düzeltmesi tip düzeyinde geçerli), web Kütüphane kapı
+  kartları 1280 px'te dar (F9-E'de), mobil beta build (kullanıcı koşar). Push yok.
