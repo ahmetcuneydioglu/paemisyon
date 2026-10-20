@@ -96,6 +96,8 @@ export interface SessionScope {
   resumeId?: string;
   /** Üst şeritte gösterilen insan-okur kapsam etiketi. */
   label?: string;
+  /** Ölçüm kanalı (sunucu enum'u): plan | course_room | topic_room … */
+  source?: string;
   questionCount?: number;
 }
 
@@ -235,6 +237,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         ...(scope.courseId ? { courseId: scope.courseId } : {}),
         ...(scope.topicIds ? { topicIds: scope.topicIds } : {}),
         ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
+        ...(scope.source ? { source: scope.source } : {}),
         questionCount: scope.questionCount ?? 10,
       },
     })

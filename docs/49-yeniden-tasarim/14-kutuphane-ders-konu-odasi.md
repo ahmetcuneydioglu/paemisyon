@@ -61,3 +61,16 @@ bazlı tur geçmişi tutulmuyor; sonra).
   reddediyordu ("Yanlış tekrarı kapsam almaz"). Artık `review` + `topicId`/`courseId` kabul
   edilir, yanlış havuzu o kapsamla süzülür (konu listesi `topicIds` hâlâ reddedilir). E2E:
   iki derste yanlış → konu kapsamlı review 5 soru tek konu, ders kapsamlı 5, kapsamsız 9.
+- **K3 Web (20 Eki 2026):** `/kutuphane/ders/[id]` ders odası olarak yeniden (DataTable'lı
+  ders detayı kalktı; `/catalog/modules` dolaşımı yerine tek `/me/course-room`), yeni
+  `/kutuphane/konu/[id]`. Kit: `components/rooms/RoomStatPanel` (panel, sol sütun sabit),
+  `CoachLine`, `ToolRow` (href yoksa pasif); `lib/rooms.ts` (`bandTextClass`, `kisaAd`);
+  `public-api.ts` CourseRoom/TopicRoom/Band. Başla düğmesi başlıkta sağda (web'de sabit alt
+  çubuk yok; sayfa kısa). Yanlışlar/favoriler `/seans?mode=review|favorites&courseId|topicId`
+  — oynatıcıya `source` parametresi eklendi (course_room/topic_room). Mevzuat satırları
+  `/kanun/<slug>`'a, "N mevzuat daha" `/kanunlar`'a. **Doğrulama:** tsc 0, eslint 0,
+  tokens-check 218/0 (ilk denemede `rounded-sm` yakalandı → kaldırıldı), vitest 80/80;
+  panelde geçici hesap: ders odası (%17 weak, koç cümlesi, 16 konu, araçlar), konu odası,
+  375 px taşma yok, axe koyu+açık 0; ders kapsamlı yanlış turu `/seans`'ta 201 ile açıldı.
+  Kalan: push (API+web+mobil birlikte), bilgi kartları planı (K4), web Kütüphane kapı
+  kartları 1280 px (F9-E ile).

@@ -49,6 +49,7 @@ export default async function SeansPage({
               : undefined,
         resumeId: one(p.resume),
         label: one(p.scope),
+        source: one(p.source),
         questionCount: Number.isFinite(count)
           ? Math.min(50, Math.max(1, count))
           : undefined,

@@ -1,193 +1,238 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Lock } from "lucide-react";
+import { BookOpen, Bookmark, Lock, XCircle } from "lucide-react";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
+import type { CourseRoom, RoomTopic } from "@/lib/public-api";
+import { bandTextClass, kisaAd } from "@/lib/rooms";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
-import { DataTable } from "@/components/ui/data-table";
-import { MasteryBar } from "@/components/ui/mastery-bar";
+import { ProgressBar } from "@/components/ui/progress";
+import { SectionHeader } from "@/components/ui/section-header";
+import { CoachLine } from "@/components/rooms/coach-line";
+import { RoomStatPanel } from "@/components/rooms/room-stat-panel";
+import { ToolRow } from "@/components/rooms/tool-row";
 import { CoachRail } from "@/components/shell/coach-rail";
 
 export const metadata: Metadata = { title: "Ders", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
-interface TopicLeaf {
-  id: string;
-  name: string;
-  isPremium: boolean;
-  solvedCount: number;
-  mastery: number | null;
-}
-interface TopicNode extends TopicLeaf {
-  children: TopicLeaf[];
-}
-interface TopicsResponse {
-  topics: TopicNode[];
-  summary: {
-    solvedCount: number;
-    mastery: number | null;
-    unresolvedWrongCount: number;
-  };
-}
-interface Module {
-  id: string;
-  isPreferred: boolean;
-}
-interface Course {
-  id: string;
-  name: string;
-  sectionName: string;
-  weightPercent: number;
-}
-
-async function findCourse(courseId: string): Promise<Course | null> {
-  const modules = await api<Module[]>("/catalog/modules");
-  for (const m of [...modules].sort(
-    (a, b) => Number(b.isPreferred) - Number(a.isPreferred),
-  )) {
-    const courses = await api<Course[]>(
-      `/catalog/modules/${m.id}/courses`,
-    ).catch(() => []);
-    const hit = courses.find((c) => c.id === courseId);
-    if (hit) return hit;
-  }
-  return null;
-}
-
 /**
- * Ders detay — öğrenme merkezi (Doc 27 §3.3): konular tablosu + benim durumum;
- * her satırdan tek tıkla tur (2 dokunuş kuralı — Doc 25 Karar 2).
+ * Ders odası (Doc 49/14): durum paneli → koç satırı → konular (gövde) → araçlar → tek "Başla".
+ * Konu satırı konu odasına gider; eşikler ve cümleler sunucudan. Bilgi kartları karar bekliyor.
  */
-export default async function DersPage({
+export default async function DersOdasiPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const [course, data] = await Promise.all([
-    findCourse(id),
-    api<TopicsResponse>(`/catalog/courses/${id}/topics`).catch(() => null),
-  ]);
-  if (!course || !data) notFound();
-
-  const flat = data.topics.flatMap((t) => [
-    { ...t, depth: 0 },
-    ...t.children.map((c) => ({ ...c, depth: 1 })),
-  ]);
-  const s = data.summary;
+  const d = await api<CourseRoom>(`/me/course-room/${id}`).catch(() => null);
+  if (!d) notFound();
+  const kisa = kisaAd(d.course.name);
+  const legs = d.tools.legislation;
 
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
-      <div className="min-w-0 flex-1">
+      <div className="flex min-w-0 flex-1 flex-col gap-5">
         <Breadcrumb
-          className="mb-3"
           items={[
             { label: "Kütüphane", href: "/kutuphane" },
             { label: "Dersler", href: "/kutuphane" },
-            { label: course.name },
+            { label: d.course.name },
           ]}
         />
 
-        <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
-          <div className="flex flex-col gap-1.5">
-            <div className="flex flex-wrap items-center gap-2">
-              <h1 className="type-title text-ink">{course.name}</h1>
-              <Badge>
-                %{course.weightPercent}
-                {course.sectionName !== course.name
-                  ? ` · ${course.sectionName}`
-                  : ""}
-              </Badge>
-            </div>
-            <p className="type-body-sm text-ink-soft">
-              {s.solvedCount > 0 ? (
-                <>
-                  Bu derste <b className="tabular text-ink">{s.solvedCount}</b>{" "}
-                  soru çözdün · doğruluk{" "}
-                  <b className="tabular text-ink">%{s.mastery ?? 0}</b>
-                  {s.unresolvedWrongCount > 0 ? (
-                    <>
-                      {" "}
-                      ·{" "}
-                      <b className="tabular text-danger-ink">
-                        {s.unresolvedWrongCount}
-                      </b>{" "}
-                      çözülmemiş yanlış
-                    </>
-                  ) : null}
-                </>
-              ) : (
-                <>Bu derse henüz başlamadın — ilk tur haritanı başlatır.</>
-              )}
-            </p>
-          </div>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h1 className="type-title text-ink">{d.course.name}</h1>
           <ButtonLink
-            href={`/seans?courseId=${course.id}&count=15&scope=${encodeURIComponent(course.name)}`}
+            href={`/seans?courseId=${d.course.id}&count=10&source=course_room&scope=${encodeURIComponent(d.course.name)}`}
           >
-            Bu dersten tur başlat
+            Başla · 10 soru · {kisa}
           </ButtonLink>
         </div>
 
-        <DataTable
-          caption={`${course.name} konuları`}
-          rows={flat}
-          rowKey={(t) => t.id}
-          empty="Bu dersin konuları hazırlanıyor."
-          columns={[
-            {
-              key: "konu",
-              header: "Konu",
-              cell: (t) => (
-                <span
-                  className={cn(
-                    "inline-flex items-center gap-1.5",
-                    t.depth ? "pl-4 text-ink-soft" : "type-subhead text-ink",
-                  )}
-                >
-                  {t.name}
-                  {t.isPremium ? (
-                    <Lock
-                      size={14}
-                      className="text-ink-subtle"
-                      aria-label="premium konu"
-                    />
-                  ) : null}
+        <RoomStatPanel
+          pct={d.summary.accuracyPct}
+          sub={
+            d.summary.solved > 0
+              ? `doğruluk · ${d.summary.solved} soru`
+              : "İlk tur seni bekliyor"
+          }
+          right={
+            <>
+              {d.summary.examWeightPercent != null ? (
+                <span className="type-body-sm">
+                  Sınavda %{d.summary.examWeightPercent}
                 </span>
-              ),
-            },
-            {
-              key: "cozulen",
-              header: "Çözülen",
-              align: "right",
-              hideBelowMd: true,
-              cell: (t) => (t.solvedCount > 0 ? t.solvedCount : "—"),
-            },
-            {
-              key: "dogruluk",
-              header: "Doğruluğum",
-              cell: (t) => <MasteryBar value={t.mastery} />,
-            },
-            {
-              key: "eylem",
-              header: "",
-              align: "right",
-              cell: (t) => (
-                <Link
-                  href={`/seans?topicId=${t.id}&scope=${encodeURIComponent(`${course.name} · ${t.name}`)}`}
-                  className="tk-interactive inline-flex h-9 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
-                >
-                  {t.solvedCount > 0 ? "Çalış" : "Başla"}
-                </Link>
-              ),
-            },
-          ]}
+              ) : null}
+              {d.summary.weakest ? (
+                <span className="type-body-sm text-panel-soft">
+                  En zayıf: {d.summary.weakest.name} %
+                  {d.summary.weakest.accuracyPct}
+                </span>
+              ) : null}
+            </>
+          }
         />
-      </div>
+        <CoachLine text={d.coach} />
 
+        <section className="flex flex-col gap-2" aria-label="Konular">
+          <SectionHeader title="Konular" />
+          {d.topics.length === 0 ? (
+            <p className="type-body-sm text-ink-soft">
+              Bu dersin konuları hazırlanıyor.
+            </p>
+          ) : (
+            <ul>
+              {d.topics.map((t, i) => (
+                <li key={t.id}>
+                  <KonuSatiri
+                    topic={t}
+                    divider={i < d.topics.length - 1 || t.children.length > 0}
+                  />
+                  {t.children.map((c, j) => (
+                    <div key={c.id} className="pl-5">
+                      <KonuSatiri
+                        topic={c}
+                        divider={
+                          j < t.children.length - 1 || i < d.topics.length - 1
+                        }
+                      />
+                    </div>
+                  ))}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+
+        <section className="flex flex-col gap-2" aria-label="Araçlar">
+          <SectionHeader title="Araçlar" />
+          <ToolRow
+            icon={XCircle}
+            title="Yanlışlarım"
+            subtitle={
+              d.tools.wrongCount > 0
+                ? `${d.tools.wrongCount} soru`
+                : "Açık yanlış yok"
+            }
+            href={
+              d.tools.wrongCount > 0
+                ? `/seans?mode=review&courseId=${d.course.id}&count=${Math.min(20, d.tools.wrongCount)}&source=course_room&scope=${encodeURIComponent(`${kisa} · yanlışlar`)}`
+                : null
+            }
+          />
+          <ToolRow
+            icon={Bookmark}
+            title="Favoriler"
+            subtitle={
+              d.tools.favoriteCount > 0
+                ? `${d.tools.favoriteCount} soru`
+                : "Henüz favori yok"
+            }
+            href={
+              d.tools.favoriteCount > 0
+                ? `/seans?mode=favorites&courseId=${d.course.id}&count=${Math.min(20, d.tools.favoriteCount)}&source=course_room&scope=${encodeURIComponent(`${kisa} · favoriler`)}`
+                : null
+            }
+            divider={legs.length > 0}
+          />
+          {legs.slice(0, 3).map((l, i) => (
+            <ToolRow
+              key={l.slug}
+              icon={BookOpen}
+              title={`${l.name} metni`}
+              subtitle={`${l.articleCount} madde`}
+              href={`/kanun/${l.slug}`}
+              divider={i < Math.min(3, legs.length) - 1 || legs.length > 3}
+            />
+          ))}
+          {legs.length > 3 ? (
+            <ToolRow
+              icon={BookOpen}
+              title={`${legs.length - 3} mevzuat daha`}
+              subtitle="Mevzuat kütüphanesinde"
+              href="/kanunlar"
+              divider={false}
+            />
+          ) : null}
+        </section>
+      </div>
       <CoachRail />
     </div>
+  );
+}
+
+function KonuSatiri({
+  topic,
+  divider,
+}: {
+  topic: Omit<RoomTopic, "children"> | RoomTopic;
+  divider: boolean;
+}) {
+  const yeni = topic.band === "new";
+  return (
+    <Link
+      href={`/kutuphane/konu/${topic.id}`}
+      aria-label={`${topic.name}${topic.accuracyPct == null ? ", henüz çözülmedi" : `, yüzde ${topic.accuracyPct} doğru`}`}
+      className={cn(
+        "tk-interactive flex flex-col gap-2 py-3 hover:opacity-80",
+        divider && "border-b border-line",
+      )}
+    >
+      <span className="flex items-center gap-3">
+        <span className="flex min-w-0 flex-1 flex-col gap-0.5">
+          <span className="flex flex-wrap items-center gap-1.5">
+            <span
+              className={cn(
+                "type-subhead",
+                yeni ? "text-ink-soft" : "text-ink",
+              )}
+            >
+              {topic.name}
+            </span>
+            {topic.isPremium ? (
+              <Lock
+                size={14}
+                className="text-ink-subtle"
+                aria-label="premium konu"
+              />
+            ) : null}
+            {topic.inPlanThisWeek ? (
+              <Badge tone="accent">Planında</Badge>
+            ) : null}
+          </span>
+          <span className="type-body-sm text-ink-subtle">
+            {yeni
+              ? "Henüz çözülmedi"
+              : `${topic.solved} soru · %${topic.accuracyPct} doğru`}
+          </span>
+        </span>
+        {!yeni ? (
+          <span
+            className={cn(
+              "type-subhead tabular shrink-0",
+              bandTextClass(topic.band),
+            )}
+          >
+            %{topic.accuracyPct}
+          </span>
+        ) : null}
+        <span aria-hidden className="text-ink-subtle">
+          ›
+        </span>
+      </span>
+      {!yeni ? (
+        <ProgressBar
+          value={(topic.accuracyPct ?? 0) / 100}
+          tone={topic.band === "weak" ? "warning" : "accent"}
+          height={2}
+          label={`${topic.name} doğruluk`}
+        />
+      ) : null}
+    </Link>
   );
 }

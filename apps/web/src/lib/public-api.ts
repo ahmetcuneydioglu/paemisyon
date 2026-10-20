@@ -541,3 +541,40 @@ export interface PlanDefaults {
   suggestedWeeklyMinutes: number;
   dailyMinutes: number | null;
 }
+
+// ── Ders odası / konu odası (Doc 49/14; API rooms.service.ts) — band ve cümleler sunucuda ──
+export type Band = "new" | "sparse" | "weak" | "normal" | "strong";
+export interface RoomTopic {
+  id: string;
+  name: string;
+  solved: number;
+  accuracyPct: number | null;
+  band: Band;
+  inPlanThisWeek: boolean;
+  isPremium: boolean;
+  isLaw: boolean;
+  lawSlug: string | null;
+  children: Omit<RoomTopic, "children">[];
+}
+export interface CourseRoom {
+  course: { id: string; name: string; icon: string | null };
+  summary: {
+    solved: number;
+    correct: number;
+    accuracyPct: number | null;
+    band: Band;
+    examWeightPercent: number | null;
+    weakest: { topicId: string; name: string; accuracyPct: number | null } | null;
+  };
+  coach: string | null;
+  topics: RoomTopic[];
+  tools: { wrongCount: number; favoriteCount: number; legislation: { slug: string; name: string; articleCount: number }[] };
+}
+export interface TopicRoom {
+  topic: { id: string; name: string; courseId: string; courseName: string; isPremium: boolean };
+  summary: { solved: number; correct: number; accuracyPct: number | null; band: Band; inPlanThisWeek: boolean; planRemainingMinutes: number | null };
+  coach: string | null;
+  wrongCount: number;
+  favoriteCount: number;
+  legislation: { slug: string | null; name: string | null; articleCount: number; articleRange: string | null } | null;
+}
