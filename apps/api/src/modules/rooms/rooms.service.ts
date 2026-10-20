@@ -276,19 +276,18 @@ export class RoomsService {
     return rows[0]?.cnt ?? 0;
   }
 
-  /** Favoriler = kullanıcının herhangi bir listesindeki sorular (ders/konu süzgeçli, tekil soru). */
+  /** Favoriler = yer imleri (Bookmark; question ilişkisi yok → raw join), silinmiş soru hariç. */
   private async favoriSayisi(userId: string, by: { courseId?: string; topicId?: string }) {
-    const items = await this.prisma.userListItem.findMany({
-      where: {
-        list: { userId },
-        question: {
-          deletedAt: null,
-          ...(by.topicId ? { topicId: by.topicId } : { topic: { courseId: by.courseId } }),
-        },
-      },
-      select: { questionId: true },
-      distinct: ['questionId'],
-    });
-    return items.length;
+    const rows = by.topicId
+      ? await this.prisma.$queryRaw<{ cnt: number }[]>`
+          SELECT COUNT(*)::int AS cnt FROM bookmarks b
+          JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
+          WHERE b.user_id = ${userId}::uuid AND q.topic_id = ${by.topicId}::uuid`
+      : await this.prisma.$queryRaw<{ cnt: number }[]>`
+          SELECT COUNT(*)::int AS cnt FROM bookmarks b
+          JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
+          JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+          WHERE b.user_id = ${userId}::uuid AND t.course_id = ${by.courseId}::uuid`;
+    return rows[0]?.cnt ?? 0;
   }
 }

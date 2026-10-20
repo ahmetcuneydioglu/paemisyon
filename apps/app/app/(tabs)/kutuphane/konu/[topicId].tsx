@@ -48,7 +48,7 @@ export default function KonuOdasiScreen() {
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Bu konuda" />
               <ListRow title="Yanlışların" subtitle={d.wrongCount > 0 ? `${d.wrongCount} soru` : "Açık yanlış yok"} leading={<Ikon icon={XCircle} />} onPress={d.wrongCount > 0 ? yanlislar : undefined} />
-              <ListRow title="Favorilerin" subtitle={d.favoriteCount > 0 ? `${d.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.favoriteCount > 0 ? () => router.push("/(tabs)/kutuphane/tekrar") : undefined} divider={d.legislation != null} />
+              <ListRow title="Favorilerin" subtitle={d.favoriteCount > 0 ? `${d.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.favoriteCount > 0 ? () => router.push({ pathname: "/seans", params: { mode: "practice", fromBookmarks: "1", source: "topic_room", count: String(Math.min(20, d.favoriteCount)), focusKind: "topic", topicId: p.topicId, courseId: "", recipe: "" } }) : undefined} divider={d.legislation != null} />
               {d.legislation ? (
                 <ListRow
                   title="İlgili maddeler"

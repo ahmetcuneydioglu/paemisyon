@@ -47,7 +47,7 @@ export default function DersOdasiScreen() {
                     </AppText>
                   ) : null}
                   {d.summary.weakest ? (
-                    <AppText variant="bodySm" tone="panelSoft">
+                    <AppText variant="bodySm" tone="panelSoft" numberOfLines={2} style={{ textAlign: "right" }}>
                       En zayıf: {d.summary.weakest.name} %{d.summary.weakest.accuracyPct}
                     </AppText>
                   ) : null}
@@ -86,7 +86,7 @@ export default function DersOdasiScreen() {
                 leading={<Ikon icon={XCircle} />}
                 onPress={d.tools.wrongCount > 0 ? () => router.push({ pathname: "/seans", params: { mode: "review", source: "course_room", count: String(Math.min(20, d.tools.wrongCount)), focusKind: "course", courseId: p.id, topicId: "", recipe: "" } }) : undefined}
               />
-              <ListRow title="Favoriler" subtitle={d.tools.favoriteCount > 0 ? `${d.tools.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.tools.favoriteCount > 0 ? () => router.push("/(tabs)/kutuphane/tekrar") : undefined} divider={d.tools.legislation.length > 0} />
+              <ListRow title="Favoriler" subtitle={d.tools.favoriteCount > 0 ? `${d.tools.favoriteCount} soru` : "Henüz favori yok"} leading={<Ikon icon={Bookmark} />} onPress={d.tools.favoriteCount > 0 ? () => router.push({ pathname: "/seans", params: { mode: "practice", fromBookmarks: "1", source: "course_room", count: String(Math.min(20, d.tools.favoriteCount)), focusKind: "course", courseId: p.id, topicId: "", recipe: "" } }) : undefined} divider={d.tools.legislation.length > 0} />
               {/* En çok 3 ana metin (sunucu madde sayısına göre sıralar); kalanı Mevzuat listesinde. */}
               {d.tools.legislation.slice(0, 3).map((l, i) => (
                 <ListRow key={l.slug} title={`${l.name} metni`} subtitle={`${l.articleCount} madde`} leading={<Ikon icon={BookOpen} />} onPress={() => router.push({ pathname: "/oku/[slug]", params: { slug: l.slug } })} divider={i < Math.min(3, d.tools.legislation.length) - 1 || d.tools.legislation.length > 3} />

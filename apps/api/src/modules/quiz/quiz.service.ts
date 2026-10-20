@@ -138,8 +138,11 @@ export class QuizService {
     if (dto.recipe === 'comeback' && (dto.mode !== 'practice' || acikKapsam || dto.fromBookmarks)) {
       throw new BadRequestException('Dönüş reçetesi yalnız kapsamsız alıştırmada çalışır.');
     }
-    if (dto.fromBookmarks && (dto.mode !== 'practice' || acikKapsam)) {
-      throw new BadRequestException('Favori reçetesi yalnız kapsamsız practice modunda çalışır.');
+    // Favori turu: kapsamsız (tüm favoriler) ya da ders/konu odasından kapsamlı (Doc 49/14).
+    if (dto.fromBookmarks && (dto.mode !== 'practice' || dto.topicIds != null)) {
+      throw new BadRequestException(
+        'Favori reçetesi yalnız practice modunda çalışır (konu listesiyle değil).',
+      );
     }
     if (dto.listId != null && (dto.mode !== 'practice' || acikKapsam || dto.fromBookmarks)) {
       throw new BadRequestException('Liste turu yalnız kapsamsız practice modunda çalışır.');
@@ -314,6 +317,11 @@ export class QuizService {
           currentVersionId: { not: null },
           ...IPTAL_EDILMEMIS,
           ...(isPremiumUser ? {} : { topic: { isPremium: false } }),
+          // Ders/konu odasından gelen favori turu o kapsamla sınırlı.
+          ...(dto.fromBookmarks && dto.topicId ? { topicId: dto.topicId } : {}),
+          ...(dto.fromBookmarks && !dto.topicId && dto.courseId
+            ? { topic: { courseId: dto.courseId, ...(isPremiumUser ? {} : { isPremium: false }) } }
+            : {}),
         },
         select: { id: true, currentVersionId: true, topicId: true },
       });

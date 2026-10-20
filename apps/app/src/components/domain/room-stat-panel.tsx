@@ -16,8 +16,9 @@ export function RoomStatPanel({ pct, sub, right, label }: { pct: number | null; 
           {label}
         </AppText>
       ) : null}
+      {/* Sol sütun sabit genişlikte kalır (rakam kırılmaz); sağdaki uzun konu adı kendi sütununda sarar. */}
       <View style={{ flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", gap: space.s3 }}>
-        <View style={{ gap: 2, minWidth: 0, flexShrink: 1 }}>
+        <View style={{ gap: 2, flexShrink: 0 }}>
           {pct == null ? (
             <AppText variant="heading" tone="panelInk" style={{ fontFamily: type.display.fontFamily }}>
               Henüz çözülmedi
@@ -31,7 +32,7 @@ export function RoomStatPanel({ pct, sub, right, label }: { pct: number | null; 
             {sub}
           </AppText>
         </View>
-        {right ? <View style={{ alignItems: "flex-end", gap: 4, flexShrink: 0 }}>{right}</View> : null}
+        {right ? <View style={{ alignItems: "flex-end", gap: 4, flex: 1, minWidth: 0 }}>{right}</View> : null}
       </View>
     </View>
   );

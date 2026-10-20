@@ -49,3 +49,11 @@ bazlı tur geçmişi tutulmuyor; sonra).
   konu odası "Son 5 cevabın 1'i doğru", yanlış 8; Başla → 10 soruluk tur, DB'de
   `source=topic_room`. Bugün görevi de planın konusunu gösterdi ("Planında bu hafta: Genel
   Kültür" / "Başla · 8 soru · Genel Kültür"). Kalan: telefon turu, web (K3).
+- **Telefon turu düzeltmeleri (20 Eki 2026):** (1) Uzun "En zayıf" konu adı (3201 Sayılı
+  Emniyet Teşkilat Kanunu) panelin sol sütununu sıkıştırıp rakamı dikey kırıyordu —
+  `RoomStatPanel` sol sütun sabit, sağ sütun esnek + 2 satır. (2) Favoriler satırı Tekrar
+  sekmesine gidiyor, soru açmıyordu: sunucu favori turunu yalnız kapsamsız kabul ediyordu →
+  `fromBookmarks` artık ders/konu kapsamıyla çalışır (soru havuzu kapsamla süzülür); odalar
+  kapsamlı favori turu başlatır. Ayrıca favori sayısı yanlış tablodan (kişisel listeler)
+  okunuyordu → `bookmarks` (raw join). E2E: yer imi 1 → konu/ders favoriteCount 1, kapsamlı
+  turlar 201.
