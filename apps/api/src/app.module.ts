@@ -27,6 +27,7 @@ import { ReportsModule } from './modules/reports/reports.module';
 import { ReviewModule } from './modules/review/review.module';
 import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
+import { RoomsModule } from './modules/rooms/rooms.module';
 import { UsersModule } from './modules/users/users.module';
 
 @Module({
@@ -73,6 +74,7 @@ import { UsersModule } from './modules/users/users.module';
     ReviewModule,
     ListsModule,
     PlanModule,
+    RoomsModule,
     ReportsModule,
     BillingModule,
     CoachModule,
