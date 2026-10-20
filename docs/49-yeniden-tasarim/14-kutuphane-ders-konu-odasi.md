@@ -57,3 +57,7 @@ bazlı tur geçmişi tutulmuyor; sonra).
   kapsamlı favori turu başlatır. Ayrıca favori sayısı yanlış tablodan (kişisel listeler)
   okunuyordu → `bookmarks` (raw join). E2E: yer imi 1 → konu/ders favoriteCount 1, kapsamlı
   turlar 201.
+- **Yanlışlar satırı (20 Eki 2026):** aynı kök neden — sunucu `review` turunu kapsamla
+  reddediyordu ("Yanlış tekrarı kapsam almaz"). Artık `review` + `topicId`/`courseId` kabul
+  edilir, yanlış havuzu o kapsamla süzülür (konu listesi `topicIds` hâlâ reddedilir). E2E:
+  iki derste yanlış → konu kapsamlı review 5 soru tek konu, ders kapsamlı 5, kapsamsız 9.

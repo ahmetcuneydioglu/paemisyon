@@ -129,8 +129,9 @@ export class QuizService {
     if (dto.mode === 'exam' && !acikKapsam) {
       throw new BadRequestException('Deneme için topicId veya courseId verilmeli.');
     }
-    if (dto.mode === 'review' && acikKapsam) {
-      throw new BadRequestException('Yanlış tekrarı kapsam almaz (topicId/courseId verilmez).');
+    // Yanlış tekrarı: kapsamsız (tüm yanlışlar) ya da ders/konu odasından kapsamlı (Doc 49/14).
+    if (dto.mode === 'review' && dto.topicIds != null) {
+      throw new BadRequestException('Yanlış tekrarı konu listesi almaz.');
     }
     if (dto.pool && dto.mode !== 'review') {
       throw new BadRequestException('Tekrar havuzu yalnız review modunda seçilir.');
@@ -283,6 +284,8 @@ export class QuizService {
         where: {
           id: { in: wrongs.map((w) => w.questionId) },
           ...yanlisTuruSoruFiltresi({ isPremium: isPremiumUser, preferredModuleId }),
+          // Ders/konu odasından gelen yanlış turu o kapsamla sınırlı.
+          ...(dto.topicId ? { topicId: dto.topicId } : dto.courseId ? { topic: { courseId: dto.courseId } } : {}),
         },
         select: { id: true, currentVersionId: true, topicId: true },
       });
