@@ -3,22 +3,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  ArrowRight,
-  Bookmark,
-  BookmarkCheck,
-  Brain,
-  Flag,
-  Scale,
-  X,
-} from "lucide-react";
+import { ArrowRight, ChevronLeft, Scale, X } from "lucide-react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog } from "@/components/ui/dialog";
-import { ExplanationBox } from "@/components/ui/explanation-box";
 import { KeyHint } from "@/components/ui/key-hint";
 import { Notice } from "@/components/ui/notice";
 import {
@@ -26,9 +17,18 @@ import {
   QuestionStem,
   type QuestionOptionState,
 } from "@/components/ui/question";
-import { SegmentBar } from "@/components/ui/progress";
+import { ProgressBar, SegmentBar } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
 import { FocusFrame } from "@/components/shell/focus-frame";
+import {
+  FeedbackPanel,
+  QuestionMetaRow,
+  ResultPanel,
+  SessionTitleBlock,
+  type Difficulty,
+  type SliceState,
+  type ToolAction,
+} from "./seans-kit";
 
 /** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
 function fmtVerifiedDate(iso: string): string {
@@ -43,12 +43,24 @@ interface SessionQuestion {
   stem: string;
   mediaUrl: string | null;
   options: { id: string; label: string; text: string }[];
+  /** F10-0: meta satırı; eski sunucuda yok. */
+  difficulty?: Difficulty;
+  /** Cevaptan ÖNCE madde bağı (yalnız alıştırma); metin yok, Atlas'a köprü. */
+  relatedArticleRef?: {
+    lawSlug: string;
+    no: string;
+    slug: string;
+    label: string;
+    legislationSlug: string | null;
+  } | null;
 }
 interface StartResponse {
   sessionId: string;
   mode: string;
   plannedDurationSeconds: number | null;
   questions: SessionQuestion[];
+  /** Başlık bloğu: kapsam adı ("Anayasa Hukuku", "Yanlış tekrarı"). */
+  scopeName?: string | null;
 }
 interface AnswerFeedback {
   isCorrect: boolean;
@@ -105,6 +117,7 @@ interface ResumeResponse {
   sessionId: string;
   mode: string;
   questions: SessionQuestion[];
+  scopeName?: string | null;
   givenAnswers: {
     questionId: string;
     selectedOptionId: string | null;
@@ -129,8 +142,15 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const [phase, setPhase] = useState<Phase>({ kind: "loading" });
   const [index, setIndex] = useState(0);
   const [feedback, setFeedback] = useState<
-    Record<string, AnswerFeedback & { selected: string }>
+    Record<
+      string,
+      AnswerFeedback & { selected: string; seconds?: number | null }
+    >
   >({});
+  // Kapsam adı (F10-0 `scopeName`); query'deki etiket öncelikli.
+  const [scopeName, setScopeName] = useState<string | null>(null);
+  // "Not" aracı: dar ekranda yardımcı panel gizli → not alanı panelin altında açılır.
+  const [noteOpen, setNoteOpen] = useState(false);
   const [pendingAnswer, setPendingAnswer] = useState<{
     questionId: string;
     optionId: string;
@@ -190,8 +210,11 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       // Kaldığı yerden devam: aynı set + verilen cevaplar (Doc 27 §2.4).
       apiClient<ResumeResponse>(`/quiz/sessions/${scope.resumeId}/resume`)
         .then((res) => {
-          const seeded: Record<string, AnswerFeedback & { selected: string }> =
-            {};
+          const seeded: Record<
+            string,
+            AnswerFeedback & { selected: string; seconds?: number | null }
+          > = {};
+          setScopeName(res.scopeName ?? null);
           for (const a of res.givenAnswers) {
             if (a.selectedOptionId == null) continue;
             seeded[a.questionId] = {
@@ -243,6 +266,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     })
       .then((data) => {
         questionShownAt.current = Date.now();
+        setScopeName(data.scopeName ?? null);
         setPhase({ kind: "playing", data });
       })
       .catch(fail);
@@ -319,6 +343,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       answerInFlight.current = true;
       setAnswerError(null);
       setPendingAnswer({ questionId: question.questionId, optionId });
+      const spentMs = Date.now() - questionShownAt.current;
       try {
         const fb = await apiClient<AnswerFeedback>(
           `/quiz/sessions/${data.sessionId}/answers`,
@@ -328,13 +353,17 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
               questionId: question.questionId,
               questionVersionId: question.versionId,
               selectedOptionId: optionId,
-              timeSpentMs: Date.now() - questionShownAt.current,
+              timeSpentMs: spentMs,
             },
           },
         );
         setFeedback((f) => ({
           ...f,
-          [question.questionId]: { ...fb, selected: optionId },
+          [question.questionId]: {
+            ...fb,
+            selected: optionId,
+            seconds: Math.max(1, Math.round(spentMs / 1000)),
+          },
         }));
       } catch (e: unknown) {
         const err = e instanceof ApiClientError ? e : null;
@@ -376,12 +405,22 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       setIndex((i) => i + 1);
       setMaddeOpen(false); // sonraki soruda inspector kapanır
       setReportOpen(false); // hata bildir paneli de kapanır
+      setNoteOpen(false);
       setReportText("");
       setReportState("idle");
       setAnswerError(null);
       questionShownAt.current = Date.now();
     }
   }, [data, currentFeedback, isLast, complete]);
+
+  // "Önceki": cevaplanmış soruyu salt okunur gösterir (cevap değiştirilemez).
+  const prev = useCallback(() => {
+    if (index === 0) return;
+    setIndex((i) => i - 1);
+    setMaddeOpen(false);
+    setReportOpen(false);
+    setNoteOpen(false);
+  }, [index]);
 
   // ── Favorile (F) — bookmark API'sine yazar (Doc 26 #7, wireframe 08) ──
   const toggleBookmark = useCallback(
@@ -602,6 +641,61 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       : scope.mode === "favorites"
         ? "Favorilerim — yıldızladığın sorular"
         : "Koç turu — zayıf konuların, yanlışların ve yeni sorular");
+  const titleText =
+    scope.label ??
+    scopeName ??
+    (scope.mode === "review"
+      ? "Yanlış tekrarı"
+      : scope.mode === "favorites"
+        ? "Favorilerim"
+        : "Koç turu");
+  const dogruSayisi = Object.values(feedback).filter((f) => f.isCorrect).length;
+  const yanlisSayisi = answeredCount - dogruSayisi;
+  const slices: SliceState[] = data!.questions.map((q, i) => {
+    if (i === index) return "current";
+    const f = feedback[q.questionId];
+    return f ? (f.isCorrect ? "correct" : "wrong") : "future";
+  });
+  const favoride = bookmarks.has(question!.questionId);
+  const aiNow = aiState[question!.questionId];
+  const araclar: ToolAction[] = [
+    {
+      key: "favorite",
+      label: favoride ? "Favoride" : "Favori",
+      active: favoride,
+      hint: "F",
+      onClick: () => toggleBookmark(question!.questionId),
+    },
+    {
+      key: "note",
+      label: "Not",
+      active: Boolean(notes[question!.questionId]),
+      onClick: () => {
+        // Geniş ekranda yardımcı paneldeki alana odaklan; dar ekranda panel altında aç.
+        const el = document.getElementById("soru-notu");
+        if (el && el.offsetParent !== null) el.focus();
+        else setNoteOpen((v) => !v);
+      },
+    },
+    {
+      key: "coach",
+      label: "Koça sor",
+      active: aiNow?.status === "done",
+      busy: aiNow?.status === "busy",
+      onClick: () => {
+        if (fb && !aiNow) void askCoach(question!, fb.selected);
+      },
+    },
+    {
+      key: "report",
+      label: "Hata bildir",
+      active: reportOpen,
+      onClick: () => {
+        setReportOpen((v) => !v);
+        if (!reportOpen) setReportState("idle");
+      },
+    },
+  ];
   const yanPanel = (
     <div className="flex flex-col gap-3">
       <Card className="flex flex-col gap-2">
@@ -708,8 +802,33 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       aside={yanPanel}
     >
       <div className="flex flex-col gap-5">
-        <QuestionStem index={index + 1} total={total} stem={question!.stem} />
-        <div className="hidden"></div>
+        <SessionTitleBlock
+          title={titleText}
+          index={Math.min(index + 1, total)}
+          total={total}
+          correct={dogruSayisi}
+          wrong={yanlisSayisi}
+          slices={slices}
+        />
+        <div className="flex flex-col gap-3">
+          <QuestionMetaRow
+            difficulty={question!.difficulty}
+            article={
+              question!.relatedArticleRef
+                ? {
+                    label: question!.relatedArticleRef.label,
+                    href: `/kanun/${question!.relatedArticleRef.lawSlug}/madde/${question!.relatedArticleRef.slug}`,
+                  }
+                : null
+            }
+          />
+          <QuestionStem
+            index={index + 1}
+            total={total}
+            stem={question!.stem}
+            counter={false}
+          />
+        </div>
         {question!.mediaUrl && (
           // Soru medyası keyfi bir saklı URL'dir (bilinmeyen host) — next/image
           // optimizer'ını her host'a açmak güvenlik anti-pattern'i olurdu; bunun
@@ -767,164 +886,150 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         )}
         {answerError && <Notice tone="error">{answerError}</Notice>}
 
-        {fb && (
+        {fb ? (
           <div className="flex flex-col gap-4">
-            <ExplanationBox
+            <FeedbackPanel
               isCorrect={fb.isCorrect}
-              explanation={fb.explanation}
-              source={fb.source}
-              legalReference={fb.legalReference}
-              lawHref={
-                fb.relatedArticle
-                  ? `/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`
+              correctLabel={
+                fb.correctOptionId
+                  ? (question!.options.find((o) => o.id === fb.correctOptionId)
+                      ?.label ?? null)
                   : null
               }
+              seconds={fb.seconds ?? null}
+              // Devam edilen turda açıklama sızdırılmaz → "açıklamasız" varyant.
+              explanation={
+                fb.seconds == null && fb.explanation == null
+                  ? undefined
+                  : fb.explanation
+              }
+              legalReference={fb.legalReference}
+              articleLabel={fb.relatedArticle ? "Maddeyi oku" : null}
+              onReadArticle={() => setMaddeOpen((v) => !v)}
+              coach={
+                aiNow
+                  ? aiNow.status === "busy"
+                    ? { status: "busy" }
+                    : aiNow.status === "error"
+                      ? {
+                          status: "error",
+                          message: (
+                            <>
+                              {aiNow.message}
+                              {aiNow.limit ? (
+                                <>
+                                  {" "}
+                                  <Link
+                                    href="/premium"
+                                    className="font-semibold text-accent hover:underline"
+                                  >
+                                    Premium&apos;la sınırsız
+                                  </Link>
+                                </>
+                              ) : null}
+                            </>
+                          ),
+                        }
+                      : {
+                          status: "done",
+                          text: aiNow.text,
+                          remainingToday: aiNow.remainingToday,
+                        }
+                  : undefined
+              }
+              tools={araclar}
             />
-            {/* İlgili maddenin resmî metni (Doc 25 §4) — açıklamanın hemen altında,
-                yayınlanmışsa otomatik; birebir metin + kaynak künyesi. */}
+            {/* İlgili maddenin resmî metni (Doc 25 §4) — Figma "Madde Sheet'i" karşılığı:
+                yayınlanmışsa panelin altında; İlgili bölüm · Kaynak · MBS bağlantısı. */}
             {fb.relatedArticle?.text && (
-              <Card className="flex flex-col gap-2 border-accent/40">
-                <span className="type-label inline-flex items-center gap-1 text-accent-ink">
-                  <Scale size={12} aria-hidden /> İlgili madde ·{" "}
-                  {fb.relatedArticle.no}
-                </span>
-                <div className="type-body-sm whitespace-pre-line text-ink">
+              <Card className="flex flex-col gap-3">
+                <div className="flex items-start justify-between gap-2">
+                  <span className="type-heading text-ink">
+                    Madde {fb.relatedArticle.no}
+                  </span>
+                  <Link
+                    href={`/kanun/${fb.relatedArticle.lawSlug}/madde/${fb.relatedArticle.slug}`}
+                    target="_blank"
+                    className="type-body-sm inline-flex items-center gap-1 text-accent-ink hover:underline"
+                  >
+                    Atlas&apos;ta aç <ArrowRight size={14} aria-hidden />
+                  </Link>
+                </div>
+                <span className="type-label text-ink-subtle">İlgili bölüm</span>
+                <div className="type-body whitespace-pre-line text-ink">
                   {fb.relatedArticle.text.body}
                 </div>
-                <p className="type-body-sm text-ink-subtle">
-                  Kaynak:{" "}
+                <div className="flex flex-col gap-1 border-t border-line pt-3">
+                  <span className="type-label text-ink-subtle">Kaynak</span>
+                  <p className="type-body-sm text-ink-soft">
+                    {fb.relatedArticle.text.source}
+                    {fb.relatedArticle.text.effectiveInfo ? (
+                      <> · {fb.relatedArticle.text.effectiveInfo}</>
+                    ) : null}
+                    {fb.relatedArticle.text.verifiedAt ? (
+                      <>
+                        {" "}
+                        · {fmtVerifiedDate(
+                          fb.relatedArticle.text.verifiedAt,
+                        )}{" "}
+                        itibarıyla
+                      </>
+                    ) : null}
+                  </p>
                   {fb.relatedArticle.text.sourceUrl ? (
                     <a
                       href={fb.relatedArticle.text.sourceUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline hover:text-ink"
+                      className="type-subhead inline-flex min-h-8 items-center gap-1 text-accent-ink hover:underline"
                     >
-                      {fb.relatedArticle.text.source}
+                      Mevzuat Bilgi Sistemi <ArrowRight size={14} aria-hidden />
                     </a>
-                  ) : (
-                    fb.relatedArticle.text.source
-                  )}
-                  {fb.relatedArticle.text.effectiveInfo ? (
-                    <> · {fb.relatedArticle.text.effectiveInfo}</>
                   ) : null}
-                  {fb.relatedArticle.text.verifiedAt ? (
-                    <>
-                      {" "}
-                      · {fmtVerifiedDate(
-                        fb.relatedArticle.text.verifiedAt,
-                      )}{" "}
-                      itibarıyla
-                    </>
-                  ) : null}
-                </p>
+                  <p className="type-body-sm text-ink-subtle">
+                    Soruyla ilgili bölüm gösteriliyor; maddenin tamamı değildir.
+                  </p>
+                </div>
               </Card>
             )}
-            {/* AI koç (Doc 28 P3-21): yalnız yanlış cevapta — "neden bu çeldirici?" */}
-            {!fb.isCorrect &&
-              (() => {
-                const ai = aiState[question!.questionId];
-                if (!ai) {
-                  return (
-                    <Button
-                      variant="secondary"
-                      className="w-full justify-start"
-                      leadingIcon={<Brain size={18} aria-hidden />}
-                      onClick={() => askCoach(question!, fb.selected)}
-                    >
-                      Koça sor: Neden yanlış?
-                    </Button>
-                  );
-                }
-                if (ai.status === "busy") {
-                  return (
-                    <p
-                      className="type-body-sm rounded-card bg-surface-alt px-4 py-3 text-ink-soft"
-                      role="status"
-                      aria-live="polite"
-                    >
-                      Koç düşünüyor…
-                    </p>
-                  );
-                }
-                if (ai.status === "error") {
-                  return (
-                    <Notice tone="info">
-                      {ai.message}
-                      {ai.limit && (
-                        <>
-                          {" "}
-                          <Link
-                            href="/premium"
-                            className="font-semibold text-accent-ink hover:underline"
-                          >
-                            Premium&apos;la sınırsız
-                          </Link>
-                        </>
-                      )}
-                    </Notice>
-                  );
-                }
-                return (
-                  <Card className="flex flex-col gap-2 border-accent/40">
-                    <span className="type-label inline-flex items-center gap-1 text-accent-ink">
-                      <Brain size={12} aria-hidden /> Koç · çeldirici analizi
-                    </span>
-                    <div className="type-body-sm whitespace-pre-line text-ink">
-                      {ai.text}
-                    </div>
-                    {ai.remainingToday != null && (
-                      <p className="type-body-sm text-ink-subtle">
-                        Bugün kalan koç hakkı: {ai.remainingToday}
-                      </p>
-                    )}
-                  </Card>
-                );
-              })()}
-            {/* Aksiyon ucu: favorile (F) · madde aç (M) · hata bildir */}
-            <div className="flex flex-wrap items-center justify-end gap-2">
-              <Button
-                size="sm"
-                variant={
-                  bookmarks.has(question!.questionId) ? "primary" : "secondary"
-                }
-                aria-pressed={bookmarks.has(question!.questionId)}
-                leadingIcon={
-                  bookmarks.has(question!.questionId) ? (
-                    <BookmarkCheck size={16} aria-hidden />
-                  ) : (
-                    <Bookmark size={16} aria-hidden />
-                  )
-                }
-                onClick={() => toggleBookmark(question!.questionId)}
-              >
-                {bookmarks.has(question!.questionId) ? "Favoride" : "Favorile"}{" "}
-                <KeyHint keys="F" />
-              </Button>
-              {fb.relatedArticle && (
-                <Button
-                  size="sm"
-                  variant={maddeOpen ? "primary" : "secondary"}
-                  aria-pressed={maddeOpen}
-                  leadingIcon={<Scale size={16} aria-hidden />}
-                  onClick={() => setMaddeOpen((v) => !v)}
-                >
-                  Madde {fb.relatedArticle.no} <KeyHint keys="M" />
-                </Button>
-              )}
-              <Button
-                size="sm"
-                variant="ghost"
-                aria-expanded={reportOpen}
-                leadingIcon={<Flag size={16} aria-hidden />}
-                onClick={() => {
-                  setReportOpen((v) => !v);
-                  if (!reportOpen) setReportState("idle");
-                }}
-              >
-                Hata bildir
-              </Button>
-            </div>
+            {/* Not — dar ekranda (yardımcı panel gizli) panelin altında */}
+            {noteOpen && (
+              <Card className="flex flex-col gap-1.5 lg:hidden">
+                <div className="flex items-baseline justify-between">
+                  <label
+                    htmlFor="soru-notu-dar"
+                    className="type-label text-ink-subtle"
+                  >
+                    Notum
+                  </label>
+                  <span
+                    className="type-body-sm text-ink-subtle"
+                    aria-live="polite"
+                  >
+                    {noteStates[question!.questionId] === "saving"
+                      ? "kaydediliyor…"
+                      : noteStates[question!.questionId] === "saved"
+                        ? "kaydedildi"
+                        : noteStates[question!.questionId] === "error"
+                          ? "kaydedilemedi"
+                          : ""}
+                  </span>
+                </div>
+                <textarea
+                  id="soru-notu-dar"
+                  autoFocus
+                  value={notes[question!.questionId] ?? ""}
+                  onChange={(e) =>
+                    noteDegisti(question!.questionId, e.target.value)
+                  }
+                  onKeyDown={(e) => e.stopPropagation()}
+                  placeholder="Bu soruya özel notun — hesabında saklanır"
+                  rows={3}
+                  maxLength={2000}
+                  className="type-body-sm w-full resize-y rounded-control border border-line bg-surface-alt p-2.5 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
+                />
+              </Card>
+            )}
             {/* Yerinde hata bildir paneli — turdan çıkmadan (Doc 27 §3.6) */}
             {reportOpen && (
               <Card tone="alt" className="flex flex-col gap-2">
@@ -946,6 +1051,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                       id="report-message"
                       value={reportText}
                       onChange={(e) => setReportText(e.target.value)}
+                      onKeyDown={(e) => e.stopPropagation()}
                       rows={2}
                       maxLength={500}
                       placeholder="ör. cevap anahtarı yanlış, yazım hatası, şık eksik…"
@@ -980,17 +1086,29 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                 )}
               </Card>
             )}
-            <div className="flex justify-end">
+          </div>
+        ) : null}
+
+        {/* Alt çubuk (Figma AltÇubuk): cevaptan önce yalnız "Önceki"; sonra Önceki + birincil. */}
+        {fb || index > 0 ? (
+          <div className="sticky bottom-0 -mx-4 flex items-center gap-3 border-t border-line bg-bg px-4 py-3 md:-mx-6 md:px-6">
+            {index > 0 ? (
+              <Button variant="ghost" onClick={prev} className="text-ink-soft">
+                <ChevronLeft size={18} aria-hidden /> Önceki
+              </Button>
+            ) : null}
+            {fb ? (
               <Button
                 size="lg"
                 onClick={next}
                 disabled={phase.kind === "finishing"}
+                className="ml-auto flex-1 sm:flex-none sm:min-w-56"
               >
                 {isLast ? "Turu bitir" : "Sonraki soru"} <KeyHint keys="⏎" />
               </Button>
-            </div>
+            ) : null}
           </div>
-        )}
+        ) : null}
       </div>
 
       {/* Çıkış diyaloğu — ilerleme kaybolmaz (cevaplar sunucuda) */}
@@ -1049,35 +1167,42 @@ function SessionResult({
   const pct =
     result.totalQuestions > 0
       ? Math.round((result.correctCount / result.totalQuestions) * 100)
-      : 0;
-  const minutes = Math.max(1, Math.round(result.durationSeconds / 60));
+      : null;
+  const dk = Math.floor(result.durationSeconds / 60);
+  const sn = result.durationSeconds % 60;
+  const sure = dk > 0 ? `${dk} dk ${sn} sn` : `${sn} sn`;
   const weakest = result.topicBreakdown
     ?.filter((t) => t.total >= 2)
     .sort((a, b) => a.correct / a.total - b.correct / b.total)[0];
 
   return (
-    <FocusFrame context={scopeLabel ?? "Tur sonucu"} exitHref="/bugun" wide>
+    <FocusFrame context="Tur özeti" exitHref="/bugun" wide>
       <div className="grid items-start gap-4 lg:grid-cols-[1fr_1.2fr] lg:[&>*]:min-w-0">
         <div className="flex flex-col gap-4">
-          <Card className="flex flex-col items-center gap-1 p-6 text-center">
-            <span className="type-label text-ink-subtle">
-              {scopeLabel ?? "Koç turu"} · {minutes} dk
-            </span>
-            <p className="type-display tabular text-ink">
-              {result.correctCount}
-              <span className="type-title text-ink-soft">
-                /{result.totalQuestions}
-              </span>
+          <div className="flex flex-col gap-1">
+            <h1 className="type-title text-ink">Bir tur daha tamam.</h1>
+            <p className="type-body-sm text-ink-soft">
+              {[scopeLabel ?? "Koç turu", `${result.totalQuestions} soru`].join(
+                " · ",
+              )}
             </p>
-            <span className="type-body-sm tabular text-ink-soft">
-              doğruluk %{pct}
-            </span>
-            {result.earnedBadges.length > 0 && (
-              <Badge tone="accent" className="mt-2">
-                Yeni rozet: {result.earnedBadges.map((b) => b.name).join(", ")}
-              </Badge>
-            )}
-          </Card>
+          </div>
+          <ResultPanel
+            correct={result.correctCount}
+            total={result.totalQuestions}
+            pct={pct}
+            durationLabel={sure}
+          />
+          {result.earnedBadges.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="type-label text-ink-subtle">Yeni rozet</span>
+              {result.earnedBadges.map((b) => (
+                <Badge key={b.key} tone="accent">
+                  {b.name}
+                </Badge>
+              ))}
+            </div>
+          )}
 
           <Card className="flex flex-col gap-1 border-accent/40">
             <span className="type-label text-accent-ink">Koç</span>
@@ -1150,43 +1275,36 @@ function SessionResult({
         <Card className="flex flex-col gap-2">
           <span className="type-label text-ink-subtle">Konu kırılımı</span>
           {result.topicBreakdown && result.topicBreakdown.length > 0 ? (
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-line text-left">
-                  <th className="type-label py-2 text-ink-subtle">Konu</th>
-                  <th className="type-label py-2 text-right text-ink-subtle">
-                    Doğru
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {result.topicBreakdown.map((t) => {
-                  const ratio = t.total > 0 ? t.correct / t.total : 0;
-                  return (
-                    <tr
-                      key={t.topicId}
-                      className="border-b border-line last:border-0"
-                    >
-                      <td className="type-body-sm py-2.5 pr-2 text-ink">
-                        {t.topicName}
-                      </td>
-                      <td
-                        className={cn(
-                          "type-subhead tabular py-2.5 text-right",
-                          ratio < 0.4
-                            ? "text-danger-ink"
-                            : ratio < 0.6
-                              ? "text-warning-ink"
-                              : "text-success-ink",
-                        )}
-                      >
+            <ul className="flex flex-col gap-3">
+              {result.topicBreakdown.map((t) => {
+                const ratio = t.total > 0 ? t.correct / t.total : 0;
+                return (
+                  <li
+                    key={t.topicId}
+                    className="flex flex-col gap-2 py-1"
+                    aria-label={`${t.topicName}: ${t.correct} / ${t.total}`}
+                  >
+                    <div className="flex justify-between gap-3">
+                      <span className="type-body text-ink">{t.topicName}</span>
+                      <span className="type-body tabular shrink-0 text-ink-soft">
                         {t.correct}/{t.total}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                      </span>
+                    </div>
+                    <ProgressBar
+                      value={ratio}
+                      tone={
+                        ratio >= 0.75
+                          ? "success"
+                          : ratio >= 0.5
+                            ? "accent"
+                            : "danger"
+                      }
+                      height={2}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
           ) : (
             <p className="type-body-sm text-ink-soft">
               Tek konuluk tur — kırılım yok. Doğru {result.correctCount}, yanlış{" "}

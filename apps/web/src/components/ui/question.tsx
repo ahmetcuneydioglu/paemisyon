@@ -5,30 +5,40 @@ import { cn } from "@/lib/cn";
 import { Badge } from "./badge";
 import { KeyHint } from "./key-hint";
 
-/** Soru kökü: numara/toplam, konu rozeti, metin 16/25. Kaynak etiketi GÖSTERİLMEZ. */
+/**
+ * Soru kökü (Doc 49/15 Figma): editoryal — kart yok, zemin üstünde Lora 400 20/28.
+ * `counter` kapalıysa "Soru N/M" satırı gösterilmez (Seans başlık bloğu zaten sayar).
+ * Kaynak etiketi GÖSTERİLMEZ.
+ */
 export function QuestionStem({
   index,
   total,
   topic,
   stem,
+  counter = true,
   className,
 }: {
   index: number;
   total: number;
   topic?: string | null;
   stem: string;
+  counter?: boolean;
   className?: string;
 }) {
   return (
     <div className={cn("flex flex-col gap-3", className)}>
-      <div className="flex items-center gap-2">
-        <span className="type-label tabular text-ink-subtle">
-          Soru {index}/{total}
-        </span>
-        {topic ? <Badge>{topic}</Badge> : null}
-      </div>
+      {counter || topic ? (
+        <div className="flex items-center gap-2">
+          {counter ? (
+            <span className="type-label tabular text-ink-subtle">
+              Soru {index}/{total}
+            </span>
+          ) : null}
+          {topic ? <Badge>{topic}</Badge> : null}
+        </div>
+      ) : null}
       <p
-        className="type-body max-w-[65ch] text-ink"
+        className="max-w-[65ch] font-display text-[20px] leading-7 font-normal text-ink"
         role="heading"
         aria-level={2}
       >
@@ -39,20 +49,25 @@ export function QuestionStem({
 }
 
 export type QuestionOptionState =
-  "default" | "selected" | "correct" | "incorrect" | "missed" | "disabled";
+  | "default"
+  | "selected"
+  | "correct"
+  | "incorrect"
+  | "missed"
+  | "disabled";
 
 const palette: Record<
   QuestionOptionState,
   { row: string; badge: string; text: string }
 > = {
   default: {
-    row: "border-line bg-surface hover:border-ink-soft",
+    row: "border-line bg-surface hover:bg-surface-alt",
     badge: "bg-surface-alt text-ink-soft",
     text: "text-ink",
   },
   selected: {
     row: "border-accent bg-accent-soft border-[1.5px]",
-    badge: "bg-accent text-on-accent",
+    badge: "bg-accent-soft text-accent-ink",
     text: "text-ink",
   },
   correct: {
@@ -65,9 +80,10 @@ const palette: Record<
     badge: "bg-danger text-on-accent",
     text: "text-ink",
   },
+  // Kaçırılan doğru = doğru görünümü (Figma S3: doğru şık yeşil, seçilen kırmızı).
   missed: {
-    row: "border-success bg-surface border-[1.5px]",
-    badge: "bg-surface-alt text-success-ink",
+    row: "border-success bg-success-soft border-[1.5px]",
+    badge: "bg-success text-on-accent",
     text: "text-ink",
   },
   disabled: {
@@ -86,8 +102,9 @@ const a11y: Record<QuestionOptionState, string> = {
 };
 
 /**
- * Şık satırı — altı durum (Expo ile aynı). Doğru/yanlış rengi anında, ikon eşlik eder;
- * renk tek başına anlam taşımaz. Klavye ipucu masaüstünde ("1"–"5").
+ * Şık satırı (Figma Seans/ŞıkSatırı, 6 durum — Expo ile aynı): 56 px, surface + 1 px line,
+ * radius 10; solda 28 px daire; doğru/yanlışta harf yerine dairede ✓/✕. Renk tek başına
+ * anlam taşımaz. Klavye ipucu masaüstünde ("1"–"5").
  */
 export function QuestionOption({
   label,
@@ -107,24 +124,14 @@ export function QuestionOption({
   const p = palette[state];
   const interactive =
     (state === "default" || state === "selected") && Boolean(onSelect);
-  const trailing =
+  const glyph =
     state === "correct" || state === "missed" ? (
-      <Check
-        size={20}
-        strokeWidth={2.25}
-        className="shrink-0 text-success"
-        aria-hidden
-      />
+      <Check size={16} strokeWidth={2.5} aria-hidden />
     ) : state === "incorrect" ? (
-      <X
-        size={20}
-        strokeWidth={2.25}
-        className="shrink-0 text-danger"
-        aria-hidden
-      />
-    ) : keyHint ? (
-      <KeyHint keys={keyHint} />
-    ) : null;
+      <X size={16} strokeWidth={2.5} aria-hidden />
+    ) : (
+      label
+    );
   return (
     <button
       type="button"
@@ -144,18 +151,14 @@ export function QuestionOption({
     >
       <span
         className={cn(
-          "flex size-[30px] shrink-0 items-center justify-center rounded-full type-subhead",
+          "flex size-7 shrink-0 items-center justify-center rounded-full text-[14px] leading-none font-semibold",
           p.badge,
         )}
       >
-        {label}
+        {glyph}
       </span>
-      <span
-        className={cn("type-body flex-1 text-[15px] leading-[21px]", p.text)}
-      >
-        {text}
-      </span>
-      {trailing}
+      <span className={cn("type-body flex-1", p.text)}>{text}</span>
+      {interactive && keyHint ? <KeyHint keys={keyHint} /> : null}
     </button>
   );
 }

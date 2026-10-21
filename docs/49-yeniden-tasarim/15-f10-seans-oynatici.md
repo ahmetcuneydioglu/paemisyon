@@ -223,3 +223,19 @@ Koça sor / Hata bildir seans içinde yoktu (web'de vardı) — F10-A'da eklenir
   "Bir tur daha tamam.", panel hero, konu kırılımı ince çizgi, tek koç cümlesi, "Yanlışları
   tekrar et". Galeri "Seans" bölümü. tsc 0, expo lint 0. Göz testi simülatörde (kullanıcı):
   SE + 17, açık + koyu; eski sunucuda meta satırı boş kalır (alanlar isteğe bağlı).
+- **F10-B Web (22 Eki 2026):** `components/session/seans-kit.tsx` — Expo ile aynı adlar
+  (`SessionTitleBlock`, `SessionProgress`, `QuestionMetaRow`, `FeedbackPanel`, `ToolRow`,
+  `ResultPanel`); panel ve sonuç paneli `.theme-dark` alt ağacı (açık temada da koyu, durum
+  renkleri koyu şemadan). `ui/question.tsx`: kök Lora 400 20/28 (`counter` kapatılabilir),
+  şık 6 durum ikon dairede (deneme oynatıcı, günün sorusu, çıkmış sınav, inceleme listesi aynı
+  bileşeni kullanır → otomatik yeni dil). `session-player.tsx`: başlık bloğu + ✓/✗ + dilimler,
+  meta satırı (madde bağı Atlas'a), geri bildirim paneli (süre rozeti; koç cevabı panelde;
+  araç satırı: Favori F · Not (geniş ekranda yan paneldeki alana odaklanır, darda panel altında
+  açılır) · Koça sor · Hata bildir), Madde kartı ("İlgili bölüm · Kaynak · MBS bağlantısı ·
+  tamamı değildir"), yapışkan alt çubuk ("Önceki" cevaplanmış soruyu salt okunur açar; "Sonraki
+  soru" ⏎), tur sonu "Bir tur daha tamam." + `ResultPanel` + ince çizgili konu kırılımı.
+  `scopeName` başlık. Galeri `/tasarim` "Seans kiti" bölümü. Doğrulama: tsc 0, eslint 0,
+  prettier, tokens-check 219/0, vitest 80/80; geçici önizleme sayfasıyla (:3012, webpack —
+  Turbopack monorepo kökünü aşan tokens.css import'unu reddediyor) 393 px koyu + açık ekran
+  görüntüsü Figma S3 ile karşılaştırıldı: panel açıkta lacivert, "Yanlış" okunur, hero "/"
+  taşmıyor. Canlı tur (API'li) kullanıcı hesabıyla deploy sonrası bakılacak.

@@ -31,6 +31,22 @@ import {
   type TextVariant,
 } from "@/components/ui";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {
+  FeedbackPanel,
+  QuestionMetaRow,
+  ResultPanel,
+  SessionProgress,
+  SessionTitleBlock,
+  ToolRow,
+  type ToolAction,
+} from "@/components/session/seans-kit";
+
+const seansAraclari: ToolAction[] = [
+  { key: "favorite", label: "Favoride", active: true, onClick: () => {} },
+  { key: "note", label: "Not", onClick: () => {} },
+  { key: "coach", label: "Koça sor", onClick: () => {} },
+  { key: "report", label: "Hata bildir", onClick: () => {} },
+];
 
 function Bolum({
   title,
@@ -325,6 +341,78 @@ export function Galeri() {
           />
           <QuestionOption label="F" text="Pasif şık" state="disabled" />
         </div>
+      </Bolum>
+
+      <Bolum
+        title="Seans kiti (Doc 49/15)"
+        note="Başlık bloğu, dilimler, meta satırı, geri bildirim paneli (panel iki temada koyu), sonuç paneli."
+      >
+        <SessionTitleBlock
+          title="Anayasa Hukuku"
+          index={3}
+          total={10}
+          correct={2}
+          wrong={0}
+          slices={[
+            "correct",
+            "correct",
+            "current",
+            "future",
+            "future",
+            "future",
+            "future",
+            "future",
+            "future",
+            "future",
+          ]}
+        />
+        <QuestionMetaRow
+          difficulty="hard"
+          article={{ label: "PVSK md. 4/A", onClick: () => {} }}
+        />
+        <Text variant="label" tone="subtle">
+          Deneme dilimleri (40 soru → 20 dilim; doğruluk sızmaz)
+        </Text>
+        <SessionProgress
+          slices={Array.from({ length: 40 }, (_, i) =>
+            i < 11
+              ? "answered"
+              : i === 11
+                ? "current"
+                : i === 20
+                  ? "flagged"
+                  : "future",
+          )}
+        />
+        <FeedbackPanel
+          isCorrect
+          seconds={12}
+          explanation="Durdurma için makul bir sebep gerekir. Bu sebep, polisin tecrübesi ve içinde bulunduğu durumdan edindiği izlenime dayanır."
+          legalReference="2559 sayılı PVSK md. 4/A"
+          articleLabel="Maddeyi oku"
+          onReadArticle={() => {}}
+          tools={seansAraclari}
+        />
+        <FeedbackPanel
+          isCorrect={false}
+          correctLabel="C"
+          seconds={12}
+          explanation="Keyfî ve süreklilik arz eden durdurma yapılamaz."
+          coach={{
+            status: "done",
+            text: "B şıkkı 'kesin delil' aradığı için yanlış; madde makul sebeple yetinir.",
+            remainingToday: 2,
+          }}
+          tools={seansAraclari}
+        />
+        <FeedbackPanel isCorrect tools={seansAraclari} />
+        <ResultPanel
+          correct={8}
+          total={10}
+          pct={80}
+          durationLabel="4 dk 12 sn"
+        />
+        <ToolRow actions={seansAraclari} onPanel={false} />
       </Bolum>
 
       <Bolum
