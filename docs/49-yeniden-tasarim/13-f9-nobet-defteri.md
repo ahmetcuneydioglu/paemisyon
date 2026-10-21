@@ -170,3 +170,24 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   yeniden açıldı — uygulama kusuru değil. Kalan: Sonuç ve deneme-sonuç ekranları gerçek
   turla görülmedi (altın rakam düzeltmesi tip düzeyinde geçerli), web Kütüphane kapı
   kartları 1280 px'te dar (F9-E'de), mobil beta build (kullanıcı koşar). Push yok.
+- **F9-E Kapanış (22 Eki 2026):** (1) **Figma Nöbet dosyası** (`1YZRWO3azniW8NU5CvV1BZ`)
+  betikle v4'e eşitlendi: 22 renk değişkeninin Dark/Light değerleri §1 paletine çekildi,
+  `panel`/`panelInk`/`panelSoft` eklendi (26:2–26:4), `accent`'ten TEXT_FILL kapsamı
+  kaldırıldı (açıkta altın metin yok — kural artık Figma'da da zorlanıyor), `radius/card`
+  14→10 ve `radius/panel` 4 (26:5); 10 metin stili Bricolage/Instrument'tan Lora/Inter'e
+  ve v4 boylarına geçti (title 28→24/29, heading 20/27, display −4%→−3%), `Nöbet/hero`
+  (Lora Medium 120/108) ve `Nöbet/brand` stilleri eklendi. Foundations sayfasında
+  tipografi etiketleri yeniden yazıldı, hero/brand örnekleri eklendi, Panel renk grubu
+  iki tema çerçevesine kondu; satırların sabit 10 px metin kutuları otomatik yüksekliğe
+  alındı (yeni satır aralıkları kırpılıyordu). Değişkene bağlı eski ekranlar (F3–F8-A)
+  kendiliğinden yeni deriye döndü; ekran görüntüsüyle doğrulandı. Yeni kimlikler
+  `figma-nobet-state.json` defterinde. (2) **Web Kütüphane kapı kartları** 1280 px'te
+  koç rayı + kenar çubuğuyla ~650 px ana sütunda dört sütuna sıkışıp sözcük sözcük
+  kırılıyordu; kapılar her genişlikte iki sütun (`sm:grid-cols-2`), :3012'de 1280×900
+  doğrulandı. (3) **Mağaza rozeti erişilebilir adı:** bağlantıdaki `aria-label`
+  ("…indir") görselin `alt` metniyle ("…indirin") eşleşmiyordu (axe
+  `label-content-name-mismatch`); `aria-label` kaldırıldı, ad yalnız `alt`'tan gelir
+  ("Paemisyon'u App Store'dan indirin" / "…Google Play'den alın"). Yerel Lighthouse
+  erişilebilirlik 100, ilgili dört denetim temiz. tsc 0, prettier/eslint temiz; geçici
+  hesap `DELETE /me` ile silindi. Beta build kullanıcı kararıyla ertelendi: TestFlight
+  bütün ekranlar onaylandıktan sonra. Kalan: K4 bilgi kartları (en sona bırakıldı).

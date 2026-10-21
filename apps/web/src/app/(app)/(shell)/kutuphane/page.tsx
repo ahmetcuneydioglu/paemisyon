@@ -136,7 +136,10 @@ export default async function KutuphanePage({
           ) : null}
         </div>
 
-        <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Kapılar iki sütunda kalır: koç rayı ve kenar çubuğuyla 1280 px'te
+            ana sütun ~650 px'tir; dört sütunda başlık+gövde tek tek sözcüklere
+            kırılıyordu (F9-E). */}
+        <div className="mb-6 grid gap-3 sm:grid-cols-2">
           {gates.map(({ href, icon: Icon, title, body }) => (
             <Link
               key={href}

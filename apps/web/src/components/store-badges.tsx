@@ -11,6 +11,10 @@ import { config } from "@/lib/config";
  * Rozetler tek bir bileşende toplandı: iOS ve Android bağlantısı her zaman
  * BİRLİKTE görünmeli — yalnız iPhone rozetinin durduğu bir başlık, Android
  * kullanıcısına "bu uygulama bende yok" dedirtiyordu.
+ *
+ * Erişilebilir ad yalnız görselin `alt` metninden gelir: bağlantıya ayrı bir
+ * `aria-label` vermek, görünen (alt) metinle eşleşmeyen bir ad üretiyordu
+ * (axe `label-content-name-mismatch`, F9-E'de kapatıldı).
  */
 
 export function AppStoreBadge({
@@ -25,12 +29,11 @@ export function AppStoreBadge({
       href={config.appStoreUrl}
       target="_blank"
       rel="noopener"
-      aria-label="Paemisyon'u App Store'dan indir"
       className={`inline-block transition-opacity hover:opacity-85 ${className}`}
     >
       <Image
         src="/app-store-badge-tr.svg"
-        alt="App Store'dan indirin"
+        alt="Paemisyon'u App Store'dan indirin"
         width={width}
         height={Math.round((width * 40) / 151)}
         priority={false}
@@ -51,12 +54,11 @@ export function PlayStoreBadge({
       href={config.playStoreUrl}
       target="_blank"
       rel="noopener"
-      aria-label="Paemisyon'u Google Play'den indir"
       className={`inline-block transition-opacity hover:opacity-85 ${className}`}
     >
       <Image
         src="/img/playStore.png"
-        alt="Google Play'den alın"
+        alt="Paemisyon'u Google Play'den alın"
         width={width}
         // Kaynak varlığın en-boy oranı 114×34; yükseklik ondan türetilir ki
         // rozet asla eziklemesin (mağaza kılavuzlarının şartı).
