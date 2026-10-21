@@ -207,3 +207,19 @@ Koça sor / Hata bildir seans içinde yoktu (web'de vardı) — F10-A'da eklenir
   practice/review/daily'de, exam/deneme'de null (ipucu kararı). Madde METNİ cevaptan önce
   gönderilmez: istemci okuyucuyu (`/oku/[legislationSlug]?madde=no`) açar; cevaptan sonra
   metin `relatedArticle.text` ile gelir (değişmedi). 5 spec; API 462/462, tsc 0, eslint 0.
+- **F10-A Expo (22 Eki 2026):** `components/domain/seans.tsx` — `SessionTopRow` (X · etiket · sağ
+  eylem; `scrollY` ile ince başlığa çöker), `SessionTitleBlock` (Lora kapsam adı, "Soru 3 / 10 ·
+  ✓2 ✗0" — açık temada `successInk`/`dangerInk`), `SessionProgress` (2 pt dilimler, >20'de
+  gruplanır; denemede yalnız cevaplandı/bayraklı), `QuestionMetaRow` (Kolay/Orta/Zor + madde
+  bağı › okuyucu), `FeedbackPanel` (panel; başlık rengi koyu şema `success`/`danger`; +N sn
+  rozeti, açıklama, dayanak, "Maddeyi oku →", koç cevabı, araç satırı; açıklamasız varyant),
+  `ToolRow`, `SessionBar` (before/after/exam), `ResultPanel` (hero 1,04× satır). `QuestionStem`
+  editoryal (Lora 400 20/28, `counter` kapatılabilir, `scale`), `QuestionOption` Figma 6 durum
+  (ikon dairede). `app/seans.tsx` yeniden: cevaplar soru başına tutulur (`given`), "Önceki"
+  cevaplanmış soruyu salt okunur açar, ✓/✗ sayaçları, meta satırı, "…" menüsü (Paylaş: yalnız
+  kök + şıklar; Bildir; Yazı boyu: `reader.scale` ile ortak), Favori / Not / Koça sor / Hata
+  bildir seans içinde (web uçları), Madde Sheet'i (İlgili bölüm · Kaynak · Mevzuat Bilgi
+  Sistemi bağlantısı · "tamamı değildir" notu); `scopeName` başlık. `app/sonuc.tsx` S5:
+  "Bir tur daha tamam.", panel hero, konu kırılımı ince çizgi, tek koç cümlesi, "Yanlışları
+  tekrar et". Galeri "Seans" bölümü. tsc 0, expo lint 0. Göz testi simülatörde (kullanıcı):
+  SE + 17, açık + koyu; eski sunucuda meta satırı boş kalır (alanlar isteğe bağlı).

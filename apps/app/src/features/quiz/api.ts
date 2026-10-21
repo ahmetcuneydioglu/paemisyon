@@ -11,18 +11,34 @@ export interface QuizOption {
   label: string;
   text: string;
 }
+export type QuizDifficulty = "easy" | "medium" | "hard";
+/** Cevaptan ÖNCE görünen madde bağı (F10-0): yalnız alıştırma türü turlarda, metin yok. */
+export interface QuizArticleRef {
+  lawSlug: string;
+  no: string;
+  slug: string;
+  /** "PVSK md. 4/A" */
+  label: string;
+  /** Mevzuat okuyucu (`/oku/[slug]`); mevzuat kaydı yoksa null. */
+  legislationSlug: string | null;
+}
 export interface QuizQuestion {
   questionId: string;
   versionId: string;
   stem: string;
   mediaUrl: string | null;
   options: QuizOption[];
+  /** Eski sunucuda yok → meta satırı boş kalır. */
+  difficulty?: QuizDifficulty;
+  relatedArticleRef?: QuizArticleRef | null;
 }
 export interface QuizSession {
   sessionId: string;
   mode: "practice" | "exam" | "daily" | "review" | "deneme";
   plannedDurationSeconds: number | null;
   questions: QuizQuestion[];
+  /** Başlık bloğu: kapsam adı ("Anayasa Hukuku", "Yanlış tekrarı"); eski sunucuda yok. */
+  scopeName?: string | null;
   /** resume: verilen cevaplar. */
   givenAnswers?: { questionId: string; selectedOptionId: string | null; isCorrect: boolean | null }[];
   remainingSeconds?: number | null;
@@ -76,6 +92,17 @@ export interface SessionResult {
   topicBreakdown: { topicId: string; topicName: string; correct: number; total: number }[] | null;
   earnedBadges?: { key: string; name: string }[];
 }
+
+/** Seans içi araçlar (web oynatıcıyla aynı uçlar): favori, not, koç, hata bildirimi. */
+export const sessionToolsApi = {
+  bookmarks: () => api<{ questionId: string }[]>("/review/bookmarks"),
+  setBookmark: (questionId: string, on: boolean) => api<{ bookmarked: boolean }>(`/review/bookmarks/${questionId}`, { method: on ? "POST" : "DELETE" }),
+  getNote: (questionId: string) => api<{ text: string | null }>(`/me/questions/${questionId}/note`),
+  saveNote: (questionId: string, text: string) =>
+    text.trim().length === 0 ? api<unknown>(`/me/questions/${questionId}/note`, { method: "DELETE" }) : api<unknown>(`/me/questions/${questionId}/note`, { method: "PUT", body: { text: text.slice(0, 2000) } }),
+  explain: (versionId: string, chosenOptionId: string) => api<{ text: string; cached: boolean; remainingToday: number | null }>("/ai/explain", { method: "POST", body: { versionId, chosenOptionId } }),
+  report: (questionId: string, message: string) => api<{ alreadyReported: boolean }>(`/questions/${questionId}/report`, { method: "POST", body: { message } }),
+};
 
 export const quizApi = {
   start: (body: StartSessionBody) => api<QuizSession>("/quiz/sessions", { method: "POST", body }),

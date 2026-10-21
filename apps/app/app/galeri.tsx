@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, LegislationRow, QuestionOption, QuestionStem, TaskHero, type OptionState } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState } from "@/components/domain";
 import {
   ActionBar,
   AppText,
@@ -31,6 +31,13 @@ import { type TypeRole } from "@/theme/tokens";
  * her varyantıyla; açık/koyu geçişi üstte. Göz testi protokolü (00-plan §4) bu ekranda koşar.
  * Yalnız geliştirme derlemesinde Ben › Geliştirici'den açılır.
  */
+const seansAraclari = [
+  { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
+  { key: "note" as const, label: "Not", onPress: () => {} },
+  { key: "coach" as const, label: "Koça sor", onPress: () => {} },
+  { key: "report" as const, label: "Hata bildir", onPress: () => {} },
+];
+
 export default function GaleriScreen() {
   const router = useRouter();
   const { colors, space, preference, setPreference } = useTheme();
@@ -176,6 +183,23 @@ export default function GaleriScreen() {
           <QuestionOption label="C" text="Kırk sekiz saat" state="incorrect" />
           <QuestionOption label="B" text="Yirmi dört saat (kaçırılan doğru)" state="missed" />
           <QuestionOption label="E" text="Doksan altı saat" state="disabled" />
+        </Section>
+
+        <Section title="Seans (Doc 49/15)">
+          <SessionTitleBlock title="Anayasa Hukuku" index={3} total={10} correct={2} wrong={0} slices={["correct", "correct", "current", "future", "future", "future", "future", "future", "future", "future"]} />
+          <QuestionMetaRow difficulty="hard" article={{ label: "PVSK md. 4/A", onPress: () => {} }} />
+          <AppText variant="label" tone="subtle">
+            Deneme dilimleri (40 soru → 20 dilim; doğruluk sızmaz)
+          </AppText>
+          <SessionProgress slices={Array.from({ length: 40 }, (_, i) => (i < 11 ? "answered" : i === 11 ? "current" : i === 20 ? "flagged" : "future"))} />
+          <FeedbackPanel isCorrect seconds={12} explanation="Durdurma için makul bir sebep gerekir. Bu sebep, polisin tecrübesi ve içinde bulunduğu durumdan edindiği izlenime dayanır." legalReference="2559 sayılı PVSK md. 4/A" articleLabel="Maddeyi oku" onReadArticle={() => {}} tools={seansAraclari} />
+          <FeedbackPanel isCorrect={false} correctLabel="C" seconds={12} explanation="Keyfî ve süreklilik arz eden durdurma yapılamaz." tools={seansAraclari} coach={{ status: "done", text: "B şıkkı 'kesin delil' aradığı için yanlış; madde makul sebeple yetinir.", remainingToday: 2 }} />
+          <FeedbackPanel isCorrect tools={seansAraclari} />
+          <ResultPanel correct={8} total={10} pct={80} durationLabel="4 dk 12 sn" />
+          <AppText variant="label" tone="subtle">
+            Araç satırı zemin üstünde
+          </AppText>
+          <ToolRow actions={seansAraclari} onPanel={false} />
         </Section>
 
         <Section title="Form, bildirim, boş durum">

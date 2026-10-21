@@ -433,8 +433,52 @@ export class QuizService {
       sessionId: session.id,
       mode: session.mode,
       plannedDurationSeconds,
+      // Başlık bloğu (Doc 49/15 F10): kapsam adı; kapsamsız turlarda tür adı.
+      scopeName: await this.kapsamAdi({
+        mode: dto.mode,
+        topicId: dto.topicId ?? null,
+        courseId: dto.courseId ?? null,
+        topicIds: secilenKonular,
+        recipe: dto.recipe ?? null,
+        fromBookmarks: dto.fromBookmarks === true,
+      }),
       questions,
     };
+  }
+
+  /**
+   * Seans başlık bloğu için kapsam adı (Doc 49/15): konu > ders > "N seçili mevzuat";
+   * kapsamsız turlarda türün adı. activeSession'daki `scopeName` ile aynı dil.
+   */
+  private async kapsamAdi(k: {
+    mode: string;
+    topicId: string | null;
+    courseId: string | null;
+    topicIds: string[];
+    recipe: string | null;
+    fromBookmarks: boolean;
+  }): Promise<string> {
+    if (k.topicId) {
+      const t = await this.prisma.topic.findUnique({
+        where: { id: k.topicId },
+        select: { name: true },
+      });
+      if (t) return t.name;
+    }
+    if (k.courseId) {
+      const c = await this.prisma.course.findUnique({
+        where: { id: k.courseId },
+        select: { name: true },
+      });
+      if (c) return c.name;
+    }
+    if (k.topicIds.length > 0) return `${k.topicIds.length} seçili mevzuat`;
+    if (k.mode === 'review') return 'Yanlış tekrarı';
+    if (k.mode === 'daily') return 'Günün sorusu';
+    if (k.fromBookmarks) return 'Favoriler';
+    if (k.recipe === 'comeback') return 'Dönüş turu';
+    if (k.recipe === 'coach') return 'Koç turu';
+    return 'Karışık tur';
   }
 
   /**
@@ -1478,6 +1522,10 @@ export class QuizService {
         questionOrder: true,
         startedAt: true,
         plannedDurationSeconds: true,
+        archiveExam: { select: { title: true } },
+        topic: { select: { name: true } },
+        course: { select: { name: true } },
+        topicIds: true,
         answers: {
           select: { questionId: true, selectedOptionId: true, isCorrect: true, flagged: true },
         },
@@ -1512,6 +1560,17 @@ export class QuizService {
       mode: session.mode,
       plannedDurationSeconds: session.plannedDurationSeconds,
       remainingSeconds: kalan,
+      scopeName:
+        session.topic?.name ??
+        session.course?.name ??
+        session.archiveExam?.title ??
+        (session.topicIds.length > 0
+          ? `${session.topicIds.length} seçili mevzuat`
+          : session.mode === 'review'
+            ? 'Yanlış tekrarı'
+            : session.mode === 'daily'
+              ? 'Günün sorusu'
+              : null),
       questions: versionIds
         .map((vid) => byId.get(vid))
         .filter((v): v is NonNullable<typeof v> => v != null)

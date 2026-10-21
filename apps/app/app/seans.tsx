@@ -1,15 +1,17 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { ChevronLeft, ChevronRight, Flag, Grid3x3, X } from "lucide-react-native";
+import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2, Timer } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
-import { Alert, Pressable, ScrollView, View } from "react-native";
+import { Alert, Animated, Linking, Pressable, Share, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { QuestionOption, QuestionStem, type OptionState } from "@/components/domain";
-import { AppText, Button, Card, IconButton, Notice, SegmentBar, Sheet, Skeleton } from "@/components/ui";
+import { FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
 import { examApi, examKeys, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
-import { quizApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
+import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
+import { reviewKeys } from "@/features/review/queries";
 import { ApiError, NetworkError } from "@/lib/api";
+import { readLocal, writeLocal } from "@/lib/local-store";
 import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -17,24 +19,30 @@ import { useTheme } from "@/theme/ThemeProvider";
 /** Saat erişimi render dışında kalsın (React Compiler kuralı); yalnız olay işleyicileri çağırır. */
 const saat = { simdi: () => Date.now() };
 
+/** Yazı boyu kademeleri — mevzuat okuyucuyla ORTAK tercih (`reader.scale`). */
+const SCALES = [0.9, 1, 1.15] as const;
+const SCALE_LABEL = ["Küçük", "Standart", "Büyük"] as const;
+
 /**
- * Seans Oynatıcı (Doc 25 Karar 1: tek oynatıcı; seanslar reçetedir).
- * - Alıştırma/yanlış turu: dokunuş cevaptır, geri bildirim anında, açıklama + dayanak, ileri.
- * - Deneme modu (canlı deneme, kişisel, ders/konu denemesi, arşiv): süre, sayfa sayfa ileri/geri,
- *   bayrak (yerel), optik form, "Bitir" onayı; cevap anahtarı yok (sunucu `{recorded}` döner).
+ * Seans Oynatıcı (Doc 25 Karar 1: tek oynatıcı; seanslar reçetedir). Deri: Doc 49/15 (Figma
+ * "Seans"). Alıştırma/yanlış turu: dokunuş cevaptır, geri bildirim paneli anında, "Önceki"
+ * cevaplanmış soruyu salt okunur gösterir, ileri alt çubuktan. Deneme modu: süre, sayfa sayfa
+ * ileri/geri, bayrak (yerel), optik form, "Bitir" onayı; cevap anahtarı yok.
  * Kurallar sunucuda: pencere, premium, hak, süre aşımı (EXAM_TIME_OVER) kodla gelir.
  * Params: resume | exam=<examId> | archiveExamId | personalExam=1 | mode, source, count, recipe,
- *   focusKind, courseId, topicId, articleNo, fromBookmarks.
+ *   focusKind, courseId, topicId, articleNo, fromBookmarks, title.
  */
 type Phase = "loading" | "error" | "playing" | "finishing";
 type SaveState = "saving" | "saved" | "failed";
+/** Alıştırmada verilen cevap: seçilen şık + sunucu geri bildirimi + harcanan saniye. */
+type Given = { selected: string | null; fb: AnswerFeedback; seconds: number | null };
 
 export default function SeansScreen() {
   const router = useRouter();
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space, radius } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; exam?: string; archiveExamId?: string; personalExam?: string; title?: string; questionId?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; questionId?: string; title?: string }>();
   const [premiumGate, setPremiumGate] = useState(false);
   const [queuedNote, setQueuedNote] = useState(false);
 
@@ -43,10 +51,22 @@ export default function SeansScreen() {
   const [session, setSession] = useState<QuizSession | null>(null);
   const [title, setTitle] = useState<string | null>(p.title ?? null);
   const [index, setIndex] = useState(0);
+  const [given, setGiven] = useState<Record<string, Given>>({});
   const [selected, setSelected] = useState<string | null>(null);
-  const [feedback, setFeedback] = useState<AnswerFeedback | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [articleOpen, setArticleOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scaleIdx, setScaleIdx] = useState(1);
+  // Araçlar (web oynatıcıyla aynı uçlar)
+  const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
+  const [notes, setNotes] = useState<Record<string, string>>({});
+  const [noteOpen, setNoteOpen] = useState(false);
+  const [noteDraft, setNoteDraft] = useState("");
+  const [noteBusy, setNoteBusy] = useState(false);
+  const [coach, setCoach] = useState<Record<string, CoachState>>({});
+  const [reportOpen, setReportOpen] = useState(false);
+  const [reportText, setReportText] = useState("");
+  const [reportState, setReportState] = useState<"idle" | "busy" | "done" | "already" | "error">("idle");
   // Deneme modu durumu
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [saveState, setSaveState] = useState<Record<string, SaveState>>({});
@@ -55,10 +75,22 @@ export default function SeansScreen() {
   const [deadline, setDeadline] = useState<number | null>(null);
   const shownAt = useRef(0);
   const finishing = useRef(false);
+  const [scrollY] = useState(() => new Animated.Value(0));
 
   const isExam = session?.mode === "exam" || session?.mode === "deneme";
   const now = useNow(1000, Boolean(deadline) && phase === "playing");
   const remaining = deadline ? Math.max(0, Math.round((deadline - now) / 1000)) : null;
+
+  useEffect(() => {
+    let active = true;
+    void readLocal<number>("reader.scale", 1).then((v) => {
+      const i = SCALES.indexOf(v as (typeof SCALES)[number]);
+      if (active && i >= 0) setScaleIdx(i);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -93,17 +125,26 @@ export default function SeansScreen() {
           s = await quizApi.start(body);
         }
         if (!active) return;
-        const given = s.givenAnswers ?? [];
-        const answered = new Set(given.map((a) => a.questionId));
+        if (s.scopeName && !p.title) setTitle(s.scopeName);
+        const givenAnswers = s.givenAnswers ?? [];
+        const answered = new Set(givenAnswers.map((a) => a.questionId));
         const exam = s.mode === "exam" || s.mode === "deneme";
         if (exam) {
           const map: Record<string, string> = {};
           const saved: Record<string, SaveState> = {};
-          for (const a of given) if (a.selectedOptionId) { map[a.questionId] = a.selectedOptionId; saved[a.questionId] = "saved"; }
+          for (const a of givenAnswers) if (a.selectedOptionId) { map[a.questionId] = a.selectedOptionId; saved[a.questionId] = "saved"; }
           setAnswers(map);
           setSaveState(saved);
           const end = s.endsAt ? Date.parse(s.endsAt) : s.remainingSeconds != null ? t0 + s.remainingSeconds * 1000 : s.plannedDurationSeconds ? t0 + s.plannedDurationSeconds * 1000 : null;
           setDeadline(end);
+        } else {
+          // Devam edilen tur: açıklama/anahtar tekrar SIZDIRILMAZ; doğruysa seçilen = doğru.
+          const seeded: Record<string, Given> = {};
+          for (const a of givenAnswers) {
+            if (a.selectedOptionId == null) continue;
+            seeded[a.questionId] = { selected: a.selectedOptionId, seconds: null, fb: { isCorrect: a.isCorrect === true, correctOptionId: a.isCorrect === true ? a.selectedOptionId : null, explanation: null, legalReference: null, relatedArticle: null } };
+          }
+          setGiven(seeded);
         }
         const first = s.questions.findIndex((q) => !answered.has(q.questionId));
         setSession(s);
@@ -111,7 +152,7 @@ export default function SeansScreen() {
         if (s.questions.length === 0 || (!exam && (p.resume && first < 0))) {
           // Çözülecek soru kalmamış: doğrudan sonuca.
           setPhase("finishing");
-          await completeAndGo(s.sessionId, exam, Boolean(p.exam || p.archiveExamId));
+          await completeAndGo(s.sessionId, exam, Boolean(p.exam || p.archiveExamId), s.scopeName ?? null);
           return;
         }
         setIndex(first < 0 ? 0 : first);
@@ -130,6 +171,21 @@ export default function SeansScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Favori durumunu tohumla — önceden yıldızlanmış sorular bu turda da dolu yıldız görünsün.
+  useEffect(() => {
+    if (!session || isExam) return;
+    let alive = true;
+    sessionToolsApi
+      .bookmarks()
+      .then((rows) => {
+        if (alive) setBookmarks((s) => new Set([...s, ...rows.map((r) => r.questionId)]));
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [session, isExam]);
+
   // Süre doldu → tek seferlik bitirme (sunucu zaten 30 sn sonra cevap kabul etmez).
   useEffect(() => {
     if (phase !== "playing" || !isExam || remaining == null || remaining > 0) return;
@@ -139,6 +195,12 @@ export default function SeansScreen() {
 
   const total = session?.questions.length ?? 0;
   const question = session?.questions[index] ?? null;
+  const current = question ? given[question.questionId] : undefined;
+  const feedback = current?.fb ?? null;
+  const scale = SCALES[scaleIdx] ?? 1;
+  const kacDogru = Object.values(given).filter((g) => g.fb.isCorrect).length;
+  const kacYanlis = Object.values(given).filter((g) => !g.fb.isCorrect).length;
+  const scopeTitle = title ?? (isExam ? "Deneme" : session?.mode === "review" ? "Yanlış tekrarı" : session?.mode === "daily" ? "Günün sorusu" : "Alıştırma");
 
   function describe(e: unknown): string {
     if (e instanceof ApiError) {
@@ -159,29 +221,32 @@ export default function SeansScreen() {
     return "Tur başlatılamadı.";
   }
 
-  async function completeAndGo(sessionId: string, exam: boolean, attemptResult: boolean) {
+  async function completeAndGo(sessionId: string, exam: boolean, attemptResult: boolean, scopeName: string | null) {
     const r = await quizApi.complete(sessionId);
     void qc.invalidateQueries({ queryKey: homeKeys.brief });
     void qc.invalidateQueries({ queryKey: examKeys.list });
     void qc.invalidateQueries({ queryKey: examKeys.mine });
     void qc.invalidateQueries({ queryKey: examKeys.dashboard });
     if (exam && attemptResult) router.replace({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: sessionId } });
-    else router.replace({ pathname: "/sonuc", params: { sessionId: r.sessionId, data: JSON.stringify(r) } });
+    else router.replace({ pathname: "/sonuc", params: { sessionId: r.sessionId, data: JSON.stringify(r), title: scopeName ?? "" } });
   }
 
   /* ---------------- Alıştırma ---------------- */
   async function answer(optionId: string) {
-    if (!session || !question || submitting || feedback) return;
+    if (!session || !question || submitting || current) return;
     setSelected(optionId);
     setSubmitting(true);
+    const spent = saat.simdi() - shownAt.current;
     try {
-      const fb = await quizApi.answer(session.sessionId, { questionId: question.questionId, questionVersionId: question.versionId, selectedOptionId: optionId, timeSpentMs: saat.simdi() - shownAt.current });
-      if ("isCorrect" in fb) setFeedback(fb);
-      else next();
+      const fb = await quizApi.answer(session.sessionId, { questionId: question.questionId, questionVersionId: question.versionId, selectedOptionId: optionId, timeSpentMs: spent });
+      if ("isCorrect" in fb) {
+        setGiven((g) => ({ ...g, [question.questionId]: { selected: optionId, fb, seconds: Math.max(1, Math.round(spent / 1000)) } }));
+        setSelected(null);
+      } else next();
     } catch (e) {
       if (e instanceof NetworkError) {
         // Çevrimdışı: cevap kuyruğa, geri bildirimsiz ileri (bağlantı gelince gönderilir).
-        await enqueueAnswer({ sessionId: session.sessionId, questionId: question.questionId, versionId: question.versionId, selectedOptionId: optionId, timeSpentMs: saat.simdi() - shownAt.current });
+        await enqueueAnswer({ sessionId: session.sessionId, questionId: question.questionId, versionId: question.versionId, selectedOptionId: optionId, timeSpentMs: spent });
         setQueuedNote(true);
         next();
         return;
@@ -196,7 +261,6 @@ export default function SeansScreen() {
   }
 
   function next() {
-    setFeedback(null);
     setSelected(null);
     setArticleOpen(false);
     shownAt.current = saat.simdi();
@@ -205,6 +269,14 @@ export default function SeansScreen() {
       return;
     }
     setIndex((i) => i + 1);
+    scrollY.setValue(0);
+  }
+
+  function prev() {
+    if (index === 0) return;
+    setArticleOpen(false);
+    setIndex((i) => i - 1);
+    scrollY.setValue(0);
   }
 
   async function finish() {
@@ -218,11 +290,112 @@ export default function SeansScreen() {
         setPhase("error");
         return;
       }
-      await completeAndGo(session.sessionId, false, false);
+      await completeAndGo(session.sessionId, false, false, session.scopeName ?? title);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Tur bitirilemedi.");
       setPhase("error");
     }
+  }
+
+  /* ---------------- Araçlar ---------------- */
+  function toggleBookmark() {
+    if (!question) return;
+    const id = question.questionId;
+    const has = bookmarks.has(id);
+    setBookmarks((s) => {
+      const n = new Set(s);
+      if (has) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+    sessionToolsApi
+      .setBookmark(id, !has)
+      .then(() => void qc.invalidateQueries({ queryKey: reviewKeys.bookmarks }))
+      .catch(() => {
+        setBookmarks((s) => {
+          const n = new Set(s);
+          if (has) n.add(id);
+          else n.delete(id);
+          return n;
+        });
+      });
+  }
+
+  async function openNote() {
+    if (!question) return;
+    const id = question.questionId;
+    let text = notes[id];
+    if (text == null) {
+      try {
+        text = (await sessionToolsApi.getNote(id)).text ?? "";
+      } catch {
+        text = "";
+      }
+      setNotes((n) => ({ ...n, [id]: text! }));
+    }
+    setNoteDraft(text);
+    setNoteOpen(true);
+  }
+
+  async function saveNote() {
+    if (!question) return;
+    const id = question.questionId;
+    setNoteBusy(true);
+    try {
+      await sessionToolsApi.saveNote(id, noteDraft);
+      setNotes((n) => ({ ...n, [id]: noteDraft.trim() }));
+      setNoteOpen(false);
+    } catch {
+      Alert.alert("Not kaydedilemedi", "Bağlantıyı kontrol edip yeniden dene.");
+    } finally {
+      setNoteBusy(false);
+    }
+  }
+
+  async function askCoach() {
+    if (!question || !current?.selected) return;
+    const id = question.questionId;
+    if (coach[id]?.status === "busy" || coach[id]?.status === "done") return;
+    setCoach((c) => ({ ...c, [id]: { status: "busy" } }));
+    try {
+      const r = await sessionToolsApi.explain(question.versionId, current.selected);
+      setCoach((c) => ({ ...c, [id]: { status: "done", text: r.text, remainingToday: r.remainingToday } }));
+    } catch (e) {
+      const limit = e instanceof ApiError && e.code === "AI_LIMIT_REACHED";
+      setCoach((c) => ({ ...c, [id]: { status: "error", message: limit ? "Bugünkü koç hakkın doldu; Premium'da sınır yok." : e instanceof Error ? e.message : "Koça şu an ulaşılamadı." } }));
+    }
+  }
+
+  async function sendReport() {
+    if (!question || reportText.trim().length < 5) return;
+    setReportState("busy");
+    try {
+      const r = await sessionToolsApi.report(question.questionId, reportText.trim());
+      setReportState(r.alreadyReported ? "already" : "done");
+      setReportText("");
+    } catch {
+      setReportState("error");
+    }
+  }
+
+  function shareQuestion() {
+    if (!question) return;
+    // Yalnız kök + şıklar; kaynak etiketi ve cevap PAYLAŞILMAZ (CLAUDE.md kuralı).
+    const lines = [question.stem, "", ...question.options.map((o) => `${o.label}) ${o.text}`), "", "paemisyon.com"];
+    void Share.share({ message: lines.join("\n") });
+  }
+
+  function cycleScale() {
+    const nextIdx = (scaleIdx + 1) % SCALES.length;
+    setScaleIdx(nextIdx);
+    void writeLocal("reader.scale", SCALES[nextIdx]);
+  }
+
+  function openArticleBeforeAnswer() {
+    const ref = question?.relatedArticleRef;
+    if (!ref) return;
+    if (ref.legislationSlug) router.push({ pathname: "/oku/[slug]", params: { slug: ref.legislationSlug, madde: ref.no } });
+    else Alert.alert(ref.label, "Bu madde henüz mevzuat merkezinde yayınlanmadı; cevaptan sonra dayanak açıklamada görünür.");
   }
 
   /* ---------------- Deneme ---------------- */
@@ -251,6 +424,7 @@ export default function SeansScreen() {
     setIndex(Math.max(0, Math.min(total - 1, i)));
     shownAt.current = saat.simdi();
     setGridOpen(false);
+    scrollY.setValue(0);
   }
 
   function toggleFlag() {
@@ -277,7 +451,7 @@ export default function SeansScreen() {
         }
       }
       try {
-        await completeAndGo(session.sessionId, true, Boolean(p.exam || p.archiveExamId));
+        await completeAndGo(session.sessionId, true, Boolean(p.exam || p.archiveExamId), title);
       } catch (e) {
         finishing.current = false;
         setError(e instanceof Error ? e.message : "Deneme bitirilemedi.");
@@ -307,52 +481,68 @@ export default function SeansScreen() {
 
   const optionState = (id: string): OptionState => {
     if (isExam) return answers[question?.questionId ?? ""] === id ? "selected" : "default";
-    if (!feedback) return selected === id ? "selected" : "default";
-    if (id === feedback.correctOptionId) return selected === id ? "correct" : "missed";
-    if (id === selected) return "incorrect";
+    if (!current) return selected === id ? "selected" : "default";
+    if (id === current.fb.correctOptionId) return current.selected === id ? "correct" : "missed";
+    if (id === current.selected) return "incorrect";
     return "disabled";
   };
 
+  const slices: SliceState[] = session
+    ? session.questions.map((q, i) => {
+        if (i === index) return "current";
+        if (isExam) return flags.has(q.questionId) ? "flagged" : answers[q.questionId] ? "answered" : "future";
+        const g = given[q.questionId];
+        return g ? (g.fb.isCorrect ? "correct" : "wrong") : "future";
+      })
+    : [];
+
   const answeredCount = session ? session.questions.filter((q) => answers[q.questionId]).length : 0;
   const lastMinute = remaining != null && remaining <= 60;
+  const tools: ToolAction[] = question
+    ? [
+        { key: "favorite", label: "Favori", active: bookmarks.has(question.questionId), onPress: toggleBookmark },
+        { key: "note", label: "Not", active: Boolean(notes[question.questionId]), onPress: () => void openNote() },
+        { key: "coach", label: "Koça sor", active: coach[question.questionId]?.status === "done", busy: coach[question.questionId]?.status === "busy", onPress: () => void askCoach() },
+        { key: "report", label: "Hata bildir", onPress: () => { setReportState("idle"); setReportOpen(true); } },
+      ]
+    : [];
+  const collapsedLabel = `${Math.min(index + 1, total)} / ${total} · ${scopeTitle}`;
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg, paddingTop: insets.top }}>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingHorizontal: space.screenGutter, paddingVertical: space.s2 }}>
-        <IconButton icon={X} label={isExam ? "Sınavdan çık" : "Turdan çık"} variant="ghost" onPress={confirmExit} />
-        {isExam ? (
-          <>
-            <View style={{ flex: 1 }}>
-              {title ? (
-                <AppText variant="bodySm" tone="soft" numberOfLines={1}>
-                  {title}
-                </AppText>
-              ) : null}
+      <SessionTopRow
+        onClose={confirmExit}
+        closeLabel={isExam ? "Sınavdan çık" : "Turdan çık"}
+        label={isExam ? scopeTitle : "Alıştırma"}
+        collapsedLabel={collapsedLabel}
+        scrollY={scrollY}
+        center={
+          isExam ? (
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+              <Timer color={lastMinute ? colors.danger : colors.inkSoft} size={16} strokeWidth={1.75} />
               <AppText variant="subhead" tone={lastMinute ? "danger" : "ink"} style={{ fontVariant: ["tabular-nums"] }} accessibilityLabel={remaining != null ? `Kalan süre ${mmss(remaining)}` : "Süresiz"}>
                 {remaining != null ? mmss(remaining) : "Süresiz"}
               </AppText>
             </View>
-            {phase === "playing" ? (
-              <Pressable accessibilityRole="button" onPress={() => void finishExam()} hitSlop={8}>
-                <AppText variant="subhead" tone="accentInk">
-                  Bitir
-                </AppText>
-              </Pressable>
-            ) : null}
-          </>
-        ) : (
-          <>
-            <View style={{ flex: 1 }}>{total > 0 ? <SegmentBar total={Math.min(total, 20)} done={Math.min(index, 20)} /> : null}</View>
-            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
-              {total > 0 ? `${Math.min(index + 1, total)}/${total}` : ""}
-            </AppText>
-          </>
-        )}
-      </View>
+          ) : undefined
+        }
+        right={
+          isExam && phase === "playing" ? (
+            <Pressable accessibilityRole="button" onPress={() => void finishExam()} hitSlop={8} style={{ minHeight: 44, justifyContent: "center" }}>
+              <AppText variant="subhead" tone="accentInk">
+                Bitir
+              </AppText>
+            </Pressable>
+          ) : !isExam && phase === "playing" ? (
+            <IconButton icon={Ellipsis} label="Seans menüsü" variant="ghost" onPress={() => setMenuOpen(true)} />
+          ) : null
+        }
+      />
 
       {phase === "loading" || phase === "finishing" ? (
         <View style={{ padding: space.screenGutter, gap: space.s3 }}>
-          <Skeleton height={20} width="40%" />
+          <Skeleton height={28} width="60%" radiusKey="card" />
+          <Skeleton height={14} width="40%" />
           <Skeleton height={90} radiusKey="card" />
           {[0, 1, 2, 3, 4].map((i) => (
             <Skeleton key={i} height={56} radiusKey="card" />
@@ -371,57 +561,104 @@ export default function SeansScreen() {
         </View>
       ) : question ? (
         <>
-          <ScrollView contentContainerStyle={{ padding: space.screenGutter, paddingBottom: 140, gap: space.s3 }}>
+          <Animated.ScrollView onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true })} scrollEventThrottle={16} contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: 140, gap: space.s4 }} contentInsetAdjustmentBehavior="never">
+            <SessionTitleBlock title={scopeTitle} index={Math.min(index + 1, total)} total={total} correct={isExam ? undefined : kacDogru} wrong={isExam ? undefined : kacYanlis} sub={isExam ? "Deneme modu" : undefined} slices={slices} />
             {isExam && saveState[question.questionId] === "failed" ? (
               <Notice tone="warning">Cevap kaydedilemedi; şıkka yeniden dokun ya da bağlantıyı kontrol et.</Notice>
             ) : null}
             {queuedNote && !isExam ? <Notice tone="info">Çevrimdışısın; cevapların cihazda saklanıyor, bağlantı gelince gönderilecek. Geri bildirim o zaman görünür.</Notice> : null}
-            <QuestionStem index={index + 1} total={total} stem={question.stem} />
-            {question.options.map((o) => (
-              <QuestionOption key={o.id} label={o.label} text={o.text} state={optionState(o.id)} onPress={() => (isExam ? pick(o.id) : void answer(o.id))} />
-            ))}
+            <View style={{ gap: space.s3, paddingTop: space.s1 }}>
+              <QuestionMetaRow difficulty={question.difficulty} article={!isExam && question.relatedArticleRef ? { label: question.relatedArticleRef.label, onPress: openArticleBeforeAnswer } : null} />
+              <QuestionStem index={index + 1} total={total} stem={question.stem} counter={false} scale={scale} />
+            </View>
+            <View style={{ gap: 10 }}>
+              {question.options.map((o) => (
+                <QuestionOption key={o.id} label={o.label} text={o.text} state={optionState(o.id)} scale={scale} onPress={() => (isExam ? pick(o.id) : void answer(o.id))} />
+              ))}
+            </View>
             {!isExam && feedback ? (
-              <Card tone={feedback.isCorrect ? "surface" : "alt"} style={{ marginTop: space.s2 }}>
-                <AppText variant="label" tone={feedback.isCorrect ? "success" : "danger"}>
-                  {feedback.isCorrect ? "Doğru" : "Yanlış"}
-                </AppText>
-                {feedback.explanation ? <AppText variant="body">{feedback.explanation}</AppText> : <AppText variant="bodySm" tone="soft">Bu soru için açıklama henüz yazılmadı.</AppText>}
-                {feedback.legalReference ? (
-                  <AppText variant="bodySm" tone="soft">
-                    Dayanak: {feedback.legalReference}
-                  </AppText>
-                ) : null}
-                {feedback.relatedArticle?.text ? <Button title={`Maddeyi oku · md. ${feedback.relatedArticle.no}`} variant="secondary" onPress={() => setArticleOpen(true)} /> : null}
-              </Card>
+              <FeedbackPanel
+                isCorrect={feedback.isCorrect}
+                correctLabel={feedback.correctOptionId ? (question.options.find((o) => o.id === feedback.correctOptionId)?.label ?? null) : null}
+                seconds={current?.seconds ?? null}
+                explanation={current?.seconds == null && feedback.explanation == null ? undefined : feedback.explanation}
+                legalReference={feedback.legalReference}
+                articleLabel={feedback.relatedArticle?.text ? "Maddeyi oku" : null}
+                onReadArticle={() => setArticleOpen(true)}
+                coach={coach[question.questionId]}
+                tools={tools}
+                scale={scale}
+              />
             ) : null}
-          </ScrollView>
+          </Animated.ScrollView>
 
           {isExam ? (
-            <View style={{ position: "absolute", left: 0, right: 0, bottom: 0, flexDirection: "row", alignItems: "center", gap: space.s2, paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: insets.bottom + space.s3, backgroundColor: colors.bg, borderTopWidth: 0.5, borderTopColor: colors.line }}>
-              <IconButton icon={ChevronLeft} label="Önceki soru" disabled={index === 0} onPress={() => go(index - 1)} />
-              <IconButton icon={Flag} label={flags.has(question.questionId) ? "Bayrağı kaldır" : "Emin değilim, bayrakla"} variant={flags.has(question.questionId) ? "primary" : "secondary"} onPress={toggleFlag} />
-              <Pressable accessibilityRole="button" accessibilityLabel={`Optik form, ${answeredCount} / ${total} dolu`} onPress={() => setGridOpen(true)} style={{ flex: 1, minHeight: 44, borderRadius: radius.control, borderWidth: 1, borderColor: colors.line, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 6 }}>
-                <Grid3x3 color={colors.ink} size={18} strokeWidth={1.75} />
-                <AppText variant="subhead" style={{ fontVariant: ["tabular-nums"] }}>
-                  {answeredCount}/{total}
-                  {flags.size ? ` · ⚑${flags.size}` : ""}
-                </AppText>
-              </Pressable>
-              <IconButton icon={ChevronRight} label="Sonraki soru" variant="primary" disabled={index >= total - 1} onPress={() => go(index + 1)} />
-            </View>
-          ) : feedback ? (
-            <View style={{ position: "absolute", left: 0, right: 0, bottom: 0, paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: insets.bottom + space.s3, backgroundColor: colors.bg, borderTopWidth: 0.5, borderTopColor: colors.line }}>
-              <Button title={index + 1 >= total ? "Turu bitir" : "Sonraki soru"} onPress={next} />
-            </View>
+            <SessionBar variant="exam" bottomInset={insets.bottom} onPrev={() => go(index - 1)} prevDisabled={index === 0} flagged={flags.has(question.questionId)} onFlag={toggleFlag} gridLabel={`${answeredCount}/${total}${flags.size ? ` · ⚑ ${flags.size}` : ""}`} onGrid={() => setGridOpen(true)} onNext={() => go(index + 1)} nextDisabled={index >= total - 1} />
+          ) : current ? (
+            <SessionBar variant="after" bottomInset={insets.bottom} onPrev={prev} prevDisabled={index === 0} primaryTitle={index + 1 >= total ? "Turu bitir" : "Sonraki soru"} onPrimary={next} />
+          ) : index > 0 ? (
+            <SessionBar variant="before" bottomInset={insets.bottom} onPrev={prev} />
           ) : null}
+
+          {/* Seans menüsü (Figma S1b): paylaş · bildir · yazı boyu · vazgeç */}
+          <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} title="Seans">
+            <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => { setMenuOpen(false); shareQuestion(); }} />
+            <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => { setMenuOpen(false); setReportState("idle"); setReportOpen(true); }} />
+            <ListRow title="Yazı boyu" subtitle="Okuyucuyla ortak" leading={<ALargeSmall color={colors.ink} size={20} strokeWidth={1.75} />} trailing={<AppText variant="subhead" tone="accentInk">{SCALE_LABEL[scaleIdx]} ›</AppText>} chevron={false} onPress={cycleScale} divider={false} />
+            <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
+          </Sheet>
+
+          {/* Not (sunucuda kalıcı: PUT /me/questions/:id/note) */}
+          <Sheet visible={noteOpen} onClose={() => setNoteOpen(false)} title="Soru notu" footer={<Button title="Kaydet" onPress={() => void saveNote()} loading={noteBusy} />}>
+            <TextField label="Kendine not" value={noteDraft} onChangeText={setNoteDraft} multiline placeholder="Bu soruda aklında kalsın istediğin şey…" style={{ minHeight: 120, textAlignVertical: "top" }} maxLength={2000} />
+            <AppText variant="bodySm" tone="subtle">
+              Boş bırakıp kaydedersen not silinir.
+            </AppText>
+          </Sheet>
+
+          {/* Hata bildir — turdan çıkmadan */}
+          <Sheet visible={reportOpen} onClose={() => setReportOpen(false)} title="Soruyu bildir" footer={reportState === "done" || reportState === "already" ? <Button title="Kapat" variant="secondary" onPress={() => setReportOpen(false)} /> : <Button title="Gönder" onPress={() => void sendReport()} loading={reportState === "busy"} disabled={reportText.trim().length < 5} />}>
+            {reportState === "done" ? (
+              <Notice tone="success" title="Teşekkürler">Bildirimin editöre ulaştı; soru gözden geçirilecek.</Notice>
+            ) : reportState === "already" ? (
+              <Notice tone="info" title="Zaten bildirilmiş">Bu soru için daha önce bildirim göndermişsin.</Notice>
+            ) : (
+              <>
+                {reportState === "error" ? <Notice tone="error">Gönderilemedi; yeniden dene.</Notice> : null}
+                <TextField label="Sorun nedir?" value={reportText} onChangeText={setReportText} multiline placeholder="Yanlış cevap anahtarı, eksik şık, yazım hatası…" style={{ minHeight: 100, textAlignVertical: "top" }} maxLength={1000} />
+              </>
+            )}
+          </Sheet>
 
           {!isExam && feedback?.relatedArticle?.text ? (
             <Sheet visible={articleOpen} onClose={() => setArticleOpen(false)} title={`Madde ${feedback.relatedArticle.no}`}>
-              <AppText variant="body">{feedback.relatedArticle.text.body}</AppText>
-              <AppText variant="bodySm" tone="subtle">
-                {feedback.relatedArticle.text.source}
-                {feedback.relatedArticle.text.verifiedAt ? ` · Doğrulandı: ${new Date(feedback.relatedArticle.text.verifiedAt).toLocaleDateString("tr-TR")}` : ""}
+              <AppText variant="label" tone="subtle">
+                İlgili bölüm
               </AppText>
+              <AppText variant="body" style={{ fontSize: Math.round(16 * scale), lineHeight: Math.round(26 * scale) }}>
+                {feedback.relatedArticle.text.body}
+              </AppText>
+              <View style={{ borderTopWidth: 1, borderTopColor: colors.line, paddingTop: space.s3, gap: space.s2 }}>
+                <AppText variant="label" tone="subtle">
+                  Kaynak
+                </AppText>
+                <AppText variant="bodySm" tone="soft">
+                  {feedback.relatedArticle.text.source}
+                  {feedback.relatedArticle.text.effectiveInfo ? ` · ${feedback.relatedArticle.text.effectiveInfo}` : ""}
+                  {feedback.relatedArticle.text.verifiedAt ? ` · Doğrulandı: ${new Date(feedback.relatedArticle.text.verifiedAt).toLocaleDateString("tr-TR")}` : ""}
+                </AppText>
+                {feedback.relatedArticle.text.sourceUrl ? (
+                  <Pressable accessibilityRole="link" onPress={() => void Linking.openURL(feedback.relatedArticle!.text!.sourceUrl!)} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44 }}>
+                    <AppText variant="subhead" tone="accentInk">
+                      Mevzuat Bilgi Sistemi
+                    </AppText>
+                    <ExternalLink color={colors.accentInk} size={16} strokeWidth={1.75} />
+                  </Pressable>
+                ) : null}
+                <AppText variant="bodySm" tone="subtle">
+                  Soruyla ilgili bölüm gösteriliyor; maddenin tamamı değildir.
+                </AppText>
+              </View>
             </Sheet>
           ) : null}
 
@@ -436,7 +673,7 @@ export default function SeansScreen() {
                   const filled = Boolean(answers[q.questionId]);
                   const flagged = flags.has(q.questionId);
                   return (
-                    <Pressable key={q.questionId} accessibilityRole="button" accessibilityLabel={`Soru ${i + 1}${filled ? ", cevaplı" : ", boş"}${flagged ? ", bayraklı" : ""}`} onPress={() => go(i)} style={{ width: 48, height: 44, borderRadius: radius.control, backgroundColor: flagged ? colors.warningSoft : filled ? colors.accentSoft : colors.surface, borderWidth: i === index ? 2 : 1, borderColor: i === index ? colors.accent : colors.line, alignItems: "center", justifyContent: "center" }}>
+                    <Pressable key={q.questionId} accessibilityRole="button" accessibilityLabel={`Soru ${i + 1}${filled ? ", cevaplı" : ", boş"}${flagged ? ", bayraklı" : ""}`} onPress={() => go(i)} style={{ width: 48, height: 44, borderRadius: radius.control, backgroundColor: flagged ? colors.warningSoft : filled ? colors.accentSoft : colors.surface, borderWidth: 1, borderColor: i === index ? colors.accent : colors.line, alignItems: "center", justifyContent: "center" }}>
                       <AppText variant="subhead" style={{ color: flagged ? colors.warningInk : filled ? colors.accentInk : colors.ink }}>
                         {i + 1}
                       </AppText>

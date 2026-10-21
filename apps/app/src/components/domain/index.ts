@@ -11,3 +11,4 @@ export * from "./week-strip7";
 export * from "./plan-shift-list";
 export * from "./room-stat-panel";
 export * from "./coach-line";
+export * from "./seans";
