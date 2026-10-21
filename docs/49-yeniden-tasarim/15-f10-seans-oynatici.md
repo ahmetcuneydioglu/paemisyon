@@ -166,9 +166,44 @@ temada zemin üstünde, 3'ten fazla farklı yazı boyu bir blokta, açıklama me
 - **Tek dokunuş cevap, ikinci dokunuş ileri:** değişmiyor; çubuk ancak cevaptan sonra
   belirdiği için ekran soruya odaklı kalır.
 
+## 2a. Figma çizimi ve inceleme (22 Eki 2026)
+
+PaemisyonNew sayfa **"Seans"** `38:13277` — 8 ekran × koyu/açık + bileşen seti:
+S1 cevapsız `38:11353`/`38:11418` · S1b menü `38:11483`/`38:11565` · S2 doğru
+`38:11647`/`38:11739` · S3 yanlış `38:11831`/`38:11923` · S4 kaydırılmış `38:12015`/`38:12093`
+· S5 tur sonu `38:12171`/`38:12223` · S6 deneme `38:12275`/`38:12349` · Madde Sheet'i
+`38:12423`/`38:12532` · Bileşenler tahtası `38:12641`; component set'ler ŞıkSatırı `38:13478`
+(6 durum), İlerlemeDilimleri `38:13310`, AraçSatırı `38:13322`, GeriBildirimPaneli `38:13479`,
+BaşlıkBloğu `38:13425`, AltÇubuk `38:13480`, SonuçPaneli `38:13473`.
+
+**Karar (kullanıcı):** önce canlıda görülür, ekleme/çıkarma sonra. Çizimdeki beş kusur kodda
+token kuralıyla düzeltilir, Figma'ya geri yazılmaz:
+1. Panel üstünde açık tema `success` (#5F8A6B) 3,74:1 — kodda panel üstü başlık koyu tema
+   değerini alır (`AppText tone="success"` panel içinde `successOnPanel` → #8FB39A).
+2. Açık temada ✓/✗ sayaçları `success`/`danger` yerine `successInk`/`dangerInk`.
+3. Hero "8/10" satırı 108 → 1,04 × boy (CountdownHero kuralı), "/" alt satıra taşmaz.
+4. Dilim sayısı = soru sayısı, 20'den fazlaysa 20 (SegmentBar sınırı); denemede yalnız
+   "cevaplandı" (altın) ve "bayraklı" (warning), doğruluk sızmaz.
+5. Tur sonu "…" menüsü yok.
+
+Yeni gereksinimler: Yazı boyu (Küçük/Standart/Büyük; okuyucudaki `reader.scale` tercihiyle
+ortak, cihazda), Soruyu paylaş (yalnız kök + şıklar; kaynak ve cevap yok), Madde
+Sheet'inde `sourceUrl` varsa "Mevzuat Bilgi Sistemi" bağlantısı. Mobilde Favori / Not /
+Koça sor / Hata bildir seans içinde yoktu (web'de vardı) — F10-A'da eklenir
+(`/review/bookmarks/:id`, `/me/questions/:id/note`, `/ai/explain`, `/questions/:id/report`).
+
 ## 3. Sonraki adımlar
 
-1. Kullanıcı promptu Figma agent'a verir, çizimi paylaşır; Figma düğümleri bu dosyaya
-   işlenir.
-2. Çizim onayı → F10-0 API (difficulty, relatedArticleRef) → F10-A Expo `seans.tsx` (kit: `ChoiceRow` varyantları, `FeedbackPanel`,
+1. ~~Figma çizimi~~ (§2a).
+2. F10-0 API (difficulty, relatedArticleRef) → F10-A Expo `seans.tsx` (kit: `ChoiceRow` varyantları, `FeedbackPanel`,
    `SessionProgress`), F10-B web `session-player.tsx` aynı dil, F10-C deneme modu.
+
+## 4. İlerleme
+
+- **F10-0 API (22 Eki 2026):** `quiz/soru-ozeti.ts` — tek `SORU_OZETI_SELECT` ve `soruOzeti()`
+  (altı ayrı soru eşlemesi buna indirildi; anahtar/açıklama yine seçilmez). `SessionQuestion`
+  artık `difficulty` (easy|medium|hard) ve `relatedArticleRef {lawSlug, no, slug, label
+  ("PVSK md. 4/A" — mevzuat kısa adı, yoksa konu adı), legislationSlug}` taşır; bağ yalnız
+  practice/review/daily'de, exam/deneme'de null (ipucu kararı). Madde METNİ cevaptan önce
+  gönderilmez: istemci okuyucuyu (`/oku/[legislationSlug]?madde=no`) açar; cevaptan sonra
+  metin `relatedArticle.text` ile gelir (değişmedi). 5 spec; API 462/462, tsc 0, eslint 0.

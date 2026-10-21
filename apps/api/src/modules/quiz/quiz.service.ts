@@ -34,6 +34,7 @@ import { YARIM_TUR_MODLARI, turuTerkEt } from './yarim-tur';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
+import { SORU_OZETI_SELECT, soruOzeti } from './soru-ozeti';
 import { PlanService } from '../plan/plan.service';
 
 /** Kanun konusu tespiti (public.service ile aynı desen). */
@@ -394,16 +395,7 @@ export class QuizService {
     }
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
-      select: {
-        id: true,
-        questionId: true,
-        stem: true,
-        mediaUrl: true,
-        options: {
-          select: { id: true, label: true, text: true }, // is_correct/explanation YOK
-          orderBy: { sortOrder: 'asc' },
-        },
-      },
+      select: SORU_OZETI_SELECT, // is_correct/explanation YOK
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
 
@@ -435,16 +427,7 @@ export class QuizService {
       },
     });
 
-    const questions = chosen.map((q) => {
-      const v = byId.get(q.currentVersionId!)!;
-      return {
-        questionId: v.questionId,
-        versionId: v.id,
-        stem: v.stem,
-        mediaUrl: v.mediaUrl,
-        options: v.options,
-      };
-    });
+    const questions = chosen.map((q) => soruOzeti(byId.get(q.currentVersionId!)!, dto.mode));
 
     return {
       sessionId: session.id,
@@ -591,16 +574,7 @@ export class QuizService {
 
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosenIds.map((c) => c.versionId) } },
-      select: {
-        id: true,
-        questionId: true,
-        stem: true,
-        mediaUrl: true,
-        options: {
-          select: { id: true, label: true, text: true }, // anahtar sızmaz
-          orderBy: { sortOrder: 'asc' },
-        },
-      },
+      select: SORU_OZETI_SELECT, // anahtar sızmaz
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
 
@@ -624,16 +598,7 @@ export class QuizService {
       plannedDurationSeconds,
       remainingSeconds: plannedDurationSeconds,
       resumed: false,
-      questions: chosenIds.map((c) => {
-        const v = byId.get(c.versionId)!;
-        return {
-          questionId: v.questionId,
-          versionId: v.id,
-          stem: v.stem,
-          mediaUrl: v.mediaUrl,
-          options: v.options,
-        };
-      }),
+      questions: chosenIds.map((c) => soruOzeti(byId.get(c.versionId)!, 'exam')),
       givenAnswers: [] as {
         questionId: string;
         selectedOptionId: string | null;
@@ -699,7 +664,7 @@ export class QuizService {
         plannedDurationSeconds: planlanan,
         remainingSeconds: kalan,
         resumed: true,
-        questions: await this.questionsFromVersionIds(order),
+        questions: await this.questionsFromVersionIds(order, 'exam'),
         givenAnswers: yarim.answers,
       };
     }
@@ -761,29 +726,14 @@ export class QuizService {
       orderBy: { sortOrder: 'asc' },
       include: {
         questionVersion: {
-          select: {
-            id: true,
-            questionId: true,
-            stem: true,
-            mediaUrl: true,
-            options: {
-              select: { id: true, label: true, text: true }, // anahtar sızmaz
-              orderBy: { sortOrder: 'asc' },
-            },
-          },
+          select: SORU_OZETI_SELECT, // anahtar sızmaz
         },
       },
     });
     if (rows.length === 0) throw new NotFoundException('Denemenin soru seti boş.');
 
     const plannedDurationSeconds = exam.durationMinutes * 60;
-    const sorular = rows.map((r) => ({
-      questionId: r.questionVersion.questionId,
-      versionId: r.questionVersion.id,
-      stem: r.questionVersion.stem,
-      mediaUrl: r.questionVersion.mediaUrl,
-      options: r.questionVersion.options,
-    }));
+    const sorular = rows.map((r) => soruOzeti(r.questionVersion, 'exam'));
 
     // YARIM OTURUM: her girişte yeni oturum açmak 100 soruluk bir sınavda
     // acımasızdı — 7 Eylül 2026'da bir kullanıcı altı dakikada yedi oturum
@@ -899,7 +849,7 @@ export class QuizService {
         : null;
     const questions =
       existingOrder != null && existingOrder.length > 0
-        ? await this.questionsFromVersionIds(existingOrder)
+        ? await this.questionsFromVersionIds(existingOrder, 'daily')
         : await this.pickDailyQuestions();
 
     const session =
@@ -934,7 +884,7 @@ export class QuizService {
       select: { id: true, topicId: true, currentVersionId: true },
     });
     if (!q) throw new NotFoundException('Soru bulunamadı ya da yayında değil.');
-    const questions = await this.questionsFromVersionIds([q.currentVersionId!]);
+    const questions = await this.questionsFromVersionIds([q.currentVersionId!], 'practice');
     const session = await this.prisma.quizSession.create({
       data: {
         userId,
@@ -955,31 +905,16 @@ export class QuizService {
 
   /** Saklanan questionOrder'daki sürümleri, sırayı koruyarak soru listesine
    *  çevirir (resume ile aynı seçim — anahtar SIZMAZ). */
-  private async questionsFromVersionIds(versionIds: string[]) {
+  private async questionsFromVersionIds(versionIds: string[], mode: string) {
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: versionIds } },
-      select: {
-        id: true,
-        questionId: true,
-        stem: true,
-        mediaUrl: true,
-        options: {
-          select: { id: true, label: true, text: true },
-          orderBy: { sortOrder: 'asc' },
-        },
-      },
+      select: SORU_OZETI_SELECT,
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
     return versionIds
       .map((vid) => byId.get(vid))
       .filter((v): v is NonNullable<typeof v> => v != null)
-      .map((v) => ({
-        questionId: v.questionId,
-        versionId: v.id,
-        stem: v.stem,
-        mediaUrl: v.mediaUrl,
-        options: v.options,
-      }));
+      .map((v) => soruOzeti(v, mode));
   }
 
   private async pickDailyQuestions() {
@@ -1003,29 +938,11 @@ export class QuizService {
 
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
-      select: {
-        id: true,
-        questionId: true,
-        stem: true,
-        mediaUrl: true,
-        options: {
-          select: { id: true, label: true, text: true }, // is_correct/explanation YOK
-          orderBy: { sortOrder: 'asc' },
-        },
-      },
+      select: SORU_OZETI_SELECT, // is_correct/explanation YOK
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
     // chosen sırasını koru (deterministik).
-    return chosen.map((q) => {
-      const v = byId.get(q.currentVersionId!)!;
-      return {
-        questionId: v.questionId,
-        versionId: v.id,
-        stem: v.stem,
-        mediaUrl: v.mediaUrl,
-        options: v.options,
-      };
-    });
+    return chosen.map((q) => soruOzeti(byId.get(q.currentVersionId!)!, 'daily'));
   }
 
   /** Günün sorusu durumu (Home kartı): bugün oynandı mı, doğru muydu? */
@@ -1577,16 +1494,7 @@ export class QuizService {
     const versionIds = order as string[];
     const versions = await this.prisma.questionVersion.findMany({
       where: { id: { in: versionIds } },
-      select: {
-        id: true,
-        questionId: true,
-        stem: true,
-        mediaUrl: true,
-        options: {
-          select: { id: true, label: true, text: true }, // anahtar SIZMAZ
-          orderBy: { sortOrder: 'asc' },
-        },
-      },
+      select: SORU_OZETI_SELECT, // anahtar SIZMAZ
     });
     const byId = new Map(versions.map((v) => [v.id, v]));
     // Kalan süre İLK başlangıçtan hesaplanır — devam etmek ek süre
@@ -1607,13 +1515,7 @@ export class QuizService {
       questions: versionIds
         .map((vid) => byId.get(vid))
         .filter((v): v is NonNullable<typeof v> => v != null)
-        .map((v) => ({
-          questionId: v.questionId,
-          versionId: v.id,
-          stem: v.stem,
-          mediaUrl: v.mediaUrl,
-          options: v.options,
-        })),
+        .map((v) => soruOzeti(v, session.mode)),
       givenAnswers: session.answers,
     };
   }
