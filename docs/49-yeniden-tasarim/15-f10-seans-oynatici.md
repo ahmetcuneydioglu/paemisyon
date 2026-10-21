@@ -40,7 +40,11 @@ Görsel (koyu, yeşil vurgu, "1 sayılı CBK" alıştırması, "..." menüsü a�
 ## 1. Figma agent promptu (kopyala-yapıştır)
 
 Aşağıdaki metin PaemisyonNew dosyasında Figma agent'a (First Draft / Make) verilir.
-Değişkenler ve stiller dosyada hazır: Nöbet v4 renkleri (`bg`, `surface`, `surfaceAlt`,
+**Not (22 Eki):** PaemisyonNew'de yerel değişken, stil ve bileşen YOK (Figma MCP ile
+doğrulandı: 2314 düğümün hepsi düz frame, `7:1442` değişkene bağlı değil); değişkenler
+ve Sheet bileşeni eski Nöbet dosyasında. Kullanıcı kararı: tasarımın kaynağı PaemisyonNew.
+Bu yüzden prompt kütüphane kaynağı istemez, değerleri açık verir ve Bugün ekranını
+görsel kaynak sayar. Token adları aşağıda referans içindir: Nöbet v4 renkleri (`bg`, `surface`, `surfaceAlt`,
 `line`, `ink`, `inkSoft`, `inkSubtle`, `accent`, `accentSoft`, `accentInk`, `onAccent`,
 `panel`, `panelInk`, `panelSoft`, `success*`, `danger*`, `warning*`), metin stilleri
 (`Nöbet/hero`, `Nöbet/brand`, title, heading, subhead, body, bodySm, label), `radius/card`
@@ -50,9 +54,23 @@ Değişkenler ve stiller dosyada hazır: Nöbet v4 renkleri (`bg`, `surface`, `s
 
 **Görev:** Paemisyon (polis amirliği sınavına hazırlık uygulaması) için "Seans" ekranını
 çiz: kullanıcının 10 soruluk bir alıştırma turunu çözdüğü tek ekran. Bu dosyadaki
-"Nöbet defteri" kimliğini ve mevcut Bugün ekranını (`7:1442` koyu, `7:1523` açık) referans
-al; aynı aileden görünmeli. iPhone 17 (393×852) için koyu ve açık tema; kabuk yok
-(sekme çubuğu yok), tam ekran odak.
+"Nihai Bugün · Koyu" (`7:1442`) ve "Nihai Bugün · Açık" (`7:1523`) çerçeveleri görsel
+kaynaktır: aynı renkleri, yazı tiplerini, boşlukları ve köşe yarıçaplarını oradan oku ve
+aynen kullan; aynı aileden görünmeli. Kütüphane ya da değişken kaynağı arama: bu dosyada
+yerel değişken/stil/bileşen yok, aşağıdaki değerleri doğrudan uygula. iPhone 17 (393×852)
+için koyu ve açık tema; kabuk yok (sekme çubuğu yok), tam ekran odak.
+
+**Değerler (koyu / açık):** bg #121A26 / #FFFCF6 · surface #1E2B3C / #FFFFFF · surfaceAlt
+#28374A / #EAE5DA · line #394657 / #D9D7CF · ink #F5F0E5 / #1B293B · inkSoft #BAC4D0 /
+#596371 · inkSubtle #94A0B0 / #6B7482 · accent #E8B46C (ikisi) · accentSoft #2E3447 /
+#F6E9D2 · accentInk #E8B46C / #8B5E23 · onAccent #1B293B · panel #1E2B3C / #1B293B ·
+panelInk #F5F0E5 · panelSoft #BAC4D0 · success #8FB39A / #5F8A6B · successSoft #213229 /
+#E3EEE6 · danger #E07A6B / #B8453A · dangerSoft #3F2630 / #F8DDD9 · dangerInk #F3A396 / #8E2E25. Fontlar
+Google Fonts Lora (400/500/600) ve Inter (400/500/600/700). Metin rolleri: hero Lora 500
+120/108 tabular tracking −3% · title Lora 600 24/29 · heading Lora 600 20/27 · subhead
+Inter 600 15/20 · body Inter 400 16/25 · bodySm Inter 400 14/20 · label Inter 600 11/14
+büyük harf tracking +10%. Sheet: alttan açılan surface zemin, üst köşeler 10, tutamaç
+36×4 surfaceAlt. Aşağıda adı geçen her token bu listedeki değerdir.
 
 **Kimlik kuralları (bağlayıcı):** Zemin `bg` (lacivert gece / kağıt beyazı). Tek vurgu
 altın `accent`; açık temada altın yalnız dolgu, çizgi ve düğme zemini, metin olarak
@@ -126,8 +144,9 @@ Durum yalnız renkle anlatılmaz; ikon ya da rozet metni eşlik eder. Dokunma he
 **Bileşenler:** `Seans/ŞıkSatırı` (6 varyant), `Seans/İlerlemeDilimleri`,
 `Seans/GeriBildirimPaneli` (doğru/yanlış/açıklamasız), `Seans/AraçSatırı`,
 `Seans/AltÇubuk` (cevap öncesi / cevap sonrası / deneme), `Seans/BaşlıkBloğu`
-(ad + sayaçlar), `Seans/MetaSatırı`, `Seans/SonuçPaneli`. Auto layout, değişkene
-bağlı renkler (sabit hex yok), metin stilleri dosyadakilerden; "Seans" adlı yeni sayfa.
+(ad + sayaçlar), `Seans/MetaSatırı`, `Seans/SonuçPaneli`. Auto layout; renkleri yukarıdaki
+değer listesinden uygula ve her katmanı token adıyla adlandır (sonra değişkene bağlanacak);
+"Seans" adlı yeni sayfa.
 
 **Yapma:** ders rengi, gradyan, gölge, emoji, kart içinde kart, altın metin açık
 temada zemin üstünde, 3'ten fazla farklı yazı boyu bir blokta, açıklama metnini
