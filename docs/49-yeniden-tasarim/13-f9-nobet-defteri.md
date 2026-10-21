@@ -191,3 +191,11 @@ token değişimi B'den bağımsız yayınlanmaz — hero yoksa yarım deri olur)
   erişilebilirlik 100, ilgili dört denetim temiz. tsc 0, prettier/eslint temiz; geçici
   hesap `DELETE /me` ile silindi. Beta build kullanıcı kararıyla ertelendi: TestFlight
   bütün ekranlar onaylandıktan sonra. Kalan: K4 bilgi kartları (en sona bırakıldı).
+- **F9-E deploy (22 Eki 2026):** 84da3a5 tek commit origin/main'e gitti; CI yeşil
+  (39678565545), Vercel üretim dağıtımı READY. Canlıda geçici hesapla 1280×900'de
+  Kütüphane kapıları iki sütun doğrulandı; landing Lighthouse 99/100/100/100 (LCP 2,0 s,
+  CLS 0), `label-content-name-mismatch` temiz. Geçici hesap silindi. Notlar: canlıyı
+  20 sn aralıkla 13 dk curl ile yoklamak Vercel'in bot sınamasını tetikledi (429 +
+  challenge) — bundan sonra dağıtım durumu Vercel API'den okunur, curl ile beklenmez;
+  bir önceki docs-only commit'in (1834fd1) Vercel dağıtımı ERROR'da kalmıştı, üretim
+  9f448ee'de durmuştu — 84da3a5 ile güncel.
