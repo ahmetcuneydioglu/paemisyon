@@ -240,7 +240,7 @@ Koça sor / Hata bildir seans içinde yoktu (web'de vardı) — F10-A'da eklenir
   görüntüsü Figma S3 ile karşılaştırıldı: panel açıkta lacivert, "Yanlış" okunur, hero "/"
   taşmıyor. Canlı tur (API'li) kullanıcı hesabıyla deploy sonrası bakılacak.
 
-## 5. F10-P — Soruyu paylaş (plan, 23 Eki 2026, onay bekliyor)
+## 5. F10-P — Soruyu paylaş (plan, onaylı 23 Eki 2026)
 
 **Karar (kullanıcı, 23 Eki):** seans araç satırından **Not kaldırıldı** (mobil + web, d9fae8e): not
 okuma eylemidir, yeri mevzuat okuyucusu; seansta okunacak yüzeyi yoktu. Sunucu ucu duruyor.
@@ -269,8 +269,7 @@ Paylaşım ise GYSROTA'daki mekanizma baz alınarak yeniden yapılır; bugünkü
 - **Kart kimliği "Nöbet defteri":** iki temada da aynı kart — `panel` laciverti zemin, `bg` kağıt
   rengi kart, Lora kök, Inter şıklar, altın yalnız "paemisyon" marka sözcüğü ve QR çerçevesi.
   Paylaşılan görsel marka varlığıdır; alıcının temasına göre değişmez.
-- **Cevap modu:** Doc 25 "soru bankası güveni" gereği cevap ve açıklama paylaşılabilir mi —
-  **kullanıcı kararı.** Öneri: evet, GYSROTA'daki gibi yalnız cevaplanmış soruda ve açıklamanın
+- **Cevap modu:** **Onaylandı (kullanıcı, 23 Eki):** cevap ve açıklama modu var, GYSROTA'daki gibi yalnız cevaplanmış soruda ve açıklamanın
   ilk cümlesiyle (tam açıklama ve madde metni uygulamada kalır; paylaşım "kanca"dır).
 - **Bağlantı:** `paemisyon.com/s/<questionId>`. Web'de yeni public sayfa: soru kökü + şıklar
   (cevapsız), "Uygulamada çöz" + mağaza rozetleri, oturumlu kullanıcıya "Web'de çöz" (v1: soruyu
