@@ -334,3 +334,15 @@ paylaş — Doğru şık işaretli, açıklamanın ilk cümlesi ve dayanak madde
    (Figma ölçüleri), paketler, `pod install`, dev build; telefonda WhatsApp'a paylaşım denemesi.
 3. Web seans "Paylaş": aynı kartı DOM'da çizip `html-to-image` ile PNG + Web Share API; yoksa
    bağlantı kopyala.
+
+### 5e. İlerleme
+
+- **F10-P (1) — 23 Eki 2026, 88eb135:** `public/soru-paylasim.ts` — `GET /public/questions/:id/share`
+  (yayımlı + silinmemiş + iptal edilmemiş; `SORU_OZETI_SELECT` ile anahtar/açıklama/kaynak
+  etiketi seçilmez; madde bağı `practice` kuralıyla; `courseName`/`topicName`), 3 spec, API src
+  tsc 0. Web `(site)/s/[id]` — `noindex`, UUID dışı id API'ye gitmeden 404, soru cevapsız
+  (`QuestionStem`/`QuestionOption`), lacivert panel kancası (mağaza rozetleri + "Web'de çöz" →
+  giriş). :3005 + :3012'de gerçek soruyla (5395 md. 33) doğrulandı; bozuk id 404. **Bekleyen:**
+  AASA/assetlinks ve Expo `/s/<id>` derin bağlantısı 2. adımla girer (uygulama rotası olmadan
+  universal link soruyu kaybeder); Android imza parmak izi EAS'tan alınacak. Önceki adım: Not
+  kaldırıldı + paylaş/bildir Sheet kapanış düzeltmesi (d9fae8e).
