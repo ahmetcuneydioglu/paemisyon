@@ -5,6 +5,7 @@ import { dailyQuestionPoolWhere, pickDailyIds } from '../../common/daily-select.
 import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { gunMetni } from '../../common/gun';
+import { paylasilanSoru } from './soru-paylasim';
 
 /** Pazarlama sayfalarının tükettiği fiyat bilgisi (kimlik gerektirmez). */
 export interface PublicPricing {
@@ -89,6 +90,11 @@ export class PublicService {
     const id = pool[Math.abs(h) % pool.length].id;
     this.qotdCache = { key: dateKey, id };
     return id;
+  }
+
+  /** Paylaşılan soru (F10-P) — `soru-paylasim.ts`. */
+  sharedQuestion(id: string) {
+    return paylasilanSoru(this.prisma, id);
   }
 
   async questionOfDay() {

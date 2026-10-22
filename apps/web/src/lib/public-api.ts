@@ -421,7 +421,12 @@ export interface CoachBrief {
   greeting: { displayName: string | null; isPremium: boolean };
   daysToExam: number | null;
   /** Hedef sınav (Doc 48): ad, YYYY-MM-DD tarih, kalan TR takvim günü; tarih yoksa null'lar. */
-  exam?: { name: string | null; date: string | null; daysLeft: number | null; source: "personal" | "official" | null };
+  exam?: {
+    name: string | null;
+    date: string | null;
+    daysLeft: number | null;
+    source: "personal" | "official" | null;
+  };
   today: {
     goal: number;
     answered: number;
@@ -530,7 +535,18 @@ export interface PlanBrief {
     remainingMinutes: number;
   } | null;
   /** Bu haftanın kalemleri (vardiya listesi — Doc 49/13); eski sunucuda alan yok. */
-  items?: Pick<PlanItem, "id" | "kind" | "topicId" | "topicName" | "courseName" | "targetMinutes" | "doneMinutes" | "remainingMinutes" | "status">[];
+  items?: Pick<
+    PlanItem,
+    | "id"
+    | "kind"
+    | "topicId"
+    | "topicName"
+    | "courseName"
+    | "targetMinutes"
+    | "doneMinutes"
+    | "remainingMinutes"
+    | "status"
+  >[];
   ended: boolean;
 }
 export interface PlanDefaults {
@@ -564,17 +580,62 @@ export interface CourseRoom {
     accuracyPct: number | null;
     band: Band;
     examWeightPercent: number | null;
-    weakest: { topicId: string; name: string; accuracyPct: number | null } | null;
+    weakest: {
+      topicId: string;
+      name: string;
+      accuracyPct: number | null;
+    } | null;
   };
   coach: string | null;
   topics: RoomTopic[];
-  tools: { wrongCount: number; favoriteCount: number; legislation: { slug: string; name: string; articleCount: number }[] };
+  tools: {
+    wrongCount: number;
+    favoriteCount: number;
+    legislation: { slug: string; name: string; articleCount: number }[];
+  };
 }
 export interface TopicRoom {
-  topic: { id: string; name: string; courseId: string; courseName: string; isPremium: boolean };
-  summary: { solved: number; correct: number; accuracyPct: number | null; band: Band; inPlanThisWeek: boolean; planRemainingMinutes: number | null };
+  topic: {
+    id: string;
+    name: string;
+    courseId: string;
+    courseName: string;
+    isPremium: boolean;
+  };
+  summary: {
+    solved: number;
+    correct: number;
+    accuracyPct: number | null;
+    band: Band;
+    inPlanThisWeek: boolean;
+    planRemainingMinutes: number | null;
+  };
   coach: string | null;
   wrongCount: number;
   favoriteCount: number;
-  legislation: { slug: string | null; name: string | null; articleCount: number; articleRange: string | null } | null;
+  legislation: {
+    slug: string | null;
+    name: string | null;
+    articleCount: number;
+    articleRange: string | null;
+  } | null;
+}
+
+/** `GET /public/questions/:id/share` (F10-P): cevapsız paylaşılan soru; anahtar/açıklama/kaynak etiketi yok. */
+export interface SharedQuestion {
+  questionId: string;
+  versionId: string;
+  stem: string;
+  mediaUrl: string | null;
+  options: { id: string; label: string; text: string }[];
+  difficulty: "easy" | "medium" | "hard";
+  relatedArticleRef: {
+    lawSlug: string;
+    no: string;
+    slug: string;
+    label: string;
+    legislationSlug: string | null;
+  } | null;
+  courseName: string;
+  topicName: string;
 }

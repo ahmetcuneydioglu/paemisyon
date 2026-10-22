@@ -79,6 +79,14 @@ export class PublicController {
     return this.mevzuat.articleQuestions(slug, no, user?.id);
   }
 
+  // Paylaşılan soru (F10-P): `/s/:id` iniş sayfası + uygulama derin bağlantısı.
+  // Anahtar/açıklama/kaynak etiketi yok; yalnız yayımlı soru, aksi 404.
+  @Get('questions/:id/share')
+  @Header('Cache-Control', CACHE_SLOW)
+  sharedQuestion(@Param('id') id: string) {
+    return this.service.sharedQuestion(id);
+  }
+
   @Get('question-of-day')
   @Header('Cache-Control', CACHE_QOTD)
   questionOfDay() {
