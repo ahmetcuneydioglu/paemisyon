@@ -43,7 +43,6 @@ import {
 
 const seansAraclari: ToolAction[] = [
   { key: "favorite", label: "Favoride", active: true, onClick: () => {} },
-  { key: "note", label: "Not", onClick: () => {} },
   { key: "coach", label: "Koça sor", onClick: () => {} },
   { key: "report", label: "Hata bildir", onClick: () => {} },
 ];

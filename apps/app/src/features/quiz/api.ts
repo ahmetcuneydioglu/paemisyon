@@ -97,9 +97,6 @@ export interface SessionResult {
 export const sessionToolsApi = {
   bookmarks: () => api<{ questionId: string }[]>("/review/bookmarks"),
   setBookmark: (questionId: string, on: boolean) => api<{ bookmarked: boolean }>(`/review/bookmarks/${questionId}`, { method: on ? "POST" : "DELETE" }),
-  getNote: (questionId: string) => api<{ text: string | null }>(`/me/questions/${questionId}/note`),
-  saveNote: (questionId: string, text: string) =>
-    text.trim().length === 0 ? api<unknown>(`/me/questions/${questionId}/note`, { method: "DELETE" }) : api<unknown>(`/me/questions/${questionId}/note`, { method: "PUT", body: { text: text.slice(0, 2000) } }),
   explain: (versionId: string, chosenOptionId: string) => api<{ text: string; cached: boolean; remainingToday: number | null }>("/ai/explain", { method: "POST", body: { versionId, chosenOptionId } }),
   report: (questionId: string, message: string) => api<{ alreadyReported: boolean }>(`/questions/${questionId}/report`, { method: "POST", body: { message } }),
 };

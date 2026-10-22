@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Flag, Grid3x3, MessageCircle, PenLine, Scale, Star, X } from "lucide-react-native";
+import { ChevronLeft, ChevronRight, Flag, Grid3x3, MessageCircle, Scale, Star, X } from "lucide-react-native";
 import type { ComponentType, ReactNode } from "react";
 import { Animated, Pressable, StyleSheet, View, useWindowDimensions } from "react-native";
 import { AppText, Button, IconButton } from "@/components/ui";
@@ -194,7 +194,7 @@ export function QuestionMetaRow({ difficulty, article }: { difficulty?: QuizDiff
 /* ---------------------------------------------------------------- Araç satırı */
 
 export interface ToolAction {
-  key: "favorite" | "note" | "coach" | "report";
+  key: "favorite" | "coach" | "report";
   label: string;
   icon?: ComponentType<IconProps>;
   active?: boolean;
@@ -202,9 +202,9 @@ export interface ToolAction {
   onPress: () => void;
 }
 
-const TOOL_ICON: Record<ToolAction["key"], ComponentType<IconProps>> = { favorite: Star, note: PenLine, coach: MessageCircle, report: Flag };
+const TOOL_ICON: Record<ToolAction["key"], ComponentType<IconProps>> = { favorite: Star, coach: MessageCircle, report: Flag };
 
-/** Panel üstü ghost ikon düğmeleri (Favori · Not · Koça sor · Hata bildir), her biri ≥44 pt. */
+/** Panel üstü ghost ikon düğmeleri (Favori · Koça sor · Hata bildir — soru notu yok: not okuma eylemidir, yeri mevzuat okuyucusu), her biri ≥44 pt. */
 export function ToolRow({ actions, onPanel = true }: { actions: ToolAction[]; onPanel?: boolean }) {
   const { colors } = useTheme();
   const fg = onPanel ? colors.panelSoft : colors.inkSoft;

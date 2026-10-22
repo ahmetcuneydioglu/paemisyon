@@ -149,22 +149,12 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   >({});
   // Kapsam adı (F10-0 `scopeName`); query'deki etiket öncelikli.
   const [scopeName, setScopeName] = useState<string | null>(null);
-  // "Not" aracı: dar ekranda yardımcı panel gizli → not alanı panelin altında açılır.
-  const [noteOpen, setNoteOpen] = useState(false);
   const [pendingAnswer, setPendingAnswer] = useState<{
     questionId: string;
     optionId: string;
   } | null>(null);
   const [answerError, setAnswerError] = useState<string | null>(null);
   const [exitAsk, setExitAsk] = useState(false);
-  // Soru notu (Doc 49 S1-C): kullanıcının soruya kişisel notu; sunucuda KALICI
-  // (PUT /me/questions/:id/note, 800 ms gecikmeli). Soru başına tutulur.
-  const [notes, setNotes] = useState<Record<string, string>>({});
-  // Not kayıt durumu soru başına tutulur: soru değişince sıfırlamak gerekmez.
-  const [noteStates, setNoteStates] = useState<
-    Record<string, "saving" | "saved" | "error">
-  >({});
-  const noteTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   // Favoriler (F) — bookmark API'sine yazılır; oturum içi anlık durum.
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   // "M ile aç" — ilgili maddeyi sağ panelde göster (turdan çıkmadan, Doc 27 §3.6).
@@ -291,46 +281,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   const data =
     phase.kind === "playing" || phase.kind === "finishing" ? phase.data : null;
   const question = data?.questions[index] ?? null;
-  const currentQuestionId = question?.questionId ?? null;
 
-  // Soru değişince kayıtlı notu getir (bir kez; bellekte varsa istek yok).
-  useEffect(() => {
-    if (!currentQuestionId) return;
-    let alive = true;
-    apiClient<{ text: string | null }>(
-      `/me/questions/${currentQuestionId}/note`,
-    )
-      .then((r) => {
-        if (!alive || r.text == null) return;
-        setNotes((n) =>
-          n[currentQuestionId] != null
-            ? n
-            : { ...n, [currentQuestionId]: r.text! },
-        );
-      })
-      .catch(() => {});
-    return () => {
-      alive = false;
-    };
-  }, [currentQuestionId]);
-
-  const noteDegisti = useCallback((questionId: string, text: string) => {
-    setNotes((n) => ({ ...n, [questionId]: text }));
-    setNoteStates((st) => ({ ...st, [questionId]: "saving" }));
-    if (noteTimer.current) clearTimeout(noteTimer.current);
-    noteTimer.current = setTimeout(() => {
-      const istek =
-        text.trim().length === 0
-          ? apiClient(`/me/questions/${questionId}/note`, { method: "DELETE" })
-          : apiClient(`/me/questions/${questionId}/note`, {
-              method: "PUT",
-              body: { text: text.slice(0, 2000) },
-            });
-      istek
-        .then(() => setNoteStates((st) => ({ ...st, [questionId]: "saved" })))
-        .catch(() => setNoteStates((st) => ({ ...st, [questionId]: "error" })));
-    }, 800);
-  }, []);
   const currentFeedback = question ? feedback[question.questionId] : undefined;
   const answeredCount = data ? Object.keys(feedback).length : 0;
   const isLast = data != null && index === data.questions.length - 1;
@@ -405,7 +356,6 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       setIndex((i) => i + 1);
       setMaddeOpen(false); // sonraki soruda inspector kapanır
       setReportOpen(false); // hata bildir paneli de kapanır
-      setNoteOpen(false);
       setReportText("");
       setReportState("idle");
       setAnswerError(null);
@@ -419,7 +369,6 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
     setIndex((i) => i - 1);
     setMaddeOpen(false);
     setReportOpen(false);
-    setNoteOpen(false);
   }, [index]);
 
   // ── Favorile (F) — bookmark API'sine yazar (Doc 26 #7, wireframe 08) ──
@@ -667,17 +616,6 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
       onClick: () => toggleBookmark(question!.questionId),
     },
     {
-      key: "note",
-      label: "Not",
-      active: Boolean(notes[question!.questionId]),
-      onClick: () => {
-        // Geniş ekranda yardımcı paneldeki alana odaklan; dar ekranda panel altında aç.
-        const el = document.getElementById("soru-notu");
-        if (el && el.offsetParent !== null) el.focus();
-        else setNoteOpen((v) => !v);
-      },
-    },
-    {
       key: "coach",
       label: "Koça sor",
       active: aiNow?.status === "done",
@@ -755,32 +693,6 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         </Card>
       ) : null}
 
-      <Card className="flex flex-col gap-1.5">
-        <div className="flex items-baseline justify-between">
-          <label htmlFor="soru-notu" className="type-label text-ink-subtle">
-            Notum
-          </label>
-          <span className="type-body-sm text-ink-subtle" aria-live="polite">
-            {noteStates[question!.questionId] === "saving"
-              ? "kaydediliyor…"
-              : noteStates[question!.questionId] === "saved"
-                ? "kaydedildi"
-                : noteStates[question!.questionId] === "error"
-                  ? "kaydedilemedi"
-                  : ""}
-          </span>
-        </div>
-        <textarea
-          id="soru-notu"
-          value={notes[question!.questionId] ?? ""}
-          onChange={(e) => noteDegisti(question!.questionId, e.target.value)}
-          onKeyDown={(e) => e.stopPropagation()}
-          placeholder="Bu soruya özel notun — hesabında saklanır"
-          rows={3}
-          maxLength={2000}
-          className="type-body-sm w-full resize-y rounded-control border border-line bg-surface-alt p-2.5 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
-        />
-      </Card>
       <p className="type-body-sm text-ink-subtle">
         1–5 şık · ⏎ sonraki · F favori · M madde · Esc çıkış
       </p>
@@ -990,44 +902,6 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
                     Soruyla ilgili bölüm gösteriliyor; maddenin tamamı değildir.
                   </p>
                 </div>
-              </Card>
-            )}
-            {/* Not — dar ekranda (yardımcı panel gizli) panelin altında */}
-            {noteOpen && (
-              <Card className="flex flex-col gap-1.5 lg:hidden">
-                <div className="flex items-baseline justify-between">
-                  <label
-                    htmlFor="soru-notu-dar"
-                    className="type-label text-ink-subtle"
-                  >
-                    Notum
-                  </label>
-                  <span
-                    className="type-body-sm text-ink-subtle"
-                    aria-live="polite"
-                  >
-                    {noteStates[question!.questionId] === "saving"
-                      ? "kaydediliyor…"
-                      : noteStates[question!.questionId] === "saved"
-                        ? "kaydedildi"
-                        : noteStates[question!.questionId] === "error"
-                          ? "kaydedilemedi"
-                          : ""}
-                  </span>
-                </div>
-                <textarea
-                  id="soru-notu-dar"
-                  autoFocus
-                  value={notes[question!.questionId] ?? ""}
-                  onChange={(e) =>
-                    noteDegisti(question!.questionId, e.target.value)
-                  }
-                  onKeyDown={(e) => e.stopPropagation()}
-                  placeholder="Bu soruya özel notun — hesabında saklanır"
-                  rows={3}
-                  maxLength={2000}
-                  className="type-body-sm w-full resize-y rounded-control border border-line bg-surface-alt p-2.5 text-ink outline-none placeholder:text-ink-subtle focus:border-ink-soft"
-                />
               </Card>
             )}
             {/* Yerinde hata bildir paneli — turdan çıkmadan (Doc 27 §3.6) */}

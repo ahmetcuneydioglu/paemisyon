@@ -10,11 +10,11 @@ import { AppText } from "./temel";
  * Alt sayfa (odak seçimi, filtre, onay). Tutamak + başlık + kapat; içerik kaydırılabilir.
  * Tam ekran oynatıcılar sheet değil, kök Stack ekranıdır (Doc 25 §7).
  */
-export function Sheet({ visible, onClose, title, children, footer }: { visible: boolean; onClose: () => void; title: string; children: ReactNode; footer?: ReactNode }) {
+export function Sheet({ visible, onClose, onDismissed, title, children, footer }: { visible: boolean; onClose: () => void; /** Kapanış animasyonu bitince (iOS); bir sonraki modalı/paylaşımı burada aç. */ onDismissed?: () => void; title: string; children: ReactNode; footer?: ReactNode }) {
   const { colors, radius, space } = useTheme();
   const insets = useSafeAreaInsets();
   return (
-    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} accessibilityViewIsModal>
+    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} onDismiss={onDismissed} accessibilityViewIsModal>
       <Pressable accessibilityLabel="Kapat" onPress={onClose} style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.45)" }} />
       <View
         style={{

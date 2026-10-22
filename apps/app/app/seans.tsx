@@ -2,7 +2,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2, Timer } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
-import { Alert, Animated, Linking, Pressable, Share, View } from "react-native";
+import { Alert, Animated, Linking, Platform, Pressable, Share, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
 import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
@@ -59,10 +59,6 @@ export default function SeansScreen() {
   const [scaleIdx, setScaleIdx] = useState(1);
   // Araçlar (web oynatıcıyla aynı uçlar)
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
-  const [notes, setNotes] = useState<Record<string, string>>({});
-  const [noteOpen, setNoteOpen] = useState(false);
-  const [noteDraft, setNoteDraft] = useState("");
-  const [noteBusy, setNoteBusy] = useState(false);
   const [coach, setCoach] = useState<Record<string, CoachState>>({});
   const [reportOpen, setReportOpen] = useState(false);
   const [reportText, setReportText] = useState("");
@@ -321,37 +317,6 @@ export default function SeansScreen() {
       });
   }
 
-  async function openNote() {
-    if (!question) return;
-    const id = question.questionId;
-    let text = notes[id];
-    if (text == null) {
-      try {
-        text = (await sessionToolsApi.getNote(id)).text ?? "";
-      } catch {
-        text = "";
-      }
-      setNotes((n) => ({ ...n, [id]: text! }));
-    }
-    setNoteDraft(text);
-    setNoteOpen(true);
-  }
-
-  async function saveNote() {
-    if (!question) return;
-    const id = question.questionId;
-    setNoteBusy(true);
-    try {
-      await sessionToolsApi.saveNote(id, noteDraft);
-      setNotes((n) => ({ ...n, [id]: noteDraft.trim() }));
-      setNoteOpen(false);
-    } catch {
-      Alert.alert("Not kaydedilemedi", "Bağlantıyı kontrol edip yeniden dene.");
-    } finally {
-      setNoteBusy(false);
-    }
-  }
-
   async function askCoach() {
     if (!question || !current?.selected) return;
     const id = question.questionId;
@@ -376,6 +341,23 @@ export default function SeansScreen() {
     } catch {
       setReportState("error");
     }
+  }
+
+  /**
+   * Menü Sheet'i kapanırken paylaşım sayfası ya da başka bir modal AÇILMAZ: iOS kapanmakta
+   * olan modalın üstüne sunum yapmaz (paylaşım sessizce yutuluyordu). Eylem, kapanış
+   * animasyonu bitince (`onDismissed`) koşar; Android'de kapanış eşzamanlı, hemen koşar.
+   */
+  const afterMenuClose = useRef<(() => void) | null>(null);
+  function closeMenuThen(action: () => void) {
+    setMenuOpen(false);
+    if (Platform.OS === "ios") afterMenuClose.current = action;
+    else action();
+  }
+  function onMenuDismissed() {
+    const action = afterMenuClose.current;
+    afterMenuClose.current = null;
+    action?.();
   }
 
   function shareQuestion() {
@@ -501,7 +483,6 @@ export default function SeansScreen() {
   const tools: ToolAction[] = question
     ? [
         { key: "favorite", label: "Favori", active: bookmarks.has(question.questionId), onPress: toggleBookmark },
-        { key: "note", label: "Not", active: Boolean(notes[question.questionId]), onPress: () => void openNote() },
         { key: "coach", label: "Koça sor", active: coach[question.questionId]?.status === "done", busy: coach[question.questionId]?.status === "busy", onPress: () => void askCoach() },
         { key: "report", label: "Hata bildir", onPress: () => { setReportState("idle"); setReportOpen(true); } },
       ]
@@ -601,19 +582,11 @@ export default function SeansScreen() {
           ) : null}
 
           {/* Seans menüsü (Figma S1b): paylaş · bildir · yazı boyu · vazgeç */}
-          <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} title="Seans">
-            <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => { setMenuOpen(false); shareQuestion(); }} />
-            <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => { setMenuOpen(false); setReportState("idle"); setReportOpen(true); }} />
+          <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} onDismissed={onMenuDismissed} title="Seans">
+            <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(shareQuestion)} />
+            <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => { setReportState("idle"); setReportOpen(true); })} />
             <ListRow title="Yazı boyu" subtitle="Okuyucuyla ortak" leading={<ALargeSmall color={colors.ink} size={20} strokeWidth={1.75} />} trailing={<AppText variant="subhead" tone="accentInk">{SCALE_LABEL[scaleIdx]} ›</AppText>} chevron={false} onPress={cycleScale} divider={false} />
             <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
-          </Sheet>
-
-          {/* Not (sunucuda kalıcı: PUT /me/questions/:id/note) */}
-          <Sheet visible={noteOpen} onClose={() => setNoteOpen(false)} title="Soru notu" footer={<Button title="Kaydet" onPress={() => void saveNote()} loading={noteBusy} />}>
-            <TextField label="Kendine not" value={noteDraft} onChangeText={setNoteDraft} multiline placeholder="Bu soruda aklında kalsın istediğin şey…" style={{ minHeight: 120, textAlignVertical: "top" }} maxLength={2000} />
-            <AppText variant="bodySm" tone="subtle">
-              Boş bırakıp kaydedersen not silinir.
-            </AppText>
           </Sheet>
 
           {/* Hata bildir — turdan çıkmadan */}

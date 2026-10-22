@@ -1,6 +1,6 @@
 "use client";
 
-import { Flag, MessageCircle, PenLine, Scale, Star } from "lucide-react";
+import { Flag, MessageCircle, Scale, Star } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
@@ -13,12 +13,7 @@ import { cn } from "@/lib/cn";
 /* ---------------------------------------------------------------- İlerleme dilimleri */
 
 export type SliceState =
-  | "correct"
-  | "wrong"
-  | "current"
-  | "answered"
-  | "flagged"
-  | "future";
+  "correct" | "wrong" | "current" | "answered" | "flagged" | "future";
 
 const SLICE_PRIORITY: SliceState[] = [
   "current",
@@ -192,7 +187,7 @@ export function QuestionMetaRow({
 /* ---------------------------------------------------------------- Araç satırı */
 
 export interface ToolAction {
-  key: "favorite" | "note" | "coach" | "report";
+  key: "favorite" | "coach" | "report";
   label: string;
   active?: boolean;
   busy?: boolean;
@@ -210,12 +205,11 @@ const TOOL_ICON: Record<
   }>
 > = {
   favorite: Star,
-  note: PenLine,
   coach: MessageCircle,
   report: Flag,
 };
 
-/** Panel üstü ghost ikon düğmeleri (Favori · Not · Koça sor · Hata bildir), ≥44 px. */
+/** Panel üstü ghost ikon düğmeleri (Favori · Koça sor · Hata bildir — soru notu yok: not okuma eylemidir, yeri mevzuat okuyucusu), ≥44 px. */
 export function ToolRow({
   actions,
   onPanel = true,

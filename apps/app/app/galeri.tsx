@@ -33,7 +33,6 @@ import { type TypeRole } from "@/theme/tokens";
  */
 const seansAraclari = [
   { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
-  { key: "note" as const, label: "Not", onPress: () => {} },
   { key: "coach" as const, label: "Koça sor", onPress: () => {} },
   { key: "report" as const, label: "Hata bildir", onPress: () => {} },
 ];
