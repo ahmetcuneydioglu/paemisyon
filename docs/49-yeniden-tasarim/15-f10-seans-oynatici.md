@@ -239,3 +239,99 @@ Koça sor / Hata bildir seans içinde yoktu (web'de vardı) — F10-A'da eklenir
   Turbopack monorepo kökünü aşan tokens.css import'unu reddediyor) 393 px koyu + açık ekran
   görüntüsü Figma S3 ile karşılaştırıldı: panel açıkta lacivert, "Yanlış" okunur, hero "/"
   taşmıyor. Canlı tur (API'li) kullanıcı hesabıyla deploy sonrası bakılacak.
+
+## 5. F10-P — Soruyu paylaş (plan, 23 Eki 2026, onay bekliyor)
+
+**Karar (kullanıcı, 23 Eki):** seans araç satırından **Not kaldırıldı** (mobil + web, d9fae8e): not
+okuma eylemidir, yeri mevzuat okuyucusu; seansta okunacak yüzeyi yoktu. Sunucu ucu duruyor.
+Paylaşım ise GYSROTA'daki mekanizma baz alınarak yeniden yapılır; bugünkü düz metin paylaşımı
+(kök + şıklar) geçicidir.
+
+### 5a. GYSROTA'dan alınan mekanizma (`gys-mobil/src/features/questions/share.ts`,
+`components/ShareQuestionSheet.tsx`)
+
+- **Kart ekran görüntüsü değildir:** soru verisinden ayrı çizilen 360×450 görünüm, 3× yakalanır
+  → 1080×1350 (4:5, Instagram/WhatsApp'a uygun). Kullanıcının işaretlediği şık hiçbir modda karta
+  girmez.
+- **İki mod:** "Soruyu paylaş" (şıklar var, cevap yok — varsayılan) ve, soru cevaplanmışsa,
+  "Cevap ve açıklamayla paylaş" (doğru şık işaretli, açıklamanın ilk cümlesi, dayanak maddesi).
+- **Akıllı bağlantı** `gysrota.com/s/<id>`: uygulama yüklüyse universal link ile soruya, yoksa web
+  iniş sayfasına (mağaza rozetleri). Kartta QR + alan adı; metin: "Bu soruyu sen de çöz: <url>".
+- **Paylaş sayfası** (pageSheet): canlı önizleme (aynı görünüm hem önizleme hem yakalanan
+  kaynak), mod seçimi, "Paylaş…" (görsel + metin birlikte sistem sayfasına) ve "Bağlantıyı kopyala".
+- Paketler: `react-native-view-shot`, `react-native-share`, `react-native-qrcode-svg`,
+  `expo-clipboard`.
+
+### 5b. Paemisyon'a uyarlama
+
+- **Kaynak etiketi kartta YOK** (CLAUDE.md kuralı); meta olarak yalnız madde bağı ("PVSK md. 4/A")
+  ve zorluk. Mevzuat türetimi / AI üretimi soruların etiketi de girmez.
+- **Kart kimliği "Nöbet defteri":** iki temada da aynı kart — `panel` laciverti zemin, `bg` kağıt
+  rengi kart, Lora kök, Inter şıklar, altın yalnız "paemisyon" marka sözcüğü ve QR çerçevesi.
+  Paylaşılan görsel marka varlığıdır; alıcının temasına göre değişmez.
+- **Cevap modu:** Doc 25 "soru bankası güveni" gereği cevap ve açıklama paylaşılabilir mi —
+  **kullanıcı kararı.** Öneri: evet, GYSROTA'daki gibi yalnız cevaplanmış soruda ve açıklamanın
+  ilk cümlesiyle (tam açıklama ve madde metni uygulamada kalır; paylaşım "kanca"dır).
+- **Bağlantı:** `paemisyon.com/s/<questionId>`. Web'de yeni public sayfa: soru kökü + şıklar
+  (cevapsız), "Uygulamada çöz" + mağaza rozetleri, oturumlu kullanıcıya "Web'de çöz" (v1: soruyu
+  gösterir; tek soruluk tur v2). `noindex` (banka sorusu SEO'ya açılmaz). API: `GET
+  /public/questions/:id/share` → stem, options, difficulty, relatedArticleRef; anahtar, açıklama ve
+  kaynak etiketi yok. Yalnız `published` sorular; aksi 404.
+- **Universal link:** `associatedDomains` app.config'de var ama web'de `.well-known/
+  apple-app-site-association` YOK (kontrol edildi) — `/s/*` için AASA (Team 3U4QPG9Q82) ve
+  Android `assetlinks.json` eklenir; uygulama `/s/<id>` derin bağlantısını soru önizlemesine
+  (ya da tur başlatmaya) yönlendirir.
+- **Native paketler** dev client'ı değiştirir: `pod install` + yeni dev build (telefon) ve beta
+  build. Bu yüzden F10-P, F10-C deneme modundan sonra, beta build öncesi tek seferde girer.
+
+### 5c. Figma agent promptu (PaemisyonNew, kopyala-yapıştır)
+
+**Görev:** Paemisyon için iki çerçeve çiz: (1) **"Paylaşım kartı · Soru"** 1080×1350 px (4:5;
+360×450'nin 3 katı — tüm ölçüleri 360×450 mantığıyla düşünüp 3× uygula) ve (2) **"Paylaş
+sayfası"** 393×852 koyu + açık (alttan açılan tam sayfa). Bu dosyadaki "Nihai Bugün · Koyu" (7:1442)
+ve "Seans" sayfası görsel kaynaktır; aynı aileden görünmeli. Kütüphane/değişken arama; değerleri
+doğrudan uygula.
+
+**Değerler:** panel #1B293B · kağıt #FFFCF6 · surface #FFFFFF · surfaceAlt #EAE5DA · line #D9D7CF ·
+ink #1B293B · inkSoft #596371 · inkSubtle #6B7482 · accent #E8B46C · accentInk #8B5E23 · success
+#5F8A6B · successSoft #E3EEE6 · panelInk #F5F0E5 · panelSoft #BAC4D0. Koyu tema ekranı için bg
+#121A26, surface #1E2B3C, line #394657, ink #F5F0E5, inkSoft #BAC4D0, accentSoft #2E3447.
+Fontlar Lora (500/600) ve Inter (400/500/600).
+
+**(1) Paylaşım kartı — temadan bağımsız, tek tasarım:** zemin `panel` laciverti. Üst şerit (72 px):
+solda "paemisyon" Lora 600 altın (brand), sağda "paemisyon.com" Inter 500 `panelSoft`. Ortada
+**kağıt kart** (`#FFFCF6`, köşe 30, iç boşluk 48, 1 px `line`): üstte meta satırı — zorluk hapı
+("ZOR", Inter 600 büyük harf, `surfaceAlt` zemin, `inkSoft`) ve madde bağı hapı ("PVSK · md. 4/A",
+`accentSoft`-benzeri açık altın zemin #F6E9D2, `accentInk` metin); altında soru kökü **Lora 500
+~44/58 px** `ink` (en çok 5 satır, 3 satırlık örnek); altında 5 şık satırı: 48 px kare harf kutusu
+(`surfaceAlt`, Inter 600 `ink` harf), Inter 400 ~30/39 `ink` metin, satır arası 1 px `line`
+(çerçevesiz, defter çizgisi hissi). Alt şerit (kartın altında, panel üstünde): solda Lora 600
+`panelInk` "Bu soruyu sen de çöz", altında Inter `panelSoft` "Kaynağa dayalı açıklama ve madde
+metniyle." ; sağda 162 px QR (beyaz kutu, köşe 24, 15 px iç boşluk, QR laciverti). İki varyant:
+**Soru** (yukarıdaki) ve **Cevaplı**: doğru şık satırı `successSoft` zemin + `success` 2 px sol
+çizgi + harf kutusu `success` dolgu ve beyaz onay ikonu, satır sonunda "Doğru" Inter 600 `success`;
+şıkların altında ince `line` ayracı, sonra açıklamanın ilk cümlesi Inter 400 ~26/36 `inkSoft` ve
+dayanak "2559 sayılı PVSK md. 4/A" Inter 600 `accentInk`. Kaynak/kitap etiketi, kullanıcı adı,
+tarih, mağaza adı YOK.
+
+**(2) Paylaş sayfası (koyu + açık):** başlık satırı: Lora 600 24 "Soruyu paylaş", sağda "Kapat"
+`accentInk`. Üstte önizleme: kartın 200 px genişlikte küçültülmüş hâli (gerçek oranda), yanında
+Inter 14 `inkSoft` açıklama: "Kart sorunun ilk hâliyle üretilir; işaretlediğin şık karta girmez.
+Görselin yanında soruya giden bağlantı da gider." Altında iki seçenek satırı (kart `surface`, 1 px
+`line`, köşe 10; seçili olan 1,5 px altın kenar + `accentSoft` zemin, sağda altın onay ikonu —
+radyo dairesi yok): "Soruyu paylaş — Şıklar var, cevap yok. Varsayılan." / "Cevap ve açıklamayla
+paylaş — Doğru şık işaretli, açıklamanın ilk cümlesi ve dayanak maddesi." Altta birincil düğme
+"Paylaş…" (altın dolgu, lacivert metin, 52 px) ve ikincil "Bağlantıyı kopyala" (`surface` +
+`line`). Bir de **cevapsız durum** varyantı: seçenek satırları yok, yalnız önizleme + iki düğme.
+"Paylaşım" adlı yeni sayfa; auto layout; katmanları token adıyla adlandır.
+
+**Yapma:** gölge, gradyan, emoji, ders rengi, kart içinde kart, kaynak etiketi, kullanıcı adı.
+
+### 5d. İş sırası (onay sonrası)
+
+1. API `GET /public/questions/:id/share` (+spec) · web `/s/[id]` iniş sayfası (noindex) · AASA +
+   assetlinks · Expo derin bağlantı `/s/<id>`.
+2. Expo `features/quiz/share.ts` + `components/domain/share-card.tsx` + `ShareQuestionSheet`
+   (Figma ölçüleri), paketler, `pod install`, dev build; telefonda WhatsApp'a paylaşım denemesi.
+3. Web seans "Paylaş": aynı kartı DOM'da çizip `html-to-image` ile PNG + Web Share API; yoksa
+   bağlantı kopyala.
