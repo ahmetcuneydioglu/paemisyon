@@ -76,8 +76,9 @@ const config: ExpoConfig = {
     "expo-iap",
     ["expo-secure-store", { faceIDPermission: false }],
     "expo-dev-client",
-    // Paylaşım kartı (F10-P): görsel + metin birlikte sistem paylaşım sayfasına.
-    "react-native-share",
+    // Paylaşım kartı (F10-P): görsel + metin birlikte sistem paylaşım sayfasına. Eklenti
+    // seçeneksiz çöküyor; sorgu şemaları/paketleri hedef uygulamalara doğrudan paylaşım için.
+    ["react-native-share", { ios: ["whatsapp", "telegram", "instagram"], android: ["com.whatsapp", "org.telegram.messenger", "com.instagram.android"] }],
     "expo-apple-authentication",
     ...(googleIosUrlScheme
       ? [["@react-native-google-signin/google-signin", { iosUrlScheme: googleIosUrlScheme }] as [string, unknown]]
