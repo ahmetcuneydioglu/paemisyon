@@ -416,3 +416,28 @@ geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
   **kural artık web için de geçerli:** `apps/web/package-lock.json` yalnız docker node:22 ile
   yazılır. "Bağlantıyı kopyala" tarayıcı panelinde pano izni yüzünden doğrulanamadı (gerçek
   tarayıcıda kullanıcı hareketiyle çalışır).
+
+## 6. F10-C — Deneme modu derisi (plan, 24 Eki 2026, kullanıcı: "başlayalım")
+
+Figma S6 (`38:12275`/`38:12349`): sayaç + Bitir üst satırda, başlık bloğu "Soru 12 / 40 · Deneme
+modu", dilimler yalnız cevaplandı (altın) / bayraklı (warning), meta satırında yalnız zorluk,
+şıklar seçili-bekliyor durumu, alt çubuk Önceki · Bayrak · "12/40 · ⚑3" hapı · Sonraki. F10-A bu
+iskeleti mobile getirdi; kalanlar:
+
+1. **Mobil optik form** (`seans.tsx` Sheet): kit bileşeni `ExamGrid` — hücre durumları mevcut
+   (altın halka), dolu (`accentSoft`/`accentInk`), bayraklı (`warningSoft`/`warningInk` + bayrak),
+   boş (`surfaceAlt`/`inkSoft`); üstte tabular özet "12/40 dolu · ⚑3 · 28 boş" ve kalan süreye
+   göre soru başına saniye; altta "Testi bitir". Doğruluk sızmaz.
+2. **Mobil deneme sonucu** (`deneme-sonuc/[attemptId]`): S5 dili — `panel` içinde Lora hero
+   (net "18,25" ya da arşivde "%80"), altında "D 32 · Y 5 · B 3 · 47 dk" tabular, geçen
+   denemeyle fark satırı; "Kaybettiren konular" ince çizgili satırlar (konu + Y/B + −net +
+   "Kapat ›"); zamanlama şeridi ve cevap incelemesi kalır (kart içinde kart yok).
+3. **Web deneme oynatıcısı** (`components/exam/exam-player.tsx`): `SessionTitleBlock` (başlık,
+   "Soru n / N · Deneme modu", dilimler exam), `QuestionMetaRow` (yalnız zorluk), `FocusFrame`
+   sayaç (son 10 dk `danger`), alt çubuk seans oynatıcısıyla aynı yapışkan çubuk (Önceki ·
+   Bayrak · hap · Sonraki); yan panel optik form `ExamGrid` web karşılığı; "…" menüsü yok
+   (deneme sırasında paylaşım ve bildirim yok — ipucu kuralı).
+4. **Web deneme sonucu** (`sonuc/[attemptId]`): sol kart yerine `ResultPanel` (net hero, D/Y/B
+   satırı, fark rozeti); koç cümlesi `CoachLine`; tablo ve inceleme kalır.
+Sunucu sözleşmesi değişmez. Sıra: 1 → 2 (telefonda görülür) → 3 → 4 (:3012). Figma'ya ek çizim
+yok: optik form ve sonuç S5/S6 dilinden türetilir.
