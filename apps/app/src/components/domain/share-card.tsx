@@ -57,6 +57,12 @@ export const ShareQuestionCard = forwardRef<ComponentRef<typeof View>, { data: S
 
       {/* Kağıt kart */}
       <View style={{ flex: 1, backgroundColor: K.paper, borderRadius: 10, borderWidth: 0.33, borderColor: K.line, padding: 16, gap: 8, overflow: "hidden" }}>
+        {/* Filigran: kağıt üstünde silik marka sözcüğü; %5 mürekkep, okunurluğu etkilemez (kullanıcı isteği, 23 Eki). */}
+        <View pointerEvents="none" style={{ position: "absolute", left: -10, right: -10, top: 0, bottom: 0, alignItems: "center", justifyContent: "center" }}>
+          <Text allowFontScaling={false} style={{ fontFamily: fontFamily.display[600], fontSize: 92, lineHeight: 110, color: K.ink, opacity: 0.05, letterSpacing: -2, transform: [{ rotate: "-18deg" }] }}>
+            paemisyon
+          </Text>
+        </View>
         {data.difficultyLabel || data.articleLabel ? (
           <View style={{ flexDirection: "row", gap: 5 }}>
             {data.difficultyLabel ? (
@@ -128,12 +134,16 @@ export const ShareQuestionCard = forwardRef<ComponentRef<typeof View>, { data: S
 
       {/* Alt şerit: çağrı + QR */}
       <View style={{ height: 54, flexDirection: "row", alignItems: "center", gap: 12 }}>
-        <View style={{ flex: 1, gap: 3 }}>
+        <View style={{ flex: 1, gap: 2 }}>
           <CardText size={12} weight={600} family="display" color={K.panelInk}>
             Bu soruyu sen de çöz
           </CardText>
-          <CardText size={9} weight={400} color={K.panelSoft} numberOfLines={2}>
+          <CardText size={8.67} weight={400} color={K.panelSoft} numberOfLines={1}>
             Kaynağa dayalı açıklama ve madde metniyle.
+          </CardText>
+          {/* Platform satırı (kullanıcı kararı, 23 Eki): uygulama iki mağazada da var. */}
+          <CardText size={8.67} weight={600} color={K.panelInk} numberOfLines={1}>
+            {"App Store ve Google Play'de · paemisyon.com"}
           </CardText>
         </View>
         <View style={{ width: 54, height: 54, padding: 5, borderRadius: 8, backgroundColor: K.surface }}>
