@@ -408,3 +408,11 @@ geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
   `actions` yuvası; oynatıcı başlığında "…" (Popover): Soruyu paylaş · Soruyu bildir. Doğrulama:
   tsc 0, eslint 0, vitest 84/84; :3012'de geçici hesapla cevapsız ve cevaplı kart PNG'leri
   incelendi (Figma 49:2233/49:2290 ile uyumlu), dar ekranda diyalog alt alta. Geçici hesap silindi.
+- **F10-P (3) deploy (24 Eki 2026):** 1479e01 origin/main'e; Vercel READY, canlıda geçici hesapla
+  "…" → Soruyu paylaş diyaloğu ve kart önizlemesi doğrulandı (masaüstünde "PNG indir"); hesap
+  silindi. **CI Web işi düştü:** Mac'teki `npm install qrcode` web kilidinden `@emnapi/*` isteğe
+  bağlı girdilerini düşürdü (uygulamadaki tuzağın aynısı; `npm ci` reddetti, Vercel'i
+  etkilemedi). Kilit node:22 docker'da yeniden üretildi (@emnapi yerinde, qrcode yerinde) —
+  **kural artık web için de geçerli:** `apps/web/package-lock.json` yalnız docker node:22 ile
+  yazılır. "Bağlantıyı kopyala" tarayıcı panelinde pano izni yüzünden doğrulanamadı (gerçek
+  tarayıcıda kullanıcı hareketiyle çalışır).
