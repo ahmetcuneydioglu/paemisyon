@@ -3,7 +3,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowRight, ChevronLeft, Scale, X } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronLeft,
+  Ellipsis,
+  Flag,
+  Scale,
+  Share2,
+  X,
+} from "lucide-react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
@@ -20,6 +28,9 @@ import {
 import { ProgressBar, SegmentBar } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
 import { FocusFrame } from "@/components/shell/focus-frame";
+import { Popover } from "@/components/ui/popover";
+import { ShareDialog } from "./share-dialog";
+import { buildShareCardData } from "@/lib/share-card";
 import {
   FeedbackPanel,
   QuestionMetaRow,
@@ -176,6 +187,8 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
   >({});
   // Hata bildir (wireframe 08) — turdan ÇIKMADAN yerinde bildirim; /questions/:id/report'a yazar.
   const [reportOpen, setReportOpen] = useState(false);
+  // Paylaşım kartı diyaloğu (F10-P adım 3): "…" menüsünden.
+  const [shareOpen, setShareOpen] = useState(false);
   const [reportText, setReportText] = useState("");
   const [reportState, setReportState] = useState<
     "idle" | "busy" | "done" | "already" | "error"
@@ -711,6 +724,51 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         </div>
       }
       onExit={() => setExitAsk(true)}
+      actions={
+        <Popover
+          align="end"
+          trigger={({ toggle, id, open }) => (
+            <button
+              type="button"
+              onClick={toggle}
+              aria-label="Seans menüsü"
+              aria-haspopup="dialog"
+              aria-expanded={open}
+              aria-controls={id}
+              className="tk-interactive flex size-11 items-center justify-center rounded-control text-ink-soft hover:bg-surface-alt hover:text-ink"
+            >
+              <Ellipsis size={22} strokeWidth={1.75} aria-hidden />
+            </button>
+          )}
+        >
+          {(close) => (
+            <div className="flex w-56 flex-col py-1">
+              <button
+                type="button"
+                onClick={() => {
+                  close();
+                  setShareOpen(true);
+                }}
+                className="tk-interactive flex h-11 items-center gap-3 px-3 type-body text-ink hover:bg-surface-alt"
+              >
+                <Share2 size={18} strokeWidth={1.75} aria-hidden /> Soruyu
+                paylaş
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  close();
+                  setReportState("idle");
+                  setReportOpen(true);
+                }}
+                className="tk-interactive flex h-11 items-center gap-3 px-3 type-body text-ink hover:bg-surface-alt"
+              >
+                <Flag size={18} strokeWidth={1.75} aria-hidden /> Soruyu bildir
+              </button>
+            </div>
+          )}
+        </Popover>
+      }
       aside={yanPanel}
     >
       <div className="flex flex-col gap-5">
@@ -984,6 +1042,17 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
           </div>
         ) : null}
       </div>
+
+      {question ? (
+        <ShareDialog
+          open={shareOpen}
+          onClose={() => setShareOpen(false)}
+          answered={Boolean(currentFeedback)}
+          build={(mode) =>
+            buildShareCardData(question, currentFeedback ?? null, mode)
+          }
+        />
+      ) : null}
 
       {/* Çıkış diyaloğu — ilerleme kaybolmaz (cevaplar sunucuda) */}
       <Dialog

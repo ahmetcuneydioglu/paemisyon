@@ -59,7 +59,7 @@ export const ShareQuestionCard = forwardRef<ComponentRef<typeof View>, { data: S
       <View style={{ flex: 1, backgroundColor: K.paper, borderRadius: 10, borderWidth: 0.33, borderColor: K.line, padding: 16, gap: 8, overflow: "hidden" }}>
         {/* Filigran: kağıt üstünde silik marka sözcüğü; %5 mürekkep, okunurluğu etkilemez (kullanıcı isteği, 23 Eki). */}
         <View pointerEvents="none" style={{ position: "absolute", left: -10, right: -10, top: 0, bottom: 0, alignItems: "center", justifyContent: "center" }}>
-          <Text allowFontScaling={false} style={{ fontFamily: fontFamily.display[600], fontSize: 92, lineHeight: 110, color: K.ink, opacity: 0.05, letterSpacing: -2, transform: [{ rotate: "-18deg" }] }}>
+          <Text allowFontScaling={false} style={{ fontFamily: fontFamily.display[600], fontSize: 62, lineHeight: 74, color: K.ink, opacity: 0.05, letterSpacing: -1.5, transform: [{ rotate: "-18deg" }] }}>
             paemisyon
           </Text>
         </View>

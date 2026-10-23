@@ -396,3 +396,15 @@ geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
   bağlantı ilk bir süre Safari'ye düşebilir. (3) Kartta "App Store ve Google Play'de" satırı
   kullanıcı kararı; App Review 2.3.10 riski kullanıcıya söylendi. Kalan: web seans "Paylaş"
   (adım 3), Android `assetlinks.json`, F10-C deneme modu.
+- **F10-P (3) — web "Soruyu paylaş" (24 Eki 2026):** `lib/share-card.ts` — Expo ile aynı veri
+  sözleşmesi (`buildShareCardData`, `firstSentence`, `hapEtiketi`, `questionShareUrl`,
+  `shareMessage`; 4 vitest) ve kartın **Canvas** çizimi (`renderShareCard`, 1080×1350):
+  renkler `.theme-light` kapsamındaki CSS değişkenlerinden (kart sayfanın temasına bakmaz, ham
+  hex yok — token kapısı 0), aileler `--font-lora`/`--font-inter`, QR `qrcode` paketi; filigran
+  ve mağaza satırı Expo kartıyla aynı (filigran 62 pt: tam sözcük sığsın diye iki tarafta
+  küçültüldü). `session/share-dialog.tsx`: önizleme = paylaşılan tuval (200 px); mod seçimi yalnız
+  cevaplanmışta (radyo rolü, altın kenar + onay); dosya paylaşımı olan tarayıcıda "Paylaş…"
+  (`navigator.share` görsel + metin), yoksa "PNG indir"; "Bağlantıyı kopyala". `FocusFrame`'e
+  `actions` yuvası; oynatıcı başlığında "…" (Popover): Soruyu paylaş · Soruyu bildir. Doğrulama:
+  tsc 0, eslint 0, vitest 84/84; :3012'de geçici hesapla cevapsız ve cevaplı kart PNG'leri
+  incelendi (Figma 49:2233/49:2290 ile uyumlu), dar ekranda diyalog alt alta. Geçici hesap silindi.

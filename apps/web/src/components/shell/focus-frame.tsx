@@ -12,6 +12,8 @@ export function FocusFrame({
   context,
   progress,
   timer,
+  /** Sağ uç eylemleri (ör. seans "…" menüsü); zamanlayıcıdan sonra. */
+  actions,
   exitHref,
   onExit,
   children,
@@ -25,6 +27,7 @@ export function FocusFrame({
   context?: ReactNode;
   progress?: ReactNode;
   timer?: ReactNode;
+  actions?: ReactNode;
   exitHref?: string;
   onExit?: () => void;
   children: ReactNode;
@@ -60,6 +63,9 @@ export function FocusFrame({
         ) : null}
         {timer ? (
           <div className="type-stat tabular text-ink">{timer}</div>
+        ) : null}
+        {actions ? (
+          <div className="flex shrink-0 items-center gap-1">{actions}</div>
         ) : null}
       </header>
       <div className="mx-auto flex w-full max-w-6xl flex-1 gap-8 px-4 py-6 md:px-6">
