@@ -459,3 +459,7 @@ yok: optik form ve sonuç S5/S6 dilinden türetilir.
   hesapla kişisel deneme (25 soru) başlatıldı: 1280 ve 390 px oynatıcı, bayrak, optik diyalog,
   bitirme → sonuç sayfası doğrulandı; dar ekranda çubuk öğeleri tek satıra alındı. Hesap silindi.
   Sunucu sözleşmesi değişmedi. Kalan: push + canlı kontrol; mobil deneme-sonuc göz testi (kullanıcı).
+- **F10-C deploy (24 Eki 2026):** 5 commit origin/main'e; CI yeşil (40031164932), Vercel READY.
+  Canlıda geçici hesapla kişisel deneme (25 soru, açık tema): yeni oynatıcı (başlık bloğu, dilimler,
+  optik form yan paneli, alt çubuk), bitirme diyaloğu ve sonuç sayfası (panel hero "%0",
+  "doğruluk · D · Y · B · dk", koç satırı, konu kırılımı) doğrulandı; hesap silindi.
