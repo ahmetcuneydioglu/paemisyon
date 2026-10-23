@@ -441,3 +441,21 @@ iskeleti mobile getirdi; kalanlar:
    satırı, fark rozeti); koç cümlesi `CoachLine`; tablo ve inceleme kalır.
 Sunucu sözleşmesi değişmez. Sıra: 1 → 2 (telefonda görülür) → 3 → 4 (:3012). Figma'ya ek çizim
 yok: optik form ve sonuç S5/S6 dilinden türetilir.
+
+### 6a. İlerleme (24 Eki 2026)
+
+- **Mobil (5672c7a):** `domain/seans.tsx` → `ExamGrid` (44 pt hücre, altı sütun; mevcut altın halka,
+  dolu/bayraklı/boş; tabular özet + boş soru başına saniye); optik form Sheet'i buna taşındı,
+  "Testi bitir" footer'da. `ResultPanel` `hero`/`sub` aldı; `deneme-sonuc` üstü: panel içinde net
+  ("18,25" / arşivde "%80"), alt satır "net · D · Y · B · süre", fark satırı; "Kaybettiren konular"
+  ince çizgili satırlar (konu + Y/B/soru, −net kırmızı, "Kapat ›"). tsc 0, lint 0. Telefonda Fast
+  Refresh ile canlı (görsel kontrol kullanıcıda).
+- **Web (8744d18, d0c5648 + çubuk düzeltmesi):** `seans-kit` → `ExamGrid` (web); `exam-player`:
+  `SessionTitleBlock` ("Soru n / N · Deneme modu", dilimler cevaplandı/bayraklı/mevcut), sayaç
+  ikonlu ve son 10 dk `danger`, şıklar `QuestionOption`, yapışkan alt çubuk Önceki · Bayrak ·
+  "2/25 · ⚑1" hapı · Sonraki (dar ekranda hap optik form diyaloğunu açar; lg+ yan panel),
+  "Sınavı bitir" diyaloğu aynen. `sonuc/[attemptId]`: `ResultPanel` net hero + "net · D · Y · B ·
+  dk" + fark satırı; koç `CoachLine`. tsc 0, eslint 0, token kapısı 0, vitest 84/84. :3012'de geçici
+  hesapla kişisel deneme (25 soru) başlatıldı: 1280 ve 390 px oynatıcı, bayrak, optik diyalog,
+  bitirme → sonuç sayfası doğrulandı; dar ekranda çubuk öğeleri tek satıra alındı. Hesap silindi.
+  Sunucu sözleşmesi değişmedi. Kalan: push + canlı kontrol; mobil deneme-sonuc göz testi (kullanıcı).

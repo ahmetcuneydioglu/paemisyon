@@ -8,7 +8,6 @@ import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog } from "@/components/ui/dialog";
-import { KeyHint } from "@/components/ui/key-hint";
 import { Notice } from "@/components/ui/notice";
 import { QuestionOption, QuestionStem } from "@/components/ui/question";
 import { FocusFrame } from "@/components/shell/focus-frame";
@@ -407,7 +406,7 @@ export function ExamPlayer({
             onClick={() => setIndex((i) => Math.max(0, i - 1))}
             disabled={index === 0}
             aria-label="Önceki soru"
-            className="tk-interactive type-subhead inline-flex h-11 items-center gap-1 rounded-control px-2 text-ink-soft hover:bg-surface-alt disabled:opacity-40"
+            className="tk-interactive type-subhead inline-flex h-11 shrink-0 items-center gap-1 rounded-control px-1.5 whitespace-nowrap text-ink-soft hover:bg-surface-alt disabled:opacity-40"
           >
             <ChevronLeft size={18} strokeWidth={1.75} aria-hidden /> Önceki
           </button>
@@ -421,7 +420,7 @@ export function ExamPlayer({
                 : "Emin değilim, bayrakla"
             }
             className={cn(
-              "tk-interactive inline-flex h-11 flex-col items-center justify-center rounded-control px-2 text-[12px] leading-4",
+              "tk-interactive inline-flex h-11 shrink-0 flex-col items-center justify-center rounded-control px-1.5 text-[12px] leading-4 whitespace-nowrap",
               flags.has(q.questionId)
                 ? "text-accent-ink"
                 : "text-ink-soft hover:bg-surface-alt",
@@ -433,13 +432,13 @@ export function ExamPlayer({
               className={flags.has(q.questionId) ? "fill-current" : undefined}
               aria-hidden
             />
-            Bayrak <KeyHint keys="F" />
+            Bayrak
           </button>
           <button
             type="button"
             onClick={() => setGridOpen(true)}
             aria-label={`Optik form, ${gridLabel}`}
-            className="tk-interactive type-subhead tabular inline-flex h-11 flex-1 items-center justify-center gap-1.5 rounded-pill bg-surface-alt px-3 text-ink lg:pointer-events-none"
+            className="tk-interactive type-subhead tabular inline-flex h-11 min-w-0 flex-1 items-center justify-center gap-1.5 rounded-pill bg-surface-alt px-2 whitespace-nowrap text-ink lg:pointer-events-none"
           >
             <Grid3x3 size={16} strokeWidth={1.75} aria-hidden /> {gridLabel}
           </button>
@@ -448,7 +447,7 @@ export function ExamPlayer({
             onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
             disabled={index === total - 1}
             aria-label="Sonraki soru"
-            className="tk-interactive type-subhead inline-flex h-11 items-center gap-1 rounded-control px-2 text-accent-ink hover:bg-accent-soft disabled:opacity-40"
+            className="tk-interactive type-subhead inline-flex h-11 shrink-0 items-center gap-1 rounded-control px-1.5 whitespace-nowrap text-accent-ink hover:bg-accent-soft disabled:opacity-40"
           >
             Sonraki <ChevronRight size={18} strokeWidth={1.75} aria-hidden />
           </button>
