@@ -383,3 +383,16 @@ geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
   ikincisi BUILD SUCCEEDED) → devicectl install + Metro :8082 bağlandı; paylaşım denemesi
   kullanıcıda. Kalan: web seans "Paylaş" (adım 3), Android `assetlinks.json` (EAS imza parmak
   izi), canlı AASA doğrulaması deploy sonrası.
+- **F10 deploy (23 Eki 2026):** `claude/f10-seans-oynatici` (15 commit: F10-0/A/B, Not kaldırma,
+  F10-P 1–2, kart düzeltmeleri, docs) tek push'la origin/main'e; CI yeşil (39880989036), Vercel
+  READY (dpl_DnbC…), Railway API ~4 dk sonra paylaşım ucunu servis etti. **Canlı:** web seans yeni
+  deriyle (başlık bloğu, ✓/✗, dilimler, meta satırı "KOLAY · 5901 … MD. 3", yanlış cevapta lacivert
+  panel "Yanlış · doğru cevap E" + süre rozeti + açıklama); `/s/<id>` iniş sayfası (5395 md. 40)
+  cevapsız soru + kanca; `/.well-known/apple-app-site-association` JSON. Geçici hesap silindi.
+  **Notlar:** (1) API deploy'u Vercel'den sonra bittiği için ilk denenen id'nin sayfası 404 olarak
+  ISR'a yazıldı (`revalidate` 3600) — bir saat içinde kendini toplar; bundan sonra iniş sayfası
+  kontrolü API'nin canlı olduğu doğrulandıktan sonra yapılır. (2) Universal link uygulamada ancak
+  iOS AASA'yı çektikten sonra çalışır (yeniden kurulum ya da saatler); telefondaki dev client'ta
+  bağlantı ilk bir süre Safari'ye düşebilir. (3) Kartta "App Store ve Google Play'de" satırı
+  kullanıcı kararı; App Review 2.3.10 riski kullanıcıya söylendi. Kalan: web seans "Paylaş"
+  (adım 3), Android `assetlinks.json`, F10-C deneme modu.
