@@ -2,13 +2,14 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2, Timer } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
-import { Alert, Animated, Linking, Platform, Pressable, Share, View } from "react-native";
+import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
 import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
 import { examApi, examKeys, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
+import { buildShareCardData } from "@/features/quiz/share";
 import { reviewKeys } from "@/features/review/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { readLocal, writeLocal } from "@/lib/local-store";
@@ -360,12 +361,9 @@ export default function SeansScreen() {
     action?.();
   }
 
-  function shareQuestion() {
-    if (!question) return;
-    // Yalnız kök + şıklar; kaynak etiketi ve cevap PAYLAŞILMAZ (CLAUDE.md kuralı).
-    const lines = [question.stem, "", ...question.options.map((o) => `${o.label}) ${o.text}`), "", "paemisyon.com"];
-    void Share.share({ message: lines.join("\n") });
-  }
+  // Paylaşım kartı sayfası (F10-P): kök + şıklar; cevaplanmışsa isteğe bağlı cevap modu.
+  const [shareOpen, setShareOpen] = useState(false);
+
 
   function cycleScale() {
     const nextIdx = (scaleIdx + 1) % SCALES.length;
@@ -583,11 +581,15 @@ export default function SeansScreen() {
 
           {/* Seans menüsü (Figma S1b): paylaş · bildir · yazı boyu · vazgeç */}
           <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} onDismissed={onMenuDismissed} title="Seans">
-            <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(shareQuestion)} />
+            <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => setShareOpen(true))} />
             <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => { setReportState("idle"); setReportOpen(true); })} />
             <ListRow title="Yazı boyu" subtitle="Okuyucuyla ortak" leading={<ALargeSmall color={colors.ink} size={20} strokeWidth={1.75} />} trailing={<AppText variant="subhead" tone="accentInk">{SCALE_LABEL[scaleIdx]} ›</AppText>} chevron={false} onPress={cycleScale} divider={false} />
             <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
           </Sheet>
+
+          {question ? (
+            <ShareQuestionSheet visible={shareOpen} onClose={() => setShareOpen(false)} answered={Boolean(current?.fb)} build={(mode) => buildShareCardData(question, current?.fb ?? null, mode)} />
+          ) : null}
 
           {/* Hata bildir — turdan çıkmadan */}
           <Sheet visible={reportOpen} onClose={() => setReportOpen(false)} title="Soruyu bildir" footer={reportState === "done" || reportState === "already" ? <Button title="Kapat" variant="secondary" onPress={() => setReportOpen(false)} /> : <Button title="Gönder" onPress={() => void sendReport()} loading={reportState === "busy"} disabled={reportText.trim().length < 5} />}>

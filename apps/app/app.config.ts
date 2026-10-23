@@ -76,6 +76,8 @@ const config: ExpoConfig = {
     "expo-iap",
     ["expo-secure-store", { faceIDPermission: false }],
     "expo-dev-client",
+    // Paylaşım kartı (F10-P): görsel + metin birlikte sistem paylaşım sayfasına.
+    "react-native-share",
     "expo-apple-authentication",
     ...(googleIosUrlScheme
       ? [["@react-native-google-signin/google-signin", { iosUrlScheme: googleIosUrlScheme }] as [string, unknown]]

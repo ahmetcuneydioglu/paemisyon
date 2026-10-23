@@ -2,7 +2,8 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard } from "@/components/domain";
+import type { ShareCardData } from "@/features/quiz/share";
 import {
   ActionBar,
   AppText,
@@ -31,6 +32,22 @@ import { type TypeRole } from "@/theme/tokens";
  * her varyantıyla; açık/koyu geçişi üstte. Göz testi protokolü (00-plan §4) bu ekranda koşar.
  * Yalnız geliştirme derlemesinde Ben › Geliştirici'den açılır.
  */
+const paylasimOrnegi: ShareCardData = {
+  questionId: "00000000-0000-0000-0000-000000000000",
+  difficultyLabel: "Zor",
+  articleLabel: "PVSK · md. 4/A",
+  stem: "PVSK'ye göre durdurma için hangisi gereklidir?",
+  options: [
+    { label: "A", text: "Savcıdan yazılı izin" },
+    { label: "B", text: "Kesin suç delili" },
+    { label: "C", text: "Makul bir sebep" },
+    { label: "D", text: "Önceden verilmiş ihbar" },
+    { label: "E", text: "Mahkeme kararı" },
+  ],
+  answer: { correctLabel: "C", explanation: "Durdurma için makul bir sebep gerekir.", basis: "2559 sayılı PVSK md. 4/A" },
+  url: "https://paemisyon.com/s/ornek",
+};
+
 const seansAraclari = [
   { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
   { key: "coach" as const, label: "Koça sor", onPress: () => {} },
@@ -199,6 +216,14 @@ export default function GaleriScreen() {
             Araç satırı zemin üstünde
           </AppText>
           <ToolRow actions={seansAraclari} onPanel={false} />
+          <AppText variant="label" tone="subtle">
+            Paylaşım kartı (360×450, 3× yakalanır; temadan bağımsız)
+          </AppText>
+          <View style={{ width: 240, height: 300, overflow: "hidden", borderRadius: 10 }}>
+            <View style={{ width: 360, height: 450, transform: [{ translateX: -60 }, { translateY: -75 }, { scale: 240 / 360 }] }}>
+              <ShareQuestionCard data={paylasimOrnegi} />
+            </View>
+          </View>
         </Section>
 
         <Section title="Form, bildirim, boş durum">
