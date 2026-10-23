@@ -367,3 +367,19 @@ geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
   AASA/assetlinks ve Expo `/s/<id>` derin bağlantısı 2. adımla girer (uygulama rotası olmadan
   universal link soruyu kaybeder); Android imza parmak izi EAS'tan alınacak. Önceki adım: Not
   kaldırıldı + paylaş/bildir Sheet kapanış düzeltmesi (d9fae8e).
+- **F10-P (2) — 23 Eki 2026, 431a59c + 92fd5a2:** Expo `features/quiz/share.ts` (kart verisi:
+  zorluk, madde bağı hapı, kök, şıklar; cevaplı modda doğru harf + açıklamanın ilk cümlesi +
+  dayanak — hepsi turun geri bildiriminden; `paemisyon.com/s/<id>`; `captureRef` 1080×1350 →
+  `Share.open` görsel + metin), `domain/share-card.tsx` (temadan bağımsız, açık paletten sabit;
+  Figma 49:2233/49:2290; §5f sapmaları: `successInk`, sıkışık mod, kök ≤5 / şık ≤2 satır),
+  `domain/share-sheet.tsx` (pageSheet; önizleme = yakalanan görünüm 200/360; mod seçimi yalnız
+  cevaplanmışsa; Paylaş… / Bağlantıyı kopyala; düğmeler içeriği izler). Seans menüsü "Soruyu
+  paylaş" → sayfa. `app/s/[id].tsx`: universal link → tek soruluk alıştırma (`question:<uuid>`
+  yoluyla aynı); web `.well-known/apple-app-site-association` (3U4QPG9Q82, `/s/*`) :3012'de
+  JSON doğrulandı. Paketler `expo install` ile (view-shot 6.1.1, share 12.3.1, qrcode-svg
+  6.3.27, expo-clipboard 58); kilit node:22 docker'da (@emnapi yerinde). `react-native-share`
+  eklentisi seçeneksiz prebuild'i çökertiyordu → ios/android sorgu listesi verildi. Galeri örneği.
+  tsc 0, lint 0. **Telefon:** `pod install` + xcodebuild (ilk deneme eklenti yüzünden düştü,
+  ikincisi BUILD SUCCEEDED) → devicectl install + Metro :8082 bağlandı; paylaşım denemesi
+  kullanıcıda. Kalan: web seans "Paylaş" (adım 3), Android `assetlinks.json` (EAS imza parmak
+  izi), canlı AASA doğrulaması deploy sonrası.
