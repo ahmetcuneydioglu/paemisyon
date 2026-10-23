@@ -335,6 +335,27 @@ paylaş — Doğru şık işaretli, açıklamanın ilk cümlesi ve dayanak madde
 3. Web seans "Paylaş": aynı kartı DOM'da çizip `html-to-image` ile PNG + Web Share API; yoksa
    bağlantı kopyala.
 
+### 5f. Figma çizimi ve inceleme (23 Eki 2026)
+
+PaemisyonNew sayfa **"Paylaşım"** `49:2699`: Paylaşım kartı · Soru `49:2233`, · Cevaplı `49:2290`
+(1080×1350); Paylaş sayfası Koyu `49:2356` / Açık `49:2447`; Cevapsız Koyu `49:2538` / Açık
+`49:2619`. Ölçüler ve renkler promptla bire bir (kağıt kart 936×990, köşe 30, iç boşluk 48; kök Lora
+500 44/58; şık Inter 400 30/39, harf kutusu 48 `surfaceAlt`; defter çizgisi 1 px `line`; alt şerit
+Lora 600 36 + Inter 27; QR 162 beyaz kutu köşe 24; brand Lora 600 42 altın). Katmanlar token
+adıyla adlandırılmış. **Onay: kod bu çizime göre yazılır; dört sapma kodda uygulanır, Figma'ya
+geri yazılmaz:**
+1. **"Doğru" etiketi** `success` (#5F8A6B) `successSoft` üstünde 3,5:1 ve 26 px (≈9 pt mantıksal)
+   — kodda `successInk` (#3F6A4C). Onay ikonu kutusu `success` dolgu + beyaz ikon kalır (grafik).
+2. **Kısa soruda boş kart:** kağıt kart 990 px sabit; kısa kök + kısa şıklarda yarısı boş kalıyor.
+   Kodda tuval 4:5 sabit kalır ama kart içeriği dikeyde ortalanmaz; **uzun** soru için GYSROTA
+   kuralı: kök >180 karakter ya da şık >70 karakter → sıkışık mod (kök 38/50, şık 26/34, satır 84);
+   kök en çok 5, şık en çok 2 satır; taşan kart içinde kırpılır, alt şeride binmez.
+3. **Cevapsız sayfada** düğmeler alta sabitlenmiş, ortada boşluk kalıyor — kodda düğmeler içeriği
+   izler (ScrollView içinde), sabitlenmez; önizleme kart 200 px + açıklama metni yan yana.
+4. Önizleme kodda görsel değil, yakalanan görünümün kendisidir (ölçek 200/360).
+Madde hapı `accentInk` #8B5E23 / #F6E9D2 ≈ 5,5:1, zorluk hapı `inkSoft` / `surfaceAlt` ≈ 4,6:1 —
+geçer. Kart iki temada da aynı (panel laciverti + kağıt): kararla uyumlu.
+
 ### 5e. İlerleme
 
 - **F10-P (1) — 23 Eki 2026, 88eb135:** `public/soru-paylasim.ts` — `GET /public/questions/:id/share`
