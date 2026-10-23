@@ -412,3 +412,77 @@ export function ResultPanel({
     </section>
   );
 }
+
+/* ---------------------------------------------------------------- Optik form (deneme) */
+
+export type ExamCellState = "current" | "answered" | "flagged" | "blank";
+
+/**
+ * Optik form ızgarası (F10-C, Figma S6 dili; Expo `ExamGrid` ile aynı): mevcut altın halka,
+ * dolu `accent-soft`/`accent-ink`, bayraklı `warning-soft`/`warning-ink` + bayrak, boş
+ * `surface-alt`/`ink-soft`. Doğruluk sızmaz. Üstte tabular özet ve boş soru başına saniye.
+ */
+export function ExamGrid({
+  cells,
+  onSelect,
+  remainingSeconds,
+  columns = "grid-cols-6 lg:grid-cols-5 xl:grid-cols-6",
+}: {
+  cells: { label: string; state: ExamCellState }[];
+  onSelect: (index: number) => void;
+  remainingSeconds?: number | null;
+  columns?: string;
+}) {
+  const answered = cells.filter((c) => c.state === "answered").length;
+  const flagged = cells.filter((c) => c.state === "flagged").length;
+  const blank = cells.length - answered - flagged;
+  const pace =
+    remainingSeconds != null && blank > 0
+      ? Math.max(1, Math.floor(remainingSeconds / blank))
+      : null;
+  return (
+    <div className="flex flex-col gap-3">
+      <p className="type-body-sm tabular flex flex-wrap items-baseline gap-x-2 text-ink-soft">
+        <span className="type-subhead text-ink">
+          {answered}/{cells.length} dolu
+        </span>
+        <span>
+          · ⚑ {flagged} · {blank} boş
+          {pace != null ? ` · boş soru başına ~${pace} sn` : ""}
+        </span>
+      </p>
+      <div className={cn("grid gap-2", columns)}>
+        {cells.map((c, i) => (
+          <button
+            key={c.label}
+            type="button"
+            onClick={() => onSelect(i)}
+            aria-label={`Soru ${c.label}${c.state === "answered" ? ", cevaplı" : c.state === "flagged" ? ", bayraklı" : ", boş"}${c.state === "current" ? ", şu an" : ""}`}
+            aria-current={c.state === "current" ? "true" : undefined}
+            className={cn(
+              "tk-interactive type-subhead tabular relative grid aspect-square min-h-11 place-items-center rounded-control",
+              c.state === "current" && "ring-[1.5px] ring-accent",
+              c.state === "answered"
+                ? "bg-accent-soft text-accent-ink"
+                : c.state === "flagged"
+                  ? "bg-warning-soft text-warning-ink"
+                  : c.state === "current"
+                    ? "bg-surface-alt text-ink"
+                    : "bg-surface-alt text-ink-soft",
+            )}
+          >
+            {c.label}
+            {c.state === "flagged" ? (
+              <Flag
+                size={10}
+                strokeWidth={2}
+                className="absolute top-1 right-1 fill-current"
+                aria-hidden
+              />
+            ) : null}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}

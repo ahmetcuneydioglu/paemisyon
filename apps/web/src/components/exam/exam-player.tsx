@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronLeft, ChevronRight, Flag } from "lucide-react";
+import { ChevronLeft, ChevronRight, Flag, Grid3x3, Timer } from "lucide-react";
 import { apiClient, ApiClientError } from "@/lib/api-client";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,12 @@ import { KeyHint } from "@/components/ui/key-hint";
 import { Notice } from "@/components/ui/notice";
 import { QuestionOption, QuestionStem } from "@/components/ui/question";
 import { FocusFrame } from "@/components/shell/focus-frame";
+import {
+  ExamGrid,
+  SessionTitleBlock,
+  type ExamCellState,
+  type SliceState,
+} from "@/components/session/seans-kit";
 
 export interface StartPayload {
   sessionId: string;
@@ -87,6 +93,7 @@ export function ExamPlayer({
       ),
   );
   const [finishOpen, setFinishOpen] = useState(false);
+  const [gridOpen, setGridOpen] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number | null>(null);
   const finishingRef = useRef(false);
@@ -273,47 +280,38 @@ export function ExamPlayer({
   }, [timeLeft]);
   const lowTime = timeLeft !== null && timeLeft <= 10 * 60_000;
 
+  const cells = start.questions.map((item, i) => ({
+    label: String(item.order),
+    state: (i === index
+      ? "current"
+      : flags.has(item.questionId)
+        ? "flagged"
+        : answers[item.questionId]
+          ? "answered"
+          : "blank") as ExamCellState,
+  }));
+  const slices: SliceState[] = start.questions.map((item, i) =>
+    i === index
+      ? "current"
+      : flags.has(item.questionId)
+        ? "flagged"
+        : answers[item.questionId]
+          ? "answered"
+          : "future",
+  );
+  const remainingSeconds =
+    timeLeft == null ? null : Math.floor(timeLeft / 1000);
+  const gridLabel = `${answeredCount}/${total} · ⚑ ${flaggedCount}`;
+
   const optik = (
     <div className="flex flex-col gap-3">
-      <Card className="flex flex-col gap-2">
+      <Card className="flex flex-col gap-3">
         <span className="type-label text-ink-subtle">Optik form</span>
-        <div className="grid grid-cols-8 gap-1.5 lg:grid-cols-6 xl:grid-cols-8">
-          {start.questions.map((item, i) => {
-            const filled = !!answers[item.questionId];
-            const flagged = flags.has(item.questionId);
-            return (
-              <button
-                key={item.questionId}
-                type="button"
-                onClick={() => setIndex(i)}
-                aria-label={`Soru ${item.order}${filled ? ", dolu" : ", boş"}${flagged ? ", bayraklı" : ""}`}
-                aria-current={i === index ? "true" : undefined}
-                className={cn(
-                  "tk-interactive grid aspect-square cursor-pointer place-items-center rounded-control text-[11px] font-semibold",
-                  i === index && "ring-2 ring-accent",
-                  flagged
-                    ? "bg-warning-soft text-warning-ink"
-                    : filled
-                      ? "bg-accent-soft text-accent-ink"
-                      : "bg-surface-alt text-ink-soft",
-                )}
-              >
-                {item.order}
-              </button>
-            );
-          })}
-        </div>
-        <p className="type-body-sm tabular text-ink-soft">
-          dolu {answeredCount} · bayraklı {flaggedCount} · boş{" "}
-          {total - answeredCount}
-        </p>
-        {timeLeft !== null && total - answeredCount > 0 && (
-          <p className="type-body-sm tabular text-ink-subtle">
-            kalan öneri: boş soru başına ~
-            {Math.max(1, Math.floor(timeLeft / 1000 / (total - answeredCount)))}{" "}
-            sn
-          </p>
-        )}
+        <ExamGrid
+          cells={cells}
+          onSelect={(i) => setIndex(i)}
+          remainingSeconds={remainingSeconds}
+        />
       </Card>
       <Button
         variant="destructive"
@@ -342,10 +340,11 @@ export function ExamPlayer({
           role="timer"
           aria-label="Kalan süre"
           className={cn(
-            "rounded-pill px-3 py-1 text-[15px]",
-            lowTime ? "bg-warning-soft text-warning-ink" : "text-ink",
+            "inline-flex items-center gap-1.5 rounded-pill px-3 py-1 text-[15px]",
+            lowTime ? "bg-danger-soft text-danger-ink" : "text-ink",
           )}
         >
+          <Timer size={16} strokeWidth={1.75} aria-hidden />
           {timeText}
         </span>
       }
@@ -354,18 +353,32 @@ export function ExamPlayer({
       asideLabel="Optik form"
     >
       <div className="flex flex-col gap-5">
-        <QuestionStem index={q.order} total={total} stem={q.stem} />
-        {q.mediaUrl && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={q.mediaUrl}
-            alt="Soru görseli"
-            className="max-h-72 rounded-card border border-line"
+        <SessionTitleBlock
+          title={start.title}
+          index={q.order}
+          total={total}
+          sub="Deneme modu"
+          slices={slices}
+        />
+        <div className="flex flex-col gap-3">
+          <QuestionStem
+            index={q.order}
+            total={total}
+            stem={q.stem}
+            counter={false}
           />
-        )}
+          {q.mediaUrl && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={q.mediaUrl}
+              alt="Soru görseli"
+              className="max-h-72 rounded-card border border-line"
+            />
+          )}
+        </div>
 
         <div
-          className="flex flex-col gap-2"
+          className="flex flex-col gap-2.5"
           role="radiogroup"
           aria-label={`Soru ${q.order}`}
         >
@@ -387,32 +400,90 @@ export function ExamPlayer({
           </Notice>
         )}
 
-        <div className="flex items-center justify-between gap-3">
-          <Button
-            variant="secondary"
-            leadingIcon={<ChevronLeft size={18} aria-hidden />}
+        {/* Yapışkan alt çubuk (Figma S6): Önceki · Bayrak · optik hapı · Sonraki */}
+        <div className="sticky bottom-0 -mx-4 flex items-center gap-2 border-t border-line bg-bg px-4 py-3 md:-mx-6 md:px-6">
+          <button
+            type="button"
             onClick={() => setIndex((i) => Math.max(0, i - 1))}
             disabled={index === 0}
+            aria-label="Önceki soru"
+            className="tk-interactive type-subhead inline-flex h-11 items-center gap-1 rounded-control px-2 text-ink-soft hover:bg-surface-alt disabled:opacity-40"
           >
-            Önceki
-          </Button>
-          <Button
-            variant={flags.has(q.questionId) ? "primary" : "ghost"}
+            <ChevronLeft size={18} strokeWidth={1.75} aria-hidden /> Önceki
+          </button>
+          <button
+            type="button"
             onClick={() => toggleFlag(q.questionId)}
             aria-pressed={flags.has(q.questionId)}
-            leadingIcon={<Flag size={18} aria-hidden />}
+            aria-label={
+              flags.has(q.questionId)
+                ? "Bayrağı kaldır"
+                : "Emin değilim, bayrakla"
+            }
+            className={cn(
+              "tk-interactive inline-flex h-11 flex-col items-center justify-center rounded-control px-2 text-[12px] leading-4",
+              flags.has(q.questionId)
+                ? "text-accent-ink"
+                : "text-ink-soft hover:bg-surface-alt",
+            )}
           >
-            Emin değilim <KeyHint keys="F" />
-          </Button>
-          <Button
-            variant="secondary"
+            <Flag
+              size={18}
+              strokeWidth={1.75}
+              className={flags.has(q.questionId) ? "fill-current" : undefined}
+              aria-hidden
+            />
+            Bayrak <KeyHint keys="F" />
+          </button>
+          <button
+            type="button"
+            onClick={() => setGridOpen(true)}
+            aria-label={`Optik form, ${gridLabel}`}
+            className="tk-interactive type-subhead tabular inline-flex h-11 flex-1 items-center justify-center gap-1.5 rounded-pill bg-surface-alt px-3 text-ink lg:pointer-events-none"
+          >
+            <Grid3x3 size={16} strokeWidth={1.75} aria-hidden /> {gridLabel}
+          </button>
+          <button
+            type="button"
             onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
             disabled={index === total - 1}
+            aria-label="Sonraki soru"
+            className="tk-interactive type-subhead inline-flex h-11 items-center gap-1 rounded-control px-2 text-accent-ink hover:bg-accent-soft disabled:opacity-40"
           >
-            Sonraki <ChevronRight size={18} aria-hidden />
-          </Button>
+            Sonraki <ChevronRight size={18} strokeWidth={1.75} aria-hidden />
+          </button>
         </div>
       </div>
+
+      {/* Dar ekranda optik form diyaloğu (yan panel lg altında gizli) */}
+      <Dialog
+        open={gridOpen}
+        onClose={() => setGridOpen(false)}
+        title="Optik form"
+        size="md"
+        footer={
+          <Button
+            variant="destructive"
+            className="w-full"
+            onClick={() => {
+              setGridOpen(false);
+              setFinishOpen(true);
+            }}
+          >
+            Sınavı bitir
+          </Button>
+        }
+      >
+        <ExamGrid
+          cells={cells}
+          onSelect={(i) => {
+            setIndex(i);
+            setGridOpen(false);
+          }}
+          remainingSeconds={remainingSeconds}
+          columns="grid-cols-6"
+        />
+      </Dialog>
 
       <Dialog
         open={finishOpen}
