@@ -4,7 +4,6 @@ import { Clock, Flag } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
 import type { AttemptResult, MyAttempt } from "@/lib/types";
 import { cn } from "@/lib/cn";
-import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,6 +11,8 @@ import { DataTable } from "@/components/ui/data-table";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ReviewList } from "@/components/review-list";
 import { TimingStrip } from "@/components/exam/timing-strip";
+import { CoachLine } from "@/components/rooms/coach-line";
+import { ResultPanel } from "@/components/session/seans-kit";
 
 export const metadata: Metadata = {
   title: "Sınav Sonucu",
@@ -95,63 +96,46 @@ export default async function SonucPage({
       <div className="grid items-start gap-4 lg:grid-cols-[1fr_1.4fr]">
         {/* Sol: skor + koç + eylemler — uzun tabloya eşlik etsin diye yapışkan */}
         <div className="flex flex-col gap-4 lg:sticky lg:top-20">
-          <Card className="flex flex-col items-center gap-1 p-6 text-center">
-            <span className="type-label text-ink-subtle">
-              {result.exam.title}
-              {minutes ? ` · ${minutes} dk` : ""}
-            </span>
-            <p className="type-display tabular text-ink">
-              {result.score != null ? fmt(result.score) : "—"}
-            </p>
-            <span className="type-label text-ink-subtle">
-              NET (doğru − yanlış/4)
-            </span>
-            {delta != null ? (
-              <Badge
-                tone={delta > 0 ? "success" : delta < 0 ? "warning" : "neutral"}
-              >
-                geçen denemeden {delta > 0 ? "+" : ""}
-                {fmt(delta)} net
-              </Badge>
-            ) : null}
-            {myIndex === 0 ? (
-              <span className="type-body-sm text-ink-subtle">
-                ilk denemen — kıyas çizgin buradan başlıyor
-              </span>
-            ) : null}
-            <div className="mt-3 grid w-full grid-cols-3 gap-2">
-              {[
-                [
-                  "doğru",
-                  result.correctCount,
-                  "bg-success-soft text-success-ink",
-                ],
-                ["yanlış", result.wrongCount, "bg-danger-soft text-danger-ink"],
-                ["boş", result.blankCount, "bg-surface-alt text-ink"],
-              ].map(([k, v, cls]) => (
-                <div
-                  key={String(k)}
-                  className={cn(
-                    "flex flex-col rounded-control py-2",
-                    String(cls),
-                  )}
-                >
-                  <span className="type-stat tabular">{v}</span>
-                  <span className="type-body-sm">{k}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
+          <ResultPanel
+            label={result.isArchive ? "Arşiv denemesi" : "Deneme sonucu"}
+            hero={
+              result.score == null
+                ? "—"
+                : result.isArchive
+                  ? `%${Math.round(result.score)}`
+                  : fmt(result.score).replace(".", ",")
+            }
+            correct={result.correctCount}
+            total={result.totalQuestions}
+            pct={null}
+            durationLabel={null}
+            sub={`${result.isArchive ? "doğruluk" : "net"} · D ${result.correctCount} · Y ${result.wrongCount} · B ${result.blankCount}${minutes ? ` · ${minutes} dk` : ""}`}
+          />
+          <p
+            className={cn(
+              "type-body-sm",
+              delta == null
+                ? "text-ink-soft"
+                : delta >= 0
+                  ? "text-success-ink"
+                  : "text-danger-ink",
+            )}
+          >
+            {delta != null
+              ? `Geçen denemeden ${delta > 0 ? "+" : ""}${fmt(delta).replace(".", ",")} net`
+              : myIndex === 0
+                ? "İlk denemen — kıyas çizgin buradan başlıyor."
+                : `${result.totalQuestions} soru`}
+          </p>
 
           {losers.length > 0 ? (
-            <Card className="flex flex-col gap-1 border-accent/40">
-              <span className="type-label text-accent-ink">Koç</span>
-              <p className="type-body text-ink">
-                {lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
+            <CoachLine
+              text={
+                lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
                   ? `Kaybının %${Math.round((lostInTop3 / lostTotal) * 100)}'i ${losers.length} konudan — sıralamaya değil şu tabloya bak, hepsi kapatılabilir.`
-                  : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma turu hazır."}
-              </p>
-            </Card>
+                  : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma turu hazır."
+              }
+            />
           ) : null}
 
           {flagged.length > 0 ? (

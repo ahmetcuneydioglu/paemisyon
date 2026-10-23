@@ -382,31 +382,38 @@ export function FeedbackPanel({
 /* ---------------------------------------------------------------- Sonuç paneli */
 
 /** Tur sonu paneli: etiket, Lora hero "8/10", "Doğruluk %80 · 4 dk 12 sn". */
+/** `hero`/`sub` verilirse rakam ve alt satır onlardan gelir (deneme sonucu: net "18,25" · "D 32 · Y 5 · B 3"). */
 export function ResultPanel({
   correct,
   total,
   pct,
   durationLabel,
   label = "Tur tamamlandı",
+  hero,
+  sub: subOverride,
 }: {
   correct: number;
   total: number;
   pct: number | null;
   durationLabel: string | null;
   label?: string;
+  hero?: string;
+  sub?: string;
 }) {
-  const sub = [pct == null ? null : `Doğruluk %${pct}`, durationLabel]
-    .filter(Boolean)
-    .join(" · ");
+  const sub =
+    subOverride ??
+    [pct == null ? null : `Doğruluk %${pct}`, durationLabel]
+      .filter(Boolean)
+      .join(" · ");
   return (
     <section
-      aria-label={`${label}: ${total} soruda ${correct} doğru${sub ? `, ${sub}` : ""}`}
+      aria-label={`${label}: ${hero ?? `${total} soruda ${correct} doğru`}${sub ? `, ${sub}` : ""}`}
       className="theme-dark flex flex-col gap-1 rounded-panel bg-panel px-5 pt-3 pb-5 text-panel-ink"
     >
       <span className="type-label text-panel-soft">{label}</span>
       {/* Eğik çizgi alt satıra taşmasın: satır 1,04 × boy (Figma kusuru 3). */}
       <p className="tabular font-display text-[clamp(64px,14vw,96px)] leading-[1.04] font-medium tracking-[-0.03em]">
-        {correct}/{total}
+        {hero ?? `${correct}/${total}`}
       </p>
       {sub ? <p className="type-subhead text-panel-soft">{sub}</p> : null}
     </section>
