@@ -4,7 +4,7 @@ import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2, Timer } from "lucide
 import { useEffect, useRef, useState } from "react";
 import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { ExamGrid, FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
 import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
 import { examApi, examKeys, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
@@ -42,7 +42,7 @@ export default function SeansScreen() {
   const router = useRouter();
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
-  const { colors, space, radius } = useTheme();
+  const { colors, space } = useTheme();
   const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; questionId?: string; title?: string }>();
   const [premiumGate, setPremiumGate] = useState(false);
   const [queuedNote, setQueuedNote] = useState(false);
@@ -638,25 +638,13 @@ export default function SeansScreen() {
           ) : null}
 
           {isExam && session ? (
-            <Sheet visible={gridOpen} onClose={() => setGridOpen(false)} title="Optik form">
-              <AppText variant="bodySm" tone="soft">
-                {answeredCount}/{total} dolu
-                {remaining != null && total - answeredCount > 0 ? ` · boş soru başına ~${Math.floor(remaining / (total - answeredCount))} sn` : ""}
-              </AppText>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {session.questions.map((q, i) => {
-                  const filled = Boolean(answers[q.questionId]);
-                  const flagged = flags.has(q.questionId);
-                  return (
-                    <Pressable key={q.questionId} accessibilityRole="button" accessibilityLabel={`Soru ${i + 1}${filled ? ", cevaplı" : ", boş"}${flagged ? ", bayraklı" : ""}`} onPress={() => go(i)} style={{ width: 48, height: 44, borderRadius: radius.control, backgroundColor: flagged ? colors.warningSoft : filled ? colors.accentSoft : colors.surface, borderWidth: 1, borderColor: i === index ? colors.accent : colors.line, alignItems: "center", justifyContent: "center" }}>
-                      <AppText variant="subhead" style={{ color: flagged ? colors.warningInk : filled ? colors.accentInk : colors.ink }}>
-                        {i + 1}
-                      </AppText>
-                    </Pressable>
-                  );
-                })}
-              </View>
-              <Button title="Testi bitir" variant="secondary" onPress={() => { setGridOpen(false); void finishExam(); }} />
+            <Sheet visible={gridOpen} onClose={() => setGridOpen(false)} title="Optik form" footer={<Button title="Testi bitir" variant="secondary" onPress={() => { setGridOpen(false); void finishExam(); }} />}>
+              {/* Mevcut soru cevaplıysa da "şu an" halkası önce gelir; bayrak dolu/boş'tan önce. */}
+              <ExamGrid
+                cells={session.questions.map((q) => ({ state: q.questionId === question?.questionId ? "current" : flags.has(q.questionId) ? "flagged" : answers[q.questionId] ? "answered" : "blank" }))}
+                onSelect={go}
+                remainingSeconds={remaining}
+              />
             </Sheet>
           ) : null}
         </>

@@ -2,8 +2,8 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { Flag, Star, StarOff } from "lucide-react-native";
 import { useMemo, useState } from "react";
 import { Pressable, TextInput, View } from "react-native";
-import { QuestionOption, type OptionState } from "@/components/domain";
-import { AppText, Badge, Button, Card, IconButton, ListRow, Notice, Screen, SectionHeader, Sheet, Skeleton, StatTile } from "@/components/ui";
+import { QuestionOption, ResultPanel, type OptionState } from "@/components/domain";
+import { AppText, Badge, Button, Card, IconButton, Notice, Screen, SectionHeader, Sheet, Skeleton } from "@/components/ui";
 import { mmss, useAttempt, useMyAttempts, useReportQuestion } from "@/features/exams/queries";
 import { useBookmarks, useSetBookmark } from "@/features/review/queries";
 import { ApiError } from "@/lib/api";
@@ -65,56 +65,51 @@ export default function DenemeSonucScreen() {
           </Notice>
         ) : d ? (
           <>
-            <AppText variant="label" tone="accentInk">
-              {d.isArchive ? "Arşiv denemesi" : "Deneme sonucu"}
-            </AppText>
-            <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2 }}>
-              <AppText variant="display" tone="accent">
-                {d.score == null ? "—" : d.isArchive ? `%${Math.round(d.score)}` : d.score.toFixed(2)}
-              </AppText>
-              <AppText variant="heading">{d.isArchive ? "doğruluk" : "net"}</AppText>
-            </View>
-            {delta != null ? (
-              <AppText variant="bodySm" tone={delta >= 0 ? "success" : "danger"}>
-                Geçen denemeden {delta >= 0 ? "+" : ""}
-                {delta.toFixed(2)} net
-              </AppText>
-            ) : !d.isArchive ? (
-              <AppText variant="bodySm" tone="soft">
-                İlk canlı denemen; karşılaştırma bir sonrakinde.
-              </AppText>
-            ) : null}
-            <View style={{ flexDirection: "row", gap: space.s3 }}>
-              <StatTile label="Doğru" value={d.correctCount} tone="success" emphasis />
-              <StatTile label="Yanlış" value={d.wrongCount} tone="danger" />
-              <StatTile label="Boş" value={d.blankCount} />
-            </View>
-            <AppText variant="bodySm" tone="soft">
-              {d.totalQuestions} soru{d.durationSeconds != null ? ` · süre ${mmss(d.durationSeconds)}` : ""}{d.completedAt ? ` · ${new Date(d.completedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long" })}` : ""}
+            <ResultPanel
+              label={d.isArchive ? "Arşiv denemesi" : "Deneme sonucu"}
+              hero={d.score == null ? "—" : d.isArchive ? `%${Math.round(d.score)}` : d.score.toFixed(2).replace(".", ",")}
+              correct={d.correctCount}
+              total={d.totalQuestions}
+              pct={null}
+              durationLabel={null}
+              sub={`${d.isArchive ? "doğruluk" : "net"} · D ${d.correctCount} · Y ${d.wrongCount} · B ${d.blankCount}${d.durationSeconds != null ? ` · ${mmss(d.durationSeconds)}` : ""}`}
+            />
+            <AppText variant="bodySm" tone={delta == null ? "soft" : delta >= 0 ? "success" : "danger"}>
+              {delta != null ? `Geçen denemeden ${delta >= 0 ? "+" : ""}${delta.toFixed(2).replace(".", ",")} net` : d.isArchive ? `${d.totalQuestions} soru` : "İlk canlı denemen; karşılaştırma bir sonrakinde."}
+              {d.completedAt ? ` · ${new Date(d.completedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long" })}` : ""}
             </AppText>
             {!d.isArchive ? <Button title="Sıralama" variant="secondary" onPress={() => router.push({ pathname: "/(tabs)/denemeler/siralama/[examId]", params: { examId: d.exam.id, title: d.exam.title } })} /> : null}
 
             {lost.length > 0 ? (
-              <View style={{ gap: space.s2 }}>
-                <SectionHeader title="Kaybettiren konular" />
-                <Card style={{ paddingVertical: 0 }}>
-                  {lost.slice(0, 6).map((t, i) => (
-                    <ListRow
-                      key={t.topicId}
-                      title={t.topicName}
-                      subtitle={`Y ${t.wrong} · B ${t.blank} · ${t.total} soru · −${t.lost.toFixed(2)} net`}
-                      divider={i < Math.min(lost.length, 6) - 1}
-                      chevron={false}
-                      trailing={
-                        <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })} hitSlop={8}>
-                          <AppText variant="subhead" tone="accentInk">
-                            Kapat ›
-                          </AppText>
-                        </Pressable>
-                      }
-                    />
-                  ))}
-                </Card>
+              <View style={{ gap: space.s1 }}>
+                <AppText variant="label" tone="subtle">
+                  Kaybettiren konular
+                </AppText>
+                {/* İnce çizgili satırlar (S5 dili): konu + Y/B + −net; "Kapat ›" kapatma turunu başlatır. */}
+                {lost.slice(0, 6).map((t, i) => (
+                  <Pressable
+                    key={t.topicId}
+                    accessibilityRole="button"
+                    accessibilityLabel={`${t.topicName}: ${t.wrong} yanlış, ${t.blank} boş, ${t.lost.toFixed(2)} net kayıp. Kapatma turu başlat`}
+                    onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })}
+                    style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingVertical: space.s3, borderBottomWidth: i < Math.min(lost.length, 6) - 1 ? 1 : 0, borderBottomColor: colors.line, minHeight: 56 }}
+                  >
+                    <View style={{ flex: 1, gap: 2 }}>
+                      <AppText variant="body" numberOfLines={2}>
+                        {t.topicName}
+                      </AppText>
+                      <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+                        Y {t.wrong} · B {t.blank} · {t.total} soru
+                      </AppText>
+                    </View>
+                    <AppText variant="subhead" tone="danger" style={{ fontVariant: ["tabular-nums"] }}>
+                      −{t.lost.toFixed(2).replace(".", ",")}
+                    </AppText>
+                    <AppText variant="subhead" tone="accentInk">
+                      Kapat ›
+                    </AppText>
+                  </Pressable>
+                ))}
               </View>
             ) : null}
 

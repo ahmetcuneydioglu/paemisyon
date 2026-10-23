@@ -411,26 +411,101 @@ export function SessionBar(props: SessionBarProps & { bottomInset: number }) {
 /* ---------------------------------------------------------------- Sonuç paneli */
 
 /** Tur sonu paneli (Figma SonuçPaneli): etiket, Lora hero "8/10", "Doğruluk %80 · 4 dk 12 sn". */
-export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur tamamlandı" }: { correct: number; total: number; pct: number | null; durationLabel: string | null; label?: string }) {
+/** `hero`/`sub` verilirse rakam ve alt satır onlardan gelir (deneme sonucu: net "18,25" · "D 32 · Y 5 · B 3"). */
+export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur tamamlandı", hero, sub: subOverride }: { correct: number; total: number; pct: number | null; durationLabel: string | null; label?: string; hero?: string; sub?: string }) {
   const { colors, radius, space, type } = useTheme();
   const { width } = useWindowDimensions();
   const heroSize = width < COMPACT_WIDTH ? 80 : 96;
   // Lora'nın eğik çizgisi alt satıra taşmasın: satır 1,04 × boy (CountdownHero kuralı; Figma kusuru 3).
   const heroLine = Math.round(heroSize * 1.04);
-  const sub = [pct == null ? null : `Doğruluk %${pct}`, durationLabel].filter(Boolean).join(" · ");
+  const sub = subOverride ?? [pct == null ? null : `Doğruluk %${pct}`, durationLabel].filter(Boolean).join(" · ");
   return (
-    <View accessible accessibilityLabel={`${label}: ${total} soruda ${correct} doğru${sub ? `, ${sub}` : ""}`} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, paddingHorizontal: space.s4, paddingTop: space.s3, paddingBottom: space.s4, gap: space.s1 }}>
+    <View accessible accessibilityLabel={`${label}: ${hero ?? `${total} soruda ${correct} doğru`}${sub ? `, ${sub}` : ""}`} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, paddingHorizontal: space.s4, paddingTop: space.s3, paddingBottom: space.s4, gap: space.s1 }}>
       <AppText variant="label" tone="panelSoft">
         {label}
       </AppText>
       <AppText variant="hero" tone="panelInk" maxFontSizeMultiplier={1} style={{ fontFamily: fontFamily.display[500], fontSize: heroSize, lineHeight: heroLine }}>
-        {correct}/{total}
+        {hero ?? `${correct}/${total}`}
       </AppText>
       {sub ? (
         <AppText variant="subhead" tone="panelSoft" style={[type.subhead, { fontSize: 15 }]}>
           {sub}
         </AppText>
       ) : null}
+    </View>
+  );
+}
+
+/* ---------------------------------------------------------------- Optik form (deneme) */
+
+export type ExamCellState = "current" | "answered" | "flagged" | "blank";
+
+/**
+ * Optik form ızgarası (F10-C, Figma S6 dili): hücre 44 pt, altı sütun; mevcut altın halka,
+ * dolu `accentSoft`/`accentInk`, bayraklı `warningSoft`/`warningInk` + bayrak, boş
+ * `surfaceAlt`/`inkSoft`. Doğruluk SIZMAZ (deneme sürüyor). Üstte tabular özet ve kalan süreye
+ * göre boş soru başına saniye; altta isteğe bağlı "Testi bitir".
+ */
+export function ExamGrid({
+  cells,
+  onSelect,
+  remainingSeconds,
+}: {
+  cells: { state: ExamCellState }[];
+  onSelect: (index: number) => void;
+  remainingSeconds?: number | null;
+}) {
+  const { colors, radius, space } = useTheme();
+  const answered = cells.filter((c) => c.state === "answered").length;
+  const flagged = cells.filter((c) => c.state === "flagged").length;
+  const blank = cells.length - answered - flagged;
+  const pace = remainingSeconds != null && blank > 0 ? Math.max(1, Math.floor(remainingSeconds / blank)) : null;
+  return (
+    <View style={{ gap: space.s3 }}>
+      <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2, flexWrap: "wrap" }}>
+        <AppText variant="subhead" style={{ fontVariant: ["tabular-nums"] }}>
+          {answered}/{cells.length} dolu
+        </AppText>
+        <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+          · ⚑ {flagged} · {blank} boş{pace != null ? ` · boş soru başına ~${pace} sn` : ""}
+        </AppText>
+      </View>
+      <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+        {cells.map((c, i) => {
+          const bg = c.state === "answered" ? colors.accentSoft : c.state === "flagged" ? colors.warningSoft : colors.surfaceAlt;
+          const fg = c.state === "answered" ? colors.accentInk : c.state === "flagged" ? colors.warningInk : c.state === "current" ? colors.ink : colors.inkSoft;
+          const label = `Soru ${i + 1}${c.state === "answered" ? ", cevaplı" : c.state === "flagged" ? ", bayraklı" : ", boş"}${c.state === "current" ? ", şu an" : ""}`;
+          return (
+            <Pressable
+              key={i}
+              accessibilityRole="button"
+              accessibilityLabel={label}
+              accessibilityState={{ selected: c.state === "current" }}
+              onPress={() => onSelect(i)}
+              style={({ pressed }) => ({
+                width: 44,
+                height: 44,
+                borderRadius: radius.control,
+                backgroundColor: bg,
+                borderWidth: c.state === "current" ? 1.5 : 0,
+                borderColor: colors.accent,
+                alignItems: "center",
+                justifyContent: "center",
+                opacity: pressed ? 0.8 : 1,
+              })}
+            >
+              <AppText variant="subhead" style={{ color: fg, fontVariant: ["tabular-nums"] }}>
+                {i + 1}
+              </AppText>
+              {c.state === "flagged" ? (
+                <View style={{ position: "absolute", top: 4, right: 4 }}>
+                  <Flag color={colors.warningInk} size={10} strokeWidth={2} fill={colors.warningInk} />
+                </View>
+              ) : null}
+            </Pressable>
+          );
+        })}
+      </View>
     </View>
   );
 }
