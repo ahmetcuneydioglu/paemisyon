@@ -1,243 +1,121 @@
 import Link from "next/link";
-import type { ExamListItem, MyAttempt } from "@/lib/types";
-import type { MeDashboard } from "@/lib/public-api";
-import { ArrowRight, Zap } from "lucide-react";
-import { PremiumBadge } from "@/components/ui/premium-badge";
+import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
+import type { ExamListItem } from "@/lib/types";
+import type { CikmisSinavOzet, MeDashboard } from "@/lib/public-api";
+import { groupExams, fmtNet } from "@/lib/exam-ui";
 import { personalExamState } from "@/lib/personal-exam";
+import { formatDate } from "@/lib/format";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
-import { DataTable } from "@/components/ui/data-table";
+import { EmptyState } from "@/components/ui/empty-state";
+import { ListRow } from "@/components/ui/list-row";
 import { SectionHeader } from "@/components/ui/section-header";
+import { PremiumBadge } from "@/components/ui/premium-badge";
 import { CoachRail } from "@/components/shell/coach-rail";
-import { Countdown } from "@/components/countdown";
-import { formatDate, formatTime } from "@/lib/format";
+import { ExamCard } from "./exam-card";
+import { ExamHero } from "./exam-hero";
 
 /**
- * Deneme merkezi — girişli derinlik (Doc 27 §3.8, wireframe eşleniği):
- * canlı/sıradaki deneme hero'su + takvim + gelişim çizgim. Koç rayı L2 gereği sağda.
+ * Deneme merkezi (Doc 50 M1 / W1): tek sayfa, dört grup.
+ * Hero (devam eden > sıradaki haftalık > sakin) · Denemeler (serbest) · Haftalık
+ * deneme · Bana özel · Çıkmış sınavlar. Koç rayı L2 gereği sağda; 768'de alta iner.
  */
 export function ExamCenter({
   exams,
-  attempts,
   dashboard = null,
+  reminding = false,
+  pastExams = [],
+  lastPersonal = null,
 }: {
   exams: ExamListItem[];
-  attempts: MyAttempt[];
   /** Kişisel deneme hakkı (Doc 46); çekilemediyse kart kısıtsız çizilir. */
   dashboard?: MeDashboard | null;
+  reminding?: boolean;
+  pastExams?: CikmisSinavOzet[];
+  lastPersonal?: { attemptId: string; score: number | null; completedAt: string | null } | null;
 }) {
-  const active = exams.find((e) => e.state === "active");
-  const upcoming = [...exams]
-    .filter((e) => e.state === "upcoming")
-    .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt));
-  const next = upcoming[0];
-  const past = [...exams]
-    .filter((e) => e.state === "ended")
-    .sort((a, b) => +new Date(b.startAt) - +new Date(a.startAt));
-  const myCompleted = attempts
-    .filter((a) => a.status === "completed" && a.score != null)
-    .sort((a, b) => +new Date(a.startedAt) - +new Date(b.startedAt));
-  const maxScore = myCompleted.reduce(
-    (m, a) => Math.max(m, Number(a.score)),
-    0,
-  );
+  const { serbest, haftalik } = groupExams(exams);
 
   return (
-    <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
-      <div className="min-w-0 flex-1">
-        <h1 className="type-title mb-5 text-ink">Denemeler</h1>
+    <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-6 md:px-6 lg:flex-row">
+      <div className="flex min-w-0 flex-1 flex-col gap-7">
+        <header className="flex flex-col gap-1">
+          <span className="type-subhead text-ink-subtle">PAEM hazırlığı</span>
+          <h1 className="type-title text-ink">Denemeler</h1>
+        </header>
 
-        {/* Hero: canlı > sıradaki > sakin boşluk */}
-        {active ? (
-          <Card className="mb-5 flex flex-col gap-1 border-success/40 p-6">
-            <span className="type-label inline-flex items-center gap-1.5 text-success-ink">
-              <span
-                aria-hidden
-                className="inline-block size-2 rounded-full bg-success motion-safe:animate-pulse"
-              />
-              Canlı — şu an devam ediyor
-            </span>
-            <p className="type-heading text-ink">{active.title}</p>
-            <p className="type-body-sm text-ink-soft">
-              {active.questionCount} soru · {active.durationMinutes} dk ·{" "}
-              {active.participantCount} katılımcı
-            </p>
-            <div className="mt-3">
-              {active.myAttempt?.status === "completed" ? (
-                <ButtonLink
-                  href={`/sonuc/${active.myAttempt.id}`}
-                  variant="secondary"
-                >
-                  Sonucumu gör
-                </ButtonLink>
-              ) : (
-                <ButtonLink href={`/sinav/${active.id}`} size="lg">
-                  {active.myAttempt ? "Sınava devam et" : "Sınava katıl"}
-                </ButtonLink>
-              )}
-            </div>
-          </Card>
-        ) : next ? (
-          <Card className="mb-5 flex flex-col gap-1 border-accent/40 p-6">
-            <span className="type-label text-accent-ink">
-              Sıradaki canlı deneme
-            </span>
-            <p className="type-heading text-ink">{next.title}</p>
-            <p className="type-body-sm text-ink-soft">
-              {formatDate(next.startAt)} · {formatTime(next.startAt)} ·{" "}
-              {next.questionCount} soru · {next.durationMinutes} dk
-            </p>
-            <div className="type-subhead mt-2 text-ink">
-              <Countdown target={next.startAt} />
-            </div>
-            <p className="type-body-sm mt-1 text-ink-soft">
-              Başladığında bu sayfadan tek tıkla girersin — Türkiye geneli
-              eşzamanlı, sıralamalı.
-            </p>
-          </Card>
-        ) : (
-          <Card className="mb-5 border-dashed p-6 text-center">
-            <p className="type-body-sm text-ink-soft">
-              Şu an planlanmış canlı deneme yok. Yeni deneme açıldığında koçun
-              Bugün&apos;de haber verir; sen de buradan takip edebilirsin.
-            </p>
-          </Card>
-        )}
+        <ExamHero exams={exams} reminding={reminding} />
 
-        {/* Bana özel deneme: randevu beklemeden, müfredat ağırlıklarıyla */}
-        <PersonalExamCard dashboard={dashboard} />
+        {exams.length === 0 ? (
+          <Card>
+            <EmptyState
+              title="Henüz deneme yok"
+              body="İlk deneme yayınlanınca burada görünür. Bu arada kişisel deneme oluşturabilirsin."
+              action={<ButtonLink href="/denemeler/kisisel" variant="secondary">Kişisel deneme oluştur</ButtonLink>}
+            />
+          </Card>
+        ) : null}
 
-        {/* Yaklaşan takvim */}
-        {upcoming.length > 1 && (
-          <section className="mb-5 flex flex-col gap-2">
-            <SectionHeader title="Takvim" />
-            <div className="grid gap-3 sm:grid-cols-2">
-              {upcoming.slice(1).map((e) => (
-                <Card key={e.id} className="flex flex-col gap-1">
-                  <p className="type-subhead text-ink">{e.title}</p>
-                  <p className="type-body-sm text-ink-soft">
-                    {formatDate(e.startAt)} · {formatTime(e.startAt)} ·{" "}
-                    {e.questionCount} soru
-                  </p>
-                  {e.isPremium ? (
-                    <PremiumBadge variant="soft" className="self-start" />
-                  ) : null}
-                </Card>
+        {serbest.length > 0 ? (
+          <section className="flex flex-col gap-3" aria-labelledby="g-denemeler">
+            <SectionHeader title="Denemeler" />
+            <div className="grid gap-4 md:grid-cols-2">
+              {serbest.map((e) => (
+                <ExamCard key={e.id} exam={e} loggedIn />
               ))}
             </div>
           </section>
-        )}
+        ) : null}
 
-        {/* Geçmiş denemeler */}
-        <section className="flex flex-col gap-2">
-          <SectionHeader
-            title="Geçmiş denemeler"
-            action={{ label: "Denemelerim", href: "/profil/denemelerim" }}
-          />
-          <DataTable
-            caption="Geçmiş denemeler"
-            rows={past}
-            rowKey={(e) => e.id}
-            empty="Henüz geçmiş deneme yok."
-            columns={[
-              {
-                key: "deneme",
-                header: "Deneme",
-                cell: (e) => (
-                  <span className="type-subhead text-ink">{e.title}</span>
-                ),
-              },
-              {
-                key: "tarih",
-                header: "Tarih",
-                align: "right",
-                hideBelowMd: true,
-                cell: (e) => formatDate(e.startAt),
-              },
-              {
-                key: "katilim",
-                header: "Katılım",
-                align: "right",
-                hideBelowMd: true,
-                cell: (e) => e.participantCount,
-              },
-              {
-                key: "ort",
-                header: "Ortalama",
-                align: "right",
-                cell: (e) =>
-                  e.avgScore != null ? Number(e.avgScore).toFixed(1) : "—",
-              },
-              {
-                key: "benim",
-                header: "Benim",
-                align: "right",
-                cell: (e) => (
-                  <span className="inline-flex flex-wrap items-center justify-end gap-x-3 gap-y-1">
-                    {e.myAttempt?.status === "completed" ? (
-                      <Link
-                        href={`/sonuc/${e.myAttempt.id}`}
-                        className="type-subhead inline-flex items-center gap-1 text-accent-ink hover:underline"
-                      >
-                        sonucum <ArrowRight size={14} aria-hidden />
-                      </Link>
-                    ) : null}
-                    {/* Arşivde çözdüysem sonucuma DÖNEBİLMELİYİM (6 Eyl 2026 vakası). */}
-                    {e.myArchiveAttempt ? (
-                      <Link
-                        href={`/sonuc/${e.myArchiveAttempt.id}`}
-                        className="type-subhead inline-flex items-center gap-1 text-accent-ink hover:underline"
-                      >
-                        arşiv sonucum <ArrowRight size={14} aria-hidden />
-                      </Link>
-                    ) : null}
-                    {/* Arşiv modu: aynı set + süre, sıralamasız pratik; anahtar kapalıysa çizilmez. */}
-                    {e.archiveOpenAfterEnd ? (
-                      <Link
-                        href={`/sinav/arsiv/${e.id}`}
-                        className="type-subhead text-ink-soft hover:text-ink hover:underline"
-                      >
-                        arşivde çöz
-                      </Link>
-                    ) : null}
-                  </span>
-                ),
-              },
-            ]}
-          />
-        </section>
+        {haftalik.length > 0 ? (
+          <section className="flex flex-col gap-3" aria-labelledby="g-haftalik">
+            <SectionHeader title="Haftalık deneme" action={{ label: "Geçmiş", href: "/profil/denemelerim" }} />
+            <div className="grid gap-4 md:grid-cols-2">
+              {haftalik.map((e) => (
+                <ExamCard key={e.id} exam={e} loggedIn />
+              ))}
+            </div>
+          </section>
+        ) : null}
 
-        {/* Gelişim çizgim (net trendi) */}
-        {myCompleted.length >= 2 && (
-          <section className="mt-5 flex flex-col gap-2">
-            <SectionHeader
-              title={`Gelişim çizgim — son ${myCompleted.length} deneme`}
-            />
-            <Card>
-              <div className="flex items-end gap-2" aria-hidden>
-                {myCompleted.slice(-12).map((a) => (
-                  <div
-                    key={a.attemptId}
-                    className="flex flex-1 flex-col items-center gap-1"
-                  >
-                    <span className="type-body-sm tabular text-ink-soft">
-                      {Number(a.score).toFixed(0)}
-                    </span>
-                    <div
-                      className="w-full rounded-t-[4px] bg-accent/70"
-                      style={{
-                        height: `${Math.max(8, (Number(a.score) / Math.max(1, maxScore)) * 72)}px`,
-                      }}
-                    />
-                  </div>
-                ))}
-              </div>
-              <p className="type-body-sm mt-2 text-ink-subtle">
-                puanlar deneme NET&apos;i (doğru − yanlış/4)
-              </p>
+        <div className="grid gap-6 md:grid-cols-2">
+          <section className="flex flex-col gap-3" aria-labelledby="g-ozel">
+            <SectionHeader title="Bana özel" />
+            <PersonalExamCard dashboard={dashboard} last={lastPersonal} />
+          </section>
+          <section className="flex flex-col gap-3" aria-labelledby="g-cikmis">
+            <SectionHeader title="Çıkmış sınavlar" action={{ label: "Tümü", href: "/paem-cikmis-sorular" }} />
+            <Card className="py-1">
+              {pastExams.length === 0 ? (
+                <ListRow
+                  leading={<BookOpen size={20} aria-hidden />}
+                  title="PAEM çıkmış sorular"
+                  subtitle="Resmî sınavları sınav gibi çöz"
+                  href="/paem-cikmis-sorular"
+                  divider={false}
+                />
+              ) : (
+                pastExams.slice(0, 3).map((p, i) => (
+                  <ListRow
+                    key={p.slug}
+                    leading={<BookOpen size={20} aria-hidden />}
+                    title={p.ad}
+                    subtitle={`${p.soruSayisi ?? 100} gerçek soru · sınav gibi çöz`}
+                    href={`/paem-cikmis-sorular/${p.slug}`}
+                    divider={i < Math.min(pastExams.length, 3) - 1}
+                  />
+                ))
+              )}
             </Card>
           </section>
-        )}
+        </div>
+
+        <Link
+          href="/profil/denemelerim"
+          className="type-subhead inline-flex items-center justify-center gap-1 self-center text-accent-ink hover:underline"
+        >
+          Deneme geçmişin <ArrowRight size={16} aria-hidden />
+        </Link>
       </div>
 
       <CoachRail />
@@ -246,81 +124,48 @@ export function ExamCenter({
 }
 
 /**
- * "Bana özel deneme" kartı (Doc 46 sonrası): ücretsiz planda günde 1 hak ve
- * 25 soru tavanı vardır. Kilit arayüzde DÜRÜSTÇE gösterilir — kullanıcı
- * butona basıp sunucudan hata yemesin. Asıl karar noktası yine sunucudur
- * (startPersonalExam); burası onu tekrar eden bir kural motoru değil, aynaya
- * bakan bir ekrandır: `dashboard` yoksa kart eski kısıtsız hâlinde çizilir.
+ * "Bana özel" kartı (Doc 46 + Doc 50 M1). Kilit arayüzde DÜRÜSTÇE gösterilir; asıl
+ * karar noktası sunucudur (startPersonalExam). Oluşturma sayfası uzunluk/havuz seçer.
  */
-function PersonalExamCard({ dashboard }: { dashboard: MeDashboard | null }) {
-  const { sinirsiz, kalan, hakkiBitti, secenekler } =
-    personalExamState(dashboard);
-
+function PersonalExamCard({
+  dashboard,
+  last,
+}: {
+  dashboard: MeDashboard | null;
+  last: { attemptId: string; score: number | null; completedAt: string | null } | null;
+}) {
+  const { sinirsiz, kalan, hakkiBitti } = personalExamState(dashboard);
   return (
-    <Card className="mb-5">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="min-w-0">
-          <p className="type-subhead inline-flex items-center gap-1.5 text-ink">
-            <Zap size={16} className="text-accent" aria-hidden /> Bana özel
-            deneme
-          </p>
-          <p className="type-body-sm mt-0.5 text-ink-soft">
-            Randevu bekleme — müfredat ağırlıklarıyla, görmediğin sorulardan.
-            Sıralamaya girmez.
-          </p>
-          {!sinirsiz && (
-            <p className="type-body-sm mt-1.5 text-ink-soft">
-              {hakkiBitti ? (
-                <>Bugünkü hakkını kullandın — yarın yenileniyor.</>
-              ) : (
-                <>
-                  Bugün <strong className="text-ink">{kalan} hakkın</strong>{" "}
-                  var.
-                </>
-              )}{" "}
-              <Link
-                href="/premium"
-                className="font-semibold text-accent-ink hover:underline"
-              >
-                Premium&apos;da sınırsız
-              </Link>
-            </p>
-          )}
-        </div>
-
-        {hakkiBitti ? (
-          <ButtonLink href="/premium" size="sm">
-            Premium&apos;a geç
-          </ButtonLink>
-        ) : (
-          <div className="flex flex-wrap items-center gap-2">
-            {secenekler.map(({ sayi, kilitli, birincil }) =>
-              kilitli ? (
-                // Tavanın üstü: kapalı buton değil, Premium'a giden dürüst bir
-                // bağlantı — tıklanabilir olduğu için dokunma hedefi korunur.
-                <Link
-                  key={sayi}
-                  href="/premium"
-                  className="tk-interactive inline-flex min-h-11 items-center gap-1.5 rounded-control border border-dashed border-line px-3 type-subhead text-ink-soft hover:border-ink-soft hover:text-ink"
-                  title={`${sayi} soruluk kişisel deneme Premium'a özel`}
-                >
-                  {sayi} soru
-                  <PremiumBadge variant="soft" />
-                </Link>
-              ) : (
-                <ButtonLink
-                  key={sayi}
-                  href={`/sinav/kisisel?count=${sayi}`}
-                  variant={birincil ? "primary" : "secondary"}
-                  size="sm"
-                >
-                  {sayi} soru
-                </ButtonLink>
-              ),
-            )}
-          </div>
-        )}
-      </div>
+    <Card className="flex flex-col gap-3">
+      <p className="type-heading inline-flex items-center gap-2 text-ink">
+        <Sparkles size={18} className="text-accent-ink" aria-hidden /> Kişisel deneme
+      </p>
+      <p className="type-body-sm text-ink-soft">
+        Yanlışlarından ve zayıf konularından seçilen sorular; resmî PAEM dağılımıyla. Sıralamaya girmez, sana ölçüm.
+      </p>
+      {!sinirsiz ? (
+        <p className="type-body-sm text-ink-soft">
+          {hakkiBitti ? "Bugünkü hakkını kullandın — yarın yenileniyor." : <>Bugün <strong className="text-ink">{kalan} hakkın</strong> var.</>}{" "}
+          <Link href="/premium" className="font-semibold text-accent-ink hover:underline">
+            Premium&apos;da sınırsız
+          </Link>
+        </p>
+      ) : null}
+      {hakkiBitti ? (
+        <ButtonLink href="/premium" variant="secondary" leadingIcon={<PremiumBadge variant="soft" label="" className="px-1" />}>
+          Premium ile aç
+        </ButtonLink>
+      ) : (
+        <ButtonLink href="/denemeler/kisisel">Oluştur</ButtonLink>
+      )}
+      {last ? (
+        <p className="type-body-sm text-ink-subtle">
+          Son: {last.completedAt ? formatDate(last.completedAt) : "—"} · {fmtNet(last.score)} net ·{" "}
+          <Link href={`/sonuc/${last.attemptId}`} className="font-semibold text-accent-ink hover:underline">
+            Sonucu gör ›
+          </Link>
+        </p>
+      ) : null}
     </Card>
   );
 }

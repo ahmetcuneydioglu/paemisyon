@@ -1,35 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock, Flag } from "lucide-react";
+import { Clock, Lock, Timer } from "lucide-react";
 import { api, ApiError } from "@/lib/api";
-import type { AttemptResult, MyAttempt } from "@/lib/types";
-import { cn } from "@/lib/cn";
+import type { AttemptResult, AttemptReview } from "@/lib/types";
+import { fmtDuration, fmtNet, rankSentence } from "@/lib/exam-ui";
+import { formatDate, formatTime } from "@/lib/format";
+import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { DataTable } from "@/components/ui/data-table";
 import { EmptyState } from "@/components/ui/empty-state";
-import { ReviewList } from "@/components/review-list";
+import { ListRow } from "@/components/ui/list-row";
+import { Notice } from "@/components/ui/notice";
+import { PremiumBadge } from "@/components/ui/premium-badge";
+import { SectionHeader } from "@/components/ui/section-header";
+import { StatTile } from "@/components/ui/stat-tile";
+import { CourseBreakdown } from "@/components/exam/course-breakdown";
+import { ReviewTable } from "@/components/exam/review-table";
 import { TimingStrip } from "@/components/exam/timing-strip";
 import { CoachLine } from "@/components/rooms/coach-line";
 import { ResultPanel } from "@/components/session/seans-kit";
 
-export const metadata: Metadata = {
-  title: "Sınav Sonucu",
-  robots: { index: false },
-};
+export const metadata: Metadata = { title: "Sınav Sonucu", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
 /**
- * Deneme Sonucu + Derin Analiz (Doc 27 §3.8). Şok değil yol haritası: önce kendi
- * kıyasın ve kapatılabilir kayıplar, sıralama sonra. Her kayıp satırı eyleme bağlanır.
- * "Emin değilim" bayrakları (S1-C) ayrı listelenir.
+ * Deneme sonucu (Doc 50 M4/W3). Dört varyant tek sayfa: resmî (sıra + Türkiye kıyası),
+ * tekrar çözüm (sıralamaya girmedi), kişisel (sıra yok), haftalık sonuç bekliyor (kilit).
+ * Sol: net, D/Y/B, ders dağılımı. Sağ: Türkiye kıyası, çalışılacak konular. Altta inceleme.
  */
-export default async function SonucPage({
-  params,
-}: {
-  params: Promise<{ attemptId: string }>;
-}) {
+export default async function SonucPage({ params }: { params: Promise<{ attemptId: string }> }) {
   const { attemptId } = await params;
 
   let result: AttemptResult;
@@ -37,19 +37,15 @@ export default async function SonucPage({
     result = await api<AttemptResult>(`/exams/attempts/${attemptId}`);
   } catch (e) {
     if (e instanceof ApiError && e.code === "EXAM_IN_PROGRESS") {
-      const examId = (e.details as { examId?: string } | undefined)?.examId;
+      const d = (e.details ?? {}) as { examId?: string };
       return (
         <div className="grid min-h-[70vh] place-items-center px-4">
           <Card className="w-full max-w-md">
             <EmptyState
               icon={Clock}
               title="Sınav devam ediyor"
-              body="Süre dolmadan sonuç açılmaz — herkese aynı anda, adil."
-              action={
-                examId ? (
-                  <ButtonLink href={`/sinav/${examId}`}>Sınava dön</ButtonLink>
-                ) : undefined
-              }
+              body="Süre dolmadan sonuç açılmaz."
+              action={d.examId ? <ButtonLink href={`/sinav/${d.examId}`}>Sınava dön</ButtonLink> : undefined}
             />
           </Card>
         </div>
@@ -58,202 +54,182 @@ export default async function SonucPage({
     throw e;
   }
 
-  const mine = await api<MyAttempt[]>("/exams/attempts/mine").catch(
-    () => [] as MyAttempt[],
-  );
-  const completedMine = mine
-    .filter((a) => a.status === "completed" && a.score != null)
-    .sort((a, b) => +new Date(a.startedAt) - +new Date(b.startedAt));
-  const myIndex = completedMine.findIndex((a) => a.attemptId === attemptId);
-  const prev = myIndex > 0 ? completedMine[myIndex - 1] : null;
-  const delta =
-    prev != null && result.score != null
-      ? result.score - Number(prev.score)
-      : null;
+  const title = result.personal ? "Kişisel deneme" : result.exam.title;
+  const crumbs = [{ label: "Denemeler", href: "/denemeler" }, { label: title }, { label: "Sonuç" }];
 
-  const breakdown = result.topicBreakdown ?? [];
-  const losers = breakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 3);
-  const lostTotal = breakdown.reduce((s, t) => s + t.wrong + t.blank, 0);
-  const lostInTop3 = losers.reduce((s, t) => s + t.wrong + t.blank, 0);
-  const minutes =
-    result.durationSeconds != null
-      ? Math.max(1, Math.round(result.durationSeconds / 60))
-      : null;
-  const flagged = result.review.filter((q) => q.flagged);
-  const fmt = (n: number) => n.toFixed(2).replace(/\.?0+$/, "");
+  // ── Haftalık: sonuç bekliyor ──
+  if (result.resultLocked) {
+    return (
+      <div className="mx-auto flex max-w-3xl flex-col gap-5 px-4 py-6 md:px-6">
+        <Breadcrumb items={crumbs} />
+        <Card className="flex flex-col items-center gap-2 border-panel bg-panel p-8 text-center">
+          <Timer size={28} className="text-accent" aria-hidden />
+          <p className="type-subhead text-panel-ink">
+            Teslim edildi{result.completedAt ? ` · ${formatTime(result.completedAt)}` : ""}
+          </p>
+          <p className="type-body-sm max-w-md text-panel-soft">
+            Sonuçlar ve sıralama {result.resultAt ? `${formatDate(result.resultAt)} ${formatTime(result.resultAt)}'de` : "sınav penceresi kapanınca"} herkese aynı anda açıklanır. Sana bildirim göndereceğiz.
+          </p>
+        </Card>
+        <div className="grid grid-cols-3 gap-3">
+          <StatTile label="Cevaplanan" value={result.answeredCount ?? null} />
+          <StatTile label="Boş" value={result.blankCount} />
+          <StatTile label="Süre" value={fmtDuration(result.durationSeconds)} />
+        </div>
+        <ButtonLink href="/denemeler" variant="secondary">Denemelere dön</ButtonLink>
+      </div>
+    );
+  }
+
+  const review = await api<AttemptReview>(`/exams/attempts/${attemptId}/review`).catch(() => null);
+  const official = result.role === "official" && !result.personal && !result.isArchive;
+  const rank = result.rank;
+  const rankText = rank?.available && rank.rank != null ? rankSentence(rank.rank, rank.total) : null;
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
-      <Breadcrumb
-        className="mb-4"
-        items={[
-          { label: "Denemeler", href: "/denemeler" },
-          { label: result.exam.title },
-          { label: "Analiz" },
-        ]}
-      />
+    <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-6 md:px-6">
+      <Breadcrumb items={crumbs} />
 
-      <div className="grid items-start gap-4 lg:grid-cols-[1fr_1.4fr]">
-        {/* Sol: skor + koç + eylemler — uzun tabloya eşlik etsin diye yapışkan */}
-        <div className="flex flex-col gap-4 lg:sticky lg:top-20">
+      {result.scoreUpdate ? (
+        <Notice tone="success" title="Netin güncellendi">
+          Bir soru iptal edildi; netin {fmtNet(result.scoreUpdate.from)}&apos;ten {fmtNet(result.scoreUpdate.to)}&apos;e çıktı.
+        </Notice>
+      ) : null}
+      {result.role === "practice" && !result.personal ? (
+        <Notice tone="info">Bu çözüm sıralamaya girmedi; resmî sonucun kartta duruyor.</Notice>
+      ) : null}
+      {result.closedReason === "timeout" ? (
+        <Notice tone="warning">Süre doldu; cevapların otomatik teslim edildi.</Notice>
+      ) : null}
+
+      <div className="grid items-start gap-6 lg:grid-cols-[1fr_22rem]">
+        {/* Sol sütun */}
+        <div className="flex flex-col gap-5">
+          {/* Net hero — F10-C seans kiti (ResultPanel); alt satır sıra ya da D/Y/B. */}
           <ResultPanel
-            label={result.isArchive ? "Arşiv denemesi" : "Deneme sonucu"}
-            hero={
-              result.score == null
-                ? "—"
-                : result.isArchive
-                  ? `%${Math.round(result.score)}`
-                  : fmt(result.score).replace(".", ",")
-            }
-            correct={result.correctCount}
+            label={`Deneme sonucu · ${official ? "resmî çözüm" : result.personal ? "kişisel deneme" : "tekrar çözüm"}`}
+            hero={`${fmtNet(result.score)} net`}
+            correct={result.correctCount ?? 0}
             total={result.totalQuestions}
             pct={null}
             durationLabel={null}
-            sub={`${result.isArchive ? "doğruluk" : "net"} · D ${result.correctCount} · Y ${result.wrongCount} · B ${result.blankCount}${minutes ? ` · ${minutes} dk` : ""}`}
+            sub={
+              rankText
+                ? `${rankText}${rank?.percentile ? ` · ilk %${rank.percentile}` : ""}`
+                : official && rank && !rank.available
+                  ? `Sıralama en az 10 resmî çözümle açılır · şu an ${rank.total}`
+                  : `D ${result.correctCount} · Y ${result.wrongCount} · B ${result.blankCount}`
+            }
           />
-          <p
-            className={cn(
-              "type-body-sm",
-              delta == null
-                ? "text-ink-soft"
-                : delta >= 0
-                  ? "text-success-ink"
-                  : "text-danger-ink",
-            )}
-          >
-            {delta != null
-              ? `Geçen denemeden ${delta > 0 ? "+" : ""}${fmt(delta).replace(".", ",")} net`
-              : myIndex === 0
-                ? "İlk denemen — kıyas çizgin buradan başlıyor."
-                : `${result.totalQuestions} soru`}
-          </p>
-
-          {losers.length > 0 ? (
+          {result.weakTopics.length > 0 ? (
             <CoachLine
-              text={
-                lostTotal > 0 && lostInTop3 / lostTotal >= 0.5
-                  ? `Kaybının %${Math.round((lostInTop3 / lostTotal) * 100)}'i ${losers.length} konudan — sıralamaya değil şu tabloya bak, hepsi kapatılabilir.`
-                  : "Kaybın konulara dağılmış — en çok kaybettirenlerden başla, her satırın kapatma turu hazır."
-              }
+              text={`En çok kaybın ${result.weakTopics[0].topicName}: Y ${result.weakTopics[0].wrong} · B ${result.weakTopics[0].blank}. Sıralamaya değil sağdaki listeye bak; hepsi kapatılabilir.`}
             />
           ) : null}
 
-          {flagged.length > 0 ? (
-            <Card className="flex flex-col gap-2">
-              <span className="type-label inline-flex items-center gap-1.5 text-ink-subtle">
-                <Flag size={12} aria-hidden /> Emin olmadığın sorular
-              </span>
-              <p className="type-body-sm text-ink-soft">
-                {flagged.length} soruyu bayraklamıştın;{" "}
-                {
-                  flagged.filter((q) =>
-                    q.options.some(
-                      (o) => o.isCorrect && o.id === q.selectedOptionId,
-                    ),
-                  ).length
-                }{" "}
-                tanesi doğruymuş. Aşağıda işaretli.
-              </p>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <StatTile label="Doğru" value={result.correctCount} tone="success" />
+            <StatTile label="Yanlış" value={result.wrongCount} tone="danger" />
+            <StatTile label="Boş" value={result.blankCount} />
+            <StatTile label="Süre" value={fmtDuration(result.durationSeconds)} />
+          </div>
+          <p className="type-body-sm text-ink-subtle">
+            {result.totalQuestions} soru{result.completedAt ? ` · ${formatDate(result.completedAt)}` : ""} · net = doğru − yanlış/4
+          </p>
+
+          <CourseBreakdown rows={result.courses} />
+          <TimingStrip timing={result.timing ?? []} />
+        </div>
+
+        {/* Sağ sütun */}
+        <div className="flex flex-col gap-4 lg:sticky lg:top-20">
+          {official && result.turkey ? (
+            <Card className="flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <h2 className="type-heading text-ink">Türkiye kıyası</h2>
+                <PremiumBadge variant="soft" />
+              </div>
+              {result.turkey.locked ? (
+                <>
+                  <p className="type-body-sm inline-flex items-start gap-2 text-ink-soft">
+                    <Lock size={16} className="mt-0.5 shrink-0 text-ink-subtle" aria-hidden />
+                    Türkiye ortalaması, medyan ve soru bazlı doğru oranı Premium ile açılır.
+                  </p>
+                  <ButtonLink href="/premium" variant="secondary">Premium ile aç</ButtonLink>
+                </>
+              ) : result.turkey.sample < result.turkey.minSample ? (
+                <p className="type-body-sm text-ink-soft">
+                  En az {result.turkey.minSample} resmî çözümle açılır; şu an {result.turkey.sample} çözüm var.
+                </p>
+              ) : (
+                <>
+                  <Row k="Türkiye ortalaması" v={`${fmtNet(result.turkey.mean)} net`} />
+                  <Row k="Medyan" v={`${fmtNet(result.turkey.median)} net`} />
+                  <Row k="Sen" v={`${result.turkey.diff != null && result.turkey.diff >= 0 ? "+" : ""}${fmtNet(result.turkey.diff)} net`} accent />
+                  <p className="type-body-sm text-ink-subtle">Soru bazlı Türkiye oranı ve süreler cevap incelemesinde.</p>
+                </>
+              )}
             </Card>
           ) : null}
 
-          <div className="flex flex-wrap gap-3">
-            {!result.isArchive ? (
-              <ButtonLink
-                href={`/siralama/${result.exam.id}`}
-                variant="secondary"
-              >
-                Sıralamayı gör
-              </ButtonLink>
-            ) : null}
-            <ButtonLink href="/denemeler" variant="secondary">
-              Denemeler
-            </ButtonLink>
-            <ButtonLink href="/bugun" variant="ghost">
-              Bugün&apos;e dön
-            </ButtonLink>
-          </div>
-        </div>
+          {result.weakTopics.length > 0 ? (
+            <section className="flex flex-col gap-2">
+              <SectionHeader title="Çalışılacak konular" />
+              <Card className="py-1">
+                {result.weakTopics.slice(0, 3).map((t, i, arr) => (
+                  <ListRow
+                    key={t.topicId}
+                    title={t.topicName}
+                    subtitle={`Y ${t.wrong} · B ${t.blank} · ${t.total} soru`}
+                    trailing={<span className="type-subhead text-accent-ink">Çalış</span>}
+                    href={`/seans?topicId=${t.topicId}&scope=${encodeURIComponent(`${t.topicName} · kapatma`)}`}
+                    divider={i < arr.length - 1}
+                  />
+                ))}
+              </Card>
+            </section>
+          ) : null}
 
-        {/* Sağ: kayıp tablosu — her satır eyleme bağlı */}
-        <div className="flex flex-col gap-2">
-          <h2 className="type-heading text-ink">
-            Konu kırılımı — kaybettirenler üstte
-          </h2>
-          <DataTable
-            caption="Konu kırılımı"
-            rows={breakdown}
-            rowKey={(t) => t.topicId}
-            empty="Konu kırılımı bu deneme için yok."
-            columns={[
-              {
-                key: "konu",
-                header: "Konu",
-                cell: (t) => (
-                  <span className="type-subhead text-ink">{t.topicName}</span>
-                ),
-              },
-              {
-                key: "d",
-                header: "D",
-                align: "right",
-                cell: (t) => (
-                  <span className="text-success-ink">{t.correct}</span>
-                ),
-              },
-              {
-                key: "y",
-                header: "Y",
-                align: "right",
-                cell: (t) => <span className="text-danger-ink">{t.wrong}</span>,
-              },
-              {
-                key: "b",
-                header: "B",
-                align: "right",
-                hideBelowMd: true,
-                cell: (t) => <span className="text-ink-soft">{t.blank}</span>,
-              },
-              {
-                key: "kayip",
-                header: "Kayıp net",
-                align: "right",
-                cell: (t) => {
-                  const lostNet = t.wrong * 1.25 + t.blank;
-                  return (
-                    <span className="font-semibold text-ink">
-                      {lostNet > 0 ? `−${fmt(lostNet)}` : "0"}
-                    </span>
-                  );
-                },
-              },
-              {
-                key: "eylem",
-                header: "",
-                align: "right",
-                cell: (t) =>
-                  t.wrong + t.blank > 0 ? (
-                    <Link
-                      href={`/seans?topicId=${t.topicId}&scope=${encodeURIComponent(`${t.topicName} · kapatma`)}`}
-                      className="tk-interactive inline-flex h-9 items-center rounded-control border border-line px-3 text-[13px] font-semibold text-ink-soft hover:border-ink-soft hover:text-ink"
-                    >
-                      Kapat
-                    </Link>
-                  ) : null,
-              },
-            ]}
-          />
-          <p className="type-body-sm text-ink-subtle">
-            Kayıp net = yanlış×1,25 + boş. &quot;Kapat&quot; o konudan akıllı
-            tur başlatır; yanlışların zaten tekrar kuyruğunda.
-          </p>
+          <div className="flex flex-col gap-2">
+            {official ? (
+              <ButtonLink href={`/siralama/${result.exam.id}`} variant="secondary">Sıralamayı gör</ButtonLink>
+            ) : result.personal ? (
+              <ButtonLink href="/denemeler/kisisel" variant="secondary">Yeni kişisel deneme</ButtonLink>
+            ) : (
+              <ButtonLink href="/profil/denemelerim" variant="secondary">Deneme geçmişi</ButtonLink>
+            )}
+            <ButtonLink href="/denemeler" variant="ghost">Denemelere dön</ButtonLink>
+          </div>
+          {result.personal ? (
+            <p className="type-body-sm text-center text-ink-subtle">Kişisel deneme sıralamaya ve net gelişim çizgisine girmez.</p>
+          ) : null}
+          {result.review.some((q) => q.flagged) ? (
+            <p className="type-body-sm text-ink-subtle">
+              <Badge tone="neutral">emin değildim</Badge> işaretlediğin {result.review.filter((q) => q.flagged).length} soru incelemede süzülebilir.
+            </p>
+          ) : null}
         </div>
       </div>
 
-      <TimingStrip timing={result.timing ?? []} />
+      {review ? (
+        <ReviewTable review={review} questions={result.review} />
+      ) : (
+        <Card>
+          <p className="type-body-sm text-ink-soft">
+            Cevap incelemesi şu an yüklenemedi.{" "}
+            <Link href={`/sonuc/${attemptId}`} className="font-semibold text-accent-ink hover:underline">Yenile</Link>
+          </p>
+        </Card>
+      )}
+    </div>
+  );
+}
 
-      <h2 className="type-heading mt-8 mb-3 text-ink">Cevap incelemesi</h2>
-      <ReviewList questions={result.review} showAnswers />
+function Row({ k, v, accent }: { k: string; v: string; accent?: boolean }) {
+  return (
+    <div className="flex items-baseline justify-between gap-3">
+      <span className="type-body-sm text-ink-soft">{k}</span>
+      <span className={accent ? "type-subhead tabular text-accent-ink" : "type-subhead tabular text-ink"}>{v}</span>
     </div>
   );
 }

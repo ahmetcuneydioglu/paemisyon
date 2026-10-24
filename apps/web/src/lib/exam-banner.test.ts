@@ -21,6 +21,17 @@ function deneme(p: Partial<ExamListItem>): ExamListItem {
     avgScore: null,
     myAttempt: null,
     myArchiveAttempt: null,
+    // Doc 50 alanları — şerit mantığı bunlara bakmaz.
+    publishMode: "takvimli",
+    difficulty: null,
+    examTypeId: null,
+    liveAnswerReveal: false,
+    practiceAfterEnd: true,
+    availability: p.state === "active" ? "open" : p.state === "ended" ? "closed" : "upcoming",
+    myState: "new",
+    canStartOfficial: p.state === "active",
+    canStartPractice: false,
+    my: { official: null, active: null, practiceCount: 0, lastPractice: null },
   };
 }
 

@@ -292,7 +292,41 @@ export class ExamsService {
     const list = await this.list(user, true);
     const found = list.find((e) => e.id === examId);
     if (!found) throw new NotFoundException('Deneme bulunamadı.');
-    return found;
+    // Kurallar ekranı için ders dağılımı (Doc 50 M2): sınav türünün bölüm
+    // ağırlıkları × soru sayısı, en-büyük-kalan yuvarlamasıyla. Sınav türü
+    // yoksa boş liste — istemci satırı çizmez.
+    return {
+      ...found,
+      distribution: await this.distributionFor(found.examTypeId, found.questionCount),
+    };
+  }
+
+  private async distributionFor(examTypeId: string | null, questionCount: number) {
+    if (!examTypeId || questionCount <= 0)
+      return [] as { name: string; count: number; weightPercent: number }[];
+    const sections = await this.prisma.examSection.findMany({
+      where: { examTypeId, deletedAt: null },
+      orderBy: { sortOrder: 'asc' },
+      select: { name: true, weightPercent: true },
+    });
+    const sum = sections.reduce((a, s) => a + s.weightPercent, 0);
+    if (sections.length === 0 || sum <= 0) return [];
+    const exact = sections.map((s) => (s.weightPercent / sum) * questionCount);
+    const base = exact.map((x) => Math.floor(x));
+    let left = questionCount - base.reduce((a, b) => a + b, 0);
+    const order = exact
+      .map((x, i) => ({ i, frac: x - Math.floor(x) }))
+      .sort((p, q) => q.frac - p.frac);
+    for (const { i } of order) {
+      if (left <= 0) break;
+      base[i]++;
+      left--;
+    }
+    return sections.map((s, i) => ({
+      name: s.name,
+      count: base[i],
+      weightPercent: s.weightPercent,
+    }));
   }
 
   /** Canlı nabız: sınavda ŞU AN olan + bitirmiş (resmî) kişi sayısı. Kimliksiz. */

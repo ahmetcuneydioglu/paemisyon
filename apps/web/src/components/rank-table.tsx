@@ -40,14 +40,14 @@ export function Podium({ rows }: { rows: (RankRow | GlobalRankRow)[] }) {
               {r.rank}
             </span>
             <span className="type-subhead mt-1 w-full truncate text-ink">
-              {r.displayName}
+              {"name" in r && r.name ? r.name : r.displayName}
             </span>
             <span className="type-stat text-ink">
               {"score" in r ? r.score.toFixed(2) : r.avgScore.toFixed(2)}
             </span>
             <span className="type-body-sm text-ink-soft">
-              {"correctCount" in r
-                ? `${r.correctCount} D / ${r.wrongCount} Y`
+              {"wrongCount" in r
+                ? `${r.wrongCount} yanlış`
                 : `${r.attempts} deneme`}
             </span>
           </li>
@@ -57,10 +57,10 @@ export function Podium({ rows }: { rows: (RankRow | GlobalRankRow)[] }) {
   );
 }
 
-function nameCell(r: { displayName: string; isMe: boolean }) {
+function nameCell(r: { displayName: string; name?: string; isMe: boolean }) {
   return (
     <span className="type-subhead text-ink">
-      {r.displayName}
+      {r.name ?? r.displayName}
       {r.isMe ? (
         <span className="type-body-sm ml-1.5 text-accent-ink">(sen)</span>
       ) : null}
@@ -87,11 +87,11 @@ export function ExamRankTable({ rows }: { rows: RankRow[] }) {
       cell: (r) => r.score.toFixed(2),
     },
     {
-      key: "dyb",
-      header: "D / Y / B",
+      key: "y",
+      header: "Yanlış",
       align: "right",
       hideBelowMd: true,
-      cell: (r) => `${r.correctCount} / ${r.wrongCount} / ${r.blankCount}`,
+      cell: (r) => r.wrongCount,
     },
     {
       key: "dur",

@@ -1,108 +1,85 @@
 import type { Metadata } from "next";
 import { ClipboardCheck } from "lucide-react";
 import { api } from "@/lib/api";
-import type { MyAttempt } from "@/lib/types";
-import { Badge } from "@/components/ui/badge";
+import type { ExamHistory, ExamHistoryItem } from "@/lib/types";
+import { fmtNet } from "@/lib/exam-ui";
+import { formatDate } from "@/lib/format";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { DataTable } from "@/components/ui/data-table";
 import { EmptyState } from "@/components/ui/empty-state";
-import { formatDate } from "@/lib/format";
+import { ListRow } from "@/components/ui/list-row";
+import { SectionHeader } from "@/components/ui/section-header";
+import { TrendChart } from "@/components/exam/trend-chart";
 
-export const metadata: Metadata = {
-  title: "Denemelerim",
-  robots: { index: false },
-};
+export const metadata: Metadata = { title: "Deneme geçmişi", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
+/** Deneme geçmişi (Doc 50 M8): net gelişimi + üç grup (denemeler · haftalık · bana özel). */
 export default async function MyExamsPage() {
-  const attempts = await api<MyAttempt[]>("/exams/attempts/mine");
+  const h = await api<ExamHistory>("/exams/history/mine");
+  const empty = h.denemeler.length + h.haftalik.length + h.kisisel.length === 0;
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6 md:px-6">
-      <Breadcrumb
-        className="mb-3"
-        items={[{ label: "Ben", href: "/profil" }, { label: "Denemelerim" }]}
-      />
-      <h1 className="type-title text-ink">Denemelerim</h1>
-      <p className="type-body-sm mt-1 mb-5 text-ink-soft">
-        Web ve mobildeki bütün deneme geçmişin.
-      </p>
-      {attempts.length === 0 ? (
+    <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-6 md:px-6">
+      <Breadcrumb items={[{ label: "Denemeler", href: "/denemeler" }, { label: "Deneme geçmişi" }]} />
+      <h1 className="type-title text-ink">Deneme geçmişi</h1>
+      {empty ? (
         <Card>
           <EmptyState
             icon={ClipboardCheck}
-            title="Henüz deneme çözmedin"
-            body="İlk denemenden sonra gelişim arşivin burada başlayacak."
-            action={<ButtonLink href="/denemeler">Denemelere git</ButtonLink>}
+            title="Henüz çözüm yok"
+            body="İlk denemeni çöz, gelişimin burada görünsün."
+            action={<ButtonLink href="/denemeler" variant="secondary">Denemelere git</ButtonLink>}
           />
         </Card>
       ) : (
-        <DataTable
-          caption="Deneme geçmişim"
-          rows={attempts}
-          rowKey={(a) => a.attemptId}
-          columns={[
-            {
-              key: "deneme",
-              header: "Deneme",
-              cell: (a) => (
-                <span className="type-subhead text-ink">
-                  {a.exam?.title ?? "Deneme"}
-                </span>
-              ),
-            },
-            {
-              key: "tarih",
-              header: "Tarih",
-              hideBelowMd: true,
-              cell: (a) => formatDate(a.startedAt),
-            },
-            {
-              key: "durum",
-              header: "Durum",
-              cell: (a) =>
-                a.status === "completed" ? (
-                  <Badge tone="success">Tamamlandı</Badge>
-                ) : (
-                  <Badge tone="warning">Devam ediyor</Badge>
-                ),
-            },
-            {
-              key: "net",
-              header: "Net",
-              align: "right",
-              cell: (a) => (
-                <span className="type-subhead text-ink">
-                  {a.score != null ? a.score.toFixed(2) : "—"}
-                </span>
-              ),
-            },
-            {
-              key: "eylem",
-              header: "",
-              align: "right",
-              cell: (a) =>
-                a.status === "completed" ? (
-                  <ButtonLink
-                    href={`/sonuc/${a.attemptId}`}
-                    variant="secondary"
-                    size="sm"
-                  >
-                    Sonucu aç
-                  </ButtonLink>
-                ) : (
-                  <ButtonLink
-                    href={a.exam?.id ? `/sinav/${a.exam.id}` : "/denemeler"}
-                    size="sm"
-                  >
-                    Devam et
-                  </ButtonLink>
-                ),
-            },
-          ]}
-        />
+        <>
+          <TrendChart trend={h.trend} />
+          <Group title="Denemeler" items={h.denemeler} />
+          <Group title="Haftalık" items={h.haftalik} />
+          <Group title="Bana özel" items={h.kisisel} />
+        </>
       )}
     </div>
+  );
+}
+
+function Group({ title, items }: { title: string; items: ExamHistoryItem[] }) {
+  if (items.length === 0) return null;
+  return (
+    <section className="flex flex-col gap-2">
+      <SectionHeader title={title} />
+      <Card className="py-1">
+        {items.map((it, i) => {
+          const sub = `${it.completedAt ? formatDate(it.completedAt) : "—"} · ${
+            it.role === "official" ? "resmî" : it.role === "practice" ? "tekrar" : it.role === "personal" ? `${it.totalQuestions} soru` : ""
+          }${it.closedReason === "timeout" ? " · süre doldu" : ""}`;
+          const right = it.resultLocked
+            ? "sonuç bekliyor"
+            : it.rank != null
+              ? `${it.rank}.`
+              : it.role === "official"
+                ? "sıralama bekliyor"
+                : "sırasız";
+          return (
+            <ListRow
+              key={it.attemptId}
+              title={it.title}
+              subtitle={sub}
+              trailing={
+                <span className="flex flex-col items-end">
+                  <span className={it.resultLocked ? "type-subhead text-ink-subtle" : "type-subhead tabular text-ink"}>
+                    {it.resultLocked ? "—" : fmtNet(it.score)}
+                  </span>
+                  <span className="type-body-sm text-ink-subtle">{right}</span>
+                </span>
+              }
+              href={`/sonuc/${it.attemptId}`}
+              divider={i < items.length - 1}
+            />
+          );
+        })}
+      </Card>
+    </section>
   );
 }

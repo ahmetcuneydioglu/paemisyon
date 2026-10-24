@@ -9,7 +9,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog } from "@/components/ui/dialog";
 import { Notice } from "@/components/ui/notice";
-import { QuestionOption, QuestionStem } from "@/components/ui/question";
+import { ExplanationBox } from "@/components/ui/explanation-box";
+import {
+  QuestionOption,
+  QuestionStem,
+  type QuestionOptionState,
+} from "@/components/ui/question";
 import { FocusFrame } from "@/components/shell/focus-frame";
 import {
   ExamGrid,
@@ -24,6 +29,10 @@ export interface StartPayload {
   title: string;
   endsAt: string;
   liveAnswerReveal: boolean;
+  /** Doc 50: çözüm rolü ve mutlak son tarih (sunucu saati). */
+  role?: "official" | "practice";
+  deadlineAt?: string;
+  publishMode?: "serbest" | "takvimli" | null;
   questions: {
     order: number;
     questionId: string;
@@ -51,12 +60,21 @@ type SaveState = "saved" | "saving" | "failed";
  */
 /** Arşiv modunda tamamlanınca gösterilen yerinde sonuç (resmî /sonuc yok). */
 
-export type ExamKind = "live" | "archive" | "personal";
+export type ExamKind = "live" | "practice" | "archive" | "personal";
 const KIND_LABEL: Record<ExamKind, string> = {
-  live: "Türkiye geneli canlı deneme",
+  live: "resmî çözüm · sıralamaya girer",
+  practice: "tekrar çözüm · sıralamaya girmez",
   archive: "arşiv denemesi (sıralamasız)",
   personal: "kişisel deneme (sıralamasız)",
 };
+
+/** Anlık geri bildirim (Doc 50): sunucudan dönen cevap; soru kilitlenir. */
+interface Feedback {
+  isCorrect: boolean;
+  correctOptionId: string | null;
+  explanation: string | null;
+  legalReference: string | null;
+}
 
 export function ExamPlayer({
   start,
@@ -91,6 +109,7 @@ export function ExamPlayer({
         start.givenAnswers.filter((a) => a.flagged).map((a) => a.questionId),
       ),
   );
+  const [feedback, setFeedback] = useState<Record<string, Feedback>>({});
   const [finishOpen, setFinishOpen] = useState(false);
   const [gridOpen, setGridOpen] = useState(false);
   const [finishing, setFinishing] = useState(false);
@@ -156,10 +175,20 @@ export function ExamPlayer({
   // ── Cevap: anında sunucuya ──
   const saveAnswer = useCallback(
     async (questionId: string, versionId: string, optionId: string) => {
+      // Anlık geri bildirimde ilk cevap KİLİTLİDİR (sunucu da reddeder).
+      if (start.liveAnswerReveal && feedback[questionId]) return;
       setAnswers((p) => ({ ...p, [questionId]: optionId }));
       setSaveState((p) => ({ ...p, [questionId]: "saving" }));
       try {
-        await apiClient(`/quiz/sessions/${start.sessionId}/answers`, {
+        const r = await apiClient<{
+          accepted?: boolean;
+          locked?: boolean;
+          isCorrect?: boolean;
+          selectedOptionId?: string | null;
+          correctOptionId?: string | null;
+          explanation?: string | null;
+          legalReference?: string | null;
+        }>(`/quiz/sessions/${start.sessionId}/answers`, {
           method: "POST",
           body: {
             questionId,
@@ -168,6 +197,21 @@ export function ExamPlayer({
             timeSpentMs: Date.now() - shownAtRef.current,
           },
         });
+        if (r && typeof r.isCorrect === "boolean") {
+          setFeedback((p) => ({
+            ...p,
+            [questionId]: {
+              isCorrect: r.isCorrect!,
+              correctOptionId: r.correctOptionId ?? null,
+              explanation: r.explanation ?? null,
+              legalReference: r.legalReference ?? null,
+            },
+          }));
+          // Kilitli cevap döndüyse (çevrimdışı kuyruk tekrarı) seçimi sunucudakine çek.
+          if (r.accepted === false && r.selectedOptionId) {
+            setAnswers((p) => ({ ...p, [questionId]: r.selectedOptionId! }));
+          }
+        }
         setSaveState((p) => ({ ...p, [questionId]: "saved" }));
         setSaveError((p) => {
           if (p[questionId] == null) return p;
@@ -195,7 +239,7 @@ export function ExamPlayer({
         }));
       }
     },
-    [start.sessionId, finish],
+    [start.sessionId, start.liveAnswerReveal, feedback, finish],
   );
 
   async function retryFailedThen(fn: () => void) {
@@ -320,8 +364,9 @@ export function ExamPlayer({
         Sınavı bitir
       </Button>
       <p className="type-body-sm text-ink-subtle">
-        ←/→ soru · 1–5 işaretle · F bayrak. Cevapların anında kaydedilir; sayfa
-        kapansa da kaldığın yerden devam edersin.
+        ←/→ soru · A–E / 1–5 işaretle · F işaretle · Esc bitir. Cevapların anında
+        kaydedilir; sayfa kapansa da kaldığın yerden devam edersin.
+        {start.liveAnswerReveal ? " Bu denemede cevap verince doğru/yanlış hemen görünür ve değiştirilemez." : ""}
       </p>
     </div>
   );
@@ -381,17 +426,35 @@ export function ExamPlayer({
           role="radiogroup"
           aria-label={`Soru ${q.order}`}
         >
-          {q.options.map((o, i) => (
-            <QuestionOption
-              key={o.id}
-              label={o.label}
-              text={o.text}
-              state={answers[q.questionId] === o.id ? "selected" : "default"}
-              keyHint={String(i + 1)}
-              onSelect={() => void saveAnswer(q.questionId, q.versionId, o.id)}
-            />
-          ))}
+          {q.options.map((o, i) => {
+            const fb = feedback[q.questionId];
+            const chosen = answers[q.questionId] === o.id;
+            let state: QuestionOptionState = chosen ? "selected" : "default";
+            if (fb) {
+              if (o.id === fb.correctOptionId) state = chosen ? "correct" : "missed";
+              else if (chosen) state = "incorrect";
+              else state = "disabled";
+            }
+            return (
+              <QuestionOption
+                key={o.id}
+                label={o.label}
+                text={o.text}
+                state={state}
+                keyHint={fb ? undefined : String(i + 1)}
+                onSelect={fb ? undefined : () => void saveAnswer(q.questionId, q.versionId, o.id)}
+              />
+            );
+          })}
         </div>
+        {feedback[q.questionId] ? (
+          <ExplanationBox
+            isCorrect={feedback[q.questionId].isCorrect}
+            explanation={feedback[q.questionId].explanation}
+            source={null}
+            legalReference={feedback[q.questionId].legalReference}
+          />
+        ) : null}
         {saveState[q.questionId] === "failed" && (
           <Notice tone="error">
             {saveError[q.questionId] ??
@@ -524,7 +587,7 @@ export function ExamPlayer({
               var.{" "}
             </>
           )}
-          Bitirdikten sonra cevap değiştirilemez.
+          Teslimden sonra cevap değiştirilemez; boş sorular neti etkilemez.
         </p>
       </Dialog>
     </FocusFrame>

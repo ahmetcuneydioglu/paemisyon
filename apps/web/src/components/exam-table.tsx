@@ -55,7 +55,7 @@ export function ExamTable({
             {e.questionCount} soru · {e.durationMinutes} dk
             <span className="md:hidden">
               {" "}
-              · {formatDate(e.startAt)} {formatTimeRange(e.startAt, e.endAt)}
+              · {e.publishMode === "serbest" ? "her zaman açık" : `${formatDate(e.startAt)} ${formatTimeRange(e.startAt, e.endAt)}`}
             </span>
           </span>
         </div>
@@ -65,14 +65,14 @@ export function ExamTable({
       key: "date",
       header: "Tarih",
       hideBelowMd: true,
-      cell: (e) => <span className="tabular">{formatDate(e.startAt)}</span>,
+      cell: (e) => <span className="tabular">{e.publishMode === "serbest" ? "Serbest" : formatDate(e.startAt)}</span>,
     },
     {
       key: "time",
       header: "Sınav saati",
       hideBelowMd: true,
       cell: (e) => (
-        <span className="tabular">{formatTimeRange(e.startAt, e.endAt)}</span>
+        <span className="tabular">{e.publishMode === "serbest" ? "—" : formatTimeRange(e.startAt, e.endAt)}</span>
       ),
     },
     {
@@ -118,6 +118,15 @@ function ExamActions({
   const now = Date.now();
   const startedLongAgo = now - new Date(exam.startAt).getTime() > 30 * 60_000;
 
+  if (exam.publishMode === "serbest" && exam.state === "active") {
+    return loggedIn ? (
+      <ButtonLink href={`/denemeler/${exam.id}/baslamadan-once`} size="sm">
+        Çöz
+      </ButtonLink>
+    ) : (
+      <Badge tone="accent">Her zaman açık</Badge>
+    );
+  }
   if (exam.state === "upcoming") {
     return <Badge>Başlamadı</Badge>;
   }
