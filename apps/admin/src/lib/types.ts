@@ -229,15 +229,29 @@ export interface AdminPastExamDetail {
   questions: AdminPastExamQuestion[];
 }
 
+export type ExamPublishMode = 'serbest' | 'takvimli';
+export type ExamDifficulty = 'kolay' | 'orta' | 'zor';
+
 export interface AdminExamListItem {
   id: string;
   title: string;
   startAt: string;
+  endAt: string | null;
   durationMinutes: number;
+  publishMode: ExamPublishMode;
+  difficulty: ExamDifficulty | null;
   isPremium: boolean;
+  liveAnswerReveal: boolean;
+  practiceAfterEnd: boolean;
   status: ContentStatus;
   questionCount: number;
+  /** Toplam oturum (resmî + tekrar). */
   attemptCount: number;
+  /** Resmî tamamlanan çözüm. */
+  participantCount: number;
+  avgScore: number | null;
+  rankingsComputedAt: string | null;
+  questionPackBuiltAt: string | null;
 }
 
 export interface AdminExamQuestion {
@@ -254,14 +268,103 @@ export interface AdminExamDetail {
   title: string;
   description: string | null;
   startAt: string;
+  endAt: string | null;
   durationMinutes: number;
+  publishMode: ExamPublishMode;
+  difficulty: ExamDifficulty | null;
+  examTypeId: string | null;
   isPremium: boolean;
   liveAnswerReveal: boolean;
   questionsOpenAfterEnd: boolean;
+  practiceAfterEnd: boolean;
+  /** Eski alan adı — practiceAfterEnd ile aynı. */
   archiveOpenAfterEnd: boolean;
+  remindEnabled: boolean;
+  rankingsComputedAt: string | null;
+  questionPackBuiltAt: string | null;
   status: ContentStatus;
   attemptCount: number;
   questions: AdminExamQuestion[];
+}
+
+/** GET /admin/exams/:id/publish-check (Doc 50 A4). */
+export interface ExamPublishCheck {
+  ok: boolean;
+  blockers: string[];
+  warnings: string[];
+  questionCount: number;
+  distribution: { section: string; target: number; count: number }[];
+}
+
+/** Otomatik doldurma yanıtı. */
+export interface ExamAutofillReport {
+  requested: number;
+  filled: number;
+  breakdown: { section: string; target: number; count: number; available: number }[];
+  missing: { section: string; need: number }[];
+}
+
+/** GET /admin/exams/:id/stats (Doc 50 istatistik). */
+export interface ExamStats {
+  exam: {
+    id: string;
+    title: string;
+    publishMode: ExamPublishMode;
+    status: ContentStatus;
+    rankingsComputedAt: string | null;
+  };
+  summary: {
+    started: number;
+    completed: number;
+    inProgress: number;
+    practice: number;
+    timeouts: number;
+    meanScore: number | null;
+    medianScore: number | null;
+    medianDurationSeconds: number | null;
+    maxScore: number | null;
+  };
+  distribution: { from: number; to: number; count: number }[];
+  questions: {
+    no: number;
+    questionId: string;
+    stem: string;
+    course: string;
+    topic: string;
+    correctRate: number | null;
+    blank: number;
+    avgSeconds: number | null;
+    optionShare: { optionId: string; label: string; isCorrect: boolean; count: number }[];
+    openReports: number;
+    keySuspect: boolean;
+    adjustment: 'credit_all' | 'exclude' | null;
+    attention: boolean;
+  }[];
+  topRanks: { rank: number; score: number }[];
+}
+
+export type ExamAdjustmentAction = 'credit_all' | 'exclude';
+
+export interface ExamAdjustment {
+  id: string;
+  examId: string;
+  questionId: string;
+  action: ExamAdjustmentAction;
+  reason: string;
+  actorId: string;
+  createdAt: string;
+  revertedAt: string | null;
+  stem: string;
+}
+
+export interface ExamAdjustmentPreview {
+  affected: number;
+  up: number;
+  down: number;
+  same: number;
+  avgDelta: number;
+  frozen: boolean;
+  sentence: string;
 }
 
 /** Yayın öncesi gözden geçirme uçları (/admin/exams/:id/inceleme). */
