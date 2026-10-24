@@ -226,7 +226,7 @@ export class AdminPastExamsService {
           questionsOpenAfterEnd: true,
           // Çıkmış sınavda sızma riski yok: kitapçık resmî cevap anahtarıyla
           // zaten yayımlanmış durumda.
-          archiveOpenAfterEnd: true,
+          practiceAfterEnd: true,
           status: 'published',
           sortOrder: sinav.sortOrder,
         },

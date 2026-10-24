@@ -92,6 +92,44 @@ enum QuizSessionStatus {
   abandoned
 }
 
+/// Denemeler V2 (Doc 50 §2): yayın biçimi. serbest = tarih bağımsız, aday
+/// istediği zaman çözer; takvimli = açılış saati var, pencere kapanınca sıralama donar.
+enum ExamPublishMode {
+  serbest
+  takvimli
+}
+
+enum ExamDifficulty {
+  kolay
+  orta
+  zor
+}
+
+/// Deneme çözümünün rolü (Doc 50 §2.2): official = sıralamaya giren tek resmî
+/// çözüm; practice = tekrar çözüm (sıralamaya girmez, tekrarlanabilir).
+enum AttemptRole {
+  official
+  practice
+}
+
+/// Oturum nasıl kapandı: aday teslim etti ya da süre doldu (Doc 50 §3).
+enum SessionClosedReason {
+  submitted
+  timeout
+}
+
+/// Soru iptali (Doc 50 §2.3): herkese doğru say (varsayılan) ya da hesaptan çıkar.
+enum ExamAdjustmentAction {
+  credit_all
+  exclude
+}
+
+enum ExamReminderKind {
+  day_before
+  hour_before
+  result_ready
+}
+
 // ─────────────────────────────────────────────
 // Identity & Access
 // ─────────────────────────────────────────────
@@ -123,6 +161,8 @@ model User {
   subscriptions     Subscription[]
   dailyUsage        DailyUsage[]
   quizSessions      QuizSession[]
+  examRankings      ExamRanking[]
+  examReminders     ExamReminder[]
   topicProgress     UserTopicProgress[]
   stats             UserStats?
   streak            Streak?
@@ -220,6 +260,7 @@ model ExamType {
   sections       ExamSection[]
   preferredUsers User[]
   studyPlans     StudyPlan[]
+  exams          Exam[]
 
   @@map("modules")
 }
@@ -692,15 +733,32 @@ model Exam {
   id                    String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   title                 String
   description           String?
+  /// Takvimli: pencere açılışı. Serbest: yayın anı (görünürlük başlangıcı).
   startAt               DateTime      @map("start_at")
   durationMinutes       Int           @map("duration_minutes")
+  /// Denemeler V2 (Doc 50 §2.1). Varsayılan takvimli: eski kayıtlar davranış değiştirmez.
+  publishMode           ExamPublishMode @default(takvimli) @map("publish_mode")
+  /// Takvimlide pencere kapanışı (açıkça yazılır; sonuçlar bu anda açıklanır).
+  /// Serbestte NULL = süresiz; doluysa "yeni çözüme kapanış".
+  endAt                 DateTime?     @map("end_at")
+  difficulty            ExamDifficulty?
+  /// Denemenin sınav türü: ders dağılımı (ExamSection) ve otomatik doldurma bundan.
+  examTypeId            String?       @map("exam_type_id") @db.Uuid
   isPremium             Boolean       @default(false) @map("is_premium") // eski kredi yerine (Doc 18 karar 2)
-  liveAnswerReveal      Boolean       @default(false) @map("live_answer_reveal") // varsayılan KAPALI (karar 5)
+  /// RESMÎ çözümde anlık geri bildirim (şıkka basınca doğru/yanlış + açıklama,
+  /// cevap kilitlenir). Tekrar çözümde her zaman açıktır. Varsayılan KAPALI.
+  liveAnswerReveal      Boolean       @default(false) @map("live_answer_reveal")
   questionsOpenAfterEnd Boolean       @default(true) @map("questions_open_after_end")
-  /// Sınav bitince ARŞİVDEN ÇÖZÜLEBİLİR mi? Varsayılan KAPALI — aynı deneme
-  /// birden çok kez yayınlanabildiği için arşiv, tekrar sınavının sorularını
-  /// önceden çalışmaya açık kapı bırakıyordu (6 Eylül 2026).
-  archiveOpenAfterEnd   Boolean       @default(false) @map("archive_open_after_end")
+  /// Takvimli pencere kapanınca "Pratik olarak çöz" açık mı (Doc 50). Eski
+  /// archiveOpenAfterEnd'in yerini aldı; serbestte anlamsız (tekrar çözüm zaten var).
+  practiceAfterEnd      Boolean       @default(true) @map("practice_after_end")
+  /// Takvimli: 1 gün ve 1 saat önce hatırlatma; sonuç açıklandı bildirimi.
+  remindEnabled         Boolean       @default(true) @map("remind_enabled")
+  /// Yük planı (Doc 50 §5): yayınla → cevapsız soru paketi burada; start DB'ye yalnız oturum yazar.
+  questionPack          Json?         @map("question_pack")
+  questionPackBuiltAt   DateTime?     @map("question_pack_built_at")
+  /// Takvimli sıralama donma anı (exam_rankings yazıldı).
+  rankingsComputedAt    DateTime?     @map("rankings_computed_at")
   status                ContentStatus @default(draft)
   sortOrder             Int           @default(0) @map("sort_order")
   createdBy             String?       @map("created_by") @db.Uuid
@@ -708,15 +766,89 @@ model Exam {
   updatedAt             DateTime      @updatedAt @map("updated_at")
   deletedAt             DateTime?     @map("deleted_at")
 
+  examType        ExamType?      @relation(fields: [examTypeId], references: [id])
   questions       ExamQuestion[]
   sessions        QuizSession[]
+  /// Çıkmış sınav (Doc 36) çözümleri: PastExam'e bağlı Exam'in tekrarlanabilir oturumları.
   archiveSessions QuizSession[]  @relation("ArchiveExam")
+  rankings        ExamRanking[]
+  adjustments     ExamQuestionAdjustment[]
+  reminders       ExamReminder[]
   /// Doluysa bu Exam bir çıkmış sınavın motor kaydıdır (Doc 36) — deneme
   /// listesinde görünmez. Yabancı anahtar PastExam tarafındadır.
   pastExam        PastExam?
 
   @@index([status, startAt])
+  @@index([status, publishMode, endAt])
   @@map("exams")
+}
+
+/// Donmuş/materialize sıralama (Doc 50 §2.3). Takvimlide pencere kapanınca bir
+/// kez yazılır; serbestte canlı sorgu (bkz. exams.service.leaderboard).
+model ExamRanking {
+  examId          String   @map("exam_id") @db.Uuid
+  userId          String   @map("user_id") @db.Uuid
+  sessionId       String   @map("session_id") @db.Uuid
+  rank            Int
+  score           Decimal  @db.Decimal(5, 2)
+  wrongCount      Int      @map("wrong_count")
+  durationSeconds Int      @map("duration_seconds")
+  submittedAt     DateTime @map("submitted_at")
+  computedAt      DateTime @default(now()) @map("computed_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([examId, userId])
+  @@index([examId, rank])
+  @@map("exam_rankings")
+}
+
+/// Soru iptali (Doc 50 §2.3): puanlama tek fonksiyonda bu tabloyu okur.
+model ExamQuestionAdjustment {
+  id         String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  examId     String               @map("exam_id") @db.Uuid
+  questionId String               @map("question_id") @db.Uuid
+  action     ExamAdjustmentAction
+  reason     String
+  actorId    String               @map("actor_id") @db.Uuid
+  createdAt  DateTime             @default(now()) @map("created_at")
+  revertedAt DateTime?            @map("reverted_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  @@index([examId, revertedAt])
+  @@map("exam_question_adjustments")
+}
+
+/// Hatırlatma kuyruğu (Doc 50 §2.3). "Hatırlat" düğmesi satır açar; cron gönderir.
+model ExamReminder {
+  examId  String           @map("exam_id") @db.Uuid
+  userId  String           @map("user_id") @db.Uuid
+  kind    ExamReminderKind
+  sentAt  DateTime?        @map("sent_at")
+  createdAt DateTime       @default(now()) @map("created_at")
+
+  exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([examId, userId, kind])
+  @@index([examId, kind, sentAt])
+  @@map("exam_reminders")
+}
+
+/// Teslim sonrası AĞIR iş kuyruğu (Doc 50 §5-3): ilerleme/seri/rozet güncellemesi
+/// Pazar 21:00 yığılmasında kritik yoldan çıkar; cron 50'şer işler.
+model ExamFinalizeJob {
+  sessionId   String    @id @map("session_id") @db.Uuid
+  userId      String    @map("user_id") @db.Uuid
+  createdAt   DateTime  @default(now()) @map("created_at")
+  processedAt DateTime? @map("processed_at")
+  attempts    Int       @default(0)
+  lastError   String?   @map("last_error")
+
+  @@index([processedAt, createdAt])
+  @@map("exam_finalize_jobs")
 }
 
 /// Denemenin sabit soru seti. questionVersionId YAYIN ANINDA sabitlenir —
@@ -747,10 +879,21 @@ model QuizSession {
   /// Dolu ise topicId/courseId NULL'dur. Geçmiş etiketi ve "aynı seçimle yeni
   /// tur" için saklanır; devam etme questionOrder ile zaten bağımsız çalışır.
   topicIds               String[]          @default([]) @map("topic_ids") @db.Uuid
-  // Randevulu deneme (Doc 18): katılım = bu oturum. (userId, examId) tekildir.
+  // Deneme (Doc 18 → Doc 50): katılım = bu oturum. Tekillik yalnız RESMÎ çözümde:
+  // kısmi tekil indeks (user_id, exam_id) WHERE attempt_role='official' (migration SQL).
   examId                 String?           @map("exam_id") @db.Uuid
-  /// Arşivden çözülen deneme. examId'den AYRI: orası tekil (canlı katılım bir
-  /// kezdir), arşiv çözümü ise tekrarlanabilir. Sonuca geri dönebilmek için şart.
+  /// Deneme çözümünün rolü (Doc 50 §2.2); yalnız mode=deneme oturumlarında dolu.
+  attemptRole            AttemptRole?      @map("attempt_role")
+  /// Oturum nasıl kapandı (Doc 50 §3): teslim ya da süre dolumu.
+  closedReason           SessionClosedReason? @map("closed_reason")
+  /// Mutlak son tarih (sunucu saati). Serbest: startedAt + süre; takvimli:
+  /// min(startedAt + süre, exam.endAt). Süre denetimi bunu esas alır.
+  deadlineAt             DateTime?         @map("deadline_at")
+  /// Soru iptali sonrası yeniden puanlama izi (Doc 50 §2.3): "Netin X'ten Y'ye çıktı".
+  previousScore          Decimal?          @map("previous_score") @db.Decimal(5, 2)
+  scoreUpdatedAt         DateTime?         @map("score_updated_at")
+  /// ÇIKMIŞ SINAV (Doc 36) çözümü: PastExam'e bağlı Exam'in tekrarlanabilir oturumu.
+  /// Denemelerde (Doc 50) kullanılmaz; orada examId + attemptRole='practice'.
   archiveExamId          String?           @map("archive_exam_id") @db.Uuid
   status                 QuizSessionStatus @default(in_progress)
   totalQuestions         Int               @map("total_questions")
@@ -779,10 +922,11 @@ model QuizSession {
   exam        Exam?        @relation(fields: [examId], references: [id])
   answers     QuizAnswer[]
 
-  // NULL examId'ler Postgres'te tekilliğe takılmaz → yalnız denemelerde 1 katılım.
-  @@unique([userId, examId])
+  // Tekillik kısmi indeksle (migration SQL): yalnız resmî çözüm bir kezdir.
+  @@index([userId, examId])
   @@index([userId])
   @@index([examId, status])
+  @@index([examId, attemptRole, status])
   // Günlük kişisel deneme hakkının sayımı.
   @@index([userId, personalExam, startedAt])
   @@map("quiz_sessions")

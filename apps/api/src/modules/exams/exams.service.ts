@@ -6,16 +6,56 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
+import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { QuizService } from '../quiz/quiz.service';
+import { PushService } from '../notifications/push.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import {
+  RANKING_MIN_SAMPLE,
+  mean,
+  median,
+  percentileBand,
+  rankWithTies,
+  rankingName,
+} from './exam-scoring.logic';
+import {
+  type AttemptRole,
+  type ExamWindow,
+  type MyAttemptSummary,
+  availabilityOf,
+  canStartOfficial,
+  canStartPractice,
+  deadlineFor,
+  examEndAt,
+  isPastDeadline,
+  legacyStateOf,
+  listOrder,
+  myStateOf,
+  resultLocked,
+} from './exam-state.logic';
 
 export type ExamState = 'upcoming' | 'active' | 'ended';
 
+type ExamRow = Prisma.ExamGetPayload<{ include: { _count: { select: { questions: true } } } }>;
+
+/** Cevapsız soru yükü (oynatıcı) — yayın anında pakete de bu yazılır. */
+interface PackQuestion {
+  order: number;
+  questionId: string;
+  versionId: string;
+  stem: string;
+  mediaUrl: string | null;
+  options: { id: string; label: string; text: string }[];
+}
+
 /**
- * Randevulu canlı denemeler (Doc 18). Eski ekip_sinav akışının modern hali:
- * küresel pencere (startAt..startAt+duration), tek katılım, NET puan.
- * TÜM kurallar sunucuda — istemciler (web/iOS/Android) yalnız tüketir.
+ * Denemeler V2 (Doc 50). Eski randevulu modelin (Doc 18) üstüne:
+ *  - yayın modu: serbest (tarih bağımsız) / takvimli (pencere; kapanınca sıralama donar)
+ *  - çözüm rolü: resmî (sıralamaya giren tek çözüm) / tekrar (pratik, tekrarlanabilir)
+ *  - mutlak son tarih + 10 sn ağ payı; süre dolumu TESLİMDİR
+ *  - sonuç tek fonksiyondan (quiz.completeSession → scoreAttempt), soru iptali dahil
+ * TÜM kurallar sunucuda — istemciler yalnız tüketir.
  */
 @Injectable()
 export class ExamsService {
@@ -24,48 +64,57 @@ export class ExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
+    private readonly push: PushService,
   ) {}
 
-  private endAt(exam: { startAt: Date; durationMinutes: number }): Date {
-    return new Date(exam.startAt.getTime() + exam.durationMinutes * 60_000);
+  private window(e: {
+    publishMode: 'serbest' | 'takvimli';
+    startAt: Date;
+    endAt: Date | null;
+    durationMinutes: number;
+    practiceAfterEnd: boolean;
+  }): ExamWindow {
+    return {
+      publishMode: e.publishMode,
+      startAt: e.startAt,
+      endAt: e.endAt,
+      durationMinutes: e.durationMinutes,
+      practiceAfterEnd: e.practiceAfterEnd,
+    };
   }
 
-  private stateOf(exam: { startAt: Date; durationMinutes: number }, now = new Date()): ExamState {
-    if (now < exam.startAt) return 'upcoming';
-    if (now < this.endAt(exam)) return 'active';
-    return 'ended';
+  /** Eski istemciler için: takvimli pencere kapanışı / serbestte arşiv tarihi ya da başlangıç+süre. */
+  private legacyEndAt(e: ExamWindow): Date {
+    return examEndAt(e) ?? new Date(e.startAt.getTime() + e.durationMinutes * 60_000);
   }
 
   // ── Liste (public; kullanıcı varsa kendi katılımıyla zenginleşir) ──
   /**
-   * Yayındaki denemeler.
+   * Yayındaki denemeler. Çıkmış sınavların (Doc 36) motor kayıtları listede
+   * GÖRÜNMEZ (`cikmisSinavlarDahil` yalnız `detail` için).
    *
-   * `cikmisSinavlarDahil`: liste ekranında çıkmış sınavlar GÖRÜNMEZ (kendi
-   * vitrinleri var, randevulu denemeyle karışmasınlar). Ama `detail()` bu
-   * listeden okuduğu için, tekil sorguda onları dışarıda bırakmak sınav
-   * sayfasını 404 yapıyordu — filtre yalnız listeye aittir.
+   * Görünürlük: serbest deneme yayın anından (`startAt`) önce görünmez; arşiv
+   * tarihi geçmiş serbest deneme yalnız çözümü olan adaya görünür. Takvimli
+   * deneme her zaman listelenir (yaklaşan hero'su buradan beslenir).
    */
   async list(user?: AuthenticatedUser, cikmisSinavlarDahil = false) {
+    const now = new Date();
     const exams = await this.prisma.exam.findMany({
-      // Çıkmış sınavların (Doc 36) arkasındaki Exam kayıtları burada
-      // LİSTELENMEZ: onların vitrini /paem-cikmis-sorular. Deneme listesi
-      // randevulu denemelerin yeri; ikisi karışırsa aday hangisinin canlı
-      // olduğunu ayırt edemez.
       where: {
         status: 'published',
         deletedAt: null,
         ...(cikmisSinavlarDahil ? {} : { pastExam: null }),
       },
       orderBy: [{ startAt: 'desc' }],
-      take: 50,
+      take: 60,
       include: { _count: { select: { questions: true } } },
     });
     const ids = exams.map((e) => e.id);
 
-    // Katılım sayısı + ortalama NET (yalnız tamamlananlar).
+    // Katılım = RESMÎ tamamlanmış çözüm; ortalama net de onlardan.
     const stats = await this.prisma.quizSession.groupBy({
       by: ['examId'],
-      where: { examId: { in: ids }, status: 'completed' },
+      where: { examId: { in: ids }, status: 'completed', attemptRole: 'official' },
       _count: { _all: true },
       _avg: { score: true },
     });
@@ -73,72 +122,169 @@ export class ExamsService {
 
     const mine = user
       ? await this.prisma.quizSession.findMany({
-          where: { userId: user.id, examId: { in: ids } },
-          select: { id: true, examId: true, status: true },
-        })
-      : [];
-    const mineOf = new Map(mine.map((m) => [m.examId, m]));
-
-    // Arşiv çözümleri: EN İYİ sonuç gösterilir, en sonuncusu değil.
-    //
-    // "En son" denemiştik ve yanlış çıktı: kullanıcı arşivde birden çok kez
-    // çözebiliyor, üstelik sonucunu ararken üst üste boş oturum açan bir
-    // kullanıcı gördük (6 Eylül 2026: 100 soruyu D80 Y20 çözdükten sonra 40
-    // dakikada 20'den fazla boş oturum). "En son" kuralı ona kendi 0/100
-    // çöplüğünü gösterirdi; "en iyi" gerçek emeğini gösterir.
-    const arsivler = user
-      ? await this.prisma.quizSession.findMany({
-          where: { userId: user.id, archiveExamId: { in: ids }, status: 'completed' },
-          orderBy: [{ correctCount: 'desc' }, { completedAt: 'desc' }],
+          where: { userId: user.id, examId: { in: ids }, status: { not: 'abandoned' } },
+          orderBy: [{ startedAt: 'desc' }],
           select: {
             id: true,
-            archiveExamId: true,
+            examId: true,
+            status: true,
+            attemptRole: true,
+            score: true,
             correctCount: true,
             wrongCount: true,
             blankCount: true,
             completedAt: true,
+            deadlineAt: true,
+            _count: { select: { answers: true } },
           },
         })
       : [];
-    const arsivOf = new Map<string, (typeof arsivler)[number]>();
-    for (const a of arsivler) {
-      if (a.archiveExamId && !arsivOf.has(a.archiveExamId)) arsivOf.set(a.archiveExamId, a);
+    const mineOf = new Map<string, typeof mine>();
+    for (const m of mine) {
+      if (!m.examId) continue;
+      const arr = mineOf.get(m.examId) ?? [];
+      arr.push(m);
+      mineOf.set(m.examId, arr);
     }
+    // Resmî sıram (donmuş tablo ya da canlı) — kartta "1.203 kişide 245.".
+    const rankRows = user
+      ? await this.prisma.examRanking.findMany({
+          where: { userId: user.id, examId: { in: ids } },
+          select: { examId: true, rank: true },
+        })
+      : [];
+    const rankOf = new Map(rankRows.map((r) => [r.examId, r.rank]));
 
-    const now = new Date();
-    return exams.map((e) => ({
+    const items = exams
+      .map((e) => this.listItem(e, now, mineOf.get(e.id) ?? [], statOf.get(e.id), rankOf.get(e.id)))
+      .filter((it) => {
+        // Serbest: yayın anından önce görünmez; arşiv tarihi geçtiyse yalnız çözümü olana.
+        if (it.publishMode === 'serbest') {
+          if (it.availability === 'upcoming') return false;
+          if (it.availability === 'closed' && it.myState === 'new') return false;
+        }
+        return true;
+      });
+    items.sort(
+      (a, b) =>
+        listOrder(a.availability, a.myState) - listOrder(b.availability, b.myState) ||
+        +new Date(b.startAt) - +new Date(a.startAt),
+    );
+    return items;
+  }
+
+  private listItem(
+    e: ExamRow,
+    now: Date,
+    mine: {
+      id: string;
+      status: 'in_progress' | 'completed' | 'abandoned';
+      attemptRole: AttemptRole | null;
+      score: Prisma.Decimal | null;
+      correctCount: number;
+      wrongCount: number;
+      blankCount: number;
+      completedAt: Date | null;
+      deadlineAt: Date | null;
+      _count: { answers: number };
+    }[],
+    stat?: { _count: { _all: number }; _avg: { score: Prisma.Decimal | null } },
+    rank?: number,
+  ) {
+    const w = this.window(e);
+    const official = mine.find((m) => m.attemptRole === 'official') ?? null;
+    const practices = mine.filter((m) => m.attemptRole === 'practice');
+    const activePractice = practices.find((p) => p.status === 'in_progress') ?? null;
+    const active = official?.status === 'in_progress' ? official : activePractice;
+    const my: MyAttemptSummary = {
+      officialStatus:
+        official?.status === 'completed' || official?.status === 'in_progress'
+          ? official.status
+          : null,
+      practiceInProgress: activePractice != null,
+    };
+    const availability = availabilityOf(w, now);
+    const myState = myStateOf(my);
+    const participantCount = stat?._count._all ?? 0;
+    const lockedResult = official?.status === 'completed' && resultLocked(w, 'official', now);
+    // En iyi tekrar çözüm (6 Eylül 2026 dersi: "en son" boş oturumu gösterirdi).
+    const bestPractice = [...practices]
+      .filter((p) => p.status === 'completed')
+      .sort((a, b) => b.correctCount - a.correctCount || +b.completedAt! - +a.completedAt!)[0];
+    const lastPractice = practices.find((p) => p.status === 'completed') ?? null;
+
+    return {
       id: e.id,
       title: e.title,
       description: e.description,
       startAt: e.startAt,
-      endAt: this.endAt(e),
+      endAt: this.legacyEndAt(w),
       durationMinutes: e.durationMinutes,
       questionCount: e._count.questions,
       isPremium: e.isPremium,
       questionsOpenAfterEnd: e.questionsOpenAfterEnd,
-      /** Arşivden çözmeye açık mı? İstemci "Arşivde çöz" girişini buna göre çizer. */
-      archiveOpenAfterEnd: e.archiveOpenAfterEnd,
-      state: this.stateOf(e, now),
-      participantCount: statOf.get(e.id)?._count._all ?? 0,
-      avgScore:
-        statOf.get(e.id)?._avg.score != null
-          ? Math.round(Number(statOf.get(e.id)!._avg.score) * 100) / 100
-          : null,
-      myAttempt: mineOf.get(e.id) ?? null,
-      /** Arşivde çözdüysem son sonucum — "Arşiv sonucum" girişi bunun üstünden. */
-      myArchiveAttempt: arsivOf.get(e.id)
+      /** Eski alan (Flutter): bitince çözülebilir mi — artık practiceAfterEnd. */
+      archiveOpenAfterEnd: e.practiceAfterEnd,
+      state: legacyStateOf(w, now) as ExamState,
+      participantCount,
+      avgScore: stat?._avg.score != null ? Math.round(Number(stat._avg.score) * 100) / 100 : null,
+      /** Eski alan: resmî katılım. */
+      myAttempt: official ? { id: official.id, status: official.status } : null,
+      /** Eski alan: en iyi tekrar çözüm ("arşiv sonucum"). */
+      myArchiveAttempt: bestPractice
         ? {
-            id: arsivOf.get(e.id)!.id,
-            // Sorgu zaten completed süzüyor; istemciler myAttempt ile AYNI
-            // şekli beklediği için alan açıkça yazılır.
+            id: bestPractice.id,
             status: 'completed' as const,
-            correctCount: arsivOf.get(e.id)!.correctCount,
-            wrongCount: arsivOf.get(e.id)!.wrongCount,
-            blankCount: arsivOf.get(e.id)!.blankCount,
-            completedAt: arsivOf.get(e.id)!.completedAt,
+            correctCount: bestPractice.correctCount,
+            wrongCount: bestPractice.wrongCount,
+            blankCount: bestPractice.blankCount,
+            completedAt: bestPractice.completedAt,
           }
         : null,
-    }));
+
+      // ── Doc 50 alanları ──
+      publishMode: e.publishMode,
+      difficulty: e.difficulty,
+      examTypeId: e.examTypeId,
+      liveAnswerReveal: e.liveAnswerReveal,
+      practiceAfterEnd: e.practiceAfterEnd,
+      availability,
+      myState,
+      canStartOfficial: canStartOfficial(w, my, now),
+      canStartPractice: canStartPractice(w, my, now),
+      my: {
+        official: official
+          ? {
+              attemptId: official.id,
+              status: official.status,
+              resultLocked: lockedResult,
+              score: !lockedResult && official.score != null ? Number(official.score) : null,
+              correct: lockedResult ? null : official.correctCount,
+              wrong: lockedResult ? null : official.wrongCount,
+              blank: lockedResult ? null : official.blankCount,
+              rank: lockedResult ? null : (rank ?? null),
+              total: participantCount,
+              completedAt: official.completedAt,
+            }
+          : null,
+        active: active
+          ? {
+              attemptId: active.id,
+              role: active.attemptRole,
+              deadlineAt: active.deadlineAt,
+              answered: active._count.answers,
+            }
+          : null,
+        practiceCount: practices.filter((p) => p.status === 'completed').length,
+        lastPractice: lastPractice
+          ? {
+              attemptId: lastPractice.id,
+              score: lastPractice.score != null ? Number(lastPractice.score) : null,
+              completedAt: lastPractice.completedAt,
+            }
+          : null,
+      },
+    };
   }
 
   async detail(examId: string, user?: AuthenticatedUser) {
@@ -149,129 +295,272 @@ export class ExamsService {
     return found;
   }
 
-  /** Canlı nabız: sınavda ŞU AN olan (in_progress) + bitirmiş kişi sayısı.
-   *  Hafif sorgu — oynatıcı ~20 sn'de bir yoklar; kimlik gerektirmez. */
+  /** Canlı nabız: sınavda ŞU AN olan + bitirmiş (resmî) kişi sayısı. Kimliksiz. */
   async presence(examId: string) {
     const [active, completed] = await Promise.all([
       this.prisma.quizSession.count({ where: { examId, status: 'in_progress' } }),
-      this.prisma.quizSession.count({ where: { examId, status: 'completed' } }),
+      this.prisma.quizSession.count({
+        where: { examId, status: 'completed', attemptRole: 'official' },
+      }),
     ]);
     return { active, completed };
   }
 
-  // ── Başlat / devam et (Doc 18 §7) ──
-  async start(user: AuthenticatedUser, examId: string) {
+  // ── Başlat / devam et (Doc 50 §3) ──
+  /**
+   * `role` verilmezse RESMÎ çözüm istenir; resmî çözüm zaten varsa 409
+   * EXAM_ALREADY_TAKEN döner (eski istemciyle uyumlu — Flutter bu kodla sonuca
+   * gider). Yeni istemci kurallar ekranından `role: 'practice'` ile tekrar çözüm açar.
+   */
+  async start(user: AuthenticatedUser, examId: string, requestedRole?: AttemptRole) {
     const exam = await this.prisma.exam.findFirst({
       where: { id: examId, status: 'published', deletedAt: null },
+      include: { pastExam: { select: { isPremium: true } } },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
-
     const now = new Date();
-    const state = this.stateOf(exam, now);
-    if (state === 'upcoming') {
+    const w = this.window(exam);
+    const availability = availabilityOf(w, now);
+
+    if (availability === 'upcoming') {
       throw new ConflictException({
         code: 'EXAM_NOT_STARTED',
-        message: 'Sınav henüz başlamadı.',
+        message:
+          exam.publishMode === 'takvimli' ? 'Sınav henüz başlamadı.' : 'Deneme henüz yayımlanmadı.',
         details: { startAt: exam.startAt },
       });
     }
-    if (exam.isPremium && !user.isPremium) {
+    if ((exam.isPremium || exam.pastExam?.isPremium) && !user.isPremium) {
       throw new ForbiddenException({
         code: 'PREMIUM_REQUIRED',
         message: 'Bu deneme premium üyelere özeldir.',
       });
     }
 
-    const existing = await this.prisma.quizSession.findUnique({
-      where: { userId_examId: { userId: user.id, examId } },
+    const sessions = await this.prisma.quizSession.findMany({
+      where: { userId: user.id, examId, status: { not: 'abandoned' } },
+      orderBy: [{ startedAt: 'desc' }],
+      select: {
+        id: true,
+        status: true,
+        attemptRole: true,
+        deadlineAt: true,
+        startedAt: true,
+        plannedDurationSeconds: true,
+        questionOrder: true,
+      },
     });
+    let official = sessions.find((s) => s.attemptRole === 'official') ?? null;
+    let activePractice =
+      sessions.find((s) => s.attemptRole === 'practice' && s.status === 'in_progress') ?? null;
 
-    // Pencere kapandıysa: yarım kalan katılım varsa SUNUCUDA finalize edilir.
-    if (state === 'ended') {
-      if (existing && existing.status === 'in_progress') {
-        await this.quiz.completeSession(user.id, existing.id);
+    // Süresi dolmuş yarım oturumlar önce TESLİM edilir (süre dolumu teslimdir).
+    for (const s of [official, activePractice]) {
+      if (s && s.status === 'in_progress') {
+        const dl =
+          s.deadlineAt ?? new Date(s.startedAt.getTime() + (s.plannedDurationSeconds ?? 0) * 1000);
+        if (isPastDeadline(dl, now)) {
+          await this.quiz.completeSession(user.id, s.id, 'timeout');
+          if (s === official) official = { ...s, status: 'completed' };
+          else activePractice = null;
+        }
       }
+    }
+
+    const my: MyAttemptSummary = {
+      officialStatus:
+        official?.status === 'completed' || official?.status === 'in_progress'
+          ? official.status
+          : null,
+      practiceInProgress: activePractice != null,
+    };
+
+    // Devam: yarım resmî çözüm her zaman öncelikli.
+    if (official?.status === 'in_progress' && requestedRole !== 'practice') {
+      return this.resumePayload(exam, official.id, 'official', now);
+    }
+    if (official?.status === 'in_progress' && requestedRole === 'practice') {
       throw new ConflictException({
-        code: existing ? 'EXAM_ALREADY_TAKEN' : 'EXAM_ENDED',
-        message: existing ? 'Bu sınava katıldın — sonucuna bakabilirsin.' : 'Sınav süresi doldu.',
-        details: existing ? { attemptId: existing.id } : undefined,
+        code: 'OFFICIAL_IN_PROGRESS',
+        message: 'Tekrar çözüm, resmî çözüm bittikten sonra açılır.',
+        details: { attemptId: official.id },
       });
     }
 
-    if (existing?.status === 'completed') {
+    let role: AttemptRole = requestedRole ?? 'official';
+    if (role === 'official' && official?.status === 'completed') {
+      // Pencere kapanmış ve pratik kapalıysa da aynı kod; aday sonucuna gider.
       throw new ConflictException({
         code: 'EXAM_ALREADY_TAKEN',
-        message: 'Bu sınava daha önce katıldın, tekrar katılamazsın.',
-        details: { attemptId: existing.id },
+        message: 'Bu denemeyi çözdün; tekrar çözüm sıralamayı etkilemez.',
+        details: { attemptId: official.id, canStartPractice: canStartPractice(w, my, now) },
+      });
+    }
+    if (role === 'official' && availability === 'closed') {
+      // Kapanmış denemede resmî çözüm açılmaz; pratik açıksa oraya düşülür.
+      if (canStartPractice(w, my, now)) role = 'practice';
+      else {
+        throw new ConflictException({
+          code: 'EXAM_CLOSED',
+          message:
+            exam.publishMode === 'takvimli'
+              ? 'Sınav süresi doldu.'
+              : 'Bu deneme artık yeni çözüme kapalı.',
+        });
+      }
+    }
+    if (role === 'practice') {
+      if (activePractice) return this.resumePayload(exam, activePractice.id, 'practice', now);
+      if (!canStartPractice(w, my, now)) {
+        throw new ConflictException({
+          code:
+            my.officialStatus == null && availability === 'open' ? 'OFFICIAL_FIRST' : 'EXAM_CLOSED',
+          message:
+            my.officialStatus == null && availability === 'open'
+              ? 'Önce resmî çözümünü yap; tekrar çözüm sonra açılır.'
+              : 'Bu deneme tekrar çözüme kapalı.',
+        });
+      }
+    }
+    if (role === 'official' && !canStartOfficial(w, my, now)) {
+      throw new ConflictException({
+        code: 'EXAM_CLOSED',
+        message: 'Bu deneme yeni çözüme kapalı.',
       });
     }
 
-    // Soru seti: yayın anında sabitlenmiş sürümler, exam-safe (doğru cevap YOK).
-    const questions = await this.examQuestions(examId, { withAnswers: false });
+    const questions = await this.packQuestions(exam.id, exam.questionPack);
     if (questions.length === 0) {
       throw new ConflictException({ code: 'EXAM_EMPTY', message: 'Denemeye soru bağlanmamış.' });
     }
 
-    const endAt = this.endAt(exam);
-    const session =
-      existing ??
-      (await this.prisma.quizSession
-        .create({
-          data: {
-            userId: user.id,
-            mode: 'deneme',
-            examId,
-            totalQuestions: questions.length,
-            // Cevaplanabilir sürümler SUNUCUDA sabitlenir. Boş bırakılırsa
-            // submitAnswer'daki üyelik denetimi (quiz.service) denemede devre
-            // dışı kalıyor ve sınav setinde OLMAYAN, cevabı bilinen sorular
-            // POST edilerek net şişirilebiliyordu — sıralama manipülasyonu.
-            questionOrder: questions.map((q) => q.versionId),
-            // Küresel bitişe kalan süre → mevcut sunucu süre denetimi aynen çalışır.
-            plannedDurationSeconds: Math.max(
-              1,
-              Math.floor((endAt.getTime() - now.getTime()) / 1000),
-            ),
-          },
-        })
-        .catch(() => {
-          // Unique (userId, examId) yarışı: eşzamanlı ikinci istek → mevcut oturuma düş.
-          return this.prisma.quizSession.findUniqueOrThrow({
-            where: { userId_examId: { userId: user.id, examId } },
-          });
-        }));
-
-    // Devam senaryosu: verilmiş cevaplar da döner (yenileme/cihaz değişimi güvenli).
-    const given = existing
-      ? await this.prisma.quizAnswer.findMany({
-          where: { sessionId: session.id },
-          // flagged: "emin değilim" bayrağı kalıcı (Doc 49 S1-C) — devamda geri gelir.
-          select: { questionId: true, selectedOptionId: true, flagged: true },
-        })
-      : [];
+    const deadlineAt = deadlineFor(w, role, now);
+    const plannedDurationSeconds = Math.max(
+      1,
+      Math.floor((deadlineAt.getTime() - now.getTime()) / 1000),
+    );
+    let session: { id: string };
+    try {
+      session = await this.prisma.quizSession.create({
+        data: {
+          userId: user.id,
+          mode: 'deneme',
+          examId,
+          attemptRole: role,
+          totalQuestions: questions.length,
+          // Cevaplanabilir sürümler SUNUCUDA sabitlenir (anahtar şişirmesi kapalı).
+          questionOrder: questions.map((q) => q.versionId),
+          plannedDurationSeconds,
+          deadlineAt,
+        },
+        select: { id: true },
+      });
+    } catch {
+      // Kısmi tekil indeks yarışı (eşzamanlı ikinci resmî istek) → mevcut oturuma düş.
+      const existing = await this.prisma.quizSession.findFirst({
+        where: { userId: user.id, examId, attemptRole: 'official', status: { not: 'abandoned' } },
+        select: { id: true },
+      });
+      if (!existing)
+        throw new ConflictException({ code: 'EXAM_START_FAILED', message: 'Oturum açılamadı.' });
+      return this.resumePayload(exam, existing.id, 'official', now);
+    }
 
     return {
       sessionId: session.id,
       examId,
       title: exam.title,
       mode: 'deneme' as const,
-      endsAt: endAt,
-      liveAnswerReveal: exam.liveAnswerReveal,
+      role,
+      resumed: false,
+      publishMode: exam.publishMode,
+      endsAt: deadlineAt,
+      deadlineAt,
+      serverNow: now,
+      plannedDurationSeconds,
+      remainingSeconds: plannedDurationSeconds,
+      liveAnswerReveal: exam.liveAnswerReveal || role === 'practice',
       questions,
-      givenAnswers: given,
+      givenAnswers: [] as {
+        questionId: string;
+        selectedOptionId: string | null;
+        flagged: boolean;
+      }[],
     };
   }
 
-  // ── Sonuç + inceleme (yalnız sahibi; Doc 18 güvenlik: anahtar ancak bitince) ──
+  private async resumePayload(
+    exam: {
+      id: string;
+      title: string;
+      publishMode: 'serbest' | 'takvimli';
+      liveAnswerReveal: boolean;
+      questionPack: Prisma.JsonValue | null;
+    },
+    sessionId: string,
+    role: AttemptRole,
+    now: Date,
+  ) {
+    const s = await this.prisma.quizSession.findUniqueOrThrow({
+      where: { id: sessionId },
+      select: {
+        deadlineAt: true,
+        startedAt: true,
+        plannedDurationSeconds: true,
+        questionOrder: true,
+        answers: { select: { questionId: true, selectedOptionId: true, flagged: true } },
+      },
+    });
+    const deadlineAt =
+      s.deadlineAt ?? new Date(s.startedAt.getTime() + (s.plannedDurationSeconds ?? 0) * 1000);
+    const questions = await this.packQuestions(exam.id, exam.questionPack);
+    return {
+      sessionId,
+      examId: exam.id,
+      title: exam.title,
+      mode: 'deneme' as const,
+      role,
+      resumed: true,
+      publishMode: exam.publishMode,
+      endsAt: deadlineAt,
+      deadlineAt,
+      serverNow: now,
+      plannedDurationSeconds: Math.max(
+        1,
+        Math.floor((deadlineAt.getTime() - s.startedAt.getTime()) / 1000),
+      ),
+      remainingSeconds: Math.max(0, Math.floor((deadlineAt.getTime() - now.getTime()) / 1000)),
+      liveAnswerReveal: exam.liveAnswerReveal || role === 'practice',
+      questions,
+      // Devam senaryosu: verilmiş cevaplar da döner (yenileme/cihaz değişimi güvenli).
+      givenAnswers: s.answers,
+    };
+  }
+
+  /** Soru paketi (Doc 50 §5-1): yayında üretilmiş cevapsız yük; yoksa DB'den. */
+  private async packQuestions(
+    examId: string,
+    pack: Prisma.JsonValue | null,
+  ): Promise<PackQuestion[]> {
+    if (Array.isArray(pack) && pack.length > 0) return pack as unknown as PackQuestion[];
+    return (await this.examQuestions(examId, { withAnswers: false })) as PackQuestion[];
+  }
+
+  /** Yayında çağrılır (admin): paket üretir ve saklar. */
+  async buildQuestionPack(examId: string) {
+    const questions = await this.examQuestions(examId, { withAnswers: false });
+    await this.prisma.exam.update({
+      where: { id: examId },
+      data: {
+        questionPack: questions as unknown as Prisma.InputJsonValue,
+        questionPackBuiltAt: new Date(),
+      },
+    });
+    return questions.length;
+  }
+
+  // ── Sonuç (Doc 50 §2.4) ──
   async getAttempt(user: AuthenticatedUser, attemptId: string) {
-    // Canlı katılım (examId) ya da ARŞİV çözümü (archiveExamId) — ikisi de
-    // burada incelenir. Arşiv çözen kullanıcının sonucuna dönebileceği tek
-    // kapı buydu ve yoktu: bir kullanıcı sonucunu ararken 40 dakikada 20'den
-    // fazla boş oturum açtı (6 Eylül 2026).
-    // KİŞİSEL deneme (Doc 46) de buradan incelenir: exam satırı yoktur, set
-    // oturumun kendi questionOrder'ındadır. 18 Eki 2026'ya kadar bu uç kişisel
-    // denemeyi "Katılım bulunamadı" ile reddediyordu — web oynatıcısı bitişte
-    // /sonuc'a yönlendirdiği için kullanıcı sonucunu hiç göremiyordu.
     const session = await this.prisma.quizSession.findFirst({
       where: {
         id: attemptId,
@@ -281,37 +570,84 @@ export class ExamsService {
       include: { exam: true, archiveExam: true },
     });
     const kisisel = session?.personalExam === true && !session.exam && !session.archiveExam;
-    const exam =
-      session?.exam ??
-      session?.archiveExam ??
-      (session && kisisel
-        ? {
-            id: session.id,
-            title: 'Kişisel Deneme',
-            startAt: session.startedAt,
-            durationMinutes: Math.max(1, Math.round((session.plannedDurationSeconds ?? 0) / 60)),
-          }
-        : null);
-    if (!session || !exam) throw new NotFoundException('Katılım bulunamadı.');
-    const arsiv = session.examId == null;
+    const examRow = session?.exam ?? session?.archiveExam ?? null;
+    if (!session || (!examRow && !kisisel)) throw new NotFoundException('Katılım bulunamadı.');
+    const now = new Date();
 
-    // Arşiv çözümünde pencere yoktur; canlı katılımda pencere kapanmadan
-    // sonuç açılmaz (anahtar sızmasın).
-    const ended = arsiv || this.stateOf(exam) === 'ended';
+    // Çıkmış sınav (archiveExamId) ve kişisel deneme: pencere yok.
+    const role: AttemptRole = session.attemptRole ?? (session.examId ? 'official' : 'practice');
+    const w = examRow && session.examId ? this.window(examRow) : null;
+    const locked = w ? resultLocked(w, role, now) : false;
+
     if (session.status === 'in_progress') {
-      if (!ended) {
+      const dl =
+        session.deadlineAt ??
+        new Date(session.startedAt.getTime() + (session.plannedDurationSeconds ?? 0) * 1000);
+      if (!isPastDeadline(dl, now)) {
         throw new ConflictException({
           code: 'EXAM_IN_PROGRESS',
           message: 'Sınav devam ediyor.',
-          details: { examId: session.examId },
+          details: { examId: session.examId, attemptId: session.id, deadlineAt: dl },
         });
       }
-      await this.quiz.completeSession(user.id, session.id); // tembel finalize
+      await this.quiz.completeSession(user.id, session.id, 'timeout'); // tembel finalize
     }
 
-    const fresh = await this.prisma.quizSession.findUniqueOrThrow({
-      where: { id: session.id },
-    });
+    const fresh = await this.prisma.quizSession.findUniqueOrThrow({ where: { id: session.id } });
+    const examMeta = examRow
+      ? {
+          id: examRow.id,
+          title: examRow.title,
+          startAt: examRow.startAt,
+          durationMinutes: examRow.durationMinutes,
+        }
+      : {
+          id: session.id,
+          title: 'Kişisel Deneme',
+          startAt: session.startedAt,
+          durationMinutes: Math.max(1, Math.round((session.plannedDurationSeconds ?? 0) / 60)),
+        };
+    const base = {
+      attemptId: session.id,
+      /** Eski alan: sıralamaya girmeyen çözüm. */
+      isArchive: role === 'practice' || session.archiveExamId != null,
+      isPersonal: kisisel,
+      role,
+      publishMode: examRow?.publishMode ?? null,
+      personal: kisisel,
+      closedReason: fresh.closedReason,
+      exam: examMeta,
+      startedAt: fresh.startedAt,
+      completedAt: fresh.completedAt,
+      durationSeconds: fresh.durationSeconds,
+      totalQuestions: fresh.totalQuestions,
+    };
+
+    // Takvimli resmî çözüm: pencere kapanana kadar sonuç KİLİTLİ (Figma M4-d).
+    if (locked) {
+      const answered = await this.prisma.quizAnswer.count({
+        where: { sessionId: session.id, selectedOptionId: { not: null } },
+      });
+      return {
+        ...base,
+        resultLocked: true,
+        resultAt: examEndAt(w!),
+        answeredCount: answered,
+        blankCount: fresh.totalQuestions - answered,
+        correctCount: null,
+        wrongCount: null,
+        score: null,
+        rank: null,
+        courses: [],
+        turkey: null,
+        weakTopics: [],
+        topicBreakdown: [],
+        timing: [],
+        review: [],
+        scoreUpdate: null,
+      };
+    }
+
     const answers = await this.prisma.quizAnswer.findMany({
       where: { sessionId: session.id },
       select: {
@@ -323,33 +659,34 @@ export class ExamsService {
       },
     });
     const answerOf = new Map(answers.map((a) => [a.questionId, a]));
-    // Randevulu denemede KAYNAK ETİKETİ GÖSTERİLMEZ (kullanıcı kararı,
-    // 4 Eylül 2026): aday sonucu incelerken yalnız açıklamayı görür. Etiket
-    // sorunun geldiği kitabı/sınavı işaret ediyor; denemenin kendisi bir ürün
-    // ve kaynağını dağıtmak istemiyoruz. Alıştırma ve public akışlarda etiket
-    // yerinde duruyor — orada "gerçek, kaynaklı çıkmış soru" güveni anlatılır;
-    // oradaki görünürlük panelden (Sorular > kaynak etiketi) yönetiliyor.
+    const adjustments = session.examId ? await this.activeAdjustments(session.examId) : new Map();
+
+    // KAYNAK ETİKETİ GÖSTERİLMEZ (4 Eylül 2026 kararı): yalnız açıklama.
     const sorular = kisisel
       ? await this.sessionQuestions(session.questionOrder)
-      : await this.examQuestions(exam.id, { withAnswers: true });
+      : await this.examQuestions(examMeta.id, { withAnswers: true });
     const review = sorular.map((q) => ({
       ...q,
       source: null,
       selectedOptionId: answerOf.get(q.questionId)?.selectedOptionId ?? null,
-      /** "Emin değilim" bayrağı (Doc 49 S1-C) — sonuç ekranında "bayrakladığın sorular". */
       flagged: answerOf.get(q.questionId)?.flagged ?? false,
+      adjustment: adjustments.get(q.questionId) ?? null,
     }));
 
-    // Derin analiz (Doc 25 wireframe 08): konu bazlı kırılım — "kaybın nereden?"
-    // İlk kart kontrol edilebilirlik verir: en çok kaybettiren konular üstte.
-    const topicOf = new Map(
-      (
-        await this.prisma.question.findMany({
-          where: { id: { in: review.map((q) => q.questionId) } },
-          select: { id: true, topic: { select: { id: true, name: true } } },
-        })
-      ).map((q) => [q.id, q.topic]),
-    );
+    // Konu ve DERS kırılımı. Ders = sınav türünün müfredat bölümü (ExamSection);
+    // resmî tablo sırasıyla, sabit (Doc 50 §2.4).
+    const qMeta = await this.prisma.question.findMany({
+      where: { id: { in: review.map((q) => q.questionId) } },
+      select: { id: true, topic: { select: { id: true, name: true, courseId: true } } },
+    });
+    const metaOf = new Map(qMeta.map((q) => [q.id, q.topic]));
+    const statusOf = (qid: string): 'correct' | 'wrong' | 'blank' => {
+      const a = answerOf.get(qid);
+      if (a?.isCorrect === true) return 'correct';
+      if (a?.selectedOptionId != null) return 'wrong';
+      return 'blank';
+    };
+
     const byTopic = new Map<
       string,
       {
@@ -362,156 +699,721 @@ export class ExamsService {
       }
     >();
     for (const q of review) {
-      const topic = topicOf.get(q.questionId);
-      if (!topic) continue;
-      const b = byTopic.get(topic.id) ?? {
-        topicId: topic.id,
-        topicName: topic.name,
+      const t = metaOf.get(q.questionId);
+      if (!t) continue;
+      const b = byTopic.get(t.id) ?? {
+        topicId: t.id,
+        topicName: t.name,
         correct: 0,
         wrong: 0,
         blank: 0,
         total: 0,
       };
-      const a = answerOf.get(q.questionId);
       b.total++;
-      if (a?.isCorrect === true) b.correct++;
-      else if (a?.selectedOptionId != null) b.wrong++;
-      else b.blank++;
-      byTopic.set(topic.id, b);
+      b[statusOf(q.questionId)]++;
+      byTopic.set(t.id, b);
     }
     const topicBreakdown = [...byTopic.values()].sort(
       (a, b) => b.wrong + b.blank - (a.wrong + a.blank) || b.total - a.total,
     );
+    const weakTopics = topicBreakdown.filter((t) => t.wrong + t.blank > 0).slice(0, 5);
 
-    // Süre yönetimi şeridi (Doc 27 wireframe 11): soru sırasına göre harcanan
-    // süre. timeSpentMs istemciden gelir; yoksa null (eski denemeler).
-    const timing = review.map((q) => {
-      const a = answerOf.get(q.questionId);
-      return {
-        order: q.order,
-        timeSpentMs: a?.timeSpentMs ?? null,
-        status:
-          a?.isCorrect === true
-            ? ('correct' as const)
-            : a?.selectedOptionId != null
-              ? ('wrong' as const)
-              : ('blank' as const),
+    const examTypeId =
+      examRow?.examTypeId ??
+      (
+        await this.prisma.user.findUnique({
+          where: { id: user.id },
+          select: { preferredModuleId: true },
+        })
+      )?.preferredModuleId ??
+      null;
+    const courses = await this.courseBreakdown(
+      examTypeId,
+      review.map((q) => ({
+        courseId: metaOf.get(q.questionId)?.courseId ?? null,
+        status: statusOf(q.questionId),
+      })),
+    );
+
+    const timing = review.map((q) => ({
+      order: q.order,
+      timeSpentMs: answerOf.get(q.questionId)?.timeSpentMs ?? null,
+      status: statusOf(q.questionId),
+    }));
+
+    // Sıra ve Türkiye kıyası yalnız RESMÎ deneme çözümünde.
+    let rank: {
+      available: boolean;
+      rank: number | null;
+      total: number;
+      percentile: number | null;
+      reason?: string;
+    } | null = null;
+    let turkey: {
+      locked: boolean;
+      sample: number;
+      minSample: number;
+      mean: number | null;
+      median: number | null;
+      diff: number | null;
+    } | null = null;
+    if (session.examId && role === 'official' && !kisisel) {
+      const ranked = await this.rankedRows(session.examId, examRow!);
+      const me = ranked.rows.find((r) => r.row.key === user.id) ?? null;
+      const total = ranked.rows.length;
+      rank = {
+        available: total >= RANKING_MIN_SAMPLE,
+        rank: total >= RANKING_MIN_SAMPLE && me ? me.rank : null,
+        total,
+        percentile: total >= RANKING_MIN_SAMPLE && me ? percentileBand(me.rank, total) : null,
+        reason: total >= RANKING_MIN_SAMPLE ? undefined : 'min_sample',
       };
-    });
+      const scores = ranked.rows.map((r) => r.row.score);
+      const myScore = fresh.score != null ? Number(fresh.score) : null;
+      turkey = {
+        locked: !user.isPremium,
+        sample: total,
+        minSample: RANKING_MIN_SAMPLE,
+        mean: user.isPremium && total >= RANKING_MIN_SAMPLE ? mean(scores) : null,
+        median: user.isPremium && total >= RANKING_MIN_SAMPLE ? median(scores) : null,
+        diff:
+          user.isPremium && total >= RANKING_MIN_SAMPLE && myScore != null && mean(scores) != null
+            ? Math.round((myScore - mean(scores)!) * 100) / 100
+            : null,
+      };
+    }
 
     return {
-      attemptId: session.id,
-      /** Arşiv/kişisel çözüm sıralamaya girmez — istemci rozeti buna göre çizer. */
-      isArchive: arsiv,
-      /** Kişisel deneme (Doc 46): kullanıcının kendi müfredat ağırlıklı seti. */
-      isPersonal: kisisel,
-      exam: {
-        id: exam.id,
-        title: exam.title,
-        startAt: exam.startAt,
-        durationMinutes: exam.durationMinutes,
-      },
-      totalQuestions: fresh.totalQuestions,
+      ...base,
+      resultLocked: false,
+      resultAt: null,
       correctCount: fresh.correctCount,
       wrongCount: fresh.wrongCount,
       blankCount: fresh.blankCount,
-      score: fresh.score != null ? Number(fresh.score) : null, // NET (doğru − yanlış/4)
-      durationSeconds: fresh.durationSeconds,
-      completedAt: fresh.completedAt,
+      score: fresh.score != null ? Number(fresh.score) : null, // NET
+      rank,
+      courses,
+      turkey,
+      weakTopics,
+      scoreUpdate:
+        fresh.previousScore != null && fresh.scoreUpdatedAt != null
+          ? {
+              from: Number(fresh.previousScore),
+              to: Number(fresh.score ?? 0),
+              at: fresh.scoreUpdatedAt,
+            }
+          : null,
       topicBreakdown,
       timing,
       review,
     };
   }
 
-  /**
-   * Süresi dolmuş katılımları SUNUCUDA kapatır (her 2 dk).
-   *
-   * Finalize eskiden yalnız TEMBELDİ: kullanıcı sonucunu açtığında ya da
-   * sınava yeniden girmeyi denediğinde. Sekmeyi kapatıp bir daha dönmeyen
-   * katılımcı `in_progress` kalıyor; sıralama ve ortalama NET yalnız
-   * `completed` satırları saydığı için o kişi tabloda HİÇ görünmüyordu.
-   * 100 kişilik gerçek bir denemede bu, sıralamayı yanlış gösterir.
-   *
-   * completeSession idempotenttir — çok replikalı dağıtımda ya da tembel
-   * finalize ile yarışırsa istatistik ÇİFT SAYILMAZ.
-   */
-  @Cron('*/2 * * * *')
-  async finalizeExpiredAttempts() {
-    const stale = await this.prisma.$queryRaw<{ id: string; user_id: string }[]>`
-      SELECT qs.id, qs.user_id
-      FROM quiz_sessions qs
-      JOIN exams e ON e.id = qs.exam_id
-      WHERE qs.status = 'in_progress'
-        AND qs.exam_id IS NOT NULL
-        AND (e.start_at + make_interval(mins => e.duration_minutes)) < now()
-      UNION ALL
-      -- Arşivden çözülen oturumlar (çıkmış sınav dâhil) buraya girmiyordu ve
-      -- sonsuza kadar 'in_progress' kalıyordu: 7 Eylül 2026'da 10 tanesi
-      -- açıkta duruyordu. Onların penceresi denemenin tarihi değil, kendi
-      -- başlangıçları + planlanan süredir.
-      SELECT qs.id, qs.user_id
-      FROM quiz_sessions qs
-      WHERE qs.status = 'in_progress'
-        AND qs.archive_exam_id IS NOT NULL
-        AND qs.planned_duration_seconds IS NOT NULL
-        AND (qs.started_at + make_interval(secs => qs.planned_duration_seconds)) < now()
-      LIMIT 500`;
-    if (stale.length === 0) return;
-
-    // SIRAYLA: pooler bağlantısı dar (Supabase havuzu prod ile ortak), sınav
-    // bitişindeki yığılmada paralel finalize havuzu tüketirdi.
-    let ok = 0;
-    for (const row of stale) {
-      try {
-        await this.quiz.completeSession(row.user_id, row.id);
-        ok++;
-      } catch (e) {
-        this.logger.warn(`Katılım kapatılamadı ${row.id}: ${(e as Error).message}`);
-      }
-    }
-    this.logger.log(`Süresi dolan oturum kapatıldı: ${ok}/${stale.length}`);
+  /** Geri alınmamış soru iptalleri: soru id → eylem. */
+  async activeAdjustments(examId: string) {
+    const rows = await this.prisma.examQuestionAdjustment.findMany({
+      where: { examId, revertedAt: null },
+      select: { questionId: true, action: true },
+    });
+    return new Map(rows.map((r) => [r.questionId, r.action]));
   }
 
-  // ── Deneme sıralaması (public; pencere kapanmadan liste verilmez) ──
+  /** Ders dağılımı: sınav türünün müfredat bölümleri, resmî sırayla; bölümsüz soru "Diğer". */
+  private async courseBreakdown(
+    examTypeId: string | null,
+    rows: { courseId: string | null; status: 'correct' | 'wrong' | 'blank' }[],
+  ) {
+    const sections = examTypeId
+      ? await this.prisma.examSection.findMany({
+          where: { examTypeId, deletedAt: null },
+          orderBy: { sortOrder: 'asc' },
+          select: { id: true, name: true, courses: { select: { courseId: true } } },
+        })
+      : [];
+    const sectionOfCourse = new Map<string, string>();
+    for (const s of sections)
+      for (const c of s.courses)
+        if (!sectionOfCourse.has(c.courseId)) sectionOfCourse.set(c.courseId, s.id);
+    const acc = new Map(
+      sections.map((s) => [
+        s.id,
+        { sectionId: s.id, name: s.name, total: 0, correct: 0, wrong: 0, blank: 0 },
+      ]),
+    );
+    const other = {
+      sectionId: null as string | null,
+      name: 'Diğer',
+      total: 0,
+      correct: 0,
+      wrong: 0,
+      blank: 0,
+    };
+    for (const r of rows) {
+      const sid = r.courseId ? sectionOfCourse.get(r.courseId) : undefined;
+      const b = sid ? acc.get(sid)! : other;
+      b.total++;
+      b[r.status]++;
+    }
+    const out: {
+      sectionId: string | null;
+      name: string;
+      total: number;
+      correct: number;
+      wrong: number;
+      blank: number;
+    }[] = [...acc.values()];
+    if (other.total > 0) out.push(other);
+    return out;
+  }
+
+  // ── İnceleme listesi (Doc 50 §3): soru bazlı Türkiye oranı ve süre Premium ──
+  async review(user: AuthenticatedUser, attemptId: string) {
+    const result = await this.getAttempt(user, attemptId);
+    if (result.resultLocked) {
+      throw new ConflictException({
+        code: 'RESULT_LOCKED',
+        message: 'Sonuçlar pencere kapanınca açıklanır.',
+        details: { resultAt: result.resultAt },
+      });
+    }
+    const examId = result.role && !result.isPersonal ? result.exam.id : null;
+    const timing = result.timing as {
+      order: number;
+      timeSpentMs: number | null;
+      status: 'correct' | 'wrong' | 'blank';
+    }[];
+    const reviewRows = result.review as {
+      order: number;
+      questionId: string;
+      flagged: boolean;
+      selectedOptionId: string | null;
+      options: { id: string; isCorrect?: boolean }[];
+      adjustment: 'credit_all' | 'exclude' | null;
+    }[];
+    const qids = reviewRows.map((q) => q.questionId);
+    const meta = await this.prisma.question.findMany({
+      where: { id: { in: qids } },
+      select: { id: true, topic: { select: { name: true, course: { select: { name: true } } } } },
+    });
+    const metaOf = new Map(meta.map((m) => [m.id, m.topic]));
+
+    // Türkiye oranı: bu denemenin RESMÎ tamamlanmış çözümlerinde doğru oranı ve ortalama süre.
+    let rateOf = new Map<string, { rate: number; avgMs: number | null }>();
+    let majority = 0;
+    if (examId && user.isPremium) {
+      const rows = await this.prisma.$queryRaw<
+        { question_id: string; n: number; ok: number; avg_ms: number | null }[]
+      >`
+        SELECT qa.question_id, COUNT(*)::int AS n,
+               SUM(CASE WHEN qa.is_correct THEN 1 ELSE 0 END)::int AS ok,
+               AVG(qa.time_spent_ms)::float AS avg_ms
+        FROM quiz_answers qa
+        JOIN quiz_sessions qs ON qs.id = qa.session_id
+        WHERE qs.exam_id = ${examId}::uuid AND qs.status = 'completed' AND qs.attempt_role = 'official'
+        GROUP BY qa.question_id`;
+      rateOf = new Map(
+        rows.map((r) => [
+          r.question_id,
+          {
+            rate: r.n > 0 ? Math.round((r.ok / r.n) * 100) : 0,
+            avgMs: r.avg_ms != null ? Math.round(r.avg_ms) : null,
+          },
+        ]),
+      );
+    }
+    const items = reviewRows.map((q) => {
+      const tm = timing.find((t) => t.order === q.order);
+      const status = tm?.status ?? 'blank';
+      const tr = rateOf.get(q.questionId) ?? null;
+      const missedMajority = tr != null && tr.rate >= 70 && status !== 'correct';
+      if (missedMajority) majority++;
+      const t = metaOf.get(q.questionId);
+      return {
+        no: q.order,
+        questionId: q.questionId,
+        course: t?.course.name ?? null,
+        topic: t?.name ?? null,
+        status,
+        flagged: q.flagged,
+        selectedOptionId: q.selectedOptionId,
+        correctOptionId: q.options.find((o) => o.isCorrect)?.id ?? null,
+        seconds: tm?.timeSpentMs != null ? Math.round(tm.timeSpentMs / 1000) : null,
+        turkeyRate: tr?.rate ?? null,
+        avgSeconds: tr?.avgMs != null ? Math.round(tr.avgMs / 1000) : null,
+        missedMajority,
+        adjustment: q.adjustment,
+      };
+    });
+    return {
+      attemptId,
+      locked: !user.isPremium,
+      majorityMissed: user.isPremium ? majority : null,
+      items,
+    };
+  }
+
+  // ── Sıralama (Doc 50 §2.3): serbest canlı, takvimli donmuş ──
+  private async rankedRows(
+    examId: string,
+    exam: { publishMode: 'serbest' | 'takvimli'; rankingsComputedAt: Date | null },
+  ) {
+    if (exam.publishMode === 'takvimli' && exam.rankingsComputedAt) {
+      const rows = await this.prisma.examRanking.findMany({
+        where: { examId },
+        orderBy: { rank: 'asc' },
+        include: { user: { select: { displayName: true, deletedAt: true } } },
+      });
+      return {
+        frozen: true,
+        rows: rows
+          .filter((r) => r.user.deletedAt == null)
+          .map((r) => ({
+            rank: r.rank,
+            row: {
+              key: r.userId,
+              score: Number(r.score),
+              wrongCount: r.wrongCount,
+              durationSeconds: r.durationSeconds,
+              submittedAt: r.submittedAt,
+              sessionId: r.sessionId,
+              displayName: r.user.displayName,
+              correctCount: null as number | null,
+              blankCount: null as number | null,
+            },
+          })),
+      };
+    }
+    const sessions = await this.prisma.quizSession.findMany({
+      where: { examId, status: 'completed', attemptRole: 'official' },
+      include: { user: { select: { displayName: true, deletedAt: true } } },
+    });
+    const rows = rankWithTies(
+      sessions
+        .filter((s) => s.user.deletedAt == null)
+        .map((s) => ({
+          key: s.userId,
+          score: s.score != null ? Number(s.score) : 0,
+          wrongCount: s.wrongCount,
+          durationSeconds: s.durationSeconds ?? 0,
+          submittedAt: s.completedAt ?? s.startedAt,
+          sessionId: s.id,
+          displayName: s.user.displayName,
+          correctCount: s.correctCount as number | null,
+          blankCount: s.blankCount as number | null,
+        })),
+    );
+    return { frozen: false, rows };
+  }
+
   async leaderboard(examId: string, user?: AuthenticatedUser) {
     const exam = await this.prisma.exam.findFirst({
       where: { id: examId, status: 'published', deletedAt: null },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
-    if (this.stateOf(exam) !== 'ended') {
-      return { available: false, endAt: this.endAt(exam), top: [], me: null };
+    const w = this.window(exam);
+    const endAt = this.legacyEndAt(w);
+    if (exam.publishMode === 'takvimli' && availabilityOf(w, new Date()) !== 'closed') {
+      return {
+        available: false,
+        reason: 'result_pending' as const,
+        endAt,
+        frozenAt: null,
+        participantCount: 0,
+        top: [],
+        me: null,
+      };
     }
-
-    const sessions = await this.prisma.quizSession.findMany({
-      where: { examId, status: 'completed' },
-      orderBy: [{ score: 'desc' }, { durationSeconds: 'asc' }, { completedAt: 'asc' }],
-      include: { user: { select: { id: true, displayName: true, deletedAt: true } } },
-    });
-    const ranked = sessions
-      .filter((s) => s.user.deletedAt == null)
-      .map((s, i) => ({
-        rank: i + 1,
-        displayName: s.user.displayName,
-        correctCount: s.correctCount,
-        wrongCount: s.wrongCount,
-        blankCount: s.blankCount,
-        score: s.score != null ? Number(s.score) : 0,
-        durationSeconds: s.durationSeconds,
-        isMe: user ? s.userId === user.id : false,
-      }));
-
-    const me = ranked.find((r) => r.isMe) ?? null;
+    const ranked = await this.rankedRows(examId, exam);
+    const total = ranked.rows.length;
+    if (total < RANKING_MIN_SAMPLE) {
+      return {
+        available: false,
+        reason: 'min_sample' as const,
+        endAt,
+        frozenAt: exam.rankingsComputedAt,
+        participantCount: total,
+        minSample: RANKING_MIN_SAMPLE,
+        top: [],
+        me: null,
+      };
+    }
+    const rows = ranked.rows.map((r) => ({
+      rank: r.rank,
+      name: rankingName(r.row.displayName),
+      displayName: r.row.displayName,
+      score: r.row.score,
+      wrongCount: r.row.wrongCount,
+      correctCount: r.row.correctCount,
+      blankCount: r.row.blankCount,
+      durationSeconds: r.row.durationSeconds,
+      isMe: user ? r.row.key === user.id : false,
+    }));
+    const me = rows.find((r) => r.isMe) ?? null;
     return {
       available: true,
-      endAt: this.endAt(exam),
-      participantCount: ranked.length,
-      top: ranked.slice(0, 100),
-      me,
+      reason: undefined,
+      endAt,
+      frozenAt: exam.rankingsComputedAt,
+      participantCount: total,
+      top: rows.slice(0, 100),
+      me: me ? { ...me, percentile: percentileBand(me.rank, total) } : null,
     };
   }
 
-  // ── Genel liderlik (eski lider-tablosu): tüm denemelerin ortalaması ──
+  /** Takvimli pencere kapanınca sıralamayı DONDURUR (tek sorgu, idempotent). */
+  async freezeRankings(examId: string) {
+    const exam = await this.prisma.exam.findUniqueOrThrow({ where: { id: examId } });
+    const live = await this.rankedRows(examId, {
+      publishMode: 'serbest',
+      rankingsComputedAt: null,
+    });
+    const now = new Date();
+    await this.prisma.$transaction(async (tx) => {
+      await tx.examRanking.deleteMany({ where: { examId } });
+      if (live.rows.length > 0) {
+        await tx.examRanking.createMany({
+          data: live.rows.map((r) => ({
+            examId,
+            userId: r.row.key,
+            sessionId: r.row.sessionId,
+            rank: r.rank,
+            score: r.row.score,
+            wrongCount: r.row.wrongCount,
+            durationSeconds: r.row.durationSeconds,
+            submittedAt: r.row.submittedAt,
+            computedAt: now,
+          })),
+        });
+      }
+      await tx.exam.update({ where: { id: examId }, data: { rankingsComputedAt: now } });
+    });
+    this.logger.log(`Sıralama donduruldu: ${exam.title} (${live.rows.length} resmî çözüm)`);
+    return live.rows.length;
+  }
+
+  // ── Geçmişim (Doc 50 §3) ──
+  async myAttempts(user: AuthenticatedUser) {
+    const sessions = await this.prisma.quizSession.findMany({
+      where: { userId: user.id, examId: { not: null }, status: { not: 'abandoned' } },
+      orderBy: { startedAt: 'desc' },
+      include: {
+        exam: {
+          select: {
+            id: true,
+            title: true,
+            startAt: true,
+            durationMinutes: true,
+            publishMode: true,
+          },
+        },
+      },
+    });
+    return sessions.map((s) => ({
+      attemptId: s.id,
+      exam: s.exam,
+      role: s.attemptRole,
+      status: s.status,
+      closedReason: s.closedReason,
+      correctCount: s.correctCount,
+      wrongCount: s.wrongCount,
+      blankCount: s.blankCount,
+      score: s.score != null ? Number(s.score) : null,
+      startedAt: s.startedAt,
+      completedAt: s.completedAt,
+    }));
+  }
+
+  async history(user: AuthenticatedUser) {
+    const now = new Date();
+    const sessions = await this.prisma.quizSession.findMany({
+      where: {
+        userId: user.id,
+        status: 'completed',
+        OR: [{ examId: { not: null }, mode: 'deneme' }, { personalExam: true }],
+      },
+      orderBy: { completedAt: 'desc' },
+      include: {
+        exam: {
+          select: {
+            id: true,
+            title: true,
+            publishMode: true,
+            startAt: true,
+            endAt: true,
+            durationMinutes: true,
+            practiceAfterEnd: true,
+            pastExam: { select: { id: true } },
+          },
+        },
+      },
+    });
+    const rankRows = await this.prisma.examRanking.findMany({
+      where: { userId: user.id },
+      select: { examId: true, rank: true },
+    });
+    const rankOf = new Map(rankRows.map((r) => [r.examId, r.rank]));
+    const item = (s: (typeof sessions)[number]) => {
+      const locked =
+        s.exam && s.attemptRole === 'official'
+          ? resultLocked(this.window(s.exam), 'official', now)
+          : false;
+      return {
+        attemptId: s.id,
+        examId: s.examId,
+        title: s.exam?.title ?? `Kişisel deneme · ${s.totalQuestions} soru`,
+        publishMode: s.exam?.publishMode ?? null,
+        role: s.personalExam ? 'personal' : s.attemptRole,
+        completedAt: s.completedAt,
+        closedReason: s.closedReason,
+        resultLocked: locked,
+        resultAt: locked && s.exam ? examEndAt(this.window(s.exam)) : null,
+        score: locked ? null : s.score != null ? Number(s.score) : null,
+        rank: locked ? null : (rankOf.get(s.examId ?? '') ?? null),
+        totalQuestions: s.totalQuestions,
+      };
+    };
+    const denemeler = sessions.filter(
+      (s) => s.exam && !s.exam.pastExam && s.exam.publishMode === 'serbest',
+    );
+    const haftalik = sessions.filter(
+      (s) => s.exam && !s.exam.pastExam && s.exam.publishMode === 'takvimli',
+    );
+    const kisisel = sessions.filter((s) => s.personalExam && !s.exam);
+    const official = sessions
+      .filter(
+        (s) =>
+          s.exam &&
+          !s.exam.pastExam &&
+          s.attemptRole === 'official' &&
+          !resultLocked(this.window(s.exam), 'official', now),
+      )
+      .slice(0, 6)
+      .reverse();
+    const trendPoints = official.map((s) => ({
+      attemptId: s.id,
+      at: s.completedAt,
+      score: s.score != null ? Number(s.score) : 0,
+      title: s.exam!.title,
+    }));
+    const scores = trendPoints.map((p) => p.score);
+    return {
+      trend: {
+        locked: !user.isPremium,
+        points: user.isPremium ? trendPoints : [],
+        mean: user.isPremium ? mean(scores) : null,
+        best: user.isPremium && scores.length ? Math.max(...scores) : null,
+        delta:
+          user.isPremium && scores.length >= 2
+            ? Math.round((scores[scores.length - 1] - scores[0]) * 100) / 100
+            : null,
+      },
+      denemeler: denemeler.map(item),
+      haftalik: haftalik.map(item),
+      kisisel: kisisel.map(item),
+    };
+  }
+
+  // ── Hatırlatma (Doc 50 §2.3) ──
+  async setReminder(user: AuthenticatedUser, examId: string, on: boolean) {
+    const exam = await this.prisma.exam.findFirst({
+      where: { id: examId, status: 'published', deletedAt: null },
+    });
+    if (!exam) throw new NotFoundException('Deneme bulunamadı.');
+    if (!on) {
+      await this.prisma.examReminder.deleteMany({
+        where: {
+          examId,
+          userId: user.id,
+          kind: { in: ['day_before', 'hour_before'] },
+          sentAt: null,
+        },
+      });
+      return { reminding: false };
+    }
+    if (exam.publishMode !== 'takvimli' || !exam.remindEnabled || exam.startAt <= new Date()) {
+      throw new ConflictException({
+        code: 'REMINDER_UNAVAILABLE',
+        message: 'Bu deneme için hatırlatma yok.',
+      });
+    }
+    for (const kind of ['day_before', 'hour_before'] as const) {
+      await this.prisma.examReminder.upsert({
+        where: { examId_userId_kind: { examId, userId: user.id, kind } },
+        update: {},
+        create: { examId, userId: user.id, kind },
+      });
+    }
+    return { reminding: true };
+  }
+
+  async reminderStatus(user: AuthenticatedUser, examId: string) {
+    const n = await this.prisma.examReminder.count({
+      where: { examId, userId: user.id, kind: 'day_before' },
+    });
+    return { reminding: n > 0 };
+  }
+
+  // ── Cron'lar ──
+  /**
+   * Süresi dolmuş oturumlar SUNUCUDA teslim edilir (her dakika; süre dolumu
+   * teslimdir, iptal değil). Sırayla: pooler bağlantısı dar (Supabase havuzu
+   * prod ile ortak), bitişteki yığılmada paralel finalize havuzu tüketirdi.
+   */
+  @Cron('*/1 * * * *')
+  async finalizeExpiredAttempts() {
+    const graceMs = 10_000;
+    const cutoff = new Date(Date.now() - graceMs);
+    const stale = await this.prisma.$queryRaw<{ id: string; user_id: string }[]>`
+      SELECT qs.id, qs.user_id
+      FROM quiz_sessions qs
+      WHERE qs.status = 'in_progress'
+        AND (qs.exam_id IS NOT NULL OR qs.archive_exam_id IS NOT NULL)
+        AND (qs.deadline_at IS NOT NULL OR qs.planned_duration_seconds IS NOT NULL)
+        AND COALESCE(qs.deadline_at, qs.started_at + make_interval(secs => qs.planned_duration_seconds)) < ${cutoff}
+      LIMIT 500`;
+    if (stale.length === 0) return;
+    let ok = 0;
+    for (const row of stale) {
+      try {
+        await this.quiz.completeSession(row.user_id, row.id, 'timeout');
+        ok++;
+      } catch (e) {
+        this.logger.warn(`Katılım kapatılamadı ${row.id}: ${(e as Error).message}`);
+      }
+    }
+    this.logger.log(`Süresi dolan oturum teslim edildi: ${ok}/${stale.length}`);
+  }
+
+  /**
+   * Takvimli pencere kapanışı: sıralamayı dondur, "sonuç açıklandı" bildir.
+   * Yalnız son 7 günde kapanan pencereler: Doc 50 öncesi eski denemeler
+   * dondurulmaz (sıralamaları canlı sorgudan okunmaya devam eder) ve kimseye
+   * yıllar önceki deneme için bildirim gitmez.
+   */
+  @Cron('*/1 * * * *')
+  async closeWindows() {
+    const now = new Date();
+    const exams = await this.prisma.exam.findMany({
+      where: {
+        status: 'published',
+        deletedAt: null,
+        publishMode: 'takvimli',
+        rankingsComputedAt: null,
+        endAt: {
+          lt: new Date(now.getTime() - 15_000),
+          gte: new Date(now.getTime() - 7 * 86_400_000),
+        },
+        pastExam: null,
+      },
+      select: { id: true, title: true, remindEnabled: true },
+    });
+    for (const e of exams) {
+      try {
+        // Önce açık oturumlar teslim edilsin (finalize cron'uyla yarışırsa idempotent).
+        const open = await this.prisma.quizSession.findMany({
+          where: { examId: e.id, status: 'in_progress' },
+          select: { id: true, userId: true },
+        });
+        for (const s of open)
+          await this.quiz.completeSession(s.userId, s.id, 'timeout').catch(() => undefined);
+        await this.freezeRankings(e.id);
+        if (e.remindEnabled) {
+          const participants = await this.prisma.quizSession.findMany({
+            where: { examId: e.id, attemptRole: 'official', status: 'completed' },
+            select: { userId: true, id: true },
+          });
+          for (const p of participants) {
+            const already = await this.prisma.examReminder.findUnique({
+              where: {
+                examId_userId_kind: { examId: e.id, userId: p.userId, kind: 'result_ready' },
+              },
+            });
+            if (already?.sentAt) continue;
+            await this.push.sendToUser(p.userId, {
+              title: 'Deneme sonucun açıklandı',
+              body: `${e.title}: netin ve sıran hazır.`,
+              route: `deneme-sonuc/${p.id}`,
+            });
+            await this.prisma.examReminder.upsert({
+              where: {
+                examId_userId_kind: { examId: e.id, userId: p.userId, kind: 'result_ready' },
+              },
+              update: { sentAt: new Date() },
+              create: { examId: e.id, userId: p.userId, kind: 'result_ready', sentAt: new Date() },
+            });
+          }
+        }
+      } catch (err) {
+        this.logger.warn(`Pencere kapatılamadı ${e.id}: ${(err as Error).message}`);
+      }
+    }
+  }
+
+  /** Hatırlatmalar: 1 gün ve 1 saat önce (takvimli, remindEnabled). */
+  @Cron('*/5 * * * *')
+  async sendReminders() {
+    const now = Date.now();
+    const windows: { kind: 'day_before' | 'hour_before'; maxMs: number; label: string }[] = [
+      { kind: 'day_before', maxMs: 24 * 3600_000, label: 'yarın' },
+      { kind: 'hour_before', maxMs: 3600_000, label: '1 saat sonra' },
+    ];
+    for (const wnd of windows) {
+      const due = await this.prisma.examReminder.findMany({
+        where: {
+          kind: wnd.kind,
+          sentAt: null,
+          exam: {
+            status: 'published',
+            deletedAt: null,
+            remindEnabled: true,
+            publishMode: 'takvimli',
+            startAt: { gt: new Date(now), lte: new Date(now + wnd.maxMs) },
+          },
+        },
+        include: { exam: { select: { title: true, startAt: true } } },
+        take: 500,
+      });
+      for (const r of due) {
+        const saat = new Intl.DateTimeFormat('tr-TR', {
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone: 'Europe/Istanbul',
+        }).format(r.exam.startAt);
+        await this.push
+          .sendToUser(r.userId, {
+            title: `${r.exam.title} ${wnd.label} ${saat}'de`,
+            body: '150 dakika kesintisiz zaman ayır; sınav bitene kadar giriş açık.',
+            route: 'denemeler',
+          })
+          .catch(() => undefined);
+        await this.prisma.examReminder.update({
+          where: { examId_userId_kind: { examId: r.examId, userId: r.userId, kind: r.kind } },
+          data: { sentAt: new Date() },
+        });
+      }
+    }
+  }
+
+  // ── Sınav sonrası serbest soru görüntüleme (cevapsız) ──
+  async browseQuestions(examId: string) {
+    const exam = await this.prisma.exam.findFirst({
+      where: { id: examId, status: 'published', deletedAt: null },
+    });
+    if (!exam) throw new NotFoundException('Deneme bulunamadı.');
+    if (!exam.questionsOpenAfterEnd || availabilityOf(this.window(exam)) !== 'closed') {
+      throw new ForbiddenException({
+        code: 'QUESTIONS_NOT_OPEN',
+        message: 'Bu denemenin soruları görüntülemeye açık değil.',
+      });
+    }
+    return {
+      examId,
+      title: exam.title,
+      questions: await this.examQuestions(examId, { withAnswers: false }),
+    };
+  }
+
+  // ── Genel liderlik (eski lider-tablosu): resmî çözümlerin ortalaması ──
   async globalLeaderboard(user?: AuthenticatedUser) {
     const rows = await this.prisma.$queryRaw<
       {
@@ -529,17 +1431,14 @@ export class ExamsService {
              SUM(qs.correct_count)::int AS total_correct
       FROM quiz_sessions qs
       JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
-      -- İPTAL EDİLEN deneme sıralamayı kirletmez: sorgu eskiden exam'e hiç
-      -- bakmıyordu, soft-delete edilmiş bir denemenin netleri KALICI olarak
-      -- genel tabloda kalıyordu (scripts/deneme-iptal.ts bu yüzden oturumları
-      -- silmek zorundaydı).
       JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL
-      WHERE qs.mode = 'deneme' AND qs.status = 'completed'
+      WHERE qs.mode = 'deneme' AND qs.status = 'completed' AND qs.attempt_role = 'official'
       GROUP BY qs.user_id, u.display_name, u.avatar_url
       ORDER BY avg_score DESC, attempts DESC`;
     const ranked = rows.map((r, i) => ({
       rank: i + 1,
       displayName: r.display_name,
+      name: rankingName(r.display_name),
       avatarUrl: r.avatar_url,
       avgScore: Math.round(r.avg_score * 100) / 100,
       attempts: r.attempts,
@@ -550,49 +1449,7 @@ export class ExamsService {
     return { top: ranked.slice(0, 100), me, participantCount: ranked.length };
   }
 
-  // ── Sınav sonrası serbest soru görüntüleme (eski /sorular; cevapsız) ──
-  async browseQuestions(examId: string) {
-    const exam = await this.prisma.exam.findFirst({
-      where: { id: examId, status: 'published', deletedAt: null },
-    });
-    if (!exam) throw new NotFoundException('Deneme bulunamadı.');
-    if (!exam.questionsOpenAfterEnd || this.stateOf(exam) !== 'ended') {
-      throw new ForbiddenException({
-        code: 'QUESTIONS_NOT_OPEN',
-        message: 'Bu denemenin soruları görüntülemeye açık değil.',
-      });
-    }
-    return {
-      examId,
-      title: exam.title,
-      questions: await this.examQuestions(examId, { withAnswers: false }),
-    };
-  }
-
-  // ── Geçmişim ──
-  async myAttempts(user: AuthenticatedUser) {
-    const sessions = await this.prisma.quizSession.findMany({
-      where: { userId: user.id, examId: { not: null } },
-      orderBy: { startedAt: 'desc' },
-      include: {
-        exam: { select: { id: true, title: true, startAt: true, durationMinutes: true } },
-      },
-    });
-    return sessions.map((s) => ({
-      attemptId: s.id,
-      exam: s.exam,
-      status: s.status,
-      correctCount: s.correctCount,
-      wrongCount: s.wrongCount,
-      blankCount: s.blankCount,
-      score: s.score != null ? Number(s.score) : null,
-      startedAt: s.startedAt,
-      completedAt: s.completedAt,
-    }));
-  }
-
   // ── Yardımcı: sabitlenmiş sürümlerden soru yükü ──
-  /** Kişisel deneme: set `questionOrder`'daki sürüm kimlikleridir (ExamQuestion satırı yok). */
   private async sessionQuestions(questionOrder: unknown) {
     const ids = Array.isArray(questionOrder) ? (questionOrder as string[]) : [];
     if (ids.length === 0) return [];
@@ -630,7 +1487,7 @@ export class ExamsService {
     });
   }
 
-  private async examQuestions(examId: string, opts: { withAnswers: boolean }) {
+  async examQuestions(examId: string, opts: { withAnswers: boolean }) {
     const rows = await this.prisma.examQuestion.findMany({
       where: { examId },
       orderBy: { sortOrder: 'asc' },

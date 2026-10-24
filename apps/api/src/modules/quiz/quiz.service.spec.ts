@@ -2,6 +2,13 @@ import { BadRequestException, ForbiddenException, NotFoundException } from '@nes
 import { QuizService } from './quiz.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 
+/** ModuleRef stub (Doc 50): arşiv yönlendirmesi bu testlerde kullanılmaz. */
+const moduleRefStub = {
+  get: () => {
+    throw new Error('ModuleRef stub');
+  },
+} as never;
+
 /** Plan kancası (F8-A) — testte sessiz. */
 const planStub = { cevapKaydet: async () => undefined } as never;
 
@@ -73,6 +80,7 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     {} as never,
     settings as never,
     planStub,
+    moduleRefStub,
   );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
@@ -374,7 +382,14 @@ describe('QuizService.splitBySeen', () => {
       },
     };
     return {
-      svc: new QuizService(prisma as never, {} as never, {} as never, {} as never, planStub),
+      svc: new QuizService(
+        prisma as never,
+        {} as never,
+        {} as never,
+        {} as never,
+        planStub,
+        moduleRefStub,
+      ),
       prisma,
     };
   }
@@ -502,6 +517,7 @@ function setupPersonal(
     {} as never,
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
     planStub,
+    moduleRefStub,
   );
   return { service, prisma };
 }
@@ -712,6 +728,7 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
     {} as never,
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
     planStub,
+    moduleRefStub,
   );
   return { service, prisma, havuz, progress };
 }
@@ -906,6 +923,7 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
       {} as never,
       {} as never,
       planStub,
+      moduleRefStub,
     );
     const r = await service.completeSession(premiumUser.id, 's1');
     expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });

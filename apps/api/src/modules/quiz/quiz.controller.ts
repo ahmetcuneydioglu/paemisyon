@@ -5,6 +5,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { QuizService } from './quiz.service';
 import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
+import { BatchAnswersDto } from './dto/batch-answers.dto';
 
 /// POST /api/v1/quiz/* — quiz motoru (Doc 7 §4.4). Kimlik zorunlu.
 @Controller('quiz')
@@ -24,6 +25,16 @@ export class QuizController {
     @Body() dto: SubmitAnswerDto,
   ) {
     return this.quiz.submitAnswer(user, id, dto);
+  }
+
+  /// Toplu cevap (Doc 50 §5-2): geri bildirimsiz denemede tamponlu gönderim.
+  @Post('sessions/:id/answers/batch')
+  answerBatch(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: BatchAnswersDto,
+  ) {
+    return this.quiz.submitAnswersBatch(user, id, dto.answers);
   }
 
   @Post('sessions/:id/complete')

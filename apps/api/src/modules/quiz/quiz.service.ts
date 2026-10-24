@@ -11,6 +11,8 @@ import { SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { scoreAttempt, type AdjustmentAction } from '../exams/exam-scoring.logic';
+import { DEADLINE_GRACE_SECONDS } from '../exams/exam-state.logic';
 import { mixQuota, pickMix, pickTopicBalanced, pickComeback } from './session-mix.logic';
 // Ağırlıklı kota + konu-dengeli seçim admin autofill ile ORTAK saf mantık.
 import {
@@ -36,6 +38,7 @@ import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
 import { SORU_OZETI_SELECT, soruOzeti } from './soru-ozeti';
 import { PlanService } from '../plan/plan.service';
+import { ModuleRef } from '@nestjs/core';
 
 /** Kanun konusu tespiti (public.service ile aynı desen). */
 const LAW_NAME_RE = /sayılı|kanun|yönetmeli|khk|mevzuat/i;
@@ -54,13 +57,14 @@ export class QuizService {
     private readonly badges: BadgeService,
     private readonly settings: SettingsService,
     private readonly plan: PlanService,
+    private readonly moduleRef: ModuleRef,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
   /** Sınav süresi: soru başına 75 sn (polis sınavı temposu). */
   private static readonly EXAM_SECONDS_PER_QUESTION = 75;
-  /** Süre aşımı toleransı (ağ gecikmesi için). */
-  private static readonly EXAM_GRACE_SECONDS = 30;
+  /** Süre aşımı toleransı (ağ gecikmesi için) — Doc 50 §3: 10 sn. */
+  private static readonly EXAM_GRACE_SECONDS = DEADLINE_GRACE_SECONDS;
 
   async startSession(user: AuthenticatedUser, dto: StartSessionDto) {
     const userId = user.id;
@@ -733,33 +737,35 @@ export class QuizService {
       where: { id: examId, status: 'published', deletedAt: null },
     });
     if (!exam) throw new NotFoundException('Deneme bulunamadı.');
-    const endAt = new Date(exam.startAt.getTime() + exam.durationMinutes * 60_000);
-    if (new Date() < endAt) {
-      throw new BadRequestException(
-        'Bu deneme henüz arşivde değil — canlı pencere sürüyor, oradan katıl.',
-      );
-    }
-    // Arşiv artık denemeye özel bir anahtar (varsayılan KAPALI). Aynı deneme
-    // birden çok kez yayınlandığı için arşiv, TEKRAR sınavının sorularını
-    // önceden çalışmaya açık kapı bırakıyordu: 6 Eylül 2026'da bir kullanıcı
-    // akşamki tekrar sınavından yedi saat önce aynı 100 soruyu çözebildi.
-    if (!exam.archiveOpenAfterEnd) {
-      throw new BadRequestException({
-        code: 'ARCHIVE_CLOSED',
-        message: 'Bu deneme arşivden çözmeye kapalı.',
-      });
-    }
-    // Premium kapısı iki yerden gelebilir: denemenin kendisi ya da (çıkmış
-    // sınavsa) dönemin anahtarı. Dönem anahtarı ASIL karar noktasıdır —
-    // Exam.isPremium yalnız bu modu kapatır, çalışma modunu açık bırakırdı.
     const donem = await this.prisma.pastExam.findUnique({
       where: { examId: exam.id },
       select: { isPremium: true },
     });
-    if ((exam.isPremium || donem?.isPremium) && !user.isPremium) {
+    // DENEME (çıkmış sınav değil): arşiv yolu Doc 50 ile kalktı; eski istemciler
+    // (Flutter) için aynı deneme TEKRAR ÇÖZÜM (practice) olarak açılır ve eski
+    // arşiv cevap şekline çevrilir. Yeni istemci doğrudan /exams/:id/start kullanır.
+    if (!donem) {
+      // Döngüsel bağımlılık (ExamsModule → QuizModule) yüzünden tembel çözümleme.
+      const { ExamsService } = await import('../exams/exams.service');
+      const exams = this.moduleRef.get(ExamsService, { strict: false });
+      const r = await exams.start(user, examId, 'practice');
+      return {
+        sessionId: r.sessionId,
+        mode: 'exam' as const,
+        plannedDurationSeconds: r.plannedDurationSeconds,
+        remainingSeconds: r.remainingSeconds,
+        resumed: r.resumed,
+        expiredAttemptId: null as string | null,
+        questions: r.questions,
+        givenAnswers: r.givenAnswers,
+      };
+    }
+    // Çıkmış sınav (Doc 36): dönem anahtarı ASIL karar noktasıdır — Exam.isPremium
+    // yalnız bu modu kapatır, çalışma modunu açık bırakırdı.
+    if ((exam.isPremium || donem.isPremium) && !user.isPremium) {
       throw new ForbiddenException({
         code: 'PREMIUM_REQUIRED',
-        message: donem?.isPremium
+        message: donem.isPremium
           ? 'Bu çıkmış sınav Premium üyelere özeldir.'
           : 'Bu deneme premium üyelere özeldir.',
       });
@@ -1016,6 +1022,8 @@ export class QuizService {
           mode: true,
           startedAt: true,
           plannedDurationSeconds: true,
+          deadlineAt: true,
+          attemptRole: true,
           // Soru–oturum üyelik denetimi (güvenlik): yalnız bu oturuma
           // ATANMIŞ sürümler cevaplanabilir. Aksi halde bir practice oturumuna
           // canlı denemenin versionId'leri POST edilip cevap anahtarı +
@@ -1075,16 +1083,22 @@ export class QuizService {
       throw new BadRequestException('Seçilen şık bu soruya ait değil.');
     }
     // Deneme sınavında süre SUNUCUDA denetlenir — istemci saati manipüle edilemez.
-    if (session.plannedDurationSeconds != null) {
-      const deadline =
-        session.startedAt.getTime() +
-        (session.plannedDurationSeconds + QuizService.EXAM_GRACE_SECONDS) * 1000;
-      if (Date.now() > deadline) {
-        throw new ForbiddenException({
-          code: 'EXAM_TIME_OVER',
-          message: 'Sınav süresi doldu. Kalan sorular boş sayılır.',
-        });
+    // Son tarih + ağ payı geçtiyse oturum TESLİM edilir (süre dolumu teslimdir,
+    // Doc 50 §3) ve istemci sonuca yönlendirilir.
+    const deadlineMs =
+      session.deadlineAt?.getTime() ??
+      (session.plannedDurationSeconds != null
+        ? session.startedAt.getTime() + session.plannedDurationSeconds * 1000
+        : null);
+    if (deadlineMs != null && Date.now() > deadlineMs + QuizService.EXAM_GRACE_SECONDS * 1000) {
+      if (session.mode === 'deneme' || session.mode === 'exam') {
+        await this.completeSession(userId, sessionId, 'timeout').catch(() => undefined);
       }
+      throw new ForbiddenException({
+        code: 'EXAM_TIME_OVER',
+        message: 'Sınav süresi doldu. Cevapların teslim edildi.',
+        details: { attemptId: sessionId },
+      });
     }
 
     // Yeni soru → günlük sayaç; ücretsizde aynı zamanda kota (re-answer sayılmaz).
@@ -1116,12 +1130,32 @@ export class QuizService {
     const correct = version.options.find((option) => option.isCorrect);
     const isCorrect = dto.selectedOptionId != null && dto.selectedOptionId === correct?.id;
 
-    // Geri bildirim verilecek mi? exam: asla; deneme: yalnız liveAnswerReveal
-    // açık denemelerde (Doc 18 karar 5, varsayılan KAPALI — pencere açıkken
-    // anahtar SIZDIRILMAZ).
+    // Geri bildirim verilecek mi? exam (kişisel/çıkmış): asla; deneme: resmî çözümde
+    // yalnız admin anahtarı (liveAnswerReveal) açıksa, TEKRAR çözümde her zaman
+    // (Doc 50 kararı). Pencere açıkken anahtar başka türlü SIZDIRILMAZ.
     const denemeModu = session.mode === 'deneme' || session.mode === 'exam';
-    const givesFeedback =
-      session.mode !== 'exam' && !(session.mode === 'deneme' && !session.exam?.liveAnswerReveal);
+    const denemeReveal =
+      session.mode === 'deneme' &&
+      (session.exam?.liveAnswerReveal === true || session.attemptRole === 'practice');
+    const givesFeedback = session.mode !== 'exam' && (session.mode !== 'deneme' || denemeReveal);
+    // Anlık geri bildirimde İLK CEVAP KİLİTLENİR: aynı soruya ikinci gönderim
+    // hata vermez, kayıtlı cevabın geri bildirimi döner (çevrimdışı kuyruk güvenli).
+    if (denemeReveal && existing && existing.selectedOptionId != null) {
+      const correctLocked = version.options.find((o) => o.isCorrect);
+      return {
+        accepted: false,
+        locked: true,
+        duplicate: existing.selectedOptionId === dto.selectedOptionId,
+        recorded: true,
+        isCorrect: existing.isCorrect ?? false,
+        selectedOptionId: existing.selectedOptionId,
+        correctOptionId: correctLocked?.id ?? null,
+        explanation: version.explanation ?? null,
+        legalReference: version.legalReferences[0]?.citation ?? null,
+        relatedArticle: null,
+        source: null,
+      };
+    }
     const question = version.question;
     const needsArticle =
       givesFeedback &&
@@ -1203,7 +1237,7 @@ export class QuizService {
     }
 
     if (!givesFeedback) {
-      return { recorded: true };
+      return { recorded: true, accepted: true, locked: false };
     }
     let relatedArticle: {
       lawSlug: string;
@@ -1237,7 +1271,11 @@ export class QuizService {
     }
 
     return {
+      accepted: true,
+      locked: denemeReveal,
+      duplicate: false,
       isCorrect,
+      selectedOptionId: dto.selectedOptionId ?? null,
       correctOptionId: correct?.id ?? null,
       explanation: version?.explanation ?? null,
       legalReference: version?.legalReferences[0]?.citation ?? null,
@@ -1248,6 +1286,31 @@ export class QuizService {
       // ürünün güven vaadidir ve panelden yönetilir.
       source: denemeModu || !showSource ? null : (version?.sourceLabel ?? null),
     };
+  }
+
+  /**
+   * Toplu cevap (Doc 50 §5-2). Sırayla işlenir (her cevap aynı kurallardan geçer);
+   * biri süre dolumuna takılırsa kalanlar atlanır ve sonuç tek yanıtta döner.
+   */
+  async submitAnswersBatch(user: AuthenticatedUser, sessionId: string, answers: SubmitAnswerDto[]) {
+    const results: { questionId: string; ok: boolean; code?: string }[] = [];
+    let timeOver = false;
+    for (const a of answers) {
+      if (timeOver) {
+        results.push({ questionId: a.questionId, ok: false, code: 'EXAM_TIME_OVER' });
+        continue;
+      }
+      try {
+        await this.submitAnswer(user, sessionId, a);
+        results.push({ questionId: a.questionId, ok: true });
+      } catch (e) {
+        const code = (e as { getResponse?: () => unknown })?.getResponse?.() as
+          { code?: string } | undefined;
+        if (code?.code === 'EXAM_TIME_OVER') timeOver = true;
+        results.push({ questionId: a.questionId, ok: false, code: code?.code ?? 'ERROR' });
+      }
+    }
+    return { accepted: results.filter((r) => r.ok).length, results, timeOver };
   }
 
   /**
@@ -1302,7 +1365,11 @@ export class QuizService {
   }
 
   /** Oturumu bitir: skor + doğru/yanlış/boş (sunucuda hesaplanır). */
-  async completeSession(userId: string, sessionId: string) {
+  async completeSession(
+    userId: string,
+    sessionId: string,
+    reason: 'submitted' | 'timeout' = 'submitted',
+  ) {
     const session = await this.prisma.quizSession.findFirst({
       where: { id: sessionId, userId },
       include: { answers: true },
@@ -1338,23 +1405,35 @@ export class QuizService {
     const validAnswers = orderSet
       ? session.answers.filter((a) => orderSet.has(a.questionVersionId))
       : session.answers;
-    const correctCount = Math.min(
-      validAnswers.filter((a) => a.isCorrect === true).length,
-      session.totalQuestions,
-    );
-    const wrongCount = Math.min(
-      validAnswers.filter((a) => a.isCorrect === false && a.selectedOptionId != null).length,
-      session.totalQuestions - correctCount,
-    );
-    const blankCount = session.totalQuestions - correctCount - wrongCount;
-    // Puan: deneme = NET (doğru − yanlış/4, polis sınavı kuralı — Doc 18 karar 3);
-    // diğer modlar = yüzde (mevcut davranış).
-    const score =
-      session.mode === 'deneme'
-        ? correctCount - wrongCount / 4
-        : session.totalQuestions > 0
-          ? (correctCount / session.totalQuestions) * 100
-          : 0;
+    // Puan: deneme = NET (doğru − yanlış/4, polis sınavı kuralı — Doc 18 karar 3),
+    // soru iptalleri dahil TEK fonksiyondan (Doc 50 §2.3); diğer modlar = yüzde.
+    let correctCount: number;
+    let wrongCount: number;
+    let blankCount: number;
+    let score: number;
+    if (session.mode === 'deneme') {
+      const r = await this.scoreDeneme(
+        session.examId,
+        session.totalQuestions,
+        orderSet,
+        session.answers,
+      );
+      correctCount = r.correct;
+      wrongCount = r.wrong;
+      blankCount = r.blank;
+      score = r.score;
+    } else {
+      correctCount = Math.min(
+        validAnswers.filter((a) => a.isCorrect === true).length,
+        session.totalQuestions,
+      );
+      wrongCount = Math.min(
+        validAnswers.filter((a) => a.isCorrect === false && a.selectedOptionId != null).length,
+        session.totalQuestions - correctCount,
+      );
+      blankCount = session.totalQuestions - correctCount - wrongCount;
+      score = session.totalQuestions > 0 ? (correctCount / session.totalQuestions) * 100 : 0;
+    }
     // Geçen süre. Randevulu denemede TAVAN planlanan süredir: oturum, süre
     // dolduktan çok sonra (sonuç ekranı açıldığında ya da süpürücü cron ile)
     // finalize olabilir; ham "şimdi − başlangıç" o durumda saatler/günler çıkar
@@ -1367,19 +1446,54 @@ export class QuizService {
       session.plannedDurationSeconds != null
         ? Math.min(elapsedSeconds, session.plannedDurationSeconds)
         : elapsedSeconds;
+    // Süre dolumuyla teslimde teslim anı SON TARİHTİR (Doc 50 §3).
+    const completedAt =
+      reason === 'timeout' && session.deadlineAt != null && session.deadlineAt < new Date()
+        ? session.deadlineAt
+        : new Date();
 
     await this.prisma.quizSession.update({
       where: { id: sessionId },
       data: {
         status: 'completed',
-        completedAt: new Date(),
+        completedAt,
         correctCount,
         wrongCount,
         blankCount,
         score,
         durationSeconds,
+        ...(session.mode === 'deneme' ? { closedReason: reason } : {}),
       },
     });
+
+    // DENEME: ilerleme/seri/rozet güncellemesi kritik yoldan çıkar (Doc 50 §5-3) —
+    // Pazar 21:00 bitiş yığılmasında completeSession hafif kalır; kuyruk cron'u
+    // (ExamFinalizeJobService) 50'şer işler. Sonuç ekranı puanı hemen görür.
+    if (session.mode === 'deneme') {
+      await this.prisma.examFinalizeJob
+        .upsert({
+          where: { sessionId },
+          update: {},
+          create: { sessionId, userId },
+        })
+        .catch((e: unknown) =>
+          this.logger.warn(`Finalize kuyruğa yazılamadı ${sessionId}: ${(e as Error).message}`),
+        );
+      return {
+        sessionId,
+        mode: session.mode,
+        totalQuestions: session.totalQuestions,
+        correctCount,
+        wrongCount,
+        blankCount,
+        score: Math.round(score * 100) / 100,
+        durationSeconds,
+        plannedDurationSeconds: session.plannedDurationSeconds,
+        closedReason: reason,
+        topicBreakdown: null,
+        earnedBadges: [],
+      };
+    }
 
     // İlerleme/istatistik/streak/yanlışlar güncelle (Doc 6/7).
     await this.progress.recordSessionCompletion(userId, {
@@ -1449,6 +1563,70 @@ export class QuizService {
   }
 
   /**
+   * Deneme puanı — TEK nokta (Doc 50 §2.3): teslimde ve soru iptali sonrası
+   * yeniden puanlamada aynı fonksiyon. İptaller geri alınmamış satırlardan okunur.
+   */
+  async scoreDeneme(
+    examId: string | null,
+    total: number,
+    orderSet: Set<string> | null,
+    answers: {
+      questionId: string;
+      questionVersionId: string;
+      selectedOptionId: string | null;
+      isCorrect: boolean | null;
+    }[],
+  ) {
+    const adjustments = new Map<string, AdjustmentAction>();
+    if (examId) {
+      const rows = await this.prisma.examQuestionAdjustment.findMany({
+        where: { examId, revertedAt: null },
+        select: { questionId: true, action: true },
+      });
+      for (const r of rows) adjustments.set(r.questionId, r.action);
+    }
+    // Sürüm → soru eşlemesi: set bilinmiyorsa cevaplardan türetilir.
+    let byVersion: Map<string, string> | null = null;
+    if (orderSet) {
+      byVersion = new Map();
+      const known = new Map(answers.map((a) => [a.questionVersionId, a.questionId]));
+      const missing = [...orderSet].filter((v) => !known.has(v));
+      if (missing.length > 0) {
+        const vs = await this.prisma.questionVersion.findMany({
+          where: { id: { in: missing } },
+          select: { id: true, questionId: true },
+        });
+        for (const v of vs) known.set(v.id, v.questionId);
+      }
+      for (const v of orderSet) {
+        const q = known.get(v);
+        if (q) byVersion.set(v, q);
+      }
+    }
+    return scoreAttempt({ total, questionIdByVersion: byVersion, answers, adjustments });
+  }
+
+  /** Kuyruktaki teslim işini çalıştırır: ilerleme + rozet (deneme için ertelenen ağır kısım). */
+  async runFinalizeJob(userId: string, sessionId: string) {
+    const session = await this.prisma.quizSession.findFirst({
+      where: { id: sessionId, userId, status: 'completed' },
+      include: { answers: true },
+    });
+    if (!session) return;
+    await this.progress.recordSessionCompletion(userId, {
+      topicId: session.topicId,
+      correctCount: session.correctCount,
+      wrongCount: session.wrongCount,
+      answers: session.answers.map((a) => ({
+        questionId: a.questionId,
+        isCorrect: a.isCorrect,
+        selectedOptionId: a.selectedOptionId,
+      })),
+    });
+    await this.badges.checkAndAward(userId).catch(() => undefined);
+  }
+
+  /**
    * Devam eden tur çapası (Doc 27 §2.4, Doc 25 §7 emniyet 3): kullanıcının
    * en son yarım kalan çalışma oturumu. Deneme (randevulu) hariç — onun kendi
    * devam akışı var (exams/start).
@@ -1465,6 +1643,9 @@ export class QuizService {
           // dönüş yolunu burada arıyor. Canlı deneme (examId) DIŞARIDA
           // kalır — onun kendi penceresi ve akışı var.
           { mode: 'exam', archiveExamId: { not: null } },
+          // Tekrar çözüm (Doc 50): sıralamaya girmeyen deneme çözümü de devam
+          // eden turdur. RESMÎ çözüm dışarıda — onun kapısı exams/start.
+          { mode: 'deneme', attemptRole: 'practice' },
         ],
       },
       orderBy: { startedAt: 'desc' },
@@ -1475,7 +1656,9 @@ export class QuizService {
         startedAt: true,
         questionOrder: true,
         plannedDurationSeconds: true,
+        deadlineAt: true,
         archiveExam: { select: { title: true } },
+        exam: { select: { title: true } },
         topic: { select: { name: true } },
         course: { select: { name: true } },
         topicIds: true,
@@ -1493,18 +1676,21 @@ export class QuizService {
         session.topic?.name ??
         session.course?.name ??
         session.archiveExam?.title ??
+        session.exam?.title ??
         (session.topicIds.length > 0 ? `${session.topicIds.length} seçili mevzuat` : null),
       /** Seçili mevzuat turunun konuları — istemci "aynı seçimle yeni tur" kurar. */
       topicIds: session.topicIds,
       /** Süreli oturumda kalan saniye; süresiz turda null. */
       remainingSeconds:
-        session.plannedDurationSeconds != null
-          ? Math.max(
-              0,
-              session.plannedDurationSeconds -
-                Math.floor((Date.now() - session.startedAt.getTime()) / 1000),
-            )
-          : null,
+        session.deadlineAt != null
+          ? Math.max(0, Math.floor((session.deadlineAt.getTime() - Date.now()) / 1000))
+          : session.plannedDurationSeconds != null
+            ? Math.max(
+                0,
+                session.plannedDurationSeconds -
+                  Math.floor((Date.now() - session.startedAt.getTime()) / 1000),
+              )
+            : null,
       // Eski oturumlarda soru sırası yok → gerçek devam mümkün değil; istemci
       // 'bitir ve sonucu gör' yolunu sunar.
       resumable: Array.isArray(session.questionOrder) && session.questionOrder.length > 0,

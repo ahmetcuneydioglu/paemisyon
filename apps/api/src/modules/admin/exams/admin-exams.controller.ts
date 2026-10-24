@@ -16,7 +16,13 @@ import { Roles } from '../../auth/decorators/roles.decorator';
 import { CurrentUser } from '../../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AdminExamsService } from './admin-exams.service';
-import { AutofillExamDto, SetExamQuestionsDto, UpsertExamDto } from '../dto/exam.dto';
+import {
+  AutofillExamDto,
+  ExamAdjustmentDto,
+  SetExamQuestionsDto,
+  UpsertExamDto,
+} from '../dto/exam.dto';
+import { AdminExamAdjustmentsService } from './admin-exam-adjustments.service';
 
 /**
  * /api/v1/admin/exams — Deneme yönetimi (Doc 18 §8).
@@ -26,7 +32,10 @@ import { AutofillExamDto, SetExamQuestionsDto, UpsertExamDto } from '../dto/exam
 @Controller('admin/exams')
 @UseGuards(JwtAuthGuard, RolesGuard)
 export class AdminExamsController {
-  constructor(private readonly exams: AdminExamsService) {}
+  constructor(
+    private readonly exams: AdminExamsService,
+    private readonly adjustments: AdminExamAdjustmentsService,
+  ) {}
 
   @Get()
   @Roles('admin', 'editor')
@@ -98,7 +107,60 @@ export class AdminExamsController {
     @Param('id', ParseUUIDPipe) id: string,
     @Body() dto: AutofillExamDto,
   ) {
-    return this.exams.autofill(actor, id, dto.moduleId, dto.questionCount);
+    return this.exams.autofill(
+      actor,
+      id,
+      dto.moduleId,
+      dto.questionCount,
+      dto.onlyMissing === true,
+    );
+  }
+
+  /** Yayın ön kontrolü (Doc 50 A4): engeller + uyarılar + dağılım. */
+  @Get(':id/publish-check')
+  @Roles('admin', 'editor')
+  publishCheck(@Param('id', ParseUUIDPipe) id: string) {
+    return this.exams.publishCheck(id);
+  }
+
+  /** İstatistik (Figma A-istatistik): özet, net dağılımı, soru analizi. */
+  @Get(':id/stats')
+  @Roles('admin', 'editor')
+  stats(@Param('id', ParseUUIDPipe) id: string) {
+    return this.adjustments.stats(id);
+  }
+
+  @Get(':id/adjustments')
+  @Roles('admin', 'editor')
+  adjustmentsList(@Param('id', ParseUUIDPipe) id: string) {
+    return this.adjustments.list(id);
+  }
+
+  @Post(':id/adjustments/preview')
+  @Roles('admin')
+  adjustmentPreview(@Param('id', ParseUUIDPipe) id: string, @Body() dto: ExamAdjustmentDto) {
+    return this.adjustments.preview(id, dto);
+  }
+
+  /** Soru iptali (Doc 50 §2.3): yeniden puanlama + sıralama + bildirim. */
+  @Post(':id/adjustments')
+  @Roles('admin')
+  adjustmentApply(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: ExamAdjustmentDto,
+  ) {
+    return this.adjustments.apply(actor, id, dto);
+  }
+
+  @Post(':id/adjustments/:adjustmentId/revert')
+  @Roles('admin')
+  adjustmentRevert(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Param('adjustmentId', ParseUUIDPipe) adjustmentId: string,
+  ) {
+    return this.adjustments.revert(actor, id, adjustmentId);
   }
 
   @Post(':id/publish')

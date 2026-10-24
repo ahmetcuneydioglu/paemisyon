@@ -15,13 +15,16 @@ import { AdminPlansController } from './plans/admin-plans.controller';
 import { AdminPlansService } from './plans/admin-plans.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
+import { ExamsModule } from '../exams/exams.module';
+import { QuizModule } from '../quiz/quiz.module';
+import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.service';
 
 /**
  * Admin paneli API'si (Doc 9). Panel yalnızca bu API'yi çağırır — iş mantığı
  * burada, panelde değil. RBAC: admin/editor (Doc 8), audit log her işlemde.
  */
 @Module({
-  imports: [ReportsModule, PublicModule],
+  imports: [ReportsModule, PublicModule, ExamsModule, QuizModule], // ExamsModule/QuizModule: Doc 50 soru paketi, iptal yeniden puanlama
   controllers: [
     AdminController,
     AdminExamsController,
@@ -37,6 +40,7 @@ import { ReportsModule } from '../reports/reports.module';
     AdminUsersService,
     AdminLawArticlesService,
     AdminExamsService,
+    AdminExamAdjustmentsService,
     AdminPastExamsService,
     AdminPlansService,
   ],

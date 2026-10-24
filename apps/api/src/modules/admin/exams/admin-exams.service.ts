@@ -7,6 +7,7 @@ import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
 import { bayraklariHesapla, tekrarEdenKokler } from './exam-review.logic';
 import { PushService } from '../../notifications/push.service';
 import { IPTAL_EDILMEMIS } from '../../../common/iptal-soru';
+import { ExamsService } from '../../exams/exams.service';
 
 /**
  * Deneme yönetimi (Doc 18 §8). Kurallar:
@@ -21,23 +22,48 @@ export class AdminExamsService {
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
     private readonly push: PushService,
+    private readonly examsSvc: ExamsService,
   ) {}
 
   async list() {
     const exams = await this.prisma.exam.findMany({
-      where: { deletedAt: null },
+      where: { deletedAt: null, pastExam: null },
       orderBy: [{ startAt: 'desc' }],
       include: { _count: { select: { questions: true, sessions: true } } },
     });
+    const stats = await this.prisma.quizSession.groupBy({
+      by: ['examId'],
+      where: {
+        examId: { in: exams.map((e) => e.id) },
+        status: 'completed',
+        attemptRole: 'official',
+      },
+      _count: { _all: true },
+      _avg: { score: true },
+    });
+    const statOf = new Map(stats.map((x) => [x.examId, x]));
     return exams.map((e) => ({
       id: e.id,
       title: e.title,
       startAt: e.startAt,
+      endAt: e.endAt,
       durationMinutes: e.durationMinutes,
+      publishMode: e.publishMode,
+      difficulty: e.difficulty,
       isPremium: e.isPremium,
+      liveAnswerReveal: e.liveAnswerReveal,
+      practiceAfterEnd: e.practiceAfterEnd,
       status: e.status,
       questionCount: e._count.questions,
+      /** Eski alan: toplam oturum (resmî + tekrar). */
       attemptCount: e._count.sessions,
+      participantCount: statOf.get(e.id)?._count._all ?? 0,
+      avgScore:
+        statOf.get(e.id)?._avg.score != null
+          ? Math.round(Number(statOf.get(e.id)!._avg.score) * 100) / 100
+          : null,
+      rankingsComputedAt: e.rankingsComputedAt,
+      questionPackBuiltAt: e.questionPackBuiltAt,
     }));
   }
 
@@ -68,10 +94,19 @@ export class AdminExamsService {
       description: exam.description,
       startAt: exam.startAt,
       durationMinutes: exam.durationMinutes,
+      endAt: exam.endAt,
+      publishMode: exam.publishMode,
+      difficulty: exam.difficulty,
+      examTypeId: exam.examTypeId,
       isPremium: exam.isPremium,
       liveAnswerReveal: exam.liveAnswerReveal,
       questionsOpenAfterEnd: exam.questionsOpenAfterEnd,
-      archiveOpenAfterEnd: exam.archiveOpenAfterEnd,
+      practiceAfterEnd: exam.practiceAfterEnd,
+      /** Eski alan adı (panelin eski sürümü). */
+      archiveOpenAfterEnd: exam.practiceAfterEnd,
+      remindEnabled: exam.remindEnabled,
+      rankingsComputedAt: exam.rankingsComputedAt,
+      questionPackBuiltAt: exam.questionPackBuiltAt,
       status: exam.status,
       attemptCount: exam._count.sessions,
       questions: exam.questions.map((q, i) => ({
@@ -410,11 +445,39 @@ export class AdminExamsService {
    * soru setini bu listeyle DEĞİŞTİR. Sonuç gerçek sınav bölüm sırasındadır;
    * admin isterse elden düzeltip yayınlar.
    */
-  async autofill(actor: AuthenticatedUser, id: string, moduleId: string, questionCount: number) {
+  async autofill(
+    actor: AuthenticatedUser,
+    id: string,
+    moduleId: string,
+    questionCount: number,
+    onlyMissing = false,
+  ) {
     const exam = await this.exists(id);
     if (exam.status !== 'draft') {
       throw new BadRequestException('Otomatik doldurma yalnız taslak denemede yapılabilir.');
     }
+    // Doc 50 §3: son 4 haftada YAYINLANMIŞ bir denemede çıkan sorular dışlanır —
+    // haftalık deneme bitince pratik çözüme açıldığı için aynı soru hemen tekrar
+    // çıkarsa ölçüm bozulur. Bu denemeden daha önce çıkarılanlar da dışarıda.
+    const since = new Date(Date.now() - 28 * 86_400_000);
+    const recent = await this.prisma.examQuestion.findMany({
+      where: {
+        exam: { status: 'published', deletedAt: null, startAt: { gte: since }, id: { not: id } },
+      },
+      select: { questionId: true },
+    });
+    const excluded = new Set<string>([
+      ...recent.map((r) => r.questionId),
+      ...(await this.reddedilenler(id)),
+    ]);
+    const keep: { questionId: string; question: { topic: { courseId: string } } }[] = onlyMissing
+      ? await this.prisma.examQuestion.findMany({
+          where: { examId: id },
+          orderBy: { sortOrder: 'asc' },
+          include: { question: { select: { topic: { select: { courseId: true } } } } },
+        })
+      : [];
+    for (const k of keep) excluded.add(k.questionId);
 
     const sections = await this.prisma.examSection.findMany({
       where: { examTypeId: moduleId, deletedAt: null },
@@ -431,13 +494,14 @@ export class AdminExamsService {
     const pools = await Promise.all(
       sections.map(async (s) => {
         const courseIds = s.courses.map((c) => c.courseId);
-        if (courseIds.length === 0) return { section: s, candidates: [] };
+        if (courseIds.length === 0) return { section: s, kept: 0, candidates: [] };
         const rows = await this.prisma.question.findMany({
           where: {
             deletedAt: null,
             currentVersionId: { not: null },
             ...IPTAL_EDILMEMIS,
             topic: { courseId: { in: courseIds } },
+            id: { notIn: [...excluded] },
           },
           select: {
             id: true,
@@ -447,6 +511,7 @@ export class AdminExamsService {
         });
         return {
           section: s,
+          kept: keep.filter((k) => courseIds.includes(k.question.topic.courseId)).length,
           candidates: rows.map((r) => ({
             questionId: r.id,
             usageCount: r._count.examQuestions,
@@ -466,53 +531,162 @@ export class AdminExamsService {
       });
     }
 
-    const quota = allocateQuota(
+    // Hedef kota: ağırlıklara göre (PAEM: GK+Analitik 30, diğer 7 ders 10).
+    // Kapasite kısıtı YOK burada — eksik kalan ders 'missing' olarak raporlanır
+    // (panel "4 soru eksik: İnsan Hakları 6/10" der); artığı başka derse kaydırmayız,
+    // çünkü resmî dağılım bozulur.
+    const target = allocateQuota(
       pools.map((p) => ({
         sectionId: p.section.id,
         weight: p.section.weightPercent,
-        available: p.candidates.length,
+        available: 10_000,
       })),
       questionCount,
     );
 
-    const breakdown: { section: string; count: number; available: number }[] = [];
-    const ids: string[] = [];
+    const breakdown: { section: string; target: number; count: number; available: number }[] = [];
+    const missing: { section: string; need: number }[] = [];
+    const ids: string[] = keep.map((k) => k.questionId);
     for (const p of pools) {
-      const n = quota.get(p.section.id) ?? 0;
+      const t = target.get(p.section.id) ?? 0;
+      const n = Math.max(0, t - p.kept);
       // Bölüm içinde KONU-dengeli seçim — tek konuya yığılma olmaz.
       const picked = pickSectionQuestions(p.candidates, n);
       ids.push(...picked);
-      breakdown.push({
-        section: p.section.name,
-        count: picked.length,
-        available: p.candidates.length,
-      });
+      const count = p.kept + picked.length;
+      breakdown.push({ section: p.section.name, target: t, count, available: p.candidates.length });
+      if (count < t) missing.push({ section: p.section.name, need: t - count });
     }
     if (ids.length === 0) {
       throw new BadRequestException('Bu sınav türünün derslerinde yayında soru yok.');
     }
 
     const detail = await this.setQuestions(actor, id, ids);
+    if (!exam.examTypeId) {
+      await this.prisma.exam.update({ where: { id }, data: { examTypeId: moduleId } });
+    }
     await this.audit.log(actor, 'exam.autofill', 'exam', id, {
       moduleId,
       requested: questionCount,
       filled: ids.length,
+      onlyMissing,
       breakdown,
+      missing,
     });
-    return { ...detail, autofill: { requested: questionCount, filled: ids.length, breakdown } };
+    return {
+      ...detail,
+      autofill: { requested: questionCount, filled: ids.length, breakdown, missing },
+    };
+  }
+
+  /**
+   * Yayın ön kontrolü (Doc 50 A4): engeller ve uyarılar. Engel varsa yayın reddedilir.
+   */
+  async publishCheck(id: string) {
+    const exam = await this.exists(id);
+    const rows = await this.prisma.examQuestion.findMany({
+      where: { examId: id },
+      include: {
+        question: {
+          select: {
+            id: true,
+            currentVersionId: true,
+            topic: { select: { courseId: true } },
+            reports: { where: { status: 'open' }, select: { id: true } },
+          },
+        },
+      },
+    });
+    const blockers: string[] = [];
+    const warnings: string[] = [];
+    if (rows.length === 0) blockers.push('Yayın için en az 1 soru bağlanmalı.');
+    if (exam.publishMode === 'takvimli') {
+      const end = exam.endAt ?? new Date(exam.startAt.getTime() + exam.durationMinutes * 60_000);
+      if (end <= exam.startAt) blockers.push('Pencere kapanışı açılıştan sonra olmalı.');
+    }
+    const unpublished = rows.filter((r) => !r.question.currentVersionId).length;
+    if (unpublished > 0) blockers.push(`${unpublished} soru artık yayında değil.`);
+    const reported = rows.filter((r) => r.question.reports.length > 0);
+    if (reported.length > 0) {
+      warnings.push(
+        `${reported.length} soru açık hata bildirimi taşıyor (S.${rows
+          .map((r, i) => (r.question.reports.length > 0 ? i + 1 : null))
+          .filter((x) => x != null)
+          .slice(0, 5)
+          .join(', S.')}) — gözden geçirilmesi önerilir.`,
+      );
+    }
+    // Ders dağılımı eşleşmesi (varsa sınav türü).
+    let distribution: { section: string; target: number; count: number }[] = [];
+    if (exam.examTypeId) {
+      const sections = await this.prisma.examSection.findMany({
+        where: { examTypeId: exam.examTypeId, deletedAt: null },
+        orderBy: { sortOrder: 'asc' },
+        include: { courses: { select: { courseId: true } } },
+      });
+      const target = allocateQuota(
+        sections.map((s) => ({ sectionId: s.id, weight: s.weightPercent, available: 10_000 })),
+        rows.length,
+      );
+      const sectionOf = new Map<string, string>();
+      for (const s of sections)
+        for (const c of s.courses) if (!sectionOf.has(c.courseId)) sectionOf.set(c.courseId, s.id);
+      const count = new Map<string, number>();
+      let unmapped = 0;
+      for (const r of rows) {
+        const sid = sectionOf.get(r.question.topic.courseId);
+        if (!sid) unmapped++;
+        else count.set(sid, (count.get(sid) ?? 0) + 1);
+      }
+      distribution = sections.map((s) => ({
+        section: s.name,
+        target: target.get(s.id) ?? 0,
+        count: count.get(s.id) ?? 0,
+      }));
+      if (unmapped > 0)
+        blockers.push(`${unmapped} soru hiçbir derse eşlenmiyor (müfredat bölümü eksik).`);
+      const off = distribution.filter((d) => d.count !== d.target);
+      if (off.length > 0)
+        warnings.push(
+          `Dağılım resmî tablodan sapıyor: ${off.map((d) => `${d.section} ${d.count}/${d.target}`).join(', ')}.`,
+        );
+    } else {
+      warnings.push('Sınav türü seçilmedi; ders dağılımı sonuç ekranında gösterilemez.');
+    }
+    // Yakın tarihli tekrar: son 4 haftada yayınlanan denemelerde çıkan soru.
+    const since = new Date(Date.now() - 28 * 86_400_000);
+    const repeat = await this.prisma.examQuestion.count({
+      where: {
+        questionId: { in: rows.map((r) => r.questionId) },
+        exam: { id: { not: id }, status: 'published', deletedAt: null, startAt: { gte: since } },
+      },
+    });
+    if (repeat > 0) warnings.push(`${repeat} soru son 4 haftada başka bir denemede çıktı.`);
+    return {
+      ok: blockers.length === 0,
+      blockers,
+      warnings,
+      questionCount: rows.length,
+      distribution,
+    };
   }
 
   /** Yayınla: ≥1 soru şartı + sürümleri SABİTLE (Doc 18 §6). */
   async publish(actor: AuthenticatedUser, id: string, announce = false) {
     const exam = await this.exists(id);
     if (exam.status === 'published') return this.detail(id); // idempotent
+    const check = await this.publishCheck(id);
+    if (!check.ok) {
+      throw new BadRequestException({
+        code: 'PUBLISH_BLOCKED',
+        message: check.blockers.join(' '),
+        details: check,
+      });
+    }
     const rows = await this.prisma.examQuestion.findMany({
       where: { examId: id },
       include: { question: { select: { currentVersionId: true } } },
     });
-    if (rows.length === 0) {
-      throw new BadRequestException('Yayın için en az 1 soru bağlanmalı.');
-    }
 
     await this.prisma.$transaction(async (tx) => {
       // Sabitle: her sorunun ŞU ANKİ yayın sürümü kilitlenir.
@@ -524,11 +698,25 @@ export class AdminExamsService {
           });
         }
       }
-      await tx.exam.update({ where: { id }, data: { status: 'published' } });
+      await tx.exam.update({
+        where: { id },
+        data: {
+          status: 'published',
+          // Takvimlide pencere kapanışı açıkça yazılır (Doc 50 §2.1).
+          endAt:
+            exam.publishMode === 'takvimli' && !exam.endAt
+              ? new Date(exam.startAt.getTime() + exam.durationMinutes * 60_000)
+              : exam.endAt,
+        },
+      });
     });
+    // Soru paketi (Doc 50 §5-1): start DB'ye yalnız oturum satırı yazsın.
+    await this.examsSvc.buildQuestionPack(id);
     await this.audit.log(actor, 'exam.publish', 'exam', id, {
       title: exam.title,
+      publishMode: exam.publishMode,
       questionCount: rows.length,
+      warnings: check.warnings,
     });
 
     // Duyuru (opsiyonel): kayıtlı tüm cihazlara push — dokunan Denemeler
@@ -541,11 +729,19 @@ export class AdminExamsService {
         minute: '2-digit',
         timeZone: 'Europe/Istanbul',
       }).format(exam.startAt);
-      const sonuc = await this.push.sendToAll({
-        title: 'Canlı deneme yayında! 🔴',
-        body: `"${exam.title}" — ${saat}'te başlıyor. Türkiye sıralamasında yerini al!`,
-        route: 'denemeler',
-      });
+      const sonuc = await this.push.sendToAll(
+        exam.publishMode === 'serbest'
+          ? {
+              title: 'Yeni deneme yayında',
+              body: `"${exam.title}" — istediğin zaman çöz; ilk çözümün sıralamaya girer.`,
+              route: 'denemeler',
+            }
+          : {
+              title: 'Haftalık deneme yayında 🔴',
+              body: `"${exam.title}" — ${saat}'te başlıyor. Türkiye sıralamasında yerini al!`,
+              route: 'denemeler',
+            },
+      );
       await this.audit.log(actor, 'exam.announce', 'exam', id, {
         title: exam.title,
         ...sonuc,
@@ -579,8 +775,13 @@ export class AdminExamsService {
   async results(id: string) {
     await this.exists(id);
     const sessions = await this.prisma.quizSession.findMany({
-      where: { examId: id, status: 'completed' },
-      orderBy: [{ score: 'desc' }, { durationSeconds: 'asc' }],
+      where: { examId: id, status: 'completed', attemptRole: 'official' },
+      orderBy: [
+        { score: 'desc' },
+        { wrongCount: 'asc' },
+        { durationSeconds: 'asc' },
+        { completedAt: 'asc' },
+      ],
       include: { user: { select: { displayName: true, email: true } } },
     });
     const inProgress = await this.prisma.quizSession.count({
@@ -611,17 +812,32 @@ export class AdminExamsService {
   }
 
   private mapDto(dto: UpsertExamDto) {
+    const publishMode = dto.publishMode ?? 'takvimli';
+    const startAt = new Date(dto.startAt);
+    // Takvimlide kapanış verilmezse açılış + süre; serbestte boş = süresiz.
+    const endAt =
+      dto.endAt != null
+        ? new Date(dto.endAt)
+        : publishMode === 'takvimli'
+          ? new Date(startAt.getTime() + dto.durationMinutes * 60_000)
+          : null;
+    if (endAt && endAt <= startAt) {
+      throw new BadRequestException('Kapanış, açılıştan sonra olmalı.');
+    }
     return {
       title: dto.title,
       description: dto.description ?? null,
-      startAt: new Date(dto.startAt),
+      startAt,
+      endAt,
       durationMinutes: dto.durationMinutes,
+      publishMode,
+      difficulty: dto.difficulty ?? null,
+      examTypeId: dto.examTypeId ?? undefined,
       isPremium: dto.isPremium ?? false,
       liveAnswerReveal: dto.liveAnswerReveal ?? false,
       questionsOpenAfterEnd: dto.questionsOpenAfterEnd ?? true,
-      // Varsayılan KAPALI: aynı deneme tekrar yayınlanabildiği için arşiv,
-      // tekrar sınavının sorularını önceden çalışmaya açık kapı bırakıyor.
-      archiveOpenAfterEnd: dto.archiveOpenAfterEnd ?? false,
+      practiceAfterEnd: dto.practiceAfterEnd ?? dto.archiveOpenAfterEnd ?? true,
+      remindEnabled: dto.remindEnabled ?? true,
     };
   }
 
