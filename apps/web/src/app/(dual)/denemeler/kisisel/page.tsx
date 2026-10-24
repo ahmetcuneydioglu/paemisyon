@@ -7,6 +7,7 @@ import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamListItem } from "@/lib/types";
 import type { MeDashboard } from "@/lib/public-api";
 import { personalExamState } from "@/lib/personal-exam";
+import { normalizeExamListItem } from "@/lib/exam-ui";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -26,7 +27,7 @@ export default async function KisiselDenemePage() {
   if (!user) redirect("/giris?next=%2Fdenemeler%2Fkisisel");
   const [dashboard, exams] = await Promise.all([
     api<MeDashboard>("/me/dashboard").catch(() => null),
-    api<ExamListItem[]>("/exams").catch(() => [] as ExamListItem[]),
+    api<ExamListItem[]>("/exams").then((xs) => xs.map(normalizeExamListItem)).catch(() => [] as ExamListItem[]),
   ]);
   const { sinirsiz, kalan, hakkiBitti, secenekler } = personalExamState(dashboard);
   const active = exams.find((e) => e.myState === "in_progress" && e.my.active);

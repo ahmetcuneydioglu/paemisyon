@@ -82,6 +82,9 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
   }
 
   const review = await api<AttemptReview>(`/exams/attempts/${attemptId}/review`).catch(() => null);
+  // Eski API cevabında yeni diziler yok — çizim düşmesin.
+  const weakTopics = result.weakTopics ?? [];
+  const courses = result.courses ?? [];
   const official = result.role === "official" && !result.personal && !result.isArchive;
   const rank = result.rank;
   const rankText = rank?.available && rank.rank != null ? rankSentence(rank.rank, rank.total) : null;
@@ -121,9 +124,9 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
                   : `D ${result.correctCount} · Y ${result.wrongCount} · B ${result.blankCount}`
             }
           />
-          {result.weakTopics.length > 0 ? (
+          {weakTopics.length > 0 ? (
             <CoachLine
-              text={`En çok kaybın ${result.weakTopics[0].topicName}: Y ${result.weakTopics[0].wrong} · B ${result.weakTopics[0].blank}. Sıralamaya değil sağdaki listeye bak; hepsi kapatılabilir.`}
+              text={`En çok kaybın ${weakTopics[0].topicName}: Y ${weakTopics[0].wrong} · B ${weakTopics[0].blank}. Sıralamaya değil sağdaki listeye bak; hepsi kapatılabilir.`}
             />
           ) : null}
 
@@ -137,7 +140,7 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
             {result.totalQuestions} soru{result.completedAt ? ` · ${formatDate(result.completedAt)}` : ""} · net = doğru − yanlış/4
           </p>
 
-          <CourseBreakdown rows={result.courses} />
+          <CourseBreakdown rows={result.courses ?? []} />
           <TimingStrip timing={result.timing ?? []} />
         </div>
 
@@ -172,11 +175,11 @@ export default async function SonucPage({ params }: { params: Promise<{ attemptI
             </Card>
           ) : null}
 
-          {result.weakTopics.length > 0 ? (
+          {weakTopics.length > 0 ? (
             <section className="flex flex-col gap-2">
               <SectionHeader title="Çalışılacak konular" />
               <Card className="py-1">
-                {result.weakTopics.slice(0, 3).map((t, i, arr) => (
+                {weakTopics.slice(0, 3).map((t, i, arr) => (
                   <ListRow
                     key={t.topicId}
                     title={t.topicName}

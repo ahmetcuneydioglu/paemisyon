@@ -40,7 +40,7 @@ export type ExamState = 'upcoming' | 'active' | 'ended';
 type ExamRow = Prisma.ExamGetPayload<{ include: { _count: { select: { questions: true } } } }>;
 
 /** Cevapsız soru yükü (oynatıcı) — yayın anında pakete de bu yazılır. */
-interface PackQuestion {
+export interface PackQuestion {
   order: number;
   questionId: string;
   versionId: string;

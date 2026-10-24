@@ -5,7 +5,7 @@ import { Bell, Clock, Minus, Trophy } from "lucide-react";
 import { api } from "@/lib/api";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamDetail } from "@/lib/types";
-import { DIFFICULTY_LABEL, fmtNet } from "@/lib/exam-ui";
+import { DIFFICULTY_LABEL, fmtNet, normalizeExamListItem } from "@/lib/exam-ui";
 import { formatDate, formatTime } from "@/lib/format";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
@@ -68,7 +68,9 @@ export default async function BaslamadanOncePage({
   const [{ examId }, sp, user] = await Promise.all([params, searchParams, getCurrentUser()]);
   if (!user) redirect(`/giris?next=${encodeURIComponent(`/denemeler/${examId}/baslamadan-once`)}`);
   const role = (Array.isArray(sp.role) ? sp.role[0] : sp.role) === "practice" ? "practice" : "official";
-  const exam = await api<ExamDetail>(`/exams/${examId}`).catch(() => null);
+  const exam = await api<ExamDetail>(`/exams/${examId}`)
+    .then((e) => ({ ...normalizeExamListItem(e), distribution: e.distribution ?? [] }))
+    .catch(() => null);
   if (!exam) notFound();
 
   const official = exam.my.official;

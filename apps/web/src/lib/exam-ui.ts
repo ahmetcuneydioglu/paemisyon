@@ -1,5 +1,49 @@
 import type { ExamListItem } from "@/lib/types";
 
+/**
+ * Eski API cevabını (Doc 50 öncesi alanlar) yeni şekle tamamlar. API ile web ayrı
+ * deploy olur; alanlar eksik gelirse kart çizimi düşmesin — kararlar yine sunucunun
+ * eski alanlarından türetilir (state/myAttempt/myArchiveAttempt).
+ */
+export function normalizeExamListItem(raw: Partial<ExamListItem> & Pick<ExamListItem, "id" | "title" | "startAt">): ExamListItem {
+  const state = raw.state ?? "ended";
+  const myAttempt = raw.myAttempt ?? null;
+  const availability = raw.availability ?? (state === "upcoming" ? "upcoming" : state === "active" ? "open" : "closed");
+  const officialStatus = myAttempt?.status === "completed" || myAttempt?.status === "in_progress" ? myAttempt.status : null;
+  return {
+    description: null,
+    endAt: raw.startAt,
+    durationMinutes: 0,
+    questionCount: 0,
+    isPremium: false,
+    questionsOpenAfterEnd: true,
+    archiveOpenAfterEnd: false,
+    participantCount: 0,
+    avgScore: null,
+    myArchiveAttempt: null,
+    publishMode: "takvimli",
+    difficulty: null,
+    examTypeId: null,
+    liveAnswerReveal: false,
+    practiceAfterEnd: raw.archiveOpenAfterEnd ?? false,
+    myState: officialStatus === "in_progress" ? "in_progress" : officialStatus === "completed" ? "completed" : "new",
+    canStartOfficial: availability === "open" && officialStatus == null,
+    canStartPractice: availability === "closed" && (raw.archiveOpenAfterEnd ?? false),
+    ...raw,
+    state,
+    myAttempt,
+    availability,
+    my: raw.my ?? {
+      official: myAttempt
+        ? { attemptId: myAttempt.id, status: myAttempt.status, resultLocked: false, score: null, correct: null, wrong: null, blank: null, rank: null, total: raw.participantCount ?? 0, completedAt: null }
+        : null,
+      active: myAttempt?.status === "in_progress" ? { attemptId: myAttempt.id, role: "official", deadlineAt: null, answered: 0 } : null,
+      practiceCount: 0,
+      lastPractice: null,
+    },
+  };
+}
+
 /** Net biçimi: 61,75 → "61,75"; 72 → "72"; null → "—". */
 export function fmtNet(n: number | null | undefined): string {
   if (n == null || Number.isNaN(n)) return "—";

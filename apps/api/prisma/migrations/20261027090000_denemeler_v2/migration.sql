@@ -51,6 +51,11 @@ UPDATE "quiz_sessions" SET "closed_reason" = 'submitted' WHERE "exam_id" IS NOT 
 UPDATE "quiz_sessions" SET "deadline_at" = "started_at" + make_interval(secs => "planned_duration_seconds")
   WHERE "deadline_at" IS NULL AND "planned_duration_seconds" IS NOT NULL;
 
+-- Eski tam tekil anahtar ÖNCE kalkar: aşağıdaki taşıma aynı (user, exam) için
+-- resmî + tekrar satırı üretir; tekillik yalnız resmî çözüm için kısmi indeksle gelir.
+ALTER TABLE "quiz_sessions" DROP CONSTRAINT IF EXISTS "quiz_sessions_user_id_exam_id_key";
+DROP INDEX IF EXISTS "quiz_sessions_user_id_exam_id_key";
+
 -- DENEME arşiv çözümleri (çıkmış sınav DEĞİL) → aynı denemenin tekrar çözümü.
 -- Puanı yüzdeydi (mode=exam); net'e çevrilir ki geçmişte tek birim olsun.
 UPDATE "quiz_sessions" qs
@@ -64,9 +69,6 @@ UPDATE "quiz_sessions" qs
   LEFT JOIN "past_exams" pe ON pe."exam_id" = e.id
   WHERE qs."archive_exam_id" = e.id AND pe.id IS NULL;
 
--- Tekillik: yalnız resmî çözüm bir kezdir. Eski tam tekil anahtar kalkar.
-ALTER TABLE "quiz_sessions" DROP CONSTRAINT IF EXISTS "quiz_sessions_user_id_exam_id_key";
-DROP INDEX IF EXISTS "quiz_sessions_user_id_exam_id_key";
 CREATE UNIQUE INDEX "quiz_sessions_official_once" ON "quiz_sessions"("user_id", "exam_id")
   WHERE "attempt_role" = 'official' AND "status" <> 'abandoned';
 CREATE INDEX "quiz_sessions_user_id_exam_id_idx" ON "quiz_sessions"("user_id", "exam_id");

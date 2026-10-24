@@ -4,7 +4,7 @@ import { getCurrentUser } from "@/lib/auth/current-user";
 import type { ExamHistory, ExamListItem } from "@/lib/types";
 import type { CikmisSinavOzet, MeDashboard } from "@/lib/public-api";
 import { publicApiList } from "@/lib/public-api";
-import { heroFor } from "@/lib/exam-ui";
+import { heroFor, normalizeExamListItem } from "@/lib/exam-ui";
 import { ExamTable } from "@/components/exam-table";
 import { ExamCenter } from "@/components/exam/exam-center";
 import {
@@ -40,7 +40,7 @@ export default async function DenemelerPage() {
     // Liste girişli olarak YENİDEN çekilir: `auth: false` yanıtında kullanıcıya
     // özel alanlar hep null döner (7 Eylül 2026 dersi).
     const [exams, dashboard, history, pastExams] = await Promise.all([
-      api<ExamListItem[]>("/exams").catch(() => publicExams),
+      api<ExamListItem[]>("/exams").then((xs) => xs.map(normalizeExamListItem)).catch(() => publicExams.map(normalizeExamListItem)),
       api<MeDashboard>("/me/dashboard").catch(() => null),
       api<ExamHistory>("/exams/history/mine").catch(() => null),
       publicApiList<CikmisSinavOzet>("/cikmis-sinavlar").then((r) => r.items.filter((x) => x.tur === "resmi")),
