@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BookOpen, Check, ChevronDown, Flag, Lock, Minus, X } from "lucide-react";
 import type { AttemptReview, ReviewQuestion } from "@/lib/types";
 import { cn } from "@/lib/cn";
+import { formatStem } from "@/lib/stem-format";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Chip } from "@/components/ui/chip";
@@ -146,7 +147,7 @@ function Detail({ q, item, locked }: { q: ReviewQuestion; item: AttemptReview["i
   return (
     <div className="flex flex-col gap-4 border-t border-line px-4 py-4 md:grid md:grid-cols-[1fr_20rem] md:gap-6">
       <div className="flex flex-col gap-3">
-        <p className="type-body whitespace-pre-line text-ink">{q.stem}</p>
+        <p className="type-body whitespace-pre-line text-ink">{formatStem(q.stem)}</p>
         {q.mediaUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={q.mediaUrl} alt="Soru görseli" loading="lazy" className="max-h-64 rounded-card border border-line" />

@@ -2,6 +2,7 @@
 
 import { Check, X } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { formatStem } from "@/lib/stem-format";
 import { Badge } from "./badge";
 import { KeyHint } from "./key-hint";
 
@@ -42,7 +43,7 @@ export function QuestionStem({
         role="heading"
         aria-level={2}
       >
-        {stem}
+        {formatStem(stem)}
       </p>
     </div>
   );

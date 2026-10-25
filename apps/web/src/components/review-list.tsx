@@ -1,5 +1,6 @@
 import { Flag } from "lucide-react";
 import type { ReviewQuestion } from "@/lib/types";
+import { formatStem } from "@/lib/stem-format";
 import { Badge } from "@/components/ui/badge";
 import {
   QuestionOption,
@@ -44,7 +45,7 @@ export function ReviewList({
               <div className="flex items-start justify-between gap-2">
                 <p className="type-body whitespace-pre-line text-ink">
                   <span className="tabular font-semibold">{q.order}.</span>{" "}
-                  {q.stem}
+                  {formatStem(q.stem)}
                 </p>
                 {q.flagged ? (
                   <Badge tone="neutral">
