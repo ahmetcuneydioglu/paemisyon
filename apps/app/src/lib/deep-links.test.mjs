@@ -15,6 +15,10 @@ test("push route sözlüğü", () => {
   assert.equal(routeToHref(undefined).pathname, "/(tabs)");
   assert.equal(routeToHref("/denemeler/4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b").params?.exam, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
   assert.equal(routeToHref("/review").pathname, "/(tabs)/kutuphane/tekrar");
+  const sonuc = routeToHref("deneme-sonuc/4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
+  assert.equal(sonuc.pathname, "/deneme-sonuc/[attemptId]");
+  assert.equal(sonuc.params?.attemptId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
+  assert.equal(routeToHref("deneme-sonuc/bozuk").pathname, "/(tabs)");
 });
 
 test("bildirim evrensel bağlantısı", () => {

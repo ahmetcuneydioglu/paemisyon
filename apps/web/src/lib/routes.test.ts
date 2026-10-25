@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { webRoute } from "./routes";
+import { bildirimRotasi, webRoute } from "./routes";
 
 describe("webRoute", () => {
   it("çıkmış sınav kartını TİPİNDEN tanıyıp vitrine götürür", () => {
@@ -36,5 +36,40 @@ describe("webRoute", () => {
 
   it("bilinmeyen rotayı bozmadan geçirir", () => {
     expect(webRoute("/profil")).toBe("/profil");
+  });
+});
+
+describe("bildirimRotasi", () => {
+  const sid = "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b";
+
+  it("sunucunun eğik çizgisiz push sözlüğünü çevirir", () => {
+    // 26 Eki 2026 öncesi bunların hepsi /bugun'a düşüyordu.
+    expect(bildirimRotasi("daily-quiz")).toBe("/seans?mode=daily&source=notif");
+    expect(bildirimRotasi("denemeler")).toBe("/denemeler");
+    expect(bildirimRotasi("leaderboard")).toBe("/liderlik");
+    expect(bildirimRotasi(`deneme-sonuc/${sid}`)).toBe(`/sonuc/${sid}`);
+    expect(bildirimRotasi(`question:${sid}`)).toBe(
+      `/seans?mode=practice&questionId=${sid}&count=1&source=notif`,
+    );
+  });
+
+  it("koç kartı yollarını webRoute ile çevirir", () => {
+    expect(bildirimRotasi("/quiz")).toBe("/seans");
+    expect(bildirimRotasi("/denemeler/cikmis")).toBe("/paem-cikmis-sorular");
+    expect(bildirimRotasi("/profil")).toBe("/profil");
+  });
+
+  it("boş, bilinmeyen ve bozuk değerler Bugün'e düşer", () => {
+    expect(bildirimRotasi("")).toBe("/bugun");
+    expect(bildirimRotasi(undefined)).toBe("/bugun");
+    expect(bildirimRotasi("deneme-sonuc/bozuk")).toBe("/bugun");
+    expect(bildirimRotasi("question:bozuk")).toBe("/bugun");
+    expect(bildirimRotasi("bilinmeyen")).toBe("/bugun");
+  });
+
+  it("açık yönlendirme girişimlerini reddeder", () => {
+    expect(bildirimRotasi("//evil.com")).toBe("/bugun");
+    expect(bildirimRotasi("/\\evil.com")).toBe("/bugun");
+    expect(bildirimRotasi("https://evil.com")).toBe("/bugun");
   });
 });

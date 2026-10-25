@@ -1,6 +1,7 @@
 /**
  * Push `data.route` ve `paemisyon.com/bildirim?git=` sözlüğü → uygulama yolu (tek tablo).
- * Sunucu/panel değerleri: daily-quiz, denemeler, leaderboard, question:<uuid>, boş (aç).
+ * Sunucu/panel değerleri: daily-quiz, denemeler, leaderboard, deneme-sonuc/<oturum>,
+ * question:<uuid>, boş (aç). Web karşılığı: apps/web/src/lib/routes.ts bildirimRotasi.
  * Koç CTA'larının eğik çizgili yolları da (/quiz, /review, /catalog, /denemeler, /denemeler/<id>)
  * burada eşlenir. Bilinmeyen değer Bugün'e düşer (kayıp iş yok, sürpriz yok).
  */
@@ -14,6 +15,10 @@ export function routeToHref(route: string | null | undefined): AppHref {
   if (r === "daily-quiz") return { pathname: "/seans", params: { mode: "daily", count: "10", source: "notif" } };
   if (r === "denemeler" || r === "/denemeler") return { pathname: "/(tabs)/denemeler" };
   if (r === "leaderboard" || r === "/leaderboard") return { pathname: "/(tabs)/performans/liderlik" };
+  // "Sonucun açıklandı" ve "Netin güncellendi" push'ları (exams.service, admin-exam-adjustments).
+  // 26 Eki 2026'ya kadar tanınmıyordu, Bugün'e düşüyordu.
+  const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
+  if (sonuc) return { pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: sonuc[1]! } };
   const q = r.match(/^question:(.+)$/);
   if (q && UUID.test(q[1]!)) return { pathname: "/seans", params: { mode: "practice", questionId: q[1]!, count: "1", source: "notif" } };
   const exam = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})$/);

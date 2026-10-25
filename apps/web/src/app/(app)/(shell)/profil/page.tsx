@@ -11,7 +11,7 @@ import { ProgressBar } from "@/components/ui/progress";
 import { RankInsignia } from "@/components/ui/rank-insignia";
 import { StatTile } from "@/components/ui/stat-tile";
 import { formatDate } from "@/lib/format";
-import { signOut } from "@/app/(auth)/actions";
+import { LogoutButton } from "@/components/logout-button";
 
 export const metadata: Metadata = { title: "Profil", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -250,14 +250,11 @@ export default async function ProfilePage() {
                 </ButtonLink>
               ) : null}
             </div>
-            <form action={signOut} className="border-t border-line pt-3">
-              <button
-                type="submit"
-                className="tk-interactive type-subhead min-h-11 text-danger-ink hover:underline"
-              >
+            <div className="border-t border-line pt-3">
+              <LogoutButton className="tk-interactive type-subhead min-h-11 text-danger-ink hover:underline">
                 Çıkış yap
-              </button>
-            </form>
+              </LogoutButton>
+            </div>
           </Card>
         </div>
       </div>

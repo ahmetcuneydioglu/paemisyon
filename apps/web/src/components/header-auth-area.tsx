@@ -1,7 +1,7 @@
 "use client";
 
-import { signOut } from "@/app/(auth)/actions";
 import { ButtonLink } from "@/components/ui/button";
+import { LogoutButton } from "@/components/logout-button";
 import { useLoggedIn } from "@/lib/auth/use-logged-in";
 
 /**
@@ -23,14 +23,9 @@ export function HeaderAuthArea() {
         <ButtonLink href="/bugun" size="sm">
           Uygulamaya dön
         </ButtonLink>
-        <form action={signOut}>
-          <button
-            type="submit"
-            className="tk-interactive cursor-pointer rounded-control px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink"
-          >
-            Çıkış
-          </button>
-        </form>
+        <LogoutButton className="tk-interactive cursor-pointer rounded-control px-2.5 py-1.5 text-[13px] text-ink-soft hover:text-ink">
+          Çıkış
+        </LogoutButton>
       </div>
     );
   }

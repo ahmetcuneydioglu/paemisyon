@@ -16,3 +16,36 @@ export function webRoute(route: string, type?: string): string {
   if (route === "/catalog") return "/kanunlar";
   return route;
 }
+
+const UUID = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+
+/**
+ * Push yükündeki `route` (mobil sözlüğü, Doc 49/08) → web yolu. Sunucu bu değerleri
+ * `/bildirim?git=<route>` olarak gönderir (push.service.ts webLink). Sözlük eğik
+ * çizgisizdir: `daily-quiz`, `denemeler`, `leaderboard`, `deneme-sonuc/<oturum>`,
+ * `question:<uuid>`; koç kartlarının eğik çizgili yolları da gelebilir, onlar
+ * `webRoute` ile çevrilir. Bilinmeyen ya da güvensiz değer Bugün'e düşer — açık
+ * yönlendirme yolu yoktur (yalnız uygulama içi göreli yollar üretilir).
+ *
+ * Mobil karşılığı: apps/app/src/lib/deep-links.ts routeToHref. İki tablo aynı
+ * sözlüğü tanımalı; Doc 52 §5 bunu sunucuda tek kayıt defterine taşıyacak.
+ */
+export function bildirimRotasi(git: string | null | undefined): string {
+  const r = (git ?? "").trim();
+  if (!r) return "/bugun";
+  if (r === "daily-quiz") return "/seans?mode=daily&source=notif";
+  if (r === "denemeler") return "/denemeler";
+  if (r === "leaderboard") return "/liderlik";
+  const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
+  if (sonuc) return `/sonuc/${sonuc[1]}`;
+  const soru = r.match(/^question:(.+)$/);
+  if (soru && UUID.test(soru[1]!)) {
+    return `/seans?mode=practice&questionId=${soru[1]}&count=1&source=notif`;
+  }
+  // Eğik çizgili göreli yol: koç kartı sözleşmesi. `//` ve ters bölü açık
+  // yönlendirme girişimidir, kabul edilmez.
+  if (r.startsWith("/") && !r.startsWith("//") && !r.includes("\\")) {
+    return webRoute(r);
+  }
+  return "/bugun";
+}

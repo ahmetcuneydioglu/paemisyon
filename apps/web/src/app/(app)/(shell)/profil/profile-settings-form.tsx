@@ -4,6 +4,7 @@ import { useState, type InputHTMLAttributes } from "react";
 import { useRouter } from "next/navigation";
 import { apiClient } from "@/lib/api-client";
 import { supabaseBrowser } from "@/lib/supabase/client";
+import { pushAbonelikBirak } from "@/lib/web-push";
 import type { MeProfile } from "@/lib/public-api";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
@@ -39,6 +40,11 @@ export function ProfileSettingsForm({
 
   async function logout() {
     setLogoutBusy(true);
+    // Bu tarayıcının push token'ı sunucudan silinir (mobil çıkışla aynı); oturum
+    // kapanmadan önce, çünkü istek oturum ister. Başarısızsa çıkış yine sürer.
+    await pushAbonelikBirak((token) =>
+      apiClient("/me/push-token", { method: "DELETE", body: { token } }),
+    );
     await supabaseBrowser().auth.signOut();
     router.replace("/giris");
     router.refresh();

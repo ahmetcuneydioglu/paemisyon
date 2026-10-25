@@ -1,14 +1,18 @@
 import { redirect } from "next/navigation";
-import { webRoute } from "@/lib/routes";
+import { bildirimRotasi } from "@/lib/routes";
 
 /**
  * Bildirim tıklama sıçrama noktası.
  *
- * Push yükündeki `route` mobil uygulamanın dilindedir ("/quiz", "/review"…);
- * web karşılıkları farklı ("/seans", "/seans?mode=review"…). Bu eşleme
- * `webRoute` içinde tek yerde duruyor. Sunucu bildirimin bağlantısını
- * `/bildirim?git=<route>` olarak gönderir, burası çevirip yönlendirir —
- * böylece eşleme API'de ve service worker'da TEKRARLANMAZ.
+ * Push yükündeki `route` mobil uygulamanın dilindedir: eğik çizgisiz sözlük
+ * ("daily-quiz", "deneme-sonuc/<id>"…) ya da koç kartı yolu ("/quiz", "/review").
+ * Web karşılıkları farklı ("/seans", "/sonuc/<id>"…). Eşleme `bildirimRotasi`
+ * içinde tek yerde duruyor; güvenlik (açık yönlendirme yok) da orada. Sunucu
+ * bildirimin bağlantısını `/bildirim?git=<route>` olarak gönderir, burası
+ * çevirip yönlendirir — böylece eşleme API'de ve service worker'da TEKRARLANMAZ.
+ *
+ * 26 Eki 2026'ya kadar yalnız "/" ile başlayan değer kabul ediliyordu; sunucunun
+ * gönderdiği sözlük eğik çizgisiz olduğu için her web tıklaması /bugun'a düşüyordu.
  */
 export const dynamic = "force-dynamic";
 
@@ -18,13 +22,5 @@ export default async function BildirimPage({
   searchParams: Promise<{ git?: string }>;
 }) {
   const { git } = await searchParams;
-  // Açık yönlendirme koruması: yalnız uygulama içi göreli yollar.
-  const guvenli =
-    typeof git === "string" &&
-    git.startsWith("/") &&
-    !git.startsWith("//") &&
-    !git.includes("\\")
-      ? git
-      : "/bugun";
-  redirect(webRoute(guvenli));
+  redirect(bildirimRotasi(git));
 }

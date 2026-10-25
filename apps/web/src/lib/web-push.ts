@@ -14,7 +14,29 @@
  *    SESSİZCE kapalıdır — hata göstermez, düğme çıkmaz.
  *  - Token yenilenirse sunucuya yeniden yazılır; aynı token için tekrar
  *    yazmak zararsızdır (upsert).
+ *  - Çıkışta token sunucudan SİLİNİR (`pushAbonelikBirak`), mobilde olduğu gibi:
+ *    aynı tarayıcıda başka hesap açılırsa eski hesabın bildirimi gelmesin.
+ *    Token bu yüzden yerelde saklanır (yalnız sunucuya silme isteği için).
  */
+
+const TOKEN_ANAHTARI = "push-token";
+
+function tokenSakla(token: string | null) {
+  try {
+    if (token) localStorage.setItem(TOKEN_ANAHTARI, token);
+    else localStorage.removeItem(TOKEN_ANAHTARI);
+  } catch {
+    // depolama kapalı — çıkışta silinemez, zararsız (sunucu geçersiz token'ı temizler)
+  }
+}
+
+function saklananToken(): string | null {
+  try {
+    return localStorage.getItem(TOKEN_ANAHTARI);
+  } catch {
+    return null;
+  }
+}
 
 export type PushDurumu =
   | "desteklenmiyor" // tarayıcı/işletim sistemi push'a izin vermiyor
@@ -98,5 +120,26 @@ export async function pushAboneOl(
   if (!token) return null;
 
   await kaydet(token);
+  tokenSakla(token);
   return token;
+}
+
+/**
+ * Çıkışta çağrılır: bu tarayıcının token'ını sunucudan siler (`DELETE /me/push-token`).
+ * `sil` dışarıdan verilir (oturumlu API istemcisi), çünkü çağrı oturum KAPANMADAN
+ * önce gitmeli. Token yoksa ya da istek düşerse sessizdir: çıkış hiçbir koşulda
+ * engellenmez; sunucu geçersizleşen token'ı ilk gönderimde zaten temizler.
+ */
+export async function pushAbonelikBirak(
+  sil: (token: string) => Promise<unknown>,
+): Promise<void> {
+  const token = saklananToken();
+  if (!token) return;
+  try {
+    await sil(token);
+  } catch {
+    // sessiz — yukarıdaki gerekçe
+  } finally {
+    tokenSakla(null);
+  }
 }
