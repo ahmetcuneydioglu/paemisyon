@@ -340,9 +340,11 @@ export function FeedbackPanel({
           )}
         </View>
       ) : null}
-      <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line, paddingTop: space.s2, marginTop: space.s1 }}>
-        <ToolRow actions={tools} />
-      </View>
+      {tools.length > 0 ? (
+        <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line, paddingTop: space.s2, marginTop: space.s1 }}>
+          <ToolRow actions={tools} />
+        </View>
+      ) : null}
     </View>
   );
 }

@@ -11,6 +11,8 @@ export default function DenemelerLayout() {
       <Stack.Screen name="cikmis/[slug]" options={{ title: "Çıkmış sınav" }} />
       <Stack.Screen name="cikmis/calis/[slug]" options={{ title: "Çalışma modu" }} />
       <Stack.Screen name="siralama/[examId]" options={{ title: "Sıralama" }} />
+      <Stack.Screen name="[examId]/kurallar" options={{ title: "Başlamadan önce" }} />
+      <Stack.Screen name="kisisel" options={{ title: "Kişisel deneme" }} />
     </Stack>
   );
 }

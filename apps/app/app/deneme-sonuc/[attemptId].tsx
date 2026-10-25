@@ -1,19 +1,22 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { Flag, Star, StarOff } from "lucide-react-native";
+import { BookOpen, Flag, Lock, Star, StarOff, Timer } from "lucide-react-native";
 import { useMemo, useState } from "react";
 import { Pressable, TextInput, View } from "react-native";
-import { QuestionOption, ResultPanel, type OptionState } from "@/components/domain";
-import { AppText, Badge, Button, Card, IconButton, Notice, Screen, SectionHeader, Sheet, Skeleton } from "@/components/ui";
-import { mmss, useAttempt, useMyAttempts, useReportQuestion } from "@/features/exams/queries";
+import { CourseBreakdown, QuestionOption, ResultPanel, type OptionState } from "@/components/domain";
+import { AppText, Badge, Button, Card, Chip, IconButton, Notice, Screen, SectionHeader, Sheet, Skeleton, StatTile } from "@/components/ui";
+import { fmtDate, fmtDuration, fmtNet, mmss, rankSentence, useAttempt, useAttemptReview, useReportQuestion, type AttemptReview } from "@/features/exams/queries";
 import { useBookmarks, useSetBookmark } from "@/features/review/queries";
 import { ApiError } from "@/lib/api";
 import { useStackOptions } from "@/navigation/stack-options";
 import { useTheme } from "@/theme/ThemeProvider";
 
+type Filter = "all" | "wrong" | "blank" | "flagged" | "majority";
+
 /**
- * Deneme sonucu + analiz (Doc 25 Bölge 3: "şok değil yol haritası"): net ve önceki denemeyle
- * fark, D/Y/B, kaybettiren konular (yanlış×1.25 + boş), zamanlama şeridi, cevap incelemesi
- * (favori, hata bildir), sıralama. Kaynak etiketi okunmaz (CLAUDE.md).
+ * Deneme sonucu (Doc 50 M4) + cevap incelemesi (M5). Dört varyant tek ekran: resmî (sıra +
+ * Türkiye kıyası), tekrar çözüm, kişisel, haftalık sonuç bekliyor (kilit). 8 dersli dağılım,
+ * çalışılacak konular, süzgeçli inceleme (Türkiye oranı Premium — kilit sunucudan). Kaynak
+ * etiketi okunmaz (CLAUDE.md).
  */
 export default function DenemeSonucScreen() {
   const router = useRouter();
@@ -21,34 +24,31 @@ export default function DenemeSonucScreen() {
   const options = useStackOptions();
   const p = useLocalSearchParams<{ attemptId: string }>();
   const q = useAttempt(p.attemptId ?? null);
-  const mine = useMyAttempts();
+  const d = q.data;
+  const review = useAttemptReview(p.attemptId ?? null, Boolean(d && !d.resultLocked));
   const bookmarks = useBookmarks();
   const setBookmark = useSetBookmark();
   const report = useReportQuestion();
   const [reportFor, setReportFor] = useState<string | null>(null);
   const [reportText, setReportText] = useState("");
+  const [filter, setFilter] = useState<Filter>("all");
+  const [open, setOpen] = useState<string | null>(null);
 
-  const d = q.data;
   const starred = useMemo(() => new Set((bookmarks.data ?? []).map((b) => b.questionId)), [bookmarks.data]);
-
-  // Önceki tamamlanmış canlı denemeyle fark (yalnız canlı; arşivde yüzde ölçeği farklı).
-  const delta = useMemo(() => {
-    if (!d || d.isArchive || d.score == null || !mine.data) return null;
-    const prev = mine.data.filter((a) => a.status === "completed" && a.attemptId !== d.attemptId && a.score != null && Date.parse(a.startedAt) < Date.parse(d.exam.startAt)).sort((a, b) => Date.parse(b.startedAt) - Date.parse(a.startedAt))[0];
-    return prev?.score == null ? null : d.score - prev.score;
-  }, [d, mine.data]);
-
-  const lost = useMemo(() => (d ? [...d.topicBreakdown].map((t) => ({ ...t, lost: t.wrong * 1.25 + t.blank })).filter((t) => t.lost > 0).sort((a, b) => b.lost - a.lost) : []), [d]);
-  const avgMs = useMemo(() => {
-    const xs = (d?.timing ?? []).map((t) => t.timeSpentMs).filter((x): x is number => x != null && x > 0);
-    return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0;
-  }, [d]);
-  const slowest = useMemo(() => (d?.timing ?? []).reduce<{ order: number; ms: number } | null>((m, t) => (t.timeSpentMs != null && (!m || t.timeSpentMs > m.ms) ? { order: t.order, ms: t.timeSpentMs } : m), null), [d]);
   const inProgress = q.isError && q.error instanceof ApiError && q.error.code === "EXAM_IN_PROGRESS";
+  const official = d ? d.role === "official" && !d.personal && !d.isArchive : false;
+  const rank = d?.rank ?? null;
+  const rankText = rank?.available && rank.rank != null ? rankSentence(rank.rank, rank.total) : null;
+  const weak = d?.weakTopics ?? [];
+  const courses = d?.courses ?? [];
+  const reviewQ = useMemo(() => new Map((d?.review ?? []).map((r) => [r.questionId, r])), [d?.review]);
+  const items = review.data?.items ?? [];
+  const counts = { wrong: items.filter((i) => i.status === "wrong").length, blank: items.filter((i) => i.status === "blank").length, flagged: items.filter((i) => i.flagged).length };
+  const rows = items.filter((i) => (filter === "all" ? true : filter === "wrong" ? i.status === "wrong" : filter === "blank" ? i.status === "blank" : filter === "flagged" ? i.flagged : i.missedMajority));
 
   return (
     <>
-      <Stack.Screen options={{ ...options, title: d?.exam.title ?? "Deneme sonucu" }} />
+      <Stack.Screen options={{ ...options, title: d ? (d.personal ? "Kişisel deneme" : d.exam.title) : "Deneme sonucu" }} />
       <Screen inset="none" style={{ paddingBottom: space.s8 }}>
         {q.isPending ? (
           <>
@@ -56,115 +56,204 @@ export default function DenemeSonucScreen() {
             <Skeleton height={200} radiusKey="card" />
           </>
         ) : inProgress ? (
-          <Notice tone="info" title="Sonuç pencere kapanınca açılır">
-            Canlı deneme sürüyor; herkes bitirince net ve sıralama hesaplanır. Bu arada cevapların güvende.
+          <Notice tone="info" title="Sınav devam ediyor">
+            Süre dolmadan sonuç açılmaz; cevapların güvende.
           </Notice>
         ) : q.isError ? (
           <Notice tone="error" title="Sonuç yüklenemedi">
             {q.error.message}
           </Notice>
+        ) : d?.resultLocked ? (
+          /* Haftalık: sonuç bekliyor (M4-d) */
+          <>
+            <View style={{ backgroundColor: colors.panel, borderRadius: radius.card, padding: space.s5, alignItems: "center", gap: space.s2 }}>
+              <Timer color={colors.accent} size={28} strokeWidth={1.75} />
+              <AppText variant="subhead" tone="panelInk">
+                Teslim edildi{d.completedAt ? ` · ${fmtDate(d.completedAt, { hour: "2-digit", minute: "2-digit" })}` : ""}
+              </AppText>
+              <AppText variant="bodySm" tone="panelSoft" style={{ textAlign: "center" }}>
+                Sonuçlar ve sıralama {d.resultAt ? `${fmtDate(d.resultAt)}'de` : "sınav penceresi kapanınca"} herkese aynı anda açıklanır. Sana bildirim göndereceğiz.
+              </AppText>
+            </View>
+            <View style={{ flexDirection: "row", gap: space.s2 }}>
+              <StatTile label="Cevaplanan" value={d.answeredCount ?? null} style={{ flex: 1 }} />
+              <StatTile label="Boş" value={d.blankCount} style={{ flex: 1 }} />
+              <StatTile label="Süre" value={fmtDuration(d.durationSeconds)} style={{ flex: 1 }} />
+            </View>
+            <Button title="Denemelere dön" variant="secondary" onPress={() => router.dismissTo("/(tabs)/denemeler")} />
+          </>
         ) : d ? (
           <>
+            {d.scoreUpdate ? (
+              <Notice tone="success" title="Netin güncellendi">
+                Bir soru iptal edildi; netin {fmtNet(d.scoreUpdate.from)}&apos;ten {fmtNet(d.scoreUpdate.to)}&apos;e çıktı.
+              </Notice>
+            ) : null}
+            {d.role === "practice" && !d.personal ? <Notice tone="info">Bu çözüm sıralamaya girmedi; resmî sonucun kartta duruyor.</Notice> : null}
+            {d.closedReason === "timeout" ? <Notice tone="warning">Süre doldu; cevapların otomatik teslim edildi.</Notice> : null}
+
             <ResultPanel
-              label={d.isArchive ? "Arşiv denemesi" : "Deneme sonucu"}
-              hero={d.score == null ? "—" : d.isArchive ? `%${Math.round(d.score)}` : d.score.toFixed(2).replace(".", ",")}
-              correct={d.correctCount}
+              label={`Deneme sonucu · ${official ? "resmî çözüm" : d.personal ? "kişisel deneme" : d.isArchive && d.role !== "practice" ? "çıkmış sınav" : "tekrar çözüm"}`}
+              hero={d.score == null ? "—" : `${fmtNet(d.score)} net`}
+              correct={d.correctCount ?? 0}
               total={d.totalQuestions}
               pct={null}
               durationLabel={null}
-              sub={`${d.isArchive ? "doğruluk" : "net"} · D ${d.correctCount} · Y ${d.wrongCount} · B ${d.blankCount}${d.durationSeconds != null ? ` · ${mmss(d.durationSeconds)}` : ""}`}
+              sub={rankText ? `${rankText}${rank?.percentile && rank.percentile <= 50 ? ` · ilk %${rank.percentile}` : ""}` : official && rank && !rank.available ? `Sıralama en az 10 resmî çözümle açılır · şu an ${rank.total}` : `D ${d.correctCount} · Y ${d.wrongCount} · B ${d.blankCount}`}
             />
-            <AppText variant="bodySm" tone={delta == null ? "soft" : delta >= 0 ? "success" : "danger"}>
-              {delta != null ? `Geçen denemeden ${delta >= 0 ? "+" : ""}${delta.toFixed(2).replace(".", ",")} net` : d.isArchive ? `${d.totalQuestions} soru` : "İlk canlı denemen; karşılaştırma bir sonrakinde."}
-              {d.completedAt ? ` · ${new Date(d.completedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long" })}` : ""}
+            <View style={{ flexDirection: "row", gap: space.s2 }}>
+              <StatTile label="Doğru" value={d.correctCount} tone="success" style={{ flex: 1 }} />
+              <StatTile label="Yanlış" value={d.wrongCount} tone="danger" style={{ flex: 1 }} />
+              <StatTile label="Boş" value={d.blankCount} style={{ flex: 1 }} />
+            </View>
+            <AppText variant="bodySm" tone="subtle">
+              {d.totalQuestions} soru · {fmtDuration(d.durationSeconds)}{d.completedAt ? ` · ${fmtDate(d.completedAt, { day: "numeric", month: "long" })}` : ""} · net = doğru − yanlış/4
             </AppText>
-            {!d.isArchive ? <Button title="Sıralama" variant="secondary" onPress={() => router.push({ pathname: "/(tabs)/denemeler/siralama/[examId]", params: { examId: d.exam.id, title: d.exam.title } })} /> : null}
 
-            {lost.length > 0 ? (
-              <View style={{ gap: space.s1 }}>
-                <AppText variant="label" tone="subtle">
-                  Kaybettiren konular
-                </AppText>
-                {/* İnce çizgili satırlar (S5 dili): konu + Y/B + −net; "Kapat ›" kapatma turunu başlatır. */}
-                {lost.slice(0, 6).map((t, i) => (
-                  <Pressable
-                    key={t.topicId}
-                    accessibilityRole="button"
-                    accessibilityLabel={`${t.topicName}: ${t.wrong} yanlış, ${t.blank} boş, ${t.lost.toFixed(2)} net kayıp. Kapatma turu başlat`}
-                    onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })}
-                    style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingVertical: space.s3, borderBottomWidth: i < Math.min(lost.length, 6) - 1 ? 1 : 0, borderBottomColor: colors.line, minHeight: 56 }}
-                  >
-                    <View style={{ flex: 1, gap: 2 }}>
-                      <AppText variant="body" numberOfLines={2}>
-                        {t.topicName}
-                      </AppText>
-                      <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
-                        Y {t.wrong} · B {t.blank} · {t.total} soru
+            <CourseBreakdown rows={courses} />
+
+            {official && d.turkey ? (
+              <Card style={{ gap: space.s2 }}>
+                <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                  <AppText variant="heading">Türkiye kıyası</AppText>
+                  <Badge tone="warning">Premium</Badge>
+                </View>
+                {d.turkey.locked ? (
+                  <>
+                    <View style={{ flexDirection: "row", gap: space.s2, alignItems: "flex-start" }}>
+                      <Lock color={colors.inkSubtle} size={16} strokeWidth={1.75} />
+                      <AppText variant="bodySm" tone="soft" style={{ flex: 1 }}>
+                        Türkiye ortalaması, medyan ve soru bazlı doğru oranı Premium ile açılır.
                       </AppText>
                     </View>
-                    <AppText variant="subhead" tone="danger" style={{ fontVariant: ["tabular-nums"] }}>
-                      −{t.lost.toFixed(2).replace(".", ",")}
-                    </AppText>
-                    <AppText variant="subhead" tone="accentInk">
-                      Kapat ›
-                    </AppText>
-                  </Pressable>
-                ))}
-              </View>
+                    <Button title="Premium ile aç" variant="secondary" onPress={() => router.push("/paywall")} />
+                  </>
+                ) : d.turkey.sample < d.turkey.minSample ? (
+                  <AppText variant="bodySm" tone="soft">
+                    En az {d.turkey.minSample} resmî çözümle açılır; şu an {d.turkey.sample} çözüm var.
+                  </AppText>
+                ) : (
+                  <>
+                    <Row k="Türkiye ortalaması" v={`${fmtNet(d.turkey.mean)} net`} />
+                    <Row k="Medyan" v={`${fmtNet(d.turkey.median)} net`} />
+                    <Row k="Sen" v={`${d.turkey.diff != null && d.turkey.diff >= 0 ? "+" : ""}${fmtNet(d.turkey.diff)} net`} accent />
+                  </>
+                )}
+              </Card>
             ) : null}
 
-            {d.timing.length > 0 && avgMs > 0 ? (
+            {weak.length > 0 ? (
               <View style={{ gap: space.s2 }}>
-                <SectionHeader title="Zamanlama" />
-                <Card>
-                  <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 2, height: 56 }}>
-                    {d.timing.map((t) => {
-                      const ms = t.timeSpentMs ?? 0;
-                      const h = Math.max(4, Math.min(56, (ms / (avgMs * 2)) * 56));
-                      const slow = ms > avgMs * 1.5;
-                      return <View key={t.order} accessibilityLabel={`Soru ${t.order}, ${Math.round(ms / 1000)} saniye`} style={{ flex: 1, height: h, borderRadius: 2, backgroundColor: t.status === "correct" ? colors.success : t.status === "wrong" ? colors.danger : colors.surfaceAlt, borderWidth: slow ? 1 : 0, borderColor: colors.warning }} />;
-                    })}
-                  </View>
-                  <AppText variant="bodySm" tone="soft">
-                    Ortalama {Math.round(avgMs / 1000)} sn/soru
-                    {slowest ? ` · en yavaş: ${slowest.order}. soru (${Math.round(slowest.ms / 1000)} sn)` : ""}. Sarı kenar: ortalamanın 1,5 katından yavaş.
-                  </AppText>
+                <SectionHeader title="Çalışılacak konular" />
+                <Card style={{ paddingVertical: 0 }}>
+                  {weak.slice(0, 3).map((t, i, arr) => (
+                    <Pressable
+                      key={t.topicId}
+                      accessibilityRole="button"
+                      accessibilityLabel={`${t.topicName}: ${t.wrong} yanlış, ${t.blank} boş. Çalış`}
+                      onPress={() => router.push({ pathname: "/seans", params: { mode: "practice", count: "10", focusKind: "topic", topicId: t.topicId, courseId: "", recipe: "" } })}
+                      style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingVertical: space.s3, borderBottomWidth: i < arr.length - 1 ? 1 : 0, borderBottomColor: colors.line, minHeight: 52 }}
+                    >
+                      <View style={{ flex: 1, gap: 2 }}>
+                        <AppText variant="subhead" numberOfLines={2}>
+                          {t.topicName}
+                        </AppText>
+                        <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+                          Y {t.wrong} · B {t.blank} · {t.total} soru
+                        </AppText>
+                      </View>
+                      <AppText variant="subhead" tone="accentInk">
+                        Çalış ›
+                      </AppText>
+                    </Pressable>
+                  ))}
                 </Card>
               </View>
             ) : null}
 
-            {d.review.length > 0 ? (
-              <View style={{ gap: space.s3 }}>
-                <SectionHeader title="Cevap incelemesi" />
-                {d.review.map((r) => {
-                  const state = (id: string, isCorrect: boolean): OptionState => (isCorrect ? (r.selectedOptionId === id ? "correct" : "missed") : r.selectedOptionId === id ? "incorrect" : "disabled");
-                  const status = r.selectedOptionId == null ? "blank" : r.options.find((o) => o.id === r.selectedOptionId)?.isCorrect ? "correct" : "wrong";
-                  return (
-                    <Card key={r.questionId} style={{ gap: space.s3 }}>
-                      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
-                        <AppText variant="label" tone="subtle">
-                          Soru {r.order}
-                        </AppText>
-                        <Badge tone={status === "correct" ? "success" : status === "wrong" ? "danger" : "neutral"}>{status === "correct" ? "Doğru" : status === "wrong" ? "Yanlış" : "Boş"}</Badge>
-                      </View>
-                      <AppText variant="body">{r.stem}</AppText>
-                      {r.options.map((o) => (
-                        <QuestionOption key={o.id} label={o.label} text={o.text} state={state(o.id, o.isCorrect)} />
-                      ))}
-                      {r.explanation ? (
-                        <View style={{ backgroundColor: colors.surfaceAlt, borderRadius: radius.control, padding: space.s3 }}>
-                          <AppText variant="bodySm">{r.explanation}</AppText>
-                        </View>
-                      ) : null}
-                      <View style={{ flexDirection: "row", gap: space.s2 }}>
-                        <IconButton icon={starred.has(r.questionId) ? StarOff : Star} label={starred.has(r.questionId) ? "Favoriden çıkar" : "Favorile"} variant={starred.has(r.questionId) ? "primary" : "secondary"} onPress={() => setBookmark.mutate({ questionId: r.questionId, on: !starred.has(r.questionId) })} />
-                        <IconButton icon={Flag} label="Hata bildir" variant="secondary" onPress={() => { setReportFor(r.questionId); setReportText(""); }} />
-                      </View>
-                    </Card>
-                  );
-                })}
-              </View>
+            <View style={{ gap: space.s2 }}>
+              {official ? <Button title="Sıralamayı gör" variant="secondary" onPress={() => router.push({ pathname: "/(tabs)/denemeler/siralama/[examId]", params: { examId: d.exam.id, title: d.exam.title } })} /> : null}
+              {d.personal ? <Button title="Yeni kişisel deneme" variant="secondary" onPress={() => router.replace("/(tabs)/denemeler/kisisel")} /> : null}
+              {!official && !d.personal ? <Button title="Deneme geçmişi" variant="secondary" onPress={() => router.push("/(tabs)/performans/denemelerim")} /> : null}
+            </View>
+            {d.personal ? (
+              <AppText variant="bodySm" tone="subtle" style={{ textAlign: "center" }}>
+                Kişisel deneme sıralamaya ve net gelişim çizgisine girmez.
+              </AppText>
             ) : null}
+
+            {/* ── Cevap incelemesi (M5) ── */}
+            <View style={{ gap: space.s3 }}>
+              <SectionHeader title="Cevap incelemesi" />
+              {review.data ? (
+                <>
+                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
+                    <Chip label="Tümü" selected={filter === "all"} onPress={() => setFilter("all")} />
+                    <Chip label={`Yanlış ${counts.wrong}`} selected={filter === "wrong"} onPress={() => setFilter("wrong")} />
+                    <Chip label={`Boş ${counts.blank}`} selected={filter === "blank"} onPress={() => setFilter("blank")} />
+                    <Chip label={`İşaretli ${counts.flagged}`} icon={Flag} selected={filter === "flagged"} onPress={() => setFilter("flagged")} />
+                    <Chip label="Çoğunluk bildi" icon={review.data.locked ? Lock : undefined} selected={filter === "majority"} disabled={review.data.locked} onPress={() => setFilter("majority")} />
+                  </View>
+                  {!review.data.locked && review.data.majorityMissed ? (
+                    <Card tone="accent" style={{ gap: 2 }}>
+                      <AppText variant="subhead" tone="accentInk">
+                        Çoğunluğun bildiği {review.data.majorityMissed} soruyu kaçırdın
+                      </AppText>
+                      <AppText variant="bodySm" tone="soft">
+                        Türkiye&apos;nin %70&apos;inden fazlasının doğru yaptığı sorular. Önce bunlara bak.
+                      </AppText>
+                    </Card>
+                  ) : null}
+                  {review.data.locked ? (
+                    <Card style={{ flexDirection: "row", gap: space.s2, alignItems: "center" }}>
+                      <Lock color={colors.inkSubtle} size={18} strokeWidth={1.75} />
+                      <AppText variant="bodySm" tone="soft" style={{ flex: 1 }}>
+                        Soru bazlı Türkiye doğru oranı, ortalama süre ve &quot;çoğunluk bildi&quot; süzgeci Premium ile açılır.
+                      </AppText>
+                    </Card>
+                  ) : null}
+                  <Card style={{ paddingVertical: 0, paddingHorizontal: 0, gap: 0 }}>
+                    {rows.length === 0 ? (
+                      <AppText variant="bodySm" tone="subtle" style={{ textAlign: "center", padding: space.s5 }}>
+                        Bu süzgeçte soru yok.
+                      </AppText>
+                    ) : null}
+                    {rows.map((it, i) => {
+                      const rq = reviewQ.get(it.questionId);
+                      const isOpen = open === it.questionId;
+                      return (
+                        <View key={it.questionId} style={{ borderTopWidth: i > 0 ? 1 : 0, borderTopColor: colors.line, backgroundColor: isOpen ? colors.surfaceAlt : "transparent" }}>
+                          <Pressable accessibilityRole="button" accessibilityState={{ expanded: isOpen }} onPress={() => setOpen(isOpen ? null : it.questionId)} style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingVertical: space.s3, paddingHorizontal: space.s4, minHeight: 56 }}>
+                            <AppText variant="subhead" style={{ width: 28, fontVariant: ["tabular-nums"] }}>
+                              {it.no}
+                            </AppText>
+                            <View style={{ flex: 1 }}>
+                              <AppText variant="subhead" numberOfLines={1}>
+                                {it.course ?? "—"}
+                              </AppText>
+                              <AppText variant="bodySm" tone="soft" numberOfLines={1}>
+                                {it.topic ?? ""}
+                              </AppText>
+                            </View>
+                            <View style={{ alignItems: "flex-end" }}>
+                              <Badge tone={it.status === "correct" ? "success" : it.status === "wrong" ? "danger" : "neutral"}>{it.status === "correct" ? "Doğru" : it.status === "wrong" ? "Yanlış" : "Boş"}</Badge>
+                              <AppText variant="bodySm" tone="subtle" style={{ fontVariant: ["tabular-nums"] }}>
+                                {it.turkeyRate != null ? `Türkiye %${it.turkeyRate}` : ""}{it.seconds != null ? `${it.turkeyRate != null ? " · " : ""}${mmss(it.seconds)}` : ""}
+                              </AppText>
+                            </View>
+                          </Pressable>
+                          {isOpen && rq ? <Detail q={rq} item={it} locked={review.data!.locked} starred={starred.has(rq.questionId)} onStar={() => setBookmark.mutate({ questionId: rq.questionId, on: !starred.has(rq.questionId) })} onReport={() => { setReportFor(rq.questionId); setReportText(""); }} /> : null}
+                        </View>
+                      );
+                    })}
+                  </Card>
+                </>
+              ) : review.isError ? (
+                <Notice tone="error">İnceleme yüklenemedi.</Notice>
+              ) : (
+                <Skeleton height={200} radiusKey="card" />
+              )}
+            </View>
             <Button title="Denemelere dön" onPress={() => router.dismissTo("/(tabs)/denemeler")} />
           </>
         ) : null}
@@ -178,5 +267,52 @@ export default function DenemeSonucScreen() {
         {report.isError ? <Notice tone="error">{report.error.message}</Notice> : null}
       </Sheet>
     </>
+  );
+}
+
+function Row({ k, v, accent }: { k: string; v: string; accent?: boolean }) {
+  return (
+    <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline", gap: 12 }}>
+      <AppText variant="bodySm" tone="soft">
+        {k}
+      </AppText>
+      <AppText variant="subhead" tone={accent ? "accentInk" : "ink"} style={{ fontVariant: ["tabular-nums"] }}>
+        {v}
+      </AppText>
+    </View>
+  );
+}
+
+function Detail({ q, item, locked, starred, onStar, onReport }: { q: NonNullable<ReturnType<typeof useAttempt>["data"]>["review"][number]; item: AttemptReview["items"][number]; locked: boolean; starred: boolean; onStar: () => void; onReport: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const state = (id: string, isCorrect: boolean): OptionState => (isCorrect ? (q.selectedOptionId === id ? "correct" : "missed") : q.selectedOptionId === id ? "incorrect" : "disabled");
+  return (
+    <View style={{ gap: space.s3, paddingHorizontal: space.s4, paddingBottom: space.s4, borderTopWidth: 1, borderTopColor: colors.line, paddingTop: space.s3 }}>
+      <AppText variant="body">{q.stem}</AppText>
+      {q.options.map((o) => (
+        <QuestionOption key={o.id} label={o.label} text={o.text} state={state(o.id, o.isCorrect)} />
+      ))}
+      {q.adjustment ? <Badge tone="warning">{q.adjustment === "credit_all" ? "İptal: herkese doğru sayıldı" : "İptal: hesaptan çıkarıldı"}</Badge> : null}
+      {q.explanation ? (
+        <View style={{ backgroundColor: colors.surface, borderRadius: radius.control, padding: space.s3, gap: 4 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <BookOpen color={colors.ink} size={16} strokeWidth={1.75} />
+            <AppText variant="subhead">Açıklama</AppText>
+          </View>
+          <AppText variant="bodySm" tone="soft">
+            {q.explanation}
+          </AppText>
+        </View>
+      ) : null}
+      <View style={{ flexDirection: "row", gap: space.s2 }}>
+        <StatTile label="Türkiye" value={locked ? null : item.turkeyRate != null ? `%${item.turkeyRate}` : null} hint={locked ? "Premium ile açılır" : "doğru yaptı"} style={{ flex: 1 }} />
+        <StatTile label="Süren" value={item.seconds != null ? mmss(item.seconds) : null} hint={!locked && item.avgSeconds != null ? `ortalama ${mmss(item.avgSeconds)}` : undefined} style={{ flex: 1 }} />
+      </View>
+      {item.missedMajority ? <Notice tone="warning">Çoğunluğun bildiği bir soru; bu konuyu çalışılacaklara ekledik.</Notice> : null}
+      <View style={{ flexDirection: "row", gap: space.s2 }}>
+        <IconButton icon={starred ? StarOff : Star} label={starred ? "Favoriden çıkar" : "Favorile"} variant={starred ? "primary" : "secondary"} onPress={onStar} />
+        <IconButton icon={Flag} label="Hata bildir" variant="secondary" onPress={onReport} />
+      </View>
+    </View>
   );
 }

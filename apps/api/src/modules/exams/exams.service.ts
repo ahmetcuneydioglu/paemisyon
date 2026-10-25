@@ -1176,16 +1176,29 @@ export class ExamsService {
             endAt: true,
             durationMinutes: true,
             practiceAfterEnd: true,
+            rankingsComputedAt: true,
             pastExam: { select: { id: true } },
           },
         },
       },
     });
-    const rankRows = await this.prisma.examRanking.findMany({
-      where: { userId: user.id },
-      select: { examId: true, rank: true },
-    });
-    const rankOf = new Map(rankRows.map((r) => [r.examId, r.rank]));
+    // Sıra: dondurulmuş tablo varsa oradan; yoksa (serbest, ya da pencere kapanmış ama henüz
+    // dondurulmamış takvimli) lider tablosuyla aynı canlı hesap. En az örnek kuralı ortak.
+    const rankOf = new Map<string, number | null>();
+    const examsToRank = new Map<string, NonNullable<(typeof sessions)[number]['exam']>>();
+    for (const s of sessions) {
+      if (!s.exam || s.attemptRole !== 'official' || s.exam.pastExam) continue;
+      if (resultLocked(this.window(s.exam), 'official', now)) continue;
+      examsToRank.set(s.exam.id, s.exam);
+    }
+    for (const exam of examsToRank.values()) {
+      const ranked = await this.rankedRows(exam.id, exam);
+      if (ranked.rows.length < RANKING_MIN_SAMPLE) {
+        rankOf.set(exam.id, null);
+        continue;
+      }
+      rankOf.set(exam.id, ranked.rows.find((r) => r.row.key === user.id)?.rank ?? null);
+    }
     const item = (s: (typeof sessions)[number]) => {
       const locked =
         s.exam && s.attemptRole === 'official'

@@ -43,7 +43,7 @@ export default function SeansScreen() {
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; questionId?: string; title?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; role?: string; questionId?: string; title?: string }>();
   const [premiumGate, setPremiumGate] = useState(false);
   const [queuedNote, setQueuedNote] = useState(false);
 
@@ -70,6 +70,8 @@ export default function SeansScreen() {
   const [flags, setFlags] = useState<Set<string>>(new Set());
   const [gridOpen, setGridOpen] = useState(false);
   const [deadline, setDeadline] = useState<number | null>(null);
+  /** Doc 50: resmî çözümde admin anahtarı, tekrar çözümde her zaman — sunucu söyler, istemci kural bilmez. */
+  const [reveal, setReveal] = useState(false);
   const shownAt = useRef(0);
   const finishing = useRef(false);
   const [scrollY] = useState(() => new Animated.Value(0));
@@ -99,9 +101,15 @@ export default function SeansScreen() {
           s = await quizApi.resume(p.resume);
         } else if (p.exam) {
           // Canlı deneme: pencere/premium/katılım kuralı sunucuda; cevaplar /quiz/sessions'a gider.
-          const r = await examApi.start(p.exam);
-          s = { sessionId: r.sessionId, mode: "deneme", plannedDurationSeconds: null, questions: r.questions, givenAnswers: r.givenAnswers.map((a) => ({ ...a, isCorrect: null })), endsAt: r.endsAt };
-          if (active) setTitle(r.title);
+          const role = p.role === "practice" ? "practice" : p.role === "official" ? "official" : undefined;
+          const r = await examApi.start(p.exam, role);
+          // Teslim sınırı sunucunun: min(kişisel süre, pencere sonu). endsAt yalnız bilgi.
+          s = { sessionId: r.sessionId, mode: "deneme", plannedDurationSeconds: null, questions: r.questions, givenAnswers: r.givenAnswers.map((a) => ({ ...a, isCorrect: null })), endsAt: r.deadlineAt ?? r.endsAt };
+          if (active) {
+            setTitle(r.title);
+            setReveal(r.liveAnswerReveal === true);
+            if (r.givenAnswers.some((a) => a.flagged)) setFlags(new Set(r.givenAnswers.filter((a) => a.flagged).map((a) => a.questionId)));
+          }
         } else {
           const mode: StartSessionBody["mode"] = p.mode === "exam" || p.mode === "review" || p.mode === "practice" || p.mode === "daily" ? p.mode : p.focusKind === "wrongs" ? "review" : "practice";
           const body: StartSessionBody = { mode };
@@ -156,6 +164,12 @@ export default function SeansScreen() {
         setPhase("playing");
       } catch (e) {
         if (!active) return;
+        // Resmî çözüm zaten var → sonuç ekranına (Doc 50 M3-b).
+        const taken = e instanceof ApiError && e.code === "EXAM_ALREADY_TAKEN" ? (e.details as { attemptId?: string } | undefined)?.attemptId : undefined;
+        if (taken) {
+          router.replace({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: taken } });
+          return;
+        }
         setError(describe(e));
         if (e instanceof ApiError && (e.code === "PREMIUM_REQUIRED" || e.code === "PERSONAL_EXAM_LIMIT")) setPremiumGate(true);
         setPhase("error");
@@ -206,8 +220,11 @@ export default function SeansScreen() {
         case "PREMIUM_REQUIRED": return "Bu içerik Premium üyelikte açılır.";
         case "PERSONAL_EXAM_LIMIT": return "Bugünkü kişisel deneme hakkın doldu; yarın yenilenir.";
         case "EXAM_NOT_STARTED": return d?.startAt ? `Deneme ${new Date(d.startAt).toLocaleString("tr-TR", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" })} başlıyor.` : "Deneme henüz başlamadı.";
-        case "EXAM_ENDED": return "Deneme penceresi kapandı.";
-        case "EXAM_ALREADY_TAKEN": return "Bu denemeye zaten katıldın; sonucunu Denemeler › Geçmiş'ten görebilirsin.";
+        case "EXAM_ENDED":
+        case "EXAM_CLOSED": return "Deneme penceresi kapandı.";
+        case "EXAM_ALREADY_TAKEN": return "Resmî çözümünü yaptın; sonucuna gidiyoruz.";
+        case "OFFICIAL_FIRST": return "Tekrar çözüm için önce resmî çözümünü tamamlaman gerekiyor.";
+        case "OFFICIAL_IN_PROGRESS": return "Devam eden bir resmî çözümün var; önce onu bitir.";
         case "EXAM_EMPTY": return "Denemede henüz soru yok.";
         case "ARCHIVE_CLOSED": return "Bu deneme arşive açılmadı.";
         case "DAILY_ALREADY_PLAYED": return "Günün sorusunu bugün çözdün.";
@@ -224,6 +241,7 @@ export default function SeansScreen() {
     void qc.invalidateQueries({ queryKey: examKeys.list });
     void qc.invalidateQueries({ queryKey: examKeys.mine });
     void qc.invalidateQueries({ queryKey: examKeys.dashboard });
+    void qc.invalidateQueries({ queryKey: examKeys.history });
     if (exam && attemptResult) router.replace({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: sessionId } });
     else router.replace({ pathname: "/sonuc", params: { sessionId: r.sessionId, data: JSON.stringify(r), title: scopeName ?? "" } });
   }
@@ -382,9 +400,17 @@ export default function SeansScreen() {
   async function save(qid: string, versionId: string, optionId: string) {
     if (!session) return;
     setSaveState((s) => ({ ...s, [qid]: "saving" }));
+    const spent = saat.simdi() - shownAt.current;
     try {
-      await quizApi.answer(session.sessionId, { questionId: qid, questionVersionId: versionId, selectedOptionId: optionId, timeSpentMs: saat.simdi() - shownAt.current });
+      const fb = await quizApi.answer(session.sessionId, { questionId: qid, questionVersionId: versionId, selectedOptionId: optionId, timeSpentMs: spent });
       setSaveState((s) => ({ ...s, [qid]: "saved" }));
+      // Canlı geri bildirim: sunucu anahtarı verdiyse göster; ilk cevap kilitlidir (kilitliyse kayıtlı şık geçerli).
+      if (reveal && "isCorrect" in fb) {
+        const locked = fb as AnswerFeedback & { selectedOptionId?: string | null };
+        const sel = locked.selectedOptionId ?? optionId;
+        setAnswers((a) => ({ ...a, [qid]: sel }));
+        setGiven((g) => ({ ...g, [qid]: { selected: sel, fb, seconds: Math.max(1, Math.round(spent / 1000)) } }));
+      }
     } catch (e) {
       setSaveState((s) => ({ ...s, [qid]: "failed" }));
       if (e instanceof ApiError && e.code === "EXAM_TIME_OVER") void finishExam(true);
@@ -393,11 +419,14 @@ export default function SeansScreen() {
 
   function pick(optionId: string) {
     if (!question) return;
+    // Canlı geri bildirimde ilk cevap kilitlenir; ikinci dokunuş yok sayılır.
+    if (reveal && (given[question.questionId] || saveState[question.questionId] === "saving")) return;
     const first = !answers[question.questionId];
     setAnswers((a) => ({ ...a, [question.questionId]: optionId }));
     void save(question.questionId, question.versionId, optionId);
-    // İlk cevapta kısa gecikmeyle ilerle; cevabı değiştirirken yerinde kal.
-    if (first && index + 1 < total) setTimeout(() => go(index + 1), 220);
+    // İlk cevapta kısa gecikmeyle ilerle; cevabı değiştirirken yerinde kal. Canlı geri bildirimde
+    // yerinde kal: açıklama okunur, ileri alt çubuktan.
+    if (first && !reveal && index + 1 < total) setTimeout(() => go(index + 1), 220);
   }
 
   function go(i: number) {
@@ -448,19 +477,25 @@ export default function SeansScreen() {
     ]);
   }
 
+  /** Kurallar ekranı oynatıcıyı `replace` ile açar; geçmiş yoksa Denemeler'e döner. */
+  function leave() {
+    if (router.canGoBack()) router.back();
+    else router.replace(isExam ? "/(tabs)/denemeler" : "/(tabs)");
+  }
+
   function confirmExit() {
     if (!session || phase !== "playing") {
-      router.back();
+      leave();
       return;
     }
     Alert.alert(isExam ? "Sınavdan çık?" : "Turdan çık?", isExam ? "Cevapların kaydedildi; süre dolmadan geri dönüp devam edebilirsin." : "Cevapların kaydedildi; Bugün'den kaldığın yerden devam edebilirsin.", [
       { text: "Kal", style: "cancel" },
-      { text: "Çık", style: "destructive", onPress: () => router.back() },
+      { text: "Çık", style: "destructive", onPress: leave },
     ]);
   }
 
   const optionState = (id: string): OptionState => {
-    if (isExam) return answers[question?.questionId ?? ""] === id ? "selected" : "default";
+    if (isExam && !(reveal && current)) return answers[question?.questionId ?? ""] === id ? "selected" : "default";
     if (!current) return selected === id ? "selected" : "default";
     if (id === current.fb.correctOptionId) return current.selected === id ? "correct" : "missed";
     if (id === current.selected) return "incorrect";
@@ -536,12 +571,12 @@ export default function SeansScreen() {
             {error}
           </Notice>
           {premiumGate ? <Button title="Premium'u gör" onPress={() => router.replace("/paywall")} /> : null}
-          <Button title="Geri dön" variant="secondary" onPress={() => router.back()} />
+          <Button title="Geri dön" variant="secondary" onPress={leave} />
         </View>
       ) : question ? (
         <>
           <Animated.ScrollView onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true })} scrollEventThrottle={16} contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: 140, gap: space.s4 }} contentInsetAdjustmentBehavior="never">
-            <SessionTitleBlock title={scopeTitle} index={Math.min(index + 1, total)} total={total} correct={isExam ? undefined : kacDogru} wrong={isExam ? undefined : kacYanlis} sub={isExam ? "Deneme modu" : undefined} slices={slices} />
+            <SessionTitleBlock title={scopeTitle} index={Math.min(index + 1, total)} total={total} correct={isExam ? undefined : kacDogru} wrong={isExam ? undefined : kacYanlis} sub={isExam ? (reveal ? "Anlık geri bildirim açık" : "Deneme modu") : undefined} slices={slices} />
             {isExam && saveState[question.questionId] === "failed" ? (
               <Notice tone="warning">Cevap kaydedilemedi; şıkka yeniden dokun ya da bağlantıyı kontrol et.</Notice>
             ) : null}
@@ -555,7 +590,7 @@ export default function SeansScreen() {
                 <QuestionOption key={o.id} label={o.label} text={o.text} state={optionState(o.id)} scale={scale} onPress={() => (isExam ? pick(o.id) : void answer(o.id))} />
               ))}
             </View>
-            {!isExam && feedback ? (
+            {(!isExam || reveal) && feedback ? (
               <FeedbackPanel
                 isCorrect={feedback.isCorrect}
                 correctLabel={feedback.correctOptionId ? (question.options.find((o) => o.id === feedback.correctOptionId)?.label ?? null) : null}
@@ -564,8 +599,8 @@ export default function SeansScreen() {
                 legalReference={feedback.legalReference}
                 articleLabel={feedback.relatedArticle?.text ? "Maddeyi oku" : null}
                 onReadArticle={() => setArticleOpen(true)}
-                coach={coach[question.questionId]}
-                tools={tools}
+                coach={isExam ? undefined : coach[question.questionId]}
+                tools={isExam ? [] : tools}
                 scale={scale}
               />
             ) : null}
@@ -605,7 +640,7 @@ export default function SeansScreen() {
             )}
           </Sheet>
 
-          {!isExam && feedback?.relatedArticle?.text ? (
+          {(!isExam || reveal) && feedback?.relatedArticle?.text ? (
             <Sheet visible={articleOpen} onClose={() => setArticleOpen(false)} title={`Madde ${feedback.relatedArticle.no}`}>
               <AppText variant="label" tone="subtle">
                 İlgili bölüm
