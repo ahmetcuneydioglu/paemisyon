@@ -61,4 +61,8 @@ practiceCount}`, `availability`, `myState`, `ExamStartResponse{role,deadlineAt,l
 | Oynatıcıda ders rozeti ve incelemede dayanak için veri yok | **API**: paket sorularına `course` (soru → konu → ders, tek sorgu), `getAttempt.review`'a `course/topic/legalReference` eklendi; deploy ile görünür |
 | Denemelerim'de sırası belli denemelerde "sıralama bekliyor" | **API** (`exams.service.ts › history`): sıra yalnız dondurulmuş tablodan geliyordu; artık dondurulmamış denemeler için lider tablosuyla aynı canlı hesap (en az 10 örnek kuralı ortak). Deploy ile canlıya çıkar |
 
+## 5. Deploy (26 Eki 2026)
+
+`b79c6d6` main'e push; Railway (api), Vercel (web/admin) ve GitHub CI (API, Web, Admin, Mobil, token) yeşil. Canlıda: `/exams/history/mine` sırası (19.), oynatıcıda ders rozeti ve M3–M6 ekranları simülatörde canlı API ile doğrulandı. TestFlight derlemesi ayrı karar.
+
 Not: beta hesabında isimler kullanıcı adı olarak görünüyor (`rankingName` ad yoksa `displayName`'e düşer); web ile aynı.
