@@ -1,12 +1,12 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2, Timer } from "lucide-react-native";
+import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2 } from "lucide-react-native";
 import { useEffect, useRef, useState } from "react";
 import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ExamGrid, FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
-import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
-import { examApi, examKeys, mmss } from "@/features/exams/queries";
+import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { AppText, Badge, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
+import { examApi, examKeys, fmtDuration, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
 import { buildShareCardData } from "@/features/quiz/share";
@@ -69,6 +69,7 @@ export default function SeansScreen() {
   const [saveState, setSaveState] = useState<Record<string, SaveState>>({});
   const [flags, setFlags] = useState<Set<string>>(new Set());
   const [gridOpen, setGridOpen] = useState(false);
+  const [submitOpen, setSubmitOpen] = useState(false);
   const [deadline, setDeadline] = useState<number | null>(null);
   /** Doc 50: resmî çözümde admin anahtarı, tekrar çözümde her zaman — sunucu söyler, istemci kural bilmez. */
   const [reveal, setReveal] = useState(false);
@@ -467,14 +468,15 @@ export default function SeansScreen() {
         setPhase("error");
       }
     };
-    if (auto) {
+    if (auto || submitOpen) {
+      setSubmitOpen(false);
       void run();
       return;
     }
-    Alert.alert("Testi bitir?", `${blank} boş${flags.size ? ` ve ${flags.size} bayraklı` : ""} sorun var. Bitirince cevaplar kilitlenir.`, [
-      { text: "Devam et", style: "cancel" },
-      { text: "Bitir", style: "destructive", onPress: () => void run() },
-    ]);
+    // Teslim onayı alt sayfa (Figma M3-e); ikinci çağrı (sayfadan "Teslim et") teslim eder.
+    void blank;
+    setGridOpen(false);
+    setSubmitOpen(true);
   }
 
   /** Kurallar ekranı oynatıcıyı `replace` ile açar; geçmiş yoksa Denemeler'e döner. */
@@ -512,7 +514,7 @@ export default function SeansScreen() {
     : [];
 
   const answeredCount = session ? session.questions.filter((q) => answers[q.questionId]).length : 0;
-  const lastMinute = remaining != null && remaining <= 60;
+  const lastFive = remaining != null && remaining <= 300;
   const tools: ToolAction[] = question
     ? [
         { key: "favorite", label: "Favori", active: bookmarks.has(question.questionId), onPress: toggleBookmark },
@@ -524,34 +526,18 @@ export default function SeansScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg, paddingTop: insets.top }}>
+      {isExam && session && phase === "playing" ? (
+        <ExamTopBar title={scopeTitle} index={Math.min(index + 1, total)} total={total} timeLabel={remaining != null ? mmss(remaining) : "Süresiz"} warning={lastFive} onClose={confirmExit} onPressCenter={() => setGridOpen(true)} />
+      ) : (
       <SessionTopRow
         onClose={confirmExit}
         closeLabel={isExam ? "Sınavdan çık" : "Turdan çık"}
         label={isExam ? scopeTitle : "Alıştırma"}
         collapsedLabel={collapsedLabel}
         scrollY={scrollY}
-        center={
-          isExam ? (
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-              <Timer color={lastMinute ? colors.danger : colors.inkSoft} size={16} strokeWidth={1.75} />
-              <AppText variant="subhead" tone={lastMinute ? "danger" : "ink"} style={{ fontVariant: ["tabular-nums"] }} accessibilityLabel={remaining != null ? `Kalan süre ${mmss(remaining)}` : "Süresiz"}>
-                {remaining != null ? mmss(remaining) : "Süresiz"}
-              </AppText>
-            </View>
-          ) : undefined
-        }
-        right={
-          isExam && phase === "playing" ? (
-            <Pressable accessibilityRole="button" onPress={() => void finishExam()} hitSlop={8} style={{ minHeight: 44, justifyContent: "center" }}>
-              <AppText variant="subhead" tone="accentInk">
-                Bitir
-              </AppText>
-            </Pressable>
-          ) : !isExam && phase === "playing" ? (
-            <IconButton icon={Ellipsis} label="Seans menüsü" variant="ghost" onPress={() => setMenuOpen(true)} />
-          ) : null
-        }
+        right={phase === "playing" ? <IconButton icon={Ellipsis} label="Seans menüsü" variant="ghost" onPress={() => setMenuOpen(true)} /> : null}
       />
+      )}
 
       {phase === "loading" || phase === "finishing" ? (
         <View style={{ padding: space.screenGutter, gap: space.s3 }}>
@@ -576,21 +562,37 @@ export default function SeansScreen() {
       ) : question ? (
         <>
           <Animated.ScrollView onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: true })} scrollEventThrottle={16} contentContainerStyle={{ paddingHorizontal: space.screenGutter, paddingBottom: 140, gap: space.s4 }} contentInsetAdjustmentBehavior="never">
-            <SessionTitleBlock title={scopeTitle} index={Math.min(index + 1, total)} total={total} correct={isExam ? undefined : kacDogru} wrong={isExam ? undefined : kacYanlis} sub={isExam ? (reveal ? "Anlık geri bildirim açık" : "Deneme modu") : undefined} slices={slices} />
-            {isExam && saveState[question.questionId] === "failed" ? (
-              <Notice tone="warning">Cevap kaydedilemedi; şıkka yeniden dokun ya da bağlantıyı kontrol et.</Notice>
-            ) : null}
-            {queuedNote && !isExam ? <Notice tone="info">Çevrimdışısın; cevapların cihazda saklanıyor, bağlantı gelince gönderilecek. Geri bildirim o zaman görünür.</Notice> : null}
-            <View style={{ gap: space.s3, paddingTop: space.s1 }}>
-              <QuestionMetaRow difficulty={question.difficulty} article={!isExam && question.relatedArticleRef ? { label: question.relatedArticleRef.label, onPress: openArticleBeforeAnswer } : null} />
-              <QuestionStem index={index + 1} total={total} stem={question.stem} counter={false} scale={scale} />
-            </View>
+            {isExam ? (
+              <>
+                {lastFive ? <Notice tone="warning">Son 5 dakika. Süre dolunca cevapların otomatik teslim edilir.</Notice> : null}
+                {saveState[question.questionId] === "failed" ? <Notice tone="warning">Cevap kaydedilemedi; şıkka yeniden dokun ya da bağlantıyı kontrol et.</Notice> : null}
+                <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s2, paddingTop: space.s2 }}>
+                  <AppText variant="label" tone="subtle" style={{ fontVariant: ["tabular-nums"] }}>
+                    SORU {index + 1}
+                  </AppText>
+                  {question.course ? <Badge>{question.course}</Badge> : null}
+                </View>
+                <AppText variant="body" accessibilityRole="header" style={{ fontSize: Math.round(17 * scale), lineHeight: Math.round(26 * scale) }}>
+                  {question.stem}
+                </AppText>
+              </>
+            ) : (
+              <>
+                <SessionTitleBlock title={scopeTitle} index={Math.min(index + 1, total)} total={total} correct={kacDogru} wrong={kacYanlis} slices={slices} />
+                {queuedNote ? <Notice tone="info">Çevrimdışısın; cevapların cihazda saklanıyor, bağlantı gelince gönderilecek. Geri bildirim o zaman görünür.</Notice> : null}
+                <View style={{ gap: space.s3, paddingTop: space.s1 }}>
+                  <QuestionMetaRow difficulty={question.difficulty} article={question.relatedArticleRef ? { label: question.relatedArticleRef.label, onPress: openArticleBeforeAnswer } : null} />
+                  <QuestionStem index={index + 1} total={total} stem={question.stem} counter={false} scale={scale} />
+                </View>
+              </>
+            )}
             <View style={{ gap: 10 }}>
               {question.options.map((o) => (
                 <QuestionOption key={o.id} label={o.label} text={o.text} state={optionState(o.id)} scale={scale} onPress={() => (isExam ? pick(o.id) : void answer(o.id))} />
               ))}
             </View>
-            {(!isExam || reveal) && feedback ? (
+            {isExam && reveal && feedback ? <ExamFeedbackBox correctLabel={feedback.correctOptionId ? (question.options.find((o) => o.id === feedback.correctOptionId)?.label ?? null) : null} explanation={feedback.explanation} /> : null}
+            {!isExam && feedback ? (
               <FeedbackPanel
                 isCorrect={feedback.isCorrect}
                 correctLabel={feedback.correctOptionId ? (question.options.find((o) => o.id === feedback.correctOptionId)?.label ?? null) : null}
@@ -599,15 +601,15 @@ export default function SeansScreen() {
                 legalReference={feedback.legalReference}
                 articleLabel={feedback.relatedArticle?.text ? "Maddeyi oku" : null}
                 onReadArticle={() => setArticleOpen(true)}
-                coach={isExam ? undefined : coach[question.questionId]}
-                tools={isExam ? [] : tools}
+                coach={coach[question.questionId]}
+                tools={tools}
                 scale={scale}
               />
             ) : null}
           </Animated.ScrollView>
 
           {isExam ? (
-            <SessionBar variant="exam" bottomInset={insets.bottom} onPrev={() => go(index - 1)} prevDisabled={index === 0} flagged={flags.has(question.questionId)} onFlag={toggleFlag} gridLabel={`${answeredCount}/${total}${flags.size ? ` · ⚑ ${flags.size}` : ""}`} onGrid={() => setGridOpen(true)} onNext={() => go(index + 1)} nextDisabled={index >= total - 1} />
+            <ExamActionBar bottomInset={insets.bottom} flagged={flags.has(question.questionId)} onFlag={toggleFlag} onPrev={() => go(index - 1)} prevDisabled={index === 0} nextTitle={index >= total - 1 ? "Bitir" : "Sonraki"} onNext={() => (index >= total - 1 ? void finishExam() : go(index + 1))} />
           ) : current ? (
             <SessionBar variant="after" bottomInset={insets.bottom} onPrev={prev} prevDisabled={index === 0} primaryTitle={index + 1 >= total ? "Turu bitir" : "Sonraki soru"} onPrimary={next} />
           ) : index > 0 ? (
@@ -673,14 +675,26 @@ export default function SeansScreen() {
           ) : null}
 
           {isExam && session ? (
-            <Sheet visible={gridOpen} onClose={() => setGridOpen(false)} title="Optik form" footer={<Button title="Testi bitir" variant="secondary" onPress={() => { setGridOpen(false); void finishExam(); }} />}>
+            <>
               {/* Mevcut soru cevaplıysa da "şu an" halkası önce gelir; bayrak dolu/boş'tan önce. */}
-              <ExamGrid
-                cells={session.questions.map((q) => ({ state: q.questionId === question?.questionId ? "current" : flags.has(q.questionId) ? "flagged" : answers[q.questionId] ? "answered" : "blank" }))}
+              <ExamMapSheet
+                visible={gridOpen}
+                onClose={() => setGridOpen(false)}
+                cells={session.questions.map<ExamMapCell>((q) => (q.questionId === question?.questionId ? "current" : flags.has(q.questionId) ? "flagged" : answers[q.questionId] ? "answered" : "blank"))}
                 onSelect={go}
-                remainingSeconds={remaining}
+                onSubmit={() => void finishExam()}
               />
-            </Sheet>
+              <ExamSubmitSheet
+                visible={submitOpen}
+                onClose={() => setSubmitOpen(false)}
+                onSubmit={() => void finishExam()}
+                answered={answeredCount}
+                blank={total - answeredCount}
+                flagged={flags.size}
+                remainingLabel={remaining != null ? fmtDuration(remaining) : null}
+                busy={finishing.current}
+              />
+            </>
           ) : null}
         </>
       ) : null}

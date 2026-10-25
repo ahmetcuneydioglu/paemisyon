@@ -11,10 +11,10 @@ kural bilmez (koç kuralı gibi).
 | M1 Merkez | `(tabs)/denemeler` | `app/(tabs)/denemeler/index.tsx` | Hero üç halde: devam eden çözüm (kalan süre, "Devam et"), sıradaki haftalık (gün/saat sayacı, hatırlat anahtarı, pencere açıkken "Katıl"), sakin hero. Gruplar: Serbest · Haftalık (listOrder sunucudan) · Bana özel kartı · Çıkmış sınavlar · "Deneme geçmişin" satırı |
 | Kart | — | `src/components/domain/exam.tsx › ExamCard` | `examCardModel` (`features/exams/queries.ts`) kart metnini/eylemini türetir: başla · devam et · sonucu gör · tekrar çöz · pencere kapandı · Premium. Haftalıkta tarih rozeti, katılımcı ve ortalama net |
 | M2 Kurallar | `denemeler/[examId]/kurallar?role=` | `app/(tabs)/denemeler/[examId]/kurallar.tsx` | Tam ekran. Üstte belirgin uyarı kartları (`RuleCard`): tek resmî hak, süre durmaz, anlık geri bildirim açık/kapalı, pencere sonu. 8 dersli dağılım tablosu (`detail.distribution`), haftalıkta hatırlatma düğmesi, "Başla" → `/seans?exam=&role=` |
-| M3 Oynatıcı | `seans?exam=&role=` | `app/seans.tsx` | `role` gövdeyle `POST /exams/:id/start`; teslim sınırı `deadlineAt` (pencere sonuyla kesişim). `liveAnswerReveal` true ise şıkka dokununca sunucu anahtarı geri döner: `FeedbackPanel` açılır, ilk cevap kilitlenir, ilerleme alt çubuktan. Kodlar: `EXAM_ALREADY_TAKEN{attemptId}` → doğrudan sonuç; `OFFICIAL_FIRST`, `OFFICIAL_IN_PROGRESS`, `EXAM_CLOSED` metinli hata |
-| M4 Sonuç | `deneme-sonuc/[attemptId]` | `app/deneme-sonuc/[attemptId].tsx` | Dört varyant: resmî (sıra cümlesi + yüzdelik, Türkiye kıyası Premium), tekrar çözüm (sırasız notu), kişisel, haftalık **sonuç bekliyor** (kilit kartı + cevaplanan/boş/süre). Net = doğru − yanlış/4 (`fmtNet`), 8 dersli `CourseBreakdown`, çalışılacak konular → alıştırma, `scoreUpdate` şeridi ("netin güncellendi"), süre doldu notu |
-| M5 İnceleme | aynı ekran, alt bölüm | — | `useAttemptReview`; süzgeç çipleri Tümü / Yanlış / Boş / İşaretli / Çoğunluk bildi (Premium); satır açılınca kök + şıklar (`QuestionOption` doğru/kaçırılan/yanlış), açıklama, Türkiye oranı ve süre (`locked` ise kilit metni), favori + hata bildir. **Kaynak etiketi okunmaz.** |
-| M6 Sıralama | `(tabs)/denemeler/siralama/[examId]` | `siralama/[examId].tsx` | "Senin sıran" sabit panel (ad, net, yanlış, süre, ilk %), isimli tablo (`RankRow`), donma tarihi / "katılımla güncellenir", `reason` min_sample ve result_pending boş durumları |
+| M3 Oynatıcı | `seans?exam=&role=` | `app/seans.tsx` + `domain/exam.tsx › ExamTopBar/ExamActionBar/ExamFeedbackBox/ExamMapSheet/ExamSubmitSheet` | Figma derisi birebir: üst çubuk (✕ · ad + "34 / 100" → soru haritası · ⏱ süre, son 5 dk uyarı tonu + şerit), 3 pt ilerleme, "SORU N" + ders rozeti, Inter kök, alt çubuk bayrak · Önceki · Sonraki (son soruda "Bitir"). `role` gövdeyle `POST /exams/:id/start`; teslim sınırı `deadlineAt`. `liveAnswerReveal` true ise şık dokunuşunda sunucu anahtarı: "✓ Doğru cevap C" kutusu + açıklama, ilk cevap kilitli. Soru haritası sayfası (sayım, süzgeç çipleri, 10 sütun) ve "Teslim edeyim mi?" sayfası (sayım + kalan süre + bilgi notu). Kodlar: `EXAM_ALREADY_TAKEN{attemptId}` → doğrudan sonuç; `OFFICIAL_FIRST`, `OFFICIAL_IN_PROGRESS`, `EXAM_CLOSED` metinli hata |
+| M4 Sonuç | `deneme-sonuc/[attemptId]` | `app/deneme-sonuc/[attemptId]/index.tsx` + `ResultHero`, `WeakTopicCard` | Figma birebir: "DENEME SONUCU" etiketi, büyük net (display) + "net", alt satır (resmî: "N kişide M. · ilk %X"; tekrar: "sıralamaya girmedi" + bilgi notu; kişisel; çıkmış sınav). D/Y/B kutuları, meta satırı, 8 dersli `CourseBreakdown`, Türkiye kıyası (resmî, Premium), çalışılacak konu kartları, **"Cevapları incele"** + ikinci düğme (Sıralamayı gör / Deneme geçmişi / Yeni kişisel deneme). Haftalık **sonuç bekliyor**: kart + cevaplanan/boş/süre + "Denemelere dön". `scoreUpdate` ve süre doldu şeritleri |
+| M5 İnceleme | `deneme-sonuc/[attemptId]/inceleme` → `…/soru/[no]` | `inceleme.tsx`, `soru/[no].tsx`, `ReviewRow` | Figma birebir, iki ayrı ekran (iç yığın `deneme-sonuc/_layout.tsx`). Liste: yatay süzgeç çipleri (Tümü / Yanlış / Boş / İşaretli / Çoğunluk bildi-Premium), "çoğunluğun bildiği N soru" kartı, soru kartları (durum simgesi · ders · konu · Türkiye % · 0:48). Ayrıntı: DERS etiketi + durum rozeti, kök, şıklar (doğru/kaçırılan/yanlış), Açıklama kartı, dayanak kartı (`legalReference`), Türkiye / Süren kutuları (kilit sunucudan), çoğunluk notu, "Bu soruyu bildir", "Sonraki soru". **Kaynak etiketi okunmaz.** |
+| M6 Sıralama | `(tabs)/denemeler/siralama/[examId]` | `siralama/[examId].tsx` | Figma birebir: deneme adı + "N resmî çözüm · katılımla güncellenir / dondurma tarihi", "sen" paneli (yüzdelik yalnız ilk %50), isimli tablo (`RankRow`, süre s:dd), listede yoksan en altta kendi satırın, eşitlik notu en altta; az katılım / sonuç bekliyor boş durumları başlık altında |
 | M7 Kişisel | `(tabs)/denemeler/kisisel` | `kisisel.tsx` | Uzunluk çipleri 25/50/100 (tavan `personalExam.maxQuestions`, üstü Premium kilidi), 8 dersli dağılım açıklaması, süre bilgisi, devam eden deneme varken engel, günlük hak metni. Havuz anahtarı sunucu desteğiyle sonra |
 | M8 Geçmiş | `(tabs)/performans/denemelerim` | `denemelerim.tsx` | `useExamHistory`: `TrendChart` (react-native-svg; Premium kilidi), üç grup Denemeler · Haftalık · Bana özel; satırda net, sıra, rol, süre doldu |
 | Kit | — | `src/components/domain/exam.tsx` | `ExamCard`, `RuleCard`, `CourseBreakdown`, `TrendChart`, `RankRow` — token'lı, `accessibilityLabel`'lı, 44pt hedef |
@@ -28,10 +28,12 @@ practiceCount}`, `availability`, `myState`, `ExamStartResponse{role,deadlineAt,l
 
 ## 2. Plandan / Figma'dan sapmalar
 
-- M5 ayrı rota (`…/inceleme`, `…/soru/[no]`) yerine sonuç ekranının altında açılır-kapanır liste:
-  tek ekranda süzgeç + ayrıntı, sayfa geçişi yok. Web'deki `review-table` ile aynı veri.
-- M3'te soru haritası ve bitir onayı mevcut oynatıcının `ExamGrid` + `Alert` yapısıyla kaldı
-  (Figma'daki sheet derisi F10'da zaten vardı).
+- İlk sürümde M3 F10 seans derisini, M5 ise sonuç altında açılır listeyi kullanıyordu; kullanıcı
+  26 Eki'de Figma'ya birebir uyum istedi (A seçeneği) → M3, M4, M5, M6 Figma'daki yapıya çekildi.
+- Figma M3'te teslim girişi çizilmemişti; "Teslim et" soru haritası sayfasının altına ve son
+  sorudaki "Sonraki" yerine "Bitir" olarak eklendi (eklenti, sapma değil).
+- M5 ayrıntıda Figma'da olmayan "Sonraki soru" düğmesi var (100 soruda geri-ileri gezinme için).
+- Alıştırma/yanlış turu oynatıcısı (F10 derisi) değişmedi; yeni deri yalnız deneme modunda.
 - Derin bağlantılar (`paemisyon://denemeler/<id>`, bildirimden sonuç) bu turda eklenmedi; mevcut
   `app.config.ts` şeması değişmedi. Bildirim yönlendirmesi F4 (ilk haftalık prova) ile birlikte.
 - Kişisel denemede "yanlışlarımdan" havuz anahtarı sunucuda yok; ekranda gösterilmiyor.
@@ -56,6 +58,7 @@ practiceCount}`, `availability`, `myState`, `ExamStartResponse{role,deadlineAt,l
 | "1 sa 28 dk" süre sütunda sarıyor | tabloda `fmtDurationCompact` ("88 dk"), sütun 64pt |
 | Canlı geri bildirim panelinin altında boş ayraç | `FeedbackPanel` araç satırını `tools` boşken çizmez |
 | Oynatıcıdan çıkış `GO_BACK` hatası (kurallar `replace` ile açıyor, geçmiş yok) | `leave()`: `canGoBack` değilse Denemeler sekmesine `replace` |
+| Oynatıcıda ders rozeti ve incelemede dayanak için veri yok | **API**: paket sorularına `course` (soru → konu → ders, tek sorgu), `getAttempt.review`'a `course/topic/legalReference` eklendi; deploy ile görünür |
 | Denemelerim'de sırası belli denemelerde "sıralama bekliyor" | **API** (`exams.service.ts › history`): sıra yalnız dondurulmuş tablodan geliyordu; artık dondurulmamış denemeler için lider tablosuyla aynı canlı hesap (en az 10 örnek kuralı ortak). Deploy ile canlıya çıkar |
 
 Not: beta hesabında isimler kullanıcı adı olarak görünüyor (`rankingName` ad yoksa `displayName`'e düşer); web ile aynı.

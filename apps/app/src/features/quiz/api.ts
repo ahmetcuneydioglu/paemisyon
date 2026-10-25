@@ -31,6 +31,8 @@ export interface QuizQuestion {
   /** Eski sunucuda yok → meta satırı boş kalır. */
   difficulty?: QuizDifficulty;
   relatedArticleRef?: QuizArticleRef | null;
+  /** Ders adı — yalnız deneme paketinde (Figma M3 rozeti). */
+  course?: string | null;
 }
 export interface QuizSession {
   sessionId: string;

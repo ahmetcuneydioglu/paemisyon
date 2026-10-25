@@ -1,7 +1,8 @@
-import { Check, Lock, Users, type LucideIcon } from "lucide-react-native";
-import { Pressable, View } from "react-native";
+import { Check, ChevronRight, Flag, Lock, Minus, Timer, Users, X, type LucideIcon } from "lucide-react-native";
+import { useState } from "react";
+import { Pressable, StyleSheet, View } from "react-native";
 import Svg, { Circle, Line, Polyline } from "react-native-svg";
-import { AppText, Badge, Button, Card, ProgressBar } from "@/components/ui";
+import { AppText, Badge, Button, Card, Chip, IconButton, Notice, ProgressBar, Sheet } from "@/components/ui";
 import { examCardModel, fmtDate, fmtNet, type CourseBreakdownRow, type ExamCardAction, type ExamHistory, type ExamListItem } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -217,4 +218,225 @@ export function RankRow({ rank, name, score, wrong, duration, me, highlight, onP
     </View>
   );
   return onPress ? <Pressable accessibilityRole="button" onPress={onPress}>{inner}</Pressable> : inner;
+}
+
+/* ---------------------------------------------------------------- Oynatıcı (Figma M3) */
+
+/**
+ * Deneme üst çubuğu: ✕ · ad + "34 / 100" (dokununca soru haritası) · ⏱ süre; altında 3 pt
+ * ilerleme. Son 5 dakikada süre uyarı tonuna döner.
+ */
+export function ExamTopBar({ title, index, total, timeLabel, warning, onClose, onPressCenter }: { title: string; index: number; total: number; timeLabel: string; warning?: boolean; onClose: () => void; onPressCenter?: () => void }) {
+  const { colors, space } = useTheme();
+  const pct = total > 0 ? Math.max(0, Math.min(1, index / total)) : 0;
+  return (
+    <View>
+      <View style={{ height: 56, flexDirection: "row", alignItems: "center", paddingHorizontal: space.s3 }}>
+        <IconButton icon={X} label="Sınavdan çık" variant="ghost" onPress={onClose} />
+        <Pressable accessibilityRole="button" accessibilityLabel={`${title}, soru ${index} / ${total}. Soru haritasını aç`} onPress={onPressCenter} style={{ flex: 1, alignItems: "center", justifyContent: "center", minHeight: 44 }}>
+          <AppText variant="bodySm" tone="soft" numberOfLines={1}>
+            {title}
+          </AppText>
+          <AppText variant="subhead" style={{ fontVariant: ["tabular-nums"] }}>
+            {index} / {total}
+          </AppText>
+        </Pressable>
+        <View style={{ minWidth: 92, flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: 4 }} accessible accessibilityLabel={`Kalan süre ${timeLabel}`}>
+          <Timer color={warning ? colors.warningInk : colors.accentInk} size={16} strokeWidth={1.75} />
+          <AppText variant="subhead" style={{ color: warning ? colors.warningInk : colors.accentInk, fontVariant: ["tabular-nums"] }}>
+            {timeLabel}
+          </AppText>
+        </View>
+      </View>
+      <View style={{ height: 3, backgroundColor: colors.surfaceAlt }}>
+        <View style={{ height: 3, width: `${pct * 100}%`, backgroundColor: colors.accent }} />
+      </View>
+    </View>
+  );
+}
+
+/** Deneme alt çubuğu: bayrak (kare) · Önceki · Sonraki. Son soruda "Sonraki" teslim sayfasını açar. */
+export function ExamActionBar({ flagged, onFlag, onPrev, prevDisabled, onNext, nextTitle = "Sonraki", bottomInset }: { flagged: boolean; onFlag: () => void; onPrev: () => void; prevDisabled?: boolean; onNext: () => void; nextTitle?: string; bottomInset: number }) {
+  const { colors, radius, space } = useTheme();
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: bottomInset + space.s3, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line, backgroundColor: colors.bg }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={flagged ? "Bayrağı kaldır" : "Soruyu işaretle"}
+        accessibilityState={{ selected: flagged }}
+        onPress={onFlag}
+        style={({ pressed }) => ({ width: 52, height: 52, borderRadius: radius.control, borderWidth: 1, borderColor: flagged ? colors.accent : colors.line, backgroundColor: flagged ? colors.accentSoft : colors.surface, alignItems: "center", justifyContent: "center", opacity: pressed ? 0.7 : 1 })}
+      >
+        <Flag color={flagged ? colors.accentInk : colors.ink} size={20} strokeWidth={1.75} fill={flagged ? colors.accent : "transparent"} />
+      </Pressable>
+      <Button title="Önceki" variant="ghost" onPress={onPrev} disabled={prevDisabled} style={{ flex: 1 }} />
+      <Button title={nextTitle} onPress={onNext} style={{ flex: 1.4 }} />
+    </View>
+  );
+}
+
+/** Anlık geri bildirim kutusu (Figma M3-b): "✓ Doğru cevap C" + açıklama; cevap kilitlidir. */
+export function ExamFeedbackBox({ correctLabel, explanation }: { correctLabel: string | null; explanation: string | null }) {
+  const { colors, space } = useTheme();
+  return (
+    <Card tone="alt" style={{ gap: space.s2 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+        <Check color={colors.successInk} size={18} strokeWidth={2} />
+        <AppText variant="subhead" tone="success">
+          {correctLabel ? `Doğru cevap ${correctLabel}` : "Cevap kaydedildi"}
+        </AppText>
+      </View>
+      <AppText variant="bodySm" tone="soft">
+        {explanation ? `${explanation.trim()} ` : ""}Cevap kilitlendi, değiştirilemez.
+      </AppText>
+    </Card>
+  );
+}
+
+export type ExamMapCell = "current" | "answered" | "flagged" | "blank";
+type MapFilter = "answered" | "blank" | "flagged" | null;
+
+/**
+ * Soru haritası (Figma M3-d): sayım satırı, süzgeç çipleri, 10 sütunlu numara ızgarası.
+ * Hücre 30 pt; dokunma hedefi hitSlop ile 44 pt'ye tamamlanır.
+ */
+export function ExamMapSheet({ visible, onClose, cells, onSelect, onSubmit }: { visible: boolean; onClose: () => void; cells: ExamMapCell[]; onSelect: (index: number) => void; onSubmit: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const [filter, setFilter] = useState<MapFilter>(null);
+  const [width, setWidth] = useState(0);
+  const answered = cells.filter((c) => c === "answered").length;
+  const flagged = cells.filter((c) => c === "flagged").length;
+  const blank = cells.length - answered - flagged;
+  const gap = 6;
+  const cell = width > 0 ? Math.floor((width - gap * 9) / 10) : 30;
+  const matches = (c: ExamMapCell) => (filter == null ? true : filter === "answered" ? c === "answered" : filter === "flagged" ? c === "flagged" : c === "blank" || c === "current");
+  return (
+    <Sheet visible={visible} onClose={onClose} title="Soru haritası" footer={<View style={{ gap: space.s2 }}><Button title="Sınava dön" variant="secondary" onPress={onClose} /><Button title="Teslim et" variant="ghost" onPress={onSubmit} /></View>}>
+      <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+        {answered} cevaplandı · {blank} boş · {flagged} işaretli
+      </AppText>
+      <View style={{ flexDirection: "row", gap: space.s2 }}>
+        <Chip label="Cevaplandı" selected={filter === "answered"} onPress={() => setFilter(filter === "answered" ? null : "answered")} />
+        <Chip label="Boş" selected={filter === "blank"} onPress={() => setFilter(filter === "blank" ? null : "blank")} />
+        <Chip label="İşaretli" icon={Flag} selected={filter === "flagged"} onPress={() => setFilter(filter === "flagged" ? null : "flagged")} />
+      </View>
+      <View onLayout={(e) => setWidth(e.nativeEvent.layout.width)} style={{ flexDirection: "row", flexWrap: "wrap", gap }}>
+        {cells.map((c, i) => {
+          const dim = !matches(c);
+          const bg = c === "answered" ? colors.surfaceAlt : colors.surface;
+          const border = c === "current" || c === "flagged" ? colors.accent : colors.line;
+          const fg = c === "answered" || c === "flagged" || c === "current" ? colors.accentInk : colors.inkSoft;
+          return (
+            <Pressable
+              key={i}
+              accessibilityRole="button"
+              accessibilityLabel={`Soru ${i + 1}${c === "answered" ? ", cevaplı" : c === "flagged" ? ", işaretli" : ", boş"}${c === "current" ? ", şu an" : ""}`}
+              hitSlop={7}
+              onPress={() => onSelect(i)}
+              style={({ pressed }) => ({ width: cell, height: cell, borderRadius: radius.control, backgroundColor: bg, borderWidth: c === "current" ? 2 : 1, borderColor: border, alignItems: "center", justifyContent: "center", opacity: pressed ? 0.6 : dim ? 0.3 : 1 })}
+            >
+              <AppText variant="label" style={{ color: fg, fontVariant: ["tabular-nums"] }}>
+                {i + 1}
+              </AppText>
+            </Pressable>
+          );
+        })}
+      </View>
+    </Sheet>
+  );
+}
+
+/** Teslim onayı (Figma M3-e): sayım satırı + bilgi notu; "Teslim et" / "Sınava dön". */
+export function ExamSubmitSheet({ visible, onClose, onSubmit, answered, blank, flagged, remainingLabel, busy }: { visible: boolean; onClose: () => void; onSubmit: () => void; answered: number; blank: number; flagged: number; remainingLabel: string | null; busy?: boolean }) {
+  const { space } = useTheme();
+  return (
+    <Sheet visible={visible} onClose={onClose} title="Teslim edeyim mi?" footer={<View style={{ gap: space.s2 }}><Button title="Teslim et" onPress={onSubmit} loading={busy} /><Button title="Sınava dön" variant="ghost" onPress={onClose} disabled={busy} /></View>}>
+      <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+        {answered} cevaplandı · {blank} boş · {flagged} işaretli{remainingLabel ? ` · ${remainingLabel} kaldı` : ""}
+      </AppText>
+      <Notice tone="info">Teslimden sonra cevaplar değiştirilemez. Boş sorular net&apos;e etki etmez.</Notice>
+    </Sheet>
+  );
+}
+
+/* ---------------------------------------------------------------- Sonuç (Figma M4) */
+
+/** "DENEME SONUCU" etiketi, büyük net ve alt satır (sıra / rol / kişisel karşılaştırma). */
+export function ResultHero({ label = "Deneme sonucu", value, unit = "net", sub, subTone = "soft" }: { label?: string; value: string; unit?: string | null; sub?: string | null; subTone?: "soft" | "ink" | "accentInk" }) {
+  const { space } = useTheme();
+  return (
+    <View style={{ gap: 2 }} accessible accessibilityRole="header" accessibilityLabel={`${label}: ${value} ${unit ?? ""}${sub ? `. ${sub}` : ""}`}>
+      <AppText variant="label" tone="subtle">
+        {label.toLocaleUpperCase("tr-TR")}
+      </AppText>
+      <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2 }}>
+        <AppText variant="display" style={{ fontVariant: ["tabular-nums"] }}>
+          {value}
+        </AppText>
+        {unit ? (
+          <AppText variant="title" tone="accentInk">
+            {unit}
+          </AppText>
+        ) : null}
+      </View>
+      {sub ? (
+        <AppText variant={subTone === "soft" ? "bodySm" : "subhead"} tone={subTone}>
+          {sub}
+        </AppText>
+      ) : null}
+    </View>
+  );
+}
+
+/** Çalışılacak konu kartı (Figma M4): ad, Y/B/soru satırı, "Çalış ›". */
+export function WeakTopicCard({ name, wrong, blank, total, onPress }: { name: string; wrong: number; blank: number; total: number; onPress: () => void }) {
+  const { colors, radius, space } = useTheme();
+  return (
+    <Pressable accessibilityRole="button" accessibilityLabel={`${name}: ${wrong} yanlış, ${blank} boş, ${total} soru. Çalış`} onPress={onPress} style={({ pressed }) => ({ flexDirection: "row", alignItems: "center", gap: space.s3, padding: space.s4, minHeight: 64, backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line, opacity: pressed ? 0.8 : 1 })}>
+      <View style={{ flex: 1, gap: 2 }}>
+        <AppText variant="subhead" numberOfLines={2}>
+          {name}
+        </AppText>
+        <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }}>
+          Y {wrong} · B {blank} · {total} soru
+        </AppText>
+      </View>
+      <AppText variant="subhead" tone="accentInk">
+        Çalış
+      </AppText>
+      <ChevronRight color={colors.inkSubtle} size={18} strokeWidth={1.75} />
+    </Pressable>
+  );
+}
+
+/* ---------------------------------------------------------------- İnceleme (Figma M5) */
+
+/** İnceleme liste kartı: durum simgesi · "Soru N" + ders · konu · sağda Türkiye % ve süre. */
+export function ReviewRow({ no, status, course, topic, turkeyLabel, timeLabel, onPress }: { no: number; status: "correct" | "wrong" | "blank"; course: string | null; topic: string | null; turkeyLabel: string | null; timeLabel: string; onPress: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const Icon = status === "correct" ? Check : status === "wrong" ? X : Minus;
+  const iconColor = status === "correct" ? colors.successInk : status === "wrong" ? colors.dangerInk : colors.inkSubtle;
+  const sub = [course, topic].filter(Boolean).join(" · ");
+  return (
+    <Pressable accessibilityRole="button" accessibilityLabel={`Soru ${no}, ${status === "correct" ? "doğru" : status === "wrong" ? "yanlış" : "boş"}${sub ? `, ${sub}` : ""}${turkeyLabel ? `, ${turkeyLabel}` : ""}, ${timeLabel}`} onPress={onPress} style={({ pressed }) => ({ flexDirection: "row", alignItems: "center", gap: space.s3, paddingVertical: space.s3, paddingHorizontal: space.s4, minHeight: 64, backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: StyleSheet.hairlineWidth, borderColor: colors.line, opacity: pressed ? 0.8 : 1 })}>
+      <Icon color={iconColor} size={18} strokeWidth={2} />
+      <View style={{ flex: 1, gap: 2 }}>
+        <AppText variant="subhead">Soru {no}</AppText>
+        <AppText variant="bodySm" tone="soft" numberOfLines={1}>
+          {sub || "—"}
+        </AppText>
+      </View>
+      <View style={{ alignItems: "flex-end", gap: 2 }}>
+        {turkeyLabel ? (
+          <AppText variant="bodySm" tone="ink">
+            {turkeyLabel}
+          </AppText>
+        ) : null}
+        <AppText variant="bodySm" tone="subtle" style={{ fontVariant: ["tabular-nums"] }}>
+          {timeLabel}
+        </AppText>
+      </View>
+      <ChevronRight color={colors.inkSubtle} size={18} strokeWidth={1.75} />
+    </Pressable>
+  );
 }

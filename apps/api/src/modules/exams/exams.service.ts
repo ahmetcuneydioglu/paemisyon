@@ -47,6 +47,8 @@ export interface PackQuestion {
   stem: string;
   mediaUrl: string | null;
   options: { id: string; label: string; text: string }[];
+  /** Ders adı (oynatıcı rozeti); paket JSON'unda yoksa null. */
+  course?: string | null;
 }
 
 /**
@@ -576,8 +578,23 @@ export class ExamsService {
     examId: string,
     pack: Prisma.JsonValue | null,
   ): Promise<PackQuestion[]> {
-    if (Array.isArray(pack) && pack.length > 0) return pack as unknown as PackQuestion[];
-    return (await this.examQuestions(examId, { withAnswers: false })) as PackQuestion[];
+    const base =
+      Array.isArray(pack) && pack.length > 0
+        ? (pack as unknown as PackQuestion[])
+        : ((await this.examQuestions(examId, { withAnswers: false })) as PackQuestion[]);
+    // Ders adı oynatıcı rozetinde (Figma M3); paket JSON'unda yok, soru kimliğinden bulunur.
+    const courseOf = await this.courseOf(base.map((q) => q.questionId));
+    return base.map((q) => ({ ...q, course: courseOf.get(q.questionId) ?? null }));
+  }
+
+  /** Soru → ders adı (konunun dersi). Tek sorgu, en fazla paket boyu kadar id. */
+  private async courseOf(questionIds: string[]): Promise<Map<string, string | null>> {
+    if (questionIds.length === 0) return new Map();
+    const rows = await this.prisma.question.findMany({
+      where: { id: { in: questionIds } },
+      select: { id: true, topic: { select: { course: { select: { name: true } } } } },
+    });
+    return new Map(rows.map((r) => [r.id, r.topic?.course?.name ?? null]));
   }
 
   /** Yayında çağrılır (admin): paket üretir ve saklar. */
@@ -711,7 +728,12 @@ export class ExamsService {
     // resmî tablo sırasıyla, sabit (Doc 50 §2.4).
     const qMeta = await this.prisma.question.findMany({
       where: { id: { in: review.map((q) => q.questionId) } },
-      select: { id: true, topic: { select: { id: true, name: true, courseId: true } } },
+      select: {
+        id: true,
+        topic: {
+          select: { id: true, name: true, courseId: true, course: { select: { name: true } } },
+        },
+      },
     });
     const metaOf = new Map(qMeta.map((q) => [q.id, q.topic]));
     const statusOf = (qid: string): 'correct' | 'wrong' | 'blank' => {
@@ -839,7 +861,12 @@ export class ExamsService {
           : null,
       topicBreakdown,
       timing,
-      review,
+      // İnceleme ayrıntısı (Figma M5): ders ve konu adı, dayanak atfı. Kaynak etiketi yok.
+      review: review.map((q) => ({
+        ...q,
+        course: metaOf.get(q.questionId)?.course?.name ?? null,
+        topic: metaOf.get(q.questionId)?.name ?? null,
+      })),
     };
   }
 
@@ -1547,6 +1574,7 @@ export class ExamsService {
             mediaUrl: true,
             explanation: opts.withAnswers,
             sourceLabel: opts.withAnswers,
+            legalReferences: opts.withAnswers ? { select: { citation: true }, take: 1 } : false,
             options: {
               orderBy: { sortOrder: 'asc' },
               select: { id: true, label: true, text: true, isCorrect: opts.withAnswers },
@@ -1566,6 +1594,10 @@ export class ExamsService {
         : undefined,
       source: opts.withAnswers
         ? ((r.questionVersion as { sourceLabel?: string | null }).sourceLabel ?? null)
+        : undefined,
+      legalReference: opts.withAnswers
+        ? ((r.questionVersion as { legalReferences?: { citation: string }[] }).legalReferences?.[0]
+            ?.citation ?? null)
         : undefined,
       options: r.questionVersion.options,
     }));

@@ -59,6 +59,8 @@ export interface ExamQuestion {
   stem: string;
   mediaUrl: string | null;
   options: QuizOption[];
+  /** Ders adı (oynatıcı rozeti, Figma M3); eski paketlerde yok. */
+  course?: string | null;
 }
 
 export interface ExamStartResponse {
@@ -128,7 +130,7 @@ export interface AttemptDetail {
   scoreUpdate: { from: number; to: number; at: string } | null;
   topicBreakdown: { topicId: string; topicName: string; correct: number; wrong: number; blank: number; total: number }[];
   timing: { order: number; timeSpentMs: number | null; status: "correct" | "wrong" | "blank" }[];
-  review: (Omit<ExamQuestion, "options"> & { explanation: string | null; options: (QuizOption & { isCorrect: boolean })[]; selectedOptionId: string | null; flagged?: boolean; adjustment?: "credit_all" | "exclude" | null })[];
+  review: (Omit<ExamQuestion, "options"> & { explanation: string | null; legalReference?: string | null; topic?: string | null; options: (QuizOption & { isCorrect: boolean })[]; selectedOptionId: string | null; flagged?: boolean; adjustment?: "credit_all" | "exclude" | null })[];
 }
 export interface AttemptReview {
   attemptId: string;
@@ -323,6 +325,20 @@ export function fmtDuration(seconds: number | null | undefined): string {
   if (h > 0) return `${h} sa ${m} dk`;
   if (m > 0) return `${m} dk`;
   return `${seconds} sn`;
+}
+
+/** Saat:dakika ("1:52", "0:35") — sıralama tablosu ve inceleme listesi (Figma M5/M6). */
+export function fmtClock(seconds: number | null | undefined): string {
+  if (seconds == null) return "—";
+  const h = Math.floor(seconds / 3600), m = Math.floor((seconds % 3600) / 60);
+  return `${h}:${String(m).padStart(2, "0")}`;
+}
+
+/** Dakika:saniye ("0:48", "2:05") — soru bazlı süre. */
+export function fmtMs(seconds: number | null | undefined): string {
+  if (seconds == null) return "—";
+  const m = Math.floor(seconds / 60), sec = seconds % 60;
+  return `${m}:${String(sec).padStart(2, "0")}`;
 }
 
 /** Tablo hücresi için tek parça süre: "88 dk" (saat kırılımı yok, sarmaz). */
