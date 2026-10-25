@@ -38,7 +38,7 @@ export function QuestionStem({
         </div>
       ) : null}
       <p
-        className="max-w-[65ch] font-display text-[20px] leading-7 font-normal text-ink"
+        className="max-w-[65ch] font-display text-[20px] leading-7 font-normal whitespace-pre-line text-ink"
         role="heading"
         aria-level={2}
       >

@@ -1,6 +1,7 @@
 import type { GlobalRankRow, RankRow } from "@/lib/types";
 import { cn } from "@/lib/cn";
 import { DataTable, type Column } from "@/components/ui/data-table";
+import { fmtNet } from "@/lib/exam-ui";
 
 /**
  * İlk-3 podyum + tablo — deneme sıralaması ve genel lider tablosu ortak deseni.
@@ -43,7 +44,7 @@ export function Podium({ rows }: { rows: (RankRow | GlobalRankRow)[] }) {
               {"name" in r && r.name ? r.name : r.displayName}
             </span>
             <span className="type-stat text-ink">
-              {"score" in r ? r.score.toFixed(2) : r.avgScore.toFixed(2)}
+              {"score" in r ? fmtNet(r.score) : fmtNet(r.avgScore)}
             </span>
             <span className="type-body-sm text-ink-soft">
               {"wrongCount" in r
@@ -84,7 +85,7 @@ export function ExamRankTable({ rows }: { rows: RankRow[] }) {
       key: "net",
       header: "Net",
       align: "right",
-      cell: (r) => r.score.toFixed(2),
+      cell: (r) => fmtNet(r.score),
     },
     {
       key: "y",
