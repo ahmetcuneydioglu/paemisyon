@@ -61,6 +61,21 @@ practiceCount}`, `availability`, `myState`, `ExamStartResponse{role,deadlineAt,l
 | Oynatıcıda ders rozeti ve incelemede dayanak için veri yok | **API**: paket sorularına `course` (soru → konu → ders, tek sorgu), `getAttempt.review`'a `course/topic/legalReference` eklendi; deploy ile görünür |
 | Denemelerim'de sırası belli denemelerde "sıralama bekliyor" | **API** (`exams.service.ts › history`): sıra yalnız dondurulmuş tablodan geliyordu; artık dondurulmamış denemeler için lider tablosuyla aynı canlı hesap (en az 10 örnek kuralı ortak). Deploy ile canlıya çıkar |
 
+## 4b. Telefon turu sonrası eklemeler (26 Eki 2026, gece)
+
+Kullanıcı Release derlemesini iPhone'da denedi (`xcodebuild -configuration Release` +
+`devicectl install/launch`; Metro'suz). Geri bildirimleri ve karşılıkları:
+
+| Geri bildirim | Yapılan |
+|---|---|
+| Oynatıcıda "bildir" en altta/yoktu; soru paylaşımı yok; 1–100 soru haritası düğmesi görünmüyor | Şıkların altına **Paylaş · Bildir** satırı; alt çubuğun soluna **soru haritası** düğmesi (`ExamActionBar.onGrid`) |
+| Soruyu bildir klavyenin altında kalıyor, yapı gysrota'ya göre basit | `domain/report-sheet.tsx` — gys-mobil `ReportSheet` kalıbı: tam sayfa modal, "Sorun ne?" neden listesi (Doğru cevap hatalı · Mevzuat güncel değil · Soru belirsiz · Yazım hatası), isteğe bağlı açıklama, `KeyboardAvoidingView`. Mesaj sunucuya "Neden — açıklama" olarak gider; API değişmedi. Alıştırma, deneme ve sonuç ayrıntısı aynı sayfayı kullanır |
+| Haftalık denemeye sayaç; kartta "Haftalık deneme" ile tarih iç içe; haftalık farklı renk; deneme başlayınca Bugün'de PAEM sayacı yerine canlı deneme | **Figma 58:1318** (onaylı, `figma-haftalik-sayac-light.png`). Token: `live` / `liveSoft` / `liveInk` (bordo; Figma değişkenleri + `design-tokens.json` + kontrast çiftleri, web `globals.css`). Expo: `WeeklyCountdown` (GÜN:SAAT:DK:SN, saniyede), `WeeklyExamCard` (HAFTALIK rozeti + "Pazar 1 Kas · 21:00" satırı, sağda mini sayaç, bordo zemin/çerçeve, beklemede Hatırlat · Kuralları gör; açıkken Katıl; bitmiş Sonucunu gör · Sıralama), `RemindButton`, hero bordo; Bugün'de pencere açıkken `LiveExamPanel` (CANLI · ad · kalan süre · 21:00–23:30 · Katıl/Devam et/Sonucunu gör · Kurallar · "PAEM'e N gün" satırı), kapanınca `CountdownHero` geri gelir |
+
+Doğrulama: simülatörde hero sayacı akıyor (canlıda 1 Kas 21:00 haftalık deneme var), kartların üç
+hâli gerçek veriyle; Bugün canlı paneli açık pencere olmadığı için simülatörde görülemedi — ilk
+haftalık (F4) provasında doğrulanır.
+
 ## 5. Deploy (26 Eki 2026)
 
 `b79c6d6` main'e push; Railway (api), Vercel (web/admin) ve GitHub CI (API, Web, Admin, Mobil, token) yeşil. Canlıda: `/exams/history/mine` sırası (19.), oynatıcıda ders rozeti ve M3–M6 ekranları simülatörde canlı API ile doğrulandı. TestFlight derlemesi ayrı karar.
