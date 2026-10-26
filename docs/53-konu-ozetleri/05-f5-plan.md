@@ -159,3 +159,14 @@ hâkimiyet satırı, Bugün kartı reçete meta'sı), F5-4 Expo.
 
 Web 12 test dosyası geçti (ozet 8, routes +3), tsc ve eslint temiz. Tarayıcı: önizleme oturumu düştüğü için üç
 yüzey (oda, okuyucu, Bugün kartı) kullanıcı girişinden sonra görülecek.
+
+## F5-4 durum (26 Eki 2026) — Expo yazıldı; tsc/eslint temiz, simülatör canlı veriyi bekliyor
+
+| Parça | Dosya | Not |
+|---|---|---|
+| Tipler + yardımcılar | `features/summaries/queries.ts` (`UnitMastery`, `UnitRecipe`, `weakestUnit`, `masteryLabel`), `features/home/queries.ts` (`unitRecipe`) | Web `ozet.ts` ile aynı sözleşme |
+| Konu odası | `domain/summary.tsx › SummaryUnitRow` rozet; `kutuphane/konu/[topicId].tsx` "En zayıf ünite" satırı | Rozet öncelik: hâkimiyet > Premium > ilerleme çubuğu |
+| Okuyucu | `app/ozet/[slug].tsx` | İlerleme altında "Bu üniteden N soru çözdün: %X · zayıf"; köprü satırında "şu an %X, 10 soruyla yükselt" |
+| Bugün | `(tabs)/index.tsx` hazırlık bloğu "en zayıf konular" | Reçete konuya aitse satır "en zayıf ünite Yasama I (%33)" + "Özeti oku ›" → `/ozet/[slug]`; özet bitmişse "10 soru ›" ünite maddeleriyle (`articleNos`) seans. Mobil koç kartı çizmediği için reçete bu bloğa bağlandı |
+
+Simülatörde görülmesi için canlıda API deploy'u ve yayınlanmış ünite gerekir (uygulama canlı API'ye bağlı).

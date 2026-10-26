@@ -3,7 +3,7 @@ import { useMemo, useState, type ReactNode } from "react";
 import { Pressable, ScrollView, View } from "react-native";
 import { AppText, Badge, Button, Card, ListRow, ProgressBar, Sheet, Skeleton, type BadgeTone } from "@/components/ui";
 import { useLawRead } from "@/features/mevzuat/queries";
-import { parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryUnitListItem } from "@/features/summaries/queries";
+import { masteryLabel, parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryUnitListItem } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /* ---------------------------------------------------------------- Ünite satırı */
@@ -24,7 +24,9 @@ export function SummaryUnitRow({ unit, onPress }: { unit: SummaryUnitListItem; o
         </View>
       }
       trailing={
-        unit.isPremium ? (
+        masteryLabel(unit.mastery) ? (
+          <Badge tone={unit.mastery!.band === "weak" ? "warning" : unit.mastery!.band === "strong" ? "success" : "neutral"}>{masteryLabel(unit.mastery)!}</Badge>
+        ) : unit.isPremium ? (
           <Badge tone={unit.locked ? "warning" : "neutral"}>Premium</Badge>
         ) : unit.progress ? (
           <View style={{ width: 56, gap: space.s1 }}>

@@ -390,33 +390,46 @@ export default function BugunScreen() {
                 </View>
                 {data.readiness.weakest.length > 0 ? (
                   <View>
-                    {data.readiness.weakest.map((t, i) => (
-                      <ListRow
-                        key={t.topicId}
-                        title={t.name}
-                        subtitle={`${t.courseName} · %${Math.round(t.accuracy * 100)} doğru`}
-                        divider={i < data.readiness.weakest.length - 1}
-                        chevron={false}
-                        trailing={
-                          <AppText variant="subhead" tone="accentInk">
-                            10 soru ›
-                          </AppText>
-                        }
-                        onPress={() =>
-                          router.push({
-                            pathname: "/seans",
-                            params: {
-                              source: "home_weak_topic",
-                              count: "10",
-                              focusKind: "topic",
-                              topicId: t.topicId,
-                              courseId: "",
-                              recipe: "",
-                            },
-                          })
-                        }
-                      />
-                    ))}
+                    {data.readiness.weakest.map((t, i) => {
+                      // Ünite reçetesi (Doc 53 F5): en zayıf konunun satırı özete ya da ünite maddeleriyle seansa gider.
+                      const r = data.unitRecipe && data.unitRecipe.unit.topicId === t.topicId ? data.unitRecipe : null;
+                      const uniteAd = r ? r.unit.title.split(" — ")[0] : null;
+                      const ozete = r?.kind === "summary_then_questions";
+                      return (
+                        <ListRow
+                          key={t.topicId}
+                          title={t.name}
+                          subtitle={
+                            r
+                              ? `${t.courseName} · en zayıf ünite ${uniteAd}${r.unit.accuracyPct != null ? ` (%${r.unit.accuracyPct})` : ""}`
+                              : `${t.courseName} · %${Math.round(t.accuracy * 100)} doğru`
+                          }
+                          divider={i < data.readiness.weakest.length - 1}
+                          chevron={false}
+                          trailing={
+                            <AppText variant="subhead" tone="accentInk">
+                              {ozete ? "Özeti oku ›" : "10 soru ›"}
+                            </AppText>
+                          }
+                          onPress={() =>
+                            ozete && r
+                              ? router.push({ pathname: "/ozet/[slug]", params: { slug: r.unit.slug, title: uniteAd ?? "" } })
+                              : router.push({
+                                  pathname: "/seans",
+                                  params: {
+                                    source: "home_weak_topic",
+                                    count: "10",
+                                    focusKind: "topic",
+                                    topicId: t.topicId,
+                                    courseId: "",
+                                    recipe: "",
+                                    ...(r ? { articleNos: r.session.articleNos.join(","), title: `${t.name} · ${uniteAd}` } : {}),
+                                  },
+                                })
+                          }
+                        />
+                      );
+                    })}
                   </View>
                 ) : null}
               </View>

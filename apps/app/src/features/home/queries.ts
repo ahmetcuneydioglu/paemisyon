@@ -68,6 +68,8 @@ export interface ReadinessTopic {
 }
 
 export interface CoachBrief {
+  /** Ünite reçetesi (Doc 53 F5-2): en zayıf konunun en zayıf ünitesi; eski sunucuda alan yok. */
+  unitRecipe?: import("../summaries/queries").UnitRecipe | null;
   flags: { homeV2: boolean };
   exam: { name: string | null; date: string | null; daysLeft: number | null; source: "personal" | "official" | null };
   readiness: { courses: ReadinessCourse[]; weakest: ReadinessTopic[]; unresolvedWrongCount: number };

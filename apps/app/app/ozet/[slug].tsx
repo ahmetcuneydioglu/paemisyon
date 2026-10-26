@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FlatList, View, type FlatListProps } from "react-native";
 import { ArticlePeekSheet, SummaryBlockCard, SummaryLockCard, useArticlePeek } from "@/components/domain/summary";
 import { ActionBar, AppText, Badge, Notice, ProgressBar, Skeleton } from "@/components/ui";
-import { shortTitle, useSaveUnitProgress, useUnit, type SummaryBlock } from "@/features/summaries/queries";
+import { masteryLabel, shortTitle, useSaveUnitProgress, useUnit, type SummaryBlock } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 const KAYIT_ARALIGI_MS = 2500;
@@ -95,6 +95,11 @@ export default function OzetScreen() {
           {done ? "Bitti" : `%${Math.round(pct * 100)}`}
         </AppText>
       </View>
+      {u.mastery && u.mastery.band !== "new" ? (
+        <AppText variant="bodySm" tone={u.mastery.band === "weak" ? "accentInk" : "subtle"}>
+          Bu üniteden {u.mastery.solved} soru çözdün: {masteryLabel(u.mastery)}
+        </AppText>
+      ) : null}
     </View>
   );
 
@@ -107,6 +112,7 @@ export default function OzetScreen() {
           <AppText variant="body" tone="soft" style={{ flex: 1 }}>
             {done ? "Ünite bitti. Şimdi soruya: " : "Okuduğunu soruyla sına: "}
             {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${u.articleFrom}–${u.articleTo}`}
+            {u.mastery?.band === "weak" ? ` · şu an %${u.mastery.accuracyPct ?? 0}, 10 soruyla yükselt` : ""}
           </AppText>
         </View>
       ) : null}

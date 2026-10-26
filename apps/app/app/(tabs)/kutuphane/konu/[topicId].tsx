@@ -2,7 +2,7 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Bookmark, XCircle } from "lucide-react-native";
 import { View } from "react-native";
 import { CoachLine, RoomStatPanel, SummaryUnitRow } from "@/components/domain";
-import { useTopicUnits } from "@/features/summaries/queries";
+import { useTopicUnits, weakestUnit } from "@/features/summaries/queries";
 import { ActionBar, AppText, Badge, Button, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
 import { useTopicRoom } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -51,6 +51,14 @@ export default function KonuOdasiScreen() {
             {units.data && units.data.length > 0 ? (
               <View style={{ gap: space.s2 }}>
                 <SectionHeader title="Konu özetleri" />
+                {(() => {
+                  const z = weakestUnit(units.data);
+                  return z ? (
+                    <AppText variant="bodySm" tone="soft">
+                      En zayıf ünite: {z.title.split(" — ")[0]} (%{z.mastery!.accuracyPct ?? 0}). {z.progress?.completedAt ? "Özetini okudun; sorularla pekiştir." : "Önce özetini oku."}
+                    </AppText>
+                  ) : null;
+                })()}
                 {units.data.map((u) => (
                   <SummaryUnitRow key={u.slug} unit={u} onPress={() => router.push({ pathname: "/ozet/[slug]", params: { slug: u.slug, title: u.title.split(" — ")[0] } })} />
                 ))}
