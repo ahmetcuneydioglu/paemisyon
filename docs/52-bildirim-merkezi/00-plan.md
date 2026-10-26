@@ -1,6 +1,9 @@
 # Doc 52 — Bildirim Merkezi: çok kanallı bildirim motoru (push + kutu + e-posta)
 
-Tarih: 26 Ekim 2026. Durum: **plan, onay bekliyor.**
+Tarih: 26 Ekim 2026. Durum: **plan ONAYLI (26 Eki) · Figma tamam (26 Eki) · F1 bekliyor.**
+Figma: "Paemisyon 2.0 — Nöbet" › sayfa **Bildirim Merkezi (Doc 52)**
+(<https://www.figma.com/design/1YZRWO3azniW8NU5CvV1BZ?node-id=51-2>), beş section: Bileşenler · Admin (Light, 10 ekran)
+· Mobil (Dark, 4 ekran) · Mobil (Light, 4 ekran) · Web (Dark, 2 sayfa + zil paneli). Ayrıntı §15.
 Kaynak model: jsps `docs/notification-engine-plan.md` (23 Eyl 2026) ve sonraki yayın notları
 (otomasyon geriye dönük gönderim yok, web push, AI metin önerisi, Brevo kanalı, soru bildirimi dönüşü).
 Ürün anayasası: Doc 24 §7.6 bildirim disiplini, Doc 25 §B/D/E/F akışları, Doc 26 "Bildirim dili".
@@ -568,3 +571,21 @@ Geri alma: `NOTIFICATIONS_WORKER=0` işçiyi durdurur; kill switch anında keser
 4. Kategori listesi 12 (jsps 11 + `question_report`; `marketing` push kapalı).
 5. Mobil kutu zili Bugün üst çubuğunda; sekme eklenmedi (dört sekme kuralı, Doc 49/07).
 6. Emoji yasağı (karar 10) mevcut iki admin şablonunu değiştirir.
+
+---
+
+## 15. Figma durumu (26 Eki 2026)
+
+Sayfa `Bildirim Merkezi (Doc 52)`; mevcut Nöbet token'ları (Nöbet / Color, Spacing, Radius), Nöbet metin stilleri ve
+kütüphanedeki `Button`, `Badge`, `TabBar / Sekmeler` bileşenleri kullanıldı. Renkler ve dolgular değişkene bağlı; section'lar
+açık/koyu modu `setExplicitVariableModeForCollection` ile taşır.
+
+| Section | Ekranlar | Not |
+|---|---|---|
+| Bileşenler | `Admin / Sidebar` (Bildirim Merkezi aktif, sayaç), `Admin / AltSekme` (Aktif·Pasif, Label), `Admin / StatCard` (Label·Value·Delta), `BildirimSatırı` (Okunmamış·Okundu; Title·Body·Time) | Dört yeni yerel bileşen; satır mobilde 353, web'de FILL |
+| Admin (Light) | Genel Bakış · Yeni Bildirim · Kampanyalar · Otomatik Bildirimler · Segmentler · Şablonlar · Planlanmış · Gönderim Geçmişi · Analizler · Ayarlar (1440) | §12 tablosuyla birebir; kampanya detayı slide-over yerine tam genişlik gösterildi |
+| Mobil (Dark/Light) | Bugün üst çubuk zil (rozet 3) · Bildirimler kutu (gün grupları, "güncelleme gerekli" satırı) · Boş durum · Ayarlar › Bildirimler (ana anahtar, saat çipleri, sessiz saat, 10 kategori + sistem, e-posta bağlantısı) | Karar 5: zil Bugün üst çubuğunda, beşinci sekme yok |
+| Web (Dark) | `/bildirimler` (liste + tercih özeti raylı) · `/profil/bildirimler` (push, saat, kategoriler iki sütun, e-posta rızaları) · zil açılır paneli (400) | Nöbet kabuğu (TopNav) Denemeler V2 web ekranındaki yapıyla aynı |
+
+Uygulama sırasında Figma'ya sadık kalınacak noktalar: satır ikonu kategoriye göre değişir (Figma'da tek zil ikonu; kodda
+kategori → ikon eşlemesi), kill switch kartı yalnız admin rolünde görünür, Analizler'deki A/B kartı F3'e kadar pasif metin.
