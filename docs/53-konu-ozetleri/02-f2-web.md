@@ -1,6 +1,6 @@
 # Doc 53 / 02 — F2: web özet okuyucu ve konu odası
 
-Tarih: 26 Ekim 2026. Durum: **yazıldı, misafir akışı tarayıcıda doğrulandı; girişli akış doğrulaması ve deploy bekliyor.**
+Tarih: 26 Ekim 2026. Durum: **yazıldı, misafir ve girişli akış tarayıcıda doğrulandı; deploy bekliyor.**
 Figma açılmadı: ekranlar mevcut "Nöbet" web kitiyle (Card, Badge, ProgressBar, Dialog, PageIntro, ClosingCta) koddan kuruldu;
 istenirse `html_to_figma` ile Figma'ya aktarılır.
 
@@ -21,7 +21,9 @@ istenirse `html_to_figma` ile Figma'ya aktarılır.
 - Web: `ozet.test.ts` 6 test (gövde ayrıştırma, köprü adresi, açıklama, ilerleme yüzdesi); tsc ve eslint temiz. API: tsc temiz.
 - Tarayıcı (misafir, yerel API + Docker DB, worktree önizlemesi :3014): başlık/description doğru, 2 açık kart + "Kalan 20 kart Premium" kapısı,
   madde rozeti penceresi md 75 metnini kaynak ve tarihle gösterdi; koyu ve açık tema, 375 px genişlik temiz.
-- Girişli akış (konu odası bölümü, ilerleme kaydı, köprü → seans) kullanıcı girişi gerektirir; :3014'te giriş sonrası doğrulanacak.
+- Girişli (test hesabı, :3014): konu odasında "Konu özetleri" satırı (kilit/premium rozeti doğru), okuyucuda ilerleme çubuğu ve
+  `POST /me/summaries/progress` 201, son kartta "Bitti", köprü → `/seans?articleNos=75…86` → `POST /quiz/sessions` 201, ilk soru md 84.
+  Kabuk başlığı "Bugün" çıkıyordu: `/ozet` Kütüphane bölgesine eşlendi (`navigation.ts also`).
 
 ## Notlar
 

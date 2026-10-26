@@ -47,7 +47,7 @@ export const APP_NAV_ITEMS: NavItem[] = [
     href: "/kutuphane",
     label: "Kütüphane",
     icon: "library",
-    also: [],
+    also: ["/ozet"],
     children: [
       { href: "/kutuphane", label: "Dersler" },
       { href: "/kanunlar", label: "Mevzuat" },
