@@ -54,8 +54,8 @@ export class AudienceService {
       SELECT
         u.id, now(), u.status = 'active', u.created_at, GREATEST(0, (CURRENT_DATE - u.created_at::date)),
         u.last_active_at, CASE WHEN u.last_active_at IS NULL THEN NULL ELSE (CURRENT_DATE - u.last_active_at::date) END,
-        COALESCE(e.is_premium, false), e.valid_until, u.preferred_module_id, u.target_exam_date,
-        CASE WHEN u.target_exam_date IS NULL THEN NULL ELSE (u.target_exam_date - CURRENT_DATE) END,
+        COALESCE(e.is_premium, false), e.valid_until, u.preferred_module_id, COALESCE(u.target_exam_date, cal.exam_date),
+        CASE WHEN COALESCE(u.target_exam_date, cal.exam_date) IS NULL THEN NULL ELSE (COALESCE(u.target_exam_date, cal.exam_date) - CURRENT_DATE) END,
         COALESCE(pt.cnt, 0) > 0, COALESCE(pt.platforms, '{}'::text[]), COALESCE(ec.subscribed, false),
         COALESCE(s.current_streak, 0), COALESCE(s.longest_streak, 0), u.daily_goal,
         COALESCE(du.total_answered, 0), COALESCE(du.total_answered, 0) >= u.daily_goal, COALESCE(dq.done, false), COALESCE(du.study_seconds, 0),
@@ -112,6 +112,13 @@ export class AudienceService {
       LEFT JOIN LATERAL (
         SELECT true AS active FROM study_plans sp WHERE sp.user_id = u.id AND sp.status = 'active' LIMIT 1
       ) sp ON true
+      LEFT JOIN LATERAL (
+        -- Sınav takvimi (Doc 52 F2): kullanıcının kendi tarihi yoksa modülünün en yakın kesin tarihi.
+        SELECT c.exam_date FROM exam_calendar c
+        WHERE c.is_active AND c.is_confirmed AND c.exam_date >= CURRENT_DATE
+          AND (c.exam_type_id = u.preferred_module_id OR c.exam_type_id IS NULL)
+        ORDER BY (c.exam_type_id IS NULL), c.exam_date ASC LIMIT 1
+      ) cal ON true
       LEFT JOIN LATERAL (
         SELECT count(*) FILTER (WHERE d.sent_at >= now() - interval '7 days')::int AS sent7,
                count(*) FILTER (WHERE d.sent_at >= now() - interval '30 days')::int AS sent30

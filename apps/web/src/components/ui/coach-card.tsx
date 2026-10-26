@@ -6,6 +6,7 @@ import {
   Flame,
   Hand,
   Medal,
+  Megaphone,
   RotateCcw,
   Target,
   Trophy,
@@ -24,6 +25,7 @@ const typeIcon: Record<string, LucideIcon> = {
   comeback: Hand,
   plan_week: CalendarDays,
   plan_offer: CalendarDays,
+  announcement: Megaphone,
 };
 
 /**

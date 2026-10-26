@@ -127,3 +127,44 @@ export const fmtDate = (iso: string | null | undefined) =>
   iso ? new Date(iso).toLocaleString('tr-TR', { dateStyle: 'short', timeStyle: 'short' }) : '—';
 export const fmtInt = (n: number | null | undefined) => (n == null ? '—' : n.toLocaleString('tr-TR'));
 export const pct = (a: number, b: number) => (b > 0 ? `%${((100 * a) / b).toLocaleString('tr-TR', { maximumFractionDigits: 1 })}` : '—');
+
+// ── F2: otomasyonlar ve sınav takvimi ──
+export type AutomationStatus = 'draft' | 'active' | 'paused';
+export type AutomationSchedule =
+  | { kind: 'daily'; at: string }
+  | { kind: 'weekly'; at: string; weekday: number }
+  | { kind: 'user_time'; field: 'reminderTime'; offsetMinutes: number };
+export type AutomationRun = {
+  id: string; startedAt: string; finishedAt: string | null; triggerType: 'schedule' | 'event';
+  evaluated: number; matched: number; queued: number; suppressed: number; error: string | null;
+};
+export type Automation = {
+  id: string; code: string; name: string; description: string | null; category: Category; priority: Priority; channels: Channel[];
+  triggerType: 'schedule' | 'event'; schedule: AutomationSchedule | Record<string, never>; eventType: string | null; delayMinutes: number;
+  conditions: Group | Record<string, never>; title: string; body: string; ctaLabel: string | null; imageUrl: string | null; deepLink: DeepLink;
+  emailSubject: string | null; emailBody: string | null; conversionEvent: string | null; attributionWindowHours: number;
+  cooldownHours: number; maxPerUserPerDay: number; respectQuietHours: boolean; countTowardCaps: boolean; ttlHours: number;
+  status: AutomationStatus; activatedAt: string | null; lastRunAt: string | null; consecutiveErrors: number; lastError: string | null;
+  updatedAt: string;
+  scheduleSummary: string; conditionsSummary: string; hasPayloadFilter: boolean; isPreset: boolean; policyChannels: Channel[]; warnings: Warning[];
+  total7d?: number; sent7d?: number; opened7d?: number;
+  lastRun?: { startedAt: string; queued: number; evaluated: number; error: string | null } | null;
+  runs?: AutomationRun[];
+};
+export type AutomationPreview = {
+  estimate: { total: number; pendingEvents: number; refreshedAt: string | null };
+  sample: { email: string; lastActiveDays: number | null; streak: number; platforms: string[] }[];
+  rendered: { title: string; body: string; emailSubject: string | null; route: string | null; webPath: string | null; minAppVersion: string | null; linkResolved: boolean };
+  warnings: Warning[]; samplePayload: Record<string, unknown>;
+  schedule: { due: boolean; fireAt: string | null } | null;
+};
+export type ExamCalendarItem = {
+  id: string; examTypeId: string | null; name: string; examDate: string; countdownDays: number[]; isConfirmed: boolean; isActive: boolean;
+  note: string | null; examType: { id: string; name: string } | null; updatedAt: string;
+};
+export const AUTOMATION_STATUS: Record<AutomationStatus, { label: string; cls: string }> = {
+  draft: { label: 'Taslak', cls: 'bg-slate-100 text-slate-600' },
+  active: { label: 'Açık', cls: 'bg-emerald-100 text-emerald-800' },
+  paused: { label: 'Kapalı', cls: 'bg-slate-200 text-slate-700' },
+};
+export const WEEKDAYS = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];

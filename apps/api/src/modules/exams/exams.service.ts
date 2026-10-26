@@ -9,7 +9,7 @@ import { Cron } from '@nestjs/schedule';
 import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { QuizService } from '../quiz/quiz.service';
-import { NotificationsService } from '../notifications/notifications.service';
+import { AppEventsService } from '../notifications/app-events.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import {
   RANKING_MIN_SAMPLE,
@@ -66,7 +66,7 @@ export class ExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
-    private readonly notifications: NotificationsService,
+    private readonly events: AppEventsService,
   ) {}
 
   private window(e: {
@@ -1403,22 +1403,12 @@ export class ExamsService {
               },
             });
             if (already?.sentAt) continue;
-            await this.notifications
-              .enqueue({
-                userId: p.userId,
-                category: 'exam',
-                priority: 'normal',
-                title: 'Sonucun açıklandı',
-                body: `${e.title}: netin ve sıran hazır.`,
-                deepLink: { target: 'exam_result', params: { sessionId: p.id } },
-                channels: ['push', 'inbox'],
-                dedupeKey: `exam:${e.id}:result_ready`,
-                conversionEvent: 'exam_review',
-                respectQuietHours: false,
-              })
-              .catch((err) =>
-                this.logger.warn(`Sonuç bildirimi ${p.id}: ${(err as Error).message}`),
-              );
+            // Olay: `exam_result_ready` otomasyonu (Doc 52 §8) bildirimi üretir.
+            await this.events.emit('exam_result_ready', p.userId, {
+              entityType: 'exam',
+              entityId: e.id,
+              payload: { examId: e.id, sessionId: p.id, title: e.title },
+            });
             await this.prisma.examReminder.upsert({
               where: {
                 examId_userId_kind: { examId: e.id, userId: p.userId, kind: 'result_ready' },
@@ -1464,20 +1454,18 @@ export class ExamsService {
           minute: '2-digit',
           timeZone: 'Europe/Istanbul',
         }).format(r.exam.startAt);
-        await this.notifications
-          .enqueue({
-            userId: r.userId,
-            category: 'exam',
-            priority: wnd.kind === 'hour_before' ? 'high' : 'normal',
-            title: `${r.exam.title} ${wnd.label} ${saat}'de`,
-            body: '150 dakika kesintisiz zaman ayır; sınav bitene kadar giriş açık.',
-            deepLink: { target: 'exam', params: { examId: r.examId } },
-            channels: wnd.kind === 'day_before' ? ['push', 'inbox', 'email'] : ['push', 'inbox'],
-            dedupeKey: `exam:${r.examId}:${wnd.kind}`,
-            ttlHours: wnd.kind === 'hour_before' ? 1 : 24,
-            respectQuietHours: wnd.kind !== 'hour_before',
-          })
-          .catch(() => undefined);
+        // Olay: `exam_reminder_day_before` / `exam_reminder_hour_before` otomasyonları bildirimi üretir.
+        await this.events.emit('exam_reminder_due', r.userId, {
+          entityType: 'exam',
+          entityId: r.examId,
+          payload: {
+            kind: wnd.kind,
+            examId: r.examId,
+            title: r.exam.title,
+            saat,
+            label: wnd.label,
+          },
+        });
         await this.prisma.examReminder.update({
           where: { examId_userId_kind: { examId: r.examId, userId: r.userId, kind: r.kind } },
           data: { sentAt: new Date() },

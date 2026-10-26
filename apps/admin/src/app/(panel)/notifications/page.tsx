@@ -52,7 +52,7 @@ export default function NotificationsOverviewPage() {
         </Card>
         <Card>
           <h2 className="mb-3 text-sm font-semibold">Sıradaki</h2>
-          {o.scheduled.length === 0 ? <p className="text-sm text-slate-500">Planlı kampanya yok. Otomasyonlar F2’de.</p> : (
+          {o.scheduled.length === 0 ? <p className="text-sm text-slate-500">Planlı kampanya yok. Otomasyonlar kendi sekmesinde.</p> : (
             <ul className="space-y-2 text-sm">
               {o.scheduled.map((s) => (
                 <li key={s.id} className="flex items-start justify-between gap-2">

@@ -290,6 +290,7 @@ model ExamType {
   preferredUsers User[]
   studyPlans     StudyPlan[]
   exams          Exam[]
+  examCalendar   ExamCalendar[]
 
   @@map("modules")
 }
@@ -2112,6 +2113,7 @@ model NotificationTemplate {
 
   notifications Notification[]
   variants      NotificationCampaignVariant[]
+  automations   NotificationAutomation[]
 
   @@index([category, status])
   @@map("notification_templates")
@@ -2205,4 +2207,144 @@ model NotificationCampaignVariant {
 
   @@unique([campaignId, key])
   @@map("notification_campaign_variants")
+}
+
+// ── Doc 52 F2: olay omurgası, otomasyonlar, sınav takvimi ──
+
+enum NotificationTriggerType {
+  schedule
+  event
+}
+
+enum NotificationAutomationStatus {
+  draft
+  active
+  paused
+}
+
+/// Olay omurgası (Doc 52 §4.5): üreticiler motoru tanımaz, yalnız olay yazar.
+/// Otomasyonlar tüketir; tablo ileride rozet ve koç için de kaynaktır.
+model AppEvent {
+  id         BigInt    @id @default(autoincrement())
+  eventType  String    @map("event_type")
+  userId     String    @map("user_id") @db.Uuid
+  entityType String?   @map("entity_type")
+  entityId   String?   @map("entity_id")
+  payload    Json      @default("{}")
+  occurredAt DateTime  @default(now()) @map("occurred_at")
+  /// Bütün aktif olay otomasyonları bu olayı işlediğinde (ya da hiçbiri dinlemiyorsa) damgalanır.
+  processedAt DateTime? @map("processed_at")
+
+  automationEvents NotificationAutomationEvent[]
+
+  @@index([eventType, occurredAt])
+  @@index([processedAt, id])
+  @@index([userId, occurredAt])
+  @@map("app_events")
+}
+
+/// Otomasyon (Doc 52 §4.4, §8): hazır set koddan tohumlanır, kapalı doğar, admin açar.
+/// `schedule`: {kind:'daily'|'weekly', at:'HH:MM', weekday?} | {kind:'user_time', field:'reminderTime', offsetMinutes}.
+/// `conditions`: segment DSL (kitle tablosu); olay otomasyonunda `payload.*` alanları da kullanılabilir.
+model NotificationAutomation {
+  id                     String                       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code                   String                       @unique
+  name                   String
+  description            String?
+  category               NotificationCategory
+  priority               NotificationPriority         @default(normal)
+  channels               NotificationChannel[]
+  triggerType            NotificationTriggerType      @map("trigger_type")
+  schedule               Json                         @default("{}")
+  eventType              String?                      @map("event_type")
+  delayMinutes           Int                          @default(0) @map("delay_minutes")
+  conditions             Json                         @default("{}")
+  title                  String
+  body                   String
+  ctaLabel               String?                      @map("cta_label")
+  imageUrl               String?                      @map("image_url")
+  deepLink               Json                         @default("{}") @map("deep_link")
+  emailSubject           String?                      @map("email_subject")
+  emailBody              String?                      @map("email_body")
+  templateId             String?                      @map("template_id") @db.Uuid
+  conversionEvent        String?                      @map("conversion_event")
+  attributionWindowHours Int                          @default(24) @map("attribution_window_hours")
+  /// Aynı kullanıcıya bu otomasyondan iki gönderim arasında en az bu kadar saat.
+  cooldownHours          Int                          @default(48) @map("cooldown_hours")
+  maxPerUserPerDay       Int                          @default(1) @map("max_per_user_per_day")
+  respectQuietHours      Boolean                      @default(true) @map("respect_quiet_hours")
+  countTowardCaps        Boolean                      @default(true) @map("count_toward_caps")
+  ttlHours               Int                          @default(24) @map("ttl_hours")
+  status                 NotificationAutomationStatus @default(paused)
+  /// Açılma anı: bundan önceki olaylar işlenmiş sayılır (geriye dönük gönderim yok).
+  activatedAt            DateTime?                    @map("activated_at")
+  lastRunAt              DateTime?                    @map("last_run_at")
+  nextRunAt              DateTime?                    @map("next_run_at")
+  consecutiveErrors      Int                          @default(0) @map("consecutive_errors")
+  lastError              String?                      @map("last_error")
+  createdById            String?                      @map("created_by_id") @db.Uuid
+  updatedById            String?                      @map("updated_by_id") @db.Uuid
+  createdAt              DateTime                     @default(now()) @map("created_at")
+  updatedAt              DateTime                     @updatedAt @map("updated_at")
+
+  template NotificationTemplate?         @relation(fields: [templateId], references: [id], onDelete: SetNull)
+  runs     NotificationAutomationRun[]
+  events   NotificationAutomationEvent[]
+
+  @@index([status, triggerType])
+  @@map("notification_automations")
+}
+
+model NotificationAutomationRun {
+  id           String                  @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  automationId String                  @map("automation_id") @db.Uuid
+  startedAt    DateTime                @default(now()) @map("started_at")
+  finishedAt   DateTime?               @map("finished_at")
+  triggerType  NotificationTriggerType @map("trigger_type")
+  evaluated    Int                     @default(0)
+  matched      Int                     @default(0)
+  queued       Int                     @default(0)
+  suppressed   Int                     @default(0)
+  error        String?
+
+  automation NotificationAutomation @relation(fields: [automationId], references: [id], onDelete: Cascade)
+
+  @@index([automationId, startedAt])
+  @@map("notification_automation_runs")
+}
+
+/// (otomasyon, olay) işlendi izi — jsps 25 Eyl kuralı; aynı olay aynı otomasyona iki kez gitmez.
+model NotificationAutomationEvent {
+  automationId String   @map("automation_id") @db.Uuid
+  eventId      BigInt   @map("event_id")
+  processedAt  DateTime @default(now()) @map("processed_at")
+  outcome      String?
+
+  automation NotificationAutomation @relation(fields: [automationId], references: [id], onDelete: Cascade)
+  event      AppEvent               @relation(fields: [eventId], references: [id], onDelete: Cascade)
+
+  @@id([automationId, eventId])
+  @@index([eventId])
+  @@map("notification_automation_events")
+}
+
+/// Resmî sınav takvimi (Doc 52 §8 exam_countdown): kullanıcının kendi hedef tarihi yoksa
+/// modülünün takvim tarihi kitle tablosuna düşer. Geri sayım yalnız aktif + kesin kayıtta.
+model ExamCalendar {
+  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  examTypeId    String?   @map("exam_type_id") @db.Uuid
+  name          String
+  examDate      DateTime  @map("exam_date") @db.Date
+  countdownDays Int[]     @default([60, 30, 14, 7, 3, 1]) @map("countdown_days")
+  isConfirmed   Boolean   @default(true) @map("is_confirmed")
+  isActive      Boolean   @default(true) @map("is_active")
+  note          String?
+  createdById   String?   @map("created_by_id") @db.Uuid
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  examType ExamType? @relation(fields: [examTypeId], references: [id], onDelete: SetNull)
+
+  @@index([isActive, examDate])
+  @@map("exam_calendar")
 }

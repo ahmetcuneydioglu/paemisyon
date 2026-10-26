@@ -81,6 +81,10 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
     settings as never,
     planStub,
     moduleRefStub,
+    {
+      emit: jest.fn().mockResolvedValue(undefined),
+      emitMany: jest.fn().mockResolvedValue(0),
+    } as never,
   );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
@@ -389,6 +393,10 @@ describe('QuizService.splitBySeen', () => {
         {} as never,
         planStub,
         moduleRefStub,
+        {
+          emit: jest.fn().mockResolvedValue(undefined),
+          emitMany: jest.fn().mockResolvedValue(0),
+        } as never,
       ),
       prisma,
     };
@@ -518,6 +526,10 @@ function setupPersonal(
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
     planStub,
     moduleRefStub,
+    {
+      emit: jest.fn().mockResolvedValue(undefined),
+      emitMany: jest.fn().mockResolvedValue(0),
+    } as never,
   );
   return { service, prisma };
 }
@@ -729,6 +741,10 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
     { getBool: jest.fn(), showQuestionSource: jest.fn() } as never,
     planStub,
     moduleRefStub,
+    {
+      emit: jest.fn().mockResolvedValue(undefined),
+      emitMany: jest.fn().mockResolvedValue(0),
+    } as never,
   );
   return { service, prisma, havuz, progress };
 }
@@ -924,6 +940,10 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
       {} as never,
       planStub,
       moduleRefStub,
+      {
+        emit: jest.fn().mockResolvedValue(undefined),
+        emitMany: jest.fn().mockResolvedValue(0),
+      } as never,
     );
     const r = await service.completeSession(premiumUser.id, 's1');
     expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });

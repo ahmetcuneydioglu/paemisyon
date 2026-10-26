@@ -2,7 +2,7 @@ import { BadRequestException, Injectable, Logger, NotFoundException } from '@nes
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
-import { NotificationsService } from '../../notifications/notifications.service';
+import { AppEventsService } from '../../notifications/app-events.service';
 import { QuizService } from '../../quiz/quiz.service';
 import { ExamsService } from '../../exams/exams.service';
 import { mean, median, rankWithTies } from '../../exams/exam-scoring.logic';
@@ -23,7 +23,7 @@ export class AdminExamAdjustmentsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
-    private readonly notifications: NotificationsService,
+    private readonly events: AppEventsService,
     private readonly quiz: QuizService,
     private readonly exams: ExamsService,
   ) {}
@@ -143,6 +143,7 @@ export class AdminExamAdjustmentsService {
   private async rescoreAll(examId: string, notify: boolean, title: string) {
     const sessions = await this.officialSessions(examId);
     const adjustments = await this.exams.activeAdjustments(examId);
+    const rescoreAt = Date.now();
     let changed = 0;
     for (const s of sessions) {
       const before = s.score != null ? Number(s.score) : 0;
@@ -161,17 +162,12 @@ export class AdminExamAdjustmentsService {
         },
       });
       if (notify) {
-        await this.notifications
-          .enqueue({
-            userId: s.userId,
-            category: 'exam',
-            title: 'Netin güncellendi',
-            body: `${title}: bir soru iptal edildi; netin ${before.toLocaleString('tr-TR')} → ${r.score.toLocaleString('tr-TR')}.`,
-            deepLink: { target: 'exam_result', params: { sessionId: s.id } },
-            channels: ['push', 'inbox'],
-            dedupeKey: `exam:${examId}:net_updated:${Date.now()}`,
-          })
-          .catch(() => undefined);
+        // Olay: `exam_net_updated` otomasyonu bildirimi üretir (Doc 52 §8).
+        await this.events.emit('exam_net_updated', s.userId, {
+          entityType: 'exam',
+          entityId: examId,
+          payload: { examId, sessionId: s.id, title, before, after: r.score, at: rescoreAt },
+        });
       }
     }
     const exam = await this.prisma.exam.findUniqueOrThrow({

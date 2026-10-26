@@ -2,7 +2,9 @@ import { Global, Module } from '@nestjs/common';
 import { AuditService } from '../admin/audit.service';
 import { AuthModule } from '../auth/auth.module';
 import { EmailModule } from '../email/email.module';
+import { AppEventsService } from './app-events.service';
 import { AudienceService } from './audience.service';
+import { AutomationsService } from './automations.service';
 import { CampaignsService } from './campaigns.service';
 import { DecisionService } from './decision.service';
 import { DeliveryWorker } from './delivery.worker';
@@ -34,6 +36,8 @@ import { TestersService } from './testers.service';
     DeliveryWorker,
     RollupService,
     LeaderboardNudgeService,
+    AppEventsService,
+    AutomationsService,
     AuditService,
   ],
   exports: [
@@ -42,6 +46,8 @@ import { TestersService } from './testers.service';
     CampaignsService,
     AudienceService,
     LeaderboardNudgeService,
+    AppEventsService,
+    AutomationsService,
   ],
 })
 export class NotificationsModule {}

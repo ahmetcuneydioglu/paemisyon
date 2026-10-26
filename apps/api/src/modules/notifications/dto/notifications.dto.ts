@@ -11,6 +11,7 @@ import {
   IsOptional,
   IsString,
   IsUUID,
+  Matches,
   Max,
   MaxLength,
   Min,
@@ -180,4 +181,56 @@ export class LegacySendDto {
   @IsString() @MinLength(2) @MaxLength(300) body!: string;
   @IsOptional() @IsString() @MaxLength(120) route?: string;
   @IsOptional() @IsIn(['all', 'inactive-today']) audience?: 'all' | 'inactive-today';
+}
+
+// ── F2: otomasyonlar ve sınav takvimi ──
+
+export class UpdateAutomationDto {
+  @IsOptional() @IsString() @MinLength(2) @MaxLength(80) name?: string;
+  @IsOptional() @IsString() @MaxLength(300) description?: string | null;
+  @IsOptional() @IsString() @MinLength(2) @MaxLength(80) title?: string;
+  @IsOptional() @IsString() @MinLength(2) @MaxLength(300) body?: string;
+  @IsOptional() @IsString() @MaxLength(40) ctaLabel?: string | null;
+  @IsOptional() @IsString() @MaxLength(500) imageUrl?: string | null;
+  @IsOptional() @IsString() @MaxLength(120) emailSubject?: string | null;
+  @IsOptional() @IsString() @MaxLength(5000) emailBody?: string | null;
+  @IsOptional() @IsObject() deepLink?: Record<string, unknown>;
+  @IsOptional() @IsObject() schedule?: Record<string, unknown>;
+  @IsOptional() @IsObject() conditions?: Record<string, unknown> | null;
+  @IsOptional()
+  @IsArray()
+  @IsEnum(NotificationChannel, { each: true })
+  channels?: NotificationChannel[];
+  @IsOptional() @IsEnum(NotificationPriority) priority?: NotificationPriority;
+  @IsOptional() @IsInt() @Min(0) @Max(43200) delayMinutes?: number;
+  @IsOptional() @IsInt() @Min(0) @Max(43200) cooldownHours?: number;
+  @IsOptional() @IsInt() @Min(1) @Max(20) maxPerUserPerDay?: number;
+  @IsOptional() @IsBoolean() respectQuietHours?: boolean;
+  @IsOptional() @IsBoolean() countTowardCaps?: boolean;
+  @IsOptional() @IsInt() @Min(1) @Max(720) ttlHours?: number;
+  @IsOptional() @IsString() @MaxLength(60) conversionEvent?: string | null;
+}
+
+export class AutomationStatusDto {
+  @IsIn(['active', 'paused']) status!: 'active' | 'paused';
+}
+
+export class AutomationRunDto {
+  @IsOptional() @IsBoolean() dryRun?: boolean;
+}
+
+export class UpsertExamCalendarDto {
+  @IsOptional() @IsUUID('4') examTypeId?: string | null;
+  @IsString() @MinLength(2) @MaxLength(80) name!: string;
+  /** YYYY-MM-DD */
+  @IsString() @Matches(/^\d{4}-\d{2}-\d{2}$/) examDate!: string;
+  @IsOptional()
+  @IsArray()
+  @IsInt({ each: true })
+  @Min(1, { each: true })
+  @Max(365, { each: true })
+  countdownDays?: number[];
+  @IsOptional() @IsBoolean() isConfirmed?: boolean;
+  @IsOptional() @IsBoolean() isActive?: boolean;
+  @IsOptional() @IsString() @MaxLength(300) note?: string | null;
 }

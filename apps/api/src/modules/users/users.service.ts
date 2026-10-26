@@ -1,4 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
+import { AppEventsService } from '../notifications/app-events.service';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { UserSyncService } from '../auth/user-sync.service';
@@ -12,6 +13,7 @@ export class UsersService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly userSync: UserSyncService,
+    private readonly events: AppEventsService,
   ) {}
 
   /** Onboarding (Doc 24 Gün 0 — 3 soru): sınav + tarih + günlük hedef; idempotent. */
@@ -44,6 +46,9 @@ export class UsersService {
               : new Date(`${dto.targetExamDate}T00:00:00.000Z`),
       },
       select: { preferredModuleId: true, onboardingCompletedAt: true },
+    });
+    void this.events.emit('onboarding_completed', userId, {
+      payload: { moduleId: dto.moduleId, dailyGoal: dto.dailyGoal ?? null },
     });
     return {
       onboardingCompleted: true,

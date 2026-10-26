@@ -1,4 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
+import { AppEventsService } from '../../notifications/app-events.service';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
@@ -23,6 +24,7 @@ export class AdminExamsService {
     private readonly audit: AuditService,
     private readonly campaigns: CampaignsService,
     private readonly examsSvc: ExamsService,
+    private readonly events: AppEventsService,
   ) {}
 
   async list() {
@@ -717,6 +719,19 @@ export class AdminExamsService {
       publishMode: exam.publishMode,
       questionCount: rows.length,
       warnings: check.warnings,
+    });
+    // Olay omurgası: `exam_published` otomasyonu (kapalı doğar) açıksa kitleye duyurur.
+    void this.events.emit('exam_published', actor.id, {
+      entityType: 'exam',
+      entityId: id,
+      payload: {
+        examId: id,
+        title: exam.title,
+        publishMode: exam.publishMode,
+        startAt: exam.startAt.toISOString(),
+        questionCount: rows.length,
+        durationMinutes: exam.durationMinutes,
+      },
     });
 
     // Duyuru (opsiyonel): kayıtlı tüm cihazlara push — dokunan Denemeler

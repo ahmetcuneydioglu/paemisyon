@@ -3,6 +3,11 @@
  * Kartlar sunucudan gelir; web yalnız adres çevirir, kural bilmez.
  */
 export function webRoute(route: string, type?: string, meta?: Record<string, unknown>): string {
+  // Kampanya duyurusu (Doc 52 F2): sunucu web yolunu meta ile verir; yalnız uygulama içi göreli yol kabul.
+  if (type === "announcement" && meta && typeof meta.webPath === "string") {
+    const p = meta.webPath;
+    return p.startsWith("/") && !p.startsWith("//") ? p : "/bugun";
+  }
   // Zayıf konu / ünite reçetesi (Doc 53 F5-3): sunucu güvenli "/quiz" gönderir, kapsamı meta taşır.
   if (route === "/quiz" && meta && typeof meta.topicId === "string") {
     const recipe = meta.recipe as { session?: { topicId: string; articleNos: string[]; count: number } } | undefined;

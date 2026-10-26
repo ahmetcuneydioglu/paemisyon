@@ -33,6 +33,8 @@ export type CoachCardType =
   | 'cikmis_sinav'
   | 'plan_week'
   | 'plan_offer'
+  /** Kampanya duyurusu (Doc 52 F2 `createInAppBanner`): kutudaki okunmamış duyuru koç kartı olarak. */
+  | 'announcement'
   | 'motivation';
 
 /**

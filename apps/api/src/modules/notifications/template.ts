@@ -18,6 +18,17 @@ export const TEMPLATE_VARIABLES = [
   'kalan_soru_no',
   'gelisen_konu',
   'soru_no',
+  // F2 otomasyon yükleri
+  'rakip',
+  'gerekli_dogru',
+  'rozet',
+  'soru_sayisi',
+  'sure',
+  'saat',
+  'onceki_net',
+  'sonuc',
+  'sinav_adi',
+  'link',
 ] as const;
 export type TemplateVariable = (typeof TEMPLATE_VARIABLES)[number];
 export type TemplateVars = Partial<Record<TemplateVariable, string | number | null | undefined>>;

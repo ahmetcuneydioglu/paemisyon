@@ -79,7 +79,7 @@ export interface CoachBrief {
   /** `days`: Pzt→Paz 7 günlük nöbet çizelgesi (Doc 49/13 F9-B); eski sunucuda alan yok. */
   gamification?: { weekly?: { activeDays: number; goalDays: number; days?: WeekDayState[] } };
   /** Koç kartları (yalnız tip ve metin okunur; Bugün görev motorunu çizer). */
-  cards?: { type: string; title: string; body?: string }[];
+  cards?: { type: string; title: string; body?: string; cta?: { label: string; route: string }; meta?: Record<string, unknown> }[];
   /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */
   plan?: PlanBrief | null;
 }

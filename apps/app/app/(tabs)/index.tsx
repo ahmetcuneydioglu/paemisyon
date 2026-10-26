@@ -33,7 +33,8 @@ import {
   type WeekDayState,
 } from "@/features/home/queries";
 import { useExams } from "@/features/exams/queries";
-import { useUnreadCount } from "@/features/notifications/queries";
+import { recordNotificationEvent, useUnreadCount } from "@/features/notifications/queries";
+import { routeToHref } from "@/lib/deep-links";
 import { ApiError, NetworkError } from "@/lib/api";
 import { useNow } from "@/lib/use-now";
 import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
@@ -94,6 +95,8 @@ export default function BugunScreen() {
 
   const offline = brief.isError && brief.error instanceof NetworkError;
   const data = brief.data; // hata durumunda da son bilinen veri (react-query önbelleği)
+  // Kampanya duyurusu (Doc 52 F2 `createInAppBanner`): sunucu koç kartı olarak verir; dokununca okundu sayılır.
+  const announcement = data?.cards?.find((c) => c.type === "announcement") ?? null;
   const task = data?.todayTask ?? null;
   const weekly = data?.gamification?.weekly;
   const days =
@@ -206,6 +209,30 @@ export default function BugunScreen() {
                 )
               }
             />
+          </Card>
+        ) : null}
+        {announcement ? (
+          <Card tone="accent" style={{ gap: space.s2 }}>
+            <AppText variant="label" tone="accentInk">
+              DUYURU
+            </AppText>
+            <AppText variant="subhead">{announcement.title}</AppText>
+            {announcement.body ? (
+              <AppText variant="bodySm" tone="soft">
+                {announcement.body}
+              </AppText>
+            ) : null}
+            {announcement.cta ? (
+              <Button
+                title={announcement.cta.label}
+                variant="secondary"
+                onPress={() => {
+                  const id = announcement.meta?.notificationId;
+                  if (typeof id === "string") void recordNotificationEvent(id, "clicked", "inbox");
+                  router.push(routeToHref(announcement.cta?.route) as never);
+                }}
+              />
+            ) : null}
           </Card>
         ) : null}
         {offline ? (

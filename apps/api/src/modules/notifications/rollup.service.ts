@@ -76,7 +76,7 @@ export class RollupService {
   async purge() {
     const r = await this.retention();
     const cut = (days: number) => new Date(Date.now() - days * 86_400_000);
-    const [events, deliveries, inbox, stale, inactive] = await Promise.all([
+    const [events, deliveries, inbox, stale, inactive, appEvents] = await Promise.all([
       this.prisma.notificationEvent.deleteMany({ where: { occurredAt: { lt: cut(r.events) } } }),
       this.prisma.notificationDelivery.deleteMany({
         where: { queuedAt: { lt: cut(r.deliveries) } },
@@ -89,8 +89,11 @@ export class RollupService {
       this.prisma.pushToken.deleteMany({
         where: { isActive: false, updatedAt: { lt: cut(r.inactiveDevices) } },
       }),
+      // Olay omurgası (F2): otomasyon izi ile birlikte (cascade) silinir.
+      this.prisma.appEvent.deleteMany({ where: { occurredAt: { lt: cut(r.events) } } }),
     ]);
     return {
+      appEvents: appEvents.count,
       events: events.count,
       deliveries: deliveries.count,
       inbox: inbox.count,

@@ -1,4 +1,5 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
+import { AppEventsService } from '../../notifications/app-events.service';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import { AuditService } from '../audit.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
@@ -58,6 +59,7 @@ export class AdminPastExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly events: AppEventsService,
   ) {}
 
   async list() {
@@ -248,6 +250,12 @@ export class AdminPastExamsService {
       examId: exam.id,
       soru: set.length,
       dakika,
+    });
+    // Olay: `new_past_exam` otomasyonu (kapalı doğar) açıksa kitleye duyurur.
+    void this.events.emit('past_exam_published', actor.id, {
+      entityType: 'past_exam',
+      entityId: id,
+      payload: { slug: sinav.slug, name: sinav.name, examId: exam.id, questionCount: set.length },
     });
     return { examId: exam.id, soru: set.length, dakika };
   }

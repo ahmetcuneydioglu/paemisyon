@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { NotificationsService } from './notifications.service';
+import { AppEventsService } from './app-events.service';
 import { gunMetni, gunBaslangici } from '../../common/gun';
 
 /**
@@ -25,7 +25,7 @@ export class LeaderboardNudgeService {
 
   constructor(
     private readonly prisma: PrismaService,
-    private readonly notifications: NotificationsService,
+    private readonly events: AppEventsService,
   ) {}
 
   @Cron('30 20 * * *', { timeZone: 'Europe/Istanbul' })
@@ -138,19 +138,11 @@ export class LeaderboardNudgeService {
           : `${rival} bugün bir basamak önüne geçti. ${c.need} doğruyla sırayı geri alırsın.`;
       out.push({ userId: c.userId, rival, need: c.need });
       if (!dryRun) {
-        const r = await this.notifications.enqueue({
-          userId: c.userId,
-          category: 'leaderboard',
-          priority: 'low',
-          title: 'Sıralamada bir basamak',
-          body,
-          deepLink: { target: 'leaderboard' },
-          channels: ['push', 'inbox'],
-          dedupeKey: `leaderboard_climb:${gunMetni()}`,
-          automationCode: 'leaderboard_climb',
-          conversionEvent: 'session_completed',
+        // Olay: `leaderboard_climb` otomasyonu (Doc 52 §8) metni ve kanalları panelden okur.
+        await this.events.emit('leaderboard_overtaken', c.userId, {
+          payload: { rival, need: c.need, day: gunMetni(), body },
         });
-        if (r.status === 'queued') sent++;
+        sent++;
       }
     }
     return { ok: true as const, candidates: out, sent };

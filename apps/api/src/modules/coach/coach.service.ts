@@ -135,6 +135,11 @@ export class CoachService {
 
     const mode = deriveMode(ctx, cards);
 
+    // Kampanya duyurusu (Doc 52 F2): `createInAppBanner` kampanyasının okunmamış kutu satırı,
+    // hero'dan sonra destek kartı olarak. Okununca/kapatılınca düşer; süresi dolunca düşer.
+    const banner = await this.announcementCard(user.id, ctx.now).catch(() => null);
+    if (banner) cards.splice(Math.min(1, cards.length), 0, banner);
+
     const top = cards[0];
     const primaryAction: CoachBrief['primaryAction'] = top?.cta
       ? { type: top.type, ...top.cta }
@@ -217,6 +222,38 @@ export class CoachService {
    * GİRMEZ (CoachContext'e eklenmez — kural spec'leri onu elle kurar); yalnız
    * brief() yeni alanları kurarken okur.
    */
+  private async announcementCard(userId: string, now: Date): Promise<CoachCard | null> {
+    const n = await this.prisma.notification.findFirst({
+      where: {
+        userId,
+        readAt: null,
+        dismissedAt: null,
+        scheduledAt: { lte: now },
+        OR: [{ expiresAt: null }, { expiresAt: { gt: now } }],
+        campaign: { is: { createInAppBanner: true } },
+      },
+      orderBy: { scheduledAt: 'desc' },
+      select: {
+        id: true,
+        title: true,
+        body: true,
+        ctaLabel: true,
+        route: true,
+        webPath: true,
+        imageUrl: true,
+      },
+    });
+    if (!n) return null;
+    return {
+      type: 'announcement',
+      priority: 0,
+      title: n.title,
+      body: n.body,
+      cta: { label: n.ctaLabel ?? 'Aç', route: n.route ?? '' },
+      meta: { notificationId: n.id, webPath: n.webPath, imageUrl: n.imageUrl },
+    };
+  }
+
   private async buildContext(user: AuthenticatedUser): Promise<CoachContext & { home: HomeRaw }> {
     const now = new Date();
     // Uygulama günü ve haftası TR 04.00'te döner (Doc 48 D2 — common/gun.ts):

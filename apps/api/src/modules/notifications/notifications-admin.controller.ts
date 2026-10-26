@@ -6,6 +6,7 @@ import {
   Get,
   Param,
   ParseUUIDPipe,
+  Patch,
   Post,
   Put,
   Query,
@@ -22,10 +23,13 @@ import { RolesGuard } from '../auth/guards/roles.guard';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { maskEmail } from '../email/email-contacts.service';
 import { AudienceService } from './audience.service';
+import { AutomationsService } from './automations.service';
 import { CampaignsService } from './campaigns.service';
 import { DEEP_LINKS, DEEP_LINK_TARGETS, resolveDeepLink } from './deep-links';
 import { DeliveryWorker } from './delivery.worker';
 import {
+  AutomationRunDto,
+  AutomationStatusDto,
   CampaignStatusDto,
   CampaignsQueryDto,
   EstimateDto,
@@ -35,7 +39,9 @@ import {
   NotificationSettingsAdminDto,
   SegmentEstimateDto,
   TesterDto,
+  UpdateAutomationDto,
   UpsertCampaignDto,
+  UpsertExamCalendarDto,
   UpsertSegmentDto,
   UpsertTemplateDto,
 } from './dto/notifications.dto';
@@ -70,6 +76,7 @@ export class NotificationsAdminController {
     private readonly settings: SettingsService,
     private readonly audit: AuditService,
     private readonly leaderboardNudge: LeaderboardNudgeService,
+    private readonly automations: AutomationsService,
   ) {}
 
   // ── Genel bakış ──
@@ -641,8 +648,102 @@ export class NotificationsAdminController {
     return { targets, options };
   }
 
-  @Post('worker/tick') @Roles('admin') tick() {
-    return this.worker.tick();
+  @Post('worker/tick') @Roles('admin') async tick() {
+    const automations = await this.automations.sweep();
+    return { ...(await this.worker.tick()), automations };
+  }
+
+  // ── Otomasyonlar (F2, Doc 52 §8) ──
+  @Get('automations') listAutomations() {
+    return this.automations.list();
+  }
+  @Get('automations/:id') getAutomation(@Param('id', ParseUUIDPipe) id: string) {
+    return this.automations.get(id);
+  }
+  @Patch('automations/:id') updateAutomation(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: UpdateAutomationDto,
+  ) {
+    return this.automations.update(id, dto, actor);
+  }
+  @Post('automations/:id/status') @Roles('admin') automationStatus(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: AutomationStatusDto,
+  ) {
+    return this.automations.setStatus(id, dto.status, actor);
+  }
+  @Get('automations/:id/runs') automationRuns(@Param('id', ParseUUIDPipe) id: string) {
+    return this.automations.runs(id);
+  }
+  @Post('automations/:id/preview') automationPreview(@Param('id', ParseUUIDPipe) id: string) {
+    return this.automations.preview(id);
+  }
+  /** Şimdi çalıştır (admin): dryRun yalnız sayar. */
+  @Post('automations/:id/run') @Roles('admin') automationRun(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: AutomationRunDto,
+  ) {
+    return this.automations.runNow(id, dto.dryRun ?? true, actor);
+  }
+
+  // ── Sınav takvimi (F2) ──
+  @Get('exam-calendar') examCalendar() {
+    return this.prisma.examCalendar.findMany({
+      orderBy: [{ isActive: 'desc' }, { examDate: 'asc' }],
+      include: { examType: { select: { id: true, name: true } } },
+    });
+  }
+  @Post('exam-calendar') async createExamCalendar(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Body() dto: UpsertExamCalendarDto,
+  ) {
+    const row = await this.prisma.examCalendar.create({
+      data: { ...this.calendarData(dto), createdById: actor.id },
+    });
+    await this.audit.log(actor, 'notification.exam_calendar.create', 'exam_calendar', row.id, {
+      name: row.name,
+      examDate: dto.examDate,
+    });
+    return row;
+  }
+  @Patch('exam-calendar/:id') async updateExamCalendar(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: UpsertExamCalendarDto,
+  ) {
+    const row = await this.prisma.examCalendar.update({
+      where: { id },
+      data: this.calendarData(dto),
+    });
+    await this.audit.log(actor, 'notification.exam_calendar.update', 'exam_calendar', id, {
+      name: row.name,
+      examDate: dto.examDate,
+    });
+    return row;
+  }
+  @Delete('exam-calendar/:id') @Roles('admin') async deleteExamCalendar(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+  ) {
+    await this.prisma.examCalendar.delete({ where: { id } });
+    await this.audit.log(actor, 'notification.exam_calendar.delete', 'exam_calendar', id);
+    return { ok: true };
+  }
+  private calendarData(dto: UpsertExamCalendarDto) {
+    const d = new Date(`${dto.examDate}T00:00:00.000Z`);
+    if (Number.isNaN(d.getTime())) throw new BadRequestException('Sınav tarihi geçersiz.');
+    return {
+      examTypeId: dto.examTypeId ?? null,
+      name: dto.name,
+      examDate: d,
+      countdownDays: dto.countdownDays ?? [60, 30, 14, 7, 3, 1],
+      isConfirmed: dto.isConfirmed ?? true,
+      isActive: dto.isActive ?? true,
+      note: dto.note ?? null,
+    };
   }
   @Post('audience/refresh')
   @Roles('admin')

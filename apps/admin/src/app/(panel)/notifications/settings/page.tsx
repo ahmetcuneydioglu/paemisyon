@@ -6,12 +6,13 @@ import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
 import { useIsAdmin } from '@/components/notifications/campaign-form';
 import { ConfirmDialog, Field, Pill, Toggle, inputCls } from '@/components/notifications/ui';
+import { ExamCalendarCard } from '@/components/notifications/exam-calendar';
 import type { AdminSettings, Tester } from '../types';
 
 const K = { kill: 'notifications.kill_switch', daily: 'notifications.daily_cap', marketing: 'notifications.marketing_daily_cap', decay: 'notifications.decay_weekly_cap', env: 'notifications.environment' };
 const RET: [string, string][] = [['inbox', 'Kutu'], ['deliveries', 'Teslim (ham)'], ['events', 'Olaylar'], ['staleDevices', 'Görünmeyen cihaz → stale'], ['inactiveDevices', 'Pasif cihaz silinir']];
 
-/** Ayarlar (Doc 52 §12): kapılar, sönüm, saklama, testerlar, ortam, kill switch. Sınav takvimi F2. */
+/** Ayarlar (Doc 52 §12): kapılar, sönüm, saklama, testerlar, ortam, kill switch, sınav takvimi (F2). */
 export default function NotificationSettingsPage() {
   const qc = useQueryClient();
   const isAdmin = useIsAdmin();
@@ -82,7 +83,7 @@ export default function NotificationSettingsPage() {
           <div className="flex items-center justify-between text-sm"><span className="text-slate-600">Sağlayıcı</span><span>{s.data.worker.provider === 'console' ? 'console (yalnız log)' : 'FCM + SES'}</span></div>
           <button type="button" onClick={() => refresh.mutate()} disabled={!isAdmin || refresh.isPending} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">{refresh.isPending ? 'Yenileniyor…' : refresh.data ? `Kitle yenilendi: ${refresh.data.rows}` : 'Kitle tablosunu şimdi yenile'}</button>
         </Card>
-        <Card className="border-dashed bg-slate-50"><h2 className="text-base font-semibold text-slate-600">Sınav takvimi (F2)</h2><p className="text-xs text-slate-500">Resmî sınav tarihleri ve geri sayım otomasyonu ikinci fazda; geri sayım yalnız “yayında + kesin” kayıtlarda çalışır.</p></Card>
+        <ExamCalendarCard isAdmin={isAdmin} />
       </div>
       {isAdmin && (
         <div className="mt-4 flex justify-end"><button type="button" disabled={save.isPending || !form} onClick={() => save.mutate()} className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50">Ayarları kaydet</button></div>

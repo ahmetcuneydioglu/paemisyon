@@ -1,4 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { AppEventsService } from '../notifications/app-events.service';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AuditService } from '../admin/audit.service';
@@ -13,6 +14,7 @@ export class ReportsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly events: AppEventsService,
   ) {}
 
   /** Bildirim oluştur. Aynı kullanıcının aynı soruya AÇIK bildirimi varsa tekrarlamaz. */
@@ -88,6 +90,20 @@ export class ReportsService {
     });
     await this.audit.log(actor, `report.${status}`, 'question', report.questionId, {
       reportId: id,
+    });
+    // Olay: `question_report_resolved` otomasyonu bildiren adaya haber verir (jsps 22 Eki kalıbı).
+    void this.events.emit('question_report_resolved', report.userId, {
+      entityType: 'question_report',
+      entityId: id,
+      payload: {
+        reportId: id,
+        questionId: report.questionId,
+        outcome: status,
+        message:
+          status === 'resolved'
+            ? 'Teşekkürler: bildirdiğin soru düzeltildi, yeni hâlini görebilirsin.'
+            : 'İnceledik: soruda değişiklik gerekmedi. Bildirdiğin için teşekkürler.',
+      },
     });
     return { id, status };
   }

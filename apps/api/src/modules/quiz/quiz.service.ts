@@ -7,6 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { AppEventsService } from '../notifications/app-events.service';
 import { SettingsService } from '../../infra/settings/settings.service';
 import { BadgeService } from '../coach/badge.service';
 import { ProgressService } from '../progress/progress.service';
@@ -58,6 +59,7 @@ export class QuizService {
     private readonly settings: SettingsService,
     private readonly plan: PlanService,
     private readonly moduleRef: ModuleRef,
+    private readonly events: AppEventsService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -1468,6 +1470,32 @@ export class QuizService {
       },
     });
 
+    // Olay omurgası (Doc 52 §4.5): üretici motoru tanımaz, yalnız olay yazar.
+    void this.events.emit(
+      session.mode === 'deneme' ? 'exam_submitted' : 'session_completed',
+      userId,
+      {
+        entityType: 'quiz_session',
+        entityId: sessionId,
+        payload: {
+          mode: session.mode,
+          examId: session.examId,
+          correct: correctCount,
+          wrong: wrongCount,
+          blank: blankCount,
+          total: session.totalQuestions,
+          score: Math.round(score * 100) / 100,
+          reason,
+        },
+      },
+    );
+    if (session.mode === 'daily')
+      void this.events.emit('daily_question_completed', userId, {
+        entityType: 'quiz_session',
+        entityId: sessionId,
+        payload: { correct: correctCount, total: session.totalQuestions },
+      });
+
     // DENEME: ilerleme/seri/rozet güncellemesi kritik yoldan çıkar (Doc 50 §5-3) —
     // Pazar 21:00 bitiş yığılmasında completeSession hafif kalır; kuyruk cron'u
     // (ExamFinalizeJobService) 50'şer işler. Sonuç ekranı puanı hemen görür.
@@ -1527,6 +1555,15 @@ export class QuizService {
         : Promise.resolve(null),
     ]);
 
+    for (const b of earnedBadges)
+      void this.events.emit('badge_unlocked', userId, {
+        entityType: 'badge',
+        entityId: b.key,
+        payload: { key: b.key, badgeName: b.name },
+      });
+    // Günlük hedef bu oturumla dolduysa (öncesinde dolu değildi) olay.
+    void this.emitDailyGoalIfCrossed(userId, session.totalQuestions);
+
     // Konu karnesi: çok-konulu oturumlarda (ders denemesi, karışık koç turu,
     // İlk Devriye) konu bazında doğru/toplam kırılımı (Doc 12 §7, Doc 24 Gün 0).
     let topicBreakdown:
@@ -1562,6 +1599,28 @@ export class QuizService {
       // Yeni kazanılan rozetler — istemci kutlama gösterir (Doc 19).
       earnedBadges,
     };
+  }
+
+  /** `daily_goal_completed`: bugünkü toplam hedefe bu oturumla ulaştıysa (önce altındaydı). */
+  private async emitDailyGoalIfCrossed(userId: string, justAnswered: number) {
+    try {
+      const [u, du] = await Promise.all([
+        this.prisma.user.findUnique({ where: { id: userId }, select: { dailyGoal: true } }),
+        this.prisma.dailyUsage.findUnique({
+          where: { userId_usageDate: { userId, usageDate: gunAnahtari() } },
+          select: { totalAnswered: true },
+        }),
+      ]);
+      if (!u || !du) return;
+      const after = du.totalAnswered;
+      const before = after - justAnswered;
+      if (after >= u.dailyGoal && before < u.dailyGoal)
+        await this.events.emit('daily_goal_completed', userId, {
+          payload: { goal: u.dailyGoal, answered: after },
+        });
+    } catch {
+      // olay en iyi çaba
+    }
   }
 
   /**
