@@ -36,6 +36,9 @@
   --color-panel: var(--color-panel);
   --color-panel-ink: var(--color-panel-ink);
   --color-panel-soft: var(--color-panel-soft);
+  --color-live: var(--color-live);
+  --color-live-soft: var(--color-live-soft);
+  --color-live-ink: var(--color-live-ink);
   --color-success: var(--color-success);
   --color-success-soft: var(--color-success-soft);
   --color-success-ink: var(--color-success-ink);
