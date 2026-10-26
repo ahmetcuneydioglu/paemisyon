@@ -1,12 +1,11 @@
 import { useRouter } from "expo-router";
 import { Archive, CalendarClock, Sparkles } from "lucide-react-native";
-import { View } from "react-native";
-import { ExamCard } from "@/components/domain";
+import { Pressable, View } from "react-native";
+import { ExamCard, RemindButton, WeeklyCountdown, WeeklyExamCard } from "@/components/domain";
 import { AppText, Badge, Button, Card, EmptyState, ListRow, Notice, ProgressBar, Screen, SectionHeader, Skeleton } from "@/components/ui";
-import { countdown, examKeys, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, useReminder, useSetReminder, type ExamCardAction, type ExamListItem } from "@/features/exams/queries";
+import { countdown, fmtDate, fmtNet, heroFor, mmss, pastExamShortName, useDashboard, useExamHistory, useExams, usePastExams, type ExamCardAction, type ExamListItem } from "@/features/exams/queries";
 import { useNow } from "@/lib/use-now";
 import { useTheme } from "@/theme/ThemeProvider";
-import { useQueryClient } from "@tanstack/react-query";
 
 /**
  * Deneme merkezi (Doc 50 M1, Figma "Denemeler V2"): "şu an" hero'su (devam eden > sıradaki
@@ -22,10 +21,10 @@ export default function DenemelerScreen() {
   const history = useExamHistory();
   const list = exams.data ?? [];
   const hero = heroFor(list);
-  const now = useNow(1000, hero.kind !== "calm");
-
   const serbest = list.filter((e) => e.publishMode === "serbest");
   const haftalik = list.filter((e) => e.publishMode === "takvimli");
+  // Sayaçlar saniyede bir: hero ya da bekleyen/açık haftalık kart varken.
+  const now = useNow(1000, hero.kind !== "calm" || haftalik.some((e) => e.availability !== "closed"));
   const solvablePast = (past.data ?? []).filter((p) => p.tur === "resmi" && p.examId);
   const pe = dash.data?.personalExam;
   const peLeft = pe ? (pe.dailyAllowance == null ? null : Math.max(0, pe.dailyAllowance - pe.usedToday)) : null;
@@ -84,7 +83,7 @@ export default function DenemelerScreen() {
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Haftalık deneme" action="Geçmiş" onAction={() => router.push("/(tabs)/performans/denemelerim")} />
               {haftalik.map((e) => (
-                <ExamCard key={e.id} exam={e} onAction={(a) => act(e, a)} />
+                <WeeklyExamCard key={e.id} exam={e} now={now} onAction={(a) => act(e, a)} />
               ))}
             </View>
           ) : null}
@@ -168,63 +167,36 @@ function ActiveHero({ exam, now, onPress }: { exam: ExamListItem; now: number; o
 
 /** Sıradaki haftalık deneme hero'su: tarih rozeti, geri sayım, Hatırlat / Kuralları gör. */
 function WeeklyHero({ exam, now, onRules }: { exam: ExamListItem; now: number; onRules: () => void }) {
-  const qc = useQueryClient();
   const { colors, radius, space } = useTheme();
   const open = exam.availability === "open";
-  const rem = useReminder(open ? null : exam.id);
-  const setRem = useSetReminder(exam.id);
-  const reminding = rem.data?.reminding ?? false;
-  const left = Date.parse(exam.startAt) - now;
-  const d = Math.floor(Math.max(0, left) / 86_400_000), h = Math.floor((Math.max(0, left) % 86_400_000) / 3_600_000);
+  const left = open ? Date.parse(exam.endAt) - now : Date.parse(exam.startAt) - now;
   return (
-    <View accessible accessibilityLabel={`Haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? ", pencere açık" : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
+    <View accessible accessibilityLabel={`Haftalık deneme ${exam.title}, ${fmtDate(exam.startAt)}${open ? `, pencere açık, ${countdown(left)} kaldı` : `, ${countdown(left)} kaldı`}`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
-        <Badge tone="accent">{fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}</Badge>
-        <AppText variant="label" tone="panelSoft">
-          Haftalık deneme
+        <Badge tone="accent">{open ? "Pencere açık" : fmtDate(exam.startAt, { weekday: "long", hour: "2-digit", minute: "2-digit" })}</Badge>
+        <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1 }}>
+          HAFTALIK DENEME
         </AppText>
       </View>
       <AppText variant="heading" tone="panelInk">
         {exam.title}
       </AppText>
-      {!open ? (
-        <View style={{ flexDirection: "row", alignItems: "baseline", gap: 6 }}>
-          <AppText variant="display" tone="panelInk" style={{ fontVariant: ["tabular-nums"] }}>
-            {d}
-          </AppText>
-          <AppText variant="subhead" tone="panelSoft">
-            gün
-          </AppText>
-          <AppText variant="display" tone="panelInk" style={{ fontVariant: ["tabular-nums"] }}>
-            {h}
-          </AppText>
-          <AppText variant="subhead" tone="panelSoft">
-            saat
-          </AppText>
-        </View>
-      ) : null}
+      <WeeklyCountdown msLeft={left} />
       <AppText variant="bodySm" tone="panelSoft">
-        {exam.questionCount} soru · {exam.durationMinutes} dk · {exam.participantCount.toLocaleString("tr-TR")} {open ? "kişi katıldı" : "kişi katılacak"} · sınav bitene kadar giriş açık
+        {exam.questionCount} soru · {exam.durationMinutes} dk · {exam.participantCount.toLocaleString("tr-TR")} {open ? "kişi girdi" : "kişi katılacak"}{open ? ` · ${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar giriş açık` : ""}
       </AppText>
       <View style={{ flexDirection: "row", gap: space.s2 }}>
         {open ? (
-          <Button title={exam.myState === "completed" ? "Sonucunu gör" : "Sınava katıl"} style={{ flex: 1 }} onPress={onRules} />
+          <Button title={exam.myState === "completed" ? "Sonucunu gör" : exam.myState === "in_progress" ? "Devam et" : "Katıl"} style={{ flex: 1 }} onPress={onRules} />
         ) : (
-          <Button
-            title={reminding ? "Hatırlatma açık" : "Hatırlat"}
-            variant="secondary"
-            style={{ flex: 1 }}
-            loading={setRem.isPending}
-            onPress={() => setRem.mutate(!reminding, { onSettled: () => void qc.invalidateQueries({ queryKey: examKeys.reminder(exam.id) }) })}
-          />
+          <RemindButton examId={exam.id} style={{ flex: 1 }} />
         )}
-        <Button title="Kurallar" variant="ghost" style={{ flex: 1 }} onPress={onRules} />
+        <Pressable accessibilityRole="button" onPress={onRules} style={{ flex: 1, minHeight: 52, alignItems: "center", justifyContent: "center" }}>
+          <AppText variant="subhead" tone="panelInk">
+            Kuralları gör
+          </AppText>
+        </Pressable>
       </View>
-      {setRem.isError ? (
-        <AppText variant="bodySm" tone="danger">
-          Hatırlatma ayarlanamadı.
-        </AppText>
-      ) : null}
     </View>
   );
 }

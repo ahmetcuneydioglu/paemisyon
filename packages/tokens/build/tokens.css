@@ -17,6 +17,9 @@
   --color-panel: #1E2B3C;
   --color-panel-ink: #F5F0E5;
   --color-panel-soft: #BAC4D0;
+  --color-live: #5A2433;
+  --color-live-soft: #2B1C21;
+  --color-live-ink: #E8A9B9;
   --color-success: #8FB39A;
   --color-success-soft: #213229;
   --color-success-ink: #A6CDB1;
@@ -119,6 +122,9 @@
   --color-panel: #1B293B;
   --color-panel-ink: #F5F0E5;
   --color-panel-soft: #BAC4D0;
+  --color-live: #6B2A3A;
+  --color-live-soft: #F7E9EC;
+  --color-live-ink: #7A2E40;
   --color-success: #5F8A6B;
   --color-success-soft: #E3EEE6;
   --color-success-ink: #3F6A4C;
@@ -147,6 +153,9 @@
   --color-panel: #1E2B3C;
   --color-panel-ink: #F5F0E5;
   --color-panel-soft: #BAC4D0;
+  --color-live: #5A2433;
+  --color-live-soft: #2B1C21;
+  --color-live-ink: #E8A9B9;
   --color-success: #8FB39A;
   --color-success-soft: #213229;
   --color-success-ink: #A6CDB1;
@@ -175,6 +184,9 @@
   --color-panel: #1B293B;
   --color-panel-ink: #F5F0E5;
   --color-panel-soft: #BAC4D0;
+  --color-live: #6B2A3A;
+  --color-live-soft: #F7E9EC;
+  --color-live-ink: #7A2E40;
   --color-success: #5F8A6B;
   --color-success-soft: #E3EEE6;
   --color-success-ink: #3F6A4C;

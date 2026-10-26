@@ -85,6 +85,21 @@
       "light": "#BAC4D0",
       "$role": "Panel üstü ikincil metin"
     },
+    "live": {
+      "dark": "#5A2433",
+      "light": "#6B2A3A",
+      "$role": "Bordo blok: haftalık deneme hero ve Bugün canlı deneme paneli; iki temada da koyu, üstünde panelInk/panelSoft"
+    },
+    "liveSoft": {
+      "dark": "#2B1C21",
+      "light": "#F7E9EC",
+      "$role": "Haftalık deneme kartı zemini (bordo tonu)"
+    },
+    "liveInk": {
+      "dark": "#E8A9B9",
+      "light": "#7A2E40",
+      "$role": "liveSoft üstünde metin/çerçeve; sayaç rakamı"
+    },
     "success": {
       "dark": "#8FB39A",
       "light": "#5F8A6B",
@@ -247,6 +262,31 @@
       {
         "fg": "dangerInk",
         "bg": "dangerSoft",
+        "size": "text"
+      },
+      {
+        "fg": "panelInk",
+        "bg": "live",
+        "size": "text"
+      },
+      {
+        "fg": "panelSoft",
+        "bg": "live",
+        "size": "text"
+      },
+      {
+        "fg": "liveInk",
+        "bg": "liveSoft",
+        "size": "text"
+      },
+      {
+        "fg": "ink",
+        "bg": "liveSoft",
+        "size": "text"
+      },
+      {
+        "fg": "inkSoft",
+        "bg": "liveSoft",
         "size": "text"
       }
     ]

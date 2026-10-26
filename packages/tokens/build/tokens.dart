@@ -21,6 +21,9 @@ class NobetDark {
   static const Color panel = Color(0xFF1E2B3C);
   static const Color panelInk = Color(0xFFF5F0E5);
   static const Color panelSoft = Color(0xFFBAC4D0);
+  static const Color live = Color(0xFF5A2433);
+  static const Color liveSoft = Color(0xFF2B1C21);
+  static const Color liveInk = Color(0xFFE8A9B9);
   static const Color success = Color(0xFF8FB39A);
   static const Color successSoft = Color(0xFF213229);
   static const Color successInk = Color(0xFFA6CDB1);
@@ -49,6 +52,9 @@ class NobetLight {
   static const Color panel = Color(0xFF1B293B);
   static const Color panelInk = Color(0xFFF5F0E5);
   static const Color panelSoft = Color(0xFFBAC4D0);
+  static const Color live = Color(0xFF6B2A3A);
+  static const Color liveSoft = Color(0xFFF7E9EC);
+  static const Color liveInk = Color(0xFF7A2E40);
   static const Color success = Color(0xFF5F8A6B);
   static const Color successSoft = Color(0xFFE3EEE6);
   static const Color successInk = Color(0xFF3F6A4C);

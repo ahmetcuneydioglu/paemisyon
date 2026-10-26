@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import {
   CountdownHero,
   CourseTile,
+  LiveExamPanel,
   PlanShiftList,
   TaskHero,
   WeekStrip7,
@@ -30,7 +31,9 @@ import {
   type TodayTaskAction,
   type WeekDayState,
 } from "@/features/home/queries";
+import { useExams } from "@/features/exams/queries";
 import { ApiError, NetworkError } from "@/lib/api";
+import { useNow } from "@/lib/use-now";
 import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
 import { useTheme } from "@/theme/ThemeProvider";
 import { fontFamily } from "@/theme/tokens";
@@ -73,6 +76,10 @@ function yedekGunler(activeDays: number, todayIndex: number): WeekDayState[] {
  */
 export default function BugunScreen() {
   const router = useRouter();
+  // Canlı haftalık deneme (Doc 50, 26 Eki): pencere açıkken PAEM sayacının yerine geçer.
+  const examsQ = useExams();
+  const liveExam = (examsQ.data ?? []).find((e) => e.publishMode === "takvimli" && e.availability === "open") ?? null;
+  const liveNow = useNow(1000, Boolean(liveExam));
   const qc = useQueryClient();
   const { colors, space } = useTheme();
   const insets = useSafeAreaInsets();
@@ -211,16 +218,27 @@ export default function BugunScreen() {
           </View>
         ) : data ? (
           <>
-            <CountdownHero
-              examName={data.exam.name}
-              examDateLabel={tarihEtiketi(data.exam.date)}
-              daysLeft={data.exam.daysLeft}
-              activeDays={
-                weekly?.activeDays ?? days.filter((d) => d === "done").length
-              }
-              goalDays={weekly?.goalDays ?? 5}
-              onPickDate={() => router.push("/(tabs)/ben/ayarlar")}
-            />
+            {liveExam ? (
+              <LiveExamPanel
+                exam={liveExam}
+                now={liveNow}
+                paemLine={data.exam.daysLeft != null ? `${data.exam.name ?? "PAEM"}'e ${data.exam.daysLeft} gün.` : null}
+                onJoin={() => router.push(liveExam.myState === "in_progress" ? { pathname: "/seans", params: { exam: liveExam.id, role: liveExam.my?.active?.role ?? "", title: liveExam.title } } : { pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: liveExam.id, role: "" } })}
+                onRules={() => router.push({ pathname: "/(tabs)/denemeler/[examId]/kurallar", params: { examId: liveExam.id, role: "" } })}
+                onResult={() => liveExam.my?.official && router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: liveExam.my.official.attemptId } })}
+              />
+            ) : (
+              <CountdownHero
+                examName={data.exam.name}
+                examDateLabel={tarihEtiketi(data.exam.date)}
+                daysLeft={data.exam.daysLeft}
+                activeDays={
+                  weekly?.activeDays ?? days.filter((d) => d === "done").length
+                }
+                goalDays={weekly?.goalDays ?? 5}
+                onPickDate={() => router.push("/(tabs)/ben/ayarlar")}
+              />
+            )}
 
             <WeekStrip7 days={days} />
 

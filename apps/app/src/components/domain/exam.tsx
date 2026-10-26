@@ -1,9 +1,9 @@
-import { Check, ChevronRight, Flag, LayoutGrid, Lock, Minus, Timer, Users, X, type LucideIcon } from "lucide-react-native";
+import { CalendarClock, Check, ChevronRight, Flag, LayoutGrid, Lock, Minus, Timer, Users, X, type LucideIcon } from "lucide-react-native";
 import { useState } from "react";
-import { Pressable, StyleSheet, View } from "react-native";
+import { Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from "react-native";
 import Svg, { Circle, Line, Polyline } from "react-native-svg";
 import { AppText, Badge, Button, Card, Chip, IconButton, Notice, ProgressBar, Sheet } from "@/components/ui";
-import { examCardModel, fmtDate, fmtNet, type CourseBreakdownRow, type ExamCardAction, type ExamHistory, type ExamListItem } from "@/features/exams/queries";
+import { countdown, examCardModel, fmtDate, fmtNet, mmss, useReminder, useSetReminder, type CourseBreakdownRow, type ExamCardAction, type ExamHistory, type ExamListItem } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -450,5 +450,180 @@ export function ReviewRow({ no, status, course, topic, turkeyLabel, timeLabel, o
       </View>
       <ChevronRight color={colors.inkSubtle} size={18} strokeWidth={1.75} />
     </Pressable>
+  );
+}
+
+/* ---------------------------------------------------------------- Haftalık (26 Eki 2026, Figma 58:1318) */
+
+/** ms → gün/saat/dk/sn parçaları (negatifte sıfır). */
+export function splitCountdown(ms: number) {
+  const s = Math.max(0, Math.floor(ms / 1000));
+  return { d: Math.floor(s / 86400), h: Math.floor((s % 86400) / 3600), m: Math.floor((s % 3600) / 60), s: s % 60 };
+}
+
+/** Dört birimli sayaç: GÜN : SAAT : DK : SN. Bordo/lacivert panel üstünde (panelInk/panelSoft). */
+export function WeeklyCountdown({ msLeft, size = 44 }: { msLeft: number; size?: number }) {
+  const { colors, space } = useTheme();
+  const c = splitCountdown(msLeft);
+  const units: [string, string][] = [[String(c.d), "GÜN"], [String(c.h).padStart(2, "0"), "SAAT"], [String(c.m).padStart(2, "0"), "DK"], [String(c.s).padStart(2, "0"), "SN"]];
+  return (
+    <View accessible accessibilityLabel={`${c.d} gün ${c.h} saat ${c.m} dakika ${c.s} saniye kaldı`} style={{ flexDirection: "row", alignItems: "flex-start", gap: space.s2 }}>
+      {units.map(([n, u], i) => (
+        <View key={u} style={{ flexDirection: "row", alignItems: "flex-start", gap: space.s2 }}>
+          <View style={{ alignItems: "center", minWidth: size * 1.15 }}>
+            <AppText variant="display" tone="panelInk" maxFontSizeMultiplier={1.2} style={{ fontSize: size, lineHeight: Math.round(size * 1.1), fontVariant: ["tabular-nums"] }}>
+              {n}
+            </AppText>
+            <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1 }}>
+              {u}
+            </AppText>
+          </View>
+          {i < units.length - 1 ? (
+            <AppText variant="display" style={{ color: colors.panelSoft, fontSize: Math.round(size * 0.8), lineHeight: Math.round(size * 1.1) }}>
+              :
+            </AppText>
+          ) : null}
+        </View>
+      ))}
+    </View>
+  );
+}
+
+/** "Pazar 19 Eki · 21:00" — haftalık kart ve hero tarih satırı. */
+export function weeklyWhen(iso: string): string {
+  return `${fmtDate(iso, { weekday: "long" })} ${fmtDate(iso, { day: "numeric", month: "short" })} · ${fmtDate(iso, { hour: "2-digit", minute: "2-digit" })}`;
+}
+
+/** Hatırlat düğmesi: durumu sunucudan okur, tek dokunuşla açar/kapatır. */
+export function RemindButton({ examId, variant = "secondary", style }: { examId: string; variant?: "primary" | "secondary" | "ghost"; style?: StyleProp<ViewStyle> }) {
+  const rem = useReminder(examId);
+  const set = useSetReminder(examId);
+  const on = rem.data?.reminding ?? false;
+  return <Button title={on ? "Hatırlatma açık" : "Hatırlat"} variant={variant} loading={set.isPending} style={style} onPress={() => set.mutate(!on)} />;
+}
+
+/**
+ * Haftalık deneme kartı (Figma 58:1318 "KART"): bordo tonlu zemin + ince bordo çerçeve, üstte
+ * HAFTALIK rozeti ve tarih satırı, sağda mini sayaç (beklemede "2g 14s", açıkken kalan süre),
+ * durum satırı, duruma göre düğmeler. `now` sayaç için (saniyede bir).
+ */
+export function WeeklyExamCard({ exam, now, onAction }: { exam: ExamListItem; now: number; onAction: (a: ExamCardAction) => void }) {
+  const { colors, radius, space } = useTheme();
+  const m = examCardModel(exam);
+  const start = Date.parse(exam.startAt), end = Date.parse(exam.endAt);
+  const upcoming = exam.availability === "upcoming";
+  const open = exam.availability === "open";
+  const c = splitCountdown(start - now);
+  const counter = upcoming ? [c.d > 0 ? `${c.d}g ${c.h}s` : c.h > 0 ? `${c.h}s ${c.m}d` : `${c.m}:${String(c.s).padStart(2, "0")}`, "KALDI"] : open ? [mmss((end - now) / 1000), "KALDI"] : null;
+  const status = upcoming
+    ? `${countdown(start - now)} kaldı · ${exam.participantCount.toLocaleString("tr-TR")} kişi katılacak`
+    : open && m.kind !== "done"
+      ? `Pencere açık · ${mmss((end - now) / 1000)} kaldı · ${exam.participantCount.toLocaleString("tr-TR")} kişi girdi`
+      : m.status;
+  const done = m.kind === "done";
+  const Icon: LucideIcon = done ? Check : m.kind === "weekly_missed" ? Lock : open ? Users : CalendarClock;
+  return (
+    <View accessible={false} style={{ backgroundColor: colors.liveSoft, borderRadius: radius.card, borderWidth: 1, borderColor: colors.liveInk, padding: space.s4, gap: space.s3 }}>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: space.s3 }}>
+        <View style={{ flex: 1, gap: 6 }}>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, flexWrap: "wrap" }}>
+            <View style={{ backgroundColor: colors.surface, borderRadius: radius.pill, paddingHorizontal: 9, paddingVertical: 4 }}>
+              <AppText variant="label" style={{ color: colors.liveInk }}>
+                HAFTALIK
+              </AppText>
+            </View>
+            <AppText variant="subhead" style={{ color: colors.liveInk }}>
+              {weeklyWhen(exam.startAt)}
+            </AppText>
+          </View>
+          <AppText variant="heading">{exam.title}</AppText>
+          <AppText variant="bodySm" tone="soft">
+            {exam.questionCount} soru · {exam.durationMinutes} dk{exam.isPremium ? " · Premium" : ""}
+          </AppText>
+        </View>
+        {counter ? (
+          <View style={{ alignItems: "flex-end" }} accessible accessibilityLabel={`${counter[0]} kaldı`}>
+            <AppText variant="stat" style={{ color: colors.liveInk, fontSize: 26, lineHeight: 30, fontVariant: ["tabular-nums"] }}>
+              {counter[0]}
+            </AppText>
+            <AppText variant="label" style={{ color: colors.liveInk, letterSpacing: 1 }}>
+              {counter[1]}
+            </AppText>
+          </View>
+        ) : null}
+      </View>
+      <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 6 }}>
+        <Icon color={done ? colors.successInk : colors.inkSoft} size={16} strokeWidth={1.75} style={{ marginTop: 2 }} />
+        <AppText variant={done || open ? "subhead" : "bodySm"} tone={done || open ? "ink" : "soft"} style={{ flex: 1, fontVariant: ["tabular-nums"] }}>
+          {status}
+        </AppText>
+      </View>
+      <View style={{ flexDirection: "row", gap: space.s2 }}>
+        {upcoming ? (
+          <>
+            <RemindButton examId={exam.id} style={{ flex: 1 }} />
+            <Button title="Kuralları gör" variant="ghost" style={{ flex: 1 }} onPress={() => onAction({ label: "Kuralları gör", go: { kind: "rules" }, variant: "ghost" })} />
+          </>
+        ) : (
+          <>
+            {m.primary ? <Button title={open && m.kind === "new" ? "Katıl" : m.primary.label} variant={m.primary.variant} style={{ flex: 1 }} onPress={() => onAction(m.primary!)} /> : null}
+            {m.secondary ? <Button title={m.secondary.label} variant={m.secondary.variant} style={{ flex: 1 }} onPress={() => onAction(m.secondary!)} /> : open && m.kind === "new" ? <Button title="Kurallar" variant="ghost" style={{ flex: 1 }} onPress={() => onAction({ label: "Kurallar", go: { kind: "rules" }, variant: "ghost" })} /> : null}
+          </>
+        )}
+      </View>
+    </View>
+  );
+}
+
+/**
+ * Bugün — canlı haftalık deneme paneli (Figma 58:1428): pencere açıkken PAEM sayacının yerine
+ * geçer. CANLI etiketi, ad, kalan süre büyük, pencere saatleri, Katıl/Kurallar (teslim ettiysen
+ * Sonucunu gör / Sıralama), altta tek satır PAEM geri sayımı.
+ */
+export function LiveExamPanel({ exam, now, paemLine, onJoin, onRules, onResult }: { exam: ExamListItem; now: number; paemLine: string | null; onJoin: () => void; onRules: () => void; onResult: () => void }) {
+  const { colors, radius, space } = useTheme();
+  const end = Date.parse(exam.endAt);
+  const submitted = exam.my?.official?.status === "completed";
+  const active = exam.myState === "in_progress";
+  const left = mmss((end - now) / 1000);
+  const window = `${fmtDate(exam.startAt, { hour: "2-digit", minute: "2-digit" })}–${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}`;
+  return (
+    <View accessible accessibilityLabel={`Canlı haftalık deneme ${exam.title}, ${left} kaldı`} style={{ backgroundColor: colors.live, borderRadius: radius.panel, paddingHorizontal: space.s4, paddingTop: space.s3, paddingBottom: space.s4, gap: space.s2 }}>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2 }}>
+        <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent }} />
+        <AppText variant="label" tone="panelSoft" style={{ letterSpacing: 1.2, flex: 1 }}>
+          CANLI · HAFTALIK DENEME
+        </AppText>
+        <AppText variant="bodySm" tone="panelSoft">
+          {exam.participantCount.toLocaleString("tr-TR")} kişi içeride
+        </AppText>
+      </View>
+      <AppText variant="title" tone="panelInk" numberOfLines={2}>
+        {exam.title}
+      </AppText>
+      <View style={{ flexDirection: "row", alignItems: "baseline", gap: space.s2, flexWrap: "wrap" }}>
+        <AppText variant="display" tone="panelInk" maxFontSizeMultiplier={1.2} style={{ fontSize: 48, lineHeight: 52, fontVariant: ["tabular-nums"] }}>
+          {left}
+        </AppText>
+        <AppText variant="bodySm" tone="panelSoft">
+          kalan süre · {window}
+        </AppText>
+      </View>
+      <View style={{ flexDirection: "row", gap: space.s2 }}>
+        {submitted ? (
+          <Button title="Sonucunu gör" variant="secondary" style={{ flex: 1 }} onPress={onResult} />
+        ) : (
+          <Button title={active ? "Devam et" : "Katıl"} style={{ flex: 1 }} onPress={onJoin} />
+        )}
+        <Pressable accessibilityRole="button" onPress={onRules} style={{ minHeight: 52, justifyContent: "center", paddingHorizontal: space.s4 }}>
+          <AppText variant="subhead" tone="panelInk">
+            Kurallar
+          </AppText>
+        </Pressable>
+      </View>
+      <AppText variant="bodySm" tone="panelSoft">
+        {submitted ? "Teslim ettin; sonuçlar pencere kapanınca açıklanır." : `${fmtDate(exam.endAt, { hour: "2-digit", minute: "2-digit" })}'a kadar girebilirsin.`}{paemLine ? ` ${paemLine}` : ""}
+      </AppText>
+    </View>
   );
 }
