@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import type { SummaryBlock, SummaryBlockType } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { pickUnitRecipe, unitMastery, type UnitMasteryRow, type UnitRecipe } from './unite-recete';
 
 /** Kilitli (premium) ünitede misafire/ücretsize açık kalan kart sayısı (Doc 53 §9 varsayımı: 2). */
 export const KILITLI_UNITE_ACIK_KART = 2;
@@ -18,6 +19,8 @@ export interface PublicUnitListItem {
   locked: boolean;
   blockCount: number;
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
+  /** Ünite hâkimiyeti (Doc 53 F5): girişli kullanıcı için; misafirde null. Kilitli ünitede de görünür (kilitli olan özet). */
+  mastery: Omit<UnitMasteryRow, 'accuracy' | 'correct'> | null;
 }
 
 export interface PublicBlock {
@@ -89,15 +92,19 @@ export class SummariesService {
         _count: { select: { blocks: { where: { status: 'published' } } } },
       },
     });
-    const progress = user
-      ? await this.prisma.summaryProgress.findMany({
-          where: { userId: user.id, unitId: { in: units.map((u) => u.id) } },
-        })
-      : [];
+    const ids = units.map((u) => u.id);
+    const [progress, hakimiyet] = user
+      ? await Promise.all([
+          this.prisma.summaryProgress.findMany({ where: { userId: user.id, unitId: { in: ids } } }),
+          this.prisma.userUnitProgress.findMany({ where: { userId: user.id, unitId: { in: ids } } }),
+        ])
+      : [[], []];
     const pById = new Map(progress.map((p) => [p.unitId, p]));
+    const mById = new Map(hakimiyet.map((m) => [m.unitId, m]));
     return {
       units: units.map((u) => {
         const p = pById.get(u.id);
+        const m = mById.get(u.id);
         return {
           slug: u.slug,
           title: u.title,
@@ -109,6 +116,7 @@ export class SummariesService {
           locked: u.isPremium && !(user?.isPremium ?? false),
           blockCount: u._count.blocks,
           progress: p ? { lastBlockIndex: p.lastBlockIndex, completedAt: p.completedAt?.toISOString() ?? null } : null,
+          mastery: user ? this.masteryOut(m?.solvedCount ?? 0, m?.correctCount ?? 0) : null,
         };
       }),
     };
@@ -142,9 +150,12 @@ export class SummariesService {
     if (!unit) throw new NotFoundException('Özet bulunamadı.');
     const locked = unit.isPremium && !(user?.isPremium ?? false);
     const visible = locked ? unit.blocks.slice(0, KILITLI_UNITE_ACIK_KART) : unit.blocks;
-    const progress = user
-      ? await this.prisma.summaryProgress.findUnique({ where: { userId_unitId: { userId: user.id, unitId: unit.id } } })
-      : null;
+    const [progress, hakimiyet] = user
+      ? await Promise.all([
+          this.prisma.summaryProgress.findUnique({ where: { userId_unitId: { userId: user.id, unitId: unit.id } } }),
+          this.prisma.userUnitProgress.findUnique({ where: { userId_unitId: { userId: user.id, unitId: unit.id } } }),
+        ])
+      : [null, null];
     return {
       slug: unit.slug,
       title: unit.title,
@@ -158,8 +169,59 @@ export class SummariesService {
       legislation: unit.legislation,
       topic: { id: unit.topicId, name: unit.topic.name, courseName: unit.topic.course.name },
       progress: progress ? { lastBlockIndex: progress.lastBlockIndex, completedAt: progress.completedAt?.toISOString() ?? null } : null,
+      mastery: user ? this.masteryOut(hakimiyet?.solvedCount ?? 0, hakimiyet?.correctCount ?? 0) : null,
       blocks: visible.map((b) => this.toPublicBlock(b, unit.topicId)),
     };
+  }
+
+  /** Dışarı yüzde ve band çıkar; ham oran ve doğru sayısı kalmaz (odalarla aynı ilke). */
+  private masteryOut(solved: number, correct: number) {
+    const m = unitMastery(solved, correct);
+    return { solved: m.solved, band: m.band, accuracyPct: m.accuracyPct };
+  }
+
+  /**
+   * Koç reçetesi (Doc 53 F5-2): zayıf konunun yayındaki üniteleri + kullanıcının ünite hâkimiyeti +
+   * özet bitirme durumu → `pickUnitRecipe`. Konu zayıf değilse koç bu metodu çağırmaz.
+   */
+  async recipeForTopic(userId: string, topicId: string): Promise<UnitRecipe | null> {
+    const units = await this.prisma.summaryUnit.findMany({
+      where: { topicId, status: 'published', deletedAt: null },
+      orderBy: { sortOrder: 'asc' },
+      select: {
+        id: true,
+        slug: true,
+        title: true,
+        topicId: true,
+        isPremium: true,
+        blocks: {
+          where: { type: 'bridge', status: 'published' },
+          select: { articleRefs: { select: { lawArticle: { select: { articleNo: true, sortKey: true } } } } },
+          take: 1,
+        },
+      },
+    });
+    if (units.length === 0) return null;
+    const ids = units.map((u) => u.id);
+    const [hakimiyet, okuma] = await Promise.all([
+      this.prisma.userUnitProgress.findMany({ where: { userId, unitId: { in: ids } } }),
+      this.prisma.summaryProgress.findMany({ where: { userId, unitId: { in: ids } }, select: { unitId: true, completedAt: true } }),
+    ]);
+    const mById = new Map(hakimiyet.map((m) => [m.unitId, m]));
+    const cById = new Map(okuma.map((o) => [o.unitId, o.completedAt]));
+    return pickUnitRecipe(
+      units.map((u) => ({
+        slug: u.slug,
+        title: u.title,
+        topicId: u.topicId,
+        isPremium: u.isPremium,
+        articleNos: [...(u.blocks[0]?.articleRefs ?? [])]
+          .sort((a, b) => a.lawArticle.sortKey - b.lawArticle.sortKey)
+          .map((r) => r.lawArticle.articleNo),
+        mastery: unitMastery(mById.get(u.id)?.solvedCount ?? 0, mById.get(u.id)?.correctCount ?? 0),
+        completedAt: cById.get(u.id) ?? null,
+      })),
+    );
   }
 
   private toPublicBlock(

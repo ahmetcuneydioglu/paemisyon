@@ -133,3 +133,16 @@ Deploy tek kalem: F5-1 ve F5-2 birlikte (şema + API), F5-3 ayrı, F5-4 TestFlig
 Sıra: deploy (şema + kanca) → panelden ünite yayını → `unite-ilerleme-doldur.ts` → F5-2 (API: mastery, koç reçetesi).
 Onaylanan üç soru: etiket modeli · reçete günde en çok bir kez ve özet bitince o ünite için tekrar yok ·
 kilitli ünitede kullanıcının kendi doğruluğu görünür.
+
+## F5-2 durum (26 Eki 2026) — yazıldı, yerel E2E geçti, deploy bekliyor
+
+| Parça | Dosya | Doğrulama |
+|---|---|---|
+| Saf reçete | `src/modules/summaries/unite-recete.ts` (+ spec 7 test) | Band konu eşiğiyle aynı; zayıf ünitelerden en düşük doğruluk; az veride en az çözülmüş; özet bitmişse `questions`; deterministik |
+| Ünite hâkimiyeti dışarı | `SummariesService.listForTopic/getUnit` → `mastery {solved, band, accuracyPct}` | Yerel: 12/4 → `%33 weak`; misafirde null; kilitli ünitede de döner (karar) |
+| Koç | `SummariesService.recipeForTopic` → `CoachContext.weakestUnit`, `CoachBrief.unitRecipe`; `weak-topic.rule.ts` ünite reçetesine döner | Yerel `/me/coach`: zayıf Anayasa → kart "T.C. Anayasası: en zayıf yerin Yasama I (%33)" · "Özeti aç" → `/ozet/anayasa-yasama-1`; özet bitince kart "Özetini okudun; şimdi bu maddelerden 10 soru" · "Çöz" |
+| Seans parametreleri | `meta.recipe.session {topicId, articleNos, count}` | İstemci URL'yi kurar (web `/seans?articleNos=`, mobil params) |
+
+Günde en çok bir kez: seçim deterministik (aynı veri → aynı ünite); kart gün içinde sabit kalır, istemci tekrar
+üretmez. API 545 test. Sıra: F5-3 web (`/ozet/<slug>` koç rotası eşlemesi `routes.ts`, oda rozeti, okuyucu
+hâkimiyet satırı, Bugün kartı reçete meta'sı), F5-4 Expo.

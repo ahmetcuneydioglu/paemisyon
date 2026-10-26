@@ -15,6 +15,7 @@ function setup(unit: Record<string, unknown> | null, progress: unknown = null) {
   const prisma = {
     summaryUnit: { findFirst: jest.fn().mockResolvedValue(unit), findMany: jest.fn() },
     summaryProgress: { findUnique: jest.fn().mockResolvedValue(progress), findMany: jest.fn(), upsert: jest.fn() },
+    userUnitProgress: { findUnique: jest.fn().mockResolvedValue(null), findMany: jest.fn().mockResolvedValue([]) },
   };
   return { svc: new SummariesService(prisma as never), prisma };
 }

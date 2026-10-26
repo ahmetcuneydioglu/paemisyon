@@ -1,4 +1,5 @@
 import type { PlanBrief } from '../plan/plan.service';
+import type { UnitRecipe } from '../summaries/unite-recete';
 import type { HaftaGunDurumu } from './hafta-gunleri';
 import type { BriefFlags, DailyFocusView, ExamInfo, Readiness, TodayTask } from './home-v2.types';
 
@@ -95,6 +96,12 @@ export interface CoachContext {
   unresolvedWrongCount: number;
   /** En zayıf konu — tek eşik `common/zayif-konu.ts` (≥10 çözülmüş, < %60), hedef sınav kapsamında. */
   weakestTopic: { topicId: string; name: string; mastery: number } | null;
+  /**
+   * Zayıf konunun en zayıf ünitesi ve reçete (Doc 53 F5-2): `summary_then_questions` (özeti oku, sonra
+   * 10 soru) ya da özet bitmişse `questions`. Konu zayıf değilse veya konunun ünitesi yoksa null.
+   * Günde en çok bir kez: seçim deterministik, istemci kartı gün içinde tekrar üretmez.
+   */
+  weakestUnit: UnitRecipe | null;
   exams: {
     /** Şu an penceresi açık deneme (varsa) + kullanıcının durumu. */
     live: {
@@ -174,6 +181,8 @@ export type CoachRule = (ctx: CoachContext) => CoachCard | null;
 
 /** GET /me/coach yanıtı (Doc 19 §3). */
 export interface CoachBrief {
+  /** Ünite reçetesi (Doc 53 F5-2) — Bugün görev kartı ve koç kartı bunu okur; yoksa null. */
+  unitRecipe: UnitRecipe | null;
   greeting: {
     displayName: string | null;
     isPremium: boolean;

@@ -20,6 +20,7 @@ import { haftaGunleri, type HaftaGunDurumu } from './hafta-gunleri';
 import { yanlisKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { coachRules, motivationRule } from './rules';
 import { PlanService } from '../plan/plan.service';
+import { SummariesService } from '../summaries/summaries.service';
 import { hedefSinavTarihi } from './hedef-sinav';
 
 export { hedefSinavTarihi };
@@ -38,6 +39,7 @@ export class CoachService {
     private readonly prisma: PrismaService,
     private readonly settings: SettingsService,
     private readonly plan: PlanService,
+    private readonly summaries: SummariesService,
   ) {}
 
   /**
@@ -139,6 +141,7 @@ export class CoachService {
       : { type: 'default', label: 'Çalışmaya başla', route: '/catalog' };
 
     return {
+      unitRecipe: ctx.weakestUnit,
       greeting: {
         displayName: ctx.user.displayName,
         isPremium: ctx.user.isPremium,
@@ -562,6 +565,11 @@ export class CoachService {
       unresolvedWrongCount,
     });
 
+    // Ünite reçetesi (Doc 53 F5-2): yalnız zayıf konu varsa, o konunun yayındaki üniteleri arasından.
+    const weakestUnit = readiness.weakest[0]
+      ? await this.summaries.recipeForTopic(user.id, readiness.weakest[0].topicId).catch(() => null)
+      : null;
+
     // ── Günün odağı (Doc 48 A5): dünün odağı ya da silinmiş kapsam → koç ──
     const focus = odagiCoz(odakSatiri, bugun);
 
@@ -657,6 +665,7 @@ export class CoachService {
             mastery: readiness.weakest[0].accuracy,
           }
         : null,
+      weakestUnit,
       exams: {
         live: liveExam
           ? {

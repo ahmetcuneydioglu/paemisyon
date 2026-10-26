@@ -41,6 +41,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     stats: { totalSolved: 0, totalCorrect: 0, totalSessions: 0 },
     unresolvedWrongCount: 0,
     weakestTopic: null,
+    weakestUnit: null,
     exams: {
       live: null,
       todayUpcoming: null,
@@ -528,5 +529,28 @@ describe('plan kuralları (Doc 49/12 F8-A)', () => {
     expect(
       planOfferRule(ctx({ plan, stats: { totalSolved: 12, totalCorrect: 6, totalSessions: 2 } })),
     ).toBeNull();
+  });
+});
+
+describe('weak_topic → ünite reçetesi (Doc 53 F5-2)', () => {
+  const recipe = (kind: 'summary_then_questions' | 'questions') => ({
+    unit: { slug: 'anayasa-yasama-1', title: 'Yasama I — Meclis', topicId: 't1', isPremium: false, accuracyPct: 40, solved: 12, band: 'weak' as const },
+    kind,
+    session: { topicId: 't1', articleNos: ['75', '76'], count: 10 },
+  });
+  it('özet okunmamışsa kart özete götürür, reçete meta ile gider', () => {
+    const c = weakTopicRule(ctx({ weakestTopic: { topicId: 't1', name: 'Anayasa', mastery: 0.35 }, weakestUnit: recipe('summary_then_questions') }));
+    expect(c?.title).toBe('Anayasa: en zayıf yerin Yasama I (%40)');
+    expect(c?.cta).toEqual({ label: 'Özeti aç', route: '/ozet/anayasa-yasama-1' });
+    expect((c?.meta as { recipe: { kind: string } }).recipe.kind).toBe('summary_then_questions');
+  });
+  it('özet bitmişse doğrudan soru; seans parametreleri meta.recipe.session', () => {
+    const c = weakTopicRule(ctx({ weakestTopic: { topicId: 't1', name: 'Anayasa', mastery: 0.35 }, weakestUnit: recipe('questions') }));
+    expect(c?.cta).toEqual({ label: 'Çöz', route: '/quiz' });
+    expect((c?.meta as { recipe: { session: { articleNos: string[] } } }).recipe.session.articleNos).toEqual(['75', '76']);
+  });
+  it('reçete başka konuya aitse klasik kart', () => {
+    const c = weakTopicRule(ctx({ weakestTopic: { topicId: 't2', name: 'Ceza', mastery: 0.35 }, weakestUnit: recipe('questions') }));
+    expect(c?.title).toBe('Ceza konusunda zorlanıyorsun');
   });
 });

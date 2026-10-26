@@ -4,11 +4,12 @@ import { CoachController } from './coach.controller';
 import { CoachService } from './coach.service';
 import { SnapshotService } from './snapshot.service';
 import { PlanModule } from '../plan/plan.module';
+import { SummariesModule } from '../summaries/summaries.module';
 
 /// Kişisel Koç (Doc 19) — kural motoru + GET /me/coach + rozet verme +
 /// haftalık mastery fotoğrafı. BadgeService quiz tamamlanınca çağrılır.
 @Module({
-  imports: [PlanModule], // brief.plan + plan kartları (F8-A)
+  imports: [PlanModule, SummariesModule], // brief.plan + plan kartları (F8-A); ünite reçetesi (Doc 53 F5)
   controllers: [CoachController],
   providers: [CoachService, BadgeService, SnapshotService],
   exports: [CoachService, BadgeService],
