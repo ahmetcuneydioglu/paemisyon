@@ -1,7 +1,8 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Bookmark, XCircle } from "lucide-react-native";
 import { View } from "react-native";
-import { CoachLine, RoomStatPanel } from "@/components/domain";
+import { CoachLine, RoomStatPanel, SummaryUnitRow } from "@/components/domain";
+import { useTopicUnits } from "@/features/summaries/queries";
 import { ActionBar, AppText, Badge, Button, ListRow, Notice, Screen, SectionHeader, Skeleton } from "@/components/ui";
 import { useTopicRoom } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -16,6 +17,8 @@ export default function KonuOdasiScreen() {
   const { colors, space } = useTheme();
   const p = useLocalSearchParams<{ topicId: string; name?: string }>();
   const q = useTopicRoom(p.topicId ?? null);
+  // Konu özetleri (Doc 53): yayındaki üniteler + bu kullanıcının ilerlemesi/kilidi (sunucudan).
+  const units = useTopicUnits(p.topicId ?? null);
   const d = q.data;
   const title = d?.topic.name ?? p.name ?? "Konu";
 
@@ -44,6 +47,15 @@ export default function KonuOdasiScreen() {
               right={d.summary.inPlanThisWeek ? <Badge tone="accent">Planında bu hafta</Badge> : null}
             />
             <CoachLine text={d.coach} />
+
+            {units.data && units.data.length > 0 ? (
+              <View style={{ gap: space.s2 }}>
+                <SectionHeader title="Konu özetleri" />
+                {units.data.map((u) => (
+                  <SummaryUnitRow key={u.slug} unit={u} onPress={() => router.push({ pathname: "/ozet/[slug]", params: { slug: u.slug, title: u.title.split(" — ")[0] } })} />
+                ))}
+              </View>
+            ) : null}
 
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Bu konuda" />

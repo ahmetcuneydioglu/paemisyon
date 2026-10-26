@@ -43,7 +43,7 @@ export default function SeansScreen() {
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; role?: string; questionId?: string; title?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; articleNos?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; role?: string; questionId?: string; title?: string }>();
   const [premiumGate, setPremiumGate] = useState(false);
   const [queuedNote, setQueuedNote] = useState(false);
 
@@ -124,6 +124,8 @@ export default function SeansScreen() {
             if (p.focusKind === "topic" && p.topicId) body.topicId = p.topicId;
             if (p.focusKind === "course" && p.courseId) body.courseId = p.courseId;
             if (p.articleNo && body.topicId) body.articleNo = p.articleNo;
+            // Konu özeti köprüsü (Doc 53): ünitenin maddeleri, virgülle; articleNo ile birlikte verilmez.
+            else if (p.articleNos && body.topicId) body.articleNos = p.articleNos.split(",").filter(Boolean);
             if (p.fromBookmarks === "1") body.fromBookmarks = true;
           }
           s = await quizApi.start(body);

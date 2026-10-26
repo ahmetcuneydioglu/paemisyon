@@ -61,6 +61,8 @@ export interface StartSessionBody {
   /** Tek soru (push derin bağlantısı); diğer kapsamları ezer. */
   questionId?: string;
   articleNo?: string;
+  /** Konu özeti köprüsü (Doc 53): ünitenin maddeleri; topicId ile, articleNo ile birlikte değil. */
+  articleNos?: string[];
   fromBookmarks?: boolean;
   archiveExamId?: string;
   personalExam?: boolean;

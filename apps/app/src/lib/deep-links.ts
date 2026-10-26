@@ -23,6 +23,9 @@ export function routeToHref(route: string | null | undefined): AppHref {
   if (q && UUID.test(q[1]!)) return { pathname: "/seans", params: { mode: "practice", questionId: q[1]!, count: "1", source: "notif" } };
   const exam = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})$/);
   if (exam) return { pathname: "/seans", params: { exam: exam[1]! } };
+  // Konu özeti ünitesi (Doc 53): web /ozet/<slug> ile aynı adres.
+  const ozet = r.match(/^\/?ozet\/([a-z0-9-]+)$/);
+  if (ozet) return { pathname: "/ozet/[slug]", params: { slug: ozet[1]! } };
   if (r === "/quiz") return { pathname: "/seans", params: { mode: "practice", count: "10", source: "notif" } };
   if (r === "/review") return { pathname: "/(tabs)/kutuphane/tekrar", params: { sekme: "yanlislar" } };
   if (r === "/catalog") return { pathname: "/(tabs)/kutuphane" };

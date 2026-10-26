@@ -16,3 +16,4 @@ export * from "./share-card";
 export * from "./share-sheet";
 export * from "./exam";
 export * from "./report-sheet";
+export * from "./summary";
