@@ -1,10 +1,10 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, Flag } from "lucide-react-native";
 import { useMemo, useState } from "react";
-import { TextInput, View } from "react-native";
-import { QuestionOption, type OptionState } from "@/components/domain";
-import { AppText, Badge, Button, Card, Notice, Screen, Sheet, Skeleton, StatTile } from "@/components/ui";
-import { fmtMs, useAttempt, useAttemptReview, useReportQuestion } from "@/features/exams/queries";
+import { View } from "react-native";
+import { QuestionOption, ReportSheet, type OptionState } from "@/components/domain";
+import { AppText, Badge, Button, Card, Notice, Screen, Skeleton, StatTile } from "@/components/ui";
+import { fmtMs, useAttempt, useAttemptReview } from "@/features/exams/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -14,14 +14,12 @@ import { useTheme } from "@/theme/ThemeProvider";
  */
 export default function SoruAyrintiScreen() {
   const router = useRouter();
-  const { colors, radius, space } = useTheme();
+  const { colors, space } = useTheme();
   const p = useLocalSearchParams<{ attemptId: string; no: string }>();
   const no = Number(p.no);
   const attempt = useAttempt(p.attemptId ?? null);
   const review = useAttemptReview(p.attemptId ?? null, true);
-  const report = useReportQuestion();
   const [reportOpen, setReportOpen] = useState(false);
-  const [reportText, setReportText] = useState("");
 
   const total = attempt.data?.totalQuestions ?? 0;
   const q = useMemo(() => attempt.data?.review.find((r) => r.order === no) ?? null, [attempt.data, no]);
@@ -98,7 +96,7 @@ export default function SoruAyrintiScreen() {
             </View>
             {item?.missedMajority ? <Notice tone="warning">Çoğunluğun bildiği bir soru. Bu konuyu Çalış listene ekledik.</Notice> : null}
 
-            <Button title="Bu soruyu bildir" variant="ghost" onPress={() => { setReportText(""); setReportOpen(true); }} />
+            <Button title="Bu soruyu bildir" variant="ghost" onPress={() => setReportOpen(true)} />
             {no < total ? (
               <Button title="Sonraki soru" variant="secondary" onPress={() => router.replace({ pathname: "/deneme-sonuc/[attemptId]/soru/[no]", params: { attemptId: p.attemptId ?? "", no: String(no + 1) } })} />
             ) : null}
@@ -106,13 +104,7 @@ export default function SoruAyrintiScreen() {
         )}
       </Screen>
 
-      <Sheet visible={reportOpen} onClose={() => setReportOpen(false)} title="Hata bildir" footer={<Button title="Gönder" disabled={reportText.trim().length < 5} loading={report.isPending} onPress={() => q && report.mutate({ questionId: q.questionId, message: reportText.trim() }, { onSuccess: () => setReportOpen(false) })} />}>
-        <AppText variant="bodySm" tone="soft">
-          Yanlış anahtar, eskimiş madde, yazım hatası… Ne gördüğünü kısaca yaz; editör inceler.
-        </AppText>
-        <TextInput value={reportText} onChangeText={(v) => setReportText(v.slice(0, 500))} multiline placeholder="En az 5 karakter" placeholderTextColor={colors.inkSubtle} accessibilityLabel="Hata açıklaması" style={{ color: colors.ink, minHeight: 100, textAlignVertical: "top", backgroundColor: colors.bg, borderRadius: radius.control, borderWidth: 1, borderColor: colors.line, padding: 12, fontSize: 16 }} />
-        {report.isError ? <Notice tone="error">{report.error.message}</Notice> : null}
-      </Sheet>
+      {q ? <ReportSheet questionId={q.questionId} visible={reportOpen} onClose={() => setReportOpen(false)} /> : null}
     </>
   );
 }

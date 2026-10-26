@@ -4,8 +4,8 @@ import { ALargeSmall, Ellipsis, ExternalLink, Flag, Share2 } from "lucide-react-
 import { useEffect, useRef, useState } from "react";
 import { Alert, Animated, Linking, Platform, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
-import { AppText, Badge, Button, IconButton, ListRow, Notice, Sheet, Skeleton, TextField } from "@/components/ui";
+import { ExamActionBar, ExamFeedbackBox, ExamMapSheet, ExamSubmitSheet, ExamTopBar, FeedbackPanel, ReportSheet, QuestionMetaRow, QuestionOption, QuestionStem, SessionBar, SessionTitleBlock, SessionTopRow, ShareQuestionSheet, type CoachState, type ExamMapCell, type OptionState, type SliceState, type ToolAction } from "@/components/domain";
+import { AppText, Badge, Button, IconButton, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
 import { examApi, examKeys, fmtDuration, mmss } from "@/features/exams/queries";
 import { homeKeys } from "@/features/home/queries";
 import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
@@ -62,8 +62,6 @@ export default function SeansScreen() {
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
   const [coach, setCoach] = useState<Record<string, CoachState>>({});
   const [reportOpen, setReportOpen] = useState(false);
-  const [reportText, setReportText] = useState("");
-  const [reportState, setReportState] = useState<"idle" | "busy" | "done" | "already" | "error">("idle");
   // Deneme modu durumu
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [saveState, setSaveState] = useState<Record<string, SaveState>>({});
@@ -351,18 +349,6 @@ export default function SeansScreen() {
     }
   }
 
-  async function sendReport() {
-    if (!question || reportText.trim().length < 5) return;
-    setReportState("busy");
-    try {
-      const r = await sessionToolsApi.report(question.questionId, reportText.trim());
-      setReportState(r.alreadyReported ? "already" : "done");
-      setReportText("");
-    } catch {
-      setReportState("error");
-    }
-  }
-
   /**
    * Menü Sheet'i kapanırken paylaşım sayfası ya da başka bir modal AÇILMAZ: iOS kapanmakta
    * olan modalın üstüne sunum yapmaz (paylaşım sessizce yutuluyordu). Eylem, kapanış
@@ -519,7 +505,7 @@ export default function SeansScreen() {
     ? [
         { key: "favorite", label: "Favori", active: bookmarks.has(question.questionId), onPress: toggleBookmark },
         { key: "coach", label: "Koça sor", active: coach[question.questionId]?.status === "done", busy: coach[question.questionId]?.status === "busy", onPress: () => void askCoach() },
-        { key: "report", label: "Hata bildir", onPress: () => { setReportState("idle"); setReportOpen(true); } },
+        { key: "report", label: "Hata bildir", onPress: () => setReportOpen(true) },
       ]
     : [];
   const collapsedLabel = `${Math.min(index + 1, total)} / ${total} · ${scopeTitle}`;
@@ -599,7 +585,7 @@ export default function SeansScreen() {
                   <Share2 color={colors.accentInk} size={16} strokeWidth={1.75} />
                   <AppText variant="subhead" tone="accentInk">Paylaş</AppText>
                 </Pressable>
-                <Pressable accessibilityRole="button" accessibilityLabel="Soruyu bildir" onPress={() => { setReportState("idle"); setReportOpen(true); }} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
+                <Pressable accessibilityRole="button" accessibilityLabel="Soruyu bildir" onPress={() => setReportOpen(true)} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
                   <Flag color={colors.accentInk} size={16} strokeWidth={1.75} />
                   <AppText variant="subhead" tone="accentInk">Bildir</AppText>
                 </Pressable>
@@ -632,7 +618,7 @@ export default function SeansScreen() {
           {/* Seans menüsü (Figma S1b): paylaş · bildir · yazı boyu · vazgeç */}
           <Sheet visible={menuOpen} onClose={() => setMenuOpen(false)} onDismissed={onMenuDismissed} title="Seans">
             <ListRow title="Soruyu paylaş" leading={<Share2 color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => setShareOpen(true))} />
-            <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => { setReportState("idle"); setReportOpen(true); })} />
+            <ListRow title="Soruyu bildir" leading={<Flag color={colors.ink} size={20} strokeWidth={1.75} />} chevron={false} onPress={() => closeMenuThen(() => setReportOpen(true))} />
             <ListRow title="Yazı boyu" subtitle="Okuyucuyla ortak" leading={<ALargeSmall color={colors.ink} size={20} strokeWidth={1.75} />} trailing={<AppText variant="subhead" tone="accentInk">{SCALE_LABEL[scaleIdx]} ›</AppText>} chevron={false} onPress={cycleScale} divider={false} />
             <Button title="Vazgeç" variant="secondary" onPress={() => setMenuOpen(false)} />
           </Sheet>
@@ -641,19 +627,8 @@ export default function SeansScreen() {
             <ShareQuestionSheet visible={shareOpen} onClose={() => setShareOpen(false)} answered={Boolean(current?.fb)} build={(mode) => buildShareCardData(question, current?.fb ?? null, mode)} />
           ) : null}
 
-          {/* Hata bildir — turdan çıkmadan */}
-          <Sheet visible={reportOpen} onClose={() => setReportOpen(false)} title="Soruyu bildir" footer={reportState === "done" || reportState === "already" ? <Button title="Kapat" variant="secondary" onPress={() => setReportOpen(false)} /> : <Button title="Gönder" onPress={() => void sendReport()} loading={reportState === "busy"} disabled={reportText.trim().length < 5} />}>
-            {reportState === "done" ? (
-              <Notice tone="success" title="Teşekkürler">Bildirimin editöre ulaştı; soru gözden geçirilecek.</Notice>
-            ) : reportState === "already" ? (
-              <Notice tone="info" title="Zaten bildirilmiş">Bu soru için daha önce bildirim göndermişsin.</Notice>
-            ) : (
-              <>
-                {reportState === "error" ? <Notice tone="error">Gönderilemedi; yeniden dene.</Notice> : null}
-                <TextField label="Sorun nedir?" value={reportText} onChangeText={setReportText} multiline placeholder="Yanlış cevap anahtarı, eksik şık, yazım hatası…" style={{ minHeight: 100, textAlignVertical: "top" }} maxLength={1000} />
-              </>
-            )}
-          </Sheet>
+          {/* Soruyu bildir — gys-mobil kalıbı (neden listesi + açıklama), klavye güvenli */}
+          {question ? <ReportSheet questionId={question.questionId} visible={reportOpen} onClose={() => setReportOpen(false)} /> : null}
 
           {(!isExam || reveal) && feedback?.relatedArticle?.text ? (
             <Sheet visible={articleOpen} onClose={() => setArticleOpen(false)} title={`Madde ${feedback.relatedArticle.no}`}>
