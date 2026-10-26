@@ -173,6 +173,7 @@ export async function importUnit(
     },
   }));
 
+  // Uzak havuz (Supabase pooler) üzerinde 22 kart + referans yazımı 5 sn'lik varsayılanı aşabiliyor.
   const unitId = await db.$transaction(async (tx) => {
     if (existing) {
       // Yeniden içe aktarma: eski kartlar silinir (cascade), sürüm artar, durum incelemeye döner.
@@ -186,7 +187,7 @@ export async function importUnit(
     }
     const row = await tx.summaryUnit.create({ data: { ...unitData, blocks: { create: blocksData } }, select: { id: true } });
     return row.id;
-  });
+  }, { timeout: 60_000, maxWait: 10_000 });
 
   return { unitId, slug: u.slug, blocks: data.blocks.length, totalQuestions: stats.totalQuestions, validation };
 }
