@@ -37,6 +37,10 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
 - `.env` ve SQL dump'ları asla commit edilmez. Secret değerler yalnız platform
   panellerine (Railway/Vercel) elle girilir.
 - Koç kuralları SUNUCUDA yaşar (`/me/coach`); istemciler kural bilmez.
+- Bildirim yalnız `NotificationsService.enqueue` ile gider (Doc 52, 26 Eki 2026):
+  karar akışı (tercih, tavan, sessiz saat, sönüm, kill switch) tek yerde çalışır;
+  `PushService.sendToUser/sendToAll` YOK, servisler FCM/SES'i doğrudan çağırmaz.
+  İstemciler kural bilmez: kutu, rozet ve tercihler `/me/notifications/*`'tan okunur.
 - Soru bankasının varlık nedeni "gerçek, kaynaklı çıkmış soru" güvenidir:
   AI soru üretimi yapılmaz; her sorunun kaynağı bankada KAYITLIDIR.
   **İSTİSNA (9 Eyl 2026, Doc 39; 10 ve 11 Eyl 2026'da genişletildi):** şu polis
