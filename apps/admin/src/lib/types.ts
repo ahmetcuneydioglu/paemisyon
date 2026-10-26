@@ -490,3 +490,100 @@ export interface HomeV2Metrics {
   halfTours: { open: number; usersWithMultiple: number; oldestActivityDays: number | null };
   cohort: { flagOn: boolean; betaOrAdminUsers: number };
 }
+
+// ── Konu Özetleri (Doc 53) ──
+export type SummaryBlockType = 'concept' | 'rule' | 'numbers' | 'compare' | 'trap' | 'exam_stats' | 'bridge';
+
+export interface SummaryUnitListItem {
+  id: string;
+  slug: string;
+  title: string;
+  articleFrom: string;
+  articleTo: string;
+  status: ContentStatus;
+  isPremium: boolean;
+  readingMinutes: number;
+  sortOrder: number;
+  version: number;
+  sourceLabel: string;
+  publishedAt: string | null;
+  updatedAt: string;
+  topicId: string;
+  topicName: string;
+  courseName: string;
+  legislationName: string;
+  legislationSlug: string;
+  blocks: number;
+  staleBlocks: number;
+  generatedBlocks: number;
+}
+
+export type SummaryRow = Record<string, unknown> & { refs?: string[] };
+
+export interface SummaryBlockValidation {
+  index: number;
+  type: string;
+  title: string;
+  ok: boolean;
+  lines: string[];
+  issues: string[];
+}
+
+export interface SummaryBlockDetail {
+  id: string;
+  type: SummaryBlockType;
+  title: string | null;
+  body: string | null;
+  rows: SummaryRow[] | null;
+  derivedNumbers: { value: number; expr: string; refs: string[]; note?: string }[] | null;
+  counterNumbers: number[];
+  generated: boolean;
+  sortOrder: number;
+  status: ContentStatus;
+  staleSince: string | null;
+  updatedAt: string;
+  articleRefs: { no: string; title: string | null; versionNo: number | null }[];
+  validation: SummaryBlockValidation;
+}
+
+export interface SummaryUnitDetail {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string | null;
+  articleFrom: string;
+  articleTo: string;
+  status: ContentStatus;
+  isPremium: boolean;
+  readingMinutes: number;
+  sortOrder: number;
+  version: number;
+  sourceLabel: string;
+  generatedBy: string | null;
+  publishedAt: string | null;
+  updatedAt: string;
+  topic: { id: string; name: string; courseName: string };
+  legislation: { id: string; slug: string; name: string; shortName: string | null };
+  blocks: SummaryBlockDetail[];
+  articles: { no: string; title: string | null; text: string }[];
+  validation: { ok: boolean; fails: number };
+}
+
+export interface SummaryStaleItem {
+  id: string;
+  title: string | null;
+  type: SummaryBlockType;
+  staleSince: string;
+  unit: { id: string; slug: string; title: string };
+  articles: { no: string; versionNo: number | null }[];
+}
+
+export const SUMMARY_BLOCK_LABEL: Record<SummaryBlockType, string> = {
+  concept: 'Kavram',
+  rule: 'Kural',
+  numbers: 'Sayılar',
+  compare: 'Karşılaştırma',
+  trap: 'Tuzak',
+  exam_stats: 'Sınav der ki',
+  bridge: 'Köprü',
+};

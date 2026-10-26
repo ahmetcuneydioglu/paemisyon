@@ -323,6 +323,12 @@ export class AdminLawArticlesService {
     const sourceUrl = dto.sourceUrl?.trim() || null;
     const effectiveInfo = dto.effectiveInfo?.trim() || null;
 
+    // Doc 53 eskime: metin değişiyorsa bu maddeye bağlı özet kartları eskir.
+    const onceki = await this.prisma.lawArticle.findUnique({
+      where: { topicId_articleNo: { topicId: dto.topicId, articleNo } },
+      select: { id: true, text: true },
+    });
+
     const row = await this.prisma.lawArticle.upsert({
       where: { topicId_articleNo: { topicId: dto.topicId, articleNo } },
       create: {
@@ -350,11 +356,25 @@ export class AdminLawArticlesService {
       },
       select: { id: true, status: true, articleNo: true },
     });
+    if (onceki && onceki.text !== text) await this.markSummariesStale([row.id]);
     await this.audit.log(actor, 'law_article.upsert', 'law_article', row.id, {
       topicId: dto.topicId,
       articleNo,
     });
     return row;
+  }
+
+  /**
+   * Doc 53 §4 adım 6: metni değişen maddeye bağlı özet kartlarına eskime damgası.
+   * Eskimiş kartı olan ünite yayınlanamaz; admin kuyruğunda (Konu Özetleri › Eskimiş) görünür.
+   */
+  private async markSummariesStale(lawArticleIds: string[]) {
+    if (lawArticleIds.length === 0) return;
+    await this.prisma.summaryBlock.updateMany({
+      // Betik üretimi kartlar (istatistik/köprü) madde iddiası taşımaz; eskimez, "istatistikleri yenile" ile dolar.
+      where: { articleRefs: { some: { lawArticleId: { in: lawArticleIds } } }, staleSince: null, generated: false },
+      data: { staleSince: new Date() },
+    });
   }
 
   /**
@@ -490,8 +510,18 @@ export class AdminLawArticlesService {
     const sectionIdOf = (a: (typeof toWrite)[number]) =>
       a.sectionOrder != null ? (sectionIds.get(a.sectionOrder) ?? null) : null;
 
+    // Doc 53 eskime: metni değişen maddelerin özet kartları eskir.
+    const oncekiler = await this.prisma.lawArticle.findMany({
+      where: { topicId: topic.id, articleNo: { in: toWrite.map((a) => a.articleNo) } },
+      select: { id: true, articleNo: true, text: true },
+    });
+    const oncekiMetin = new Map(oncekiler.map((a) => [a.articleNo, a]));
+    const degisenIds: string[] = [];
+
     let written = 0;
     for (const a of toWrite) {
+      const onceki = oncekiMetin.get(a.articleNo);
+      if (onceki && onceki.text !== a.text) degisenIds.push(onceki.id);
       await this.prisma.lawArticle.upsert({
         where: { topicId_articleNo: { topicId: topic.id, articleNo: a.articleNo } },
         create: {
@@ -523,6 +553,7 @@ export class AdminLawArticlesService {
       });
       written += 1;
     }
+    await this.markSummariesStale(degisenIds);
     await this.audit.log(actor, 'law_article.import', 'law_article', topic.id, {
       written,
       publish: opts.publish,

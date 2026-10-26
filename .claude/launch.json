@@ -54,6 +54,36 @@
       ],
       "cwd": "apps/web",
       "port": 3002
+    },
+    {
+      "name": "admin-e2e",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_API_BASE_URL=http://localhost:3007/api/v1",
+        "PORT=3011",
+        "npm",
+        "run",
+        "dev",
+        "--",
+        "-p",
+        "3011"
+      ],
+      "cwd": "apps/admin",
+      "port": 3011
+    },
+    {
+      "name": "api-e2e-local",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "PORT=3007",
+        "DATABASE_URL=postgresql://postgres:paem@localhost:55432/paem?connection_limit=4",
+        "DIRECT_URL=postgresql://postgres:paem@localhost:55432/paem",
+        "npm",
+        "run",
+        "start:dev"
+      ],
+      "cwd": "apps/api",
+      "port": 3007
     }
   ]
 }

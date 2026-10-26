@@ -13,6 +13,8 @@ import { AdminPastExamsController } from './past-exams/admin-past-exams.controll
 import { AdminPastExamsService } from './past-exams/admin-past-exams.service';
 import { AdminPlansController } from './plans/admin-plans.controller';
 import { AdminPlansService } from './plans/admin-plans.service';
+import { AdminSummariesController } from './summaries/admin-summaries.controller';
+import { AdminSummariesService } from './summaries/admin-summaries.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 import { ExamsModule } from '../exams/exams.module';
@@ -30,6 +32,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminExamsController,
     AdminPastExamsController,
     AdminPlansController,
+    AdminSummariesController, // Doc 53 konu özetleri
   ],
   providers: [
     AuditService,
@@ -43,6 +46,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminExamAdjustmentsService,
     AdminPastExamsService,
     AdminPlansService,
+    AdminSummariesService,
   ],
 })
 export class AdminModule {}

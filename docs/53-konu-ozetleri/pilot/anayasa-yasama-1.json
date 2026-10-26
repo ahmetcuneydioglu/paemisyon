@@ -1,0 +1,580 @@
+{
+  "$schema": {
+    "aciklama": "Doc 53 §3 ünite şeması (F1'de Prisma'ya taşınır). Her blok articleRefs taşır; rows içeren türlerde body yoktur, her satır refs taşır. derivedNumbers: metinde geçmeyen ama formülle türetilen sayılar; expr yalnız rakam, + - * / ( ) ve floor içerir, işlenenler refs metinlerinde geçmelidir. exam_stats ve bridge blokları betik üretimidir: ozet-dogrula.ts doldurur, model yazmaz. counterNumbers: kartın yanlış şık olarak andığı sayılar; betik bunların referans metninde geçmediğini doğrular.",
+    "blockTypes": [
+      "concept",
+      "rule",
+      "numbers",
+      "compare",
+      "trap",
+      "exam_stats",
+      "bridge"
+    ]
+  },
+  "unit": {
+    "slug": "anayasa-yasama-1",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Yasama I — Meclis kimlerden oluşur, nasıl seçilir, üyelik nasıl biter",
+    "subtitle": "TBMM'nin kuruluşu, seçim takvimi, Yüksek Seçim Kurulu, milletvekilinin hakları ve üyeliğin düşmesi",
+    "articleFrom": "75",
+    "articleTo": "86",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 75–86",
+    "status": "in_review",
+    "version": 1,
+    "generatedAt": "2026-10-26",
+    "generatedBy": "claude-fable-5-1 (pilot, elle istem)"
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Meclis kimdir",
+      "body": "Türkiye Büyük Millet Meclisi genel oyla seçilen **600 milletvekilinden** oluşur. Her milletvekili, kendisini seçen ili ya da seçmenleri değil **bütün milleti** temsil eder. Bu iki cümle ünitenin omurgasıdır: aşağıdaki her sayı 600'den türer, aşağıdaki her koruma \"bütün milleti temsil eden\" kişiyi serbest tutmak içindir.",
+      "articleRefs": [
+        "75",
+        "80"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim milletvekili seçilebilir",
+      "body": "**Kural:** 18 yaşını dolduran her Türk milletvekili seçilebilir.\n\n**Seçilemeyenler:**\n- En az ilkokul mezunu olmayanlar\n- Kısıtlılar\n- Askerlikle ilişiği olanlar\n- Kamu hizmetinden yasaklılar\n- Taksirli suçlar hariç, toplam **1 yıl veya daha fazla** hapis ya da ağır hapis cezasına hüküm giymiş olanlar\n- Zimmet, ihtilas, irtikap, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, inancı kötüye kullanma, dolanlı iflas gibi yüz kızartıcı suçlarla; kaçakçılık, resmî ihale ve alım satımlara fesat karıştırma, Devlet sırlarını açığa vurma, terör eylemlerine katılma ve bu eylemleri tahrik ve teşvik suçlarından hüküm giymiş olanlar: **affa uğramış olsalar bile**\n\n**Görevden çekilmedikçe aday olamayanlar:** hâkimler ve savcılar, yüksek yargı organı mensupları, öğretim elemanları, YÖK üyeleri, memur statüsündeki kamu görevlileri ve işçi niteliği taşımayan diğer kamu görevlileri, Silahlı Kuvvetler mensupları.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Af kurtarmaz, taksir ayrı sayılır",
+      "body": "Sınav iki noktayı sever. Birincisi: yüz kızartıcı suçlar ve maddede sayılan öteki suçlarda **af engeli kaldırmaz**; \"genel aftan yararlandı, artık seçilebilir\" şıkkı tuzaktır. İkincisi: **1 yıl** eşiği yalnız kasıtlı suçlar için geçerlidir, **taksirli suçlar** bu hesabın dışındadır. Bir de yaş: eşik **18**'i doldurmaktır, üst sınır yoktur.",
+      "articleRefs": [
+        "76"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçim takvimi",
+      "body": "TBMM ve Cumhurbaşkanlığı seçimleri **5 yılda bir, aynı günde** yapılır. Süresi biten milletvekili yeniden seçilebilir. Cumhurbaşkanlığı seçiminde birinci oylamada gerekli çoğunluk sağlanamazsa ikinci oylama 101. maddedeki usule göre yapılır.",
+      "articleRefs": [
+        "77"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Seçimler ne zaman ertelenir",
+      "body": "Tek sebep **savaş**tır. Savaş yüzünden seçim yapılamayacaksa **TBMM**, seçimlerin **1 yıl** geriye bırakılmasına karar verebilir. Sebep ortadan kalkmamışsa aynı usulle erteleme **tekrarlanabilir**. Olağanüstü hal bir erteleme sebebi değildir; kararı veren de Cumhurbaşkanı değil Meclis'tir.",
+      "articleRefs": [
+        "78"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ara seçim: dört kural, bir istisna",
+      "body": "Üyeliklerde boşalma olursa ara seçime gidilir. Ama dört kayıt var:\n\n1. Ara seçim her seçim döneminde **bir defa** yapılır.\n2. Genel seçimden **30 ay** geçmedikçe ara seçime gidilemez.\n3. Boşalan üyelik sayısı üye tamsayısının **yüzde 5**'ini bulursa ara seçimin **3 ay** içinde yapılmasına karar verilir. Bu, 600 üyede **30** boşalma demektir.\n4. Genel seçimlere **1 yıl** kala ara seçim yapılamaz.\n\n**İstisna:** bir ilin ya da seçim çevresinin Meclis'te hiç üyesi kalmazsa, boşalmayı izleyen **90 günden sonraki ilk Pazar** günü ara seçim yapılır. Madde bu hali \"yukarıda yazılı hallerden ayrı olarak\" düzenler.",
+      "articleRefs": [
+        "78",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 30,
+          "expr": "600 * 5 / 100",
+          "refs": [
+            "75",
+            "78"
+          ],
+          "note": "üye tamsayısının yüzde beşi"
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ara seçimde en çok karıştırılanlar",
+      "body": "\"Boşalma olunca her zaman ara seçime gidilir\" **yanlış**: 30 ay ve 1 yıl kala kayıtları var. \"Genel seçime 2 yıl kala ara seçim yapılamaz\" **yanlış**: süre 1 yıldır. Yüzde 5 boşalmada süre **3 ay**dır; şıklardaki başka hiçbir süre maddede yoktur. Ve yüzde 5 dolmasa bile, 30 ay geçmişse ara seçime **gidilebilir**; yüzde 5 yalnız \"3 ay içinde\" zorunluluğunu doğurur.",
+      "articleRefs": [
+        "78"
+      ],
+      "counterNumbers": [
+        2
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yüksek Seçim Kurulu",
+      "body": "Seçimler **yargı organlarının** genel yönetim ve denetimi altında yapılır. Bu yetki YSK'dadır: seçimin düzen içinde yönetimi ve dürüstlüğüyle ilgili bütün işlemleri yapmak ve yaptırmak; seçim süresince ve sonrasında yolsuzluk, şikâyet ve itirazları inceleyip **kesin karara bağlamak**; TBMM üyelerinin ve Cumhurbaşkanlığı seçim tutanaklarını kabul etmek. **YSK kararlarına karşı başka bir mercie başvurulamaz.**\n\nKuruluş: **7 asıl, 4 yedek** üye. Üyelerin **6'sı Yargıtay, 5'i Danıştay** Genel Kurullarınca kendi üyeleri arasından, üye tamsayılarının salt çoğunluğunun gizli oyuyla seçilir. Bu üyeler aralarından bir başkan ve bir başkanvekili seçer; Yargıtay ve Danıştay'dan gelenler arasından ad çekmeyle ikişer yedek ayrılır, başkan ve başkanvekili ad çekmeye girmez.\n\nAnayasa değişikliklerinin halkoyuna sunulması ve Cumhurbaşkanının halk tarafından seçilmesi de aynı hükümlere göre yönetilir ve denetlenir. YSK'nın ve öteki seçim kurullarının görev ve yetkileri **kanunla** düzenlenir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "YSK bir yüksek mahkeme değildir",
+      "body": "YSK Anayasa'nın **Yasama** bölümünde, 79. maddede düzenlenir; Yargı bölümündeki yüksek mahkemeler arasında sayılmaz. Üyelerini Cumhurbaşkanı ya da TBMM değil, **Yargıtay ve Danıştay Genel Kurulları** kendi içinden seçer. Görev ve yetkileri yönetmelikle değil **kanunla** belirlenir. Ve YSK'nın işi seçimi yönetip denetlemektir; seçim tarihini belirlemek, seçimleri yenilemek ya da dokunulmazlık kararlarını denetlemek YSK'nın görevi değildir.",
+      "articleRefs": [
+        "79"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Seçim sayıları",
+      "rows": [
+        {
+          "label": "TBMM üye sayısı",
+          "value": "600",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Seçilme yaşı",
+          "value": "18",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "Seçilmeye engel hapis cezası (taksirli hariç)",
+          "value": "toplam 1 yıl ve üstü",
+          "refs": [
+            "76"
+          ]
+        },
+        {
+          "label": "TBMM ve Cumhurbaşkanlığı seçim dönemi",
+          "value": "5 yıl, aynı gün",
+          "refs": [
+            "77"
+          ]
+        },
+        {
+          "label": "Savaşta erteleme",
+          "value": "1 yıl, TBMM kararıyla, tekrarlanabilir",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Ara seçim için genel seçimden geçmesi gereken süre",
+          "value": "30 ay",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Zorunlu ara seçim eşiği",
+          "value": "üye tamsayısının yüzde 5'i (30 üye)",
+          "refs": [
+            "78",
+            "75"
+          ]
+        },
+        {
+          "label": "Zorunlu ara seçimin yapılma süresi",
+          "value": "3 ay içinde",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "Ara seçim yapılamayan dönem",
+          "value": "genel seçimlere 1 yıl kala",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "İlin üyesi kalmazsa ara seçim",
+          "value": "90 günden sonraki ilk Pazar",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "YSK üye sayısı",
+          "value": "7 asıl, 4 yedek",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "YSK üyelerinin kaynağı",
+          "value": "6 Yargıtay, 5 Danıştay",
+          "refs": [
+            "79"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 30,
+          "expr": "600 * 5 / 100",
+          "refs": [
+            "75",
+            "78"
+          ],
+          "note": "yüzde beş eşiği"
+        }
+      ],
+      "articleRefs": [
+        "75",
+        "76",
+        "77",
+        "78",
+        "79"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Yasama sorumsuzluğu ve yasama dokunulmazlığı",
+      "rows": [
+        {
+          "aspect": "Neyi korur",
+          "left": "Meclis çalışmalarındaki oy, söz ve ileri sürülen düşünceler",
+          "right": "Seçimden önce ya da sonra işlendiği ileri sürülen suçlar",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Ne yapılamaz",
+          "left": "Bunlardan dolayı sorumlu tutulamaz",
+          "right": "Meclis kararı olmadan tutulamaz, sorguya çekilemez, tutuklanamaz, yargılanamaz",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Sınırı",
+          "left": "Meclis dışında tekrarlamak ve açığa vurmak da korunur; ancak o oturumdaki Başkanlık Divanının teklifi üzerine Meclis başka karar alırsa korunmaz",
+          "right": "Ağır cezayı gerektiren suçüstü hali; seçimden önce soruşturmasına başlanmış olmak kaydıyla 14. maddedeki durumlar. Bu hallerde yetkili makam durumu hemen Meclis'e bildirir",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Ceza hükmü varsa",
+          "left": "—",
+          "right": "İnfaz üyelik bitince; üyelik süresince zamanaşımı işlemez",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Yeniden seçilirse",
+          "left": "—",
+          "right": "Soruşturma ve kovuşturma, Meclis'in dokunulmazlığı yeniden kaldırmasına bağlıdır",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "aspect": "Parti grupları",
+          "left": "—",
+          "right": "Dokunulmazlıkla ilgili görüşme yapamaz, karar alamaz",
+          "refs": [
+            "83"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "83"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dokunulmazlık ne değildir",
+      "body": "Dokunulmazlığın **kaldırılması milletvekilliğini düşürmez**; 84. maddedeki düşme halleri arasında yoktur, milletvekili Meclis'te kalır ve yargılanır. İstisna \"ağır cezayı gerektiren **suçüstü** hali\"dir; \"ağır bir suç işlediğinin ortaya çıkması\" ya da \"yüz kızartıcı suç işlemesi\" istisna değildir. 14. madde istisnası ise yalnız **seçimden önce soruşturmasına başlanmış** olmak kaydıyla işler. Sorumsuzluk da mutlak değildir: Meclis, Divan'ın teklifi üzerine karar alırsa söz Meclis dışında korunmaz.",
+      "articleRefs": [
+        "83",
+        "84"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üyelikle bağdaşmayan işler",
+      "body": "Milletvekili şu kuruluşların **yönetim ve denetim kurullarında görev alamaz, vekili olamaz, taahhüt işi kabul edemez, temsilcilik ve hakemlik yapamaz:**\n- Devlet ve öteki kamu tüzel kişileri ile bunlara bağlı kuruluşlar\n- Devletin ya da kamu tüzel kişilerinin doğrudan ya da dolaylı katıldığı teşebbüs ve ortaklıklar\n- Özel gelir kaynakları ve imkânları kanunla sağlanmış, kamu yararına çalışan dernekler\n- Devletten yardım alan ve vergi muafiyeti olan vakıflar\n- Kamu kurumu niteliğindeki meslek kuruluşları, sendikalar ve bunların üst kuruluşları\n\nMilletvekili, yürütme organının teklif, inha, atama ya da onamasına bağlı resmî ya da özel hiçbir işle görevlendirilemez. Bağdaşmayan öteki işler **kanunla** düzenlenir; yani Anayasa'nın listesi kapalı değildir, sıradan bir derneğe üye olmak ya da avukatlık gibi işler Anayasa metninde sayılmaz.",
+      "articleRefs": [
+        "82"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Milletvekilliği nasıl düşer: dört yol, dört usul",
+      "body": "Her yolun usulü farklıdır; sınav tam burayı sorar.\n\n1. **İstifa:** istifanın geçerli olduğunu **Başkanlık Divanı** tespit eder, düşmeyi **Genel Kurul** kararlaştırır. Kendiliğinden düşmez.\n2. **Kesin hüküm giyme ya da kısıtlanma:** kesin mahkeme kararının **Genel Kurula bildirilmesiyle** düşer. Oylama yoktur.\n3. **Bağdaşmayan işte ısrar:** yetkili komisyonun durumu tespit eden raporu üzerine Genel Kurul **gizli oyla** karar verir.\n4. **Devamsızlık:** özürsüz ya da izinsiz olarak **1 ay içinde toplam 5 birleşim günü** katılmayan milletvekili için Divan tespiti üzerine Genel Kurul **üye tamsayısının salt çoğunluğuyla** karar verebilir. 600 üyede bu **301** oydur.",
+      "articleRefs": [
+        "84",
+        "75"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "84"
+          ],
+          "note": "üye tamsayısının salt çoğunluğu"
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Düşme, kendiliğinden sona erme ve düşürmeyenler",
+      "body": "Üç kümeyi ayır. **Düşme** (84. madde): istifa, kesin hüküm ya da kısıtlanma, bağdaşmayan işte ısrar, devamsızlık. **Kendiliğinden sona erme:** Cumhurbaşkanı seçilen milletvekilinin üyeliği sona erer, bakan ya da Cumhurbaşkanı yardımcısı atanan milletvekilinin üyeliği sona erer; bunlar için Meclis kararı aranmaz. **Düşürmeyenler:** dokunulmazlığın kaldırılması, üyesi olduğu partinin kapatılması. İstifa sık tuzaktır: kendiliğinden değil, Genel Kurul kararıyla düşer. Devamsızlıkta oy da tuzaktır: toplantıya katılanların değil, **üye tamsayısının** salt çoğunluğu.",
+      "articleRefs": [
+        "84",
+        "101",
+        "106"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İptal istemi: Anayasa Mahkemesi'ne 7 gün",
+      "body": "Dokunulmazlığın kaldırılmasına ya da 84. maddenin **birinci, üçüncü veya dördüncü** fıkralarına göre (istifa, ısrar, devamsızlık) milletvekilliğinin düşmesine karar verilmişse: Genel Kurul kararından başlayarak **7 gün** içinde **ilgili milletvekili ya da bir başka milletvekili**, kararın **Anayasa'ya, kanuna veya İçtüzüğe** aykırılığı iddiasıyla iptal için **Anayasa Mahkemesi'ne** başvurabilir. Mahkeme istemi **15 gün** içinde kesin karara bağlar.\n\nDikkat: kesin hüküm ya da kısıtlanma yüzünden düşme (84/2) bu listede **yoktur**; o düşme bildirimle olur ve iptal istemine konu olmaz.",
+      "articleRefs": [
+        "85",
+        "84"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İptal isteminde tuzaklar",
+      "body": "Başvuru mercii YSK ya da TBMM Başkanlığı değil **Anayasa Mahkemesi**dir; Mahkeme bunu Yüce Divan sıfatıyla değil, iptal istemi olarak inceler. Süre **7 gün**, karar **15 gün**. Aykırılık gerekçesi yalnız Anayasa değil, **kanun ve İçtüzük** de olabilir. Başvuruyu yalnız ilgili değil **herhangi bir milletvekili** yapabilir. Kesin hükümle düşen milletvekilinin iptal istemi ise Mahkeme'nin denetim alanı dışındadır.",
+      "articleRefs": [
+        "85"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ödenek ve yolluk",
+      "body": "Ödenek, yolluk ve emeklilik işlemleri **kanunla** düzenlenir; İçtüzük ya da Cumhurbaşkanlığı kararnamesiyle değil. Ödeneğin aylık tutarı **en yüksek Devlet memurunun** aldığı miktarı, yolluk da **ödeneğin yarısını** aşamaz. Ödenek ve yolluk, bağlanmış emekli aylığının kesilmesini gerektirmez. En çok **3 aylığı** önceden ödenebilir.",
+      "articleRefs": [
+        "86"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Andiçme",
+      "body": "Milletvekilleri göreve başlarken 81. maddedeki metinle and içerler. Metin devletin varlığı ve bağımsızlığı, milletin egemenliği, hukukun üstünlüğü, demokratik ve laik Cumhuriyet, Atatürk ilke ve inkılapları, insan hakları ve Anayasa'ya sadakat üzerine kuruludur. Sınavda nadir; ant içmemenin sonucu Anayasa'da düzenlenmez.",
+      "articleRefs": [
+        "81"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Üyelik ve düşme sayıları",
+      "rows": [
+        {
+          "label": "Devamsızlık eşiği",
+          "value": "1 ay içinde toplam 5 birleşim günü",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "Devamsızlıkta düşürme oyu",
+          "value": "üye tamsayısının salt çoğunluğu (301)",
+          "refs": [
+            "84",
+            "75"
+          ]
+        },
+        {
+          "label": "İptal istemi süresi",
+          "value": "7 gün",
+          "refs": [
+            "85"
+          ]
+        },
+        {
+          "label": "Anayasa Mahkemesi'nin karar süresi",
+          "value": "15 gün",
+          "refs": [
+            "85"
+          ]
+        },
+        {
+          "label": "Önceden ödenebilen ödenek",
+          "value": "en çok 3 aylık",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Yolluk üst sınırı",
+          "value": "ödeneğin yarısı",
+          "refs": [
+            "86"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "84"
+          ],
+          "note": "salt çoğunluk"
+        }
+      ],
+      "articleRefs": [
+        "84",
+        "85",
+        "86",
+        "75"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "77",
+          "refs": [
+            "75",
+            "80",
+            "76",
+            "77",
+            "78",
+            "79",
+            "83",
+            "84",
+            "82",
+            "85",
+            "86",
+            "81"
+          ]
+        },
+        {
+          "label": "md 84 — Milletvekilliğinin düşmesi",
+          "value": "17 soru",
+          "refs": [
+            "84"
+          ]
+        },
+        {
+          "label": "md 78 — Seçimlerin geriye bırakılması ve ara seçimler",
+          "value": "13 soru",
+          "refs": [
+            "78"
+          ]
+        },
+        {
+          "label": "md 85 — İptal istemi",
+          "value": "13 soru",
+          "refs": [
+            "85"
+          ]
+        },
+        {
+          "label": "md 79 — Seçimlerin genel yönetim ve denetimi",
+          "value": "8 soru",
+          "refs": [
+            "79"
+          ]
+        },
+        {
+          "label": "md 83 — Yasama dokunulmazlığı",
+          "value": "8 soru",
+          "refs": [
+            "83"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 81",
+          "refs": [
+            "75",
+            "80",
+            "76",
+            "77",
+            "78",
+            "79",
+            "83",
+            "84",
+            "82",
+            "85",
+            "86",
+            "81"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86"
+      ],
+      "generated": true,
+      "session": {
+        "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+        "articleNos": [
+          "75",
+          "80",
+          "76",
+          "77",
+          "78",
+          "79",
+          "83",
+          "84",
+          "82",
+          "85",
+          "86",
+          "81"
+        ],
+        "count": 10
+      },
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 75–86, 10 soru",
+          "refs": [
+            "75",
+            "80",
+            "76",
+            "77",
+            "78",
+            "79",
+            "83",
+            "84",
+            "82",
+            "85",
+            "86",
+            "81"
+          ]
+        }
+      ]
+    }
+  ]
+}

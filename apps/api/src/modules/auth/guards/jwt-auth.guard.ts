@@ -3,6 +3,7 @@ import {
   ExecutionContext,
   HttpException,
   Injectable,
+  Logger,
   UnauthorizedException,
 } from '@nestjs/common';
 import type { Request } from 'express';
@@ -16,6 +17,7 @@ import type { AuthenticatedUser } from '../auth.types';
  */
 @Injectable()
 export class JwtAuthGuard implements CanActivate {
+  private readonly logger = new Logger(JwtAuthGuard.name);
   constructor(
     private readonly tokens: SupabaseTokenService,
     private readonly userSync: UserSyncService,
@@ -37,6 +39,8 @@ export class JwtAuthGuard implements CanActivate {
       // Bilinçli fırlatılan HTTP hataları (ör. ACCOUNT_SUSPENDED 403) aynen geçer;
       // yalnızca beklenmeyen doğrulama hataları genel 401'e sarılır.
       if (err instanceof HttpException) throw err;
+      // Neden günlüğe düşer (token düşmez): JWKS erişimi, issuer/audience, kullanıcı yükleme hatası ayırt edilsin.
+      this.logger.warn(`Token doğrulanamadı: ${err instanceof Error ? `${err.name}: ${err.message}` : String(err)}`);
       throw new UnauthorizedException('Oturum geçersiz veya süresi dolmuş.');
     }
   }

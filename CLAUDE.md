@@ -67,6 +67,16 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   grafik görseli gerektiren tipler bu istisnaya girmez; kurgu hiçbir hukuk
   normu öğretmemeli; soru "AI üretimi" ön ekli bir `sourceLabel` taşımalı ve
   `in_review`'a düşmeli. Yayın kararı insanındır.
+  **İSTİSNA (26 Eki 2026, Doc 53):** KONU ÖZETİ model
+  tarafından üretilebilir. Bu bir soru değil, yeni bir içerik türüdür ve madde
+  metninin yerine geçmez (madde metni AI ile üretilmez/özetlenmez ilkesi
+  korunur). Şartı: özet kart dizisidir, her kart en az bir resmî maddeye
+  referans verir; kartlardaki sayı ve süreler referans maddenin metninde
+  geçtiği betikle gösterilir (`scripts/ozet-dogrula.ts`; türetilmiş sayı yalnız
+  açık formülle); "Sınav der ki" istatistikleri model değil betik üretir; kayıt
+  "AI özeti" ön ekli `sourceLabel` taşır ve `in_review`'a düşer. Yayın kararı
+  insanındır. Olumsuz iddialar ("X Anayasa'da sayılmaz") betikle doğrulanamaz,
+  insan incelemesi kaldırılamaz.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

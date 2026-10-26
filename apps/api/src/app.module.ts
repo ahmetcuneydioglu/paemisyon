@@ -29,6 +29,7 @@ import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
 import { RoomsModule } from './modules/rooms/rooms.module';
 import { UsersModule } from './modules/users/users.module';
+import { SummariesModule } from './modules/summaries/summaries.module';
 
 @Module({
   imports: [
@@ -85,6 +86,7 @@ import { UsersModule } from './modules/users/users.module';
     AdminModule,
     HealthModule,
     UsersModule,
+    SummariesModule, // Doc 53 konu özetleri
     NotificationsModule,
     EmailModule,
   ],

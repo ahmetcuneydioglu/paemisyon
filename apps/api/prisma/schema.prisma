@@ -36,6 +36,17 @@ enum ContentStatus {
   archived
 }
 
+/// Konu özeti kart türleri (Doc 53 §3).
+enum SummaryBlockType {
+  concept
+  rule
+  numbers
+  compare
+  trap
+  exam_stats
+  bridge
+}
+
 /// Mevzuat türü (Doc 29 §11) — V1'de yalnız `kanun` dolu; mimari geleceğe açık.
 enum LegislationType {
   kanun
@@ -171,6 +182,7 @@ model User {
   articleHighlights ArticleHighlight[]
   articleNotes      ArticleNote[]
   readingProgress   ReadingProgress[]
+  summaryProgress   SummaryProgress[]
   wrongAnswers      WrongAnswer[]
   questionReviews   QuestionReview[]
   questionNotes     QuestionNote[]
@@ -364,6 +376,7 @@ model Topic {
   masterySnapshots TopicMasterySnapshot[]
   lawArticles      LawArticle[]
   legislation      Legislation?
+  summaryUnits     SummaryUnit[]
 
   dailyFocuses DailyFocus[]
 
@@ -424,6 +437,7 @@ model LawArticle {
   notes       ArticleNote[]
   questions   QuestionArticle[]
   versions    LawArticleVersion[]
+  summaryRefs SummaryBlockArticle[]
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
@@ -457,6 +471,7 @@ model Legislation {
   sections        LegislationSection[]
   articles        LawArticle[]
   readingProgress ReadingProgress[]
+  summaryUnits    SummaryUnit[]
 
   createdAt DateTime  @default(now()) @map("created_at")
   updatedAt DateTime  @updatedAt @map("updated_at")
@@ -545,6 +560,108 @@ model ReadingProgress {
   @@id([userId, legislationId])
   @@index([userId, updatedAt])
   @@map("reading_progress")
+}
+
+// ─────────────────────────────────────────────
+// Konu Özetleri (Doc 53) — maddeye çivilenmiş kart dizisi
+// ─────────────────────────────────────────────
+
+/// Ünite: bir konuya ve bir mevzuata bağlı, 10–15 dk okunan sıralı kart paketi.
+/// İLKE: üretim modeldir, yayın insanındır — ünite in_review doğar, admin yayınlar.
+/// Kaynak etiketi ("AI özeti — …") yalnız admin'de görünür (4 Eyl 2026 kuralı).
+model SummaryUnit {
+  id             String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  topicId        String        @map("topic_id") @db.Uuid
+  legislationId  String        @map("legislation_id") @db.Uuid
+  /// KALICI: web URL'i (/ozet/<kanun>/<slug>) buna dayanır.
+  slug           String        @unique
+  title          String
+  subtitle       String?
+  /// Bilgi amaçlı madde aralığı ("75"–"86"); kartlar kendi referanslarını taşır.
+  articleFrom    String        @map("article_from")
+  articleTo      String        @map("article_to")
+  sortOrder      Int           @default(0) @map("sort_order")
+  /// Doc 53 karar 8: dersin ilk 2 ünitesi açık, kalanı premium.
+  isPremium      Boolean       @default(false) @map("is_premium")
+  readingMinutes Int           @default(10) @map("reading_minutes")
+  status         ContentStatus @default(in_review)
+  sourceLabel    String        @map("source_label")
+  version        Int           @default(1)
+  generatedBy    String?       @map("generated_by")
+  publishedAt    DateTime?     @map("published_at")
+  createdBy      String?       @map("created_by") @db.Uuid
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+  deletedAt      DateTime?     @map("deleted_at")
+
+  topic       Topic             @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  legislation Legislation       @relation(fields: [legislationId], references: [id], onDelete: Cascade)
+  blocks      SummaryBlock[]
+  progress    SummaryProgress[]
+
+  @@index([topicId, status, sortOrder])
+  @@index([legislationId])
+  @@map("summary_units")
+}
+
+/// Kart. body: markdown-lite (kalın, liste); rows: numbers/compare/exam_stats/bridge satırları
+/// (`{label,value,refs}` ya da `{aspect,left,right,refs}`); derivedNumbers: metinde geçmeyen,
+/// formülle türetilen sayılar; counterNumbers: kartın "yanlış şık" diye andığı sayılar.
+/// staleSince: referans verdiği madde metni değiştiğinde dolar (eskime kuyruğu).
+model SummaryBlock {
+  id             String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  unitId         String           @map("unit_id") @db.Uuid
+  type           SummaryBlockType
+  title          String?
+  body           String?
+  rows           Json?
+  derivedNumbers Json?            @map("derived_numbers")
+  counterNumbers Int[]            @default([]) @map("counter_numbers")
+  /// exam_stats/bridge: betik üretimi, insan düzenlemez.
+  generated      Boolean          @default(false)
+  sortOrder      Int              @default(0) @map("sort_order")
+  status         ContentStatus    @default(in_review)
+  staleSince     DateTime?        @map("stale_since")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
+
+  unit        SummaryUnit           @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  articleRefs SummaryBlockArticle[]
+
+  @@index([unitId, sortOrder])
+  @@index([staleSince])
+  @@map("summary_blocks")
+}
+
+/// Kart → madde referansı. articleVersionNo: kartın yazıldığı anda maddenin sürümü;
+/// madde değişince eskime kıyası buna dayanır.
+model SummaryBlockArticle {
+  blockId          String @map("block_id") @db.Uuid
+  lawArticleId     String @map("law_article_id") @db.Uuid
+  articleVersionNo Int?   @map("article_version_no")
+
+  block      SummaryBlock @relation(fields: [blockId], references: [id], onDelete: Cascade)
+  lawArticle LawArticle   @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@id([blockId, lawArticleId])
+  @@index([lawArticleId])
+  @@map("summary_block_articles")
+}
+
+/// Okuma ilerlemesi — ReadingProgress'in ünite eşi (kaldığın kart, bitirme).
+model SummaryProgress {
+  userId         String    @map("user_id") @db.Uuid
+  unitId         String    @map("unit_id") @db.Uuid
+  lastBlockIndex Int       @default(0) @map("last_block_index")
+  completedAt    DateTime? @map("completed_at")
+  updatedAt      DateTime  @updatedAt @map("updated_at")
+
+  user User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit SummaryUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@id([userId, unitId])
+  @@index([userId, updatedAt])
+  @@map("summary_progress")
 }
 
 // Kararlı KİMLİK — içerik burada değil, sürümlerde.
