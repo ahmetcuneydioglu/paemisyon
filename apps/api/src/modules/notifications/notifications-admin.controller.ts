@@ -48,7 +48,7 @@ import {
 } from './notifications.config';
 import { RollupService } from './rollup.service';
 import { rulesSummary, rulesToWhere, SEGMENT_FIELDS, validateRules } from './segment-dsl';
-import { TEMPLATE_VARIABLES, templateWarnings } from './template';
+import { TEMPLATE_VARIABLES, templateVariables, templateWarnings } from './template';
 import { TestersService } from './testers.service';
 import { trDayStart } from './decision.service';
 
@@ -313,6 +313,7 @@ export class NotificationsAdminController {
       data: {
         ...dto,
         deepLink: (dto.deepLink ?? { target: 'home' }) as unknown as Prisma.InputJsonValue,
+        variables: templateVariables(`${dto.title} ${dto.body} ${dto.emailBody ?? ''}`),
         createdById: actor.id,
       },
     });
@@ -333,6 +334,7 @@ export class NotificationsAdminController {
       data: {
         ...dto,
         deepLink: (dto.deepLink ?? { target: 'home' }) as unknown as Prisma.InputJsonValue,
+        variables: templateVariables(`${dto.title} ${dto.body} ${dto.emailBody ?? ''}`),
         updatedById: actor.id,
       },
     });

@@ -3,6 +3,7 @@ import {
   IsArray,
   IsBoolean,
   IsDateString,
+  IsDefined,
   IsEnum,
   IsIn,
   IsInt,
@@ -51,7 +52,7 @@ export class UpsertCampaignDto {
   @IsOptional() @IsUUID('4') templateId?: string | null;
   @IsOptional() @IsEnum(NotificationAudienceMode) audienceMode?: NotificationAudienceMode;
   @IsOptional() @IsUUID('4') segmentId?: string | null;
-  @IsOptional() segmentRules?: unknown;
+  @IsOptional() @IsObject() segmentRules?: unknown;
   @IsOptional() @IsArray() @IsUUID('4', { each: true }) userIds?: string[];
   @IsOptional() @IsEnum(NotificationSendMode) sendMode?: NotificationSendMode;
   @IsOptional() @IsDateString() scheduledAt?: string | null;
@@ -80,7 +81,7 @@ export class EstimateDto {
   @IsEnum(NotificationCategory) category!: NotificationCategory;
   @IsEnum(NotificationAudienceMode) audienceMode!: NotificationAudienceMode;
   @IsOptional() @IsUUID('4') segmentId?: string | null;
-  @IsOptional() segmentRules?: unknown;
+  @IsOptional() @IsObject() segmentRules?: unknown;
   @IsOptional() @IsArray() @IsUUID('4', { each: true }) userIds?: string[];
   @IsOptional()
   @IsArray()
@@ -106,12 +107,12 @@ export class UpsertTemplateDto {
 export class UpsertSegmentDto {
   @IsString() @MinLength(2) @MaxLength(120) name!: string;
   @IsOptional() @IsString() @MaxLength(300) description?: string | null;
-  rules!: unknown;
+  @IsDefined() @IsObject() rules!: unknown;
   @IsOptional() @IsIn(['active', 'archived']) status?: 'active' | 'archived';
 }
 
 export class SegmentEstimateDto {
-  rules!: unknown;
+  @IsDefined() @IsObject() rules!: unknown;
 }
 
 export class HistoryQueryDto {

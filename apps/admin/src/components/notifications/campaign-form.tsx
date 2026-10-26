@@ -72,6 +72,8 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
   const router = useRouter();
   const qc = useQueryClient();
   const [f, setF] = useState<CampaignFormValue>(initial);
+  // İlk kayıtta sayfa değişmez: kimlik state'te tutulur, adres sessizce güncellenir (prova/test sonucu ekranda kalsın).
+  const [id, setId] = useState<string | null>(campaignId);
   const [preview, setPreview] = useState<Preview | null>(null);
   const [confirm, setConfirm] = useState<'send' | 'schedule' | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
@@ -110,14 +112,17 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
   const save = useMutation({
     mutationFn: async () => {
       const body = toPayload(f, links.data?.targets ?? []);
-      return campaignId
-        ? api<Campaign>(`/admin/notifications/campaigns/${campaignId}`, { method: 'PUT', body })
+      return id
+        ? api<Campaign>(`/admin/notifications/campaigns/${id}`, { method: 'PUT', body })
         : api<Campaign>('/admin/notifications/campaigns', { method: 'POST', body });
     },
     onSuccess: (c) => {
       qc.invalidateQueries({ queryKey: ['notif-campaigns'] });
       setNotice('Taslak kaydedildi.');
-      if (!campaignId) router.replace(`/notifications/campaigns/${c.id}/edit`);
+      if (!id) {
+        setId(c.id);
+        window.history.replaceState(null, '', `/notifications/campaigns/${c.id}/edit`);
+      }
     },
   });
   const doPreview = useMutation({

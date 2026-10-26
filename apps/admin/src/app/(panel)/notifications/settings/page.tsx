@@ -77,7 +77,7 @@ export default function NotificationSettingsPage() {
         </Card>
         <Card className="space-y-3">
           <div><h2 className="text-base font-semibold">Ortam kapısı</h2><p className="text-xs text-slate-500">İşçi, ayar ile NOTIFICATIONS_ENV eşleşmezse hiçbir şey göndermez.</p></div>
-          <Field label="notifications.environment"><input className={inputCls} placeholder="(boş = kapı yok)" value={current.environment} onChange={(e) => set({ environment: e.target.value })} disabled={!isAdmin} /></Field>
+          <Field label="Ortam değeri (ayar: notifications.environment)"><input className={inputCls} placeholder="(boş = kapı yok)" value={current.environment} onChange={(e) => set({ environment: e.target.value })} disabled={!isAdmin} /></Field>
           <div className="flex items-center justify-between text-sm"><span className="text-slate-600">İşçi ortamı</span><Pill label={`${s.data.worker.env || '(boş)'} · ${envOk ? 'eşleşiyor' : 'EŞLEŞMİYOR'}`} cls={envOk ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-700'} /></div>
           <div className="flex items-center justify-between text-sm"><span className="text-slate-600">Sağlayıcı</span><span>{s.data.worker.provider === 'console' ? 'console (yalnız log)' : 'FCM + SES'}</span></div>
           <button type="button" onClick={() => refresh.mutate()} disabled={!isAdmin || refresh.isPending} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">{refresh.isPending ? 'Yenileniyor…' : refresh.data ? `Kitle yenilendi: ${refresh.data.rows}` : 'Kitle tablosunu şimdi yenile'}</button>
