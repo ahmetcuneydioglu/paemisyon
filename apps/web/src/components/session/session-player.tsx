@@ -113,6 +113,8 @@ export interface SessionScope {
   /** Seçili mevzuat turu (1 Eki 2026): kullanıcının işaretlediği konular. */
   topicIds?: string[];
   articleNo?: string;
+  /** Konu özeti köprüsü (Doc 53): ünitenin maddeleri; articleNo ile birlikte verilmez. */
+  articleNos?: string[];
   /** 'review' = yanlış tekrarı · 'favorites' = favori reçetesi; varsayılan practice. */
   mode?: "practice" | "review" | "favorites";
   /** Yarım oturumu kaldığı yerden aç (Doc 27 §2.4). */
@@ -263,6 +265,7 @@ export function SessionPlayer({ scope }: { scope: SessionScope }) {
         ...(scope.courseId ? { courseId: scope.courseId } : {}),
         ...(scope.topicIds ? { topicIds: scope.topicIds } : {}),
         ...(scope.articleNo ? { articleNo: scope.articleNo } : {}),
+        ...(!scope.articleNo && scope.articleNos ? { articleNos: scope.articleNos } : {}),
         ...(scope.source ? { source: scope.source } : {}),
         questionCount: scope.questionCount ?? 10,
       },

@@ -18,6 +18,8 @@ export default async function SeansPage({
   const count = Number.parseInt(one(p.count) ?? "", 10);
   // Seçili mevzuat turu: virgülle ayrılmış konu kimlikleri (kural sunucuda).
   const topicIds = (one(p.topicIds) ?? "").split(",").filter(Boolean);
+  // Konu özeti köprüsü (Doc 53): ünitenin maddeleri, virgülle.
+  const articleNos = (one(p.articleNos) ?? "").split(",").filter(Boolean);
 
   // Query seti değişince oynatıcı REMOUNT olur → taze tur başlar. Aksi halde
   // aynı /seans'a gitmek (ör. done ekranından "Yeni tur") remount tetiklemez
@@ -27,6 +29,7 @@ export default async function SeansPage({
     one(p.courseId),
     one(p.topicIds),
     one(p.articleNo),
+    one(p.articleNos),
     one(p.mode),
     one(p.resume),
     one(p.count),
@@ -41,6 +44,7 @@ export default async function SeansPage({
         courseId: one(p.courseId),
         topicIds: topicIds.length > 0 ? topicIds : undefined,
         articleNo: one(p.articleNo),
+        articleNos: articleNos.length > 0 ? articleNos : undefined,
         mode:
           one(p.mode) === "review"
             ? "review"

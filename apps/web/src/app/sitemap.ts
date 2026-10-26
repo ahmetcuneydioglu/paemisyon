@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { config } from "@/lib/config";
+import type { SummaryUnitPublicListItem } from "@/lib/ozet";
 import {
   articleSlug,
   publicApi,
@@ -40,6 +41,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.7,
       })),
     );
+
+  // Konu özeti üniteleri (Doc 53): yalnız yayındakiler; misafire ilk kartlar açık.
+  const { items: ozetler } = await publicApiList<SummaryUnitPublicListItem>("/public/summaries");
+  const ozetPages: MetadataRoute.Sitemap = ozetler.map((u) => ({
+    url: `${base}/ozet/${u.slug}`,
+    lastModified: u.updatedAt,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: base, changeFrequency: "daily", priority: 1 },
@@ -95,5 +105,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...lawPages,
     ...readingPages,
     ...articlePages,
+    ...ozetPages,
   ];
 }

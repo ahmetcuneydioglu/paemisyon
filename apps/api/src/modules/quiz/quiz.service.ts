@@ -195,6 +195,8 @@ export class QuizService {
         ...IPTAL_EDILMEMIS,
         // Madde Atlası: maddeden tur — havuz tek maddeye daralır.
         ...(dto.articleNo ? { articleNo: dto.articleNo } : {}),
+        // Konu özeti köprüsü (Doc 53): ünitenin maddelerinden tur.
+        ...(!dto.articleNo && dto.articleNos?.length ? { articleNo: { in: dto.articleNos } } : {}),
       };
     } else if (dto.topicIds != null) {
       // Seçili mevzuat: kullanıcının işaretlediği konulardan karışık havuz.

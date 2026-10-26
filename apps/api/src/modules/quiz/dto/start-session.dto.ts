@@ -92,6 +92,16 @@ export class StartSessionDto {
   @MaxLength(16)
   articleNo?: string;
 
+  /// Konu özeti köprüsü (Doc 53): topicId ile birlikte — havuzu ünitenin maddelerine
+  /// daraltır ("bu üniteden soru çöz"). articleNo ile birlikte VERİLMEZ.
+  @IsOptional()
+  @IsArray()
+  @ArrayMinSize(1)
+  @ArrayMaxSize(60)
+  @IsString({ each: true })
+  @MaxLength(16, { each: true })
+  articleNos?: string[];
+
   /// Arşiv denemesi (Doc 18 devamı): BİTEN denemenin sabitlenmiş soru setini
   /// pratik olarak çöz. mode=exam ile; resmî sıralamaya GİRMEZ, tekrarlanabilir.
   @IsOptional()

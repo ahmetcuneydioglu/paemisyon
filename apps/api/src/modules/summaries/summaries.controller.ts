@@ -14,6 +14,12 @@ import { SummariesService } from './summaries.service';
 export class PublicSummariesController {
   constructor(private readonly summaries: SummariesService) {}
 
+  @Get()
+  @Header('Cache-Control', 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400')
+  listAll() {
+    return this.summaries.listAllPublished();
+  }
+
   @Get('topic/:topicId')
   @UseGuards(OptionalJwtGuard)
   @Header('Cache-Control', 'private, max-age=60')

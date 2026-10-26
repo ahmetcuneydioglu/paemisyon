@@ -11,6 +11,8 @@ import { CoachLine } from "@/components/rooms/coach-line";
 import { RoomStatPanel } from "@/components/rooms/room-stat-panel";
 import { ToolRow } from "@/components/rooms/tool-row";
 import { CoachRail } from "@/components/shell/coach-rail";
+import { UnitListSection } from "@/components/ozet/unit-list-section";
+import type { SummaryUnitListItem } from "@/lib/ozet";
 
 export const metadata: Metadata = { title: "Konu", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -26,7 +28,11 @@ export default async function KonuOdasiPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const d = await api<TopicRoom>(`/me/topic-room/${id}`).catch(() => null);
+  const [d, ozet] = await Promise.all([
+    api<TopicRoom>(`/me/topic-room/${id}`).catch(() => null),
+    // Konu özetleri (Doc 53 §6): yayındaki üniteler + bu kullanıcının ilerlemesi/kilidi.
+    api<{ units: SummaryUnitListItem[] }>(`/public/summaries/topic/${id}`).catch(() => ({ units: [] })),
+  ]);
   if (!d) notFound();
   const t = d.topic;
   const yanlis =
@@ -76,6 +82,8 @@ export default async function KonuOdasiPage({
           }
         />
         <CoachLine text={d.coach} />
+
+        <UnitListSection units={ozet.units} />
 
         <section className="flex flex-col gap-2" aria-label="Bu konuda">
           <SectionHeader title="Bu konuda" />

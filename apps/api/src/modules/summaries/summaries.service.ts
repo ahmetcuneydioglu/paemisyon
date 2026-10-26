@@ -40,6 +40,38 @@ export interface PublicBlock {
 export class SummariesService {
   constructor(private readonly prisma: PrismaService) {}
 
+  /** Yayındaki bütün üniteler (web sitemap ve vitrin). Kullanıcıya özel alan yok; paylaşımlı cache uygun. */
+  async listAllPublished() {
+    const units = await this.prisma.summaryUnit.findMany({
+      where: { status: 'published', deletedAt: null },
+      orderBy: [{ topicId: 'asc' }, { sortOrder: 'asc' }],
+      select: {
+        slug: true,
+        title: true,
+        subtitle: true,
+        articleFrom: true,
+        articleTo: true,
+        readingMinutes: true,
+        isPremium: true,
+        updatedAt: true,
+        topic: { select: { id: true, name: true, course: { select: { name: true } } } },
+        legislation: { select: { slug: true, name: true, shortName: true } },
+      },
+    });
+    return units.map((u) => ({
+      slug: u.slug,
+      title: u.title,
+      subtitle: u.subtitle,
+      articleFrom: u.articleFrom,
+      articleTo: u.articleTo,
+      readingMinutes: u.readingMinutes,
+      isPremium: u.isPremium,
+      updatedAt: u.updatedAt.toISOString(),
+      topic: { id: u.topic.id, name: u.topic.name, courseName: u.topic.course.name },
+      legislation: u.legislation,
+    }));
+  }
+
   /** Konu sayfasının "Özet" yüzü: yayındaki üniteler + kullanıcının ilerlemesi + kilit. */
   async listForTopic(topicId: string, user?: AuthenticatedUser | null): Promise<{ units: PublicUnitListItem[] }> {
     const units = await this.prisma.summaryUnit.findMany({
