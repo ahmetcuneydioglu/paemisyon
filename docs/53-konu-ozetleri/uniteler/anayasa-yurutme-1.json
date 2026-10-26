@@ -1,0 +1,832 @@
+{
+  "unit": {
+    "slug": "anayasa-yurutme-1",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Yürütme I",
+    "subtitle": "Cumhurbaşkanı, yardımcılar ve bakanlar, kararname, olağanüstü hal",
+    "articleFrom": "101",
+    "articleTo": "122",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 101–122",
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 9
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Yürütmenin tek başı: Cumhurbaşkanı",
+      "body": "Bu ünitenin merkezinde tek bir makam var: Cumhurbaşkanı. Devletin başıdır ve yürütme yetkisi ona aittir. Halk tarafından doğrudan seçilir ve görevine başlarken Türkiye Büyük Millet Meclisi önünde andiçer. Yardımcılarını ve bakanlarını kendisi atar, görevlerine de kendisi son verir. Onlar da Cumhurbaşkanına karşı sorumludur. Soruları çözerken hep iki şeyi sor: Bu işi kim yapıyor, kime karşı sorumlu? Cevap çoğu zaman Cumhurbaşkanıdır. Meclisin rolünü ise ünite boyunca soruşturma, seçimlerin yenilenmesi ve olağanüstü hal onayında göreceksin.",
+      "articleRefs": [
+        "101",
+        "103",
+        "104",
+        "105",
+        "106",
+        "116",
+        "119"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Adaylık, seçilme şartları ve seçim",
+      "body": "**Kimler seçilebilir?** Kırk yaşını doldurmuş, yükseköğrenim yapmış ve milletvekili seçilme yeterliliğine sahip Türk vatandaşları. Seçimi doğrudan halk yapar.\n\n**Görev süresi:** beş yıl. Bir kimse **en fazla iki defa** Cumhurbaşkanı seçilebilir.\n\n**Kimler aday gösterebilir?**\n- siyasi parti grupları,\n- en son genel seçimlerde toplam geçerli oyların tek başına veya birlikte en az yüzde beşini almış siyasi partiler,\n- en az yüzbin seçmen.\n\n**Seçim:**\n1. Geçerli oyların **salt çoğunluğunu** alan aday seçilir.\n2. İlk oylamada bu çoğunluk sağlanamazsa, bu oylamayı izleyen **ikinci pazar** günü ikinci oylama yapılır. Bu oylamaya ilk oylamada en çok oy almış iki aday katılır. Geçerli oyların çoğunluğunu alan aday kazanır.\n3. Bu adaylardan biri seçime katılmazsa, boşalan adaylık birinci oylamadaki sıraya göre ikame edilir.\n4. İkinci oylamada tek aday kalırsa oylama **referandum** şeklinde yapılır. Aday geçerli oyların salt çoğunluğunu alamazsa **sadece Cumhurbaşkanı seçimi** yenilenir.\n\nCumhurbaşkanı seçilen milletvekilinin TBMM üyeliği sona erer. Seçimler tamamlanamazsa, yenisi göreve başlayıncaya kadar **mevcut Cumhurbaşkanının** görevi devam eder.",
+      "articleRefs": [
+        "101"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Seçimde sık karıştırılanlar",
+      "body": "- **Seçim tamamlanamazsa kim görev yapar?** TBMM Başkanı da değil, Cumhurbaşkanı yardımcısı da değil. Yenisi göreve başlayıncaya kadar **mevcut Cumhurbaşkanı** devam eder.\n- **İkinci oylama**, ilk oylamayı izleyen *ikinci* pazar günü yapılır. 'İlk pazar' şıkkına kanma.\n- Çoğunluk **geçerli oylar** üzerinden hesaplanır. Kayıtlı seçmen sayısı ya da oylamaya katılan seçmen sayısı esas alınmaz.\n- Partiler için aday gösterme eşiği **yüzde beş**tir; yüzde üç ya da yüzde on değil. Belli sayıda milletvekilinin imzasıyla aday gösterme yolu metinde yok.\n- İkinci oylamada tek aday kalırsa seçim iptal edilmez, **referandum** yapılır.\n- Sınır 'en fazla iki defa'dır. Metinde 'üst üste' şartı yok.\n- Metin, seçilen milletvekilinin yalnızca **TBMM üyeliğinin** sona erdiğini söyler. Parti ilişiği hakkında hüküm yok.",
+      "articleRefs": [
+        "101"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        {
+          "value": 3,
+          "label": "yüzde üç"
+        },
+        {
+          "value": 10,
+          "label": "yüzde on"
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cumhurbaşkanının görev ve yetkileri",
+      "body": "**Cumhurbaşkanı Devletin başıdır; yürütme yetkisi Cumhurbaşkanına aittir.** Türkiye Cumhuriyetini ve Türk Milletinin birliğini temsil eder. Anayasanın uygulanmasını, Devlet organlarının düzenli ve uyumlu çalışmasını temin eder.\n\n**Meclisle ilgili:** Gerekli görürse yasama yılının ilk günü açılış konuşmasını yapar. Ülkenin iç ve dış siyaseti hakkında Meclise mesaj verir.\n\n**Kanunlarla ilgili:**\n- kanunları yayımlar,\n- kanunları tekrar görüşülmek üzere geri gönderir,\n- kanunların ve TBMM İçtüzüğünün tümü veya belirli hükümleri hakkında, şekil veya esas bakımından Anayasaya aykırılık gerekçesiyle Anayasa Mahkemesinde iptal davası açar,\n- **Anayasa değişikliklerine ilişkin kanunları** gerekli görürse halkoyuna sunar.\n\n**Atama:** Cumhurbaşkanı yardımcılarını, bakanları ve üst kademe kamu yöneticilerini atar ve görevlerine son verir. Üst kademe yöneticilerin atanmasına ilişkin usul ve esasları Cumhurbaşkanlığı kararnamesiyle düzenler.\n\n**Dış ilişkiler:** Yabancı devletlere temsilci gönderir, yabancı devlet temsilcilerini kabul eder. Milletlerarası andlaşmaları onaylar ve yayımlar.\n\n**Güvenlik:** Milli güvenlik politikalarını belirler ve gerekli tedbirleri alır. TBMM adına Türk Silahlı Kuvvetlerinin Başkomutanlığını temsil eder. Türk Silahlı Kuvvetlerinin kullanılmasına karar verir.\n\n**Cezalar:** Sürekli hastalık, sakatlık ve kocama sebebiyle kişilerin cezalarını hafifletir veya kaldırır.\n\nAyrıca Anayasada ve kanunlarda verilen seçme ve atama görevleri ile diğer görevleri yerine getirir.",
+      "articleRefs": [
+        "104"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cumhurbaşkanlığı kararnamesi ve yönetmelik",
+      "body": "**Kural:** Cumhurbaşkanı, **yürütme yetkisine ilişkin konularda** Cumhurbaşkanlığı kararnamesi çıkarabilir.\n\n**Kararnameyle düzenlenemeyen ya da kararname çıkarılamayan alanlar:**\n- Anayasanın ikinci kısmının birinci ve ikinci bölümlerinde yer alan temel haklar, kişi hakları ve ödevleri,\n- dördüncü bölümde yer alan siyasi haklar ve ödevler,\n- Anayasada **münhasıran kanunla** düzenlenmesi öngörülen konular,\n- **kanunda açıkça düzenlenen** konular.\n\n**Kanunla ilişkisi:**\n- Kararname ile kanunlarda farklı hükümler varsa **kanun hükümleri** uygulanır.\n- TBMM aynı konuda kanun çıkarırsa kararname **hükümsüz** hâle gelir.\n\n**Yönetmelik:** Cumhurbaşkanı, kanunların uygulanmasını sağlamak üzere ve kanunlara aykırı olmamak şartıyla yönetmelik çıkarabilir.\n\n**Yürürlük:** Kararnameler ve yönetmelikler, yayımdan sonraki bir tarih belirlenmemişse Resmî Gazetede yayımlandıkları gün yürürlüğe girer.",
+      "articleRefs": [
+        "104"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Kararnamede ters çevrilen cümleler",
+      "body": "- 'Yürütme yetkisine ilişkin konularda çıkarılamaz' şıkkı metnin tersidir. Kararnamenin alanı **tam da** yürütme yetkisidir.\n- 'Kanunla çatışırsa kararname uygulanır' şıkkı yanlıştır. Çatışmada **kanun** uygulanır.\n- Haklarda yasak alan, ikinci kısmın birinci, ikinci ve dördüncü bölümleridir. Bu sayıma girmeyen bölümdeki haklar bu cümlenin yasağına takılmaz. Ancak konu Anayasada münhasıran kanunla düzenlenecek bir konuysa yine kararname çıkarılamaz. Soruda önce hakkın hangi bölümde olduğunu, sonra 'kanunla düzenlenir' kaydı bulunup bulunmadığını kontrol et.\n- **Konu bakımından** yasaklar şunlardır: temel haklar ve kişi hakları, siyasi haklar, münhasıran kanun alanı ve kanunda açıkça düzenlenen konular. 'Çatışmada kanun uygulanır' ve 'aynı konuda kanun çıkarsa hükümsüz olur' kuralları ise çıkarılmış bir kararnameye uygulanır.\n- Halkoyuna sunma yetkisi **Anayasa değişikliklerine ilişkin kanunlar** için verilmiştir. Metinde başka kanunları halkoyuna sunma yetkisi sayılmamış.\n- Olağan kararname için metinde Meclis onayı ya da bir süre öngörülmemiştir. Onay ve süre kuralı olağanüstü hal kararnamesine aittir (md 119).",
+      "articleRefs": [
+        "104",
+        "119"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Cumhurbaşkanının cezai sorumluluğu",
+      "body": "**Başlangıç:** Cumhurbaşkanı hakkında bir suç işlediği iddiasıyla, TBMM **üye tamsayısının salt çoğunluğunun** vereceği önergeyle soruşturma açılması istenebilir.\n\n1. Meclis önergeyi **en geç bir ay** içinde görüşür. **Üye tamsayısının beşte üçünün gizli oyuyla** soruşturma açılmasına karar verebilir.\n2. Soruşturmayı **onbeş kişilik bir komisyon** yapar. Komisyon, Meclisteki siyasi partilerin güçleri oranında verebilecekleri üye sayısının **üç katı** olarak gösterdikleri adaylar arasından, her parti için ayrı ayrı ad çekilerek kurulur.\n3. Komisyon raporunu **iki ay** içinde Meclis Başkanlığına sunar. Soruşturma bu sürede bitmezse **bir aylık yeni ve kesin** bir süre verilir.\n4. Rapor, Başkanlığa verildiği tarihten itibaren **on gün** içinde dağıtılır. Dağıtımından itibaren **on gün** içinde Genel Kurulda görüşülür.\n5. TBMM, **üye tamsayısının üçte ikisinin gizli oyuyla** Yüce Divana sevk kararı alabilir.\n6. Yüce Divan yargılaması **üç ay** içinde tamamlanır. Tamamlanamazsa **bir defaya mahsus üç aylık** ek süre verilir ve yargılama bu sürede kesin olarak tamamlanır.\n\n**Sonuçlar:**\n- Hakkında soruşturma açılmasına karar verilen Cumhurbaşkanı **seçim kararı alamaz**.\n- Yüce Divanda seçilmeye engel bir suçtan mahkûm edilirse görevi sona erer.\n- Görevdeyken işlendiği iddia edilen suçlar için, görevi bittikten sonra da bu madde uygulanır.",
+      "articleRefs": [
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Cumhurbaşkanı soruşturmasında tuzaklar",
+      "body": "- Yüce Divana sevk **üçte iki** ile olur; 'dörtte üç' şıkkı yanlıştır. Soruşturma açma kararı ise **beşte üç** ile alınır. Sırayı aklında tut: önce beşte üç (soruşturma), sonra üçte iki (sevk).\n- Her iki karar da **gizli oyla** alınır. 'Açık oy' içeren şık yanlıştır.\n- Önergede de kararlarda da hesap **üye tamsayısı** üzerinden yapılır. 'Toplantıya katılanlar' esas alınmaz.\n- Soruşturma açılan Cumhurbaşkanı için metindeki yasak **seçim kararı alamamaktır**. Kararname çıkarma gibi diğer yetkileri için metinde bir yasak yok.\n- Yüce Divana sevk görevi bitirmez. Görevi bitiren, Yüce Divanda **seçilmeye engel bir suçtan mahkûmiyettir**.\n- Görev bittikten sonra genel hükümlere dönülmez. Görevdeyken işlendiği iddia edilen suçlar için **bu madde** uygulanmaya devam eder.",
+      "articleRefs": [
+        "105"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        {
+          "value": 0.75,
+          "label": "dörtte üç"
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yardımcılar, vekâlet, boşalma ve bakanlar",
+      "body": "**Yardımcı atama:** Cumhurbaşkanı, seçildikten sonra **bir veya daha fazla** Cumhurbaşkanı yardımcısı atayabilir.\n\n**Makam herhangi bir nedenle boşalırsa:**\n- **kırkbeş gün** içinde Cumhurbaşkanı seçimi yapılır. Yenisi seçilene kadar **Cumhurbaşkanı yardımcısı** vekâlet eder ve Cumhurbaşkanına ait yetkileri kullanır.\n- Genel seçime **bir yıl veya daha az** kalmışsa TBMM seçimi de Cumhurbaşkanı seçimiyle birlikte yenilenir.\n- Genel seçime **bir yıldan fazla** kalmışsa, seçilen Cumhurbaşkanı TBMM seçim tarihine kadar görevine devam eder. Kalan süreyi tamamlayan Cumhurbaşkanı için bu süre **dönemden sayılmaz**. TBMM genel seçimlerinin tarihinde her iki seçim birlikte yapılır.\n\n**Geçici ayrılma (hastalık, yurt dışına çıkma gibi):** Cumhurbaşkanı yardımcısı vekâlet eder ve Cumhurbaşkanına ait yetkileri kullanır.\n\n**Yardımcılar ve bakanlar:**\n- milletvekili seçilme yeterliliğine sahip olanlar arasından Cumhurbaşkanınca atanır ve görevden alınır,\n- md 81'de yazılı şekilde TBMM önünde andiçer,\n- TBMM üyesi atanırsa **üyeliği sona erer**,\n- **Cumhurbaşkanına karşı** sorumludur.\n\n**Bakanlıklar:** Kurulması, kaldırılması, görev ve yetkileri, teşkilat yapısı ile merkez ve taşra teşkilatlarının kurulması Cumhurbaşkanlığı kararnamesiyle düzenlenir.",
+      "articleRefs": [
+        "106"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Yardımcı ve bakan sorularında tuzaklar",
+      "body": "- Bakanlar ve yardımcılar **Cumhurbaşkanına** karşı sorumludur. 'TBMM'ye karşı sorumludur' şıkkı yanlıştır. Güvenoyunu düzenleyen md 110 mülgadır.\n- Yasama dokunulmazlığına ilişkin hükümlerden **görevleriyle ilgili olmayan** suçlarda yararlanırlar. 'Görevleriyle ilgili suçlarda' diyen şık bunun tersidir.\n- Soruşturma önergesi **üye tamsayısının salt çoğunluğu** ile verilir. 'Onda biri' şıkkı yanlıştır.\n- Soruşturma açma kararı **gizli oyla** alınır. 'Açık oy' şıkkı yanlıştır.\n- Makam boşalınca seçim **kırkbeş gün** içinde yapılır. 'Altmış gün' şıkkına kanma.\n- Yardımcı sayısı için metinde üst sınır yok; metin 'bir veya daha fazla' der.\n- Vekâlet, hem boşalmada hem geçici ayrılmada **Cumhurbaşkanı yardımcısının**dır. TBMM Başkanı ya da bir bakan vekâlet etmez.\n- Yardımcı ve bakanlar için aranan şart milletvekili *seçilme yeterliliğidir*, milletvekilliği değil. Zaten bu göreve atanan milletvekilinin üyeliği sona erer.",
+      "articleRefs": [
+        "106",
+        "110"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": [
+        {
+          "value": 60,
+          "label": "altmış gün"
+        },
+        {
+          "value": 0.1,
+          "label": "onda bir"
+        }
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Meclis soruşturması: oylar ve süreler",
+      "rows": [
+        {
+          "label": "Soruşturma önergesi (Cumhurbaşkanı, yardımcı, bakan)",
+          "value": "Üye tamsayısının salt çoğunluğu — 301",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Önergenin görüşülmesi",
+          "value": "En geç bir ay içinde",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Soruşturma açma kararı",
+          "value": "Üye tamsayısının beşte üçü, gizli oy — 360",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Soruşturma komisyonu",
+          "value": "Onbeş kişi; adaylar, parti payının üç katı",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Komisyon raporu",
+          "value": "İki ay + bir aylık yeni ve kesin süre",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Raporun dağıtımı",
+          "value": "Başkanlığa verilişten itibaren on gün içinde",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Genel Kurulda görüşme",
+          "value": "Dağıtımdan itibaren on gün içinde",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Yüce Divana sevk",
+          "value": "Üye tamsayısının üçte ikisi, gizli oy — 400",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "label": "Yüce Divan yargılaması",
+          "value": "Üç ay + bir defaya mahsus üç aylık ek süre",
+          "refs": [
+            "105",
+            "106"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "105",
+        "106"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "105",
+            "106"
+          ]
+        },
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "105",
+            "106"
+          ]
+        },
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "105",
+            "106"
+          ]
+        }
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Devlet Denetleme Kurulu",
+      "body": "**Amaç:** İdarenin hukuka uygunluğunun, düzenli ve verimli şekilde yürütülmesinin ve geliştirilmesinin sağlanması.\n\n**Bağlılık:** Cumhurbaşkanlığına bağlı olarak kurulmuştur. **Cumhurbaşkanının isteği üzerine** çalışır.\n\n**Ne yapar?** Her türlü idari soruşturma, inceleme, araştırma ve denetleme.\n\n**Nerede yapar?**\n- tüm kamu kurum ve kuruluşlarında ve sermayesinin yarısından fazlasına bu kurum ve kuruluşların katıldığı her türlü kuruluşta,\n- kamu kurumu niteliğindeki meslek kuruluşlarında,\n- her düzeydeki işçi ve işveren meslek kuruluşlarında,\n- kamuya yararlı dernekler ve vakıflarda.\n\n**İstisna:** Yargı organları Kurulun görev alanı dışındadır.\n\n**Başkan ve üyeler:** Cumhurbaşkanınca atanır.\n\n**İşleyiş, üyelerin görev süresi ve diğer özlük işleri:** Cumhurbaşkanlığı kararnamesiyle düzenlenir.",
+      "articleRefs": [
+        "108"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Denetleme Kurulunda tuzaklar",
+      "body": "- Atama makamı **yalnızca Cumhurbaşkanıdır**; hem Başkanı hem üyeleri o atar. TBMM, Adalet Bakanı ve Anayasa Mahkemesi şıkları yanlıştır. 'Başkanı Cumhurbaşkanı atar, üyeleri kendi içinden seçer' gibi bölünmüş şıklar da yanlıştır.\n- Düzenleme aracı kanun, tüzük ya da yönetmelik değildir; **Cumhurbaşkanlığı kararnamesidir**.\n- Görev alanı dışında bırakılan yalnızca **yargı organlarıdır**. Bir mahkeme sorulursa Kurul denetleyemez. Askeri ya da idari bir kurum sorulursa metinde böyle bir istisna yok.\n- Yetki listesi idari soruşturma, inceleme, araştırma ve denetlemeden oluşur. 'Görevden uzaklaştırma' bu listede yok.\n- Kurul kendi başına değil, Cumhurbaşkanının **isteği üzerine** iş yapar.",
+      "articleRefs": [
+        "108"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Seçimlerin yenilenmesi",
+      "body": "**Meclis kararıyla:** TBMM, **üye tamsayısının beşte üç** çoğunluğuyla seçimlerin yenilenmesine karar verebilir. Bu hâlde TBMM genel seçimi ile Cumhurbaşkanlığı seçimi **birlikte** yapılır.\n\n**Cumhurbaşkanı kararıyla:** Cumhurbaşkanı da seçimlerin yenilenmesine karar verebilir. Bu hâlde de TBMM genel seçimi ile Cumhurbaşkanlığı seçimi birlikte yapılır.\n\n**İkinci dönem kuralı:** Cumhurbaşkanının ikinci döneminde **Meclis** seçimlerin yenilenmesine karar verirse Cumhurbaşkanı **bir defa daha** aday olabilir.\n\n**Geçiş:** Seçimlerinin yenilenmesine karar verilen Meclisin ve Cumhurbaşkanının yetki ve görevleri, yeni Meclisin ve Cumhurbaşkanının göreve başlamasına kadar devam eder.\n\n**Süre:** Bu şekilde seçilen Meclisin ve Cumhurbaşkanının görev süreleri de **beş yıldır**.\n\nMetinde yenileme kararı için bir sebep ya da koşul aranmaz.",
+      "articleRefs": [
+        "116"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Yenileme kararında tuzaklar",
+      "body": "- Çoğunluk **üye tamsayısının beşte üçüdür**, yani 360. Oturuma kaç milletvekili katılmış olursa olsun cevap değişmez. Salt çoğunluk (301) ya da üçte iki (400) şıklarına kanma.\n- Kararı kim verirse versin, **TBMM ve Cumhurbaşkanlığı seçimi birlikte** yapılır. 'Meclis karar verirse Cumhurbaşkanlığı seçimi zorunlu değil' şıkkı yanlıştır.\n- Metinde bir sebep şartı yok. Üyeliklerdeki boşalma, bütçenin reddi ya da bir ilin temsilcisiz kalması yenileme sebebi olarak sayılmamış. Ne Meclisin ne Cumhurbaşkanının kararı bir koşula bağlanmış.\n- İkinci dönemdeki Cumhurbaşkanına yeniden adaylık imkânı yalnızca **Meclis** yenileme kararı verdiğinde tanınır. Kararı Cumhurbaşkanı kendisi verirse bu istisna işlemez ve en fazla iki defa kuralı (md 101) geçerli kalır.\n- Makamın boşalması 'seçimlerin yenilenmesi' değildir. Boşalmada seçimlerin birlikte yapılıp yapılmayacağı, genel seçime kalan süreye bağlıdır (md 106).",
+      "articleRefs": [
+        "101",
+        "106",
+        "116"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "116"
+          ]
+        }
+      ],
+      "counterNumbers": [
+        {
+          "value": 301,
+          "label": "salt çoğunluk"
+        },
+        {
+          "value": 400,
+          "label": "üçte iki"
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkomutanlık ve Millî Güvenlik Kurulu",
+      "body": "**Başkomutanlık** Türkiye Büyük Millet Meclisinin manevi varlığından ayrılamaz ve **Cumhurbaşkanı** tarafından temsil olunur.\n\nMilli güvenliğin sağlanmasından ve Silahlı Kuvvetlerin yurt savunmasına hazırlanmasından **TBMM'ye karşı Cumhurbaşkanı** sorumludur.\n\n**Genelkurmay Başkanı:** Cumhurbaşkanınca atanır ve Silahlı Kuvvetlerin komutanıdır. Savaşta Başkomutanlık görevlerini Cumhurbaşkanlığı namına yerine getirir.\n\n**Millî Güvenlik Kurulu üyeleri (Cumhurbaşkanının başkanlığında):**\n- Cumhurbaşkanı yardımcıları,\n- Adalet, Millî Savunma, İçişleri ve Dışişleri Bakanları,\n- Genelkurmay Başkanı,\n- Kara, Deniz ve Hava Kuvvetleri komutanları.\n\nGündemin özelliğine göre ilgili bakan ve kişiler toplantılara çağrılıp görüşleri alınabilir.\n\n**İşleyiş:**\n- Kurul, tavsiye kararlarını ve koordinasyon konusundaki görüşlerini **Cumhurbaşkanına bildirir**. Alınmasını zorunlu gördüğü tedbirlere ait kararlar **Cumhurbaşkanınca değerlendirilir**.\n- Gündem, Cumhurbaşkanı yardımcılarının ve Genelkurmay Başkanının önerileri dikkate alınarak **Cumhurbaşkanınca** düzenlenir.\n- Cumhurbaşkanı katılamazsa Kurul **Cumhurbaşkanı yardımcısının** başkanlığında toplanır.\n- Genel Sekreterliğin teşkilatı ve görevleri Cumhurbaşkanlığı kararnamesiyle düzenlenir.",
+      "articleRefs": [
+        "117",
+        "118"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Millî Güvenlik Kurulunda tuzaklar",
+      "body": "- Üye listesinde **Jandarma Genel Komutanı, Millî Güvenlik Kurulu Genel Sekreteri ve Cumhurbaşkanı Genel Sekreteri yok**. Cumhurbaşkanı Genel Sekreterliğini düzenleyen md 107 zaten mülgadır.\n- Kadrolu bakan sayısı dörttür: Adalet, Millî Savunma, İçişleri ve Dışişleri. Gündem gereği çağrılan bakanlar da toplantıya katılır. 'Toplantıya kaç bakan katıldı?' sorusunda dördün üstüne çağrılanları ekle.\n- Gündemi Genelkurmay Başkanı ya da Genel Sekreter değil, **Cumhurbaşkanı** düzenler. Yardımcıların ve Genelkurmay Başkanının yalnızca önerileri dikkate alınır.\n- Cumhurbaşkanının katılamadığı toplantıda başkan **Cumhurbaşkanı yardımcısıdır**; TBMM Başkanı ya da Millî Savunma Bakanı değildir.\n- Kurul görüş ve tavsiye bildirir; bunları değerlendiren **Cumhurbaşkanıdır**. Metinde Kurula savaş ilanı gibi bir karar yetkisi verilmemiş.\n- 'Başkomutanlık Cumhurbaşkanlığının manevi varlığından ayrılmaz' şıkkı yanlıştır. Başkomutanlığın ayrılamadığı yer **TBMM'nin** manevi varlığıdır (md 117).",
+      "articleRefs": [
+        "107",
+        "117",
+        "118"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "count([Adalet, Millî Savunma, İçişleri, Dışişleri])",
+          "refs": [
+            "118"
+          ]
+        }
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Olağanüstü hal",
+      "body": "**Kim ilan eder?** Cumhurbaşkanı.\n\n**Sebepler:**\n- savaş, savaşı gerektirecek bir durumun başgöstermesi, seferberlik,\n- ayaklanma, vatan veya Cumhuriyete karşı kuvvetli ve eylemli bir kalkışma,\n- ülkenin ve milletin bölünmezliğini içten veya dıştan tehlikeye düşüren şiddet hareketlerinin yaygınlaşması,\n- anayasal düzeni veya temel hak ve hürriyetleri ortadan kaldırmaya yönelik yaygın şiddet hareketlerinin ortaya çıkması,\n- şiddet olayları nedeniyle kamu düzeninin ciddî şekilde bozulması,\n- tabiî afet, tehlikeli salgın hastalık ya da ağır ekonomik bunalımın ortaya çıkması.\n\n**Kapsam ve süre:** Yurdun tamamında veya bir bölgesinde, **altı ayı geçmemek** üzere ilan edilir.\n\n**Usul:**\n1. İlan kararı **verildiği gün** Resmî Gazetede yayımlanır ve **aynı gün** TBMM onayına sunulur.\n2. Meclis tatildeyse derhal toplantıya çağrılır. Meclis gerekli görürse süreyi kısaltabilir, uzatabilir veya olağanüstü hali kaldırabilir.\n3. **Cumhurbaşkanının talebiyle** TBMM süreyi her defasında **dört ayı** geçmemek üzere uzatabilir. **Savaş hallerinde** bu dört aylık süre aranmaz.\n\n**Kanunla düzenlenenler:** Vatandaşlar için getirilecek para, mal ve çalışma yükümlülükleri; md 15'teki ilkeler doğrultusunda temel hak ve hürriyetlerin nasıl sınırlanacağı veya geçici olarak durdurulacağı; hangi hükümlerin uygulanacağı ve işlemlerin nasıl yürütüleceği.\n\n**Kararname:** Cumhurbaşkanı, olağanüstü halin gerekli kıldığı konularda, md 104'ün onyedinci fıkrasının ikinci cümlesindeki sınırlamalara tabi olmaksızın Cumhurbaşkanlığı kararnamesi çıkarabilir. Bu kararnameler **kanun hükmündedir**. Resmî Gazetede yayımlanır ve **aynı gün** Meclis onayına sunulur. Savaş ve mücbir sebeplerle Meclisin toplanamaması hâli hariç, bu kararnameler **üç ay** içinde Mecliste görüşülüp karara bağlanır. Aksi halde **kendiliğinden yürürlükten kalkar**.",
+      "articleRefs": [
+        "104",
+        "119"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Olağanüstü halde tuzaklar",
+      "body": "- **Altı ay ve dört ay:** İlan en çok altı ay için yapılır. Meclisin her uzatması en çok dört aydır. Bu iki sürenin yerini değiştiren şıklar klasik tuzaktır.\n- Uzatmayı **talep eden Cumhurbaşkanı**, uzatmaya **karar veren TBMM'dir**. Sırayı ters veren şık yanlıştır.\n- Dört aylık sınır yalnızca **savaş hallerinde** aranmaz. Seferberlikte, ayaklanmada, salgında ya da ekonomik bunalımda bu sınır aranır.\n- Metinde Millî Güvenlik Kurulunun görüşünü alma şartı yok. İlan yetkisi doğrudan Cumhurbaşkanına aittir.\n- Hem ilan kararı hem kararname **aynı gün** Meclis onayına sunulur. 'Ertesi gün' ya da gün sayısı veren şıklar yanlıştır.\n- **Üç ay**, olağanüstü hal kararnamesinin Mecliste karara bağlanma süresidir. İlan kararının yayım süresi değildir.\n- Cumhurbaşkanlığı makamının boşalması olağanüstü hal sebepleri arasında sayılmamıştır.\n- Cumhurbaşkanının ilan edebileceği hâl olağanüstü haldir. Sıkıyönetim, seferberlik ve savaş halini düzenleyen md 122 mülgadır. Savaş ve seferberlik, olağanüstü hal sebebi olarak karşına çıkar.\n- Olağanüstü hal kararnamesi, md 104'teki temel hak, kişi hakları ve siyasi haklar yasağına tabi değildir. Meclis onayına sunulması ise zorunludur.",
+      "articleRefs": [
+        "104",
+        "119",
+        "122"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin sayı ve süreleri",
+      "rows": [
+        {
+          "label": "Cumhurbaşkanı adaylığında yaş",
+          "value": "Kırk yaşını doldurmuş olmak",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanının görev süresi",
+          "value": "Beş yıl",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Seçilme sınırı",
+          "value": "En fazla iki defa",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Aday gösterme eşiği (partiler)",
+          "value": "Geçerli oyların tek başına veya birlikte en az yüzde beşi",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Aday gösterme (seçmenler)",
+          "value": "En az yüzbin seçmen",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "İkinci oylama",
+          "value": "İlk oylamayı izleyen ikinci pazar",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "Makam boşalınca seçim",
+          "value": "Kırkbeş gün içinde",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "TBMM seçiminin de birlikte yapılması",
+          "value": "Genel seçime bir yıl veya daha az kalmışsa",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "Seçimlerin yenilenmesi (TBMM kararı)",
+          "value": "Üye tamsayısının beşte üçü — 360",
+          "refs": [
+            "116"
+          ]
+        },
+        {
+          "label": "Yenilenen Meclis ve Cumhurbaşkanının görev süresi",
+          "value": "Beş yıl",
+          "refs": [
+            "116"
+          ]
+        },
+        {
+          "label": "Millî Güvenlik Kurulunun kadrolu bakan üyeleri",
+          "value": "Dört",
+          "refs": [
+            "118"
+          ]
+        },
+        {
+          "label": "Olağanüstü hal ilanı",
+          "value": "En çok altı ay",
+          "refs": [
+            "119"
+          ]
+        },
+        {
+          "label": "Olağanüstü halin uzatılması",
+          "value": "Her defasında en çok dört ay; savaş hallerinde aranmaz",
+          "refs": [
+            "119"
+          ]
+        },
+        {
+          "label": "İlan kararının yayımı ve onaya sunulması",
+          "value": "Verildiği gün yayım, aynı gün Meclis onayına",
+          "refs": [
+            "119"
+          ]
+        },
+        {
+          "label": "Olağanüstü hal kararnamesinin karara bağlanması",
+          "value": "Üç ay içinde; aksi halde kendiliğinden yürürlükten kalkar",
+          "refs": [
+            "119"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "101",
+        "106",
+        "116",
+        "118",
+        "119"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "116"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count([Adalet, Millî Savunma, İçişleri, Dışişleri])",
+          "refs": [
+            "118"
+          ]
+        }
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Olağan kararname ↔ olağanüstü hal kararnamesi",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Yürütme yetkisine ilişkin konular",
+          "right": "Olağanüstü halin gerekli kıldığı konular",
+          "refs": [
+            "104",
+            "119"
+          ]
+        },
+        {
+          "aspect": "Temel haklar, kişi hakları, siyasi haklar",
+          "left": "Kararnameyle düzenlenemez",
+          "right": "md 104'ün onyedinci fıkrasının ikinci cümlesindeki sınırlamalara tabi değildir",
+          "refs": [
+            "104",
+            "119"
+          ]
+        },
+        {
+          "aspect": "Kanunla ilişkisi",
+          "left": "Farklı hüküm varsa kanun uygulanır; aynı konuda kanun çıkarsa kararname hükümsüz olur",
+          "right": "Kanun hükmündedir",
+          "refs": [
+            "104",
+            "119"
+          ]
+        },
+        {
+          "aspect": "Yayım",
+          "left": "Sonraki bir tarih belirlenmemişse Resmî Gazetede yayımlandığı gün yürürlüğe girer",
+          "right": "Resmî Gazetede yayımlanır",
+          "refs": [
+            "104",
+            "119"
+          ]
+        },
+        {
+          "aspect": "Meclis onayı",
+          "left": "Metinde öngörülmemiş",
+          "right": "Yayımlandığı gün Meclis onayına sunulur",
+          "refs": [
+            "104",
+            "119"
+          ]
+        },
+        {
+          "aspect": "Mecliste karara bağlanma",
+          "left": "Metinde bir süre yok",
+          "right": "Üç ay içinde; aksi halde kendiliğinden yürürlükten kalkar (savaş ve mücbir sebeplerle Meclisin toplanamaması hariç)",
+          "refs": [
+            "119"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "104",
+        "119"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "compare",
+      "title": "Cumhurbaşkanı ↔ yardımcı ve bakanlar: cezai sorumluluk",
+      "rows": [
+        {
+          "aspect": "Hangi suçlar",
+          "left": "Bir suç işlediği iddiası",
+          "right": "Görevleriyle ilgili suç işledikleri iddiası",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Soruşturma önergesi",
+          "left": "Üye tamsayısının salt çoğunluğu",
+          "right": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Soruşturma açma kararı",
+          "left": "En geç bir ay içinde görüşme; beşte üç, gizli oy",
+          "right": "En geç bir ay içinde görüşme; beşte üç, gizli oy",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Komisyon ve rapor",
+          "left": "Onbeş kişilik komisyon; iki ay + bir aylık kesin süre; on gün dağıtım, on gün görüşme",
+          "right": "Onbeş kişilik komisyon; iki ay + bir aylık kesin süre; on gün dağıtım, on gün görüşme",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Yüce Divana sevk",
+          "left": "Üçte iki, gizli oy",
+          "right": "Üçte iki, gizli oy",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Yüce Divan yargılaması",
+          "left": "Üç ay + bir defaya mahsus üç ay",
+          "right": "Üç ay + bir defaya mahsus üç ay",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Soruşturma açılınca",
+          "left": "Seçim kararı alamaz",
+          "right": "Metinde böyle bir yasak yok",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Görevin sona ermesi",
+          "left": "Yüce Divanda seçilmeye engel bir suçtan mahkûmiyet",
+          "right": "Yüce Divanda seçilmeye engel bir suçtan mahkûmiyet",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Görev bittikten sonra",
+          "left": "Görevdeyken işlendiği iddia edilen suçlara bu madde uygulanır",
+          "right": "Görevdeyken görevleriyle ilgili işlendiği iddia edilen suçlara aynı hükümler uygulanır",
+          "refs": [
+            "105",
+            "106"
+          ]
+        },
+        {
+          "aspect": "Görevle ilgili olmayan suçlar",
+          "left": "Metin ayrım yapmaz; 'bir suç' der",
+          "right": "Yasama dokunulmazlığına ilişkin hükümlerden yararlanırlar",
+          "refs": [
+            "105",
+            "106"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "105",
+        "106"
+      ],
+      "derivedNumbers": [],
+      "counterNumbers": []
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "119",
+          "refs": [
+            "101",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "110",
+            "116",
+            "117",
+            "118",
+            "119",
+            "122"
+          ]
+        },
+        {
+          "label": "md 106 — Cumhurbaşkanı yardımcıları, Cumhurbaşkanına vekâlet ve bakanlar",
+          "value": "25 soru",
+          "refs": [
+            "106"
+          ]
+        },
+        {
+          "label": "md 104 — Görev ve yetkileri",
+          "value": "17 soru",
+          "refs": [
+            "104"
+          ]
+        },
+        {
+          "label": "md 101 — Adaylık ve seçimi",
+          "value": "15 soru",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "md 119 — (…)",
+          "value": "14 soru",
+          "refs": [
+            "119"
+          ]
+        },
+        {
+          "label": "md 105 — Cumhurbaşkanının cezai sorumluluğu",
+          "value": "12 soru",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "101",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "110",
+            "116",
+            "117",
+            "118",
+            "119",
+            "122"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 103, md 107, md 110, md 122",
+          "refs": [
+            "101",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "110",
+            "116",
+            "117",
+            "118",
+            "119",
+            "122"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "101",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "110",
+        "116",
+        "117",
+        "118",
+        "119",
+        "122"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "101",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "110",
+        "116",
+        "117",
+        "118",
+        "119",
+        "122"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 101–122, 10 soru",
+          "refs": [
+            "101",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "110",
+            "116",
+            "117",
+            "118",
+            "119",
+            "122"
+          ]
+        }
+      ]
+    }
+  ]
+}
