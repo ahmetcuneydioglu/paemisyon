@@ -1,11 +1,10 @@
 import { useRouter } from "expo-router";
-import { useEffect, useState } from "react";
-import { Alert, Linking, Switch, View } from "react-native";
-import { pushPermissionStatus, requestPushPermission } from "@/lib/push";
-import { readReminderPrefs, setReminder, type ReminderPrefs } from "@/lib/reminders";
+import { useState } from "react";
+import { Alert, Linking, View } from "react-native";
 import { AppText, Button, Card, Chip, ListRow, Notice, Screen, SectionHeader, Sheet, Skeleton, TextField } from "@/components/ui";
 import { useModules } from "@/features/catalog/queries";
 import { useDeleteMe, useMeFull, useUpdateMe, type MeFull } from "@/features/me/queries";
+import { NotificationPreferences } from "@/features/notifications/preferences";
 import { useAuth } from "@/lib/auth/AuthProvider";
 import { supabase } from "@/lib/supabase";
 import { useTheme, type ThemePreference } from "@/theme/ThemeProvider";
@@ -14,8 +13,8 @@ const GOALS = [10, 20, 30, 40, 60, 100];
 
 /**
  * Ayarlar (Doc 25 Bölge 5): ad, hedef sınav, sınav tarihi, günlük hedef (PATCH /me); görünüm
- * (cihaz); şifre (Supabase); yasal bağlantılar; çıkış; hesap silme ("SİL" yazarak, KVKK
- * anonimleştirme sunucuda). Bildirim saati ve vardiya düzeni F5/V2.
+ * (cihaz); bildirim tercihleri (sunucu, Doc 52); şifre (Supabase); yasal bağlantılar; çıkış;
+ * hesap silme ("SİL" yazarak, KVKK anonimleştirme sunucuda).
  */
 export default function AyarlarScreen() {
   const me = useMeFull();
@@ -56,26 +55,6 @@ function AyarlarForm({ d }: { d: MeFull }) {
   const [pwError, setPwError] = useState<string | null>(null);
   const [delOpen, setDelOpen] = useState(false);
   const [delText, setDelText] = useState("");
-  const [reminder, setReminderState] = useState<ReminderPrefs | null>(null);
-  const [pushStatus, setPushStatus] = useState<"granted" | "denied" | "undetermined" | null>(null);
-  useEffect(() => {
-    void readReminderPrefs().then(setReminderState);
-    void pushPermissionStatus().then(setPushStatus);
-  }, []);
-  const toggleReminder = async (on: boolean) => {
-    const next = { ...(reminder ?? { hour: 19, minute: 0, enabled: false }), enabled: on };
-    setReminderState(next);
-    const ok = await setReminder(next);
-    if (!ok) {
-      setReminderState({ ...next, enabled: false });
-      Alert.alert("Bildirim izni yok", "Hatırlatma için Ayarlar › Bildirimler'den izin ver.", [{ text: "Tamam" }, { text: "Ayarları aç", onPress: () => void Linking.openSettings() }]);
-    }
-  };
-  const setHour = async (hour: number) => {
-    const next = { ...(reminder ?? { enabled: true, minute: 0, hour }), hour };
-    setReminderState(next);
-    if (next.enabled) await setReminder(next);
-  };
 
   const iso = trToIso(date);
   const dateInvalid = date.trim() !== "" && !iso;
@@ -173,34 +152,7 @@ function AyarlarForm({ d }: { d: MeFull }) {
               </Card>
             </View>
 
-            <View style={{ gap: space.s2 }}>
-              <SectionHeader title="Bildirimler" />
-              <Card>
-                <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3 }}>
-                  <View style={{ flex: 1, gap: 2 }}>
-                    <AppText variant="subhead">Günlük hatırlatma</AppText>
-                    <AppText variant="bodySm" tone="soft">
-                      Günün sorusuyla kısa bir dürtme; saati sen seç.
-                    </AppText>
-                  </View>
-                  <Switch accessibilityLabel="Günlük hatırlatma" value={reminder?.enabled ?? false} onValueChange={(v) => void toggleReminder(v)} />
-                </View>
-                {reminder?.enabled ? (
-                  <View style={{ flexDirection: "row", flexWrap: "wrap", gap: space.s2 }}>
-                    {[7, 12, 19, 21, 23].map((h) => (
-                      <Chip key={h} label={`${String(h).padStart(2, "0")}:00`} selected={reminder.hour === h} onPress={() => void setHour(h)} />
-                    ))}
-                  </View>
-                ) : null}
-                <ListRow
-                  title="Koç bildirimleri"
-                  subtitle={pushStatus === "granted" ? "Açık: canlı deneme duyuruları ve sıralama" : pushStatus === "denied" ? "Kapalı; cihaz ayarlarından aç" : "Canlı deneme duyurusu ve sıralama dürtmesi"}
-                  divider={false}
-                  chevron={pushStatus !== "granted"}
-                  onPress={pushStatus === "granted" ? undefined : pushStatus === "denied" ? () => void Linking.openSettings() : () => void requestPushPermission().then((ok) => setPushStatus(ok ? "granted" : "denied"))}
-                />
-              </Card>
-            </View>
+            <NotificationPreferences />
 
             <View style={{ gap: space.s2 }}>
               <SectionHeader title="Hesap" />

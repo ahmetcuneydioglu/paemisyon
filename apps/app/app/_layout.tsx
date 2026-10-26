@@ -114,6 +114,7 @@ function RootNavigator() {
         <Stack.Screen name="paywall" options={{ presentation: "modal" }} />
         <Stack.Screen name="planim" options={{ headerShown: true, title: "Planım" }} />
         <Stack.Screen name="deneme-sonuc" options={{ headerShown: false }} />
+        <Stack.Screen name="bildirimler" options={{ headerShown: true, title: "Bildirimler" }} />
       </Stack>
     </View>
   );

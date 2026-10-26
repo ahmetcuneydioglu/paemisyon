@@ -2,7 +2,8 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard } from "@/components/domain";
+import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
   ActionBar,
@@ -11,7 +12,9 @@ import {
   Button,
   Card,
   Chip,
+  CountBadge,
   EmptyState,
+  IconBadgeButton,
   IconButton,
   ListRow,
   Notice,
@@ -47,6 +50,31 @@ const paylasimOrnegi: ShareCardData = {
   answer: { correctLabel: "C", explanation: "Durdurma için makul bir sebep gerekir.", basis: "2559 sayılı PVSK md. 4/A" },
   url: "https://paemisyon.com/s/ornek",
 };
+
+// Galeri örnekleri modül yüklenirken bir kez kurulur (render saf kalır).
+const GALERI_ANI = Date.now();
+const bildirimOrnegi = (over: Partial<InboxItem>): InboxItem => ({
+  id: "00000000-0000-0000-0000-000000000001",
+  category: "exam",
+  priority: "normal",
+  title: "Sonucun açıklandı",
+  body: "14. Haftalık Deneme: 68 net. Soru bazlı incelemeye geç.",
+  imageUrl: null,
+  ctaLabel: "Sonucu gör",
+  route: "denemeler",
+  webPath: "/denemeler",
+  data: null,
+  readAt: null,
+  openedAt: null,
+  scheduledAt: new Date(GALERI_ANI - 12 * 60_000).toISOString(),
+  createdAt: new Date(GALERI_ANI).toISOString(),
+  ...over,
+});
+const bildirimOrnekleri = [
+  bildirimOrnegi({}),
+  bildirimOrnegi({ id: "00000000-0000-0000-0000-000000000002", category: "daily_question", title: "Günün sorusu hazır", body: "PVSK md. 4/A: durdurma şartları. 60 saniye.", ctaLabel: null, readAt: new Date(GALERI_ANI).toISOString(), scheduledAt: new Date(GALERI_ANI - 30 * 3_600_000).toISOString() }),
+  bildirimOrnegi({ id: "00000000-0000-0000-0000-000000000003", category: "new_content", title: "Yeni kanun metni", body: "7593 sayılı Kanun bankaya işlendi.", ctaLabel: null, data: { minAppVersion: "9.9.0" } }),
+];
 
 const seansAraclari = [
   { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
@@ -160,6 +188,18 @@ export default function GaleriScreen() {
             <ListRow title="Favoriler" subtitle="12 soru" onPress={() => {}} />
             <ListRow title="Bildirimler" leading={<Bell color={colors.ink} size={20} strokeWidth={1.75} />} trailing={<Badge>Açık</Badge>} divider={false} />
           </Card>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3 }}>
+            <IconBadgeButton icon={Bell} label="Bildirimler" count={3} onPress={() => {}} />
+            <IconBadgeButton icon={Bell} label="Bildirimler" count={120} onPress={() => {}} />
+            <IconBadgeButton icon={Bell} label="Bildirimler" count={0} onPress={() => {}} />
+            <CountBadge count={7} />
+            <CountBadge count={7} tone="danger" />
+          </View>
+          <View style={{ gap: space.s2 }}>
+            {bildirimOrnekleri.map((it, i) => (
+              <NotificationRow key={it.id} item={it} onPress={() => {}} needsUpdate={i === 2} />
+            ))}
+          </View>
           <Card style={{ paddingVertical: 0 }}>
             <LegislationRow law="CMK" article="91" title="Gözaltı" meta="Kaldığın yer · 2 dk önce" onPress={() => {}} />
             <LegislationRow law="TCK" article="53" title="Belli hakları kullanmaktan yoksun bırakılma" meta="Doğrulandı: 24 Eyl 2026" onPress={() => {}} />

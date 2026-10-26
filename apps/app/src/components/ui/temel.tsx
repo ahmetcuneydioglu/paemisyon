@@ -82,11 +82,12 @@ export function Button({
   title,
   variant = "primary",
   loading = false,
+  size = "md",
   disabled,
   onPress,
   style,
   ...props
-}: { title: string; variant?: ButtonVariant; loading?: boolean; style?: StyleProp<ViewStyle> } & Omit<PressableProps, "style" | "children">) {
+}: { title: string; variant?: ButtonVariant; loading?: boolean; /** `sm`: satır içi ikincil eylem (44 pt), birincil eylemde kullanılmaz. */ size?: "md" | "sm"; style?: StyleProp<ViewStyle> } & Omit<PressableProps, "style" | "children">) {
   const { colors, radius, type } = useTheme();
   const bg = variant === "primary" ? colors.accent : variant === "secondary" ? colors.surface : variant === "destructive" ? colors.danger : "transparent";
   const fg = variant === "primary" ? colors.onAccent : variant === "destructive" ? colors.onAccent : variant === "ghost" ? colors.accentInk : colors.ink;
@@ -102,21 +103,21 @@ export function Button({
       }}
       style={({ pressed }) => [
         {
-          minHeight: 54,
-          borderRadius: radius.card,
+          minHeight: size === "sm" ? 44 : 54,
+          borderRadius: size === "sm" ? radius.control : radius.card,
           backgroundColor: bg,
           borderWidth: variant === "secondary" ? StyleSheet.hairlineWidth : 0,
           borderColor: colors.line,
           alignItems: "center",
           justifyContent: "center",
-          paddingHorizontal: 20,
+          paddingHorizontal: size === "sm" ? 14 : 20,
           opacity: isDisabled ? 0.5 : pressed ? 0.85 : 1,
         },
         style,
       ]}
       {...props}
     >
-      {loading ? <ActivityIndicator color={fg} /> : <Text style={[type.subhead, { fontSize: 17, lineHeight: 22, color: fg }]}>{title}</Text>}
+      {loading ? <ActivityIndicator color={fg} /> : <Text style={[type.subhead, size === "sm" ? { color: fg } : { fontSize: 17, lineHeight: 22, color: fg }]}>{title}</Text>}
     </Pressable>
   );
 }

@@ -1,6 +1,6 @@
 import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
-import { ChevronDown } from "lucide-react-native";
+import { Bell, ChevronDown } from "lucide-react-native";
 import { useState } from "react";
 import { Animated, Pressable, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -18,6 +18,7 @@ import {
   Badge,
   Button,
   Card,
+  IconBadgeButton,
   ListRow,
   Notice,
   Skeleton,
@@ -32,6 +33,7 @@ import {
   type WeekDayState,
 } from "@/features/home/queries";
 import { useExams } from "@/features/exams/queries";
+import { useUnreadCount } from "@/features/notifications/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { useNow } from "@/lib/use-now";
 import { flushQueue, usePendingAnswers } from "@/lib/offline-queue";
@@ -78,6 +80,7 @@ export default function BugunScreen() {
   const router = useRouter();
   // Canlı haftalık deneme (Doc 50, 26 Eki): pencere açıkken PAEM sayacının yerine geçer.
   const examsQ = useExams();
+  const unread = useUnreadCount();
   const liveExam = (examsQ.data ?? []).find((e) => e.publishMode === "takvimli" && e.availability === "open") ?? null;
   const liveNow = useNow(1000, Boolean(liveExam));
   const qc = useQueryClient();
@@ -151,16 +154,18 @@ export default function BugunScreen() {
           gap: space.s5,
         }}
       >
-        {/* Üst satır: marka sözcüğü + seri. */}
+        {/* Üst satır: marka sözcüğü + seri + zil (Doc 52 §9; rozet okunmamış sayısı). */}
         <View style={{ gap: space.s1 }}>
           <View
             style={{
               flexDirection: "row",
-              alignItems: "baseline",
+              alignItems: "center",
               justifyContent: "space-between",
+              gap: space.s3,
+              marginVertical: -10,
             }}
           >
-            <AppText variant="brand" accessibilityRole="header">
+            <AppText variant="brand" accessibilityRole="header" style={{ flex: 1 }}>
               paemisyon
             </AppText>
             {streak > 0 ? (
@@ -168,6 +173,13 @@ export default function BugunScreen() {
                 Seri · {streak} gün
               </AppText>
             ) : null}
+            <IconBadgeButton
+              icon={Bell}
+              label="Bildirimler"
+              count={unread.data ?? 0}
+              onPress={() => router.push("/bildirimler")}
+              style={{ marginRight: -10 }}
+            />
           </View>
           <AppText variant="brand" style={serif400}>
             {me.data?.displayName
