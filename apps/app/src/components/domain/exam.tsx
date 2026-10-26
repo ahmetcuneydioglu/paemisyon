@@ -1,4 +1,4 @@
-import { Check, ChevronRight, Flag, Lock, Minus, Timer, Users, X, type LucideIcon } from "lucide-react-native";
+import { Check, ChevronRight, Flag, LayoutGrid, Lock, Minus, Timer, Users, X, type LucideIcon } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
 import Svg, { Circle, Line, Polyline } from "react-native-svg";
@@ -255,11 +255,23 @@ export function ExamTopBar({ title, index, total, timeLabel, warning, onClose, o
   );
 }
 
-/** Deneme alt çubuğu: bayrak (kare) · Önceki · Sonraki. Son soruda "Sonraki" teslim sayfasını açar. */
-export function ExamActionBar({ flagged, onFlag, onPrev, prevDisabled, onNext, nextTitle = "Sonraki", bottomInset }: { flagged: boolean; onFlag: () => void; onPrev: () => void; prevDisabled?: boolean; onNext: () => void; nextTitle?: string; bottomInset: number }) {
+/**
+ * Deneme alt çubuğu: bayrak · soru haritası (1–100) · Önceki · Sonraki. Son soruda "Sonraki"
+ * teslim sayfasını açar. Harita düğmesi kullanıcı isteğiyle eklendi (26 Eki): üst sayaca dokunma
+ * yeterince keşfedilebilir değildi.
+ */
+export function ExamActionBar({ flagged, onFlag, onGrid, onPrev, prevDisabled, onNext, nextTitle = "Sonraki", bottomInset }: { flagged: boolean; onFlag: () => void; onGrid: () => void; onPrev: () => void; prevDisabled?: boolean; onNext: () => void; nextTitle?: string; bottomInset: number }) {
   const { colors, radius, space } = useTheme();
   return (
-    <View style={{ flexDirection: "row", alignItems: "center", gap: space.s3, paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: bottomInset + space.s3, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line, backgroundColor: colors.bg }}>
+    <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, paddingHorizontal: space.screenGutter, paddingTop: space.s3, paddingBottom: bottomInset + space.s3, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.line, backgroundColor: colors.bg }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Soru haritası"
+        onPress={onGrid}
+        style={({ pressed }) => ({ width: 52, height: 52, borderRadius: radius.control, borderWidth: 1, borderColor: colors.line, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center", opacity: pressed ? 0.7 : 1 })}
+      >
+        <LayoutGrid color={colors.ink} size={20} strokeWidth={1.75} />
+      </Pressable>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={flagged ? "Bayrağı kaldır" : "Soruyu işaretle"}
@@ -269,8 +281,8 @@ export function ExamActionBar({ flagged, onFlag, onPrev, prevDisabled, onNext, n
       >
         <Flag color={flagged ? colors.accentInk : colors.ink} size={20} strokeWidth={1.75} fill={flagged ? colors.accent : "transparent"} />
       </Pressable>
-      <Button title="Önceki" variant="ghost" onPress={onPrev} disabled={prevDisabled} style={{ flex: 1 }} />
-      <Button title={nextTitle} onPress={onNext} style={{ flex: 1.4 }} />
+      <Button title="Önceki" variant="ghost" onPress={onPrev} disabled={prevDisabled} style={{ flex: 1, minWidth: 0 }} />
+      <Button title={nextTitle} onPress={onNext} style={{ flex: 1.3, minWidth: 0 }} />
     </View>
   );
 }

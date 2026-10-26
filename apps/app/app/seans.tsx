@@ -592,6 +592,19 @@ export default function SeansScreen() {
               ))}
             </View>
             {isExam && reveal && feedback ? <ExamFeedbackBox correctLabel={feedback.correctOptionId ? (question.options.find((o) => o.id === feedback.correctOptionId)?.label ?? null) : null} explanation={feedback.explanation} /> : null}
+            {isExam ? (
+              /* Paylaş · Bildir (kullanıcı isteği, 26 Eki): denemede de soru paylaşılır ve bildirilir. */
+              <View style={{ flexDirection: "row", justifyContent: "flex-end", gap: space.s2 }}>
+                <Pressable accessibilityRole="button" accessibilityLabel="Soruyu paylaş" onPress={() => setShareOpen(true)} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
+                  <Share2 color={colors.accentInk} size={16} strokeWidth={1.75} />
+                  <AppText variant="subhead" tone="accentInk">Paylaş</AppText>
+                </Pressable>
+                <Pressable accessibilityRole="button" accessibilityLabel="Soruyu bildir" onPress={() => { setReportState("idle"); setReportOpen(true); }} hitSlop={8} style={{ flexDirection: "row", alignItems: "center", gap: 6, minHeight: 44, paddingHorizontal: space.s2 }}>
+                  <Flag color={colors.accentInk} size={16} strokeWidth={1.75} />
+                  <AppText variant="subhead" tone="accentInk">Bildir</AppText>
+                </Pressable>
+              </View>
+            ) : null}
             {!isExam && feedback ? (
               <FeedbackPanel
                 isCorrect={feedback.isCorrect}
@@ -609,7 +622,7 @@ export default function SeansScreen() {
           </Animated.ScrollView>
 
           {isExam ? (
-            <ExamActionBar bottomInset={insets.bottom} flagged={flags.has(question.questionId)} onFlag={toggleFlag} onPrev={() => go(index - 1)} prevDisabled={index === 0} nextTitle={index >= total - 1 ? "Bitir" : "Sonraki"} onNext={() => (index >= total - 1 ? void finishExam() : go(index + 1))} />
+            <ExamActionBar bottomInset={insets.bottom} flagged={flags.has(question.questionId)} onFlag={toggleFlag} onGrid={() => setGridOpen(true)} onPrev={() => go(index - 1)} prevDisabled={index === 0} nextTitle={index >= total - 1 ? "Bitir" : "Sonraki"} onNext={() => (index >= total - 1 ? void finishExam() : go(index + 1))} />
           ) : current ? (
             <SessionBar variant="after" bottomInset={insets.bottom} onPrev={prev} prevDisabled={index === 0} primaryTitle={index + 1 >= total ? "Turu bitir" : "Sonraki soru"} onPrimary={next} />
           ) : index > 0 ? (
