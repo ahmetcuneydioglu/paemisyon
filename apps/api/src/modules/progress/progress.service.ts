@@ -4,6 +4,7 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak.logic';
 import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
 import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
+import { tallyByUnit, type UnitTally } from '../summaries/unite-eslesme';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
 export type LeaderboardPeriod = 'today' | 'week' | 'month' | 'all';
@@ -71,23 +72,36 @@ export class ProgressService {
       (a) => a.isCorrect != null && a.selectedOptionId != null,
     );
     const byTopic = new Map<string, { solved: number; correct: number }>();
+    // Ünite hâkimiyeti (Doc 53 F5): ünite etikettir — konu + madde aralığı. Konu sayımıyla aynı
+    // cevaplardan, aynı işlemde birikir; yayında ünitesi olmayan konularda sessiz.
+    let byUnit = new Map<string, UnitTally>();
     if (answered.length > 0) {
-      const topicOf = new Map(
-        (
-          await this.prisma.question.findMany({
-            where: { id: { in: answered.map((a) => a.questionId) } },
-            select: { id: true, topicId: true },
-          })
-        ).map((q) => [q.id, q.topicId]),
-      );
+      const sorular = await this.prisma.question.findMany({
+        where: { id: { in: answered.map((a) => a.questionId) } },
+        select: { id: true, topicId: true, articleNo: true },
+      });
+      const soruOf = new Map(sorular.map((q) => [q.id, q]));
       for (const a of answered) {
-        const topicId = topicOf.get(a.questionId);
+        const topicId = soruOf.get(a.questionId)?.topicId;
         if (!topicId) continue;
         const b = byTopic.get(topicId) ?? { solved: 0, correct: 0 };
         b.solved += 1;
         if (a.isCorrect === true) b.correct += 1;
         byTopic.set(topicId, b);
       }
+      const uniteler = await this.prisma.summaryUnit.findMany({
+        where: { topicId: { in: [...byTopic.keys()] }, status: 'published', deletedAt: null },
+        select: { id: true, topicId: true, articleFrom: true, articleTo: true },
+      });
+      byUnit = tallyByUnit(
+        answered
+          .map((a) => {
+            const q = soruOf.get(a.questionId);
+            return q ? { topicId: q.topicId, articleNo: q.articleNo, isCorrect: a.isCorrect === true } : null;
+          })
+          .filter((x): x is NonNullable<typeof x> => x != null),
+        uniteler,
+      );
     }
     const wrongIds = session.answers
       .filter((a) => a.isCorrect === false && a.selectedOptionId != null)
@@ -132,6 +146,29 @@ export class ProgressService {
               WHEN user_topic_progress.solved_count + EXCLUDED.solved_count > 0
               THEN (user_topic_progress.correct_count + EXCLUDED.correct_count)::decimal
                    / (user_topic_progress.solved_count + EXCLUDED.solved_count)
+              ELSE 0 END,
+            last_activity_at = now()`;
+      }
+
+      // Ünite hâkimiyeti — konu upsert'iyle birebir aynı biçim (Doc 53 F5).
+      if (byUnit.size > 0) {
+        const unitIds = [...byUnit.keys()];
+        const uSolved = unitIds.map((u) => byUnit.get(u)!.solved);
+        const uCorrect = unitIds.map((u) => byUnit.get(u)!.correct);
+        await tx.$executeRaw`
+          INSERT INTO user_unit_progress
+            (user_id, unit_id, solved_count, correct_count, mastery, last_activity_at)
+          SELECT ${userId}::uuid, u.t, u.s, u.c,
+                 CASE WHEN u.s > 0 THEN u.c::decimal / u.s ELSE 0 END, now()
+          FROM unnest(${unitIds}::uuid[], ${uSolved}::int[], ${uCorrect}::int[])
+            AS u(t, s, c)
+          ON CONFLICT (user_id, unit_id) DO UPDATE SET
+            solved_count = user_unit_progress.solved_count + EXCLUDED.solved_count,
+            correct_count = user_unit_progress.correct_count + EXCLUDED.correct_count,
+            mastery = CASE
+              WHEN user_unit_progress.solved_count + EXCLUDED.solved_count > 0
+              THEN (user_unit_progress.correct_count + EXCLUDED.correct_count)::decimal
+                   / (user_unit_progress.solved_count + EXCLUDED.solved_count)
               ELSE 0 END,
             last_activity_at = now()`;
       }

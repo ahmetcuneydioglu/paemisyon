@@ -154,7 +154,7 @@ enum SummaryBlockType { concept rule numbers compare trap exam_stats bridge }
 | F2 | **Yazıldı (26 Eki, `02-f2-web.md`), misafir akışı doğrulandı.** Konu odasında özet bölümü, `/ozet/[slug]` okuyucu + SEO, premium kilidi, köprü | Yasama I canlı |
 | F3 | **Yazıldı (26 Eki, `03-f3-expo.md`).** Expo okuyucu, konu odası satırları, madde sheet, köprü, derin bağlantı | TestFlight |
 | F4 | **Üretildi (26 Eki, `04-f4-uretim.md`):** 12 ünite canlıda in_review, 284 kart; panelden inceleme ve yayın bekliyor | Anayasa tam |
-| F5 | **Plan yazıldı (26 Eki, `05-f5-plan.md`), onay bekliyor.** Öneri: ünite alt konu değil ETİKET (madde aralığı × articleNo); `user_unit_progress`, koç reçetesi, oda ve okuyucuda hâkimiyet | Ünite bazlı hâkimiyet |
+| F5 | **Etiket modeli onaylandı (26 Eki); F5-1 yazıldı (şema, kanca, doldurma), deploy bekliyor.** Öneri: ünite alt konu değil ETİKET (madde aralığı × articleNo); `user_unit_progress`, koç reçetesi, oda ve okuyucuda hâkimiyet | Ünite bazlı hâkimiyet |
 
 Her faz gerçek veriyle ve E2E doğrulanır; Figma F1 öncesi (admin editör, mobil okuyucu, web konu sayfası).
 

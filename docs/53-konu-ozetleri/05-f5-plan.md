@@ -118,3 +118,18 @@ Deploy tek kalem: F5-1 ve F5-2 birlikte (şema + API), F5-3 ayrı, F5-4 TestFlig
    özeti bitirince o ünite için tekrar çıkmaz.
 3. Ünite doğruluğu Premium kilitli ünitede gösterilsin mi? Önerim: evet, gösterilir; kilitli olan özetin
    kendisidir, kullanıcının kendi doğruluğu değil.
+
+---
+
+## F5-1 durum (26 Eki 2026) — yazıldı, yerel E2E geçti, deploy bekliyor
+
+| Parça | Dosya | Doğrulama |
+|---|---|---|
+| Şema + migration | `UserUnitProgress`, `20261027200000_unite_hakimiyeti` | Yerel Postgres'te zincir geçti |
+| Saf eşleme | `src/modules/summaries/unite-eslesme.ts` (+ spec, 6 test) | "84/2" → 84, "Ek 1"/"Geçici 2"/"4/A" ünitesiz, konu+aralık, sınırlar dâhil |
+| Kanca | `ProgressService.recordSessionProgress` | Konu upsert'inin yanına ünite upsert'i (aynı işlem, aynı biçim). Yerel: 4 cevap → solved 4 / correct 2 / mastery 0,5; ikinci tur → 5 / 3 / 0,6 |
+| Doldurma | `scripts/unite-ilerleme-doldur.ts [--dry]` | Canlı prova: yayında ünite yokken "yapılacak iş yok" (doğru). Yayın sonrası çalıştırılır |
+
+Sıra: deploy (şema + kanca) → panelden ünite yayını → `unite-ilerleme-doldur.ts` → F5-2 (API: mastery, koç reçetesi).
+Onaylanan üç soru: etiket modeli · reçete günde en çok bir kez ve özet bitince o ünite için tekrar yok ·
+kilitli ünitede kullanıcının kendi doğruluğu görünür.

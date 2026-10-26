@@ -186,6 +186,7 @@ model User {
   articleNotes         ArticleNote[]
   readingProgress      ReadingProgress[]
   summaryProgress      SummaryProgress[]
+  unitProgress         UserUnitProgress[]
   wrongAnswers         WrongAnswer[]
   questionReviews      QuestionReview[]
   questionNotes        QuestionNote[]
@@ -612,8 +613,9 @@ model SummaryUnit {
 
   topic       Topic             @relation(fields: [topicId], references: [id], onDelete: Cascade)
   legislation Legislation       @relation(fields: [legislationId], references: [id], onDelete: Cascade)
-  blocks      SummaryBlock[]
-  progress    SummaryProgress[]
+  blocks       SummaryBlock[]
+  progress     SummaryProgress[]
+  unitProgress UserUnitProgress[]
 
   @@index([topicId, status, sortOrder])
   @@index([legislationId])
@@ -678,6 +680,25 @@ model SummaryProgress {
   @@id([userId, unitId])
   @@index([userId, updatedAt])
   @@map("summary_progress")
+}
+
+/// Kullanıcı × ünite hâkimiyeti (Doc 53 F5) — user_topic_progress'in ünite eşi. Ünite ETİKETTİR:
+/// soru, konusu ve madde numarasıyla ünite aralığına düşer; aynı cevaplardan konu ilerlemesiyle
+/// birlikte birikir (ProgressService). Ünitesiz (maddesiz / aralık dışı) cevap sayılmaz.
+model UserUnitProgress {
+  userId         String   @map("user_id") @db.Uuid
+  unitId         String   @map("unit_id") @db.Uuid
+  solvedCount    Int      @default(0) @map("solved_count")
+  correctCount   Int      @default(0) @map("correct_count")
+  mastery        Decimal  @default(0) @db.Decimal(4, 3)
+  lastActivityAt DateTime @default(now()) @map("last_activity_at")
+
+  user User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit SummaryUnit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@id([userId, unitId])
+  @@index([userId, lastActivityAt])
+  @@map("user_unit_progress")
 }
 
 // Kararlı KİMLİK — içerik burada değil, sürümlerde.
