@@ -19,8 +19,11 @@ export const dynamic = "force-dynamic";
 export default async function BildirimPage({
   searchParams,
 }: {
-  searchParams: Promise<{ git?: string }>;
+  searchParams: Promise<{ git?: string; nid?: string }>;
 }) {
-  const { git } = await searchParams;
-  redirect(bildirimRotasi(git));
+  const { git, nid } = await searchParams;
+  const hedef = bildirimRotasi(git);
+  // Web push tıklaması: kabuk `nid` ile `opened` olayını yazar (Doc 52 §9).
+  const temizNid = typeof nid === "string" && /^[0-9a-f-]{36}$/i.test(nid) ? nid : null;
+  redirect(temizNid ? `${hedef}${hedef.includes("?") ? "&" : "?"}nid=${temizNid}` : hedef);
 }

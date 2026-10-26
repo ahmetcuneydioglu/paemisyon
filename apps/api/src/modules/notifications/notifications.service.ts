@@ -9,6 +9,7 @@ import {
 } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { DecisionService } from './decision.service';
+import { EmailContactsService } from '../email/email-contacts.service';
 import { allowedChannels, ALL_CATEGORIES, CATEGORY_POLICY } from './notification.categories';
 import { NOTIFICATIONS_CONFIG } from './notifications.config';
 import { resolveDeepLink, webPathFromRoute, type DeepLink } from './deep-links';
@@ -69,6 +70,7 @@ export class NotificationsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly decision: DecisionService,
+    private readonly contacts: EmailContactsService,
   ) {}
 
   async enqueue(input: EnqueueInput): Promise<EnqueueResult> {
@@ -399,10 +401,26 @@ export class NotificationsService {
     const categories = Object.fromEntries(
       ALL_CATEGORIES.map((c) => [c, CATEGORY_POLICY[c].optional ? cats[c] !== false : true]),
     );
-    const tokens = await this.prisma.pushToken.findMany({
-      where: { userId, isActive: true },
-      select: { platform: true, lastSeenAt: true },
-    });
+    const [tokens, contact] = await Promise.all([
+      this.prisma.pushToken.findMany({
+        where: { userId, isActive: true },
+        select: { platform: true, lastSeenAt: true },
+      }),
+      this.prisma.emailContact.findFirst({ where: { userId }, include: { preferences: true } }),
+    ]);
+    // E-posta rızası mevcut EmailContact'ta yaşar (Doc 52 karar 2); tercih sayfası token'lıdır.
+    const topicOn = (t: 'duyuru' | 'kampanya') =>
+      !!contact &&
+      contact.status === 'subscribed' &&
+      !contact.preferences.some((p) => p.topic === t && !p.subscribed);
+    const email = contact
+      ? {
+          subscribed: contact.status === 'subscribed',
+          status: contact.status,
+          topics: { duyuru: topicOn('duyuru'), kampanya: topicOn('kampanya') },
+          preferencesUrl: this.contacts.preferencesUrl(contact.unsubscribeToken),
+        }
+      : null;
     return {
       categories,
       reminderTime: s?.reminderTime ?? '19:00',
@@ -411,6 +429,7 @@ export class NotificationsService {
       timezone: s?.timezone ?? 'Europe/Istanbul',
       pushEnabled: s?.pushEnabled ?? true,
       smartTimingEnabled: s?.smartTimingEnabled ?? true,
+      email,
       devices: tokens,
       policy: Object.fromEntries(
         ALL_CATEGORIES.map((c) => [

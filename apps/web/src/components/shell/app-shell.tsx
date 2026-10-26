@@ -1,4 +1,5 @@
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
+import { NotificationOpenTracker } from "@/components/notifications/notification-open-tracker";
 import { CommandPalette } from "./command-palette";
 import { MobileAppHeader, MobileBottomNavigation } from "./mobile-navigation";
 import { Sidebar } from "./sidebar";
@@ -18,6 +19,9 @@ export function AppShell({ children }: { children: ReactNode }) {
       </div>
       <MobileBottomNavigation />
       <CommandPalette />
+      <Suspense fallback={null}>
+        <NotificationOpenTracker />
+      </Suspense>
     </div>
   );
 }

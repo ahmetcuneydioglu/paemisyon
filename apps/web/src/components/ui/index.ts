@@ -20,3 +20,4 @@ export * from "./dialog";
 export * from "./popover";
 export * from "./question";
 export * from "./data-table";
+export * from "./switch";

@@ -56,10 +56,12 @@ export class PushService implements OnModuleInit {
     return this.app !== null || notificationsProvider() === 'console';
   }
 
-  private webLink(webPath?: string | null): string {
+  /** Web tıklama hedefi; `nid` ile web kabuğu `opened` olayını yazar (Doc 52 §9). */
+  private webLink(webPath?: string | null, notificationId?: string): string {
     const taban = (process.env.WEB_BASE_URL ?? 'https://paemisyon.com').replace(/\/$/, '');
     const p = webPath && webPath.startsWith('/') && !webPath.startsWith('//') ? webPath : '/bugun';
-    return `${taban}${p}`;
+    if (!notificationId) return `${taban}${p}`;
+    return `${taban}${p}${p.includes('?') ? '&' : '?'}nid=${encodeURIComponent(notificationId)}`;
   }
 
   /** Cihaz token'ını kullanıcıya bağla (upsert — cihazda hesap değişirse taşınır).
@@ -134,7 +136,7 @@ export class PushService implements OnModuleInit {
           data: { ...(m.data ?? {}), ...(m.route ? { route: m.route } : {}) },
           apns: { payload: { aps: { sound: 'default' } } },
           webpush: {
-            fcmOptions: { link: this.webLink(m.webPath) },
+            fcmOptions: { link: this.webLink(m.webPath, m.data?.notificationId) },
             notification: { icon: '/apple-touch-icon.png' },
           },
         })),

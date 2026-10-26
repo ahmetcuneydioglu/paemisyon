@@ -3,13 +3,14 @@ import { Pause, Search, UserRound } from "lucide-react";
 import { api } from "@/lib/api";
 import { activeSessionHref, type ActiveSession } from "@/lib/public-api";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { NotificationBell } from "@/components/notifications/notification-bell";
 import { KeyHint } from "@/components/ui/key-hint";
 import { CmdkButton } from "./cmdk-button";
 import { RegionTitle } from "./region-title";
 
 /**
  * Üst şerit (Doc 27 L2): bölge adı · ⌘K · "devam et" pili (Doc 27 §2.4 oturum
- * hafızası) · tema · profil. Yalnız ≥md; dar ekranda MobileAppHeader. Veri
+ * hafızası) · zil (Doc 52) · tema · profil. Yalnız ≥md; dar ekranda MobileAppHeader. Veri
  * alınamazsa pil sessizce yoktur — şerit sayfayı asla bloklamaz.
  */
 export async function TopStrip() {
@@ -37,6 +38,7 @@ export async function TopStrip() {
           <span className="hidden lg:inline">kaldığın yerden devam</span>
         </Link>
       ) : null}
+      <NotificationBell />
       <ThemeToggle compact />
       <Link
         href="/profil"

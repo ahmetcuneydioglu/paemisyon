@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { NotificationBell } from "@/components/notifications/notification-bell";
 import { Search } from "lucide-react";
 import { BrandGlyph } from "@/components/brand-mark";
 import { LinkPendingIndicator } from "@/components/ui/link-pending-indicator";
@@ -26,14 +27,17 @@ export function MobileAppHeader() {
       <p className="type-subhead text-ink" aria-live="polite">
         {active.label}
       </p>
-      <button
-        type="button"
-        onClick={() => window.dispatchEvent(new CustomEvent(CMDK_EVENT))}
-        className="tk-interactive ml-auto flex size-11 items-center justify-center rounded-control text-ink-soft hover:bg-surface-alt hover:text-ink"
-        aria-label="Ara"
-      >
-        <Search size={22} strokeWidth={1.75} aria-hidden />
-      </button>
+      <div className="ml-auto flex items-center">
+        <NotificationBell mobile />
+        <button
+          type="button"
+          onClick={() => window.dispatchEvent(new CustomEvent(CMDK_EVENT))}
+          className="tk-interactive flex size-11 items-center justify-center rounded-control text-ink-soft hover:bg-surface-alt hover:text-ink"
+          aria-label="Ara"
+        >
+          <Search size={22} strokeWidth={1.75} aria-hidden />
+        </button>
+      </div>
     </header>
   );
 }

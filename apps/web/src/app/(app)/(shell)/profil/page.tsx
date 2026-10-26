@@ -223,6 +223,8 @@ export default async function ProfilePage() {
           <Card className="flex flex-col gap-1">
             <CardTitle>Kısayollar</CardTitle>
             <nav aria-label="Profil kısayolları" className="flex flex-col">
+              <ListRow title="Bildirimler" href="/bildirimler" />
+              <ListRow title="Bildirim tercihleri" href="/profil/bildirimler" />
               <ListRow title="Denemelerim" href="/profil/denemelerim" />
               <ListRow title="Yanlışlarım" href="/kutuphane/yanlislar" />
               <ListRow title="Favorilerim" href="/kutuphane/favoriler" />
