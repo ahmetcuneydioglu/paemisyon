@@ -12,7 +12,7 @@ Tarih: 26 Ekim 2026. Durum: **plan onaylı (kullanıcı, 26 Eki), pilot üretild
 | 2 | **Güven kaynağa dayanır (Doc 39 mantığı).** Üretim modeldir, yayın kararı insanındır. Kayıt `in_review`'a düşer; yayını admin yapar. Kaynak etiketi "AI özeti — <kanun>, md <aralık>". | Claude, kullanıcı onayı |
 | 3 | **Programlı doğrulama şarttır (Matematik istisnası ruhu).** Doğrulayıcı betik iki şeyi kontrol eder: her blok gerçek bir maddeye bağlı mı; bloktaki her sayı ve süre referans verdiği maddenin metninde geçiyor mu. Türetilmiş sayı (600'ün salt çoğunluğu 301) yalnız açık formülle girer, formül betikle hesaplanır. | Claude |
 | 4 | **Bölümlendirme resmî kısım yapısını temel alır, sınav ağırlığına göre kesilir.** Ünite 10–15 dk okuma. Anayasa 12 ünite (§5). | Claude |
-| 5 | **Üniteler ileride alt konu olur** (F5). Bugün "T.C. Anayasası" düz: 897 soru tek düğümde. Ünite = alt konu olunca ünite bazlı hâkimiyet, koç önerisi ve "zayıf ünitenin özetini oku" döngüsü açılır. 674 maddeli soru madde üstünden otomatik eşlenir, 223 maddesiz soru elle. | Claude, kullanıcı onayı |
+| 5 | **Üniteler ileride alt konu olur** (F5). *Revizyon önerisi 26 Eki (`05-f5-plan.md` §0): üründe hiç alt konu kullanılmıyor, 289 kullanıcının konu ilerlemesi ve 448 seans konuya bağlı; ünite ETİKET olsun, ağaç değişmesin.* Bugün "T.C. Anayasası" düz: 897 soru tek düğümde. Ünite = alt konu olunca ünite bazlı hâkimiyet, koç önerisi ve "zayıf ünitenin özetini oku" döngüsü açılır. 674 maddeli soru madde üstünden otomatik eşlenir, 223 maddesiz soru elle. | Claude, kullanıcı onayı |
 | 6 | **Nerede yaşar:** Kütüphane › Ders › Konu sayfasının üç yüzü: **Özet · Mevzuat · Soru.** Ayrı sekme ya da ayrı "uygulama" yok (Doc 29 kuralı). | Claude |
 | 7 | **Dil:** kavram ve tuzak kartlarında yeniden tasarımın sıcak dili (Doc 49), tablolarda kuru ve kısa. Hukuk terimi resmî metindeki hâliyle kalır. | Claude, kullanıcı onayı |
 | 8 | **Premium:** her dersin ilk 2 ünitesi açık, kalanı premium. Mevcut `Topic.isPremium` alanı ünite alt konu olduğunda doğrudan kullanılır; F1'de ünite üstünde `isPremium` taşınır. | Claude |
@@ -154,7 +154,7 @@ enum SummaryBlockType { concept rule numbers compare trap exam_stats bridge }
 | F2 | **Yazıldı (26 Eki, `02-f2-web.md`), misafir akışı doğrulandı.** Konu odasında özet bölümü, `/ozet/[slug]` okuyucu + SEO, premium kilidi, köprü | Yasama I canlı |
 | F3 | **Yazıldı (26 Eki, `03-f3-expo.md`).** Expo okuyucu, konu odası satırları, madde sheet, köprü, derin bağlantı | TestFlight |
 | F4 | **Üretildi (26 Eki, `04-f4-uretim.md`):** 12 ünite canlıda in_review, 284 kart; panelden inceleme ve yayın bekliyor | Anayasa tam |
-| F5 | Üniteler alt konu olur; 674 soru madde üstünden otomatik, 223 soru elle eşlenir; koç reçetesi | Ünite bazlı hâkimiyet |
+| F5 | **Plan yazıldı (26 Eki, `05-f5-plan.md`), onay bekliyor.** Öneri: ünite alt konu değil ETİKET (madde aralığı × articleNo); `user_unit_progress`, koç reçetesi, oda ve okuyucuda hâkimiyet | Ünite bazlı hâkimiyet |
 
 Her faz gerçek veriyle ve E2E doğrulanır; Figma F1 öncesi (admin editör, mobil okuyucu, web konu sayfası).
 
