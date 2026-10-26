@@ -150,6 +150,95 @@ export class NotificationsAdminController {
     };
   }
 
+  // ── Analizler (günlük özet + açılma saati histogramı) ──
+  @Get('analytics')
+  async analyticsOverview(@Query('days') daysRaw?: string) {
+    const days = [7, 30, 90].includes(Number(daysRaw)) ? Number(daysRaw) : 30;
+    const since = new Date(Date.now() - days * 86_400_000);
+    const [stats, hours, segments] = await Promise.all([
+      this.prisma.notificationDailyStat.findMany({ where: { day: { gte: since } } }),
+      this.prisma.$queryRaw<{ h: number; n: number }[]>`
+        SELECT extract(hour from (occurred_at AT TIME ZONE 'UTC' AT TIME ZONE 'Europe/Istanbul'))::int AS h, count(*)::int AS n
+        FROM notification_events WHERE event_type IN ('opened','clicked') AND occurred_at >= ${since}
+        GROUP BY 1 ORDER BY 1`,
+      this.prisma.notificationCampaign.findMany({
+        where: { status: 'sent', completedAt: { gte: since }, segmentId: { not: null } },
+        select: { segment: { select: { id: true, name: true } }, sentCount: true, id: true },
+      }),
+    ]);
+    const sum = (
+      rows: typeof stats,
+      k: 'queued' | 'sent' | 'failed' | 'suppressed' | 'opened' | 'clicked' | 'converted',
+    ) => rows.reduce((a, r) => a + r[k], 0);
+    const totals = {
+      sent: sum(stats, 'sent'),
+      failed: sum(stats, 'failed'),
+      suppressed: sum(stats, 'suppressed'),
+      opened: sum(stats, 'opened'),
+      clicked: sum(stats, 'clicked'),
+      converted: sum(stats, 'converted'),
+    };
+    const by = <K extends 'category' | 'channel' | 'platform'>(key: K) => {
+      const m = new Map<
+        string,
+        {
+          key: string;
+          sent: number;
+          opened: number;
+          clicked: number;
+          converted: number;
+          failed: number;
+        }
+      >();
+      for (const r of stats) {
+        const k = String(r[key] || '—');
+        const row = m.get(k) ?? { key: k, sent: 0, opened: 0, clicked: 0, converted: 0, failed: 0 };
+        row.sent += r.sent;
+        row.opened += r.opened;
+        row.clicked += r.clicked;
+        row.converted += r.converted;
+        row.failed += r.failed;
+        m.set(k, row);
+      }
+      return [...m.values()].sort((a, b) => b.sent - a.sent);
+    };
+    const series = new Map<string, { day: string; sent: number; opened: number }>();
+    for (const r of stats) {
+      const k = r.day.toISOString().slice(0, 10);
+      const row = series.get(k) ?? { day: k, sent: 0, opened: 0 };
+      row.sent += r.sent;
+      row.opened += r.opened;
+      series.set(k, row);
+    }
+    const segMap = new Map<string, { id: string; name: string; campaigns: number; sent: number }>();
+    for (const c of segments)
+      if (c.segment) {
+        const r = segMap.get(c.segment.id) ?? {
+          id: c.segment.id,
+          name: c.segment.name,
+          campaigns: 0,
+          sent: 0,
+        };
+        r.campaigns++;
+        r.sent += c.sentCount;
+        segMap.set(c.segment.id, r);
+      }
+    const hourly = Array.from({ length: 24 }, (_, h) => ({
+      h,
+      n: hours.find((x) => x.h === h)?.n ?? 0,
+    }));
+    return {
+      days,
+      totals,
+      byCategory: by('category'),
+      byChannel: by('channel'),
+      byPlatform: by('platform'),
+      series: [...series.values()].sort((a, b) => a.day.localeCompare(b.day)),
+      hourly,
+      segments: [...segMap.values()],
+    };
+  }
+
   // ── Kampanyalar ──
   @Get('campaigns') listCampaigns(@Query() q: CampaignsQueryDto) {
     return this.campaigns.list(q);

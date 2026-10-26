@@ -1,363 +1,86 @@
 'use client';
 
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import Link from 'next/link';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
+import { BarRow, CampaignBadge, SeriesChart, StatCard } from '@/components/notifications/ui';
+import { CHANNEL_LABEL, REASON_LABEL, fmtDate, fmtInt, pct, type Overview } from './types';
 
-interface QuestionItem {
-  id: string;
-  topicName: string;
-  courseName: string;
-  /// Liste ucu kökü latestVersion içinde döndürür (üst düzey stem YOK).
-  latestVersion: { stem: string } | null;
-}
-interface QuestionDetail {
-  id: string;
-  topic: { name: string; course: { name: string } };
-  currentVersionId: string | null;
-  versions: {
-    id: string;
-    status: string;
-    stem: string;
-    explanation: string | null;
-    options: { id: string; label: string; text: string; isCorrect: boolean }[];
-  }[];
-}
-interface SendResult {
-  ok: boolean;
-  sent?: number;
-  failed?: number;
-  cleaned?: number;
-  error?: string;
-}
-
-const ROUTES = [
-  { value: 'daily-quiz', label: 'Günün Quizi ekranı (10 soru)' },
-  { value: '', label: 'Yalnız uygulamayı aç' },
-] as const;
-
-/// Hazır şablonlar — {ad} her kullanıcının kendi adıyla değişir (sunucuda).
-const TEMPLATES = {
-  gununQuizi: {
-    title: 'Günün Quizi hazır 🗓️',
-    body: 'Merhaba {ad}! Bugünün 10 sorusu yayında — çöz, sıralamadaki yerini al.',
-    route: 'daily-quiz',
-    audience: 'all',
-  },
-  seriHatirlatma: {
-    title: 'Serin seni bekliyor 🔥',
-    body: '{ad}, bugün henüz soru çözmedin — kısa bir seans seriyi korur.',
-    route: 'daily-quiz',
-    audience: 'inactive-today',
-  },
-} as const;
-
-/** Push gönderimi (Faz 2): tüm cihazlara bildirim — istersen bir sorudan doldur. */
-export default function NotificationsPage() {
-  const [title, setTitle] = useState('Günün Sorusu 🎯');
-  const [body, setBody] = useState('');
-  const [route, setRoute] = useState<string>('daily-quiz');
-  const [audience, setAudience] = useState<'all' | 'inactive-today'>('all');
-  const [search, setSearch] = useState('');
-  const [selected, setSelected] = useState<QuestionItem | null>(null);
-  const [explanation, setExplanation] = useState('');
-  const [explanationDirty, setExplanationDirty] = useState(false);
-  const [result, setResult] = useState<SendResult | null>(null);
-
-  // Soru arama: yayındaki sorulardan seç → metin otomatik dolar.
-  const questions = useQuery({
-    queryKey: ['notif-questions', search],
-    queryFn: () =>
-      api<{ items: QuestionItem[] }>(
-        `/admin/questions?status=published&search=${encodeURIComponent(search)}`,
-      ),
-    enabled: search.trim().length >= 3,
-  });
-
-  // Seçilen sorunun tam hâli (şıklar + doğru + açıklama) — önizleme/düzenleme.
-  const detail = useQuery({
-    queryKey: ['notif-question-detail', selected?.id],
-    queryFn: () => api<QuestionDetail>(`/admin/questions/${selected!.id}`),
-    enabled: selected != null,
-  });
-  const published =
-    detail.data?.versions.find((v) => v.id === detail.data?.currentVersionId) ??
-    detail.data?.versions[0] ??
-    null;
-
-  const saveExplanation = useMutation({
-    mutationFn: () =>
-      api(`/admin/questions/${selected!.id}/explanation`, {
-        method: 'PATCH',
-        body: { explanation },
-      }),
-    onSuccess: () => setExplanationDirty(false),
-  });
-
-  const send = useMutation({
-    mutationFn: () =>
-      api<SendResult>('/admin/notifications/send', {
-        method: 'POST',
-        body: { title, body, route: route || undefined, audience },
-      }),
-    onSuccess: (r) => setResult(r),
-  });
-
-  function applyTemplate(t: {
-    title: string;
-    body: string;
-    route: string;
-    audience: 'all' | 'inactive-today';
-  }) {
-    setTitle(t.title);
-    setBody(t.body);
-    setRoute(t.route);
-    setAudience(t.audience);
-    setSelected(null);
-    setSearch('');
-  }
-
-  function fillFromQuestion(q: QuestionItem) {
-    const teaser = (q.latestVersion?.stem ?? '').replace(/\s+/g, ' ').trim();
-    setBody(teaser.length > 140 ? `${teaser.slice(0, 140).trimEnd()}…` : teaser);
-    setTitle('Günün Sorusu 🎯');
-    setRoute(`question:${q.id}`);
-    setSearch('');
-    setSelected(q);
-    setExplanation('');
-    setExplanationDirty(false);
-  }
-
-  // Detay yüklenince açıklamayı doldur (kullanıcı yazmaya başladıysa ezme).
-  if (published != null && !explanationDirty && explanation !== (published.explanation ?? '')) {
-    setExplanation(published.explanation ?? '');
-  }
-
-  async function confirmSend() {
-    if (!title.trim() || !body.trim()) return;
-    if (selected != null && explanationDirty) {
-      // Açıklama düzenlendi → önce soruya KAYDET (banka güncellenir), sonra gönder.
-      await saveExplanation.mutateAsync();
-    }
-    const kitle =
-      audience === 'inactive-today'
-        ? 'YALNIZ bugün soru çözmemiş kullanıcılara'
-        : 'TÜM kayıtlı cihazlara';
-    const ok = window.confirm(
-      `Bu bildirim ${kitle} gönderilecek:\n\n${title}\n${body}\n\nGönderilsin mi?`,
-    );
-    if (ok) send.mutate();
-  }
-
+/** Genel Bakış (Doc 52 §12): bugünün sayaçları, 30 gün seri, bastırma nedenleri, sıradakiler, kill switch şeridi. */
+export default function NotificationsOverviewPage() {
+  const q = useQuery({ queryKey: ['notif-overview'], queryFn: () => api<Overview>('/admin/notifications/overview'), refetchInterval: 30_000 });
+  if (q.isPending) return <><PageHeader title="Bildirim Merkezi" /><Spinner /></>;
+  if (q.isError) return <><PageHeader title="Bildirim Merkezi" /><ErrorBox error={q.error} onRetry={() => q.refetch()} /></>;
+  const o = q.data;
+  const count = (ch: 'push' | 'email' | 'inbox', st?: string) => o.today.filter((t) => t.channel === ch && (!st || t.status === st)).reduce((a, t) => a + t.count, 0);
+  const pushSent = count('push', 'sent'), emailSent = count('email', 'sent');
+  const sent = pushSent + emailSent;
+  const failed = count('push', 'failed') + count('email', 'failed');
+  const suppressedTotal = o.suppression.reduce((a, s) => a + s.count, 0);
+  const maxS = Math.max(1, ...o.suppression.map((s) => s.count));
   return (
-    <>
+    <div>
       <PageHeader
-        title="Bildirim Gönder"
-        subtitle="Tüm cihazlara anlık push — dokunuş, seçtiğin ekrana derin bağlantıyla iner"
+        title="Bildirim Merkezi"
+        subtitle={`Bugün ${fmtInt(sent)} gönderim · ${o.scheduled.length} planlı/gönderilen kampanya · kuyruk ${fmtInt(o.pendingQueue)}`}
+        action={<Link href="/notifications/new" className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700">+ Yeni bildirim</Link>}
       />
-
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {/* ── Sol: mesaj formu ── */}
+      <div className={`mb-4 flex flex-wrap items-center gap-3 rounded-lg border px-4 py-2.5 text-sm ${o.killSwitch ? 'border-red-300 bg-red-50 text-red-800' : o.environment.ok ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-amber-300 bg-amber-50 text-amber-900'}`}>
+        <span className={`size-2 rounded-full ${o.killSwitch ? 'bg-red-600' : o.environment.ok ? 'bg-emerald-600' : 'bg-amber-500'}`} aria-hidden />
+        {o.killSwitch ? 'KILL SWITCH AÇIK — hiçbir bildirim gönderilmiyor.' : o.environment.ok ? 'Gönderim açık' : 'Ortam kapısı eşleşmiyor — işçi gönderim yapmıyor.'}
+        <span className="text-xs opacity-80">ortam: {o.environment.setting || '(ayarsız)'} / işçi: {o.environment.worker || '(boş)'} · sağlayıcı {o.environment.provider} · kitle {o.audienceRefreshedAt ? fmtDate(o.audienceRefreshedAt) : 'henüz yok'}</span>
+        <Link href="/notifications/settings" className="ml-auto text-xs underline">Ayarlar</Link>
+      </div>
+      <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-4">
+        <StatCard label="Bugün gönderilen" value={fmtInt(sent)} hint={`push ${fmtInt(pushSent)} · e-posta ${fmtInt(emailSent)}`} />
+        <StatCard label="Başarısız" value={fmtInt(failed)} hint={failed ? 'token temizlendi / sağlayıcı hatası' : 'temiz'} warn={failed > 0} />
+        <StatCard label="Açılma" value={pct(o.openedToday, sent)} hint={`${fmtInt(o.openedToday)} dokunma`} />
+        <StatCard label="Tıklama" value={pct(o.clickedToday, sent)} hint={`${fmtInt(o.clickedToday)} hedefe gidildi`} />
+      </div>
+      <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-4">
+        <StatCard label="Dönüşüm" value={pct(o.convertedToday, sent)} hint={`${fmtInt(o.convertedToday)} · 24 sa pencere`} />
+        <StatCard label="Bastırılan" value={fmtInt(suppressedTotal)} hint="kural gereği gitmeyen" />
+        <StatCard label="Kutuya yazılan" value={fmtInt(count('inbox'))} hint="bugün" />
+        <StatCard label="Kuyruk" value={fmtInt(o.pendingQueue)} hint="bekleyen teslim" />
+      </div>
+      <div className="grid gap-4 lg:grid-cols-[2fr_1fr]">
         <Card>
-          <div className="space-y-4">
-            <div>
-              <label className="mb-1 block text-sm font-medium">Hazır şablon</label>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => applyTemplate(TEMPLATES.gununQuizi)}
-                  className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium hover:border-blue-400 hover:bg-blue-50"
-                >
-                  🗓️ Günün Quizi hatırlatması
-                </button>
-                <button
-                  onClick={() => applyTemplate(TEMPLATES.seriHatirlatma)}
-                  className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium hover:border-blue-400 hover:bg-blue-50"
-                >
-                  🔥 Seri hatırlatması
-                </button>
-              </div>
-              <p className="mt-1 text-xs text-slate-400">
-                Metindeki <code className="rounded bg-slate-100 px-1">{'{ad}'}</code> her
-                kullanıcının kendi adıyla değişir (örn. &quot;Merhaba Ahmet!&quot;).
-              </p>
-            </div>
-            {selected && (
-              <div className="rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm">
-                <div className="mb-2 flex items-start justify-between gap-2">
-                  <span className="text-xs font-medium text-blue-500">
-                    Seçilen soru · {selected.courseName} / {selected.topicName} — dokunan
-                    kullanıcı BU soruyu çözer, ardından açıklama görür
-                  </span>
-                  <button
-                    onClick={() => {
-                      setSelected(null);
-                      setRoute('daily-quiz');
-                    }}
-                    className="shrink-0 text-xs text-slate-400 hover:text-slate-600"
-                  >
-                    Kaldır
-                  </button>
-                </div>
-                {detail.isFetching ? (
-                  <Spinner />
-                ) : published ? (
-                  <>
-                    <p className="mb-2 whitespace-pre-line font-medium text-slate-800">{published.stem}</p>
-                    <ul className="mb-3 space-y-1">
-                      {published.options.map((o) => (
-                        <li
-                          key={o.id}
-                          className={
-                            o.isCorrect
-                              ? 'rounded bg-emerald-100 px-2 py-1 font-medium text-emerald-800'
-                              : 'px-2 py-1 text-slate-600'
-                          }
-                        >
-                          {o.label}) {o.text} {o.isCorrect ? '✓' : ''}
-                        </li>
-                      ))}
-                    </ul>
-                    <label className="mb-1 block text-xs font-medium text-slate-600">
-                      Açıklama {published.explanation ? '' : '— YOK, buradan ekle (soruya da kaydedilir)'}
-                    </label>
-                    <textarea
-                      value={explanation}
-                      onChange={(e) => {
-                        setExplanation(e.target.value);
-                        setExplanationDirty(true);
-                      }}
-                      rows={3}
-                      placeholder="Doğru cevabın kısa, öğretici açıklaması…"
-                      className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm"
-                    />
-                    {explanationDirty && (
-                      <p className="mt-1 text-xs text-amber-600">
-                        Değişti — gönderirken soruya otomatik kaydedilecek.
-                      </p>
-                    )}
-                    {saveExplanation.isError && <ErrorBox error={saveExplanation.error} />}
-                  </>
-                ) : null}
-              </div>
-            )}
-            <div>
-              <label className="mb-1 block text-sm font-medium">Başlık</label>
-              <input
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                maxLength={60}
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-              />
-            </div>
-            <div>
-              <label className="mb-1 block text-sm font-medium">Metin</label>
-              <textarea
-                value={body}
-                onChange={(e) => setBody(e.target.value)}
-                rows={3}
-                maxLength={170}
-                placeholder="Bildirim metni — kısa ve merak uyandıran…"
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-              />
-              <p className="mt-1 text-xs text-slate-400">{body.length}/170</p>
-            </div>
-            <div>
-              <label className="mb-1 block text-sm font-medium">Dokununca açılacak ekran</label>
-              {selected ? (
-                <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-500">
-                  Seçilen soru (tek soruluk seans) — soru kaldırılırsa seçim geri açılır
-                </div>
-              ) : (
-                <select
-                  value={route}
-                  onChange={(e) => setRoute(e.target.value)}
-                  className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-                >
-                  {ROUTES.map((r) => (
-                    <option key={r.value} value={r.value}>
-                      {r.label}
-                    </option>
-                  ))}
-                </select>
-              )}
-            </div>
-            <div>
-              <label className="mb-1 block text-sm font-medium">Kime gidecek</label>
-              <select
-                value={audience}
-                onChange={(e) => setAudience(e.target.value as 'all' | 'inactive-today')}
-                className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-              >
-                <option value="all">Herkese</option>
-                <option value="inactive-today">Yalnız bugün soru çözmemiş olanlara</option>
-              </select>
-            </div>
-            <button
-              onClick={confirmSend}
-              disabled={send.isPending || !title.trim() || !body.trim()}
-              className="w-full rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
-            >
-              {send.isPending ? 'Gönderiliyor…' : 'Tüm cihazlara gönder'}
-            </button>
-
-            {result &&
-              (result.ok ? (
-                <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-700">
-                  ✅ {result.sent} cihaza gönderildi
-                  {result.failed ? `, ${result.failed} başarısız` : ''}
-                  {result.cleaned ? ` (${result.cleaned} ölü token temizlendi)` : ''}.
-                </div>
-              ) : (
-                <div className="rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
-                  {result.error ?? 'Gönderilemedi.'}
-                </div>
-              ))}
-            {send.isError && <ErrorBox error={send.error} />}
-          </div>
+          <h2 className="text-sm font-semibold">Son 30 gün</h2>
+          <p className="mb-3 text-xs text-slate-500">Gönderilen (açık) · açılan (koyu), günlük özetten</p>
+          <SeriesChart series={o.series} />
         </Card>
-
-        {/* ── Sağ: sorudan doldur ── */}
         <Card>
-          <h2 className="mb-1 text-sm font-semibold text-slate-700">Sorudan doldur</h2>
-          <p className="mb-3 text-xs text-slate-500">
-            Yayındaki bir soruyu ara; seçince metin, sorunun köküyle dolar (dokunan Günün
-            Sorusu ekranına iner).
-          </p>
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Soru kökünde ara (en az 3 harf)…"
-            className="mb-3 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-          />
-          {questions.isFetching ? (
-            <Spinner />
-          ) : questions.isError ? (
-            <ErrorBox error={questions.error} />
-          ) : (
-            <div className="space-y-2">
-              {(questions.data?.items ?? []).slice(0, 8).map((q) => (
-                <button
-                  key={q.id}
-                  onClick={() => fillFromQuestion(q)}
-                  className="block w-full rounded-lg border border-slate-200 p-3 text-left text-sm hover:border-blue-400 hover:bg-blue-50"
-                >
-                  <span className="mb-1 block text-xs text-slate-400">
-                    {q.courseName} / {q.topicName}
-                  </span>
-                  {(q.latestVersion?.stem ?? '(kök yok)').slice(0, 160)}
-                  {(q.latestVersion?.stem ?? '').length > 160 ? '…' : ''}
-                </button>
+          <h2 className="mb-3 text-sm font-semibold">Sıradaki</h2>
+          {o.scheduled.length === 0 ? <p className="text-sm text-slate-500">Planlı kampanya yok. Otomasyonlar F2’de.</p> : (
+            <ul className="space-y-2 text-sm">
+              {o.scheduled.map((s) => (
+                <li key={s.id} className="flex items-start justify-between gap-2">
+                  <div><Link href={`/notifications/campaigns/${s.id}`} className="font-medium text-indigo-700 hover:underline">{s.name}</Link>
+                    <div className="text-xs text-slate-500">{fmtDate(s.scheduledAt)} · {fmtInt(s.estimatedRecipients)} kişi</div></div>
+                  <CampaignBadge status={s.status} />
+                </li>
               ))}
-              {search.trim().length >= 3 &&
-                !questions.isFetching &&
-                (questions.data?.items ?? []).length === 0 && (
-                  <p className="text-sm text-slate-400">Sonuç yok.</p>
-                )}
-            </div>
+            </ul>
           )}
         </Card>
+        <Card className="space-y-2">
+          <h2 className="text-sm font-semibold">Gönderilmeyenler</h2>
+          <p className="text-xs text-slate-500">Bugün {fmtInt(suppressedTotal)} bastırma · nedenine göre</p>
+          {o.suppression.length === 0 ? <p className="text-sm text-slate-500">Bastırma yok.</p> : o.suppression.map((s) => (
+            <BarRow key={s.reason ?? 'x'} label={REASON_LABEL[s.reason ?? ''] ?? s.reason ?? '—'} value={s.count} max={maxS} right={fmtInt(s.count)} color="bg-amber-400" />
+          ))}
+        </Card>
+        <Card className="space-y-2">
+          <h2 className="text-sm font-semibold">Kanal · bugün</h2>
+          {(['push', 'email', 'inbox'] as const).map((ch) => (
+            <div key={ch} className="flex items-center justify-between text-sm">
+              <span className="text-slate-600">{CHANNEL_LABEL[ch]}</span>
+              <span className="text-xs text-slate-500">{o.today.filter((t) => t.channel === ch).map((t) => `${t.status} ${t.count}`).join(' · ') || '—'}</span>
+            </div>
+          ))}
+        </Card>
       </div>
-    </>
+    </div>
   );
 }
