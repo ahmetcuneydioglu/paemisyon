@@ -42,7 +42,8 @@ KESİN KURALLAR
 3. Kart türleri ve biçimleri:
    - concept: tek fikir, bir paragraf, "body". Sıcak, kısa, "sen" dili.
    - rule: kural + şart + istisna, madde imlâsına yakın, "body" (kalın ve liste kullanabilirsin).
-   - numbers: "rows": [{"label","value","refs"}] — sayı ve süre tablosu; "body" YOK.
+   - numbers: "rows": [{"label","value","refs"}] — sayı ve süre tablosu; "body" YOK. Satırlı kartlarda da
+     "articleRefs" ZORUNLUDUR: satırlardaki refs'lerin birleşimi.
    - compare: "rows": [{"aspect","left","right","refs"}] — iki kurum/kavram yan yana; "body" YOK.
    - trap: soru köklerinden ve YANLIŞ ŞIKLARDAN türetilen "sık karıştırılan" uyarısı, "body".
    - exam_stats ve bridge: SEN YAZMA. Ünite sonuna şu iki kartı sabit koy:
@@ -90,7 +91,7 @@ function userMessage(g: OzetGirdi, topicId: string): string {
   const client = new Anthropic();
   const stream = client.beta.messages.stream({
     model: MODEL,
-    max_tokens: 32000,
+    max_tokens: 64000,
     betas: ['server-side-fallback-2026-07-01'],
     fallbacks: 'default',
     output_config: { effort: 'high' },

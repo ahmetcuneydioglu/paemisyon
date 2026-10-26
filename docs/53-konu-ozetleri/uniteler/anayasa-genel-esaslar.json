@@ -1,0 +1,535 @@
+{
+  "unit": {
+    "slug": "anayasa-genel-esaslar",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Genel esaslar",
+    "subtitle": "Devletin nitelikleri, egemenlik, eşitlik, Anayasa'nın bağlayıcılığı",
+    "articleFrom": "1",
+    "articleTo": "11",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 1–11",
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Devletin kimliği girişte yazılı",
+      "body": "Anayasa'nın girişi devletin kimliğini tarif eder. md 1 şeklini söyler: **Türkiye Devleti bir Cumhuriyettir.** md 2 bu Cumhuriyetin niteliklerini sayar. md 3 ise ülke ve milletiyle bölünmezliği, dili, bayrağı, milli marşı ve başkenti belirler. Bu maddeleri birlikte öğren, çünkü md 4 tam da onları değiştirilemez hükümler olarak korur.",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cumhuriyetin nitelikleri",
+      "body": "**Türkiye Cumhuriyeti:**\n- toplumun huzuru, milli dayanışma ve adalet anlayışı içinde,\n- insan haklarına saygılı,\n- Atatürk milliyetçiliğine bağlı,\n- başlangıçta belirtilen temel ilkelere dayanan,\n- **demokratik, laik ve sosyal bir hukuk Devletidir.**",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "md 2'nin listesinde olmayanlar",
+      "body": "Soru kökü çoğu zaman \"hangisi nitelikler arasında sayılmamıştır\" diye gelir. Yanlış şıklar kulağa doğru gelir, o yüzden md 2'yi kelimesi kelimesine bil:\n- **Devletçilik, halkçılık, inkılapçılık** md 2'de geçmez.\n- \"Milliyetçilik\" yalın hâliyle değil, **Atatürk milliyetçiliğine bağlı** ifadesiyle geçer.\n- **Eşitlik** md 2'de nitelik olarak sayılmaz. O, md 10'un ayrı başlığıdır: Kanun önünde eşitlik.\n- Ülke ve milletiyle **bölünmez bütünlük** md 2'de değil, md 3'te düzenlenir.",
+      "articleRefs": [
+        "2",
+        "3",
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bütünlük, dil, bayrak, marş, başkent",
+      "body": "- **Bütünlük:** Türkiye Devleti, ülkesi ve milletiyle bölünmez bir bütündür.\n- **Dil:** Türkçedir.\n- **Bayrak:** Şekli kanununda belirtilen, beyaz ay yıldızlı al bayraktır.\n- **Milli marş:** İstiklal Marşı'dır.\n- **Başkent:** Ankara'dır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Değiştirilemeyecek hükümler",
+      "body": "md 4'e göre aşağıdaki hükümler **değiştirilemez** ve **değiştirilmesi teklif edilemez**:\n- md 1: Devletin şeklinin Cumhuriyet olduğu hakkındaki hüküm,\n- md 2: Cumhuriyetin nitelikleri,\n- md 3: maddenin bütün hükümleri (bütünlük, dil, bayrak, milli marş, başkent).\n\nYasak, değişikliğin teklif edilmesini de kapsar.",
+      "articleRefs": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başkent korumalı, temel amaç değil",
+      "body": "md 3'ün tamamı korunduğu için **başkentin Ankara olması** değiştirilemez hükümler arasındadır. **Sosyal devlet** md 2'de nitelik olarak geçtiği için o da korunur. Ancak md 4 yalnızca md 1, 2 ve 3'ü sayar. **Devletin temel amaç ve görevleri (md 5)** ile **yasama yetkisinin TBMM'ye ait olması (md 7)** bu listede yer almaz. Komşu madde olmaları seni yanıltmasın.",
+      "articleRefs": [
+        "4",
+        "3",
+        "2",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devletin temel amaç ve görevleri",
+      "body": "Devletin temel amaç ve görevleri şunlardır:\n- Türk milletinin bağımsızlığını ve bütünlüğünü, ülkenin bölünmezliğini, Cumhuriyeti ve demokrasiyi **korumak**,\n- kişilerin ve toplumun refah, huzur ve mutluluğunu **sağlamak**,\n- kişinin temel hak ve hürriyetlerini, sosyal hukuk devleti ve adalet ilkeleriyle bağdaşmayacak surette sınırlayan siyasal, ekonomik ve sosyal engelleri **kaldırmaya** çalışmak,\n- insanın maddi ve manevi varlığının gelişmesi için gerekli şartları **hazırlamaya** çalışmak.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Egemenlik: kaynak Millet, çerçeve Anayasa",
+      "body": "Egemenlik kayıtsız şartsız Milletindir. Türk Milleti bu egemenliği, Anayasanın koyduğu esaslara göre, yetkili organları eliyle kullanır. Egemenliğin kullanılması hiçbir surette hiçbir kişiye, zümreye veya sınıfa bırakılamaz. Hiçbir kimse veya organ da kaynağını Anayasadan almayan bir Devlet yetkisi kullanamaz. Kısacası kaynak Millettir, çerçeveyi ise Anayasa çizer.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Egemenlik cümlesini kelimesi kelimesine bil",
+      "body": "Boşluk doldurma sorusunda cümleyi aynen hatırla: Türk Milleti, egemenliğini, **Anayasanın** koyduğu esaslara göre, **yetkili organları** eliyle kullanır. \"Kanunun\", \"Türkiye Büyük Millet Meclisi\" ya da \"Cumhurbaşkanı\" içeren şıklar çeldiricidir.\n\nAyrıca \"Hiçbir kimse veya organ kaynağını Anayasadan almayan bir Devlet yetkisi kullanamaz\" cümlesi md 11'e ait değildir. Bu cümle **Egemenlik** başlığında, yani md 6'da yer alır.",
+      "articleRefs": [
+        "6",
+        "11"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "md 1–6 sayılarla",
+      "rows": [
+        {
+          "label": "Değiştirilemez hüküm içeren madde (md 1, 2, 3)",
+          "value": 3,
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 3'te düzenlenen unsur (bütünlük, dil, bayrak, milli marş, başkent)",
+          "value": 5,
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 2'de Devleti niteleyen sıfat (demokratik, laik, sosyal, hukuk)",
+          "value": 4,
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Egemenliğin kullanılmasının bırakılamayacağı kesim (kişi, zümre, sınıf)",
+          "value": 3,
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "count(md 1, md 2, md 3)",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "value": 5,
+          "expr": "count(bütünlük, dil, bayrak, milli marş, başkent)",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count(demokratik, laik, sosyal, hukuk)",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "value": 3,
+          "expr": "count(kişi, zümre, sınıf)",
+          "refs": [
+            "6"
+          ]
+        }
+      ],
+      "counterNumbers": [],
+      "articleRefs": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yasama yetkisi",
+      "body": "**Yasama yetkisi**, Türk Milleti adına **Türkiye Büyük Millet Meclisinindir.**\n\n**Bu yetki devredilemez.** Maddede bu kurala bağlanmış herhangi bir istisna yoktur.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "\"Devredilemez\" mutlaktır",
+      "body": "md 7'de istisna yazılı değildir. Bu yüzden şu şıklar her zaman yanlıştır:\n- olağanüstü hâllerde Cumhurbaşkanına devredilebilir,\n- kanunla sınırlı olarak bağımsız kurullara devredilebilir,\n- TBMM bu yetkiyi bakanlar eliyle kullanır,\n- TBMM ile Cumhurbaşkanı bu yetkiyi birlikte kullanır.\n\nYetkinin sahibi TBMM'dir. Yetki Türk Milleti adına kullanılır ve devredilemez.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yürütme yetkisi ve görevi",
+      "body": "**Yürütme yetkisi ve görevi**, **Cumhurbaşkanı** tarafından kullanılır ve yerine getirilir.\n\nBunu yaparken Cumhurbaşkanı:\n- Anayasaya ve\n- kanunlara\nuygun hareket eder.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yargı yetkisi",
+      "body": "**Yargı yetkisi**, Türk Milleti adına **bağımsız ve tarafsız mahkemelerce** kullanılır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim kullanır, kimin adına?",
+      "body": "Yetki maddelerinde çeldirici şık üretmek kolaydır. Şu noktalara dikkat et:\n- Yürütme yetkisini **Cumhurbaşkanı** kullanır. \"Bakanlar tarafından\" diyen şık yanlıştır.\n- Yargı yetkisi **Türk Milleti adına** kullanılır. \"Türkiye Cumhuriyeti Devleti\", \"Cumhurbaşkanı\", \"TBMM\" ya da \"Anayasa Mahkemesi\" adına kullanılmaz.\n- Mahkemeler **bağımsız ve tarafsız**dır. Yalnızca \"bağımsız\" demek eksik kalır. \"Daimî\", \"doğal\" ve \"yüksek\" sıfatları md 9'da geçmez.\n- \"Türk Milleti adına\" ifadesi md 7'de ve md 9'da vardır, md 8'de yoktur.",
+      "articleRefs": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun önünde eşitlik",
+      "body": "**Kural:** Herkes, dil, ırk, renk, cinsiyet, siyasi düşünce, felsefi inanç, din, mezhep ve benzeri sebeplerle ayırım gözetilmeksizin kanun önünde eşittir.\n\n**Kadın ve erkek:** Kadınlar ve erkekler eşit haklara sahiptir. Devlet, bu eşitliğin yaşama geçmesini sağlamakla yükümlüdür. Bu maksatla alınacak tedbirler eşitlik ilkesine aykırı olarak yorumlanamaz.\n\n**Aykırı sayılmayan tedbirler:** Çocuklar, yaşlılar, özürlüler, harp ve vazife şehitlerinin dul ve yetimleri ile malul ve gaziler için alınacak tedbirler eşitlik ilkesine aykırı sayılmaz.\n\n**Yasak:** Hiçbir kişiye, aileye, zümreye veya sınıfa imtiyaz tanınamaz.\n\n**Yükümlülük:** Devlet organları ve idare makamları bütün işlemlerinde kanun önünde eşitlik ilkesine uygun olarak hareket etmek zorundadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yoksullar listede yok",
+      "body": "md 10'da tedbirleri eşitliğe aykırı sayılmayanlar şunlardır: **çocuklar, yaşlılar, özürlüler, harp ve vazife şehitlerinin dul ve yetimleri, malul ve gaziler.** \"Yoksullar\" bu metinde geçmez, şıklarda görürsen ele. Şehitlerin eşleri \"dul\", çocukları ise \"yetim\" kapsamındadır, bu şıkları eleme.\n\nÖnüne gelen \"Egemenliğin kullanılması hiçbir kişiye, zümreye veya sınıfa bırakılamaz\" cümlesi de eşitlik hükmü değildir. Bu cümle md 6'ya, yani Egemenlik başlığına aittir.",
+      "articleRefs": [
+        "10",
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Anayasanın bağlayıcılığı ve üstünlüğü",
+      "body": "**Anayasa hükümleri** temel hukuk kurallarıdır ve şunları bağlar:\n- yasama, yürütme ve yargı organları,\n- idare makamları,\n- diğer kuruluş ve kişiler.\n\n**Kanunlar Anayasaya aykırı olamaz.**",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi cümle hangi başlıkta?",
+      "body": "Bu ünitede sorular çoğu zaman cümleyi verip başlığını sorar. Eşleştirmeleri sağlam tut:\n- \"Kanunlar Anayasaya aykırı olamaz\" → **Anayasanın bağlayıcılığı ve üstünlüğü** (md 11)\n- \"Anayasa hükümleri … bağlayan temel hukuk kurallarıdır\" → **Anayasanın bağlayıcılığı ve üstünlüğü** (md 11)\n- \"Kaynağını Anayasadan almayan Devlet yetkisi kullanılamaz\" → **Egemenlik** (md 6)\n- \"Hiçbir kişiye, aileye, zümreye veya sınıfa imtiyaz tanınamaz\" → **Kanun önünde eşitlik** (md 10)\n- \"Devlet organları ve idare makamları … eşitlik ilkesine uygun hareket etmek zorundadır\" → **Kanun önünde eşitlik** (md 10)",
+      "articleRefs": [
+        "6",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "md 7–11 sayılarla",
+      "rows": [
+        {
+          "label": "\"Türk Milleti adına\" kullanılan yetki (yasama, yargı)",
+          "value": 2,
+          "refs": [
+            "7",
+            "9"
+          ]
+        },
+        {
+          "label": "md 9'da mahkemelere tanınan nitelik (bağımsız, tarafsız)",
+          "value": 2,
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 10'da açıkça sayılan ayırım sebebi",
+          "value": 8,
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İmtiyaz tanınamayacak kesim (kişi, aile, zümre, sınıf)",
+          "value": 4,
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 11'de Anayasa'nın bağladığı organ (yasama, yürütme, yargı)",
+          "value": 3,
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 2,
+          "expr": "count(yasama md 7, yargı md 9)",
+          "refs": [
+            "7",
+            "9"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "count(bağımsız, tarafsız)",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "value": 8,
+          "expr": "count(dil, ırk, renk, cinsiyet, siyasi düşünce, felsefi inanç, din, mezhep)",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count(kişi, aile, zümre, sınıf)",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "value": 3,
+          "expr": "count(yasama, yürütme, yargı)",
+          "refs": [
+            "11"
+          ]
+        }
+      ],
+      "counterNumbers": [],
+      "articleRefs": [
+        "7",
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Egemenlik mi, eşitlik mi?",
+      "rows": [
+        {
+          "aspect": "Başlık",
+          "left": "Egemenlik (md 6)",
+          "right": "Kanun önünde eşitlik (md 10)",
+          "refs": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "aspect": "Yasak cümle",
+          "left": "Egemenliğin kullanılması hiçbir surette hiçbir kişiye, zümreye veya sınıfa bırakılamaz",
+          "right": "Hiçbir kişiye, aileye, zümreye veya sınıfa imtiyaz tanınamaz",
+          "refs": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "aspect": "\"Aile\" sayılmış mı?",
+          "left": "Hayır",
+          "right": "Evet",
+          "refs": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "aspect": "Yasaklanan şey",
+          "left": "Egemenliğin kullanılmasının bırakılması",
+          "right": "İmtiyaz tanınması",
+          "refs": [
+            "6",
+            "10"
+          ]
+        },
+        {
+          "aspect": "Organlara yönelik hüküm",
+          "left": "Hiçbir kimse veya organ kaynağını Anayasadan almayan bir Devlet yetkisi kullanamaz",
+          "right": "Devlet organları ve idare makamları bütün işlemlerinde kanun önünde eşitlik ilkesine uygun hareket etmek zorundadır",
+          "refs": [
+            "6",
+            "10"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "10"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "17",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "label": "md 10 — Kanun önünde eşitlik",
+          "value": "4 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "md 2 — Cumhuriyetin nitelikleri",
+          "value": "3 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 6 — Egemenlik",
+          "value": "3 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 4 — Değiştirilemeyecek hükümler",
+          "value": "2 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 9 — Yargı yetkisi",
+          "value": "2 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1), 2026 PAEM 10. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 5",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–11, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "unit": {
+    "slug": "anayasa-temel-haklar-rejimi",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Temel hakların rejimi",
+    "subtitle": "Sınırlama, kötüye kullanma yasağı, durdurma, yabancılar",
+    "articleFrom": "12",
+    "articleTo": "16",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 12–16",
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitenin haritası",
+      "body": "Bu ünitede temel hak ve hürriyetlerin genel rejimini öğreniyorsun. md 12 hakların niteliğini anlatır. md 13 hakların nasıl sınırlanacağını düzenler. md 14 hakların kötüye kullanılmasını yasaklar. md 15 savaş, seferberlik veya olağanüstü hallerde hakların kullanılmasının durdurulmasını düzenler. md 16 ise yabancıların durumuna bakar. Her maddede kendine şunu sor: Kim, hangi araçla, hangi sınırı aşamaz?",
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Haklar kimin ve nasıl haklar?",
+      "body": "Anayasa \"herkes\" der. Herkes kişiliğine bağlı, dokunulmaz, devredilmez ve vazgeçilmez temel hak ve hürriyetlere sahiptir. Aynı maddede madalyonun öbür yüzü de var: Bu haklar, kişinin topluma, ailesine ve diğer kişilere karşı ödev ve sorumluluklarını da ihtiva eder. Yani hak ile ödev aynı paketin içinde gelir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: \"Yalnızca Türk vatandaşları\"",
+      "body": "Şıkta \"temel hak ve ödevler yalnızca Türk vatandaşları için tanınır\" gibi bir ifade görürsen dur. md 12'nin öznesi \"herkes\"tir. Yabancılar da bu hakların sahibidir. md 16 yalnızca yabancılar için hakların hangi koşulla sınırlanabileceğini ayrıca düzenler.",
+      "articleRefs": [
+        "12",
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sınırlamanın şartları",
+      "body": "**Temel hak ve hürriyetler şu çerçevede sınırlanabilir:**\n- **Özlerine dokunulmaksızın**\n- Yalnızca **Anayasanın ilgili maddelerinde belirtilen sebeplere** bağlı olarak\n- Ancak **kanunla**\n\n**Sınırlamalar şunlara aykırı olamaz:**\n- Anayasanın sözüne ve ruhuna\n- Demokratik toplum düzeninin gereklerine\n- Lâik Cumhuriyetin gereklerine\n- **Ölçülülük ilkesine**",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: \"Hiçbir şekilde sınırlandırılamaz\"",
+      "body": "md 12 hakları \"dokunulmaz\" diye niteler. Ama md 13 açıkça \"ancak kanunla sınırlanabilir\" der. Şıkta \"temel hak ve hürriyetler hiçbir şekilde sınırlandırılamaz\" yazıyorsa yanlış ifade odur. Dokunulamayan şey hakkın tamamı değil, hakkın özüdür.",
+      "articleRefs": [
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Ölçütlerin adını karıştırmak",
+      "body": "Soru kökü bazen bir sınırlama ölçütünü tarif eder ve adını sorar. Şıklarda md 13'ün ölçütleri yan yana dizilir: kanunla sınırlama, özüne dokunmama, Anayasanın sözüne ve ruhuna uygunluk, demokratik toplum düzeninin gerekleri, ölçülülük. md 13 bu ölçütlerin her birini ayrı adla sayar. Tarifte sınırlamanın ölçüsü anlatılıyorsa, metindeki karşılığı \"ölçülülük ilkesi\"dir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kötüye kullanma yasağı",
+      "body": "**Anayasadaki hak ve hürriyetlerden hiçbiri** şu amaçlara yönelik faaliyetler biçiminde kullanılamaz:\n- Devletin ülkesi ve milletiyle **bölünmez bütünlüğünü bozmak**\n- **İnsan haklarına dayanan demokratik ve lâik Cumhuriyeti** ortadan kaldırmak",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yorum yasağı ve müeyyide",
+      "body": "**Yorum yasağı:** Anayasa hükümlerinden hiçbiri, **Devlete veya kişilere** şu amaçlarla faaliyette bulunma imkânı verecek şekilde yorumlanamaz:\n- Anayasayla tanınan temel hak ve hürriyetleri **yok etmek**\n- Bu hakları **Anayasada belirtilenden daha geniş şekilde sınırlandırmak**\n\n**Müeyyide:** Bu hükümlere aykırı faaliyette bulunanlar hakkında uygulanacak müeyyideler **kanunla** düzenlenir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Yasak sadece bireylere mi?",
+      "body": "Hayır. md 14'teki yorum yasağı hem **Devleti** hem **kişileri** kapsar. Devlet de hakları yok etmeyi ya da Anayasada belirtilenden daha geniş sınırlamayı amaçlayan bir faaliyete Anayasa hükümlerini dayanak yapamaz. Şıktaki bu ifadeler metnin aynısıdır, yani doğrudur. Bu yüzden \"yanlış olanı bul\" sorularında bu şıkları ele.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla md 12–14",
+      "rows": [
+        {
+          "label": "md 12 — temel hak ve hürriyetlerin nitelikleri (kişiliğine bağlı, dokunulmaz, devredilmez, vazgeçilmez)",
+          "value": 4,
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md 12 — ödev ve sorumluluğun yöneldiği taraflar (toplum, aile, diğer kişiler)",
+          "value": 3,
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md 14 — hakların kullanılamayacağı faaliyet amaçları (bölünmez bütünlüğü bozmak, Cumhuriyeti ortadan kaldırmak)",
+          "value": 2,
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "md 14 — yasaklanan yorumun amaçları (hakları yok etmek, daha geniş sınırlamak)",
+          "value": 2,
+          "refs": [
+            "14"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 4,
+          "expr": "count(['kişiliğine bağlı','dokunulmaz','devredilmez','vazgeçilmez'])",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "value": 3,
+          "expr": "count(['topluma','ailesine','diğer kişilere'])",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "count(['bölünmez bütünlüğünü bozmak','Cumhuriyeti ortadan kaldırmak'])",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "count(['yok edilmesi','daha geniş şekilde sınırlandırılması'])",
+          "refs": [
+            "14"
+          ]
+        }
+      ],
+      "counterNumbers": [],
+      "articleRefs": [
+        "12",
+        "14"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Durdurma: Kriz anının aracı",
+      "body": "md 15 özel durumlara bakar: savaş, seferberlik veya olağanüstü haller. Bu durumlarda temel hak ve hürriyetlerin kullanılması durdurulabilir. Ama bu yetki sınırsız değil. Milletlerarası hukuktan doğan yükümlülükler ihlal edilemez ve her şey \"durumun gerektirdiği ölçüde\" yapılır. Maddenin son fıkrası ise hiçbir koşulda dokunulamayacak güvenceleri sayar.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Durdurmanın şartları",
+      "body": "**Ne zaman?** Savaş, seferberlik veya olağanüstü hallerde.\n\n**Hangi kayıtla?**\n- Milletlerarası hukuktan doğan yükümlülükler **ihlal edilmemek kaydıyla**\n- **Durumun gerektirdiği ölçüde**\n\n**Ne yapılabilir?**\n- Temel hak ve hürriyetlerin kullanılması **kısmen veya tamamen durdurulabilir**\n- Ya da bunlar için Anayasada öngörülen **güvencelere aykırı tedbirler** alınabilir",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Listede olmayan sebepler",
+      "body": "md 15'in saydığı durumlar savaş, seferberlik ve olağanüstü hallerdir. Şıklarda sıkıyönetim ya da \"ülkenin ani silahlı saldırıya uğraması\" görürsen dikkat et: Bunlar maddenin metninde durdurma sebebi olarak yer almaz. Soru \"hangileri sebep değildir\" diye soruyorsa cevap bu ikisidir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: \"Kısmen evet, tamamen hayır\"",
+      "body": "\"Kısmen durdurulabilir, tamamen durdurulamaz\" ve \"kısıtlanabilir ama kullanılması durdurulamaz\" şıkları yanlıştır. Metin açık: Hakların kullanılması **kısmen veya tamamen** durdurulabilir. Üstelik Anayasada öngörülen **güvencelere aykırı tedbirler** de alınabilir. Olağanüstü haller de bu durumlar arasında sayılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Durdurmada bile dokunulamayanlar",
+      "body": "Birinci fıkrada belirlenen durumlarda da şu güvenceler geçerlidir:\n- Savaş hukukuna uygun fiiller sonucu meydana gelen ölümler dışında, kişinin **yaşama hakkına, maddi ve manevi varlığının bütünlüğüne dokunulamaz**\n- Kimse **din, vicdan, düşünce ve kanaatlerini açıklamaya zorlanamaz** ve bunlardan dolayı **suçlanamaz**\n- **Suç ve cezalar geçmişe yürütülemez**\n- Suçluluğu **mahkeme kararı ile saptanıncaya kadar** kimse suçlu sayılamaz",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Savaş hukuku istisnasını ters çevirmek",
+      "body": "Yaşama hakkı durdurma döneminde de korunur, ama metin bir istisna koyar: savaş hukukuna uygun fiiller sonucu meydana gelen ölümler. Şıkta \"savaş hukukuna uygun fiiller sonucu meydana gelen ölümler de dâhil olmak üzere yaşam hakkına dokunulamaz\" yazıyorsa istisna tersine çevrilmiştir ve ifade yanlıştır. Metinde bu ölümler korumanın **dışında** bırakılır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: \"Olağanüstü hallerde zorlanabilir\"",
+      "body": "\"Kişiler ancak olağanüstü hallerde dinlerini açıklamaya zorlanabilir\" diyen şıkka kanma. md 15'in son fıkrasına göre birinci fıkradaki durumlarda da kimse din, vicdan, düşünce ve kanaatlerini açıklamaya zorlanamaz. Soru \"hangisi durdurulabilir\" ya da \"hangisi kaldırılabilir\" diye sorarsa, son fıkradaki güvenceleri tek tek ele. Bu listede yer almayan güvence cevaptır.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Sınırlama ile durdurmanın ortak ölçütü",
+      "body": "Soru, hem sınırlamada hem durdurmada aranan ölçütü sorabilir. Önce metinlere bak. \"Özlerine dokunulmaksızın\" ve \"demokratik toplum düzeninin gerekleri\" yalnızca md 13'te geçer, md 15'te geçmez. Ölçü fikri ise iki maddede de var: md 13 \"ölçülülük ilkesi\" der, md 15 \"durumun gerektirdiği ölçüde\" der.",
+      "articleRefs": [
+        "13",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancıların durumu",
+      "body": "**Temel hak ve hürriyetler, yabancılar için:**\n- **Milletlerarası hukuka uygun olarak**\n- **Kanunla**\nsınırlanabilir.\n\nBu şartlar birlikte aranır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tuzak: Formülü kırpmak ya da şişirmek",
+      "body": "Formülü eksiksiz aklında tut: **milletlerarası hukuka uygun olarak kanunla**. Yanlış şıklar formülü üç yoldan bozar. Ya kırpar: \"yalnızca kanunla\" ya da \"yalnızca milletlerarası hukuka uygun olarak\". Ya bir şey ekler: kanunun yanına kararname koyar. Ya da terimi değiştirir: \"uluslararası sözleşmelere uygun\". md 16'da terim \"milletlerarası hukuk\", araç ise yalnızca \"kanun\"dur.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılarla md 15–16",
+      "rows": [
+        {
+          "label": "md 15 — durdurmaya imkân veren durumlar (savaş, seferberlik, olağanüstü haller)",
+          "value": 3,
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 15 — durdurmanın kapsamı (kısmen, tamamen)",
+          "value": 2,
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 15 son fıkra — durdurmada bile geçerli, noktalı virgülle ayrılan güvence hükümleri",
+          "value": 4,
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 16 — yabancılar için sınırlamanın birlikte aranan şartları (milletlerarası hukuka uygunluk, kanun)",
+          "value": 2,
+          "refs": [
+            "16"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "count(['savaş','seferberlik','olağanüstü haller'])",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "count(['kısmen','tamamen'])",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count(['yaşama hakkı ve maddi-manevi bütünlük','din, vicdan, düşünce ve kanaatleri açıklamaya zorlanamama','suç ve cezaların geçmişe yürütülememesi','mahkeme kararı ile saptanıncaya kadar suçlu sayılamama'])",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "count(['milletlerarası hukuka uygun olarak','kanunla'])",
+          "refs": [
+            "16"
+          ]
+        }
+      ],
+      "counterNumbers": [],
+      "articleRefs": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Sınırlama mı, durdurma mı?",
+      "rows": [
+        {
+          "aspect": "Madde",
+          "left": "Sınırlama — md 13",
+          "right": "Durdurma — md 15",
+          "refs": [
+            "13",
+            "15"
+          ]
+        },
+        {
+          "aspect": "Hangi durumda",
+          "left": "Metinde belirli bir durum şartı yok",
+          "right": "Savaş, seferberlik veya olağanüstü haller",
+          "refs": [
+            "13",
+            "15"
+          ]
+        },
+        {
+          "aspect": "Araç ve dayanak",
+          "left": "Ancak kanunla; Anayasanın ilgili maddelerinde belirtilen sebeplere bağlı",
+          "right": "Kullanım kısmen veya tamamen durdurulabilir; güvencelere aykırı tedbirler alınabilir",
+          "refs": [
+            "13",
+            "15"
+          ]
+        },
+        {
+          "aspect": "Ölçü",
+          "left": "Ölçülülük ilkesine aykırı olamaz",
+          "right": "Durumun gerektirdiği ölçüde",
+          "refs": [
+            "13",
+            "15"
+          ]
+        },
+        {
+          "aspect": "Aşılamayan sınır",
+          "left": "Hakkın özü; Anayasanın sözü ve ruhu; demokratik toplum düzeninin ve lâik Cumhuriyetin gerekleri",
+          "right": "Milletlerarası hukuktan doğan yükümlülükler; son fıkradaki güvenceler",
+          "refs": [
+            "13",
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "15"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "14",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        },
+        {
+          "label": "md 15 — Temel hak ve hürriyetlerin kullanılmasının durdurulması",
+          "value": "8 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "md 16 — Yabancıların durumu",
+          "value": "3 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md 13 — Temel hak ve hürriyetlerin sınırlanması",
+          "value": "2 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "md 12 — Temel hak ve hürriyetlerin niteliği",
+          "value": "1 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 14",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 12–16, 10 soru",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        }
+      ]
+    }
+  ]
+}

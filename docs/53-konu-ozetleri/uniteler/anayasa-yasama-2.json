@@ -1,0 +1,785 @@
+{
+  "unit": {
+    "slug": "anayasa-yasama-2",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Yasama II — Meclis ne yapar",
+    "subtitle": "Görev ve yetkiler, kanun yapımı, toplanma ve karar, denetim yolları",
+    "articleFrom": "87",
+    "articleTo": "100",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 87–100",
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 8
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Meclis'in iş listesi",
+      "articleRefs": [
+        "87"
+      ],
+      "body": "Bu ünitede Meclis'i iş başında görüyorsun. Kanun koyar, değiştirir ve kaldırır. Bütçe ve kesinhesap kanun tekliflerini görüşüp kabul eder. Para basılmasına ve savaş ilânına karar verir. Milletlerarası andlaşmaların onaylanmasını uygun bulur. Genel ve özel af ilân eder. md 87 bu işleri tek cümlede sayar. O cümleyi iyi bilirsen 'hangisi Meclis'in görevi değildir?' sorularının yarısı kendiliğinden çözülür. Ünitenin geri kalanı bu listeyi madde madde açıyor."
+    },
+    {
+      "type": "rule",
+      "title": "TBMM'nin görev ve yetkileri",
+      "articleRefs": [
+        "87",
+        "75"
+      ],
+      "body": "**TBMM'nin görev ve yetkileri (md 87):**\n- Kanun koymak, değiştirmek ve kaldırmak\n- Bütçe ve kesinhesap kanun tekliflerini görüşmek ve kabul etmek\n- Para basılmasına ve savaş ilânına karar vermek\n- Milletlerarası andlaşmaların onaylanmasını uygun bulmak\n- **Genel ve özel af** ilânına karar vermek: **üye tamsayısının beşte üç çoğunluğunun kararı** ile\n- Anayasanın diğer maddelerinde öngörülen yetkileri kullanmak ve görevleri yerine getirmek\n\nMaddede çoğunluk oranı yazılan tek iş af ilânıdır. TBMM 600 milletvekilinden oluşur, bu yüzden af için en az 360 oy gerekir.",
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "87"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Görev listesinde olmayanlar",
+      "articleRefs": [
+        "87",
+        "89",
+        "91",
+        "75"
+      ],
+      "body": "Soru kökü 'hangisi TBMM'nin görevi değildir?' diye geliyorsa şu çeldiricilere dikkat et:\n- **Kanunları yayımlamak** Meclis'in değil, Cumhurbaşkanının işidir (md 89). Meclis kabul eder, Cumhurbaşkanı yayımlar.\n- Kanun hükmünde kararname çıkarma yetkisi vermeyi düzenleyen md 91 mülgadır. 'KHK'yı onaylamak, değiştirmek veya reddetmek' diye bir görev arama.\n- **Olağanüstü hâl ilân etmek** md 87 listesinde geçmez.\n- Af için 'katılanların beşte üçü' yazan şık yanlıştır. Oran **üye tamsayısı** üzerinden hesaplanır, yani oturuma kaç kişi katılırsa katılsın eşik 360'tır.",
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "87"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanun teklifi ve yayımlanma",
+      "articleRefs": [
+        "88",
+        "89"
+      ],
+      "body": "**Teklif (md 88):** Kanun teklif etmeye **milletvekilleri** yetkilidir. Tekliflerin Meclis'te görüşülme usul ve esasları **içtüzükle** düzenlenir.\n\n**Yayım (md 89):**\n- Cumhurbaşkanı, TBMM'nin kabul ettiği kanunları **onbeş gün içinde** yayımlar.\n- Kısmen veya tamamen uygun bulmadığı kanunları, **gösterdiği gerekçe ile birlikte** ve **aynı süre içinde**, bir daha görüşülmek üzere Meclis'e geri gönderir.\n- Kısmen uygun bulmama durumunda Meclis **sadece uygun bulunmayan maddeleri** görüşebilir.\n- **İstisna:** Bütçe kanunları bu hükme tabi değildir.\n- Meclis geri gönderilen kanunu **üye tamsayısının salt çoğunluğuyla aynen kabul** ederse, kanun Cumhurbaşkanınca yayımlanır.\n- Meclis geri gönderilen kanunda yeni bir değişiklik yaparsa, Cumhurbaşkanı değiştirilen kanunu **tekrar** geri gönderebilir.\n- Anayasa değişikliklerine ilişkin hükümler saklıdır."
+    },
+    {
+      "type": "trap",
+      "title": "Geri gönderme: en çok karıştırılanlar",
+      "articleRefs": [
+        "88",
+        "89",
+        "75"
+      ],
+      "body": "- Süre **15 gün**. Yayım için de geri gönderme için de aynı süre geçerlidir. 'On gün' diyen şık yanlış.\n- Cumhurbaşkanı kanunu bölerek gönderemez. Kanunu kısmen uygun bulmasa da geri gönderdiği şey kanunun kendisidir. 'İtiraz etmediği kısmı yayımlar' şıkkı yanlış. Seçim hakkı Meclis'tedir: isterse yalnız uygun bulunmayan maddeleri görüşür.\n- Geri gönderme sebebi Anayasaya aykırılıkla sınırlı değildir. Madde yalnızca 'uygun bulmadığı' der.\n- Aynen kabul için **üye tamsayısının salt çoğunluğu** gerekir, yani 600 üyede 301. 'Katılanların salt çoğunluğu' ya da 'basit çoğunluk' çeldiricidir.\n- Meclis aynen kabul ettikten sonraki yayım için maddede ayrı bir süre yazmaz.\n- Bütçe kanunları geri gönderilemez.\n- Kanun teklifini milletvekilleri verir. Cumhurbaşkanı teklif veremez.",
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "89"
+          ]
+        }
+      ],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Milletlerarası andlaşmaları uygun bulma",
+      "articleRefs": [
+        "90"
+      ],
+      "body": "**Kural:** Türkiye Cumhuriyeti adına yabancı devletlerle ve milletlerarası kuruluşlarla yapılacak andlaşmaların onaylanması, TBMM'nin onaylamayı **bir kanunla uygun bulmasına** bağlıdır.\n\n**İstisna: yayımla yürürlük.** Ekonomik, ticari veya teknik ilişkileri düzenleyen ve **süresi bir yılı aşmayan** andlaşmalar şu şartlarla yayımlanma ile yürürlüğe konabilir:\n- Devlet Maliyesi bakımından bir yüklenme getirmemek\n- Kişi hallerine dokunmamak\n- Türklerin yabancı memleketlerdeki mülkiyet haklarına dokunmamak\n\nBu andlaşmalar yayımlarından başlayarak **iki ay içinde** TBMM'nin bilgisine sunulur.\n\n**Uygun bulma gerekmeyenler:** Milletlerarası bir andlaşmaya dayanan uygulama andlaşmaları ile kanunun verdiği yetkiye dayanılarak yapılan ekonomik, ticari, teknik veya idari andlaşmalar. Bunlardan ekonomik, ticari veya özel kişilerin haklarını ilgilendirenler **yayımlanmadan yürürlüğe konulamaz**.\n\n**İstisnaya kapalı olan:** Türk kanunlarına değişiklik getiren her türlü andlaşmada birinci fıkra, yani kanunla uygun bulma uygulanır.\n\n**Etkisi:** Usulüne göre yürürlüğe konulmuş milletlerarası andlaşmalar **kanun hükmündedir**. Bunlar hakkında Anayasaya aykırılık iddiası ile Anayasa Mahkemesine **başvurulamaz**. Temel hak ve özgürlüklere ilişkin andlaşmalarla kanunlar aynı konuda farklı hükümler içerirse **andlaşma hükümleri esas alınır**."
+    },
+    {
+      "type": "trap",
+      "title": "Andlaşma sorularında dikkat",
+      "articleRefs": [
+        "90"
+      ],
+      "body": "- Süre sınırı **bir yıl**, bilgiye sunma süresi **iki ay**. Bu ikisinin yerini değiştiren şıklar çok gelir. Üç ay ya da altı ay diyen şıklar da yanlıştır.\n- Şart **mülkiyet hakları**dır. 'Sosyal ve ekonomik haklar' diye değiştirilmiş şık yanlış.\n- Türk kanunlarını değiştiren bir andlaşma, süresi bir yılı aşmasa bile yayımla yürürlüğe giremez. Kanunla uygun bulma şarttır.\n- Andlaşmalar **kanun hükmündedir**. 'Konusuna göre Cumhurbaşkanlığı kararnamesi hükmündedir' ifadesi yanlış.\n- Anayasa Mahkemesine aykırılık iddiasıyla **başvurulamaz**. 'Başvurulur' diyen öncül yanlış.\n- Temel hak ve özgürlük çatışmasında **andlaşma** esas alınır, kanun değil.\n- Meclis burada onaylamayı **bir kanunla** uygun bulur. Bu işlemi 'parlamento kararı' sayan şıkka kanma.",
+      "counterNumbers": [
+        3,
+        6
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Savaş hali ve silahlı kuvvet kullanma",
+      "articleRefs": [
+        "92"
+      ],
+      "body": "**TBMM'nin yetkileri:**\n- Milletlerarası hukukun meşru saydığı hallerde **savaş hali ilânı**\n- Türk Silahlı Kuvvetlerinin **yabancı ülkelere gönderilmesine** izin verme\n- **Yabancı silahlı kuvvetlerin Türkiye'de bulunmasına** izin verme\n\nTürkiye'nin taraf olduğu milletlerarası andlaşmaların veya milletlerarası nezaket kurallarının gerektirdiği haller bu iznin dışındadır.\n\n**Cumhurbaşkanı da karar verebilir.** Bunun için şu şartların hepsi gerekir:\n- TBMM **tatilde veya ara vermede** olmalı\n- Ülke **ani bir silahlı saldırıya** uğramış olmalı\n- Bu sebeple silahlı kuvvet kullanılmasına **derhal** karar verilmesi kaçınılmaz olmalı\n\nBu durumda Cumhurbaşkanı Türk Silahlı Kuvvetlerinin kullanılmasına karar verebilir. Bakanlar, Cumhurbaşkanı yardımcıları ve TBMM Başkanı bu maddede yetkili olarak geçmez."
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: görevler, kanun, andlaşma",
+      "articleRefs": [
+        "75",
+        "87",
+        "89",
+        "90"
+      ],
+      "rows": [
+        {
+          "label": "TBMM üye tamsayısı",
+          "value": "600",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Genel ve özel af için çoğunluk",
+          "value": "Üye tamsayısının beşte üçü",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Af: 600 üyede en az kabul oyu",
+          "value": "360",
+          "refs": [
+            "75",
+            "87"
+          ]
+        },
+        {
+          "label": "Cumhurbaşkanının yayım süresi",
+          "value": "15 gün",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Geri gönderme süresi",
+          "value": "15 gün (aynı süre)",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Geri gönderilen kanunun aynen kabulü",
+          "value": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "Aynen kabul: 600 üyede",
+          "value": "301",
+          "refs": [
+            "75",
+            "89"
+          ]
+        },
+        {
+          "label": "Yayımla yürürlüğe girebilen andlaşmanın azami süresi",
+          "value": "1 yıl",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "Bu andlaşmaların TBMM'nin bilgisine sunulması",
+          "value": "Yayımdan itibaren 2 ay içinde",
+          "refs": [
+            "90"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 360,
+          "expr": "600 * 3 / 5",
+          "refs": [
+            "75",
+            "87"
+          ]
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "89"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplanma ve tatil",
+      "articleRefs": [
+        "93"
+      ],
+      "body": "- TBMM her yıl **Ekim ayının ilk günü kendiliğinden** toplanır.\n- Bir yasama yılında **en çok üç ay** tatil yapabilir.\n- Ara verme veya tatil sırasında **Cumhurbaşkanınca** toplantıya çağrılır.\n- **Meclis Başkanı** da Meclis'i toplantıya çağırır. Bunu **doğrudan doğruya** ya da **üyelerin beşte birinin yazılı istemi** üzerine yapar.\n- Ara verme veya tatil sırasında toplanan Meclis'te, **öncelikle bu toplantıyı gerektiren konu** görüşülmeden ara verme veya tatile devam edilemez."
+    },
+    {
+      "type": "trap",
+      "title": "Kim çağırır, ne zaman toplanır?",
+      "articleRefs": [
+        "93",
+        "75"
+      ],
+      "body": "- 'Ekim ayının ilk **iş** günü' yazan şık yanlış. Metin 'ilk günü' der. Eylül ve Kasım da sık kullanılan çeldiricilerdir.\n- Meclis'i toplantıya çağırabilen iki makam vardır: **Cumhurbaşkanı** ve **Meclis Başkanı**. Cumhurbaşkanı yardımcıları, bakanlar ve genel sekreter bu maddede geçmez. 'Cumhurbaşkanı yardımcılarının istemi üzerine' kurgusu da yanlış.\n- Üyelerin beşte biri Meclis'i kendisi çağırmaz. Meclis Başkanından yazılı olarak **ister**, çağıran yine Başkandır.\n- Beşte bir, 600 üyede **120** milletvekili eder.\n- Tatil sınırı yıllık **üç ay**dır.",
+      "derivedNumbers": [
+        {
+          "value": 120,
+          "expr": "600 / 5",
+          "refs": [
+            "75",
+            "93"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başkanlık Divanı",
+      "articleRefs": [
+        "94"
+      ],
+      "body": "- **Oluşum:** Meclis üyeleri arasından seçilen Meclis Başkanı, Başkanvekilleri, Katip üyeler ve İdare Amirleri.\n- Divan, siyasi parti gruplarının **üye sayısı oranında** katılmalarını sağlayacak şekilde kurulur.\n- Siyasi parti grupları **Başkanlık için aday gösteremez**.\n- Bir yasama döneminde **iki seçim** yapılır. İlk seçilenlerin görev süresi **iki yıl**dır. İkinci devre için seçilenlerin görevi o yasama döneminin sonuna kadar sürer.\n- Başkanvekili, Katip Üye ve İdare Amirlerinin adedi, seçim nisabı, oylama sayısı ve usulleri **Meclis İçtüzüğünde** belirlenir.\n- **Tarafsızlık:** Başkan ve Başkanvekilleri, üyesi bulundukları partinin veya parti grubunun Meclis içindeki ve dışındaki faaliyetlerine katılamaz. Görevlerinin gereği olan haller dışında Meclis tartışmalarına da katılamazlar.\n- **Başkan** ve **oturumu yöneten Başkanvekili** oy kullanamaz."
+    },
+    {
+      "type": "rule",
+      "title": "Meclis Başkanının seçimi",
+      "articleRefs": [
+        "94"
+      ],
+      "body": "- Adaylar Meclis üyeleri içinden, Meclisin toplandığı günden itibaren **beş gün** içinde Başkanlık Divanına bildirilir.\n- Seçim **gizli oyla** yapılır.\n- **İlk iki oylama:** üye tamsayısının **üçte iki**si aranır.\n- **Üçüncü oylama:** üye tamsayısının **salt çoğunluğu** aranır.\n- **Dördüncü oylama:** üçüncü oylamada en çok oy alan **iki aday** arasında yapılır. En fazla oy alan üye Başkan seçilir.\n- Seçim, aday gösterme süresinin bitiminden itibaren **beş gün** içinde tamamlanır."
+    },
+    {
+      "type": "trap",
+      "title": "Divan ve Başkan seçimi tuzakları",
+      "articleRefs": [
+        "94",
+        "75"
+      ],
+      "body": "- Divan için bir yasama döneminde **iki** seçim yapılır. Başka bir sayı yazan şık yanlış.\n- Boşluk doldurma sorusunda ikili hazır olsun: aday bildirme süresi **beş gün**, oy **gizli**.\n- Dördüncü oylama mutlaka sonuç verir, çünkü en fazla oy alan seçilir. 'Seçilemezse Meclis seçimleri yenilenir' türü şıklar yanlış.\n- Üçüncü oylamada aranan, toplantıya katılanların değil **üye tamsayısının** salt çoğunluğudur: 600 üyede 301. İlk iki oylamadaki üçte iki ise 400 eder.\n- Oy yasağı Başkan ve **oturumu yöneten** Başkanvekili içindir. Başkan, oturumu yönetmediği zaman da oy kullanamaz.\n- 'Parti grupları Başkanlığa aday gösterebilir' şıkkı yanlış.",
+      "derivedNumbers": [
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "94"
+          ]
+        },
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "94"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İçtüzük, parti grupları ve Meclis'te kolluk",
+      "articleRefs": [
+        "95"
+      ],
+      "body": "- TBMM çalışmalarını **kendi yaptığı içtüzük** hükümlerine göre yürütür.\n- İçtüzük, siyasi parti gruplarının Meclis'in bütün faaliyetlerine **üye sayısı oranında** katılmalarını sağlayacak yolda düzenlenir.\n- Siyasi parti grupları **en az yirmi üyeden** meydana gelir.\n- Meclis'in bütün bina, tesis, eklenti ve arazisinde **kolluk ve yönetim hizmetleri Meclis Başkanlığı eliyle** düzenlenir ve yürütülür.\n- Emniyet ve diğer kolluk hizmetleri için **yeteri kadar kuvvet**, ilgili makamlarca Meclis Başkanlığına **tahsis edilir**.\n\n**Dikkat:** Grup eşiği yirmidir. 'On milletvekili' diyen şık yanlış. Kaç partinin grup kurabileceği sorulursa yirmi ve üzeri üyesi olan partileri say.",
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve karar yeter sayısı",
+      "articleRefs": [
+        "96"
+      ],
+      "body": "**Toplantı yeter sayısı:** TBMM, **yapacağı seçimler dahil** bütün işlerinde **üye tamsayısının en az üçte biri** ile toplanır.\n\n**Karar yeter sayısı:** Anayasada başkaca bir hüküm yoksa **toplantıya katılanların salt çoğunluğu** ile karar verir.\n\n**Taban:** Karar yeter sayısı hiçbir şekilde **üye tamsayısının dörtte birinin bir fazlasından** az olamaz."
+    },
+    {
+      "type": "trap",
+      "title": "Yeter sayı hesabında düşülen hatalar",
+      "articleRefs": [
+        "96",
+        "87",
+        "75"
+      ],
+      "body": "Hesap sorularında şu sırayı izle:\n- **Toplantı yeter sayısı** her zaman üye tamsayısı üzerinden hesaplanır: 600 üyede 200. Seçimler de bu kuralın içindedir. 'Seçimler toplantı yeter sayısı kuralının dışındadır' şıkkı yanlış.\n- **Karar** için katılanların salt çoğunluğu aranır, ama sonuç 151'in altına düşemez. Örnek: Meclis tam 200 üyeyle toplandıysa katılanların salt çoğunluğu 101 eder. Taban 151 olduğu için en az 151 kabul oyu gerekir.\n- 'Karar yeter sayısı en az kaç olabilir?' sorusunun cevabı 151'dir, 301 değil. 301 üye tamsayısının salt çoğunluğudur ve genel karar yeter sayısı değildir.\n- md 87, bütçe, kesinhesap ve savaş ilânı için ayrı bir çoğunluk yazmaz. Bunlarda md 96'daki genel kural işler. md 87'de çoğunluk yazan iş yalnızca af ilânıdır: üye tamsayısının beşte üçü.",
+      "derivedNumbers": [
+        {
+          "value": 200,
+          "expr": "600 / 3",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "value": 151,
+          "expr": "600 / 4 + 1",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "value": 101,
+          "expr": "floor(200 / 2) + 1",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "96"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görüşmelerin açıklığı ve yayımlanması",
+      "articleRefs": [
+        "97"
+      ],
+      "body": "- Genel Kurul'daki görüşmeler **açıktır** ve **tutanak dergisinde tam olarak** yayımlanır.\n- TBMM, İçtüzük hükümlerine göre **kapalı oturum** yapabilir. Bu oturumlardaki görüşmelerin yayımı **TBMM kararına** bağlıdır.\n- Açık görüşmelerin her türlü vasıta ile yayımı **serbesttir**. Bunun tek istisnası, o oturumdaki Başkanlık Divanının teklifi üzerine Meclis'in başkaca bir karar almasıdır."
+    },
+    {
+      "type": "rule",
+      "title": "Bilgi edinme ve denetim yolları",
+      "articleRefs": [
+        "98"
+      ],
+      "body": "TBMM bilgi edinme ve denetleme yetkisini yalnızca şu yollarla kullanır:\n- **Meclis araştırması:** belli bir konuda bilgi edinmek için yapılan incelemedir.\n- **Genel görüşme:** toplumu ve Devlet faaliyetlerini ilgilendiren belli bir konunun **Genel Kurulda** görüşülmesidir.\n- **Meclis soruşturması:** **Cumhurbaşkanı yardımcıları ve bakanlar** hakkında md 106 uyarınca yapılan soruşturmadır.\n- **Yazılı soru:** milletvekillerinin Cumhurbaşkanı yardımcıları ve bakanlara yazılı olarak soru sormasıdır. Soru **en geç onbeş gün** içinde yazılı olarak cevaplanır.\n\nMeclis araştırması, genel görüşme ve yazılı soru önergelerinin verilme şekli, içeriği ve kapsamı ile araştırma usulleri **Meclis İçtüzüğü** ile düzenlenir."
+    },
+    {
+      "type": "trap",
+      "title": "Denetim yollarında çeldiriciler",
+      "articleRefs": [
+        "98",
+        "99",
+        "100"
+      ],
+      "body": "- Listede **gensoru** ve **sözlü soru** yoktur. Gensoru başlıklı md 99 da, Meclis soruşturması başlıklı md 100 de mülgadır. Meclis soruşturmasının tanımı md 98'de yer alır.\n- Yazılı sorunun muhatabı **Cumhurbaşkanı yardımcıları ve bakanlar**dır. Cumhurbaşkanı da TBMM Başkanı da muhatap değildir. 'Cumhurbaşkanı yardımcılarına sorulamaz' şıkkı yanlış.\n- Cevap süresi **15 gün**dür. Otuz gün diyen şık yanlış.\n- Meclis soruşturması **milletvekilleri** hakkında yapılmaz. Muhatabı Cumhurbaşkanı yardımcıları ve bakanlardır.\n- 'Güvenlik soruşturması' ya da 'arşiv araştırması' gibi kulağa tanıdık gelen adlar da listede yoktur.",
+      "counterNumbers": [
+        30
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: toplanma, Divan, yeter sayılar, denetim",
+      "articleRefs": [
+        "75",
+        "93",
+        "94",
+        "95",
+        "96",
+        "98"
+      ],
+      "rows": [
+        {
+          "label": "Kendiliğinden toplanma",
+          "value": "Her yıl Ekim ayının ilk günü",
+          "refs": [
+            "93"
+          ]
+        },
+        {
+          "label": "Yıllık azami tatil",
+          "value": "3 ay",
+          "refs": [
+            "93"
+          ]
+        },
+        {
+          "label": "Meclis Başkanından toplantı istemi",
+          "value": "Üyelerin beşte biri (600 üyede 120)",
+          "refs": [
+            "75",
+            "93"
+          ]
+        },
+        {
+          "label": "Başkanlık Divanı seçimi",
+          "value": "Bir yasama döneminde 2",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "İlk seçilen Divanın görev süresi",
+          "value": "2 yıl",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Başkan adaylarının bildirilmesi",
+          "value": "Toplanma gününden itibaren 5 gün",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Başkan seçiminin tamamlanması",
+          "value": "Aday gösterme süresinin bitiminden itibaren 5 gün",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Başkan seçimi, ilk iki oylama",
+          "value": "Üye tamsayısının üçte ikisi (600 üyede 400)",
+          "refs": [
+            "75",
+            "94"
+          ]
+        },
+        {
+          "label": "Başkan seçimi, üçüncü oylama",
+          "value": "Üye tamsayısının salt çoğunluğu (600 üyede 301)",
+          "refs": [
+            "75",
+            "94"
+          ]
+        },
+        {
+          "label": "Başkan seçimi, dördüncü oylama",
+          "value": "En çok oy alan 2 aday arasında; en fazla oy alan seçilir",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Siyasi parti grubu",
+          "value": "En az 20 üye",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "Toplantı yeter sayısı",
+          "value": "Üye tamsayısının üçte biri (600 üyede 200)",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısı",
+          "value": "Toplantıya katılanların salt çoğunluğu",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "Karar yeter sayısının tabanı",
+          "value": "Üye tamsayısının dörtte birinin bir fazlası (600 üyede 151)",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "label": "Yazılı soruya cevap",
+          "value": "En geç 15 gün",
+          "refs": [
+            "98"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 120,
+          "expr": "600 / 5",
+          "refs": [
+            "75",
+            "93"
+          ]
+        },
+        {
+          "value": 400,
+          "expr": "600 * 2 / 3",
+          "refs": [
+            "75",
+            "94"
+          ]
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "94"
+          ]
+        },
+        {
+          "value": 200,
+          "expr": "600 / 3",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "value": 151,
+          "expr": "600 / 4 + 1",
+          "refs": [
+            "75",
+            "96"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Katılanların salt çoğunluğu mu, üye tamsayısının salt çoğunluğu mu?",
+      "articleRefs": [
+        "75",
+        "89",
+        "94",
+        "96"
+      ],
+      "rows": [
+        {
+          "aspect": "Kavram",
+          "left": "Toplantıya katılanların salt çoğunluğu",
+          "right": "Üye tamsayısının salt çoğunluğu",
+          "refs": [
+            "89",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Neye göre hesaplanır",
+          "left": "O oturuma katılan üye sayısına göre",
+          "right": "Meclis'in üye tamsayısına göre",
+          "refs": [
+            "89",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Sayı",
+          "left": "Katılıma göre değişir; 151'in altına inemez",
+          "right": "600 üyede her zaman 301",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Nerede aranır",
+          "left": "Anayasada başkaca hüküm yoksa bütün kararlarda",
+          "right": "Geri gönderilen kanunun aynen kabulünde; Başkan seçiminin üçüncü oylamasında",
+          "refs": [
+            "89",
+            "94",
+            "96"
+          ]
+        },
+        {
+          "aspect": "Tipik çeldirici",
+          "left": "'Genel karar yeter sayısı 301'dir'",
+          "right": "'Geri gönderilen kanun katılanların salt çoğunluğuyla kabul edilir'",
+          "refs": [
+            "89",
+            "96"
+          ]
+        }
+      ],
+      "derivedNumbers": [
+        {
+          "value": 151,
+          "expr": "600 / 4 + 1",
+          "refs": [
+            "75",
+            "96"
+          ]
+        },
+        {
+          "value": 301,
+          "expr": "floor(600 / 2) + 1",
+          "refs": [
+            "75",
+            "89",
+            "94"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "65",
+          "refs": [
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100"
+          ]
+        },
+        {
+          "label": "md 90 — Milletlerarası andlaşmaları uygun bulma",
+          "value": "11 soru",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "md 96 — Toplantı ve karar yeter sayısı",
+          "value": "10 soru",
+          "refs": [
+            "96"
+          ]
+        },
+        {
+          "label": "md 89 — Kanunların Cumhurbaşkanınca yayımlanması",
+          "value": "9 soru",
+          "refs": [
+            "89"
+          ]
+        },
+        {
+          "label": "md 87 — Genel olarak",
+          "value": "8 soru",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "md 94 — Başkanlık Divanı",
+          "value": "8 soru",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 91, md 97, md 99, md 100",
+          "refs": [
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 87–100, 10 soru",
+          "refs": [
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100"
+          ]
+        }
+      ]
+    }
+  ]
+}

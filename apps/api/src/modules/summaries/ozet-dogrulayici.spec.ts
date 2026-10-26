@@ -66,6 +66,10 @@ describe('sayı çıkarımı', () => {
     const t = '1. İstifa\n2. Kesin hüküm (md 84/2)\n3. 85. maddeye göre 7 gün içinde';
     expect(extractNumbers(t).sort((a, b) => a - b)).toEqual([7]);
   });
+  it('madde aralığı ("md 1–6", "md 12-14") sayı değildir', () => {
+    expect(extractNumbers('md 1–6 sayılarla: 7 gün').sort((a, b) => a - b)).toEqual([7]);
+    expect(extractNumbers('Sayılarla md 12-14')).toEqual([]);
+  });
   it('yüzde ve süre sayıları alınır', () => {
     expect(extractNumbers('yüzde 5 boşalma, 30 ay, 3 ay içinde').sort((a, b) => a - b)).toEqual([3, 5, 30]);
   });

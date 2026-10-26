@@ -7,6 +7,7 @@
 import type { Prisma, PrismaClient } from '@prisma/client';
 import {
   fillGeneratedBlocks,
+  normalizeCounterNumbers,
   unitArticleNos,
   validateUnit,
   type ArticleText,
@@ -162,7 +163,7 @@ export async function importUnit(
     body: b.body ?? null,
     rows: (b.rows ?? undefined) as Prisma.InputJsonValue | undefined,
     derivedNumbers: (b.derivedNumbers ?? undefined) as Prisma.InputJsonValue | undefined,
-    counterNumbers: b.counterNumbers ?? [],
+    counterNumbers: normalizeCounterNumbers(b.counterNumbers),
     generated: Boolean(b.generated),
     sortOrder: i,
     status: 'in_review' as const,

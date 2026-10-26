@@ -107,7 +107,7 @@ export function numberInTexts(n: number, texts: string[]): boolean {
 export function extractNumbers(text: string): number[] {
   const t = text
     .replace(/(^|\n)\s*\d+\.\s/g, '$1 ') // liste numarası: "1. ", "2. "
-    .replace(/\bmd\.?\s*\d+(\/\d+)?/gi, ' ') // madde atfı: "md 84", "md 84/2"
+    .replace(/\bmd\.?\s*\d+(\/\d+)?(\s*[–-]\s*\d+)?/gi, ' ') // madde atfı: "md 84", "md 84/2", "md 1–6"
     .replace(/\b\d+(\/\d+)?\.\s*madde/gi, ' ') // "84. madde", "84/2. madde"
     .replace(/\b\d+\/\d+\b/g, ' '); // fıkra kesri
   const out = new Set<number>();
@@ -136,6 +136,14 @@ export function blockText(b: Pick<SummaryBlockJson, 'title' | 'body' | 'rows'>):
 }
 
 const ROW_TYPES = new Set(['numbers', 'compare', 'exam_stats', 'bridge']);
+
+/** counterNumbers: sayı dizisi; model bazen `{value, note}` nesnesi yazar, ikisi de kabul. */
+export function normalizeCounterNumbers(v: unknown): number[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .map((x) => (typeof x === 'number' ? x : x && typeof x === 'object' && 'value' in x ? Number((x as { value: unknown }).value) : NaN))
+    .filter((n) => Number.isFinite(n));
+}
 /** Formül işlenenlerinden metinde aranmayan sabitler (yarı, yüzde, +1). */
 const SERBEST_ISLENEN = new Set([1, 2, 100]);
 
@@ -177,7 +185,7 @@ export function validateBlock(
 
   const refTexts = b.articleRefs.map((n) => articles.get(n)?.text ?? '');
   const derived = b.derivedNumbers ?? [];
-  const counters = b.counterNumbers ?? [];
+  const counters = normalizeCounterNumbers(b.counterNumbers);
   for (const n of extractNumbers(blockText(b))) {
     if (counters.includes(n)) {
       if (numberInTexts(n, refTexts)) bad(`${n} karşı örnek olarak verilmiş ama referans metninde GEÇİYOR`);

@@ -1,0 +1,530 @@
+{
+  "unit": {
+    "slug": "anayasa-kisi-haklari-2",
+    "legislationSlug": "t-c-anayasasi",
+    "topicId": "716f57ed-9618-41e0-8079-74d264f33abc",
+    "title": "Kişi hakları II",
+    "subtitle": "İfade, basın, dernek, toplantı, mülkiyet, hak arama, suç ve ceza",
+    "articleFrom": "27",
+    "articleTo": "40",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — T.C. Anayasası, md 27–40",
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitede neler var?",
+      "body": "Bu ünite, sesini duyurduğun kanallarla başlıyor: bilim ve sanat, basın, süreli ve süresiz yayın, düzeltme ve cevap. Sonra başkalarıyla birlikte hareket etmenin iki yoluna geçiyor: dernek kurmak ve toplantı, gösteri yürüyüşü düzenlemek. Ardından mülkiyet ve miras geliyor. Son durak yargı güvenceleri: hak arama, kanuni hâkim, suç ve cezalara ilişkin esaslar, ispat hakkı ve hakların korunması. Okurken iki soruyu hep aklında tut. Birincisi, bu hüküm hangi başlığın altında? İkincisi, bu hak hangi sebeplerle sınırlanabiliyor, yoksa hiç sınırlama sebebi sayılmamış mı?",
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilim ve sanat hürriyeti",
+      "body": "**Herkes**, bilim ve sanatı serbestçe öğrenme ve öğretme, açıklama, yayma ve bu alanlarda her türlü araştırma hakkına sahiptir.\n\n- **Sınır:** Yayma hakkı, Anayasanın md 1, md 2 ve md 3 hükümlerinin değiştirilmesini sağlamak amacıyla kullanılamaz.\n- **Saklı hüküm:** Bu madde, yabancı yayınların ülkeye girmesinin ve dağıtımının kanunla düzenlenmesine engel değildir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Basın hürriyeti: sansür yok, denetim hâkimde",
+      "body": "- **Basın hürdür, sansür edilemez.**\n- Basımevi kurmak **izin alma** ve **mali teminat yatırma** şartına bağlanamaz.\n- Devlet, basın ve haber alma hürriyetlerini sağlayacak tedbirleri alır.\n- Basın hürriyetinin sınırlanmasında **md 26 ve md 27** uygulanır.\n- **Sorumluluk:** Devletin iç ve dış güvenliğini, ülkesi ve milletiyle bölünmez bütünlüğünü tehdit eden, suç işlemeye, ayaklanma veya isyana teşvik eden ya da Devlete ait gizli bilgilere ilişkin haber veya yazıyı yazanlar, bastıranlar, aynı amaçla basanlar ve başkasına verenler, ilgili suç hükümlerine göre sorumlu olur.\n- **Dağıtımın önlenmesi:** Kural olarak hâkim kararıyla yapılır. Gecikmesinde sakınca bulunan hallerde kanunun açıkça yetkili kıldığı merciin emriyle de yapılabilir. Merci kararını en geç **24 saat** içinde yetkili hâkime bildirir. Hâkim **48 saat** içinde onaylamazsa karar hükümsüz sayılır.\n- **Yayım yasağı:** Olaylar hakkında yayım yasağı konamaz. Yargılama görevinin amacına uygun yerine getirilmesi için, kanunla belirtilecek sınırlar içinde hâkimin verdiği kararlar saklıdır.\n- **Toplatma:** Kanunun gösterdiği suçların soruşturma veya kovuşturmasına geçilmişse hâkim kararıyla yapılır. Gecikmesinde sakınca bulunan hallerde kanunun açıkça yetkili kıldığı merciin emriyle de yapılabilir. Bu hallerin sebepleri ülke ve millet bütünlüğü, millî güvenlik, kamu düzeni, genel ahlâkın korunması ve suçların önlenmesidir. Burada da aynı süreler geçerlidir: **24 saat** içinde bildirim, **48 saat** içinde onay; onay yoksa karar hükümsüz.\n- **Zapt ve müsadere:** Yayınların suç soruşturması veya kovuşturması sebebiyle zapt ve müsaderesinde genel hükümler uygulanır.\n- **Kapatma:** Türkiye'de yayımlanan süreli yayınlar, belirli aykırı yayımlardan mahkûm olma halinde **mahkeme kararıyla geçici olarak** kapatılabilir. Bu yayımlar Devletin ülkesi ve milletiyle bölünmez bütünlüğüne, Cumhuriyetin temel ilkelerine, millî güvenliğe ve genel ahlâka aykırı olanlardır. Kapatılan yayının açıkça devamı niteliğindeki yayın yasaktır ve hâkim kararıyla toplatılır.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Toplatma sebeplerinde özel hayatı arama",
+      "body": "Sana toplatma sebeplerinden oluşan bir liste verip hangisinin açıkça sayılmadığını sorarlar. Metindeki sebepler şunlar: Devletin ülkesi ve milletiyle bölünmez bütünlüğü, millî güvenlik, kamu düzeni, genel ahlâkın korunması ve suçların önlenmesi. **Özel hayatın gizliliği bu listede yok.** Kulağa makul gelse de şıkta görünce eleyebilirsin.\n\nİki noktaya daha dikkat et. Merciin emriyle verilen toplatma veya dağıtımı önleme kararı hâkim onayı almazsa ayakta kalamaz. Kapatma hükmü ise yalnız süreli yayınlar için yazılmıştır ve kapatma ancak mahkeme kararıyla, **geçici olarak** yapılabilir.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Süreli ve süresiz yayın hakkı",
+      "body": "- Süreli veya süresiz yayın **önceden izin alma** ve **mali teminat yatırma** şartına bağlanamaz.\n- Süreli yayın çıkarabilmek için kanunun gösterdiği bilgi ve belgelerin, kanunda belirtilen yetkili mercie **verilmesi yeterlidir.**\n- Bu bilgi ve belgelerin kanuna aykırı olduğu tespit edilirse yetkili merci, yayının durdurulması için **mahkemeye başvurur.**\n- Süreli yayınların çıkarılması, yayım şartları, mali kaynakları ve gazetecilik mesleğiyle ilgili esaslar kanunla düzenlenir. Kanun, haber, düşünce ve kanaatlerin serbestçe yayımlanmasını engelleyen veya zorlaştıran siyasal, ekonomik, mali ve teknik şartlar koyamaz.\n- Süreli yayınlar, Devletin ve diğer kamu tüzelkişilerinin veya bunlara bağlı kurumların araç ve imkânlarından **eşitlik esasına göre** yararlanır.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Süreli yayın: izin değil, bilgi ve belge",
+      "body": "Süreli yayın çıkarmanın ön koşulu sorulduğunda tek doğru cevap şudur: kanunun gösterdiği bilgi ve belgeleri kanunda belirtilen yetkili mercie vermek. Bakanlıktan ya da bir cemiyetten izin almak gerekmez. Mali teminat yatırmak da gerekmez. Ayrıca olumlu cevap beklenecek bir süre de yoktur. Şıkta 60 gün görürsen uydurma bir süre olduğunu bil.\n\nBelgeler kanuna aykırıysa merci yayını kendisi durdurmaz, mahkemeye başvurur. Bir de ince bir kelime oyunu var: Süreli yayınlar kamu imkânlarından **eşitlik esasına** göre yararlanır. Şıkta 'kamu gücü esası' yazıyorsa o ifade yanlıştır.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": [
+        60
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Basın araçları ve kamu elindeki kitle haberleşme araçları",
+      "body": "**Basın araçlarının korunması:** Kanuna uygun şekilde basın işletmesi olarak kurulan basımevi ve eklentileri ile basın araçları, suç aleti olduğu gerekçesiyle **zapt ve müsadere edilemez** veya **işletilmekten alıkonulamaz.**\n\n**Kamu tüzel kişilerinin elindeki araçlardan yararlanma:**\n- Kişiler ve siyasi partiler, kamu tüzel kişilerinin elindeki basın dışı kitle haberleşme ve yayım araçlarından yararlanma hakkına sahiptir. Şartlar ve usuller kanunla düzenlenir.\n- Kanun, halkın bu araçlarla haber almasını, düşünce ve kanaatlere ulaşmasını ve kamuoyunun serbestçe oluşmasını engelleyen kayıtlar koyamaz. Bunun istisnaları yalnızca şu sebeplerdir: millî güvenlik, kamu düzeni, genel ahlâk ve sağlığın korunması.",
+      "articleRefs": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Düzeltme ve cevap hakkı",
+      "body": "- Düzeltme ve cevap hakkı **ancak iki halde** tanınır ve kanunla düzenlenir:\n  1. kişilerin haysiyet ve şereflerine dokunulması,\n  2. kendileriyle ilgili gerçeğe aykırı yayınlar yapılması.\n- Düzeltme ve cevap yayımlanmazsa, yayımlanmasının gerekip gerekmediğine **hâkim** karar verir. Hâkim bu kararı ilgilinin müracaat tarihinden itibaren **en geç yedi gün** içinde verir.\n\n**Dikkat:** Şıklarda 10, 15, 20 ya da 30 gün görürsen hepsi yanlıştır. Süre yedi gündür. Bu hakkı ispat hakkıyla da karıştırma. İspat hakkı hakaret davasında sanığa tanınan ayrı bir haktır ve kendi başlığı altında düzenlenmiştir.",
+      "articleRefs": [
+        "32",
+        "39"
+      ],
+      "counterNumbers": [
+        10,
+        15,
+        20,
+        30
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Basın ve yayında süreler",
+      "rows": [
+        {
+          "label": "Dağıtımı önleyen merciin kararını hâkime bildirmesi",
+          "value": "En geç 24 saat",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Hâkimin dağıtımı önleme kararını onaylaması",
+          "value": "En geç 48 saat; onay yoksa hükümsüz",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Toplatma kararını veren merciin hâkime bildirmesi",
+          "value": "En geç 24 saat",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Hâkimin toplatma kararını onaylaması",
+          "value": "En geç 48 saat; onay yoksa hükümsüz",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Düzeltme ve cevap için hâkimin kararı",
+          "value": "Müracaattan itibaren en geç 7 gün",
+          "refs": [
+            "32"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "28",
+        "32"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dernek kurma hürriyeti",
+      "body": "- Herkes, **önceden izin almaksızın** dernek kurma, derneğe üye olma ya da üyelikten çıkma hürriyetine sahiptir.\n- Hiç kimse bir derneğe üye olmaya ve dernekte üye kalmaya zorlanamaz.\n- **Sınırlama sebepleri:** Bu hürriyet ancak kanunla ve şu sebeplerle sınırlanabilir: millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık, genel ahlâk ve başkalarının hürriyetlerinin korunması.\n- Kullanılmasında uygulanacak şekil, şart ve usuller **kanunda** gösterilir.\n- **Kapatma ve faaliyetten alıkoyma:** Dernekler, kanunun öngördüğü hallerde **hâkim kararıyla** kapatılabilir veya faaliyetten alıkonulabilir.\n- **İstisna:** Gecikmede sakınca varsa, kanunla yetkilendirilen bir merci derneği faaliyetten men edebilir. Bu ancak millî güvenlik, kamu düzeni, suç işlenmesini veya suçun devamını önleme ya da yakalama gerektirdiğinde mümkündür. Merci kararını **24 saat** içinde görevli hâkimin onayına sunar. Hâkim kararını **48 saat** içinde açıklar. Açıklamazsa idarî karar kendiliğinden yürürlükten kalkar.\n- Silahlı Kuvvetler ve kolluk kuvvetleri mensuplarına, görevlerinin gerektirdiği ölçüde de Devlet memurlarına kanunla sınırlama getirilebilir.\n- Bu madde **vakıflar** için de uygulanır.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dernekte idare de durdurabilir, ama hâkime gider",
+      "body": "Dernek sorularındaki yanlış şıklar hep aynı kalıplardan gelir:\n\n- **'Önceden izin almak kaydıyla'** yanlıştır. İzin aranmaz.\n- **'Hiçbir şekilde sınırlanamaz'** yanlıştır. Kanunla ve sayılan sebeplerle sınırlanabilir; genel sağlık da bu sebeplerden biridir.\n- **'Yönetmeliğin öngördüğü hallerde vali tarafından kapatılır'** yanlıştır. Kapatma, kanunun öngördüğü hallerde hâkim kararıyla olur.\n- **'Hiçbir durumda idari kararla faaliyetten alıkonulamaz'** yanlıştır. Gecikmede sakınca varsa kanunla yetkilendirilen merci derneği faaliyetten men edebilir.\n- **Süreleri karıştırma:** Merciin kararı **24 saat** içinde hâkimin onayına sunulur. Hâkim kararını **48 saat** içinde açıklar. 'Kırk sekiz saat içinde onaya sunulur' diyen şık, iki süreyi yer değiştirmiştir.",
+      "articleRefs": [
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplantı ve gösteri yürüyüşü düzenleme hakkı",
+      "body": "- Herkes, **önceden izin almadan**, **silahsız ve saldırısız** toplantı ve gösteri yürüyüşü düzenleme hakkına sahiptir.\n- **Sınırlama sebepleri:** Bu hak ancak kanunla ve şu amaçlarla sınırlanabilir: millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlığın ve genel ahlâkın korunması ile başkalarının hak ve özgürlüklerinin korunması.\n- Kullanılmasında uygulanacak şekil, şart ve usuller **kanunda** gösterilir.",
+      "articleRefs": [
+        "34"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Toplantının sebep listesine dışarıdan girenler",
+      "body": "Toplantı hakkının sınırlama sebepleri sorulduğunda iki tanıdık ifade listeye sızmaya çalışır:\n\n- **Kamu yararı:** Bu, mülkiyet ve miras haklarının tek sınırlama sebebidir. Toplantı hakkının listesinde yer almaz.\n- **Suç soruşturma ve kovuşturması:** Bu ifade, yayınların hâkim kararıyla toplatılmasında geçer. Toplantı hakkının sınırlama sebebi değildir.\n\nToplantının listesi ise şudur: millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık, genel ahlâk, başkalarının hak ve özgürlükleri. Bunların dışında kalan her şeyi elersin.",
+      "articleRefs": [
+        "34",
+        "35",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mülkiyet ve miras hakkı",
+      "body": "- Herkes, **mülkiyet ve miras** haklarına sahiptir.\n- Bu haklar **ancak kamu yararı amacıyla, kanunla** sınırlanabilir.\n- Mülkiyet hakkının kullanılması **toplum yararına** aykırı olamaz.\n\n**Akılda tut:** Mülkiyet için tek sınırlama sebebi kamu yararıdır. Millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi ya da genel sağlık bu maddede yer almaz. Miras hakkını da ayrı bir yerde arama; mülkiyet hakkıyla aynı cümlede sayılır.",
+      "articleRefs": [
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hak arama hürriyeti ve kanuni hâkim güvencesi",
+      "body": "**Hak arama hürriyeti:**\n- Herkes, meşru vasıta ve yollardan faydalanarak yargı mercileri önünde davacı veya davalı olarak **iddia ve savunma** hakkına sahiptir.\n- Herkes **adil yargılanma** hakkına sahiptir.\n- Hiçbir mahkeme, görev ve yetkisi içindeki davaya bakmaktan kaçınamaz.\n\n**Kanuni hâkim güvencesi:**\n- Hiç kimse kanunen tabi olduğu mahkemeden başka bir merci önüne çıkarılamaz.\n- Bu sonucu doğuracak, yargı yetkisine sahip **olağanüstü merciler kurulamaz.**",
+      "articleRefs": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hangi cümle hangi başlıkta?",
+      "body": "Bu iki madde daha çok başlık eşleştirmesiyle sorulur:\n\n- **'Adil yargılanma hakkı'** hak arama hürriyeti başlığındadır. Kanuni hâkim güvencesi ya da ispat hakkı başlığında yer almaz.\n- **'Kanunen tabi olduğu mahkemeden başka bir merci önüne çıkarılamaz'** cümlesi kanuni hâkim güvencesine aittir. Hak arama hürriyetine ya da suç ve cezalara ilişkin esaslara ait değildir.\n\nBir de şunu bil: Bu iki maddenin metninde hiçbir sınırlama sebebi sayılmamıştır. 'Hangisinde sınırlama öngörülmemiştir?' diye sorulursa önce bu ikisine bak. Basın hürriyeti, dernek, toplantı ve mülkiyet ise kendi maddelerinde sınırlama hükmü taşır.",
+      "articleRefs": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suç ve cezalara ilişkin esaslar",
+      "body": "- **Kanunilik:** Kimse, işlendiği zaman yürürlükteki kanunun suç saymadığı bir fiilden dolayı cezalandırılamaz. Suçu işlediği zaman o suç için kanunda konulmuş cezadan daha ağır bir ceza verilemez. Aynı kural suç ve ceza zamanaşımı ile ceza mahkûmiyetinin sonuçları için de uygulanır.\n- **Kanunla konma:** Ceza ve ceza yerine geçen güvenlik tedbirleri ancak kanunla konulur.\n- **Masumiyet:** Suçluluğu hükmen sabit oluncaya kadar kimse suçlu sayılamaz.\n- **Susma hakkı:** Hiç kimse kendisini ve kanunda gösterilen yakınlarını suçlayan bir beyanda bulunmaya veya bu yolda delil göstermeye zorlanamaz.\n- **Delil:** Kanuna aykırı olarak elde edilmiş bulgular delil olarak kabul edilemez.\n- **Şahsîlik:** Ceza sorumluluğu şahsîdir.\n- **Borç:** Hiç kimse, yalnızca sözleşmeden doğan bir yükümlülüğü yerine getirememesi yüzünden özgürlüğünden alıkonulamaz.\n- **Yasak cezalar:** Ölüm cezası ve genel müsadere cezası verilemez.\n- **İdarî müeyyide:** İdare, kişi hürriyetini kısıtlayan bir müeyyide uygulayamaz. Silahlı Kuvvetlerin iç düzeni bakımından bu kurala kanunla istisna getirilebilir.\n- **Vatandaşın verilmemesi:** Vatandaş, suç sebebiyle yabancı bir ülkeye verilemez. Uluslararası Ceza Divanına taraf olmanın gerektirdiği yükümlülükler bu kuralın dışındadır.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ölüm cezasının istisnası yok",
+      "body": "Bu maddeden en çok soru gelir ve tuzaklar belli yerlerde kurulur:\n\n- **Ölüm cezası:** 'Savaş ve çok yakın savaş tehdidi halleri ile terör suçları dışında ölüm cezası verilemez' diyen şık **yanlıştır.** Metin hiçbir istisna tanımaz: ölüm cezası da, genel müsadere cezası da verilemez.\n- **İdarî müeyyide istisnası:** Tek istisna Silahlı Kuvvetlerin iç düzenidir. Kolluk faaliyetleri, imar, orman yakma ya da genel sağlık gibi seçenekler yanlıştır.\n- **Vatandaşın verilmemesi:** Bu hüküm suç ve cezalara ilişkin esaslar başlığındadır. Vatandaşlık, seyahat ya da hak arama başlıklarında arama.\n- **Dışarıdan gelen cümle:** 'Yakalanan veya tutuklanan kişinin yakınlarına derhâl bildirilmesi' bu maddenin listesinde yoktur. Buna karşılık sözleşme borcu yüzünden özgürlükten alıkonamama kuralı bu maddededir.",
+      "articleRefs": [
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İspat hakkı ve temel hakların korunması",
+      "body": "**İspat hakkı:**\n- Kamu görev ve hizmetinde bulunanlara, bu görevin yerine getirilmesiyle ilgili isnatlar yüzünden hakaret davası açılabilir. Bu davalarda **sanık, isnadın doğruluğunu ispat hakkına sahiptir.**\n- Diğer hallerde ispat istemi ancak iki durumda kabul edilir: isnat olunan fiilin doğru olup olmadığının anlaşılmasında **kamu yararı** bulunması ya da **şikâyetçinin ispata razı olması.**\n\n**Temel hak ve hürriyetlerin korunması:**\n- Anayasal hakkı ihlal edilen herkes, yetkili makama geciktirilmeden başvurma imkânının sağlanmasını isteme hakkına sahiptir.\n- **Devlet**, işlemlerinde ilgililerin hangi kanun yollarına ve mercilere başvuracağını ve bunların **sürelerini belirtmek zorundadır.**\n- Resmî görevlilerin haksız işlemleri sonucu uğranılan zarar, kanuna göre **Devletçe tazmin** edilir. Devletin sorumlu görevliye **rücu hakkı** saklıdır.\n\n**Dikkat:** Devlete yüklenen görev, başvuru yolunu ve süresini bildirmektir. Meclis komisyonu ya da Adalet Bakanlığına başvuru bu maddede geçmez.",
+      "articleRefs": [
+        "39",
+        "40"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin bütün süreleri ve atıfları",
+      "rows": [
+        {
+          "label": "Dernek: merciin faaliyetten men kararını hâkim onayına sunması",
+          "value": "24 saat içinde",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Dernek: hâkimin kararını açıklaması",
+          "value": "48 saat içinde; aksi halde idarî karar kendiliğinden kalkar",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Yayın: dağıtımı önleme ve toplatmada hâkime bildirim",
+          "value": "En geç 24 saat",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Yayın: dağıtımı önleme ve toplatmada hâkim onayı",
+          "value": "En geç 48 saat; aksi halde hükümsüz",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Düzeltme ve cevap: hâkimin kararı",
+          "value": "Müracaattan itibaren en geç 7 gün",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "Yayma hakkıyla değiştirilmesi amaçlanamayacak hükümler",
+          "value": "md 1, md 2, md 3",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Basın hürriyetinin sınırlanmasında uygulanan hükümler",
+          "value": "md 26 ve md 27",
+          "refs": [
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Dernek ve toplantı yan yana",
+      "rows": [
+        {
+          "aspect": "Önceden izin",
+          "left": "Dernek: aranmaz",
+          "right": "Toplantı: aranmaz",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Hakkın özel şartı",
+          "left": "Üye olmaya ve üye kalmaya kimse zorlanamaz",
+          "right": "Silahsız ve saldırısız olmalı",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Sınırlama sebepleri",
+          "left": "Millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık, genel ahlâk, başkalarının hürriyetleri",
+          "right": "Millî güvenlik, kamu düzeni, suç işlenmesinin önlenmesi, genel sağlık, genel ahlâk, başkalarının hak ve özgürlükleri",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Şekil, şart ve usul",
+          "left": "Kanunda gösterilir",
+          "right": "Kanunda gösterilir",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Kapatma ve durdurma",
+          "left": "Hâkim kararıyla kapatma; gecikmede sakınca varsa merci men eder (24 saat içinde onaya sunulur, hâkim 48 saat içinde açıklar)",
+          "right": "Maddede düzenlenmez",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Silahlı Kuvvetler, kolluk ve memurlar",
+          "left": "Kanunla sınırlama getirilebilir",
+          "right": "Maddede yer almaz",
+          "refs": [
+            "33",
+            "34"
+          ]
+        },
+        {
+          "aspect": "Ek kapsam",
+          "left": "Vakıflar için de uygulanır",
+          "right": "Maddede yer almaz",
+          "refs": [
+            "33",
+            "34"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "33",
+        "34"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "31",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        },
+        {
+          "label": "md 38 — Suç ve cezalara ilişkin esaslar",
+          "value": "6 soru",
+          "refs": [
+            "38"
+          ]
+        },
+        {
+          "label": "md 29 — Süreli ve süresiz yayın hakkı",
+          "value": "4 soru",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "md 32 — Düzeltme ve cevap hakkı",
+          "value": "4 soru",
+          "refs": [
+            "32"
+          ]
+        },
+        {
+          "label": "md 34 — Toplantı ve gösteri yürüyüşü düzenleme hakkı",
+          "value": "4 soru",
+          "refs": [
+            "34"
+          ]
+        },
+        {
+          "label": "md 33 — Dernek kurma hürriyeti",
+          "value": "3 soru",
+          "refs": [
+            "33"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 27, md 30, md 31, md 39",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 27–40, 10 soru",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ]
+        }
+      ]
+    }
+  ]
+}
