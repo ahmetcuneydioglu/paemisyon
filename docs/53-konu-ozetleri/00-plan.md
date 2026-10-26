@@ -152,7 +152,7 @@ enum SummaryBlockType { concept rule numbers compare trap exam_stats bridge }
 | F0 | **Pilot (bu doküman ile birlikte, yapıldı):** Yasama I JSON + doğrulayıcı betik + okunur çıktı | `pilot/`, `scripts/ozet-dogrula.ts` |
 | F1 | **Yazıldı (26 Eki, `01-f1-api-admin.md`), yerel E2E geçti, deploy bekliyor.** Şema + API + admin + betikler | Pilot ünite admin'den `in_review` → yayın |
 | F2 | **Yazıldı (26 Eki, `02-f2-web.md`), misafir akışı doğrulandı.** Konu odasında özet bölümü, `/ozet/[slug]` okuyucu + SEO, premium kilidi, köprü | Yasama I canlı |
-| F3 | Expo: aynı yüzeyler, `ReadingProgress` eşi, madde sheet, köprü | TestFlight |
+| F3 | **Yazıldı (26 Eki, `03-f3-expo.md`).** Expo okuyucu, konu odası satırları, madde sheet, köprü, derin bağlantı | TestFlight |
 | F4 | Anayasa 12 ünite üretim + inceleme; eskime kuyruğu | Anayasa tam |
 | F5 | Üniteler alt konu olur; 674 soru madde üstünden otomatik, 223 soru elle eşlenir; koç reçetesi | Ünite bazlı hâkimiyet |
 
