@@ -79,6 +79,7 @@ describe('güvenli formül', () => {
   it('floor ve dört işlem', () => {
     expect(safeEval('floor(600 / 2) + 1')).toBe(301);
     expect(safeEval('600 * 5 / 100')).toBe(30);
+    expect(safeEval('ceil(12 * 2 / 3)')).toBe(8);
   });
   it('başka her şey reddedilir', () => {
     expect(() => safeEval('process.exit(1)')).toThrow();

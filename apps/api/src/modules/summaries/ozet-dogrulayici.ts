@@ -115,12 +115,12 @@ export function extractNumbers(text: string): number[] {
   return [...out];
 }
 
-/** Türetilmiş sayı formülü: yalnız rakam, + - * / ( ) ve floor. */
+/** Türetilmiş sayı formülü: yalnız rakam, + - * / ( ), floor ve ceil (üçte iki gibi yukarı yuvarlanan çoğunluklar). */
 export function safeEval(expr: string): number {
-  if (!/^[\d\s+\-*/().floor]+$/.test(expr) || !/\d/.test(expr)) {
+  if (!/^[\d\s+\-*/()]*(?:(?:floor|ceil)?[\d\s+\-*/()]*)*$/.test(expr) || !/\d/.test(expr) || /[a-z]/.test(expr.replace(/floor|ceil/g, ''))) {
     throw new Error(`güvensiz ifade: ${expr}`);
   }
-  const js = expr.replace(/floor/g, 'Math.floor');
+  const js = expr.replace(/floor/g, 'Math.floor').replace(/ceil/g, 'Math.ceil');
   // eslint-disable-next-line @typescript-eslint/no-implied-eval
   const v = Function(`"use strict"; return (${js});`)() as unknown;
   if (typeof v !== 'number' || !Number.isFinite(v)) throw new Error(`hesaplanamadı: ${expr}`);
