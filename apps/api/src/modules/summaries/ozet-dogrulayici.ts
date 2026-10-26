@@ -33,6 +33,8 @@ export interface SummaryUnitJson {
     articleFrom: string;
     articleTo: string;
     readingMinutes?: number;
+    /** Konu içindeki sıra (Doc 53 §5 ünite numarası). */
+    sortOrder?: number;
     sourceLabel: string;
     generatedBy?: string;
   };
@@ -203,8 +205,11 @@ export function validateBlock(
       continue;
     }
     const dTexts = (d.refs ?? []).map((x) => articles.get(x)?.text ?? '');
+    // Zincirli türetim: işlenen, aynı kartta formülle türetilmiş başka bir sayı olabilir
+    // (600/3 = 200 toplantı yeter sayısı → 200'ün salt çoğunluğu 101).
+    const digerTuretilmis = new Set(derived.filter((x) => x !== d).map((x) => x.value));
     const operands = [...new Set([...d.expr.matchAll(/\d+/g)].map((m) => Number(m[0])))].filter(
-      (o) => !SERBEST_ISLENEN.has(o),
+      (o) => !SERBEST_ISLENEN.has(o) && !digerTuretilmis.has(o),
     );
     const lost = operands.filter((o) => !numberInTexts(o, dTexts));
     if (lost.length) bad(`${n}: formül işleneni metinde yok: ${lost.join(', ')}`);

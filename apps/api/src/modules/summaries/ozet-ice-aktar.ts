@@ -150,6 +150,7 @@ export async function importUnit(
     articleFrom: String(u.articleFrom),
     articleTo: String(u.articleTo),
     readingMinutes: u.readingMinutes ?? 10,
+    sortOrder: u.sortOrder ?? 0,
     sourceLabel: u.sourceLabel,
     generatedBy: u.generatedBy ?? null,
     status: 'in_review' as const,

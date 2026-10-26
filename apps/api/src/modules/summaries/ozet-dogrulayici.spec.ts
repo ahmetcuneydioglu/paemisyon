@@ -109,6 +109,25 @@ describe('kart doğrulama', () => {
     expect(v.issues[0]).toContain('302 ≠ 301');
   });
 
+  it('zincirli türetim: işlenen aynı karttaki başka bir türetilmiş sayı olabilir', () => {
+    const v = validateBlock(
+      {
+        type: 'trap',
+        title: 'Yeter sayı',
+        body: '600 üyede toplantı yeter sayısı **200**, 200 üyeyle toplanınca katılanların salt çoğunluğu **101**.',
+        articleRefs: ['75', '78'],
+        derivedNumbers: [
+          // "üçte biri" → 3 işleneni md 78 metnindeki "üç ay"dan okunur (gerçekte md 96).
+          { value: 200, expr: '600 / 3', refs: ['75', '78'] },
+          { value: 101, expr: 'floor(200 / 2) + 1', refs: ['75'] },
+        ],
+      },
+      0,
+      ARTS,
+    );
+    expect(v.ok).toBe(true);
+  });
+
   it('formül işleneni referans metinlerinde yoksa düşer', () => {
     const v = validateBlock({ ...kural, derivedNumbers: [{ value: 301, expr: 'floor(600 / 2) + 1', refs: ['84'] }] }, 0, ARTS);
     expect(v.ok).toBe(false);
