@@ -73,3 +73,22 @@ describe("bildirimRotasi", () => {
     expect(bildirimRotasi("https://evil.com")).toBe("/bugun");
   });
 });
+
+describe("webRoute — zayıf konu / ünite reçetesi (Doc 53 F5-3)", () => {
+  it("meta.topicId varsa /quiz konuya kapsamlı seansa gider", () => {
+    const h = webRoute("/quiz", "weak_topic", { topicId: "t1", topicName: "T.C. Anayasası" });
+    expect(h.startsWith("/seans?")).toBe(true);
+    expect(h).toContain("topicId=t1");
+    expect(h).toContain("source=home_weak_topic");
+    expect(h).not.toContain("articleNos");
+  });
+  it("reçete varsa ünitenin maddeleri de gider", () => {
+    const h = webRoute("/quiz", "weak_topic", { topicId: "t1", topicName: "Anayasa", recipe: { session: { topicId: "t1", articleNos: ["75", "76"], count: 10 } } });
+    expect(h).toContain("articleNos=75%2C76");
+    expect(h).toContain("count=10");
+  });
+  it("özet rotası olduğu gibi geçer; meta'sız /quiz eski davranış", () => {
+    expect(webRoute("/ozet/anayasa-yasama-1", "weak_topic", { topicId: "t1" })).toBe("/ozet/anayasa-yasama-1");
+    expect(webRoute("/quiz")).toBe("/seans");
+  });
+});

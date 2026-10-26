@@ -146,3 +146,16 @@ kilitli ünitede kullanıcının kendi doğruluğu görünür.
 Günde en çok bir kez: seçim deterministik (aynı veri → aynı ünite); kart gün içinde sabit kalır, istemci tekrar
 üretmez. API 545 test. Sıra: F5-3 web (`/ozet/<slug>` koç rotası eşlemesi `routes.ts`, oda rozeti, okuyucu
 hâkimiyet satırı, Bugün kartı reçete meta'sı), F5-4 Expo.
+
+## F5-3 durum (26 Eki 2026) — web yazıldı; testler temiz, tarayıcı doğrulaması giriş bekliyor
+
+| Parça | Dosya | Not |
+|---|---|---|
+| Koç rotası | `lib/routes.ts` `webRoute(route, type, meta)` | `/quiz` + `meta.topicId` → `/seans?topicId&count&source=home_weak_topic&scope`; `meta.recipe.session.articleNos` varsa eklenir; `/ozet/<slug>` olduğu gibi geçer. 3 test |
+| Kart meta | `ui/coach-card.tsx`, `shell/coach-rail.tsx`, `bugun/page.tsx` | Kart `meta`'yı rota eşleyiciye geçirir; "Özeti aç" `/ozet/<slug>`, "Çöz" ünite maddeleriyle seans |
+| Konu odası | `ozet/unit-list-section.tsx` | Satırda hâkimiyet rozeti (`%33 · zayıf` / `%81 · güçlü` / `yeni` / `az veri`), listenin üstünde "En zayıf ünite: … Önce özetini oku / Özetini okudun; sorularla pekiştir" |
+| Okuyucu | `ozet/unit-reader.tsx` | İlerleme çubuğunun altında "Bu üniteden N soru çözdün: %X · zayıf"; köprü kartında "Şu an %X; 10 soruyla yükselt" |
+| Tipler | `lib/ozet.ts`, `lib/public-api.ts` | `UnitMastery`, `UnitRecipe`, `weakestUnit`, `masteryLabel`; brief `cards[].meta`, `unitRecipe` |
+
+Web 12 test dosyası geçti (ozet 8, routes +3), tsc ve eslint temiz. Tarayıcı: önizleme oturumu düştüğü için üç
+yüzey (oda, okuyucu, Bugün kartı) kullanıcı girişinden sonra görülecek.

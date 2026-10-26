@@ -52,7 +52,7 @@ export async function CoachRail() {
             ) : null}
             {c.cta ? (
               <Link
-                href={webRoute(c.cta.route, c.type)}
+                href={webRoute(c.cta.route, c.type, c.meta)}
                 className="type-subhead mt-1 inline-flex items-center gap-1 text-accent-ink hover:underline"
               >
                 {c.cta.label}

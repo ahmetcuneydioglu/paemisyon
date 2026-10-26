@@ -14,6 +14,30 @@ export type SummaryBlockType =
 
 export type SummaryRow = Record<string, unknown> & { refs?: string[] };
 
+export type UnitBand = "new" | "sparse" | "weak" | "normal" | "strong";
+
+/** Ünite hâkimiyeti (Doc 53 F5): sunucudan; band ve yüzde, ham oran yok. Misafirde null. */
+export interface UnitMastery {
+  solved: number;
+  band: UnitBand;
+  accuracyPct: number | null;
+}
+
+export const UNIT_BAND_LABEL: Record<UnitBand, string> = {
+  new: "yeni",
+  sparse: "az veri",
+  weak: "zayıf",
+  normal: "",
+  strong: "güçlü",
+};
+
+/** Koç ünite reçetesi (`/me/coach` → unitRecipe, kart meta.recipe). */
+export interface UnitRecipe {
+  unit: { slug: string; title: string; topicId: string; isPremium: boolean; accuracyPct: number | null; solved: number; band: UnitBand };
+  kind: "summary_then_questions" | "questions";
+  session: { topicId: string; articleNos: string[]; count: number };
+}
+
 export interface SummaryUnitListItem {
   slug: string;
   title: string;
@@ -25,6 +49,7 @@ export interface SummaryUnitListItem {
   locked: boolean;
   blockCount: number;
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
+  mastery?: UnitMastery | null;
 }
 
 export interface SummaryPublicBlock {
@@ -50,6 +75,7 @@ export interface SummaryUnitDetail {
   legislation: { slug: string; name: string; shortName: string | null };
   topic: { id: string; name: string; courseName: string };
   progress: { lastBlockIndex: number; completedAt: string | null } | null;
+  mastery?: UnitMastery | null;
   blocks: SummaryPublicBlock[];
 }
 
@@ -161,6 +187,22 @@ export function unitDescription(unit: Pick<SummaryUnitDetail, "blocks" | "subtit
   const duz = first.replace(/\*\*/g, "").replace(/\s+/g, " ").trim();
   const kisa = duz.length > 157 ? `${duz.slice(0, 157).replace(/\s+\S*$/, "")}…` : duz;
   return kisa || `${unit.legislation.name} konu özeti.`;
+}
+
+/** Konu odası için en zayıf ünite: band "weak" olanlardan yüzdesi en düşük; yoksa null. */
+export function weakestUnit<T extends { mastery?: UnitMastery | null }>(units: readonly T[]): T | null {
+  const zayif = units.filter((u) => u.mastery?.band === "weak");
+  if (zayif.length === 0) return null;
+  return [...zayif].sort((a, b) => (a.mastery!.accuracyPct ?? 0) - (b.mastery!.accuracyPct ?? 0) || b.mastery!.solved - a.mastery!.solved)[0]!;
+}
+
+/** Hâkimiyet metni: "%48 · zayıf", "%81 · güçlü", "yeni", "az veri (5 soru)". */
+export function masteryLabel(m: UnitMastery | null | undefined): string | null {
+  if (!m) return null;
+  if (m.band === "new") return "yeni";
+  if (m.band === "sparse") return `az veri (${m.solved} soru)`;
+  const etiket = UNIT_BAND_LABEL[m.band];
+  return `%${m.accuracyPct ?? 0}${etiket ? ` · ${etiket}` : ""}`;
 }
 
 /** Okuma ilerlemesi yüzdesi (kart sayısına göre). */

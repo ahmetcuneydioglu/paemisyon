@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { bridgeSessionHref, parseBody, parseInline, unitDescription, unitProgressPct } from "./ozet";
+import { bridgeSessionHref, masteryLabel, parseBody, parseInline, unitDescription, unitProgressPct, weakestUnit } from "./ozet";
 
 describe("özet gövdesi (markdown-lite)", () => {
   it("kalın parçalar ayrışır", () => {
@@ -47,5 +47,25 @@ describe("köprü ve meta", () => {
     expect(unitProgressPct({ blockCount: 22, progress: null })).toBe(0);
     expect(unitProgressPct({ blockCount: 22, progress: { lastBlockIndex: 21, completedAt: "x" } })).toBe(100);
     expect(unitProgressPct({ blockCount: 22, progress: { lastBlockIndex: 10, completedAt: null } })).toBe(50);
+  });
+});
+
+describe("ünite hâkimiyeti (Doc 53 F5)", () => {
+  it("en zayıf ünite: band weak içinde en düşük yüzde", () => {
+    const u = weakestUnit([
+      { slug: "a", mastery: { solved: 12, band: "weak", accuracyPct: 50 } },
+      { slug: "b", mastery: { solved: 15, band: "weak", accuracyPct: 40 } },
+      { slug: "c", mastery: { solved: 20, band: "strong", accuracyPct: 90 } },
+      { slug: "d", mastery: null },
+    ]);
+    expect(u?.slug).toBe("b");
+    expect(weakestUnit([{ slug: "x", mastery: { solved: 0, band: "new", accuracyPct: null } }])).toBeNull();
+  });
+  it("etiket: yeni, az veri, yüzde + band", () => {
+    expect(masteryLabel({ solved: 0, band: "new", accuracyPct: null })).toBe("yeni");
+    expect(masteryLabel({ solved: 5, band: "sparse", accuracyPct: 60 })).toBe("az veri (5 soru)");
+    expect(masteryLabel({ solved: 12, band: "weak", accuracyPct: 33 })).toBe("%33 · zayıf");
+    expect(masteryLabel({ solved: 12, band: "normal", accuracyPct: 65 })).toBe("%65");
+    expect(masteryLabel(null)).toBeNull();
   });
 });

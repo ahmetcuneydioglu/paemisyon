@@ -35,13 +35,15 @@ export function CoachCard({
   title,
   body,
   cta,
+  meta,
   routeMapper,
 }: {
   type: string;
   title: string;
   body?: string;
   cta?: { label: string; route: string };
-  routeMapper: (route: string, type?: string) => string;
+  meta?: Record<string, unknown>;
+  routeMapper: (route: string, type?: string, meta?: Record<string, unknown>) => string;
 }) {
   const Icon = typeIcon[type] ?? (type.startsWith("exam") ? Trophy : Target);
   return (
@@ -56,7 +58,7 @@ export function CoachCard({
         ) : null}
         {cta ? (
           <Link
-            href={routeMapper(cta.route, type)}
+            href={routeMapper(cta.route, type, meta)}
             className="type-subhead mt-2 inline-flex items-center gap-1 text-accent-ink hover:underline"
           >
             {cta.label}

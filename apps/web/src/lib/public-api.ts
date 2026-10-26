@@ -439,7 +439,11 @@ export interface CoachBrief {
     title: string;
     body?: string;
     cta?: { label: string; route: string };
+    /** Tip'e özel ek veri (weak_topic → topicId/topicName, recipe). Rota bununla kurulur. */
+    meta?: Record<string, unknown>;
   }[];
+  /** Ünite reçetesi (Doc 53 F5-2); eski sunucuda alan yok. */
+  unitRecipe?: import("./ozet").UnitRecipe | null;
   stats?: { totalSolved: number; accuracy: number; totalSessions: number };
   gamification: {
     nextBadge: {

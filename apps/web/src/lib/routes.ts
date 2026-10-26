@@ -2,7 +2,19 @@
  * Koç kartı route'ları (mobil sözleşmesi) → web sayfası eşlemesi (Doc 23/27).
  * Kartlar sunucudan gelir; web yalnız adres çevirir, kural bilmez.
  */
-export function webRoute(route: string, type?: string): string {
+export function webRoute(route: string, type?: string, meta?: Record<string, unknown>): string {
+  // Zayıf konu / ünite reçetesi (Doc 53 F5-3): sunucu güvenli "/quiz" gönderir, kapsamı meta taşır.
+  if (route === "/quiz" && meta && typeof meta.topicId === "string") {
+    const recipe = meta.recipe as { session?: { topicId: string; articleNos: string[]; count: number } } | undefined;
+    const q = new URLSearchParams({
+      topicId: meta.topicId,
+      count: String(recipe?.session?.count ?? 10),
+      source: "home_weak_topic",
+      scope: typeof meta.topicName === "string" ? meta.topicName : "Zayıf konu",
+    });
+    if (recipe?.session?.articleNos?.length) q.set("articleNos", recipe.session.articleNos.join(","));
+    return `/seans?${q.toString()}`;
+  }
   // Çıkmış sınavlar (Doc 36): sunucu güvenli rota (/denemeler) gönderir, hedefi
   // kart TİPİ belirler — eski mobil sürümler bilmedikleri rotada hata ekranı
   // görmesin diye. Web'de karşılığı public vitrindir.

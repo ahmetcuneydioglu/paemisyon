@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2, Lock } from "lucide-react";
 import { apiClient } from "@/lib/api-client";
-import { bridgeSessionHref, type SummaryUnitDetail } from "@/lib/ozet";
+import { bridgeSessionHref, masteryLabel, type SummaryUnitDetail } from "@/lib/ozet";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { ProgressBar } from "@/components/ui/progress";
@@ -83,11 +83,18 @@ export function UnitReader({
   return (
     <div ref={root} className="flex flex-col gap-4">
       {loggedIn ? (
-        <div className="flex items-center gap-3">
-          <ProgressBar value={pct} tone={done ? "success" : "accent"} label="Okuma ilerlemesi" className="flex-1" />
-          <span className={cn("type-label tabular-nums", done ? "text-success-ink" : "text-ink-subtle")}>
-            {done ? "Bitti" : `%${pct}`}
-          </span>
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-3">
+            <ProgressBar value={pct} tone={done ? "success" : "accent"} label="Okuma ilerlemesi" className="flex-1" />
+            <span className={cn("type-label tabular-nums", done ? "text-success-ink" : "text-ink-subtle")}>
+              {done ? "Bitti" : `%${pct}`}
+            </span>
+          </div>
+          {unit.mastery && unit.mastery.band !== "new" ? (
+            <p className={cn("type-body-sm", unit.mastery.band === "weak" ? "text-warning-ink" : "text-ink-subtle")}>
+              Bu üniteden {unit.mastery.solved} soru çözdün: {masteryLabel(unit.mastery)}
+            </p>
+          ) : null}
         </div>
       ) : null}
 
@@ -125,6 +132,7 @@ export function UnitReader({
           <p className="type-body text-ink-soft">
             {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${unit.articleFrom}–${unit.articleTo}`} ·
             bu maddelerden çıkmış sorularla.
+            {unit.mastery?.band === "weak" ? ` Şu an %${unit.mastery.accuracyPct ?? 0}; 10 soruyla yükselt.` : ""}
           </p>
           {loggedIn ? (
             <ButtonLink

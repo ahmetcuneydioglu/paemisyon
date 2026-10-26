@@ -185,6 +185,7 @@ export default async function BugunPage() {
                   title={c.title}
                   body={c.body}
                   cta={c.cta}
+                  meta={c.meta}
                   routeMapper={webRoute}
                 />
               ))}
