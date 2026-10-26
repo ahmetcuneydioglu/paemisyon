@@ -21,8 +21,6 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
-import { LeaderboardNudgeService } from '../notifications/leaderboard-nudge.service';
-import { PushService } from '../notifications/push.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AdminDashboardService } from './dashboard/admin-dashboard.service';
 import { AdminMetricsService } from './dashboard/admin-metrics.service';
@@ -63,36 +61,7 @@ export class AdminController {
     private readonly audit: AuditService,
     private readonly reports: ReportsService,
     private readonly settings: SettingsService,
-    private readonly push: PushService,
-    private readonly leaderboardNudge: LeaderboardNudgeService,
   ) {}
-
-  // ── Push gönderimi (Faz 2) — yalnız admin; denetim kaydına yazılır ──
-  @Post('notifications/send')
-  @Roles('admin')
-  async sendPush(
-    @CurrentUser() actor: AuthenticatedUser,
-    @Body() body: { title?: string; body?: string; route?: string; audience?: string },
-  ) {
-    const title = body.title?.trim();
-    const text = body.body?.trim();
-    if (!title || !text) {
-      throw new BadRequestException('Başlık ve metin zorunlu.');
-    }
-    const audience = body.audience === 'inactive-today' ? 'inactive-today' : 'all';
-    const result = await this.push.sendToAll({
-      title,
-      body: text,
-      route: body.route?.trim() || undefined,
-      audience,
-    });
-    await this.audit.log(actor, 'notification.send', 'push', audience, {
-      title,
-      route: body.route ?? null,
-      ...result,
-    });
-    return result;
-  }
 
   // ── Mevzuat kimliği (Doc 29 §17): kısaltma/alias/tür/resmî URL ──
   @Get('legislation')
@@ -119,23 +88,6 @@ export class AdminController {
     if (!body.topicId) throw new BadRequestException('topicId gerekli.');
     const { topicId, ...dto } = body;
     return this.lawArticles.updateLegislationMeta(actor, topicId, dto);
-  }
-
-  /** "Seni geçti" dürtmesini elle tetikle (test/teşhis). dryRun=true →
-   *  yalnız adayları listeler, göndermez. Gecelik cron 20.30 TR'de otomatik. */
-  @Post('notifications/leaderboard-nudge')
-  @Roles('admin')
-  async triggerLeaderboardNudge(
-    @CurrentUser() actor: AuthenticatedUser,
-    @Body() body: { dryRun?: boolean },
-  ) {
-    const result = await this.leaderboardNudge.run(body.dryRun !== false);
-    if (body.dryRun === false) {
-      await this.audit.log(actor, 'notification.nudge', 'push', 'overtaken', {
-        ...result,
-      });
-    }
-    return result;
   }
 
   // ── Uygulama ayarları ──

@@ -5,7 +5,7 @@ import { AuditService } from '../audit.service';
 import { UpsertExamDto } from '../dto/exam.dto';
 import { allocateQuota, pickSectionQuestions } from './exam-autofill.logic';
 import { bayraklariHesapla, tekrarEdenKokler } from './exam-review.logic';
-import { PushService } from '../../notifications/push.service';
+import { CampaignsService } from '../../notifications/campaigns.service';
 import { IPTAL_EDILMEMIS } from '../../../common/iptal-soru';
 import { ExamsService } from '../../exams/exams.service';
 
@@ -21,7 +21,7 @@ export class AdminExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
-    private readonly push: PushService,
+    private readonly campaigns: CampaignsService,
     private readonly examsSvc: ExamsService,
   ) {}
 
@@ -729,18 +729,25 @@ export class AdminExamsService {
         minute: '2-digit',
         timeZone: 'Europe/Istanbul',
       }).format(exam.startAt);
-      const sonuc = await this.push.sendToAll(
+      const sonuc = await this.campaigns.quickSend(
         exam.publishMode === 'serbest'
           ? {
+              name: `Deneme yayını: ${exam.title}`,
+              category: 'exam',
               title: 'Yeni deneme yayında',
               body: `"${exam.title}" — istediğin zaman çöz; ilk çözümün sıralamaya girer.`,
-              route: 'denemeler',
+              deepLink: { target: 'exam', params: { examId: id } },
+              channels: ['push', 'inbox'],
             }
           : {
-              title: 'Haftalık deneme yayında 🔴',
-              body: `"${exam.title}" — ${saat}'te başlıyor. Türkiye sıralamasında yerini al!`,
-              route: 'denemeler',
+              name: `Haftalık deneme duyurusu: ${exam.title}`,
+              category: 'exam',
+              title: 'Haftalık deneme yayında',
+              body: `"${exam.title}" — ${saat}'te başlıyor. Türkiye sıralamasında yerini al.`,
+              deepLink: { target: 'exam', params: { examId: id } },
+              channels: ['push', 'inbox', 'email'],
             },
+        actor,
       );
       await this.audit.log(actor, 'exam.announce', 'exam', id, {
         title: exam.title,

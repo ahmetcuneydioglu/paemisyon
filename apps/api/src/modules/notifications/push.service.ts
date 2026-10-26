@@ -2,13 +2,33 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { App, cert, initializeApp } from 'firebase-admin/app';
 import { getMessaging } from 'firebase-admin/messaging';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { gunBaslangici } from '../../common/gun';
+import { NOTIFICATIONS_CONFIG, notificationsProvider } from './notifications.config';
+
+export type PushMessage = {
+  token: string;
+  title: string;
+  body: string;
+  imageUrl?: string | null;
+  /** Mobil rota sözlüğü (data.route) — apps/app deep-links.ts çevirir. */
+  route?: string | null;
+  /** Web tıklama hedefi (tam yol); FCM webpush.fcmOptions.link. */
+  webPath?: string | null;
+  data?: Record<string, string>;
+};
+
+export type PushResult = {
+  token: string;
+  ok: boolean;
+  messageId?: string;
+  code?: string;
+  permanent?: boolean;
+};
 
 /**
- * FCM push göndericisi (Faz 2). Kimlik: FIREBASE_SERVICE_ACCOUNT_B64 env'i
- * (service-account JSON'unun base64'ü — yalnız platform paneline girilir).
- * Env yoksa servis SESSİZCE devre dışı kalır: token kaydı çalışır, gönderim
- * "yapılandırılmadı" hatası döner — uygulama/panel kırılmaz.
+ * FCM istemcisi (Doc 52 §3). Gönderim YALNIZ DeliveryWorker'dan çağrılır;
+ * üreticiler NotificationsService.enqueue kullanır. Kimlik:
+ * FIREBASE_SERVICE_ACCOUNT_B64 (platform paneli). Env yoksa sessizce kapalı.
+ * Geçersiz token (not-registered / invalid-argument) pasifleştirilir.
  */
 @Injectable()
 export class PushService implements OnModuleInit {
@@ -33,161 +53,113 @@ export class PushService implements OnModuleInit {
   }
 
   get enabled(): boolean {
-    return this.app !== null;
+    return this.app !== null || notificationsProvider() === 'console';
   }
 
-  /** Cihaz token'ını kullanıcıya bağla (upsert — cihazda hesap değişirse taşınır). */
-  /**
-   * Web bildirimi tıklanınca açılacak adres.
-   *
-   * Rota mobil uygulamanın dilindedir ("/quiz", "/review"…); web karşılıkları
-   * farklı. Eşlemeyi burada TEKRARLAMIYORUZ: bağlantı /bildirim sıçrama
-   * sayfasına gider, çeviriyi orası yapar (apps/web/src/lib/routes.ts#webRoute).
-   */
-  private webLink(route?: string): string {
+  private webLink(webPath?: string | null): string {
     const taban = (process.env.WEB_BASE_URL ?? 'https://paemisyon.com').replace(/\/$/, '');
-    return route ? `${taban}/bildirim?git=${encodeURIComponent(route)}` : `${taban}/bugun`;
+    const p = webPath && webPath.startsWith('/') && !webPath.startsWith('//') ? webPath : '/bugun';
+    return `${taban}${p}`;
   }
 
-  /** Platforma özel gönderim seçenekleri — mobil ses, web tıklama hedefi. */
-  private platformSecenekleri(route?: string) {
-    return {
-      apns: { payload: { aps: { sound: 'default' } } },
-      webpush: {
-        fcmOptions: { link: this.webLink(route) },
-        notification: { icon: '/apple-touch-icon.png' },
-      },
-    };
-  }
-
-  async registerToken(userId: string, token: string, platform: string) {
+  /** Cihaz token'ını kullanıcıya bağla (upsert — cihazda hesap değişirse taşınır).
+   *  Aynı deviceId'nin eski token'ı pasifleşir (stale). */
+  async registerToken(
+    userId: string,
+    token: string,
+    platform: string,
+    extra: { deviceId?: string; appVersion?: string } = {},
+  ) {
     await this.prisma.pushToken.upsert({
       where: { token },
-      update: { userId, platform },
-      create: { token, userId, platform },
+      update: {
+        userId,
+        platform,
+        isActive: true,
+        disabledReason: null,
+        lastSeenAt: new Date(),
+        ...(extra.deviceId ? { deviceId: extra.deviceId } : {}),
+        ...(extra.appVersion ? { appVersion: extra.appVersion } : {}),
+      },
+      create: {
+        token,
+        userId,
+        platform,
+        deviceId: extra.deviceId ?? null,
+        appVersion: extra.appVersion ?? null,
+      },
     });
+    if (extra.deviceId) {
+      await this.prisma.pushToken.updateMany({
+        where: { deviceId: extra.deviceId, token: { not: token }, isActive: true },
+        data: { isActive: false, disabledReason: 'stale' },
+      });
+    }
     return { ok: true };
   }
 
+  /** Çıkış: satır silinir (mevcut davranış; KVKK — cihaz hesaptan ayrılır). */
   async removeToken(userId: string, token: string) {
-    // Yalnız kendi token'ını silebilir.
     await this.prisma.pushToken.deleteMany({ where: { token, userId } });
     return { ok: true };
   }
 
-  /** Tek kullanıcının TÜM cihazlarına bildirim (kişiye özel metinle).
-   *  Geçersiz token'lar silinir. */
-  async sendToUser(userId: string, params: { title: string; body: string; route?: string }) {
-    if (!this.app) {
-      return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
+  /** Teslim satırları için toplu gönderim; 500'lük parçalar, sonuç satır sırasında. */
+  async sendBatch(messages: PushMessage[]): Promise<PushResult[]> {
+    if (messages.length === 0) return [];
+    if (notificationsProvider() === 'console') {
+      for (const m of messages)
+        this.logger.log(`[console push] ${m.token.slice(0, 12)}… "${m.title}" — ${m.body}`);
+      return messages.map((m) => ({ token: m.token, ok: true, messageId: 'console' }));
     }
-    const tokens = await this.prisma.pushToken.findMany({
-      where: { userId },
-      select: { token: true },
-    });
-    if (tokens.length === 0) return { ok: true, sent: 0 };
-
-    const res = await getMessaging(this.app).sendEachForMulticast({
-      tokens: tokens.map((t) => t.token),
-      notification: { title: params.title, body: params.body },
-      data: params.route ? { route: params.route } : {},
-      ...this.platformSecenekleri(params.route),
-    });
+    if (!this.app)
+      return messages.map((m) => ({
+        token: m.token,
+        ok: false,
+        code: 'not_configured',
+        permanent: false,
+      }));
+    const out: PushResult[] = [];
     const dead: string[] = [];
-    res.responses.forEach((r, j) => {
-      const code = r.error?.code ?? '';
-      if (
-        !r.success &&
-        (code.includes('registration-token-not-registered') || code.includes('invalid-argument'))
-      ) {
-        dead.push(tokens[j].token);
-      }
-    });
-    if (dead.length > 0) {
-      await this.prisma.pushToken.deleteMany({ where: { token: { in: dead } } });
-    }
-    return { ok: true, sent: res.successCount };
-  }
-
-  /** Tüm cihazlara bildirim. [data.route] mobilde derin bağlantıya çevrilir.
-   *  Metinde {ad} geçerse her kullanıcının adıyla KİŞİSELLEŞTİRİLİR
-   *  ("Merhaba Ahmet, günün quizini unutma"). Geçersiz token'lar silinir. */
-  async sendToAll(params: {
-    title: string;
-    body: string;
-    route?: string;
-    /** 'inactive-today': yalnız BUGÜN hiç soru çözmemiş kullanıcılar
-     *  (seri hatırlatması — işini bitirmiş kullanıcı rahatsız edilmez). */
-    audience?: 'all' | 'inactive-today';
-  }) {
-    if (!this.app) {
-      return { ok: false, error: 'Push yapılandırılmadı (FIREBASE_SERVICE_ACCOUNT_B64).' };
-    }
-    const today = gunBaslangici(); // uygulama günü başladı mı (TR 04.00 — Doc 48 D2)
-    const tokens = await this.prisma.pushToken.findMany({
-      where:
-        params.audience === 'inactive-today'
-          ? {
-              user: {
-                quizSessions: {
-                  none: { answers: { some: { answeredAt: { gte: today } } } },
-                },
-              },
-            }
-          : undefined,
-      select: { token: true, user: { select: { displayName: true } } },
-    });
-    if (tokens.length === 0) return { ok: true, sent: 0, failed: 0 };
-
-    const personalize = params.title.includes('{ad}') || params.body.includes('{ad}');
-    const fill = (tpl: string, name: string) => tpl.replaceAll('{ad}', name);
-    const firstName = (dn: string | null | undefined) =>
-      (dn ?? '').trim().split(/\s+/)[0] || 'Aday';
-
-    let sent = 0;
-    const dead: string[] = [];
-    const CHUNK = 500; // FCM istek sınırı (multicast ve sendEach için aynı)
-    for (let i = 0; i < tokens.length; i += CHUNK) {
-      const chunk = tokens.slice(i, i + CHUNK);
-      const data: Record<string, string> = params.route ? { route: params.route } : {};
-      const base = {
-        data,
-        ...this.platformSecenekleri(params.route),
-      };
-      const res = personalize
-        ? await getMessaging(this.app).sendEach(
-            chunk.map((t) => ({
-              token: t.token,
-              notification: {
-                title: fill(params.title, firstName(t.user.displayName)),
-                body: fill(params.body, firstName(t.user.displayName)),
-              },
-              ...base,
-            })),
-          )
-        : await getMessaging(this.app).sendEachForMulticast({
-            tokens: chunk.map((t) => t.token),
-            notification: { title: params.title, body: params.body },
-            ...base,
-          });
-      res.responses.forEach((r: { success: boolean; error?: { code?: string } }, j: number) => {
-        if (r.success) {
-          sent++;
-        } else {
-          const code = r.error?.code ?? '';
-          if (
-            code.includes('registration-token-not-registered') ||
-            code.includes('invalid-argument')
-          ) {
-            dead.push(chunk[j].token);
-          }
-        }
+    for (let i = 0; i < messages.length; i += NOTIFICATIONS_CONFIG.fcmChunk) {
+      const chunk = messages.slice(i, i + NOTIFICATIONS_CONFIG.fcmChunk);
+      const res = await getMessaging(this.app).sendEach(
+        chunk.map((m) => ({
+          token: m.token,
+          notification: {
+            title: m.title,
+            body: m.body,
+            ...(m.imageUrl ? { imageUrl: m.imageUrl } : {}),
+          },
+          data: { ...(m.data ?? {}), ...(m.route ? { route: m.route } : {}) },
+          apns: { payload: { aps: { sound: 'default' } } },
+          webpush: {
+            fcmOptions: { link: this.webLink(m.webPath) },
+            notification: { icon: '/apple-touch-icon.png' },
+          },
+        })),
+      );
+      res.responses.forEach((r, j) => {
+        const code = r.error?.code ?? '';
+        const permanent =
+          code.includes('registration-token-not-registered') ||
+          code.includes('invalid-argument') ||
+          code.includes('sender-id-mismatch');
+        if (!r.success && permanent) dead.push(chunk[j].token);
+        out.push({
+          token: chunk[j].token,
+          ok: r.success,
+          messageId: r.messageId,
+          code: r.success ? undefined : code || 'unknown',
+          permanent,
+        });
       });
     }
-    if (dead.length > 0) {
-      await this.prisma.pushToken.deleteMany({ where: { token: { in: dead } } });
-    }
-    this.logger.log(`Push: ${sent} gönderildi, ${dead.length} ölü token temizlendi.`);
-    return { ok: true, sent, failed: tokens.length - sent, cleaned: dead.length };
+    if (dead.length)
+      await this.prisma.pushToken.updateMany({
+        where: { token: { in: dead } },
+        data: { isActive: false, disabledReason: 'not_registered', lastErrorAt: new Date() },
+      });
+    return out;
   }
 }

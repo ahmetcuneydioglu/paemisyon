@@ -162,39 +162,46 @@ model User {
   dailyMinutes          Int?       @map("daily_minutes")
   // Hedef sınav tarihi (Doc 25 §3 durum makinesi: exam_mode/taper). Kullanıcı ayarlar.
   targetExamDate        DateTime?  @map("target_exam_date") @db.Date
+  /// Son etkileşim anı (Doc 52 §4.9): uygulama açılışı (saatte bir) ve cevap
+  /// yazımı günceller. Kitle tablosunun `lastActiveDays` kaynağı.
+  lastActiveAt          DateTime?  @map("last_active_at")
   createdAt             DateTime   @default(now()) @map("created_at")
   updatedAt             DateTime   @updatedAt @map("updated_at")
   deletedAt             DateTime?  @map("deleted_at")
 
-  authIdentities    AuthIdentity[]
-  roles             UserRole[]
-  entitlement       Entitlement?
-  subscriptions     Subscription[]
-  dailyUsage        DailyUsage[]
-  quizSessions      QuizSession[]
-  examRankings      ExamRanking[]
-  examReminders     ExamReminder[]
-  topicProgress     UserTopicProgress[]
-  stats             UserStats?
-  streak            Streak?
-  bookmarks         Bookmark[]
-  articleBookmarks  ArticleBookmark[]
-  articleHighlights ArticleHighlight[]
-  articleNotes      ArticleNote[]
-  readingProgress   ReadingProgress[]
-  summaryProgress   SummaryProgress[]
-  wrongAnswers      WrongAnswer[]
-  questionReviews   QuestionReview[]
-  questionNotes     QuestionNote[]
-  lists             UserList[]
-  studyPlans        StudyPlan[]
-  questionReports   QuestionReport[]
-  badges            UserBadge[]
-  masterySnapshots  TopicMasterySnapshot[]
-  pushTokens        PushToken[]
-  emailContacts     EmailContact[]
-  dailyFocus        DailyFocus?
-  preferredModule   ExamType?              @relation(fields: [preferredModuleId], references: [id])
+  authIdentities       AuthIdentity[]
+  roles                UserRole[]
+  entitlement          Entitlement?
+  subscriptions        Subscription[]
+  dailyUsage           DailyUsage[]
+  quizSessions         QuizSession[]
+  examRankings         ExamRanking[]
+  examReminders        ExamReminder[]
+  topicProgress        UserTopicProgress[]
+  stats                UserStats?
+  streak               Streak?
+  bookmarks            Bookmark[]
+  articleBookmarks     ArticleBookmark[]
+  articleHighlights    ArticleHighlight[]
+  articleNotes         ArticleNote[]
+  readingProgress      ReadingProgress[]
+  summaryProgress      SummaryProgress[]
+  wrongAnswers         WrongAnswer[]
+  questionReviews      QuestionReview[]
+  questionNotes        QuestionNote[]
+  lists                UserList[]
+  studyPlans           StudyPlan[]
+  questionReports      QuestionReport[]
+  badges               UserBadge[]
+  masterySnapshots     TopicMasterySnapshot[]
+  pushTokens           PushToken[]
+  emailContacts        EmailContact[]
+  notifications        Notification[]
+  notificationSettings UserNotificationSettings?
+  notificationAudience NotificationAudience?
+  notificationTester   NotificationTester?
+  dailyFocus           DailyFocus?
+  preferredModule      ExamType?                 @relation(fields: [preferredModuleId], references: [id])
 
   @@map("users")
 }
@@ -203,14 +210,23 @@ model User {
 /// değişirse upsert userId'yi taşır — eski hesaba bu cihazdan push gitmez.
 /// KVKK: hesap silinince cascade ile token da silinir.
 model PushToken {
-  token     String   @id
-  userId    String   @map("user_id") @db.Uuid
-  platform  String // 'ios' | 'android'
-  updatedAt DateTime @updatedAt @map("updated_at")
+  token          String    @id
+  userId         String    @map("user_id") @db.Uuid
+  platform       String // 'ios' | 'android' | 'web'
+  /// Doc 52 §4.1: aynı cihazda token yenilenince eski satır kapanır.
+  deviceId       String?   @map("device_id")
+  appVersion     String?   @map("app_version")
+  isActive       Boolean   @default(true) @map("is_active")
+  /// 'not_registered' | 'logout' | 'stale' | 'user_disabled'
+  disabledReason String?   @map("disabled_reason")
+  lastSeenAt     DateTime  @default(now()) @map("last_seen_at")
+  lastErrorAt    DateTime? @map("last_error_at")
+  updatedAt      DateTime  @updatedAt @map("updated_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
+  @@index([userId, isActive])
   @@map("push_tokens")
 }
 
@@ -429,9 +445,9 @@ model LawArticle {
   /// Tam-metin arama vektörü — migration'da GENERATED ALWAYS (simple + tr_unaccent).
   search        Unsupported("tsvector")?
 
-  topic       Topic               @relation(fields: [topicId], references: [id], onDelete: Cascade)
-  legislation Legislation?        @relation(fields: [legislationId], references: [id], onDelete: SetNull)
-  section     LegislationSection? @relation(fields: [sectionId], references: [id], onDelete: SetNull)
+  topic       Topic                 @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  legislation Legislation?          @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+  section     LegislationSection?   @relation(fields: [sectionId], references: [id], onDelete: SetNull)
   bookmarks   ArticleBookmark[]
   highlights  ArticleHighlight[]
   notes       ArticleNote[]
@@ -847,47 +863,47 @@ model DailyUsage {
 /// Randevulu canlı deneme (Doc 18) — eski ekip_sinav'ın modern karşılığı.
 /// Küresel zaman penceresi: startAt..startAt+durationMinutes (herkese aynı).
 model Exam {
-  id                    String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id                    String          @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   title                 String
   description           String?
   /// Takvimli: pencere açılışı. Serbest: yayın anı (görünürlük başlangıcı).
-  startAt               DateTime      @map("start_at")
-  durationMinutes       Int           @map("duration_minutes")
+  startAt               DateTime        @map("start_at")
+  durationMinutes       Int             @map("duration_minutes")
   /// Denemeler V2 (Doc 50 §2.1). Varsayılan takvimli: eski kayıtlar davranış değiştirmez.
   publishMode           ExamPublishMode @default(takvimli) @map("publish_mode")
   /// Takvimlide pencere kapanışı (açıkça yazılır; sonuçlar bu anda açıklanır).
   /// Serbestte NULL = süresiz; doluysa "yeni çözüme kapanış".
-  endAt                 DateTime?     @map("end_at")
+  endAt                 DateTime?       @map("end_at")
   difficulty            ExamDifficulty?
   /// Denemenin sınav türü: ders dağılımı (ExamSection) ve otomatik doldurma bundan.
-  examTypeId            String?       @map("exam_type_id") @db.Uuid
-  isPremium             Boolean       @default(false) @map("is_premium") // eski kredi yerine (Doc 18 karar 2)
+  examTypeId            String?         @map("exam_type_id") @db.Uuid
+  isPremium             Boolean         @default(false) @map("is_premium") // eski kredi yerine (Doc 18 karar 2)
   /// RESMÎ çözümde anlık geri bildirim (şıkka basınca doğru/yanlış + açıklama,
   /// cevap kilitlenir). Tekrar çözümde her zaman açıktır. Varsayılan KAPALI.
-  liveAnswerReveal      Boolean       @default(false) @map("live_answer_reveal")
-  questionsOpenAfterEnd Boolean       @default(true) @map("questions_open_after_end")
+  liveAnswerReveal      Boolean         @default(false) @map("live_answer_reveal")
+  questionsOpenAfterEnd Boolean         @default(true) @map("questions_open_after_end")
   /// Takvimli pencere kapanınca "Pratik olarak çöz" açık mı (Doc 50). Eski
   /// archiveOpenAfterEnd'in yerini aldı; serbestte anlamsız (tekrar çözüm zaten var).
-  practiceAfterEnd      Boolean       @default(true) @map("practice_after_end")
+  practiceAfterEnd      Boolean         @default(true) @map("practice_after_end")
   /// Takvimli: 1 gün ve 1 saat önce hatırlatma; sonuç açıklandı bildirimi.
-  remindEnabled         Boolean       @default(true) @map("remind_enabled")
+  remindEnabled         Boolean         @default(true) @map("remind_enabled")
   /// Yük planı (Doc 50 §5): yayınla → cevapsız soru paketi burada; start DB'ye yalnız oturum yazar.
-  questionPack          Json?         @map("question_pack")
-  questionPackBuiltAt   DateTime?     @map("question_pack_built_at")
+  questionPack          Json?           @map("question_pack")
+  questionPackBuiltAt   DateTime?       @map("question_pack_built_at")
   /// Takvimli sıralama donma anı (exam_rankings yazıldı).
-  rankingsComputedAt    DateTime?     @map("rankings_computed_at")
-  status                ContentStatus @default(draft)
-  sortOrder             Int           @default(0) @map("sort_order")
-  createdBy             String?       @map("created_by") @db.Uuid
-  createdAt             DateTime      @default(now()) @map("created_at")
-  updatedAt             DateTime      @updatedAt @map("updated_at")
-  deletedAt             DateTime?     @map("deleted_at")
+  rankingsComputedAt    DateTime?       @map("rankings_computed_at")
+  status                ContentStatus   @default(draft)
+  sortOrder             Int             @default(0) @map("sort_order")
+  createdBy             String?         @map("created_by") @db.Uuid
+  createdAt             DateTime        @default(now()) @map("created_at")
+  updatedAt             DateTime        @updatedAt @map("updated_at")
+  deletedAt             DateTime?       @map("deleted_at")
 
-  examType        ExamType?      @relation(fields: [examTypeId], references: [id])
+  examType        ExamType?                @relation(fields: [examTypeId], references: [id])
   questions       ExamQuestion[]
   sessions        QuizSession[]
   /// Çıkmış sınav (Doc 36) çözümleri: PastExam'e bağlı Exam'in tekrarlanabilir oturumları.
-  archiveSessions QuizSession[]  @relation("ArchiveExam")
+  archiveSessions QuizSession[]            @relation("ArchiveExam")
   rankings        ExamRanking[]
   adjustments     ExamQuestionAdjustment[]
   reminders       ExamReminder[]
@@ -940,11 +956,11 @@ model ExamQuestionAdjustment {
 
 /// Hatırlatma kuyruğu (Doc 50 §2.3). "Hatırlat" düğmesi satır açar; cron gönderir.
 model ExamReminder {
-  examId  String           @map("exam_id") @db.Uuid
-  userId  String           @map("user_id") @db.Uuid
-  kind    ExamReminderKind
-  sentAt  DateTime?        @map("sent_at")
-  createdAt DateTime       @default(now()) @map("created_at")
+  examId    String           @map("exam_id") @db.Uuid
+  userId    String           @map("user_id") @db.Uuid
+  kind      ExamReminderKind
+  sentAt    DateTime?        @map("sent_at")
+  createdAt DateTime         @default(now()) @map("created_at")
 
   exam Exam @relation(fields: [examId], references: [id], onDelete: Cascade)
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -985,52 +1001,52 @@ model ExamQuestion {
 }
 
 model QuizSession {
-  id                     String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  userId                 String            @map("user_id") @db.Uuid
+  id                     String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId                 String               @map("user_id") @db.Uuid
   mode                   QuizMode
-  topicId                String?           @map("topic_id") @db.Uuid
+  topicId                String?              @map("topic_id") @db.Uuid
   // Deneme sınavı kapsamı: ders geneli (konular karışık) — topicId yerine.
-  courseId               String?           @map("course_id") @db.Uuid
+  courseId               String?              @map("course_id") @db.Uuid
   /// Seçili mevzuat turu (1 Eki 2026, kullanıcı talebi): tek konu ile tüm ders
   /// arasındaki kapsam — kullanıcının seçtiği konulardan dengeli karışık tur.
   /// Dolu ise topicId/courseId NULL'dur. Geçmiş etiketi ve "aynı seçimle yeni
   /// tur" için saklanır; devam etme questionOrder ile zaten bağımsız çalışır.
-  topicIds               String[]          @default([]) @map("topic_ids") @db.Uuid
+  topicIds               String[]             @default([]) @map("topic_ids") @db.Uuid
   // Deneme (Doc 18 → Doc 50): katılım = bu oturum. Tekillik yalnız RESMÎ çözümde:
   // kısmi tekil indeks (user_id, exam_id) WHERE attempt_role='official' (migration SQL).
-  examId                 String?           @map("exam_id") @db.Uuid
+  examId                 String?              @map("exam_id") @db.Uuid
   /// Deneme çözümünün rolü (Doc 50 §2.2); yalnız mode=deneme oturumlarında dolu.
-  attemptRole            AttemptRole?      @map("attempt_role")
+  attemptRole            AttemptRole?         @map("attempt_role")
   /// Oturum nasıl kapandı (Doc 50 §3): teslim ya da süre dolumu.
   closedReason           SessionClosedReason? @map("closed_reason")
   /// Mutlak son tarih (sunucu saati). Serbest: startedAt + süre; takvimli:
   /// min(startedAt + süre, exam.endAt). Süre denetimi bunu esas alır.
-  deadlineAt             DateTime?         @map("deadline_at")
+  deadlineAt             DateTime?            @map("deadline_at")
   /// Soru iptali sonrası yeniden puanlama izi (Doc 50 §2.3): "Netin X'ten Y'ye çıktı".
-  previousScore          Decimal?          @map("previous_score") @db.Decimal(5, 2)
-  scoreUpdatedAt         DateTime?         @map("score_updated_at")
+  previousScore          Decimal?             @map("previous_score") @db.Decimal(5, 2)
+  scoreUpdatedAt         DateTime?            @map("score_updated_at")
   /// ÇIKMIŞ SINAV (Doc 36) çözümü: PastExam'e bağlı Exam'in tekrarlanabilir oturumu.
   /// Denemelerde (Doc 50) kullanılmaz; orada examId + attemptRole='practice'.
-  archiveExamId          String?           @map("archive_exam_id") @db.Uuid
-  status                 QuizSessionStatus @default(in_progress)
-  totalQuestions         Int               @map("total_questions")
-  correctCount           Int               @default(0) @map("correct_count")
-  wrongCount             Int               @default(0) @map("wrong_count")
-  blankCount             Int               @default(0) @map("blank_count")
-  score                  Decimal?          @db.Decimal(5, 2)
-  durationSeconds        Int?              @map("duration_seconds")
+  archiveExamId          String?              @map("archive_exam_id") @db.Uuid
+  status                 QuizSessionStatus    @default(in_progress)
+  totalQuestions         Int                  @map("total_questions")
+  correctCount           Int                  @default(0) @map("correct_count")
+  wrongCount             Int                  @default(0) @map("wrong_count")
+  blankCount             Int                  @default(0) @map("blank_count")
+  score                  Decimal?             @db.Decimal(5, 2)
+  durationSeconds        Int?                 @map("duration_seconds")
   // Deneme sınavı süresi (sn) — exam modunda dolu; sunucu aşımı reddeder.
-  plannedDurationSeconds Int?              @map("planned_duration_seconds")
+  plannedDurationSeconds Int?                 @map("planned_duration_seconds")
   // Seçilen soruların sürüm id sırası (JSON dizi) — devam/kaldığı yerden (Doc 27).
-  questionOrder          Json?             @map("question_order")
+  questionOrder          Json?                @map("question_order")
   /// Kişisel deneme oturumu mu (Doc 46): hedef sınavın müfredat ağırlıklarıyla
   /// kurulan, sıralamaya girmeyen set. Ücretsiz planda günde 1 hak — sayım bu
   /// alandan gider. Örtük çıkarım (mode=exam + dört alan NULL) kırılgandı.
-  personalExam           Boolean           @default(false) @map("personal_exam")
+  personalExam           Boolean              @default(false) @map("personal_exam")
   /// Seansın geliş kanalı ("notif" = bildirim derin bağlantısı) — ölçüm.
   source                 String?
-  startedAt              DateTime          @default(now()) @map("started_at")
-  completedAt            DateTime?         @map("completed_at")
+  startedAt              DateTime             @default(now()) @map("started_at")
+  completedAt            DateTime?            @map("completed_at")
 
   user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   archiveExam Exam?        @relation("ArchiveExam", fields: [archiveExamId], references: [id])
@@ -1749,4 +1765,423 @@ model DailyFocus {
   topic  Topic?  @relation(fields: [topicId], references: [id], onDelete: SetNull)
 
   @@map("daily_focus")
+}
+
+// ─────────────────────────────────────────────
+// Bildirim Merkezi (Doc 52) — çok kanallı bildirim motoru
+// Tek giriş noktası NotificationsService.enqueue; kutu (Notification) gerçek kaynaktır,
+// push ve e-posta kutu satırının kanallarıdır (NotificationDelivery kuyruğu).
+// ─────────────────────────────────────────────
+
+/// Kategori = tercih anahtarı = analiz boyutu (Doc 52 §4.7). Kanal politikası kodda
+/// (notification.categories.ts): marketing push alamaz, system kapatılamaz.
+enum NotificationCategory {
+  daily_question
+  study_reminder
+  streak
+  exam
+  exam_countdown
+  new_content
+  achievement
+  statistics
+  leaderboard
+  question_report
+  marketing
+  system
+}
+
+enum NotificationPriority {
+  low
+  normal
+  high
+  critical // yalnız system; sessiz saati ve kapıları deler
+}
+
+/// Kutu satırının kanalları. `inbox` kuyruğa girmez (satırın kendisidir).
+enum NotificationChannel {
+  push
+  inbox
+  email
+}
+
+/// Kutu satırının özet teslim durumu.
+enum NotificationStatus {
+  queued
+  sent
+  failed
+  suppressed
+  no_device
+  expired
+}
+
+enum NotificationDeliveryStatus {
+  queued
+  sending
+  sent
+  failed
+  suppressed
+  expired
+}
+
+enum NotificationEventType {
+  opened
+  clicked
+  read
+  converted
+  dismissed
+}
+
+enum NotificationEventSource {
+  push
+  inbox
+  web
+  email
+}
+
+enum NotificationTemplateStatus {
+  active
+  archived
+}
+
+enum NotificationAudienceMode {
+  all
+  segment
+  users
+  testers
+}
+
+enum NotificationSendMode {
+  now
+  scheduled
+  smart // F3
+}
+
+enum NotificationCampaignStatus {
+  draft
+  scheduled
+  sending
+  sent
+  paused
+  cancelled
+  failed
+}
+
+/// Kutu — aday web ve mobilde aynı listeyi okur (Doc 52 §4.6).
+model Notification {
+  id                String                @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId            String                @map("user_id") @db.Uuid
+  category          NotificationCategory
+  priority          NotificationPriority  @default(normal)
+  title             String
+  body              String
+  imageUrl          String?               @map("image_url")
+  ctaLabel          String?               @map("cta_label")
+  /// Mobil rota sözlüğü (apps/app deep-links.ts): daily-quiz, denemeler, deneme-sonuc/<id>…
+  route             String?
+  /// Web yolu; FCM webpush bağlantısı doğrudan bunu alır.
+  webPath           String?               @map("web_path")
+  data              Json                  @default("{}")
+  channels          NotificationChannel[]
+  campaignId        String?               @map("campaign_id") @db.Uuid
+  variantId         String?               @map("variant_id") @db.Uuid
+  templateId        String?               @map("template_id") @db.Uuid
+  /// F2 otomasyon bağı (ilişki F2 migration'ında).
+  automationCode    String?               @map("automation_code")
+  /// (userId, dedupeKey) tekil: 'campaign:<id>', 'exam:<id>:result_ready', 'auto:<code>:<gün>'…
+  dedupeKey         String?               @map("dedupe_key")
+  conversionEvent   String?               @map("conversion_event")
+  attributionUntil  DateTime?             @map("attribution_until")
+  /// Erteleme bu alanı ileri alır; aday listesi scheduledAt <= now() satırları görür.
+  scheduledAt       DateTime              @default(now()) @map("scheduled_at")
+  expiresAt         DateTime?             @map("expires_at")
+  readAt            DateTime?             @map("read_at")
+  openedAt          DateTime?             @map("opened_at")
+  clickedAt         DateTime?             @map("clicked_at")
+  convertedAt       DateTime?             @map("converted_at")
+  dismissedAt       DateTime?             @map("dismissed_at")
+  deliveryStatus    NotificationStatus    @default(queued) @map("delivery_status")
+  suppressionReason String?               @map("suppression_reason")
+  createdAt         DateTime              @default(now()) @map("created_at")
+
+  user       User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  campaign   NotificationCampaign?  @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  template   NotificationTemplate?  @relation(fields: [templateId], references: [id], onDelete: SetNull)
+  deliveries NotificationDelivery[]
+  events     NotificationEvent[]
+
+  @@unique([userId, dedupeKey])
+  @@index([userId, createdAt])
+  @@index([userId, readAt])
+  @@index([campaignId])
+  @@index([createdAt])
+  @@map("notifications")
+}
+
+/// Kuyruk + kanal/cihaz başına teslim. İşçi SKIP LOCKED ile parti alır.
+model NotificationDelivery {
+  id                BigInt                     @id @default(autoincrement())
+  notificationId    String                     @map("notification_id") @db.Uuid
+  userId            String                     @map("user_id") @db.Uuid
+  channel           NotificationChannel
+  /// push: FCM token · email: adres. Tekillik (notificationId, channel, target).
+  target            String
+  status            NotificationDeliveryStatus @default(queued)
+  suppressionReason String?                    @map("suppression_reason")
+  attempts          Int                        @default(0)
+  nextAttemptAt     DateTime                   @default(now()) @map("next_attempt_at")
+  lockedAt          DateTime?                  @map("locked_at")
+  lockedBy          String?                    @map("locked_by")
+  providerMessageId String?                    @map("provider_message_id")
+  errorCode         String?                    @map("error_code")
+  errorMessage      String?                    @map("error_message")
+  /// E-posta kanalı: SES olayları (delivery/click) bu bağla bildirime döner.
+  emailSendId       String?                    @map("email_send_id") @db.Uuid
+  queuedAt          DateTime                   @default(now()) @map("queued_at")
+  sentAt            DateTime?                  @map("sent_at")
+  failedAt          DateTime?                  @map("failed_at")
+
+  notification Notification @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+
+  @@unique([notificationId, channel, target])
+  @@index([status, nextAttemptAt])
+  @@index([userId, sentAt])
+  @@index([emailSendId])
+  @@map("notification_deliveries")
+}
+
+/// Davranış izleri: açılma (push dokunma), tıklama (hedefe gidildi), okundu, dönüşüm, kapat.
+model NotificationEvent {
+  id             BigInt                  @id @default(autoincrement())
+  notificationId String                  @map("notification_id") @db.Uuid
+  userId         String                  @map("user_id") @db.Uuid
+  eventType      NotificationEventType   @map("event_type")
+  source         NotificationEventSource
+  platform       String?
+  appVersion     String?                 @map("app_version")
+  payload        Json?
+  occurredAt     DateTime                @default(now()) @map("occurred_at")
+
+  notification Notification @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+
+  @@index([notificationId, eventType])
+  @@index([userId, occurredAt])
+  @@index([occurredAt])
+  @@map("notification_events")
+}
+
+/// Gece rollup'ı; ham satırlar silinse de kalır. Ekranlar bunu okur.
+model NotificationDailyStat {
+  day            DateTime             @db.Date
+  campaignId     String               @default("00000000-0000-0000-0000-000000000000") @map("campaign_id") @db.Uuid
+  automationCode String               @default("") @map("automation_code")
+  category       NotificationCategory
+  channel        NotificationChannel
+  platform       String               @default("")
+  queued         Int                  @default(0)
+  sent           Int                  @default(0)
+  failed         Int                  @default(0)
+  suppressed     Int                  @default(0)
+  opened         Int                  @default(0)
+  clicked        Int                  @default(0)
+  converted      Int                  @default(0)
+
+  @@id([day, campaignId, automationCode, category, channel, platform])
+  @@index([day])
+  @@map("notification_daily_stats")
+}
+
+/// Kitle tablosu — kullanıcı başına bir satır, saatlik yenilenir (Doc 52 §4.2).
+/// Segment DSL'in tek okuduğu tablo.
+model NotificationAudience {
+  userId                 String    @id @map("user_id") @db.Uuid
+  refreshedAt            DateTime  @default(now()) @map("refreshed_at")
+  accountActive          Boolean   @default(true) @map("account_active")
+  registeredAt           DateTime  @map("registered_at")
+  registeredDays         Int       @default(0) @map("registered_days")
+  lastActiveAt           DateTime? @map("last_active_at")
+  lastActiveDays         Int?      @map("last_active_days")
+  isPremium              Boolean   @default(false) @map("is_premium")
+  premiumUntil           DateTime? @map("premium_until")
+  preferredModuleId      String?   @map("preferred_module_id") @db.Uuid
+  targetExamDate         DateTime? @map("target_exam_date") @db.Date
+  examDaysLeft           Int?      @map("exam_days_left")
+  pushEnabled            Boolean   @default(false) @map("push_enabled")
+  pushPlatforms          String[]  @default([]) @map("push_platforms")
+  emailSubscribed        Boolean   @default(false) @map("email_subscribed")
+  streakCurrent          Int       @default(0) @map("streak_current")
+  streakBest             Int       @default(0) @map("streak_best")
+  dailyGoal              Int       @default(20) @map("daily_goal")
+  answeredToday          Int       @default(0) @map("answered_today")
+  dailyGoalDoneToday     Boolean   @default(false) @map("daily_goal_done_today")
+  dailyQuestionDoneToday Boolean   @default(false) @map("daily_question_done_today")
+  studySecondsToday      Int       @default(0) @map("study_seconds_today")
+  answeredTotal          Int       @default(0) @map("answered_total")
+  answered7d             Int       @default(0) @map("answered_7d")
+  answered30d            Int       @default(0) @map("answered_30d")
+  accuracy30d            Decimal?  @map("accuracy_30d") @db.Decimal(5, 2)
+  lastExamAt             DateTime? @map("last_exam_at")
+  lastExamNet            Decimal?  @map("last_exam_net") @db.Decimal(5, 2)
+  examCount              Int       @default(0) @map("exam_count")
+  openExamSessionId      String?   @map("open_exam_session_id") @db.Uuid
+  weakTopicIds           String[]  @default([]) @map("weak_topic_ids") @db.Uuid
+  onboardingDone         Boolean   @default(false) @map("onboarding_done")
+  planActive             Boolean   @default(false) @map("plan_active")
+  /// Doc 24 sönümü: 0 normal · 1 haftada 2 push · 2 yalnız e-posta.
+  engagementTier         Int       @default(0) @map("engagement_tier")
+  lastPushOpenedAt       DateTime? @map("last_push_opened_at")
+  notificationsSentToday Int       @default(0) @map("notifications_sent_today")
+  marketingSentToday     Int       @default(0) @map("marketing_sent_today")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([lastActiveDays])
+  @@index([refreshedAt])
+  @@map("notification_audience")
+}
+
+/// Aday tercihleri (Doc 52 §4.7). Satır yoksa varsayılanlar geçerli.
+model UserNotificationSettings {
+  userId             String   @id @map("user_id") @db.Uuid
+  /// {"daily_question":true,…}; eksik anahtar = true; system kapatılamaz.
+  categories         Json     @default("{}")
+  reminderTime       String   @default("19:00") @map("reminder_time")
+  quietStart         String   @default("23:00") @map("quiet_start")
+  quietEnd           String   @default("08:00") @map("quiet_end")
+  timezone           String   @default("Europe/Istanbul")
+  pushEnabled        Boolean  @default(true) @map("push_enabled")
+  smartTimingEnabled Boolean  @default(true) @map("smart_timing_enabled")
+  updatedAt          DateTime @default(now()) @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_notification_settings")
+}
+
+/// Tester: e-postayla işaretlenir; aktif cihazları otomatik test listesine girer.
+model NotificationTester {
+  userId    String   @id @map("user_id") @db.Uuid
+  addedById String   @map("added_by_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notification_testers")
+}
+
+model NotificationTemplate {
+  id              String                     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code            String                     @unique
+  name            String
+  category        NotificationCategory
+  title           String
+  body            String
+  imageUrl        String?                    @map("image_url")
+  ctaLabel        String?                    @map("cta_label")
+  /// {target, params} — sunucu kayıt defteri route/webPath üretir.
+  deepLink        Json                       @default("{}") @map("deep_link")
+  emailSubject    String?                    @map("email_subject")
+  emailBody       String?                    @map("email_body") // markdown
+  variables       String[]                   @default([])
+  defaultPriority NotificationPriority       @default(normal) @map("default_priority")
+  status          NotificationTemplateStatus @default(active)
+  createdById     String?                    @map("created_by_id") @db.Uuid
+  updatedById     String?                    @map("updated_by_id") @db.Uuid
+  createdAt       DateTime                   @default(now()) @map("created_at")
+  updatedAt       DateTime                   @updatedAt @map("updated_at")
+
+  notifications Notification[]
+  variants      NotificationCampaignVariant[]
+
+  @@index([category, status])
+  @@map("notification_templates")
+}
+
+model NotificationSegment {
+  id            String                     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name          String
+  description   String?
+  /// Beyaz listeli JSON DSL (segment-dsl.ts).
+  rules         Json
+  status        NotificationTemplateStatus @default(active)
+  lastCount     Int?                       @map("last_count")
+  lastCountedAt DateTime?                  @map("last_counted_at")
+  createdById   String?                    @map("created_by_id") @db.Uuid
+  updatedById   String?                    @map("updated_by_id") @db.Uuid
+  createdAt     DateTime                   @default(now()) @map("created_at")
+  updatedAt     DateTime                   @updatedAt @map("updated_at")
+
+  campaigns NotificationCampaign[]
+
+  @@map("notification_segments")
+}
+
+model NotificationCampaign {
+  id                     String                     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name                   String
+  category               NotificationCategory
+  priority               NotificationPriority       @default(normal)
+  channels               NotificationChannel[]
+  audienceMode           NotificationAudienceMode   @default(all) @map("audience_mode")
+  segmentId              String?                    @map("segment_id") @db.Uuid
+  segmentRulesSnapshot   Json?                      @map("segment_rules_snapshot")
+  userIds                String[]                   @default([]) @map("user_ids") @db.Uuid
+  sendMode               NotificationSendMode       @default(now) @map("send_mode")
+  scheduledAt            DateTime?                  @map("scheduled_at")
+  conversionEvent        String?                    @map("conversion_event")
+  attributionWindowHours Int                        @default(24) @map("attribution_window_hours")
+  respectQuietHours      Boolean                    @default(true) @map("respect_quiet_hours")
+  countTowardCaps        Boolean                    @default(true) @map("count_toward_caps")
+  ttlHours               Int                        @default(24) @map("ttl_hours")
+  createInAppBanner      Boolean                    @default(false) @map("create_in_app_banner")
+  status                 NotificationCampaignStatus @default(draft)
+  estimatedRecipients    Int?                       @map("estimated_recipients")
+  materializedRecipients Int                        @default(0) @map("materialized_recipients")
+  sentCount              Int                        @default(0) @map("sent_count")
+  failedCount            Int                        @default(0) @map("failed_count")
+  suppressedCount        Int                        @default(0) @map("suppressed_count")
+  /// Parti açma imleci (kullanıcı id sırası); null = henüz açılmadı.
+  materializeCursor      String?                    @map("materialize_cursor") @db.Uuid
+  materializedAt         DateTime?                  @map("materialized_at")
+  startedAt              DateTime?                  @map("started_at")
+  completedAt            DateTime?                  @map("completed_at")
+  cancelledAt            DateTime?                  @map("cancelled_at")
+  cancelledById          String?                    @map("cancelled_by_id") @db.Uuid
+  cancelReason           String?                    @map("cancel_reason")
+  sentById               String?                    @map("sent_by_id") @db.Uuid
+  sentAt                 DateTime?                  @map("sent_at")
+  createdById            String                     @map("created_by_id") @db.Uuid
+  updatedById            String?                    @map("updated_by_id") @db.Uuid
+  createdAt              DateTime                   @default(now()) @map("created_at")
+  updatedAt              DateTime                   @updatedAt @map("updated_at")
+
+  segment       NotificationSegment?          @relation(fields: [segmentId], references: [id], onDelete: SetNull)
+  variants      NotificationCampaignVariant[]
+  notifications Notification[]
+
+  @@index([status, scheduledAt])
+  @@index([createdAt])
+  @@map("notification_campaigns")
+}
+
+/// F1'de her kampanyanın tek varyantı ('A'); A/B F3'te açılır.
+model NotificationCampaignVariant {
+  id           String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  campaignId   String   @map("campaign_id") @db.Uuid
+  key          String   @default("A")
+  weight       Int      @default(100)
+  title        String
+  body         String
+  imageUrl     String?  @map("image_url")
+  ctaLabel     String?  @map("cta_label")
+  deepLink     Json     @default("{}") @map("deep_link")
+  emailSubject String?  @map("email_subject")
+  emailBody    String?  @map("email_body")
+  templateId   String?  @map("template_id") @db.Uuid
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  campaign NotificationCampaign  @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  template NotificationTemplate? @relation(fields: [templateId], references: [id], onDelete: SetNull)
+
+  @@unique([campaignId, key])
+  @@map("notification_campaign_variants")
 }

@@ -9,7 +9,7 @@ import { Cron } from '@nestjs/schedule';
 import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { QuizService } from '../quiz/quiz.service';
-import { PushService } from '../notifications/push.service';
+import { NotificationsService } from '../notifications/notifications.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import {
   RANKING_MIN_SAMPLE,
@@ -66,7 +66,7 @@ export class ExamsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly quiz: QuizService,
-    private readonly push: PushService,
+    private readonly notifications: NotificationsService,
   ) {}
 
   private window(e: {
@@ -1403,11 +1403,22 @@ export class ExamsService {
               },
             });
             if (already?.sentAt) continue;
-            await this.push.sendToUser(p.userId, {
-              title: 'Deneme sonucun açıklandı',
-              body: `${e.title}: netin ve sıran hazır.`,
-              route: `deneme-sonuc/${p.id}`,
-            });
+            await this.notifications
+              .enqueue({
+                userId: p.userId,
+                category: 'exam',
+                priority: 'normal',
+                title: 'Sonucun açıklandı',
+                body: `${e.title}: netin ve sıran hazır.`,
+                deepLink: { target: 'exam_result', params: { sessionId: p.id } },
+                channels: ['push', 'inbox'],
+                dedupeKey: `exam:${e.id}:result_ready`,
+                conversionEvent: 'exam_review',
+                respectQuietHours: false,
+              })
+              .catch((err) =>
+                this.logger.warn(`Sonuç bildirimi ${p.id}: ${(err as Error).message}`),
+              );
             await this.prisma.examReminder.upsert({
               where: {
                 examId_userId_kind: { examId: e.id, userId: p.userId, kind: 'result_ready' },
@@ -1453,11 +1464,18 @@ export class ExamsService {
           minute: '2-digit',
           timeZone: 'Europe/Istanbul',
         }).format(r.exam.startAt);
-        await this.push
-          .sendToUser(r.userId, {
+        await this.notifications
+          .enqueue({
+            userId: r.userId,
+            category: 'exam',
+            priority: wnd.kind === 'hour_before' ? 'high' : 'normal',
             title: `${r.exam.title} ${wnd.label} ${saat}'de`,
             body: '150 dakika kesintisiz zaman ayır; sınav bitene kadar giriş açık.',
-            route: 'denemeler',
+            deepLink: { target: 'exam', params: { examId: r.examId } },
+            channels: wnd.kind === 'day_before' ? ['push', 'inbox', 'email'] : ['push', 'inbox'],
+            dedupeKey: `exam:${r.examId}:${wnd.kind}`,
+            ttlHours: wnd.kind === 'hour_before' ? 1 : 24,
+            respectQuietHours: wnd.kind !== 'hour_before',
           })
           .catch(() => undefined);
         await this.prisma.examReminder.update({

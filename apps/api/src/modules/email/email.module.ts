@@ -25,6 +25,6 @@ import { SesService } from './ses.service';
     EmailSenderService,
     AuditService,
   ],
-  exports: [SesService],
+  exports: [SesService, EmailContactsService],
 })
 export class EmailModule {}

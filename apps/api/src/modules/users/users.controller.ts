@@ -20,6 +20,8 @@ import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
 import { PushService } from '../notifications/push.service';
+import { PushTokenDto } from '../notifications/dto/notifications.dto';
+import { NotificationsService } from '../notifications/notifications.service';
 import { liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
 import {
   FREE_DAILY_LIMIT_FALLBACK,
@@ -43,7 +45,14 @@ export class UsersController {
     private readonly users: UsersService,
     private readonly push: PushService,
     private readonly plan: PlanService,
+    private readonly notifications: NotificationsService,
   ) {}
+
+  /** Uygulama açılışı: last_active_at (saatte en çok bir yazım). */
+  @Post('touch')
+  touch(@CurrentUser() user: AuthenticatedUser) {
+    return this.notifications.touchLastActive(user.id);
+  }
 
   // ── Mevzuat Merkezi (Doc 29 §14): madde favorisi + okuma konumu ──
 
@@ -299,17 +308,14 @@ export class UsersController {
     });
   }
 
-  // ── FCM cihaz token'ı (Faz 2 push) — kayıt/geri alma ──
+  // ── FCM cihaz token'ı — kayıt/geri alma (Doc 52 §4.1: deviceId, appVersion) ──
   @Post('push-token')
-  registerPushToken(
-    @CurrentUser() user: AuthenticatedUser,
-    @Body() body: { token?: string; platform?: string },
-  ) {
-    if (!body.token) return { ok: false };
-    // 'web' 5 Eylül 2026'da eklendi: kullanıcıların çoğu web'de ve o güne dek
-    // bildirim yalnız 17 mobil cihaza gidebiliyordu.
+  registerPushToken(@CurrentUser() user: AuthenticatedUser, @Body() body: PushTokenDto) {
     const platform = body.platform === 'android' || body.platform === 'web' ? body.platform : 'ios';
-    return this.push.registerToken(user.id, body.token, platform);
+    return this.push.registerToken(user.id, body.token, platform, {
+      deviceId: body.deviceId,
+      appVersion: body.appVersion,
+    });
   }
 
   @Delete('push-token')

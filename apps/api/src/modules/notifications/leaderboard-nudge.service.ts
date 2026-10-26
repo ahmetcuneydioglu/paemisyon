@@ -1,8 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
 import { PrismaService } from '../../infra/prisma/prisma.service';
-import { PushService } from './push.service';
-import { gunBaslangici } from '../../common/gun';
+import { NotificationsService } from './notifications.service';
+import { gunMetni, gunBaslangici } from '../../common/gun';
 
 /**
  * "Seni geçti" akşam dürtmesi (rekabet döngüsü): günün sıralamasında bir üste
@@ -25,7 +25,7 @@ export class LeaderboardNudgeService {
 
   constructor(
     private readonly prisma: PrismaService,
-    private readonly push: PushService,
+    private readonly notifications: NotificationsService,
   ) {}
 
   @Cron('30 20 * * *', { timeZone: 'Europe/Istanbul' })
@@ -36,13 +36,10 @@ export class LeaderboardNudgeService {
   }
 
   /**
-   * Günün geçilme vakalarını bulur; dryRun değilse push'lar.
+   * Günün geçilme vakalarını bulur; dryRun değilse motora verir (leaderboard, günde 1).
    * Dönüş: aday listesi (panelden test için de kullanılır).
    */
   async run(dryRun: boolean) {
-    if (!dryRun && !this.push.enabled) {
-      return { ok: false as const, error: 'Push yapılandırılmadı.' };
-    }
     const dayStart = gunBaslangici(); // uygulama günü (TR 04.00 — Doc 48 D2)
 
     // Günün puan üreten turları — zaman çizelgesinin ham maddesi.
@@ -137,16 +134,23 @@ export class LeaderboardNudgeService {
       const rival = names.get(c.rivalName) ?? 'Bir rakip';
       const body =
         c.need <= 1
-          ? `${rival} bugün seni geçti — 1 doğruyla sırayı geri alırsın! 💪`
-          : `${rival} bugün seni geçti — ${c.need} doğruyla sırayı geri alırsın! 💪`;
+          ? `${rival} bugün bir basamak önüne geçti. 1 doğruyla sırayı geri alırsın.`
+          : `${rival} bugün bir basamak önüne geçti. ${c.need} doğruyla sırayı geri alırsın.`;
       out.push({ userId: c.userId, rival, need: c.need });
       if (!dryRun) {
-        const r = await this.push.sendToUser(c.userId, {
-          title: 'Sıralamada hareket var 🏃',
+        const r = await this.notifications.enqueue({
+          userId: c.userId,
+          category: 'leaderboard',
+          priority: 'low',
+          title: 'Sıralamada bir basamak',
           body,
-          route: 'leaderboard',
+          deepLink: { target: 'leaderboard' },
+          channels: ['push', 'inbox'],
+          dedupeKey: `leaderboard_climb:${gunMetni()}`,
+          automationCode: 'leaderboard_climb',
+          conversionEvent: 'session_completed',
         });
-        if (r.ok) sent += r.sent ?? 0;
+        if (r.status === 'queued') sent++;
       }
     }
     return { ok: true as const, candidates: out, sent };

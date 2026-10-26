@@ -2,7 +2,7 @@ import { BadRequestException, Injectable, Logger, NotFoundException } from '@nes
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
-import { PushService } from '../../notifications/push.service';
+import { NotificationsService } from '../../notifications/notifications.service';
 import { QuizService } from '../../quiz/quiz.service';
 import { ExamsService } from '../../exams/exams.service';
 import { mean, median, rankWithTies } from '../../exams/exam-scoring.logic';
@@ -23,7 +23,7 @@ export class AdminExamAdjustmentsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
-    private readonly push: PushService,
+    private readonly notifications: NotificationsService,
     private readonly quiz: QuizService,
     private readonly exams: ExamsService,
   ) {}
@@ -161,11 +161,15 @@ export class AdminExamAdjustmentsService {
         },
       });
       if (notify) {
-        await this.push
-          .sendToUser(s.userId, {
+        await this.notifications
+          .enqueue({
+            userId: s.userId,
+            category: 'exam',
             title: 'Netin güncellendi',
             body: `${title}: bir soru iptal edildi; netin ${before.toLocaleString('tr-TR')} → ${r.score.toLocaleString('tr-TR')}.`,
-            route: `deneme-sonuc/${s.id}`,
+            deepLink: { target: 'exam_result', params: { sessionId: s.id } },
+            channels: ['push', 'inbox'],
+            dedupeKey: `exam:${examId}:net_updated:${Date.now()}`,
           })
           .catch(() => undefined);
       }

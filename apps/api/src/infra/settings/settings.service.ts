@@ -15,6 +15,19 @@ export const SETTING_KEYS = {
   /// rolü görür (önce admin, sonra herkes — 14 Eki 2026 kararı). Eski ekran
   /// geri dönüş yolu olarak kalır; anahtar kapatılınca istemci ona döner.
   mobilAnasayfaV2: 'mobil_anasayfa_v2',
+  /// Bildirim Merkezi (Doc 52 §4.9). Kill switch açıkken kuyruk ve yeni
+  /// bildirimler anında durur; yalnız admin değiştirir.
+  notificationsKillSwitch: 'notifications.kill_switch',
+  /// Günlük push kapısı (system dışı); varsayılan 3.
+  notificationsDailyCap: 'notifications.daily_cap',
+  /// Pazarlama e-postası günlük kapısı; varsayılan 1.
+  notificationsMarketingDailyCap: 'notifications.marketing_daily_cap',
+  /// Sönüm (Doc 24): tier 1 kullanıcıya haftada en çok bu kadar push.
+  notificationsDecayWeeklyCap: 'notifications.decay_weekly_cap',
+  /// Ortam kapısı: dolu ise işçinin NOTIFICATIONS_ENV'i ile eşleşmeli.
+  notificationsEnvironment: 'notifications.environment',
+  /// Saklama süreleri JSON: {"inbox":180,"deliveries":90,"events":180,"staleDevices":90,"inactiveDevices":180}
+  notificationsRetention: 'notifications.retention',
 } as const;
 
 /**
@@ -61,6 +74,22 @@ export class SettingsService {
   /** Mobil yeni anasayfa herkese açık mı? Varsayılan KAPALI (admin yine görür). */
   async mobilAnasayfaV2(): Promise<boolean> {
     return this.getBool(SETTING_KEYS.mobilAnasayfaV2, MOBIL_ANASAYFA_V2_DEFAULT);
+  }
+
+  async getString(key: string, fallback: string): Promise<string> {
+    const v = (await this.all()).get(key);
+    return v == null || v === '' ? fallback : v;
+  }
+
+  async getInt(key: string, fallback: number): Promise<number> {
+    const v = Number((await this.all()).get(key));
+    return Number.isFinite(v) && v >= 0 ? Math.floor(v) : fallback;
+  }
+
+  /** Panelden okunan ham tablo (bildirim ayarları ekranı). */
+  async entries(keys: readonly string[]): Promise<Record<string, string | null>> {
+    const all = await this.all();
+    return Object.fromEntries(keys.map((k) => [k, all.get(k) ?? null]));
   }
 
   async getBool(key: string, fallback: boolean): Promise<boolean> {
