@@ -1,0 +1,130 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "13/A",
+  "title": "Kaybolan çocukların bulunması amacıyla banka hesap hareketleri, iletişimin denetlenmesi ve sinyal bilgileri",
+  "shortSummary": "Polis, kayıp çocuğu bulmak amacıyla banka hesap hareketlerini talep edebilir, telekomünikasyon yoluyla iletişimi denetleyebilir ve sinyal bilgilerini değerlendirebilir. Bunun için sulh ceza hâkiminin emri gerekir. Gecikmesinde sakınca bulunan hallerde mülki idare amirinin emri yeterlidir. Tedbir en çok bir ay için verilir ve bir defaya mahsus bir ay daha uzatılabilir. Mülki idare amirinin kararı derhal mahkemenin onayına sunulur. Mahkeme en geç yirmi dört saat içinde karar verir.",
+  "detailed": "Bu madde, 2017'de 680 sayılı KHK ile kanuna eklendi. 2018'de 7072 sayılı Kanunla aynen kabul edildi.\n\n**Amaç ve polisin yapabilecekleri (f.1)**\nKanun, tedbirin amacını \"kaybolan çocukların bulunması\" olarak belirler. Bu amaçla polis şunları yapabilir:\n- Her türlü **banka hesap hareketlerini talep edebilir**,\n- **Telekomünikasyon yoluyla iletişimini denetleyebilir**,\n- **Sinyal bilgilerini değerlendirebilir**.\n\n**Kapsam (f.1)**\nTedbirler yalnız kayıp çocuğun kendi hesap ve hatlarıyla sınırlı değildir. Kanun iki durumu sayar:\n- Kayıp çocuğa ait olanlar,\n- Başkasına ait olmakla birlikte **kayıp çocuk tarafından kullanılanlar**.\n\n**Emri verecek merci ve emrin şekli (f.1)**\n- Kural olarak emri **sulh ceza hâkimi** verir.\n- **Gecikmesinde sakınca bulunan hallerde** emri **mülki idare amiri** verir. Bu ifade, beklemenin amaca zarar vereceği durumları anlatır.\n- Emir **yazılı** olabilir. **Sonradan yazılı hale getirilmek üzere sözlü** de olabilir.\n\n**Tedbirin süresi (f.1)**\nTedbir kararı **en çok bir ay** için verilebilir. Bu süre **bir defaya mahsus** olmak üzere **bir ay daha** uzatılabilir.\n\n**Mülki idare amirinin kararının denetimi (f.2)**\nMülki idare amirinin kararı **derhal** mahkemenin onayına sunulur. Mahkeme kararını **en geç yirmi dört saat** içinde verir.",
+  "keyPoints": [
+    "Tedbirin amacı kaybolan çocukların bulunmasıdır (f.1).",
+    "Polisin yetkileri üçtür: banka hesap hareketlerini talep etmek, telekomünikasyon yoluyla iletişimi denetlemek ve sinyal bilgilerini değerlendirmek (f.1).",
+    "Kapsama kayıp çocuğa ait olanlar ile başkasına ait olup kayıp çocuk tarafından kullanılanlar girer (f.1).",
+    "Emri kural olarak sulh ceza hâkimi verir. Gecikmesinde sakınca bulunan hallerde mülki idare amiri verir (f.1).",
+    "Emir yazılı ya da sonradan yazılı hale getirilmek üzere sözlü olabilir (f.1).",
+    "Tedbir kararı en çok bir ay için verilir. Bir defaya mahsus bir ay daha uzatılabilir (f.1).",
+    "Mülki idare amirinin kararı derhal mahkemenin onayına sunulur. Mahkeme en geç yirmi dört saat içinde karar verir (f.2)."
+  ],
+  "conditions": [
+    "Tedbirin kaybolan çocuğun bulunması amacıyla uygulanması (f.1).",
+    "Sulh ceza hâkiminin emrinin bulunması (f.1).",
+    "Mülki idare amirinin emir vermesi için gecikmesinde sakınca bulunan bir halin bulunması (f.1).",
+    "Emrin yazılı olması ya da sonradan yazılı hale getirilmek üzere sözlü verilmesi (f.1).",
+    "Hesabın veya hattın kayıp çocuğa ait olması ya da başkasına ait olmakla birlikte kayıp çocuk tarafından kullanılması (f.1)."
+  ],
+  "exceptions": [
+    "Gecikmesinde sakınca bulunan hallerde emri sulh ceza hâkimi yerine mülki idare amiri verebilir. Bu kararın derhal mahkemenin onayına sunulması gerekir (f.1, f.2).",
+    "Tedbir süresi bir aylık üst sınırı aşacak şekilde yalnız bir defaya mahsus bir ay daha uzatılabilir (f.1)."
+  ],
+  "timeLimits": [
+    {
+      "label": "Tedbir kararının azami süresi",
+      "value": "En çok bir ay",
+      "ref": "f.1"
+    },
+    {
+      "label": "Uzatma",
+      "value": "Bir defaya mahsus olmak üzere bir ay daha",
+      "ref": "f.1"
+    },
+    {
+      "label": "Mülki idare amiri kararının mahkeme onayına sunulması",
+      "value": "Derhal",
+      "ref": "f.2"
+    },
+    {
+      "label": "Mahkemenin karar verme süresi",
+      "value": "En geç yirmi dört saat",
+      "ref": "f.2"
+    }
+  ],
+  "numericalValues": [
+    {
+      "label": "Tedbir kararının azami süresi",
+      "value": "1 ay",
+      "ref": "f.1"
+    },
+    {
+      "label": "Uzatma sayısı",
+      "value": "1 defa",
+      "ref": "f.1"
+    },
+    {
+      "label": "Uzatma süresi",
+      "value": "1 ay",
+      "ref": "f.1"
+    },
+    {
+      "label": "Mahkemenin karar süresi",
+      "value": "24 saat",
+      "ref": "f.2"
+    },
+    {
+      "label": "Maddeyi ekleyen KHK",
+      "value": "680 sayılı KHK (2017)",
+      "ref": "değişiklik şerhi"
+    },
+    {
+      "label": "Aynen kabul eden kanun",
+      "value": "7072 sayılı Kanun (2018)",
+      "ref": "değişiklik şerhi"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Yalnız kaybolan çocukların bulunması amacıyla ve hâkim ya da mülki idare amirinin emriyle banka hesap hareketlerini talep edebilir, telekomünikasyon yoluyla iletişimi denetleyebilir ve sinyal bilgilerini değerlendirebilir.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Sulh ceza hâkimi",
+      "limit": "Tedbir emrini verir. Tedbir en çok bir ay için verilebilir ve bir defaya mahsus bir ay daha uzatılabilir.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Mülki idare amiri",
+      "limit": "Yalnız gecikmesinde sakınca bulunan hallerde emir verebilir. Kararı derhal mahkemenin onayına sunulur.",
+      "ref": "f.1, f.2"
+    },
+    {
+      "authority": "Mahkeme",
+      "limit": "Mülki idare amirinin kararı hakkında en geç yirmi dört saat içinde karar verir.",
+      "ref": "f.2"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Mülki idare amirinin kararında iki ayrı süre vardır. Onaya sunma \"derhal\" yapılır, mahkemenin karar vermesi için \"en geç yirmi dört saat\" öngörülür. Bu iki süre sık karıştırılır.",
+    "Onay mercii mahkemedir. Cumhuriyet savcısı bu maddede anılmaz.",
+    "Asıl emir mercii sulh ceza hâkimidir. Mülki idare amiri yalnız gecikmesinde sakınca bulunan hallerde emir verebilir.",
+    "Tedbir kararı en çok bir ay için verilir. Uzatma yalnız bir defaya mahsus ve bir ay daha içindir. İlk kararın iki ay, üç ay ya da on beş gün için verilebileceği yönündeki ifadeler metne aykırıdır.",
+    "Maddede tedbir için bir süre öngörülmüştür. Tedbirin çocuk bulununcaya kadar süreceği yönünde bir hüküm yoktur.",
+    "Kapsam yalnız çocuğa ait hesap ve hatlarla sınırlı değildir. Başkasına ait olup kayıp çocuk tarafından kullanılanlar da kapsama girer.",
+    "Sözlü emir mümkündür, ancak sonradan yazılı hale getirilmesi gerekir."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "13/A"
+      ]
+    }
+  ],
+  "counterNumbers": [
+    48,
+    3,
+    15
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 13/A",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

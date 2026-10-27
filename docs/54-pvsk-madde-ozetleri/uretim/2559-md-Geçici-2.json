@@ -1,0 +1,120 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Geçici 2",
+  "title": "Ek 7 nci maddede düzenlenen merkezin kurulma süresi ve kuruluncaya kadarki uygulama",
+  "shortSummary": "Kanun, ek 7 nci maddede düzenlenen merkezin en geç altı ay içinde kurulacağını söyler. Merkez kuruluncaya kadar, 2559 sayılı Kanunun ek 7, 2803 sayılı Kanunun ek 5 ve 2937 sayılı Kanunun 6 ncı maddesine göre verilen iletişim tedbiri karar veya yazılı emirlerini telekomünikasyon hizmeti veren kurum ve kuruluşlar derhal yerine getirir. Bu dönemde ilgili istihbarat kurumlarının mevcut sistemleri kullanılmaya devam eder.",
+  "detailed": "Geçici madde, yeni bir düzenleme tam olarak uygulamaya geçinceye kadar aradaki dönemde ne yapılacağını belirleyen hükümdür. Bu madde, 2559 sayılı Kanunun ek 7 nci maddesinde düzenlenen **merkez** için böyle bir geçiş dönemi kurar.\n\n**1. Kuruluş süresi**\nKanun, ek 7 nci maddede düzenlenen merkezin **en geç altı ay içinde** kurulacağını söyler. Altı ayın hangi tarihten başlayacağı bu madde metninde belirtilmez.\n\n**2. Merkez kuruluncaya kadar ne olur?**\nKanuna göre bu dönemde aşağıdaki üç hükme dayanılarak verilen **karar veya yazılı emirler** yerine getirilir:\n- 2559 sayılı Kanunun ek 7 nci maddesi\n- 2803 sayılı Kanunun ek 5 inci maddesi\n- 2937 sayılı Kanunun 6 ncı maddesi\n\nBu karar veya yazılı emirler şu işlemlere ilişkindir:\n- iletişimin dinlenmesi\n- iletişimin tespiti\n- sinyal bilgilerinin değerlendirilmesi\n- kayda alınması\n\n**3. Kim, ne zaman yerine getirir?**\nKanun, bu karar veya yazılı emirlerin **telekomünikasyon hizmeti veren kurum ve kuruluşlar** tarafından **derhal** yerine getirileceğini söyler. Derhal, bekletmeden ve gecikmeksizin demektir.\n\n**4. Mevcut sistemler**\nGeçiş döneminde **ilgili istihbarat kurumlarının mevcut sistemlerinin kullanılmasına devam olunur.** Yani merkez kuruluncaya kadar mevcut sistemler devre dışı kalmaz.",
+  "keyPoints": [
+    "Ek 7 nci maddede düzenlenen merkez en geç altı ay içinde kurulur.",
+    "Merkez kuruluncaya kadar üç ayrı hükme göre verilen karar veya yazılı emirler uygulanır: 2559 sayılı Kanun ek 7, 2803 sayılı Kanun ek 5, 2937 sayılı Kanun md 6.",
+    "Kapsamdaki işlemler: iletişimin dinlenmesi, tespiti, sinyal bilgilerinin değerlendirilmesi ve kayda alınması.",
+    "Bu karar veya yazılı emirleri yerine getirme yükümlülüğü telekomünikasyon hizmeti veren kurum ve kuruluşlara aittir.",
+    "Yerine getirme derhal yapılır.",
+    "Geçiş döneminde ilgili istihbarat kurumlarının mevcut sistemleri kullanılmaya devam eder."
+  ],
+  "conditions": [
+    "Geçiş hükümleri merkez kuruluncaya kadar uygulanır (f.1).",
+    "Derhal yerine getirme yükümlülüğü, 2559 sayılı Kanun ek 7, 2803 sayılı Kanun ek 5 veya 2937 sayılı Kanun md 6 uyarınca verilmiş karar veya yazılı emirler için geçerlidir (f.1)."
+  ],
+  "exceptions": [],
+  "timeLimits": [
+    {
+      "label": "Ek 7 nci maddede düzenlenen merkezin kurulma süresi",
+      "value": "en geç altı ay",
+      "ref": "f.1"
+    },
+    {
+      "label": "Telekomünikasyon hizmeti veren kurum ve kuruluşların karar veya yazılı emirleri yerine getirme zamanı",
+      "value": "derhal",
+      "ref": "f.1"
+    }
+  ],
+  "numericalValues": [
+    {
+      "label": "Merkezin kurulma süresi",
+      "value": "altı ay",
+      "ref": "f.1"
+    },
+    {
+      "label": "Atıf yapılan kanun",
+      "value": "2559 sayılı Kanun (ek 7 nci madde)",
+      "ref": "f.1"
+    },
+    {
+      "label": "Atıf yapılan kanun",
+      "value": "2803 sayılı Kanun (ek 5 inci madde)",
+      "ref": "f.1"
+    },
+    {
+      "label": "Atıf yapılan kanun",
+      "value": "2937 sayılı Kanun (6 ncı madde)",
+      "ref": "f.1"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Telekomünikasyon hizmeti veren kurum ve kuruluşlar",
+      "limit": "Merkez kuruluncaya kadar, 2559 sayılı Kanun ek 7, 2803 sayılı Kanun ek 5 ve 2937 sayılı Kanun md 6 uyarınca verilen iletişimin dinlenmesi, tespiti, sinyal bilgilerinin değerlendirilmesi ve kayda alınmasına dair karar veya yazılı emirleri derhal yerine getirir.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "İlgili istihbarat kurumları",
+      "limit": "Merkez kuruluncaya kadar mevcut sistemlerinin kullanılmasına devam olunur.",
+      "ref": "f.1"
+    }
+  ],
+  "relatedLegislation": [
+    {
+      "law": "2803 sayılı Kanun",
+      "article": "Ek 5",
+      "note": "Merkez kuruluncaya kadar bu hükme göre verilen iletişim tedbiri karar veya yazılı emirleri derhal yerine getirilir.",
+      "verified": false
+    },
+    {
+      "law": "2937 sayılı Kanun",
+      "article": "6",
+      "note": "Merkez kuruluncaya kadar bu hükme göre verilen iletişim tedbiri karar veya yazılı emirleri derhal yerine getirilir.",
+      "verified": false
+    }
+  ],
+  "examReminders": [
+    "Merkezin kurulma süresi en geç altı aydır. Üç ay veya bir yıl ile karıştırılmamalıdır.",
+    "Atıf yapılan madde numaraları farklıdır: 2559 sayılı Kanunda ek 7, 2803 sayılı Kanunda ek 5, 2937 sayılı Kanunda 6 ncı madde.",
+    "Yerine getirme yükümlüsü telekomünikasyon hizmeti veren kurum ve kuruluşlardır. Yerine getirme zamanı derhaldir.",
+    "Hükümde hem karar hem yazılı emir birlikte anılır.",
+    "Kapsamdaki dört işlem şunlardır: dinleme, tespit, sinyal bilgilerinin değerlendirilmesi ve kayda alma.",
+    "Geçiş döneminde yeni bir sisteme geçilmez; ilgili istihbarat kurumlarının mevcut sistemleri kullanılmaya devam eder.",
+    "Ek 7 nci madde aynı Kanunun maddesidir (md Ek 7)."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "Geçici 2"
+      ],
+      "label": "Geçiş döneminde karar veya yazılı emrine dayanılan hüküm sayısı (2559 ek 7, 2803 ek 5, 2937 md 6)"
+    },
+    {
+      "value": 4,
+      "expr": "1 + 1 + 1 + 1",
+      "refs": [
+        "Geçici 2"
+      ],
+      "label": "Kapsamdaki işlem sayısı (dinleme, tespit, sinyal bilgilerinin değerlendirilmesi, kayda alma)"
+    }
+  ],
+  "counterNumbers": [
+    {
+      "value": "üç ay",
+      "note": "Yanlış kurulma süresi; doğrusu en geç altı ay."
+    },
+    {
+      "value": "bir yıl",
+      "note": "Yanlış kurulma süresi; doğrusu en geç altı ay."
+    }
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Geçici 2",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

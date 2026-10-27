@@ -1,0 +1,39 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "23",
+  "title": "Diğer kanunlarla polise verilen vazife ve salahiyetlerin saklı tutulması",
+  "shortSummary": "Kanun, genel ve özel kanunlarla polise verilmiş olup bu Kanunda yazılı bulunmayan görev ve yetkilere ilişkin hükümlerin geçerliliğini koruduğunu düzenler.",
+  "detailed": "Kanun, **\"Umumi ve hususi kanunlarla polise verilen ve bu kanunda yazılı bulunmıyan vazife ve salahiyetlerin hükümleri bakidir\"** der.\n\nBu hükümdeki terimler şunlardır:\n- **Umumi kanun:** Genel kanun.\n- **Hususi kanun:** Özel kanun.\n- **Vazife ve salahiyet:** Görev ve yetki.\n- **Bakidir:** Geçerliliğini korur, devam eder.\n\nMaddenin anlamı şudur: Polisin görev ve yetkileri yalnızca bu Kanunda sayılanlardan ibaret değildir. Başka genel ya da özel kanunlarla polise verilmiş görev ve yetkiler varsa, bu Kanunda yazılı olmasalar bile o hükümler yürürlükte kalmaya devam eder.\n\nHüküm, bu Kanunun diğer kanunlardaki polis görev ve yetkilerini kaldırmadığını ya da daraltmadığını gösteren bir **saklı tutma** hükmüdür.",
+  "keyPoints": [
+    "Genel (umumi) ve özel (hususi) kanunlarla polise verilen görev ve yetkiler saklıdır.",
+    "Saklı tutulan görev ve yetkiler, bu Kanunda yazılı bulunmayanlardır.",
+    "\"Bakidir\" ifadesi, söz konusu hükümlerin geçerliliğini koruduğu anlamına gelir.",
+    "Polisin görev ve yetkileri yalnızca bu Kanunla sınırlı değildir."
+  ],
+  "conditions": [
+    "Görev veya yetki, umumi ya da hususi bir kanunla polise verilmiş olmalıdır.",
+    "Görev veya yetki, bu Kanunda yazılı bulunmamalıdır."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Genel ve özel kanunlarla kendisine verilen ve bu Kanunda yazılı olmayan görev ve yetkilerin hükümleri geçerliliğini korur.",
+      "ref": "md 23"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Madde hem umumi (genel) hem hususi (özel) kanunları kapsar. Yalnızca birinin sayıldığı ifadelere dikkat edin.",
+    "Saklı tutulan görev ve yetkiler, bu Kanunda yazılı bulunmayanlardır.",
+    "\"Bakidir\" ifadesi kaldırma ya da sınırlama değil, geçerliliğin devam ettiği anlamına gelir. Bu Kanunun diğer kanunlardaki polis yetkilerini ortadan kaldırdığı yönündeki ifadeler metne aykırıdır.",
+    "Polisin görev ve yetkilerinin yalnızca bu Kanunda sayılanlarla sınırlı olduğu yönündeki ifadeler bu maddeye aykırıdır."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 23",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

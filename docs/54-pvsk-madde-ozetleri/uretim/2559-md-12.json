@@ -1,0 +1,93 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "12",
+  "title": "Umuma açık yerlerde küçüklerin çalıştırılması ve bu yerlere girmesi yasağı",
+  "shortSummary": "Kanunî istisnalar saklı kalmak üzere eğlence, oyun, içki ve benzeri amaçlı, umuma açık ve açılması izne bağlı yerlerde 18 yaşından küçükler çalıştırılamaz. Polis, içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere 18 yaşını doldurmamış küçüklerin girmesini, yanlarında veli veya vasileri olsa bile meneder. Aykırı hareket edenler hakkında md 17, işyerleri hakkında md 6 hükümlerine göre işlem yapılır.",
+  "detailed": "Madde, 2002'de 4771 sayılı Kanunun 10. maddesiyle değiştirilmiştir. Üç fıkradan oluşur ve küçükleri iki ayrı yönden korur: bu yerlerde **çalıştırılmalarını** ve bu yerlere **girmelerini** yasaklar.\n\n**Çalıştırma yasağı (f.1)**\nKanun, \"kanunî istisnalar saklı kalmak üzere\" eğlence, oyun, içki ve benzeri amaçlı, umuma açık ve açılması izne bağlı yerlerde **onsekiz yaşından küçüklerin çalıştırılamayacağını** söyler. \"Umuma açık\" ifadesi herkesin girebildiği yeri, \"açılması izne bağlı\" ifadesi ise izin alınmadan açılamayan yeri anlatır. \"Kanunî istisnalar saklı kalmak üzere\" kaydı, başka bir kanunun öngördüğü istisnanın bu yasaktan etkilenmeyeceği anlamına gelir. Fıkrada veli izni ya da muvafakati bir istisna olarak sayılmamıştır.\n\n**Girme yasağı (f.2)**\nKanun, polisin bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere **onsekiz yaşını doldurmamış küçüklerin girmesini meneder** olduğunu belirtir. \"Menetmek\" engel olmak, yasaklamak demektir. Kanun bu yasağı açıkça **yanlarında veli ve vasileri olsa bile** uygulanacak şekilde düzenler. Veli, çocuğun anne veya babasıdır. Vasi ise mahkemece atanan yasal temsilcidir. Bu fıkrada \"kanunî istisnalar saklı\" kaydı bulunmaz.\n\n**Yaptırıma atıf (f.3)**\nKanuna göre bu madde hükümlerine aykırı hareket edenler hakkında **md 17**, işyerleri hakkında ise **md 6** hükümlerine göre işlem yapılır. Kişiler ile işyerleri için ayrı maddelere atıf yapıldığına dikkat edilmelidir.\n\n- f.1: çalıştırma yasağı, kanunî istisnalar saklıdır\n- f.2: girme yasağı, polis meneder, veli veya vasi bulunması sonucu değiştirmez\n- f.3: kişiler için md 17, işyerleri için md 6",
+  "keyPoints": [
+    "Eğlence, oyun, içki ve benzeri amaçlı, umuma açık ve açılması izne bağlı yerlerde onsekiz yaşından küçükler çalıştırılamaz (f.1).",
+    "Çalıştırma yasağı \"kanunî istisnalar saklı kalmak üzere\" konulmuştur (f.1).",
+    "Polis, bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere onsekiz yaşını doldurmamış küçüklerin girmesini meneder (f.2).",
+    "Girme yasağı, küçüğün yanında veli veya vasisi olsa bile uygulanır (f.2).",
+    "Maddeye aykırı hareket edenler hakkında md 17 hükümlerine göre işlem yapılır (f.3).",
+    "İşyerleri hakkında md 6 hükümlerine göre işlem yapılır (f.3).",
+    "Madde 2002'de 4771 sayılı Kanunun 10. maddesiyle değiştirilmiştir."
+  ],
+  "conditions": [
+    "Çalıştırma yasağı için yer, eğlence, oyun, içki ve benzeri amaçlı olmalıdır (f.1).",
+    "Çalıştırma yasağı için yer, umuma açık olmalıdır (f.1).",
+    "Çalıştırma yasağı için yerin açılması izne bağlı olmalıdır (f.1).",
+    "Çalıştırma yasağı onsekiz yaşından küçükler için geçerlidir (f.1).",
+    "Girme yasağı; bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerler için geçerlidir (f.2).",
+    "Girme yasağı onsekiz yaşını doldurmamış küçükler için geçerlidir (f.2)."
+  ],
+  "exceptions": [
+    "Çalıştırma yasağında kanunî istisnalar saklıdır (f.1)."
+  ],
+  "timeLimits": [],
+  "numericalValues": [
+    {
+      "label": "Çalıştırma yasağının yaş sınırı (bu yaştan küçükler çalıştırılamaz)",
+      "value": "18 (onsekiz)",
+      "ref": "f.1"
+    },
+    {
+      "label": "Girme yasağının yaş sınırı (bu yaşı doldurmamış olanlar giremez)",
+      "value": "18 (onsekiz)",
+      "ref": "f.2"
+    },
+    {
+      "label": "Aykırı hareket edenler hakkında uygulanacak madde",
+      "value": "md 17",
+      "ref": "f.3"
+    },
+    {
+      "label": "İşyerleri hakkında uygulanacak madde",
+      "value": "md 6",
+      "ref": "f.3"
+    },
+    {
+      "label": "Değişiklik yılı",
+      "value": "2002",
+      "ref": "madde başlığı şerhi"
+    },
+    {
+      "label": "Değiştiren kanun numarası",
+      "value": "4771 (10. madde)",
+      "ref": "madde başlığı şerhi"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "İçkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere onsekiz yaşını doldurmamış küçüklerin girmesini meneder. Yanlarında veli ve vasileri olması bu yükümlülüğü ortadan kaldırmaz.",
+      "ref": "f.2"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Veli veya vasinin yanında bulunması, küçüğün içkili yerlere ve kıraathanelere girmesine imkân vermez (f.2). Çeldiricide sıkça \"veli yanında ise girebilir\" ifadesi kullanılır.",
+    "Yaş sınırı 18'dir. \"On altı yaşını doldurmuş olanlar girebilir veya çalıştırılabilir\" gibi ifadeler metinde yoktur.",
+    "Veli muvafakati, çalıştırma yasağını kaldıran bir istisna değildir. Metinde yalnızca \"kanunî istisnalar\" saklı tutulmuştur (f.1).",
+    "Madde iki ayrı yasak içerir: çalıştırma (f.1) ve girme (f.2). Yasağın yalnızca müşteri olarak girişe ilişkin olduğu ifadesi yanlıştır.",
+    "Girişe izin verecek bir işletmeci veya mülkî amir izni metinde öngörülmemiştir.",
+    "Yasak cinsiyete göre ayrım yapmaz. Metin genel olarak \"küçükler\" der.",
+    "Atıflar karıştırılmamalıdır: aykırı hareket edenler için md 17, işyerleri için md 6 (f.3).",
+    "Kapsamlar farklıdır: f.1'de \"eğlence, oyun, içki ve benzeri amaçlı umuma açık ve açılması izne bağlı yerler\", f.2'de ise \"bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerler\" sayılmıştır."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "12"
+      ]
+    }
+  ],
+  "counterNumbers": [
+    16
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 12",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

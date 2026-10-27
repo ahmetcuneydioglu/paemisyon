@@ -1,0 +1,41 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "24",
+  "title": "Özel zabıta teşkilatı olan işlerde polisin yetkisi",
+  "shortSummary": "Özel (mahsus) zabıta teşkilatı bulunan işlerde, bu teşkilata mensup memur bulunmayan yerlerde, o işlere ait inzıbati muameleleri yapmaya polis yetkilidir.",
+  "detailed": "Kanun şunu söyler: **mahsus zabıta teşkilatı olan işlerde** bu teşkilata mensup memur **bulunmadığı yerlerde polis**, bunlara ait **inzıbati muameleleri** yapmaya **salahiyetlidir** (f.1).\n\nTerimler:\n- **Mahsus zabıta:** Belirli bir iş alanı için kurulmuş özel kolluk teşkilatıdır.\n- **İnzıbati muamele:** Düzeni sağlamaya yönelik kolluk işlemidir.\n- **Salahiyet:** Yetki demektir.\n\nPolisin bu yetkiyi kullanabilmesi için iki şart birlikte aranır. Birincisi, söz konusu işin kendine ait özel bir zabıta teşkilatının bulunduğu bir iş olmasıdır. İkincisi, o yerde bu teşkilata mensup memurun bulunmamasıdır.\n\nYetkinin kapsamı, o işlere ait inzıbati muamelelerle sınırlıdır. Madde, yetkili merci olarak yalnız **polisi** sayar.",
+  "keyPoints": [
+    "Yetkili merci polistir (f.1).",
+    "Yetki, mahsus (özel) zabıta teşkilatı olan işlere ilişkindir (f.1).",
+    "Yetkinin doğması için o yerde özel teşkilata mensup memurun bulunmaması gerekir (f.1).",
+    "Polis, yalnız bu işlere ait inzıbati muameleleri yapabilir (f.1).",
+    "Kanun bu durumu 'salahiyetlidir', yani yetkilidir diye düzenler (f.1)."
+  ],
+  "conditions": [
+    "İşin, mahsus (özel) zabıta teşkilatı olan bir iş olması (f.1).",
+    "O yerde bu teşkilata mensup memurun bulunmaması (f.1)."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Yalnız mahsus zabıta teşkilatı olan işlere ait inzıbati muameleleri yapabilir. Bu yetki, o teşkilata mensup memurun bulunmadığı yerlerle sınırlıdır.",
+      "ref": "f.1"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Soru kalıbı genellikle 'kim yetkilidir' biçimindedir. Doğru cevap polistir.",
+    "Belediye başkanı, mahallin en büyük mülki amiri, köy muhtarı ve il özel idaresi bu maddede yetkili merci olarak sayılmaz. Bu merciler çeldirici olarak kullanılır.",
+    "İki şart birlikte aranır: özel zabıta teşkilatı olan bir iş olması ve o yerde bu teşkilata mensup memur bulunmaması.",
+    "Yetkinin konusu 'inzıbati muameleler'dir. Polise o işe ilişkin sınırsız bir yetki verilmemiştir.",
+    "Madde 'salahiyetlidir' ifadesini kullanır. Bu ifade yetki anlamı taşır."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 24",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

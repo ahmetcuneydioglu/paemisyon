@@ -1,0 +1,70 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Geçici 1",
+  "title": "Umuma açık istirahat ve eğlence yerlerine ait işlem dosyalarının devri",
+  "shortSummary": "Kanunun yürürlüğünden önce mülkî amirliklerin verdiği izinle faaliyette bulunan umuma açık istirahat ve eğlence yerlerinin işlem dosyaları, ilgili belediye veya il özel idaresine devredilir. Devir, Kanunun yürürlüğe girdiği tarihten itibaren en geç üç ay içinde yapılır.",
+  "detailed": "Bu geçici madde, izin sistemindeki değişiklik sırasında mevcut işletmelerin dosyalarının hangi idareye ve hangi süre içinde aktarılacağını düzenler.\n\n**Kanun ne diyor?**\nKanunun yürürlüğe girdiği tarihten önce mülkî amirliklerce verilen izinle faaliyette bulunan umuma açık istirahat ve eğlence yerlerine ait işlem dosyaları, ilgili belediye veya il özel idaresine devredilir. Devir, Kanunun yürürlüğe girdiği tarihten itibaren en geç üç ay içinde yapılır.\n\n**Terimler**\n- **Mülkî amirlik:** Vali ve kaymakam gibi mülkî idare amirlerinin makamıdır.\n- **Umuma açık istirahat ve eğlence yeri:** Herkesin yararlanmasına açık olan dinlenme ve eğlence yerleridir.\n- **İşlem dosyası:** Bu yerlerle ilgili olarak tutulan dosyalardır.\n\n**Kapsamdaki yerler**\nMadde, aşağıdaki özelliklerin hepsini taşıyan yerleri kapsar:\n- Umuma açık istirahat ve eğlence yeri olmalıdır.\n- İzni mülkî amirlikçe verilmiş olmalıdır.\n- İzin, Kanunun yürürlüğünden önce verilmiş olmalıdır.\n- Yer, bu izinle faaliyette bulunmalıdır.\n\n**Devir**\n- **Devredilen:** Bu yerlere ait işlem dosyaları\n- **Devralan:** İlgili belediye veya il özel idaresi\n- **Süre:** En geç üç ay\n- **Sürenin başlangıcı:** Kanunun yürürlüğe girdiği tarih\n\n\"En geç\" ifadesi üç ayın üst sınır olduğunu gösterir. Devir bu süre dolmadan da yapılabilir.",
+  "keyPoints": [
+    "Konu: Umuma açık istirahat ve eğlence yerlerine ait işlem dosyalarının devri.",
+    "Kapsam: Kanunun yürürlüğünden önce mülkî amirliklerce verilen izinle faaliyette bulunan yerler.",
+    "Devralan idare: İlgili belediye veya il özel idaresi.",
+    "Süre: Kanunun yürürlüğe girdiği tarihten itibaren en geç üç ay."
+  ],
+  "conditions": [
+    "Yer, umuma açık istirahat ve eğlence yeri olmalıdır.",
+    "İzin mülkî amirliklerce verilmiş olmalıdır.",
+    "İzin, Kanunun yürürlüğe girdiği tarihten önce verilmiş olmalıdır.",
+    "Yer, bu izinle faaliyette bulunuyor olmalıdır."
+  ],
+  "exceptions": [],
+  "timeLimits": [
+    {
+      "label": "İşlem dosyalarının ilgili belediye veya il özel idaresine devri (Kanunun yürürlüğe girdiği tarihten itibaren, en geç)",
+      "value": "3 ay",
+      "ref": "Geçici 1"
+    }
+  ],
+  "numericalValues": [
+    {
+      "label": "Dosya devri için azami süre",
+      "value": "3 ay",
+      "ref": "Geçici 1"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Mülkî amirlikler",
+      "limit": "Kanunun yürürlüğünden önce izni veren makam olarak anılır. Kapsama yalnız bu makamın izniyle faaliyette bulunan yerler girer.",
+      "ref": "Geçici 1"
+    },
+    {
+      "authority": "İlgili belediye veya il özel idaresi",
+      "limit": "İşlem dosyalarının devredildiği idaredir. Devir, Kanunun yürürlüğünden itibaren en geç üç ay içinde yapılır.",
+      "ref": "Geçici 1"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Süre üç aydır ve Kanunun yürürlüğe girdiği tarihten itibaren işler. Süre bir ay ya da altı ay değildir.",
+    "\"En geç\" ifadesi süreyi üst sınır yapar. Devir üç aydan önce de tamamlanabilir.",
+    "Dosyaları devralan idare ilgili belediye veya il özel idaresidir. Valilik, kaymakamlık ya da emniyet devralan idare olarak sayılmamıştır.",
+    "Kapsam yalnız Kanundan önce mülkî amirliklerin izniyle faaliyette bulunan yerlerdir. Yeni açılacak yerler bu maddenin konusu değildir.",
+    "Devredilen şey işletmenin kendisi ya da izin değil, o yerlere ait işlem dosyalarıdır."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [
+    {
+      "value": 1,
+      "unit": "ay",
+      "note": "Yanlış süre. Metindeki süre üç aydır."
+    },
+    {
+      "value": 6,
+      "unit": "ay",
+      "note": "Yanlış süre. Metindeki süre üç aydır."
+    }
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Geçici 1",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

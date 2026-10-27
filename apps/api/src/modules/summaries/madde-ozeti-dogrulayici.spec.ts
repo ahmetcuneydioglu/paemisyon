@@ -196,6 +196,28 @@ describe('validateArticleSummary (Doc 54)', () => {
     expect(eksik.issues).toContain('madde metni mülga; repealed=true olmalı');
   });
 
+  it('KHK numarası şerhte geçiyorsa geçer', () => {
+    const text = MD16 + '\n(Ek fıkra: 2/1/2017-KHK-680/27 md.)\nTeşhis tutanağa bağlanır.';
+    const v = validateArticleSummary(
+      base({ keyPoints: ['Fıkra KHK-680 ile eklendi.'] }),
+      { articleNo: '16', text },
+      sameLaw,
+    );
+    expect(v.issues).toEqual([]);
+  });
+
+  it('kalın numaralı ara başlık sayı taramasına girmez', () => {
+    const v = validateArticleSummary(
+      base({
+        detailed:
+          '**3. Talebin yerine getirilmesi (f.3)**\nTalep derhal yerine getirilir.\n\n**4. Yardım**\nKurumlar yardım eder.',
+      }),
+      sameLaw.get('16')!,
+      sameLaw,
+    );
+    expect(v.issues).toEqual([]);
+  });
+
   it('keyPoints boşsa düşer; aşırı fıkra atfı düşer', () => {
     expect(
       validateArticleSummary(base({ keyPoints: [] }), sameLaw.get('16')!, sameLaw).issues,

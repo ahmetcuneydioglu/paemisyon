@@ -1,0 +1,65 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Ek 2",
+  "title": "Gözaltına alınanların yeme, içme ve nakil masrafları",
+  "shortSummary": "Gözaltına alınanların yeme, içme ihtiyaçlarına ve nakillerine ait masraflar, Emniyet Genel Müdürlüğü bütçesine konulacak ödenekle karşılanır. Madde 1985'te 3233 sayılı Kanunla eklendi. Birinci fıkrası 1992'de 3842 sayılı Kanunla kaldırıldı.",
+  "detailed": "**Kanun ne diyor?**\nKanun, gözaltına alınanların **yeme, içme ihtiyaçlarına ve nakillerine** ait masrafların **Emniyet Genel Müdürlüğü bütçesine konulacak ödenekle** karşılanacağını belirtir (f.2).\n\n**Kavramlar**\n- **Gözaltı:** Kişinin özgürlüğünün kısıtlanarak kolluk denetiminde tutulmasıdır.\n- **Ödenek:** Bütçede belirli bir harcama için ayrılan tutardır.\n\n**Kapsam**\nHüküm, masrafları üç kalemde sayar:\n- yeme ihtiyacı,\n- içme ihtiyacı,\n- nakil.\n\nBu masrafların karşılanacağı kaynak olarak yalnızca Emniyet Genel Müdürlüğü bütçesi gösterilir.\n\n**Değişiklik bilgisi**\nMadde, 16/6/1985 tarihinde 3233 sayılı Kanunun 7. maddesiyle eklendi. Maddenin birinci fıkrası, 18/11/1992 tarihinde 3842 sayılı Kanunun 31. maddesiyle kaldırıldı. Bu nedenle yürürlükteki tek hüküm, metindeki sıraya göre ikinci fıkradır.",
+  "keyPoints": [
+    "Gözaltına alınanların yeme, içme ve nakil masrafları Emniyet Genel Müdürlüğü bütçesine konulacak ödenekle karşılanır (f.2).",
+    "Masraf kalemleri yeme ihtiyacı, içme ihtiyacı ve nakildir (f.2).",
+    "Madde 1985'te 3233 sayılı Kanunla eklendi.",
+    "Maddenin birinci fıkrası 1992'de 3842 sayılı Kanunla kaldırıldı."
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [
+    {
+      "label": "Maddeyi ekleyen kanun",
+      "value": "3233 sayılı Kanun, 7. madde",
+      "ref": "Ek 2"
+    },
+    {
+      "label": "Maddenin eklendiği tarih",
+      "value": "16/6/1985",
+      "ref": "Ek 2"
+    },
+    {
+      "label": "Birinci fıkrayı kaldıran kanun",
+      "value": "3842 sayılı Kanun, 31. madde",
+      "ref": "Ek 2"
+    },
+    {
+      "label": "Birinci fıkranın kaldırıldığı tarih",
+      "value": "18/11/1992",
+      "ref": "Ek 2"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Emniyet Genel Müdürlüğü",
+      "limit": "Gözaltına alınanların yeme, içme ihtiyaçlarına ve nakillerine ait masraflar, bu kurumun bütçesine konulacak ödenekle karşılanır.",
+      "ref": "f.2"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Masrafın kaynağı Emniyet Genel Müdürlüğü bütçesidir. Adalet Bakanlığı bütçesi, il özel idaresi bütçesi veya İçişleri Bakanlığı örtülü ödeneği ile karıştırılmamalıdır.",
+    "Kanun, bu masrafların gözaltına alınan kişiden tahsil edileceğinden söz etmez. Kaynak olarak yalnızca bütçe ödeneğini gösterir.",
+    "Kapsama giren üç kalem şunlardır: yeme ihtiyacı, içme ihtiyacı ve nakil.",
+    "Madde 1985'te 3233 sayılı Kanunla eklendi. Birinci fıkrası 1992'de 3842 sayılı Kanunla kaldırıldı. Eklenme ve kaldırılma yılları ile kanun numaraları birbirine karıştırılmamalıdır."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "Ek 2"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Ek 2",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

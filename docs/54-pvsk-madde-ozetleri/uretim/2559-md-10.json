@@ -1,0 +1,53 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "10",
+  "title": "Taşınması yasak kama, hançer ve saldırmanın yapılması ve satılması yasağı",
+  "shortSummary": "Kanun, taşınması yasak olan kama, hançer ve saldırmanın yapılmasını ve satılmasını da yasaklar. Eski eserlerden olup kıymetli olanların satışı bu yasağın dışındadır.",
+  "detailed": "Madde iki fıkradan oluşur. Önce bir yasak koyar, sonra bu yasağa bir istisna getirir.\n\n**Yasak (f.1)**\nKanun, \"taşınması memnu olan kama, hançer ve saldırmanın yapılması ve satılması da yasaktır\" der. \"Memnu\" yasak anlamına gelir.\n\nMetindeki \"da\" ekine dikkat edin. Bu ek, söz konusu aletler için taşıma yasağının yanına iki yasak daha eklendiğini gösterir:\n- **yapılması** (imal edilmesi)\n- **satılması**\n\nYasak yalnız metinde sayılan üç alet için konmuştur: **kama, hançer ve saldırma**.\n\n**İstisna (f.2)**\nKanun, \"eski eserlerden olupta kıymetli olanların satışı bu hükümden müstesnadır\" der. \"Müstesna\" istisna tutulmuş, yani hükmün dışında bırakılmış demektir.\n\nİstisna iki bakımdan dardır:\n- Yalnız **satış** için geçerlidir. Yapılmasına ilişkin bir istisna metinde yoktur.\n- İki nitelik **birlikte** aranır: aletin **eski eserlerden** olması ve **kıymetli** olması.\n\nMetinde bu yasak ya da istisna için herhangi bir izin, merci veya yaş şartı öngörülmemiştir.",
+  "keyPoints": [
+    "Taşınması yasak olan kama, hançer ve saldırmanın yapılması da satılması da yasaktır (f.1).",
+    "Yasak kapsamındaki aletler metinde üç tane olarak sayılır: kama, hançer, saldırma (f.1).",
+    "Eski eserlerden olup kıymetli olanların satışı yasağın dışındadır (f.2).",
+    "İstisna yalnız satışı kapsar; yapma yasağına istisna getirilmemiştir (f.2)."
+  ],
+  "conditions": [
+    "Yasak, taşınması yasak (memnu) olan kama, hançer ve saldırma için geçerlidir (f.1).",
+    "İstisnadan yararlanmak için alet hem eski eserlerden olmalı hem de kıymetli olmalıdır (f.2)."
+  ],
+  "exceptions": [
+    "Eski eserlerden olup kıymetli olan kama, hançer ve saldırmanın satışı yasağın dışındadır (f.2)."
+  ],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Yasak yalnız taşıma ile sınırlı değildir. \"Da\" ifadesiyle yapma ve satma da yasaklanmıştır (f.1).",
+    "Metinde izin veya merci öngörülmez. Yapma ve satma, herhangi bir makamın iznine bağlanmamıştır.",
+    "Eski eser niteliği tek başına yetmez. İstisna için \"kıymetli\" olma şartı da aranır (f.2).",
+    "İstisna satış içindir; aynı aletlerin yapılması için istisna yoktur (f.2).",
+    "Metinde yaş sınırına dayanan bir satış yasağı yoktur. Yasak herkese satışı kapsar (f.1)."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "10"
+      ]
+    },
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "10"
+      ]
+    }
+  ],
+  "counterNumbers": [
+    18
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 10",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

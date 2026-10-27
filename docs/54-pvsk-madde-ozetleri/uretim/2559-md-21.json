@@ -1,0 +1,61 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "21",
+  "title": "Yayın araçları adına belgesiz abone ve ilan toplayanların men edilmesi",
+  "shortSummary": "Bir yayın aracı için abone kaydetmek ya da yazı, resim veya ilan toplamak amacıyla Matbuat Kanununa göre alınmış belgesi olmadan idare evlerinin dışında dolaşanlar veya dolaştırılanlar ile bu tür bir işte şantaj ya da dolandırıcılık suçlamasıyla takibat altında bulunanlar, polis tarafından bu yolda çalışmaktan men edilir.",
+  "detailed": "Madde, yayın araçları adına sahada abone ve ilan toplama faaliyetini düzenler. Polise bu faaliyeti yasaklama yetkisi verir.\n\n**Kanunun lafzı:** Kanun, bir neşir vasıtası için abone yazmak veya yazı, resim, ilan gibi bir madde kabul etmek maksadıyla, Matbuat Kanununa göre alınmış vesikası olmaksızın idare evlerinin dışında dolaşanların veya dolaştırılanların ve şantajdan ya da böyle bir harekette dolandırıcılıktan maznun olarak takibat altında bulunanların polisçe bu yolda çalışmaktan menedileceğini söyler.\n\n**Terimler:**\n- **Neşir vasıtası:** yayın aracı.\n- **Abone yazmak:** yayına abone kaydetmek.\n- **Vesika:** belge.\n- **İdare evi:** yayın kuruluşunun idare yeri.\n- **Maznun:** hakkında suç isnadı bulunan kişi.\n- **Takibat:** hukuki takip, kovuşturma.\n- **Menetmek:** yasaklamak.\n\n**Metnin saydığı kişiler:**\n- Abone yazmak veya yazı, resim, ilan gibi bir madde kabul etmek amacıyla, Matbuat Kanununa göre alınmış belgesi olmadan idare evlerinin dışında **dolaşanlar** veya **dolaştırılanlar**.\n- Şantajdan veya böyle bir harekette dolandırıcılıktan **maznun olarak takibat altında bulunanlar**.\n\n**Sonuç:** Bu kişiler polisçe **bu yolda çalışmaktan** men edilir. Metin men etme dışında bir yaptırım saymaz.\n\nİkinci grupta metin \"maznun olarak takibat altında\" olmayı yeterli görür. Bu ifadeye göre men için mahkûmiyet aranmaz.",
+  "keyPoints": [
+    "Konu: yayın aracı için abone yazma veya yazı, resim, ilan gibi madde kabul etme faaliyeti.",
+    "Belge Matbuat Kanununa göre alınmış olmalıdır.",
+    "Yer unsuru: idare evlerinin dışında dolaşmak.",
+    "Hem kendisi dolaşanlar hem de başkası tarafından dolaştırılanlar kapsamdadır.",
+    "Şantajdan veya böyle bir harekette dolandırıcılıktan maznun olarak takibat altında bulunanlar da kapsamdadır.",
+    "Yetkili mercii polistir. Sonuç, bu yolda çalışmaktan men edilmedir."
+  ],
+  "conditions": [
+    "Belgesizlik hâli için amaç: bir neşir vasıtası için abone yazmak veya yazı, resim, ilan gibi bir madde kabul etmek.",
+    "Matbuat Kanununa göre alınmış vesikanın bulunmaması.",
+    "İdare evlerinin dışında dolaşmak veya dolaştırılmak.",
+    "Takibat hâli için: şantajdan veya böyle bir harekette dolandırıcılıktan maznun olarak takibat altında bulunmak."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Maddede sayılan kişileri yalnızca bu yolda (abone yazma, yazı, resim, ilan kabul etme) çalışmaktan men eder. Metinde başka bir yaptırım yer almaz.",
+      "ref": "md 21"
+    }
+  ],
+  "relatedLegislation": [
+    {
+      "law": "Matbuat Kanunu",
+      "article": "",
+      "note": "Abone ve ilan toplamak için gereken vesikanın bu kanuna göre alınmış olması aranır.",
+      "verified": false
+    }
+  ],
+  "examReminders": [
+    "Belge herhangi bir izin değildir. Metin, Matbuat Kanununa göre alınmış vesikayı arar.",
+    "Yer unsuru idare evlerinin dışıdır. İdare evinin içinde yapılan faaliyet metinde anılmaz.",
+    "Yalnız dolaşanlar değil, dolaştırılanlar da kapsamdadır.",
+    "Metinde anılan suçlar yalnızca şantaj ve dolandırıcılıktır.",
+    "Metin \"maznun olarak takibat altında\" olmayı yeterli sayar. Mahkûmiyet şartı yoktur.",
+    "Mercii polistir. Yaptırım bu yolda çalışmaktan men etmedir; metinde para cezası veya başka bir tedbir yoktur."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "21"
+      ],
+      "label": "Metinde anılan suç sayısı (şantaj + dolandırıcılık)"
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 21",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

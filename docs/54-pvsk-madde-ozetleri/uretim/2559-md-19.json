@@ -1,0 +1,68 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "19",
+  "title": "Sokak ve umuma mahsus yerlerde düzen ve trafiğe uygun olmayan araç ile sürücülerin men edilmesi",
+  "shortSummary": "Kanun, polisin sokak, meydan ve umuma mahsus yerlerde intizamı temin ettiğini söyler. Polis, Seyrüsefer Talimatnamesindeki vasıflara uygun olmayan nakil vasıtalarının işletilmesini men eder. Bu vasıtaları sarhoş olarak ya da seyrüseferin intizam ve selametini bozacak surette idare edenleri de çalışmaktan men eder.",
+  "detailed": "**Kanun ne diyor?**\nKanun, polisin **sokak, meydan ve umuma mahsus yerlerde** intizamı temin ettiğini söyler. *İntizam* düzen, *umuma mahsus yer* ise herkese açık yer demektir.\n\nAynı cümlede polise iki men yetkisi verilir:\n- **Araç yönünden:** Seyrüsefer Talimatnamesindeki vasıflara uygun olmayan nakil vasıtalarını işletmekten men eder. *Seyrüsefer* trafik, yani gidiş-geliş; *nakil vasıtası* taşıt demektir.\n- **Sürücü yönünden:** Bu vasıtaları **sarhoş olarak** veya **seyrüseferin intizam ve selametini bozacak surette** idare edenleri çalışmaktan men eder. *Selamet* güvenlik, *idare etmek* burada aracı kullanmak anlamındadır.\n\n**Açıklama**\nMaddedeki yaptırım tek bir fiille ifade edilir: **men etmek**, yani engellemek ve yasaklamak. Madde; belge iptali, tutuklama, müsadere ya da ceza verme gibi bir yetki saymaz.\n\nSürücü yönünden men için iki ayrı durum vardır: sarhoşluk veya trafiğin düzenini ve güvenliğini bozacak biçimde araç kullanma. Bu iki durum \"veya\" ile bağlanmıştır. Bu nedenle ikisinden birinin varlığı men için yeterlidir.",
+  "keyPoints": [
+    "Polis sokak, meydan ve umuma mahsus yerlerde intizamı temin eder.",
+    "Seyrüsefer Talimatnamesindeki vasıflara uygun olmayan nakil vasıtalarının işletilmesi men edilir.",
+    "Aracı sarhoş olarak idare edenler çalışmaktan men edilir.",
+    "Aracı seyrüseferin intizam ve selametini bozacak surette idare edenler çalışmaktan men edilir.",
+    "Maddede öngörülen yetki \"men etme\"dir. İptal, tutuklama, müsadere veya ceza yetkisi bu maddede yer almaz."
+  ],
+  "conditions": [
+    "Araç için men şartı: nakil vasıtasının Seyrüsefer Talimatnamesindeki vasıflara uygun olmaması (md 19).",
+    "Sürücü için men şartı: aracı sarhoş olarak idare etmek (md 19).",
+    "Sürücü için men şartı: aracı seyrüseferin intizam ve selametini bozacak surette idare etmek (md 19). Sürücüye ilişkin iki şart \"veya\" ile bağlıdır ve birinin bulunması yeterlidir."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Sokak, meydan ve umuma mahsus yerlerde intizamı temin eder (md 19).",
+      "ref": "md 19"
+    },
+    {
+      "authority": "Polis",
+      "limit": "Talimatnamedeki vasıflara uygun olmayan nakil vasıtalarını işletmekten men eder. Sarhoş olarak veya seyrüseferin intizam ve selametini bozacak surette idare edenleri çalışmaktan men eder. Maddenin verdiği yetki men etmekle sınırlıdır.",
+      "ref": "md 19"
+    }
+  ],
+  "relatedLegislation": [
+    {
+      "law": "Seyrüsefer Talimatnamesi",
+      "article": "",
+      "note": "Nakil vasıtalarının uygun olması gereken vasıflar bu talimatnameye bağlanmıştır. Metinde madde numarası anılmaz.",
+      "verified": false
+    }
+  ],
+  "examReminders": [
+    "Polisin bu maddedeki yetkisi \"çalışmaktan men etmek\"tir. Sürücü belgesini iptal etme, tutuklama, aracı müsadere etme ya da hapis cezası verme ile karıştırılmamalıdır.",
+    "Sürücüyü men sebepleri ikidir ve \"veya\" ile bağlıdır: sarhoşluk ya da seyrüseferin intizam ve selametini bozacak surette araç kullanma.",
+    "Araca ilişkin men ölçüsü Seyrüsefer Talimatnamesindeki vasıflardır.",
+    "Maddede sayılan yerler sokak, meydan ve umuma mahsus yerlerdir."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "19"
+      ]
+    },
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "19"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 19",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

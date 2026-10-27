@@ -1,0 +1,69 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Ek 3",
+  "title": "İkametgâh veya iş adresinden ayrılmama istemi",
+  "shortSummary": "Polis, iki halde gerekli gördüğü kişilerden tespit edilmiş ikametgâh veya iş adreslerinden ayrılmamalarını yazılı olarak isteyebilir. Birinci hal, belirli suç soruşturmalarında ifadesine başvurulacak kişilerdir. İkinci hal, vatandaşlık durumu ile md 17'deki kimlik tespiti yapılıncaya kadar olan süredir. Kişi bulunabileceği yeni adresi bildirirse, mahallin en büyük mülkî amirinin yazılı emriyle o yerden ayrılmasına izin verilir.",
+  "detailed": "Bu madde 1985'te 3233 sayılı Kanunla eklendi.\n\n**Kim ister, nasıl ister?**\nKanun, polisin \"aşağıdaki hallerde gerekli görülen kişilerden\" tespit edilmiş olan ikametgâh veya iş adreslerinden ayrılmamalarını **yazılı olarak** isteyebileceğini söyler. İkametgâh, kişinin oturduğu yerdir. İstemi yapan polistir. Şekli yazılıdır. Hüküm herkes için değil, yalnız gerekli görülen kişiler için uygulanır.\n\n**Hangi hallerde? (f.1)**\n- **A bendi:** Polisin devletin bütünlüğü, genel güvenliği ve Anayasa düzeni ile kaçakçılık ve uyuşturucu maddelerle ilgili olarak yaptığı suç soruşturmaları sırasında ifadesine başvurulacak olanlar.\n- **B bendi:** Vatandaşlık durumu ile Kanunun md 17'sinde belirtilen kimlik tespiti yapılıncaya kadar.\n\n**Hangi adres?**\nKanun \"tespit edilmiş olan ikametgah veya iş adresleri\" ifadesini kullanır. İstem, önceden belirlenmiş bu adreslerden ayrılmamaya ilişkindir.\n\n**Ayrılma izni (f.2)**\nKanun, bu kişilerin bulunabilecekleri yeni adreslerini bildirmeleri şartıyla o yerden ayrılmalarına **mahallin en büyük mülkî amirinin yazılı emriyle** izin verileceğini söyler. Mülkî amir, genel idarede o yerin yönetiminden sorumlu amirdir.\n\nİzin vermek polisin değil, mülkî amirin işidir. İzin için hem yeni adresin bildirilmesi hem de yazılı emir gerekir.",
+  "keyPoints": [
+    "Ayrılmama istemini polis yapar ve bu istem yazılı olur (f.1).",
+    "İstem yalnız gerekli görülen kişilerden yapılabilir (f.1).",
+    "İstem, tespit edilmiş olan ikametgâh veya iş adresine ilişkindir (f.1).",
+    "A bendi şu soruşturmalarda ifadesine başvurulacak kişileri kapsar: devletin bütünlüğü, genel güvenliği, Anayasa düzeni, kaçakçılık ve uyuşturucu maddeler (f.1-A).",
+    "B bendi vatandaşlık durumu ile md 17'deki kimlik tespiti yapılıncaya kadar uygulanır (f.1-B).",
+    "Ayrılma izni, yeni adresin bildirilmesi şartıyla mahallin en büyük mülkî amirinin yazılı emriyle verilir (f.2).",
+    "Bu madde 1985'te 3233 sayılı Kanunla eklendi."
+  ],
+  "conditions": [
+    "Kişinin polis tarafından gerekli görülmesi (f.1).",
+    "A veya B bendindeki hallerden birinin bulunması (f.1-A, f.1-B).",
+    "Adresin tespit edilmiş ikametgâh veya iş adresi olması (f.1).",
+    "İstemin yazılı yapılması (f.1).",
+    "Ayrılma izni için kişinin bulunabileceği yeni adresi bildirmesi (f.2).",
+    "Ayrılma izninin mahallin en büyük mülkî amirinin yazılı emriyle verilmesi (f.2)."
+  ],
+  "exceptions": [
+    "Yeni adres bildirilirse, mahallin en büyük mülkî amirinin yazılı emriyle o yerden ayrılmaya izin verilir (f.2)."
+  ],
+  "timeLimits": [
+    {
+      "label": "B bendine göre ayrılmama isteminin süresi",
+      "value": "Vatandaşlık durumu ile md 17'de belirtilen kimlik tespiti yapılıncaya kadar",
+      "ref": "f.1-B"
+    }
+  ],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Ayrılmama istemini yalnız A ve B bendindeki hallerde, gerekli görülen kişilerden, tespit edilmiş ikametgâh veya iş adresi için ve yazılı olarak yapabilir.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Mahallin en büyük mülkî amiri",
+      "limit": "Kişinin yeni adresini bildirmesi şartıyla, o yerden ayrılmasına yazılı emirle izin verir.",
+      "ref": "f.2"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "İstemi polis yapar ve istem yazılıdır. Sözlü istem, sulh ceza hâkimi kararı ya da Cumhuriyet savcısı talimatı metinde yoktur.",
+    "Ayrılma iznini polis vermez. Mercii mahallin en büyük mülkî amiridir ve izin yazılı emirle verilir. İçişleri Bakanlığı ya da hâkim izni metinde yoktur.",
+    "Ayrılmak hiçbir şekilde yasak değildir. Kanun, yeni adres bildirilmesi şartıyla \"izin verilir\" der.",
+    "A bendindeki suç alanları beş başlıktır: devletin bütünlüğü, genel güvenliği, Anayasa düzeni, kaçakçılık ve uyuşturucu maddeler. Bunlar dışındaki suç türleri metinde sayılmaz.",
+    "B bendi md 17'ye atıf yapar ve istemin süresini kimlik tespiti yapılıncaya kadar olarak bağlar.",
+    "Adres türleri ikametgâh veya iş adresidir. Kanun bunlar için \"tespit edilmiş olan\" ifadesini kullanır."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "Ek 3"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Ek 3",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

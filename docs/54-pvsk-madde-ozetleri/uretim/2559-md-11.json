@@ -1,0 +1,83 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "11",
+  "title": "Genel ahlak ve edebe aykırı davranışlara karşı polisin müdahalesi",
+  "shortSummary": "Polis, genel ahlak ve edebe aykırı davranışta bulunanları, sarkıntılık edenleri, kötü alışkanlığa yöneltenleri ve ahlaka aykırı sesli/görüntülü eser üretip satanları, müracaat veya şikâyet olmasa bile engeller ve yasaklar. Sanıklar hakkındaki evrakı derhal adliyeye gönderir. Şikâyete bağlı suçlarda evrakı ancak şikâyet veya müracaat olursa gönderir.",
+  "detailed": "Madde üç bentte polisin müdahale edeceği kişileri sayar, ardından ortak bir hükümle polisin ne yapacağını belirler. Madde 1985'te 3233 sayılı Kanunla değiştirilmiştir.\n\n**Kapsamdaki kişiler (f.1)**\n- **A bendi:** Kanun, genel ahlak ve edep kurallarına aykırı olarak utanç verici ve toplum düzeni bakımından tasvip edilmeyen (onaylanmayan) tavır ve davranışta bulunanları sayar. Bu nitelikte söz, şarkı, müzik veya benzeri gösteri yapanlar da bu bende girer.\n- **B bendi:** Kanun, çocuklar, kız ve kadınlar ile genç erkeklere sözle veya herhangi bir şekilde sarkıntılık edenleri sayar. Sarkıntılık, kişiye rahatsız edici biçimde ilişmek demektir. Kötü alışkanlıklara ve her türlü ahlaksızlığa yönelten ve teşvik edenler de bu bende girer.\n- **C bendi:** Kanun, genel ahlak ve edebe aykırı mahiyette her türlü sesli ve görüntülü eseri, kaydedildiği materyale bakılmaksızın üreten ve satanları sayar. Bu bent 2002'de 4771 sayılı Kanunla değiştirilmiştir.\n\n**Polisin yapacakları (f.1)**\n- Kanun, polisin bu kişileri **herhangi bir müracaat veya şikâyet olmasa bile** engelleyeceğini söyler.\n- Polis, davranışlarının devamını durdurarak yasaklar.\n- Polis, sanıklar hakkında düzenlenecek evrakı **derhal** adliyeye tevdi eder. Tevdi, teslim etmek veya göndermek anlamına gelir.\n- **Şikâyete bağlı suçlarda** evrak, ancak şikâyet ve müracaat vukubulduğunda (meydana geldiğinde) adliyeye tevdi edilir.\n\nBuna göre engelleme ve yasaklama için şikâyet şartı yoktur. Şikâyet şartı yalnız şikâyete bağlı suçlarda, evrakın adliyeye gönderilmesi aşamasında aranır.\n\n**Mülga fıkra (f.2):** Maddenin ikinci fıkrası 2002'de 4771 sayılı Kanunla yürürlükten kaldırılmıştır.",
+  "keyPoints": [
+    "Polis, A, B ve C bentlerindeki kişileri müracaat veya şikâyet olmasa bile engeller (f.1).",
+    "Polis, bu kişilerin davranışlarının devamını durdurarak yasaklar (f.1).",
+    "Sanıklar hakkındaki evrak derhal adliyeye tevdi edilir (f.1).",
+    "Şikâyete bağlı suçlarda evrak, şikâyet ve müracaat vukubulduğu takdirde adliyeye tevdi edilir (f.1).",
+    "B bendinde korunanlar çocuklar, kız ve kadınlar ile genç erkeklerdir. Sarkıntılık sözle veya herhangi bir şekilde olabilir (f.1-B).",
+    "C bendinde eserin kaydedildiği materyal önemli değildir. Hükmün muhatapları üretenler ve satanlardır (f.1-C).",
+    "İkinci fıkra 2002'de 4771 sayılı Kanunla mülga olmuştur (f.2)."
+  ],
+  "conditions": [
+    "A bendi: Davranışın genel ahlak ve edep kurallarına aykırı olması, ayrıca utanç verici ve toplum düzeni bakımından tasvip edilmeyen nitelikte olması (f.1-A).",
+    "C bendi: Sesli veya görüntülü eserin genel ahlak ve edebe aykırı mahiyette olması ve kişinin bu eseri üretmesi veya satması (f.1-C).",
+    "Şikâyete bağlı suçlarda evrakın adliyeye tevdii için şikâyet ve müracaatın vukubulması (f.1)."
+  ],
+  "exceptions": [
+    "Şikâyete bağlı suçlarda evrak derhal değil, ancak şikâyet ve müracaat vukubulduğu takdirde adliyeye tevdi edilir (f.1)."
+  ],
+  "timeLimits": [
+    {
+      "label": "Sanıklar hakkında düzenlenen evrakın adliyeye tevdii",
+      "value": "derhal",
+      "ref": "f.1"
+    }
+  ],
+  "numericalValues": [
+    {
+      "label": "Maddeyi değiştiren kanun ve tarihi",
+      "value": "3233 sayılı Kanun md. 3, 16/6/1985",
+      "ref": "md 11"
+    },
+    {
+      "label": "C bendini değiştiren kanun ve tarihi",
+      "value": "4771 sayılı Kanun md. 10, 3/8/2002",
+      "ref": "f.1-C"
+    },
+    {
+      "label": "İkinci fıkrayı yürürlükten kaldıran kanun ve tarihi",
+      "value": "4771 sayılı Kanun md. 12, 3/8/2002",
+      "ref": "f.2"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "A, B ve C bentlerindeki kişileri müracaat veya şikâyet şartı olmaksızın engeller ve davranışlarının devamını durdurarak yasaklar.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Polis",
+      "limit": "Sanıklar hakkında düzenlenen evrakı derhal adliyeye tevdi eder. Şikâyete bağlı suçlarda ise evrakı ancak şikâyet ve müracaat vukubulursa tevdi eder.",
+      "ref": "f.1"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Engelleme ve yasaklama için müracaat veya şikâyet gerekmez. Metin bunu 'herhangi bir müracaat veya şikâyet olmasa bile' diye açıkça yazar.",
+    "Madde, müdahale için mülkî âmir emri veya Cumhuriyet savcısı talimatı şartı aramaz. Bu tür şartlar metinde yoktur.",
+    "Maddede yer sınırlaması yoktur. Hüküm umuma açık istirahat ve eğlence yerleriyle sınırlı değildir.",
+    "Şikâyet şartı engelleme aşamasında değil, şikâyete bağlı suçlarda evrakın adliyeye gönderilmesi aşamasında aranır.",
+    "B bendinde korunanlar arasında 'genç erkekler' de sayılır. Yalnız çocuklar, kız ve kadınlarla sınırlı değildir.",
+    "C bendinde 'kaydedildiği materyale bakılmaksızın' ifadesi geçer. Hükmün muhatabı üretenler ve satanlardır.",
+    "Fiil türleri karıştırılmamalı: A bendi tavır, davranış ve gösteri; B bendi sarkıntılık ile kötü alışkanlığa yöneltme ve teşvik; C bendi sesli ve görüntülü eser üretme ve satmadır."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "11"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 11",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

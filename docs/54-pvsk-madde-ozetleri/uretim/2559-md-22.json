@@ -1,0 +1,40 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "22",
+  "title": "İçişleri Bakanının Re'sen Emir Verme Yetkisi",
+  "shortSummary": "Kanun der ki: Bu Kanunda yazılı görev ve yetkilerin yerine getirilmesi ve kullanılması için en büyük mülkiye amirlerinin vereceği emirleri Dahiliye Vekili (İçişleri Bakanı) re'sen verebilir.",
+  "detailed": "**Kanunun lafzı:** Bu Kanunda yazılı vazife ve salahiyetlerin yapılması ve kullanılması için en büyük mülkiye amirlerinin vereceği emirleri Dahiliye Vekili re'sen verebilir.\n\n**Terimler:**\n- **Dahiliye Vekili:** Eski dildeki adıyla İçişleri Bakanıdır.\n- **En büyük mülkiye amiri:** Bulunduğu yerde devlet idaresinin en üst yöneticisidir. Madde bu amirlerin kimler olduğunu ayrıca saymaz.\n- **Re'sen:** Kendiliğinden demektir. Bakan bu yetkiyi kullanmak için bir talep ya da başvuru beklemez.\n- **Vazife ve salahiyet:** Görev ve yetki anlamına gelir.\n\n**Açıklama:** Madde, polisin bu Kanundaki görev ve yetkilerine ilişkin olarak en büyük mülkiye amirlerinin verebileceği emirleri İçişleri Bakanının da kendiliğinden verebileceğini düzenler. Yetkinin kapsamı, en büyük mülkiye amirlerinin bu Kanun çerçevesinde vereceği emirlerle tanımlanmıştır.\n\nKanun \"verebilir\" ifadesini kullanır. Bu ifade bir yükümlülük değil, kullanılabilecek bir yetki öngörür.",
+  "keyPoints": [
+    "Yetkili makam Dahiliye Vekili, yani İçişleri Bakanıdır.",
+    "Bakan emri re'sen, yani kendiliğinden verir.",
+    "Emirler, bu Kanunda yazılı görev ve yetkilerin yapılması ve kullanılmasına ilişkindir.",
+    "Kapsam, en büyük mülkiye amirlerinin vereceği emirlerle tanımlanmıştır.",
+    "Kanun \"verebilir\" der; düzenleme bir yükümlülük değil, yetkidir."
+  ],
+  "conditions": [
+    "Emir, bu Kanunda yazılı vazife ve salahiyetlerin yapılması ve kullanılması için olmalıdır.",
+    "Emir, en büyük mülkiye amirlerinin verebileceği türden olmalıdır."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "İçişleri Bakanı (Dahiliye Vekili)",
+      "limit": "Bu Kanunda yazılı vazife ve salahiyetlerin yapılması ve kullanılması için en büyük mülkiye amirlerinin vereceği emirleri re'sen verebilir.",
+      "ref": "md 22"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Madde metnindeki \"Dahiliye Vekili\" ifadesi İçişleri Bakanı demektir. Cumhurbaşkanı, Emniyet Genel Müdürü ve Cumhuriyet başsavcısı ile karıştırılmamalıdır.",
+    "Vali, emirleri re'sen verebilen makam değildir. Kanun, en büyük mülkiye amirlerinin vereceği emirleri Bakanın da re'sen verebileceğini söyler.",
+    "\"Re'sen\" kendiliğinden demektir. Bakanın emir vermesi için talep ya da başvuru şartı aranmaz.",
+    "Kanun \"verebilir\" der. Bu, emir vermeyi zorunlu kılmayan bir yetkidir."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 22",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

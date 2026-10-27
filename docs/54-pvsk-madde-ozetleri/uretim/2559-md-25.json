@@ -1,0 +1,54 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "25",
+  "title": "Polis teşkilatı bulunmayan yerlerde görev ve yetkiyi kullanacak jandarma komutanları",
+  "shortSummary": "Polis teşkilatı bulunmayan yerlerde Polis Vazife ve Salâhiyet Kanunu'nda yazılı görevleri yapma ve yetkileri kullanma işi il, ilçe ve bucak jandarma komutanları ile jandarma karakol komutanlarına aittir.",
+  "detailed": "Kanun, **polis teşkilatı bulunmayan yerlerde** il, ilçe ve bucak jandarma komutanları ile jandarma karakol komutanlarının **bu kanunda yazılı vazifeleri yapacağını ve yetkileri kullanacağını** söyler.\n\nBu hükümle polis için öngörülen görev ve yetkiler, polisin teşkilatlanmadığı yerlerde jandarmanın belirtilen komutanları tarafından yerine getirilir. Metin \"bu kanunda yazılı\" ifadesini kullanır. Görev ve yetkileri belirli bir maddeyle ya da belirli bir türle sınırlamaz.\n\nMaddede sayılan yetkililer:\n- İl jandarma komutanları\n- İlçe jandarma komutanları\n- Bucak jandarma komutanları (bucak: ilçeye bağlı idari birim)\n- Jandarma karakol komutanları\n\nHükmün uygulanması için metinde tek şart vardır: o yerde **polis teşkilatının bulunmaması**. Metinde herhangi bir görevlendirme, onay ya da karar mercii öngörülmemiştir.\n\nMadde 1973'te 1758 sayılı Kanunla değiştirilmiştir.",
+  "keyPoints": [
+    "Uygulama alanı: polis teşkilatı bulunmayan yerler.",
+    "Yetkililer: il, ilçe ve bucak jandarma komutanları ile jandarma karakol komutanları.",
+    "Bu kişiler bu kanunda yazılı vazifeleri yapar ve yetkileri kullanır.",
+    "Metin, görev ve yetkileri belirli maddelerle sınırlamaz; \"bu kanunda yazılı\" ifadesini kullanır.",
+    "Madde 1973'te 1758 sayılı Kanunla değiştirilmiştir."
+  ],
+  "conditions": [
+    "Hükmün uygulanacağı yerde polis teşkilatının bulunmaması gerekir (f.1)."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [
+    {
+      "label": "Maddeyi değiştiren kanun ve tarihi",
+      "value": "1758 sayılı Kanun, 25/6/1973",
+      "ref": "Değişiklik şerhi"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "İl, ilçe ve bucak jandarma komutanları ile jandarma karakol komutanları",
+      "limit": "Yalnız polis teşkilatı bulunmayan yerlerde; bu kanunda yazılı vazifeleri yapar ve yetkileri kullanır",
+      "ref": "f.1"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Yetkili sayılanlar yalnız jandarma komutanlarıdır: il, ilçe, bucak jandarma komutanları ve jandarma karakol komutanları.",
+    "Belediye zabıtası, köy korucusu, özel güvenlik görevlisi gibi kişiler bu maddede sayılmaz.",
+    "Metin mülki amire görevlendirme yetkisi vermez. Yetkililer maddede doğrudan sayılmıştır.",
+    "Bucak jandarma komutanları ve jandarma karakol komutanları da listededir. Listeyi yalnız il ve ilçe düzeyiyle sınırlamak eksik olur.",
+    "Hükmün tek koşulu, o yerde polis teşkilatının bulunmamasıdır."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 4,
+      "expr": "1 + 1 + 1 + 1",
+      "refs": [
+        "md 25"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 25",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

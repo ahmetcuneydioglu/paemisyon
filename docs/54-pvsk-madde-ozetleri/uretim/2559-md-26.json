@@ -1,0 +1,35 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "26",
+  "title": "Uygulama Yönetmeliği",
+  "shortSummary": "Kanun, kendi uygulanma şeklini gösteren bir yönetmeliğin Cumhurbaşkanınca çıkarılacağını hükme bağlar.",
+  "detailed": "Madde tek cümleden oluşur. Kanun, **\"Bu kanunun tatbik suretini gösterir bir yönetmelik Cumhurbaşkanınca çıkarılır\"** der.\n\n**Tatbik sureti**, bir kuralın nasıl uygulanacağı, yani uygulama şekli ve usulü demektir. **Yönetmelik** ise bir kanunun uygulanmasını göstermek için yetkili makamca çıkarılan yazılı düzenleyici metindir.\n\nHüküm iki unsurdan oluşur:\n- **Çıkarılacak düzenleme:** Bir yönetmelik.\n- **Yönetmeliğin konusu:** Bu kanunun uygulanma şekli.\n\nYönetmeliği çıkaracak makam olarak metinde yalnızca **Cumhurbaşkanı** anılır. Madde, yönetmeliğin çıkarılması için bir süre ya da ek bir şart öngörmez.",
+  "keyPoints": [
+    "Kanunun uygulanma şeklini gösteren bir yönetmelik çıkarılır.",
+    "Yönetmeliği çıkaracak makam Cumhurbaşkanıdır.",
+    "Yönetmeliğin konusu bu kanunun tatbik suretidir, yani uygulama şeklidir.",
+    "Maddede yönetmeliğin çıkarılması için bir süre öngörülmemiştir."
+  ],
+  "conditions": [],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [],
+  "authorityAndLimits": [
+    {
+      "authority": "Cumhurbaşkanı",
+      "limit": "Bu kanunun tatbik suretini gösteren yönetmeliği çıkarır.",
+      "ref": "md 26"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Yönetmeliği çıkaran makam metinde \"Cumhurbaşkanı\" olarak yazılıdır. Maddede başka bir bakanlık, kurum veya kurul anılmaz.",
+    "Yönetmeliğin konusu kanunun \"tatbik sureti\", yani uygulama şeklidir.",
+    "Maddede yönetmeliğin çıkarılması için bir süre yoktur. Süre içeren bir ifade metne dayanmaz."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md 26",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

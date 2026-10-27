@@ -1,0 +1,94 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Ek 1",
+  "title": "Umuma açık yerlerde oyun, temsil ve gösteri için bildirim",
+  "shortSummary": "Gerçek kişi veya topluluklar, umumî veya umuma açık yerlerde ve bu nitelikteki ulaşım araçlarında oyun, temsil ya da gösteri düzenleyebilir. Bunun için mahallin en büyük mülkî amirine en az kırk sekiz saat önceden yazılı bildirimde bulunmaları gerekir. Bölünmez bütünlüğe, Anayasal düzene veya genel ahlâka aykırı olduğu tespit edilenler hakkında mülkî amir derhal Cumhuriyet savcılığına suç duyurusunda bulunur.",
+  "detailed": "Bu madde 2002'de 4771 sayılı Kanunla eklendi.\n\n**Kimler, nerede, ne yapabilir? (f.1)**\nKanun, **gerçek kişi veya toplulukların** oyun ve temsil verebileceğini ya da çeşitli şekillerde gösteri düzenleyebileceğini söyler. Bunun yapılabileceği yerler şunlardır:\n- umumî veya umuma açık yerler,\n- umuma açık yer niteliğindeki ulaşım araçları.\n\n**Usul: izin değil, yazılı bildirim (f.1)**\nBu faaliyetler için mahallin en büyük mülkî amirine **en az kırk sekiz saat önceden yazılı bildirimde** bulunulur. Metin \"izin\" değil \"bildirim\" sözcüğünü kullanır. Mülkî amir, devleti yerelde temsil eden yönetim amiridir. Bildirim kolluk birimine değil, bu amire yapılır.\n\n**Bildirimin içeriği (f.3)**\nBirinci fıkradaki bildirimde, oyun veya temsile katılan **yönetici ve diğer kişilerin** şu bilgileri belirtilir:\n- kimlik,\n- ikametgâh,\n- tâbiiyet (vatandaşlık).\n\n**Aykırılık hâlinde (f.2)**\nOyun, temsil ve gösterilerden bazıları şu değerlere aykırı olabilir:\n- Devletin ülkesi ve milleti ile bölünmez bütünlüğü,\n- Anayasal düzen,\n- genel ahlâk.\n\nAykırılığı tespit edilenler hakkında mahallin en büyük mülkî amiri **derhal Cumhuriyet savcılığına suç duyurusunda** bulunur. Suç duyurusu, bir suçun işlendiğini yetkili makama bildirmektir. Madde bu durumda mülkî amire yalnız suç duyurusu görevi yükler. Yasaklama veya durdurma gibi ayrı bir yetkiden söz etmez.",
+  "keyPoints": [
+    "Faaliyet türleri: oyun ve temsil vermek ya da çeşitli şekillerde gösteri düzenlemek (f.1).",
+    "Faaliyeti gerçek kişi veya topluluklar yapabilir (f.1).",
+    "Yerler: umumî veya umuma açık yerler ile umuma açık yer niteliğindeki ulaşım araçları (f.1).",
+    "Bildirim mercii mahallin en büyük mülkî amiridir (f.1).",
+    "Bildirim yazılıdır ve en az kırk sekiz saat önceden yapılır (f.1).",
+    "Bildirimde katılan yönetici ve diğer kişilerin kimlik, ikametgâh ve tâbiiyetleri yer alır (f.3).",
+    "Bölünmez bütünlüğe, Anayasal düzene veya genel ahlâka aykırılık tespit edilirse mülkî amir derhal Cumhuriyet savcılığına suç duyurusunda bulunur (f.2)."
+  ],
+  "conditions": [
+    "Bildirim mahallin en büyük mülkî amirine yapılmalıdır (f.1).",
+    "Bildirim yazılı olmalıdır (f.1).",
+    "Bildirim en az kırk sekiz saat önceden yapılmalıdır (f.1).",
+    "Bildirimde oyun veya temsile katılan yönetici ve diğer kişilerin kimlik, ikametgâh ve tâbiiyetleri belirtilmelidir (f.3).",
+    "Suç duyurusu için aykırılığın tespit edilmiş olması gerekir (f.2)."
+  ],
+  "exceptions": [],
+  "timeLimits": [
+    {
+      "label": "Yazılı bildirimin yapılacağı asgari süre",
+      "value": "En az kırk sekiz saat önceden",
+      "ref": "f.1"
+    },
+    {
+      "label": "Aykırılık tespitinde suç duyurusu",
+      "value": "Derhal",
+      "ref": "f.2"
+    }
+  ],
+  "numericalValues": [
+    {
+      "label": "Bildirim için asgari ön süre",
+      "value": "48 saat",
+      "ref": "f.1"
+    },
+    {
+      "label": "Maddenin eklendiği yıl",
+      "value": "2002",
+      "ref": "Ek: 3/8/2002-4771/10 md."
+    },
+    {
+      "label": "Maddeyi ekleyen kanun",
+      "value": "4771 sayılı Kanun",
+      "ref": "Ek: 3/8/2002-4771/10 md."
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Mahallin en büyük mülkî amiri",
+      "limit": "Yazılı bildirimin yapılacağı mercidir.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Mahallin en büyük mülkî amiri",
+      "limit": "Bölünmez bütünlüğe, Anayasal düzene veya genel ahlâka aykırılığı tespit edilenler hakkında derhal Cumhuriyet savcılığına suç duyurusunda bulunur. Madde bunun dışında bir yaptırım yetkisi saymaz.",
+      "ref": "f.2"
+    },
+    {
+      "authority": "Cumhuriyet savcılığı",
+      "limit": "Suç duyurusunun yapılacağı mercidir.",
+      "ref": "f.2"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Süre en az kırk sekiz saattir. Yirmi dört veya yetmiş iki saatle karıştırılmamalıdır (f.1).",
+    "Bildirim, faaliyetin yapılacağı mahallin en büyük mülkî amirine yapılır. İlçedeki bir faaliyette bu, il merkezindeki amir değil, o ilçenin mülkî amiridir. Emniyet birimi bildirim mercii değildir (f.1).",
+    "Usul izin değil, yazılı bildirimdir (f.1).",
+    "Aykırılık hâlinde suç duyurusunu mülkî amir yapar ve muhatap Cumhuriyet savcılığıdır. Duyuru \"derhal\" yapılır (f.2).",
+    "Aykırılık ölçütleri şunlardır: Devletin ülkesi ve milleti ile bölünmez bütünlüğü, Anayasal düzen ve genel ahlâk (f.2).",
+    "Bildirimde belirtilecek bilgiler kimlik, ikametgâh ve tâbiiyettir. Bunlar yalnız yöneticiler için değil, katılan diğer kişiler için de belirtilir (f.3).",
+    "Kapsama umuma açık yer niteliğindeki ulaşım araçları da girer (f.1)."
+  ],
+  "derivedNumbers": [],
+  "counterNumbers": [
+    {
+      "value": 24,
+      "label": "Yirmi dört saat (yanlış süre; doğrusu kırk sekiz saat)"
+    },
+    {
+      "value": 72,
+      "label": "Yetmiş iki saat (yanlış süre; doğrusu kırk sekiz saat)"
+    }
+  ],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Ek 1",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

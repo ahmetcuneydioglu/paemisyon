@@ -1,0 +1,87 @@
+{
+  "lawSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+  "articleNo": "Ek 4",
+  "title": "Polisin görev alanında karşılaştığı suça müdahale görev ve yetkisi",
+  "shortSummary": "Polis, görevli bulunduğu mülki sınırlar içinde, hizmet branşı, yeri ve zamanına bakılmaksızın, karşılaştığı suça el koymak, suçu önlemek, sanık ve suç delillerini tespit ve muhafaza ederek yetkili zabıtaya teslim etmekle görevli ve yetkilidir. Bu müdahale sırasında polise karşı işlenen suçlar görevli memura karşı, polisin işlediği suçlar ise görevli memurun işlediği suç sayılır.",
+  "detailed": "Bu madde 1985'te 3233 sayılı Kanunla eklendi.\n\n**Görev ve yetki (f.1)**\nKanun der ki: polis, **görevli bulunduğu mülki sınırlar içinde**, **hizmet branşı, yeri ve zamanına bakılmaksızın**, bir suçla karşılaştığında şu işlerle **hem görevli hem yetkilidir**:\n- suça el koymak,\n- suçu önlemek,\n- sanık ve suç delillerini tespit etmek,\n- bunları muhafaza etmek,\n- yetkili zabıtaya teslim etmek.\n\n\"Mülki sınır\", polisin görev yaptığı idari birimin coğrafi sınırıdır. Bu sınır içinde polisin o an hangi branşta çalıştığı, nerede bulunduğu ve saatin kaç olduğu müdahale görevini ortadan kaldırmaz. \"Zabıta\" sözcüğü burada kolluk anlamında kullanılmıştır. Polis el koyduğu sanık ve delilleri, olayla ilgili işlemi yürütmeye yetkili kolluğa teslim eder.\n\n**Suçların niteliği (f.2)**\nKanun der ki: bu madde gereğince bir suça müdahale eden polise karşı işlenen suçlar **görevli memura karşı işlenmiş suç** sayılır. Müdahalede bulunan polisin işlediği suçlar ise **görevli memurun işlediği suç** sayılır.\n\nBu hüküm iki yönlüdür. Polis, müdahale sırasında görevli memurun sağladığı korumadan yararlanır. Aynı ölçüde, işlediği suçlardan da görevli memur sıfatıyla sorumlu tutulur.",
+  "keyPoints": [
+    "Yetki alanı: polisin görevli bulunduğu mülki sınırlar içi (f.1).",
+    "Hizmet branşı, yer ve zaman, müdahale görevini etkilemez (f.1).",
+    "Polisin işleri: suça el koymak, önlemek, sanık ve delilleri tespit etmek, muhafaza etmek ve yetkili zabıtaya teslim etmek (f.1).",
+    "Polis bu işlerle hem görevli hem yetkilidir (f.1).",
+    "Müdahale eden polise karşı işlenen suç, görevli memura karşı işlenmiş suç sayılır (f.2).",
+    "Müdahale eden polisin işlediği suç, görevli memurun işlediği suç sayılır (f.2)."
+  ],
+  "conditions": [
+    "Polisin görevli bulunduğu mülki sınırlar içinde olması (f.1).",
+    "Polisin bir suçla karşılaşması (f.1).",
+    "f.2'deki nitelendirme için polisin bu madde gereğince suça müdahale etmiş olması (f.2)."
+  ],
+  "exceptions": [],
+  "timeLimits": [],
+  "numericalValues": [
+    {
+      "label": "Maddenin eklenme tarihi",
+      "value": "16/6/1985",
+      "ref": "Ek 4"
+    },
+    {
+      "label": "Maddeyi ekleyen kanun",
+      "value": "3233 sayılı Kanun",
+      "ref": "Ek 4"
+    },
+    {
+      "label": "Ekleyen kanunun maddesi",
+      "value": "7. madde",
+      "ref": "Ek 4"
+    }
+  ],
+  "authorityAndLimits": [
+    {
+      "authority": "Polis",
+      "limit": "Görevli bulunduğu mülki sınırlar içinde, hizmet branşı, yeri ve zamanına bakılmaksızın karşılaştığı suça el koyar, suçu önler, sanık ve suç delillerini tespit ve muhafaza eder.",
+      "ref": "f.1"
+    },
+    {
+      "authority": "Polis",
+      "limit": "Tespit ve muhafaza ettiği sanık ve delilleri yetkili zabıtaya teslim eder.",
+      "ref": "f.1"
+    }
+  ],
+  "relatedLegislation": [],
+  "examReminders": [
+    "Müdahale eden polise karşı işlenen suç, görevli memura karşı işlenmiş suç sayılır. Mesai saati, üniforma ya da mülki amirin takdiri gibi şartlar metinde yoktur (f.2).",
+    "Kanun hizmet branşı, yer ve zaman unsurlarını açıkça saymıştır. Bu unsurlar müdahale görevini ortadan kaldırmaz (f.1).",
+    "Sınırlayıcı unsur 'görevli bulunduğu mülki sınırlar'dır. Branş, yer ya da zaman sınırlayıcı unsur değildir (f.1).",
+    "f.2 iki yönlüdür: polise karşı işlenen suç ve polisin işlediği suç, ikisi de görevli memur kapsamında değerlendirilir.",
+    "Polis hem 'görevli' hem 'yetkili'dir. Müdahale yalnızca bir hak değil, aynı zamanda bir görevdir (f.1).",
+    "Teslim mercii 'yetkili zabıta'dır (f.1)."
+  ],
+  "derivedNumbers": [
+    {
+      "value": 2,
+      "expr": "1 + 1",
+      "refs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "value": 3,
+      "expr": "1 + 1 + 1",
+      "refs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "value": 5,
+      "expr": "1 + 1 + 1 + 1 + 1",
+      "refs": [
+        "Ek 4"
+      ]
+    }
+  ],
+  "counterNumbers": [],
+  "verifiedAt": "2026-10-27",
+  "sourceLabel": "AI madde özeti — 2559 s.K. md Ek 4",
+  "generatedBy": "claude-opus-5-5 (madde-ozeti-uret.ts)"
+}

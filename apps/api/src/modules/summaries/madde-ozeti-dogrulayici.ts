@@ -124,6 +124,8 @@ export function summaryText(s: ArticleSummaryJson): string {
 function kanunNumaralari(s: ArticleSummaryJson): number[] {
   const out = new Set<number>();
   for (const m of summaryText(s).matchAll(/\b(\d{3,4})\s+sayılı/gi)) out.add(Number(m[1]));
+  // KHK numarası ("KHK-680", "680 sayılı KHK") da şerhte geçen bir mevzuat numarasıdır.
+  for (const m of summaryText(s).matchAll(/\bKHK[-\s/]*(\d{3,4})\b/g)) out.add(Number(m[1]));
   for (const r of s.relatedLegislation ?? [])
     for (const m of r.law.matchAll(/\b(\d{3,4})\b/g)) out.add(Number(m[1]));
   return [...out];
@@ -212,7 +214,9 @@ export function validateArticleSummary(
   const counters = normalizeCounterNumbers(s.counterNumbers);
   const temiz = metin
     .replace(/\b(?:md|madde)\.?\s*(?:Ek|Geçici)?\s*\d+(?:\/[A-Z])?/gi, ' ')
-    .replace(/\bf\.\s*\d+(?:-[a-zçğ])?/gi, ' ');
+    .replace(/\bf\.\s*\d+(?:-[a-zçğ])?/gi, ' ')
+    // Kalın numaralı ara başlık ("**3. Talebin yerine getirilmesi**") sayı değil, sıra numarasıdır.
+    .replace(/\*\*\d{1,2}\.\s/g, '** ');
   for (const n of extractNumbers(temiz)) {
     if (counters.includes(n)) {
       if (numberInTexts(n, refTexts)) bad(`${n} karşı örnek ama metinde GEÇİYOR`);

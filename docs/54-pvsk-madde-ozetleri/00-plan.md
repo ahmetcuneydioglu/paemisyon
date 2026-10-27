@@ -112,7 +112,7 @@ yok; dil sade, terim ilk geçtiği yerde açıklanır.
 | 2 | Mevzuat envanteri: 42 madde, 3 mülga (3, 18, Ek 8), Ek 7 eski (7590) | yapıldı; **Ek 7 tazeleme kullanıcıda** |
 | 3 | İçerik standardı: md 16 örnek özeti + doğrulama + kalite listesi | yapıldı (`ornek/pvsk-md-16.json`, GEÇTİ) |
 | 4 | Şema + migration + doğrulayıcı + betikler + API + admin + web/mobil | yapıldı — `01-altyapi-ve-yuzeyler.md` |
-| 5 | Seri üretim (5 parti) + otomatik kontrol | 28 Eki: p1 (11 madde) 0 kusur; p2–p5 üretiliyor; Ek 7 tazeleme sonrası |
+| 5 | Seri üretim (5 parti) + otomatik kontrol | 28 Eki: 41/42 madde üretildi, doğrulayıcıdan 0 kusur (`uretim/`); Ek 7 tazeleme sonrası |
 | 6 | Entegrasyon ve E2E | yerel E2E yapıldı; prod: deploy + yükleme + admin inceleme bekliyor |
 | 7 | Son rapor | |
 
