@@ -18,6 +18,7 @@ import {
   loadLawArticles,
   toSummaryData,
 } from '../../summaries/madde-ozeti-ice-aktar';
+import { articleSummaryPaths, revalidateWebPaths } from '../../summaries/web-revalidate';
 
 export type UpdateArticleSummaryDto = Partial<
   Pick<
@@ -296,6 +297,7 @@ export class AdminArticleSummariesService {
       },
     });
     await this.audit.log(actor, 'article_summary.publish', 'article_summary', id);
+    await revalidateWebPaths(articleSummaryPaths(d.article.lawSlug, d.article.articleNo));
     return { ok: true };
   }
 
@@ -339,8 +341,18 @@ export class AdminArticleSummariesService {
   async unpublish(actor: AuthenticatedUser, id: string) {
     if (!actor.roles.includes('admin'))
       throw new ForbiddenException('Yayından alma admin yetkisi ister.');
-    await this.prisma.articleSummary.update({ where: { id }, data: { status: 'in_review' } });
+    const s = await this.prisma.articleSummary.update({
+      where: { id },
+      data: { status: 'in_review' },
+      select: {
+        lawArticle: { select: { articleNo: true, legislation: { select: { slug: true } } } },
+      },
+    });
     await this.audit.log(actor, 'article_summary.unpublish', 'article_summary', id);
+    if (s.lawArticle.legislation)
+      await revalidateWebPaths(
+        articleSummaryPaths(s.lawArticle.legislation.slug, s.lawArticle.articleNo),
+      );
     return { ok: true };
   }
 
