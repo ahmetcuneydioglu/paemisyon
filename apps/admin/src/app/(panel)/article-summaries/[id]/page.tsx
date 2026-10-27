@@ -313,7 +313,11 @@ export default function ArticleSummaryPage() {
                 </div>
                 {!s.repealed && (
                   <>
-                    {s.detailed && <Block label="Ayrıntılı açıklama"><p className="whitespace-pre-line text-slate-700">{s.detailed}</p></Block>}
+                    {s.detailed && (
+                      <Block label="Ayrıntılı açıklama">
+                        <p className="whitespace-pre-line text-slate-700">{kalin(s.detailed)}</p>
+                      </Block>
+                    )}
                     <ListBlock label="Temel noktalar" items={s.keyPoints} />
                     <ListBlock label="Şartlar" items={s.conditions} />
                     <RowsBlock label="Süreler" rows={s.timeLimits} />
@@ -393,6 +397,19 @@ export default function ArticleSummaryPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+/** Üretim gövdesinde yalnız kalın (**…**) ve satır başı liste var; kalını <strong> yapar, gerisini olduğu gibi bırakır. */
+function kalin(text: string): React.ReactNode[] {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((p, i) =>
+    p.startsWith('**') && p.endsWith('**') ? (
+      <strong key={i} className="font-semibold text-slate-900">
+        {p.slice(2, -2)}
+      </strong>
+    ) : (
+      <span key={i}>{p}</span>
+    ),
   );
 }
 
