@@ -49,6 +49,11 @@ export default function ArticleSummaryLawPage() {
     },
     onError: (e: unknown) => setNotice({ kind: 'err', text: e instanceof Error ? e.message : 'Toplu yayın başarısız.' }),
   });
+  const revalidate = useMutation({
+    mutationFn: () => api<{ paths: number }>(`/admin/article-summaries/law/${slug}/revalidate-web`, { method: 'POST' }),
+    onSuccess: (r) => setNotice({ kind: 'ok', text: `Web önbelleği tazelendi: ${r.paths} sayfa (madde sayfaları + okuyucu).` }),
+    onError: (e: unknown) => setNotice({ kind: 'err', text: e instanceof Error ? e.message : 'Yenileme başarısız.' }),
+  });
   const toggle = (id: string) =>
     setSelected((prev) => {
       const n = new Set(prev);
@@ -63,9 +68,21 @@ export default function ArticleSummaryLawPage() {
         title={d?.law.name ?? 'Madde özetleri'}
         subtitle={d ? `${d.articles.length} madde · ${summarized} özetli · ${d.articles.filter((a) => a.summary?.status === 'published').length} yayında` : ''}
         action={
-          <Link href="/article-summaries" className="text-sm text-slate-600 hover:underline">
-            ← Madde Özetleri
-          </Link>
+          <div className="flex items-center gap-3">
+            {isAdmin && (
+              <button
+                onClick={() => revalidate.mutate()}
+                disabled={revalidate.isPending}
+                title="Girişsiz madde sayfaları günde bir, okuyucu saatte bir yenilenir; bu düğme beklemeden tazeler."
+                className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50"
+              >
+                {revalidate.isPending ? 'Tazeleniyor…' : 'Web önbelleğini tazele'}
+              </button>
+            )}
+            <Link href="/article-summaries" className="text-sm text-slate-600 hover:underline">
+              ← Madde Özetleri
+            </Link>
+          </div>
         }
       />
       {notice && (

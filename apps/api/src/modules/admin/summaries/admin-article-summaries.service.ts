@@ -338,6 +338,29 @@ export class AdminArticleSummariesService {
     return { published, skipped };
   }
 
+  /** Kanunun yayındaki bütün madde sayfaları + okuyucu için web önbelleğini tazeler (metin tazeleme ya da toplu yayın sonrası). */
+  async revalidateLaw(actor: AuthenticatedUser, lawSlug: string) {
+    const leg = await this.prisma.legislation.findFirst({
+      where: { slug: lawSlug, deletedAt: null },
+      select: { id: true },
+    });
+    if (!leg) throw new NotFoundException('Mevzuat bulunamadı.');
+    const rows = await this.prisma.articleSummary.findMany({
+      where: { status: 'published', lawArticle: { legislationId: leg.id, deletedAt: null } },
+      select: { lawArticle: { select: { articleNo: true } } },
+    });
+    const paths = [
+      ...new Set(rows.flatMap((r) => articleSummaryPaths(lawSlug, r.lawArticle.articleNo))),
+    ];
+    if (!process.env.WEB_REVALIDATE_SECRET)
+      throw new BadRequestException('WEB_REVALIDATE_SECRET tanımlı değil; web yenilemesi kapalı.');
+    for (let i = 0; i < paths.length; i += 50) await revalidateWebPaths(paths.slice(i, i + 50));
+    await this.audit.log(actor, 'article_summary.revalidate_web', 'legislation', leg.id, {
+      paths: paths.length,
+    });
+    return { ok: true, paths: paths.length };
+  }
+
   async unpublish(actor: AuthenticatedUser, id: string) {
     if (!actor.roles.includes('admin'))
       throw new ForbiddenException('Yayından alma admin yetkisi ister.');

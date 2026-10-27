@@ -67,6 +67,12 @@ export class AdminArticleSummariesController {
     return Promise.all(items.map((s) => this.svc.import(actor, s, r)));
   }
 
+  @Post('law/:slug/revalidate-web')
+  @Roles('admin')
+  revalidateWeb(@CurrentUser() actor: AuthenticatedUser, @Param('slug') slug: string) {
+    return this.svc.revalidateLaw(actor, slug);
+  }
+
   @Post('publish-many')
   @Roles('admin')
   publishMany(@CurrentUser() actor: AuthenticatedUser, @Body() body: { ids?: string[] }) {
