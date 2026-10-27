@@ -1,6 +1,6 @@
 # Doc 54 — Aşama 4: Altyapı ve yüzeyler (28 Eki 2026)
 
-Durum: **kod tamam, yerelde E2E doğrulandı; deploy bekliyor.** Üretim hattı (Aşama 5) paralel yürüyor.
+Durum: **kod tamam, yerelde E2E doğrulandı; main'e push edildi (28 Eki).** Üretim hattı (Aşama 5) paralel yürüyor.
 
 ## Veri modeli
 
@@ -55,7 +55,7 @@ kaba kontrolü; `keyPoints` boş olamaz.
 Yerel Postgres'e migration uygulandı; PVSK (42 madde) + 59 tohum soru + PAEM bölümü eklendi; p1 özetleri
 in_review yüklendi; md 1, 3, 16 yerelde yayınlanıp anon madde sayfası (compact kart, mobil + masaüstü,
 koyu + açık), okuyucu (`<details>` bloğu, mülga örneği) ve public API çıktıları doğrulandı. Konsol hatası yok.
-Admin paneli ve girişli çalışma alanı oturum süresi dolduğu için ekranda doğrulanamadı (tsc/eslint temiz).
+Admin paneli (kapsama, kanun listesi, md 4/A inceleme, doğrulama satırları, yayın) ve girişli çalışma alanı (tam kart) ekranda doğrulandı.
 
 ## Açık
 
