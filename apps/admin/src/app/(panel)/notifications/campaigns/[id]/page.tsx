@@ -8,7 +8,7 @@ import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
 import { useIsAdmin } from '@/components/notifications/campaign-form';
 import { BarRow, CampaignBadge, ConfirmDialog, StatCard, Warnings, channelsText } from '@/components/notifications/ui';
-import { CATEGORY_LABEL, CHANNEL_LABEL, DELIVERY_STATUS, REASON_LABEL, TARGET_LABEL, fmtDate, fmtInt, pct, type Campaign, type Channel, type DeliveryStatus } from '../../types';
+import { CATEGORY_LABEL, CHANNEL_LABEL, DELIVERY_STATUS, REASON_LABEL, TARGET_LABEL, fmtDate, fmtInt, pct, type Campaign, type Channel, type DeliveryStatus, type VariantStat } from '../../types';
 
 type Analytics = {
   campaign: Campaign;
@@ -16,6 +16,7 @@ type Analytics = {
   opened: number; clicked: number; converted: number;
   platforms: { platform: string | null; n: number }[];
   suppression: { reason: string | null; count: number }[];
+  variants: VariantStat[];
 };
 
 /** Kampanya detayı: sayaçlar, kanal kırılımı, bastırma nedenleri, eylemler (Figma slide-over). */
@@ -43,7 +44,7 @@ export default function CampaignDetailPage() {
   });
   if (q.isPending) return <Spinner />;
   if (q.isError) return <ErrorBox error={q.error} onRetry={() => q.refetch()} />;
-  const { campaign: c, deliveries, opened, clicked, converted, platforms, suppression } = q.data;
+  const { campaign: c, deliveries, opened, clicked, converted, platforms, suppression, variants } = q.data;
   const sent = deliveries.filter((d) => d.status === 'sent').reduce((a, d) => a + d.count, 0);
   const byChannel = (['push', 'email'] as Channel[]).map((ch) => ({ ch, rows: deliveries.filter((d) => d.channel === ch) }));
   const maxP = Math.max(1, ...platforms.map((p) => p.n));
@@ -111,7 +112,17 @@ export default function CampaignDetailPage() {
             </div>
           )}
           <Warnings items={c.warnings} />
-          <p className="text-xs text-slate-500">Varyant: tek (A/B F3) · sessiz saat {c.respectQuietHours ? 'uygulanır' : 'uygulanmaz'} · kapı {c.countTowardCaps ? 'sayılır' : 'sayılmaz'} · ttl {c.ttlHours} sa · kitle {c.audienceMode}{c.segment ? ` (${c.segment.name})` : ''}</p>
+          {variants.length > 1 && (
+            <table className="mt-2 w-full text-sm">
+              <thead><tr className="border-b border-slate-100 text-left text-xs text-slate-500"><th className="py-1.5">Varyant</th><th>Ağırlık</th><th>Alıcı</th><th>Teslim</th><th>Açılma</th><th>Tıklama</th><th>Dönüşüm</th></tr></thead>
+              <tbody className="divide-y divide-slate-50">
+                {variants.map((v) => (
+                  <tr key={v.id}><td className="py-1.5"><b>{v.key}</b> <span className="text-xs text-slate-500">{v.title}</span></td><td>%{v.weight}</td><td>{fmtInt(v.total)}</td><td>{fmtInt(v.sent)}</td><td>{pct(v.opened, v.sent)}</td><td>{pct(v.clicked, v.sent)}</td><td>{pct(v.converted, v.sent)}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+          <p className="text-xs text-slate-500">Varyant: {variants.length > 1 ? `${variants.length} (A/B)` : 'tek'}{c.sendMode === 'smart' ? ` · akıllı saat ${c.smartWindowStart}–${c.smartWindowEnd}` : ''} · sessiz saat {c.respectQuietHours ? 'uygulanır' : 'uygulanmaz'} · kapı {c.countTowardCaps ? 'sayılır' : 'sayılmaz'} · ttl {c.ttlHours} sa · kitle {c.audienceMode}{c.segment ? ` (${c.segment.name})` : ''}</p>
         </Card>
       </div>
       <ConfirmDialog

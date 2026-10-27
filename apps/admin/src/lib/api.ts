@@ -52,3 +52,22 @@ export async function api<T>(
   }
   return (json?.data ?? null) as T;
 }
+
+/** Yetkili dosya indirme (CSV vb.): Bearer ile getirir, tarayıcıya kaydettirir. */
+export async function downloadFile(path: string, filename: string): Promise<void> {
+  const { data } = await supabase().auth.getSession();
+  const token = data.session?.access_token;
+  const res = await fetch(`${config.apiBaseUrl}${path}`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : {},
+  });
+  if (!res.ok) throw new ApiError(res.status, 'DOWNLOAD', `İndirme başarısız (${res.status}).`);
+  const blob = await res.blob();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}

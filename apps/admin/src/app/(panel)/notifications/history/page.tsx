@@ -3,7 +3,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
-import { api } from '@/lib/api';
+import { api, downloadFile } from '@/lib/api';
 import { DeliveryBadge, inputCls } from '@/components/notifications/ui';
 import { CATEGORY_LABEL, CHANNEL_LABEL, DELIVERY_STATUS, REASON_LABEL, fmtDate, fmtInt, type Channel, type DeliveryStatus, type HistoryItem } from '../types';
 
@@ -20,6 +20,7 @@ export default function HistoryPage() {
         <input className={`${inputCls} w-56`} placeholder="Kullanıcı e-posta" value={f.email} onChange={(e) => setF({ ...f, email: e.target.value, page: 1 })} />
         <select className={`${inputCls} w-40`} value={f.channel} onChange={(e) => setF({ ...f, channel: e.target.value as Channel | '', page: 1 })}><option value="">Kanal: tümü</option>{(['push', 'email'] as Channel[]).map((c) => <option key={c} value={c}>{CHANNEL_LABEL[c]}</option>)}</select>
         <select className={`${inputCls} w-44`} value={f.status} onChange={(e) => setF({ ...f, status: e.target.value as DeliveryStatus | '', page: 1 })}><option value="">Durum: tümü</option>{(Object.keys(DELIVERY_STATUS) as DeliveryStatus[]).map((s) => <option key={s} value={s}>{DELIVERY_STATUS[s].label}</option>)}</select>
+        <button type="button" onClick={() => void downloadFile(`/admin/notifications/history/export?${new URLSearchParams({ ...(f.email ? { email: f.email } : {}), ...(f.channel ? { channel: f.channel } : {}), ...(f.status ? { status: f.status } : {}) })}`, 'bildirim-gecmisi.csv')} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm">CSV indir</button>
         <span className="ml-auto text-xs text-slate-500">Sayfa {f.page} / {pages}</span>
       </div>
       {q.isPending ? <Spinner /> : q.isError ? <ErrorBox error={q.error} onRetry={() => q.refetch()} /> : (
@@ -45,7 +46,7 @@ export default function HistoryPage() {
             </table>
           </div>
           <div className="flex items-center justify-between border-t border-slate-100 px-5 py-3 text-xs text-slate-500">
-            <span>Ham teslim 90 gün saklanır, sonra günlük özet. CSV dışa aktarım F3.</span>
+            <span>Ham teslim 90 gün saklanır, sonra günlük özet. CSV en çok 10.000 satır, süzgeçlere uyar.</span>
             <div className="flex gap-2">
               <button type="button" disabled={f.page <= 1} onClick={() => setF({ ...f, page: f.page - 1 })} className="rounded-full border border-slate-200 px-3 py-1 disabled:opacity-40">‹ Önceki</button>
               <button type="button" disabled={f.page >= pages} onClick={() => setF({ ...f, page: f.page + 1 })} className="rounded-full border border-slate-200 px-3 py-1 disabled:opacity-40">Sonraki ›</button>

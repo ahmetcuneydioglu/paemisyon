@@ -1471,6 +1471,18 @@ export class QuizService {
     });
 
     // Olay omurgası (Doc 52 §4.5): üretici motoru tanımaz, yalnız olay yazar.
+    // Denemede kişisel rekor (F3 `personal_record`): önceki en iyi net bu teslimden önceki tamamlanmış denemelerden.
+    const previousBest =
+      session.mode === 'deneme'
+        ? await this.prisma.quizSession
+            .aggregate({
+              where: { userId, examId: { not: null }, status: 'completed', id: { not: sessionId } },
+              _max: { score: true },
+            })
+            .then((r) => (r._max.score != null ? Number(r._max.score) : null))
+            .catch(() => null)
+        : null;
+    const roundedScore = Math.round(score * 100) / 100;
     void this.events.emit(
       session.mode === 'deneme' ? 'exam_submitted' : 'session_completed',
       userId,
@@ -1480,12 +1492,21 @@ export class QuizService {
         payload: {
           mode: session.mode,
           examId: session.examId,
+          sessionId,
           correct: correctCount,
           wrong: wrongCount,
           blank: blankCount,
           total: session.totalQuestions,
-          score: Math.round(score * 100) / 100,
+          score: roundedScore,
+          net: roundedScore,
           reason,
+          ...(session.mode === 'deneme'
+            ? {
+                previousBest,
+                before: previousBest,
+                personalBest: previousBest != null && roundedScore > previousBest,
+              }
+            : {}),
         },
       },
     );

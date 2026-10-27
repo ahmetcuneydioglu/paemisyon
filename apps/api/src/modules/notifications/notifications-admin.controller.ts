@@ -10,8 +10,10 @@ import {
   Post,
   Put,
   Query,
+  Res,
   UseGuards,
 } from '@nestjs/common';
+import type { Response } from 'express';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { SETTING_KEYS, SettingsService } from '../../infra/settings/settings.service';
@@ -24,6 +26,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { maskEmail } from '../email/email-contacts.service';
 import { AudienceService } from './audience.service';
 import { AutomationsService } from './automations.service';
+import { SuggestService } from './suggest.service';
 import { CampaignsService } from './campaigns.service';
 import { DEEP_LINKS, DEEP_LINK_TARGETS, resolveDeepLink } from './deep-links';
 import { DeliveryWorker } from './delivery.worker';
@@ -38,6 +41,7 @@ import {
   LegacySendDto,
   NotificationSettingsAdminDto,
   SegmentEstimateDto,
+  SuggestDto,
   TesterDto,
   UpdateAutomationDto,
   UpsertCampaignDto,
@@ -77,6 +81,7 @@ export class NotificationsAdminController {
     private readonly audit: AuditService,
     private readonly leaderboardNudge: LeaderboardNudgeService,
     private readonly automations: AutomationsService,
+    private readonly suggest_: SuggestService,
   ) {}
 
   // ── Genel bakış ──
@@ -433,6 +438,62 @@ export class NotificationsAdminController {
   async history(@Query() q: HistoryQueryDto) {
     const page = Math.max(q.page ?? 1, 1);
     const pageSize = Math.min(Math.max(q.pageSize ?? 50, 1), 200);
+    return this.historyData(q, page, pageSize);
+  }
+
+  /** CSV dışa aktarım (F3): aynı süzgeçler, en çok 10.000 satır, e-posta maskeli, UTF-8 BOM (Excel). */
+  @Get('history/export')
+  async historyExport(@Query() q: HistoryQueryDto, @Res() res: Response) {
+    const { items } = await this.historyData(q, 1, 10_000);
+    const cols = [
+      'zaman',
+      'kullanici',
+      'kaynak',
+      'baslik',
+      'kategori',
+      'kanal',
+      'platform',
+      'durum',
+      'neden',
+      'deneme',
+      'acildi',
+      'tiklandi',
+      'donustu',
+    ] as const;
+    const esc = (v: unknown) => {
+      const s = v == null ? '' : String(v);
+      return /[";\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+    };
+    const lines = [cols.join(';')];
+    for (const r of items)
+      lines.push(
+        [
+          (r.sentAt ?? r.queuedAt).toISOString(),
+          r.user,
+          r.source,
+          r.title,
+          r.category,
+          r.channel,
+          r.platform ?? '',
+          r.status,
+          r.suppressionReason ?? r.errorCode ?? '',
+          r.attempts,
+          r.opened ? 1 : 0,
+          r.clicked ? 1 : 0,
+          r.converted ? 1 : 0,
+        ]
+          .map(esc)
+          .join(';'),
+      );
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader(
+      'Content-Disposition',
+      `attachment; filename="bildirim-gecmisi-${new Date().toISOString().slice(0, 10)}.csv"`,
+    );
+    res.send(`\ufeff${lines.join('\n')}`);
+  }
+
+  private async historyData(q: HistoryQueryDto, page: number, pageSize: number) {
     const where: Prisma.NotificationDeliveryWhereInput = {
       ...(q.channel ? { channel: q.channel } : {}),
       ...(q.status ? { status: q.status as never } : {}),
@@ -646,6 +707,12 @@ export class NotificationsAdminController {
       ).map((l) => ({ id: l.id, label: l.name }));
     }
     return { targets, options };
+  }
+
+  /** AI metin önerisi (F3): Claude yalnız önerir; emoji/yasaklı kelime denetimi makinede, onay editörde. */
+  @Post('suggest')
+  suggest(@Body() dto: SuggestDto) {
+    return this.suggest_.suggest(dto);
   }
 
   @Post('worker/tick') @Roles('admin') async tick() {

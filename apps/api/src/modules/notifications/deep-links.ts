@@ -12,6 +12,7 @@ export type DeepLinkTarget =
   | 'exam_result'
   | 'leaderboard'
   | 'review'
+  | 'weak_topic'
   | 'library'
   | 'legislation'
   | 'past_exam'
@@ -67,6 +68,12 @@ export const DEEP_LINKS: Record<DeepLinkTarget, Entry> = {
     route: () => '/review',
     webPath: () => '/seans?mode=review&scope=Yanl%C4%B1%C5%9F%20tekrar%C4%B1',
     minAppVersion: '2.0.0',
+  },
+  weak_topic: {
+    param: 'topicId',
+    route: (p) => `topic:${p}`,
+    webPath: (p) => `/seans?mode=practice&topicId=${p}&count=10&source=notif`,
+    minAppVersion: '2.1.0',
   },
   library: { route: () => '/catalog', webPath: () => '/kutuphane', minAppVersion: '2.0.0' },
   legislation: {

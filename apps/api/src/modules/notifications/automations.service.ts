@@ -24,6 +24,7 @@ import {
   resolveAutomationLink,
   scheduleDue,
   scheduleSummary,
+  effectiveReminderTime,
   trDayKey,
   userTimeTarget,
 } from './automation.logic';
@@ -249,16 +250,41 @@ export class AutomationsService implements OnModuleInit {
 
     if (schedule.kind === 'user_time') {
       const target = userTimeTarget(now, schedule.offsetMinutes);
-      const settings = await this.prisma.userNotificationSettings.findMany({
-        select: { userId: true, reminderTime: true },
-      });
-      const match = settings.filter((s) => s.reminderTime === target).map((s) => s.userId);
+      const [settings, smartRows] = await Promise.all([
+        this.prisma.userNotificationSettings.findMany({
+          select: { userId: true, reminderTime: true, smartTimingEnabled: true },
+        }),
+        // Akıllı saat (F3): en iyi saati bilinenler; tercih satırı yoksa akıllı saat açık sayılır.
+        target.endsWith(':00')
+          ? this.prisma.notificationAudience.findMany({
+              where: { bestEngagementHour: Number(target.slice(0, 2)) },
+              select: { userId: true },
+            })
+          : Promise.resolve([] as { userId: string }[]),
+      ]);
+      const best = new Map<string, number>();
+      for (const r of smartRows) best.set(r.userId, Number(target.slice(0, 2)));
+      const smartUsers = new Set(smartRows.map((r) => r.userId));
+      const match = settings
+        .filter(
+          (s) =>
+            effectiveReminderTime(
+              s.reminderTime,
+              s.smartTimingEnabled,
+              best.get(s.userId) ?? null,
+            ) === target,
+        )
+        .map((s) => s.userId);
+      const withSettings = new Set(settings.map((s) => s.userId));
+      // Tercih satırı olmayanlar: en iyi saati biliniyorsa o saat, yoksa 19:00.
+      const smartDefault = [...smartUsers].filter((u) => !withSettings.has(u));
       if (target === '19:00') {
-        // Tercih satırı olmayanlar varsayılan 19:00'dadır.
         where.OR = [
           { userId: { in: match } },
-          { userId: { notIn: settings.map((s) => s.userId) } },
+          { userId: { notIn: [...withSettings, ...smartUsers] } },
         ];
+      } else if (smartDefault.length) {
+        where.userId = { in: [...match, ...smartDefault] };
       } else {
         if (match.length === 0 && !opts.force) {
           if (!opts.dryRun)
@@ -480,9 +506,6 @@ export class AutomationsService implements OnModuleInit {
     eventId?: bigint,
   ): Promise<string> {
     const preset = PRESET_BY_CODE.get(a.code);
-    const link = resolveAutomationLink(a.deepLink as Record<string, unknown>, payload);
-    if (!link) return 'no_link';
-    const resolved = resolveDeepLink(link);
     const audience = await this.prisma.notificationAudience.findUnique({
       where: { userId },
       select: {
@@ -492,8 +515,17 @@ export class AutomationsService implements OnModuleInit {
         accuracy30d: true,
         dailyGoal: true,
         answeredToday: true,
+        weakTopicIds: true,
       },
     });
+    if (preset?.enrich) {
+      const extra = await preset.enrich({ prisma: this.prisma, userId, audience });
+      if (!extra) return 'no_payload';
+      payload = { ...payload, ...extra };
+    }
+    const link = resolveAutomationLink(a.deepLink as Record<string, unknown>, payload);
+    if (!link) return 'no_link';
+    const resolved = resolveDeepLink(link);
     const vars = automationVars(
       audience,
       payload,
@@ -754,6 +786,13 @@ export class AutomationsService implements OnModuleInit {
       }),
     ]);
     const first = sample[0] ?? null;
+    const preset = PRESET_BY_CODE.get(a.code);
+    if (preset?.enrich && first) {
+      const extra = await preset
+        .enrich({ prisma: this.prisma, userId: first.userId, audience: first })
+        .catch(() => null);
+      if (extra) payload = { ...payload, ...extra };
+    }
     const link = resolveAutomationLink(a.deepLink as Record<string, unknown>, payload);
     const resolved = link ? resolveDeepLink(link) : null;
     const vars = {

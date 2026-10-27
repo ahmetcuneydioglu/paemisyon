@@ -106,3 +106,30 @@ describe('automation.logic — bağlantı ve değişkenler', () => {
     expect(automationVars(null, {}, null).kalan_soru).toBeNull();
   });
 });
+
+describe('automation.logic — akıllı saat (F3)', () => {
+  const { smartSendAt, effectiveReminderTime } = jest.requireActual('./automation.logic');
+  it('en iyi saat pencereye kırpılır, geçmişse yarına kayar', () => {
+    const now = new Date('2026-10-26T06:00:00Z'); // 09:00 TR
+    expect(smartSendAt(now, 20, '19:00', '09:00', '21:00').toISOString()).toBe(
+      '2026-10-26T17:00:00.000Z',
+    ); // 20:00 TR
+    expect(smartSendAt(now, 23, '19:00', '09:00', '21:00').toISOString()).toBe(
+      '2026-10-26T18:00:00.000Z',
+    ); // 21:00 kırpıldı
+    expect(smartSendAt(now, 7, '19:00', '09:00', '21:00').toISOString()).toBe(
+      '2026-10-26T06:00:00.000Z',
+    ); // 09:00 (şimdi)
+    expect(
+      smartSendAt(new Date('2026-10-26T18:30:00Z'), 20, '19:00', '09:00', '21:00').toISOString(),
+    ).toBe('2026-10-27T17:00:00.000Z'); // geçti → yarın
+    expect(smartSendAt(now, null, '19:00', null, null).toISOString()).toBe(
+      '2026-10-26T16:00:00.000Z',
+    ); // tercih saati
+  });
+  it('effectiveReminderTime akıllı saat açıkken en iyi saati seçer', () => {
+    expect(effectiveReminderTime('19:00', true, 21)).toBe('21:00');
+    expect(effectiveReminderTime('19:00', false, 21)).toBe('19:00');
+    expect(effectiveReminderTime('19:00', true, null)).toBe('19:00');
+  });
+});

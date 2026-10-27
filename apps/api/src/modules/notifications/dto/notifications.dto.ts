@@ -35,6 +35,18 @@ export class DeepLinkDto {
   @IsOptional() @IsObject() params?: Record<string, string>;
 }
 
+export class CampaignVariantDto {
+  @IsString() @MinLength(1) @MaxLength(2) key!: string;
+  @IsInt() @Min(0) @Max(100) weight!: number;
+  @IsString() @MinLength(2) @MaxLength(80) title!: string;
+  @IsString() @MinLength(2) @MaxLength(300) body!: string;
+  @IsOptional() @IsString() @MaxLength(500) imageUrl?: string | null;
+  @IsOptional() @IsString() @MaxLength(40) ctaLabel?: string | null;
+  @IsOptional() @ValidateNested() @Type(() => DeepLinkDto) deepLink?: DeepLinkDto;
+  @IsOptional() @IsString() @MaxLength(150) emailSubject?: string | null;
+  @IsOptional() @IsString() @MaxLength(5000) emailBody?: string | null;
+}
+
 export class UpsertCampaignDto {
   @IsString() @MinLength(2) @MaxLength(120) name!: string;
   @IsEnum(NotificationCategory) category!: NotificationCategory;
@@ -63,6 +75,22 @@ export class UpsertCampaignDto {
   @IsOptional() @IsBoolean() countTowardCaps?: boolean;
   @IsOptional() @IsInt() @Min(1) @Max(168) ttlHours?: number;
   @IsOptional() @IsBoolean() createInAppBanner?: boolean;
+  /** A/B (F3): verilirse A varyantı başlık/gövde yerine bu liste kullanılır; ağırlıklar toplamı 100. */
+  @IsOptional()
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => CampaignVariantDto)
+  variants?: CampaignVariantDto[];
+  /** Akıllı saat penceresi (F3, sendMode=smart), TR HH:MM. */
+  @IsOptional() @IsString() @Matches(/^([01]\d|2[0-3]):[0-5]\d$/) smartWindowStart?: string | null;
+  @IsOptional() @IsString() @Matches(/^([01]\d|2[0-3]):[0-5]\d$/) smartWindowEnd?: string | null;
+}
+
+export class SuggestDto {
+  @IsEnum(NotificationCategory) category!: NotificationCategory;
+  @IsString() @MinLength(3) @MaxLength(300) goal!: string;
+  @IsOptional() @IsObject() draft?: { title?: string; body?: string } | null;
+  @IsOptional() @IsInt() @Min(1) @Max(5) count?: number;
 }
 
 export class CampaignsQueryDto {

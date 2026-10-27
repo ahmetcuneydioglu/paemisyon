@@ -18,7 +18,7 @@ const ORDER: NotificationCategory[] = [
   "achievement", "statistics", "leaderboard", "question_report", "system",
 ];
 
-type Patch = Partial<Pick<NotificationSettings, "reminderTime" | "quietStart" | "quietEnd" | "pushEnabled">> & {
+type Patch = Partial<Pick<NotificationSettings, "reminderTime" | "quietStart" | "quietEnd" | "pushEnabled" | "smartTimingEnabled">> & {
   categories?: Partial<Record<NotificationCategory, boolean>>;
 };
 
@@ -103,6 +103,11 @@ export function NotificationPreferencesForm({ initial }: { initial: Notification
                 : "Kayıtlı cihaz yok; mobil uygulamadan izin ver"
             }
             trailing={<Switch label="Push ana anahtarı" checked={s.pushEnabled} disabled={busy === "pushEnabled"} onChange={(v) => save({ pushEnabled: v }, "pushEnabled")} />}
+          />
+          <Row
+            title="Akıllı saat"
+            subtitle="Hatırlatmalar en çok çözdüğün saatte gelir. Bunun için yalnız son 28 günün saatlik toplam cevap sayısı tutulur; kapatırsan seçtiğin saat kullanılır."
+            trailing={<Switch label="Akıllı saat" checked={s.smartTimingEnabled} disabled={busy === "smart"} onChange={(v) => save({ smartTimingEnabled: v }, "smart")} />}
           />
         </div>
       </Card>

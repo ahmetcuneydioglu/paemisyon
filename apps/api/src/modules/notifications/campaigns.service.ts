@@ -9,7 +9,9 @@ import { NotificationCampaignStatus, NotificationChannel, Prisma } from '@prisma
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { AuditService } from '../admin/audit.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { createHash } from 'node:crypto';
 import { maskEmail } from '../email/email-contacts.service';
+import { smartSendAt } from './automation.logic';
 import { allowedChannels } from './notification.categories';
 import { NOTIFICATIONS_CONFIG } from './notifications.config';
 import { NotificationsService } from './notifications.service';
@@ -75,8 +77,14 @@ export class CampaignsService {
       | CampaignRow
       | (Omit<CampaignRow, 'segment'> & { segment: { id: string; name: string } | null }),
   ) {
-    const v = c.variants[0];
-    return { ...c, variant: v ?? null, warnings: v ? templateWarnings(v.title, v.body) : [] };
+    const sorted = [...c.variants].sort((a, b) => a.key.localeCompare(b.key));
+    const v = sorted[0];
+    return {
+      ...c,
+      variants: sorted.map((x) => ({ ...x, warnings: templateWarnings(x.title, x.body) })),
+      variant: v ?? null,
+      warnings: v ? templateWarnings(v.title, v.body) : [],
+    };
   }
 
   private normalize(dto: UpsertCampaignDto) {
@@ -103,11 +111,83 @@ export class CampaignsService {
     if (hard.length) throw new BadRequestException(hard.map((w) => w.message).join(' '));
     if (dto.sendMode === 'scheduled' && !dto.scheduledAt)
       throw new BadRequestException('Zamanlı gönderim için tarih gerekli.');
-    return { channels, deepLink, rules };
+    if (dto.sendMode === 'smart') {
+      if (!dto.smartWindowStart || !dto.smartWindowEnd)
+        throw new BadRequestException('Akıllı gönderim için pencere (başlangıç/bitiş) gerekli.');
+      if (dto.smartWindowStart >= dto.smartWindowEnd)
+        throw new BadRequestException('Akıllı pencere başlangıcı bitişten önce olmalı.');
+    }
+    const variants = this.variantRows(dto, deepLink);
+    return { channels, deepLink, rules, variants };
+  }
+
+  /** A/B (F3): `variants` verilmişse ağırlık toplamı 100 ve anahtarlar tekil; yoksa tek A varyantı. */
+  private variantRows(dto: UpsertCampaignDto, deepLink: DeepLink) {
+    if (!dto.variants || dto.variants.length === 0) {
+      return [
+        {
+          key: 'A',
+          weight: 100,
+          title: dto.title,
+          body: dto.body,
+          imageUrl: dto.imageUrl ?? null,
+          ctaLabel: dto.ctaLabel ?? null,
+          deepLink: deepLink as unknown as Prisma.InputJsonValue,
+          emailSubject: dto.emailSubject ?? null,
+          emailBody: dto.emailBody ?? null,
+          templateId: dto.templateId ?? null,
+        },
+      ];
+    }
+    if (dto.variants.length > 4) throw new BadRequestException('En çok 4 varyant.');
+    const keys = new Set(dto.variants.map((v) => v.key.toUpperCase()));
+    if (keys.size !== dto.variants.length)
+      throw new BadRequestException('Varyant anahtarları tekil olmalı.');
+    const total = dto.variants.reduce((s, v) => s + v.weight, 0);
+    if (total !== 100)
+      throw new BadRequestException(`Varyant ağırlıkları toplamı 100 olmalı (şu an ${total}).`);
+    return dto.variants.map((v) => {
+      const hard = templateWarnings(v.title, v.body).filter(
+        (w) => w.code === 'emoji' || w.code === 'forbidden',
+      );
+      if (hard.length)
+        throw new BadRequestException(`Varyant ${v.key}: ${hard.map((w) => w.message).join(' ')}`);
+      const link = v.deepLink
+        ? resolveDeepLink(v.deepLink as DeepLink) && (v.deepLink as DeepLink)
+        : deepLink;
+      return {
+        key: v.key.toUpperCase(),
+        weight: v.weight,
+        title: v.title,
+        body: v.body,
+        imageUrl: v.imageUrl ?? null,
+        ctaLabel: v.ctaLabel ?? null,
+        deepLink: link as unknown as Prisma.InputJsonValue,
+        emailSubject: v.emailSubject ?? null,
+        emailBody: v.emailBody ?? null,
+        templateId: dto.templateId ?? null,
+      };
+    });
+  }
+
+  /** Deterministik varyant seçimi: md5(campaignId + userId) ilk 8 hex → [0,100) ağırlık aralığı. */
+  private pickVariant<V extends { weight: number }>(
+    c: { id: string; variants: V[] },
+    userId: string,
+  ): V {
+    if (c.variants.length <= 1) return c.variants[0];
+    const h = createHash('md5').update(`${c.id}${userId}`).digest('hex').slice(0, 8);
+    const x = (parseInt(h, 16) % 10_000) / 100; // 0.00 … 99.99
+    let acc = 0;
+    for (const v of c.variants) {
+      acc += v.weight;
+      if (x < acc) return v;
+    }
+    return c.variants[c.variants.length - 1];
   }
 
   async create(dto: UpsertCampaignDto, actor: AuthenticatedUser) {
-    const { channels, deepLink, rules } = this.normalize(dto);
+    const { channels, rules, variants } = this.normalize(dto);
     const c = await this.prisma.notificationCampaign.create({
       data: {
         name: dto.name,
@@ -126,21 +206,10 @@ export class CampaignsService {
         countTowardCaps: dto.countTowardCaps ?? true,
         ttlHours: dto.ttlHours ?? 24,
         createInAppBanner: dto.createInAppBanner ?? false,
+        smartWindowStart: dto.sendMode === 'smart' ? (dto.smartWindowStart ?? null) : null,
+        smartWindowEnd: dto.sendMode === 'smart' ? (dto.smartWindowEnd ?? null) : null,
         createdById: actor.id,
-        variants: {
-          create: {
-            key: 'A',
-            weight: 100,
-            title: dto.title,
-            body: dto.body,
-            imageUrl: dto.imageUrl ?? null,
-            ctaLabel: dto.ctaLabel ?? null,
-            deepLink: deepLink as unknown as Prisma.InputJsonValue,
-            emailSubject: dto.emailSubject ?? null,
-            emailBody: dto.emailBody ?? null,
-            templateId: dto.templateId ?? null,
-          },
-        },
+        variants: { create: variants },
       },
       include: { variants: true, segment: true },
     });
@@ -160,7 +229,7 @@ export class CampaignsService {
     if (!c) throw new NotFoundException('Kampanya bulunamadı.');
     if (!['draft', 'scheduled'].includes(c.status))
       throw new BadRequestException('Yalnız taslak ve planlı kampanya düzenlenir.');
-    const { channels, deepLink, rules } = this.normalize(dto);
+    const { channels, rules, variants } = this.normalize(dto);
     const u = await this.prisma.notificationCampaign.update({
       where: { id },
       data: {
@@ -180,22 +249,11 @@ export class CampaignsService {
         countTowardCaps: dto.countTowardCaps ?? true,
         ttlHours: dto.ttlHours ?? 24,
         createInAppBanner: dto.createInAppBanner ?? false,
+        smartWindowStart: dto.sendMode === 'smart' ? (dto.smartWindowStart ?? null) : null,
+        smartWindowEnd: dto.sendMode === 'smart' ? (dto.smartWindowEnd ?? null) : null,
         updatedById: actor.id,
-        variants: {
-          update: {
-            where: { id: c.variants[0].id },
-            data: {
-              title: dto.title,
-              body: dto.body,
-              imageUrl: dto.imageUrl ?? null,
-              ctaLabel: dto.ctaLabel ?? null,
-              deepLink: deepLink as unknown as Prisma.InputJsonValue,
-              emailSubject: dto.emailSubject ?? null,
-              emailBody: dto.emailBody ?? null,
-              templateId: dto.templateId ?? null,
-            },
-          },
-        },
+        // Taslak/planlı kampanyada varyant seti yeniden yazılır (henüz gönderim yok, atama yok).
+        variants: { deleteMany: {}, create: variants },
       },
       include: { variants: true, segment: true },
     });
@@ -356,14 +414,37 @@ export class CampaignsService {
     return { sent: results.filter((r) => r.status === 'queued').length, results };
   }
 
-  private enqueueFor(
+  private async enqueueFor(
     c: Prisma.NotificationCampaignGetPayload<{ include: { variants: true } }>,
     userId: string,
     dedupeKey: string,
     test = false,
   ) {
-    const v = c.variants[0];
+    const v = this.pickVariant(c, userId);
+    // Akıllı saat (F3): alıcının en iyi saati (yoksa hatırlatma saati) pencere içinde; test gönderimi hemen.
+    let scheduleAt: Date | null = null;
+    if (c.sendMode === 'smart' && !test) {
+      const [aud, settings] = await Promise.all([
+        this.prisma.notificationAudience.findUnique({
+          where: { userId },
+          select: { bestEngagementHour: true },
+        }),
+        this.prisma.userNotificationSettings.findUnique({
+          where: { userId },
+          select: { reminderTime: true, smartTimingEnabled: true },
+        }),
+      ]);
+      const best = (settings?.smartTimingEnabled ?? true) ? aud?.bestEngagementHour : null;
+      scheduleAt = smartSendAt(
+        new Date(),
+        best,
+        settings?.reminderTime ?? '19:00',
+        c.smartWindowStart,
+        c.smartWindowEnd,
+      );
+    }
     return this.notifications.enqueue({
+      scheduleAt,
       userId,
       category: c.category,
       priority: c.priority,
@@ -437,7 +518,9 @@ export class CampaignsService {
             ...data,
             status: 'sending',
             scheduledAt: now,
-            sendMode: c.sendMode === 'scheduled' ? 'scheduled' : 'now',
+            // Akıllı saat (F3) korunur: kitle hemen açılır, her alıcı kendi saatine planlanır.
+            sendMode:
+              c.sendMode === 'scheduled' ? 'scheduled' : c.sendMode === 'smart' ? 'smart' : 'now',
             estimatedRecipients: est.total,
             startedAt: c.startedAt ?? now,
             sentById: actor.id,
@@ -531,7 +614,7 @@ export class CampaignsService {
           data: {
             materializedAt: new Date(),
             materializeCursor: cursor,
-            materializedRecipients: { increment: opened },
+            // Parti başına zaten artırıldı; burada yalnız kapanış damgası (çift sayım düzeltmesi, F3).
             suppressedCount: { increment: suppressed },
           },
         });
@@ -609,8 +692,32 @@ export class CampaignsService {
       where: { notification: { campaignId: id }, status: 'suppressed' },
       _count: { _all: true },
     });
+    const variantStats = await Promise.all(
+      c.variants.map(async (v) => {
+        const base = { campaignId: id, variantId: v.id };
+        const [total, sent, opened, clicked, converted] = await Promise.all([
+          this.prisma.notification.count({ where: base }),
+          this.prisma.notificationDelivery.count({ where: { status: 'sent', notification: base } }),
+          this.prisma.notification.count({ where: { ...base, openedAt: { not: null } } }),
+          this.prisma.notification.count({ where: { ...base, clickedAt: { not: null } } }),
+          this.prisma.notification.count({ where: { ...base, convertedAt: { not: null } } }),
+        ]);
+        return {
+          id: v.id,
+          key: v.key,
+          weight: v.weight,
+          title: v.title,
+          total,
+          sent,
+          opened,
+          clicked,
+          converted,
+        };
+      }),
+    );
     return {
       campaign: c,
+      variants: variantStats,
       deliveries: byStatus.map((r) => ({
         channel: r.channel,
         status: r.status,

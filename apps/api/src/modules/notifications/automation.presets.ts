@@ -7,6 +7,7 @@ import type {
 import type { Group } from './segment-dsl';
 import type { DeepLinkTarget } from './deep-links';
 import type { AppEventType } from './app-events.service';
+import type { PrismaClient } from '@prisma/client';
 
 /**
  * Otomasyon takvimi (Doc 52 §4.4):
@@ -21,6 +22,28 @@ export type AutomationSchedule =
 /** Derin bağlantı parametresi `$payload.<alan>` ile olay yükünden okunabilir. */
 export type AutomationDeepLink = { target: DeepLinkTarget; params?: Record<string, string> };
 
+export type EnrichContext = {
+  prisma: PrismaClient;
+  userId: string;
+  audience: {
+    weakTopicIds: string[];
+    streakCurrent: number;
+    dailyGoal: number;
+    answeredToday: number;
+  } | null;
+};
+
+/** Zayıf konu adı: kitle `weakTopicIds[0]` → topic adı (yoksa gönderim yok). */
+async function weakTopic(ctx: EnrichContext): Promise<Record<string, unknown> | null> {
+  const topicId = ctx.audience?.weakTopicIds[0];
+  if (!topicId) return null;
+  const t = await ctx.prisma.topic.findUnique({
+    where: { id: topicId },
+    select: { id: true, name: true },
+  });
+  return t ? { topicId: t.id, topicName: t.name } : null;
+}
+
 export type AutomationPreset = {
   code: string;
   name: string;
@@ -34,6 +57,11 @@ export type AutomationPreset = {
   delayMinutes?: number;
   /** Kitle tablosu üstünde segment DSL; boş = koşulsuz. */
   conditions?: Group;
+  /**
+   * Kullanıcı başına yük zenginleştirme (F3): zayıf konu adı gibi kitle satırında olmayan veriyi getirir;
+   * null dönerse o kullanıcıya gönderim yapılmaz (`no_payload`).
+   */
+  enrich?: (ctx: EnrichContext) => Promise<Record<string, unknown> | null>;
   /** Yayın olayı (deneme/çıkmış sınav yayını): olay bir kişiye değil, koşulu sağlayan BÜTÜN kitleye açılır. */
   broadcast?: boolean;
   /** Olay yükü üstünde kod içi süzgeç (panelden değişmez): yarım tur, hatırlatma türü vb. */
@@ -428,6 +456,84 @@ export const AUTOMATION_PRESETS: AutomationPreset[] = [
     respectQuietHours: true,
     ttlHours: 3,
     initialStatus: 'active',
+  },
+  // ── F3 kişiselleştirme ──
+  {
+    code: 'weak_topic',
+    name: 'Zayıf konuna bir adım',
+    description:
+      'Her gün 18.00; zayıf konusu olan ve bugün hedefini doldurmamış adaya, 48 saat arayla.',
+    category: 'study_reminder',
+    priority: 'low',
+    channels: ['push', 'inbox'],
+    triggerType: 'schedule',
+    schedule: { kind: 'daily', at: '18:00' },
+    conditions: and(
+      rule('weakTopicIds', 'is_not_empty'),
+      rule('dailyGoalDoneToday', 'is_false'),
+      rule('pushEnabled', 'is_true'),
+    ),
+    enrich: weakTopic,
+    title: '{{zayif_konu}}: on soru',
+    body: 'Son turlarda bu konuda zorlandın; kısa bir tekrar bugün fark yaratır.',
+    ctaLabel: 'Tura başla',
+    deepLink: { target: 'weak_topic', params: { topicId: '$payload.topicId' } },
+    conversionEvent: 'session_completed',
+    cooldownHours: 48,
+    maxPerUserPerDay: 1,
+    respectQuietHours: true,
+    ttlHours: 5,
+    initialStatus: 'paused',
+  },
+  {
+    code: 'personal_record',
+    name: 'Kişisel rekor',
+    description: 'Deneme teslimi önceki en iyi neti aşınca (olay).',
+    category: 'achievement',
+    priority: 'normal',
+    channels: ['push', 'inbox'],
+    triggerType: 'event',
+    eventType: 'exam_submitted',
+    when: (p) => p.personalBest === true,
+    dedupe: (p) => `personal_record:${String(p.sessionId)}`,
+    title: 'Kişisel rekor: {{net}} net',
+    body: 'Önceki en iyin {{onceki_net}} idi. Sonucu ve konu kırılımını incele.',
+    ctaLabel: 'Sonucu gör',
+    deepLink: { target: 'exam_result', params: { sessionId: '$payload.sessionId' } },
+    conversionEvent: 'exam_review',
+    cooldownHours: 0,
+    maxPerUserPerDay: 2,
+    respectQuietHours: true,
+    countTowardCaps: false,
+    ttlHours: 48,
+    initialStatus: 'paused',
+  },
+  {
+    code: 'personalized_session',
+    name: 'Koçun reçeteli turu',
+    description:
+      'Hatırlatma saatinden 1 saat önce; zayıf konusu olan adaya koç reçetesiyle 10 soruluk tur.',
+    category: 'study_reminder',
+    priority: 'low',
+    channels: ['push'],
+    triggerType: 'schedule',
+    schedule: { kind: 'user_time', field: 'reminderTime', offsetMinutes: -60 },
+    conditions: and(
+      rule('weakTopicIds', 'is_not_empty'),
+      rule('dailyGoalDoneToday', 'is_false'),
+      rule('pushEnabled', 'is_true'),
+    ),
+    enrich: weakTopic,
+    title: 'Bugünkü reçeten hazır',
+    body: '{{zayif_konu}} üzerine 10 soru; on dakikada biter.',
+    ctaLabel: 'Tura başla',
+    deepLink: { target: 'weak_topic', params: { topicId: '$payload.topicId' } },
+    conversionEvent: 'session_completed',
+    cooldownHours: 20,
+    maxPerUserPerDay: 1,
+    respectQuietHours: true,
+    ttlHours: 3,
+    initialStatus: 'paused',
   },
   {
     code: 'new_past_exam',

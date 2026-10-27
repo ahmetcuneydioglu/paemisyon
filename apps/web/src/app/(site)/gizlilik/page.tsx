@@ -77,6 +77,12 @@ export default function GizlilikPage() {
               KVKK m.5/2(c) ve m.5/2(f): meşru menfaat (hizmetin temel işlevi).
             </li>
             <li>
+              Bildirimlerin zamanlanması (&quot;akıllı saat&quot;) — KVKK m.5/2(f):
+              meşru menfaat. Yalnız son 28 günün saatlik toplam cevap sayısı
+              kullanılır; ham saat verisi 90 gün sonra silinir. Bildirim
+              tercihlerinden kapatabilirsiniz; kapalıyken seçtiğiniz saat kullanılır.
+            </li>
+            <li>
               Güvenlik, hata ayıklama ve kötüye kullanımın önlenmesi — KVKK
               m.5/2(f): meşru menfaat.
             </li>

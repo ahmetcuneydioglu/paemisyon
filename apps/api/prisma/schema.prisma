@@ -2050,6 +2050,8 @@ model NotificationAudience {
   planActive             Boolean   @default(false) @map("plan_active")
   /// Doc 24 sönümü: 0 normal · 1 haftada 2 push · 2 yalnız e-posta.
   engagementTier         Int       @default(0) @map("engagement_tier")
+  /// Akıllı saat (F3): son 28 gün cevap saat histogramının tepesi (TR 0–23); ilk 3 gün kayıt saati.
+  bestEngagementHour     Int?      @map("best_engagement_hour")
   lastPushOpenedAt       DateTime? @map("last_push_opened_at")
   notificationsSentToday Int       @default(0) @map("notifications_sent_today")
   marketingSentToday     Int       @default(0) @map("marketing_sent_today")
@@ -2150,6 +2152,9 @@ model NotificationCampaign {
   userIds                String[]                   @default([]) @map("user_ids") @db.Uuid
   sendMode               NotificationSendMode       @default(now) @map("send_mode")
   scheduledAt            DateTime?                  @map("scheduled_at")
+  /// Akıllı saat (F3): her alıcıya kendi en iyi saatinde, bu TR penceresi içinde (HH:MM).
+  smartWindowStart       String?                    @map("smart_window_start")
+  smartWindowEnd         String?                    @map("smart_window_end")
   conversionEvent        String?                    @map("conversion_event")
   attributionWindowHours Int                        @default(24) @map("attribution_window_hours")
   respectQuietHours      Boolean                    @default(true) @map("respect_quiet_hours")

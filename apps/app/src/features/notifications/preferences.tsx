@@ -98,7 +98,13 @@ function PreferencesForm({ s }: { s: NotificationSettings }) {
     <View style={{ gap: space.s2 }}>
       <SectionHeader title="Bildirimler" />
       <Card style={{ gap: 0 }}>
-        <Row title="Anlık bildirimler" subtitle={masterSubtitle} value={pushOn} onChange={(v) => void togglePush(v)} />
+        <Row title="Anlık bildirimler" subtitle={masterSubtitle} value={pushOn} onChange={(v) => void togglePush(v)} divider />
+        <Row
+          title="Akıllı saat"
+          subtitle="Hatırlatma en çok çözdüğün saatte gelir; yalnız son 28 günün saatlik cevap sayısı tutulur. Kapalıyken seçtiğin saat."
+          value={s.smartTimingEnabled}
+          onChange={(v) => update.mutate({ smartTimingEnabled: v })}
+        />
       </Card>
 
       {GROUPS.map((g) => (

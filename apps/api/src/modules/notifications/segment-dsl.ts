@@ -36,8 +36,8 @@ const OPS: Record<FieldType, readonly string[]> = {
   number: ['eq', 'neq', 'gt', 'gte', 'lt', 'lte', 'in', 'is_null'],
   boolean: ['is_true', 'is_false'],
   uuid: ['eq', 'neq', 'in', 'is_null'],
-  uuid_array: ['contains_any', 'is_empty'],
-  string_array: ['contains_any', 'is_empty'],
+  uuid_array: ['contains_any', 'is_empty', 'is_not_empty'],
+  string_array: ['contains_any', 'is_empty', 'is_not_empty'],
   exists: ['is_true', 'is_false'],
 };
 
@@ -80,7 +80,8 @@ function normalize(n: unknown, depth: number, counter: { n: number }): Node {
 }
 
 function checkValue(type: FieldType, cmp: string, v: unknown, field: string): unknown {
-  if (['is_true', 'is_false', 'is_null', 'is_empty'].includes(cmp)) return undefined;
+  if (['is_true', 'is_false', 'is_null', 'is_empty', 'is_not_empty'].includes(cmp))
+    return undefined;
   const bad = () => new BadRequestException(`${field} için değer geçersiz.`);
   if (type === 'number') {
     if (cmp === 'in') {
@@ -178,7 +179,11 @@ function ruleWhere(r: Rule): Prisma.NotificationAudienceWhereInput {
       return w(r.cmp === 'is_true' ? { not: null } : null);
     case 'uuid_array':
     case 'string_array':
-      return r.cmp === 'is_empty' ? w({ isEmpty: true }) : w({ hasSome: v });
+      return r.cmp === 'is_empty'
+        ? w({ isEmpty: true })
+        : r.cmp === 'is_not_empty'
+          ? w({ isEmpty: false })
+          : w({ hasSome: v });
   }
   throw new BadRequestException(`Kural çevrilemedi: ${r.field} ${r.cmp}`);
 }
@@ -196,6 +201,7 @@ const CMP_TR: Record<string, string> = {
   is_false: 'hayır',
   contains_any: 'içerir',
   is_empty: 'boş',
+  is_not_empty: 'dolu',
 };
 
 /** Okunur özet: "Son aktiflik (gün) > 5 VE Premium hayır". */

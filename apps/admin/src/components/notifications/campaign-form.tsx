@@ -7,7 +7,7 @@ import { Card, ErrorBox } from '@/components/ui';
 import { api } from '@/lib/api';
 import {
   CATEGORY_CHANNELS, CATEGORY_LABEL, CHANNEL_LABEL, PRIORITY_LABEL, TARGET_LABEL, fmtInt,
-  type Campaign, type Category, type Channel, type Estimate, type Group, type LinkOptions, type Preview, type Priority, type SegmentField, type Segment, type Template, type Tester,
+  type Campaign, type Category, type Channel, type Estimate, type Group, type LinkOptions, type Preview, type Priority, type SegmentField, type Segment, type Suggestion, type Template, type Tester,
 } from '@/app/(panel)/notifications/types';
 import { PhonePreview } from './phone-preview';
 import { RuleBuilder } from './rule-builder';
@@ -17,8 +17,10 @@ export type CampaignFormValue = {
   name: string; category: Category; priority: Priority; channels: Channel[]; title: string; body: string; imageUrl: string; ctaLabel: string;
   target: string; targetParam: string; emailSubject: string; emailBody: string; templateId: string;
   audienceMode: 'all' | 'segment' | 'users' | 'testers'; segmentId: string; rules: Group; userIds: string;
-  sendMode: 'now' | 'scheduled'; scheduledAt: string; conversionEvent: string; attributionWindowHours: number;
+  sendMode: 'now' | 'scheduled' | 'smart'; scheduledAt: string; smartWindowStart: string; smartWindowEnd: string; conversionEvent: string; attributionWindowHours: number;
   respectQuietHours: boolean; countTowardCaps: boolean; ttlHours: number;
+  /** A/B (F3): B açıksa iki varyant; ağırlık A'nın yüzdesi. */
+  abEnabled: boolean; weightA: number; titleB: string; bodyB: string;
 };
 
 const VARIABLES = ['ad', 'deneme_adi', 'sinava_kalan_gun', 'streak', 'hafta_soru', 'hafta_dogruluk'];
@@ -30,7 +32,8 @@ export function emptyForm(): CampaignFormValue {
     name: '', category: 'exam', priority: 'normal', channels: ['push', 'inbox'], title: '', body: '', imageUrl: '', ctaLabel: '',
     target: 'home', targetParam: '', emailSubject: '', emailBody: '', templateId: '',
     audienceMode: 'all', segmentId: '', rules: { op: 'and', rules: [] }, userIds: '',
-    sendMode: 'now', scheduledAt: '', conversionEvent: '', attributionWindowHours: 24, respectQuietHours: true, countTowardCaps: true, ttlHours: 24,
+    sendMode: 'now', scheduledAt: '', smartWindowStart: '09:00', smartWindowEnd: '21:00', conversionEvent: '', attributionWindowHours: 24, respectQuietHours: true, countTowardCaps: true, ttlHours: 24,
+    abEnabled: false, weightA: 50, titleB: '', bodyB: '',
   };
 }
 
@@ -43,9 +46,11 @@ export function fromCampaign(c: Campaign): CampaignFormValue {
     imageUrl: v?.imageUrl ?? '', ctaLabel: v?.ctaLabel ?? '', target: v?.deepLink?.target ?? 'home', targetParam: param,
     emailSubject: v?.emailSubject ?? '', emailBody: v?.emailBody ?? '', templateId: v?.templateId ?? '',
     audienceMode: c.audienceMode, segmentId: c.segmentId ?? '', rules: c.segmentRulesSnapshot ?? { op: 'and', rules: [] }, userIds: c.userIds.join('\n'),
-    sendMode: c.sendMode === 'scheduled' ? 'scheduled' : 'now', scheduledAt: c.scheduledAt ? c.scheduledAt.slice(0, 16) : '',
+    sendMode: c.sendMode === 'scheduled' ? 'scheduled' : c.sendMode === 'smart' ? 'smart' : 'now', scheduledAt: c.scheduledAt ? c.scheduledAt.slice(0, 16) : '',
+    smartWindowStart: c.smartWindowStart ?? '09:00', smartWindowEnd: c.smartWindowEnd ?? '21:00',
     conversionEvent: c.conversionEvent ?? '', attributionWindowHours: c.attributionWindowHours, respectQuietHours: c.respectQuietHours,
     countTowardCaps: c.countTowardCaps, ttlHours: c.ttlHours,
+    abEnabled: c.variants.length > 1, weightA: c.variants.length > 1 ? (v?.weight ?? 50) : 50, titleB: c.variants[1]?.title ?? '', bodyB: c.variants[1]?.body ?? '',
   };
 }
 
@@ -62,8 +67,17 @@ function toPayload(f: CampaignFormValue, params: { target: string; param: string
     segmentRules: f.audienceMode === 'segment' && !f.segmentId ? f.rules : undefined,
     userIds: f.audienceMode === 'users' ? f.userIds.split(/[\s,]+/).map((s) => s.trim()).filter(Boolean) : [],
     sendMode: f.sendMode, scheduledAt: f.sendMode === 'scheduled' && f.scheduledAt ? new Date(f.scheduledAt).toISOString() : null,
+    smartWindowStart: f.sendMode === 'smart' ? f.smartWindowStart : null, smartWindowEnd: f.sendMode === 'smart' ? f.smartWindowEnd : null,
     conversionEvent: f.conversionEvent || null, attributionWindowHours: f.attributionWindowHours,
     respectQuietHours: f.respectQuietHours, countTowardCaps: f.countTowardCaps, ttlHours: f.ttlHours,
+    ...(f.abEnabled
+      ? {
+          variants: [
+            { key: 'A', weight: f.weightA, title: f.title.trim(), body: f.body.trim(), imageUrl: f.imageUrl.trim() || null, ctaLabel: f.ctaLabel.trim() || null, emailSubject: f.channels.includes('email') ? f.emailSubject.trim() || null : null, emailBody: f.channels.includes('email') ? f.emailBody.trim() || null : null },
+            { key: 'B', weight: 100 - f.weightA, title: f.titleB.trim(), body: f.bodyB.trim(), imageUrl: f.imageUrl.trim() || null, ctaLabel: f.ctaLabel.trim() || null, emailSubject: f.channels.includes('email') ? f.emailSubject.trim() || null : null, emailBody: f.channels.includes('email') ? f.emailBody.trim() || null : null },
+          ],
+        }
+      : {}),
   };
 }
 
@@ -158,7 +172,9 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
   const err = save.error ?? doPreview.error ?? testSend.error ?? send.error;
   const param = links.data?.targets.find((t) => t.target === f.target)?.param ?? null;
   const emailOn = f.channels.includes('email');
-  const canSend = f.name.trim().length >= 2 && f.title.trim().length >= 2 && f.body.trim().length >= 2 && !warnings.some((w) => w.code === 'emoji');
+  const canSend = f.name.trim().length >= 2 && f.title.trim().length >= 2 && f.body.trim().length >= 2 && !warnings.some((w) => w.code === 'emoji') && (!f.abEnabled || (f.titleB.trim().length >= 2 && f.bodyB.trim().length >= 2 && !EMOJI.test(f.titleB + f.bodyB)));
+  const [aiGoal, setAiGoal] = useState('');
+  const suggest = useMutation({ mutationFn: () => api<Suggestion[]>('/admin/notifications/suggest', { method: 'POST', body: { category: f.category, goal: aiGoal, draft: { title: f.title, body: f.body }, count: 3 } }) });
 
   return (
     <div className="space-y-4">
@@ -219,6 +235,48 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
                 <Chip key={v} label={`{{${v}}}`} onClick={() => set('body', `${f.body}{{${v}}}`)} />
               ))}
             </div>
+          </Field>
+          <Field label="AI metin önerisi" help="Claude yalnız önerir; seçtiğin metin forma yazılır, sen düzenlersin. Emoji ve yasaklı kalıp makinede elenir.">
+            <div className="flex gap-2">
+              <input className={inputCls} placeholder="Amaç: haftalık denemeye katılımı artır" value={aiGoal} onChange={(e) => setAiGoal(e.target.value)} />
+              <button type="button" disabled={aiGoal.trim().length < 3 || suggest.isPending} onClick={() => suggest.mutate()} className="whitespace-nowrap rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">{suggest.isPending ? 'Yazıyor…' : 'Öner'}</button>
+            </div>
+            {suggest.error && <p className="mt-1 text-xs text-red-700">{(suggest.error as Error).message}</p>}
+            {suggest.data && (
+              <ul className="mt-2 space-y-1.5">
+                {suggest.data.map((sg, i) => (
+                  <li key={i} className={`rounded-lg border p-2 text-sm ${sg.blocked ? 'border-red-200 bg-red-50 opacity-70' : 'border-slate-200 bg-slate-50'}`}>
+                    <div className="font-medium">{sg.title}</div>
+                    <div className="text-slate-700">{sg.body}</div>
+                    <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                      {sg.warnings.map((w, j) => <span key={j}>{w.message}</span>)}
+                      {!sg.blocked && (
+                        <>
+                          <button type="button" className="text-indigo-700 hover:underline" onClick={() => setF((s) => ({ ...s, title: sg.title, body: sg.body }))}>A’ya yaz</button>
+                          <button type="button" className="text-indigo-700 hover:underline" onClick={() => setF((s) => ({ ...s, abEnabled: true, titleB: sg.title, bodyB: sg.body }))}>B’ye yaz</button>
+                        </>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Field>
+          <Field label="A/B varyantı" help="Alıcı kampanya+kullanıcı karmasıyla deterministik atanır; detay sayfasında varyant karşılaştırması.">
+            <div className="flex items-center gap-3 text-sm">
+              <Toggle checked={f.abEnabled} onChange={(v) => set('abEnabled', v)} label="A/B" />
+              <span>{f.abEnabled ? 'İki varyant' : 'Tek varyant'}</span>
+              {f.abEnabled && (
+                <label className="ml-auto flex items-center gap-2">A %<input type="number" min={1} max={99} className={`${inputCls} w-20`} value={f.weightA} onChange={(e) => set('weightA', Math.min(99, Math.max(1, Number(e.target.value) || 50)))} /> · B %{100 - f.weightA}</label>
+              )}
+            </div>
+            {f.abEnabled && (
+              <div className="mt-2 space-y-2 rounded-lg border border-indigo-100 bg-indigo-50/40 p-3">
+                <input className={inputCls} placeholder="B başlığı" value={f.titleB} onChange={(e) => set('titleB', e.target.value)} />
+                <textarea className={`${inputCls} min-h-20`} placeholder="B gövdesi" value={f.bodyB} onChange={(e) => set('bodyB', e.target.value)} />
+                <p className="text-xs text-slate-500">{f.titleB.length}/40 · {f.bodyB.length}/150 · B aynı hedef, CTA ve e-posta içeriğini kullanır.</p>
+              </div>
+            )}
           </Field>
           <Field label="CTA etiketi (isteğe bağlı)">
             <input className={inputCls} value={f.ctaLabel} onChange={(e) => set('ctaLabel', e.target.value)} placeholder="Denemeyi gör" />
@@ -338,11 +396,16 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
             <div className="flex gap-1.5">
               <Chip label="Şimdi" selected={f.sendMode === 'now'} onClick={() => set('sendMode', 'now')} />
               <Chip label="Zamanla" selected={f.sendMode === 'scheduled'} onClick={() => set('sendMode', 'scheduled')} />
-              <span className="rounded-full border border-slate-200 px-3 py-1 text-sm text-slate-400" title="F3">Akıllı (F3)</span>
+              <Chip label="Akıllı saat" selected={f.sendMode === 'smart'} onClick={() => set('sendMode', 'smart')} />
             </div>
           </Field>
           {f.sendMode === 'scheduled' && (
             <Field label="Tarih · saat (TR)"><input type="datetime-local" className={inputCls} value={f.scheduledAt} onChange={(e) => set('scheduledAt', e.target.value)} /></Field>
+          )}
+          {f.sendMode === 'smart' && (
+            <Field label="Pencere (TR)" help="Her alıcıya kendi en iyi saatinde (son 28 gün); bilinmiyorsa hatırlatma saati; pencere dışı kırpılır, geçtiyse yarın.">
+              <div className="flex items-center gap-2"><input type="time" className={`${inputCls} w-28`} value={f.smartWindowStart} onChange={(e) => set('smartWindowStart', e.target.value)} /> – <input type="time" className={`${inputCls} w-28`} value={f.smartWindowEnd} onChange={(e) => set('smartWindowEnd', e.target.value)} /></div>
+            </Field>
           )}
           <Field label="Öncelik">
             <select className={inputCls} value={f.priority} onChange={(e) => set('priority', e.target.value as Priority)}>
@@ -368,12 +431,12 @@ export function CampaignForm({ initial, campaignId, isAdmin }: { initial: Campai
           <button type="button" disabled={busy || !canSend} onClick={() => testSend.mutate()} className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm disabled:opacity-50">Test gönder</button>
           <button
             type="button"
-            disabled={busy || !canSend || !isAdmin || (f.sendMode === 'scheduled' && !f.scheduledAt)}
+            disabled={busy || !canSend || !isAdmin || (f.sendMode === 'scheduled' && !f.scheduledAt) || (f.sendMode === 'smart' && f.smartWindowStart >= f.smartWindowEnd)}
             title={isAdmin ? undefined : 'Gönderme yetkisi yalnız admin'}
             onClick={() => setConfirm(f.sendMode === 'scheduled' ? 'schedule' : 'send')}
             className="rounded-lg bg-indigo-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
           >
-            {f.sendMode === 'scheduled' ? 'Zamanla' : `Gönder${estimate.data ? ` · ${fmtInt(estimate.data.total)}` : ''}`}
+            {f.sendMode === 'scheduled' ? 'Zamanla' : f.sendMode === 'smart' ? `Akıllı gönder${estimate.data ? ` · ${fmtInt(estimate.data.total)}` : ''}` : `Gönder${estimate.data ? ` · ${fmtInt(estimate.data.total)}` : ''}`}
           </button>
         </div>
       </Card>

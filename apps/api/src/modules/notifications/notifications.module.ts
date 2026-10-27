@@ -15,6 +15,7 @@ import { NotificationsMeController } from './notifications-me.controller';
 import { NotificationsService } from './notifications.service';
 import { PushService } from './push.service';
 import { RollupService } from './rollup.service';
+import { SuggestService } from './suggest.service';
 import { TestersService } from './testers.service';
 
 /**
@@ -38,6 +39,7 @@ import { TestersService } from './testers.service';
     LeaderboardNudgeService,
     AppEventsService,
     AutomationsService,
+    SuggestService,
     AuditService,
   ],
   exports: [

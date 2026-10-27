@@ -53,14 +53,16 @@ export type Group = { op: 'and' | 'or'; rules: (Rule | Group)[] };
 export const isGroup = (n: Rule | Group): n is Group => 'op' in n;
 
 export type Variant = {
-  id: string; key: string; title: string; body: string; imageUrl: string | null; ctaLabel: string | null; deepLink: DeepLink;
-  emailSubject: string | null; emailBody: string | null; templateId: string | null;
+  id: string; key: string; weight: number; title: string; body: string; imageUrl: string | null; ctaLabel: string | null; deepLink: DeepLink;
+  emailSubject: string | null; emailBody: string | null; templateId: string | null; warnings?: Warning[];
 };
+export type VariantStat = { id: string; key: string; weight: number; title: string; total: number; sent: number; opened: number; clicked: number; converted: number };
+export type Suggestion = { title: string; body: string; warnings: Warning[]; blocked: boolean };
 export type Campaign = {
   id: string; name: string; category: Category; priority: Priority; channels: Channel[]; audienceMode: AudienceMode;
   segmentId: string | null; segmentRulesSnapshot: Group | null; userIds: string[]; sendMode: SendMode; scheduledAt: string | null;
   conversionEvent: string | null; attributionWindowHours: number; respectQuietHours: boolean; countTowardCaps: boolean; ttlHours: number;
-  createInAppBanner: boolean; status: CampaignStatus; estimatedRecipients: number | null; materializedRecipients: number; sentCount: number;
+  createInAppBanner: boolean; smartWindowStart: string | null; smartWindowEnd: string | null; status: CampaignStatus; estimatedRecipients: number | null; materializedRecipients: number; sentCount: number;
   failedCount: number; suppressedCount: number; materializedAt: string | null; startedAt: string | null; completedAt: string | null;
   cancelledAt: string | null; sentAt: string | null; createdAt: string; updatedAt: string;
   variant: Variant | null; variants: Variant[]; segment: { id: string; name: string } | null; warnings: Warning[];
@@ -93,6 +95,7 @@ export type Overview = {
   environment: { setting: string; worker: string; ok: boolean; provider: string };
   audienceRefreshedAt: string | null; pendingQueue: number;
 };
+export type CampaignAnalyticsExtra = { variants: VariantStat[] };
 export type Analytics = {
   days: number;
   totals: { sent: number; failed: number; suppressed: number; opened: number; clicked: number; converted: number };

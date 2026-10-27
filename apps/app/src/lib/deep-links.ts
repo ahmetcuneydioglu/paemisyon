@@ -19,6 +19,9 @@ export function routeToHref(route: string | null | undefined): AppHref {
   // 26 Eki 2026'ya kadar tanınmıyordu, Bugün'e düşüyordu.
   const sonuc = r.match(/^deneme-sonuc\/([0-9a-fA-F-]{36})$/);
   if (sonuc) return { pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: sonuc[1]! } };
+  // Zayıf konu turu (Doc 52 F3): 10 soruluk konu alıştırması.
+  const topic = r.match(/^topic:([0-9a-fA-F-]{36})$/);
+  if (topic) return { pathname: "/seans", params: { mode: "practice", source: "notif", count: "10", focusKind: "topic", topicId: topic[1]!, courseId: "", recipe: "" } };
   const q = r.match(/^question:(.+)$/);
   if (q && UUID.test(q[1]!)) return { pathname: "/seans", params: { mode: "practice", questionId: q[1]!, count: "1", source: "notif" } };
   const exam = r.match(/^\/denemeler\/([0-9a-fA-F-]{36})$/);

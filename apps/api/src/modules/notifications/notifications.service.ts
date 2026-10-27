@@ -44,6 +44,8 @@ export type EnqueueInput = {
   variables?: TemplateVars;
   emailSubject?: string | null;
   emailBody?: string | null;
+  /** Akıllı saat (F3): kutu ve teslim bu andan önce görünmez/gitmez (karar ertelemesiyle en geç olanı kazanır). */
+  scheduleAt?: Date | null;
   now?: Date;
 };
 
@@ -162,6 +164,11 @@ export class NotificationsService {
       ...(input.emailBody ? { emailBody: fillTemplate(input.emailBody, vars) } : {}),
     };
     const ttlHours = input.ttlHours ?? 24;
+    const scheduledAt =
+      input.scheduleAt && input.scheduleAt > decision.scheduledAt
+        ? input.scheduleAt
+        : decision.scheduledAt;
+    const notBefore = (at: Date) => (scheduledAt > at ? scheduledAt : at);
 
     const created = await this.prisma.$transaction(async (tx) => {
       const n = await tx.notification.create({
@@ -186,8 +193,8 @@ export class NotificationsService {
           attributionUntil: input.conversionEvent
             ? new Date(now.getTime() + (input.attributionWindowHours ?? 24) * 3_600_000)
             : null,
-          scheduledAt: decision.scheduledAt,
-          expiresAt: new Date(decision.scheduledAt.getTime() + ttlHours * 3_600_000),
+          scheduledAt,
+          expiresAt: new Date(scheduledAt.getTime() + ttlHours * 3_600_000),
           deliveryStatus,
           suppressionReason: suppressionReason as string | null,
         },
@@ -196,7 +203,7 @@ export class NotificationsService {
       const rows: Prisma.NotificationDeliveryCreateManyInput[] = [];
       const pushDec = decision.channels.push;
       if (sendPush && pushDec) {
-        const at = pushDec.action === 'defer' ? pushDec.until : now;
+        const at = notBefore(pushDec.action === 'defer' ? pushDec.until : now);
         for (const t of ctx.activeTokens)
           rows.push({
             notificationId: n.id,
@@ -208,7 +215,7 @@ export class NotificationsService {
       }
       const emailDec = decision.channels.email;
       if (sendEmail && emailDec) {
-        const at = emailDec.action === 'defer' ? emailDec.until : now;
+        const at = notBefore(emailDec.action === 'defer' ? emailDec.until : now);
         rows.push({
           notificationId: n.id,
           userId: input.userId,
@@ -242,7 +249,7 @@ export class NotificationsService {
       status: anyDelivery ? 'queued' : decision.inbox ? 'inbox_only' : 'suppressed',
       notificationId: created.id,
       channels: out,
-      scheduledAt: decision.scheduledAt,
+      scheduledAt,
     };
   }
 

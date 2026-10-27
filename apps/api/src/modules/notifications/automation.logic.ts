@@ -168,3 +168,33 @@ export function automationVars(
     link,
   };
 }
+
+/**
+ * Akıllı gönderim anı (F3): kullanıcının en iyi saati (yoksa hatırlatma saati) bugünün TR takvimine oturtulur,
+ * pencereye kırpılır; an geçmişse yarına kayar. Pencere gece yarısını aşmaz (başlangıç < bitiş kabul edilir).
+ */
+export function smartSendAt(
+  now: Date,
+  bestHour: number | null | undefined,
+  reminderTime: string,
+  windowStart: string | null | undefined,
+  windowEnd: string | null | undefined,
+): Date {
+  let minute = bestHour != null ? bestHour * 60 : hhmmToMinutes(reminderTime);
+  const ws = windowStart ? hhmmToMinutes(windowStart) : 0;
+  const we = windowEnd ? hhmmToMinutes(windowEnd) : 23 * 60 + 59;
+  if (minute < ws) minute = ws;
+  if (minute > we) minute = we;
+  let at = trTodayAt(now, minutesToHhmm(minute));
+  if (at.getTime() < now.getTime()) at = new Date(at.getTime() + 86_400_000);
+  return at;
+}
+
+/** `user_time` eşlemesi (F3): akıllı saat açık ve en iyi saat biliniyorsa onun tam saati, yoksa tercih saati. */
+export function effectiveReminderTime(
+  reminderTime: string,
+  smartTimingEnabled: boolean,
+  bestHour: number | null | undefined,
+): string {
+  return smartTimingEnabled && bestHour != null ? minutesToHhmm(bestHour * 60) : reminderTime;
+}

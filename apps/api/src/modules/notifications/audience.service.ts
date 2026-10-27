@@ -49,7 +49,7 @@ export class AudienceService {
         answered_total, answered_7d, answered_30d, accuracy_30d,
         last_exam_at, last_exam_net, exam_count, open_exam_session_id,
         weak_topic_ids, onboarding_done, plan_active,
-        engagement_tier, last_push_opened_at, notifications_sent_today, marketing_sent_today
+        engagement_tier, last_push_opened_at, notifications_sent_today, marketing_sent_today, best_engagement_hour
       )
       SELECT
         u.id, now(), u.status = 'active', u.created_at, GREATEST(0, (CURRENT_DATE - u.created_at::date)),
@@ -67,7 +67,11 @@ export class AudienceService {
           WHEN COALESCE(ps.sent7, 0) >= 5 AND (po.last_open IS NULL OR po.last_open < now() - interval '7 days') THEN 1
           ELSE 0
         END,
-        po.last_open, COALESCE(nt.n, 0), COALESCE(nt.m, 0)
+        po.last_open, COALESCE(nt.n, 0), COALESCE(nt.m, 0),
+        -- Akıllı saat (F3, Doc 24): ilk 3 gün kayıt saati; sonra son 28 gün cevap saat histogramının tepesi (TR).
+        CASE WHEN (CURRENT_DATE - u.created_at::date) < 3
+             THEN EXTRACT(HOUR FROM (u.created_at AT TIME ZONE 'UTC' AT TIME ZONE 'Europe/Istanbul'))::int
+             ELSE bh.h END
       FROM users u
       LEFT JOIN entitlements e ON e.user_id = u.id
       LEFT JOIN streaks s ON s.user_id = u.id
@@ -125,6 +129,12 @@ export class AudienceService {
         FROM notification_deliveries d WHERE d.user_id = u.id AND d.channel = 'push' AND d.status = 'sent'
       ) ps ON true
       LEFT JOIN LATERAL (
+        SELECT EXTRACT(HOUR FROM (a.answered_at AT TIME ZONE 'UTC' AT TIME ZONE 'Europe/Istanbul'))::int AS h
+        FROM quiz_answers a JOIN quiz_sessions q ON q.id = a.session_id
+        WHERE q.user_id = u.id AND a.answered_at >= now() - interval '28 days'
+        GROUP BY 1 ORDER BY count(*) DESC, 1 DESC LIMIT 1
+      ) bh ON true
+      LEFT JOIN LATERAL (
         SELECT max(ev.occurred_at) AS last_open FROM notification_events ev
         WHERE ev.user_id = u.id AND ev.event_type IN ('opened', 'clicked')
       ) po ON true
@@ -146,7 +156,7 @@ export class AudienceService {
         answered_30d = EXCLUDED.answered_30d, accuracy_30d = EXCLUDED.accuracy_30d, last_exam_at = EXCLUDED.last_exam_at,
         last_exam_net = EXCLUDED.last_exam_net, exam_count = EXCLUDED.exam_count, open_exam_session_id = EXCLUDED.open_exam_session_id,
         weak_topic_ids = EXCLUDED.weak_topic_ids, onboarding_done = EXCLUDED.onboarding_done, plan_active = EXCLUDED.plan_active,
-        engagement_tier = EXCLUDED.engagement_tier, last_push_opened_at = EXCLUDED.last_push_opened_at,
+        engagement_tier = EXCLUDED.engagement_tier, best_engagement_hour = EXCLUDED.best_engagement_hour, last_push_opened_at = EXCLUDED.last_push_opened_at,
         notifications_sent_today = EXCLUDED.notifications_sent_today, marketing_sent_today = EXCLUDED.marketing_sent_today`;
     return result;
   }
