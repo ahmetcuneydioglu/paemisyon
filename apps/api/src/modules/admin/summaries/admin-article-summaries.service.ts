@@ -299,6 +299,43 @@ export class AdminArticleSummariesService {
     return { ok: true };
   }
 
+  /**
+   * Toplu yayın (admin): her özet tek tek aynı kapıdan geçer (eskimiş / kusurlu / tazeleme gerekli → atlanır,
+   * nedeniyle döner). Zaten yayındakiler sayılmaz. İş kullanıcı kararıdır: hangi kayıtların girdiğini istemci seçer.
+   */
+  async publishMany(actor: AuthenticatedUser, ids: string[]) {
+    if (!actor.roles.includes('admin'))
+      throw new ForbiddenException('Yayın kararı admin yetkisi ister.');
+    const published: { id: string; articleNo: string }[] = [];
+    const skipped: { id: string; articleNo: string; reason: string }[] = [];
+    for (const id of [...new Set(ids)]) {
+      const s = await this.prisma.articleSummary.findUnique({
+        where: { id },
+        select: { status: true, lawArticle: { select: { articleNo: true } } },
+      });
+      if (!s) {
+        skipped.push({ id, articleNo: '?', reason: 'bulunamadı' });
+        continue;
+      }
+      if (s.status === 'published') continue;
+      try {
+        await this.publish(actor, id);
+        published.push({ id, articleNo: s.lawArticle.articleNo });
+      } catch (e) {
+        skipped.push({
+          id,
+          articleNo: s.lawArticle.articleNo,
+          reason: e instanceof Error ? e.message : 'yayınlanamadı',
+        });
+      }
+    }
+    await this.audit.log(actor, 'article_summary.publish_many', 'article_summary', null, {
+      published: published.map((p) => p.articleNo),
+      skipped: skipped.map((p) => `${p.articleNo}: ${p.reason}`),
+    });
+    return { published, skipped };
+  }
+
   async unpublish(actor: AuthenticatedUser, id: string) {
     if (!actor.roles.includes('admin'))
       throw new ForbiddenException('Yayından alma admin yetkisi ister.');

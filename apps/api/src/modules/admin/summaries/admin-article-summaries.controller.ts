@@ -67,6 +67,14 @@ export class AdminArticleSummariesController {
     return Promise.all(items.map((s) => this.svc.import(actor, s, r)));
   }
 
+  @Post('publish-many')
+  @Roles('admin')
+  publishMany(@CurrentUser() actor: AuthenticatedUser, @Body() body: { ids?: string[] }) {
+    const ids = Array.isArray(body?.ids) ? body.ids.filter((x) => typeof x === 'string') : [];
+    if (ids.length === 0) throw new BadRequestException('ids gerekli.');
+    return this.svc.publishMany(actor, ids);
+  }
+
   @Get(':id')
   @Roles('admin', 'editor')
   detail(@Param('id', ParseUUIDPipe) id: string) {

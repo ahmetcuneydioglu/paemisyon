@@ -1,20 +1,62 @@
 'use client';
 
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
 import { api } from '@/lib/api';
 import { VERIFICATION_LABEL, type ArticleSummaryList } from '@/lib/types';
 
 const fmt = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('tr-TR', { dateStyle: 'medium' }) : '—');
 
-/** Bir kanunun maddeleri + özet durumu: özetsiz maddeler de listede (kapsama boşluğu görünsün). */
+interface PublishManyResult {
+  published: { id: string; articleNo: string }[];
+  skipped: { id: string; articleNo: string; reason: string }[];
+}
+
+/**
+ * Bir kanunun maddeleri + özet durumu: özetsiz maddeler de listede (kapsama boşluğu görünsün).
+ * Toplu yayın (admin): satır seç → "Seçilileri yayınla", ya da incelemedeki uygun olanların tümü. Sunucu her
+ * özeti tek tek aynı kapıdan geçirir; eskimiş/kusurlu/tazeleme gerekli olanı atlar ve nedenini döner.
+ */
 export default function ArticleSummaryLawPage() {
   const { slug } = useParams<{ slug: string }>();
+  const qc = useQueryClient();
+  const [me, setMe] = useState<{ roles: string[] } | null>(null);
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [notice, setNotice] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
+  useEffect(() => {
+    api<{ roles: string[] }>('/me').then(setMe).catch(() => setMe({ roles: [] }));
+  }, []);
+  const isAdmin = me?.roles.includes('admin') ?? false;
+
   const q = useQuery({ queryKey: ['admin-article-summaries-law', slug], queryFn: () => api<ArticleSummaryList>(`/admin/article-summaries/law/${slug}`) });
   const d = q.data;
   const summarized = d?.articles.filter((a) => a.summary).length ?? 0;
+  // Yayına aday: incelemede, eskimemiş, tazeleme gerekmeyen. Kusur kontrolü sunucuda (atlanır, nedeniyle döner).
+  const candidates = (d?.articles ?? []).filter((a) => a.summary && a.summary.status !== 'published' && !a.summary.staleSince && a.summary.verificationStatus !== 'needs_refresh');
+  const selectable = candidates.map((a) => a.summary!.id);
+
+  const publishMany = useMutation({
+    mutationFn: (ids: string[]) => api<PublishManyResult>('/admin/article-summaries/publish-many', { method: 'POST', body: { ids } }),
+    onSuccess: (r) => {
+      qc.invalidateQueries({ queryKey: ['admin-article-summaries-law', slug] });
+      qc.invalidateQueries({ queryKey: ['admin-article-summaries-laws'] });
+      setSelected(new Set());
+      const skipped = r.skipped.length ? `\nAtlanan ${r.skipped.length}: ${r.skipped.map((x) => `md ${x.articleNo} (${x.reason.split('\n')[0]})`).join('; ')}` : '';
+      setNotice({ kind: r.published.length ? 'ok' : 'err', text: `Yayınlanan ${r.published.length}: ${r.published.map((x) => `md ${x.articleNo}`).join(', ') || '—'}.${skipped}` });
+    },
+    onError: (e: unknown) => setNotice({ kind: 'err', text: e instanceof Error ? e.message : 'Toplu yayın başarısız.' }),
+  });
+  const toggle = (id: string) =>
+    setSelected((prev) => {
+      const n = new Set(prev);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+  const allSelected = selectable.length > 0 && selectable.every((id) => selected.has(id));
   return (
     <div>
       <PageHeader
@@ -26,6 +68,38 @@ export default function ArticleSummaryLawPage() {
           </Link>
         }
       />
+      {notice && (
+        <div className={`mb-4 rounded-lg border px-4 py-3 text-sm whitespace-pre-line ${notice.kind === 'ok' ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-red-200 bg-red-50 text-red-700'}`}>
+          {notice.text}
+          <button onClick={() => setNotice(null)} className="ml-3 underline">
+            kapat
+          </button>
+        </div>
+      )}
+
+      {isAdmin && d && candidates.length > 0 && (
+        <div className="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm">
+          <span className="text-slate-600">
+            {selected.size > 0 ? `${selected.size} seçili` : `${candidates.length} özet yayına aday`}
+          </span>
+          <button
+            onClick={() => publishMany.mutate([...selected])}
+            disabled={selected.size === 0 || publishMany.isPending}
+            className="rounded-lg bg-emerald-600 px-3 py-1.5 font-medium text-white disabled:opacity-50"
+          >
+            {publishMany.isPending ? 'Yayınlanıyor…' : 'Seçilileri yayınla'}
+          </button>
+          <button
+            onClick={() => confirm(`İncelemedeki ${candidates.length} özetin tamamı yayınlansın mı? Kusurlu olanlar sunucuda atlanır.`) && publishMany.mutate(selectable)}
+            disabled={publishMany.isPending}
+            className="rounded-lg border border-emerald-600 px-3 py-1.5 font-medium text-emerald-700 disabled:opacity-50"
+          >
+            Uygun olanların tümünü yayınla ({candidates.length})
+          </button>
+          <span className="text-xs text-slate-400">Yayın madde bazında denetlenir: eskimiş, kusurlu ya da tazeleme bekleyen özet yayınlanmaz.</span>
+        </div>
+      )}
+
       {q.isLoading && <Spinner />}
       {q.error && <ErrorBox error={q.error} onRetry={() => q.refetch()} />}
       {d && (
@@ -34,6 +108,17 @@ export default function ArticleSummaryLawPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="text-left text-xs text-slate-500">
+                  {isAdmin && (
+                    <th className="py-1 pr-2">
+                      <input
+                        type="checkbox"
+                        aria-label="Yayına aday özetlerin tümünü seç"
+                        checked={allSelected}
+                        disabled={selectable.length === 0}
+                        onChange={(e) => setSelected(e.target.checked ? new Set(selectable) : new Set())}
+                      />
+                    </th>
+                  )}
                   <th className="py-1 pr-3 font-medium">Madde</th>
                   <th className="py-1 pr-3 font-medium">Özet</th>
                   <th className="py-1 pr-3 font-medium">Durum</th>
@@ -45,6 +130,13 @@ export default function ArticleSummaryLawPage() {
               <tbody className="divide-y divide-slate-100">
                 {d.articles.map((a) => (
                   <tr key={a.lawArticleId} className={`hover:bg-slate-50 ${a.summary?.staleSince ? 'bg-red-50/40' : ''}`}>
+                    {isAdmin && (
+                      <td className="py-2 pr-2">
+                        {a.summary && selectable.includes(a.summary.id) ? (
+                          <input type="checkbox" aria-label={`md ${a.no} seç`} checked={selected.has(a.summary.id)} onChange={() => toggle(a.summary!.id)} />
+                        ) : null}
+                      </td>
+                    )}
                     <td className="py-2 pr-3 whitespace-nowrap">
                       <span className="font-medium">md {a.no}</span>
                       {a.articleTitle && <span className="ml-2 text-xs text-slate-500">{a.articleTitle}</span>}
