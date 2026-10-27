@@ -1,4 +1,9 @@
-import { BadRequestException, ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import type { Prisma, SummaryBlockType } from '@prisma/client';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
@@ -14,7 +19,12 @@ import {
   type SummaryRow,
   type SummaryUnitJson,
 } from '../../summaries/ozet-dogrulayici';
-import { collectExamStats, importUnit, loadArticleMap, SummaryImportError } from '../../summaries/ozet-ice-aktar';
+import {
+  collectExamStats,
+  importUnit,
+  loadArticleMap,
+  SummaryImportError,
+} from '../../summaries/ozet-ice-aktar';
 
 export interface UpdateUnitDto {
   title?: string;
@@ -71,7 +81,11 @@ export class AdminSummariesService {
   async list() {
     const units = await this.prisma.summaryUnit.findMany({
       where: { deletedAt: null },
-      orderBy: [{ topic: { course: { sortOrder: 'asc' } } }, { topicId: 'asc' }, { sortOrder: 'asc' }],
+      orderBy: [
+        { topic: { course: { sortOrder: 'asc' } } },
+        { topicId: 'asc' },
+        { sortOrder: 'asc' },
+      ],
       select: {
         id: true,
         slug: true,
@@ -123,12 +137,18 @@ export class AdminSummariesService {
       include: {
         topic: { select: { id: true, name: true, course: { select: { name: true } } } },
         legislation: { select: { id: true, slug: true, name: true, shortName: true } },
-        blocks: { where: { status: { not: 'archived' } }, orderBy: { sortOrder: 'asc' }, select: BLOCK_SELECT },
+        blocks: {
+          where: { status: { not: 'archived' } },
+          orderBy: { sortOrder: 'asc' },
+          select: BLOCK_SELECT,
+        },
       },
     });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
     const byNo = await loadArticleMap(this.prisma, unit.legislation.id);
-    const refNos = new Set(unit.blocks.flatMap((b) => b.articleRefs.map((r) => r.lawArticle.articleNo)));
+    const refNos = new Set(
+      unit.blocks.flatMap((b) => b.articleRefs.map((r) => r.lawArticle.articleNo)),
+    );
     const articles = [...refNos]
       .map((no) => byNo.get(no))
       .filter((a): a is NonNullable<typeof a> => Boolean(a))
@@ -168,7 +188,11 @@ export class AdminSummariesService {
         updatedAt: b.updatedAt,
         articleRefs: [...b.articleRefs]
           .sort((x, y) => x.lawArticle.sortKey - y.lawArticle.sortKey)
-          .map((r) => ({ no: r.lawArticle.articleNo, title: r.lawArticle.title, versionNo: r.articleVersionNo })),
+          .map((r) => ({
+            no: r.lawArticle.articleNo,
+            title: r.lawArticle.title,
+            versionNo: r.articleVersionNo,
+          })),
         validation: validation.blocks[i],
       })),
       articles,
@@ -199,7 +223,10 @@ export class AdminSummariesService {
   }
 
   async updateUnit(actor: AuthenticatedUser, id: string, dto: UpdateUnitDto) {
-    const unit = await this.prisma.summaryUnit.findFirst({ where: { id, deletedAt: null }, select: { id: true } });
+    const unit = await this.prisma.summaryUnit.findFirst({
+      where: { id, deletedAt: null },
+      select: { id: true },
+    });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
     const data: Prisma.SummaryUnitUpdateInput = {};
     if (dto.title !== undefined) {
@@ -210,12 +237,19 @@ export class AdminSummariesService {
     if (dto.isPremium !== undefined) data.isPremium = Boolean(dto.isPremium);
     if (dto.readingMinutes !== undefined) {
       const m = Math.floor(Number(dto.readingMinutes));
-      if (!Number.isFinite(m) || m < 1 || m > 120) throw new BadRequestException('Okuma süresi 1–120 dk olmalı.');
+      if (!Number.isFinite(m) || m < 1 || m > 120)
+        throw new BadRequestException('Okuma süresi 1–120 dk olmalı.');
       data.readingMinutes = m;
     }
     if (dto.sortOrder !== undefined) data.sortOrder = Math.floor(Number(dto.sortOrder)) || 0;
     const row = await this.prisma.summaryUnit.update({ where: { id }, data, select: { id: true } });
-    await this.audit.log(actor, 'summary_unit.update', 'summary_unit', row.id, data as Prisma.InputJsonValue);
+    await this.audit.log(
+      actor,
+      'summary_unit.update',
+      'summary_unit',
+      row.id,
+      data as Prisma.InputJsonValue,
+    );
     return { ok: true };
   }
 
@@ -226,31 +260,48 @@ export class AdminSummariesService {
   async updateBlock(actor: AuthenticatedUser, blockId: string, dto: UpdateBlockDto) {
     const block = await this.prisma.summaryBlock.findUnique({
       where: { id: blockId },
-      select: { ...BLOCK_SELECT, unit: { select: { id: true, legislationId: true, deletedAt: true } } },
+      select: {
+        ...BLOCK_SELECT,
+        unit: { select: { id: true, legislationId: true, deletedAt: true } },
+      },
     });
     if (!block || block.unit.deletedAt) throw new NotFoundException('Kart bulunamadı.');
-    if (block.generated) throw new BadRequestException('Betik üretimi kart (istatistik/köprü) elle düzenlenmez; "istatistikleri yenile" kullan.');
+    if (block.generated)
+      throw new BadRequestException(
+        'Betik üretimi kart (istatistik/köprü) elle düzenlenmez; "istatistikleri yenile" kullan.',
+      );
 
     const byNo = await loadArticleMap(this.prisma, block.unit.legislationId);
     const next: SummaryBlockJson = {
       type: block.type,
-      title: dto.title !== undefined ? dto.title ?? undefined : block.title ?? undefined,
-      body: dto.body !== undefined ? dto.body ?? undefined : block.body ?? undefined,
-      rows: dto.rows !== undefined ? dto.rows ?? undefined : ((block.rows as SummaryRow[] | null) ?? undefined),
+      title: dto.title !== undefined ? (dto.title ?? undefined) : (block.title ?? undefined),
+      body: dto.body !== undefined ? (dto.body ?? undefined) : (block.body ?? undefined),
+      rows:
+        dto.rows !== undefined
+          ? (dto.rows ?? undefined)
+          : ((block.rows as SummaryRow[] | null) ?? undefined),
       articleRefs: dto.articleRefs ?? block.articleRefs.map((r) => r.lawArticle.articleNo),
       derivedNumbers:
         dto.derivedNumbers !== undefined
-          ? dto.derivedNumbers ?? undefined
+          ? (dto.derivedNumbers ?? undefined)
           : ((block.derivedNumbers as SummaryBlockJson['derivedNumbers']) ?? undefined),
       counterNumbers: dto.counterNumbers ?? block.counterNumbers,
     };
-    if (!next.title?.trim() && !next.body?.trim() && !(next.rows?.length)) {
+    if (!next.title?.trim() && !next.body?.trim() && !next.rows?.length) {
       throw new BadRequestException('Kart boş olamaz.');
     }
     const v = validateBlock(next, block.sortOrder, byNo);
-    if (!v.ok) throw new BadRequestException([`Kart doğrulamayı geçmedi: ${v.issues.length} kusur.`, ...v.issues.map((i) => `✗ ${i}`)].join('\n'));
+    if (!v.ok)
+      throw new BadRequestException(
+        [
+          `Kart doğrulamayı geçmedi: ${v.issues.length} kusur.`,
+          ...v.issues.map((i) => `✗ ${i}`),
+        ].join('\n'),
+      );
 
-    const refIds = next.articleRefs.map((n) => byNo.get(n)?.id).filter((x): x is string => Boolean(x));
+    const refIds = next.articleRefs
+      .map((n) => byNo.get(n)?.id)
+      .filter((x): x is string => Boolean(x));
     const versions = await this.prisma.lawArticleVersion.groupBy({
       by: ['lawArticleId'],
       where: { lawArticleId: { in: refIds } },
@@ -266,25 +317,42 @@ export class AdminSummariesService {
           title: next.title?.trim() || null,
           body: next.body ?? null,
           rows: (next.rows ?? null) as Prisma.InputJsonValue | Prisma.NullableJsonNullValueInput,
-          derivedNumbers: (next.derivedNumbers ?? null) as Prisma.InputJsonValue | Prisma.NullableJsonNullValueInput,
+          derivedNumbers: (next.derivedNumbers ?? null) as
+            Prisma.InputJsonValue | Prisma.NullableJsonNullValueInput,
           counterNumbers: next.counterNumbers ?? [],
           staleSince: null,
-          articleRefs: { create: refIds.map((lawArticleId) => ({ lawArticleId, articleVersionNo: vMap.get(lawArticleId) ?? null })) },
+          articleRefs: {
+            create: refIds.map((lawArticleId) => ({
+              lawArticleId,
+              articleVersionNo: vMap.get(lawArticleId) ?? null,
+            })),
+          },
         },
       });
     });
-    await this.audit.log(actor, 'summary_block.update', 'summary_block', blockId, { unitId: block.unit.id });
+    await this.audit.log(actor, 'summary_block.update', 'summary_block', blockId, {
+      unitId: block.unit.id,
+    });
     return { ok: true, validation: v };
   }
 
   /** Yeni kart (düzenleyici "kart ekle"): aynı doğrulama; sona eklenir. */
-  async addBlock(actor: AuthenticatedUser, unitId: string, dto: UpdateBlockDto & { type: SummaryBlockType }) {
+  async addBlock(
+    actor: AuthenticatedUser,
+    unitId: string,
+    dto: UpdateBlockDto & { type: SummaryBlockType },
+  ) {
     const unit = await this.prisma.summaryUnit.findFirst({
       where: { id: unitId, deletedAt: null },
-      select: { id: true, legislationId: true, blocks: { select: { sortOrder: true }, orderBy: { sortOrder: 'desc' }, take: 1 } },
+      select: {
+        id: true,
+        legislationId: true,
+        blocks: { select: { sortOrder: true }, orderBy: { sortOrder: 'desc' }, take: 1 },
+      },
     });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
-    if (dto.type === 'exam_stats' || dto.type === 'bridge') throw new BadRequestException('Bu kart türü betik üretimidir.');
+    if (dto.type === 'exam_stats' || dto.type === 'bridge')
+      throw new BadRequestException('Bu kart türü betik üretimidir.');
     const byNo = await loadArticleMap(this.prisma, unit.legislationId);
     const next: SummaryBlockJson = {
       type: dto.type,
@@ -297,8 +365,16 @@ export class AdminSummariesService {
     };
     const sortOrder = (unit.blocks[0]?.sortOrder ?? -1) + 1;
     const v = validateBlock(next, sortOrder, byNo);
-    if (!v.ok) throw new BadRequestException([`Kart doğrulamayı geçmedi: ${v.issues.length} kusur.`, ...v.issues.map((i) => `✗ ${i}`)].join('\n'));
-    const refIds = next.articleRefs.map((n) => byNo.get(n)?.id).filter((x): x is string => Boolean(x));
+    if (!v.ok)
+      throw new BadRequestException(
+        [
+          `Kart doğrulamayı geçmedi: ${v.issues.length} kusur.`,
+          ...v.issues.map((i) => `✗ ${i}`),
+        ].join('\n'),
+      );
+    const refIds = next.articleRefs
+      .map((n) => byNo.get(n)?.id)
+      .filter((x): x is string => Boolean(x));
     const row = await this.prisma.summaryBlock.create({
       data: {
         unitId,
@@ -319,10 +395,15 @@ export class AdminSummariesService {
   }
 
   async archiveBlock(actor: AuthenticatedUser, blockId: string) {
-    const block = await this.prisma.summaryBlock.findUnique({ where: { id: blockId }, select: { id: true, unitId: true } });
+    const block = await this.prisma.summaryBlock.findUnique({
+      where: { id: blockId },
+      select: { id: true, unitId: true },
+    });
     if (!block) throw new NotFoundException('Kart bulunamadı.');
     await this.prisma.summaryBlock.update({ where: { id: blockId }, data: { status: 'archived' } });
-    await this.audit.log(actor, 'summary_block.archive', 'summary_block', blockId, { unitId: block.unitId });
+    await this.audit.log(actor, 'summary_block.archive', 'summary_block', blockId, {
+      unitId: block.unitId,
+    });
     return { ok: true };
   }
 
@@ -336,7 +417,9 @@ export class AdminSummariesService {
       throw new BadRequestException('Sıralama listesi ünitenin kartlarıyla birebir eşleşmeli.');
     }
     await this.prisma.$transaction(
-      blockIds.map((id, i) => this.prisma.summaryBlock.update({ where: { id }, data: { sortOrder: i } })),
+      blockIds.map((id, i) =>
+        this.prisma.summaryBlock.update({ where: { id }, data: { sortOrder: i } }),
+      ),
     );
     await this.audit.log(actor, 'summary_unit.reorder', 'summary_unit', unitId);
     return { ok: true };
@@ -348,7 +431,11 @@ export class AdminSummariesService {
       where: { id: unitId, deletedAt: null },
       include: {
         legislation: { select: { slug: true } },
-        blocks: { where: { status: { not: 'archived' } }, orderBy: { sortOrder: 'asc' }, select: BLOCK_SELECT },
+        blocks: {
+          where: { status: { not: 'archived' } },
+          orderBy: { sortOrder: 'asc' },
+          select: BLOCK_SELECT,
+        },
       },
     });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
@@ -374,41 +461,65 @@ export class AdminSummariesService {
         });
       }
     });
-    await this.audit.log(actor, 'summary_unit.refresh_stats', 'summary_unit', unitId, { totalQuestions: stats.totalQuestions });
+    await this.audit.log(actor, 'summary_unit.refresh_stats', 'summary_unit', unitId, {
+      totalQuestions: stats.totalQuestions,
+    });
     return { ok: true, totalQuestions: stats.totalQuestions };
   }
 
   /** Yayın (admin): eskimiş kart yok, en az bir insan kartı var, bütün kartlar doğrulamayı geçiyor. */
   async publish(actor: AuthenticatedUser, unitId: string) {
-    if (!actor.roles.includes('admin')) throw new ForbiddenException('Yayın kararı admin yetkisi ister.');
+    if (!actor.roles.includes('admin'))
+      throw new ForbiddenException('Yayın kararı admin yetkisi ister.');
     const unit = await this.prisma.summaryUnit.findFirst({
       where: { id: unitId, deletedAt: null },
       include: {
         legislation: { select: { slug: true } },
-        blocks: { where: { status: { not: 'archived' } }, orderBy: { sortOrder: 'asc' }, select: BLOCK_SELECT },
+        blocks: {
+          where: { status: { not: 'archived' } },
+          orderBy: { sortOrder: 'asc' },
+          select: BLOCK_SELECT,
+        },
       },
     });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
     const stale = unit.blocks.filter((b) => b.staleSince);
-    if (stale.length) throw new BadRequestException(`${stale.length} eskimiş kart var; önce güncelle.`);
-    if (!unit.blocks.some((b) => !b.generated)) throw new BadRequestException('Yayınlanacak kart yok.');
+    if (stale.length)
+      throw new BadRequestException(`${stale.length} eskimiş kart var; önce güncelle.`);
+    if (!unit.blocks.some((b) => !b.generated))
+      throw new BadRequestException('Yayınlanacak kart yok.');
     const byNo = await loadArticleMap(this.prisma, unit.legislationId);
     const v = validateUnit(this.toJson(unit), byNo);
     if (!v.ok) throw new BadRequestException(`${v.fails} kusur var; ünite yayınlanamaz.`);
     await this.prisma.$transaction([
-      this.prisma.summaryBlock.updateMany({ where: { unitId, status: { not: 'archived' } }, data: { status: 'published' } }),
-      this.prisma.summaryUnit.update({ where: { id: unitId }, data: { status: 'published', publishedAt: new Date() } }),
+      this.prisma.summaryBlock.updateMany({
+        where: { unitId, status: { not: 'archived' } },
+        data: { status: 'published' },
+      }),
+      this.prisma.summaryUnit.update({
+        where: { id: unitId },
+        data: { status: 'published', publishedAt: new Date() },
+      }),
     ]);
-    await this.audit.log(actor, 'summary_unit.publish', 'summary_unit', unitId, { blocks: unit.blocks.length });
+    await this.audit.log(actor, 'summary_unit.publish', 'summary_unit', unitId, {
+      blocks: unit.blocks.length,
+    });
     return { ok: true };
   }
 
   async unpublish(actor: AuthenticatedUser, unitId: string) {
-    if (!actor.roles.includes('admin')) throw new ForbiddenException('Yayından alma admin yetkisi ister.');
-    const unit = await this.prisma.summaryUnit.findFirst({ where: { id: unitId, deletedAt: null }, select: { id: true } });
+    if (!actor.roles.includes('admin'))
+      throw new ForbiddenException('Yayından alma admin yetkisi ister.');
+    const unit = await this.prisma.summaryUnit.findFirst({
+      where: { id: unitId, deletedAt: null },
+      select: { id: true },
+    });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
     await this.prisma.$transaction([
-      this.prisma.summaryBlock.updateMany({ where: { unitId, status: 'published' }, data: { status: 'in_review' } }),
+      this.prisma.summaryBlock.updateMany({
+        where: { unitId, status: 'published' },
+        data: { status: 'in_review' },
+      }),
       this.prisma.summaryUnit.update({ where: { id: unitId }, data: { status: 'in_review' } }),
     ]);
     await this.audit.log(actor, 'summary_unit.unpublish', 'summary_unit', unitId);
@@ -417,10 +528,17 @@ export class AdminSummariesService {
 
   async remove(actor: AuthenticatedUser, unitId: string) {
     if (!actor.roles.includes('admin')) throw new ForbiddenException('Silme admin yetkisi ister.');
-    const unit = await this.prisma.summaryUnit.findFirst({ where: { id: unitId, deletedAt: null }, select: { id: true, status: true } });
+    const unit = await this.prisma.summaryUnit.findFirst({
+      where: { id: unitId, deletedAt: null },
+      select: { id: true, status: true },
+    });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
-    if (unit.status === 'published') throw new BadRequestException('Yayındaki ünite silinmez; önce yayından al.');
-    await this.prisma.summaryUnit.update({ where: { id: unitId }, data: { deletedAt: new Date(), status: 'archived' } });
+    if (unit.status === 'published')
+      throw new BadRequestException('Yayındaki ünite silinmez; önce yayından al.');
+    await this.prisma.summaryUnit.update({
+      where: { id: unitId },
+      data: { deletedAt: new Date(), status: 'archived' },
+    });
     await this.audit.log(actor, 'summary_unit.delete', 'summary_unit', unitId);
     return { ok: true };
   }
@@ -436,7 +554,9 @@ export class AdminSummariesService {
         type: true,
         staleSince: true,
         unit: { select: { id: true, slug: true, title: true } },
-        articleRefs: { select: { articleVersionNo: true, lawArticle: { select: { articleNo: true } } } },
+        articleRefs: {
+          select: { articleVersionNo: true, lawArticle: { select: { articleNo: true } } },
+        },
       },
     });
     return blocks.map((b) => ({
@@ -445,7 +565,10 @@ export class AdminSummariesService {
       type: b.type,
       staleSince: b.staleSince,
       unit: b.unit,
-      articles: b.articleRefs.map((r) => ({ no: r.lawArticle.articleNo, versionNo: r.articleVersionNo })),
+      articles: b.articleRefs.map((r) => ({
+        no: r.lawArticle.articleNo,
+        versionNo: r.articleVersionNo,
+      })),
     }));
   }
 

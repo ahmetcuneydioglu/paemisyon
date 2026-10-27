@@ -81,6 +81,16 @@ Bu kurallar her UI kodu yazımında geçerlidir; "sonradan düzeltiriz" yaklaş�
   "AI özeti" ön ekli `sourceLabel` taşır ve `in_review`'a düşer. Yayın kararı
   insanındır. Olumsuz iddialar ("X Anayasa'da sayılmaz") betikle doğrulanamaz,
   insan incelemesi kaldırılamaz.
+  **İSTİSNA (28 Eki 2026, Doc 54):** MADDE ÖZETİ model tarafından üretilebilir
+  (kullanıcı görevi: PVSK içerik ve özetleme sistemi). Madde metninin yerine
+  geçmez; her yüzeyde resmî metnin ALTINDA, "özet; resmî metin değildir" notuyla
+  durur. Şartı: `article_summaries` kaydı tek maddeye bağlıdır; sayılar maddenin
+  (ya da anılan aynı kanun maddesinin) metninde geçtiği betikle gösterilir
+  (`madde-ozeti-dogrula.ts`); diğer mevzuat atfı yalnız metinde açıkça anılan
+  kanun/madde; kanunda olmayan yetki/süre/şart/istisna yazılmaz; kayıt "AI madde
+  özeti" ön ekli `sourceLabel` taşır, `in_review`'a düşer, mevzuat kontrol tarihi
+  ve durumu (`verificationStatus`) tutulur. Madde metni tazelenince özet eskir ve
+  yayından önce yeniden incelenir. Yayın kararı insanındır.
 - Kaynak etiketi son kullanıcıya GÖSTERİLMEZ (4 Eyl 2026 kararı) — ne denemede,
   ne alıştırmada, ne günün sorusunda, ne de public/SEO sayfalarında. Etiket
   sorunun geldiği kitabı/sınavı işaret ediyor ve onu dağıtmak istemiyoruz.

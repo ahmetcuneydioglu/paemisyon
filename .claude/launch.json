@@ -56,6 +56,27 @@
       "port": 3002
     },
     {
+      "name": "api-f7",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/api && PORT=3005 npm run start:dev"
+      ],
+      "port": 3005
+    },
+    {
+      "name": "web-webpack",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--webpack"
+      ],
+      "cwd": "apps/web",
+      "port": 3002
+    },
+    {
       "name": "admin-e2e",
       "runtimeExecutable": "env",
       "runtimeArgs": [
@@ -84,6 +105,75 @@
       ],
       "cwd": "apps/api",
       "port": 3007
+    },
+    {
+      "name": "web-doc53",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/doc53-web/apps/web && exec ./node_modules/.bin/next dev --webpack -p 3014"
+      ],
+      "port": 3014
+    },
+    {
+      "name": "api-doc52",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "PORT=3010",
+        "DATABASE_URL=postgresql://postgres:doc52@localhost:55433/paemisyon",
+        "DIRECT_URL=postgresql://postgres:doc52@localhost:55433/paemisyon",
+        "NOTIFICATIONS_PROVIDER=console",
+        "EMAIL_WORKER=0",
+        "NUDGE_CRON=0",
+        "npm",
+        "run",
+        "start:dev"
+      ],
+      "cwd": "apps/api",
+      "port": 3010
+    },
+    {
+      "name": "admin-doc52",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_API_BASE_URL=http://localhost:3010/api/v1",
+        "npm",
+        "run",
+        "dev"
+      ],
+      "cwd": "apps/admin",
+      "port": 3001
+    },
+    {
+      "name": "web-doc52",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_API_BASE_URL=http://localhost:3010/api/v1",
+        "API_BASE_URL=http://localhost:3010/api/v1",
+        "npm",
+        "run",
+        "dev",
+        "--",
+        "--webpack"
+      ],
+      "cwd": "apps/web",
+      "port": 3002
+    },
+    {
+      "name": "web-doc54",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_API_BASE_URL=http://localhost:3007/api/v1",
+        "npm",
+        "run",
+        "dev",
+        "--",
+        "--webpack",
+        "-p",
+        "3015"
+      ],
+      "cwd": "apps/web",
+      "port": 3015
     }
   ]
 }

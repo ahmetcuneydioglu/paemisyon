@@ -13,6 +13,7 @@ import {
   ClosingCta,
 } from "@/components/public/page-frame";
 import { ButtonLink } from "@/components/ui/button";
+import { ArticleSummaryDisclosure } from "@/components/ozet/article-summary";
 
 type Params = Promise<{ slug: string }>;
 
@@ -191,6 +192,13 @@ export default async function KanunOkuPage({ params }: { params: Params }) {
               <div className="type-body max-w-[72ch] whitespace-pre-line text-ink">
                 {a.text}
               </div>
+              {a.summary && (
+                <ArticleSummaryDisclosure
+                  summary={a.summary}
+                  href={`/kanun/${slug}/madde/${a.slug}`}
+                  className="max-w-[72ch]"
+                />
+              )}
             </article>
           );
         })}

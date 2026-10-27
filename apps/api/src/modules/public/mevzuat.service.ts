@@ -3,6 +3,10 @@ import { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { articleSlug, truncate } from './public.service';
+import {
+  ARTICLE_SUMMARY_PUBLIC_SELECT,
+  toPublicArticleSummaryBrief,
+} from '../summaries/madde-ozeti-public';
 
 /**
  * Mevzuat Merkezi public uçları (Doc 29 §12). Kanun kimliği artık kalıcı
@@ -292,6 +296,8 @@ export class MevzuatService {
           sourceUrl: true,
           effectiveInfo: true,
           lastVerifiedAt: true,
+          // Madde özeti (Doc 54): okuyucuda kısa biçim; yalnız yayındaki.
+          summary: { select: ARTICLE_SUMMARY_PUBLIC_SELECT },
         },
         orderBy: { sortKey: 'asc' },
       }),
@@ -332,6 +338,7 @@ export class MevzuatService {
         text: a.text,
         sectionId: a.sectionId,
         questionCount: qMap.get(a.articleNo) ?? 0,
+        summary: toPublicArticleSummaryBrief(a.summary),
       })),
     };
   }

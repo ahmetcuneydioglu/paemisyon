@@ -3,6 +3,7 @@ import { useMemo, useState, type ReactNode } from "react";
 import { Pressable, ScrollView, View } from "react-native";
 import { AppText, Badge, Button, Card, ListRow, ProgressBar, Sheet, Skeleton, type BadgeTone } from "@/components/ui";
 import { useLawRead } from "@/features/mevzuat/queries";
+import { ArticleSummaryDisclosure } from "./article-summary";
 import { masteryLabel, parseBody, SUMMARY_BLOCK_LABEL, shortTitle, unitProgressPct, type InlineRun, type SummaryBlock, type SummaryUnitListItem } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
@@ -140,6 +141,7 @@ export function ArticlePeekSheet({ lawSlug, no, title, onClose, onReadFull }: { 
             {q.data!.verifiedAt ? ` · ${new Date(q.data!.verifiedAt).toLocaleDateString("tr-TR", { dateStyle: "medium" })} itibarıyla` : ""}
             {a.questionCount > 0 ? ` · ${a.questionCount} çıkmış soru` : ""}
           </AppText>
+          {a.summary ? <ArticleSummaryDisclosure summary={a.summary} /> : null}
         </ScrollView>
       )}
     </Sheet>

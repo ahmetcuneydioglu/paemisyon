@@ -14,8 +14,15 @@ const BLOK = (i: number, type = 'rule') => ({
 function setup(unit: Record<string, unknown> | null, progress: unknown = null) {
   const prisma = {
     summaryUnit: { findFirst: jest.fn().mockResolvedValue(unit), findMany: jest.fn() },
-    summaryProgress: { findUnique: jest.fn().mockResolvedValue(progress), findMany: jest.fn(), upsert: jest.fn() },
-    userUnitProgress: { findUnique: jest.fn().mockResolvedValue(null), findMany: jest.fn().mockResolvedValue([]) },
+    summaryProgress: {
+      findUnique: jest.fn().mockResolvedValue(progress),
+      findMany: jest.fn(),
+      upsert: jest.fn(),
+    },
+    userUnitProgress: {
+      findUnique: jest.fn().mockResolvedValue(null),
+      findMany: jest.fn().mockResolvedValue([]),
+    },
   };
   return { svc: new SummariesService(prisma as never), prisma };
 }
@@ -47,7 +54,12 @@ describe('SummariesService.getUnit — kilit sunucuda (Doc 53 karar 8)', () => {
 
   it('premium ünite + premium kullanıcı: bütün kartlar, köprü seans parametresi taşır', async () => {
     const { svc } = setup(UNIT, { lastBlockIndex: 2, completedAt: null });
-    const r = await svc.getUnit('anayasa-yasama-1', { id: 'me', email: 'a@b', roles: ['user'], isPremium: true });
+    const r = await svc.getUnit('anayasa-yasama-1', {
+      id: 'me',
+      email: 'a@b',
+      roles: ['user'],
+      isPremium: true,
+    });
     expect(r.locked).toBe(false);
     expect(r.blocks).toHaveLength(4);
     expect(r.blocks[3].session).toEqual({ topicId: 't1', articleNos: ['83'] });
@@ -85,7 +97,10 @@ describe('SummariesService.saveProgress', () => {
 
   it('bilinmeyen slug sessizce ok:false', async () => {
     const { svc, prisma } = setup(null);
-    const r = await svc.saveProgress({ id: 'me', email: 'a@b', roles: [], isPremium: false }, { slug: 'yok' });
+    const r = await svc.saveProgress(
+      { id: 'me', email: 'a@b', roles: [], isPremium: false },
+      { slug: 'yok' },
+    );
     expect(r).toEqual({ ok: false });
     expect(prisma.summaryProgress.upsert).not.toHaveBeenCalled();
   });

@@ -36,6 +36,13 @@ enum ContentStatus {
   archived
 }
 
+/// Madde özeti mevzuat doğrulama durumu (Doc 54 §2).
+enum VerificationStatus {
+  pending_review
+  verified
+  needs_refresh
+}
+
 /// Konu özeti kart türleri (Doc 53 §3).
 enum SummaryBlockType {
   concept
@@ -456,6 +463,7 @@ model LawArticle {
   questions   QuestionArticle[]
   versions    LawArticleVersion[]
   summaryRefs SummaryBlockArticle[]
+  summary     ArticleSummary?
 
   // Kanun başına madde tekil; import upsert bu anahtara dayanır.
   @@unique([topicId, articleNo])
@@ -681,6 +689,52 @@ model SummaryProgress {
   @@id([userId, unitId])
   @@index([userId, updatedAt])
   @@map("summary_progress")
+}
+
+/// Madde özeti (Doc 54) — law_articles'a 1:1. Resmî metnin YERİNE GEÇMEZ; her yüzeyde metnin altında,
+/// "özet; resmî metin değildir" notuyla durur. Üretim modeldir (sayılar betikle metne bağlanır), yayın
+/// insanındır. Kaynak etiketi ("AI madde özeti — …") yalnız admin'de. Madde metni tazelenince eskir.
+model ArticleSummary {
+  id                 String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  lawArticleId       String             @unique @map("law_article_id") @db.Uuid
+  /// Mülga madde: yalnız title + shortSummary dolu.
+  repealed           Boolean            @default(false)
+  title              String
+  shortSummary       String             @map("short_summary")
+  detailed           String?
+  keyPoints          String[]           @default([]) @map("key_points")
+  conditions         String[]           @default([])
+  exceptions         String[]           @default([])
+  /// [{label, value, ref}]
+  timeLimits         Json?              @map("time_limits")
+  numericalValues    Json?              @map("numerical_values")
+  /// [{authority, limit, ref}]
+  authorityAndLimits Json?              @map("authority_and_limits")
+  /// [{law, article, note, verified}]
+  relatedLegislation Json?              @map("related_legislation")
+  examReminders      String[]           @default([]) @map("exam_reminders")
+  derivedNumbers     Json?              @map("derived_numbers")
+  counterNumbers     Int[]              @default([]) @map("counter_numbers")
+  /// Özetin yazıldığı madde sürümü; madde tazelenince eskime kıyası.
+  articleVersionNo   Int?               @map("article_version_no")
+  staleSince         DateTime?          @map("stale_since")
+  verificationStatus VerificationStatus @default(pending_review) @map("verification_status")
+  /// Mevzuatın resmî kaynakta kontrol edildiği tarih (özet üretim turu).
+  verifiedAt         DateTime?          @map("verified_at")
+  sourceLabel        String             @map("source_label")
+  status             ContentStatus      @default(in_review)
+  version            Int                @default(1)
+  generatedBy        String?            @map("generated_by")
+  publishedAt        DateTime?          @map("published_at")
+  createdBy          String?            @map("created_by") @db.Uuid
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+
+  lawArticle LawArticle @relation(fields: [lawArticleId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+  @@index([staleSince])
+  @@map("article_summaries")
 }
 
 /// Kullanıcı × ünite hâkimiyeti (Doc 53 F5) — user_topic_progress'in ünite eşi. Ünite ETİKETTİR:

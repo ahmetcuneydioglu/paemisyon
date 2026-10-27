@@ -8,6 +8,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 import { HeatBar } from "@/components/ui/heat-bar";
 import { SourceTag } from "@/components/ui/source-tag";
 import { cn } from "@/lib/cn";
+import { ArticleSummaryCard } from "@/components/ozet/article-summary";
 
 /** ISO → "GG.AA.YYYY" (deterministik; locale/TZ yok → hydration güvenli). */
 function formatVerifiedDate(iso: string): string {
@@ -140,6 +141,9 @@ export function ArticleWorkspace({
           </p>
         </Card>
       )}
+
+      {/* Madde özeti (Doc 54): resmî metnin ALTINDA, lafızdan görsel olarak ayrı */}
+      {article.summary && <ArticleSummaryCard summary={article.summary} variant="full" />}
 
       <Card>
         <CardTitle>Madde künyesi</CardTitle>

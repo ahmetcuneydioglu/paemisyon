@@ -6,6 +6,10 @@ import { FREE_DAILY_LIMIT_FALLBACK } from '../../common/plan.constants';
 import { IPTAL_EDILMEMIS } from '../../common/iptal-soru';
 import { gunMetni } from '../../common/gun';
 import { paylasilanSoru } from './soru-paylasim';
+import {
+  ARTICLE_SUMMARY_PUBLIC_SELECT,
+  toPublicArticleSummary,
+} from '../summaries/madde-ozeti-public';
 
 /** Pazarlama sayfalarının tükettiği fiyat bilgisi (kimlik gerektirmez). */
 export interface PublicPricing {
@@ -590,6 +594,8 @@ export class PublicService {
         sourceUrl: true,
         effectiveInfo: true,
         lastVerifiedAt: true,
+        // Madde özeti (Doc 54): yalnız yayındaki; resmî metnin yerine geçmez.
+        summary: { select: ARTICLE_SUMMARY_PUBLIC_SELECT },
       },
     });
 
@@ -611,6 +617,8 @@ export class PublicService {
             verifiedAt: lawArticle.lastVerifiedAt?.toISOString() ?? null,
           }
         : null,
+      /** Madde özeti (Doc 54) — yayındaysa; kaynak etiketi dışarı çıkmaz. */
+      summary: toPublicArticleSummary(lawArticle?.summary),
       exams: this.examContexts(topic.course.sections),
       /** Hangi sınavda kaç kez soruldu (kaynak etiketi dağılımı). */
       sources: showSource

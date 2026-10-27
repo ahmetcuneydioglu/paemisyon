@@ -117,7 +117,11 @@ export function extractNumbers(text: string): number[] {
 
 /** Türetilmiş sayı formülü: yalnız rakam, + - * / ( ), floor ve ceil (üçte iki gibi yukarı yuvarlanan çoğunluklar). */
 export function safeEval(expr: string): number {
-  if (!/^[\d\s+\-*/()]*(?:(?:floor|ceil)?[\d\s+\-*/()]*)*$/.test(expr) || !/\d/.test(expr) || /[a-z]/.test(expr.replace(/floor|ceil/g, ''))) {
+  if (
+    !/^[\d\s+\-*/()]*(?:(?:floor|ceil)?[\d\s+\-*/()]*)*$/.test(expr) ||
+    !/\d/.test(expr) ||
+    /[a-z]/.test(expr.replace(/floor|ceil/g, ''))
+  ) {
     throw new Error(`güvensiz ifade: ${expr}`);
   }
   const js = expr.replace(/floor/g, 'Math.floor').replace(/ceil/g, 'Math.ceil');
@@ -130,7 +134,8 @@ export function safeEval(expr: string): number {
 export function blockText(b: Pick<SummaryBlockJson, 'title' | 'body' | 'rows'>): string {
   const parts = [b.title ?? '', b.body ?? ''];
   for (const r of b.rows ?? []) {
-    for (const [k, v] of Object.entries(r)) if (k !== 'refs' && typeof v === 'string') parts.push(v);
+    for (const [k, v] of Object.entries(r))
+      if (k !== 'refs' && typeof v === 'string') parts.push(v);
   }
   return parts.join('\n');
 }
@@ -141,7 +146,13 @@ const ROW_TYPES = new Set(['numbers', 'compare', 'exam_stats', 'bridge']);
 export function normalizeCounterNumbers(v: unknown): number[] {
   if (!Array.isArray(v)) return [];
   return v
-    .map((x) => (typeof x === 'number' ? x : x && typeof x === 'object' && 'value' in x ? Number((x as { value: unknown }).value) : NaN))
+    .map((x) =>
+      typeof x === 'number'
+        ? x
+        : x && typeof x === 'object' && 'value' in x
+          ? Number((x as { value: unknown }).value)
+          : NaN,
+    )
     .filter((n) => Number.isFinite(n));
 }
 /** Formül işlenenlerinden metinde aranmayan sabitler (yarı, yüzde, +1). */
@@ -163,7 +174,14 @@ export function validateBlock(
     issues.push(m);
     lines.push(`✗ ${m}`);
   };
-  const done = () => ({ index, type: b.type, title: b.title ?? '', ok: issues.length === 0, lines, issues });
+  const done = () => ({
+    index,
+    type: b.type,
+    title: b.title ?? '',
+    ok: issues.length === 0,
+    lines,
+    issues,
+  });
 
   if (!b.articleRefs?.length) {
     bad('articleRefs boş');
@@ -188,7 +206,8 @@ export function validateBlock(
   const counters = normalizeCounterNumbers(b.counterNumbers);
   for (const n of extractNumbers(blockText(b))) {
     if (counters.includes(n)) {
-      if (numberInTexts(n, refTexts)) bad(`${n} karşı örnek olarak verilmiş ama referans metninde GEÇİYOR`);
+      if (numberInTexts(n, refTexts))
+        bad(`${n} karşı örnek olarak verilmiş ama referans metninde GEÇİYOR`);
       else ok(`${n} karşı örnek (yanlış şık), metinde yok`);
       continue;
     }
@@ -233,13 +252,18 @@ export function validateBlock(
     for (const n of extractNumbers(rt)) {
       if (numberInTexts(n, rTexts)) continue;
       if (derived.some((d) => d.value === n) || counters.includes(n)) continue;
-      bad(`satır "${String((r as any).label ?? (r as any).aspect ?? '?')}": ${n} satırın referanslarında yok`);
+      bad(
+        `satır "${String((r as any).label ?? (r as any).aspect ?? '?')}": ${n} satırın referanslarında yok`,
+      );
     }
   }
   return done();
 }
 
-export function validateUnit(data: SummaryUnitJson, articles: Map<string, ArticleText>): UnitValidation {
+export function validateUnit(
+  data: SummaryUnitJson,
+  articles: Map<string, ArticleText>,
+): UnitValidation {
   const blocks = data.blocks.map((b, i) => validateBlock(b, i, articles));
   const fails = blocks.reduce((s, b) => s + b.issues.length, 0);
   return { ok: fails === 0, fails, blocks };
@@ -281,13 +305,21 @@ export function fillGeneratedBlocks(data: SummaryUnitJson, stats: ExamStatsInput
       b.generated = true;
       b.articleRefs = refs;
       b.rows = [
-        { label: 'Bu ünitenin maddelerinden yayındaki soru', value: String(stats.totalQuestions), refs },
+        {
+          label: 'Bu ünitenin maddelerinden yayındaki soru',
+          value: String(stats.totalQuestions),
+          refs,
+        },
         ...top
           .filter((t) => t.n > 0)
           .slice(0, 5)
           .map((t) => {
             const title = stats.titles.get(t.no);
-            return { label: `md ${t.no}${title ? ' — ' + temiz(title) : ''}`, value: `${t.n} soru`, refs: [t.no] };
+            return {
+              label: `md ${t.no}${title ? ' — ' + temiz(title) : ''}`,
+              value: `${t.n} soru`,
+              refs: [t.no],
+            };
           }),
         ...(stats.exams.size
           ? [
@@ -303,7 +335,16 @@ export function fillGeneratedBlocks(data: SummaryUnitJson, stats: ExamStatsInput
             ]
           : []),
         ...(top.some((t) => t.n === 0)
-          ? [{ label: 'Hiç soru çıkmamış', value: top.filter((t) => t.n === 0).map((t) => `md ${t.no}`).join(', '), refs }]
+          ? [
+              {
+                label: 'Hiç soru çıkmamış',
+                value: top
+                  .filter((t) => t.n === 0)
+                  .map((t) => `md ${t.no}`)
+                  .join(', '),
+                refs,
+              },
+            ]
           : []),
       ];
     }

@@ -16,6 +16,7 @@ import {
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ArticleSummaryDisclosure } from "@/components/ozet/article-summary";
 
 /**
  * Girişli okuyucu (Doc 29 §33): AĞAÇ (içindekiler) | MADDELER | INSPECTOR
@@ -355,6 +356,13 @@ export function LawReader({ law }: { law: MevzuatReading }) {
               >
                 {renderText(a)}
               </div>
+              {a.summary && (
+                <ArticleSummaryDisclosure
+                  summary={a.summary}
+                  href={`/kanun/${law.slug}/madde/${a.slug}`}
+                  className="max-w-[65ch]"
+                />
+              )}
               {notes.get(a.no) != null && noteEditing !== a.no && (
                 <div className="mt-2 rounded-control border-l-[3px] border-warning bg-warning-soft p-3">
                   <p className="type-label mb-1 inline-flex items-center gap-1 text-warning-ink">

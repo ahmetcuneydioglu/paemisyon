@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { apiClient } from "@/lib/api-client";
 import type { LawArticleDetail, MevzuatReading } from "@/lib/public-api";
+import type { PublicArticleSummaryBrief } from "@/lib/ozet";
+import { ArticleSummaryDisclosure } from "./article-summary";
 import { articleSlug } from "@/lib/public-api";
 import { Dialog } from "@/components/ui/dialog";
 import { cn } from "@/lib/cn";
@@ -17,6 +19,8 @@ interface PeekArticle {
   source: string;
   verifiedAt: string | null;
   questionCount: number;
+  /** Madde özeti — kısa biçim (Doc 54); yayında değilse null. */
+  summary: PublicArticleSummaryBrief | null;
 }
 
 /** Kanunun tam okuma yanıtı sayfa başına bir kez çekilir (madde atlasında olmayan kanunlar için yedek yol). */
@@ -37,12 +41,12 @@ function okuma(lawSlug: string): Promise<MevzuatReading | null> {
 async function maddeGetir(lawSlug: string, no: string): Promise<PeekArticle | null> {
   const atlas = await apiClient<LawArticleDetail>(`/public/laws/${lawSlug}/articles/${articleSlug(no)}`).catch(() => null);
   if (atlas?.text) {
-    return { body: atlas.text.body, source: atlas.text.source, verifiedAt: atlas.text.verifiedAt, questionCount: atlas.questionCount };
+    return { body: atlas.text.body, source: atlas.text.source, verifiedAt: atlas.text.verifiedAt, questionCount: atlas.questionCount, summary: atlas.summary };
   }
   const r = await okuma(lawSlug);
   const a = r?.articles.find((x) => x.no === no || x.slug === articleSlug(no));
   if (!a) return null;
-  return { body: a.text, source: r!.source, verifiedAt: r!.verifiedAt, questionCount: a.questionCount };
+  return { body: a.text, source: r!.source, verifiedAt: r!.verifiedAt, questionCount: a.questionCount, summary: a.summary };
 }
 
 /**
@@ -124,6 +128,7 @@ export function ArticlePeek({
                 : ""}
               {data.questionCount > 0 ? ` · ${data.questionCount} çıkmış soru` : ""}
             </p>
+            {data.summary && <ArticleSummaryDisclosure summary={data.summary} href={href} />}
           </div>
         )}
       </Dialog>

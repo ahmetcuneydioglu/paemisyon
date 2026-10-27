@@ -18,7 +18,11 @@ import { Roles } from '../../auth/decorators/roles.decorator';
 import { CurrentUser } from '../../auth/decorators/current-user.decorator';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import type { SummaryUnitJson } from '../../summaries/ozet-dogrulayici';
-import { AdminSummariesService, type UpdateBlockDto, type UpdateUnitDto } from './admin-summaries.service';
+import {
+  AdminSummariesService,
+  type UpdateBlockDto,
+  type UpdateUnitDto,
+} from './admin-summaries.service';
 
 /**
  * /admin/summaries — Konu Özetleri paneli (Doc 53 §4 adım 4–6, §6 admin).
@@ -62,7 +66,11 @@ export class AdminSummariesController {
 
   @Patch(':id')
   @Roles('admin', 'editor')
-  update(@CurrentUser() actor: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string, @Body() dto: UpdateUnitDto) {
+  update(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() dto: UpdateUnitDto,
+  ) {
     return this.summaries.updateUnit(actor, id, dto ?? {});
   }
 
@@ -124,7 +132,10 @@ export class AdminSummariesController {
 
   @Post('blocks/:blockId/archive')
   @Roles('admin', 'editor')
-  archiveBlock(@CurrentUser() actor: AuthenticatedUser, @Param('blockId', ParseUUIDPipe) blockId: string) {
+  archiveBlock(
+    @CurrentUser() actor: AuthenticatedUser,
+    @Param('blockId', ParseUUIDPipe) blockId: string,
+  ) {
     return this.summaries.archiveBlock(actor, blockId);
   }
 }

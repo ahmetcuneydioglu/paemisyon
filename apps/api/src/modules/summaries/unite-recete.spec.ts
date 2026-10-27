@@ -1,6 +1,11 @@
 import { pickUnitRecipe, unitMastery, type UnitForRecipe } from './unite-recete';
 
-const U = (slug: string, solved: number, correct: number, completedAt: string | null = null): UnitForRecipe => ({
+const U = (
+  slug: string,
+  solved: number,
+  correct: number,
+  completedAt: string | null = null,
+): UnitForRecipe => ({
   slug,
   title: slug,
   topicId: 't',

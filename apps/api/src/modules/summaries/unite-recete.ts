@@ -23,7 +23,13 @@ export interface UnitMasteryRow {
 
 export function unitMastery(solved: number, correct: number): UnitMasteryRow {
   const accuracy = solved > 0 ? correct / solved : null;
-  return { solved, correct, accuracy, band: band(solved, accuracy), accuracyPct: accuracy == null ? null : Math.round(accuracy * 100) };
+  return {
+    solved,
+    correct,
+    accuracy,
+    band: band(solved, accuracy),
+    accuracyPct: accuracy == null ? null : Math.round(accuracy * 100),
+  };
 }
 
 export interface UnitForRecipe {
@@ -40,7 +46,15 @@ export interface UnitForRecipe {
 export type RecipeKind = 'summary_then_questions' | 'questions';
 
 export interface UnitRecipe {
-  unit: { slug: string; title: string; topicId: string; isPremium: boolean; accuracyPct: number | null; solved: number; band: Band };
+  unit: {
+    slug: string;
+    title: string;
+    topicId: string;
+    isPremium: boolean;
+    accuracyPct: number | null;
+    solved: number;
+    band: Band;
+  };
   kind: RecipeKind;
   /** Seans parametreleri — istemci URL'yi kendi kurar (web /seans?…, mobil /seans params). */
   session: { topicId: string; articleNos: string[]; count: number };
@@ -51,7 +65,11 @@ export function pickUnitRecipe(units: readonly UnitForRecipe[]): UnitRecipe | nu
   if (units.length === 0) return null;
   const zayif = units
     .filter((u) => zayifMi(u.mastery.solved, u.mastery.accuracy ?? 0))
-    .sort((a, b) => (a.mastery.accuracy ?? 0) - (b.mastery.accuracy ?? 0) || b.mastery.solved - a.mastery.solved);
+    .sort(
+      (a, b) =>
+        (a.mastery.accuracy ?? 0) - (b.mastery.accuracy ?? 0) ||
+        b.mastery.solved - a.mastery.solved,
+    );
   let secilen = zayif[0];
   if (!secilen) {
     // Az veri: hiçbir ünite eşiği geçmiyor → en az çözülmüş (hiç çözülmemiş önce), sonra sıra.

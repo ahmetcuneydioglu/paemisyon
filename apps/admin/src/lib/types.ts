@@ -587,3 +587,105 @@ export const SUMMARY_BLOCK_LABEL: Record<SummaryBlockType, string> = {
   exam_stats: 'Sınav der ki',
   bridge: 'Köprü',
 };
+
+// ── Madde Özetleri (Doc 54): madde başına 1:1 özet, resmî metnin altında ──
+export type VerificationStatus = 'pending_review' | 'verified' | 'needs_refresh';
+
+export interface ArticleSummaryLawRow {
+  slug: string;
+  name: string;
+  shortName: string | null;
+  articles: number;
+  summarized: number;
+  published: number;
+  inReview: number;
+  stale: number;
+}
+
+export interface ArticleSummaryListRow {
+  lawArticleId: string;
+  no: string;
+  articleTitle: string | null;
+  questionCount: number;
+  textVerifiedAt: string | null;
+  summary: {
+    id: string;
+    title: string;
+    status: ContentStatus;
+    repealed: boolean;
+    staleSince: string | null;
+    verificationStatus: VerificationStatus;
+    verifiedAt: string | null;
+    version: number;
+    sourceLabel: string;
+    updatedAt: string;
+  } | null;
+}
+
+export interface ArticleSummaryList {
+  law: { id: string; name: string; slug: string };
+  articles: ArticleSummaryListRow[];
+}
+
+export interface ArticleSummaryStaleItem {
+  id: string;
+  title: string;
+  status: ContentStatus;
+  staleSince: string | null;
+  articleNo: string;
+  law: { slug: string; shortName: string | null; name: string } | null;
+}
+
+export interface LabeledValue {
+  label: string;
+  value: string;
+  ref?: string;
+}
+
+export interface ArticleSummaryDetail {
+  id: string;
+  lawArticleId: string;
+  repealed: boolean;
+  title: string;
+  shortSummary: string;
+  detailed: string | null;
+  keyPoints: string[];
+  conditions: string[];
+  exceptions: string[];
+  timeLimits: LabeledValue[] | null;
+  numericalValues: LabeledValue[] | null;
+  authorityAndLimits: { authority: string; limit: string; ref?: string }[] | null;
+  relatedLegislation: { law: string; article: string | null; note?: string; verified: boolean }[] | null;
+  examReminders: string[];
+  derivedNumbers: { value: number; expr: string; refs?: string[]; note?: string }[] | null;
+  counterNumbers: number[];
+  articleVersionNo: number | null;
+  staleSince: string | null;
+  verificationStatus: VerificationStatus;
+  verifiedAt: string | null;
+  sourceLabel: string;
+  status: ContentStatus;
+  version: number;
+  generatedBy: string | null;
+  publishedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+  article: {
+    id: string;
+    articleNo: string;
+    title: string | null;
+    text: string;
+    lastVerifiedAt: string | null;
+    effectiveInfo: string | null;
+    sourceUrl: string | null;
+    lawSlug: string;
+    lawName: string;
+  };
+  validation: { ok: boolean; issues: string[]; lines: string[] };
+}
+
+export const VERIFICATION_LABEL: Record<VerificationStatus, string> = {
+  pending_review: 'İnceleme bekliyor',
+  verified: 'Mevzuat doğrulandı',
+  needs_refresh: 'Tazeleme gerekli',
+};

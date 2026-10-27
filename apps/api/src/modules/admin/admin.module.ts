@@ -15,6 +15,8 @@ import { AdminPlansController } from './plans/admin-plans.controller';
 import { AdminPlansService } from './plans/admin-plans.service';
 import { AdminSummariesController } from './summaries/admin-summaries.controller';
 import { AdminSummariesService } from './summaries/admin-summaries.service';
+import { AdminArticleSummariesController } from './summaries/admin-article-summaries.controller';
+import { AdminArticleSummariesService } from './summaries/admin-article-summaries.service';
 import { PublicModule } from '../public/public.module';
 import { ReportsModule } from '../reports/reports.module';
 import { ExamsModule } from '../exams/exams.module';
@@ -33,6 +35,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminPastExamsController,
     AdminPlansController,
     AdminSummariesController, // Doc 53 konu özetleri
+    AdminArticleSummariesController, // Doc 54 madde özetleri
   ],
   providers: [
     AuditService,
@@ -47,6 +50,7 @@ import { AdminExamAdjustmentsService } from './exams/admin-exam-adjustments.serv
     AdminPastExamsService,
     AdminPlansService,
     AdminSummariesService,
+    AdminArticleSummariesService,
   ],
 })
 export class AdminModule {}

@@ -76,7 +76,10 @@ export class SummariesService {
   }
 
   /** Konu sayfasının "Özet" yüzü: yayındaki üniteler + kullanıcının ilerlemesi + kilit. */
-  async listForTopic(topicId: string, user?: AuthenticatedUser | null): Promise<{ units: PublicUnitListItem[] }> {
+  async listForTopic(
+    topicId: string,
+    user?: AuthenticatedUser | null,
+  ): Promise<{ units: PublicUnitListItem[] }> {
     const units = await this.prisma.summaryUnit.findMany({
       where: { topicId, status: 'published', deletedAt: null },
       orderBy: { sortOrder: 'asc' },
@@ -96,7 +99,9 @@ export class SummariesService {
     const [progress, hakimiyet] = user
       ? await Promise.all([
           this.prisma.summaryProgress.findMany({ where: { userId: user.id, unitId: { in: ids } } }),
-          this.prisma.userUnitProgress.findMany({ where: { userId: user.id, unitId: { in: ids } } }),
+          this.prisma.userUnitProgress.findMany({
+            where: { userId: user.id, unitId: { in: ids } },
+          }),
         ])
       : [[], []];
     const pById = new Map(progress.map((p) => [p.unitId, p]));
@@ -115,7 +120,12 @@ export class SummariesService {
           isPremium: u.isPremium,
           locked: u.isPremium && !(user?.isPremium ?? false),
           blockCount: u._count.blocks,
-          progress: p ? { lastBlockIndex: p.lastBlockIndex, completedAt: p.completedAt?.toISOString() ?? null } : null,
+          progress: p
+            ? {
+                lastBlockIndex: p.lastBlockIndex,
+                completedAt: p.completedAt?.toISOString() ?? null,
+              }
+            : null,
           mastery: user ? this.masteryOut(m?.solvedCount ?? 0, m?.correctCount ?? 0) : null,
         };
       }),
@@ -142,7 +152,9 @@ export class SummariesService {
           where: { status: 'published' },
           orderBy: { sortOrder: 'asc' },
           include: {
-            articleRefs: { select: { lawArticle: { select: { articleNo: true, title: true, sortKey: true } } } },
+            articleRefs: {
+              select: { lawArticle: { select: { articleNo: true, title: true, sortKey: true } } },
+            },
           },
         },
       },
@@ -152,8 +164,12 @@ export class SummariesService {
     const visible = locked ? unit.blocks.slice(0, KILITLI_UNITE_ACIK_KART) : unit.blocks;
     const [progress, hakimiyet] = user
       ? await Promise.all([
-          this.prisma.summaryProgress.findUnique({ where: { userId_unitId: { userId: user.id, unitId: unit.id } } }),
-          this.prisma.userUnitProgress.findUnique({ where: { userId_unitId: { userId: user.id, unitId: unit.id } } }),
+          this.prisma.summaryProgress.findUnique({
+            where: { userId_unitId: { userId: user.id, unitId: unit.id } },
+          }),
+          this.prisma.userUnitProgress.findUnique({
+            where: { userId_unitId: { userId: user.id, unitId: unit.id } },
+          }),
         ])
       : [null, null];
     return {
@@ -168,8 +184,15 @@ export class SummariesService {
       totalBlocks: unit.blocks.length,
       legislation: unit.legislation,
       topic: { id: unit.topicId, name: unit.topic.name, courseName: unit.topic.course.name },
-      progress: progress ? { lastBlockIndex: progress.lastBlockIndex, completedAt: progress.completedAt?.toISOString() ?? null } : null,
-      mastery: user ? this.masteryOut(hakimiyet?.solvedCount ?? 0, hakimiyet?.correctCount ?? 0) : null,
+      progress: progress
+        ? {
+            lastBlockIndex: progress.lastBlockIndex,
+            completedAt: progress.completedAt?.toISOString() ?? null,
+          }
+        : null,
+      mastery: user
+        ? this.masteryOut(hakimiyet?.solvedCount ?? 0, hakimiyet?.correctCount ?? 0)
+        : null,
       blocks: visible.map((b) => this.toPublicBlock(b, unit.topicId)),
     };
   }
@@ -196,7 +219,9 @@ export class SummariesService {
         isPremium: true,
         blocks: {
           where: { type: 'bridge', status: 'published' },
-          select: { articleRefs: { select: { lawArticle: { select: { articleNo: true, sortKey: true } } } } },
+          select: {
+            articleRefs: { select: { lawArticle: { select: { articleNo: true, sortKey: true } } } },
+          },
           take: 1,
         },
       },
@@ -205,7 +230,10 @@ export class SummariesService {
     const ids = units.map((u) => u.id);
     const [hakimiyet, okuma] = await Promise.all([
       this.prisma.userUnitProgress.findMany({ where: { userId, unitId: { in: ids } } }),
-      this.prisma.summaryProgress.findMany({ where: { userId, unitId: { in: ids } }, select: { unitId: true, completedAt: true } }),
+      this.prisma.summaryProgress.findMany({
+        where: { userId, unitId: { in: ids } },
+        select: { unitId: true, completedAt: true },
+      }),
     ]);
     const mById = new Map(hakimiyet.map((m) => [m.unitId, m]));
     const cById = new Map(okuma.map((o) => [o.unitId, o.completedAt]));
@@ -225,19 +253,31 @@ export class SummariesService {
   }
 
   private toPublicBlock(
-    b: SummaryBlock & { articleRefs: { lawArticle: { articleNo: string; title: string | null; sortKey: number } }[] },
+    b: SummaryBlock & {
+      articleRefs: { lawArticle: { articleNo: string; title: string | null; sortKey: number } }[];
+    },
     topicId: string,
   ): PublicBlock {
     const articles = [...b.articleRefs]
       .sort((x, y) => x.lawArticle.sortKey - y.lawArticle.sortKey)
       .map((r) => ({ no: r.lawArticle.articleNo, title: r.lawArticle.title }));
-    const out: PublicBlock = { id: b.id, type: b.type, title: b.title, body: b.body, rows: b.rows ?? null, articles };
+    const out: PublicBlock = {
+      id: b.id,
+      type: b.type,
+      title: b.title,
+      body: b.body,
+      rows: b.rows ?? null,
+      articles,
+    };
     if (b.type === 'bridge') out.session = { topicId, articleNos: articles.map((a) => a.no) };
     return out;
   }
 
   /** Kaldığın kart / bitirme — ünite başına tek satır. */
-  async saveProgress(user: AuthenticatedUser, body: { slug?: string; lastBlockIndex?: number; completed?: boolean }) {
+  async saveProgress(
+    user: AuthenticatedUser,
+    body: { slug?: string; lastBlockIndex?: number; completed?: boolean },
+  ) {
     if (!body.slug) return { ok: false };
     const unit = await this.prisma.summaryUnit.findFirst({
       where: { slug: body.slug, status: 'published', deletedAt: null },
@@ -249,7 +289,12 @@ export class SummariesService {
     await this.prisma.summaryProgress.upsert({
       where: { userId_unitId: { userId: user.id, unitId: unit.id } },
       update: { lastBlockIndex: idx, ...(completedAt ? { completedAt } : {}) },
-      create: { userId: user.id, unitId: unit.id, lastBlockIndex: idx, completedAt: completedAt ?? null },
+      create: {
+        userId: user.id,
+        unitId: unit.id,
+        lastBlockIndex: idx,
+        completedAt: completedAt ?? null,
+      },
     });
     return { ok: true };
   }

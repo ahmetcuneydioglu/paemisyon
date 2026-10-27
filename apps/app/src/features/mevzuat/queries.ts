@@ -37,6 +37,17 @@ export interface LegislationDetail {
   toc: { no: string; slug: string; title: string | null; sectionId: string | null; questionCount: number }[];
 }
 
+/** Madde özeti — kısa biçim (Doc 54): resmî metnin altında katlanır blok. Yalnız yayındaysa gelir. */
+export interface ArticleSummaryBrief {
+  repealed: boolean;
+  title: string;
+  shortSummary: string;
+  keyPoints: string[];
+  timeLimits: { label: string; value: string; ref?: string }[];
+  numericalValues: { label: string; value: string; ref?: string }[];
+  examReminders: string[];
+}
+
 export interface LawRead {
   slug: string;
   name: string;
@@ -50,7 +61,7 @@ export interface LawRead {
   effectiveInfo: string | null;
   verifiedAt: string | null;
   sections: { id: string; parentId: string | null; heading: string; sortOrder: number }[];
-  articles: { no: string; slug: string; title: string | null; text: string; sectionId: string | null; questionCount: number }[];
+  articles: { no: string; slug: string; title: string | null; text: string; sectionId: string | null; questionCount: number; summary: ArticleSummaryBrief | null }[];
 }
 
 export interface MevzuatSearchResult {

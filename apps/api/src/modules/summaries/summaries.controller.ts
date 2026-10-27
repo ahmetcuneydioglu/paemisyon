@@ -1,4 +1,13 @@
-import { Body, Controller, Get, Header, Param, ParseUUIDPipe, Post, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Header,
+  Param,
+  ParseUUIDPipe,
+  Post,
+  UseGuards,
+} from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { OptionalJwtGuard } from '../auth/guards/optional-jwt.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
@@ -23,7 +32,10 @@ export class PublicSummariesController {
   @Get('topic/:topicId')
   @UseGuards(OptionalJwtGuard)
   @Header('Cache-Control', 'private, max-age=60')
-  listForTopic(@Param('topicId', ParseUUIDPipe) topicId: string, @CurrentUser() user?: AuthenticatedUser) {
+  listForTopic(
+    @Param('topicId', ParseUUIDPipe) topicId: string,
+    @CurrentUser() user?: AuthenticatedUser,
+  ) {
     return this.summaries.listForTopic(topicId, user ?? null);
   }
 

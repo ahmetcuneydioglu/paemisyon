@@ -22,7 +22,8 @@ const MD84 =
 const MD85 =
   '(Değişik: 23/7/1995-4121/10 md.)\nMeclis Genel Kurulu kararının alındığı tarihten başlayarak yedi gün içerisinde ilgili milletvekili ' +
   'Anayasa Mahkemesine başvurabilir. Anayasa Mahkemesi, iptal istemini onbeş gün içerisinde kesin karara bağlar.';
-const MD79 = 'Yüksek Seçim Kurulu yedi asıl ve dört yedek üyeden oluşur. Üyelerin altısı Yargıtay, beşi Danıştay Genel Kurullarınca seçilir.';
+const MD79 =
+  'Yüksek Seçim Kurulu yedi asıl ve dört yedek üyeden oluşur. Üyelerin altısı Yargıtay, beşi Danıştay Genel Kurullarınca seçilir.';
 
 const ARTS = new Map<string, ArticleText>([
   ['75', { articleNo: '75', text: MD75 }],
@@ -71,7 +72,9 @@ describe('sayı çıkarımı', () => {
     expect(extractNumbers('Sayılarla md 12-14')).toEqual([]);
   });
   it('yüzde ve süre sayıları alınır', () => {
-    expect(extractNumbers('yüzde 5 boşalma, 30 ay, 3 ay içinde').sort((a, b) => a - b)).toEqual([3, 5, 30]);
+    expect(extractNumbers('yüzde 5 boşalma, 30 ay, 3 ay içinde').sort((a, b) => a - b)).toEqual([
+      3, 5, 30,
+    ]);
   });
 });
 
@@ -103,13 +106,21 @@ describe('kart doğrulama', () => {
   });
 
   it('metinde olmayan, türetilmemiş sayı düşer (7 gün → 10 gün)', () => {
-    const v = validateBlock({ type: 'rule', title: 'İptal', body: '**10 gün** içinde başvurulur.', articleRefs: ['85'] }, 0, ARTS);
+    const v = validateBlock(
+      { type: 'rule', title: 'İptal', body: '**10 gün** içinde başvurulur.', articleRefs: ['85'] },
+      0,
+      ARTS,
+    );
     expect(v.ok).toBe(false);
     expect(v.issues[0]).toContain('10 referans metinlerinde yok');
   });
 
   it('yanlış formül düşer', () => {
-    const v = validateBlock({ ...kural, derivedNumbers: [{ value: 301, expr: 'floor(600 / 2) + 2', refs: ['75'] }] }, 0, ARTS);
+    const v = validateBlock(
+      { ...kural, derivedNumbers: [{ value: 301, expr: 'floor(600 / 2) + 2', refs: ['75'] }] },
+      0,
+      ARTS,
+    );
     expect(v.ok).toBe(false);
     expect(v.issues[0]).toContain('302 ≠ 301');
   });
@@ -134,7 +145,11 @@ describe('kart doğrulama', () => {
   });
 
   it('formül işleneni referans metinlerinde yoksa düşer', () => {
-    const v = validateBlock({ ...kural, derivedNumbers: [{ value: 301, expr: 'floor(600 / 2) + 1', refs: ['84'] }] }, 0, ARTS);
+    const v = validateBlock(
+      { ...kural, derivedNumbers: [{ value: 301, expr: 'floor(600 / 2) + 1', refs: ['84'] }] },
+      0,
+      ARTS,
+    );
     expect(v.ok).toBe(false);
     expect(v.issues[0]).toContain('işleneni metinde yok: 600');
   });
@@ -155,8 +170,12 @@ describe('kart doğrulama', () => {
   });
 
   it('referanssız kart ve bilinmeyen madde düşer', () => {
-    expect(validateBlock({ type: 'concept', body: 'x', articleRefs: [] }, 0, ARTS).issues).toEqual(['articleRefs boş']);
-    expect(validateBlock({ type: 'concept', body: 'x', articleRefs: ['999'] }, 0, ARTS).issues[0]).toContain('madde yok: 999');
+    expect(validateBlock({ type: 'concept', body: 'x', articleRefs: [] }, 0, ARTS).issues).toEqual([
+      'articleRefs boş',
+    ]);
+    expect(
+      validateBlock({ type: 'concept', body: 'x', articleRefs: ['999'] }, 0, ARTS).issues[0],
+    ).toContain('madde yok: 999');
   });
 
   it('satır sayıları KENDİ referanslarında aranır', () => {
@@ -176,8 +195,13 @@ describe('kart doğrulama', () => {
   });
 
   it('exam_stats/bridge kartları sayı kontrolü dışında ama referansları gerçek olmalı', () => {
-    expect(validateBlock({ type: 'exam_stats', rows: [], articleRefs: ['75'], generated: true }, 0, ARTS).ok).toBe(true);
-    expect(validateBlock({ type: 'bridge', articleRefs: ['1'], generated: true }, 0, ARTS).ok).toBe(false);
+    expect(
+      validateBlock({ type: 'exam_stats', rows: [], articleRefs: ['75'], generated: true }, 0, ARTS)
+        .ok,
+    ).toBe(true);
+    expect(validateBlock({ type: 'bridge', articleRefs: ['1'], generated: true }, 0, ARTS).ok).toBe(
+      false,
+    );
   });
 });
 
@@ -209,8 +233,16 @@ describe('ünite: betik üretimi kartlar veriden dolar', () => {
     const stats = unit.blocks[1];
     expect(stats.generated).toBe(true);
     expect(stats.articleRefs).toEqual(['75']);
-    expect(stats.rows?.[0]).toEqual({ label: 'Bu ünitenin maddelerinden yayındaki soru', value: '1', refs: ['75'] });
-    expect(stats.rows?.some((r) => r.label === 'Resmî sınavlarda' && String(r.value).includes('PAEM 10'))).toBe(true);
+    expect(stats.rows?.[0]).toEqual({
+      label: 'Bu ünitenin maddelerinden yayındaki soru',
+      value: '1',
+      refs: ['75'],
+    });
+    expect(
+      stats.rows?.some(
+        (r) => r.label === 'Resmî sınavlarda' && String(r.value).includes('PAEM 10'),
+      ),
+    ).toBe(true);
     expect(unit.blocks[2].rows?.[0].value).toBe('md 75–86, 1 soru');
     expect(validateUnit(unit, ARTS).ok).toBe(true);
   });

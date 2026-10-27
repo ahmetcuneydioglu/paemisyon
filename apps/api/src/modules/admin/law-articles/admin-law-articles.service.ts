@@ -372,8 +372,17 @@ export class AdminLawArticlesService {
     if (lawArticleIds.length === 0) return;
     await this.prisma.summaryBlock.updateMany({
       // Betik üretimi kartlar (istatistik/köprü) madde iddiası taşımaz; eskimez, "istatistikleri yenile" ile dolar.
-      where: { articleRefs: { some: { lawArticleId: { in: lawArticleIds } } }, staleSince: null, generated: false },
+      where: {
+        articleRefs: { some: { lawArticleId: { in: lawArticleIds } } },
+        staleSince: null,
+        generated: false,
+      },
       data: { staleSince: new Date() },
+    });
+    // Doc 54: maddenin özeti de eskir ve yayından önce yeniden incelenir.
+    await this.prisma.articleSummary.updateMany({
+      where: { lawArticleId: { in: lawArticleIds }, staleSince: null },
+      data: { staleSince: new Date(), verificationStatus: 'needs_refresh' },
     });
   }
 

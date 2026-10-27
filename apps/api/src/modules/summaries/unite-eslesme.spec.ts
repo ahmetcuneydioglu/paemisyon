@@ -49,6 +49,8 @@ describe('ünite sayımı (konu ilerlemesiyle aynı kural)', () => {
     expect(t.size).toBe(2);
   });
   it('ünite yoksa boş döner', () => {
-    expect(tallyByUnit([{ topicId: 'anayasa', articleNo: '76', isCorrect: true }], []).size).toBe(0);
+    expect(tallyByUnit([{ topicId: 'anayasa', articleNo: '76', isCorrect: true }], []).size).toBe(
+      0,
+    );
   });
 });

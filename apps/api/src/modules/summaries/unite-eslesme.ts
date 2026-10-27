@@ -34,7 +34,11 @@ export function articleNumber(articleNo: string | null | undefined): number | nu
 }
 
 /** Konunun üniteleri içinde maddeyi kapsayan ilk ünite (aralıklar örtüşmez; örtüşürse sıralı ilk kazanır). */
-export function unitOfArticle(units: readonly UnitRange[], topicId: string, articleNo: string | null): UnitRange | null {
+export function unitOfArticle(
+  units: readonly UnitRange[],
+  topicId: string,
+  articleNo: string | null,
+): UnitRange | null {
   const n = articleNumber(articleNo);
   if (n == null) return null;
   for (const u of units) {
@@ -48,7 +52,10 @@ export function unitOfArticle(units: readonly UnitRange[], topicId: string, arti
 }
 
 /** Cevapları ünitelere böler; ünitesi olmayan cevap sayılmaz. Konu ilerlemesiyle aynı sayım (boş hariç). */
-export function tallyByUnit(answers: readonly AnsweredQuestion[], units: readonly UnitRange[]): Map<string, UnitTally> {
+export function tallyByUnit(
+  answers: readonly AnsweredQuestion[],
+  units: readonly UnitRange[],
+): Map<string, UnitTally> {
   const out = new Map<string, UnitTally>();
   if (units.length === 0) return out;
   for (const a of answers) {

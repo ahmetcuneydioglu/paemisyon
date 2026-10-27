@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { SectionHeader } from "@/components/ui/section-header";
+import { ArticleSummaryCard } from "@/components/ozet/article-summary";
 import { cn } from "@/lib/cn";
 
 type Params = Promise<{ slug: string; no: string }>;
@@ -91,6 +92,15 @@ export default async function MaddePage({ params }: { params: Params }) {
           </>
         }
       />
+
+      {/* Madde özeti (Doc 54) — kısa biçim; ayrıntı girişli çalışma alanında */}
+      {a.summary && (
+        <ArticleSummaryCard
+          summary={a.summary}
+          variant="compact"
+          detailHref={`/kanun/${a.lawSlug}/madde/${a.slug}`}
+        />
+      )}
 
       {/* Sınav geçmişi — hangi sınavda kaç kez */}
       {a.sources.length > 0 && (

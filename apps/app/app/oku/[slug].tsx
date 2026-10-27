@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FlatList, Pressable, Share, TextInput, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AppText, Button, IconButton, ListRow, Notice, Sheet, Skeleton } from "@/components/ui";
+import { ArticleSummaryDisclosure } from "@/components/domain/article-summary";
 import { useArticleAnnotations, useArticleBookmarks, useLawRead, useSaveArticleNote, useSaveReadingProgress, useToggleArticleBookmark, type LawRead } from "@/features/mevzuat/queries";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -169,6 +170,7 @@ export default function OkuScreen() {
                 <AppText variant="body" selectable style={bodyStyle}>
                   {a.text}
                 </AppText>
+                {a.summary ? <ArticleSummaryDisclosure summary={a.summary} /> : null}
                 {note ? (
                   <Pressable accessibilityRole="button" onPress={() => openNote(a)} style={{ backgroundColor: colors.accentSoft, borderRadius: radius.control, padding: space.s3, gap: 2 }}>
                     <AppText variant="label" tone="accentInk">

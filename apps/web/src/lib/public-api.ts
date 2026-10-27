@@ -1,4 +1,5 @@
 import { config } from "./config";
+import type { PublicArticleSummary, PublicArticleSummaryBrief } from "@/lib/ozet";
 
 /**
  * Public (auth'suz) API çağrısı — SEO katmanı (Doc 23). ISR ile önbelleklenir:
@@ -230,6 +231,8 @@ export interface MevzuatReading {
     text: string;
     sectionId: string | null;
     questionCount: number;
+    /** Madde özeti — kısa biçim (Doc 54); yalnız yayındaysa. */
+    summary: PublicArticleSummaryBrief | null;
   }[];
 }
 
@@ -310,6 +313,8 @@ export interface LawArticleDetail {
     effectiveInfo: string | null;
     verifiedAt: string | null;
   } | null;
+  /** Madde özeti (Doc 54) — yalnız yayındaysa; resmî metnin altında gösterilir. */
+  summary: PublicArticleSummary | null;
   exams: ExamContext[];
   sources: { source: string; count: number }[];
   previews: string[];

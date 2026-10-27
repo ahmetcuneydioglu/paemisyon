@@ -18,7 +18,13 @@ import {
 
 type Db = Pick<
   PrismaClient,
-  'legislation' | 'lawArticle' | 'questionArticle' | 'lawArticleVersion' | 'summaryUnit' | 'topic' | '$transaction'
+  | 'legislation'
+  | 'lawArticle'
+  | 'questionArticle'
+  | 'lawArticleVersion'
+  | 'summaryUnit'
+  | 'topic'
+  | '$transaction'
 >;
 
 export interface ImportResult {
@@ -45,7 +51,8 @@ export async function loadArticleMap(db: Db, legislationId: string) {
     select: { id: true, articleNo: true, title: true, text: true },
   });
   const byNo = new Map<string, ArticleText & { id: string; title: string | null }>();
-  for (const a of arts) byNo.set(a.articleNo, { articleNo: a.articleNo, text: a.text, id: a.id, title: a.title });
+  for (const a of arts)
+    byNo.set(a.articleNo, { articleNo: a.articleNo, text: a.text, id: a.id, title: a.title });
   return byNo;
 }
 
@@ -57,11 +64,17 @@ export async function collectExamStats(
 ): Promise<ExamStatsInput> {
   const ids = articleNos.map((n) => byNo.get(n)?.id).filter((x): x is string => Boolean(x));
   const rows = await db.questionArticle.findMany({
-    where: { lawArticleId: { in: ids }, question: { deletedAt: null, currentVersion: { status: 'published' } } },
+    where: {
+      lawArticleId: { in: ids },
+      question: { deletedAt: null, currentVersion: { status: 'published' } },
+    },
     select: {
       lawArticleId: true,
       question: {
-        select: { id: true, pastExams: { select: { pastExam: { select: { name: true, kind: true } } } } },
+        select: {
+          id: true,
+          pastExams: { select: { pastExam: { select: { name: true, kind: true } } } },
+        },
       },
     },
   });
@@ -106,7 +119,9 @@ export async function importUnit(
 ): Promise<ImportResult> {
   const u = data.unit;
   if (!u?.slug || !u.legislationSlug || !u.topicId || !u.title || !u.sourceLabel) {
-    throw new SummaryImportError('unit.slug, legislationSlug, topicId, title ve sourceLabel zorunlu.');
+    throw new SummaryImportError(
+      'unit.slug, legislationSlug, topicId, title ve sourceLabel zorunlu.',
+    );
   }
   if (!/^AI özeti/.test(u.sourceLabel)) {
     throw new SummaryImportError('sourceLabel "AI özeti" ön ekiyle başlamalı (Doc 53 karar 2).');
@@ -119,7 +134,10 @@ export async function importUnit(
     select: { id: true },
   });
   if (!leg) throw new SummaryImportError(`Mevzuat bulunamadı: ${u.legislationSlug}`);
-  const topic = await db.topic.findFirst({ where: { id: u.topicId, deletedAt: null }, select: { id: true } });
+  const topic = await db.topic.findFirst({
+    where: { id: u.topicId, deletedAt: null },
+    select: { id: true },
+  });
   if (!topic) throw new SummaryImportError(`Konu bulunamadı: ${u.topicId}`);
 
   const byNo = await loadArticleMap(db, leg.id);
@@ -129,7 +147,10 @@ export async function importUnit(
 
   const validation = validateUnit(data, byNo);
   if (!validation.ok) {
-    throw new SummaryImportError(`Doğrulama geçmedi: ${validation.fails} kusur. Ünite yazılmadı.`, validation);
+    throw new SummaryImportError(
+      `Doğrulama geçmedi: ${validation.fails} kusur. Ünite yazılmadı.`,
+      validation,
+    );
   }
 
   const allRefIds = [...new Set(data.blocks.flatMap((b) => b.articleRefs))]
@@ -137,9 +158,14 @@ export async function importUnit(
     .filter((x): x is string => Boolean(x));
   const versions = await latestVersionNos(db, allRefIds);
 
-  const existing = await db.summaryUnit.findUnique({ where: { slug: u.slug }, select: { id: true, version: true, status: true } });
+  const existing = await db.summaryUnit.findUnique({
+    where: { slug: u.slug },
+    select: { id: true, version: true, status: true },
+  });
   if (existing && !opts.replaceExisting) {
-    throw new SummaryImportError(`Bu slug zaten var: ${u.slug}. Üzerine yazmak için replaceExisting.`);
+    throw new SummaryImportError(
+      `Bu slug zaten var: ${u.slug}. Üzerine yazmak için replaceExisting.`,
+    );
   }
 
   const unitData = {
@@ -171,25 +197,46 @@ export async function importUnit(
       create: b.articleRefs
         .map((n) => byNo.get(n)?.id)
         .filter((x): x is string => Boolean(x))
-        .map((lawArticleId) => ({ lawArticleId, articleVersionNo: versions.get(lawArticleId) ?? null })),
+        .map((lawArticleId) => ({
+          lawArticleId,
+          articleVersionNo: versions.get(lawArticleId) ?? null,
+        })),
     },
   }));
 
   // Uzak havuz (Supabase pooler) üzerinde 22 kart + referans yazımı 5 sn'lik varsayılanı aşabiliyor.
-  const unitId = await db.$transaction(async (tx) => {
-    if (existing) {
-      // Yeniden içe aktarma: eski kartlar silinir (cascade), sürüm artar, durum incelemeye döner.
-      await tx.summaryBlock.deleteMany({ where: { unitId: existing.id } });
-      const row = await tx.summaryUnit.update({
-        where: { id: existing.id },
-        data: { ...unitData, version: existing.version + 1, publishedAt: null, deletedAt: null, blocks: { create: blocksData } },
+  const unitId = await db.$transaction(
+    async (tx) => {
+      if (existing) {
+        // Yeniden içe aktarma: eski kartlar silinir (cascade), sürüm artar, durum incelemeye döner.
+        await tx.summaryBlock.deleteMany({ where: { unitId: existing.id } });
+        const row = await tx.summaryUnit.update({
+          where: { id: existing.id },
+          data: {
+            ...unitData,
+            version: existing.version + 1,
+            publishedAt: null,
+            deletedAt: null,
+            blocks: { create: blocksData },
+          },
+          select: { id: true },
+        });
+        return row.id;
+      }
+      const row = await tx.summaryUnit.create({
+        data: { ...unitData, blocks: { create: blocksData } },
         select: { id: true },
       });
       return row.id;
-    }
-    const row = await tx.summaryUnit.create({ data: { ...unitData, blocks: { create: blocksData } }, select: { id: true } });
-    return row.id;
-  }, { timeout: 60_000, maxWait: 10_000 });
+    },
+    { timeout: 60_000, maxWait: 10_000 },
+  );
 
-  return { unitId, slug: u.slug, blocks: data.blocks.length, totalQuestions: stats.totalQuestions, validation };
+  return {
+    unitId,
+    slug: u.slug,
+    blocks: data.blocks.length,
+    totalQuestions: stats.totalQuestions,
+    validation,
+  };
 }

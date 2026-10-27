@@ -212,3 +212,36 @@ export function unitProgressPct(u: Pick<SummaryUnitListItem, "blockCount" | "pro
   if (u.blockCount <= 0) return 0;
   return Math.min(99, Math.round(((u.progress.lastBlockIndex + 1) / u.blockCount) * 100));
 }
+
+// ── Madde özeti (Doc 54): madde düzeyi, 1:1, resmî metnin ALTINDA ──
+export interface ArticleSummaryValue {
+  label: string;
+  value: string;
+  /** Fıkra/bent atfı: "f.2", "f.7-c" */
+  ref?: string;
+}
+
+export interface PublicArticleSummaryBrief {
+  repealed: boolean;
+  title: string;
+  shortSummary: string;
+  keyPoints: string[];
+  timeLimits: ArticleSummaryValue[];
+  numericalValues: ArticleSummaryValue[];
+  examReminders: string[];
+}
+
+export interface PublicArticleSummary extends PublicArticleSummaryBrief {
+  detailed: string | null;
+  conditions: string[];
+  exceptions: string[];
+  authorityAndLimits: { authority: string; limit: string; ref?: string }[];
+  relatedLegislation: { law: string; article: string | null; note?: string; verified: boolean }[];
+  /** Mevzuatın resmî kaynakta kontrol edildiği gün (ISO). */
+  verifiedAt: string | null;
+}
+
+/** "2026-10-28" → "28 Eki 2026" */
+export function formatIsoDay(iso: string): string {
+  return new Date(iso).toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" });
+}
