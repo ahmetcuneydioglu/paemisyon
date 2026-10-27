@@ -41,7 +41,7 @@ kaba kontrolü; `keyPoints` boş olamaz.
 ## Yüzeyler
 
 - Web `components/ozet/article-summary.tsx`: `ArticleSummaryCard` (`variant="full"` → girişli
-  `ArticleWorkspace`, resmî metnin ALTINDA; `variant="compact"` → anon madde sayfası: başlık, kısa özet,
+  `ArticleWorkspace`, resmî metnin ALTINDA; 28 Eki kararı: açılışta kısa özet + temel noktalar + "sınavda dikkat", ayrıntılı açıklama/şartlar/yetki/süre-sayı/istisna/ilgili mevzuat "Ayrıntıyı aç" altında katlı — geri bildirime göre düzenlenecek; `variant="compact"` → anon madde sayfası: başlık, kısa özet,
   temel noktalar, "Ayrıntılı özet" bağlantısı), `ArticleSummaryDisclosure` (native `<details>`; site okuyucu,
   `LawReader`, `ArticlePeek` penceresi). Her yüzeyde "Özet; resmî metin değildir · mevzuat kontrolü <tarih>".
 - Expo `components/domain/article-summary.tsx`: `ArticleSummaryDisclosure` (katlanır; `oku/[slug]` madde
