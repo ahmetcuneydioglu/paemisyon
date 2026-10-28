@@ -2,9 +2,10 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { Bookmark, ExternalLink, NotebookPen, Search } from "lucide-react-native";
 import { useMemo, useState } from "react";
 import { FlatList, Linking, Pressable, TextInput, View } from "react-native";
-import { lawDisplayName } from "@/components/domain";
-import { AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton } from "@/components/ui";
+import { lawDisplayName, SummaryUnitRow } from "@/components/domain";
+import { AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton , SectionHeader } from "@/components/ui";
 import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, useLegislation, useMevzuatMerkezi } from "@/features/mevzuat/queries";
+import { useTopicUnits } from "@/features/summaries/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 type Filter = "all" | "saved" | "noted";
@@ -25,6 +26,8 @@ export default function MevzuatKanunScreen() {
   const annotations = useArticleAnnotations(slug);
   // Metin okuyucuyla aynı önbellek: başlıksız maddede yayındaki özet başlığı, o da yoksa metnin ilk cümlesi gösterilir.
   const read = useLawRead(slug);
+  // Konu özetleri (Doc 53): kanunun konusuna bağlı yayındaki üniteler; okuyucuya giriş kapısı burada da olsun.
+  const units = useTopicUnits(detail.data?.topicId ?? null);
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
 
@@ -131,6 +134,19 @@ export default function MevzuatKanunScreen() {
                 </View>
               </View>
 
+              {units.data && units.data.length > 0 ? (
+                <View style={{ gap: space.s2 }}>
+                  <SectionHeader title={`Konu özetleri · ${units.data.length} ünite`} />
+                  <AppText variant="bodySm" tone="soft">
+                    Kanunu baştan sona okumak istemeyen için madde aralıklarına göre kısa üniteler; her kart maddeye bağlıdır.
+                  </AppText>
+                  {units.data.map((u) => (
+                    <SummaryUnitRow key={u.slug} unit={u} onPress={() => router.push({ pathname: "/ozet/[slug]", params: { slug: u.slug, title: u.title.split(" — ")[0] } })} />
+                  ))}
+                </View>
+              ) : null}
+
+              <SectionHeader title="Maddeler" />
               <View style={{ flexDirection: "row", alignItems: "center", gap: space.s2, backgroundColor: colors.surface, borderRadius: radius.control, borderWidth: 1, borderColor: colors.line, paddingHorizontal: space.s3, minHeight: 48 }}>
                 <Search color={colors.inkSoft} size={18} strokeWidth={1.75} />
                 <TextInput value={q} onChangeText={setQ} placeholder="Madde no ya da başlık" placeholderTextColor={colors.inkSubtle} autoCorrect={false} accessibilityLabel="İçindekilerde ara" style={[t.body, { flex: 1, color: colors.ink, paddingVertical: 8 }]} />
