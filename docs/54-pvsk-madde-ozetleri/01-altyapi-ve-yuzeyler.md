@@ -80,3 +80,9 @@ Admin paneli (kapsama, kanun listesi, md 4/A inceleme, doğrulama satırları, y
   tek/toplu yayın sonucu `web`/`webOk` alanlarıyla gelir. Doğrulama: admin → Madde Özetleri → PVSK →
   "Web önbelleğini tazele" yeşil; girişsiz `/kanun/…/madde/5`, `madde/13`, `madde/ek-6` sayfalarında
   "Madde özeti" kartı görünür.
+- **Üretim ayarı (28 Eki 2026, çözüldü):** Firewall Bypass kuralı (`/api/revalidate` + `x-revalidate-secret` exists)
+  eklendi; 429 bitti. Ardından 401 görüldü: Railway'de `WEB_REVALIDATE_SECRET` Vercel'deki `REVALIDATE_SECRET` ile
+  aynı değere çekildi ve `WEB_BASE_URL=https://www.paemisyon.com` eklendi (apex 308 ile www'ye yönlendiriyor).
+  Railway'de değişken kaydı "Apply changes" ile dağıtılmadan uygulanmaz. Elle test:
+  `curl -i -X POST https://www.paemisyon.com/api/revalidate -H 'content-type: application/json' -H 'x-revalidate-secret: …' -d '{"paths":["/kanun/…/oku"]}'`
+  → 200 `{"revalidated":[…]}`. Admin "Web önbelleğini tazele" yeşil.
