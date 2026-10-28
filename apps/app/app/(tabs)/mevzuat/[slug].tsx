@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { FlatList, Linking, Pressable, TextInput, View } from "react-native";
 import { lawDisplayName } from "@/components/domain";
 import { AppText, Badge, Button, Chip, Notice, ProgressBar, Skeleton } from "@/components/ui";
-import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLegislation, useMevzuatMerkezi } from "@/features/mevzuat/queries";
+import { TYPE_LABEL, useArticleAnnotations, useArticleBookmarks, useLawRead, useLegislation, useMevzuatMerkezi } from "@/features/mevzuat/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 type Filter = "all" | "saved" | "noted";
@@ -23,6 +23,8 @@ export default function MevzuatKanunScreen() {
   const merkez = useMevzuatMerkezi();
   const bookmarks = useArticleBookmarks();
   const annotations = useArticleAnnotations(slug);
+  // Metin okuyucuyla aynı önbellek: başlıksız maddede yayındaki özet başlığı, o da yoksa metnin ilk cümlesi gösterilir.
+  const read = useLawRead(slug);
   const [filter, setFilter] = useState<Filter>("all");
   const [q, setQ] = useState("");
 
@@ -31,15 +33,21 @@ export default function MevzuatKanunScreen() {
   const saved = useMemo(() => new Set((bookmarks.data ?? []).filter((b) => b.lawSlug === slug).map((b) => b.no)), [bookmarks.data, slug]);
   const noted = useMemo(() => new Set((annotations.data?.notes ?? []).map((n) => n.no)), [annotations.data]);
   const sections = useMemo(() => new Map((d?.sections ?? []).map((s) => [s.id, s.heading])), [d]);
+  const fallbackTitles = useMemo(
+    () => new Map((read.data?.articles ?? []).map((a) => [a.no, a.title ?? a.summary?.title ?? firstSentence(a.text)])),
+    [read.data],
+  );
+  const titleOf = (a: { no: string; title: string | null }) => a.title ?? fallbackTitles.get(a.no) ?? null;
   const f = q.trim().toLocaleLowerCase("tr-TR");
   const toc = useMemo(
     () =>
       (d?.toc ?? []).filter((a) => {
         if (filter === "saved" && !saved.has(a.no)) return false;
         if (filter === "noted" && !noted.has(a.no)) return false;
-        return !f || a.no.toLocaleLowerCase("tr-TR").includes(f) || (a.title ?? "").toLocaleLowerCase("tr-TR").includes(f);
+        return !f || a.no.toLocaleLowerCase("tr-TR").includes(f) || (titleOf(a) ?? "").toLocaleLowerCase("tr-TR").includes(f);
       }),
-    [d, filter, saved, noted, f],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [d, filter, saved, noted, f, fallbackTitles],
   );
   const title = p.name ?? (d ? (d.shortName ?? d.name) : "Kanun");
   const resumeNo = law?.lastRead?.no ?? null;
@@ -152,7 +160,7 @@ export default function MevzuatKanunScreen() {
                 ) : null}
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel={`Madde ${a.no}${a.title ? `, ${a.title}` : ""}${current ? ", kaldığın yer" : ""}`}
+                  accessibilityLabel={`Madde ${a.no}${titleOf(a) ? `, ${titleOf(a)}` : ""}${current ? ", kaldığın yer" : ""}`}
                   onPress={() => openReader(a.no)}
                   style={({ pressed }) => ({
                     flexDirection: "row",
@@ -171,8 +179,8 @@ export default function MevzuatKanunScreen() {
                   <AppText variant="label" tone={current ? "accentInk" : "subtle"} style={{ minWidth: 52 }}>
                     {`md ${a.no}`}
                   </AppText>
-                  <AppText variant="body" tone="ink" numberOfLines={2} style={{ flex: 1 }}>
-                    {a.title ?? "(başlıksız)"}
+                  <AppText variant="body" tone={a.title ? "ink" : "soft"} numberOfLines={2} style={{ flex: 1 }}>
+                    {titleOf(a) ?? `Madde ${a.no}`}
                   </AppText>
                   {saved.has(a.no) ? <Bookmark size={14} color={colors.accent} /> : null}
                   {noted.has(a.no) ? <NotebookPen size={14} color={colors.inkSubtle} /> : null}
@@ -199,4 +207,12 @@ export default function MevzuatKanunScreen() {
       ) : null}
     </>
   );
+}
+
+/** Başlıksız madde için metnin ilk cümlesi (değişiklik şerhi atlanır), en çok 90 karakter. */
+function firstSentence(text: string): string | null {
+  const body = text.replace(/^\s*\((?:[^()]*)\)\s*/g, "").trim();
+  if (!body) return null;
+  const sentence = body.split(/(?<=[.;:])\s+|\n/)[0] ?? body;
+  return sentence.length > 90 ? `${sentence.slice(0, 88).replace(/\s+\S*$/, "")}…` : sentence;
 }
