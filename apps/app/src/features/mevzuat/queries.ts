@@ -93,7 +93,33 @@ export interface ArticleAnnotations {
   notes: { no: string; text: string }[];
 }
 
+/** Mevzuat Merkezi (/me/mevzuat-merkezi): sınav grupları + tüm mevzuat, kanun başına kaldığın yer ve ilerleme. */
+export interface MerkezLaw {
+  slug: string;
+  type: LegislationType;
+  number: string | null;
+  name: string;
+  shortName: string | null;
+  topicId: string | null;
+  articleCount: number;
+  questionCount: number;
+  lastVerifiedAt: string | null;
+  courseName: string | null;
+  inExam: boolean;
+  /** Konum tabanlı ilerleme: 0 başlanmadı, 1–99 sürüyor, 100 son maddede. */
+  percent: number;
+  lastRead: { no: string; title: string | null; index: number; updatedAt: string } | null;
+}
+
+export interface MevzuatMerkezi {
+  exam: { id: string; name: string } | null;
+  groups: { name: string; laws: MerkezLaw[] }[];
+  all: MerkezLaw[];
+  continue: { slug: string; lawShort: string; lawName: string; no: string; title: string | null; percent: number; articleCount: number; index: number } | null;
+}
+
 export const mevzuatKeys = {
+  merkez: ["me", "mevzuat-merkezi"] as const,
   list: ["mevzuat", "list"] as const,
   search: (q: string) => ["mevzuat", "search", q] as const,
   detail: (slug: string | null) => ["mevzuat", "detail", slug] as const,
@@ -104,6 +130,10 @@ export const mevzuatKeys = {
 };
 
 export const TYPE_LABEL: Record<LegislationType, string> = { kanun: "Kanun", cbk: "CBK", yonetmelik: "Yönetmelik", genelge: "Genelge", yonerge: "Yönerge" };
+
+export function useMevzuatMerkezi() {
+  return useQuery({ queryKey: mevzuatKeys.merkez, queryFn: () => api<MevzuatMerkezi>("/me/mevzuat-merkezi"), staleTime: 60_000 });
+}
 
 export function useMevzuatList() {
   return useQuery({ queryKey: mevzuatKeys.list, queryFn: () => api<{ items: LegislationItem[] }>("/public/mevzuat", { auth: false }), staleTime: 2 * 60_000, select: (d) => d.items });
@@ -160,6 +190,9 @@ export function useSaveReadingProgress() {
   const qc = useQueryClient();
   return useMutation({
     mutationFn: ({ lawSlug, no }: { lawSlug: string; no: string }) => api<{ ok: boolean }>("/me/reading-progress", { method: "POST", body: { lawSlug, no } }),
-    onSuccess: () => void qc.invalidateQueries({ queryKey: mevzuatKeys.progress }),
+    onSuccess: () => {
+      void qc.invalidateQueries({ queryKey: mevzuatKeys.progress });
+      void qc.invalidateQueries({ queryKey: mevzuatKeys.merkez });
+    },
   });
 }

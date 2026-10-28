@@ -6,7 +6,7 @@ test("push route sözlüğü", () => {
   assert.equal(routeToHref("daily-quiz").pathname, "/seans");
   assert.equal(routeToHref("daily-quiz").params?.mode, "daily");
   assert.equal(routeToHref("denemeler").pathname, "/(tabs)/denemeler");
-  assert.equal(routeToHref("leaderboard").pathname, "/(tabs)/performans/liderlik");
+  assert.equal(routeToHref("leaderboard").pathname, "/(tabs)/ben/liderlik");
   const q = routeToHref("question:4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");
   assert.equal(q.pathname, "/seans");
   assert.equal(q.params?.questionId, "4f1a6b2e-1c2d-4e5f-8a9b-0c1d2e3f4a5b");

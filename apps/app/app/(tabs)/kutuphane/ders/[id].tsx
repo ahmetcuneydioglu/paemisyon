@@ -91,7 +91,7 @@ export default function DersOdasiScreen() {
               {d.tools.legislation.slice(0, 3).map((l, i) => (
                 <ListRow key={l.slug} title={`${l.name} metni`} subtitle={`${l.articleCount} madde`} leading={<Ikon icon={BookOpen} />} onPress={() => router.push({ pathname: "/oku/[slug]", params: { slug: l.slug } })} divider={i < Math.min(3, d.tools.legislation.length) - 1 || d.tools.legislation.length > 3} />
               ))}
-              {d.tools.legislation.length > 3 ? <ListRow title={`${d.tools.legislation.length - 3} mevzuat daha`} subtitle="Mevzuat kütüphanesinde" leading={<Ikon icon={BookOpen} />} onPress={() => router.push("/(tabs)/kutuphane/mevzuat")} divider={false} /> : null}
+              {d.tools.legislation.length > 3 ? <ListRow title={`${d.tools.legislation.length - 3} mevzuat daha`} subtitle="Mevzuat kütüphanesinde" leading={<Ikon icon={BookOpen} />} onPress={() => router.push("/(tabs)/mevzuat")} divider={false} /> : null}
             </View>
           </>
         ) : null}

@@ -39,7 +39,7 @@ export default function KutuphaneScreen() {
 
       {/* Mevzuat: okumaya kaldığın yerden devam; arama her zaman bir dokunuş uzakta. */}
       <View style={{ gap: space.s2 }}>
-        <SectionHeader title="Mevzuat" action="Tümü" onAction={() => router.push("/(tabs)/kutuphane/mevzuat")} />
+        <SectionHeader title="Mevzuat" action="Tümü" onAction={() => router.push("/(tabs)/mevzuat")} />
         <Card style={{ paddingVertical: 0 }}>
           {progress.isPending ? (
             <View style={{ paddingVertical: space.s3 }}>
@@ -48,9 +48,9 @@ export default function KutuphaneScreen() {
           ) : last ? (
             <LegislationRow law={last.lawShort} article={last.no} meta={`Kaldığın yer · ${last.lawName}`} onPress={() => router.push({ pathname: "/oku/[slug]", params: { slug: last.lawSlug, madde: last.no } })} />
           ) : (
-            <ListRow title="Henüz okumaya başlamadın" subtitle="Bir kanun seç; kaldığın yer burada görünür." leading={<BookOpen color={colors.inkSoft} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/kutuphane/mevzuat")} />
+            <ListRow title="Henüz okumaya başlamadın" subtitle="Bir kanun seç; kaldığın yer burada görünür." leading={<BookOpen color={colors.inkSoft} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/mevzuat")} />
           )}
-          <ListRow title="Mevzuatta ara" subtitle="Madde numarası, başlık ya da metin" leading={<Search color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push({ pathname: "/(tabs)/kutuphane/mevzuat", params: { ara: "1" } })} />
+          <ListRow title="Mevzuatta ara" subtitle="Madde numarası, başlık ya da metin" leading={<Search color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/mevzuat/ara")} />
         </Card>
       </View>
 

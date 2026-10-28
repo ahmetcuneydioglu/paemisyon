@@ -28,14 +28,7 @@ export default function PerformansScreen() {
   const maxNet = Math.max(1, ...nets.map((n) => n.score ?? 0));
 
   return (
-    <Screen>
-      <View style={{ gap: space.s1 }}>
-        <AppText variant="bodySm" tone="soft">
-          Nasıl gidiyorum?
-        </AppText>
-        <AppText variant="title">Performans</AppText>
-      </View>
-
+    <Screen inset="none">
       {summary.isPending ? (
         <Skeleton height={120} radiusKey="card" />
       ) : summary.isError ? (
@@ -89,7 +82,7 @@ export default function PerformansScreen() {
 
       {/* Deneme net eğrisi: son 8 tamamlanmış canlı deneme. */}
       <View style={{ gap: space.s2 }}>
-        <SectionHeader title="Deneme netlerim" action={nets.length ? "Tümü" : undefined} onAction={() => router.push("/(tabs)/performans/denemelerim")} />
+        <SectionHeader title="Deneme netlerim" action={nets.length ? "Tümü" : undefined} onAction={() => router.push("/(tabs)/ben/denemelerim")} />
         {attempts.isPending ? (
           <Skeleton height={120} radiusKey="card" />
         ) : nets.length === 0 ? (
@@ -119,7 +112,7 @@ export default function PerformansScreen() {
       </View>
 
       <View style={{ gap: space.s2 }}>
-        <SectionHeader title="En zayıf konular" action="Konu haritası" onAction={() => router.push("/(tabs)/performans/konu-haritasi")} />
+        <SectionHeader title="En zayıf konular" action="Konu haritası" onAction={() => router.push("/(tabs)/ben/konu-haritasi")} />
         {topics.isPending ? (
           <Skeleton height={160} radiusKey="card" />
         ) : weakest.length === 0 ? (
@@ -152,8 +145,8 @@ export default function PerformansScreen() {
       </View>
 
       <Card style={{ paddingVertical: 0 }}>
-        <ListRow title="Liderlik" subtitle="Bugün, bu hafta, bu ay, genel" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/performans/liderlik")} />
-        <ListRow title="Konu haritası" subtitle="Ders filtresi ve yalnız zayıflar" leading={<Map color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/performans/konu-haritasi")} />
+        <ListRow title="Liderlik" subtitle="Bugün, bu hafta, bu ay, genel" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/liderlik")} />
+        <ListRow title="Konu haritası" subtitle="Ders filtresi ve yalnız zayıflar" leading={<Map color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/ben/konu-haritasi")} />
       </Card>
       <View style={{ height: radius.card }} />
     </Screen>

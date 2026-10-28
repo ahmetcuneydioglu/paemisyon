@@ -19,6 +19,7 @@ import type { AuthenticatedUser } from '../auth/auth.types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
 import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
 import { UsersService } from './users.service';
+import { MevzuatMerkeziService } from './mevzuat-merkezi.service';
 import { PushService } from '../notifications/push.service';
 import { PushTokenDto } from '../notifications/dto/notifications.dto';
 import { NotificationsService } from '../notifications/notifications.service';
@@ -46,6 +47,7 @@ export class UsersController {
     private readonly push: PushService,
     private readonly plan: PlanService,
     private readonly notifications: NotificationsService,
+    private readonly mevzuatMerkezi: MevzuatMerkeziService,
   ) {}
 
   /** Uygulama açılışı: last_active_at (saatte en çok bir yazım). */
@@ -273,6 +275,12 @@ export class UsersController {
       create: { userId: user.id, legislationId: leg.id, articleNo: body.no.slice(0, 16) },
     });
     return { ok: true };
+  }
+
+  /** Mevzuat Merkezi (Expo Mevzuat sekmesi): sınav grupları, tüm mevzuat, kanun başına ilerleme, devam et. */
+  @Get('mevzuat-merkezi')
+  mevzuatMerkeziGetir(@CurrentUser() user: AuthenticatedUser) {
+    return this.mevzuatMerkezi.merkez(user.id);
   }
 
   /** Son okunanlar + kaldığın yerden devam (ilk satır en güncel). */

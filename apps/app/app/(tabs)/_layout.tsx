@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { BookOpen, ClipboardList, Home, TrendingUp, User } from "lucide-react-native";
+import { BookOpen, ClipboardList, Home, Scale, User } from "lucide-react-native";
 import type { ComponentType } from "react";
 import { StyleSheet, type ColorValue } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -9,8 +9,8 @@ import { fontFamily, size } from "@/theme/tokens";
 type IconProps = { color: string; size?: number; strokeWidth?: number };
 
 /**
- * Anayasal beş sekme (Doc 25 §1; Doc 49 v2 kararı): Bugün · Kütüphane · Denemeler ·
- * Performans · Ben. Odak ekranları (seans, deneme) kök Stack'te açılır ve bu çubuğu görmez.
+ * Anayasal beş sekme (Doc 25 §1; Doc 49 v2 kararı; 28 Eki 2026: Performans → Ben altına, yerine
+ * Mevzuat): Bugün · Kütüphane · Denemeler · Mevzuat · Ben. Odak ekranları (seans, deneme) kök Stack'te açılır ve bu çubuğu görmez.
  * İkonlar Lucide, 24 ızgara, 1.75 kontur (Doc 48 ile aynı set).
  */
 export default function TabsLayout() {
@@ -37,7 +37,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="index" options={tab("Bugün", Home)} />
       <Tabs.Screen name="kutuphane" options={tab("Kütüphane", BookOpen)} />
       <Tabs.Screen name="denemeler" options={tab("Denemeler", ClipboardList)} />
-      <Tabs.Screen name="performans" options={tab("Performans", TrendingUp)} />
+      <Tabs.Screen name="mevzuat" options={tab("Mevzuat", Scale)} />
       <Tabs.Screen name="ben" options={tab("Ben", User)} />
     </Tabs>
   );

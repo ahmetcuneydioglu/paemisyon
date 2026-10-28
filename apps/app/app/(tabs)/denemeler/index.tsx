@@ -81,7 +81,7 @@ export default function DenemelerScreen() {
 
           {haftalik.length > 0 ? (
             <View style={{ gap: space.s2 }}>
-              <SectionHeader title="Haftalık deneme" action="Geçmiş" onAction={() => router.push("/(tabs)/performans/denemelerim")} />
+              <SectionHeader title="Haftalık deneme" action="Geçmiş" onAction={() => router.push("/(tabs)/ben/denemelerim")} />
               {haftalik.map((e) => (
                 <WeeklyExamCard key={e.id} exam={e} now={now} onAction={(a) => act(e, a)} />
               ))}
@@ -125,7 +125,7 @@ export default function DenemelerScreen() {
         </Card>
       </View>
 
-      <Button title="Deneme geçmişin ›" variant="ghost" onPress={() => router.push("/(tabs)/performans/denemelerim")} />
+      <Button title="Deneme geçmişin ›" variant="ghost" onPress={() => router.push("/(tabs)/ben/denemelerim")} />
     </Screen>
   );
 }

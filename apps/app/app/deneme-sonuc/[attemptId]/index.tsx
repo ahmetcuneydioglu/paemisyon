@@ -149,7 +149,7 @@ export default function DenemeSonucScreen() {
             <View style={{ gap: space.s2, paddingTop: space.s2 }}>
               <Button title="Cevapları incele" onPress={() => router.push({ pathname: "/deneme-sonuc/[attemptId]/inceleme", params: { attemptId: d.attemptId } })} />
               {official ? <Button title="Sıralamayı gör" variant="secondary" onPress={() => router.push({ pathname: "/(tabs)/denemeler/siralama/[examId]", params: { examId: d.exam.id, title: d.exam.title } })} /> : null}
-              {practice || d.isArchive ? <Button title="Deneme geçmişi" variant="secondary" onPress={() => router.push("/(tabs)/performans/denemelerim")} /> : null}
+              {practice || d.isArchive ? <Button title="Deneme geçmişi" variant="secondary" onPress={() => router.push("/(tabs)/ben/denemelerim")} /> : null}
               {d.personal ? <Button title="Yeni kişisel deneme" variant="secondary" onPress={() => router.replace("/(tabs)/denemeler/kisisel")} /> : null}
             </View>
             {d.personal ? (

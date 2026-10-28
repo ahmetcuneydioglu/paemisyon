@@ -18,3 +18,4 @@ export * from "./exam";
 export * from "./report-sheet";
 export * from "./summary";
 export * from "./notification-row";
+export * from "./mevzuat";

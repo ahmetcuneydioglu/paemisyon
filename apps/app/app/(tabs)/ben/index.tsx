@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Award, ChevronRight, ClipboardList, Settings, Trophy } from "lucide-react-native";
+import { Award, ChevronRight, ClipboardList, Map, Settings, TrendingUp, Trophy } from "lucide-react-native";
 import { Pressable, View } from "react-native";
 import { AppText, Badge, Button, Card, ListRow, Notice, ProgressBar, Screen, Skeleton, StatTile } from "@/components/ui";
 import { useDashboard } from "@/features/exams/queries";
@@ -106,8 +106,10 @@ export default function BenScreen() {
 
           <Card style={{ paddingVertical: 0 }}>
             <ListRow title="Rozetlerim" subtitle={badges.data ? `${badges.data.earnedCount}/${badges.data.totalCount}` : null} leading={<Award color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/rozetler")} />
-            <ListRow title="Denemelerim" subtitle="Geçmiş sonuçlar" leading={<ClipboardList color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/performans/denemelerim")} />
-            <ListRow title="Liderlik" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/performans/liderlik")} />
+            <ListRow title="Performans" subtitle="Seri, doğruluk, 12 hafta, zayıf konular" leading={<TrendingUp color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/performans")} />
+            <ListRow title="Konu haritası" subtitle="Ders filtresi ve yalnız zayıflar" leading={<Map color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/konu-haritasi")} />
+            <ListRow title="Denemelerim" subtitle="Geçmiş sonuçlar" leading={<ClipboardList color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/denemelerim")} />
+            <ListRow title="Liderlik" leading={<Trophy color={colors.accent} size={20} strokeWidth={1.75} />} onPress={() => router.push("/(tabs)/ben/liderlik")} />
             <ListRow title="Ayarlar" subtitle="Ad, hedef sınav, tarih, günlük hedef, görünüm" leading={<Settings color={colors.accent} size={20} strokeWidth={1.75} />} divider={false} onPress={() => router.push("/(tabs)/ben/ayarlar")} />
           </Card>
 
