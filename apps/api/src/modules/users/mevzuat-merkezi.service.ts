@@ -57,7 +57,7 @@ export class MevzuatMerkeziService {
             orderBy: [{ section: { sortOrder: 'asc' } }, { sortOrder: 'asc' }],
             select: { courseId: true, course: { select: { name: true } } },
           })
-        : Promise.resolve([]),
+        : Promise.resolve([] as { courseId: string; course: { name: string } }[]),
     ]);
     const qByTopic = new Map(questionCounts.map((q) => [q.topicId, q._count._all]));
     const progressByLeg = new Map(progress.map((p) => [p.legislationId, p]));
