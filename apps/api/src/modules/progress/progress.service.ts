@@ -97,7 +97,9 @@ export class ProgressService {
         answered
           .map((a) => {
             const q = soruOf.get(a.questionId);
-            return q ? { topicId: q.topicId, articleNo: q.articleNo, isCorrect: a.isCorrect === true } : null;
+            return q
+              ? { topicId: q.topicId, articleNo: q.articleNo, isCorrect: a.isCorrect === true }
+              : null;
           })
           .filter((x): x is NonNullable<typeof x> => x != null),
         uniteler,

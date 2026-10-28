@@ -76,7 +76,12 @@ describe('CoachService.setFocus', () => {
       course: { findFirst: jest.fn().mockResolvedValue({ id: DERS, name: 'Anayasa Hukuku' }) },
     };
     return {
-      service: new CoachService(prisma as never, {} as never, { ozet: async () => null } as never, { recipeForTopic: async () => null } as never),
+      service: new CoachService(
+        prisma as never,
+        {} as never,
+        { ozet: async () => null } as never,
+        { recipeForTopic: async () => null } as never,
+      ),
       prisma,
     };
   }

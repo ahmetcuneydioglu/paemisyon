@@ -40,7 +40,9 @@ export class JwtAuthGuard implements CanActivate {
       // yalnızca beklenmeyen doğrulama hataları genel 401'e sarılır.
       if (err instanceof HttpException) throw err;
       // Neden günlüğe düşer (token düşmez): JWKS erişimi, issuer/audience, kullanıcı yükleme hatası ayırt edilsin.
-      this.logger.warn(`Token doğrulanamadı: ${err instanceof Error ? `${err.name}: ${err.message}` : String(err)}`);
+      this.logger.warn(
+        `Token doğrulanamadı: ${err instanceof Error ? `${err.name}: ${err.message}` : String(err)}`,
+      );
       throw new UnauthorizedException('Oturum geçersiz veya süresi dolmuş.');
     }
   }
