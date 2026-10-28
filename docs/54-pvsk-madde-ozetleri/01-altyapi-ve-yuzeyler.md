@@ -61,3 +61,22 @@ Admin paneli (kapsama, kanun listesi, md 4/A inceleme, doğrulama satırları, y
 
 - Ek 7 metni eski (7590 s.K.): `mevzuat-madde-tazele.ts … --yaz` kullanıcıda; özeti ondan sonra üretilecek.
 - Deploy (migration + API + web + admin) ve prod'a in_review yükleme → admin incelemesi → yayın.
+
+## Web önbelleği yenilemesi ve Vercel Firewall (28 Eki 2026 eki)
+
+- API, özet yayınlanınca/yayından alınınca `POST https://paemisyon.com/api/revalidate` çağırır
+  (`web-revalidate.ts`, `user-agent: paemisyon-api/revalidate`, `x-revalidate-secret`). Toplu yayın ve
+  "Web önbelleğini tazele" bütün yolları **tek paket** (≤50 yol/istek) gönderir; özet başına ayrı
+  istek atılmaz.
+- Üretimde çağrı Vercel'den **429** aldı (Railway günlüğü: `[WebRevalidate] web yenileme 429`). Günlük
+  artık `x-vercel-mitigated`, `x-vercel-id` ve `retry-after` başlıklarını yazar; `mitigated=challenge`
+  görülürse neden Vercel Firewall'un Bot Protection / Attack Challenge katmanıdır (sunucu isteği tarayıcı
+  challenge'ını geçemez), aksi hâlde özel bir hız sınırı kuralıdır.
+- **Çözüm (Vercel paneli, paemisyon-web → Firewall):** Custom Rule ekle — koşul `Request Path` equals
+  `/api/revalidate` **ve** `Header x-revalidate-secret` exists; action **Bypass**. Bypass, yönetilen kural
+  setlerini (bot koruması, challenge, hız sınırı) bu yol için devre dışı bırakır; uç kendi secret
+  kontrolünü yaptığı için (401) açık kalması güvenlidir.
+- Sonuç artık admin'e döner: tazeleme düğmesi 429'da hata gösterir (eskiden "tazelendi" diyordu);
+  tek/toplu yayın sonucu `web`/`webOk` alanlarıyla gelir. Doğrulama: admin → Madde Özetleri → PVSK →
+  "Web önbelleğini tazele" yeşil; girişsiz `/kanun/…/madde/5`, `madde/13`, `madde/ek-6` sayfalarında
+  "Madde özeti" kartı görünür.

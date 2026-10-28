@@ -18,7 +18,13 @@ import {
   loadLawArticles,
   toSummaryData,
 } from '../../summaries/madde-ozeti-ice-aktar';
-import { articleSummaryPaths, revalidateWebPaths } from '../../summaries/web-revalidate';
+import {
+  articleSummaryPaths,
+  describeWebRevalidate,
+  isWebRevalidateEnabled,
+  revalidateWebPaths,
+  revalidateWebPathsBatched,
+} from '../../summaries/web-revalidate';
 
 export type UpdateArticleSummaryDto = Partial<
   Pick<
@@ -273,7 +279,7 @@ export class AdminArticleSummariesService {
   }
 
   /** Yayın (admin): eskimiş değil, doğrulama geçiyor, mevzuat kontrolü "verified" ya da en azından pending değil değilse uyarı değil engel. */
-  async publish(actor: AuthenticatedUser, id: string) {
+  async publish(actor: AuthenticatedUser, id: string, opts: { revalidate?: boolean } = {}) {
     if (!actor.roles.includes('admin'))
       throw new ForbiddenException('Yayın kararı admin yetkisi ister.');
     const d = await this.detail(id);
@@ -297,8 +303,10 @@ export class AdminArticleSummariesService {
       },
     });
     await this.audit.log(actor, 'article_summary.publish', 'article_summary', id);
-    await revalidateWebPaths(articleSummaryPaths(d.article.lawSlug, d.article.articleNo));
-    return { ok: true };
+    const paths = articleSummaryPaths(d.article.lawSlug, d.article.articleNo);
+    if (opts.revalidate === false) return { ok: true, paths };
+    const web = await revalidateWebPaths(paths);
+    return { ok: true, paths, web: describeWebRevalidate(web), webOk: web.ok };
   }
 
   /**
@@ -310,6 +318,7 @@ export class AdminArticleSummariesService {
       throw new ForbiddenException('Yayın kararı admin yetkisi ister.');
     const published: { id: string; articleNo: string }[] = [];
     const skipped: { id: string; articleNo: string; reason: string }[] = [];
+    const paths: string[] = [];
     for (const id of [...new Set(ids)]) {
       const s = await this.prisma.articleSummary.findUnique({
         where: { id },
@@ -321,7 +330,8 @@ export class AdminArticleSummariesService {
       }
       if (s.status === 'published') continue;
       try {
-        await this.publish(actor, id);
+        const r = await this.publish(actor, id, { revalidate: false });
+        paths.push(...r.paths);
         published.push({ id, articleNo: s.lawArticle.articleNo });
       } catch (e) {
         skipped.push({
@@ -335,7 +345,9 @@ export class AdminArticleSummariesService {
       published: published.map((p) => p.articleNo),
       skipped: skipped.map((p) => `${p.articleNo}: ${p.reason}`),
     });
-    return { published, skipped };
+    // Web önbelleği tek paket halinde: özet başına ayrı istek Vercel'de hız sınırı/challenge tetikler.
+    const web = await revalidateWebPathsBatched(paths);
+    return { published, skipped, web: describeWebRevalidate(web), webOk: web.ok };
   }
 
   /** Kanunun yayındaki bütün madde sayfaları + okuyucu için web önbelleğini tazeler (metin tazeleme ya da toplu yayın sonrası). */
@@ -352,12 +364,15 @@ export class AdminArticleSummariesService {
     const paths = [
       ...new Set(rows.flatMap((r) => articleSummaryPaths(lawSlug, r.lawArticle.articleNo))),
     ];
-    if (!process.env.WEB_REVALIDATE_SECRET)
+    if (!isWebRevalidateEnabled())
       throw new BadRequestException('WEB_REVALIDATE_SECRET tanımlı değil; web yenilemesi kapalı.');
-    for (let i = 0; i < paths.length; i += 50) await revalidateWebPaths(paths.slice(i, i + 50));
+    const web = await revalidateWebPathsBatched(paths);
     await this.audit.log(actor, 'article_summary.revalidate_web', 'legislation', leg.id, {
       paths: paths.length,
+      ok: web.ok,
+      status: web.ok ? 200 : web.status,
     });
+    if (!web.ok) throw new BadRequestException(describeWebRevalidate(web));
     return { ok: true, paths: paths.length };
   }
 
@@ -372,11 +387,11 @@ export class AdminArticleSummariesService {
       },
     });
     await this.audit.log(actor, 'article_summary.unpublish', 'article_summary', id);
-    if (s.lawArticle.legislation)
-      await revalidateWebPaths(
-        articleSummaryPaths(s.lawArticle.legislation.slug, s.lawArticle.articleNo),
-      );
-    return { ok: true };
+    if (!s.lawArticle.legislation) return { ok: true };
+    const web = await revalidateWebPaths(
+      articleSummaryPaths(s.lawArticle.legislation.slug, s.lawArticle.articleNo),
+    );
+    return { ok: true, web: describeWebRevalidate(web), webOk: web.ok };
   }
 
   async remove(actor: AuthenticatedUser, id: string) {

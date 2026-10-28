@@ -13,6 +13,9 @@ const fmt = (iso: string | null) => (iso ? new Date(iso).toLocaleDateString('tr-
 interface PublishManyResult {
   published: { id: string; articleNo: string }[];
   skipped: { id: string; articleNo: string; reason: string }[];
+  /** Web önbelleği yenilemesinin sonucu (tek paket): başarısızsa neden (ör. Vercel Firewall 429). */
+  web: string;
+  webOk: boolean;
 }
 
 /**
@@ -45,7 +48,8 @@ export default function ArticleSummaryLawPage() {
       qc.invalidateQueries({ queryKey: ['admin-article-summaries-laws'] });
       setSelected(new Set());
       const skipped = r.skipped.length ? `\nAtlanan ${r.skipped.length}: ${r.skipped.map((x) => `md ${x.articleNo} (${x.reason.split('\n')[0]})`).join('; ')}` : '';
-      setNotice({ kind: r.published.length ? 'ok' : 'err', text: `Yayınlanan ${r.published.length}: ${r.published.map((x) => `md ${x.articleNo}`).join(', ') || '—'}.${skipped}` });
+      const web = r.published.length && !r.webOk ? `\nWeb: ${r.web}` : '';
+      setNotice({ kind: r.published.length && r.webOk ? 'ok' : 'err', text: `Yayınlanan ${r.published.length}: ${r.published.map((x) => `md ${x.articleNo}`).join(', ') || '—'}.${skipped}${web}` });
     },
     onError: (e: unknown) => setNotice({ kind: 'err', text: e instanceof Error ? e.message : 'Toplu yayın başarısız.' }),
   });

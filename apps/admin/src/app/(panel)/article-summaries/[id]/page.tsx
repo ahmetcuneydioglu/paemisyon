@@ -136,18 +136,20 @@ export default function ArticleSummaryPage() {
     onError: err,
   });
   const publish = useMutation({
-    mutationFn: () => api(`/admin/article-summaries/${id}/publish`, { method: 'POST' }),
-    onSuccess: () => {
+    mutationFn: () => api<{ web: string; webOk: boolean }>(`/admin/article-summaries/${id}/publish`, { method: 'POST' }),
+    onSuccess: (r) => {
       invalidate();
-      ok('Özet yayınlandı — madde sayfasında ve okuyucuda resmî metnin altında.');
+      if (r.webOk) ok('Özet yayınlandı — madde sayfasında ve okuyucuda resmî metnin altında.');
+      else setNotice({ kind: 'err', text: `Özet yayınlandı; ama web önbelleği tazelenemedi. ${r.web}` });
     },
     onError: err,
   });
   const unpublish = useMutation({
-    mutationFn: () => api(`/admin/article-summaries/${id}/unpublish`, { method: 'POST' }),
-    onSuccess: () => {
+    mutationFn: () => api<{ web: string; webOk: boolean }>(`/admin/article-summaries/${id}/unpublish`, { method: 'POST' }),
+    onSuccess: (r) => {
       invalidate();
-      ok('Yayından alındı (incelemede).');
+      if (r.webOk) ok('Yayından alındı (incelemede).');
+      else setNotice({ kind: 'err', text: `Yayından alındı; ama web önbelleği tazelenemedi. ${r.web}` });
     },
     onError: err,
   });
