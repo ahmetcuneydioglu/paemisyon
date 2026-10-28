@@ -85,9 +85,19 @@ export class ExamsService {
     };
   }
 
-  /** Eski istemciler için: takvimli pencere kapanışı / serbestte arşiv tarihi ya da başlangıç+süre. */
-  private legacyEndAt(e: ExamWindow): Date {
-    return examEndAt(e) ?? new Date(e.startAt.getTime() + e.durationMinutes * 60_000);
+  /**
+   * Eski istemciler için: takvimli pencere kapanışı / serbestte arşiv tarihi.
+   * Kapanışı olmayan serbest denemede bugünün sonu (23:59:59 TR) döner: mağazadaki
+   * Flutter kartı `endAt`'ı pencere bitişi sayıp geri sayar. "Başlangıç + süre"
+   * yayından 100 dk sonra geçmişte kalıyor, kart her açılışta "süre doldu" diye
+   * listeyi tazeliyordu (28 Eki 2026). Web ve Expo bu alanı yalnız takvimlide okur.
+   */
+  private legacyEndAt(e: ExamWindow, now = new Date()): Date {
+    const end = examEndAt(e);
+    if (end) return end;
+    const trOffsetMs = 3 * 3_600_000; // Türkiye UTC+3, yaz saati yok
+    const trDayStart = Math.floor((now.getTime() + trOffsetMs) / 86_400_000) * 86_400_000;
+    return new Date(trDayStart + 86_400_000 - 1000 - trOffsetMs);
   }
 
   // ── Liste (public; kullanıcı varsa kendi katılımıyla zenginleşir) ──
