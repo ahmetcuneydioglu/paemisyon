@@ -22,7 +22,7 @@ export class CatalogController {
 
   @Get('courses/:id/topics')
   topics(@Param('id', ParseUUIDPipe) id: string, @CurrentUser() user: AuthenticatedUser) {
-    return this.catalog.getTopics(id, user.id);
+    return this.catalog.getTopics(id, user.id, user.isPremium);
   }
 
   @Get('topics/:id')

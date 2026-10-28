@@ -62,7 +62,13 @@ class CourseItem {
 class TopicItem {
   final String id;
   final String name;
+
+  /// Premium içerik bayrağı (bilgi). Kilit kararı için [locked] kullanılır.
   final bool isPremium;
+
+  /// Kilit — SUNUCUDAN: premium içerik && kullanıcı premium değil. İstemci
+  /// `isPremium`'dan kural türetmez (premium kullanıcı paywall'a düşmesin).
+  final bool locked;
 
   /// Alt konular (Doc 21 ağaç). Eski API'de yok; boş olabilir.
   final List<TopicItem> children;
@@ -79,6 +85,7 @@ class TopicItem {
     required this.id,
     required this.name,
     required this.isPremium,
+    this.locked = false,
     this.children = const [],
     this.mastery,
     this.solvedCount = 0,
@@ -90,6 +97,7 @@ class TopicItem {
         id: j['id'] as String,
         name: j['name'] as String,
         isPremium: j['isPremium'] as bool? ?? false,
+        locked: j['locked'] as bool? ?? false,
         children: (j['children'] as List<dynamic>? ?? const [])
             .map((e) => TopicItem.fromJson(e as Map<String, dynamic>))
             .toList(),

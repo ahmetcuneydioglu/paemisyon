@@ -1,10 +1,10 @@
 import { CatalogService } from './catalog.service';
 
-const KONU = (id: string, name: string) => ({
+const KONU = (id: string, name: string, isPremium = false) => ({
   id,
   name,
   sortOrder: 1,
-  isPremium: false,
+  isPremium,
   children: [] as { id: string; name: string; sortOrder: number; isPremium: boolean }[],
 });
 
@@ -18,7 +18,7 @@ describe('CatalogService.getTopics — zayıf bayrağı sunucuda (Doc 48 D5)', (
             KONU('t1', 'Temel Haklar ve Ödevler'),
             KONU('t2', 'Yürütme'),
             KONU('t3', 'Yargı'),
-            KONU('t4', 'Yasama'),
+            KONU('t4', 'Yasama', true),
           ]),
       },
       userTopicProgress: {
@@ -42,5 +42,19 @@ describe('CatalogService.getTopics — zayıf bayrağı sunucuda (Doc 48 D5)', (
     expect(zayif).toEqual({ t1: true, t2: false, t3: false, t4: false });
     expect(r.topics.find((t) => t.id === 't1')!.mastery).toBe(38);
     expect(r.topics.find((t) => t.id === 't2')!.mastery).toBeNull();
+  });
+
+  it('kilit kararı sunucuda: premium konu yalnız premium olmayan kullanıcıya kilitli', async () => {
+    const serbest = await setup().getTopics('c1', 'u1', false);
+    expect(Object.fromEntries(serbest.topics.map((t) => [t.id, t.locked]))).toEqual({
+      t1: false,
+      t2: false,
+      t3: false,
+      t4: true,
+    });
+    const premium = await setup().getTopics('c1', 'u1', true);
+    expect(premium.topics.every((t) => !t.locked)).toBe(true);
+    // Bayrak bilgi olarak kalır; kural ondan türetilmez.
+    expect(premium.topics.find((t) => t.id === 't4')!.isPremium).toBe(true);
   });
 });

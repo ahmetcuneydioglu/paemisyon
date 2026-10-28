@@ -105,7 +105,11 @@ export class CatalogService {
 
   /// Ders konuları — AĞAÇ (Doc 21) + KİŞİSEL KATMAN (Doc 25 wireframe 05):
   /// konu başına kullanıcının hakimiyeti + ders özeti (öğrenme merkezi).
-  async getTopics(courseId: string, userId: string) {
+  /**
+   * @param isPremiumUser Guard'ın hesapladığı aktif premium (entitlement). Kilit kararı SUNUCUDA:
+   * `locked = konu premium && kullanıcı premium değil` — istemci `isPremium` bayrağından kural türetmez.
+   */
+  async getTopics(courseId: string, userId: string, isPremiumUser = false) {
     const [topics, progress, wrongCount] = await Promise.all([
       this.prisma.topic.findMany({
         where: { courseId, deletedAt: null, parentId: null },
@@ -139,11 +143,13 @@ export class CatalogService {
     const wrongCountValue = wrongCount[0]?.cnt ?? 0;
 
     const progressOf = new Map(progress.map((p) => [p.topicId, p]));
-    const withProgress = <T extends { id: string; name: string }>(t: T) => {
+    const withProgress = <T extends { id: string; name: string; isPremium: boolean }>(t: T) => {
       const p = progressOf.get(t.id);
       const isLaw = LAW_NAME_RE.test(t.name);
       return {
         ...t,
+        /** Kilit (premium içerik, kullanıcı premium değil) — kilit ikonu ve paywall yalnız bununla. */
+        locked: t.isPremium && !isPremiumUser,
         solvedCount: p?.solvedCount ?? 0,
         /** 0-100 = doğru/çözülen; hiç çözüm yoksa null (UI "yeni" gösterir, %0 değil). */
         mastery: p && p.solvedCount > 0 ? Math.round(Number(p.mastery) * 100) : null,

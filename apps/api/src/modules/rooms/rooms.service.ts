@@ -22,6 +22,8 @@ type Satir = {
   band: Band;
   inPlanThisWeek: boolean;
   isPremium: boolean;
+  /** Kilit kararı sunucuda: premium içerik && kullanıcı premium değil. */
+  locked: boolean;
   isLaw: boolean;
   lawSlug: string | null;
 };
@@ -34,6 +36,7 @@ const kamu = (r: Satir) => ({
   band: r.band,
   inPlanThisWeek: r.inPlanThisWeek,
   isPremium: r.isPremium,
+  locked: r.locked,
   isLaw: r.isLaw,
   lawSlug: r.lawSlug,
 });
@@ -46,7 +49,7 @@ const kamu = (r: Satir) => ({
 export class RoomsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async courseRoom(userId: string, courseId: string) {
+  async courseRoom(userId: string, courseId: string, isPremiumUser = false) {
     const course = await this.prisma.course.findFirst({
       where: { id: courseId, deletedAt: null },
       select: { id: true, name: true, icon: true },
@@ -126,6 +129,7 @@ export class RoomsService {
         band: band(solved, accuracy) as Band,
         inPlanThisWeek: planli.has(t.id),
         isPremium: t.isPremium,
+        locked: t.isPremium && !isPremiumUser,
         isLaw,
         lawSlug: isLaw ? slugify(t.name) : null,
       };
@@ -177,7 +181,7 @@ export class RoomsService {
     };
   }
 
-  async topicRoom(userId: string, topicId: string) {
+  async topicRoom(userId: string, topicId: string, isPremiumUser = false) {
     const topic = await this.prisma.topic.findFirst({
       where: { id: topicId, deletedAt: null },
       select: {
@@ -228,6 +232,7 @@ export class RoomsService {
         courseId: topic.courseId,
         courseName: topic.course.name,
         isPremium: topic.isPremium,
+        locked: topic.isPremium && !isPremiumUser,
       },
       summary: {
         solved,

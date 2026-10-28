@@ -15,7 +15,7 @@ export class RoomsController {
     @CurrentUser() user: AuthenticatedUser,
     @Param('courseId', ParseUUIDPipe) courseId: string,
   ) {
-    return this.rooms.courseRoom(user.id, courseId);
+    return this.rooms.courseRoom(user.id, courseId, user.isPremium);
   }
 
   @Get('topic-room/:topicId')
@@ -23,6 +23,6 @@ export class RoomsController {
     @CurrentUser() user: AuthenticatedUser,
     @Param('topicId', ParseUUIDPipe) topicId: string,
   ) {
-    return this.rooms.topicRoom(user.id, topicId);
+    return this.rooms.topicRoom(user.id, topicId, user.isPremium);
   }
 }

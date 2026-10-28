@@ -12,6 +12,8 @@ export interface RoomTopic {
   band: Band;
   inPlanThisWeek: boolean;
   isPremium: boolean;
+  /** Kilit kararı sunucuda: premium içerik && kullanıcı premium değil. */
+  locked: boolean;
   isLaw: boolean;
   lawSlug: string | null;
   children: Omit<RoomTopic, "children">[];
@@ -37,7 +39,7 @@ export interface CourseRoom {
 }
 
 export interface TopicRoom {
-  topic: { id: string; name: string; courseId: string; courseName: string; isPremium: boolean };
+  topic: { id: string; name: string; courseId: string; courseName: string; isPremium: boolean; locked: boolean };
   summary: { solved: number; correct: number; accuracyPct: number | null; band: Band; inPlanThisWeek: boolean; planRemainingMinutes: number | null };
   coach: string | null;
   wrongCount: number;

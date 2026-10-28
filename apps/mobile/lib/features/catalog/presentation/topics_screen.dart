@@ -210,8 +210,9 @@ class _Body extends ConsumerWidget {
     );
   }
 
+  /// Kilit kararı sunucudan (`locked`): premium kullanıcı premium konuya girer.
   VoidCallback _rowTap(BuildContext context, TopicItem t) => () =>
-      t.isPremium ? context.push('/paywall') : _showModeSheet(context, t);
+      t.locked ? context.push('/paywall') : _showModeSheet(context, t);
 
   /// Konuya dokununca mod seçimi: alıştırma / konu denemesi (+ kanunlarda Atlas).
   void _showModeSheet(BuildContext context, TopicItem topic) {
@@ -308,7 +309,7 @@ class _TopicRow extends StatelessWidget {
                     style: AppTypography.body.copyWith(color: tokens.ink)),
               ),
               const SizedBox(width: AppSpacing.md),
-              if (topic.isPremium)
+              if (topic.locked)
                 Icon(Icons.lock_rounded, size: 18, color: tokens.inkSoft)
               else if (topic.mastery != null)
                 SizedBox(

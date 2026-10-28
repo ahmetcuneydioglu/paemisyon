@@ -116,7 +116,7 @@ function KonuSatiri({ topic, divider, onPress }: { topic: Omit<RoomTopic, "child
             <AppText variant="subhead" tone={yeni ? "soft" : "ink"} numberOfLines={2} style={{ flexShrink: 1 }}>
               {topic.name}
             </AppText>
-            {topic.isPremium ? <Lock color={colors.inkSubtle} size={14} strokeWidth={1.75} /> : null}
+            {topic.locked ? <Lock color={colors.inkSubtle} size={14} strokeWidth={1.75} /> : null}
             {topic.inPlanThisWeek ? <Badge tone="accent">Planında</Badge> : null}
           </View>
           <AppText variant="bodySm" tone="subtle">
