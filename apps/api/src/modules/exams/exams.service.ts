@@ -12,6 +12,7 @@ import { QuizService } from '../quiz/quiz.service';
 import { AppEventsService } from '../notifications/app-events.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import {
+  ANSWERED_ATTEMPT,
   RANKING_MIN_SAMPLE,
   mean,
   median,
@@ -126,7 +127,12 @@ export class ExamsService {
     // Katılım = RESMÎ tamamlanmış çözüm; ortalama net de onlardan.
     const stats = await this.prisma.quizSession.groupBy({
       by: ['examId'],
-      where: { examId: { in: ids }, status: 'completed', attemptRole: 'official' },
+      where: {
+        examId: { in: ids },
+        status: 'completed',
+        attemptRole: 'official',
+        ...ANSWERED_ATTEMPT,
+      },
       _count: { _all: true },
       _avg: { score: true },
     });
@@ -346,7 +352,7 @@ export class ExamsService {
     const [active, completed] = await Promise.all([
       this.prisma.quizSession.count({ where: { examId, status: 'in_progress' } }),
       this.prisma.quizSession.count({
-        where: { examId, status: 'completed', attemptRole: 'official' },
+        where: { examId, status: 'completed', attemptRole: 'official', ...ANSWERED_ATTEMPT },
       }),
     ]);
     return { active, completed };
@@ -1055,7 +1061,7 @@ export class ExamsService {
       };
     }
     const sessions = await this.prisma.quizSession.findMany({
-      where: { examId, status: 'completed', attemptRole: 'official' },
+      where: { examId, status: 'completed', attemptRole: 'official', ...ANSWERED_ATTEMPT },
       include: { user: { select: { displayName: true, deletedAt: true } } },
     });
     const rows = rankWithTies(
@@ -1523,6 +1529,7 @@ export class ExamsService {
       JOIN users u ON u.id = qs.user_id AND u.deleted_at IS NULL
       JOIN exams e ON e.id = qs.exam_id AND e.deleted_at IS NULL
       WHERE qs.mode = 'deneme' AND qs.status = 'completed' AND qs.attempt_role = 'official'
+        AND (qs.correct_count > 0 OR qs.wrong_count > 0)
       GROUP BY qs.user_id, u.display_name, u.avatar_url
       ORDER BY avg_score DESC, attempts DESC`;
     const ranked = rows.map((r, i) => ({

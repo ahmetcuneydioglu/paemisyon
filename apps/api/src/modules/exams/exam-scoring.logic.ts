@@ -119,6 +119,15 @@ export function rankWithTies<T extends RankInput>(rows: T[]): RankedRow<T>[] {
   return out;
 }
 
+/**
+ * Sıralamaya giren resmî çözüm: en az bir soru işaretlenmiş olmalı. Sınavı açıp
+ * hiç cevap vermeden bırakan aday (göz atma) sıralamada 0 netle durup katılım
+ * sayısını ve ortalamayı şişiriyordu (Paem11 Deneme 1, 30 Eki 2026).
+ */
+export const ANSWERED_ATTEMPT = {
+  OR: [{ correctCount: { gt: 0 } }, { wrongCount: { gt: 0 } }],
+};
+
 /** Sıralama görünürlüğü için en az resmî çözüm sayısı (jsps ile aynı). */
 export const RANKING_MIN_SAMPLE = 10;
 
