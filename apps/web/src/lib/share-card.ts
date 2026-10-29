@@ -403,11 +403,7 @@ export async function renderShareCard(
   );
   ctx.fillStyle = K.panelInk;
   ctx.font = font(600, 8.67, "body");
-  ctx.fillText(
-    "App Store ve Google Play'de · paemisyon.com",
-    24 * S,
-    footY + 41 * S,
-  );
+  ctx.fillText("Uygulamada ve web'de · paemisyon.com", 24 * S, footY + 41 * S);
 
   // QR (beyaz kutu, köşe 8, iç boşluk 5)
   const qx = (360 - 24 - 54) * S;

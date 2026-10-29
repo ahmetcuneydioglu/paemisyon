@@ -463,3 +463,8 @@ yok: optik form ve sonuç S5/S6 dilinden türetilir.
   Canlıda geçici hesapla kişisel deneme (25 soru, açık tema): yeni oynatıcı (başlık bloğu, dilimler,
   optik form yan paneli, alt çubuk), bitirme diyaloğu ve sonuç sayfası (panel hero "%0",
   "doğruluk · D · Y · B · dk", koç satırı, konu kırılımı) doğrulandı; hesap silindi.
+
+- **Kart mağaza satırı kararı (30 Eki 2026):** App Review 2.3.10 (uygulama içinde başka platform
+  adı) riski anlatıldı; kullanıcı 2. seçeneği seçti: iki kartta da satır **"Uygulamada ve web'de ·
+  paemisyon.com"** (Expo `share-card.tsx`, web `share-card.ts`). Mağaza rozetleri `/s/<id>` iniş
+  sayfasında kalır; kart yalnız oraya götürür.

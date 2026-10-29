@@ -141,9 +141,9 @@ export const ShareQuestionCard = forwardRef<ComponentRef<typeof View>, { data: S
           <CardText size={8.67} weight={400} color={K.panelSoft} numberOfLines={1}>
             Kaynağa dayalı açıklama ve madde metniyle.
           </CardText>
-          {/* Platform satırı (kullanıcı kararı, 23 Eki): uygulama iki mağazada da var. */}
+          {/* Platform satırı: mağaza adı yok (App Review 2.3.10; kullanıcı kararı 30 Eki) — rozetler /s/<id> iniş sayfasında. */}
           <CardText size={8.67} weight={600} color={K.panelInk} numberOfLines={1}>
-            {"App Store ve Google Play'de · paemisyon.com"}
+            {"Uygulamada ve web'de · paemisyon.com"}
           </CardText>
         </View>
         <View style={{ width: 54, height: 54, padding: 5, borderRadius: 8, backgroundColor: K.surface }}>
