@@ -18,8 +18,12 @@ export interface BugunV3Input {
   todayTask: TodayTask;
   weakestUnit: UnitRecipe | null;
   readiness: Readiness;
+  /** Bugün konu başına cevaplanan soru; rota "N soru" adımı bununla tamamlanır. */
+  todayTopicAnswered: Record<string, number>;
+  /** Bugün tamamlanmış yanlış turu var mı. */
+  reviewDoneToday: boolean;
   exams: {
-    live: { id: string; title: string } | null;
+    live: { id: string; title: string; attempted?: boolean } | null;
     todayUpcoming: { id: string; title: string; startAt: Date; questionCount: number } | null;
     /** Bugünden sonra, 7 gün içinde başlayacak ilk deneme. */
     nextUpcoming: { id: string; title: string; startAt: Date; questionCount: number } | null;
@@ -223,7 +227,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       kind: 'exam',
       label: ex.title,
       detail: up ? gunSaat(up.startAt, input.now) : 'şimdi',
-      done: false,
+      estimateMin: null,
+      done: Boolean(input.exams.live?.attempted),
       action: {
         type: 'open_exams',
         label: 'Aç',
@@ -236,27 +241,30 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
   const zayif = input.readiness.weakest[0] ?? null;
   if (u && zayif) {
     const unite = kisaUnite(u.unit.title);
-    if (u.kind === 'summary_then_questions') {
-      items.push({
-        key: `summary:${u.unit.slug}`,
-        kind: 'summary',
-        label: `${unite} özeti`,
-        detail: `${OZET_DK} dk`,
-        done: false,
-        action: {
-          type: 'open_summary',
-          label: 'Oku',
-          route: `/ozet/${u.unit.slug}`,
-          source: 'home_route',
-        },
-      });
-    }
+    // Özet adımı her zaman listelenir: reçete `questions` ise özet okunmuştur (tamamlandı).
+    items.push({
+      key: `summary:${u.unit.slug}`,
+      kind: 'summary',
+      label: `${unite} özeti`,
+      detail: null,
+      estimateMin: OZET_DK,
+      done: u.kind === 'questions',
+      action: {
+        type: 'open_summary',
+        label: 'Oku',
+        route: `/ozet/${u.unit.slug}`,
+        source: 'home_route',
+      },
+    });
+    const cevaplanan = input.todayTopicAnswered[u.session.topicId] ?? 0;
     items.push({
       key: `questions:${u.unit.slug}`,
       kind: 'questions',
-      label: `${u.session.count} soru`,
-      detail: zayif.courseName,
-      done: false,
+      label: `${u.session.count} soru · ${zayif.name}`,
+      detail:
+        cevaplanan > 0 && cevaplanan < u.session.count ? `${cevaplanan}/${u.session.count}` : null,
+      estimateMin: dk(u.session.count),
+      done: cevaplanan >= u.session.count,
       action: soruBaslat(
         u.session.count,
         topicFocus(u.session.topicId, zayif.name),
@@ -270,24 +278,29 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       kind: 'questions',
       label: next.action.count ? `${next.action.count} soru` : 'Soru turu',
       detail: zayif?.courseName ?? null,
+      estimateMin: next.action.count ? dk(next.action.count) : null,
       done: input.answeredToday >= input.goal,
       action: { ...next.action, source: 'home_route' },
     });
   }
   const n = input.readiness.unresolvedWrongCount;
-  if (n > 0) {
-    const count = Math.min(n, 20);
+  if (n > 0 || input.reviewDoneToday) {
+    const count = Math.min(Math.max(n, 1), 20);
     items.push({
       key: 'review',
       kind: 'review',
       label: 'Yanlış tekrarı',
-      detail: `${count} soru`,
-      done: false,
-      action: soruBaslat(
-        count,
-        { kind: 'wrongs', courseId: null, topicId: null, label: 'Yanlışlar' },
-        'home_route',
-      ),
+      detail: n > 0 ? `${n} soru` : 'kuyruk temiz',
+      estimateMin: n > 0 ? dk(count) : null,
+      done: input.reviewDoneToday,
+      action:
+        n > 0
+          ? soruBaslat(
+              count,
+              { kind: 'wrongs', courseId: null, topicId: null, label: 'Yanlışlar' },
+              'home_route',
+            )
+          : null,
     });
   }
   items.push({
@@ -295,6 +308,7 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
     kind: 'daily',
     label: 'Günün Quizi',
     detail: input.dailyQuizPlayed ? 'tamam' : '10 soru',
+    estimateMin: input.dailyQuizPlayed ? null : dk(10),
     done: input.dailyQuizPlayed,
     action: input.dailyQuizPlayed
       ? null
@@ -306,18 +320,20 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
           source: 'home_route',
         },
   });
-  // Plan kalemleri: bitmemiş konu/tekrar/deneme kalemleri, rota dolana kadar (zayıf konu zaten varsa atla).
+  // Plan kalemleri: bitmemiş konu/tekrar/deneme kalemleri, rota dolana kadar (sıradaki konu tekrarlanmaz).
   for (const k of input.plan?.items ?? []) {
     if (items.length >= ROTA_EN_COK) break;
     if (k.status === 'done') continue;
     if (k.kind === 'topic' && k.topicId && k.topicId === u?.session.topicId) continue;
     if (k.kind === 'topic' && k.topicId) {
+      const cevaplanan = input.todayTopicAnswered[k.topicId] ?? 0;
       items.push({
         key: `plan:${k.id}`,
         kind: 'plan_topic',
         label: k.topicName ?? 'Plan konusu',
-        detail: `${k.remainingMinutes} dk`,
-        done: false,
+        detail: cevaplanan > 0 ? `${cevaplanan} soru çözüldü` : null,
+        estimateMin: k.remainingMinutes,
+        done: cevaplanan >= 10,
         action: soruBaslat(10, topicFocus(k.topicId, k.topicName ?? ''), 'home_route'),
       });
     } else if (k.kind === 'review' && !items.some((i) => i.kind === 'review')) {
@@ -325,8 +341,9 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
         key: `plan:${k.id}`,
         kind: 'plan_review',
         label: 'Plan tekrarı',
-        detail: `${k.remainingMinutes} dk`,
-        done: false,
+        detail: null,
+        estimateMin: k.remainingMinutes,
+        done: input.reviewDoneToday,
         action: null,
       });
     } else if (k.kind === 'mock') {
@@ -334,7 +351,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
         key: `plan:${k.id}`,
         kind: 'plan_mock',
         label: 'Deneme (plan)',
-        detail: `${k.remainingMinutes} dk`,
+        detail: null,
+        estimateMin: k.remainingMinutes,
         done: false,
         action: {
           type: 'open_exams',
@@ -345,9 +363,8 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       });
     }
   }
-  // Yoğunluğa göre kes: en az 2, en çok 6. Tamamlananlar sona.
-  const sirali = [...items.filter((i) => !i.done), ...items.filter((i) => i.done)];
-  return sirali.slice(0, Math.max(ROTA_EN_AZ, Math.min(ROTA_EN_COK, sirali.length)));
+  // Yoğunluğa göre kes: en az 2, en çok 6. Sıra korunur (adımlar numaralı); tamamlananlar yerinde kalır.
+  return items.slice(0, Math.max(ROTA_EN_AZ, Math.min(ROTA_EN_COK, items.length)));
 }
 
 function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {

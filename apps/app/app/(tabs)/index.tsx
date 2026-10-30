@@ -89,7 +89,7 @@ export default function BugunScreen() {
 
   // Sıradaki: v3 varsa sunucunun adımı; yoksa Doc 48 görev kartından türet (eski sunucu).
   const next = v3?.nextStep ?? (task ? { kind: task.kind === "resume" ? ("resume" as const) : ("questions" as const), eyebrow: "SIRADAKİ", title: task.title, reason: task.reason, badge: null, estimateMin: null, action: task.action } : null);
-  const rotaSatirlari = (v3?.route ?? []).map((r) => ({ key: r.key, label: r.label, detail: r.detail, done: r.done, onPress: r.action ? () => run(r.action!) : null }));
+  const rotaSatirlari = (v3?.route ?? []).map((r) => ({ key: r.key, label: r.label, detail: r.detail, estimateMin: r.estimateMin ?? null, done: r.done, onPress: r.action ? () => run(r.action!) : null }));
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
   return (

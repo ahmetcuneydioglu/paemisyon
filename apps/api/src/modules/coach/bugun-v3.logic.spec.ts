@@ -67,6 +67,8 @@ function girdi(over: Partial<BugunV3Input> = {}): BugunV3Input {
       },
     },
     plan: null,
+    todayTopicAnswered: {},
+    reviewDoneToday: false,
     ...over,
   };
 }
@@ -152,12 +154,31 @@ describe('computeHomeV3', () => {
     });
   });
 
-  it('rota 2–6 madde; tamamlananlar sona; özet, soru, yanlış, günün quizi sırası', () => {
+  it('rota 2–6 madde, sıra sabit: özet, soru, yanlış, günün quizi; süre tahminleri', () => {
     const r = computeHomeV3(girdi());
     expect(r.route.length).toBeGreaterThanOrEqual(ROTA_EN_AZ);
     expect(r.route.length).toBeLessThanOrEqual(ROTA_EN_COK);
     expect(r.route.map((i) => i.kind)).toEqual(['summary', 'questions', 'review', 'daily']);
+    expect(r.route.map((i) => i.estimateMin)).toEqual([4, 3, 1, null]);
     expect(r.route.at(-1)).toMatchObject({ kind: 'daily', done: true, action: null });
+  });
+
+  it('tamamlanma gerçek veriden: özet okundu (reçete questions), konuda 10 soru çözüldü, yanlış turu bitti', () => {
+    const r = computeHomeV3(
+      girdi({
+        weakestUnit: { ...girdi().weakestUnit!, kind: 'questions' },
+        todayTopicAnswered: { t1: 10 },
+        reviewDoneToday: true,
+      }),
+    );
+    expect(r.route.map((i) => [i.kind, i.done])).toEqual([
+      ['summary', true],
+      ['questions', true],
+      ['review', true],
+      ['daily', true],
+    ]);
+    const yarim = computeHomeV3(girdi({ todayTopicAnswered: { t1: 4 } }));
+    expect(yarim.route[1]).toMatchObject({ kind: 'questions', done: false, detail: '4/10' });
   });
 
   it('plan kalemleri rotayı 6 ile doldurur, sıradaki konuyu tekrarlamaz', () => {

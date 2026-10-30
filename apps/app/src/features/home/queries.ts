@@ -47,6 +47,8 @@ export interface RouteItem {
   kind: RouteItemKind;
   label: string;
   detail: string | null;
+  /** Tahminî süre (dk); eski sunucuda yok. */
+  estimateMin?: number | null;
   done: boolean;
   action: TodayTaskAction | null;
 }

@@ -212,10 +212,10 @@ export default function GaleriScreen() {
           <NextStepCard eyebrow="SIRADAKİ · ANAYASA · YÜRÜTME" title="Anayasa · Yürütme turuna devam et" reason="6/10 · 12 dk önce" ctaLabel="Devam et" onPress={() => {}} />
           <RouteList
             rows={[
-              { key: "d", label: "Günün Quizi", detail: "tamam", done: true, onPress: null },
-              { key: "s", label: "Yürütme özeti", detail: "4 dk", done: false, onPress: () => {} },
-              { key: "q", label: "10 soru", detail: "Anayasa", done: false, onPress: () => {} },
-              { key: "r", label: "Yanlış tekrarı", detail: "4 soru", done: false, onPress: () => {} },
+              { key: "d", label: "Günün Quizi", detail: "tamam", estimateMin: null, done: true, onPress: null },
+              { key: "s", label: "Yürütme özeti", detail: null, estimateMin: 4, done: false, onPress: () => {} },
+              { key: "q", label: "10 soru · Yürütme", detail: "4/10", estimateMin: 3, done: false, onPress: () => {} },
+              { key: "r", label: "Yanlış tekrarı", detail: "4 soru", estimateMin: 1, done: false, onPress: () => {} },
             ]}
             footer="Günlük hedef 20 soru · 5"
             onPlan={() => {}}

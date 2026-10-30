@@ -180,6 +180,8 @@ export class CoachService {
         nextUpcoming: ctx.exams.nextUpcoming,
       },
       plan: ctx.plan ? { items: ctx.plan.items } : null,
+      todayTopicAnswered: ctx.home.todayTopicAnswered,
+      reviewDoneToday: ctx.home.reviewDoneToday,
     });
     const homeV3 = {
       ...homeV3Cekirdek,
@@ -357,6 +359,8 @@ export class CoachService {
       odakSatiri,
       yarimTurlar,
       planOzeti,
+      bugunKonuCevaplari,
+      bugunYanlisTuru,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -515,6 +519,23 @@ export class CoachService {
       }),
       // Haftalık plan özeti (Doc 49/12 F8-A): kart + brief.plan; yoksa null.
       this.plan.ozet(user.id, now),
+      // Bugün v3 rotası: bugün konu başına cevap (QuizAnswer'ın question ilişkisi yok → ham birleşim).
+      this.prisma.$queryRaw<{ topic_id: string; n: bigint }[]>`
+        SELECT q.topic_id, COUNT(*)::bigint AS n
+        FROM quiz_answers a
+        JOIN quiz_sessions s ON s.id = a.session_id
+        JOIN questions q ON q.id = a.question_id
+        WHERE s.user_id = ${user.id}::uuid AND a.answered_at >= ${gunBaslangici(now)}
+        GROUP BY q.topic_id`,
+      this.prisma.quizSession.findFirst({
+        where: {
+          userId: user.id,
+          mode: 'review',
+          status: 'completed',
+          completedAt: { gte: gunBaslangici(now) },
+        },
+        select: { id: true },
+      }),
     ]);
 
     // ── Deneme durumları ──
@@ -817,6 +838,10 @@ export class CoachService {
           bugun,
           weekStart,
         ),
+        todayTopicAnswered: Object.fromEntries(
+          bugunKonuCevaplari.map((r) => [r.topic_id, Number(r.n)]),
+        ),
+        reviewDoneToday: bugunYanlisTuru != null,
       },
     };
   }
@@ -831,6 +856,10 @@ interface HomeRaw {
   strongestTopic: { name: string; accuracy: number } | null;
   daysLeftInWeek: number;
   weekDays: HaftaGunDurumu[];
+  /** Bugün konu başına cevaplanan soru (rota "N soru" adımının tamamlanması). */
+  todayTopicAnswered: Record<string, number>;
+  /** Bugün tamamlanmış yanlış turu var mı (rota "Yanlış tekrarı" adımı). */
+  reviewDoneToday: boolean;
 }
 
 /** Varsayılan odak: koç seçer (Doc 25 §5). */

@@ -43,8 +43,11 @@ export interface RouteItem {
   kind: RouteItemKind;
   /** "Yürütme özeti" */
   label: string;
-  /** Sağ sütun: "4 dk", "doğru", "Anayasa". */
+  /** Sağ sütun: "doğru", "Anayasa" (süre `estimateMin`'den ayrı). */
   detail: string | null;
+  /** Tahminî süre (dk) — "~4 dk"; yoksa null. */
+  estimateMin: number | null;
+  /** Bugün gerçekten tamamlandı mı (sunucu verisinden: özet okundu, konuda N soru çözüldü, yanlış turu bitti…). */
   done: boolean;
   /** Dokununca; null ise yalnız bilgi. */
   action: TodayTaskAction | null;

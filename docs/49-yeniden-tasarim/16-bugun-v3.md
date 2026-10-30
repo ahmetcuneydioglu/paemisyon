@@ -185,3 +185,13 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   telefon Metro'dan paketi aldı (kullanıcı hesabıyla görsel kontrol kullanıcıda); SE simülatöründe
   giriş denemesi Türkçe klavye eşlemesi ('-'→'*', '@'→''') ve askıda kalan `simctl` yüzünden
   başarısız — simülatör doğrulaması sonraki tura. Kalan: web /bugun aynı iskelet (adım 3).
+- **Rota düzeltmesi (30 Eki, kullanıcı geri bildirimi — GYSROTA ekranıyla kıyas):** (1) adımlar
+  numaralı ve bağlı (GYSROTA'daki 1-2-3-4 zaman çizgisi): `RouteList` numaralı daire + dikey bağ
+  çizgisi, sağda "~N dk", tamamlanan adım success daire + onay + üstü çizili; sıra artık yerinde
+  kalır (tamamlananlar sona atılmaz). (2) **Tamamlanma gerçek veriden:** API `home.todayTopicAnswered`
+  (bugün konu başına cevap — `quiz_answers ⋈ quiz_sessions ⋈ questions` ham sorgu) ve
+  `home.reviewDoneToday` (bugün tamamlanmış yanlış turu). Özet adımı her zaman listelenir, reçete
+  `questions` ise okunmuş sayılır; "N soru" adımı konuda bugün ≥N cevapla tamamlanır (arada "4/10"
+  ayrıntısı); yanlış tekrarı bugünkü tamamlanmış `review` turuyla; Günün Quizi oynandıysa; plan konusu
+  bugün ≥10 cevapla; deneme katılımla. `RouteItem.estimateMin` eklendi (özet 4, soru 20 sn/soru,
+  plan kalemi kalan dk). Spec 10, coach suite 128/128, tsc 0.
