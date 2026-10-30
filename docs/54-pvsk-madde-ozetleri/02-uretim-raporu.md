@@ -59,3 +59,11 @@ dayanması. Örnek okuma: `uretim/2559-md-4-A.md` (okunur biçim her madde için
 | Geçici 2 | Ek 7 nci maddede düzenlenen merkezin kurulma süresi ve kuruluncaya kadarki uygulama | 6 nokta · 2 süre · 4 sayı · 7 hatırlatma · 2 mevzuat |
 
 **Sıradaki:** deploy → `madde-ozeti-yukle.ts uretim/` prod'a in_review → admin `/article-summaries` inceleme → yayın.
+
+## Ek 7 (31 Eki 2026)
+
+`mevzuat-madde-tazele.ts` kuru çalışması bankadaki Ek 7 metnini mevzuat.gov.tr konsolide metniyle **birebir aynı**
+buldu (5225 karakter; "Siber Güvenlik Başkanlığı" ibaresi zaten işli) — tazeleme gerekmedi, `--yaz` koşulmadı.
+Özet tek madde hattıyla üretildi (`girdi/2559-ek7.json` → `uretim/2559-md-Ek-7.json`, giriş 5,7k / çıkış 13,9k token).
+Doğrulayıcı 1 kusur buldu: "1 ay" karşı örneği metinde geçen bir sayıydı (fıkra şerhleri) → karşı örnek ve iki hatırlatmadaki
+"1 ay" ibaresi çıkarıldı, GEÇTİ. Yükleme: `madde-ozeti-yukle.ts uretim/2559-md-Ek-7.json` (in_review; yayın insanda).

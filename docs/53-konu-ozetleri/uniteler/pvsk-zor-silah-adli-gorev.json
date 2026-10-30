@@ -1,0 +1,445 @@
+{
+  "unit": {
+    "slug": "pvsk-zor-silah-adli-gorev",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "title": "Zor ve silah kullanma, adli görev",
+    "subtitle": "Kademeli zor, silah kullanma hâlleri, suça el koyma, teşhis ve silah kullanan polis hakkında yapılacak işlem",
+    "articleFrom": "16",
+    "articleTo": "Ek 9",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK), md 16, 17, Ek 4, Ek 6, Ek 9",
+    "articleNos": [
+      "16",
+      "17",
+      "Ek 4",
+      "Ek 6",
+      "Ek 9"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Zor kullanma: amaç ve ölçü",
+      "body": "Görevini yaparken direnişle karşılaştığında zor kullanmaya yetkilisin. Bu yetkinin sınırı açıktır: zoru direnişi kırmak amacıyla ve onu kıracak ölçüde kullanırsın. Neyi, ne kadar kullanacağını direnmenin mahiyeti ve derecesi belirler. Hedef, direnenleri etkisiz hâle getirmektir; cezalandırmak değil. Bu ünitedeki her kuralı bu ölçüye bakarak okuyabilirsin.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kademeli zor: bedenî kuvvet → maddî güç → silah",
+      "body": "Zor kullanma yetkisi kapsamında **direnmenin mahiyetine ve derecesine göre** ve direnenleri etkisiz hâle getirecek şekilde **kademeli olarak artan nispette** şunlar kullanılabilir:\n- **bedenî kuvvet**,\n- **maddî güç**,\n- **kanunî şartları gerçekleştiğinde silah**.\n\nKademe bu sırayla ilerler. Silah için kanunî şartların gerçekleşmesi ayrıca aranır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bedenî kuvvet ve maddî güç tanımları",
+      "body": "**Bedenî kuvvet:** Polisin direnen kişilere karşı veya eşya üzerinde **doğrudan doğruya** kullandığı bedenî güçtür.\n\n**Maddî güç:** Polisin direnen kişilere karşı veya eşya üzerinde **bedenî kuvvetin dışında** kullandığı araçlardır:\n- kelepçe, cop,\n- basınçlı ve/veya boyalı su,\n- göz yaşartıcı gazlar veya tozlar,\n- fizikî engeller,\n- polis köpekleri ve atları,\n- sair hizmet araçları.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kelepçe, köpek ve at maddî güçtür",
+      "body": "Soru maddî güç listesini verip \"buna ne ad verilir?\" diye sorduğunda cevap **maddî güç**tür. \"Bedenî kuvvet\", \"silah\", \"koruma tedbiri\" ya da \"yaptırım\" seçeneklerine kanma. Soru tersten de gelebilir: \"Hangisi maddî güç değildir?\" Bu durumda cevap, polisin direnen kişiye **doğrudan doğruya uyguladığı bedenî güç**tür. O bedenî kuvvettir. Polis köpekleri ve atları ise maddî güce dahildir. Sıralama sorusunda doğru dizilim **bedenî kuvvet → maddî güç → silah** biçimindedir. Maddî gücü öne alan ya da \"kademe yoktur\" diyen şık yanlıştır.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zor kullanmadan önce ihtar",
+      "body": "**Kural:** Zor kullanmadan önce ilgililere, direnmeye devam etmeleri hâlinde doğrudan doğruya zor kullanılacağı **ihtar edilir**.\n\n**İstisna:** Direnmenin mahiyeti ve derecesi göz önünde bulundurularak **ihtar yapılmadan da** zor kullanılabilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zorun derecesini kim belirler?",
+      "body": "**Tek başına müdahalede:** Polis, direnmeyi etkisiz kılmak için kullanacağı araç ve gereci ve zorun derecesini **kendisi takdir ve tayin eder**.\n\n**Toplu kuvvet olarak müdahalede:** Zor kullanmanın derecesini ve kullanılacak araç ve gereçleri **müdahale eden kuvvetin amiri** tayin ve tespit eder.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İhtar mutlak değildir, toplu kuvvette yetki amirdedir",
+      "body": "\"İhtar zorunludur, hiçbir hâlde ihtarsız zor kullanılamaz\" diyen şık yanlıştır. Direnmenin mahiyeti ve derecesine göre ihtarsız zor kullanmak mümkündür. Metin ihtar için yazılı şekil ya da amir izni öngörmez. İhtarı yalnızca toplu kuvvet müdahalesine bağlamaz. Toplu kuvvet sorusunda doğru cevap **müdahale eden kuvvetin amiri**dir. Mahallin en büyük mülki amiri, Cumhuriyet savcısı, sulh ceza hâkimi ya da \"her polis kendisi\" seçenekleri çeldiricidir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meşru savunma: zor kullanma koşullarından bağımsız",
+      "body": "Polis, **kendisine veya başkasına yönelik bir saldırı** karşısında, **zor kullanmaya ilişkin koşullara bağlı kalmaksızın**, 5237 sayılı Türk Ceza Kanununun **meşru savunmaya ilişkin hükümleri** çerçevesinde savunmada bulunur.\n\nKademeli zor ve ihtar koşulları burada aranmaz. Dayanak Türk Ceza Kanununun meşru savunma hükümleridir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Polis hangi hâllerde silah kullanabilir?",
+      "body": "Polis aşağıdaki hâllerde silah kullanmaya yetkilidir:\n- **(a)** Meşru savunma hakkının kullanılması kapsamında.\n- **(b)** Bedenî kuvvet ve maddî güç kullanarak etkisiz hâle getiremediği direniş karşısında, bu direnişi **kırmak amacıyla ve kıracak ölçüde**.\n- **(c)** Hakkında **tutuklama, gözaltına alma, zorla getirme kararı veya yakalama emri** verilmiş kişilerin ya da **suçüstü hâlinde şüphelinin** yakalanmasını **sağlamak amacıyla ve sağlayacak ölçüde**.\n- **(d)** Kendisine veya başkalarına; işyerlerine, konutlara, kamu binalarına, okullara, yurtlara, ibadethanelere, araçlara ve kişilerin bulunduğu açık veya kapalı alanlara **molotof, patlayıcı, yanıcı, yakıcı, boğucu, yaralayıcı ve benzeri silahlarla** saldıran veya saldırıya teşebbüs edenlere karşı, saldırıyı **etkisiz kılmak amacıyla ve etkisiz kılacak ölçüde**.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Md 16: kademeler ve sıralar",
+      "rows": [
+        {
+          "label": "Zor kullanmanın kademeleri",
+          "value": "3: bedenî kuvvet → maddî güç → silah",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Silah kullanma yetkisi veren bentler",
+          "value": "4: (a) meşru savunma, (b) kırılamayan direniş, (c) yakalama, (d) molotof ve benzeri silahlarla saldırı",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "\"Dur\" çağrısı ve uyarı ateşi sırası",
+          "value": "Yedinci fıkranın (c) bendi (yakalama hâli)",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Toplu kuvvette zorun derecesi ve araçlar",
+          "value": "Müdahale eden kuvvetin amiri",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Silahla saldırıya teşebbüs edildiğinde",
+          "value": "Saldırı tehlikesini etkisiz kılacak ölçüde, duraksamadan ateş",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Meşru savunmanın dayanağı",
+          "value": "5237 sayılı Türk Ceza Kanunu",
+          "refs": [
+            "16"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "16"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "count(bedenî kuvvet, maddî güç, silah)",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "value": 4,
+          "expr": "count(a, b, c, d)",
+          "refs": [
+            "16"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakalama için silah: \"dur\" → uyarı ateşi → ateş",
+      "body": "Yedinci fıkranın **(c) bendi** kapsamında silah kullanmadan önce şu sıra izlenir:\n1. Kişinin **duyabileceği şekilde \"dur\" çağrısı** yapılır.\n2. Kişi çağrıya uymayıp kaçmaya devam ederse, önce **uyarı amacıyla** silahla ateş edilebilir.\n3. Kişi buna rağmen kaçmakta ısrar eder ve bu yüzden ele geçirilmesi mümkün olmazsa, **yakalanmasını sağlamak amacıyla ve sağlayacak ölçüde** silahla ateş edilebilir.\n\n**Ayrıca:** Polis, direnişi kırmak ya da yakalamak için zor veya silah kullanırken kendisine **silahla saldırıya teşebbüs edilirse**, bu kişiye karşı saldırı tehlikesini etkisiz kılacak ölçüde **duraksamadan** silahla ateş edebilir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sıra değişmez, silahlı saldırıda bekleme yoktur",
+      "body": "Kaçan kişiyi yakalama sorusunda doğru sıra **\"dur\" çağrısı → uyarı ateşi → yakalamayı sağlayacak ölçüde ateş** şeklindedir. Uyarı ateşini \"dur\"un önüne koyan, uyarı ateşini atlayan ya da başa \"amirin emri\"ni ekleyen şık yanlıştır. Metinde \"üç kez dur çağrısı\" gibi bir sayı şartı yoktur. Çağrının kişinin duyabileceği şekilde yapılması yeterlidir. Polise silahla saldırıya teşebbüs edildiğinde de amirden emir beklemek, geri çekilip takviye beklemek ya da yalnızca bedenî kuvvet ve maddî güçle yetinmek söz konusu değildir. Polis **duraksamadan** ateş edebilir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": [
+        3
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Md 17: emre itaatsizlik ve polise mukavemet",
+      "body": "Şu kişiler **karakola götürülür** ve haklarında tanzim olunacak **evrakla beraber adliyeye verilir**:\n- **A)** Polisin kanun ve usul dairesinde verdiği emre itaatsizlik edenler ve polisin ittihaz eylediği tedbirlere riayetsizlik edenler.\n- **B)** Vazife yaparken polise mukavemette bulunan veya vazifesinden alıkoymak maksadıyla polise zorla karşı koyan ve yakalanmadıkları takdirde hareketlerine devam etmeleri melhuz bulunan şahıslar.",
+      "articleRefs": [
+        "17"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 17'nin sonucu: karakol ve adliye",
+      "body": "Bu soruda tek doğru sonuç vardır: **karakola götürülüp evrakla beraber adliyeye verilirler.** \"Gözaltına alınıp sulh ceza hâkimi önüne çıkarılırlar\", \"mülkî amire teslim edilirler\", \"idarî para cezası verilip serbest bırakılırlar\" ve \"yirmi dört saat karakolda tutulup bırakılırlar\" şıkları maddede yer almaz.",
+      "articleRefs": [
+        "17"
+      ],
+      "counterNumbers": [
+        24
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 4: her polis suça el koyar",
+      "body": "Polis, **görevli bulunduğu mülki sınırlar içinde**, **hizmet branşı, yeri ve zamanına bakılmaksızın** bir suçla karşılaştığında şunlarla görevli ve yetkilidir:\n- suça el koymak ve suçu önlemek,\n- sanık ve suç delillerini tespit ve muhafaza etmek,\n- bunları yetkili zabıtaya teslim etmek.\n\n**Sonuç:** Bu madde gereğince suça müdahale eden polise karşı işlenen suçlar **görevli memura karşı işlenmiş suç** sayılır. Müdahale eden polisin işlediği suçlar da **görevli memurun işlediği suç** sayılır. Mesai saati, üniforma ya da mülki amirin takdiri gibi bir şart aranmaz.",
+      "articleRefs": [
+        "Ek 4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 6: ihbar, ilk tedbir ve savcıya bildirim",
+      "body": "- Polis, Ceza Muhakemesi Kanunu ve diğer mevzuatta yazılı **soruşturma işlemlerine ilişkin görevleri** de yerine getirir.\n- Kendisine yapılan **sözlü ihbar ve şikâyetleri** ve görevi sırasında öğrendiği suça ilişkin bilgileri **yazılı hâle getirir**.\n- Suçla karşılaşan polis, olay yerinde kişilerin ve toplumun sağlığına, vücut bütünlüğüne veya malvarlığına zarar gelmemesi ve delillerin kaybolmaması ya da bozulmaması için **derhal gerekli tedbirleri** alır.\n- Acele tedbirleri aldıktan sonra el koyduğu olayları, yakalanan kişileri ve uygulanan tedbirleri **derhal Cumhuriyet savcısına bildirir**. Ardından **savcının emri doğrultusunda** soruşturma işlemlerini yapar.\n- Edinilen bilgi bir **kabahate** ilişkinse konu araştırılır ve gerekli yasal işlem yapılır veya yapılması sağlanır.\n\nBildirim derhal yapılır. Metinde \"yirmi dört saat bekleme\" gibi bir süre yoktur. Bildirim mülki amire değil, savcıya yapılır.",
+      "articleRefs": [
+        "Ek 6"
+      ],
+      "counterNumbers": [
+        24
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 6: olay yeri, delil ve arama",
+      "body": "- Olay yerinde işlemlere başlayan polis, bu işlemlere **engel olan** ya da aldığı tedbirlere **aykırı davranan** kişileri işlemler sonuçlanıncaya kadar ve **gerektiğinde zor kullanarak** men eder.\n- Delilleri tespit etmek için **Cumhuriyet savcısının emriyle** olay yerinde inceleme ve teknik araştırma yapar. Delilleri tespit eder, muhafaza altına alır ve incelenmek üzere ilgili yerlere gönderir.\n- **Olay yeri dışında** kalan ve o suça ilişkin delil elde edilebileceği yönünde **kuvvetli şüphe** sebebi bulunan **konut, işyeri ve kamuya açık olmayan kapalı alanlarda** **Ceza Muhakemesi Kanununun arama ve elkoymaya ilişkin hükümleri** uygulanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 6: teşhis kuralları",
+      "body": "- **Şart:** Faille gözaltına alınan şüphelinin aynı kişi olup olmadığını belirlemek için **zorunlu** olmalı. Teşhis **Cumhuriyet savcısının talimatıyla** yaptırılır.\n- **Tanıklıktan çekinebilecek olanlar** teşhiste bulunmaya zorlanamaz.\n- İşleme başlamadan önce, teşhiste bulunacak kişinin faili tarif eden beyanları **tutanağa** bağlanır.\n- Teşhise tâbi kişiler **birden fazla** ve **aynı cinsten** olmalıdır. Aralarında yaş, boy, ağırlık, giyinme gibi görünüşe ilişkin **benzerlik** bulunmalıdır. Gerekirse şüphelinin görünüşünde değişiklik yapılabilir.\n- Teşhise tâbi kişilerin her birinde **bir numara** bulunur.\n- Teşhiste bulunan kişiyle teşhise tâbi kişiler **birbirini görmemelidir**.\n- İşlem **en az iki kez** tekrarlanır. Teşhis edecek kişiye, şüphelinin aralarında **yer almıyor olabileceği hatırlatılır**.\n- Teşhise tâbi kişilerin birlikte fotoğrafı çekilir veya görüntüsü kaydedilir ve soruşturma dosyasına konur.\n- **Fotoğraf üzerinden de** teşhis yaptırılabilir. Ancak **tek bir fotoğraf** veya **aynı kişinin farklı fotoğrafları** üzerinden yaptırılamaz. Fotoğraflar **aynı büyüklük ve özellikte** olmalıdır.\n- Teşhis işlemi **tutanağa** bağlanır.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Teşhiste ters çevrilen cümleler",
+      "body": "Teşhis sorularında yanlış şık çoğu zaman doğru bir cümlenin tersidir. \"Benzerlik bulunması **gerekmez**\" yanlıştır, çünkü benzerlik gerekir. \"Teşhis eden ile teşhise tâbi kişilerin birbirini **görmesi** gerekir\" yanlıştır, çünkü görmemeleri gerekir. Fotoğrafla teşhis yasak değildir, ama tek fotoğraf yetmez. Fotoğrafların farklı değil, **aynı büyüklük ve özellikte** olması gerekir. Teşhis için metin hâkim kararı değil, **Cumhuriyet savcısının talimatını** arar. \"En az iki kez tekrar\", \"her kişide bir numara\" ve \"tanıklıktan çekinebilecekler zorlanamaz\" ifadeleri ise doğrudur.",
+      "articleRefs": [
+        "Ek 6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 9: silah kullanan polis, avukat ve ödül",
+      "body": "Bu Kanun ve diğer kanunlara göre gerekli hâllerde **silah kullanmak zorunda kalan polis** hakkında:\n- **A)** Önleyici, caydırıcı, düzenleyici ve koruyucu kolluk hizmetleri sırasında: ceza sorumluluğunun tespiti için **Memurin Muhakematı Hakkında Kanuna** göre işlem yapılır.\n- **B)** Adliyeye ilişkin vazife ve işlerle ilgili hizmet sırasında: hazırlık soruşturmasını **bizzat Cumhuriyet savcıları veya yardımcıları** yapar.\n\n**Sanık polis**, hakkında dava açılırsa **duruşmadan vareste tutulabilir**. Olayın mahiyeti ve kusurun derecesine göre, **İçişleri Bakanlığınca** durumu uygun görülen polisin vekâlet verdiği avukatın ücreti **Emniyet Genel Müdürlüğü bütçesine** konulacak ödenekten karşılanır. Usul ve esaslar yönetmelikte gösterilir.\n\n**Para ödülü:** 1481 sayılı Asayişe Müessir Bazı Fiillerin Önlenmesi Hakkında Kanuna göre, ilan edilerek aranan sanık ve hükümlülerin yerini bildirenlere ve yakalanmalarına yardımcı olanlara para ödülü verilebilir. Miktar, İçişleri Bakanlığınca çıkarılacak yönetmelikte belirlenir. Gider Emniyet Genel Müdürlüğü bütçesinden karşılanır. Ödül verilen kişilerin kimlikleri **rızaları olmadıkça hiçbir şekilde açıklanamaz**.",
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Teşhis, Ek 9 ve md 17: kısa tablo",
+      "rows": [
+        {
+          "label": "Teşhis işleminin tekrarı",
+          "value": "En az 2 kez",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Teşhise tâbi kişiler",
+          "value": "Birden fazla, aynı cinsten, görünüşte benzer",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Teşhiste numara",
+          "value": "Her kişide 1 numara",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Fotoğrafla teşhis",
+          "value": "Tek bir fotoğraf ya da aynı kişinin farklı fotoğrafları: yaptırılamaz",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Teşhis talimatı",
+          "value": "Cumhuriyet savcısı",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "Para ödülünün dayanağı",
+          "value": "1481 sayılı Kanun",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "label": "Avukat ücreti ve ödül gideri",
+          "value": "Emniyet Genel Müdürlüğü bütçesine konulacak ödenek",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "label": "Emre itaatsizlik ve mukavemette sonuç",
+          "value": "Karakol → evrakla birlikte adliye",
+          "refs": [
+            "17"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 6",
+        "Ek 9",
+        "17"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Ek 9: A bendi mi, B bendi mi?",
+      "rows": [
+        {
+          "aspect": "Silahın kullanıldığı hizmet",
+          "left": "Önleyici, caydırıcı, düzenleyici ve koruyucu kolluk hizmetleri",
+          "right": "Adliyeye ilişkin vazife ve işlerle ilgili hizmet",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "aspect": "Yapılacak işlem",
+          "left": "Ceza sorumluluğunun tespiti için Memurin Muhakematı Hakkında Kanuna göre işlem",
+          "right": "Hazırlık soruşturmasını bizzat Cumhuriyet savcıları veya yardımcıları yapar",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "aspect": "Duruşmadan vareste tutulma",
+          "left": "Sanık polis tutulabilir",
+          "right": "Sanık polis tutulabilir",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "aspect": "Avukat ücreti",
+          "left": "İçişleri Bakanlığınca uygun görülürse Emniyet Genel Müdürlüğü bütçesinden",
+          "right": "İçişleri Bakanlığınca uygun görülürse Emniyet Genel Müdürlüğü bütçesinden",
+          "refs": [
+            "Ek 9"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 9"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "19",
+          "refs": [
+            "16",
+            "17",
+            "Ek 4",
+            "Ek 6",
+            "Ek 9"
+          ]
+        },
+        {
+          "label": "md 16",
+          "value": "9 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md Ek 6",
+          "value": "6 soru",
+          "refs": [
+            "Ek 6"
+          ]
+        },
+        {
+          "label": "md Ek 9",
+          "value": "2 soru",
+          "refs": [
+            "Ek 9"
+          ]
+        },
+        {
+          "label": "md 17",
+          "value": "1 soru",
+          "refs": [
+            "17"
+          ]
+        },
+        {
+          "label": "md Ek 4",
+          "value": "1 soru",
+          "refs": [
+            "Ek 4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "16",
+        "17",
+        "Ek 4",
+        "Ek 6",
+        "Ek 9"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "16",
+        "17",
+        "Ek 4",
+        "Ek 6",
+        "Ek 9"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 16, 17, Ek 4, Ek 6, Ek 9, 10 soru",
+          "refs": [
+            "16",
+            "17",
+            "Ek 4",
+            "Ek 6",
+            "Ek 9"
+          ]
+        }
+      ]
+    }
+  ]
+}

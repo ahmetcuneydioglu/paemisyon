@@ -1,0 +1,503 @@
+{
+  "unit": {
+    "slug": "pvsk-umuma-acik-yerler",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "title": "Umuma açık yerler ve idari tedbirler",
+    "subtitle": "Ruhsat, idarî para cezası, faaliyetten men ve polisin men yetkileri",
+    "articleFrom": "6",
+    "articleTo": "Geçici 1",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK), md 6–8, 10–12, 14, 19, 21, Ek 1, Geçici 1",
+    "articleNos": [
+      "6",
+      "7",
+      "8",
+      "10",
+      "11",
+      "12",
+      "14",
+      "19",
+      "21",
+      "Ek 1",
+      "Geçici 1"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Umuma açık istirahat ve eğlence yeri nedir?",
+      "body": "Kişilerin tek tek veya toplu olarak eğlenmesi, dinlenmesi veya konaklaması için açılan yerler, kanunda **umuma açık istirahat ve eğlence yeri** sayılır. Bu yerler şunlardır:\n- otel, motel, pansiyon, kamping\n- gazino, pavyon, meyhane, bar, birahane, içkili lokanta, taverna\n- sinema, kahvehane, kıraathane\n- kumar ve kazanç kastı olmamak şartıyla, bilgi ve maharet artırıcı veya zeka geliştirici elektronik oyun yerleri\n- internet kafeler ve benzerleri\n\nŞunu da aklında tut: Bu faaliyetler sabit veya seyyar bir kara, deniz, hava ya da her çeşit taşıma aracında yapılıyorsa, o araç da umuma açık istirahat ve eğlence yeri sayılır. Ünitenin geri kalanı bu yerlerin ruhsatını, cezasını ve kapatılmasını anlatıyor.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 6: İdarî para cezası gerektiren hâller",
+      "body": "Umuma açık istirahat ve eğlence yerlerinden aşağıdakilerin **işletmecilerine** idarî para cezası verilir:\n1. Faaliyetten **geçici olarak men edildiği hâlde süresinden önce açılan** iş yerleri,\n2. **Açık ve kapalı bulunacağı saatlere** uymayan iş yerleri,\n3. **12 nci maddede belirtilen yasaklara** uymadığı tespit edilen iş yerleri,\n4. **Mevzuat hükümlerine aykırı** olarak işletilen iş yerleri.\n\nCezanın sınırları: beşyüzmilyon Türk Lirası ile birmilyar Türk Lirası arası.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 6: Cezayı kim verir, nasıl itiraz edilir?",
+      "body": "- **Belediye sınırları içinde:** belediye encümeni verir.\n- **Belediye sınırları dışında:** il daimi encümeni verir.\n- **Tebliğ:** Karar, 7201 sayılı Tebligat Kanunu hükümlerine göre ilgililere tebliğ edilir.\n- **İtiraz:** Tebliğ tarihinden itibaren **en geç yedi gün** içinde **yetkili idare mahkemesine** yapılır.\n- İtiraz, cezanın **yerine getirilmesini durdurmaz**. İtiraz üzerine verilen karar **kesindir**. Zaruret görülmeyen hâllerde itiraz evrak üzerinde incelenir ve en kısa sürede sonuçlandırılır.\n- **Tahsil:** 6183 sayılı Âmme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre yapılır.\n- **Tekrar:** Aynı fiiller **bir yıl içinde** tekrarlanırsa, en son uygulanan para cezası **bir kat artırılarak** uygulanır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Encümen mi, meclis mi?",
+      "body": "Soru kökü çoğu zaman cezayı veren makamı sorar. Şıklarda **belediye meclisi**, **il genel meclisi**, belediye başkanı ya da vali görürsün. Doğru cevap her zaman **encümen**dir: belediye sınırları içinde belediye encümeni, dışında il daimi encümeni.\n\nSık görülen bir tuzak daha var: \"İtiraz, cezanın yerine getirilmesini durdurur.\" Bu yanlıştır, itiraz cezanın yerine getirilmesini durdurmaz.\n\nSon olarak, sayılan hâllerin arasına **iç yönetmeliğine aykırı faaliyet göstererek umuma açık yer durumuna gelen lokal** sıkıştırılır. Bu hâl para cezası sebebi değildir. md 8'de geçici faaliyetten men sebebi olarak düzenlenmiştir.",
+      "articleRefs": [
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 7: Ruhsat",
+      "body": "- Ruhsat, **bağlı olduğu kolluk kuvvetinin görüşü alındıktan sonra** verilir.\n- **Belediye ve mücavir alan sınırları içinde:** ruhsatı belediyeler verir.\n- **Bu alanların dışında:** ruhsatı il özel idareleri verir.\n- Kolluk kuvveti görüşünü **yedi gün** içinde verir.\n- Ruhsat talepleri **bir ay** içinde sonuçlandırılır.\n- **İzin alınmadan açılan** umuma açık istirahat ve eğlence yerleri **kapatılır**.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 7: Alan tespiti, yönetmelik ve denetim",
+      "body": "- **Alan belirleme:** İş yerlerinin faaliyet göstereceği alanları belirlemeye ve mevcut yerleri bu amaçla ayrılan alanlarda toplamaya, belediye ve mücavir alan içinde **belediyeler**, dışında **il özel idareleri** yetkilidir.\n- **Usul ve esaslar:** Alanların tespiti ve ruhsatlandırmada uygulanacak usul ve esaslar, **İçişleri Bakanlığı**nın çıkaracağı **yönetmelik**le düzenlenir.\n- **Ruhsat örneği:** İş yeri açma ve çalışma ruhsatının bir örneği **yetkili kolluk kuvvetine** gönderilir.\n- **Denetim:** Bu yerler genel güvenlik ve asayiş yönünden **genel kolluk** tarafından denetlenir.\n- **İstisna:** Bu yerlerin ruhsatlandırılmasında 3572 sayılı Kanunun 5 inci ve 6 ncı maddeleri **uygulanmaz**.",
+      "articleRefs": [
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ruhsatta makam ve süre karışıklığı",
+      "body": "Ruhsat sorularında şıklar makamların yerini değiştirir. \"Belediye ve mücavir alan içinde il özel idaresi verir\" ya da \"mücavir alan dışında İçişleri Bakanlığı verir\" ifadelerinin ikisi de yanlıştır. Bakanlığın görevi ruhsat vermek değil, yönetmelik çıkarmaktır.\n\nSüre tuzağına da dikkat et: Ruhsat talebi **10 gün** içinde değil, **bir ay** içinde sonuçlanır. Kolluk görüşü için süre **yedi gün**dür.\n\nDenetim sorularında şıklarda ruhsatı veren idare, belediye zabıtası ya da özel güvenlik çıkar. Oysa genel güvenlik ve asayiş denetimi **genel kolluk**a aittir.\n\nTur teknesinde içkili eğlence verilmesi gibi bir durumda kanun, aracın umuma açık istirahat ve eğlence yeri sayılmasını yalnızca **faaliyetin icrasına** bağlar. Sabit ya da seyyar olması fark etmez. Limanda bağlı olma ya da mülkî amir kararı gibi ek bir şart aranmaz.",
+      "articleRefs": [
+        "7"
+      ],
+      "counterNumbers": [
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 8: Kat'i delille geçici faaliyetten men",
+      "body": "Polisçe **kat'i delil** elde edilmesi hâlinde, aşağıdaki yerler **mahallin en büyük mülkî amiri** tarafından **otuz günü geçmemek üzere** geçici süreyle faaliyetten men edilir:\n- **A)** Kumar oynanan umumî ve umuma açık yerler ile her çeşit özel ve resmî kurum ve kuruluşlara ait lokaller\n- **B)** Mevzuata aykırı şekilde uyuşturucu madde imal edilen, satılan, kullanılan, bulundurulan yerler\n- **C)** Mevzuata aykırı faaliyet gösteren genelevler, birleşme yerleri ve fuhuş yapılan evler ve yerler\n- **D)** Devletin ülkesi ve milletiyle bölünmez bütünlüğüne, Anayasal düzenine, genel güvenliğe ve genel ahlâka zararı dokunacak oyun oynatılan, temsil verilen, film veya video bant gösterilen yerler ile internet üzerinden yapılan yayınlara izin verilen yerler\n- **E)** Dernek, sendika, loca, kulüp, kamu kurumu niteliğindeki meslek kuruluşu ve benzerlerine ait, yalnız üyelerin yararlanması için açılan lokallerden, **birden fazla denetim sonunda ve yazılı ihtara rağmen** iç yönetmeliğine aykırı faaliyet göstererek umuma açık yer durumuna geldiği tespit edilenler\n- **F)** Her türlü denize elverişli araçla günübirlik tur düzenleyen veya mal ve hizmet satanlardan, faaliyetlerini duyururken ya da müşteri kabul ederken çevreyi veya müşteriyi rahatsız edecek yöntemler kullananlar",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 8: Ruhsatın iptali",
+      "body": "Bu maddedeki fiiller sebebiyle **bir yıl içinde üç defa** faaliyetten men edilen bir iş yerinde bu fiiller **tekrar işlenirse**:\n- İş yeri açma ve çalışma ruhsatı **iptal edilir**.\n- **İptal eden:** belediye veya il özel idaresi\n- **İptalin dayanağı:** mahallin en büyük mülkî amirinin bildirimi\n- **Süre:** **beş iş günü** içinde",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "md 8: Kim ve kaç gün?",
+      "body": "md 8 sorularında soru kökü hep aynı noktaya döner: **kim** ve **kaç gün**.\n\nKim: Doğru cevap mahallin en büyük mülkî amiridir. Cumhuriyet savcısı, sulh ceza hâkimi, belediye encümeni ya da il emniyet müdürü değildir.\n\nKaç gün: Doğru cevap **otuz günü geçmemek üzere**dir. Yirmi, on beş, on ya da altmış gün şıkları çeldiricidir.\n\nRuhsat iptali sorusunda da sonuçları karıştırma. Üç men sonrasında fiilin tekrarlanmasının sonucu, para cezasının bir kat artırılması değildir; o md 6'nın tekrar kuralıdır. Mülkî amirin iş yerini süresiz kapatması da değildir. Doğru cevap şudur: Ruhsat, mülkî amirin bildirimi üzerine belediye veya il özel idaresi tarafından **beş iş günü** içinde iptal edilir.",
+      "articleRefs": [
+        "8",
+        "6"
+      ],
+      "counterNumbers": [
+        20,
+        15,
+        10,
+        60
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ruhsat, para cezası ve men: süreler",
+      "rows": [
+        {
+          "label": "Kolluk kuvvetinin ruhsat görüşü",
+          "value": "yedi gün içinde",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Ruhsat taleplerinin sonuçlandırılması",
+          "value": "bir ay içinde",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "İdarî para cezasına itiraz",
+          "value": "tebliğden itibaren en geç yedi gün",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Para cezasında tekrar",
+          "value": "bir yıl içinde tekrar → en son ceza bir kat artırılır",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "İdarî para cezası aralığı",
+          "value": "beşyüzmilyon – birmilyar Türk Lirası",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Geçici faaliyetten men (azami)",
+          "value": "otuz gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Ruhsat iptalinin şartı",
+          "value": "bir yıl içinde üç defa men + fiilin tekrarı",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Ruhsat iptal süresi",
+          "value": "beş iş günü",
+          "refs": [
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 10: Kama, hançer, saldırma",
+      "body": "Taşınması memnu olan **kama, hançer ve saldırmanın** yalnızca taşınması yasak değildir. Bunların **yapılması ve satılması da yasaktır**.\n\n**İstisna:** Eski eserlerden olup **kıymetli** olanların **satışı** bu hükümden müstesnadır.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 11: Genel ahlak ve edebe aykırı davranışlar",
+      "body": "Polis, aşağıdakileri **herhangi bir müracaat veya şikâyet olmasa bile** engeller ve davranışlarının devamını durdurarak yasaklar:\n- **A)** Genel ahlak ve edep kurallarına aykırı olarak, utanç verici ve toplum düzeni bakımından tasvip edilmeyen tavır ve davranışta bulunanlar ile bu nitelikte söz, şarkı, müzik veya benzeri gösteri yapanlar\n- **B)** Çocuklar, kız ve kadınlar ile genç erkeklere sözle veya herhangi bir şekilde sarkıntılık edenler; kötü alışkanlıklara ve her türlü ahlaksızlığa yönelten ve teşvik edenler\n- **C)** Genel ahlâk ve edebe aykırı mahiyette her türlü sesli ve görüntülü eseri, kaydedildiği materyale bakılmaksızın üreten ve satanlar\n\n**Evrak:** Sanıklar hakkında düzenlenen evrak **derhal** adliyeye tevdi edilir. **Şikâyete bağlı suçlarda** ise evrak, şikâyet ve müracaat vuku bulduğu takdirde adliyeye tevdi edilir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 12: Küçükler ve içkili yerler",
+      "body": "- **Çalıştırma yasağı:** Kanunî istisnalar saklı kalmak üzere, eğlence, oyun, içki ve benzeri amaçlı, umuma açık ve açılması izne bağlı yerlerde **onsekiz yaşından küçükler çalıştırılamaz**.\n- **Giriş yasağı:** Polis; bar, pavyon, gazino, meyhane gibi içkili yerler ile kıraathane ve oyun oynatılan benzeri yerlere **onsekiz yaşını doldurmamış** küçüklerin girmesini, **yanlarında veli ve vasileri olsa bile** meneder.\n- **Aykırılık hâlinde:** Aykırı hareket edenler hakkında 17 nci madde, işyerleri hakkında ise 6 ncı madde hükümlerine göre işlem yapılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "md 12: Ne izin ne muvafakat",
+      "body": "Bu maddede çeldiricilerin ortak noktası \"izin\"dir. Velinin yanında bulunması, velinin yazılı muvafakati, işletmecinin izni ya da mülkî amirin izni yasağı kaldırmaz.\n\nŞıklarda \"On altı yaşını doldurmuş olan girebilir\" ya da \"çalışabilir\" ifadeleri çıkar. Kanunda böyle bir ara eşik yoktur; ölçü **onsekiz yaş**tır.\n\nYasak kız çocuklarıyla sınırlı değildir. Yalnızca müşteri olarak girmeyi değil, **çalıştırmayı** da kapsar. Saklı tutulan yalnızca **kanunî istisnalardır**.",
+      "articleRefs": [
+        "12"
+      ],
+      "counterNumbers": [
+        16
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 14: Gece gürültüsü",
+      "body": "Şehir ve kasabalarda, **gerek mesken içinde gerek dışında**, **saat 24'ten sonra** her ne suretle olursa olsun civar halkının rahat ve huzurunu bozacak surette gürültü yapanlar **polisçe men olunur**.\n- Bu yasağı dinlemeyenler hakkında Ceza Kanununun 546 ncı maddesine göre takibat yapılır.\n- **İstisna:** **Zabıtadan izin alınarak** yapılan düğün, müsamere ve balolar bu kayıttan müstesnadır.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "md 19 ve md 21: Çalışmaktan men",
+      "body": "- **md 19:** Polis; sokak, meydan ve umuma mahsus yerlerde intizamı temin eder. Seyrüsefer Talimatnamesindeki vasıflara uygun olmayan nakil vasıtalarını **işletmekten** men eder. Bu vasıtaları **sarhoş olarak** veya seyrüseferin intizam ve selametini bozacak surette idare edenleri de **çalışmaktan** men eder.\n- **md 21:** Bir neşir vasıtası için abone yazmak veya yazı, resim, ilan gibi bir madde kabul etmek maksadıyla, Matbuat Kanununa göre alınmış **vesikası olmaksızın** idare evlerinin dışında dolaşanlar veya dolaştırılanlar, şantajdan veya böyle bir harekette dolandırıcılıktan maznun olarak takibat altında bulunanlar, **polisçe bu yolda çalışmaktan menedilir**.",
+      "articleRefs": [
+        "19",
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Polis men eder, ceza vermez",
+      "body": "Bu maddelerde polisin yetkisi **men etmek, engellemek ve yasaklamak**tır.\n\n**md 19:** Şıklarda \"sürücü belgesini iptal eder\", \"doğrudan tutuklar\", \"aracı müsadere eder\" ya da \"hapis cezası verir\" ifadeleri çıkar. Doğrusu, polisin **sarhoş olarak idare edeni çalışmaktan men etmesi**dir.\n\n**md 14:** Gürültü yasağı **saat 22'den** değil, **saat 24'ten** sonra başlar ve **mesken içini de** kapsar. Yaptırım, encümenin vereceği para cezası değildir; polisçe men ve Ceza Kanununa göre takibattır.\n\n**md 11:** Polis müracaat veya şikâyet beklemeden engeller.\n\n**md 10:** Kama, hançer ve saldırmanın yapımı ve satışı izne bağlı değildir, yasaktır. Eski eser istisnası yalnızca **kıymetli** olanların **satışı** içindir.",
+      "articleRefs": [
+        "10",
+        "11",
+        "14",
+        "19"
+      ],
+      "counterNumbers": [
+        22
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ek 1: Oyun, temsil ve gösteri bildirimi",
+      "body": "- **Kim:** gerçek kişi veya topluluklar\n- **Nerede:** umumî veya umuma açık yerler ile umuma açık yer niteliğindeki ulaşım araçları\n- **Ne:** oyun ve temsil vermek veya çeşitli şekillerde gösteri düzenlemek\n- **Şart:** mahallin en büyük mülkî amirine **en az kırk sekiz saat önceden yazılı bildirim**\n- **Bildirimin içeriği:** oyun veya temsile katılan yönetici ve diğer kişilerin **kimlik, ikametgâh ve tâbiiyetleri**\n- **Aykırılık hâlinde:** Devletin ülkesi ve milleti ile bölünmez bütünlüğüne, Anayasal düzene veya genel ahlâka aykırı olduğu tespit edilenler hakkında mülkî amir **derhal Cumhuriyet savcılığına suç duyurusunda** bulunur.\n\nDikkat: Aranan şey izin değil, **bildirim**dir.",
+      "articleRefs": [
+        "Ek 1"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ek 1: Saat ve merci",
+      "body": "Ek 1 sorularında şıklar saatle oynar: yirmi dört saat, yetmiş iki saat gibi. Doğrusu **en az kırk sekiz saat**tir.\n\nMerci de karıştırılır. Bildirim emniyet müdürlüğüne değil, **mahallin en büyük mülkî amirine** yapılır. Buradaki \"mahallin\" sözcüğü önemlidir: Bildirim, oyun ya da gösteri nerede yapılacaksa o yerin en büyük mülkî amirine gider.\n\nİşlemin türüne de dikkat et. Bu bir izin başvurusu değil, **yazılı bildirim**dir. Aykırılık tespit edildiğinde kanunun öngördüğü işlem ise **derhal Cumhuriyet savcılığına suç duyurusu**dur.",
+      "articleRefs": [
+        "Ek 1"
+      ],
+      "counterNumbers": [
+        24,
+        72
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin kalan sayıları",
+      "rows": [
+        {
+          "label": "Geçici faaliyetten men (azami)",
+          "value": "otuz gün",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Çalıştırma ve giriş yasağında yaş sınırı",
+          "value": "onsekiz yaşından küçükler",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Gürültü yasağının başlangıcı",
+          "value": "saat 24'ten sonra",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Oyun, temsil ve gösteri bildirimi",
+          "value": "en az kırk sekiz saat önceden, yazılı",
+          "refs": [
+            "Ek 1"
+          ]
+        },
+        {
+          "label": "Mülkî amirliklerce izin verilmiş yerlerin işlem dosyalarının belediye veya il özel idaresine devri",
+          "value": "yürürlükten itibaren en geç üç ay",
+          "refs": [
+            "Geçici 1"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "8",
+        "12",
+        "14",
+        "Ek 1",
+        "Geçici 1"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "md 6 ve md 8: İdarî para cezası ile faaliyetten men",
+      "rows": [
+        {
+          "aspect": "Yaptırım",
+          "left": "md 6: İşletmeciye idarî para cezası",
+          "right": "md 8: Geçici süreyle faaliyetten men",
+          "refs": [
+            "6",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Yetkili makam",
+          "left": "Belediye sınırları içinde belediye encümeni, dışında il daimi encümeni",
+          "right": "Mahallin en büyük mülkî amiri",
+          "refs": [
+            "6",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Uygulandığı hâller",
+          "left": "Men süresinden önce açılma, açılış-kapanış saatlerine uymama, 12 nci madde yasaklarına uymama, mevzuata aykırı işletme",
+          "right": "Polisçe kat'i delil elde edilmesi hâlinde kumar, uyuşturucu, fuhuş, zararlı oyun ve yayın yerleri, umuma açık yer durumuna gelen lokaller, rahatsız edici tur ve satış faaliyetleri",
+          "refs": [
+            "6",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Miktar veya süre",
+          "left": "beşyüzmilyon – birmilyar Türk Lirası",
+          "right": "otuz günü geçmemek üzere",
+          "refs": [
+            "6",
+            "8"
+          ]
+        },
+        {
+          "aspect": "Tekrarın sonucu",
+          "left": "Bir yıl içinde tekrar: en son ceza bir kat artırılır",
+          "right": "Bir yıl içinde üç defa men ve fiilin tekrarı: ruhsat beş iş günü içinde belediye veya il özel idaresince iptal edilir",
+          "refs": [
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "19",
+          "refs": [
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "14",
+            "19",
+            "21",
+            "Ek 1",
+            "Geçici 1"
+          ]
+        },
+        {
+          "label": "md 6",
+          "value": "4 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7",
+          "value": "4 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 8",
+          "value": "3 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 12",
+          "value": "2 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md Ek 1",
+          "value": "2 soru",
+          "refs": [
+            "Ek 1"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 21, md Geçici 1",
+          "refs": [
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "14",
+            "19",
+            "21",
+            "Ek 1",
+            "Geçici 1"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "6",
+        "7",
+        "8",
+        "10",
+        "11",
+        "12",
+        "14",
+        "19",
+        "21",
+        "Ek 1",
+        "Geçici 1"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "6",
+        "7",
+        "8",
+        "10",
+        "11",
+        "12",
+        "14",
+        "19",
+        "21",
+        "Ek 1",
+        "Geçici 1"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 6–8, 10–12, 14, 19, 21, Ek 1, Geçici 1, 10 soru",
+          "refs": [
+            "6",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12",
+            "14",
+            "19",
+            "21",
+            "Ek 1",
+            "Geçici 1"
+          ]
+        }
+      ]
+    }
+  ]
+}

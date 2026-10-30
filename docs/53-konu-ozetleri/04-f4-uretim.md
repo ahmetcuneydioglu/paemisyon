@@ -49,3 +49,49 @@ Okunan dört ünite (Genel esaslar, Yasama II, Yürütme I, Yargı I'in ilgili k
   yeter sayı kartı düzenlenince `ceil` reddedilir.
 - F5: üniteler alt konu olur (hâkimiyet, koç reçetesi).
 - Diğer dersler: polis mevzuatı kanun bazında aynı hat.
+
+---
+
+# PVSK — 5 ünite (31 Ekim 2026)
+
+Durum: **üretildi ve doğrulandı; yükleme deploy sonrası** (ünite madde listesi sütunu migration ister).
+Kaynak dosyalar `uniteler/pvsk-*.{json,md}`; girdiler gitignore'da.
+
+## Hat genişletmesi (commit 9cab4f8)
+
+PVSK'da sınavın kalbi sayısal olmayan maddeler (4/A, 13/A, Ek 6, Ek 7, Geçici 2); aralık (`articleFrom–articleTo`)
+bunları hiçbir üniteye düşürmüyordu. `SummaryUnit.articleNos` (açık liste; boş = aralık, Anayasa aynen çalışır):
+
+- Eşleme `unite-eslesme.ts`: liste doluysa küme üyeliği (`articleKey`: "84/2"→"84"; "4/A", "Ek 6", "Geçici 2" korunur).
+  Hâkimiyet kancası ve `unite-ilerleme-doldur.ts` aynı `unitOfArticle`'ı kullanır (betikteki aralık kopyası kaldırıldı).
+- `articleLabel` ("22–28, Ek 5, Ek 7, Ek 10, Geçici 2") API yanıtlarında; admin, web ve Expo `md from–to` yerine onu basar.
+- `ozet-girdi.ts --articles "1,2,4,4/A,5"` (olmayan madde hata); `ozet-uret` listeyi isteme ve `sourceLabel`'a yazar;
+  içe aktarma ve admin "Ünite bilgilerini düzenle" formu listeyi kanuna karşı doğrular.
+- Doğrulayıcı: "md 4/A", "Ek 6", "Geçici 2", "ek madde 9" atıfları sayı sayılmaz (Anayasa "md 1–6" kuralı korunur).
+  Testler: `unite-eslesme.spec` 11, `ozet-dogrulayici.spec` +3 (59/59).
+
+## Üniteler
+
+| # | Ünite | Maddeler | Kart | Bağlı soru | Üretim notu |
+|---|---|---|---|---|---|
+| 1 | Görev, emir ve kimlik | 1, 2, 4, 4/A, 5 | 23 | 18 | temiz (0 kusur) |
+| 2 | Umuma açık yerler ve idari tedbirler | 6–8, 10–12, 14, 19, 21, Ek 1, Geçici 1 | 24 | 19 | temiz |
+| 3 | Önleme araması, koruma altına alma ve yakalama | 9, 13, 13/A, 15, 20, Ek 2, Ek 3 | 24 | 20 | temiz |
+| 4 | Zor ve silah kullanma, adli görev | 16, 17, Ek 4, Ek 6, Ek 9 | 24 | 19 | temiz |
+| 5 | Teşkilat ve genel hükümler | 22–28, Ek 5, Ek 7, Ek 10, Geçici 2 | 24 | 13 | temiz; Ek 7 tazeleme gerekmedi (bankadaki metin kaynakla birebir) |
+
+Toplam 119 kart, 89 bağlı soru (konudaki 96 yayında sorunun maddeye bağlı olanlarının tamamı). Mülga 3, 18, Ek 8 ünite dışı.
+Model çıktısı: giriş 10–11k, çıkış 17–26k token / ünite; 4 ünite paralel üretildi, tekrar gerekmedi.
+
+## İnsan incelemesi için notlar
+
+Betik sayı ve referansı doğrular, anlamı doğrulamaz. Özellikle: tuzak kartlarındaki olumsuz iddialar ("X maddede sayılmaz"),
+Ek 7'de "Başbakanlık Teftiş Kurulu" ibaresi (metinde hâlâ böyle geçiyor; kart metne sadık), 4/A ve Ek 6'daki Anayasa
+Mahkemesi iptal notlarının doğru fıkraya bağlanması, "Sınav der ki" satırlarındaki sınav adları.
+
+## Sıradaki
+
+- Deploy (9cab4f8) → `ozet-yukle.ts uniteler/pvsk-<slug>.json --replace` ×5 (in_review) → panelden ünite ünite inceleme ve yayın.
+  Doc 53 karar 8: ünite 1–2 açık, 3–5 premium ("Ünite bilgilerini düzenle").
+- Yayın sonrası `unite-ilerleme-doldur.ts` (geçmiş cevaplardan PVSK hâkimiyeti; artık 4/A, Ek, Geçici sorular da sayılır).
+- Sonraki kanunlar aynı hat: 3201, 7068, 5271 (CMK) … madde listesi `--articles` ile.

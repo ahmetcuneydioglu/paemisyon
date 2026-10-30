@@ -1,0 +1,499 @@
+{
+  "unit": {
+    "slug": "pvsk-onleme-aramasi-yakalama",
+    "legislationSlug": "2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk",
+    "topicId": "65aef8de-07cb-49f6-8665-00adc0ef5754",
+    "title": "Önleme araması, koruma altına alma ve yakalama",
+    "subtitle": "Arama kararı ve yerleri, yakalama hâlleri, kayıp çocuk tedbiri, ifade alma, konut ve üniversiteye giriş, gözaltı masrafı, adresten ayrılmama",
+    "articleFrom": "9",
+    "articleTo": "Ek 3",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 2559 Sayılı Polis Vazife ve Salâhiyet Kanunu (PVSK), md 9, 13, 13/A, 15, 20, Ek 2, Ek 3",
+    "articleNos": [
+      "9",
+      "13",
+      "13/A",
+      "15",
+      "20",
+      "Ek 2",
+      "Ek 3"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Önleme araması: suçtan önce gelen arama",
+      "body": "Önleme araması, bir suç işlendikten sonra yapılan bir işlem değildir. Amacı **tehlikenin veya suç işlenmesinin önlenmesi**dir. Polis bu aramada kişilerin üstlerini, araçlarını, özel kâğıtlarını ve eşyasını arar ve alınması gereken tedbirleri alır. Arama sırasında bir suç delili çıkarsa onu koruma altına alır. Bundan sonraki işlemleri 5271 sayılı Ceza Muhakemesi Kanunu hükümlerine göre yapar. Aklında şöyle kalsın: amaç önlemektir, delil çıkarsa iş Ceza Muhakemesi Kanunu'na geçer.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Arama kimin kararıyla, hangi içerikle yapılır?",
+      "body": "**Kural:** Usûlüne göre verilmiş **sulh ceza hâkiminin kararı** gerekir.\n**İstisna:** Gecikmesinde sakınca bulunan hâllerde **mülkî âmirin yazılı emri** yeterlidir.\n\n**Talep yazısı:** Arama için makul sebeplerin oluştuğu, gerekçeleriyle birlikte gösterilir.\n\n**Kararda veya emirde şunlar belirtilir:**\na) Aramanın sebebi\nb) Aramanın konusu ve kapsamı\nc) Aramanın yapılacağı yer\nç) Aramanın yapılacağı zaman ve geçerli olacağı süre\n\n**Sonuç:** Önleme aramasının sonucu, arama kararını veya emrini veren merci ya da makama bir **tutanakla** bildirilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Merci ve içerik: şıklar burada ayrışır",
+      "body": "Gecikmesinde sakınca bulunan hâlde yazılı emri **mülkî âmir** verir. Şıklarda Cumhuriyet savcısı, il emniyet müdürü, Emniyet Genel Müdürü, kolluk amiri, asliye ceza hâkimi, idare mahkemesi hâkimi ya da ağır ceza mahkemesi başkanı görürsen bunları ele. Olağan yolda karar veren de **sulh ceza hâkimi**dir, başka bir hâkim değildir.\n\nKararda veya emirde belirtilecekler şunlardır: sebep, konu ve kapsam, yer, zaman ve süre. 'Aramayı yapacak görevlilerin açık kimlikleri' bu listede yer almaz. Bu, sık kullanılan bir yanlış şıktır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Önleme araması nerelerde yapılabilir?",
+      "body": "**Yapılabilecek yerler:**\na) 2911 sayılı Toplantı ve Gösteri Yürüyüşleri Kanunu kapsamındaki toplantı ve gösteri yürüyüşlerinin yapıldığı yer veya yakın çevresi\nb) Özel hukuk tüzel kişileri, kamu kurumu niteliğindeki meslek kuruluşları veya sendikaların genel kurul toplantılarının yapıldığı yerin **yakın çevresi**\nc) Halkın topluca bulunduğu veya toplanabileceği yerler\nç) Her derecede eğitim ve öğretim kurumları: idarecilerinin talebiyle, içinde, yakın çevrelerinde, giriş ve çıkışlarında. Yüksek öğretim kurumlarına md 20'nin ikinci fıkrasının (A) bendindeki koşula uygun olarak girilir.\nd) Umumî veya umuma açık yerler\ne) Her türlü toplu taşıma aracı ve seyreden taşıtlar\n\n**Gecikmesinde sakınca var sayılan hâller:** Spor karşılaşması, miting, konser, festival, toplantı ve gösteri yürüyüşünün düzenlendiği ya da aniden toplulukların oluştuğu hâller.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Önleme aramasının yasak bölgesi",
+      "body": "Bu konudaki soru genellikle 'hangisinde yapılamaz?' diye gelir ve yanlış şıkların çoğu izin verilen yerler listesinden alınır. Doğru cevap hep aynı kümedir: **konut, yerleşim yeri, kamuya açık olmayan işyerleri ve bunların eklentileri**. Toplu taşıma araçlarında, halkın toplandığı yerde, sendika genel kurulunun yakın çevresinde ve toplantı ve gösteri yürüyüşü alanında arama yapılabilir. Bir ayrıntıya daha dikkat et: genel kurul toplantılarında metin 'yapıldığı yerin **yakın çevresi**' der, toplantı yerinin içinden söz etmez.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bina ve tesis girişinde emir veya karar aranmaz",
+      "body": "Polis, güvenliğini sağladığı bina ve tesislere gelenlerin üstünü, aracını ve eşyasını teknik cihazlarla, gerektiğinde el ile kontrol eder ve arar. Amaç tehlikenin önlenmesi veya bertaraf edilmesidir. Bu yetki için **herhangi bir emir veya karar aranmaz**. Bu yüzden 'hâkim kararı şart', 'mülki amirin yazılı emri şart', 'yalnızca kişinin rızasıyla' ya da 'yalnızca olağanüstü hâlde' diyen şıklar yanlıştır. Bu yerlere girmek isteyenler kimliklerini **sorulmaksızın** ibraz etmek zorundadır. Milletlerarası anlaşmalar hükümleri saklıdır.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Md 13: durumun niteliğine göre seçilen işlem",
+      "body": "Md 13, polisin belirli kişilere karşı neler yapacağını sayar. Burada tek bir işlem yoktur. Polis, **eylemin veya durumun niteliğine göre** kişiyi **koruma altına alır, uzaklaştırır ya da yakalar** ve gerekli kanuni işlemleri yapar. Hangi işlemin seçileceğini olayın kendisi belirler. Şunu da unutma: yakalanması belirli bir usule bağlanmış kişilerle ilgili kanun hükümleri saklıdır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Polisin işlem yaptığı hâller (A–H)",
+      "body": "**A)** Suçüstü hâlinde veya gecikmesinde sakınca bulunan diğer hâllerde, suç işlendiğine veya suça teşebbüs edildiğine dair haklarında kuvvetli iz, eser, emare veya delil bulunan şüpheliler\n**B)** Haklarında yetkili mercilerce verilen yakalama veya tutuklama kararı bulunanlar\n**C)** Halkın rahatını bozacak veya rezalet çıkaracak derecede sarhoş olanlar; sarhoşluk hâlinde başkalarına saldıranlar; uyarılara rağmen bu hareketlerine devam edenler, başkalarına saldırmaya yeltenenler ve kavga edenler\n**D)** Usulüne aykırı şekilde ülkeye girenler ya da haklarında sınır dışı etme veya geri verme kararı alınanlar\n**E)** Polisin kanunlara uygun olarak aldığı tedbirlere karşı gelenler, direnenler ve görev yapmasını engelleyenler\n**F)** Bir kurumda tedavi, eğitim ve ıslah için alınan tedbirlerin yerine getirilmesi amacıyla; toplum için tehlike teşkil eden akıl hastası, uyuşturucu madde veya alkol bağımlısı serseri veya hastalık bulaştırabilecek kişiler. Bu tedbirler kanunlarla ve Cumhurbaşkanınca çıkarılan yönetmelikteki esaslara uygun olarak alınır.\n**G)** Haklarında gözetim altında ıslahına veya yetkili merci önüne çıkarılmasına karar verilen küçükler\n**H)** Başkalarının can güvenliğini tehlikeye düşürenler",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Md 13'te şıklar nerede kayar?",
+      "body": "**İşlemler:** 'Yalnızca yakalar', 'yalnızca koruma altına alır', 'yalnızca uzaklaştırır ya da yakalar' ve 'doğrudan gözaltına alır ve tutuklar' şıkları yanlıştır. Doğrusu şudur: polis kişiyi koruma altına alır, uzaklaştırır ya da yakalar.\n\n**H bendi:** Listenin sonundaki hâli atlama: başkalarının can güvenliğini tehlikeye düşürenler. Şıklarda sarhoşlar, usulüne aykırı şekilde ülkeye girenler, hakkında karar bulunanlar ve küçükler de geçer. Bunların hepsi listede vardır, bu yüzden soruda hangi bendin hangi hâli anlattığına dikkat et.\n\n**Olay sorusu:** Uyarıya rağmen çevresindekilere saldırmaya yeltenen bir sarhoş C bendine girer. Bu durumda dayanak, yakalama yetkisini düzenleyen md 13'tür.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakalanan kişiye ne yapılır?",
+      "body": "- **Tedbir:** Kişinin kaçmasını veya saldırmasını önlemek için, sağlığına zarar vermeyecek şekilde her türlü tedbir alınabilir.\n- **Sebebin bildirilmesi:** Yakalama sebebi herhalde yazılı olarak, bu mümkün değilse sözlü olarak **derhal** bildirilir. Toplu suçlarda en geç kişi hâkim huzuruna çıkarılıncaya kadar bildirilir.\n- **Yakınlara bildirim:** Kişinin yakalandığı, istediği kanunî yakınlarına derhal bildirilir.\n- **Tabip raporu:** Şu kişilerin yakalanma anındaki sağlık durumu tabip raporuyla tespit edilir:\n  A) Uyuşturucu madde kullanmış olanlar ile sarhoş olanlar\n  B) Zor kullanılarak yakalananlar\n  C) Haklarında suç soruşturması yapılacak olan şüpheli ve sanıklar\n- **Sonrası:** Suç işlediği şüphesi altında olanlar adlî mercilere sevk edilir. Haklarında ıslah veya tedavi tedbiri alınması gerekenler, ilgili kurum yetkilileri tarafından teslim alınır. Yakalama sebebi ortadan kalkanlar **derhal serbest** bırakılır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tabip raporu, bildirim ve serbest bırakma",
+      "body": "**Tabip raporu:** Rapor tek bir grupla sınırlı değildir. Uyuşturucu madde kullanmış olanlar ile sarhoşlar, zor kullanılarak yakalananlar ve haklarında suç soruşturması yapılacak şüpheli ve sanıklar birlikte sayılır. 'Yalnızca zor kullanılanlar' ya da 'yalnızca şüpheliler' diyen şıklar eksiktir. 'Yakalanan herkes, istisnasız' diyen şık ise fazladır. Metinde yaşa bağlı bir ölçüt de yoktur.\n\n**Bildirim:** 'Yalnızca yazılı', 'yalnızca sözlü', 'savcının takdirinde' ya da 'toplu suçlarda hiç bildirilmez' diyen şıklar yanlıştır. Kural şudur: yazılı, olmazsa sözlü ve derhal. Toplu suçlarda ise en geç hâkim huzuruna çıkarılıncaya kadar.\n\n**Serbest bırakma:** Yakalama sebebi ortadan kalktıysa kişi **derhal** serbest bırakılır. 'Sebep kalksa da kişi bir süre gözaltında tutulur' diyen her şık yanlıştır.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Md 9 ve md 13: zaman ölçüleri",
+      "rows": [
+        {
+          "label": "Önleme araması kararında veya emrinde zaman",
+          "value": "Aramanın yapılacağı zaman ve geçerli olacağı süre belirtilir",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Gecikmesinde sakınca var sayılan hâller",
+          "value": "Spor karşılaşması, miting, konser, festival, toplantı ve gösteri yürüyüşü, aniden oluşan topluluk",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Arama sonucunun bildirilmesi",
+          "value": "Tutanakla, kararı veya emri veren merci ya da makama",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Yakalama sebebinin bildirilmesi",
+          "value": "Derhal; yazılı, mümkün değilse sözlü",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Toplu suçlarda yakalama sebebinin bildirilmesi",
+          "value": "En geç hâkim huzuruna çıkarılıncaya kadar",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Yakalamanın yakınlara bildirilmesi",
+          "value": "Derhal (istediği kanunî yakınlarına)",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Yakalama sebebi ortadan kalkınca",
+          "value": "Derhal serbest bırakma",
+          "refs": [
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kayıp çocuk tedbiri (md 13/A)",
+      "body": "**Amaç:** Kaybolan çocukların bulunması.\n**Karar veya emir:** Sulh ceza hâkimi karar verir. Gecikmesinde sakınca bulunan hâllerde mülki idare amirinin **yazılı** emri ya da **sonradan yazılı hâle getirilmek üzere sözlü** emri yeterlidir.\n**Polisin yapabilecekleri:** Bu yetkiler, kayıp çocuğa ait olan ya da başkasına ait olup kayıp çocuk tarafından kullanılanlar için geçerlidir:\n- Her türlü banka hesap hareketlerini talep etmek\n- Telekomünikasyon yoluyla iletişimini denetlemek\n- Sinyal bilgilerini değerlendirmek\n**Süre:** Tedbir kararı en çok bir ay için verilir. Bu süre bir defaya mahsus olmak üzere bir ay daha uzatılabilir.\n**Denetim:** Mülki idare amirinin kararı **derhal** mahkemenin onayına sunulur. Mahkeme kararını en geç yirmi dört saat içinde verir.",
+      "articleRefs": [
+        "13/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kayıp çocukta önce 'derhal', sonra yirmi dört saat",
+      "body": "**Onay:** Sıralamayı doğru kur. Mülki idare amirinin kararı **derhal** mahkemeye sunulur, ardından **mahkeme** en geç yirmi dört saat içinde karar verir. Şu şıklar yanlıştır: 'yirmi dört saat içinde sunulur, kırk sekiz saatte karar verilir', 'bir hafta içinde sunulur', 'mahkeme onayı aranmaz' ve 'yalnızca savcı onaylar'.\n\n**Süre:** İlk karar en çok bir ay için verilir. Uzatma **bir defaya mahsus** ve bir aydır. Böylece ulaşılabilecek tavan iki aydır, ama bu ilk kararın süresi değildir. 'Üç ay, uzatılamaz', 'on beş gün' ve 'çocuk bulununcaya kadar' şıklarının metinde karşılığı yoktur.",
+      "articleRefs": [
+        "13/A"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 2,
+          "expr": "1 + 1",
+          "refs": [
+            "13/A"
+          ]
+        }
+      ],
+      "counterNumbers": [
+        48,
+        3,
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İfade için çağırma ve ifadenin yerinde alınması",
+      "body": "- Polis, yaptığı tahkikat esnasında ifadelerine müracaat lazımgelen kimseleri **çağırır** ve kendilerine lüzumu olan şeyleri sorar.\n- Polis; **müşteki, mağdur veya tanık** ifadelerini, **talepleri hâlinde** ikamet ettikleri yerlerde veya işyerlerinde de alabilir.\n- Bu fıkranın kapsamı ile uygulanmasına ilişkin usul ve esaslar **İçişleri Bakanlığınca** belirlenir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Evde ifade: kim için, hangi şartla?",
+      "body": "Bu imkân **şüpheli** için öngörülmemiştir. Metinde sayılanlar müşteki, mağdur ve tanıktır. Şart da bu kişilerin **talebidir**. Polis ifadeyi kendiliğinden evde almak zorunda değildir; metin 'de alabilir' der. 'Savcının yazılı talimatı gerekir' ya da 'yalnızca engelli veya yaşlı tanıklar için geçerlidir' gibi şartlar metinde yoktur. Usul ve esasları da İçişleri Bakanlığı belirler.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Konut, iş yeri ve üniversiteye giriş",
+      "body": "**Konutlar, iş yerleri ve eklentileri:** Zabıta şu hâllerde girebilir:\n- İmdat istenmesi\n- Yangın, su baskını ve boğulma gibi büyük tehlikelerin haber verilmesi veya görülmesi\n- Ağır cezalı bir suçun işlenmesine veya yapılmakta devam olunmasına mani olmak\n\n**Üniversite, bağımsız fakülte veya üniversiteye bağlı kurumların binaları ve ekleri:**\n- **(A)** Kurumun imkânlarıyla önlenmesi mümkün görülmeyen olayların çıkması ihtimali karşısında **rektör**, acele hâllerde ise **dekan veya bağlı kuruluş yetkilileri** zabıtadan yardım talep ederse girebilir. Bu talep **derhal** yerine getirilir.\n- **(B)** Suç ve suçluların kovuşturulması için, herhangi bir davet veya izne bağlı olmaksızın **her zaman** girebilir.\n\nİlgili kurumlar, kovuşturma dolayısıyla zabıta kuvvetlerine gereken her türlü yardım ve kolaylığı göstermekle yükümlüdür.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üniversite ve konut girişinde yanlış şıklar",
+      "body": "**Acele hâl:** Olağan yolda yardımı rektör ister. Acele hâllerde ise **dekan veya bağlı kuruluş yetkilileri** talep eder. 'Yalnızca rektör', 'genel sekreter', 'öğrenci temsilcisi' ve 'Yükseköğretim Kurulu Başkanı' şıkları yanlıştır.\n\n**Kovuşturma:** Suç ve suçluların kovuşturulması için zabıta, davet veya izin beklemeden **her zaman** girer. Şu şıkları ele: 'her hâlde rektörün yazılı izni gerekir', 'yalnızca savcı kararıyla girilir', 'yalnızca mülki amirin yazılı emriyle girilir' ve 'hiçbir surette girilemez'.\n\n**Konut ve iş yeri:** Giriş hâlleri sınırlıdır: imdat istenmesi, büyük tehlikeler ve ağır cezalı bir suçun işlenmesine veya devamına mani olmak. Kabahat failinin kimliğini tespit etmek bu listede yer almaz.",
+      "articleRefs": [
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gözaltı masrafları",
+      "body": "Gözaltına alınanların **yeme, içme** ihtiyaçlarına ve **nakillerine** ait masraflar, **Emniyet Genel Müdürlüğü bütçesine** konulacak ödenekle karşılanır.\n\nYanlış şıklarda sık görülenler şunlardır: masrafın kişinin kendisinden tahsil edilmesi, Adalet Bakanlığı bütçesi, il özel idaresi bütçesi ve İçişleri Bakanlığı örtülü ödeneği. Bunların hiçbiri metinde yer almaz.",
+      "articleRefs": [
+        "Ek 2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adresten ayrılmama istemi",
+      "body": "Polis, gerekli görülen kişilerden, tespit edilmiş ikametgâh veya iş adreslerinden ayrılmamalarını **yazılı olarak** isteyebilir. Bu istem şu hâllerde yapılır:\n- **(A)** Devletin bütünlüğü, genel güvenliği ve Anayasa düzeni ile kaçakçılık ve uyuşturucu maddelerle ilgili suç soruşturmalarında ifadesine başvurulacak olanlar\n- **(B)** Vatandaşlık durumu ile md 17'de belirtilen kimlik tespiti yapılıncaya kadar\n\n**Ayrılma izni:** Kişi bulunabileceği yeni adresi bildirirse, **mahallin en büyük mülki amirinin yazılı emriyle** izin verilir.\n\nŞıklarda dikkat et: istem sözlü değil yazılıdır. İzni polis, hâkim, savcı ya da Bakanlık değil, mülki amir verir. 'Ayrılmaya hiçbir şekilde izin verilemez' diyen şık da yanlıştır.",
+      "articleRefs": [
+        "Ek 3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kayıp çocuk tedbiri ve diğer süreler",
+      "rows": [
+        {
+          "label": "Tedbir kararının süresi",
+          "value": "En çok bir ay",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Uzatma",
+          "value": "Bir defaya mahsus, bir ay daha",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Ulaşılabilecek toplam azami süre",
+          "value": "İki ay",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Mülki idare amiri kararının mahkemeye sunulması",
+          "value": "Derhal",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Mahkemenin onay kararı",
+          "value": "En geç 24 saat içinde",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "Üniversitede (A) bendi kapsamındaki yardım talebi",
+          "value": "Derhal yerine getirilir",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "Ek 3 (B) kapsamında ayrılmama istemi",
+          "value": "Kimlik tespiti yapılıncaya kadar",
+          "refs": [
+            "Ek 3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13/A",
+        "20",
+        "Ek 3"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 2,
+          "expr": "1 + 1",
+          "refs": [
+            "13/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Önleme araması (md 9) ile kayıp çocuk tedbiri (md 13/A)",
+      "rows": [
+        {
+          "aspect": "Dayanak",
+          "left": "md 9 — önleme araması",
+          "right": "md 13/A — kayıp çocuk tedbiri",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Amaç",
+          "left": "Tehlikenin veya suç işlenmesinin önlenmesi",
+          "right": "Kaybolan çocukların bulunması",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Olağan karar mercii",
+          "left": "Sulh ceza hâkimi",
+          "right": "Sulh ceza hâkimi",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Gecikmesinde sakınca bulunan hâlde",
+          "left": "Mülkî âmirin yazılı emri",
+          "right": "Mülki idare amirinin yazılı veya sonradan yazılı hâle getirilmek üzere sözlü emri",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Yetkinin içeriği",
+          "left": "Üst, araç, özel kâğıt ve eşya araması",
+          "right": "Banka hesap hareketlerini talep, iletişimi denetleme, sinyal bilgilerini değerlendirme",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "Kararda veya emirde aramanın zamanı ve geçerli olacağı süre belirtilir",
+          "right": "En çok bir ay; bir defaya mahsus bir ay daha",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        },
+        {
+          "aspect": "Sonradan denetim",
+          "left": "Sonuç, kararı veya emri veren merci ya da makama tutanakla bildirilir",
+          "right": "Mülki idare amirinin kararı derhal mahkeme onayına sunulur; mahkeme en geç 24 saatte karar verir",
+          "refs": [
+            "9",
+            "13/A"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "13/A"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "20",
+          "refs": [
+            "9",
+            "13",
+            "13/A",
+            "15",
+            "20",
+            "Ek 2",
+            "Ek 3"
+          ]
+        },
+        {
+          "label": "md 9",
+          "value": "6 soru",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "md 13",
+          "value": "6 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "md 20",
+          "value": "3 soru",
+          "refs": [
+            "20"
+          ]
+        },
+        {
+          "label": "md 13/A",
+          "value": "2 soru",
+          "refs": [
+            "13/A"
+          ]
+        },
+        {
+          "label": "md 15",
+          "value": "1 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "9",
+            "13",
+            "13/A",
+            "15",
+            "20",
+            "Ek 2",
+            "Ek 3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "9",
+        "13",
+        "13/A",
+        "15",
+        "20",
+        "Ek 2",
+        "Ek 3"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "9",
+        "13",
+        "13/A",
+        "15",
+        "20",
+        "Ek 2",
+        "Ek 3"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 9, 13, 13/A, 15, 20, Ek 2, Ek 3, 10 soru",
+          "refs": [
+            "9",
+            "13",
+            "13/A",
+            "15",
+            "20",
+            "Ek 2",
+            "Ek 3"
+          ]
+        }
+      ]
+    }
+  ]
+}
