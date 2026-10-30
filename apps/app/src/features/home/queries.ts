@@ -14,17 +14,54 @@ export interface DailyFocus {
   label: string | null;
 }
 
-export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room";
+export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room" | "home_next" | "home_route" | "home_for_you";
 
 export interface TodayTaskAction {
-  type: "start_session" | "resume_session" | "open_exams";
+  /** open_summary (Doc 49/16): konu özeti ünitesi (`route` = /ozet/<slug>). */
+  type: "start_session" | "resume_session" | "open_exams" | "open_summary";
   label: string;
   count?: number;
   recipe?: "coach" | "comeback";
   focus?: DailyFocus;
+  /** Ünite reçetesi: yalnız bu maddelerin soruları (Doc 53 F5-2). */
+  articleNos?: string[];
   sessionId?: string;
   route?: string;
   source: HomeSource;
+}
+
+/* ── Bugün v3 (Doc 49/16): tek adım + rota + senin için; karar sunucuda (API coach/home-v3.types.ts). ── */
+export type NextStepKind = "exam" | "resume" | "summary_then_questions" | "questions" | "review" | "done";
+export interface NextStep {
+  kind: NextStepKind;
+  eyebrow: string;
+  title: string;
+  reason: string;
+  badge: string | null;
+  estimateMin: number | null;
+  action: TodayTaskAction;
+}
+export type RouteItemKind = "daily" | "summary" | "questions" | "review" | "exam" | "plan_topic" | "plan_review" | "plan_mock";
+export interface RouteItem {
+  key: string;
+  kind: RouteItemKind;
+  label: string;
+  detail: string | null;
+  done: boolean;
+  action: TodayTaskAction | null;
+}
+export type ForYouKind = "wrongs" | "weak_topic" | "exam" | "mixed";
+export interface ForYouItem {
+  kind: ForYouKind;
+  label: string;
+  ctaLabel: string;
+  action: TodayTaskAction;
+}
+export interface HomeV3 {
+  nextStep: NextStep;
+  route: RouteItem[];
+  forYou: ForYouItem[];
+  week: { solved: number; activeDays: number; goalDays: number; rankName: string };
 }
 
 export type WeekDayState = "done" | "missed" | "today" | "future";
@@ -82,6 +119,8 @@ export interface CoachBrief {
   cards?: { type: string; title: string; body?: string; cta?: { label: string; route: string }; meta?: Record<string, unknown> }[];
   /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */
   plan?: PlanBrief | null;
+  /** Bugün v3 (Doc 49/16); eski sunucuda alan yok → ekran todayTask'a düşer. */
+  homeV3?: HomeV3;
 }
 
 export const homeKeys = { brief: ["me", "coach"] as const, me: ["me"] as const };

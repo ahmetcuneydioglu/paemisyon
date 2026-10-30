@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseRoomCard, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
@@ -204,6 +204,34 @@ export default function GaleriScreen() {
             <LegislationRow law="CMK" article="91" title="Gözaltı" meta="Kaldığın yer · 2 dk önce" onPress={() => {}} />
             <LegislationRow law="TCK" article="53" title="Belli hakları kullanmaktan yoksun bırakılma" meta="Doğrulandı: 24 Eyl 2026" onPress={() => {}} />
           </Card>
+        </Section>
+
+        <Section title="Bugün v3 (Doc 49/16)">
+          <ExamContextLine daysLeft={184} examName="PAEM 2027" activeDays={3} goalDays={5} days={["done", "done", "done", "today", "future", "future", "future"]} onPickDate={() => {}} />
+          <NextStepCard eyebrow="SIRADAKİ · ANAYASA · YÜRÜTME" title="4 dk özet, sonra 10 soru" reason="Dün 3 yanlışın bu konudandı; önce özeti oku, sonra soruları çöz." badge="%42 · en zayıf" ctaLabel="Başla" onPress={() => {}} />
+          <NextStepCard eyebrow="SIRADAKİ · ANAYASA · YÜRÜTME" title="Anayasa · Yürütme turuna devam et" reason="6/10 · 12 dk önce" ctaLabel="Devam et" onPress={() => {}} />
+          <RouteList
+            rows={[
+              { key: "d", label: "Günün Quizi", detail: "tamam", done: true, onPress: null },
+              { key: "s", label: "Yürütme özeti", detail: "4 dk", done: false, onPress: () => {} },
+              { key: "q", label: "10 soru", detail: "Anayasa", done: false, onPress: () => {} },
+              { key: "r", label: "Yanlış tekrarı", detail: "4 soru", done: false, onPress: () => {} },
+            ]}
+            footer="Günlük hedef 20 soru · 5"
+            onPlan={() => {}}
+          />
+          <ForYouList
+            rows={[
+              { key: "w", label: "Yanlış kuyruğu · 4 soru", ctaLabel: "Çöz", onPress: () => {} },
+              { key: "t", label: "İdari Yargı · %48", ctaLabel: "10 soru", onPress: () => {} },
+              { key: "e", label: "Deneme 4 · Cmt 20:00 · 100 soru", ctaLabel: "Hatırlat", onPress: () => {} },
+            ]}
+          />
+          <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <CourseRoomCard name="Polis Mevzuatı" weightPercent={30} accuracy={0.62} onPress={() => {}} />
+            <CourseRoomCard name="Anayasa" weightPercent={25} accuracy={null} onPress={() => {}} />
+          </View>
         </Section>
 
         <Section title="Bugün parçaları">

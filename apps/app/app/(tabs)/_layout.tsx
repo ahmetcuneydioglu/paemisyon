@@ -35,7 +35,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen name="index" options={tab("Bugün", Home)} />
-      <Tabs.Screen name="kutuphane" options={tab("Kütüphane", BookOpen)} />
+      <Tabs.Screen name="kutuphane" options={tab("Çalış", BookOpen)} />
       <Tabs.Screen name="denemeler" options={tab("Denemeler", ClipboardList)} />
       <Tabs.Screen name="mevzuat" options={tab("Mevzuat", Scale)} />
       <Tabs.Screen name="ben" options={tab("Ben", User)} />
