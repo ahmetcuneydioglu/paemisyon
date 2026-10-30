@@ -145,3 +145,21 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
    küçük satır ("Ağırlık %30" / "Hâkimiyet %62") ve 2 pt ilerleme.
 4. **Ben sekme ikonu** çizimde eksik (daire); kodda lucide `User` (F9'daki gibi).
 5. Haftalık çizelge 7 dilim 2 pt: mevcut `WeekStrip7` bileşeni küçültülerek kullanılır.
+
+## 9. İlerleme
+
+- **API (30 Eki 2026):** `coach/home-v3.types.ts` (`HomeV3 = { nextStep, route, forYou }`),
+  `coach/bugun-v3.logic.ts` saf modül (+9 spec): **nextStep** sırası deneme → taze yarım tur
+  (devam) → dönüş/ilk tur → zayıf ünite reçetesi (`summary_then_questions`: "4 dk özet, sonra 10
+  soru", eylem `open_summary` `/ozet/<slug>`; `questions`: maddeleriyle 10 soru, `articleNos`
+  taşır) → hedef dolduysa yanlış tekrarı / dinlen → Doc 48 görev kartı. **route** 2–6 madde:
+  deneme, özet, soru, yanlış tekrarı, Günün Quizi, bitmemiş plan kalemleri (sıradaki konu
+  tekrarlanmaz); tamamlananlar sona. **forYou** en çok 3: yanlış kuyruğu, sıradakinden farklı
+  ikinci zayıf konu, bugünkü ya da 7 gün içindeki ilk deneme ("Deneme 4 · Cmt 20:00 · 100 soru");
+  azsa karışık 10 soru. `TodayTaskAction` eklemeli genişledi (`open_summary`, `articleNos`,
+  kaynaklar `home_next`/`home_route`/`home_for_you` + paylaşım `share`; DTO listesine eklendi —
+  `/s/<id>` derin bağlantısının `source=share` değeri DTO'da yoktu, 400 verirdi, kapandı).
+  `CoachContext.exams.nextUpcoming` eklendi; `CoachBrief.homeV3` eklemeli. Yerel API prod cron
+  tuzağı yüzünden çalıştırılmadı; doğrulama birim testleriyle, canlı doğrulama deploy sonrası
+  geçici hesapla `/me/coach`. Coach suite 127/127, tsc 0 (prisma generate gerekti: başka oturumun
+  `examQuestionAdjustment` modeli), eslint 0.

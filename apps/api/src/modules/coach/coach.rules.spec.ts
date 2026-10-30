@@ -45,6 +45,7 @@ function ctx(over: Partial<CoachContext> = {}): CoachContext {
     exams: {
       live: null,
       todayUpcoming: null,
+      nextUpcoming: null,
       newPublished: null,
       completedCount: 0,
       bestNet: null,

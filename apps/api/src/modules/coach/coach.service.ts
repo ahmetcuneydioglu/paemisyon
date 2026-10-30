@@ -13,6 +13,7 @@ import { CoachBrief, CoachCard, CoachContext, CoachMode } from './coach.types';
 import type { DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
 import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
+import { computeHomeV3 } from './bugun-v3.logic';
 import { computeTodayTask, haftadaKalanGun, YarimTur } from './today-task.logic';
 import { enGucluKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
@@ -145,6 +146,41 @@ export class CoachService {
       ? { type: top.type, ...top.cta }
       : { type: 'default', label: 'Çalışmaya başla', route: '/catalog' };
 
+    const todayTask = computeTodayTask({
+      now: ctx.now,
+      trHour: ctx.trHour,
+      goal: ctx.user.dailyGoal,
+      answeredToday: ctx.answeredToday,
+      totalSolved: ctx.stats.totalSolved,
+      daysSinceLastActivity: ctx.daysSinceLastActivity,
+      daysToExam: ctx.daysToExam,
+      weekly: ctx.weekly,
+      daysLeftInWeek: ctx.home.daysLeftInWeek,
+      exams: { live: ctx.exams.live, todayUpcoming: ctx.exams.todayUpcoming },
+      activeSession: ctx.home.activeSession,
+      focus: ctx.home.focus,
+      readiness: ctx.home.readiness,
+      strongestTopic: ctx.home.strongestTopic,
+      plan: ctx.plan ? { nextItem: ctx.plan.nextItem } : null,
+    });
+    // Doc 49/16 — Bugün v3: tek adım + rota + senin için (karar sunucuda).
+    const homeV3 = computeHomeV3({
+      now: ctx.now,
+      goal: ctx.user.dailyGoal,
+      answeredToday: ctx.answeredToday,
+      dailyQuizPlayed: ctx.dailyQuizPlayed,
+      activeSession: ctx.home.activeSession,
+      todayTask,
+      weakestUnit: ctx.weakestUnit,
+      readiness: ctx.home.readiness,
+      exams: {
+        live: ctx.exams.live,
+        todayUpcoming: ctx.exams.todayUpcoming,
+        nextUpcoming: ctx.exams.nextUpcoming,
+      },
+      plan: ctx.plan ? { items: ctx.plan.items } : null,
+    });
+
     return {
       unitRecipe: ctx.weakestUnit,
       greeting: {
@@ -195,23 +231,8 @@ export class CoachService {
       focus: ctx.home.focus,
       plan: ctx.plan,
       // Doc 48 A4 — görev kartı + eylem çubuğu: etiket ve davranış tek nesnede.
-      todayTask: computeTodayTask({
-        now: ctx.now,
-        trHour: ctx.trHour,
-        goal: ctx.user.dailyGoal,
-        answeredToday: ctx.answeredToday,
-        totalSolved: ctx.stats.totalSolved,
-        daysSinceLastActivity: ctx.daysSinceLastActivity,
-        daysToExam: ctx.daysToExam,
-        weekly: ctx.weekly,
-        daysLeftInWeek: ctx.home.daysLeftInWeek,
-        exams: { live: ctx.exams.live, todayUpcoming: ctx.exams.todayUpcoming },
-        activeSession: ctx.home.activeSession,
-        focus: ctx.home.focus,
-        readiness: ctx.home.readiness,
-        strongestTopic: ctx.home.strongestTopic,
-        plan: ctx.plan ? { nextItem: ctx.plan.nextItem } : null,
-      }),
+      todayTask,
+      homeV3,
     };
   }
 
@@ -495,6 +516,14 @@ export class CoachService {
     const todayUpcoming = exams.find(
       (e) => e.startAt > now && trDayKey(e.startAt) === trDayKey(now),
     );
+    // Bugün v3: bugünden sonra, 7 gün içinde başlayacak ilk deneme (liste yeniden eskiye sıralı).
+    const yediGun = new Date(now.getTime() + 7 * 86_400_000);
+    const nextUpcoming =
+      exams
+        .filter(
+          (e) => e.startAt > now && trDayKey(e.startAt) !== trDayKey(now) && e.startAt <= yediGun,
+        )
+        .sort((a, b) => a.startAt.getTime() - b.startAt.getTime())[0] ?? null;
     const newPublished = exams.find(
       (e) =>
         e.createdAt >= twoDaysAgo &&
@@ -720,6 +749,14 @@ export class CoachService {
               startAt: todayUpcoming.startAt,
               questionCount: todayUpcoming._count.questions,
               durationMinutes: todayUpcoming.durationMinutes,
+            }
+          : null,
+        nextUpcoming: nextUpcoming
+          ? {
+              id: nextUpcoming.id,
+              title: nextUpcoming.title,
+              startAt: nextUpcoming.startAt,
+              questionCount: nextUpcoming._count.questions,
             }
           : null,
         newPublished: newPublished ? { id: newPublished.id, title: newPublished.title } : null,

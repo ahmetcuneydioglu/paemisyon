@@ -1,5 +1,6 @@
 import type { PlanBrief } from '../plan/plan.service';
 import type { UnitRecipe } from '../summaries/unite-recete';
+import type { HomeV3 } from './home-v3.types';
 import type { HaftaGunDurumu } from './hafta-gunleri';
 import type { BriefFlags, DailyFocusView, ExamInfo, Readiness, TodayTask } from './home-v2.types';
 
@@ -121,6 +122,8 @@ export interface CoachContext {
       questionCount: number;
       durationMinutes: number;
     } | null;
+    /** Bugünden sonra, 7 gün içinde başlayacak ilk yayında deneme (Bugün v3 "Senin için"). */
+    nextUpcoming: { id: string; title: string; startAt: Date; questionCount: number } | null;
     /** Son 48 saatte yayınlanmış, kullanıcının katılmadığı deneme. */
     newPublished: { id: string; title: string } | null;
     completedCount: number;
@@ -236,4 +239,6 @@ export interface CoachBrief {
   todayTask: TodayTask;
   /** Doc 49/12 F8-A — haftalık plan özeti (Bugün kartı bunu çizer); plan yoksa null. */
   plan: PlanBrief | null;
+  /** Doc 49/16 — Bugün v3: tek adım + rota + senin için (eklemeli). */
+  homeV3: HomeV3;
 }

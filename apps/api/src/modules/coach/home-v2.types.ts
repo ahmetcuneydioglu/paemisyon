@@ -76,10 +76,14 @@ export type HomeSource =
   | 'home_suggestion'
   | 'plan'
   | 'course_room'
-  | 'topic_room';
+  | 'topic_room'
+  | 'home_next'
+  | 'home_route'
+  | 'home_for_you';
 
 export interface TodayTaskAction {
-  type: 'start_session' | 'resume_session' | 'open_exams';
+  /** open_summary (Doc 49/16): konu özeti ünitesini açar (`route` = /ozet/<slug>). */
+  type: 'start_session' | 'resume_session' | 'open_exams' | 'open_summary';
   /** Düğme etiketi — davranışla aynı kaynaktan ("Başla · 10 soru"). */
   label: string;
   /** start_session: soru sayısı (etikettekiyle aynı). */
@@ -88,6 +92,8 @@ export interface TodayTaskAction {
   recipe?: 'coach' | 'comeback';
   /** start_session: kapsam (odak); koçta yok. */
   focus?: DailyFocusView;
+  /** start_session: ünite reçetesi — yalnız bu maddelerin soruları (Doc 53 F5-2). */
+  articleNos?: string[];
   /** resume_session: devam edilecek tur. */
   sessionId?: string;
   /** open_exams: istemci rotası. */
