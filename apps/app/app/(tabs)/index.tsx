@@ -89,6 +89,15 @@ export default function BugunScreen() {
   // Sıradaki: v3 varsa sunucunun adımı; yoksa Doc 48 görev kartından türet (eski sunucu).
   const next = v3?.nextStep ?? (task ? { kind: task.kind === "resume" ? ("resume" as const) : ("questions" as const), eyebrow: "SIRADAKİ", title: task.title, reason: task.reason, badge: null, estimateMin: null, action: task.action } : null);
   const rotaSatirlari = (v3?.route ?? []).map((r) => ({ key: r.key, label: r.label, detail: r.detail, estimateMin: r.estimateMin ?? null, done: r.done, onPress: r.action ? () => run(r.action!) : null }));
+  // Bugünün sayımı (kullanıcı kararı 31 Eki): rota alt satırı, kart değil. Sıfırda dürüst metin.
+  const t = v3?.today;
+  const bugunSatiri = t
+    ? t.answered === 0
+      ? `Bugün henüz başlamadın · hedef ${t.goal} soru`
+      : `Bugün ${t.answered} soru${t.accuracyPct != null ? ` · %${t.accuracyPct} doğru` : ""} · hedef ${t.goal}${t.answered >= t.goal ? " ✓" : ""}`
+    : goal != null
+      ? `Günlük hedef ${goal} soru · ${Math.min(answered, goal)}`
+      : null;
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
   return (
@@ -189,7 +198,8 @@ export default function BugunScreen() {
           {rotaSatirlari.length > 0 ? (
             <RouteList
               rows={rotaSatirlari}
-              footer={goal != null ? `Günlük hedef ${goal} soru · ${Math.min(answered, goal)}` : null}
+              footer={bugunSatiri}
+              onFooter={() => router.push("/(tabs)/ben/performans")}
               onPlan={() => router.push(data.plan ? "/planim" : { pathname: "/planim", params: { kur: "1" } })}
             />
           ) : null}

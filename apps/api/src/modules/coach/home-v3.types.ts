@@ -73,9 +73,19 @@ export interface WeekSummary {
   rankName: string;
 }
 
+/** Bugünün sayımı (rota alt satırı): "Bugün 150 soru · %80 doğru · hedef 20 ✓". */
+export interface TodaySummary {
+  answered: number;
+  correct: number;
+  /** Cevap yoksa null (sıfır yüzde yazılmaz). */
+  accuracyPct: number | null;
+  goal: number;
+}
+
 export interface HomeV3 {
   nextStep: NextStep;
   route: RouteItem[];
   forYou: ForYouItem[];
   week: WeekSummary;
+  today: TodaySummary;
 }

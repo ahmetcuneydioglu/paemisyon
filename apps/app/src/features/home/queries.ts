@@ -67,6 +67,8 @@ export interface HomeV3 {
   forYou: ForYouItem[];
   /** Eski sunucuda yok. */
   week?: { solved: number; activeDays: number; goalDays: number; rankName: string };
+  /** Bugünün sayımı (rota alt satırı); eski sunucuda yok. */
+  today?: { answered: number; correct: number; accuracyPct: number | null; goal: number };
 }
 
 export type WeekDayState = "done" | "missed" | "today" | "future";

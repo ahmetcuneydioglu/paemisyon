@@ -23,11 +23,14 @@ export interface RouteRow {
 export function RouteList({
   rows,
   footer,
+  onFooter,
   onPlan,
 }: {
   rows: RouteRow[];
-  /** "Günlük hedef 20 soru · 5" */
+  /** Bugünün sayımı: "Bugün 150 soru · %80 doğru · hedef 20 ✓" (kullanıcı kararı 31 Eki: kart değil satır). */
   footer: string | null;
+  /** Alt satıra dokununca (Performans). */
+  onFooter?: () => void;
   onPlan?: () => void;
 }) {
   const { colors, radius, space } = useTheme();
@@ -103,10 +106,12 @@ export function RouteList({
         })}
       </View>
       {footer || onPlan ? (
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-          <AppText variant="bodySm" tone="soft" style={{ flex: 1 }}>
-            {footer ?? ""}
-          </AppText>
+        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: space.s2 }}>
+          <Pressable accessibilityRole={onFooter ? "button" : undefined} disabled={!onFooter} onPress={onFooter} hitSlop={8} style={{ flex: 1, minHeight: 32, justifyContent: "center" }}>
+            <AppText variant="bodySm" tone="soft" style={{ fontVariant: ["tabular-nums"] }} numberOfLines={1}>
+              {footer ?? ""}
+            </AppText>
+          </Pressable>
           {onPlan ? (
             <Pressable accessibilityRole="button" onPress={onPlan} hitSlop={8} style={{ minHeight: 32, justifyContent: "center" }}>
               <AppText variant="bodySm" tone="accentInk">

@@ -466,7 +466,7 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
 }
 
 /** `week` servis katmanında eklenir (hacim/rütbe bağlamı burada yok). */
-export function computeHomeV3(input: BugunV3Input): Omit<HomeV3, 'week'> {
+export function computeHomeV3(input: BugunV3Input): Omit<HomeV3, 'week' | 'today'> {
   const nextStep = sıradaki(input);
   return { nextStep, route: rota(input, nextStep), forYou: seninIcin(input, nextStep) };
 }

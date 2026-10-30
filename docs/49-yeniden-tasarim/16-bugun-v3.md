@@ -210,3 +210,9 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   `refresh={false}` kapatır. Bugün, Çalış, Denemeler, Mevzuat, Ben kökleri `Screen` kullandığı için
   hepsine birden geldi. Favori satırı: canlı API yeni sürümde (`week` + özet adımı doğrulandı);
   telefon eski `/me/coach` yanıtını önbellekten gösteriyordu — yenileyince gelir.
+- **Bugünün sayımı (31 Eki, kullanıcı sorusu "kart olsun mu?"):** karar satır, kart değil (tek
+  kahraman kuralı; GYSROTA'da da satır). Rota alt satırı: "Bugün 150 soru · %80 doğru · hedef 20 ✓";
+  sıfırda "Bugün henüz başlamadın · hedef 20 soru"; dokununca Performans. Yanlış sayısı yazılmaz
+  (yanlışlar rota/Senin için'de eylem olarak duruyor; rakam bir yerde, eylem bir yerde). API
+  `homeV3.today {answered, correct, accuracyPct, goal}` — ham sorguya `COUNT(*) FILTER (WHERE
+  a.is_correct)` eklendi; `home.todayTotals`.

@@ -187,6 +187,15 @@ export class CoachService {
     });
     const homeV3 = {
       ...homeV3Cekirdek,
+      today: {
+        answered: ctx.home.todayTotals.answered,
+        correct: ctx.home.todayTotals.correct,
+        accuracyPct:
+          ctx.home.todayTotals.answered > 0
+            ? Math.round((ctx.home.todayTotals.correct / ctx.home.todayTotals.answered) * 100)
+            : null,
+        goal: ctx.user.dailyGoal,
+      },
       week: {
         solved: ctx.volume.last7,
         activeDays: ctx.weekly.activeDays,
@@ -523,8 +532,8 @@ export class CoachService {
       // Haftalık plan özeti (Doc 49/12 F8-A): kart + brief.plan; yoksa null.
       this.plan.ozet(user.id, now),
       // Bugün v3 rotası: bugün konu başına cevap (QuizAnswer'ın question ilişkisi yok → ham birleşim).
-      this.prisma.$queryRaw<{ topic_id: string; n: bigint }[]>`
-        SELECT q.topic_id, COUNT(*)::bigint AS n
+      this.prisma.$queryRaw<{ topic_id: string; n: bigint; c: bigint }[]>`
+        SELECT q.topic_id, COUNT(*)::bigint AS n, COUNT(*) FILTER (WHERE a.is_correct)::bigint AS c
         FROM quiz_answers a
         JOIN quiz_sessions s ON s.id = a.session_id
         JOIN questions q ON q.id = a.question_id
@@ -855,6 +864,10 @@ export class CoachService {
         reviewDoneToday: bugunYanlisTuru != null,
         nextSummary,
         bookmarkCount: favoriSayisi,
+        todayTotals: {
+          answered: bugunKonuCevaplari.reduce((t, r) => t + Number(r.n), 0),
+          correct: bugunKonuCevaplari.reduce((t, r) => t + Number(r.c), 0),
+        },
       },
     };
   }
@@ -877,6 +890,8 @@ interface HomeRaw {
   nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
   /** Favori soru sayısı ("Senin için" favori turu). */
   bookmarkCount: number;
+  /** Bugün toplam cevap ve doğru (rota alt satırı "Bugün 150 soru · %80 doğru"). */
+  todayTotals: { answered: number; correct: number };
 }
 
 /** Varsayılan odak: koç seçer (Doc 25 §5). */
