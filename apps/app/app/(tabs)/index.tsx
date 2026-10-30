@@ -198,8 +198,8 @@ export default function BugunScreen() {
           {/* 4) Senin için (≤3). */}
           <ForYouList rows={seninIcin} />
 
-          {/* 5) Bu hafta. */}
-          {v3 ? (
+          {/* 5) Bu hafta (eski sunucuda `week` yok → gizli). */}
+          {v3?.week ? (
             <WeekSummaryLine
               left={`${v3.week.solved} soru · ${v3.week.activeDays}/${v3.week.goalDays} gün`}
               right={v3.week.rankName}

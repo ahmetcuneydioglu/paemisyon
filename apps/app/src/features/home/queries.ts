@@ -61,7 +61,8 @@ export interface HomeV3 {
   nextStep: NextStep;
   route: RouteItem[];
   forYou: ForYouItem[];
-  week: { solved: number; activeDays: number; goalDays: number; rankName: string };
+  /** Eski sunucuda yok. */
+  week?: { solved: number; activeDays: number; goalDays: number; rankName: string };
 }
 
 export type WeekDayState = "done" | "missed" | "today" | "future";
