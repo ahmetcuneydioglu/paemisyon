@@ -96,7 +96,9 @@ export default function BugunScreen() {
       ? `Bugün henüz başlamadın · hedef ${t.goal} soru`
       : `Bugün ${t.answered} soru${t.accuracyPct != null ? ` · %${t.accuracyPct} doğru` : ""} · hedef ${t.goal}${t.answered >= t.goal ? " ✓" : ""}`
     : goal != null
-      ? `Günlük hedef ${goal} soru · ${Math.min(answered, goal)}`
+      ? answered === 0
+        ? `Bugün henüz başlamadın · hedef ${goal} soru`
+        : `Bugün ${answered} soru · hedef ${goal}${answered >= goal ? " ✓" : ""}`
       : null;
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
