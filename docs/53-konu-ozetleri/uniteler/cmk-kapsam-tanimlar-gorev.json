@@ -1,0 +1,546 @@
+{
+  "unit": {
+    "slug": "cmk-kapsam-tanimlar-gorev",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Kapsam, tanımlar, görev ve bağlantı",
+    "subtitle": "Evreler, sıfatlar, görevsizlik ve bağlantılı davalar",
+    "articleFrom": "1",
+    "articleTo": "11",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 1–11",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu kanun neyi düzenler?",
+      "body": "CMK sana hem yolu hem yolcuları anlatır. Yol, ceza muhakemesinin nasıl yapılacağına dair kurallardır. Yolcular da bu sürece katılan kişilerdir; kanun onların hak, yetki ve yükümlülüklerini düzenler. Bu ünitede önce yolculara ad koyacak, sonra hangi mahkemenin işe bakacağını göreceksin.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma ve kovuşturma",
+      "body": "**Soruşturma:** Kanuna göre yetkili mercilerce suç şüphesinin öğrenilmesinden **iddianamenin kabulüne** kadar geçen evre.\n\n**Kovuşturma:** **İddianamenin kabulüyle** başlayıp **hükmün kesinleşmesine** kadar geçen evre.\n\nSoruşturmayı bitiren ve kovuşturmayı başlatan an aynıdır: iddianamenin kabulü.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Hazırlanması değil, kabulü",
+      "body": "Evre sınırını soran sorularda şıklar hep iddianamenin etrafında dolaşır: \"iddianamenin hazırlanması\", \"düzenlenmesi\", \"yazımının tamamlanması\", \"mahkemeye sunulması\". Hiçbiri doğru değil. Kovuşturmayı başlatan şey iddianamenin mahkemece **kabulü**dür. \"Şüphelinin yakalanması\", \"sanığın sorgusu\" ya da \"duruşma hazırlığının bitmesi\" de evreyi değiştirmez. Soruşturma, suç şüphesinin yetkili mercilerce **öğrenilmesiyle** başlar.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şüpheli ve sanık",
+      "body": "**Şüpheli:** Soruşturma evresinde suç şüphesi altında bulunan kişi.\n\n**Sanık:** Kovuşturmanın başlamasından itibaren hükmün kesinleşmesine kadar suç şüphesi altında bulunan kişi.\n\nSıfat evreye bağlıdır. İddianame kabul edilince şüpheli sanık olur. Hüküm kesinleşince sanıklık sona erer.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tanımlar yer değiştirince",
+      "body": "En sevilen hile, tanımları birbirinin yerine koymaktır. \"Kovuşturmanın başlamasından hükmün kesinleşmesine kadar…\" diye başlayan cümle \"şüpheli\" diye bitiyorsa şık yanlıştır; o tanım sanığa aittir. Soru ters yönden de gelir: İddianamesi mahkemece kabul edilen kişi artık şüpheli değil, **sanıktır**. Sanıklığı ne bitirir? İddianamenin kabulü ya da iadesi değil, **hükmün kesinleşmesi**.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafi, vekil, malen sorumlu",
+      "body": "**Müdafi:** Şüpheli veya sanığın ceza muhakemesinde **savunmasını yapan** avukat.\n\n**Vekil:** Katılan, suçtan zarar gören veya malen sorumlu kişiyi ceza muhakemesinde **temsil eden** avukat.\n\n**Malen sorumlu:** Yargılama konusu işin hükme bağlanması ve bunun kesinleşmesinden sonra, maddî ve malî sorumluluk taşıyarak hükmün sonuçlarından etkilenecek veya bunlara katlanacak kişi.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Müdafi savunur, vekil temsil eder",
+      "body": "Müdafi yalnız şüphelinin avukatı değildir; şüpheli **veya sanığın** savunmasını yapar. Suçtan zarar göreni, katılanı veya malen sorumluyu temsil eden avukat ise **vekil**dir. \"Katılan\" bir avukat değildir, vekilin temsil ettiği kişidir. \"Müdahil\" ya da \"müddei\" gibi şıklar bu tanımlarda geçmez. \"Ceza yargılamasında görev alan her avukat müdafidir\" diyen şık da yanlıştır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İfade alma ve sorgu",
+      "body": "**İfade alma:** Şüphelinin **kolluk görevlileri veya Cumhuriyet savcısı** tarafından soruşturma konusu suçla ilgili olarak dinlenmesi.\n\n**Sorgu:** Şüpheli veya sanığın **hâkim veya mahkeme** tarafından soruşturma veya kovuşturma konusu suçla ilgili olarak dinlenmesi.\n\nAyırt edici ölçüt, kimin dinlediğidir. İfade yalnız şüpheliden ve soruşturma konusu suçla ilgili alınır. Sorgu ise her iki evrede de yapılabilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim dinliyor?",
+      "body": "Kolluk ya da savcı dinliyorsa **ifade alma**, hâkim ya da mahkeme dinliyorsa **sorgu** söz konusudur. Tutuklama talebiyle sulh ceza hâkimine götürülen şüphelinin dinlenmesi soruşturma evresinde olsa bile sorgudur; \"ifade alma\" diyen şık yanlıştır. Savcının yağma şüphelisini ya da kolluğun bir şüpheliyi dinlemesi ise sorgu değil, ifade almadır. Mahkeme huzurunda sanığın dinlenmesi sorgudur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suçüstü",
+      "body": "Kanuna göre suçüstü şunlardır:\n\n1. İşlenmekte olan suç,\n2. Henüz işlenmiş olan fiil ile fiilin işlenmesinden hemen sonra kolluk, suçtan zarar gören veya başkaları tarafından takip edilerek yakalanan kişinin işlediği suç,\n3. Fiilin pek az önce işlendiğini gösteren eşya veya delille yakalanan kimsenin işlediği suç.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Suçüstü listesine sızanlar",
+      "body": "Suçüstünde belirleyici olan zamandır. Ya suç işlenmektedir, ya fail henüz işlenmiş fiilin hemen ardından takip edilerek yakalanmıştır, ya da fail pek az önce işlendiğini gösteren eşya veya delille yakalanmıştır. \"Henüz işlenmemekle birlikte işlenmesi muhakkak olan suç\" bu listede yoktur. \"Hâkim huzurunda işlendiği ikrar edilen suç\" da yoktur. Suçüstü, kanunda tanımı yapılan terimlerdendir. \"Gece vakti\", \"kamu görevlisi\", \"haksız tahrik\" ise bu tanım listesinde yer almaz.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplu suç ve disiplin hapsi",
+      "body": "**Toplu suç:** Aralarında iştirak iradesi bulunmasa da **üç veya daha fazla kişi** tarafından işlenen suç.\n\n**Disiplin hapsi:** Kısmî bir düzeni korumak amacıyla yaptırım altına alınmış olan fiil dolayısıyla verilen hapis. Disiplin hapsi:\n- seçenek yaptırımlara çevrilemez,\n- önödeme uygulanamaz,\n- tekerrüre esas olmaz,\n- şartla salıverilme hükümleri uygulanamaz,\n- ertelenemez,\n- adlî sicil kayıtlarına geçirilmez.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kişi sayısı ve \"-amaz\"lar",
+      "body": "Toplu suçta suç sayısına değil, kişi sayısına bakılır: **üç veya daha fazla kişi** gerekir. Aynı kişinin farklı zamanlarda işlediği birden çok suç toplu suç değildir. İki kişinin işlediği suçlar da, kaç tane olursa olsun, toplu suç sayılmaz. İştirak iradesi şart değildir. Disiplin hapsinde ise kalıp şudur: Kısmî bir düzeni korur, gerisi hep olumsuzdur. \"Tekerrüre esas olur\" ve \"ertelenebilir\" diyen ifadeler yanlıştır.",
+      "counterNumbers": [
+        "iki"
+      ],
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Evreler ve sıfatlar: sınırlar",
+      "rows": [
+        {
+          "label": "Soruşturmanın başlangıcı",
+          "value": "Suç şüphesinin yetkili mercilerce öğrenilmesi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Soruşturmanın sonu",
+          "value": "İddianamenin kabulü",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Kovuşturmanın başlangıcı",
+          "value": "İddianamenin kabulü",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Kovuşturmanın sonu",
+          "value": "Hükmün kesinleşmesi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Şüpheli sıfatı",
+          "value": "Soruşturma evresi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Sanık sıfatı",
+          "value": "Kovuşturmanın başlamasından hükmün kesinleşmesine kadar",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "İfade alan",
+          "value": "Kolluk görevlileri veya Cumhuriyet savcısı",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Sorgu yapan",
+          "value": "Hâkim veya mahkeme",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Toplu suçta kişi sayısı",
+          "value": "Üç veya daha fazla",
+          "refs": [
+            "2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görev ve görevsizlik kararı",
+      "body": "**Kaynak:** Mahkemelerin görevleri **kanunla** belirlenir (md 3).\n\n**Re'sen karar:** Davaya bakan mahkeme, görevli olup olmadığına **kovuşturma evresinin her aşamasında** re'sen karar verebilir; md 6 hükmü saklıdır.\n\n**Uyuşmazlık:** Görev konusunda mahkemeler arasında uyuşmazlık çıktığında görevli mahkemeyi **ortak yüksek görevli mahkeme** belirler.\n\n**Görevsizlik (md 5):** İddianamenin kabulünden sonra işin, davayı gören mahkemenin görevini aştığı veya dışında kaldığı anlaşılırsa mahkeme bir kararla işi görevli mahkemeye gönderir.\n\n**Kanun yolu:** Adlî yargı içerisindeki mahkemeler bakımından verilen görevsizlik kararlarına karşı **itiraz** yoluna gidilebilir.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Alt dereceye gönderme yasağı ve hükümsüzlük",
+      "body": "**md 6:** Duruşmada suçun hukukî niteliğinin değiştiğinden bahisle görevsizlik kararı verilerek dosya **alt dereceli mahkemeye gönderilemez**.\n\n**md 7:** Görevli olmayan hâkim veya mahkemece yapılan işlemler **hükümsüzdür**.\n- İstisna: **Yenilenmesi mümkün olmayan** işlemler.",
+      "articleRefs": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Görevde klasik çarpıtmalar",
+      "body": "- \"Görev yönetmelikle\" ya da \"iddianamedeki sevk maddesine göre belirlenir\" diyen şık yanlıştır. Görevi **kanun** belirler.\n- \"Mahkeme re'sen karar veremez\" ya da \"görev belli bir ana kadar ileri sürülmelidir\" diyen şık da yanlıştır. Mahkeme kovuşturma evresinin her aşamasında **re'sen** karar verir, istem gerekmez. Bu yüzden görev, duruşma başında ileri sürülmesi gereken bir istem değildir.\n- \"Görevsizlik kararına itiraz edilemez\", \"yargı yolu kapalıdır\", \"istinafa gidilir\": Hepsi yanlış, doğru cevap **itiraz**dır.\n- Ağır cezadaki duruşmada eylemin hafif bir suç olduğu anlaşılırsa dosya alt dereceye görevsizlikle **gönderilemez**. Sanığın kabul etmesi ya da itiraz etmemesi bunu değiştirmez.\n- Görevsiz mahkemenin işlemleri kural olarak hükümsüzdür. Ölçüt \"gecikmesinde sakınca\" değildir; **yenilenmesi mümkün olmayan** işlemler geçerliliğini korur.",
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağlantı ve birleştirerek dava açma",
+      "body": "**Bağlantı (md 8):**\n- Bir kişi birden fazla suçtan sanık olursa,\n- bir suçta her ne sıfatla olursa olsun birden fazla sanık bulunursa\nbağlantı var sayılır.\n\n**Bağlantılı suç:** Suçun işlenmesinden sonra suçluyu kayırma ile suç delillerini yok etme, gizleme veya değiştirme fiilleri de bağlantılı suç sayılır.\n\n**Birleştirerek açma (md 9):** Bağlantılı suçlardan her biri değişik mahkemelerin görevine giriyorsa, bunlar hakkında birleştirilmek suretiyle **yüksek görevli mahkemede** dava açılabilir.",
+      "articleRefs": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görülmekte olan davalar: birleştirme ve ayırma",
+      "body": "**Zaman ve merci (md 10):** Kovuşturma evresinin her aşamasında, bağlantılı ceza davalarının birleştirilmesine veya ayrılmasına **yüksek görevli mahkemece** karar verilebilir.\n\n**Usul:** Birleştirilen davalarda, bu davaları gören mahkemenin tâbi olduğu yargılama usulü uygulanır.\n\n**Esastan sonra ayırma:** İşin esasına girdikten sonra ayrılan davalara **aynı mahkemede** devam olunur.\n\n**Geniş bağlantı (md 11):** Mahkeme, bakmakta olduğu birden çok dava arasında 8 inci maddedeki türden olmayan bir bağlantı görse bile, birlikte bakmak ve hükme bağlamak üzere bu davaların birleştirilmesine karar verebilir.",
+      "articleRefs": [
+        "10",
+        "11"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yüksek görevli ve aynı mahkeme",
+      "body": "Bağlantı sorularında iki kelime değiştirilir. Birincisi \"yüksek görevli\": Bağlantılı suçlar birleştirilerek **alt dereceli** mahkemede değil, **yüksek görevli** mahkemede açılabilir. İkincisi \"aynı\": Esasa girildikten sonra ayrılan davalar farklı mahkemelere dağılmaz, **aynı mahkemede** devam eder. \"Farklı mahkemede devam zorunludur\" diyen şık yanlıştır. Bir de olay sorusu gelebilir: Öldürmede kullanılan silahı faili korumak için yok eden kişinin fiili bağlantılı suçtur. Bu fiil, asıl suçla birleştirilerek o suça bakan yüksek görevli mahkemede görülebilir.",
+      "articleRefs": [
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Görev ve bağlantı: kim, ne zaman?",
+      "rows": [
+        {
+          "label": "Görevin kaynağı",
+          "value": "Kanun",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Re'sen görev kararı",
+          "value": "Kovuşturma evresinin her aşaması",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Görev uyuşmazlığını çözen",
+          "value": "Ortak yüksek görevli mahkeme",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Görevsizlik kararı zamanı",
+          "value": "İddianamenin kabulünden sonra",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Görevsizlik kararına karşı yol (adlî yargı içi)",
+          "value": "İtiraz",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "Duruşmada nitelik değişikliği",
+          "value": "Alt dereceye görevsizlik kararı verilemez",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "Görevsiz mahkeme işlemleri",
+          "value": "Hükümsüz; yenilenmesi mümkün olmayanlar hariç",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "Bağlantılı suçlarda dava yeri",
+          "value": "Yüksek görevli mahkeme",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Birleştirme ve ayırma zamanı",
+          "value": "Kovuşturma evresinin her aşaması",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Birleştirilen davada usul",
+          "value": "Davaları gören mahkemenin tâbi olduğu usul",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Esastan sonra ayrılan dava",
+          "value": "Aynı mahkemede devam",
+          "refs": [
+            "10"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Soruşturma ↔ Kovuşturma",
+      "rows": [
+        {
+          "aspect": "Başlangıç",
+          "left": "Suç şüphesinin yetkili mercilerce öğrenilmesi",
+          "right": "İddianamenin kabulü",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Bitiş",
+          "left": "İddianamenin kabulü",
+          "right": "Hükmün kesinleşmesi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Kişinin sıfatı",
+          "left": "Şüpheli",
+          "right": "Sanık",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Dinlenme",
+          "left": "Kolluk veya savcı: ifade alma; hâkim: sorgu",
+          "right": "Hâkim veya mahkeme: sorgu",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Savunmayı yapan avukat",
+          "left": "Müdafi",
+          "right": "Müdafi",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Görev kararı ve birleştirme",
+          "left": "—",
+          "right": "Bu evrenin her aşamasında",
+          "refs": [
+            "4",
+            "10"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "41",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "label": "md 2 — Tanımlar",
+          "value": "26 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 5 — Görevsizlik kararı verilmesi gereken hâl ve sonucu",
+          "value": "6 soru",
+          "refs": [
+            "5"
+          ]
+        },
+        {
+          "label": "md 6 — Görevsizlik kararı verilemeyecek hâl",
+          "value": "2 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 7 — Görevli olmayan hâkim veya mahkemenin işlemleri",
+          "value": "2 soru",
+          "refs": [
+            "7"
+          ]
+        },
+        {
+          "label": "md 10 — Görülmekte olan davaların birleştirilmesi ve ayrılması",
+          "value": "2 soru",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 1, md 3, md 11",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–11, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      ]
+    }
+  ]
+}

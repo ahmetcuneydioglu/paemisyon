@@ -1,0 +1,683 @@
+{
+  "unit": {
+    "slug": "cmk-yetki-hakimin-reddi",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Yetki ve hâkimin reddi",
+    "subtitle": "Davaya hangi yerin mahkemesi bakar, hangi hâkim bakamaz?",
+    "articleFrom": "12",
+    "articleTo": "33",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 12–33",
+    "articleNos": [
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Dava nerede görülür?",
+      "body": "Bir suç işlendi. Dosyaya hangi yerin mahkemesi bakacak? Kanunun ilk cevabı kısa: **davaya bakmak yetkisi, suçun işlendiği yer mahkemesine aittir.** Yakalandığı yer, yerleşim yeri ve son adres gibi ölçütler bu kuralın yerini almaz. Onlar ancak suçun işlendiği yer belli değilse devreye girer. Önce bu temel kuralı ve özel hâllerini, ardından hâkimin hangi durumlarda davaya bakamayacağını ve reddini göreceksin.",
+      "articleRefs": [
+        "12",
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temel kural ve özel suç tipleri",
+      "body": "**Kural:** Davaya bakmak yetkisi, suçun işlendiği yer mahkemesine aittir (md 12).\n\n**Özel hâller:**\n- **Teşebbüs:** son icra hareketinin yapıldığı yer mahkemesi\n- **Kesintisiz suç:** kesintinin gerçekleştiği yer mahkemesi\n- **Zincirleme suç:** son suçun işlendiği yer mahkemesi",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Basın, yayın ve bilişim yoluyla işlenen suçlar",
+      "body": "- **Ülkede yayımlanan basılı eser:** yetki, eserin **yayım merkezi** olan yer mahkemesine aittir. Aynı eser birden çok yerde basılmışsa ve suç, yayım merkezi dışındaki baskıda meydana gelmişse eserin **basıldığı yer** mahkemesi de yetkilidir.\n- **Şikâyete bağlı hakaret suçu:** eser mağdurun yerleşim yerinde veya oturduğu yerde dağıtılmışsa o yer mahkemesi de yetkilidir. Mağdur, suçun işlendiği yer dışında tutuklu veya hükümlü bulunuyorsa o yer mahkemesi de yetkilidir.\n- **Görsel veya işitsel yayınlar:** basılı eser kuralı uygulanır. Yayın, mağdurun yerleşim yerinde ve oturduğu yerde işitilmiş veya görülmüşse o yer mahkemesi de yetkilidir.\n- **Bilişim sistemleri, banka veya kredi kurumları ya da banka veya kredi kartları araç olarak kullanılmışsa:** mağdurun yerleşim yeri mahkemeleri de yetkilidir.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kaçırma, yayın, kart: hangi yer?",
+      "body": "- Soru kökünde kişi bir ilden alınıyor, başka illerden geçiriliyor, alıkonuluyor ve sonunda bir yerde serbest bırakılıyorsa soru **kesintinin gerçekleştiği yeri**, yani serbest bırakıldığı yeri soruyor. Alındığı il, yolda geçtiği il ve failin yaşadığı il çeldiricidir.\n- Zincirleme suçta **son** suç, teşebbüste **son** icra hareketi esas alınır. Şıklardaki “ilk suç”, “ilk icra hareketi” ve “suçun tamamlandığı yer” yanlıştır.\n- Basılı eserde kural **yayım merkezi**dir. “Kural olarak basıldığı yer” diyen şık yanlıştır. Basıldığı yer, ancak suç yayım merkezi dışındaki baskıda oluşmuşsa ek olarak yetkilidir.\n- Yayın bir ilde merkezli, mağdur başka bir ilde yaşıyor, bir başka ilde oturuyorsa yayım merkezi, yerleşim yeri ve oturduğu yer mahkemelerinin **hepsi** yetkilidir. “Yalnız biri” şıkları tuzaktır.\n- Kart ve bilişim suçlarında mağdurun yerleşim yeri mahkemesi “**de**” yetkilidir. Bu yetki, suçun işlendiği yer mahkemesinin yetkisini kaldırmaz.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Suç yeri belli değilse: yedek sıra",
+      "body": "Suçun işlendiği yer belli değilse aşağıdaki sıra izlenir. Bir basamak uygulanamıyorsa bir sonrakine geçilir:\n1. Şüpheli veya sanığın **yakalandığı yer** mahkemesi\n2. Yakalanmamışsa **yerleşim yeri** mahkemesi\n3. Türkiye'de yerleşim yeri yoksa Türkiye'de **en son adresinin** bulunduğu yer mahkemesi\n4. Mahkeme bu yollarla da belirlenemiyorsa **ilk usul işleminin yapıldığı yer** mahkemesi",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yabancı ülkede işlenen suçlar",
+      "body": "- Yabancı ülkede işlenen ve Türkiye'de soruşturulması ve kovuşturulması gereken suçlarda yetki, md 13'ün birinci ve ikinci fıkralarına göre belirlenir: önce yakalandığı yer, sonra yerleşim yeri, sonra Türkiye'deki en son adres.\n- Cumhuriyet savcısının, şüphelinin veya sanığın istemi üzerine **Yargıtay**, suçun işlendiği yere daha yakın olan yer mahkemesine yetki verebilir.\n- Şüpheli veya sanık Türkiye'de yakalanmamış, yerleşmemiş veya adresi yoksa yetkili mahkemeyi **Yargıtay** belirler. Bunun için **Adalet Bakanının istemi** ve **Yargıtay Cumhuriyet Başsavcısının başvurusu** gerekir.\n- Yabancı ülkede bulunan ve diplomatik bağışıklıktan yararlanan Türk kamu görevlilerinin suçlarında yetkili mahkeme **Ankara** mahkemesidir.",
+      "articleRefs": [
+        "14"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Deniz, hava ve demiryolu taşıtları",
+      "body": "- **Türk bayraklı gemi, Türkiye dışında iken:** geminin ilk uğradığı Türk limanında veya bağlama limanında bulunan mahkeme yetkilidir.\n- Bu kural, Türk bayrağını taşıma hakkına sahip **hava taşıtları** ile **demiryolu taşıtları** için de uygulanır.\n- **Ülke içinde** bu taşıtlarda ya da bu taşıtlarla işlenen suçlarda taşıtın **ilk ulaştığı yer** mahkemesi de yetkilidir.\n- **Çevreyi kirletme suçunu yabancı bayraklı bir gemi Türk kara suları dışında işlemişse:** suçun işlendiği yere en yakın yer mahkemesi veya geminin Türkiye'de ilk uğradığı limanın bulunduğu yer mahkemesi yetkilidir.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yedek sıra ve özel yerlerde sık düşülen hatalar",
+      "body": "- Sıra **yakalanma yeri, yerleşim yeri, son adres, ilk usul işlemi** şeklindedir. Yerleşim yerini yakalanma yerinin önüne koyan ya da ilk usul işlemini öne alan sıralamalar yanlıştır.\n- Fail yakalanmışsa yakalandığı yer mahkemesi yetkilidir. Yolda konakladığı iller, son adresi ve mağdurun yerleşim yeri çeldiricidir.\n- Fail yakalanmamışsa yerleşim yeri mahkemesi yetkilidir. Kaçarken geçtiği iller ve ulaştığı sınır noktası çeldiricidir.\n- **İhbarın yapıldığı yer** ve **mağdurun yerleşim yeri** bu yedek sırada yer almaz.\n- Yurt dışında işlenen suçun faili Türkiye'de yakalanmışsa yakalandığı yer mahkemesi yetkilidir.\n- Diplomatik bağışıklıktan yararlanan Türk kamu görevlisi için Türkiye'ye giriş yaptığı yer, indiği havalimanı ve yerleşim yeri yetkili değildir. Cevap **Ankara**'dır.\n- Fail yakalanmamış, yerleşmemiş ve adresi yoksa yetkili mahkemeyi **Yargıtay** belirler. Adalet Bakanı mahkemeyi kendisi belirlemez, yalnızca ister. Başvuruyu Yargıtay Cumhuriyet Başsavcısı yapar.\n- Yabancı bayraklı geminin kara suları dışındaki kirletmesinde, suç yerine en yakın yer mahkemesi de geminin ilk uğradığı Türk limanının mahkemesi de yetkilidir. “Yalnız” diye başlayan şıklar tuzaktır.",
+      "articleRefs": [
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Yetkili yer — hızlı tablo",
+      "rows": [
+        {
+          "label": "Genel kural",
+          "value": "Suçun işlendiği yer",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Teşebbüs",
+          "value": "Son icra hareketinin yapıldığı yer",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Kesintisiz suç",
+          "value": "Kesintinin gerçekleştiği yer",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Zincirleme suç",
+          "value": "Son suçun işlendiği yer",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Basılı eser",
+          "value": "Yayım merkezi",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Bilişim / banka / kart araç olarak kullanılmışsa",
+          "value": "Mağdurun yerleşim yeri de yetkili",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Suç yeri belli değil",
+          "value": "Yakalandığı yer → yerleşim yeri → son adres → ilk usul işlemi",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Diplomatik bağışıklıklı Türk kamu görevlisi",
+          "value": "Ankara",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Yurt dışı suç; fail yakalanmamış, yerleşmemiş, adresi yok",
+          "value": "Yargıtay belirler (Adalet Bakanı ister, Yargıtay Cumhuriyet Başsavcısı başvurur)",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Yurt dışında Türk bayraklı gemi / hava / demiryolu taşıtı",
+          "value": "İlk uğradığı Türk limanı veya bağlama limanı",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Ülke içinde taşıtta veya taşıtla suç",
+          "value": "İlk ulaştığı yer de yetkili",
+          "refs": [
+            "15"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bağlantı, uyuşmazlık ve yetkisizlik iddiası",
+      "body": "**Bağlantılı davalar (md 16)**\n- Farklı mahkemelerin yetkisindeki bağlantılı davalar, yetkili mahkemelerden herhangi birinde birleştirilerek görülebilir.\n- Davalara farklı mahkemelerde bakılmaya başlanmışsa birleştirme, Cumhuriyet savcılarının istemlerine uygun olmak koşuluyla mahkemelerin uyuşmasıyla yapılır.\n- Uyuşulmazsa Cumhuriyet savcısı veya sanığın istemi üzerine **ortak yüksek görevli mahkeme** karar verir. Davaların ayrılması da aynı yolla olur.\n\n**Uyuşmazlık (md 17)**\n- Olumlu veya olumsuz yetki uyuşmazlığında yetkili hâkimi veya mahkemeyi **ortak yüksek görevli mahkeme** belirler.\n\n**Yetkisizlik iddiası (md 18)**\n- Sanık bu iddiayı ilk derece mahkemesinde **duruşmada sorgusundan önce** bildirir. Bölge adliye mahkemesinde incelemenin başlamasından önce, duruşmalı işlerde ise inceleme raporunun okunmasından önce bildirir.\n- Karar ilk derecede **sanığın sorgusundan önce** verilir. Bölge adliye mahkemesinde duruşmasız işlerde **incelemenin hemen başlangıcında**, duruşmalı işlerde **inceleme raporu okunmadan önce** verilir.\n- Bu aşamalardan sonra yetkisizlik iddiasında bulunulamaz. Mahkemeler de bu konuda **re'sen karar veremez**.\n- Yetkisizlik kararlarına karşı **itiraz** yoluna gidilebilir.",
+      "articleRefs": [
+        "16",
+        "17",
+        "18"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yetkisizlik iddiası: son an ve kanun yolu",
+      "body": "- Uyuşmazlığı çözen merci **ortak yüksek görevli mahkeme**dir. Davanın naklinde karar veren “yüksek görevli mahkeme” ile karıştırma. Bölge adliye mahkemesi, Yargıtay ceza dairesi ve Ceza Genel Kurulu şıkları çeldiricidir.\n- İlk derecede yetkisizlik iddiasının son anı **sanığın sorgusu**dur. “İddianamenin kabulü”, “iddianamenin okunması”, “duruşmanın başlaması”, “tanıkların dinlenmesi” ve “hüküm” şıkları yanlıştır.\n- Bölge adliye mahkemesinde duruşmasız işlerde karar **incelemenin hemen başlangıcında** verilir. “İnceleme raporu okunduktan sonra” ve “inceleme tamamlandıktan sonra” şıkları yanlıştır.\n- “Mahkemeler her zaman re'sen yetkisizlik kararı verebilir” ifadesi yanlıştır. O aşamalar geçtikten sonra re'sen karar da verilemez.\n- Yetkisizlik kararına karşı başvurulacak yol **itiraz**dır. İstinaf, temyiz ve yargılamanın yenilenmesi şıkları yanlıştır.",
+      "articleRefs": [
+        "17",
+        "18",
+        "19"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Davanın nakli ve yetkisiz mahkemenin işlemleri",
+      "body": "- **Hukukî veya fiilî sebeplerle** yetkili hâkim veya mahkeme görevini yerine getiremeyecek hâldeyse **yüksek görevli mahkeme**, davanın başka yerde bulunan aynı derecede bir mahkemeye nakline karar verir.\n- Kovuşturmanın görevli ve yetkili mahkemenin bulunduğu yerde yapılması **kamu güvenliği için tehlikeli** olursa davanın naklini **Adalet Bakanı Yargıtaydan ister**.\n- Mahkeme, fiili sebepler veya güvenlik gerekçesiyle duruşmanın **il sınırları içinde** başka bir yerde yapılmasına karar verebilir. Bu karara karşı itiraz yolu açıktır.\n- Yetkili olmayan hâkim veya mahkemece yapılan işlemler, **sadece yetkisizlik nedeniyle hükümsüz sayılmaz** (md 20).\n- Bir hâkim veya mahkeme, yetkili olmasa bile, gecikmesinde sakınca bulunan hâllerde yargı çevresi içerisinde gerekli işlemleri yapar (md 21).",
+      "articleRefs": [
+        "19",
+        "20",
+        "21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Nakli kim ister, kim karar verir?",
+      "body": "- Kamu güvenliği nedeniyle nakli isteyen **Adalet Bakanı**dır. “Adalet Bakanlığı”, “Yargıtay Cumhuriyet Başsavcısı” ve “ilk derece mahkemesi” şıkları yanlıştır. İstem Yargıtaya yapılır. Soru kökü “hangi merci karar verir” diyorsa cevap **Yargıtay**dır. Kökü dikkatle oku: kim ister, kim karar verir?\n- Hukukî veya fiilî sebeple nakle karar veren **yüksek görevli mahkeme**dir. Adalet Bakanlığı, Yargıtay Başkanlığı ve Hâkimler ve Savcılar Kurulu şıkları çeldiricidir.\n- “Yetkili olmayan mahkemenin işlemleri kural olarak hükümsüzdür” ifadesi yanlıştır. Bu işlemler sadece yetkisizlik nedeniyle hükümsüz sayılmaz.",
+      "articleRefs": [
+        "19",
+        "20"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hâkimin davaya bakamayacağı ve katılamayacağı hâller",
+      "body": "**Hâkim aşağıdaki hâllerde hâkimlik görevini yapamaz (md 22):**\n- a) Suçtan kendisi zarar görmüşse\n- b) Sonradan kalksa bile şüpheli, sanık veya mağdur ile aralarında evlilik, vesayet veya kayyımlık ilişkisi bulunmuşsa\n- c) Şüpheli, sanık veya mağdurun kan veya kayın hısımlığından üstsoy veya altsoyundan biri ise\n- d) Şüpheli, sanık veya mağdur ile aralarında evlât edinme bağlantısı varsa\n- e) Aralarında **üçüncü derece dahil kan** hısımlığı varsa\n- f) Evlilik sona ermiş olsa bile aralarında **ikinci derece dahil kayın** hısımlığı varsa\n- g) Aynı davada Cumhuriyet savcılığı, adlî kolluk görevi, şüpheli veya sanık müdafiliği ya da mağdur vekilliği yapmışsa\n- h) Aynı davada tanık veya bilirkişi sıfatıyla dinlenmişse\n\n**Yargılamaya katılamayacak hâkim (md 23):**\n- Bir karar veya hükme katılan hâkim, yüksek görevli mahkemece bu hükme ilişkin verilecek karar veya hükme katılamaz.\n- Aynı işte soruşturma evresinde görev yapan hâkim, kovuşturma evresinde görev yapamaz.\n- Yargılamanın yenilenmesi hâlinde önceki yargılamada görev yapan hâkim, aynı işte görev alamaz.",
+      "articleRefs": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kan mı kayın mı? Derece tuzağı",
+      "body": "- Kan hısımlığında sınır **üçüncü** derece dahil, kayın hısımlığında sınır **ikinci** derece dahildir. “Sanıkla arasında üçüncü derece kayın hısımlığı bulunması” bir yasaklılık hâli **değildir**. Bu en sık sorulan çeldiricidir.\n- Evlilik sonradan kalksa bile yasak devam eder. Hâkim eski eşinin davasına bakamaz.\n- “Eski iş ortağının sanık olduğu dava” listede yer almaz. Bu nedenle davaya bakamama hâli değildir.\n- Savcılık, müdafilik, vekillik, tanıklık ve bilirkişilik yasaklılık hâlidir. Ancak bunların **aynı davada** yapılmış olması gerekir.\n- Md 23'te “yapabilir” ya da “alabilir” diyen şıklar yanlıştır. Soruşturmada görev yapan hâkim kovuşturmada görev yapamaz, yenilenen yargılamada önceki hâkim görev alamaz, üst mahkemenin kararına da katılamaz.",
+      "articleRefs": [
+        "22",
+        "23"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hâkimin reddi: sebepler, kimler, süre",
+      "body": "**Sebepler:** Hâkimin davaya bakamayacağı hâllerde reddi istenebilir. Tarafsızlığını şüpheye düşürecek diğer sebeplerden dolayı da reddi istenebilir.\n\n**Kimler isteyebilir:**\n- Cumhuriyet savcısı\n- Şüpheli, sanık veya bunların müdafii\n- Katılan veya vekili\n\nBunlardan biri isterse karar veya hükme katılacak hâkimlerin isimleri kendisine bildirilir.\n\n**Tarafsızlık sebebiyle reddin süresi:**\n- İlk derece mahkemelerinde **sanığın sorgusu başlayıncaya kadar**\n- Duruşmalı işlerde bölge adliye mahkemelerinde inceleme raporu, Yargıtayda ise görevlendirilen üye veya tetkik hâkiminin yazdığı rapor **üyelere açıklanıncaya kadar**\n- Diğer hâllerde **inceleme başlayıncaya kadar**\n\n**Sonradan ortaya çıkan veya öğrenilen sebepler:** Red, duruşma veya inceleme bitinceye kadar istenebilir. Ancak istemin, ret sebebinin öğrenilmesinden itibaren **yedi gün** içinde yapılması şarttır.",
+      "articleRefs": [
+        "24",
+        "25"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yedi gün ve ret isteyenler listesi",
+      "body": "- Sonradan öğrenilen sebepte süre, öğrenmeden itibaren **yedi gün**dür. 5, 10 ya da 15 gün diyen şıklar yanlıştır.\n- Rapor üyelere açıklandıktan sonra tarafsızlık sebebiyle red kural olarak istenemez. Bunun tek istisnası sonradan öğrenilen sebeplerdir ve onlar da yedi gün içinde ileri sürülmelidir. “Karar kesinleşene kadar her zaman” şıkkı yanlıştır.\n- Red yalnız tarafsızlık sebebine bağlı değildir. Davaya bakamama hâlleri de red sebebidir.\n- Red isteyebilecekler savcı, şüpheli, sanık ve müdafi ile sınırlı değildir. **Katılan ve vekili** de listededir. Mahkeme yazı işleri müdürü listede yoktur.",
+      "articleRefs": [
+        "24",
+        "25"
+      ],
+      "counterNumbers": [
+        5,
+        10,
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ret isteminin usulü ve karar mercii",
+      "body": "**Usul (md 26)**\n- Red, hâkimin mensup olduğu mahkemeye dilekçe verilerek ya da zabıt kâtibine tutanak düzenletilerek istenir.\n- Ret isteyen, öğrendiği sebeplerin **tümünü bir defada** açıklamak ve süresi içinde olgularıyla birlikte ortaya koymakla yükümlüdür.\n- Reddi istenen hâkim, ret sebepleri hakkındaki görüşlerini yazılı olarak bildirir.\n\n**Karar mercii (md 27)**\n- Karar, hâkimin **mensup olduğu mahkeme**ce verilir. Reddi istenen hâkim müzakereye katılamaz.\n- Mahkeme bu nedenle teşekkül edemezse:\n  - Hâkim **asliye ceza** mahkemesine mensupsa: o mahkemenin yargı çevresindeki **ağır ceza mahkemesi** karar verir.\n  - Hâkim **ağır ceza** mahkemesine mensupsa ve o yerde birden fazla daire varsa: numara olarak kendisini izleyen daire karar verir. Son numaralı daire için (1) numaralı daire karar verir. O yerde tek daire varsa en yakın ağır ceza mahkemesi karar verir.\n- Red **sulh ceza hâkimine** karşıysa yargı çevresindeki **asliye ceza mahkemesi** karar verir. **Tek hâkime** karşıysa yargı çevresindeki **ağır ceza mahkemesi** karar verir.\n- Bölge adliye mahkemesi ceza dairesi başkan ve üyelerinin reddini, reddedilen kişi katılmaksızın görevli daire inceler.\n- İstem kabul edilirse davaya bakmakla başka bir hâkim veya mahkeme görevlendirilir.\n\n**Kanun yolu (md 28)**\n- Kabul kararları **kesindir**. Kabul edilmemesine ilişkin kararlara **itiraz** yoluna gidilebilir. İtiraz üzerine verilen ret kararı hükümle birlikte incelenir.",
+      "articleRefs": [
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ret sonrası işlemler, çekinme, geri çevirme, zabıt kâtibi",
+      "body": "**Reddi istenen hâkim (md 29)**\n- Ret hakkında karar verilinceye kadar yalnız gecikmesinde sakınca olan işlemleri yapar.\n- Oturum sırasında reddedilirse, karar için ara vermek gerekse bile ara vermeden devam edilir. Ancak 216. madde uyarınca tarafların iddia ve sözlerinin dinlenmesine geçilemez. Ret konusunda karar verilmeden, reddedilen hâkim tarafından veya onun katılımıyla bir sonraki oturuma başlanamaz.\n- Ret istemi kabul edilirse, gecikmesinde sakınca bulunan hâl nedeniyle yapılmış işlemler dışında duruşma tekrarlanır.\n\n**Çekinme (md 30)**\n- Hâkim yasaklılık sebebiyle çekinirse merci başka bir hâkimi veya mahkemeyi görevlendirir.\n- Hâkim tarafsızlık sebebiyle çekinirse merci çekinmenin uygun olup olmadığına karar verir.\n\n**Geri çevirme (md 31)**\nKovuşturma evresindeki ret istemi şu hâllerde geri çevrilir:\n- İstem süresinde yapılmamışsa\n- Ret sebebi ve delili gösterilmemişse\n- İstemin duruşmayı uzatmak amacıyla yapıldığı açıkça anlaşılıyorsa\n\nGeri çevirmeyi toplu mahkemelerde reddedilen hâkimin müzakereye katılmasıyla mahkeme, tek hâkimli mahkemelerde reddedilen hâkimin kendisi yapar. Bu kararlara karşı **itiraz** yoluna başvurulabilir.\n\n**Zabıt kâtibi (md 32)**\n- Bu bölümdeki hükümler zabıt kâtibine de uygulanır. Kararı, yanında çalıştığı mahkeme başkanı veya hâkim verir.\n- Zabıt kâtibi hâkimle birlikte reddedilmişse merci hâkime göre belirlenir.\n\n**Kararların verilmesi (md 33)**\n- Duruşmadaki kararlar Cumhuriyet savcısı, duruşmada hazır bulunan müdafi, vekil ve diğer ilgililer dinlendikten sonra verilir. Duruşma dışındaki kararlar Cumhuriyet savcısının yazılı veya sözlü görüşü alındıktan sonra verilir.",
+      "articleRefs": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Merci, kanun yolu ve oturumda red",
+      "body": "- Reddi istenen asliye ceza hâkimiyse ve mahkeme teşekkül edemezse karar, **yargı çevresindeki ağır ceza mahkemesi**ne aittir. “Numara olarak izleyen daire” ve “en yakın ağır ceza” kuralları ağır ceza hâkimi içindir. Bu soruda sulh ceza, bölge adliye mahkemesi ve uyuşmazlık mahkemesi şıkları çeldiricidir.\n- Yönü ters çevirme: sulh ceza hâkiminin reddine **asliye ceza mahkemesi** bakar.\n- Red istemine kural olarak hâkimin mensup olduğu mahkeme karar verir. “Yüksek görevli mahkeme karar verir” ifadesi yanlıştır.\n- Kabul kararı kesindir. Kabul etmeme kararına karşı başvurulacak yol **itiraz**dır, temyiz değildir.\n- Geri çevirme kararlarına da itiraz açıktır. “Geri çevirme kararları kesindir” ifadesi yanlıştır.\n- Oturumda reddedilen hâkimle oturum sürer. Ancak 216. madde uyarınca tarafların iddia ve sözlerinin dinlenmesine ret kararı beklenmeden geçilemez.",
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "31"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler, dereceler, son anlar",
+      "rows": [
+        {
+          "label": "Sonradan öğrenilen ret sebebi — süre",
+          "value": "Öğrenmeden itibaren 7 gün",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Tarafsızlık reddi, ilk derece — son an",
+          "value": "Sanığın sorgusu başlayıncaya kadar",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "Yetkisizlik iddiası, ilk derece — son an",
+          "value": "Sanığın sorgusundan önce",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Yetkisizlik kararı, bölge adliye mahkemesi duruşmasız",
+          "value": "İncelemenin hemen başlangıcında",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Yetkisizlik kararı, bölge adliye mahkemesi duruşmalı",
+          "value": "İnceleme raporu okunmadan önce",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Kan hısımlığı (davaya bakamama)",
+          "value": "Üçüncü derece dahil",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Kayın hısımlığı (davaya bakamama)",
+          "value": "İkinci derece dahil",
+          "refs": [
+            "22"
+          ]
+        },
+        {
+          "label": "Son numaralı ağır ceza dairesi hâkiminin reddi",
+          "value": "(1) numaralı daire karar verir",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "Kanun yolu: yetkisizlik kararı",
+          "value": "İtiraz",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "Kanun yolu: ret isteminin kabulü",
+          "value": "Kesin",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Kanun yolu: ret isteminin kabul edilmemesi",
+          "value": "İtiraz",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Kanun yolu: ret isteminin geri çevrilmesi",
+          "value": "İtiraz",
+          "refs": [
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "18",
+        "22",
+        "25",
+        "27",
+        "28",
+        "31"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Yetkisizlik iddiası ve tarafsızlık reddi",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Yetkisizlik iddiası",
+          "right": "Tarafsızlık nedeniyle hâkimin reddi",
+          "refs": [
+            "18",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Kim ileri sürer",
+          "left": "Sanık",
+          "right": "Cumhuriyet savcısı; şüpheli, sanık veya müdafii; katılan veya vekili",
+          "refs": [
+            "18",
+            "24"
+          ]
+        },
+        {
+          "aspect": "İlk derecede son an",
+          "left": "Duruşmada sanığın sorgusundan önce",
+          "right": "Sanığın sorgusu başlayıncaya kadar",
+          "refs": [
+            "18",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Bölge adliye mahkemesi, duruşmalı işler",
+          "left": "İnceleme raporunun okunmasından önce",
+          "right": "İnceleme raporu üyelere açıklanıncaya kadar",
+          "refs": [
+            "18",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Aşama geçtikten sonra",
+          "left": "İddia edilemez; mahkeme de re'sen karar veremez",
+          "right": "Sonradan öğrenilen sebeple, inceleme veya duruşma bitinceye kadar ve öğrenmeden itibaren yedi gün içinde istenebilir",
+          "refs": [
+            "18",
+            "25"
+          ]
+        },
+        {
+          "aspect": "Kanun yolu",
+          "left": "Yetkisizlik kararına itiraz",
+          "right": "Kabul kararı kesin; kabul etmeme kararına itiraz",
+          "refs": [
+            "18",
+            "28"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "18",
+        "24",
+        "25",
+        "28"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "44",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        },
+        {
+          "label": "md 12 — Yetkili mahkeme",
+          "value": "8 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "md 18 — Yetkisizlik iddiası",
+          "value": "6 soru",
+          "refs": [
+            "18"
+          ]
+        },
+        {
+          "label": "md 13 — Özel yetki",
+          "value": "5 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "md 25 — Tarafsızlığını şüpheye düşürecek sebeplerden dolayı hâkimin reddi isteminin süresi",
+          "value": "5 soru",
+          "refs": [
+            "25"
+          ]
+        },
+        {
+          "label": "md 14 — Yabancı ülkede işlenen suçlarda yetki",
+          "value": "4 soru",
+          "refs": [
+            "14"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 16, md 21, md 26, md 28, md 30, md 32, md 33",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 12–33, 10 soru",
+          "refs": [
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ]
+        }
+      ]
+    }
+  ]
+}

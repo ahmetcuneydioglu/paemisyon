@@ -1,0 +1,708 @@
+{
+  "unit": {
+    "slug": "cmk-bilirkisi-muayene-kesif",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Bilirkişi, gözlem, muayene, keşif ve otopsi",
+    "subtitle": "Uzman görüşünden otopsi masasına: delil toplamanın teknik tedbirleri",
+    "articleFrom": "62",
+    "articleTo": "89",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 62–89",
+    "articleNos": [
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 4
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bilirkişi: uzmanlık gerektiren yerde devreye girer",
+      "body": "Bir sorunun çözümü uzmanlığı, özel veya teknik bilgiyi gerektiriyorsa bilirkişinin oy ve görüşüne başvurulur. Kanun bilirkişi için sıfırdan bir rejim kurmamış. Tanıklara ilişkin hükümler, bilirkişi maddelerine aykırı olmadıkça bilirkişiye de uygulanır. Tanıkla ilgili öğrendiklerinin çoğu burada da işine yarar. Fark yaratan, bu ünitedeki özel kurallardır. Baştan aklına yazman gereken bir sınır var: genel bilgi veya tecrübeyle ya da hâkimlik mesleğinin gerektirdiği hukukî bilgiyle çözülebilecek konularda bilirkişiye başvurulamaz.",
+      "articleRefs": [
+        "62",
+        "63"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bilirkişiyi kim atar, kimler arasından seçilir?",
+      "body": "**Atama (md 63)**\n- Bilirkişi görüşünün alınmasına **re'sen** karar verilebilir. Cumhuriyet savcısı, katılan, vekili, şüpheli veya sanık, müdafii veya kanunî temsilcinin **istemi** üzerine de karar verilebilir.\n- Genel bilgi, tecrübe ya da hâkimlik mesleğinin gerektirdiği hukukî bilgiyle çözülebilecek konularda bilirkişiye **başvurulamaz**.\n- Hukuk öğrenimi görmüş kişi, hukuk alanı dışında ayrı bir uzmanlığını belgelendirmedikçe bilirkişi olarak görevlendirilemez.\n- Bilirkişiyi atamak ve sayısını gerekçe göstererek birden çok saptamak **hâkim veya mahkemeye** aittir. Soruşturma evresinde bu yetkileri **Cumhuriyet savcısı** da kullanabilir.\n\n**Kimler arasından (md 64)**\n- Bilirkişi, bölge adliye mahkemelerinin yargı çevreleri esas alınarak **bilirkişilik bölge kurulunun** hazırladığı listeden seçilir.\n- Başka bölgedeki bilirkişi görev yerine daha yakınsa o bölgenin listesinden de görevlendirme yapılabilir.\n- Listede ilgili uzmanlık dalında bilirkişi yoksa önce diğer bölge kurullarının listelerine bakılır. Orada da yoksa liste dışından görevlendirme yapılır ve bu kişi bölge kuruluna bildirilir.\n- Kanunların belirli konularda görevlendirdiği **resmî bilirkişiler öncelikle** atanır. Ancak kamu görevlileri, bağlı oldukları kurumla ilgili davalarda bilirkişi olarak atanamaz.\n\n**Yemin (md 64)**\n- Listedeki bilirkişi, bölge kurulu veya il adlî yargı adalet komisyonu huzurunda yemin eder. Her işte yeniden yemin etmez.\n- Listede olmayan bilirkişi, kendisini atayan merci huzurunda yemin eder.\n- Engel varsa yemin yazılı verilebilir. Bu durumun gerekçesi kararda gösterilir.\n\n**Kabul yükümlülüğü (md 65)**\nBilirkişilik görevini kabul etmek zorunda olanlar:\n1. Resmî bilirkişiler ve md 64 listelerinde yer alanlar\n2. İncelemenin gerektirdiği fen ve sanatları meslek edinenler\n3. İncelemenin gerektirdiği mesleği yapmaya resmen yetkili olanlar",
+      "articleRefs": [
+        "63",
+        "64",
+        "65"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Atama kararı, süre ve incelemenin yürütülmesi",
+      "body": "**Kararın içeriği**\n- Cevaplandırılacak sorular\n- İnceleme konusu\n- Görevin yerine getirileceği süre\n\n**Süre**\n- Süre, işin niteliğine göre **üç ayı geçemez**.\n- Özel sebepler zorunlu kılarsa bilirkişinin istemi ve atayan merciin gerekçeli kararıyla **en çok üç ay daha** uzatılabilir.\n\n**Raporu süresinde vermeyen bilirkişi**\n- Hemen değiştirilebilir.\n- O ana kadarki işlemlerini açıklayan bir rapor sunar ve kendisine teslim edilen eşya ve belgeleri hemen geri verir.\n- Ücret ve masraf ödenmemesine karar verilebilir. Gerekli yaptırımlar bilirkişilik bölge kurulundan istenir.\n\n**Çalışma biçimi**\n- Bilirkişi, kendisini atayan merci ile ilişki içinde çalışır.\n- Şüpheli veya sanık dışındaki kişilerin bilgisine de başvurabilir.\n- Uzmanlık alanı dışında bir sorun çıkarsa hâkim, mahkeme veya savcı, konusunda tanınmış kişilerle bir araya gelmesine izin verebilir. Bu kişiler yemin eder. Raporları, bilirkişi raporunun tamamlayıcı bölümü olur.\n\n**Soru sorma**\n- Kural: Mağdur, şüpheli veya sanığa mahkeme başkanı, hâkim veya savcı **aracılığıyla** soru sorulur. Doğrudan soru sormaya izin de verilebilir.\n- **Muayene ile görevlendirilen hekim bilirkişi**, zorunlu saydığı soruları hâkim, savcı ve müdafi bulunmadan da doğrudan yöneltebilir.\n\n**Mühür altındaki şeyler**\n- Bilirkişiye verilmeden önce listesi ve sayımı yapılıp tutanağa bağlanır.\n- Mühürlerin açılmasını ve yeniden konulmasını bilirkişi tutanakla belirtir ve bir liste düzenler.",
+      "articleRefs": [
+        "66"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Rapor, uzman mütalaası ve duruşmada dinleme",
+      "body": "**Rapor (md 67)**\n- Bilirkişi, yaptığı işlemleri ve vardığı sonuçları raporda açıklar. İstenen incelemeleri yaptığını ayrıca belirtir, raporu imzalayıp mercie verir. Mühür altındaki şeyler de tutanakla teslim edilir.\n- Birden çok bilirkişinin farklı ya da ayrık görüşleri, gerekçeleriyle rapora yazılır.\n- Bilirkişi, uzmanlık gerektiren hususlar dışında açıklama yapamaz. Hâkimin yapması gereken **hukukî nitelendirme ve değerlendirmelerde bulunamaz**.\n- Rapor örnekleri ilgililere duruşmada doğrudan verilebilir ya da iadeli taahhütlü mektupla gönderilebilir.\n- İnceleme bitince ilgililere yeni inceleme veya itiraz istemi için süre verilir. İstem reddedilirse **üç gün içinde** gerekçeli karar verilir.\n\n**Uzman mütalaası (md 67)**\n- Savcı, katılan, vekili, şüpheli veya sanık, müdafii veya kanunî temsilci, uzmanından bilimsel mütalaa alabilir.\n- Sırf bu nedenle ayrıca süre istenemez.\n\n**Duruşmada açıklama (md 68)**\n- Mahkeme, bilirkişinin dinlenmesine her zaman karar verebilir. İlgililerden birinin istemiyle de çağırabilir.\n- Açıklamadan sonra, çekilmesine izin verilmedikçe bilirkişi salonda kalır.\n- Bilirkişilerin teker teker alınıp ayrı ayrı dinlenmesi zorunlu değildir.\n- Bilimsel mütalaa hazırlayan uzmanın dinlenmesinde de aynı hükümler uygulanır.",
+      "articleRefs": [
+        "67",
+        "68"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ret, çekinme, ücret ve sahte para incelemesi",
+      "body": "**Bilirkişinin reddi (md 69)**\n- Hâkimin reddini gerektiren sebepler bilirkişi için de geçerlidir.\n- Ret hakkı olanlar: Cumhuriyet savcısı, katılan, vekili, şüpheli veya sanık, müdafii veya kanunî temsilci.\n- Atanan bilirkişinin adı ve soyadı, engel yoksa ret hakkı olanlara bildirilir.\n- Ret istemini davayı gören hâkim veya mahkeme inceler.\n- **Soruşturma evresinde, savcının kabul etmediği ret istemini sulh ceza hâkimi inceler.**\n- Reddi isteyen kişi, nedenini dayandığı olgularla açıklamak zorundadır.\n\n**Çekinme (md 70)**\n- Tanıklıktan çekinme sebepleri bilirkişi için de geçerlidir.\n- Bilirkişi, geçerli diğer sebeplerle de görüş bildirmekten çekinebilir.\n\n**Görevini yapmayan bilirkişi (md 71)**\n- Usulünce çağrıldığı hâlde gelmeyen ya da yeminden, oy ve görüş bildirmekten çekinen bilirkişiye md 60'ın birinci fıkrası uygulanır.\n- Durum bilirkişilik bölge kuruluna bildirilir.\n\n**Ücret ve gider (md 72)**\n- Bilirkişiye emek ve mesaisiyle orantılı bir ücret ödenir. İnceleme, ulaşım, konaklama ve diğer giderleri de karşılanır.\n- **Adalet Bakanlığının çıkardığı ve her yıl güncellenen tarife** esas alınır.\n\n**Sahte para ve değerler (md 73)**\n- Para ve Devletin çıkardığı tahvil, Hazine bonosu gibi değerlerde sahtecilik söz konusu olabilir. Bu durumda elkonulanların **hepsi**, asıllarını tedavüle çıkaran kurumların merkez veya taşra birimlerine incelettirilir.\n- Yabancı devletlerin paraları ve değerleri için yetkili Türk makamlarının görüşü alınır.",
+      "articleRefs": [
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bilirkişide en çok karıştırılanlar",
+      "body": "- ‘Bilirkişiye yalnızca istem üzerine başvurulur’ şıkkı yanlıştır. Hâkim veya mahkeme **re'sen** de karar verebilir.\n- Liste, adalet komisyonlarının değil **bilirkişilik bölge kurulunun** listesidir. Esas alınan çevre, ilk derece mahkemesinin değil, **bölge adliye mahkemesinin** yargı çevresidir.\n- Kabul yükümlülüğü yalnızca md 65'te sayılanlar içindir. Hukuk fakültesi öğretim üyeleri ya da çevirmenler orada sayılmaz.\n- Kararda belirtilecek süre **üç ayı** geçemez. Uzatma da en çok üç ay daha olabilir. Şıklarda gelen altı ay ya da iki ay, kararda belirtilen süre değildir.\n- Soruşturmada savcının kabul etmediği ret istemini **sulh ceza hâkimi** inceler. Asliye ceza hâkimi, ağır ceza hâkimi ya da başsavcı değildir.\n- Ret hakkı metinde sayılan kişilere aittir. Sayılan sıfat ‘katılan’dır. Katılma isteği henüz karara bağlanmamış biri sorulursa reddedemeyen odur.\n- Ücret tarifesini **Adalet Bakanlığı** çıkarır. Hazine ve Maliye Bakanlığı ya da Cumhurbaşkanlığı değildir.\n- Sahte para incelemesini, **asılları tedavüle çıkaran kurumlar** yapar. Adli tıp, kriminal laboratuvar ya da üniversite değildir.",
+      "articleRefs": [
+        "63",
+        "64",
+        "65",
+        "66",
+        "69",
+        "72",
+        "73"
+      ],
+      "counterNumbers": [
+        6,
+        2
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gözlem altına alınma",
+      "body": "**Şart:** Fiili işlediği yolunda **kuvvetli şüphe** bulunan şüpheli veya sanık olmalıdır.\n\n**Amaç:** Şunları saptamak:\n- Kişinin akıl hastası olup olmadığı\n- Akıl hastasıysa ne zamandan beri hasta olduğu\n- Bunun davranışları üzerindeki etkisi\n\n**Usul:**\n- **Uzman hekimin önerisi** gerekir.\n- **Cumhuriyet savcısı ve müdafi dinlenir.**\n- Kişi **resmî bir sağlık kurumunda** gözlem altına alınır.\n\n**Karar mercii:**\n- Soruşturma evresinde **sulh ceza hâkimi**\n- Kovuşturma evresinde **mahkeme**\n\n**Müdafi:** Müdafi yoksa, hâkim veya mahkemenin istemi üzerine baro bir müdafi görevlendirir.\n\n**Süre:**\n- Gözlem süresi **üç haftayı** geçemez.\n- Süre yetmezse, sağlık kurumunun istemiyle her seferinde üç haftayı geçmeyen ek süreler verilebilir.\n- Sürelerin **toplamı üç ayı** geçemez.\n\n**İtiraz:** Karara itiraz edilebilir. İtiraz, **kararın yerine getirilmesini durdurur**.\n\n**Kapsam:** Hüküm, md 223'ün sekizinci fıkrası gereğince yargılamanın durması kararı verilmesi gereken hâllerde de uygulanır.",
+      "articleRefs": [
+        "74"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gözlemde tuzak şıklar",
+      "body": "Gözlem sorularında üç noktaya dikkat et: süre, itiraz ve karar mercii.\n\n- Tek seferde süre **üç hafta**dır; iki, dört ya da altı hafta değil. Ek sürelerle birlikte toplam **üç ay**dır; altı ay değil.\n- ‘İtiraz, kararın yerine getirilmesini durdurmaz’ şıkkı yanlıştır. Kanun açıkça **durdurur** der.\n- Gözlem kararını savcı vermez. Soruşturmada **sulh ceza hâkimi**, kovuşturmada **mahkeme** verir.\n- Tanım sorularında nezarethane, hâkim kararıyla özgürlük kısıtlaması ya da vücuttan örnek alma tanımları şık olarak gelir. Gözlemin konusu yalnızca akıl hastalığının ve etkilerinin saptanmasıdır.\n- Md 74, md 223'ün sekizinci fıkrası gereğince yargılamanın durması gereken hâllerde de uygulanır. Bu hâl sorulduğunda cevap **durma kararıdır**; beraat ya da güvenlik tedbiri değildir.",
+      "articleRefs": [
+        "74"
+      ],
+      "counterNumbers": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler: bilirkişi ve gözlem",
+      "rows": [
+        {
+          "label": "Bilirkişi inceleme süresi (üst sınır)",
+          "value": "3 ay",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Süre uzatımı (özel sebep, gerekçeli karar)",
+          "value": "En çok 3 ay daha",
+          "refs": [
+            "66"
+          ]
+        },
+        {
+          "label": "Yeni inceleme veya itiraz istemi reddinde gerekçeli karar",
+          "value": "3 gün içinde",
+          "refs": [
+            "67"
+          ]
+        },
+        {
+          "label": "Gözlem süresi",
+          "value": "En çok 3 hafta",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "Gözlemde ek süre (her seferinde)",
+          "value": "En çok 3 hafta",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "Gözlem süresi toplamı",
+          "value": "En çok 3 ay",
+          "refs": [
+            "74"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "66",
+        "67",
+        "74"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şüpheli veya sanığın beden muayenesi ve örnek alma",
+      "body": "**Kapsam:** Delil elde etmek için şüpheli veya sanık üzerinde şu işlemler yapılabilir:\n- İç beden muayenesi\n- Kan veya benzeri biyolojik örnek alınması\n- Saç, tükürük, tırnak gibi örnekler alınması\n\n**Kararı kim verir?**\n- Hâkim veya mahkeme: savcının ya da mağdurun istemiyle veya re'sen\n- Gecikmesinde sakınca bulunan hâllerde: **Cumhuriyet savcısı**\n\n**Onay:**\n- Savcının kararı **24 saat içinde** hâkim veya mahkemenin onayına sunulur.\n- Hâkim veya mahkeme **24 saat içinde** kararını verir.\n- Onaylanmayan karar hükümsüz kalır. Elde edilen deliller kullanılamaz.\n\n**Şartlar:**\n- Müdahalenin kişinin **sağlığına zarar verme tehlikesi** bulunmamalıdır.\n- İşlemi yalnızca **tabip veya sağlık mesleği mensubu** yapabilir.\n- Cinsel organlar veya anüs bölgesindeki muayene de iç beden muayenesi sayılır.\n\n**Yasak:** Üst sınırı **iki yıldan daha az** hapis cezası gerektiren suçlarda iç beden muayenesi yapılamaz, örnek alınamaz.\n\n**İtiraz:** Hâkim veya mahkeme kararlarına itiraz edilebilir.\n\n**Saklı hükümler:** Özel kanunlardaki alkol muayenesi ve kan örneği hükümleri saklıdır.",
+      "articleRefs": [
+        "75"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Beden muayenesinde süre ve yetki karışıklığı",
+      "body": "- Savcı kararını **24 saat** içinde onaya sunar. Hâkim de **24 saat** içinde karar verir. Yani ikisi de 24 saattir. 48 ya da 12 saat şıkları yanlıştır.\n- ‘Savcının kararı derhâl onaya sunulur’ şıkkı da yanlıştır. Doğrusu 24 saat içindedir.\n- ‘Hâkim veya mahkeme kararına itiraz edilemez’ şıkkı yanlıştır. **İtiraz edilebilir.**\n- İç beden muayenesini yalnızca tabip veya sağlık mesleği mensubu yapar. Başka biri yapamaz.\n- Ölçüt, kişinin **sağlığına zarar verme tehlikesidir**. Şıkta başka bir ölçüt görürsen dikkat et.\n- Beden muayenesi şüpheliyle sınırlı değildir. Mağdur için ayrı hüküm vardır (md 76).\n- Şüpheliden kan alınması **vücuttan örnek alınmasıdır**. Fizik kimliğin tespiti ya da moleküler genetik inceleme değildir.",
+      "articleRefs": [
+        "75",
+        "76"
+      ],
+      "counterNumbers": [
+        48,
+        12
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mağdur ve diğer kişiler; kadının muayenesi",
+      "body": "**Mağdurda yapılabilecekler (md 76)**\n- Dış veya iç beden muayenesi\n- Kan veya benzeri biyolojik örnek, saç, tükürük, tırnak alınması\n\n**Şartlar:**\n- Mağdurun sağlığı tehlikeye düşürülmemelidir.\n- **Cerrahî müdahalede bulunulmamalıdır.**\n\n**Karar ve onay:**\n- Hâkim veya mahkeme, savcının istemiyle ya da re'sen karar verir.\n- Gecikmesinde sakınca bulunan hâllerde savcı karar verir.\n- Savcının kararı 24 saat içinde onaya sunulur. Hâkim veya mahkeme 24 saat içinde karar verir.\n- Onaylanmayan karar hükümsüz kalır.\n\n**Rıza:**\n- **Mağdurun rızası varsa karar alınması gerekmez.**\n- Çocuğun soy bağının araştırılmasında ise karar şarttır.\n\n**Kaçınma:**\n- Tanıklıktan çekinme sebepleriyle muayeneden ve örnek alınmasından kaçınılabilir.\n- Çocuk veya akıl hastası için kanunî temsilci karar verir. Tanıklığın anlam ve sonuçlarını algılayabiliyorsa onun görüşü de alınır.\n- Kanunî temsilci de şüpheli veya sanıksa hâkim karar verir. Bu durumda elde edilen deliller, şüpheli veya sanık olmayan kanunî temsilcinin izni olmadıkça davanın ileri aşamalarında kullanılamaz.\n\n**İtiraz:** Hâkim veya mahkeme kararlarına itiraz edilebilir.\n\n**Kadının muayenesi (md 77):** İstemi hâlinde ve olanaklar elverdiğinde bir kadın hekim tarafından yapılır.",
+      "articleRefs": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Moleküler genetik incelemeler",
+      "body": "**Hangi örnekler (md 78)**\n- Md 75 ve 76'daki işlemlerle elde edilen örnekler\n- Bulunan ve kime ait olduğu belli olmayan beden parçaları\n\n**Amaç (zorunluysa)**\n- Soybağının tespiti\n- Elde edilen bulgunun şüpheli, sanık ya da mağdura ait olup olmadığının tespiti\n\nBu amaçlar dışında tespit yapılmasına yönelik incelemeler **yasaktır**.\n\n**Karar (md 79)**\n- Kararı **yalnızca hâkim** verebilir.\n- Kararda inceleme ile görevlendirilen bilirkişi de gösterilir.\n\n**Kim bilirkişi olabilir?**\n- Resmen atanan veya bilirkişilikle yükümlü olanlar\n- Soruşturma veya kovuşturmayı yürüten makama mensup olmayan görevliler\n- Bu makamın, işi yürüten dairesinden teşkilât yapısı itibarıyla ve objektif olarak ayrı bir birimine mensup görevliler\n\n**Bilirkişinin yükümlülükleri**\n- Yasak incelemelerin yapılmasını önler.\n- Yetkisiz üçüncü kişilerin bilgi edinmesini önler.\n\n**Kimlik gizliliği:** Bulgu bilirkişiye ilgilinin adı ve soyadı, adresi ve doğum tarihi bildirilmeden verilir.",
+      "articleRefs": [
+        "78",
+        "79"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İnceleme sonuçlarının gizliliği ve imhası",
+      "body": "**Kişisel veri (md 80)**\n- Md 75, 76 ve 78'e göre alınan örneklerin inceleme sonuçları **kişisel veridir**.\n- Başka amaçla kullanılamaz.\n- Dosya içeriğini öğrenme yetkisi olanlar bu sonuçları başkasına veremez.\n\n**Kayıt**\n- Sonuçlar kimlik bilgilerinden arındırılarak mahsus bir sisteme kaydedilir.\n- Bir örneği, dosyada delil olarak saklanmak üzere soruşturma veya kovuşturma makamına gönderilir.\n\n**Yok etme**\n- **Derhâl** yok edilen hâller:\n  - Kovuşturmaya yer olmadığı kararına itiraz süresinin dolması\n  - İtirazın reddi\n  - Beraat kararının kesinleşmesi\n  - Ceza verilmesine yer olmadığı kararının kesinleşmesi\n- Diğer hâllerde mahkeme kararının kesinleşmesinden itibaren **yirmi yıl** geçince yok edilir.\n- Yok etme, Cumhuriyet savcısının huzurunda yapılır ve tutanağa geçirilir.\n\n**Silme talebi:** Kişi bu süre içinde, saklama amacı ortadan kalkarsa veya haklı bir neden varsa, hâkim veya mahkemeden bilgilerin silinmesini talep edebilir.\n\n**Kullanma**\n- Sistemdeki bilgiler, yürütülen bir soruşturma veya kovuşturmada maddî gerçeğin ortaya çıkarılması için kullanılabilir.\n- Bunun için mahkeme, hâkim veya savcı kararı gerekir.\n- Hâkim veya mahkeme kararına karşı itiraz yoluna gidilir. Savcının kararına karşı sulh ceza hâkimliğine başvurulur.\n\n**Yönetmelik:** Esas ve usuller, Adalet Bakanlığı ve İçişleri Bakanlığının birlikte çıkaracağı yönetmelikle belirlenir.",
+      "articleRefs": [
+        "80"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Fizik kimliğin tespiti",
+      "body": "**Şartlar**\n- Suçun üst sınırı **iki yıl veya daha fazla** hapis cezası gerektirmelidir.\n- Kayıt, şüpheli veya sanığın kimliğinin teşhisi için gerekli olmalıdır.\n\n**Kararı kim verir?** **Cumhuriyet savcısının emri** yeterlidir.\n\n**Kayda alınanlar**\n- Fotoğraf\n- Beden ölçüleri\n- Parmak ve avuç içi izi\n- Bedende yer alıp teşhisi kolaylaştıracak diğer özellikler\n- Ses ve görüntüler\n\nBu kayıtlar soruşturma ve kovuşturma dosyasına konulur.\n\n**Yok etme:** Kayıtlar şu hâllerde Cumhuriyet savcısının huzurunda **derhâl** yok edilir ve tutanağa geçirilir:\n- Kovuşturmaya yer olmadığı kararına itiraz süresinin dolması\n- İtirazın reddi\n- Beraat kararının kesinleşmesi\n- Ceza verilmesine yer olmadığı kararının kesinleşmesi\n\n**Yönetmelik (md 82):** Md 75 ilâ 81'deki işlemlerin usulleri yönetmelikte gösterilir.",
+      "articleRefs": [
+        "81",
+        "82"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Genetik inceleme ve fizik kimlikte ince çizgiler",
+      "body": "- Moleküler genetik incelemenin amaçları sınırlıdır: soybağı ve bulgunun (ya da kimsesiz beden parçasının) şüpheli, sanık veya mağdura ait olup olmadığı. ‘Ölümün meydana geliş şekli ve sebebini saptamak’ bu amaçlardan biri değildir.\n- Moleküler genetik incelemeye **savcı karar veremez**. Kararı yalnızca hâkim verir.\n- Genetik sonuçlar, diğer hâllerde kesinleşmeden itibaren **yirmi yıl** sonra yok edilir. On ya da on beş yıl şıkları yanlıştır.\n- Eşiği ters çevirme. Fizik kimlik tespiti, üst sınırı **iki yıl veya daha fazla** olan suçlarda yapılır. İç beden muayenesi ise üst sınırı **iki yıldan daha az** olan suçlarda yasaktır.\n- ‘Yalnızca savcının kararıyla yapılan tedbir’ sorulursa cevap **fizik kimliğin tespitidir**. Kanun burada yalnızca savcının emrini arar.",
+      "articleRefs": [
+        "75",
+        "78",
+        "79",
+        "80",
+        "81"
+      ],
+      "counterNumbers": [
+        10,
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Keşif, hazır bulunma ve yer gösterme",
+      "body": "**Keşif (md 83)**\nKeşfi yapabilenler:\n- Hâkim veya mahkeme\n- Naip hâkim\n- İstinabe olunan hâkim veya mahkeme\n- Gecikmesinde sakınca bulunan hâllerde **Cumhuriyet savcısı**\n\nKeşif tutanağına var olan durum yazılır. Olayın özel niteliğine göre varlığı umulup da elde edilemeyen **delillerin yokluğu** da yazılır.\n\n**Hazır bulunma (md 84)**\n- Keşifte şüpheli, sanık, mağdur ve bunların müdafii ve vekili hazır bulunabilir.\n- Duruşmada bulunamayacak ya da uzakta oturan tanık veya bilirkişinin dinlenmesinde de aynı hüküm uygulanır.\n- Şüpheli veya sanığın huzuru, tanığın gerçeğe uygun tanıklığına engel olacaksa şüpheli veya sanığın bulunmamasına karar verilebilir.\n- Hazır bulunma hakkı olanlar, iş geri bırakılmamak koşuluyla önceden haberdar edilir.\n- **Tutuklu** şüpheli veya sanığın keşifte hazır bulundurulmasına, hâkim veya mahkeme ancak zorunlu sayılan hâllerde karar verebilir.\n\n**Yer gösterme (md 85)**\n- Kendisine yüklenen suç hakkında **açıklamada bulunmuş** şüpheliye yaptırılır.\n- Yaptıran: Cumhuriyet savcısı. Md 250'nin birinci fıkrasındaki suçlarda **adli kolluk amiri** de yetkilidir.\n- Soruşturmayı geciktirmemek kaydıyla müdafi de hazır bulunabilir.\n- İşlem, md 169'a uygun olarak tutanağa bağlanır.",
+      "articleRefs": [
+        "83",
+        "84",
+        "85"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Keşif ile yer göstermeyi karıştırma",
+      "body": "- Keşif yapma yetkisi olmayan, **adli kolluktur**. Kolluk amirinin yetkisi yer göstermededir, keşifte değil.\n- Tutuklu sanık keşifte hazır bulundurulabilir. Ancak bu, zorunlu sayılan hâllerde ve hâkim veya mahkeme kararıyla olur.\n- Keşif tutanağına yalnızca bulunanlar yazılmaz. Umulup bulunamayan delillerin yokluğu da yazılır.\n- Yer gösterme, **açıklamada bulunmuş** şüpheliye yaptırılır. ‘Susma hakkını kullansa da yaptırılır’ ya da ‘sorulara cevap vermek zorundadır’ şıkları yanlıştır.\n- Yer gösterme için hâkim veya mahkeme kararı aranmaz. İşlemi savcı, kanunda sayılan suçlarda ise adli kolluk amiri yaptırır.",
+      "articleRefs": [
+        "83",
+        "84",
+        "85"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ölü muayenesi, otopsi, yeni doğan ve zehirlenme",
+      "body": "**Kimlik belirleme (md 86)**\n- Engel yoksa ölü muayenesinden veya otopsiden önce ölünün kimliği belirlenir. Bunun için ölü özellikle kendisini tanıyanlara gösterilir.\n- Elde edilmiş bir şüpheli veya sanık varsa, teşhis için ölü ona da gösterilebilir.\n\n**Adlî muayene (md 86)**\n- Tıbbî belirtiler, ölüm zamanı ve ölüm nedeni için tüm bulgular saptanır.\n- Muayene **Cumhuriyet savcısının huzurunda** ve bir hekim görevlendirilerek yapılır.\n\n**Otopsi (md 87)**\n- Savcının huzurunda **iki hekim** yapar. Biri adlî tıp uzmanıdır. Diğeri patoloji uzmanı veya başka bir dalın mensubudur. Ya da hekimlerden biri pratisyen olabilir.\n- Müdafi veya vekilin getirdiği hekim de otopside hazır bulunabilir.\n- Zorunlulukta otopsiyi bir hekim de yapabilir. Bu durum raporda açıkça belirtilir.\n- Cesedin durumu elverirse baş, göğüs ve karın mutlaka açılır.\n- Öleni, ölümünden hemen önceki hastalığında tedavi eden tabibe otopsi görevi verilemez. Ancak bu tabibin hazır bulunması ve hastalığın seyri hakkında bilgi vermesi istenebilir.\n\n**Mezardan çıkarma (md 87)**\n- Kararı soruşturmada **Cumhuriyet savcısı**, kovuşturmada **mahkeme** verir.\n- Araştırmanın amacı tehlikeye düşmeyecekse ve ulaşmak zor değilse karar ölünün bir yakınına derhâl bildirilir.\n- Bu işlemler sırasında cesedin görüntüleri kayda alınır.\n\n**Yeni doğan (md 88)** Şunlar saptanır:\n- Doğum sırasında veya sonrasında yaşam bulgularının varlığı\n- Olağan süresinde doğup doğmadığı\n- Rahim dışında yaşayacak kadar olgunlaşıp olgunlaşmadığı veya yaşama yeteneği\n\n**Zehirlenme şüphesi (md 89)**\n- Organlardan parça alınırken organın görünen şekli ve tahribatı tanımlanır.\n- Şüpheli maddeler görevlendirilen uzman tarafından incelenip tahlil edilir.\n- Savcı veya mahkeme, bu incelemenin hekimin katılmasıyla ya da onun yönetiminde yapılmasına karar verebilir.",
+      "articleRefs": [
+        "86",
+        "87",
+        "88",
+        "89"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Otopsi sorularında ‘kim, kimin huzurunda?’",
+      "body": "- Adlî muayene de otopsi de **Cumhuriyet savcısının huzurunda** yapılır. ‘Hâkim veya mahkemenin huzurunda’ şıkkı yanlıştır.\n- Mezardan çıkarma kararını soruşturmada **savcı** verir, hâkim değil. Kovuşturmada mahkeme verir.\n- Öleni son hastalığında tedavi eden tabip otopsiyi yapamaz. Ancak hazır bulunması ve bilgi vermesi istenebilir. ‘Hazır bulunmasına da izin verilemez’ şıkkı yanlıştır.\n- Otopsi kural olarak iki hekimle yapılır. Zorunlulukta bir hekim de yapabilir. Kanun bu istisnayı açıkça tanır.\n- Otopsi, cesedin durumu elverirse baş, göğüs ve karnın açılmasını gerektirir. Adlî muayene ise bulguların saptanmasıdır. Boşluk doldurma sorusunda sıra ‘adlî muayene – otopsi’dir.\n- Yeni doğanda ‘yaşama yeteneği bulunup bulunmadığının saptanması’ ifadesi doğrudur.",
+      "articleRefs": [
+        "86",
+        "87",
+        "88"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: muayene, kayıt ve otopsi",
+      "rows": [
+        {
+          "label": "Savcının beden muayenesi kararını onaya sunma",
+          "value": "24 saat içinde",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "label": "Hâkim veya mahkemenin onay kararı",
+          "value": "24 saat içinde",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "label": "İç beden muayenesi ve örnek alma yasağı",
+          "value": "Üst sınırı 2 yıldan az hapis gerektiren suçlar",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "Fizik kimlik tespiti",
+          "value": "Üst sınırı 2 yıl veya daha fazla hapis gerektiren suçlar",
+          "refs": [
+            "81"
+          ]
+        },
+        {
+          "label": "Genetik sonuçların yok edilmesi (diğer hâller)",
+          "value": "Kesinleşmeden itibaren 20 yıl",
+          "refs": [
+            "80"
+          ]
+        },
+        {
+          "label": "Yok etme (kovuşturmaya yer olmadığı, beraat, ceza verilmesine yer olmadığı)",
+          "value": "Derhâl",
+          "refs": [
+            "80",
+            "81"
+          ]
+        },
+        {
+          "label": "Adlî muayenede görevlendirilen hekim",
+          "value": "1",
+          "refs": [
+            "86"
+          ]
+        },
+        {
+          "label": "Otopsiyi yapan hekim",
+          "value": "2 (zorunlulukta 1)",
+          "refs": [
+            "87"
+          ]
+        },
+        {
+          "label": "Bilirkişi ücret tarifesinin güncellenmesi",
+          "value": "Her yıl (Adalet Bakanlığı)",
+          "refs": [
+            "72"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "72",
+        "75",
+        "76",
+        "80",
+        "81",
+        "86",
+        "87"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Şüpheli veya sanık (md 75) ↔ Mağdur (md 76)",
+      "rows": [
+        {
+          "aspect": "Muayene türü",
+          "left": "İç beden muayenesi; kan, biyolojik örnek, saç, tükürük, tırnak alma",
+          "right": "Dış veya iç beden muayenesi; kan, biyolojik örnek, saç, tükürük, tırnak alma",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Hâkim kararına yol açan istem",
+          "left": "Cumhuriyet savcısı veya mağdur istemi ya da re'sen",
+          "right": "Cumhuriyet savcısı istemi ya da re'sen",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Gecikmesinde sakınca",
+          "left": "Savcı karar verir; 24 saatte onaya, 24 saatte karar",
+          "right": "Savcı karar verir; 24 saatte onaya, 24 saatte karar",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Sağlık şartı",
+          "left": "Sağlığa zarar verme tehlikesi bulunmamalı",
+          "right": "Sağlığı tehlikeye düşürmemek ve cerrahî müdahalede bulunmamak",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Suç sınırı",
+          "left": "Üst sınırı iki yıldan az suçlarda yapılamaz",
+          "right": "Md 76'da böyle bir sınır yer almaz",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Rıza",
+          "left": "Rızaya bağlı bir istisna öngörülmemiş",
+          "right": "Rıza varsa karar gerekmez; çocuğun soy bağı araştırmasında karar şart",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "Kaçınma",
+          "left": "Düzenlenmemiş",
+          "right": "Tanıklıktan çekinme sebepleriyle kaçınılabilir",
+          "refs": [
+            "75",
+            "76"
+          ]
+        },
+        {
+          "aspect": "İtiraz",
+          "left": "Hâkim veya mahkeme kararına itiraz edilebilir",
+          "right": "Hâkim veya mahkeme kararına itiraz edilebilir",
+          "refs": [
+            "75",
+            "76"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "75",
+        "76"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "31",
+          "refs": [
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89"
+          ]
+        },
+        {
+          "label": "md 74 — Gözlem altına alınma",
+          "value": "5 soru",
+          "refs": [
+            "74"
+          ]
+        },
+        {
+          "label": "md 75 — Şüpheli veya sanığın beden muayenesi ve vücudundan örnek alınması",
+          "value": "4 soru",
+          "refs": [
+            "75"
+          ]
+        },
+        {
+          "label": "md 69 — Bilirkişinin reddi",
+          "value": "3 soru",
+          "refs": [
+            "69"
+          ]
+        },
+        {
+          "label": "md 85 — Yer gösterme",
+          "value": "3 soru",
+          "refs": [
+            "85"
+          ]
+        },
+        {
+          "label": "md 73 — Sahte para ve değerler üzerinde yapılacak incelemeler",
+          "value": "2 soru",
+          "refs": [
+            "73"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 62, md 67, md 68, md 70, md 71, md 76, md 77, md 79, md 82, md 84, md 89",
+          "refs": [
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 62–89, 10 soru",
+          "refs": [
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89"
+          ]
+        }
+      ]
+    }
+  ]
+}

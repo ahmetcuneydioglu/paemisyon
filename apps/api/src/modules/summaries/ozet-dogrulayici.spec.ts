@@ -63,6 +63,15 @@ describe('Türkçe sayı eşlemesi (Doc 53 doğrulayıcı)', () => {
   });
 });
 
+describe('Türkçe sayı — sözcük sınırı', () => {
+  it('"son beş yıl"daki beş 5\'tir; "on beş gün"deki beş değildir; 13.000 metinde 13000 olarak bulunur', () => {
+    expect(numberInTexts(5, ['son beş yıl içinde'])).toBe(true);
+    expect(numberInTexts(5, ['on beş gün içinde'])).toBe(false);
+    expect(numberInTexts(13000, ['13.000 gösterge rakamı'])).toBe(true);
+    expect(numberInTexts(0, ['13.000 gösterge rakamı'])).toBe(false);
+  });
+});
+
 describe('sayı çıkarımı', () => {
   it('liste numarası, madde atfı ve fıkra kesri sayı değildir', () => {
     const t = '1. İstifa\n2. Kesin hüküm (md 84/2)\n3. 85. maddeye göre 7 gün içinde';
@@ -77,6 +86,13 @@ describe('sayı çıkarımı', () => {
     ]);
     expect(extractNumbers('md Ek 7 uyarınca; ek madde 9; 4/A. madde')).toEqual([]);
     expect(extractNumbers('Ek 1–3 bildirimi 48 saat önce')).toEqual([48]);
+    // Binlik ayracı, "Madde N", "N uncu madde", "md A ve B" atıfları
+    expect(extractNumbers('13.000 gösterge; 50.000 – 300.000 TL').sort((a, b) => a - b)).toEqual([
+      13000, 50000, 300000,
+    ]);
+    expect(extractNumbers("Madde 94'te karıştırılanlar: 24 saat")).toEqual([24]);
+    expect(extractNumbers('139 uncu maddede süre yok; 84 üncü madde')).toEqual([]);
+    expect(extractNumbers('md 100 ve 101 gereğince; md 128, 130 ve 134')).toEqual([]);
   });
   it('yüzde ve süre sayıları alınır', () => {
     expect(extractNumbers('yüzde 5 boşalma, 30 ay, 3 ay içinde').sort((a, b) => a - b)).toEqual([

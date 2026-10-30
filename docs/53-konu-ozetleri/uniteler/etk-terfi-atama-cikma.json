@@ -1,0 +1,662 @@
+{
+  "unit": {
+    "slug": "etk-terfi-atama-cikma",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "title": "Terfi, atama ve meslekten çıkma",
+    "subtitle": "Rütbe merdiveni, değerlendirme kurulları, kadrosuzluk, istifa, izin ve intihap encümenleri",
+    "articleFrom": "47",
+    "articleTo": "67",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 3201 Sayılı Emniyet Teşkilat Kanunu, md 47, 51–56, 59–67",
+    "articleNos": [
+      "47",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Rütbe merdiveni",
+      "body": "Polis amirleri, Komiser Yardımcısı'ndan Sınıf Üstü Emniyet Müdürü'ne uzanan bir merdivende yükselir. Her basamağın bir meslek derecesi ve zorunlu bir en az bekleme süresi var. Bu süreyi doldurmak tek başına yetmez. Kurul seni kıdem sırasına göre görüşür, terfiyi ise liyakate göre verir. Basamağı uzun süre çıkamazsan kadrosuzluk devreye girer. Bu ünitede merdivenin tamamını, merdivenden inişi (sicillen tekaüt, istifa) ve aradaki izin kurallarını göreceksin.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meslek haricinden tayin",
+      "body": "**Meslek haricinden herhangi bir zatın tayini caiz olan kadrolar:**\n- Emniyet müfettişliği\n- Emniyet müfettiş muavinliği\n- Sivil memurluk (Dedektif)\n\n**Asalet şartı:** Bir senelik tecrübe neticesinde kifayeti tahakkuk eden kişi, memur hukukunu haiz olmak üzere bu kadrolara **asaleten** tayin olunabilir.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Dışarıdan alımda liste kapalıdır",
+      "body": "Dışarıdan alınabilecek kadrolar yalnızca müfettişlik, müfettiş muavinliği ve sivil memurluktur (Dedektif). “Emniyet amirliği ve başkomiserlik de dışarıdan doldurulur” diyen şık yanlıştır. Asaleten tayin için tecrübe süresi bir senedir. “İki sene” ya da “altı ay” diyen şıkları ele.",
+      "articleRefs": [
+        "47"
+      ],
+      "counterNumbers": [
+        2,
+        6
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müfettişler ve nahiye amirleri",
+      "body": "- **md 51:** 2270 numaralı kanun gereği nahiye müdürlüklerinde istihdam edilen komiser muavini, komiser ve başkomiserlerin maaşları ile teçhizat ve elbise bedelleri **Emniyet Umum Müdürlüğü bütçesinden** verilir.\n- **md 52:** Teftiş heyeti reisi; emniyet polis başmüfettişi ve müfettişlerin mesai tarzlarını tespit eder. Rapor, lâyiha ve tahkikat evrakını tetkik eder, neticeleri Umum Müdüre bildirir. Umum Müdürün göstereceği işleri de yapar.\n- **md 53:** Emniyet polis müfettişleri; emniyet müdürleri, bu derecedeki emniyet müdür muavinleri ve Polis Enstitüsünün yüksek tahsil ve ihtisas kursunu muvaffakiyetle bitiren emniyet amirlerinden tayin olunur. Bu tahsili bitirmeyen emniyet amirleri de müfettişlik sınıfına nakledilebilir. **Ancak** bunlar birinci sınıf emniyet polis müfettişliğinden yukarı terfi edemez.\n- **md 54:** Müfettişler, teşkilatı **sırf mesleki bakımdan** teftiş eder. Bu konuda Vekalet müfettişlerinin hukuk ve salahiyetine sahiptir.",
+      "articleRefs": [
+        "51",
+        "52",
+        "53",
+        "54"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Rütbe başına kadro tavanı",
+      "body": "Her amir rütbesindeki toplam kadro sayısı, emniyet hizmetleri sınıfının toplam kadrosuna göre aşağıdaki **on binde** oranlara karşılık gelen sayıyı geçemez:\n- Birinci Sınıf Emniyet Müdürü: 65\n- İkinci Sınıf Emniyet Müdürü: 75\n- Üçüncü Sınıf Emniyet Müdürü: 90\n- Dördüncü Sınıf Emniyet Müdürü: 100 (toplam kadronun yüzde 1'i)\n- Emniyet Amiri: 300\n- Başkomiser: 310\n- Komiser: 320\n- Komiser Yardımcısı: 330\n\nHesaplamalarda **küsurat dikkate alınmaz**. Kadro sayılarını aşmamak kaydıyla, her rütbede bulunması gereken personel sayısını hizmet ihtiyacına göre **her yıl Yüksek Değerlendirme Kurulu** tespit eder.",
+      "articleRefs": [
+        "55"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 1,
+          "expr": "100 / 10000 * 100",
+          "refs": [
+            "55"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kıdem sırası ve liyakat",
+      "body": "**Kurullarda görüşme kıdem sırasına göre, terfi liyakate göre yapılır.**\n\nKıdem sırası şu ölçütlerle tespit edilir:\n1. Bulunulan rütbeye terfi tarihi esas alınır.\n2. Aynı tarihte terfi edenlerden performans değerlendirme puanı yüksek olan kıdemlidir.\n3. Puanlar eşitse, bulunduğu rütbede aldığı başarı ve üstün başarı belgesi fazla olan kıdemlidir.\n4. Belge sayısı da eşitse sicil numarası daha küçük olan kıdemlidir.\n\nKıdem sırasını Emniyet Genel Müdürlüğü **her yıl mart ayında** Teşkilata duyurur.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kıdem mi liyakat mi?",
+      "body": "Görüşme kıdemle, terfi liyakatle yapılır. İkisinin yerini değiştiren şık klasik tuzaktır. “Kadro sayısına göre” ifadesi bu cümlede hiç geçmez. Ölçütlerin sırası şöyledir: terfi tarihi → performans puanı → belge sayısı → sicil numarası. Belgeyi performanstan öne alan ya da performansı terfi tarihinden önce başlatan dizilim yanlıştır. Kıdem sırası mart ayında duyurulur. Haziran terfi ayıdır, ikisini karıştırma.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurullar ne zaman toplanır, terfi ne zaman olur?",
+      "body": "- Kurullar **her yıl mayıs ayında** toplanır, kararlar **oy çokluğu** ile alınır.\n- **İstisna:** Bakanın onayıyla kurullar yıl içinde birden fazla toplanabilir ve terfi değerlendirmesine karar verebilir.\n- Terfiler **her yıl haziran ayında topluca** yapılır.\n- Kurul yıl içinde birden fazla toplanırsa terfiler, **toplantının yapıldığı ay sonunda** yapılır.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mart, mayıs, haziran",
+      "body": "Takvimi sırayla hatırla: mart'ta kıdem duyurusu, mayıs'ta kurul toplantısı, haziran'da toplu terfi. “Nisan” ya da “oy birliği” içeren şık yanlıştır. Ek toplantıda terfi, izleyen ayın sonunda veya Bakan onayı tarihinde yapılmaz; toplantının yapıldığı ayın sonunda yapılır. Yüksek Değerlendirme Kurulunun başkanı Emniyet Genel Müdürüdür. İçişleri Bakanı kurulda yer almaz, yalnızca ek toplantıya onay verir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Terfi görüşmesinin şartları ve özel atamalar",
+      "body": "**Rütbe terfiinin kurulda görüşülebilmesi için:**\n- a) Bulunulan rütbedeki en az bekleme süresinin tamamlanması,\n- b) Bekleme süresi içindeki yıl sayısı kadar iyi veya çok iyi performans değerlendirme puanı alınması,\n- c) Dördüncü Sınıf Emniyet Müdürü rütbesine terfi için yönetmeliğe uygun yazılı ve sözlü sınavda başarılı olunması (bu sınava her personel **en fazla beş defa** katılabilir),\n- d) Dördüncü Sınıf Emniyet Müdürlüğü için **Polis Akademisi Başkanlığınca** düzenlenen yöneticilik eğitiminde başarılı olunması şarttır.\n\n**İkinci Sınıf'tan atlama:** İkinci Sınıf Emniyet Müdürü rütbesinde en az bekleme süresini tamamlayanlar, terfien Birinci Sınıf Emniyet Müdürü rütbesinde **ikinci meslek derecesi** karşılığı görev unvanlarına atanabilir.\n\n**Polis memurundan Komiser Yardımcılığına geçiş:** İhtiyaç hâlinde, meslekte **fiilen iki yılını** dolduran **lisans mezunu** polis memurları arasında yazılı ve sözlü sınav yapılır. Sınavı kazanıp Polis Akademisi Başkanlığının **ilk derece amirlik eğitimini** başarıyla bitirenler Komiser Yardımcılığına atanır. Adaylarda aranacak diğer nitelikler yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Rütbe, meslek derecesi, en az bekleme",
+      "rows": [
+        {
+          "label": "Komiser Yardımcısı — derece 9",
+          "value": "4 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Komiser — derece 8",
+          "value": "4 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Başkomiser — derece 7",
+          "value": "3 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Emniyet Amiri — derece 6",
+          "value": "3 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Dördüncü Sınıf Emniyet Müdürü — derece 5",
+          "value": "2 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Üçüncü Sınıf Emniyet Müdürü — derece 4",
+          "value": "2 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "İkinci Sınıf Emniyet Müdürü — derece 3",
+          "value": "2 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf Emniyet Müdürü — derece 2",
+          "value": "2 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf Emniyet Müdürü — derece 1",
+          "value": "Yaş haddi",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Sınıf Üstü Emniyet Müdürü — Derece Üstü",
+          "value": "Yaş haddi",
+          "refs": [
+            "55"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tabloyu ezberlemenin kısa yolu",
+      "body": "Bekleme sürelerini gruplayarak hatırla: Komiser Yardımcısı ve Komiser 4 yıl, Başkomiser ve Emniyet Amiri 3 yıl, dört müdür rütbesinin hepsi 2 yıl. Tabloda iki kez geçen tek rütbe Birinci Sınıf Emniyet Müdürüdür: hem 2. hem 1. derecede yer alır. Rütbe listesinde olmayan bir unvan sorulursa dikkat et. İl Emniyet Müdürü rütbe sayımında geçmez.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Terfide hangi süre sayılır?",
+      "body": "**Esas:** Üst rütbeye terfide **bu rütbedeki fiili çalışma süresi** esas alınır.\n\n**Sayılmayanlar:** Kazanılmış hak aylığında değerlendirilen uzmanlık, yüksek lisans, doktora ve avukatlık stajı rütbe kıdeminde değerlendirilmez.\n\n**Sayılanlar:** Yurt dışı misyon koruma, yurt dışı kurs ve diğer görevlerle geçen süreler ile tedavi ve istirahat süreleri, hangi rütbede geçtiyse o rütbenin fiili çalışma süresine sayılır. **Ancak** bu sürelerin toplamda **üç yılı aşan** kısmı terfide değerlendirilmez.\n\n**Askerlik:** Teşkilata girmeden önce yapılan askerlik, **atanılan ilk rütbede** ve **adaylığın onanmasından sonra** fiili çalışma süresinden sayılır.\n\n**Terfii ceza süresi kadar geri bıraktıranlar:**\n- Hapis cezaları (paraya çevrilse veya ertelense dahi; **taksirli suçlar hariç**)\n- Aylıksız izinde geçen süreler\n- Uzun ve kısa süreli durdurma cezaları\n- Meslekten ve memuriyetten men cezaları\n\n**Her yetersiz performans puanı** terfii **bir yıl** geciktirir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Doktora sayılmaz, tedavi sayılır",
+      "body": "Doktora, yüksek lisans, uzmanlık ve avukatlık stajı aylıkta değerlendirilir ama rütbe kıdeminde sayılmaz. Yurt dışı görev, tedavi ve istirahat ise sınırlı olarak sayılır. Taksirli suçtan alınan hapis terfii geri bıraktırmaz. Ertelenmiş ya da paraya çevrilmiş hapis ise geri bıraktırır. Askerlik, istediğin rütbede değil, ilk rütbede ve adaylık onandıktan sonra sayılır. Terfide esas alınan, toplam hizmet ya da kıdem sırasındaki yer değildir; bulunulan rütbedeki fiili süredir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kadrosuzluk: ödeme, emekliye sevk, tazminat",
+      "body": "**Kadrosuzluktan terfi edemeyen:** Diğer şartları taşıyıp yalnızca hizmet ihtiyacı nedeniyle kadrosuzluktan terfi edemeyen personele, terfi eden emsallerinin **ek gösterge, zam ve tazminatları** ödenir.\n\n**Emniyet Amiri, Dördüncü, Üçüncü ve İkinci Sınıf Emniyet Müdürleri:** Rütbeye terfi tarihinden itibaren **beş yıl** içinde üst rütbeye geçemeyenler, emeklilik veya yaşlılık aylığı şartlarını taşıyorsa **Yüksek Değerlendirme Kurulunun teklifi ve Bakan onayı** ile kadrosuzluktan emekliye sevk edilir.\n- Sevki uygun görülmeyenlerin fiili hizmeti aynı usulle **iki yıl** uzatılır.\n- İki yıl sonra yeniden değerlendirilir ve **en fazla bir defa daha** uzatılabilir.\n- Süresi uzatılmayan emekliye sevk edilir.\n\n**Birinci Sınıf Emniyet Müdürleri:** Rütbedeki en fazla bekleme süresi **altı yıldır**. Bu süre sonunda üst rütbeye veya meslek derecesindeki göreve atanamayanlar, şartları taşıyorsa aynı usulle emekliye sevk edilir. İl Emniyet Müdürü, Daire Başkanı, Polis Başmüfettişi gibi sayılan görevlerde fiilen bulunup sevki uygun görülmeyenler hizmete devam eder. Bunların durumu **iki yılda bir** Yüksek Değerlendirme Kurulunca karara bağlanır.\n\n**Kadrosuzluk tazminatı** (en yüksek Devlet memuru aylığı, ek gösterge dâhil):\n- Emniyet Amiri %110\n- Dördüncü Sınıf %120\n- Üçüncü Sınıf %130\n- İkinci Sınıf %140\n- Birinci Sınıf %150\n\nTazminat, emekliye sevk tarihini takip eden ay başından başlar. Rütbe ve makamın yaş haddinden az olmamak üzere **altmış yaşına** kadar Sosyal Güvenlik Kurumunca ödenir. Emekli aylığı ile tazminatın toplamı, aynı kadrodaki emsaline yapılan toplam ödemeyi geçemez. Tazminat **vergiye tabi değildir** ve yaş haddinden önce ölenlerin **varislerine intikal etmez**. Sosyal Güvenlik Kurumu bu tutarı **üçer aylık** devreler hâlinde, faturası karşılığında Hazineden tahsil eder.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kadrosuzlukta kim, ne kadar?",
+      "body": "Beş yıl kuralı Emniyet Amiri'nden İkinci Sınıf Emniyet Müdürü'ne kadar olan rütbeler içindir. Birinci Sınıf'ta ise en fazla bekleme altı yıldır. Komiser Yardımcısı, Komiser ve Başkomiser bu sevk ve tazminat düzeninde yer almaz. Başkomiser için tazminat oranı sorulursa cevap “öngörülmemiş” olur. Tazminat ömür boyu sürmez, varislere de geçmez; yaş haddinden az olmamak üzere altmış yaşına kadar ödenir. Kadrosuzluktan terfi edemeyen kişi terfi etmiş sayılmaz, yalnızca emsalinin ek gösterge, zam ve tazminatını alır. Devam ettirilen Birinci Sınıf müdürler iki yılda bir değerlendirilir. Bu kararı Bakan ya da Merkez Kurul değil, Yüksek Değerlendirme Kurulu verir.",
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sicillen tekaüde sevk",
+      "body": "Aşağıdakiler **sicillen tekaüde sevkedilir:**\n- Bulunduğu sınıf dahilinde **iki muhtelif amirden, iki terfi müddeti içinde, iki fena sicil** alanlar,\n- Bir terfi müddeti içinde terfiin bir devre geciktirilmesi cezasına uğradığı hâlde, hareketlerini ıslah ettiğine dair iki muhtelif amirden sicil alamayanlar,\n- Herhangi bir suçtan **altı ay veya daha ziyade hapis** ve mutlak surette ağır hapis cezasına mahkûm olanlar.",
+      "articleRefs": [
+        "56"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstifa, izin ve sağlık",
+      "body": "- **md 59:** İstifa eden polis ve komiserlerden, istifanın kabulünden itibaren **üç sene** içinde mesleğe dönmeyenler bir daha mesleğe alınmaz. Bu süre içinde dönüp **yine istifa edenlerin** tekrar meslekte istihdamı caiz değildir.\n- **md 60:** İstifa etmeden ya da istifanın kabul cevabını **bir ay** beklemeden vazifesini terk ettiği için cezalandırılanlar, tekrar emniyet teşkilatı hizmetine kabul edilmez.\n- **md 61:** Komiser ve polislere senelik mezuniyet dışında **haftada 24 saat** izin verilir. Çok mühim hâller dışında bu izin kesilemez.\n- **md 62:** İzinli memur, memuriyetinin bulunduğu **belediye hudutları içinde** üniforma ile gezerse **vazifede addolunur**. Bu mıntaka dışında izinli olan memur üniforma ile gezemez.\n- **md 63:** Sağlık nedeniyle izinli veya raporlu personele genel hükümler uygulanır. **Ancak** atandığı yerde kendisinin veya bakmakla yükümlü olduğu kimselerin sağlığı nedeniyle görev yapamayacak hâle gelen personel, Bakanlıkta **Genel İdare Hizmetleri sınıfından** bir göreve atanır.\n- **md 64:** Amirinden müsaade almadan mezuniyet süresini **15 gün** aşan memur istifa etmiş addolunur.",
+      "articleRefs": [
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Süreleri birbirine karıştırma",
+      "body": "Fena sicil formülünde üç unsur birlikte aranır: iki muhtelif amir, iki terfi müddeti, iki fena sicil. “Aynı amirden” ya da “bir müddette” diye kısaltan şık yanlıştır. Hapiste eşik altı ay veya daha ziyadedir. İstifadan sonra mesleğe dönüş süresi üç senedir. İkinci istifadan sonra kapı tamamen kapanır; “beş yıl sonra alınabilir” ya da “encümen kararıyla alınabilir” diyen şıklar yanlıştır. Görevi terkte ölçü bir aydır. İzin aşımında sınır on beş gündür, kırk beş gün değil. Belediye hudutlarında üniformalı gezen izinli memur vazifede sayılır; izni kesilmiş sayılmaz. Bakmakla yükümlü olduğu kişinin sağlığı da Genel İdare Hizmetleri sınıfına atamayı gerektirir. Bu durumda başka ile nakil ya da tekaüt söz konusu değildir.",
+      "articleRefs": [
+        "56",
+        "59",
+        "60",
+        "62",
+        "63",
+        "64"
+      ],
+      "counterNumbers": [
+        5,
+        45
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İntihap encümenleri",
+      "body": "**Merkezde (md 65):** Encümenin reisi, Emniyet Umum Müdürünün seçeceği bir muavindir. Üyeleri:\n- Daire reisleri\n- Hukuk işleri müdürü\n- Zat işlerine bakan şube müdürü\n\nReis yokken **en kıdemli daire reisi** başkanlık eder. Kararlar, umum müdürün kabul ve tasvibi ile Vekaletin tasdikiyle tamam olur.\n\n**Merkez encümeninin görevi (md 66):** Dördüncü ve daha aşağı meslek derecesindeki memurların intihap işleri, memurlara verilecek takdirname ve tüm teşkilat mensuplarına verilecek para mükafatının miktarını tayin etmek.\n\n**Vilayetlerde (md 67):** Encümen, emniyet müdür veya muavinleri ya da onların yerine vazife görenlerin riyasetinde; şube müdür veya şefleri ya da onların yerine vazife görenlerden kurulur. Görevi, mesleğe girmek isteyenlerin evrakı üzerinden kanuni vasıflara sahip olup olmadıklarını incelemektir.",
+      "articleRefs": [
+        "65",
+        "66",
+        "67"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin süreleri ve oranları",
+      "rows": [
+        {
+          "label": "Meslek haricinden tayinde tecrübe süresi",
+          "value": "1 sene",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Dördüncü Sınıf terfi sınavına katılma hakkı",
+          "value": "En fazla 5 defa",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Komiser Yardımcılığı için fiili meslek süresi",
+          "value": "2 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Yurt dışı görev, tedavi ve istirahatta sayılan üst sınır",
+          "value": "Toplam 3 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Her yetersiz performans puanının gecikmesi",
+          "value": "1 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Emniyet Amiri–İkinci Sınıf için terfi edememe süresi",
+          "value": "5 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Göreve devam uzatması",
+          "value": "2 yıl, en fazla bir defa daha",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf için en fazla bekleme süresi",
+          "value": "6 yıl",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Devam ettirilen Birinci Sınıf için değerlendirme aralığı",
+          "value": "İki yılda bir (Yüksek Değerlendirme Kurulu)",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Kadrosuzluk tazminatı oranı",
+          "value": "%110 (Emniyet Amiri) – %150 (Birinci Sınıf)",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Kadrosuzluk tazminatının bitişi",
+          "value": "60 yaş (yaş haddinden az olmamak üzere)",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Tazminatın Hazineden tahsil devresi",
+          "value": "Üçer aylık",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "Sicillen tekaüt için hapis eşiği",
+          "value": "6 ay veya daha ziyade",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "İstifa sonrası mesleğe dönüş süresi",
+          "value": "3 sene",
+          "refs": [
+            "59"
+          ]
+        },
+        {
+          "label": "Görevi terkte istifa cevabını bekleme süresi",
+          "value": "1 ay",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "Haftalık izin",
+          "value": "24 saat",
+          "refs": [
+            "61"
+          ]
+        },
+        {
+          "label": "İzinsiz mezuniyet aşımı (istifa sayılır)",
+          "value": "15 gün",
+          "refs": [
+            "64"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "47",
+        "55",
+        "56",
+        "59",
+        "60",
+        "61",
+        "64"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Merkez Değerlendirme Kurulu ve Yüksek Değerlendirme Kurulu",
+      "rows": [
+        {
+          "aspect": "Kimin terfisini önerir",
+          "left": "Komiser Yardımcısı, Komiser, Başkomiser",
+          "right": "Emniyet Amiri, Dördüncü ve Üçüncü Sınıf Emniyet Müdürü",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "aspect": "Başkan",
+          "left": "Personel işlerinden sorumlu Genel Müdür Yardımcısı",
+          "right": "Emniyet Genel Müdürü",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "aspect": "Üyeler",
+          "left": "Personel Dairesi Başkanı, Birinci Hukuk Müşaviri, Genel Müdürün uygun göreceği iki Daire Başkanı, Teftiş Kurulu Başkan Yardımcılarından biri",
+          "right": "Genel Müdür Yardımcıları, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Özel Güvenlik Denetleme Başkanı, Birinci Hukuk Müşaviri, Personel Dairesi Başkanı, seçilecek bir Polis Başmüfettişi, seçilecek iki İl Emniyet Müdürü",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "aspect": "Seçimle gelen üye",
+          "left": "Öngörülmemiş",
+          "right": "Polis Başmüfettişi ve İl Emniyet Müdürleri; seçim esasları yönetmelikle düzenlenir",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "aspect": "Ek görevler",
+          "left": "—",
+          "right": "Rütbe başına personel sayısını her yıl tespit eder; kadrosuzluktan emekliye sevki teklif eder; devam ettirilen Birinci Sınıf müdürleri iki yılda bir karara bağlar",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "aspect": "Toplantı ve karar",
+          "left": "Her yıl mayıs; oy çokluğu",
+          "right": "Her yıl mayıs; oy çokluğu",
+          "refs": [
+            "55"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "55"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "44",
+          "refs": [
+            "47",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        },
+        {
+          "label": "md 55 — Terfi ve atama",
+          "value": "33 soru",
+          "refs": [
+            "55"
+          ]
+        },
+        {
+          "label": "md 47",
+          "value": "2 soru",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "md 56 — Meslekten çıkma ve çıkarılma ve mezuniyet",
+          "value": "2 soru",
+          "refs": [
+            "56"
+          ]
+        },
+        {
+          "label": "md 59",
+          "value": "2 soru",
+          "refs": [
+            "59"
+          ]
+        },
+        {
+          "label": "md 60",
+          "value": "1 soru",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "47",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 51, md 52, md 53, md 54, md 61, md 66, md 67",
+          "refs": [
+            "47",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "47",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "47",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 47, 51–56, 59–67, 10 soru",
+          "refs": [
+            "47",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67"
+          ]
+        }
+      ]
+    }
+  ]
+}

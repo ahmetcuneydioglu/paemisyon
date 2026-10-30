@@ -95,3 +95,79 @@ Mahkemesi iptal notlarının doğru fıkraya bağlanması, "Sınav der ki" satı
   Doc 53 karar 8: ünite 1–2 açık, 3–5 premium ("Ünite bilgilerini düzenle").
 - Yayın sonrası `unite-ilerleme-doldur.ts` (geçmiş cevaplardan PVSK hâkimiyeti; artık 4/A, Ek, Geçici sorular da sayılır).
 - Sonraki kanunlar aynı hat: 3201, 7068, 5271 (CMK) … madde listesi `--articles` ile.
+
+---
+
+# 3201, 7068 ve 5271 (CMK) — 26 ünite (1 Kasım 2026)
+
+Durum: **26 ünite prod'da `in_review`; yayın kararı panelden (insan).** Bölümleme kullanıcı onaylı; madde listeleri
+canlı sıradan `--articles` ile türetildi (mülga maddeler dışarıda, sorulu hiçbir canlı madde ünite dışında kalmadı).
+Toplam 617 kart, 901 bağlı soru. 26 ünite 6 paralel süreçle tek turda üretildi (giriş 7–36k, çıkış 15–36k token / ünite);
+ilk doğrulamada 17 ünite temiz, 9 ünitede 16 kusur; hepsi kapatıldı.
+
+## 3201 Emniyet Teşkilat Kanunu (6 ünite, 88 canlı madde; 32 geçici maddeden yalnız Geçici 26 dâhil)
+
+| # | Ünite | Maddeler | Kart | Bağlı soru |
+|---|---|---|---|---|
+| 1 | Teşkilat, makamlar ve bölümler | 1–6, 8–12 | 22 | 18 |
+| 2 | Rütbeler, görev unvanları ve teşkilat yapısı | 13, 15, 16, 20–22, 26, 35–41 | 23 | 14 |
+| 3 | Terfi, atama ve meslekten çıkma | 47, 51–56, 59–67 | 24 | 44 |
+| 4 | Performans, madalya, sandık ve son hükümler | 81, 82, 85–88, 90, 91, 93–98 | 22 | 11 |
+| 5 | Ek maddeler I | Ek 1, Ek 2, Ek 3, Ek 4, Ek 5, Ek 6, Ek 7, Ek 8, Ek 9, Ek 10, Ek 11, Ek 12, Ek 13, Ek 14, Ek 15, Ek 16, Ek 17, Ek 18 | 24 | 15 |
+| 6 | Ek maddeler II ve geçici hükümler | Ek 21, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34, Ek 35, Ek 36, Ek 37, Geçici 26 | 24 | 18 |
+
+## 7068 Genel Kolluk Disiplin Hükümleri (5 ünite, 40 canlı madde)
+
+| # | Ünite | Maddeler | Kart | Bağlı soru |
+|---|---|---|---|---|
+| 1 | Amaç, kapsam, tanımlar ve genel hükümler | 1–6 | 23 | 17 |
+| 2 | Disiplin cezaları, ağırlaştırıcı nedenler ve ceza puanı | 7, 9–12 | 24 | 25 |
+| 3 | Disiplin cezası verilecek fiiller | 8 | 24 | 73 |
+| 4 | Disiplin amirleri ve kurulları | 13–26 | 23 | 36 |
+| 5 | Soruşturma usulü, zamanaşımı, itiraz ve son hükümler | 27–37, 39, Geçici 1, Geçici 2 | 24 | 31 |
+
+## 5271 CMK (15 ünite, 346 canlı madde — kitap/bölüm yapısına göre)
+
+| # | Ünite | Maddeler | Kart | Bağlı soru |
+|---|---|---|---|---|
+| 1 | Kapsam, tanımlar, görev ve bağlantı | 1–11 | 24 | 41 |
+| 2 | Yetki ve hâkimin reddi | 12–33 | 24 | 44 |
+| 3 | Kararlar, süreler ve tanıklık | 34–38, 38/A, 39–61 | 24 | 39 |
+| 4 | Bilirkişi, gözlem, muayene, keşif ve otopsi | 62–89 | 24 | 31 |
+| 5 | Yakalama ve gözaltı | 90–99 | 24 | 32 |
+| 6 | Tutuklama ve adli kontrol | 100–110, 110/A, 111–115 | 24 | 44 |
+| 7 | Arama ve elkoyma | 116–128, 128/A, 129–134 | 24 | 28 |
+| 8 | İletişimin denetimi, gizli soruşturmacı, teknik izleme ve tazminat | 135–140, 140/A, 141–144 | 24 | 43 |
+| 9 | İfade, sorgu ve müdafi | 145–156 | 24 | 25 |
+| 10 | Soruşturma ve kamu davasının açılması | 157–174 | 24 | 47 |
+| 11 | Duruşma hazırlığı ve duruşma | 175–205 | 24 | 33 |
+| 12 | Deliller, hüküm ve karar | 206–232 | 24 | 53 |
+| 13 | Mağdur, katılma, özel yargılama usulleri ve uzlaştırma | 233–259 | 24 | 50 |
+| 14 | Kanun yolları: itiraz, istinaf, temyiz | 260–294, 296–307 | 24 | 58 |
+| 15 | Olağanüstü kanun yolları, giderler ve çeşitli hükümler | 308, 308/A, 309–333, Ek 1, Geçici 1, Geçici 2, Geçici 3, Geçici 4, Geçici 5, Geçici 6, Geçici 7, Geçici 8 | 24 | 31 |
+
+## Doğrulayıcıya bu turda eklenenler (testli, 60/60)
+
+- Binlik ayracı sayının parçasıdır: "13.000 gösterge" → 13000 (önceden 13 ve 0 sayılıyordu).
+- Madde atfı biçimleri: "Madde 94'te", "139 uncu maddede", "md 100 ve 101", "md 128, 130 ve 134".
+- Sözcük sınırı: "son beş yıl"daki beş 5'tir ("son"un içindeki "on" sayı sözcüğü değildir).
+- Formülde 7 serbest işlenen (iki hafta = 2 × 7 gün).
+
+## Elle düzeltilenler
+
+- 7068 ü.1: `count(...)` ile türetilmiş "kaç kalem sayılmış" satırları (3, 9, 14, 7…) çıkarıldı — betikle doğrulanamaz; bir sayı kartı boşalıp silindi (23 kart).
+- CMK ü.2: "3 gün" karşı örneği metinde geçiyordu, çıkarıldı.
+- CMK ü.7: md 128/A için "50.000–300.000 TL idarî para cezası" satırı — madde metninde para cezası YOK, model uydurmuş; satır silindi.
+
+## İnsan incelemesi için notlar
+
+- CMK md 331 metni hâlâ "Hâkimler ve Savcılar Yüksek Kurulu" diyor; ü.15 kartı metne sadık (model "metindeki adıyla" notu düşmüş).
+- 7068 md 39 "Bakanlar Kurulu yürütür", 3201 Ek 21 "190 sayılı KHK", 7068 Geçici 1 "682 sayılı KHK": metinde var, kartlar sadık.
+- 7068 ü.3 (md 8, 73 soru) tek maddelik ünite; 24 kart sınırında fiil listesi seçici — eksik kalan fiil varsa insan ekler.
+- 3201 ü.5–6 Ek maddeler konu olarak dağınık; başlıklar bilinçli genel ("Ek maddeler I/II").
+
+## Sıradaki
+
+- Panelden inceleme ve yayın; Doc 53 karar 8: her kanunun ilk 2 ünitesi açık, kalanı premium.
+- Yayın sonrası `unite-ilerleme-doldur.ts`.
+- Sonraki adaylar: TCK (5237), 5188, 2911, 2918 — aynı hat.

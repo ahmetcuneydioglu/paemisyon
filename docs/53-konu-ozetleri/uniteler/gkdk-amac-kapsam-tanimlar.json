@@ -1,0 +1,334 @@
+{
+  "unit": {
+    "slug": "gkdk-amac-kapsam-tanimlar",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "title": "Amaç, kapsam, tanımlar ve genel hükümler",
+    "subtitle": "Kanun kimlere uygulanır, temel kavramlar ne anlama gelir, disiplin cezası nasıl nitelenir ve takdir hakkı nasıl kullanılır",
+    "articleFrom": "1",
+    "articleTo": "6",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu, md 1–6",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu Kanun neyi düzenler?",
+      "body": "Bu Kanunu kolluğun disiplin kitabı gibi düşün. Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı personeline ilişkin konuları bir arada toplar: disiplinsizlik ve cezalar, disiplin amirleri ve kurulları, disiplin soruşturma usulü ve diğer ilgili hususlar. Soru 'amaç' diyorsa aklına önce bu teşkilatlar, sonra bu başlıklar gelsin.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Amaç maddesi: kimin için, neyi?",
+      "body": "**Personeline ilişkin düzenleme yapılan teşkilatlar:**\n- Emniyet Genel Müdürlüğü\n- Jandarma Genel Komutanlığı\n- Sahil Güvenlik Komutanlığı\n\n**Düzenlenen konular:**\n- disiplinsizlik ve cezalar\n- disiplin amirleri ve kurulları\n- disiplin soruşturma usulü\n- diğer ilgili hususlar",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listeye kurum ekleme tuzağı",
+      "body": "Amaç maddesindeki teşkilatlar sorulduğunda doğru cevap, Emniyet Genel Müdürlüğü, Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı'nın birlikte yer aldığı şıktır. Bunlardan birini çıkarıp yerine başka bir kurum koyan şıklar yanlıştır. Bu şıklarda istihbarat, gümrük muhafaza ya da orman teşkilatı ve Türk Silahlı Kuvvetleri karşına çıkabilir. Türk Silahlı Kuvvetleri adı bu maddelerde yalnızca kapsam maddesinde geçer: yükümlü erbaş ve erlere uygulanan 6413 sayılı Türk Silahlı Kuvvetleri Disiplin Kanunu olarak.",
+      "articleRefs": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kapsam: Kanun kimlere uygulanır?",
+      "body": "**Emniyet Genel Müdürlüğü:** teşkilatında çalışan **her sınıftan memur**.\n\n**Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı:** bu teşkilatlarda görev yapan\n- subay, astsubay\n- sözleşmeli subay, sözleşmeli astsubay\n- uzman jandarma, uzman erbaş\n- sözleşmeli erbaş ve sözleşmeli erler\n- diğer sınıflardaki memurlar\n\n**İstisna:** Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı emrine verilen **yükümlü erbaş ve erler** hakkında 31/1/2013 tarihli ve 6413 sayılı Türk Silahlı Kuvvetleri Disiplin Kanunu hükümleri uygulanır.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sözleşmeli er kapsamda, yükümlü er kapsam dışında",
+      "body": "Kapsam sorularının özü şu ayrımdır: **sözleşmeli** erbaş ve erler bu Kanuna tabidir. Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı emrine verilen **yükümlü** erbaş ve erlere ise 6413 sayılı Kanun uygulanır. 'Hangisine uygulanmaz?' diye soruluyorsa yükümlüyü ara. Uzman jandarma da maddede açıkça sayılmıştır. Emniyet tarafında kapsamı daraltan şıklara kanma. 'Yalnızca emniyet hizmetleri sınıfı', 'yalnızca merkez teşkilatı' ve 'yalnızca amir rütbesi' gibi ifadeler yanlıştır. Kapsam, teşkilatta çalışan her sınıftan memurdur.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Amir, üst, Bakan, Bakanlık",
+      "body": "- **Amir:** kadro ve kuruluş yönünden bağlı olunan kimse ile amir olarak yetkilendirilmiş olan diğer kişiler.\n- **Üst:** makam, rütbe veya kıdem büyüklüğü.\n- **Bakan:** İçişleri Bakanı.\n- **Bakanlık:** İçişleri Bakanlığı.\n\nBakan ve Bakanlık tanımı teşkilata göre ayrım yapmaz. Emniyet, Jandarma ve Sahil Güvenlik için aynıdır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplin amiri ve üst disiplin amirleri",
+      "body": "- **Disiplin amiri:** Bu Kanun ile disiplin cezası vermeye yetkili kılınmış **ilk amir**.\n- **Üst disiplin amirleri:** disiplin amirinin kadro ve kuruluş yönünden bağlı bulunduğu ve disiplin cezası verilecek personelden makam, rütbe veya kıdemce büyük olan **yetkili sıralı tüm amirler**.\n- **Disiplin amirleri:** disiplin amiri ile üst disiplin amirlerinin birlikte adı.\n\nSıralı amirler içinde ceza verme yetkisi ilk kime tanınmışsa disiplin amiri odur. Onun bağlı olduğu ve personelden büyük olan yetkili amirler ise üst disiplin amiridir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üst disiplin amirinde ne aranır, ne aranmaz?",
+      "body": "Tanımı parçalarına ayır. Aranan unsurlar şunlardır:\n- disiplin amirinin kadro ve kuruluş yönünden bu amire bağlı bulunması,\n- cezası verilecek personelden makam, rütbe veya kıdemce büyük olunması,\n- yetkili sıralı amir olunması.\n\n**Aynı birimde fiilen görev yapma** diye bir unsur yoktur. Şıkta görürsen işaretle.\n\nSenaryo sorularında da aynı mantığı uygula. Yetkinin ilk tanındığı amir disiplin amiridir, onun üstündeki yetkili sıralı amir ise üst disiplin amiridir. 'Üst disiplin amirliği yalnız Bakana aittir' ya da 'disiplin amirliği yalnız kurullara aittir' gibi şıklar tanıma uymaz.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emir, görev, hizmet",
+      "body": "- **Emir:** hizmete ilişkin bir fiilin yapılmasının veya yapılmamasının **söz, yazı ve sair surette** asta bildirilmesi.\n- **Görev:** hizmetin gerektirdiği fiili yapmak ve menettiği fiili yapmamak.\n- **Hizmet:** mevzuatla yapılması veya yapılmaması hükme bağlanmış olan hususlar ile amir tarafından emredilen veya yasaklanan işler.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Birbirine benzeyen tanımlar",
+      "body": "Bu tanımlarda şıklar genellikle yer değiştirir.\n\n**Amir ve üst:** 'Kadro ve kuruluş yönünden bağlı olunan kimse' amirin tanımıdır. **Üst** ise bir kişi değil, makam, rütbe veya kıdem **büyüklüğüdür**.\n\n**Görev ve hizmet:** 'Yapmak ve menettiğini yapmamak' görevin tanımıdır. 'Mevzuatla hükme bağlanan hususlar ile amirin emrettiği veya yasakladığı işler' ise hizmetin tanımıdır.\n\n**Emir:** Bildirim söz, yazı ve sair surette yapılır. 'Yalnızca yazıyla', 'yalnızca sözle veya yazıyla' ve 'yalnızca elektronik ortamda' gibi daraltmalar yanlıştır.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplinsizlik, disiplin cezası, soruşturma, personel",
+      "body": "- **Disiplinsizlik:** Bu Kanuna göre disiplin cezası ile cezalandırılan fiiller.\n- **Disiplin cezası:** disiplinsizlik nedeniyle disiplin amirleri veya kurulları tarafından verilen ve bu Kanunda gösterilen yaptırımlar.\n- **Disiplin soruşturması:** disiplinsizlik yaptığı iddia edilen personel hakkında karar vermek amacıyla disiplin amirleri veya kurulları tarafından **yapılan veya yaptırılan** araştırma ve inceleme.\n- **Personel:** Emniyet için emniyet teşkilatında çalışan her sınıftan memur. Jandarma ve Sahil Güvenlik için kapsam maddesinde sayılan subaydan sözleşmeli ere kadar olan gruplar ile diğer sınıflardaki memurlar.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Soruşturmayı kim yapar?",
+      "body": "Tanımdaki kilit ifade **'yapılan veya yaptırılan'** ifadesidir. Disiplin amirleri veya kurulları soruşturmayı bizzat yapabilir ya da başkasına yaptırabilir. 'Yalnızca disiplin kurulları yürütebilir' ve 'disiplin amirinin bizzat yapması zorunludur' şıkları bu yüzden yanlıştır. Tanım soruşturmanın amacını 'karar vermek' olarak koyar. Sonunda mutlaka ceza verileceğine ya da yazılı ihbar şartına dair bir ifade yoktur.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kapsam ve tanımlarda sayılar",
+      "rows": [
+        {
+          "label": "Yükümlü erbaş ve erlere uygulanan kanun",
+          "value": "6413 sayılı Türk Silahlı Kuvvetleri Disiplin Kanunu",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "O kanunun tarihi",
+          "value": "31/1/2013",
+          "refs": [
+            "2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplinsizliğin ve cezanın niteliği",
+      "body": "- Disiplinsizlik **kasten veya taksirle** oluşabilir.\n- Aynı fiil nedeniyle bu Kanunda yazılı disiplin cezalarından **birden fazlası verilemez**.\n- Bir fiil birden fazla disiplinsizlik teşkil ederse **ağır olan** disiplin cezası verilir.\n- Bir fiilin diğer kanunlar kapsamında idari yaptırıma bağlanmış olması, aynı fiile bu Kanun kapsamında disiplin cezası verilmesine **engel teşkil etmez**.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İdari yaptırım, disiplin cezasını engellemez",
+      "body": "Bu maddede en çok çevrilen cümle son hükümdür. Doğrusu şudur: fiilin başka bir kanunla idari yaptırıma bağlanmış olması disiplin cezasına **engel değildir**. Şıkta 'engeldir' yazıyorsa yanlış olan odur. Bir ayrımı da karıştırma. 'Aynı fiile birden fazla ceza verilemez' kuralı ile 'fiil birden fazla disiplinsizlik oluşturuyorsa ağır olan verilir' kuralı birbirini tamamlar. İkisi de doğrudur.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplin süreci adli süreçten bağımsızdır",
+      "body": "Herhangi bir fiilden dolayı ilgili hakkında yapılan **adli soruşturma veya kovuşturma**, aynı fiilden dolayı şunları **engellemez**:\n- ayrıca disiplin soruşturması ve tahkikat yapılması,\n- disiplin cezası verilmesi,\n- bu cezanın yerine getirilmesi.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mahkemeyi bekleme tuzağı",
+      "body": "Senaryo genellikle şöyle kurulur: personel hakkında adli soruşturma başlamıştır, disiplin tarafında ne olacaktır? Cevap: hiçbir şey beklemez. Soruşturma yapılır, ceza verilir, ceza yerine getirilir. Bu üç aşamanın herhangi birini adli sürecin sonuna bağlayan şıklar yanlıştır. Örneğin 'Adli süreç bitene kadar disiplin soruşturması başlatılamaz', 'ceza kovuşturma sonuna bırakılır', 'kesinleşmiş mahkeme kararı olmadan yerine getirilemez' ve 'yalnızca kovuşturmaya yer olmadığına dair kararla yapılabilir' bu türdendir.",
+      "articleRefs": [
+        "5"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Takdir hakkı nasıl kullanılır?",
+      "body": "Disiplin cezası vermeye yetkili disiplin amirleri veya kurulları takdir haklarını **ölçülü, adaletli ve hakkaniyetli** bir şekilde kullanır. Takdir hakkı **mutlaka gerekçeli** olarak kullanılır.\n\n**Gözönüne alınacak hususlar:**\na) disiplinsizliğin işleniş biçimi\nb) disiplinsizliğin işlendiği zaman ve yer\nc) disiplinsizliğin hizmete olumsuz etkisinin ağırlığı\nç) meydana gelen zarar veya tehlikenin ağırlığı\nd) personelin kast veya taksire dayalı kusurunun ağırlığı\ne) personelin daha önceki disiplin durumu\nf) personelin samimi ikrarı ve gösterdiği pişmanlık",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayan ölçütler ve gerekçe şartı",
+      "body": "'Hangisi sayılmamıştır?' sorusunda listeyi hatırla. **Hizmet süresi, öğrenim durumu ya da rütbe** listede yoktur. Takdirin biçimini soran sorularda doğru cevap 'ölçülü, adaletli ve hakkaniyetli' ifadesidir. 'Alt sınırı esas alarak', 'rütbeyle orantılı', 'Bakanlıkça belirlenecek esaslara göre' ve 'kurul görüşü alınarak' gibi şıklar yanlıştır.\n\nGerekçe şartı **istisnasızdır**. 'Yalnızca ağırlaştırmada gerekçelendirilir', 'kurul cezalarında gerekçe aranmaz', 'gerekçe yalnızca itirazda bildirilir' ve 'üst disiplin amirinin uygun görüşüyle gerekçesiz kullanılabilir' şıklarının hepsi yanlıştır.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Takdir hakkı kaldırılamaz, tek bir istisnayla",
+      "body": "Hiçbir idari makam, disiplin cezası ile ilgili **takdir hakkının kaldırılması sonucunu doğuran** bir karar veremez veya uygulama yapamaz.\n\n**İstisna:** itiraz üzerine yetkili makamlar tarafından verilen kararlar.\n\nDikkat: Yasak mutlak değildir, ama istisnası da yalnızca bu hâldir. 'Bakanlık genelgeleri', 'üst disiplin amirinin talimatları' ya da 'disiplin kurulu kararları' istisna değildir.",
+      "articleRefs": [
+        "6"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Emniyet Genel Müdürlüğü ↔ Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığı",
+      "rows": [
+        {
+          "aspect": "Kapsanan personel",
+          "left": "Teşkilatta çalışan her sınıftan memur",
+          "right": "Subay, astsubay, sözleşmeli subay, sözleşmeli astsubay, uzman jandarma, uzman erbaş, sözleşmeli erbaş, sözleşmeli erler, diğer sınıflardaki memurlar",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Bu Kanunun dışında bırakılan",
+          "left": "Kapsam maddesinde ayrıca sayılmamış",
+          "right": "Emrine verilen yükümlü erbaş ve erler (6413 sayılı Kanun uygulanır)",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "aspect": "Personel tanımı",
+          "left": "Emniyet teşkilatında çalışan her sınıftan memur",
+          "right": "Teşkilatlarda görev yapan, kapsam maddesindeki gruplarla aynı personel",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "aspect": "Bakan / Bakanlık",
+          "left": "İçişleri Bakanı / İçişleri Bakanlığı",
+          "right": "İçişleri Bakanı / İçişleri Bakanlığı",
+          "refs": [
+            "3"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "17",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "label": "md 3 — Tanımlar",
+          "value": "7 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 6 — Takdir hakkının kullanımı",
+          "value": "4 soru",
+          "refs": [
+            "6"
+          ]
+        },
+        {
+          "label": "md 2 — Kapsam",
+          "value": "3 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 1",
+          "value": "1 soru",
+          "refs": [
+            "1"
+          ]
+        },
+        {
+          "label": "md 4 — Disiplin cezasını gerektiren fiillerin ve disiplin cezalarının niteliği",
+          "value": "1 soru",
+          "refs": [
+            "4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–6, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ]
+    }
+  ]
+}

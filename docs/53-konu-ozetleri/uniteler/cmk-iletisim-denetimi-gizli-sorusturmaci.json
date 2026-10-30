@@ -1,0 +1,663 @@
+{
+  "unit": {
+    "slug": "cmk-iletisim-denetimi-gizli-sorusturmaci",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "İletişimin denetimi, gizli soruşturmacı, teknik izleme ve tazminat",
+    "subtitle": "Gizli yürüyen koruma tedbirleri ve Devletten tazminat istemi",
+    "articleFrom": "135",
+    "articleTo": "144",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 135–140, 140/A, 141–144",
+    "articleNos": [
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "140/A",
+      "141",
+      "142",
+      "143",
+      "144"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 8
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Gizli yürüyen üç tedbir",
+      "body": "Bu ünitenin merkezinde üç tedbir var:\n- telekomünikasyon yoluyla iletişimin dinlenmesi ve kayda alınması (md 135),\n- gizli soruşturmacı görevlendirilmesi (md 139),\n- teknik araçlarla izleme (md 140).\n\nÜçünde de aynı kapıdan geçersin: suçun işlendiğine dair somut delillere dayanan kuvvetli şüphe sebepleri olmalı ve başka suretle delil elde edilememeli. Bir de kapalı liste var. Dinleme ve kayda alma, gizli soruşturmacı ve teknik izleme ancak kanunun tek tek saydığı suçlarda uygulanır.\n\nÜnitenin ikinci yarısı madalyonun öbür yüzü. Kanuna aykırı yakalama ve tutuklama gibi işlemlerde, ya da kanuna uygun yakalanıp sonunda kovuşturmaya yer olmadığı veya beraat kararı alan kişinin uğradığı zararda, maddî ve manevî zarar Devletten istenir (md 141).",
+      "articleRefs": [
+        "135",
+        "139",
+        "140",
+        "141"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dinleme ve kayda alma: şartlar ve karar mercii",
+      "body": "**Şartlar:**\n- Bir suç dolayısıyla yapılan soruşturma veya kovuşturma olmalı.\n- Suç işlendiğine ilişkin **somut delillere dayanan kuvvetli şüphe** sebepleri bulunmalı.\n- **Başka suretle delil elde edilmesi imkânı** bulunmamalı.\n\n**Kime uygulanır:** **şüpheli veya sanığın** telekomünikasyon yoluyla iletişimine.\n\n**Tedbirin içeriği:** iletişim dinlenebilir, kayda alınabilir ve sinyal bilgileri değerlendirilebilir.\n\n**Karar:** hâkim verir. Gecikmesinde sakınca bulunan hâllerde **Cumhuriyet savcısı** karar verir.\n- Savcı kararını **derhâl** hâkimin onayına sunar.\n- Hâkim kararını en geç **yirmi dört saat** içinde verir.\n- Süre dolarsa ya da hâkim aksine karar verirse tedbiri savcı derhâl kaldırır.\n\n**Talebin eki:** tedbir uygulanacak hattın veya iletişim aracının sahibini, biliniyorsa kullanıcısını gösteren belge veya rapor talebe eklenir.",
+      "articleRefs": [
+        "135"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Şartlarda kelime oyunu",
+      "body": "Soru kökü genelde şartları sayar ve birini bozar.\n\n- **Şüphenin derecesi:** kanunun kelimesi **kuvvetli şüphe**. 'Yeterli şüphe' yazan şık yanlıştır.\n- **Karar mercii:** karar veren **hâkim**, gecikmesinde sakınca bulunan hâllerde **Cumhuriyet savcısı**. Kolluk amirinin yazılı kararı diye bir şart yoktur. Ağır ceza mahkemesinin oy birliği de aranmaz.\n- **Denetimin türleri:** metinde sayılanlar tespit, dinleme, kayda alma ve sinyal bilgilerinin değerlendirilmesidir. 'İletişimin engellenmesi' bu listede yok.\n- **Kime uygulanır:** tedbir şüpheli veya sanığın iletişimi için düzenlenmiştir. 'Katılan ve mağdura uygulanınca şüpheliye ait hükümler esas alınır' diyen şık metne dayanmaz.",
+      "articleRefs": [
+        "135"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Dokunulamayan iletişim",
+      "body": "- **Tanıklıktan çekinebilecek kişiler:** şüpheli veya sanığın bu kişilerle arasındaki iletişim **kayda alınamaz**. Kayıttan sonra anlaşılırsa kayıtlar **derhâl yok edilir** (md 135).\n- **Müdafiin araçları:** şüpheli veya sanığa yüklenen suç dolayısıyla **müdafiin bürosu, konutu ve yerleşim yerindeki** telekomünikasyon araçlarına 135 inci madde uygulanamaz (md 136).\n- **Gizlilik:** bu kapsamda alınan karar ve yapılan işlemler **tedbir süresince gizli** tutulur.\n- **Genel yasak:** kanundaki esas ve usuller dışında hiç kimse başkasının telekomünikasyon yoluyla iletişimini dinleyemez ve kayda alamaz (md 135).",
+      "articleRefs": [
+        "135",
+        "136"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararın içeriği, süre, mobil telefon ve tespit",
+      "body": "**Kararda yazılacaklar:**\n- yüklenen suçun türü,\n- tedbir uygulanacak kişinin kimliği,\n- iletişim aracının türü,\n- telefon numarası veya iletişim bağlantısını tespite imkân veren kod,\n- tedbirin türü, kapsamı ve süresi.\n\n**Süre:**\n- Tedbir en çok **iki ay** için verilir ve **bir ay** daha uzatılabilir.\n- Örgütün faaliyeti çerçevesinde işlenen suçlarda hâkim ayrıca uzatabilir. Her uzatma **bir aydan** fazla olamaz, toplam ek süre **üç ayı** geçemez.\n\n**Mobil telefonun yerinin tespiti:**\n- Amaç şüpheli veya sanığın **yakalanabilmesi**dir.\n- Hâkim, gecikmesinde sakınca bulunan hâllerde savcı karar verir.\n- Kararda mobil telefon numarası ve tespit süresi yazılır.\n- Süre en çok **iki ay**, uzatma **bir ay**; toplam en çok **üç ay**.\n\n**İletişimin tespiti:**\n- Soruşturmada hâkim, gecikmesinde sakınca bulunan hâllerde savcı karar verir. Kovuşturmada **mahkeme** karar verir.\n- Savcı kararını **yirmi dört saat** içinde hâkim onayına sunar. Hâkim en geç **yirmi dört saat** içinde karar verir.\n- Süre dolarsa ya da hâkim aksine karar verirse kayıtlar **derhâl imha** edilir.",
+      "articleRefs": [
+        "135"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "2 + 1",
+          "refs": [
+            "135"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Katalog: hangi suçta dinleme var?",
+      "body": "**Katalog kime uygulanır:** katalog hükmü yalnız **dinleme, kayda alma ve sinyal bilgilerinin değerlendirilmesi** için aranır. **İletişimin tespiti** bu sayımda yer almaz. 'Tespit için de katalog suç şart' diyen şık tuzaktır.\n\n**Listede olanlar (sık sorulan):** rüşvet, kasten öldürme, nitelikli hırsızlık, yağma, nitelikli dolandırıcılık, uyuşturucu veya uyarıcı madde imal ve ticareti, ihaleye fesat karıştırma, tefecilik, işkence, çocukların cinsel istismarı, fuhuş, suçtan kaynaklanan malvarlığı değerlerini aklama.\n\n**Listede olmayanlar (yanlış şık):** Türk Ceza Kanunundaki zimmet, irtikâp, eziyet, kasten yaralama, cinsel taciz.\n\n**İnce ayrıntı:**\n- Cinsel saldırı listededir ama **birinci fıkra hariç**.\n- Zimmet yalnızca **Bankalar Kanununun 22 nci maddesinde** tanımlanan zimmet suçu olarak listededir.",
+      "articleRefs": [
+        "135"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kararın yerine getirilmesi ve kayıtların yok edilmesi",
+      "body": "**Uygulama:**\n- Cumhuriyet savcısı veya görevlendireceği adlî kolluk görevlisi, işlemi telekomünikasyon kurum ve kuruluşlarından **yazılı** olarak ister.\n- İstem **derhâl** yerine getirilir. Getirilmezse **zor kullanılabilir**.\n- İşlemin başladığı ve bittiği tarih ve saat ile işlemi yapanın kimliği **tutanakla** saptanır.\n- Kayıtları savcılıkça görevlendirilen kişiler metin hâline getirir. Yabancı dildeki kayıtlar tercümanla Türkçeye çevrilir.\n\n**Tedbirin sona ermesi ve imha:**\n- Şüpheli hakkında **kovuşturmaya yer olmadığına** karar verilirse ya da savcı kararına **hâkim onayı alınamazsa**, tedbire savcı derhâl son verir.\n- Bu durumda kayıtlar **savcının denetimi altında en geç on gün** içinde yok edilir ve tutanak tutulur.\n- **Beraat** kararında kayıtlar **hâkim denetimi altında** aynı usulle yok edilir.\n\n**İlgiliye bildirim:** kayıtlar yok edilmişse, soruşturma veya kovuşturma evresinin bitiminden itibaren **en geç onbeş gün** içinde Cumhuriyet başsavcılığı veya mahkeme ilgilisine **yazılı** bilgi verir. Bildirimde tedbirin nedeni, kapsamı, süresi ve sonucu yer alır.",
+      "articleRefs": [
+        "137"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "On gün mü, onbeş gün mü? Ve tesadüfen elde edilen delil",
+      "body": "**İki süre karıştırılır:**\n- kayıtların **yok edilmesi** için en geç **on gün**,\n- ilgilisine **yazılı bilgi** için en geç **onbeş gün**.\n\nYok etmeyi kovuşturmaya yer olmadığı kararında **savcı**, beraatte **hâkim** denetler.\n\n**Tesadüfen elde edilen delilde bildirim adresi tek: Cumhuriyet Savcılığı.**\n- Arama veya elkoyma sırasında başka bir suçun işlendiği şüphesini uyandıran delil bulunursa delil muhafaza altına alınır ve durum savcılığa **derhâl** bildirilir.\n- 'Sulh ceza hâkimine bildirilir' diyen şık yanlıştır.\n- İletişimin denetlenmesi sırasında da aynı kural geçerlidir. Burada delilin 135 inci maddenin altıncı fıkrasında sayılan suçlardan birinin şüphesini uyandırması gerekir.",
+      "articleRefs": [
+        "137",
+        "138"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Gizli soruşturmacı: kim, kimin kararıyla, hangi suçta?",
+      "body": "**Şartlar:**\n- Soruşturma konusu suçun işlendiğine dair somut delillere dayanan kuvvetli şüphe sebepleri bulunmalı.\n- Başka surette delil elde edilememeli.\n\n**Kim olabilir:** **kamu görevlileri**.\n\n**Karar:** görevlendirmeye **hâkim** karar verir. Maddede savcıya gecikmesinde sakınca hâli için yetki tanınmamıştır.\n\n**Kimlik:**\n- Soruşturmacının kimliği değiştirilebilir ve bu kimlikle hukukî işlemler yapılabilir.\n- Kimliğin oluşturulması ve sürdürülmesi için zorunluysa belgeler hazırlanabilir, değiştirilebilir ve kullanılabilir.\n\n**Katalog (yalnız bu suçlar):**\n- uyuşturucu veya uyarıcı madde imal ve ticareti; **örgüt faaliyeti çerçevesinde işlenip işlenmediğine bakılmaksızın**,\n- suç işlemek amacıyla örgüt kurma (iki, yedi ve sekizinci fıkralar hariç, TCK 220),\n- silahlı örgüt veya bu örgütlere silah sağlama (TCK 314, 315),\n- silah kaçakçılığı,\n- Kültür ve Tabiat Varlıklarını Koruma Kanununun 68 ve 74 üncü maddelerindeki suçlar.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gizli soruşturmacının görevi ve gizlilik",
+      "body": "**Gizlilik:**\n- Görevlendirme kararı ve diğer belgeler **ilgili Cumhuriyet Başsavcılığında** muhafaza edilir.\n- Soruşturmacının kimliği **görevi sona erdikten sonra da** gizli tutulur.\n\n**Tanık olarak dinlenmesi:** kovuşturma evresinde zorunluysa **özel ortamda** dinlenir. Ya duruşmada hazır bulunma hakkı olanlar olmadan ya da ses veya görüntüsü değiştirilerek dinlenir. Tanık Koruma Kanunundaki ilgili hüküm kıyasen uygulanır.\n\n**Yükümlülüğü:**\n- izlemekle görevlendirildiği örgüte ilişkin her türlü araştırmada bulunmak,\n- örgütün faaliyetleri çerçevesinde işlenen suçlarla ilgili delilleri toplamak.\n\n**Ses ve görüntü kaydı:** hâkim, **uyuşturucu veya uyarıcı madde imal ve ticareti** suçu bakımından izin verebilir. İzin, kamuya açık yerlerde ve işyerlerinde delil toplamak amacıyla verilir.\n\n**Sorumluluk:** görevini yaparken **suç işleyemez**. Görevlendirildiği örgütün işlemekte olduğu suçlardan **sorumlu tutulamaz**.\n\n**Kişisel bilgiler:** görevlendirildiği ceza soruşturması ve kovuşturması dışında kullanılamaz. Suçla bağlantısı olmayan kişisel bilgiler **derhâl yok edilir**.",
+      "articleRefs": [
+        "139"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gizli soruşturmacıda yanlış şıkların kalıbı",
+      "body": "- 'Gecikmesinde sakınca bulunan hâllerde savcı veya kolluk amiri görevlendirir' → **yanlış.** Karar yalnız **hâkimindir**. Dinleme, kayda alma ve teknik izlemede savcıya tanınan bu yetki burada yoktur.\n- 'Kimliği görev bitince açıklanır' → **yanlış.** Kimlik görev sona erdikten sonra da **gizli** tutulur.\n- 'Belgeler mahkemede saklanır' → **yanlış.** Belgeler **Cumhuriyet Başsavcılığında** saklanır.\n- 'Görev yaparken suç işleyebilir' → **yanlış.** **Suç işleyemez.** Sorumsuzluk yalnız **örgütün işlemekte olduğu suçlar** içindir.\n- 'Tanıklıkta ses ve görüntüsü değiştirilmeden dinlenir' → **yanlış.**\n- Görevlendirme için ay cinsinden süre veren şık → **yanlış.** 139 uncu maddede görevlendirme süresi yazılmamıştır.\n- 'Ceza üst sınırına göre başvurulur' → **yanlış.** Ölçüt **katalogdaki suçlardır**.",
+      "articleRefs": [
+        "139",
+        "135",
+        "140"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Teknik araçlarla izleme",
+      "body": "**Şartlar:**\n- Katalogdaki suçların işlendiğine dair somut delillere dayanan kuvvetli şüphe sebepleri bulunmalı.\n- Başka suretle delil elde edilememeli.\n\n**Kapsam:** şüpheli veya sanığın **kamuya açık yerlerdeki faaliyetleri ve işyeri** teknik araçlarla izlenebilir. Ses veya görüntü kaydı alınabilir.\n\n**Yasak yer:** tedbir **kişinin konutunda uygulanamaz.**\n\n**Karar:**\n- Hâkim, gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı karar verir.\n- Savcı kararı **yirmi dört saat** içinde hâkim onayına sunulur. Hâkim en geç **yirmi dört saat** içinde karar verir.\n- Süre dolarsa ya da hâkim aksine karar verirse kayıtlar derhâl imha edilir.\n\n**Süre:**\n- İzleme kararı en çok **üç hafta** için verilir ve gerektiğinde **bir hafta** daha uzatılabilir.\n- Örgüt faaliyeti çerçevesindeki suçlarda hâkim ayrıca uzatabilir. Her uzatma **bir haftayı** aşamaz, toplam ek süre **dört haftayı** geçemez.\n- İzlemeyle birlikte gizli soruşturmacı görevlendirilmişse bu süreler **bir kat artırılarak** uygulanır.\n\n**Delillerin kullanımı:** deliller yalnız katalog suçlara ilişkin soruşturma ve kovuşturmada kullanılabilir. Ceza kovuşturması için gerekli değilse savcının gözetiminde derhâl yok edilir.\n\n**Yönetmelik:** 135 ila 140 ıncı maddelerdeki tedbirlerin uygulanmasına ilişkin usul ve esaslar **yönetmelikle** düzenlenir (md 140/A).",
+      "articleRefs": [
+        "140",
+        "140/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Teknik izlemede üç ince nokta",
+      "body": "**Savcı karar verebilir mi?** Evet, gecikmesinde sakınca bulunan hâllerde verebilir. 'Savcı bu tedbire hiçbir durumda başvuramaz' diyen şık yanlıştır. Bu ünitede savcının hiç karar veremediği tedbir **gizli soruşturmacı görevlendirilmesidir**.\n\n**Süre birimi:** teknik izleme **hafta** ile ölçülür, iletişimin denetlenmesi **ay** ile. Teknik izlemede ilk karar en çok **üç hafta**, uzatma **bir hafta**dır.\n\n**Yasak yer:**\n- Teknik izlemede yasak yer **konuttur**.\n- İletişimin denetlenmesinde yasak alan **müdafiin bürosu, konutu ve yerleşim yerindeki** telekomünikasyon araçlarıdır.",
+      "articleRefs": [
+        "140",
+        "139",
+        "135",
+        "136"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler: dinlemeden izlemeye",
+      "rows": [
+        {
+          "label": "İletişim denetimi — ilk karar (en çok)",
+          "value": "iki ay",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "İletişim denetimi — uzatma",
+          "value": "bir ay",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "İletişim denetimi — örgüt suçlarında ek uzatma",
+          "value": "her defasında en çok bir ay, toplam en çok üç ay",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "İletişim denetimi — örgüt suçlarında toplam üst sınır",
+          "value": "6 ay",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "Mobil telefonun yerinin tespiti",
+          "value": "iki ay + bir ay uzatma = en çok 3 ay",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "Savcı kararı sonrası hâkim kararı (dinleme, tespit, teknik izleme)",
+          "value": "en geç yirmi dört saat",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "label": "Kayıtların yok edilmesi (kovuşturmaya yer olmadığı kararı / hâkim onayı yok)",
+          "value": "en geç on gün",
+          "refs": [
+            "137"
+          ]
+        },
+        {
+          "label": "Kayıtların yok edildiğinin ilgiliye yazılı bildirimi",
+          "value": "evre bitiminden itibaren en geç onbeş gün",
+          "refs": [
+            "137"
+          ]
+        },
+        {
+          "label": "Teknik izleme — ilk karar (en çok)",
+          "value": "üç hafta",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "Teknik izleme — uzatma",
+          "value": "bir hafta",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "Teknik izleme — örgüt suçlarında ek uzatma",
+          "value": "her defasında en çok bir hafta, toplam en çok dört hafta",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "Teknik izleme — örgüt suçlarında toplam üst sınır",
+          "value": "8 hafta",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "Gizli soruşturmacıyla birlikte teknik izleme — ilk karar",
+          "value": "6 hafta (süreler bir kat artırılır)",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "Gizli soruşturmacı görevlendirme süresi",
+          "value": "maddede süre öngörülmemiş",
+          "refs": [
+            "139"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "135",
+        "137",
+        "139",
+        "140"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 6,
+          "expr": "2 + 1 + 3",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "value": 3,
+          "expr": "2 + 1",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "value": 8,
+          "expr": "3 + 1 + 4",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "value": 6,
+          "expr": "3 * 2",
+          "refs": [
+            "140"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tazminat: kim, hangi hâlde, kime karşı?",
+      "body": "Suç soruşturması veya kovuşturması sırasında aşağıdaki kişiler **maddî ve manevî her türlü zararlarını Devletten** isteyebilir:\n- (a) kanunlarda belirtilen koşullar dışında yakalanan, tutuklanan veya tutukluluğunun devamına karar verilen,\n- (b) kanunî gözaltı süresi içinde hâkim önüne çıkarılmayan,\n- (c) kanunî hakları hatırlatılmadan veya hatırlatılan haklarından yararlandırılma isteği yerine getirilmeden tutuklanan,\n- (d) kanuna uygun tutuklandığı hâlde makul sürede yargılama mercii huzuruna çıkarılmayan ve bu sürede hakkında hüküm verilmeyen,\n- (e) **kanuna uygun** yakalandıktan veya tutuklandıktan sonra hakkında **kovuşturmaya yer olmadığına veya beraatine** karar verilen,\n- (f) mahkûm olup gözaltı ve tutuklulukta geçirdiği süre hükümlülük süresinden fazla olan, ya da cezası sadece para cezası olduğu için zorunlu olarak bu cezayla cezalandırılan,\n- (g) yakalama veya tutuklama nedenleri ve suçlamalar kendisine yazıyla, bu hemen olanaklı değilse sözle açıklanmayan,\n- (h) yakalanması veya tutuklanması **yakınlarına bildirilmeyen**,\n- (i) hakkındaki arama kararı **ölçüsüz** şekilde gerçekleştirilen,\n- (j) eşyasına veya malvarlığı değerlerine koşullar oluşmadan **elkonulan**; ya da bunların korunması için tedbir alınmayan, amaç dışı kullanılan veya **zamanında geri verilmeyen**,\n- (k) yakalama, adli kontrol veya tutuklamaya karşı kanundaki başvuru imkânlarından yararlandırılmayan,\n- (l) konutunu terk etmemek ya da hastaneye yatmak dâhil tedavi veya muayene tedbirlerine tâbi olmak şeklindeki adli kontrol yükümlülükleri uygulandıktan sonra hakkında **kovuşturmaya yer olmadığına veya beraatine** karar verilen.\n\n**Bildirim:** (e), (f) ve (l) bentlerindeki kararları veren merciler ilgiliye tazminat hakkını bildirir. Bu husus karara geçirilir.\n\n**Davalı:** hâkim ve Cumhuriyet savcılarının kararları veya işlemleri nedeniyle açılacak tazminat davaları **ancak Devlet aleyhine** açılabilir. Kişisel kusur ve haksız fiil hâlleri de buna dâhildir.\n\n**Rücu:** Devlet, görevini kötüye kullanan hâkim ve savcılara **bir yıl** içinde rücu eder.",
+      "articleRefs": [
+        "141"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tazminat listesinde olmayan tedbirler",
+      "body": "Tazminat hâlleri tek tek sayılmıştır.\n\n**Listede olmayanlar:** **iletişimin denetlenmesi** ve **teknik araçlarla izleme**. 'Dinlenen ya da izlenen kişi beraat etti, tazminat ister' şıkkı bu yüzden yanlıştır.\n\n**Listede olanlar:** **arama** (ölçüsüz gerçekleştirilmişse) ve **elkoyma**.\n\n**Kanuna uygun işlem de tazminat doğurabilir:** kanuna uygun bir yakalama veya tutuklamadan sonra kovuşturmaya yer olmadığına veya beraate karar verilmesi yeter.\n\n**Davalı:** dava kararı veren hâkime ya da savcıya karşı değil, **Devlet aleyhine** açılır.",
+      "articleRefs": [
+        "141"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tazminat istemi: süre, görevli mahkeme, Komisyon",
+      "body": "**Süre:**\n- Karar veya hükümlerin kesinleştiğinin ilgilisine tebliğinden itibaren **üç ay** içinde,\n- her hâlde kesinleşme tarihini izleyen **bir yıl** içinde.\n\n**Görevli mahkeme:**\n- Kural olarak zarara uğrayanın **oturduğu yer ağır ceza mahkemesi**.\n- O yer ağır ceza mahkemesi tazminat konusu işlemle ilişkiliyse ve aynı yerde başka ağır ceza dairesi yoksa **en yakın yer ağır ceza mahkemesi**.\n\n**İstisna — Komisyon:**\n- 141 inci maddenin (e), (f) ve (l) bentlerindeki istemlerde **Tazminat Komisyonu** hakkındaki kanun hükümleri uygulanır.\n- Bu istemler ağır ceza mahkemesine yapılmışsa Komisyona gönderilir.\n- İstemler karışık yapılmışsa mahkeme, görev alanı dışındakileri ayırıp Komisyona gönderir.\n- Bu hâllerde ağır ceza mahkemesine yapılan **istem tarihi esas** alınır.",
+      "articleRefs": [
+        "142",
+        "141"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dilekçeden ödemeye usul",
+      "body": "**Dilekçe:** açık kimlik ve adres, zarara uğranılan işlem, zararın nitelik ve niceliği yazılır ve belgeleri eklenir.\n\n**Eksiklik:**\n- Mahkeme, eksikliğin **bir ay** içinde giderilmesini, aksi hâlde istemin reddedileceğini duyurur.\n- Süresinde tamamlanmazsa dilekçe **itiraz yolu açık** olmak üzere reddedilir.\n\n**Hazine:** yeterli bulunan dilekçenin örneği **Devlet Hazinesinin** yargı çevresindeki temsilcisine tebliğ edilir. Temsilci beyan ve itirazlarını **iki hafta** içinde yazılı bildirir.\n\n**İnceleme:**\n- Mahkeme gerekli gördüğü her türlü araştırmayı yapabilir ya da hâkimlerinden birine yaptırabilir.\n- Tazminat miktarı tazminat hukukunun genel prensiplerine göre saptanır.\n- Karar **duruşmalı** verilir. İstemde bulunan ve Hazine temsilcisi açıklamalı çağrıya rağmen gelmezse yokluklarında karar verilebilir.\n\n**İstinaf:**\n- Başvurabilecekler: istemde bulunan, Cumhuriyet savcısı veya Hazine temsilcisi.\n- İnceleme öncelikle ve ivedilikle yapılır.\n- Karar yerinde görülmezse bölge adliye mahkemesi **işin esası hakkında karar verir**. Bu kararlar **kesindir**.\n\n**Avukatlık ücreti:** nisbî ücret ödenir. Ücret, sulh ceza hâkimlikleri için belirlenen maktu ücretten az, ağır ceza mahkemeleri için belirlenen maktu ücretten fazla olamaz.\n\n**Ödeme ve icra:**\n- Karar kesinleşmeden ve idari başvuru süreci tamamlanmadan icra takibine konulamaz.\n- Tazminat ve vekâlet ücreti, bildirilen banka hesabına bildirim tarihinden itibaren **otuz gün** içinde ödenir.\n- Bu sürede ödenmezse karar genel hükümlere göre infaz ve icra olunur.",
+      "articleRefs": [
+        "142"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tazminat isteminde çarpıtılan ayrıntılar",
+      "body": "- **Süre:** ezberin **üç ay / bir yıl** ikilisi olsun. Şıklarda ay ve yıl sayıları büyütülür ya da küçültülür.\n- **Mahkeme:** görevli mahkeme **ağır ceza mahkemesidir**. Sulh ceza hâkimliği, asliye ceza ya da bölge adliye mahkemesi değildir.\n- **Yer:** ölçüt zarara uğrayanın **oturduğu yer**dir. 'Yerleşim yeri' ya da 'koruma tedbirine karar veren yer' yazan şık tuzaktır.\n- **Hazine:** temsilciye verilen süre **iki hafta**dır; gün sayısıyla verilen şıklar yanlıştır. Muhatap 'Devlet Hazinesinin' temsilcisidir, bir bakanlık değil.\n- **Eksiklik:** giderme süresi **bir ay**dır.\n- **İstinaf:** bölge adliye mahkemesi dosyayı ağır ceza mahkemesine **geri göndermez**; esas hakkında kendisi karar verir.\n- **Davalı:** kararı veren hâkim davalı gösterilmez; dava **Devlet aleyhine** açılır.",
+      "articleRefs": [
+        "142",
+        "141"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Tazminatın geri alınması ve tazminat isteyemeyecekler",
+      "body": "**Geri alma (md 143):**\n- Kimden alınır: kovuşturmaya yer olmadığı kararı sonradan kaldırılıp hakkında kamu davası açılarak mahkûm edilenlerden; yargılamanın aleyhte yenilenmesiyle beraati kaldırılıp mahkûm edilenlerden.\n- Ne alınır: ödenen tazminatın **mahkûmiyet süresine ilişkin kısmı**.\n- Nasıl alınır: savcının yazılı istemiyle aynı mahkemeden alınacak kararla, kamu alacaklarının tahsiline ilişkin hükümler uygulanarak. Bu karara itiraz edilebilir.\n\n**İftira ve yalan tanıklık:** bu nedenlerle gözaltına alınma ve tutuklama olmuşsa Devlet, iftira eden veya yalan tanıklıkta bulunan kişiye de rücu eder.\n\n**Tazminat isteyemezler (md 144):** kanuna uygun olarak yakalanan, adli kontrol altına alınan veya tutuklananlardan şunlar:\n- tazminata hak kazanmamışken sonradan yürürlüğe giren lehte kanunla durumu tazminata uygun hâle gelenler,\n- genel veya özel af, şikâyetten vazgeçme, uzlaşma gibi nedenlerle hakkında kovuşturmaya yer olmadığına ya da davanın düşmesine karar verilenler; kamu davası geçici olarak durdurulan, ertelenen veya düşürülenler,\n- **kusur yeteneği** bulunmadığı için hakkında ceza verilmesine yer olmadığına karar verilenler,\n- adlî makamlar huzurunda **gerçek dışı beyanla** suç işlediğini veya suça katıldığını bildirerek gözaltına alınmasına, adli kontrol altına alınmasına veya tutuklanmasına neden olanlar.",
+      "articleRefs": [
+        "143",
+        "144"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tazminat: süreler ve sayılar",
+      "rows": [
+        {
+          "label": "İstem süresi — kesinleşmenin tebliğinden itibaren",
+          "value": "üç ay",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "İstem süresi — her hâlde, kesinleşme tarihini izleyen",
+          "value": "bir yıl",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Dilekçe eksikliğini giderme",
+          "value": "bir ay",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Hazine temsilcisinin beyan ve itirazı",
+          "value": "iki hafta",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Kesinleşen tazminatın ödenmesi",
+          "value": "banka hesabı bildiriminden itibaren otuz gün",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "Devletin hâkim ve savcılara rücuu",
+          "value": "bir yıl içinde",
+          "refs": [
+            "141"
+          ]
+        },
+        {
+          "label": "Komisyona giden istemler",
+          "value": "141 inci maddenin (e), (f), (l) bentleri",
+          "refs": [
+            "141",
+            "142"
+          ]
+        },
+        {
+          "label": "Görevli mahkeme (kural)",
+          "value": "zarara uğrayanın oturduğu yer ağır ceza mahkemesi",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "İstinaf sonrası bölge adliye mahkemesi kararı",
+          "value": "esastan karar, kesin",
+          "refs": [
+            "142"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "141",
+        "142"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İletişimin denetlenmesi ve teknik araçlarla izleme",
+      "rows": [
+        {
+          "aspect": "Konu",
+          "left": "Telekomünikasyon yoluyla iletişimin dinlenmesi, kayda alınması, sinyal bilgilerinin değerlendirilmesi",
+          "right": "Kamuya açık yerlerdeki faaliyetler ve işyerinin izlenmesi, ses veya görüntü kaydı",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Karar mercii",
+          "left": "Hâkim; gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı",
+          "right": "Hâkim; gecikmesinde sakınca bulunan hâllerde Cumhuriyet savcısı",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Savcı kararının onayı",
+          "left": "Derhâl hâkim onayına; hâkim en geç yirmi dört saat",
+          "right": "Yirmi dört saat içinde hâkim onayına; hâkim en geç yirmi dört saat",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "İlk karar ve uzatma",
+          "left": "En çok iki ay + bir ay",
+          "right": "En çok üç hafta + bir hafta",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Örgüt suçlarında ek uzatma",
+          "left": "Her defasında en çok bir ay, toplam üç ay",
+          "right": "Her defasında en çok bir hafta, toplam dört hafta",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Uygulanamayacağı yer veya kişi",
+          "left": "Müdafiin bürosu, konutu ve yerleşim yerindeki araçlar; tanıklıktan çekinebilecek kişilerle iletişim",
+          "right": "Kişinin konutu",
+          "refs": [
+            "135",
+            "136",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Yalnız bir listede olan suçlar",
+          "left": "İşkence, cinsel saldırı (birinci fıkra hariç), çocukların cinsel istismarı, Bankalar Kanunundaki zimmet",
+          "right": "Bu suçlar teknik izleme listesinde yok",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Gizli soruşturmacıyla birlikte",
+          "left": "Süreye etkisi düzenlenmemiş",
+          "right": "Süreler bir kat artırılarak uygulanır",
+          "refs": [
+            "135",
+            "140"
+          ]
+        },
+        {
+          "aspect": "Süre dolar veya hâkim aksine karar verirse",
+          "left": "Tedbir savcı tarafından derhâl kaldırılır",
+          "right": "Kayıtlar derhâl imha edilir",
+          "refs": [
+            "135",
+            "140"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "135",
+        "136",
+        "140"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "43",
+          "refs": [
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "140/A",
+            "141",
+            "142",
+            "143",
+            "144"
+          ]
+        },
+        {
+          "label": "md 135 — İletişimin tespiti, dinlenmesi ve kayda alınması",
+          "value": "14 soru",
+          "refs": [
+            "135"
+          ]
+        },
+        {
+          "label": "md 139 — Gizli soruşturmacı görevlendirilmesi",
+          "value": "8 soru",
+          "refs": [
+            "139"
+          ]
+        },
+        {
+          "label": "md 142 — Tazminat isteminin koşulları",
+          "value": "8 soru",
+          "refs": [
+            "142"
+          ]
+        },
+        {
+          "label": "md 140 — Teknik araçlarla izleme",
+          "value": "6 soru",
+          "refs": [
+            "140"
+          ]
+        },
+        {
+          "label": "md 141 — Tazminat istemi",
+          "value": "3 soru",
+          "refs": [
+            "141"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "140/A",
+            "141",
+            "142",
+            "143",
+            "144"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 136, md 140/A, md 143",
+          "refs": [
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "140/A",
+            "141",
+            "142",
+            "143",
+            "144"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "135",
+        "136",
+        "137",
+        "138",
+        "139",
+        "140",
+        "140/A",
+        "141",
+        "142",
+        "143",
+        "144"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "135",
+        "136",
+        "137",
+        "138",
+        "139",
+        "140",
+        "140/A",
+        "141",
+        "142",
+        "143",
+        "144"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 135–140, 140/A, 141–144, 10 soru",
+          "refs": [
+            "135",
+            "136",
+            "137",
+            "138",
+            "139",
+            "140",
+            "140/A",
+            "141",
+            "142",
+            "143",
+            "144"
+          ]
+        }
+      ]
+    }
+  ]
+}

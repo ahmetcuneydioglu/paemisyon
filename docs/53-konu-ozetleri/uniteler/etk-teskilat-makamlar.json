@@ -1,0 +1,522 @@
+{
+  "unit": {
+    "slug": "etk-teskilat-makamlar",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "title": "Teşkilat, makamlar ve bölümler",
+    "subtitle": "Emniyet ve asayişin sorumlusu, emniyet komisyonu, zabıta ve polisin kısımları, adli polis ve re'sen muhabere",
+    "articleFrom": "1",
+    "articleTo": "12",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 3201 Sayılı Emniyet Teşkilat Kanunu, md 1–6, 8–12",
+    "articleNos": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 1
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Emniyet ve asayişin sorumlusu kim?",
+      "body": "Memleketin umumi emniyet ve asayiş işlerinden **Dahiliye Vekili** mesuldür. Bu işleri, kendi kanunları dairesinde hareket eden **Emniyet Umum Müdürlüğü**, **Umum Jandarma Komutanlığı** ve icabında diğer bütün zabıta teşkilatı vasıtasıyla ifa eder. Lüzum hâlinde ordu kuvvetlerinden de istifade eder. Bunun için **Cumhurbaşkanı kararı** gerekir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ordu kuvvetleri: tek doğru usul",
+      "body": "Ordu kuvvetlerinden istifadeyi soran kökte doğru cevap tektir: **Cumhurbaşkanı kararıyla**. Şıklarda seni emniyet komisyonunun kararı, Umum Jandarma Komutanlığının teklifi, Dahiliye Vekilinin doğrudan emri ya da Büyük Erkanıharbiyenin muvafakati ile oyalamaya çalışırlar. Bunların hiçbiri md 1'de yok. **“Lüzum halinde”** şartını da unutma: ordu kuvvetlerinden her durumda değil, lüzum hâlinde istifade edilir.",
+      "articleRefs": [
+        "1"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet komisyonu: kimlerden oluşur?",
+      "body": "**Başkan:** Dahiliye Vekili. Komisyon onun riyaseti altında teşkil edilir.\n\n**Üyeler:**\n- Büyük Erkanıharbiyenin bir mümessili\n- Emniyet Umum Müdürü\n- Jandarma ve Gümrük ve Orman Umum Komutanları\n- Vekaletçe seçilecek lüzumu kadar umumi müfettiş ve vali\n\n**Raportör:** Emniyet Umum Müdürü.\n\n**Ek katılım:** Dahiliye Vekili lüzum gördüğü zamanlarda diğer alakalı vekaletlerden birer mümessil göndermesini talep edebilir.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet komisyonu: ne zaman toplanır, ne yapar?",
+      "body": "**Toplantı:**\n- Ankara'da bulunan azalarla: **her ay**\n- Umumi müfettiş ve valilerin iştirakiyle: Dahiliye Vekilinin lüzum gördüğü zamanlarda, **en az senede bir defa**\n\n**Görev:** Memleketin umumi emniyet ve asayiş işlerini **tetkik** etmek ve **istişari mütalaasını** bildirmek.",
+      "articleRefs": [
+        "2"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Komisyon soruları: görev, sıklık, üye, raportör",
+      "body": "**Görev:** Komisyonun md 2'deki görevi yalnızca tetkik ve istişari mütalaa bildirmektir. Zabıtaya doğrudan emir ve talimat vermek, jandarma ile emniyetin çalışma tarzlarını tespit etmek, adli polisi kadrodan ayırmak ya da belediye zabıtası kadrolarını artırmak md 2'de yok.\n\n**Sıklık:** “her ay – en az senede bir defa” ikilisini bozma. “iki ayda bir”, “üç ayda bir”, “senede iki defa”, “iki senede bir” gibi varyantların hepsi yanlış.\n\n**Üyeler:** Valiler ve umumi müfettişler sayılır, **vilayet emniyet müdürleri sayılmaz**.\n\n**Raportör:** Başkan Dahiliye Vekilidir, raportör ise **Emniyet Umum Müdürü**. Bu ikisini karıştırma.",
+      "articleRefs": [
+        "2"
+      ],
+      "counterNumbers": [
+        2,
+        3
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Zabıta teşkilatı: umumi ve hususi",
+      "body": "Zabıta teşkilatı **iki kısma** ayrılır: umumi ve hususi. **Umumi zabıta**, silahlı bir kuvvet olan polis ve jandarmadır. **Hususi zabıta** ise umumi zabıta haricinde kalan, mahsus kanunlarına göre teşekkül edip muayyen vazifeleri gören zabıta kuvvetleridir. Jandarma ve hususi zabıta kendi kanunlarına, emniyet teşkilatı ise bu kanun hükümlerine tabidir.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim hangi kanuna tabi, yönetmeliği kim çıkarır?",
+      "body": "**Tabi olunan kanun:** Bu kanuna yalnızca emniyet teşkilatı tabidir. “Hususi zabıta da bu Kanun hükümlerine tabidir” cümlesi yanlıştır; hususi zabıta da jandarma gibi kendi kanunlarına tabidir.\n\n**Umumi zabıta:** Sadece polis ve jandarma. Listeye belediye zabıtasını ya da gümrük muhafazayı eklersen veya “yalnız polis” dersen yanılırsın. “Mahsus kanunlarına göre teşekkül eden kuvvetler” ise hususi zabıtanın tanımıdır.\n\n**İrtibat yönetmeliği:** Jandarma, hususi zabıta ve emniyet teşkilatının merkezde ve vilayetlerde irtibat, muhabere ve çalışma tarzları **Cumhurbaşkanınca** çıkarılan yönetmelikle tespit edilir. İçişleri Bakanı, Adalet Bakanı, Millî Savunma Bakanı ya da Emniyet Genel Müdürü değil.",
+      "articleRefs": [
+        "3"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve süreler: komisyon ve kısımlar",
+      "rows": [
+        {
+          "label": "Komisyon toplantısı (Ankara'daki azalar)",
+          "value": "her ay",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Komisyon toplantısı (umumi müfettiş ve valilerin iştirakiyle)",
+          "value": "en az senede bir defa",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Büyük Erkanıharbiye temsilcisi",
+          "value": "bir mümessil",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Diğer alakalı vekaletlerden istenebilecek temsilci",
+          "value": "birer mümessil",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Zabıta teşkilatının kısımları",
+          "value": "2 (umumi ve hususi)",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Polisin kısımları",
+          "value": "2 (üniformalı ve sivil)",
+          "refs": [
+            "4"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Polis ve emniyet hizmetleri sınıfı",
+      "body": "**Tanım:** Polis, **silahlı icra ve inzibat kuvveti**dir; **üniformalı** ve **sivil** olmak üzere iki kısımdır.\n\n**Emniyet hizmetleri sınıfı:** Emniyet Teşkilatında fiili polis hizmetleri dışında kalan şu hizmetleri ifa eder:\n- yazı, hesap, levazım\n- telli veya telsiz haberleşme\n- kriminal laboratuvar\n- trafik fenni muayene\n- kayıt, tescil\n- ve benzeri hizmetler\n\n**Yönetmelik:** Her hizmet bölümü için gerekli görev ve çalışma şartları, bir hizmet bölümünden diğerine aktarılmada gözönünde bulundurulacak esaslar ve sağlık şartları **İçişleri Bakanlığınca** hazırlanacak bir yönetmelikle belirtilir.",
+      "articleRefs": [
+        "4"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bu yönetmelik o yönetmelik değil",
+      "body": "**Kim çıkarır?** İki ayrı yönetmeliği karıştırma:\n- zabıta kuvvetleri arasındaki irtibat, muhabere ve çalışma tarzları → **Cumhurbaşkanı** (md 3)\n- hizmet bölümlerinin görev, aktarma ve sağlık şartları → **İçişleri Bakanlığı** (md 4)\n\n**Listede olmayan hizmet:** “Zat işleri”, emniyet hizmetleri sınıfının md 4'te sayılan hizmetleri arasında açıkça yer almaz. Bu ifade md 11'de, re'sen muhabere konuları arasında geçer. Tanıdık geldiği için seni yanıltabilir.\n\n**Boşluk doldurma:** Polis silahlı **icra ve inzibat** kuvvetidir, kısımları da **üniformalı ve sivil**dir. “İdari, siyasi ve adli” polisin bölümleridir (md 8). “Vasıtalı ve vasıtasız” ise üniformalı polisin kısımlarıdır (md 5).",
+      "articleRefs": [
+        "3",
+        "4",
+        "5",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Polisin bölümleri ve belediye zabıtası",
+      "body": "**Bölümler:** Polis idari, siyasi ve adli kısımlara ayrılır.\n\n**Belediye zabıtası işleri:** Lüzum görülen yerlerde **idari polis kadrosundan** ayrılan ve **tahsisatı belediyelerden** alınan bir kısım tarafından ifa edilir. Bu kısım memurlar da bu kanun hükümlerine tabidir.\n\n**Kadro artırımı:** Belediyelerden verilecek tahsisat nispetinde, Emniyet Umum Müdürlüğü kadrosundaki şube müdürü, emniyet amiri başkomiser, komiser, komiser muavini ve polis adedi **Cumhurbaşkanı kararıyla** tezyid edilebilir. O zamana kadar belediye zabıtası işlerinde çalışanlar, aldıkları maaş miktarına göre ilave edilen bu kadrolara tayin edilir.\n\n**Ödeme:** Emniyet kadrosuna alınacak belediye zabıtasının maaş ve masrafları **Cumhurbaşkanı kararıyla Emniyet Umum Müdürlüğü bütçesinden** ödenir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Belediye zabıtası: kadro kimden, para kimden?",
+      "body": "Bu aşamaları birbirinden ayır. Belediye zabıtası işini yapan kısım **idari polis** kadrosundan ayrılır ve tahsisatı **belediyelerden** alınır. Emniyet kadrosuna alınan belediye zabıtasının maaş ve masrafları ise **Cumhurbaşkanı kararıyla Emniyet Umum Müdürlüğü bütçesinden** ödenir.\n\nŞıklarda geçen adli veya siyasi polis kadrosu, hususi zabıta, Umum Jandarma Komutanlığı, belediye meclisi kararı, il özel idaresi bütçesi, valilik onayı ve emniyet komisyonu kararı md 8'de yok. Bir de şunu unutma: bu memurlar ayrı bir rejime değil, **bu kanun hükümlerine** tabidir.",
+      "articleRefs": [
+        "8"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İdari, siyasi ve adli polis",
+      "body": "**İdari polis:** İçtimai ve umumi intizamı temin etmekle mükellef olan kısım.\n\n**Siyasi polis:** Devletin umumi emniyetine taalluk eden işlerle mükellef olan kısım.\n\n**Adli polis:** Asgari **tam teşekküllü bir polis karakolu** bulunan yerlerde, adli işlerle uğraşmak üzere **Emniyet Umum Müdürlüğünce** kadrodan ayrılan kısım.\n\n**İstisna:** Tam teşekküllü bir kadrodan daha az kuvvette olan polis teşekküllerinin tamamı veya bir kısmı da adli polis olarak tefrik edilebilir.",
+      "articleRefs": [
+        "9"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli polis: dağılım ve emir",
+      "body": "**Bulundurma:** Adli polis toplu olarak veya mıntakalara ihtiyaç nispetinde tevzi edilmiş hâlde bulundurulur.\n\n**Emir:** Adli polis, **adli tahkikat vazifeleri haricindeki** hizmetlerde **mafevklerinin** emrindedir.",
+      "articleRefs": [
+        "10"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Re'sen muhabere yetkisi",
+      "body": "**Kim, kiminle re'sen muhabere eder?**\n- Emniyet Umum Müdürlüğü → vilayet emniyet teşkilatı\n- Vilayet emniyet müdürlüğü → vilayet dahilindeki emniyet teşkilatı\n- Kaza emniyet amirliği → kaza dahilindeki emniyet teşkilatı\n\n**Konular:** Mahalli vakalar hakkında malumat istemek; teknik, muhasebe, levazım ve zat işlerine ait muameleleri idare etmek.\n\n**Dikkat:** Kaza emniyet amirliği kaza içindeki birime doğrudan yazabilir. Bu yazışma için vilayet emniyet müdürlüğü aracılığı gerekmez. Yetki kaymakamlığa ait değildir ve yalnız zat işleriyle sınırlı da değildir.",
+      "articleRefs": [
+        "11"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli tahkikat ve idari zabıtanın yardımı",
+      "body": "**Kural:** Adli işlere müteallik tahkikat, salahiyetli adli otoritelerin direktifleri altında ve kanunlarına tevfikan **yalnız adli zabıtaya** yaptırılır.\n\n**Teşkilat yoksa:** Polis teşkilatı yapılmayan yerlerde, teşkilat yapılıncaya kadar adli polis vazifelerini **diğer zabıta** yapar.\n\n**Yardım:** İdari zabıta, adli zabıtaya **icabında** veya **Cumhuriyet Müddeiumumisinin talebi üzerine** yardımla mükelleftir.\n\n**İdari polis olaya denk gelirse:** Adli zabıta vazifesini tahrik eden bir hâlle karşılaşan idari polis, bir taraftan adli zabıta vazifesini ifa eder, diğer taraftan adli zabıtayı haberdar eder. Adli zabıta gelince işi ona devreder.\n\n**Takibat:** Adli zabıta vazifesini gerek aslen gerek yardım suretiyle gören zabıta memurları hakkında, bu vazifeden doğan suçlardan dolayı Ceza Mahkemeleri Usulü Kanununa göre takibat yapılır.",
+      "articleRefs": [
+        "12"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Adli polis soruları: yer, amir, yedek, yardım",
+      "body": "**Adli polis nerede ayrılır?** Asgari tam teşekküllü bir polis karakolu bulunan yerlerde. Ağır ceza mahkemesinin, müddeiumumilik teşkilatının bulunması ya da il ve ilçe merkezi olmak ölçüt değildir. Jandarma teşkilatının bulunmaması da ölçüt değildir.\n\n**Tahkikat dışında kimin emrinde?** Mafevklerinin. Cumhuriyet müddeiumumisi, sulh hâkimi ya da doğrudan Emniyet Umum Müdürü şıkları çeldiricidir.\n\n**Teşkilat yoksa adli polis vazifesini kim yapar?** Diğer zabıta. Belediye zabıtası, en yakın karakol ya da mülki amirin görevlendireceği memurlar değil.\n\n**İdari zabıta ne zaman yardım eder?** İcabında veya Cumhuriyet Müddeiumumisinin talebi üzerine. “Yalnız” ile başlayan şıklara (yalnız vali emri, yalnız Emniyet Umum Müdürlüğü emri, yalnız teşkilatı olmayan yerler) ve sulh hâkimi kararına kanma.",
+      "articleRefs": [
+        "9",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tablo: kim karar verir, kim belirler?",
+      "rows": [
+        {
+          "label": "Ordu kuvvetlerinden istifade",
+          "value": "Cumhurbaşkanı kararı",
+          "refs": [
+            "1"
+          ]
+        },
+        {
+          "label": "Emniyet komisyonu başkanı",
+          "value": "Dahiliye Vekili",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Emniyet komisyonu raportörü",
+          "value": "Emniyet Umum Müdürü",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "Zabıta kuvvetleri arası irtibat, muhabere, çalışma tarzı",
+          "value": "Cumhurbaşkanınca çıkarılan yönetmelik",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "Hizmet bölümlerinde görev, aktarma ve sağlık şartları",
+          "value": "İçişleri Bakanlığınca hazırlanacak yönetmelik",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "Emniyet Umum Müdürlüğü kadrolarının tahsisat nispetinde tezyidi",
+          "value": "Cumhurbaşkanı kararı",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Emniyet kadrosuna alınan belediye zabıtasının maaş ve masrafları",
+          "value": "Cumhurbaşkanı kararıyla Emniyet Umum Müdürlüğü bütçesinden",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "Adli polisi kadrodan ayıran",
+          "value": "Emniyet Umum Müdürlüğü",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "label": "Adli polisin tahkikat dışındaki amiri",
+          "value": "Mafevkleri",
+          "refs": [
+            "10"
+          ]
+        },
+        {
+          "label": "İdari zabıtadan adli zabıtaya yardım talep eden",
+          "value": "Cumhuriyet Müddeiumumisi",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "8",
+        "9",
+        "10",
+        "12"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Üniformalı polis ↔ sivil polis",
+      "rows": [
+        {
+          "aspect": "Ortak çatı",
+          "left": "Polisin kısımlarından biri; polis silahlı icra ve inzibat kuvvetidir",
+          "right": "Polisin kısımlarından biri; polis silahlı icra ve inzibat kuvvetidir",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "aspect": "Tanım",
+          "left": "Üniformalı çalışan kısım",
+          "right": "Her nevi emniyet hizmetinde üniformasız çalıştırılan kısım",
+          "refs": [
+            "4",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Alt kısımlar",
+          "left": "Vasıtalı ve vasıtasız",
+          "right": "Maddede alt kısım sayılmamış",
+          "refs": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "aspect": "Vasıtalı polis",
+          "left": "Atlı, bisikletli, motörlü ve canlı, cansız diğer vasıtalarla teçhiz edilen kısım",
+          "right": "—",
+          "refs": [
+            "5"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İdari polis ↔ adli polis",
+      "rows": [
+        {
+          "aspect": "Görev",
+          "left": "İçtimai ve umumi intizamı temin etmek",
+          "right": "Adli işlerle uğraşmak",
+          "refs": [
+            "9"
+          ]
+        },
+        {
+          "aspect": "Oluşum",
+          "left": "Polisin bölümlerinden biri; belediye zabıtası işini gören kısım da bu kadrodan ayrılır",
+          "right": "Asgari tam teşekküllü bir polis karakolu bulunan yerlerde Emniyet Umum Müdürlüğünce kadrodan ayrılır",
+          "refs": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "aspect": "Adli tahkikat",
+          "left": "Adli zabıtaya icabında veya Cumhuriyet Müddeiumumisinin talebi üzerine yardım eder",
+          "right": "Adli işlere müteallik tahkikat yalnız ona yaptırılır",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "aspect": "Olayla karşılaşınca",
+          "left": "Adli zabıta vazifesini ifa eder, adli zabıtayı haberdar eder, işi devreder",
+          "right": "Gelince işi devralır",
+          "refs": [
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "8",
+        "9",
+        "12"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "18",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "label": "md 2",
+          "value": "4 soru",
+          "refs": [
+            "2"
+          ]
+        },
+        {
+          "label": "md 3",
+          "value": "3 soru",
+          "refs": [
+            "3"
+          ]
+        },
+        {
+          "label": "md 4",
+          "value": "3 soru",
+          "refs": [
+            "4"
+          ]
+        },
+        {
+          "label": "md 8 — Emniyet Teşkilatı Bölümleri",
+          "value": "2 soru",
+          "refs": [
+            "8"
+          ]
+        },
+        {
+          "label": "md 12",
+          "value": "2 soru",
+          "refs": [
+            "12"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 5, md 6",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 1–6, 8–12, 10 soru",
+          "refs": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      ]
+    }
+  ]
+}

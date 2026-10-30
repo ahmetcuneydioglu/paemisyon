@@ -1,0 +1,595 @@
+{
+  "unit": {
+    "slug": "cmk-deliller-hukum",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Deliller, hüküm ve karar",
+    "subtitle": "Delillerin ortaya konulması ve tartışılması, duruşma tutanağı, hüküm türleri, müzakere ve hükmün açıklanmasının geri bırakılması",
+    "articleFrom": "206",
+    "articleTo": "232",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 206–232",
+    "articleNos": [
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211",
+      "212",
+      "213",
+      "214",
+      "215",
+      "216",
+      "217",
+      "218",
+      "219",
+      "220",
+      "221",
+      "222",
+      "223",
+      "224",
+      "225",
+      "226",
+      "227",
+      "228",
+      "229",
+      "230",
+      "231",
+      "232"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 12
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Duruşmanın son düzlüğü",
+      "body": "Sanık sorguya çekildi, şimdi sıra delillerde. Bu ünitede deliller duruşmaya getirilir, okunur, tartışılır. Hâkim bunları vicdanî kanaatiyle serbestçe takdir eder. Duruşmanın sona erdiği açıklandıktan sonra da hüküm verilir. Aklında tutman gereken çizgi şu: hâkim kararını ancak duruşmaya getirilmiş ve huzurunda tartışılmış delile dayandırabilir. Hüküm ise beraatten düşmeye kadar kanunun tek tek saydığı kararlardan biridir.",
+      "articleRefs": [
+        "206",
+        "217",
+        "223"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Delillerin ortaya konulması ve reddi",
+      "body": "**Kural:** Deliller, sanığın sorguya çekilmesinden **sonra** ortaya konulur.\n**İstisna:** Sanık tebligata rağmen mazeretsiz gelmediği için sorgusu yapılamamışsa deliller yine ortaya konulur. Ortaya konulan deliller, sonradan gelen sanığa bildirilir.\n\n**Delil istemi şu hâllerde reddolunur:**\n- Delil kanuna aykırı olarak elde edilmişse,\n- Delille ispat edilmek istenen olayın karara etkisi yoksa,\n- İstem sadece davayı uzatmak maksadıyla yapılmışsa.\n\n**Ret sebebi değildir:** Delilin ya da ispat edilmek istenen olayın geç bildirilmiş olması (md 207).\n\n**Vazgeçme:** Cumhuriyet savcısı ile sanık veya müdafii **birlikte** rıza gösterirse tanığın dinlenmesinden ya da başka herhangi bir delilin ortaya konulmasından vazgeçilebilir.",
+      "articleRefs": [
+        "206",
+        "207"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Geç gelen delil reddedilmez",
+      "body": "Ret hâllerini sayan şıkların arasına ‘geç bildirilmiş olması’ sıkıştırılır. Bu bir ret sebebi değildir; istem geç bildirildi diye reddedilemez. Reddolunanlar şunlardır: kanuna aykırı elde edilen delil, karara etkisi olmayan olay ve yalnız davayı uzatma amaçlı istem.\n\nSorgudan önce delil ortaya koymanın kanunda sayılan istisnası, sanığın tebligata rağmen mazeretsiz gelmemesidir. Sanığın kaçması ya da gizlenmesi, delilin korunmasındaki güçlük veya sanığın rızası bu istisnaya girmez.\n\nSavcı ile sanık veya müdafii birlikte rıza gösterirse hem tanıktan hem başka delilden vazgeçilebilir. ‘Rıza gösterse dahi vazgeçilemez’ diyen şık yanlıştır.\n\nSon söz aşamasında zorunlu müdafiin hazır olmaması da hükmün açıklanmasını engellemez (md 216).",
+      "articleRefs": [
+        "206",
+        "207",
+        "216"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Duruşmada anlatılan, okunan, okunamayan",
+      "body": "**Tanık** dinlendikten sonra salondan ancak mahkeme başkanı veya hâkimin izniyle ayrılabilir (md 208).\n\n**Duruşmada anlatılır (md 209):**\n- Naip veya istinabe yoluyla yapılan sorgu ve tanık ifade tutanakları,\n- Muayene ve keşif tutanakları gibi delil olarak kullanılacak belgeler,\n- Adlî sicil özetleri,\n- Sanığın kişisel ve ekonomik durumuna ilişkin belgeler.\n\nKişisel veri içeren belgeler, sanık veya mağdur açıkça isterse kapalı oturumda anlatılabilir.\n\n**Okunamaz (md 210):**\n- Olayın delili bir tanığın açıklamalarından ibaretse tanık mutlaka dinlenir. Önceki tutanağı ya da yazılı açıklamayı okumak dinlemenin yerine geçmez.\n- Tanıklıktan çekinebilecek kişi duruşmada çekinirse önceki ifadesine ilişkin tutanak okunamaz.\n\n**Okunabilir (md 211):** Tutanak şu hâllerde okunabilir:\n- Tanık veya suç ortağı ölmüşse, akıl hastalığına tutulmuşsa ya da yeri öğrenilemiyorsa,\n- Hastalık, malûllük gibi giderilemeyen bir nedenle belli olmayan bir süre gelemiyorsa,\n- Tanığın ifadesi, önem derecesi itibarıyla hazır bulunmasını gerektirmiyorsa.\n\nBunların dışındaki tutanaklar da savcı, katılan veya vekili, sanık veya müdafii birlikte rıza gösterirse okunabilir.\n\n**Önceki ifade (md 212–213):**\n- Tanık hatırlayamazsa ya da ifadeleri arasında çelişki varsa önceki ifadesi okunur.\n- Sanıkta çelişki varsa şunlar okunabilir: hâkim veya mahkeme huzurundaki açıklamalar, savcının aldığı ifade ve müdafiin hazır bulunduğu kolluk ifadesi.\n\n**Raporlar (md 214):** Okunduktan sonra gerekirse raporda imzası bulunanlar açıklama için çağrılabilir. Rapor kurul tarafından verilmişse mahkeme, görüşü açıklama görevini üyelerden birine vermeyi kurula önerebilir.",
+      "articleRefs": [
+        "208",
+        "209",
+        "210",
+        "211",
+        "212",
+        "213",
+        "214"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tanıklıktan çekinenin eski ifadesi okunmaz",
+      "body": "Sık kurulan tuzak şudur: tanıklıktan çekinme hakkını kovuşturmada kullanan tanığın soruşturmadaki beyanı, ‘okunabilecek belgeler’ arasına konur. Bu yanlıştır. Duruşmada çekinen kişinin önceki ifade tutanağı okunamaz. Bu tutanak, anlatılması zorunlu belgeler arasında da yer almaz.\n\nŞunların tutanakları ise okunabilir:\n- ölmüş tanık,\n- akıl hastalığına tutulmuş suç ortağı,\n- hastalık yüzünden gelemeyen suç ortağı,\n- ifadesi önem bakımından gerekli görülmeyen tanık.\n\nDelil yalnızca bir tanığın anlatımından ibaretse o tanık mutlaka dinlenir.",
+      "articleRefs": [
+        "209",
+        "210",
+        "211"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Diyecek, tartışma ve son söz",
+      "body": "**Diyecek sorulur (md 215):** Suç ortağı, tanık veya bilirkişi dinlendikten ve herhangi bir belge okunduktan sonra şu kişilere bir diyecekleri olup olmadığı sorulur: katılan veya vekili, Cumhuriyet savcısı, sanık ve müdafii.\n\n**Tartışmada söz sırası (md 216):**\n1. Katılan veya vekili\n2. Cumhuriyet savcısı\n3. Sanık ve müdafii veya kanunî temsilcisi\n\nSavcı ve katılan taraf, sanık tarafının açıklamalarına cevap verebilir. Sanık tarafı da savcının ve katılanın açıklamalarına cevap verebilir.\n\n**Son söz:** Hükümden önce hazır bulunan **sanığa** verilir. Bu aşamada zorunlu müdafiin hazır bulunmaması hükmün açıklanmasına engel değildir.",
+      "articleRefs": [
+        "215",
+        "216"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Delil takdiri ve ceza mahkemesinin ek yetkisi",
+      "body": "**Takdir (md 217):** Hâkim kararını **ancak** duruşmaya getirilmiş ve huzurunda tartışılmış delillere dayandırabilir. Bu deliller hâkimin vicdanî kanaatiyle serbestçe takdir edilir. Yüklenen suç, hukuka uygun bir şekilde elde edilmiş her türlü delille ispat edilebilir.\n\n**Ek yetki (md 218):** Suçun ispatı, başka bir mahkemenin görev alanına giren bir sorunun çözümüne bağlı olabilir. Bu durumda ceza mahkemesi:\n- bu sorunu da bu Kanun hükümlerine göre kendisi karara bağlayabilir, **ya da**\n- görevli mahkemede dava açılması veya açılmış davanın sonuçlanması için **bekletici sorun** kararı verebilir.\n\n**Yaş sorunu:** Kovuşturma evresinde mağdurun veya sanığın yaşının tespitiyle ilgili bir sorun çıkabilir. Mahkeme bu sorunu ilgili kanundaki usule göre kendisi çözer ve hükmünü verir.",
+      "articleRefs": [
+        "217",
+        "218"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Duruşma tutanağı",
+      "body": "**İmza (md 219):**\n- Tutanağı mahkeme başkanı veya hâkim ile **zabıt kâtibi** imzalar.\n- İşlemler teknik araçla kaydedildiyse kayıt vakit geçirilmeksizin yazılı tutanağa dönüştürülür ve aynı kişilerce imzalanır.\n- Başkanın mazereti varsa üyelerin **en kıdemlisi** imzalar.\n\n**Başlık (md 220):** Mahkemenin adı, oturum tarihleri ile hâkimin, Cumhuriyet savcısının ve zabıt kâtibinin adı ve soyadı.\n\n**İçerik (md 221):**\n- Oturuma katılanların adı ve soyadı: sanık, müdafi, katılan, vekil, kanunî temsilci, bilirkişi, tercüman, teknik danışman,\n- Duruşmanın seyri ve usule uyulduğunu gösteren unsurlar,\n- Sanık açıklamaları ve tanık ifadeleri,\n- Bilirkişi ve teknik danışman açıklamaları,\n- Okunan veya okunmasından vazgeçilen belgeler,\n- İstemler ve reddedilenlerin gerekçesi,\n- Verilen kararlar ve hüküm.\n\n**İspat gücü (md 222):** Duruşmanın nasıl yapıldığı ve usule uygun yapılıp yapılmadığı **ancak tutanakla** ispat olunur. Tutanağa karşı **yalnız sahtecilik** iddiası yöneltilebilir.",
+      "articleRefs": [
+        "219",
+        "220",
+        "221",
+        "222"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savcı başlıkta var, imzada yok",
+      "body": "Cumhuriyet savcısının adı tutanağın başlığına yazılır, ama tutanağı savcı imzalamaz. Kanun imzacı olarak yalnız başkanı veya hâkimi ve zabıt kâtibini sayar; katılan da imzalamaz. ‘Tutanağı savcı ve zabıt kâtibi de imzalar’ şıkkı yanlıştır.\n\nDuruşmanın usule uygunluğu tanık ifadesiyle, senetle, bant kaydıyla ya da dijital veriyle ispatlanmaz. Bunun tek yolu duruşma tutanağıdır.\n\nSuçun ispatı başka bir yargı alanındaki soruna bağlıysa ceza mahkemesinin iki seçeneği vardır: sorunu kendisi çözmek ya da bekletici sorun kararı vermek. Yetkisizlik, görevsizlik veya davanın nakli bu seçenekler arasında değildir. Yaş tespiti sorununda ise bekletici sorun yoluna gidilmez; mahkeme sorunu kendisi çözer.\n\nDuruşmaya getirilmemiş, hâkim huzurunda tartışılmamış delille karar kurulamaz.",
+      "articleRefs": [
+        "217",
+        "218",
+        "219",
+        "220",
+        "222"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kim, kime, ne zaman",
+      "rows": [
+        {
+          "label": "Delillerin ortaya konulması başlar",
+          "value": "Sanığın sorgusundan sonra",
+          "refs": [
+            "206"
+          ]
+        },
+        {
+          "label": "Delilden vazgeçmek için rıza",
+          "value": "Savcı ile sanık veya müdafii, birlikte",
+          "refs": [
+            "206"
+          ]
+        },
+        {
+          "label": "Tanığın salondan ayrılması",
+          "value": "Başkan veya hâkimin izniyle",
+          "refs": [
+            "208"
+          ]
+        },
+        {
+          "label": "Kişisel veri içeren belgenin kapalı oturumda anlatılması",
+          "value": "Sanık veya mağdurun açık istemiyle",
+          "refs": [
+            "209"
+          ]
+        },
+        {
+          "label": "Tartışmada sözü önce alan",
+          "value": "Katılan veya vekili",
+          "refs": [
+            "216"
+          ]
+        },
+        {
+          "label": "Hükümden önce son söz",
+          "value": "Hazır bulunan sanık",
+          "refs": [
+            "216"
+          ]
+        },
+        {
+          "label": "Tutanağı imzalayan",
+          "value": "Başkan veya hâkim ile zabıt kâtibi",
+          "refs": [
+            "219"
+          ]
+        },
+        {
+          "label": "Başkan mazeretliyse tutanağı imzalayan",
+          "value": "Üyelerin en kıdemlisi",
+          "refs": [
+            "219"
+          ]
+        },
+        {
+          "label": "Tutanağa karşı ileri sürülebilecek",
+          "value": "Yalnız sahtecilik iddiası",
+          "refs": [
+            "222"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "206",
+        "208",
+        "209",
+        "216",
+        "219",
+        "222"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hüküm nedir? Mahkûmiyetten durmaya",
+      "body": "**Hüküm sayılan kararlar:** Beraat, ceza verilmesine yer olmadığı, mahkûmiyet, güvenlik tedbirine hükmedilmesi, davanın reddi ve düşmesi. Hüküm, duruşmanın sona erdiği açıklandıktan sonra verilir.\n\n- **Mahkûmiyet:** Sanığın yüklenen suçu işlediği sabitse verilir.\n- **Güvenlik tedbiri:** Suçun işlendiği sabitse, belli bir cezaya mahkûmiyet yerine veya mahkûmiyetin yanı sıra verilir.\n- **Davanın reddi:** Aynı fiil nedeniyle aynı sanık için önceden verilmiş bir hüküm veya açılmış bir dava varsa verilir.\n- **Düşme:** Türk Ceza Kanunundaki düşme sebepleri varsa ya da soruşturma veya kovuşturma şartının gerçekleşmeyeceği anlaşılırsa verilir.\n- **Durma:** Soruşturma veya kovuşturma şarta bağlı olup şart henüz gerçekleşmemişse, gerçekleşmesini beklemek üzere verilir. Bu karara itiraz edilebilir. Durma, hüküm sayılan kararlar arasında yoktur.\n\n**Öncelik:** Derhâl beraat kararı verilebilecek hâllerde durma, düşme veya ceza verilmesine yer olmadığı kararı verilemez.\n\n**Görevsizlik:** Adlî yargı dışındaki bir yargı merciine yönelik görevsizlik kararı, kanun yolu bakımından hüküm sayılır.",
+      "articleRefs": [
+        "223"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Beraat hâlleri",
+      "body": "**Beraat kararı şu hâllerde verilir:**\n- Yüklenen fiil kanunda suç olarak tanımlanmamışsa,\n- Suçun sanık tarafından işlenmediği sabitse,\n- Yüklenen suç açısından failin kast veya taksiri yoksa,\n- Suç sanık tarafından işlenmiş olsa bile olayda bir **hukuka uygunluk nedeni** varsa,\n- Suçun sanık tarafından işlendiği sabit değilse.\n\nBeraat hükmünün gerekçesinde bu hâllerden hangisine dayanıldığı gösterilmelidir (md 230).",
+      "articleRefs": [
+        "223",
+        "230"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ceza verilmesine yer olmadığı kararı",
+      "body": "Bu karar ayrı gruplarda toplanan hâllerde verilir.\n\n**Kusur yoksa:**\n- Yüklenen suçla bağlantılı yaş küçüklüğü, akıl hastalığı, sağır ve dilsizlik hâli ya da geçici nedenler,\n- Hukuka aykırı fakat bağlayıcı emrin yerine getirilmesi, zorunluluk hâli, cebir veya tehdit etkisi,\n- Meşru savunmada sınırın heyecan, korku ve telaş nedeniyle aşılması,\n- Kusurluluğu ortadan kaldıran hataya düşülmesi.\n\n**Fiil suç olma özelliğini koruduğu hâlde faile ceza verilmiyorsa:**\n- Etkin pişmanlık,\n- Şahsî cezasızlık sebebi,\n- Karşılıklı hakaret,\n- Fiilin haksızlık içeriğinin azlığı.\n\nKararın gerekçesinde hangi hâle dayanıldığı gösterilmelidir (md 230).",
+      "articleRefs": [
+        "223",
+        "230"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Meşru savunma beraattir, sınırı aşmak değil",
+      "body": "Aynı olay iki ayrı sonuca gidebilir, dikkat et:\n- Meşru savunma şartları içinde kalınmışsa bu bir hukuka uygunluk nedenidir → **beraat**.\n- Meşru savunmada sınır heyecan, korku ve telaşla aşılmışsa → **ceza verilmesine yer olmadığı**.\n- Zorunluluk hâli, cebir veya tehdit etkisi, bağlayıcı emir, akıl hastalığı ya da yaş küçüklüğü varsa → **ceza verilmesine yer olmadığı**. Bunlarla beraat kurulmaz.\n- Suçun sanık tarafından işlendiği ispatlanamadıysa ya da sanık tarafından işlenmediği sabitse → **beraat**.\n\nGruplama sorularında farklı olanı ara. Etkin pişmanlık ve şahsî cezasızlık sebebi ‘fiil suç olmaya devam ediyor’ grubundadır. Yaş küçüklüğü, hata, bağlayıcı emir ve sınırın aşılması ise ‘kusur yok’ grubundadır.",
+      "articleRefs": [
+        "223"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Red, düşme, durma — ve sabit beraat",
+      "body": "- Aynı fiil, aynı sanık ve önceden verilmiş bir hüküm ya da açılmış bir dava varsa → **davanın reddi**. Durma ya da düşme değil.\n- Kovuşturması şarta bağlı bir suçta şart henüz gerçekleşmeden dava açılmışsa → **durma**. Şartın hiç gerçekleşmeyeceği anlaşılırsa → **düşme**.\n- Durma kararı hüküm sayılan kararlar arasında değildir, ama ona itiraz edilebilir.\n- Sanık yargılama sırasında akıl hastalığına yakalansa bile suçu işlemediği sabitse **beraat** verilir. Derhâl beraat verilebilecek yerde durma, düşme veya ceza verilmesine yer olmadığı kararı kurulamaz.\n- Adlî yargı dışındaki bir mercie, örneğin idare mahkemesine yönelik görevsizlik kararı kanun yolu bakımından hüküm sayılır.",
+      "articleRefs": [
+        "223"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Oy, hükmün konusu, suçun niteliğinin değişmesi",
+      "body": "**Oy (md 224):** Karar ve hükümler **oybirliği veya oyçokluğuyla** verilir. Karşı oya ve gerekçesine tutanakta yer verilir.\n\n**Hükmün konusu (md 225):** Hüküm ancak iddianamede unsurları gösterilen suça ilişkin fiil ve faili hakkında verilir. Mahkeme, fiilin nitelendirilmesinde iddia ve savunmalarla bağlı değildir.\n\n**Nitelik değişirse (md 226):**\n- Suçun hukukî niteliği değişecekse sanığa önceden haber verilmeli ve savunma yapabileceği hâle getirilmelidir. Aksi hâlde sanık, iddianamedeki kanun hükmünden başkasıyla mahkûm edilemez.\n- Cezanın artırılmasını veya güvenlik tedbiri uygulanmasını gerektiren hâller ilk defa duruşmada ortaya çıkarsa da aynı kural uygulanır.\n- Ek savunmayı hazırlaması için sanığa süre, **istem üzerine** verilir.\n- Bildirimler sanığa ve varsa müdafie yapılır. Müdafi, sanığa tanınan haklardan onun gibi yararlanır.\n- Sanığın dosyadaki son adresine bildirim yapılamazsa ya da sanık bildirime rağmen gelmezse müdafie yapılan bildirim yeterlidir.",
+      "articleRefs": [
+        "224",
+        "225",
+        "226"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Mahkeme niteliği değiştirebilir, ama sanığı uyararak",
+      "body": "Mahkeme, iddianamedeki fiili başka bir suç olarak nitelendirmek isterse bunu yapabilir; nitelendirmede iddia ve savunmayla bağlı değildir. Ama bunu ancak sanığa haber verip ek savunma imkânı tanıyarak yapabilir. Şu şıkların hepsi yanlıştır: ‘doğrudan karar verir’, ‘hiç karar veremez’ ve ‘savcıya bildirim yeter’.\n\n‘Bildirimin müdafie yapılması yeterlidir, sanığa gerekmez’ cümlesi de yanlıştır. Kural, sanığa ve varsa müdafiine bildirimdir. Müdafie yapılan bildirim ancak sanığa adresinde ulaşılamazsa ya da sanık gelmezse yeterli olur.\n\nEk savunma süresi kendiliğinden verilmez, sanık isterse verilir.\n\nSon olarak: hâkimler hüküm kurmak için oybirliğine mecbur değildir; oyçokluğu da yeter.",
+      "articleRefs": [
+        "224",
+        "225",
+        "226"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müzakere ve oylama",
+      "body": "**Kim bulunur (md 227):** Müzakerede ancak karara ve hükme katılacak hâkimler bulunur. Mahkeme başkanı yalnızca şu kişilerin hazır bulunmasına izin verebilir:\n- hâkim ve savcı yardımcıları,\n- mahkemesinde staj yapan avukat adayları.\n\nKatılan, vekili, Cumhuriyet savcısı ve müdafi bu izin kapsamında sayılmaz.\n\n**Kim yönetir (md 228):** Müzakereyi mahkeme başkanı yönetir.\n\n**Oylar (md 229):**\n- Başkan oyları **kıdemsiz üyeden başlayarak** ayrı ayrı toplar ve kendi oyunu **en son** verir.\n- Başkan ve üyelerden hiçbiri azınlıkta kaldığını ileri sürerek oylamaya katılmaktan çekinemez.\n- Oylar dağılırsa sanığın **en çok aleyhine** olan oy, çoğunluk oluşuncaya kadar kendisine daha yakın olan oya eklenir.\n\nÖrnek: Hâkimlerden biri en hafif, biri orta, biri en ağır cezayı önerirse en ağır oy ortadakine eklenir. Ceza, ortadaki öneri olur.",
+      "articleRefs": [
+        "227",
+        "228",
+        "229"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gerekçe, hükmün açıklanması ve yazımı",
+      "body": "**Mahkûmiyet gerekçesi (md 230):**\n- İddia ve savunmadaki görüşler,\n- Delillerin tartışılması; hükme esas alınan ve reddedilen deliller; hukuka aykırı yöntemlerle elde edilen delillerin ayrıca ve açıkça gösterilmesi,\n- Sabit görülen fiil ve nitelendirilmesi; cezanın ve güvenlik tedbirinin belirlenmesi,\n- Erteleme, çevirme ve ek güvenlik tedbirlerine ilişkin dayanaklar.\n\n**Açıklama (md 231):**\n- Duruşma tutanağına geçirilen hüküm fıkrası okunur, gerekçe ana çizgileriyle anlatılır.\n- Hazır bulunan sanığa kanun yolları, mercii ve süresi bildirilir.\n- Beraat eden sanığa, varsa tazminat isteme olanağı bildirilir.\n- Hüküm fıkrası **herkes tarafından ayakta** dinlenir.\n\n**Hükmün yazımı (md 232):**\n- Hükmün başına ‘Türk Milleti adına’ verildiği yazılır.\n- Suçun işlendiği yer, tarih ve zaman dilimi **beraat kararı dışında** yazılır.\n- Gerekçe ve varsa karşı oy gerekçesi tümüyle tutanağa geçirilmemişse, açıklanmasından itibaren **en geç onbeş gün** içinde dava dosyasına konulur.\n- Gerekçeli karar imzalanmadan hâkim ölür ya da imzalayamaz hâle gelirse, yeni hâkim tefhim edilen hükme uygun gerekçeli kararı bizzat yazar ve imzalar.\n- Toplu mahkemelerde böyle bir durumda hükmü diğer hâkimler imzalar; başkan veya en kıdemli hâkim imzalanamama sebebini yazarak imzalar.\n- Hükmün nüshaları ve özetleri başkan veya hâkim ile zabıt kâtibince imzalanır ve mühürlenir.",
+      "articleRefs": [
+        "230",
+        "231",
+        "232"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Hükmün açıklanmasının geri bırakılması (HAGB)",
+      "body": "**Ceza şartı:** Hükmolunan ceza **iki yıl veya daha az** süreli hapis **veya adlî para cezası** olmalıdır.\n\n**Diğer şartlar (hepsi birlikte aranır):**\n- Sanık daha önce kasıtlı bir suçtan mahkûm olmamış olmalı.\n- Mahkeme, sanığın kişilik özelliklerine ve duruşmadaki tutumuna bakarak yeniden suç işlemeyeceği kanaatine varmalı.\n- Mağdurun veya kamunun zararı aynen iade, suçtan önceki hâle getirme veya tazmin yoluyla tamamen giderilmiş olmalı.\n\nZarar derhal giderilemiyorsa, denetim süresince **aylık taksitlerle** tamamen ödenmesi koşuluyla da karar verilebilir.\n\n**Sonuç:**\n- Kurulan hüküm, müsadereye ilişkin hükümler hariç, sanık hakkında hukukî sonuç doğurmaz.\n- Bu hükümdeki hapis cezası ertelenemez; kısa süreliyse seçenek yaptırımlara çevrilemez.\n- Uzlaşmaya ilişkin hükümler saklıdır.\n\n**Denetim:**\n- Sanık **beş yıl** denetim süresine tâbi tutulur.\n- Bu sürede kasıtlı bir suç nedeniyle yeniden HAGB kararı verilemez.\n- Mahkeme **bir yıldan fazla olmamak üzere** denetimli serbestlik tedbiri belirleyebilir: eğitim programına devam, gözetim altında ücret karşılığı çalışma, belli yerlere gitme yasağı veya devam yükümlülüğü.\n- Denetim süresi içinde dava zamanaşımı durur.\n\n**Denetimin sonu iki yönlüdür:**\n- Kasten yeni suç işlenmez ve yükümlülüklere uyulursa hüküm ortadan kaldırılır, **davanın düşmesi** kararı verilir.\n- Kasten yeni suç işlenir ya da yükümlülüklere aykırı davranılırsa mahkeme hükmü açıklar.\n\nYükümlülüğü yerine getiremeyen sanığın durumunu değerlendiren mahkeme, yeni bir mahkûmiyet hükmü de kurabilir. Bu hükümde şunlara karar verebilir:\n- cezanın **yarısına kadar** bir kısmının infaz edilmemesi,\n- koşulları varsa hapis cezasının ertelenmesi,\n- seçenek yaptırımlara çevrilmesi.\n\nAçıklanan veya yeni kurulan hükme itiraz edilebilir. İtiraz mercii yalnız bu koşullarla sınırlı bir değerlendirme yapar.\n\n**Kanun yolu:** HAGB kararına **istinaf** yoluna başvurulur. Kararı ilk derece mahkemesi sıfatıyla bölge adliye mahkemesi veya Yargıtay verdiyse **temyiz** yoluna gidilir. İnceleme, usul ve esasa ilişkin hukuka aykırılıklar yönünden yapılır.\n\n**Kayıt:** Kararlar bunlara mahsus bir sisteme kaydedilir. Kayıtlar ancak bir soruşturma veya kovuşturmayla bağlantılı olarak savcı, hâkim veya mahkeme isterse bu maddedeki amaç için kullanılır.\n\n**Uygulanmaz:** İşkence ve eziyet suçlarında ve kamu görevlisinin görevi sebebiyle işlediği, Anayasanın 17 nci maddesi kapsamında kötü muamele sayılabilecek suçlarda HAGB uygulanmaz.",
+      "articleRefs": [
+        "231"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "HAGB’de sayıları karıştırma",
+      "body": "- Ceza üst sınırı: **iki yıl veya daha az hapis veya adlî para cezası**. ‘Adlî para cezası hariç’, ‘üç yıl’ ve ‘beş yıl’ şıkları yanlıştır. Beş yıl üst sınır değil, denetim süresidir.\n- Denetim süresi **beş yıl**dır. Denetimli serbestlik tedbiri ise en fazla **bir yıl** sürer. Üç, yedi veya on yıl ya da altı ay diyen şıklar yanlıştır.\n- Kanun yolu itiraz değil, **istinaf**tır. İstinaf incelemesi usul ve esası kapsar; salt şekli bir inceleme değildir.\n- Sanığın HAGB’yi kabul etmesi kanunda şart olarak sayılmaz.\n- Müsadere, HAGB’nin sonuçlarının dışında kalır. ‘HAGB’de müsadere kararı verilemez’ demek yanlıştır.\n- Kayıt özel bir sistemde tutulur ve yalnız soruşturma veya kovuşturmayla bağlantılı bir istem üzerine kullanılır.",
+      "articleRefs": [
+        "231"
+      ],
+      "counterNumbers": [
+        3,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Hüküm ve HAGB sayıları",
+      "rows": [
+        {
+          "label": "HAGB için ceza üst sınırı",
+          "value": "İki yıl veya daha az hapis ya da adlî para cezası",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "HAGB denetim süresi",
+          "value": "5 yıl",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "Denetimli serbestlik tedbiri süresi",
+          "value": "En fazla 1 yıl",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "Derhal giderilemeyen zararın ödenmesi",
+          "value": "Denetim süresince aylık taksitlerle",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "Yükümlülük ihlalinde infaz edilmeyebilecek kısım",
+          "value": "Cezanın yarısına kadar",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "Gerekçenin dosyaya konulması",
+          "value": "Açıklanmadan itibaren en geç 15 gün",
+          "refs": [
+            "232"
+          ]
+        },
+        {
+          "label": "Oyların toplanması",
+          "value": "Kıdemsiz üyeden başlar, başkan en son",
+          "refs": [
+            "229"
+          ]
+        },
+        {
+          "label": "Karar ve hüküm için oy",
+          "value": "Oybirliği veya oyçokluğu",
+          "refs": [
+            "224"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "224",
+        "229",
+        "231",
+        "232"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "53",
+          "refs": [
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232"
+          ]
+        },
+        {
+          "label": "md 223 — Duruşmanın sona ermesi ve hüküm",
+          "value": "20 soru",
+          "refs": [
+            "223"
+          ]
+        },
+        {
+          "label": "md 231 — Hükmün açıklanması ve hükmün açıklanmasının geri bırakılması76",
+          "value": "10 soru",
+          "refs": [
+            "231"
+          ]
+        },
+        {
+          "label": "md 206 — Delillerin ortaya konulması ve reddi",
+          "value": "3 soru",
+          "refs": [
+            "206"
+          ]
+        },
+        {
+          "label": "md 210 — Duruşmada okunmayacak belgeler",
+          "value": "2 soru",
+          "refs": [
+            "210"
+          ]
+        },
+        {
+          "label": "md 217 — Delilleri takdir yetkisi",
+          "value": "2 soru",
+          "refs": [
+            "217"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 208, md 211, md 212, md 213, md 214, md 215, md 220, md 221, md 225, md 228, md 230",
+          "refs": [
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "206",
+        "207",
+        "208",
+        "209",
+        "210",
+        "211",
+        "212",
+        "213",
+        "214",
+        "215",
+        "216",
+        "217",
+        "218",
+        "219",
+        "220",
+        "221",
+        "222",
+        "223",
+        "224",
+        "225",
+        "226",
+        "227",
+        "228",
+        "229",
+        "230",
+        "231",
+        "232"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "206",
+        "207",
+        "208",
+        "209",
+        "210",
+        "211",
+        "212",
+        "213",
+        "214",
+        "215",
+        "216",
+        "217",
+        "218",
+        "219",
+        "220",
+        "221",
+        "222",
+        "223",
+        "224",
+        "225",
+        "226",
+        "227",
+        "228",
+        "229",
+        "230",
+        "231",
+        "232"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 206–232, 10 soru",
+          "refs": [
+            "206",
+            "207",
+            "208",
+            "209",
+            "210",
+            "211",
+            "212",
+            "213",
+            "214",
+            "215",
+            "216",
+            "217",
+            "218",
+            "219",
+            "220",
+            "221",
+            "222",
+            "223",
+            "224",
+            "225",
+            "226",
+            "227",
+            "228",
+            "229",
+            "230",
+            "231",
+            "232"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,818 @@
+{
+  "unit": {
+    "slug": "cmk-kanun-yollari",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Kanun yolları: itiraz, istinaf, temyiz",
+    "subtitle": "Kim başvurur, hangi karara, hangi sürede, kime; kararı ne bekler?",
+    "articleFrom": "260",
+    "articleTo": "307",
+    "readingMinutes": 14,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 260–294, 296–307",
+    "articleNos": [
+      "260",
+      "261",
+      "262",
+      "263",
+      "264",
+      "265",
+      "266",
+      "267",
+      "268",
+      "269",
+      "270",
+      "271",
+      "272",
+      "273",
+      "274",
+      "275",
+      "276",
+      "277",
+      "278",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286",
+      "287",
+      "288",
+      "289",
+      "290",
+      "291",
+      "292",
+      "293",
+      "294",
+      "296",
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302",
+      "303",
+      "304",
+      "305",
+      "306",
+      "307"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 14
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Kanun yolu kimin hakkı?",
+      "body": "Bir hâkim ya da mahkeme kararına katlanmak zorunda değilsin; kanun sana o kararı başka bir mercie taşıma yolunu açar. Bu yol Cumhuriyet savcısına, şüpheliye, sanığa ve katılan sıfatını almış olanlara açıktır. Katılma isteği karara bağlanmamış ya da reddedilmiş olan da bu yolu kullanabilir. Katılan sıfatını alabilecek surette suçtan zarar görmüş olan da bu kapıdan girebilir. Savcıyı yalnız 'iddia makamı' diye düşünme: Cumhuriyet savcısı **sanık lehine** de kanun yoluna başvurabilir.",
+      "articleRefs": [
+        "260"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Başvurabilen diğer kişiler ve tutuklunun başvurusu",
+      "body": "- **Savcılar:** Ağır ceza mahkemelerindeki Cumhuriyet savcıları, yargı çevresindeki asliye ceza mahkemelerinin kararlarına karşı başvurabilir. Bölge adliye mahkemesindeki Cumhuriyet savcıları ise bölge adliye mahkemelerinin kararlarına karşı başvurabilir.\n- **Avukat:** Müdafiliğini veya vekilliğini üstlendiği kişinin **açık arzusuna aykırı olmamak** koşuluyla başvurabilir.\n- **Yasal temsilci ve eş:** Şüpheli veya sanığa açık olan kanun yollarına süresi içinde kendiliklerinden başvurabilir. Şüpheli/sanığın başvurusuna ilişkin hükümler onlar için de geçerlidir.\n- **Tutuklu:** Zabıt kâtibine ya da ceza infaz kurumu ve tutukevi müdürüne beyanda bulunarak veya dilekçe vererek başvurur. Başvuru deftere kaydedilir ve tutanak düzenlenir. Tutanağın bir örneği tutukluya verilir. Kurum müdürü, tutanak ve dilekçeyi derhâl ilgili mahkemeye gönderir.\n- Bu işlem yapıldığı anda kanun yolu süreleri **kesilmiş sayılır**.",
+      "articleRefs": [
+        "260",
+        "261",
+        "262",
+        "263"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Müdafiin izni ve yanlış kanun yolu",
+      "body": "Müdafiin başvurması için müvekkilinin izni, açık rızası ya da yazılı onayı aranmaz. Tek sınır, müvekkilin **açık arzusuna aykırı olmamaktır**. Müvekkile sormadan yapılan başvuru bu yüzden geçerlidir.\n\nİkinci tuzak 'yanlış yol seçtim, hakkımı kaybettim' şıkkıdır. Kabul edilebilir bir başvuruda kanun yolunun ya da merciin belirlenmesinde yanılma, başvuranın haklarını ortadan kaldırmaz. Başvurunun yapıldığı merci, başvuruyu **derhâl** görevli ve yetkili mercie gönderir. İstinaf yerine temyiz yazılması da başvuruyu geçersiz kılmaz.",
+      "articleRefs": [
+        "261",
+        "264"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Başvurudan vazgeçme: kim, ne zamana kadar?",
+      "body": "Vazgeçme, merci karar verinceye kadar geçerlidir.\n\nŞıklarda en çok şu bozulur: **Cumhuriyet savcısının sanık lehine yaptığı başvurudan, sanığın rızası olmaksızın vazgeçilemez.** Savcının bağımsızlığı bu sonucu değiştirmez. Hâkimin ya da başka bir makamın izni de değiştirmez. Belirleyici olan sanığın rızasıdır.\n\nMüdafi veya vekil vazgeçecekse vekâletnamede bu konuda **özel yetki** bulunmalıdır. 150 nci maddenin ikinci fıkrası uyarınca atanan müdafi ile şüpheli/sanığın iradesi çelişebilir. Bu durumda **müdafiin iradesi** geçerli sayılır.",
+      "articleRefs": [
+        "266"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "İtiraz: hâkim kararlarının yolu",
+      "body": "İtirazın asıl hedefi **hâkim kararlarıdır**. Mahkeme kararlarına ise ancak **kanunun gösterdiği hâllerde** itiraz edebilirsin. Yani mahkeme kararına itiraz için kanunda bir hüküm aramalısın. İtiraz, kararın yerine getirilmesini kendiliğinden durdurmaz. Ancak kararına itiraz edilen makam ya da kararı inceleyecek merci, geri bırakılmasına karar verebilir.",
+      "articleRefs": [
+        "267",
+        "269"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz usulü ve karar",
+      "body": "- **Süre ve şekil:** Kanunun ayrıca hüküm koymadığı hâllerde süre, ilgililerin kararı öğrendiği günden itibaren **iki hafta**dır. İtiraz, kararı veren mercie dilekçe verilerek yapılır. Tutanağa geçirilmek koşuluyla zabıt kâtibine beyanda bulunarak da yapılabilir. Tutanaktaki beyanı ve imzayı mahkeme başkanı veya hâkim onaylar.\n- **Kararı veren:** İtirazı yerinde görürse kararını **düzeltir**. Yerinde görmezse en çok **üç gün** içinde itirazı incelemeye yetkili mercie gönderir.\n- **Merci:** Yazılı cevap için itirazı Cumhuriyet savcısına ve karşı tarafa bildirebilir. İnceleme ve araştırma yapabilir ya da yapılmasını emredebilir. md 101 ve 105 uyarınca yapılan itirazda savcının görüşü alınırsa, bu görüş şüpheli, sanık veya müdafiine bildirilir. Onlar da **üç gün** içinde görüş bildirebilir.\n- **Karar:** Kural olarak **duruşma yapılmaksızın** verilir. Gerekirse önce Cumhuriyet savcısı, sonra müdafi veya vekil dinlenir. İtiraz yerinde görülürse merci, itiraz konusu hakkında da karar verir. Karar mümkün olan en kısa sürede verilir.\n- **Kesinlik:** Merciin itiraz üzerine verdiği kararlar kesindir. Ancak **ilk defa merci tarafından verilen tutuklama kararlarına** karşı itiraz yoluna gidilebilir.",
+      "articleRefs": [
+        "268",
+        "270",
+        "271"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtirazı inceleyecek merciler",
+      "body": "- **Sulh ceza hâkimliği kararları:**\n  - O yerde birden fazla hâkimlik varsa itirazı numara olarak izleyen hâkimlik inceler. Son numaralı hâkimliğin kararına bir numaralı hâkimlik bakar.\n  - Ağır ceza mahkemesinin bulunmadığı yerde tek hâkimlik varsa, yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki sulh ceza hâkimliği inceler.\n  - Ağır ceza mahkemesinin bulunduğu yerde tek hâkimlik varsa, en yakın ağır ceza mahkemesinin bulunduğu yerdeki sulh ceza hâkimliği inceler.\n- **Sulh ceza hâkimliğinin tutuklama ve adli kontrol kararları:** Yargı çevresinde bulunduğu **asliye ceza mahkemesi hâkimi** inceler. Sulh ceza işlerini asliye ceza hâkimi görüyorsa yetki **ağır ceza mahkemesi başkanına** aittir.\n- **Asliye ceza hâkiminin kararları:** Yargı çevresindeki ağır ceza mahkemesi inceler.\n- **Ağır ceza mahkemesi ve başkanının kararları:** Numara olarak izleyen daire inceler. Son daireninkine birinci daire bakar. Tek daire varsa en yakın ağır ceza mahkemesi inceler.\n- **Naip hâkim kararları:** Mensup olduğu ağır ceza mahkemesinin başkanı inceler.\n- **Bölge adliye mahkemesi ceza daireleri ve esas mahkeme olarak bakan Yargıtay ceza daireleri:**\n  - Üyenin kararını dairesinin başkanı inceler.\n  - Daire başkanının ve dairenin kararını numara itibarıyla izleyen ceza dairesi inceler.\n  - Son numaralı dairenin kararına birinci ceza dairesi bakar.",
+      "articleRefs": [
+        "268"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İtirazda en çok bozulan cümleler",
+      "body": "- 'Kararına itiraz edilen hâkim itirazı yerinde görmezse **reddeder**' → Yanlış. Ya kararını düzeltir ya da en çok **üç gün** içinde yetkili mercie gönderir.\n- 'Gönderme süresi en çok 5 gün' → Yanlış, doğrusu üç gün.\n- 'Karar en geç 5 gün içinde verilir' → Yanlış. Karar mümkün olan en kısa sürede verilir.\n- 'İtiraz hakkında duruşma yapılması esastır' → Yanlış. Kural duruşmasız karardır.\n- 'İtiraz infazı durdurur' → Yanlış. Durdurmaz; geri bırakma ayrı bir karar ister.\n- 'Tutuklama ve adli kontrol kararına itirazı numara olarak izleyen sulh ceza hâkimliği inceler' → Yanlış. Bu kararlara yapılan itirazı asliye ceza mahkemesi hâkimi inceler.\n- Merci ilk kez tutuklama kararı verdiyse, o karar kesin değildir; ona da itiraz edilebilir.",
+      "counterNumbers": [
+        5
+      ],
+      "articleRefs": [
+        "268",
+        "269",
+        "271"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İtiraz ve istinafta süreler",
+      "rows": [
+        {
+          "label": "İtiraz süresi (kararın öğrenilmesinden)",
+          "value": "iki hafta",
+          "refs": [
+            "268"
+          ]
+        },
+        {
+          "label": "Kararına itiraz edilenin dosyayı mercie gönderme süresi",
+          "value": "en çok üç gün",
+          "refs": [
+            "268"
+          ]
+        },
+        {
+          "label": "md 101 ve 105 itirazında savcı görüşüne cevap",
+          "value": "üç gün",
+          "refs": [
+            "270"
+          ]
+        },
+        {
+          "label": "İstinaf süresi (hükmün gerekçesiyle tebliğinden)",
+          "value": "iki hafta",
+          "refs": [
+            "273"
+          ]
+        },
+        {
+          "label": "Ağır ceza savcısının asliye hükümlerine karşı istinafı (başsavcılığa geliş tarihinden)",
+          "value": "iki hafta",
+          "refs": [
+            "273"
+          ]
+        },
+        {
+          "label": "Savcının istinaf istemine ilgililerin cevabı",
+          "value": "iki hafta",
+          "refs": [
+            "273"
+          ]
+        },
+        {
+          "label": "Ret kararına karşı bölge adliye mahkemesinden karar isteme",
+          "value": "iki hafta",
+          "refs": [
+            "276"
+          ]
+        },
+        {
+          "label": "İstinaf dilekçesine karşı tarafın cevabı",
+          "value": "iki hafta",
+          "refs": [
+            "277"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "268",
+        "270",
+        "273",
+        "276",
+        "277"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstinaf: hangi hükümlere?",
+      "body": "- İlk derece mahkemelerinden verilen **hükümlere** karşı istinaf yoluna başvurulabilir.\n- **Onbeş yıl ve daha fazla** hapis cezalarına ilişkin hükümler bölge adliye mahkemesince **re'sen** incelenir.\n- Hükümden önce verilip hükme esas teşkil eden kararlar da hükümle birlikte istinafa götürülebilir. Başkaca kanun yolu öngörülmemiş mahkeme kararları için de aynı kural geçerlidir.\n\n**İstinafa gidilemeyenler:**\n- a) Sonuç olarak belirlenen **onbeşbin Türk Lirası dâhil** adlî para cezasına mahkûmiyet hükümleri. Hapis cezasından çevrilen adlî para cezaları bu kapsamın dışındadır.\n- b) Üst sınırı **beşyüz günü** geçmeyen adlî para cezasını gerektiren suçlardan verilen beraat hükümleri.\n- c) Kanunlarda kesin olduğu yazılı bulunan hükümler.\n\nBu şekilde verilen hükümler **tekerrüre esas olmaz**.",
+      "articleRefs": [
+        "272"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İstinaf istemi, ret ve cevap",
+      "body": "- **Süre ve şekil:** Süre, hükmün **gerekçesiyle birlikte tebliğ** edildiği tarihten itibaren **iki hafta**dır. Başvuru, hükmü veren mahkemeye dilekçe verilerek yapılır. Zabıt kâtibine beyanla da yapılabilir; beyan tutanağa geçirilir ve tutanak hâkime onaylattırılır. Tutuklu sanık için 263 üncü madde saklıdır.\n- **Ağır ceza savcısı:** Yargı çevresindeki asliye mahkemelerinin hükümlerine karşı başvurabilir. Süresi, kararın başsavcılığa geliş tarihinden itibaren iki haftadır.\n- **Nedenler:**\n  - Sanık ve katılan sıfatı alanlar başvuru nedenini göstermese de inceleme yapılır. Katılma isteği karara bağlanmamış, reddedilmiş olanlar ve suçtan zarar görenler için de aynı kural geçerlidir.\n  - **Cumhuriyet savcısı** ise nedenleri gerekçeleriyle birlikte yazılı isteminde açıkça gösterir. Bu istem ilgililere tebliğ edilir. İlgililer iki hafta içinde cevap verebilir.\n- **Yokluğunda verilen hüküm:** Sanık, aleyhine yokluğunda verilen hükme karşı eski hâle getirme isteyebilir. Eski hâle getirme süresi içinde istinaf süresi de işler. Bu yüzden sanığın ayrıca istinaf istemi de yapması gerekir. İstinafla ilgili işler, eski hâle getirme hakkında karar verilinceye kadar ertelenir.\n- **Etkisi:** Süresinde yapılan başvuru hükmün **kesinleşmesini engeller**.\n- **Hükmü veren mahkemece ret:** Mahkeme dilekçeyi şu hâllerde reddeder:\n  - Süre geçmişse.\n  - Hükme karşı istinaf yolu kapalıysa.\n  - Başvuranın buna hakkı yoksa.\n  \n  Ret kararının tebliğinden itibaren iki hafta içinde bölge adliye mahkemesinden karar istenebilir. Bu nedenle hükmün infazı ertelenemez.\n- **Cevap:** Reddedilmeyen dilekçe karşı tarafa tebliğ edilir. Karşı taraf iki hafta içinde yazılı cevap verebilir. Sanık, zabıt kâtibine beyanla da cevap verebilir. Ardından dosya bölge adliye mahkemesine gönderilir.",
+      "articleRefs": [
+        "273",
+        "274",
+        "275",
+        "276",
+        "277"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İstinaf süresinde ve eşiklerde tuzak",
+      "body": "Süre **tefhimden değil**, hükmün gerekçesiyle birlikte **tebliğinden** başlar. Şıkta 'tefhim veya tebliğ' görürsen dur.\n\nTutuklu sanığın süresi de aynı iki haftadır. Ona ek olarak 263 üncü maddedeki başvuru imkânı tanınır.\n\nİki hafta 14 gün demektir. Tebliğ hangi güne denk geldiyse, son gün iki hafta sonraki aynı gündür.\n\nBaşvuru yalnız dilekçeyle değil, zabıt kâtibine beyanla da yapılır.\n\nİki eşiği karıştırma:\n- **Onbeş yıl** ve üstü hapis → bölge adliye mahkemesinin **re'sen** istinaf incelemesi.\n- **On yıl** veya daha fazla hapis → Yargıtay'ın uygun görürse **duruşmalı** inceleme yapabilmesi.",
+      "derivedNumbers": [
+        {
+          "value": 14,
+          "expr": "2 * 7",
+          "refs": [
+            "273"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "272",
+        "273",
+        "299"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yalnız sanık lehine başvuruda ceza ağırlaşamaz",
+      "body": "Kural tek cümle: Kanun yoluna **yalnız sanık lehine** başvurulmuşsa, yeniden verilen hüküm önceki hükümle belirlenmiş cezadan **daha ağır olamaz**.\n\nAynı sınır şu hâllerde de geçerlidir:\n- Cumhuriyet savcısı sanık lehine başvurduğunda (md 265).\n- Hüküm yalnız sanık tarafından ya da onun lehine savcı veya 262 nci maddedeki kişilerce temyiz edildiğinde (md 307).\n\nSoru kökünde bu kural 'aleyhe değiştirme yasağı' adıyla geçer.\n\nTuzak şu: Savcı sanık **aleyhine** başvurduysa bu sınır yoktur; yeni hüküm daha ağır olabilir. Savcının aleyhe başvurusu üzerine karar sanık **lehine** de bozulabilir veya değiştirilebilir.\n\nÖlçüt hep aynıdır: önceki hükümle belirlenmiş olan ceza.",
+      "articleRefs": [
+        "265",
+        "283",
+        "307"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Direnme yasağı ve temyiz edilebilen kararlar",
+      "body": "- **Direnme yasağı:** Bölge adliye mahkemesi karar ve hükümlerine karşı direnilemez. Bunlara karşı başka bir kanun yoluna da gidilemez. İtiraz ve temyiz hükümleri saklıdır.\n- **Özel kanunlar:** Bir kanunda 'temyiz edilebilir' yazsa bile, iş bölge adliye mahkemesinin görev alanındaysa ilk derece kararına karşı **istinaf** yoluna başvurulur.\n- **Temyiz:** Bölge adliye mahkemesi ceza dairelerinin **bozma dışında kalan** hükümleri temyiz edilebilir.\n\n**Temyiz edilemeyen bölge adliye mahkemesi kararları:**\n- a) İlk derecenin verdiği **beş yıl veya daha az** hapis cezaları ile her miktardaki adlî para cezalarına karşı istinafın esastan reddi.\n- b) İlk derecenin verdiği beş yıl veya daha az hapis cezalarını artırmayan kararlar.\n- c) Hapisten çevrilen seçenek yaptırımlara ilişkin her türlü karar ve esastan ret.\n- d) İlk derecenin görevine giren ve üst sınırı **iki yıla kadar (iki yıl dâhil)** hapis gerektiren suçlar ile bunlara bağlı adlî para cezalarına ilişkin her türlü karar. İlk defa bölge adliye mahkemesince verilen ve 272 nci maddenin üçüncü fıkrası dışında kalan mahkûmiyet kararları bunun dışındadır.\n- e) Adlî para cezası gerektiren suçlarda her türlü karar.\n- f) Sadece eşya veya kazanç müsaderesine ilişkin esastan ret.\n- g) **On yıl veya daha az** hapis ya da adlî para cezası gerektiren suçlardaki beraate ilişkin esastan ret.\n- h) Düşme, ceza verilmesine yer olmadığı ve güvenlik tedbiri kararları ile bunlara ilişkin esastan ret.\n- ı) Bu sınırlar içinde birden fazla ceza ya da karar içeren kararlar.",
+      "articleRefs": [
+        "284",
+        "285",
+        "286"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Temyiz sınırları ve sınırı aşan suç listesi",
+      "body": "Bu eşikleri birbirine karıştırma:\n- **Beş yıl:** ilk derecenin verdiği hapis cezası.\n- **İki yıl:** suçun kanundaki üst sınırı.\n- **On yıl:** beraat kararlarında suçun gerektirdiği ceza.\n\nKesinlik sınırı içinde kalsa bile bazı suçlarda verilen kararlar temyiz edilebilir. TCK'daki suçlar şunlardır:\n- Hakaret (yalnız TCK md 125'in üçüncü fıkrası).\n- Halk arasında korku ve panik yaratmak amacıyla tehdit.\n- Suç işlemeye tahrik.\n- Suçu ve suçluyu övme.\n- Halkı kin ve düşmanlığa tahrik veya aşağılama.\n- Kanunlara uymamaya tahrik.\n- Halkı yanıltıcı bilgiyi alenen yayma.\n- Cumhurbaşkanına hakaret.\n- Devletin egemenlik alametlerini aşağılama.\n- Türk Milletini, Devleti, Devletin kurum ve organlarını aşağılama.\n- Silâhlı örgüt.\n- Halkı askerlikten soğutma.\n\nBunlara Terörle Mücadele Kanunu ile Toplantı ve Gösteri Yürüyüşleri Kanunu'ndaki belirli suçlar da eklenir.\n\nTuzak: Hakaretin temel şekli ya da md 125'in diğer fıkraları bu listede **yok**.",
+      "articleRefs": [
+        "286"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temyiz nedeni ve hukuka kesin aykırılık",
+      "body": "- Hükümden önce verilip hükme esas teşkil eden kararlar da hükümle birlikte temyiz olunabilir. Başkaca kanun yolu öngörülmemiş mahkeme kararları için de aynı kural geçerlidir.\n- Temyiz **ancak hükmün hukuka aykırı olması** nedenine dayanır. Bir hukuk kuralının uygulanmaması ya da yanlış uygulanması hukuka aykırılıktır.\n\n**Dilekçede gösterilmese de hukuka kesin aykırılık sayılan hâller:**\n- a) Mahkemenin kanuna uygun teşekkül etmemesi.\n- b) Kanunen yasaklı hâkimin hükme katılması.\n- c) Geçerli şüphe nedeniyle ret istemi kabul edildiği hâlde hâkimin hükme katılması. Bu istemin kanuna aykırı reddedilip hâkimin hükme katılması da bu kapsamdadır.\n- d) Mahkemenin kanuna aykırı olarak kendini görevli veya yetkili görmesi.\n- e) Cumhuriyet savcısının ya da kanunen mutlaka hazır bulunması gerekenlerin yokluğunda duruşma yapılması.\n- f) Duruşmalı hükümde açıklık kuralının ihlâli.\n- g) Hükmün 230 uncu madde gereğince gerekçe içermemesi.\n- h) Hüküm için önemli hususlarda mahkeme kararıyla savunma hakkının sınırlandırılması.\n- i) Hükmün hukuka aykırı yöntemlerle elde edilen delile dayanması.\n\n**Sanığın yararına olan kurallar:** Bu kurallara aykırılık, sanık aleyhine bozdurma için Cumhuriyet savcısına hak vermez.",
+      "articleRefs": [
+        "287",
+        "288",
+        "289",
+        "290"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olan ve olmayan",
+      "body": "Soru kökünde bu liste 'mutlak bozma nedeni' ya da 'mutlak temyiz nedeni' diye de geçer. Ezberle değil, listeyle karşılaştır.\n\nListede **olmayan**, ama sık şık yapılan hâller:\n- İddianamenin duruşmada okunmaması.\n- Yeminsiz dinlenmesi gereken tanığın yeminle dinlenmesi.\n- Kararın bilirkişi raporuyla çelişmesi.\n- Usulî bir sorunda azınlıkta kalan üyenin esasta oy kullanması.\n\nListede **olan**: Cumhuriyet savcısının yokluğunda duruşma yapılması.\n\nBir de şuna dikkat et: Sanık lehine konmuş bir kural çiğnenmiş ve sanık beraat etmiş olabilir. Bu aykırılık savcıya, hükmü sanık aleyhine bozdurma hakkı vermez.",
+      "articleRefs": [
+        "289",
+        "290"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Temyiz istemi, tebliğname ve ret",
+      "body": "- **Süre ve şekil:** Süre, hükmün gerekçesiyle birlikte tebliğinden itibaren **iki hafta**dır. Başvuru, hükmü veren mahkemeye dilekçe verilerek ya da zabıt kâtibine beyanla yapılır. Tutuklu sanık için 263 üncü madde saklıdır. Yokluğunda verilen hükümde eski hâle getirme için 274 üncü madde uygulanır.\n- **Etkisi:** Süresinde yapılan temyiz, hükmün kesinleşmesini engeller.\n- **İçerik:** Temyiz eden, hükmün neden bozulmasını istediğini **göstermek zorundadır**. Cumhuriyet savcısı, temyizin sanığın **yararına mı aleyhine mi** olduğunu açıkça belirtir. Temyiz sebebi ancak hükmün **hukukî yönüne** ilişkin olabilir.\n- **Hükmü veren mahkemece ret:** Hükmü temyiz olunan bölge adliye veya ilk derece mahkemesi şu hâllerde istemi reddeder:\n  - Süre geçmişse.\n  - Hüküm temyiz edilemezse.\n  - Temyiz edenin buna hakkı yoksa.\n  \n  Ret kararının tebliğinden itibaren iki hafta içinde Yargıtay'dan karar istenebilir. Bu nedenle hükmün infazı ertelenemez.\n- **Cevap ve tebliğname:**\n  - Karşı taraf, dilekçenin tebliğinden itibaren iki hafta içinde yazılı cevap verebilir. Dosya ardından Yargıtay Cumhuriyet Başsavcılığına gider.\n  - Tebliğname ilgili dairesince sanık veya müdafii ile katılan veya vekillerine tebliğ edilir. Bunun koşulu, hükmü temyiz etmiş olmaları ya da tebliğnamenin aleyhlerine görüş içermesidir.\n  - İlgili taraf, tebliğden itibaren iki hafta içinde yazılı cevap verebilir. Tebligat, dosyadaki son adrese yapılınca geçerlidir.\n- **Yargıtay'ın reddi:** Yargıtay şu hâllerde temyiz istemini reddeder:\n  - Başvuru süresinde yapılmamışsa.\n  - Hüküm temyiz edilemezse.\n  - Temyiz edenin hakkı yoksa.\n  - Dilekçe temyiz sebeplerini içermiyorsa.",
+      "articleRefs": [
+        "291",
+        "292",
+        "293",
+        "294",
+        "296",
+        "297",
+        "298"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yargıtay'da inceleme ve karar",
+      "body": "- **Duruşmalı inceleme:**\n  - Yalnız **on yıl veya daha fazla** hapis cezasına ilişkin hükümlerde yapılabilir, o da Yargıtay **uygun görürse**.\n  - Duruşma günü sanığa, katılana, müdafi ve vekile haber verilir.\n  - Sanık duruşmada hazır bulunabilir ya da kendini müdafiyle temsil ettirebilir.\n  - **Tutuklu sanık duruşmaya katılma isteminde bulunamaz.**\n- **Duruşmada usul:** Görevlendirilen üye veya tetkik hâkiminin raporu üyelere açıklanır. Üyeler dosyayı ayrıca bizzat inceler. Söz önce temyiz eden tarafa verilir; **son söz her hâlde sanığındır**.\n- **İncelemenin sınırı:** Yargıtay yalnız temyiz başvurusunda belirtilen hususları inceler. Temyiz istemi usule ilişkin noksanlardan kaynaklanıyorsa, başvuruda bunu belirten olayları da inceler.\n- **Sonuç:**\n  - Hüküm hukuka uygunsa temyiz istemi esastan reddedilir.\n  - Hükmü etkileyecek hukuka aykırılık varsa hüküm bozulur ve bozma sebepleri ilâmda ayrı ayrı gösterilir.\n  - Dilekçede açıklanmamış olsa da saptanan diğer aykırılıklar ilâmda yer alır.\n- **Esasa hükmetme veya düzeltme:** Bazı hâllerde Yargıtay davanın esasına hükmedebilir ya da aykırılığı düzeltebilir. Örnekler: yalnız kanunun madde numarasının yanlış yazılması, ceza hesabında maddî hata, iddiaya uygun olarak en alt derece cezanın uygun görülmesi.\n- **Hükmün açıklanması:** Hüküm 231 inci madde gereğince açıklanır. Buna olanak yoksa duruşmanın bitiminden itibaren **yedi gün** içinde karar verilir.",
+      "articleRefs": [
+        "299",
+        "300",
+        "301",
+        "302",
+        "303",
+        "305"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bozmadan sonra: diğer sanıklar, yeniden yargılama, direnme",
+      "body": "- **Diğer sanıklar:** Hüküm sanık lehine bozulmuş olabilir. Bozma gerekçesinin temyiz etmeyen diğer sanıklara da uygulanma olanağı varsa, onlar da temyiz etmiş gibi bozmadan **yararlanır**.\n- **Diyecekler:** Davaya yeniden bakacak bölge adliye veya ilk derece mahkemesi, ilgililere bozmaya karşı diyeceklerini sorar.\n- **Yoklukta bitirme:** Sanık, müdafii, katılan ve vekilinin dosyadaki adreslerine davetiye tebliğ olunamamış olabilir. Davetiyeye rağmen gelmemiş de olabilirler. Bu hâllerde dava **yokluklarında bitirilebilir**. Ancak verilecek ceza bozmaya konu cezadan ağırsa, sanık her hâlde dinlenir.\n- **Bozmaya uyma:** Bozmaya uyulursa ilk derece kararına karşı, istinaf veya temyiz sınırlarına bakılmaksızın **sadece temyiz** yoluna başvurulabilir.\n- **Direnme:** Bölge adliye veya ilk derece mahkemesinin bozmaya direnme hakkı vardır.\n  - Direnme kararı, kararına direnilen daireye gönderilir.\n  - Daire direnmeyi yerinde görürse kendi kararını düzeltir; görmezse dosyayı Yargıtay Ceza Genel Kuruluna gönderir.\n  - Ceza Genel Kurulunun direnme üzerine verdiği kararlara karşı direnilemez.\n- **Ceza sınırı:** Hüküm yalnız sanık tarafından ya da onun lehine temyiz edildiyse, yeni hüküm önceki cezadan ağır olamaz.",
+      "articleRefs": [
+        "306",
+        "307"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "İstinaf ve temyizde sayılar",
+      "rows": [
+        {
+          "label": "Bölge adliye mahkemesinin re'sen incelediği hükümler",
+          "value": "onbeş yıl ve daha fazla hapis",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "İstinafa kapalı adlî para cezası mahkûmiyeti",
+          "value": "onbeşbin Türk Lirası dâhil",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "İstinafa kapalı beraat (suçun adlî para cezası üst sınırı)",
+          "value": "beşyüz günü geçmeyen",
+          "refs": [
+            "272"
+          ]
+        },
+        {
+          "label": "Temyize kapalı esastan ret (ilk derecenin hapis cezası)",
+          "value": "beş yıl veya daha az",
+          "refs": [
+            "286"
+          ]
+        },
+        {
+          "label": "Temyize kapalı kararlar (suçun kanundaki üst sınırı)",
+          "value": "iki yıla kadar, iki yıl dâhil",
+          "refs": [
+            "286"
+          ]
+        },
+        {
+          "label": "Temyize kapalı beraat esastan reddi (suçun gerektirdiği ceza)",
+          "value": "on yıl veya daha az",
+          "refs": [
+            "286"
+          ]
+        },
+        {
+          "label": "Temyiz süresi (hükmün gerekçesiyle tebliğinden)",
+          "value": "iki hafta",
+          "refs": [
+            "291"
+          ]
+        },
+        {
+          "label": "Ret kararına karşı Yargıtay'dan karar isteme",
+          "value": "iki hafta",
+          "refs": [
+            "296"
+          ]
+        },
+        {
+          "label": "Temyiz dilekçesine karşı tarafın cevabı",
+          "value": "iki hafta",
+          "refs": [
+            "297"
+          ]
+        },
+        {
+          "label": "Tebliğnameye cevap",
+          "value": "iki hafta",
+          "refs": [
+            "297"
+          ]
+        },
+        {
+          "label": "Yargıtay'da duruşmalı inceleme yapılabilen hükümler",
+          "value": "on yıl veya daha fazla hapis",
+          "refs": [
+            "299"
+          ]
+        },
+        {
+          "label": "Hüküm açıklanamazsa Yargıtay'ın karar süresi",
+          "value": "duruşma bitiminden itibaren yedi gün",
+          "refs": [
+            "305"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "272",
+        "286",
+        "291",
+        "296",
+        "297",
+        "299",
+        "305"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "İstinaf ile temyiz yan yana",
+      "rows": [
+        {
+          "aspect": "Neye karşı",
+          "left": "İlk derece mahkemelerinin hükümleri",
+          "right": "Bölge adliye mahkemesi ceza dairelerinin bozma dışında kalan hükümleri",
+          "refs": [
+            "272",
+            "286"
+          ]
+        },
+        {
+          "aspect": "Kim inceler",
+          "left": "Bölge adliye mahkemesi",
+          "right": "Yargıtay",
+          "refs": [
+            "272",
+            "298"
+          ]
+        },
+        {
+          "aspect": "Başvuru nedeni",
+          "left": "Sanık ve katılan nedeni göstermese de inceleme yapılır; savcı göstermek zorunda",
+          "right": "Bozma nedeni gösterilmek zorunda; sebep yalnız hukukî yöne ilişkin",
+          "refs": [
+            "273",
+            "294"
+          ]
+        },
+        {
+          "aspect": "İnceleme kapsamı",
+          "left": "Usul ve esasa ilişkin aykırılık, deliller ve ispat değerlendirmesi incelenir; gerekirse dava yeniden görülür",
+          "right": "Yalnız hukuka aykırılık; bir hukuk kuralının uygulanmaması veya yanlış uygulanması",
+          "refs": [
+            "280",
+            "288"
+          ]
+        },
+        {
+          "aspect": "Duruşma",
+          "left": "Gerekirse dava yeniden görülür, duruşma hazırlığına başlanır",
+          "right": "On yıl veya daha fazla hapiste, Yargıtay uygun görürse",
+          "refs": [
+            "280",
+            "299"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "Gerekçeli hükmün tebliğinden iki hafta",
+          "right": "Gerekçeli hükmün tebliğinden iki hafta",
+          "refs": [
+            "273",
+            "291"
+          ]
+        },
+        {
+          "aspect": "Kesinleşmeye etkisi",
+          "left": "Süresinde başvuru kesinleşmeyi engeller",
+          "right": "Süresinde başvuru kesinleşmeyi engeller",
+          "refs": [
+            "275",
+            "293"
+          ]
+        },
+        {
+          "aspect": "Hükmü veren mahkemece ret",
+          "left": "İki hafta içinde bölge adliye mahkemesinden karar istenir",
+          "right": "İki hafta içinde Yargıtay'dan karar istenir",
+          "refs": [
+            "276",
+            "296"
+          ]
+        },
+        {
+          "aspect": "Ceza sınırı",
+          "left": "Yalnız sanık lehine başvuruda yeni hüküm daha ağır olamaz",
+          "right": "Yalnız sanık tarafından veya lehine temyizde yeni hüküm daha ağır olamaz",
+          "refs": [
+            "283",
+            "307"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "272",
+        "273",
+        "275",
+        "276",
+        "280",
+        "283",
+        "286",
+        "288",
+        "291",
+        "293",
+        "294",
+        "296",
+        "298",
+        "299",
+        "307"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "58",
+          "refs": [
+            "260",
+            "261",
+            "262",
+            "263",
+            "264",
+            "265",
+            "266",
+            "267",
+            "268",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "274",
+            "275",
+            "276",
+            "277",
+            "280",
+            "283",
+            "284",
+            "285",
+            "286",
+            "287",
+            "288",
+            "289",
+            "290",
+            "291",
+            "292",
+            "293",
+            "294",
+            "296",
+            "297",
+            "298",
+            "299",
+            "300",
+            "301",
+            "302",
+            "303",
+            "305",
+            "306",
+            "307"
+          ]
+        },
+        {
+          "label": "md 268 — İtiraz usulü ve inceleme mercileri",
+          "value": "7 soru",
+          "refs": [
+            "268"
+          ]
+        },
+        {
+          "label": "md 286 — Temyiz",
+          "value": "6 soru",
+          "refs": [
+            "286"
+          ]
+        },
+        {
+          "label": "md 273 — İstinaf istemi ve süresi",
+          "value": "5 soru",
+          "refs": [
+            "273"
+          ]
+        },
+        {
+          "label": "md 267 — İtiraz olunabilecek kararlar",
+          "value": "4 soru",
+          "refs": [
+            "267"
+          ]
+        },
+        {
+          "label": "md 283 — Sanık lehine başvurma hâlinde verilecek hüküm",
+          "value": "4 soru",
+          "refs": [
+            "283"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 262, md 263, md 269, md 270, md 274, md 275, md 277, md 280, md 284, md 287, md 292, md 293, md 298, md 300, md 301, md 302, md 303, md 305",
+          "refs": [
+            "260",
+            "261",
+            "262",
+            "263",
+            "264",
+            "265",
+            "266",
+            "267",
+            "268",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "274",
+            "275",
+            "276",
+            "277",
+            "280",
+            "283",
+            "284",
+            "285",
+            "286",
+            "287",
+            "288",
+            "289",
+            "290",
+            "291",
+            "292",
+            "293",
+            "294",
+            "296",
+            "297",
+            "298",
+            "299",
+            "300",
+            "301",
+            "302",
+            "303",
+            "305",
+            "306",
+            "307"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "260",
+        "261",
+        "262",
+        "263",
+        "264",
+        "265",
+        "266",
+        "267",
+        "268",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273",
+        "274",
+        "275",
+        "276",
+        "277",
+        "280",
+        "283",
+        "284",
+        "285",
+        "286",
+        "287",
+        "288",
+        "289",
+        "290",
+        "291",
+        "292",
+        "293",
+        "294",
+        "296",
+        "297",
+        "298",
+        "299",
+        "300",
+        "301",
+        "302",
+        "303",
+        "305",
+        "306",
+        "307"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "260",
+        "261",
+        "262",
+        "263",
+        "264",
+        "265",
+        "266",
+        "267",
+        "268",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273",
+        "274",
+        "275",
+        "276",
+        "277",
+        "280",
+        "283",
+        "284",
+        "285",
+        "286",
+        "287",
+        "288",
+        "289",
+        "290",
+        "291",
+        "292",
+        "293",
+        "294",
+        "296",
+        "297",
+        "298",
+        "299",
+        "300",
+        "301",
+        "302",
+        "303",
+        "305",
+        "306",
+        "307"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 260–294, 296–307, 10 soru",
+          "refs": [
+            "260",
+            "261",
+            "262",
+            "263",
+            "264",
+            "265",
+            "266",
+            "267",
+            "268",
+            "269",
+            "270",
+            "271",
+            "272",
+            "273",
+            "274",
+            "275",
+            "276",
+            "277",
+            "280",
+            "283",
+            "284",
+            "285",
+            "286",
+            "287",
+            "288",
+            "289",
+            "290",
+            "291",
+            "292",
+            "293",
+            "294",
+            "296",
+            "297",
+            "298",
+            "299",
+            "300",
+            "301",
+            "302",
+            "303",
+            "305",
+            "306",
+            "307"
+          ]
+        }
+      ]
+    }
+  ]
+}

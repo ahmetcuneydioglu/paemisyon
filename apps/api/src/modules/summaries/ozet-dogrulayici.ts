@@ -95,26 +95,38 @@ export const stripAmendmentNotes = (t: string): string =>
 
 /** Sayı, metinlerden birinde rakam ya da Türkçe sözcük olarak geçiyor mu. */
 export function numberInTexts(n: number, texts: string[]): boolean {
-  const joined = texts.map(stripAmendmentNotes).join('\n');
+  const joined = binlikAyracSil(texts.map(stripAmendmentNotes).join('\n'));
   if (new RegExp(`(^|[^\\d])${n}([^\\d]|$)`).test(joined)) return true;
   const w = trNumberPattern(n);
   if (!w) return false;
   // Önünde harf ya da başka bir sayı sözcüğü olmasın ("on beş" içindeki "beş" 5 sayılmaz);
   // arkasında Türkçe ek olabilir ("beşini", "altısı"), ama takip eden parça bütün bir sayı
   // sözcüğü olmasın ("onbeş" içindeki "on" 10 sayılmaz; "beş birleşim"deki "bir" sayı değildir).
-  const oncesi = `(?<![a-zçğıöşü])(?<!(?:${SAYI_PARCALARI})\\s?)`;
+  // Öndeki sayı sözcüğü kendisi de sözcük başı olmalı: "son beş yıl"daki "son" bir "on" değildir.
+  const oncesi = `(?<![a-zçğıöşü])(?<!(?<![a-zçğıöşü])(?:${SAYI_PARCALARI})\\s?)`;
   const sonrasi = `(?!\\s?(?:${SAYI_PARCALARI})(?:[ıiuü]|[ıiuü]n[ıiuü]|[dt][ea]n|[ea]|inci|üncü|ıncı|uncu|er|ar|şer|şar)?(?![a-zçğıöşü]))`;
   return new RegExp(`${oncesi}${w}${sonrasi}`).test(joined.toLowerCase());
 }
 
+/** "13.000" → "13000", "50.000 – 300.000" → "50000 – 300000": binlik ayracı sayının parçasıdır, 0 değildir. */
+export const binlikAyracSil = (t: string): string => t.replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
+
+const MD_NO = '\\d+(?:\\/[\\dA-ZÇĞİÖŞÜ]+)?'; // "84", "84/2", "4/A"
+
 /** Kart metnindeki sayılar; liste numarası, madde atfı ve fıkra kesri sayı sayılmaz. */
 export function extractNumbers(text: string): number[] {
-  const t = text
+  const t = binlikAyracSil(text)
     .replace(/(^|\n)\s*\d+\.\s/g, '$1 ') // liste numarası: "1. ", "2. "
     .replace(/\bmd\.?\s*(ek|geçici)\s*\d+/gi, ' ') // madde atfı: "md Ek 6", "md Geçici 2"
     .replace(/\b(ek|geçici)\s+(madde\s+)?\d+(\s*[–-]\s*\d+)?/gi, ' ') // "Ek 6", "Geçici 2", "ek madde 7", "Ek 1–3"
-    .replace(/\bmd\.?\s*\d+(\/[\dA-ZÇĞİÖŞÜ]+)?(\s*[–-]\s*\d+)?/gi, ' ') // "md 84", "md 84/2", "md 4/A", "md 1–6"
-    .replace(/\b\d+(\/[\dA-ZÇĞİÖŞÜ]+)?\.\s*madde/gi, ' ') // "84. madde", "84/2. madde", "4/A. madde"
+    // "md 84", "md 84/2", "md 4/A", "md 1–6", "md 100 ve 101", "md 128, 130 ve 134"
+    .replace(new RegExp(`\\bmd\\.?\\s*${MD_NO}(\\s*(?:,|ve|–|-)\\s*${MD_NO})*`, 'gi'), ' ')
+    .replace(new RegExp(`\\bmadde\\s+${MD_NO}`, 'gi'), ' ') // "Madde 94'te"
+    .replace(new RegExp(`\\b${MD_NO}\\.\\s*madde`, 'gi'), ' ') // "84. madde", "84/2. madde", "4/A. madde"
+    .replace(
+      new RegExp(`\\b${MD_NO}\\s*(?:inci|nci|uncu|üncü|ıncı|ncı|ncu|ncü)\\s*madde`, 'gi'),
+      ' ',
+    ) // "139 uncu madde"
     .replace(/\b\d+\/[\dA-ZÇĞİÖŞÜ]+\b/g, ' '); // fıkra kesri ve harfli madde ("4/A")
   const out = new Set<number>();
   for (const m of t.matchAll(/\d+/g)) out.add(Number(m[0]));
@@ -161,8 +173,8 @@ export function normalizeCounterNumbers(v: unknown): number[] {
     )
     .filter((n) => Number.isFinite(n));
 }
-/** Formül işlenenlerinden metinde aranmayan sabitler (yarı, yüzde, +1). */
-const SERBEST_ISLENEN = new Set([1, 2, 100]);
+/** Formül işlenenlerinden metinde aranmayan sabitler (yarı, yüzde, +1, haftanın 7 günü). */
+const SERBEST_ISLENEN = new Set([1, 2, 7, 100]);
 
 /**
  * Tek kartı doğrular. `articles`: madde no → metin (ünitenin mevzuatındaki TÜM maddeler;

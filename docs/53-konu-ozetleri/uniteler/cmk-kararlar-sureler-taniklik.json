@@ -1,0 +1,652 @@
+{
+  "unit": {
+    "slug": "cmk-kararlar-sureler-taniklik",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Kararlar, süreler ve tanıklık",
+    "subtitle": "Kararın gerekçesi ve tebliği, sürelerin hesabı, eski hâle getirme, tanıklıktan çekinme, yemin ve disiplin hapsi",
+    "articleFrom": "34",
+    "articleTo": "61",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 34–38, 38/A, 39–61",
+    "articleNos": [
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "38/A",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 3
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Karar, süre, tanık: aynı zincirin halkaları",
+      "body": "Bu ünitede bir kararın yolculuğunu izliyorsun. Hâkim ya da mahkeme kararını gerekçeli yazar ve kanun yolunu, süresini, merciini, şeklini kararda gösterir. Karar ilgilisine ya yüzüne karşı açıklanır ya da tebliğ edilir. Tebliğle süre işlemeye başlar. Süreyi kusuru olmadan kaçıran kişi için eski hâle getirme kapısı açıktır. Ünitenin devamında tanık var: nasıl çağrılır, kim çekinebilir, kim yeminsiz dinlenir, susan tanığa ne olur.",
+      "articleRefs": [
+        "34",
+        "35",
+        "39",
+        "40",
+        "43",
+        "45",
+        "50"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kararlar ve tebligat (md 34–38)",
+      "body": "**Gerekçe (md 34):** Hâkim ve mahkemelerin her türlü kararı, **karşı oy dahil**, gerekçeli yazılır. Karar örneklerinde karşı oylar da gösterilir. Kararda başvurulabilecek **kanun yolu, süresi, mercii ve şekilleri** belirtilir.\n\n**Açıklama ve tebliğ (md 35):** Yüzüne karşı verilen karar ilgiliye açıklanır. İlgili isterse kararın örneği de verilir. Aleyhine kanun yoluna başvurulabilecek kararlar, hazır bulunamayan ilgilisine tebliğ olunur. **Koruma tedbirlerine ilişkin olanlar bunun dışındadır.** Serbest olmayan kişiye veya tutukluya tebliğ edilen karar, kendisine okunup anlatılır.\n\n**Yazışma (md 36):** Her türlü tebligatı ve yazışmayı mahkeme başkanı veya hâkim yapar. **İnfaz edilecek kararlar Cumhuriyet Başsavcılığına verilir.**\n\n**Usul (md 37):** Tebligat, bu Kanundaki özel hükümler saklı kalmak koşuluyla ilgili kanuna göre yapılır. Uluslararası andlaşma kabul ediyorsa yurt dışına tebligat, iadeli taahhütlü posta veya diğer iletişim araçlarıyla yapılır.\n\n**Başsavcılığa tebligat (md 38):** Evrakın **aslı** verilerek yapılır. Tebliğle bir süre işlemeye başlıyorsa, verildiği gün Başsavcılıkça evrakın aslına yazılır.",
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Elektronik işlemler: UYAP (md 38/A)",
+      "body": "**UYAP zorunludur:** Her türlü ceza muhakemesi işleminde UYAP kullanılır. Veri, belge ve kararlar UYAP vasıtasıyla işlenir, kaydedilir ve saklanır.\n- Kanunlardaki istisnalar hariç, dosya **güvenli elektronik imza** ile UYAP'tan incelenebilir ve her işlem yapılabilir.\n- Fiziki hazırlanması öngörülen belge ve kararlar elektronik ortamda düzenlenebilir ve güvenli elektronik imzayla imzalanabilir.\n- E-imzalı belge elektronik ortamda gönderilir. Gerekmedikçe ayrıca fiziki olarak düzenlenmez.\n- **Çelişme hâli:** E-imzalı belge elle imzalı belgeyle çelişirse **UYAP'ta kayıtlı güvenli elektronik imzalı belge** geçerlidir.\n- E-imzalı belgede **mühürleme** hükümleri ve **birden fazla nüsha** öngören hükümler **uygulanmaz**.\n- Zorunlu nedenle fiziki düzenlenen belge, yetkili kişilerce taranarak UYAP'a aktarılır.\n- Fiziki örnek gerekirse, aslının aynı olduğu belirtilir. Örneği hâkim, Cumhuriyet savcısı veya görevlendirilen yetkili kişi imzalar ve mühürler.\n- **Süre:** Elektronik ortamda yapılan işlemlerde süre **gün sonunda** biter.\n- Nüfus, tapu, adlî sicil gibi kayıtlar UYAP'tan alınıyorsa, zorunlu olmadıkça fiziki olarak istenmez.\n- Usul ve esaslar **Adalet Bakanlığı yönetmeliğiyle** düzenlenir.",
+      "articleRefs": [
+        "38/A"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "UYAP'ta ters çevrilen cümleler",
+      "body": "Bu maddede soru kökü çoğunlukla “hangisi yanlıştır?” der. Yanlış şık, doğru cümle tersine çevrilerek kurulur:\n- **Mühürleme ve çoklu nüsha** hükümleri e-imzalı belgede uygulanMAZ. “Uygulanır” diyen şık yanlıştır.\n- E-imzalı belge ile elle imzalı belge çelişirse **UYAP'taki e-imzalı belge** geçerlidir. “Elle atılan imzalı belge geçerli” diyen şık yanlıştır.\n- Elektronik işlemde süre **gün sonunda** biter. “Mesai saati bitiminde” ya da “sonraki iş gününün başında” diyen şık seni md 39'daki kâğıt üstü süre kuralıyla karıştırmaya çalışır.",
+      "articleRefs": [
+        "38/A",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Sürelerin hesaplanması (md 39)",
+      "body": "**Başlangıç:** Gün ile belirlenen süreler, tebligatın yapıldığının **ertesi günü** işlemeye başlar.\n\n**Hafta:** Süre, tebligatın yapıldığı günün son haftada **isim itibarıyla** karşılığı olan günün **mesai saati bitiminde** sona erer. Pazartesi tebliğ edildiyse süre son haftanın Pazartesi'sinde biter.\n\n**Ay:** Süre, tebligatın yapıldığı günün son ayda **sayı itibarıyla** karşılığı olan günün mesai saati bitiminde sona erer. Son ayda o gün yoksa süre **ayın son günü** mesai saati bitiminde sona erer.\n\n**Tatil:** Son gün bir tatile rastlarsa süre **tatilin ertesi günü** biter.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Süre hesabında kurman gereken refleksler",
+      "body": "Bu maddeden hesap sorusu çok gelir. Şu kontrolleri sırayla yap:\n- Gün süresi tebliğ günü değil, **ertesi gün** başlar. “Tebligatın yapıldığı gün işlemeye başlar” diyen şık yanlıştır.\n- Haftalık sürede **gün adı**, aylık sürede **ayın gün sayısı** eşleşir. Haftalık süreyi gün sayarak hesaplatan ya da “ilk Pazartesi” diyen şıklar tuzaktır.\n- Ay sonunda karşılık yoksa süre o ayın son gününde biter. Örneğin tebliğ Ocak'ın son günü yapıldıysa süre **Şubat'ın son günü** mesai bitiminde biter. Mart'a taşmaz.\n- Bitiş anı **mesai saati bitimidir**. Gece yarısı ya da günün başı değildir.\n- Son gün tatilse süre **tatilin ertesi günü** biter. Süre tatilde durmaz, kendiliğinden uzamaz, tatilden önceki iş gününe de çekilmez.",
+      "articleRefs": [
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Eski hâle getirme (md 40–42)",
+      "body": "**Kim isteyebilir (md 40):** Kusuru olmaksızın bir süreyi geçirmiş olan kişi. Kanun yoluna başvuru hakkı kendisine bildirilmemişse kişi **kusursuz sayılır**.\n\n**Dilekçe (md 41):** Dilekçe, engelin kalkmasından itibaren **iki hafta** içinde verilir. Dilekçenin verileceği yer, süreye uyulsaydı usul işlemlerini yapacak olan mahkemedir. Dilekçe sahibi kusursuzluğunu gösteren olguları, varsa belgeleriyle açıklar. Yapılamayan usul işlemi de dilekçe verildiği anda yerine getirilir.\n\n**Karar (md 42):** Süresinde işlem yapılsaydı esasa hangi mahkeme hükmedecek idiyse, dilekçe hakkında da o mahkeme karar verir.\n- **Kabul kararı kesindir.**\n- **Ret kararına karşı itiraz** yoluna gidilebilir.\n- Dilekçe kararın yerine getirilmesini **durdurmaz**. Ancak mahkeme yerine getirmeyi **erteleyebilir**.",
+      "articleRefs": [
+        "40",
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Süreler tablosu: tebliğden eski hâle getirmeye",
+      "rows": [
+        {
+          "label": "Gün ile belirlenen sürenin başlangıcı",
+          "value": "Tebligatın yapıldığının ertesi günü",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Hafta ile belirlenen sürenin bitişi",
+          "value": "Son haftada isim itibarıyla karşılık olan gün, mesai saati bitimi",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Ay ile belirlenen sürenin bitişi",
+          "value": "Son ayda sayı itibarıyla karşılık olan gün, mesai saati bitimi",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Ay sonunda karşılık gün yoksa",
+          "value": "Ayın son günü, mesai saati bitimi",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Son gün tatile rastlarsa",
+          "value": "Tatilin ertesi günü",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "Elektronik ortamda yapılan işlemde süre",
+          "value": "Gün sonunda biter",
+          "refs": [
+            "38/A"
+          ]
+        },
+        {
+          "label": "Eski hâle getirme dilekçesi",
+          "value": "Engelin kalkmasından itibaren 2 hafta",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Eski hâle getirme kabul kararı",
+          "value": "Kesin",
+          "refs": [
+            "42"
+          ]
+        },
+        {
+          "label": "Eski hâle getirme ret kararı",
+          "value": "İtiraz yolu açık",
+          "refs": [
+            "42"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "38/A",
+        "39",
+        "41",
+        "42"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanığın çağrılması ve gelmeyen tanık (md 43–44)",
+      "body": "**Çağrı (md 43):** Tanıklar **çağrı kâğıdı** ile çağrılır. Çağrı kâğıdında gelmemenin sonuçları bildirilir.\n- Çağrı telefon, telgraf, faks, elektronik posta ile de yapılabilir. **Ancak çağrı kâğıdına bağlanan sonuçlar bu durumda uygulanmaz.**\n- **Tutuklu işlerde** tanık için zorla getirme kararı verilebilir. Karar yazısında bu yoldan getirilmenin nedenleri gösterilir.\n- Mahkeme, duruşma sırasında hemen dinlenmesi gereken tanığın hazır bulundurulmasını görevlilere yazılı olarak emredebilir.\n- **Cumhurbaşkanı** kendi takdiriyle tanıklıktan çekinebilir. Tanıklık yapmak isterse beyanı konutunda alınabilir ya da beyanını yazılı gönderebilir.\n- Bu hükümler, kişi ancak **Cumhuriyet savcısı, hâkim veya mahkeme önünde** tanık olarak dinlenecekse uygulanır.\n\n**Çağrıya uymama (md 44):** Usulüne uygun çağrılıp **mazeretini bildirmeden gelmeyen** tanık **zorla getirilir**. Sebep olduğu giderler kamu alacaklarının tahsili usulüne göre ödettirilir.\n- Tanık sonradan haklı sebep bildirirse aleyhine hükmedilen giderler kaldırılır.\n- İletişim bilgileri dosyada varsa, zorla getirme kararı telefon, e-posta gibi araçlarla da bildirilir.\n- **Fiilî hizmetteki askerler** için zorla getirme kararı **askerî makamlar** aracılığıyla infaz olunur.",
+      "articleRefs": [
+        "43",
+        "44"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakınlık nedeniyle tanıklıktan çekinme (md 45)",
+      "body": "**Çekinebilecekler (md 45/1).** Şüpheli veya sanığın:\n1. Nişanlısı\n2. **Evlilik bağı kalmasa bile** eşi\n3. Kan veya kayın hısımlığından üstsoyu veya altsoyu\n4. **Üçüncü derece dahil kan** ve **ikinci derece dahil kayın** hısımları\n5. Kendisiyle arasında evlâtlık bağı bulunanlar\n\n**Önemini anlayamayanlar (md 45/2):** Yaş küçüklüğü, akıl hastalığı veya akıl zayıflığı nedeniyle çekinmenin önemini anlayamayanlar, **kanunî temsilcinin rızasıyla** dinlenebilir. Kanunî temsilci şüpheli veya sanıksa, çekinme konusunda karar veremez.\n\n**Bildirim (md 45/3):** Çekinme hakkı kişiye dinlenmeden **önce** bildirilir. Kişi **dinlenirken de her zaman** çekinebilir.",
+      "articleRefs": [
+        "45"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çekinme listesi kapalıdır",
+      "body": "Şıklarda listeye benzeyen ama listede olmayan ilişkiler karşına çıkar:\n- **İş yerindeki amir** ya da **ticari ortak** md 45'te sayılmaz. Bu kişiler yakınlık nedeniyle tanıklıktan çekinemez.\n- **Boşanmış eş** çekinebilir. “Evlilik bağı kalmasa bile” ibaresi tam olarak bu durumu kapsar.\n- Nişanlı ve evlâtlık bağı listede açıkça yer alır. Bunları “sayılmamıştır” diye işaretleme.\n- Çekinme hakkı, çağrıya gelmeme hakkı değildir. md 44, usulüne uygun çağrılıp mazeretsiz gelmeyen tanığı zorla getirtir ve çekinebilenler için ayrı bir istisna öngörmez. Bu hak kişiye dinlenmeden önce bildirilir ve dinlenme sırasında kullanılır. “Çekinme hakkı olanın hazır bulunma yükümlülüğü yoktur” diyen şık yanlıştır.",
+      "articleRefs": [
+        "44",
+        "45"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Meslek ve sürekli uğraşı nedeniyle çekinme (md 46)",
+      "body": "**Konu ve koşul (md 46/1):** Çekinme yalnız **bu sıfatla öğrenilen** bilgiler için geçerlidir.\n- **a)** Avukatlar, stajyerleri ve yardımcıları: bu sıfatları dolayısıyla veya yüklendikleri yargı görevi sebebiyle öğrendikleri bilgiler.\n- **b)** Hekimler, diş hekimleri, eczacılar, ebeler, bunların yardımcıları ve diğer bütün tıp meslek veya sanatları mensupları: hastaları ve hastaların yakınları hakkında öğrendikleri bilgiler.\n- **c)** Malî işlerde görevlendirilmiş müşavirler ve noterler: hizmet verdikleri kişiler hakkında öğrendikleri bilgiler.\n\n**Rıza istisnası (md 46/2):** (a) bendi **dışındaki** kişiler, ilgilinin rızası varsa tanıklıktan **çekinemez**. Rıza olsa bile çekinebilen tek grup **avukatlar**dır.",
+      "articleRefs": [
+        "46"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Devlet sırrı ve tanıklık (md 47)",
+      "body": "**İlke:** Bir suç olgusuna ilişkin bilgiler, Devlet sırrı olarak **mahkemeye karşı gizli tutulamaz**.\n\n**Tanım:** Açıklanması Devletin dış ilişkilerine, milli savunmasına ve milli güvenliğine zarar verebilecek bilgiler Devlet sırrıdır. Anayasal düzeni ve dış ilişkileri tehlikeye sokabilecek bilgiler de bu kapsamdadır.\n\n**Dinleme biçimi:** Tanık sadece mahkeme hâkimi veya heyeti tarafından, **zâbıt kâtibi dahi olmaksızın** dinlenir. Hâkim veya mahkeme başkanı daha sonra **yalnız yüklenen suçu açıklığa kavuşturabilecek** bilgileri tutanağa kaydettirir.\n\n**Uygulama alanı:** Hüküm, hapis cezasının **alt sınırı beş yıl veya daha fazla** olan suçlarda uygulanır.\n\n**Cumhurbaşkanı:** Sırrın niteliğini ve mahkemeye bildirilip bildirilmeyeceğini kendisi takdir eder.",
+      "articleRefs": [
+        "47"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Meslek sırrı ve Devlet sırrında yanlış şıklar",
+      "body": "- “İzin verilse bile çekinebilen kim?” sorusunun cevabı **avukattır**. Hekim, eczacı, müşavir ve noter, ilgilinin rızası varsa çekinemez.\n- “Meslek nedeniyle çekinebilenler arasında hangisi yoktur?” sorusunda dikkat et: listede **hâkim**, memur ya da kolluk görevlisi diye bir grup yoktur. Avukat, sağlık mensubu, mali müşavir ve noter ise listededir.\n- Devlet sırrı tanıklığında oturumda **zâbıt kâtibi de bulunmaz**. “Heyet ve zabıt kâtibi dinler” diyen şık yanlıştır.\n- Tutanağa anlatılanların tamamı geçmez, yalnız suçu aydınlatan kısım geçer. “Tutanağa hiç geçirilmez” diyen şık da yanlıştır.\n- Eşik suç türüne göre değil, ceza sınırına göre belirlenir: **alt sınırı beş yıl veya daha fazla hapis**. “Şikâyete bağlı”, “uzlaştırmaya tabi” gibi kategoriler tuzaktır.",
+      "articleRefs": [
+        "46",
+        "47"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruya cevaptan çekinme ve yeminsiz tanıklar (md 48–51)",
+      "body": "**Kendini veya yakınını suçlama (md 48):** Tanık, kendisini veya md 45/1'deki kişileri ceza kovuşturmasına uğratabilecek **sorulara** cevap vermekten çekinebilir. Bu hak tanığa önceden bildirilir.\n\n**Sebebin bildirilmesi (md 49):** Mahkeme başkanı, hâkim veya Cumhuriyet savcısı gerekli görürse, tanık md 45, 46 ve 48'deki çekinmesinin dayanağı olan olguları bildirir. Gerektiğinde bu konuda tanığa yemin verdirilir.\n\n**Yeminsiz dinlenenler (md 50):**\n- a) Dinlenme sırasında **onbeş yaşını doldurmamış** olanlar\n- b) Ayırt etme gücüne sahip olmadığı için yeminin niteliğini ve önemini kavrayamayanlar\n- c) Soruşturma veya kovuşturma konusu suça **iştirakten** şüpheli, sanık veya hükümlü olanlar. Aynı suç nedeniyle **suçluyu kayırmaktan** ya da **suç delillerini yok etme, gizleme veya değiştirmekten** şüpheli, sanık veya hükümlü olanlar da bu bende girer.\n\n**Çekinmeyen yakın (md 51):** md 45'e göre çekinebilecek kişi tanıklık ederse, ona yemin verip vermemek **hâkim veya mahkemenin takdirindedir**. Tanık yemin etmekten **çekinebilir** ve bu hakkı kendisine bildirilir.",
+      "articleRefs": [
+        "48",
+        "49",
+        "50",
+        "51"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yemin verilmez mi, takdir mi?",
+      "body": "- Yeminsiz dinlenmede yaş sınırı **onbeş**tir ve ölçüt **dinlenme anıdır**. Onbeş yaşını doldurmuş ama 18 yaşını doldurmamış tanık yeminsiz dinlenmez. Kural olarak yemin eder. “Reşit olmayan herkes yeminsiz dinlenir” mantığı tuzaktır.\n- Yakınlık nedeniyle çekinebilen ama çekinmeyen tanık için “yemin verilmez” demek yanlıştır. Nişanlı, eş veya hısım bu gruptadır. Bu tanığa yemin vermek **hâkimin takdirindedir** ve tanığın yeminden çekinme hakkı vardır.\n- İştirak, kayırma veya delil karartma nedeniyle şüpheli, sanık ya da hükümlü olan kişi **yeminsiz** dinlenir. Bu kişiler tanıklıktan dışlanmaz, yalnızca yemin vermezler.",
+      "articleRefs": [
+        "50",
+        "51",
+        "54"
+      ],
+      "counterNumbers": [
+        18
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tanığın dinlenmesi ve yemin (md 52–57)",
+      "body": "**Dinleme (md 52):** Her tanık **ayrı ayrı** ve sonraki tanıklar yanında olmadan dinlenir. Kovuşturma evresine kadar tanıklar birbirleriyle ve şüpheliyle yalnız iki hâlde yüzleştirilebilir: **gecikmesinde sakınca** varsa veya **kimliğin belirlenmesi** gerekiyorsa.\n- Görüntü ve ses kaydı **alınabilir**.\n- Kayıt şu kişilerin tanıklığında **zorunludur**: **mağdur çocuklar** ile duruşmaya getirilmesi mümkün olmayan ve tanıklığı maddî gerçek için zorunlu olan kişiler.\n- Bu kayıtlar sadece ceza muhakemesinde kullanılır.\n\n**Tanığa anlatılacaklar (md 53):** Gerçeği söylemenin önemi, söylemezse yalan tanıklık suçundan cezalandırılacağı, yemin edeceği ve izinsiz salonu terk edemeyeceği.\n\n**Yemin (md 54):** Tanıklar tanıklıktan **önce, ayrı ayrı** yemin eder. Gerektiğinde veya kişinin tanık olarak dinlenmesinin uygunluğunda tereddüt varsa yemin **sonraya** bırakılabilir. Soruşturma evresinde **Cumhuriyet savcıları da** yemin verir.\n\n**Biçim (md 55):** Tanıklıktan önce: “Bildiğimi dosdoğru **söyleyeceğime** namusum ve vicdanım üzerine yemin ederim.” Tanıklıktan sonra: “Bildiğimi dosdoğru **söylediğime** namusum ve vicdanım üzerine yemin ederim.” Yemin edilirken **herkes ayağa kalkar**.\n\n**Yerine getirme (md 56):** Tanık, yemini yüksek sesle tekrar ederek veya okuyarak eder. Okuma yazma bilen sağır veya dilsiz, yemin biçimini **yazıp imzalayarak** yemin eder. Okuma yazma bilmeyen sağır veya dilsiz, işaretlerinden anlayan tercüman aracılığıyla **işaretle** yemin eder.\n\n**Tekrar dinleme (md 57):** Aynı evrede tanık yeniden dinlenirse yeni yemin şart değildir. Önceki yeminin hatırlatılmasıyla yetinilebilir.",
+      "articleRefs": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Çağrı, kayıt ve yemin verdirme yetkisi",
+      "body": "- Telefon, faks veya e-postayla yapılan çağrı **geçerlidir**, ama çağrı kâğıdına bağlanan sonuçlar **uygulanmaz**. “Sonuçlar bu durumda da uygulanır” diyen şık yanlıştır.\n- Kayıt zorunluluğu **mağdur çocuklar** ve duruşmaya getirilemeyen zorunlu tanıklar içindir. “Cinsel saldırı mağdurlarında kayıt zorunludur” gibi genellemeler metinde yoktur.\n- Tanığa yemin verdiren hâkim veya mahkemedir. Soruşturma evresinde **Cumhuriyet savcısı da** yemin verir. Bu yetki metinde kolluk amirine tanınmamıştır.\n- Yemin sırasında ayağa kalkma kuralı **herkes** içindir. “Yalnız tanık kalkar” diye daraltan şıkka dikkat et.",
+      "articleRefs": [
+        "43",
+        "52",
+        "54",
+        "55"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İlk sorular, tanığın korunması ve dinleme akışı (md 58–59)",
+      "body": "**İlk sorular (md 58/1):** Tanığa adı, soyadı, yaşı, işi, yerleşim yeri, işyerinin veya geçici olarak oturduğu yerin adresi ve varsa telefonları sorulur. Gerekirse güvenilirliğini aydınlatan sorular da sorulur, özellikle şüpheli, sanık veya mağdurla ilişkisi.\n\n**Kimliğin saklı tutulması (md 58/2):** Kimliğin ortaya çıkması tanık veya yakınları için **ağır bir tehlike** oluşturacaksa gerekli önlemler alınır. Kimliği saklı tutulan tanık, olayları **hangi sebep ve vesileyle** öğrendiğini açıklamak zorundadır. Kişisel bilgileri **Cumhuriyet savcısı, hâkim veya mahkeme** muhafaza eder.\n\n**Hazır bulunanlar olmadan dinleme (md 58/3):** Bu yol iki hâlde açıktır: huzurda dinlenme tanık için başka türlü önlenemeyen ağır bir tehlike yaratacaksa ya da maddî gerçeğin ortaya çıkarılmasını tehlikeye sokacaksa. Bu durumda hâkim, tanığı hazır bulunma hakkı olanlar olmadan dinleyebilir. Dinleme sırasında **ses ve görüntülü aktarma** yapılır ve **soru sorma hakkı saklıdır**.\n\n**Tanıklık sonrası (md 58/4):** Kimliğin saklı tutulması ve güvenlik önlemleri ilgili kanunda düzenlenir.\n\n**Uygulama alanı (md 58/5):** Bu korumalar **yalnız bir örgütün faaliyeti çerçevesinde işlenen suçlarda** uygulanır.\n\n**Dinleme akışı (md 59):** Tanığa olay hakkında bilgi verilir ve hazır olan sanık gösterilir. Sanık hazır değilse kimliği açıklanır. Tanık bildiklerini anlatırken **sözü kesilmez**. Konuyu aydınlatmak için tanığa ayrıca soru yöneltilebilir.",
+      "articleRefs": [
+        "58",
+        "59"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Disiplin hapsi ve tanık tazminatı (md 60–61)",
+      "body": "**Disiplin hapsi (md 60):** Yasal bir sebep olmadan **tanıklıktan veya yeminden** çekinen tanık hakkında, giderlere de hükmedilerek disiplin hapsi verilebilir. Süresi **dava hakkında hüküm verilinceye kadardır ve her hâlde üç ayı geçemez**.\n- Tanık yükümlülüğünü yerine getirirse **derhâl serbest** bırakılır.\n- Bu tedbirleri almaya naip hâkim, istinabe olunan mahkeme ve **soruşturma evresinde sulh ceza hâkimi** yetkilidir.\n- Süreler tümüyle uygulandıktan sonra tedbir, o dava veya aynı işe ilişkin diğer davada **tekrar edilmez**.\n- Karara **itiraz edilebilir**.\n\n**Tazminat (md 61):** Cumhuriyet savcısı, mahkeme başkanı veya hâkim tarafından çağrılan tanığa tazminat verilir. Tazminat, Adalet Bakanlığınca her yıl hazırlanan tarifeye göre ve kaybettiği zamanla orantılı olarak belirlenir. Tanık seyahat etmek zorunda kaldıysa yol, ikamet ve beslenme giderleri de karşılanır. Ödeme **vergi, resim ve harç alınmaksızın** yapılır.",
+      "articleRefs": [
+        "60",
+        "61"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gelmeyen tanık ile konuşmayan tanık aynı değil",
+      "body": "- **Mazeretsiz gelmeyen** tanığa md 44 uygulanır: zorla getirme ve giderler. Bu durumda disiplin hapsi **yoktur**.\n- **Gelip de** yasal sebep olmadan tanıklıktan veya yeminden çekinen tanığa md 60 uygulanır: giderler ve disiplin hapsi. Disiplin hapsinin azami süresi **üç aydır**. “Yedi gün”, “altı ay” ya da “süresiz” diyen şıklar tuzaktır.\n- Soruşturma evresinde disiplin hapsine **sulh ceza hâkimi** karar verir. Cumhuriyet savcısı ve kolluk amiri bu konuda yetkili değildir.\n- Tanık yükümlülüğünü yerine getirirse **derhâl serbest** bırakılır. “Yine de infaz edilir” diyen şık yanlıştır.\n- Karara **itiraz edilebilir**. “İtiraz edilemez” diyen şık yanlıştır.\n- Kimliği saklı tutulan tanığın kişisel bilgilerini **kolluk** muhafaza etmez. Bu bilgileri Cumhuriyet savcısı, hâkim veya mahkeme muhafaza eder.",
+      "articleRefs": [
+        "44",
+        "58",
+        "60"
+      ],
+      "counterNumbers": [
+        7,
+        6
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tanıklıkta sayılar ve sınırlar",
+      "rows": [
+        {
+          "label": "Disiplin hapsinin süresi",
+          "value": "Hüküm verilinceye kadar, her hâlde en fazla 3 ay",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "Disiplin hapsine soruşturmada yetkili",
+          "value": "Sulh ceza hâkimi",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "Yeminsiz dinlenme yaş sınırı",
+          "value": "Dinlenme sırasında 15 yaşını doldurmamış olmak",
+          "refs": [
+            "50"
+          ]
+        },
+        {
+          "label": "Devlet sırrı tanıklığının uygulama eşiği",
+          "value": "Hapis cezasının alt sınırı 5 yıl veya daha fazla",
+          "refs": [
+            "47"
+          ]
+        },
+        {
+          "label": "Kan hısımlarında çekinme sınırı",
+          "value": "3. derece dahil",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Kayın hısımlarında çekinme sınırı",
+          "value": "2. derece dahil",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Eski hâle getirme dilekçesi",
+          "value": "Engelin kalkmasından itibaren 2 hafta",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "Elektronik işlemde süre sonu",
+          "value": "Gün sonu",
+          "refs": [
+            "38/A"
+          ]
+        },
+        {
+          "label": "Tanık tazminatı tarifesi",
+          "value": "Her yıl Adalet Bakanlığınca hazırlanır",
+          "refs": [
+            "61"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "38/A",
+        "41",
+        "45",
+        "47",
+        "50",
+        "60",
+        "61"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "39",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "38/A",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61"
+          ]
+        },
+        {
+          "label": "md 39 — Sürelerin hesaplanması",
+          "value": "9 soru",
+          "refs": [
+            "39"
+          ]
+        },
+        {
+          "label": "md 60 — Tanıklıktan ve yeminden sebepsiz çekinme",
+          "value": "5 soru",
+          "refs": [
+            "60"
+          ]
+        },
+        {
+          "label": "md 38/A — Elektronik işlemler",
+          "value": "4 soru",
+          "refs": [
+            "38/A"
+          ]
+        },
+        {
+          "label": "md 41 — Eski hâle getirme dilekçesi",
+          "value": "4 soru",
+          "refs": [
+            "41"
+          ]
+        },
+        {
+          "label": "md 45 — Tanıklıktan çekinme",
+          "value": "3 soru",
+          "refs": [
+            "45"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "38/A",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 34, md 35, md 37, md 38, md 40, md 42, md 48, md 49, md 52, md 53, md 55, md 56, md 57, md 59, md 61",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "38/A",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "38/A",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "38/A",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 34–38, 38/A, 39–61, 10 soru",
+          "refs": [
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "38/A",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61"
+          ]
+        }
+      ]
+    }
+  ]
+}

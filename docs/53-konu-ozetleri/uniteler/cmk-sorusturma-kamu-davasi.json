@@ -1,0 +1,549 @@
+{
+  "unit": {
+    "slug": "cmk-sorusturma-kamu-davasi",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Soruşturma ve kamu davasının açılması",
+    "subtitle": "İhbardan iddianamenin iadesine: Cumhuriyet savcısı, sulh ceza hâkimi ve adlî kolluk",
+    "articleFrom": "157",
+    "articleTo": "174",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 157–174",
+    "articleNos": [
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "166",
+      "167",
+      "168",
+      "169",
+      "170",
+      "171",
+      "172",
+      "173",
+      "174"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 10
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Soruşturma: savcının gerçeği aradığı evre",
+      "body": "Cumhuriyet savcısı, bir suçun işlendiği izlenimini veren bir hâli öğrenir öğrenmez işin gerçeğini araştırmaya başlar. Amacı, kamu davasını açmaya yer olup olmadığına karar vermektir. Bunu yaparken emrindeki adlî kolluk görevlileriyle şüphelinin hem lehine hem aleyhine olan delilleri toplar ve muhafaza altına alır. Şüphelinin haklarını korumak da onun görevidir. Bu evredeki usul işlemleri gizlidir. Ancak kanunun başka hüküm koyduğu hâller saklıdır ve gizlilik savunma haklarına zarar veremez.",
+      "articleRefs": [
+        "157",
+        "160"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gizli mi aleni mi, lehe mi aleyhe mi?",
+      "body": "Soruşturma evresi kural olarak **gizlidir**. “Soruşturma evresi kural olarak alenidir” diyen şık yanlıştır.\n\nBir başka klasik tuzak: “Savcı taraf olduğu için sadece şüpheli aleyhindeki delilleri toplar.” Hayır! Kanun savcıyı şüphelinin **lehine ve aleyhine** olan delilleri toplamakla yükümlü tutar.\n\nAraştırmaya ne zaman başlanacağı da sorulur. Savcı, suç izlenimini veren hâli öğrenir öğrenmez **hemen** işin gerçeğini araştırmaya başlar.",
+      "articleRefs": [
+        "157",
+        "160"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İhbar ve şikâyet nereye, nasıl yapılır?",
+      "body": "**Yapılabileceği makamlar:** Cumhuriyet Başsavcılığı veya kolluk makamları.\n\n**Başka bir makama yapılırsa:**\n- Valilik, kaymakamlık ya da mahkemeye yapılan ihbar veya şikâyet, ilgili Cumhuriyet Başsavcılığına gönderilir.\n- Kamu görevinin yürütülmesiyle bağlantılı olarak işlendiği iddia edilen suçlarda, ilgili kurum ve kuruluş idaresine yapılan ihbar veya şikâyet **gecikmeksizin** ilgili Cumhuriyet Başsavcılığına gönderilir.\n- Yurt dışında işlenip ülkede takibi gereken suçlarda Türkiye'nin **elçilik ve konsolosluklarına** da ihbar veya şikâyette bulunulabilir.\n\n**Biçim:** Yazılı olarak ya da tutanağa geçirilmek üzere sözlü olarak yapılabilir.\n\n**Kovuşturmada ortaya çıkan şikâyet şartı:** Kovuşturma evresine geçildikten sonra suçun şikâyete bağlı olduğu anlaşılırsa, mağdur açıkça şikâyetten vazgeçmedikçe yargılamaya devam olunur.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma yapılmasına yer olmadığı kararı",
+      "body": "**Ne zaman verilir?**\n- İhbar ve şikâyet konusu fiilin suç oluşturmadığı, herhangi bir araştırma yapılmasını gerektirmeksizin açıkça anlaşılıyorsa,\n- ya da ihbar ve şikâyet soyut ve genel nitelikteyse.\n\n**Sonuçları:**\n- Şikâyet edilen kişiye **şüpheli sıfatı verilemez**.\n- Karar, varsa ihbarda bulunana veya şikâyetçiye bildirilir.\n- Karara 173 üncü maddedeki usule göre **itiraz edilebilir**. İtiraz kabul edilirse Cumhuriyet başsavcılığı soruşturma işlemlerini başlatır.\n- Bu işlemler ve kararlar bunlara mahsus bir sisteme kaydedilir. Kayıtları ancak Cumhuriyet savcısı, hâkim veya mahkeme görebilir.",
+      "articleRefs": [
+        "158"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Soruşturma mı, kovuşturma mı yapılmasına yer olmadığı?",
+      "body": "Fiil açıkça suç değilse ya da ihbar soyut ve genelse verilen karar, “**soruşturma** yapılmasına yer olmadığı” kararıdır. Şıkta “kovuşturma yapılmasına yer olmadığı” yazıyorsa ifade yanlıştır. Kovuşturmaya yer olmadığı kararı ayrı bir karardır: Soruşturma evresi sonunda, yeterli şüphe oluşturacak delil elde edilemediğinde verilir.\n\nDiğer tuzak: “Bu karara karşı itiraz edilemez.” Edilir! İtiraz, 173 üncü maddedeki usule göre yapılır.\n\nBir de şunu unutma: Bu kararda şikâyet edilen kişiye şüpheli sıfatı bile verilmez.",
+      "articleRefs": [
+        "158",
+        "172"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Şüpheli ölümün ihbarı",
+      "body": "**Bildirim gereken durumlar:**\n- Ölümün doğal nedenlerden meydana gelmediği kuşkusunu doğuran bir durum varsa,\n- ya da ölünün kimliği belirlenemiyorsa.\n\n**Bildirmekle yükümlü olanlar:** Kolluk görevlisi, köy muhtarı, sağlık veya cenaze işleriyle görevli kişiler.\n\n**Kime ve ne zaman:** Cumhuriyet Başsavcılığına, **derhâl**.\n\n**Gömme:** Bu hâllerde ölünün gömülmesi ancak Cumhuriyet savcısının vereceği **yazılı izne** bağlıdır.",
+      "articleRefs": [
+        "159"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Cumhuriyet savcısının görev ve yetkileri",
+      "body": "- Savcı her türlü araştırmayı **doğrudan doğruya** ya da emrindeki adlî kolluk görevlileri aracılığıyla yapabilir. Bütün kamu görevlilerinden her türlü bilgiyi isteyebilir.\n- Nezdinde görev yaptığı mahkemenin **yargı çevresi dışında** bir işlem gerekirse, o yer Cumhuriyet savcısından işlemi yapmasını ister.\n- Adlî kolluk görevlileri; el koydukları olayları, yakalanan kişileri ve uygulanan tedbirleri savcıya **derhâl** bildirir. Savcının adliyeye ilişkin emirlerini de **gecikmeksizin** yerine getirir.\n- Savcı adlî kolluğa emirlerini **yazılı** verir; acele hâllerde **sözlü** verebilir. Sözlü emir de en kısa sürede **yazılı olarak** bildirilir.\n- Diğer kamu görevlileri, savcının soruşturma için istediği bilgi ve belgeleri **vakit geçirmeksizin** temin eder.\n- Yetkisizlik kararıyla gelen dosyada savcı kendisini de yetkisiz görürse yetkisizlik kararı verir. Dosyayı, yargı çevresinde görev yaptığı ağır ceza mahkemesine **en yakın ağır ceza mahkemesine** gönderir. Mahkemenin bu konudaki kararı kesindir.",
+      "articleRefs": [
+        "161"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim hakkında kim soruşturur?",
+      "body": "- **Adliyeyle ilgili görevlerinde kötüye kullanma veya ihmali görülen kamu görevlileri:** Cumhuriyet savcısı doğrudan doğruya soruşturur.\n- **Savcının istem ve emirlerini yerine getirirken kötüye kullanma veya ihmali görülen kolluk âmir ve memurları:** Bunları da Cumhuriyet savcısı doğrudan doğruya soruşturur.\n- **Vali ve kaymakamlar:** 4483 sayılı Memurlar ve Diğer Kamu Görevlilerinin Yargılanması Hakkında Kanun hükümleri uygulanır. Kişisel suçları için ayrı bir kural vardır (aşağıda).\n- **En üst dereceli kolluk amirleri:** Hâkimlerin görevlerinden dolayı tâbi oldukları yargılama usulü uygulanır.\n- **Vali ve kaymakamların kişisel suçları:** Yetki, görev yerinin bağlı olduğu bölge adliye mahkemesinin bulunduğu yerdeki il Cumhuriyet başsavcılığına ve aynı yer ağır ceza mahkemesine aittir. Ağır ceza mahkemesinin görevine giren suçüstü hâllerinde ise soruşturma genel hükümlere göre yapılır.\n- **Türk Ceza Kanununun 302, 309, 311, 312, 313, 314, 315 ve 316 ncı maddelerindeki suçlar:** Görev sırasında veya görevden dolayı işlenmiş olsa bile savcı doğrudan soruşturur.\n- **Milletvekili (seçimden önce veya sonra işlediği ileri sürülen suç):** Yetki, Ankara Cumhuriyet Başsavcılığına ve bu yer ağır ceza mahkemesine aittir. Soruşturmayı Cumhuriyet Başsavcısı veya görevlendireceği vekili bizzat yapar. Gecikmesinde sakınca bulunan hâllerde suçun işlendiği yer Cumhuriyet savcısı zorunlu delilleri toplar.",
+      "articleRefs": [
+        "161"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Savcı hâkime ne zaman gider, hâkim ne zaman soruşturur?",
+      "body": "**Hâkim kararı istemi:** Ancak hâkimin yapabileceği bir soruşturma işlemi gerekiyorsa savcı, istemini **işlemin yapılacağı yerin sulh ceza hâkimine** bildirir. Sulh ceza hâkimi, istemin kanuna uygun olup olmadığını inceleyerek karar verir ve gereğini yerine getirir.\n\n**Sulh ceza hâkiminin soruşturma yapması:** Aşağıdaki iki şart bir arada olmalıdır.\n- Suçüstü hâli veya gecikmesinde sakınca bulunan bir hâl bulunmalı,\n- ve Cumhuriyet savcısına **erişilemiyor** olmalı ya da olay, genişliği itibarıyla savcının **iş gücünü aşıyor** olmalıdır.\n\nBu durumda sulh ceza hâkimi de **bütün** soruşturma işlemlerini yapabilir. Kolluk âmir ve memurları, hâkimin emrettiği tedbirleri alır ve araştırmaları yerine getirir.",
+      "articleRefs": [
+        "162",
+        "163"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Sözlü emir, en üst dereceli amir, sulh ceza hâkimi",
+      "body": "**“Savcı emirleri sözlü verir, yazılı bildirme zorunluluğu yoktur.”** Yanlış. Kural yazılı emirdir. Sözlü emir yalnız acele hâllerde verilir ve en kısa sürede yazılı olarak da bildirilir.\n\n**“Savcı araştırmaları kendisi yapamaz, kolluğa yaptırır.”** Yanlış. Savcı doğrudan doğruya da araştırma yapabilir.\n\n**Kolluk amirleri ile en üst dereceli kolluk amirleri aynı değildir.** Hâkimlerin görevlerinden dolayı tâbi oldukları usul, yalnız **en üst dereceli** kolluk amirlerine uygulanır. Vali ve kaymakamlar için ayrı kurallar vardır.\n\n**Savcıya erişilemeyen suçüstü hâlinde bütün soruşturma işlemlerini kim yapabilir?** Sulh ceza hâkimi. Kolluk amiri, mülki amir, il emniyet müdürü ve ağır ceza mahkemesi şıkları çeldiricidir.\n\n**Soruşturmada hâkim kararını kim verir?** Sulh ceza hâkimi. Sulh hukuk hâkimi ya da ağır ceza mahkemesi başkanı değil.",
+      "articleRefs": [
+        "161",
+        "162",
+        "163"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adlî kolluk",
+      "body": "- **Tanım:** Emniyet Teşkilatı Kanunu, Jandarma Teşkilat, Görev ve Yetkileri Kanunu, Gümrük mevzuatı ve Sahil Güvenlik Komutanlığı Kanununda belirtilen soruşturma işlemlerini yapan güvenlik görevlileridir.\n- Soruşturma işlemleri, savcının emir ve talimatları doğrultusunda **öncelikle adlî kolluğa** yaptırılır. Adlî kolluk, savcının adlî görevlere ilişkin emirlerini yerine getirir.\n- Adlî görevlerin **dışındaki** hizmetlerde adlî kolluk **üstlerinin** emrindedir.\n- Gerektiğinde veya savcının talebi hâlinde **diğer kolluk birimleri** de adlî kolluk görevini yerine getirmekle yükümlüdür. Bu durumda adlî görevleri dolayısıyla bu Kanun hükümleri uygulanır.\n- Cumhuriyet başsavcıları **her yılın sonunda** adlî kolluğun sorumluları hakkında değerlendirme raporu düzenler ve **mülkî idare amirlerine** gönderir.\n- Nitelikler, eğitim ve değerlendirme raporları gibi ayrıntılar, Adalet ve İçişleri Bakanlıklarınca müştereken çıkarılacak yönetmelikte belirlenir.\n- **Olay yerinde:** İşlemlere başlayan adlî kolluk görevlisi, işlemlere engel olan veya aldığı tedbirlere aykırı davranan kişileri, işlemler sonuçlanıncaya kadar ve gerektiğinde **zor kullanarak** bundan men eder.",
+      "articleRefs": [
+        "164",
+        "165",
+        "166",
+        "167",
+        "168"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Soruşturma işlemlerinin tutanağa bağlanması",
+      "body": "- Şüphelinin ifadesinin alınması veya sorgusu, tanık ve bilirkişinin dinlenmesi, keşif ve muayene sırasında savcının veya sulh ceza hâkiminin yanında bir **zabıt kâtibi** bulunur. Acele hâllerde **yemin vermek koşuluyla** başka bir kimse yazman olarak görevlendirilebilir.\n- **Her** soruşturma işlemi tutanağa bağlanır. Tutanağı adlî kolluk görevlisi, Cumhuriyet savcısı veya sulh ceza hâkimi ile hazır bulunan zabıt kâtibi imzalar.\n- Müdafi veya vekil olarak hazır bulunan avukatın isim ve imzası da tutanakta yer alır.\n- **Tutanağın içeriği:** İşlemin yeri, tarihi, başlama ve bitiş saati, işleme katılanların ve ilgililerin isimleri.\n- Tutanağın ilgilileri ilgilendiren kısımları onlara okunur ya da okumaları için verilir; bu husus tutanağa yazılarak imza ettirilir. İmzadan kaçınılırsa nedenleri tutanağa geçirilir.\n- **Özel kural:** Terörle Mücadele Kanunu kapsamındaki suçlar ile Türk Ceza Kanununun İkinci Kitap Dördüncü Kısmının Dört, Beş, Altı ve Yedinci Bölümündeki suçlarda bu kural uygulanır (318, 319, 324, 325 ve 332 nci maddeler hariç). Kolluk tutanaklarına görevlilerin açık kimlikleri yerine **sadece sicil numaraları** yazılır. Davetiye veya çağrı kâğıdı görevlinin iş yeri adresine tebliğ edilir. İfade ve duruşma tutanaklarında adres olarak iş yeri adresi gösterilir.",
+      "articleRefs": [
+        "169"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Soruşturma ve adlî kolluk: süreler ve sayılar",
+      "rows": [
+        {
+          "label": "Şüpheli ölümün bildirilmesi",
+          "value": "Derhâl, Cumhuriyet Başsavcılığına",
+          "refs": [
+            "159"
+          ]
+        },
+        {
+          "label": "Sözlü emrin yazılı bildirilmesi",
+          "value": "En kısa sürede",
+          "refs": [
+            "161"
+          ]
+        },
+        {
+          "label": "Görev sırasında işlense bile savcının doğrudan soruşturduğu TCK maddeleri",
+          "value": "302, 309, 311, 312, 313, 314, 315, 316",
+          "refs": [
+            "161"
+          ]
+        },
+        {
+          "label": "Değerlendirme raporu",
+          "value": "Her yılın sonunda",
+          "refs": [
+            "166"
+          ]
+        },
+        {
+          "label": "Adlî kolluk yönetmeliği",
+          "value": "Kanunun yürürlük tarihinden itibaren altı ay içinde",
+          "refs": [
+            "167"
+          ]
+        },
+        {
+          "label": "Sicil numarası kuralında hariç tutulan TCK maddeleri",
+          "value": "318, 319, 324, 325, 332",
+          "refs": [
+            "169"
+          ]
+        },
+        {
+          "label": "Zabıt kâtibi yerine yazman",
+          "value": "Acele hâllerde, yemin vermek koşuluyla",
+          "refs": [
+            "169"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "159",
+        "161",
+        "166",
+        "167",
+        "169"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu davasının açılması ve iddianame",
+      "body": "**Görev:** Kamu davasını açma görevi Cumhuriyet savcısınındır.\n\n**Şart:** Soruşturma evresi sonunda toplanan deliller, suçun işlendiği hususunda **yeterli şüphe** oluşturuyorsa savcı iddianame düzenler.\n\n**İddianamede gösterilenler** (görevli ve yetkili mahkemeye hitaben):\n1. Şüphelinin kimliği ve müdafii\n2. Maktul, mağdur veya suçtan zarar görenin kimliği ile vekili veya kanunî temsilcisi\n3. Açıklanmasında sakınca bulunmuyorsa ihbarda bulunan kişinin kimliği\n4. Şikâyette bulunanın kimliği ve şikâyetin yapıldığı tarih\n5. Yüklenen suç ve uygulanması gereken kanun maddeleri\n6. Suçun işlendiği yer, tarih ve zaman dilimi\n7. Suçun delilleri\n8. Şüphelinin tutuklu olup olmadığı; tutukluysa gözaltına alma ve tutuklama tarihleri ile bunların süreleri\n\n**Anlatım:** Yüklenen suçu oluşturan olaylar, mevcut delillerle ilişkilendirilerek açıklanır. Olaylarla ve delillerle ilgisi olmayan bilgilere yer verilmez.\n\n**Sonuç kısmı:**\n- Şüphelinin yalnız aleyhine olan değil, **lehine** olan hususlar da ileri sürülür.\n- Hangi ceza ve güvenlik tedbirlerine hükmedilmesinin istendiği açıkça belirtilir.\n- Suç tüzel kişinin faaliyeti çerçevesinde işlenmişse, tüzel kişiye uygulanabilecek güvenlik tedbiri de açıkça belirtilir.",
+      "articleRefs": [
+        "170"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İddianamede aranmayan unsur",
+      "body": "“İddianamede yer alması gereken unsurlar arasında yer almaz” diye sorulduğunda kanunun saymadığı şeyi ara: **verilmesi gereken ceza miktarı** sayılan unsurlar arasında yoktur. Sonuç kısmına yalnız hangi ceza ve güvenlik tedbirlerine hükmedilmesinin *istendiği* yazılır.\n\nİkinci ince ayrıntı: İhbar edenin kimliği kayıtsız şartsız yazılmaz. **Açıklanmasında sakınca bulunmaması hâlinde** yazılır.\n\nSon olarak şunu unutma: Yeterli şüphe varsa savcı iddianame düzenler. “Yeterli delil bulunan tüm hâllerde savcının takdir yetkisi vardır” diyen şık yanlıştır. Takdir yetkisi yalnız kanunun saydığı hâllerde vardır.",
+      "articleRefs": [
+        "170",
+        "171"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kamu davasını açmada takdir yetkisi ve erteleme",
+      "body": "**Kovuşturmaya yer olmadığı kararı verilebilecek hâller:**\n- Cezayı **kaldıran** şahsî sebep olarak etkin pişmanlık hükümlerinin uygulanmasını gerektiren koşulların varlığı\n- Şahsî cezasızlık sebebinin varlığı\n\nBu hâllerde savcı karar **verebilir**.\n\n**Kamu davasının açılmasının ertelenmesi:**\n- **Kapsam:** Üst sınırı **üç yıl veya daha az** hapis cezasını gerektiren suçlar. Uzlaştırma ve önödeme kapsamındaki suçlar hariçtir.\n- **Süre:** Yeterli şüpheye rağmen kamu davasının açılması **beş yıl** süreyle ertelenebilir.\n- **Birlikte aranan koşullar:**\n  1. Şüphelinin daha önce **kasıtlı** bir suçtan dolayı hapis cezasıyla mahkûm olmamış olması\n  2. Soruşturmanın, şüphelinin suç işlemekten çekineceği kanaatini vermesi\n  3. Ertelemenin, şüpheli ve toplum açısından kamu davası açılmasından daha yararlı olması\n  4. Mağdurun veya kamunun uğradığı ve savcının tespit ettiği zararın, aynen iade, suçtan önceki hâle getirme veya tazmin yoluyla **tamamen** giderilmesi\n- **Süre içinde ne olursa:** Kasıtlı suç işlenmezse kovuşturmaya yer olmadığına karar verilir. Kasıtlı suç işlenirse **kamu davası açılır**. Erteleme süresince zamanaşımı **işlemez**.\n- **İtiraz:** Suçtan zarar gören veya şüpheli, 173 üncü madde hükümlerine göre itiraz edebilir.\n- **Kayıt:** Kararlar bunlara mahsus bir sisteme kaydedilir. Kayıtlar yalnız bir soruşturma veya kovuşturmayla bağlantılı olarak savcı, hâkim veya mahkeme isterse bu amaçla kullanılabilir.\n\n**Erteleme uygulanmayan suçlar:**\n- Suç işlemek için örgüt kurmak, yönetmek veya örgüte üye olmak ve örgüt faaliyeti çerçevesinde işlenen suçlar\n- Kamu görevlisi tarafından görevi sebebiyle veya kamu görevlisine karşı görevinden dolayı işlenen suçlar\n- Asker kişilerin işlediği askerî suçlar\n- Cinsel dokunulmazlığa karşı işlenen suçlar",
+      "articleRefs": [
+        "171"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ertelemede en çok kaçırılanlar",
+      "body": "- Üst sınır **üç yıl**dır. “Bir yıl” diyen şık yanlıştır.\n- Erteleme süresi **beş yıl**dır. “İki yıl”, “bir yıl” ve “altı ay” çeldiricidir.\n- Koşul, “**kasıtlı** bir suçtan dolayı hapis cezasıyla mahkûm olmamak”tır. “Herhangi bir suçtan” deniyorsa şık yanlıştır.\n- “Şüpheli ile suçtan zarar gören arasında uzlaşma sağlanmış olması” bir koşul değildir. Aranan, zararın **tamamen giderilmesidir**.\n- Erteleme süresince dava zamanaşımı **işlemez**. “İşlemeye devam eder” diyen şık yanlıştır.\n- Erteleme süresinde kasıtlı suç işlenirse yeniden soruşturma açılmaz, **kamu davası açılır**.\n- Örgüt suçları, kamu görevlisinin görevi sebebiyle işlediği suçlar ve cinsel dokunulmazlığa karşı suçlar sorulduğunda cevap: Erteleme bunların **hiçbirinde** uygulanmaz.\n- Etkin pişmanlıkta kovuşturmaya yer olmadığı kararına imkân veren, cezayı **azaltan** değil **kaldıran** şahsî sebeptir. Savcı bu kararı “verebilir”; “vermelidir” diyen şık yanlıştır.",
+      "articleRefs": [
+        "171"
+      ],
+      "counterNumbers": [
+        {
+          "value": 1,
+          "text": "bir yıl"
+        },
+        {
+          "value": 2,
+          "text": "iki yıl"
+        },
+        {
+          "value": 6,
+          "text": "altı ay"
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kovuşturmaya yer olmadığı kararı ve itiraz",
+      "body": "**Sebep:** Soruşturma evresi sonunda kamu davasının açılması için yeterli şüphe oluşturacak delil elde edilememesi ya da kovuşturma olanağının bulunmaması.\n\n**Bildirim:** Karar, suçtan zarar gören ile önceden ifadesi alınmış veya sorguya çekilmiş şüpheliye bildirilir. Kararda itiraz hakkı, süresi ve mercii gösterilir.\n\n**Yeniden dava:** Aynı fiilden kamu davası açılabilmesi için iki şart gerekir: yeterli şüphe oluşturacak **yeni delil** elde edilmesi ve bu hususta **sulh ceza hâkimliğinin** karar vermesi.\n\n**Yeniden soruşturma:** Kararın etkin soruşturma yapılmadan verildiği Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararıyla tespit edilebilir. Ya da bu karar aleyhine yapılan başvuru, dostane çözüm veya tek taraflı deklarasyon sonucunda düşebilir. Bu durumlarda kararın kesinleşmesinden itibaren **üç ay** içinde talep edilirse yeniden soruşturma açılır.\n\n**İtiraz:**\n- **Kim:** Suçtan zarar gören.\n- **Süre:** Kararın kendisine **tebliğ** edildiği tarihten itibaren **iki hafta**.\n- **Merci:** Kararı veren savcının yargı çevresinde görev yaptığı ağır ceza mahkemesinin bulunduğu yerdeki **sulh ceza hâkimliği**.\n- **Dilekçe:** Kamu davasının açılmasını gerektirebilecek olaylar ve deliller belirtilir.\n- **Soruşturmanın genişletilmesi:** Hâkimlik gerek görürse, bunu açıkça belirterek **o yer Cumhuriyet başsavcılığından** talepte bulunabilir.\n- **Ret:** İstem gerekçeli olarak reddedilir, itiraz eden giderlere mahkûm edilir ve dosya savcıya gönderilir. Savcı kararı itiraz edene ve şüpheliye bildirir. Bundan sonra kamu davası açılabilmesi için yeni delil ve sulh ceza hâkimliği kararı gerekir.\n- **Kabul:** Savcı iddianame düzenleyerek mahkemeye verir.\n- **İstisna:** Savcı kamu davasının açılmaması hususunda **takdir yetkisini** kullanmışsa bu itiraz hükmü uygulanmaz.",
+      "articleRefs": [
+        "172",
+        "173"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Takipsizlikte çeldiriciler",
+      "body": "- Soruşturma sonunda yeterli şüpheye ulaşılamazsa verilen karar **kovuşturmaya yer olmadığı** kararıdır. Durma, düşme ya da beraat kararı değildir.\n- “Savcı aynı olayda her zaman dava açabilir” de yanlıştır, “hiçbir şekilde dava açamaz” da. Gereken, **yeni delil ve sulh ceza hâkimliği kararıdır**. Dava kendiliğinden (re'sen) açılamaz. Karar asliye ceza ya da ağır ceza mahkemesinden değil, sulh ceza hâkimliğinden alınır.\n- İtiraz süresi **iki hafta**dır ve **tebliğden** başlar. “Onbeş gün”, “bir hafta”, “beş gün”, “bir ay” ya da “kararın verildiği tarihten” diyen şıklar yanlıştır.\n- İtirazı ağır ceza mahkemesi ya da en yakın ağır ceza mahkemesi incelemez. İtirazı, ağır ceza mahkemesinin bulunduğu yerdeki **sulh ceza hâkimliği** inceler.\n- Soruşturmanın genişletilmesi gerekirse hâkimlik bir sulh ceza hâkimini görevlendirmez, **Cumhuriyet başsavcılığından talepte** bulunur.\n- Takdir yetkisiyle verilen kovuşturmaya yer olmadığı kararına bu yolla itiraz edilemez. Diğer kovuşturmaya yer olmadığı kararları için ise “kesindir” demek yanlıştır, çünkü itiraz yolu açıktır.",
+      "articleRefs": [
+        "172",
+        "173"
+      ],
+      "counterNumbers": [
+        {
+          "value": 15,
+          "text": "onbeş gün"
+        },
+        {
+          "value": 1,
+          "text": "bir hafta"
+        },
+        {
+          "value": 5,
+          "text": "beş gün"
+        },
+        {
+          "value": 1,
+          "text": "bir ay"
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İddianamenin iadesi",
+      "body": "**Süre ve inceleme:** Mahkeme, iddianame ve soruşturma evrakının verildiği tarihten itibaren **onbeş gün** içinde soruşturma evresine ilişkin bütün belgeleri inceler. Eksik veya hatalı noktaları belirterek iddianameyi iade eder.\n\n**İade sebepleri:** Aşağıdaki durumlarda iddianamenin Cumhuriyet Başsavcılığına iadesine karar verilir.\na) İddianame 170 inci maddeye aykırı düzenlenmişse,\nb) Suçun sübûtuna doğrudan etki edecek mevcut bir delil toplanmadan düzenlenmişse,\nc) Önödemeye, uzlaştırmaya ya da seri muhakeme usulüne tâbi olduğu dosyadan açıkça anlaşılan bir işte bu usuller uygulanmadan düzenlenmişse,\nd) Soruşturma veya kovuşturması izne ya da talebe bağlı suçlarda izin alınmadan veya talep olmadan düzenlenmişse,\ne) Onbeş yaşını doldurmamış çocuklar hakkında sosyal inceleme yaptırılmadan düzenlenmişse.\n\n**İade edilemez:** Suçun hukukî nitelendirilmesi sebebiyle iddianame iade edilemez.\n\n**Süre geçerse:** En geç bu sürenin sonunda iade edilmeyen iddianame **kabul edilmiş** sayılır.\n\n**İade sonrası:** Savcı kararda gösterilen eksikleri tamamlar ve hataları düzeltir. Kovuşturmaya yer olmadığı kararını gerektiren bir durum yoksa yeniden iddianame düzenleyerek dosyayı mahkemeye gönderir. İlk kararda belirtilmeyen sebeplerle **yeniden iade yoluna gidilemez**.\n\n**İtiraz:** İade kararına Cumhuriyet savcısı itiraz edebilir.",
+      "articleRefs": [
+        "174"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İadede ters çevrilen ifadeler",
+      "body": "- Süre **onbeş gündür**. “On gün”, “bir hafta”, “iki hafta”, “bir ay” ve “otuz gün” çeldiricidir.\n- Süre dolunca iddianame **kabul edilmiş** sayılır. “İade edilmiş sayılır” diyen şık, kuralı tersine çeviren bir tuzaktır.\n- Suçun hukukî nitelendirilmesindeki farklılık iade sebebi **değildir**. Örneğin hırsızlık mı yağma mı, öldürmeye teşebbüs mü yaralama mı, yardım eden mi müşterek fail mi tartışması iade gerekçesi olamaz. Buna karşılık uzlaştırma hükmü uygulanmadan düzenlenen iddianame iade edilir.\n- İade kararına yalnız **Cumhuriyet savcısı** itiraz edebilir. “Şüpheli ya da suçtan zarar gören itiraz edebilir” diyen şık yanlıştır.\n- İlk kararda gösterilmeyen, sonradan fark edilen bir sebeple iddianame **yeniden iade edilemez**.\n- Sonuç kısmında lehe hususları göstermeyen ya da delillerle ilgisiz bilgiye yer veren iddianame 170 inci maddeye aykırıdır. Bu da bir iade sebebidir.",
+      "articleRefs": [
+        "170",
+        "174"
+      ],
+      "counterNumbers": [
+        {
+          "value": 10,
+          "text": "on gün"
+        },
+        {
+          "value": 1,
+          "text": "bir hafta"
+        },
+        {
+          "value": 2,
+          "text": "iki hafta"
+        },
+        {
+          "value": 1,
+          "text": "bir ay"
+        },
+        {
+          "value": 30,
+          "text": "otuz gün"
+        }
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Kamu davası: süreler ve sınırlar",
+      "rows": [
+        {
+          "label": "Ertelemenin kapsamı (suçun üst sınırı)",
+          "value": "Üç yıl veya daha az süreli hapis",
+          "refs": [
+            "171"
+          ]
+        },
+        {
+          "label": "Kamu davasının açılmasının ertelenmesi süresi",
+          "value": "Beş yıl",
+          "refs": [
+            "171"
+          ]
+        },
+        {
+          "label": "Kovuşturmaya yer olmadığı kararına itiraz",
+          "value": "Tebliğden itibaren iki hafta",
+          "refs": [
+            "173"
+          ]
+        },
+        {
+          "label": "Avrupa İnsan Hakları Mahkemesi kararı sonrası yeniden soruşturma talebi",
+          "value": "Kesinleşmeden itibaren üç ay",
+          "refs": [
+            "172"
+          ]
+        },
+        {
+          "label": "İddianamenin iadesi",
+          "value": "Verildiği tarihten itibaren onbeş gün",
+          "refs": [
+            "174"
+          ]
+        },
+        {
+          "label": "Süresinde iade edilmeyen iddianame",
+          "value": "Kabul edilmiş sayılır",
+          "refs": [
+            "174"
+          ]
+        },
+        {
+          "label": "Sosyal inceleme şartı",
+          "value": "Onbeş yaşını doldurmamış çocuklar",
+          "refs": [
+            "174"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "171",
+        "172",
+        "173",
+        "174"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "47",
+          "refs": [
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174"
+          ]
+        },
+        {
+          "label": "md 171 — Kamu davasını açmada takdir yetkisi",
+          "value": "12 soru",
+          "refs": [
+            "171"
+          ]
+        },
+        {
+          "label": "md 174 — İddianamenin iadesi",
+          "value": "10 soru",
+          "refs": [
+            "174"
+          ]
+        },
+        {
+          "label": "md 173 — Cumhuriyet savcısının kararına itiraz",
+          "value": "6 soru",
+          "refs": [
+            "173"
+          ]
+        },
+        {
+          "label": "md 161 — Cumhuriyet savcısının görev ve yetkileri",
+          "value": "4 soru",
+          "refs": [
+            "161"
+          ]
+        },
+        {
+          "label": "md 172 — Kovuşturmaya yer olmadığına dair karar",
+          "value": "4 soru",
+          "refs": [
+            "172"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 159, md 164, md 165, md 166, md 167, md 168, md 169",
+          "refs": [
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "157",
+        "158",
+        "159",
+        "160",
+        "161",
+        "162",
+        "163",
+        "164",
+        "165",
+        "166",
+        "167",
+        "168",
+        "169",
+        "170",
+        "171",
+        "172",
+        "173",
+        "174"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "157",
+        "158",
+        "159",
+        "160",
+        "161",
+        "162",
+        "163",
+        "164",
+        "165",
+        "166",
+        "167",
+        "168",
+        "169",
+        "170",
+        "171",
+        "172",
+        "173",
+        "174"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 157–174, 10 soru",
+          "refs": [
+            "157",
+            "158",
+            "159",
+            "160",
+            "161",
+            "162",
+            "163",
+            "164",
+            "165",
+            "166",
+            "167",
+            "168",
+            "169",
+            "170",
+            "171",
+            "172",
+            "173",
+            "174"
+          ]
+        }
+      ]
+    }
+  ]
+}

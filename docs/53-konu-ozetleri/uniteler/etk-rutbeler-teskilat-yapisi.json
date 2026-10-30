@@ -1,0 +1,515 @@
+{
+  "unit": {
+    "slug": "etk-rutbeler-teskilat-yapisi",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "title": "Rütbeler, görev unvanları ve teşkilat yapısı",
+    "subtitle": "Rütbe–meslek derecesi cetveli, ilçe emniyet müdürlüğü ataması, merkez ve taşra teşkilatı, sivil polis ve tahsil hükümleri",
+    "articleFrom": "13",
+    "articleTo": "41",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 3201 Sayılı Emniyet Teşkilat Kanunu, md 13, 15, 16, 20–22, 26, 35–41",
+    "articleNos": [
+      "13",
+      "15",
+      "16",
+      "20",
+      "21",
+      "22",
+      "26",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 2
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Üç sütun: rütbe, meslek derecesi, görev unvanı",
+      "body": "Kanundaki cetvel, emniyet hizmetleri sınıfı mensubunu üç bilgiyle tanımlar. **Rütbe** taşıdığın sıfattır: komiser, başkomiser, emniyet amiri gibi. **Meslek derecesi** cetveldeki numaradır. En tepede Derece Üstü bulunur, ardından 1'den 12'ye kadar iner. **Görev unvanı** fiilen yaptığın iştir: karakol amiri, büro memuru, şube müdürü gibi. Bir rütbenin karşısında birden çok görev unvanı yer alır. Aynı unvan farklı rütbelerde tekrar edebilir. Öğretim Görevlisi ve Pilot unvanları birçok satırda karşına çıkar. Sorular çoğunlukla bu üç sütunu birbirine eşleştirmeni ister.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet müdürü rütbeleri ve dereceleri",
+      "body": "**Emniyet müdürü rütbeleri (md 13):**\n- **Sınıf Üstü Emniyet Müdürü**\n  - **Derece Üstü:** Emniyet Genel Müdürü\n  - **1:** Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı, Polis Akademisi Başkanı, Başkan, Merkez Emniyet Müdürü, Emniyet Müşaviri\n- **Birinci Sınıf Emniyet Müdürü – 2:** Daire Başkanı, Birinci Hukuk Müşaviri, İl Emniyet Müdürü, Polis Başmüfettişi, Polis Akademisi Başkan Yardımcısı, Teftiş Kurulu Başkan Yardımcısı, Teftiş Kurulu Grup Amiri, Polis Moral Eğitim Merkezi Müdürü ve diğerleri\n- **İkinci Sınıf Emniyet Müdürü – 3:** Kriminal Polis Laboratuvarı Müdürü, Daire Başkan Yardımcısı, İl Emniyet Müdür Yardımcısı, Polis Müfettişi, Hukuk Müşaviri, İlçe Emniyet Müdürü, Havacılık Müdürü, Özel Harekat Müdürü, Başkanlıklarda Şube Müdürü ve diğerleri\n- **Üçüncü Sınıf Emniyet Müdürü – 4:** Moral Eğitim Merkezi Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdürü, İlçe Emniyet Müdürü, İlçe Emniyet Müdür Yardımcısı, Öğretim Görevlisi, Pilot\n- **Dördüncü Sınıf Emniyet Müdürü – 5:** Şube Müdürü, İlçe Emniyet Müdür Yardımcısı, Hukuk Müşaviri, Şube Müdür Yardımcısı, Öğretim Görevlisi, Pilot, İlçe Emniyet Müdürü",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tepedeki iki satırı karıştırma",
+      "body": "Emniyet Genel Müdürü **Sınıf Üstü Emniyet Müdürü – Derece Üstü** satırındadır. Şıklarda «Sınıf Üstü – 1» ya da «Birinci Sınıf – 1» görürsen ele. Genel Müdür Yardımcısı, Teftiş Kurulu Başkanı ve Polis Akademisi Başkanı ise **1. derecededir**. Bunları Derece Üstü'ne ya da 2. dereceye kaydırma. 2. derecede bunların yardımcıları yer alır: Polis Akademisi Başkan Yardımcısı ve Teftiş Kurulu Başkan Yardımcısı. Unvanın sonunda «Yardımcısı» varsa bir alt satıra in.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Amir ve polis rütbeleri",
+      "body": "**Emniyet amiri ve altındaki rütbeler (md 13):**\n- **Emniyet Amiri – 6:** İlçe Emniyet Amiri, Bürolar Amiri, Birlik Amiri, Çevik Kuvvet Grup Amiri, Ekipler Amiri, Tim Amiri, İlçe Emniyet Müdür Yardımcısı, Büro Amiri, Trafik İstasyon Amiri, Sınıflar Amiri\n- **Başkomiser – 7:** Karakol Amiri, Büro Amiri, Çevik Kuvvet Grup Amiri, İlçe Emniyet Komiseri, Birlik Amiri, Trafik İstasyon Amiri, Trafik Kayıt ve Tescil Büro Amiri, Karakol Amir Yardımcısı, Grup Amiri\n- **Komiser – 8:** Grup Amiri, Ekip Amiri, Tim Amiri, Büro Amiri, Karakol Amir Yardımcısı, Sınıflar Amiri Yardımcısı, Sınıf Komiseri, Trafik İstasyonu Amir Yardımcısı\n- **Komiser Yardımcısı – 9:** Grup Amiri, Ekip Amiri, Tim Amiri, Büro Amiri, Karakol Amir Yardımcısı, Sınıflar Amiri Yardımcısı, Sınıf Komiseri\n- **Kıdemli Başpolis Memuru – 10:** Ekip Amiri, Tim Amiri, Grup Amiri, Büro Amir Yardımcısı, Grup Amir Yardımcısı, Büro Memuru, Ekip Memuru\n- **Başpolis Memuru – 11:** Ekip Amiri, Tim Amiri, Devriye Amiri, Grup Amiri, Grup Amir Yardımcısı, Ekip Amir Yardımcısı, Büro Amir Yardımcısı, Büro Memuru, Ekip Memuru\n- **Polis Memuru – 12:** Büro, Ekip, Tim, Karakol, Nokta, Devriye, Koruma, Trafik ve Telsiz Memuru, Memur",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Rütbe–derece eşleştirmesinde kayma",
+      "body": "Komiser **8**, Polis Memuru **12**. Bu ikisi en çok sorulan eşleştirmelerdir. Asıl tuzak alttaki iki basamaktadır. **Kıdemli Başpolis Memuru 10**, **Başpolis Memuru 11** derecededir. «Kıdemli Başpolis Memuru – 11» gördüğünde yanlış de. «Kıdemli» sıfatı rütbeyi bir basamak yukarı taşır. Bu yüzden derece numarası küçülür. Komiser Yardımcısı da 9 derecededir, komiserin bir altında yer alır.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "trap",
+      "title": "Unvan hangi rütbenin karşısında?",
+      "body": "**Karakol Amiri**, Başkomiser'in karşısındadır. Komiser ve Komiser Yardımcısı'nın karşısında yalnız **Karakol Amir Yardımcısı** bulunur. Bu yüzden «Komiser – Karakol Amiri» yanlış bir eşleştirmedir. **Devriye Amiri** Başpolis Memuru'na aittir. Polis Memuru'nun karşısında ise **Devriye Memuru** vardır. «Amiri» ile «Memuru» eklerine dikkat et. Şunlar ise doğru eşleştirmelerdir: Başkomiser – İlçe Emniyet Komiseri, Emniyet Amiri – Bürolar Amiri, Komiser Yardımcısı – Sınıf Komiseri, Kıdemli Başpolis Memuru – Büro Amir Yardımcısı.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "numbers",
+      "title": "Rütbe → meslek derecesi",
+      "rows": [
+        {
+          "label": "Sınıf Üstü Emniyet Müdürü",
+          "value": "Derece Üstü ve 1",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf Emniyet Müdürü",
+          "value": "2",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "İkinci Sınıf Emniyet Müdürü",
+          "value": "3",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Üçüncü Sınıf Emniyet Müdürü",
+          "value": "4",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Dördüncü Sınıf Emniyet Müdürü",
+          "value": "5",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Emniyet Amiri",
+          "value": "6",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Başkomiser",
+          "value": "7",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Komiser",
+          "value": "8",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Komiser Yardımcısı",
+          "value": "9",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Kıdemli Başpolis Memuru",
+          "value": "10",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Başpolis Memuru",
+          "value": "11",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Polis Memuru",
+          "value": "12",
+          "refs": [
+            "13"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İkinci Sınıf Emniyet Müdürü ilçe emniyet müdürü olabilir",
+      "body": "**Kural:** İkinci Sınıf Emniyet Müdürü rütbesindeki polis amirleri, belirlenecek ilçelere **ilçe emniyet müdürü** olarak atanabilir.\n\n**İlçe belirlenirken dikkate alınan kriterler:**\n- emniyet ve asayiş durumu\n- ekonomik, sosyal ve kültürel özellikler\n- nüfus büyüklüğü\n- şehirleşme düzeyi\n\n**Bu ilçelerde:** Üçüncü Sınıf Emniyet Müdürleri **ilçe emniyet müdür yardımcısı** olarak görevlendirilebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Bu ilçede Üçüncü Sınıf ne olur?",
+      "body": "Soru köküne İkinci Sınıf Emniyet Müdürü'nün ilçe emniyet müdürü olarak atandığı bir ilçe konursa cevap tektir. Üçüncü Sınıf Emniyet Müdürü burada **ilçe emniyet müdür yardımcısı** olarak görevlendirilebilir. Şıklarda il emniyet müdür yardımcısı, ilçe emniyet amiri, bürolar amiri ve şube müdür yardımcısı da görürsün. Bunlar cetvelde başka satırlardaki unvanlardır, bu hükümde geçmez. Bir de şunu karıştırma: ilçe emniyet müdürlüğüne atanabilme sırası **İkinci Sınıf** için düzenlenmiştir, Birinci Sınıf için değil.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Birim amirinin emrine alma ve görev yeri değişikliği",
+      "body": "**Birim amirinin emrine alma**\n- **Kimler:** 2 nci, 3 üncü, 4 üncü, 5 inci ve 6 ncı meslek derecelerindeki personel.\n- **Şart:** ihtiyaç hâli.\n- **Nasıl:** Görev unvanlarına bakılmaksızın, araştırma, inceleme ve denetleme gibi görevler verilmek üzere atandıkları birim amirinin emrine alınabilirler.\n\n**Görev yeri değişikliği**\n- **Yetkili:** İdare.\n- **Kapsam:** Her rütbe ve meslek derecesi karşısında gösterilen görev unvanları arasında personelin görev yerini değiştirebilir.",
+      "articleRefs": [
+        "13"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "2'den 6'ya, başka aralık değil",
+      "body": "Emrine alınabilecek dereceler **2, 3, 4, 5 ve 6**'dır. «1–5» ya da «3–7» şıkları, aralığı bir basamak kaydırarak seni yakalamaya çalışır. 1. derece ve Derece Üstü bu hükmün dışındadır. Görev yeri değişikliğinde yetki **idareye** verilmiştir. Metin ilgilinin muvafakatini, Cumhurbaşkanı kararını ya da rütbe terfiini aramaz. Yetki, personelin kendi rütbe ve meslek derecesi karşısında gösterilen unvanlarla sınırlıdır. Bir üst derecenin unvanlarına uzanmaz.",
+      "articleRefs": [
+        "13"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Kaymakamlık ve Dahiliye memurlukları ile denklik",
+      "body": "**Kaymakamlıklara muadillik**\n- **Kimler:** Beşinci, altıncı, yedinci ve sekizinci meslek derecelerindeki emniyet teşkilatı mensuplarından **yüksek mektep mezunu** olanlar.\n\n**Karşılıklı tayin**\n- **Emniyetten kaymakamlığa:** Bunlar arasında Siyasal Bilgiler Okulu veya lise muadil tahsil görmüş hukuk mezunları kaymakamlıklara tayin edilebilir.\n- **Kaymakamlıktan emniyete:** Aynı derecedeki kaymakamlar emniyet müdürlüklerine tayin edilebilir.\n- **Tayin şekli:** naklen veya terfian.\n\n**Dahiliye memurlukları**\n- **Kimler:** Dördüncü ve daha yukarı meslek derecelerindeki memurlardan **yüksek tahsil görmüş** olanlar.\n- **Ölçü:** Maaşlarının miktarına göre, o maaşı alan Dahiliye memurlukları derecelerine muadil memurluklar.\n- **Tayin şekli:** naklen veya terfian.",
+      "articleRefs": [
+        "15"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Beşinci–sekizinci ve maaş ölçüsü",
+      "body": "Kaymakamlıklara muadil dereceler **beşinci, altıncı, yedinci ve sekizinci** derecelerdir. «Dördüncü–yedinci» şıkkı aynı maddenin üçüncü fıkrasındaki «dördüncü»den beslenir, sakın kanma. Dördüncü ve daha yukarı dereceler Dahiliye memurlukları fıkrasına aittir. Orada ölçü **maaşın miktarı**dır. Kıdem, öğrenime bakılmaksızın tayin ya da bir komisyon teklifi metinde geçmez. Ayrıca bu fıkra valilik ve kaymakamlık kadrolarıyla da sınırlanmamıştır.",
+      "articleRefs": [
+        "15"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet Genel Müdürlüğünün merkez ve taşra teşkilatı",
+      "body": "**Emniyet Genel Müdürlüğü = merkez + taşra teşkilatı.**\n\n**A) Merkez teşkilatı:**\n1. Teftiş Kurulu Başkanlığı\n2. Başkanlıklar\n3. Hukuk Müşavirliği\n4. Daire Başkanlıkları\n\n**Merkezin iç yapısı:**\n- Daire başkanlıkları, ihtiyaca göre kurulan **en az üç şube müdürlüğü veya koruma müdürlüğünden** oluşur.\n- Şube müdürlükleri veya koruma müdürlükleri **en az üç büro amirliğinden** oluşur.\n\n**B) Taşra teşkilatı:**\n- İllerde: il emniyet müdürlükleri\n- İlçelerde: ilçe emniyet müdürlükleri **veya** ilçe emniyet amirlikleri\n- Güvenlik hizmetlerine ilişkin diğer birimler\n\n**Polis teşkilatı birimi:** İçişleri Bakanlığının uygun göreceği yerleşim alanlarında kurulabilir.\n\n**Görev, yetki ve sorumluluklar:** Bakanlıkça çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Merkez mi, taşra mı? Kim uygun görür?",
+      "body": "**İl Emniyet Müdürlükleri merkez teşkilatında sayılmaz**, taşradadır. Merkezde yalnız Teftiş Kurulu Başkanlığı, Başkanlıklar, Hukuk Müşavirliği ve Daire Başkanlıkları vardır. İlçeler için kalıp şudur: ilçe emniyet müdürlükleri **veya** ilçe emniyet amirlikleri. «Yalnız» diye başlayan şıklar ya da karakol ve büro amirliği ekleyen şıklar yanlıştır. Zincire de dikkat et. Daire başkanlığının altında **şube veya koruma müdürlüğü** bulunur, büro amirliği ise şube müdürlüğünün altındadır. Polis teşkilatı birimini **İçişleri Bakanlığı** uygun görür. Cumhurbaşkanı, Emniyet Genel Müdürlüğü, belediye meclisi ya da bir komisyon bu yetkiye sahip değildir.",
+      "articleRefs": [
+        "16"
+      ],
+      "counterNumbers": []
+    },
+    {
+      "type": "rule",
+      "title": "Vilayet kadroları, emniyet amirleri ve hekim",
+      "body": "**Md 20 – Meslek dereceleri ve kadroların kullanımı**\n- Vilayet emniyet müdürlüklerinin, kaza emniyet amirliklerinin ve bunların şubelerindeki memurların meslek derecelerini tayin etmek **Dahiliye Vekaletine** aittir.\n- Vilayet kadrosundan muhtelif derecede memurlar ayrılarak Emniyet Umum Müdürlüğü daire ve şubelerinde kullanılabilir.\n- Merkez kadrosundaki memurlar da aynı şekilde vilayetlerde kullanılabilir.\n\n**Md 21 – Emniyet amirlerinin kullanılabileceği yerler**\n- Kimler: **birinci ve ikinci sınıf emniyet amirleri**.\n- Nerede: Emniyet Umum Müdürlüğü büro şefliklerinde.\n- Nerede: İstanbul, Ankara ve birinci, ikinci sınıf emniyet müdürlüklerinin şube müdür muavinliklerinde.\n\n**Md 22 – Hekim istihdamı**\n- Lüzum görülen vilayetlerde yeteri kadar hekim istihdam olunur.\n- Bu hekimler yalnızca emniyet polis memurları ile ailelerinin sıhhat hâlleriyle meşgul olur.",
+      "articleRefs": [
+        "20",
+        "21",
+        "22"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Altıncı ve daha yukarı derecede öğrenim şartı",
+      "body": "**Kural:** Altıncı ve daha yukarıdaki meslek derecelerindeki memurların **Hukuk veya Siyasal Bilgiler Fakülteleri** mezunu olmaları şarttır.\n\n**İstisnalar (bu derecelere tayin olunabilenler):**\n- İhtisaslarından istifade edileceği Vekaletçe takdir edilen diğer yüksek mektep mezunları.\n- Bu kanuna göre meslek dahilinde yüksek tahsil gördükleri kabul edilenler.\n\n**Kimler yüksek tahsil görmüş sayılır:**\n- Liseden veya Polis Kolejinden mezun başkomiserler ile ikinci sınıf emniyet amirleri,\n- terfi için muvafık sicil almaları şartıyla,\n- Polis Enstitüsünün yüksek tahsil kısmını ve ihtisas kursunu başarıyla bitirirlerse,\n- emniyet teşkilatı kadroları dahilinde yüksek tahsil görmüş sayılırlar.\n\nBunlar da altıncı ve daha yukarı derecelere tayin olunabilir.",
+      "articleRefs": [
+        "26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yurt dışı staj ve sivil polislik",
+      "body": "**Md 35 – Yurt dışı staj:** Polis ve komiserlerden yabancı memleketlere stajyer gönderilebilir. Amaç, polis köpek ve kuşları gibi hayvanların yetiştirme tarzlarını ve motorlu vasıtaların kullanma usullerini uygulamalı öğrenmektir.\n\n**Md 36 – Sivil polise ayırma**\n- **Kim ayırır:** Vilayet emniyet müdürleri.\n- **Kimleri:** Polis Enstitüsünün ilk kısmını veya Polis Mektebini başarıyla bitirmiş polisleri.\n- **Sınır:** Kadronun izin verdiği ölçüde ve umumi vazifelere zarar gelmeyecek şekilde.\n- **Staj:** En az **altı ay**, en çok **bir sene** meslekte staj devresi zorunludur.\n- **Uygun görülmezse:** Sivil sınıf için gerekli vasıf ve şartları taşımadığı anlaşılanlar üniformalı sınıfa iade olunur.\n- **Tercih:** Orta mektep ve daha yukarı tahsil görmüş olanlar tercihen bu sınıfa ayrılır.\n\n**Md 37 – Asli sivil sınıf**\n- Stajda ehliyet ve kabiliyet göstererek asli sivil sınıfa nakledilenler, Polis Enstitüsünün orta tahsil kısmına ve sivil kursuna gönderilir.\n- Başaranlar çıkış sırasına ve münhallere göre **sivil komiser muavinliğine** tayin olunur.\n\n**Md 38 – Mevcut sivil personel:** Kanunun yürürlük tarihinde sivil sınıfta bulunan polis ve komiserler, orta tahsil kısmı sivil kursuna tedricen gönderilir.\n\n**Md 39 – Başarısızlık:** Orta tahsil kısmı ve sivil kursta başarı gösteremeyen sivil memurlar üniformalı sınıfa nakil ve iade olunur.",
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tahsil görmemiş polis ve komiserler",
+      "body": "**Md 40 – Tahsile gönderme**\n- **Kimler:** Kanunun yürürlük tarihinde kadrolarda çalışan ve mektep ve meslek tahsillerini görmemiş polis ve komiserler.\n- **Nasıl:** **Kıdem sırasıyla** tedricen tahsile gönderilirler.\n\n**Md 41 – Başarısızlık:** Bu memurlardan tahsillerini başarıyla bitiremeyenler **dereceleriyle mesleğe iade** olunur.\n\nKarşılaştır: sivil kursta başaramayan sivil memur ise üniformalı sınıfa döner (md 39).",
+      "articleRefs": [
+        "40",
+        "41",
+        "39"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar ve sınırlar",
+      "rows": [
+        {
+          "label": "Daire başkanlığını oluşturan şube veya koruma müdürlüğü",
+          "value": "en az üç",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Şube veya koruma müdürlüğünü oluşturan büro amirliği",
+          "value": "en az üç",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "Yüksek mektep mezunu olup kaymakamlıklara muadil sayılan dereceler",
+          "value": "beşinci, altıncı, yedinci, sekizinci",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Maaş miktarına göre Dahiliye memurluklarına tayin edilebilenler",
+          "value": "dördüncü ve daha yukarı derece",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Birim amirinin emrine alınabilen dereceler",
+          "value": "2, 3, 4, 5, 6",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "Hukuk veya Siyasal Bilgiler mezuniyeti şartı",
+          "value": "altıncı ve daha yukarı derece",
+          "refs": [
+            "26"
+          ]
+        },
+        {
+          "label": "Büro şefliği ve şube müdür muavinliğinde kullanılabilen emniyet amirleri",
+          "value": "birinci ve ikinci sınıf",
+          "refs": [
+            "21"
+          ]
+        },
+        {
+          "label": "Sivil polis staj devresi",
+          "value": "en az altı ay, en çok bir sene",
+          "refs": [
+            "36"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "15",
+        "16",
+        "21",
+        "26",
+        "36"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Merkez teşkilatı ve taşra teşkilatı",
+      "rows": [
+        {
+          "aspect": "Birimler",
+          "left": "Teftiş Kurulu Başkanlığı, Başkanlıklar, Hukuk Müşavirliği, Daire Başkanlıkları",
+          "right": "İllerde il emniyet müdürlükleri; ilçelerde ilçe emniyet müdürlükleri veya ilçe emniyet amirlikleri; güvenlik hizmetlerine ilişkin diğer birimler",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "aspect": "Alt yapılanma",
+          "left": "Daire başkanlığı en az üç şube veya koruma müdürlüğünden; bunlar en az üç büro amirliğinden oluşur",
+          "right": "Polis teşkilatı birimi, İçişleri Bakanlığının uygun göreceği yerleşim alanlarında kurulabilir",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "aspect": "Görev, yetki ve sorumluluk",
+          "left": "Bakanlıkça çıkarılacak yönetmelik",
+          "right": "Bakanlıkça çıkarılacak yönetmelik",
+          "refs": [
+            "16"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "16"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "14",
+          "refs": [
+            "13",
+            "15",
+            "16",
+            "20",
+            "21",
+            "22",
+            "26",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41"
+          ]
+        },
+        {
+          "label": "md 13 — Rütbeler, Meslek Dereceleri ve Görev Unvanları",
+          "value": "8 soru",
+          "refs": [
+            "13"
+          ]
+        },
+        {
+          "label": "md 16 — Merkez, taşra ve yurt dışı teşkilatı",
+          "value": "4 soru",
+          "refs": [
+            "16"
+          ]
+        },
+        {
+          "label": "md 15",
+          "value": "2 soru",
+          "refs": [
+            "15"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 20, md 21, md 22, md 26, md 35, md 36, md 37, md 38, md 39, md 40, md 41",
+          "refs": [
+            "13",
+            "15",
+            "16",
+            "20",
+            "21",
+            "22",
+            "26",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "13",
+        "15",
+        "16",
+        "20",
+        "21",
+        "22",
+        "26",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "13",
+        "15",
+        "16",
+        "20",
+        "21",
+        "22",
+        "26",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 13, 15, 16, 20–22, 26, 35–41, 10 soru",
+          "refs": [
+            "13",
+            "15",
+            "16",
+            "20",
+            "21",
+            "22",
+            "26",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41"
+          ]
+        }
+      ]
+    }
+  ]
+}

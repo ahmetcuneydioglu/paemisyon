@@ -1,0 +1,809 @@
+{
+  "unit": {
+    "slug": "cmk-tutuklama-adli-kontrol",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Tutuklama ve adli kontrol",
+    "subtitle": "Tutuklamanın şartları ve yasakları, tutukluluk süreleri, adli kontrol yükümlülükleri ve güvence",
+    "articleFrom": "100",
+    "articleTo": "115",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 100–110, 110/A, 111–115",
+    "articleNos": [
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "110/A",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 6
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Tutuklama kapısı nasıl açılır?",
+      "body": "Tutuklamayı bir kapı gibi düşün. Açılması için iki anahtar birlikte gerekir: kuvvetli suç şüphesinin varlığını gösteren somut deliller ve bir tutuklama nedeni. İkisi de elindeyse bile kapı kendiliğinden açılmaz, çünkü kanun 'tutuklama kararı verilebilir' der. Karar yargı merciinin takdirindedir. Bir de fren var: işin önemi, verilmesi beklenen ceza veya güvenlik tedbiri ile ölçülü değilse tutuklama kararı verilemez. Bu ünitede önce kimin, hangi şartla tutuklayabileceğini göreceksin. Sonra ne kadar süre tutabileceğini öğreneceksin. En sonda da tutuklamanın yerine geçebilen adli kontrolü ele alacağız.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutuklama şartları ve nedenleri",
+      "body": "**Temel şartlar (md 100/1):**\n- Kuvvetli suç şüphesinin varlığını gösteren somut deliller\n- Bir tutuklama nedeni\n- Ölçülülük: işin önemi, beklenen ceza veya güvenlik tedbiri ile ölçülü değilse tutuklama kararı verilemez.\n\n**Tutuklama nedeni var sayılabilir (md 100/2):**\n- Şüpheli veya sanığın kaçması, saklanması veya kaçacağı şüphesini uyandıran somut olgular varsa\n- Şüpheli veya sanığın davranışları, delilleri yok etme, gizleme veya değiştirme hususunda kuvvetli şüphe oluşturuyorsa\n- Şüpheli veya sanığın davranışları, tanık, mağdur veya başkaları üzerinde baskı yapılması girişiminde bulunma hususunda kuvvetli şüphe oluşturuyorsa",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Katalog suçlar",
+      "body": "**Kural (md 100/3):** Aşağıdaki suçların işlendiği hususunda somut delillere dayanan kuvvetli şüphe sebepleri varsa tutuklama nedeni **var sayılabilir**.\n\n**Türk Ceza Kanununda yer alanlar:**\n- Soykırım ve insanlığa karşı suçlar\n- Göçmen kaçakçılığı ve insan ticareti\n- Kasten öldürme\n- Kasten yaralama (md 86, fıkra 3, bent b, e ve f) ve neticesi sebebiyle ağırlaşmış kasten yaralama (md 87)\n- İşkence\n- Cinsel saldırı (birinci fıkra hariç)\n- Çocukların cinsel istismarı\n- Hırsızlık ve yağma\n- Uyuşturucu veya uyarıcı madde imal ve ticareti\n- Suç işlemek amacıyla örgüt kurma (iki, yedi ve sekizinci fıkralar hariç)\n- Devletin Güvenliğine Karşı Suçlar\n- Anayasal Düzene ve Bu Düzenin İşleyişine Karşı Suçlar\n\n**Diğer kanunlarda yer alanlar:**\n- Ateşli Silahlar ve Bıçaklar Kanununda tanımlanan silah kaçakçılığı\n- Bankalar Kanununda tanımlanan zimmet\n- Kaçakçılıkla Mücadele Kanununda tanımlanan ve hapis cezasını gerektiren suçlar\n- Kültür ve Tabiat Varlıklarını Koruma Kanunu md 68 ve 74'teki suçlar\n- Orman Kanunundaki kasten orman yakma\n- Toplantı ve Gösteri Yürüyüşleri Kanunu md 33'te sayılan suçlar\n- Terörle Mücadele Kanunu md 7'nin üçüncü fıkrasındaki suçlar\n\n**Kasten yaralamada özel mağdurlar:**\n- Kadına karşı işlenen kasten yaralama\n- Sağlık kurum ve kuruluşlarında görev yapan personele karşı, görevleri sırasında veya görevleri dolayısıyla işlenen kasten yaralama\n- Resmî eğitim kurumları ile özel öğretim kurumlarında görev yapan yönetici, öğretmen ve öğreticilere karşı, görevleri sırasında veya görevleri sebebiyle işlenen kasten yaralama",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Katalogda olmayanı yakala",
+      "body": "Soru kökü çoğu zaman 'hangisi bu suçlardan biri **değildir**' diye gelir. Çeldiriciler katalogdaki bir suça benzer, ama aynısı değildir:\n- **İrtikâp** katalogda yoktur. Zimmet ise yalnız Bankalar Kanunundaki hâliyle vardır.\n- **Kasten** öldürme katalogdadır. Taksirle öldürme katalogda yoktur.\n- Sağlık personeli ve öğretmenler için katalogdaki suç **kasten yaralama**dır. Aynı kişilere karşı **tehdit** katalogda değildir.\n- Cebir, mala zarar verme ve resmî belgede sahtecilik katalogda yer almaz.\n- Kasten yaralama her hâliyle katalogda değildir. Yalnız md 86 fıkra 3'ün b, e ve f bentleri ile md 87 kapsamındaki hâller sayılmıştır.\n\nUnutma: Katalog suçta bile tutuklama nedeni yalnızca **var sayılabilir**. Kasten öldürme şüphelisinin tutuklanmaması da mümkündür.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutuklama yasağı",
+      "body": "**Tutuklama kararı verilemez (md 100/4):**\n- Sadece adlî para cezasını gerektiren suçlarda\n- Hapis cezasının **üst sınırı** iki yıldan fazla olmayan suçlarda\n\n**İstisna:** Vücut dokunulmazlığına karşı kasten işlenen suçlarda bu yasak uygulanmaz. Üst sınır iki yılı aşmasa da tutuklama mümkündür.\n\n**Ölçülülük (md 100/1):** İşin önemi, verilmesi beklenen ceza veya güvenlik tedbiri ile ölçülü değilse tutuklama kararı verilemez.\n\n**Yasak varsa adli kontrol yine mümkündür (md 109/2):** Kanunda tutuklama yasağı öngörülen hâllerde de adlî kontrole ilişkin hükümler uygulanabilir.",
+      "articleRefs": [
+        "100",
+        "109"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yasak ve şart tuzakları",
+      "body": "- Ölçüt cezanın **üst sınırı**dır. 'Alt sınırı iki yıldan az' diye kurulan şık yanlıştır.\n- 'Üst sınırı iki yılı aşmayan **bütün** suçlarda istisnasız yasak' ifadesi yanlıştır. Vücut dokunulmazlığına karşı kasten işlenen suçlar yasağın dışındadır.\n- Sadece adlî para cezası gerektiren suçta tutuklama nedeni olsa bile tutuklama kararı verilemez.\n- Hapis cezasının üst sınırı iki yıla kadar olan ve yanında adlî para cezası da öngören suçta yasak yine işler. Bakılan, hapis cezasının üst sınırıdır.\n- Aranan şüphe **kuvvetli** suç şüphesidir, 'yeterli' şüphe değildir. Somut deliller de **şarttır**.\n- 'Suçun toplumda infial uyandırması' kanunda tutuklama şartı olarak geçmez.\n- 'Cezanın üst sınırı şu kadar yılı aşmamalı' diye bir tutuklama şartı yoktur. Kanun yasağı yalnız hafif suçlar için koyar.",
+      "articleRefs": [
+        "100"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutuklama kararı",
+      "body": "**Karar mercii (md 101/1):**\n- **Soruşturma evresi:** Cumhuriyet savcısının istemi üzerine **sulh ceza hâkimi** karar verir.\n- **Kovuşturma evresi:** Cumhuriyet savcısının istemi üzerine **veya re'sen** mahkeme karar verir.\n\n**İstemin içeriği:** İstemde mutlaka gerekçe gösterilir. Adlî kontrolün yetersiz kalacağını belirten hukukî ve fiilî nedenlere de yer verilir.\n\n**Kararın gerekçesi (md 101/2):** Aşağıdakileri gösteren deliller somut olgularla açıkça gösterilir:\n- Kuvvetli suç şüphesi\n- Tutuklama nedenlerinin varlığı\n- Tedbirin ölçülü olduğu\n- Adli kontrolün yetersiz kalacağı\n\nBu gerekçe; tutuklama, tutuklamanın devamı ve tahliye isteminin reddi kararlarının hepsinde aranır.\n\n**Bildirim:** Kararın içeriği sözlü bildirilir, bir örneği yazılı olarak verilir ve bu husus kararda belirtilir.\n\n**Müdafi (md 101/3):** Tutuklama istenince şüpheli veya sanık, kendi seçeceği ya da baronun görevlendireceği müdafiin yardımından yararlanır.\n\n**Karar verilmezse (md 101/4):** Şüpheli veya sanık derhâl serbest bırakılır.\n\n**Kanun yolu (md 101/5):** md 100 ve 101 gereğince verilen kararlara **itiraz** edilebilir.",
+      "articleRefs": [
+        "101"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savcı tutuklamaz ama serbest bırakır",
+      "body": "En sevilen tuzak şudur: **Cumhuriyet savcısı tutuklama kararı veremez**, yalnızca ister. Kararı soruşturmada sulh ceza hâkimi, kovuşturmada mahkeme verir. Kanun bu yetkiyi yalnız hâkime ve mahkemeye tanır. Şıkta başka bir makam sayılırsa yanılma.\n\nTers yönde ise savcı güçlüdür. Soruşturma evresinde tutuklamanın artık gereksiz olduğu kanısına varırsa şüpheliyi **re'sen** serbest bırakır. Bunun için hâkim kararı gerekmez.\n\nDiğer klasik tuzaklar:\n- Savcı adli kontrol kararını kendisi veremez. Şüphelinin adlî kontrol altına alınarak serbest bırakılmasını sulh ceza hâkiminden **ister**.\n- Kovuşturmada mahkeme, savcının istemini beklemeden re'sen tutuklayabilir.\n- Tutuklama kararına karşı başvurulacak yol **itiraz**dır. İstinaf ve temyiz bu kararın kanun yolu değildir.\n- Tutukluluğun devamı veya salıverilme kararlarına da itiraz edilebilir.\n- Dosya Yargıtaydaysa salıverilmeye Yargıtay ilgili dairesi veya Yargıtay Ceza Genel Kurulu karar verir. Yargıtay Cumhuriyet Başsavcısı bu kararı veremez.",
+      "articleRefs": [
+        "101",
+        "103",
+        "104",
+        "110"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tutukluluk süresi tuzakları",
+      "body": "- **Ağır ceza dışı işler:** Süre en çok bir yıldır, uzatma **altı ay**dır. 'Bir yıl daha uzatılır' şıkkı yanlıştır.\n- **Ağır ceza işleri:** Süre en çok **iki yıl**dır. 'Bir yıl' veya 'altı yıl' diyen şık yanlıştır.\n- **Uzatma tavanı:** Ağır ceza işlerinde uzatma toplam **üç yılı** geçemez. Terörle Mücadele Kanunu kapsamındaki suçlarda ve TCK İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölüm suçlarında bu tavan **beş yıl**dır. Dikkat: Beş yıl uzatmanın tavanıdır. Asıl süre olan iki yıl eklenince azami tutukluluk yedi yıla çıkar.\n- **Soruşturma evresi** ayrı bir tavandır: Ağır ceza dışı işlerde **altı ay**, ağır ceza işlerinde **bir yıl**. 'Soruşturmada iki yılı geçemez' şıkkı yanlıştır.\n- **Terör, özel bölüm ve toplu suçlar:** Soruşturma tavanı bir yıl altı aydır. Gerekçeyle altı ay daha uzatılabilir, böylece toplam iki yıl olur.\n- **Uzatma kararından önce görüş:** Cumhuriyet savcısı, şüpheli veya sanık ile müdafiinin görüşleri alınır. 'Mahkeme hâkiminin görüşü' yanlıştır.\n- **Çocuklar:** Süre **kısalır**, uzamaz. On beş yaşını doldurmamış çocukta yarı oranında, on sekiz yaşını doldurmamış çocukta dörtte üç oranında uygulanır. 'İki katı' şıkkı yanlıştır.",
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 7,
+          "expr": "2 + 5 (yıl: ağır ceza azami süresi + özel suçlarda uzatma tavanı)",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "1 yıl 6 ay + 6 ay = 2 yıl (soruşturma evresi, özel suçlar)",
+          "refs": [
+            "102"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Tutukluluk süreleri",
+      "rows": [
+        {
+          "label": "Ağır ceza dışı işler — azami süre",
+          "value": "1 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Ağır ceza dışı işler — uzatma (zorunlu hâl, gerekçeli)",
+          "value": "6 ay",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Ağır ceza dışı işler — uzatmayla en fazla",
+          "value": "1 yıl 6 ay",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Ağır ceza işleri — azami süre",
+          "value": "2 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Ağır ceza işleri — uzatma tavanı",
+          "value": "toplam 3 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Ağır ceza işleri — uzatmayla en fazla",
+          "value": "5 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "TMK ve TCK İkinci Kitap Dördüncü Kısım Dördüncü–Yedinci Bölüm suçları — uzatma tavanı",
+          "value": "toplam 5 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Aynı suçlar — uzatmayla en fazla",
+          "value": "7 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Soruşturma evresi — ağır ceza dışı işler",
+          "value": "6 ay",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Soruşturma evresi — ağır ceza işleri",
+          "value": "1 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Soruşturma evresi — TCK özel bölümler, TMK, toplu suçlar",
+          "value": "1 yıl 6 ay + 6 ay uzatma",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Aynı suçlar — soruşturmada uzatmayla en fazla",
+          "value": "2 yıl",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Fiil sırasında 15 yaşını doldurmamış çocuk",
+          "value": "yarı oranında",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Fiil sırasında 18 yaşını doldurmamış çocuk",
+          "value": "dörtte üç oranında",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "Uzatma öncesi görüşü alınanlar",
+          "value": "Cumhuriyet savcısı, şüpheli veya sanık, müdafi",
+          "refs": [
+            "102"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "102"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 5,
+          "expr": "2 + 3 (yıl: azami süre + uzatma tavanı)",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "value": 7,
+          "expr": "2 + 5 (yıl: azami süre + özel suçlarda uzatma tavanı)",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "value": 2,
+          "expr": "1 yıl 6 ay + 6 ay = 2 yıl",
+          "refs": [
+            "102"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Serbest bırakma ve salıverilme istemi",
+      "body": "**Savcının istemi (md 103/1):** Cumhuriyet savcısı, şüphelinin adlî kontrol altına alınarak serbest bırakılmasını sulh ceza hâkiminden isteyebilir. Hakkında tutuklama kararı verilen şüpheli ve müdafii de aynı istemde bulunabilir.\n\n**Re'sen serbest bırakma (md 103/2):** Savcı, soruşturma evresinde adlî kontrolün veya tutuklamanın artık gereksiz olduğu kanısına varırsa şüpheliyi re'sen serbest bırakır. Kovuşturmaya yer olmadığı kararı verildiğinde şüpheli serbest kalır.\n\n**Salıverilme istemi (md 104):**\n- Şüpheli veya sanık, soruşturma ve kovuşturmanın her aşamasında salıverilmesini isteyebilir.\n- Tutukluluğun devamına veya salıverilmeye hâkim veya mahkeme karar verir. Bu kararlara itiraz edilebilir.\n- Dosya bölge adliye mahkemesine veya Yargıtaya geldiyse kararı bölge adliye mahkemesi, Yargıtay ilgili dairesi veya Yargıtay Ceza Genel Kurulu verir. Karar dosya üzerinden verilir ve re'sen de verilebilir.\n\n**Usul (md 105):**\n- Merci, istem üzerine **üç gün** içinde istemin kabulüne, reddine veya adlî kontrol uygulanmasına karar verir.\n- Örgüt faaliyeti çerçevesinde işlenen suçlarda bu süre **yedi gün**dür. Savcının adlî kontrolle serbest bırakma istemi bu yedi günlük sürenin dışındadır.\n- Duruşma dışında karar verilirken Cumhuriyet savcısı, şüpheli, sanık veya müdafiin görüşü alınmaz.\n- Bu kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "103",
+        "104",
+        "105"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Salıverilenin yükümlülükleri ve yakınlara haber",
+      "body": "**Salıverilmeden önce (md 106):**\n- Şüpheli veya sanık, yetkili yargı merciine veya tutukevi müdürüne adresini ve varsa telefon numarasını bildirir.\n- Soruşturma veya kovuşturma sona erene kadar adres değişikliklerini bildirmesi kendisine ihtar edilir. Bildirim, yeniden beyanda bulunarak veya iadeli taahhütlü mektupla yapılır.\n- İhtara uymazsa önceden bildirdiği adrese tebligat yapılacağı da kendisine bildirilir.\n\n**Yakınlara haber (md 107):**\n- Tutuklamadan ve tutuklamanın uzatılmasına ilişkin her karardan, tutuklunun bir yakınına veya belirlediği bir kişiye **hâkimin kararıyla gecikmeksizin** haber verilir. Kanunda saatle ölçülen bir süre yoktur, haber verilmesini savcı değil hâkim karara bağlar.\n- Soruşturmanın amacını tehlikeye düşürmemek kaydıyla, tutuklunun durumu kendisinin bildirmesine de izin verilir.\n- Tutuklu yabancıysa durum, yazılı olarak karşı çıkmadıkça vatandaşı olduğu devletin konsolosluğuna bildirilir.",
+      "articleRefs": [
+        "106",
+        "107"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tutukluluğun incelenmesi",
+      "body": "**Soruşturma evresi (md 108/1):**\n- Şüpheli tutukevinde bulunduğu sürece, en geç **otuzar günlük** süreler itibarıyla tutukluluğun devamı incelenir.\n- Karar, Cumhuriyet savcısının istemi üzerine **sulh ceza hâkimi** tarafından verilir.\n- Md 100 hükümleri göz önünde bulundurulur, şüpheli veya müdafii dinlenir.\n\n**Şüphelinin istemi (md 108/2):** İnceleme, aynı süre içinde şüpheli tarafından da istenebilir.\n\n**Kovuşturma evresi (md 108/3):** Hâkim veya mahkeme, sanığın tutukluluğunun devamına **re'sen** karar verir. Bu karar her oturumda, koşullar gerektirdiğinde oturumlar arasında ya da otuz günlük süre içinde verilir.\n\n**Akılda kalsın:** Tutuklulukta inceleme aralığı otuz gün, adli kontrolde dört aydır. İkisini karıştıran şık yanlıştır.",
+      "articleRefs": [
+        "108",
+        "110"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Adli kontrol: tutuklamanın yerine geçen yol",
+      "body": "Adli kontrolü, hâkimin elindeki tutuklama dışı seçenek olarak düşün. 100. maddedeki tutuklama sebepleri varken bile hâkim, şüpheliyi tutuklamak yerine adlî kontrol altına alabilir. Üstelik kanunun tutuklamayı yasakladığı hâllerde de uygulanabilir. Yani adli kontrol yalnız yasak hâllerine özgü bir tedbir değildir ve cezanın üst sınırına bağlı bir eşiği yoktur. Soruşturmada savcı ister, sulh ceza hâkimi karar verir. Kovuşturmada ise görevli ve yetkili diğer yargı mercileri her aşamada uygulayabilir. Tutukluluk süreleri dolduğu için salıverilenlere de adli kontrol uygulanabilir.",
+      "articleRefs": [
+        "109",
+        "110"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli kontrol yükümlülükleri",
+      "body": "Adlî kontrol, şüphelinin **bir veya birden fazla** yükümlülüğe tabi tutulmasıdır (md 109/3):\n- a) Yurt dışına çıkamamak\n- b) Hâkimin belirlediği yerlere, belirtilen süreler içinde düzenli olarak başvurmak\n- c) Hâkimin belirttiği merci veya kişilerin çağrılarına uymak. Gerektiğinde meslekî uğraş veya eğitime devam konusundaki kontrol tedbirlerine de uymak\n- d) Taşıtların hepsini veya bazılarını kullanamamak. Gerektiğinde sürücü belgesini makbuz karşılığında kaleme teslim etmek\n- e) Tedavi veya muayene tedbirlerine tabi olmak ve bunları kabul etmek. Bu tedbirler özellikle uyuşturucu, uyarıcı, uçucu madde ve alkol bağımlılığından arınmak içindir ve hastaneye yatmayı da kapsar\n- f) Güvence yatırmak. Miktarı ve ödeme süreleri, şüphelinin parasal durumu göz önünde bulundurularak, savcının isteği üzerine hâkimce belirlenir\n- g) Silâh bulunduramamak veya taşıyamamak. Gerektiğinde silâhları makbuz karşılığında adlî emanete teslim etmek\n- h) Mağdurun haklarını güvenceye almak için hâkimin belirleyeceği parayı aynî veya kişisel güvenceye bağlamak\n- i) Aile yükümlülüklerini yerine getireceğine ve mahkûm edildiği **nafakayı** düzenli ödeyeceğine dair güvence vermek\n- j) Konutunu terk etmemek\n- k) Belirli bir yerleşim bölgesini terk etmemek\n- l) Belirlenen yer veya bölgelere gitmemek\n\n**Araç izni (md 109/5):** Hâkim veya Cumhuriyet savcısı, (d) bendindeki yükümlülükte şüphelinin meslekî uğraşında araç kullanmasına sürekli veya geçici olarak izin verebilir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Listede olmayan yükümlülük, karışan süre",
+      "body": "Soru genellikle 'hangisi adli kontrol yükümlülüğü **değildir**' diye gelir. Çeldirici çoğu zaman listedeki bir bendin hafifçe bozulmuş hâlidir:\n- (i) bendinde ödenecek olan **nafaka**dır. 'Eşinin ev kirası' gibi başka bir borç yazılmışsa şık yanlıştır.\n- **İletişimin tespiti, dinlenmesi ve kayda alınması** adli kontrol listesinde yoktur.\n- **Taşınır ve taşınmaz malları, alacakları teslim etmek** de listede yoktur. Listede teslim edilenler yalnızca sürücü belgesi ve silâhlardır.\n- Adli kontrol yalnız tutuklama yasağı olan durumlar için değildir. Tutuklama sebepleri varken de uygulanır.\n\nSürelerde dikkat etmen gerekenler:\n- Adli kontrolün devamı en geç **dört aylık** aralıklarla değerlendirilir. Otuz günlük aralık tutukluluğa aittir.\n- Çocuklarda adli kontrol süresi **yarı** oranında uygulanır. Dörtte üç oranı, tutuklulukta on sekiz yaşını doldurmamış çocuklara aittir.\n- Ağır ceza işlerinde adli kontrol süresi **üç yıl**dır. İki yıl, ağır ceza dışı işlerin süresidir.\n- Uzatma tavanı toplam üç yıl, özel suçlarda ise dört yıldır. 'Beş yıl' tutukluluğa ait bir sayıdır.",
+      "articleRefs": [
+        "109",
+        "110",
+        "110/A",
+        "102",
+        "108"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Özel hâller ve cezadan mahsup",
+      "body": "**Tutuklama yerine adli kontrol (md 109/4):** Aşağıdaki şüpheliler hakkında tutuklama yerine adlî kontrol kararı verilebilir:\n- Ağır hastalık veya engellilik nedeniyle ceza infaz kurumunda hayatını yalnız idame ettiremediği tespit edilen şüpheli\n- **Gebe** olan kadın şüpheli\n- Doğurduğu tarihten itibaren **altı ay** geçmemiş kadın şüpheli\n\nMahkûmiyet hükmüne karşı istinaf veya temyize başvurulmuşsa, UYAP kayıtlarını inceleyerek hükmü veren ilk derece mahkemesi de adlî kontrol kararı verebilir.\n\n**Mahsup (md 109/6):**\n- **Kural:** Adlî kontrolde geçen süre cezadan mahsup **edilemez**.\n- **İstisna:** Bu kural (e) bendinde (tedavi veya muayene) ve (j) bendinde (konutunu terk etmemek) uygulanmaz.\n- **Konutta oran:** Konutunu terk etmemek yükümlülüğü altında geçen her **iki gün**, mahsupta **bir gün** sayılır.\n- 'Adli kontrol süresi hiçbir şekilde mahsup edilmez' ifadesi bu yüzden yanlıştır.\n\n**Süre dolunca (md 109/7):** Tutukluluk süreleri dolduğu için salıverilenler hakkında da adlî kontrol uygulanabilir.",
+      "articleRefs": [
+        "109"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli kontrol kararı, değiştirme ve kaldırma",
+      "body": "**Karar (md 110/1):** Şüpheli, Cumhuriyet savcısının istemi ve sulh ceza hâkiminin kararıyla soruşturmanın her aşamasında adlî kontrol altına alınabilir.\n\n**Değiştirme (md 110/2):** Hâkim, savcının istemiyle şunları yapabilir:\n- Yeni yükümlülük eklemek\n- Yükümlülükleri bütünüyle veya kısmen kaldırmak ya da değiştirmek\n- Şüpheliyi bazı yükümlülüklerden geçici olarak muaf tutmak\n\n**Kovuşturma (md 110/3):** Bu hükümler, görevli ve yetkili diğer yargı mercilerince kovuşturmanın her aşamasında uygulanır.\n\n**Periyodik inceleme (md 110/4):** Adli kontrolün devamına en geç **dört aylık** aralıklarla karar verilir. Soruşturmada savcının istemi üzerine sulh ceza hâkimi, kovuşturmada **re'sen** mahkeme karar verir.\n\n**Kaldırma istemi (md 111):** Şüpheli veya sanık isterse, hâkim veya mahkeme Cumhuriyet savcısının görüşünü aldıktan sonra **beş gün** içinde karar verebilir. Adlî kontrole ilişkin kararlara itiraz edilebilir.",
+      "articleRefs": [
+        "110",
+        "111"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Adli kontrole uymamanın sonucu",
+      "body": "**Kural (md 112/1):** Adlî kontrol hükümlerini **isteyerek** yerine getirmeyen şüpheli veya sanık hakkında, yetkili yargı mercii **hemen** tutuklama kararı verebilir. Hükmedilebilecek hapis cezasının süresi ne olursa olsun bu karar verilebilir. Yani cezanın üst sınırının düşük olması tutuklamaya engel değildir.\n\nMahkûmiyet hükmüne karşı istinaf veya temyize başvurulmuşsa, UYAP kayıtlarını inceleyerek hükmü veren ilk derece mahkemesi de tutuklama kararı verebilir.\n\n**Süre dolduğu için verilen adli kontrolün ihlali (md 112/2):** Azami tutukluluk süresi dolduğu için adli kontrol verilmiş ve bu tedbir ihlal edilmişse de aynı kural uygulanabilir. Ancak bu tutuklamanın süresi sınırlıdır:\n- Ağır ceza işlerinde **dokuz aydan** fazla olamaz.\n- Diğer işlerde **iki aydan** fazla olamaz.",
+      "articleRefs": [
+        "112"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Güvence: neyi karşılar, kime gider?",
+      "body": "**Güvence neyi sağlar (md 113/1):**\n- (a) Şüpheli veya sanığın bütün usul işlemlerinde, hükmün infazında ve diğer yükümlülükleri için hazır bulunması\n- (b) Ödemelerin şu sırayla yapılması:\n  - Önce katılanın masrafları, zararın giderilmesi ve eski hâle getirme. Nafaka borcunu ödememekten kovuşturuluyorsa nafaka borçları da bu ilk sıradadır.\n  - Sonra kamusal giderler\n  - En son para cezaları\n\nGüvence gösterme kararında, güvencenin karşıladığı kısımlar ayrı ayrı gösterilir (md 113/2).\n\n**Önceden ödetme (md 114):**\n- Hâkim, mahkeme veya Cumhuriyet savcısı, şüpheli veya sanığın **rızasıyla**, güvencenin mağdur hakları veya nafakaya ilişkin kısmının mağdura ya da nafaka alacaklılarına verilmesini emredebilir.\n- Mağdur veya nafaka alacaklısı lehine bir yargı kararı verilmişse **rıza aranmaz**.\n\n**Geri verme (md 115):**\n- Hükümlü (a) bendindeki yükümlülükleri yerine getirdiyse, güvencenin o kısmı kendisine geri verilir.\n- Mağdura veya nafaka alacaklısına verilmemiş ikinci kısım, kovuşturmaya yer olmadığı veya beraat kararında da geri verilir. Aksi hâlde, geçerli mazeret yoksa Devlet Hazinesine gelir yazılır.\n- Hükümlülük hâlinde güvence (b) bendindeki sıraya göre kullanılır, fazlası geri verilir.",
+      "articleRefs": [
+        "113",
+        "114",
+        "115"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Usul ve adli kontrol süreleri",
+      "rows": [
+        {
+          "label": "Salıverilme / adli kontrol istemine karar",
+          "value": "3 gün",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Aynı istem — örgüt faaliyeti çerçevesindeki suçlar",
+          "value": "7 gün",
+          "refs": [
+            "105"
+          ]
+        },
+        {
+          "label": "Tutukluluk incelemesi (soruşturma) — en geç",
+          "value": "30 gün",
+          "refs": [
+            "108"
+          ]
+        },
+        {
+          "label": "Adli kontrolün devam incelemesi — en geç",
+          "value": "4 ay",
+          "refs": [
+            "110"
+          ]
+        },
+        {
+          "label": "Adli kontrolün kaldırılması istemine karar",
+          "value": "5 gün",
+          "refs": [
+            "111"
+          ]
+        },
+        {
+          "label": "Adli kontrol — ağır ceza dışı işler",
+          "value": "2 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Ağır ceza dışı işler — uzatma (zorunlu hâl, gerekçeli)",
+          "value": "1 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Ağır ceza dışı işler — uzatmayla en fazla",
+          "value": "3 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Adli kontrol — ağır ceza işleri",
+          "value": "3 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Ağır ceza işleri — uzatma tavanı",
+          "value": "toplam 3 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Ağır ceza işleri — uzatmayla en fazla",
+          "value": "6 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "TMK ve TCK özel bölüm suçları — uzatma tavanı",
+          "value": "toplam 4 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Aynı suçlar — uzatmayla en fazla",
+          "value": "7 yıl",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Çocuklarda adli kontrol süresi",
+          "value": "yarı oranında",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Konutu terk etmeme — mahsup oranı",
+          "value": "2 gün = 1 gün",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "Doğumdan sonra tutuklama yerine adli kontrol",
+          "value": "6 ay",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "Süre dolan adli kontrolün ihlali — ağır ceza işleri",
+          "value": "en çok 9 ay tutuklama",
+          "refs": [
+            "112"
+          ]
+        },
+        {
+          "label": "Süre dolan adli kontrolün ihlali — diğer işler",
+          "value": "en çok 2 ay tutuklama",
+          "refs": [
+            "112"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "105",
+        "108",
+        "109",
+        "110",
+        "110/A",
+        "111",
+        "112"
+      ],
+      "derivedNumbers": [
+        {
+          "value": 3,
+          "expr": "2 + 1 (yıl: azami süre + uzatma)",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "value": 6,
+          "expr": "3 + 3 (yıl: azami süre + uzatma tavanı)",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "value": 7,
+          "expr": "3 + 4 (yıl: azami süre + özel suçlarda uzatma tavanı)",
+          "refs": [
+            "110/A"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Tutuklama mı, adli kontrol mü?",
+      "rows": [
+        {
+          "aspect": "Soruşturmada karar",
+          "left": "Savcının istemi üzerine sulh ceza hâkimi",
+          "right": "Savcının istemi ve sulh ceza hâkiminin kararı",
+          "refs": [
+            "101",
+            "110"
+          ]
+        },
+        {
+          "aspect": "Kovuşturmada karar",
+          "left": "Savcının istemi üzerine veya re'sen mahkeme",
+          "right": "Görevli ve yetkili diğer yargı mercileri, her aşamada",
+          "refs": [
+            "101",
+            "110"
+          ]
+        },
+        {
+          "aspect": "Tutuklama yasağı olan hâller",
+          "left": "Karar verilemez",
+          "right": "Uygulanabilir",
+          "refs": [
+            "100",
+            "109"
+          ]
+        },
+        {
+          "aspect": "Ağır ceza dışı işler — süre",
+          "left": "1 yıl + 6 ay uzatma",
+          "right": "2 yıl + 1 yıl uzatma",
+          "refs": [
+            "102",
+            "110/A"
+          ]
+        },
+        {
+          "aspect": "Ağır ceza işleri — süre",
+          "left": "2 yıl",
+          "right": "3 yıl",
+          "refs": [
+            "102",
+            "110/A"
+          ]
+        },
+        {
+          "aspect": "Uzatma tavanı (ağır ceza işleri)",
+          "left": "Toplam 3 yıl; TMK ve özel bölüm suçlarında 5 yıl",
+          "right": "Toplam 3 yıl; TMK ve özel bölüm suçlarında 4 yıl",
+          "refs": [
+            "102",
+            "110/A"
+          ]
+        },
+        {
+          "aspect": "Çocuklar",
+          "left": "15 yaşını doldurmamış: yarı; 18 yaşını doldurmamış: dörtte üç",
+          "right": "Yarı oranında",
+          "refs": [
+            "102",
+            "110/A"
+          ]
+        },
+        {
+          "aspect": "Devam incelemesi",
+          "left": "Soruşturmada en geç otuzar gün",
+          "right": "En geç dört aylık aralıklarla",
+          "refs": [
+            "108",
+            "110"
+          ]
+        },
+        {
+          "aspect": "İstem üzerine karar süresi",
+          "left": "Salıverilme istemi: 3 gün (örgüt suçunda 7 gün)",
+          "right": "Kaldırma istemi: 5 gün",
+          "refs": [
+            "105",
+            "111"
+          ]
+        },
+        {
+          "aspect": "Kanun yolu",
+          "left": "İtiraz",
+          "right": "İtiraz",
+          "refs": [
+            "101",
+            "104",
+            "111"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "104",
+        "105",
+        "108",
+        "109",
+        "110",
+        "110/A",
+        "111"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "44",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "110/A",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115"
+          ]
+        },
+        {
+          "label": "md 100 — Tutuklama nedenleri",
+          "value": "10 soru",
+          "refs": [
+            "100"
+          ]
+        },
+        {
+          "label": "md 102 — Tutuklulukta geçecek süre",
+          "value": "10 soru",
+          "refs": [
+            "102"
+          ]
+        },
+        {
+          "label": "md 109 — Adlî kontrol",
+          "value": "6 soru",
+          "refs": [
+            "109"
+          ]
+        },
+        {
+          "label": "md 101 — Tutuklama kararı",
+          "value": "4 soru",
+          "refs": [
+            "101"
+          ]
+        },
+        {
+          "label": "md 110/A — Adli kontrol altında geçecek süre",
+          "value": "3 soru",
+          "refs": [
+            "110/A"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "110/A",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 106, md 113, md 114, md 115",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "110/A",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "110/A",
+        "111",
+        "112",
+        "113",
+        "114",
+        "115"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "110/A",
+        "111",
+        "112",
+        "113",
+        "114",
+        "115"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 100–110, 110/A, 111–115, 10 soru",
+          "refs": [
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "110/A",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115"
+          ]
+        }
+      ]
+    }
+  ]
+}

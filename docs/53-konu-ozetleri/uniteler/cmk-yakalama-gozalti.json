@@ -1,0 +1,456 @@
+{
+  "unit": {
+    "slug": "cmk-yakalama-gozalti",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "Yakalama ve gözaltı",
+    "subtitle": "Kim yakalar, gözaltı ne kadar sürer, kime itiraz edilir",
+    "articleFrom": "90",
+    "articleTo": "99",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 90–99",
+    "articleNos": [
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 5
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Yakalamadan hâkim önüne",
+      "body": "Bu ünite, bir kişinin özgürlüğüne dokunulan ilk saatleri anlatıyor. Her şey **yakalama** ile başlar. Suçüstünde herkes yakalayabilir, bazı hâllerde ise yalnız kolluk. Yakalanan kişiyi Cumhuriyet Savcılığı bırakmazsa, soruşturmanın tamamlanması için **gözaltına** alınmasına karar verilebilir. Kişi yine bırakılmazsa süre sonunda sulh ceza hâkimi önüne çıkarılır ve sorguya çekilir. Okurken her adımda şu soruları sor: **kim** karar veriyor ve **ne kadar** sürebilir?",
+      "articleRefs": [
+        "90",
+        "91"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kim yakalayabilir?",
+      "body": "**Herkes** geçici olarak yakalama yapabilir. Bunun için şu hâllerden biri gerekir:\n- Kişiye suçu işlerken rastlanması,\n- Suçüstü bir fiilden dolayı izlenen kişinin kaçması olasılığının bulunması,\n- Suçüstü bir fiilden dolayı izlenen kişinin hemen kimliğini belirleme olanağının bulunmaması.\n\n**Kolluk görevlileri** şu durumda da yakalama yetkisine sahiptir:\n- Tutuklama kararı veya yakalama emri düzenlenmesini gerektiren bir hâl olmalı,\n- Gecikmesinde sakınca bulunmalı,\n- Cumhuriyet savcısına veya âmirlerine derhâl başvurma olanağı bulunmamalı.\n\n**İstisna, şikâyete bağlı suçlar:** Soruşturma ve kovuşturması şikâyete bağlı olsa bile bazı suçüstü hâllerinde kişinin yakalanması şikâyete bağlı değildir. Bu suçlar şunlara karşı işlenenlerdir:\n- Çocuklar,\n- Beden veya akıl hastalığı, malûllük veya güçsüzlükleri nedeniyle kendilerini idareden aciz bulunanlar.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakaladıktan sonra sıra",
+      "body": "1. Kolluk önce kişinin kaçmasını, kendisine veya başkalarına zarar vermesini önleyecek **tedbirleri alır**.\n2. Sonra yakalanan kişiye **kanunî haklarını derhal bildirir**.\n3. Herkesin yakalayıp kolluğa teslim ettiği ya da görevlilerin yakaladığı kişi ve olay hakkında **Cumhuriyet savcısına hemen bilgi verilir**. İşlem savcının emri doğrultusunda yapılır.\n4. Yakalama emrine konu işlem yerine getirilirse emrin çıkarılma amacı ortadan kalkar. Bu durumda mahkeme, hâkim veya Cumhuriyet savcısı emrin **derhâl iadesini** ister.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yakalamada sık karıştırılanlar",
+      "body": "- Suçüstünde yakalama yetkisi **yalnız kollukta değil**, herkeste. ‘Yalnızca kolluk görevlileri’ diyen ifade yanlış.\n- Tutuklama kararı veya yakalama emri gerektiren durum, herkesin yakalama hâlleri arasında yok. Bu **kolluğun** yetkisi. Kolluk için de şart, savcıya veya âmirlerine derhâl başvuramamak.\n- Çocuğa ya da kendini idareden aciz kişiye karşı suçüstünde yakalama **şikâyete bağlı değil**. ‘Şikâyet gerekir’ diyen şık yanlış.\n- Kanunî hakları bildiren **kolluk**, Cumhuriyet savcısı değil.\n- Bilgi **Cumhuriyet savcısına** verilir. Emrin iadesini isteyen de mahkeme, hâkim veya savcıdır. Şıkta ‘emniyet amiri’ görürsen dikkat et.",
+      "articleRefs": [
+        "90"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gözaltı: şart ve süre",
+      "body": "Yakalanan kişi Cumhuriyet Savcılığınca bırakılmazsa, soruşturmanın tamamlanması için gözaltına alınmasına karar verilebilir.\n\n**Şu şartlar birlikte aranır:**\n- Tedbirin soruşturma yönünden **zorunlu** olması,\n- Kişinin bir suçu işlediği şüphesini gösteren **somut delillerin** varlığı.\n\n**Süre:**\n- Gözaltı, yakalama anından itibaren **24 saati** geçemez.\n- Yakalama yerine en yakın hâkim veya mahkemeye gönderilme için gereken zorunlu süre bu hesaba katılmaz.\n- Bu zorunlu süre de **12 saatten** fazla olamaz.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gözaltında kelime ve sayı tuzağı",
+      "body": "- Kanun **somut delil** diyor. ‘Emare yeterli’ ya da ‘kuvvetli şüphe gerekir’ diyen şıklar yanlış.\n- Olağan gözaltı **24 saat**. ‘48 saat’ diyen şık, kolluk amirinin toplumsal olaylardaki yetkisiyle karıştırılmış.\n- Yol için zorunlu süre en çok **12 saat**. Buraya ‘24 saat’ yazan şık yanlış.\n- Süre yakalama **anından** itibaren işler.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Toplu suçta gözaltının uzatılması",
+      "body": "**Kural:** Toplu olarak işlenen suçlarda Cumhuriyet savcısı gözaltı süresinin uzatılmasına emir verebilir. Gerekçe, delillerin toplanmasındaki güçlük veya şüpheli sayısının çokluğudur.\n- **Kim:** Cumhuriyet savcısı\n- **Nasıl:** Yazılı emirle\n- **Ne kadar:** Her defasında 1 günü geçmemek üzere, 3 gün süreyle\n- **Sonra:** Uzatma emri gözaltına alınana derhâl tebliğ edilir.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kolluk amirinin gözaltı kararı",
+      "body": "**Şart:** Yalnız **suçüstü hâllerinde** uygulanır. Kararı **mülki amirlerce belirlenecek kolluk amirleri** verir.\n\n**Süre:**\n- Sayılan suçlarda 24 saate kadar,\n- Toplumsal olaylar sırasında ve toplu olarak işlenen suçlarda 48 saate kadar. Bu toplumsal olaylar, şiddet olaylarının yaygınlaşarak kamu düzeninin ciddi şekilde bozulmasına yol açabilecek olaylardır.\n\n**Sayılan suçlar:**\n- Toplumsal olaylar sırasında işlenen cebir ve şiddet içeren suçlar,\n- Türk Ceza Kanunundaki şu suçlar: kasten ve taksirle öldürme, kasten yaralama, cinsel saldırı, çocukların cinsel istismarı, hırsızlık, yağma, uyuşturucu veya uyarıcı madde imal ve ticareti, bulaşıcı hastalıklara ilişkin tedbirlere aykırı davranma, fuhuş, kötü muamele,\n- Terörle Mücadele Kanunundaki suçlar,\n- Toplantı ve Gösteri Yürüyüşleri Kanununda belirtilen suçlar,\n- İl İdaresi Kanununa dayanılarak ilan edilen sokağa çıkma yasağını ihlal,\n- Kaçakçılıkla Mücadele Kanununda belirtilen suçlar.\n\n**Sonra:**\n- Gözaltı nedeni ortadan kalkınca ya da işlemler bitince Cumhuriyet savcısına derhâl bilgi verilir. Bu, her hâlde en geç bu sürelerin sonunda yapılır. Kolluk savcının talimatına göre hareket eder.\n- Kişi bırakılmazsa olağan gözaltı hükümleri uygulanır.\n- Kişi en geç 48 saat, toplu suçlarda 4 gün içinde hâkim önüne çıkarılır.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Uzatmada ve kolluk gözaltısında sayılar",
+      "body": "- Toplu suçta uzatma toplam **3 gün**, her seferinde en çok **1 gün**. ‘4 gün uzatılır’ diyen şık yanlış. 4 gün, kolluk amirinin gözaltısında toplu suçlarda **hâkim önüne çıkarılma** sınırı.\n- Uzatma emrini **Cumhuriyet savcısı** verir, hem de yazılı olarak. Sulh ceza hâkimi, kolluk amiri ya da mülki amir veremez.\n- Uzatma emri gözaltındakine **tebliğ edilir**. ‘Tebliğ edilmez’ diyen şık yanlış.\n- Kasten yaralama gibi sayılan bir suçta kolluk amiri **24 saate kadar** karar verir. 48 saat yalnız toplumsal olaylar ve toplu suçlar için geçerli.\n- Kolluk gözaltısında hâkim önüne çıkarılma sınırı **48 saat**, toplu suçlarda **4 gün**. ‘24 saat / 48 saat’ diyen şık yanlış.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Gözaltı süreleri",
+      "rows": [
+        {
+          "label": "Olağan gözaltı (yakalama anından)",
+          "value": "en çok 24 saat",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "En yakın hâkime gönderilme için zorunlu süre",
+          "value": "en çok 12 saat",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Toplu suçta uzatma, her defasında",
+          "value": "en çok 1 gün",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Toplu suçta uzatma, toplam",
+          "value": "3 gün",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk amirinin gözaltısı, sayılan suçlar",
+          "value": "24 saate kadar",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk amirinin gözaltısı, toplumsal olaylar ve toplu suçlar",
+          "value": "48 saate kadar",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk gözaltısında hâkim önüne çıkarılma",
+          "value": "en geç 48 saat",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk gözaltısında hâkim önü, toplu suçlar",
+          "value": "en geç 4 gün",
+          "refs": [
+            "91"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gözaltına itiraz",
+      "body": "**Neye karşı:** Cumhuriyet savcısının yakalama işlemine, gözaltına almaya ve gözaltı süresinin uzatılmasına ilişkin yazılı emrine karşı.\n\n**Kim başvurabilir:**\n- Yakalanan kişi,\n- Müdafii veya kanunî temsilcisi,\n- Eşi,\n- Birinci veya ikinci derecede kan hısımı.\n\n**Kime:** **Sulh ceza hâkimine**. Amaç, kişinin hemen serbest bırakılmasını sağlamaktır.\n\n**İnceleme:** Hâkim incelemeyi evrak üzerinde yapar. Başvuruyu derhâl ve nihayet **24 saat** dolmadan sonuçlandırır.\n\n**Sonuç:** Hâkim işlemi yerinde bulursa iki karardan birini verir:\n- Başvuruyu reddeder,\n- Ya da yakalananın soruşturma evrakı ile derhâl Cumhuriyet Savcılığında hazır bulundurulmasına karar verir.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İtirazda kim, kime?",
+      "body": "- **Cumhuriyet savcısı başvuramaz**, çünkü itiraz edilen emir onun emri. Kanun yalnız şunları sayıyor: yakalanan, müdafi, kanunî temsilci, eş, birinci ve ikinci derece kan hısımı. Daha uzak hısımlar listede yok.\n- Başvuru **sulh ceza hâkimine** yapılır. ‘Kolluk amiri’ ya da ‘asliye hukuk hâkimi’ diyen şık yanlış.\n- Sonuçlandırma süresi **24 saat**. 36, 48 ya da 72 saat diyen şıklar yanlış.",
+      "articleRefs": [
+        "91"
+      ],
+      "counterNumbers": [
+        36,
+        72
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bırakılan kişi yeniden yakalanabilir mi?",
+      "body": "Gözaltı süresinin dolması veya sulh ceza hâkiminin kararı üzerine serbest bırakılan kişiye **aynı nedenle** bir daha yakalama işlemi uygulanamaz.\n\nYeniden yakalama için şunlar birlikte gerekir:\n- Yakalamaya neden olan fiille ilgili **yeni ve yeterli delil** elde edilmesi,\n- **Cumhuriyet savcısının kararı**.\n\nYani yeni delil olmadan yapılan yakalama kanuna aykırıdır. ‘Hiçbir koşulda yakalanamaz’ demek de yanlış.\n\n**Sorgu:** Gözaltına alınan kişi bırakılmazsa, en geç süreler sonunda sulh ceza hâkimi önüne çıkarılıp **sorguya çekilir**. Sorguda **müdafii de hazır bulunur**.",
+      "articleRefs": [
+        "91"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim ve kelepçe",
+      "body": "**Denetim:** Cumhuriyet başsavcıları veya görevlendirecekleri Cumhuriyet savcıları, adlî görevlerinin gereği olarak şunları denetler:\n- Nezarethaneleri ve varsa ifade alma odalarını,\n- Gözaltındakilerin durumlarını,\n- Gözaltına alınma neden ve sürelerini,\n- Gözaltına ilişkin tüm kayıt ve işlemleri.\n\nSonuç **Nezarethaneye Alınanlar Defterine** kaydedilir.\n\n**Kelepçe:** Yakalanan veya tutuklanarak bir yerden diğerine nakledilen kişiye kelepçe takılabilir. Bunun için şu belirtilerden birinin bulunması gerekir:\n- Kişinin kaçacağına ilişkin belirti,\n- Kendisinin veya başkalarının hayat ve beden bütünlüğü bakımından tehlike arz ettiğine ilişkin belirti.",
+      "articleRefs": [
+        "92",
+        "93"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakalama emriyle yakalanan: 24 saat",
+      "body": "Hâkim veya mahkemenin verdiği yakalama emri üzerine soruşturma veya kovuşturma evresinde yakalanan kişi, en geç **24 saat** içinde yetkili hâkim veya mahkeme önüne çıkarılır.\n\n**Çıkarılamıyorsa:** Aynı süre içinde **sesli ve görüntülü iletişim sistemi** kullanılır. Sistem, kişinin yakalandığı yer adliyesinde, orada yoksa en yakın adliyede kurulu olandır. Yetkili hâkim veya mahkeme bu yolla kişinin sorgusunu yapar ya da ifadesini alır.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mesai dışında yakalanana taahhütle serbestlik",
+      "body": "**Şartlar:**\n- Yakalama emri **ifadesi alınmak amacıyla** düzenlenmiş olmalı,\n- Kişi **mesai saatleri dışında** yakalanmış olmalı,\n- Kişi belirlenen tarihte yargı mercii önünde hazır bulunmayı **taahhüt** etmiş olmalı.\n\n**Karar:** Serbest bırakılmasını **Cumhuriyet savcısı** emredebilir.\n\n**Sınır:** Bu hüküm her yakalama emri için ancak **bir kez** uygulanabilir.\n\n**Yaptırım:** Taahhüdünü yerine getirmeyen kişiye **bin Türk lirası idari para cezası** verilir. Cezayı yakalama emrinin düzenlendiği yer Cumhuriyet savcısı verir.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Madde 94’te karıştırılanlar",
+      "body": "- 24 saatte yetkili merci önüne çıkarılamayan kişi için kanunun çözümü **sesli ve görüntülü iletişim sistemi**. ‘En yakın sulh ceza hâkimi önüne çıkarılır, gerekirse tutuklanır’ diyen şık yanlış.\n- Taahhütle serbest bırakmayı **Cumhuriyet savcısı** emreder. Sulh ceza hâkimi, mahkeme ya da kolluk emredemez.\n- Yaptırım **idari para cezası**, disiplin para cezası değil.\n- Cezayı veren **yakalama emrinin düzenlendiği yer** Cumhuriyet savcısı. Yerleşim yeri savcısı ya da sulh ceza hâkimi değil.",
+      "articleRefs": [
+        "94"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Haber verme ve tutanak",
+      "body": "**Yakınlara haber:** Şüpheli veya sanık yakalandığında, gözaltına alındığında ya da gözaltı süresi uzatıldığında haber verilir.\n- Haber **Cumhuriyet savcısının emriyle** verilir.\n- Bir yakınına veya kişinin belirlediği birine verilir.\n- **Gecikmeksizin** verilir. Kanunda saat sınırı yok, ölçüt savcının emri ve ‘gecikmeksizin’ ifadesi.\n\n**Yabancı ise:** Yazılı olarak karşı çıkmazsa durumu, vatandaşı olduğu devletin konsolosluğuna bildirilir.\n\n**Şikâyete bağlı suçta:** Şüpheli, şikâyetten önce md 90 uyarınca yakalanmış olabilir. Bu durumda yakalama, şikâyete yetkili olan kişiye bildirilir. Yetkili birden fazla ise hiç olmazsa birine bildirilir.\n\n**Tutanak:** Yakalama işlemi bir tutanağa bağlanır. Tutanağa şunlar açıkça yazılır:\n- Yakalananın hangi suç nedeniyle yakalandığı,\n- Hangi koşullarda, hangi yer ve zamanda yakalandığı,\n- Yakalamayı kimlerin yaptığı,\n- Hangi kolluk mensubunca tespit edildiği,\n- Haklarının tam olarak anlatıldığı.",
+      "articleRefs": [
+        "95",
+        "96",
+        "97"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Yakalama emrini kim düzenler?",
+      "body": "**Soruşturma evresi:**\n- Çağrı üzerine gelmeyen veya çağrı yapılamayan şüpheli için emri **sulh ceza hâkimi** düzenler. Bunun için Cumhuriyet savcısının **istemi** gerekir.\n- Tutuklama isteminin reddi kararına itiraz edilirse **itiraz mercii** de emir düzenleyebilir.\n\n**Kaçanlar:** Şu kişiler için **Cumhuriyet savcıları ve kolluk kuvvetleri** de emir düzenleyebilir:\n- Yakalanmış iken kolluk görevlisinin elinden kaçan şüpheli veya sanık,\n- Tutukevi veya ceza infaz kurumundan kaçan tutuklu veya hükümlü.\n\n**Kovuşturma evresi:** Kaçak sanık için emri **hâkim veya mahkeme** düzenler. Bunu re’sen ya da Cumhuriyet savcısının istemi üzerine yapar.\n\n**Emirde gösterilenler:**\n- Kişinin açık eşkâli,\n- Bilindiğinde kimliği,\n- Yüklenen suç,\n- Yakalandığında nereye gönderileceği.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yakalama emrinde makam karışıklığı",
+      "body": "- Çağrıya gelmeyen şüpheli için Cumhuriyet savcısı emri **kendisi düzenleyemez**. Savcı ister, sulh ceza hâkimi düzenler. ‘Kovuşturmayı yürütecek mahkeme’ diyen şık da yanlış.\n- Kaçanlar için kanunun saydığı merciler **Cumhuriyet savcıları ve kolluk kuvvetleri**. Şıkta bu kişiler için ‘sulh ceza hâkimi’ görürsen dikkat et.\n- ‘Kolluk düzenleyemez’ diyen şık da yanlış.\n- Tutuklama isteminin reddine itiraz hâlinde **itiraz mercii** de emir düzenleyebilir.\n- Kovuşturmada kaçak sanık için hâkim veya mahkeme **re’sen** de emir düzenleyebilir.",
+      "articleRefs": [
+        "98"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ayrıntılar yönetmelikte",
+      "body": "Kanun şu konuları yönetmeliğe bırakır:\n- Nezarethanelerin maddî koşulları,\n- Gözaltındaki kişinin hangi görevlinin sorumluluğuna bırakılacağı,\n- Sağlık kontrolünün nasıl yapılacağı,\n- Gözaltı işlemlerine ilişkin kayıt ve defterlerin nasıl tutulacağı,\n- Gözaltının başında ve sonunda tutulacak tutanaklar,\n- Gözaltındaki kişiye verilecek belgeler,\n- Kolluğun yakalama işlemlerinde uyacağı kurallar.",
+      "articleRefs": [
+        "99"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin sayıları bir arada",
+      "rows": [
+        {
+          "label": "Olağan gözaltı / yol için zorunlu süre",
+          "value": "24 saat / 12 saat",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Toplu suçta savcının uzatması",
+          "value": "her defasında en çok 1 gün, toplam 3 gün",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk amirinin gözaltısı",
+          "value": "24 saate kadar; toplumsal olay ve toplu suçta 48 saate kadar",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Kolluk gözaltısında hâkim önü",
+          "value": "48 saat; toplu suçta 4 gün",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Sulh ceza hâkiminin itirazı sonuçlandırması",
+          "value": "24 saat dolmadan",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "İtiraz edebilen kan hısımı",
+          "value": "birinci veya ikinci derece",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "Yakalama emriyle yakalanan → yetkili hâkim/mahkeme",
+          "value": "en geç 24 saat",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Taahhütle serbest bırakma",
+          "value": "her yakalama emri için bir kez",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "Taahhüdü yerine getirmeme",
+          "value": "bin Türk lirası idari para cezası",
+          "refs": [
+            "94"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "91",
+        "94"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "32",
+          "refs": [
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99"
+          ]
+        },
+        {
+          "label": "md 91 — Gözaltı",
+          "value": "19 soru",
+          "refs": [
+            "91"
+          ]
+        },
+        {
+          "label": "md 94 — Yakalanan kişinin mahkemeye götürülmesi",
+          "value": "5 soru",
+          "refs": [
+            "94"
+          ]
+        },
+        {
+          "label": "md 90 — Yakalama ve yakalanan kişi hakkında yapılacak işlemler",
+          "value": "4 soru",
+          "refs": [
+            "90"
+          ]
+        },
+        {
+          "label": "md 98 — Yakalama emri ve nedenleri",
+          "value": "3 soru",
+          "refs": [
+            "98"
+          ]
+        },
+        {
+          "label": "md 95 — Yakalanan veya gözaltına alınanın durumunun yakınlarına bildirilmesi",
+          "value": "1 soru",
+          "refs": [
+            "95"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 92, md 93, md 96, md 97, md 99",
+          "refs": [
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 90–99, 10 soru",
+          "refs": [
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99"
+          ]
+        }
+      ]
+    }
+  ]
+}

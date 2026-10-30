@@ -1,0 +1,572 @@
+{
+  "unit": {
+    "slug": "etk-ek-maddeler-2-gecici",
+    "legislationSlug": "3201-sayili-emniyet-teskilat-kanunu",
+    "topicId": "9c9b822c-028f-4d9b-929f-ad8487d53db4",
+    "title": "Ek maddeler II ve geçici hükümler",
+    "subtitle": "Fazla çalışma ücreti, polis meslek eğitim merkezleri, bomba imha tazminatı, gaip personel ve polis amiri grupları",
+    "articleFrom": "Ek 21",
+    "articleTo": "Geçici 26",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 3201 Sayılı Emniyet Teşkilat Kanunu, md Ek 21, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34, Ek 35, Ek 36, Ek 37, Geçici 26",
+    "articleNos": [
+      "Ek 21",
+      "Ek 24",
+      "Ek 25",
+      "Ek 26",
+      "Ek 27",
+      "Ek 29",
+      "Ek 30",
+      "Ek 31",
+      "Ek 32",
+      "Ek 33",
+      "Ek 34",
+      "Ek 35",
+      "Ek 36",
+      "Ek 37",
+      "Geçici 26"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 6
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Bu ünitede neler var?",
+      "body": "Bu ünite, Emniyet Teşkilat Kanunu'nun son ek maddelerini ve polis amirleriyle ilgili geçici maddeyi kapsar. İlk durak para: fazla çalışma ücreti ve bomba imha tazminatı. Ardından polis meslek eğitim merkezlerine kimin, nasıl girdiğini ve mezun olunca seni hangi yükümlülüğün beklediğini göreceksin. Arada Emniyet Hizmetleri Sınıfı dışındaki personelin alımı, Üçüncü Sınıf Emniyet Müdürlüğüne terfide aranan bölge hizmeti şartı ve denetim var. Ünite, görevi sırasında alıkonulan ya da kaybolan personelin ailesinin hakları ve polis amirlerinin (A)/(B) gruplarıyla kapanıyor.",
+      "articleRefs": [
+        "Ek 21",
+        "Ek 24",
+        "Ek 26",
+        "Ek 29",
+        "Ek 30",
+        "Ek 31",
+        "Ek 33",
+        "Ek 37",
+        "Geçici 26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Fazla çalışma ücreti: tavan oranlar",
+      "body": "Tavan, 657 sayılı Devlet Memurları Kanunundaki **en yüksek Devlet memuru aylığı (ek gösterge dahil)** üzerinden hesaplanır. Ücret, **İçişleri Bakanlığınca** belirlenecek usul ve esaslara göre ödenir.\n\n**Emniyet Hizmetleri Sınıfına dahil kadrolarda:**\n- Özel harekat ve istihbarat birimlerinde görev yapanlar: **% 35**\n- Siyasi hizmet, çevik kuvvet birimleri, köprü ve hassas bölgeleri koruma görevlerinde fiilen çalışanlar; panzer sürücüsü ve operatörleri: **% 31**\n- Diğer birimlerde görevli olanlar: **% 27**\n\n**Çarşı ve mahalle bekçileri:** **% 13**\n\n**İlave ödeme:** İçişleri Bakanı, büyük ölçekli yolsuzluk, terör ve benzeri faaliyetlere karşı ülke çapında yapılan operasyonlara katılanlara ve bunlara idari, teknik, lojistik ve sair destek hizmeti verenlere, hizalarındaki oranların **en çok yarısına kadar** ilave ödeme yapmaya yetkilidir. Bakan bu ödemeyi görev yeri ve süresi, görevin zorluk ve risk derecesi, kıdem ve sorumluluk gibi unsurlara göre farklı miktar veya oranlarda belirleyebilir.\n\n**Kesinti:** Bu ücretten **damga vergisi hariç** herhangi bir vergi ve kesinti yapılmaz.",
+      "articleRefs": [
+        "Ek 21"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "% 35 kimin?",
+      "body": "En sık kurulan tuzak, çevik kuvveti, köprü ve hassas bölge korumasını ya da panzer sürücülüğünü % 35'e taşımaktır. Hayır: % 35 yalnızca **özel harekat ve istihbarat** birimlerinde görev yapanlara aittir. Siyasi hizmet, çevik kuvvet, köprü ve hassas bölge koruma ile panzer sürücüsü ve operatörü % 31'de, sınıfın 'diğer birimleri' ise % 27'de kalır. Bekçilerin oranı ayrı bir bentte düzenlenmiştir: % 13. Şunu da unutma: bu oranlar ödenecek tutarın kendisi değil, **geçilemeyecek üst sınırdır**.",
+      "articleRefs": [
+        "Ek 21"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Polis meslek eğitim merkezi",
+      "body": "Polis meslek eğitim merkezleri, Emniyet Teşkilatının polis memuru ihtiyacını karşılamak için **Cumhurbaşkanı kararı** ile açılabilir. Burada okursan eğitim parasız yatılı ve üniformalıdır. İaşe, ibate ve sağlık giderlerin ile diğer istihkakların Devletçe karşılanır. Merkezlerin kuruluş ve çalışma usulleri, öğrencilerde aranacak şartlar, sınavlar, disiplin, öğrenciliğin sona ermesi, tazminat ve yükümlülük esasları ve kıyafetler ise İçişleri Bakanlığınca çıkarılacak yönetmelikle düzenlenir.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Merkeze giriş: üç ayrı kapı",
+      "body": "**Lisans mezunları:** Kamu Personeli Seçme Sınavında **Bakanlıkça belirlenecek taban puanı** almış, yönetmelikle belirlenecek şartları taşıyan ve sınavda başarılı olan erkek ve kadın adaylar alınır.\n\n**Önlisans mezunları:** **Toplam kontenjanın % 20'sini aşmamak** kaydıyla, **Bakanlıkça belirlenecek sayıda** önlisans mezunu da lisans mezunları için öngörülen **usule uygun olarak** alınabilir.\n\n**Özel harekat alımı:**\n- Özel harekat birimlerinde istihdam edilmek üzere yapılır\n- Adayın **yirmisekiz yaşından gün almamış** olması gerekir\n- Adayın **en az lise veya dengi okul** mezunu olması yeterlidir\n- **Kamu Personel Seçme Sınavı şartı aranmaz**; adaylar fiziki yeterlilik ve mülakat sınavlarıyla alınır\n- Eğitim süresi, eğitim şekli ve diğer hususlar **Bakanlık** tarafından belirlenir",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kim karar verir, kim nasıl girer?",
+      "body": "Merkezleri **Cumhurbaşkanı kararı** açar. 'İçişleri Bakanlığı kararı ile açılabilir' diyen şık yanlıştır. Bakanlığın yetkileri başkadır: taban puanı, önlisans mezunlarından alınacak sayı, özel harekat adaylarının eğitim süresi ve şekli, yönetmelik. Özel harekat eğitimi için 'Emniyet Genel Müdürlüğünce belirlenir' ifadesine de kanma; metin **Bakanlık** diyor.\n\nÖnlisans yolunu özel harekat yoluyla karıştırma. 'Kamu Personel Seçme Sınavı şartı aranmaz, fiziki yeterlilik ve mülakatla alınır' kuralı **yalnızca özel harekat** alımına aittir. Önlisans mezunları lisans mezunlarıyla aynı usule tabidir: sınav şartından muaf değildir, yalnız özel harekat için alınmaz ve sayıları Cumhurbaşkanı kararıyla belirlenmez.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Öğrencilik, ilişik kesilme ve mecburi hizmet",
+      "body": "**Harçlık:** Öğrencilere **polis meslek yüksek okulu öğrencilerine ödenen miktar kadar** harçlık ödenir.\n\n**İlişiği kesilenler:**\n- Giriş şartlarını taşımadığı sonradan anlaşılanlar\n- Eğitim ve öğretimini başarı ile tamamlayamayanlar\n- Sağlık ve disiplin yönünden polis olamayacağına yetkili kurullarca karar verilenler\n\n**Geri ödeme:** **Sağlık veya ölüm dışındaki** nedenlerle ilişiği kesilenlerden, ödenen harçlık ve yapılan masraflar **kanunî faizi ile** tahsil edilir.\n\n**Mezuniyet:** Eğitimini başarıyla tamamlayanlar Emniyet Genel Müdürlüğü kadrolarına **aday polis memuru** olarak atanır. Bunlar atanma tarihinden itibaren **altı yıl** süreyle başka kurumlara nakil yoluyla atanamaz.\n\n**Süre dolmadan ayrılanlar:** Bu süre içinde memuriyetten çekilen, çekilmiş sayılan, meslekten veya memuriyetten çıkarma cezası alan ve aslî memurluğa atanamayarak ilişiği kesilenler, öğretim masraflarını **kanuni faizi ile birlikte**, sürenin **eksik kalan kısmı ile orantılı** miktarda tazminat olarak öder.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Harçlık ve tazminatta karıştırılanlar",
+      "body": "Harçlık miktarı serbestçe belirlenmez. Tek ölçüt vardır: **polis meslek yüksek okulu öğrencilerine ödenen miktar kadar**. Harçlık herhangi bir aylık oranına ya da bütçe kanunundaki tutara bağlanmaz.\n\nGeri ödemede iki ayrı durum var:\n- **Eğitim sırasında** sağlık veya ölüm dışındaki bir nedenle ilişiği kesilen kişi, harçlığı ve masrafları kanunî faiziyle öder.\n- **Atandıktan sonra**, altı yıl dolmadan memuriyetten çekilen kişi, öğretim masraflarının **tamamını değil**, **eksik kalan süreyle orantılı** kısmını **faiziyle** öder.\n\nBu nedenle 'tamamı', 'faizsiz' ya da 'görevde geçirdiği süreyle orantılı' diyen şıklar yanlıştır.",
+      "articleRefs": [
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Bomba imha tazminatı",
+      "body": "**Kimler alır?** Bomba Uzmanı Yetiştirme Kursu görüp bomba uzmanı sertifikası almaya hak kazanmış **ve** bomba uzmanı olarak görev yapan, Emniyet Genel Müdürlüğü **merkez ve taşra** teşkilatlarında görevli personel.\n\n**Ne kadar?** **13.000 gösterge** rakamının memur aylık kat sayısı ile çarpımı sonucu bulunacak miktar.\n\n**Kesinti:** Damga vergisi hariç hiçbir vergi ve benzeri kesintiye tâbi değildir.\n\n**Yönetmelik:** Tazminatın hesaplanması, ödeme şekli, kapsamı ve uygulama esasları İçişleri Bakanlığınca, maddenin yayımını takip eden **iki ay** içinde çıkarılacak yönetmelikle belirlenir.\n\n**Dikkat:** 'Yalnızca merkez teşkilatında görevli personele ödenir' diyen şık yanlıştır; taşra teşkilatı da kapsamdadır.",
+      "articleRefs": [
+        "Ek 26"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: ücret, tazminat ve merkezler",
+      "rows": [
+        {
+          "label": "Özel harekat ve istihbarat birimleri — fazla çalışma tavanı",
+          "value": "% 35",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "Siyasi hizmet, çevik kuvvet, köprü ve hassas bölge koruma, panzer sürücüsü ve operatörü",
+          "value": "% 31",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "Emniyet Hizmetleri Sınıfının diğer birimleri",
+          "value": "% 27",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "Çarşı ve mahalle bekçileri",
+          "value": "% 13",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "Ülke çapındaki operasyonlar için ilave ödeme",
+          "value": "Hizalarındaki oranların en çok yarısı",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "Önlisans mezunu kontenjanı",
+          "value": "Toplam kontenjanın en çok % 20'si",
+          "refs": [
+            "Ek 24"
+          ]
+        },
+        {
+          "label": "Özel harekat alımında yaş sınırı",
+          "value": "Yirmisekiz yaşından gün almamış olmak",
+          "refs": [
+            "Ek 24"
+          ]
+        },
+        {
+          "label": "Başka kuruma nakil yasağı",
+          "value": "Atanma tarihinden itibaren altı yıl",
+          "refs": [
+            "Ek 24"
+          ]
+        },
+        {
+          "label": "Bomba imha tazminatı",
+          "value": "13.000 gösterge × memur aylık kat sayısı",
+          "refs": [
+            "Ek 26"
+          ]
+        },
+        {
+          "label": "Bomba imha tazminatı yönetmeliği",
+          "value": "Maddenin yayımından itibaren iki ay içinde",
+          "refs": [
+            "Ek 26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 21",
+        "Ek 24",
+        "Ek 26"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Emniyet Hizmetleri Sınıfı dışındaki personelin alımı",
+      "body": "**Seçim ve atama:** Kadrolu veya sözleşmeli personel, 657 sayılı Kanuna göre yapılan **merkezi sınava ilave olarak** sözlü sınav ve/veya uygulamalı sınav puanı ile diğer niteliklere göre seçilir ve atanır.\n\n**Yönetmelik:** Alım ve ilk atamaya ilişkin sınav, sınav komisyonları ve aranacak nitelikler İçişleri Bakanlığınca çıkarılan yönetmelikle düzenlenir.\n\n**Alınacak personel sayısının hesabı:** 3713 sayılı Terörle Mücadele Kanunu, 2828 sayılı Sosyal Hizmetler Kanunu ve 657 sayılı Kanunun 53 üncü maddesi gereğince alınacak personel sayısı hesaplanırken **Emniyet Hizmetleri Sınıfı dışındaki kadro sayısı** esas alınır.\n\n**Oran:** 657 sayılı Kanunun 53 üncü maddesinin birinci fıkrasındaki oran, emniyet teşkilatı için **% 5** olarak uygulanır.",
+      "articleRefs": [
+        "Ek 29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Merkezi sınav tek başına yetmez",
+      "body": "Seçimde tek ölçüt merkezi sınav değildir. 'Yalnızca merkezi sınav' ya da 'yalnızca sözlü sınav ve mülakat' diyen şıklar eksiktir. Doğru formül şudur: **merkezi sınav + sözlü ve/veya uygulamalı sınav puanı + diğer nitelikler**. 'Fiziki yeterlilik ve mülakat' kalıbı ise özel harekat alımına aittir (Ek 24). Personel sayısı hesabında esas alınan, Emniyet Hizmetleri Sınıfı dışındaki kadro sayısıdır. Bu sayının her yıl Cumhurbaşkanı kararıyla belirlendiğine dair bir hüküm yoktur.",
+      "articleRefs": [
+        "Ek 29",
+        "Ek 24"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Üçüncü Sınıf Emniyet Müdürlüğüne terfi: ikinci bölge şartı",
+      "body": "**Şart:** Zorunlu ikinci bölge hizmetini **en az bir kez yapmış olmak** veya **halen bu bölge hizmetini ifa ediyor olmak**.\n\n**Yönetmelikle düzenlenecek durum:** Bu şartın, aşağıdaki emniyet teşkilatı mensuplarının **eş ve çocukları** hakkında nasıl uygulanacağı yönetmelikle düzenlenir:\n- 3713 sayılı Kanun veya 2330 sayılı Nakdi Tazminat ve Aylık Bağlanması Hakkında Kanun kapsamında **hayatını kaybedenler**\n- Aynı kanunlar kapsamındaki görevler nedeniyle, **Sosyal Güvenlik Kurumu Sağlık Kurulunun kararı** doğrultusunda, yaşamak için gereken hareketleri yapamayacak ve başkasının yardım ve desteğine muhtaç olacak derecede **malul olanlar**",
+      "articleRefs": [
+        "Ek 30"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Eş ve çocuklar, başkası değil",
+      "body": "Yönetmelik kapsamındaki kişiler, hayatını kaybeden veya ağır malul olan mensupların **eş ve çocuklarıdır**. 'Anne, baba ve kardeşler', 'yalnızca çocuklar', 'tüm engelli personel' ya da 'ikinci bölgede çalışmış personelin eşleri' diyen şıklar yanlıştır. Şartın kendisinde zaman sınırı yoktur: hizmetin terfiden önceki belli bir dönem içinde tamamlanmış olması aranmaz. En az bir kez yapmış olmak ya da hâlen yapıyor olmak yeterlidir. Malullüğü belirleyen merci de metinde açıkça yazar: Sosyal Güvenlik Kurumu Sağlık Kurulu.",
+      "articleRefs": [
+        "Ek 30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Denetim ve teftiş",
+      "body": "**Genel denetim (Ek 33):** Emniyet Teşkilatının her türlü göreviyle ilgili eylem ve işlemleri **İçişleri Bakanlığı, mülki idare amirleri ve kendi amirleri** tarafından denetlenir ve teftiş edilir.\n\n**Özel güvenlik denetimi (Ek 31):** Polis müfettiş ve başmüfettişleri, 5188 sayılı Özel Güvenlik Hizmetlerine Dair Kanundaki denetimleri **İçişleri Bakanlığı adına** yapmaya yetkilidir. Bu denetimler sonucunda düzenlenen raporlar yetkili makamlara intikal ettirilir. Denetimin usul ve esasları İçişleri Bakanlığının çıkardığı yönetmelikle belirlenir.\n\n**Özlük hakları (Ek 31):**\n- Başkanlar: Polis Teftiş Kurulu Başkanına ilişkin hükümler uygulanır\n- Akademi Başkan Yardımcıları ve Başkan Yardımcıları: Daire Başkanına ilişkin hükümler uygulanır",
+      "articleRefs": [
+        "Ek 31",
+        "Ek 33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kadro maddeleri ve siber suçlar için hizmet alımı",
+      "body": "**Kadro maddeleri:** Ek 25, Ek 27, Ek 32, Ek 34 ve Ek 36, ekli listelerdeki kadroları ihdas ederek 190 sayılı Kanun Hükmünde Kararnamenin eki (I) sayılı cetvelin Emniyet Genel Müdürlüğü bölümüne ekler. Ek 25'teki kadrolar polis meslek eğitim merkezleri içindir. Ek 27 ayrıca (II) sayılı listedeki kadroları iptal ederek cetvelden çıkarır.\n\n**Siber suçlar için hizmet alımı (Ek 35):**\n- Amaç: adli süreçlerin hızlandırılması\n- Alan: siber suçlarla mücadele birimlerindeki adli bilişim incelemeleri ve siber suç analizleri\n- Gerekçe: personel yetersizliği nedeniyle ihtiyaç duyulan teknik personel\n- Sınırlar: aynı anda çalıştırılacak toplam personel sayısı **beşyüzü** aşamaz; sözleşme süresi **31/12/2020** tarihini geçemez\n- Yöntem: 4734 sayılı Kamu İhale Kanunundaki **pazarlık usulüyle**, hizmet alımı yoluyla temin",
+      "articleRefs": [
+        "Ek 25",
+        "Ek 27",
+        "Ek 32",
+        "Ek 34",
+        "Ek 35",
+        "Ek 36"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Alıkonulan veya kaybolan personelin aylığı",
+      "body": "**Kapsam:** İlgili kanun hükümlerine göre aylık almakta olan Emniyet Teşkilatı personelinden, **terörle mücadele görevi sırasında veya bu görevinden dolayı** alıkonulduğu ya da kaybolduğu yetkili makamlarca tespit edilenler.\n\n**Aylık:** Aylıklar ailelerine, **herhangi bir başvuruya gerek kalmaksızın**, **memuriyetin devam ettiği süre zarfında** ödenmeye devam olunur.\n\n**Sosyal haklar:** Aile, her türlü sosyal hak ve yardımdan yararlanmaya devam eder.\n\n**Gaiplik kararından sonra:** Mahkemenin gaiplik kararına istinaden Sosyal Güvenlik Kurumu hak sahiplerine aylık bağlarsa, görev aylıkları **bu aylığın bağlandığı tarihten itibaren** kesilir. Kurumun bağladığı aylığın başlangıç tarihine kadar yapılan ödemeler **ilgililerden tahsil edilmez**.",
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Gaiplik başvurusu, dönüş ve kusur",
+      "body": "**Başvuru:** Türk Medeni Kanununun gaipler hakkındaki hükümleri saklıdır. Gaiplik kararı için asgari bekleme süresinin geçmesinden itibaren **bir ay** içinde aile mahkemeye başvurmazsa, personelin **en son görev yaptığı birim** de mahkemeden gaiplik kararı talep edebilir.\n\n**Karar alınana kadar:** Personelin **terfi ve özlük hakları dondurulur**.\n\n**Sonradan dönenler:** Durumları en son görev yaptıkları birim tarafından incelenir. Yeniden göreve başlatılırlarsa, gaip oldukları döneme ait görev aylıkları, Sosyal Güvenlik Kurumunca hak sahiplerine ödenmiş aylıklar **mahsup edilerek geriye dönük** olarak ödenir.\n\n**Kusurlu görülenler:** Haklarında soruşturma dosyası tanzim edilerek yetkili makamlara intikal ettirilir. Terfi ve diğer özlük işlemleri **adli birimlerce verilecek karar sonrası idarece ayrıca** değerlendirilir.",
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Gaip personelde sık karıştırılanlar",
+      "body": "- **Aylık:** Ailenin başvurusu, Bakan onayı ya da süre sınırı aranmaz; aylık memuriyet devam ettikçe ödenir. Alıkonulma tarihinden itibaren kesilmez ve dondurulmaz.\n- **Başvuru süresi:** Ailenin süresi, asgari bekleme süresinden itibaren **bir ay**dır; üç ya da altı ay değildir.\n- **Karar beklenirken:** Terfi ve özlük hakları **dondurulur**. Görevden uzaklaştırma ya da memuriyetin kendiliğinden sona ermesi söz konusu değildir. Birimin incelemesi dönenler için, soruşturma dosyası ise kusurlular için yapılır.\n- **Dönüşte aylık:** Geriye dönük ödeme yapılır, ancak tamamı ödenmez; Kurumun hak sahiplerine ödediği aylıklar **mahsup edilir**.\n- **Kusurlunun özlük işlemleri:** Önce adli karar beklenir, sonra **idarece ayrıca** değerlendirilir. Bu değerlendirmeyi doğrudan Bakanlık ya da bir kurul yapmaz; işlemler kendiliğinden de yürümez.",
+      "counterNumbers": [
+        3,
+        6
+      ],
+      "articleRefs": [
+        "Ek 37"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Polis amirlerinde (A) ve (B) grupları",
+      "body": "**Kapsam:** Bu maddenin yürürlüğe girdiği tarihten önce atanan polis amirlerinin rütbelerde ve meslek derecelerinde zorunlu en az bekleme süreleri ile (B) grubundan (A) grubuna geçişleri.\n\n**Gruplar:**\n- **(A):** En az dört yıllık fakülte ve yüksek okullardan mezun olanlar\n- **(B):** Komiser yardımcılığı kursunu başarıyla bitirmiş olan diğer amirler\n\n**(B)'den (A)'ya geçiş:** En az dört yıllık yükseköğretim kurumunu fıkranın yürürlüğünden **önce** bitirenler fıkranın yürürlük tarihi itibarıyla, **sonra** bitirenler ise **mezuniyet tarihleri** itibarıyla (A) grubuna geçer. Bulundukları rütbedeki bekleme süresi (A) grubuna göre hesaplanır.\n\n**Geriye dönük hak yok:** (A) grubu için belirlenen süreden fazla çalışmış olmak, geriye yönelik herhangi bir hak doğurmaz.",
+      "articleRefs": [
+        "Geçici 26"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Grubu belirleyen ölçüt: öğrenim",
+      "body": "(A) ile (B)'yi ayıran ölçüt **öğrenim durumudur**. Rütbe, meslek derecesi, göreve giriş şekli ya da bölge hizmeti grubu belirlemez. Zorunlu ikinci bölge hizmeti başka bir maddede, Üçüncü Sınıf Emniyet Müdürü rütbesine terfide karşına çıkar (Ek 30). (B) grubunun tanımına da dikkat et: komiser yardımcılığı kursunu başarıyla bitirmiş 'diğer' amirler.",
+      "articleRefs": [
+        "Geçici 26",
+        "Ek 30"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: bekleme süreleri ve diğerleri",
+      "rows": [
+        {
+          "label": "Komiser Yardımcısı (meslek derecesi 9) — (A) / (B)",
+          "value": "4 yıl / 6 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Komiser (meslek derecesi 8) — (A) / (B)",
+          "value": "4 yıl / 6 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Başkomiser (meslek derecesi 7) — (A) / (B)",
+          "value": "3 yıl / Yaş haddi",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Emniyet Amiri (meslek derecesi 6)",
+          "value": "3 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Dördüncü Sınıf Emniyet Müdürü (meslek derecesi 5)",
+          "value": "2 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Üçüncü Sınıf Emniyet Müdürü (meslek derecesi 4)",
+          "value": "2 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "İkinci Sınıf Emniyet Müdürü (meslek derecesi 3)",
+          "value": "2 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf Emniyet Müdürü (meslek derecesi 2)",
+          "value": "2 yıl",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Birinci Sınıf Emniyet Müdürü (meslek derecesi 1)",
+          "value": "Yaş haddi",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Sınıf Üstü Emniyet Müdürü (derece üstü)",
+          "value": "Yaş haddi",
+          "refs": [
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "657 sayılı Kanun 53 üncü madde birinci fıkra oranı (emniyet teşkilatı)",
+          "value": "% 5",
+          "refs": [
+            "Ek 29"
+          ]
+        },
+        {
+          "label": "Siber suçlar için aynı anda çalıştırılabilecek personel",
+          "value": "En çok beşyüz",
+          "refs": [
+            "Ek 35"
+          ]
+        },
+        {
+          "label": "Hizmet alımı sözleşmelerinin son tarihi",
+          "value": "31/12/2020",
+          "refs": [
+            "Ek 35"
+          ]
+        },
+        {
+          "label": "Ailenin gaiplik başvuru süresi",
+          "value": "Asgari bekleme süresinden itibaren bir ay",
+          "refs": [
+            "Ek 37"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Geçici 26",
+        "Ek 29",
+        "Ek 35",
+        "Ek 37"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "18",
+          "refs": [
+            "Ek 21",
+            "Ek 24",
+            "Ek 25",
+            "Ek 26",
+            "Ek 27",
+            "Ek 29",
+            "Ek 30",
+            "Ek 31",
+            "Ek 32",
+            "Ek 33",
+            "Ek 34",
+            "Ek 35",
+            "Ek 36",
+            "Ek 37",
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "md Ek 24",
+          "value": "5 soru",
+          "refs": [
+            "Ek 24"
+          ]
+        },
+        {
+          "label": "md Ek 37",
+          "value": "5 soru",
+          "refs": [
+            "Ek 37"
+          ]
+        },
+        {
+          "label": "md Ek 21",
+          "value": "2 soru",
+          "refs": [
+            "Ek 21"
+          ]
+        },
+        {
+          "label": "md Ek 29",
+          "value": "2 soru",
+          "refs": [
+            "Ek 29"
+          ]
+        },
+        {
+          "label": "md Ek 30",
+          "value": "2 soru",
+          "refs": [
+            "Ek 30"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "Ek 21",
+            "Ek 24",
+            "Ek 25",
+            "Ek 26",
+            "Ek 27",
+            "Ek 29",
+            "Ek 30",
+            "Ek 31",
+            "Ek 32",
+            "Ek 33",
+            "Ek 34",
+            "Ek 35",
+            "Ek 36",
+            "Ek 37",
+            "Geçici 26"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md Ek 25, md Ek 27, md Ek 31, md Ek 32, md Ek 33, md Ek 34, md Ek 35, md Ek 36",
+          "refs": [
+            "Ek 21",
+            "Ek 24",
+            "Ek 25",
+            "Ek 26",
+            "Ek 27",
+            "Ek 29",
+            "Ek 30",
+            "Ek 31",
+            "Ek 32",
+            "Ek 33",
+            "Ek 34",
+            "Ek 35",
+            "Ek 36",
+            "Ek 37",
+            "Geçici 26"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "Ek 21",
+        "Ek 24",
+        "Ek 25",
+        "Ek 26",
+        "Ek 27",
+        "Ek 29",
+        "Ek 30",
+        "Ek 31",
+        "Ek 32",
+        "Ek 33",
+        "Ek 34",
+        "Ek 35",
+        "Ek 36",
+        "Ek 37",
+        "Geçici 26"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "Ek 21",
+        "Ek 24",
+        "Ek 25",
+        "Ek 26",
+        "Ek 27",
+        "Ek 29",
+        "Ek 30",
+        "Ek 31",
+        "Ek 32",
+        "Ek 33",
+        "Ek 34",
+        "Ek 35",
+        "Ek 36",
+        "Ek 37",
+        "Geçici 26"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md Ek 21, Ek 24, Ek 25, Ek 26, Ek 27, Ek 29, Ek 30, Ek 31, Ek 32, Ek 33, Ek 34, Ek 35, Ek 36, Ek 37, Geçici 26, 10 soru",
+          "refs": [
+            "Ek 21",
+            "Ek 24",
+            "Ek 25",
+            "Ek 26",
+            "Ek 27",
+            "Ek 29",
+            "Ek 30",
+            "Ek 31",
+            "Ek 32",
+            "Ek 33",
+            "Ek 34",
+            "Ek 35",
+            "Ek 36",
+            "Ek 37",
+            "Geçici 26"
+          ]
+        }
+      ]
+    }
+  ]
+}

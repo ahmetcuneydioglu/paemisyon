@@ -1,0 +1,483 @@
+{
+  "unit": {
+    "slug": "cmk-ifade-sorgu-mudafi",
+    "legislationSlug": "5271-sayili-ceza-muhakemesi-kanunu-cmk",
+    "topicId": "25ddf5a1-9364-4c66-bd74-5d5bb71b21ff",
+    "title": "İfade, sorgu ve müdafi",
+    "subtitle": "Çağrı ve zorla getirme, ifade ve sorgunun tarzı, yasak usuller, müdafiin hakları ve sınırları",
+    "articleFrom": "145",
+    "articleTo": "156",
+    "readingMinutes": 13,
+    "sourceLabel": "AI özeti — 5271 Sayılı Ceza Muhakemesi Kanunu (CMK), md 145–156",
+    "articleNos": [
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 9
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Her şey davetiyeyle başlar",
+      "body": "İfadesi alınacak ya da sorgusu yapılacak kişiyi doğrudan kapıdan alamazsın, önce davetiye gider. Davetiyede kişinin neden çağrıldığı açıkça yazılır. Gelmezse zorla getirileceği de belirtilir. Bu uyarı ünitenin geri kalanının kapısını açar: çağrıya uymayan kişi için zorla getirme yolu gündeme gelir.",
+      "articleRefs": [
+        "145",
+        "146"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zorla getirme",
+      "body": "**Kimin için?**\n- Hakkında tutuklama kararı verilmesi veya yakalama emri düzenlenmesi için yeterli nedenler bulunan şüpheli veya sanık,\n- 145. maddeye göre çağrıldığı hâlde gelmeyen şüpheli veya sanık,\n- çağrıya rağmen gelmeyen tanık, bilirkişi, mağdur ve şikâyetçi.\n\n**Karar neyi içerir?** Şüpheli veya sanığın açıkça kim olduğunu, kendisiyle ilgili suçu, gerektiğinde eşkâlini ve zorla getirilme nedenlerini içerir. Kararın bir örneği şüpheli veya sanığa verilir.\n\n**Ne kadar sürer?** Kişi derhâl, olanak bulunmadığında **yol süresi hariç en geç yirmidört saat** içinde çağıran hâkimin, mahkemenin veya Cumhuriyet savcısının önüne götürülür. Orada sorguya çekilir veya ifadesi alınır. Zorla getirme, haklı görülecek bir zamanda başlar. Hâkim, mahkeme veya Cumhuriyet savcısı tarafından sorgunun ya da ifadenin sonuna kadar sürdürülür.\n\n**Getirilemezse:** Nedenleri, köy veya mahalle muhtarı ile kolluk görevlisinin birlikte imzalayacakları tutanakla saptanır.",
+      "articleRefs": [
+        "146"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zorla getirmeyi kolluk sürdürmez",
+      "body": "Sık görülen oyun şudur: madde aynen yazılır, sadece bir kelime değiştirilir. Zorla getirme, sorgu ya da ifade bitene kadar **hâkim, mahkeme veya Cumhuriyet savcısı** tarafından sürdürülür. Şıkta ‘kolluk kuvvetleri’ görürsen o şık yanlıştır.\n\nSüre hesabında da dikkatli ol. Yirmidört saatin içine yol süresi girmez. Önce yakalama anına yol süresini ekle, sonra yirmidört saati say.\n\nTutuklama kararı veya yakalama emri için yeterli neden varsa, zorla getirme için kişinin önceden çağrılmış olması gerekmez.",
+      "articleRefs": [
+        "146"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İfade ve sorguda uyulacak hususlar",
+      "body": "Şüpheli veya sanığın ifadesi alınırken ya da sorguya çekilirken şu hususlara uyulur:\n- **Kimlik saptanır.** Şüpheli veya sanık, kimliğine ilişkin soruları doğru olarak cevaplandırmakla yükümlüdür.\n- Kendisine yüklenen suç anlatılır.\n- Müdafi seçme hakkı bildirilir. Müdafiin hukukî yardımından yararlanabileceği ve müdafiin ifade veya sorguda hazır bulunabileceği de söylenir. Kişi müdafi seçecek durumda değilse ve müdafi yardımı istiyorsa, baro tarafından bir müdafi görevlendirilir.\n- 95. madde saklı kalmak üzere, yakalandığı durum yakınlarından istediğine derhâl bildirilir.\n- Yüklenen suç hakkında açıklamada bulunmamasının kanunî hakkı olduğu söylenir.\n- Şüpheden kurtulması için somut delillerin toplanmasını isteyebileceği hatırlatılır. Aleyhindeki şüphe nedenlerini ortadan kaldırma ve lehine olan hususları ileri sürme olanağı tanınır.\n- Kişisel ve ekonomik durumu hakkında bilgi alınır.\n- İfade ve sorgunun kaydında teknik imkânlardan yararlanılır.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İfade ve sorgu tutanağı",
+      "body": "İfade veya sorgu bir tutanağa bağlanır. Tutanakta şunlar yer alır:\n1. İşlemin yapıldığı yer ve tarih.\n2. Hazır bulunan kişilerin isim ve sıfatları ile ifade verenin veya sorguya çekilenin açık kimliği.\n3. Yukarıdaki işlemlerin yerine getirilip getirilmediği, getirilmemişse nedenleri.\n4. Tutanak içeriğinin ifade veren veya sorguya çekilen ile hazır olan müdafi tarafından okunduğu ve imzalarının alındığı.\n5. İmzadan çekinme hâlinde bunun nedenleri.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Susma hakkı kimliği kapsamaz",
+      "body": "Kanun susma hakkını, yüklenen suç hakkında açıklamada bulunmama olarak tanır. Kimlik soruları bunun dışındadır. Şüpheli veya sanık, kimliğine ilişkin soruları **doğru olarak cevaplandırmakla yükümlüdür**. ‘Susma hakkı olduğu için kimliğini söylemek zorunda değildir’ diyen şık yanlıştır.\n\nSoru kökü ‘suç hakkında açıklamada bulunmama’ diyorsa aradığın hak susma hakkıdır. Suçun anlatılması, yakınlara haber verilmesi ve delil toplanmasını isteme ise ayrı haklardır.",
+      "articleRefs": [
+        "147"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İfade alma ve sorguda yasak usuller",
+      "body": "**Kural:** Şüphelinin ve sanığın beyanı özgür iradesine dayanmalıdır.\n\n**Yapılamaz:** Bu iradeyi engelleyici nitelikte bedensel veya ruhsal müdahaleler yapılamaz. Bunlar kötü davranma, işkence, ilâç verme, yorma, aldatma, cebir veya tehditte bulunma, bazı araçları kullanma gibi müdahalelerdir. Kanuna aykırı bir yarar da vaat edilemez.\n\n**Sonuç:**\n- Yasak usullerle elde edilen ifadeler **rıza ile verilmiş olsa da** delil olarak değerlendirilemez.\n- Müdafi hazır bulunmaksızın kollukça alınan ifade, hükme esas alınamaz. Bunun için şüpheli veya sanığın ifadeyi hâkim veya mahkeme huzurunda doğrulaması gerekir.\n\n**Yeniden ifade:** Şüphelinin aynı olayla ilgili olarak yeniden ifadesinin alınması gerekirse, bu işlemi **ancak Cumhuriyet savcısı** yapabilir.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Rıza kurtarmaz, liste ezberlenir",
+      "body": "Bu maddede sık çıkan tuzaklar şunlar:\n- ‘Şüpheli razıysa ilaç verilebilir’ ya da ‘rızayla verilen beyan geçerlidir’ diyen şık yanlıştır. Yasak usulle alınan ifade, rıza ile verilmiş olsa da delil olamaz.\n- Aynı olayda yeniden ifadeyi alan merci Cumhuriyet savcısıdır. Sulh ceza hâkimi ya da kolluk değildir. Bu kural ‘yasak usuller’ başlıklı maddede yer alır, o başlıkla da sorulabilir.\n- Sayılan müdahaleleri tanı: kötü davranma, işkence, ilâç verme, yorma, aldatma, cebir, tehdit, bazı araçları kullanma. ‘Gözetleme’ gibi listede geçmeyen bir kavram çeldirici olarak gelir.\n- Yasak olan, **kanuna aykırı** yarar vaadidir. Kanunda zaten yer alan bir imkânı söylemek bu yasağın sözüne girmez.",
+      "articleRefs": [
+        "148"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafi seçimi ve avukat sayısı",
+      "body": "- Şüpheli veya sanık, soruşturma ve kovuşturmanın **her aşamasında** bir veya birden fazla müdafiin yardımından yararlanabilir. Kanunî temsilcisi varsa, o da müdafi seçebilir.\n- **Soruşturma evresinde ifade almada en çok üç avukat** hazır bulunabilir.\n- **Örgüt faaliyeti çerçevesinde işlenen suçlar** bakımından yürütülen kovuşturmalarda **duruşmada en çok üç avukat** hazır bulunabilir.\n- Soruşturma ve kovuşturmanın her aşamasında avukatın şu hakları engellenemez, kısıtlanamaz: şüpheli veya sanıkla görüşme, ifade alma veya sorgu süresince yanında olma ve hukukî yardımda bulunma.\n- Yararları birbirine uygun olan birden fazla şüpheli veya sanığın savunması aynı müdafie verilebilir.",
+      "articleRefs": [
+        "149",
+        "152"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Üç avukat sınırı nerede geçerli?",
+      "body": "Üç avukat sınırı yalnızca şu durumlarda vardır:\n- soruşturma evresinde **ifade almada**,\n- örgüt faaliyeti çerçevesindeki suçlarda **kovuşturma sırasında duruşmada**.\n\nŞıklarda dört, beş gibi sayılar ya da ‘örgüt davalarında sınırlama yoktur’ ifadesi çeldiricidir.\n\nDikkat: soruşturmadaki sınır, ifade almada hazır bulunabilecek avukat sayısıdır. Şüphelinin seçebileceği müdafi sayısını sınırlamaz. Müdafi yardımı ‘kanun yolu aşamasına kadar’ değil, soruşturma ve kovuşturmanın her aşamasında vardır.",
+      "articleRefs": [
+        "149"
+      ],
+      "counterNumbers": [
+        4,
+        5
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Sayılar: zorla getirme ve avukat sınırı",
+      "rows": [
+        {
+          "label": "Zorla getirilenin çağıran merci önüne götürülmesi (derhâl olanak yoksa, yol süresi hariç)",
+          "value": "En geç 24 saat",
+          "refs": [
+            "146"
+          ]
+        },
+        {
+          "label": "Soruşturma evresinde ifade almada hazır bulunabilecek avukat",
+          "value": "En çok 3",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "Örgüt faaliyeti suçlarında kovuşturmada, duruşmada hazır bulunabilecek avukat",
+          "value": "En çok 3",
+          "refs": [
+            "149"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "146",
+        "149"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafiin görevlendirilmesi",
+      "body": "**İstem üzerine:** Şüpheli veya sanıktan kendisine bir müdafi seçmesi istenir. Müdafi seçebilecek durumda olmadığını beyan ederse, **istemi hâlinde** bir müdafi görevlendirilir.\n\n**İstem aranmaksızın:** Müdafii bulunmayan şüpheli veya sanık şu durumlardaysa müdafi görevlendirilir:\n- çocuksa,\n- kendisini savunamayacak derecede malulse,\n- sağır ve dilsizse,\n- **alt sınırı beş yıldan fazla hapis cezasını gerektiren** suçlardan soruşturma veya kovuşturma yapılıyorsa.\n\nZorunlu müdafilikle ilgili diğer hususlar, Türkiye Barolar Birliğinin görüşü alınarak çıkarılacak yönetmelikle düzenlenir.\n\n**Kim görevlendirir?** Baro görevlendirir. Soruşturma evresinde ifadeyi alan merciin veya sorguyu yapan hâkimin istemi üzerine, kovuşturma evresinde mahkemenin istemi üzerine görevlendirme yapılır. Görevlendirmeyi soruşturmanın veya kovuşturmanın yapıldığı yer barosu yapar.\n\n**Sona erme:** Şüpheli veya sanık sonradan kendisi müdafi seçerse, baronun görevlendirdiği avukatın görevi sona erer.",
+      "articleRefs": [
+        "150",
+        "156"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Müdafi seçecek durumda olmamak, otomatik müdafi demek değil",
+      "body": "Çocuk olmayan bir şüpheli ‘müdafi seçecek durumda değilim’ derse, müdafi kendiliğinden gelmez. Müdafi ancak **istemi hâlinde** görevlendirilir. ‘İstemi aranmaksızın görevlendirilir’ diyen şık yanlıştır.\n\nİstem aranmayan hâller sınırlıdır: çocuk, kendini savunamayacak derecede malul, sağır ve dilsiz olmak ve alt sınırı beş yıldan fazla hapis gerektiren suçlar. Maddi imkânsızlık bu listede yoktur.\n\nTersine bir durum da sorulur: çocuk şüpheli avukatını kendisi seçmiş olabilir. Bu durumda müdafi seçilmiştir, ama hâl yine kanunun istem aramadığı zorunlu müdafilik hâlidir.",
+      "articleRefs": [
+        "150"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafi gelmezse, müdafi yasaklanırsa",
+      "body": "**Görevlendirilen müdafi aksarsa:** 150. maddeye göre görevlendirilen müdafi duruşmaya gelmeyebilir, vakitsiz çekilebilir veya görevinden kaçınabilir. Bu durumda hâkim veya mahkeme, başka bir müdafi görevlendirilmesi için derhâl işlem yapar. Oturuma ara verilebilir ya da oturum ertelenebilir. Yeni müdafi, savunmaya hazırlanmak için yeterli zaman olmadığını açıklarsa oturum ertelenir.\n\n**Yasaklama, kimleri kapsar:** 149. maddeye göre seçilen veya 150. maddeye göre görevlendirilen avukat yasaklanabilir. Şartlar şunlardır: avukat, Türk Ceza Kanununun 220 ve 314 üncü maddelerinde sayılan suçlar ile terör suçlarından şüpheli, sanık veya hükümlü olanların müdafiliğini üstlenmiştir ve kendisi hakkında da bu suçlar nedeniyle kovuşturma vardır.\n\n**Usul:** Cumhuriyet savcısı talep eder, hâkim veya mahkeme gecikmeksizin karar verir. Karara itiraz edilebilir. İtirazla karar kaldırılırsa avukat görevine devam eder.\n\n**Süre:** Yasaklama, kovuşturma konusu suçla sınırlı olarak **bir yıl** süreyle verilebilir. Kovuşturmanın niteliği gerektirirse **altı aydan fazla olmamak üzere en fazla iki defa** uzatılabilir.\n\n**Kendiliğinden kalkma:** Kovuşturmaya yer olmadığına dair karar ya da mahkûmiyet dışında bir karar verilirse, yasaklama kesinleşme beklenmeksizin kalkar.\n\n**Sonrası:** Yasaklama kararı, yeni müdafi görevlendirilmesi için derhal ilgili baro başkanlığına bildirilir. Yasak sürerken avukat, müdafiliğini üstlendiği kişiyi ceza infaz kurumunda veya tutukevinde ziyaret edemez. Bu yasak, başka davalarla ilgili ziyaretler için de geçerlidir.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Yasaklamada süre tuzağı",
+      "body": "Sorulan hep aynı ikili:\n- temel süre **bir yıl**,\n- uzatma **altı aydan fazla olmamak üzere en fazla iki defa**.\n\n‘Sınırsız sayıda uzatılır’, ‘hiç uzatılamaz’ ya da uzatmayı Yargıtay’a bırakan şıklar yanlıştır. Yasaklama talebini Cumhuriyet savcısı yapar, kararı hâkim veya mahkeme verir. Yasaklama kovuşturma konusu suçla sınırlı verilir. Ziyaret yasağı ise yasak süresince başka davalar için de geçerlidir.",
+      "articleRefs": [
+        "151"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafiin dosyayı inceleme yetkisi",
+      "body": "**Soruşturmada:** Müdafi dosya içeriğini inceleyebilir ve istediği belgelerin bir örneğini harçsız alabilir.\n\n**Kısıtlama:** İnceleme soruşturmanın amacını tehlikeye düşürebilecekse, **Cumhuriyet savcısının istemi üzerine hâkim kararıyla** kısıtlanabilir. Bu karar ancak şu suçlara ilişkin soruşturmalarda verilebilir:\n- Türk Ceza Kanunundaki kasten öldürme, cinsel saldırı (birinci fıkra hariç), çocukların cinsel istismarı, uyuşturucu veya uyarıcı madde imal ve ticareti, suç işlemek amacıyla örgüt kurma, Devletin Güvenliğine Karşı Suçlar, Anayasal Düzene ve Bu Düzenin İşleyişine Karşı Suçlar, Devlet Sırlarına Karşı Suçlar ve Casusluk,\n- Ateşli Silahlar ve Bıçaklar ile Diğer Aletler Hakkında Kanundaki silah kaçakçılığı,\n- Bankacılık Kanunundaki zimmet suçu,\n- Kaçakçılıkla Mücadele Kanunundaki suçlar.\n\n**Kısıtlanamayanlar:** Yakalanan kişinin veya şüphelinin ifadesini içeren tutanak, bilirkişi raporları ve adı geçenlerin hazır bulunmaya yetkili oldukları diğer adli işlemlere ilişkin tutanaklar.\n\n**Kovuşturmada:** İddianamenin mahkemece kabul edildiği tarihten itibaren müdafi dosya içeriğini ve muhafaza altına alınmış delilleri inceleyebilir. Bütün tutanak ve belgelerin örneklerini harçsız alabilir.\n\nBu haklardan **suçtan zarar görenin vekili** de yararlanır.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Ne kısıtlanır, ne kısıtlanamaz?",
+      "body": "Soru genellikle belgeleri sıralar ve ‘hangisinin incelenmesi kısıtlanabilir?’ diye sorar. Kural basit: şüphelinin ifadesini içeren tutanak ve bilirkişi raporu kısıtlanamaz. Adı geçenlerin hazır bulunmaya yetkili olduğu işlemlerin tutanakları da kısıtlanamaz. Bu istisnalara girmeyen bir tutanak listede görünüyorsa, o belge kısıtlanabilir tarafındadır.\n\nKısıtlamayı savcı tek başına koyamaz: savcı ister, hâkim karar verir. Kısıtlama her suçta değil, yalnızca sayılan suçlarda mümkündür.",
+      "articleRefs": [
+        "153"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Müdafi ile görüşme",
+      "body": "- Şüpheli veya sanık, **vekâletname aranmaksızın** müdafii ile **her zaman** görüşebilir. Görüşme, konuşulanların başkalarınca duyulamayacağı bir ortamda yapılır.\n- Müdafii ile yazışmaları denetime tâbi tutulamaz.\n\n**Kısıtlama hangi suçlarda?**\n- Türk Ceza Kanununun İkinci Kitap Dördüncü Kısım Dördüncü, Beşinci, Altıncı ve Yedinci Bölümlerinde tanımlanan suçlar,\n- Terörle Mücadele Kanunu kapsamına giren suçlar,\n- örgüt faaliyeti çerçevesinde işlenen uyuşturucu ve uyarıcı madde imâl ve ticareti suçları.\n\n**Nasıl kısıtlanır?** Bu suçlarda **gözaltındaki şüphelinin** müdafi ile görüşme hakkı, Cumhuriyet savcısının istemi üzerine **hâkim kararıyla yirmidört saat** süreyle kısıtlanabilir. Bu süre içinde **ifade alınamaz**.",
+      "articleRefs": [
+        "154"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Görüşme kısıtlaması saatle ölçülür",
+      "body": "Süreleri karşılaştıran sorularda bu süreyi saat cinsinden hatırla: müdafi ile görüşmenin kısıtlanması **yirmidört saat**. Gün, hafta ya da ay olarak verilen şıklar çeldiricidir.\n\nKısıtlama sırasında ifade alınamaz. Yani kısıtlama, müdafisiz ifade almanın yolu değildir.\n\nGörüşme için vekâletname aranmaz. ‘Vekâletname ilişkisi bulunmak koşuluyla görüşebilir’ diyen şık yanlıştır.",
+      "articleRefs": [
+        "154"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kanunî temsilci ve eş duruşmada",
+      "body": "Sanığın kanunî temsilcisine duruşma gün ve saati bildirilir. Temsilci duruşmaya kabul edilir ve istemi üzerine dinlenebilir. Aynı hüküm sanığın **eşi** için de uygulanır, ancak eşe **tebligat yapılmaz**.",
+      "articleRefs": [
+        "155"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Ünitenin sayıları",
+      "rows": [
+        {
+          "label": "Zorla getirilenin merci önüne götürülmesi (yol süresi hariç)",
+          "value": "En geç 24 saat",
+          "refs": [
+            "146"
+          ]
+        },
+        {
+          "label": "Soruşturmada ifade almada hazır bulunabilecek avukat",
+          "value": "En çok 3",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "Örgüt faaliyeti suçlarında kovuşturmada, duruşmada hazır bulunabilecek avukat",
+          "value": "En çok 3",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "İstem aranmaksızın müdafi: suçun hapis cezası alt sınırı",
+          "value": "5 yıldan fazla",
+          "refs": [
+            "150"
+          ]
+        },
+        {
+          "label": "Müdafilikten yasaklama süresi",
+          "value": "1 yıl",
+          "refs": [
+            "151"
+          ]
+        },
+        {
+          "label": "Yasaklamanın uzatılması",
+          "value": "Her seferinde en çok 6 ay, en fazla 2 defa",
+          "refs": [
+            "151"
+          ]
+        },
+        {
+          "label": "Gözaltındaki şüphelinin müdafi ile görüşmesinin kısıtlanması",
+          "value": "24 saat",
+          "refs": [
+            "154"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "146",
+        "149",
+        "150",
+        "151",
+        "154"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Soruşturma ve kovuşturmada müdafi",
+      "rows": [
+        {
+          "aspect": "Evre",
+          "left": "Soruşturma",
+          "right": "Kovuşturma",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "aspect": "Avukat sayısı sınırı",
+          "left": "İfade almada en çok 3 avukat hazır bulunabilir",
+          "right": "Örgüt faaliyeti suçlarında duruşmada en çok 3 avukat hazır bulunabilir",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "aspect": "Dosya inceleme",
+          "left": "Dosyayı inceleyebilir, belge örneğini harçsız alabilir; sayılan suçlarda savcı istemi ve hâkim kararıyla kısıtlanabilir",
+          "right": "İddianamenin kabulünden itibaren dosya içeriğini ve muhafaza altındaki delilleri inceleyebilir; bütün tutanak ve belgelerin örneğini harçsız alabilir",
+          "refs": [
+            "153"
+          ]
+        },
+        {
+          "aspect": "Zorunlu müdafiyi baroya kim ister?",
+          "left": "İfadeyi alan merci veya sorguyu yapan hâkim",
+          "right": "Mahkeme",
+          "refs": [
+            "156"
+          ]
+        },
+        {
+          "aspect": "Görevlendiren baro",
+          "left": "Soruşturmanın yapıldığı yer barosu",
+          "right": "Kovuşturmanın yapıldığı yer barosu",
+          "refs": [
+            "156"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "149",
+        "153",
+        "156"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "25",
+          "refs": [
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156"
+          ]
+        },
+        {
+          "label": "md 148 — İfade alma ve sorguda yasak usuller",
+          "value": "6 soru",
+          "refs": [
+            "148"
+          ]
+        },
+        {
+          "label": "md 149 — Şüphelinin veya sanığın müdafi seçimi",
+          "value": "5 soru",
+          "refs": [
+            "149"
+          ]
+        },
+        {
+          "label": "md 146 — Zorla getirme",
+          "value": "3 soru",
+          "refs": [
+            "146"
+          ]
+        },
+        {
+          "label": "md 150 — Müdafiin görevlendirilmesi",
+          "value": "3 soru",
+          "refs": [
+            "150"
+          ]
+        },
+        {
+          "label": "md 147 — İfade ve sorgunun tarzı",
+          "value": "2 soru",
+          "refs": [
+            "147"
+          ]
+        },
+        {
+          "label": "Resmî sınavlarda",
+          "value": "2024 PAEM 8. Dönem İlk Derece Amirlik Eğitimi Yazılı Sınavı (1)",
+          "refs": [
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 145, md 152, md 155, md 156",
+          "refs": [
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "145",
+        "146",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "152",
+        "153",
+        "154",
+        "155",
+        "156"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "145",
+        "146",
+        "147",
+        "148",
+        "149",
+        "150",
+        "151",
+        "152",
+        "153",
+        "154",
+        "155",
+        "156"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 145–156, 10 soru",
+          "refs": [
+            "145",
+            "146",
+            "147",
+            "148",
+            "149",
+            "150",
+            "151",
+            "152",
+            "153",
+            "154",
+            "155",
+            "156"
+          ]
+        }
+      ]
+    }
+  ]
+}

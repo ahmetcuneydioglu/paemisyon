@@ -1,0 +1,501 @@
+{
+  "unit": {
+    "slug": "gkdk-sorusturma-usulu",
+    "legislationSlug": "7068-sayili-genel-kolluk-disiplin-hukumleri-kanunu",
+    "topicId": "a9e2a110-a63e-4cfa-91f2-25c187d0c3e6",
+    "title": "Soruşturma usulü, zamanaşımı, itiraz ve son hükümler",
+    "subtitle": "Kurul kararı, görevden uzaklaştırma, zamanaşımı, itiraz, savunma, yargı denetimi ve geçiş hükümleri",
+    "articleFrom": "27",
+    "articleTo": "Geçici 2",
+    "readingMinutes": 12,
+    "sourceLabel": "AI özeti — 7068 Sayılı Genel Kolluk Disiplin Hükümleri Kanunu, md 27–37, 39, Geçici 1, Geçici 2",
+    "articleNos": [
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "39",
+      "Geçici 1",
+      "Geçici 2"
+    ],
+    "generatedBy": "claude-opus-5-5 (ozet-uret.ts)",
+    "sortOrder": 5
+  },
+  "blocks": [
+    {
+      "type": "concept",
+      "title": "Soruşturma bitti: kurul ne diyebilir?",
+      "body": "Soruşturma tamamlandığında söz disiplin kuruluna geçer. Kurulun verebileceği kararlar kanunda tek tek sayılmıştır: disiplin cezası verilmesine yer olmadığına, karar verilmesine yer olmadığına, disiplin cezası verilmesine ya da kurulun yetkisizliğine. Kurulun elindeki seçenekler bunlardır. Soruşturmada fiilin, kurulun görev alanına giren başka bir disiplinsizlik olduğu ortaya çıkabilir. Bu durumda kurul dosyayı kimseye göndermez; o disiplinsizliğe uygun cezayı kendisi tayin eder.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Kurul kararının yazımı",
+      "body": "**Kural:** Disiplin kurulu kararları **gerekçeli** olarak yazılır.\n**Ceza verilmişse** gerekçede şunlar gösterilir:\n- disiplinsizlik unsurları,\n- ceza miktarının tayininde esas alınan hususlar.\n**İmza:** Karar, **başkan ve üyeler** tarafından imzalanır.\n**Tebliğ:** Karar ilgililere tebliğ edilir.\n**Farklı disiplinsizlik:** Fiil, kurulun görev alanına giren başka bir disiplinsizliği oluşturuyorsa buna uygun olan disiplin cezası tayin edilir.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Kurul kararında sık karıştırılanlar",
+      "body": "**Soruşturmanın genişletilmesine** karar vermek kurulun seçenekleri arasında yok. Kurulun seçenekleri şunlardır: cezaya yer olmadığı, karara yer olmadığı, ceza verilmesi ve yetkisizlik.\nKararı 'başkan ve raportör' imzalamaz; karar **başkan ve üyeler** tarafından imzalanır.\nFiil başka bir disiplinsizlik çıktıysa kurul dosyayı iade etmez, üst disiplin amirine ya da başka kurula göndermez. Soruşturma emrindeki nitelendirmeyle de bağlı kalmaz: **uygun cezayı kendisi tayin eder**.",
+      "articleRefs": [
+        "27"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Görevden uzaklaştırma",
+      "body": "**Kural:** Disiplin soruşturması nedeniyle görevden uzaklaştırmada **657 sayılı Kanun** hükümleri uygulanır.\n**Çıkarma cezası sonrası:** Disiplin kurullarınca **meslekten çıkarma** veya **Devlet memurluğundan çıkarma** cezası verilenlerden görevi başında kalmasında **sakınca görülenler**, kararın onaylanarak uygulanmasına kadar görevden uzaklaştırılabilir.\n**İstisna:** Meslekten çıkarma cezası daha hafif bir cezaya indirilerek onaylanırsa görevden uzaklaştırma önlemi **derhal kaldırılır**.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Uzaklaştırma kendiliğinden olmaz",
+      "body": "Kurul çıkarma cezası verdi diye personel kendiliğinden görevden uzaklaştırılmış sayılmaz. Kanun 'uzaklaştırılabilir' der ve bunu bir şarta bağlar: görevi başında kalmasında sakınca görülmesi. Önlem yalnız Devlet memurluğundan çıkarmaya özgü değildir; meslekten çıkarmada da uygulanır. İdari yargıya başvurma şartı da aranmaz. Meslekten çıkarma onayda hafifletilirse önlem derhal kalkar. Bunun için ilgilinin talebi, mahkeme kararı ya da yeni cezanın infazı beklenmez. Uygulanacak kanunu soran soruda cevap 657 sayılı Kanundur; başka teşkilat kanunlarına kayma.",
+      "articleRefs": [
+        "28"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Zamanaşımı: iki ayrı saat",
+      "body": "Disiplin cezası vermenin de bir süresi var ve iki ayrı saat aynı anda işler. Soruşturmaya başlama saati, fiilin işlendiğini disiplin amirinin öğrendiği an çalışmaya başlar. Cezanın ağırlığına göre belirlenen süre içinde soruşturma açılmazsa ceza verme yetkisi düşer. Ceza verme saati ise fiilin işlendiği tarihten başlar; iki yıl içinde ceza verilmezse yetki yine zamanaşımına uğrar. Öğrenme tarihi ile işlenme tarihini birbirinden ayırırsan bu konunun büyük kısmı çözülür.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Zamanaşımı süreleri ve başlangıcı",
+      "body": "**Soruşturmaya başlama süresi** (fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarihten itibaren):\n- Uyarma, kınama, aylıktan kesme, kısa ve uzun süreli durdurma: **bir ay**\n- Meslekten çıkarma ve Devlet memurluğundan çıkarma: **altı ay**\nBu süre içinde soruşturmaya başlanmazsa disiplin cezası verme yetkisi zamanaşımına uğrar.\n**Ceza verme süresi:** Fiilin işlendiği tarihten itibaren **iki yıl** içinde disiplin cezası verilmezse ceza verme yetkisi zamanaşımına uğrar.\n**Başlangıç anı:**\n- Tamamlanmış suçlarda: suçun işlendiği tarih\n- Kesintisiz suçlarda: kesintinin gerçekleştiği tarih\n- Zincirleme suçlarda: son suçun işlendiği tarih",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Mahkeme cezayı iptal ederse",
+      "body": "**Şart:** Disiplin cezası mahkeme tarafından şu gerekçelerle iptal edilmiş olmalıdır:\n- fiilin hatalı olarak vasıflandırılması veya\n- düzeltilebilir bir şekil noksanlığı bulunması.\n**Yetkili:** Kararın kesinleştiği tarihteki yetkili disiplin kurulu veya disiplin amiri.\n**Süre:** Kararın tebliğinden itibaren **altı ay** içinde.\n**Ne yapar:** Ceza verme yetki ve sorumluluğu kapsamında yeniden değerlendirme yapar.",
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Zamanaşımında yakın duran şıklar",
+      "body": "Süre sorularında şıklar birbirine yakındır. Soruşturmaya başlama süresi hafif cezalarda **bir ay**, çıkarma cezalarında **altı ay**dır. Ceza verme süresi ise **iki yıl**dır. On beş gün ya da on ay gibi şıklar tuzaktır.\nSürenin başlangıcı ihbarın kuruma ulaştığı, soruşturma emrinin verildiği ya da savunmaya çağrılma tarihi değildir. Başlangıç, **fiilin işlendiğinin disiplin amiri tarafından öğrenildiği tarih**tir.\nKesintisiz suçta saat, suçun başladığı gün değil **kesintinin gerçekleştiği** gün işlemeye başlar. 'Son suç' ifadesi zincirleme suça aittir.\nİptal sonrası yeniden değerlendirmenin gerekçeleri **hatalı vasıflandırma** ve **düzeltilebilir şekil noksanlığı**dır; 'fiilin sabit görülmemesi' bu listede yok. Değerlendirmeyi cezayı önceden veren merci değil, **kararın kesinleştiği tarihteki** yetkili kurul ya da amir yapar.",
+      "articleRefs": [
+        "29"
+      ],
+      "counterNumbers": [
+        15,
+        10
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Zamanaşımı süreleri",
+      "rows": [
+        {
+          "label": "Soruşturmaya başlama — uyarma, kınama, aylıktan kesme, kısa ve uzun süreli durdurma (öğrenmeden itibaren)",
+          "value": "1 ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Soruşturmaya başlama — meslekten çıkarma, Devlet memurluğundan çıkarma (öğrenmeden itibaren)",
+          "value": "6 ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Ceza verme (fiilin işlendiği tarihten itibaren)",
+          "value": "2 yıl",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "İptal sonrası yeniden değerlendirme (kararın tebliğinden itibaren)",
+          "value": "6 ay",
+          "refs": [
+            "29"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "29"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtiraz: süre, şekil, merci",
+      "body": "**Süre:** Disiplin amirlerinin verdiği cezalara, tebliğden itibaren **on gün** içinde itiraz edilebilir.\n**Şekil ve merci:** İtiraz, **bir üst disiplin amirine yazılı** olarak yapılır.\n**İstisnalar:**\n- Vali, Emniyet Genel Müdürü, Jandarma Genel Komutanı veya Sahil Güvenlik Komutanının doğrudan verdiği cezalara itiraz **Bakanlık Yüksek Disiplin Kuruluna** yapılır. Kurulun itiraz üzerine verdiği karar **kesindir**.\n- Kaymakamın doğrudan verdiği cezalara itiraz **valiye** yapılır.\n**Sonuç:** Süresi içinde itiraz edilmeyen cezalar kesinleşir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "İtirazın incelenmesi ve yargı yolu",
+      "body": "**Karar süresi:** İtiraz, yetkili merci tarafından **otuz gün** içinde karara bağlanır.\n**İtiraz haklıysa:** Merci cezayı hafifletebilir veya tamamen kaldırabilir.\n**İtiraz haklı değilse:** İtiraz ret olunur.\n**Kesinleşme:** Karar, itiraz edene tebliğ edilerek kesinleşir.\n**Sınır:** İtiraz üzerine önceki cezadan daha ağır ceza verilemez.\n**Bakan ve disiplin kurulları:** Verdikleri cezalara karşı ancak **idari yargı** yoluna başvurulabilir.",
+      "articleRefs": [
+        "30"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "İtirazda en çok düşülen tuzaklar",
+      "body": "İtiraz süresi **on gün**dür; on beş gün şıkkı tuzaktır. Tebliğden sonra on gün geçmişse ceza kesinleşmiştir ve merci itirazı esastan incelemek zorunda değildir.\nİtiraz **sözlü değil, yazılı** yapılır.\nValinin doğrudan verdiği cezaya itiraz İçişleri Bakanlığına değil, **Bakanlık Yüksek Disiplin Kuruluna** yapılır. Kurulun bu itiraz üzerine verdiği karar **kesindir**. Valiye giden itiraz yalnız kaymakamın doğrudan verdiği cezalar içindir.\nİtiraz edenin durumu ağırlaşamaz: **daha ağır ceza verilemez**. Haklı itirazda merci cezayı hafifletebilir ya da tamamen kaldırabilir. Dosyayı geri gönderme veya cezayı erteleme gibi seçenekler kanunda yok.\nBakan ve disiplin kurullarının verdiği cezalarda itiraz yolu yoktur; bu cezalara karşı **ancak idari yargı** yoluna başvurulabilir.",
+      "articleRefs": [
+        "30"
+      ],
+      "counterNumbers": [
+        15
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Savunma hakkı",
+      "body": "**Kural:** Disiplin amirleri veya disiplin kurulları **savunma alınmadan** disiplin cezası veremez.\n**Savunmayı kim ister:** Disiplin amiri, yetkili disiplin kurulu başkanı ya da başkanın görevlendireceği kurul üyelerinden biri.\n**Süre:** Savunma için verilen süre **yedi günden az olamaz**.\n**Süresinde savunma yapılmazsa:** Personel savunma hakkından vazgeçmiş sayılır.\n**Evrak inceleme:** Personel, kendisinden savunma istenmesinden itibaren soruşturma evrakını inceleme hakkına sahiptir.\n**Çıkarma cezası istenen personelin hakları:** Hakkında meslekten çıkarma veya Devlet memurluğundan çıkarma cezası istenen personel şu haklara sahiptir:\n- soruşturma evrakını incelemek,\n- tanık dinletmek,\n- disiplin kurulunda sözlü veya yazılı olarak, kendisi veya vekili vasıtasıyla savunma yapmak.",
+      "articleRefs": [
+        "31"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Savunmada 'en az' ve 'kimden' tuzağı",
+      "body": "Savunma süresi için 'en az' kalıbını hatırla: süre **yedi günden az olamaz**. Beş gün ya da on gün şıkları tuzaktır.\nSüresinde savunma vermeyen personel hakkında ceza verilmesi engellenmez. Ek süre vermek zorunlu değildir, savunma vekilden ya da yakınlardan da alınmaz. Personel **savunma hakkından vazgeçmiş sayılır**.\nEvrak inceleme hakkı soruşturma emriyle değil, **savunma istenmesiyle** başlar.\nSavunmayı muhakkik ya da toplantı hâlindeki kurul istemez. Savunmayı disiplin amiri, kurul başkanı veya başkanın görevlendirdiği kurul üyesi ister.\nTanık dinletme ve kurulda sözlü savunma hakkı durdurma cezası istenenlere tanınmaz. Bu haklar yalnız **meslekten çıkarma veya Devlet memurluğundan çıkarma** cezası istenenlere aittir.",
+      "articleRefs": [
+        "31"
+      ],
+      "counterNumbers": [
+        5,
+        10
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Dava ve cezanın yerine getirilmesi",
+      "body": "**İptal davası:** Kesinleşen disiplin cezalarına karşı iptal davası açılabilir.\n**Dava açma süresi:** Süre, kesinleşen cezanın personele tebliğinden itibaren başlar.\n**İstisna:** Sahil Güvenlik Komutanlığının seyir hâlindeki gemi ve botlarında verilen cezalarda süre, geminin bağlı bulunduğu üsse veya limana dönmesiyle başlar.\n**Yerine getirme:** Disiplin cezaları, kesinleşmesini müteakip yerine getirilir.\n**Aylıktan kesme:** Kesinleşme tarihini takip eden **aybaşında** uygulanır.\n**Bildirim:** Verilen cezalar üst disiplin amirine bildirilir. Meslekten çıkarma ve Devlet memurluğundan çıkarma cezaları ayrıca Devlet Personel Başkanlığına bildirilir.",
+      "articleRefs": [
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "trap",
+      "title": "Tebliğ, kesinleşme, aybaşı",
+      "body": "Dava açma süresi cezanın verildiği, yerine getirildiği ya da itirazın reddedildiği günden başlamaz. Süre, **kesinleşen cezanın personele tebliğinden** başlar. Seyir hâlindeki Sahil Güvenlik gemi veya botunda verilen cezada ise süre, personelin karaya çıkmasıyla değil **geminin bağlı bulunduğu üsse ya da limana dönmesiyle** işlemeye başlar.\nCezalar verildiği ya da tebliğ edildiği an değil, **kesinleşince** yerine getirilir. Aylıktan kesme derhal ya da ay sonunda değil, kesinleşmeyi takip eden **aybaşında** uygulanır.\nDevlet Personel Başkanlığına her ceza bildirilmez; oraya yalnız **çıkarma cezaları** bildirilir. Bütün cezalar ise üst disiplin amirine bildirilir.",
+      "articleRefs": [
+        "32",
+        "33"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Boşluk, denklik ve yönetmelik",
+      "body": "**Boşluk hâlinde:** Bu Kanunda hüküm bulunmayan hâllerde 657 sayılı Kanunun disipline ilişkin hükümleri uygulanır.\n**Denklik:** 657 sayılı Kanundaki **kademe ilerlemesinin durdurulması** cezası, bu Kanundaki **uzun süreli durdurma** cezası gibi telakki edilir ve uygulanır.\n**Jandarma ve Sahil Güvenlik:** Terfileri 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personelin kademe ilerlemesinin durdurulması cezası, 8 inci maddenin yedinci fıkrasının (a) ve (b) bentlerine göre yerine getirilir.\n**Yönetmelik:** Disiplin kurullarının toplanma, görüşme ve karar vermesine ilişkin usul ve esaslar ile Kanunun uygulanmasına ilişkin diğer hususlar, **Bakanlık** tarafından yürürlüğe konulan yönetmelikle düzenlenir.\n**Dikkat:** Kademe ilerlemesinin durdurulmasının karşılığı **kısa süreli** değil, **uzun süreli** durdurmadır. Yönetmelik; Emniyet Genel Müdürlüğü yönergesi, Cumhurbaşkanlığı kararnamesi ya da Bakanlar Kurulu yönetmeliği değil, **Bakanlık yönetmeliği**dir.",
+      "articleRefs": [
+        "34",
+        "35"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Son hükümler",
+      "body": "**md 36:** Bu madde, 657 sayılı Devlet Memurları Kanunu ve 3152 sayılı İçişleri Bakanlığı Teşkilat ve Görevleri Hakkında Kanun ile ilgilidir; hükümleri ilgili kanunlardaki yerlerine işlenmiştir.\n**Yürürlükten kaldırılanlar (md 37):**\n- 3201 sayılı Emniyet Teşkilat Kanununun 82 nci maddesinin birinci, üçüncü ve dördüncü fıkraları ile 83 üncü maddesi ve Ek 4 – Ek 9 maddeleri\n- 5442 sayılı İl İdaresi Kanununun 19 uncu maddesi\n**Yürütme (md 39):** Kanun hükümlerini **Bakanlar Kurulu** yürütür.\n**Dikkat:** Yönetmeliği çıkaran **Bakanlık**, Kanunu yürüten ise **Bakanlar Kurulu**dur; bu ayrımı karıştırma.",
+      "articleRefs": [
+        "35",
+        "36",
+        "37",
+        "39"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Geçiş hükümleri",
+      "body": "**Eski cezalar:** Bu maddenin yürürlüğe girdiği tarihten önce 657, 6413 ve 3201 sayılı Kanunlar ile Emniyet Teşkilatı Disiplin Tüzüğü hükümlerine göre verilmiş disiplin cezaları, bu Kanun hükümleri uyarınca verilmiş addolunur.\n**Devam eden soruşturmalar** (682 sayılı Kanun Hükmünde Kararnamenin yürürlüğe girdiği tarihte):\n- Usule, yetkili disiplin amiri ve yetkili disiplin kurullarına ilişkin hükümler **derhal** uygulanır.\n- Eski mevzuatın ceza hükümleri ile bu Kanunun ceza hükümleri farklıysa **personelin lehine** olan hükümler uygulanır.\n**İnfaz edilmiş cezalar:** Bu cezalara bağlı olarak yapılmış idari işlemler aynen muhafaza olunur.\n**Milli Savunma Bakanlığı personeli:** Sahil güvenlik ve jandarma teşkilatlarında görev yapan bu personelin disiplin işlemleri, görevleri süresince bu Kanuna göre yürütülür.\n**Durdurma cezası yerine kesinti (Geçici 2):** Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığında terfileri 926, 3466, 3269 ve 6191 sayılı Kanunlara tabi personel için, maddede belirtilen tarih aralığında şu kesintiler uygulanır:\n- Kısa süreli durdurmayı gerektiren hâllerde brüt aylığın **1/5'i ila 1/4'ü** kesilir.\n- Uzun süreli durdurmayı gerektiren hâllerde brüt aylığın **1/3'ü ila 1/2'si** kesilir.",
+      "articleRefs": [
+        "Geçici 1",
+        "Geçici 2"
+      ]
+    },
+    {
+      "type": "numbers",
+      "title": "Usul süreleri ve oranlar",
+      "rows": [
+        {
+          "label": "Soruşturmaya başlama — uyarma, kınama, aylıktan kesme, durdurma cezaları",
+          "value": "1 ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Soruşturmaya başlama — çıkarma cezaları",
+          "value": "6 ay",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "Ceza verme zamanaşımı (fiilin işlendiği tarihten itibaren)",
+          "value": "2 yıl",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "İtiraz süresi (tebliğden itibaren)",
+          "value": "10 gün",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "İtirazın karara bağlanması",
+          "value": "30 gün",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "Savunma için verilecek süre",
+          "value": "en az 7 gün",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "Geçici 2 — kısa süreli durdurma karşılığı kesinti",
+          "value": "brüt aylığın 1/5'i – 1/4'ü",
+          "refs": [
+            "Geçici 2"
+          ]
+        },
+        {
+          "label": "Geçici 2 — uzun süreli durdurma karşılığı kesinti",
+          "value": "brüt aylığın 1/3'ü – 1/2'si",
+          "refs": [
+            "Geçici 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "29",
+        "30",
+        "31",
+        "Geçici 2"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Amir cezası mı, Bakan ya da kurul cezası mı?",
+      "rows": [
+        {
+          "aspect": "Cezayı veren",
+          "left": "Disiplin amiri",
+          "right": "Bakan veya disiplin kurulu",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "aspect": "Başvuru yolu",
+          "left": "İtiraz",
+          "right": "Ancak idari yargı yolu",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "aspect": "İtiraz mercii",
+          "left": "Bir üst disiplin amiri; vali, Emniyet Genel Müdürü, Jandarma Genel Komutanı ve Sahil Güvenlik Komutanının doğrudan verdiği cezalarda Bakanlık Yüksek Disiplin Kurulu; kaymakamın doğrudan verdiği cezalarda vali",
+          "right": "Kanunda itiraz mercii öngörülmemiş",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "aspect": "Süre",
+          "left": "Tebliğden itibaren 10 gün içinde itiraz",
+          "right": "Dava açma süresi, kesinleşen cezanın personele tebliğinden başlar",
+          "refs": [
+            "30",
+            "32"
+          ]
+        },
+        {
+          "aspect": "Savunma",
+          "left": "Savunma alınmadan ceza verilemez",
+          "right": "Savunma alınmadan ceza verilemez",
+          "refs": [
+            "31"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "30",
+        "31",
+        "32"
+      ]
+    },
+    {
+      "type": "exam_stats",
+      "title": "Sınav der ki",
+      "rows": [
+        {
+          "label": "Bu ünitenin maddelerinden yayındaki soru",
+          "value": "31",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "39",
+            "Geçici 1",
+            "Geçici 2"
+          ]
+        },
+        {
+          "label": "md 29 — Zamanaşımı",
+          "value": "7 soru",
+          "refs": [
+            "29"
+          ]
+        },
+        {
+          "label": "md 30 — Cezalara itiraz ve cezanın kesinleşmesi",
+          "value": "6 soru",
+          "refs": [
+            "30"
+          ]
+        },
+        {
+          "label": "md 31 — Savunma hakkı",
+          "value": "5 soru",
+          "refs": [
+            "31"
+          ]
+        },
+        {
+          "label": "md 27 — Soruşturma sonucu verilecek karar",
+          "value": "3 soru",
+          "refs": [
+            "27"
+          ]
+        },
+        {
+          "label": "md 28 — Görevden uzaklaştırma",
+          "value": "3 soru",
+          "refs": [
+            "28"
+          ]
+        },
+        {
+          "label": "Hiç soru çıkmamış",
+          "value": "md 36, md 37, md 39, md Geçici 1, md Geçici 2",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "39",
+            "Geçici 1",
+            "Geçici 2"
+          ]
+        }
+      ],
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "Geçici 1",
+        "Geçici 2"
+      ],
+      "generated": true
+    },
+    {
+      "type": "bridge",
+      "title": "Bu üniteden soru çöz",
+      "articleRefs": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "Geçici 1",
+        "Geçici 2"
+      ],
+      "generated": true,
+      "rows": [
+        {
+          "label": "Madde kapsamlı seans",
+          "value": "md 27–37, 39, Geçici 1, Geçici 2, 10 soru",
+          "refs": [
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "39",
+            "Geçici 1",
+            "Geçici 2"
+          ]
+        }
+      ]
+    }
+  ]
+}
