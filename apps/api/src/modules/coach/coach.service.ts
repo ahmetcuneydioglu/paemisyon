@@ -182,6 +182,7 @@ export class CoachService {
       plan: ctx.plan ? { items: ctx.plan.items } : null,
       todayTopicAnswered: ctx.home.todayTopicAnswered,
       reviewDoneToday: ctx.home.reviewDoneToday,
+      reviewAnsweredToday: ctx.home.reviewAnsweredToday,
       nextSummary: ctx.home.nextSummary,
       bookmarkCount: ctx.home.bookmarkCount,
     });
@@ -373,6 +374,7 @@ export class CoachService {
       bugunKonuCevaplari,
       bugunYanlisTuru,
       favoriSayisi,
+      bugunYanlisCevap,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -549,6 +551,12 @@ export class CoachService {
         select: { id: true },
       }),
       this.prisma.bookmark.count({ where: { userId: user.id } }),
+      this.prisma.quizAnswer.count({
+        where: {
+          session: { userId: user.id, mode: 'review' },
+          answeredAt: { gte: gunBaslangici(now) },
+        },
+      }),
     ]);
 
     // ── Deneme durumları ──
@@ -862,6 +870,7 @@ export class CoachService {
           bugunKonuCevaplari.map((r) => [r.topic_id, Number(r.n)]),
         ),
         reviewDoneToday: bugunYanlisTuru != null,
+        reviewAnsweredToday: bugunYanlisCevap,
         nextSummary,
         bookmarkCount: favoriSayisi,
         todayTotals: {
@@ -884,8 +893,10 @@ interface HomeRaw {
   weekDays: HaftaGunDurumu[];
   /** Bugün konu başına cevaplanan soru (rota "N soru" adımının tamamlanması). */
   todayTopicAnswered: Record<string, number>;
-  /** Bugün tamamlanmış yanlış turu var mı (rota "Yanlış tekrarı" adımı). */
+  /** Bugün tamamlanmış yanlış turu var mı. */
   reviewDoneToday: boolean;
+  /** Bugün yanlış turlarında cevaplanan soru (rota "Yanlış tekrarı" günlük porsiyonu). */
+  reviewAnsweredToday: number;
   /** Okunmamış ilk yayındaki özet ünitesi (rota "özet" adımı; reçete yoksa). */
   nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
   /** Favori soru sayısı ("Senin için" favori turu). */

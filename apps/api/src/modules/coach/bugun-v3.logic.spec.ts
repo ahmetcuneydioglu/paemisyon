@@ -69,6 +69,7 @@ function girdi(over: Partial<BugunV3Input> = {}): BugunV3Input {
     plan: null,
     todayTopicAnswered: {},
     reviewDoneToday: false,
+    reviewAnsweredToday: 0,
     nextSummary: null,
     bookmarkCount: 0,
     ...over,
@@ -171,6 +172,7 @@ describe('computeHomeV3', () => {
         weakestUnit: { ...girdi().weakestUnit!, kind: 'questions' },
         todayTopicAnswered: { t1: 10 },
         reviewDoneToday: true,
+        reviewAnsweredToday: 4,
       }),
     );
     expect(r.route.map((i) => [i.kind, i.done])).toEqual([
@@ -245,25 +247,99 @@ describe('computeHomeV3', () => {
     });
   });
 
-  it('hedef dolunca yanlış tekrarı sıradaki olur, senin için yanlış kuyruğunu tekrarlamaz', () => {
-    const r = computeHomeV3(
+  it('hedef dolunca yanlış porsiyonu sıradaki olur, senin için yanlış kuyruğunu tekrarlamaz', () => {
+    const done = gorev({
+      kind: 'done',
+      title: 'Bugünlük tamam',
+      action: {
+        type: 'start_session',
+        label: 'Biraz daha · 5 soru',
+        count: 5,
+        recipe: 'coach',
+        source: 'home_task',
+      },
+    });
+    const r = computeHomeV3(girdi({ weakestUnit: null, todayTask: done }));
+    expect(r.nextStep.kind).toBe('review');
+    expect(r.nextStep.title).toBe('4 yanlışını temizle');
+    expect(r.forYou.some((f) => f.kind === 'wrongs')).toBe(false);
+    expect(r.forYou.length).toBeLessThanOrEqual(4);
+  });
+
+  it('yanlış tekrarı günlük porsiyondur: 881 kuyrukta da bugün 20 çözülünce biter; sonra Sıradaki günün quizine, o da bitince özete geçer', () => {
+    const done = gorev({
+      kind: 'done',
+      title: 'Bugünlük tamam',
+      action: {
+        type: 'start_session',
+        label: 'Biraz daha · 5 soru',
+        count: 5,
+        recipe: 'coach',
+        source: 'home_task',
+      },
+    });
+    const buyuk = {
+      courses: [],
+      weakest: [zayif('t1', 'Yürütme', 0.42)],
+      unresolvedWrongCount: 881,
+    };
+    const yarim = computeHomeV3(
       girdi({
         weakestUnit: null,
-        todayTask: gorev({
-          kind: 'done',
-          title: 'Bugünlük tamam',
-          action: {
-            type: 'start_session',
-            label: 'Biraz daha · 5 soru',
-            count: 5,
-            recipe: 'coach',
-            source: 'home_task',
-          },
-        }),
+        readiness: buyuk,
+        reviewAnsweredToday: 12,
+        reviewDoneToday: true,
       }),
     );
-    expect(r.nextStep.kind).toBe('review');
-    expect(r.forYou.some((f) => f.kind === 'wrongs')).toBe(false);
-    expect(r.forYou.length).toBeLessThanOrEqual(3);
+    expect(yarim.route.find((i) => i.kind === 'review')).toMatchObject({
+      label: 'Yanlış tekrarı · 20 soru',
+      detail: '12/20 · 881 kuyrukta',
+      done: false,
+      estimateMin: 3,
+    });
+    const bitti = computeHomeV3(
+      girdi({
+        weakestUnit: null,
+        readiness: buyuk,
+        reviewAnsweredToday: 20,
+        dailyQuizPlayed: false,
+        todayTask: done,
+      }),
+    );
+    expect(bitti.route.find((i) => i.kind === 'review')).toMatchObject({
+      done: true,
+      detail: '881 kuyrukta',
+    });
+    expect(bitti.nextStep).toMatchObject({ eyebrow: 'SIRADAKİ · GÜNÜN QUİZİ' });
+    const quizDe = computeHomeV3(
+      girdi({
+        weakestUnit: null,
+        readiness: buyuk,
+        reviewAnsweredToday: 20,
+        dailyQuizPlayed: true,
+        todayTask: done,
+        nextSummary: {
+          slug: 'kisi-haklari-1',
+          title: 'Kişi hakları I — Anayasa',
+          topicId: 't1',
+          readingMinutes: 13,
+        },
+      }),
+    );
+    expect(quizDe.nextStep).toMatchObject({
+      kind: 'summary_then_questions',
+      title: 'Kişi hakları I özetini oku',
+      estimateMin: 13,
+    });
+    const hepsi = computeHomeV3(
+      girdi({
+        weakestUnit: null,
+        readiness: buyuk,
+        reviewAnsweredToday: 20,
+        dailyQuizPlayed: true,
+        todayTask: done,
+      }),
+    );
+    expect(hepsi.nextStep.kind).toBe('done');
   });
 });

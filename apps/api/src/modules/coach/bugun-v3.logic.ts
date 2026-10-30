@@ -22,6 +22,8 @@ export interface BugunV3Input {
   todayTopicAnswered: Record<string, number>;
   /** Bugün tamamlanmış yanlış turu var mı. */
   reviewDoneToday: boolean;
+  /** Bugün yanlış turlarında cevaplanan soru; günlük porsiyon (en çok 20) bununla tamamlanır. */
+  reviewAnsweredToday: number;
   /** Okunmamış ilk yayındaki özet ünitesi; reçete özet vermiyorsa rotaya bu girer. */
   nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
   /** Favori soru sayısı. */
@@ -175,23 +177,58 @@ function sıradaki(input: BugunV3Input): NextStep {
       ),
     };
   }
-  // 4) Hedef dolduysa: yanlış tekrarı ya da dinlen.
+  // 4) Hedef dolduysa: rotanın ilk bitmemiş adımı (yanlış porsiyonu → günün quizi → okunmamış özet), yoksa dinlen.
   if (t.kind === 'done') {
     const n = input.readiness.unresolvedWrongCount;
-    if (n > 0) {
-      const count = Math.min(n, 20);
+    const porsiyon = yanlisPorsiyonu(input);
+    if (n > 0 && input.reviewAnsweredToday < porsiyon) {
+      const kalan = porsiyon - input.reviewAnsweredToday;
       return {
         kind: 'review',
         eyebrow: 'SIRADAKİ · YANLIŞ TEKRARI',
-        title: `${count} yanlışını temizle`,
-        reason: 'Günlük hedefin tamam; yanlışlar doğru çözülünce kuyruktan düşer.',
+        title: `${kalan} yanlışını temizle`,
+        reason: `Günlük hedefin tamam; kuyrukta ${n} yanlış var, bugünkü porsiyon ${porsiyon}.`,
         badge: null,
-        estimateMin: dk(count),
+        estimateMin: dk(kalan),
         action: soruBaslat(
-          count,
+          Math.min(n, 20),
           { kind: 'wrongs', courseId: null, topicId: null, label: 'Yanlışlar' },
           'home_next',
         ),
+      };
+    }
+    if (!input.dailyQuizPlayed) {
+      return {
+        kind: 'questions',
+        eyebrow: 'SIRADAKİ · GÜNÜN QUİZİ',
+        title: 'Günün Quizi · 10 soru',
+        reason: 'Hedef ve yanlış porsiyonu tamam; günün 10 sorusu kaldı.',
+        badge: null,
+        estimateMin: dk(10),
+        action: {
+          type: 'start_session',
+          label: 'Başla · 10 soru',
+          count: 10,
+          recipe: 'coach',
+          source: 'home_next',
+        },
+      };
+    }
+    if (input.nextSummary) {
+      const ns = input.nextSummary;
+      return {
+        kind: 'summary_then_questions',
+        eyebrow: `SIRADAKİ · ${kisaUnite(ns.title)}`,
+        title: `${kisaUnite(ns.title)} özetini oku`,
+        reason: 'Soru payın doldu; bugünü okumayla kapat.',
+        badge: null,
+        estimateMin: ns.readingMinutes,
+        action: {
+          type: 'open_summary',
+          label: 'Oku',
+          route: `/ozet/${ns.slug}`,
+          source: 'home_next',
+        },
       };
     }
     return {
@@ -214,6 +251,11 @@ function sıradaki(input: BugunV3Input): NextStep {
     estimateMin: t.action.count ? dk(t.action.count) : null,
     action: { ...t.action, source: 'home_next' },
   };
+}
+
+/** Günlük yanlış porsiyonu: kuyruk ve bugün çözülenin büyüğü, en çok 20. */
+function yanlisPorsiyonu(input: BugunV3Input): number {
+  return Math.min(20, Math.max(input.readiness.unresolvedWrongCount, input.reviewAnsweredToday, 1));
 }
 
 function zamanOnce(d: Date, now: Date): string {
@@ -308,19 +350,26 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
     });
   }
   const n = input.readiness.unresolvedWrongCount;
-  if (n > 0 || input.reviewDoneToday) {
-    const count = Math.min(Math.max(n, 1), 20);
+  if (n > 0 || input.reviewAnsweredToday > 0) {
+    // Günlük porsiyon: en çok 20 yanlış; tamamlanma bugün çözülen yanlış sayısından (kuyruk 881 olsa da).
+    const porsiyon = yanlisPorsiyonu(input);
+    const cozulen = input.reviewAnsweredToday;
     items.push({
       key: 'review',
       kind: 'review',
-      label: 'Yanlış tekrarı',
-      detail: n > 0 ? `${n} soru` : 'kuyruk temiz',
-      estimateMin: n > 0 ? dk(count) : null,
-      done: input.reviewDoneToday,
+      label: `Yanlış tekrarı · ${porsiyon} soru`,
+      detail:
+        n > 0
+          ? cozulen > 0 && cozulen < porsiyon
+            ? `${cozulen}/${porsiyon} · ${n} kuyrukta`
+            : `${n} kuyrukta`
+          : 'kuyruk temiz',
+      estimateMin: n > 0 && cozulen < porsiyon ? dk(porsiyon - cozulen) : null,
+      done: n === 0 || cozulen >= porsiyon,
       action:
         n > 0
           ? soruBaslat(
-              count,
+              Math.min(n, 20),
               { kind: 'wrongs', courseId: null, topicId: null, label: 'Yanlışlar' },
               'home_route',
             )

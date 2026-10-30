@@ -216,3 +216,10 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   (yanlışlar rota/Senin için'de eylem olarak duruyor; rakam bir yerde, eylem bir yerde). API
   `homeV3.today {answered, correct, accuracyPct, goal}` — ham sorguya `COUNT(*) FILTER (WHERE
   a.is_correct)` eklendi; `home.todayTotals`.
+- **Yanlış tekrarı günlük porsiyon + Sıradaki düşüşü (31 Eki, ekran görüntüsünden):** "Yanlış tekrarı"
+  bugün bir tur yapıldı diye tik alıyor ama altında 881 soru duruyordu; Sıradaki de aynı adımı
+  "20 yanlışını temizle" diye yineliyordu. Artık adım **günlük porsiyon** (kuyruk ve bugün çözülenin
+  büyüğü, en çok 20): etiket "Yanlış tekrarı · 20 soru", ayrıntı "12/20 · 881 kuyrukta", tamamlanma
+  bugün yanlış turlarında çözülen soruyla (`home.reviewAnsweredToday`, `quizAnswer.count` review
+  oturumları). Hedef dolduğunda Sıradaki rotanın ilk bitmemiş adımına düşer: yanlış porsiyonu →
+  Günün Quizi → okunmamış özet → "Bugünlük tamam". Spec 12, coach suite yeşil.
