@@ -126,3 +126,22 @@ katmanları token adıyla adlandır.
 
 **Yapma:** 120 pt geri sayım, ikinci birincil düğme, kart içinde kart, gölge, gradyan, emoji,
 ders rengi, altın metin açık temada zemin üstünde, dört kapı/ikon ızgarası.
+
+## 8. Figma çizimi ve inceleme (30 Eki 2026)
+
+PaemisyonNew sayfa **"ikon"** `63:261` (kullanıcı adı; içerik Bugün v3): Bugün v3 · Koyu `68:474`,
+· Açık `68:577`, · Devam et varyantı `68:680`, · Hafif gün (rota 2) `68:783`, Çalış · Koyu `68:878`.
+Ölçüler ve metinler promptla bire bir (bağlam satırı Lora 600 28 + Inter 15; panel köşe 4 iç 20;
+başlık Lora 600 24; altın düğme 52; rota kartı surface köşe 10 iç 16, 44 pt satırlar, 20 pt onay
+kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAlt 46 pt; sekme çubuğu
+90). Renkler token değerleri; `Planım ›` ve haplar koyuda altın, açıkta kahve. **Onay: kod bu
+çizime göre yazılır.** Kodda uygulanacak notlar (Figma'ya geri yazılmaz):
+1. **Koyu temada hiyerarşi:** `panel` koyuda `surface` ile aynı (#1E2B3C); Sıradaki kartı ile rota
+   kartı aynı tonda. Kodda ikincil kartlar kit `Card` gibi 1 px `line` kenarlı, Sıradaki kenarsız
+   ve köşe 4 — fark kenar + köşe + altın düğmeyle taşınır. Açık temada sorun yok (lacivert panel).
+2. **İlk ekran:** 852 pt'te Senin için ve Bu hafta katlanmanın altında kalıyor; kabul (kaydırma).
+   Rota 5–6 maddeyken de böyle. Sıradaki kartı her zaman ilk ekranda.
+3. **Ders odası kartı (Çalış):** "%30 ağırlık · %62 hâkimiyet" iki satıra kırılıyor; kodda iki ayrı
+   küçük satır ("Ağırlık %30" / "Hâkimiyet %62") ve 2 pt ilerleme.
+4. **Ben sekme ikonu** çizimde eksik (daire); kodda lucide `User` (F9'daki gibi).
+5. Haftalık çizelge 7 dilim 2 pt: mevcut `WeekStrip7` bileşeni küçültülerek kullanılır.
