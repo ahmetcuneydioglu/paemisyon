@@ -23,8 +23,10 @@ import {
   collectExamStats,
   importUnit,
   loadArticleMap,
+  normalizeArticleNos,
   SummaryImportError,
 } from '../../summaries/ozet-ice-aktar';
+import { articleLabel } from '../../summaries/unite-eslesme';
 
 export interface UpdateUnitDto {
   title?: string;
@@ -32,6 +34,8 @@ export interface UpdateUnitDto {
   isPremium?: boolean;
   readingMinutes?: number;
   sortOrder?: number;
+  /** Açık madde listesi; [] aralığa döner. Her madde ünitenin kanununda olmalı. */
+  articleNos?: string[];
 }
 
 export interface UpdateBlockDto {
@@ -92,6 +96,7 @@ export class AdminSummariesService {
         title: true,
         articleFrom: true,
         articleTo: true,
+        articleNos: true,
         status: true,
         isPremium: true,
         readingMinutes: true,
@@ -111,6 +116,8 @@ export class AdminSummariesService {
       title: u.title,
       articleFrom: u.articleFrom,
       articleTo: u.articleTo,
+      articleNos: u.articleNos,
+      articleLabel: articleLabel(u),
       status: u.status,
       isPremium: u.isPremium,
       readingMinutes: u.readingMinutes,
@@ -162,6 +169,8 @@ export class AdminSummariesService {
       subtitle: unit.subtitle,
       articleFrom: unit.articleFrom,
       articleTo: unit.articleTo,
+      articleNos: unit.articleNos,
+      articleLabel: articleLabel(unit),
       status: unit.status,
       isPremium: unit.isPremium,
       readingMinutes: unit.readingMinutes,
@@ -225,10 +234,18 @@ export class AdminSummariesService {
   async updateUnit(actor: AuthenticatedUser, id: string, dto: UpdateUnitDto) {
     const unit = await this.prisma.summaryUnit.findFirst({
       where: { id, deletedAt: null },
-      select: { id: true },
+      select: { id: true, legislationId: true },
     });
     if (!unit) throw new NotFoundException('Ünite bulunamadı.');
     const data: Prisma.SummaryUnitUpdateInput = {};
+    if (dto.articleNos !== undefined) {
+      if (!Array.isArray(dto.articleNos))
+        throw new BadRequestException('Madde listesi dizi olmalı.');
+      const byNo = await loadArticleMap(this.prisma, unit.legislationId);
+      const nos = normalizeArticleNos(dto.articleNos, byNo);
+      if (!nos.ok) throw new BadRequestException(nos.error);
+      data.articleNos = nos.list;
+    }
     if (dto.title !== undefined) {
       if (!dto.title.trim()) throw new BadRequestException('Başlık boş olamaz.');
       data.title = dto.title.trim();
@@ -579,6 +596,7 @@ export class AdminSummariesService {
     subtitle: string | null;
     articleFrom: string;
     articleTo: string;
+    articleNos: string[];
     readingMinutes: number;
     sourceLabel: string;
     topicId: string;
@@ -603,6 +621,7 @@ export class AdminSummariesService {
         subtitle: unit.subtitle ?? undefined,
         articleFrom: unit.articleFrom,
         articleTo: unit.articleTo,
+        articleNos: unit.articleNos,
         readingMinutes: unit.readingMinutes,
         sourceLabel: unit.sourceLabel,
       },

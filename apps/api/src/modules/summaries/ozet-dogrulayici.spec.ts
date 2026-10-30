@@ -7,6 +7,7 @@ import {
   trNumberPattern,
   validateBlock,
   validateUnit,
+  unitArticleNos,
   type ArticleText,
   type SummaryBlockJson,
   type SummaryUnitJson,
@@ -70,6 +71,12 @@ describe('sayı çıkarımı', () => {
   it('madde aralığı ("md 1–6", "md 12-14") sayı değildir', () => {
     expect(extractNumbers('md 1–6 sayılarla: 7 gün').sort((a, b) => a - b)).toEqual([7]);
     expect(extractNumbers('Sayılarla md 12-14')).toEqual([]);
+    // PVSK biçimleri: harfli madde, Ek ve Geçici atıfları sayı değildir.
+    expect(extractNumbers('md 4/A ile Ek 6 ve Geçici 2: 24 saat').sort((a, b) => a - b)).toEqual([
+      24,
+    ]);
+    expect(extractNumbers('md Ek 7 uyarınca; ek madde 9; 4/A. madde')).toEqual([]);
+    expect(extractNumbers('Ek 1–3 bildirimi 48 saat önce')).toEqual([48]);
   });
   it('yüzde ve süre sayıları alınır', () => {
     expect(extractNumbers('yüzde 5 boşalma, 30 ay, 3 ay içinde').sort((a, b) => a - b)).toEqual([
@@ -245,5 +252,39 @@ describe('ünite: betik üretimi kartlar veriden dolar', () => {
     ).toBe(true);
     expect(unit.blocks[2].rows?.[0].value).toBe('md 75–86, 1 soru');
     expect(validateUnit(unit, ARTS).ok).toBe(true);
+  });
+});
+
+describe('ünite: açık madde listesi (PVSK)', () => {
+  const unit: SummaryUnitJson = {
+    unit: {
+      slug: 'pvsk-gorev',
+      legislationSlug: '2559-sayili-polis-vazife-ve-salahiyet-kanunu-pvsk',
+      topicId: 't',
+      title: 'Görev, emir ve kimlik',
+      articleFrom: '1',
+      articleTo: '5',
+      articleNos: ['1', '2', '4', '4/A', '5'],
+      sourceLabel: 'AI özeti — PVSK, md 1, 2, 4, 4/A, 5',
+    },
+    blocks: [
+      { type: 'rule', title: 'Durdurma', body: 'Kimlik sorma', articleRefs: ['4/A', 'Ek 6'] },
+      { type: 'rule', title: 'Emir', body: 'Sözlü emir', articleRefs: ['2'] },
+      { type: 'exam_stats', title: 'Sınav der ki', rows: [], articleRefs: [] },
+      { type: 'bridge', title: 'Soru çöz', articleRefs: [] },
+    ],
+  };
+  it('kapsam listeden gelir: 4/A içeride, liste dışı Ek 6 dışarıda; sıra liste sırası', () => {
+    expect(unitArticleNos(unit)).toEqual(['2', '4/A']);
+  });
+  it('köprü kartı etiketi listeyle yazılır', () => {
+    fillGeneratedBlocks(unit, {
+      perArticle: new Map(),
+      titles: new Map(),
+      totalQuestions: 3,
+      exams: new Map(),
+    });
+    expect(unit.blocks[3].rows?.[0]?.value).toBe('md 1, 2, 4, 4/A, 5, 3 soru');
+    expect(unit.blocks[3].articleRefs).toEqual(['2', '4/A']);
   });
 });

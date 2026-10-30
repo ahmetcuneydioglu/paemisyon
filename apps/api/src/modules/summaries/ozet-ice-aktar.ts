@@ -44,6 +44,24 @@ export class SummaryImportError extends Error {
   }
 }
 
+/**
+ * Açık madde listesini sadeleştirir ve kanuna karşı doğrular: her madde kanunda (veritabanı
+ * numarasıyla birebir) olmalı; boş liste aralığa dönüş demektir. Sıra korunur, tekrar atılır.
+ */
+export function normalizeArticleNos(
+  raw: readonly string[],
+  byNo: Map<string, unknown>,
+): { ok: true; list: string[] } | { ok: false; error: string } {
+  const list: string[] = [];
+  for (const r of raw) {
+    const n = String(r).trim().replace(/\s+/g, ' ');
+    if (!n || list.includes(n)) continue;
+    if (!byNo.has(n)) return { ok: false, error: `Madde kanunda yok: "${n}"` };
+    list.push(n);
+  }
+  return { ok: true, list };
+}
+
 /** Mevzuatın tüm maddeleri: no → metin (ünite dışı referanslar için de gerekir). */
 export async function loadArticleMap(db: Db, legislationId: string) {
   const arts = await db.lawArticle.findMany({
@@ -141,6 +159,9 @@ export async function importUnit(
   if (!topic) throw new SummaryImportError(`Konu bulunamadı: ${u.topicId}`);
 
   const byNo = await loadArticleMap(db, leg.id);
+  const nos = normalizeArticleNos(u.articleNos ?? [], byNo);
+  if (!nos.ok) throw new SummaryImportError(`Ünite madde listesi: ${nos.error}`);
+  u.articleNos = nos.list;
   const refs = unitArticleNos(data);
   const stats = await collectExamStats(db, byNo, refs);
   fillGeneratedBlocks(data, stats);
@@ -176,6 +197,7 @@ export async function importUnit(
     subtitle: u.subtitle ?? null,
     articleFrom: String(u.articleFrom),
     articleTo: String(u.articleTo),
+    articleNos: nos.list,
     readingMinutes: u.readingMinutes ?? 10,
     sortOrder: u.sortOrder ?? 0,
     sourceLabel: u.sourceLabel,

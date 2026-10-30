@@ -18,7 +18,7 @@ export function SummaryUnitRow({ unit, onPress }: { unit: SummaryUnitListItem; o
   return (
     <ListRow
       title={shortTitle(unit.title)}
-      subtitle={`md ${unit.articleFrom}–${unit.articleTo} · ${unit.readingMinutes} dk · ${unit.blockCount} kart${unit.progress && !done ? " · kaldığın yerden" : ""}`}
+      subtitle={`md ${unit.articleLabel ?? `${unit.articleFrom}–${unit.articleTo}`} · ${unit.readingMinutes} dk · ${unit.blockCount} kart${unit.progress && !done ? " · kaldığın yerden" : ""}`}
       leading={
         <View style={{ width: 40, height: 40, borderRadius: radius.pill, backgroundColor: done ? colors.successSoft : colors.accentSoft, alignItems: "center", justifyContent: "center" }}>
           <Icon color={done ? colors.success : colors.accentInk} size={20} strokeWidth={1.75} />

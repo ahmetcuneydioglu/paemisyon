@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import type { SummaryBlock, SummaryBlockType } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
+import { articleLabel } from './unite-eslesme';
 import { pickUnitRecipe, unitMastery, type UnitMasteryRow, type UnitRecipe } from './unite-recete';
 
 /** Kilitli (premium) ünitede misafire/ücretsize açık kalan kart sayısı (Doc 53 §9 varsayımı: 2). */
@@ -13,6 +14,10 @@ export interface PublicUnitListItem {
   subtitle: string | null;
   articleFrom: string;
   articleTo: string;
+  /** Açık madde listesi (boşsa aralık). */
+  articleNos: string[];
+  /** Gösterim etiketi: "75–86" ya da "1, 2, 4, 4/A, 5" — yüzeyler bunu basar. */
+  articleLabel: string;
   readingMinutes: number;
   isPremium: boolean;
   /** Bu kullanıcı için kilitli mi (premium ünite + premium olmayan kullanıcı). */
@@ -54,6 +59,7 @@ export class SummariesService {
         subtitle: true,
         articleFrom: true,
         articleTo: true,
+        articleNos: true,
         readingMinutes: true,
         isPremium: true,
         updatedAt: true,
@@ -67,6 +73,8 @@ export class SummariesService {
       subtitle: u.subtitle,
       articleFrom: u.articleFrom,
       articleTo: u.articleTo,
+      articleNos: u.articleNos,
+      articleLabel: articleLabel(u),
       readingMinutes: u.readingMinutes,
       isPremium: u.isPremium,
       updatedAt: u.updatedAt.toISOString(),
@@ -90,6 +98,7 @@ export class SummariesService {
         subtitle: true,
         articleFrom: true,
         articleTo: true,
+        articleNos: true,
         readingMinutes: true,
         isPremium: true,
         _count: { select: { blocks: { where: { status: 'published' } } } },
@@ -116,6 +125,8 @@ export class SummariesService {
           subtitle: u.subtitle,
           articleFrom: u.articleFrom,
           articleTo: u.articleTo,
+          articleNos: u.articleNos,
+          articleLabel: articleLabel(u),
           readingMinutes: u.readingMinutes,
           isPremium: u.isPremium,
           locked: u.isPremium && !(user?.isPremium ?? false),
@@ -143,6 +154,7 @@ export class SummariesService {
         subtitle: true,
         articleFrom: true,
         articleTo: true,
+        articleNos: true,
         readingMinutes: true,
         isPremium: true,
         topicId: true,
@@ -178,6 +190,8 @@ export class SummariesService {
       subtitle: unit.subtitle,
       articleFrom: unit.articleFrom,
       articleTo: unit.articleTo,
+      articleNos: unit.articleNos,
+      articleLabel: articleLabel(unit),
       readingMinutes: unit.readingMinutes,
       isPremium: unit.isPremium,
       locked,

@@ -61,7 +61,7 @@ export default async function OzetPage({ params }: { params: Params }) {
   const meta = (
     <>
       <span>
-        {unit.legislation.name} md {unit.articleFrom}–{unit.articleTo}
+        {unit.legislation.name} md {unit.articleLabel ?? `${unit.articleFrom}–${unit.articleTo}`}
       </span>
       <span aria-hidden>·</span>
       <span>{unit.readingMinutes} dk okuma</span>

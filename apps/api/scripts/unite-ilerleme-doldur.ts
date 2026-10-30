@@ -3,14 +3,14 @@
  *
  *   cd apps/api && npx tsx scripts/unite-ilerleme-doldur.ts [--dry]
  *
- * Yayındaki her ünite için: ünitenin konusundaki, madde numarası aralığa düşen soruların
+ * Yayındaki her ünite için: ünitenin konusundaki, madde numarası kapsamına (açık liste ya da aralık) düşen soruların
  * cevapları (quiz_answers, is_correct dolu) kullanıcı bazında toplanır ve `user_unit_progress`
  * baştan yazılır (idempotent: önce tablo boşaltılır). Kanca (ProgressService) ile aynı kural:
  * boş cevap sayılmaz, ünitesiz soru sayılmaz. connection_limit=1; backend durdurulmaz
  * (yalnız okuma + tek tablo yazımı).
  */
 import { PrismaClient } from '@prisma/client';
-import { articleNumber } from '../src/modules/summaries/unite-eslesme';
+import { unitOfArticle } from '../src/modules/summaries/unite-eslesme';
 
 const DRY = process.argv.includes('--dry');
 const url = (process.env.DATABASE_URL ?? '').replace(/connection_limit=\d+/, 'connection_limit=1');
@@ -19,14 +19,14 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
 (async () => {
   const units = await prisma.summaryUnit.findMany({
     where: { status: 'published', deletedAt: null },
-    select: { id: true, slug: true, topicId: true, articleFrom: true, articleTo: true },
+    select: { id: true, slug: true, topicId: true, articleFrom: true, articleTo: true, articleNos: true },
   });
   if (units.length === 0) {
     console.log('Yayında ünite yok; yapılacak iş yok.');
     await prisma.$disconnect();
     return;
   }
-  // Konu bazında soru → ünite eşlemesi (madde numarası sayısal aralık).
+  // Konu bazında soru → ünite eşlemesi (kancayla aynı kural: açık liste ya da sayısal aralık).
   const topicIds = [...new Set(units.map((u) => u.topicId))];
   const questions = await prisma.question.findMany({
     where: { topicId: { in: topicIds }, deletedAt: null, articleNo: { not: null } },
@@ -34,9 +34,7 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
   });
   const unitOfQuestion = new Map<string, string>();
   for (const q of questions) {
-    const n = articleNumber(q.articleNo);
-    if (n == null) continue;
-    const u = units.find((x) => x.topicId === q.topicId && n >= Number(x.articleFrom) && n <= Number(x.articleTo));
+    const u = unitOfArticle(units, q.topicId, q.articleNo);
     if (u) unitOfQuestion.set(q.id, u.id);
   }
   console.log(`${units.length} ünite · ${questions.length} maddeli soru · ${unitOfQuestion.size} soru üniteye düştü`);

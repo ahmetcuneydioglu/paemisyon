@@ -30,6 +30,8 @@ export interface SummaryUnitListItem {
   subtitle: string | null;
   articleFrom: string;
   articleTo: string;
+  /** Gösterim etiketi: "75–86" ya da "1, 2, 4, 4/A, 5" (açık listeli ünite). */
+  articleLabel?: string;
   readingMinutes: number;
   isPremium: boolean;
   locked: boolean;
@@ -54,6 +56,8 @@ export interface SummaryUnit {
   subtitle: string | null;
   articleFrom: string;
   articleTo: string;
+  /** Gösterim etiketi: "75–86" ya da "1, 2, 4, 4/A, 5" (açık listeli ünite). */
+  articleLabel?: string;
   readingMinutes: number;
   isPremium: boolean;
   locked: boolean;

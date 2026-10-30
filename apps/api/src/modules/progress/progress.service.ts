@@ -91,7 +91,7 @@ export class ProgressService {
       }
       const uniteler = await this.prisma.summaryUnit.findMany({
         where: { topicId: { in: [...byTopic.keys()] }, status: 'published', deletedAt: null },
-        select: { id: true, topicId: true, articleFrom: true, articleTo: true },
+        select: { id: true, topicId: true, articleFrom: true, articleTo: true, articleNos: true },
       });
       byUnit = tallyByUnit(
         answered

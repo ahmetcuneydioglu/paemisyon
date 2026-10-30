@@ -130,7 +130,7 @@ export function UnitReader({
             {done ? "Ünite bitti. Şimdi soruya." : "Okuduğunu soruyla sına"}
           </div>
           <p className="type-body text-ink-soft">
-            {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${unit.articleFrom}–${unit.articleTo}`} ·
+            {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${unit.articleLabel ?? `${unit.articleFrom}–${unit.articleTo}`}`} ·
             bu maddelerden çıkmış sorularla.
             {unit.mastery?.band === "weak" ? ` Şu an %${unit.mastery.accuracyPct ?? 0}; 10 soruyla yükselt.` : ""}
           </p>

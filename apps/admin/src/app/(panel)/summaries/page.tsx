@@ -226,7 +226,7 @@ export default function SummariesPage() {
                       </div>
                     </td>
                     <td className="py-2 pr-3 whitespace-nowrap text-slate-600">
-                      {u.legislationName} {u.articleFrom}–{u.articleTo}
+                      {u.legislationName} md {u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`}
                     </td>
                     <td className="py-2 pr-3 whitespace-nowrap">
                       {u.blocks}

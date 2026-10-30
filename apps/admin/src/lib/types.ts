@@ -500,6 +500,9 @@ export interface SummaryUnitListItem {
   title: string;
   articleFrom: string;
   articleTo: string;
+  /** Açık madde listesi (boşsa aralık) ve gösterim etiketi ("75–86" / "1, 2, 4, 4/A, 5"). */
+  articleNos: string[];
+  articleLabel: string;
   status: ContentStatus;
   isPremium: boolean;
   readingMinutes: number;
@@ -553,6 +556,8 @@ export interface SummaryUnitDetail {
   subtitle: string | null;
   articleFrom: string;
   articleTo: string;
+  articleNos: string[];
+  articleLabel: string;
   status: ContentStatus;
   isPremium: boolean;
   readingMinutes: number;

@@ -606,6 +606,9 @@ model SummaryUnit {
   /// Bilgi amaçlı madde aralığı ("75"–"86"); kartlar kendi referanslarını taşır.
   articleFrom    String        @map("article_from")
   articleTo      String        @map("article_to")
+  /// Doc 53 PVSK (31 Eki 2026): açık madde listesi ("1","2","4","4/A","Ek 6"). DOLUYSA aralık yerine
+  /// bu liste geçerlidir (ünite eşlemesi, girdi, köprü). Boşsa aralık (Anayasa üniteleri).
+  articleNos     String[]      @default([]) @map("article_nos")
   sortOrder      Int           @default(0) @map("sort_order")
   /// Doc 53 karar 8: dersin ilk 2 ünitesi açık, kalanı premium.
   isPremium      Boolean       @default(false) @map("is_premium")

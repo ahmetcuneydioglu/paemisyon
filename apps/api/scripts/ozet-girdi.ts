@@ -4,6 +4,9 @@
  *
  *   cd apps/api && npx tsx scripts/ozet-girdi.ts <legislationSlug> <from> <to> <cikti.json>
  *   örn: npx tsx scripts/ozet-girdi.ts t-c-anayasasi 87 100 /tmp/yasama-2-girdi.json
+ *   AÇIK LİSTE (PVSK gibi sayısal olmayan maddeler için; Doc 53 PVSK, 31 Eki 2026):
+ *   npx tsx scripts/ozet-girdi.ts <legislationSlug> --articles "1,2,4,4/A,5" <cikti.json>
+ *   Liste modunda eşleme `articleNo` ile BİREBİRDİR (sıra: kanundaki sıra); olmayan madde hata verir.
  *
  * Soru kökleri "ne soruluyor", yanlış şıklar "neyle karıştırılıyor" sorusunu cevaplar.
  * KAYNAK ETİKETİ (sourceLabel) girdiye KONMAZ (4 Eyl 2026 kuralı: model özette tekrarlayabilir).
@@ -11,9 +14,17 @@
 import { PrismaClient } from '@prisma/client';
 import { writeFileSync } from 'fs';
 
-const [legSlug, fromS, toS, out] = process.argv.slice(2);
-if (!legSlug || !fromS || !toS || !out) {
+const argv = process.argv.slice(2);
+const artIdx = argv.indexOf('--articles');
+const articleList = artIdx >= 0 ? argv.splice(artIdx, 2)[1] : undefined;
+const legSlug = argv[0];
+const [fromS, toS, out] = articleList ? ['', '', argv[1]] : argv.slice(1);
+const wanted = articleList
+  ? articleList.split(',').map((x) => x.trim().replace(/\s+/g, ' ')).filter(Boolean)
+  : [];
+if (!legSlug || !out || (!articleList && (!fromS || !toS))) {
   console.error('kullanım: ozet-girdi.ts <legislationSlug> <from> <to> <cikti.json>');
+  console.error('         ozet-girdi.ts <legislationSlug> --articles "1,2,4,4/A,5" <cikti.json>');
   process.exit(2);
 }
 const url = (process.env.DATABASE_URL ?? '').replace(/connection_limit=\d+/, 'connection_limit=1');
@@ -21,7 +32,10 @@ const prisma = new PrismaClient({ datasources: { db: { url } } });
 
 export interface OzetGirdi {
   legislation: { slug: string; name: string; topicId: string | null };
+  /** Aralık modunda from/to; liste modunda ikisi de ilk/son madde (bilgi). */
   range: { from: string; to: string };
+  /** Açık madde listesi (liste modu); aralık modunda boş. */
+  articleNos: string[];
   articles: { no: string; title: string | null; text: string; questionCount: number }[];
   questions: { articleNos: string[]; stem: string; options: { text: string; isCorrect: boolean }[] }[];
 }
@@ -42,10 +56,25 @@ export interface OzetGirdi {
     orderBy: { sortKey: 'asc' },
     select: { id: true, articleNo: true, title: true, text: true },
   });
-  const arts = all.filter((a) => {
-    const n = Number(a.articleNo);
-    return Number.isFinite(n) && n >= from && n <= to;
-  });
+  let arts: typeof all;
+  if (wanted.length > 0) {
+    const byNo = new Map(all.map((a) => [a.articleNo, a]));
+    const yok = wanted.filter((n) => !byNo.has(n));
+    if (yok.length > 0) {
+      console.error('yayında olmayan madde:', yok.join(', '), '· mevcut:', all.map((a) => a.articleNo).join(', '));
+      process.exit(2);
+    }
+    const set = new Set(wanted);
+    arts = all.filter((a) => set.has(a.articleNo)); // kanundaki sıra (sortKey)
+  } else {
+    arts = all.filter((a) => {
+      const n = Number(a.articleNo);
+      return Number.isFinite(n) && n >= from && n <= to;
+    });
+  }
+  const rangeFrom = wanted.length > 0 ? arts[0]!.articleNo : fromS;
+  const rangeTo = wanted.length > 0 ? arts[arts.length - 1]!.articleNo : toS;
+  const sortNo = new Map(all.map((a, i) => [a.articleNo, i]));
   const qa = await prisma.questionArticle.findMany({
     where: {
       lawArticleId: { in: arts.map((a) => a.id) },
@@ -78,11 +107,12 @@ export interface OzetGirdi {
 
   const girdi: OzetGirdi = {
     legislation: { slug: leg.slug, name: leg.name, topicId: leg.topicId },
-    range: { from: fromS, to: toS },
+    range: { from: rangeFrom, to: rangeTo },
+    articleNos: arts.map((a) => a.articleNo).filter((n) => wanted.length > 0),
     articles: arts.map((a) => ({ no: a.articleNo, title: a.title, text: a.text, questionCount: count.get(a.articleNo) ?? 0 })),
-    questions: [...byQ.values()].map((q) => ({ articleNos: [...q.articleNos].sort((a, b) => Number(a) - Number(b)), stem: q.stem, options: q.options })),
+    questions: [...byQ.values()].map((q) => ({ articleNos: [...q.articleNos].sort((a, b) => (sortNo.get(a) ?? 0) - (sortNo.get(b) ?? 0)), stem: q.stem, options: q.options })),
   };
   writeFileSync(out, JSON.stringify(girdi, null, 1));
-  console.log(`${leg.name} md ${fromS}–${toS}: ${arts.length} madde, ${byQ.size} soru → ${out}`);
+  console.log(`${leg.name} md ${wanted.length > 0 ? wanted.join(', ') : `${fromS}–${toS}`}: ${arts.length} madde, ${byQ.size} soru → ${out}`);
   await prisma.$disconnect();
 })();

@@ -9,6 +9,8 @@
  * Hem `scripts/ozet-dogrula.ts` hem admin içe aktarma / kart düzenleme bu dosyayı kullanır.
  */
 
+import { articleKey, articleLabel } from './unite-eslesme';
+
 export type SummaryRow = Record<string, unknown> & { refs?: string[] };
 export type DerivedNumber = { value: number; expr: string; refs: string[]; note?: string };
 
@@ -32,6 +34,8 @@ export interface SummaryUnitJson {
     subtitle?: string;
     articleFrom: string;
     articleTo: string;
+    /** Açık madde listesi (PVSK: "4/A", "Ek 6"); doluysa aralık yerine geçer. */
+    articleNos?: string[];
     readingMinutes?: number;
     /** Konu içindeki sıra (Doc 53 §5 ünite numarası). */
     sortOrder?: number;
@@ -107,9 +111,11 @@ export function numberInTexts(n: number, texts: string[]): boolean {
 export function extractNumbers(text: string): number[] {
   const t = text
     .replace(/(^|\n)\s*\d+\.\s/g, '$1 ') // liste numarası: "1. ", "2. "
-    .replace(/\bmd\.?\s*\d+(\/\d+)?(\s*[–-]\s*\d+)?/gi, ' ') // madde atfı: "md 84", "md 84/2", "md 1–6"
-    .replace(/\b\d+(\/\d+)?\.\s*madde/gi, ' ') // "84. madde", "84/2. madde"
-    .replace(/\b\d+\/\d+\b/g, ' '); // fıkra kesri
+    .replace(/\bmd\.?\s*(ek|geçici)\s*\d+/gi, ' ') // madde atfı: "md Ek 6", "md Geçici 2"
+    .replace(/\b(ek|geçici)\s+(madde\s+)?\d+(\s*[–-]\s*\d+)?/gi, ' ') // "Ek 6", "Geçici 2", "ek madde 7", "Ek 1–3"
+    .replace(/\bmd\.?\s*\d+(\/[\dA-ZÇĞİÖŞÜ]+)?(\s*[–-]\s*\d+)?/gi, ' ') // "md 84", "md 84/2", "md 4/A", "md 1–6"
+    .replace(/\b\d+(\/[\dA-ZÇĞİÖŞÜ]+)?\.\s*madde/gi, ' ') // "84. madde", "84/2. madde", "4/A. madde"
+    .replace(/\b\d+\/[\dA-ZÇĞİÖŞÜ]+\b/g, ' '); // fıkra kesri ve harfli madde ("4/A")
   const out = new Set<number>();
   for (const m of t.matchAll(/\d+/g)) out.add(Number(m[0]));
   return [...out];
@@ -269,11 +275,22 @@ export function validateUnit(
   return { ok: fails === 0, fails, blocks };
 }
 
-/** Ünite aralığındaki referanslar (sayısal karşılaştırma; "Ek 3" gibi olanlar aralık dışı sayılır). */
+/**
+ * Ünite kapsamındaki referanslar. Liste doluysa (PVSK) listedeki maddeler liste sırasıyla
+ * ("Ek 3" burada kapsam İÇİdir); liste boşsa sayısal aralık ("Ek 3" aralık dışı sayılır).
+ */
 export function unitArticleNos(data: SummaryUnitJson): string[] {
+  const all = [...new Set(data.blocks.flatMap((b) => b.articleRefs ?? []))];
+  const liste = data.unit.articleNos ?? [];
+  if (liste.length > 0) {
+    const keyOf = (n: string) => articleKey(n) ?? n;
+    const sira = new Map(liste.map((n, i) => [keyOf(n), i]));
+    return all
+      .filter((n) => sira.has(keyOf(n)))
+      .sort((a, b) => sira.get(keyOf(a))! - sira.get(keyOf(b))!);
+  }
   const from = Number(data.unit.articleFrom);
   const to = Number(data.unit.articleTo);
-  const all = [...new Set(data.blocks.flatMap((b) => b.articleRefs ?? []))];
   return all
     .filter((n) => {
       const k = Number(n);
@@ -354,7 +371,7 @@ export function fillGeneratedBlocks(data: SummaryUnitJson, stats: ExamStatsInput
       b.rows = [
         {
           label: 'Madde kapsamlı seans',
-          value: `md ${data.unit.articleFrom}–${data.unit.articleTo}, ${Math.min(10, stats.totalQuestions)} soru`,
+          value: `md ${articleLabel(data.unit)}, ${Math.min(10, stats.totalQuestions)} soru`,
           refs,
         },
       ];

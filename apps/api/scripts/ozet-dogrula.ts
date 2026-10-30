@@ -16,7 +16,8 @@ import {
   validateUnit,
   type SummaryUnitJson,
 } from '../src/modules/summaries/ozet-dogrulayici';
-import { collectExamStats, loadArticleMap } from '../src/modules/summaries/ozet-ice-aktar';
+import { collectExamStats, loadArticleMap, normalizeArticleNos } from '../src/modules/summaries/ozet-ice-aktar';
+import { articleLabel } from '../src/modules/summaries/unite-eslesme';
 
 const file = process.argv[2];
 if (!file) {
@@ -45,7 +46,7 @@ export function renderMarkdown(data: SummaryUnitJson, legName: string): string {
     '',
     `_${data.unit.subtitle ?? ''}_`,
     '',
-    `Kaynak: ${legName}, md ${data.unit.articleFrom}–${data.unit.articleTo}. Durum: in_review. ${data.unit.sourceLabel} (yalnız admin görür).`,
+    `Kaynak: ${legName}, md ${articleLabel({ ...data.unit, articleNos: data.unit.articleNos ?? [] })}. Durum: in_review. ${data.unit.sourceLabel} (yalnız admin görür).`,
     '',
   ];
   for (const b of data.blocks) {
@@ -74,6 +75,11 @@ export function renderMarkdown(data: SummaryUnitJson, legName: string): string {
     process.exit(2);
   }
   const byNo = await loadArticleMap(prisma, leg.id);
+  const nos = normalizeArticleNos(data.unit.articleNos ?? [], byNo);
+  if (!nos.ok) {
+    console.error('Ünite madde listesi:', nos.error);
+    process.exit(1);
+  }
   const refs = unitArticleNos(data);
   const stats = await collectExamStats(prisma, byNo, refs);
   fillGeneratedBlocks(data, stats);

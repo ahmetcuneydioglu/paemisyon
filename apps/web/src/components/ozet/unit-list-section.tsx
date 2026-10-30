@@ -61,7 +61,7 @@ export function UnitListSection({
                     ) : null}
                   </span>
                   <span className="type-body-sm text-ink-subtle">
-                    md {u.articleFrom}–{u.articleTo} · {u.readingMinutes} dk · {u.blockCount} kart
+                    md {u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`} · {u.readingMinutes} dk · {u.blockCount} kart
                     {u.progress && !done ? ` · kaldığın yerden` : ""}
                   </span>
                   {u.progress ? (

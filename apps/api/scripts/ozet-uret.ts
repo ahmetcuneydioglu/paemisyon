@@ -16,6 +16,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync } from 'fs';
 import type { SummaryUnitJson } from '../src/modules/summaries/ozet-dogrulayici';
+import { articleLabel } from '../src/modules/summaries/unite-eslesme';
 import type { OzetGirdi } from './ozet-girdi';
 
 const MODEL = 'claude-opus-5-5';
@@ -57,6 +58,11 @@ KESİN KURALLAR
 
 ÇIKTI: Tek bir JSON nesnesi: {"unit":{...},"blocks":[...]}. Kod bloğu, açıklama, ön söz yok.`;
 
+/** "75–86" ya da "1, 2, 4, 4/A, 5" — sourceLabel ve istemde aynı etiket. */
+function etiket(g: OzetGirdi): string {
+  return articleLabel({ articleFrom: g.range.from, articleTo: g.range.to, articleNos: g.articleNos ?? [] });
+}
+
 function userMessage(g: OzetGirdi, topicId: string): string {
   const maddeler = g.articles
     .map((a) => `### MADDE ${a.no}${a.title ? ' — ' + a.title : ''} (çıkmış soru: ${a.questionCount})\n${a.text}`)
@@ -70,8 +76,14 @@ function userMessage(g: OzetGirdi, topicId: string): string {
     .join('\n');
   return [
     `ÜNİTE: ${title}`,
-    `slug: ${slug} · legislationSlug: ${g.legislation.slug} · topicId: ${topicId} · madde aralığı: ${g.range.from}–${g.range.to}`,
-    `"unit" alanları: slug, legislationSlug, topicId, title, subtitle, articleFrom, articleTo, readingMinutes, sourceLabel="AI özeti — ${g.legislation.name}, md ${g.range.from}–${g.range.to}".`,
+    `slug: ${slug} · legislationSlug: ${g.legislation.slug} · topicId: ${topicId} · maddeler: ${etiket(g)}`,
+    `"unit" alanları: slug, legislationSlug, topicId, title, subtitle, articleFrom, articleTo, readingMinutes, sourceLabel="AI özeti — ${g.legislation.name}, md ${etiket(g)}".`,
+    ...(g.articleNos?.length
+      ? [
+          `Madde numaralarını AYNEN bu biçimde kullan ("articleRefs" ve atıflarda): ${g.articleNos.map((n) => `"${n}"`).join(', ')}. ` +
+            '"Ek 6", "Geçici 2", "4/A" birer madde numarasıdır; "Ek 6" kart metninde "Ek 6" diye yazılır, 6 sayı sayılmaz.',
+        ]
+      : []),
     '',
     '## RESMÎ MADDE METİNLERİ',
     maddeler,
@@ -130,7 +142,8 @@ function userMessage(g: OzetGirdi, topicId: string): string {
     title: data.unit?.title || title,
     articleFrom: girdi.range.from,
     articleTo: girdi.range.to,
-    sourceLabel: `AI özeti — ${girdi.legislation.name}, md ${girdi.range.from}–${girdi.range.to}`,
+    ...(girdi.articleNos?.length ? { articleNos: girdi.articleNos } : {}),
+    sourceLabel: `AI özeti — ${girdi.legislation.name}, md ${etiket(girdi)}`,
     generatedBy: `${res.model} (ozet-uret.ts)`,
   };
   writeFileSync(out, JSON.stringify(data, null, 2) + '\n');

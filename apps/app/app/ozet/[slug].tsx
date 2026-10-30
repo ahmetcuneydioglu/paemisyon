@@ -83,7 +83,7 @@ export default function OzetScreen() {
       ) : null}
       <View style={{ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: space.s2 }}>
         <AppText variant="bodySm" tone="subtle">
-          {u.legislation.shortName ?? u.legislation.name} md {u.articleFrom}–{u.articleTo} · {u.readingMinutes} dk · {u.totalBlocks} kart
+          {u.legislation.shortName ?? u.legislation.name} md {u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`} · {u.readingMinutes} dk · {u.totalBlocks} kart
         </AppText>
         {u.isPremium ? <Badge tone={u.locked ? "warning" : "neutral"}>Premium</Badge> : null}
       </View>
@@ -111,7 +111,7 @@ export default function OzetScreen() {
           {done ? <CheckCircle2 color={colors.success} size={18} strokeWidth={1.75} /> : null}
           <AppText variant="body" tone="soft" style={{ flex: 1 }}>
             {done ? "Ünite bitti. Şimdi soruya: " : "Okuduğunu soruyla sına: "}
-            {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${u.articleFrom}–${u.articleTo}`}
+            {bridge.rows?.[0]?.value ? String(bridge.rows[0].value) : `md ${u.articleLabel ?? `${u.articleFrom}–${u.articleTo}`}`}
             {u.mastery?.band === "weak" ? ` · şu an %${u.mastery.accuracyPct ?? 0}, 10 soruyla yükselt` : ""}
           </AppText>
         </View>

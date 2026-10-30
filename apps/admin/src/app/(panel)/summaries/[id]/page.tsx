@@ -76,7 +76,7 @@ export default function SummaryUnitPage() {
   const [showChecks, setShowChecks] = useState<Record<string, boolean>>({});
   const [adding, setAdding] = useState<SummaryBlockType | null>(null);
   const [metaEdit, setMetaEdit] = useState(false);
-  const [meta, setMeta] = useState({ title: '', subtitle: '', readingMinutes: 10, isPremium: false });
+  const [meta, setMeta] = useState({ title: '', subtitle: '', readingMinutes: 10, isPremium: false, articleNos: '' });
 
   useEffect(() => {
     api<{ roles: string[] }>('/me').then(setMe).catch(() => setMe({ roles: [] }));
@@ -228,7 +228,7 @@ export default function SummaryUnitPage() {
       </div>
       <PageHeader
         title={unit.title}
-        subtitle={`${unit.legislation.shortName ?? unit.legislation.name} md ${unit.articleFrom}–${unit.articleTo} · ${unit.readingMinutes} dk · v${unit.version} · ${unit.slug}`}
+        subtitle={`${unit.legislation.shortName ?? unit.legislation.name} md ${unit.articleLabel ?? `${unit.articleFrom}–${unit.articleTo}`} · ${unit.readingMinutes} dk · v${unit.version} · ${unit.slug}`}
         action={
           <div className="flex flex-wrap items-center gap-2">
             <StatusBadge status={unit.status} />
@@ -291,7 +291,7 @@ export default function SummaryUnitPage() {
           </div>
           <button
             onClick={() => {
-              setMeta({ title: unit.title, subtitle: unit.subtitle ?? '', readingMinutes: unit.readingMinutes, isPremium: unit.isPremium });
+              setMeta({ title: unit.title, subtitle: unit.subtitle ?? '', readingMinutes: unit.readingMinutes, isPremium: unit.isPremium, articleNos: (unit.articleNos ?? []).join(', ') });
               setMetaEdit((v) => !v);
             }}
             className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50"
@@ -317,8 +317,20 @@ export default function SummaryUnitPage() {
               <input type="checkbox" checked={meta.isPremium} onChange={(e) => setMeta({ ...meta, isPremium: e.target.checked })} />
               Premium (dersin ilk 2 ünitesi açık kalır)
             </label>
+            <label className="text-sm sm:col-span-2">
+              Madde listesi (virgülle; boş bırakılırsa md {unit.articleFrom}–{unit.articleTo} aralığı geçerli)
+              <input
+                value={meta.articleNos}
+                onChange={(e) => setMeta({ ...meta, articleNos: e.target.value })}
+                placeholder="örn. 1, 2, 4, 4/A, 5 · Ek 6, Geçici 2 gibi sayısal olmayan maddeler ancak listeyle üniteye düşer"
+                className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 font-mono text-sm"
+              />
+              <span className="mt-1 block text-xs text-slate-500">
+                Soru → ünite eşlemesi (hâkimiyet, koç reçetesi) ve köprü seansı bu kapsamı kullanır. Her madde kanunda olmalı.
+              </span>
+            </label>
             <div className="sm:col-span-2">
-              <button onClick={() => updateMeta.mutate({ ...meta, subtitle: meta.subtitle || null })} disabled={updateMeta.isPending} className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50">
+              <button onClick={() => updateMeta.mutate({ ...meta, subtitle: meta.subtitle || null, articleNos: meta.articleNos.split(',').map((x) => x.trim()).filter(Boolean) })} disabled={updateMeta.isPending} className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50">
                 Kaydet
               </button>
             </div>
