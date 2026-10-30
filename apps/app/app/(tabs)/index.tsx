@@ -2,7 +2,6 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
 import { Bell } from "lucide-react-native";
 import { View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ExamContextLine, ForYouList, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import { AppText, Button, Card, IconBadgeButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction, type WeekDayState } from "@/features/home/queries";
@@ -39,7 +38,6 @@ export default function BugunScreen() {
   const liveNow = useNow(1000, Boolean(liveExam));
   const qc = useQueryClient();
   const { space } = useTheme();
-  const insets = useSafeAreaInsets();
   const me = useMe();
   const brief = useCoachBrief();
   const pending = usePendingAnswers();
@@ -94,7 +92,7 @@ export default function BugunScreen() {
   const seninIcin = (v3?.forYou ?? []).map((f, i) => ({ key: `${f.kind}:${i}`, label: f.label, ctaLabel: f.ctaLabel, onPress: () => run(f.action) }));
 
   return (
-    <Screen inset="none" style={{ paddingTop: insets.top + space.s2, paddingBottom: 120, gap: space.s5 }}>
+    <Screen style={{ paddingTop: space.s2, paddingBottom: 120, gap: space.s5 }}>
       {/* Üst satır: selam + zil (Doc 52 §9; rozet okunmamış sayısı). */}
       <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: space.s3, minHeight: 44 }}>
         <AppText variant="bodySm" tone="soft" accessibilityRole="header" style={{ flex: 1 }} numberOfLines={1}>

@@ -79,6 +79,11 @@ export function Screen({
   const top = inset === "safe" ? insets.top + space.s4 : space.s4;
   const padding = padded ? { paddingHorizontal: space.screenGutter, paddingTop: top, paddingBottom: space.s8 } : { paddingTop: top };
   if (!scroll) return <View style={[{ flex: 1, backgroundColor: colors.bg }, padding, style]}>{children}</View>;
+  // Kaydırmada güvenli alan ScrollView'un DIŞINDA: içeriğe iç boşluk olarak verilince ScrollView
+  // ekranın tepesinden başlıyor ve yenileme ikonu durum çubuğu/çentik altında kalıyordu (31 Eki).
+  const scrollPadding = padded
+    ? { paddingHorizontal: space.screenGutter, paddingTop: space.s4, paddingBottom: space.s8 }
+    : { paddingTop: space.s4 };
   const yenile = async () => {
     setRefreshing(true);
     try {
@@ -88,15 +93,17 @@ export function Screen({
     }
   };
   return (
-    <ScrollView
-      style={{ flex: 1, backgroundColor: colors.bg }}
-      contentContainerStyle={[padding, { gap: space.s5 }, style]}
-      keyboardShouldPersistTaps="handled"
-      contentInsetAdjustmentBehavior="never"
-      refreshControl={refresh ? <RefreshControl refreshing={refreshing} onRefresh={() => void yenile()} tintColor={colors.inkSoft} colors={[colors.accent]} progressBackgroundColor={colors.surface} /> : undefined}
-    >
-      {children}
-    </ScrollView>
+    <View style={{ flex: 1, backgroundColor: colors.bg, paddingTop: inset === "safe" ? insets.top : 0 }}>
+      <ScrollView
+        style={{ flex: 1 }}
+        contentContainerStyle={[scrollPadding, { gap: space.s5 }, style]}
+        keyboardShouldPersistTaps="handled"
+        contentInsetAdjustmentBehavior="never"
+        refreshControl={refresh ? <RefreshControl refreshing={refreshing} onRefresh={() => void yenile()} tintColor={colors.inkSoft} colors={[colors.accent]} progressBackgroundColor={colors.surface} /> : undefined}
+      >
+        {children}
+      </ScrollView>
+    </View>
   );
 }
 
