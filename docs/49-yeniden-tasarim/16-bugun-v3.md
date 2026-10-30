@@ -163,3 +163,25 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   tuzağı yüzünden çalıştırılmadı; doğrulama birim testleriyle, canlı doğrulama deploy sonrası
   geçici hesapla `/me/coach`. Coach suite 127/127, tsc 0 (prisma generate gerekti: başka oturumun
   `examQuestionAdjustment` modeli), eslint 0.
+- **API ek (30 Eki):** `homeV3.week` — son 7 gün soru (`volume.last7`), haftalık aktif gün/hedef,
+  rütbe adı (ab37aa1). Canlıda (03d8531 deploy) yeni hesapla `/me/coach.homeV3` doğrulandı:
+  nextStep "Seni tanıyalım" (ilk tur), route ["10 soru","Günün Quizi"], forYou ["Haftalık Deneme-1 ·
+  Paz 21:00 · 100 soru","Karışık 10 soru"]; `week` bir sonraki deploy'la.
+- **Expo (30 Eki, 19383a2 + 5c1dbd1):** kit: `ExamContextLine` (Lora 28 geri sayım + "bu hafta
+  3/5" + WeekStrip7), `NextStepCard` (panel, köşe 4, etiket + hap + Lora 24 + tek altın düğme;
+  ikincil ghost satır), `RouteList` (surface + 1 px line, 20 pt onay kutusu, 44 pt satırlar,
+  "Planım ›"), `ForYouList` (56 pt satır, altın kenarlı hap), `WeekSummaryLine` (surfaceAlt),
+  `CourseRoomCard` (2 sütun; "Ağırlık %30" / "Hâkimiyet %62" iki satır + 2 pt ilerleme — §8 not 3).
+  `app/(tabs)/index.tsx` Bugün v3: selam + zil; tek şerit (kuyruk > duyuru > çevrimdışı); bağlam
+  satırı; canlı deneme penceresi açıksa `LiveExamPanel`, değilse `NextStepCard` (v3 yoksa Doc 48
+  `todayTask`'tan türetilir); rota; senin için; bu hafta (`week` yoksa gizli). `run()`:
+  `open_summary` → `/ozet/[slug]`, `open_exams` `/denemeler/<id>` → kurallar ekranı, `articleNos`
+  → seans parametresi, `wrongs` odağı → `mode=review`. **Kaldırılanlar:** CountdownHero kahramanı,
+  TaskHero, PlanShiftList, Hazırlık ve Derslerin listeleri, "Az ama her gün", alt eylem çubuğu
+  (Odak + Başla) ve `FocusSheet` (günün odağı seçimi Bugün'den çıktı; sunucu tarafı duruyor).
+  **Çalış:** sekme adı Kütüphane → Çalış; `kutuphane/index.tsx`: ders odaları ağırlığa göre 2 sütun,
+  araçlar (Yanlışlarım, Favorilerim, Konu özetleri → Anayasa odası, Haftalık planım), serbest tur;
+  Mevzuat bölümü çıktı (kendi sekmesi). Galeri "Bugün v3" bölümü. tsc 0, eslint 0. **Doğrulama:**
+  telefon Metro'dan paketi aldı (kullanıcı hesabıyla görsel kontrol kullanıcıda); SE simülatöründe
+  giriş denemesi Türkçe klavye eşlemesi ('-'→'*', '@'→''') ve askıda kalan `simctl` yüzünden
+  başarısız — simülatör doğrulaması sonraki tura. Kalan: web /bugun aynı iskelet (adım 3).
