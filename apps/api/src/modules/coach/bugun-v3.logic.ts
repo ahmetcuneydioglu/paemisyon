@@ -407,7 +407,8 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
   return out.slice(0, 3);
 }
 
-export function computeHomeV3(input: BugunV3Input): HomeV3 {
+/** `week` servis katmanında eklenir (hacim/rütbe bağlamı burada yok). */
+export function computeHomeV3(input: BugunV3Input): Omit<HomeV3, 'week'> {
   const nextStep = sıradaki(input);
   return { nextStep, route: rota(input, nextStep), forYou: seninIcin(input, nextStep) };
 }

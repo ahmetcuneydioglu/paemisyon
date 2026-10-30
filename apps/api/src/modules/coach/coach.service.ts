@@ -164,7 +164,8 @@ export class CoachService {
       plan: ctx.plan ? { nextItem: ctx.plan.nextItem } : null,
     });
     // Doc 49/16 — Bugün v3: tek adım + rota + senin için (karar sunucuda).
-    const homeV3 = computeHomeV3({
+    const rank = computeRank(rankScore(ctx.stats.totalSolved, ctx.activeDaysTotal));
+    const homeV3Cekirdek = computeHomeV3({
       now: ctx.now,
       goal: ctx.user.dailyGoal,
       answeredToday: ctx.answeredToday,
@@ -180,6 +181,15 @@ export class CoachService {
       },
       plan: ctx.plan ? { items: ctx.plan.items } : null,
     });
+    const homeV3 = {
+      ...homeV3Cekirdek,
+      week: {
+        solved: ctx.volume.last7,
+        activeDays: ctx.weekly.activeDays,
+        goalDays: ctx.weekly.goalDays,
+        rankName: rank.name,
+      },
+    };
 
     return {
       unitRecipe: ctx.weakestUnit,
@@ -215,7 +225,7 @@ export class CoachService {
       },
       gamification: {
         nextBadge: ctx.nextBadge,
-        rank: computeRank(rankScore(ctx.stats.totalSolved, ctx.activeDaysTotal)),
+        rank,
         records: {
           bestNet: ctx.exams.bestNet,
           longestStreak: ctx.streak.longest,

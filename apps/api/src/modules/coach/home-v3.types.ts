@@ -62,8 +62,17 @@ export interface ForYouItem {
   action: TodayTaskAction;
 }
 
+/** "Bu hafta" satırı: son 7 gün çözülen soru, haftalık aktif gün, rütbe adı. */
+export interface WeekSummary {
+  solved: number;
+  activeDays: number;
+  goalDays: number;
+  rankName: string;
+}
+
 export interface HomeV3 {
   nextStep: NextStep;
   route: RouteItem[];
   forYou: ForYouItem[];
+  week: WeekSummary;
 }
