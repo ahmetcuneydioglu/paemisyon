@@ -22,6 +22,10 @@ export interface BugunV3Input {
   todayTopicAnswered: Record<string, number>;
   /** Bugün tamamlanmış yanlış turu var mı. */
   reviewDoneToday: boolean;
+  /** Okunmamış ilk yayındaki özet ünitesi; reçete özet vermiyorsa rotaya bu girer. */
+  nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
+  /** Favori soru sayısı. */
+  bookmarkCount: number;
   exams: {
     live: { id: string; title: string; attempted?: boolean } | null;
     todayUpcoming: { id: string; title: string; startAt: Date; questionCount: number } | null;
@@ -42,6 +46,8 @@ export interface BugunV3Input {
 
 export const ROTA_EN_AZ = 2;
 export const ROTA_EN_COK = 6;
+/** Senin için: yanlışlar, favoriler, ikinci zayıf konu, deneme (kullanıcı kararı 30 Eki: 4). */
+export const FOR_YOU_EN_COK = 4;
 const OZET_DK = 4;
 const SORU_SN = 20;
 
@@ -283,6 +289,24 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
       action: { ...next.action, source: 'home_route' },
     });
   }
+  // Özet adımı (kullanıcı kararı 30 Eki): reçete özet vermese de okunmamış ünite varsa rotada yer alır.
+  if (!items.some((i) => i.kind === 'summary') && input.nextSummary) {
+    const ns = input.nextSummary;
+    items.push({
+      key: `summary:${ns.slug}`,
+      kind: 'summary',
+      label: `${kisaUnite(ns.title)} özeti`,
+      detail: null,
+      estimateMin: ns.readingMinutes,
+      done: false,
+      action: {
+        type: 'open_summary',
+        label: 'Oku',
+        route: `/ozet/${ns.slug}`,
+        source: 'home_route',
+      },
+    });
+  }
   const n = input.readiness.unresolvedWrongCount;
   if (n > 0 || input.reviewDoneToday) {
     const count = Math.min(Math.max(n, 1), 20);
@@ -383,6 +407,23 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
       ),
     });
   }
+  // Favoriler (kullanıcı kararı 30 Eki): hızlı tekrar alanı; favori varsa her zaman.
+  if (input.bookmarkCount > 0) {
+    const count = Math.min(input.bookmarkCount, 20);
+    out.push({
+      kind: 'favorites',
+      label: `Favorilerim · ${input.bookmarkCount} soru`,
+      ctaLabel: 'Tekrar et',
+      action: {
+        type: 'start_session',
+        label: `Başla · ${count} soru · Favoriler`,
+        count,
+        recipe: 'coach',
+        fromBookmarks: true,
+        source: 'home_for_you',
+      },
+    });
+  }
   const nextTopicId = input.weakestUnit?.session.topicId ?? null;
   const ikinci = input.readiness.weakest.find((w) => w.topicId !== nextTopicId) ?? null;
   if (ikinci) {
@@ -421,7 +462,7 @@ function seninIcin(input: BugunV3Input, next: NextStep): ForYouItem[] {
       },
     });
   }
-  return out.slice(0, 3);
+  return out.slice(0, FOR_YOU_EN_COK);
 }
 
 /** `week` servis katmanında eklenir (hacim/rütbe bağlamı burada yok). */

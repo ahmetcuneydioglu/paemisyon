@@ -69,6 +69,8 @@ function girdi(over: Partial<BugunV3Input> = {}): BugunV3Input {
     plan: null,
     todayTopicAnswered: {},
     reviewDoneToday: false,
+    nextSummary: null,
+    bookmarkCount: 0,
     ...over,
   };
 }
@@ -211,12 +213,36 @@ describe('computeHomeV3', () => {
     expect(r.nextStep.kind).toBe('questions');
   });
 
-  it('senin için: yanlış kuyruğu, ikinci zayıf konu, yaklaşan deneme — en çok 3', () => {
-    const r = computeHomeV3(girdi());
-    expect(r.forYou.map((f) => f.kind)).toEqual(['wrongs', 'weak_topic', 'exam']);
-    expect(r.forYou[1]!.label).toBe('İdari Yargı · %48');
-    expect(r.forYou[2]!.label).toMatch(/^Deneme 4 · Cmt \d\d:\d\d · 100 soru$/);
-    expect(r.forYou[2]!.action).toMatchObject({ type: 'open_exams', route: '/denemeler/e4' });
+  it('senin için: yanlış kuyruğu, favoriler, ikinci zayıf konu, yaklaşan deneme — en çok 4', () => {
+    const r = computeHomeV3(girdi({ bookmarkCount: 12 }));
+    expect(r.forYou.map((f) => f.kind)).toEqual(['wrongs', 'favorites', 'weak_topic', 'exam']);
+    expect(r.forYou[1]).toMatchObject({
+      label: 'Favorilerim · 12 soru',
+      action: { fromBookmarks: true, count: 12 },
+    });
+    expect(r.forYou[2]!.label).toBe('İdari Yargı · %48');
+    expect(r.forYou[3]!.label).toMatch(/^Deneme 4 · Cmt \d\d:\d\d · 100 soru$/);
+    expect(r.forYou[3]!.action).toMatchObject({ type: 'open_exams', route: '/denemeler/e4' });
+  });
+
+  it('reçete özet vermese de okunmamış ünite varsa rotada özet adımı olur', () => {
+    const r = computeHomeV3(
+      girdi({
+        weakestUnit: null,
+        nextSummary: {
+          slug: 'yasama',
+          title: 'Yasama — Anayasa',
+          topicId: 't9',
+          readingMinutes: 6,
+        },
+      }),
+    );
+    expect(r.route.map((i) => i.kind)).toEqual(['questions', 'summary', 'review', 'daily']);
+    expect(r.route[1]).toMatchObject({
+      label: 'Yasama özeti',
+      estimateMin: 6,
+      action: { type: 'open_summary', route: '/ozet/yasama' },
+    });
   });
 
   it('hedef dolunca yanlış tekrarı sıradaki olur, senin için yanlış kuyruğunu tekrarlamaz', () => {

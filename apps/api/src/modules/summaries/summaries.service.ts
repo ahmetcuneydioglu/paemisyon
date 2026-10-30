@@ -207,6 +207,55 @@ export class SummariesService {
    * Koç reçetesi (Doc 53 F5-2): zayıf konunun yayındaki üniteleri + kullanıcının ünite hâkimiyeti +
    * özet bitirme durumu → `pickUnitRecipe`. Konu zayıf değilse koç bu metodu çağırmaz.
    */
+  /**
+   * Bugün v3 rotası (Doc 49/16): kullanıcının henüz BİTİRMEDİĞİ ilk yayındaki ünite — önce
+   * tercih edilen konular (en zayıf 3), sonra herhangi bir konu; sıra `sortOrder`. Hepsi okunduysa null.
+   */
+  async nextUnreadUnit(
+    userId: string,
+    preferTopicIds: string[],
+  ): Promise<{
+    slug: string;
+    title: string;
+    topicId: string;
+    readingMinutes: number;
+    isPremium: boolean;
+  } | null> {
+    const units = await this.prisma.summaryUnit.findMany({
+      where: { status: 'published', deletedAt: null },
+      orderBy: [{ topicId: 'asc' }, { sortOrder: 'asc' }],
+      select: {
+        id: true,
+        slug: true,
+        title: true,
+        topicId: true,
+        readingMinutes: true,
+        isPremium: true,
+      },
+    });
+    if (units.length === 0) return null;
+    const okunan = new Set(
+      (
+        await this.prisma.summaryProgress.findMany({
+          where: { userId, unitId: { in: units.map((u) => u.id) }, completedAt: { not: null } },
+          select: { unitId: true },
+        })
+      ).map((o) => o.unitId),
+    );
+    const kalan = units.filter((u) => !okunan.has(u.id));
+    if (kalan.length === 0) return null;
+    const oncelik = new Map(preferTopicIds.map((t, i) => [t, i]));
+    kalan.sort((a, b) => (oncelik.get(a.topicId) ?? 99) - (oncelik.get(b.topicId) ?? 99));
+    const u = kalan[0]!;
+    return {
+      slug: u.slug,
+      title: u.title,
+      topicId: u.topicId,
+      readingMinutes: u.readingMinutes,
+      isPremium: u.isPremium,
+    };
+  }
+
   async recipeForTopic(userId: string, topicId: string): Promise<UnitRecipe | null> {
     const units = await this.prisma.summaryUnit.findMany({
       where: { topicId, status: 'published', deletedAt: null },

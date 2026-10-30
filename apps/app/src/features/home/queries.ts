@@ -25,6 +25,8 @@ export interface TodayTaskAction {
   focus?: DailyFocus;
   /** Ünite reçetesi: yalnız bu maddelerin soruları (Doc 53 F5-2). */
   articleNos?: string[];
+  /** Favorilerden tur (Bugün v3 "Senin için"). */
+  fromBookmarks?: boolean;
   sessionId?: string;
   route?: string;
   source: HomeSource;
@@ -52,7 +54,7 @@ export interface RouteItem {
   done: boolean;
   action: TodayTaskAction | null;
 }
-export type ForYouKind = "wrongs" | "weak_topic" | "exam" | "mixed";
+export type ForYouKind = "wrongs" | "favorites" | "weak_topic" | "exam" | "mixed";
 export interface ForYouItem {
   kind: ForYouKind;
   label: string;

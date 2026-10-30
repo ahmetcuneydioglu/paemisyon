@@ -182,6 +182,8 @@ export class CoachService {
       plan: ctx.plan ? { items: ctx.plan.items } : null,
       todayTopicAnswered: ctx.home.todayTopicAnswered,
       reviewDoneToday: ctx.home.reviewDoneToday,
+      nextSummary: ctx.home.nextSummary,
+      bookmarkCount: ctx.home.bookmarkCount,
     });
     const homeV3 = {
       ...homeV3Cekirdek,
@@ -361,6 +363,7 @@ export class CoachService {
       planOzeti,
       bugunKonuCevaplari,
       bugunYanlisTuru,
+      favoriSayisi,
     ] = await Promise.all([
       profileP,
       this.prisma.streak.findUnique({ where: { userId: user.id } }),
@@ -536,6 +539,7 @@ export class CoachService {
         },
         select: { id: true },
       }),
+      this.prisma.bookmark.count({ where: { userId: user.id } }),
     ]);
 
     // ── Deneme durumları ──
@@ -666,6 +670,13 @@ export class CoachService {
     const weakestUnit = readiness.weakest[0]
       ? await this.summaries.recipeForTopic(user.id, readiness.weakest[0].topicId).catch(() => null)
       : null;
+    // Bugün v3 rotası: reçete özet vermese de okunmamış bir ünite varsa "özet" adımı olsun.
+    const nextSummary = await this.summaries
+      .nextUnreadUnit(
+        user.id,
+        readiness.weakest.map((w) => w.topicId),
+      )
+      .catch(() => null);
 
     // ── Günün odağı (Doc 48 A5): dünün odağı ya da silinmiş kapsam → koç ──
     const focus = odagiCoz(odakSatiri, bugun);
@@ -842,6 +853,8 @@ export class CoachService {
           bugunKonuCevaplari.map((r) => [r.topic_id, Number(r.n)]),
         ),
         reviewDoneToday: bugunYanlisTuru != null,
+        nextSummary,
+        bookmarkCount: favoriSayisi,
       },
     };
   }
@@ -860,6 +873,10 @@ interface HomeRaw {
   todayTopicAnswered: Record<string, number>;
   /** Bugün tamamlanmış yanlış turu var mı (rota "Yanlış tekrarı" adımı). */
   reviewDoneToday: boolean;
+  /** Okunmamış ilk yayındaki özet ünitesi (rota "özet" adımı; reçete yoksa). */
+  nextSummary: { slug: string; title: string; topicId: string; readingMinutes: number } | null;
+  /** Favori soru sayısı ("Senin için" favori turu). */
+  bookmarkCount: number;
 }
 
 /** Varsayılan odak: koç seçer (Doc 25 §5). */

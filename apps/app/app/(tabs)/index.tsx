@@ -82,6 +82,7 @@ export default function BugunScreen() {
         courseId: action.focus?.courseId ?? "",
         topicId: action.focus?.topicId ?? "",
         ...(action.focus?.kind === "wrongs" ? { mode: "review" } : {}),
+        ...(action.fromBookmarks ? { fromBookmarks: "1", title: "Favoriler" } : {}),
         ...(action.articleNos && action.articleNos.length > 0 ? { articleNos: action.articleNos.join(","), title: action.focus?.label ?? "" } : {}),
       },
     });

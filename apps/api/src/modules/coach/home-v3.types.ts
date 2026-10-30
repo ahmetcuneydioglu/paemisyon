@@ -53,9 +53,9 @@ export interface RouteItem {
   action: TodayTaskAction | null;
 }
 
-export type ForYouKind = 'wrongs' | 'weak_topic' | 'exam' | 'mixed';
+export type ForYouKind = 'wrongs' | 'favorites' | 'weak_topic' | 'exam' | 'mixed';
 
-/** Senin için satırı: tek dokunuşla eylem. */
+/** Senin için satırı (en çok 4): tek dokunuşla eylem. */
 export interface ForYouItem {
   kind: ForYouKind;
   /** "Yanlış kuyruğu · 4 soru" */

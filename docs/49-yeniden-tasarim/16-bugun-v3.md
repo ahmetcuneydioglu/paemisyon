@@ -195,3 +195,12 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   ayrıntısı); yanlış tekrarı bugünkü tamamlanmış `review` turuyla; Günün Quizi oynandıysa; plan konusu
   bugün ≥10 cevapla; deneme katılımla. `RouteItem.estimateMin` eklendi (özet 4, soru 20 sn/soru,
   plan kalemi kalan dk). Spec 10, coach suite 128/128, tsc 0.
+- **Rota özet adımı + Senin için favoriler (30 Eki, kullanıcı geri bildirimi):** (1) Rota, zayıf ünite
+  reçetesi özet vermese bile okunmamış bir yayındaki ünite varsa **özet adımı** içerir:
+  `SummariesService.nextUnreadUnit(userId, enZayıfKonular)` — önce en zayıf 3 konunun üniteleri, sonra
+  herhangi biri, `sortOrder`; hepsi okunduysa adım yok. Süre tahmini ünitenin `readingMinutes`'i.
+  (2) **Senin için** en çok 4 satır: yanlış kuyruğu (çözülmemiş yanlış varsa), **Favorilerim · N soru →
+  "Tekrar et"** (`fromBookmarks` turu; `TodayTaskAction.fromBookmarks` eklendi, Expo `run()` seans'a
+  `fromBookmarks=1` geçer), ikinci zayıf konu, yaklaşan deneme; ikiden azsa karışık 10 soru.
+  `home.bookmarkCount` (`bookmarks` sayımı) ve `home.nextSummary` bağlama eklendi. Spec 11, coach
+  suite 129/129, tsc 0, eslint 0.

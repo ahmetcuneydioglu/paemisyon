@@ -94,6 +94,8 @@ export interface TodayTaskAction {
   focus?: DailyFocusView;
   /** start_session: ünite reçetesi — yalnız bu maddelerin soruları (Doc 53 F5-2). */
   articleNos?: string[];
+  /** start_session: favorilerden tur (Bugün v3 "Senin için"). */
+  fromBookmarks?: boolean;
   /** resume_session: devam edilecek tur. */
   sessionId?: string;
   /** open_exams: istemci rotası. */
