@@ -1,6 +1,7 @@
+import { useQueryClient } from "@tanstack/react-query";
 import * as Haptics from "expo-haptics";
-import { type ReactNode } from "react";
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type PressableProps, type StyleProp, type TextInputProps, type TextStyle, type ViewStyle } from "react-native";
+import { useState, type ReactNode } from "react";
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type PressableProps, type StyleProp, type TextInputProps, type TextStyle, type ViewStyle, RefreshControl } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/theme/ThemeProvider";
 import { size, type TypeRole } from "@/theme/tokens";
@@ -49,14 +50,51 @@ export function AppText({
 /* ---------------------------------------------------------------- Ekran */
 
 /** `inset="none"`: modal/sheet sunumunda sistem zaten üst boşluk bırakır. */
-export function Screen({ children, scroll = true, padded = true, inset = "safe", style }: { children: ReactNode; scroll?: boolean; padded?: boolean; inset?: "safe" | "none"; style?: StyleProp<ViewStyle> }) {
+/**
+ * Aşağı çekince yenile (kullanıcı geri bildirimi 31 Eki: hiçbir sekmede yenileme yoktu):
+ * varsayılan davranış ekrandaki AKTİF react-query sorgularını yeniden çeker; ekran özel bir
+ * şey yapacaksa `onRefresh` verir. `refresh={false}` kapatır (form/sihirbaz ekranları).
+ */
+export function Screen({
+  children,
+  scroll = true,
+  padded = true,
+  inset = "safe",
+  style,
+  refresh = true,
+  onRefresh,
+}: {
+  children: ReactNode;
+  scroll?: boolean;
+  padded?: boolean;
+  inset?: "safe" | "none";
+  style?: StyleProp<ViewStyle>;
+  refresh?: boolean;
+  onRefresh?: () => Promise<unknown> | void;
+}) {
   const { colors, space } = useTheme();
   const insets = useSafeAreaInsets();
+  const qc = useQueryClient();
+  const [refreshing, setRefreshing] = useState(false);
   const top = inset === "safe" ? insets.top + space.s4 : space.s4;
   const padding = padded ? { paddingHorizontal: space.screenGutter, paddingTop: top, paddingBottom: space.s8 } : { paddingTop: top };
   if (!scroll) return <View style={[{ flex: 1, backgroundColor: colors.bg }, padding, style]}>{children}</View>;
+  const yenile = async () => {
+    setRefreshing(true);
+    try {
+      await (onRefresh ? onRefresh() : qc.refetchQueries({ type: "active" }));
+    } finally {
+      setRefreshing(false);
+    }
+  };
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: colors.bg }} contentContainerStyle={[padding, { gap: space.s5 }, style]} keyboardShouldPersistTaps="handled" contentInsetAdjustmentBehavior="never">
+    <ScrollView
+      style={{ flex: 1, backgroundColor: colors.bg }}
+      contentContainerStyle={[padding, { gap: space.s5 }, style]}
+      keyboardShouldPersistTaps="handled"
+      contentInsetAdjustmentBehavior="never"
+      refreshControl={refresh ? <RefreshControl refreshing={refreshing} onRefresh={() => void yenile()} tintColor={colors.inkSoft} colors={[colors.accent]} progressBackgroundColor={colors.surface} /> : undefined}
+    >
       {children}
     </ScrollView>
   );

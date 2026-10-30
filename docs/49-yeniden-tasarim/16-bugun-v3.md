@@ -204,3 +204,9 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   `fromBookmarks=1` geçer), ikinci zayıf konu, yaklaşan deneme; ikiden azsa karışık 10 soru.
   `home.bookmarkCount` (`bookmarks` sayımı) ve `home.nextSummary` bağlama eklendi. Spec 11, coach
   suite 129/129, tsc 0, eslint 0.
+- **Aşağı çek-yenile (31 Eki, kullanıcı geri bildirimi):** hiçbir sekmede yenileme yoktu. Kit
+  `Screen` artık `RefreshControl` taşır; varsayılan davranış ekrandaki aktif react-query
+  sorgularını yeniden çeker (`refetchQueries({ type: "active" })`), `onRefresh` ile özelleştirilir,
+  `refresh={false}` kapatır. Bugün, Çalış, Denemeler, Mevzuat, Ben kökleri `Screen` kullandığı için
+  hepsine birden geldi. Favori satırı: canlı API yeni sürümde (`week` + özet adımı doğrulandı);
+  telefon eski `/me/coach` yanıtını önbellekten gösteriyordu — yenileyince gelir.
