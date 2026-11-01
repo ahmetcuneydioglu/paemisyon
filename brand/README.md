@@ -1,7 +1,10 @@
-# Paemisyon Marka Varlıkları — Nişangâh P
+# Paemisyon Marka Varlıkları — Nişangâh P × Nöbet
 
-Ana ikon: **Nişangâh P** (Faz 2, varyant A — navy gradyan zemin, beyaz P,
-amber #F3A93C merkez). Konsept raporu ve usta çizim onayı: 13 Ağu 2026.
+Ana ikon: **Nişangâh P × Nöbet (N7)** — lacivert gradyan zemin, krem P, merkezde amber
+rütbe yıldızı. 24 Eki 2026'da Nöbet temasına uyarlandı (Figma
+https://www.figma.com/design/cLaFSekHPMGK2tCqmcBVAV, bileşen 24:221; süreç
+`docs/51-uygulama-ikonu/`). Önceki sürüm (13 Ağu 2026, beyaz P + #F3A93C nokta) git
+geçmişinde.
 
 ## Kaynaklar (tek doğruluk noktası)
 
@@ -12,8 +15,9 @@ amber #F3A93C merkez). Konsept raporu ve usta çizim onayı: 13 Ağu 2026.
 | `splash-glyph.svg` | Splash glifi, yalnız işaret (şeffaf; zemin platformdan gelir) |
 | `splash-wordmark.svg` | Splash bileşimi: glif + PAEMİSYON yazısı (kullanımda olan) |
 
-Renkler: zemin `#27548F→#1B3A6B→#122A52`, glif `#FFFFFF`, nokta `#F3A93C`,
-adaptive/splash zemini `#1B3A6B` (design token `AppColors.seed`).
+Renkler: zemin `#1E2B3C→#121A26→#0C1119` + amber ışık (%14), glif `#F5F0E5`,
+yıldız `#E8B46C`, adaptive zemini `#121A26`. Splash dosyaları (`splash-*.svg`, `out/splash_*`)
+HENÜZ eski glif ve `#1B3A6B` zemindedir; Flutter splash Nöbet zeminine geçince yenilenecek.
 
 ## Yeniden üretim
 

@@ -46,7 +46,7 @@ const config: ExpoConfig = {
     package: "com.paemisyon.paemisyon",
     versionCode: 1,
     adaptiveIcon: {
-      backgroundColor: "#17161A",
+      backgroundColor: "#121A26",
       foregroundImage: "./assets/android-icon-foreground.png",
       backgroundImage: "./assets/android-icon-background.png",
       monochromeImage: "./assets/android-icon-monochrome.png",
