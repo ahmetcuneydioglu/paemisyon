@@ -299,6 +299,25 @@ describe('computeTodayTask — tek birincil eylem (Doc 48 §4)', () => {
     });
   });
 
+  it('saati gelmemiş deneme taze yarım turu gizlemez (1 Kas 2026)', () => {
+    const t = computeTodayTask(
+      girdi({
+        activeSession: tur({ scopeName: 'Test 3 · Anayasa Hukuku', total: 20, answered: 2 }),
+        exams: {
+          live: null,
+          todayUpcoming: {
+            id: 'e2',
+            title: 'Haftalık Deneme-1',
+            startAt: new Date('2026-10-14T18:00:00Z'),
+          },
+        },
+      }),
+    );
+    expect(t.kind).toBe('resume');
+    expect(t.reason).toContain('Test 3 · Anayasa Hukuku');
+    expect(t.progress).toMatchObject({ answered: 2, total: 20 });
+  });
+
   it('odak etikete ve eyleme yansır (Doc 25 §5)', () => {
     const focus: DailyFocusView = {
       kind: 'topic',

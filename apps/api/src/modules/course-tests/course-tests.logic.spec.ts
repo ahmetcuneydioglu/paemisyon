@@ -13,7 +13,7 @@ const satir = (o: Partial<TestSatiri> & { number: number }): TestSatiri => ({
   topicId: 'a',
   topicName: 'A',
   questionCount: 20,
-  bestPct: null,
+  best: null,
   inProgress: null,
   ...o,
 });
@@ -64,15 +64,27 @@ describe('course-tests.logic (Doc 49/18)', () => {
   it('durum: ücretsizde Test 1 dışı kilitli; yarım > tamamlandı > yeni', () => {
     expect(testDurumu(satir({ number: 2 }), false)).toBe('locked');
     expect(testDurumu(satir({ number: 1 }), false)).toBe('new');
-    expect(testDurumu(satir({ number: 2, bestPct: 80 }), true)).toBe('done');
+    expect(testDurumu(satir({ number: 2, best: { pct: 80, correct: 16, wrong: 4 } }), true)).toBe(
+      'done',
+    );
     const yarim = { sessionId: 's', answered: 11, total: 20 };
-    expect(testDurumu(satir({ number: 2, bestPct: 80, inProgress: yarim }), true)).toBe('progress');
+    expect(
+      testDurumu(
+        satir({ number: 2, best: { pct: 80, correct: 16, wrong: 4 }, inProgress: yarim }),
+        true,
+      ),
+    ).toBe('progress');
   });
 
   it('bölümle: aynı başlık konusuna sahip ardışık testler bir bölüm', () => {
     const b = bolumle(
       [
-        satir({ number: 1, topicId: 'a', topicName: 'Temel Kavramlar', bestPct: 85 }),
+        satir({
+          number: 1,
+          topicId: 'a',
+          topicName: 'Temel Kavramlar',
+          best: { pct: 85, correct: 17, wrong: 3 },
+        }),
         satir({ number: 2, topicId: 'a', topicName: 'Temel Kavramlar' }),
         satir({ number: 3, topicId: 'b', topicName: 'T.C. Anayasası' }),
         satir({ number: 4, topicId: 'b', topicName: 'T.C. Anayasası' }),
@@ -83,12 +95,12 @@ describe('course-tests.logic (Doc 49/18)', () => {
       ['Temel Kavramlar', 1, 2],
       ['T.C. Anayasası', 3, 4],
     ]);
-    expect(b[0]!.tests[0]).toMatchObject({ state: 'done', pct: 85 });
+    expect(b[0]!.tests[0]).toMatchObject({ state: 'done', pct: 85, correct: 17, wrong: 3 });
   });
 
   it('sıradaki: önce yarım test, yoksa ilk açık ve başlanmamış', () => {
     const rows = [
-      satir({ number: 1, bestPct: 70 }),
+      satir({ number: 1, best: { pct: 70, correct: 14, wrong: 6 } }),
       satir({ number: 2 }),
       satir({ number: 3, inProgress: { sessionId: 's3', answered: 4, total: 20 } }),
     ];

@@ -241,12 +241,12 @@ export default function GaleriScreen() {
           <CoveragePanel label="Anayasa Hukuku" value={148} total={1001} unit="soru" right="2/51 test tamamlandı" />
           <UpsellStrip title="Test 1 senin, 50 test daha var" body="Bütün dersler, 20'şer soruluk testler" onPress={() => {}} />
           <View style={{ flexDirection: "row", gap: 12 }}>
-            <TestCard number={1} state="done" questionCount={20} pct={85} answered={null} onPress={() => {}} />
-            <TestCard number={3} state="progress" questionCount={20} pct={null} answered={11} onPress={() => {}} />
+            <TestCard number={1} state="done" questionCount={20} pct={85} correct={17} wrong={3} answered={null} onPress={() => {}} />
+            <TestCard number={3} state="progress" questionCount={20} pct={null} correct={null} wrong={null} answered={11} onPress={() => {}} />
           </View>
           <View style={{ flexDirection: "row", gap: 12 }}>
-            <TestCard number={4} state="new" questionCount={20} pct={null} answered={null} onPress={() => {}} />
-            <TestCard number={5} state="locked" questionCount={20} pct={null} answered={null} onPress={() => {}} />
+            <TestCard number={4} state="new" questionCount={20} pct={null} correct={null} wrong={null} answered={null} onPress={() => {}} />
+            <TestCard number={5} state="locked" questionCount={20} pct={null} correct={null} wrong={null} answered={null} onPress={() => {}} />
           </View>
         </Section>
 

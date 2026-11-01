@@ -6,14 +6,16 @@ import { useTheme } from "@/theme/ThemeProvider";
 
 /**
  * Test kartı (Doc 49/18, Figma 110:405): "Test N", durum satırı ve 4 pt çubuk. Durum sunucudan:
- * tamamlandı (yeşil tik, en iyi yüzde), devam ediyor (altın çerçeve, cevap/toplam), başlanmadı,
- * kilitli (sönük, kilit; dokunuş paywall'a gider).
+ * tamamlandı (yeşil tik + en iyi yüzde; satırda doğru/yanlış), devam ediyor (altın çerçeve,
+ * cevap/toplam), başlanmadı, kilitli (sönük, kilit; dokunuş paywall'a gider).
  */
 export function TestCard({
   number,
   state,
   questionCount,
   pct,
+  correct,
+  wrong,
   answered,
   onPress,
 }: {
@@ -21,20 +23,22 @@ export function TestCard({
   state: TestState;
   questionCount: number;
   pct: number | null;
+  correct: number | null;
+  wrong: number | null;
   answered: number | null;
   onPress: () => void;
 }) {
   const { colors, radius, space } = useTheme();
   const kilitli = state === "locked";
   const durum =
-    state === "done" ? `%${pct} · tamamlandı` : state === "progress" ? `${answered}/${questionCount} · devam ediyor` : state === "locked" ? "Premium" : `${questionCount} soru`;
+    state === "done" ? `${correct} doğru · ${wrong} yanlış` : state === "progress" ? `${answered}/${questionCount} · devam ediyor` : state === "locked" ? "Premium" : `${questionCount} soru`;
   const Ikon = state === "done" ? CheckCircle2 : state === "progress" ? Play : state === "locked" ? Lock : null;
   const ikonRengi = state === "done" ? colors.success : state === "progress" ? colors.accentInk : colors.inkSubtle;
   const doluluk = state === "done" ? 1 : state === "progress" ? (answered ?? 0) / Math.max(1, questionCount) : 0;
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`Test ${number}, ${durum}`}
+      accessibilityLabel={`Test ${number}, ${state === "done" ? `yüzde ${pct}, ` : ""}${durum}`}
       accessibilityHint={kilitli ? "Premium sayfasını açar" : state === "progress" ? "Kaldığın yerden devam eder" : "Testi başlatır"}
       onPress={onPress}
       style={({ pressed }) => ({
@@ -56,7 +60,14 @@ export function TestCard({
         <AppText variant="subhead" tone={kilitli ? "subtle" : "ink"} style={{ fontSize: 16, lineHeight: 22 }}>
           Test {number}
         </AppText>
-        {Ikon ? <Ikon color={ikonRengi} size={20} strokeWidth={1.75} /> : null}
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+          {state === "done" ? (
+            <AppText variant="subhead" tone="success" style={{ fontVariant: ["tabular-nums"] }}>
+              %{pct}
+            </AppText>
+          ) : null}
+          {Ikon ? <Ikon color={ikonRengi} size={20} strokeWidth={1.75} /> : null}
+        </View>
       </View>
       <AppText variant="bodySm" tone={kilitli ? "subtle" : "soft"} numberOfLines={1} style={{ fontVariant: ["tabular-nums"] }}>
         {durum}

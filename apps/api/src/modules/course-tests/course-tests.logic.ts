@@ -75,8 +75,8 @@ export interface TestSatiri {
   topicId: string | null;
   topicName: string | null;
   questionCount: number;
-  /** En iyi tamamlanmış oturumun yüzdesi; yoksa null. */
-  bestPct: number | null;
+  /** En iyi tamamlanmış oturum (eşitlikte en yeni): yüzde, doğru, yanlış; yoksa null. */
+  best: { pct: number; correct: number; wrong: number } | null;
   /** Yarım oturum: cevap sayısı ve oturum kimliği. */
   inProgress: { sessionId: string; answered: number; total: number } | null;
 }
@@ -84,7 +84,7 @@ export interface TestSatiri {
 export function testDurumu(t: TestSatiri, isPremium: boolean): TestDurumu {
   if (!isPremium && t.number > UCRETSIZ_TEST_SAYISI) return 'locked';
   if (t.inProgress) return 'progress';
-  if (t.bestPct != null) return 'done';
+  if (t.best != null) return 'done';
   return 'new';
 }
 
@@ -93,7 +93,10 @@ export interface TestKarti {
   number: number;
   questionCount: number;
   state: TestDurumu;
+  /** Tamamlandıysa en iyi denemenin yüzdesi, doğru ve yanlış sayısı. */
   pct: number | null;
+  correct: number | null;
+  wrong: number | null;
   answered: number | null;
   sessionId: string | null;
 }
@@ -116,7 +119,9 @@ export function bolumle(rows: readonly TestSatiri[], isPremium: boolean): TestBo
       number: r.number,
       questionCount: r.questionCount,
       state,
-      pct: state === 'done' ? r.bestPct : null,
+      pct: state === 'done' ? r.best!.pct : null,
+      correct: state === 'done' ? r.best!.correct : null,
+      wrong: state === 'done' ? r.best!.wrong : null,
       answered: state === 'progress' ? r.inProgress!.answered : null,
       sessionId: state === 'progress' ? r.inProgress!.sessionId : null,
     };

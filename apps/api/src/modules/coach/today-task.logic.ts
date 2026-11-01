@@ -300,31 +300,9 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       secondary: null,
     };
   }
-  const yaklasan = input.exams.todayUpcoming;
-  if (yaklasan) {
-    return {
-      kind: 'exam',
-      title: `Deneme bugün ${saat(yaklasan.startAt)}`,
-      reason: `${yaklasan.title}. Sabah ağır konu yok — kısa ısınma istersen aşağıda.`,
-      progress: null,
-      action: {
-        type: 'open_exams',
-        label: 'Denemeyi gör',
-        route: '/denemeler',
-        source: 'home_task',
-      },
-      finishSessionId: null,
-      secondary: {
-        kind: 'warmup',
-        title: 'Kısa ısınma',
-        subtitle: `${KISA_TUR} soru · yaklaşık 2 dakika`,
-        actionLabel: 'Isın',
-        action: baslat(KISA_TUR, KOC, { prefix: 'Isın', source: 'home_suggestion' }),
-      },
-    };
-  }
-
-  // 2) Taze yarım tur — görev kartının kendisi (S2: tek devam yolu).
+  // 2) Taze yarım tur — görev kartının kendisi (S2: tek devam yolu). Saati gelmemiş denemenin
+  // ÖNÜNDE (1 Kas 2026, kullanıcı talebi): akşam denemesi sabahki yarım testi gizlemesin;
+  // deneme rota ve "Senin için"de görünmeye devam eder. Canlı deneme yine her şeyi ezer.
   const tur = input.activeSession;
   if (tur && now.getTime() - tur.lastActivityAt.getTime() < TAZE_TUR_MS) {
     if (tur.answered === 0) {
@@ -357,6 +335,31 @@ export function computeTodayTask(input: TodayTaskInput): TodayTask {
       action: devam(tur),
       finishSessionId: tur.sessionId,
       secondary: null,
+    };
+  }
+
+  // 2b) Deneme bugün, henüz başlamadı.
+  const yaklasan = input.exams.todayUpcoming;
+  if (yaklasan) {
+    return {
+      kind: 'exam',
+      title: `Deneme bugün ${saat(yaklasan.startAt)}`,
+      reason: `${yaklasan.title}. Sabah ağır konu yok — kısa ısınma istersen aşağıda.`,
+      progress: null,
+      action: {
+        type: 'open_exams',
+        label: 'Denemeyi gör',
+        route: '/denemeler',
+        source: 'home_task',
+      },
+      finishSessionId: null,
+      secondary: {
+        kind: 'warmup',
+        title: 'Kısa ısınma',
+        subtitle: `${KISA_TUR} soru · yaklaşık 2 dakika`,
+        actionLabel: 'Isın',
+        action: baslat(KISA_TUR, KOC, { prefix: 'Isın', source: 'home_suggestion' }),
+      },
     };
   }
 

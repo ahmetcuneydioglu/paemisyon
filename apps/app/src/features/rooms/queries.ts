@@ -87,8 +87,10 @@ export interface CourseTestCard {
   number: number;
   questionCount: number;
   state: TestState;
-  /** Tamamlandıysa en iyi yüzde. */
+  /** Tamamlandıysa en iyi denemenin yüzdesi, doğru ve yanlış sayısı. */
   pct: number | null;
+  correct: number | null;
+  wrong: number | null;
   /** Yarım testte cevap sayısı ve oturum. */
   answered: number | null;
   sessionId: string | null;

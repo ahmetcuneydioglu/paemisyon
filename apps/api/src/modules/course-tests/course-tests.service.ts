@@ -140,6 +140,8 @@ export class CourseTestsService {
           courseTestId: true,
           status: true,
           score: true,
+          correctCount: true,
+          wrongCount: true,
           totalQuestions: true,
           _count: { select: { answers: true } },
         },
@@ -147,13 +149,17 @@ export class CourseTestsService {
     ]);
     const say = new Map<string, number>();
     for (const s of sorular) say.set(s.testId, (say.get(s.testId) ?? 0) + 1);
-    const enIyi = new Map<string, number>();
+    const enIyi = new Map<string, NonNullable<TestSatiri['best']>>();
     const yarim = new Map<string, TestSatiri['inProgress']>();
     for (const o of oturumlar) {
       const id = o.courseTestId!;
       if (o.status === 'completed') {
+        // Oturumlar en yeniden eskiye: eşit yüzdede en yeni deneme kalır.
         const pct = Math.round(Number(o.score ?? 0));
-        enIyi.set(id, Math.max(enIyi.get(id) ?? 0, pct));
+        const onceki = enIyi.get(id);
+        if (!onceki || pct > onceki.pct) {
+          enIyi.set(id, { pct, correct: o.correctCount, wrong: o.wrongCount });
+        }
       } else if (!yarim.has(id)) {
         yarim.set(id, { sessionId: o.id, answered: o._count.answers, total: o.totalQuestions });
       }
@@ -164,7 +170,7 @@ export class CourseTestsService {
       topicId: t.topicId,
       topicName: t.topic?.name ?? null,
       questionCount: say.get(t.id) ?? 0,
-      bestPct: enIyi.get(t.id) ?? null,
+      best: enIyi.get(t.id) ?? null,
       inProgress: yarim.get(t.id) ?? null,
     }));
   }
@@ -192,7 +198,7 @@ export class CourseTestsService {
       totalQuestions: toplam,
       seenQuestions: Math.min(gorulen[0]?.n ?? 0, toplam),
       testCount: gorunur.length,
-      completedTests: gorunur.filter((r) => r.bestPct != null).length,
+      completedTests: gorunur.filter((r) => r.best != null).length,
       /** Ücretsiz planda kaç test kilitli (premium şeridi metni). */
       lockedTests: isPremium ? 0 : Math.max(0, gorunur.length - UCRETSIZ_TEST_SAYISI),
       next: siradaki(gorunur, isPremium),
@@ -208,7 +214,7 @@ export class CourseTestsService {
     const yarim = rows.find((r) => testDurumu(r, isPremium) === 'progress');
     return {
       count: rows.length,
-      completed: rows.filter((r) => r.bestPct != null).length,
+      completed: rows.filter((r) => r.best != null).length,
       inProgressNumber: yarim?.number ?? null,
     };
   }

@@ -1,14 +1,16 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import { useState } from "react";
 import { useWindowDimensions, View } from "react-native";
-import { CoveragePanel, ResumeStrip, TestCard, UpsellStrip } from "@/components/domain";
-import { AppText, Notice, Screen, Skeleton } from "@/components/ui";
+import { CoveragePanel, ResumeOrRestartSheet, ResumeStrip, TestCard, UpsellStrip } from "@/components/domain";
+import { AppText, Notice, Screen, Skeleton, useSheetAction } from "@/components/ui";
 import { useCourseTests, type CourseTestCard } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
  * Testler (Doc 49/18; Figma 111:471 premium, 111:635 ücretsiz): dersin 20'şerlik SABİT setleri.
  * Kapsama paneli → sıradaki test → (ücretsizde) tek premium şeridi → konu başlıklı ızgara.
- * Durum, kilit ve bölümleme sunucudan; dokunuş: yarım → devam, kilitli → paywall, diğerleri → yeni tur.
+ * Durum, kilit ve bölümleme sunucudan; dokunuş: yarım → "devam mı, baştan mı", kilitli → paywall,
+ * diğerleri → yeni tur. "Sıradaki" şeridindeki Devam et doğrudan devam eder.
  */
 export default function TestlerScreen() {
   const router = useRouter();
@@ -17,12 +19,17 @@ export default function TestlerScreen() {
   const p = useLocalSearchParams<{ courseId: string; name?: string }>();
   const q = useCourseTests(p.courseId ?? null);
   const d = q.data;
+  const secim = useSheetAction();
+  const [yarim, setYarim] = useState<CourseTestCard | null>(null);
 
   const baslat = (testId: string) => router.push({ pathname: "/seans", params: { courseTestId: testId, source: "course_test" } });
   const devam = (sessionId: string) => router.push({ pathname: "/seans", params: { resume: sessionId, source: "course_test" } });
   const dokun = (t: CourseTestCard) => {
     if (t.state === "locked") router.push("/paywall");
-    else if (t.state === "progress" && t.sessionId) devam(t.sessionId);
+    else if (t.state === "progress" && t.sessionId) {
+      setYarim(t);
+      secim.open();
+    }
     else baslat(t.id);
   };
 
@@ -78,7 +85,7 @@ export default function TestlerScreen() {
                       {/* Her kart eşit sütunda: tek kalan kart komşusundan geniş çizilmesin. */}
                       {row.map((t) => (
                         <View key={t.id} style={{ flex: 1 }}>
-                          <TestCard number={t.number} state={t.state} questionCount={t.questionCount} pct={t.pct} answered={t.answered} onPress={() => dokun(t)} />
+                          <TestCard number={t.number} state={t.state} questionCount={t.questionCount} pct={t.pct} correct={t.correct} wrong={t.wrong} answered={t.answered} onPress={() => dokun(t)} />
                         </View>
                       ))}
                       {Array.from({ length: cols - row.length }, (_, k) => (
@@ -92,6 +99,16 @@ export default function TestlerScreen() {
           </>
         ) : null}
       </Screen>
+      <ResumeOrRestartSheet
+        visible={secim.visible}
+        onClose={secim.close}
+        onDismissed={secim.onDismissed}
+        title={yarim ? `Test ${yarim.number} yarım kaldı` : ""}
+        answered={yarim?.answered ?? 0}
+        total={yarim?.questionCount ?? 0}
+        onResume={() => yarim?.sessionId && secim.closeThen(() => devam(yarim.sessionId!))}
+        onRestart={() => yarim && secim.closeThen(() => baslat(yarim.id))}
+      />
     </View>
   );
 }

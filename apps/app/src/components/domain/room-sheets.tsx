@@ -185,3 +185,32 @@ export function SolveChoiceSheet({
     </Sheet>
   );
 }
+
+/**
+ * Yarım test (Doc 49/18): kaldığı yerden mi, baştan mı. Baştan başlamak yarım turu kapatır;
+ * çözülen sorular emek olarak sayılır (tek aktif tur kuralı, sunucuda).
+ */
+export function ResumeOrRestartSheet({
+  title,
+  answered,
+  total,
+  onResume,
+  onRestart,
+  ...sheet
+}: SheetProps & { title: string; answered: number; total: number; onResume: () => void; onRestart: () => void }) {
+  const { space } = useTheme();
+  return (
+    <Sheet visible={sheet.visible} onClose={sheet.onClose} onDismissed={sheet.onDismissed} title={title}>
+      <View style={{ gap: space.s3 }}>
+        <AppText variant="bodySm" tone="soft">
+          {answered}/{total} soruyu çözdün, {Math.max(0, total - answered)} soru kaldı.
+        </AppText>
+        <Button title={`Kaldığın yerden devam et · ${answered + 1}. soru`} onPress={onResume} />
+        <Button title="Baştan başla" variant="secondary" onPress={onRestart} />
+        <AppText variant="bodySm" tone="subtle" style={{ fontSize: 12, lineHeight: 16 }}>
+          Baştan başlarsan yarım tur kapanır; çözdüğün {answered} soru istatistiğine sayılır.
+        </AppText>
+      </View>
+    </Sheet>
+  );
+}
