@@ -36,6 +36,12 @@ export class StartSessionDto {
   @IsUUID()
   listId?: string;
 
+  /// Ders testi (Doc 49/18): soru seti testin sabit sırası. Yalnız practice; başka
+  /// kapsam, favori ya da liste ile birlikte verilmez.
+  @IsOptional()
+  @IsUUID()
+  courseTestId?: string;
+
   /// Karışım reçetesi (Doc 48 A6). 'comeback' = uzun aradan dönüşte güçlü
   /// konulardan kısa tur (Doc 24 §7.1). Yalnız kapsamsız practice; verilmezse
   /// koç karışımı.
@@ -58,6 +64,8 @@ export class StartSessionDto {
     'topic_room',
     // Çalış ana ekranı (Doc 49/17).
     'study_hub',
+    // Ders testleri (Doc 49/18).
+    'course_test',
     // Bugün v3 (Doc 49/16) ve paylaşılan soru derin bağlantısı (F10-P).
     'home_next',
     'home_route',

@@ -2,7 +2,7 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { BookOpen, ChevronRight, Lock, Play, RotateCcw, Star } from "lucide-react-native";
 import { useState } from "react";
 import { Pressable, View } from "react-native";
-import { CoachLine, ReadingSheet, RoomStatPanel, TopicActionSheet } from "@/components/domain";
+import { CoachLine, ReadingSheet, RoomStatPanel, SolveChoiceSheet, TopicActionSheet } from "@/components/domain";
 import { ActionTile, AppText, Badge, Card, Notice, ProgressBar, Screen, SectionHeader, Skeleton, useSheetAction } from "@/components/ui";
 import { bandBarTone, bandTone, useCourseRoom, type RoomTopic } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -23,6 +23,7 @@ export default function DersOdasiScreen() {
   const title = d?.course.name ?? p.name ?? "Ders";
   const konuSayfasi = useSheetAction();
   const okuma = useSheetAction();
+  const cozum = useSheetAction();
   const [konu, setKonu] = useState<Konu | null>(null);
 
   const seans = (params: Record<string, string>) => router.push({ pathname: "/seans", params: { count: "10", courseId: "", topicId: "", recipe: "", ...params } });
@@ -80,7 +81,7 @@ export default function DersOdasiScreen() {
 
             <View style={{ gap: space.s3 }}>
               <View style={{ flexDirection: "row", gap: space.s3 }}>
-                <ActionTile icon={Play} variant="primary" title="Soru çöz" subtitle="10 soru · bu dersten" onPress={() => coz(null)} />
+                <ActionTile icon={Play} variant="primary" title="Soru çöz" subtitle={d.tools.tests.count > 0 ? `Akıllı tur ya da ${d.tools.tests.count} test` : "10 soru · bu dersten"} onPress={d.tools.tests.count > 0 ? cozum.open : () => coz(null)} />
                 <ActionTile
                   icon={BookOpen}
                   title="Konu oku"
@@ -132,6 +133,17 @@ export default function DersOdasiScreen() {
         onFavorites={() => konu && konuSayfasi.closeThen(() => favoriler(konu, konu.favoriteCount))}
         onDetails={() => konu && konuSayfasi.closeThen(() => router.push({ pathname: "/(tabs)/kutuphane/konu/[topicId]", params: { topicId: konu.id, name: konu.name } }))}
       />
+      {d ? (
+        <SolveChoiceSheet
+          visible={cozum.visible}
+          onClose={cozum.close}
+          onDismissed={cozum.onDismissed}
+          courseName={d.course.name}
+          tests={d.tools.tests}
+          onSmart={() => cozum.closeThen(() => coz(null))}
+          onTests={() => cozum.closeThen(() => router.push({ pathname: "/(tabs)/kutuphane/testler/[courseId]", params: { courseId: d.course.id, name: d.course.name } }))}
+        />
+      ) : null}
       {d ? (
         <ReadingSheet
           visible={okuma.visible}

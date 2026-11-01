@@ -58,6 +58,8 @@ export interface YarimTurSatiri {
   topicIds: string[];
   topic: { name: string } | null;
   course: { name: string } | null;
+  /** Testten açılan tur (Doc 49/18): ad "Test 3 · Anayasa Hukuku". */
+  courseTest: { number: number } | null;
   _count: { answers: number };
   answers: { answeredAt: Date }[];
 }
@@ -79,6 +81,7 @@ export const yarimTurSorgusu = (userId: string) => ({
     topicIds: true,
     topic: { select: { name: true } },
     course: { select: { name: true } },
+    courseTest: { select: { number: true } },
     _count: { select: { answers: true } },
     answers: { orderBy: { answeredAt: 'desc' as const }, take: 1, select: { answeredAt: true } },
   },
@@ -100,9 +103,11 @@ export function enTazeYarimTur(rows: readonly YarimTurSatiri[]): YarimTur | null
             ? 'Yanlış turu'
             : s.mode === 'daily'
               ? 'Günün Quizi'
-              : (s.topic?.name ??
-                s.course?.name ??
-                (s.topicIds.length > 0 ? `${s.topicIds.length} seçili mevzuat` : 'Koç turu')),
+              : s.courseTest && s.course
+                ? `Test ${s.courseTest.number} · ${s.course.name}`
+                : (s.topic?.name ??
+                  s.course?.name ??
+                  (s.topicIds.length > 0 ? `${s.topicIds.length} seçili mevzuat` : 'Koç turu')),
       }))
       .sort((a, b) => b.lastActivityAt.getTime() - a.lastActivityAt.getTime())[0] ?? null
   );

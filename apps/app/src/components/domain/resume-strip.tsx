@@ -6,7 +6,20 @@ import { useTheme } from "@/theme/ThemeProvider";
  * "Kaldığın yer" şeridi (Çalış v2, Doc 49/17): sol altın çizgi, kapsam + ilerleme, tek "Devam et".
  * Yalnız sunucu taze bir yarım tur döndürdüğünde çizilir (Bugün'deki "devam et" ile aynı tur).
  */
-export function ResumeStrip({ scopeName, detail, onPress }: { scopeName: string; detail: string; onPress: () => void }) {
+export function ResumeStrip({
+  scopeName,
+  detail,
+  onPress,
+  label = "Kaldığın yer",
+  cta = "Devam et",
+}: {
+  scopeName: string;
+  detail: string;
+  onPress: () => void;
+  /** Üst etiket: Çalış'ta "Kaldığın yer", Testler'de "Sıradaki". */
+  label?: string;
+  cta?: string;
+}) {
   const { colors, radius, space } = useTheme();
   return (
     <View
@@ -27,7 +40,7 @@ export function ResumeStrip({ scopeName, detail, onPress }: { scopeName: string;
     >
       <View style={{ flex: 1, gap: 2 }}>
         <AppText variant="label" tone="subtle">
-          Kaldığın yer
+          {label}
         </AppText>
         <AppText variant="subhead" numberOfLines={1}>
           {scopeName}
@@ -36,7 +49,7 @@ export function ResumeStrip({ scopeName, detail, onPress }: { scopeName: string;
           {detail}
         </AppText>
       </View>
-      <Button title="Devam et" size="sm" onPress={onPress} accessibilityLabel={`${scopeName} turuna devam et, ${detail}`} />
+      <Button title={cta} size="sm" onPress={onPress} accessibilityLabel={`${scopeName}, ${detail}, ${cta}`} />
     </View>
   );
 }

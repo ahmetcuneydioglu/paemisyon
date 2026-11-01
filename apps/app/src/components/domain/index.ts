@@ -27,3 +27,6 @@ export * from "./week-summary-line";
 export * from "./course-card";
 export * from "./resume-strip";
 export * from "./room-sheets";
+export * from "./test-card";
+export * from "./coverage-panel";
+export * from "./upsell-strip";

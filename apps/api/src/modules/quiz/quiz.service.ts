@@ -38,6 +38,7 @@ import { StartSessionDto } from './dto/start-session.dto';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { articleSlug, slugify } from '../public/public.service';
 import { SORU_OZETI_SELECT, soruOzeti } from './soru-ozeti';
+import { CourseTestsService } from '../course-tests/course-tests.service';
 import { PlanService } from '../plan/plan.service';
 import { ModuleRef } from '@nestjs/core';
 
@@ -60,6 +61,7 @@ export class QuizService {
     private readonly plan: PlanService,
     private readonly moduleRef: ModuleRef,
     private readonly events: AppEventsService,
+    private readonly courseTests: CourseTestsService,
   ) {}
 
   /** Oturum başlat: konudan rastgele yayında sorular → exam-güvenli (cevapsız) döner. */
@@ -102,6 +104,22 @@ export class QuizService {
     // istatistiklere normal işlenir; anahtar önceden sızmaz.
     if (dto.questionId != null) {
       return this.startSingleQuestion(userId, dto.questionId, dto.source);
+    }
+
+    // Ders testi (Doc 49/18): sabit set, sabit sıra; kilit kararı CourseTestsService'te.
+    if (dto.courseTestId != null) {
+      if (
+        dto.mode !== 'practice' ||
+        acikKapsam ||
+        dto.fromBookmarks ||
+        dto.listId != null ||
+        dto.recipe != null
+      ) {
+        throw new BadRequestException(
+          'Test turu yalnız practice modunda ve başka kapsamsız açılır.',
+        );
+      }
+      return this.startCourseTest(user, dto.courseTestId, dto.source);
     }
 
     // Günün sorusu: kapsamsız özel akış (deterministik, günde 1 hak).
@@ -451,6 +469,36 @@ export class QuizService {
         fromBookmarks: dto.fromBookmarks === true,
       }),
       questions,
+    };
+  }
+
+  /** Testten tur (Doc 49/18): sıra karıştırılmaz, "tek aktif tur" kuralı geçerli. */
+  private async startCourseTest(user: AuthenticatedUser, courseTestId: string, source?: string) {
+    const { test, questions } = await this.courseTests.sessionSet(courseTestId, user.isPremium);
+    if (questions.length === 0) throw new NotFoundException('Bu testte çözülebilir soru kalmadı.');
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: questions.map((q) => q.currentVersionId!) } },
+      select: SORU_OZETI_SELECT, // is_correct/explanation YOK
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    await this.yarimTurlariKapat(user.id);
+    const session = await this.prisma.quizSession.create({
+      data: {
+        userId: user.id,
+        mode: 'practice',
+        courseId: test.courseId,
+        courseTestId: test.id,
+        totalQuestions: questions.length,
+        questionOrder: questions.map((q) => q.currentVersionId!),
+        source: source ?? 'course_test',
+      },
+    });
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      plannedDurationSeconds: null,
+      scopeName: `Test ${test.number} · ${test.courseName}`,
+      questions: questions.map((q) => soruOzeti(byId.get(q.currentVersionId!)!, 'practice')),
     };
   }
 
@@ -1743,6 +1791,7 @@ export class QuizService {
         exam: { select: { title: true } },
         topic: { select: { name: true } },
         course: { select: { name: true } },
+        courseTest: { select: { number: true } },
         topicIds: true,
         _count: { select: { answers: true } },
       },
@@ -1755,6 +1804,9 @@ export class QuizService {
       answeredCount: session._count.answers,
       startedAt: session.startedAt,
       scopeName:
+        (session.courseTest && session.course
+          ? `Test ${session.courseTest.number} · ${session.course.name}`
+          : null) ??
         session.topic?.name ??
         session.course?.name ??
         session.archiveExam?.title ??
@@ -1793,6 +1845,7 @@ export class QuizService {
         archiveExam: { select: { title: true } },
         topic: { select: { name: true } },
         course: { select: { name: true } },
+        courseTest: { select: { number: true } },
         topicIds: true,
         answers: {
           select: { questionId: true, selectedOptionId: true, isCorrect: true, flagged: true },
@@ -1829,6 +1882,9 @@ export class QuizService {
       plannedDurationSeconds: session.plannedDurationSeconds,
       remainingSeconds: kalan,
       scopeName:
+        (session.courseTest && session.course
+          ? `Test ${session.courseTest.number} · ${session.course.name}`
+          : null) ??
         session.topic?.name ??
         session.course?.name ??
         session.archiveExam?.title ??

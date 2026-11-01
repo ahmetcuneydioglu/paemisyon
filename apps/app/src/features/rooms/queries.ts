@@ -41,6 +41,8 @@ export interface CourseRoom {
     wrongCount: number;
     favoriteCount: number;
     summaryUnitCount: number;
+    /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */
+    tests: { count: number; completed: number; inProgressNumber: number | null };
     legislation: { slug: string; name: string; articleCount: number }[];
   };
 }
@@ -78,10 +80,38 @@ export interface StudyHub {
   totals: { wrongCount: number; favoriteCount: number };
 }
 
+export type TestState = "done" | "progress" | "new" | "locked";
+
+export interface CourseTestCard {
+  id: string;
+  number: number;
+  questionCount: number;
+  state: TestState;
+  /** Tamamlandıysa en iyi yüzde. */
+  pct: number | null;
+  /** Yarım testte cevap sayısı ve oturum. */
+  answered: number | null;
+  sessionId: string | null;
+}
+
+/** Ders testleri (Doc 49/18; API course-tests.service.ts). Durum, kilit ve bölümleme sunucudan. */
+export interface CourseTests {
+  course: { id: string; name: string };
+  totalQuestions: number;
+  seenQuestions: number;
+  testCount: number;
+  completedTests: number;
+  /** Ücretsiz planda kilitli test sayısı (0 = premium). */
+  lockedTests: number;
+  next: { testId: string; number: number; heading: string | null; answered: number; total: number; sessionId: string | null } | null;
+  sections: { heading: string; from: number; to: number; tests: CourseTestCard[] }[];
+}
+
 export const roomKeys = {
   all: ["rooms"] as const,
   study: ["rooms", "study"] as const,
   course: (id: string | null) => ["rooms", "course", id] as const,
+  tests: (courseId: string | null) => ["rooms", "tests", courseId] as const,
   topic: (id: string | null) => ["rooms", "topic", id] as const,
 };
 
@@ -91,6 +121,10 @@ export function useStudyHub(enabled = true) {
 
 export function useCourseRoom(courseId: string | null) {
   return useQuery({ queryKey: roomKeys.course(courseId), queryFn: () => api<CourseRoom>(`/me/course-room/${courseId}`), enabled: Boolean(courseId) });
+}
+
+export function useCourseTests(courseId: string | null) {
+  return useQuery({ queryKey: roomKeys.tests(courseId), queryFn: () => api<CourseTests>(`/me/course-tests/${courseId}`), enabled: Boolean(courseId) });
 }
 
 export function useTopicRoom(topicId: string | null) {

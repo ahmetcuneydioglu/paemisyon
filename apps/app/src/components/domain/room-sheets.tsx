@@ -1,5 +1,5 @@
-import { BookOpen, RotateCcw, Scale, Star, type LucideIcon } from "lucide-react-native";
-import { View } from "react-native";
+import { BookOpen, ChevronRight, LayoutGrid, RotateCcw, Scale, Sparkles, Star, type LucideIcon } from "lucide-react-native";
+import { Pressable, View } from "react-native";
 import { AppText, Button, ListRow, Sheet } from "@/components/ui";
 import type { RoomTopic } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -107,6 +107,81 @@ export function ReadingSheet({
           Bu derste henüz okunacak özet ya da mevzuat metni yok.
         </AppText>
       ) : null}
+    </Sheet>
+  );
+}
+
+/** Seçim sayfasının büyük seçenek satırı: ikon kutusu, başlık, açıklama, isteğe bağlı durum. */
+function Secenek({ icon: Icon, title, body, meta, primary, onPress }: { icon: LucideIcon; title: string; body: string; meta?: string | null; primary?: boolean; onPress: () => void }) {
+  const { colors, radius, space } = useTheme();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={[title, body, meta].filter(Boolean).join(", ")}
+      onPress={onPress}
+      style={({ pressed }) => ({
+        flexDirection: "row",
+        alignItems: "center",
+        gap: space.s3,
+        padding: space.s4,
+        borderRadius: radius.card,
+        borderWidth: primary ? 1.5 : 1,
+        borderColor: primary ? colors.accent : colors.line,
+        backgroundColor: colors.bg,
+        opacity: pressed ? 0.85 : 1,
+      })}
+    >
+      <View style={{ width: 44, height: 44, borderRadius: radius.control, alignItems: "center", justifyContent: "center", backgroundColor: primary ? colors.accent : colors.surfaceAlt }}>
+        <Icon color={primary ? colors.onAccent : colors.accentInk} size={22} strokeWidth={1.75} />
+      </View>
+      <View style={{ flex: 1, gap: 2 }}>
+        <AppText variant="subhead" style={{ fontSize: 16, lineHeight: 22 }}>
+          {title}
+        </AppText>
+        <AppText variant="bodySm" tone="soft">
+          {body}
+        </AppText>
+        {meta ? (
+          <AppText variant="bodySm" tone="accentInk" style={{ fontSize: 12, lineHeight: 16 }}>
+            {meta}
+          </AppText>
+        ) : null}
+      </View>
+      <ChevronRight color={colors.inkSubtle} size={20} strokeWidth={1.75} />
+    </Pressable>
+  );
+}
+
+/**
+ * "Nasıl çözmek istersin?" (Doc 49/18, Figma 111:385): ders odasının Soru çöz kutusu. Akıllı tur
+ * (koç, 10 soru) varsayılan; Testler dersi baştan sona 20'şerlik sabit setlerle götürür.
+ */
+export function SolveChoiceSheet({
+  courseName,
+  tests,
+  onSmart,
+  onTests,
+  ...sheet
+}: SheetProps & {
+  courseName: string;
+  tests: { count: number; completed: number; inProgressNumber: number | null };
+  onSmart: () => void;
+  onTests: () => void;
+}) {
+  const { space } = useTheme();
+  const durum =
+    tests.count === 0
+      ? null
+      : [tests.completed > 0 ? `${tests.completed}/${tests.count} tamamlandı` : null, tests.inProgressNumber != null ? `Test ${tests.inProgressNumber} yarım` : null].filter(Boolean).join(" · ") || null;
+  return (
+    <Sheet visible={sheet.visible} onClose={sheet.onClose} onDismissed={sheet.onDismissed} title="Nasıl çözmek istersin?">
+      <View style={{ gap: space.s3 }}>
+        <AppText variant="bodySm" tone="soft">
+          {courseName}
+        </AppText>
+        <Secenek icon={Sparkles} primary title="Akıllı tur" body="10 soru · koç seçer, zayıf konulara ve yanlışlara öncelik" onPress={onSmart} />
+        {tests.count > 0 ? <Secenek icon={LayoutGrid} title="Testler" body={`${tests.count} test · her biri 20 soru · baştan sona`} meta={durum} onPress={onTests} /> : null}
+      </View>
     </Sheet>
   );
 }

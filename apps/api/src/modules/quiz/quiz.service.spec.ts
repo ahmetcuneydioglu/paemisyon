@@ -85,6 +85,7 @@ function setup(selectedOptionExists = true, questionOrder: string[] | null = [VE
       emit: jest.fn().mockResolvedValue(undefined),
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
+    {} as never, // CourseTestsService (Doc 49/18)
   );
   return { service, prisma, settings, progress, selectedId, correctId };
 }
@@ -397,6 +398,7 @@ describe('QuizService.splitBySeen', () => {
           emit: jest.fn().mockResolvedValue(undefined),
           emitMany: jest.fn().mockResolvedValue(0),
         } as never,
+        {} as never, // CourseTestsService (Doc 49/18)
       ),
       prisma,
     };
@@ -530,6 +532,7 @@ function setupPersonal(
       emit: jest.fn().mockResolvedValue(undefined),
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
+    {} as never, // CourseTestsService (Doc 49/18)
   );
   return { service, prisma };
 }
@@ -745,6 +748,7 @@ function setupSecili(opts: { premiumKonu?: string; eksikKonu?: boolean } = {}) {
       emit: jest.fn().mockResolvedValue(undefined),
       emitMany: jest.fn().mockResolvedValue(0),
     } as never,
+    {} as never, // CourseTestsService (Doc 49/18)
   );
   return { service, prisma, havuz, progress };
 }
@@ -944,6 +948,7 @@ describe('QuizService.completeSession — kapatılmış tur yeniden işlenmez (D
         emit: jest.fn().mockResolvedValue(undefined),
         emitMany: jest.fn().mockResolvedValue(0),
       } as never,
+      {} as never, // CourseTestsService (Doc 49/18)
     );
     const r = await service.completeSession(premiumUser.id, 's1');
     expect(r).toMatchObject({ correctCount: 3, wrongCount: 1 });

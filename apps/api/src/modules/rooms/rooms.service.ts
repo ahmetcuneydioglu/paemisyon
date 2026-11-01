@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { CourseTestsService } from '../course-tests/course-tests.service';
 import { haftaBasi } from '../../common/gun';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
 import { enTazeYarimTur, TAZE_TUR_MS, yarimTurSorgusu } from '../coach/today-task.logic';
@@ -61,7 +62,10 @@ const kamu = (r: Satir) => ({
  */
 @Injectable()
 export class RoomsService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly courseTests: CourseTestsService,
+  ) {}
 
   async courseRoom(userId: string, courseId: string, isPremiumUser = false) {
     const course = await this.prisma.course.findFirst({
@@ -79,6 +83,7 @@ export class RoomsService {
       profile,
       planItems,
       sayimlar,
+      testler,
       units,
     ] = await Promise.all([
       this.prisma.topic.findMany({
@@ -122,6 +127,7 @@ export class RoomsService {
         select: { topicId: true },
       }),
       this.konuSayimlari(userId, courseId),
+      this.courseTests.roomSummary(userId, courseId, isPremiumUser),
       this.prisma.summaryUnit.findMany({
         where: { status: 'published', deletedAt: null, topic: { courseId, deletedAt: null } },
         orderBy: { sortOrder: 'asc' },
@@ -216,6 +222,8 @@ export class RoomsService {
         wrongCount,
         favoriteCount: favCount,
         summaryUnitCount: units.length,
+        /** Ders testleri (Doc 49/18): seçim sayfasının alt yazısı. */
+        tests: testler,
         // Ana metin önce: madde sayısı çoktan aza (Anayasa Hukuku'nda 12 mevzuat var).
         legislation: [...legislation]
           .sort((a, b) => b._count.articles - a._count.articles)

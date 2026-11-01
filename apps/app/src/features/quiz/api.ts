@@ -66,6 +66,8 @@ export interface StartSessionBody {
   fromBookmarks?: boolean;
   archiveExamId?: string;
   personalExam?: boolean;
+  /** Ders testi (Doc 49/18): sabit set; başka kapsamla verilmez. */
+  courseTestId?: string;
   questionCount?: number;
 }
 

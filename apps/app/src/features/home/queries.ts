@@ -14,7 +14,7 @@ export interface DailyFocus {
   label: string | null;
 }
 
-export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room" | "home_next" | "home_route" | "home_for_you";
+export type HomeSource = "home_task" | "home_resume" | "home_weak_topic" | "home_suggestion" | "plan" | "course_room" | "topic_room" | "home_next" | "home_route" | "home_for_you" | "study_hub" | "course_test";
 
 export interface TodayTaskAction {
   /** open_summary (Doc 49/16): konu özeti ünitesi (`route` = /ozet/<slug>). */

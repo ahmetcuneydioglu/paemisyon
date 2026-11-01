@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
@@ -237,6 +237,16 @@ export default function GaleriScreen() {
           <View style={{ flexDirection: "row", gap: 12 }}>
             <ActionTile icon={Play} variant="primary" title="Soru çöz" subtitle="10 soru · bu dersten" onPress={() => {}} />
             <ActionTile icon={Star} title="Favorilerim" subtitle="Henüz favori yok" disabled />
+          </View>
+          <CoveragePanel label="Anayasa Hukuku" value={148} total={1001} unit="soru" right="2/51 test tamamlandı" />
+          <UpsellStrip title="Test 1 senin, 50 test daha var" body="Bütün dersler, 20'şer soruluk testler" onPress={() => {}} />
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <TestCard number={1} state="done" questionCount={20} pct={85} answered={null} onPress={() => {}} />
+            <TestCard number={3} state="progress" questionCount={20} pct={null} answered={11} onPress={() => {}} />
+          </View>
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <TestCard number={4} state="new" questionCount={20} pct={null} answered={null} onPress={() => {}} />
+            <TestCard number={5} state="locked" questionCount={20} pct={null} answered={null} onPress={() => {}} />
           </View>
         </Section>
 

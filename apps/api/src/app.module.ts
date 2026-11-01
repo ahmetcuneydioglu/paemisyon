@@ -28,6 +28,7 @@ import { ReviewModule } from './modules/review/review.module';
 import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
 import { RoomsModule } from './modules/rooms/rooms.module';
+import { CourseTestsModule } from './modules/course-tests/course-tests.module';
 import { UsersModule } from './modules/users/users.module';
 import { SummariesModule } from './modules/summaries/summaries.module';
 
@@ -76,6 +77,7 @@ import { SummariesModule } from './modules/summaries/summaries.module';
     ListsModule,
     PlanModule,
     RoomsModule,
+    CourseTestsModule, // Doc 49/18 ders testleri
     ReportsModule,
     BillingModule,
     CoachModule,

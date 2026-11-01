@@ -370,6 +370,7 @@ model Course {
   topics       Topic[]
   quizSessions QuizSession[]
   dailyFocuses DailyFocus[]
+  courseTests  CourseTest[]
 
   @@map("courses")
 }
@@ -402,6 +403,7 @@ model Topic {
   lawArticles      LawArticle[]
   legislation      Legislation?
   summaryUnits     SummaryUnit[]
+  courseTests      CourseTest[]
 
   dailyFocuses DailyFocus[]
 
@@ -623,8 +625,8 @@ model SummaryUnit {
   updatedAt      DateTime      @updatedAt @map("updated_at")
   deletedAt      DateTime?     @map("deleted_at")
 
-  topic       Topic             @relation(fields: [topicId], references: [id], onDelete: Cascade)
-  legislation Legislation       @relation(fields: [legislationId], references: [id], onDelete: Cascade)
+  topic        Topic              @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  legislation  Legislation        @relation(fields: [legislationId], references: [id], onDelete: Cascade)
   blocks       SummaryBlock[]
   progress     SummaryProgress[]
   unitProgress UserUnitProgress[]
@@ -771,16 +773,17 @@ model Question {
   createdAt        DateTime  @default(now()) @map("created_at")
   deletedAt        DateTime? @map("deleted_at")
 
-  topic          Topic              @relation(fields: [topicId], references: [id])
+  topic          Topic               @relation(fields: [topicId], references: [id])
   reports        QuestionReport[]
-  versions       QuestionVersion[]  @relation("QuestionVersions")
-  currentVersion QuestionVersion?   @relation("CurrentVersion", fields: [currentVersionId], references: [id])
+  versions       QuestionVersion[]   @relation("QuestionVersions")
+  currentVersion QuestionVersion?    @relation("CurrentVersion", fields: [currentVersionId], references: [id])
   examQuestions  ExamQuestion[]
   pastExams      PastExamQuestion[]
   reviews        QuestionReview[]
   articles       QuestionArticle[]
   userNotes      QuestionNote[]
   listItems      UserListItem[]
+  courseTest     CourseTestQuestion?
 
   @@index([topicId])
   @@index([topicId, articleNo])
@@ -1124,6 +1127,8 @@ model QuizSession {
   personalExam           Boolean              @default(false) @map("personal_exam")
   /// Seansın geliş kanalı ("notif" = bildirim derin bağlantısı) — ölçüm.
   source                 String?
+  /// Testten açılan tur (Doc 49/18): soru seti testin sabit sırası.
+  courseTestId           String?              @map("course_test_id") @db.Uuid
   startedAt              DateTime             @default(now()) @map("started_at")
   completedAt            DateTime?            @map("completed_at")
 
@@ -1132,6 +1137,7 @@ model QuizSession {
   topic       Topic?       @relation(fields: [topicId], references: [id])
   course      Course?      @relation(fields: [courseId], references: [id])
   exam        Exam?        @relation(fields: [examId], references: [id])
+  courseTest  CourseTest?  @relation(fields: [courseTestId], references: [id])
   answers     QuizAnswer[]
 
   // Tekillik kısmi indeksle (migration SQL): yalnız resmî çözüm bir kezdir.
@@ -1141,7 +1147,43 @@ model QuizSession {
   @@index([examId, attemptRole, status])
   // Günlük kişisel deneme hakkının sayımı.
   @@index([userId, personalExam, startedAt])
+  // Test ekranı: kullanıcının testlerdeki oturumları (Doc 49/18).
+  @@index([userId, courseTestId])
   @@map("quiz_sessions")
+}
+
+/// Ders testi (Doc 49/18): dersin yayındaki sorularından 20'şerlik SABİT set. Soru bir kez
+/// atanır ve orada kalır ("Test 3'ü bitirdim" kalıcı doğrudur); yeni sorular son testi
+/// tamamlar, sonra yeni test açar. Kullanıcı ilerlemesi oturumlardan türetilir.
+model CourseTest {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  courseId  String   @map("course_id") @db.Uuid
+  number    Int
+  /// Bölüm başlığı: testin ilk sorusunun konusu (atama anında sabitlenir).
+  topicId   String?  @map("topic_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+
+  course    Course               @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  topic     Topic?               @relation(fields: [topicId], references: [id], onDelete: SetNull)
+  questions CourseTestQuestion[]
+  sessions  QuizSession[]
+
+  @@unique([courseId, number])
+  @@map("course_tests")
+}
+
+model CourseTestQuestion {
+  testId     String @map("test_id") @db.Uuid
+  /// Tekil: bir soru yalnız bir testtedir.
+  questionId String @unique @map("question_id") @db.Uuid
+  position   Int
+
+  test     CourseTest @relation(fields: [testId], references: [id], onDelete: Cascade)
+  question Question   @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([testId, questionId])
+  @@index([testId, position])
+  @@map("course_test_questions")
 }
 
 /// Kullanıcı soru hata bildirimi (eski sistemdeki question_reports'un sağlıklı hali).
@@ -2287,13 +2329,13 @@ enum NotificationAutomationStatus {
 /// Olay omurgası (Doc 52 §4.5): üreticiler motoru tanımaz, yalnız olay yazar.
 /// Otomasyonlar tüketir; tablo ileride rozet ve koç için de kaynaktır.
 model AppEvent {
-  id         BigInt    @id @default(autoincrement())
-  eventType  String    @map("event_type")
-  userId     String    @map("user_id") @db.Uuid
-  entityType String?   @map("entity_type")
-  entityId   String?   @map("entity_id")
-  payload    Json      @default("{}")
-  occurredAt DateTime  @default(now()) @map("occurred_at")
+  id          BigInt    @id @default(autoincrement())
+  eventType   String    @map("event_type")
+  userId      String    @map("user_id") @db.Uuid
+  entityType  String?   @map("entity_type")
+  entityId    String?   @map("entity_id")
+  payload     Json      @default("{}")
+  occurredAt  DateTime  @default(now()) @map("occurred_at")
   /// Bütün aktif olay otomasyonları bu olayı işlediğinde (ya da hiçbiri dinlemiyorsa) damgalanır.
   processedAt DateTime? @map("processed_at")
 
@@ -2393,17 +2435,17 @@ model NotificationAutomationEvent {
 /// Resmî sınav takvimi (Doc 52 §8 exam_countdown): kullanıcının kendi hedef tarihi yoksa
 /// modülünün takvim tarihi kitle tablosuna düşer. Geri sayım yalnız aktif + kesin kayıtta.
 model ExamCalendar {
-  id            String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  examTypeId    String?   @map("exam_type_id") @db.Uuid
+  id            String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  examTypeId    String?  @map("exam_type_id") @db.Uuid
   name          String
-  examDate      DateTime  @map("exam_date") @db.Date
-  countdownDays Int[]     @default([60, 30, 14, 7, 3, 1]) @map("countdown_days")
-  isConfirmed   Boolean   @default(true) @map("is_confirmed")
-  isActive      Boolean   @default(true) @map("is_active")
+  examDate      DateTime @map("exam_date") @db.Date
+  countdownDays Int[]    @default([60, 30, 14, 7, 3, 1]) @map("countdown_days")
+  isConfirmed   Boolean  @default(true) @map("is_confirmed")
+  isActive      Boolean  @default(true) @map("is_active")
   note          String?
-  createdById   String?   @map("created_by_id") @db.Uuid
-  createdAt     DateTime  @default(now()) @map("created_at")
-  updatedAt     DateTime  @updatedAt @map("updated_at")
+  createdById   String?  @map("created_by_id") @db.Uuid
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
 
   examType ExamType? @relation(fields: [examTypeId], references: [id], onDelete: SetNull)
 
