@@ -31,7 +31,7 @@ const SCALE_LABEL = ["Küçük", "Standart", "Büyük"] as const;
  * cevaplanmış soruyu salt okunur gösterir, ileri alt çubuktan. Deneme modu: süre, sayfa sayfa
  * ileri/geri, bayrak (yerel), optik form, "Bitir" onayı; cevap anahtarı yok.
  * Kurallar sunucuda: pencere, premium, hak, süre aşımı (EXAM_TIME_OVER) kodla gelir.
- * Params: resume | exam=<examId> | archiveExamId | personalExam=1 | courseTestId | mode, source, count, recipe,
+ * Params: resume | exam=<examId> | archiveExamId | personalExam=1 | courseTestId | reviewSessionId | mode, source, count, recipe,
  *   focusKind, courseId, topicId, articleNo, fromBookmarks, title.
  */
 type Phase = "loading" | "error" | "playing" | "finishing";
@@ -44,7 +44,7 @@ export default function SeansScreen() {
   const qc = useQueryClient();
   const insets = useSafeAreaInsets();
   const { colors, space } = useTheme();
-  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; articleNos?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; role?: string; questionId?: string; title?: string; courseTestId?: string }>();
+  const p = useLocalSearchParams<{ resume?: string; source?: string; count?: string; recipe?: string; focusKind?: string; courseId?: string; topicId?: string; mode?: string; articleNo?: string; articleNos?: string; fromBookmarks?: string; archiveExamId?: string; personalExam?: string; exam?: string; role?: string; questionId?: string; title?: string; courseTestId?: string; reviewSessionId?: string }>();
   const [premiumGate, setPremiumGate] = useState(false);
   const [queuedNote, setQueuedNote] = useState(false);
 
@@ -120,6 +120,7 @@ export default function SeansScreen() {
           if (p.recipe === "coach" || p.recipe === "comeback") body.recipe = p.recipe;
           if (p.questionId) body.questionId = p.questionId;
           else if (p.courseTestId) body.courseTestId = p.courseTestId;
+          else if (p.reviewSessionId) body.reviewSessionId = p.reviewSessionId;
           else if (p.archiveExamId) body.archiveExamId = p.archiveExamId;
           else if (p.personalExam === "1") body.personalExam = true;
           else if (mode !== "daily") {

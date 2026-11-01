@@ -10,6 +10,15 @@ import { CourseTestsService } from './course-tests.service';
 export class CourseTestsController {
   constructor(private readonly tests: CourseTestsService) {}
 
+  /** Test sonucu bağlamı; testten açılmamış oturumda null. */
+  @Get('course-tests/sessions/:sessionId/result')
+  result(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('sessionId', ParseUUIDPipe) sessionId: string,
+  ) {
+    return this.tests.resultContext(user.id, sessionId, user.isPremium);
+  }
+
   @Get('course-tests/:courseId')
   overview(
     @CurrentUser() user: AuthenticatedUser,

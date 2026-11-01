@@ -3,6 +3,10 @@ import {
   bolumle,
   konuSirasi,
   siradaki,
+  sonucCumlesi,
+  sonucOnceligi,
+  testeDogru,
+  yonelmeEki,
   testDurumu,
   type TestSatiri,
 } from './course-tests.logic';
@@ -108,5 +112,58 @@ describe('course-tests.logic (Doc 49/18)', () => {
     expect(siradaki(rows.slice(0, 2), true)).toMatchObject({ number: 2, sessionId: null });
     // Ücretsiz: Test 1 bitmiş, diğerleri kilitli → sıradaki yok.
     expect(siradaki(rows.slice(0, 2), false)).toBeNull();
+  });
+
+  describe('sonuç ekranı (Doc 49/18 §8)', () => {
+    const acik = { number: 4, locked: false };
+    const kilitli = { number: 2, locked: true };
+    it('öncelik: zayıf testte yanlışlar, değilse açık sıradaki, sonra yanlışlar, sonra inceleme', () => {
+      expect(sonucOnceligi({ pct: 40, wrong: 11, next: acik })).toBe('wrongs');
+      expect(sonucOnceligi({ pct: 85, wrong: 3, next: acik })).toBe('next');
+      expect(sonucOnceligi({ pct: 85, wrong: 3, next: kilitli })).toBe('wrongs');
+      expect(sonucOnceligi({ pct: 100, wrong: 0, next: null })).toBe('review');
+      // Eşik tam %50: zayıf sayılmaz.
+      expect(sonucOnceligi({ pct: 50, wrong: 10, next: acik })).toBe('next');
+    });
+    it('cümle: bir sonraki adımı söyler', () => {
+      expect(
+        sonucCumlesi({ number: 1, pct: 40, wrong: 11, next: { number: 2, locked: false } }),
+      ).toBe("Test 2'ye geçmeden önce 11 yanlışını bir tur daha çöz.");
+      expect(sonucCumlesi({ number: 3, pct: 100, wrong: 0, next: acik })).toBe(
+        'Hepsi doğru; Test 4 seni bekliyor.',
+      );
+      expect(sonucCumlesi({ number: 1, pct: 85, wrong: 3, next: kilitli })).toContain("Premium'da");
+      expect(sonucCumlesi({ number: 51, pct: 90, wrong: 2, next: null })).toContain('son testi');
+    });
+  });
+
+  it('yönelme eki okunuşa göre', () => {
+    const ekler = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 51, 74].map(
+      (n) => `${n}'${yonelmeEki(n)}`,
+    );
+    expect(ekler).toEqual([
+      "1'e",
+      "2'ye",
+      "3'e",
+      "4'e",
+      "5'e",
+      "6'ya",
+      "7'ye",
+      "8'e",
+      "9'a",
+      "10'a",
+      "20'ye",
+      "30'a",
+      "40'a",
+      "50'ye",
+      "60'a",
+      "70'e",
+      "80'e",
+      "90'a",
+      "100'e",
+      "51'e",
+      "74'e",
+    ]);
+    expect(testeDogru(4)).toBe("Test 4'e");
   });
 });

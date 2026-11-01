@@ -109,11 +109,26 @@ export interface CourseTests {
   sections: { heading: string; from: number; to: number; tests: CourseTestCard[] }[];
 }
 
+/** Test sonucu bağlamı (Doc 49/18 §8): öncelik ve cümle sunucudan; testten açılmayan turda null. */
+export interface TestResultContext {
+  kind: "course_test";
+  test: { id: string; number: number };
+  course: { id: string; name: string };
+  previousPct: number | null;
+  completedTests: number;
+  testCount: number;
+  lockedTests: number;
+  next: { testId: string; number: number; questionCount: number; locked: boolean; cta: string } | null;
+  primary: "next" | "wrongs" | "review";
+  note: string;
+}
+
 export const roomKeys = {
   all: ["rooms"] as const,
   study: ["rooms", "study"] as const,
   course: (id: string | null) => ["rooms", "course", id] as const,
   tests: (courseId: string | null) => ["rooms", "tests", courseId] as const,
+  testResult: (sessionId: string | null) => ["rooms", "test-result", sessionId] as const,
   topic: (id: string | null) => ["rooms", "topic", id] as const,
 };
 
@@ -127,6 +142,14 @@ export function useCourseRoom(courseId: string | null) {
 
 export function useCourseTests(courseId: string | null) {
   return useQuery({ queryKey: roomKeys.tests(courseId), queryFn: () => api<CourseTests>(`/me/course-tests/${courseId}`), enabled: Boolean(courseId) });
+}
+
+export function useTestResult(sessionId: string | null, enabled = true) {
+  return useQuery({
+    queryKey: roomKeys.testResult(sessionId),
+    queryFn: () => api<TestResultContext | null>(`/me/course-tests/sessions/${sessionId}/result`),
+    enabled: Boolean(sessionId) && enabled,
+  });
 }
 
 export function useTopicRoom(topicId: string | null) {

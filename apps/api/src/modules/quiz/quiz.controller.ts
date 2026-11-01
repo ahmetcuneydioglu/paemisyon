@@ -60,6 +60,12 @@ export class QuizController {
     return this.quiz.getDailyStatus(user.id);
   }
 
+  /// Cevapları incele (Doc 49/18 §8): bitmiş turun soruları, işaretlenen ve doğru şık, açıklama.
+  @Get('sessions/:id/review')
+  review(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
+    return this.quiz.reviewSession(user.id, id);
+  }
+
   @Get('sessions/:id')
   get(@CurrentUser() user: AuthenticatedUser, @Param('id', ParseUUIDPipe) id: string) {
     return this.quiz.getSession(user.id, id);

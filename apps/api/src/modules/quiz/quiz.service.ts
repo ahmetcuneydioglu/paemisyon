@@ -106,6 +106,23 @@ export class QuizService {
       return this.startSingleQuestion(userId, dto.questionId, dto.source);
     }
 
+    // Bir turun yanlışları (Doc 49/18 §8): genel kuyruk değil, yalnız o turda yanlış olanlar.
+    if (dto.reviewSessionId != null) {
+      if (
+        dto.mode !== 'review' ||
+        acikKapsam ||
+        dto.fromBookmarks ||
+        dto.listId != null ||
+        dto.courseTestId != null ||
+        dto.pool != null
+      ) {
+        throw new BadRequestException(
+          'Tur yanlışları yalnız review modunda ve başka kapsamsız açılır.',
+        );
+      }
+      return this.startSessionWrongs(user, dto.reviewSessionId, dto.source);
+    }
+
     // Ders testi (Doc 49/18): sabit set, sabit sıra; kilit kararı CourseTestsService'te.
     if (dto.courseTestId != null) {
       if (
@@ -469,6 +486,146 @@ export class QuizService {
         fromBookmarks: dto.fromBookmarks === true,
       }),
       questions,
+    };
+  }
+
+  /**
+   * Bir turun yanlışlarından tekrar turu (Doc 49/18 §8). Soru güncel sürümüyle gelir; silinen ya
+   * da iptal edilen soru düşer. Ücretsizde premium konu soruları süzülür (sızdırma yok).
+   */
+  private async startSessionWrongs(
+    user: AuthenticatedUser,
+    sourceSessionId: string,
+    source?: string,
+  ) {
+    const kaynak = await this.prisma.quizSession.findFirst({
+      where: { id: sourceSessionId, userId: user.id },
+      select: {
+        courseId: true,
+        questionOrder: true,
+        courseTest: { select: { number: true } },
+        course: { select: { name: true } },
+        topic: { select: { name: true } },
+        answers: {
+          where: { isCorrect: false },
+          select: { questionId: true, questionVersionId: true },
+        },
+      },
+    });
+    if (!kaynak) throw new NotFoundException('Oturum bulunamadı.');
+    const sira = Array.isArray(kaynak.questionOrder) ? (kaynak.questionOrder as string[]) : [];
+    const konum = new Map(sira.map((v, i) => [v, i]));
+    const yanlislar = [...kaynak.answers].sort(
+      (a, b) => (konum.get(a.questionVersionId) ?? 0) - (konum.get(b.questionVersionId) ?? 0),
+    );
+    const sorular = await this.prisma.question.findMany({
+      where: {
+        id: { in: yanlislar.map((y) => y.questionId) },
+        deletedAt: null,
+        currentVersionId: { not: null },
+        ...IPTAL_EDILMEMIS,
+        ...(user.isPremium ? {} : { topic: { isPremium: false } }),
+      },
+      select: { id: true, currentVersionId: true },
+    });
+    const byQ = new Map(sorular.map((q) => [q.id, q]));
+    const chosen = yanlislar.map((y) => byQ.get(y.questionId)).filter((q) => q != null);
+    if (chosen.length === 0) throw new NotFoundException('Bu turda tekrar edilecek yanlış yok.');
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: chosen.map((q) => q.currentVersionId!) } },
+      select: SORU_OZETI_SELECT, // is_correct/explanation YOK
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    await this.yarimTurlariKapat(user.id);
+    const session = await this.prisma.quizSession.create({
+      data: {
+        userId: user.id,
+        mode: 'review',
+        courseId: kaynak.courseId,
+        totalQuestions: chosen.length,
+        questionOrder: chosen.map((q) => q.currentVersionId!),
+        source: source ?? null,
+      },
+    });
+    const kapsam = kaynak.courseTest
+      ? `Test ${kaynak.courseTest.number}`
+      : (kaynak.topic?.name ?? kaynak.course?.name ?? 'Tur');
+    return {
+      sessionId: session.id,
+      mode: session.mode,
+      plannedDurationSeconds: null,
+      scopeName: `${kapsam} · yanlışlar`,
+      questions: chosen.map((q) => soruOzeti(byId.get(q.currentVersionId!)!, 'review')),
+    };
+  }
+
+  /**
+   * Cevapları incele (Doc 49/18 §8): bitmiş bir turun soruları turdaki sırayla — işaretlenen şık,
+   * doğru şık, açıklama. Çözülen SÜRÜM gösterilir (cevap o sürüme verildi). Deneme kendi
+   * inceleme kuralıyla yaşar (sıralama/yayın penceresi) — burada yok. Kaynak etiketi ÇIKMAZ.
+   */
+  async reviewSession(userId: string, sessionId: string) {
+    const s = await this.prisma.quizSession.findFirst({
+      where: { id: sessionId, userId },
+      select: {
+        mode: true,
+        status: true,
+        questionOrder: true,
+        answers: { select: { questionVersionId: true, selectedOptionId: true, isCorrect: true } },
+      },
+    });
+    if (!s) throw new NotFoundException('Oturum bulunamadı.');
+    if (s.mode === 'deneme') {
+      throw new BadRequestException('Deneme cevapları deneme sonuç ekranında incelenir.');
+    }
+    if (s.status !== 'completed') {
+      throw new BadRequestException('Tur bitmeden cevaplar incelenmez.');
+    }
+    const sira = Array.isArray(s.questionOrder) ? (s.questionOrder as string[]) : [];
+    const versions = await this.prisma.questionVersion.findMany({
+      where: { id: { in: sira } },
+      select: {
+        id: true,
+        questionId: true,
+        stem: true,
+        mediaUrl: true,
+        explanation: true,
+        legalReferences: { select: { citation: true }, take: 1 },
+        options: {
+          select: { id: true, label: true, text: true, isCorrect: true },
+          orderBy: { sortOrder: 'asc' },
+        },
+      },
+    });
+    const byId = new Map(versions.map((v) => [v.id, v]));
+    const cevap = new Map(s.answers.map((a) => [a.questionVersionId, a]));
+    const items = sira
+      .map((vid, i) => {
+        const v = byId.get(vid);
+        if (!v) return null;
+        const a = cevap.get(vid);
+        return {
+          index: i + 1,
+          questionId: v.questionId,
+          stem: v.stem,
+          mediaUrl: v.mediaUrl,
+          options: v.options,
+          selectedOptionId: a?.selectedOptionId ?? null,
+          /** null = boş bırakıldı. */
+          isCorrect: a?.selectedOptionId ? (a.isCorrect ?? false) : null,
+          explanation: v.explanation ?? null,
+          legalReference: v.legalReferences[0]?.citation ?? null,
+        };
+      })
+      .filter((x) => x != null);
+    return {
+      items,
+      counts: {
+        all: items.length,
+        correct: items.filter((x) => x.isCorrect === true).length,
+        wrong: items.filter((x) => x.isCorrect === false).length,
+        blank: items.filter((x) => x.isCorrect === null).length,
+      },
     };
   }
 

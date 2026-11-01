@@ -414,7 +414,7 @@ export function SessionBar(props: SessionBarProps & { bottomInset: number }) {
 
 /** Tur sonu paneli (Figma SonuçPaneli): etiket, Lora hero "8/10", "Doğruluk %80 · 4 dk 12 sn". */
 /** `hero`/`sub` verilirse rakam ve alt satır onlardan gelir (deneme sonucu: net "18,25" · "D 32 · Y 5 · B 3"). */
-export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur tamamlandı", hero, sub: subOverride }: { correct: number; total: number; pct: number | null; durationLabel: string | null; label?: string; hero?: string; sub?: string }) {
+export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur tamamlandı", hero, sub: subOverride, footer }: { correct: number; total: number; pct: number | null; durationLabel: string | null; label?: string; hero?: string; sub?: string; /** Panelin altı: önceki denemeyle kıyas rozeti gibi (Doc 49/18 §8). */ footer?: ReactNode }) {
   const { colors, radius, space, type } = useTheme();
   const { width } = useWindowDimensions();
   const heroSize = width < COMPACT_WIDTH ? 80 : 96;
@@ -434,6 +434,7 @@ export function ResultPanel({ correct, total, pct, durationLabel, label = "Tur t
           {sub}
         </AppText>
       ) : null}
+      {footer ? <View style={{ paddingTop: space.s2, flexDirection: "row" }}>{footer}</View> : null}
     </View>
   );
 }

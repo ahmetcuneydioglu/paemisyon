@@ -68,6 +68,8 @@ export interface StartSessionBody {
   personalExam?: boolean;
   /** Ders testi (Doc 49/18): sabit set; başka kapsamla verilmez. */
   courseTestId?: string;
+  /** Bir turun yanlışları (Doc 49/18 §8): yalnız review; başka kapsamla verilmez. */
+  reviewSessionId?: string;
   questionCount?: number;
 }
 
@@ -99,6 +101,24 @@ export interface SessionResult {
   earnedBadges?: { key: string; name: string }[];
 }
 
+/** Cevapları incele (Doc 49/18 §8): bitmiş turun soruları; çözülen sürüm, işaretlenen ve doğru şık. */
+export interface SessionReviewItem {
+  index: number;
+  questionId: string;
+  stem: string;
+  mediaUrl: string | null;
+  options: { id: string; label: string; text: string; isCorrect: boolean }[];
+  selectedOptionId: string | null;
+  /** null = boş bırakıldı. */
+  isCorrect: boolean | null;
+  explanation: string | null;
+  legalReference: string | null;
+}
+export interface SessionReview {
+  items: SessionReviewItem[];
+  counts: { all: number; correct: number; wrong: number; blank: number };
+}
+
 /** Seans içi araçlar (web oynatıcıyla aynı uçlar): favori, not, koç, hata bildirimi. */
 export const sessionToolsApi = {
   bookmarks: () => api<{ questionId: string }[]>("/review/bookmarks"),
@@ -110,6 +130,7 @@ export const sessionToolsApi = {
 export const quizApi = {
   start: (body: StartSessionBody) => api<QuizSession>("/quiz/sessions", { method: "POST", body }),
   resume: (sessionId: string) => api<QuizSession>(`/quiz/sessions/${sessionId}/resume`),
+  review: (sessionId: string) => api<SessionReview>(`/quiz/sessions/${sessionId}/review`),
   answer: (sessionId: string, body: { questionId: string; questionVersionId: string; selectedOptionId?: string; timeSpentMs?: number }) =>
     api<AnswerFeedback | { recorded: true }>(`/quiz/sessions/${sessionId}/answers`, { method: "POST", body }),
   complete: (sessionId: string) => api<SessionResult>(`/quiz/sessions/${sessionId}/complete`, { method: "POST" }),

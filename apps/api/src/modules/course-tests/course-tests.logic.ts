@@ -162,3 +162,82 @@ export function siradaki(rows: readonly TestSatiri[], isPremium: boolean) {
       }
     : null;
 }
+
+/**
+ * Sayının yönelme eki, okunuşuna göre: 2'ye, 3'e, 6'ya, 9'a, 10'a, 20'ye, 50'ye, 100'e.
+ * Son sıfır olmayan basamak okunuşu belirler; tam onlarda onluğun adı, tam yüz/binlerde "yüz/bin".
+ */
+export function yonelmeEki(n: number): string {
+  const birler: Record<number, string> = {
+    1: 'e',
+    2: 'ye',
+    3: 'e',
+    4: 'e',
+    5: 'e',
+    6: 'ya',
+    7: 'ye',
+    8: 'e',
+    9: 'a',
+  };
+  const onlar: Record<number, string> = {
+    1: 'a',
+    2: 'ye',
+    3: 'a',
+    4: 'a',
+    5: 'ye',
+    6: 'a',
+    7: 'e',
+    8: 'e',
+    9: 'a',
+  };
+  const m = Math.abs(Math.trunc(n));
+  if (m % 10 !== 0) return birler[m % 10]!;
+  if (m % 100 !== 0) return onlar[(m / 10) % 10]!;
+  return 'e'; // yüz, bin; sıfır ("sıfıra") testlerde geçmez
+}
+
+/** "Test 4'e" — düğme ve cümlelerde tek kaynak. */
+export const testeDogru = (n: number) => `Test ${n}'${yonelmeEki(n)}`;
+
+/** Test sonucunda "önce yanlışları çöz" eşiği (yüzde): altında sıradaki teste itilmez. */
+export const ZAYIF_TEST_ESIGI = 50;
+
+export type SonucOnceligi = 'next' | 'wrongs' | 'review';
+
+/**
+ * Test sonucu ekranının birincil eylemi (Doc 49/18 §8): zayıf geçen testte önce yanlışlar;
+ * değilse sıradaki AÇIK test; sıradaki yoksa ya da kilitliyse yanlışlar, o da yoksa inceleme.
+ */
+export function sonucOnceligi(input: {
+  pct: number;
+  wrong: number;
+  next: { locked: boolean } | null;
+}): SonucOnceligi {
+  if (input.wrong > 0 && input.pct < ZAYIF_TEST_ESIGI) return 'wrongs';
+  if (input.next && !input.next.locked) return 'next';
+  return input.wrong > 0 ? 'wrongs' : 'review';
+}
+
+/** Sonuç ekranının tek koç cümlesi — sıfat yok, bir sonraki adım var (Doc 26 §1). */
+export function sonucCumlesi(input: {
+  number: number;
+  pct: number;
+  wrong: number;
+  next: { number: number; locked: boolean } | null;
+}): string {
+  const { wrong, next } = input;
+  const sonraki = next ? `Test ${next.number}` : null;
+  if (!next)
+    return wrong > 0
+      ? `Dersin son testi buydu; ${wrong} yanlışını bir tur daha çöz.`
+      : 'Dersin son testi buydu — hepsi doğru.';
+  if (wrong > 0 && input.pct < ZAYIF_TEST_ESIGI)
+    return `${testeDogru(next.number)} geçmeden önce ${wrong} yanlışını bir tur daha çöz.`;
+  if (next.locked)
+    return wrong > 0
+      ? `${wrong} yanlışını çözerek pekiştir; ${sonraki} Premium'da.`
+      : `Hepsi doğru; ${sonraki} Premium'da.`;
+  return wrong > 0
+    ? `${wrong} yanlışına göz at; ${sonraki} seni bekliyor.`
+    : `Hepsi doğru; ${sonraki} seni bekliyor.`;
+}

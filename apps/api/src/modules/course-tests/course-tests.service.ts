@@ -8,7 +8,10 @@ import {
   bolumle,
   konuSirasi,
   siradaki,
+  sonucCumlesi,
+  sonucOnceligi,
   testDurumu,
+  testeDogru,
   UCRETSIZ_TEST_SAYISI,
   type TestSatiri,
 } from './course-tests.logic';
@@ -216,6 +219,69 @@ export class CourseTestsService {
       count: rows.length,
       completed: rows.filter((r) => r.best != null).length,
       inProgressNumber: yarim?.number ?? null,
+    };
+  }
+
+  /**
+   * Test sonucu bağlamı (`GET /me/course-tests/sessions/:sessionId/result`, Doc 49/18 §8). Testten
+   * açılmamış oturum için null — sonuç ekranı genel hâlinde kalır. Öncelik ve cümle sunucuda.
+   */
+  async resultContext(userId: string, sessionId: string, isPremium: boolean) {
+    const s = await this.prisma.quizSession.findFirst({
+      where: { id: sessionId, userId },
+      select: {
+        courseTestId: true,
+        status: true,
+        score: true,
+        wrongCount: true,
+        completedAt: true,
+        startedAt: true,
+        courseTest: {
+          select: { id: true, number: true, courseId: true, course: { select: { name: true } } },
+        },
+      },
+    });
+    if (!s) throw new NotFoundException('Oturum bulunamadı.');
+    if (!s.courseTest || s.status !== 'completed') return null;
+    const t = s.courseTest;
+    const [onceki, rows] = await Promise.all([
+      this.prisma.quizSession.findFirst({
+        where: {
+          userId,
+          courseTestId: t.id,
+          status: 'completed',
+          id: { not: sessionId },
+          startedAt: { lt: s.startedAt },
+        },
+        orderBy: { startedAt: 'desc' },
+        select: { score: true },
+      }),
+      this.satirlar(userId, t.courseId, isPremium),
+    ]);
+    const gorunur = rows.filter((r) => r.questionCount > 0);
+    const sonraki = gorunur.find((r) => r.number > t.number) ?? null;
+    const next = sonraki
+      ? {
+          testId: sonraki.id,
+          number: sonraki.number,
+          questionCount: sonraki.questionCount,
+          locked: testDurumu(sonraki, isPremium) === 'locked',
+          /** "Test 4'e geç" — ek okunuşa göre sunucuda. */
+          cta: `${testeDogru(sonraki.number)} geç`,
+        }
+      : null;
+    const pct = Math.round(Number(s.score ?? 0));
+    return {
+      kind: 'course_test' as const,
+      test: { id: t.id, number: t.number },
+      course: { id: t.courseId, name: t.course.name },
+      previousPct: onceki ? Math.round(Number(onceki.score ?? 0)) : null,
+      completedTests: gorunur.filter((r) => r.best != null).length,
+      testCount: gorunur.length,
+      lockedTests: isPremium ? 0 : gorunur.filter((r) => testDurumu(r, false) === 'locked').length,
+      next,
+      primary: sonucOnceligi({ pct, wrong: s.wrongCount, next }),
+      note: sonucCumlesi({ number: t.number, pct, wrong: s.wrongCount, next }),
     };
   }
 

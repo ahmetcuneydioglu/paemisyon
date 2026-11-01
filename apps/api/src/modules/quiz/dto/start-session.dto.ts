@@ -42,6 +42,12 @@ export class StartSessionDto {
   @IsUUID()
   courseTestId?: string;
 
+  /// Bir turun yanlışları (Doc 49/18 §8, sonuç ekranı): yalnız o turda yanlış
+  /// cevaplanan sorular, turdaki sırayla. Yalnız review; başka kapsamla verilmez.
+  @IsOptional()
+  @IsUUID()
+  reviewSessionId?: string;
+
   /// Karışım reçetesi (Doc 48 A6). 'comeback' = uzun aradan dönüşte güçlü
   /// konulardan kısa tur (Doc 24 §7.1). Yalnız kapsamsız practice; verilmezse
   /// koç karışımı.

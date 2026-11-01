@@ -1,6 +1,6 @@
 # Doc 49/18 — Testler: dersi baştan sona, 20'şer soruluk sabit setler
 
-Durum: **ONAYLI (1 Kas 2026) — uygulanıyor**
+Durum: **CANLIDA (1 Kas 2026)** — API + migration + ilk dolum; mobil telefonda Release kurulumu. Web yok.
 Figma (PaemisyonNew `91lHqxSXl25Gz585TnXqfi`, koyu): `111:385` Soru çöz seçimi, `111:471` Testler
 (premium), `111:635` Testler (ücretsiz); Test kartı bileşeni `110:405`.
 
@@ -61,3 +61,28 @@ Kullanıcı ilerlemesi için tablo yok; oturumlardan türetilir:
 1. Migration (yalnız ekleme: iki tablo + nullable kolon) — Railway deploy'u `migrate deploy` koşar.
 2. İlk dolum betiği `scripts/ders-testleri-ata.ts` (`connection_limit=1`) — canlı DB'ye yazar, **kullanıcı onayıyla**.
 3. API + Expo; telefonda Release kurulumu.
+
+## 7. Yayın notu (1 Kas 2026)
+
+- `686d9df` + `621f62c` origin/main'de; Railway `migrate deploy` ile `20261101120000_ders_testleri` uygulandı.
+- İlk dolum: 11 ders, 7.741 soru → 392 test (Anayasa 51, Polis Mevzuatı 74, Ceza 57…); ikinci koşu 0
+  soru (kararlı). 1:17 sürdü, tek bağlantı.
+- Simülatörde (canlı API, ücretsiz hesap) doğrulandı: seçim sayfası, Testler ekranı, bölümler
+  ("Anayasa · Test 1–3", "T.C. Anayasası · Test 4–48"), kilit + tek premium şeridi.
+- Doğrulanmayan: test turunun baştan sona çözülüp "tamamlandı"ya dönmesi (canlı hesapta tur açmamak
+  için yerel E2E'de oturum kaydıyla denendi); premium hesapta görünüm; web.
+
+## 8. Test sonucu ve cevap inceleme (1 Kas 2026, Figma 113:672 / 113:735 / 113:800)
+
+İlke: **geldiğin yere dön, yolculuğuna devam et.**
+- `GET /me/course-tests/sessions/:sessionId/result` → testten açılmayan turda `null`; testte önceki deneme
+  yüzdesi, ders yolculuğu (tamamlanan/test sayısı), sıradaki test (kilit + "Test 4'e geç" metni, yönelme
+  eki sunucuda), `primary` (`next` | `wrongs` | `review`; %50 altı zayıf → önce yanlışlar) ve tek koç cümlesi.
+- `POST /quiz/sessions` `reviewSessionId`: YALNIZ o turun yanlışları (genel kuyruk değil), turdaki sırayla,
+  güncel sürümle; ücretsizde premium konu süzülür.
+- `GET /quiz/sessions/:id/review`: bitmiş turun soruları — çözülen sürüm, işaretlenen ve doğru şık,
+  açıklama, mevzuat atfı. Deneme hariç; kaynak etiketi çıkmaz.
+- Expo: sonuç ekranı testte panel + "Geçen sefer %60 → %85" rozeti, D/Y/B, yolculuk çubuğu, sunucu
+  sırasıyla eylemler, kilitli sıradaki test tek premium satırı; X ve "Testlere dön" Testler'e döner.
+  Genel turda da "N yanlışını tekrar çöz" artık o turun yanlışlarıdır; "Cevapları incele" eklendi.
+  Yeni ekran `inceleme/[sessionId]` (süzgeç, açılır soru, alt eylem).

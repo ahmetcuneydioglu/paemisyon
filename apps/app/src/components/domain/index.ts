@@ -30,3 +30,4 @@ export * from "./room-sheets";
 export * from "./test-card";
 export * from "./coverage-panel";
 export * from "./upsell-strip";
+export * from "./answer-review";
