@@ -1,6 +1,50 @@
 [
  {
   "sinif": "bozuk",
+  "gerekce": "Anayasa degisikligi gorusmesi (soru fa64bb54, 'hangisi yanlistir'): isaretli B ('ilk turda gerekli oyu alamayan madde reddedilmis sayilir') Ictuzuk md 94'e gore yanlis; ancak C ('teklifin ivedilikle gorusulmesi zorunludur') da yanlis — Anayasa md 148/2 anayasa degisikliklerinin 'ivedilikle gorusulemeyecegi' sartini sekil denetimine baglar. Cift cevap. Telegram anketinde katilimcilarin %65'i C'yi isaretledi ve itiraz etti.",
+  "arsivlenen": {
+   "id": "45f932e9-e7c7-4c7e-bc05-b0e9ef6cc9fb",
+   "questionId": "fa64bb54-d4e9-4696-b86c-dd3ae4edc0c1",
+   "stem": "Anayasa değişikliği tekliflerinin görüşülmesi ile ilgili aşağıda verilen ifadelerden hangisi yanlıştır?",
+   "explanation": "TBMM İçtüzüğü madde 94, Anayasa değişikliği tekliflerinde madde kabulünü iki turlu bir sisteme bağlar: 'Birinci görüşmede gerekli çoğunlukla kabul oyu alamayan bir madde ikinci görüşmede de gerekli çoğunlukta kabul oyu alamamışsa reddedilmiş olur.' Buradaki kilit nokta, İLK TURDA başarısız olan bir maddenin henüz kesin olarak reddedilmemiş olması, ikinci görüşmede yeniden oylanma şansının bulunmasıdır. B şıkkı bunun tersini iddia ederek 'ilk turda reddedilir ve tekliften çıkarılır' dediği için metne aykırıdır ve soru 'yanlış olanı' sorduğundan doğru cevap B'dir. D şıkkı doğrudur: teklifin TÜMÜNÜN son oylaması yalnızca ikinci görüşmenin sonunda ve bir kez yapılır; bu, maddelerin ikişer kez oylanmasıyla karıştırılmamalıdır. TUZAK: öğrenciler çoğunlukla 'madde oylaması' ile 'tümünün oylaması'nı, ya da 'ilk turda ret' ile 'kesin ret'i birbirine karıştırır; iki turlu sistemde maddenin ilk tur performansı yalnızca ikinci tur için bir gösterge niteliğindedir, kesin sonuç değildir.",
+   "sourceLabel": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "Öncelikle görüşülmesine anayasal bir engel yoktur.",
+     "isCorrect": false
+    },
+    {
+     "label": "B",
+     "text": "İlk tur görüşmede gerekli kabul oyunu alamayan bir madde, reddedilmiş sayılır ve teklften çıkarılır.",
+     "isCorrect": true
+    },
+    {
+     "label": "C",
+     "text": "Teklifin ivedilikle görüşülmesi zorunludur.",
+     "isCorrect": false
+    },
+    {
+     "label": "D",
+     "text": "Son oylama ikinci tur görüşmenin sonunda ve bir kez yapılır.",
+     "isCorrect": false
+    },
+    {
+     "label": "E",
+     "text": "Teklifin hangi oranda kabul edilmiş olduğu son oylamada alınan kabul oyu sayısına göre belirlenir.",
+     "isCorrect": false
+    }
+   ],
+   "question": {
+    "articleNo": null,
+    "topic": {
+     "name": "T.C. Anayasası"
+    }
+   }
+  }
+ },
+ {
+  "sinif": "bozuk",
   "gerekce": "CMK 150 (soru 88b4187d, 'zorunlu mudafilik hallerinden biri DEGILDIR'): B sikki 'supheli veya sanigin sagir VEYA dilsiz olmasi' diyor; kanun 150/2 'sagir VE dilsiz'. Ayni Kanun md 234/2 magdur icin bilincli olarak 'sagir veya dilsiz' der — fark kapsami degistiriyor: yalniz sagir ya da yalniz dilsiz supheli 150/2'ye girmez, B de savunulabilir (cift cevap). Aciklama yalniz kaynak kitaba unite/sayfa atfi, kural ogretmiyor. Bankada lafza uygun ikiz soru var (10320c31). Iki bagimsiz curutucu ONAY. 7593 kaynakli degil.",
   "arsivlenen": {
    "id": "9f4b8ade-ec59-4553-9c36-6b936d5e4921",
