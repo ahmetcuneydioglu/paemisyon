@@ -75,8 +75,11 @@ export default function TestlerScreen() {
                   </View>
                   {Array.from({ length: Math.ceil(s.tests.length / cols) }, (_, r) => s.tests.slice(r * cols, r * cols + cols)).map((row, i) => (
                     <View key={i} style={{ flexDirection: "row", gap: space.s3 }}>
+                      {/* Her kart eşit sütunda: tek kalan kart komşusundan geniş çizilmesin. */}
                       {row.map((t) => (
-                        <TestCard key={t.id} number={t.number} state={t.state} questionCount={t.questionCount} pct={t.pct} answered={t.answered} onPress={() => dokun(t)} />
+                        <View key={t.id} style={{ flex: 1 }}>
+                          <TestCard number={t.number} state={t.state} questionCount={t.questionCount} pct={t.pct} answered={t.answered} onPress={() => dokun(t)} />
+                        </View>
                       ))}
                       {Array.from({ length: cols - row.length }, (_, k) => (
                         <View key={`bos-${k}`} style={{ flex: 1 }} />
