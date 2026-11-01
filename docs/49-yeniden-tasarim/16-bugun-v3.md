@@ -223,3 +223,23 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   bugün yanlış turlarında çözülen soruyla (`home.reviewAnsweredToday`, `quizAnswer.count` review
   oturumları). Hedef dolduğunda Sıradaki rotanın ilk bitmemiş adımına düşer: yanlış porsiyonu →
   Günün Quizi → okunmamış özet → "Bugünlük tamam". Spec 12, coach suite yeşil.
+- **Web /bugun aynı iskelet (1 Kas 2026, §6 adım 3):** F9-D yerleşimi (CountdownHero + WeekStrip7 +
+  görev kartı + PlanShiftList + koç kartları + sağ sütun özet) Expo ile aynı beş bloğa indirildi:
+  `ExamContextLine` → `NextStepCard` (tek birincil düğme) → `RouteList` (numaralı daire + bağ
+  çizgisi, tamamlananda success tik + üstü çizili, "~dk", alt satır bugünün sayımı → /performans,
+  "Planım ›") → `ForYouList` (≤4, altın hap) → `WeekSummaryLine` (dar ekranda akışın sonunda,
+  genişte sağ sütunun başında; sağ sütunda rozet/rütbe/rekorlar/premium kaldı). Bileşenler
+  `apps/web/src/components/bugun/` altında, Expo kitiyle aynı adlar; galeride "Bugün v3" bölümü.
+  Eylem → adres çevirisi tek yerde: `lib/home-actions.ts` `homeActionHref` (open_summary → /ozet/<slug>,
+  open_exams → /denemeler/<id>/baslamadan-once, resume → /seans?resume=, start → /seans?… — yanlış
+  odağı `mode=review`, favoriler `mode=favorites`, ünite `articleNos`, `scope` etiketi); vitest 4
+  senaryo. `public-api.ts`'e `TodayTaskAction/TodayTask/HomeV3` tipleri eklendi; eski sunucuda
+  `homeV3` yoksa `todayTask`'a, o da yoksa koç kartı + `primaryAction`'a düşer. Kaldırılanlar:
+  FocusPicker (odak seçimi Kütüphane'de), GoalProgress (sayım satırı yerine geçti), haftalık
+  fotoğraf kartı, koç kartı ızgarası (duyuru `Notice` olarak kaldı), /quiz/active-session isteği
+  (`nextStep.resume` karşılıyor). Doğrulama: :3012 (web-f7 tarifi, prod API) geçici hesapla 1280 ve
+  375 px, koyu/açık; tsc 0, eslint 0, tokens-check 0, vitest 121/121. 375'te sayım satırı
+  kesiliyordu ("hedef 20 sor") → `truncate` kaldırıldı, satır kırılır. Galeri rotası beta/admin
+  rolü istediğinden geçici hesapla görülemedi; bileşenler /bugun'da canlı veriyle görüldü. Not:
+  aynı anda üst şerit "Canlı deneme sürüyor" derken Sıradaki "Deneme bugün 21:00" diyor — /exams
+  `state` ile koçun `exams.todayUpcoming` penceresi farklı; sunucu tarafı, ayrı bakılacak.

@@ -31,6 +31,11 @@ import {
   type TextVariant,
 } from "@/components/ui";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ExamContextLine } from "@/components/bugun/exam-context-line";
+import { ForYouList } from "@/components/bugun/for-you-list";
+import { NextStepCard } from "@/components/bugun/next-step-card";
+import { RouteList } from "@/components/bugun/route-list";
+import { WeekSummaryLine } from "@/components/bugun/week-summary-line";
 import {
   FeedbackPanel,
   QuestionMetaRow,
@@ -412,6 +417,119 @@ export function Galeri() {
           durationLabel="4 dk 12 sn"
         />
         <ToolRow actions={seansAraclari} onPanel={false} />
+      </Bolum>
+
+      <Bolum
+        title="Bugün v3 (Doc 49/16)"
+        note="Bağlam satırı, Sıradaki (tek birincil), numaralı ve tikli rota + bugünün sayımı, Senin için, Bu hafta. Expo kitiyle aynı adlar."
+      >
+        <ExamContextLine
+          daysLeft={184}
+          examName="PAEM 2027"
+          activeDays={3}
+          goalDays={5}
+          days={["done", "done", "missed", "done", "today", "future", "future"]}
+        />
+        <ExamContextLine
+          daysLeft={null}
+          examName={null}
+          activeDays={0}
+          goalDays={5}
+          days={[
+            "today",
+            "future",
+            "future",
+            "future",
+            "future",
+            "future",
+            "future",
+          ]}
+        />
+        <NextStepCard
+          eyebrow="Anayasa · Yürütme"
+          title="4 dk özet, sonra 10 soru"
+          reason="En zayıf konun; özetten sonra soruların doğruluğu %20 artıyor."
+          badge="%42 · en zayıf"
+          ctaLabel="Başla"
+          href="#"
+          secondary={{ label: "Şimdilik bitir, sonucu gör", href: "#" }}
+        />
+        <RouteList
+          rows={[
+            {
+              key: "1",
+              label: "Günün sorusu",
+              detail: "doğru",
+              estimateMin: 1,
+              done: true,
+              href: "#",
+            },
+            {
+              key: "2",
+              label: "Yürütme özeti",
+              detail: "Anayasa",
+              estimateMin: 4,
+              done: false,
+              href: "#",
+            },
+            {
+              key: "3",
+              label: "Yürütme · 10 soru",
+              detail: "4/10",
+              estimateMin: 3,
+              done: false,
+              href: "#",
+            },
+            {
+              key: "4",
+              label: "Yanlış tekrarı · 20 soru",
+              detail: "12/20 · 881 kuyrukta",
+              estimateMin: 7,
+              done: false,
+              href: "#",
+            },
+            {
+              key: "5",
+              label: "Haftalık deneme",
+              detail: "Paz 20:00",
+              estimateMin: null,
+              done: false,
+              href: null,
+            },
+          ]}
+          footer="Bugün 110 soru · %28 doğru · hedef 20 ✓"
+          footerHref="#"
+          planHref="#"
+        />
+        <ForYouList
+          rows={[
+            {
+              key: "w",
+              label: "Yanlış kuyruğu · 881 soru",
+              ctaLabel: "Çöz",
+              href: "#",
+            },
+            {
+              key: "f",
+              label: "Favorilerim · 12 soru",
+              ctaLabel: "Tekrar et",
+              href: "#",
+            },
+            {
+              key: "t",
+              label: "Temel hak ve ödevler · %38",
+              ctaLabel: "10 soru",
+              href: "#",
+            },
+            {
+              key: "e",
+              label: "Haftalık deneme · Paz 20:00",
+              ctaLabel: "Hatırlat",
+              href: "#",
+            },
+          ]}
+        />
+        <WeekSummaryLine left="312 soru · 3/5 gün" right="Komiser Yardımcısı" />
       </Bolum>
 
       <Bolum

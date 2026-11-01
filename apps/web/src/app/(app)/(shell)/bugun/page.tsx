@@ -1,40 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Medal, Pause, Trophy } from "lucide-react";
+import { Medal } from "lucide-react";
 import { api } from "@/lib/api";
-import {
-  activeSessionHref,
-  type ActiveSession,
-  type CoachBrief,
-} from "@/lib/public-api";
+import type { CoachBrief, WeekDayState } from "@/lib/public-api";
 import type { ExamListItem } from "@/lib/types";
-import { Countdown } from "@/components/countdown";
-import { formatDate, formatTime } from "@/lib/format";
+import { homeActionHref } from "@/lib/home-actions";
 import { webRoute } from "@/lib/routes";
-import { cn } from "@/lib/cn";
 import { Card } from "@/components/ui/card";
-import { CoachCard } from "@/components/ui/coach-card";
-import { GoalProgress } from "@/components/ui/goal-progress";
+import { Notice } from "@/components/ui/notice";
 import { ProgressBar } from "@/components/ui/progress";
-import { ButtonLink } from "@/components/ui/button";
 import { StoreBadges } from "@/components/store-badges";
 import { StreakBadge } from "@/components/ui/streak-badge";
-import { FocusPicker } from "@/components/bugun/focus-picker";
 import { ExamBanner, bannerExam } from "@/components/exam-banner";
 import { PushOptIn } from "@/components/push-opt-in";
-import { PlanShiftList } from "@/components/plan/plan-shift-list";
-import { CountdownHero } from "@/components/bugun/countdown-hero";
-import { WeekStrip7 } from "@/components/bugun/week-strip7";
-import { HeroCollapse } from "@/components/bugun/hero-collapse";
-import type { WeekDayState } from "@/lib/public-api";
+import { ExamContextLine } from "@/components/bugun/exam-context-line";
+import { NextStepCard } from "@/components/bugun/next-step-card";
+import { RouteList } from "@/components/bugun/route-list";
+import { ForYouList } from "@/components/bugun/for-you-list";
+import { WeekSummaryLine } from "@/components/bugun/week-summary-line";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
 
 /**
- * Bugün — girişli ana sayfa (Doc 27 §3.2). Sahne koçundur: hero = durum
- * makinesinin kartı (/me/coach), yanı günün özeti. Koç rayı burada YOK.
- * Görünüm v3 "Nöbet" (Doc 49/11 W-D): tek vurgu, rozet/ikon eşlikli durum.
+ * Bugün v3 (Doc 49/16) — "tek adım" ana sayfa; Expo `(tabs)/index.tsx` ile aynı iskelet.
+ * Beş blok: bağlam satırı → Sıradaki (tek birincil düğme) → Bugünün rotası (2–6, numaralı,
+ * tikli) → Senin için (≤4) → Bu hafta. Karar SUNUCUDA (`homeV3`); eski sunucuda `todayTask`'a,
+ * o da yoksa koç kartına düşer. Geniş ekranda sağ sütun salt okunur özet (hafta, rozet, rütbe,
+ * rekorlar); dar ekranda tek sütun, mobil sırayla.
  */
 
 /** Eski sunucu `weekly.days` vermiyorsa aktif gün sayısından türetilen çizelge (TR takvimi, Pzt=0). */
@@ -42,42 +35,43 @@ function yedekGunler(activeDays: number): WeekDayState[] {
   const tr = new Date(Date.now() + 3 * 3600 * 1000 - 4 * 3600 * 1000);
   const today = (tr.getUTCDay() + 6) % 7;
   return Array.from({ length: 7 }, (_, i) =>
-    i < activeDays
-      ? "done"
-      : i === today
-        ? "today"
-        : i < today
-          ? "missed"
-          : "future",
+    i === today
+      ? "today"
+      : i < today
+        ? i < activeDays
+          ? "done"
+          : "missed"
+        : "future",
   );
 }
-function tarihEtiketi(iso: string | null | undefined): string | null {
-  if (!iso) return null;
-  const d = new Date(`${iso}T00:00:00Z`);
-  return Number.isNaN(d.getTime())
-    ? null
-    : d.toLocaleDateString("tr-TR", {
-        day: "numeric",
-        month: "long",
-        timeZone: "UTC",
-      });
+
+function selam(): string {
+  const saat = Number(
+    new Date()
+      .toLocaleString("tr-TR", {
+        hour: "2-digit",
+        hour12: false,
+        timeZone: "Europe/Istanbul",
+      })
+      .slice(0, 2),
+  );
+  if (saat < 6) return "İyi geceler";
+  if (saat < 12) return "Günaydın";
+  if (saat < 18) return "İyi günler";
+  return "İyi akşamlar";
 }
 
 export default async function BugunPage() {
-  const [brief, exams, active] = await Promise.all([
+  const [brief, exams] = await Promise.all([
     api<CoachBrief>("/me/coach"),
     api<ExamListItem[]>("/exams", {
       auth: false,
       next: { revalidate: 30 },
     }).catch(() => [] as ExamListItem[]),
-    api<ActiveSession | null>("/quiz/active-session").catch(() => null),
   ]);
-  const { today, gamification, greeting, exam } = brief;
-  // Plan kartları kendi bileşeniyle çizilir (PlanWeekCard); koç listesine girmez.
-  const planOffer = brief.cards.some((c) => c.type === "plan_offer");
-  const [hero, ...cards] = brief.cards.filter(
-    (c) => c.type !== "plan_week" && c.type !== "plan_offer",
-  );
+  const { today, gamification, greeting } = brief;
+  const v3 = brief.homeV3 ?? null;
+  const task = brief.todayTask ?? null;
   const rank = gamification.rank;
   const rankPct =
     rank?.next != null
@@ -90,11 +84,91 @@ export default async function BugunPage() {
           ),
         )
       : 100;
-  const nextExam = [...exams]
-    .filter((e) => e.state === "upcoming")
-    .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
-  const liveExam = exams.find((e) => e.state === "active");
   const serit = bannerExam(exams);
+  const announcement =
+    brief.cards.find((c) => c.type === "announcement") ?? null;
+  const days =
+    gamification.weekly.days ?? yedekGunler(gamification.weekly.activeDays);
+
+  // Sıradaki: v3 varsa sunucunun adımı; yoksa Doc 48 görevi; o da yoksa koç kartı + birincil eylem.
+  const hero = brief.cards.find(
+    (c) => c.type !== "plan_week" && c.type !== "plan_offer",
+  );
+  const next = v3?.nextStep
+    ? {
+        eyebrow: v3.nextStep.eyebrow,
+        title: v3.nextStep.title,
+        reason: v3.nextStep.reason,
+        badge: v3.nextStep.badge,
+        ctaLabel:
+          v3.nextStep.action.type === "resume_session"
+            ? "Devam et"
+            : v3.nextStep.kind === "done"
+              ? v3.nextStep.action.label
+              : "Başla",
+        href: homeActionHref(v3.nextStep.action),
+      }
+    : task
+      ? {
+          eyebrow: "Sıradaki",
+          title: task.title,
+          reason: task.reason,
+          badge: null,
+          ctaLabel:
+            task.action.type === "resume_session" ? "Devam et" : "Başla",
+          href: homeActionHref(task.action),
+        }
+      : {
+          eyebrow: "Sıradaki",
+          title: hero?.title ?? "Bugün senin için bir tur hazır.",
+          reason:
+            hero?.body ??
+            "Koç karışımı: zayıf konuların ve tekrar sırası gelenler.",
+          badge: null,
+          ctaLabel: brief.primaryAction.label || "Başla",
+          href: webRoute(brief.primaryAction.route),
+        };
+  const secondary =
+    task?.kind === "resume" && task.finishSessionId
+      ? {
+          label: "Şimdilik bitir, sonucu gör",
+          href: `/sonuc/${task.finishSessionId}`,
+        }
+      : null;
+
+  const rota = (v3?.route ?? []).map((r) => ({
+    key: r.key,
+    label: r.label,
+    detail: r.detail,
+    estimateMin: r.estimateMin ?? null,
+    done: r.done,
+    href: r.action ? homeActionHref(r.action) : null,
+  }));
+  // Bugünün sayımı (kullanıcı kararı 31 Eki): rota alt satırı, kart değil. Sıfırda dürüst metin.
+  const t = v3?.today;
+  const bugunSatiri = t
+    ? t.answered === 0
+      ? `Bugün henüz başlamadın · hedef ${t.goal} soru`
+      : `Bugün ${t.answered} soru${
+          t.accuracyPct != null ? ` · %${t.accuracyPct} doğru` : ""
+        } · hedef ${t.goal}${t.answered >= t.goal ? " ✓" : ""}`
+    : today.answered === 0
+      ? `Bugün henüz başlamadın · hedef ${today.goal} soru`
+      : `Bugün ${today.answered} soru · hedef ${today.goal}${
+          today.answered >= today.goal ? " ✓" : ""
+        }`;
+  const seninIcin = (v3?.forYou ?? []).map((f, i) => ({
+    key: `${f.kind}:${i}`,
+    label: f.label,
+    ctaLabel: f.ctaLabel,
+    href: homeActionHref(f.action),
+  }));
+  const haftaSatiri = v3?.week
+    ? {
+        left: `${v3.week.solved} soru · ${v3.week.activeDays}/${v3.week.goalDays} gün`,
+        right: v3.week.rankName,
+      }
+    : null;
   const sectionLabel = "type-label text-ink-subtle";
 
   return (
@@ -102,7 +176,7 @@ export default async function BugunPage() {
       {serit && <ExamBanner exam={serit} />}
       <PushOptIn />
 
-      <div className="mb-6 flex flex-col gap-1">
+      <div className="mb-5 flex flex-col gap-1">
         <div className="flex flex-nowrap items-baseline justify-between gap-3">
           <span className="type-brand text-ink">paemisyon</span>
           <div className="flex items-center gap-3">
@@ -113,155 +187,97 @@ export default async function BugunPage() {
             />
           </div>
         </div>
-        <h1 className="type-brand font-normal text-ink">
+        <h1 className="type-body-sm text-ink-soft">
           {greeting.displayName
-            ? `Merhaba, ${greeting.displayName}`
-            : "Merhaba"}
+            ? `${selam()}, ${greeting.displayName}`
+            : selam()}
         </h1>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-3">
-        {/* Sol sahne (8 kolon): hero + destek kartları + nöbet çizelgesi */}
+        {/* Sol sahne: beş blok, mobil sırayla. */}
         <div className="flex flex-col gap-5 lg:col-span-2">
-          {/* v4 "Nöbet defteri" (Doc 49/13 §2): afiş → çizelge → hedef → görev → plan. */}
-          <HeroCollapse
-            label={
-              exam?.daysLeft != null
-                ? `${exam.daysLeft} gün${exam.name ? ` · ${exam.name}` : ""}`
-                : "Bugün"
-            }
-          >
-            <CountdownHero
-              examName={exam?.name ?? null}
-              examDateLabel={tarihEtiketi(exam?.date)}
-              daysLeft={exam?.daysLeft ?? brief.daysToExam ?? null}
-              activeDays={gamification.weekly.activeDays}
-              goalDays={gamification.weekly.goalDays}
-            />
-          </HeroCollapse>
-
-          <WeekStrip7
-            days={
-              gamification.weekly.days ??
-              yedekGunler(gamification.weekly.activeDays)
-            }
-          />
-
-          <p className="type-body-sm flex items-center gap-3 text-ink-soft">
-            <span aria-hidden className="h-5 w-0.5 bg-accent" />
-            Bugünkü hedef {Math.min(today.answered, today.goal)}/{today.goal}{" "}
-            soru
-          </p>
-
-          <Card className="flex flex-col gap-3 p-6">
-            <span className="type-label text-accent-ink">
-              {hero?.title ? "Bugünün görevi" : "Koç"}
-            </span>
-            <p className="type-title text-ink">
-              {hero?.title ?? "Bugün senin için bir tur hazır."}
-            </p>
-            {hero?.body ? (
-              <p className="type-body-sm text-ink-soft">{hero.body}</p>
-            ) : null}
-            <div className="mt-1 flex flex-wrap items-center gap-3">
-              <ButtonLink href={webRoute(brief.primaryAction.route)} size="lg">
-                {brief.primaryAction.label || "Bugün Çalış"}
-              </ButtonLink>
-              <FocusPicker />
-            </div>
-          </Card>
-
-          {/* Haftalık plan (Doc 49/12 F8-A) — vardiya listesi; dönüş gününde gizli. */}
-          {hero?.type !== "comeback" ? (
-            <PlanShiftList plan={brief.plan} offer={planOffer} />
+          {announcement ? (
+            <Notice
+              title={announcement.title}
+              action={
+                announcement.cta ? (
+                  <Link
+                    href={webRoute(
+                      announcement.cta.route,
+                      announcement.type,
+                      announcement.meta,
+                    )}
+                    className="type-subhead text-accent-ink hover:underline"
+                  >
+                    {announcement.cta.label} ›
+                  </Link>
+                ) : null
+              }
+            >
+              {announcement.body}
+            </Notice>
           ) : null}
 
-          {cards.length > 0 ? (
-            <div className="grid gap-3 sm:grid-cols-2">
-              {cards.map((c) => (
-                <CoachCard
-                  key={c.type + c.title}
-                  type={c.type}
-                  title={c.title}
-                  body={c.body}
-                  cta={c.cta}
-                  meta={c.meta}
-                  routeMapper={webRoute}
-                />
-              ))}
+          {/* 1) Bağlam satırı: geri sayım küçük ama görünür (karar 1) + hafta çizelgesi. */}
+          <ExamContextLine
+            daysLeft={brief.exam?.daysLeft ?? brief.daysToExam ?? null}
+            examName={brief.exam?.name ?? null}
+            activeDays={gamification.weekly.activeDays}
+            goalDays={gamification.weekly.goalDays}
+            days={days}
+          />
+
+          {/* 2) Sıradaki — sayfanın tek birincil düğmesi. */}
+          <NextStepCard
+            eyebrow={next.eyebrow}
+            title={next.title}
+            reason={next.reason}
+            badge={next.badge}
+            ctaLabel={next.ctaLabel}
+            href={next.href}
+            secondary={secondary}
+          />
+
+          {/* 3) Bugünün rotası (2–6 madde, sayı koçun). */}
+          {rota.length > 0 ? (
+            <RouteList
+              rows={rota}
+              footer={bugunSatiri}
+              footerHref="/performans"
+              planHref={brief.plan ? "/planim" : "/planim?kur=1"}
+            />
+          ) : null}
+
+          {/* 4) Senin için (≤4). */}
+          <ForYouList rows={seninIcin} />
+
+          {/* 5) Bu hafta — dar ekranda akışın sonunda; genişte sağ sütunun başında. */}
+          {haftaSatiri ? (
+            <div className="lg:hidden">
+              <WeekSummaryLine
+                left={haftaSatiri.left}
+                right={haftaSatiri.right}
+              />
             </div>
           ) : null}
         </div>
 
-        {/* Sağ kolon (4 kolon): günün özeti — salt okunur */}
+        {/* Sağ sütun (geniş ekran): salt okunur özet. */}
         <div className="flex flex-col gap-3">
-          <Card>
-            <GoalProgress answered={today.answered} goal={today.goal} />
-          </Card>
-
-          {active ? (
-            <Card className="flex flex-col gap-1 border-warning/40">
-              <span className="type-label inline-flex items-center gap-1.5 text-warning-ink">
-                <Pause size={12} aria-hidden /> Devam eden tur
-              </span>
-              <p className="type-body-sm tabular text-ink-soft">
-                {active.scopeName ??
-                  (active.mode === "review"
-                    ? "Yanlış tekrarı"
-                    : "Koç turu")}{" "}
-                · {active.answeredCount}/{active.totalQuestions} soruda kaldın
-              </p>
-              {active.resumable ? (
-                <Link
-                  href={activeSessionHref(active)}
-                  className="type-subhead mt-1 inline-flex items-center gap-1 text-accent-ink hover:underline"
-                >
-                  Kaldığın yerden devam et <ArrowRight size={14} aria-hidden />
-                </Link>
-              ) : (
-                <p className="type-body-sm text-ink-subtle">
-                  Eski sürümden yarım oturum — yeni tur başlatman yeterli.
-                </p>
-              )}
-            </Card>
-          ) : null}
-
-          {brief.weeklyPhoto && brief.weeklyPhoto.length > 0 ? (
-            <Card className="flex flex-col gap-2">
-              <span className={sectionLabel}>Haftalık fotoğraf</span>
-              <ul className="flex flex-col gap-1.5">
-                {brief.weeklyPhoto.slice(0, 4).map((c) => (
-                  <li
-                    key={c.courseName}
-                    className="flex items-center justify-between gap-2"
-                  >
-                    <span className="type-body-sm min-w-0 truncate text-ink-soft">
-                      {c.courseName}
-                    </span>
-                    <span
-                      className={cn(
-                        "type-subhead tabular shrink-0",
-                        c.deltaPct > 0 ? "text-success-ink" : "text-danger-ink",
-                      )}
-                    >
-                      %{Math.abs(c.deltaPct)} {c.deltaPct > 0 ? "↑" : "↓"}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/performans/konu-haritasi"
-                className="type-body-sm inline-flex items-center gap-1 text-accent-ink hover:underline"
-              >
-                Konu haritasında incele <ArrowRight size={14} aria-hidden />
-              </Link>
-            </Card>
+          {haftaSatiri ? (
+            <div className="hidden lg:block">
+              <WeekSummaryLine
+                left={haftaSatiri.left}
+                right={haftaSatiri.right}
+              />
+            </div>
           ) : null}
 
           {gamification.nextBadge ? (
             <Card className="flex flex-col gap-2">
               <span
-                className={cn(sectionLabel, "inline-flex items-center gap-1.5")}
+                className={`${sectionLabel} inline-flex items-center gap-1.5`}
               >
                 <Medal size={12} aria-hidden /> Sıradaki rozet
               </span>
@@ -283,55 +299,6 @@ export default async function BugunPage() {
             </Card>
           ) : null}
 
-          {(liveExam || nextExam) &&
-          serit?.id !== (liveExam ?? nextExam)?.id ? (
-            <Card
-              className={cn(
-                "flex flex-col gap-1",
-                liveExam && "border-success/40",
-              )}
-            >
-              <span
-                className={cn(
-                  sectionLabel,
-                  "inline-flex items-center gap-1.5",
-                  liveExam && "text-success-ink",
-                )}
-              >
-                {liveExam ? (
-                  <span
-                    aria-hidden
-                    className="inline-block size-2 rounded-full bg-success motion-safe:animate-pulse"
-                  />
-                ) : (
-                  <Trophy size={12} aria-hidden />
-                )}
-                {liveExam ? "Canlı deneme sürüyor" : "Sıradaki canlı deneme"}
-              </span>
-              {liveExam ? (
-                <>
-                  <p className="type-body-sm text-ink-soft">{liveExam.title}</p>
-                  <Link
-                    href="/denemeler"
-                    className="type-subhead mt-1 inline-flex items-center gap-1 text-success-ink hover:underline"
-                  >
-                    Hemen katıl <ArrowRight size={14} aria-hidden />
-                  </Link>
-                </>
-              ) : nextExam ? (
-                <>
-                  <p className="type-body-sm text-ink-soft">
-                    {nextExam.title} · {formatDate(nextExam.startAt)}{" "}
-                    {formatTime(nextExam.startAt)}
-                  </p>
-                  <div className="type-subhead mt-1 text-ink">
-                    <Countdown target={nextExam.startAt} />
-                  </div>
-                </>
-              ) : null}
-            </Card>
-          ) : null}
-
           {rank ? (
             <Card className="flex flex-col gap-2">
               <span className={sectionLabel}>Rütbe</span>
@@ -348,16 +315,11 @@ export default async function BugunPage() {
                 height={4}
                 label="Rütbe ilerlemesi"
               />
-              {rank.next ? (
-                <p className="type-body-sm text-ink-subtle">
-                  {rank.next.name} rütbesine{" "}
-                  {Math.max(0, rank.next.minScore - rank.score)} puan
-                </p>
-              ) : (
-                <p className="type-body-sm text-ink-subtle">
-                  En yüksek rütbedesin.
-                </p>
-              )}
+              <p className="type-body-sm text-ink-subtle">
+                {rank.next
+                  ? `${rank.next.name} rütbesine ${Math.max(0, rank.next.minScore - rank.score)} puan`
+                  : "En yüksek rütbedesin."}
+              </p>
             </Card>
           ) : null}
 
@@ -365,10 +327,6 @@ export default async function BugunPage() {
             <span className={sectionLabel}>Rekorların</span>
             <dl className="type-body-sm tabular flex flex-col gap-1.5 text-ink-soft">
               {[
-                [
-                  "Bu hafta",
-                  `${gamification.weekly.activeDays}/${gamification.weekly.goalDays} aktif gün`,
-                ],
                 ["En iyi net", gamification.records.bestNet ?? "—"],
                 ["En uzun seri", `${gamification.records.longestStreak} gün`],
                 [

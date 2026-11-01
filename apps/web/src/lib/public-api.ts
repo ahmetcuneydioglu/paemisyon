@@ -1,5 +1,8 @@
 import { config } from "./config";
-import type { PublicArticleSummary, PublicArticleSummaryBrief } from "@/lib/ozet";
+import type {
+  PublicArticleSummary,
+  PublicArticleSummaryBrief,
+} from "@/lib/ozet";
 
 /**
  * Public (auth'suz) API çağrısı — SEO katmanı (Doc 23). ISR ile önbelleklenir:
@@ -477,6 +480,113 @@ export interface CoachBrief {
   weeklyPhoto?: { courseName: string; deltaPct: number }[];
   /** Haftalık plan özeti (Doc 49/12 F8-A); plan yoksa null, eski sunucuda alan yok. */
   plan?: PlanBrief | null;
+  /** Günün görevi (Doc 48); eski sunucuda alan yok. */
+  todayTask?: TodayTask | null;
+  /** Bugün v3 (Doc 49/16): sıradaki, rota, senin için, hafta, bugün. */
+  homeV3?: HomeV3 | null;
+}
+
+// ── Bugün v3 (Doc 49/16) — /me/coach `todayTask` + `homeV3`; karar sunucuda, web yalnız çizer ──
+export type HomeSource =
+  | "home_task"
+  | "home_next"
+  | "home_route"
+  | "home_for_you"
+  | "home_weak_topic"
+  | string;
+
+/** Sunucunun verdiği eylem; `homeActionHref` web adresine çevirir (Doc 48: istemci kural bilmez). */
+export interface TodayTaskAction {
+  type: "start_session" | "resume_session" | "open_exams" | "open_summary";
+  label: string;
+  count?: number;
+  recipe?: "coach" | "comeback";
+  focus?: {
+    kind: "coach" | "course" | "topic" | "wrongs";
+    courseId?: string;
+    topicId?: string;
+    label?: string;
+  };
+  /** Ünite reçetesi: yalnız bu maddelerin soruları (Doc 53 F5-2). */
+  articleNos?: string[];
+  /** Favorilerden tur ("Senin için"). */
+  fromBookmarks?: boolean;
+  sessionId?: string;
+  /** open_summary → /ozet/<slug>; open_exams → /denemeler[/<id>]. */
+  route?: string;
+  source: HomeSource;
+}
+
+export interface TodayTask {
+  kind: "exam" | "resume" | "fresh" | "comeback" | "done" | string;
+  title: string;
+  reason: string;
+  progress: { label: string; answered: number; total: number } | null;
+  action: TodayTaskAction;
+  finishSessionId: string | null;
+}
+
+export type NextStepKind =
+  | "exam"
+  | "resume"
+  | "summary_then_questions"
+  | "questions"
+  | "review"
+  | "done";
+export interface NextStep {
+  kind: NextStepKind;
+  eyebrow: string;
+  title: string;
+  reason: string;
+  badge: string | null;
+  estimateMin: number | null;
+  action: TodayTaskAction;
+}
+export type RouteItemKind =
+  | "daily"
+  | "summary"
+  | "questions"
+  | "review"
+  | "exam"
+  | "plan_topic"
+  | "plan_review"
+  | "plan_mock";
+export interface RouteItem {
+  key: string;
+  kind: RouteItemKind;
+  label: string;
+  detail: string | null;
+  estimateMin?: number | null;
+  done: boolean;
+  action: TodayTaskAction | null;
+}
+export type ForYouKind =
+  "wrongs" | "favorites" | "weak_topic" | "exam" | "mixed";
+export interface ForYouItem {
+  kind: ForYouKind;
+  label: string;
+  ctaLabel: string;
+  action: TodayTaskAction;
+}
+export interface WeekSummary {
+  solved: number;
+  activeDays: number;
+  goalDays: number;
+  rankName: string;
+}
+export interface TodaySummary {
+  answered: number;
+  correct: number;
+  accuracyPct: number | null;
+  goal: number;
+}
+export interface HomeV3 {
+  nextStep: NextStep;
+  route: RouteItem[];
+  forYou: ForYouItem[];
+  /** Eski sunucuda yok. */
+  week?: WeekSummary;
+  today?: TodaySummary;
 }
 
 // ── Haftalık plan (Doc 49/12 F8-A; API: plan.service.ts) — karar sunucuda ──
