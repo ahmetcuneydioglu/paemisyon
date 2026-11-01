@@ -183,6 +183,23 @@
         "cd /Users/ahmetcnd/Developer/paemisyon-worktrees/a0-guven-onarimi/apps/web && NEXT_PUBLIC_API_BASE_URL=https://api.paemisyon.com/api/v1 API_BASE_URL=https://api.paemisyon.com/api/v1 exec ./node_modules/.bin/next dev --webpack -p 3012"
       ],
       "port": 3012
+    },
+    {
+      "name": "web-calis-v2",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_API_BASE_URL=http://localhost:3020/api/v1",
+        "API_BASE_URL=http://localhost:3020/api/v1",
+        "npm",
+        "run",
+        "dev",
+        "--",
+        "--webpack",
+        "-p",
+        "3016"
+      ],
+      "cwd": "apps/web",
+      "port": 3016
     }
   ]
 }
