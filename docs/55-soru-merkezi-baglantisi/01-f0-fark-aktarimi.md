@@ -1,6 +1,6 @@
 # Doc 55 / F0 — PAEMİSYON fark aktarımı (merkez tarafı): kuru koşu
 
-Tarih: 2 Kasım 2026. Durum: **kuru koşu tamam, gerçek koşu onay bekliyor.**
+Tarih: 2 Kasım 2026. Durum: **gerçek koşu yerel merkeze yazıldı (2 Kas, aktarım kaydı c8d85e05); bağlar (`--links`) uygulanmadı.**
 Betik: `~/Developer/soru-merkezi/scripts/import/paemisyon-fark.mjs` (yeni; `extract.mjs`'e `question_articles` tablosu eklendi). Ham rapor: [02-f0-kuru-kosu-raporu.md](02-f0-kuru-kosu-raporu.md).
 
 ## 1. Soru: 1 Ekim'den beri PAEMİSYON'da ne değişti?
@@ -59,13 +59,13 @@ Kuru koşuda `product_subscriptions`'a yazılıp geri alındı: **81 konu + 67 m
 
 Merkez şu an `save_product_subscription` için insan hesabı + `products.manage` ister; aktarım `load.mjs` gibi servis rolüyle doğrudan yazar (düğüm doğrulaması tetikleyicide çalışır).
 
-## 5. Gerçek koşu (onay bekliyor)
+## 5. Gerçek koşu — YAPILDI (2 Kas 2026, kullanıcı onayı)
 
     cd ~/Developer/soru-merkezi
     node scripts/import/paemisyon-fark.mjs --snapshot=20261102-0224 --commit --subscribe
     # bağları da taşımak için: --links
 
-Yazılacaklar: 7 yeni sürüm, 2 geri çekme, 148 abonelik, GYS'e 9 olay. Senkron anahtarı ayrı: `node --env-file=.env.local scripts/set-product-sync-secret.mjs paemisyon` (anahtar bir kez ekrana gelir; PAEMİSYON'un yerel API ortamına `HUB_SYNC_SECRET` olarak girilir, F2).
+Yazılanlar: 7 yeni sürüm (hepsi sürüm 2, yayın kaydı var, köken hash'i güncel), 2 geri çekme, 148 abonelik; GYS akışına 7 upsert + 2 withdraw. Betikte üyelik yeniden hesabı aboneliklerden önce koştuğu için PAEMİSYON olayları elle `recompute_product_membership(paemisyon, 'subscription_changed')` ile üretildi (betik düzeltildi): PAEMİSYON akışında **9.477 soru upsert + 71 mevzuat sürümü + 213 taksonomi + 2 etiket** olayı var — F1 adaptörünün ilk senkronda tüketeceği tam anlık görüntü budur. Senkron anahtarı ayrı: `node --env-file=.env.local scripts/set-product-sync-secret.mjs paemisyon` (anahtar bir kez ekrana gelir; PAEMİSYON'un yerel API ortamına `HUB_SYNC_SECRET` olarak girilir, F2).
 
 ## 6. Açık işler
 
