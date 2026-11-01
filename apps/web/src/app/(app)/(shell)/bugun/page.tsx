@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Medal } from "lucide-react";
 import { api } from "@/lib/api";
-import type { CoachBrief, WeekDayState } from "@/lib/public-api";
+import type {
+  CoachBrief,
+  LeaderboardTeaser as LeaderboardTeaserData,
+  WeekDayState,
+} from "@/lib/public-api";
 import type { ExamListItem } from "@/lib/types";
 import { homeActionHref } from "@/lib/home-actions";
 import { webRoute } from "@/lib/routes";
@@ -18,6 +22,7 @@ import { NextStepCard } from "@/components/bugun/next-step-card";
 import { RouteList } from "@/components/bugun/route-list";
 import { ForYouList } from "@/components/bugun/for-you-list";
 import { WeekSummaryLine } from "@/components/bugun/week-summary-line";
+import { LeaderboardTeaser } from "@/components/bugun/leaderboard-teaser";
 
 export const metadata: Metadata = { title: "Bugün", robots: { index: false } };
 export const dynamic = "force-dynamic";
@@ -62,12 +67,16 @@ function selam(): string {
 }
 
 export default async function BugunPage() {
-  const [brief, exams] = await Promise.all([
+  const [brief, exams, tahta] = await Promise.all([
     api<CoachBrief>("/me/coach"),
     api<ExamListItem[]>("/exams", {
       auth: false,
       next: { revalidate: 30 },
     }).catch(() => [] as ExamListItem[]),
+    // Bugünün tahtası süs değil ama zorunlu da değil: düşerse sayfa düşmez.
+    api<LeaderboardTeaserData>("/progress/leaderboard/teaser").catch(
+      () => null,
+    ),
   ]);
   const { today, gamification, greeting } = brief;
   const v3 = brief.homeV3 ?? null;
@@ -252,7 +261,14 @@ export default async function BugunPage() {
           {/* 4) Senin için (≤4). */}
           <ForYouList rows={seninIcin} />
 
-          {/* 5) Bu hafta — dar ekranda akışın sonunda; genişte sağ sütunun başında. */}
+          {/* 5) Bugünün tahtası — Senin için'in altında; genişte sağ sütunda (2 Kas 2026). */}
+          {tahta ? (
+            <div className="lg:hidden">
+              <LeaderboardTeaser data={tahta} />
+            </div>
+          ) : null}
+
+          {/* 6) Bu hafta — dar ekranda akışın sonunda; genişte sağ sütunun başında. */}
           {haftaSatiri ? (
             <div className="lg:hidden">
               <WeekSummaryLine
@@ -271,6 +287,12 @@ export default async function BugunPage() {
                 left={haftaSatiri.left}
                 right={haftaSatiri.right}
               />
+            </div>
+          ) : null}
+
+          {tahta ? (
+            <div className="hidden lg:block">
+              <LeaderboardTeaser data={tahta} />
             </div>
           ) : null}
 

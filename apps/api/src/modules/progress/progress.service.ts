@@ -5,6 +5,7 @@ import { computeStreakUpdate, liveStreak, weeklyFreezeAllowance } from './streak
 import { GUN_KAYMASI_MS, gunAnahtari, gunBaslangici, haftaBaslangici } from '../../common/gun';
 import { computeRank, rankScore, ACTIVE_DAY_POINTS } from '../coach/rank.logic';
 import { tallyByUnit, type UnitTally } from '../summaries/unite-eslesme';
+import { teaserLine, type LeaderboardTeaser, type TeaserMe, type TeaserRow } from './leaderboard-teaser.logic';
 
 /** Liderlik dönemi — sekmelerle birebir (Bugün/Hafta/Ay/Tüm). */
 export type LeaderboardPeriod = 'today' | 'week' | 'month' | 'all';
@@ -449,6 +450,67 @@ export class ProgressService {
     }
 
     return { period, stats, top, me };
+  }
+
+  /**
+   * Bugün'deki kompakt tahta (Doc 49/16 §9): ilk 3 + benim sıram + takip cümlesi.
+   * Tam tabloya göre hafif: iki sorgu (ilk 3 + toplam, benim satırım + hemen üstüm),
+   * ad için tek `users` okuması. Puan = bugünkü doğru sayısı (tablo ile aynı CTE).
+   */
+  async getLeaderboardTeaser(userId: string): Promise<LeaderboardTeaser> {
+    const puanlanan = this.puanlananOturumlar(Prisma.sql`AND qs.started_at >= ${gunBaslangici()}`);
+    const agg = Prisma.sql`
+      WITH puanlanan AS (${puanlanan}), agg AS (
+        SELECT p.user_id, SUM(p.correct_count)::int AS points, MAX(p.completed_at) AS son
+        FROM puanlanan p
+        JOIN users u ON u.id = p.user_id AND u.deleted_at IS NULL
+        GROUP BY p.user_id
+        HAVING SUM(p.correct_count) > 0
+      )`;
+
+    const [topRows, meRows] = await Promise.all([
+      this.prisma.$queryRaw<{ user_id: string; points: number; toplam: number }[]>(Prisma.sql`
+        ${agg}
+        SELECT user_id, points, COUNT(*) OVER ()::int AS toplam
+        FROM agg ORDER BY points DESC, son ASC LIMIT 3`),
+      this.prisma.$queryRaw<
+        { points: number; rank: number; ust_id: string | null; ust_points: number | null }[]
+      >(Prisma.sql`
+        ${agg}
+        SELECT a.points,
+               (SELECT COUNT(*)::int FROM agg b WHERE b.points > a.points) + 1 AS rank,
+               ust.user_id AS ust_id, ust.points AS ust_points
+        FROM agg a
+        LEFT JOIN LATERAL (
+          SELECT b.user_id, b.points FROM agg b
+          WHERE b.points > a.points ORDER BY b.points ASC, b.son DESC LIMIT 1
+        ) ust ON TRUE
+        WHERE a.user_id = ${userId}::uuid`),
+    ]);
+
+    const meRow = meRows[0] ?? null;
+    const ids = [...new Set([...topRows.map((r) => r.user_id), meRow?.ust_id].filter(Boolean))] as string[];
+    const users = ids.length
+      ? await this.prisma.user.findMany({ where: { id: { in: ids } }, select: { id: true, displayName: true } })
+      : [];
+    const adi = new Map(users.map((u) => [u.id, u.displayName || 'Aday']));
+
+    const top: TeaserRow[] = topRows.map((r, i) => ({
+      rank: i + 1,
+      displayName: adi.get(r.user_id) ?? 'Aday',
+      points: r.points,
+      isMe: r.user_id === userId,
+    }));
+    const me: TeaserMe | null = meRow
+      ? {
+          rank: meRow.rank,
+          points: meRow.points,
+          pointsToNext: meRow.ust_points != null ? Math.max(0, meRow.ust_points - meRow.points) : null,
+          nextName: meRow.ust_id ? (adi.get(meRow.ust_id) ?? 'Aday') : null,
+        }
+      : null;
+    const scorers = topRows[0]?.toplam ?? 0;
+    return { period: 'today', scorers, top, me, line: teaserLine(me, scorers) };
   }
 
   /** Sayfa özeti kartları: toplam aktif kullanıcı, bugünkü quiz, dağıtılan XP, günün lideri. */

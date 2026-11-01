@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
@@ -228,6 +228,21 @@ export default function GaleriScreen() {
               { key: "e", label: "Deneme 4 · Cmt 20:00 · 100 soru", ctaLabel: "Hatırlat", onPress: () => {} },
             ]}
           />
+          <LeaderboardTeaser
+            data={{
+              period: "today",
+              scorers: 41,
+              top: [
+                { rank: 1, displayName: "Ayşe K.", points: 38, isMe: false },
+                { rank: 2, displayName: "Mehmet D.", points: 31, isMe: false },
+                { rank: 3, displayName: "Zeynep A.", points: 27, isMe: false },
+              ],
+              me: { rank: 7, points: 18, pointsToNext: 3, nextName: "Burak" },
+              line: "Önünde Burak var — fark 3 doğru.",
+            }}
+            onPress={() => {}}
+          />
+          <LeaderboardTeaser data={{ period: "today", scorers: 0, top: [], me: null, line: "Tahta bugün bomboş — ilk sırayı kapma şansı." }} onPress={() => {}} />
           <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
           <View style={{ flexDirection: "row", gap: 12 }}>
             <CourseCard name="Genel Kültür ve Analitik Düşünme" accuracyPct={31} band="weak" note="Sınavda %30" onPress={() => {}} />

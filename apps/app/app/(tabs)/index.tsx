@@ -2,10 +2,11 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
 import { Bell } from "lucide-react-native";
 import { View } from "react-native";
-import { ExamContextLine, ForYouList, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { ExamContextLine, ForYouList, LeaderboardTeaser, LiveExamPanel, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import { AppText, Button, Card, IconBadgeButton, Notice, Screen, Skeleton } from "@/components/ui";
 import { homeKeys, todayIndexTr, useCoachBrief, useMe, type TodayTaskAction, type WeekDayState } from "@/features/home/queries";
 import { useExams } from "@/features/exams/queries";
+import { useLeaderboardTeaser } from "@/features/progress/queries";
 import { recordNotificationEvent, useUnreadCount } from "@/features/notifications/queries";
 import { routeToHref } from "@/lib/deep-links";
 import { ApiError, NetworkError } from "@/lib/api";
@@ -34,6 +35,7 @@ export default function BugunScreen() {
   const router = useRouter();
   const examsQ = useExams();
   const unread = useUnreadCount();
+  const tahta = useLeaderboardTeaser();
   const liveExam = (examsQ.data ?? []).find((e) => e.publishMode === "takvimli" && e.availability === "open") ?? null;
   const liveNow = useNow(1000, Boolean(liveExam));
   const qc = useQueryClient();
@@ -209,7 +211,10 @@ export default function BugunScreen() {
           {/* 4) Senin için (≤3). */}
           <ForYouList rows={seninIcin} />
 
-          {/* 5) Bu hafta (eski sunucuda `week` yok → gizli). */}
+          {/* 5) Bugünün tahtası — Senin için'in altında (kullanıcı kararı 2 Kas 2026); eski sunucuda yok → gizli. */}
+          {tahta.data ? <LeaderboardTeaser data={tahta.data} onPress={() => router.push("/(tabs)/ben/liderlik")} /> : null}
+
+          {/* 6) Bu hafta (eski sunucuda `week` yok → gizli). */}
           {v3?.week ? (
             <WeekSummaryLine
               left={`${v3.week.solved} soru · ${v3.week.activeDays}/${v3.week.goalDays} gün`}

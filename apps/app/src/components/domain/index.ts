@@ -31,3 +31,4 @@ export * from "./test-card";
 export * from "./coverage-panel";
 export * from "./upsell-strip";
 export * from "./answer-review";
+export * from "./leaderboard-teaser";

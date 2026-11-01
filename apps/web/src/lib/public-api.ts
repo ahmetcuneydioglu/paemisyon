@@ -278,6 +278,28 @@ export interface LeaderboardBoard {
   me: LeaderboardMe | null;
 }
 
+// ── Bugün'deki kompakt tahta: /progress/leaderboard/teaser (Doc 49/16 §9) ──
+export interface LeaderboardTeaserRow {
+  rank: number;
+  displayName: string;
+  points: number;
+  isMe: boolean;
+}
+export interface LeaderboardTeaser {
+  period: "today";
+  /** Bugün en az 1 doğru yapan kişi sayısı. */
+  scorers: number;
+  top: LeaderboardTeaserRow[];
+  me: {
+    rank: number;
+    points: number;
+    pointsToNext: number | null;
+    nextName: string | null;
+  } | null;
+  /** Takip cümlesi — sunucu üretir (Doc 12 tonu), istemci yalnız gösterir. */
+  line: string;
+}
+
 export interface ExamGuide {
   key: string;
   name: string;

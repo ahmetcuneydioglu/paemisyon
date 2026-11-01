@@ -36,6 +36,7 @@ import { ForYouList } from "@/components/bugun/for-you-list";
 import { NextStepCard } from "@/components/bugun/next-step-card";
 import { RouteList } from "@/components/bugun/route-list";
 import { WeekSummaryLine } from "@/components/bugun/week-summary-line";
+import { LeaderboardTeaser } from "@/components/bugun/leaderboard-teaser";
 import {
   FeedbackPanel,
   QuestionMetaRow,
@@ -528,6 +529,28 @@ export function Galeri() {
               href: "#",
             },
           ]}
+        />
+        <LeaderboardTeaser
+          data={{
+            period: "today",
+            scorers: 41,
+            top: [
+              { rank: 1, displayName: "Ayşe K.", points: 38, isMe: false },
+              { rank: 2, displayName: "Mehmet D.", points: 31, isMe: false },
+              { rank: 3, displayName: "Zeynep A.", points: 27, isMe: false },
+            ],
+            me: { rank: 7, points: 18, pointsToNext: 3, nextName: "Burak" },
+            line: "Önünde Burak var — fark 3 doğru.",
+          }}
+        />
+        <LeaderboardTeaser
+          data={{
+            period: "today",
+            scorers: 0,
+            top: [],
+            me: null,
+            line: "Tahta bugün bomboş — ilk sırayı kapma şansı.",
+          }}
         />
         <WeekSummaryLine left="312 soru · 3/5 gün" right="Komiser Yardımcısı" />
       </Bolum>

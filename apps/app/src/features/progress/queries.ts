@@ -59,12 +59,23 @@ export interface Leaderboard {
   me: LeaderboardRow & { pointsToNext: number | null; nextName: string | null };
 }
 
+/** Bugün'deki kompakt tahta: /progress/leaderboard/teaser (Doc 49/16 §9). */
+export interface LeaderboardTeaser {
+  period: "today";
+  scorers: number;
+  top: { rank: number; displayName: string; points: number; isMe: boolean }[];
+  me: { rank: number; points: number; pointsToNext: number | null; nextName: string | null } | null;
+  /** Takip cümlesi — sunucu üretir, istemci gösterir. */
+  line: string;
+}
+
 export const progressKeys = {
   summary: ["progress", "summary"] as const,
   topics: ["progress", "topics"] as const,
   activity: (days: number) => ["progress", "activity", days] as const,
   history: ["progress", "history"] as const,
   leaderboard: (p: LeaderboardPeriod) => ["progress", "leaderboard", p] as const,
+  leaderboardTeaser: ["progress", "leaderboard", "teaser"] as const,
 };
 
 export function useProgressSummary() {
@@ -81,6 +92,15 @@ export function useHistory() {
     queryKey: progressKeys.history,
     queryFn: () => api<(Omit<HistoryItem, "score"> & { score: string | number | null })[]>("/progress/history"),
     select: (rows): HistoryItem[] => rows.map((r) => ({ ...r, score: r.score == null ? null : Number(r.score) })),
+  });
+}
+/** Bugün ekranı için; eski sunucuda 404 → hata, ekran bileşeni gizler (çökme yok). */
+export function useLeaderboardTeaser() {
+  return useQuery({
+    queryKey: progressKeys.leaderboardTeaser,
+    queryFn: () => api<LeaderboardTeaser>("/progress/leaderboard/teaser"),
+    staleTime: 60_000,
+    retry: false,
   });
 }
 export function useLeaderboard(period: LeaderboardPeriod) {

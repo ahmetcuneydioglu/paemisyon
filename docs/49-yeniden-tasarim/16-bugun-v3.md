@@ -243,3 +243,20 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   rolü istediğinden geçici hesapla görülemedi; bileşenler /bugun'da canlı veriyle görüldü. Not:
   aynı anda üst şerit "Canlı deneme sürüyor" derken Sıradaki "Deneme bugün 21:00" diyor — /exams
   `state` ile koçun `exams.todayUpcoming` penceresi farklı; sunucu tarafı, ayrı bakılacak.
+
+- **Bugünün tahtası geri geldi (2 Kas 2026, kullanıcı kararı):** v3 iskeleti Flutter anasayfasındaki
+  "Lider tahtası · Bugün" kartını taşımamıştı (tek adım ilkesi; nav kararı "ara sıra bakılan yer").
+  Kullanıcı sordu, veri konuştu: 28 Ekim'den beri günde 95–120 aktif, tahta dolu; "seni geçti"
+  dürtmesi var ama anasayfada yüzeyi yoktu. Karar: kompakt kart, Sıradaki ile yarışmayan konum
+  (Senin için'in altı; webde genişte sağ sütun). Yeni uç `GET /progress/leaderboard/teaser`
+  (`getLeaderboardTeaser`): tam tablodan hafif — iki sorgu (ilk 3 + toplam; benim satırım +
+  LATERAL ile hemen üstüm), ad için tek `users` okuması; puan = bugünkü doğru (tablo ile aynı CTE).
+  Takip cümlesi SUNUCUDA (`leaderboard-teaser.logic.ts`, Doc 12 tonu: zirve / beraberlik /
+  "Önünde X var — fark N doğru" / puansıza davet / boş tahta), jest 3 test. İstemciler:
+  web `components/bugun/leaderboard-teaser.tsx` (galeri örneği; başlığa id verilmez — dar/geniş
+  iki kopya), Expo `components/domain/leaderboard-teaser.tsx` + `useLeaderboardTeaser` (retry yok,
+  eski sunucuda 404 → gizli). Doğrulama: Docker doc52 DB'ye 4 rakip + geçici hesap tohumlandı
+  (`api-tahta` :3021, `web-tahta` :3022 tarifleri), web 1280/375 koyu+açık gerçek veriyle; prod SQL'i
+  Supabase'de elle koşuldu (sıra 2, üst 27 doğru). Expo: simülatöre metin girilemediği için
+  (pano izni/hard klavye yok) bileşen galeri ekranında bakıldı; gerçek veriyle cihaz testi telefonda.
+

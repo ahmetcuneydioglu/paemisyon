@@ -25,6 +25,12 @@ export class ProgressController {
     return this.progress.getLeaderboard(user.id, parsePeriod(period));
   }
 
+  /** Bugün'deki kompakt tahta (ilk 3 + sen + takip cümlesi). */
+  @Get('leaderboard/teaser')
+  leaderboardTeaser(@CurrentUser() user: AuthenticatedUser) {
+    return this.progress.getLeaderboardTeaser(user.id);
+  }
+
   @Get('summary')
   summary(@CurrentUser() user: AuthenticatedUser) {
     return this.progress.getSummary(user.id, user.isPremium);
