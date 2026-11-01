@@ -13,3 +13,4 @@ export * from "./icon-button";
 export * from "./action-bar";
 export * from "./section-header";
 export * from "./count-badge";
+export * from "./action-tile";

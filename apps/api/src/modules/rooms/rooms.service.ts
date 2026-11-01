@@ -2,12 +2,17 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import { haftaBasi } from '../../common/gun';
 import { LAW_NAME_RE, slugify } from '../public/public.service';
+import { enTazeYarimTur, TAZE_TUR_MS, yarimTurSorgusu } from '../coach/today-task.logic';
 import {
   band,
   dersKocCumlesi,
+  dersKunyesi,
   enZayif,
+  kaldiginYer,
   konuKocCumlesi,
+  konuKunyesi,
   maddeAraligi,
+  yayginAgirlik,
   yuzde,
   type Band,
 } from './rooms.logic';
@@ -26,6 +31,11 @@ type Satir = {
   locked: boolean;
   isLaw: boolean;
   lawSlug: string | null;
+  wrongCount: number;
+  favoriteCount: number;
+  /** Yayındaki ünite özetleri; tek ünite varsa istemci doğrudan açar. */
+  units: { count: number; read: number; firstSlug: string | null };
+  note: string;
 };
 /** İstemciye giden konu satırı: ham doğruluk/doğru sayısı dışarı çıkmaz (yüzde ve band yeter). */
 const kamu = (r: Satir) => ({
@@ -39,6 +49,10 @@ const kamu = (r: Satir) => ({
   locked: r.locked,
   isLaw: r.isLaw,
   lawSlug: r.lawSlug,
+  wrongCount: r.wrongCount,
+  favoriteCount: r.favoriteCount,
+  units: r.units,
+  note: r.note,
 });
 
 /**
@@ -56,49 +70,68 @@ export class RoomsService {
     });
     if (!course) throw new NotFoundException('Ders bulunamadı');
     const buHafta = haftaBasi();
-    const [topics, progress, wrongCount, favCount, legislation, profile, planItems] =
-      await Promise.all([
-        this.prisma.topic.findMany({
-          where: { courseId, deletedAt: null, parentId: null },
-          orderBy: { sortOrder: 'asc' },
-          select: {
-            id: true,
-            name: true,
-            isPremium: true,
-            children: {
-              where: { deletedAt: null },
-              orderBy: { sortOrder: 'asc' },
-              select: { id: true, name: true, isPremium: true },
-            },
+    const [
+      topics,
+      progress,
+      wrongCount,
+      favCount,
+      legislation,
+      profile,
+      planItems,
+      sayimlar,
+      units,
+    ] = await Promise.all([
+      this.prisma.topic.findMany({
+        where: { courseId, deletedAt: null, parentId: null },
+        orderBy: { sortOrder: 'asc' },
+        select: {
+          id: true,
+          name: true,
+          isPremium: true,
+          children: {
+            where: { deletedAt: null },
+            orderBy: { sortOrder: 'asc' },
+            select: { id: true, name: true, isPremium: true },
           },
-        }),
-        this.prisma.userTopicProgress.findMany({
-          where: { userId, topic: { courseId, deletedAt: null } },
-          select: { topicId: true, solvedCount: true, correctCount: true },
-        }),
-        this.yanlisSayisi(userId, { courseId }),
-        this.favoriSayisi(userId, { courseId }),
-        this.prisma.legislation.findMany({
-          where: { topic: { courseId, deletedAt: null }, status: 'published' },
-          select: {
-            slug: true,
-            shortName: true,
-            name: true,
-            _count: { select: { articles: { where: { status: 'published' } } } },
-          },
-          orderBy: { sortOrder: 'asc' },
-        }),
-        this.prisma.user.findUnique({ where: { id: userId }, select: { preferredModuleId: true } }),
-        this.prisma.studyPlanItem.findMany({
-          where: {
-            plan: { userId, status: 'active' },
-            weekStart: buHafta,
-            kind: 'topic',
-            topic: { courseId },
-          },
-          select: { topicId: true },
-        }),
-      ]);
+        },
+      }),
+      this.prisma.userTopicProgress.findMany({
+        where: { userId, topic: { courseId, deletedAt: null } },
+        select: { topicId: true, solvedCount: true, correctCount: true },
+      }),
+      this.yanlisSayisi(userId, { courseId }),
+      this.favoriSayisi(userId, { courseId }),
+      this.prisma.legislation.findMany({
+        where: { topic: { courseId, deletedAt: null }, status: 'published' },
+        select: {
+          slug: true,
+          shortName: true,
+          name: true,
+          _count: { select: { articles: { where: { status: 'published' } } } },
+        },
+        orderBy: { sortOrder: 'asc' },
+      }),
+      this.prisma.user.findUnique({ where: { id: userId }, select: { preferredModuleId: true } }),
+      this.prisma.studyPlanItem.findMany({
+        where: {
+          plan: { userId, status: 'active' },
+          weekStart: buHafta,
+          kind: 'topic',
+          topic: { courseId },
+        },
+        select: { topicId: true },
+      }),
+      this.konuSayimlari(userId, courseId),
+      this.prisma.summaryUnit.findMany({
+        where: { status: 'published', deletedAt: null, topic: { courseId, deletedAt: null } },
+        orderBy: { sortOrder: 'asc' },
+        select: {
+          topicId: true,
+          slug: true,
+          progress: { where: { userId, completedAt: { not: null } }, select: { unitId: true } },
+        },
+      }),
+    ]);
     const examWeight = profile?.preferredModuleId
       ? await this.prisma.examSection.findFirst({
           where: {
@@ -113,12 +146,21 @@ export class RoomsService {
 
     const prog = new Map(progress.map((p) => [p.topicId, p]));
     const planli = new Set(planItems.map((i) => i.topicId));
-    const satir = (t: { id: string; name: string; isPremium: boolean }) => {
+    const uniteler = new Map<string, Satir['units']>();
+    for (const u of units) {
+      const k = uniteler.get(u.topicId) ?? { count: 0, read: 0, firstSlug: u.slug };
+      k.count += 1;
+      if (u.progress.length) k.read += 1;
+      uniteler.set(u.topicId, k);
+    }
+    const satir = (t: { id: string; name: string; isPremium: boolean }): Satir => {
       const p = prog.get(t.id);
       const solved = p?.solvedCount ?? 0;
       const correct = p?.correctCount ?? 0;
       const accuracy = solved > 0 ? correct / solved : null;
       const isLaw = LAW_NAME_RE.test(t.name);
+      const u = uniteler.get(t.id) ?? { count: 0, read: 0, firstSlug: null };
+      const yanlis = sayimlar.yanlis.get(t.id) ?? 0;
       return {
         id: t.id,
         name: t.name,
@@ -132,6 +174,10 @@ export class RoomsService {
         locked: t.isPremium && !isPremiumUser,
         isLaw,
         lawSlug: isLaw ? slugify(t.name) : null,
+        wrongCount: yanlis,
+        favoriteCount: sayimlar.favori.get(t.id) ?? 0,
+        units: u,
+        note: konuKunyesi({ solved, unitCount: u.count, wrongCount: yanlis }),
       };
     };
     const rows = topics.map((t) => ({ ...satir(t), children: t.children.map(satir) }));
@@ -169,6 +215,7 @@ export class RoomsService {
       tools: {
         wrongCount,
         favoriteCount: favCount,
+        summaryUnitCount: units.length,
         // Ana metin önce: madde sayısı çoktan aza (Anayasa Hukuku'nda 12 mevzuat var).
         legislation: [...legislation]
           .sort((a, b) => b._count.articles - a._count.articles)
@@ -263,6 +310,150 @@ export class RoomsService {
               articleRange: maddeAraligi(maddeler.map((m) => m.articleNo)),
             }
           : null,
+    };
+  }
+
+  /**
+   * Çalış ana ekranı (Doc 49/17): hedef sınavın dersleri kart verisiyle + "kaldığın yer" + toplamlar.
+   * Ders sırası ağırlığa göre (eşitlikte müfredat sırası); künye cümlesi sunucuda.
+   */
+  async study(userId: string, moduleIdParam: string | null = null, now = new Date()) {
+    // Web'de sınav bağlamı seçilebilir (?sinav=); verilmezse hedef sınav.
+    const [profile, secilen] = await Promise.all([
+      this.prisma.user.findUnique({
+        where: { id: userId },
+        select: { preferredModule: { select: { id: true, name: true } } },
+      }),
+      moduleIdParam
+        ? this.prisma.examType.findFirst({
+            where: { id: moduleIdParam, isActive: true },
+            select: { id: true, name: true },
+          })
+        : Promise.resolve(null),
+    ]);
+    const modul = secilen ?? profile?.preferredModule ?? null;
+    const moduleId = modul?.id ?? null;
+    const [sections, progress, yanlis, favori, uniteler, yarim] = await Promise.all([
+      moduleId
+        ? this.prisma.examSection.findMany({
+            where: { examTypeId: moduleId, deletedAt: null },
+            orderBy: { sortOrder: 'asc' },
+            select: {
+              weightPercent: true,
+              courses: {
+                orderBy: { sortOrder: 'asc' },
+                select: {
+                  course: { select: { id: true, name: true, icon: true, deletedAt: true } },
+                },
+              },
+            },
+          })
+        : Promise.resolve([]),
+      this.prisma.userTopicProgress.findMany({
+        where: { userId, topic: { deletedAt: null } },
+        select: { solvedCount: true, correctCount: true, topic: { select: { courseId: true } } },
+      }),
+      this.prisma.$queryRaw<{ course_id: string; cnt: number }[]>`
+        SELECT t.course_id, COUNT(*)::int AS cnt FROM wrong_answers wa
+        JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
+        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+        WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL
+        GROUP BY t.course_id`,
+      this.prisma.$queryRaw<{ course_id: string; cnt: number }[]>`
+        SELECT t.course_id, COUNT(*)::int AS cnt FROM bookmarks b
+        JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
+        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+        WHERE b.user_id = ${userId}::uuid
+        GROUP BY t.course_id`,
+      this.prisma.$queryRaw<{ course_id: string; cnt: number }[]>`
+        SELECT t.course_id, COUNT(*)::int AS cnt FROM summary_units su
+        JOIN topics t ON t.id = su.topic_id AND t.deleted_at IS NULL
+        WHERE su.status = 'published' AND su.deleted_at IS NULL
+        GROUP BY t.course_id`,
+      this.prisma.quizSession.findMany(yarimTurSorgusu(userId)),
+    ]);
+    const harita = (rows: { course_id: string; cnt: number }[]) =>
+      new Map(rows.map((r) => [r.course_id, r.cnt]));
+    const yanlisM = harita(yanlis);
+    const favoriM = harita(favori);
+    const uniteM = harita(uniteler);
+    const cozum = new Map<string, { solved: number; correct: number }>();
+    for (const p of progress) {
+      const c = cozum.get(p.topic.courseId) ?? { solved: 0, correct: 0 };
+      c.solved += p.solvedCount;
+      c.correct += p.correctCount;
+      cozum.set(p.topic.courseId, c);
+    }
+    // Düzleştir + tekilleştir (catalog.getCourses ile aynı kural: ilk bölümün ağırlığı).
+    const gorulen = new Set<string>();
+    const dersler: {
+      id: string;
+      name: string;
+      icon: string | null;
+      weightPercent: number;
+      sira: number;
+    }[] = [];
+    for (const sec of sections) {
+      for (const sc of sec.courses) {
+        if (sc.course.deletedAt || gorulen.has(sc.course.id)) continue;
+        gorulen.add(sc.course.id);
+        dersler.push({ ...sc.course, weightPercent: sec.weightPercent, sira: dersler.length });
+      }
+    }
+    const yaygin = yayginAgirlik(dersler.map((d) => d.weightPercent));
+    const courses = dersler
+      .sort((a, b) => b.weightPercent - a.weightPercent || a.sira - b.sira)
+      .map((d) => {
+        const c = cozum.get(d.id) ?? { solved: 0, correct: 0 };
+        const accuracy = c.solved > 0 ? c.correct / c.solved : null;
+        const wrongCount = yanlisM.get(d.id) ?? 0;
+        return {
+          id: d.id,
+          name: d.name,
+          icon: d.icon,
+          weightPercent: d.weightPercent,
+          solved: c.solved,
+          accuracyPct: yuzde(accuracy),
+          band: band(c.solved, accuracy),
+          wrongCount,
+          favoriteCount: favoriM.get(d.id) ?? 0,
+          summaryUnitCount: uniteM.get(d.id) ?? 0,
+          note: dersKunyesi({
+            weightPercent: d.weightPercent,
+            yayginAgirlik: yaygin,
+            solved: c.solved,
+            wrongCount,
+          }),
+        };
+      });
+    const toplam = (m: Map<string, number>) => [...m.values()].reduce((s, n) => s + n, 0);
+    return {
+      module: modul,
+      resume: kaldiginYer(enTazeYarimTur(yarim), now, TAZE_TUR_MS),
+      courses,
+      totals: { wrongCount: toplam(yanlisM), favoriteCount: toplam(favoriM) },
+    };
+  }
+
+  /** Dersin konu başına açık yanlış ve favori sayıları (konu eylem sayfası, Doc 49/17). */
+  private async konuSayimlari(userId: string, courseId: string) {
+    const [y, f] = await Promise.all([
+      this.prisma.$queryRaw<{ topic_id: string; cnt: number }[]>`
+        SELECT q.topic_id, COUNT(*)::int AS cnt FROM wrong_answers wa
+        JOIN questions q ON q.id = wa.question_id AND q.deleted_at IS NULL
+        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+        WHERE wa.user_id = ${userId}::uuid AND wa.resolved_at IS NULL AND t.course_id = ${courseId}::uuid
+        GROUP BY q.topic_id`,
+      this.prisma.$queryRaw<{ topic_id: string; cnt: number }[]>`
+        SELECT q.topic_id, COUNT(*)::int AS cnt FROM bookmarks b
+        JOIN questions q ON q.id = b.question_id AND q.deleted_at IS NULL
+        JOIN topics t ON t.id = q.topic_id AND t.deleted_at IS NULL
+        WHERE b.user_id = ${userId}::uuid AND t.course_id = ${courseId}::uuid
+        GROUP BY q.topic_id`,
+    ]);
+    return {
+      yanlis: new Map(y.map((r) => [r.topic_id, r.cnt])),
+      favori: new Map(f.map((r) => [r.topic_id, r.cnt])),
     };
   }
 

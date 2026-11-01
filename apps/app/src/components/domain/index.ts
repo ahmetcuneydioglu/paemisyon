@@ -24,4 +24,6 @@ export * from "./route-list";
 export * from "./for-you-list";
 export * from "./exam-context-line";
 export * from "./week-summary-line";
-export * from "./course-room-card";
+export * from "./course-card";
+export * from "./resume-strip";
+export * from "./room-sheets";

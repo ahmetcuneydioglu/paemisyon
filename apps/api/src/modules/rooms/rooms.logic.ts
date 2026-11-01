@@ -100,3 +100,67 @@ export function maddeAraligi(nos: readonly string[]): string | null {
   const max = Math.max(...sayilar);
   return min === max ? `md. ${min}` : `md. ${min}–${max}`;
 }
+
+/**
+ * Çalış ders kartının tek künyesi (Doc 49/17). Öncelik: diğer derslerden farklı sınav ağırlığı
+ * (çoğunluk %10 iken "Sınavda %30" bilgi taşır) → başlanmadı → açık yanlış → "Yanlış yok".
+ */
+export function dersKunyesi(input: {
+  weightPercent: number | null;
+  yayginAgirlik: number | null;
+  solved: number;
+  wrongCount: number;
+}): string {
+  const { weightPercent: w, yayginAgirlik: y } = input;
+  if (w != null && y != null && w !== y) return `Sınavda %${w}`;
+  if (input.solved === 0) return 'Henüz başlanmadı';
+  if (input.wrongCount > 0) return `${input.wrongCount} yanlış`;
+  return 'Yanlış yok';
+}
+
+/** En sık görülen ağırlık (eşitlikte büyük olan); liste boşsa null. */
+export function yayginAgirlik(weights: readonly number[]): number | null {
+  if (!weights.length) return null;
+  const say = new Map<number, number>();
+  for (const w of weights) say.set(w, (say.get(w) ?? 0) + 1);
+  return [...say.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0])[0][0];
+}
+
+/** Ders odasındaki konu satırının künyesi: "24 soru · 4 ünite özeti · 6 yanlış". */
+export function konuKunyesi(input: {
+  solved: number;
+  unitCount: number;
+  wrongCount: number;
+}): string {
+  const parca = [input.solved > 0 ? `${input.solved} soru` : 'Henüz çözülmedi'];
+  if (input.unitCount > 0) parca.push(`${input.unitCount} ünite özeti`);
+  if (input.wrongCount > 0) parca.push(`${input.wrongCount} yanlış`);
+  return parca.join(' · ');
+}
+
+/** "Kaldığın yer" şeridi: yalnız en az bir cevabı olan taze yarım tur. */
+export function kaldiginYer(
+  tur: {
+    sessionId: string;
+    scopeName: string;
+    answered: number;
+    total: number;
+    lastActivityAt: Date;
+  } | null,
+  now: Date,
+  tazeMs: number,
+) {
+  if (!tur || tur.answered === 0 || now.getTime() - tur.lastActivityAt.getTime() >= tazeMs)
+    return null;
+  const kalan = Math.max(0, tur.total - tur.answered);
+  return {
+    sessionId: tur.sessionId,
+    scopeName: tur.scopeName,
+    answered: tur.answered,
+    total: tur.total,
+    detail:
+      kalan > 0
+        ? `${tur.answered}/${tur.total} · ${kalan} soru kaldı`
+        : `${tur.answered}/${tur.total} · bitirmeye hazır`,
+  };
+}

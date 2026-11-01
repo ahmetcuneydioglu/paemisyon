@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CalendarDays, RotateCcw, Scale, Star } from "lucide-react";
+import { RotateCcw, Shuffle } from "lucide-react";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/cn";
-import { Badge } from "@/components/ui/badge";
+import type { StudyHub } from "@/lib/public-api";
 import { Card } from "@/components/ui/card";
-import { MasteryBar } from "@/components/ui/mastery-bar";
+import { CourseCard } from "@/components/rooms/course-card";
+import { ResumeStrip } from "@/components/rooms/resume-strip";
 import { CoachRail } from "@/components/shell/coach-rail";
 
 export const metadata: Metadata = {
@@ -21,24 +22,22 @@ interface Module {
   questionCount: number;
   isPreferred: boolean;
 }
-interface Course {
-  id: string;
-  name: string;
-  sectionName: string;
-  weightPercent: number;
-}
-interface TopicProgressRow {
-  topicName: string;
-  courseName: string;
-  solvedCount: number;
-  correctCount: number;
-  mastery: number;
+
+/** Hap etiketi kısa kalır (375 px'te tek satır): yanlış varsa yanlış, yoksa favori. */
+function tekrarEtiketi(t: StudyHub["totals"]) {
+  if (t.wrongCount > 0) return `Yanlışlar · ${t.wrongCount}`;
+  if (t.favoriteCount > 0) return `Favoriler · ${t.favoriteCount}`;
+  return "Yanlışlarım";
 }
 
+const hap =
+  "tk-interactive inline-flex h-11 min-w-0 flex-1 whitespace-nowrap items-center justify-center gap-1.5 rounded-pill border border-line bg-surface px-3.5 type-subhead text-ink hover:border-ink-soft";
+
 /**
- * Kütüphane ana (Doc 27 §3.3): kapsam haritası — dersler müfredat ağırlığına göre,
- * her kartta benim durumum. Üç kapı (Mevzuat, Yanlışlarım, Favorilerim) tek vurgu
- * diliyle; ikon farkı, renk farkı değil (Doc 49 §1.1).
+ * Kütüphane (Çalış v2, Doc 49/17; Expo Çalış ile aynı yapı) — "ders seç → ne yapacağını seç".
+ * Kaldığın yer şeridi (yalnız taze yarım tur), ağırlığa göre ders kartları, iki hızlı eylem.
+ * Plan, Mevzuat, Yanlışlarım ve Favorilerim kenar çubuğunda; burada tekrar edilmez. Sayılar,
+ * sıralama ve kart künyesi `/me/study`'den.
  */
 export default async function KutuphanePage({
   searchParams,
@@ -48,69 +47,28 @@ export default async function KutuphanePage({
   const sp = await searchParams;
   const wanted = Array.isArray(sp.sinav) ? sp.sinav[0] : sp.sinav;
 
-  const [modules, progress, wrongs] = await Promise.all([
-    api<Module[]>("/catalog/modules"),
-    api<TopicProgressRow[]>("/progress/topics").catch(
-      () => [] as TopicProgressRow[],
-    ),
-    api<{ questionId: string }[]>("/review/wrong-answers").catch(
-      () => [] as { questionId: string }[],
-    ),
-  ]);
+  const modules = await api<Module[]>("/catalog/modules");
   const current =
     modules.find((m) => m.key === wanted) ??
     modules.find((m) => m.isPreferred) ??
     modules[0];
-  const courses = current
-    ? await api<Course[]>(`/catalog/modules/${current.id}/courses`)
-    : [];
-
-  const byCourse = new Map<string, { solved: number; correct: number }>();
-  for (const r of progress) {
-    const acc = byCourse.get(r.courseName) ?? { solved: 0, correct: 0 };
-    acc.solved += r.solvedCount;
-    acc.correct += r.correctCount;
-    byCourse.set(r.courseName, acc);
-  }
-  const masteryOf = (name: string): number | null => {
-    const p = byCourse.get(name);
-    return p && p.solved > 0 ? Math.round((p.correct / p.solved) * 100) : null;
-  };
-
-  const gates = [
-    {
-      href: "/planim",
-      icon: CalendarDays,
-      title: "Haftalık planım",
-      body: "Bu haftanın kalemleri ve sınava kadar dağılım.",
-    },
-    {
-      href: "/kanunlar",
-      icon: Scale,
-      title: "Mevzuat — Madde Atlası",
-      body: "Kanun kanun ısı haritası ve fetih ilerlemen.",
-    },
-    {
-      href: "/kutuphane/yanlislar",
-      icon: RotateCcw,
-      title: "Yanlışlarım",
-      body:
-        wrongs.length > 0
-          ? `${wrongs.length} soru kuyrukta — doğru çözünce düşer.`
-          : "Kuyruk temiz — sistem yanlışlarını unutmaz.",
-    },
-    {
-      href: "/kutuphane/favoriler",
-      icon: Star,
-      title: "Favorilerim",
-      body: "Yıldızladığın sorular — toplu çöz.",
-    },
-  ];
+  const d = await api<StudyHub>(
+    current ? `/me/study?moduleId=${current.id}` : "/me/study",
+  ).catch(() => null);
+  if (!d)
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-6 md:px-6">
+        <h1 className="type-title mb-4 text-ink">Kütüphane</h1>
+        <Card className="type-body-sm text-ink-soft">
+          Dersler şu an yüklenemedi. Sayfayı yenilemeyi dene.
+        </Card>
+      </div>
+    );
 
   return (
     <div className="mx-auto flex max-w-7xl gap-8 px-4 py-6 md:px-6">
-      <div className="min-w-0 flex-1">
-        <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+      <div className="flex min-w-0 flex-1 flex-col gap-5">
+        <div className="flex flex-wrap items-center justify-between gap-3">
           <h1 className="type-title text-ink">Kütüphane</h1>
           {modules.length > 1 ? (
             <nav className="flex gap-1.5" aria-label="Sınav bağlamı">
@@ -136,70 +94,72 @@ export default async function KutuphanePage({
           ) : null}
         </div>
 
-        {/* Kapılar iki sütunda kalır: koç rayı ve kenar çubuğuyla 1280 px'te
-            ana sütun ~650 px'tir; dört sütunda başlık+gövde tek tek sözcüklere
-            kırılıyordu (F9-E). */}
-        <div className="mb-6 grid gap-3 sm:grid-cols-2">
-          {gates.map(({ href, icon: Icon, title, body }) => (
-            <Link
-              key={href}
-              href={href}
-              className="tk-interactive flex items-center gap-3 rounded-card border border-line bg-surface p-4 hover:border-ink-soft"
-            >
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-control bg-accent-soft text-accent-ink">
-                <Icon size={20} strokeWidth={1.75} aria-hidden />
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="type-subhead block text-ink">{title}</span>
-                <span className="type-body-sm block text-ink-soft">{body}</span>
-              </span>
-              <ArrowRight
-                size={18}
-                className="shrink-0 text-ink-subtle"
-                aria-hidden
-              />
-            </Link>
-          ))}
-        </div>
-
-        <p className="type-label mb-3 text-ink-subtle">
-          {current?.name} müfredatı · bölüm ağırlığına göre
-        </p>
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {[...courses]
-            .sort((a, b) => b.weightPercent - a.weightPercent)
-            .map((c) => (
-              <Link
-                key={c.id}
-                href={`/kutuphane/ders/${c.id}`}
-                className="group"
-              >
-                <Card className="tk-interactive flex h-full flex-col gap-3 group-hover:border-ink-soft">
-                  <div className="flex items-start justify-between gap-2">
-                    <p className="type-subhead text-ink">{c.name}</p>
-                    <Badge>%{c.weightPercent}</Badge>
-                  </div>
-                  {c.sectionName !== c.name ? (
-                    <p className="type-body-sm -mt-2 text-ink-soft">
-                      {c.sectionName}
-                    </p>
-                  ) : null}
-                  <div className="mt-auto flex items-center justify-between">
-                    <span className="type-label text-ink-subtle">
-                      benim durumum
-                    </span>
-                    <MasteryBar value={masteryOf(c.name)} />
-                  </div>
-                </Card>
-              </Link>
-            ))}
-        </div>
-        {courses.length === 0 ? (
-          <Card className="type-body-sm border-dashed text-center text-ink-soft">
-            Bu sınavın müfredatı hazırlanıyor — koçun eklendiğinde haber
-            verecek.
-          </Card>
+        {d.resume ? (
+          <ResumeStrip
+            href={`/seans?resume=${d.resume.sessionId}&source=home_resume&scope=${encodeURIComponent(d.resume.scopeName)}`}
+            scopeName={d.resume.scopeName}
+            detail={d.resume.detail}
+          />
         ) : null}
+
+        <section className="flex flex-col gap-3" aria-label="Dersler">
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 className="type-heading text-ink">Dersler</h2>
+            <span className="type-body-sm text-ink-subtle">
+              hâkimiyet · ağırlığa göre
+            </span>
+          </div>
+          {d.courses.length === 0 ? (
+            <Card className="type-body-sm border-dashed text-center text-ink-soft">
+              Bu sınavın müfredatı hazırlanıyor — koçun eklendiğinde haber
+              verecek.
+            </Card>
+          ) : (
+            <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 2xl:grid-cols-4">
+              {d.courses.map((c) => (
+                <CourseCard
+                  key={c.id}
+                  href={`/kutuphane/ders/${c.id}`}
+                  name={c.name}
+                  accuracyPct={c.accuracyPct}
+                  band={c.band}
+                  note={c.note}
+                />
+              ))}
+            </div>
+          )}
+        </section>
+
+        <div className="flex gap-3">
+          <Link
+            href={`/seans?count=10&source=study_hub&scope=${encodeURIComponent("Karışık tur")}`}
+            className={hap}
+          >
+            <Shuffle
+              size={18}
+              strokeWidth={1.75}
+              aria-hidden
+              className="text-accent-ink"
+            />
+            Karışık 10 soru
+          </Link>
+          <Link
+            href={
+              d.totals.wrongCount > 0 || d.totals.favoriteCount === 0
+                ? "/kutuphane/yanlislar"
+                : "/kutuphane/favoriler"
+            }
+            className={hap}
+          >
+            <RotateCcw
+              size={18}
+              strokeWidth={1.75}
+              aria-hidden
+              className="text-accent-ink"
+            />
+            {tekrarEtiketi(d.totals)}
+          </Link>
+        </div>
       </div>
 
       <CoachRail />

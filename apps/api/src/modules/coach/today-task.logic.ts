@@ -49,6 +49,65 @@ export interface YarimTur {
   scopeName: string;
 }
 
+/** Yarım tur sorgusunun satırı (CoachService ve RoomsService aynı select'i kullanır). */
+export interface YarimTurSatiri {
+  id: string;
+  mode: string;
+  totalQuestions: number;
+  startedAt: Date;
+  topicIds: string[];
+  topic: { name: string } | null;
+  course: { name: string } | null;
+  _count: { answers: number };
+  answers: { answeredAt: Date }[];
+}
+
+/** Yarım alıştırma/tekrar/günlük turları — deneme ve arşiv kendi kuralıyla yaşar (süreli). */
+export const yarimTurSorgusu = (userId: string) => ({
+  where: {
+    userId,
+    status: 'in_progress' as const,
+    mode: { in: ['practice' as const, 'review' as const, 'daily' as const] },
+  },
+  orderBy: { startedAt: 'desc' as const },
+  take: 3,
+  select: {
+    id: true,
+    mode: true,
+    totalQuestions: true,
+    startedAt: true,
+    topicIds: true,
+    topic: { select: { name: true } },
+    course: { select: { name: true } },
+    _count: { select: { answers: true } },
+    answers: { orderBy: { answeredAt: 'desc' as const }, take: 1, select: { answeredAt: true } },
+  },
+});
+
+/** En taze yarım tur: son cevaba göre (cevapsızsa başlangıca). Tek tanım — Bugün ve Çalış aynı turu görür. */
+export function enTazeYarimTur(rows: readonly YarimTurSatiri[]): YarimTur | null {
+  return (
+    rows
+      .map((s) => ({
+        sessionId: s.id,
+        mode: s.mode as YarimTur['mode'],
+        total: s.totalQuestions,
+        answered: s._count.answers,
+        startedAt: s.startedAt,
+        lastActivityAt: s.answers[0]?.answeredAt ?? s.startedAt,
+        scopeName:
+          s.mode === 'review'
+            ? 'Yanlış turu'
+            : s.mode === 'daily'
+              ? 'Günün Quizi'
+              : (s.topic?.name ??
+                s.course?.name ??
+                (s.topicIds.length > 0 ? `${s.topicIds.length} seçili mevzuat` : 'Koç turu')),
+      }))
+      .sort((a, b) => b.lastActivityAt.getTime() - a.lastActivityAt.getTime())[0] ?? null
+  );
+}
+
 export interface TodayTaskInput {
   now: Date;
   trHour: number;

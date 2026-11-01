@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 
-/** Ders/konu odası (Doc 49/14; API rooms.service.ts). Tonlar ve cümleler sunucudan. */
+/** Çalış ana ekranı, ders/konu odası (Doc 49/14, 49/17; API rooms.service.ts). Tonlar ve cümleler sunucudan. */
 export type Band = "new" | "sparse" | "weak" | "normal" | "strong";
 
 export interface RoomTopic {
@@ -16,6 +16,12 @@ export interface RoomTopic {
   locked: boolean;
   isLaw: boolean;
   lawSlug: string | null;
+  wrongCount: number;
+  favoriteCount: number;
+  /** Yayındaki ünite özetleri; tek ünite varsa `firstSlug` doğrudan açılır. */
+  units: { count: number; read: number; firstSlug: string | null };
+  /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
+  note: string;
   children: Omit<RoomTopic, "children">[];
 }
 
@@ -34,6 +40,7 @@ export interface CourseRoom {
   tools: {
     wrongCount: number;
     favoriteCount: number;
+    summaryUnitCount: number;
     legislation: { slug: string; name: string; articleCount: number }[];
   };
 }
@@ -47,10 +54,40 @@ export interface TopicRoom {
   legislation: { slug: string | null; name: string | null; articleCount: number; articleRange: string | null } | null;
 }
 
+export interface StudyCourse {
+  id: string;
+  name: string;
+  icon: string | null;
+  weightPercent: number;
+  solved: number;
+  accuracyPct: number | null;
+  band: Band;
+  wrongCount: number;
+  favoriteCount: number;
+  summaryUnitCount: number;
+  /** Kartın tek künyesi ("18 yanlış", "Sınavda %30"…) — sunucu seçer. */
+  note: string;
+}
+
+export interface StudyHub {
+  module: { id: string; name: string } | null;
+  /** Taze yarım tur; yoksa şerit çizilmez. */
+  resume: { sessionId: string; scopeName: string; answered: number; total: number; detail: string } | null;
+  /** Ağırlığa göre sıralı. */
+  courses: StudyCourse[];
+  totals: { wrongCount: number; favoriteCount: number };
+}
+
 export const roomKeys = {
+  all: ["rooms"] as const,
+  study: ["rooms", "study"] as const,
   course: (id: string | null) => ["rooms", "course", id] as const,
   topic: (id: string | null) => ["rooms", "topic", id] as const,
 };
+
+export function useStudyHub(enabled = true) {
+  return useQuery({ queryKey: roomKeys.study, queryFn: () => api<StudyHub>("/me/study"), enabled });
+}
 
 export function useCourseRoom(courseId: string | null) {
   return useQuery({ queryKey: roomKeys.course(courseId), queryFn: () => api<CourseRoom>(`/me/course-room/${courseId}`), enabled: Boolean(courseId) });
@@ -63,4 +100,9 @@ export function useTopicRoom(topicId: string | null) {
 /** Yüzde metni tonu — band sunucudan; istemci eşik bilmez. */
 export function bandTone(b: Band): "accentInk" | "success" | "ink" | "subtle" {
   return b === "weak" ? "accentInk" : b === "strong" ? "success" : b === "new" || b === "sparse" ? "subtle" : "ink";
+}
+
+/** Çubuk tonu — band sunucudan: zayıf mercan, güçlü yeşil, diğerleri altın. */
+export function bandBarTone(b: Band): "danger" | "success" | "accent" {
+  return b === "weak" ? "danger" : b === "strong" ? "success" : "accent";
 }

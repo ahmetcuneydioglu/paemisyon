@@ -56,6 +56,8 @@ export class StartSessionDto {
     'plan',
     'course_room',
     'topic_room',
+    // Çalış ana ekranı (Doc 49/17).
+    'study_hub',
     // Bugün v3 (Doc 49/16) ve paylaşılan soru derin bağlantısı (F10-P).
     'home_next',
     'home_route',

@@ -1,6 +1,6 @@
 import { X } from "lucide-react-native";
-import type { ReactNode } from "react";
-import { Modal, Pressable, ScrollView, View } from "react-native";
+import { useCallback, useRef, useState, type ReactNode } from "react";
+import { Modal, Platform, Pressable, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/theme/ThemeProvider";
 import { IconButton } from "./icon-button";
@@ -39,4 +39,27 @@ export function Sheet({ visible, onClose, onDismissed, title, children, footer }
       </View>
     </Modal>
   );
+}
+
+/**
+ * Sheet'ten gezinme: iOS kapanmakta olan modalın üstüne sunum yapmaz (push/başka modal yutulur).
+ * `closeThen` eylemi kapanış animasyonu bitince (`onDismissed`) koşar; Android'de hemen.
+ * Kullanım: `<Sheet visible={s.visible} onClose={s.close} onDismissed={s.onDismissed}>`.
+ */
+export function useSheetAction() {
+  const [visible, setVisible] = useState(false);
+  const after = useRef<(() => void) | null>(null);
+  const open = useCallback(() => setVisible(true), []);
+  const close = useCallback(() => setVisible(false), []);
+  const closeThen = useCallback((action: () => void) => {
+    setVisible(false);
+    if (Platform.OS === "ios") after.current = action;
+    else action();
+  }, []);
+  const onDismissed = useCallback(() => {
+    const a = after.current;
+    after.current = null;
+    a?.();
+  }, []);
+  return { visible, open, close, closeThen, onDismissed };
 }

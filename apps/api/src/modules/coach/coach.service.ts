@@ -14,7 +14,13 @@ import type { DailyFocusView, ExamInfo, Readiness } from './home-v2.types';
 import type { SetFocusDto } from './dto/set-focus.dto';
 import { buildReadiness } from './readiness.logic';
 import { computeHomeV3 } from './bugun-v3.logic';
-import { computeTodayTask, haftadaKalanGun, YarimTur } from './today-task.logic';
+import {
+  computeTodayTask,
+  enTazeYarimTur,
+  haftadaKalanGun,
+  yarimTurSorgusu,
+  YarimTur,
+} from './today-task.logic';
 import { enGucluKonular } from '../../common/zayif-konu';
 import { gunAnahtari, gunBaslangici, haftaBasi } from '../../common/gun';
 import { haftaGunleri, type HaftaGunDurumu } from './hafta-gunleri';
@@ -509,28 +515,8 @@ export class CoachService {
           topic: { select: { name: true, deletedAt: true } },
         },
       }),
-      // Yarım alıştırma/tekrar/günlük turları (görev kartı — Doc 48 §4). Deneme
-      // ve arşiv sınavı kendi kuralıyla yaşar (süreli), burada yok.
-      this.prisma.quizSession.findMany({
-        where: {
-          userId: user.id,
-          status: 'in_progress',
-          mode: { in: ['practice', 'review', 'daily'] },
-        },
-        orderBy: { startedAt: 'desc' },
-        take: 3,
-        select: {
-          id: true,
-          mode: true,
-          totalQuestions: true,
-          startedAt: true,
-          topicIds: true,
-          topic: { select: { name: true } },
-          course: { select: { name: true } },
-          _count: { select: { answers: true } },
-          answers: { orderBy: { answeredAt: 'desc' }, take: 1, select: { answeredAt: true } },
-        },
-      }),
+      // Yarım alıştırma/tekrar/günlük turları (görev kartı — Doc 48 §4).
+      this.prisma.quizSession.findMany(yarimTurSorgusu(user.id)),
       // Haftalık plan özeti (Doc 49/12 F8-A): kart + brief.plan; yoksa null.
       this.plan.ozet(user.id, now),
       // Bugün v3 rotası: bugün konu başına cevap (QuizAnswer'ın question ilişkisi yok → ham birleşim).
@@ -700,25 +686,7 @@ export class CoachService {
 
     // ── Görev kartı girdileri (Doc 48 A4) ──
     // En taze yarım tur: son cevaba göre (cevapsızsa başlangıca).
-    const activeSession: YarimTur | null =
-      yarimTurlar
-        .map((s) => ({
-          sessionId: s.id,
-          mode: s.mode as YarimTur['mode'],
-          total: s.totalQuestions,
-          answered: s._count.answers,
-          startedAt: s.startedAt,
-          lastActivityAt: s.answers[0]?.answeredAt ?? s.startedAt,
-          scopeName:
-            s.mode === 'review'
-              ? 'Yanlış turu'
-              : s.mode === 'daily'
-                ? 'Günün Quizi'
-                : (s.topic?.name ??
-                  s.course?.name ??
-                  (s.topicIds.length > 0 ? `${s.topicIds.length} seçili mevzuat` : 'Koç turu')),
-        }))
-        .sort((a, b) => b.lastActivityAt.getTime() - a.lastActivityAt.getTime())[0] ?? null;
+    const activeSession: YarimTur | null = enTazeYarimTur(yarimTurlar);
     const enGuclu = enGucluKonular(
       topicProgress.map((t) => ({
         name: t.topic.name,

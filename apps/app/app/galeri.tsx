@@ -1,11 +1,12 @@
 import { useRouter } from "expo-router";
-import { ArrowLeft, Bell, Inbox, Search, Star } from "lucide-react-native";
+import { ArrowLeft, Bell, Inbox, Play, Search, Star } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseRoomCard, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, LegislationRow, NotificationRow, QuestionMetaRow, QuestionOption, QuestionStem, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, ExamContextLine, ForYouList, NextStepCard, RouteList, WeekSummaryLine } from "@/components/domain";
 import type { InboxItem } from "@/features/notifications/queries";
 import type { ShareCardData } from "@/features/quiz/share";
 import {
+  ActionTile,
   ActionBar,
   AppText,
   Badge,
@@ -229,8 +230,13 @@ export default function GaleriScreen() {
           />
           <WeekSummaryLine left="142 soru · 3/5 gün" right="Komiser Yardımcısı" />
           <View style={{ flexDirection: "row", gap: 12 }}>
-            <CourseRoomCard name="Polis Mevzuatı" weightPercent={30} accuracy={0.62} onPress={() => {}} />
-            <CourseRoomCard name="Anayasa" weightPercent={25} accuracy={null} onPress={() => {}} />
+            <CourseCard name="Genel Kültür ve Analitik Düşünme" accuracyPct={31} band="weak" note="Sınavda %30" onPress={() => {}} />
+            <CourseCard name="Polis Mevzuatı" accuracyPct={null} band="new" note="Henüz başlanmadı" onPress={() => {}} />
+          </View>
+          <ResumeStrip scopeName="Temel Haklar ve Ödevler" detail="6/10 · 4 soru kaldı" onPress={() => {}} />
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            <ActionTile icon={Play} variant="primary" title="Soru çöz" subtitle="10 soru · bu dersten" onPress={() => {}} />
+            <ActionTile icon={Star} title="Favorilerim" subtitle="Henüz favori yok" disabled />
           </View>
         </Section>
 

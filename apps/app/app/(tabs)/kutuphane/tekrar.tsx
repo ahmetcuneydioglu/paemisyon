@@ -4,6 +4,7 @@ import { useState } from "react";
 import { View } from "react-native";
 import { AppText, Button, Card, Chip, EmptyState, IconButton, ListRow, Notice, Screen, Skeleton } from "@/components/ui";
 import { useBookmarks, useSetBookmark, useWrongAnswers } from "@/features/review/queries";
+import { useStudyHub } from "@/features/rooms/queries";
 import { useTheme } from "@/theme/ThemeProvider";
 
 /**
@@ -18,14 +19,16 @@ export default function TekrarScreen() {
   const wrongs = useWrongAnswers();
   const bookmarks = useBookmarks();
   const setBookmark = useSetBookmark();
+  // Liste sunucuda 50 ile sınırlı; sekme sayısı Çalış'taki toplamla aynı olsun (önbellekten).
+  const toplam = useStudyHub().data?.totals;
 
   const list = tab === "yanlislar" ? wrongs : bookmarks;
 
   return (
     <Screen inset="none">
       <View style={{ flexDirection: "row", gap: space.s2 }}>
-        <Chip label={`Yanlışlarım${wrongs.data ? ` · ${wrongs.data.length}` : ""}`} selected={tab === "yanlislar"} onPress={() => setTab("yanlislar")} />
-        <Chip label={`Favoriler${bookmarks.data ? ` · ${bookmarks.data.length}` : ""}`} selected={tab === "favoriler"} onPress={() => setTab("favoriler")} />
+        <Chip label={`Yanlışlarım${toplam ? ` · ${toplam.wrongCount}` : wrongs.data ? ` · ${wrongs.data.length}` : ""}`} selected={tab === "yanlislar"} onPress={() => setTab("yanlislar")} />
+        <Chip label={`Favoriler${toplam ? ` · ${toplam.favoriteCount}` : bookmarks.data ? ` · ${bookmarks.data.length}` : ""}`} selected={tab === "favoriler"} onPress={() => setTab("favoriler")} />
       </View>
 
       {list.isPending ? (

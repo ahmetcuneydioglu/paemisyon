@@ -11,10 +11,18 @@ export function bandTextClass(b: Band): string {
         : "text-ink";
 }
 
-/** Düğme etiketi için kısa ders adı: "Anayasa Hukuku" → "Anayasa". Ek yok (ünlü uyumu). */
-export function kisaAd(name: string): string {
-  const w = name.trim().split(/\s+/);
-  return w.length >= 2 && /hukuku|bilgisi/i.test(w[w.length - 1]!)
-    ? w.slice(0, -1).join(" ")
-    : name;
+/** Hâkimiyet yüzdesi sınıfı (Çalış v2 kartı): zayıf mercan, güçlü yeşil, diğerleri altın/kahve. */
+export function bandPctClass(b: Band): string {
+  return b === "weak"
+    ? "text-danger-ink"
+    : b === "strong"
+      ? "text-success-ink"
+      : b === "new" || b === "sparse"
+        ? "text-ink-subtle"
+        : "text-accent-ink";
+}
+
+/** Çubuk tonu — band sunucudan. */
+export function bandBarTone(b: Band): "danger" | "success" | "accent" {
+  return b === "weak" ? "danger" : b === "strong" ? "success" : "accent";
 }

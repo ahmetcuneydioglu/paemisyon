@@ -689,6 +689,12 @@ export interface RoomTopic {
   isPremium: boolean;
   isLaw: boolean;
   lawSlug: string | null;
+  wrongCount: number;
+  favoriteCount: number;
+  /** Yayındaki ünite özetleri; tek ünite varsa `firstSlug` doğrudan açılır. */
+  units: { count: number; read: number; firstSlug: string | null };
+  /** "24 soru · 4 ünite özeti · 6 yanlış" — sunucu kurar. */
+  note: string;
   children: Omit<RoomTopic, "children">[];
 }
 export interface CourseRoom {
@@ -710,8 +716,35 @@ export interface CourseRoom {
   tools: {
     wrongCount: number;
     favoriteCount: number;
+    summaryUnitCount: number;
     legislation: { slug: string; name: string; articleCount: number }[];
   };
+}
+/** Çalış ana ekranı / Kütüphane (Doc 49/17) — `/me/study`. Sıralama ve künye sunucuda. */
+export interface StudyCourse {
+  id: string;
+  name: string;
+  icon: string | null;
+  weightPercent: number;
+  solved: number;
+  accuracyPct: number | null;
+  band: Band;
+  wrongCount: number;
+  favoriteCount: number;
+  summaryUnitCount: number;
+  note: string;
+}
+export interface StudyHub {
+  module: { id: string; name: string } | null;
+  resume: {
+    sessionId: string;
+    scopeName: string;
+    answered: number;
+    total: number;
+    detail: string;
+  } | null;
+  courses: StudyCourse[];
+  totals: { wrongCount: number; favoriteCount: number };
 }
 export interface TopicRoom {
   topic: {

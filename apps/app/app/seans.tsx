@@ -11,6 +11,7 @@ import { homeKeys } from "@/features/home/queries";
 import { quizApi, sessionToolsApi, type AnswerFeedback, type QuizSession, type StartSessionBody } from "@/features/quiz/api";
 import { buildShareCardData } from "@/features/quiz/share";
 import { reviewKeys } from "@/features/review/queries";
+import { roomKeys } from "@/features/rooms/queries";
 import { ApiError, NetworkError } from "@/lib/api";
 import { readLocal, writeLocal } from "@/lib/local-store";
 import { enqueueAnswer, flushQueue } from "@/lib/offline-queue";
@@ -243,6 +244,7 @@ export default function SeansScreen() {
     void qc.invalidateQueries({ queryKey: examKeys.mine });
     void qc.invalidateQueries({ queryKey: examKeys.dashboard });
     void qc.invalidateQueries({ queryKey: examKeys.history });
+    void qc.invalidateQueries({ queryKey: roomKeys.all });
     if (exam && attemptResult) router.replace({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: sessionId } });
     else router.replace({ pathname: "/sonuc", params: { sessionId: r.sessionId, data: JSON.stringify(r), title: scopeName ?? "" } });
   }
@@ -469,6 +471,8 @@ export default function SeansScreen() {
 
   /** Kurallar ekranı oynatıcıyı `replace` ile açar; geçmiş yoksa Denemeler'e döner. */
   function leave() {
+    // Yarım tur Çalış'ta "Kaldığın yer" olur; oda sayımları (yanlış/favori) da değişmiş olabilir.
+    void qc.invalidateQueries({ queryKey: roomKeys.all });
     if (router.canGoBack()) router.back();
     else router.replace(isExam ? "/(tabs)/denemeler" : "/(tabs)");
   }
