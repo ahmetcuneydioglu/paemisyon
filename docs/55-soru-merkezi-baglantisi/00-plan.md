@@ -1,6 +1,6 @@
 # Doc 55 — Soru Merkezi bağlantısı: merkezden tek yönlü soru alımı (adaptör)
 
-Tarih: 1 Kasım 2026. Durum: **plan ONAY BEKLİYOR.**
+Tarih: 1 Kasım 2026. Durum: **plan ONAYLANDI (2 Kas 2026); F0 kuru koşu tamam → [01-f0-fark-aktarimi.md](01-f0-fark-aktarimi.md), gerçek koşu onay bekliyor.**
 Karşı taraf: `soru-merkezi` deposu. Yayın sözleşmesi `docs/soru-merkezi-veri-modeli.md` §8, senkron uçları `src/app/api/sync/[product]/**`, PAEMİSYON → merkez aktarım eşlemesi §11, köken tablosu §5.6.
 
 ## 0. Karar özeti
@@ -11,7 +11,7 @@ Karşı taraf: `soru-merkezi` deposu. Yayın sözleşmesi `docs/soru-merkezi-ver
 | 2 | **Soru içeriğinin tek sahibi merkezdir.** Merkezden gelen sorular PAEMİSYON panelinde salt okunur olur. Geçişten sonra yeni soru yazımı, içe aktarma ve düzeltme merkezde yapılır. | Kullanıcı, 1 Kas |
 | 3 | **Merkezde doğrulanmış AI soruları PAEMİSYON'da doğrudan yayımlı başlar.** CLAUDE.md'deki "AI soru üretimi yapılmaz" kuralı, merkezden gelen sorular için bu kararla değişir. Ayırt edici kaynak korunur: merkezin AI soruları "Soru Merkezi mevzuat türetimi" kaynağıyla gelir ve `sourceLabel`'a yazılır; panelde gerçek çıkmış sorulardan her zaman ayrılır, kullanıcıya gösterim mevcut `show_question_source` ayarına bağlıdır. | Kullanıcı, 1 Kas |
 | 4 | **Kullanıcı geçmişi korunur.** Merkezdeki sorunun PAEMİSYON'da karşılığı varsa (`local_id`, S2 köken kaydı) yeni soru açılmaz; değişiklik aynı soruya yeni sürüm olarak eklenir. Eski sürümler, `QuizAnswer.questionVersionId` ve seçenek kimlikleri dokunulmadan kalır. | Sözleşme §8 |
-| 5 | **Mevzuat metni PAEMİSYON'da kalır (öneri, onay bekliyor).** `LawArticle`'a kullanıcı vurguları, notları, yer imleri, konu ve PVSK özetleri bağlı. Adaptör merkezin mevzuat sürümlerini yalnız soru ↔ madde bağını kurmak için okur; madde metnini değiştirmez. Mevzuat metni ayrı bir kararla ve `LawArticleVersion` üzerinden ileride bağlanır. | Claude, §6 |
+| 5 | **Mevzuat metni PAEMİSYON'da kalır (onaylandı, 2 Kas).** `LawArticle`'a kullanıcı vurguları, notları, yer imleri, konu ve PVSK özetleri bağlı. Adaptör merkezin mevzuat sürümlerini yalnız soru ↔ madde bağını kurmak için okur; madde metnini değiştirmez. Mevzuat metni ayrı bir kararla ve `LawArticleVersion` üzerinden ileride bağlanır. | Claude, §6 |
 | 6 | **Geçişten önce fark aktarımı.** Merkezdeki PAEMİSYON verisi 01.10.2026 anlık görüntüsüdür (9.135 soru). O tarihten sonra PAEMİSYON'da açılan ya da değişen sorular önce merkeze aktarılır (merkezin S2 betikleri tekrar çalıştırılabilir ve köken kaydıyla eşleşir). Aksi hâlde merkez bu sorulardan habersiz kalır ve karar 2 onları dondurur. | Claude, §8 |
 | 7 | Uygulama NestJS içinde yazılır (`apps/api/src/modules/hub-sync`), ayrı süreç değil. Tetikleyici önce elle çalışan betik (`apps/api/scripts/hub-sync.ts`), sonra süreç içi `@Cron` (Doc 52 düzeniyle). | Claude |
 
@@ -106,7 +106,11 @@ PAEMİSYON'un Mevzuat sekmesi kendi metnini, dipnot temizliğini (Doc 48) ve kul
 
 Bütün şema değişiklikleri ektir. `HUB_SYNC_ENABLED=false` adaptörü durdurur; panel salt okunurluğu tek bayrakla (`hubQuestionId` denetimi) kaldırılabilir. Merkezden gelen yeni sürümler eski sürümleri silmediği için güncel sürüm göstergesi bir önceki sürüme döndürülebilir.
 
-## 10. Onay bekleyen sorular
+## 10. Onay bekleyen sorular — KARARLAR (2 Kas 2026)
+
+Üçü de öneri yönünde karara bağlandı: (1) evet, mevzuat metni bu fazda PAEMİSYON'da kalır; (2) yeni Anayasa soruları madde aralığına göre beş konudan birine düşer, `hub_topic_map`'e madde aralığı sütunu; (3) abonelik 81 konu + PAEM/Misyon müfredatıyla eşleşen mevzuat (F0'da 81 konu + 67 mevzuat = 148 düğüm, 9.477 soru).
+
+Özgün sorular:
 
 1. Karar 5: mevzuat metni bu fazda PAEMİSYON'da kalsın mı? (öneri: evet)
 2. Yeni Anayasa soruları: madde aralığına göre beş konudan birine mi, tek varsayılan konuya mı? (öneri: madde aralığı)
