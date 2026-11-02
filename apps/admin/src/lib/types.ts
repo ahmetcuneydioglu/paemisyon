@@ -108,6 +108,8 @@ export interface QuestionListItem {
   } | null;
   sourceKind: SourceKind;
   publishedVersionNo: number | null;
+  /** Soru Merkezi kodu (Doc 55): doluysa soru merkezde düzenlenir, panel salt okunur. */
+  hubCode: string | null;
   createdAt: string;
 }
 export interface Paged<T> {
@@ -149,6 +151,11 @@ export interface QuestionDetail {
   currentVersionId: string | null;
   topic: { id: string; name: string; course: { id: string; name: string } };
   versions: QuestionVersion[];
+  /** Soru Merkezi (Doc 55): doluysa içerik merkezde düzenlenir; panel yalnız gösterir. */
+  hubQuestionId: string | null;
+  hubCode: string | null;
+  /** Merkezdeki soru sayfası (sunucu HUB_SYNC_URL'den kurar; yoksa null). */
+  hubUrl: string | null;
 }
 
 export interface AdminUser {

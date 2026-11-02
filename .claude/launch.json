@@ -215,9 +215,18 @@
       "runtimeExecutable": "sh",
       "runtimeArgs": [
         "-c",
-        "cd /Users/ahmetcnd/Developer/paemisyon/apps/api && PORT=3055 DATABASE_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon?connection_limit=4' DIRECT_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon' SUPABASE_URL=http://127.0.0.1:3299 NOTIFICATIONS_PROVIDER=console EMAIL_WORKER=0 NUDGE_CRON=0 HUB_SYNC_ENABLED=false exec npm run start:dev"
+        "cd /Users/ahmetcnd/Developer/paemisyon/apps/api && set -a && . /private/tmp/claude-501/-Users-ahmetcnd-Developer-paemisyon/7705a545-28bc-4bc8-8269-1464a56e109f/scratchpad/hub-sync.env && set +a && PORT=3055 DATABASE_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon?connection_limit=4' DIRECT_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon' SUPABASE_URL=http://127.0.0.1:3299 NOTIFICATIONS_PROVIDER=console EMAIL_WORKER=0 NUDGE_CRON=0 HUB_SYNC_URL=http://127.0.0.1:3200 HUB_SYNC_ENABLED=true exec npm run start:dev"
       ],
       "port": 3055
+    },
+    {
+      "name": "admin-doc55",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon/apps/admin && NEXT_PUBLIC_API_BASE_URL=http://localhost:3055/api/v1 NEXT_PUBLIC_SUPABASE_URL=http://localhost:3299 exec ./node_modules/.bin/next dev -p 3056"
+      ],
+      "port": 3056
     }
   ]
 }

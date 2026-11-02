@@ -3,7 +3,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Card, ErrorBox, PageHeader, Spinner, StatusBadge } from '@/components/ui';
+import { Card, ErrorBox, HubBadge, PageHeader, Spinner, StatusBadge } from '@/components/ui';
 import { QuestionForm, type QuestionFormValue } from '@/components/question-form';
 import { api } from '@/lib/api';
 import type { QuestionDetail } from '@/lib/types';
@@ -67,6 +67,9 @@ export default function QuestionDetailPage() {
   const d = q.data;
   const latest = d.versions[0];
   const isAdmin = me?.roles.includes('admin') ?? false;
+  // Doc 55 §5: merkez sorusu panelde salt okunur — sunucu da yazma uçlarında 403 döner.
+  const merkez = Boolean(d.hubQuestionId);
+  const merkezKodu = d.hubCode ?? d.hubQuestionId ?? '';
 
   const initial: QuestionFormValue = {
     topicId: d.topicId,
@@ -84,8 +87,34 @@ export default function QuestionDetailPage() {
       <PageHeader
         title={`Soru — ${d.topic.course.name} / ${d.topic.name}`}
         subtitle={`Güncel sürüm v${latest.versionNo} · Kaynak: ${latest.sourceLabel ?? 'kaynaksız'}`}
-        action={<StatusBadge status={latest.status} />}
+        action={
+          <div className="flex items-center gap-2">
+            {merkez && <HubBadge code={merkezKodu} href={d.hubUrl} />}
+            <StatusBadge status={latest.status} />
+          </div>
+        }
       />
+
+      {/* Soru Merkezi sorusu (Doc 55): içerik merkezde düzenlenir, yeni sürüm senkronla gelir. */}
+      {merkez && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-sky-200 bg-sky-50 p-3 text-sm text-sky-900">
+          <div>
+            <span className="font-semibold">Bu soru Soru Merkezi&apos;nde düzenlenir.</span>{' '}
+            Panel yalnız gösterir; düzeltme ve geri çekme merkezde yapılır, yeni sürüm
+            senkronla buraya düşer. Kullanıcı bildirimleri merkeze iletilir.
+          </div>
+          {d.hubUrl && (
+            <a
+              href={d.hubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg bg-sky-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-sky-800"
+            >
+              Merkezde aç ({merkezKodu}) ↗
+            </a>
+          )}
+        </div>
+      )}
 
       {/* Sentetik soru uyarısı (Doc 49 A0): yayın kararı insanındır, tek tek incelenir. */}
       {sentetikGorunuyor(latest.sourceLabel) && latest.status !== 'published' && (
@@ -113,7 +142,8 @@ export default function QuestionDetailPage() {
         </div>
       )}
 
-      {/* Editoryal akış aksiyonları (Doc 9 §4.3) */}
+      {/* Editoryal akış aksiyonları (Doc 9 §4.3); merkez sorusunda yok (Doc 55 §5). */}
+      {!merkez && (
       <div className="mb-6 flex flex-wrap gap-2">
         {latest.status === 'draft' && (
           <button
@@ -165,10 +195,12 @@ export default function QuestionDetailPage() {
           </button>
         )}
       </div>
+      )}
 
       <QuestionForm
         key={latest.id /* sürüm değişince formu tazele */}
         initial={initial}
+        readOnly={merkez}
         submitLabel={
           latest.status === 'published' || latest.status === 'archived'
             ? 'Yeni Taslak Sürüm Oluştur'

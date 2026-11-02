@@ -4,6 +4,11 @@ import { iptalSoruIdleri } from '../../common/iptal-soru';
 import { tekrarKaydiFiltresi, yanlisTuruSoruFiltresi } from '../quiz/yanlis-havuzu';
 import { gunBaslangici } from '../../common/gun';
 
+/** Liste üst sınırları (istemci sözleşmesi: yanlışlar 50, favoriler 100). */
+const LISTE_UST_SINIRI = { yanlis: 50, favori: 100 } as const;
+/** Yayından kalkan sorular süzülünce sayfa kısalmasın diye fazladan okunan kayıt payı. */
+const YAYINDAN_KALKAN_PAYI = 30;
+
 /// Yanlışlarım & favoriler (Doc 7 §4.6).
 @Injectable()
 export class ReviewService {
@@ -12,6 +17,10 @@ export class ReviewService {
   async getWrongAnswers(userId: string) {
     // İptal edilmiş soru defterde durmaz: kurumun geçersiz saydığı soruyu
     // "tekrar et" diye önümüze koymak yanlışı kullanıcıya mal etmek olur.
+    // Yayından kalkan soru da durmaz (Doc 55 F3): arşivlenen ya da merkezden geri
+    // çekilen soru turda zaten çıkmıyordu (`yanlisTuruSoruFiltresi`); defterin
+    // "4 yanlışın var" derken turun 3 soru kurması tutarsızlıktı. Kayıt silinmez,
+    // yalnız listelenmez — tur incelemesi cevaplanan sürümü okumaya devam eder.
     const rows = await this.prisma.wrongAnswer.findMany({
       where: {
         userId,
@@ -19,15 +28,18 @@ export class ReviewService {
         questionId: { notIn: await iptalSoruIdleri(this.prisma) },
       },
       orderBy: { lastWrongAt: 'desc' },
-      take: 50,
+      take: LISTE_UST_SINIRI.yanlis + YAYINDAN_KALKAN_PAYI,
     });
     const stems = await this.stems(rows.map((r) => r.questionId));
-    return rows.map((r) => ({
-      questionId: r.questionId,
-      wrongCount: r.wrongCount,
-      stem: stems.get(r.questionId)?.stem ?? null,
-      topicName: stems.get(r.questionId)?.topicName ?? null,
-    }));
+    return rows
+      .filter((r) => stems.has(r.questionId))
+      .slice(0, LISTE_UST_SINIRI.yanlis)
+      .map((r) => ({
+        questionId: r.questionId,
+        wrongCount: r.wrongCount,
+        stem: stems.get(r.questionId)?.stem ?? null,
+        topicName: stems.get(r.questionId)?.topicName ?? null,
+      }));
   }
 
   /**
@@ -83,18 +95,22 @@ export class ReviewService {
     };
   }
 
+  /** Favoriler; yayından kalkan soru listelenmez (kayıt durur, soru geri gelirse görünür). */
   async getBookmarks(userId: string) {
     const rows = await this.prisma.bookmark.findMany({
       where: { userId },
       orderBy: { createdAt: 'desc' },
-      take: 100,
+      take: LISTE_UST_SINIRI.favori + YAYINDAN_KALKAN_PAYI,
     });
     const stems = await this.stems(rows.map((r) => r.questionId));
-    return rows.map((r) => ({
-      questionId: r.questionId,
-      stem: stems.get(r.questionId)?.stem ?? null,
-      topicName: stems.get(r.questionId)?.topicName ?? null,
-    }));
+    return rows
+      .filter((r) => stems.has(r.questionId))
+      .slice(0, LISTE_UST_SINIRI.favori)
+      .map((r) => ({
+        questionId: r.questionId,
+        stem: stems.get(r.questionId)?.stem ?? null,
+        topicName: stems.get(r.questionId)?.topicName ?? null,
+      }));
   }
 
   async addBookmark(userId: string, questionId: string) {
@@ -111,12 +127,16 @@ export class ReviewService {
     return { bookmarked: false };
   }
 
-  /** Soru id'lerinden kök metin + konu adı (tek sorgu). */
+  /**
+   * Soru id'lerinden kök metin + konu adı (tek sorgu). Yalnız YAYINDAKİ sorular döner:
+   * `deletedAt` dolu (arşiv / merkezden geri çekme) ya da güncel sürümü olmayan soru haritada
+   * yoktur; çağıran bunu "listelenmez" diye okur.
+   */
   private async stems(ids: string[]) {
     if (ids.length === 0)
       return new Map<string, { stem: string | null; topicName: string | null }>();
     const questions = await this.prisma.question.findMany({
-      where: { id: { in: ids } },
+      where: { id: { in: ids }, deletedAt: null, currentVersionId: { not: null } },
       select: {
         id: true,
         currentVersion: { select: { stem: true } },

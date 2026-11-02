@@ -4,6 +4,8 @@ import { PrismaService } from '../../infra/prisma/prisma.service';
 import { HubSyncApplier, type ApplyResult } from './hub-sync.applier';
 import { HubSyncClient, HubTemporaryError } from './hub-sync.client';
 import type { HubEvent, HubPayloadRequestItem } from './hub-sync.types';
+import { HubReportForwarder } from './hub-report-forwarder';
+import { HUB_SYNC_CLIENT, HUB_SYNC_OPTIONS, type HubSyncOptions } from './hub-sync.tokens';
 
 export interface RunOptions {
   dryRun: boolean;
@@ -32,12 +34,7 @@ export interface RunReport {
   stoppedBy: string | null;
 }
 
-export interface HubSyncOptions {
-  enabled: boolean;
-  cron: boolean;
-}
-export const HUB_SYNC_CLIENT = 'HUB_SYNC_CLIENT';
-export const HUB_SYNC_OPTIONS = 'HUB_SYNC_OPTIONS';
+export { HUB_SYNC_CLIENT, HUB_SYNC_OPTIONS, type HubSyncOptions } from './hub-sync.tokens';
 
 /**
  * Döngü (Doc 55 §4): çek → yük al → uygula → ack. Teslim en az bir kez; uygulama idempotent.
@@ -53,9 +50,14 @@ export class HubSyncService {
     private readonly applier: HubSyncApplier,
     @Optional() @Inject(HUB_SYNC_CLIENT) private readonly client: HubSyncClient | null,
     @Optional() @Inject(HUB_SYNC_OPTIONS) private readonly options: HubSyncOptions = { enabled: false, cron: false },
+    @Optional() private readonly reports: HubReportForwarder | null = null,
   ) {}
 
-  /** Doc 52 düzeni: süreç içi cron, bayrakla açılır; aynı anda tek koşu. */
+  /**
+   * Doc 52 düzeni: süreç içi cron, bayrakla açılır; aynı anda tek koşu. Önce merkezden
+   * olaylar çekilir, sonra iletilememiş soru bildirimleri yeniden denenir (F3); ikincisi
+   * birincinin hatasından etkilenmez.
+   */
   @Cron('*/10 * * * *')
   async tick(): Promise<void> {
     if (!this.options.enabled || !this.options.cron || !this.client) return;
@@ -65,6 +67,14 @@ export class HubSyncService {
       this.logger.log(`hub-sync: ${report.events} olay, ${JSON.stringify(report.results)}, imleç ${report.lastAppliedSeq}`);
     } catch (e) {
       this.logger.error(`hub-sync başarısız: ${(e as Error).message}`);
+    }
+    if (this.reports) {
+      try {
+        const r = await this.reports.forwardPending();
+        if (r.sent || r.duplicate || r.failed || r.pending) this.logger.log(`hub-sync bildirim iletimi: ${JSON.stringify(r)}`);
+      } catch (e) {
+        this.logger.error(`hub-sync bildirim iletimi başarısız: ${(e as Error).message}`);
+      }
     }
   }
 
@@ -143,6 +153,11 @@ export class HubSyncService {
           lastAckError = null;
         }
         if (!pageData.has_more) break;
+      }
+      // Olaysız koşu da iz bırakır: `last_run_at` canlılık göstergesidir (cron çalışıyor mu?);
+      // yalnız ack'li sayfalarda yazılsaydı sakin dönemde günlerce eski kalırdı.
+      if (!opts.dryRun) {
+        await this.prisma.hubSyncState.update({ where: { id: 1 }, data: { lastRunAt: new Date() } });
       }
     } catch (e) {
       const message = (e as Error).message;

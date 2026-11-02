@@ -3,7 +3,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Card, ErrorBox, PageHeader, Spinner } from '@/components/ui';
+import { Card, ErrorBox, HubBadge, PageHeader, Spinner } from '@/components/ui';
 import { api } from '@/lib/api';
 
 interface ReportItem {
@@ -16,12 +16,44 @@ interface ReportItem {
   reporterEmail: string;
   status: 'open' | 'resolved' | 'dismissed';
   createdAt: string;
+  /** Soru Merkezi sorusu (Doc 55 F3): iletim durumu; null = PAEMİSYON sorusu. */
+  hub: {
+    code: string | null;
+    forwardedAt: string | null;
+    flagged: boolean | null;
+    error: string | null;
+    tries: number;
+  } | null;
 }
 interface Paged<T> {
   items: T[];
   total: number;
   page: number;
   pageSize: number;
+}
+
+/** Merkez iletim durumu satırı (Doc 55 F3): iletildi / incelemede / bekliyor / iletilemedi. */
+function HubForwardState({ hub }: { hub: NonNullable<ReportItem['hub']> }) {
+  const base = 'inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium';
+  if (hub.forwardedAt) {
+    return hub.flagged ? (
+      <span className={`${base} bg-violet-50 text-violet-800`} title="Merkez eşiği aşıldı; soru merkezde inceleme listesinde.">
+        Merkezde incelemede
+      </span>
+    ) : (
+      <span className={`${base} bg-emerald-50 text-emerald-700`} title={new Date(hub.forwardedAt).toLocaleString('tr-TR')}>
+        Merkeze iletildi
+      </span>
+    );
+  }
+  if (hub.error) {
+    return (
+      <span className={`${base} bg-red-50 text-red-700`} title={`${hub.tries}. deneme: ${hub.error}`}>
+        Merkeze iletilemedi
+      </span>
+    );
+  }
+  return <span className={`${base} bg-slate-100 text-slate-600`}>Merkeze iletim bekliyor</span>;
 }
 
 /** Soru hata bildirimleri: kullanıcı kalite döngüsü (özellikle eski içerik için). */
@@ -96,12 +128,26 @@ export default function ReportsPage() {
                     >
                       {r.stem}
                     </Link>
-                    <div className="mt-0.5 text-xs text-slate-500">
-                      {r.courseName} / {r.topicName}
+                    <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+                      <span>
+                        {r.courseName} / {r.topicName}
+                      </span>
+                      {r.hub && (
+                        <>
+                          {r.hub.code && <HubBadge code={r.hub.code} size="xs" />}
+                          <HubForwardState hub={r.hub} />
+                        </>
+                      )}
                     </div>
                     <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-900">
                       💬 {r.message}
                     </p>
+                    {r.hub && (
+                      <p className="mt-1 text-xs text-sky-800">
+                        Düzeltme Soru Merkezi&apos;nde yapılır; yeni sürüm senkronla gelir. Burada yalnız
+                        bildirimi kapatırsın.
+                      </p>
+                    )}
                     <div className="mt-1 text-xs text-slate-400">
                       {r.reporterEmail} · {new Date(r.createdAt).toLocaleString('tr-TR')}
                     </div>

@@ -1,9 +1,15 @@
 import { randomUUID } from 'crypto';
-import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
+import {
+  BadRequestException,
+  ForbiddenException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import type { ContentStatus, Difficulty, Prisma } from '@prisma/client';
 import { PrismaService } from '../../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../../auth/auth.types';
 import { AuditService } from '../audit.service';
+import { hubQuestionUrl } from '../../hub-sync/hub-url';
 import { UpsertQuestionDto } from '../dto/upsert-question.dto';
 import {
   detectArticleNo,
@@ -25,6 +31,12 @@ const IMPORT_MAX_ROWS = 1000;
  * Kural: YAYINDAKİ SÜRÜM ASLA DÜZENLENMEZ. Düzenleme = yeni taslak sürüm.
  * Akış: draft → in_review → (approve) published / (reject) draft.
  * Yayında eski sürüm arşivlenir; kullanıcıların eski cevapları bozulmaz.
+ *
+ * Soru Merkezi sorusu (Doc 55 §5): `hubQuestionId` dolu soru PANELDE DÜZENLENMEZ. İçerik
+ * merkezde düzeltilir, yeni sürüm adaptörle gelir; burada yapılan düzenleme bir sonraki
+ * senkronda ezilir ya da iki kaynaklı sürüm tarihi doğururdu. Yazan her uç `merkezKilidi` ile
+ * 403 döner; panel düğmeleri gizler ve merkez kodunu gösterir. Kilit tek bayraktır: geri
+ * dönüş için `hubQuestionId` denetimi kaldırılır (plan §9).
  */
 @Injectable()
 export class AdminQuestionsService {
@@ -32,6 +44,19 @@ export class AdminQuestionsService {
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
   ) {}
+
+  /** Merkez sorusunda yazma ucu 403 (Doc 55 §5). Soru yoksa sessiz: çağıran kendi 404'ünü verir. */
+  private async merkezKilidi(id: string): Promise<void> {
+    const q = await this.prisma.question.findUnique({
+      where: { id },
+      select: { hubQuestionId: true, hubCode: true },
+    });
+    if (q?.hubQuestionId) {
+      throw new ForbiddenException(
+        `Bu soru Soru Merkezi'nde düzenlenir: ${q.hubCode ?? q.hubQuestionId}`,
+      );
+    }
+  }
 
   // Arama kutusuna yapıştırılan metin UUID ön eki mi? En az 6, en çok 36 karakter
   // olmak üzere yalnız hex ve tire içeriyorsa kimlik araması sayılır. 6 karakterin
@@ -186,6 +211,8 @@ export class AdminQuestionsService {
         latestVersion: q.versions[0] ?? null,
         sourceKind: kaynakTuru(q.versions[0]?.sourceLabel),
         publishedVersionNo: q.currentVersion?.versionNo ?? null,
+        // Doc 55: merkez sorusu rozeti (salt okunur).
+        hubCode: q.hubQuestionId ? (q.hubCode ?? q.hubQuestionId) : null,
         createdAt: q.createdAt,
       })),
       total,
@@ -210,7 +237,8 @@ export class AdminQuestionsService {
       },
     });
     if (!q) throw new NotFoundException('Soru bulunamadı.');
-    return { ...q, currentVersionId: q.currentVersionId };
+    // Doc 55: merkez sorusunda panel salt okunur; bağlantı merkezin soru sayfasına.
+    return { ...q, currentVersionId: q.currentVersionId, hubUrl: hubQuestionUrl(q.hubCode) };
   }
 
   // ── Oluştur: soru + v1 taslak (Doc 9 §4.2) ──
@@ -236,6 +264,7 @@ export class AdminQuestionsService {
 
   // ── Düzenle: taslak varsa güncelle, yoksa YENİ taslak sürüm aç (yayındaki bozulmaz) ──
   async update(actor: AuthenticatedUser, id: string, dto: UpsertQuestionDto) {
+    await this.merkezKilidi(id);
     const q = await this.prisma.question.findFirst({
       where: { id, deletedAt: null },
       include: {
@@ -318,6 +347,7 @@ export class AdminQuestionsService {
 
   // ── İncelemeye gönder: draft → in_review ──
   async submitForReview(actor: AuthenticatedUser, id: string) {
+    await this.merkezKilidi(id);
     const version = await this.latestVersionOrThrow(id);
     if (version.status !== 'draft') {
       throw new BadRequestException('Yalnızca taslak sürüm incelemeye gönderilebilir.');
@@ -335,6 +365,7 @@ export class AdminQuestionsService {
 
   // ── Onayla: in_review → published; eski yayın arşivlenir (Doc 9 §4.3) ──
   async approve(actor: AuthenticatedUser, id: string) {
+    await this.merkezKilidi(id);
     const version = await this.latestVersionOrThrow(id, { includeOptions: true });
     if (version.status !== 'in_review') {
       throw new BadRequestException('Yalnızca incelemedeki sürüm onaylanabilir.');
@@ -372,6 +403,7 @@ export class AdminQuestionsService {
    *  kuralının bilinçli istisnası: açıklama, kök/şık/anahtar bütünlüğünü
    *  etkilemez — kullanıcıların geçmiş cevapları bozulmaz. Audit'e yazılır. */
   async updateExplanation(actor: AuthenticatedUser, id: string, explanation: string) {
+    await this.merkezKilidi(id);
     const q = await this.prisma.question.findFirst({
       where: { id, deletedAt: null, currentVersionId: { not: null } },
       select: { currentVersionId: true },
@@ -391,6 +423,7 @@ export class AdminQuestionsService {
   // ── Reddet: in_review → draft; not SORUDA saklanır (Doc 49 A0 / T5) ve
   // audit'e de yazılır. Önceden yalnız audit'e yazılıyordu ve editöre ulaşmıyordu.
   async reject(actor: AuthenticatedUser, id: string, note?: string) {
+    await this.merkezKilidi(id);
     const version = await this.latestVersionOrThrow(id);
     if (version.status !== 'in_review') {
       throw new BadRequestException('Yalnızca incelemedeki sürüm reddedilebilir.');
@@ -409,6 +442,7 @@ export class AdminQuestionsService {
 
   // ── Arşivle (soft): soru yayından kalkar ──
   async archive(actor: AuthenticatedUser, id: string) {
+    await this.merkezKilidi(id);
     const q = await this.prisma.question.findFirst({ where: { id, deletedAt: null } });
     if (!q) throw new NotFoundException('Soru bulunamadı.');
     await this.prisma.$transaction(async (tx) => {
@@ -485,7 +519,8 @@ export class AdminQuestionsService {
     const versions = await this.prisma.questionVersion.findMany({
       where: {
         status: 'in_review',
-        question: { deletedAt: null, ...(topicId ? { topicId } : {}) },
+        // Merkez sorusu kuyrukta olmaz; olsa da panel onaylamaz (Doc 55 §5).
+        question: { deletedAt: null, hubQuestionId: null, ...(topicId ? { topicId } : {}) },
       },
       include: { options: { select: { isCorrect: true } } },
       orderBy: { createdAt: 'asc' },
@@ -569,7 +604,7 @@ export class AdminQuestionsService {
     const { count } = await this.prisma.questionVersion.updateMany({
       where: {
         status: 'in_review', // güvence: yalnız kuyruktakiler
-        question: { deletedAt: null, ...(topicId ? { topicId } : {}) },
+        question: { deletedAt: null, hubQuestionId: null, ...(topicId ? { topicId } : {}) },
       },
       data: { status: 'draft' },
     });
@@ -840,20 +875,26 @@ export class AdminQuestionsService {
   async bulkSetTopic(
     actor: AuthenticatedUser,
     params: { questionIds: string[]; topicId: string },
-  ): Promise<{ updated: number }> {
+  ): Promise<{ updated: number; skippedHub: number }> {
     const topic = await this.prisma.topic.findFirst({
       where: { id: params.topicId, deletedAt: null },
     });
     if (!topic) throw new BadRequestException('Hedef konu bulunamadı.');
+    // Merkez sorusunun konusu burada değil `hub_topic_map`'te (madde aralığı) belirlenir
+    // (Doc 55 §5, karar §10); seçimde varsa atlanır ve sayısı bildirilir.
+    const skippedHub = await this.prisma.question.count({
+      where: { id: { in: params.questionIds }, deletedAt: null, hubQuestionId: { not: null } },
+    });
     const result = await this.prisma.question.updateMany({
-      where: { id: { in: params.questionIds }, deletedAt: null },
+      where: { id: { in: params.questionIds }, deletedAt: null, hubQuestionId: null },
       data: { topicId: params.topicId },
     });
     await this.audit.log(actor, 'question.bulk_set_topic', 'topic', params.topicId, {
       count: result.count,
+      skippedHub,
       topicName: topic.name,
     });
-    return { updated: result.count };
+    return { updated: result.count, skippedHub };
   }
 
   // ── Yardımcılar ──

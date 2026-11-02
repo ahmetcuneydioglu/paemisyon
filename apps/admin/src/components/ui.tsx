@@ -63,3 +63,36 @@ export function ErrorBox({ error, onRetry }: { error: unknown; onRetry?: () => v
     </div>
   );
 }
+
+/**
+ * Soru Merkezi rozeti (Doc 55): soru merkezden geliyor, içerik orada düzenlenir.
+ * `href` varsa merkezin soru sayfasına açılır (yeni sekme); yoksa yalnız kod.
+ */
+export function HubBadge({
+  code,
+  href,
+  size = 'sm',
+}: {
+  code: string;
+  href?: string | null;
+  size?: 'xs' | 'sm';
+}) {
+  const cls = `inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-50 font-medium text-sky-800 ${
+    size === 'xs' ? 'px-1.5 py-0 text-[11px]' : 'px-2 py-0.5 text-xs'
+  }`;
+  const body = (
+    <>
+      <span aria-hidden>⇄</span>
+      <span>{code}</span>
+    </>
+  );
+  return href ? (
+    <a href={href} target="_blank" rel="noreferrer" className={`${cls} hover:bg-sky-100`} title="Soru Merkezi'nde aç">
+      {body}
+    </a>
+  ) : (
+    <span className={cls} title="Soru Merkezi sorusu">
+      {body}
+    </span>
+  );
+}

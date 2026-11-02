@@ -3,6 +3,7 @@ import { AppEventsService } from '../notifications/app-events.service';
 import { PrismaService } from '../../infra/prisma/prisma.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { AuditService } from '../admin/audit.service';
+import { HubReportForwarder } from '../hub-sync/hub-report-forwarder';
 
 /**
  * Soru hata bildirimi (eski question_reports'un sağlıklı hali).
@@ -15,6 +16,7 @@ export class ReportsService {
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
     private readonly events: AppEventsService,
+    private readonly hubReports: HubReportForwarder,
   ) {}
 
   /** Bildirim oluştur. Aynı kullanıcının aynı soruya AÇIK bildirimi varsa tekrarlamaz. */
@@ -34,6 +36,9 @@ export class ReportsService {
     const report = await this.prisma.questionReport.create({
       data: { userId, questionId, message },
     });
+    // Doc 55 F3: merkez sorusuysa bildirim merkeze de gider (düzeltme orada yapılır, yeni
+    // sürüm adaptörle gelir). Beklenmez; iletim hatası bildirimi düşürmez, cron yeniden dener.
+    void this.hubReports.forward(report.id).catch(() => undefined);
     return { id: report.id, alreadyReported: false };
   }
 
@@ -52,6 +57,8 @@ export class ReportsService {
           question: {
             select: {
               id: true,
+              hubQuestionId: true,
+              hubCode: true,
               topic: { select: { name: true, course: { select: { name: true } } } },
               currentVersion: { select: { stem: true } },
               versions: { orderBy: { versionNo: 'desc' }, take: 1, select: { stem: true } },
@@ -73,6 +80,16 @@ export class ReportsService {
         reporterEmail: r.user.email,
         status: r.status,
         createdAt: r.createdAt,
+        // Doc 55 F3: merkez sorusunda iletim durumu — panel düzeltmenin merkezde yapılacağını söyler.
+        hub: r.question.hubQuestionId
+          ? {
+              code: r.question.hubCode,
+              forwardedAt: r.hubForwardedAt,
+              flagged: r.hubFlagged,
+              error: r.hubForwardedAt ? null : r.hubForwardError,
+              tries: r.hubForwardTries,
+            }
+          : null,
       })),
       total,
       page,

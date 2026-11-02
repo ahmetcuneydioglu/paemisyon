@@ -1206,12 +1206,22 @@ model QuestionReport {
   resolvedBy String?      @map("resolved_by") @db.Uuid
   createdAt  DateTime     @default(now()) @map("created_at")
   resolvedAt DateTime?    @map("resolved_at")
+  /// Soru Merkezi iletimi (Doc 55 F3): merkez sorusunun bildirimi merkeze `POST reports` ile
+  /// iletilir (dış kimlik = bu satırın id'si, kişisel veri taşınmaz). Başarısızlık bildirimi
+  /// düşürmez; cron yeniden dener, deneme sayısı ve son hata burada durur.
+  hubForwardedAt  DateTime? @map("hub_forwarded_at")
+  hubReportId     String?   @map("hub_report_id") @db.Uuid
+  /// Merkez bu bildirimle soruyu inceleme listesine aldı mı (eşik aşımı).
+  hubFlagged      Boolean?  @map("hub_flagged")
+  hubForwardError String?   @map("hub_forward_error")
+  hubForwardTries Int       @default(0) @map("hub_forward_tries")
 
   question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([status, createdAt])
   @@index([questionId])
+  @@index([hubForwardedAt])
   @@map("question_reports")
 }
 

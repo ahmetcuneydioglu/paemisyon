@@ -1,6 +1,6 @@
 # Doc 55 — Soru Merkezi bağlantısı: merkezden tek yönlü soru alımı (adaptör)
 
-Tarih: 1 Kasım 2026. Durum: **plan ONAYLANDI (2 Kas 2026); F0 yazıldı → [01-f0-fark-aktarimi.md](01-f0-fark-aktarimi.md); F1 tamam → [03-f1-adaptor.md](03-f1-adaptor.md); F2 tamam → [05-f2-uctan-uca.md](05-f2-uctan-uca.md); sırada F3.**
+Tarih: 1 Kasım 2026. Durum: **plan ONAYLANDI (2 Kas 2026); F0 yazıldı → [01-f0-fark-aktarimi.md](01-f0-fark-aktarimi.md); F1 tamam → [03-f1-adaptor.md](03-f1-adaptor.md); F2 tamam → [05-f2-uctan-uca.md](05-f2-uctan-uca.md); F3 tamam → [06-f3-panel-bildirim.md](06-f3-panel-bildirim.md); sırada canlı geçiş (ayrı onay).**
 Karşı taraf: `soru-merkezi` deposu. Yayın sözleşmesi `docs/soru-merkezi-veri-modeli.md` §8, senkron uçları `src/app/api/sync/[product]/**`, PAEMİSYON → merkez aktarım eşlemesi §11, köken tablosu §5.6.
 
 ## 0. Karar özeti

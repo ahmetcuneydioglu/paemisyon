@@ -3,6 +3,7 @@
  *
  *   npx tsx scripts/hub-sync.ts --dry-run [--pages=N] [--from-zero] [--page-size=500] [--report=<dosya>]
  *   npx tsx scripts/hub-sync.ts            # gerçek koşu: yazar ve ack gönderir
+ *   npx tsx scripts/hub-sync.ts --reports  # yalnız iletilmemiş soru bildirimlerini merkeze gönderir (F3)
  *
  * Ortam: DATABASE_URL (yerel kopya ya da canlı — canlıda connection_limit=1 ve DB-yazma penceresi kuralı),
  *        HUB_SYNC_URL, HUB_SYNC_SECRET. Anahtar hiçbir çıktıya yazılmaz.
@@ -11,6 +12,7 @@
  */
 import { PrismaClient } from '@prisma/client';
 import { writeFileSync } from 'fs';
+import { HubReportForwarder } from '../src/modules/hub-sync/hub-report-forwarder';
 import { HubSyncApplier } from '../src/modules/hub-sync/hub-sync.applier';
 import { HubSyncClient } from '../src/modules/hub-sync/hub-sync.client';
 import { HubSyncService, type RunReport } from '../src/modules/hub-sync/hub-sync.service';
@@ -24,6 +26,7 @@ const args = Object.fromEntries(
 ) as Record<string, string | true>;
 
 const dryRun = args['dry-run'] === true;
+const onlyReports = args.reports === true;
 const baseUrl = process.env.HUB_SYNC_URL;
 const secret = process.env.HUB_SYNC_SECRET;
 if (!baseUrl || !secret) {
@@ -36,7 +39,7 @@ if (!process.env.DATABASE_URL) {
 }
 const dbHost = new URL(process.env.DATABASE_URL).hostname;
 console.log(`hub-sync ${dryRun ? 'KURU KOŞU' : 'GERÇEK KOŞU'} · merkez ${baseUrl} · veritabanı ${dbHost}`);
-if (!dryRun && !/^(127\.0\.0\.1|localhost)$/.test(dbHost) && args['confirm-live'] !== true) {
+if ((!dryRun || onlyReports) && !/^(127\.0\.0\.1|localhost)$/.test(dbHost) && args['confirm-live'] !== true) {
   console.error('Canlı veritabanına gerçek koşu için --confirm-live gerekir (DB-yazma penceresi, backend durdurulmuş olmalı).');
   process.exit(2);
 }
@@ -69,6 +72,17 @@ const toMarkdown = (r: RunReport): string => {
 };
 
 (async () => {
+  if (onlyReports) {
+    // Bildirim iletimi: adaptör bayrağından bağımsız, elle tetik (enabled: true burada bilinçli).
+    const forwarder = new HubReportForwarder(prisma, client, { enabled: true, cron: false });
+    try {
+      const r = await forwarder.forwardPending(args.limit ? Number(args.limit) : 200);
+      console.log(`Bildirim iletimi: ${JSON.stringify(r)}`);
+      process.exit(r.failed ? 1 : 0);
+    } finally {
+      await prisma.$disconnect();
+    }
+  }
   let report: RunReport | undefined;
   try {
     report = await service.run({

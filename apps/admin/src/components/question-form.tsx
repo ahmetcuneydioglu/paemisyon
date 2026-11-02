@@ -36,17 +36,22 @@ export function emptyQuestion(): QuestionFormValue {
   };
 }
 
-/** Soru formu (Doc 9 §4.2): kök, 5 şık (tek doğru), açıklama, zorluk, konu, kaynak. */
+/**
+ * Soru formu (Doc 9 §4.2): kök, 5 şık (tek doğru), açıklama, zorluk, konu, kaynak.
+ * `readOnly` (Doc 55): merkez sorusunda alanlar görünür ama kilitli, kaydet düğmesi yok.
+ */
 export function QuestionForm({
   initial,
   submitLabel,
   busy,
   onSubmit,
+  readOnly = false,
 }: {
   initial: QuestionFormValue;
   submitLabel: string;
   busy: boolean;
   onSubmit: (value: QuestionFormValue) => void;
+  readOnly?: boolean;
 }) {
   const [v, setV] = useState<QuestionFormValue>(initial);
   const tree = useQuery({
@@ -91,10 +96,12 @@ export function QuestionForm({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (valid) onSubmit(v);
+        if (valid && !readOnly) onSubmit(v);
       }}
-      className="max-w-3xl space-y-5"
+      className="max-w-3xl"
     >
+      {/* fieldset[disabled] bütün alanları tek yerden kilitler (tarayıcı semantiği, ekran okuyucu dahil). */}
+      <fieldset disabled={readOnly} className="min-w-0 space-y-5 disabled:opacity-75" aria-readonly={readOnly}>
       <div>
         <label className="block text-sm font-medium">Konu</label>
         <select
@@ -256,13 +263,16 @@ export function QuestionForm({
         </div>
       </div>
 
-      <button
-        type="submit"
-        disabled={!valid || busy}
-        className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
-      >
-        {busy ? 'Kaydediliyor…' : submitLabel}
-      </button>
+      {!readOnly && (
+        <button
+          type="submit"
+          disabled={!valid || busy}
+          className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
+        >
+          {busy ? 'Kaydediliyor…' : submitLabel}
+        </button>
+      )}
+      </fieldset>
     </form>
   );
 }
