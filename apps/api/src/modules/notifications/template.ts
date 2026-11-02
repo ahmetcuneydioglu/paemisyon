@@ -87,6 +87,44 @@ export function templateWarnings(title: string, body: string): TemplateWarning[]
   return w;
 }
 
+/** Kampanya (elle/planlı) bağlamında dolabilen değişkenler: kitle satırı + ad. Olay yükü değişkenleri burada kaynaksızdır. */
+export const CAMPAIGN_VARIABLES: ReadonlySet<TemplateVariable> = new Set<TemplateVariable>([
+  'ad',
+  'streak',
+  'sinava_kalan_gun',
+  'hafta_soru',
+  'hafta_dogruluk',
+  'kalan_soru',
+  'link',
+]);
+
+/**
+ * Kampanya bağlamı uyarıları: beyaz listede olup kampanyada kaynağı olmayan değişken boş gider.
+ * `deneme_adi` yalnız kampanya bir denemeye bağlanınca (deepLink target=exam) dolar.
+ */
+export function campaignVariableWarnings(
+  title: string,
+  body: string,
+  hasExamLink: boolean,
+): TemplateWarning[] {
+  const w: TemplateWarning[] = [];
+  const seen = new Set<string>();
+  for (const v of [...templateVariables(title), ...templateVariables(body)]) {
+    if (seen.has(v) || !known.has(v)) continue;
+    seen.add(v);
+    const ok = CAMPAIGN_VARIABLES.has(v as TemplateVariable) || (v === 'deneme_adi' && hasExamLink);
+    if (ok) continue;
+    w.push({
+      code: 'no_source',
+      message:
+        v === 'deneme_adi'
+          ? '{{deneme_adi}} kampanyada ancak hedef bir deneme seçilince dolar; aksi hâlde boş gider.'
+          : `{{${v}}} kampanyada boş gider; bu değişken yalnız otomasyon olay yükünden gelir.`,
+    });
+  }
+  return w;
+}
+
 export function firstName(displayName: string | null | undefined): string {
   return (displayName ?? '').trim().split(/\s+/)[0] || 'Aday';
 }

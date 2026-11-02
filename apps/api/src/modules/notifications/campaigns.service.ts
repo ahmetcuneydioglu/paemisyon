@@ -11,13 +11,20 @@ import { AuditService } from '../admin/audit.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { createHash } from 'node:crypto';
 import { maskEmail } from '../email/email-contacts.service';
-import { smartSendAt } from './automation.logic';
+import { automationVars, smartSendAt } from './automation.logic';
+import { EMAIL_CONFIG } from '../email/email.config';
 import { allowedChannels } from './notification.categories';
 import { NOTIFICATIONS_CONFIG } from './notifications.config';
 import { NotificationsService } from './notifications.service';
 import { resolveDeepLink, type DeepLink } from './deep-links';
 import { rulesSummary, rulesToWhere, validateRules } from './segment-dsl';
-import { fillTemplate, firstName, templateWarnings } from './template';
+import {
+  campaignVariableWarnings,
+  fillTemplate,
+  firstName,
+  templateWarnings,
+  type TemplateVars,
+} from './template';
 import { TestersService } from './testers.service';
 import type { UpsertCampaignDto } from './dto/notifications.dto';
 
@@ -81,9 +88,9 @@ export class CampaignsService {
     const v = sorted[0];
     return {
       ...c,
-      variants: sorted.map((x) => ({ ...x, warnings: templateWarnings(x.title, x.body) })),
+      variants: sorted.map((x) => ({ ...x, warnings: this.variantWarnings(x) })),
       variant: v ?? null,
-      warnings: v ? templateWarnings(v.title, v.body) : [],
+      warnings: v ? this.variantWarnings(v) : [],
     };
   }
 
@@ -374,6 +381,7 @@ export class CampaignsService {
     const v = c.variants[0];
     const first = sample[0]?.user.displayName;
     const link = resolveDeepLink(v.deepLink as unknown as DeepLink);
+    const vars = await this.campaignVars(v, sample[0] ?? null, first);
     return {
       estimate: est,
       sample: sample.map((s) => ({
@@ -383,11 +391,11 @@ export class CampaignsService {
         platforms: s.pushPlatforms,
       })),
       rendered: {
-        title: fillTemplate(v.title, { ad: firstName(first) }),
-        body: fillTemplate(v.body, { ad: firstName(first) }),
+        title: fillTemplate(v.title, vars),
+        body: fillTemplate(v.body, vars),
         ...link,
       },
-      warnings: templateWarnings(v.title, v.body),
+      warnings: this.variantWarnings(v),
       segmentSummary: c.segmentRulesSnapshot
         ? rulesSummary(validateRules(c.segmentRulesSnapshot))
         : null,
@@ -414,6 +422,54 @@ export class CampaignsService {
     return { sent: results.filter((r) => r.status === 'queued').length, results };
   }
 
+  private variantWarnings(v: { title: string; body: string; deepLink: unknown }) {
+    return [
+      ...templateWarnings(v.title, v.body),
+      ...campaignVariableWarnings(v.title, v.body, this.examIdOf(v.deepLink) != null),
+    ];
+  }
+
+  private examIdOf(deepLink: unknown): string | null {
+    const d = deepLink as DeepLink | null | undefined;
+    const id = d?.target === 'exam' ? d.params?.examId : null;
+    return typeof id === 'string' && id ? id : null;
+  }
+
+  /** Deneme başlığı: kampanya bir denemeye bağlıysa {{deneme_adi}} buradan dolar (kampanya başına bir sorgu). */
+  private readonly examTitles = new Map<string, Promise<string | null>>();
+  private examTitle(examId: string): Promise<string | null> {
+    let p = this.examTitles.get(examId);
+    if (!p) {
+      p = this.prisma.exam
+        .findUnique({ where: { id: examId }, select: { title: true } })
+        .then((e) => e?.title ?? null)
+        .catch(() => null);
+      this.examTitles.set(examId, p);
+      if (this.examTitles.size > 200) this.examTitles.clear();
+    }
+    return p;
+  }
+
+  /**
+   * Kampanya şablon değişkenleri: `ad` (enqueue içinde gelir) + kitle satırı + deneme bağlantısından başlık.
+   * Olay yükü değişkenleri (net, rakip, rozet…) kampanyada kaynaksızdır; `campaignVariableWarnings` uyarır.
+   */
+  private async campaignVars(
+    v: { deepLink: unknown },
+    audience: Parameters<typeof automationVars>[0],
+    displayName: string | null | undefined,
+  ): Promise<TemplateVars> {
+    const examId = this.examIdOf(v.deepLink);
+    const title = examId ? await this.examTitle(examId) : null;
+    const resolved = resolveDeepLink(v.deepLink as unknown as DeepLink);
+    const vars = automationVars(
+      audience,
+      title ? { title } : {},
+      resolved.webPath ? `${EMAIL_CONFIG.publicBaseUrl}${resolved.webPath}` : null,
+    );
+    return displayName === undefined ? vars : { ...vars, ad: firstName(displayName) };
+  }
+
   private async enqueueFor(
     c: Prisma.NotificationCampaignGetPayload<{ include: { variants: true } }>,
     userId: string,
@@ -421,19 +477,27 @@ export class CampaignsService {
     test = false,
   ) {
     const v = this.pickVariant(c, userId);
+    // Kitle satırı: şablon değişkenleri ({{sinava_kalan_gun}}, {{streak}}…) ve akıllı saat buradan.
+    const aud = await this.prisma.notificationAudience.findUnique({
+      where: { userId },
+      select: {
+        bestEngagementHour: true,
+        streakCurrent: true,
+        examDaysLeft: true,
+        answered7d: true,
+        accuracy30d: true,
+        dailyGoal: true,
+        answeredToday: true,
+      },
+    });
+    const variables = await this.campaignVars(v, aud, undefined);
     // Akıllı saat (F3): alıcının en iyi saati (yoksa hatırlatma saati) pencere içinde; test gönderimi hemen.
     let scheduleAt: Date | null = null;
     if (c.sendMode === 'smart' && !test) {
-      const [aud, settings] = await Promise.all([
-        this.prisma.notificationAudience.findUnique({
-          where: { userId },
-          select: { bestEngagementHour: true },
-        }),
-        this.prisma.userNotificationSettings.findUnique({
-          where: { userId },
-          select: { reminderTime: true, smartTimingEnabled: true },
-        }),
-      ]);
+      const settings = await this.prisma.userNotificationSettings.findUnique({
+        where: { userId },
+        select: { reminderTime: true, smartTimingEnabled: true },
+      });
       const best = (settings?.smartTimingEnabled ?? true) ? aud?.bestEngagementHour : null;
       scheduleAt = smartSendAt(
         new Date(),
@@ -446,6 +510,7 @@ export class CampaignsService {
     return this.notifications.enqueue({
       scheduleAt,
       userId,
+      variables,
       category: c.category,
       priority: c.priority,
       title: v.title,

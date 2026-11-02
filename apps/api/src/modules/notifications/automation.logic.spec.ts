@@ -1,3 +1,4 @@
+import { campaignVariableWarnings } from './template';
 import {
   automationVars,
   parseSchedule,
@@ -131,5 +132,21 @@ describe('automation.logic — akıllı saat (F3)', () => {
     expect(effectiveReminderTime('19:00', true, 21)).toBe('21:00');
     expect(effectiveReminderTime('19:00', false, 21)).toBe('19:00');
     expect(effectiveReminderTime('19:00', true, null)).toBe('19:00');
+  });
+});
+
+describe('campaignVariableWarnings', () => {
+  it('kitle değişkenleri kampanyada sessiz, olay yükü değişkeni uyarır', () => {
+    const w = campaignVariableWarnings(
+      '{{ad}} {{sinava_kalan_gun}} gün',
+      '{{net}} net {{rakip}}',
+      false,
+    );
+    expect(w.map((x) => x.code)).toEqual(['no_source', 'no_source']);
+    expect(w[0].message).toContain('{{net}}');
+  });
+  it('deneme_adi yalnız deneme bağlantısı varken dolar', () => {
+    expect(campaignVariableWarnings('{{deneme_adi}}', '', false)).toHaveLength(1);
+    expect(campaignVariableWarnings('{{deneme_adi}}', '', true)).toHaveLength(0);
   });
 });
