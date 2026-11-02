@@ -1,5 +1,6 @@
 import {
   decide,
+  emailConsentFor,
   inQuietHours,
   quietHoursEnd,
   trClock,
@@ -165,5 +166,38 @@ describe('karar akışı (Doc 52 §6)', () => {
       ctx({ marketingSentToday: 1 }),
     );
     expect(d.channels.email).toEqual({ action: 'drop', reason: 'marketing_cap' });
+  });
+});
+
+describe('emailConsentFor — rıza kişide yaşar, kişisiz hesap hizmet e-postasına açıktır', () => {
+  const sub = (unsub: string[] = []) => ({ status: 'subscribed', unsubscribedTopics: unsub });
+
+  it('konu yoksa (kategori e-posta taşımıyor) rıza yok', () => {
+    expect(emailConsentFor(null, [sub()])).toBe(false);
+  });
+  it('kişi yok: duyuru rızalı, kampanya rızasız (gönderim katmanı kişiyi live_user açar)', () => {
+    expect(emailConsentFor('duyuru', [])).toBe(true);
+    expect(emailConsentFor('kampanya', [])).toBe(false);
+  });
+  it('abone kişi, konu kapatılmamış → rıza var', () => {
+    expect(emailConsentFor('duyuru', [sub()])).toBe(true);
+    expect(emailConsentFor('kampanya', [sub()])).toBe(true);
+  });
+  it('abone kişi ama konu kapalı → rıza yok', () => {
+    expect(emailConsentFor('kampanya', [sub(['kampanya'])])).toBe(false);
+    expect(emailConsentFor('duyuru', [sub(['kampanya'])])).toBe(true);
+  });
+  it('abonelikten çıkmış ya da bastırılmış kişi → kişisiz gibi sayılmaz, rıza yok', () => {
+    expect(emailConsentFor('duyuru', [{ status: 'unsubscribed', unsubscribedTopics: [] }])).toBe(
+      false,
+    );
+    expect(emailConsentFor('duyuru', [{ status: 'suppressed', unsubscribedTopics: [] }])).toBe(
+      false,
+    );
+  });
+  it('birden çok kişi: abone olan öne alınır', () => {
+    expect(
+      emailConsentFor('duyuru', [{ status: 'unsubscribed', unsubscribedTopics: [] }, sub()]),
+    ).toBe(true);
   });
 });

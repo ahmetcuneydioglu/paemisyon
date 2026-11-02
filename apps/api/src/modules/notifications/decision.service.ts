@@ -6,6 +6,7 @@ import { CATEGORY_POLICY } from './notification.categories';
 import { NOTIFICATIONS_CONFIG, notificationsEnv } from './notifications.config';
 import {
   decide,
+  emailConsentFor,
   trClock,
   type Decision,
   type DecisionContext,
@@ -88,12 +89,10 @@ export class DecisionService {
           email: true,
           displayName: true,
           emailContacts: {
-            where: { status: 'subscribed' },
             select: {
-              id: true,
+              status: true,
               preferences: { where: { subscribed: false }, select: { topic: true } },
             },
-            take: 1,
           },
         },
       }),
@@ -107,9 +106,13 @@ export class DecisionService {
         select: { engagementTier: true },
       }),
     ]);
-    const contact = user?.emailContacts[0];
-    const emailConsent =
-      !!topic && !!contact && !contact.preferences.some((p) => p.topic === topic);
+    const emailConsent = emailConsentFor(
+      topic,
+      (user?.emailContacts ?? []).map((c) => ({
+        status: c.status,
+        unsubscribedTopics: c.preferences.map((p) => p.topic),
+      })),
+    );
     return {
       user: user
         ? { id: user.id, status: user.status, email: user.email, displayName: user.displayName }

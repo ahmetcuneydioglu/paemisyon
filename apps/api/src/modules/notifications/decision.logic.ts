@@ -6,6 +6,31 @@ import { CATEGORY_POLICY, categoryEnabled } from './notification.categories';
  * Sıra kesindir, ilk eşleşen kural karar verir. Kanal başına sonuç:
  * send | defer(until) | drop(reason). `inbox` yazılır mı ayrı döner.
  */
+/** Rıza hesabı için kişi görünümü (EmailContact'ın gerekli kısmı). */
+export type EmailContactView = {
+  status: string;
+  /** Yalnız KAPALI (subscribed=false) konu tercihleri. */
+  unsubscribedTopics: readonly string[];
+};
+
+/**
+ * E-posta rızası (Doc 52 karar 2): rıza EmailContact'ta yaşar.
+ *  - Kişi varsa: `subscribed` durumunda ve konu kapatılmamışsa rıza var.
+ *  - Kişi YOKSA: hesap sahibi `duyuru` (hizmet) e-postaları için rızalı sayılır —
+ *    gönderim katmanı (`EmailChannelService.consentedContact`) kişiyi zaten
+ *    `live_user`/`signup` dayanağıyla açar; karar katmanı onunla aynı dili konuşur.
+ *    `kampanya` için kişi şarttır (pazarlama rızası örtük verilmez).
+ */
+export function emailConsentFor(
+  topic: 'duyuru' | 'kampanya' | null,
+  contacts: readonly EmailContactView[],
+): boolean {
+  if (!topic) return false;
+  if (contacts.length === 0) return topic === 'duyuru';
+  const contact = contacts.find((c) => c.status === 'subscribed') ?? contacts[0];
+  return contact.status === 'subscribed' && !contact.unsubscribedTopics.includes(topic);
+}
+
 export type ChannelDecision =
   { action: 'send' } | { action: 'defer'; until: Date } | { action: 'drop'; reason: string };
 
