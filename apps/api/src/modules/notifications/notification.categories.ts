@@ -82,9 +82,9 @@ export const CATEGORY_POLICY: Record<NotificationCategory, CategoryPolicy> = {
   },
   question_report: {
     label: 'Soru bildirimleri',
-    channels: ['push', 'inbox'],
+    channels: ['push', 'inbox', 'email'],
     optional: false,
-    emailTopic: null,
+    emailTopic: 'duyuru',
     dailyOnly: false,
   },
   marketing: {
