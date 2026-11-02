@@ -200,6 +200,24 @@
       ],
       "cwd": "apps/web",
       "port": 3016
+    },
+    {
+      "name": "merkez-web",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/soru-merkezi && exec pnpm dev"
+      ],
+      "port": 3200
+    },
+    {
+      "name": "api-doc55",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/ahmetcnd/Developer/paemisyon/apps/api && PORT=3055 DATABASE_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon?connection_limit=4' DIRECT_URL='postgresql://postgres:paem55@127.0.0.1:55434/paemisyon' SUPABASE_URL=http://127.0.0.1:3299 NOTIFICATIONS_PROVIDER=console EMAIL_WORKER=0 NUDGE_CRON=0 HUB_SYNC_ENABLED=false exec npm run start:dev"
+      ],
+      "port": 3055
     }
   ]
 }
