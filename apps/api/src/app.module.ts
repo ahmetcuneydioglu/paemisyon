@@ -31,6 +31,7 @@ import { RoomsModule } from './modules/rooms/rooms.module';
 import { CourseTestsModule } from './modules/course-tests/course-tests.module';
 import { UsersModule } from './modules/users/users.module';
 import { SummariesModule } from './modules/summaries/summaries.module';
+import { HubSyncModule } from './modules/hub-sync/hub-sync.module';
 
 @Module({
   imports: [
@@ -78,6 +79,7 @@ import { SummariesModule } from './modules/summaries/summaries.module';
     PlanModule,
     RoomsModule,
     CourseTestsModule, // Doc 49/18 ders testleri
+    HubSyncModule, // Doc 55 Soru Merkezi adaptörü (HUB_SYNC_* ile açılır)
     ReportsModule,
     BillingModule,
     CoachModule,

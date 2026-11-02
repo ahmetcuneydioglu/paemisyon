@@ -404,6 +404,7 @@ model Topic {
   legislation      Legislation?
   summaryUnits     SummaryUnit[]
   courseTests      CourseTest[]
+  hubTopicMaps     HubTopicMap[]
 
   dailyFocuses DailyFocus[]
 
@@ -500,6 +501,7 @@ model Legislation {
   articles        LawArticle[]
   readingProgress ReadingProgress[]
   summaryUnits    SummaryUnit[]
+  hubMaps         HubLegislationMap[]
 
   createdAt DateTime  @default(now()) @map("created_at")
   updatedAt DateTime  @updatedAt @map("updated_at")
@@ -770,6 +772,10 @@ model Question {
   // otomatik tespit edilir (detectArticleNo), elle düzeltilebilir.
   articleNo        String?   @map("article_no")
   currentVersionId String?   @unique @map("current_version_id") @db.Uuid
+  /// Soru Merkezi kimliği (Doc 55). Doluysa içerik merkezde düzenlenir; panel salt okunur.
+  hubQuestionId    String?   @unique @map("hub_question_id") @db.Uuid
+  /// Merkez kodu ("SM-000123"); panelde ve bildirim iletiminde gösterilir.
+  hubCode          String?   @map("hub_code")
   createdAt        DateTime  @default(now()) @map("created_at")
   deletedAt        DateTime? @map("deleted_at")
 
@@ -817,6 +823,9 @@ model QuestionVersion {
   publishedAt    DateTime?     @map("published_at")
   archivedAt     DateTime?     @map("archived_at")
   createdAt      DateTime      @default(now()) @map("created_at")
+  /// Merkezden gelen sürüm (Doc 55). Merkezin açtığı sürümlerde satırın id'si bu değere EŞİTTİR
+  /// (seçenek kimlikleri bundan türetilir); S2 kökenli mevcut sürümlerde yalnız eşleme.
+  hubVersionId   String?       @unique @map("hub_version_id") @db.Uuid
 
   question          Question         @relation("QuestionVersions", fields: [questionId], references: [id])
   currentOfQuestion Question?        @relation("CurrentVersion")
@@ -1341,6 +1350,8 @@ enum QuestionArticleSource {
   legacy_article_no
   editor
   script
+  /// Soru Merkezi'nden gelen yayımlı bağ (Doc 55).
+  hub
 }
 
 /// Soru ↔ madde N:N. `Question.articleNo` KALIR (atlas onu okur); yeni uçlar
@@ -2451,4 +2462,70 @@ model ExamCalendar {
 
   @@index([isActive, examDate])
   @@map("exam_calendar")
+}
+
+// ── Soru Merkezi bağlantısı (Doc 55) ──────────────────────────────────────────
+
+/// Senkron imleci: tek satır (id = 1). Merkez akış dönemi değişirse after = 0'dan okunur.
+model HubSyncState {
+  id            Int       @id @default(1)
+  streamEpoch   Int?      @map("stream_epoch")
+  lastAckedSeq  BigInt    @default(0) @map("last_acked_seq")
+  lastRunAt     DateTime? @map("last_run_at")
+  lastError     String?   @map("last_error")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  @@map("hub_sync_state")
+}
+
+/// Merkez konusu → PAEMİSYON konusu. Aynı merkez konusu birden çok PAEMİSYON konusuna
+/// madde aralığıyla düşebilir (Anayasa, karar 2 Kas 2026): aralıksız satır varsayılandır.
+/// Satırlar taksonomi olaylarıyla kendiliğinden açılır; topic_id tohumdan ya da elle dolar.
+model HubTopicMap {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  hubTopicId  String   @map("hub_topic_id") @db.Uuid
+  hubCode     String   @map("hub_code")
+  hubName     String   @map("hub_name")
+  topicId     String?  @map("topic_id") @db.Uuid
+  articleFrom Int?     @map("article_from")
+  articleTo   Int?     @map("article_to")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  topic Topic? @relation(fields: [topicId], references: [id], onDelete: SetNull)
+
+  @@unique([hubTopicId, topicId])
+  @@index([hubTopicId])
+  @@map("hub_topic_map")
+}
+
+/// Merkez mevzuatı → PAEMİSYON mevzuatı; yalnız soru ↔ madde bağı kurmak için (metin merkezden alınmaz).
+model HubLegislationMap {
+  hubLegislationId String   @id @map("hub_legislation_id") @db.Uuid
+  hubNumber        String?  @map("hub_number")
+  hubType          String?  @map("hub_type")
+  hubName          String   @map("hub_name")
+  hubShortName     String?  @map("hub_short_name")
+  legislationId    String?  @map("legislation_id") @db.Uuid
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  legislation Legislation? @relation(fields: [legislationId], references: [id], onDelete: SetNull)
+
+  @@map("hub_legislation_map")
+}
+
+/// Olay günlüğü: denetim ve kuru koşu raporu.
+model HubSyncLog {
+  id         BigInt   @id @default(autoincrement())
+  seq        BigInt
+  entityType String   @map("entity_type")
+  entityId   String   @map("entity_id") @db.Uuid
+  action     String
+  result     String
+  detail     String?
+  dryRun     Boolean  @default(false) @map("dry_run")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([createdAt])
+  @@index([result, createdAt])
+  @@map("hub_sync_log")
 }

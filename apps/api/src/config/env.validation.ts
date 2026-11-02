@@ -78,6 +78,19 @@ class EnvironmentVariables {
   @IsString()
   @IsOptional()
   EMAIL_WORKER?: string;
+
+  // Soru Merkezi adaptörü (Doc 55). URL + anahtar yoksa istemci kurulmaz; 'true' değilse cron çalışmaz.
+  @IsString()
+  @IsOptional()
+  HUB_SYNC_URL?: string;
+
+  @IsString()
+  @IsOptional()
+  HUB_SYNC_SECRET?: string;
+
+  @IsString()
+  @IsOptional()
+  HUB_SYNC_ENABLED?: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {

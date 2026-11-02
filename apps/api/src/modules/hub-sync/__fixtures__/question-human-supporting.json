@@ -1,0 +1,190 @@
+{
+ "error": null,
+ "payload": {
+  "tags": [],
+  "assets": [],
+  "options": [
+   {
+    "key": "A",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "İfade verenin veya sorguya çekilenin kişisel ve ekonomik durumu hakkında bilgi alınır.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 1
+   },
+   {
+    "key": "B",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Yüklenen suç hakkında açıklamada bulunmamasının kanuni hakkı olduğu söylenir.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 2
+   },
+   {
+    "key": "C",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Müdafi seçme hakkının bulunduğu ve onun hukukî yardımından yararlanabileceği, müdafiin ifade veya sorgusunda hazır bulunabileceği, kendisine bildirilir.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 3
+   },
+   {
+    "key": "D",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Şüphelinin aynı olayla ilgili olarak yeniden ifadesinin alınması ihtiyacı ortaya çıktığında, bu işlem ancak Cumhuriyet savcısı tarafından yapılabilir.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": true,
+    "sort_order": 4
+   },
+   {
+    "key": "E",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Şüpheden kurtulması için somut delillerin toplanmasını isteyebileceği hatırlatılır ve kendisi aleyhine var olan şüphe nedenlerini ortadan kaldırmak ve lehine olan hususları ileri sürmek olanağı tanınır.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 5
+   }
+  ],
+  "version": {
+   "id": "b59dc8c8-083f-4002-85c7-a946a269ab2f",
+   "hint": null,
+   "stem": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "5271 sayılı Ceza Muhakemesi Kanunu’na göre, aşağıdakilerden hangisi ifade alma ve sorguda yasak usuller kapsamındadır?",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+    "url": null,
+    "name": "JSPS soru bankası",
+    "confidence": "B",
+    "public_note": null
+   },
+   "source_id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+   "confidence": "B",
+   "option_count": 5,
+   "authoring_method": "human",
+   "detailed_solution": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "CMK'nin 148. maddesi 'İfade alma ve sorguda yasak usuller' başlığını taşır ve beş fıkra hâlinde özgür iradeyi bozan bedensel/ruhsal müdahaleleri, kanuna aykırı yarar vaadini, yasak usulle elde edilen ifadenin rıza ile verilse dahi delil olarak değerlendirilemeyeceğini, müdafisiz kollukça alınan ifadenin hâkim veya mahkeme huzurunda doğrulanmadıkça hükme esas alınamayacağını ve şüphelinin aynı olayla ilgili yeniden ifadesinin alınmasının ancak Cumhuriyet savcısı tarafından yapılabileceğini düzenler. Sık karıştırılan komşu kural: m.147'de sayılan kimlik saptama, müdafi hakkının bildirilmesi, susma hakkı ve delil toplama talebi gibi hususlar ise yasak usul değil, ifade almanın olağan ve zorunlu şekil şartlarıdır.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "question": {
+   "id": "cfb4327c-45a3-4fc4-8d5b-a03fbc422080",
+   "code": "SM-000090",
+   "type": "single_choice",
+   "version": 2,
+   "local_id": "46db9b90-a33c-4692-aa69-32714c26bea9",
+   "topic_id": "87c98641-0dba-46cd-b2d2-d56cccd095e6",
+   "cancelled": false,
+   "difficulty": 3,
+   "subject_id": "7e873138-0afc-4dfb-aca2-77ec77d7ab28",
+   "subtopic_id": null,
+   "local_aliases": []
+  },
+  "legislation_links": [
+   {
+    "link_role": "supporting",
+    "article_id": "bf639802-48b2-4509-86c0-533a5b323e04",
+    "article_key": "147",
+    "provision_id": "86f44547-76e3-4e61-b2e8-66210268906d",
+    "legislation_id": "b3dc9055-a8fd-42e0-91e0-045e5a8399c7"
+   },
+   {
+    "link_role": "required",
+    "article_id": "320d2fe9-0fc2-4202-8d30-baf77f45c3e6",
+    "article_key": "148",
+    "provision_id": "61fe1e5f-389d-4d5a-9cc7-1649996e71ca",
+    "legislation_id": "b3dc9055-a8fd-42e0-91e0-045e5a8399c7"
+   }
+  ],
+  "source_references": [
+   {
+    "cancelled": false,
+    "exam_date": "2023-08-19",
+    "booklet_code": "A",
+    "booklet_slug": "2023-adalet-yazi-isleri-muduru",
+    "question_number": 84,
+    "relationship_type": "direct_transcription"
+   }
+  ]
+ },
+ "entity_id": "cfb4327c-45a3-4fc4-8d5b-a03fbc422080",
+ "entity_type": "question",
+ "payload_hash": "3219ed6b0f0628b932cd33786c05751c6ff3f8d09e14e275634cb56232fd1189",
+ "entity_version": 2
+}

@@ -1,0 +1,174 @@
+{
+ "error": null,
+ "payload": {
+  "tags": [],
+  "assets": [],
+  "options": [
+   {
+    "key": "A",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Büyükşehir belediyeleri ile nüfusu 50.000’in üzerindeki belediyeler, kadınlar ve çocuklar için konukevi açmakla yükümlüdür.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": true,
+    "sort_order": 1
+   },
+   {
+    "key": "B",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Belediye meclisinin kararı ile mücavir alanlara da belediye hizmetleri götürülebilir.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 2
+   },
+   {
+    "key": "C",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Büyükşehir belediyesinin sporu teşvik için yapacağı nakdi yardım, bir önceki yıl genel bütçe vergi gelirlerinden belediyeleri için tahakkuk eden miktarın binde yedisini geçemez.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 3
+   },
+   {
+    "key": "D",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Belediye, yurt içi ve yurt dışı müsabakalarda üstün başarı gösteren sporculara belediye meclisi kararıyla ödül verebilir.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 4
+   },
+   {
+    "key": "E",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Belediye hizmetleri, vatandaşlara en yakın yerlerde ve en uygun yöntemlerle sunulur.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 5
+   }
+  ],
+  "version": {
+   "id": "96c1b999-830c-4dbc-8a93-2057838acb7f",
+   "hint": null,
+   "stem": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "5393 sayılı Belediye Kanunu’na göre, belediyenin görev ve sorumlulukları ile ilgili aşağıdakilerden hangisi yanlıştır?",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "id": "50000000-0000-0000-0000-000000000001",
+    "url": null,
+    "name": "Soru Merkezi mevzuat türetimi",
+    "confidence": "B",
+    "public_note": "Soru, yürürlükteki mevzuat metninden Soru Merkezi tarafından türetildi."
+   },
+   "source_id": "50000000-0000-0000-0000-000000000001",
+   "confidence": "B",
+   "option_count": 5,
+   "authoring_method": "ai_generated",
+   "detailed_solution": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "Doğru cevap (A) seçeneğidir; Madde 14/1-a'ya göre «Büyükşehir belediyeleri ile nüfusu 100.000’in üzerindeki belediyeler, kadınlar ve çocuklar için konukevleri açmak zorundadır.» Yükümlülük eşiği 50.000 değil 100.000'dir; diğer belediyeler mali durumlarına göre konukevi açabilir. (B) Madde 14'e göre «Belediye meclisinin kararı ile mücavir alanlara da belediye hizmetleri götürülebilir.» (C) Sporu teşvik amaçlı nakdi yardım, büyükşehir belediyeleri için binde yedi, diğer belediyeler için binde on iki ile sınırlanmıştır. (D) Belediye, üstün başarı gösteren sporculara belediye meclisi kararıyla ödül verebilir. (E) Hizmetlerin vatandaşlara en yakın yerlerde ve en uygun yöntemlerle sunulması maddenin hükmüdür. Akılda tut: Konukevi açma zorunluluğu büyükşehir belediyeleri ile nüfusu 100.000'in üzerindeki belediyeler içindir.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "question": {
+   "id": "41af3c1c-5f92-46cb-ac15-9fe08d5dc18b",
+   "code": "SM-014643",
+   "type": "single_choice",
+   "version": 1,
+   "local_id": null,
+   "topic_id": "81cb9ec3-3f5f-4758-a8c7-3ad2a7408ee7",
+   "cancelled": false,
+   "difficulty": 3,
+   "subject_id": "1f2b67c2-bc19-4bbf-a430-631b19d0e41b",
+   "subtopic_id": null,
+   "local_aliases": []
+  },
+  "legislation_links": [
+   {
+    "link_role": "required",
+    "article_id": "abbb28c0-388f-497b-a19a-40590dc16c04",
+    "article_key": "14",
+    "provision_id": "9025c404-9a69-4f29-98db-4aba57d962ee",
+    "legislation_id": "6b55706d-bec9-42cd-bc61-303e897d8fda"
+   }
+  ],
+  "source_references": []
+ },
+ "entity_id": "41af3c1c-5f92-46cb-ac15-9fe08d5dc18b",
+ "entity_type": "question",
+ "payload_hash": "acb04658b47edd7e5ca1fcca7be47aacc949dfbd2ceef69a6fa26b2bcfcd3b52",
+ "entity_version": 1
+}

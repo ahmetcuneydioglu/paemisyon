@@ -1,0 +1,80 @@
+{
+ "error": null,
+ "payload": {
+  "version": {
+   "id": "99df73dd-e985-48e2-bdbd-c095abb2434e",
+   "version": 1,
+   "valid_to": null,
+   "valid_from": "2026-09-11"
+  },
+  "articles": [
+   {
+    "id": "a6ab4fab-e317-4b74-9b36-6534c95c2409",
+    "body": "(Değişik: 12/5/1964-469/1 md.)\nTürkiye, merkezi idare kuruluşu bakımından coğrafya durumuna, iktisadi şartlara ve kamu hizmetlerinin gereklerine göre illere; iller ilçelere ve ilçeler de bucaklara bölünmüştür.",
+    "title": "Mülki İdare Bölümlerinin Kuruluşları",
+    "body_hash": "1cec1dae4a81591afa4429206ed22a9e5fdd3976590b226fce37c0fd255d1d59",
+    "article_key": "1",
+    "provision_id": "d43e4426-24ca-47cf-815a-cc46074345e7",
+    "article_number": "1",
+    "source_ordinal": 1
+   },
+   {
+    "id": "e3558d47-964f-47cd-966e-8601ec5da8be",
+    "body": "İl, ilçe ve bucak kurulması, kaldırılması, adlarının, bağlılıklarının, merkez ve sınırlarının belirtilmesi ve değiştirilmesi aşağıda gösterilen şekilde yapılır:\nA) İl ve ilçe kurulması, kaldırılması, merkezlerinin belirtilmesi, adlarının değiştirilmesi, bir ilçenin başka bir il'e bağlanması kanun ile;\nB) Bucak kurulması, kaldırılması, merkezinin belirtilmesi, il ilçe ve bucak sınırlarının ve bucak adlarının değiştirilmesi bir köyün veya kasabanın veya bucağın başka bir il ve ilçeye bağlanması, mühim mevki ve tabii arazi adlarının değiştirilmesi Cumhurbaşkanı onayı ile; [4]\nC) Yeniden köy kurulması veya yerinin değiştirilmesi Bayındırlık ve Sağlık ve Sosyal Yardım Bakanlıklarının mütalaası alınmak suretiyle;\nÇ) Köy ve kasabaların aynı ilçe içinde bir bucaktan başka bir bucağa bağlanması, köy adlarının değiştirilmesi, köylerin birleştirilmesi ve ayrılması, bir köy, mahalle veya semtin o köyden ayrılıp başka bir köy ile birleştirilmesi İçişleri Bakanlığının tasvibiyle yapılır.\nD) (Değişik: 11/5/1959-7267/1 md.) Kaza kurulmasında ve kaldırılmasında, bir kazanın başka bir vilayete bağlanmasında ve merkezinin belirtilmesinde, sınırlarının değiştirilmesinde ve (B, C, Ç) fıkralarında yazılı hallerde ilgili vilayetler idare heyetleriyle umumi meclislerinin mütalaaları alınır.\n(Mülga cümle: 2/3/2014-6529/16 md.)\nE) İllere, ilçelere, bucaklara, merkez yapılan şehir, kasaba veya köyün adı verilir. Şu Kadar ki, bunların coğrafi veya tarihi bir sanı varsa o da isim olarak verilebilir.",
+    "title": null,
+    "body_hash": "6060e13098b6d62bec78484d4b6a75d219d57fb5753bc6a1c1391518fbc1fe7f",
+    "article_key": "2",
+    "provision_id": "acd5b3fd-79ea-48f4-be4d-ad1512ba6985",
+    "article_number": "2",
+    "source_ordinal": 2
+   },
+   {
+    "id": "655a9d2a-5d9b-48e1-b5e9-e643eca370bc",
+    "body": "(Değişik: 12/5/1964-469/1 md.)\nİllerin idaresi yetki genişliği esasına dayanır.\nİllerde genel idare teşkilatı il, ilçe ve bucak bölümlerine uygun olarak düzenlenir.\nBelli kamu hizmetlerinin görülmesi amacı ile, birden çok ili içine alan çevrede, bu hizmetler için yetki genişliğine sahip kuruluşlar meydana getirilebilir.",
+    "title": "İl İdaresi",
+    "body_hash": "8803ba962cedb4f3e609419a6c52b4eb2e0bb5a30869413d83ae299133cd3a4d",
+    "article_key": "3",
+    "provision_id": "4a5f8c29-b2de-4f25-9f49-862df7cf3252",
+    "article_number": "3",
+    "source_ordinal": 3
+   },
+   {
+    "id": "98cc0bf5-ec5f-4dd3-9bb6-a668eeb75d29",
+    "body": "İl genel idaresinin başı ve mercii validir. Bakanlıkların kuruluş mevzuatına göre illerde lüzumu kadar teşkilat bulunur. Bu teşkilatın her birinin başında bulunanlar il idare şube başkanlarıdır. Bunların emri altında çalışanlar ilin ikinci derecede memurlarıdır. Bu teşkilat valinin emri altındadır. [5]\nHakimler Kanunu ile İcra ve İflas Kanununda yazılı yargıç, Cumhuriyet savcısı ve yargıç sınıfında bulunanlarla bu kanunlarda yazılı adalet memurları, askeri birlikler, askeri fabrika ve müesseseler, askerlik daire ve şubeleri bu madde hükmünden müstesnadır.",
+    "title": null,
+    "body_hash": "733dbfad60fd8123abfce9ce325864d13ea711ec859840d9552fd4101160dbdd",
+    "article_key": "4",
+    "provision_id": "b482f495-ec63-4801-b6dd-10c24819410e",
+    "article_number": "4",
+    "source_ordinal": 4
+   },
+   {
+    "id": "a952cfb8-31b5-4c94-a455-e9aa541a38b8",
+    "body": "İllerde, valilerin tayin ve tesbit ettiği işlerde yardımcılığını ve valinin bulunmadığı zamanlarda vekilliğini yapmak üzere vali muavinleri bulunur. Valiliğin yazı işlerinin düzenlenmesinden de vali muavini sorumludur.\n(Mülga ikinci fıkra: 2/7/2018 - KHK/703/138 md.) [6]",
+    "title": null,
+    "body_hash": "f3b729b0e962be23c817da72e132075dec97eefcd8d48d2a1f01a4a0c48ab718",
+    "article_key": "5",
+    "provision_id": "60b19e35-82e3-4c4b-8fd5-f6052782ea2f",
+    "article_number": "5",
+    "source_ordinal": 5
+   }
+  ],
+  "legislation": {
+   "id": "976c540a-0d0d-40a5-96bd-464697eabf9d",
+   "type": "Kanun",
+   "number": "5442",
+   "short_name": null,
+   "repealed_at": null,
+   "official_url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5442&MevzuatTur=1&MevzuatTertip=3",
+   "published_at": null,
+   "official_name": "5442 sayılı İl İdaresi Kanunu",
+   "effective_from": null,
+   "effective_status": null,
+   "official_gazette_number": null
+  }
+ },
+ "entity_id": "99df73dd-e985-48e2-bdbd-c095abb2434e",
+ "entity_type": "legislation_version",
+ "payload_hash": "736599ea820f64af04b9fed2da568afb94d9f4c73c108a3378831c5bbd10a440",
+ "entity_version": 1
+}

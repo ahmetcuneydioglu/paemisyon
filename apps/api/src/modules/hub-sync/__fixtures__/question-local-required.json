@@ -1,0 +1,174 @@
+{
+ "error": null,
+ "payload": {
+  "tags": [],
+  "assets": [],
+  "options": [
+   {
+    "key": "A",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Evlilik, objektif cezalandırılabilme şartını ortadan kaldırdığı için ceza verilmez.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 1
+   },
+   {
+    "key": "B",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Evlilik nedeniyle şahsi cezasızlık sebebi uygulanır.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 2
+   },
+   {
+    "key": "C",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Hırsızlık suçundan cezalandırılır.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": true,
+    "sort_order": 3
+   },
+   {
+    "key": "D",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Eşin rızası bulunmadıkça soruşturma yapılamaz.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 4
+   },
+   {
+    "key": "E",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "Sonradan evlenme suçu bütün sonuçlarıyla ortadan kaldırır.",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 5
+   }
+  ],
+  "version": {
+   "id": "877026ec-4320-4a2b-8abd-e11d63a19daf",
+   "hint": null,
+   "stem": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "Kemal, evli olmadığı Aslı'nın cep telefonunu çalmıştır. Suç işlendikten sonra Kemal ile Aslı evlenmiştir. Kemal'ın ceza sorumluluğu bakımından hangisi doğrudur?",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+    "url": null,
+    "name": "JSPS soru bankası",
+    "confidence": "B",
+    "public_note": null
+   },
+   "source_id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+   "confidence": "B",
+   "option_count": 5,
+   "authoring_method": "imported",
+   "detailed_solution": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "Şahsi cezasızlık sebebinin uygulanabilmesi için TCK m.167'deki akrabalık veya evlilik ilişkisinin suç işlendiği sırada bulunması gerekir. Fiilden sonra gerçekleşen evlilik, tamamlanmış hırsızlık suçuna geçmişe etkili bir cezasızlık sağlamaz.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "question": {
+   "id": "b1c3af8a-4604-41d9-9d0d-7ff43d6bd9a8",
+   "code": "SM-000128",
+   "type": "single_choice",
+   "version": 2,
+   "local_id": "765163d7-b92c-4797-93e3-af84c9b1e30d",
+   "topic_id": "302a0251-2b88-450e-83d3-e82c0a927001",
+   "cancelled": false,
+   "difficulty": 4,
+   "subject_id": "366633ef-09d8-4c3f-9dd7-003be04aebb9",
+   "subtopic_id": null,
+   "local_aliases": []
+  },
+  "legislation_links": [
+   {
+    "link_role": "required",
+    "article_id": "b7a2ab38-b8e9-4fc5-a722-b6224d146dbc",
+    "article_key": "167",
+    "provision_id": "b936525b-8a65-4cf1-ac9b-9c7693418ed4",
+    "legislation_id": "31136069-02d4-48f1-b38a-7c593f146c96"
+   }
+  ],
+  "source_references": []
+ },
+ "entity_id": "b1c3af8a-4604-41d9-9d0d-7ff43d6bd9a8",
+ "entity_type": "question",
+ "payload_hash": "383d4e003a5b1c5ff736fa79782dcd7777e5812bd94fba5a90b622f51923c1cf",
+ "entity_version": 2
+}

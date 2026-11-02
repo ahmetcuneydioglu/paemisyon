@@ -1,0 +1,166 @@
+{
+ "error": null,
+ "payload": {
+  "tags": [],
+  "assets": [],
+  "options": [
+   {
+    "key": "A",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "10 Mart 1919",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 1
+   },
+   {
+    "key": "B",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "29 Mayıs 1919",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 2
+   },
+   {
+    "key": "C",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "3 Temmuz 1919",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 3
+   },
+   {
+    "key": "D",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "23 Temmuz 1919",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": true,
+    "sort_order": 4
+   },
+   {
+    "key": "E",
+    "content": {
+     "type": "doc",
+     "content": [
+      {
+       "type": "paragraph",
+       "content": [
+        {
+         "text": "4 Eylül 1919",
+         "type": "text"
+        }
+       ]
+      }
+     ]
+    },
+    "is_correct": false,
+    "sort_order": 5
+   }
+  ],
+  "version": {
+   "id": "4794c16f-31f5-4740-9a9d-4f9b11685d5f",
+   "hint": null,
+   "stem": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "Aşağıdaki tarihlerden hangisinde Erzurum kongresi gerçekleştirilmiştir?",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   },
+   "source": {
+    "id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+    "url": null,
+    "name": "JSPS soru bankası",
+    "confidence": "B",
+    "public_note": null
+   },
+   "source_id": "8094dd5e-ff27-4115-8a09-aa800c54516e",
+   "confidence": "B",
+   "option_count": 5,
+   "authoring_method": "imported",
+   "detailed_solution": {
+    "type": "doc",
+    "content": [
+     {
+      "type": "paragraph",
+      "content": [
+       {
+        "text": "Erzurum Kongresi, 23 Temmuz 1919 Çarşamba günü yapılan dualarla saat 11.00’da açıldı.",
+        "type": "text"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "question": {
+   "id": "980ad8a5-63e6-4930-ac3a-dd8db3fad582",
+   "code": "SM-002338",
+   "type": "single_choice",
+   "version": 2,
+   "local_id": "e2891a9d-7275-4e08-9f44-f223cd9c9958",
+   "topic_id": "f123a5b8-dca6-4022-96e3-d161ea390d4f",
+   "cancelled": false,
+   "difficulty": 4,
+   "subject_id": "58d57409-fc53-47fb-a834-cfb5af6b295d",
+   "subtopic_id": null,
+   "local_aliases": []
+  },
+  "legislation_links": [],
+  "source_references": []
+ },
+ "entity_id": "980ad8a5-63e6-4930-ac3a-dd8db3fad582",
+ "entity_type": "question",
+ "payload_hash": "5d6a7ecce18aec73395271abf4a43841c35c55900dafaa150f6c91024ad92f30",
+ "entity_version": 2
+}
