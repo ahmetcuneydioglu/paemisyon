@@ -269,7 +269,9 @@ function rota(input: BugunV3Input, next: NextStep): RouteItem[] {
   const items: RouteItem[] = [];
   const ex = input.exams.live ?? input.exams.todayUpcoming;
   if (ex) {
-    const up = input.exams.todayUpcoming;
+    // Canlı deneme varsa satır onundur ("şimdi"); aynı gün ikinci bir deneme varsa saati
+    // canlı denemenin başlığına yapışmasın (2 Kas 2026).
+    const up = input.exams.live ? null : input.exams.todayUpcoming;
     items.push({
       key: `exam:${ex.id}`,
       kind: 'exam',

@@ -260,3 +260,16 @@ kutusu; Senin için 56 pt satırlar + altın kenarlı haplar; Bu hafta surfaceAl
   Supabase'de elle koşuldu (sıra 2, üst 27 doğru). Expo: simülatöre metin girilemediği için
   (pano izni/hard klavye yok) bileşen galeri ekranında bakıldı; gerçek veriyle cihaz testi telefonda.
 
+- **"Canlı deneme sürüyor" × "Deneme bugün 21:00" tutarsızlığı kapandı (2 Kas 2026):** kök neden
+  iki ayrı "canlı" tanımıydı. Deneme listesi (`exams.service`) pencereyi `availabilityOf` ile
+  hesaplıyor; SERBEST denemede `end_at` yoksa pencere süresiz açık → Paem11 serbest denemesi
+  25 Ekim'den beri `state=active` ve web şeridi (`bannerExam`) sürekli "Canlı deneme sürüyor"
+  diyordu. Koç (`coach.service`) ise canlıyı başlangıç+süre ile hesaplayıp serbesti canlı
+  saymıyor, Sıradaki'ye günün takvimli denemesini koyuyordu. Düzeltme — tek tanım: canlı/yaklaşan
+  = TAKVİMLİ + `exam-state.logic` penceresi (Expo `liveExam` zaten böyleydi). Web `bannerExam`
+  takvimli süzer (test eklendi); koç `availabilityOf`/`examEndAt` kullanır, `todayUpcoming`/
+  `nextUpcoming` de takvimliyle sınırlı. Yan düzeltme: rota deneme satırında canlı varken aynı
+  günün ikinci denemesinin saati canlı başlığa yapışıyordu (`detail` artık "şimdi"; spec).
+  Serbest deneme anasayfada "yeni yayınlandı" kartı (48 sa) ve Denemeler listesiyle görünmeye
+  devam eder; şerit ve Sıradaki yalnız randevulu deneme içindir.
+

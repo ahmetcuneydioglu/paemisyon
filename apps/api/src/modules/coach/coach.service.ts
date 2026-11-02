@@ -5,6 +5,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma/prisma.service';
+import { availabilityOf, examEndAt, type ExamWindow } from '../exams/exam-state.logic';
 import { SettingsService } from '../../infra/settings/settings.service';
 import type { AuthenticatedUser } from '../auth/auth.types';
 import { freezesLeft, liveStreak, weeklyFreezeAllowance } from '../progress/streak.logic';
@@ -547,17 +548,29 @@ export class CoachService {
 
     // ── Deneme durumları ──
     const sessionOf = new Map(mySessions.map((s) => [s.examId!, s.status]));
-    const endOf = (e: { startAt: Date; durationMinutes: number }) =>
-      new Date(e.startAt.getTime() + e.durationMinutes * 60_000);
+    // Canlı/yaklaşan tanımı deneme listesiyle (exams.service) ve istemci şeritleriyle AYNI:
+    // yalnız TAKVİMLİ deneme randevudur; penceresi `examEndAt` (end_at, yoksa başlangıç+süre).
+    // Eski tanım başlangıç+süre idi; takvimli pencere uzunsa koç "bitti" derken liste "canlı"
+    // diyordu (2 Kas 2026). Serbest deneme (günlerce açık) ne canlı ne yaklaşan sayılır.
+    const pencere = (e: (typeof exams)[number]): ExamWindow => ({
+      publishMode: e.publishMode,
+      startAt: e.startAt,
+      endAt: e.endAt,
+      durationMinutes: e.durationMinutes,
+      practiceAfterEnd: e.practiceAfterEnd,
+    });
+    const endOf = (e: (typeof exams)[number]) =>
+      examEndAt(pencere(e)) ?? new Date(e.startAt.getTime() + e.durationMinutes * 60_000);
+    const takvimli = exams.filter((e) => e.publishMode === 'takvimli');
 
-    const liveExam = exams.find((e) => e.startAt <= now && now < endOf(e));
-    const todayUpcoming = exams.find(
+    const liveExam = takvimli.find((e) => availabilityOf(pencere(e), now) === 'open');
+    const todayUpcoming = takvimli.find(
       (e) => e.startAt > now && trDayKey(e.startAt) === trDayKey(now),
     );
     // Bugün v3: bugünden sonra, 7 gün içinde başlayacak ilk deneme (liste yeniden eskiye sıralı).
     const yediGun = new Date(now.getTime() + 7 * 86_400_000);
     const nextUpcoming =
-      exams
+      takvimli
         .filter(
           (e) => e.startAt > now && trDayKey(e.startAt) !== trDayKey(now) && e.startAt <= yediGun,
         )

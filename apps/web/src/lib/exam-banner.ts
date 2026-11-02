@@ -20,7 +20,10 @@ function trGun(ms: number): string {
  * takvim gününe göre yapılır; sunucu UTC'de çalıştığı için ham tarih
  * karşılaştırması yanlış gün üretirdi.
  */
-export function baslangicEtiketi(startAtIso: string, now = Date.now()): "Bugün" | "Yarın" | null {
+export function baslangicEtiketi(
+  startAtIso: string,
+  now = Date.now(),
+): "Bugün" | "Yarın" | null {
   const gun = trGun(new Date(startAtIso).getTime());
   if (gun === trGun(now)) return "Bugün";
   if (gun === trGun(now + 24 * 60 * 60 * 1000)) return "Yarın";
@@ -35,10 +38,17 @@ export function baslangicEtiketi(startAtIso: string, now = Date.now()): "Bugün"
  * açık kalırsa gürültüye döner ve gerçekten acil olduğunda görünmez olur.
  */
 /** Şeridin çıkması gereken deneme (canlı > 24 saat içinde başlayan). */
-export function bannerExam(exams: ExamListItem[], now = Date.now()): ExamListItem | null {
-  const live = exams.find((e) => e.state === "active");
+export function bannerExam(
+  exams: ExamListItem[],
+  now = Date.now(),
+): ExamListItem | null {
+  // Serbest deneme randevu değildir: penceresi günlerce (end_at yoksa süresiz) açık kalır;
+  // "Canlı deneme sürüyor" şeridi onun için sürekli yanardı (2 Kas 2026, Paem11 serbest denemesi).
+  // Şerit ve koç aynı tanımı kullanır: canlı = takvimli + penceresi açık (Expo liveExam ile aynı).
+  const takvimli = exams.filter((e) => e.publishMode === "takvimli");
+  const live = takvimli.find((e) => e.state === "active");
   if (live) return live;
-  const soon = exams
+  const soon = takvimli
     .filter((e) => e.state === "upcoming")
     .sort((a, b) => +new Date(a.startAt) - +new Date(b.startAt))[0];
   if (!soon) return null;

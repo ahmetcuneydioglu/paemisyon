@@ -27,7 +27,12 @@ function deneme(p: Partial<ExamListItem>): ExamListItem {
     examTypeId: null,
     liveAnswerReveal: false,
     practiceAfterEnd: true,
-    availability: p.state === "active" ? "open" : p.state === "ended" ? "closed" : "upcoming",
+    availability:
+      p.state === "active"
+        ? "open"
+        : p.state === "ended"
+          ? "closed"
+          : "upcoming",
     myState: "new",
     canStartOfficial: p.state === "active",
     canStartPractice: false,
@@ -36,6 +41,18 @@ function deneme(p: Partial<ExamListItem>): ExamListItem {
 }
 
 describe("bannerExam", () => {
+  it("serbest deneme (açık uçlu pencere) şerit olmaz — canlı da yaklaşan da takvimli ister", () => {
+    const serbest = deneme({ id: "serbest", state: "active" });
+    serbest.publishMode = "serbest";
+    expect(bannerExam([serbest], SIMDI)).toBeNull();
+    const serbestYakin = deneme({
+      id: "s2",
+      state: "upcoming",
+      startAt: "2026-09-06T14:00:00Z",
+    });
+    serbestYakin.publishMode = "serbest";
+    expect(bannerExam([serbestYakin], SIMDI)).toBeNull();
+  });
   it("canlı deneme her zaman şerit olur", () => {
     const canli = deneme({ id: "canli", state: "active" });
     expect(bannerExam([canli], SIMDI)?.id).toBe("canli");
@@ -43,7 +60,11 @@ describe("bannerExam", () => {
 
   it("canlı varsa yaklaşan denemenin önüne geçer", () => {
     const list = [
-      deneme({ id: "yaklasan", state: "upcoming", startAt: "2026-09-06T18:00:00Z" }),
+      deneme({
+        id: "yaklasan",
+        state: "upcoming",
+        startAt: "2026-09-06T18:00:00Z",
+      }),
       deneme({ id: "canli", state: "active" }),
     ];
     expect(bannerExam(list, SIMDI)?.id).toBe("canli");
@@ -90,14 +111,20 @@ describe("baslangicEtiketi", () => {
   const geceYarisiOncesi = new Date("2026-09-06T20:00:00Z").getTime(); // TR 23:00
 
   it("aynı TR gününde başlayan denemeye Bugün der", () => {
-    expect(baslangicEtiketi("2026-09-06T20:30:00Z", geceYarisiOncesi)).toBe("Bugün");
+    expect(baslangicEtiketi("2026-09-06T20:30:00Z", geceYarisiOncesi)).toBe(
+      "Bugün",
+    );
   });
 
   it("gece yarısını geçince, 2 saat sonrası bile Yarın'dır", () => {
-    expect(baslangicEtiketi("2026-09-06T22:00:00Z", geceYarisiOncesi)).toBe("Yarın");
+    expect(baslangicEtiketi("2026-09-06T22:00:00Z", geceYarisiOncesi)).toBe(
+      "Yarın",
+    );
   });
 
   it("iki gün sonrası için etiket vermez", () => {
-    expect(baslangicEtiketi("2026-09-08T18:00:00Z", geceYarisiOncesi)).toBeNull();
+    expect(
+      baslangicEtiketi("2026-09-08T18:00:00Z", geceYarisiOncesi),
+    ).toBeNull();
   });
 });

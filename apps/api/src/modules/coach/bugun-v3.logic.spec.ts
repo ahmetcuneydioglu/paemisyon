@@ -343,3 +343,20 @@ describe('computeHomeV3', () => {
     expect(hepsi.nextStep.kind).toBe('done');
   });
 });
+
+describe('rota — deneme satırı (2 Kas 2026)', () => {
+  it('canlı deneme varken aynı gün ikinci denemenin saati canlı başlığa yapışmaz', () => {
+    const r = computeHomeV3(
+      girdi({
+        exams: {
+          live: { id: 'canli', title: 'Haftalık Deneme-1' },
+          todayUpcoming: { id: 'aksam', title: 'Akşam Denemesi', startAt: new Date('2026-10-30T18:00:00Z'), questionCount: 100 },
+          nextUpcoming: null,
+        },
+      }),
+    );
+    const satir = r.route.find((x) => x.kind === 'exam')!;
+    expect(satir.label).toBe('Haftalık Deneme-1');
+    expect(satir.detail).toBe('şimdi');
+  });
+});
