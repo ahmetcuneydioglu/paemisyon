@@ -413,10 +413,22 @@ export function examCardModel(e: ExamListItem): ExamCardModel {
 }
 
 /** Hero seçimi (Doc 50 M1): devam eden > sıradaki haftalık > sakin boşluk. */
-export function heroFor(exams: ExamListItem[]): { kind: "active"; exam: ExamListItem } | { kind: "weekly"; exam: ExamListItem } | { kind: "calm" } {
+/** Haftalık hero'nun "yakın" sayıldığı eşik: 3 gün. Daha uzaksa serbest deneme önerilir (kullanıcı kararı, 3 Kas 2026). */
+export const WEEKLY_HERO_WINDOW_MS = 3 * 24 * 60 * 60 * 1000;
+
+/**
+ * "Şimdi" bloğu seçimi (IA A): devam eden çözüm > canlı ya da 3 gün içindeki haftalık >
+ * çözülmemiş serbest deneme > uzak haftalık (varsa) > sakin. Bir deneme ekranda bir kez görünür;
+ * seçilen hero'nun kartı tür listesinde kalır, merkezde tekrar edilmez.
+ */
+export function heroFor(exams: ExamListItem[], now = Date.now()): { kind: "active"; exam: ExamListItem } | { kind: "weekly"; exam: ExamListItem } | { kind: "serbest"; exam: ExamListItem } | { kind: "calm" } {
   const active = exams.find((e) => e.myState === "in_progress" && e.my?.active);
   if (active) return { kind: "active", exam: active };
   const weekly = exams.filter((e) => e.publishMode === "takvimli" && e.availability !== "closed").sort((a, b) => Date.parse(a.startAt) - Date.parse(b.startAt))[0];
+  const weeklyNear = weekly && (weekly.availability === "open" || Date.parse(weekly.startAt) - now <= WEEKLY_HERO_WINDOW_MS);
+  if (weekly && weeklyNear) return { kind: "weekly", exam: weekly };
+  const serbest = exams.find((e) => e.publishMode === "serbest" && e.myState === "new" && e.canStartOfficial);
+  if (serbest) return { kind: "serbest", exam: serbest };
   if (weekly) return { kind: "weekly", exam: weekly };
   return { kind: "calm" };
 }

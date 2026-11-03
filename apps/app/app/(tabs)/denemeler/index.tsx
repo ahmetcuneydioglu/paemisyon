@@ -22,13 +22,12 @@ export default function DenemelerScreen() {
   const past = usePastExams();
   const history = useExamHistory();
   const list = exams.data ?? [];
-  const hero = heroFor(list);
-  const now = useNow(1000, hero.kind !== "calm");
+  const now = useNow(1000, list.length > 0);
+  const hero = heroFor(list, now);
 
   const serbest = list.filter((e) => e.publishMode === "serbest");
   const haftalik = list.filter((e) => e.publishMode === "takvimli");
   const nextWeekly = haftalik.filter((e) => e.availability !== "closed").sort((a, b) => Date.parse(a.startAt) - Date.parse(b.startAt))[0] ?? null;
-  const serbestNew = serbest.find((e) => e.myState === "new" && e.canStartOfficial) ?? null;
   const serbestDone = serbest.filter((e) => e.my?.official?.status === "completed").length;
   const solvablePast = (past.data ?? []).filter((p) => p.tur === "resmi" && p.examId);
   const pe = dash.data?.personalExam;
@@ -60,8 +59,10 @@ export default function DenemelerScreen() {
         <ActiveHero exam={hero.exam} now={now} onPress={() => play(hero.exam)} />
       ) : hero.kind === "weekly" ? (
         <WeeklyHero exam={hero.exam} now={now} onPrimary={() => (hero.exam.myState === "completed" && hero.exam.my?.official ? router.push({ pathname: "/deneme-sonuc/[attemptId]", params: { attemptId: hero.exam.my.official.attemptId } }) : hero.exam.myState === "in_progress" ? play(hero.exam) : rules(hero.exam))} onRules={() => rules(hero.exam)} />
+      ) : hero.kind === "serbest" ? (
+        <SuggestHero exam={hero.exam} weeklyHint={nextWeekly} onStart={() => rules(hero.exam)} onPersonal={() => router.push("/(tabs)/denemeler/kisisel")} />
       ) : (
-        <SuggestHero exam={serbestNew} onStart={() => serbestNew && rules(serbestNew)} onPersonal={() => router.push("/(tabs)/denemeler/kisisel")} />
+        <SuggestHero exam={null} weeklyHint={null} onStart={() => undefined} onPersonal={() => router.push("/(tabs)/denemeler/kisisel")} />
       )}
 
       {/* Dört giriş kutusu (2×2) */}
@@ -165,8 +166,8 @@ function WeeklyHero({ exam, now, onPrimary, onRules }: { exam: ExamListItem; now
   );
 }
 
-/** Haftalık yokken: çözülmemiş bir serbest deneme öner; o da yoksa kişisel deneme. */
-function SuggestHero({ exam, onStart, onPersonal }: { exam: ExamListItem | null; onStart: () => void; onPersonal: () => void }) {
+/** Haftalık 3 günden uzakken ya da yokken: çözülmemiş bir serbest deneme öner; o da yoksa kişisel deneme. */
+function SuggestHero({ exam, weeklyHint, onStart, onPersonal }: { exam: ExamListItem | null; weeklyHint: ExamListItem | null; onStart: () => void; onPersonal: () => void }) {
   const { colors, radius, space } = useTheme();
   return (
     <View accessible accessibilityLabel={exam ? `Şimdi: ${exam.title} denemesine başla` : "Şimdi: kişisel deneme oluştur"} style={{ backgroundColor: colors.panel, borderRadius: radius.panel, padding: space.s4, gap: space.s2 }}>
@@ -177,7 +178,9 @@ function SuggestHero({ exam, onStart, onPersonal }: { exam: ExamListItem | null;
         {exam ? exam.title : "Sana özel bir deneme"}
       </AppText>
       <AppText variant="bodySm" tone="panelSoft">
-        {exam ? `Bu hafta haftalık deneme yok; serbest denemeyle ölç. ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü.` : "Bu hafta haftalık deneme yok; yanlışlarından ve zayıf konularından kurulan bir deneme çöz."}
+        {exam
+          ? `${weeklyHint ? `Haftalık deneme ${fmtDate(weeklyHint.startAt, { weekday: "long" })} ${fmtDate(weeklyHint.startAt, { hour: "2-digit", minute: "2-digit" })}'de; o güne kadar serbest denemeyle ölç.` : "Bu hafta haftalık deneme yok; serbest denemeyle ölç."} ${exam.participantCount.toLocaleString("tr-TR")} kişi çözdü.`
+          : "Bu hafta haftalık deneme yok; yanlışlarından ve zayıf konularından kurulan bir deneme çöz."}
       </AppText>
       <Button title={exam ? "Başla" : "Kişisel deneme oluştur"} onPress={exam ? onStart : onPersonal} />
     </View>
